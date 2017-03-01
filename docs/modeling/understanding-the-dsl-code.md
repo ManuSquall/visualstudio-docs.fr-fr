@@ -1,0 +1,369 @@
+---
+title: Fonctionnement du Code DSL | Documents Microsoft
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.tgt_pltfrm: 
+ms.topic: article
+helpviewer_keywords:
+- Domain-Specific Language, generated code
+ms.assetid: 8e5c10e4-6323-433e-b88a-5d3d92639030
+caps.latest.revision: 19
+author: alancameronwills
+ms.author: awills
+manager: douge
+translation.priority.mt:
+- cs-cz
+- de-de
+- es-es
+- fr-fr
+- it-it
+- ja-jp
+- ko-kr
+- pl-pl
+- pt-br
+- ru-ru
+- tr-tr
+- zh-cn
+- zh-tw
+translationtype: Machine Translation
+ms.sourcegitcommit: eb2ab9d49cdeb1ed71da8ef67841f7796862dc30
+ms.openlocfilehash: f5eda1e99a8d6e269492ea21373ef865b7123d7f
+ms.lasthandoff: 02/22/2017
+
+---
+# <a name="understanding-the-dsl-code"></a>Fonctionnement du code DSL
+Une solution DSL (Domain-Specific Language) génère une API que vous pouvez utiliser pour lire et mettre à jour des instances du DSL dans [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]. Cette API est définie dans le code généré à partir de la définition DSL. Cette rubrique décrit l'API générée.  
+  
+## <a name="the-example-solution-component-diagrams"></a>Exemple de solution : diagrammes de composants  
+ Pour créer la solution qui est la source de la plupart des exemples de cette rubrique, créez un DSL à partir de la **modèles de composants** modèle de solution. Il s'agit de l'un des modèles standard qui apparaissent quand vous créez une solution DSL.  
+  
+> [!NOTE]
+>  Le modèle DSL diagrammes de composants n’est pas lié aux diagrammes de composant UML que vous pouvez créer à l’aide du menu Architecture dans Visual Studio. Dans le **nouveau projet** boîte de dialogue, développez **autres projets\extensibilité** , puis **Concepteur de langage spécifique à un domaine**.  
+  
+ Appuyez sur F5 et expérimentez un peu, si vous ne vous êtes pas encore familiarisé avec ce modèle de solution. Notez en particulier que pour créer des ports, vous devez faire glisser un outil « port » sur un composant et que vous pouvez connecter des ports.  
+  
+ ![Composants et ports interconnectés](../modeling/media/componentsample.png "ComponentSample")  
+  
+## <a name="the-structure-of-the-dsl-solution"></a>Structure de la solution DSL  
+ Le **Dsl** projet définit l’API pour votre DSL. Le **DslPackage** projet définit comment il s’intègre à [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]. Vous pouvez aussi ajouter vos propres projets, qui peuvent également contenir du code généré à partir du modèle.  
+  
+### <a name="the-code-directories"></a>Les répertoires de code  
+ La plupart du code dans chacun de ces projets est généré à partir de **Dsl\DslDefinition.dsl**. Le code généré se trouve dans le **Code généré** dossier. Pour afficher un fichier généré, cliquez sur **[+]** en regard de la génération de **.tt** fichier.  
+  
+ Nous vous recommandons d'inspecter le code généré pour mieux comprendre le DSL. Pour afficher les fichiers générés, développez les fichiers *.tt dans l'Explorateur de solutions.  
+  
+ Le \*fichiers .tt contiennent très peu de code de génération. Au lieu de cela, ils utilisent des directives `<#include>` pour inclure des fichiers de modèles partagés. Vous trouverez les fichiers partagés dans **\Program Files\Microsoft Visual Studio 10.0\Common7\IDE\Extensions\Microsoft\DSL SDK\DSL Designer\11.0\TextTemplates**  
+  
+ Quand vous ajoutez votre propre code de programme à la solution DSL, ajoutez-le dans un fichier distinct, en dehors du dossier Generated Code. Vous souhaiterez peut-être créer un **Code personnalisé** dossier. (Quand vous ajoutez un nouveau fichier de code à un dossier personnalisé, n'oubliez pas de corriger l'espace de noms dans le squelette de code initial.)  
+  
+ Nous vous recommandons vivement de ne pas modifier le code généré directement, car vos modifications seront perdues quand vous regénérerez la solution. Au lieu de cela, pour personnaliser votre DSL :  
+  
+-   Ajustez les nombreux paramètres dans la définition DSL.  
+  
+-   Écrivez des classes partielles dans des fichiers de code distincts pour substituer les méthodes qui sont définies dans, ou héritées par, les classes générées. Dans certains cas, vous devez définir le **génère une Double dérivée** option d’une classe dans la définition DSL, afin d’être en mesure de substituer une méthode générée.  
+  
+-   Définissez des options dans la définition DSL pour que le code généré fournisse des « raccordements » pour votre propre code.  
+  
+     Par exemple, si vous définissez la **a un constructeur personnalisé** option d’une classe de domaine et générez la solution, vous verrez des messages d’erreur. Quand vous double-cliquez sur l'un de ces messages d'erreur, des commentaires s'affichent dans le code généré pour expliquer ce que votre code personnalisé doit fournir.  
+  
+-   Écrivez vos propres modèles de texte pour générer du code spécifique à votre application. Vous pouvez utiliser des fichiers Include pour partager des parties de modèles communes à de nombreux projets et vous pouvez créer des modèles de projets [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] pour configurer des projets initialisés avec votre propre structure de fichiers.  
+  
+## <a name="generated-files-in-dsl"></a>Fichiers générés dans la solution DSL  
+ Les fichiers générés suivants apparaissent dans le **Dsl** projet.  
+  
+ *Votre_solution_dsl*`Schema.xsd`  
+  
+ Schéma pour les fichiers qui contient les instances de votre DSL. Ce fichier est copié vers la compilation (**bin**) active. Lorsque vous installez votre DSL, vous pouvez copier ce fichier sur **\Program Files\Microsoft Visual Studio 11.0\Xml\Schemas** afin que les fichiers de modèle peuvent être validés. Pour plus d’informations, consultez [déploiement de Solutions de langage spécifique à un domaine](../modeling/deploying-domain-specific-language-solutions.md).  
+  
+ Si vous personnalisez la sérialisation en définissant des options dans l'Explorateur DSL, le schéma changera en conséquence. Toutefois, si vous écrivez votre propre code de sérialisation, ce fichier peut ne plus représenter le schéma réel. Pour plus d’informations, consultez [stockage de fichiers de personnalisation et la sérialisation XML](../modeling/customizing-file-storage-and-xml-serialization.md).  
+  
+ `ConnectionBuilders.cs`  
+  
+ Un générateur de connexion est une classe qui crée des relations. Il s'agit du code derrière un outil de connexion. Ce fichier contient une paire de classes pour chaque outil de connexion. Leurs noms sont dérivés les noms de l’outil de relation et de connexion de domaine : *relation*Builder, et *Outil_connecteur*ConnectAction.  
+  
+ (Dans l'exemple de solution de composant, l'un des générateurs de connexions se nomme ConnectionBuilder. Il s'agit d'une coïncidence, car la relation de domaine se nomme Connection.)  
+  
+ La relation est créée dans le *relation* `Builder.Connect()` (méthode). La version par défaut vérifie que les éléments de modèle cibles et sources sont acceptables, puis elle instancie la relation. Exemple :  
+  
+ `CommentReferencesSubject(sourceAccepted, targetAccepted);`  
+  
+ Chaque classe de générateur de rapports est généré à partir d’un nœud dans le **générateurs de connexions** section dans l’Explorateur DSL. Une méthode `Connect` peut créer des relations entre une ou plusieurs paires de classes de domaine. Chaque paire est définie par une directive de connexion de lien, que vous pouvez trouver dans l'Explorateur DSL sous le nœud du générateur.  
+  
+ Par exemple, vous pourriez ajouter à un générateur de connexion des directives de connexion de lien pour chacun des trois types de relations dans l'exemple de DSL. L'utilisateur disposerait ainsi d'un seul outil de connexion. Le type de relation instancié dépendrait des types des éléments sources et cibles sélectionnés par l'utilisateur.  Pour ajouter des directives de connexion de lien, cliquez avec le bouton droit sur un générateur dans l'explorateur DSL.  
+  
+ Pour écrire du code personnalisé qui s'exécute quand un type de relation de domaine spécifique est créé, sélectionnez la directive de connexion de lien appropriée sous le nœud du générateur. Dans la fenêtre Propriétés, définissez **utilise une connexion personnalisée**. Regénérez la solution, puis fournissez le code pour corriger les erreurs résultantes.  
+  
+ Pour écrire un code personnalisé qui s’exécute chaque fois que l’utilisateur utilise cet outil de connexion, définissez la **est personnalisé** propriété du Générateur de connexion. Vous pouvez fournir du code qui décide si un élément source est permis, si une combinaison spécifique de source et de cible est permise et qui détermine les mises à jour qui doivent être apportées au modèle quand une connexion est établie. Vous pourriez par exemple autoriser une connexion uniquement si elle ne crée pas de boucle dans le diagramme. Au lieu d'un lien à relation unique, vous pourriez instancier un modèle plus complexe de plusieurs éléments interconnectés entre la source et la cible.  
+  
+ `Connectors.cs`  
+  
+ Contient les classes pour les connecteurs, qui sont les éléments de diagramme qui représentent généralement des relations de référence. Chaque classe est générée à partir d'un connecteur dans la définition DSL. Chaque classe de connecteur est dérivé.<xref:Microsoft.VisualStudio.Modeling.Diagrams.BinaryLinkShape></xref:Microsoft.VisualStudio.Modeling.Diagrams.BinaryLinkShape>  
+  
+ Pour modifier la couleur et certaines autres variables de fonctionnalités de style au moment de l’exécution, avec le bouton droit de la classe sur le diagramme de définition DSL et pointez sur **ajouter exposées**.  
+  
+ Pour rendre les variables de fonctionnalités de style supplémentaires au moment de l’exécution, consultez par exemple <xref:Microsoft.VisualStudio.Modeling.Diagrams.TextField>et <xref:Microsoft.VisualStudio.Modeling.Diagrams.ShapeElement>.</xref:Microsoft.VisualStudio.Modeling.Diagrams.ShapeElement> </xref:Microsoft.VisualStudio.Modeling.Diagrams.TextField>  
+  
+ `Diagram.cs`  
+  
+ Contient la classe qui définit le diagramme. Il est dérivé <xref:Microsoft.VisualStudio.Modeling.Diagrams.Diagram>.</xref:Microsoft.VisualStudio.Modeling.Diagrams.Diagram>  
+  
+ Pour modifier la couleur et certaines autres variables de fonctionnalités de style au moment de l’exécution, avec le bouton droit de la classe sur le diagramme de définition DSL et pointez sur **ajouter exposées**.  
+  
+ De plus, ce fichier contient la règle `FixupDiagram`, qui répond quand un nouvel élément est ajouté au modèle. La règle ajoute une nouvelle forme et relie la forme à l'élément de modèle.  
+  
+ `DirectiveProcessor.cs`  
+  
+ Ce processeur de directive aide vos utilisateurs à écrire des modèles de texte qui lisent une instance de votre DSL. Le processeur de directive charge les assemblys (DLL) pour votre DSL et insère des instructions `using` pour votre espace de noms. Cela permet au code dans les modèles de texte d'utiliser les classes et les relations que vous avez définies dans votre DSL.  
+  
+ Pour plus d’informations, consultez [génération du Code à partir d’un langage spécifique au domaine](../modeling/generating-code-from-a-domain-specific-language.md) et [créer les processeurs de Directive personnalisés T4 texte modèle](../modeling/creating-custom-t4-text-template-directive-processors.md).  
+  
+ `DomainClasses.cs`  
+  
+ Implémentations des classes de domaine que vous avez définies, y compris les classes abstraites et la classe racine du modèle. Ils sont dérivés de <xref:Microsoft.VisualStudio.Modeling.ModelElement>.</xref:Microsoft.VisualStudio.Modeling.ModelElement>  
+  
+ Chaque classe de domaine contient :  
+  
+-   Une définition de propriété et une classe de gestionnaire imbriquée pour chaque propriété de domaine. Vous pouvez substituer OnValueChanging() et OnValueChanged(). Pour plus d’informations, consultez [Gestionnaire de modification de valeur de propriété domaine](../modeling/domain-property-value-change-handlers.md).  
+  
+     Dans l'exemple de DSL, la classe `Comment` contient une propriété `Text` et une classe de gestionnaire `TextPropertyHandler`.  
+  
+-   Des propriétés d'accesseurs pour les relations auxquelles cette classe de domaine participe. (Il n'y a pas de classe imbriquée pour les propriétés de rôle.)  
+  
+     Dans l'exemple de DSL, la classe `Comment` à des accesseurs qui accèdent à son modèle parent par l'intermédiaire de la relation d'incorporation `ComponentModelHasComments`.  
+  
+-   Des constructeurs. Si vous souhaitez ignorer ces paramètres, la valeur **a un constructeur personnalisé** sur la classe de domaine.  
+  
+-   Des méthodes de gestionnaire EGP (Element Group Prototype). Elles sont nécessaires si l’utilisateur peut *fusion* (Ajouter) un autre élément sur les instances de cette classe. En général, l'utilisateur effectue pour cela une opération glisser-déplacer à partir d'un outil d'élément ou d'une autre forme, ou une opération de collage.  
+  
+     Dans l'exemple de DSL, un port d'entrée ou un port de sortie peuvent être fusionnés sur un composant. De plus, des composants et des commentaires peuvent être fusionnés sur le modèle. La  
+  
+     Les méthodes de gestionnaire EGP dans la classe Components autorisent un composant à accepter des ports, mais pas des commentaires. Le gestionnaire EGP dans la classe de modèle racine accepte des commentaires et des composants, mais pas des ports.  
+  
+ `DomainModel.cs`  
+  
+ Classe qui représente le modèle du domaine. Il est dérivé <xref:Microsoft.VisualStudio.Modeling.DomainModel>.</xref:Microsoft.VisualStudio.Modeling.DomainModel>  
+  
+> [!NOTE]
+>  Elle est différente de la classe racine du modèle.  
+  
+ Les fermetures Copier et Supprimer définissent les autres éléments qui doivent être inclus quand un élément est copié ou supprimé. Vous pouvez contrôler ce comportement en définissant le **propage la copie** et **propage supprimer** propriétés des rôles de chaque côté de chaque relation. Si vous voulez que les valeurs soient déterminées de manière dynamique, vous pouvez écrire du code pour substituer les méthodes des classes Closure. 
+  
+ `DomainModelResx.resx`  
+  
+ Ce fichier contient des chaînes telles que les descriptions des classes de domaine et des propriétés, des noms de propriétés, des étiquettes de boîte à outils, des messages d'erreur standard et d'autres chaînes qui peuvent être affichées à l'utilisateur. Il contient également des icônes d'outils et des images pour les formes d'images.  
+  
+ Ce fichier est lié à l'assembly généré et fournit les valeurs par défaut de ces ressources. Vous pouvez localiser votre DSL en créant un assembly satellite qui contient une version localisée des ressources. Cette version sera utilisée lors de l'installation de la solution DSL dans une culture correspondant aux ressources localisées. Pour plus d’informations, consultez [déploiement de Solutions de langage spécifique à un domaine](../modeling/deploying-domain-specific-language-solutions.md).  
+  
+ `DomainRelationships.cs`  
+  
+ Chaque lien entre deux éléments dans un modèle est représentée par une instance d'une classe de relation de domaine. Toutes les classes de relation proviennent <xref:Microsoft.VisualStudio.Modeling.ElementLink>, qui, à son tour, est dérivée de <xref:Microsoft.VisualStudio.Modeling.ModelElement>.</xref:Microsoft.VisualStudio.Modeling.ModelElement> </xref:Microsoft.VisualStudio.Modeling.ElementLink> S'agissant d'un ModelElement, une instance d'une relation peut avoir des propriétés et peut être la source ou la cible d'une relation.  
+  
+ `HelpKeywordHelper.cs`  
+  
+ Fournit des fonctions qui sont utilisées quand l'utilisateur appuie sur la touche F1.  
+  
+ `MultiplicityValidation.cs`  
+  
+ Dans les rôles de relation où vous spécifiez une multiplicité de 1..1 ou 1..*, l'utilisateur doit être averti qu'au moins une instance de la relation est nécessaire. Ce fichier fournit des contraintes de validation qui implémentent ces avertissements. Le lien 1..1 à un parent d'incorporation n'est pas vérifié.  
+  
+ Pour ces contraintes soient exécutées, vous devez avoir un de le **utilise... ** options dans le **éditeur\validation** nœud dans l’Explorateur DSL. Pour plus d’informations, consultez [Validation dans un langage spécifique au domaine](../modeling/validation-in-a-domain-specific-language.md).  
+  
+ `PropertiesGrid.cs`  
+  
+ Ce fichier contient du code uniquement si vous avez attaché un descripteur de type personnalisé à une propriété de domaine. Pour plus d’informations, consultez [personnalisation de la fenêtre Propriétés](../modeling/customizing-the-properties-window.md).  
+  
+ `SerializationHelper.cs`  
+  
+-   Méthode de validation permettant de s'assurer que deux éléments ne sont pas référencés par le même moniker. Pour plus d’informations, consultez [stockage de fichiers de personnalisation et la sérialisation XML](../modeling/customizing-file-storage-and-xml-serialization.md).  
+  
+-   Classe SerializationHelper qui fournit des fonctions utilisées en commun avec les classes de sérialisation.  
+  
+ `Serializer.cs`  
+  
+ Classe de sérialiseur pour chaque modèle, diagramme, connecteur, forme, relation et classe de domaine.  
+  
+ La plupart des fonctionnalités de ces classes peuvent être contrôlées par les paramètres dans l’Explorateur DSL sous **comportement de sérialisation Xml**.  
+  
+ `Shapes.cs`  
+  
+ Classe pour chaque classe de forme dans la définition DSL. Formes sont dérivées de la <xref:Microsoft.VisualStudio.Modeling.Diagrams.NodeShape>.</xref:Microsoft.VisualStudio.Modeling.Diagrams.NodeShape> Pour plus d’informations, consultez [stockage de fichiers de personnalisation et la sérialisation XML](../modeling/customizing-file-storage-and-xml-serialization.md).  
+  
+ Pour substituer les méthodes générées par vos propres méthodes dans une classe partielle, définissez **génère une Double dérivée** pour le connecteur dans la définition DSL. Pour remplacer un constructeur avec votre propre code, définissez **a un constructeur personnalisé**.  
+  
+ Pour modifier la couleur et certaines autres variables de fonctionnalités de style au moment de l’exécution, avec le bouton droit de la classe sur le diagramme de définition DSL et pointez sur **ajouter exposées**.  
+  
+ Pour rendre les variables de fonctionnalités de style supplémentaires au moment de l’exécution, consultez par exemple <xref:Microsoft.VisualStudio.Modeling.Diagrams.TextField>et <xref:Microsoft.VisualStudio.Modeling.Diagrams.ShapeElement></xref:Microsoft.VisualStudio.Modeling.Diagrams.ShapeElement> </xref:Microsoft.VisualStudio.Modeling.Diagrams.TextField>  
+  
+ `ToolboxHelper.cs`  
+  
+ Configure la boîte à outils en installant des prototypes de groupes d'éléments dans les outils d'éléments. Les copies de ces prototypes sont fusionnées avec les éléments cibles quand l'utilisateur exécute l'outil.  
+  
+ Vous pourriez substituer `CreateElementPrototype()` pour définir un élément de boîte à outils qui crée un groupe de plusieurs objets. Vous pourriez par exemple définir un élément pour représenter des objets ayant des sous-composants. Après avoir modifié le code, réinitialisez l'instance expérimentale de [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] pour effacer le cache de boîte à outils.  
+  
+## <a name="generated-files-in-the-dslpackage-project"></a>Fichiers générés dans le projet DslPackage  
+ DslPackage couple le modèle DSL au shell [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)], qui gère les commandes de menu, de boîte à outils et de fenêtre. La plupart des classes sont dérivées deux fois, ce qui vous permet de substituer n'importe lesquelles de leurs méthodes.  
+  
+ `CommandSet.cs`  
+  
+ Commandes de menu contextuel visibles sur le diagramme. Vous pouvez adapter cet ensemble ou y ajouter des éléments. Ce fichier contient le code pour les commandes. L'emplacement des commandes dans les menus est déterminé par le fichier Commands.vsct. Pour plus d’informations, consultez [commandes l’écriture de l’utilisateur et les Actions](../modeling/writing-user-commands-and-actions.md).  
+  
+ `Constants.cs`  
+  
+ GUID.  
+  
+ `DocData.cs`  
+  
+ *Votre_solution_dsl* `DocData` gère le chargement et l’enregistrement d’un modèle dans le fichier et crée l’instance de la banque.  
+  
+ Par exemple, si vous voulez enregistrer votre DSL dans une base de données plutôt que dans un fichier, vous pourriez substituer les méthodes `Load` et `Save`.  
+  
+ `DocView.cs`  
+  
+ *Votre_solution_dsl* `DocView` gère la fenêtre dans laquelle s’affiche le diagramme. Par exemple, vous pourriez incorporer le diagramme dans un formulaire Windows :  
+  
+ Ajoutez un fichier Contrôle utilisateur au projet DslPackage. Ajoutez un panneau dans lequel le diagramme peut être affiché. Ajoutez des boutons et d'autres contrôles. Dans l'affichage de code du formulaire, ajoutez le code suivant, en ajustant les noms en fonction de votre DSL :  
+  
+```  
+using System;  
+using System.Collections.Generic;  
+using System.ComponentModel;  
+using System.Drawing;  
+using System.Data;  
+using System.Linq;  
+using System.Text;  
+using System.Windows.Forms;  
+using Microsoft.VisualStudio.Modeling;  
+using Microsoft.VisualStudio.Modeling.Shell;  
+  
+namespace Company.EmbedInForm  
+{  
+  public partial class UserControl1 : UserControl  
+  {  
+    public UserControl1()  
+    {  
+      InitializeComponent();  
+    }  
+  
+    private DiagramDocView docView;  
+  
+    public UserControl1(DiagramDocView docView, Control content)  
+      : this()  
+    {  
+      this.docView = docView;  
+      panel1.Controls.Add(content);  
+    }  
+  
+    private void button1_Click(object sender, EventArgs e)  
+    {  
+      ExampleModel modelRoot = this.docView.CurrentDiagram.ModelElement as ExampleModel;  
+      foreach (ExampleElement element in modelRoot.Elements)  
+      {  
+       listBox1.Items.Add(element.Name);  
+      }  
+    }  
+  }  
+  internal partial class EmbedInFormDocView  
+  {  
+  
+    private ContainerControl container;  
+  
+    /// <summary>  
+    /// Return a User Control instead of the DSL window.   
+    /// The user control will contain the DSL window.  
+    /// </summary>  
+  
+    public override System.Windows.Forms.IWin32Window Window  
+    {  
+      get  
+      {  
+        if (container == null)  
+        {  
+          // Put the normal DSL Window inside our control  
+          container = new UserControl1(this, (Control)base.Window);  
+        }  
+        return container;  
+      }  
+    }  
+  }  
+  
+}  
+  
+```  
+  
+ `EditorFactory.cs`  
+  
+ Instancie `DocData` et `DocView`. Fournit une interface standard utilisée par [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] pour ouvrir un éditeur au démarrage de votre package DSL. Il est référencé dans l'attribut `ProvideEditorFactory` dans Package.cs.  
+  
+ `GeneratedVSCT.vsct`  
+  
+ Localise les commandes de menu standard dans les menus, tels que le menu contextuel du diagramme, le **modifier** menu et ainsi de suite. Le code pour les commandes se trouve dans CommandSet.cs. Vous pouvez déplacer ou modifier les commandes standard et vous pouvez ajouter vos propres commandes. Pour plus d’informations, consultez [commandes l’écriture de l’utilisateur et les Actions](../modeling/writing-user-commands-and-actions.md).  
+  
+ `ModelExplorer.cs`  
+  
+ Définit l'Explorateur de modèles pour votre DSL. Il s'agit de l'arborescence du modèle vue par l'utilisateur à côté du diagramme.  
+  
+ Par exemple, vous pourriez substituer `InsertTreeView()` pour changer l'ordre dans lequel les éléments apparaissent dans l'Explorateur de modèles.  
+  
+ Si vous souhaitez que la sélection dans l'Explorateur de modèles soit synchronisée avec la sélection du diagramme, vous pouvez utiliser le code suivant :  
+  
+```  
+protected override void OnSelectionChanged(global::System.EventArgs e)  
+{  
+base.OnSelectionChanged(e);  
+// get the selected element  
+DslModeling::ModelElement selectedElement =   
+this.PrimarySelection as DslModeling::ModelElement;  
+// Select in the model explorer  
+SelectInModelExplorer<YOURLANGUAGEExplorerToolWindow>(selectedElement);  
+}  
+private void SelectInModelExplorer<T>(DslModeling::ModelElement modelElement)  
+where T : DslShell.ModelExplorerToolWindow  
+{  
+DslShell::ModelingPackage package =   
+this.GetService(typeof(VSShell.Package)) as DslShell::ModelingPackage;  
+  
+if (package != null)  
+{  
+// find the model explorer window  
+T explorerWindow = package.GetToolWindow(typeof(T), true) as T;  
+if (explorerWindow != null)  
+{  
+// get the tree container  
+DslShell.ModelExplorerTreeContainer treeContainer =   
+explorerWindow.TreeContainer;  
+// find the tree node  
+DslShell.ExplorerTreeNode treeNode =   
+treeContainer.FindNodeForElement(modelElement);  
+// select the node  
+explorerWindow.TreeContainer.ObjectModelBrowser.SelectedNode = treeNode;  
+}  
+}  
+}  
+  
+```  
+  
+ `ModelExplorerToolWindow.cs`  
+  
+ Définit la fenêtre dans laquelle l'Explorateur de modèles est affiché. Gère la sélection des éléments dans l'explorateur.  
+  
+ `Package.cs`  
+  
+ Ce fichier définit l'intégration de la solution DSL à [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]. Les attributs sur la classe de package inscrivent la solution DSL comme gestionnaire pour les fichiers ayant votre extension de fichier, définissent sa boîte à outils et définissent comment ouvrir une nouvelle fenêtre. La méthode Initialize() est appelée une fois quand la première solution DSL est chargée dans une instance de [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)].  
+  
+ `Source.extension.vsixmanifest`  
+  
+ Pour personnaliser ce fichier, modifiez le fichier `.tt`.  
+  
+> [!WARNING]
+>  Si vous modifiez le fichier .tt pour inclure des ressources telles que des icônes et des images, assurez-vous que la ressource est incluse dans la build VSIX. Dans l’Explorateur de solutions, sélectionnez le fichier et vérifiez que le **inclure dans VSIX** propriété est `True`.  
+  
+ Ce fichier contrôle comment la solution DSL est empaquetée dans un fichier VSIX (Visual Studio Integration Extension). Pour plus d’informations, consultez [déploiement de Solutions de langage spécifique à un domaine](../modeling/deploying-domain-specific-language-solutions.md).  
+  
+## <a name="see-also"></a>Voir aussi  
+ [Comment définir un langage spécifique à un domaine](../modeling/how-to-define-a-domain-specific-language.md)   
+ [Fonctionnement des modèles, des Classes et des relations](../modeling/understanding-models-classes-and-relationships.md)   
+ [Personnalisation et extension d’un langage spécifique à un domaine](../modeling/customizing-and-extending-a-domain-specific-language.md)   
+ [Écriture de code pour personnaliser un langage spécifique à un domaine](../modeling/writing-code-to-customise-a-domain-specific-language.md)
+
