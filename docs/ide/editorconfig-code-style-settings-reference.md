@@ -499,7 +499,7 @@ csharp_style_inlined_variable_declaration = true:suggestion
 
 | Valeur | Description | Appliqué 
 | ------------- |:-------------|:-------------|
-| True | Préférer l’utilisation d’expressions throw plutôt que d’instructions throw. | **C# :** <br>`this.s = ss ?? throw new ArguementNullException(nameof(s));`
+| True | Préférer l’utilisation d’expressions throw plutôt que d’instructions throw. | **C# :** <br>`this.s = ss ?? throw new ArgumentNullException(nameof(s));`
 | False | Préférer l’utilisation d’instructions throw plutôt que d’expressions throw.| **C# :** <br>`if (s==null) {throw new ArgumentNullException(nameof(s));} this.s = s;`
 
 #### <a name="example-editorconfig-file"></a>Exemple de fichier editorconfig :
@@ -525,3 +525,4 @@ csharp_style_throw_expression = true:suggestion
 [*.cs]
 csharp_style_conditional_delegate_call = false:suggestion
 ```
+
