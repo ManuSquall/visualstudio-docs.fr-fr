@@ -1,5 +1,5 @@
-# [Nouveautés de JavaScript](what-s-new-in-javascript.md)
 # [Référence sur le langage JavaScript](javascript-language-reference.md)
+# [Nouveautés de JavaScript](what-s-new-in-javascript.md)
 # [Notions de base JavaScript](javascript-fundamentals.md)
 ## [Écriture de code JavaScript](writing-javascript-code.md)
 ## [Variables](variables-javascript.md)
