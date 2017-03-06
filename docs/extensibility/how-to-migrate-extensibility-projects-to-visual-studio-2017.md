@@ -28,9 +28,9 @@ translation.priority.mt:
 - zh-cn
 - zh-tw
 translationtype: Machine Translation
-ms.sourcegitcommit: 09f14e5b28a506d4f2112f82ee4fd6b0855a8f93
-ms.openlocfilehash: 67e143e1b95a0e4d881d7d6bccae0d7445897aa2
-ms.lasthandoff: 02/22/2017
+ms.sourcegitcommit: 4f93b8c1db59dd8d8a407c82002240641be43018
+ms.openlocfilehash: 1f9248442357c4447703ac6d6dac8a27934904e8
+ms.lasthandoff: 03/01/2017
 
 ---
 # <a name="how-to-migrate-extensibility-projects-to-visual-studio-2017"></a>Comment : migrer les projets d’extensibilité pour Visual Studio 2017
@@ -76,6 +76,8 @@ Pour mettre à jour les références NuGet Microsoft.VSSDK.BuildTools :
 ## <a name="make-changes-to-the-vsix-extension-manifest"></a>Apporter des modifications au manifeste de l’extension VSIX
 
 Pour vous assurer que l’installation de l’utilisateur de Visual Studio dispose de tous les assemblys requis pour exécuter l’extension, spécifiez tous les composants requis ou des packages dans le fichier manifeste d’extension. Lorsqu’un utilisateur tente d’installer l’extension, le VSIXInstaller vérifie si tous les composants requis sont installés. Si certains sont manquants, l’utilisateur sera invité à installer les composants manquants dans le cadre du processus d’installation de l’extension.
+
+>**Remarque :** au minimum, toutes les extensions doivent spécifier le composant de l’éditeur Visual Studio principal comme composant requis.
 
 * Modifiez le fichier manifeste d’extension (généralement appelé source.extension.vsixmanifest).
 * Vérifiez `InstallationTarget` inclut 15.0.
@@ -138,7 +140,7 @@ C:\Program Files (x86)\Microsoft Visual Studio\2017\Enterprise\Common7\IDE\deven
 
 ![Démarrer le programme externe](media/start-external-program.png)
 
->**Remarque :** l’Action de démarrage de débogage est généralement stockée dans la. csproj.user fichier. Ce fichier est généralement inclus dans le fichier .gitignore et, par conséquent, est normalement pas enregistré avec d’autres fichiers de projet lorsque engagé à contrôle de code source. Par conséquent, si vous avez extrait votre solution immédiate à partir du contrôle de code source, il est probablement que le projet n’aura aucune valeur définie pour l’Action de démarrage. Nouveaux projets VSIX créés avec Visual Studio 2017 aura une. csproj.user les fichiers créés avec les valeurs par défaut qui pointe vers le répertoire d’installation de Visual Studio en cours. Toutefois si vous effectuez une migration d’une extension VSIX v2, il est probable que le. csproj.user fichier contiendra des références au répertoire d’installation de la version précédente Visual Studio. Configurez la valeur de **Debug** > **action de démarrage** permettra l’instance expérimentale de Visual Studio correcte à lancer lorsque vous essayez de déboguer votre extension.
+>**Remarque :** l’Action de démarrage de débogage est généralement stockée dans la. csproj.user fichier. Ce fichier est généralement inclus dans le fichier .gitignore et, par conséquent, est normalement pas enregistré avec d’autres fichiers de projet lorsque engagé à contrôle de code source. Par conséquent, si vous avez extrait votre solution immédiate à partir du contrôle de code source, il est probablement que le projet n’aura aucune valeur définie pour l’Action de démarrage. Nouveaux projets VSIX créés avec Visual Studio 2017 aura une. csproj.user les fichiers créés avec les valeurs par défaut qui pointe vers le répertoire d’installation de Visual Studio en cours. Toutefois si vous effectuez une migration d’une extension VSIX v2, il est probable que le. csproj.user fichier contiendra des références au répertoire d’installation de la version précédente Visual Studio. Configurez la valeur de **déboguer** > **action de démarrage** permettra le correct instance expérimentale de Visual Studio à lancer lorsque vous essayez de déboguer votre extension.
 
 ## <a name="check-that-the-extension-builds-correctly-as-a-vsix-v3"></a>Vérifiez que l’extension se génère correctement (comme un v3 VSIX)
 
@@ -215,3 +217,4 @@ Exemples :
 
 * Si vous disposez d’une extension de débogueur et que vous savez que votre projet a une référence à VSDebugEng.dll et VSDebug.dll, cliquez sur le bouton de filtre dans le **binaires / noms de fichiers** en-tête.  Recherchez « VSDebugEng.dll » et sélectionnez OK.  Ensuite, cliquez sur le bouton de filtrage dans le **binaires / noms de fichiers** en-tête à nouveau et recherchez « VSDebug.dll ».  Sélectionnez la case à cocher « Sélection actuelle ajouter au filtre » et sélectionnez OK.  Examinez maintenant la **nom du composant** pour rechercher un composant qui est le plus liées à votre type d’extension. Dans cet exemple, serait choisie juste-à-temps du débogueur et l’ajouter à votre vsixmanifest.
 * Si vous savez que votre projet traite des éléments du débogueur, vous pouvez rechercher « débogueur » dans la zone de filtre de recherche pour voir quels sont les composants contiennent le débogueur dans son nom.
+
