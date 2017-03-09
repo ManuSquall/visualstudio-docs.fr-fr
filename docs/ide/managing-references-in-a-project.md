@@ -43,9 +43,9 @@ translation.priority.mt:
 - pt-br
 - tr-tr
 translationtype: Human Translation
-ms.sourcegitcommit: 5db97d19b1b823388a465bba15d057b30ff0b3ce
-ms.openlocfilehash: 4b82b8583ec54af9eee383255d20b40674e7c2c1
-ms.lasthandoff: 02/22/2017
+ms.sourcegitcommit: dac3cb1d7767c2ff76ac25f6a486ad30a8d54831
+ms.openlocfilehash: 99a485f2b7ebda9169797db06212ae56dc4d9eb1
+ms.lasthandoff: 03/03/2017
 
 ---
 # <a name="managing-references-in-a-project"></a>Gestion des références dans un projet
@@ -72,7 +72,7 @@ Avant d’écrire du code pour un composant externe ou un service connecté, vou
 ### <a name="project-references"></a>Références de projets  
  Les projets d'applications de plateforme Windows universelle qui ciblent Windows 10 peuvent créer des références à d'autres projets de plateforme Windows universelle dans la solution, ou à des projets ou des fichiers binaires du Windows Store qui ciblent [!INCLUDE[win81](../debugger/includes/win81_md.md)], à condition que ces projets n'utilisent pas d’API qui ont été dépréciées dans Windows 10. Pour plus d’informations, consultez [Passer de Windows Runtime 8 à la plateforme Windows universelle](https://msdn.microsoft.com/en-us/library/windows/apps/dn954974.aspx).  
 
- Si vous choisissez de recibler des projets [!INCLUDE[win81](../debugger/includes/win81_md.md)] sur Windows 10, consultez [Portage, migration et mise à niveau des projets Visual Studio](../porting/porting-migrating-and-upgrading-visual-studio-projects.md)  
+ Si vous choisissez de recibler des projets [!INCLUDE[win81](../debugger/includes/win81_md.md)] sur Windows 10, consultez [Portage, migration et mise à niveau des projets Visual Studio](../porting/port-migrate-and-upgrade-visual-studio-projects.md)  
 
 ### <a name="extension-sdk-references"></a>Références des kits SDK d’extension  
  Les projets du Windows Store Visual Basic, C#, C++  et JavaScript qui ciblent la plateforme Windows universelle peuvent référencer des kits SDK d’extension qui ciblent [!INCLUDE[win81](../debugger/includes/win81_md.md)], à condition que ces kits n’utilisent pas les API dépréciées dans Windows 10. Vérifiez sur le site du fournisseur de SDK d’extension si les kits peuvent être référencés par des projets du Windows Store qui ciblent la plateforme Windows universelle.  
