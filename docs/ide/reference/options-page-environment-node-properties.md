@@ -1,0 +1,168 @@
+---
+title: "Page Options, Environnement, propri&#233;t&#233;s de nœud | Microsoft Docs"
+ms.custom: ""
+ms.date: "12/05/2016"
+ms.prod: "visual-studio-dev14"
+ms.reviewer: ""
+ms.suite: ""
+ms.technology: 
+  - "vs-ide-general"
+ms.tgt_pltfrm: ""
+ms.topic: "article"
+helpviewer_keywords: 
+  - "automation (Visual Studio), contrôle de la boîte de dialogue Options du menu Outils"
+  - "Paramètres des boîtes de dialogue Options du menu Outils, propriétés du nœud Environnement"
+ms.assetid: 26dca41f-91fc-4ca7-9103-3da402baa1d5
+caps.latest.revision: 18
+caps.handback.revision: 18
+author: "kempb"
+ms.author: "kempb"
+manager: "ghogen"
+---
+# Page Options, Environnement, propri&#233;t&#233;s de nœud
+[!INCLUDE[vs2017banner](../../code-quality/includes/vs2017banner.md)]
+
+Ce document décrit les pages \(ou collections de propriétés\) associées à la catégorie **Environnement**, `DTE.Properties("Environment", <Property Page>)`, de la boîte de dialogue **Options**.  Le titre de chaque sous\-section correspond à l'appel utilisé pour accéder à la collection de propriétés, tandis que le tableau dans chaque sous\-section répertorie les propriétés de la collection.  
+  
+## Général  
+ `DTE.Properties("Environment", "General")`  
+  
+|Nom de l'élément de propriété|Valeur|Description|  
+|-----------------------------------|------------|-----------------|  
+|ShowStatusBar|Get\/Set \(booléen\)|Détermine si la barre d'état est visible.|  
+|WindowMenuContainsNItems|Get\/Set \(Short\)|Détermine comment les fenêtres de document sont contenues dans le bas du menu Fenêtres.|  
+|MRUListContainsNItems|Get\/Set \(Short\)|Détermine le nombre de fichiers affichés dans le sous\-menu Les dernières utilisées.|  
+|Animations|Get\/Set \(booléen\)|Détermine si l'environnement de développement intégré \(IDE\) utilise des animations dans la barre d'état.|  
+|AnimationSpeed|Get\/Set \(Short\)||  
+|AutoAdjustExperience|Get\/Set \(booléen\)|Ajuste automatiquement l'expérience visuelle selon les performances du client.|  
+|RichClientExperienceOptions|Get\/Set \(Enum\)|Active l'expérience visuelle améliorée avec des valeurs dans <xref:EnvDTE100.vsRichClientExperienceOptions>.|  
+|CloseButtonActiveTabOnly|Get\/Set \(booléen\)|Détermine si le bouton **Fermer** est affiché seulement sous l'onglet actif.|  
+|AutohidePinActiveTabOnly|Get\/Set \(booléen\)|Détermine si le bouton **Masquer automatiquement** affecte seulement l'onglet actif.|  
+  
+## Sécurité des compléments\/macros  
+ `DTE.Properties("Environment", "AddinMacrosSecurity")`  
+  
+|Nom de l'élément de propriété|Valeur|Description|  
+|-----------------------------------|------------|-----------------|  
+|MacrosEnabled|Get\/Set \(booléen\)|Permet l'exécution des macros.|  
+|AddinsEnabled|Get\/Set \(booléen\)|Permet le chargement des compléments.|  
+|LoadAddinsFromTheWeb|Get\/Set \(booléen\)|Permet le chargement des compléments à partir d'une URL sur le web.|  
+  
+## Documents  
+ `DTE.Properties("Environment", "Documents")`  
+  
+|Nom de l'élément de propriété|Valeur|Description|  
+|-----------------------------------|------------|-----------------|  
+|ReuseSavedActiveDocWindow|Get\/Set \(booléen\)|Détermine si l'ouverture d'un nouveau fichier réutilise la fenêtre de document active si le document actif est enregistré.  `false` signifie toujours ouvrir une nouvelle fenêtre de document pour chaque document ouvert.|  
+|DetectFileChangesOutsideIDE|Get\/Set \(booléen\)|Détermine si l'environnement recharge automatiquement les fichiers ouverts dans l'IDE quand le système d'exploitation signale à l'IDE que les fichiers ont été modifiés sur le disque.|  
+|AutoloadExternalChanges|Get\/Set \(booléen\)|Détermine si des modifications externes détectées sur des documents ouverts rechargent automatiquement le fichier modifié si le document ouvert n'est pas modifié.  Si le document ouvert est modifié et que cette propriété est `true`, l'IDE pose la question à l'utilisateur, comme si cette propriété était `false`.|  
+|InitializeOpenFileFromCurrentDocument|Get\/Set \(booléen\)|Détermine si la commande <xref:EnvDTE.DTEClass.OpenFile%2A> renseigne le nom du répertoire et du fichier à partir du dernier document actif ou à partir du dernier emplacement où vous avez ouvert un fichier.|  
+|MiscFilesProjectSavesLastNItems|Get\/Set \(Short\)|Détermine le nombre de fichiers enregistrés par le projet Fichiers divers.  En conséquence, vous pouvez voir ce que vous avez ouvert en dernier sous forme de fichier divers sur le disque lors de la prochaine utilisation de l'IDE.|  
+|ShowMiscFilesProject|Get\/Set \(booléen\)|Détermine si le projet Fichiers divers est affiché.|  
+|CheckForConsisentLineEndings|Get\/Set \(booléen\)|Vérifie la cohérence des fins de ligne lors du chargement d'un fichier.|  
+|SaveDocsAsUnicodeWhenDataLoss|Get\/Set \(booléen\)|Enregistre les documents au format Unicode quand les données ne peuvent pas être enregistrées dans la page de codes.|  
+|DontShowGlobalUndoChangeLossDialog|Get\/Set \(booléen\)|Affiche un avertissement quand une annulation globale modifie d'autres fichiers modifiés.|  
+|AllowEditingReadOnlyFiles|Get\/Set \(booléen\)|Autorise la modification des fichiers en lecture seule, mais affiche un avertissement lors de la tentative de les enregistrer.|  
+|DocumentDockPreference|Get\/Set \(Enum\)|<xref:EnvDTE100.vsDocumentDockPreferenceOptions>.  Position dans l'onglet où insérer le document ouvert.|  
+  
+## Gestionnaire d'extensions  
+ `DTE.Properties("Environment", "ExtensionManager")`  
+  
+|Nom de l'élément de propriété|Valeur|Description|  
+|-----------------------------------|------------|-----------------|  
+|EnableAdminExtensions|Get\/Set \(booléen\)|Charge les extensions par utilisateur quand Visual Studio est exécuté sous des informations d'identification d'administrateur.  Visual Studio doit être redémarré après la modification de cette valeur.|  
+|EnableOnline|Get\/Set \(booléen\)|Permet l'accès aux extensions sur la galerie Visual Studio.|  
+|AutomaticallyCheckForUpdates|Get\/Set \(booléen\)|Recherche automatiquement les mises à jour des extensions installées.|  
+  
+## Rechercher et remplacer  
+ `DTE.Properties("Environment", "FindAndReplace")`  
+  
+|Nom de l'élément de propriété|Valeur|Description|  
+|-----------------------------------|------------|-----------------|  
+|ShowWarningMessages|Get\/Set \(booléen\)|Affiche des messages d'avertissement.|  
+|InitializeFromEditor|Get\/Set \(booléen\)|Remplit automatiquement la zone **Rechercher** avec du texte provenant de l'éditeur.|  
+|ShowMessageBoxes|Get\/Set \(booléen\)|Affiche des messages d'information.|  
+|HideWindowsAfterMatchFromQuickFindReplace|Get\/Set \(booléen\)|Masque la fenêtre **Rechercher et remplacer** une fois qu'une correspondance est trouvée à l'aide de **Recherche rapide** ou de **Remplacement rapide**.|  
+  
+## Importation et exportation de paramètres  
+ `DTE.Properties("Environment", "Import and Export Settings")`  
+  
+|Nom de l'élément de propriété|Valeur|Description|  
+|-----------------------------------|------------|-----------------|  
+|TrackTeamSettings|Get\/Set \(booléen\)|Utilise les paramètres du fichier spécifié par TeamSettingsFile.|  
+|TeamSettingsFile|Get\/Set \(chaîne\)|Nom du fichier qui a les paramètres d'équipe.|  
+|AutoSaveFile|Get\/Set \(chaîne\)|Nom du fichier où les paramètres utilisateur sont automatiquement enregistrés.|  
+  
+## Paramètres internationaux  
+ `DTE.Properties("Environment", "International")`  
+  
+|Nom de l'élément de propriété|Valeur|Description|  
+|-----------------------------------|------------|-----------------|  
+|Langage|Get\/Set \(chaîne\)|Valeur LCID pour la langue actuelle de Visual Studio.|  
+  
+## Clavier  
+ `DTE.Properties("Environment", "Keyboard")`  
+  
+|Nom de l'élément de propriété|Valeur|Description|  
+|-----------------------------------|------------|-----------------|  
+|Scheme|Get\/Set \(chaîne\)|Retourne une chaîne qui contient un schéma intégré, une chaîne contenant le chemin d'accès complet du fichier .vsk qui est chargé, ou « \(Par défaut\) » si aucun fichier .vsk n'est chargé.|  
+  
+## Projets et solution  
+ `DTE.Properties("Environment", "ProjectsAndSolution")`  
+  
+|Nom de l'élément de propriété|Valeur|Description|  
+|-----------------------------------|------------|-----------------|  
+|OnRunOrPreview|Get\/Set \(chaîne\)|Détermine si l'IDE enregistre tout avant un aperçu ou l'exécution d'un projet généré.|  
+|ProjectsLocation|Get\/Set \(chaîne\)|Détermine le répertoire par défaut où la boîte de dialogue **Ajouter un projet** enregistre les nouveaux projets.|  
+|ShowOutputWindowBeforeBuild|Get\/Set \(booléen\)|Détermine si le démarrage d'une build affiche la **Sortie**|  
+|ShowTaskListAfterBuild|Get\/Set \(booléen\)|Détermine si une opération de build qui échoue affiche la **Liste des tâches** quand la build est terminée.|  
+|TrackFileSelectionInExplorer|Get\/Set \(booléen\)|Détermine si l'élément actuel est suivi dans l'**Explorateur de solutions**.|  
+|AlwaysShowSolutionNode|Get\/Set \(booléen\)|Détermine si le nœud de la solution est affiché.|  
+|OnlySaveStartupProjectsAndDependencies|Get\/Set \(booléen\)|Détermine si les opérations d'enregistrement sont limitées aux projets de démarrage et à leurs fichiers dépendants.|  
+|ShowAdvancedBuildConfigurations|Get\/Set \(booléen\)|Détermine si les configurations de build avancées sont affichées.|  
+|ConcurrentBuilds|Get\/Set \(chaîne\)|Détermine le nombre maximal de builds de projet qui peuvent être effectuées en parallèle.|  
+|SaveNewProjects|Get\/Set \(booléen\)|Détermine si les nouveaux projets sont enregistrés automatiquement après avoir été créés.|  
+|PromptForRenameSymbol|Get\/Set \(booléen\)|Spécifie s'il faut inviter l'utilisateur à utiliser des noms symboliques quand des fichiers sont renommés.|  
+|OnRunWhenErrors|Get\/Set \(Enum\)|Spécifie le comportement à l'exécution quand une build se termine avec des erreurs.|  
+|OnRunWhenOutOfDate|Get\/Set \(Enum\)|Spécifie le comportement à l'exécution quand un projet est périmé.|  
+|ProjectTemplatesLocation|Get\/Set \(chaîne\)|Répertoire qui contient les modèles de projets utilisateur.|  
+|ProjectItemTemplatesLocation|Get\/Set \(chaîne\)|Répertoire qui contient les modèles d'éléments utilisateur.|  
+|DefaultBehaviorForStartupProjects|Get\/Set \(chaîne\)||  
+|MSBuildOutputVerbosity|Get\/Set \(chaîne\)|Spécifie le niveau de détail pour la sortie de la build.|  
+  
+## Démarrage  
+ `DTE.Properties("Environment", "Startup")`  
+  
+|Nom de l'élément de propriété|Valeur|Description|  
+|-----------------------------------|------------|-----------------|  
+|OnStartUp|Get\/Set \(Enum\)|Action à exécuter au démarrage, à partir de <xref:EnvDTE.vsStartUp>, avec des valeurs de 0 à 5 :<br /><br /> -   0 : Ouvrir la page d'accueil<br />-   1 : Charger la dernière solution chargée<br />-   2 : Afficher la boîte de dialogue **Ouvrir un projet**<br />-   3 : Afficher la boîte de dialogue **Nouveau projet**<br />-   4 : Afficher l'environnement vide<br />-   5 : Afficher la page de démarrage|  
+|StartPageRSSUrl|Get\/Set \(chaîne\)|URL du flux RSS utilisé au démarrage.|  
+|StartPageRefreshDownloadedContent|Get\/Set \(booléen\)|Actualise la page de démarrage après chaque passage de l'intervalle spécifié dans StartPageRefreshInterval.|  
+|StartPageRefreshInterval|Get\/Set \(Short\)|Intervalle en minutes pour actualiser la page de démarrage.|  
+  
+## TaskList  
+ `DTE.Properties("Environment", "TaskList")`  
+  
+|Nom de l'élément de propriété|Valeur|Description|  
+|-----------------------------------|------------|-----------------|  
+|ConfirmTaskDeletion|Get\/Set \(booléen\)|Spécifie si une boîte de confirmation s'affiche lors de la suppression de tâches dans la **Liste des tâches**.|  
+|WarnOnAddingHiddenItem|Get\/Set \(booléen\)|Spécifie si vous recevez un avertissement lors de l'ajout d'une tâche utilisateur qui ne sera pas affichée.|  
+|DontShowFilePaths|Get\/Set \(booléen\)|Spécifie si les chemins d'accès complets des fichiers sont affichés dans la liste des tâches.|  
+|CommentTokens|SafeArray|Retourne un SafeArray des valeurs de jeton de commentaire.  Chacun a les champs `Name` \(chaîne\) et `Priority` \(<xref:EnvDTE.vsTaskPriority>, Haute, Moyenne ou Faible\).|  
+  
+## Navigateur web  
+ `DTE.Properties("Environment", "WebBrowser")`  
+  
+|Nom de l'élément de propriété|Valeur|Description|  
+|-----------------------------------|------------|-----------------|  
+|HomePage|Get\/Set \(chaîne\)|Représente l'URL de la page d'accueil.|  
+|SearchPage|Get\/Set \(chaîne\)|Représente l'URL de la page de recherche.|  
+|ViewSourceIn|Get\/Set \(Enum\)|<xref:EnvDTE.vsBrowserViewSource> \(Source, Conception, Externe\).|  
+|ViewSourceExternalProgram|Get\/Set \(chaîne\)|Chemin d'accès de la visionneuse de la source externe.|  
+  
+## Voir aussi  
+ [Contrôle des paramètres de la boîte de dialogue Options](../Topic/Controlling%20Options%20Settings.md)   
+ [Détermination des noms d'éléments de propriété dans les pages Options](../Topic/Determining%20the%20Names%20of%20Property%20Items%20on%20Options%20Pages.md)   
+ [Page Options, Polices et couleurs, propriétés de nœud](../../ide/reference/options-page-fonts-and-colors-node-properties.md)   
+ [Page Options, Éditeur de texte, propriétés de nœud](../../ide/reference/options-page-text-editor-node-properties.md)   
+ [Environnement, boîte de dialogue Options](../../ide/reference/environment-options-dialog-box.md)
