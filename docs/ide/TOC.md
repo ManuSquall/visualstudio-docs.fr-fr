@@ -49,7 +49,7 @@
 #### [Étape 8 : ajouter une méthode pour vérifier si le joueur a gagné](step-8-add-a-method-to-verify-whether-the-player-won.md)
 #### [Étape 9 : tester d’autres fonctionnalités](step-9-try-other-features.md)
 ## [Bien démarrer avec C++ dans Visual Studio](getting-started-with-cpp-in-visual-studio.md)
-## [Bien démarrer avec le débogage dans Visual Studio 2015](getting-started-with-debugging-in-visual-studio.md)
+## [Bien démarrer avec le débogage dans Visual Studio](getting-started-with-debugging-in-visual-studio.md)
 # [Recherche et utilisation des extensions Visual Studio](finding-and-using-visual-studio-extensions.md)
 # [Solutions et projets dans Visual Studio](solutions-and-projects-in-visual-studio.md)
 ## [Création de solutions et de projets](creating-solutions-and-projects.md)
