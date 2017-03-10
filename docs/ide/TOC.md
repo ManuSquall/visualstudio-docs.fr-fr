@@ -1,4 +1,4 @@
-# [IDE Visual Studio](visual-studio-ide.md)
+# [Visite guidée des fonctionnalités de l’IDE Visual Studio](visual-studio-ide.md)
 # [Bien démarrer avec Visual Studio](get-started-with-visual-studio.md)
 # [Comptes d’utilisateur et mises à jour](user-accounts-and-updates.md)
 ## [Connexion à Visual Studio](signing-in-to-visual-studio.md)
@@ -111,6 +111,7 @@
 ### [Guide pratique pour modifier la casse du texte dans l’Éditeur](how-to-change-text-case-in-the-editor.md)
 ### [Guide pratique pour gérer les modes de l’éditeur](how-to-manage-editor-modes.md)
 ### [Guide pratique pour gérer les fenêtres de l’Éditeur](how-to-manage-editor-windows.md)
+## [Développer du code dans Visual Studio sans projets ni solutions](develop-code-in-visual-studio-without-projects-or-solutions.md)
 ## [Créer des paramètres d’éditeur personnalisés et portables](create-portable-custom-editor-options.md)
 ## [Guide pratique pour suivre votre code en personnalisant la barre de défilement](how-to-track-your-code-by-customizing-the-scrollbar.md)
 ## Navigation dans votre code
