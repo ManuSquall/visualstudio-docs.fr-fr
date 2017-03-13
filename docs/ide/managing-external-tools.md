@@ -1,7 +1,7 @@
 ---
 title: "Gérer les outils externes | Microsoft Docs"
 ms.custom: 
-ms.date: 01/23/2017
+ms.date: 02/17/2017
 ms.reviewer: 
 ms.suite: 
 ms.technology:
@@ -76,43 +76,33 @@ translation.priority.ht:
 - zh-cn
 - zh-tw
 translationtype: Human Translation
-ms.sourcegitcommit: 66e09a22bcedb37f82eb9517a8f9d4affbe3a374
-ms.openlocfilehash: ad9461bb29dba3e8e2ffe242c1f709587729ce22
-ms.lasthandoff: 02/22/2017
+ms.sourcegitcommit: c36d97b83aa0892235c8f196cf6af63520b3547c
+ms.openlocfilehash: a31b90643e3707348595fce02ec37a1c02a97195
+ms.lasthandoff: 03/01/2017
 
 ---
 # <a name="manage-external-tools"></a>Gérer les outils externes
-Vous pouvez appeler des outils externes à partir de Visual Studio. Certains outils par défaut sont disponibles dans le menu **Outils**, mais vous pouvez ajouter vos propres exécutables.  
-  
+Vous pouvez appeler des outils externes depuis Visual Studio en utilisant le menu **Outils**. Certains outils par défaut sont disponibles dans le menu **Outils**, mais vous pouvez ajouter vos propres exécutables.  
+
 ## <a name="tools-available-on-the-visual-studio-tools-menu"></a>Outils disponibles dans le menu Outils de Visual Studio
- Vous pouvez appeler les outils suivants à partir du menu **Outils** de [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]. Vous pouvez également les appeler par leur nom à partir de la fenêtre **Lancement rapide**. Par exemple, pour appeler GuidGen.exe, tapez **Create GUID**.  
-  
-1.  Create GUID : génère un GUID.  
-  
-2.  Error Lookup : obtient un message d'erreur de la valeur entrée. Pour plus d’informations, consultez [Référence d’ERRLOOK](/visual-cpp/build/reference/errlook-reference).  
-  
-3.  ATL/MFC Trace Tool : montre des messages de trace de débogage dans les sources ATL et MFC.  
-  
-4.  PreEmptive Dotfuscator and Analytics : protège les programmes .NET contre l'ingénierie à rebours.  
-  
-5.  SPY++ : affiche les processus, threads, fenêtres, et messages de fenêtre graphiquement.  
-  
-6.  Éditeur de configuration de service WCF : vous permet de créer et de modifier les paramètres de configuration des services WCF.  
-  
-> [!WARNING]
->  Il est possible qu'une liste différente d'outils externes s'affiche, en fonction de l'édition de Visual Studio que vous avez installée et du profil de paramètres que vous avez appliqué. Pour plus d’informations, consultez [Personnalisation des paramètres de développement dans Visual Studio](http://msdn.microsoft.com/en-us/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
-  
+ Le menu **Outils** contient plusieurs commandes prédéfinies comme :
+
+*  **Extensions et mises à jour** pour [gérer les extensions Visual Studio](finding-and-using-visual-studio-extensions.md)
+*  **Gestionnaire des extraits de code...** pour [organiser les extraits de code](code-snippets.md#code-snippet-manager)
+*  **PreEmptive Protection - Dotfuscator** pour lancer [Dotfuscator Community Edition (CE)](dotfuscator/index.md) s’il est [installé](dotfuscator/install.md)
+*  **Personnaliser...** pour [personnaliser les menus et les barres d’outils](how-to-customize-menus-and-toolbars-in-visual-studio)
+*  **Options...** pour [définir différentes options de l’IDE Visual Studio et d’autres outils](reference/options-dialog-box-visual-studio.md)
+
 ## <a name="add-new-tools-to-the-tools-menu"></a>Ajouter de nouveaux outils au menu Outils 
- Vous pouvez ajouter un outil externe au menu **Outils**. Ouvrez la boîte de dialogue **Outils externes**, cliquez sur **Ajouter**, puis entrez les informations. Par exemple, l'entrée suivante peut provoquer l'ouverture de l'Explorateur Windows dans le répertoire du fichier qui est actuellement ouvert dans Visual Studio :  
+ Vous pouvez ajouter un outil externe au menu **Outils**. Ouvrez la boîte de dialogue **Outils externes...**, cliquez sur **Ajouter** puis entrez les informations. Par exemple, l'entrée suivante peut provoquer l'ouverture de l'Explorateur Windows dans le répertoire du fichier qui est actuellement ouvert dans Visual Studio :  
   
-1.  Titre : Ouvrir l'emplacement du fichier  
+1.  Titre : *Ouvrir l’emplacement du fichier*
   
-2.  Commande : explorer.exe  
+2.  Commande : `explorer.exe`  
   
-3.  Arguments : /root, "$(ItemDir)"  
+3.  Arguments : `/root, "$(ItemDir)"`  
   
-## <a name="arguments-for-external-tools"></a>Arguments des outils externes  
- Les arguments suivants sont des variables Visual Studio assignées lorsque vous exécutez un outil externe. Des liens vers des outils externes (par exemple, Bloc-notes ou Spy++) peuvent être répertoriés dans le menu **Outils** à l’aide de la boîte de dialogue Outils externes.  
+ Voici une liste complète des arguments qui peuvent être utilisés lors de la définition d’un outil externe.
   
 > [!NOTE]
 >  La barre d'état IDE affiche les variables Ligne active et Colonne active pour indiquer l'emplacement du point d'insertion dans l'éditeur de code actif. La variable Texte actif retourne le texte ou le code sélectionné à cet emplacement.  
@@ -135,7 +125,7 @@ Vous pouvez appeler des outils externes à partir de Visual Studio. Certains out
 |Nom du fichier projet|$(ProjFileName)|Nom de fichier du projet actif (lecteur + chemin d'accès + nom de fichier).|  
 |Répertoire de la solution|$(SolutionDir)|Répertoire de la solution active (lecteur + chemin d'accès).|  
 |Nom du fichier solution|$(SolutionFileName)|Nom de fichier de la solution active (lecteur + chemin d’accès + nom de fichier).|  
-  
+
 ## <a name="see-also"></a>Voir aussi  
  [Outils de génération C/C++](/visual-cpp/build/reference/c-cpp-build-tools)
 

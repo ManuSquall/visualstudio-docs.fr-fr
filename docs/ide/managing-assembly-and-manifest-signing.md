@@ -1,7 +1,7 @@
 ---
 title: "Gestion d’assembly et signature de manifeste | Microsoft Docs"
 ms.custom: 
-ms.date: 11/04/2016
+ms.date: 02/17/2017
 ms.reviewer: 
 ms.suite: 
 ms.technology:
@@ -33,9 +33,9 @@ translation.priority.ht:
 - zh-cn
 - zh-tw
 translationtype: Human Translation
-ms.sourcegitcommit: 5658ecf52637a38bc3c2a5ad9e85b2edebf7d445
-ms.openlocfilehash: 85474fe229980aac7c57205f111656d4264045d1
-ms.lasthandoff: 02/22/2017
+ms.sourcegitcommit: 68358885d93e9e6b7f231750c35065be9521c3fe
+ms.openlocfilehash: b1ce5a5c4dc05cb9d0a2ebcb68a10a5054b68893
+ms.lasthandoff: 03/01/2017
 
 ---
 # <a name="managing-assembly-and-manifest-signing"></a>Gestion d'assembly et signature de manifeste
@@ -46,6 +46,9 @@ La signature avec un nom fort fournit à un composant logiciel une identité glo
  Pour plus d’informations sur la signature d’assemblys dans les projets Visual Basic et C#, consultez [Création et utilisation d’assemblys avec nom fort](http://msdn.microsoft.com/Library/ffbf6d9e-4a88-4a8a-9645-4ce0ee1ee5f9).  
   
  Pour plus d’informations sur la signature d’assemblys dans les projets Visual C++, consultez [Assemblys de nom fort (signature d’assembly) (C++/CLI)](/visual-cpp/dotnet/strong-name-assemblies-assembly-signing-cpp-cli).  
+
+> [!NOTE]
+>  La signature avec nom fort ne protège pas l’assembly contre l’ingénierie à rebours.  Pour protéger contre l’ingénierie à rebours, consultez [Dotfuscator Community Edition (CE)](dotfuscator/index.md).
   
 ## <a name="asset-types-and-signing"></a>Types de composants et signature  
  Vous pouvez signer les manifestes d’application et les assemblys .NET. Notamment :  

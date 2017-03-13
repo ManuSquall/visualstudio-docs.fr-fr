@@ -1,7 +1,7 @@
 ---
 title: "Sécurité dans Visual Studio| Microsoft Docs"
 ms.custom: 
-ms.date: 11/04/2016
+ms.date: 02/17/2017
 ms.reviewer: 
 ms.suite: 
 ms.technology:
@@ -31,9 +31,9 @@ translation.priority.ht:
 - zh-cn
 - zh-tw
 translationtype: Human Translation
-ms.sourcegitcommit: 5658ecf52637a38bc3c2a5ad9e85b2edebf7d445
-ms.openlocfilehash: 8e34062596ab2f87ae97934b89b4c292e8f28f32
-ms.lasthandoff: 02/22/2017
+ms.sourcegitcommit: 7a282fc04c1eb01f0c56b1d76880276fc270686d
+ms.openlocfilehash: 96136c7223f3d5f78fff9bfe3106d48cab4dd44a
+ms.lasthandoff: 03/01/2017
 
 ---
 # <a name="security-in-visual-studio"></a>Sécurité dans Visual Studio
@@ -56,3 +56,12 @@ Vous devez prendre en compte la sécurité dans tous les aspects du développeme
   
  [Bonnes pratiques de sécurité](/visual-cpp/top/security-best-practices-for-cpp)  
  Explique les dépassements de mémoire tampon et présente en détails la fonctionnalité de vérification de la sécurité de Microsoft Visual C++ fournie par le repère de compilation /GS.
+
+## <a name="building-for-security"></a>Générer avec des fonctionnalités de sécurité  
+ La sécurité est également un facteur important à prendre en compte dans le processus de génération.  Quelques étapes supplémentaires peuvent améliorer la sécurité d’une application déployée et empêcher l’ingénierie à rebours non autorisée, l’usurpation d’identité ou d’autres attaques.
+
+ [Dotfuscator Community Edition (CE)](dotfuscator/index.md)  
+ Explique comment installer et commencer à utiliser PreEmptive Protection - Dotfuscator Community Edition (gratuit) pour protéger les assemblys .NET de l’ingénierie à rebours et des utilisations non autorisées (comme un débogage non autorisé).
+  
+ [Gestion d’assembly et signature de manifeste](managing-assembly-and-manifest-signing.md)  
+ Présente la signature avec nom fort, qui peut être utilisée pour identifier de façon univoque des composants logiciels, empêchant ainsi l’usurpation de noms.
