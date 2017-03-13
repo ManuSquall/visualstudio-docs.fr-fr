@@ -31,15 +31,15 @@ translation.priority.mt:
 - pt-br
 - tr-tr
 translationtype: Human Translation
-ms.sourcegitcommit: 5ec205ee98f61b400112a39197e1f2aa9dddbd7d
-ms.openlocfilehash: 2d6ec94f7e68a84a4bb4a606882997fadec49e01
-ms.lasthandoff: 02/22/2017
+ms.sourcegitcommit: 8f844c2d7d975476bc4c059d211a1d6cb0df64eb
+ms.openlocfilehash: 4c995fb6df6316ce7f84fae7075b81063b54ebf7
+ms.lasthandoff: 02/28/2017
 
 ---
 # <a name="profiling-tools"></a>Outils de profilage
 Les outils de profilage et de diagnostic vous aident à diagnostiquer l’utilisation de la mémoire et du processeur et d’autres problèmes au niveau de l’application. Grâce à ces outils, vous pouvez accumuler des données (par exemple, des valeurs de variables, des appels de fonctions et des événements) pendant que vous exécutez votre application dans le débogueur. Vous pouvez examiner l’état de votre application à différents stades au cours de l’exécution de votre code.  
   
- Vous trouverez au bas de l’article un résumé des outils disponibles pour le type de votre projet (par exemple, application de bureau, UWP, ASP.NET).  
+ Vous trouverez au bas de l’article un récapitulatif des outils disponibles pour le type de votre projet (par exemple, application de bureau, UWP, ASP.NET).  
   
  Vous pouvez accéder aux outils de profilage en sélectionnant **Déboguer / Windows / Afficher les outils de diagnostic** pour utiliser les outils durant votre session de débogage, ou vous pouvez effectuer une analyse « post-mortem » en adoptant d’autres approches.  Pour plus d’informations sur les différentes approches, consultez [Exécution des outils de profilage avec ou sans le débogueur](../profiling/running-profiling-tools-with-or-without-the-debugger.md) .
   
@@ -62,12 +62,12 @@ Les outils de profilage et de diagnostic vous aident à diagnostiquer l’utilis
 ## <a name="gpu-usage"></a>Utilisation du GPU  
  ![DiagGPUUsage](../profiling/media/diaggpuusage.png "DiagGPUUsage")  
   
- Utilisez l’outil [GPU Usage](../debugger/gpu-usage.md) pour mieux comprendre l’utilisation générale du matériel par votre application Direct3D. Vous pouvez utiliser cet outil avec les applications de bureau et les applications universelles Windows, mais pas avec les applications ASP.NET. L’outil **Utilisation de l’UC** peut être exécuté à partir de la fenêtre **Outils de diagnostic** pendant le débogage (**Déboguer / Afficher les outils de diagnostic**) ou en dehors du débogueur (**Déboguer / Profileur de performances...**).  
+ Utilisez l’outil [GPU Usage](../debugger/gpu-usage.md) pour mieux comprendre l’utilisation générale du matériel par votre application Direct3D. Vous pouvez utiliser cet outil avec les applications de bureau et les applications universelles Windows, mais pas avec les applications ASP.NET. Vous pouvez exécuter l’outil **Utilisation du GPU** en dehors du débogueur (**Déboguer / Profileur de performances...**).  
   
 ## <a name="application-timeline"></a>Chronologie de l'application  
  ![DiagAppTimeline](../profiling/media/diagapptimeline.png "DiagAppTimeline")  
   
- L’outil [Application Timeline](../profiling/application-timeline.md) vous aide à améliorer les performances des applications XAML en offrant une vue détaillée de leur consommation de ressources. Vous pouvez utiliser **Chronologie de l’application** avec les applications de bureau et les applications universelles Windows, mais pas avec les applications ASP.NET. L’outil **Chronologie de l’application** peut être exécuté à partir de la fenêtre **Outils de diagnostic** (**Déboguer / Profileur de performances...**).
+ L’outil [Chronologie de l’application](../profiling/application-timeline.md) vous aide à améliorer les performances des applications XAML en offrant une vue détaillée de leur consommation de ressources. Vous pouvez utiliser **Chronologie de l’application** avec les applications de bureau et les applications universelles Windows, mais pas avec les applications ASP.NET. L’outil **Chronologie de l’application** peut être exécuté en dehors du débogueur (**Déboguer / Profileur de performances...**).
   
 ## <a name="perftips"></a>Conseils sur les performances  
  ![DiagPerfTips](../profiling/media/diagperftips.png "DiagPerfTips")  
@@ -85,12 +85,12 @@ Les outils de profilage et de diagnostic vous aident à diagnostiquer l’utilis
 ## <a name="javascript-memory"></a>Mémoire JavaScript  
  ![DiagJSMemory](../profiling/media/diagjsmemory.png "DiagJSMemory")  
   
- L’outil [JavaScript Memory](../profiling/javascript-memory.md) vous permet de mesurer, d’évaluer et de cibler les problèmes liés aux performances dans votre code en recueillant des informations de minutage à l’entrée et à la sortie de chaque fonction de votre application. Vous pouvez utiliser cet outil avec les applications HTML universelles Windows. L’outil **Minutage de fonction JavaScript** peut être exécuté à partir de la fenêtre **Outils de diagnostic** (**Déboguer / Profileur de performances...**).  
+ L’outil [Mémoire JavaScript](../profiling/javascript-memory.md) vous permet de rechercher les fuites de mémoire et l’utilisation inefficace de la mémoire dans vos applications. L’outil vous permet de prendre des instantanés du tas JavaScript. Vous pouvez utiliser cet outil avec les applications HTML universelles Windows. Vous pouvez exécuter l’outil **Mémoire JavaScript** en dehors du débogueur (**Déboguer / Profileur de performances...**).  
   
 ## <a name="html-ui-responsiveness"></a>Réactivité de l'interface utilisateur HTML  
  ![DiagHTMLResp](../profiling/media/diaghtmlresp.png "DiagHTMLResp")  
   
- L’outil [Réactivité de l’interface utilisateur HTML](../profiling/html-ui-responsiveness.md) vous aide à isoler les problèmes de performances dans vos applications, comme le manque de réactivité, les lenteurs de chargement et les mises à jour visuelles qui sont moins fréquentes que prévu. Vous pouvez utiliser cet outil avec les applications HTML universelles Windows. L’outil **Réactivité de l’interface utilisateur HTML** peut être exécuté à partir de la fenêtre **Outils de diagnostic** (**Déboguer / Profileur de performances...**).  
+ L’outil [Réactivité de l’interface utilisateur HTML](../profiling/html-ui-responsiveness.md) vous aide à isoler les problèmes de performances dans vos applications, comme le manque de réactivité, les lenteurs de chargement et les mises à jour visuelles qui sont moins fréquentes que prévu. Vous pouvez utiliser cet outil avec les applications HTML universelles Windows. Vous pouvez exécuter l’outil **Réactivité de l’interface utilisateur HTML** en dehors du débogueur (**Déboguer / Profileur de performances...**).  
   
 ## <a name="intellitrace"></a>IntelliTrace  
  ![DiagIntelliTrace](../profiling/media/diagintellitrace.png "DiagIntelliTrace")  
