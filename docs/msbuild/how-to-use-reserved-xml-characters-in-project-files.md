@@ -33,6 +33,7 @@ translation.priority.ht:
 translationtype: Human Translation
 ms.sourcegitcommit: 3ba7680d46345f2b49019659c715cfb418933d39
 ms.openlocfilehash: f4b909c055e6ae3734ef8d53717c119c534689df
+ms.lasthandoff: 02/22/2017
 
 ---
 # <a name="how-to-use-reserved-xml-characters-in-project-files"></a>Comment : utiliser des caractères XML réservés dans les fichiers projet
@@ -90,8 +91,3 @@ Lorsque vous créez des fichiers projet, vous devrez peut-être utiliser des car
 ## <a name="see-also"></a>Voir aussi  
  [Référence MSBuild](../msbuild/msbuild-reference.md)
  [MSBuild](../msbuild/msbuild.md)
-
-
-<!--HONumber=Feb17_HO4-->
-
-

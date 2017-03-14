@@ -58,7 +58,7 @@ Cette rubrique est destinée aux développeurs qui travaillent principalement su
 
 -   [Vérifier votre environnement](#verify)
 
-##  <a name="a-namemaca-mac-setup-apple-id-xcode-and-xamarin"></a><a name="mac"></a> Configuration pour Mac (identifiant Apple, Xcode et Xamarin)
+##  <a name="mac"></a> Configuration pour Mac (identifiant Apple, Xcode et Xamarin)
 
 1.  Créez un ID Apple gratuit sur [Identifiant Apple](https://appleid.apple.com/) si vous n’en avez pas déjà un. Cette opération est nécessaire pour l’installation et la connexion à Xcode.
 
@@ -68,7 +68,7 @@ Cette rubrique est destinée aux développeurs qui travaillent principalement su
 
 4.  Une fois que vous avez fini d’installer Xamarin sur les ordinateurs Windows et Mac, suivez les instructions de la page [Connecting to the Mac using XMA](http://developer.xamarin.com/guides/ios/getting_started/installation/windows/#Connecting_to_the_Mac_Using_XMA) (xamarin.com) pour pouvoir utiliser iOS et le Mac à partir de Visual Studio sur l’ordinateur Windows.
 
-##  <a name="a-namewindowsa-windows-setup-inside-parallels-visual-studio-and-xamarin"></a><a name="windows"></a> Configuration pour Windows dans Parallels (Visual Studio et Xamarin)
+##  <a name="windows"></a> Configuration pour Windows dans Parallels (Visual Studio et Xamarin)
 
 1.  En utilisant le Bureau Windows que vous avez configuré dans Parallels/VMWare, [téléchargez et lancez le programme d’installation de l’édition Visual Studio 2015 de votre choix](https://www.visualstudio.com/en-us/downloads/download-visual-studio-vs.aspx) (Community, Professional ou Enterprise). Visual Studio 2015 Community est une version gratuite, tandis que les éditions Professional et Enterprise peuvent être utilisées dans le cadre d’une évaluation de 30 jours.
 
@@ -95,7 +95,7 @@ Cette rubrique est destinée aux développeurs qui travaillent principalement su
 
 6.  Une fois que vous avez fini d’installer Xamarin sur les ordinateurs Windows et Mac, suivez les instructions de la page [Connecting to the Mac using XMA](http://developer.xamarin.com/guides/ios/getting_started/installation/windows/#Connecting_to_the_Mac_Using_XMA) (xamarin.com) pour pouvoir utiliser iOS à partir de Visual Studio.
 
-##  <a name="a-nameverifya-verify-your-environment"></a><a name="verify"></a> Vérifier votre environnement
+##  <a name="verify"></a> Vérifier votre environnement
  Une fois les programmes d’installation terminés, passez quelques minutes à vérifier que tout est prêt pour expérimenter le développement Xamarin.
 
 ### <a name="xamarin-studio"></a>Xamarin Studio
