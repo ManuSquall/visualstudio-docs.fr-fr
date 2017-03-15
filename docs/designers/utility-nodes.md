@@ -1,0 +1,33 @@
+---
+title: "Nœuds utilitaires | Microsoft Docs"
+ms.custom: ""
+ms.date: "11/04/2016"
+ms.reviewer: ""
+ms.suite: ""
+ms.technology: 
+  - "vs-ide-general"
+ms.tgt_pltfrm: ""
+ms.topic: "article"
+ms.assetid: ff732221-b731-424c-ad5b-82ef5f21dff5
+caps.latest.revision: 11
+author: "BrianPeek"
+ms.author: "brpeek"
+manager: "ghogen"
+caps.handback.revision: 11
+---
+# Nœuds utilitaires
+[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
+
+Dans le Concepteur Shader, les nœuds Utilitaires représentent les calculs de nuanceur courants et utiles qui n'entrent pas bien dans les autres catégories.  Certains nœuds d'utilitaire exécutent des opérations simples, telles que le rassemblement des vecteurs ou le choix des résultats de manière conditionnelle, et d'autres exécutent des opérations complexes telles que le calcul des contributions de l'éclairage en fonction de modèles populaires d'éclairage.  
+  
+## Référence de nœud Utilitaire  
+  
+|Nœud|Détails|Propriétés|  
+|----------|-------------|----------------|  
+|**Ajouter le vecteur**|Crée un vecteur en ajoutant ensemble les entrées spécifiées.<br /><br /> **Entrée :**<br /><br /> `Vector` : `float`, `float2` ou `float3`.<br /> Valeurs à ajouter.<br /><br /> `Value to Append`: `float`<br /> Valeur à ajouter.<br /><br /> **Sortie :**<br /><br /> `Output` : `float2`, `float3` ou `float4` selon le type de l'entrée `Vector`.<br /> Le nouveau vecteur.|None|  
+|**Fresnel**|Calcule la courbe décroissante de Fresnel selon la normale de surface spécifiée.<br /><br /> La valeur de courbe décroissante de Fresnel exprime le degré de précision avec lequel le vecteur normal de surface du pixel actuel coïncide avec le vecteur de la vue.  Lorsque les vecteurs sont alignés, le résultat de la fonction est 0 ; le résultat augmente à mesure que les vecteurs se différencient et atteint son maximum lorsque les vecteurs sont orthogonaux.  Vous pouvez utiliser cette courbe pour faire en sorte qu'un effet soit plus ou moins apparent en fonction de la relation entre l'orientation du pixel actuel et l'appareil photo.<br /><br /> **Entrée :**<br /><br /> `Surface Normal`: `float3`<br /> Normale de surface du pixel actuel définie dans l'espace de tangente du pixel actuel.  Vous pouvez l'utiliser pour interrompre la normale à la surface, comme dans le mappage de la normale.<br /><br /> **Sortie :**<br /><br /> `Output`: `float`<br /> Réflectivité du pixel actuel.|**Exposant**<br /> Exposant utilisé pour calculer la courbe décroissante de Fresnel.|  
+|**Si**|Choisit de manière conditionnelle l'un des trois résultats potentiels par composant.  La condition est définie par la relation entre deux autres entrées spécifiées.<br /><br /> Pour chaque composant du résultat, le composant correspondant d'un des trois résultats potentiels est choisi, en fonction de la relation entre les composants correspondants des deux premières entrées.<br /><br /> **Entrée :**<br /><br /> `X` : `float`, `float2`, `float3` ou `float4`<br /> La valeur de gauche à comparer.<br /><br /> `Y` : même type que l'entrée `X`<br /> La valeur de droite à comparer.<br /><br /> `X > Y` : même type que l'entrée `X`<br /> Valeurs sélectionnées lorsque `X` est supérieur à `Y`.<br /><br /> `X = Y` : même type que l'entrée `X`<br /> Valeurs sélectionnées lorsque `X` est égal à `Y`.<br /><br /> `X < Y` : même type que l'entrée `X`<br /> Valeurs sélectionnées lorsque `X` est inférieur à `Y`.<br /><br /> **Sortie :**<br /><br /> `Output`: `float3`<br /> Le résultat choisi, par composant.|None|  
+|**Lambert**|Calcule la couleur du pixel actuel en fonction du modèle d'éclairage Lambert, en utilisant la normale à la surface spécifiée.<br /><br /> Cette couleur est la somme de la couleur ambiante et des contributions de l'éclairage diffus sous un éclairage direct.  La couleur ambiante est assimilable à la contribution totale de l'éclairage indirect, mais semble plate et terne sans l'aide d'un éclairage supplémentaire.  L'éclairage diffus contribue à ajouter du relief et de la profondeur à un objet.<br /><br /> **Entrée :**<br /><br /> `Surface Normal`: `float3`<br /> Normale de surface du pixel actuel définie dans l'espace de tangente du pixel actuel.  Vous pouvez l'utiliser pour interrompre la normale à la surface, comme dans le mappage de la normale.<br /><br /> `Diffuse Color`: `float3`<br /> Couleur diffuse du pixel actuel, généralement la **Couleur du point**.  Si aucune donnée n'est fournie, la valeur par défaut est blanche.<br /><br /> **Sortie :**<br /><br /> `Output`: `float3`<br /> Couleur diffuse du pixel actuel.|None|  
+|**Vecteur de masque**|Masque les composants du vecteur spécifié.<br /><br /> Vous pouvez l'utiliser pour supprimer des canaux de couleur spécifiques d'une valeur de couleur ou pour éviter que des composants spécifiques n'affectent les calculs suivants.<br /><br /> **Entrée :**<br /><br /> `Vector`: `float4`<br /> Vecteur à masquer.<br /><br /> **Sortie :**<br /><br /> `Output`: `float4`<br /> Le vecteur masqué.|**Rouge \(X\)**<br /> **False** pour masquer le composant rouge \(x\). Sinon, **true**.<br /><br /> **Vert \(Y\)**<br /> **False** pour masquer le composant vert \(y\). Sinon, **true**.<br /><br /> **Bleu \(Z\)**<br /> **False** pour masquer le composant bleu \(z\). Sinon, **true**.<br /><br /> **Alpha \(W\)**<br /> **False** pour masquer le composant alpha \(w\). Sinon, **true**.|  
+|**Vecteur de réflexion**|Calcule le vecteur de réflexion pour le pixel actuel dans l'espace tangent, en fonction de la position de l'appareil photo.<br /><br /> Vous pouvez l'utiliser pour calculer les reflets, les coordonnées d'une carte cubique et les contributions de l'éclairage spéculaire.<br /><br /> **Entrée :**<br /><br /> `Tangent Space Surface Normal`: `float3`<br /> Normale de surface du pixel actuel définie dans l'espace de tangente du pixel actuel.  Vous pouvez l'utiliser pour interrompre la normale à la surface, comme dans le mappage de la normale.<br /><br /> **Sortie :**<br /><br /> `Output`: `float3`<br /> Vecteur de réflexion.|None|  
+|**Spéculaire**|Calcule la contribution d'éclairage spéculaire selon le modèle d'éclairage Phong, en utilisant la normale de surface spécifiée.<br /><br /> L'éclairage spéculaire donne un aspect brillant et miroitant à un objet \(par exemple, eau, plastique, métaux\).<br /><br /> **Entrée :**<br /><br /> `Surface Normal`: `float3`<br /> Normale de surface du pixel actuel définie dans l'espace de tangente du pixel actuel.  Vous pouvez l'utiliser pour interrompre la normale à la surface, comme dans le mappage de la normale.<br /><br /> **Sortie :**<br /><br /> `Output`: `float3`<br /> La contribution de couleur de surbrillance spéculaire.|None|
