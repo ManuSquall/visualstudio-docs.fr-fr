@@ -31,12 +31,13 @@ translation.priority.mt:
 translationtype: Human Translation
 ms.sourcegitcommit: 5db97d19b1b823388a465bba15d057b30ff0b3ce
 ms.openlocfilehash: df243cc90a27f971c4e57eb6f9f6a251513d8fb2
+ms.lasthandoff: 02/22/2017
 
 ---
 # <a name="walkthrough-create-a-wpf-desktop-application-connected-to-an-azure-mobile-service"></a>Procédure pas à pas : création d’une application de bureau WPF connectée à un service mobile Azure
 Vous pouvez utiliser Windows Presentation Foundation (WPF) pour créer rapidement une application de bureau moderne qui utilise un service mobile Azure pour stocker et fournir des données.  
   
-##  <a name="a-namerequirementsa-prerequisites"></a><a name="Requirements"></a> Conditions préalables  
+##  <a name="Requirements"></a> Conditions préalables  
  Les éléments suivants sont nécessaires pour effectuer cette procédure pas à pas :  
   
 -   Visual Studio 2015 – toute version prenant en charge le développement WPF.  
@@ -586,8 +587,3 @@ Vous pouvez utiliser Windows Presentation Foundation (WPF) pour créer rapidemen
 ## <a name="see-also"></a>Voir aussi  
  [Procédure pas à pas : ma première application de bureau WPF](../designers/walkthrough-my-first-wpf-desktop-application2.md)   
  [Créer des applications de bureau modernes à l’aide de Windows Presentation Foundation](../designers/create-modern-desktop-applications-with-windows-presentation-foundation.md)
-
-
-<!--HONumber=Feb17_HO4-->
-
-

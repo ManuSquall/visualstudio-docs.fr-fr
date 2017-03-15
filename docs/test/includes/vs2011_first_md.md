@@ -19,8 +19,3 @@ ms.openlocfilehash: 0b260a93ecf5bd7d2e6e70b23ad8305f2856f82b
 
 ---
 Microsoft Visual Studio 2012
-
-
-<!--HONumber=Feb17_HO4-->
-
-

@@ -19,8 +19,3 @@ ms.openlocfilehash: 852304b9111277ecf951e737f839acf3d9abec45
 
 ---
 application du navigateur XAML (XBAP)
-
-
-<!--HONumber=Feb17_HO4-->
-
-

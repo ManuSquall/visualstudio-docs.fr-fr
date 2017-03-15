@@ -1,56 +1,71 @@
 ---
-title: "Param&#232;tres avanc&#233;s pour les services, bo&#238;te de dialogue | Microsoft Docs"
-ms.custom: ""
-ms.date: "12/15/2016"
-ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-general"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "vb.ProjectPropertiesAdvancedServices"
-helpviewer_keywords: 
-  - "Paramètres avancés pour la boîte de dialogue Services"
+title: "Paramètres avancés pour les services, boîte de dialogue | Microsoft Docs"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology:
+- vs-ide-general
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords:
+- vb.ProjectPropertiesAdvancedServices
+helpviewer_keywords:
+- Advanced Settings for Services dialog box
 ms.assetid: 6dde4a2d-85e1-4275-aa55-24b84111be91
 caps.latest.revision: 14
-caps.handback.revision: 14
-author: "kempb"
-ms.author: "kempb"
-manager: "ghogen"
----
-# Param&#232;tres avanc&#233;s pour les services, bo&#238;te de dialogue
-[!INCLUDE[vs2017banner](../../code-quality/includes/vs2017banner.md)]
+author: kempb
+ms.author: kempb
+manager: ghogen
+translation.priority.ht:
+- cs-cz
+- de-de
+- es-es
+- fr-fr
+- it-it
+- ja-jp
+- ko-kr
+- pl-pl
+- pt-br
+- ru-ru
+- tr-tr
+- zh-cn
+- zh-tw
+translationtype: Human Translation
+ms.sourcegitcommit: 5658ecf52637a38bc3c2a5ad9e85b2edebf7d445
+ms.openlocfilehash: af39a14f54ff5e68ff16b29833546f266f4be962
+ms.lasthandoff: 02/22/2017
 
-Les services d'application cliente facilitent l'accès aux services de connexion [!INCLUDE[ajax_current_short](../../ide/reference/includes/ajax_current_short_md.md)], de rôles et de services de profil depuis les applications Windows Forms et Windows Presentation Foundation \(WPF\).  Vous pouvez utiliser la page **Services** du **Concepteur de projets** pour configurer des services d'application cliente.  Pour plus d'informations sur la page **Services**, consultez [Services, page du Concepteur de projets](../../ide/reference/services-page-project-designer.md).  
+---
+# <a name="advanced-settings-for-services-dialog-box"></a>Paramètres avancés pour les services, boîte de dialogue
+Les services d’application cliente fournissent un accès simplifié aux services de connexion, de rôles et de profil [!INCLUDE[ajax_current_short](../../ide/reference/includes/ajax_current_short_md.md)] à partir des applications Windows Forms et WPF (Windows Presentation Foundation). Vous pouvez utiliser la page **Services** du **Concepteur de projet** pour configurer les services d’application cliente. Pour plus d’informations sur la page **Services**, consultez [Services, page du Concepteur de projet](../../ide/reference/services-page-project-designer.md).  
   
- Utilisez la boîte de dialogue **Paramètres avancés pour les services** de la page **Services** du **Concepteur de projets** pour configurer des paramètres avancés pour les services d'application cliente.  Ces paramètres vous permettent de substituer des comportements des services d'application par défaut pour autoriser des scénarios moins courants.  Pour plus d'informations, consultez [Services d'application cliente](../Topic/Client%20Application%20Services.md).  
+ Utilisez la boîte de dialogue **Paramètres avancés pour les services** de la page **Services** dans le **Concepteur de projet** pour configurer les paramètres avancés des services d’application cliente. Ces paramètres vous permettent de remplacer certains comportements de service d’application par défaut pour activer des scénarios moins courants. Pour plus d’informations, consultez [Services d’application cliente](http://msdn.microsoft.com/Library/1487d8df-089e-4f21-abfb-a791a652b58e).  
   
- Pour accéder à la boîte de dialogue **Paramètres avancés pour les services**, sélectionnez un nœud de projet dans l'**Explorateur de solutions**, puis cliquez sur **Propriétés** dans le menu **Projet**.  Lorsque le **Concepteur de projets** s'ouvre, cliquez sur l'onglet **Services**, puis sur le bouton **Avancé**.  Ce bouton est désactivé jusqu'à l'activation des services d'application cliente.  
+ Pour accéder à la boîte de dialogue **Paramètres avancés pour les services**, sélectionnez un nœud de projet dans l’**Explorateur de solutions**, puis cliquez sur **Propriétés** dans le menu **Projet**. Quand le **Concepteur de projet** s’affiche, cliquez sur l’onglet **Services**, puis sur le bouton **Avancé**. Ce bouton est désactivé tant que vous n’activez pas les services d’application cliente.  
   
-## Liste des tâches  
- [Comment : configurer les services d'application cliente](../Topic/How%20to:%20Configure%20Client%20Application%20Services.md)  
+## <a name="task-list"></a>Liste des tâches  
+ [Comment : configurer les services d’application cliente](http://msdn.microsoft.com/Library/34a8688a-a32c-40d3-94be-c8e610c6a4e8)  
   
- [How to: Work Offline with Client Application Services](http://msdn.microsoft.com/fr-fr/f792cb16-8520-4a0f-9dc9-07bfbc454e38)  
+ [Comment : travailler hors connexion avec les services d’application cliente](http://msdn.microsoft.com/en-us/f792cb16-8520-4a0f-9dc9-07bfbc454e38)  
   
-## Liste UIElement  
+## <a name="uielement-list"></a>Liste UIElement  
  **Enregistrer le hachage de mot de passe localement pour activer la connexion hors connexion**  
- Indique si le mot de passe de l'utilisateur sera mis en cache localement sous une forme chiffrée pour autoriser l'utilisateur à se connecter lorsque l'application est en mode hors connexion.  Pour plus d'informations, consultez [How to: Work Offline with Client Application Services](http://msdn.microsoft.com/fr-fr/f792cb16-8520-4a0f-9dc9-07bfbc454e38).  Cette option est activée par défaut.  
+ Indique si le mot de passe de l’utilisateur sera mis en cache localement sous une forme chiffrée pour permettre à l’utilisateur de se connecter quand l’application est en mode hors connexion. Pour plus d’informations, consultez [Comment : travailler hors connexion avec les services d’application cliente](http://msdn.microsoft.com/en-us/f792cb16-8520-4a0f-9dc9-07bfbc454e38). Cette option est activée par défaut.  
   
  **Imposer aux utilisateurs de se reconnecter chaque fois que le cookie du serveur expire**  
- Indique si des utilisateurs précédemment authentifiés font l'objet d'une nouvelle authentification automatique lorsque votre application accède aux rôles ou services de profil et que le cookie d'authentification du serveur a expiré.  Sélectionnez cette option pour refuser l'accès aux services d'application et exiger une nouvelle authentification après l'expiration du cookie.  Cette option est utile pour les applications déployées dans des lieux publics afin de garantir que les utilisateurs qui quittent l'application en cours d'exécution ne restent pas authentifiés indéfiniment.  Cette option est désactivée par défaut.  
+ Indique si des utilisateurs précédemment authentifiés font l’objet d’une nouvelle authentification automatique quand votre application accède aux service de rôles ou de profil et que le cookie d’authentification du serveur a expiré. Sélectionnez cette option pour refuser l’accès aux services d’application et exiger une nouvelle authentification après l’expiration du cookie. Elle est utile pour les applications déployées dans des emplacements publics afin de garantir que les utilisateurs qui quittent l’application en cours d’exécution ne restent pas authentifiés indéfiniment. Cette option est désactivée par défaut.  
   
  **Dépassement du délai de cache du service de rôle**  
- Indique la durée pendant laquelle le fournisseur de rôles clients utilisera des valeurs de rôle mises en cache au lieu d'accéder au service de rôles.  Choisissez une valeur peu élevée lorsque les rôles sont fréquemment mis à jour ou une valeur plus élevée lorsque les rôles sont rarement mis à jour.  La valeur par défaut est définie à une journée.  
+ Indique la durée pendant laquelle le fournisseur de rôles clients utilisera les valeurs de rôle mises en cache au lieu d’accéder au service de rôles. Choisissez une valeur peu élevée quand les rôles sont fréquemment mis à jour ou une valeur plus élevée quand ils sont rarement mis à jour. La valeur par défaut est un jour.  
   
- Le fournisseur de rôles accède aux valeurs de rôle mises en cache ou au service de rôles lorsque vous appelez la méthode <xref:System.Web.Security.RolePrincipal.IsInRole%2A>.  Pour vider le cache par programme et forcer cette méthode à accéder au service distant, appelez la méthode <xref:System.Web.ClientServices.Providers.ClientRoleProvider.ResetCache%2A>.  
+ Le fournisseur de rôles accède aux valeurs de rôle mises en cache ou au service de rôles quand vous appelez la méthode <xref:System.Web.Security.RolePrincipal.IsInRole%2A>. Pour effacer par programmation le cache et forcer cette méthode afin d’accéder au service distant, appelez la méthode <xref:System.Web.ClientServices.Providers.ClientRoleProvider.ResetCache%2A>.  
   
- **Utiliser une chaîne de connexion personnalisée**  
- Indique si les fournisseurs de services clients utilisent un magasin de données personnalisé pour le cache local.  Par défaut, ils utilisent le système de fichiers local.  Cette option permet de remplir automatiquement la zone de texte avec une chaîne de connexion par défaut.  Vous pouvez conserver la chaîne de connexion par défaut pour générer automatiquement et utiliser une base de données SQL Server Compact Edition ou spécifier une chaîne de connexion à une base de données SQL Server existante.  Pour plus d'informations, consultez [Comment : configurer les services d'application cliente](../Topic/How%20to:%20Configure%20Client%20Application%20Services.md).  Cette option est désactivée par défaut.  
+ **Utiliser la chaîne de connexion personnalisée**  
+ Indique si les fournisseurs de services clients utilisent un magasin de données personnalisé pour le cache local. Par défaut, ils utilisent le système de fichiers local. Quand elle est sélectionnée, cette option permet de remplir automatiquement la zone de texte avec une chaîne de connexion par défaut. Vous pouvez conserver la chaîne de connexion par défaut pour automatiquement générer et utiliser une base de données SQL Server Compact Edition. Vous pouvez également spécifier une chaîne de connexion à une base de données SQL Server existante. Pour plus d’informations, consultez [Comment : configurer les services d’application cliente](http://msdn.microsoft.com/Library/34a8688a-a32c-40d3-94be-c8e610c6a4e8). Cette option est désactivée par défaut.  
   
-## Voir aussi  
- [Services d'application cliente](../Topic/Client%20Application%20Services.md)   
- [Services, page du Concepteur de projets](../../ide/reference/services-page-project-designer.md)   
- [Comment : configurer les services d'application cliente](../Topic/How%20to:%20Configure%20Client%20Application%20Services.md)   
- [How to: Work Offline with Client Application Services](http://msdn.microsoft.com/fr-fr/f792cb16-8520-4a0f-9dc9-07bfbc454e38)
+## <a name="see-also"></a>Voir aussi  
+ [Services d’application cliente](http://msdn.microsoft.com/Library/1487d8df-089e-4f21-abfb-a791a652b58e)   
+ [Services, page du Concepteur de projet](../../ide/reference/services-page-project-designer.md)   
+ [Comment : configurer les services d’application cliente](http://msdn.microsoft.com/Library/34a8688a-a32c-40d3-94be-c8e610c6a4e8)   
+ [Comment : travailler hors connexion avec les services d’application cliente](http://msdn.microsoft.com/en-us/f792cb16-8520-4a0f-9dc9-07bfbc454e38)

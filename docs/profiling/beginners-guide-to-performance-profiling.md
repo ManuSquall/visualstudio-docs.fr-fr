@@ -1,126 +1,168 @@
 ---
-title: "Guide du d&#233;butant en profilage des performances | Microsoft Docs"
-ms.custom: ""
-ms.date: "12/08/2016"
-ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-debug"
-ms.tgt_pltfrm: ""
-ms.topic: "get-started-article"
-f1_keywords: 
-  - "vs.performance.wizard.intropage"
-helpviewer_keywords: 
-  - "outils d'analyse des performances, Assistant"
-  - "Performance (Assistant)"
-  - "outils de profilage, démarrage rapide"
+title: "Guide du débutant en profilage des performances | Microsoft Docs"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology:
+- vs-ide-debug
+ms.tgt_pltfrm: 
+ms.topic: get-started-article
+f1_keywords:
+- vs.performance.wizard.intropage
+helpviewer_keywords:
+- Profiling Tools, quick start
+- Diagnostics Tools, CPU Usage
+- CPU Usage
+- Diagnostics Tools
 ms.assetid: da2fbf8a-2d41-4654-a509-dd238532d25a
 caps.latest.revision: 45
-caps.handback.revision: 43
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
----
-# Guide du d&#233;butant en profilage des performances
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+translation.priority.ht:
+- cs-cz
+- de-de
+- es-es
+- fr-fr
+- it-it
+- ja-jp
+- ko-kr
+- pl-pl
+- pt-br
+- ru-ru
+- tr-tr
+- zh-cn
+- zh-tw
+translationtype: Human Translation
+ms.sourcegitcommit: 53907b9b88deca671ee0695385dcbc856a35d309
+ms.openlocfilehash: edc4f1e6a332a3c515a1d1a65b15ae3f1b989ed8
+ms.lasthandoff: 02/22/2017
 
-Vous pouvez utiliser les outils de profilage de Visual Studio pour analyser les problèmes de performances dans votre application.  Cette procédure montre comment utiliser des données d'**échantillonnage**.  
+---
+# <a name="beginners-guide-to-performance-profiling"></a>Guide du débutant en profilage des performances
+Vous pouvez utiliser les outils de profilage de Visual Studio pour analyser les problèmes de performances dans votre application. Cette procédure montre comment utiliser l’onglet **Utilisation de l’UC** des outils de diagnostics pour obtenir les données de performances de votre application. Les outils de diagnostics sont pris en charge pour le développement .NET dans Visual Studio (y compris ASP.NET) et pour le développement natif/C++.
   
- L'**échantillonnage** est une méthode de profilage statistique qui vous montre les fonctions permettant d'effectuer la majeure partie du travail en mode utilisateur dans l'application.  L'échantillonnage est un bon point de départ pour rechercher des pistes pour accélérer votre application.  
+Quand le débogueur est suspendu, l’outil **Utilisation de l’UC** collecte les informations relatives aux fonctions qui s’exécutent dans votre application. L’outil répertorie les fonctions qui ont effectué un travail et fournit un graphique chronologique que vous pouvez utiliser pour examiner des segments spécifiques d’une session d’échantillonnage.
+
+Le hub de diagnostic propose de nombreuses autres options pour exécuter et gérer votre session de diagnostic. Si l’outil **Utilisation de l’UC** ne vous fournit pas les données dont vous avez besoin, les [autres outils de profilage](../profiling/Profiling-Tools.md) fournissent des types d’informations différents qui peuvent vous être utiles. Dans de nombreux cas, le goulot d’étranglement des performances de votre application peut ne pas provenir de votre processeur, mais de la mémoire, de l’interface utilisateur de rendu ou du temps de requête réseau. Le hub de diagnostic vous offre de nombreuses autres options pour enregistrer et analyser ce type de données.
+
+Dans cette rubrique, nous allons aborder l’analyse de l’utilisation du processeur dans un flux de travail de débogage normal. Vous pouvez également analyser l’utilisation du processeur sans débogueur ou en ciblant une application en cours d’exécution. Pour plus d’informations, consultez [Exécution des outils de profilage avec ou sans le débogueur](../profiling/running-profiling-tools-with-or-without-the-debugger.md).
   
- À des intervalles spécifiés, la méthode d'**échantillonnage** collecte les informations relatives aux fonctions qui s'exécutent dans votre application.  Une fois que vous avez terminé une exécution de profilage, la vue **Résumé** des données de profilage affiche l'arborescence des appels de fonction les plus actifs, appelée **chemin réactif**, où la plupart du travail de l'application a été effectué.  Cette vue répertorie également les fonctions qui effectuaient le plus de travail individuel et fournit un graphique chronologique que vous pouvez utiliser pour vous concentrer sur des segments spécifiques de la session d'échantillonnage.  
+##  <a name="BKMK_Quick_start__Collect_diagnostic_data"></a> Étape 1 : Collecter les données de profilage 
   
- Si l'**échantillonnage** ne vous donne pas les données dont vous avez besoin, d'autres méthodes de collection d'outils de profilage fournissent des types d'informations différents qui peuvent vous être utiles.  Pour plus d'informations sur ces autres méthodes, consultez [Comment : choisir des méthodes de collection](../profiling/how-to-choose-collection-methods.md).  
+1.  Ouvrez le projet que vous voulez déboguer dans Visual Studio, puis définissez un point d’arrêt dans votre application à l’endroit où vous souhaitez examiner l’utilisation du processeur.
+
+2.  Définissez un deuxième point d’arrêt à la fin de la fonction ou de la région de code que vous souhaitez analyser.
+
+    > [!TIP]
+    > En définissant deux points d’arrêt, vous limitez la collecte de données aux sections de code que vous souhaitez analyser.
   
+3.  La fenêtre **Outils de diagnostic** apparaît automatiquement, sauf si vous l’avez désactivée. Pour afficher à nouveau la fenêtre, cliquez sur **Déboguer / Fenêtres / Afficher les outils de diagnostic**.
+
+4.  Vous pouvez choisir d’afficher **Utilisation de la mémoire**, [Utilisation de l’UC](../profiling/Memory-Usage.md) ou les deux, avec le paramètre **Sélectionner les outils** de la barre d’outils. Si vous exécutez Visual Studio Enterprise, vous pouvez également activer ou désactiver IntelliTrace dans **Outils / Options / IntelliTrace**.
+
+     ![Afficher les outils de diagnostics](../profiling/media/DiagToolsSelectTool.png "DiagToolsSelectTool")
+
+     Nous allons nous intéresser principalement à l’utilisation du processeur. Vérifiez donc que l’outil **Utilisation de l’UC** est activé (il est activé par défaut).
+
+5.  Cliquez sur **Déboguer / Démarrer le débogage** (ou **Démarrer** dans la barre d’outils, ou **F5**).
+
+     Lorsque l’application est chargée, la vue Résumé des outils de diagnostics s’affiche.
+
+     ![Onglet Résumé des outils de diagnostics](../profiling/media/DiagToolsSummaryTab.png "DiagToolsSummaryTab")
+
+     Pour plus d’informations sur les événements, consultez [Searching and filtering the Events tab of the Diagnostic Tools window](http://blogs.msdn.com/b/visualstudioalm/archive/2015/11/12/searching-and-filtering-the-events-tab-of-the-diagnostic-tools-window.aspx).
+
+6.  Exécutez le scénario qui doit provoquer le premier point d’arrêt.
+
+7.  Pendant que le débogueur est suspendu, activez la collecte des données d’utilisation du processeur, puis ouvrez l’onglet **Utilisation de l’UC**.
+
+     ![Outils de diagnostics - Activer le profilage de l’UC](../profiling/media/DiagToolsEnableCPUProfiling.png "DiagToolsEnableCPUProfiling")
+
+     Lorsque vous choisissez **Activer le profilage de l’UC**, Visual Studio commence à enregistrer vos fonctions, ainsi que la durée de leur exécution. Vous pouvez uniquement afficher les données collectées lorsque votre application s’interrompt à un point d’arrêt.
+
+8.  Appuyez sur F5 pour exécuter l’application jusqu’au deuxième point d’arrêt.
+
+     Vous disposez maintenant de données de performances pour votre application, et plus spécifiquement pour la région de code qui s’exécute entre les deux points d’arrêt.
+
+9.  Sélectionnez la région que vous voulez analyser dans la chronologie de l’UC (il doit s’agir d’une région qui affiche des données de profilage).
+
+     ![Outils de diagnostics - Sélection d’un segment de temps](../profiling/media/DiagToolsSelectTimeSegment.png "DiagToolsSelectTimeSegment")
+
+     Le profileur commence la préparation des données de thread. Attendez qu’elle se termine.
+
+     ![Outils de diagnostics - Préparation des threads](../profiling/media/DiagToolsPreparingThreads.png "DiagToolsPreparingThreads")
+  
+     L’outil Utilisation de l’UC affiche le rapport sous l’onglet **Utilisation de l’UC**.
+  
+     ![Outils de diagnostics - Onglet Utilisation de l’UC](../profiling/media/DiagToolsCPUUsageTab.png "DiagToolsCPUUsageTab")
+
+     À ce stade, vous pouvez commencer à analyser les données.
+
+## <a name="Step2"></a> Étape 2 : Analyser les données d’utilisation de l’UC
+
+Nous vous recommandons de commencer à analyser vos données en examinant la liste des fonctions située sous l’onglet Utilisation de l’UC, en identifiant les fonctions qui effectuent la plus grande partie du travail, puis en analysant ces fonctions les unes après les autres.
+
+1. Dans la liste des fonctions, examinez celles qui effectuent le plus de travail.
+
+    ![Outils de diagnostics - Utilisation de l’UC - Liste des fonctions](../profiling/media/DiagToolsCPUUsageFunctionList.png "DiagToolsCPUUsageFunctionList")
+
+    > [!TIP]
+    > Les fonctions sont classées par ordre et ce sont celles qui effectuent le plus de travail qui figurent en haut de la liste (elles ne sont pas classées selon leur ordre d’appel). Ainsi, vous pouvez identifier rapidement les fonctions avec les temps d’exécution les plus longs.
+
+2. Dans la liste, double-cliquez sur l’une des fonctions d’application qui effectuent le plus de travail.
+
+    Lorsque vous double-cliquez sur une fonction, la vue **Appelant/appelé** s’ouvre dans le volet gauche. 
+
+    ![Outils de diagnostics - Vue Appelant/appelé](../profiling/media/DiagToolsCallerCallee.png "DiagToolsCallerCallee")
+
+    Dans cette vue, la fonction sélectionnée apparaît dans le titre et dans la zone **Fonction active** (ici, GetNumber). La fonction qui a appelé la fonction active s’affiche sur la gauche sous **Fonctions appelantes**, et toutes les fonctions appelées par la fonction active s’affichent dans la zone **Fonctions appelées** située à droite. Vous pouvez sélectionner l’une ou l’autre de ces zones pour modifier la fonction active.
+
+    Cette vue montre la durée totale (en ms), ainsi que le pourcentage du temps global d’exécution de l’application, nécessaires à l’exécution de la fonction.
+
+    La section **Corps de la fonction** montre également la durée totale (et le pourcentage correspondant) passée dans le corps de la fonction, à l’exclusion du temps passé dans les fonctions appelantes et appelées. Dans cet exemple, 3 713 ms sur 3 729 ont été passées dans le corps de la fonction. Les 16 ms restantes ont été passées dans le code externe appelé par cette fonction.
+
+    > [!TIP]
+    > Des valeurs élevées dans le **corps de la fonction** peuvent indiquer un goulot d’étranglement de performances au sein de la fonction.
+
+3. Si vous souhaitez afficher une vue plus générale indiquant l’ordre dans lequel les fonctions sont appelées, sélectionnez **Arborescence des appels** dans la liste déroulante située en haut du volet.
+ 
+    Chaque zone numérotée dans l'illustration est en rapport avec une étape de la procédure.
+  
+    ![Outils de diagnostics - Arborescence des appels](../profiling/media/DiagToolsCallTree.png "DiagToolsCallTree")
+  
+|||
+|-|-|
+|![Étape 1](../profiling/media/ProcGuid_1.png "ProcGuid_1")|Le nœud de premier niveau des arborescences d'appels de l'outil Utilisation de l'UC est un pseudo-nœud|  
+|![Étape 2](../profiling/media/ProcGuid_2.png "ProcGuid_2")|Dans la plupart des applications, quand l'option [Afficher le code externe](#BKMK_External_Code) est désactivée, le nœud de deuxième niveau est un nœud **[Code externe]** contenant le code système et de l'infrastructure qui démarre et arrête l'application, dessine l'interface utilisateur, contrôle la planification des threads et fournit d'autres services de niveau inférieur à l'application.|  
+|![Étape 3](../profiling/media/ProcGuid_3.png "ProcGuid_3")|Les enfants du nœud de deuxième niveau sont les méthodes en code utilisateur et des routines asynchrones appelées ou créées par le code système et d'infrastructure de deuxième niveau.|
+|![Étape 4](../profiling/media/ProcGuid_4.png "ProcGuid_4")|Les nœuds enfants d'une méthode contiennent des données seulement pour les appels de la méthode parente. Lorsque l'option **Afficher le Code externe** est désactivée, les méthodes d'application peuvent également contenir un nœud **[Code externe]** .|
+
+Voici davantage d’informations sur les valeurs de colonne :
+
+- La section **Total UC (ms)** montre la quantité de travail effectué par la fonction et toute autre fonction qu’elle a appelée. Les valeurs d’UC total élevées indiquent les fonctions les plus coûteuses.
+  
+- La colonne **Processeur auto (ms)** indique la quantité de travail effectué par le code dans le corps de la fonction, à l’exception du travail effectué par les fonctions qu’elle a appelées. Des valeurs élevées dans la colonne **Processeur auto (ms)** peuvent indiquer un goulot d’étranglement des performances au sein de la fonction.
+
+- **Modules** Nom du module contenant la fonction, ou nombre de modules contenant les fonctions dans un nœud [Code externe].
+
+## <a name="BKMK_External_Code"></a>Afficher le code externe
+
+Le code externe correspond aux fonctions des composants système et infrastructure exécutés par le code que vous écrivez. Le code externe inclut les fonctions qui démarrent et arrêtent l'application, dessinent l'interface utilisateur, contrôlent les threads et fournissent d'autres services de bas niveau à l'application. Dans la plupart des cas, vous ne serez pas intéressé par le code externe. L’outil Utilisation de l’UC regroupe donc les fonctions externes d’une méthode utilisateur au sein d’un même nœud **[Code externe]**.
+  
+Si vous voulez afficher les chemins d’appel du code externe, choisissez **Afficher le code externe** dans la liste **Filtrer la vue**, puis **Appliquer**.  
+  
+![Choisir Filtrer l’affichage, puis Afficher le code externe](../profiling/media/DiagToolsShowExternalCode.png "DiagToolsShowExternalCode")  
+  
+N'oubliez pas que de nombreuses chaînes d'appel en code externe sont profondément imbriquées, la largeur de la colonne Nom de fonction ne peut pas dépasser la largeur d'affichage de presque tous les moniteurs d'ordinateur, sauf les plus larges. Si tel est le cas, les noms de fonctions sont affichés ainsi : **[…]**.
+  
+Utilisez la zone de recherche pour trouver le nœud que vous cherchez, puis utilisez la barre de défilement horizontal pour afficher les données dans la vue.
+
 > [!TIP]
->  Si vous profilez du code qui appelle des fonctions Windows, vous devez vous assurer que vous disposez des fichiers .pdb les plus récents.  Sans ces fichiers, vos vues de rapports répertorient des noms de fonctions Windows cryptés et difficiles à comprendre.  Pour plus d'informations sur la façon de s'assurer que vous possédez les fichiers dont vous avez besoin, consultez [Comment : référencer les informations de symboles Windows](../profiling/how-to-reference-windows-symbol-information.md).  
+> Si vous profilez du code externe qui appelle des fonctions Windows, vous devez vous assurer que vous disposez des fichiers .pdb les plus récents. Sans ces fichiers, vos vues de rapports répertorient des noms de fonctions Windows cryptés et difficiles à comprendre. Pour savoir comment vérifier que vous disposez des fichiers dont vous avez besoin, consultez [Spécifier des fichiers de symboles (.pdb) et des fichiers sources dans le débogueur](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md).
   
-##  <a name="Step1"></a> Créer et exécuter une session de performance  
- Pour obtenir les données que vous devez analyser, vous devez d'abord créer une session de performance, puis exécuter cette session.  L'**Assistant Performance** vous permet de faire les deux.  
-  
-#### Pour créer et exécuter une session de performance  
-  
-1.  Ouvrez la solution dans Visual Studio.  Définissez la configuration en Release.  \(Recherchez la zone **Configurations de solutions** de la barre d'outils, qui a par défaut la valeur **Debug**.  Remplacez\-la par **Release**.\)  
-  
-    > [!IMPORTANT]
-    >  Si vous n'êtes pas administrateur sur l'ordinateur que vous utilisez, vous devez exécuter Visual Studio en tant qu'administrateur lorsque vous utilisez le profileur.  \(Cliquez avec le bouton droit sur l'icône de l'application Visual Studio, puis cliquez sur **Exécuter en tant qu'administrateur**.  
-  
-2.  Dans le menu **Déboguer**, choisissez **Démarrer les outils de diagnostic sans débogage**.  
-  
-3.  Cochez l'option **Assistant Performance**, puis cliquez sur **Démarrer**.  
-  
-4.  Cochez l'option **Échantillonnage de l'UC \(recommandé\)**, puis cliquez sur **Terminer**.  
-  
-5.  Votre application démarre et le profileur commence à collecter des données.  
-  
-6.  Testez les fonctionnalités qui peuvent contenir des problèmes de performances.  
-  
-7.  Fermez l'application normalement.  
-  
-     Une fois que vous avez terminé d'exécuter l'application, la vue **Résumé** des données de profilage s'affiche dans la fenêtre principale de Visual Studio et une icône s'affiche pour la nouvelle session dans la fenêtre **Explorateur de performances**.  
-  
-##  <a name="Step2"></a> Étape 2 : Analyser les données d'échantillonnage  
- Lorsque vous terminez d'exécuter une session de performance, la vue **Résumé** du rapport de profilage s'affiche dans la fenêtre principale de Visual Studio.  
-  
- Nous vous recommandons de commencer à analyser vos données en examinant le **chemin réactif,** puis la liste des fonctions qui effectue la majeure partie du travail, et enfin, en vous concentrant sur d'autres fonctions à l'aide de la **chronologie Résumé**.  Vous pouvez également consulter des avertissements et des suggestions de profilage dans la fenêtre **Liste d'erreurs**.  
-  
- Notez bien que la méthode d'échantillonnage peut ne pas vous donner les informations dont vous avez besoin.  Par exemple, les échantillons sont collectés uniquement lorsque l'application exécute le code du mode utilisateur.  Par conséquent, certaines fonctionnalités, telles que les opérations d'entrée et de sortie, ne sont pas capturées par l'échantillonnage.  Les outils de profilage fournissent plusieurs méthodes de collection qui peuvent vous permettre de vous concentrer sur les données importantes.  Pour plus d'informations sur les autres méthodes, consultez [Comment : choisir des méthodes de collection](../profiling/how-to-choose-collection-methods.md).  
-  
- Chaque zone numérotée dans l'illustration est en rapport avec une étape de la procédure.  
-  
- ![Vue de rapport de synthèse pour l'échantillonnage](../profiling/media/summary_sampling.png "Summary\_Sampling")  
-  
-#### Pour analyser les données d'échantillonnage  
-  
-1.  Dans la vue **Résumé**, le **chemin réactif** affiche la branche de l'arborescence des appels de votre application avec les échantillons inclusifs les plus élevés.  Il s'agit du chemin d'exécution qui était le plus actif au moment de la collecte des données.  Les valeurs inclusives élevées peuvent indiquer que l'algorithme qui génère l'arborescence des appels peut être optimisé.  Recherchez dans votre code la fonction qui se trouve au niveau le plus profond du chemin.  Notez que le chemin d'accès peut également inclure des fonctions système ou des fonctions dans des modules externes.  
-  
-     ![Chemin réactif du profileur](../profiling/media/profiler_hotpath.png "Profiler\_HotPath")  
-  
-    1.  Les **échantillons inclusifs** indiquent la quantité de travail effectué par la fonction et toute autre fonction qu'elle a appelée.  Les nombres inclusifs élevés pointent vers les fonctions qui sont généralement les plus coûteuses.  
-  
-    2.  Les **échantillons exclusifs** indiquent la quantité de travail effectué par le code dans le corps de la fonction, à l'exception du travail effectué par les fonctions qu'elle a appelées.  Les nombres exclusifs élevés peuvent indiquer un goulot d'étranglement au niveau des performances dans la fonction elle\-même.  
-  
-2.  Cliquez sur le nom de la fonction pour afficher la vue **Informations relatives à la fonction** des données de profilage.  La vue **Informations relatives à la fonction** présente une vue graphique des données de profilage pour la fonction sélectionnée, en affichant toutes les fonctions qui ont appelé cette fonction et toutes les fonctions appelées par la fonction sélectionnée.  
-  
-    -   La taille des blocs des fonctions d'appel et des fonctions appelées représente la fréquence relative à laquelle les fonctions ont appelé ou ont été appelées.  
-  
-    -   Vous pouvez cliquer sur le nom d'une fonction d'appel ou d'une fonction appelée afin de la sélectionner dans la vue Informations relatives à la fonction.  
-  
-    -   Le volet inférieur des fenêtres **Informations relatives à la fonction** affiche le code de fonction lui\-même.  Si vous examinez le code et recherchez une possibilité d'optimiser ses performances, cliquez sur le nom du fichier source pour ouvrir le fichier dans l'éditeur Visual Studio.  
-  
-3.  Pour continuer votre analyse, retournez à la vue **Résumé** en sélectionnant **Résumé** dans la liste déroulante des vues.  Examinez ensuite les fonctions dans **Fonctions faisant le plus de travail individuel**.  Cette liste affiche les fonctions avec les échantillons exclusifs les plus élevés.  Le code du corps de fonction de ces fonctions a effectué un travail significatif et vous pouvez peut\-être l'optimiser.  Pour analyser davantage une fonction particulière, cliquez sur le nom de la fonction pour l'afficher dans la vue **Informations relatives à la fonction**.  
-  
-     ![Liste des fonctions effectuant le plus de travail](../profiling/media/functions_mostwork.png "Functions\_MostWork")  
-  
-     Pour continuer votre examen de l'exécution du profilage, vous pouvez analyser de nouveau un segment des données de profilage en utilisant la chronologie dans la vue **Résumé** pour vous montrer le **Chemin réactif** et les **Fonctions faisant le plus de travail individuel** à partir d'un segment sélectionné.  Par exemple, si vous vous concentrez sur un pic plus petit dans la chronologie, vous pouvez noter des arborescences des appels coûteuses et des fonctions qui n'étaient pas affichées dans l'analyse de l'exécution du profilage toute entière.  
-  
-     Pour réanalyser un segment, sélectionnez un segment dans la zone Chronologie Résumé, puis cliquez sur **Filtrer par sélection**.  
-  
-     ![Chronologie de la vue Résumé de performance](../profiling/media/performancesummary.png "PerformanceSummary")  
-  
-4.  Le profileur utilise également un ensemble de règles pour suggérer des façons d'améliorer l'exécution du profilage et pour identifier les éventuels problèmes de performances.  Si un problème est détecté, un avertissement s'affiche dans la fenêtre **Liste d'erreurs**.  Pour ouvrir la fenêtre **Liste d'erreurs**, cliquez sur **Liste d'erreurs** dans le menu **Affichage**.  
-  
-    -   Pour voir quelle fonction a déclenché un avertissement, double\-cliquez sur l'avertissement dans la vue **Informations relatives à la fonction**.  
-  
-    -   Pour afficher des informations détaillées sur l'avertissement, cliquez avec le bouton droit sur l'erreur, puis cliquez sur **Afficher l'aide sur l'erreur**.  
-  
-##  <a name="Step3"></a> Étape 3 : Réviser le code et réexécuter une session  
- Après avoir recherché et optimisé une ou plusieurs fonctions, vous pouvez répéter l'exécution du profilage et comparer les données pour afficher les différences de performances de votre application suite aux modifications que vous avez apportées.  
-  
-#### Pour réviser le code et réexécuter le profileur  
-  
-1.  Modifiez votre code.  
-  
-2.  Pour ouvrir l'**Explorateur de performances**, dans le menu **Affichage**, cliquez sur **Autres fenêtres**, puis sur **Explorateur de performances**.  
-  
-3.  Dans l'**Explorateur de performances**, cliquez avec le bouton droit sur la session que vous voulez réexécuter, puis cliquez sur **Démarrer avec le profilage**.  
-  
-4.  Une fois que vous avez réexécuté la session, un autre fichier de données est ajouté au dossier **Rapports** de la session dans l'**Explorateur de performances**.  Sélectionnez les données de profilage d'origine et les nouvelles données de profilage, cliquez avec le bouton droit sur la sélection, puis cliquez sur **Comparer les rapports de performances**.  
-  
-     Une nouvelle fenêtre de rapport s'ouvre et affiche les résultats de la comparaison.  Pour plus d'informations sur l'utilisation de la vue de comparaison, consultez [Comment : comparer des fichiers de données du profileur](../profiling/how-to-compare-performance-data-files.md).  
-  
-## Voir aussi  
- [Utilisation des outils de profilage](../profiling/performance-explorer.md)   
- [Prise en main](../profiling/getting-started-with-performance-tools.md)   
- [Vues d'ensemble](../profiling/overviews-performance-tools.md)
+## <a name="see-also"></a>Voir aussi  
+ [[Utilisation de la mémoire](../profiling/memory-usage.md)
+ [Utilisation de l’UC](../profiling/cpu-usage.md)
+ [Outils de profilage](../profiling/profiling-tools.md)

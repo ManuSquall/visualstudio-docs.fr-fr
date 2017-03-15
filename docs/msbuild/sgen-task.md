@@ -1,61 +1,76 @@
 ---
-title: "SGen Task | Microsoft Docs"
-ms.custom: ""
-ms.date: "12/05/2016"
-ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "http://schemas.microsoft.com/developer/msbuild/2003#SGen"
-dev_langs: 
-  - "VB"
-  - "CSharp"
-  - "C++"
-  - "jsharp"
-helpviewer_keywords: 
-  - "SGen task [MSBuild]"
-  - "MSBuild, SGen task"
+title: "SGen, tâche | Microsoft Docs"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology:
+- vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords:
+- http://schemas.microsoft.com/developer/msbuild/2003#SGen
+dev_langs:
+- VB
+- CSharp
+- C++
+- jsharp
+helpviewer_keywords:
+- SGen task [MSBuild]
+- MSBuild, SGen task
 ms.assetid: 22c5ade4-4159-4667-b891-0c1aa06f4df5
 caps.latest.revision: 11
-caps.handback.revision: 11
-author: "kempb"
-ms.author: "kempb"
-manager: "ghogen"
----
-# SGen Task
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
+author: kempb
+ms.author: kempb
+manager: ghogen
+translation.priority.ht:
+- cs-cz
+- de-de
+- es-es
+- fr-fr
+- it-it
+- ja-jp
+- ko-kr
+- pl-pl
+- pt-br
+- ru-ru
+- tr-tr
+- zh-cn
+- zh-tw
+translationtype: Human Translation
+ms.sourcegitcommit: 5658ecf52637a38bc3c2a5ad9e85b2edebf7d445
+ms.openlocfilehash: e4ba336071a8b9e311ffe67330677cb25ff92751
+ms.lasthandoff: 02/22/2017
 
-Crée un assembly de sérialisation XML pour les types dans l'assembly spécifié.  Cette tâche encapsule l'outil XML Serializer Generator \(Sgen.exe\).  Pour plus d'informations, consultez [Outil XML Serializer Generator \(Sgen.exe\)](../Topic/XML%20Serializer%20Generator%20Tool%20\(Sgen.exe\).md).  
+---
+# <a name="sgen-task"></a>SGen, tâche
+Crée un assembly de sérialisation XML pour les types dans l’assembly spécifié. Cette tâche encapsule l’outil XML Serializer Generator (Sgen.exe). Pour plus d’informations, consultez [Outil XML Serializer Generator (Sgen.exe)](http://msdn.microsoft.com/Library/cc1d1f1c-fb26-4be9-885a-3fe84c81cec6).  
   
-## Paramètres  
- Le tableau suivant décrit les paramètres de la tâche `SGen`.  
+## <a name="parameters"></a>Paramètres  
+ Le tableau ci-dessous décrit les paramètres de la tâche `SGen`.  
   
 |Paramètre|Description|  
 |---------------|-----------------|  
-|`BuildAssemblyName`|Paramètre `String` obligatoire.<br /><br /> Assembly pour lequel le code de sérialisation doit être généré.|  
-|`BuildAssemblyPath`|Paramètre `String` obligatoire.<br /><br /> Chemin d'accès de l'assembly pour lequel le code de sérialisation doit être généré.|  
-|`DelaySign`|Paramètre `Boolean` facultatif.<br /><br /> La valeur `true` indique que vous souhaitez obtenir un assembly complètement signé.  La valeur `false` spécifie que vous souhaitez uniquement placer la clé publique dans l'assembly.<br /><br /> Ce paramètre n'a aucun effet sauf lorsqu'il est utilisé avec le paramètre `KeyFile` ou `KeyContainer`.|  
-|`KeyContainer`|Paramètre `String` facultatif.<br /><br /> Spécifie un conteneur qui contient une paire de clés.  Cela signera l'assembly en insérant une clé publique dans le manifeste d'assembly.  La tâche signe ensuite l'assembly final à l'aide la clé privée.|  
-|`KeyFile`|Paramètre `String` facultatif.<br /><br /> Spécifie une paire de clés ou une clé publique à utiliser pour signer un assembly.  Le compilateur insère la clé publique dans le manifeste d'assembly, puis signe l'assembly final avec la clé privée.|  
-|`Platform`|Paramètre `String` facultatif.<br /><br /> Obtient ou définit la plateforme de compilateur utilisée pour générer l'assembly de sortie.  Ce paramètre peut avoir les valeurs `x86`, `x64` ou `anycpu`.  La valeur par défaut est `anycpu`.|  
+|`BuildAssemblyName`|Paramètre `String` requis.<br /><br /> Assembly pour lequel le code de sérialisation doit être généré.|  
+|`BuildAssemblyPath`|Paramètre `String` requis.<br /><br /> Chemin de l’assembly pour lequel le code de sérialisation doit être généré.|  
+|`DelaySign`|Paramètre `Boolean` facultatif.<br /><br /> Si `true`, indique que vous souhaitez obtenir un assembly complètement signé. Si `false`, indique que vous souhaitez placer uniquement la clé publique dans l’assembly.<br /><br /> Ce paramètre n’a aucun effet, sauf s’il est utilisé avec les paramètres `KeyFile` ou `KeyContainer`.|  
+|`KeyContainer`|Paramètre `String` facultatif.<br /><br /> Spécifie un conteneur qui contient une paire de clés. Cela signe l’assembly en insérant une clé publique dans le manifeste d’assembly. La tâche signe ensuite l’assembly définitif à l’aide de la clé privée.|  
+|`KeyFile`|Paramètre `String` facultatif.<br /><br /> Spécifie une paire de clés ou une clé publique pour signer un assembly. Le compilateur insère la clé publique dans le manifeste d'assembly, puis signe l'assembly final avec la clé privée.|  
+|`Platform`|Paramètre `String` facultatif.<br /><br /> Obtient ou définit la plateforme du compilateur utilisée pour générer l’assembly de sortie. Ce paramètre peut avoir la valeur `x86`, `x64` ou `anycpu`. La valeur par défaut est `anycpu`.|  
 |`References`|Paramètre `String[]` facultatif.<br /><br /> Spécifie les assemblys référencés par les types qui requièrent la sérialisation XML.|  
-|`SdkToolsPath`|Paramètre `String` facultatif.<br /><br /> Spécifie le chemin d'accès des outils du Kit de développement logiciel, comme resgen.exe.|  
-|`SerializationAssembly`|Paramètre de sortie <xref:Microsoft.Build.Framework.ITaskItem>`[]` facultatif.<br /><br /> Contient l'assembly de sérialisation généré.|  
-|`SerializationAssemblyName`|Paramètre `String` facultatif.<br /><br /> Spécifie le nom de l'assembly de sérialisation généré.|  
-|`ShouldGenerateSerializer`|Paramètre `Boolean` obligatoire.<br /><br /> Si la valeur est `true`, la tâche SGen doit générer un assembly de sérialisation.|  
-|`Timeout`|Paramètre `Int32` facultatif.<br /><br /> Spécifie la durée, en millisecondes, après laquelle la tâche exécutable est terminée.  La valeur par défaut est `Int.MaxValue`, indiquant qu'il n'existe aucun délai d'attente.|  
-|`ToolPath`|Paramètre `String` facultatif.<br /><br /> Spécifie l'emplacement à partir duquel la tâche charge le fichier exécutable sous\-jacent \(sgen.exe\).  Si ce paramètre n'est pas spécifié, la tâche utilise le chemin d'accès d'installation du Kit de développement logiciel qui correspond à la version de l'infrastructure exécutant [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)].|  
-|`Types`|Paramètre `String[]` facultatif.<br /><br /> Obtient ou définit une liste de type spécifiques pour lesquels le code de sérialisation doit être généré.  SGen générera le code de sérialisation uniquement pour ces types.|  
-|`UseProxyTypes`|Paramètre `Boolean` obligatoire.<br /><br /> Si la valeur est `true`, la tâche SGen génère le code de sérialisation uniquement pour les types de proxy de service Web XML.|  
+|`SdkToolsPath`|Paramètre `String` facultatif.<br /><br /> Spécifie le chemin des outils du SDK, comme resgen.exe.|  
+|`SerializationAssembly`|Paramètre de sortie <xref:Microsoft.Build.Framework.ITaskItem>`[]` facultatif.<br /><br /> Contient l’assembly de sérialisation généré.|  
+|`SerializationAssemblyName`|Paramètre `String` facultatif.<br /><br /> Spécifie le nom de l’assembly de sérialisation généré.|  
+|`ShouldGenerateSerializer`|Paramètre `Boolean` requis.<br /><br /> Si `true`, la tâche SGen doit générer un assembly de sérialisation.|  
+|`Timeout`|Paramètre `Int32` facultatif.<br /><br /> Spécifie le délai, en millisecondes, après lequel l’exécutable de la tâche est arrêté. La valeur par défaut est `Int.MaxValue`, ce qui indique qu’il n’existe aucun délai d’expiration.|  
+|`ToolPath`|Paramètre `String` facultatif.<br /><br /> Spécifie l’emplacement à partir duquel la tâche chargera le fichier exécutable sous-jacent (sgen.exe). Si vous ne spécifiez pas ce paramètre, la tâche utilise le chemin d’installation du SDK correspondant à la version du framework qui exécute [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)].|  
+|`Types`|Paramètre `String[]` facultatif.<br /><br /> Obtient ou définit une liste de types spécifiques pour lesquels générer le code de sérialisation. SGen générera le code de sérialisation uniquement pour ces types.|  
+|`UseProxyTypes`|Paramètre `Boolean` requis.<br /><br /> Si `true`, la tâche SGen génère du code de sérialisation uniquement pour les types de proxy de service web XML.|  
   
-## Notes  
- En plus des paramètres énumérés ci\-dessus, cette tâche hérite des paramètres de la classe <xref:Microsoft.Build.Tasks.ToolTaskExtension>, qui hérite elle\-même de la classe <xref:Microsoft.Build.Utilities.ToolTask>.  Pour obtenir la liste de ces paramètres supplémentaires et de leurs descriptions, consultez [ToolTaskExtension Base Class](../msbuild/tooltaskextension-base-class.md).  
+## <a name="remarks"></a>Notes  
+ Outre les paramètres énumérés ci-dessus, cette tâche hérite des paramètres de la classe <xref:Microsoft.Build.Tasks.ToolTaskExtension>, qui elle-même hérite de la classe <xref:Microsoft.Build.Utilities.ToolTask>. Pour obtenir la liste de ces paramètres supplémentaires et de leurs descriptions, consultez l’article [ToolTaskExtension Base Class (Classe de base ToolTaskExtension)](../msbuild/tooltaskextension-base-class.md).  
   
-## Voir aussi  
- [Task Reference](../msbuild/msbuild-task-reference.md)   
- [Tasks](../msbuild/msbuild-tasks.md)   
- [MSBuild Concepts](../msbuild/msbuild-concepts.md)
+## <a name="see-also"></a>Voir aussi  
+ [Task Reference (Informations de référence sur les tâches MSBuild)](../msbuild/msbuild-task-reference.md)   
+ [Tâches MSBuild](../msbuild/msbuild-tasks.md)   
+ [Concepts MSBuild](../msbuild/msbuild-concepts.md)

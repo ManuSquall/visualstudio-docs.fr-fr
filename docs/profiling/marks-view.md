@@ -1,54 +1,67 @@
 ---
-title: "Marques, vue | Microsoft Docs"
-ms.custom: ""
-ms.date: "12/05/2016"
-ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-debug"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "vs.performance.view.marks"
-helpviewer_keywords: 
-  - "rapports d'outils de profilage, affichage Marques"
-  - "outils de profilage, affichage Marques"
+title: "Marques, vue | Microsoft Docs"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology:
+- vs-ide-debug
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords:
+- vs.performance.view.marks
+helpviewer_keywords:
+- profiling tools, Marks view
+- profiling tools reports, Marks view
 ms.assetid: b2773344-8081-4116-85a1-58f770448f6a
 caps.latest.revision: 18
-caps.handback.revision: 18
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
----
-# Marques, vue
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+translation.priority.ht:
+- cs-cz
+- de-de
+- es-es
+- fr-fr
+- it-it
+- ja-jp
+- ko-kr
+- pl-pl
+- pt-br
+- ru-ru
+- tr-tr
+- zh-cn
+- zh-tw
+translationtype: Human Translation
+ms.sourcegitcommit: a4eb45e8e0548ead5d99c441abcfa7baf3ffde4f
+ms.openlocfilehash: db99ec8ab99c4bd34f9df043cb4361444c0c8e6b
+ms.lasthandoff: 02/22/2017
 
-La vue Marques affiche l'échantillonnage et les événements ETW qui ont été insérés dans l'application.  
+---
+# <a name="marks-view"></a>Marques, vue
+La vue Marques affiche l’échantillonnage et les événements ETW qui ont été insérés dans l’application.  
   
- Les marques par défaut qui sont pré\-remplies dans le rapport signalent le démarrage et la fin du programme.  
+ Les marques par défaut qui sont préremplies dans le rapport indiquent le démarrage du programme et la fin du programme.  
   
- Les données de compteurs Windows issues des marques générées automatiquement sont également présentées dans cet affichage.  Pour plus d'informations, consultez [Comment : collecter les données des compteurs Windows](../profiling/how-to-collect-windows-counter-data.md).  
+ Les données des compteurs Windows provenant de marques générées automatiquement sont également présentées dans cette vue. Pour plus d’informations, consultez [Guide pratique pour collecter les données des compteurs Windows](../profiling/how-to-collect-windows-counter-data.md).  
   
- Pour créer un filtre entre deux marques, sélectionnez les marques, cliquez avec le bouton droit sur **Ajouter un filtre aux marques** ou **Ajouter un filtre par horodatage**.  
+ Pour créer un filtre entre deux marques, sélectionnez les marques, cliquez avec le bouton droit puis cliquez sur **Ajouter un filtre par marques** ou **Ajouter un filtre par horodatage**.  
   
- Le tableau suivant fournit les définitions de colonnes disponibles dans la vue Marques.  
+ Le tableau suivant contient les définitions des colonnes qui sont disponibles dans la vue Marques.  
   
  **ID de marque**  
  Identificateur unique de la marque de profilage.  
   
  **Nom de la marque**  
- Nom de l’événement.  
+ Nom de l'événement.  
   
- **Horodateur**  
- Durée écoulée entre le début du profilage et le moment où l'évènement est enregistré.  
+ **Horodatage**  
+ Durée entre l’heure du début du profilage et l’heure à laquelle l’événement est enregistré.  
   
- Données du compteur de performance Windows  
- Lorsque les données du compteur de performance Windows sont collectées, les valeurs sont affichées dans une colonne portant le nom du compteur.  
+ Données des compteurs de performances Windows  
+ Quand des données de compteurs de performances Windows sont collectées, les valeurs sont affichées dans une colonne portant le même nom que le compteur.  
   
-## Voir aussi  
- [Vue d’ensemble des rapports d’outils de profilage](../profiling/performance-report-overview.md)   
- [\<PAVE\_OVER\> Comment : configurer des marques de profilage](../Topic/%3CPAVE_OVER%3E%20How%20to:%20Configure%20Profiling%20Marks.md)   
- [\<PAVE\_OVER\> Comment : insérer des marques dans un fichier de données du profileur](../Topic/%3CPAVE_OVER%3E%20How%20to:%20Insert%20Marks%20in%20a%20Profiler%20Data%20File.md)   
- [Comment : collecter les données des compteurs Windows](../profiling/how-to-collect-windows-counter-data.md)   
- [&#91;NIB&#93; Data Collection Control Window](http://msdn.microsoft.com/fr-fr/98d740d8-459f-4605-bf04-fb17aafaaa8f)
+## <a name="see-also"></a>Voir aussi  
+ [Vue d’ensemble du rapport Performances](../profiling/performance-report-overview.md)   
+ [Guide pratique pour collecter les données des compteurs Windows](../profiling/how-to-collect-windows-counter-data.md)   
+ [&#91;NIB&#93; Fenêtre de contrôle de la collecte de données](http://msdn.microsoft.com/en-us/98d740d8-459f-4605-bf04-fb17aafaaa8f)

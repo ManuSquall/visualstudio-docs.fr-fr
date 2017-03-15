@@ -1,76 +1,91 @@
 ---
-title: "How to: Create a Nullable Type (Class Designer) | Microsoft Docs"
-ms.custom: ""
-ms.date: "12/14/2016"
-ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-general"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-helpviewer_keywords: 
-  - "nullable types, Class Designer"
-  - "Class Designer [Visual Studio], nullable types"
+title: "Guide pratique pour créer un type Nullable (Concepteur de classes) | Microsoft Docs"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology:
+- vs-ide-general
+ms.tgt_pltfrm: 
+ms.topic: article
+helpviewer_keywords:
+- nullable types, Class Designer
+- Class Designer [Visual Studio], nullable types
 ms.assetid: 84673a89-3f6d-4668-919e-1c0f56182fe5
 caps.latest.revision: 11
-caps.handback.revision: 11
-author: "kempb"
-ms.author: "kempb"
-manager: "ghogen"
----
-# How to: Create a Nullable Type (Class Designer)
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
+author: kempb
+ms.author: kempb
+manager: ghogen
+translation.priority.ht:
+- cs-cz
+- de-de
+- es-es
+- fr-fr
+- it-it
+- ja-jp
+- ko-kr
+- pl-pl
+- pt-br
+- ru-ru
+- tr-tr
+- zh-cn
+- zh-tw
+translationtype: Human Translation
+ms.sourcegitcommit: 5658ecf52637a38bc3c2a5ad9e85b2edebf7d445
+ms.openlocfilehash: 5b55bd1c7b6be5c8fabafded8cd3a658ec9602d8
+ms.lasthandoff: 02/22/2017
 
-Certains types valeur ne disposent pas toujours \(ou n'ont pas toujours besoin\) d'une valeur définie.  Cela est courant dans les bases de données, où certains champs n'ont parfois aucune valeur assignée.  Par exemple, vous pouvez assigner une valeur Null à un champ de base de données pour indiquer qu'aucune valeur ne lui a encore été assignée.  
+---
+# <a name="how-to-create-a-nullable-type-class-designer"></a>Comment : créer un type Nullable (Concepteur de classes)
+Certains types valeur n’ont pas, ou n’ont pas besoin d’avoir, systématiquement une valeur définie. Il s’agit d’une pratique courante dans les bases de données, où certains champs peuvent ne se voir assigner aucune valeur. Par exemple, vous pouvez assigner une valeur null à un champ de base de données, qu’il conservera jusqu’à ce qu’une valeur lui soit affectée.  
   
- Un *type Nullable* est un type valeur que vous étendez afin qu'il prenne la plage des valeurs de ce type ainsi qu'une valeur Null.  Par exemple, un type Nullable `Int32` \(Nullable\<Int32\>\), peut avoir une valeur comprise entre \-2147483648 et 2147483647, ou une valeur Null.  Un Nullable \<bool\> peut se voir assigner les valeurs `True`, `False` ou null \(aucune valeur\).  
+ Un *type Nullable* est un type de valeur que vous étendez afin qu’il accepte la plage ordinaire de valeurs de ce type, ainsi qu’une valeur null. Par exemple, un type Nullable `Int32`, également appelé Nullable\<Int32>, peut se voir assigner n’importe quelle valeur entre -2147483648 et 2147483647, ou une valeur null. Un type Nullable\<bool> peut se voir assigner les valeurs `True`, `False` ou null (aucune valeur).  
   
- Les types Nullable sont des instances de la structure <xref:System.Nullable%601>.  Chaque instance de type Nullable a deux propriétés publiques en lecture seule, `HasValue` et `Value` :  
+ Les types Nullable sont des instances de la structure <xref:System.Nullable%601>. Chaque instance d’un type Nullable a deux propriétés publiques en lecture seule, `HasValue` et `Value` :  
   
--   `HasValue` est de type `bool` et indique si la variable contient une valeur définie.  `True` signifie que la variable contient une valeur non null.  Vous pouvez tester une valeur définie à l'aide d'une instruction telle que `if (x.HasValue)` ou `if (y != null)`.  
+-   `HasValue` est de type `bool` et indique si la variable contient une valeur définie. `True` signifie que la variable contient une valeur non null. Vous pouvez tester l’existence d’une valeur définie en utilisant une instruction telle que `if (x.HasValue)` ou `if (y != null)`.  
   
--   `Value` est du même type que le type sous\-jacent.  Si `HasValue` a la valeur `True`, `Value` contient une valeur significative.  Si `HasValue` est `False`, l'accès à `Value` lèvera une exception d'opération incorrecte.  
+-   `Value` est du même type que le type sous-jacent. Si `HasValue` est `True`, `Value` contient une valeur significative. Si `HasValue` est `False`, l’accès à `Value` lève une exception d’opération non valide.  
   
- Par défaut, lorsque vous déclarez une variable en tant que type Nullable, aucune valeur n'est définie \(`HasValue` est `False`\), à part la valeur par défaut de son type valeur sous\-jacent.  
+ Par défaut, quand vous déclarez une variable en tant que type Nullable, elle n’a aucune valeur définie (`HasValue` est `False`), autre que la valeur par défaut de son type valeur sous-jacent.  
   
- Le concepteur de classes affiche un type Nullable comme il affiche son type sous\-jacent.  
+ Le Concepteur de classes affiche un type Nullable à l’image de son type sous-jacent.  
   
- Pour plus d'informations sur les types qui autorisent la valeur Null en Visual C\#, consultez [Types Nullable](/dotnet/csharp/programming-guide/nullable-types/index).  Pour plus d'informations sur les types qui autorisent la valeur Null en Visual Basic, consultez [Nullable Value Types](/dotnet/visual-basic/programming-guide/language-features/data-types/nullable-value-types).  
+ Pour plus d’informations sur les types Nullable dans Visual C#, consultez [Types Nullable](/dotnet/csharp/programming-guide/nullable-types/index). Pour plus d’informations sur les types Nullable dans Visual Basic, consultez [Types valeur Nullable](/dotnet/visual-basic/programming-guide/language-features/data-types/nullable-value-types).  
   
  [!INCLUDE[note_settings_general](../data-tools/includes/note_settings_general_md.md)]  
   
-### Pour ajouter un type Nullable à l'aide du concepteur de classes  
+### <a name="to-add-a-nullable-type-by-using-the-class-designer"></a>Pour ajouter un type Nullable à l’aide du Concepteur de classes  
   
-1.  Dans le diagramme de classes, développez une classe existante ou créez une nouvelle classe.  
+1.  Dans le diagramme de classes, développez une classe existante ou créez une classe.  
   
-2.  Pour ajouter une classe au projet, cliquez sur **Ajouter** dans le menu **Diagramme de classes**, puis cliquez sur **Ajouter une classe**.  
+2.  Pour ajouter une classe au projet, dans le menu **Diagramme de classes**, cliquez sur **Ajouter**, puis cliquez sur **Ajouter une classe**.  
   
 3.  Pour développer la forme de classe, dans le menu **Diagramme de classes**, cliquez sur **Développer**.  
   
-4.  Sélectionnez la forme de classe.  Dans le menu **Diagramme de classes**, cliquez sur **Ajouter**, puis sur **Champ**.  Un nouveau champ avec le nom par défaut **Champ** apparaît dans la forme de classe et dans la fenêtre **Détails de classe**.  
+4.  Sélectionnez la forme de classe. Dans le menu **Diagramme de classes**, cliquez sur **Ajouter**, puis cliquez sur **Champ**. Un nouveau champ qui porte le nom par défaut **Champ** apparaît dans la forme de classe, ainsi que dans la fenêtre **Détails de classe**.  
   
-5.  Dans la colonne **Nom** de la fenêtre **Détails de classe** \(ou dans la forme de classe elle\-même\), remplacez le nom du nouveau champ par un nom valide et explicite.  
+5.  Dans la colonne **Nom** de la fenêtre **Détails de classe** (ou dans la classe de forme elle-même), remplacez le nom du nouveau champ par un nom valide et explicite.  
   
 6.  Dans la colonne **Type** de la fenêtre **Détails de classe**, déclarez le type en tant que type Nullable, comme indiqué dans le code suivant :  
   
 <CodeContentPlaceHolder>0</CodeContentPlaceHolder>  
 <CodeContentPlaceHolder>1</CodeContentPlaceHolder>  
-### Pour ajouter un type Nullable en utilisant l'Éditeur de code  
+### <a name="to-add-a-nullable-type-by-using-the-code-editor"></a>Pour ajouter un type Nullable à l’aide de l’éditeur de code  
   
-1.  Ajoutez une classe au projet.  Sélectionnez le nœud de projet dans l'**Explorateur de solutions** puis, dans le menu **Projet**, cliquez sur **Ajouter une classe**.  
+1.  Ajoutez une classe au projet. Sélectionnez le nœud du projet dans l’**Explorateur de solutions**, puis, dans le menu **Projet**, cliquez sur **Ajouter une classe**.  
   
-2.  Dans le fichier .cs ou .vb pour la nouvelle classe, ajoutez un ou plusieurs types Nullable de la nouvelle classe à la déclaration de classe.  
+2.  Dans le fichier .cs ou .vb pour la nouvelle classe, ajoutez un ou plusieurs types Nullable dans la nouvelle classe à la déclaration de classe.  
   
-3.  Dans l'affichage de classes, faites glisser l'icône de la nouvelle classe vers l'aire de conception du concepteur de classes.  Une forme de classe apparaît dans le diagramme de classes.  
+3.  À partir de l’affichage de classes, faites glisser l’icône de la nouvelle classe vers l’aire de conception du Concepteur de classes. Une forme de classe apparaît dans le diagramme de classes.  
   
-4.  Développez les détails pour la forme de classe et déplacez le pointeur de la souris sur les membres de la classe.  L'info\-bulle affiche la déclaration de chaque membre.  
+4.  Développez les détails de la forme de classe et déplacez le pointeur de la souris sur les membres de classe. L’info-bulle affiche la déclaration de chaque membre.  
   
-5.  Cliquez avec le bouton droit sur la forme de classe, puis cliquez sur **Détails de classe**.  Vous pouvez afficher ou modifier les propriétés du nouveau type dans la fenêtre **Détails de classe**.  
+5.  Cliquez avec le bouton droit sur la forme de classe, puis cliquez sur **Détails de classe**. Vous pouvez afficher ou modifier les propriétés du nouveau type dans la fenêtre **Détails de classe**.  
   
-## Voir aussi  
+## <a name="see-also"></a>Voir aussi  
  <xref:System.Nullable%601>   
  [Types Nullable](/dotnet/csharp/programming-guide/nullable-types/index)   
  [Utilisation de types Nullable](/dotnet/csharp/programming-guide/nullable-types/using-nullable-types)   
- [Comment : identifier un type Nullable](../Topic/How%20to:%20Identify%20a%20Nullable%20Type%20\(C%23%20Programming%20Guide\).md)   
- [Nullable Value Types](/dotnet/visual-basic/programming-guide/language-features/data-types/nullable-value-types)
+ [Comment : identifier un type Nullable](http://msdn.microsoft.com/Library/d4b67ee2-66e8-40c1-ae9d-545d32c71387)   
+ [Types valeur Nullable](/dotnet/visual-basic/programming-guide/language-features/data-types/nullable-value-types)

@@ -19,8 +19,3 @@ ms.openlocfilehash: 928c8332ec732898fbed5f878f62a0ce9ecef7d7
 
 ---
 Microsoft Build Engine (MSBuild)
-
-
-<!--HONumber=Feb17_HO4-->
-
-

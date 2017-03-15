@@ -1,66 +1,81 @@
 ---
-title: "Informations de l&#39;assembly, bo&#238;te de dialogue | Microsoft Docs"
-ms.custom: ""
-ms.date: "12/15/2016"
-ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-general"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "vb.ProjectPropertiesAssemblyInfo"
-helpviewer_keywords: 
-  - "Informations de l’assembly (boîte de dialogue)"
+title: "Informations de l’assembly, boîte de dialogue | Microsoft Docs"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology:
+- vs-ide-general
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords:
+- vb.ProjectPropertiesAssemblyInfo
+helpviewer_keywords:
+- Assembly Information dialog box
 ms.assetid: 8f1f6449-e03d-4a5b-9076-d3b1f84ada48
 caps.latest.revision: 13
-caps.handback.revision: 13
-author: "kempb"
-ms.author: "kempb"
-manager: "ghogen"
----
-# Informations de l&#39;assembly, bo&#238;te de dialogue
-[!INCLUDE[vs2017banner](../../code-quality/includes/vs2017banner.md)]
+author: kempb
+ms.author: kempb
+manager: ghogen
+translation.priority.ht:
+- cs-cz
+- de-de
+- es-es
+- fr-fr
+- it-it
+- ja-jp
+- ko-kr
+- pl-pl
+- pt-br
+- ru-ru
+- tr-tr
+- zh-cn
+- zh-tw
+translationtype: Human Translation
+ms.sourcegitcommit: 5658ecf52637a38bc3c2a5ad9e85b2edebf7d445
+ms.openlocfilehash: 1a215cb25c14137f1ccc535833261a5bfc5f7a02
+ms.lasthandoff: 02/22/2017
 
-La boîte de dialogue **Informations de l'assembly** sert à spécifier les valeurs des attributs d'assembly globaux [!INCLUDE[dnprdnshort](../../code-quality/includes/dnprdnshort_md.md)] qui sont stockés dans le fichier AssemblyInfo créés automatiquement avec votre projet.  Dans l'**Explorateur de solutions**, le fichier se trouve dans le nœud **My Project** dans [!INCLUDE[vbprvb](../../code-quality/includes/vbprvb_md.md)] \(cliquez sur **Afficher tous les fichiers** pour l'afficher\) ; il est localisé sous **Propriétés** dans [!INCLUDE[csprcs](../../data-tools/includes/csprcs_md.md)].  Pour plus d'informations sur les attributs d'assembly, consultez [Attributs](../Topic/Attributes%20\(C%23%20and%20Visual%20Basic\).md).  
+---
+# <a name="assembly-information-dialog-box"></a>Informations de l’assembly, boîte de dialogue
+La boîte de dialogue **Informations de l’assembly** permet de spécifier les valeurs des attributs d’assembly globaux [!INCLUDE[dnprdnshort](../../code-quality/includes/dnprdnshort_md.md)], lesquels sont stockés dans le fichier AssemblyInfo créé automatiquement avec votre projet. Dans l’**Explorateur de solutions**, le fichier se trouve dans le nœud **Mon projet** dans [!INCLUDE[vbprvb](../../code-quality/includes/vbprvb_md.md)] (cliquez sur **Afficher tous les fichiers** pour l’afficher) ; il se trouve sous **Propriétés** dans [!INCLUDE[csprcs](../../data-tools/includes/csprcs_md.md)]. Pour plus d’informations sur les attributs d’assembly, consultez [Attributs](http://msdn.microsoft.com/Library/ae334cee-d96c-4243-a5e3-06dd7fcaf205).  
   
- Pour accéder à cette boîte de dialogue, sélectionnez un nœud de projet dans l'**Explorateur de solutions**, puis cliquez sur **Propriétés** dans le menu **Projet**.  Lorsque le **Concepteur de projets** apparaît, cliquez l'onglet **Application**.  Sur la page **Application**, cliquez sur le bouton **Informations de l'assembly**.  
+ Pour accéder à cette boîte de dialogue, sélectionnez un nœud de projet dans l’**Explorateur de solutions**, puis dans le menu **Projet**, cliquez sur **Propriétés**. Quand le **Concepteur de projet** s’affiche, cliquez sur l’onglet **Application**. Dans la page **Application**, cliquez sur le bouton **Informations de l’assembly**.  
   
-## Liste UIElement  
+## <a name="uielement-list"></a>Liste UIElement  
  **Titre**  
- Spécifie un titre pour le manifeste d'assembly.  Correspond à <xref:System.Reflection.AssemblyTitleAttribute>.  
+ Spécifie un titre pour le manifeste de l’assembly. Correspond à <xref:System.Reflection.AssemblyTitleAttribute>.  
   
  **Description**  
- Spécifie une description facultative pour le manifeste d'assembly.  Correspond à <xref:System.Reflection.AssemblyDescriptionAttribute>.  
+ Spécifie une description facultative pour le manifeste de l’assembly. Correspond à <xref:System.Reflection.AssemblyDescriptionAttribute>.  
   
  **Société**  
- Spécifie un nom de société pour le manifeste d'assembly.  Correspond à <xref:System.Reflection.AssemblyCompanyAttribute>.  
+ Spécifie un nom de société pour le manifeste de l’assembly. Correspond à <xref:System.Reflection.AssemblyCompanyAttribute>.  
   
  **Produit**  
- Spécifie un nom de produit pour le manifeste d'assembly.  Correspond à <xref:System.Reflection.AssemblyProductAttribute>.  
+ Spécifie un nom de produit pour le manifeste de l’assembly. Correspond à <xref:System.Reflection.AssemblyProductAttribute>.  
   
  **Copyright**  
- Spécifie un texte de copyright pour le manifeste d'assembly.  Correspond à <xref:System.Reflection.AssemblyCopyrightAttribute>.  
+ Spécifie une mention de droits d’auteur pour le manifeste de l’assembly. Correspond à <xref:System.Reflection.AssemblyCopyrightAttribute>.  
   
  **Marque**  
- Spécifie une marque pour le manifeste d'assembly.  Correspond à <xref:System.Reflection.AssemblyTrademarkAttribute>.  
+ Spécifie une marque pour le manifeste de l’assembly. Correspond à <xref:System.Reflection.AssemblyTrademarkAttribute>.  
   
- **Version de l'assembly**  
- Spécifie la version de l'assembly.  Correspond à <xref:System.Reflection.AssemblyVersionAttribute>.  
+ **Version de l’assembly**  
+ Spécifie la version de l’assembly. Correspond à <xref:System.Reflection.AssemblyVersionAttribute>.  
   
  **Version de fichier**  
- Spécifie un numéro de version qui instruit le compilateur d'utiliser une version spécifique pour la ressource de la version du fichier Win32.  Correspond à <xref:System.Reflection.AssemblyFileVersionAttribute>.  
+ Spécifie un numéro de version qui indique au compilateur d’utiliser une version spécifique pour la ressource de la version du fichier Win32. Correspond à <xref:System.Reflection.AssemblyFileVersionAttribute>.  
   
  **GUID**  
- GUID unique qui identifie l'assembly.  Lorsque vous créez un projet, Visual Studio génère un GUID pour l'assembly.  Correspond à <xref:System.Guid>.  
+ GUID unique qui identifie l’assembly. Quand vous créez un projet, Visual Studio génère un GUID pour l’assembly. Correspond à <xref:System.Guid>.  
   
  **Langage neutre**  
- Spécifie la culture prise en charge par l'assembly.  Correspond à <xref:System.Resources.NeutralResourcesLanguageAttribute>.  La valeur par défaut est **\(Aucune\)**.  
+ Spécifie la culture prise en charge par l'assembly. Correspond à <xref:System.Resources.NeutralResourcesLanguageAttribute>. La valeur par défaut est **(Aucun)**.  
   
- **Rendre l'assembly visible par COM**  
- Spécifie si les types dans l'assembly seront disponibles pour COM.  Correspond à <xref:System.Runtime.InteropServices.ComVisibleAttribute>.  
+ **Rendre l’assembly visible par COM**  
+ Spécifie si les types dans l’assembly seront disponibles pour COM. Correspond à <xref:System.Runtime.InteropServices.ComVisibleAttribute>.  
   
-## Voir aussi  
- [Page Application, Concepteur de projets \(Visual Basic\)](../../ide/reference/application-page-project-designer-visual-basic.md)   
- [Attributs](../Topic/Attributes%20\(C%23%20and%20Visual%20Basic\).md)
+## <a name="see-also"></a>Voir aussi  
+ [Page Application, Concepteur de projets (Visual Basic)](../../ide/reference/application-page-project-designer-visual-basic.md)   
+ [Attributs](http://msdn.microsoft.com/Library/ae334cee-d96c-4243-a5e3-06dd7fcaf205)

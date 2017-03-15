@@ -1,46 +1,54 @@
 ---
-title: "Nouveaut&#233;s des outils de diagnostic | Microsoft Docs"
-ms.custom: ""
-ms.date: "12/05/2016"
-ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-debug"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-helpviewer_keywords: 
-  - "nouveautés (Visual Studio ALM), qualité et diagnostic de développement"
+title: "Nouveautés des outils de profilage | Microsoft Docs"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology:
+- vs-ide-debug
+ms.tgt_pltfrm: 
+ms.topic: article
+helpviewer_keywords:
+- profiling
+- what's new
 ms.assetid: d4736cc8-8961-4089-be9e-d5190ce8353c
 caps.latest.revision: 42
-caps.handback.revision: 40
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
----
-# Nouveaut&#233;s des outils de diagnostic
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+translation.priority.ht:
+- de-de
+- es-es
+- fr-fr
+- it-it
+- ja-jp
+- ko-kr
+- ru-ru
+- zh-cn
+- zh-tw
+translation.priority.mt:
+- cs-cz
+- pl-pl
+- pt-br
+- tr-tr
+translationtype: Human Translation
+ms.sourcegitcommit: 1dae0fddd8f3608089b67f571e152ed5a0f56c61
+ms.openlocfilehash: 888c5c996df6558fc4c409704ad003f9c25a733b
+ms.lasthandoff: 02/22/2017
 
-Pour plus d’informations sur toutes les nouveautés en matière de débogage et de diagnostics dans Visual Studio 2015, consultez les [Notes de publication de Visual Studio 2015 Update 1](https://www.visualstudio.com/news/vs2015-update1-vs#debug).  
+---
+# <a name="whats-new-in-profiling-tools-in-includevsdev15miscincludesvsdev15mdmd"></a>Nouveautés des outils de profilage dans [!include[vs_dev15](../misc/includes/vs_dev15_md.md)]
+Les outils de diagnostics incluent de nouvelles visualisations pour vous aider à identifier dans votre application les problèmes devant être résolus. Les outils de diagnostics incluent désormais la prise en charge des applications ASP.NET.
+
+Pour plus d’informations, consultez les [Notes de publication pour [!include[vs_dev15](../misc/includes/vs_dev15_md.md)]] (https://www.visualstudio.com/en-us/news/releasenotes/vs2017-relnotes#debuggingdiag).
+
+Un onglet **Résumé** a été ajouté aux outils pour vous permettre de vous concentrer sur les domaines clés pour l’analyse des performances. Cet onglet affiche le nombre d’événements qui se sont produits et vous permet de prendre des instantanés du tas et d’autoriser une collecte rapide des données d’utilisation du processeur. Cette vue présente tous les événements [Application Insights](https://azure.microsoft.com/en-us/documentation/articles/app-insights-visual-studio/) ou d’[analyse de l’interface utilisateur](https://www.visualstudio.com/en-us/news/releasenotes/vs2017-relnotes#UIAnalysis). Pour Visual Studio Enterprise, cette vue affiche en plus les événements IntelliTrace.
+
+![Onglet Résumé des outils de diagnostics](../profiling/media/DiagToolsSummaryTab-2.png "DiagToolsSummaryTab")
+
+L’outil d’utilisation du processeur a de [nouvelles visualisations](../profiling/Beginners-Guide-to-Performance-Profiling.md) pour vous aider à identifier les fonctions qui sont susceptibles de causer des problèmes de performances. La nouvelle vue **Appelant/Appelé** vous permet d’examiner les coûts des appels de fonction effectués vers et depuis une fonction sélectionnée.
+
+![Outils de diagnostic - Vue Appelant/appelé](../profiling/media/DiagToolsCallerCallee.png "DiagToolsCallerCallee")
   
- Pour plus d’informations sur toutes les nouveautés en matière de débogage et de diagnostics dans Visual Studio 2015, consultez les [Notes de mise à jour de Visual Studio 2015](https://www.visualstudio.com/news/vs2015-vs#Debug).  
-  
-## Nouveautés d’Update 1  
- À compter de Visual Studio 2015 Update 1, vous pouvez afficher une répartition par fonction de l’utilisation du processeur sans quitter le débogueur. Pour plus d’informations, consultez [Profile Your CPU in the Debugger in Visual Studio 2015](http://blogs.msdn.com/b/visualstudioalm/archive/2015/10/29/profile-your-cpu-in-the-debugger-in-visual-studio-2015.aspx).  
-  
- La fenêtre **Outils de diagnostic** a ajouté des options de recherche et de filtre à l’onglet **Événements**. Pour plus d’informations, consultez [Diagnostics intégrés au débogueur](../Topic/Debugger-integrated%20profiling.md) et [Searching and filtering the Events tab of the Diagnostic Tools window](http://blogs.msdn.com/b/visualstudioalm/archive/2015/11/12/searching-and-filtering-the-events-tab-of-the-diagnostic-tools-window.aspx).  
-  
-## Diagnostics avec l'interface utilisateur de débogage et changements de touches d'accès rapide  
- Vous pouvez maintenant exécuter les outils de diagnostic pendant le débogage à l'aide de la nouvelle fenêtre **Outils de diagnostic**. La fenêtre s’affiche automatiquement, mais vous pouvez également l’ouvrir avec le nouvel élément de menu **Afficher les outils de diagnostic** \(raccourci clavier **Ctrl\+Alt\+F2**\).  
-  
-## Diagnostics sans l'interface utilisateur de débogage et changements de touches d'accès rapide  
- Pour exécuter des diagnostics sans débogage, accédez à **Déboguer\/Démarrer les outils de diagnostic sans débogage** ou **Déboguer\/Profileur\/Démarrer les outils de diagnostic sans débogage**. Dans Visual Studio 2013, cette option se trouvait dans **Analyser\/Performances et diagnostics** ou **Déboguer\/Performances et diagnostics**.  
-  
- L'**Explorateur de performances** se trouve désormais dans **Déboguer\/Profileurs\/Explorateur de performances**. Dans Visual Studio 2013, cette option se trouvant dans **Analyser\/Profileur**.  
-  
- Le raccourci clavier **CTRL\+ALT\+F2** correspondant à la commande **Déboguer\/Arrêter la collecte** \(qui s’applique lors de l’exécution des **Outils de diagnostic sans débogage**\) dans Visual Studio 2013 a été remplacé par **CTRL\+MAJ\+F2** dans Visual Studio 2015.  
-  
- Les outils d’analyse des applications Windows Phone sont disponibles à partir du menu **Déboguer\/Profileur\/Outils d’analyse des applications Windows Phone** \(ou **ALT\+F1**\).  
-  
-## Voir aussi  
- [outils de profilage](../profiling/profiling-tools.md)
+## <a name="see-also"></a>Voir aussi  
+ [Outils de profilage](../profiling/profiling-tools.md)

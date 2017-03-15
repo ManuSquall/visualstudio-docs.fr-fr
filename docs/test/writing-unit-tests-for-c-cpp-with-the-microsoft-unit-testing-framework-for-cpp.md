@@ -98,7 +98,7 @@ Dans Visual Studio, vous pouvez créer des tests unitaires pour le code non mana
   
         3.  Dans le menu contextuel d'un test, choisissez **Déboguer le test sélectionné** pour exécuter le test dans le débogueur.  
   
-##  <a name="a-namewalkthrougha-walkthrough-developing-an-unmanaged-dll-with-test-explorer"></a><a name="walkthrough"></a>Procédure pas à pas : Développement d’une DLL non managée avec l’Explorateur de tests  
+##  <a name="walkthrough"></a>Procédure pas à pas : Développement d’une DLL non managée avec l’Explorateur de tests  
  Vous pouvez adapter cette procédure pas à pas pour développer votre propre DLL. Les étapes principales sont les suivantes :  
   
 1.  [Créer un projet de test natif](#unitTestProject). Les tests sont créés dans un projet distinct de la DLL que vous développez.  
@@ -117,7 +117,7 @@ Dans Visual Studio, vous pouvez créer des tests unitaires pour le code non mana
   
 8.  [Isoler les unités des ressources externes](https://msdn.microsoft.com/library/hh549174.aspx). En règle générale, une DLL dépend des autres composants du système que vous développez, tels que les autres DLL, les bases de données ou les sous-systèmes à distance. Il est utile de tester chaque unité isolément de ses dépendances. Les composants externes peuvent ralentir les tests. Pendant le développement, les autres composants peuvent ne pas être achevés.  
   
-###  <a name="a-nameunittestprojecta-create-a-native-unit-test-project"></a><a name="unitTestProject"></a> Créer un projet de test unitaire natif  
+###  <a name="unitTestProject"></a> Créer un projet de test unitaire natif  
   
 1.  Dans le menu **Fichier** , choisissez **Nouveau**, **Projet**.  
   
@@ -166,7 +166,7 @@ Dans Visual Studio, vous pouvez créer des tests unitaires pour le code non mana
   
          ![Explorateur de tests unitaires avec un test réussi](../test/media/utecpp04.png "UteCpp04")  
   
-###  <a name="a-namecreatedllprojecta-create-an-unmanaged-dll-project"></a><a name="createDllProject"></a> Créer un projet de DLL non managée  
+###  <a name="createDllProject"></a> Créer un projet de DLL non managée  
   
 1.  Créez un projet **Visual C++** à l'aide du modèle **Projet Win32** .  
   
@@ -196,7 +196,7 @@ Dans Visual Studio, vous pouvez créer des tests unitaires pour le code non mana
     }  
     ```  
   
-###  <a name="a-namecoupleprojectsa-couple-the-test-project-to-the-dll-project"></a><a name="coupleProjects"></a> Associer le projet de test au projet DLL  
+###  <a name="coupleProjects"></a> Associer le projet de test au projet DLL  
   
 1.  Ajoutez le projet DLL aux références de projet du projet de test :  
   
@@ -246,7 +246,7 @@ Dans Visual Studio, vous pouvez créer des tests unitaires pour le code non mana
   
  Vous avez configuré le test et les projets de code, et vérifié que vous pouviez exécuter des tests exécutant les fonctions du projet de code. Maintenant, vous pouvez commencer à écrire le code et les tests réels.  
   
-###  <a name="a-nameiteratea-iteratively-augment-the-tests-and-make-them-pass"></a><a name="iterate"></a> Augmenter itérativement les tests et les faire réussir  
+###  <a name="iterate"></a> Augmenter itérativement les tests et les faire réussir  
   
 1.  Ajoutez un nouveau test :  
   
@@ -304,7 +304,7 @@ Dans Visual Studio, vous pouvez créer des tests unitaires pour le code non mana
     > [!TIP]
     >  Développez le code en ajoutant les tests individuellement. Assurez-vous que tous les tests réussissent après chaque itération.  
   
-###  <a name="a-namedebuga-debug-a-failing-test"></a><a name="debug"></a> Déboguer un test ayant échoué  
+###  <a name="debug"></a> Déboguer un test ayant échoué  
   
 1.  Ajoutez un autre test :  
   
@@ -379,7 +379,7 @@ Dans Visual Studio, vous pouvez créer des tests unitaires pour le code non mana
 > [!TIP]
 >  Si les tests individuels n’ont aucune dépendance qui les empêche d’être exécutés dans n’importe quel ordre, activez l’exécution parallèle des tests avec le bouton bascule ![UTE&#95;parallelicon&#45;small](../test/media/ute_parallelicon-small.png "UTE_parallelicon-small") dans la barre d’outils. Cela peut réduire sensiblement le temps nécessaire pour exécuter tous les tests.  
   
-###  <a name="a-namerefactora-refactor-the-code-without-changing-tests"></a><a name="refactor"></a> Refactoriser le code sans modifier les tests  
+###  <a name="refactor"></a> Refactoriser le code sans modifier les tests  
   
 1.  Simplifiez le calcul central de la fonction SquareRoot :  
   

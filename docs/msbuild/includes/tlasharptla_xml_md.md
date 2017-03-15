@@ -19,8 +19,3 @@ ms.openlocfilehash: 35db20c9c776d35e7f886c231c92430d8a4313b5
 
 ---
 XML
-
-
-<!--HONumber=Feb17_HO4-->
-
-

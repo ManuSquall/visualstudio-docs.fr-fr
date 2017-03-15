@@ -1,19 +1,38 @@
 ---
-title: "Comment&#160;: cr&#233;er une texture de base | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-general"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+title: "Comment : créer une texture de base | Microsoft Docs"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology:
+- vs-ide-general
+ms.tgt_pltfrm: 
+ms.topic: article
 ms.assetid: 0222e8bf-d29f-421b-9b1f-123d500fa179
 caps.latest.revision: 15
-author: "BrianPeek"
-ms.author: "brpeek"
-manager: "ghogen"
-caps.handback.revision: 15
+author: BrianPeek
+ms.author: brpeek
+manager: ghogen
+translation.priority.ht:
+- de-de
+- es-es
+- fr-fr
+- it-it
+- ja-jp
+- ko-kr
+- ru-ru
+- zh-cn
+- zh-tw
+translation.priority.mt:
+- cs-cz
+- pl-pl
+- pt-br
+- tr-tr
+translationtype: Human Translation
+ms.sourcegitcommit: 5db97d19b1b823388a465bba15d057b30ff0b3ce
+ms.openlocfilehash: e8455a68a2be88e177746433ad3b41e412c8de38
+ms.lasthandoff: 02/22/2017
+
 ---
 # <a name="how-to-create-a-basic-texture"></a>Comment : créer une texture de base
 Ce document montre comment utiliser l’éditeur d’images pour créer une texture de base.  
@@ -89,8 +108,3 @@ Ce document montre comment utiliser l’éditeur d’images pour créer une text
   
 ## <a name="see-also"></a>Voir aussi  
  [Éditeur d’images](../designers/image-editor.md)
-
-
-<!--HONumber=Feb17_HO4-->
-
-

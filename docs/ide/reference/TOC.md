@@ -88,6 +88,7 @@
 ### [Boîte à outils, Onglet Composants](toolbox-components-tab.md)
 ### [Boîte à outils, Onglet Données](toolbox-data-tab.md)
 ### [Boîte à outils, onglet HTML](toolbox-html-tab.md)
+## [Page des options du concepteur XAML](xaml-designer.md)
 # [Commutateurs de la ligne de commande Devenv](devenv-command-line-switches.md)
 ## [-? (devenv.exe)](q-devenv-exe.md)
 ## [-Build (devenv.exe)](build-devenv-exe.md)

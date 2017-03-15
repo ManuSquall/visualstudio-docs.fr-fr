@@ -1,4 +1,4 @@
-# [IDE Visual Studio](visual-studio-ide.md)
+# [Visite guidée des fonctionnalités de l’IDE Visual Studio](visual-studio-ide.md)
 # [Bien démarrer avec Visual Studio](get-started-with-visual-studio.md)
 # [Comptes d’utilisateur et mises à jour](user-accounts-and-updates.md)
 ## [Connexion à Visual Studio](signing-in-to-visual-studio.md)
@@ -49,7 +49,7 @@
 #### [Étape 8 : ajouter une méthode pour vérifier si le joueur a gagné](step-8-add-a-method-to-verify-whether-the-player-won.md)
 #### [Étape 9 : tester d’autres fonctionnalités](step-9-try-other-features.md)
 ## [Bien démarrer avec C++ dans Visual Studio](getting-started-with-cpp-in-visual-studio.md)
-## [Bien démarrer avec le débogage dans Visual Studio 2015](getting-started-with-debugging-in-visual-studio.md)
+## [Bien démarrer avec le débogage dans Visual Studio](getting-started-with-debugging-in-visual-studio.md)
 # [Recherche et utilisation des extensions Visual Studio](finding-and-using-visual-studio-extensions.md)
 # [Solutions et projets dans Visual Studio](solutions-and-projects-in-visual-studio.md)
 ## [Création de solutions et de projets](creating-solutions-and-projects.md)
@@ -111,6 +111,7 @@
 ### [Guide pratique pour modifier la casse du texte dans l’Éditeur](how-to-change-text-case-in-the-editor.md)
 ### [Guide pratique pour gérer les modes de l’éditeur](how-to-manage-editor-modes.md)
 ### [Guide pratique pour gérer les fenêtres de l’Éditeur](how-to-manage-editor-windows.md)
+## [Développer du code dans Visual Studio sans projets ni solutions](develop-code-in-visual-studio-without-projects-or-solutions.md)
 ## [Créer des paramètres d’éditeur personnalisés et portables](create-portable-custom-editor-options.md)
 ## [Guide pratique pour suivre votre code en personnalisant la barre de défilement](how-to-track-your-code-by-customizing-the-scrollbar.md)
 ## Navigation dans votre code

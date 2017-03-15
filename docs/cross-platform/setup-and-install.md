@@ -54,7 +54,7 @@ Si vous rencontrez des problèmes d’utilisation de Xamarin après les phases d
   
 -   [Configuration pour Mac (identifiant Apple, Xcode et Xamarin)](#mac)  
   
-##  <a name="a-nameprereqa-pre-requisites"></a><a name="prereq"></a> Prérequis  
+##  <a name="prereq"></a> Prérequis  
   
 1.  Compte Xamarin : accédez à [https://www.xamarin.com/](https://www.xamarin.com/), cliquez sur **Sign In** (Connexion) en haut à droite de la page, puis cliquez sur **Create a new account** (Créer un compte) dans la page qui s’affiche. Sélectionnez une adresse e-mail et un mot de passe pour votre compte Xamarin. Vous les utiliserez plus tard.  
   
@@ -72,7 +72,7 @@ Si vous rencontrez des problèmes d’utilisation de Xamarin après les phases d
   
     2.  Quand vous utilisez Visual Studio sur un ordinateur Windows 7 (ou version ultérieure) comme environnement de développement principal, un Mac en réseau est nécessaire uniquement pour compiler et déboguer les applications iOS, se connecter au simulateur iOS ou aux appareils attachés, et utiliser le concepteur de storyboards de Visual Studio pour concevoir l’interface utilisateur. Les modèles de Mac plus anciens sont tout à fait suffisants pour ce rôle secondaire.  
   
-##  <a name="a-namewindowsa-windows-setup-visual-studio-and-xamarin"></a><a name="windows"></a> Configuration pour Windows (Visual Studio et Xamarin)  
+##  <a name="windows"></a> Configuration pour Windows (Visual Studio et Xamarin)  
   
 > [!TIP]
 >  Ces instructions s’appliquent à Visual Studio 2015. Pour utiliser Xamarin avec Visual Studio 2013 (Update 2 obligatoire), suivez les instructions d’[installation directe de Xamarin](https://developer.xamarin.com/guides/cross-platform/getting_started/requirements/#install) (xamarin.com).  
@@ -110,7 +110,7 @@ Si vous rencontrez des problèmes d’utilisation de Xamarin après les phases d
   
  **Remarque pour les émulateurs sur des ordinateurs Windows :** Les UC ne prenant en charge qu’une seule technologie de virtualisation à la fois, il est préférable d’avoir un seul émulateur actif sur un ordinateur de développement. Il existe trois technologies de virtualisation principales : Hyper-V (utilisé par l’émulateur Visual Studio pour Android et par l’émulateur Windows Phone), Virtual Box (utilisé par Genymotion) et Intel HAXM (utilisé par l’émulateur du kit Android SDK). En raison de différents problèmes entre Hyper-V et Virtual Box, il est préférable d’utiliser des émulateurs d’un seul type sur un ordinateur donné. Ainsi, il est recommandé d’utiliser Hyper-V sur les ordinateurs Windows 8 (ou ultérieur) et les émulateurs Intel HAXM sur Windows 7 (ou antérieur) et dans les situations où Windows est exécuté sur un Mac.  
   
-##  <a name="a-namemaca-mac-setup-apple-id-xcode-and-xamarin"></a><a name="mac"></a> Configuration pour Mac (identifiant Apple, Xcode et Xamarin)  
+##  <a name="mac"></a> Configuration pour Mac (identifiant Apple, Xcode et Xamarin)  
   
 1.  Créez un ID Apple gratuit sur [https://appleid.apple.com](https://appleid.apple.com/) si vous n’en avez pas déjà un. Cette opération est nécessaire pour l’installation et la connexion à Xcode.  
   

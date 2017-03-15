@@ -1,5 +1,5 @@
 # [MSBuild](msbuild.md)
-## [Nouveautés de MSBuild 12.0](what-s-new-in-msbuild-12-0.md)
+## [Nouveautés de MSBuild 15.0](what-s-new-in-msbuild-15-0.md)
 ## [Concepts MSBuild](msbuild-concepts.md)
 ### [Propriétés MSBuild](msbuild-properties.md)
 #### [Guide pratique pour utiliser des variables d’environnement dans une build](how-to-use-environment-variables-in-a-build.md)

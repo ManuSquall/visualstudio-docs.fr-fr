@@ -38,6 +38,7 @@ translation.priority.ht:
 translationtype: Human Translation
 ms.sourcegitcommit: 5db97d19b1b823388a465bba15d057b30ff0b3ce
 ms.openlocfilehash: 87393579dd978ca512fe4bc8a0692502e224d202
+ms.lasthandoff: 02/22/2017
 
 ---
 # <a name="msbuild-conditions"></a>Conditions MSBuild
@@ -60,8 +61,3 @@ ms.openlocfilehash: 87393579dd978ca512fe4bc8a0692502e224d202
  [Informations de référence sur MSBuild](../msbuild/msbuild-reference.md)   
  [Constructions conditionnelles MSBuild](../msbuild/msbuild-conditional-constructs.md)   
  [Procédure pas à pas : création d’un fichier projet MSBuild en partant de zéro](../msbuild/walkthrough-creating-an-msbuild-project-file-from-scratch.md)
-
-
-<!--HONumber=Feb17_HO4-->
-
-

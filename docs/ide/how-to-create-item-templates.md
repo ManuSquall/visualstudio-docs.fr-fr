@@ -1,76 +1,91 @@
 ---
-title: "Comment&#160;: cr&#233;er des mod&#232;les d&#39;&#233;l&#233;ment | Microsoft Docs"
-ms.custom: ""
-ms.date: "12/16/2016"
-ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-general"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-helpviewer_keywords: 
-  - "modèles d'élément de projet, créer"
-  - "modèles d'élément de projet, emplacements de modèles personnalisés"
-  - "modèles d'élément de projet, fichiers des métadonnées"
-  - "modèles d'élément de projet, référence XML"
+title: "Guide pratique pour créer des modèles d’élément | Microsoft Docs"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology:
+- vs-ide-general
+ms.tgt_pltfrm: 
+ms.topic: article
+helpviewer_keywords:
+- project item templates, XML reference
+- project item templates, custom template locations
+- project item templates, creating
+- project item templates, metadata files
 ms.assetid: 77bc53d4-d607-4820-a032-7e3b365891b5
 caps.latest.revision: 23
-caps.handback.revision: 23
-author: "kempb"
-ms.author: "kempb"
-manager: "ghogen"
----
-# Comment&#160;: cr&#233;er des mod&#232;les d&#39;&#233;l&#233;ment
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
+author: kempb
+ms.author: kempb
+manager: ghogen
+translation.priority.ht:
+- cs-cz
+- de-de
+- es-es
+- fr-fr
+- it-it
+- ja-jp
+- ko-kr
+- pl-pl
+- pt-br
+- ru-ru
+- tr-tr
+- zh-cn
+- zh-tw
+translationtype: Human Translation
+ms.sourcegitcommit: 5db97d19b1b823388a465bba15d057b30ff0b3ce
+ms.openlocfilehash: 9b29250916c91c98176585bbdb8c5a4018dbd6c7
+ms.lasthandoff: 02/22/2017
 
-Les étapes de la [première procédure](../ide/how-to-create-item-templates.md#export_template) de cette rubrique montrent comment créer un modèle d'élément à l'aide de l'Assistant **Exportation de modèle**.  Si votre modèle se compose de plusieurs fichiers, consultez [Comment : créer des modèles d'élément multifichier](../ide/how-to-create-multi-file-item-templates.md).  
-  
- L'Assistant exécute de nombreuses tâches à votre place pour créer le modèle de base mais, dans de nombreux cas, vous devez modifier manuellement le fichier .vstemplate après avoir exporté le modèle.  Par exemple, si vous souhaitez que l'élément s'affiche dans la boîte de dialogue **Ajouter un nouvel élément** pour un projet d'application [!INCLUDE[win8_appname_long](../debugger/includes/win8_appname_long_md.md)], vous devez effectuer quelques étapes supplémentaires.  La [deuxième procédure](../ide/how-to-create-item-templates.md#modify_template) de cette rubrique vous aide à accomplir cette tâche.  
-  
- Pour spécifier que votre modèle doit uniquement apparaître pour certains sous\-types de projet, par exemple Office, Base de données ou Web, consultez [cette section](../ide/how-to-create-multi-file-item-templates.md#enable_templates).  
-  
- Dans certains cas, il est possible que vous vouliez ou deviez créer un modèle d'élément manuellement à partir de zéro.  Le [troisième procédure](../ide/how-to-create-item-templates.md#create_template) montre comment procéder.  
-  
- Consultez [Référence du schéma de modèle Visual Studio](../extensibility/visual-studio-template-schema-reference.md) pour plus d'informations sur les éléments qui peuvent être utilisés dans le fichier .vstemplate.  
-  
-### Pour ajouter un modèle d'élément de projet personnalisé à la boîte de dialogue Ajouter un nouvel élément  
-  
+---
+# <a name="how-to-create-item-templates"></a>Comment : créer des modèles d'élément
+Les étapes de la [première procédure](../ide/how-to-create-item-templates.md#export_template) de cette rubrique montrent comment créer un modèle d’élément à l’aide de l’Assistant **Exportation de modèle**. Si votre modèle se compose de plusieurs fichiers, consultez [Guide pratique pour créer des modèles d’élément multifichier](../ide/how-to-create-multi-file-item-templates.md).  
+
+ L'Assistant exécute de nombreuses tâches à votre place pour créer le modèle de base mais, dans de nombreux cas, vous devez modifier manuellement le fichier .vstemplate après avoir exporté le modèle. Par exemple, si vous souhaitez que l’élément s’affiche dans la boîte de dialogue **Ajouter un nouvel élément** pour un projet d’application [!INCLUDE[win8_appname_long](../debugger/includes/win8_appname_long_md.md)], vous devez effectuer quelques étapes supplémentaires. La [deuxième procédure](../ide/how-to-create-item-templates.md#modify_template) de cette rubrique vous aide à accomplir cette tâche.  
+
+ Pour spécifier que votre modèle doit uniquement apparaître pour certains sous-types de projet, par exemple Office, Base de données ou Web, consultez [cette section](../ide/how-to-create-multi-file-item-templates.md#enable_templates).  
+
+ Dans certains cas, il est possible que vous vouliez ou deviez créer un modèle d'élément manuellement à partir de zéro. La [troisième procédure](../ide/how-to-create-item-templates.md#create_template) montre comment procéder.  
+
+ Consultez [Référence du schéma de modèle Visual Studio](../extensibility/visual-studio-template-schema-reference.md) pour plus d’informations sur les éléments qui peuvent être utilisés dans le fichier .vstemplate.  
+
+### <a name="to-add-a-custom-project-item-template-to-the-add-new-item-dialog-box"></a>Pour ajouter un modèle d'élément de projet personnalisé à la boîte de dialogue Ajouter un nouvel élément  
+
 1.  Ouvrez ou créez un projet dans [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)].  
-  
-2.  Ajoutez un élément au projet et modifiez\-le si vous le souhaitez.  
-  
-3.  Modifiez le fichier de code pour indiquer où le remplacement de paramètres doit avoir lieu.  Pour plus d'informations, consultez [Comment : substituer des paramètres dans un modèle](../ide/how-to-substitute-parameters-in-a-template.md).  
-  
+
+2.  Ajoutez un élément au projet et modifiez-le si vous le souhaitez.  
+
+3.  Modifiez le fichier de code pour indiquer où le remplacement de paramètres doit avoir lieu. Pour plus d’informations, consultez [Guide pratique pour substituer des paramètres dans un modèle](../ide/how-to-substitute-parameters-in-a-template.md).  
+
 4.  Dans le menu **Fichier**, cliquez sur **Exporter le modèle**.  
-  
-5.  Cliquez sur **Modèle d'élément**, sélectionnez le projet qui contient l'élément et cliquez sur **Suivant**.  
-  
-6.  Sélectionnez l'élément pour lequel vous souhaitez créer un modèle et cliquez sur **Suivant**.  
-  
-7.  Sélectionnez les références d'assembly à inclure dans le modèle et cliquez sur **Suivant**.  
-  
-8.  Tapez le nom du fichier icône, le nom de l'image d'aperçu, le nom du modèle et la description du modèle, puis cliquez sur **Terminer**.  
-  
-     Les fichiers du modèle sont ajoutés à un fichier .zip et copiés dans le répertoire que vous spécifiez dans la boîte de dialogue.  L'emplacement par défaut est le dossier **..\\Users\\\<username\>\\Documents\\Visual Studio \<Version\>\\My Exported Templates\\**.  
-  
+
+5.  Cliquez sur **Modèle d’élément**, sélectionnez le projet qui contient l’élément et cliquez sur **Suivant**.  
+
+6.  Sélectionnez l’élément pour lequel vous souhaitez créer un modèle et cliquez sur **Suivant**.  
+
+7.  Sélectionnez les références d’assembly à inclure dans le modèle et cliquez sur **Suivant**.  
+
+8.  Tapez le nom du fichier icône, le nom de l’image d’aperçu, le nom du modèle et la description du modèle, puis cliquez sur **Terminer**.  
+
+     Les fichiers du modèle sont ajoutés à un fichier .zip et copiés dans le répertoire que vous spécifiez dans la boîte de dialogue. L’emplacement par défaut est le dossier **..\Users\\<nom_utilisateur\>\Documents\Visual Studio \<version>\My Exported Templates\\**.  
+
     > [!WARNING]
-    >  Dans les versions antérieures de Visual Studio, l'emplacement par défaut est **..\\Users\\\<username\>\\Documents\\Visual Studio \<Version\>\\Templates\\ItemTemplates**.  
-  
-### Pour permettre l'utilisation du modèle d'élément dans un projet Windows Store  
-  
-1.  Appliquez les étapes de la procédure ci\-dessus pour exporter un modèle d'élément.  
-  
-2.  Extrayez le fichier .vstemplate du fichier .zip qui a été copié dans le dossier  \\Users\\*nom\_utilisateur*\\Documents\\*Version* Visual Studio\\Templates\\ItemTemplates\\ \(ou **My Exported Templates**\).  
-  
+    >  Dans les versions antérieures de Visual Studio, l’emplacement par défaut est **..\Users\\<nom_utilisateur\>\Documents\Visual Studio \<version>\Templates\ItemTemplates**.  
+
+### <a name="to-enable-the-item-template-to-be-used-in-a-store-project"></a>Pour permettre l'utilisation du modèle d'élément dans un projet Windows Store  
+
+1.  Appliquez les étapes de la procédure ci-dessus pour exporter un modèle d'élément.  
+
+2.  Extrayez le fichier .vstemplate du fichier .zip qui a été copié dans le dossier \Users\\*nom_utilisateur*\Documents\Visual Studio *version*\Templates\ItemTemplates\ (ou **My Exported Templates**).  
+
 3.  Ouvrez le fichier .vstemplate dans Visual Studio.  
-  
-4.  Pour un projet C\# Windows Store pour Windows 8.1, dans le fichier .vstemplate, ajoutez le code XML suivant entre les balises d'ouverture et de fermeture `<TemplateData>` : `<TemplateGroupID>WinRT-Managed</TemplateGroupID>`.  
-  
-     Un projet C\+\+ Windows Store pour Windows 8.1 utilise la valeur `WinRT-Native-6.3`.  Pour Windows 10 et d'autres types de projets, consultez [TemplateGroupID, élément \(modèles Visual Studio\)](../extensibility/templategroupid-element-visual-studio-templates.md).  
-  
-     L'exemple suivant illustre le contenu complet d'un fichier .vstemplate après l'ajout de la ligne XML `<TemplateGroupID>WinRT-Managed</TemplateGroupID>`.  Cet exemple est spécifique aux projets C\#.  Vous pouvez modifier les éléments \<ProjectType\> et \<[TemplateGroupID](../extensibility/templategroupid-element-visual-studio-templates.md)\> pour spécifier d'autres types de projets et langages.  
-  
+
+4.  Pour un projet C# Windows Store pour Windows 8.1, dans le fichier .vstemplate, ajoutez le code XML suivant entre les balises d'ouverture et de fermeture `<TemplateData>` : `<TemplateGroupID>WinRT-Managed</TemplateGroupID>`.  
+
+     Un projet C++ Windows Store pour Windows 8.1 utilise la valeur `WinRT-Native-6.3`. Pour Windows 10 et d’autres types de projets, consultez [TemplateGroupID, élément (modèles Visual Studio)](../extensibility/templategroupid-element-visual-studio-templates.md).  
+
+     L'exemple suivant illustre le contenu complet d'un fichier .vstemplate après l'ajout de la ligne XML `<TemplateGroupID>WinRT-Managed</TemplateGroupID>`. Cet exemple est spécifique aux projets C#. Vous pouvez modifier les éléments [TemplateGroupID](../extensibility/templategroupid-element-visual-studio-templates.md)> <ProjectTpe> et \< pour spécifier d’autres types de projets et langages.  
+
     ```xml  
     <VSTemplate Version="3.0.0" xmlns="http://schemas.microsoft.com/developer/vstemplate/2005" Type="Item">  
       <TemplateData>  
@@ -89,41 +104,41 @@ Les étapes de la [première procédure](../ide/how-to-create-item-templates.md#
       </TemplateContent>  
     </VSTemplate>  
     ```  
-  
-     Pour connaître d'autres valeurs TemplateGroupID possibles, consultez [TemplateGroupID, élément \(modèles Visual Studio\)](../extensibility/templategroupid-element-visual-studio-templates.md).  Pour obtenir la référence complète de .vstemplate, consultez [Référence du schéma de modèle Visual Studio](../extensibility/visual-studio-template-schema-reference.md)  
-  
-5.  Dans Visual Studio, enregistrez le fichier .vstemplate, puis fermez\-le.  
-  
-6.  Copiez et collez le fichier .vstemplate dans le fichier .zip d'origine situé dans le dossier  \\Users\\*nom\_utilisateur*\\Documents\\*Version* Visual Studio\\Templates\\ItemTemplates\\.  
-  
-     Si la boîte de dialogue **Copier le fichier** apparaît, sélectionnez l'option **Copier et remplacer**.  
-  
- Vous pouvez maintenant ajouter un élément basé sur ce modèle à un projet [!INCLUDE[win8_appname_long](../debugger/includes/win8_appname_long_md.md)] à l'aide de la boîte de dialogue **Ajouter un nouvel élément**.  
-  
- Pour plus d'informations sur les noms de paramètres, consultez [Paramètres de modèle](../ide/template-parameters.md).  
-  
-### Pour activer les modèles pour des sous\-types de projet spécifiques  
-  
-1.  L'environnement de développement permet de mettre à disposition des éléments de projet à partir de la boîte de dialogue Ajouter un élément pour certains projets.  Utilisez cette procédure pour que des éléments personnalisés soient disponibles pour des projets Windows, Web, Office ou de base de données.  
-  
+
+     Pour connaître d’autres valeurs TemplateGroupID possibles, consultez [TemplateGroupID, élément (modèles Visual Studio)](../extensibility/templategroupid-element-visual-studio-templates.md). Pour obtenir la référence complète de .vstemplate, consultez [Référence du schéma de modèle Visual Studio](../extensibility/visual-studio-template-schema-reference.md).  
+
+5.  Dans Visual Studio, enregistrez le fichier .vstemplate, puis fermez-le.  
+
+6.  Copiez et collez le fichier .vstemplate dans le fichier .zip situé dans le dossier ..\Users\\*nom_utilisateur*\Documents\Visual Studio *version*\Templates\ItemTemplates\.  
+
+     Si la boîte de dialogue **Copier le fichier** apparaît, sélectionnez l’option **Copier et remplacer**.  
+
+ Vous pouvez maintenant ajouter un élément basé sur ce modèle à un projet [!INCLUDE[win8_appname_long](../debugger/includes/win8_appname_long_md.md)] à l’aide de la boîte de dialogue **Ajouter un nouvel élément**.  
+
+ Pour plus d’informations sur les noms de paramètres, consultez [Paramètres de modèle](../ide/template-parameters.md).  
+
+### <a name="to-enable-templates-for-specific-project-sub-types"></a>Pour activer les modèles pour des sous-types de projet spécifiques  
+
+1.  L'environnement de développement permet de mettre à disposition des éléments de projet à partir de la boîte de dialogue Ajouter un élément pour certains projets. Utilisez cette procédure pour que des éléments personnalisés soient disponibles pour des projets Windows, Web, Office ou de base de données.  
+
      Localisez l'élément ProjectType dans le fichier .vstemplate du modèle d'élément.  
-  
-     Ajoutez un élément [ProjectSubType](../extensibility/projectsubtype-element-visual-studio-templates.md) immédiatement après l'élément ProjectType.  
-  
+
+     Ajoutez un élément [ProjectSubType](../extensibility/projectsubtype-element-visual-studio-templates.md) immédiatement après l’élément ProjectType.  
+
 2.  Affectez au texte de l'élément l'une des valeurs suivantes :  
-  
+
     1.  Windows  
-  
+
     2.  Office  
-  
+
     3.  Base de données  
-  
+
     4.  Web  
-  
+
      Par exemple : `<ProjectSubType>Database</ProjectSubType>`.  
-  
+
      L'exemple suivant affiche un modèle d'élément disponible pour les projets Office.  
-  
+
     ```  
     <VSTemplate Version="2.0.0" Type="Item" Version="2.0.0">  
         <TemplateData>  
@@ -138,28 +153,29 @@ Les étapes de la [première procédure](../ide/how-to-create-item-templates.md#
             <ProjectItem>Class1.cs</ProjectItem>  
         </TemplateContent>  
     </VSTemplate>  
-  
+
     ```  
-  
-### Pour créer manuellement un modèle d'élément sans utiliser l'Assistant Exportation de modèle  
-  
+
+### <a name="to-manually-create-an-item-template-without-using-the-export-template-wizard"></a>Pour créer manuellement un modèle d'élément sans utiliser l'Assistant Exportation de modèle  
+
 1.  Créez un projet et un élément de projet.  
-  
+
 2.  Modifiez l'élément de projet jusqu'à ce qu'il soit prêt à être enregistré en tant que modèle.  
-  
-3.  Selon le cas, modifiez le fichier de code pour indiquer où le remplacement de paramètres doit avoir lieu.  Pour plus d'informations sur le remplacement de paramètres, consultez Comment : substituer des paramètres dans un modèle.  
-  
-4.  Créez un fichier XML et enregistrez\-le à l'aide de l'extension de nom de fichier .vstemplate, dans le même répertoire que votre nouveau modèle d'élément.  
-  
-5.  Créez le fichier XML .vstemplate pour fournir des métadonnées de modèle d'élément.  Pour plus d'informations, consultez [Référence du schéma de modèle Visual Studio](../extensibility/visual-studio-template-schema-reference.md) et l'exemple de la section précédente.  
-  
-6.  Enregistrez le fichier .vstemplate, puis fermez\-le.  
-  
-7.  Dans l'Explorateur Windows, sélectionnez les fichiers à inclure dans votre modèle, cliquez avec le bouton droit sur la sélection, cliquez sur Envoyer vers, puis sur Dossier compressé.  Les fichiers que vous avez sélectionnés sont compressés dans un fichier .zip.  
-  
-8.  Copiez le fichier .zip et collez\-le à l'emplacement du modèle d'élément utilisateur.  Dans Visual Studio 2015, le répertoire par défaut est  \\Users\\\<nom\_utilisateur\>\\Documents\\Visual Studio 2015\\Templates\\ItemTemplates\\.  Pour plus d'informations, consultez Comment : localiser et organiser les modèles de projet et d'élément  
-  
-## Voir aussi  
- [Création de modèles de projets et d'éléments personnalisés](../ide/creating-project-and-item-templates.md)   
- [Comment : créer des modèles d'élément multifichier](../ide/how-to-create-multi-file-item-templates.md)   
- [Référence du schéma de modèle Visual Studio](../extensibility/visual-studio-template-schema-reference.md)
+
+3.  Selon le cas, modifiez le fichier de code pour indiquer où le remplacement de paramètres doit avoir lieu. Pour plus d'informations sur le remplacement de paramètres, consultez Comment : substituer des paramètres dans un modèle.  
+
+4.  Créez un fichier XML et enregistrez-le à l'aide de l'extension de nom de fichier .vstemplate, dans le même répertoire que votre nouveau modèle d'élément.  
+
+5.  Créez le fichier XML .vstemplate pour fournir des métadonnées de modèle d'élément. Pour plus d’informations, consultez [Référence du schéma de modèle Visual Studio](../extensibility/visual-studio-template-schema-reference.md) et l’exemple de la section précédente.  
+
+6.  Enregistrez le fichier .vstemplate, puis fermez-le.  
+
+7.  Dans l'Explorateur Windows, sélectionnez les fichiers à inclure dans votre modèle, cliquez avec le bouton droit sur la sélection, cliquez sur Envoyer vers, puis sur Dossier compressé. Les fichiers que vous avez sélectionnés sont compressés dans un fichier .zip.  
+
+8.  Copiez le fichier .zip et collez-le à l'emplacement du modèle d'élément utilisateur. Dans Visual Studio 2017, le répertoire par défaut est ..\Users\\<nom_utilisateur\>\Documents\Visual Studio 2017\Templates\ItemTemplates\\. Pour plus d'informations, consultez Comment : localiser et organiser les modèles de projet et d'élément  
+
+## <a name="see-also"></a>Voir aussi  
+ [Création de modèles de projet et d’élément](../ide/creating-project-and-item-templates.md)   
+ [Guide pratique pour créer des modèles d’élément multifichier](../ide/how-to-create-multi-file-item-templates.md)   
+ [Référence du schéma de modèle Visual Studio](../extensibility/visual-studio-template-schema-reference.md)
+
