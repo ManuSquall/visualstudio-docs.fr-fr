@@ -1,5 +1,4 @@
-# [Outils de profilage](profiling-tools.md)
-## [Visite guidée des fonctionnalités de profilage](profiling-feature-tour.md)
+# [Visite guidée des fonctionnalités de profilage](profiling-feature-tour.md)
 ## [Guide du débutant en profilage des performances](beginners-guide-to-performance-profiling.md)
 ## [Nouveautés des outils de profilage](what-s-new-in-profiling-tools.md)
 ## [Exécuter des outils de profilage avec ou sans débogueur](running-profiling-tools-with-or-without-the-debugger.md)
