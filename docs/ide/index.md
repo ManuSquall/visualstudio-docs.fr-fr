@@ -6,9 +6,9 @@ ms.topic: landing-page
 title: "Documentation sur l’IDE Visual Studio"
 description: "Découvrez comment l’environnement de développement intégré (IDE) Visual Studio peut vous aider à développer des applications à l’aide de presque n’importe quel langage de code."
 translationtype: Human Translation
-ms.sourcegitcommit: a42f5a30375192c89c9984e40ba0104da98d7253
-ms.openlocfilehash: 88532e26ce7b3545cf50d499f8db0451d34c9bc9
-ms.lasthandoff: 03/07/2017
+ms.sourcegitcommit: 0e5a449ef396e7b9fd23a2c018bdc7f8791b7b38
+ms.openlocfilehash: 7f55b5d4cc58620e292cc11399c086e26184081f
+ms.lasthandoff: 03/13/2017
 
 ---
 # <a name="visual-studio-ide-documentation"></a>Documentation sur l’IDE Visual Studio
@@ -18,7 +18,7 @@ Des didacticiels, des vidéos et d’autres documents vous montrent comment cré
 
 <ul class="panelContent cardsFTitle">
     <li>
-        <a href="/visualstudio/ide/get-started-with-visual-studio">
+        <a href="/visualstudio/ide/visual-studio-ide">
         <div class="cardSize">
             <div class="cardPadding">
                 <div class="card">
@@ -28,31 +28,13 @@ Des didacticiels, des vidéos et d’autres documents vous montrent comment cré
                         </div>
                     </div>
                     <div class="cardText">
-                        <h3>Présentation visuelle rapide de Visual Studio</h3>
+                        <h3>Visite guidée de Visual Studio</h3>
                     </div>
                 </div>
             </div>
         </div>
         </a>
-    </li>
-    <li>
-        <a href="/visualstudio/ide/visual-studio-ide">
-        <div class="cardSize">
-            <div class="cardPadding">
-                <div class="card">
-                    <div class="cardImageOuter">
-                        <div class="cardImage">
-                            <img src="/media/common/i_learn-about.svg" alt="" />
-                        </div>
-                    </div>
-                    <div class="cardText">
-                        <h3>En savoir plus sur Visual Studio</h3>
-                    </div>
-                </div>
-            </div>
-        </div>
-        </a>
-    </li>
+    </li>    
     <li>
         <a href="https://youtu.be/JHc3_gsCmZg?list=PLReL099Y5nRfw6VNvzMkv0sabT2crbSpK">
         <div class="cardSize">
@@ -64,7 +46,7 @@ Des didacticiels, des vidéos et d’autres documents vous montrent comment cré
                         </div>
                     </div>
                     <div class="cardText">
-                        <h3>Blocs de construction de l’IDE</h3>
+                        <h3>En savoir plus sur l’IDE</h3>
                     </div>
                 </div>
             </div>
@@ -108,7 +90,7 @@ Des didacticiels, des vidéos et d’autres documents vous montrent comment cré
         </a>
     </li>
     <li>
-        <a href="/visualstudio/ide/getting-started-with-debugging-in-visual-studio">
+        <a href="/visualstudio/debugger/index">
         <div class="cardSize">
             <div class="cardPadding">
                 <div class="card">
@@ -118,7 +100,7 @@ Des didacticiels, des vidéos et d’autres documents vous montrent comment cré
                         </div>
                     </div>
                     <div class="cardText">
-                        <h3>En savoir plus sur le débogage dans Visual Studio</h3>
+                        <h3>Découvrir le débogage de code dans Visual Studio</h3>
                     </div>
                 </div>
             </div>
@@ -126,7 +108,7 @@ Des didacticiels, des vidéos et d’autres documents vous montrent comment cré
         </a>
     </li>
     <li>
-        <a href="/visualstudio/profiling/profiling-tools">
+        <a href="/visualstudio/profiling/index">
         <div class="cardSize">
             <div class="cardPadding">
                 <div class="card">
@@ -146,7 +128,7 @@ Des didacticiels, des vidéos et d’autres documents vous montrent comment cré
 </ul>
 <ul class="panelContent cardsFTitle">    
     <li>
-        <a href="https://mva.microsoft.com/product-training/visual-studio-courses#!lang=1033">
+        <a href="https://mva.microsoft.com/product-training/visual-studio-courses">
         <div class="cardSize">
             <div class="cardPadding">
                 <div class="card">
