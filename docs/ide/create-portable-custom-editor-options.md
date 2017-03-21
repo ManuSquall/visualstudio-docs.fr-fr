@@ -1,7 +1,7 @@
 ---
 title: "Créer des paramètres d’éditeur personnalisés et portables | Microsoft Docs"
 ms.custom: 
-ms.date: 12/14/2016
+ms.date: 02/17/2017
 ms.reviewer: 
 ms.suite: 
 ms.tgt_pltfrm: 
@@ -33,9 +33,9 @@ translation.priority.ht:
 - zh-cn
 - zh-tw
 translationtype: Human Translation
-ms.sourcegitcommit: 31f433b28b67dc6f3179be87cb5894b5b3f0aa4f
-ms.openlocfilehash: 8c986958f141d3efc2ffe29b4176b43e9960e0e1
-ms.lasthandoff: 02/22/2017
+ms.sourcegitcommit: 203e1e27cc892e96b103fc6cb22a73672a8e16af
+ms.openlocfilehash: 70f3c6c7e4356a698aa6c1dd265f6c79c662673e
+ms.lasthandoff: 03/01/2017
 
 ---
 # <a name="create-portable-custom-editor-settings"></a>Créer des paramètres d’éditeur personnalisés et portables
@@ -86,4 +86,16 @@ Maintenant, quand vous appuyez sur la touche Tab, vous obtenez des caractères d
 
 > [!NOTE]
 >  L’ajout d’un fichier .editorconfig à votre projet ou votre base de code ne convertira pas les styles existants en nouveaux styles. Il s’appliquera uniquement aux lignes qui viennent d’être ajoutées. Si vous supprimez un fichier .editorconfig de votre projet ou de votre base de code, vous devez recharger les fichiers de code pour que les paramètres de l’éditeur reviennent aux paramètres globaux. Toute erreur dans les fichiers .editorconfig est signalée dans la fenêtre Erreurs dans Visual Studio.
+
+## <a name="support-editorconfig-for-your-language-service"></a>Prendre en charge EditorConfig pour votre service de langage
+
+Dans la plupart des cas, quand vous implémentez un service de langage Visual Studio, aucun travail supplémentaire n’est nécessaire pour la prise en charge des propriétés universelles EditorConfig. L’éditeur principal découvre et lit automatiquement le fichier .editorconfig quand les utilisateurs ouvrent des fichiers, et définit les options d’affichage et de mémoire tampon de texte appropriées. Toutefois, certains services de langage choisissent d’utiliser une option d’affichage de texte contextuel appropriée à la place de paramètres globaux pour des éléments tels que des tabulations et des espaces quand un utilisateur modifie ou met en forme un texte. Dans ce cas, le service de langage doit être mis à jour pour prendre en charge les fichiers EditorConfig.
+
+Le tableau suivant répertorie les modifications nécessaires pour mettre à jour un service de langage afin qu’il prenne en charge les fichiers EditorConfig.
+
+| Option globale spécifique au langage dépréciée | Option contextuelle de remplacement |
+| :------------- | :------------- |
+| Microsoft.VisualStudio.TextManager.Interop.LANGPREFERENCES.fInsertTabs ou Microsoft.VisualStudio.Package.LanguagePreferences.InsertTabs | !textBufferOptions.GetOptionValue(DefaultOptions.ConvertTabsToSpacesOptionId) ou !textView.Options.GetOptionValue(DefaultOptions.ConvertTabsToSpacesOptionId) |
+| Microsoft.VisualStudio.TextManager.Interop.LANGPREFERENCES.uIndentSize ou Microsoft.VisualStudio.Package.LanguagePreferences.InsertTabs.IndentSize | textBufferOptions.GetOptionValue(DefaultOptions. IndentSizeOptionId) ou textView.Options.GetOptionValue(DefaultOptions. IndentSizeOptionId) |
+| Microsoft.VisualStudio.TextManager.Interop.LANGPREFERENCES.uTabSize ou Microsoft.VisualStudio.Package.LanguagePreferences.InsertTabs.TabSize | textBufferOptions.GetOptionValue(DefaultOptions.TabSizeOptionId) ou textView.Options.GetOptionValue(DefaultOptions.TabSizeOptionId) |
 
