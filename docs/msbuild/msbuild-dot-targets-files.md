@@ -1,7 +1,7 @@
 ---
 title: "Fichiers .Targets MSBuild | Microsoft Docs"
 ms.custom: 
-ms.date: 11/04/2016
+ms.date: 02/24/2017
 ms.reviewer: 
 ms.suite: 
 ms.technology:
@@ -36,30 +36,34 @@ translation.priority.ht:
 - zh-cn
 - zh-tw
 translationtype: Human Translation
-ms.sourcegitcommit: 3ba7680d46345f2b49019659c715cfb418933d39
-ms.openlocfilehash: e47709e23ae963a9339499eb1b1e1d28834be5bf
-ms.lasthandoff: 02/22/2017
+ms.sourcegitcommit: 203e1e27cc892e96b103fc6cb22a73672a8e16af
+ms.openlocfilehash: aa15581df771128117b0e4c75f5ddd749cdf5702
+ms.lasthandoff: 03/01/2017
 
 ---
 # <a name="msbuild-targets-files"></a>Fichiers .Targets MSBuild
 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] inclut plusieurs fichiers .targets qui contiennent des éléments, des propriétés, des cibles et des tâches pour les scénarios courants. Ces fichiers sont importés automatiquement dans la plupart des fichiers projet [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] pour en simplifier la maintenance et la lisibilité.  
-  
+
  Les projets importent généralement un ou plusieurs fichiers .targets pour définir leur processus de génération. Par exemple, un projet [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] créé par [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] importera Microsoft.CSharp.targets, qui importe Microsoft.Common.targets. Le projet [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] lui-même définit les éléments et les propriétés propres à ce projet, mais les règles de génération standard d’un projet [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] sont définies dans les fichiers .targets importés.  
-  
+
  La valeur `$(MSBuildToolsPath)` spécifie le chemin d’accès de ces fichiers .targets courants. Si la `ToolsVersion` est égale à 4.0, les fichiers se trouvent à l’emplacement suivant : `WindowsInstallationPath\Microsoft.NET\Framework\v4.0.30319\`  
-  
+
 > [!NOTE]
 >  Pour plus d’informations sur la création de vos propres cibles, consultez l’article [Targets (Cibles MSBuild)](../msbuild/msbuild-targets.md). Pour plus d’informations sur l’utilisation de l’élément `Import` pour insérer un fichier projet dans un autre fichier projet, consultez les articles [Import, élément (MSBuild)](../msbuild/import-element-msbuild.md) et [Comment : utiliser la même cible dans plusieurs fichiers projet](../msbuild/how-to-use-the-same-target-in-multiple-project-files.md).  
-  
+
 ## <a name="common-targets-files"></a>Fichiers .targets communs  
-  
+
 |Fichier .targets|Description|  
 |-------------------|-----------------|  
 |Microsoft.Common.targets|Définit les étapes du processus de génération standard pour les projets [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] et [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)].<br /><br /> Importé par les fichiers Microsoft.CSharp.targets et Microsoft.VisualBasic.targets, qui incluent l’instruction suivante : `<Import Project="Microsoft.Common.targets" />`|  
 |Microsoft.CSharp.targets|Définit les étapes du processus de génération standard pour les projets Visual C#.<br /><br /> Importé par les fichiers projet Visual C# (.csproj), qui incluent l’instruction suivante : `<Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />`|  
-|Microsoft.VisualBasic.targets|Définit les étapes du processus de génération standard pour les projets Visual Basic.<br /><br /> Importé par les fichiers projet Visual Basic (.vbproj), qui incluent l’instruction suivante : `<Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />`|  
-  
+|Microsoft.VisualBasic.targets|Définit les étapes du processus de génération standard pour les projets Visual Basic.<br /><br /> Importé par les fichiers projet Visual Basic (.vbproj), qui incluent l’instruction suivante : `<Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />`|
+
+## <a name="directorybuildprops"></a>Directory.Build.Props
+Directory.Build.Props est un fichier défini par l’utilisateur qui fournit des personnalisations aux projets situés dans un répertoire. Ce fichier est automatiquement importé dans Microsoft.Common.targets, sauf si la propriété **ImportDirectoryBuildTargets** est définie sur **false**.
+
 ## <a name="see-also"></a>Voir aussi  
  [Import, élément (MSBuild)](../msbuild/import-element-msbuild.md)   
  [Informations de référence sur MSBuild](../msbuild/msbuild-reference.md)  
  [MSBuild](../msbuild/msbuild.md)
+

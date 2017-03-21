@@ -27,17 +27,18 @@ translation.priority.ht:
 - zh-cn
 - zh-tw
 translationtype: Human Translation
-ms.sourcegitcommit: b259c5d02a452bfaa3bd59f2096b43ee1c1c5942
-ms.openlocfilehash: 352de7f71f8a6c16439061c9815219e5f2b3840a
-ms.lasthandoff: 02/22/2017
+ms.sourcegitcommit: 3b812629bf0f655f39c35a56eb1b3ca9113303a6
+ms.openlocfilehash: 8bf6d49b21d128d15f5312fb230d4a8e7a8195af
+ms.lasthandoff: 03/01/2017
 
 ---
 
 # <a name="go-to"></a>Atteindre
 Il existe plusieurs façons de parcourir facilement votre code à l’intérieur de l’IDE de Visual Studio, à partir du clavier et de la souris.
 
+<!-- VERSIONLESS -->
 ## <a name="go-to-all"></a>Atteindre tout
-Parcourez votre code pour trouver les éléments spécifiques que vous recherchez.  Vous pouvez rechercher entre autres une ligne, un type, un symbole ou un fichier spécifique à partir d’une interface simple.
+Cette fonctionnalité existe dans Visual Studio 2017 et ultérieur.  Elle vous permet de parcourir votre code pour trouver les éléments spécifiques que vous recherchez.  Vous pouvez rechercher entre autres une ligne, un type, un symbole ou un fichier spécifique à partir d’une interface unifiée simple.
 
 ### <a name="how-to-use"></a>Utilisation
 * **Clavier**
@@ -82,6 +83,7 @@ Paramètre | Description
 Utiliser l'onglet d'aperçu | Afficher l’élément sélectionné immédiatement dans l’onglet d’aperçu de l’IDE
 Afficher les détails    | Afficher des informations sur le projet, les fichiers et les lignes, ainsi qu’un résumé des commentaires de documentation dans la fenêtre
 Centrer la fenêtre   | Déplacer cette fenêtre vers le centre de l’IDE au lieu de l’angle supérieur droit
+<!-- END VERSIONLESS -->
 
 ## <a name="go-to-definition"></a>Atteindre la définition
 Accéder à la source d’un type et ouvrir le résultat dans un nouvel onglet :
