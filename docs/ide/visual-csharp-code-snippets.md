@@ -35,9 +35,9 @@ translation.priority.mt:
 - pt-br
 - tr-tr
 translationtype: Human Translation
-ms.sourcegitcommit: a4721d8bbd5dd6ec29f555ee8d4848ef3660243f
-ms.openlocfilehash: 0e1c37c0ce85cc44f7d43d895f3b4a4615539e3e
-ms.lasthandoff: 02/22/2017
+ms.sourcegitcommit: 5b6334c38a6c058f274498c06f8e07c934931910
+ms.openlocfilehash: 01c13c4e0c9107f07580fb1701f81eac74a5022f
+ms.lasthandoff: 03/22/2017
 
 ---
 # <a name="visual-c-code-snippets"></a>Extraits de code Visual C#
@@ -78,7 +78,7 @@ Les extraits de code sont des extraits prêts à l’emploi que vous pouvez rapi
 |mbox|Crée un appel à xref:System.Windows.Forms.MessageBox.Show%2A?displayProperty=fullName>. Vous devrez peut-être ajouter une référence à System.Windows.Forms.dll.|Dans une méthode, un indexeur, un accesseur de propriété ou un accesseur d’événement.|  
 |namespace|Crée une déclaration [namespace](/dotnet/csharp/language-reference/keywords/namespace).|Dans un espace de noms (notamment l’espace de noms global).|  
 |prop|Crée une déclaration de [propriété implémentée automatiquement](/dotnet/csharp/programming-guide/classes-and-structs/auto-implemented-properties).|Dans une classe ou un struct.|  
-ropfull|Crée une déclaration de propriété avec des accesseurs get et set.|Dans une classe ou un struct.|  
+propfull|Crée une déclaration de propriété avec des accesseurs get et set.|Dans une classe ou un struct.|  
 |propg|Crée une [propriété implémentée automatiquement](/dotnet/csharp/programming-guide/classes-and-structs/auto-implemented-properties) en lecture seule avec un accesseur « set » privé.|Dans une classe ou un struct.|  
 |sim|Crée une déclaration de méthode Main [static](/dotnet/csharp/language-reference/keywords/static)[int](/dotnet/csharp/language-reference/keywords/int).|Dans une classe ou un struct.|  
 |struct|Crée une déclaration [struct](/dotnet/csharp/language-reference/keywords/struct).|Dans un espace de noms (notamment l’espace de noms global), une classe ou un struct.|  
@@ -98,3 +98,4 @@ ropfull|Crée une déclaration de propriété avec des accesseurs get et set.|Da
  [Paramètres de modèle](../ide/template-parameters.md)   
  [Guide pratique pour utiliser des extraits de code Entourer de](../ide/how-to-use-surround-with-code-snippets.md)   
  
+
