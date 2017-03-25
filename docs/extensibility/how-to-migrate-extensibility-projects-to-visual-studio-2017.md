@@ -28,18 +28,16 @@ translation.priority.mt:
 - zh-cn
 - zh-tw
 translationtype: Machine Translation
-ms.sourcegitcommit: 4f93b8c1db59dd8d8a407c82002240641be43018
-ms.openlocfilehash: 1f9248442357c4447703ac6d6dac8a27934904e8
-ms.lasthandoff: 03/01/2017
+ms.sourcegitcommit: 5b6334c38a6c058f274498c06f8e07c934931910
+ms.openlocfilehash: efd17a3317302fedcb9bd42aded7a38adee2f75f
+ms.lasthandoff: 03/22/2017
 
 ---
 # <a name="how-to-migrate-extensibility-projects-to-visual-studio-2017"></a>Comment : migrer les projets d’extensibilité pour Visual Studio 2017
 
->**Remarque :** cette documentation est préliminaire et en fonction de la version de Visual Studio 2017 RC.
-
 Ce document explique comment mettre à niveau des projets d’extensibilité pour Visual Studio 2017. En plus de décrire comment mettre à jour les fichiers de projet, il décrit également la mise à niveau à partir de la version du manifeste extension 2 (v2 VSIX) vers la nouvelle version 3 manifest format VSIX (VSIX v3).
 
-## <a name="install-visual-studio-2017-rc-with-required-workloads"></a>Installer Visual Studio 2017 RC avec les charges de travail requis
+## <a name="install-visual-studio-2017-with-required-workloads"></a>Installer Visual Studio 2017 avec des charges de travail requis
 
 Assurez-vous que votre installation inclut les charges de travail suivants :
 
@@ -59,19 +57,16 @@ Le fichier projet (*.csproj par exemple) est actualisé :
 
 >**Remarque :** si votre solution ne référence pas le package NuGet de Microsoft.VSSDK.BuildTools, vous pouvez ignorer cette étape.
 
-Pour générer votre extension dans le nouveau v3 VSIX format (version 3), votre solution doit être créée avec les nouveaux outils de génération de VSSDK. Elle sera installée avec Visual Studio 2017 RC, mais votre extension de v2 VSIX peut contenir une référence à une version plus ancienne via NuGet. Dans ce cas, vous devrez installer manuellement une mise à jour du package NuGet de Microsoft.VSSDK.BuildTools pour votre solution. Au moment de la version RC, ce package sera en état de « Version préliminaire ».
+Pour générer votre extension dans le nouveau v3 VSIX format (version 3), votre solution doit être créée avec les nouveaux outils de génération de VSSDK. Elle sera installée avec Visual Studio 2017, mais votre extension de v2 VSIX peut contenir une référence à une version plus ancienne via NuGet. Dans ce cas, vous devrez installer manuellement une mise à jour du package NuGet de Microsoft.VSSDK.BuildTools pour votre solution.
 
 Pour mettre à jour les références NuGet Microsoft.VSSDK.BuildTools :
 
 * Avec le bouton droit sur la Solution et choisissez **gérer les Packages NuGet pour la Solution...**
 * Accédez à la **mises à jour** onglet.
-* Cochez la case pour **inclure la version préliminaire**.
 * Sélectionnez Microsoft.VSSDK.BuildTools (dernière version).
 * Appuyez sur **mise à jour**.
 
 ![Outils de génération VSSDK](media/vssdk-build-tools.png)
-
->**Remarque :** la capture d’écran montre une version différente de la BuildTools. Sélectionnez la version RC.
 
 ## <a name="make-changes-to-the-vsix-extension-manifest"></a>Apporter des modifications au manifeste de l’extension VSIX
 
@@ -161,7 +156,7 @@ Vérifiez que l’extension VSIX s’installe correctement sur un ordinateur ave
 
 Essayez d’installer l’extension :
 
-* Dans Visual Studio 2017 RC
+* Dans Visual Studio 2017
 
 ![Programme d’installation de l’extension VSIX dans Visual Studio 2017](media/vsixinstaller-vs-2017.png)
 
@@ -170,7 +165,7 @@ Essayez d’installer l’extension :
   * Doit fonctionner pour Visual Studio 2012, Visual Studio 2013, Visual Studio 2015.
 * Facultatif : Vérifiez que le vérificateur de Version du programme d’installation VSIX propose un choix des versions.
   * Comprend des versions antérieures de Visual Studio (si installé).
-  * Inclut Visual Studio 2017 RC.
+  * Inclut Visual Studio 2017.
 
 Si Visual Studio a été récemment ouvert, vous pouvez voir une boîte de dialogue comme suit :
 
@@ -182,7 +177,7 @@ Attendez que les processus s’est arrêté ou arrêtez manuellement les tâches
 
 ## <a name="check-when-missing-the-required-prerequisites"></a>Contrôle lorsqu’il manque les composants requis
 
-* Essayez d’installer l’extension sur un ordinateur avec Visual Studio 2017 RC ne contenant tous les composants définis dans les conditions préalables (ci-dessus).
+* Essayez d’installer l’extension sur un ordinateur avec Visual Studio 2017 ne contenant tous les composants définis dans les conditions préalables (ci-dessus).
 * Vérifiez que l’installation identifie le composant manquant/s et les affiche comme une condition préalable dans la VSIXInstaller.
 * Remarque : Une élévation sera nécessaire si les conditions préalables doivent être installés avec l’extension.
 
@@ -196,7 +191,7 @@ Pour obtenir des conseils complémentaires, nous avons identifié quelques types
 
 Type d’extension | Nom complet |    Id
 --- | --- | ---
-Éditeur | Éditeur principal de Visual Studio    | Microsoft.VisualStudio.CoreEditor
+Éditeur | Éditeur principal de Visual Studio    | Microsoft.VisualStudio.Component.CoreEditor
 Roslyn | C# et Visual Basic | Microsoft.VisualStudio.Component.Roslyn.LanguageServices
 WPF | Cœur de la charge de travail de bureau géré | Microsoft.VisualStudio.Component.ManagedDesktop.Core
 Débogueur | Débogueur juste-à-temps | Microsoft.VisualStudio.Component.Debugger.JustInTime
@@ -215,6 +210,6 @@ Pour toutes les références, vous devez d’abord déterminer celles qui sont d
 
 Exemples :
 
-* Si vous disposez d’une extension de débogueur et que vous savez que votre projet a une référence à VSDebugEng.dll et VSDebug.dll, cliquez sur le bouton de filtre dans le **binaires / noms de fichiers** en-tête.  Recherchez « VSDebugEng.dll » et sélectionnez OK.  Ensuite, cliquez sur le bouton de filtrage dans le **binaires / noms de fichiers** en-tête à nouveau et recherchez « VSDebug.dll ».  Sélectionnez la case à cocher « Sélection actuelle ajouter au filtre » et sélectionnez OK.  Examinez maintenant la **nom du composant** pour rechercher un composant qui est le plus liées à votre type d’extension. Dans cet exemple, serait choisie juste-à-temps du débogueur et l’ajouter à votre vsixmanifest.
+* Si vous disposez d’une extension de débogueur et que vous savez que votre projet a une référence à VSDebugEng.dll et VSDebug.dll, cliquez sur le bouton de filtre dans le **binaires / noms de fichiers** en-tête.  Recherchez « VSDebugEng.dll » et sélectionnez OK.  Ensuite, cliquez sur le bouton de filtrage dans le **binaires / noms de fichiers** en-tête à nouveau et recherchez « VSDebug.dll ».  Sélectionnez la case à cocher « Sélection actuelle ajouter au filtre » et sélectionnez OK.  Examinez maintenant la **nom du composant** pour rechercher un composant qui est le plus liés à votre type d’extension. Dans cet exemple, serait choisie juste-à-temps du débogueur et l’ajouter à votre vsixmanifest.
 * Si vous savez que votre projet traite des éléments du débogueur, vous pouvez rechercher « débogueur » dans la zone de filtre de recherche pour voir quels sont les composants contiennent le débogueur dans son nom.
 

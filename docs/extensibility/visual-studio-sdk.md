@@ -33,9 +33,9 @@ translation.priority.mt:
 - zh-cn
 - zh-tw
 translationtype: Machine Translation
-ms.sourcegitcommit: 477f57bbca9c49e7d7d13155fc1f6e55ee4667a8
-ms.openlocfilehash: efc5a2722757229057a91f5e3a6c2ad3681f5a89
-ms.lasthandoff: 02/22/2017
+ms.sourcegitcommit: 8163a0e1230712734936b7548bef1753ee0c1d2a
+ms.openlocfilehash: b3cd444e48893057a057c39c515e51ff8b509b34
+ms.lasthandoff: 03/07/2017
 
 ---
 # <a name="visual-studio-sdk"></a>Kit de développement logiciel Visual Studio
@@ -58,10 +58,10 @@ Le Kit de développement logiciel Visual Studio vous permet d’étendre les fon
  Si vous n’avez jamais rédigé une extension Visual Studio avant, vous devriez trouver plus d’informations sur ces fonctionnalités et à [début du développement d’Extensions Visual Studio](../extensibility/starting-to-develop-visual-studio-extensions.md).  
   
 ## <a name="installing-the-visual-studio-sdk"></a>L’installation du Kit de développement logiciel de Visual Studio  
- À partir de Visual Studio 2015, vous n’installez pas Visual Studio SDK à partir du centre de téléchargement. Il est inclus comme fonctionnalité facultative dans le programme d’installation de Visual Studio. Vous pouvez également installer le Kit de développement logiciel Visual Studio plus tard. Pour plus d’informations, consultez [l’installation du Kit de développement logiciel Visual Studio](../extensibility/installing-the-visual-studio-sdk.md).  
+ Le Kit de développement Visual Studio est une fonctionnalité facultative dans le programme d’installation de Visual Studio. Vous pouvez également installer le Kit de développement logiciel Visual Studio plus tard. Pour plus d’informations, consultez [l’installation du Kit de développement logiciel Visual Studio](../extensibility/installing-the-visual-studio-sdk.md).  
   
-## <a name="whats-new-in-the-visual-studio-2015-sdk"></a>Quelles sont les nouveautés dans le Kit de développement logiciel Visual Studio 2015  
- Le Kit de développement logiciel Visual Studio comporte quelques nouvelles fonctionnalités, y compris les ampoules et les nouveaux éléments de projet qui vous permettent de créer des commandes de menu, fenêtres d’outils et extensions de l’éditeur à l’aide d’un package VSIX. Pour plus d’informations, consultez [Nouveautés dans le Kit de développement logiciel Visual Studio 2015](../extensibility/what-s-new-in-the-visual-studio-2015-sdk.md).  
+## <a name="whats-new-in-the-visual-studio-2017-sdk"></a>Quelles sont les nouveautés dans le Kit de développement logiciel Visual Studio 2017  
+ Le Kit de développement logiciel Visual Studio a certaines nouvelles fonctionnalités telles que la prise en charge pour Lightweight Solution charge et le format v3 VSIX ainsi que les dernières modifications dont vous devrez peut-être mettre à jour votre extension. Pour plus d’informations, consultez [Nouveautés dans le Kit de développement logiciel Visual Studio 2017](../extensibility/what-s-new-in-the-visual-studio-2017-sdk.md).  
   
 ## <a name="visual-studio-user-experience-guidelines"></a>Consignes d’environnement utilisateur Visual Studio  
  Obtenez des conseils pour la conception de l’interface utilisateur de votre extension dans [recommandations pour l’environnement utilisateur Visual Studio](../extensibility/ux-guidelines/visual-studio-user-experience-guidelines.md).  
@@ -92,7 +92,7 @@ Le Kit de développement logiciel Visual Studio vous permet d’étendre les fon
   
 ## <a name="see-also"></a>Voir aussi  
  [Création d’une Extension avec une commande de Menu](../extensibility/creating-an-extension-with-a-menu-command.md)   
- [Comment : migrer les projets d’extensibilité Visual Studio 2015](../extensibility/how-to-migrate-extensibility-projects-to-visual-studio-2015.md)   
+ [Comment : migrer les projets d’extensibilité pour Visual Studio 2017](../extensibility/how-to-migrate-extensibility-projects-to-visual-studio-2017.md)   
  [Forum aux questions : Conversion des compléments en extensions VSPackage](../extensibility/faq-converting-add-ins-to-vspackage-extensions.md)   
  [La gestion de plusieurs Threads en Code managé](../extensibility/managing-multiple-threads-in-managed-code.md)   
  [Extension des Menus et commandes](../extensibility/extending-menus-and-commands.md)   
@@ -111,4 +111,4 @@ Le Kit de développement logiciel Visual Studio vous permet d’étendre les fon
  [Dans le Kit de développement logiciel de Visual Studio](../extensibility/internals/inside-the-visual-studio-sdk.md)   
  [Prise en charge pour le Kit de développement logiciel de Visual Studio](../extensibility/support-for-the-visual-studio-sdk.md)   
  [Archive](../extensibility/archive.md)   
- [Référence du Kit de développement logiciel Visual Studio](../extensibility/visual-studio-sdk-reference.md)
+ [Référence du Kit de développement logiciel (SDK) Visual Studio](../extensibility/visual-studio-sdk-reference.md)
