@@ -1,69 +1,88 @@
 ---
-title: "ItemDefinitionGroup Element (MSBuild) | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "http://schemas.microsoft.com/developer/msbuild/2003#ItemDefinitionGroup"
-dev_langs: 
-  - "VB"
-  - "CSharp"
-  - "C++"
-  - "jsharp"
-helpviewer_keywords: 
-  - "ItemDefinitionGroup Element [MSBuild]"
-  - "<ItemDefinitionGroup> Element [MSBuild]"
+title: "Élément ItemDefinitionGroup (MSBuild) | Microsoft Docs"
+ms.custom: 
+ms.date: 03/13/2017
+ms.reviewer: 
+ms.suite: 
+ms.technology:
+- vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords:
+- http://schemas.microsoft.com/developer/msbuild/2003#ItemDefinitionGroup
+dev_langs:
+- VB
+- CSharp
+- C++
+- jsharp
+helpviewer_keywords:
+- ItemDefinitionGroup Element [MSBuild]
+- <ItemDefinitionGroup> Element [MSBuild]
 ms.assetid: 4e9fb04b-5148-4ae5-a394-42861dd62371
 caps.latest.revision: 5
-author: "kempb"
-ms.author: "kempb"
-manager: "ghogen"
-caps.handback.revision: 5
----
-# ItemDefinitionGroup Element (MSBuild)
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
+author: kempb
+ms.author: kempb
+manager: ghogen
+translation.priority.ht:
+- cs-cz
+- de-de
+- es-es
+- fr-fr
+- it-it
+- ja-jp
+- ko-kr
+- pl-pl
+- pt-br
+- ru-ru
+- tr-tr
+- zh-cn
+- zh-tw
+translationtype: Human Translation
+ms.sourcegitcommit: 0e5a449ef396e7b9fd23a2c018bdc7f8791b7b38
+ms.openlocfilehash: 6c152159a199c56edf4743460b04535bb6acf729
+ms.lasthandoff: 03/13/2017
 
-L'élément  `ItemDefinitionGroup` vous permet de définir un jeu de définitions d'élément, qui sont des valeurs de métadonnées appliquées par défaut à tous les éléments dans le projet.  ItemDefinitionGroup remplace l'usage de [CreateItem Task](../msbuild/createitem-task.md) et [CreateProperty Task](../msbuild/createproperty-task.md).  Pour plus d'informations, consultez [Item Definitions](../msbuild/item-definitions.md).  
-  
-## Syntaxe  
-  
+---
+# <a name="itemdefinitiongroup-element-msbuild"></a>ItemDefinitionGroup, élément (MSBuild)
+L’élément `ItemDefinitionGroup` vous permet de définir un ensemble de définitions d’élément, correspondant à des valeurs de métadonnées appliquées par défaut à tous les éléments du projet. ItemDefinitionGroup évite d’avoir à utiliser les tâches [CreateItem](../msbuild/createitem-task.md) et [CreateProperty](../msbuild/createproperty-task.md). Pour plus d’informations, consultez l’article [Item Definitions (Définitions des éléments)](../msbuild/item-definitions.md).  
+
+ \<Project>  
+ \<ItemDefinitionGroup>  
+
+## <a name="syntax"></a>Syntaxe  
+
 ```  
 <ItemGroup Condition="'String A' == 'String B'">  
     <Item1>... </Item1>  
     <Item2>... </Item2>  
 </ItemGroup>  
 ```  
-  
-## Attributs et éléments  
+
+## <a name="attributes-and-elements"></a>Attributs et éléments  
  Les sections suivantes décrivent des attributs, des éléments enfants et des éléments parents.  
-  
-### Attributs  
-  
+
+### <a name="attributes"></a>Attributs  
+
 |Attribut|Description|  
-|--------------|-----------------|  
-|`Condition`|Attribut facultatif.  Condition à évaluer.  Pour plus d'informations, consultez [Conditions](../msbuild/msbuild-conditions.md).|  
-  
-### Éléments enfants  
-  
+|---------------|-----------------|  
+|`Condition`|Attribut facultatif. Condition à évaluer. Pour plus d’informations, consultez l’article [Conditions (Conditions MSBuild)](../msbuild/msbuild-conditions.md).|  
+
+### <a name="child-elements"></a>Éléments enfants  
+
 |Élément|Description|  
 |-------------|-----------------|  
-|[Élément](../msbuild/item-element-msbuild.md)|Définit les entrées pour le processus de génération.  Un élément `ItemDefinitionGroup` peut contenir zéro, un ou plusieurs éléments `Item`.|  
-  
-### Éléments parents  
-  
+|[Item](../msbuild/item-element-msbuild.md)|Définit les entrées du processus de génération. Un élément `ItemDefinitionGroup` peut ne contenir aucun élément `Item` ou en contenir plusieurs.|  
+
+### <a name="parent-elements"></a>Éléments parents  
+
 |Élément|Description|  
 |-------------|-----------------|  
-|[Projet](../msbuild/project-element-msbuild.md)|Élément racine requis d'un fichier projet [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)].|  
-  
-## Exemple  
- L'exemple de code suivant définit deux éléments de métadonnées, m et n, dans un ItemDefinitionGroup.  Dans cet exemple, la métadonnée par défaut "m" est appliquée à l'Élément "i" parce que la métadonnée "m" n'est pas explicitement définie par l'Élément "i".  Toutefois, la métadonnée par défaut "n" n'est pas appliquée à l'Élément "i" parce que la métadonnée "n" est déjà définie par l'Élément "i".  
-  
-```  
+|[Project](../msbuild/project-element-msbuild.md)|Élément racine requis d'un fichier projet [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)].|  
+
+## <a name="example"></a>Exemple  
+ L’exemple de code suivant définit deux éléments de métadonnées, m et n, dans un élément ItemDefinitionGroup. Dans cet exemple, les métadonnées par défaut « m » sont appliquées à l’élément « i », car les métadonnées « m » ne sont pas explicitement définies par l’élément « i ». Cependant, les métadonnées par défaut « n » ne sont pas appliquées à l’élément « i », car les métadonnées « n » sont déjà définies par l’élément « i ».  
+
+```xml  
 <Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">  
     <ItemDefinitionGroup>  
         <i>  
@@ -80,7 +99,8 @@ L'élément  `ItemDefinitionGroup` vous permet de définir un jeu de définition
     ...  
 </Project>  
 ```  
-  
-## Voir aussi  
- [Project File Schema Reference](../msbuild/msbuild-project-file-schema-reference.md)   
- [Items](../msbuild/msbuild-items.md)
+
+## <a name="see-also"></a>Voir aussi  
+ [Informations de référence sur le schéma de fichier projet MSBuild](../msbuild/msbuild-project-file-schema-reference.md)   
+ [Éléments MSBuild](../msbuild/msbuild-items.md)
+

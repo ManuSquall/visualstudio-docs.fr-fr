@@ -1,5 +1,5 @@
 ---
-title: Outils de profilage | Microsoft Docs
+title: Outils de profilage dans Visual Studio | Microsoft Docs
 ms.custom: 
 ms.date: 11/04/2016
 ms.reviewer: 
@@ -31,9 +31,9 @@ translation.priority.mt:
 - pt-br
 - tr-tr
 translationtype: Human Translation
-ms.sourcegitcommit: 8f844c2d7d975476bc4c059d211a1d6cb0df64eb
-ms.openlocfilehash: 4c995fb6df6316ce7f84fae7075b81063b54ebf7
-ms.lasthandoff: 02/28/2017
+ms.sourcegitcommit: a42f5a30375192c89c9984e40ba0104da98d7253
+ms.openlocfilehash: e8fc38b16d5e73ca47f5c59bb6b236a2dd682c4e
+ms.lasthandoff: 03/07/2017
 
 ---
 # <a name="profiling-tools"></a>Outils de profilage

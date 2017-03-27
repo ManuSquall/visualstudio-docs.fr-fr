@@ -28,28 +28,21 @@ translation.priority.ht:
 - zh-cn
 - zh-tw
 translationtype: Human Translation
-ms.sourcegitcommit: 5658ecf52637a38bc3c2a5ad9e85b2edebf7d445
-ms.openlocfilehash: d4741ff741b89997bbfe4fea9b0f60bba84e63db
-ms.lasthandoff: 02/22/2017
+ms.sourcegitcommit: 77e7ce26df70e41e2328442454fe78c7a663f1f3
+ms.openlocfilehash: de00ef86413571739446b61427c3a8e6c4680c06
+ms.lasthandoff: 03/08/2017
 
 ---
 # <a name="javascript-in-visual-studio"></a>JavaScript dans Visual Studio
 JavaScript est un langage de premier ordre dans Visual Studio. Vous pouvez utiliser la plupart ou toutes les aides standard de modification (extraits de code, IntelliSense, etc.) lorsque vous écrivez du code JavaScript dans l'IDE de Visual Studio. Vous pouvez écrire du code JavaScript pour de nombreux types d'applications et services.  
   
- Pour obtenir la documentation de référence du langage JavaScript, consultez [JavaScript](http://msdn.microsoft.com/library/d1et7k7c\(v=vs.94\).aspx).  
+ Pour obtenir la documentation de référence du langage JavaScript, consultez [JavaScript](https://docs.microsoft.com/scripting/javascript/javascript-language-reference).
   
  Des versions ou des extensions spécifiques de Visual Studio peuvent être nécessaires pour développer des types d’applications et des services particuliers en HTML et JavaScript. La liste suivante comporte des liens permettant d'accéder à des informations complémentaires.  
   
--   Pour créer des applications multiplateformes avec Apache Cordova, [procurez-vous Visual Studio Tools pour Apache Cordova](http://go.microsoft.com/fwlink/p/?LinkId=397606).  
+-   Pour créer des applications multiplateformes avec Apache Cordova, consultez l’article [Visual Studio Tools pour Apache Cordova](https://docs.microsoft.com/visualstudio/cross-platform/tools-for-cordova/).  
   
--   Pour créer des applications [Windows Store](http://dev.windows.com/develop), [Windows Phone](http://dev.windows.com/develop) et universelles (prenant en charge les deux plateformes), [procurez-vous les outils](http://dev.windows.com/en-us/develop/downloads).  
-  
--   Pour créer des services cloud, consultez le [site Microsoft Azure](http://azure.microsoft.com/documentation/).  
-  
--   Pour créer des sites web et applications web, [consultez le site ASP.NET](http://www.asp.net/get-started/websites).  
-  
-    > [!NOTE]
-    >  Vous pouvez créer un site web ASP.Net vide et l’utiliser pour la programmation HTML, CSS et JavaScript. Le fichier Webconfig fourni par ASP.NET permet de déboguer dans Visual Studio (ou vous pouvez utiliser les outils F12 quand vous exécutez l'application).  
+-   Pour obtenir des liens vers les technologies JavaScript que vous pouvez utiliser dans Visual Studio, consultez les pages [JavaScript](https://docs.microsoft.com/scripting/javascript/) et [Technologies de script](https://docs.microsoft.com/scripting/).
   
  L'éditeur JavaScript dans Visual Studio fournit la prise en charge IntelliSense. Pour plus d’informations, consultez [JavaScript IntelliSense](../ide/javascript-intellisense.md).  
   
