@@ -7,6 +7,7 @@
 ### [Utilisation de la mémoire sans débogage](memory-usage-without-debugging2.md)
 ## [Utilisation de l’UC](cpu-usage.md)
 ### [Analyser l’utilisation de l’UC dans une application universelle Windows](analyze-cpu-usage-in-a-windows-universal-app.md)
+## [Utilisation du GPU](gpu-usage.md)
 ## [Chronologie de l’application](application-timeline.md)
 ## [PerfTips](perftips.md)
 ## [Mémoire JavaScript](javascript-memory.md)
