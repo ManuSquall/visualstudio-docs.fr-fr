@@ -87,7 +87,7 @@ Vous pouvez créer des tests automatisés qui vérifient l’interface utilisate
   
      Les tests codés de l'interface utilisateur doivent appartenir à un projet de test codé de l'interface utilisateur. Si vous n'avez pas encore de projet de test codé de l'interface utilisateur, créez-en un. Dans l’**Explorateur de solutions**, dans le menu contextuel de la solution, choisissez **Ajouter**, **Nouveau projet**, puis sélectionnez **Visual Basic** ou **Visual C#**. Choisissez ensuite **Test**, **Test codé de l’interface utilisateur**.  
   
-    -   *Je ne vois pas les modèles de projets **Test codé de l’interface utilisateur**.*  
+    -   *Je ne vois pas les modèles de projets**Test codé de l’interface utilisateur**.*  
   
          Vous utilisez peut-être une version de Visual Studio qui ne prend pas en charge les tests codés de l’interface utilisateur. Pour créer des tests codés de l’interface utilisateur, vous devez utiliser Visual Studio Enterprise.  
   

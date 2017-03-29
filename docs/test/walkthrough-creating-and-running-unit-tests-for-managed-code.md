@@ -253,7 +253,7 @@ using BankAccountNS;
 ##  <a name="BKMK_Fix_your_code_and_rerun_your_tests"></a> Corriger votre code et réexécuter vos tests  
  **Analyser les résultats des tests**  
   
- Le résultat de test contient un message qui décrit l’échec. Pour la méthode `AreEquals`, un message affiche ce qui était attendu (le paramètre (**Expected\<*XXX*>**) et ce qui a été reçu réellement (le paramètre **Actual\<*YYY*>**). Nous nous attendions à ce que le solde décline par rapport au solde de début, mais il a plutôt augmenté du montant du retrait.  
+ Le résultat de test contient un message qui décrit l’échec. Pour la méthode `AreEquals`, un message affiche ce qui était attendu (le paramètre (**Expected\<*XXX*>**) et ce qui a été reçu réellement (le paramètre**Actual\<*YYY*>**). Nous nous attendions à ce que le solde décline par rapport au solde de début, mais il a plutôt augmenté du montant du retrait.  
   
  Un réexamen du code Debit indique que le test unitaire a réussi à trouver un bogue. Le montant du retrait est ajouté au solde du compte quand il doit être soustrait.  
   

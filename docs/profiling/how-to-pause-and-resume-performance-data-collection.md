@@ -44,7 +44,7 @@ ms.lasthandoff: 02/22/2017
  ![Page de session de profilage](../profiling/media/prof_profilingsessionpage.png "PROF_ProfilingSessionPage")  
   
 > [!NOTE]
->  Vous pouvez également démarrer la session de performance avec le profilage suspendu, puis reprendre le profilage ultérieurement au cours de l’exécution du programme. Pour démarrer la session de performance avec le profilage suspendu, choisissez la commande **Démarrer l’analyse de performances avec le profilage suspendu ** dans le menu **Déboguer**.  
+>  Vous pouvez également démarrer la session de performance avec le profilage suspendu, puis reprendre le profilage ultérieurement au cours de l’exécution du programme. Pour démarrer la session de performance avec le profilage suspendu, choisissez la commande **Démarrer l’analyse de performances avec le profilage suspendu** dans le menu **Déboguer**.  
   
 ### <a name="to-pause--resume-or-stop-profiling"></a>Pour suspendre, reprendre ou arrêter le profilage  
   

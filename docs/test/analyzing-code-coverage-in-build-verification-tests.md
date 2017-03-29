@@ -44,7 +44,7 @@ L’analyse de la couverture du code dans Microsoft Visual Studio vous montre le
   
      Si vous avez plusieurs définitions de source de test, répétez cette étape pour chaque définition.  
   
-    -   *Mais aucun champ n’est nommé **Type des paramètres d’exécution**.*  
+    -   *Mais aucun champ n’est nommé**Type des paramètres d’exécution**.*  
   
          Sous **Tests automatisés**, sélectionnez **Assembly de test**, puis choisissez le bouton de sélection **[...]** situé à la fin de la ligne. Dans la boîte de dialogue **Ajouter/Modifier une série de tests**, sous **Test Runner**, choisissez **Visual Studio Test Runner**.  
   
