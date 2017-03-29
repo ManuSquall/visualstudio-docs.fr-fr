@@ -44,7 +44,7 @@ ms.lasthandoff: 02/22/2017
 
 ---
 # <a name="resolvenativereference-task"></a>ResolveNativeReference, tâche
-Résout des références natives. Implémente la classe </xref:Microsoft.Build.Tasks.ResolveNativeReference>. Cette classe prend en charge l’infrastructure .NET Framework et n’est pas destinée à être directement utilisée à partir de votre code.  
+Résout des références natives. Implémente la classe <xref:Microsoft.Build.Tasks.ResolveNativeReference>. Cette classe prend en charge l’infrastructure .NET Framework et n’est pas destinée à être directement utilisée à partir de votre code.  
   
 ## <a name="task-parameters"></a>Paramètres de tâche  
  Le tableau ci-dessous décrit les paramètres de la tâche `ResolveNativeReference`.  
