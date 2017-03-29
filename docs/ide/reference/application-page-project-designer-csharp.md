@@ -113,7 +113,7 @@ Utilisez la page **Application** du **Concepteur de projet** pour spécifier les
  **Fichier de ressources**  
  Sélectionnez cette case d’option, sauf si vous fournissez un fichier de ressources pour le projet. Cette option désactive les options **Icône** et **Manifeste**.  
   
- Entrez un nom de chemin ou utilisez le bouton Parcourir (**... **) pour ajouter un fichier de ressources Win32 au projet.  
+ Entrez un nom de chemin ou utilisez le bouton Parcourir (**...**) pour ajouter un fichier de ressources Win32 au projet.  
   
 ## <a name="see-also"></a>Voir aussi  
 [Gestion des propriétés de l’application](../../ide/application-properties.md)  
