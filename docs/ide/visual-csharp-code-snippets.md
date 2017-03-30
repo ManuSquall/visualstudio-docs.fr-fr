@@ -75,7 +75,7 @@ Les extraits de code sont des extraits prêts à l’emploi que vous pouvez rapi
 |iterator|Crée un itérateur.|Dans une classe ou un struct.|  
 |iterindex|Crée une paire itérateur/indexeur « named » à l’aide d’une classe imbriquée.|Dans une classe ou un struct.|  
 |lock|Crée un bloc [lock](/dotnet/csharp/language-reference/keywords/lock-statement).|Dans une méthode, un indexeur, un accesseur de propriété ou un accesseur d’événement.|  
-|mbox|Crée un appel à xref:System.Windows.Forms.MessageBox.Show%2A?displayProperty=fullName>. Vous devrez peut-être ajouter une référence à System.Windows.Forms.dll.|Dans une méthode, un indexeur, un accesseur de propriété ou un accesseur d’événement.|  
+|mbox|Crée un appel à <xref:System.Windows.Forms.MessageBox.Show%2A?displayProperty=fullName>. Vous devrez peut-être ajouter une référence à System.Windows.Forms.dll.|Dans une méthode, un indexeur, un accesseur de propriété ou un accesseur d’événement.|  
 |namespace|Crée une déclaration [namespace](/dotnet/csharp/language-reference/keywords/namespace).|Dans un espace de noms (notamment l’espace de noms global).|  
 |prop|Crée une déclaration de [propriété implémentée automatiquement](/dotnet/csharp/programming-guide/classes-and-structs/auto-implemented-properties).|Dans une classe ou un struct.|  
 propfull|Crée une déclaration de propriété avec des accesseurs get et set.|Dans une classe ou un struct.|  
