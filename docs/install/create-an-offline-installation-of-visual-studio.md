@@ -2,7 +2,7 @@
 title: "Créer un programme d’installation hors connexion pour Visual Studio 2017 | Microsoft Docs"
 description: "Découvrez comment créer un programme d’installation hors connexion pour Visual Studio."
 ms.custom: 
-ms.date: 03/07/2017
+ms.date: 03/21/2017
 ms.reviewer: 
 ms.suite: 
 ms.technology:
@@ -34,9 +34,9 @@ translation.priority.mt:
 - pt-br
 - tr-tr
 translationtype: Human Translation
-ms.sourcegitcommit: 91fde66abf2f325ef0a6a0a2fd30e36981f44033
-ms.openlocfilehash: acb47946c29d99cb53b34d67fe8a26f5611307f9
-ms.lasthandoff: 03/08/2017
+ms.sourcegitcommit: 5b6334c38a6c058f274498c06f8e07c934931910
+ms.openlocfilehash: 563c78a49eb55886b1ddbd4f437951c99c6568e5
+ms.lasthandoff: 03/22/2017
 
 ---
 # <a name="create-an-offline-installer-for-visual-studio-2017"></a>Créer un programme d’installation hors connexion pour Visual Studio 2017 | Microsoft Docs
@@ -54,6 +54,8 @@ Le fichier d’installation&mdash;ou pour être plus précis, un fichier de prog
 |Visual Studio Enterprise |**vs_enterprise.exe**|  
 |Visual Studio Professional |**vs_professional.exe**|  
 |Communauté Visual Studio |**vs_community.exe**|
+
+Les autres programmes d’amorçage pris en charge incluent vs_buildtools.exe, vs_feedbackclient.exe, vs_teamexplorer.exe, vs_testagent.exe, vs_testcontroller.exe et vs_testprofessional.exe.
 
 ## <a name="create-an-offline-installation-folder"></a>Créer un dossier d’installation hors connexion
 Pour créer une installation hors connexion avec toutes les langues et toutes les fonctionnalités, utilisez une des commandes des exemples suivants.
@@ -90,8 +92,6 @@ Vous voudrez peut-être mettre à jour votre programme d’installation hors con
 * Pour mettre à jour une instance de Visual Studio que vous avez installée à partir d’un dossier d’installation hors connexion, exécutez le programme d’installation de Visual Studio, puis cliquez sur **Mettre à jour**.
 * Pour actualiser votre dossier d’installation hors connexion de manière à inclure les dernières mises à jour, exécutez de nouveau la commande ```--layout```. Veillez à pointer vers le même dossier que celui utilisé auparavant ; de cette façon, seuls les composants mis à jour depuis la dernière exécution de ```--layout``` seront téléchargés.
 
-
-Si vous souhaitez mettre à jour votre installation hors connexion, exécutez de nouveau la commande `--layout`. Veillez à pointer vers le même dossier que celui utilisé auparavant ; de cette façon, seuls les composants mis à jour depuis la dernière exécution de `--layout` seront téléchargés.
 
 ### <a name="how-to-troubleshoot-an-offline-installer"></a>Comment résoudre les problèmes d’un programme d’installation hors connexion
 Parfois, des problèmes surgissent. Voici un tableau des problèmes connus et des solutions susceptibles de vous aider.
