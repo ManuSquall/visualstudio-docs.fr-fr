@@ -1,14 +1,10 @@
 ---
-title:
-- "ID de composant et de charge de travail de Visual Studio Build Tools 2017 | Microsoft Docs"
+title: "ID de composant et de charge de travail de Visual Studio Build Tools 2017 | Microsoft Docs"
 description: "ID de composant et de charge de travail Visual Studio pour créer des applications Windows classiques"
 keywords: 
-author:
-- TerryGLee
-ms.author:
-- tglee
-manager:
-- ghogen
+author: TerryGLee
+ms.author: tglee
+manager: ghogen
 ms.date: 03/07/2017
 ms.topic: article
 helpviewer_keywords:

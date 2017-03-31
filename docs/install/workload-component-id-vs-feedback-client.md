@@ -1,14 +1,10 @@
 ---
-title:
-- "ID de composant et de charge de travail deVisual Studio Feedback Client 2017 | Microsoft Docs"
+title: "ID de composant et de charge de travail deVisual Studio Feedback Client 2017 | Microsoft Docs"
 description: Utiliser les ID de composant et de charge de travail Visual Studio pour fournir des commentaires complets concernant Visual Studio Team Services ou Team Foundation Server
 keywords: 
-author:
-- TerryGLee
-ms.author:
-- tglee
-manager:
-- ghogen
+author: TerryGLee
+ms.author: tglee
+manager: ghogen
 ms.date: 03/07/2017
 ms.topic: article
 helpviewer_keywords:

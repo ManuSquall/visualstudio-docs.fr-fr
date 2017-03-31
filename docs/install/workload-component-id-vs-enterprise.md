@@ -1,14 +1,10 @@
 ---
-title:
-- "ID de composant et de charge de travail de Visual Studio Test Enterprise 2017 | Microsoft Docs"
+title: "ID de composant et de charge de travail de Visual Studio Test Enterprise 2017 | Microsoft Docs"
 description: "Utilisez les ID de composant et de charge de travail pour installer Visual Studio à l’aide de la ligne de commande ou pour le spécifier comme dépendance dans un manifeste VSIX"
 keywords: 
-author:
-- TerryGLee
-ms.author:
-- tglee
-manager:
-- ghogen
+author: TerryGLee
+ms.author: tglee
+manager: ghogen
 ms.date: 03/07/2017
 ms.topic: article
 helpviewer_keywords:

@@ -1,14 +1,10 @@
 ---
-title:
-- "ID de composant et de charge de travail de Visual Studio Test Professional 2017 | Microsoft Docs"
+title: "ID de composant et de charge de travail de Visual Studio Test Professional 2017 | Microsoft Docs"
 description: "Utilisez les ID de composant et de charge de travail de Visual Studio pour fournir des outils de test intégrés pour les testeurs généralistes"
 keywords: 
-author:
-- TerryGLee
-ms.author:
-- tglee
-manager:
-- ghogen
+author: TerryGLee
+ms.author: tglee
+manager: ghogen
 ms.date: 03/07/2017
 ms.topic: article
 helpviewer_keywords:
