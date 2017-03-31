@@ -34,9 +34,9 @@ translation.priority.ht:
 - zh-cn
 - zh-tw
 translationtype: Human Translation
-ms.sourcegitcommit: a1edc88394193474b273968d8435e8df06415044
-ms.openlocfilehash: 6169b6d1805808c96647425706bf555e379679a8
-ms.lasthandoff: 02/22/2017
+ms.sourcegitcommit: e9a05d008f671fb79d6813a14c594b82f27697e3
+ms.openlocfilehash: ba9c9b60de651eecc92ea10ba44579a7dadc36df
+ms.lasthandoff: 03/27/2017
 
 ---
 # <a name="options-text-editor-cc-advanced"></a>Options, Éditeur de texte, C/C++, Avancé
@@ -140,7 +140,10 @@ En modifiant ces options, vous pouvez changer le comportement lié à IntelliSen
  Nombre maximal d’unités de traduction qui restent actives à tout moment pour les demandes IntelliSense. Vous devez spécifier une valeur entre 2 et 15. Ce nombre est directement lié au nombre maximal de processus VCPkgSrv.exe qui s’exécutent (pour une instance donnée de Visual Studio). La valeur par défaut est 2, mais si vous avez de la mémoire disponible, vous pouvez augmenter cette valeur et éventuellement obtenir des performances légèrement supérieures dans IntelliSense.  
   
  Pour plus d’informations sur les unités de traduction, consultez [Phases de traduction](/visual-cpp/preprocessor/phases-of-translation).  
-  
+
+ **« Point par flèche » pour la liste des membres**  
+ Remplace « . » par « -> » le cas échéant pour la liste des membres.
+
  **Désactiver la liste de membres agressifs**  
  La liste des membres n’apparaît pas quand vous tapez le nom d’un type ou d’une variable. La liste s’affiche uniquement quand vous tapez l’un des caractères de validation, comme défini dans l’option **Caractères de validation des listes de membres**.  
   
@@ -170,6 +173,13 @@ En modifiant ces options, vous pouvez changer le comportement lié à IntelliSen
  Masquez les éléments non confirmés dans les résultats de « Rechercher toutes les références ». Si vous annuler l’option « Désactiver la résolution », vous pouvez utiliser cette option pour masquer les éléments non confirmés dans les résultats.  
   
  **Désactiver la mise en surbrillance des références**  
+
+ ## <a name="text-editor"></a>Éditeur de texte
+ **Activer Développer la portée**  
+ Si cette option est activée, vous pouvez entourer le texte sélectionné d’accolades en tapant « { » dans l’éditeur de texte.  
+  
+ **Activer Développer la priorité**  
+ Si cette option est activée, vous pouvez entourer le texte sélectionné de parenthèses en tapant « ( » dans l’éditeur de texte.  
   
 ## <a name="see-also"></a>Voir aussi  
  [Définition d’options d’éditeur spécifiques du langage](../../ide/reference/setting-language-specific-editor-options.md)
