@@ -1,7 +1,7 @@
 # [Bienvenue dans Visual Studio 2017 !](welcome-to-visual-studio.md)
 # [Nouveautés](ide/whats-new-in-visual-studio.md)
 # [Installation](install/TOC.md)
-# [IDE Visual Studio](ide/index.md)
+# [IDE Visual Studio](ide/visual-studio-ide.md)
 # [Visual Basic](/dotnet/articles/visual-basic)
 # [Visual C#](/dotnet/articles/csharp)
 # [Visual C++](/cpp/top/visual-cpp-in-visual-studio)
