@@ -10,7 +10,7 @@ ms.tgt_pltfrm:
 ms.topic: article
 ms.assetid: 4f4b5f10-7314-4725-8c6e-e72f52eff918
 caps.latest.revision: 14
-ms.author: mlearned
+ms.author: douge
 manager: douge
 translation.priority.ht:
 - de-de
@@ -415,3 +415,4 @@ Dans Visual Studio, vous pouvez créer des tests unitaires pour le code non mana
  [Débogage du code natif](../debugger/debugging-native-code.md)   
  [Procédure pas à pas : création et utilisation d’une bibliothèque de liens dynamiques (C++)](http://msdn.microsoft.com/Library/3ae94848-44e7-4955-bbad-7d40f493e941)   
  [Importation et exportation](/visual-cpp/build/importing-and-exporting)
+

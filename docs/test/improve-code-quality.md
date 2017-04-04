@@ -13,7 +13,7 @@ helpviewer_keywords:
 - team-based development
 ms.assetid: 73baa961-c21f-43fe-bb92-3f59ae9b5945
 caps.latest.revision: 39
-ms.author: mlearned
+ms.author: douge
 manager: douge
 translation.priority.ht:
 - cs-cz
@@ -70,3 +70,4 @@ Qu'est-ce que la qualité du code ? Pour que le code que vous créez soit de qu
   
  [Suivi du travail à l’aide de Visual Studio Online ou de Team Foundation Server](https://www.visualstudio.com/docs/work/overview)  
  Vous pouvez utiliser [!INCLUDE[vstsTfsLong](../test/includes/vststfslong_md.md)] pour planifier et effectuer le suivi de vos projets, que vous utilisiez le processus agile, le processus formel ou une variante de ces processus. En planifiant vos projets, en suivant votre progression par rapport au plan et en faisant les réglages nécessaires, vous pouvez réduire les risques, évitez les surprises désagréables et gérez le coût de vos projets.
+
