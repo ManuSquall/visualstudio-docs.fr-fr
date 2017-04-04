@@ -406,11 +406,11 @@ Les langages de programmation qui ciblent .NET Framework utilisent des fichiers 
   
      Ces lignes doivent être affichées.  
   
-     **Skipping target "Build" because all output files are up-to-date with respect to the input files.**  
+     **La cible est ignorée "Build", car tous les fichiers de sortie sont à jour par rapport aux fichiers d'entrée.**  
   
-     **Input files: HelloWorld.cs**  
+     **Fichiers d'entrée: HelloWorld.cs**  
   
-     **Output files: BinMSBuildSample.exe**  
+     **Fichiers de sortie: BinMSBuildSample.exe**  
   
      MSBuild ignore la cible Build, car aucun des fichiers source n'a changé depuis la dernière génération de l'application.  
   
