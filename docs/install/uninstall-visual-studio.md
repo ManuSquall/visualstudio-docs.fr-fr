@@ -2,7 +2,7 @@
 title: "Désinstaller Visual Studio 2017 │ Microsoft Docs"
 description: "Découvrez comment désinstaller Visual Studio, étape par étape."
 ms.custom: 
-ms.date: 03/07/2017
+ms.date: 03/27/2017
 ms.reviewer: 
 ms.suite: 
 ms.technology:
@@ -32,9 +32,9 @@ translation.priority.mt:
 - pt-br
 - tr-tr
 translationtype: Human Translation
-ms.sourcegitcommit: a42f5a30375192c89c9984e40ba0104da98d7253
-ms.openlocfilehash: b2926232b920fc06c5c14a36d736e6fd73f87f1f
-ms.lasthandoff: 03/07/2017
+ms.sourcegitcommit: 9e635a28d3338bcf518a0aec69c476280eedf6e2
+ms.openlocfilehash: 3a4dda7736409ce60d6f1a1aa42b820978d63074
+ms.lasthandoff: 03/27/2017
 
 ---
 
@@ -46,6 +46,9 @@ Cette page vous guide dans la désinstallation de Visual Studio, notre suite int
      Par exemple, sur un ordinateur exécutant la Mise à jour anniversaire Windows 10, cliquez sur **Démarrer**, puis faites défiler jusqu’à la lettre **V** pour afficher **Programme d’installation de Visual Studio**.  
 
      ![Programme d’installation de Visual Studio](media/vs2017-locate-the-visual-studio-installer.PNG "Localiser le programme d’installation de Microsoft Visual Studio")
+
+     >[!NOTE]
+     Sur certains ordinateurs, le programme d’installation de Visual Studio peut être répertorié sous la lettre **« M »** comme **Microsoft, programme d’installation de Visual Studio**.
 
 2.  Cliquez pour démarrer le programme d’installation, cliquez sur l’![icône Détails](media/vs2017uninstall-UninstallIcon.png "Cliquez sur l’icône Sélectionner les options"), puis sur **Désinstaller**.  
 

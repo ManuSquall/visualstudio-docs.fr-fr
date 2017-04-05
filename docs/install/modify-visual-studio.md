@@ -2,7 +2,7 @@
 title: "Modifier Visual Studio 2017 │ Microsoft Docs"
 description: "Découvrez comment modifier Visual Studio, étape par étape."
 ms.custom: H1Hack27Feb2017
-ms.date: 03/07/2017
+ms.date: 03/27/2017
 ms.reviewer: 
 ms.suite: 
 ms.technology:
@@ -34,13 +34,13 @@ translation.priority.mt:
 - pt-br
 - tr-tr
 translationtype: Human Translation
-ms.sourcegitcommit: a42f5a30375192c89c9984e40ba0104da98d7253
-ms.openlocfilehash: 7ba87c0ba023b76a1f992eb9af660decd0b80ccd
-ms.lasthandoff: 03/07/2017
+ms.sourcegitcommit: 9e635a28d3338bcf518a0aec69c476280eedf6e2
+ms.openlocfilehash: 183f5761e0b3159412d1da6bb4f30d716a4c41db
+ms.lasthandoff: 03/27/2017
 
 ---
 # <a name="modify-visual-studio-2017-by-adding-or-removing-workloads-and-components"></a>Modifier Visual Studio 2017 en ajoutant ou supprimant des charges de travail et des composants
-Non seulement nous avons simplifié la personnalisation de Visual Studio en fonction des tâches que vous avez à accomplir, mais nous en avons aussi simplifié la personnalisation. Vous n’avez plus besoin d’utiliser le Panneau de configuration, il vous suffit de démarrer le nouveau programme d’installation de Visual Studio et d’apporter les modifications souhaitées.  
+Non seulement nous avons simplifié la personnalisation de Visual Studio en fonction des tâches que vous avez à accomplir, mais nous en avons aussi simplifié la personnalisation. Vous n’avez plus besoin d’utiliser le Panneau de configuration ; il vous suffit de démarrer le nouveau programme d’installation de Visual Studio et d’apporter les modifications souhaitées.  
 
 Voici comment procéder.  
 
@@ -52,6 +52,9 @@ Voici comment procéder.
      Par exemple, sur un ordinateur exécutant la Mise à jour anniversaire Windows 10, cliquez sur **Démarrer**, puis faites défiler jusqu’à la lettre **V** pour afficher **Programme d’installation de Visual Studio**.  
 
      ![Programme d’installation de Visual Studio](media/vs2017-locate-the-visual-studio-installer.PNG "Localiser le programme d’installation de Microsoft Visual Studio")
+
+     >[!NOTE]
+     Sur certains ordinateurs, le programme d’installation de Visual Studio peut être répertorié sous la lettre **« M »** comme **Microsoft, programme d’installation de Visual Studio**.
 
 2.  Cliquez ou appuyez pour démarrer le programme d’installation, puis cliquez sur **Modifier**.  
 
