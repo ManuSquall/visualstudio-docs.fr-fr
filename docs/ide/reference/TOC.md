@@ -153,7 +153,7 @@
 ## [Basculer le point d’arrêt, commande](toggle-breakpoint-command.md)
 ## [Espion, commande](watch-command.md)
 # [Outils XML dans Visual Studio](../../xml-tools/xml-tools-in-visual-studio.md)
-# [MSBuild](../../msbuild/msbuild1.md)
+# [MSBuild](../../msbuild/msbuild.md)
 # [Accessibilité pour les personnes handicapées](accessibility-for-people-with-disabilities.md)
 ## [Fonctionnalités d’accessibilité de Visual Studio](accessibility-features-of-visual-studio.md)
 ### [Guide pratique pour définir les options d’accessibilité IDE](how-to-set-ide-accessibility-options.md)
