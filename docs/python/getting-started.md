@@ -28,9 +28,9 @@ translation.priority.ht:
 - zh-cn
 - zh-tw
 translationtype: Human Translation
-ms.sourcegitcommit: 7d726441c2d6953bd7b50451bec7fff05d5d71b0
-ms.openlocfilehash: 0b87d25195b8e288252e6c53279897d1edff93bd
-ms.lasthandoff: 03/10/2017
+ms.sourcegitcommit: e9a05d008f671fb79d6813a14c594b82f27697e3
+ms.openlocfilehash: 2659c1a3b1adfc3f462971205460942c5fe5171f
+ms.lasthandoff: 03/27/2017
 
 ---
 
@@ -230,6 +230,8 @@ Au-delà de ses fonctions de gestion de projets, de son expérience de modificat
     > if __name__ == "__main__":  
     >     sys.exit(int(main() or 0))      
     > ```
+    > 
+    > Sinon, dans les cas où la fenêtre de sortie se ferme automatiquement alors qu’elle ne le devrait pas, cliquez avec le bouton droit sur le projet, sélectionnez **Propriétés**, sélectionnez l’onglet **Déboguer**, puis ajoutez `-i` au champ **Arguments de l’interpréteur**. L’interpréteur passe ainsi en mode interactif à la fin d’un programme en maintenant de cette façon la fenêtre ouverte jusqu’à ce que vous entriez Ctrl+Z, Entrée pour quitter.
 
 1. Définissez un point d’arrêt sur la première ligne de la fonction `main` en cliquant dans la marge grise à gauche en regard de cette ligne, ou en plaçant le signe insertion dans cette ligne et en utilisant la commande *Déboguer > Basculer le point d’arrêt** (F9). Un point rouge apparaît dans la marge grise pour indiquer le point d’arrêt (comme indiqué par la flèche bleue ci-dessous) :
 

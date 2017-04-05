@@ -29,9 +29,9 @@ translation.priority.ht:
 - zh-cn
 - zh-tw
 translationtype: Human Translation
-ms.sourcegitcommit: 7d726441c2d6953bd7b50451bec7fff05d5d71b0
-ms.openlocfilehash: 8ae79f6b8e7eb87c0138b0152d8f9ce46eac9a69
-ms.lasthandoff: 03/10/2017
+ms.sourcegitcommit: e9a05d008f671fb79d6813a14c594b82f27697e3
+ms.openlocfilehash: fb8cb89d6d369a3e8460c2bcf1e65e88ba44b104
+ms.lasthandoff: 03/27/2017
 
 ---
 
@@ -71,7 +71,10 @@ Visionnez également la vidéo [Deep Dive: Using source control with Python proj
 
 Lorsque vous développez votre application, vous devez généralement ajouter des fichiers de différents types pour le projet. Vous pouvez le faire en cliquant avec le bouton droit sur le projet et en sélectionnant **Ajouter > Élément existant...** pour rechercher un fichier à ajouter, ou en sélectionnant **Ajouter > Nouvel élément...**, qui affiche une boîte de dialogue avec un large éventail de modèles d’élément, y compris des fichiers Python vides, une classe Python, un test unitaire et divers fichiers associés aux applications web. Nous vous encourageons à explorer ces options avec un projet de test pour savoir ce qui est disponible dans votre version de Visual Studio.
 
-Chaque projet Python comprend un fichier de démarrage attribué, indiqué en gras dans l’Explorateur de solutions. Il s’agit du fichier qui est exécuté lorsque vous démarrez le débogage (F5 ou **Déboguer > Démarrer le débogage**) ou exécutez votre projet dans la fenêtre interactive (Maj+Alt+F5 ou **Déboguer > Execute Project in Python Interactive** (Exécuter le projet dans la fenêtre interactive de Python)). Pour changer de fichier de démarrage, cliquez sur le nouveau fichier et sélectionnez **Set as Startup File** (Définir comme fichier de démarrage).
+Chaque projet Python comprend un fichier de démarrage attribué, indiqué en gras dans l’Explorateur de solutions. Il s’agit du fichier qui est exécuté quand vous démarrez le débogage (F5 ou **Déboguer > Démarrer le débogage**) ou exécutez votre projet dans la fenêtre interactive (Maj+Alt+F5 ou **Déboguer > Exécuter le projet en mode interactif Python**). Pour changer de fichier de démarrage, cliquez sur le nouveau fichier et sélectionnez **Définir comme fichier de démarrage**.
+
+> [!Tip]
+> Si vous supprimez le fichier de démarrage sélectionné d’un projet et que vous n’en sélectionnez pas un nouveau, la tentative d’exécution de votre projet entraîne l’affichage d’une fenêtre de sortie Python qui disparaît presque immédiatement. Si vous rencontrez ce comportement, vérifiez que vous avez un fichier de démarrage assigné. En outre, pour maintenir la fenêtre de sortie ouverte dans ces cas, cliquez avec le bouton droit sur le projet, sélectionnez **Propriétés**, sélectionnez l’onglet **Déboguer**, puis ajoutez `-i` au champ **Arguments de l’interpréteur**. L’interpréteur passe ainsi en mode interactif à la fin d’un programme en maintenant de cette façon la fenêtre ouverte jusqu’à ce que vous entriez Ctrl+Z, Entrée pour quitter.
 
 Un nouveau projet est toujours associé à l’environnement Python global par défaut. Pour associer le projet à un autre environnement (y compris les environnements virtuels), cliquez avec le bouton droit sur le nœud **Environnements Python** du projet, sélectionnez **Add/Remove Python Environments** (Ajouter/supprimer des environnement Python) et sélectionnez ceux que vous souhaitez. Pour modifier l’environnement actif, cliquez avec le bouton droit sur l’environnement souhaité et sélectionnez **Activate Environment** (Activer l’environnement) comme indiqué ci-dessous. Pour plus d’informations, consultez [Environnements Python](python-environments.md#project-specific-environments).
 
@@ -97,6 +100,7 @@ Le tableau suivant résume les modèles disponibles dans Visual Studio 2017 (to
 | IronPython Silverlight Web Page (Page web Silverlight IronPython) | Un projet IronPython qui s’exécute dans un navigateur à l’aide de Silverlight. Le code Python de l’application est inclus dans la page web en tant que script. Une balise de script réutilisable extrait du code JavaScript qui initialise IronPython s’exécutant dans Silverlight, à partir duquel votre code Python peut interagir avec DOM. |
 | IronPython Windows Forms Application (Application Windows Forms IronPython) | Une structure de projet utilisant IronPython avec l’interface utilisateur créée à partir du code avec Windows Forms. L’application s’exécute sans affichage d’une console. |
 | Background Application (IoT) (Application d’arrière-plan (IoT)) | Prend en charge le déploiement de projets Python pour une exécution en tant que services d’arrière-plan sur les appareils. Visitez le [centre de développement Windows IoT](https://dev.windows.com/en-us/iot) pour plus d’informations. |
+| Module d’extension Python | Ce modèle s’affiche sous Visual C++ si vous avez installé **Outils de développement natifs Python** avec la charge de travail Python dans Visual Studio 2017 Preview (consultez [Installation](installation.md)). Il fournit la structure de base pour une DLL d’extension C++, similaire à ce qui est décrit dans [Création d’une extension C++ pour Python](cpp-and-python.md). |
 
 <a name="create-project-from-existing-files"</a>
 ### <a name="creating-a-project-from-existing-files"></a>Création d’un projet à partir de fichiers existants
@@ -104,15 +108,15 @@ Le tableau suivant résume les modèles disponibles dans Visual Studio 2017 (to
 1. Sélectionnez le menu **Fichier > Nouveau > Projet...**, puis sélectionnez le modèle **From Existing Python Code** (À partir du code Python existant).
 1. Dans la boîte de dialogue suivante, définissez le chemin d’accès à votre code existant, un filtre pour les types de fichier et les chemins de recherche nécessaires à votre projet, puis sélectionnez **Suivant** :
 
-    ![Nouveau projet à partir du code existant, étape&1;](media/projects-from-existing-1.png)
+    ![Nouveau projet à partir du code existant, étape 1](media/projects-from-existing-1.png)
 
 1. Choisissez un environnement pour le projet et le fichier de démarrage, puis appuyez sur **Suivant**. (Notez que la boîte de dialogue affiche uniquement les fichiers dans la racine de l’arborescence de dossiers ; si le fichier que vous souhaitez utilisé se trouve dans un sous-dossier, laissez le champ correspondant au fichier de démarrage vide et définissez-le ultérieurement dans l’Explorateur de solutions).
 
-    ![Nouveau projet à partir du code existant, étape&2;](media/projects-from-existing-2.png)
+    ![Nouveau projet à partir du code existant, étape 2](media/projects-from-existing-2.png)
 
 1. Sélectionnez l’emplacement pour enregistrer le fichier projet (cette opération ne déplace et ne copie pas les fichiers source d’origine ; si vous souhaitez une copie, vous devez la faire avant d’utiliser le modèle). Dans cette boîte de dialogue, vous pouvez également inclure la détection automatique des environnements virtuels et personnaliser le projet pour différentes infrastructures web.
 
-    ![Nouveau projet à partir du code existant, étape&3;](media/projects-from-existing-3.png)
+    ![Nouveau projet à partir du code existant, étape 3](media/projects-from-existing-3.png)
 
 1.  Sélectionnez **Terminer**, et Visual Studio crée le projet et l’ouvre dans l’Explorateur de solutions. Si vous souhaitez déplacer le fichier .pyproj, sélectionnez-le dans l’Explorateur de solutions et choisissez **Fichier > Enregistrer sous**. Cela met à jour les références de fichier dans le projet, mais ne déplace pas de fichier de code.
 

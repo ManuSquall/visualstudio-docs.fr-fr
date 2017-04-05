@@ -27,9 +27,9 @@ translation.priority.ht:
 - zh-cn
 - zh-tw
 translationtype: Human Translation
-ms.sourcegitcommit: edb6c75d35f89df363a07eb24ba31e203bc6672e
-ms.openlocfilehash: 1c200c5f9dd295fff54784e7ebe20cea2ce99cf1
-ms.lasthandoff: 03/15/2017
+ms.sourcegitcommit: e9a05d008f671fb79d6813a14c594b82f27697e3
+ms.openlocfilehash: 03abb5a6508a6c93c6770bd9373381c9173b7103
+ms.lasthandoff: 03/27/2017
 
 ---
 # <a name="live-unit-testing-frequently-asked-questions"></a>Questions fréquentes concernant Live Unit Testing
@@ -59,6 +59,18 @@ La **Fenêtre Sortie** (lorsque vous sélectionnez la liste déroulante Live Uni
        </RunConfiguration> 
     </RunSettings> 
    ``` 
+
+## <a name="why-does-live-unit-testing-show-incorrect-coverage-after-you-upgrade-the-test-adapter-referenced-in-your-visual-studio-projects-to-the-supported-version"></a>Pourquoi est-ce que Live Unit Testing indique une couverture incorrecte après la mise à niveau de l’adaptateur de test référencé dans vos projets Visual Studio vers la version prise en charge ?
+
+**Réponse :**
+
+- Si plusieurs projets de la solution font référence au package de l’adaptateur de test NuGet, chacun d’eux doit être mis à niveau vers la version prise en charge.
+
+- Vérifiez que le fichier .props MSBuild importé à partir du package de l’adaptateur de test est également mis à jour correctement. Vérifiez la version/le chemin du package NuGet de l’importation, qui figure généralement vers le haut du fichier projet, comme suit :
+
+   ```xml
+    <Import Project="..\packages\xunit.runner.visualstudio.2.2.0\build\net20\xunit.runner.visualstudio.props" Condition="Exists('..\packages\xunit.runner.visualstudio.2.2.0\build\net20\xunit.runner.visualstudio.props')" />
+   ```
 
 ## <a name="can-i-customize-my-live-unit-testing-builds"></a>Est-il possible de personnaliser les générations Live Unit Testing ? 
 

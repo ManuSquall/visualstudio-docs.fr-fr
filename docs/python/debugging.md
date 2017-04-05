@@ -29,9 +29,9 @@ translation.priority.ht:
 - zh-cn
 - zh-tw
 translationtype: Human Translation
-ms.sourcegitcommit: b0d84db6a16861fb9554af2a644423f906784748
-ms.openlocfilehash: 3ca6c45cd1f61dc4a4419ab01794e24c0c19d44a
-ms.lasthandoff: 03/07/2017
+ms.sourcegitcommit: e9a05d008f671fb79d6813a14c594b82f27697e3
+ms.openlocfilehash: b5d72a83092c2b97b30b7a8af539a0b1aca50418
+ms.lasthandoff: 03/27/2017
 
 ---
 
@@ -67,7 +67,7 @@ Consultez également les articles ci-après concernant le débogage propre à un
 
 Le flux de travail de débogage de base implique la définition de points d’arrêt, l’exécution de code pas à pas, l’inspection de valeurs et la gestion des exceptions, comme décrit dans les sections suivantes. Pour plus d’informations sur le débogueur Visual Studio, consultez l’article [Débogage dans Visual Studio](../debugger/debugging-in-visual-studio.md).
 
-Une session de débogage est initialisée par la commande **Débogage > Démarrer le débogage**, le bouton **Démarrer** de la barre d’outils ou la touche F5. Cette opération lancera le fichier de démarrage de votre projet (indiqué en gras dans l’Explorateur de solutions) avec l’environnement actif du projet et tous les arguments de ligne de commande ou chemins de recherche qui ont été spécifiés dans Propriétés du projet (consultez la section [Options de débogage d’un projet](#project-debugging-options)).
+Une session de débogage est initialisée par la commande **Débogage > Démarrer le débogage**, le bouton **Démarrer** de la barre d’outils ou la touche F5. Cette opération lancera le fichier de démarrage de votre projet (indiqué en gras dans l’Explorateur de solutions) avec l’environnement actif du projet et tous les arguments de ligne de commande ou chemins de recherche qui ont été spécifiés dans Propriétés du projet (consultez la section [Options de débogage d’un projet](#project-debugging-options)). Si, toutefois, aucun fichier de démarrage n’est défini pour une raison quelconque, une fenêtre de sortie Python apparaît et disparaît brièvement. Dans ce cas, cliquez avec le bouton droit sur le fichier approprié et sélectionnez **Définir comme fichier de démarrage**.
 
 > [!Note]
 > Le débogueur démarre toujours avec l’environnement Python actif associé au projet. Pour changer d’environnement, activez un autre environnement en suivant les instructions de l’article [Environnements Python](python-environments.md).
