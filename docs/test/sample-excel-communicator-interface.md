@@ -1,39 +1,57 @@
 ---
-title: "Exemple d&#39;interface Communicator Excel | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-devops-test"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+title: "Exemple d’interface Communicator Excel | Microsoft Docs"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology:
+- vs-devops-test
+ms.tgt_pltfrm: 
+ms.topic: article
 ms.assetid: 1dbf1090-762c-4824-82dd-2d7c2c6f00b6
 caps.latest.revision: 11
-ms.author: "mlearned"
-manager: "douge"
-caps.handback.revision: 11
----
-# Exemple d&#39;interface Communicator Excel
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
+ms.author: douge
+manager: douge
+translation.priority.ht:
+- de-de
+- es-es
+- fr-fr
+- it-it
+- ja-jp
+- ko-kr
+- ru-ru
+- zh-cn
+- zh-tw
+translation.priority.mt:
+- cs-cz
+- pl-pl
+- pt-br
+- tr-tr
+translationtype: Human Translation
+ms.sourcegitcommit: 5ab78b6b8eaa8156ed2c8a807b1d8a80e75afa84
+ms.openlocfilehash: 58423d52947c920d42c91508922e5a84ef239b23
+ms.lasthandoff: 04/04/2017
 
-L'exemple d'interface `IExcelUICommunication` est utilisée dans l'objet `ExcelUICommunicator` du projet `ExcelAddIn`.  
+---
+# <a name="sample-excel-communicator-interface"></a>Exemple d'interface Communicator Excel
+L’exemple d’interface `IExcelUICommunication` est utilisé dans l’objet `ExcelUICommunicator` du projet `ExcelAddIn`.  
   
-## Interface IExcelUICommunication  
- Cette interface définit les points de communication entre le `CodedUIExtension`, qui s'exécute dans le processus des tests codés de l'interface utilisateur et l' `ExcelCodedUIAddIn`, qui s'exécute dans le processus [!INCLUDE[ofprexcel](../test/includes/ofprexcel_md.md)].  
+## <a name="iexceluicommunication-interface"></a>IExcelUICommunication, interface  
+ Cette interface définit les points de communication entre `CodedUIExtension`, qui s’exécute dans le processus de test codé de l’interface utilisateur et `ExcelCodedUIAddIn`, qui s’exécute dans le processus [!INCLUDE[ofprexcel](../test/includes/ofprexcel_md.md)].  
   
- L'assembly `ExcelCodedUIAddinHelper` possède une classe `ExcelUICommunicator` dérivée de cette interface et utilise le modèle d'objet Excel pour traiter les méthodes.  
+ L’assembly `ExcelCodedUIAddinHelper` a une classe`ExcelUICommunicator` qui dérive de cette interface et utilise le modèle objet Excel pour traiter les méthodes.  
   
- Certaines méthodes récupèrent les informations dans Excel, puis créent et retournent l'un des objets d'informations, comme l'objet `CellInformation`.  
+ Certaines méthodes obtiennent les informations demandées à partir d’Excel, puis créent et retournent l’un des objets d’informations, par exemple l’objet `CellInformation`.  
   
- D'autres méthodes utilisent un objet d'informations fourni, recherchent le contrôle correspondant dans Excel et exécutent des processus sur le contrôle.  Par exemple, la méthode `ScrollIntoView` fait défiler la feuille de calcul pour rendre la cellule désignée visible.  
+ D’autres méthodes utilisent un objet d’informations fourni, recherchent le contrôle correspondant dans Excel, puis effectuent certains processus sur le contrôle. Par exemple, la méthode `ScrollIntoView` fait défiler la feuille de calcul pour que la cellule désignée soit visible.  
   
-## Communication CodedUIExtensibilitySample et ExcelCodedUIAddinHelper  
- L'assembly `ExcelCodedUIAddinHelper` s'exécute dans le processus Excel et possède la classe `UICommunicator` qui implémente l'interface `IExcelUITestCommunication` et obtient ou définit les informations nécessaires directement à partir de l'interface utilisateur Excel.  
+## <a name="codeduiextensibilitysample-and-excelcodeduiaddinhelper-communication"></a>CodedUIExtensibilitySample and ExcelCodedUIAddinHelper, communication  
+ L’assembly `ExcelCodedUIAddinHelper` s’exécute dans le processus Excel et comprend la classe `UICommunicator`, qui implémente l’interface `IExcelUITestCommunication` et obtient ou définit les informations nécessaires directement à partir de l’IU Excel.  
   
- L'assembly `CodedUIExtensibilitySample` s'exécute dans le processus des tests codés de l'interface utilisateur de Visual Studio.  Cet assembly possède la classe `Communicator` qui ouvre un canal .NET Remoting et fournit une propriété `Instance` qui utilise l'interface `IExcelUICommunication` pour utiliser l'objet `UICommunicator` dans l'assembly `ExcelCodedUIAddinHelper` pour transmettre les requêtes et les objets d'informations, tels qu'un objet `CellInformation`, en se déplaçant entre les deux assemblys.  
+ L’assembly `CodedUIExtensibilitySample` s’exécute dans le processus de test codé de l’interface utilisateur Visual Studio. Cet assembly comprend la classe `Communicator` qui ouvre un canal .NET Remoting, et fournit une propriété `Instance` qui utilise l’interface `IExcelUICommunication` pour utiliser l’objet `UICommunicator` de l’assembly `ExcelCodedUIAddinHelper` afin de passer des demandes et des objets d’informations, par exemple un objet `CellInformation`, entre les deux assemblys.  
   
-## Voir aussi  
- [Extension des tests codés de l'interface utilisateur t enregistrements des actions pour prendre charge Microsoft Excel](../test/extending-coded-ui-tests-and-action-recordings-to-support-microsoft-excel.md)   
- [Exemple de complément Excel pour le test codé de l'interface utilisateur](../test/sample-excel-add-in-for-coded-ui-testing.md)   
+## <a name="see-also"></a>Voir aussi  
+ [Extension des tests codés de l’interface utilisateur et des enregistrements des actions pour prendre en charge Microsoft Excel](../test/extending-coded-ui-tests-and-action-recordings-to-support-microsoft-excel.md)   
+ [Exemple de complément Excel pour le test codé de l’interface utilisateur](../test/sample-excel-add-in-for-coded-ui-testing.md)   
  [Exemple d’extension du test codé de l’interface utilisateur pour Excel](../test/sample-coded-ui-test-extension-for-excel.md)
+

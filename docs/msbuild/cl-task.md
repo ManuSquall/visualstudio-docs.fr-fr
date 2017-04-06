@@ -41,13 +41,13 @@ translation.priority.ht:
 - zh-cn
 - zh-tw
 translationtype: Human Translation
-ms.sourcegitcommit: 5658ecf52637a38bc3c2a5ad9e85b2edebf7d445
-ms.openlocfilehash: 4ad346483c37e1f221ebd396a60d30b5bf94a028
-ms.lasthandoff: 02/22/2017
+ms.sourcegitcommit: ca7c86466fa23fb21a932f26dc24e37c71cf29b4
+ms.openlocfilehash: bde2b08fb3cc1b183d224ab3282e44f21a094403
+ms.lasthandoff: 04/05/2017
 
 ---
 # <a name="cl-task"></a>CL, tâche
-Encapsule l’outil Compilateur Visual C++, cl.exe. Le compilateur produit des fichiers exécutables (.exe), des fichiers de bibliothèque de liens dynamiques (.dll) ou des fichiers de module de code (.netmodule). Pour plus d’informations, consultez l’article [Options du compilateur](/visual-cpp/build/reference/compiler-options).  
+Encapsule l’outil Compilateur Visual C++, cl.exe. Le compilateur produit des fichiers exécutables (.exe), des fichiers de bibliothèque de liens dynamiques (.dll) ou des fichiers de module de code (.netmodule). Pour plus d’informations, consultez l’article [Options du compilateur](/cpp/build/reference/compiler-options).  
   
 ## <a name="parameters"></a>Paramètres  
  Le tableau ci-dessous décrit les paramètres de la tâche **CL**. La plupart des paramètres de tâche, et quelques ensembles de paramètres, correspondent à une option de ligne de commande.  
@@ -58,7 +58,7 @@ Encapsule l’outil Compilateur Visual C++, cl.exe. Le compilateur produit des 
   
      Ajoute un répertoire à la liste des répertoires dans lesquels sont recherchés les fichiers include.  
   
-     Pour plus d’informations, consultez l’article [/I (Autres répertoires Include)](/visual-cpp/build/reference/i-additional-include-directories).  
+     Pour plus d’informations, consultez l’article [/I (Autres répertoires Include)](/cpp/build/reference/i-additional-include-directories).  
   
 -   **AdditionalOptions**  
   
@@ -66,13 +66,13 @@ Encapsule l’outil Compilateur Visual C++, cl.exe. Le compilateur produit des 
   
      Liste des options de ligne de commande. Exemple : « /*option1* /*option2* /*option#* ». Utilisez ce paramètre pour spécifier des options de ligne de commande qui ne sont pas représentées par un autre paramètre de tâche.  
   
-     Pour plus d’informations, consultez l’article [Options du compilateur](/visual-cpp/build/reference/compiler-options).  
+     Pour plus d’informations, consultez l’article [Options du compilateur](/cpp/build/reference/compiler-options).  
   
 -   **AdditionalUsingDirectories**Paramètre String[] facultatif.  
   
      Spécifie un répertoire dans lequel le compilateur doit faire une recherche en vue de résoudre les références de fichiers transmises à la directive **#using**.  
   
-     Pour plus d’informations, consultez l’article [/AI (Spécifier les répertoires des métadonnées)](/visual-cpp/build/reference/ai-specify-metadata-directories).  
+     Pour plus d’informations, consultez l’article [/AI (Spécifier les répertoires des métadonnées)](/cpp/build/reference/ai-specify-metadata-directories).  
   
 -   **AlwaysAppend**  
   
@@ -84,7 +84,7 @@ Encapsule l’outil Compilateur Visual C++, cl.exe. Le compilateur produit des 
   
      Crée un fichier listing qui contient le code de l’assembly.  
   
-     Pour plus d’informations, consultez l’option **/Fa** dans l’article [/FA, /Fa (Fichier listing)](/visual-cpp/build/reference/fa-fa-listing-file).  
+     Pour plus d’informations, consultez l’option **/Fa** dans l’article [/FA, /Fa (Fichier listing)](/cpp/build/reference/fa-fa-listing-file).  
   
 -   **AssemblerOutput**  
   
@@ -104,13 +104,13 @@ Encapsule l’outil Compilateur Visual C++, cl.exe. Le compilateur produit des 
   
     -   **All** - **/FAcs**  
   
-     Pour plus d’informations, consultez les options **/FA**, **/FAc**, **/FAs** et **/FAcs** dans l’article [/FA, /Fa (Fichier listing)](/visual-cpp/build/reference/fa-fa-listing-file).  
+     Pour plus d’informations, consultez les options **/FA**, **/FAc**, **/FAs** et **/FAcs** dans l’article [/FA, /Fa (Fichier listing)](/cpp/build/reference/fa-fa-listing-file).  
   
 -   **BasicRuntimeChecks**  
   
      Paramètre de chaîne facultatif.  
   
-     Active et désactive la fonctionnalité de vérification des erreurs d’exécution, conjointement avec le pragma [runtime_checks](/visual-cpp/preprocessor/runtime-checks).  
+     Active et désactive la fonctionnalité de vérification des erreurs d’exécution, conjointement avec le pragma [runtime_checks](/cpp/preprocessor/runtime-checks).  
   
      Spécifiez l'une des valeurs suivantes, chacune d'elles correspondant à une option de ligne de commande.  
   
@@ -122,7 +122,7 @@ Encapsule l’outil Compilateur Visual C++, cl.exe. Le compilateur produit des 
   
     -   **EnableFastChecks** -                          **/RTC1**  
   
-     Pour plus d’informations, consultez l’article [/RTC (Vérifications des erreurs au moment de l’exécution)](/visual-cpp/build/reference/rtc-run-time-error-checks).  
+     Pour plus d’informations, consultez l’article [/RTC (Vérifications des erreurs au moment de l’exécution)](/cpp/build/reference/rtc-run-time-error-checks).  
   
 -   **BrowseInformation**  
   
@@ -130,7 +130,7 @@ Encapsule l’outil Compilateur Visual C++, cl.exe. Le compilateur produit des 
   
      Si `true`, crée un fichier d’informations de consultation.  
   
-     Pour plus d’informations, consultez l’option **/FR** dans l’article [/FR, /Fr (Créer un fichier .sbr)](/visual-cpp/build/reference/fr-fr-create-dot-sbr-file).  
+     Pour plus d’informations, consultez l’option **/FR** dans l’article [/FR, /Fr (Créer un fichier .sbr)](/cpp/build/reference/fr-fr-create-dot-sbr-file).  
   
 -   **BrowseInformationFile**  
   
@@ -138,7 +138,7 @@ Encapsule l’outil Compilateur Visual C++, cl.exe. Le compilateur produit des 
   
      Spécifie un nom pour le fichier d’informations de consultation.  
   
-     Pour plus d’informations, consultez le paramètre **BrowseInformation** dans ce tableau ainsi que l’article [/FR, /Fr (Créer un fichier .sbr)](/visual-cpp/build/reference/fr-fr-create-dot-sbr-file).  
+     Pour plus d’informations, consultez le paramètre **BrowseInformation** dans ce tableau ainsi que l’article [/FR, /Fr (Créer un fichier .sbr)](/cpp/build/reference/fr-fr-create-dot-sbr-file).  
   
 -   **BufferSecurityCheck**  
   
@@ -146,7 +146,7 @@ Encapsule l’outil Compilateur Visual C++, cl.exe. Le compilateur produit des 
   
      Si `true`, détecte des dépassements de mémoire tampon qui remplacent l’adresse de retour, une technique courante pour exploiter le code qui n’applique pas les restrictions de taille de la mémoire tampon.  
   
-     Pour plus d’informations, consultez l’article [/GS (vérification de la sécurité des mémoires tampons)](/visual-cpp/build/reference/gs-buffer-security-check).  
+     Pour plus d’informations, consultez l’article [/GS (vérification de la sécurité des mémoires tampons)](/cpp/build/reference/gs-buffer-security-check).  
   
 -   **BuildingInIDE**  
   
@@ -168,7 +168,7 @@ Encapsule l’outil Compilateur Visual C++, cl.exe. Le compilateur produit des 
   
     -   **StdCall** -                          **/Gz**  
   
-     Pour plus d’informations, voir l’article [/Gd, /Gr, /Gv, /Gz (Convention d’appel)](/visual-cpp/build/reference/gd-gr-gv-gz-calling-convention).  
+     Pour plus d’informations, voir l’article [/Gd, /Gr, /Gv, /Gz (Convention d’appel)](/cpp/build/reference/gd-gr-gv-gz-calling-convention).  
   
 -   **CompileAs**  
   
@@ -184,7 +184,7 @@ Encapsule l’outil Compilateur Visual C++, cl.exe. Le compilateur produit des 
   
     -   **CompileAsCpp** - **/TP**  
   
-     Pour plus d’informations, consultez l’article [/Tc, /Tp, /TC, /TP (Spécifier le type de fichier source)](/visual-cpp/build/reference/tc-tp-tc-tp-specify-source-file-type).  
+     Pour plus d’informations, consultez l’article [/Tc, /Tp, /TC, /TP (Spécifier le type de fichier source)](/cpp/build/reference/tc-tp-tc-tp-specify-source-file-type).  
   
 -   **CompileAsManaged**  
   
@@ -204,7 +204,7 @@ Encapsule l’outil Compilateur Visual C++, cl.exe. Le compilateur produit des 
   
     -   **OldSyntax** - **/clr:oldSyntax**  
   
-     Pour plus d’informations, consultez l’article [/clr (Compilation pour le Common Language Runtime)](/visual-cpp/build/reference/clr-common-language-runtime-compilation).  
+     Pour plus d’informations, consultez l’article [/clr (Compilation pour le Common Language Runtime)](/cpp/build/reference/clr-common-language-runtime-compilation).  
   
 -   **CreateHotpatchableImage**  
   
@@ -212,7 +212,7 @@ Encapsule l’outil Compilateur Visual C++, cl.exe. Le compilateur produit des 
   
      Si `true`, indique au compilateur de préparer une image pour la *création d’images corrigeables en mémoire*. Ce paramètre vérifie que la première instruction de chaque fonction utilise deux octets, comme cela est requis pour la création d’images corrigeables en mémoire.  
   
-     Pour plus d’informations, consultez l’article [/hotpatch (Créer une image corrigeable en mémoire)](/visual-cpp/build/reference/hotpatch-create-hotpatchable-image).  
+     Pour plus d’informations, consultez l’article [/hotpatch (Créer une image corrigeable en mémoire)](/cpp/build/reference/hotpatch-create-hotpatchable-image).  
   
 -   **DebugInformationFormat**  
   
@@ -228,7 +228,7 @@ Encapsule l’outil Compilateur Visual C++, cl.exe. Le compilateur produit des 
   
     -   **EditAndContinue** - **/ZI**  
   
-     Pour plus d’informations, consultez l’article [/Z7, /Zi, /ZI (Format des informations de débogage)](/visual-cpp/build/reference/z7-zi-zi-debug-information-format).  
+     Pour plus d’informations, consultez l’article [/Z7, /Zi, /ZI (Format des informations de débogage)](/cpp/build/reference/z7-zi-zi-debug-information-format).  
   
 -   **DisableLanguageExtensions**  
   
@@ -236,7 +236,7 @@ Encapsule l’outil Compilateur Visual C++, cl.exe. Le compilateur produit des 
   
      Si **true**, indique au compilateur d’émettre une erreur pour les constructions de langage qui ne sont compatibles ni avec ANSI C ni avec ANSI C++.  
   
-     Pour plus d’informations, consultez l’option **/Za** dans l’article [/Za, /Ze (Désactiver les extensions de langage)](/visual-cpp/build/reference/za-ze-disable-language-extensions).  
+     Pour plus d’informations, consultez l’option **/Za** dans l’article [/Za, /Ze (Désactiver les extensions de langage)](/cpp/build/reference/za-ze-disable-language-extensions).  
   
 -   **DisableSpecificWarnings**  
   
@@ -244,7 +244,7 @@ Encapsule l’outil Compilateur Visual C++, cl.exe. Le compilateur produit des 
   
      Désactive les numéros d’avertissement spécifiés dans une liste séparée par des points-virgules.  
   
-     Pour plus d’informations, consultez l’option `/wd` dans l’article [/w, /W0, /W1, /W2, /W3, /W4, /w1, /w2, /w3, /w4, /Wall, /wd, /we, /wo, /Wv, /WX (Niveau d’avertissement)](/visual-cpp/build/reference/compiler-option-warning-level).  
+     Pour plus d’informations, consultez l’option `/wd` dans l’article [/w, /W0, /W1, /W2, /W3, /W4, /w1, /w2, /w3, /w4, /Wall, /wd, /we, /wo, /Wv, /WX (Niveau d’avertissement)](/cpp/build/reference/compiler-option-warning-level).  
   
 -   **EnableEnhancedInstructionSet**  
   
@@ -258,7 +258,7 @@ Encapsule l’outil Compilateur Visual C++, cl.exe. Le compilateur produit des 
   
     -   **StreamingSIMDExtensions2** - **/arch:SSE2**  
   
-     Pour plus d’informations, consultez l’article [/arch (x86)](/visual-cpp/build/reference/arch-x86).  
+     Pour plus d’informations, consultez l’article [/arch (x86)](/cpp/build/reference/arch-x86).  
   
 -   **EnableFiberSafeOptimizations**  
   
@@ -266,7 +266,7 @@ Encapsule l’outil Compilateur Visual C++, cl.exe. Le compilateur produit des 
   
      Si `true`, prend en charge la sécurité des fibres pour les données allouées en utilisant un stockage local des threads de type statique, autrement dit les données allouées en utilisant `__declspec(thread)`.  
   
-     Pour plus d’informations, consultez l’article [/GT (Prendre en charge le stockage local des threads avec fibres sécurisées)](/visual-cpp/build/reference/gt-support-fiber-safe-thread-local-storage).  
+     Pour plus d’informations, consultez l’article [/GT (Prendre en charge le stockage local des threads avec fibres sécurisées)](/cpp/build/reference/gt-support-fiber-safe-thread-local-storage).  
   
 -   **EnablePREfast**  
   
@@ -274,7 +274,7 @@ Encapsule l’outil Compilateur Visual C++, cl.exe. Le compilateur produit des 
   
      Si `true`, active l’analyse du code.  
   
-     Pour plus d’informations, consultez l’article [/analyze (analyse de code)](/visual-cpp/build/reference/analyze-code-analysis).  
+     Pour plus d’informations, consultez l’article [/analyze (analyse de code)](/cpp/build/reference/analyze-code-analysis).  
   
 -   **ErrorReporting**  
   
@@ -292,7 +292,7 @@ Encapsule l’outil Compilateur Visual C++, cl.exe. Le compilateur produit des 
   
     -   **Send** - **/errorReport:send**  
   
-     Pour plus d’informations, consultez l’article [/errorReport (Signaler les erreurs internes du compilateur)](/visual-cpp/build/reference/errorreport-report-internal-compiler-errors).  
+     Pour plus d’informations, consultez l’article [/errorReport (Signaler les erreurs internes du compilateur)](/cpp/build/reference/errorreport-report-internal-compiler-errors).  
   
 -   **ExceptionHandling**  
   
@@ -310,7 +310,7 @@ Encapsule l’outil Compilateur Visual C++, cl.exe. Le compilateur produit des 
   
     -   **SyncCThrow** - **/EHs**  
   
-     Pour plus d’informations, consultez l’article [/EH (Modèle de gestion des exceptions)](/visual-cpp/build/reference/eh-exception-handling-model).  
+     Pour plus d’informations, consultez l’article [/EH (Modèle de gestion des exceptions)](/cpp/build/reference/eh-exception-handling-model).  
   
 -   **ExpandAttributedSource**  
   
@@ -318,7 +318,7 @@ Encapsule l’outil Compilateur Visual C++, cl.exe. Le compilateur produit des 
   
      Si `true`, crée un fichier listing dont les attributs développés sont injectés dans le fichier source.  
   
-     Pour plus d’informations, consultez l’article [/Fx (Fusionner le code injecté)](/visual-cpp/build/reference/fx-merge-injected-code).  
+     Pour plus d’informations, consultez l’article [/Fx (Fusionner le code injecté)](/cpp/build/reference/fx-merge-injected-code).  
   
 -   **FavorSizeOrSpeed**  
   
@@ -334,7 +334,7 @@ Encapsule l’outil Compilateur Visual C++, cl.exe. Le compilateur produit des 
   
     -   **Speed** - **/Ot**  
   
-     Pour plus d’informations, consultez l’article [/Os, /Ot (Favoriser la taille du code, Favoriser la vitesse du code)](/visual-cpp/build/reference/os-ot-favor-small-code-favor-fast-code).  
+     Pour plus d’informations, consultez l’article [/Os, /Ot (Favoriser la taille du code, Favoriser la vitesse du code)](/cpp/build/reference/os-ot-favor-small-code-favor-fast-code).  
   
 -   **FloatingPointExceptions**  
   
@@ -342,7 +342,7 @@ Encapsule l’outil Compilateur Visual C++, cl.exe. Le compilateur produit des 
   
      Si `true`, active le modèle de virgule flottante fiable. Des exceptions sont levées dès leur déclenchement.  
   
-     Pour plus d’informations, consultez l’option /**fp:except** dans l’article [/fp (Spécifier le comportement de virgule flottante)](/visual-cpp/build/reference/fp-specify-floating-point-behavior).  
+     Pour plus d’informations, consultez l’option /**fp:except** dans l’article [/fp (Spécifier le comportement de virgule flottante)](/cpp/build/reference/fp-specify-floating-point-behavior).  
   
 -   **FloatingPointModel**  
   
@@ -358,13 +358,13 @@ Encapsule l’outil Compilateur Visual C++, cl.exe. Le compilateur produit des 
   
     -   **Fast** - **/fp:fast**  
   
-     Pour plus d’informations, consultez l’article [/fp (Spécifier le comportement de virgule flottante)](/visual-cpp/build/reference/fp-specify-floating-point-behavior).  
+     Pour plus d’informations, consultez l’article [/fp (Spécifier le comportement de virgule flottante)](/cpp/build/reference/fp-specify-floating-point-behavior).  
   
 -   **ForceConformanceInForLoopScope**  
   
      Paramètre booléen facultatif.  
   
-     Si `true`, implémente un comportement C++ standard dans les boucles [for](/visual-cpp/cpp/for-statement-cpp) utilisant les extensions Microsoft ([/Ze](/visual-cpp/build/reference/za-ze-disable-language-extensions)).  
+     Si `true`, implémente un comportement C++ standard dans les boucles [for](/cpp/cpp/for-statement-cpp) utilisant les extensions Microsoft ([/Ze](/cpp/build/reference/za-ze-disable-language-extensions)).  
   
      Pour plus d’informations, consultez l’article [/Zc:forScope (Forcer la conformité à la portée de la boucle for)](http://msdn.microsoft.com/Library/3031f02d-3b14-4ad0-869e-22b0110c3aed).  
   
@@ -374,7 +374,7 @@ Encapsule l’outil Compilateur Visual C++, cl.exe. Le compilateur produit des 
   
      Entraîne le traitement d’un ou de plusieurs fichiers d’en-tête spécifiés par le préprocesseur.  
   
-     Pour plus d’informations, consultez l’article [/FI (Nom du fichier Include imposé)](/visual-cpp/build/reference/fi-name-forced-include-file).  
+     Pour plus d’informations, consultez l’article [/FI (Nom du fichier Include imposé)](/cpp/build/reference/fi-name-forced-include-file).  
   
 -   **ForcedUsingFiles**  
   
@@ -382,7 +382,7 @@ Encapsule l’outil Compilateur Visual C++, cl.exe. Le compilateur produit des 
   
      Entraîne le traitement d’un ou de plusieurs fichiers **#using** spécifiés par le préprocesseur.  
   
-     Pour plus d’informations, consultez l’article [/FU (Nom du fichier #using imposé)](/visual-cpp/build/reference/fu-name-forced-hash-using-file).  
+     Pour plus d’informations, consultez l’article [/FU (Nom du fichier #using imposé)](/cpp/build/reference/fu-name-forced-hash-using-file).  
   
 -   **FunctionLevelLinking**  
   
@@ -390,7 +390,7 @@ Encapsule l’outil Compilateur Visual C++, cl.exe. Le compilateur produit des 
   
      Si `true`, permet au compilateur d’empaqueter des fonctions individuelles sous la forme de fonctions empaquetées (COMDATs).  
   
-     Pour plus d’informations, consultez l’article [/Gy (Activer la liaison au niveau des fonctions)](/visual-cpp/build/reference/gy-enable-function-level-linking).  
+     Pour plus d’informations, consultez l’article [/Gy (Activer la liaison au niveau des fonctions)](/cpp/build/reference/gy-enable-function-level-linking).  
   
 -   **GenerateXMLDocumentationFiles**  
   
@@ -398,7 +398,7 @@ Encapsule l’outil Compilateur Visual C++, cl.exe. Le compilateur produit des 
   
      Si `true`, le compilateur traite les commentaires de la documentation dans les fichiers de code source, et crée un fichier .xdc pour chaque fichier de code source qui comporte de tels commentaires.  
   
-     Pour plus d’informations, consultez l’article [/doc (Traiter les commentaires de documentation) (C/C++)](/visual-cpp/build/reference/doc-process-documentation-comments-c-cpp). Consultez également le paramètre **XMLDocumentationFileName** dans ce tableau.  
+     Pour plus d’informations, consultez l’article [/doc (Traiter les commentaires de documentation) (C/C++)](/cpp/build/reference/doc-process-documentation-comments-c-cpp). Consultez également le paramètre **XMLDocumentationFileName** dans ce tableau.  
   
 -   **IgnoreStandardIncludePath**  
   
@@ -406,7 +406,7 @@ Encapsule l’outil Compilateur Visual C++, cl.exe. Le compilateur produit des 
   
      Si `true`, empêche le compilateur de rechercher des fichiers include dans les répertoires spécifiés dans les variables d’environnement PATH et INCLUDE.  
   
-     Pour plus d’informations, consultez l’article [/X (Ignorer les chemins d’accès Include standard)](/visual-cpp/build/reference/x-ignore-standard-include-paths).  
+     Pour plus d’informations, consultez l’article [/X (Ignorer les chemins d’accès Include standard)](/cpp/build/reference/x-ignore-standard-include-paths).  
   
 -   **InlineFunctionExpansion**  
   
@@ -424,7 +424,7 @@ Encapsule l’outil Compilateur Visual C++, cl.exe. Le compilateur produit des 
   
     -   **AnySuitable** - **/Ob2**  
   
-     Pour plus d’informations, consultez l’article [/Ob (Expansion des fonctions Inline)](/visual-cpp/build/reference/ob-inline-function-expansion).  
+     Pour plus d’informations, consultez l’article [/Ob (Expansion des fonctions Inline)](/cpp/build/reference/ob-inline-function-expansion).  
   
 -   **IntrinsicFunctions**  
   
@@ -432,7 +432,7 @@ Encapsule l’outil Compilateur Visual C++, cl.exe. Le compilateur produit des 
   
      Si `true`, remplace certains appels de fonction par une forme intrinsèque ou par d’autres formes spéciales de la fonction qui contribuent à une exécution plus rapide de votre application.  
   
-     Pour plus d’informations, consultez l’article [/Oi (Générer des fonctions intrinsèques)](/visual-cpp/build/reference/oi-generate-intrinsic-functions).  
+     Pour plus d’informations, consultez l’article [/Oi (Générer des fonctions intrinsèques)](/cpp/build/reference/oi-generate-intrinsic-functions).  
   
 -   **MinimalRebuild**  
   
@@ -440,7 +440,7 @@ Encapsule l’outil Compilateur Visual C++, cl.exe. Le compilateur produit des 
   
      Si `true`, permet une régénération minimale, qui détermine si les fichiers sources C++ qui incluent des définitions de classe C++ modifiées (stockées dans des fichiers d’en-tête [.h]) doivent être recompilés.  
   
-     Pour plus d’informations, consultez l’article [/Gm (Activer la régénération minimale)](/visual-cpp/build/reference/gm-enable-minimal-rebuild).  
+     Pour plus d’informations, consultez l’article [/Gm (Activer la régénération minimale)](/cpp/build/reference/gm-enable-minimal-rebuild).  
   
 -   **MultiProcessorCompilation**  
   
@@ -448,7 +448,7 @@ Encapsule l’outil Compilateur Visual C++, cl.exe. Le compilateur produit des 
   
      Si `true`, utilise plusieurs processeurs pour procéder à la compilation. Ce paramètre crée un processus pour chaque processeur effectif de votre ordinateur.  
   
-     Pour plus d’informations, consultez l’article [/MP (Générer avec plusieurs processus)](/visual-cpp/build/reference/mp-build-with-multiple-processes). Consultez également le paramètre **ProcessorNumber** dans ce tableau.  
+     Pour plus d’informations, consultez l’article [/MP (Générer avec plusieurs processus)](/cpp/build/reference/mp-build-with-multiple-processes). Consultez également le paramètre **ProcessorNumber** dans ce tableau.  
   
 -   **ObjectFileName**  
   
@@ -456,7 +456,7 @@ Encapsule l’outil Compilateur Visual C++, cl.exe. Le compilateur produit des 
   
      Spécifie un nom de fichier objet (.obj) ou un répertoire à utiliser à la place de la valeur par défaut.  
   
-     Pour plus d’informations, consultez l’article [/Fo (Nom de fichier objet)](/visual-cpp/build/reference/fo-object-file-name).  
+     Pour plus d’informations, consultez l’article [/Fo (Nom de fichier objet)](/cpp/build/reference/fo-object-file-name).  
   
 -   **ObjectFiles**  
   
@@ -470,7 +470,7 @@ Encapsule l’outil Compilateur Visual C++, cl.exe. Le compilateur produit des 
   
      Si `true`, omet le nom de la bibliothèque runtime C par défaut du fichier objet (.obj). Par défaut, le compilateur place le nom de la bibliothèque dans le fichier .obj afin de diriger l’éditeur de liens vers la bibliothèque appropriée.  
   
-     Pour plus d’informations, consultez l’article [/Zl (Omettre le nom de la bibliothèque par défaut)](/visual-cpp/build/reference/zl-omit-default-library-name).  
+     Pour plus d’informations, consultez l’article [/Zl (Omettre le nom de la bibliothèque par défaut)](/cpp/build/reference/zl-omit-default-library-name).  
   
 -   **OmitFramePointers**  
   
@@ -478,7 +478,7 @@ Encapsule l’outil Compilateur Visual C++, cl.exe. Le compilateur produit des 
   
      Si `true`, empêche la création des pointeurs de frame sur la pile des appels.  
   
-     Pour plus d’informations, consultez l’article [/Oy (Omission du pointeur frame)](/visual-cpp/build/reference/oy-frame-pointer-omission).  
+     Pour plus d’informations, consultez l’article [/Oy (Omission du pointeur frame)](/cpp/build/reference/oy-frame-pointer-omission).  
   
 -   **OpenMPSupport**  
   
@@ -486,7 +486,7 @@ Encapsule l’outil Compilateur Visual C++, cl.exe. Le compilateur produit des 
   
      Si `true`, le compilateur traite les clauses et directives OpenMP.  
   
-     Pour plus d’informations, consultez l’article [/openmp (Activer la prise en charge OpenMP 2.0)](/visual-cpp/build/reference/openmp-enable-openmp-2-0-support).  
+     Pour plus d’informations, consultez l’article [/openmp (Activer la prise en charge OpenMP 2.0)](/cpp/build/reference/openmp-enable-openmp-2-0-support).  
   
 -   **Optimization**  
   
@@ -504,7 +504,7 @@ Encapsule l’outil Compilateur Visual C++, cl.exe. Le compilateur produit des 
   
     -   **Full** - **/Ox**  
   
-     Pour plus d’informations, consultez l’article [/O Options (Optimize Code) (Options /O [optimiser le code])](/visual-cpp/build/reference/o-options-optimize-code).  
+     Pour plus d’informations, consultez l’article [/O Options (Optimize Code) (Options /O [optimiser le code])](/cpp/build/reference/o-options-optimize-code).  
   
 -   **PrecompiledHeader**  
   
@@ -520,7 +520,7 @@ Encapsule l’outil Compilateur Visual C++, cl.exe. Le compilateur produit des 
   
     -   **Use** - **/Yu**  
   
-     Pour plus d’informations, consultez les articles [/Yc (Créer un fichier d’en-tête précompilé)](/visual-cpp/build/reference/yc-create-precompiled-header-file) et [/Yu (Utiliser un fichier d’en-tête précompilé)](/visual-cpp/build/reference/yu-use-precompiled-header-file). Consultez également les paramètres **PrecompiledHeaderFile** et **PrecompiledHeaderOutputFile** dans ce tableau.  
+     Pour plus d’informations, consultez les articles [/Yc (Créer un fichier d’en-tête précompilé)](/cpp/build/reference/yc-create-precompiled-header-file) et [/Yu (Utiliser un fichier d’en-tête précompilé)](/cpp/build/reference/yu-use-precompiled-header-file). Consultez également les paramètres **PrecompiledHeaderFile** et **PrecompiledHeaderOutputFile** dans ce tableau.  
   
 -   **PrecompiledHeaderFile**  
   
@@ -528,7 +528,7 @@ Encapsule l’outil Compilateur Visual C++, cl.exe. Le compilateur produit des 
   
      Spécifie un nom de fichier d’en-tête précompilé à créer ou utiliser.  
   
-     Pour plus d’informations, consultez les articles [/Yc (Créer un fichier d’en-tête précompilé)](/visual-cpp/build/reference/yc-create-precompiled-header-file) et [/Yu (Utiliser un fichier d’en-tête précompilé)](/visual-cpp/build/reference/yu-use-precompiled-header-file).  
+     Pour plus d’informations, consultez les articles [/Yc (Créer un fichier d’en-tête précompilé)](/cpp/build/reference/yc-create-precompiled-header-file) et [/Yu (Utiliser un fichier d’en-tête précompilé)](/cpp/build/reference/yu-use-precompiled-header-file).  
   
 -   **PrecompiledHeaderOutputFile**  
   
@@ -536,7 +536,7 @@ Encapsule l’outil Compilateur Visual C++, cl.exe. Le compilateur produit des 
   
      Spécifie un nom de chemin d’accès pour un en-tête précompilé au lieu d’utiliser le nom du chemin d’accès par défaut.  
   
-     Pour plus d’informations, consultez l’article [/Fp (Nom de fichier .pch)](/visual-cpp/build/reference/fp-name-dot-pch-file).  
+     Pour plus d’informations, consultez l’article [/Fp (Nom de fichier .pch)](/cpp/build/reference/fp-name-dot-pch-file).  
   
 -   **PreprocessKeepComments**  
   
@@ -544,7 +544,7 @@ Encapsule l’outil Compilateur Visual C++, cl.exe. Le compilateur produit des 
   
      Si `true`, conserve les commentaires pendant le prétraitement.  
   
-     Pour plus d’informations, consultez l’article [/C (Conserver les commentaires pendant le prétraitement)](/visual-cpp/build/reference/c-preserve-comments-during-preprocessing).  
+     Pour plus d’informations, consultez l’article [/C (Conserver les commentaires pendant le prétraitement)](/cpp/build/reference/c-preserve-comments-during-preprocessing).  
   
 -   **PreprocessorDefinitions**  
   
@@ -552,7 +552,7 @@ Encapsule l’outil Compilateur Visual C++, cl.exe. Le compilateur produit des 
   
      Définit un symbole de prétraitement pour votre fichier source.  
   
-     Pour plus d’informations, consultez [/D (Définitions de préprocesseur)](/visual-cpp/build/reference/d-preprocessor-definitions).  
+     Pour plus d’informations, consultez [/D (Définitions de préprocesseur)](/cpp/build/reference/d-preprocessor-definitions).  
   
 -   **PreprocessOutput**  
   
@@ -566,7 +566,7 @@ Encapsule l’outil Compilateur Visual C++, cl.exe. Le compilateur produit des 
   
      Spécifie le nom du fichier de sortie dans lequel le paramètre **PreprocessToFile** écrit la sortie prétraitée.  
   
-     Pour plus d’informations, consultez l’article [/Fi (prétraiter le nom du fichier de sortie)](/visual-cpp/build/reference/fi-preprocess-output-file-name).  
+     Pour plus d’informations, consultez l’article [/Fi (prétraiter le nom du fichier de sortie)](/cpp/build/reference/fi-preprocess-output-file-name).  
   
 -   **PreprocessSuppressLineNumbers**  
   
@@ -574,7 +574,7 @@ Encapsule l’outil Compilateur Visual C++, cl.exe. Le compilateur produit des 
   
      Si `true`, prétraite les fichiers sources C et C++ et copie les fichiers prétraités sur le périphérique de sortie standard.  
   
-     Pour plus d’informations, consultez l’article [/EP (Prétraiter dans stdout sans directive #line)](/visual-cpp/build/reference/ep-preprocess-to-stdout-without-hash-line-directives).  
+     Pour plus d’informations, consultez l’article [/EP (Prétraiter dans stdout sans directive #line)](/cpp/build/reference/ep-preprocess-to-stdout-without-hash-line-directives).  
   
 -   **PreprocessToFile**  
   
@@ -582,7 +582,7 @@ Encapsule l’outil Compilateur Visual C++, cl.exe. Le compilateur produit des 
   
      Si `true`, prétraite les fichiers sources C et C++ et copie la sortie prétraitée dans un fichier.  
   
-     Pour plus d’informations, consultez l’article [/P (Prétraiter dans un fichier)](/visual-cpp/build/reference/p-preprocess-to-a-file).  
+     Pour plus d’informations, consultez l’article [/P (Prétraiter dans un fichier)](/cpp/build/reference/p-preprocess-to-a-file).  
   
 -   **ProcessorNumber**  
   
@@ -596,7 +596,7 @@ Encapsule l’outil Compilateur Visual C++, cl.exe. Le compilateur produit des 
   
      Spécifie un nom pour le fichier de base de données du programme (PDB).  
   
-     Pour plus d’informations, consultez l’article [/Fd (Nom de fichier PDB)](/visual-cpp/build/reference/fd-program-database-file-name).  
+     Pour plus d’informations, consultez l’article [/Fd (Nom de fichier PDB)](/cpp/build/reference/fd-program-database-file-name).  
   
 -   **RuntimeLibrary**  
   
@@ -614,7 +614,7 @@ Encapsule l’outil Compilateur Visual C++, cl.exe. Le compilateur produit des 
   
     -   **MultiThreadedDebugDLL** - **/MDd**  
   
-     Pour plus d’informations, consultez l’article [/MD, /MT, /LD (Utiliser la bibliothèque Runtime)](/visual-cpp/build/reference/md-mt-ld-use-run-time-library).  
+     Pour plus d’informations, consultez l’article [/MD, /MT, /LD (Utiliser la bibliothèque Runtime)](/cpp/build/reference/md-mt-ld-use-run-time-library).  
   
 -   **RuntimeTypeInfo**  
   
@@ -622,7 +622,7 @@ Encapsule l’outil Compilateur Visual C++, cl.exe. Le compilateur produit des 
   
      Si `true`, ajoute le code pour vérifier les types d’objet C++ à l’exécution (informations de type au moment de l’exécution).  
   
-     Pour plus d’informations, consultez l’article [/GR (Activer les informations de type au moment de l’exécution)](/visual-cpp/build/reference/gr-enable-run-time-type-information).  
+     Pour plus d’informations, consultez l’article [/GR (Activer les informations de type au moment de l’exécution)](/cpp/build/reference/gr-enable-run-time-type-information).  
   
 -   **ShowIncludes**  
   
@@ -630,7 +630,7 @@ Encapsule l’outil Compilateur Visual C++, cl.exe. Le compilateur produit des 
   
      Si `true`, le compilateur sort la liste des fichiers include.  
   
-     Pour plus d’informations, consultez l’article [/showIncludes (Liste des fichiers Include)](/visual-cpp/build/reference/showincludes-list-include-files).  
+     Pour plus d’informations, consultez l’article [/showIncludes (Liste des fichiers Include)](/cpp/build/reference/showincludes-list-include-files).  
   
 -   **SmallerTypeCheck**  
   
@@ -638,7 +638,7 @@ Encapsule l’outil Compilateur Visual C++, cl.exe. Le compilateur produit des 
   
      Si `true`, signale une erreur d’exécution si une valeur est affectée à un type de données inférieur et provoque une perte de données.  
   
-     Pour plus d’informations, consultez l’option **/RTCc** dans [/RTC (Vérifications des erreurs au moment de l’exécution)](/visual-cpp/build/reference/rtc-run-time-error-checks).  
+     Pour plus d’informations, consultez l’option **/RTCc** dans [/RTC (Vérifications des erreurs au moment de l’exécution)](/cpp/build/reference/rtc-run-time-error-checks).  
   
 -   **Sources**  
   
@@ -652,7 +652,7 @@ Encapsule l’outil Compilateur Visual C++, cl.exe. Le compilateur produit des 
   
      Si `true`, permet au compilateur de créer une copie de chaînes identiques dans l’image du programme.  
   
-     Pour plus d’informations, consultez l’article [/GF (Supprimer les doublons)](/visual-cpp/build/reference/gf-eliminate-duplicate-strings).  
+     Pour plus d’informations, consultez l’article [/GF (Supprimer les doublons)](/cpp/build/reference/gf-eliminate-duplicate-strings).  
   
 -   **StructMemberAlignment**  
   
@@ -674,7 +674,7 @@ Encapsule l’outil Compilateur Visual C++, cl.exe. Le compilateur produit des 
   
     -   **16Bytes** - **/Zp16**  
   
-     Pour plus d’informations, consultez l’article [/Zp (Alignement des membres de la structure)](/visual-cpp/build/reference/zp-struct-member-alignment).  
+     Pour plus d’informations, consultez l’article [/Zp (Alignement des membres de la structure)](/cpp/build/reference/zp-struct-member-alignment).  
   
 -   **SuppressStartupBanner**  
   
@@ -682,7 +682,7 @@ Encapsule l’outil Compilateur Visual C++, cl.exe. Le compilateur produit des 
   
      Si la valeur est `true`, empêche l'affichage du message de copyright et de numéro de version quand la tâche démarre.  
   
-     Pour plus d’informations, consultez l’article [/nologo (Suppression de la bannière de démarrage) (C/C++)](/visual-cpp/build/reference/nologo-suppress-startup-banner-c-cpp).  
+     Pour plus d’informations, consultez l’article [/nologo (Suppression de la bannière de démarrage) (C/C++)](/cpp/build/reference/nologo-suppress-startup-banner-c-cpp).  
   
 -   **TrackerLogDirectory**  
   
@@ -698,7 +698,7 @@ Encapsule l’outil Compilateur Visual C++, cl.exe. Le compilateur produit des 
   
      Traite la liste spécifiée des avertissements du compilateur comme des erreurs.  
   
-     Pour plus d’informations, consultez l’option **/we**`n` dans l’article [/w, /W0, /W1, /W2, /W3, /W4, /w1, /w2, /w3, /w4, /Wall, /wd, /we, /wo, /Wv, /WX (Niveau d’avertissement)](/visual-cpp/build/reference/compiler-option-warning-level).  
+     Pour plus d’informations, consultez l’option **/we**`n` dans l’article [/w, /W0, /W1, /W2, /W3, /W4, /w1, /w2, /w3, /w4, /Wall, /wd, /we, /wo, /Wv, /WX (Niveau d’avertissement)](/cpp/build/reference/compiler-option-warning-level).  
   
 -   **TreatWarningAsError**  
   
@@ -706,7 +706,7 @@ Encapsule l’outil Compilateur Visual C++, cl.exe. Le compilateur produit des 
   
      Si `true`, considère tous les avertissements du compilateur comme des erreurs.  
   
-     Pour plus d’informations, consultez l’option **/WX** dans l’article [/w, /W0, /W1, /W2, /W3, /W4, /w1, /w2, /w3, /w4, /Wall, /wd, /we, /wo, /Wv, /WX (Niveau d’avertissement)](/visual-cpp/build/reference/compiler-option-warning-level).  
+     Pour plus d’informations, consultez l’option **/WX** dans l’article [/w, /W0, /W1, /W2, /W3, /W4, /w1, /w2, /w3, /w4, /Wall, /wd, /we, /wo, /Wv, /WX (Niveau d’avertissement)](/cpp/build/reference/compiler-option-warning-level).  
   
 -   **TreatWChar_tAsBuiltInType**  
   
@@ -722,7 +722,7 @@ Encapsule l’outil Compilateur Visual C++, cl.exe. Le compilateur produit des 
   
      Si `true`, annule la définition des symboles propres à Microsoft que le compilateur définit.  
   
-     Pour plus d’informations, consultez l’option **/u** dans l’article [/U, /u (Annuler la définition des symboles)](/visual-cpp/build/reference/u-u-undefine-symbols).  
+     Pour plus d’informations, consultez l’option **/u** dans l’article [/U, /u (Annuler la définition des symboles)](/cpp/build/reference/u-u-undefine-symbols).  
   
 -   **UndefinePreprocessorDefinitions**  
   
@@ -730,7 +730,7 @@ Encapsule l’outil Compilateur Visual C++, cl.exe. Le compilateur produit des 
   
      Indique une liste d’un ou de plusieurs symboles de préprocesseur dont la définition va être annulée.  
   
-     Pour plus d’informations, consultez l’option **/U** dans l’article [/U, /u (Annuler la définition des symboles)](/visual-cpp/build/reference/u-u-undefine-symbols).  
+     Pour plus d’informations, consultez l’option **/U** dans l’article [/U, /u (Annuler la définition des symboles)](/cpp/build/reference/u-u-undefine-symbols).  
   
 -   **UseFullPaths**  
   
@@ -738,7 +738,7 @@ Encapsule l’outil Compilateur Visual C++, cl.exe. Le compilateur produit des 
   
      Si `true`, affiche le chemin d’accès complet des fichiers de code source transmis au compilateur dans les diagnostics.  
   
-     Pour plus d’informations, consultez l’article [/FC (Chemin d’accès complet du fichier de code source dans les diagnostics)](/visual-cpp/build/reference/fc-full-path-of-source-code-file-in-diagnostics).  
+     Pour plus d’informations, consultez l’article [/FC (Chemin d’accès complet du fichier de code source dans les diagnostics)](/cpp/build/reference/fc-full-path-of-source-code-file-in-diagnostics).  
   
 -   **UseUnicodeForAssemblerListing**  
   
@@ -746,7 +746,7 @@ Encapsule l’outil Compilateur Visual C++, cl.exe. Le compilateur produit des 
   
      Si `true`, entraîne la création du fichier de sortie au format UTF-8.  
   
-     Pour plus d’informations, consultez l’option **/FAu** dans l’article [/FA, /Fa (Fichier listing)](/visual-cpp/build/reference/fa-fa-listing-file).  
+     Pour plus d’informations, consultez l’option **/FAu** dans l’article [/FA, /Fa (Fichier listing)](/cpp/build/reference/fa-fa-listing-file).  
   
 -   **WarningLevel**  
   
@@ -768,7 +768,7 @@ Encapsule l’outil Compilateur Visual C++, cl.exe. Le compilateur produit des 
   
     -   **EnableAllWarnings** - **/Wall**  
   
-     Pour plus d’informations, consultez l’option **/W***n* dans l’article [/w, /W0, /W1, /W2, /W3, /W4, /w1, /w2, /w3, /w4, /Wall, /wd, /we, /wo, /Wv, /WX (Niveau d’avertissement)](/visual-cpp/build/reference/compiler-option-warning-level).  
+     Pour plus d’informations, consultez l’option **/W***n* dans l’article [/w, /W0, /W1, /W2, /W3, /W4, /w1, /w2, /w3, /w4, /Wall, /wd, /we, /wo, /Wv, /WX (Niveau d’avertissement)](/cpp/build/reference/compiler-option-warning-level).  
   
 -   **WholeProgramOptimization**  
   
@@ -776,7 +776,7 @@ Encapsule l’outil Compilateur Visual C++, cl.exe. Le compilateur produit des 
   
      Si `true`, active l’optimisation de l’ensemble du programme.  
   
-     Pour plus d’informations, consultez l’article [/GL (Optimisation de l’ensemble du programme)](/visual-cpp/build/reference/gl-whole-program-optimization).  
+     Pour plus d’informations, consultez l’article [/GL (Optimisation de l’ensemble du programme)](/cpp/build/reference/gl-whole-program-optimization).  
   
 -   **XMLDocumentationFileName**  
   
@@ -784,7 +784,7 @@ Encapsule l’outil Compilateur Visual C++, cl.exe. Le compilateur produit des 
   
      Spécifie le nom des fichiers de documentation XML générés. Ce paramètre peut être un nom de fichier ou de répertoire.  
   
-     Pour plus d’informations, consultez l’argument `name` dans l’article [/doc (Traiter les commentaires de documentation) (C/C++)](/visual-cpp/build/reference/doc-process-documentation-comments-c-cpp). Consultez également le paramètre **GenerateXMLDocumentationFiles** dans ce tableau.  
+     Pour plus d’informations, consultez l’argument `name` dans l’article [/doc (Traiter les commentaires de documentation) (C/C++)](/cpp/build/reference/doc-process-documentation-comments-c-cpp). Consultez également le paramètre **GenerateXMLDocumentationFiles** dans ce tableau.  
   
 -   **MinimalRebuildFromTracking**  
   

@@ -34,9 +34,9 @@ translation.priority.mt:
 - pt-br
 - tr-tr
 translationtype: Human Translation
-ms.sourcegitcommit: a42f5a30375192c89c9984e40ba0104da98d7253
-ms.openlocfilehash: e42b90e6e9c3b151ae47032b54686c50bf838426
-ms.lasthandoff: 03/07/2017
+ms.sourcegitcommit: ca7c86466fa23fb21a932f26dc24e37c71cf29b4
+ms.openlocfilehash: a20a64818982484a56ba7dc82af890c729da40e4
+ms.lasthandoff: 04/05/2017
 
 ---
 # <a name="walkthrough-identifying-performance-problems"></a>Procédure pas à pas : Identification des problèmes de performances
@@ -177,4 +177,4 @@ Cette procédure pas à pas montre comment profiler une application pour identif
 ## <a name="see-also"></a>Voir aussi  
  [Vues d’ensemble](../profiling/overviews-performance-tools.md)   
  [Bien démarrer](../profiling/getting-started-with-performance-tools.md)   
- [/Z7, /Zi, /ZI (Format des informations de débogage)](/visual-cpp/build/reference/z7-zi-zi-debug-information-format)
+ [/Z7, /Zi, /ZI (Format des informations de débogage)](/cpp/build/reference/z7-zi-zi-debug-information-format)

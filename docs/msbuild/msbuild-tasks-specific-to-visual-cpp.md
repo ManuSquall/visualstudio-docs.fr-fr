@@ -35,13 +35,13 @@ translation.priority.ht:
 - zh-cn
 - zh-tw
 translationtype: Human Translation
-ms.sourcegitcommit: 5db97d19b1b823388a465bba15d057b30ff0b3ce
-ms.openlocfilehash: d82c6e70e17866e4bd4d39524faafdb554508fc2
-ms.lasthandoff: 02/22/2017
+ms.sourcegitcommit: ca7c86466fa23fb21a932f26dc24e37c71cf29b4
+ms.openlocfilehash: a3521e5a8f0bcf3d6d938187031b9a2de73b20d5
+ms.lasthandoff: 04/05/2017
 
 ---
 # <a name="msbuild-tasks-specific-to-visual-c"></a>Tâches MSBuild propres à Visual C++
-Les tâches fournissent le code exécuté pendant le processus de génération. Quand Visual C++ est installé, les tâches suivantes sont disponibles, en plus de celles qui sont installées avec [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)]. Pour plus d’informations, consultez [Vue d’ensemble de MSBuild (Visual C++)](/visual-cpp/build/msbuild-visual-cpp-overview).  
+Les tâches fournissent le code exécuté pendant le processus de génération. Quand Visual C++ est installé, les tâches suivantes sont disponibles, en plus de celles qui sont installées avec [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)]. Pour plus d’informations, consultez [Vue d’ensemble de MSBuild (Visual C++)](/cpp/build/msbuild-visual-cpp-overview).  
   
  Outre les paramètres pour chaque tâche, chaque tâche a également les paramètres suivants.  
   

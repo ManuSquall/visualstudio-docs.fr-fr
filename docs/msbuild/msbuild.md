@@ -31,9 +31,9 @@ translation.priority.ht:
 - zh-cn
 - zh-tw
 translationtype: Human Translation
-ms.sourcegitcommit: d014b703c491603c86fcd6a89c1dc17f35b0deae
-ms.openlocfilehash: 99850b840fbda9f7e7674d926822ff461e69da17
-ms.lasthandoff: 02/22/2017
+ms.sourcegitcommit: ca7c86466fa23fb21a932f26dc24e37c71cf29b4
+ms.openlocfilehash: 79d77230e46bade8e89d4503dbf95b1f1831e464
+ms.lasthandoff: 04/05/2017
 
 ---
 # <a name="msbuild"></a>MSBuild
@@ -41,7 +41,7 @@ Le [!INCLUDE[vstecmsbuildengine](../msbuild/includes/vstecmsbuildengine_md.md)] 
   
  Visual Studio utilise MSBuild pour charger et générer des projets managés. Les fichiers projet dans Visual Studio (.csproj, .vbproj, vcxproj et autres) contiennent le code XML MSBuild qui s'exécute lorsque vous générez un projet à l'aide de l'IDE. Les projets Visual Studio importent tous les paramètres et processus de génération nécessaires pour effectuer le travail de développement classique, mais vous pouvez les développer ou les modifier à partir de Visual Studio ou en utilisant un éditeur XML.  
   
- Pour plus d’informations sur MSBuild pour C++, consultez [MSBuild (Visual C++)](/visual-cpp/build/msbuild-visual-cpp).  
+ Pour plus d’informations sur MSBuild pour C++, consultez [MSBuild (Visual C++)](/cpp/build/msbuild-visual-cpp).  
   
  Les exemples suivants illustrent les cas où vous pouvez exécuter des builds à l'aide d'une ligne de commande MSBuild au lieu de l'IDE de Visual Studio.  
   

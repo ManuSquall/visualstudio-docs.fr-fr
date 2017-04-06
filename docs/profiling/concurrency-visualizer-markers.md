@@ -31,9 +31,9 @@ translation.priority.mt:
 - pt-br
 - tr-tr
 translationtype: Human Translation
-ms.sourcegitcommit: 5658ecf52637a38bc3c2a5ad9e85b2edebf7d445
-ms.openlocfilehash: 6d5f17d6485a6662c5fdc1cbf245ac4fdf5515ac
-ms.lasthandoff: 02/22/2017
+ms.sourcegitcommit: ca7c86466fa23fb21a932f26dc24e37c71cf29b4
+ms.openlocfilehash: dcabdd5ca1381ec15e66637a35044c456411c8c7
+ms.lasthandoff: 04/05/2017
 
 ---
 # <a name="concurrency-visualizer-markers"></a>Marqueurs du visualiseur concurrentiel
@@ -68,11 +68,11 @@ Dans le visualiseur concurrentiel, les marqueurs sont des icônes qui représent
   
 -   [Parallel LINQ (PLINQ)](http://msdn.microsoft.com/Library/3d4d0cd3-bde4-490b-99e7-f4e41be96455)  
   
--   [Le runtime d’accès concurrentiel](/visual-cpp/parallel/concrt/concurrency-runtime)  
+-   [Le runtime d’accès concurrentiel](/cpp/parallel/concrt/concurrency-runtime)  
   
 -   [Les marqueurs Scenario](http://msdn.microsoft.com/en-us/e3b55bc2-b451-4214-ae00-0c7f5a5baec8)  
   
--   [C++ AMP (C++ Accelerated Massive Parallelism)](/visual-cpp/parallel/amp/cpp-amp-cpp-accelerated-massive-parallelism)  
+-   [C++ AMP (C++ Accelerated Massive Parallelism)](/cpp/parallel/amp/cpp-amp-cpp-accelerated-massive-parallelism)  
   
  Vous pouvez utiliser l’onglet Marqueurs de la boîte de dialogue [Paramètres avancés](../profiling/advanced-settings-dialog-box-concurrency-visualizer.md) pour contrôler l’affichage des marqueurs provenant de différentes sources dans le visualiseur concurrentiel, et pour filtrer les marqueurs en fonction de leur importance et de leur catégorie.  
   
