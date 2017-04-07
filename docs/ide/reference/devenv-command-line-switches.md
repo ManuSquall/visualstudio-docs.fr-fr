@@ -41,9 +41,9 @@ translation.priority.mt:
 - pt-br
 - tr-tr
 translationtype: Human Translation
-ms.sourcegitcommit: 5db97d19b1b823388a465bba15d057b30ff0b3ce
-ms.openlocfilehash: e6d73f518f62cefc1fbb791d6c51a6d42a4cfae5
-ms.lasthandoff: 02/22/2017
+ms.sourcegitcommit: ca7c86466fa23fb21a932f26dc24e37c71cf29b4
+ms.openlocfilehash: 5666566315e94f109c5ca214dcf5b2a539911203
+ms.lasthandoff: 04/05/2017
 
 ---
 # <a name="devenv-command-line-switches"></a>Commutateurs de la ligne de commande de Devenv
@@ -92,7 +92,7 @@ Devenv vous permet de définir diverses options pour l’environnement de dével
 |[/Log (devenv.exe)](../../ide/reference/log-devenv-exe.md)|Démarre [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] et enregistre toute l’activité dans le fichier journal.|  
 |[/Run (devenv.exe)](../../ide/reference/run-devenv-exe.md) ou `/r`|Compile et exécute la solution spécifiée.|  
 |[/Runexit (devenv.exe)](../../ide/reference/runexit-devenv-exe.md)|Compile et exécute la solution spécifiée, réduit l’IDE pendant l’exécution de la solution et ferme l’IDE une fois la solution exécutée.|  
-|[/UseEnv (devenv.exe)](../../ide/reference/useenv-devenv-exe.md)|Force l’IDE à utiliser les variables d’environnement PATH, INCLUDE et LIB pour la compilation de [!INCLUDE[vcprvc](../../code-quality/includes/vcprvc_md.md)] au lieu des paramètres spécifiés dans la section Répertoires VC ++ des options de **Projets** dans la boîte de dialogue **Options**. Pour plus d’informations, consultez [Définition du chemin et des variables d’environnement pour les générations sur la ligne de commande](/visual-cpp/build/setting-the-path-and-environment-variables-for-command-line-builds)|  
+|[/UseEnv (devenv.exe)](../../ide/reference/useenv-devenv-exe.md)|Force l’IDE à utiliser les variables d’environnement PATH, INCLUDE et LIB pour la compilation de [!INCLUDE[vcprvc](../../code-quality/includes/vcprvc_md.md)] au lieu des paramètres spécifiés dans la section Répertoires VC ++ des options de **Projets** dans la boîte de dialogue **Options**. Pour plus d’informations, consultez [Définition du chemin et des variables d’environnement pour les générations sur la ligne de commande](/cpp/build/setting-the-path-and-environment-variables-for-command-line-builds)|  
 |[/Edit (devenv.exe)](../../ide/reference/edit-devenv-exe.md)|Ouvre les fichiers spécifiés dans une instance en cours d’exécution de cette application. S’il n’existe aucune instance en cours d’exécution, démarre une nouvelle instance avec une disposition de fenêtre simplifiée.|  
 |[/ResetAddin (devenv.exe)](../../ide/reference/resetaddin-devenv-exe.md)|Démarre une instance de l’IDE Visual Studio sans charger le complément spécifié.|  
 |[/SafeMode (devenv.exe)](../../ide/reference/safemode-devenv-exe.md)|Démarre [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] en mode sans échec et charge uniquement l’environnement et les services par défaut ainsi que les versions commercialisées des packages tiers.|  

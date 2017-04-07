@@ -43,9 +43,9 @@ translation.priority.mt:
 - pt-br
 - tr-tr
 translationtype: Human Translation
-ms.sourcegitcommit: 5db97d19b1b823388a465bba15d057b30ff0b3ce
-ms.openlocfilehash: 96fad179fb30f3b5e8fe6ddfd041c8e289dde48a
-ms.lasthandoff: 02/22/2017
+ms.sourcegitcommit: ca7c86466fa23fb21a932f26dc24e37c71cf29b4
+ms.openlocfilehash: ce6f346f77217e61d93879118610934422cdc642
+ms.lasthandoff: 04/05/2017
 
 ---
 # <a name="building-and-cleaning-projects-and-solutions-in-visual-studio"></a>Génération et nettoyage de solutions et de projets dans Visual Studio
@@ -131,6 +131,6 @@ En appliquant les procédures décrites dans cette rubrique, vous pouvez génér
  [Compilation et génération](../ide/compiling-and-building-in-visual-studio.md)   
  [Présentation des configurations de build](../ide/understanding-build-configurations.md)   
  [Configurations de projets Debug et Release](http://msdn.microsoft.com/en-us/0440b300-0614-4511-901a-105b771b236e)   
- [Référence à la génération C/C++](/visual-cpp/build/reference/c-cpp-building-reference)   
+ [Référence à la génération C/C++](/cpp/build/reference/c-cpp-building-reference)   
  [Commutateurs de la ligne de commande Devenv](../ide/reference/devenv-command-line-switches.md)   
  [Projets et solutions](../ide/solutions-and-projects-in-visual-studio.md)

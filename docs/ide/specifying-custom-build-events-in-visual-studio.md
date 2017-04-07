@@ -30,9 +30,9 @@ translation.priority.ht:
 - zh-cn
 - zh-tw
 translationtype: Human Translation
-ms.sourcegitcommit: 5db97d19b1b823388a465bba15d057b30ff0b3ce
-ms.openlocfilehash: a9f75e48f1fa8834a4232d234a54ca32c0a43e38
-ms.lasthandoff: 02/22/2017
+ms.sourcegitcommit: ca7c86466fa23fb21a932f26dc24e37c71cf29b4
+ms.openlocfilehash: fd5955068a899199969c970434ff14401a654d35
+ms.lasthandoff: 04/05/2017
 
 ---
 # <a name="specifying-custom-build-events-in-visual-studio"></a>Spécification d'événements de build personnalisés dans Visual Studio
@@ -44,7 +44,7 @@ En spécifiant un événement de build personnalisé, vous pouvez automatiquemen
   
 -   Visual C# et F#--[Guide pratique pour spécifier des événements de build (C#)](../ide/how-to-specify-build-events-csharp.md).  
   
--   Visual C++--[Spécifications d’événements de build](/visual-cpp/ide/specifying-build-events).  
+-   Visual C++--[Spécifications d’événements de build](/cpp/ide/specifying-build-events).  
   
 ## <a name="syntax"></a>Syntaxe  
  Les événements de build suivent la même syntaxe que les commandes DOS, mais vous pouvez utiliser des macros pour créer plus facilement des événements de build. Pour obtenir la liste des macros disponibles, consultez [Ligne de commande de l’événement pré-build/post-build, boîte de dialogue](../ide/reference/pre-build-event-post-build-event-command-line-dialog-box.md).  

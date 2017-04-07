@@ -33,9 +33,9 @@ translation.priority.ht:
 - zh-cn
 - zh-tw
 translationtype: Human Translation
-ms.sourcegitcommit: 68358885d93e9e6b7f231750c35065be9521c3fe
-ms.openlocfilehash: b1ce5a5c4dc05cb9d0a2ebcb68a10a5054b68893
-ms.lasthandoff: 03/01/2017
+ms.sourcegitcommit: ca7c86466fa23fb21a932f26dc24e37c71cf29b4
+ms.openlocfilehash: a990441ed4ef551a0fc6defcda45d51ff0c0d209
+ms.lasthandoff: 04/05/2017
 
 ---
 # <a name="managing-assembly-and-manifest-signing"></a>Gestion d'assembly et signature de manifeste
@@ -45,7 +45,7 @@ La signature avec un nom fort fournit à un composant logiciel une identité glo
   
  Pour plus d’informations sur la signature d’assemblys dans les projets Visual Basic et C#, consultez [Création et utilisation d’assemblys avec nom fort](http://msdn.microsoft.com/Library/ffbf6d9e-4a88-4a8a-9645-4ce0ee1ee5f9).  
   
- Pour plus d’informations sur la signature d’assemblys dans les projets Visual C++, consultez [Assemblys de nom fort (signature d’assembly) (C++/CLI)](/visual-cpp/dotnet/strong-name-assemblies-assembly-signing-cpp-cli).  
+ Pour plus d’informations sur la signature d’assemblys dans les projets Visual C++, consultez [Assemblys de nom fort (signature d’assembly) (C++/CLI)](/cpp/dotnet/strong-name-assemblies-assembly-signing-cpp-cli).  
 
 > [!NOTE]
 >  La signature avec nom fort ne protège pas l’assembly contre l’ingénierie à rebours.  Pour protéger contre l’ingénierie à rebours, consultez [Dotfuscator Community Edition (CE)](dotfuscator/index.md).
@@ -87,4 +87,4 @@ La signature avec un nom fort fournit à un composant logiciel une identité glo
   
 ## <a name="see-also"></a>Voir aussi  
  [Assemblys avec nom fort](http://msdn.microsoft.com/Library/d4a80263-f3e0-4d81-9b61-f0cbeae3797b)   
- [Assemblys de nom fort (signature d’assembly) (C++/CLI)](/visual-cpp/dotnet/strong-name-assemblies-assembly-signing-cpp-cli)
+ [Assemblys de nom fort (signature d’assembly) (C++/CLI)](/cpp/dotnet/strong-name-assemblies-assembly-signing-cpp-cli)
