@@ -31,16 +31,16 @@ translation.priority.mt:
 - zh-cn
 - zh-tw
 translationtype: Machine Translation
-ms.sourcegitcommit: 5db97d19b1b823388a465bba15d057b30ff0b3ce
-ms.openlocfilehash: ad0660d583e1bc23c19b0fbd1836eb952d778665
-ms.lasthandoff: 02/22/2017
+ms.sourcegitcommit: ca7c86466fa23fb21a932f26dc24e37c71cf29b4
+ms.openlocfilehash: 0fbc9ae8e067a3442135e436712c1dc47360e339
+ms.lasthandoff: 04/05/2017
 
 ---
 # <a name="idebugpointerobject"></a>IDebugPointerObject
 > [!IMPORTANT]
->  Dans Visual Studio 2015, ce moyen d’implémenter des évaluateurs d’expression est déconseillée. Pour plus d’informations sur l’implémentation des évaluateurs d’expression CLR, consultez [évaluateurs d’Expression CLR](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/CLR-Expression-Evaluators) et [exemple d’évaluateur d’Expression gérés](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/Managed-Expression-Evaluator-Sample).  
+>  Dans Visual Studio 2015, ce moyen d’implémenter des évaluateurs d’expression est déconseillée. Pour plus d’informations sur l’implémentation des évaluateurs d’expression CLR, consultez [évaluateurs d’Expression CLR](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/CLR-Expression-Evaluators) et [exemple d’évaluateur d’Expression managé](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/Managed-Expression-Evaluator-Sample).  
   
- Cette interface représente un objet pointeur.  
+ Cette interface représente un objet de pointeur.  
   
 ## <a name="syntax"></a>Syntaxe  
   
@@ -48,11 +48,11 @@ ms.lasthandoff: 02/22/2017
 IDebugPointerObject : IDebugObject  
 ```  
   
-## <a name="notes-for-implementers"></a>Notes relatives à l’attention des implémenteurs  
- L’évaluateur d’expression implémente cette interface pour représenter un objet pointeur.  
+## <a name="notes-for-implementers"></a>Notes pour les implémenteurs  
+ L’évaluateur d’expression implémente cette interface pour représenter un pointeur d’objet.  
   
 ## <a name="notes-for-callers"></a>Remarques pour les appelants  
- Le [IDebugObject](../../../extensibility/debugger/reference/idebugobject.md) interface peut obtenir cette interface à l’aide de [QueryInterface](/visual-cpp/atl/queryinterface) si la `IDebugObject` représente un pointeur.  
+ Le [IDebugObject](../../../extensibility/debugger/reference/idebugobject.md) interface pouvez obtenir cette interface à l’aide de [QueryInterface](/cpp/atl/queryinterface) si le `IDebugObject` représente un pointeur.  
   
 ## <a name="methods-in-vtable-order"></a>Méthodes dans l'ordre Vtable  
  Outre les méthodes héritées de [IDebugObject](../../../extensibility/debugger/reference/idebugobject.md), le `IDebugPointerObject` interface expose les méthodes suivantes.  
@@ -60,11 +60,11 @@ IDebugPointerObject : IDebugObject
 |Méthode|Description|  
 |------------|-----------------|  
 |[Suppression de la référence](../../../extensibility/debugger/reference/idebugpointerobject-dereference.md)|Obtient l’objet vers lequel pointe l’interface.|  
-|[GetBytes](../../../extensibility/debugger/reference/idebugpointerobject-getbytes.md)|Obtient la valeur à laquelle l’interface désigne comme une série d’octets consécutifs.|  
-|[SetBytes](../../../extensibility/debugger/reference/idebugpointerobject-setbytes.md)|Définit la valeur à laquelle l’interface pointe à partir d’une série d’octets consécutifs.|  
+|[GetBytes](../../../extensibility/debugger/reference/idebugpointerobject-getbytes.md)|Obtient la valeur à laquelle l’interface points sous la forme d’une série d’octets consécutifs.|  
+|[SetBytes](../../../extensibility/debugger/reference/idebugpointerobject-setbytes.md)|Définit la valeur à laquelle les points de l’interface à partir d’une série d’octets consécutifs.|  
   
-## <a name="remarks"></a>Notes  
- Un évaluateur d’expression utilise cette interface pour représenter un pointeur dans une arborescence d’analyse.  
+## <a name="remarks"></a>Remarques  
+ Évaluateur d’expression utilise cette interface pour représenter un pointeur dans une arborescence d’analyse.  
   
 ## <a name="requirements"></a>Spécifications  
  En-tête : ee.h  

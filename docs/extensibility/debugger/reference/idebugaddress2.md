@@ -31,13 +31,13 @@ translation.priority.mt:
 - zh-cn
 - zh-tw
 translationtype: Machine Translation
-ms.sourcegitcommit: 5db97d19b1b823388a465bba15d057b30ff0b3ce
-ms.openlocfilehash: 005911465f7ba78a3a6dcdf8249a96443cd12355
-ms.lasthandoff: 02/22/2017
+ms.sourcegitcommit: ca7c86466fa23fb21a932f26dc24e37c71cf29b4
+ms.openlocfilehash: e36f2863680dea79451e57d06bd749b52fbed933
+ms.lasthandoff: 04/05/2017
 
 ---
 # <a name="idebugaddress2"></a>IDebugAddress2
-Cette interface fournit l’accès à l’ID du processus qui possède l’objet dont l’adresse est représentée par cette interface.  
+Cette interface fournit l’accès à l’ID du processus qui est propriétaire de l’objet dont l’adresse est représentée par cette interface.  
   
 ## <a name="syntax"></a>Syntaxe  
   
@@ -45,18 +45,18 @@ Cette interface fournit l’accès à l’ID du processus qui possède l’objet
 IDebugAddress2 : IDebugAddress  
 ```  
   
-## <a name="notes-for-implementers"></a>Notes relatives à l’attention des implémenteurs  
- Un fournisseur de symboles implémente cette interface sur le même objet qui implémente le [IDebugAddress](../../../extensibility/debugger/reference/idebugaddress.md) interface. Cette interface fournit l’accès à l’ID du processus qui possède l’objet qui est associée à cette adresse.  
+## <a name="notes-for-implementers"></a>Notes pour les implémenteurs  
+ Un fournisseur de symbole implémente cette interface sur le même objet qui implémente le [IDebugAddress](../../../extensibility/debugger/reference/idebugaddress.md) interface. Cette interface fournit l’accès à l’ID du processus qui possède l’objet qui est associé à cette adresse.  
   
 ## <a name="notes-for-callers"></a>Remarques pour les appelants  
- Utilisez [QueryInterface](/visual-cpp/atl/queryinterface) pour obtenir cette interface à partir de la [IDebugAddress](../../../extensibility/debugger/reference/idebugaddress.md) interface.  
+ Utilisez [QueryInterface](/cpp/atl/queryinterface) pour obtenir cette interface à partir de la [IDebugAddress](../../../extensibility/debugger/reference/idebugaddress.md) interface.  
   
 ## <a name="methods-in-vtable-order"></a>Méthodes dans l’ordre de vtable  
  Outre les méthodes héritées de la [IDebugAddress](../../../extensibility/debugger/reference/idebugaddress.md) interface, cette interface implémente la méthode suivante :  
   
 |Méthode|Description|  
 |------------|-----------------|  
-|[GetProcessID](../../../extensibility/debugger/reference/idebugaddress2-getprocessid.md)|Récupère l’ID de processus qui possède l’objet représenté par cette interface.|  
+|[GetProcessID](../../../extensibility/debugger/reference/idebugaddress2-getprocessid.md)|Récupère l’ID du processus qui est propriétaire de l’objet représenté par cette interface.|  
   
 ## <a name="requirements"></a>Spécifications  
  En-tête : sh.h  

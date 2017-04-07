@@ -1,57 +1,73 @@
 ---
-title: "IDebugBreakpointRequest3 | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "IDebugBreakpointRequest3"
-helpviewer_keywords: 
-  - "IDebugBreakpointRequest3"
+title: IDebugBreakpointRequest3 | Documents Microsoft
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology:
+- vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords:
+- IDebugBreakpointRequest3
+helpviewer_keywords:
+- IDebugBreakpointRequest3
 ms.assetid: 8a042beb-b319-48e3-b3c8-9c8336ab371b
 caps.latest.revision: 8
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 8
----
-# IDebugBreakpointRequest3
-[!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]
+ms.author: gregvanl
+manager: ghogen
+translation.priority.mt:
+- cs-cz
+- de-de
+- es-es
+- fr-fr
+- it-it
+- ja-jp
+- ko-kr
+- pl-pl
+- pt-br
+- ru-ru
+- tr-tr
+- zh-cn
+- zh-tw
+translationtype: Machine Translation
+ms.sourcegitcommit: ca7c86466fa23fb21a932f26dc24e37c71cf29b4
+ms.openlocfilehash: 61307781f8d386e7011422c0df815d80113b95cd
+ms.lasthandoff: 04/05/2017
 
-cette interface représente les informations nécessaires pour créer et lier n'importe quel type de point d'arrêt.  Il s'agit d'une extension d' [IDebugBreakpointRequest2](../../../extensibility/debugger/reference/idebugbreakpointrequest2.md).  
+---
+# <a name="idebugbreakpointrequest3"></a>IDebugBreakpointRequest3
+Cette interface représente les informations nécessaires pour créer et lier n’importe quel type de point d’arrêt. Il s’agit d’une extension de [IDebugBreakpointRequest2](../../../extensibility/debugger/reference/idebugbreakpointrequest2.md).  
   
-## Syntaxe  
+## <a name="syntax"></a>Syntaxe  
   
 ```  
 IDebugBreakpointRequest3 : IDebugBreakpointRequest2  
 ```  
   
-## Remarques à l'intention des implémenteurs  
- Le gestionnaire de débogage de session \(SDM\) implémente généralement cette interface.  
+## <a name="notes-for-implementers"></a>Notes pour les implémenteurs  
+ En général, le Gestionnaire de session de débogage (SDM) implémente cette interface.  
   
-## Remarques pour les appelants  
- le moteur de débogage \(DE\) accède à cette interface en appelant [QueryInterface](/visual-cpp/atl/queryinterface) sur l'interface IDebugBreakpointRequest2 reçue dans un appel à [CreatePendingBreakpoint](../../../extensibility/debugger/reference/idebugengine2-creatependingbreakpoint.md).  
+## <a name="notes-for-callers"></a>Remarques pour les appelants  
+ Le moteur de débogage (DE) accède à cette interface en appelant [QueryInterface](/cpp/atl/queryinterface) sur l’interface IDebugBreakpointRequest2 reçu dans un appel à [CreatePendingBreakpoint](../../../extensibility/debugger/reference/idebugengine2-creatependingbreakpoint.md).  
   
-## méthodes en commande de Vtable  
- Outre les méthodes héritées de [IDebugBreakpointRequest2](../../../extensibility/debugger/reference/idebugbreakpointrequest2.md), l'interface `IDebugBreakpointRequest3` expose la méthode suivante.  
+## <a name="methods-in-vtable-order"></a>Méthodes dans l'ordre Vtable  
+ Outre les méthodes héritées de [IDebugBreakpointRequest2](../../../extensibility/debugger/reference/idebugbreakpointrequest2.md), le `IDebugBreakpointRequest3` interface expose la méthode suivante.  
   
 |Méthode|Description|  
-|-------------|-----------------|  
-|[GetRequestInfo2](../../../extensibility/debugger/reference/idebugbreakpointrequest3-getrequestinfo2.md)|Obtient les informations de requête de point d'arrêt qui décrivent cette requête de point d'arrêt.|  
+|------------|-----------------|  
+|[GetRequestInfo2](../../../extensibility/debugger/reference/idebugbreakpointrequest3-getrequestinfo2.md)|Obtient les informations de demande de point d’arrêt qui décrit cette demande de point d’arrêt.|  
   
-## Notes  
- Cette interface est utilisée pour fournir des informations supplémentaires au De dans la structure de [BP\_REQUEST\_INFO2](../../../extensibility/debugger/reference/bp-request-info2.md) .  Ces informations supplémentaires incluent l'ID du fournisseur De \(sous la forme de GUID\), le nom d'un point de trace, et le nom d'une contrainte de point d'arrêt.  
+## <a name="remarks"></a>Remarques  
+ Cette interface est utilisée pour fournir des informations supplémentaires pour le DE via le [BP_REQUEST_INFO2](../../../extensibility/debugger/reference/bp-request-info2.md) structure. Ces informations supplémentaires incluent l’ID de fournisseur de la DE (sous la forme d’un GUID), le nom d’un point de trace et le nom d’une contrainte de point d’arrêt.  
   
-## Configuration requise  
- en\-tête : msdbg.h  
+## <a name="requirements"></a>Spécifications  
+ En-tête : msdbg.h  
   
- l'espace de noms : Microsoft.VisualStudio.Debugger.Interop  
+ Namespace : Microsoft.VisualStudio.Debugger.Interop  
   
- Assembly : Microsoft.VisualStudio.Debugger.Interop.dll  
+ Assembly : Microsoft.VisualStudio.Debugger.Interop.dll  
   
-## Voir aussi  
+## <a name="see-also"></a>Voir aussi  
  [IDebugBreakpointRequest2](../../../extensibility/debugger/reference/idebugbreakpointrequest2.md)   
- [BP\_REQUEST\_INFO2](../../../extensibility/debugger/reference/bp-request-info2.md)
+ [BP_REQUEST_INFO2](../../../extensibility/debugger/reference/bp-request-info2.md)

@@ -31,13 +31,13 @@ translation.priority.mt:
 - zh-cn
 - zh-tw
 translationtype: Machine Translation
-ms.sourcegitcommit: 5db97d19b1b823388a465bba15d057b30ff0b3ce
-ms.openlocfilehash: 7e9573c4c039a335fc65776483760d06067d94ff
-ms.lasthandoff: 02/22/2017
+ms.sourcegitcommit: ca7c86466fa23fb21a932f26dc24e37c71cf29b4
+ms.openlocfilehash: b1feaad2478a39799dfc9239cef288553120bd6d
+ms.lasthandoff: 04/05/2017
 
 ---
 # <a name="idebugprogramengines2"></a>IDebugProgramEngines2
-Cette interface est utilisée par les nœuds de programme pour spécifier tous les moteurs de débogage possible (DE) que vous peuvent déboguer ce programme.  
+Cette interface est utilisée par les nœuds de programme pour spécifier tous les moteurs de débogage possible (DE) qui peuvent déboguer ce programme.  
   
 ## <a name="syntax"></a>Syntaxe  
   
@@ -45,11 +45,11 @@ Cette interface est utilisée par les nœuds de programme pour spécifier tous l
 IDebugProgramEngines2 : IUnknown  
 ```  
   
-## <a name="notes-for-implementers"></a>Notes relatives à l’attention des implémenteurs  
- Un DE ou d’un fournisseur de port personnalisé implémente cette interface sur le même objet qui implémente [IDebugProgramNode2](../../../extensibility/debugger/reference/idebugprogramnode2.md) pour prendre en charge l’établissement d’un DE spécifique à utiliser pour un programme particulier.  
+## <a name="notes-for-implementers"></a>Notes pour les implémenteurs  
+ Un DE ou d’un fournisseur de port personnalisé implémente cette interface sur le même objet qui implémente [IDebugProgramNode2](../../../extensibility/debugger/reference/idebugprogramnode2.md) pour prendre en charge de l’établissement d’un DE spécifique à utiliser pour un programme particulier.  
   
 ## <a name="notes-for-callers"></a>Remarques pour les appelants  
- Appelez [QueryInterface](/visual-cpp/atl/queryinterface) sur une `IDebugProgramNode2` interface pour obtenir cette interface.  
+ Appelez [QueryInterface](/cpp/atl/queryinterface) sur une `IDebugProgramNode2` interface pour obtenir cette interface.  
   
 ## <a name="methods-in-vtable-order"></a>Méthodes dans l'ordre Vtable  
  Le tableau suivant présente les méthodes de `IDebugProgramEngines2`.  
@@ -57,10 +57,10 @@ IDebugProgramEngines2 : IUnknown
 |Méthode|Description|  
 |------------|-----------------|  
 |[EnumPossibleEngines](../../../extensibility/debugger/reference/idebugprogramengines2-enumpossibleengines.md)|Indique tous les possibles DEs qui peut déboguer ce programme.|  
-|[SetEngine](../../../extensibility/debugger/reference/idebugprogramengines2-setengine.md)|Sélectionne le DE à utiliser pour le débogage de ce programme.|  
+|[SetEngine](../../../extensibility/debugger/reference/idebugprogramengines2-setengine.md)|Sélectionne le DE à utiliser pour déboguer ce programme.|  
   
-## <a name="remarks"></a>Notes  
- Une fois un D’est choisi par l’utilisateur, ce choix est enregistré avec le nœud de programme en appelant [SetEngine](../../../extensibility/debugger/reference/idebugprogramengines2-setengine.md). Le moteur sélectionné devient le moteur retourné par [GetEngineInfo](../../../extensibility/debugger/reference/idebugprogramnode2-getengineinfo.md).  
+## <a name="remarks"></a>Remarques  
+ Une fois qu’un D’est choisi par l’utilisateur, ce choix est inscrit avec le nœud de programme en appelant [SetEngine](../../../extensibility/debugger/reference/idebugprogramengines2-setengine.md). Le moteur sélectionné devient le moteur retourné par [GetEngineInfo](../../../extensibility/debugger/reference/idebugprogramnode2-getengineinfo.md).  
   
 ## <a name="requirements"></a>Spécifications  
  En-tête : msdbg.h  

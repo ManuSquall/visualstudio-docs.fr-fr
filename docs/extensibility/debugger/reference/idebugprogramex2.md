@@ -1,58 +1,74 @@
 ---
-title: "IDebugProgramEx2 | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "IDebugProgramEx2"
-helpviewer_keywords: 
-  - "Interface de IDebugProgramEx2"
+title: IDebugProgramEx2 | Documents Microsoft
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology:
+- vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords:
+- IDebugProgramEx2
+helpviewer_keywords:
+- IDebugProgramEx2 interface
 ms.assetid: 663359ed-635a-4539-addb-0cc52f19d1bd
 caps.latest.revision: 18
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 18
----
-# IDebugProgramEx2
-[!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]
+ms.author: gregvanl
+manager: ghogen
+translation.priority.mt:
+- cs-cz
+- de-de
+- es-es
+- fr-fr
+- it-it
+- ja-jp
+- ko-kr
+- pl-pl
+- pt-br
+- ru-ru
+- tr-tr
+- zh-cn
+- zh-tw
+translationtype: Machine Translation
+ms.sourcegitcommit: ca7c86466fa23fb21a932f26dc24e37c71cf29b4
+ms.openlocfilehash: 55781c5d1f0fc15c505394fb08291a058de71247
+ms.lasthandoff: 04/05/2017
 
-Cette interface permet au gestionnaire de débogage de session \(SDM\) attacher le débogueur à un programme et obtenir le nœud de programmation associé à un programme.  
+---
+# <a name="idebugprogramex2"></a>IDebugProgramEx2
+Cette interface permet à la session de débogage responsable de la joindre à un programme et obtenir le nœud de programme associé à un programme.  
   
-## Syntaxe  
+## <a name="syntax"></a>Syntaxe  
   
 ```  
 IDebugProgramEx2 : IUnknown  
 ```  
   
-## Remarques à l'intention des implémenteurs  
- Un fournisseur de port implémente cette interface sur le même objet que l'interface d' [IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md) afin de permettre l'attachement de SDM à un programme pendant qu'en même temps que le fournisseur de port pour suivre les sessions se joignait au programme.  Le fournisseur de port peut implémenter cette interface s'il choisit.  
+## <a name="notes-for-implementers"></a>Notes pour les implémenteurs  
+ Un fournisseur de port personnalisé implémente cette interface sur le même objet que le [IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md) interface afin de permettre le SDM attacher un programme tout en autorisant le fournisseur de port effectuer le suivi de toutes les sessions attachée au programme. Le fournisseur de port personnalisé peut implémenter cette interface si elle choisit.  
   
-## Remarques pour les appelants  
- Le SDM appelle [QueryInterface](/visual-cpp/atl/queryinterface) sur une interface d' `IDebugProgram2` pour obtenir cette interface pour suivre les sessions qui se sont attachées aux programmes.  
+## <a name="notes-for-callers"></a>Remarques pour les appelants  
+ Les appels SDM [QueryInterface](/cpp/atl/queryinterface) sur une `IDebugProgram2` interface pour obtenir cette interface pour effectuer le suivi des sessions qui ont associés à des programmes.  
   
-## méthodes en commande de Vtable  
- Le tableau suivant répertorie les méthodes d' `IDebugProgramEx2`.  
+## <a name="methods-in-vtable-order"></a>Méthodes dans l'ordre Vtable  
+ Le tableau suivant présente les méthodes de `IDebugProgramEx2`.  
   
 |Méthode|Description|  
-|-------------|-----------------|  
-|[Attach](../../../extensibility/debugger/reference/idebugprogramex2-attach.md)|joint un programme à une session.|  
-|[GetProgramNode](../../../extensibility/debugger/reference/idebugprogramex2-getprogramnode.md)|Obtient le nœud de programmation associé à un programme.|  
+|------------|-----------------|  
+|[Attacher](../../../extensibility/debugger/reference/idebugprogramex2-attach.md)|Attache un programme à une session.|  
+|[GetProgramNode](../../../extensibility/debugger/reference/idebugprogramex2-getprogramnode.md)|Obtient le nœud de programme associé à un programme.|  
   
-## Notes  
- cette interface est privée entre le SDM et le programme.  
+## <a name="remarks"></a>Remarques  
+ Cette interface est privée entre le SDM et le programme.  
   
-## Configuration requise  
- en\-tête : Portpriv.h  
+## <a name="requirements"></a>Spécifications  
+ En-tête : Portpriv.h  
   
- l'espace de noms : Microsoft.VisualStudio.Debugger.Interop  
+ Namespace : Microsoft.VisualStudio.Debugger.Interop  
   
- Assembly : Microsoft.VisualStudio.Debugger.Interop.dll  
+ Assembly : Microsoft.VisualStudio.Debugger.Interop.dll  
   
-## Voir aussi  
+## <a name="see-also"></a>Voir aussi  
  [Interfaces de base](../../../extensibility/debugger/reference/core-interfaces.md)   
  [IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md)

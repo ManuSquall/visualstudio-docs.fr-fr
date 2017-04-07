@@ -1,58 +1,74 @@
 ---
-title: "IDebugPointerField | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "IDebugPointerField"
-helpviewer_keywords: 
-  - "Interface de IDebugPointerField"
+title: IDebugPointerField | Documents Microsoft
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology:
+- vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords:
+- IDebugPointerField
+helpviewer_keywords:
+- IDebugPointerField interface
 ms.assetid: d51bd5b2-f18e-4e27-b4fb-e6f652fbf635
 caps.latest.revision: 8
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 8
----
-# IDebugPointerField
-[!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]
+ms.author: gregvanl
+manager: ghogen
+translation.priority.mt:
+- cs-cz
+- de-de
+- es-es
+- fr-fr
+- it-it
+- ja-jp
+- ko-kr
+- pl-pl
+- pt-br
+- ru-ru
+- tr-tr
+- zh-cn
+- zh-tw
+translationtype: Machine Translation
+ms.sourcegitcommit: ca7c86466fa23fb21a932f26dc24e37c71cf29b4
+ms.openlocfilehash: 82656209181d02aa6514def10af1cff17ae1bcf5
+ms.lasthandoff: 04/05/2017
 
-cette interface représente un type pointeur.  
+---
+# <a name="idebugpointerfield"></a>IDebugPointerField
+Cette interface représente un type pointeur.  
   
-## Syntaxe  
+## <a name="syntax"></a>Syntaxe  
   
 ```  
 IDebugPointerField : IDebugContainerField  
 ```  
   
-## Remarques à l'intention des implémenteurs  
- le fournisseur de symbole implémente cette interface pour représenter un pointeur.  
+## <a name="notes-for-implementers"></a>Notes pour les implémenteurs  
+ Le fournisseur de symbole implémente cette interface pour représenter un pointeur.  
   
-## Remarques pour les appelants  
- Utilisation [QueryInterface](/visual-cpp/atl/queryinterface) d'obtenir cette interface de l'interface d' [IDebugField](../../../extensibility/debugger/reference/idebugfield.md) si [GetKind](../Topic/IDebugField::GetKind.md) retourne `FIELD_TYPE_POINTER`.  
+## <a name="notes-for-callers"></a>Remarques pour les appelants  
+ Utilisez [QueryInterface](/cpp/atl/queryinterface) pour obtenir cette interface à partir de la [IDebugField](../../../extensibility/debugger/reference/idebugfield.md) interface si [GetKind](../../../extensibility/debugger/reference/idebugfield-getkind.md) retourne `FIELD_TYPE_POINTER`.  
   
-## méthodes en commande de Vtable  
- En plus de les méthodes sur des interfaces d' `IDebugField` et d' `IDebugContainerField` , cette interface implémente la méthode suivante :  
+## <a name="methods-in-vtable-order"></a>Méthodes dans l’ordre Vtable  
+ Outre les méthodes sur le `IDebugField` et `IDebugContainerField` interfaces, cette interface implémente la méthode suivante :  
   
 |Méthode|Description|  
-|-------------|-----------------|  
-|[GetDereferencedField](../../../extensibility/debugger/reference/idebugpointerfield-getdereferencedfield.md)|Retourne [IDebugField](../../../extensibility/debugger/reference/idebugfield.md) décrivant la cible du pointeur.|  
+|------------|-----------------|  
+|[GetDereferencedField](../../../extensibility/debugger/reference/idebugpointerfield-getdereferencedfield.md)|Retourne un [IDebugField](../../../extensibility/debugger/reference/idebugfield.md) décrivant la cible du pointeur.|  
   
-## Notes  
- En C\/C\+\+, un pointeur peut être un conteneur s'il est utilisé avec la notation de tableau.  Par exemple, si `char *pString`, `pString` possède un type de pointeur vers `char`.  `pString[3]` a le type d'un conteneur qui est un pointeur vers `char` qui référence le quatrième élément de ce conteneur.  
+## <a name="remarks"></a>Remarques  
+ En C/C++, un pointeur peut être un conteneur s’il est utilisé avec la notation de tableau. Par exemple, prenons `char *pString`, `pString` a un type de pointeur vers `char`. `pString[3]`a le type d’un conteneur qui est un pointeur vers `char` qui référence le quatrième élément du conteneur.  
   
-## Configuration requise  
- en\-tête : sh.h  
+## <a name="requirements"></a>Spécifications  
+ En-tête : sh.h  
   
- l'espace de noms : Microsoft.VisualStudio.Debugger.Interop  
+ Namespace : Microsoft.VisualStudio.Debugger.Interop  
   
- Assembly : Microsoft.VisualStudio.Debugger.Interop.dll  
+ Assembly : Microsoft.VisualStudio.Debugger.Interop.dll  
   
-## Voir aussi  
+## <a name="see-also"></a>Voir aussi  
  [Interfaces de fournisseur de symboles](../../../extensibility/debugger/reference/symbol-provider-interfaces.md)   
  [IDebugField](../../../extensibility/debugger/reference/idebugfield.md)   
  [IDebugContainerField](../../../extensibility/debugger/reference/idebugcontainerfield.md)

@@ -1,58 +1,74 @@
 ---
-title: "IDebugPropertyField | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "IDebugPropertyField"
-helpviewer_keywords: 
-  - "Interface de IDebugPropertyField"
+title: IDebugPropertyField | Documents Microsoft
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology:
+- vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords:
+- IDebugPropertyField
+helpviewer_keywords:
+- IDebugPropertyField interface
 ms.assetid: b50edb2c-fb8d-4def-993d-17d23d2027c1
 caps.latest.revision: 11
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 11
----
-# IDebugPropertyField
-[!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]
+ms.author: gregvanl
+manager: ghogen
+translation.priority.mt:
+- cs-cz
+- de-de
+- es-es
+- fr-fr
+- it-it
+- ja-jp
+- ko-kr
+- pl-pl
+- pt-br
+- ru-ru
+- tr-tr
+- zh-cn
+- zh-tw
+translationtype: Machine Translation
+ms.sourcegitcommit: ca7c86466fa23fb21a932f26dc24e37c71cf29b4
+ms.openlocfilehash: cbb7047dc06feebc82c49b9d6a549babd7463852
+ms.lasthandoff: 04/05/2017
 
-Cette interface fournit les fonctions qui permettent d'obtenir et de définir une propriété.  
+---
+# <a name="idebugpropertyfield"></a>IDebugPropertyField
+Cette interface fournit les fonctions qui permettent d’obtenir et de définir une propriété.  
   
-## Syntaxe  
+## <a name="syntax"></a>Syntaxe  
   
 ```  
-IDebugPropertyField : IDebugContainerField  
+IDebugPropertyField : IDebugContainerField  
 ```  
   
-## Remarques à l'intention des implémenteurs  
- un fournisseur de symbole implémente cette interface sur le même objet qui implémente [IDebugContainerField](../../../extensibility/debugger/reference/idebugcontainerfield.md).  cette interface est une spécialisation qui prend en charge le concept des propriétés sur une classe.  
+## <a name="notes-for-implementers"></a>Notes pour les implémenteurs  
+ Un fournisseur de symbole implémente cette interface sur le même objet qui implémente le [IDebugContainerField](../../../extensibility/debugger/reference/idebugcontainerfield.md). Cette interface est une spécialisation qui prend en charge le concept des propriétés sur une classe.  
   
-## Remarques pour les appelants  
- Utilisation [QueryInterface](/visual-cpp/atl/queryinterface) d'obtenir cette interface de l'interface d' [IDebugContainerField](../../../extensibility/debugger/reference/idebugcontainerfield.md) si la méthode d' [GetKind](../Topic/IDebugField::GetKind.md) retourne `FIELD_KIND_PROP`.  
+## <a name="notes-for-callers"></a>Remarques pour les appelants  
+ Utilisez [QueryInterface](/cpp/atl/queryinterface) pour obtenir cette interface à partir de la [IDebugContainerField](../../../extensibility/debugger/reference/idebugcontainerfield.md) interface si le [GetKind](../../../extensibility/debugger/reference/idebugfield-getkind.md) méthode renvoie `FIELD_KIND_PROP`.  
   
-## méthodes en commande de Vtable  
- En plus de les méthodes sur des interfaces d' [IDebugField](../../../extensibility/debugger/reference/idebugfield.md) et d' [IDebugContainerField](../../../extensibility/debugger/reference/idebugcontainerfield.md) , cette interface implémente les méthodes suivantes :  
+## <a name="methods-in-vtable-order"></a>Méthodes dans l'ordre Vtable  
+ Outre les méthodes sur le [IDebugField](../../../extensibility/debugger/reference/idebugfield.md) et [IDebugContainerField](../../../extensibility/debugger/reference/idebugcontainerfield.md) interfaces, cette interface implémente les méthodes suivantes :  
   
 |Méthode|Description|  
-|-------------|-----------------|  
-|[GetPropertyGetter](../../../extensibility/debugger/reference/idebugpropertyfield-getpropertygetter.md)|Obtient la méthode qui reçoit la propriété.|  
-|[GetPropertySetter](../../../extensibility/debugger/reference/idebugpropertyfield-getpropertysetter.md)|obtient la méthode qui définit la propriété.|  
+|------------|-----------------|  
+|[GetPropertyGetter](../../../extensibility/debugger/reference/idebugpropertyfield-getpropertygetter.md)|Obtient la méthode qui obtient la propriété.|  
+|[GetPropertySetter](../../../extensibility/debugger/reference/idebugpropertyfield-getpropertysetter.md)|Obtient la méthode qui définit la propriété.|  
   
-## Notes  
- Une propriété est un concept de code managé et représente une méthode qui est traitée comme une variable.  Les propriétés n'existent pas dans le code C\+\+ non managé.  
+## <a name="remarks"></a>Notes  
+ Une propriété est un concept de code managé et représente une méthode qui est traitée comme une variable. Propriétés n’existent pas dans le code C++ non managé.  
   
-## Configuration requise  
- en\-tête : sh.h  
+## <a name="requirements"></a>Spécifications  
+ En-tête : sh.h  
   
- l'espace de noms : Microsoft.VisualStudio.Debugger.Interop  
+ Namespace : Microsoft.VisualStudio.Debugger.Interop  
   
- Assembly : Microsoft.VisualStudio.Debugger.Interop.dll  
+ Assembly : Microsoft.VisualStudio.Debugger.Interop.dll  
   
-## Voir aussi  
+## <a name="see-also"></a>Voir aussi  
  [Interfaces de fournisseur de symboles](../../../extensibility/debugger/reference/symbol-provider-interfaces.md)   
  [IDebugContainerField](../../../extensibility/debugger/reference/idebugcontainerfield.md)

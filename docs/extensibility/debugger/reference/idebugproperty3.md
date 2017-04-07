@@ -1,72 +1,88 @@
 ---
-title: "IDebugProperty3 | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "IDebugProperty3"
-helpviewer_keywords: 
-  - "Interface de IDebugProperty3"
+title: IDebugProperty3 | Documents Microsoft
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology:
+- vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords:
+- IDebugProperty3
+helpviewer_keywords:
+- IDebugProperty3 interface
 ms.assetid: 8f9be68d-4490-4eca-8f6b-8a10ed77e226
 caps.latest.revision: 12
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 12
----
-# IDebugProperty3
-[!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]
+ms.author: gregvanl
+manager: ghogen
+translation.priority.mt:
+- cs-cz
+- de-de
+- es-es
+- fr-fr
+- it-it
+- ja-jp
+- ko-kr
+- pl-pl
+- pt-br
+- ru-ru
+- tr-tr
+- zh-cn
+- zh-tw
+translationtype: Machine Translation
+ms.sourcegitcommit: ca7c86466fa23fb21a932f26dc24e37c71cf29b4
+ms.openlocfilehash: 295baf524d3b1261826090164ccdf657b9672122
+ms.lasthandoff: 04/05/2017
 
-Cette interface fournit une prise en charge pour :  
+---
+# <a name="idebugproperty3"></a>IDebugProperty3
+Cette interface prend en charge :  
   
--   Extrayant arbitrairement une longue chaîne associée à la propriété.  
+-   Récupération d’une chaîne de longueur arbitraire associée à la propriété.  
   
--   Associer un identificateur unique à la propriété.  
+-   Association d’un ID unique à la propriété.  
   
--   Récupérer une liste de visionneuses personnalisées pour la propriété.  
+-   Récupération d’une liste des visionneuses personnalisées pour la propriété.  
   
--   Définir la valeur d'une propriété avec la capacité à stocker toutes erreurs résultante  
+-   La valeur d’une propriété avec la capacité à signaler les erreurs rencontrées  
   
-## Syntaxe  
+## <a name="syntax"></a>Syntaxe  
   
 ```  
 IDebugProperty3 : IDebugProperty2  
 ```  
   
-## Remarques à l'intention des implémenteurs  
- Le moteur \(DE\) de débogage implémente cette interface sur le même objet qui implémente [IDebugProperty2](../../../extensibility/debugger/reference/idebugproperty2.md) de fournir une prise en charge des chaînes longues, les identificateurs de propriété, et des visionneuses personnalisées.  
+## <a name="notes-for-implementers"></a>Notes pour les implémenteurs  
+ Le moteur de débogage (DE) implémente cette interface sur le même objet qui implémente [IDebugProperty2](../../../extensibility/debugger/reference/idebugproperty2.md) pour prendre en charge des chaînes longues, les identificateurs de propriété et les visionneuses personnalisées.  
   
-## Remarques pour les appelants  
- Appelez [QueryInterface](/visual-cpp/atl/queryinterface) à une interface de `IDebugProperty2` pour obtenir cette interface.  
+## <a name="notes-for-callers"></a>Remarques pour les appelants  
+ Appelez [QueryInterface](/cpp/atl/queryinterface) sur une `IDebugProperty2` interface pour obtenir cette interface.  
   
-## méthodes en commande de Vtable  
- Outre les méthodes héritées de `IDebugProperty2`, l'interface `IDebugProperty3` expose les méthodes suivantes.  
+## <a name="methods-in-vtable-order"></a>Méthodes dans l'ordre Vtable  
+ Outre les méthodes héritées de `IDebugProperty2`, le `IDebugProperty3` interface expose les méthodes suivantes.  
   
 |Méthode|Description|  
-|-------------|-----------------|  
+|------------|-----------------|  
 |[GetStringCharLength](../../../extensibility/debugger/reference/idebugproperty3-getstringcharlength.md)|Retourne la longueur de la chaîne associée à la propriété.|  
-|[GetStringChars](../Topic/IDebugProperty3::GetStringChars.md)|Retourne la chaîne dans une mémoire tampon fournie par l'utilisateur.|  
-|[CreateObjectID](../../../extensibility/debugger/reference/idebugproperty3-createobjectid.md)|crée un identificateur unique pour cette propriété.|  
-|[DestroyObjectID](../../../extensibility/debugger/reference/idebugproperty3-destroyobjectid.md)|détruit l'identificateur unique pour cette propriété.|  
-|[GetCustomViewerCount](../Topic/IDebugProperty3::GetCustomViewerCount.md)|retourne le nombre de visionneuses personnalisées que cette propriété peut être affichée avec.|  
-|[GetCustomViewerList](../../../extensibility/debugger/reference/idebugproperty3-getcustomviewerlist.md)|Retourne la liste des visionneuses personnalisées que cette propriété peut être affichée avec.|  
-|[SetValueAsStringWithError](../../../extensibility/debugger/reference/idebugproperty3-setvalueasstringwitherror.md)|Définit la valeur de cette propriété, qui retourne un message d'erreur si un élément disparaissait erroné.|  
+|[GetStringChars](../../../extensibility/debugger/reference/idebugproperty3-getstringchars.md)|Retourne la chaîne dans une mémoire tampon fournie par l’utilisateur.|  
+|[CreateObjectID](../../../extensibility/debugger/reference/idebugproperty3-createobjectid.md)|Crée un ID unique pour cette propriété.|  
+|[DestroyObjectID](../../../extensibility/debugger/reference/idebugproperty3-destroyobjectid.md)|Détruit l’ID unique pour cette propriété.|  
+|[GetCustomViewerCount](../../../extensibility/debugger/reference/idebugproperty3-getcustomviewercount.md)|Retourne le nombre de visionneuses personnalisées pour cette propriété peut être affichée avec.|  
+|[GetCustomViewerList](../../../extensibility/debugger/reference/idebugproperty3-getcustomviewerlist.md)|Retourne la liste des visionneuses personnalisées pour cette propriété peut être affichée avec.|  
+|[SetValueAsStringWithError](../../../extensibility/debugger/reference/idebugproperty3-setvalueasstringwitherror.md)|Définit la valeur de cette propriété, en retournant un message d’erreur si tout est survenu.|  
   
-## Notes  
- [SetValueAsStringWithError](../../../extensibility/debugger/reference/idebugproperty3-setvalueasstringwitherror.md) est la meilleure méthode pour que le gestionnaire de débogage de session \(SDM\) afin de définir une valeur de propriété.  
+## <a name="remarks"></a>Remarques  
+ [SetValueAsStringWithError](../../../extensibility/debugger/reference/idebugproperty3-setvalueasstringwitherror.md) constitue le meilleur moyen pour le Gestionnaire de session de débogage (SDM) pour définir une valeur de propriété.  
   
-## Configuration requise  
- en\-tête : msdbg.h  
+## <a name="requirements"></a>Spécifications  
+ En-tête : msdbg.h  
   
- l'espace de noms : Microsoft.VisualStudio.Debugger.Interop  
+ Namespace : Microsoft.VisualStudio.Debugger.Interop  
   
- Assembly : Microsoft.VisualStudio.Debugger.Interop.dll  
+ Assembly : Microsoft.VisualStudio.Debugger.Interop.dll  
   
-## Voir aussi  
+## <a name="see-also"></a>Voir aussi  
  [Interfaces de base](../../../extensibility/debugger/reference/core-interfaces.md)   
  [IDebugProperty2](../../../extensibility/debugger/reference/idebugproperty2.md)   
  [IDebugCustomViewer](../../../extensibility/debugger/reference/idebugcustomviewer.md)

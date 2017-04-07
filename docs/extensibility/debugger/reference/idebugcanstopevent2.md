@@ -1,62 +1,78 @@
 ---
-title: "IDebugCanStopEvent2 | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "IDebugCanStopEvent2"
-helpviewer_keywords: 
-  - "Interface de IDebugBreakpointRequest2"
+title: IDebugCanStopEvent2 | Documents Microsoft
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology:
+- vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords:
+- IDebugCanStopEvent2
+helpviewer_keywords:
+- IDebugBreakpointRequest2 interface
 ms.assetid: 784bd5b1-4a3f-4455-b313-c4c9a82555a5
 caps.latest.revision: 11
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 11
----
-# IDebugCanStopEvent2
-[!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]
+ms.author: gregvanl
+manager: ghogen
+translation.priority.mt:
+- cs-cz
+- de-de
+- es-es
+- fr-fr
+- it-it
+- ja-jp
+- ko-kr
+- pl-pl
+- pt-br
+- ru-ru
+- tr-tr
+- zh-cn
+- zh-tw
+translationtype: Machine Translation
+ms.sourcegitcommit: ca7c86466fa23fb21a932f26dc24e37c71cf29b4
+ms.openlocfilehash: 00cfe8409762119c15cbe188b1a20b7a6466ea4a
+ms.lasthandoff: 04/05/2017
 
-Cette interface est utilisée pour indiquer au gestionnaire de débogage de \(SDM\) session s'arrêter à l'emplacement actuel du code.  
+---
+# <a name="idebugcanstopevent2"></a>IDebugCanStopEvent2
+Cette interface est utilisée pour demander le Gestionnaire de session de débogage (SDM) s’il faut arrêter à l’emplacement du code en cours.  
   
-## Syntaxe  
+## <a name="syntax"></a>Syntaxe  
   
 ```  
 IDebugCanStopEvent2 : IUknown  
 ```  
   
-## Remarques à l'intention des implémenteurs  
- Le moteur de \(DE\) débogage implémente cette interface pour prendre en charge la progression au code source.  L'interface d' [IDebugEvent2](../../../extensibility/debugger/reference/idebugevent2.md) doit être implémentée sur le même objet que cette interface \(le SDM utilise [QueryInterface](/visual-cpp/atl/queryinterface) pour accéder à l'interface d' `IDebugEvent2` \).  
+## <a name="notes-for-implementers"></a>Notes pour les implémenteurs  
+ Le moteur de débogage (DE) implémente cette interface pour prendre en charge le pas à pas détaillé dans le code source. Le [IDebugEvent2](../../../extensibility/debugger/reference/idebugevent2.md) interface doit être implémentée sur le même objet que cette interface (le SDM utilise [QueryInterface](/cpp/atl/queryinterface) pour accéder à la `IDebugEvent2` interface).  
   
- l'implémentation de cette interface doit communiquer l'appel du SDM d' [CanStop](../../../extensibility/debugger/reference/idebugcanstopevent2-canstop.md) au moteur de débogage.  Par exemple, vous pouvez le faire avec un message publié sur le thread de gestion des messages du moteur de débogage ou l'objet qui implémente cette interface peut contenir une référence au moteur de débogage et à l'appel au moteur de débogage avec l'indicateur passée dans `IDebugCanStopEvent2::CanStop`.  
+ L’implémentation de cette interface doit communiquer l’appel de la SDM de [CanStop](../../../extensibility/debugger/reference/idebugcanstopevent2-canstop.md) pour le moteur de débogage. Par exemple, cela est possible avec un message publié sur le thread des messages du moteur de débogage ou de l’objet qui implémente cette interface peut contenir une référence au moteur de débogage et rappeler dans le moteur de débogage avec l’indicateur passé dans `IDebugCanStopEvent2::CanStop`.  
   
-## Remarques pour les appelants  
- Le De peut envoyer cette méthode chaque fois que le du est pour reprendre l'exécution et De parcourt code.  Cet événement est envoyé à l'aide de la fonction de rappel d' [IDebugEventCallback2](../../../extensibility/debugger/reference/idebugeventcallback2.md) fournie par le SDM lorsqu'il est attaché au programme en cours de débogage.  
+## <a name="notes-for-callers"></a>Remarques pour les appelants  
+ Le DE peut envoyer cette méthode chaque fois que la D’est invitée à continuer l’exécution et DE est parcours du code. Cet événement est envoyé à l’aide de la [IDebugEventCallback2](../../../extensibility/debugger/reference/idebugeventcallback2.md) fonction de rappel fournie par le SDM lorsqu’il est attaché au programme en cours de débogage.  
   
-## méthodes en commande de Vtable  
- Le tableau suivant répertorie les méthodes d' `IDebugCanStopEvent2`.  
+## <a name="methods-in-vtable-order"></a>Méthodes dans l'ordre Vtable  
+ Le tableau suivant présente les méthodes de `IDebugCanStopEvent2`.  
   
 |Méthode|Description|  
-|-------------|-----------------|  
-|[GetReason](../Topic/IDebugCanStopEvent2::GetReason.md)|obtient la raison pour cet événement.|  
-|[CanStop](../../../extensibility/debugger/reference/idebugcanstopevent2-canstop.md)|Spécifie si le programme débogué doit arrêter à l'emplacement de cet événement \(et envoyer un événement qui décrit la raison pour arrêter\) ou simplement continuer l'exécution.|  
-|[GetDocumentContext](../../../extensibility/debugger/reference/idebugcanstopevent2-getdocumentcontext.md)|obtient le contexte de document qui décrit l'emplacement de cet événement.|  
-|[GetCodeContext](../../../extensibility/debugger/reference/idebugcanstopevent2-getcodecontext.md)|obtient le contexte de code qui décrit l'emplacement de cet événement.|  
+|------------|-----------------|  
+|[GetReason](../../../extensibility/debugger/reference/idebugcanstopevent2-getreason.md)|Obtient la raison de cet événement.|  
+|[CanStop](../../../extensibility/debugger/reference/idebugcanstopevent2-canstop.md)|Spécifie si le programme en cours de débogage doit s’arrêter à l’emplacement de cet événement (et envoyer un événement qui décrit la raison de l’arrêt) ou simplement de poursuivre l’exécution.|  
+|[GetDocumentContext](../../../extensibility/debugger/reference/idebugcanstopevent2-getdocumentcontext.md)|Obtient le contexte de document qui décrit l’emplacement de cet événement.|  
+|[GetCodeContext](../../../extensibility/debugger/reference/idebugcanstopevent2-getcodecontext.md)|Obtient le contexte de code qui décrit l’emplacement de cet événement.|  
   
-## Notes  
- Le De envoie cette interface si l'utilisateur effectue un pas \- à \- pas détaillé dans une fonction et De ne trouve pas d'informations de débogage là ou les informations de débogage existent mais le De ne sait pas si le code source peut être affiché pour cet emplacement.  
+## <a name="remarks"></a>Remarques  
+ Le D’envoie cette interface si les étapes de l’utilisateur dans une fonction et DE ne recherche aucune information de débogage il ou les informations de débogage existent mais le DE ne sait pas si le code source peut être affiché pour cet emplacement.  
   
-## Configuration requise  
- en\-tête : msdbg.h  
+## <a name="requirements"></a>Spécifications  
+ En-tête : msdbg.h  
   
- l'espace de noms : Microsoft.VisualStudio.Debugger.Interop  
+ Namespace : Microsoft.VisualStudio.Debugger.Interop  
   
- Assembly : Microsoft.VisualStudio.Debugger.Interop.dll  
+ Assembly : Microsoft.VisualStudio.Debugger.Interop.dll  
   
-## Voir aussi  
+## <a name="see-also"></a>Voir aussi  
  [IDebugStepCompleteEvent2](../../../extensibility/debugger/reference/idebugstepcompleteevent2.md)   
  [IDebugEventCallback2](../../../extensibility/debugger/reference/idebugeventcallback2.md)

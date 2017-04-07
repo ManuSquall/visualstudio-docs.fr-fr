@@ -31,9 +31,9 @@ translation.priority.mt:
 - zh-cn
 - zh-tw
 translationtype: Machine Translation
-ms.sourcegitcommit: 5db97d19b1b823388a465bba15d057b30ff0b3ce
-ms.openlocfilehash: 7cf087725f8cfcb8ba53da739706ededcddb61c4
-ms.lasthandoff: 02/22/2017
+ms.sourcegitcommit: ca7c86466fa23fb21a932f26dc24e37c71cf29b4
+ms.openlocfilehash: a91b491aeb234a20dc601950c5ff8a436b1be90a
+ms.lasthandoff: 04/05/2017
 
 ---
 # <a name="idebugcontainerfield"></a>IDebugContainerField
@@ -45,11 +45,11 @@ Cette interface représente un symbole ou un type qui est un conteneur pour d’
 IDebugContainerField : IDebugField  
 ```  
   
-## <a name="notes-for-implementers"></a>Notes relatives à l’attention des implémenteurs  
- Un fournisseur de symboles implémente cette interface sur le même objet qui implémente le [IDebugField](../../../extensibility/debugger/reference/idebugfield.md) interface. Cette interface est également la classe de base pour toutes les interfaces qui représentent des conteneurs.  
+## <a name="notes-for-implementers"></a>Notes pour les implémenteurs  
+ Un fournisseur de symbole implémente cette interface sur le même objet qui implémente le [IDebugField](../../../extensibility/debugger/reference/idebugfield.md) interface. Cette interface est également la classe de base pour toutes les interfaces qui représentent des conteneurs.  
   
 ## <a name="notes-for-callers"></a>Remarques pour les appelants  
- De nombreuses méthodes de nombreuses interfaces retournent cette interface. Comme il s’agit d’une classe de base pour tous les conteneurs, des interfaces plus spécialisées peut obtenu à partir de cette interface à l’aide de [QueryInterface](/visual-cpp/atl/queryinterface). Ces interfaces comprennent [IDebugArrayField](../../../extensibility/debugger/reference/idebugarrayfield.md), [IDebugClassField](../../../extensibility/debugger/reference/idebugclassfield.md), [IDebugMethodField](../../../extensibility/debugger/reference/idebugmethodfield.md), et [IDebugPropertyField](../../../extensibility/debugger/reference/idebugpropertyfield.md).  
+ De nombreuses méthodes de nombreuses interfaces retournent cette interface. Car il s’agit d’une classe de base pour tous les conteneurs, des interfaces plus spécialisées peut obtenu à partir de cette interface à l’aide de [QueryInterface](/cpp/atl/queryinterface). Ces interfaces incluent [IDebugArrayField](../../../extensibility/debugger/reference/idebugarrayfield.md), [IDebugClassField](../../../extensibility/debugger/reference/idebugclassfield.md), [IDebugMethodField](../../../extensibility/debugger/reference/idebugmethodfield.md), et [IDebugPropertyField](../../../extensibility/debugger/reference/idebugpropertyfield.md).  
   
 ## <a name="methods-in-vtable-order"></a>Méthodes dans l'ordre Vtable  
  Outre les méthodes sur le [IDebugField](../../../extensibility/debugger/reference/idebugfield.md) interface, cette interface implémente la méthode suivante :  
@@ -58,7 +58,7 @@ IDebugContainerField : IDebugField
 |------------|-----------------|  
 |[EnumFields](../../../extensibility/debugger/reference/idebugcontainerfield-enumfields.md)|Crée un énumérateur pour les champs du conteneur.|  
   
-## <a name="remarks"></a>Remarques  
+## <a name="remarks"></a>Notes  
  Tableaux (conteneurs pour les variables), les classes (conteneurs pour les méthodes et variables) et les méthodes (conteneurs pour les paramètres et variables locales) sont des exemples de conteneurs.  
   
 ## <a name="requirements"></a>Spécifications  

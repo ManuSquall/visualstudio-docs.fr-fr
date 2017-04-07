@@ -1,57 +1,73 @@
 ---
-title: "IDebugProviderProgramNode2 | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "IDebugProviderProgramNode2"
-helpviewer_keywords: 
-  - "IDebugProviderProgramNode2"
+title: IDebugProviderProgramNode2 | Documents Microsoft
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology:
+- vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords:
+- IDebugProviderProgramNode2
+helpviewer_keywords:
+- IDebugProviderProgramNode2
 ms.assetid: f0bca1cc-afbe-44cf-b5aa-d078aa685d24
 caps.latest.revision: 8
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 8
----
-# IDebugProviderProgramNode2
-[!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]
+ms.author: gregvanl
+manager: ghogen
+translation.priority.mt:
+- cs-cz
+- de-de
+- es-es
+- fr-fr
+- it-it
+- ja-jp
+- ko-kr
+- pl-pl
+- pt-br
+- ru-ru
+- tr-tr
+- zh-cn
+- zh-tw
+translationtype: Machine Translation
+ms.sourcegitcommit: ca7c86466fa23fb21a932f26dc24e37c71cf29b4
+ms.openlocfilehash: 55cccc52e968dd3553c55a9aedb2fb838bd06093
+ms.lasthandoff: 04/05/2017
 
-Cette interface marshale les interfaces en rapport avec le programme au delà de les limites du processus.  
+---
+# <a name="idebugproviderprogramnode2"></a>IDebugProviderProgramNode2
+Cette interface marshale les interfaces liées au programme au-delà des limites de processus.  
   
-## Syntaxe  
+## <a name="syntax"></a>Syntaxe  
   
 ```  
 IDebugProviderProgramNode2 : IUnknown  
 ```  
   
-## Remarques à l'intention des implémenteurs  
- Le moteur \(DE\) de débogage implémente cette interface sur le même objet qui implémente [IDebugProgramNode2](../../../extensibility/debugger/reference/idebugprogramnode2.md) pour prendre en charge les interfaces de marshaling au delà de les limites du processus.  
+## <a name="notes-for-implementers"></a>Notes pour les implémenteurs  
+ Le moteur de débogage (DE) implémente cette interface sur le même objet qui implémente [IDebugProgramNode2](../../../extensibility/debugger/reference/idebugprogramnode2.md) pour prendre en charge du marshaling d’interfaces au-delà des limites de processus.  
   
-## Remarques pour les appelants  
- Appelez [QueryInterface](/visual-cpp/atl/queryinterface) à une interface de `IDebugProgramNode2` pour obtenir cette interface.  Si cette interface ne peut pas être obtenue, le De ne prend pas en charge le marshaling des interfaces.  
+## <a name="notes-for-callers"></a>Remarques pour les appelants  
+ Appelez [QueryInterface](/cpp/atl/queryinterface) sur une `IDebugProgramNode2` interface pour obtenir cette interface. Si cette interface ne peut pas être obtenue, la DE ne prend pas en charge le marshaling d’interfaces.  
   
-## méthodes en commande de Vtable  
- Cette interface implémente la méthode suivante :  
+## <a name="methods-in-vtable-order"></a>Méthodes dans l’ordre Vtable  
+ Cette interface implémente la méthode suivante :  
   
 |Méthode|Description|  
-|-------------|-----------------|  
-|[UnmarshalDebuggeeInterface](../../../extensibility/debugger/reference/idebugproviderprogramnode2-unmarshaldebuggeeinterface.md)|Obtient une interface spécifiée au delà de les limites du processus.|  
+|------------|-----------------|  
+|[UnmarshalDebuggeeInterface](../../../extensibility/debugger/reference/idebugproviderprogramnode2-unmarshaldebuggeeinterface.md)|Obtient une interface spécifiée au-delà des limites de processus.|  
   
-## Notes  
- Cette interface est implémentée lorsque les passes de dans un espace de processus séparé du programme débogué : par exemple, lors De l'exécution dans l'espace de processus Visual Studio plutôt que de l'espace de processus du programme débogué.  
+## <a name="remarks"></a>Remarques  
+ Cette interface est implémentée lorsque le DE s’exécute dans un espace de processus séparé à partir du programme en cours de débogage : par exemple, lorsque la D’est en cours d’exécution dans l’espace de processus Visual Studio au lieu de l’espace de processus du programme débogué.  
   
-## Configuration requise  
- en\-tête : msdbg.h  
+## <a name="requirements"></a>Spécifications  
+ En-tête : msdbg.h  
   
- l'espace de noms : Microsoft.VisualStudio.Debugger.Interop  
+ Namespace : Microsoft.VisualStudio.Debugger.Interop  
   
- Assembly : Microsoft.VisualStudio.Debugger.Interop.dll  
+ Assembly : Microsoft.VisualStudio.Debugger.Interop.dll  
   
-## Voir aussi  
+## <a name="see-also"></a>Voir aussi  
  [Interfaces de base](../../../extensibility/debugger/reference/core-interfaces.md)   
  [IDebugProgramNode2](../../../extensibility/debugger/reference/idebugprogramnode2.md)
