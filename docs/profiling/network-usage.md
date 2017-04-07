@@ -1,6 +1,6 @@
 ---
-title: "Utilisation du réseau | Microsoft Docs"
-ms.custom: 
+title: "Analyser l’utilisation du réseau dans les applications UWP dans Visual Studio | Microsoft Docs"
+ms.custom: H1Hack27Feb2017
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
@@ -29,12 +29,12 @@ translation.priority.mt:
 - pt-br
 - tr-tr
 translationtype: Human Translation
-ms.sourcegitcommit: a4eb45e8e0548ead5d99c441abcfa7baf3ffde4f
-ms.openlocfilehash: 1e345367473f72c0b83c3bc7e4ede393c1bc56ec
-ms.lasthandoff: 02/22/2017
+ms.sourcegitcommit: a42f5a30375192c89c9984e40ba0104da98d7253
+ms.openlocfilehash: 60d05761993a4bd7547d83274e103de1b5c30b34
+ms.lasthandoff: 03/07/2017
 
 ---
-# <a name="network-usage"></a>Utilisation du réseau
+# <a name="analyze-network-usage-in-uwp-apps"></a>Analyser l’utilisation du réseau dans les applications UWP
 L’outil de diagnostic **Réseau** de Visual Studio collecte les données relatives aux opérations réseau effectuées à l’aide de l’[API Windows.Web.Http](https://msdn.microsoft.com/library/windows/apps/windows.web.http.aspx). L'analyse des données peut vous aider à résoudre les problèmes tels que les problèmes d'accès et d'authentification, l'utilisation incorrecte du cache et les médiocres performances d'affichage et de téléchargement.  
   
  L'outil Réseau prend en charge seulement les applications de la plateforme universelle Windows. Les autres plateformes ne sont pas prises en charge pour l'instant.  

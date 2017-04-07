@@ -1,7 +1,7 @@
 ---
-title: "Guide du débutant en échantillonnage de l’UC | Microsoft Docs"
-ms.custom: 
-ms.date: 11/04/2016
+title: "Guide du débutant en échantillonnage de l’UC dans Visual Studio | Microsoft Docs"
+ms.custom: H1Hack27Feb2017
+ms.date: 03/06/2017
 ms.reviewer: 
 ms.suite: 
 ms.technology:
@@ -34,9 +34,9 @@ translation.priority.ht:
 - zh-cn
 - zh-tw
 translationtype: Human Translation
-ms.sourcegitcommit: 53907b9b88deca671ee0695385dcbc856a35d309
-ms.openlocfilehash: 072783e138fcc20d80ccbe8ec8b66905778cf67d
-ms.lasthandoff: 02/22/2017
+ms.sourcegitcommit: a42f5a30375192c89c9984e40ba0104da98d7253
+ms.openlocfilehash: ddd52c1af0a164235de2e5055896e020dc8715c3
+ms.lasthandoff: 03/07/2017
 
 ---
 # <a name="beginners-guide-to-cpu-sampling"></a>Guide du débutant en échantillonnage de l’UC
@@ -66,7 +66,7 @@ Vous pouvez utiliser les outils de profilage de Visual Studio pour analyser les 
     > [!IMPORTANT]
     >  Si vous n'êtes pas administrateur sur l'ordinateur que vous utilisez, vous devez exécuter Visual Studio en tant qu'administrateur lorsque vous utilisez le profileur. Cliquez avec le bouton droit sur l’icône de l’application Visual Studio, puis cliquez sur **Exécuter en tant qu’administrateur**.  
   
-2.  Dans le menu **Déboguer**, cliquez sur **Profileur de performances**.  
+2.  Dans le menu **Débogage**, sélectionnez **Profileur**, puis **Profileur de performances**.  
   
 3.  Cochez l’option **Assistant Performance**, puis cliquez sur **Démarrer**.  
   

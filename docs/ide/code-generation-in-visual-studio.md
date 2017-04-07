@@ -1,4 +1,5 @@
 ---
+redirect_url: /visualstudio/ide/refactoring-code-generation-quick-actions
 title: "Génération de code dans Visual Studio | Microsoft Docs"
 ms.custom: 
 ms.date: 11/16/2016

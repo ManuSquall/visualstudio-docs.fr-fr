@@ -19,7 +19,7 @@ helpviewer_keywords:
 - coded UI test
 ms.assetid: ad9e3eaa-ab86-436e-95b8-dc20eb1f8b2a
 caps.latest.revision: 85
-ms.author: mlearned
+ms.author: douge
 manager: douge
 translation.priority.ht:
 - de-de
@@ -87,7 +87,7 @@ Vous pouvez créer des tests automatisés qui vérifient l’interface utilisate
   
      Les tests codés de l'interface utilisateur doivent appartenir à un projet de test codé de l'interface utilisateur. Si vous n'avez pas encore de projet de test codé de l'interface utilisateur, créez-en un. Dans l’**Explorateur de solutions**, dans le menu contextuel de la solution, choisissez **Ajouter**, **Nouveau projet**, puis sélectionnez **Visual Basic** ou **Visual C#**. Choisissez ensuite **Test**, **Test codé de l’interface utilisateur**.  
   
-    -   *Je ne vois pas les modèles de projets **Test codé de l’interface utilisateur**.*  
+    -   *Je ne vois pas les modèles de projets**Test codé de l’interface utilisateur**.*  
   
          Vous utilisez peut-être une version de Visual Studio qui ne prend pas en charge les tests codés de l’interface utilisateur. Pour créer des tests codés de l’interface utilisateur, vous devez utiliser Visual Studio Enterprise.  
   
@@ -510,3 +510,4 @@ Mouse.Hover(uIItem1Text, new Point(87, 9));
  [Plateformes et configurations prises en charge pour les tests codés de l’interface utilisateur et les enregistrements des actions](../test/supported-configurations-and-platforms-for-coded-ui-tests-and-action-recordings.md)   
  [Mise à niveau de tests codés de l’interface utilisateur à partir de Visual Studio 2010](../test/upgrading-coded-ui-tests-from-visual-studio-2010.md)   
  [Génération d’un test codé de l’interface utilisateur à partir d’un enregistrement des actions existant](/devops-test-docs/test/generating-a-coded-ui-test-from-an-existing-action-recording)
+

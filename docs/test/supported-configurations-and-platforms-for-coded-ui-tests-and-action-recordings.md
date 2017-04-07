@@ -12,7 +12,7 @@ helpviewer_keywords:
 - coded UI tests
 ms.assetid: 544742b5-4ec1-4d51-b941-72b2f6ff17bc
 caps.latest.revision: 106
-ms.author: mlearned
+ms.author: douge
 manager: douge
 translation.priority.ht:
 - de-de
@@ -89,3 +89,4 @@ Les plateformes et configurations prises en charge pour les tests codés de l’
 ## <a name="see-also"></a>Voir aussi  
  [Utiliser UI Automation pour tester votre code](../test/use-ui-automation-to-test-your-code.md)   
  [Génération d’un test codé de l’interface utilisateur à partir d’un enregistrement des actions existant](/devops-test-docs/test/generating-a-coded-ui-test-from-an-existing-action-recording)
+

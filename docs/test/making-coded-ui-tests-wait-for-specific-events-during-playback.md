@@ -10,7 +10,7 @@ ms.tgt_pltfrm:
 ms.topic: article
 ms.assetid: 41981ad6-673e-492e-b739-9863b14157b1
 caps.latest.revision: 24
-ms.author: mlearned
+ms.author: douge
 manager: douge
 translation.priority.ht:
 - cs-cz
@@ -133,3 +133,4 @@ UITestControl.WaitForCondition<UITestControl[]>(new UITestControl[] { statusText
  [Anatomie d’un test codé de l’interface utilisateur](../test/anatomy-of-a-coded-ui-test.md)   
  [Plateformes et configurations prises en charge pour les tests codés de l’interface utilisateur et les enregistrements des actions](../test/supported-configurations-and-platforms-for-coded-ui-tests-and-action-recordings.md)   
  [Guide pratique pour insérer un délai avant une action de l’interface utilisateur à l’aide de l’éditeur de test codé de l’interface utilisateur](http://msdn.microsoft.com/Library/509f8ef7-e105-4049-b11b-d64549e055b0)
+

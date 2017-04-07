@@ -31,9 +31,9 @@ translation.priority.mt:
 - zh-cn
 - zh-tw
 translationtype: Machine Translation
-ms.sourcegitcommit: 5db97d19b1b823388a465bba15d057b30ff0b3ce
-ms.openlocfilehash: e272f7b5e314e09d111ca3996870f5131ebdc3d0
-ms.lasthandoff: 02/22/2017
+ms.sourcegitcommit: ca7c86466fa23fb21a932f26dc24e37c71cf29b4
+ms.openlocfilehash: b96de879e880fc786f3bcedbe797cb66e68e04b9
+ms.lasthandoff: 04/05/2017
 
 ---
 # <a name="idebugfield"></a>IDebugField
@@ -45,28 +45,28 @@ Cette interface représente un champ, autrement dit, une description d’un symb
 IDebugField : IUnknown  
 ```  
   
-## <a name="notes-for-implementers"></a>Notes relatives à l’attention des implémenteurs  
- Un fournisseur de symboles implémente cette interface en tant que classe de base pour tous les champs.  
+## <a name="notes-for-implementers"></a>Notes pour les implémenteurs  
+ Un fournisseur de symbole implémente cette interface en tant que classe de base pour tous les champs.  
   
 ## <a name="notes-for-callers"></a>Remarques pour les appelants  
- Cette interface est la classe de base pour tous les champs. Selon la valeur de retour de [GetKind](../../../extensibility/debugger/reference/idebugfield-getkind.md), cette interface peut retourner des interfaces plus spécialisées à l’aide de [QueryInterface](/visual-cpp/atl/queryinterface). En outre, plusieurs interfaces renvoie `IDebugField` objets à partir de différentes méthodes.  
+ Cette interface est la classe de base pour tous les champs. Selon la valeur de retour de [GetKind](../../../extensibility/debugger/reference/idebugfield-getkind.md), cette interface peut retourner des interfaces plus spécialisées à l’aide de [QueryInterface](/cpp/atl/queryinterface). En outre, de retour de nombreuses interfaces `IDebugField` objets à partir de différentes méthodes.  
   
 ## <a name="methods-in-vtable-order"></a>Méthodes dans l'ordre Vtable  
  Le tableau suivant présente les méthodes de `IDebugField`.  
   
 |Méthode|Description|  
 |------------|-----------------|  
-|[GetInfo](../../../extensibility/debugger/reference/idebugfield-getinfo.md)|Obtient des informations affichables sur le symbole ou le type.|  
+|[GetInfo](../../../extensibility/debugger/reference/idebugfield-getinfo.md)|Obtient des informations peut être affichées sur le symbole ou d’un type.|  
 |[GetKind](../../../extensibility/debugger/reference/idebugfield-getkind.md)|Obtient le type de champ.|  
-|[GetType](../../../extensibility/debugger/reference/idebugfield-gettype.md)|Obtient le type de champ.|  
+|[GetType](../../../extensibility/debugger/reference/idebugfield-gettype.md)|Obtient le type du champ.|  
 |[GetContainer](../../../extensibility/debugger/reference/idebugfield-getcontainer.md)|Obtient le conteneur du champ.|  
 |[GetAddress](../../../extensibility/debugger/reference/idebugfield-getaddress.md)|Obtient l’adresse du champ.|  
 |[GetSize](../../../extensibility/debugger/reference/idebugfield-getsize.md)|Obtient la taille d’un champ, en octets.|  
 |[GetExtendedInfo](../../../extensibility/debugger/reference/idebugfield-getextendedinfo.md)|Obtient des informations étendues sur un champ.|  
 |[Égal à](../../../extensibility/debugger/reference/idebugfield-equal.md)|Compare deux champs.|  
-|[GetTypeInfo](../../../extensibility/debugger/reference/idebugfield-gettypeinfo.md)|Obtient les indépendant du type d’informations sur le symbole ou le type.|  
+|[GetTypeInfo](../../../extensibility/debugger/reference/idebugfield-gettypeinfo.md)|Obtient les indépendante du type d’informations sur le symbole ou d’un type.|  
   
-## <a name="remarks"></a>Remarques  
+## <a name="remarks"></a>Notes  
  Un type est équivalent à un langage C `typedef`.  
   
  Dans l’exemple de langage C++ suivant, `weather` est un type de classe, et `sunny` et `stormy` sont des symboles :  
@@ -77,7 +77,7 @@ weather sunny;
 weather stormy;  
 ```  
   
- Si un champ représente un symbole ou type peut être déterminé en appelant [GetKind](../../../extensibility/debugger/reference/idebugfield-getkind.md) et en examinant le [FIELD_KIND](../../../extensibility/debugger/reference/field-kind.md) résultat. Si le `FIELD_KIND_TYPE` bit est défini, le champ est un type et si le `FIELD_KIND_SYMBOL` bit est défini, il est un symbole.  
+ Si un champ représente un symbole ou type peut être déterminé en appelant [GetKind](../../../extensibility/debugger/reference/idebugfield-getkind.md) et en examinant le [FIELD_KIND](../../../extensibility/debugger/reference/field-kind.md) résultat. Si le `FIELD_KIND_TYPE` bit est défini, le champ est un type et si le `FIELD_KIND_SYMBOL` bit est défini, il s’agit d’un symbole.  
   
 ## <a name="requirements"></a>Spécifications  
  En-tête : sh.h  
@@ -87,4 +87,4 @@ weather stormy;
  Assembly : Microsoft.VisualStudio.Debugger.Interop.dll  
   
 ## <a name="see-also"></a>Voir aussi  
- [Interfaces de fournisseur de symboles](../../../extensibility/debugger/reference/symbol-provider-interfaces.md)
+ [Symbol Provider Interfaces](../../../extensibility/debugger/reference/symbol-provider-interfaces.md)

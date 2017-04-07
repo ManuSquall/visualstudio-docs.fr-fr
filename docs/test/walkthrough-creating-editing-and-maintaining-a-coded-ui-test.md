@@ -10,7 +10,7 @@ ms.tgt_pltfrm:
 ms.topic: article
 ms.assetid: f7c25ba7-5c9c-455b-9242-701cda56f90c
 caps.latest.revision: 41
-ms.author: mlearned
+ms.author: douge
 manager: douge
 translation.priority.ht:
 - cs-cz
@@ -406,3 +406,4 @@ Dans cette procédure pas à pas, vous allez créer une simple application WPF (
  [Prise en main du Concepteur WPF](http://msdn.microsoft.com/en-us/18e61d03-b96a-4058-a166-8ec6b3f6116b)   
  [Plateformes et configurations prises en charge pour les tests codés de l’interface utilisateur et les enregistrements des actions](../test/supported-configurations-and-platforms-for-coded-ui-tests-and-action-recordings.md)   
  [Modification des tests codés de l’interface utilisateur à l’aide de l’éditeur de test codé de l’interface utilisateur](../test/editing-coded-ui-tests-using-the-coded-ui-test-editor.md)
+

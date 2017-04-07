@@ -10,9 +10,8 @@ ms.tgt_pltfrm:
 ms.topic: article
 ms.assetid: 5a6f5b32-bfce-4a63-81e9-02d54c592539
 caps.latest.revision: 12
-author: alexhomer1
-ms.author: ahomer
-manager: robinr
+ms.author: douge
+manager: douge
 translation.priority.ht:
 - cs-cz
 - de-de
@@ -138,3 +137,4 @@ Cette rubrique décrit comment exécuter des tests unitaires à l'aide de l'Expl
 2.  Dans l’Explorateur de tests, sélectionnez les méthodes de test, puis choisissez **Déboguer les tests sélectionnés** dans le menu contextuel.  
   
  Pour plus d’informations sur le débogueur, consultez [Débogage dans Visual Studio](../debugger/debugging-in-visual-studio.md).
+

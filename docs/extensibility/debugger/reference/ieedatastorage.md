@@ -1,61 +1,77 @@
 ---
-title: "IEEDataStorage | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "IEEDataStorage"
-helpviewer_keywords: 
-  - "Interface de IEEDataStorage"
+title: IEEDataStorage | Documents Microsoft
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology:
+- vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords:
+- IEEDataStorage
+helpviewer_keywords:
+- IEEDataStorage interface
 ms.assetid: 704e932d-2325-410e-89c4-ce88c6ec19da
 caps.latest.revision: 11
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 11
----
-# IEEDataStorage
-[!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]
+ms.author: gregvanl
+manager: ghogen
+translation.priority.mt:
+- cs-cz
+- de-de
+- es-es
+- fr-fr
+- it-it
+- ja-jp
+- ko-kr
+- pl-pl
+- pt-br
+- ru-ru
+- tr-tr
+- zh-cn
+- zh-tw
+translationtype: Machine Translation
+ms.sourcegitcommit: ca7c86466fa23fb21a932f26dc24e37c71cf29b4
+ms.openlocfilehash: 5ca58f2e8f192316f1359949242fbf523edcc032
+ms.lasthandoff: 04/05/2017
 
-Cette interface représente un tableau d'octets.  
+---
+# <a name="ieedatastorage"></a>IEEDataStorage
+Cette interface représente un tableau d’octets.  
   
-## Syntaxe  
+## <a name="syntax"></a>Syntaxe  
   
 ```  
 IEEDataStorage : IUnknown  
 ```  
   
-## Remarques à l'intention des implémenteurs  
- L'évaluateur \(EE\) d'expression implémente cette interface pour représenter un tableau d'octets \(utilisés par les visualiseurs de type pour récupérer et modifier les données via l'interface d' [IPropertyProxyEESide](../../../extensibility/debugger/reference/ipropertyproxyeeside.md) \).  L'évaluateur d'expression implémente généralement cette interface pour prendre en charge les visualiseurs externes de type.  
+## <a name="notes-for-implementers"></a>Notes pour les implémenteurs  
+ L’évaluateur d’expression (EE) implémente cette interface pour représenter un tableau d’octets (utilisé par les visualiseurs de types pour extraire et modifier des données via le [IPropertyProxyEESide](../../../extensibility/debugger/reference/ipropertyproxyeeside.md) interface). En général, le EE implémente cette interface pour prendre en charge les visualiseurs de type externe.  
   
-## Remarques pour les appelants  
- Les méthodes sur `IPropertyProxyEESide` interface retourner la valeur cette interface.  appel [GetPropertyProxy](../../../extensibility/debugger/reference/ipropertyproxyprovider-getpropertyproxy.md) pour obtenir l'interface d' [IPropertyProxyEESide](../../../extensibility/debugger/reference/ipropertyproxyeeside.md) .  Appelez [QueryInterface](/visual-cpp/atl/queryinterface) à une interface de [IDebugProperty3](../../../extensibility/debugger/reference/idebugproperty3.md) pour obtenir l'interface d' [IPropertyProxyProvider](../../../extensibility/debugger/reference/ipropertyproxyprovider.md) .  
+## <a name="notes-for-callers"></a>Remarques pour les appelants  
+ Les méthodes sur le `IPropertyProxyEESide` interface tous les retourner cette interface. Appelez [GetPropertyProxy](../../../extensibility/debugger/reference/ipropertyproxyprovider-getpropertyproxy.md) pour obtenir le [IPropertyProxyEESide](../../../extensibility/debugger/reference/ipropertyproxyeeside.md) interface. Appelez [QueryInterface](/cpp/atl/queryinterface) sur une [IDebugProperty3](../../../extensibility/debugger/reference/idebugproperty3.md) interface pour obtenir le [IPropertyProxyProvider](../../../extensibility/debugger/reference/ipropertyproxyprovider.md) interface.  
   
-## méthodes en commande de Vtable  
- L'interface d' `IEEDataStorage` implémente les méthodes suivantes :  
+## <a name="methods-in-vtable-order"></a>Méthodes dans l’ordre Vtable  
+ Le `IEEDataStorage` interface implémente les méthodes suivantes :  
   
 |Méthode|Description|  
-|-------------|-----------------|  
-|[GetData](../Topic/IEEDataStorage::GetData.md)|Récupère le nombre spécifié d'octets de données vers une mémoire tampon fournie.|  
-|[GetSize](../../../extensibility/debugger/reference/ieedatastorage-getsize.md)|Récupère le nombre d'octets de données disponibles.|  
+|------------|-----------------|  
+|[GetData](../../../extensibility/debugger/reference/ieedatastorage-getdata.md)|Récupère le nombre spécifié d’octets de données dans une mémoire tampon fournie.|  
+|[GetSize](../../../extensibility/debugger/reference/ieedatastorage-getsize.md)|Récupère le nombre d’octets de données disponibles.|  
   
-## Notes  
- Cette interface est utilisée par un visualiseur de type pour accéder aux données gérées par un objet spécifique.  Les données sont traitées comme un tableau d'octets, permettant au visualiseur de type à manipuler dans le mode est requise pour le présenter à l'utilisateur.  
+## <a name="remarks"></a>Remarques  
+ Cette interface est utilisée par un visualiseur de type pour accéder aux données détenues par un objet spécifique. Les données sont traitées en tant que tableau d’octets, ce qui permet le visualiseur de type à manipuler de manière est requis pour présenter à l’utilisateur.  
   
- Une visionneuse personnalisée peut également utiliser cette interface, si vous le souhaitez, bien que plus classique, une visionneuse personnalisée utilise une interface personnalisée, [GetMemoryBytes](../Topic/IDebugProperty2::GetMemoryBytes.md) ou [GetStringChars](../Topic/IDebugProperty3::GetStringChars.md) \(pour les données chaîne\-orientées\).  
+ Une visionneuse personnalisée peut également utiliser cette interface, si vous le souhaitez, bien qu’en règle générale, une visionneuse personnalisée utilisent une interface personnalisée, [GetMemoryBytes](../../../extensibility/debugger/reference/idebugproperty2-getmemorybytes.md) ou [GetStringChars](../../../extensibility/debugger/reference/idebugproperty3-getstringchars.md) (pour les données chaîne).  
   
-## Configuration requise  
- en\-tête : msdbg.h  
+## <a name="requirements"></a>Spécifications  
+ En-tête : msdbg.h  
   
- l'espace de noms : Microsoft.VisualStudio.Debugger.Interop  
+ Namespace : Microsoft.VisualStudio.Debugger.Interop  
   
- Assembly : Microsoft.VisualStudio.Debugger.Interop.dll  
+ Assembly : Microsoft.VisualStudio.Debugger.Interop.dll  
   
-## Voir aussi  
+## <a name="see-also"></a>Voir aussi  
  [Interfaces de base](../../../extensibility/debugger/reference/core-interfaces.md)   
  [IPropertyProxyEESide](../../../extensibility/debugger/reference/ipropertyproxyeeside.md)   
- [Visualiseur de type et de la visionneuse personnalisée](../../../extensibility/debugger/type-visualizer-and-custom-viewer.md)
+ [Visualiseur de type et visionneuse personnalisée](../../../extensibility/debugger/type-visualizer-and-custom-viewer.md)

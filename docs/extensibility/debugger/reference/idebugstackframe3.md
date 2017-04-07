@@ -1,68 +1,84 @@
 ---
-title: "IDebugStackFrame3 | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "IDebugStackFrame3"
-helpviewer_keywords: 
-  - "Interface de IDebugStackFrame3"
+title: IDebugStackFrame3 | Documents Microsoft
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology:
+- vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords:
+- IDebugStackFrame3
+helpviewer_keywords:
+- IDebugStackFrame3 interface
 ms.assetid: 39af2f57-0a01-42b8-b093-b7fbc61e2909
 caps.latest.revision: 15
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 15
----
-# IDebugStackFrame3
-[!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]
+ms.author: gregvanl
+manager: ghogen
+translation.priority.mt:
+- cs-cz
+- de-de
+- es-es
+- fr-fr
+- it-it
+- ja-jp
+- ko-kr
+- pl-pl
+- pt-br
+- ru-ru
+- tr-tr
+- zh-cn
+- zh-tw
+translationtype: Machine Translation
+ms.sourcegitcommit: ca7c86466fa23fb21a932f26dc24e37c71cf29b4
+ms.openlocfilehash: 71ffa007c894090b9c0af2ad16429f381eb2db8b
+ms.lasthandoff: 04/05/2017
 
-Cette interface étend [IDebugStackFrame2](../../../extensibility/debugger/reference/idebugstackframe2.md) pour gérer des exceptions interceptées.  
+---
+# <a name="idebugstackframe3"></a>IDebugStackFrame3
+Cette interface étend [IDebugStackFrame2](../../../extensibility/debugger/reference/idebugstackframe2.md) pour gérer les exceptions interceptées.  
   
-## Syntaxe  
+## <a name="syntax"></a>Syntaxe  
   
 ```  
 IDebugStackFrame3 : IDebugStackFrame2  
 ```  
   
-## Remarques à l'intention des implémenteurs  
- Le moteur \(DE\) de débogage implémente cette interface sur le même objet qui implémente l'interface d' [IDebugStackFrame2](../../../extensibility/debugger/reference/idebugstackframe2.md) pour prendre en charge des exceptions interceptées.  
+## <a name="notes-for-implementers"></a>Notes pour les implémenteurs  
+ Le moteur de débogage (DE) implémente cette interface sur le même objet qui implémente le [IDebugStackFrame2](../../../extensibility/debugger/reference/idebugstackframe2.md) interface pour prendre en charge les exceptions interceptées.  
   
-## Remarques pour les appelants  
- Appelez [QueryInterface](/visual-cpp/atl/queryinterface) à une interface de `IDebugStackFrame2` pour obtenir cette interface.  
+## <a name="notes-for-callers"></a>Remarques pour les appelants  
+ Appelez [QueryInterface](/cpp/atl/queryinterface) sur une `IDebugStackFrame2` interface pour obtenir cette interface.  
   
-## méthodes en commande de Vtable  
- En plus de les méthodes héritées d' [IDebugStackFrame2](../../../extensibility/debugger/reference/idebugstackframe2.md), `IDebugStackFrame3` expose les méthodes suivantes.  
+## <a name="methods-in-vtable-order"></a>Méthodes dans l'ordre Vtable  
+ Outre les méthodes héritées de [IDebugStackFrame2](../../../extensibility/debugger/reference/idebugstackframe2.md), `IDebugStackFrame3` expose les méthodes suivantes.  
   
 |Méthode|Description|  
-|-------------|-----------------|  
-|[InterceptCurrentException](../../../extensibility/debugger/reference/idebugstackframe3-interceptcurrentexception.md)|Gère une exception pour le frame de pile actuel avant les gestions d'exceptions normale.|  
-|[GetUnwindCodeContext](../../../extensibility/debugger/reference/idebugstackframe3-getunwindcodecontext.md)|Retourne un contexte de code si le déroulement de pile devait se produire.|  
+|------------|-----------------|  
+|[InterceptCurrentException](../../../extensibility/debugger/reference/idebugstackframe3-interceptcurrentexception.md)|Gère une exception pour le frame de pile actuel avant que la gestion des exceptions normale.|  
+|[GetUnwindCodeContext](../../../extensibility/debugger/reference/idebugstackframe3-getunwindcodecontext.md)|Retourne un contexte de code si un déroulement de pile se produit.|  
   
-## Notes  
- Une exception interceptée signifie qu'un débogueur peut traiter une exception avant les routines normales de gestion des exceptions soient appelées par le runtime.  Les moyens de interception d'une exception en effectuant le runtime feignent qu'il existe un présent de gestionnaire d'exceptions même s'il n'existe pas.  
+## <a name="remarks"></a>Remarques  
+ Une exception interceptée signifie qu’un débogueur peut traiter une exception avant des routines de gestion des exceptions normales sont appelées par le temps d’exécution. Interception d’une exception essentiellement : la mise à l’heure d’exécution de prétendre qu’il existe un gestionnaire d’exceptions présent même quand il n’existe pas.  
   
- [InterceptCurrentException](../../../extensibility/debugger/reference/idebugstackframe3-interceptcurrentexception.md) est appelé pendant tous les événements de rappel d'exception normale \(la seule exception est si vous déboguez du code en mode mixte \(code managé et non managé\), auquel cas l'exception ne peut pas être interceptée pendant le rappel de dernier\-occasion\).  Si le De n'implémente pas `IDebugStackFrame3`, ou le De retourne une erreur d'IDebugStackFrame3 : :`InterceptCurrentException` \(tel qu' `E_NOTIMPL`\), le débogueur gérera l'exception normalement.  
+ [InterceptCurrentException](../../../extensibility/debugger/reference/idebugstackframe3-interceptcurrentexception.md) est appelé lors de tous les événements de rappel d’exception normale (la seule exception est si vous déboguez du code en mode mixte (managé et code non managé), auquel cas l’exception ne peut pas être interceptée pendant le rappel de la dernière chance). Si le DE n’implémente pas `IDebugStackFrame3`, ou le DE renvoie une erreur à partir de IDebugStackFrame3 ::`InterceptCurrentException` (tel que `E_NOTIMPL`), puis le débogueur gère l’exception normalement.  
   
- En interceptant une exception, le débogueur peut permettre à l'utilisateur d'apporter des modifications à l'état du programme débogué puis pour reprendre l'exécution au moment où l'exception a été levée.  
+ En interceptant une exception, le débogueur peut autoriser l’utilisateur d’apporter des modifications à l’état du programme débogué et reprendre l’exécution au point où l’exception a été levée.  
   
 > [!NOTE]
->  Il permet des exceptions interceptées uniquement dans le code managé, c. autrement dit., dans un programme qui s'exécute sous le common langage \(CLR\) runtime.  
+>  Les exceptions interceptées sont autorisées uniquement dans le code managé, autrement dit, dans un programme qui s’exécute sous le Common Language Runtime (CLR).  
   
- Un moteur de débogage indique qu'il prend en charge les exceptions de interception en définissant des « metricExceptions » à la valeur 1 au moment de l'exécution à l'aide de la fonction d' `SetMetric` .  Pour plus d'informations, consultez [« Helpers » du Kit de développement logiciel pour le débogage](../../../extensibility/debugger/reference/sdk-helpers-for-debugging.md).  
+ Un moteur de débogage indique qu’il prend en charge interception des exceptions en définissant « metricExceptions » avec une valeur de 1 au moment de l’exécution à l’aide de la `SetMetric` (fonction). Pour plus d’informations, consultez [programmes d’assistance du Kit de développement logiciel pour le débogage](../../../extensibility/debugger/reference/sdk-helpers-for-debugging.md).  
   
-## Configuration requise  
- en\-tête : msdbg.h  
+## <a name="requirements"></a>Spécifications  
+ En-tête : msdbg.h  
   
- l'espace de noms : Microsoft.VisualStudio.Debugger.Interop  
+ Namespace : Microsoft.VisualStudio.Debugger.Interop  
   
- Assembly : Microsoft.VisualStudio.Debugger.Interop.dll  
+ Assembly : Microsoft.VisualStudio.Debugger.Interop.dll  
   
-## Voir aussi  
+## <a name="see-also"></a>Voir aussi  
  [Interfaces de base](../../../extensibility/debugger/reference/core-interfaces.md)   
  [IDebugStackFrame2](../../../extensibility/debugger/reference/idebugstackframe2.md)   
- [« Helpers » du Kit de développement logiciel pour le débogage](../../../extensibility/debugger/reference/sdk-helpers-for-debugging.md)
+ [Aides SDK pour le débogage](../../../extensibility/debugger/reference/sdk-helpers-for-debugging.md)

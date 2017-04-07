@@ -10,7 +10,7 @@ ms.tgt_pltfrm:
 ms.topic: article
 ms.assetid: d1ac9188-d79f-407e-9f3a-80dbefa66317
 caps.latest.revision: 8
-ms.author: mlearned
+ms.author: douge
 manager: douge
 translation.priority.ht:
 - de-de
@@ -670,3 +670,4 @@ public:
  [Tests unitaires sur votre code](../test/unit-test-your-code.md)   
  [Tests unitaires de code natif avec l’Explorateur de tests](http://msdn.microsoft.com/en-us/8a09d6d8-3613-49d8-9ffe-11375ac4736c)   
  [Ajout de tests unitaires aux applications C++ existantes](../test/unit-testing-existing-cpp-applications-with-test-explorer.md)
+

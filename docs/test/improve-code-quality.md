@@ -13,7 +13,7 @@ helpviewer_keywords:
 - team-based development
 ms.assetid: 73baa961-c21f-43fe-bb92-3f59ae9b5945
 caps.latest.revision: 39
-ms.author: mlearned
+ms.author: douge
 manager: douge
 translation.priority.ht:
 - cs-cz
@@ -30,9 +30,9 @@ translation.priority.ht:
 - zh-cn
 - zh-tw
 translationtype: Human Translation
-ms.sourcegitcommit: 7a282fc04c1eb01f0c56b1d76880276fc270686d
-ms.openlocfilehash: df5195e7cc435f6da8ebfee4589d7c6258018993
-ms.lasthandoff: 03/01/2017
+ms.sourcegitcommit: a42f5a30375192c89c9984e40ba0104da98d7253
+ms.openlocfilehash: 2fa87621ed76fb93a9e92d558be5519d783274c5
+ms.lasthandoff: 03/07/2017
 
 ---
 # <a name="improve-code-quality"></a>Améliorer la qualité du code
@@ -48,6 +48,7 @@ Qu'est-ce que la qualité du code ? Pour que le code que vous créez soit de qu
 |||  
 |-|-|  
 |[Tests unitaires sur votre code](../test/unit-test-your-code.md)|L'Explorateur de tests facilite l'intégration des tests unitaires dans votre pratique de développement. Vous pouvez utiliser l'infrastructure de test unitaire Microsoft ou une des infrastructures tierces et ouvertes.|  
+|[Live Unit Testing avec Visual Studio](../test/live-unit-testing.md)|Live Unit Testing exécute automatiquement des tests unitaires en arrière-plan et affiche graphiquement les résultats de test et de couverture du code dans l’éditeur de code Visual Studio.|  
 |[Analyse de la qualité des applications](../code-quality/analyzing-application-quality-by-using-code-analysis-tools.md)|Les outils d'analyse du code statique recherchent la conception, l'utilisation, la maintenabilité, et les problèmes de style en C++ et code managé. Bon nombre de ces problèmes peuvent provoquer des bogues difficiles à reproduire dans l'environnement de test standard.|  
 |[Mesures de la complexité et de la facilité de maintenance du code managé](../code-quality/measuring-complexity-and-maintainability-of-managed-code.md)|La métrique du code est un jeu de mesures de logiciel qui fournit aux développeurs plus de détails sur le code qu'ils développent. La métrique inclut un index de maintenabilité des fonctions et des classes, la complexité cyclomatique des fonctions, la profondeur d'héritage des classes et la quantité de couplage entre les classes.|  
   
@@ -69,3 +70,4 @@ Qu'est-ce que la qualité du code ? Pour que le code que vous créez soit de qu
   
  [Suivi du travail à l’aide de Visual Studio Online ou de Team Foundation Server](https://www.visualstudio.com/docs/work/overview)  
  Vous pouvez utiliser [!INCLUDE[vstsTfsLong](../test/includes/vststfslong_md.md)] pour planifier et effectuer le suivi de vos projets, que vous utilisiez le processus agile, le processus formel ou une variante de ces processus. En planifiant vos projets, en suivant votre progression par rapport au plan et en faisant les réglages nécessaires, vous pouvez réduire les risques, évitez les surprises désagréables et gérez le coût de vos projets.
+

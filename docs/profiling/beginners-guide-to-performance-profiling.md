@@ -1,6 +1,6 @@
 ---
-title: "Guide du débutant en profilage des performances | Microsoft Docs"
-ms.custom: 
+title: "Guide du débutant en profilage des performances dans Visual Studio | Microsoft Docs"
+ms.custom: H1Hack27Feb2017
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
@@ -35,9 +35,9 @@ translation.priority.ht:
 - zh-cn
 - zh-tw
 translationtype: Human Translation
-ms.sourcegitcommit: 53907b9b88deca671ee0695385dcbc856a35d309
-ms.openlocfilehash: edc4f1e6a332a3c515a1d1a65b15ae3f1b989ed8
-ms.lasthandoff: 02/22/2017
+ms.sourcegitcommit: a42f5a30375192c89c9984e40ba0104da98d7253
+ms.openlocfilehash: fe329cd5395db3afae1c3f3e98bb6e480323e21f
+ms.lasthandoff: 03/07/2017
 
 ---
 # <a name="beginners-guide-to-performance-profiling"></a>Guide du débutant en profilage des performances

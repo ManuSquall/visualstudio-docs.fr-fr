@@ -10,7 +10,7 @@ ms.tgt_pltfrm:
 ms.topic: article
 ms.assetid: 59c07d15-511e-4fd0-b398-bde9d5ed00d9
 caps.latest.revision: 8
-ms.author: mlearned
+ms.author: douge
 manager: douge
 translation.priority.ht:
 - de-de
@@ -44,7 +44,7 @@ L’analyse de la couverture du code dans Microsoft Visual Studio vous montre le
   
      Si vous avez plusieurs définitions de source de test, répétez cette étape pour chaque définition.  
   
-    -   *Mais aucun champ n’est nommé **Type des paramètres d’exécution**.*  
+    -   *Mais aucun champ n’est nommé**Type des paramètres d’exécution**.*  
   
          Sous **Tests automatisés**, sélectionnez **Assembly de test**, puis choisissez le bouton de sélection **[...]** situé à la fin de la ligne. Dans la boîte de dialogue **Ajouter/Modifier une série de tests**, sous **Test Runner**, choisissez **Visual Studio Test Runner**.  
   
@@ -54,3 +54,4 @@ L’analyse de la couverture du code dans Microsoft Visual Studio vous montre le
   
 ## <a name="see-also"></a>Voir aussi  
  [Utilisation de la couverture du code pour déterminer la quantité de code testé](../test/using-code-coverage-to-determine-how-much-code-is-being-tested.md)
+

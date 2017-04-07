@@ -1,56 +1,72 @@
 ---
-title: "IDebugProgramHost2 | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "IDebugProgramHost2"
-helpviewer_keywords: 
-  - "Interface de IDebugProgramHost2"
+title: IDebugProgramHost2 | Documents Microsoft
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology:
+- vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords:
+- IDebugProgramHost2
+helpviewer_keywords:
+- IDebugProgramHost2 interface
 ms.assetid: 2c37b3aa-97a9-4665-8709-edd917f18cb1
 caps.latest.revision: 11
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 11
----
-# IDebugProgramHost2
-[!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]
+ms.author: gregvanl
+manager: ghogen
+translation.priority.mt:
+- cs-cz
+- de-de
+- es-es
+- fr-fr
+- it-it
+- ja-jp
+- ko-kr
+- pl-pl
+- pt-br
+- ru-ru
+- tr-tr
+- zh-cn
+- zh-tw
+translationtype: Machine Translation
+ms.sourcegitcommit: ca7c86466fa23fb21a932f26dc24e37c71cf29b4
+ms.openlocfilehash: e142f77d19f8ee7787d71d2fa3aa8138b01d47ae
+ms.lasthandoff: 04/05/2017
 
-Cette interface fournit des informations \(de processus\) d'hôte à propos d'un programme.  
+---
+# <a name="idebugprogramhost2"></a>IDebugProgramHost2
+Cette interface fournit des informations sur l’hôte (processus) sur un programme.  
   
-## Syntaxe  
+## <a name="syntax"></a>Syntaxe  
   
 ```  
 IDebugProgramHost2 : IUnknown  
 ```  
   
-## Remarques à l'intention des implémenteurs  
- Le moteur de débogage implémente cette interface sur le même objet que l'interface d' [IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md) pour fournir des informations sur le processus d'hébergement.  Il s'agit d'une interface facultative.  
+## <a name="notes-for-implementers"></a>Notes pour les implémenteurs  
+ Le moteur de débogage implémente cette interface sur le même objet que le [IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md) interface afin de fournir des informations sur le processus d’hébergement. Il s’agit d’une interface facultative.  
   
-## Remarques pour les appelants  
- Appelez [QueryInterface](/visual-cpp/atl/queryinterface) à une interface de `IDebugProgram2` pour obtenir cette interface.  
+## <a name="notes-for-callers"></a>Remarques pour les appelants  
+ Appelez [QueryInterface](/cpp/atl/queryinterface) sur une `IDebugProgram2` interface pour obtenir cette interface.  
   
-## méthodes en commande de Vtable  
- Le tableau suivant répertorie les méthodes d' `IDebugProgramHost2`.  
+## <a name="methods-in-vtable-order"></a>Méthodes dans l'ordre Vtable  
+ Le tableau suivant présente les méthodes de `IDebugProgramHost2`.  
   
 |Méthode|Description|  
-|-------------|-----------------|  
-|[GetHostName](../../../extensibility/debugger/reference/idebugprogramhost2-gethostname.md)|obtient le titre, le nom convivial, ou le nom de fichier du processus d'hébergement de ce programme.|  
-|[GetHostId](../../../extensibility/debugger/reference/idebugprogramhost2-gethostid.md)|Obtient l'identificateur du processus d'hébergement de ce programme.|  
-|[GetHostMachineName](../../../extensibility/debugger/reference/idebugprogramhost2-gethostmachinename.md)|Obtient le nom de l'ordinateur sur lequel le processus d'hébergement de ce programme s'exécute.|  
+|------------|-----------------|  
+|[GetHostName](../../../extensibility/debugger/reference/idebugprogramhost2-gethostname.md)|Obtient le titre, le nom convivial ou le nom de fichier du processus d’hébergement de ce programme.|  
+|[GetHostId](../../../extensibility/debugger/reference/idebugprogramhost2-gethostid.md)|Obtient l’identificateur de processus du processus d’hébergement de ce programme.|  
+|[GetHostMachineName](../../../extensibility/debugger/reference/idebugprogramhost2-gethostmachinename.md)|Obtient le nom de l’ordinateur, que le processus d’hébergement de ce programme est en cours d’exécution.|  
   
-## Configuration requise  
- en\-tête : msdbg.h  
+## <a name="requirements"></a>Spécifications  
+ En-tête : msdbg.h  
   
- l'espace de noms : Microsoft.VisualStudio.Debugger.Interop  
+ Namespace : Microsoft.VisualStudio.Debugger.Interop  
   
- Assembly : Microsoft.VisualStudio.Debugger.Interop.dll  
+ Assembly : Microsoft.VisualStudio.Debugger.Interop.dll  
   
-## Voir aussi  
+## <a name="see-also"></a>Voir aussi  
  [Interfaces de base](../../../extensibility/debugger/reference/core-interfaces.md)   
  [IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md)

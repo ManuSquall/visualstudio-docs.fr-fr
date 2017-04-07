@@ -1,6 +1,6 @@
 ---
-title: "Utilisation de la mémoire sans débogage | Microsoft Docs"
-ms.custom: 
+title: "Analyser l’utilisation de la mémoire sans le débogueur de VS | Microsoft Docs"
+ms.custom: H1Hack27Feb2017
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
@@ -34,12 +34,12 @@ translation.priority.mt:
 - pt-br
 - tr-tr
 translationtype: Human Translation
-ms.sourcegitcommit: bdfe341252a7c4340a8c0a624d4394124c3efada
-ms.openlocfilehash: d0d021c01cc97a97aa75eda58a17ccd1c2089520
-ms.lasthandoff: 02/22/2017
+ms.sourcegitcommit: a42f5a30375192c89c9984e40ba0104da98d7253
+ms.openlocfilehash: 9ff0dfb7330f70bb66597127347c8375f2c4c9ea
+ms.lasthandoff: 03/07/2017
 
 ---
-# <a name="memory-usage-without-debugging"></a>Utilisation de la mémoire sans débogage
+# <a name="memory-usage-without-the-debugger"></a>Utilisation de la mémoire sans le débogueur
 Vous pouvez utiliser l’outil **Utilisation de la mémoire** sans débogage pour effectuer les opérations suivantes :  
   
 -   Surveiller l'utilisation de mémoire de vos applications directement dans Visual Studio quand vous développez un scénario.  

@@ -10,7 +10,7 @@ ms.tgt_pltfrm:
 ms.topic: article
 ms.assetid: a608bfba-1a43-4a60-b73a-1fe53ef58098
 caps.latest.revision: 8
-ms.author: mlearned
+ms.author: douge
 manager: douge
 translation.priority.ht:
 - de-de
@@ -69,3 +69,4 @@ Les tests unitaires reflètent souvent la structure du code testé. Par exemple,
  **Exécution de tests unitaires**  
   
  [Exécuter des tests unitaires avec l’Explorateur de tests](../test/run-unit-tests-with-test-explorer.md)
+

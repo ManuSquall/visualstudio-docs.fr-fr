@@ -43,9 +43,9 @@ translation.priority.mt:
 - pt-br
 - tr-tr
 translationtype: Human Translation
-ms.sourcegitcommit: dac3cb1d7767c2ff76ac25f6a486ad30a8d54831
-ms.openlocfilehash: 99a485f2b7ebda9169797db06212ae56dc4d9eb1
-ms.lasthandoff: 03/03/2017
+ms.sourcegitcommit: a42f5a30375192c89c9984e40ba0104da98d7253
+ms.openlocfilehash: 8c478c49ee429e0c5d96dc60f035fcb460b902c8
+ms.lasthandoff: 03/07/2017
 
 ---
 # <a name="managing-references-in-a-project"></a>Gestion des références dans un projet
@@ -124,7 +124,7 @@ Avant d’écrire du code pour un composant externe ou un service connecté, vou
 ## <a name="project-to-project-references"></a>Références entre projets  
  Les références entre projets sont des références à des projets qui contiennent des assemblys. Vous les créez en utilisant l’onglet **Projet** . Visual Studio peut trouver un assembly si vous indiquez un chemin d’accès au projet.  
 
- Quand vous avez un projet qui produit un assembly, vous devez référencer le projet et non pas utiliser une référence de fichier (voir ci-dessous). Une référence entre projets présente l’avantage de créer une dépendance entre les projets dans le système de build. Le projet dépendant est généré s’il a été modifié depuis la dernière build du projet qui référence. Une référence de fichier ne crée pas de dépendance de build, il est donc possible de générer le projet de référence sans générer le projet dépendant, et la référence peut devenir obsolète. Autrement dit, le projet peut référencer une version précédemment générée du projet. Cela peut entraîner la présence de plusieurs versions d’une même DLL nécessaire dans le répertoire bin, ce qui n’est pas admis. Quand ce conflit intervient, vous obtenez un message de ce type : [Avertissement : impossible de copier la dépendance 'fichier' du projet 'projet' dans le répertoire d’exécution, car elle remplacerait la référence 'fichier'](../misc/warning-the-dependency-file-in-project-project-cannot-be-copied-to-the-run-directory-because-it-would-overwrite-the-reference-file.md). Pour plus d’informations, consultez [Dépannage de références rompues](../ide/troubleshooting-broken-references.md) et [Guide pratique pour créer et supprimer les dépendances d’un projet](../ide/how-to-create-and-remove-project-dependencies.md).  
+ Quand vous avez un projet qui produit un assembly, vous devez référencer le projet et non pas utiliser une référence de fichier (voir ci-dessous). Une référence entre projets présente l’avantage de créer une dépendance entre les projets dans le système de build. Le projet dépendant est généré s’il a été modifié depuis la dernière build du projet qui référence. Une référence de fichier ne crée pas de dépendance de build, il est donc possible de générer le projet de référence sans générer le projet dépendant, et la référence peut devenir obsolète. Autrement dit, le projet peut référencer une version précédemment générée du projet. Cela peut entraîner la présence de plusieurs versions d’une même DLL nécessaire dans le répertoire bin, ce qui n’est pas admis. Quand ce conflit intervient, vous obtenez un message de ce type : « Avertissement : impossible de copier la dépendance ’fichier’ du projet ’projet’ dans le répertoire d’exécution, car elle remplacerait la référence ’fichier’. ». Pour plus d’informations, consultez [Dépannage de références rompues](../ide/troubleshooting-broken-references.md) et [Guide pratique pour créer et supprimer les dépendances d’un projet](../ide/how-to-create-and-remove-project-dependencies.md).  
 
 > [!NOTE]
 >  Une référence de fichier est créée à la place d’une référence entre projets si la version cible du .NET Framework d’un projet est la version 4.5, et si la version cible du .NET Framework de l’autre projet est la version 2, 3, 3.5 ou 4.0.  

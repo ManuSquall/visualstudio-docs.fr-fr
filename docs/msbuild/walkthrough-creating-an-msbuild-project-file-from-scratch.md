@@ -30,15 +30,15 @@ translation.priority.ht:
 - zh-cn
 - zh-tw
 translationtype: Human Translation
-ms.sourcegitcommit: 3ba7680d46345f2b49019659c715cfb418933d39
-ms.openlocfilehash: 2db52ef9381f74896969e693467166aaecb8db55
-ms.lasthandoff: 02/22/2017
+ms.sourcegitcommit: ca7c86466fa23fb21a932f26dc24e37c71cf29b4
+ms.openlocfilehash: 8cc8cb349901c7a2b0c94875d29e602c33baa5bf
+ms.lasthandoff: 04/05/2017
 
 ---
 # <a name="walkthrough-creating-an-msbuild-project-file-from-scratch"></a>Procédure pas à pas : création d'un fichier projet MSBuild en partant de zéro
 Les langages de programmation qui ciblent .NET Framework utilisent des fichiers projet MSBuild pour décrire et contrôler le processus de génération d'application. Quand vous utilisez Visual Studio pour créer un fichier projet MSBuild, le code XML approprié est ajouté automatiquement au fichier. Il peut cependant être utile de comprendre comment le code XML est organisé et comment vous pouvez le modifier pour contrôler une build.  
   
- Pour plus d’informations sur la création d’un fichier projet pour un projet C++, consultez l’article [MSBuild (Visual C++)](/visual-cpp/build/msbuild-visual-cpp).  
+ Pour plus d’informations sur la création d’un fichier projet pour un projet C++, consultez l’article [MSBuild (Visual C++)](/cpp/build/msbuild-visual-cpp).  
   
  Cette procédure pas à pas montre comment créer progressivement un fichier projet de base, en utilisant seulement un éditeur de texte. Cette procédure pas à pas comprend les étapes suivantes :  
   
@@ -406,11 +406,11 @@ Les langages de programmation qui ciblent .NET Framework utilisent des fichiers 
   
      Ces lignes doivent être affichées.  
   
-     **Skipping target "Build" because all output files are up-to-date with respect to the input files.**  
+     **La cible est ignorée "Build", car tous les fichiers de sortie sont à jour par rapport aux fichiers d'entrée.**  
   
-     **Input files: HelloWorld.cs**  
+     **Fichiers d'entrée: HelloWorld.cs**  
   
-     **Output files: BinMSBuildSample.exe**  
+     **Fichiers de sortie: BinMSBuildSample.exe**  
   
      MSBuild ignore la cible Build, car aucun des fichiers source n'a changé depuis la dernière génération de l'application.  
   

@@ -1,6 +1,6 @@
 ---
-title: "Réactivité de l’interface utilisateur HTML | Microsoft Docs"
-ms.custom: 
+title: "Analyser la réactivité de l’interface utilisateur HTML dans les applications UWP | Microsoft Docs"
+ms.custom: H1Hack27Feb2017
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
@@ -40,13 +40,13 @@ translation.priority.mt:
 - pt-br
 - tr-tr
 translationtype: Human Translation
-ms.sourcegitcommit: bdfe341252a7c4340a8c0a624d4394124c3efada
-ms.openlocfilehash: 1d230cb011c93ce48a855e86355d4a6ccdf55a29
-ms.lasthandoff: 02/22/2017
+ms.sourcegitcommit: a42f5a30375192c89c9984e40ba0104da98d7253
+ms.openlocfilehash: 618aaec3a0ae735560d14bea43cc2b08bd9e5445
+ms.lasthandoff: 03/07/2017
 
 ---
-# <a name="html-ui-responsiveness"></a>Réactivité de l'interface utilisateur HTML
-Cette rubrique explique comment isoler les problèmes de performances dans vos applications à l’aide du profileur de réactivité de l’interface utilisateur, outil d’analyse des performances disponible pour les applications universelles Windows.  
+# <a name="analyze-html-ui-responsiveness-in-universal-windows-apps"></a>Analyser la réactivité de l’interface utilisateur HTML dans les applications Windows universelles
+Cette rubrique explique comment isoler les problèmes de performances dans vos applications à l’aide du profileur de réactivité de l’interface utilisateur, outil d’analyse des performances disponible pour les applications Windows universelles.  
   
  Le profileur de réactivité de l'interface utilisateur peut aider à isoler certaines problèmes tels que ceux de la réactivité de l'interface utilisateur ou les effets secondaires de plateforme qui se présentent généralement avec les symptômes suivants :  
   

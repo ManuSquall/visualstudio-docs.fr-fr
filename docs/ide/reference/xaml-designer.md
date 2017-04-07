@@ -1,7 +1,7 @@
 ---
-title: Options, Concepteur XAML | Microsoft Docs
+title: Page des options du concepteur XAML | Microsoft Docs
 ms.custom: 
-ms.date: 01/17/2017
+ms.date: 03/02/2017
 ms.reviewer: 
 ms.suite: 
 ms.technology:
@@ -30,13 +30,13 @@ translation.priority.ht:
 - zh-cn
 - zh-tw
 translationtype: Human Translation
-ms.sourcegitcommit: 7c944afe8c89b8a5e30bf1e5937e848e078954ac
-ms.openlocfilehash: f4a4832e5659a46b236cdcf9ff2eecdc3cabf57d
-ms.lasthandoff: 02/22/2017
+ms.sourcegitcommit: a42f5a30375192c89c9984e40ba0104da98d7253
+ms.openlocfilehash: d23a47b708754248cd5c3fb8d86510a0c96491fa
+ms.lasthandoff: 03/07/2017
 
 ---
-# <a name="options-xaml-designer"></a>Options, Concepteur XAML
-Utilisez la page de propriétés du **concepteur XAML** pour spécifier la mise en forme des éléments et attributs dans vos documents XAML. Pour ouvrir la boîte de dialogue **Options**, choisissez le menu **Outils**, puis **Options**. Pour accéder à la page de propriétés du **concepteur XAML**, choisissez le nœud **Concepteur XAML**. Les paramètres du concepteur XAML sont appliqués quand vous ouvrez le document. Par conséquent, si vous modifiez les paramètres, vous devez fermer et rouvrir Visual Studio pour afficher les modifications.
+# <a name="xaml-designer-options-page"></a>Page des options du concepteur XAML
+Utilisez la page des options du **concepteur XAML** pour spécifier la mise en forme des éléments et attributs dans vos documents XAML. Pour ouvrir cette page, choisissez le menu **Outils**, puis **Options**. Pour accéder à la page de propriétés du **concepteur XAML**, choisissez le nœud **Concepteur XAML**. Les paramètres du concepteur XAML sont appliqués quand vous ouvrez le document. Par conséquent, si vous modifiez les paramètres, vous devez fermer et rouvrir Visual Studio pour afficher les modifications.
 
 > [!NOTE]
 >  Les boîtes de dialogue et les commandes de menu qui s'affichent peuvent être différentes de celles qui sont décrites dans l'aide, en fonction de vos paramètres actifs ou de l'édition utilisée. Pour modifier vos paramètres, choisissez **Importation et exportation de paramètres** dans le menu **Outils** . Pour plus d’informations, consultez [Personnalisation des paramètres de développement dans Visual Studio](http://msdn.microsoft.com/en-us/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  

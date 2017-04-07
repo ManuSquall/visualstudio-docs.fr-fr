@@ -1,57 +1,73 @@
 ---
-title: "IDebugInterceptExceptionCompleteEvent2 | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "IDebugInterceptExceptionCompleteEvent2"
-helpviewer_keywords: 
-  - "IDebugInterceptExceptionCompleteEvent2"
+title: IDebugInterceptExceptionCompleteEvent2 | Documents Microsoft
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology:
+- vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords:
+- IDebugInterceptExceptionCompleteEvent2
+helpviewer_keywords:
+- IDebugInterceptExceptionCompleteEvent2
 ms.assetid: 8ebc256b-5428-4ed6-a505-6aedc8242b8e
 caps.latest.revision: 9
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 9
----
-# IDebugInterceptExceptionCompleteEvent2
-[!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]
+ms.author: gregvanl
+manager: ghogen
+translation.priority.mt:
+- cs-cz
+- de-de
+- es-es
+- fr-fr
+- it-it
+- ja-jp
+- ko-kr
+- pl-pl
+- pt-br
+- ru-ru
+- tr-tr
+- zh-cn
+- zh-tw
+translationtype: Machine Translation
+ms.sourcegitcommit: ca7c86466fa23fb21a932f26dc24e37c71cf29b4
+ms.openlocfilehash: 900f8d9905e33fea900527ac2620ef398f6060ce
+ms.lasthandoff: 04/05/2017
 
-Cette interface est envoyée par le moteur \(DE\) de débogage au gestionnaire de débogage de session \(SDM\) lorsque le De a terminé la gestion d'un événement désactivé.  
+---
+# <a name="idebuginterceptexceptioncompleteevent2"></a>IDebugInterceptExceptionCompleteEvent2
+Cette interface est envoyée par le moteur de débogage (DE) pour le Gestionnaire de session de débogage (SDM) lorsque le D’a terminé le traitement d’un événement intercepté.  
   
-## Syntaxe  
+## <a name="syntax"></a>Syntaxe  
   
 ```  
 IDebugInterceptExceptionCompleteEvent2 : IUnknown  
 ```  
   
-## Remarques à l'intention des implémenteurs  
- Le De implémente cette interface pour signaler que le traitement d'une exception interceptée a été effectué.  l'interface d' [IDebugEvent2](../../../extensibility/debugger/reference/idebugevent2.md) doit être implémentée sur le même objet que cette interface.  Le SDM utilise [QueryInterface](/visual-cpp/atl/queryinterface) pour accéder à l'interface d' `IDebugEvent2` .  
+## <a name="notes-for-implementers"></a>Notes pour les implémenteurs  
+ Le D’implémente cette interface pour signaler que le traitement d’une exception interceptée est terminé. Le [IDebugEvent2](../../../extensibility/debugger/reference/idebugevent2.md) interface doit être implémentée sur le même objet que cette interface. Le SDM utilise [QueryInterface](/cpp/atl/queryinterface) pour accéder à la `IDebugEvent2` interface.  
   
-## Remarques pour les appelants  
- Le du crée et envoie cet objet événement pour signaler l'achèvement d'une exception arrête.  L'événement est envoyé à l'aide de la fonction de rappel d' [IDebugEventCallback2](../../../extensibility/debugger/reference/idebugeventcallback2.md) fournie par le SDM lorsqu'elle s'est attachée le programme débogué.  
+## <a name="notes-for-callers"></a>Remarques pour les appelants  
+ Le crée et envoie cet objet d’événement pour signaler la fin d’une exception interceptée. L’événement est envoyé à l’aide de la [IDebugEventCallback2](../../../extensibility/debugger/reference/idebugeventcallback2.md) fonction de rappel qui est fournie par le SDM lorsqu’il est attaché au programme en cours de débogage.  
   
-## méthodes en commande de Vtable  
- L'interface d' `IDebugInterceptExceptionCompleteEvent2` implémente les méthodes suivantes.  
+## <a name="methods-in-vtable-order"></a>Méthodes dans l'ordre Vtable  
+ Le `IDebugInterceptExceptionCompleteEvent2` interface implémente les méthodes suivantes.  
   
 |Méthode|Description|  
-|-------------|-----------------|  
-|[GetInterceptCookie](../Topic/IDebugInterceptExceptionCompleteEvent2::GetInterceptCookie.md)|Retourne la valeur unique associée à l'exception gérée.|  
+|------------|-----------------|  
+|[GetInterceptCookie](../../../extensibility/debugger/reference/idebuginterceptexceptioncompleteevent2-getinterceptcookie.md)|Retourne la valeur unique associée à l’exception gérée.|  
   
-## Notes  
- Cet événement est envoyé par [InterceptCurrentException](../../../extensibility/debugger/reference/idebugstackframe3-interceptcurrentexception.md) lorsque cette méthode a terminé avec succès gérer une exception arrête.  
+## <a name="remarks"></a>Remarques  
+ Cet événement ne sera envoyé par [InterceptCurrentException](../../../extensibility/debugger/reference/idebugstackframe3-interceptcurrentexception.md) lorsque cette méthode a terminé avec succès la gestion d’une exception interceptée.  
   
-## Configuration requise  
- en\-tête : msdbg.h  
+## <a name="requirements"></a>Spécifications  
+ En-tête : msdbg.h  
   
- l'espace de noms : Microsoft.VisualStudio.Debugger.Interop  
+ Namespace : Microsoft.VisualStudio.Debugger.Interop  
   
- Assembly : Microsoft.VisualStudio.Debugger.Interop.dll  
+ Assembly : Microsoft.VisualStudio.Debugger.Interop.dll  
   
-## Voir aussi  
+## <a name="see-also"></a>Voir aussi  
  [Interfaces de base](../../../extensibility/debugger/reference/core-interfaces.md)   
  [InterceptCurrentException](../../../extensibility/debugger/reference/idebugstackframe3-interceptcurrentexception.md)

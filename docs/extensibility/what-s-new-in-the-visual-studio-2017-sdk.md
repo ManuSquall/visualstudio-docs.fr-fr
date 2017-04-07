@@ -28,14 +28,12 @@ translation.priority.mt:
 - zh-cn
 - zh-tw
 translationtype: Machine Translation
-ms.sourcegitcommit: 221f4911981deec0330f76a82c0cc8a1b968e56e
-ms.openlocfilehash: 60898d7cace1c10006436a8d98cbd7f7628cf972
-ms.lasthandoff: 02/22/2017
+ms.sourcegitcommit: 8163a0e1230712734936b7548bef1753ee0c1d2a
+ms.openlocfilehash: 3da360fc4df5516f5d976f807319c07b49d8c4e8
+ms.lasthandoff: 03/07/2017
 
 ---
 # <a name="what39s-new-in-the-visual-studio-2017-sdk"></a>Quelles sont les nouveautés dans le Kit de développement logiciel Visual Studio 2017
-
->**Remarque :** cette documentation est préliminaire et en fonction de la version de Visual Studio 2017 RC.
 
 Le Kit de développement logiciel Visual Studio propose les fonctionnalités suivantes de nouvelle et mis à jour pour Visual Studio 2017.
 
@@ -52,8 +50,8 @@ Le nouveau format prend en charge :
 Pour en savoir plus sur ces modifications, consultez les rubriques suivantes :
 
 * [Les modifications apportées à l’extensibilité pour 2017](breaking-changes-2017.md)
-* [Prise en charge de NGen dans VSIX v3](ngen-support.md)
-* [L’installation en dehors du dossier extensions](set-install-root.md)
+* [Prise en charge de Ngen dans VSIX v3](ngen-support.md)
+* [Installation en dehors du dossier d’extensions](set-install-root.md)
 * [Forum aux Questions pour l’extensibilité de Visual Studio 2017](faq-2017.md)
 
 ## <a name="migrating-extensibility-project-to-visual-studio-2017"></a>Migration de projet d’extensibilité pour Visual Studio 2017

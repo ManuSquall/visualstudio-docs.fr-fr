@@ -1,7 +1,7 @@
 ---
 title: "Guide pratique pour signaler un problème avec Visual Studio 2017 | Microsoft Docs"
 ms.custom: 
-ms.date: 2016-10-05
+ms.date: 03/07/2017
 ms.reviewer: 
 ms.suite: 
 ms.tgt_pltfrm: 
@@ -13,12 +13,12 @@ ms.author: tglee
 manager: ghogen
 robots: noindex,nofollow
 translationtype: Human Translation
-ms.sourcegitcommit: b81a082de053b11e8dbe05317f69d4bcb603f4de
-ms.openlocfilehash: 5aac18786f3952648eeea4e7d0258a5e59c497c2
-ms.lasthandoff: 02/22/2017
+ms.sourcegitcommit: 8163a0e1230712734936b7548bef1753ee0c1d2a
+ms.openlocfilehash: 2220a1c2def8fd831f3adba1f3b02e03efe47fe9
+ms.lasthandoff: 03/07/2017
 
 ---
-# <a name="how-to-report-a-problem-with-visual-studio-2017-rc"></a>Guide pratique pour signaler un problème avec Visual Studio 2017 RC
+# <a name="how-to-report-a-problem-with-visual-studio-2017"></a>Guide pratique pour signaler un problème avec Visual Studio 2017
 Si vous rencontrez un problème avec Visual Studio, nous aimerions en être informés pour pouvoir le diagnostiquer et le résoudre.  L’outil **Signaler un problème** vous permet de recueillir des informations détaillées sur le problème et de les envoyer à Microsoft en seulement quelques clics.  
 
  Microsoft respecte votre vie privée. Pour plus d’informations sur la façon dont nous utilisons les données que vous nous envoyez, consultez [Déclaration de confidentialité des produits Microsoft Visual Studio](https://www.visualstudio.com/en-us/dn948229).  
@@ -28,13 +28,22 @@ Si vous rencontrez un problème avec Visual Studio, nous aimerions en être info
 
  ![Élément de menu Signaler un problème](../ide/media/report-a-problem-menu-item.png "Élément de menu Signaler un problème")  
 
+## <a name="sign-in-to-visual-studio"></a>Connectez-vous à Visual Studio
+ Si ce n’est pas déjà fait, vous allez vouloir vous connecter à Visual Studio avant de signaler un problème. De cette façon, non seulement vous pouvez signaler un problème auquel vous êtes confronté, mais vous pouvez aussi voter ou le commenter, et faire de même pour tout autre problème publié.
+
+  1. Cliquez sur le bouton **Se connecter** situé sur le côté gauche de l’outil, comme indiqué dans la capture d’écran suivante.
+  2. Suivez les instructions à l’écran pour vous connecter.
+
+  ![Se connecter pour signaler un problème](../ide/media/vs2017-report-a-problem-sign-in.png "Se connecter pour signaler un problème")
+
+
 ## <a name="search-and-vote-for-similar-problems"></a>Rechercher et voter pour des problèmes similaires  
 ###  <a name="search_and_vote"></a>  
 
 1.  Recherchez votre problème et vérifiez si d’autres personnes l’ont déjà signalé.
 2.  Si quelqu’un l’a signalé, rappelez-le nous.  
 
-  ![VS15-FeedbackTool-SearchForSimilarReportedProblems](../ide/media/feedbacktool-searchforsimilarreportedproblems.png "Rechercher et voter pour des problèmes similaires")
+  ![VS15-FeedbackTool-SearchForSimilarReportedProblems](../ide/media/vs2017-report-a-problem-search-and-vote.png "Rechercher et voter pour des problèmes similaires")
 
 
 ## <a name="report-a-new-problem"></a>Signaler un nouveau problème

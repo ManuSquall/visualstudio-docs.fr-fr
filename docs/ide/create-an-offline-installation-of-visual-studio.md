@@ -2,13 +2,14 @@
 title: "Créer une installation hors connexion de Visual Studio | Microsoft Docs"
 description: "Choisissez une version et découvrez comment créer une installation hors connexion de Visual Studio."
 ms.custom: 
-ms.date: 11/16/2016
+ms.date: 03/27/2017
 ms.reviewer: 
 ms.suite: 
 ms.technology:
 - vs-ide-install
 ms.tgt_pltfrm: 
 ms.topic: article
+layout: ContentPage
 f1_keywords:
 - offline installation [Visual Studio]
 - offline install [Visual Studio]
@@ -33,9 +34,9 @@ translation.priority.mt:
 - pt-br
 - tr-tr
 translationtype: Human Translation
-ms.sourcegitcommit: 5db97d19b1b823388a465bba15d057b30ff0b3ce
-ms.openlocfilehash: 6ac5d1459a89830653b877a35b12042ecfbc8157
-ms.lasthandoff: 02/22/2017
+ms.sourcegitcommit: 8163a0e1230712734936b7548bef1753ee0c1d2a
+ms.openlocfilehash: 305402c28998de265549715356c93840f3f2f09e
+ms.lasthandoff: 03/07/2017
 
 ---
 # <a name="create-an-offline-installation-of-visual-studio"></a>Créer une installation hors connexion de Visual Studio
@@ -45,5 +46,5 @@ Si vous souhaitez créer une disposition d’installation hors connexion de Visu
 Choisissez la version de Visual Studio qui vous intéresse et affichez les détails sur l’une des pages suivantes.
 
 * Pour **Visual Studio 2015**, consultez notre page [Créer une installation hors connexion de Visual Studio 2015](https://msdn.microsoft.com/library/mt706497.aspx) sur MSDN.
-* Pour **Visual Studio 2017 RC**, consultez notre page [Créer une installation hors connexion de Visual Studio 2017](../install/create-an-offline-installation-of-visual-studio.md) sur docs.microsoft.com.
+* Pour **Visual Studio 2017**, consultez notre page [Créer une installation hors connexion de Visual Studio 2017](../install/create-an-offline-installation-of-visual-studio.md) sur docs.microsoft.com.
 

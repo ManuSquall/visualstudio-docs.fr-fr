@@ -39,7 +39,7 @@ ms.lasthandoff: 02/22/2017
 # <a name="get-started-developing-with-visual-studio"></a>Bien démarrer avec le développement dans Visual Studio
 Bienvenue dans Visual Studio ! Une fois que vous avez [téléchargé](http://www.visualstudio.com/community) le produit, ces pages vous permettent de commencer à développer.  
 
--   **[Créer des applications web](https://www.visualstudio.com/features/modern-web-tooling-vs) ** : outils permettant de créer et de déployer des applications web modernes.  
+-   **[Créer des applications web](https://www.visualstudio.com/features/modern-web-tooling-vs)** : outils permettant de créer et de déployer des applications web modernes.  
 
      [Suivre un didacticiel](https://docs.asp.net/en/latest/tutorials/your-first-aspnet-application.html) &#124;                               [Parcourir la documentation](https://docs.asp.net/) &#124;                                   [Regarder une vidéo](http://www.asp.net/vnext)  
 

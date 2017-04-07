@@ -31,9 +31,9 @@ translation.priority.mt:
 - zh-cn
 - zh-tw
 translationtype: Machine Translation
-ms.sourcegitcommit: 5db97d19b1b823388a465bba15d057b30ff0b3ce
-ms.openlocfilehash: e73ab513461077ed44bec2eed7410f5317fb6a4e
-ms.lasthandoff: 02/22/2017
+ms.sourcegitcommit: ca7c86466fa23fb21a932f26dc24e37c71cf29b4
+ms.openlocfilehash: d294afcdbf434f65f556a3437af9cfa7e179703d
+ms.lasthandoff: 04/05/2017
 
 ---
 # <a name="idebugarrayfield"></a>IDebugArrayField
@@ -45,11 +45,11 @@ Cette interface décrit un symbole de tableau ou un type.
 IDebugArrayField : IDebugContainerField  
 ```  
   
-## <a name="notes-for-implementers"></a>Notes relatives à l’attention des implémenteurs  
- Le fournisseur de symboles implémente cette interface sur le même objet qui implémente le [IDebugContainerField](../../../extensibility/debugger/reference/idebugcontainerfield.md) interface. Cette interface est une spécialisation qui représente les objets du tableau.  
+## <a name="notes-for-implementers"></a>Notes pour les implémenteurs  
+ Le fournisseur de symbole implémente cette interface sur le même objet qui implémente le [IDebugContainerField](../../../extensibility/debugger/reference/idebugcontainerfield.md) interface. Cette interface est une spécialisation qui représente les objets array.  
   
 ## <a name="notes-for-callers"></a>Remarques pour les appelants  
- Utilisez [QueryInterface](/visual-cpp/atl/queryinterface) pour obtenir cette interface à partir de la [IDebugContainerField](../../../extensibility/debugger/reference/idebugcontainerfield.md) interface si [GetKind](../../../extensibility/debugger/reference/idebugfield-getkind.md) retourne l’indicateur `FIELD_TYPE_ARRAY`.  
+ Utilisez [QueryInterface](/cpp/atl/queryinterface) pour obtenir cette interface à partir de la [IDebugContainerField](../../../extensibility/debugger/reference/idebugcontainerfield.md) interface si [GetKind](../../../extensibility/debugger/reference/idebugfield-getkind.md) retourne l’indicateur `FIELD_TYPE_ARRAY`.  
   
 ## <a name="methods-in-vtable-order"></a>Méthodes dans l'ordre Vtable  
  Outre les méthodes sur le [IDebugField](../../../extensibility/debugger/reference/idebugfield.md) et [IDebugContainerField](../../../extensibility/debugger/reference/idebugcontainerfield.md) interfaces, cette interface implémente les éléments suivants :  

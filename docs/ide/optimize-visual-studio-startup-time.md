@@ -18,9 +18,9 @@ manager: ghogen
 f1_keywords:
 - vs.performancecenter
 translationtype: Human Translation
-ms.sourcegitcommit: ba88bad0753653dcde8a4d28b4dd1c71522d6506
-ms.openlocfilehash: 435197f1536dc9006691c0f2e58fafd0fcf27718
-ms.lasthandoff: 02/22/2017
+ms.sourcegitcommit: a42f5a30375192c89c9984e40ba0104da98d7253
+ms.openlocfilehash: 27a265dbbb1f9426ba2dd254095c84239bbd0db7
+ms.lasthandoff: 03/07/2017
 
 ---
 # <a name="optimize-visual-studio-startup-time"></a>Optimiser la vitesse de démarrage de Visual Studio
@@ -28,7 +28,7 @@ Dans l’idéal, Visual Studio doit toujours démarrer le plus rapidement possib
 
 ## <a name="control-startup-behavior"></a>Contrôler le comportement de démarrage
 
-Pour éviter d’allonger la durée de démarrage, Visual Studio 2017 RC évite de charger les extensions au démarrage, grâce à une approche de chargement à la demande. Cela signifie que les extensions ne s’ouvrent pas immédiatement au démarrage de Visual Studio, mais plutôt de manière asynchrone en fonction des besoins après le démarrage. En outre, les fenêtres d’outils restées ouvertes dans une session antérieure de Visual Studio pouvant ralentir la vitesse de démarrage, Visual Studio ouvre les fenêtres d’outils de façon plus intelligente pour ne pas affecter la vitesse de démarrage.
+Pour éviter d’allonger la durée de démarrage, Visual Studio 2017 évite de charger les extensions au démarrage, grâce à une approche de chargement à la demande. Cela signifie que les extensions ne s’ouvrent pas immédiatement au démarrage de Visual Studio, mais plutôt de manière asynchrone en fonction des besoins après le démarrage. En outre, les fenêtres d’outils restées ouvertes dans une session antérieure de Visual Studio pouvant ralentir la vitesse de démarrage, Visual Studio ouvre les fenêtres d’outils de façon plus intelligente pour ne pas affecter la vitesse de démarrage.
 
 Si Visual Studio détecte un démarrage lent, un message s’affiche pour vous signaler l’extension ou la fenêtre d’outils qui en est la cause. Le message fournit également un lien vers la boîte de dialogue **Gérer le niveau de performance de Visual Studio** qui répertorie les fenêtres d’outils et les extensions qui affectent les performances de démarrage. Cette boîte de dialogue vous permet de modifier les paramètres des fenêtres d’outils et des extensions pour améliorer les performances de démarrage.
 
@@ -44,7 +44,7 @@ Si une extension ralentit le démarrage de Visual Studio, elle apparaît dans la
 En plus des extensions de démarrage, vous pouvez également désactiver les extensions qui se chargent lors du chargement des solutions, ou quand un utilisateur tape au clavier. Choisissez simplement le scénario pour afficher la liste des extensions associées.
 
 ### <a name="control-tool-windows"></a>Contrôler les fenêtres d’outils
-Si une fenêtre d’outils ralentit le démarrage de Visual Studio, vous pouvez choisir de conserver son comportement par défaut (ce qui ne procure aucun avantage en terme de vitesse de démarrage) ou de remplacer son comportement par l’un des deux suivants :
+Si une fenêtre d’outils ralentit le démarrage de Visual Studio, vous pouvez choisir de conserver son comportement par défaut (ce qui ne procure aucun avantage en termes de vitesse de démarrage) ou de remplacer son comportement par l’un des deux suivants :
 
 - **Ne pas afficher la fenêtre au démarrage :** si vous choisissez cette option, la fenêtre d’outils spécifiée est toujours fermée quand vous ouvrez Visual Studio, même si vous l’avez laissé ouverte dans une session précédente. Vous pouvez ouvrir la fenêtre d’outils à partir du menu.
 - **Masquer automatiquement la fenêtre au démarrage :** si vous avez laissé une fenêtre d’outils ouverte lors d’une session précédente, cette option réduit le groupe de la fenêtre d’outils au démarrage pour éviter l’initialisation de la fenêtre. C’est un bon choix si vous utilisez souvent une fenêtre d’outils, car elle est quand même disponible mais n’affecte plus la vitesse de démarrage de Visual Studio.
@@ -55,7 +55,7 @@ Si vous changez d’avis, vous pouvez rétablir l’une de ces options dans la b
 
 ## <a name="speed-up-solution-load"></a>Accélérer le chargement de la solution
 
-Visual Studio 2017 RC propose une nouvelle fonctionnalité appelée **chargement de solution allégé**, qui réduit le temps et la mémoire nécessaires au chargement de grandes solutions dans l’IDE. Si vous avez une solution de grande taille contenant de nombreux projets C#, Visual Basic ou C++, vous observerez sans doute une nette amélioration des performances si vous activez le chargement de solution allégé.
+Visual Studio 2017 propose une nouvelle fonctionnalité appelée **chargement de solution allégé**, qui réduit le temps et la mémoire nécessaires au chargement de grandes solutions dans l’IDE. Si vous avez une solution de grande taille contenant de nombreux projets C#, Visual Basic ou C++, vous observerez sans doute une nette amélioration des performances si vous activez le chargement de solution allégé.
 
 Certaines fonctionnalités de l’IDE n’étant pas entièrement disponibles quand le chargement de solution allégé est activé, cette fonctionnalité est désactivée par défaut. Les sections suivantes vous aideront à décider s’il faut activer cette fonctionnalité.
 
@@ -77,7 +77,7 @@ Quand vous modifiez le paramètre de chargement de solution allégé, la modific
 
 ### <a name="automatically-enable-lightweight-solution-load"></a>Activer automatiquement le chargement de solution allégé
 
-Quand vous ouvrez une solution de grande taille dans Visual Studio 2017 RC, un message contextuel peut s’afficher et vous proposer d’activer le chargement de solution allégé. Ce message s’affiche uniquement pour les solutions contenant plusieurs projets C#, Visual Basic ou C++. Si vous choisissez la commande **Activer**, le chargement de solution allégé est activé uniquement pour cette solution. Le paramètre à l’échelle de l’IDE ne change pas.
+Quand vous ouvrez une solution de grande taille dans Visual Studio 2017, un message contextuel peut s’afficher et vous proposer d’activer le chargement de solution allégé. Ce message s’affiche uniquement pour les solutions contenant plusieurs projets C#, Visual Basic ou C++. Si vous choisissez la commande **Activer**, le chargement de solution allégé est activé uniquement pour cette solution. Le paramètre à l’échelle de l’IDE ne change pas.
 
 ![Fenêtre contextuelle](../ide/media/VSIDE_LSL Popup.png)
 
