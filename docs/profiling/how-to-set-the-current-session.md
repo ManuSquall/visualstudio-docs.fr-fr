@@ -53,7 +53,7 @@ Vous pouvez ouvrir plusieurs sessions de performance dans l’**Explorateur de p
   
 ### <a name="to-set-current-performance-session"></a>Pour définir la session de performance actuelle  
   
--   Dans l’**Explorateur de performances**, cliquez avec le bouton droit sur la session de performance, puis cliquez sur **Définir en tant que session active **.  
+-   Dans l’**Explorateur de performances**, cliquez avec le bouton droit sur la session de performance, puis cliquez sur **Définir en tant que session active**.  
   
      Le nom de la session apparaît en gras.  
   

@@ -80,7 +80,7 @@ Vous pouvez spécifier des commandes qui s’exécutent avant ou après l’inst
 3.  Tapez la commande dans la zone de texte **Ligne de commande** sous **Événements de pré-instrumentation**.  
   
     > [!NOTE]
-    >  Vous pouvez cliquer sur le bouton de sélection **(...) ** en regard de la zone **Ligne de commande** pour rechercher et sélectionner le fichier .exe, .cmd ou .bat approprié.  
+    >  Vous pouvez cliquer sur le bouton de sélection **(...)** en regard de la zone **Ligne de commande** pour rechercher et sélectionner le fichier .exe, .cmd ou .bat approprié.  
   
 4.  Cliquez sur **OK**.  
   
@@ -99,7 +99,7 @@ Vous pouvez spécifier des commandes qui s’exécutent avant ou après l’inst
 3.  Tapez la commande dans la zone de texte **Ligne de commande** sous **Événements de post-instrumentation**.  
   
     > [!NOTE]
-    >  Vous pouvez cliquer sur le bouton de sélection **(...) ** en regard de la zone **Ligne de commande** pour rechercher et sélectionner le fichier .exe, .cmd ou .bat approprié.  
+    >  Vous pouvez cliquer sur le bouton de sélection **(...)** en regard de la zone **Ligne de commande** pour rechercher et sélectionner le fichier .exe, .cmd ou .bat approprié.  
   
 4.  Cliquez sur **OK**.  
   
