@@ -55,7 +55,7 @@ Les extraits de code sont des extraits prêts à l’emploi que vous pouvez rapi
 |#if|Crée une directive [#if](/dotnet/csharp/language-reference/preprocessor-directives/preprocessor-if) et une directive [#endif](/dotnet/csharp/language-reference/preprocessor-directives/preprocessor-endif).|N’importe où.|  
 |#region|Crée une directive [#region](/dotnet/csharp/language-reference/preprocessor-directives/preprocessor-region) et une directive [#endregion](/dotnet/csharp/language-reference/preprocessor-directives/preprocessor-endregion).|N’importe où.|  
 |~|Crée un destructeur pour la classe conteneur.|Dans une classe.|  
-|attribute|Crée une déclaration pour une classe qui dérive de <xref:System.Attribute>.</xref:System.Attribute>.|Dans un espace de noms (notamment l’espace de noms global), une classe ou un struct.|  
+|attribute|Crée une déclaration pour une classe qui dérive de <xref:System.Attribute>.|Dans un espace de noms (notamment l’espace de noms global), une classe ou un struct.|  
 |checked|Crée un bloc [checked](/dotnet/csharp/language-reference/keywords/checked).|Dans une méthode, un indexeur, un accesseur de propriété ou un accesseur d’événement.|  
 |class|Crée une déclaration de classe.|Dans un espace de noms (notamment l’espace de noms global), une classe ou un struct.|  
 |ctor|Crée un constructeur pour la classe conteneur.|Dans une classe.|  
