@@ -59,7 +59,7 @@ Les extraits de code sont des extraits prêts à l’emploi que vous pouvez rapi
 |checked|Crée un bloc [checked](/dotnet/csharp/language-reference/keywords/checked).|Dans une méthode, un indexeur, un accesseur de propriété ou un accesseur d’événement.|  
 |class|Crée une déclaration de classe.|Dans un espace de noms (notamment l’espace de noms global), une classe ou un struct.|  
 |ctor|Crée un constructeur pour la classe conteneur.|Dans une classe.|  
-|cw|Crée un appel à <xref:System.Console.WriteLine%2A>.</xref:System.Console.WriteLine%2A>.|Dans une méthode, un indexeur, un accesseur de propriété ou un accesseur d’événement.|  
+|cw|Crée un appel à <xref:System.Console.WriteLine%2A>.|Dans une méthode, un indexeur, un accesseur de propriété ou un accesseur d’événement.|  
 |do|Crée une boucle [do](/dotnet/csharp/language-reference/keywords/do)`while`.|Dans une méthode, un indexeur, un accesseur de propriété ou un accesseur d’événement.|  
 |else|Crée un bloc [else](/dotnet/csharp/language-reference/keywords/if-else).|Dans une méthode, un indexeur, un accesseur de propriété ou un accesseur d’événement.|  
 |enum|Crée une déclaration [enum](/dotnet/csharp/language-reference/keywords/enum).|Dans un espace de noms (notamment l’espace de noms global), une classe ou un struct.|  
