@@ -29,9 +29,9 @@ translation.priority.ht:
 - zh-cn
 - zh-tw
 translationtype: Human Translation
-ms.sourcegitcommit: e9a05d008f671fb79d6813a14c594b82f27697e3
-ms.openlocfilehash: b5d72a83092c2b97b30b7a8af539a0b1aca50418
-ms.lasthandoff: 03/27/2017
+ms.sourcegitcommit: adf122a478b29674dc2924dcf7d42972a5a3f52e
+ms.openlocfilehash: 1d26ca1a464e2ec15c0d5d338a46b6fb1e7e1d65
+ms.lasthandoff: 04/10/2017
 
 ---
 
@@ -105,7 +105,7 @@ Une fois arrêté au niveau d’un point d’arrêt, vous disposez de différent
 
 ### <a name="inspecting-and-modifying-values"></a>Inspection et modification de valeurs
 
-Lorsque vous êtes arrêté dans le débogueur, vous pouvez inspecter et modifier les valeurs des variables. Vous pouvez également utiliser la Fenêtre Espion pour surveiller des variables spécifiques, ainsi que des expressions personnalisées. (Pour obtenir des informations générales, consultez la section [Inspect Variables](../debugger/getting-started-with-the-debugger.md#BKMK_Inspect_Variables) (Inspecter des variables).)
+Lorsque vous êtes arrêté dans le débogueur, vous pouvez inspecter et modifier les valeurs des variables. Vous pouvez également utiliser la Fenêtre Espion pour surveiller des variables spécifiques, ainsi que des expressions personnalisées. (Pour obtenir des informations générales, consultez la section [Inspect Variables](../debugger/getting-started-with-the-debugger.md#inspect-variables-with-the-autos-and-locals-windows) (Inspecter des variables).)
 
 Pour visualiser une valeur à l’aide des DataTips, il vous suffit de positionner le pointeur de la souris sur une variable quelconque dans l’éditeur. Vous pouvez alors cliquer sur cette valeur si vous souhaitez la modifier :
 

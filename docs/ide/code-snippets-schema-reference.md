@@ -433,7 +433,7 @@ is a great color. I love Blue.
 |[Default, élément](../ide/code-snippets-schema-reference.md#default)|Élément requis. Spécifie la valeur par défaut du littéral lorsque vous insérez l'extrait de code. Un élément `Default` doit contenir exactement un élément `Literal`.|  
 |[Function, élément](../ide/code-snippets-schema-reference.md#function)|Élément facultatif. Spécifie une fonction à exécuter lorsque le littéral reçoit le focus dans Visual Studio. Il peut y avoir zéro ou un élément `Function` dans un élément `Literal`.|  
 |[ID, élément](../ide/code-snippets-schema-reference.md#id)|Élément requis. Spécifie l'identificateur unique du littéral. Un élément `ID` doit contenir exactement un élément `Literal`.|  
-|[ToolTip, élément](../ide/code-snippets-schema-reference.md#tooltip)|Élément facultatif. Décrit la valeur attendue et l'utilisation du littéral. Un élément ** peut contenir zéro ou un élément **Tooltip`Literal`.|  
+|[ToolTip, élément](../ide/code-snippets-schema-reference.md#tooltip)|Élément facultatif. Décrit la valeur attendue et l'utilisation du littéral. Un élément **peut contenir zéro ou un élément**Tooltip`Literal`.|  
   
 |Parent, élément|Description|  
 |--------------------|-----------------|  
@@ -479,7 +479,7 @@ is a great color. I love Blue.
 |[Default, élément](../ide/code-snippets-schema-reference.md#default)|Élément requis. Spécifie la valeur par défaut du littéral lorsque vous insérez l'extrait de code. Un élément `Default` doit contenir exactement un élément `Literal`.|  
 |[Function, élément](../ide/code-snippets-schema-reference.md#function)|Élément facultatif. Spécifie une fonction à exécuter lorsque le littéral reçoit le focus dans Visual Studio. Il peut y avoir zéro ou un élément `Function` dans un élément `Literal`.|  
 |[ID, élément](../ide/code-snippets-schema-reference.md#id)|Élément requis. Spécifie l'identificateur unique du littéral. Un élément `ID` doit contenir exactement un élément `Literal`.|  
-|[ToolTip, élément](../ide/code-snippets-schema-reference.md#tooltip)|Élément facultatif. Décrit la valeur attendue et l'utilisation du littéral. Un élément ** peut contenir zéro ou un élément **Tooltip`Literal`.|  
+|[ToolTip, élément](../ide/code-snippets-schema-reference.md#tooltip)|Élément facultatif. Décrit la valeur attendue et l'utilisation du littéral. Un élément **peut contenir zéro ou un élément**Tooltip`Literal`.|  
 |[Type, élément](../ide/code-snippets-schema-reference.md#type)|Élément requis. Spécifie le type de l'objet. Un élément `Type` doit contenir exactement un élément `Object`.|  
   
 |Parent, élément|Description|  

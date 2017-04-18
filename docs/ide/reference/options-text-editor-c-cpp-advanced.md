@@ -34,9 +34,9 @@ translation.priority.ht:
 - zh-cn
 - zh-tw
 translationtype: Human Translation
-ms.sourcegitcommit: e9a05d008f671fb79d6813a14c594b82f27697e3
-ms.openlocfilehash: ba9c9b60de651eecc92ea10ba44579a7dadc36df
-ms.lasthandoff: 03/27/2017
+ms.sourcegitcommit: ca7c86466fa23fb21a932f26dc24e37c71cf29b4
+ms.openlocfilehash: 9c9e9e8c63d69e797a28ce4f8b1ac0adcf074b77
+ms.lasthandoff: 04/05/2017
 
 ---
 # <a name="options-text-editor-cc-advanced"></a>Options, Éditeur de texte, C/C++, Avancé
@@ -139,7 +139,7 @@ En modifiant ces options, vous pouvez changer le comportement lié à IntelliSen
  **Unités de traduction mises en cache maximum**  
  Nombre maximal d’unités de traduction qui restent actives à tout moment pour les demandes IntelliSense. Vous devez spécifier une valeur entre 2 et 15. Ce nombre est directement lié au nombre maximal de processus VCPkgSrv.exe qui s’exécutent (pour une instance donnée de Visual Studio). La valeur par défaut est 2, mais si vous avez de la mémoire disponible, vous pouvez augmenter cette valeur et éventuellement obtenir des performances légèrement supérieures dans IntelliSense.  
   
- Pour plus d’informations sur les unités de traduction, consultez [Phases de traduction](/visual-cpp/preprocessor/phases-of-translation).  
+ Pour plus d’informations sur les unités de traduction, consultez [Phases de traduction](/cpp/preprocessor/phases-of-translation).  
 
  **« Point par flèche » pour la liste des membres**  
  Remplace « . » par « -> » le cas échéant pour la liste des membres.

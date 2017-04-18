@@ -2,9 +2,9 @@
 layout: LandingPage
 title: JavaScript dans Visual Studio
 translationtype: Human Translation
-ms.sourcegitcommit: 77e7ce26df70e41e2328442454fe78c7a663f1f3
-ms.openlocfilehash: d0001966d7787266f9fb67c0bbe7a3b2e7a92b1e
-ms.lasthandoff: 03/08/2017
+ms.sourcegitcommit: 9328c347d548a03a536cea16bd5851817c03d5a2
+ms.openlocfilehash: 31389d1757a5f48123c99bde41aea0c5fec5aebb
+ms.lasthandoff: 04/10/2017
 
 ---
 # <a name="javascript-in-visual-studio"></a>JavaScript dans Visual Studio
@@ -12,6 +12,24 @@ ms.lasthandoff: 03/08/2017
 JavaScript est un langage de premier ordre dans Visual Studio. Vous pouvez utiliser la plupart ou toutes les aides standard de modification (extraits de code, IntelliSense, etc.) lorsque vous écrivez du code JavaScript dans l'IDE de Visual Studio. Vous pouvez écrire du code JavaScript pour de nombreux types d'applications et services.
 
 <ul class="panelContent cardsFTitle">
+    <li>
+        <a href="https://docs.microsoft.com/visualstudio/scripting/javascript/javascript-in-vs-2017">
+        <div class="cardSize">
+            <div class="cardPadding">
+                <div class="card">
+                    <div class="cardImageOuter">
+                        <div class="cardImage">
+                            <img src="/en-us/media/common/i_learn-about.svg" alt="">
+                        </div>
+                    </div>
+                    <div class="cardText">
+                        <h3>Découvrir les nouvelles fonctionnalités JavaScript dans Visual Studio 2017</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </a>
+    </li>
     <li>
         <a href="https://docs.microsoft.com/visualstudio/cross-platform/tools-for-cordova/">
         <div class="cardSize">

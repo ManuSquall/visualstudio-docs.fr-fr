@@ -39,7 +39,7 @@ ms.lasthandoff: 02/22/2017
 
 ---
 # <a name="find-in-files-command"></a>Rechercher dans les fichiers, commande
-Recherche des fichiers en utilisant un sous-ensemble des options disponibles sous l’onglet **Rechercher dans les fichiers ** de la fenêtre **Rechercher et remplacer**.  
+Recherche des fichiers en utilisant un sous-ensemble des options disponibles sous l’onglet **Rechercher dans les fichiers** de la fenêtre **Rechercher et remplacer**.  
   
 ## <a name="syntax"></a>Syntaxe  
   

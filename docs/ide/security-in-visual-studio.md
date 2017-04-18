@@ -31,9 +31,9 @@ translation.priority.ht:
 - zh-cn
 - zh-tw
 translationtype: Human Translation
-ms.sourcegitcommit: 7a282fc04c1eb01f0c56b1d76880276fc270686d
-ms.openlocfilehash: 96136c7223f3d5f78fff9bfe3106d48cab4dd44a
-ms.lasthandoff: 03/01/2017
+ms.sourcegitcommit: ca7c86466fa23fb21a932f26dc24e37c71cf29b4
+ms.openlocfilehash: 57f7d51786d2636eb865eb81bb3468e79c6f19f9
+ms.lasthandoff: 04/05/2017
 
 ---
 # <a name="security-in-visual-studio"></a>Sécurité dans Visual Studio
@@ -54,7 +54,7 @@ Vous devez prendre en compte la sécurité dans tous les aspects du développeme
  [Instructions de codage sécurisé](http://msdn.microsoft.com/Library/4f882d94-262b-4494-b0a6-ba9ba1f5f177)  
  Fournit des instructions sur le classement de vos composants afin de résoudre les problèmes de sécurité.  
   
- [Bonnes pratiques de sécurité](/visual-cpp/top/security-best-practices-for-cpp)  
+ [Bonnes pratiques de sécurité](/cpp/top/security-best-practices-for-cpp)  
  Explique les dépassements de mémoire tampon et présente en détails la fonctionnalité de vérification de la sécurité de Microsoft Visual C++ fournie par le repère de compilation /GS.
 
 ## <a name="building-for-security"></a>Générer avec des fonctionnalités de sécurité  

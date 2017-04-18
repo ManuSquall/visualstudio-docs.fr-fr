@@ -42,15 +42,15 @@ translation.priority.mt:
 - pt-br
 - tr-tr
 translationtype: Human Translation
-ms.sourcegitcommit: 5658ecf52637a38bc3c2a5ad9e85b2edebf7d445
-ms.openlocfilehash: c576d025bef7ee5013ae8f3b561502fd89251a4e
-ms.lasthandoff: 02/22/2017
+ms.sourcegitcommit: ca7c86466fa23fb21a932f26dc24e37c71cf29b4
+ms.openlocfilehash: 85a03270b20b050cc5ca96f57311c98c0d9b53d1
+ms.lasthandoff: 04/05/2017
 
 ---
 # <a name="managing-application-resources-net"></a>Gestion des ressources d'une application (.NET)
 Les fichiers de ressources sont des fichiers qui font partie d’une application, mais qui ne sont pas compilés, par exemple, des fichiers icône ou des fichiers audio. Comme ces fichiers ne font pas partie du processus de compilation, vous pouvez les modifier sans avoir à recompiler vos fichiers binaires. Si vous envisagez de localiser votre application, vous devez utiliser des fichiers de ressources pour toutes les chaînes et autres ressources qui doivent être modifiées quand vous localisez votre application.  
   
- Pour plus d’informations sur les ressources des applications de bureau .NET, consultez [Ressources dans des applications de bureau](http://msdn.microsoft.com/Library/8ad495d4-2941-40cf-bf64-e82e85825890). Pour plus d’informations sur les ressources des applications de bureau C++, consultez [Utilisation de fichiers de ressource](/visual-cpp/windows/working-with-resource-files).  
+ Pour plus d’informations sur les ressources des applications de bureau .NET, consultez [Ressources dans des applications de bureau](http://msdn.microsoft.com/Library/8ad495d4-2941-40cf-bf64-e82e85825890). Pour plus d’informations sur les ressources des applications de bureau C++, consultez [Utilisation de fichiers de ressource](/cpp/windows/working-with-resource-files).  
   
  Les applications du Windows Store utilisent un autre modèle de ressources que celui des applications de bureau. Pour plus d’informations sur les ressources des applications du Windows Store, consultez [Définition des ressources d’applications](https://msdn.microsoft.com/en-us/library/windows/apps/hh465228.aspx) sur le site web du le centre de développement Windows.  
   

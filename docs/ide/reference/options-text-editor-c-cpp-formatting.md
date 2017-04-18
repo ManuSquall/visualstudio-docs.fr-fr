@@ -35,9 +35,9 @@ translation.priority.ht:
 - zh-cn
 - zh-tw
 translationtype: Human Translation
-ms.sourcegitcommit: a42f5a30375192c89c9984e40ba0104da98d7253
-ms.openlocfilehash: f70339a150a53d346ab9a6f59b4b1634263f5b9e
-ms.lasthandoff: 03/07/2017
+ms.sourcegitcommit: ca7c86466fa23fb21a932f26dc24e37c71cf29b4
+ms.openlocfilehash: 80ce7de7e89844d8c9cb1052499b2d873e04965e
+ms.lasthandoff: 04/05/2017
 
 ---
 # <a name="options-text-editor-cc-formatting"></a>Options, Éditeur de texte, C/C++, Mise en forme
@@ -81,16 +81,16 @@ Vous permet de modifier le comportement par défaut de l'Éditeur de code lorsqu
  Lorsque vous ouvrez un fichier dans l’éditeur de texte, vous pouvez activer la fonctionnalité mode Plan. Pour plus d’informations, voir [Mode Plan](../../ide/outlining.md). Lorsque cette option est sélectionnée, la fonctionnalité mode Plan est activée à l’ouverture d’un fichier.  
   
  **Mode Plan automatique des blocs #pragma region**  
- Quand cette option est sélectionnée, le mode Plan automatique pour les [directives de pragma](/visual-cpp/preprocessor/pragma-directives-and-the-pragma-keyword) est activé. Cela vous permet de développer ou de réduire les blocs de région pragma en mode Plan.  
+ Quand cette option est sélectionnée, le mode Plan automatique pour les [directives de pragma](/cpp/preprocessor/pragma-directives-and-the-pragma-keyword) est activé. Cela vous permet de développer ou de réduire les blocs de région pragma en mode Plan.  
   
  **Mode Plan automatique des blocs d’instruction**  
  Lorsque cette option est sélectionnée, le mode Plan automatique est activé pour les constructions d'instruction suivantes :  
   
 -   [if-else](/dotnet/csharp/language-reference/keywords/if-else)  
   
--   [switch, instruction (C++)](/visual-cpp/cpp/switch-statement-cpp)  
+-   [switch, instruction (C++)](/cpp/cpp/switch-statement-cpp)  
   
--   [while, instruction (C++)](/visual-cpp/cpp/while-statement-cpp)  
+-   [while, instruction (C++)](/cpp/cpp/while-statement-cpp)  
   
 ## <a name="see-also"></a>Voir aussi  
  [Général, Environnement, boîte de dialogue Options](../../ide/reference/general-environment-options-dialog-box.md)   

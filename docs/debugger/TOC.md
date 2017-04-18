@@ -97,6 +97,7 @@
 ## [Déboguer à distance ASP.NET sur un ordinateur IIS](remote-debugging-aspnet-on-a-remote-iis-7-5-computer.md)
 ## [Déboguer à distance un projet C#](remote-debugging-csharp.md)
 ## [Déboguer à distance un projet C++](remote-debugging-cpp.md)
+## [Déboguer à distance ASP.NET sur Azure](remote-debugging-azure.md)
 ## [Configurer le Pare-feu Windows pour le débogage distant](configure-the-windows-firewall-for-remote-debugging.md)
 ## [Affectations de port du débogueur distant](remote-debugger-port-assignments.md)
 ## [Erreurs et résolution des problèmes du débogage distant](remote-debugging-errors-and-troubleshooting.md)

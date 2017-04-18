@@ -1,5 +1,6 @@
 # [Référence sur le langage JavaScript](javascript-language-reference.md)
 # [Nouveautés de JavaScript](what-s-new-in-javascript.md)
+# [JavaScript dans Visual Studio 2017](javascript-in-vs-2017.md)
 # [Notions de base JavaScript](javascript-fundamentals.md)
 ## [Écriture de code JavaScript](writing-javascript-code.md)
 ## [Variables](variables-javascript.md)

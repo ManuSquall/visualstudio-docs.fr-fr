@@ -1,7 +1,7 @@
 ---
 title: Boucle REPL interactive Python dans Visual Studio | Microsoft Docs
 ms.custom: 
-ms.date: 3/7/2017
+ms.date: 4/10/2017
 ms.prod: visual-studio-dev15
 ms.reviewer: 
 ms.suite: 
@@ -29,9 +29,9 @@ translation.priority.ht:
 - zh-cn
 - zh-tw
 translationtype: Human Translation
-ms.sourcegitcommit: 7d726441c2d6953bd7b50451bec7fff05d5d71b0
-ms.openlocfilehash: f31d92f193af3fb32f61030ca52e444ae2baa60b
-ms.lasthandoff: 03/10/2017
+ms.sourcegitcommit: 9328c347d548a03a536cea16bd5851817c03d5a2
+ms.openlocfilehash: ca444dbe9fea25b205ae2060d462f23957368496
+ms.lasthandoff: 04/10/2017
 
 ---
 
@@ -72,7 +72,7 @@ Vous pouvez ouvrir une fenêtre interactive sur le fichier de démarrage dans vo
 
 ![Exécution du projet dans le menu Python Interactive](media/interactive-execute-project.png)
 
-Enfin, vous pouvez sélectionner un code dans un fichier et utiliser la [commande d’envoi de code vers la fenêtre interactive](#send-code-to-interactive) décrite ci-dessous.
+Enfin, vous pouvez sélectionner un code dans un fichier et utiliser la [commande d’envoi de code vers la fenêtre interactive](#send-code-to-interactive-command) décrite ci-dessous.
 
 ## <a name="interactive-window-options"></a>Options de la fenêtre interactive
 
