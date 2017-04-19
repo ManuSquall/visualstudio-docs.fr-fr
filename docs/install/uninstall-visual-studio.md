@@ -32,9 +32,9 @@ translation.priority.mt:
 - pt-br
 - tr-tr
 translationtype: Human Translation
-ms.sourcegitcommit: 9e635a28d3338bcf518a0aec69c476280eedf6e2
-ms.openlocfilehash: 3a4dda7736409ce60d6f1a1aa42b820978d63074
-ms.lasthandoff: 03/27/2017
+ms.sourcegitcommit: 47c39bd711b69efdb863d71f11e3e472054a3ce3
+ms.openlocfilehash: 3aa97878f868f59d0e5dbdb6eb1eac7268e9efd3
+ms.lasthandoff: 04/06/2017
 
 ---
 
@@ -62,5 +62,7 @@ Si vous changez d’avis par la suite et que vous voulez réinstaller Visual Stu
 
 ## <a name="see-also"></a>Voir aussi  
 * [Installer Visual Studio](install-visual-studio.md)
+* [Modifier Visual Studio 2017](modify-visual-studio.md)
+* [Mettre à jour Visual Studio](update-visual-studio.md)
 * [Guide pratique pour signaler un problème avec Visual Studio 2017](../ide/how-to-report-a-problem-with-visual-studio-2017.md)
 

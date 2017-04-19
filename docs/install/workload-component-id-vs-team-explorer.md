@@ -1,5 +1,5 @@
 ---
-title: "ID de composant et de charge de travail de Visual Studio Test Professional 2017 | Microsoft Docs"
+title: "ID de composant et de charge de travail de Visual Studio Team Explorer 2017 | Microsoft Docs"
 description: "Utilisez les ID de composant et de charge de travail de Visual Studio pour fournir des outils de test intégrés pour les testeurs généralistes"
 keywords: 
 author: TerryGLee
@@ -15,7 +15,7 @@ ms.prod: visual-studio-dev15
 ms.service: 
 ms.technology:
 - vs-ide-install
-ms.assetid: 70c03438-8434-4921-ada0-c172519af431
+ms.assetid: c6ef9a3b-d13d-49b4-9faa-51fa06b21e1f
 translation.priority.ht:
 - de-de
 - es-es
@@ -32,15 +32,15 @@ translation.priority.mt:
 - pt-br
 - tr-tr
 translationtype: Human Translation
-ms.sourcegitcommit: 47c39bd711b69efdb863d71f11e3e472054a3ce3
-ms.openlocfilehash: 130317d20e3da1a10634bd2be60df369f635aeb7
-ms.lasthandoff: 04/06/2017
+ms.sourcegitcommit: 293d694cfff4c375b342d8322483c84fbbeb446c
+ms.openlocfilehash: 7a4538f04e18630da5adeb8189716a5ac34f3c47
+ms.lasthandoff: 04/07/2017
 
 ---
 
-# <a name="visual-studio-test-professional-2017-component-directory"></a>Répertoire des composants Visual Studio Test Professional 2017
+# <a name="visual-studio-team-explorer-2017-component-directory"></a>Répertoire des composants Visual Studio Team Explorer 2017
 
-Les tableaux de cette page répertorient les ID que vous pouvez utiliser pour installer Visual Studio à l’aide de la ligne de commande. Notez que nous ajouterons des composants supplémentaires lors de la publication de mises à jour de Visual Studio.
+Les tableaux de cette page listent les ID que vous pouvez utiliser pour installer Visual Studio à l’aide de la ligne de commande. Notez que nous ajouterons des composants supplémentaires lors de la publication de mises à jour de Visual Studio.
 
 En outre, notez ce qui suit concernant cette page :
 
@@ -48,20 +48,19 @@ En outre, notez ce qui suit concernant cette page :
 * Par défaut, les composants **requis** sont installés lorsque vous installez la charge de travail. Si vous le souhaitez, vous pouvez également installer les composants **recommandés** et **facultatifs**.
 * Nous avons également ajouté une section qui répertorie les composants supplémentaires qui ne sont affiliés à aucune charge de travail.
 
-Pour plus d’informations sur l’utilisation de ces ID, consultez la page [Utiliser les paramètres de ligne de commande pour installer Visual Studio 2017 RC](use-command-line-parameters-to-install-visual-studio.md). Pour obtenir la liste des ID de charge de travail et de composant des autres produits, consultez la page [ID de composant et de charge de travail de Visual Studio 2017](workload-and-component-ids.md).
+Pour plus d’informations sur l’utilisation de ces ID, consultez la page [Utiliser les paramètres de ligne de commande pour installer Visual Studio 2017 RC](use-command-line-parameters-to-install-visual-studio.md). Pour obtenir la liste des ID de charge de travail et de composant triés des autres produits, consultez la page [ID de composant et de charge de travail de Visual Studio 2017](workload-and-component-ids.md).
 
-## <a name="test-professional"></a>Test Professional
+## <a name="visual-studio-core-editor-included-with-visual-studio-team-explorer-2017"></a>Éditeur de base de Visual Studio (fourni avec Visual Studio Team Explorer 2017)
 
-**ID :** Microsoft.VisualStudio.Workload.TestProfessional
+**ID :** Microsoft.VisualStudio.Workload.CoreEditor
 
-**Description :** Test Professional fournit des outils de test intégrés destinés aux testeurs généralistes pour les aider à répondre aux besoins de test sur l’ensemble du cycle de vie de test.
+**Description :** Expérience de l’interpréteur de commandes de base de Visual Studio, notamment la modification du code prenant en compte la syntaxe, la gestion de code source et la gestion des éléments de travail.
 
 ### <a name="components-included-by-this-workload"></a>Composants inclus par cette charge de travail
 
 ID de composant | Nom | Version | Type de dépendance
 --- | --- | --- | ---
-Microsoft.VisualStudio.Component.TestTools.FeedbackClient | Outil de Feedback Microsoft | 15.0.26208.0 | Obligatoire
-Microsoft.VisualStudio.Component.TestTools.MicrosoftTestManager | Microsoft Test Manager | 15.0.26228.0 | Obligatoire
+Microsoft.VisualStudio.Component.CoreEditor | Éditeur de base de Visual Studio | 15.0.26208.0 | Obligatoire
 ## <a name="unaffiliated-components"></a>Composants non affiliés
 
 Il s’agit de composants qui ne sont inclus dans aucune charge de travail, mais qui peuvent être sélectionnés de manière individuelle.
