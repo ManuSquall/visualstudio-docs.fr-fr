@@ -1,7 +1,7 @@
 ---
 title: "Nouveautés de Visual Studio 2017 │ Microsoft Docs"
 ms.custom: 
-ms.date: 03/08/2017
+ms.date: 04/04/2017
 ms.reviewer: 
 ms.suite: 
 ms.tgt_pltfrm: 
@@ -31,9 +31,9 @@ translation.priority.mt:
 - pt-br
 - tr-tr
 translationtype: Human Translation
-ms.sourcegitcommit: 8c4e45eadd81c54a372885ce89ccced1256d3b3d
-ms.openlocfilehash: 14a06f4344989052b0a020570dc87d9697ba95d0
-ms.lasthandoff: 03/09/2017
+ms.sourcegitcommit: ca7c86466fa23fb21a932f26dc24e37c71cf29b4
+ms.openlocfilehash: b19199274d116e20af4c415673ebbeded95859d9
+ms.lasthandoff: 04/05/2017
 
 ---
 # <a name="what39s-new-in-visual-studio-2017"></a>Nouveautés dans Visual Studio 2017 RC
@@ -49,7 +49,7 @@ Voici un récapitulatif des modifications que nous avons apportées :
 * **Développement d’applications Cloud avec Azure**. Une suite intégrée d’outils Azure qui vous permettent de créer des applications prioritairement centrées sur le Cloud et alimentées par Microsoft Azure. Visual Studio vous permet de facilement configurer, générer, déboguer, packager et déployer des applications et services sur Azure.
 * **Développement d’applications mobiles**. Dans Visual Studio 2017, vous pouvez innover et obtenir des résultats rapides grâce à Xamarin, qui unifie vos besoins mobiles multi-plateformes à l’aide d’une base de code et d’un ensemble de compétences essentiels. Favorisez la mobilité de vos équipes existantes, les investissements technologiques, et optez pour le code C# pour créer des expériences consommateur en avance et pour un budget inférieur. Accélérez chaque étape du cycle de vie mobile pour offrir des expériences consommateur de classe mondiale ou un portefeuille d’applications de productivité pour encourager la mobilité de votre personnel.
 
-Voici plus d’informations sur certain des changements les plus importants.
+Voici des informations détaillées supplémentaires sur certains des changements les plus importants.
 
 ## <a name="performance-improvements"></a>Amélioration des performances
 
@@ -58,7 +58,7 @@ Voici plus d’informations sur certain des changements les plus importants.
 
  Visual Studio simplifie et accélère l’installation des fonctionnalités dont vous avez besoin, quand vous en avez besoin. Une désinstallation « propre » est également disponible.
 
- Le changement le plus important que vous constaterez lors de l’installation de Visual Studio est la nouvelle expérience proposée. Sur l’onglet **Charges de travail**, les options d’installation sont regroupées afin de représenter des plates-formes, des langues et des infrastructures communes. Il couvre tout depuis le développement .NET Desktop au développement d’applications sur Windows, Linux et iOS.   
+ Le changement le plus important que vous constaterez lors de l’installation de Visual Studio est la nouvelle expérience proposée. Dans l’onglet **Charges de travail**, les options d’installation sont regroupées pour représenter les plateformes, les langages et les frameworks courants. Il couvre tout depuis le développement .NET Desktop au développement d’applications sur Windows, Linux et iOS.   
 
  ![Boîte de dialogue d’installation de Visual Studio 2017](../install/media/vs2017-workloads.PNG "Écran d’installation de Visual Studio 2017")
 
@@ -84,7 +84,7 @@ Visual Studio déplace ses extensions (et fonctionne également avec des extensi
 ## <a name="productivity-improvements"></a>Améliorations de la productivité
 
 ### <a name="sign-in-across-multiple-accounts"></a>Se connecter sur plusieurs comptes  
-Nous avons introduit dans Visual Studio 2017 un nouveau service d’identité qui permet de partager des comptes d’utilisateur dans Team Explorer, Azure Tools, la publication dans le Windows Store, et bien plus encore.
+Nous avons introduit dans Visual Studio un nouveau service d’identité qui permet de partager des comptes d’utilisateur dans Team Explorer, Azure Tools, la publication dans le Windows Store, et bien plus encore.
 
 Vous pouvez rester connecté plus longtemps également. Visual Studio ne vous demande pas de vous reconnecter toutes les 12 heures. Pour en savoir plus, consultez le billet de blog [Invites de connexion à Visual Studio moins nombreuses](https://blogs.msdn.microsoft.com/visualstudio/2016/08/15/fewer-visual-studio-sign-in-prompts/).
 
@@ -123,6 +123,21 @@ Dans Visual Studio Enterprise 2017, les tests unitaires en direct offrent des r
 
 ![Tests unitaires en direct](../ide/media/lut-codewindow.png "Un exemple de notre nouvelle fonctionnalité Tests unitaires en direct de l’édition Enterprise de Visual Studio")
 
+Pour plus d’informations, consultez le billet de blog [Live Unit Testing in Visual Studio 2017 Enterprise](https://blogs.msdn.microsoft.com/visualstudio/2017/03/09/live-unit-testing-in-visual-studio-2017-enterprise/).
+
+### <a name="devops"></a>DevOps
+#### <a name="redgate-data-tools"></a>Redgate Data Tools :
+Pour étendre les fonctionnalités DevOps au développement de base de données SQL Server, les outils Redgate Data Tools sont désormais disponibles dans les éditions suivantes de Visual Studio 2017.
+
+Inclus avec Visual Studio Enterprise 2017 :
+- [Redgate ReadyRoll Core](http://www.red-gate.com/products/sql-development/readyroll/entrypage/microsoft-and-readyroll?utm_source=microsoft&utm_medium=link&utm_campaign=readyroll&utm_term=relnotes0317) vous permet de développer des scripts de migration, de gérer les modifications de base de données à l’aide du contrôle de code source et d’automatiser en toute sécurité des déploiements de modifications de base de données en même temps que les modifications des applications.
+- [Redgate SQL Prompt Core](http://www.red-gate.com/products/sql-development/sql-prompt/entrypage/microsoft-and-sql-prompt?utm_source=microsoft&utm_medium=link&utm_campaign=sqlprompt&utm_term=relnotes0317) vous permet d’écrire du code SQL plus rapidement et avec une plus grande précision grâce à la complétion de code intelligente. SQL Prompt complète automatiquement les objets et les mots clés de la base de données et du système, et propose des suggestions de colonne au fil de votre frappe. Cela aboutit à un code plus propre et à moins d’erreurs, car vous n’avez pas à vous souvenir de chaque nom de colonne ou de chaque alias.
+
+Inclus avec toutes les éditions de Visual Studio 2017 :
+- [Redgate SQL Search](http://www.red-gate.com/products/sql-development/sql-search/?utm_source=microsoft&utm_medium=link&utm_campaign=sqlsearch&utm_term=relnotes0317) augmente votre productivité en vous aidant à trouver rapidement des objets et des fragments SQL parmi plusieurs bases de données.
+
+Pour en savoir plus, consultez notre billet de blog [Redgate Data Tools in Visual Studio 2017](https://blogs.msdn.microsoft.com/visualstudio/2017/03/07/redgate-data-tools-in-visual-studio-2017/).
+
 ### <a name="visual-studio-ide-enhancements"></a>Améliorations de l’environnement de développement intégré (IDE) de Visual Studio
 #### <a name="interact-with-git"></a>Interagissez avec Git :
 Lorsque vous travaillez avec un projet dans Visual Studio, vous pouvez installer et rapidement valider et publier votre code sur un service Git. Vous pouvez également gérer vos référentiels Git en cliquant dans les menus à partir des boutons situés en bas à droite de l’IDE.
@@ -130,7 +145,7 @@ Lorsque vous travaillez avec un projet dans Visual Studio, vous pouvez installer
 ![Visual Studio 2017 interagit avec la boîte de dialogue Git](../ide/media/vsIDE-GitInteraction.png "Outils Git dans l’IDE de Visual Studio")
 
 #### <a name="view-and-navigate-code-with-structure-visualizer"></a>Afficher et parcourir le code avec le Visualiseur de structure :
-Le Visualiseur de structure dessine des lignes de repère de structure (ou guides de mise en retrait) dans votre code. Vous pouvez les utiliser pour visualiser et distinguer le bloc de code dans lequel vous vous trouvez à tout moment sans avoir à faire défiler le code. Survolez les lignes pour afficher les info-bulles qui vous permettent de voir l’ouverture de ce bloc et de ses parents. Il est disponible pour toutes les langues prises en charge via les syntaxes TextMate, ainsi que C#, Visual Basic et XAML.
+Le Visualiseur de structure dessine des lignes de repère de structure (ou guides de mise en retrait) dans votre code. Vous pouvez les utiliser pour visualiser et distinguer le bloc de code dans lequel vous vous trouvez à tout moment sans avoir à faire défiler le code. Survolez les lignes pour afficher les info-bulles qui vous permettent de voir l’ouverture de ce bloc et de ses parents. Il est disponible dans tous les langages pris en charge via les syntaxes TextMate, ainsi que C#, Visual Basic et XAML.
 
 ![Visualiseur de structure Visual Studio 2017](../ide/media/vsIDE-StructureVisualizer.png "Visualiseur de Structure dans Visual Studio")
 
@@ -152,7 +167,7 @@ Nous avons actualisé l’expérience de navigation pour permettre le déplaceme
 Pour plus d’informations sur nos nouvelles fonctionnalités de productivité, consultez le billet de blog [Productivity in Visual Studio 2017](https://blogs.msdn.microsoft.com/visualstudio/2016/11/28/productivity-in-visual-studio-2017-rc/) (Productivité dans Visual Studio 2017) par Mark Wilson-Thomas.
 
 ### <a name="visual-c"></a>Visual C++
-Nous avons également ajouté plusieurs améliorations à Visual Studio, notamment la distribution des instructions de base C++ avec Visual Studio, la mise à jour du compilateur grâce à l’amélioration de la prise en charge des fonctionnalités C++&11; et C++, ainsi que l’ajout et la mise à jour des fonctionnalités dans les bibliothèques C++. Nous avons également amélioré les performances de l’IDE de C++, les charges de travail d’installation et bien plus encore.
+Nous avons également ajouté plusieurs améliorations à Visual Studio, notamment la distribution des instructions de base C++ avec Visual Studio, la mise à jour du compilateur grâce à l’amélioration de la prise en charge des fonctionnalités C++ 11 et C++, ainsi que l’ajout et la mise à jour des fonctionnalités dans les bibliothèques C++. Nous avons également amélioré les performances de l’IDE de C++, les charges de travail d’installation et bien plus encore.
 
 Par ailleurs, nous avons corrigé plus de 250 bogues et signalé des problèmes dans le compilateur et les outils, dont la plupart avaient été soumis par des clients via [Microsoft Connect](https://connect.microsoft.com/VisualStudio "Microsoft Connect").
 

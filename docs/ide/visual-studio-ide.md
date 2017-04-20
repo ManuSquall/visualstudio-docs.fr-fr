@@ -27,9 +27,9 @@ translation.priority.mt:
 - pt-br
 - tr-tr
 translationtype: Human Translation
-ms.sourcegitcommit: b0d84db6a16861fb9554af2a644423f906784748
-ms.openlocfilehash: b2ff9c3505b117469854a24cad8e9b13d8039db8
-ms.lasthandoff: 03/07/2017
+ms.sourcegitcommit: 06cdfb076120ffd7459a16b56c659bb86942cd7f
+ms.openlocfilehash: c8276097c53ea49d223c43ada5511ab5d5f38036
+ms.lasthandoff: 03/31/2017
 
 ---
 # <a name="visual-studio-ide-feature-tour"></a>Visite guidée des fonctionnalités de l’IDE Visual Studio
@@ -51,7 +51,7 @@ Vous pouvez exploiter la puissance du Cloud pour vos applications mobiles en cr�
 Visual Studio propose une suite d’outils qui facilitent la création d’applications Cloud alimentées par Microsoft Azure. Vous pouvez configurer, générer, déboguer, packager et déployer des applications et services sur Microsoft Azure directement à partir de l’IDE. Exploiter les services Azure pour vos applications à l’aide des services connectés. Pour obtenir les outils Azure pour .NET, sélectionnez la charge de travail de **développement Azure** lors de l’installation de Visual Studio. Pour plus d’informations, consultez [Visual Studio Tools pour Azure](https://www.visualstudio.com/vs/azure-tools/).
 
 ### <a name="create-apps-for-the-web"></a>Créer des applications pour le web
-Le web est le moteur de notre monde moderne et Visual Studio peut vous aider à écrire des applications conçues pour lui. Vous pouvez créer des applications web à l’aide de ASP.NET, Node.js, Python, JavaScript et TypeScript. Visual Studio comprend les infrastructures web, telles que Angular, jQuery, Express et plus encore. ASP.NET Core et .NET Core s’exécutent sur les systèmes d’exploitation Windows, Mac et Linux. Pour plus d’informations, consultez [Outils web modernes](https://www.visualstudio.com/vs/modern-web-tooling/).
+Le web est le moteur de notre monde moderne et Visual Studio peut vous aider à écrire des applications conçues pour lui. Vous pouvez créer des applications web à l’aide de ASP.NET, Node.js, Python, JavaScript et TypeScript. Visual Studio comprend les frameworks web, telles que Angular, jQuery, Express et plus encore. ASP.NET Core et .NET Core s’exécutent sur les systèmes d’exploitation Windows, Mac et Linux. Pour plus d’informations, consultez [Outils web modernes](https://www.visualstudio.com/vs/modern-web-tooling/).
 
 ### <a name="write-code-in-a-world-class-editing-environment"></a>Écrire du code dans un environnement d’édition international
 Visual Studio vous permet d’écrire du code rapidement et facilement grâce à des fonctionnalités, telles que la colorisation de syntaxe, la saisie semi-automatique, IntelliSense (descriptions contextuelles de l’élément de code sélectionné), le surlignage de code, la définition de points d’arrêt pour le débogage et bien plus encore.
@@ -68,7 +68,7 @@ Pour commencer, téléchargez Visual Studio et installez-le sur votre système. 
 
 Visual Studio n’a jamais été si léger ! Le nouveau programme d’installation modulaire vous permet de choisir et d’installer des *charges de travail*, qui sont des groupes de fonctionnalités requises pour la plate-forme ou le langage de programmation que vous préférez. Cette stratégie permet de réduire encore l’espace dédié à l’installation de Visual Studio. Ce qui implique également une plus grande rapidité de l’installation et des mises à jour.
 
-![Programme d’installation de Visual Studio](../install/media/vs2017-workloads.png)
+![Programme d’installation de Visual Studio](../ide/media/vside_tour_install_dialog.png)
 
 Outre les meilleures performances d’installation, de nombreuses améliorations ont été effectuées dans Visual Studio 2017 afin de réduire les durées globales de chargement des solutions et de démarrage de l’IDE. Par exemple, sélectionnez la nouvelle fonctionnalité de chargement de solution allégé, située dans le menu principal sous **Outils**, **Options**, **Projets et solutions** pour accélérer le chargement des solutions. Pour en savoir plus sur la configuration de Visual Studio sur votre système, consultez [Installer Visual Studio 2017](https://docs.microsoft.com/visualstudio/install/install-visual-studio).
 
@@ -83,6 +83,8 @@ Un bon moyen d’en savoir plus sur quelque chose est de l’utiliser ! Nous al
 1. Ouvrez Visual Studio. Dans le menu, sélectionnez **Fichier**, **Nouveau**, **Projet**. Utilisez les valeurs de projet par défaut.
 
   ![capture d’écran](../ide/media/VSIDE_Tour_NewProject1.png)
+
+  Vous pouvez également créer un projet à l’aide de la page de démarrage. Pour plus d’informations, consultez le blog [Harness the Power of the Redesigned Start Page](https://blogs.msdn.microsoft.com/visualstudio/2016/11/29/harness-the-power-of-the-redesigned-start-page/).
 
 1. La boîte de dialogue **Nouveau projet** affiche plusieurs modèles de projet. Choisissez la catégorie **Windows universel** sous **Visual C#**, le modèle **Applications vide (Windows Universel)**, puis cliquez sur le bouton **OK**.
 
@@ -193,16 +195,15 @@ Voici d’autres fonctionnalités de productivité courantes de Visual Studio.
 
   ![Explorateur d’objets montrant le composant System.Timer](../ide/media/objectbrowser.png)  
 
-## <a name="collaborate-with-others-and-control-your-source-code"></a>Collaborer avec d’autres utilisateurs et contrôler votre code source
-Vous pouvez gérer votre code source dans des référentiels Git hébergés par tous types de fournisseurs, y compris GitHub. Ou utilisez [Visual Studio Team Services (VSTS)](https://www.visualstudio.com/team-services/) pour gérer le code en même temps que les bogues et les éléments de travail de votre projet entier.
+## <a name="manage-your-source-code-and-collaborate-with-others"></a>Gérer votre code source et collaborer avec d’autres utilisateurs
+Vous pouvez gérer votre code source dans des référentiels Git hébergés par tous types de fournisseurs, y compris GitHub. Ou utilisez [Visual Studio Team Services (VSTS)](https://www.visualstudio.com/team-services/) pour gérer le code en même temps que les bogues et les éléments de travail de votre projet entier. Pour en savoir plus sur la gestion des dépôts Git dans Visual Studio à l’aide de Team Explorer, consultez la page [Bien démarrer avec Git et Team Services](https://www.visualstudio.com/en-us/docs/git/gitquickstart-vs2017).  Visual Studio dispose également d’autres fonctionnalités de contrôle de code source intégrées. Pour en savoir plus à ce sujet, consultez le blog [New Git Features in Visual Studio 2017](https://blogs.msdn.microsoft.com/visualstudioalm/2017/03/06/new-git-features-in-visual-studio-2017/).
 
 Visual Studio Team Services est un service basé sur le cloud destiné à héberger des projets de logiciels et à permettre la collaboration dans des équipes. VSTS prend en charge les systèmes de contrôle de code source Git et Team Foundation, ainsi que les méthodologies de développement Scrum, CMMI et Agile. La gestion de version Team Foundation (TFVC) utilise un référentiel de serveur unique et centralisé pour effectuer le suivi et la gestion des versions des fichiers. Les modifications locales sont toujours archivées sur le serveur central, où les autres développeurs peuvent obtenir les dernières modifications.
 
 Team Foundation Server (TFS) est le hub de gestion du cycle de vie des applications pour Visual Studio. Il permet à toutes personnes impliquées dans le processus de développement de participer à une même solution. TFS est également utile pour la gestion des équipes et des projets hétérogènes.
 
-Si vous avez un compte Visual Studio Team Services ou Team Foundation Server sur votre réseau, vous vous y connectez via la fenêtre Team Explorer. Depuis cette fenêtre, vous pouvez vérifier le code dans ou en dehors du contrôle de code source, gérer des éléments de travail, démarrer des builds et accéder aux salles d'équipe et aux espaces de travail. Vous pouvez ouvrir Team Explorer à partir de la zone **Lancement rapide** ou du menu principal, à partir d’**Affichage, Team Explorer** ou d’**Équipe, Gérer les connexions**.  
-
-L’illustration suivante montre la fenêtre Team Explorer pour une solution qui est hébergée dans VSTS :
+Si vous avez un compte Visual Studio Team Services ou Team Foundation Server sur votre réseau, vous vous y connectez via la fenêtre Team Explorer. Depuis cette fenêtre, vous pouvez vérifier le code dans ou en dehors du contrôle de code source, gérer des éléments de travail, démarrer des builds et accéder aux salles d'équipe et aux espaces de travail. Vous pouvez ouvrir Team Explorer à partir de la zone **Lancement rapide** ou du menu principal, à partir d’**Affichage, Team Explorer** ou d’**Équipe, Gérer les connexions**.
+L’illustration suivante montre la fenêtre Team Explorer pour une solution qui est hébergée dans VSTS.
 
 ![Visual Studio Team Explorer](../ide/media/vs2017_teamexplorer.png)  
 
@@ -210,7 +211,7 @@ Pour plus d’informations sur Visual Studio Team Services, consultez [Visual St
 
 
 ## <a name="connect-to-services-databases-and-cloud-based-resources"></a>Se connecter aux services, bases de données et ressources de Cloud
-Le Cloud est essentiel dans le monde connecté actuel, et Visual Studio vous permet de l’exploiter. Par exemple, la fonctionnalité Services connectés facilite la connexion de votre application aux services. Vos applications peuvent l’utiliser pour stocker leurs données sur le stockage Azure,notamment.
+Le Cloud est essentiel dans le monde connecté actuel, et Visual Studio vous permet de l’exploiter. Par exemple, la fonctionnalité Services connectés facilite la connexion de votre application aux services. Vos applications peuvent l’utiliser pour stocker leurs données sur le stockage Azure, notamment.
 
 ![Services connectés](../ide/media/VSIDE_Tour_Connected_Services.png)
 
@@ -232,7 +233,8 @@ L’**Explorateur d’objets SQL Server** de Visual Studio offre une vue des obj
 Si Visual Studio ne dispose pas de la fonctionnalité exacte dont vous avez besoin, vous pouvez l’ajouter ! Vous pouvez personnaliser l’IDE en fonction de votre flux de travail et du style, ajouter la prise en charge des outils externes non intégrés à Visual Studio et modifier des fonctionnalités existantes pour accroître votre productivité. Visual Studio fournit des outils, des contrôles et des modèles issus de Microsoft, de nos partenaires et de la communauté. Pour en savoir plus sur l’extension de Visual Studio, consultez [Étendre l’IDE de Visual Studio](https://www.visualstudio.com/vs/extend/).
 
 ## <a name="learn-more-and-find-out-whats-new"></a>En savoir plus et découvrir les nouveautés
-Si vous n’avez jamais utilisé Visual Studio, découvrez les principes de base, en commençant par consulter [Mise en route de Visual Studio](../ide/get-started-with-visual-studio.md), ou les cours Visual Studio gratuits disponibles sur [Microsoft Virtual Academy](https://mva.microsoft.com/product-training/visual-studio-courses#!index=2&lang=1033). Si vous souhaitez découvrir les nouvelles fonctionnalités de Visual Studio 2017, consultez [Nouveautés dans Visual Studio 2017](../ide/whats-new-in-visual-studio.md).
+Si vous n’avez jamais utilisé Visual Studio, découvrez les principes de base, en commençant par lire [Bien démarrer avec Visual Studio](../ide/get-started-with-visual-studio.md), ou consultez les cours Visual Studio gratuits disponibles sur [Microsoft Virtual Academy](https://mva.microsoft.com/product-training/visual-studio-courses#!index=2&lang=1033).
+Si vous voulez découvrir les nouvelles fonctionnalités de Visual Studio 2017, consultez [Nouveautés dans Visual Studio 2017](../ide/whats-new-in-visual-studio.md).
 
 Félicitations, vous avez terminé la visite guidée de l’IDE de Visual Studio ! Nous espérons qu’elle vous aura permis de découvrir ses fonctionnalités principales.
 

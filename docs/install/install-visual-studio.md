@@ -2,7 +2,7 @@
 title: "Installer Visual Studio 2017 │ Microsoft Docs"
 description: "Découvrez comment installer Visual Studio, étape par étape."
 ms.custom: 
-ms.date: 03/07/2017
+ms.date: 04/03/2017
 ms.reviewer: 
 ms.suite: 
 ms.technology:
@@ -37,9 +37,9 @@ translation.priority.mt:
 - pt-br
 - tr-tr
 translationtype: Human Translation
-ms.sourcegitcommit: 8c4e45eadd81c54a372885ce89ccced1256d3b3d
-ms.openlocfilehash: 5552f67ae880e3b7ec832d6d035382e2abcca116
-ms.lasthandoff: 03/09/2017
+ms.sourcegitcommit: af9699b63fdfb81a274affb78856817520c38b05
+ms.openlocfilehash: 47688935cec36db174c3a0c424b1705ae47c6118
+ms.lasthandoff: 04/03/2017
 
 ---
 # <a name="install-visual-studio-2017"></a>Installer Visual Studio 2017
@@ -102,6 +102,8 @@ Pour installer Visual Studio 2017 dans la langue de votre choix, cliquez sur l�
 
 Par défaut, le programme d’installation essaie d’installer la langue du système d’exploitation quand vous l’exécutez pour la première fois. Le programme d’installation enregistre ce paramètre. Vous pouvez modifier ce paramètre en exécutant le programme d’installation à partir de la ligne de commande. Par exemple, vous pouvez forcer le programme d’installation à s’exécuter en anglais en utilisant la commande suivante : `vs_installer.exe --locale en-US`. Le programme d’installation enregistre ce paramètre pour une prochaine exécution. Le programme d’installation prend en charge les jetons de langue suivants : zh-CN, zh-TW, cs-CZ, en-US, fr-FR, de-DE, it-IT, ja-JP, ko-KR, pl-PL, pt-BR, ru-RU, es-ES et tr-TR.
 
+## <a name="get-support"></a>Obtenir de l’aide
+Parfois, des problèmes peuvent se produire. Si votre installation de Visual Studio échoue, consultez l’article [Dépannage des échecs d’installation et de mise à niveau de Visual Studio 2017](https://support.microsoft.com/help/4015967/troubleshooting-visual-studio-2017-installation-and-upgrade-failures) de la Base de connaissances pour obtenir des conseils de dépannage.
 
 ## <a name="see-also"></a>Voir aussi  
 * [Modifier Visual Studio 2017](modify-visual-studio.md)

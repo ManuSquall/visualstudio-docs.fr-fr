@@ -2,7 +2,7 @@
 title: "Modifier Visual Studio 2017 │ Microsoft Docs"
 description: "Découvrez comment modifier Visual Studio, étape par étape."
 ms.custom: H1Hack27Feb2017
-ms.date: 03/27/2017
+ms.date: 04/03/2017
 ms.reviewer: 
 ms.suite: 
 ms.technology:
@@ -34,9 +34,9 @@ translation.priority.mt:
 - pt-br
 - tr-tr
 translationtype: Human Translation
-ms.sourcegitcommit: 9e635a28d3338bcf518a0aec69c476280eedf6e2
-ms.openlocfilehash: 183f5761e0b3159412d1da6bb4f30d716a4c41db
-ms.lasthandoff: 03/27/2017
+ms.sourcegitcommit: af9699b63fdfb81a274affb78856817520c38b05
+ms.openlocfilehash: d1da76eee8295865740720e8575e7258b3719e7e
+ms.lasthandoff: 04/03/2017
 
 ---
 # <a name="modify-visual-studio-2017-by-adding-or-removing-workloads-and-components"></a>Modifier Visual Studio 2017 en ajoutant ou supprimant des charges de travail et des composants
@@ -72,6 +72,8 @@ Voici comment procéder.
 
 Si vous ne voulez pas utiliser la fonctionnalité pratique Charges de travail pour personnaliser votre installation de Visual Studio, choisissez l’option **Composants individuels** dans le programme d’installation de Visual Studio, sélectionnez les composants que vous voulez, puis suivez les invites.  
 
+## <a name="get-support"></a>Obtenir de l’aide
+Parfois, des problèmes peuvent se produire. Si votre installation de Visual Studio échoue, consultez l’article [Dépannage des échecs d’installation et de mise à niveau de Visual Studio 2017](https://support.microsoft.com/help/4015967/troubleshooting-visual-studio-2017-installation-and-upgrade-failures) de la Base de connaissances pour obtenir des conseils de dépannage.
 
 ## <a name="see-also"></a>Voir aussi  
 * [Installer Visual Studio 2017](https://go.microsoft.com/fwlink/?linkid=833223)

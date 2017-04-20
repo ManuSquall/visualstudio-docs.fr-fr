@@ -43,9 +43,9 @@ translation.priority.mt:
 - pt-br
 - tr-tr
 translationtype: Human Translation
-ms.sourcegitcommit: a42f5a30375192c89c9984e40ba0104da98d7253
-ms.openlocfilehash: 8c478c49ee429e0c5d96dc60f035fcb460b902c8
-ms.lasthandoff: 03/07/2017
+ms.sourcegitcommit: 06cdfb076120ffd7459a16b56c659bb86942cd7f
+ms.openlocfilehash: 890e181643d2cc5d4861d64ffd9052e0400126d0
+ms.lasthandoff: 03/31/2017
 
 ---
 # <a name="managing-references-in-a-project"></a>Gestion des références dans un projet
@@ -70,12 +70,12 @@ Avant d’écrire du code pour un composant externe ou un service connecté, vou
 ## <a name="windows-store-app-references"></a>Références pour applications du Windows Store  
 
 ### <a name="project-references"></a>Références de projets  
- Les projets d'applications de plateforme Windows universelle qui ciblent Windows 10 peuvent créer des références à d'autres projets de plateforme Windows universelle dans la solution, ou à des projets ou des fichiers binaires du Windows Store qui ciblent [!INCLUDE[win81](../debugger/includes/win81_md.md)], à condition que ces projets n'utilisent pas d’API qui ont été dépréciées dans Windows 10. Pour plus d’informations, consultez [Passer de Windows Runtime 8 à la plateforme Windows universelle](https://msdn.microsoft.com/en-us/library/windows/apps/dn954974.aspx).  
+ Les projets d'applications de plateforme Windows universelle qui ciblent Windows 10 peuvent créer des références à d'autres projets de plateforme Windows universelle dans la solution, ou à des projets ou des fichiers binaires du Windows Store qui ciblent [!INCLUDE[win81](../debugger/includes/win81_md.md)], à condition que ces projets n'utilisent pas d’API qui ont été dépréciées dans Windows 10. Pour plus d’informations, consultez [Passer de Windows Runtime 8 à la plateforme Windows universelle](https://docs.microsoft.com/en-us/windows/uwp/porting/w8x-to-uwp-root).  
 
- Si vous choisissez de recibler des projets [!INCLUDE[win81](../debugger/includes/win81_md.md)] sur Windows 10, consultez [Portage, migration et mise à niveau des projets Visual Studio](../porting/port-migrate-and-upgrade-visual-studio-projects.md)  
+ Si vous choisissez de recibler les projets [!INCLUDE[win81](../debugger/includes/win81_md.md)] vers Windows 10, consultez [Porter, migrer et mettre à niveau des projets Visual Studio](../porting/port-migrate-and-upgrade-visual-studio-projects.md).  
 
 ### <a name="extension-sdk-references"></a>Références des kits SDK d’extension  
- Les projets du Windows Store Visual Basic, C#, C++  et JavaScript qui ciblent la plateforme Windows universelle peuvent référencer des kits SDK d’extension qui ciblent [!INCLUDE[win81](../debugger/includes/win81_md.md)], à condition que ces kits n’utilisent pas les API dépréciées dans Windows 10. Vérifiez sur le site du fournisseur de SDK d’extension si les kits peuvent être référencés par des projets du Windows Store qui ciblent la plateforme Windows universelle.  
+ Les projets du Windows Store Visual Basic, C#, C++ et JavaScript qui ciblent la plateforme Windows universelle peuvent référencer des kits SDK d’extension qui ciblent [!INCLUDE[win81](../debugger/includes/win81_md.md)], à condition que ces kits n’utilisent pas les API dépréciées dans Windows 10. Vérifiez sur le site du fournisseur de SDK d’extension si les kits peuvent être référencés par des projets du Windows Store qui ciblent la plateforme Windows universelle.  
 
  Si vous constatez que le SDK d’extension référencé par votre application n’est pas pris en charge, vous devez effectuer les étapes suivantes :  
 
