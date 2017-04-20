@@ -54,13 +54,13 @@ Pour plus d’informations sur l’utilisation de ces ID, consultez la page [Uti
 
 **ID :** Microsoft.VisualStudio.Workload.TestProfessional
 
-**Description :** Test Professional fournit des outils de test intégrés destinés aux testeurs généralistes pour les aider à répondre aux besoins de test sur l’ensemble du cycle de vie de test.
+**Description :** Test Professional fournit des outils de test intégrés qui répondent aux besoins des testeurs généralistes tout au long du cycle de vie des tests.
 
 ### <a name="components-included-by-this-workload"></a>Composants inclus par cette charge de travail
 
 ID de composant | Nom | Version | Type de dépendance
 --- | --- | --- | ---
-Microsoft.VisualStudio.Component.TestTools.FeedbackClient | Outil de Feedback Microsoft | 15.0.26208.0 | Obligatoire
+Microsoft.VisualStudio.Component.TestTools.FeedbackClient | Microsoft Feedback Client | 15.0.26208.0 | Obligatoire
 Microsoft.VisualStudio.Component.TestTools.MicrosoftTestManager | Microsoft Test Manager | 15.0.26228.0 | Obligatoire
 ## <a name="unaffiliated-components"></a>Composants non affiliés
 

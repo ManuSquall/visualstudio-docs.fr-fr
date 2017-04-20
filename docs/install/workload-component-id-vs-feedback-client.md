@@ -1,5 +1,5 @@
 ---
-title: "ID de composant et de charge de travail deVisual Studio Feedback Client 2017 | Microsoft Docs"
+title: "ID de composant et de charge de travail de Visual Studio Feedback Client 2017 | Microsoft Docs"
 description: Utiliser les ID de composant et de charge de travail Visual Studio pour fournir des commentaires complets concernant Visual Studio Team Services ou Team Foundation Server
 keywords: 
 author: TerryGLee
@@ -40,27 +40,27 @@ ms.lasthandoff: 04/06/2017
 
 # <a name="visual-studio-feedback-client-2017-component-directory"></a>Répertoire de composants Visual Studio Feedback Client 2017
 
-Les tables de cette page répertorient les ID que vous pouvez utiliser pour installer Visual Studio à l’aide de la ligne de commande. Notez que nous ajouterons des composants supplémentaires lors de la publication de mises à jour de Visual Studio.
+Les tableaux de cette page listent les ID que vous pouvez utiliser pour installer Visual Studio à l’aide de la ligne de commande. Notez que nous ajouterons des composants supplémentaires lors de la publication de mises à jour de Visual Studio.
 
 En outre, notez ce qui suit concernant la page :
 
-* Chaque charge de travail possède sa propre section, suivie de l’ID de charge de travail et d’une table des composants disponibles pour cette charge.
+* Chaque charge de travail possède sa propre section, suivie de l’ID de charge de travail et d’un tableau des composants disponibles pour cette charge.
 * Par défaut, les composants **requis** sont installés lorsque vous installez la charge de travail. Si vous le souhaitez, vous pouvez également installer les composants **recommandés** et **facultatifs**.
-* Nous avons également ajouté une section qui répertorie les composants supplémentaires qui ne sont affiliés à aucune charge de travail.
+* Nous avons également ajouté une section qui liste les composants supplémentaires qui ne sont affiliés à aucune charge de travail.
 
 Pour plus d’informations sur l’utilisation de ces ID, consultez la page [Utiliser les paramètres de ligne de commande pour installer Visual Studio 2017 RC](use-command-line-parameters-to-install-visual-studio.md). Pour obtenir la liste des ID de charge de travail et de composant triés des autres produits, consultez la page [ID de composant et de charge de travail de Visual Studio 2017](workload-and-component-ids.md).
 
-## <a name="feedback-client"></a>outil de Feedback
+## <a name="feedback-client"></a>Feedback Client
 
 **ID :** Microsoft.VisualStudio.Workload.FeedbackClient
 
-**Description :** le client Feedback permet aux parties prenantes de fournir des commentaires complets concernant Visual Studio Team Services ou Team Foundation Server.
+**Description :** Feedback Client permet de fournir des commentaires détaillés sur Visual Studio Team Services ou Team Foundation Server.
 
 ### <a name="components-included-by-this-workload"></a>Composants inclus par cette charge de travail
 
 ID de composant | Nom | Version | Type de dépendance
 --- | --- | --- | ---
-Microsoft.VisualStudio.Component.TestTools.FeedbackClient | Outil de Feedback Microsoft | 15.0.26208.0 | Obligatoire
+Microsoft.VisualStudio.Component.TestTools.FeedbackClient | Microsoft Feedback Client | 15.0.26208.0 | Obligatoire
 
 ## <a name="unaffiliated-components"></a>Composants non affiliés
 

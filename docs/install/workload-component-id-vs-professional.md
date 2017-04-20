@@ -247,7 +247,7 @@ Microsoft.NetCore.ComponentGroup.DevelopmentTools | Outils de développement .NE
 Microsoft.VisualStudio.Component.CodeClone | Clone de code | 15.0.26208.0 | Facultatif
 Microsoft.VisualStudio.Component.CodeMap | Carte du code | 15.0.26208.0 | Facultatif
 Microsoft.VisualStudio.Component.DependencyValidation.Enterprise | Validation de dépendances dynamique | 15.0.26208.0 | Facultatif
-Microsoft.VisualStudio.Component.FSharp | Prise en charge du langage F# | 15.0.26208.0 | Optional
+Microsoft.VisualStudio.Component.FSharp | Prise en charge du langage F# | 15.0.26208.0 | Facultatif
 Microsoft.VisualStudio.Component.GraphDocument | Éditeur DGML | 15.0.26208.0 | Facultatif
 Microsoft.VisualStudio.Component.IISExpress | IIS Express  | 15.0.26208.0 | Facultatif
 Microsoft.VisualStudio.Component.NuGet | Gestionnaire de package NuGet | 15.0.26208.0 | Facultatif

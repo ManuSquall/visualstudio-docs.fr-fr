@@ -130,15 +130,15 @@ Microsoft.VisualStudio.Component.Web | Outils de développement web et ASP.NET |
 Microsoft.VisualStudio.Component.WebDeploy | Web Deploy | 15.0.26208.0 | Recommandé
 Microsoft.VisualStudio.ComponentGroup.Azure.CloudServices | Outils Azure Cloud Services | 15.0.26208.0 | Recommandé
 Microsoft.VisualStudio.ComponentGroup.Azure.ResourceManager.Tools | Outils Azure Resource Manager | 15.0.26323.1 | Recommandé
-Microsoft.Net.Component.4.6.2.SDK | SDK .NET Framework 4.6.2 | 15.0.26208.0 | Optional
-Microsoft.Net.Component.4.6.2.TargetingPack | Pack de ciblage .NET Framework 4.6.2 | 15.0.26208.0 | Optional
-Microsoft.Net.Component.4.7.SDK | SDK .NET Framework 4.7 | 15.0.26403.0 | Optional
-Microsoft.Net.Component.4.7.TargetingPack | Pack de ciblage .NET Framework 4.7 | 15.0.26403.0 | Optional
-Microsoft.Net.ComponentGroup.4.6.2.DeveloperTools | Outils de développement .NET Framework 4.6.2 | 15.0.26208.0 | Optional
-Microsoft.Net.ComponentGroup.4.7.DeveloperTools | Outils de développement .NET Framework 4.7 | 15.0.26403.0 | Optional
-Microsoft.VisualStudio.Component.Azure.Storage.AzCopy | Stockage Azure AzCopy | 15.0.26208.0 | Optional
-Microsoft.VisualStudio.Component.PowerShell.Tools | Outils PowerShell | 3.0.427 | Optional
-Microsoft.VisualStudio.Component.Wcf.Tooling | Windows Communication Foundation | 15.0.26208.0 | Optional
+Microsoft.Net.Component.4.6.2.SDK | SDK .NET Framework 4.6.2 | 15.0.26208.0 | Facultatif
+Microsoft.Net.Component.4.6.2.TargetingPack | Pack de ciblage .NET Framework 4.6.2 | 15.0.26208.0 | Facultatif
+Microsoft.Net.Component.4.7.SDK | SDK .NET Framework 4.7 | 15.0.26403.0 | Facultatif
+Microsoft.Net.Component.4.7.TargetingPack | Pack de ciblage .NET Framework 4.7 | 15.0.26403.0 | Facultatif
+Microsoft.Net.ComponentGroup.4.6.2.DeveloperTools | Outils de développement .NET Framework 4.6.2 | 15.0.26208.0 | Facultatif
+Microsoft.Net.ComponentGroup.4.7.DeveloperTools | Outils de développement .NET Framework 4.7 | 15.0.26403.0 | Facultatif
+Microsoft.VisualStudio.Component.Azure.Storage.AzCopy | Stockage Azure AzCopy | 15.0.26208.0 | Facultatif
+Microsoft.VisualStudio.Component.PowerShell.Tools | Outils PowerShell | 3.0.427 | Facultatif
+Microsoft.VisualStudio.Component.Wcf.Tooling | Windows Communication Foundation | 15.0.26208.0 | Facultatif
 
 
 ## <a name="data-storage-and-processing"></a>Traitement et stockage de données
@@ -196,7 +196,7 @@ Microsoft.VisualStudio.Component.TypeScript.2.1 | SDK TypeScript 2.1 | 15.0.2620
 Microsoft.VisualStudio.Component.VisualStudioData | Sources de données et références de service | 15.0.26208.0 | Recommandé
 Microsoft.VisualStudio.Component.Web | Outils de développement web et ASP.NET | 15.0.26323.1 | Recommandé
 Microsoft.VisualStudio.Component.WebDeploy | Web Deploy | 15.0.26208.0 | Recommandé
-Microsoft.VisualStudio.Component.FSharp | Prise en charge du langage F# | 15.0.26208.0 | Optional
+Microsoft.VisualStudio.Component.FSharp | Prise en charge du langage F# | 15.0.26208.0 | Facultatif
 
 
 ## <a name="net-desktop-development"></a>Développement .NET Desktop
@@ -236,27 +236,27 @@ Microsoft.VisualStudio.Component.DiagnosticTools | Outils de profilage | 15.0.26
 Microsoft.VisualStudio.Component.EntityFramework | Entity Framework 6 Tools | 15.0.26208.0 | Recommandé
 Microsoft.VisualStudio.Component.IntelliTrace.FrontEnd | IntelliTrace | 15.0.26208.0 | Recommandé
 Microsoft.VisualStudio.Component.LiveUnitTesting | Live Unit Testing | 15.0.26208.0 | Recommandé
-Component.Dotfuscator | PreEmptive Protection - Dotfuscator | 15.0.26208.0 | Optional
-Microsoft.Net.Component.4.6.2.SDK | SDK .NET Framework 4.6.2 | 15.0.26208.0 | Optional
-Microsoft.Net.Component.4.6.2.TargetingPack | Pack de ciblage .NET Framework 4.6.2 | 15.0.26208.0 | Optional
-Microsoft.Net.Component.4.7.SDK | SDK .NET Framework 4.7 | 15.0.26403.0 | Optional
-Microsoft.Net.Component.4.7.TargetingPack | Pack de ciblage .NET Framework 4.7 | 15.0.26403.0 | Optional
-Microsoft.Net.ComponentGroup.4.6.2.DeveloperTools | Outils de développement .NET Framework 4.6.2 | 15.0.26208.0 | Optional
-Microsoft.Net.ComponentGroup.4.7.DeveloperTools | Outils de développement .NET Framework 4.7 | 15.0.26403.0 | Optional
-Microsoft.Net.Core.Component.SDK | Outils de développement .NET Core 1.0.1 | 15.0.26208.0 | Optional
-Microsoft.NetCore.ComponentGroup.DevelopmentTools | Outils de développement .NET Core 1.0 - 1.1 | 15.0.26208.0 | Optional
-Microsoft.VisualStudio.Component.CodeClone | Clone de code | 15.0.26208.0 | Optional
-Microsoft.VisualStudio.Component.CodeMap | Carte du code | 15.0.26208.0 | Optional
-Microsoft.VisualStudio.Component.DependencyValidation.Enterprise | Validation de dépendances dynamique | 15.0.26208.0 | Optional
-Microsoft.VisualStudio.Component.FSharp | Prise en charge du langage F# | 15.0.26208.0 | Optional
-Microsoft.VisualStudio.Component.GraphDocument | Éditeur DGML | 15.0.26208.0 | Optional
-Microsoft.VisualStudio.Component.IISExpress | IIS Express  | 15.0.26208.0 | Optional
-Microsoft.VisualStudio.Component.NuGet | Gestionnaire de package NuGet | 15.0.26208.0 | Optional
-Microsoft.VisualStudio.Component.SQL.LocalDB.Runtime | SQL Server Express 2016 LocalDB | 15.0.26208.0 | Optional
-Microsoft.VisualStudio.Component.SQL.NCLI | SQL Server Native Client | 15.0.26208.0 | Optional
-Microsoft.VisualStudio.Component.Wcf.Tooling | Windows Communication Foundation | 15.0.26208.0 | Optional
-Microsoft.VisualStudio.Component.WebDeploy | Web Deploy | 15.0.26208.0 | Optional
-Microsoft.VisualStudio.ComponentGroup.ArchitectureTools.Managed | Outils d’analyse et d’architecture | 15.0.26208.0 | Optional
+Component.Dotfuscator | PreEmptive Protection - Dotfuscator | 15.0.26208.0 | Facultatif
+Microsoft.Net.Component.4.6.2.SDK | SDK .NET Framework 4.6.2 | 15.0.26208.0 | Facultatif
+Microsoft.Net.Component.4.6.2.TargetingPack | Pack de ciblage .NET Framework 4.6.2 | 15.0.26208.0 | Facultatif
+Microsoft.Net.Component.4.7.SDK | SDK .NET Framework 4.7 | 15.0.26403.0 | Facultatif
+Microsoft.Net.Component.4.7.TargetingPack | Pack de ciblage .NET Framework 4.7 | 15.0.26403.0 | Facultatif
+Microsoft.Net.ComponentGroup.4.6.2.DeveloperTools | Outils de développement .NET Framework 4.6.2 | 15.0.26208.0 | Facultatif
+Microsoft.Net.ComponentGroup.4.7.DeveloperTools | Outils de développement .NET Framework 4.7 | 15.0.26403.0 | Facultatif
+Microsoft.Net.Core.Component.SDK | Outils de développement .NET Core 1.0.1 | 15.0.26208.0 | Facultatif
+Microsoft.NetCore.ComponentGroup.DevelopmentTools | Outils de développement .NET Core 1.0 - 1.1 | 15.0.26208.0 | Facultatif
+Microsoft.VisualStudio.Component.CodeClone | Clone de code | 15.0.26208.0 | Facultatif
+Microsoft.VisualStudio.Component.CodeMap | Carte du code | 15.0.26208.0 | Facultatif
+Microsoft.VisualStudio.Component.DependencyValidation.Enterprise | Validation de dépendances dynamique | 15.0.26208.0 | Facultatif
+Microsoft.VisualStudio.Component.FSharp | Prise en charge du langage F# | 15.0.26208.0 | Facultatif
+Microsoft.VisualStudio.Component.GraphDocument | Éditeur DGML | 15.0.26208.0 | Facultatif
+Microsoft.VisualStudio.Component.IISExpress | IIS Express  | 15.0.26208.0 | Facultatif
+Microsoft.VisualStudio.Component.NuGet | Gestionnaire de package NuGet | 15.0.26208.0 | Facultatif
+Microsoft.VisualStudio.Component.SQL.LocalDB.Runtime | SQL Server Express 2016 LocalDB | 15.0.26208.0 | Facultatif
+Microsoft.VisualStudio.Component.SQL.NCLI | SQL Server Native Client | 15.0.26208.0 | Facultatif
+Microsoft.VisualStudio.Component.Wcf.Tooling | Windows Communication Foundation | 15.0.26208.0 | Facultatif
+Microsoft.VisualStudio.Component.WebDeploy | Web Deploy | 15.0.26208.0 | Facultatif
+Microsoft.VisualStudio.ComponentGroup.ArchitectureTools.Managed | Outils d’analyse et d’architecture | 15.0.26208.0 | Facultatif
 
 
 ## <a name="game-development-with-unity"></a>Développement de jeux avec Unity
@@ -647,7 +647,7 @@ Microsoft.VisualStudio.Component.Web | Outils de développement web et ASP.NET |
 Microsoft.VisualStudio.Component.WebDeploy | Web Deploy | 15.0.26208.0 | Obligatoire
 Microsoft.VisualStudio.Component.Workflow | Windows Workflow Foundation | 15.0.26208.0 | Obligatoire
 Microsoft.VisualStudio.Component.TeamOffice | Visual Studio Tools pour Office (VSTO) | 15.0.26228.0 | Recommandé
-Microsoft.VisualStudio.Component.IntelliTrace.FrontEnd | IntelliTrace | 15.0.26208.0 | Optional
+Microsoft.VisualStudio.Component.IntelliTrace.FrontEnd | IntelliTrace | 15.0.26208.0 | Facultatif
 
 
 ## <a name="universal-windows-platform-development"></a>Développement de la plateforme universelle Windows
@@ -731,22 +731,22 @@ Microsoft.VisualStudio.Component.IntelliTrace.FrontEnd | IntelliTrace | 15.0.262
 Microsoft.VisualStudio.Component.SQL.LocalDB.Runtime | SQL Server Express 2016 LocalDB | 15.0.26208.0 | Recommandé
 Microsoft.VisualStudio.Component.SQL.NCLI | SQL Server Native Client | 15.0.26208.0 | Recommandé
 Microsoft.VisualStudio.ComponentGroup.ArchitectureTools.Managed | Outils d’analyse et d’architecture | 15.0.26208.0 | Recommandé
-Component.Dotfuscator | PreEmptive Protection - Dotfuscator | 15.0.26208.0 | Optional
-Microsoft.Component.MSBuild | MSBuild | 15.0.26208.0 | Optional
-Microsoft.Component.VC.Runtime.OSSupport | Runtime Visual C++ pour UWP | 15.0.26208.0 | Optional
-Microsoft.Net.Component.4.6.TargetingPack | Pack de ciblage .NET Framework 4.6 | 15.0.26208.0 | Optional
-Microsoft.VisualStudio.Component.AppInsights.Tools | Developer Analytics Tools | 15.0.26323.1 | Optional
-Microsoft.VisualStudio.Component.ClassDesigner | Concepteur de classes | 15.0.26208.0 | Optional
-Microsoft.VisualStudio.Component.DslTools | SDK Modeling | 15.0.26208.0 | Optional
-Microsoft.VisualStudio.Component.Roslyn.Compiler | Compilateurs Roslyn C# et Visual Basic | 15.0.26208.0 | Optional
-Microsoft.VisualStudio.Component.Roslyn.LanguageServices | C# et Visual Basic | 15.0.26208.0 | Optional
-Microsoft.VisualStudio.Component.Static.Analysis.Tools | Outils d’analyse statique | 15.0.26208.0 | Optional
-Microsoft.VisualStudio.Component.TextTemplating | Transformation de modèle de texte | 15.0.26208.0 | Optional
-Microsoft.VisualStudio.Component.VC.ATL | Prise en charge de Visual C++ ATL | 15.0.26208.0 | Optional
-Microsoft.VisualStudio.Component.VC.ATLMFC | Prise en charge de MFC et d’ATL (x86 et x64) | 15.0.26208.0 | Optional
-Microsoft.VisualStudio.Component.VC.CoreIde | Fonctionnalités de base C++ de Visual Studio | 15.0.26208.0 | Optional
-Microsoft.VisualStudio.Component.VC.Tools.x86.x64 | Ensemble d’outils VC++ 2017 v141 (x86, x64) | 15.0.26208.0 | Optional
-Microsoft.VisualStudio.Component.VSSDK | SDK Visual Studio | 15.0.26208.0 | Optional
+Component.Dotfuscator | PreEmptive Protection - Dotfuscator | 15.0.26208.0 | Facultatif
+Microsoft.Component.MSBuild | MSBuild | 15.0.26208.0 | Facultatif
+Microsoft.Component.VC.Runtime.OSSupport | Runtime Visual C++ pour UWP | 15.0.26208.0 | Facultatif
+Microsoft.Net.Component.4.6.TargetingPack | Pack de ciblage .NET Framework 4.6 | 15.0.26208.0 | Facultatif
+Microsoft.VisualStudio.Component.AppInsights.Tools | Developer Analytics Tools | 15.0.26323.1 | Facultatif
+Microsoft.VisualStudio.Component.ClassDesigner | Concepteur de classes | 15.0.26208.0 | Facultatif
+Microsoft.VisualStudio.Component.DslTools | SDK Modeling | 15.0.26208.0 | Facultatif
+Microsoft.VisualStudio.Component.Roslyn.Compiler | Compilateurs Roslyn C# et Visual Basic | 15.0.26208.0 | Facultatif
+Microsoft.VisualStudio.Component.Roslyn.LanguageServices | C# et Visual Basic | 15.0.26208.0 | Facultatif
+Microsoft.VisualStudio.Component.Static.Analysis.Tools | Outils d’analyse statique | 15.0.26208.0 | Facultatif
+Microsoft.VisualStudio.Component.TextTemplating | Transformation de modèle de texte | 15.0.26208.0 | Facultatif
+Microsoft.VisualStudio.Component.VC.ATL | Prise en charge de Visual C++ ATL | 15.0.26208.0 | Facultatif
+Microsoft.VisualStudio.Component.VC.ATLMFC | Prise en charge de MFC et d’ATL (x86 et x64) | 15.0.26208.0 | Facultatif
+Microsoft.VisualStudio.Component.VC.CoreIde | Fonctionnalités de base C++ de Visual Studio | 15.0.26208.0 | Facultatif
+Microsoft.VisualStudio.Component.VC.Tools.x86.x64 | Ensemble d’outils VC++ 2017 v141 (x86, x64) | 15.0.26208.0 | Facultatif
+Microsoft.VisualStudio.Component.VSSDK | SDK Visual Studio | 15.0.26208.0 | Facultatif
 
 
 ## <a name="mobile-development-with-javascript"></a>Développement mobile avec JavaScript
