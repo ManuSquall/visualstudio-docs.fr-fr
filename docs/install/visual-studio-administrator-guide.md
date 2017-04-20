@@ -1,7 +1,7 @@
 ---
 title: "Guide de l’administrateur Visual Studio │ Microsoft Docs"
 ms.custom: 
-ms.date: 04/03/2017
+ms.date: 04/06/2017
 ms.prod: visual-studio-dev15
 ms.reviewer: 
 ms.suite: 
@@ -33,9 +33,9 @@ translation.priority.mt:
 - pt-br
 - tr-tr
 translationtype: Human Translation
-ms.sourcegitcommit: af9699b63fdfb81a274affb78856817520c38b05
-ms.openlocfilehash: fb7a87b720ad29252c602d9be5b958d8417ab93e
-ms.lasthandoff: 04/03/2017
+ms.sourcegitcommit: 47c39bd711b69efdb863d71f11e3e472054a3ce3
+ms.openlocfilehash: aebd3abc671f997773fc7c557627ca23b9bf82bd
+ms.lasthandoff: 04/06/2017
 
 ---
 # <a name="visual-studio-administrator-guide-for-visual-studio-2017"></a>Guide de l’administrateur Visual Studio pour Visual Studio 2017
@@ -77,5 +77,6 @@ De plus, l’[API de configuration de l’installation](https://msdn.microsoft.c
 * [Installer Visual Studio 2017](install-visual-studio.md)
 * [Créer un programme d’installation hors connexion pour Visual Studio 2017](create-an-offline-installation-of-visual-studio.md)
 * [Utiliser les paramètres de ligne de commande pour installer Visual Studio 2017](use-command-line-parameters-to-install-visual-studio.md)
+  * [Exemples de paramètres de ligne de commande](command-line-parameter-examples.md)
 * [Signaler un problème avec Visual Studio 2017](../ide/how-to-report-a-problem-with-visual-studio-2017.md)
 

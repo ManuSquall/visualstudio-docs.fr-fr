@@ -1,7 +1,7 @@
 ---
 title: "Nouveautés de Visual Studio 2017 │ Microsoft Docs"
 ms.custom: 
-ms.date: 04/04/2017
+ms.date: 04/06/2017
 ms.reviewer: 
 ms.suite: 
 ms.tgt_pltfrm: 
@@ -31,9 +31,9 @@ translation.priority.mt:
 - pt-br
 - tr-tr
 translationtype: Human Translation
-ms.sourcegitcommit: ca7c86466fa23fb21a932f26dc24e37c71cf29b4
-ms.openlocfilehash: b19199274d116e20af4c415673ebbeded95859d9
-ms.lasthandoff: 04/05/2017
+ms.sourcegitcommit: ddc84f3b92d8e0febaea3d23b415bd6e703cc530
+ms.openlocfilehash: e04b972187b7b7ec225b48cc9b8904d804399ff8
+ms.lasthandoff: 04/07/2017
 
 ---
 # <a name="what39s-new-in-visual-studio-2017"></a>Nouveautés dans Visual Studio 2017 RC
@@ -130,11 +130,11 @@ Pour plus d’informations, consultez le billet de blog [Live Unit Testing in Vi
 Pour étendre les fonctionnalités DevOps au développement de base de données SQL Server, les outils Redgate Data Tools sont désormais disponibles dans les éditions suivantes de Visual Studio 2017.
 
 Inclus avec Visual Studio Enterprise 2017 :
-- [Redgate ReadyRoll Core](http://www.red-gate.com/products/sql-development/readyroll/entrypage/microsoft-and-readyroll?utm_source=microsoft&utm_medium=link&utm_campaign=readyroll&utm_term=relnotes0317) vous permet de développer des scripts de migration, de gérer les modifications de base de données à l’aide du contrôle de code source et d’automatiser en toute sécurité des déploiements de modifications de base de données en même temps que les modifications des applications.
-- [Redgate SQL Prompt Core](http://www.red-gate.com/products/sql-development/sql-prompt/entrypage/microsoft-and-sql-prompt?utm_source=microsoft&utm_medium=link&utm_campaign=sqlprompt&utm_term=relnotes0317) vous permet d’écrire du code SQL plus rapidement et avec une plus grande précision grâce à la complétion de code intelligente. SQL Prompt complète automatiquement les objets et les mots clés de la base de données et du système, et propose des suggestions de colonne au fil de votre frappe. Cela aboutit à un code plus propre et à moins d’erreurs, car vous n’avez pas à vous souvenir de chaque nom de colonne ou de chaque alias.
+- [Redgate ReadyRoll Core](http://www.red-gate.com/products/sql-development/readyroll/entrypage/microsoft-and-readyroll?utm_source=microsoft&utm_medium=link&utm_campaign=readyroll&utm_term=docs-newinvs) vous permet de développer des scripts de migration, de gérer les modifications de base de données à l’aide du contrôle de code source et d’automatiser en toute sécurité des déploiements de modifications de base de données en même temps que les modifications des applications.
+- [Redgate SQL Prompt Core](http://www.red-gate.com/products/sql-development/sql-prompt/entrypage/microsoft-and-sql-prompt?utm_source=microsoft&utm_medium=link&utm_campaign=sqlprompt&utm_term=docs-newinvs) vous permet d’écrire du code SQL plus rapidement et avec une plus grande précision grâce à la complétion de code intelligente. SQL Prompt complète automatiquement les objets et les mots clés de la base de données et du système, et propose des suggestions de colonne au fil de votre frappe. Cela aboutit à un code plus propre et à moins d’erreurs, car vous n’avez pas à vous souvenir de chaque nom de colonne ou de chaque alias.
 
 Inclus avec toutes les éditions de Visual Studio 2017 :
-- [Redgate SQL Search](http://www.red-gate.com/products/sql-development/sql-search/?utm_source=microsoft&utm_medium=link&utm_campaign=sqlsearch&utm_term=relnotes0317) augmente votre productivité en vous aidant à trouver rapidement des objets et des fragments SQL parmi plusieurs bases de données.
+- [Redgate SQL Search](http://www.red-gate.com/products/sql-development/sql-search/?utm_source=microsoft&utm_medium=link&utm_campaign=sqlsearch&utm_term=docs-newinvs) augmente votre productivité en vous aidant à trouver rapidement des objets et des fragments SQL parmi plusieurs bases de données.
 
 Pour en savoir plus, consultez notre billet de blog [Redgate Data Tools in Visual Studio 2017](https://blogs.msdn.microsoft.com/visualstudio/2017/03/07/redgate-data-tools-in-visual-studio-2017/).
 
