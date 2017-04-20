@@ -29,13 +29,42 @@ translation.priority.mt:
 - pt-br
 - tr-tr
 translationtype: Human Translation
-ms.sourcegitcommit: 91fde66abf2f325ef0a6a0a2fd30e36981f44033
-ms.openlocfilehash: 8c13675dbd06111bb0eced77f9343c80959afba1
-ms.lasthandoff: 03/08/2017
+ms.sourcegitcommit: 47c39bd711b69efdb863d71f11e3e472054a3ce3
+ms.openlocfilehash: 2af148cb8367ea3a584ac8e028c8167e4ad6123b
+ms.lasthandoff: 04/06/2017
 
 ---
 # <a name="change-log-visual-studio-tools-for-unity"></a>Journal des modifications (Visual Studio Tools pour Unity)
 Journal des modifications Visual Studio Tools pour Unity  
+
+## <a name="3100"></a>3.1.0.0
+ Publication : 07-04-2017
+
+### <a name="new-features"></a>Nouvelles fonctionnalités  
+  
+-   **Débogueur :**  
+
+    -   Ajout de la prise en charge du nouveau runtime Unity (avec compatibilité avec .NET 4.6 / C# 6).
+        
+-   **Génération de projet :**  
+
+    -   Ajout de la prise en charge du profil .NET 4.6.
+    
+    -   Ajout de la prise en charge des fichiers mcs.rsp.
+    
+    -   Activation de l’option du compilateur Autoriser le code unsafe quand Unity 5.6 est utilisé.
+    
+    -   Ajout de la prise en charge de la création de projet « Lecteur » lors de l’utilisation de la plateforme Windows Store et d’un back-end il2cpp.
+   
+### <a name="bug-fixes"></a>Correctifs de bogues  
+  
+-   **Éditeur de code :**  
+
+    -   Position du signe insertion fixe après l’insertion d’une méthode avec la saisie semi-automatique.
+  
+-   **Génération de projet :**  
+  
+    -   Suppression du post-traitement de version d’assembly.
 
 ## <a name="3001"></a>3.0.0.1
  Publication 07-03-2017

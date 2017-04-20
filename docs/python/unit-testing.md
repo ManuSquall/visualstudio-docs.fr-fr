@@ -29,9 +29,9 @@ translation.priority.ht:
 - zh-cn
 - zh-tw
 translationtype: Human Translation
-ms.sourcegitcommit: 7d726441c2d6953bd7b50451bec7fff05d5d71b0
-ms.openlocfilehash: f1148cb9e4d50241580190f274d6a4c2e3979b80
-ms.lasthandoff: 03/10/2017
+ms.sourcegitcommit: adf122a478b29674dc2924dcf7d42972a5a3f52e
+ms.openlocfilehash: 878bd0baaa0e08a31274645213b222bf6faeb412
+ms.lasthandoff: 04/10/2017
 
 ---
 
@@ -62,7 +62,7 @@ Par convention, PTVS identifie les tests comme des méthodes dont le nom commenc
       unittest.main()
   ```
 
-1. Enregistrez le fichier si nécessaire, puis ouvrez l’Explorateur de tests avec la commande de menu **Texte > Windows > Explorateur de tests**.
+1. Enregistrez le fichier si nécessaire, puis ouvrez l’Explorateur de tests avec la commande de menu **Test > Windows > Explorateur de tests**.
 
 1. L’Explorateur de tests recherche des tests dans votre projet et les affiche, comme indiqué ci-dessous. Double-cliquez sur un test pour ouvrir son fichier source.
 

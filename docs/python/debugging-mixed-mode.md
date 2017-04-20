@@ -1,7 +1,7 @@
 ---
-title: "Débogage en mode mixte dans Python Tools pour Visual Studio | Microsoft Docs"
+title: "Débogage en mode mixte pour Python dans Visual Studio | Microsoft Docs"
 ms.custom: 
-ms.date: 3/7/2017
+ms.date: 4/10/2017
 ms.prod: visual-studio-dev15
 ms.reviewer: 
 ms.suite: 
@@ -29,9 +29,9 @@ translation.priority.ht:
 - zh-cn
 - zh-tw
 translationtype: Human Translation
-ms.sourcegitcommit: e9a05d008f671fb79d6813a14c594b82f27697e3
-ms.openlocfilehash: ddbac5b8ed52e6ed7afae7e7b04dc2fa15f7a0c2
-ms.lasthandoff: 03/27/2017
+ms.sourcegitcommit: 9328c347d548a03a536cea16bd5851817c03d5a2
+ms.openlocfilehash: bdc621831893f907beba7ec5ad503fe4d96c0042
+ms.lasthandoff: 04/10/2017
 
 ---
 
@@ -70,7 +70,7 @@ Pour découvrir une présentation de la génération, du test et du débogage de
 
 - [Pile des appels combinée](#combined-call-stack)
 - [Pas à pas détaillé alternant entre code Python et natif](#stepping-between-python-and-native-code)
-- [Vue des valeurs PyObject dans le code natif](#pyobject-values-in-native-code)
+- [Vue des valeurs PyObject dans le code natif](#pyobject-values-view-in-native-code)
 - [Vue des valeurs natives dans le code Python](#native-values-view-in-python-code)
 
 ### <a name="combined-call-stack"></a>Pile des appels combinée
@@ -153,7 +153,7 @@ Le débogueur en mode mixte se différencie du [débogueur Python standard](debu
 - Fonctionnalités non prises en charge : points d’arrêt conditionnels, fenêtre de débogage interactive et débogage à distance multiplateforme.
 - Fenêtre Exécution : disponible mais avec un sous-ensemble de fonctionnalités restreint, incluant notamment toutes les limitations répertoriées dans cette section.
 - Versions Python prises en charge : CPython 2.7, 3.3 et versions ultérieures uniquement.
-- Visual Studio Shell : lorsque vous utilisez PTVS avec Visual Studio Shell (par exemple, si vous l’avez installé à l’aide du programme d’installation intégré), Visual Studio n’est pas en mesure d’ouvrir les projets C++, et l’expérience de modification des fichiers C++ se limite à celle d’un éditeur de texte de base. Toutefois, le débogage C/C++ et le débogage en mode mixte sont entièrement pris en charge dans Shell avec le code source, l’exécution d’un pas à pas détaillé dans le code natif et l’évaluation des expressions C++ dans les fenêtres de débogage.
+- Visual Studio Shell : lorsque vous utilisez Python avec Visual Studio Shell (par exemple, si vous l’avez installé à l’aide du programme d’installation intégré), Visual Studio n’est pas en mesure d’ouvrir les projets C++, et l’expérience de modification des fichiers C++ se limite à celle d’un éditeur de texte de base. Toutefois, le débogage C/C++ et le débogage en mode mixte sont entièrement pris en charge dans Shell avec le code source, l’exécution d’un pas à pas détaillé dans le code natif et l’évaluation des expressions C++ dans les fenêtres de débogage.
 - Visualisation et développement d’objets : lorsque vous visualisez des objets Python dans les fenêtres d’outil de débogage Variables locales et Espion, le débogueur en mode mixte présente uniquement la structure des objets. Il n’évalue pas automatiquement les propriétés et n’affiche pas les attributs calculés. Dans le cas des collections, il présente uniquement les éléments pour les types de collections intégrés (`tuple`, `list`, `dict`, `set`). Les types de collections personnalisés ne sont pas visualisés sous forme de collections, sauf s’ils sont hérités d’un type de collection intégré.
 - Évaluation des expressions : voir ci-dessous.
 

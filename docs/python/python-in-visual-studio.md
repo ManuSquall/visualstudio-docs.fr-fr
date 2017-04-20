@@ -29,9 +29,9 @@ translation.priority.ht:
 - zh-cn
 - zh-tw
 translationtype: Human Translation
-ms.sourcegitcommit: 5b6334c38a6c058f274498c06f8e07c934931910
-ms.openlocfilehash: 746dd25dde790d5e262e25a3702b49721edc3510
-ms.lasthandoff: 03/22/2017
+ms.sourcegitcommit: 06f5b9d2223ccb9cbbbff8f2960d89c8efbf05b2
+ms.openlocfilehash: 83a676c5f2f838b6920c5fafbe78dc9b49fbb4cb
+ms.lasthandoff: 04/12/2017
 
 ---
 
@@ -39,7 +39,7 @@ ms.lasthandoff: 03/22/2017
 
 Python est un langage de programmation très apprécié, car il est fiable, souple, simple d’emploi et utilisable sur tous les systèmes d’exploitation. Il est soutenu par une solide communauté de développeurs et par de nombreuses bibliothèques gratuites. Python prend en charge toutes les méthodes de développement, notamment les applications Web, les services web, les applications de bureau, les scripts et le calcul scientifique, et il est utilisé par une multitude d’universités, de scientifiques et de développeurs aussi bien occasionnels que professionnels. Pour plus d’informations sur ce langage, consultez le site [python.org](https://www.python.org) et la page [Python for Beginners](https://www.python.org/about/gettingstarted/) (Débuter avec Python).
 
-Visual Studio offre une prise en charge [open source](https://github.com/Microsoft/ptvs) de Python par le biais de la charge de travail Python (Visual Studio 2017) et de l’extension gratuite Python Tools pour Visual Studio (Visual Studio 2015 et versions antérieures). 
+Visual Studio offre une prise en charge [open source](https://github.com/Microsoft/ptvs) du langage Python par le biais de la charge de travail Python (Visual Studio 2017) et de l’extension gratuite Python Tools pour Visual Studio (Visual Studio 2015 et versions antérieures). 
 
 Configurez la charge de travail Python en suivant nos [instructions d’installation](installation.md), puis utilisez les liens ci-dessous pour en savoir plus sur les fonctionnalités Python et sur les capacités de Visual Studio proprement dit.
 
@@ -55,21 +55,31 @@ Configurez la charge de travail Python en suivant nos [instructions d’installa
 | [Outils de profilage avec rapports exhaustifs](profiling.md) | Collectent les données relatives à l’utilisation de votre application, en permettant notamment de comparer les performances entre différentes séquences de profilage. | [Outils de profilage](../profiling/profiling-tools.md) (certaines fonctionnalités de profilage Visual Studio ne sont pas disponibles pour Python) |
 | [Outils de test unitaire](unit-testing.md) | Permettent de découvrir, exécuter et gérer des tests dans l’Explorateur de tests Visual Studio, et de déboguer aisément des tests unitaires. | [Tests unitaires sur votre code](../test/unit-test-your-code.md) |
 
-La charge de travail Python inclut également le [Kit de développement logiciel (SDK) Azure pour Python](azure-sdk-for-python.md), qui simplifie la consommation des services Azure, avec une prise en charge pour Windows, Mac OS X et Linux.
+La charge de travail Python inclut également le [kit SDK Azure pour Python](azure-sdk-for-python.md), qui simplifie la consommation des services Azure avec une prise en charge pour Windows, Mac OS X et Linux.
 
-Visionnez également notre série de [vidéos de prise en main et d’exploration](https://www.youtube.com/playlist?list=PLReL099Y5nRdLgGAdrb_YeTdEnd23s6Ff) sur YouTube, qui vous offre une vue d’ensemble des fonctionnalités principales.
+Notre série de [vidéos de prise en main et d’exploration](https://www.youtube.com/playlist?list=PLReL099Y5nRdLgGAdrb_YeTdEnd23s6Ff) sur YouTube offre une vue d’ensemble des fonctionnalités principales.
 
 [![Vidéos concernant Python Tools](media/video-general.png)](https://www.youtube.com/playlist?list=PLReL099Y5nRdLgGAdrb_YeTdEnd23s6Ff)
 
-## <a name="features-matrix"></a>Matrice des fonctionnalités
+## <a name="questions-and-answers"></a>Questions et réponses
+
+**Q. Que puis-je utiliser pour créer une interface utilisateur avec Python ?**
+
+R. Dans ce domaine, le principal moyen est d’utiliser [Qt Project](https://www.qt.io/qt-for-application-development/), avec des liaisons pour Python appelées [PySide (la liaison officielle)](http://wiki.qt.io/PySide) (voir également les [téléchargements PySide](https://download.qt.io/official_releases/pyside/.)) et [PyQt](https://wiki.python.org/moin/PyQt). Pour l’instant, la prise en charge de Python dans Visual Studio n’inclut pas d’outils spécifiques pour le développement d’interface utilisateur.
+
+**Q. Un projet Python peut-il produire un exécutable autonome ?**
+
+R. Python est généralement un langage interprété, avec du code exécuté à la demande dans un environnement approprié prenant en charge le langage Python tel que Visual Studio et les serveurs web. Visual Studio ne fournit pas d’outils permettant de créer un exécutable autonome, qui désigne essentiellement un programme avec un interpréteur Python incorporé. Toutefois, la communauté Python décrit différents moyens de le faire sur [StackOverflow](http://stackoverflow.com/questions/5458048/how-to-make-a-python-script-standalone-executable-to-run-without-any-dependency). CPython prend également en charge l’incorporation dans une application native, comme décrit dans le billet de blog, [Using CPython’s Embeddable Zip File](https://blogs.msdn.microsoft.com/pythonengineering/2016/04/26/cpython-embeddable-zip-file/) (Utilisation d’un fichier zip incorporable dans CPython).
+
+## <a name="features-matrix"></a>Tableau des fonctionnalités
 
 La prise en charge de Python est installable dans les éditions de Visual Studio ci-après, comme décrit dans le [guide d’installation](installation.md) :
 
 - [Visual Studio 2017 Preview](https://www.visualstudio.com/vs/preview)
 - [Visual Studio 2015 (toutes éditions)] (https://www.visualstudio.com/fr-fr/downloads/visual-studio-2015-downloads-vs)
 - [Visual Studio 2013 Community Edition] (https://www.visualstudio.com/fr-fr/products/visual-studio-community-vs.aspx)
-- [Visual Studio 2013 Express pour le web, Update 2 ou version ultérieure](http://www.microsoft.com/en-us/download/details.aspx?id=40747)
-- [Visual Studio 2013 Express pour Desktop, Update 2 ou version ultérieure](http://www.microsoft.com/en-us/download/details.aspx?id=40787)
+- [Visual Studio 2013 Express pour le web, Update 2 ou version ultérieure](https://www.microsoft.com/en-us/download/details.aspx?id=44912)
+- [Visual Studio 2013 Express pour Desktop, Update 2 ou version ultérieure](https://www.microsoft.com/en-US/download/details.aspx?id=44914)
 - Visual Studio 2013 (édition Pro ou version ultérieure)
 - Visual Studio 2012 (édition Pro ou version ultérieure)
 - Visual Studio 2010 SP1 (édition Pro ou version ultérieure ; .NET 4.5 requis)
@@ -174,17 +184,17 @@ Fonctionnalités prises en charge par version et édition de Visual Studio :
 
 1. Une prise en charge de Git pour VS 2012 est disponible dans l’extension Visual Studio Tools pour Git, accessible dans la [galerie Visual Studio](http://visualstudiogallery.msdn.microsoft.com/abafc7d6-dcaa-40f4-8a5e-d6724bdb980c).
 
-2. Le déploiement vers un site web Azure requiert le [Kit de développement logiciel Azure SDK pour .NET 2.1 - VS 2010 SP1](http://go.microsoft.com/fwlink/?LinkId=313855).  Les versions ultérieures ne prennent pas en charge Visual Studio 2010.
+2. Le déploiement vers un site web Azure requiert le [kit SDK pour .NET 2.1 - VS 2010 SP1](http://go.microsoft.com/fwlink/?LinkId=313855).  Les versions ultérieures ne prennent pas en charge Visual Studio 2010.
 
-3. La prise en charge du rôle Web et du rôle de travail Azure nécessite le [Kit de développement logiciel Azure SDK pour .NET 2.3 - VS 2012](http://go.microsoft.com/fwlink/?LinkId=323511) ou une version ultérieure.
+3. La prise en charge du rôle Web et du rôle de travail Azure nécessite le [kit SDK Azure pour .NET 2.3 - VS 2012](http://go.microsoft.com/fwlink/?LinkId=323511) ou une version ultérieure.
 
-4. La prise en charge du rôle Web et du rôle de travail Azure nécessite le [Kit de développement logiciel Azure SDK pour .NET 2.3 - VS 2013](http://go.microsoft.com/fwlink/?LinkId=323510) ou une version ultérieure.
+4. La prise en charge du rôle Web et du rôle de travail Azure nécessite le [kit SDK Azure pour .NET 2.3 - VS 2013](http://go.microsoft.com/fwlink/?LinkId=323510) ou une version ultérieure.
 
 5. L’éditeur de modèle Django dans Visual Studio 2013 présente certains problèmes connus qui sont résolus par l’installation d’Update 2.
 
-6. Requiert Windows 8 ou une version ultérieure. Visual Studio 2013 Express pour le web ne comporte pas la boîte de dialogue Attacher au processus, mais le débogage à distance du site web Azure reste possible à l’aide de la commande Attacher le débogueur (Python) dans l’Explorateur de serveurs. Ceci nécessite le [Kit de développement logiciel Azure SDK pour .NET 2.3 - VS 2013](http://go.microsoft.com/fwlink/?LinkId=323510) ou une version ultérieure.
+6. Requiert Windows 8 ou une version ultérieure. Visual Studio 2013 Express pour le web ne comporte pas la boîte de dialogue Attacher au processus, mais le débogage à distance du site web Azure reste possible à l’aide de la commande Attacher le débogueur (Python) dans l’Explorateur de serveurs. Ceci nécessite le [kit SDK Azure pour .NET 2.3 - VS 2013](http://go.microsoft.com/fwlink/?LinkId=323510) ou une version ultérieure.
 
-7. Requiert Windows 8 ou une version ultérieure. La commande Attacher le débogueur (Python) dans l’Explorateur de serveurs requiert le [Kit de développement logiciel Azure SDK pour .NET 2.3 - VS 2013](http://go.microsoft.com/fwlink/?LinkId=323510) ou une version ultérieure.
+7. Requiert Windows 8 ou une version ultérieure. La commande Attacher le débogueur (Python) dans l’Explorateur de serveurs requiert le [kit SDK Azure pour .NET 2.3 - VS 2013](http://go.microsoft.com/fwlink/?LinkId=323510) ou une version ultérieure.
 
 8. Requiert Windows 8 ou une version ultérieure.
 
