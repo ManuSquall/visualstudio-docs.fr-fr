@@ -29,9 +29,9 @@ translation.priority.ht:
 - zh-cn
 - zh-tw
 translationtype: Human Translation
-ms.sourcegitcommit: 2a6555eb9c0a88b1533428cf2aa932b3fc4960ec
-ms.openlocfilehash: 2a92d10d4e47983de6e3f3c5b55adfcc5dc68c8a
-ms.lasthandoff: 03/30/2017
+ms.sourcegitcommit: adf122a478b29674dc2924dcf7d42972a5a3f52e
+ms.openlocfilehash: 1f8f68e36f94aaf253d304edaa2360333b261be3
+ms.lasthandoff: 04/10/2017
 
 ---
 
@@ -231,7 +231,7 @@ Lorsque vous ajoutez un environnement virtuel, si un fichier ` requirements.txt`
 
 ![Créer un environnement virtuel avec requirements.txt](media/environments-requirements-txt.png)
 
-Si un package ne peut pas être installé par pip et s’il apparaît dans un fichier `requirements.txt`, l’ensemble de l’installation peut échouer. Dans ce cas, modifiez manuellement le fichier à exclure de ce package ou utilisez [les options de pip](http://pip.readthedocs.org/en/latest/reference/pip_install.html#requirements-file-format) pour faire référence à une version installable du package. Par exemple, vous préférez peut-être utiliser [`pip wheel`](http://pip.readthedocs.org/en/latest/reference/pip_wheel.html) pour compiler une dépendance et ajouter l’option `--find-links <path>` à votre `requirements.txt` :
+Si un package ne peut pas être installé par pip et s’il apparaît dans un fichier `requirements.txt`, l’ensemble de l’installation échoue. Dans ce cas, modifiez manuellement le fichier à exclure de ce package ou utilisez [les options de pip](http://pip.readthedocs.org/en/latest/reference/pip_install.html#requirements-file-format) pour faire référence à une version installable du package. Par exemple, vous préférez peut-être utiliser [`pip wheel`](http://pip.readthedocs.org/en/latest/reference/pip_wheel.html) pour compiler une dépendance et ajouter l’option `--find-links <path>` à votre `requirements.txt` :
 
 ```output
 C:\Project>pip wheel azure
