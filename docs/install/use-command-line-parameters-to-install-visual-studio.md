@@ -1,7 +1,7 @@
 ---
 title: "Utiliser les paramètres de ligne de commande pour installer Visual Studio │ Microsoft Docs"
 ms.custom: 
-ms.date: 03/07/2017
+ms.date: 04/06/2017
 ms.reviewer: 
 ms.suite: 
 ms.technology:
@@ -32,16 +32,16 @@ translation.priority.mt:
 - pt-br
 - tr-tr
 translationtype: Human Translation
-ms.sourcegitcommit: 2a6555eb9c0a88b1533428cf2aa932b3fc4960ec
-ms.openlocfilehash: e8ddcebccc5a8a949c75a33de6732d42134e6445
-ms.lasthandoff: 03/30/2017
+ms.sourcegitcommit: 9328c347d548a03a536cea16bd5851817c03d5a2
+ms.openlocfilehash: 09c6971e21e48d250e3a9869860459fd8cbbb50f
+ms.lasthandoff: 04/10/2017
 
 ---
 # <a name="use-command-line-parameters-to-install-visual-studio-2017"></a>Utiliser les paramètres de ligne de commande pour installer Visual Studio 2017
 Quand vous installez Visual Studio 2017 à partir d’une invite de commandes, vous pouvez utiliser divers paramètres de ligne de commande pour contrôler ou personnaliser l’installation. À partir de la ligne de commande, vous pouvez effectuer les tâches suivantes :
-- Démarrer l’installation avec certaines options présélectionnées. 
+- Démarrer l’installation avec certaines options présélectionnées.
 - Automatiser le processus d’installation.
-- Créer un cache (disposition) des fichiers d’installation pour une utilisation ultérieure. 
+- Créer un cache (disposition) des fichiers d’installation pour une utilisation ultérieure.
 
 Les options de ligne de commande sont utilisées conjointement avec le programme d’amorçage du programme d’installation, qui est le petit fichier (environ 1 Mo) qui lance le processus de téléchargement. Le programme d’amorçage est le premier exécutable qui est lancé quand vous effectuez un téléchargement à partir du site Visual Studio. Vous pouvez obtenir un lien direct vers le programme d’amorçage de la version la plus récente de l’édition du produit que vous installez à partir des liens suivants :
 
@@ -54,11 +54,12 @@ Les options de ligne de commande sont utilisées conjointement avec le programme
 
 >  Syntaxe : `vs_enterprise.exe [command] <options>...`
 
-(remplacez `vs_enterprise.exe` comme il convient pour l’édition du produit que vous installez)
+(Remplacez `vs_enterprise.exe` comme il convient pour l’édition du produit que vous installez. Pour obtenir des exemples, consultez la page [Exemples de paramètres de ligne de commande](command-line-parameter-examples.md).)
+
 
 | **Commande** | **Description** |
-| ----------------------- | --------------- | 
-| (vide) | Installe le produit. | 
+| ----------------------- | --------------- |
+| (vide) | Installe le produit. |
 | ```modify``` | Modifie un produit installé. |
 | ```update``` | Met à jour un produit installé. |
 | ```repair``` | Répare un produit installé. |
@@ -108,7 +109,6 @@ Pour obtenir la liste des ID de charge de travail et de composant triés par pro
 | de-DE | Allemand |
 | en-US | Anglais |
 | es-ES | Espagnol |
-| cs-CZ | Tchèque |
 | fr-FR | Français |
 | it-IT | Italien |
 | ja-JP | Japonais |
@@ -123,17 +123,19 @@ Pour obtenir la liste des ID de charge de travail et de composant triés par pro
 
 ## <a name="error-codes"></a>Codes d’erreur
 En fonction du résultat de l’opération, la variable d’environnement `%ERRORLEVEL%` a l’une des valeurs suivantes :
+
 | **Valeur** | **Résultat** |
 | --------- | ---------- |
 | 0 | Opération effectuée avec succès |
 | 3010 | Opération effectuée avec succès, mais l’installation nécessite un redémarrage avant de pouvoir être utilisée |
 | Autre | Une condition d’échec s’est produite - Pour plus d’informations, consultez les journaux |
 
-Chaque opération génère, dans le répertoire `%TEMP%`, plusieurs fichiers journaux qui indiquent la progression de l’installation. Triez le dossier par date et recherchez les fichiers commençant par `dd_bootstrapper`, `dd_client` et `dd_setup` pour le programme d’amorçage, l’application du programme d’installation et le moteur d’installation, respectivement. 
+Chaque opération génère, dans le répertoire `%TEMP%`, plusieurs fichiers journaux qui indiquent la progression de l’installation. Triez le dossier par date et recherchez les fichiers commençant par `dd_bootstrapper`, `dd_client` et `dd_setup` pour le programme d’amorçage, l’application du programme d’installation et le moteur d’installation, respectivement.
 
 ## <a name="see-also"></a>Voir aussi
 
- * [Installer Visual Studio](install-visual-studio.md)
+ * [Installer Visual Studio 2017](install-visual-studio.md)
  * [Créer une installation hors connexion de Visual Studio 2017](create-an-offline-installation-of-visual-studio.md)
- * [Signaler un problème avec Visual Studio](../ide/how-to-report-a-problem-with-visual-studio-2017.md)
+ * [Exemples de paramètres de ligne de commande pour l’installation de Visual Studio 2017](command-line-parameter-examples.md)
+ * [Signaler un problème avec Visual Studio 2017](../ide/how-to-report-a-problem-with-visual-studio-2017.md)
 

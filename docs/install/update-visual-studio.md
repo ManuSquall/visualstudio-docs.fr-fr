@@ -1,7 +1,7 @@
 ---
 title: "Mettre à jour Visual Studio 2017 │ Microsoft Docs"
 description: "Découvrez comment mettre à jour Visual Studio, étape par étape."
-ms.date: 04/05/2017
+ms.date: 04/06/2017
 ms.reviewer: 
 ms.suite: 
 ms.technology:
@@ -32,9 +32,9 @@ translation.priority.mt:
 - pt-br
 - tr-tr
 translationtype: Human Translation
-ms.sourcegitcommit: 4e33dc3ebb32569b547aa9bcb6db9a15dbe4fc21
-ms.openlocfilehash: 24c955a8c571ab0466f33de4d61fd8e65f8ef18c
-ms.lasthandoff: 04/05/2017
+ms.sourcegitcommit: 47c39bd711b69efdb863d71f11e3e472054a3ce3
+ms.openlocfilehash: d97358681ba486d75b30d59da1aba8b460c6f757
+ms.lasthandoff: 04/06/2017
 
 ---
 # <a name="update-visual-studio-2017-to-the-most-recent-release"></a>Mettre à jour Visual Studio 2017 vers la version la plus récente
@@ -43,17 +43,19 @@ Nous mettons souvent à jour Visual Studio pour étendre ses fonctionnalités et
 ## <a name="update-by-using-the-notifications-hub"></a>Mise à jour à l’aide du hub Notifications
 1. Quand des mises à jour sont disponibles, un indicateur de notification s’affiche dans Visual Studio.
 
-  ![Mettre à jour Visual Studio 2017 à l’aide du hub de notification](media/notification-flag.png "L’indicateur Notifications dans Visual Studio")
+  ![Mettre à jour Visual Studio 2017 à l’aide du hub de notification](media/notification-flag.png "L’indicateur Notification dans Visual Studio")
 
   Cliquez ou appuyez sur l’indicateur de notification pour ouvrir le hub **Notifications**.
 
-  ![Mettre à jour Visual Studio 2017 à l’aide du hub de notification](media/notification-center.png "Le hub Notifications dans Visual Studio")
+  ![Mettre à jour Visual Studio 2017 à l’aide du hub de notification](media/notifications-hub.png "Le hub Notifications dans Visual Studio")
 
-  Ensuite, cliquez ou appuyez sur **"Visual Studio Update" est disponible** pour ouvrir la boîte de dialogue **Extensions et mises à jour**.
+2. Cliquez ou appuyez sur **"Visual Studio Update" est disponible** pour ouvrir la boîte de dialogue **Extensions et mises à jour**.
 
-  ![Mettre à jour Visual Studio 2017 à l’aide du hub de notification](media/notification-extension-and-updates.png "La boîte de dialogue Extensions et mises à jour dans Visual Studio")
+  ![Mettre à jour Visual Studio 2017 à l’aide du hub de notification](media/notifications-hub-select.png "Le hub Notification dans Visual Studio")
 
-2. Cliquez ou appuyez sur le bouton **Mettre à jour**.
+3. Dans la boîte de dialogue **Extensions et mises à jour**, cliquez ou appuyez sur le bouton **Mise à jour**.
+
+  ![Mettre à jour Visual Studio 2017 à l’aide du hub de notification](media/notifications-extensions-and-updates.png "La boîte de dialogue Extensions et mises à jour dans Visual Studio")
 
 ## <a name="update-by-using-the-visual-studio-installer"></a>Mise à jour à l’aide du programme d’installation de Visual Studio
 1.    Ouvrez le programme d’installation. Vous devrez peut-être mettre à jour le programme d’installation avant de continuer. Si c’est le cas, vous serez invité à le faire.
@@ -62,7 +64,9 @@ Nous mettons souvent à jour Visual Studio pour étendre ses fonctionnalités et
 
 2.    Dans la page **Produit** du programme d’installation, recherchez l’édition de Visual Studio qui est installée.
 
-3.    Si une mise à jour est disponible, un bouton **Mettre à jour** apparaît. (Le programme d’installation peut mettre plusieurs secondes à déterminer si une mise à jour est disponible.) Cliquez ou appuyez sur le bouton **Mettre à jour** pour installer les mises à jour.
+3.    Si une mise à jour est disponible, un bouton **Mettre à jour** apparaît. (Le programme d’installation peut mettre plusieurs secondes à déterminer si une mise à jour est disponible.)
+
+  Cliquez ou appuyez sur le bouton **Mettre à jour** pour installer les mises à jour.
 
      ![Mettre à jour Visual Studio 2017 à l’aide du programme d’installation de Visual Studio](media/update-visual-studio.png "Mettre à jour Visual Studio 2017 à l’aide du programme d’installation de Visual Studio")
 
@@ -71,7 +75,8 @@ Parfois, des problèmes peuvent se produire. Si votre installation de Visual Stu
 
 ## <a name="see-also"></a>Voir aussi
 * [Installer Visual Studio 2017](https://go.microsoft.com/fwlink/?linkid=833223)
-* [Modifier Visual Studio](modify-visual-studio.md)
+* [Modifier Visual Studio 2017](modify-visual-studio.md)
 * [Désinstaller Visual Studio 2017](uninstall-visual-studio.md)
-* [Guide pratique pour signaler un problème avec Visual Studio 2017](../ide/how-to-report-a-problem-with-visual-studio-2017.md)
+* [Guide de l’administrateur Visual Studio pour Visual Studio 2017](visual-studio-administrator-guide.md)
+* [Signaler un problème avec Visual Studio 2017](../ide/how-to-report-a-problem-with-visual-studio-2017.md)
 
