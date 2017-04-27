@@ -1,0 +1,1 @@
+# <a name="welcome-to-mac"></a>Bienvenue sur Mac !

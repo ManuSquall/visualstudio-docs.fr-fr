@@ -45,35 +45,30 @@ translation.priority.ht:
 - zh-cn
 - zh-tw
 translationtype: Human Translation
-ms.sourcegitcommit: d07820eda0d76163d99d7752789750eaf56182fd
-ms.openlocfilehash: 1f8372fe201d6b23ee2c65e0f6d6a2fa28976654
-ms.lasthandoff: 02/22/2017
+ms.sourcegitcommit: 9328c347d548a03a536cea16bd5851817c03d5a2
+ms.openlocfilehash: 35ad2826fb25557d05be3548351aabd27e005cba
+ms.lasthandoff: 04/10/2017
 
 ---
 # <a name="javascript-intellisense"></a>IntelliSense JavaScript
 [!include[vs_dev15](../misc/includes/vs_dev15_md.md)] procure une expérience d’édition JavaScript puissante et immédiate. Grâce à un service de langage TypeScript, Visual Studio offre des fonctionnalités IntelliSense plus riches, la prise en charge de fonctionnalités JavaScript modernes et des fonctionnalités de productivité améliorées, parmi lesquelles Atteindre la définition ou la refactorisation.
 
 > [!NOTE]
->  Le service de langage JavaScript dans [!include[vs_dev15](../misc/includes/vs_dev15_md.md)] utilise un nouveau moteur pour le service de langage (« salsa »). Outre les informations détaillées contenues dans la présente rubrique, vous pouvez consulter ce [billet de blog](https://blogs.msdn.microsoft.com/visualstudio/2016/04/08/previewing-salsa-javascript-language-service-visual-studio-15/). De plus, la nouvelle expérience d’édition s’applique principalement dans VS Code. Pour plus d’informations, consultez la [documentation sur VS Code](https://code.visualstudio.com/docs/languages/javascript).
+>  Le service de langage JavaScript dans [!include[vs_dev15](../misc/includes/vs_dev15_md.md)] utilise un nouveau moteur pour le service de langage (« salsa »). Outre les informations détaillées contenues dans la présente rubrique, vous pouvez consulter ce [billet de blog](https://blogs.msdn.microsoft.com/visualstudio/2016/11/28/more-productive-javascript-in-visual-studio-2017-rc). De plus, la nouvelle expérience d’édition s’applique principalement dans VS Code. Pour plus d’informations, consultez la [documentation sur VS Code](https://code.visualstudio.com/docs/languages/javascript).
 
 Pour plus d’informations sur les fonctionnalités IntelliSense générales de [!INCLUDE[vs_current_short](../code-quality/includes/vs_current_short_md.md)], consultez [Utilisation de la fonctionnalité IntelliSense](../ide/using-intellisense.md). 
 
 ## <a name="whats-new-in-the-javascript-language-service-in-includevsdev15miscincludesvsdev15mdmd"></a>Nouveautés du service de langage JavaScript dans [!include[vs_dev15](../misc/includes/vs_dev15_md.md)]
 
-- Fonctionnalités IntelliSense enrichies
-
-    JavaScript IntelliSense dans [!include[vs_dev15](../misc/includes/vs_dev15_md.md)] affiche désormais beaucoup plus d’informations sur les listes de paramètres et de membres.
+JavaScript IntelliSense dans [!include[vs_dev15](../misc/includes/vs_dev15_md.md)] affiche désormais beaucoup plus d’informations sur les listes de paramètres et de membres.
 Ces nouvelles informations sont fournies par le service de langage TypeScript, qui utilise l’analyse statique en arrière-plan pour mieux comprendre votre code.
-TypeScript utilise plusieurs sources pour générer ces informations.
-    - [IntelliSense basé sur l’inférence de type](#TypeInference)
-    - [IntelliSense basé sur JSDoc](#JsDoc)
-    - [IntelliSense basé sur des fichiers de déclaration TypeScript](#TSDeclFiles)
-
+TypeScript utilise plusieurs sources pour générer ces informations :
+- [IntelliSense basé sur l’inférence de type](#TypeInference)
+- [IntelliSense basé sur JSDoc](#JsDoc)
+- [IntelliSense basé sur des fichiers de déclaration TypeScript](#TSDeclFiles)
 - [Acquisition automatique de définitions de type](#Auto)
-- [Prise en charge d’ES6 et au-delà](#ES6)
-- [Prise en charge de la syntaxe JSX](#JSX)
 
-## <a name="TypeInference"></a>IntelliSense basé sur l’inférence de type
+### <a name="TypeInference"></a>IntelliSense basé sur l’inférence de type
 Dans JavaScript, la plupart du temps, aucune information de type explicite n’est disponible. Heureusement, il est en général assez facile de déduire un type en fonction du contexte du code.
 Ce processus porte le nom d’inférence de type.
 
@@ -107,7 +102,7 @@ exports.Foo = Foo;
 // Note that assigning a value to "module.exports" is also supported.
 ```
 
-## <a name="JsDoc"></a> IntelliSense basé sur JSDoc
+### <a name="JsDoc"></a> IntelliSense basé sur JSDoc
 
 Si l’inférence de type ne fournit pas les informations de type souhaitées (ou pour prendre en charge de la documentation), vous pouvez fournir les informations de type explicitement par le biais d’annotations JSDoc.  Par exemple, pour donner à un objet partiellement déclaré un type spécifique, vous pouvez utiliser la balise `@type` comme indiqué ci-dessous :
 
@@ -133,7 +128,7 @@ function Foo(param1) {
  
 Pour connaître les annotations JsDoc prises en charge, consultez [ce document](https://github.com/Microsoft/TypeScript/wiki/JsDoc-support-in-JavaScript).
 
-## <a name="TsDeclFiles"></a> IntelliSense basé sur des fichiers de déclaration TypeScript
+### <a name="TsDeclFiles"></a> IntelliSense basé sur des fichiers de déclaration TypeScript
 
 Étant donné que JavaScript et TypeScript sont désormais basés sur le même service de langage, ils sont capables d’interagir de façon plus riche. Par exemple, vous pouvez fournir JavaScript IntelliSense pour les valeurs déclarées dans un fichier `.d.ts` ([plus d’informations](https://github.com/Microsoft/TypeScript-Handbook/blob/master/pages/Writing%20Definition%20Files.md)) et utiliser les types tels que les interfaces et classes déclarées dans TypeScript en tant que types dans les commentaires JsDoc. 
 
@@ -143,7 +138,7 @@ _**Déclarations TypeScript utilisées dans JavaScript**_
 
 <img src="https://raw.githubusercontent.com/wiki/Microsoft/TypeScript/images/decl1.png" height="400" width="640"/>
 
-## <a name="Auto"></a> Acquisition automatique de définitions de type
+### <a name="Auto"></a> Acquisition automatique de définitions de type
 Dans l’univers TypeScript, ce sont des fichiers `.d.ts` qui décrivent les API des bibliothèques JavaScript les plus populaires, tandis que le dépôt le plus courant pour de telles définitions est [DefinitelyTyped](https://github.com/DefinitelyTyped/DefinitelyTyped).
 
 Par défaut, le service de langage Salsa tente de détecter les bibliothèques JavaScript en cours d’utilisation, puis télécharge et référence automatiquement le fichier `.d.ts` correspondant qui décrit la bibliothèque afin de fournir une expérience IntelliSense plus riche. Les fichiers sont téléchargés vers un cache situé dans le dossier de l’utilisateur à l’emplacement `%LOCALAPPDATA%\Microsoft\TypeScript`. 
@@ -155,96 +150,5 @@ La détection automatique fonctionne pour les dépendances téléchargées à pa
 
 Si vous ne souhaitez pas utiliser l’acquisition automatique, désactivez-la en ajoutant un fichier de configuration, comme indiqué ci-dessous. Vous pouvez toujours placer manuellement des fichiers de définition directement dans votre projet.
 
-## <a name="ES6"></a> Prise en charge d’ES6 et au-delà
 
-ES6, ou ECMAScript 2015, est la prochaine version de JavaScript. Il apporte une nouvelle syntaxe au langage : classes, fonctions arrow, `let`/`const` et bien plus encore. Toute cette nouvelle syntaxe est prise en charge dans Visual Studio.
-
-Une des principales fonctionnalités fournies par TypeScript est la possibilité d’utiliser les fonctionnalités ES6 et d’émettre du code pouvant s’exécuter dans les runtimes JavaScript qui ne comprennent pas encore ces nouvelles fonctionnalités. Cela est communément appelé « transpilation ». Étant donné que JavaScript utilise le même service de langage, il peut également tirer parti de la transpilation ES6+ vers ES5.
-
-Avant de mettre en place ce paramétrage, vous devez comprendre les options de configuration.  TypeScript est configuré par le biais d’un fichier `tsconfig.json`. En l’absence de ce fichier, certaines valeurs par défaut sont utilisées. Pour des raisons de compatibilité, ces valeurs sont différentes si seuls sont présents des fichiers JavaScript (et, éventuellement, des fichiers `.d.ts`). Pour compiler des fichiers JavaScript, vous devez ajouter un fichier `tsconfig.json`, puis définir explicitement certaines de ces valeurs par défaut.
-
-Les paramètres requis pour le fichier tsconfig sont décrits ci-dessous :
-
- - `allowJs` : cette valeur doit être définie sur `true` pour les fichiers JavaScript à reconnaître.
-TypeScript étant compilé en JavaScript, la valeur par défaut est `false`, afin que le compilateur n’inclue pas les fichiers qu’il vient de compiler.
- - `outDir` : vous devez définir ce paramètre sur un emplacement non inclus dans le projet, afin que les fichiers JavaScript émis ne soient pas détectés, puis inclus dans le projet (voir `exclude` ci-après).
- - `module` : si vous utilisez des modules, ce paramètre indique au compilateur le format de module que le code émis doit utiliser (par exemple, `commonjs` pour Node ou des outils de regroupement tels que Browserify).
- - `exclude` : ce paramètre indique les dossiers à ne pas inclure dans le projet. 
- L’emplacement de sortie, ainsi que les dossiers autres que les dossiers de projet tels que `node_modules` ou `temp`, doivent être ajoutés à ce paramètre.
- - `enableAutoDiscovery` : ce paramètre permet de détecter et télécharger automatiquement les fichiers de définition comme indiqué plus haut.
- - `compileOnSave` : ce paramètre indique au compilateur s’il doit réexécuter la compilation chaque fois qu’un fichier source est enregistré dans Visual Studio.
-
-Pour convertir des fichiers JavaScript en modules CommonJS dans un dossier `./out`, vous pouvez inclure des paramètres similaires à ceux ci-après dans un fichier `tsconfig.json`.
-
-```json
-{
-  "compilerOptions": {
-    "module": "commonjs",
-    "allowJs": true,
-    "outDir": "out"
-  },
-  "exclude": [
-    "node_modules",
-    "wwwroot",
-    "out"
-  ],
-  "compileOnSave": true,
-  "typingOptions": {
-    "enableAutoDiscovery": true
-  }
-}
-```
-
-Une fois les paramètres ci-dessus en place, s’il existe un fichier source (`./app.js`) qui contient plusieurs fonctionnalités de langage ECMAScript 2015 comme indiqué ci-dessous :
-
-```js
-import {Subscription} from 'rxjs/Subscription';
-
-class Foo {
-    sayHi(name) {
-        return `Hi ${name}, welcome to Salsa!`;
-    }
-}
-
-export let sqr = x => x * x;
-export default Subscription;
-```
-
-Un fichier tel que celui ci-après ciblant ECMAScript 5 (paramétrage par défaut) est émis vers `./out/app.js` :
-
-```js
-"use strict";
-var Subscription_1 = require('rxjs/Subscription');
-var Foo = (function () {
-    function Foo() {
-    }
-    Foo.prototype.sayHi = function (name) {
-        return "Hi " + name + ", welcome to Salsa!";
-    };
-    return Foo;
-}());
-exports.sqr = function (x) { return x * x; };
-Object.defineProperty(exports, "__esModule", { value: true });
-exports.default = Subscription_1.Subscription;
-//# sourceMappingURL=app.js.map
-```
-
-## <a name="JSX"></a> Prise en charge de la syntaxe JSX
-
-JavaScript dans Visual Studio 2017 offre une prise en charge complète de la syntaxe JSX. JSX est un ensemble de syntaxes qui autorise les balises HTML dans les fichiers JavaScript. 
-
-L’illustration suivante montre un composant React défini dans le fichier TypeScript `comps.tsx`, puis utilisé à partir du fichier `app.jsx`, où il est possible de recourir à IntelliSense pour les saisies semi-automatiques et la documentation dans les expressions JSX.
-Vous n’avez pas besoin de TypeScript ici ; il se trouve simplement que cet exemple contient également du code TypeScript.
-<img src="https://raw.githubusercontent.com/wiki/Microsoft/TypeScript/images/react.png" height="500" width="640"/>
-
-> [!NOTE]
-> Pour convertir la syntaxe JSX en appels React, vous devez ajouter le paramètre `"jsx": "react"` à `compilerOptions` dans le fichier `tsconfig.json` décrit ci-dessus.
-
-Le fichier JavaScript créé à l’emplacement « ./out/app.js » au moment de la génération doit contenir le code :
-
-```js
-"use strict";
-var comps_1 = require('./comps');
-var x = React.createElement(comps_1.RepoDisplay, {description: "test"});
-```
 

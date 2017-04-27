@@ -31,15 +31,15 @@ translation.priority.mt:
 - pt-br
 - tr-tr
 translationtype: Human Translation
-ms.sourcegitcommit: e9a05d008f671fb79d6813a14c594b82f27697e3
-ms.openlocfilehash: 780c643c25f0d43ec0564e43bc50d2f36f1aee79
-ms.lasthandoff: 03/27/2017
+ms.sourcegitcommit: 47c39bd711b69efdb863d71f11e3e472054a3ce3
+ms.openlocfilehash: 889d538b732b360b475788ec6d67b47920703c73
+ms.lasthandoff: 04/06/2017
 
 ---
 # <a name="options-text-editor-cc-experimental"></a>Options, Éditeur de texte, C/C++, Expérimental
-En modifiant ces options, vous pouvez changer le comportement lié à IntelliSense et la base de données de navigation quand vous programmez en C ou C++. Ces fonctionnalités sont véritablement expérimentales et peuvent être modifiées ou supprimées de Visual Studio dans une version ultérieure.  
+En modifiant ces options, vous pouvez changer le comportement lié à IntelliSense et la base de données de navigation quand vous programmez en C ou C++. Ces fonctionnalités sont véritablement expérimentales et peuvent être modifiées ou supprimées de Visual Studio dans une version ultérieure. Cette rubrique décrit les options disponibles dans Visual Studio 2017. Pour Visual Studio 2015, consultez [Options, Éditeur de texte, C/C++, Expérimental](https://msdn.microsoft.com/library/mt591979.aspx) 
   
- Pour accéder à cette page, dans la boîte de dialogue **Options** , dans le volet gauche, développez **Éditeur de texte**, **C/C++**, puis choisissez **Expérimental**.  
+ Pour accéder à cette page de propriétés, appuyez sur **Ctrl+Q** afin d’activer `Quick Launch`, puis tapez « expérimental ». Lancement rapide trouve la page une fois que vous avez tapé les premières lettres. Vous pouvez également y accéder en choisissant **Outils | Options** et en développant **Éditeur de texte** et **C/C++**, puis en choisissant **Expérimental**.  
 
  Ces fonctionnalités sont disponibles dans une installation de Visual Studio 2017.  
   
@@ -50,7 +50,7 @@ En modifiant ces options, vous pouvez changer le comportement lié à IntelliSen
 La fonctionnalité IntelliSense prédictive limite le nombre de résultats affichés dans la liste déroulante IntelliSense afin que vous ne voyiez que les résultats qui sont pertinents dans le contexte. Par exemple, si vous tapez <code>int x =</code> et appelez la liste déroulante IntelliSense, vous voyez uniquement des entiers ou des fonctions qui retournent des entiers. La fonctionnalité IntelliSense prédictive est désactivée par défaut.
 
 ## <a name="enable-faster-project-load"></a>Activer le chargement accéléré du projet
-Cette option active la fonctionnalité appelée « chargement de solution allégé ». Quand le chargement de solution allégé est activé, Visual Studio ne charge pas entièrement les projets tant que vous n’en avez pas réellement besoin. De nombreuses tâches courantes, telles que la navigation dans un code base, la modification de code et la création de projets, ne nécessitent pas le chargement du projet. Quand cette option est activée, vous pouvez démarrer plus rapidement ces tâches courantes sans avoir à attendre le chargement du projet.  
+Cette option permet à Visual Studio de mettre en cache des données de projet pour que, lors de la prochaine ouverture du projet, il puisse charger ces données mises en cache au lieu de les recalculer à partir des fichiers projet. L’utilisation de données mises en cache peut accélérer considérablement la vitesse de chargement du projet.  
 
 ## <a name="additional-features-in-the-visual-studio-gallery"></a>Autres fonctionnalités dans la galerie Visual Studio
 Pour obtenir d’autres fonctionnalités de l’éditeur de texte dans la galerie Visual Studio, consultez la liste [ici](http://go.microsoft.com/fwlink/?LinkId=692016). Par exemple, les [Corrections rapides C++](https://visualstudiogallery.msdn.microsoft.com/be91feef-8dc3-4f7a-ac9f-f34e7ca5918f)prennent en charge les éléments suivants :  
@@ -67,5 +67,5 @@ Pour obtenir d’autres fonctionnalités de l’éditeur de texte dans la galeri
   
 ## <a name="see-also"></a>Voir aussi  
  [Définition d’options d’éditeur spécifiques du langage](../../ide/reference/setting-language-specific-editor-options.md)   
- [Refactoring in C++ (blog VC)](http://blogs.msdn.com/b/vcblog/archive/2014/11/14/all-about-c-refactoring-in-visual-studio-2015-preview.aspx) (Refactorisation en C++ (blog VC)
+ [Refactorisation en C++ (blog VC)](http://blogs.msdn.com/b/vcblog/archive/2014/11/14/all-about-c-refactoring-in-visual-studio-2015-preview.aspx)
 

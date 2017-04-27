@@ -1,7 +1,7 @@
 ---
-title: Modification de code dans Python Tools pour Visual Studio | Microsoft Docs
+title: Modification de code Python dans Visual Studio | Microsoft Docs
 ms.custom: 
-ms.date: 3/7/2017
+ms.date: 4/10/2017
 ms.prod: visual-studio-dev15
 ms.reviewer: 
 ms.suite: 
@@ -29,15 +29,15 @@ translation.priority.ht:
 - zh-cn
 - zh-tw
 translationtype: Human Translation
-ms.sourcegitcommit: a42f5a30375192c89c9984e40ba0104da98d7253
-ms.openlocfilehash: 79d7c18b672119b745258feee0f646dff96c1922
-ms.lasthandoff: 03/07/2017
+ms.sourcegitcommit: 9328c347d548a03a536cea16bd5851817c03d5a2
+ms.openlocfilehash: 0f2ecd6ca52a04e8813610c0f406251ef4604354
+ms.lasthandoff: 04/10/2017
 
 ---
 
 # <a name="editing-python-code"></a>Modification de code Python
 
-Les développeurs passant beaucoup de temps dans l’éditeur de code, Python Tools pour Visual Studio (PTVS) fournit des fonctionnalités permettant d’augmenter la productivité, telles que la mise en surbrillance et la saisie semi-automatique de la syntaxe IntelliSense, l’assistance pour la signature, les substitutions de méthode et la recherche et la navigation. 
+La prise en charge de Python dans Visual Studio fournit plusieurs fonctionnalités conçues pour aider les développeurs à travailler plus rapidement dans l’éditeur de code, telles que la mise en surbrillance et la saisie semi-automatique de la syntaxe IntelliSense, l’assistance pour la signature, les substitutions de méthode, la recherche et la navigation. 
 
 Dans cette rubrique :
 
@@ -45,9 +45,9 @@ Dans cette rubrique :
 - [Extraits de code](#code-snippets)
 - [Navigation dans votre code](#navigating-your-code)
 
-Consultez [Écriture de code dans l’éditeur de code et de texte](../ide/writing-code-in-the-code-and-text-editor.md) pour vous documenter sur la modification de code dans Visual Studio. Consultez également [Mode Plan](../ide/outlining.md), qui vous permet de rester concentré sur certaines sections de votre code. PTVS prend en charge l’utilisation de l’Explorateur d’objets de Visual Studio (**Affichage > Autres fenêtres > Explorateur d’objets** ou Ctrl+W,J) pour l’inspection des classes définies dans chaque module et les fonctions définies dans ces classes. 
+Consultez [Écriture de code dans l’éditeur de code et de texte](../ide/writing-code-in-the-code-and-text-editor.md) pour vous documenter sur la modification de code dans Visual Studio. Consultez également [Mode Plan](../ide/outlining.md), qui vous permet de rester concentré sur certaines sections de votre code. La prise en charge de Python inclut l’utilisation de l’Explorateur d’objets de Visual Studio (**Affichage > Autres fenêtres > Explorateur d’objets** ou Ctrl+W,J) pour l’inspection des classes définies dans chaque module et des fonctions définies dans ces classes. 
 
-Pour une introduction à la modification de code Python, visionnez la vidéo [Getting Started with PTVS, Part 3: Editing](https://youtu.be/uZGZNEyyeKs?list=PLReL099Y5nRdLgGAdrb_YeTdEnd23s6Ff) (Prise en main de PTVS, partie 3 : Modification ; youtube.com, 3 min48 s) :
+Pour obtenir une introduction à la modification de code Python, visionnez la vidéo [Getting Started with Python in Visual Studio, Part 3: Editing](https://youtu.be/uZGZNEyyeKs?list=PLReL099Y5nRdLgGAdrb_YeTdEnd23s6Ff) (Prise en main de Python dans Visual Studio, partie 3 : Modification ; youtube.com, 3 min48 s) :
 
 > [!VIDEO https://www.youtube.com/embed/uZGZNEyyeKs]
 
@@ -136,12 +136,12 @@ Vous pouvez voir les extraits de code disponibles dans le Gestionnaire des extra
 Pour créer vos propres extraits de code, consultez [Procédure pas à pas : création d’un extrait de code](https://docs.microsoft.com/en-us/visualstudio/ide/walkthrough-creating-a-code-snippet).
 Les extraits de code peuvent être personnalisés en [créant un extrait de code](https://msdn.microsoft.com/en-us/library/ms165394.aspx) et en l’important via 
 
-Si vous écrivez un extrait de code de qualité et que vous souhaitez le partager, n’hésitez pas à le publier dans un contenu Gist et [informez-nous](https://github.com/Microsoft/PTVS/issues). Nous pouvons peut-être l’inclure dans une prochaine version de PTVS.
+Si vous écrivez un extrait de code de qualité et que vous souhaitez le partager, n’hésitez pas à le publier dans un contenu Gist et [informez-nous](https://github.com/Microsoft/PTVS/issues). Nous pourrons peut-être l’ajouter dans une prochaine version de Visual Studio.
 
 
 ## <a name="navigating-your-code"></a>Navigation dans votre code
 
-PTVS propose plusieurs options pour naviguer rapidement dans votre code, y compris des bibliothèques pour lesquelles le code source est disponible : la [barre de navigation](#navigation-bar), [Atteindre la définition](#go-to-definition), [Naviguer vers](#navigate-to), [Rechercher toutes les références](#find-all-references) et [l’Explorateur d’objets](#object-browser).
+La prise en charge de Python dans Visual Studio fournit plusieurs options pour naviguer rapidement dans votre code, notamment des bibliothèques pour lesquelles le code source est disponible : la [barre de navigation](#navigation-bar), [Atteindre la définition](#go-to-definition), [Naviguer vers](#navigate-to) et [Rechercher toutes les références](#find-all-references) (voir la description ci-dessous). Vous pouvez également utiliser l’[Explorateur d’objets](../ide/viewing-the-structure-of-code.md#BKMK_ObjectBrowser) de Visual Studio.
 
 ### <a name="navigation-bar"></a>Barre de navigation
 

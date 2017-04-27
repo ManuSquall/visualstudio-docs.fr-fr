@@ -1,7 +1,7 @@
 ---
-title: Refactorisation de code dans Python Tools pour Visual Studio | Microsoft Docs
+title: Refactorisation de code Python dans Visual Studio | Microsoft Docs
 ms.custom: 
-ms.date: 3/7/2017
+ms.date: 4/10/2017
 ms.prod: visual-studio-dev15
 ms.reviewer: 
 ms.suite: 
@@ -29,15 +29,15 @@ translation.priority.ht:
 - zh-cn
 - zh-tw
 translationtype: Human Translation
-ms.sourcegitcommit: b0d84db6a16861fb9554af2a644423f906784748
-ms.openlocfilehash: dc51f41277c91288c0812cb5c22f48d827d741aa
-ms.lasthandoff: 03/07/2017
+ms.sourcegitcommit: 9328c347d548a03a536cea16bd5851817c03d5a2
+ms.openlocfilehash: ea69604524010ab794a4de0e85aea1e5fd680ac4
+ms.lasthandoff: 04/10/2017
 
 ---
 
 # <a name="refactoring-python-code"></a>Refactorisation de code Python
 
-Python Tools pour Visual Studio (PTVS) fournit plusieurs commandes pour transformer et nettoyer automatiquement votre code source :
+Visual Studio fournit plusieurs commandes pour transformer et nettoyer automatiquement votre code source Python :
 
 - [Renommer](#rename) modifie le nom d’une variable, d’une méthode ou d’une classe sélectionnée
 - [Extraire la méthode](#extract-method) crée une nouvelle méthode à partir du code sélectionné
@@ -72,7 +72,7 @@ Python Tools pour Visual Studio (PTVS) fournit plusieurs commandes pour transfor
 
 ## <a name="add-import"></a>Ajouter à l’importation
 
-Lorsque vous placez le point d’insertion sur un identificateur qui ne dispose pas d’informations de type, PTVS fournit une balise intelligente (l’icône d’ampoule à gauche du code), dont les commandes ajoutent l’instruction `import` ou `from ... import` nécessaires :
+Quand vous placez le point d’insertion sur un identificateur qui ne dispose pas d’informations de type, Visual Studio fournit une balise intelligente (l’icône d’ampoule à gauche du code), dont les commandes ajoutent l’instruction `import` ou `from ... import` nécessaire :
 
 ![Balise intelligente d’Ajouter l’importation](media/code-refactor-add-import-1.png)
 
@@ -80,23 +80,23 @@ Les saisies semi-automatique de `import` sont proposées pour les packages de ni
 
 ![Résultat de l’ajout d’une importation](media/code-refactor-add-import-2.png)
 
-PTVS tente de filtrer les membres qui ne sont pas réellement définis dans un module, tels que les modules importés dans un autre module, mais qui ne sont pas des enfants du module à l’origine de l’importation. Par exemple, de nombreux modules utilisent `import sys` plutôt que `from xyz import sys`. Par conséquent, PTVS ne propose pas de saisie semi-automatique pour l’importation de `sys` à partir d’autres modules, même s’il manque aux modules un membre `__all__` qui exclut `sys`.
+Visual Studio tente de filtrer les membres qui ne sont pas réellement définis dans un module, tels que les modules importés dans un autre module, mais qui ne sont pas des enfants du module à l’origine de l’importation. Par exemple, de nombreux modules utilisent `import sys` plutôt que `from xyz import sys`. Par conséquent, vous ne voyez pas de saisie semi-automatique pour l’importation de `sys` à partir d’autres modules, même s’il manque aux modules un membre `__all__` qui exclut `sys`.
 
-De même, PTVS filtre les fonctions importées à partir d’autres modules ou à partir de l’espace de noms intégré. Par exemple, si un module importe la fonction `settrace` à partir du module `sys`, vous pouvez théoriquement l’importer à partir de ce module. Toutefois, il est préférable d’utiliser directement `import settrace from sys` pour que PTVS propose spécifiquement cette instruction.
+De même, Visual Studio filtre les fonctions importées à partir d’autres modules ou de l’espace de noms intégré. Par exemple, si un module importe la fonction `settrace` à partir du module `sys`, vous pouvez théoriquement l’importer à partir de ce module. Toutefois, il est préférable d’utiliser directement `import settrace from sys` pour que Visual Studio propose spécifiquement cette instruction.
 
-Enfin, si un élément devait être exclu en raison des règles ci-dessus, mais qu’il détient d’autres valeurs qui seraient incluses (parce qu’une valeur a été affectée au nom dans le module, par exemple), PTVS exclut l’importation. Cela suppose que la valeur ne doit pas être exportée parce qu’elle est définie dans un autre module, et que, par conséquent, l’affectation supplémentaire est susceptible d’être une valeur factice qui n’est pas non plus exportée.
+Enfin, si un élément doit être exclu en raison des règles ci-dessus, mais qu’il a d’autres valeurs qui peuvent être incluses (parce qu’une valeur a été affectée au nom dans le module, par exemple), Visual Studio exclut l’importation. Cela suppose que la valeur ne doit pas être exportée parce qu’elle est définie dans un autre module, et que, par conséquent, l’affectation supplémentaire est susceptible d’être une valeur factice qui n’est pas non plus exportée.
 
 <a name="remove-imports"</a>
 ## <a name="remove-unused-imports"></a>Supprimer les importations inutilisées
 
-Lors de l’écriture de code, il est facile de vous retrouver avec des instructions `import` concernant des modules qui ne sont pas utilisées du tout. PTVS analyse votre code et détermine automatiquement si une instruction `import` est nécessaire en regardant si les noms importés sont utilisés dans le cadre ci-dessous, où l’instruction s’exécute.
+Lors de l’écriture de code, il est facile de vous retrouver avec des instructions `import` concernant des modules qui ne sont pas utilisées du tout. Visual Studio analyse votre code et détermine automatiquement si une instruction `import` est nécessaire en regardant si les noms importés sont utilisés dans le cadre ci-dessous, où l’instruction s’exécute.
 
 Cliquez avec le bouton droit n’importe où dans l’éditeur, puis sélectionnez **Remove Imports** (Supprimer les importations), qui vous propose des suppressions à partir de **toutes les portées** ou uniquement de la **portée actuelle** :
 
 ![Menu Supprimer les importations](media/code-refactor-remove-imports-1.png)
 
-Ensuite, PTVS modifie le code en conséquence :
+Ensuite, Visual Studio modifie le code en conséquence :
 
 ![Effet lié à la suppression des importations](media/code-refactor-remove-imports-2.png)
 
-Notez que PTVS ne tient pas compte du flux de contrôle. L’utilisation d’un nom avant une instruction `import` sera traitée comme si le nom avait été utilisé. PTVS ignore également toutes les importations `from __future__`, ainsi que les importations effectuées au sein d’une définition de classe, ou à partir d’instructions `from ... import *`.
+Notez que Visual Studio ne tient pas compte du flux de contrôle. L’utilisation d’un nom avant une instruction `import` sera traitée comme si le nom avait été utilisé. Visual Studio ignore également toutes les importations `from __future__`, ainsi que les importations effectuées au sein d’une définition de classe, ou à partir d’instructions `from ... import *`.

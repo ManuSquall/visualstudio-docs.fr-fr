@@ -1,7 +1,7 @@
 ---
-title: "Mise en forme du code dans Python Tools pour Visual Studio | Microsoft Docs"
+title: Mise en forme de code Python dans Visual Studio | Microsoft Docs
 ms.custom: 
-ms.date: 3/7/2017
+ms.date: 4/10/2017
 ms.prod: visual-studio-dev15
 ms.reviewer: 
 ms.suite: 
@@ -29,22 +29,22 @@ translation.priority.ht:
 - zh-cn
 - zh-tw
 translationtype: Human Translation
-ms.sourcegitcommit: 7d726441c2d6953bd7b50451bec7fff05d5d71b0
-ms.openlocfilehash: c1d7a19438b796c5666daecef33052e43d1f720f
-ms.lasthandoff: 03/10/2017
+ms.sourcegitcommit: 9328c347d548a03a536cea16bd5851817c03d5a2
+ms.openlocfilehash: b9e1c2b6be671adb99a13e4a0eb4357fbba477b2
+ms.lasthandoff: 04/10/2017
 
 ---
 
 # <a name="formatting-python-code"></a>Mise en forme de code Python
 
-La fonctionnalité de mise en forme du code dans Python Tools pour Visual Studio (PTVS) version 2.0 et les versions ultérieures vous permet de remettre rapidement en forme le code pour qu’il corresponde aux options de formatage préconfigurées.
+Dans Visual Studio, vous pouvez rapidement remettre en forme le code selon les options de mise en forme préconfigurées.
 
 - Pour mettre en forme une sélection : sélectionnez **Modifier > Avancé > Mettre la sélection en forme** ou appuyez sur Ctrl+E,F.
 - Pour mettre en forme la totalité du fichier : sélectionnez **Modifier > Avancé > Mettre le document en forme** ou appuyez sur Ctrl+E,D.
 
 Les options sont définies par le biais de la commande **Outils > Options > Éditeur de texte > Python > Mise en forme** et de ses sous-onglets, et correspondent par défaut à un sur-ensemble du [guide de style PEP 8](http://www.python.org/dev/peps/pep-0008/). L’onglet **Général** détermine les cas dans lesquels la mise en forme est appliquée ; les trois autres sous-onglets sont décrits dans les sections suivantes.
 
-PTVS ajoute également la commande [Fill Comment Paragraph](#fill-comment-paragraph) (Redisposer le paragraphe de commentaires) au menu **Modifier > Avancé**, comme décrit ci-dessous.
+La prise en charge de Python dans Visual Studio ajoute également la commande [Redisposer le paragraphe de commentaires](#fill-comment-paragraph-command) au menu **Modifier > Avancé**, comme décrit ci-dessous.
 
 ## <a name="spacing"></a>Espacement
 
@@ -109,7 +109,7 @@ L’onglet **Instructions** contrôle la réécriture automatique de différente
 
 ## <a name="wrapping"></a>Retour à la ligne
 
-L’onglet **Retour à la ligne** vous permet de définir l’option **Maximum comment width** (Largeur maximale des commentaires) (définie par défaut sur la valeur 80). De cette façon, si l’option **Wrap comments that are too wide** (Renvoyer à la ligne les commentaires trop longs) est définie, PTVS mettra en forme les commentaires pour qu’ils ne dépassent pas cette largeur.
+L’onglet **Retour à la ligne** vous permet de définir l’option **Largeur maximale du commentaire**, définie par défaut sur la valeur 80. De cette façon, si l’option **Renvoyer à la ligne les commentaires trop longs** est définie, Visual Studio remet en forme les commentaires pour qu’ils ne dépassent pas cette largeur.
 
 ```python
 # Wrapped to 40 columns

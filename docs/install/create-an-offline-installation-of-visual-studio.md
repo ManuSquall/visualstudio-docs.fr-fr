@@ -2,7 +2,7 @@
 title: "Créer un programme d’installation hors connexion pour Visual Studio 2017 | Microsoft Docs"
 description: "Découvrez comment créer un programme d’installation hors connexion pour Visual Studio."
 ms.custom: 
-ms.date: 03/21/2017
+ms.date: 04/05/2017
 ms.reviewer: 
 ms.suite: 
 ms.technology:
@@ -34,12 +34,12 @@ translation.priority.mt:
 - pt-br
 - tr-tr
 translationtype: Human Translation
-ms.sourcegitcommit: 5b6334c38a6c058f274498c06f8e07c934931910
-ms.openlocfilehash: 563c78a49eb55886b1ddbd4f437951c99c6568e5
-ms.lasthandoff: 03/22/2017
+ms.sourcegitcommit: 4e33dc3ebb32569b547aa9bcb6db9a15dbe4fc21
+ms.openlocfilehash: fda1a4fbfebd856312174fe24ff161b0e9d04bb9
+ms.lasthandoff: 04/05/2017
 
 ---
-# <a name="create-an-offline-installer-for-visual-studio-2017"></a>Créer un programme d’installation hors connexion pour Visual Studio 2017 | Microsoft Docs
+# <a name="create-an-offline-installer-for-visual-studio-2017"></a>Créer un programme d’installation hors connexion pour Visual Studio 2017
 Nous savons que beaucoup de clients souhaitent un programme d’installation hors connexion pour [Visual Studio 2017](https://go.microsoft.com/fwlink/?linkid=844067). Bien que nous ne proposons pas d’image ISO, il est facile de créer un dossier que vous pouvez utiliser pour procéder à une installation hors connexion.
 
 Voici comment procéder.
@@ -66,7 +66,7 @@ Assurez-vous que vous exécutez la commande à partir de votre répertoire de t�
 - Pour Visual Studio Professional, exécutez : <br> ```vs_professional.exe --layout c:\vs2017offline```
 - Pour Visual Studio Community, exécutez : <br> ```vs_community.exe --layout c:\vs2017offline```
 
-Pour plus d’exemples, consultez la section [Comment personnaliser votre programme d’installation hors connexion](#how-to-customize-your-offline- installer) de cette page.
+Pour plus d’exemples, consultez la section [Comment personnaliser votre programme d’installation hors connexion](#how-to-customize-your-offline-installer) de cette page.
 
 ## <a name="install-from-the-offline-installation-folder"></a>Installer à partir du dossier d’installation hors connexion
 Vous pouvez choisir d’exécuter le programme d’installation hors connexion maintenant ou ultérieurement. Dans les deux cas, procédez comme suit.
@@ -98,7 +98,8 @@ Parfois, des problèmes surgissent. Voici un tableau des problèmes connus et de
 
 | Problème       | Élément                   | Solution |
 | ----------- | ---------------------- | -------- |
-| Vous recevez un message d’avertissement indiquant que l’installation de certains composants et packages est impossible.  | Programme d’installation du SDK Android (Niveau API) | Si vous souhaitez inclure des packages du Kit de développement logiciel Android SDK (niveau d’API), vous devez disposer d’une connexion Internet lorsque vous créez votre programme d’installation hors connexion. Si vous êtes sur un réseau limité, vous devez autoriser l’accès aux URL suivantes : <br><br> - http://dl.google.com:443 <br> - http://dl-ssl.google.com:443 <br>  - https://dl-ssl.google.com/android/repository/*<br><br>Pour plus d’informations sur la résolution des éventuels problèmes avec les paramètres de proxy, consultez le billet de blog [Visual Studio install failures (Android SDK Setup) behind a proxy](https://blogs.msdn.microsoft.com/peterhauge/2016/09/22/visual-studio-2015-install-failures-android-sdk-setup-behind-a-proxy/) (Échec de l’installation de Visual Studio (Programme d’installation du SDK Android) derrière un proxy).  |  
+| Vous recevez un message d’erreur du programme d’installation de Visual Studio, indiquant que "Le programme d’installation s’est terminé avec un avertissement", puis l’installation de l’émulateur échoue. | Émulateur Windows 10 | Ouvrez votre dossier d’installation hors connexion pour Visual Studio, accédez au dossier "Win10_Emulator_10.0.15063,version=10.0.15063.12,chip=x64", puis exécutez EmulatorSetup.exe pour installer l’émulateur Windows. |
+| Vous recevez un message d’avertissement indiquant que l’installation de certains composants et packages est impossible.  | Installation du SDK Android (Niveau API) | Si vous souhaitez inclure des packages du kit SDK Android (niveau d’API), vous devez disposer d’une connexion Internet lorsque vous créez votre programme d’installation hors connexion. Si vous êtes sur un réseau limité, vous devez autoriser l’accès aux URL suivantes : <br><br> - http://dl.google.com:443 <br> - http://dl-ssl.google.com:443 <br>  - https://dl-ssl.google.com/android/repository/*<br><br>Pour plus d’informations sur la résolution des éventuels problèmes avec les paramètres de proxy, consultez le billet de blog [Visual Studio install failures (Android SDK Setup) behind a proxy](https://blogs.msdn.microsoft.com/peterhauge/2016/09/22/visual-studio-2015-install-failures-android-sdk-setup-behind-a-proxy/) (Échec de l’installation de Visual Studio (Programme d’installation du SDK Android) derrière un proxy).  |  
 | Les utilisateurs n’ont pas accès aux fichiers. | autorisations (ACL) | Vérifiez que vous ajustez les autorisations (ACL) de sorte qu’elles accordent un accès en lecture aux autres utilisateurs *avant* de partager l’installation hors connexion. |
 | L’installation des nouvelles charges de travail, langues et des nouveaux composants a échoué.  | `--layout`  | Si vous effectuez l’installation à partir d’une disposition partielle et que vous sélectionnez des charges de travail, des composants ou des langues qui ne sont pas disponibles dans la disposition précédente, vérifiez que vous disposez d’une connexion à Internet. |
 

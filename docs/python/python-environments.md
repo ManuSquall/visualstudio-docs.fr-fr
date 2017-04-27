@@ -29,9 +29,9 @@ translation.priority.ht:
 - zh-cn
 - zh-tw
 translationtype: Human Translation
-ms.sourcegitcommit: 7d726441c2d6953bd7b50451bec7fff05d5d71b0
-ms.openlocfilehash: 69740c73cc133e08254fc546d2b59885270725f2
-ms.lasthandoff: 03/10/2017
+ms.sourcegitcommit: adf122a478b29674dc2924dcf7d42972a5a3f52e
+ms.openlocfilehash: 1f8f68e36f94aaf253d304edaa2360333b261be3
+ms.lasthandoff: 04/10/2017
 
 ---
 
@@ -89,6 +89,11 @@ Dans l’exemple ci-dessus, Python 3.4 (CPython 32 bits) est installé avec les 
 >
 > ![Affichage développé de la fenêtre Environnements Python](media/environments-expanded-view.png)
 
+> [!Note]
+> Bien que Visual Studio respecte l’option system-site-packages, il ne fournit pas de moyen permettant de la modifier à partir de Visual Studio.
+
+### <a name="creating-an-environment-for-an-existing-interpreter"></a>Création d’un environnement pour un interpréteur existant
+
 Visual Studio recherche normalement un interpréteur Python installé en consultant le Registre, mais peut ne pas le trouver si l’interpréteur est installé de manière non standard. Dans ce genre de situation, vous pouvez orienter Visual Studio directement vers l’interpréteur comme suit :
 
 1. Sélectionnez **+ Personnalisé...** dans la fenêtre Environnements Python, ce qui crée un environnement et ouvre [ l’onglet **Configurer**](#configure-tab) décrit ci-dessous.
@@ -100,9 +105,6 @@ Visual Studio recherche normalement un interpréteur Python installé en consult
 1. Sélectionnez **Détecter automatiquement** pour que Visual Studio renseigne les champs restants ou renseignez-les manuellement.
 1. Sélectionnez **Appliquer** pour enregistrer l’environnement.
 1. Si vous devez supprimer l’environnement, sélectionnez la commande **Supprimer** sur l’onglet **Configurer**.
-
-> [!Note]
-> Bien que Visual Studio respecte l’option system-site-packages, il ne fournit pas de moyen permettant de la modifier à partir de Visual Studio.
 
 ### <a name="overview-tab"></a>Onglet Vue d’ensemble
 
@@ -229,7 +231,7 @@ Lorsque vous ajoutez un environnement virtuel, si un fichier ` requirements.txt`
 
 ![Créer un environnement virtuel avec requirements.txt](media/environments-requirements-txt.png)
 
-Si un package ne peut pas être installé par pip et s’il apparaît dans un fichier `requirements.txt`, l’ensemble de l’installation peut échouer. Dans ce cas, modifiez manuellement le fichier à exclure de ce package ou utilisez [les options de pip](http://pip.readthedocs.org/en/latest/reference/pip_install.html#requirements-file-format) pour faire référence à une version installable du package. Par exemple, vous préférez peut-être utiliser [`pip wheel`](http://pip.readthedocs.org/en/latest/reference/pip_wheel.html) pour compiler une dépendance et ajouter l’option `--find-links <path>` à votre `requirements.txt` :
+Si un package ne peut pas être installé par pip et s’il apparaît dans un fichier `requirements.txt`, l’ensemble de l’installation échoue. Dans ce cas, modifiez manuellement le fichier à exclure de ce package ou utilisez [les options de pip](http://pip.readthedocs.org/en/latest/reference/pip_install.html#requirements-file-format) pour faire référence à une version installable du package. Par exemple, vous préférez peut-être utiliser [`pip wheel`](http://pip.readthedocs.org/en/latest/reference/pip_wheel.html) pour compiler une dépendance et ajouter l’option `--find-links <path>` à votre `requirements.txt` :
 
 ```output
 C:\Project>pip wheel azure

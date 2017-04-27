@@ -29,9 +29,9 @@ translation.priority.mt:
 - pt-br
 - tr-tr
 translationtype: Human Translation
-ms.sourcegitcommit: 5db97d19b1b823388a465bba15d057b30ff0b3ce
-ms.openlocfilehash: 5b6cd74c8c86c2512a0f699392f20c77703799a5
-ms.lasthandoff: 02/22/2017
+ms.sourcegitcommit: ca7c86466fa23fb21a932f26dc24e37c71cf29b4
+ms.openlocfilehash: e32d7a177a1a6ff0e26fba7f418f368a64bb1337
+ms.lasthandoff: 04/05/2017
 
 ---
 # <a name="visual-studio-reference"></a>Référence Visual Studio
@@ -53,8 +53,8 @@ Cette section inclut des rubriques de référence sur l’interface utilisateur,
  [Informations de Référence sur Visual Studio for Applications](../../ide/reference/visual-studio-for-applications-reference.md)  
  Contient la documentation de référence pour les interfaces que vous pouvez utiliser pour intégrer des moteurs de script .NET Framework dans des applications.  
   
- [MSBuild](../../msbuild/msbuild1.md)  
- Contient des documents relatifs à l'utilisation de la plateforme de génération Microsoft, intégrée dans [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)].  
+ [MSBuild](../../msbuild/msbuild.md)
+ Contient des documents relatifs à l’utilisation de la plateforme de génération Microsoft, qui est intégrée à [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)].  
   
  [Ressources disponibles pour la résolution des erreurs IDE](../../ide/reference/resources-for-troubleshooting-integrated-development-environment-errors.md)  
  Contient des liens vers les ressources pour vous aider à résoudre les messages d’erreur IDE.  
@@ -69,7 +69,7 @@ Cette section inclut des rubriques de référence sur l’interface utilisateur,
  [Informations de référence sur Visual Basic](/dotnet/visual-basic/reference/index)  
  Contient des informations sur la mise à niveau de [!INCLUDE[vbprvb](../../code-quality/includes/vbprvb_md.md)] et les références au langage et à l'exécution de [!INCLUDE[vbprvb](../../code-quality/includes/vbprvb_md.md)].  
   
- [Langage C++ et bibliothèques standard](/visual-cpp/cpp/c-cpp-language-and-standard-libraries)  
+ [Langage C++ et bibliothèques standard](/cpp/cpp/c-cpp-language-and-standard-libraries)  
  Contient la documentation relative à la référence du langage.  
   
  [Informations de référence sur JScript](http://msdn.microsoft.com/en-us/2e47f004-963c-4661-b887-a14e4660aadd)  

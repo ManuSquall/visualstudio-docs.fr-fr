@@ -5,7 +5,7 @@ keywords:
 author: TerryGLee
 ms.author: tglee
 manager: ghogen
-ms.date: 03/07/2017
+ms.date: 04/06/2017
 ms.topic: article
 helpviewer_keywords:
 - workload ID, Visual Studio
@@ -32,9 +32,9 @@ translation.priority.mt:
 - pt-br
 - tr-tr
 translationtype: Human Translation
-ms.sourcegitcommit: 8163a0e1230712734936b7548bef1753ee0c1d2a
-ms.openlocfilehash: 604221ffe4e8218b1e66fcd32d7a8b1ac4a49765
-ms.lasthandoff: 03/07/2017
+ms.sourcegitcommit: 47c39bd711b69efdb863d71f11e3e472054a3ce3
+ms.openlocfilehash: 130317d20e3da1a10634bd2be60df369f635aeb7
+ms.lasthandoff: 04/06/2017
 
 ---
 
@@ -45,30 +45,30 @@ Les tableaux de cette page répertorient les ID que vous pouvez utiliser pour in
 En outre, notez ce qui suit concernant cette page :
 
 * Chaque charge de travail possède sa propre section, suivie de l’ID de charge de travail et d’un tableau des composants disponibles pour cette charge de travail.
-* Par défaut, les composants **obligatoires** sont installés lorsque vous installez la charge de travail. Si vous le souhaitez, vous pouvez également installer les composants **recommandés** et **facultatifs**.
+* Par défaut, les composants **requis** sont installés lorsque vous installez la charge de travail. Si vous le souhaitez, vous pouvez également installer les composants **recommandés** et **facultatifs**.
 * Nous avons également ajouté une section qui répertorie les composants supplémentaires qui ne sont affiliés à aucune charge de travail.
 
-Pour plus d’informations sur l’utilisation de ces ID, consultez la page [Utiliser les paramètres de ligne de commande pour installer Visual Studio 2017 RC](use-command-line-parameters-to-install-visual-studio.md). Pour obtenir la liste des ID de charge de travail et de composant des autres produits, consultez la page [Visual Studio 2017 workload and component IDs](workload-and-component-ids.md) (ID de composant et de charge de travail de Visual Studio 2017).
+Pour plus d’informations sur l’utilisation de ces ID, consultez la page [Utiliser les paramètres de ligne de commande pour installer Visual Studio 2017 RC](use-command-line-parameters-to-install-visual-studio.md). Pour obtenir la liste des ID de charge de travail et de composant des autres produits, consultez la page [ID de composant et de charge de travail de Visual Studio 2017](workload-and-component-ids.md).
 
 ## <a name="test-professional"></a>Test Professional
 
 **ID :** Microsoft.VisualStudio.Workload.TestProfessional
 
-**Description :** Test Professional fournit des outils de test intégrés destinés aux testeurs généralistes pour les aider à répondre aux besoins de test sur l’ensemble du cycle de vie de test.
+**Description :** Test Professional fournit des outils de test intégrés qui répondent aux besoins des testeurs généralistes tout au long du cycle de vie des tests.
 
 ### <a name="components-included-by-this-workload"></a>Composants inclus par cette charge de travail
 
-ID de composant | Nom | Type de dépendance
---- | --- | ---
-Microsoft.VisualStudio.Component.TestTools.FeedbackClient | Outil de Feedback Microsoft | Obligatoire
-Microsoft.VisualStudio.Component.TestTools.MicrosoftTestManager | Microsoft Test Manager | Obligatoire
+ID de composant | Nom | Version | Type de dépendance
+--- | --- | --- | ---
+Microsoft.VisualStudio.Component.TestTools.FeedbackClient | Microsoft Feedback Client | 15.0.26208.0 | Obligatoire
+Microsoft.VisualStudio.Component.TestTools.MicrosoftTestManager | Microsoft Test Manager | 15.0.26228.0 | Obligatoire
 ## <a name="unaffiliated-components"></a>Composants non affiliés
 
 Il s’agit de composants qui ne sont inclus dans aucune charge de travail, mais qui peuvent être sélectionnés de manière individuelle.
 
-ID de composant | Nom
---- | ---
-N/A | N/A
+ID de composant | Nom | Version
+--- | --- | ---
+N/A | N/A | N/A
 
 
 ## <a name="see-also"></a>Voir aussi
@@ -76,5 +76,6 @@ N/A | N/A
 * [ID de charge de travail et de composant Visual Studio](workload-and-component-ids.md)
 * [Guide de l’administrateur Visual Studio](visual-studio-administrator-guide.md)
 * [Utiliser les paramètres de ligne de commande pour installer Visual Studio](use-command-line-parameters-to-install-visual-studio.md)
+  * [Exemples de paramètres de ligne de commande](command-line-parameter-examples.md)
 * [Créer une installation hors connexion de Visual Studio](create-an-offline-installation-of-visual-studio.md)
 
