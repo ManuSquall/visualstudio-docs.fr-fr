@@ -22,7 +22,7 @@ caps.handback.revision: 8
 Utilisez presque chaque élément de l'API Windows Runtime dans JavaScript.  Toutefois, vous ne devez pas oublier certains aspects de la représentation JavaScript d'éléments de Windows Runtime.  
   
 > [!IMPORTANT]
->  Pour plus d'informations sur la création de composants Windows Runtime dans C\+\+, C\#, ou Visual Basic et leur utilisation dans JavaScript, consultez [Création de composants Windows Runtime](../Topic/Creating%20Windows%20Runtime%20Components.md).  
+>  Pour plus d'informations sur la création de composants Windows Runtime dans C\+\+, C\#, ou Visual Basic et leur utilisation dans JavaScript, consultez [Création de composants Windows Runtime](http://msdn.microsoft.com/library/9a6b8f0a-7d5e-40a0-a9c5-a59b4908e133).  
   
 ## Cas particuliers de la représentation JavaScript des types Windows Runtime  
   

@@ -30,7 +30,7 @@ Quand vous écrivez une application du [!INCLUDE[win8_appname_long](../javascrip
  Pour consulter la documentation de référence, voir [Windows Runtime reference](http://msdn.microsoft.com/fr-fr/8fe97dbf-8cd4-435f-b481-9e83d0519f9e).  Des exemples de code sont disponibles en JavaScript, ainsi qu'en C\+\+, C\# et Visual Basic.  
   
 ## Écriture de composants Windows Runtime en C\+\+, C\# ou Visual Basic  
- Pour obtenir des instructions et des consignes pour écrire des composants Windows Runtime qui peuvent être consommés en JavaScript, consultez [Création de composants Windows Runtime](../Topic/Creating%20Windows%20Runtime%20Components.md).  
+ Pour obtenir des instructions et des consignes pour écrire des composants Windows Runtime qui peuvent être consommés en JavaScript, consultez [Création de composants Windows Runtime](http://msdn.microsoft.com/library/9a6b8f0a-7d5e-40a0-a9c5-a59b4908e133).  
   
 ## Conventions de casse avec les fonctionnalités Windows Runtime  
  Les conventions de casse pour les fonctionnalités Windows Runtime en JavaScript diffèrent légèrement de celles utilisées dans les autres langages :  

@@ -43,7 +43,7 @@ Les sections suivantes expliquent les éléments qui composent le langage [!INCL
   
 -   Pour plus d'informations sur les API [!INCLUDE[win8_appname_long](../../javascript/includes/win8-appname-long-md.md)], consultez [Informations de référence sur les API pour Windows Runtime et la bibliothèque Windows pour JavaScript](http://go.microsoft.com/fwlink/p/?LinkID=250938).  
   
- L'éditeur JavaScript dans Visual Studio fournit la prise en charge IntelliSense.  Pour plus d'informations, consultez [IntelliSense JavaScript](../Topic/JavaScript%20IntelliSense.md).  
+ L'éditeur JavaScript dans Visual Studio fournit la prise en charge IntelliSense.  Pour plus d'informations, consultez [IntelliSense JavaScript](~/ide/javascript-intellisense.md).  
   
 ## Dans cette section  
  [Informations de version](../../javascript/reference/javascript-version-information.md)  

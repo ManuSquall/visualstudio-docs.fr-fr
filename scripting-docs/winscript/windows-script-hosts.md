@@ -37,4 +37,4 @@ En implémentant l'hôte de script Microsoft Windows, vous pouvez ignorer sans r
  Aucune de ces restrictions n'applique à un hôte qui choisit d'implémenter une interface libre de threads d' [IActiveScriptSite](../winscript/reference/iactivescriptsite.md) et un modèle objet libre de threads.  Un tel hôte peut utiliser l'interface d' [IActiveScript](../winscript/reference/iactivescript.md) de n'importe quel thread, sans restriction.  
   
 ## Voir aussi  
- [\<PAVE OVER\> Interfaces de script Microsoft Windows \- Introduction](../Topic/%3CPAVE%20OVER%3E%20Microsoft%20Windows%20Script%20Interfaces%20-%20Introduction.md)
+ [\<PAVE OVER\> Interfaces de script Microsoft Windows \- Introduction](http://msdn.microsoft.com/library/3d10169f-2984-49ef-90c6-dd89c97f1dd6)
