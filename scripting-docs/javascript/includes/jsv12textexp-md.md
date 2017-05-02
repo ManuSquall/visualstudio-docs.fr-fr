@@ -1,0 +1,1 @@
+Microsoft Edge avec les fonctionnalités JavaScript expérimentales activées \(about:flags\)

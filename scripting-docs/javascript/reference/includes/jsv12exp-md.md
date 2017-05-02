@@ -1,0 +1,3 @@
+Pris en charge dans Microsoft Edge \(navigateur Edge\) avec les fonctionnalités JavaScript expérimentales activées \(about:flags\) Voir [Informations de version](../../../javascript/reference/javascript-version-information.md).  
+  
+ Non pris en charge dans les modes de document suivants : Quirks, Internet Explorer 6 \(mode normes\), Internet Explorer 7 \(mode normes\), Internet Explorer 8 \(mode normes\), Internet Explorer 9 \(mode normes\), Internet Explorer 10 \(mode normes\), Internet Explorer 11 \(mode normes\). Non pris en charge dans Windows 8.1.
