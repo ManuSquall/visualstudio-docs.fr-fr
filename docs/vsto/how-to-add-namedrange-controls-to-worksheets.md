@@ -69,11 +69,11 @@ caps.handback.revision: 53
   
 #### Pour ajouter un contrôle NamedRange à une feuille de calcul via la fenêtre Sources de données  
   
-1.  Ouvrez la fenêtre **Sources de données** et créez une source de données pour votre projet. Pour plus d'informations, consultez [Comment : établir une connexion à des données d'une base de données](../Topic/How%20to:%20Connect%20to%20Data%20in%20a%20Database.md).  
+1.  Ouvrez la fenêtre **Sources de données** et créez une source de données pour votre projet. Pour plus d'informations, consultez [Comment : établir une connexion à des données d'une base de données](~/data-tools/how-to-connect-to-data-in-a-database.md).  
   
 2.  Faites glisser un seul champ de la fenêtre **Sources de données** vers votre feuille de calcul.  
   
-     Un contrôle <xref:Microsoft.Office.Tools.Excel.NamedRange> lié aux données est ajouté à la feuille de calcul. Pour plus d'informations, consultez [Liaison de données et Windows Forms](../Topic/Data%20Binding%20and%20Windows%20Forms.md).  
+     Un contrôle <xref:Microsoft.Office.Tools.Excel.NamedRange> lié aux données est ajouté à la feuille de calcul. Pour plus d'informations, consultez [Liaison de données et Windows Forms](http://msdn.microsoft.com/library/419aac5e-819b-4aad-88b0-73a2f8c0bd27).  
   
 ##  <a name="runtimedoclevel"></a> Ajout de contrôles NamedRange au moment de l’exécution dans un projet au niveau du document  
  Vous pouvez ajouter un <xref:Microsoft.Office.Tools.Excel.NamedRange> contrôle par programmation à votre feuille de calcul au moment de l’exécution. Cela vous permet de créer les contrôles hôtes en réponse à des événements. Les plages nommées créées dynamiquement ne sont pas conservées dans la feuille de calcul en tant que contrôles hôtes au moment où la feuille de calcul est fermée. Pour plus d'informations, consultez [Ajout de contrôles à des documents Office au moment de l'exécution](../vsto/adding-controls-to-office-documents-at-run-time.md).  

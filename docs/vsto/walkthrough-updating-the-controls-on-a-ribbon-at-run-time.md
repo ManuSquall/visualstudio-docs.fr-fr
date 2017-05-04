@@ -291,7 +291,7 @@ caps.handback.revision: 50
 ## Voir aussi  
  [Accès au ruban au moment de l'exécution](../vsto/accessing-the-ribbon-at-run-time.md)   
  [Vue d'ensemble du ruban](../vsto/ribbon-overview.md)   
- [LINQ \(Language Integrated Query\)](../Topic/LINQ%20(Language-Integrated%20Query).md)   
+ [LINQ \(Language Integrated Query\)](http://msdn.microsoft.com/library/a73c4aec-5d15-4e98-b962-1274021ea93d)   
  [Comment : démarrer avec la personnalisation du ruban](../vsto/how-to-get-started-customizing-the-ribbon.md)   
  [Concepteur de ruban](../vsto/ribbon-designer.md)   
  [Procédure pas à pas : création d'un onglet personnalisé à l'aide du Concepteur de ruban](../vsto/walkthrough-creating-a-custom-tab-by-using-the-ribbon-designer.md)   

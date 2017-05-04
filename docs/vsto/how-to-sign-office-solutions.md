@@ -28,7 +28,7 @@ caps.handback.revision: 17
   
  [!INCLUDE[appliesto_all](../vsto/includes/appliesto-all-md.md)]  
   
- Si vous modifiez manuellement les manifestes d'application et de déploiement à l'aide de l'outil Manifest Generation and Editing \(mage.exe et mageui.exe\), vous devez signer de nouveau les manifestes avant de pouvoir les utiliser.  Pour plus d’informations, consultez [How to: Re-sign Application and Deployment Manifests](../Topic/How%20to:%20Re-sign%20Application%20and%20Deployment%20Manifests.md).  
+ Si vous modifiez manuellement les manifestes d'application et de déploiement à l'aide de l'outil Manifest Generation and Editing \(mage.exe et mageui.exe\), vous devez signer de nouveau les manifestes avant de pouvoir les utiliser.  Pour plus d’informations, consultez [How to: Re-sign Application and Deployment Manifests](~/deployment/how-to-re-sign-application-and-deployment-manifests.md).  
   
 ## Signature à l'aide d'un certificat  
  Un certificat est un fichier qui contient une clé unique et l'identité de l'éditeur de la solution.  Vous pouvez acheter des certificats auprès d'une autorité de certification ou créer votre propre certificat et le faire signer par une autorité de certification.  

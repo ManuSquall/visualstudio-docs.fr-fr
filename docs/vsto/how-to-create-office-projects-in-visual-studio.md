@@ -44,7 +44,7 @@ caps.handback.revision: 95
      La boîte de dialogue **Nouveau projet** s'affiche.  
   
     > [!NOTE]  
-    >  Par défaut, les projets Office ciblent le [!INCLUDE[net_v45](../vsto/includes/net-v45-md.md)].  Pour plus d'informations, consultez [.NET Framework Client Profile](../Topic/.NET%20Framework%20Client%20Profile.md).  
+    >  Par défaut, les projets Office ciblent le [!INCLUDE[net_v45](../vsto/includes/net-v45-md.md)].  Pour plus d'informations, consultez [.NET Framework Client Profile](http://msdn.microsoft.com/library/f0219919-1f02-4588-8704-327a62fd91f1).  
   
 2.  Dans le volet des modèles, sous le nœud correspondant au langage à utiliser, développez **Office\/SharePoint**.  
   
@@ -95,7 +95,7 @@ caps.handback.revision: 95
      La boîte de dialogue **Nouveau projet** s'affiche.  
   
     > [!NOTE]  
-    >  Par défaut, les projets Office ciblent le [!INCLUDE[net_v45](../vsto/includes/net-v45-md.md)].  Pour plus d'informations, consultez [.NET Framework Client Profile](../Topic/.NET%20Framework%20Client%20Profile.md).  
+    >  Par défaut, les projets Office ciblent le [!INCLUDE[net_v45](../vsto/includes/net-v45-md.md)].  Pour plus d'informations, consultez [.NET Framework Client Profile](http://msdn.microsoft.com/library/f0219919-1f02-4588-8704-327a62fd91f1).  
   
 2.  Dans le volet des modèles, sous le nœud correspondant au langage à utiliser, développez **Office\/SharePoint**.  
   

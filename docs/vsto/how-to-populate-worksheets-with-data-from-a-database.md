@@ -38,7 +38,7 @@ caps.handback.revision: 38
   
 1.  Ouvrez un projet au niveau du document Excel dans Visual Studio, avec la feuille de calcul ouverte dans le concepteur.  
   
-2.  Ouvrez la fenêtre **Sources de données** et créez une source de données pour votre projet.  Pour plus d’informations, consultez [Comment : établir une connexion à des données d'une base de données](../Topic/How%20to:%20Connect%20to%20Data%20in%20a%20Database.md).  
+2.  Ouvrez la fenêtre **Sources de données** et créez une source de données pour votre projet.  Pour plus d’informations, consultez [Comment : établir une connexion à des données d'une base de données](~/data-tools/how-to-connect-to-data-in-a-database.md).  
   
 3.  Faites glisser le champ ou la table de votre choix de la fenêtre **Sources de données** vers votre feuille de calcul.  
   
@@ -55,11 +55,11 @@ caps.handback.revision: 38
   
 -   Un groupe de données typé qui encapsule les tables de données que vous avez liées dans la base de données.  Pour plus d’informations, consultez [Utilisation de groupes de données dans Visual Studio](../data-tools/dataset-tools-in-visual-studio.md).  
   
--   Un <xref:System.Windows.Forms.BindingSource> qui connecte le contrôle au groupe de données typé.  Pour plus d’informations, consultez [Vue d'ensemble du composant BindingSource](../Topic/BindingSource%20Component%20Overview.md).  
+-   Un <xref:System.Windows.Forms.BindingSource> qui connecte le contrôle au groupe de données typé.  Pour plus d’informations, consultez [Vue d'ensemble du composant BindingSource](http://msdn.microsoft.com/library/be838caf-fcb0-4b68-827f-58b2c04b747f).  
   
 -   Un TableAdapter qui connecte le groupe de données typé à la base de données.  Pour plus d’informations, consultez [Vue d'ensemble de TableAdapter](/visual-studio/data-tools/tableadapter-overview).  
   
--   Un TableAdapterManager, utilisé pour coordonner des adaptateurs de table dans le groupe de données pour activer des mises à jour hiérarchiques.  Pour plus d'informations, consultez [Mise à jour hiérarchique](../data-tools/hierarchical-update.md) et [Vue d'ensemble de TableAdapterManager](../Topic/TableAdapterManager%20Overview.md).  
+-   Un TableAdapterManager, utilisé pour coordonner des adaptateurs de table dans le groupe de données pour activer des mises à jour hiérarchiques.  Pour plus d'informations, consultez [Mise à jour hiérarchique](../data-tools/hierarchical-update.md) et [Vue d'ensemble de TableAdapterManager](http://msdn.microsoft.com/library/33076d42-6b41-491a-ac11-6c6339aea650).  
   
  Lorsque vous exécutez le projet, le contrôle affiche le premier enregistrement dans la source de données.  Vous pouvez utiliser <xref:System.Windows.Forms.BindingSource> pour permettre aux utilisateurs de faire défiler les enregistrements.  
   

@@ -155,7 +155,7 @@ caps.handback.revision: 64
  Pour obtenir une vue d'ensemble de la liaison de contrôles hôtes aux données dans les solutions Office, consultez [Liaison de données aux contrôles dans les solutions Office](../vsto/binding-data-to-controls-in-office-solutions.md).  
   
 ### Utilisation du modèle de liaison de données Windows Forms  
- La plupart des contrôles de contenu prennent en charge le modèle de liaison de données simple que Windows Forms utilise.  La liaison de données simple signifie qu'un contrôle est lié à un élément de données unique, tel qu'une valeur dans une colonne d'une table de données.  Pour plus d'informations, consultez [Liaison de données et Windows Forms](../Topic/Data%20Binding%20and%20Windows%20Forms.md).  
+ La plupart des contrôles de contenu prennent en charge le modèle de liaison de données simple que Windows Forms utilise.  La liaison de données simple signifie qu'un contrôle est lié à un élément de données unique, tel qu'une valeur dans une colonne d'une table de données.  Pour plus d'informations, consultez [Liaison de données et Windows Forms](http://msdn.microsoft.com/library/419aac5e-819b-4aad-88b0-73a2f8c0bd27).  
   
  Dans les projets au niveau du document, vous pouvez également lier des données à des contrôles de contenu en utilisant la fenêtre **Sources de données** dans [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)].  Pour plus d'informations sur l'ajout de contrôles de contenu liés aux données à des documents, consultez [Comment : remplir des documents avec les données d'une base de données](../vsto/how-to-populate-documents-with-data-from-a-database.md) et [Comment : remplir des documents avec les données d'objets](../vsto/how-to-populate-documents-with-data-from-objects.md).  
   

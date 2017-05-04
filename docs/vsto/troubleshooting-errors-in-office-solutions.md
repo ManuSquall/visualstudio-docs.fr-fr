@@ -206,7 +206,7 @@ Word.Document document = Globals.ThisAddIn.Application.ActiveDocument;
   
  « La personnalisation n'a pas pu être chargée, car le domaine d'application n'a pas pu être créé. »  
   
- Visual Studio utilise Fusion, le chargeur d'assembly du .NET Framework, pour mettre en cache les assemblys avant de charger les solutions Office.  Assurez\-vous que Visual Studio peut écrire dans le cache de Fusion et réessayez.  Pour plus d'informations, consultez [Clichés instantanés d'assemblys](../Topic/Shadow%20Copying%20Assemblies.md).  
+ Visual Studio utilise Fusion, le chargeur d'assembly du .NET Framework, pour mettre en cache les assemblys avant de charger les solutions Office.  Assurez\-vous que Visual Studio peut écrire dans le cache de Fusion et réessayez.  Pour plus d'informations, consultez [Clichés instantanés d'assemblys](http://msdn.microsoft.com/library/de8b8759-fca7-4260-896b-5a4973157672).  
   
 ### Une erreur se produit lors de l'arrêt du débogueur dans un projet au niveau du document après l'utilisation de la commande Modifier & Continuer  
  Si vous utilisez la commande Modifier & Continuer pour apporter des modifications au code dans un projet au niveau du document pour Excel ou Word alors que le projet est en mode Arrêt, vous pouvez voir une boîte de dialogue avec le message d'erreur suivant si vous arrêtez ensuite le débogueur.  

@@ -31,7 +31,7 @@ caps.handback.revision: 55
  L'ordre de la pile des contrôles varie suivant que le volet Actions est ancré verticalement ou horizontalement.  
   
 > [!NOTE]  
->  Si l'utilisateur redimensionne le volet Actions au moment de l'exécution, vous pouvez définir les contrôles à redimensionner avec le volet Actions.  Vous pouvez utiliser la propriété <xref:System.Windows.Forms.Control.Anchor%2A> d'un contrôle Windows Forms pour ancrer des contrôles au volet Actions.  Pour plus d’informations, consultez [Comment : ancrer des contrôles aux Windows Forms](../Topic/How%20to:%20Anchor%20Controls%20on%20Windows%20Forms.md).  
+>  Si l'utilisateur redimensionne le volet Actions au moment de l'exécution, vous pouvez définir les contrôles à redimensionner avec le volet Actions.  Vous pouvez utiliser la propriété <xref:System.Windows.Forms.Control.Anchor%2A> d'un contrôle Windows Forms pour ancrer des contrôles au volet Actions.  Pour plus d’informations, consultez [Comment : ancrer des contrôles aux Windows Forms](http://msdn.microsoft.com/library/59ea914f-fbd3-427a-80fe-decd02f7ae6d).  
   
 > [!NOTE]  
 >  Il est possible que pour certains des éléments de l'interface utilisateur de Visual Studio, votre ordinateur affiche des noms ou des emplacements différents de ceux indiqués dans les instructions suivantes.  Ces éléments dépendent de l'édition de Visual Studio dont vous disposez et des paramètres que vous utilisez.  Pour plus d’informations, consultez [Customizing Development Settings in Visual Studio](http://msdn.microsoft.com/fr-fr/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  

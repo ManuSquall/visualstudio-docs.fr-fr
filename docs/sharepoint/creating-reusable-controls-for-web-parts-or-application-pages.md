@@ -25,7 +25,7 @@ manager: "ghogen"
 caps.handback.revision: 19
 ---
 # Cr&#233;ation de contr&#244;les r&#233;utilisables pour les composants WebPart ou les pages d&#39;application
-  Dans Visual Studio, vous pouvez créer des contrôles personnalisés et réutilisables qui peuvent être consommés par des pages d'application et des composants WebPart qui s'exécutent dans SharePoint.  Ces contrôles sont appelés contrôles utilisateur.  Pour plus d'informations sur les contrôles utilisateur, consultez [ASP.NET User Controls](../Topic/ASP.NET%20User%20Controls.md).  
+  Dans Visual Studio, vous pouvez créer des contrôles personnalisés et réutilisables qui peuvent être consommés par des pages d'application et des composants WebPart qui s'exécutent dans SharePoint.  Ces contrôles sont appelés contrôles utilisateur.  Pour plus d'informations sur les contrôles utilisateur, consultez [ASP.NET User Controls](http://msdn.microsoft.com/library/5e601b3d-bb16-4dbe-9e35-7e92a34565ca).  
   
 ## Création d'un contrôle utilisateur  
  Pour créer un contrôle utilisateur, ajoutez un **Contrôle utilisateur** à un **Projet SharePoint vide**.  Pour plus d'informations, consultez [Comment : créer un contrôle utilisateur pour un composant WebPart ou une page d'application SharePoint](../sharepoint/how-to-create-a-user-control-for-a-sharepoint-application-page-or-web-part.md).  
@@ -44,7 +44,7 @@ caps.handback.revision: 19
 ## Consommation du contrôle utilisateur  
  Les contrôles utilisateur ne s'affichent pas dans SharePoint tant que vous ne les avez pas inclus dans une page d'application ou un composant WebPart.  
   
- Pour inclure un contrôle utilisateur dans une page d'application, ajoutez une directive [@ Register](http://msdn.microsoft.com/fr-fr/66f34922-be41-4e36-9dc8-1774d85311d1) à la page d'application, puis déclarez le contrôle utilisateur dans un ou plusieurs espaces réservés de contenu dans la page.  Pour obtenir un exemple de réalisation de cette tâche dans une page Web ASP.NET standard, consultez [How to: Include a User Control in an ASP.NET Web Page](../Topic/How%20to:%20Include%20a%20User%20Control%20in%20an%20ASP.NET%20Web%20Page.md).  
+ Pour inclure un contrôle utilisateur dans une page d'application, ajoutez une directive [@ Register](http://msdn.microsoft.com/fr-fr/66f34922-be41-4e36-9dc8-1774d85311d1) à la page d'application, puis déclarez le contrôle utilisateur dans un ou plusieurs espaces réservés de contenu dans la page.  Pour obtenir un exemple de réalisation de cette tâche dans une page Web ASP.NET standard, consultez [How to: Include a User Control in an ASP.NET Web Page](http://msdn.microsoft.com/library/7c3bfd74-846c-4b88-b1ef-45d75860af92).  
   
  Pour inclure un contrôle utilisateur dans un composant WebPart, ajoutez le contrôle utilisateur à la collection <xref:System.Web.UI.WebControls.WebParts.Part.Controls%2A> du composant WebPart, dans le fichier de code de ce composant WebPart.  L'exemple suivant ajoute un contrôle utilisateur à la collection <xref:System.Web.UI.WebControls.WebParts.Part.Controls%2A> d'un composant WebPart.  
   

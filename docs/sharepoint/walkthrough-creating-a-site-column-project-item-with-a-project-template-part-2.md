@@ -53,7 +53,7 @@ caps.handback.revision: 53
   
  Une connaissance des concepts suivants est utile, mais pas obligatoire, pour effectuer cette procédure pas à pas :  
   
--   Assistants associés aux modèles de projet et d'élément dans Visual Studio.  Pour plus d'informations, consultez [Comment : utiliser des Assistants avec des modèles de projet](../Topic/How%20to:%20Use%20Wizards%20with%20Project%20Templates.md) et l'interface <xref:Microsoft.VisualStudio.TemplateWizard.IWizard>.  
+-   Assistants associés aux modèles de projet et d'élément dans Visual Studio.  Pour plus d'informations, consultez [Comment : utiliser des Assistants avec des modèles de projet](~/extensibility/how-to-use-wizards-with-project-templates.md) et l'interface <xref:Microsoft.VisualStudio.TemplateWizard.IWizard>.  
   
 -   Colonnes de site dans SharePoint.  Pour plus d’informations, consultez [Colonnes](http://go.microsoft.com/fwlink/?LinkId=183547).  
   
@@ -121,7 +121,7 @@ caps.handback.revision: 53
   
 3.  Assurez\-vous que la version cible du. Net Framework est réglée sur .NET Framework 4.5, et pas sur le profil client .NET Framework 4.5.  
   
-     Pour plus d'informations, consultez [Comment : cibler une version du .NET Framework](../Topic/How%20to:%20Target%20a%20Version%20of%20the%20.NET%20Framework.md).  
+     Pour plus d'informations, consultez [Comment : cibler une version du .NET Framework](~/ide/how-to-target-a-version-of-the-dotnet-framework.md).  
   
 4.  Ouvrez le menu contextuel pour le projet **ProjectTemplateWizard**, sélectionnez **Ajoute**, puis **Nouvel élément**.  
   
@@ -168,7 +168,7 @@ caps.handback.revision: 53
   
 13. Si vous développez un projet Visual Basic, importez l'espace de noms ProjectTemplateWizard dans votre projet avec le **Concepteur de projet**.  
   
-     Pour plus d'informations, consultez [Comment : ajouter ou supprimer des espaces de noms importés &#40;Visual Basic&#41;](../Topic/How%20to:%20Add%20or%20Remove%20Imported%20Namespaces%20(Visual%20Basic).md).  
+     Pour plus d'informations, consultez [Comment : ajouter ou supprimer des espaces de noms importés &#40;Visual Basic&#41;](~/ide/how-to-add-or-remove-imported-namespaces-visual-basic.md).  
   
 #### Pour configurer le projet SharePointCommands  
   
@@ -551,6 +551,6 @@ caps.handback.revision: 53
  [Defining Custom SharePoint Project Item Types](../sharepoint/defining-custom-sharepoint-project-item-types.md)   
  [Creating Item Templates and Project Templates for SharePoint Project Items](../sharepoint/creating-item-templates-and-project-templates-for-sharepoint-project-items.md)   
  [Référence du schéma de modèle Visual Studio](../extensibility/visual-studio-template-schema-reference.md)   
- [Comment : utiliser des Assistants avec des modèles de projet](../Topic/How%20to:%20Use%20Wizards%20with%20Project%20Templates.md)  
+ [Comment : utiliser des Assistants avec des modèles de projet](~/extensibility/how-to-use-wizards-with-project-templates.md)  
   
   

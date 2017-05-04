@@ -99,7 +99,7 @@ caps.handback.revision: 27
  **Langue de publication**  
  Cette option définit la langue des termes du contrat de licence logiciel Microsoft, et inclut les modules linguistiques dans la liste des composants nécessaires. Elle n’affecte pas la langue de la personnalisation. La langue du programme d’installation est déterminée par les langues installées de Visual Studio.  
   
- Pour plus d’informations sur la façon de changer la **langue de publication**, consultez [How to: Change the Publish Language for a ClickOnce Application](../Topic/How%20to:%20Change%20the%20Publish%20Language%20for%20a%20ClickOnce%20Application.md).  
+ Pour plus d’informations sur la façon de changer la **langue de publication**, consultez [How to: Change the Publish Language for a ClickOnce Application](~/deployment/how-to-change-the-publish-language-for-a-clickonce-application.md).  
   
  **Version de publication**  
  Définit le numéro de version de la personnalisation. Quand vous changez le numéro de version, l’application est publiée en tant que mise à jour. Un dossier est créé pour chaque version pendant le processus de génération pour éviter de remplacer la version précédemment publiée. Chaque partie de la version de publication \(**Majeure**, **Mineure**, **Build**, **Révision**\) peut contenir jusqu’à 5 chiffres.  

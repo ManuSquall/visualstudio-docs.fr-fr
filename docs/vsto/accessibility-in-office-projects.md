@@ -60,7 +60,7 @@ caps.handback.revision: 23
 ## Accessibilité au moment de l'exécution  
   
 ### Contrôles Windows Forms dans les documents Office  
- Les contrôles Windows Forms exposent des propriétés d'accessibilité pour fournir des informations sur le contrôle des aides à l'accessibilité, tels que les lecteurs d'écran.  Vous pouvez tirer parti de ces propriétés d'accessibilité lorsque les contrôles sont sur un document Office dans une personnalisation au niveau du document.  Pour plus d’informations, consultez [Informations d'accessibilité sur les contrôles d'un Windows Form](../Topic/Providing%20Accessibility%20Information%20for%20Controls%20on%20a%20Windows%20Form.md).  
+ Les contrôles Windows Forms exposent des propriétés d'accessibilité pour fournir des informations sur le contrôle des aides à l'accessibilité, tels que les lecteurs d'écran.  Vous pouvez tirer parti de ces propriétés d'accessibilité lorsque les contrôles sont sur un document Office dans une personnalisation au niveau du document.  Pour plus d’informations, consultez [Informations d'accessibilité sur les contrôles d'un Windows Form](http://msdn.microsoft.com/library/887dee6f-5059-4d57-957d-7c6fcd4acb10).  
   
  Toutefois, il existe quelques limitations d'accessibilité au moment de l'exécution lorsque les contrôles Windows Forms sont hébergés sur un classeur Excel ou un document Word :  
   

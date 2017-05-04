@@ -39,7 +39,7 @@ caps.handback.revision: 47
   
 1.  Ouvrez un projet au niveau du document Word dans [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)], avec le document ouvert dans le concepteur.  
   
-2.  Ouvrez la fenêtre **Sources de données** et créez une source de données à partir d'une base de données.  Pour plus d'informations, consultez [Comment : établir une connexion à des données d'une base de données](../Topic/How%20to:%20Connect%20to%20Data%20in%20a%20Database.md).  
+2.  Ouvrez la fenêtre **Sources de données** et créez une source de données à partir d'une base de données.  Pour plus d'informations, consultez [Comment : établir une connexion à des données d'une base de données](~/data-tools/how-to-connect-to-data-in-a-database.md).  
   
 3.  Faites glisser le contrôle que vous souhaitez depuis la fenêtre **Sources de données** vers votre document.  
   
@@ -52,11 +52,11 @@ caps.handback.revision: 47
   
 -   Un dataset typé qui encapsule les tables de données auxquelles vous êtes connecté dans la base de données.  Pour plus d'informations, consultez [Utilisation de groupes de données dans Visual Studio](../data-tools/dataset-tools-in-visual-studio.md).  
   
--   Un <xref:System.Windows.Forms.BindingSource> qui connecte le contrôle au dataset typé.  Pour plus d'informations, consultez [Vue d'ensemble du composant BindingSource](../Topic/BindingSource%20Component%20Overview.md).  
+-   Un <xref:System.Windows.Forms.BindingSource> qui connecte le contrôle au dataset typé.  Pour plus d'informations, consultez [Vue d'ensemble du composant BindingSource](http://msdn.microsoft.com/library/be838caf-fcb0-4b68-827f-58b2c04b747f).  
   
 -   Un TableAdapter qui connecte le dataset typé à la base de données.  Pour plus d'informations, consultez [Vue d'ensemble de TableAdapter](/visual-studio/data-tools/tableadapter-overview).  
   
--   Un TableAdapterManager, qui permet de coordonner les adaptateurs de table du dataset pour permettre les mises à jour hiérarchiques.  Pour plus d'informations, consultez [Mise à jour hiérarchique](../data-tools/hierarchical-update.md) et [Vue d'ensemble de TableAdapterManager](../Topic/TableAdapterManager%20Overview.md).  
+-   Un TableAdapterManager, qui permet de coordonner les adaptateurs de table du dataset pour permettre les mises à jour hiérarchiques.  Pour plus d'informations, consultez [Mise à jour hiérarchique](../data-tools/hierarchical-update.md) et [Vue d'ensemble de TableAdapterManager](http://msdn.microsoft.com/library/33076d42-6b41-491a-ac11-6c6339aea650).  
   
  Lorsque vous exécutez le projet, le contrôle affiche le premier enregistrement de la source de données.  Vous pouvez utiliser le <xref:System.Windows.Forms.BindingSource> pour permettre aux utilisateurs de faire défiler les enregistrements.  
   
@@ -74,6 +74,6 @@ caps.handback.revision: 47
  [Comment : mettre à jour une source de données avec les données d'un contrôle hôte](../vsto/how-to-update-a-data-source-with-data-from-a-host-control.md)   
  [Vue d'ensemble de l'utilisation de fichiers de base de données locaux dans les solutions Office](../vsto/using-local-database-files-in-office-solutions-overview.md)   
  [Connexion à des données dans des applications Windows Forms](/visual-studio/data-tools/connecting-to-data-in-windows-forms-applications)   
- [Vue d'ensemble du composant BindingSource](../Topic/BindingSource%20Component%20Overview.md)  
+ [Vue d'ensemble du composant BindingSource](http://msdn.microsoft.com/library/be838caf-fcb0-4b68-827f-58b2c04b747f)  
   
   

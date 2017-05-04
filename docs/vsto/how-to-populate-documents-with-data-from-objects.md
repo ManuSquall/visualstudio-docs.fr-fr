@@ -39,7 +39,7 @@ caps.handback.revision: 39
   
 #### Pour ajouter un objet de données  
   
--   Ouvrez la fenêtre **Sources de données**, puis créez une source de données à partir d’un objet. Pour plus d'informations, consultez [Comment : se connecter à des données dans des objets](../Topic/How%20to:%20Connect%20to%20Data%20in%20Objects.md).  
+-   Ouvrez la fenêtre **Sources de données**, puis créez une source de données à partir d’un objet. Pour plus d'informations, consultez [Comment : se connecter à des données dans des objets](http://msdn.microsoft.com/library/862fd351-0f4d-4220-9743-6103b87dc24b).  
   
 ## Connexion de l’objet de données à BindingSource  
  Dans les projets au niveau du document, vous ajoutez les contrôles à votre document et les liez aux données au moment du design.  
@@ -75,6 +75,6 @@ caps.handback.revision: 39
  [Comment : remplir des documents avec les données d'une base de données](../vsto/how-to-populate-documents-with-data-from-a-database.md)   
  [Comment : mettre à jour une source de données avec les données d'un contrôle hôte](../vsto/how-to-update-a-data-source-with-data-from-a-host-control.md)   
  [Connexion à des données dans des applications Windows Forms](/visual-studio/data-tools/connecting-to-data-in-windows-forms-applications)   
- [Vue d'ensemble du composant BindingSource](../Topic/BindingSource%20Component%20Overview.md)  
+ [Vue d'ensemble du composant BindingSource](http://msdn.microsoft.com/library/be838caf-fcb0-4b68-827f-58b2c04b747f)  
   
   

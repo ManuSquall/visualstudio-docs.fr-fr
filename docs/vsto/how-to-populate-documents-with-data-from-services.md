@@ -34,7 +34,7 @@ caps.handback.revision: 39
   
 ### Pour remplir un projet au niveau du document avec les données d’un service web  
   
-1.  Ouvrez la fenêtre **Sources de données** et créez une source de données de service pour votre projet. Pour plus d'informations, consultez [Comment : se connecter à des données dans un service](../Topic/How%20to:%20Connect%20to%20Data%20in%20a%20Service.md).  
+1.  Ouvrez la fenêtre **Sources de données** et créez une source de données de service pour votre projet. Pour plus d'informations, consultez [Comment : se connecter à des données dans un service](~/data-tools/how-to-connect-to-data-in-a-service.md).  
   
 2.  Faites glisser le tableau ou le champ que vous souhaitez à partir de la fenêtre **Sources de données** vers votre document.  
   

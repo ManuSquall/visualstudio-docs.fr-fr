@@ -191,7 +191,7 @@ caps.handback.revision: 57
   
 -   Lier des cellules à plusieurs colonnes dans une table au lieu de les lier à un champ.  Pour plus d'informations, consultez [Procédure pas à pas : liaison de données complexe dans un projet au niveau du document](../vsto/walkthrough-complex-data-binding-in-a-document-level-project.md).  
   
--   Utiliser un contrôle <xref:System.Windows.Forms.BindingNavigator> pour faire défiler les enregistrements.  Pour plus d'informations, consultez [Comment : naviguer parmi les données avec le contrôle BindingNavigator Windows Forms](../Topic/How%20to:%20Navigate%20Data%20with%20the%20Windows%20Forms%20BindingNavigator%20Control.md).  
+-   Utiliser un contrôle <xref:System.Windows.Forms.BindingNavigator> pour faire défiler les enregistrements.  Pour plus d'informations, consultez [Comment : naviguer parmi les données avec le contrôle BindingNavigator Windows Forms](http://msdn.microsoft.com/library/0e5d4f34-bc9b-47cf-9b8d-93acbb1f1dbb).  
   
 ## Voir aussi  
  [Liaison de données aux contrôles dans les solutions Office](../vsto/binding-data-to-controls-in-office-solutions.md)   

@@ -102,7 +102,7 @@ caps.handback.revision: 34
   
 5.  Si vous disposez d'une connexion active à la base de données AdventureWorksLT, choisissez cette connexion, puis cliquez sur **Suivant**.  
   
-     Dans le cas contraire, cliquez sur **Nouvelle connexion**, puis utilisez la boîte de dialogue **Ajouter une connexion** pour créer la nouvelle connexion.  Pour plus d'informations, consultez [Comment : établir une connexion à des données d'une base de données](../Topic/How%20to:%20Connect%20to%20Data%20in%20a%20Database.md).  
+     Dans le cas contraire, cliquez sur **Nouvelle connexion**, puis utilisez la boîte de dialogue **Ajouter une connexion** pour créer la nouvelle connexion.  Pour plus d'informations, consultez [Comment : établir une connexion à des données d'une base de données](~/data-tools/how-to-connect-to-data-in-a-database.md).  
   
 6.  Sur la page **Save the Connection String to the Application Configuration File**, cliquez sur **Next**.  
   

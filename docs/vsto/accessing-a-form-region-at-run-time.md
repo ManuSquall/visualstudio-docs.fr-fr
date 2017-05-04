@@ -71,7 +71,7 @@ caps.handback.revision: 22
   
  Pour activer l’accès à un contrôle en dehors du fichier de code de la zone de formulaire, créez une propriété dans ce fichier de code pour retourner ce contrôle.  
   
- Pour plus d’informations sur la création de propriétés en C\#, consultez [Comment : déclarer et utiliser des propriétés en lecture-écriture &#40;Guide de programmation C&#35;&#41;](../Topic/How%20to:%20Declare%20and%20Use%20Read%20Write%20Properties%20(C%23%20Programming%20Guide).md).  
+ Pour plus d’informations sur la création de propriétés en C\#, consultez [Comment : déclarer et utiliser des propriétés en lecture-écriture &#40;Guide de programmation C&#35;&#41;](http://msdn.microsoft.com/library/a4962fef-af7e-4c4b-a929-4ae4d646ab8a).  
   
  Pour plus d’informations sur la création de propriétés en Visual Basic, consultez [PAS DANS LA BUILD : Comment : ajouter des champs et des propriétés à une classe](http://msdn.microsoft.com/fr-fr/ae53f61b-3abc-413e-8931-703c5f5e8fc2).  
   

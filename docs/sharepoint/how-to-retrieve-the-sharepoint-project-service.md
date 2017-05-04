@@ -95,11 +95,11 @@ caps.handback.revision: 14
   
  Dans un VSPackage, vous pouvez demander un objet <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectService> à l'aide de l'une des méthodes suivantes :  
   
--   Méthode <xref:System.IServiceProvider.GetService%2A> d'un VSPackage managé qui dérive de la classe <xref:Microsoft.VisualStudio.Shell.Package>.  Pour plus d'informations, consultez [Comment : obtenir un Service](../Topic/How%20to:%20Get%20a%20Service.md).  
+-   Méthode <xref:System.IServiceProvider.GetService%2A> d'un VSPackage managé qui dérive de la classe <xref:Microsoft.VisualStudio.Shell.Package>.  Pour plus d'informations, consultez [Comment : obtenir un Service](~/extensibility/how-to-get-a-service.md).  
   
--   Méthode <xref:Microsoft.VisualStudio.Shell.Package.GetGlobalService%2A> statique.  Pour plus d'informations, consultez [Procédure : utilisation d’un GetGlobalService](../Topic/How%20to:%20Use%20GetGlobalService.md).  
+-   Méthode <xref:Microsoft.VisualStudio.Shell.Package.GetGlobalService%2A> statique.  Pour plus d'informations, consultez [Procédure : utilisation d’un GetGlobalService](~/misc/how-to-use-getglobalservice.md).  
   
- Dans une extension Visual Studio qui a accès à un objet <xref:EnvDTE80.DTE2>, vous pouvez demander un objet <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectService> à l'aide de la méthode <xref:Microsoft.VisualStudio.Shell.ServiceProvider.GetService%2A> d'un objet <xref:Microsoft.VisualStudio.Shell.ServiceProvider>.  Pour plus d'informations, consultez [Comment : obtenir un service à partir de l’objet DTE](../Topic/How%20to:%20Get%20a%20Service%20from%20the%20DTE%20Object.md).  
+ Dans une extension Visual Studio qui a accès à un objet <xref:EnvDTE80.DTE2>, vous pouvez demander un objet <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectService> à l'aide de la méthode <xref:Microsoft.VisualStudio.Shell.ServiceProvider.GetService%2A> d'un objet <xref:Microsoft.VisualStudio.Shell.ServiceProvider>.  Pour plus d'informations, consultez [Comment : obtenir un service à partir de l’objet DTE](~/misc/how-to-get-a-service-from-the-dte-object.md).  
   
 ### Exemple  
  L'exemple de code suivant montre comment extraire le service du projet dans un complément Visual Studio.  Pour utiliser ce code, exécutez\-le à partir de la classe `Connect` dans un projet de complément.  L'objet `_applicationObject` est généré automatiquement dans les projets de complément ; cet objet est une instance de l'interface <xref:EnvDTE80.DTE2>.  
@@ -109,15 +109,15 @@ caps.handback.revision: 14
   
  Cet exemple nécessite :  
   
--   Projet de complément Visual Studio.  Pour plus d'informations, consultez [Comment : créer un complément](../Topic/How%20to:%20Create%20an%20Add-In.md).  
+-   Projet de complément Visual Studio.  Pour plus d'informations, consultez [Comment : créer un complément](http://msdn.microsoft.com/library/50be56d2-e3a5-4cd2-8569-2a0666b268ce).  
   
 -   Références aux assemblys Microsoft.VisualStudio.OLE.Interop, Microsoft.VisualStudio.Shell et Microsoft.VisualStudio.SharePoint.  
   
 ## Voir aussi  
  [Using the SharePoint Project Service](../sharepoint/using-the-sharepoint-project-service.md)   
- [Comment : créer un complément](../Topic/How%20to:%20Create%20an%20Add-In.md)   
- [Comment : obtenir un Service](../Topic/How%20to:%20Get%20a%20Service.md)   
- [Comment : obtenir un service à partir de l’objet DTE](../Topic/How%20to:%20Get%20a%20Service%20from%20the%20DTE%20Object.md)   
- [Comment : utiliser des Assistants avec des modèles de projet](../Topic/How%20to:%20Use%20Wizards%20with%20Project%20Templates.md)  
+ [Comment : créer un complément](http://msdn.microsoft.com/library/50be56d2-e3a5-4cd2-8569-2a0666b268ce)   
+ [Comment : obtenir un Service](~/extensibility/how-to-get-a-service.md)   
+ [Comment : obtenir un service à partir de l’objet DTE](~/misc/how-to-get-a-service-from-the-dte-object.md)   
+ [Comment : utiliser des Assistants avec des modèles de projet](~/extensibility/how-to-use-wizards-with-project-templates.md)  
   
   

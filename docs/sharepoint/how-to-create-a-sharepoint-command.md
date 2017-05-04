@@ -30,7 +30,7 @@ caps.handback.revision: 21
   
 1.  Créez un projet de bibliothèque de classes avec la configuration suivante :  
   
-    -   Cible .NET Framework 3.5.  Pour plus d'informations sur le choix de la version cible du .NET Framework, consultez [Comment : cibler une version du .NET Framework](../Topic/How%20to:%20Target%20a%20Version%20of%20the%20.NET%20Framework.md).  
+    -   Cible .NET Framework 3.5.  Pour plus d'informations sur le choix de la version cible du .NET Framework, consultez [Comment : cibler une version du .NET Framework](~/ide/how-to-target-a-version-of-the-dotnet-framework.md).  
   
     -   Cible la plateforme AnyCPU ou x64.  Par défaut, la plateforme cible pour les projets de bibliothèque de classes est AnyCPU.  Pour plus d'informations sur le choix de la plateforme cible, consultez [NIB: How to: Optimize an Application for a Specific CPU Type](http://msdn.microsoft.com/fr-fr/294a75d2-4279-4b72-8298-2bea05be907a).  
   
@@ -53,7 +53,7 @@ caps.handback.revision: 21
   
     -   Une valeur de retour, facultative elle aussi, peut lui être associée.  
   
-    -   Le deuxième paramètre et la valeur de retour doivent correspondre à un type susceptible d'être sérialisé par Windows Communication Foundation \(WCF\).  Pour plus d'informations, consultez [Types pris en charge par le sérialiseur de contrat de données](../Topic/Types%20Supported%20by%20the%20Data%20Contract%20Serializer.md) et [Utilisation de la classe XmlSerializer](../Topic/Using%20the%20XmlSerializer%20Class.md).  
+    -   Le deuxième paramètre et la valeur de retour doivent correspondre à un type susceptible d'être sérialisé par Windows Communication Foundation \(WCF\).  Pour plus d'informations, consultez [Types pris en charge par le sérialiseur de contrat de données](http://msdn.microsoft.com/library/7381b200-437a-4506-9556-d77bf1bc3f34) et [Utilisation de la classe XmlSerializer](http://msdn.microsoft.com/library/c680602d-39d3-44f1-bf22-8e6654ad5069).  
   
     -   La méthode peut avoir n'importe quelle visibilité \(**public**, **internal** ou **private**\) et être statique ou non statique.  
   

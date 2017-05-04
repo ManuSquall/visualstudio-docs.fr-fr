@@ -49,7 +49,7 @@ caps.handback.revision: 43
   
  Une connaissance des concepts suivants est utile, mais pas obligatoire, pour effectuer cette procédure pas à pas :  
   
--   Assistants associés aux modèles de projet et d'élément dans Visual Studio.  Pour plus d'informations, consultez [Comment : utiliser des Assistants avec des modèles de projet](../Topic/How%20to:%20Use%20Wizards%20with%20Project%20Templates.md) et l'interface <xref:Microsoft.VisualStudio.TemplateWizard.IWizard>.  
+-   Assistants associés aux modèles de projet et d'élément dans Visual Studio.  Pour plus d'informations, consultez [Comment : utiliser des Assistants avec des modèles de projet](~/extensibility/how-to-use-wizards-with-project-templates.md) et l'interface <xref:Microsoft.VisualStudio.TemplateWizard.IWizard>.  
   
 -   Actions personnalisées dans SharePoint.  Pour plus d'informations, consultez [Action personnalisée](http://go.microsoft.com/fwlink/?LinkId=177800).  
   
@@ -84,7 +84,7 @@ caps.handback.revision: 43
   
 2.  Dans **Concepteur de projets**, assurez \-vous que la version cible du. Net Framework a pour valeur le .NET Framework 4,5.  
   
-     Pour les projets visual C\#, vous pouvez définir cette valeur sur **Application** tableau.  Pour les projets Visual Basic, vous pouvez définir cette valeur sur **Compiler** tableau.  Pour plus d’informations, consultez [Comment : cibler une version du .NET Framework](../Topic/How%20to:%20Target%20a%20Version%20of%20the%20.NET%20Framework.md).  
+     Pour les projets visual C\#, vous pouvez définir cette valeur sur **Application** tableau.  Pour les projets Visual Basic, vous pouvez définir cette valeur sur **Compiler** tableau.  Pour plus d’informations, consultez [Comment : cibler une version du .NET Framework](~/ide/how-to-target-a-version-of-the-dotnet-framework.md).  
   
 3.  Dans le projet **ItemTemplateWizard** , ajoutez un élément **fenêtre \(WPF\)** au projet, puis nommez l'élément **WizardWindow**.  
   
@@ -354,7 +354,7 @@ caps.handback.revision: 43
  [Defining Custom SharePoint Project Item Types](../sharepoint/defining-custom-sharepoint-project-item-types.md)   
  [Creating Item Templates and Project Templates for SharePoint Project Items](../sharepoint/creating-item-templates-and-project-templates-for-sharepoint-project-items.md)   
  [Référence du schéma de modèle Visual Studio](../extensibility/visual-studio-template-schema-reference.md)   
- [Comment : utiliser des Assistants avec des modèles de projet](../Topic/How%20to:%20Use%20Wizards%20with%20Project%20Templates.md)   
+ [Comment : utiliser des Assistants avec des modèles de projet](~/extensibility/how-to-use-wizards-with-project-templates.md)   
  [Est la valeur par défaut des emplacements personnalisés et les ID d'action](http://go.microsoft.com/fwlink/?LinkId=181964)  
   
   

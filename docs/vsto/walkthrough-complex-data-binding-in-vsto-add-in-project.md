@@ -73,7 +73,7 @@ caps.handback.revision: 37
   
 4.  Si vous disposez d’une connexion à la base de données `AdventureWorksLT`, choisissez cette connexion et cliquez sur **Suivant**.  
   
-     Sinon, cliquez sur **Nouvelle connexion** et utilisez la boîte de dialogue **Ajouter une connexion** pour créer la connexion. Pour plus d'informations, consultez [Comment : établir une connexion à des données d'une base de données](../Topic/How%20to:%20Connect%20to%20Data%20in%20a%20Database.md).  
+     Sinon, cliquez sur **Nouvelle connexion** et utilisez la boîte de dialogue **Ajouter une connexion** pour créer la connexion. Pour plus d'informations, consultez [Comment : établir une connexion à des données d'une base de données](~/data-tools/how-to-connect-to-data-in-a-database.md).  
   
 5.  Dans la page **Enregistrer la chaîne de connexion dans le fichier de configuration de l’application**, cliquez sur **Suivant**.  
   
@@ -146,6 +146,6 @@ caps.handback.revision: 37
  [Liaison de contrôles Windows Forms à des données dans Visual Studio](../Topic/Binding%20Windows%20Forms%20controls%20to%20data%20in%20Visual%20Studio.md)   
  [Vue d'ensemble de l'utilisation de fichiers de base de données locaux dans les solutions Office](../vsto/using-local-database-files-in-office-solutions-overview.md)   
  [Connexion à des données dans des applications Windows Forms](/visual-studio/data-tools/connecting-to-data-in-windows-forms-applications)   
- [Vue d'ensemble du composant BindingSource](../Topic/BindingSource%20Component%20Overview.md)  
+ [Vue d'ensemble du composant BindingSource](http://msdn.microsoft.com/library/be838caf-fcb0-4b68-827f-58b2c04b747f)  
   
   

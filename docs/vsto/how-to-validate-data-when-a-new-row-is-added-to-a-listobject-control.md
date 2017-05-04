@@ -32,7 +32,7 @@ caps.handback.revision: 42
  Chaque fois qu’une ligne est ajoutée à un <xref:Microsoft.Office.Tools.Excel.ListObject> qui est lié aux données, l’événement <xref:Microsoft.Office.Tools.Excel.ListObject.BeforeAddDataBoundRow> est déclenché. Vous pouvez gérer cet événement pour effectuer la validation de vos données. Par exemple, si votre application requiert que seuls les employés âgés de 18 à 65 ans puissent être ajoutés à la source de données, vous pouvez vérifier que l’âge entré est compris dans cette plage avant que la ligne ne soit ajoutée.  
   
 > [!NOTE]  
->  Vous devez toujours vérifier l’entrée d’utilisateur sur le client, mais aussi sur le serveur. Pour plus d'informations, consultez [Applications clientes sécurisées](../Topic/Secure%20Client%20Applications.md).  
+>  Vous devez toujours vérifier l’entrée d’utilisateur sur le client, mais aussi sur le serveur. Pour plus d'informations, consultez [Applications clientes sécurisées](http://msdn.microsoft.com/library/6239592e-fa7d-4dea-9f00-d296d0048b01).  
   
 #### Pour valider des données lorsqu’une nouvelle ligne est ajoutée à un ListObject lié aux données  
   

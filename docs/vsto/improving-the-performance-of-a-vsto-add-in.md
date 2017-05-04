@@ -77,9 +77,9 @@ caps.handback.revision: 13
   
     ```  
   
-     Pour plus d’informations sur la création d’un événement post\-build dans un projet C\#, consultez [Comment : spécifier des événements de build &#40;C&#35;&#41;](../Topic/How%20to:%20Specify%20Build%20Events%20(C%23).md).  
+     Pour plus d’informations sur la création d’un événement post\-build dans un projet C\#, consultez [Comment : spécifier des événements de build &#40;C&#35;&#41;](~/ide/how-to-specify-build-events-csharp.md).  
   
-     Pour plus d’informations sur la création d’un événement post\-build dans un projet Visual Basic, consultez [Comment : spécifier des événements de build &#40;C&#35;&#41;](../Topic/How%20to:%20Specify%20Build%20Events%20(C%23).md).  
+     Pour plus d’informations sur la création d’un événement post\-build dans un projet Visual Basic, consultez [Comment : spécifier des événements de build &#40;C&#35;&#41;](~/ide/how-to-specify-build-events-csharp.md).  
   
 ##  <a name="Publish"></a> Publier des solutions Office à l'aide de Windows Installer  
  Si vous publiez votre solution à l’aide de Windows Installer, Visual Studio 2010 Tools pour Office Runtime ignore les étapes suivantes pendant le chargement du complément VSTO.  

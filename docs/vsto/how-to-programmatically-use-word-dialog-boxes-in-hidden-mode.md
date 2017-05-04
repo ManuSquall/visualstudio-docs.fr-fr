@@ -44,6 +44,6 @@ caps.handback.revision: 47
  [Comment : utiliser les boîtes de dialogue intégrées dans Word par programmation](../vsto/how-to-programmatically-use-built-in-dialog-boxes-in-word.md)   
  [Vue d'ensemble du modèle objet Word](../vsto/word-object-model-overview.md)   
  [Liaison tardive dans les solutions Office](../vsto/late-binding-in-office-solutions.md)   
- [Réflexion &#40;C&#35; et Visual Basic&#41;](../Topic/Reflection%20(C%23%20and%20Visual%20Basic).md)  
+ [Réflexion &#40;C&#35; et Visual Basic&#41;](http://msdn.microsoft.com/library/5d1d1bcf-08de-4d0b-97a8-912d17c00f26)  
   
   

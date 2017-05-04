@@ -22,7 +22,7 @@ manager: "ghogen"
 caps.handback.revision: 24
 ---
 # Utilisation de contr&#244;les WPF dans les solutions Office
-  Bien que les solutions créées à l'aide des outils de développement Office dans Visual Studio soient conçues pour fonctionner directement avec les contrôles Windows Forms, vous pouvez également utiliser des contrôles WPF dans vos solutions.  Windows Presentation Foundation \(WPF\) est une alternative à Windows Forms pour concevoir des interfaces utilisateur.  WPF utilise un langage de balisage appelé XAML \(eXtensible Application Markup Language\) qui offre de nouvelles techniques pour intégrer l'interface utilisateur, les médias et les documents.  Pour plus d'informations, consultez [Présentation de WPF dans Visual Studio 2015](../Topic/Introduction%20to%20WPF%20in%20Visual%20Studio%202015.md).  
+  Bien que les solutions créées à l'aide des outils de développement Office dans Visual Studio soient conçues pour fonctionner directement avec les contrôles Windows Forms, vous pouvez également utiliser des contrôles WPF dans vos solutions.  Windows Presentation Foundation \(WPF\) est une alternative à Windows Forms pour concevoir des interfaces utilisateur.  WPF utilise un langage de balisage appelé XAML \(eXtensible Application Markup Language\) qui offre de nouvelles techniques pour intégrer l'interface utilisateur, les médias et les documents.  Pour plus d'informations, consultez [Présentation de WPF dans Visual Studio 2015](http://msdn.microsoft.com/library/582a314e-e23d-4144-b45b-acbbd5579252).  
   
  [!INCLUDE[appliesto_all](../vsto/includes/appliesto-all-md.md)]  
   
@@ -98,21 +98,21 @@ caps.handback.revision: 24
 ## Ressources WPF  
  Pour plus d'informations sur les problèmes d'architecture ou de conception d'hébergement des contrôles WPF sur les formulaires et les contrôles Windows Forms, consultez les rubriques suivantes :  
   
--   [Architecture d'entrée pour l'interopérabilité entre Windows Forms et WPF](../Topic/Windows%20Forms%20and%20WPF%20Interoperability%20Input%20Architecture.md)  
+-   [Architecture d'entrée pour l'interopérabilité entre Windows Forms et WPF](http://msdn.microsoft.com/library/0eb6f137-f088-4c5e-9e37-f96afd28f235)  
   
--   [Mappage de propriétés Windows Forms et WPF](../Topic/Windows%20Forms%20and%20WPF%20Property%20Mapping.md)  
+-   [Mappage de propriétés Windows Forms et WPF](http://msdn.microsoft.com/library/999d8298-9c04-467d-a453-86e41002057d)  
   
--   [Interopérabilité WPF et Windows Forms](../Topic/WPF%20and%20Windows%20Forms%20Interoperation.md)  
+-   [Interopérabilité WPF et Windows Forms](http://msdn.microsoft.com/library/9e8aa6b6-112c-4579-98d1-c974917df499)  
   
--   [Contrôles Windows Forms et contrôles WPF équivalents](../Topic/Windows%20Forms%20Controls%20and%20Equivalent%20WPF%20Controls.md)  
+-   [Contrôles Windows Forms et contrôles WPF équivalents](http://msdn.microsoft.com/library/8a157e6b-8054-46db-a5cf-a78966acc7a1)  
   
  Pour plus d'informations sur l'ajout de contrôles WPF à des formulaires et contrôles Windows Forms dans Visual Studio au moment du design, consultez les rubriques suivantes :  
   
--   [Procédure pas à pas : création de contenu WPF sur les Windows Forms au moment du design](../Topic/Walkthrough:%20Creating%20New%20WPF%20Content%20on%20Windows%20Forms%20at%20Design%20Time.md)  
+-   [Procédure pas à pas : création de contenu WPF sur les Windows Forms au moment du design](http://msdn.microsoft.com/library/2e92d8e8-f0e4-4df7-9f07-2acf35cd798c)  
   
--   [Procédure pas à pas : réorganisation du contenu WPF sur les Windows Forms au moment du design](../Topic/Walkthrough:%20Arranging%20WPF%20Content%20on%20Windows%20Forms%20at%20Design%20Time.md)  
+-   [Procédure pas à pas : réorganisation du contenu WPF sur les Windows Forms au moment du design](http://msdn.microsoft.com/library/5efb1c53-1484-43d6-aa8a-f4861b99bb8a)  
   
--   [Procédure pas à pas : application de styles au contenu WPF](../Topic/Walkthrough:%20Styling%20WPF%20Content.md).  
+-   [Procédure pas à pas : application de styles au contenu WPF](http://msdn.microsoft.com/library/e574aac7-7ea4-4cdb-8034-bab541f000df).  
   
 ## Voir aussi  
  [Personnalisation de l'interface utilisateur Office](../vsto/office-ui-customization.md)   

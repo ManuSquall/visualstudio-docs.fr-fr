@@ -77,8 +77,8 @@ caps.handback.revision: 35
   
 ## Voir aussi  
  [Développement de SharePoint Foundation détaillé](http://go.microsoft.com/fwlink/?LinkID=182103)   
- [Vue d'ensemble des pages Web ASP.NET](../Topic/ASP.NET%20Web%20Forms%20Pages%20Overview.md)   
- [Vue d'ensemble de la syntaxe des pages Web ASP.NET](../Topic/ASP.NET%20Web%20Forms%20Page%20Syntax%20Overview.md)   
+ [Vue d'ensemble des pages Web ASP.NET](http://msdn.microsoft.com/library/52fa0455-41ea-4315-8208-2861d1527da2)   
+ [Vue d'ensemble de la syntaxe des pages Web ASP.NET](http://msdn.microsoft.com/library/09074b20-ece9-46fa-bc8f-ab2595ed2c02)   
  [Programmation de pages Web ASP.NET](http://msdn.microsoft.com/fr-fr/5626c661-8057-4de8-b658-c2e35ed4b4c9)  
   
   

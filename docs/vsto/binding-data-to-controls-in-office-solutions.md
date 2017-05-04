@@ -34,7 +34,7 @@ caps.handback.revision: 69
   
  Les contrôles hôtes étendent des objets qui se trouvent dans les modèles objet Word et Excel, tels que les contrôles de contenu dans Word et les plages nommées dans Excel. Pour plus d'informations, consultez [Vue d'ensemble des éléments hôtes et des contrôles hôtes](../vsto/host-items-and-host-controls-overview.md).  
   
- Les contrôles Windows Forms et les contrôles hôtes utilisent le modèle de liaison de données Windows Forms, qui prend en charge la *liaison de données simple* et la *liaison de données complexe* à des sources de données telles que les datasets et les tables de données. Pour obtenir des informations complètes sur le modèle de liaison de données dans les Windows Forms, consultez [Liaison de données et Windows Forms](../Topic/Data%20Binding%20and%20Windows%20Forms.md).  
+ Les contrôles Windows Forms et les contrôles hôtes utilisent le modèle de liaison de données Windows Forms, qui prend en charge la *liaison de données simple* et la *liaison de données complexe* à des sources de données telles que les datasets et les tables de données. Pour obtenir des informations complètes sur le modèle de liaison de données dans les Windows Forms, consultez [Liaison de données et Windows Forms](http://msdn.microsoft.com/library/419aac5e-819b-4aad-88b0-73a2f8c0bd27).  
   
  ![lien vers la vidéo](../vsto/media/playvideo.png "lien vers la vidéo") Pour obtenir une démonstration vidéo associée, consultez [Comment faire pour consommer des données de base de données dans Excel ?](http://go.microsoft.com/fwlink/?LinkID=130287).  
   
@@ -53,7 +53,7 @@ caps.handback.revision: 69
 ## Liaison de données complexe  
  Il existe une liaison de données complexe quand une propriété de contrôle est liée à plusieurs éléments de données, par exemple plusieurs colonnes dans une table de données. Le contrôle <xref:Microsoft.Office.Tools.Excel.ListObject> pour Excel est le seul contrôle hôte qui prend en charge la liaison de données complexe. Il existe également de nombreux contrôles Windows Forms qui prennent en charge la liaison de données complexe, tels que le contrôle <xref:System.Windows.Forms.DataGridView>.  
   
- Pour effectuer une liaison de données complexe, affectez comme valeur de la propriété DataSource du contrôle un objet de source de données qui est pris en charge par la liaison de données complexe. Par exemple, la propriété <xref:Microsoft.Office.Tools.Excel.ListObject.DataSource%2A> du contrôle <xref:Microsoft.Office.Tools.Excel.ListObject> peut être liée à plusieurs colonnes dans une table de données. Toutes les données de la table s’affichent dans le contrôle <xref:Microsoft.Office.Tools.Excel.ListObject>, et le <xref:Microsoft.Office.Tools.Excel.ListObject> change à mesure que les données de la table de données changent. Pour obtenir la liste des sources de données que vous pouvez utiliser pour la liaison de données complexe, consultez [Sources de données prises en charge par les Windows Forms](../Topic/Data%20Sources%20Supported%20by%20Windows%20Forms.md).  
+ Pour effectuer une liaison de données complexe, affectez comme valeur de la propriété DataSource du contrôle un objet de source de données qui est pris en charge par la liaison de données complexe. Par exemple, la propriété <xref:Microsoft.Office.Tools.Excel.ListObject.DataSource%2A> du contrôle <xref:Microsoft.Office.Tools.Excel.ListObject> peut être liée à plusieurs colonnes dans une table de données. Toutes les données de la table s’affichent dans le contrôle <xref:Microsoft.Office.Tools.Excel.ListObject>, et le <xref:Microsoft.Office.Tools.Excel.ListObject> change à mesure que les données de la table de données changent. Pour obtenir la liste des sources de données que vous pouvez utiliser pour la liaison de données complexe, consultez [Sources de données prises en charge par les Windows Forms](http://msdn.microsoft.com/library/3d2c43f6-462b-4d35-9c86-13e9afe012e1).  
   
  L’exemple de code suivant crée un <xref:System.Data.DataSet> avec deux objets <xref:System.Data.DataTable> et remplit l’une des tables avec des données. Le code lie ensuite le <xref:Microsoft.Office.Tools.Excel.ListObject> à la table qui contient des données. Cet exemple concerne un projet Excel au niveau du document.  
   
@@ -63,7 +63,7 @@ caps.handback.revision: 69
  Pour obtenir des procédures pas à pas qui illustrent la liaison de données complexe, consultez [Procédure pas à pas : liaison de données complexe dans un projet au niveau du document](../vsto/walkthrough-complex-data-binding-in-a-document-level-project.md) pour un projet au niveau du document et [Procédure pas à pas : liaison de données complexe dans un projet de complément VSTO](../vsto/walkthrough-complex-data-binding-in-vsto-add-in-project.md) pour un projet de complément VSTO.  
   
 ## Affichage de données dans des documents et des classeurs  
- Dans les projets au niveau du document, vous pouvez utiliser la fenêtre **Sources de données** pour ajouter facilement des contrôles liés aux données à vos documents ou vos classeurs, comme vous le feriez pour des Windows Forms. Pour plus d’informations sur l’utilisation de la fenêtre **Sources de données**, consultez [Liaison de contrôles Windows Forms à des données dans Visual Studio](../Topic/Binding%20Windows%20Forms%20controls%20to%20data%20in%20Visual%20Studio.md) et [Sources de données &#40;fenêtre&#41;](../Topic/Data%20Sources%20Window.md).  
+ Dans les projets au niveau du document, vous pouvez utiliser la fenêtre **Sources de données** pour ajouter facilement des contrôles liés aux données à vos documents ou vos classeurs, comme vous le feriez pour des Windows Forms. Pour plus d’informations sur l’utilisation de la fenêtre **Sources de données**, consultez [Liaison de contrôles Windows Forms à des données dans Visual Studio](../Topic/Binding%20Windows%20Forms%20controls%20to%20data%20in%20Visual%20Studio.md) et [Sources de données &#40;fenêtre&#41;](http://msdn.microsoft.com/library/0d20f699-cc95-45b3-8ecb-c7edf1f67992).  
   
 ### Glissement de contrôles à partir de la fenêtre Sources de données  
  Un contrôle est créé sur le document quand vous faites glisser un objet sur à partir de la fenêtre **Sources de données**. Le type de contrôle créé varie selon que vous liez une ou plusieurs colonnes de données.  
@@ -103,8 +103,8 @@ caps.handback.revision: 69
   
 ## Voir aussi  
  [Comment faire pour utiliser des données d’une base de données dans Excel ?](http://go.microsoft.com/fwlink/?LinkID=130287)   
- [Liaison de données et Windows Forms](../Topic/Data%20Binding%20and%20Windows%20Forms.md)   
- [Comment : créer un contrôle à liaison simple dans un Windows Form](../Topic/How%20to:%20Create%20a%20Simple-Bound%20Control%20on%20a%20Windows%20Form.md)   
+ [Liaison de données et Windows Forms](http://msdn.microsoft.com/library/419aac5e-819b-4aad-88b0-73a2f8c0bd27)   
+ [Comment : créer un contrôle à liaison simple dans un Windows Form](http://msdn.microsoft.com/library/3bcaded8-0f1a-4cc0-8830-f59be253bf4e)   
  [Liaison de contrôles Windows Forms à des données dans Visual Studio](../Topic/Binding%20Windows%20Forms%20controls%20to%20data%20in%20Visual%20Studio.md)   
  [Enregistrement de données dans des groupes de données](../Topic/Saving%20data%20back%20to%20the%20database.md)   
  [Comment : mettre à jour les données à l'aide d'un TableAdapter](../data-tools/update-data-by-using-a-tableadapter.md)   

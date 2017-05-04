@@ -135,7 +135,7 @@ caps.handback.revision: 41
   
  Pour gérer des événements dans un projet Visual Basic, sélectionnez un événement dans la liste des noms de méthodes en haut de l'éditeur de code.  
   
- Pour gérer des événements dans un projet C\#, abonnez\-vous aux événements de contrôle dans la méthode <xref:Microsoft.Office.Tools.Outlook.FormRegionControl.FormRegionShowing>.  Pour plus d'informations, consultez [Comment : s'abonner et annuler l'abonnement à des événements &#40;Guide de programmation C&#35;&#41;](../Topic/How%20to:%20Subscribe%20to%20and%20Unsubscribe%20from%20Events%20(C%23%20Programming%20Guide).md).  
+ Pour gérer des événements dans un projet C\#, abonnez\-vous aux événements de contrôle dans la méthode <xref:Microsoft.Office.Tools.Outlook.FormRegionControl.FormRegionShowing>.  Pour plus d'informations, consultez [Comment : s'abonner et annuler l'abonnement à des événements &#40;Guide de programmation C&#35;&#41;](http://msdn.microsoft.com/library/6319f39f-282c-4173-8a62-6c4657cf51cd).  
   
  Vous pouvez modifier les propriétés des zones de formulaire dans la méthode `InitializeManifest` de la classe de fabrique de zones de formulaire.  
   

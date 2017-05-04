@@ -62,11 +62,11 @@ caps.handback.revision: 43
   
 #### Pour utiliser la fenêtre Sources de données  
   
-1.  Ouvrez la fenêtre **Sources de données** et créez une source de données pour votre projet. Pour plus d'informations, consultez [Comment : établir une connexion à des données d'une base de données](../Topic/How%20to:%20Connect%20to%20Data%20in%20a%20Database.md).  
+1.  Ouvrez la fenêtre **Sources de données** et créez une source de données pour votre projet. Pour plus d'informations, consultez [Comment : établir une connexion à des données d'une base de données](~/data-tools/how-to-connect-to-data-in-a-database.md).  
   
 2.  Faites glisser un tableau de la fenêtre **Sources de données** vers votre feuille de calcul.  
   
-     Un contrôle <xref:Microsoft.Office.Tools.Excel.ListObject> lié aux données est ajouté à la feuille de calcul. Pour plus d'informations, consultez [Liaison de données et Windows Forms](../Topic/Data%20Binding%20and%20Windows%20Forms.md).  
+     Un contrôle <xref:Microsoft.Office.Tools.Excel.ListObject> lié aux données est ajouté à la feuille de calcul. Pour plus d'informations, consultez [Liaison de données et Windows Forms](http://msdn.microsoft.com/library/419aac5e-819b-4aad-88b0-73a2f8c0bd27).  
   
 ##  <a name="runtimedoclevel"></a> Ajout de contrôles ListObject au moment de l’exécution dans un projet au niveau du document  
  Vous pouvez ajouter dynamiquement le contrôle <xref:Microsoft.Office.Tools.Excel.ListObject> au moment de l'exécution. Cela vous permet de créer les contrôles hôtes en réponse à des événements. Les objets de liste créés de manière dynamique ne sont pas persistants dans la feuille de calcul en tant que contrôles hôtes, une fois la feuille de calcul fermée. Pour plus d'informations, consultez [Ajout de contrôles à des documents Office au moment de l'exécution](../vsto/adding-controls-to-office-documents-at-run-time.md).  

@@ -53,7 +53,7 @@ caps.handback.revision: 51
   
 -   À partir de la fenêtre **Sources de données**.  
   
-     Vous pouvez faire glisser le contrôle <xref:Microsoft.Office.Tools.Word.Bookmark> vers votre document à partir de la fenêtre **Sources de données**. Cela est utile lorsque vous souhaitez lier simultanément le contrôle aux données. Vous pouvez ajouter le contrôle hôte de la même manière que vous ajouteriez un contrôle Windows Form à partir de la fenêtre **Sources de données**. Pour plus d'informations, consultez [Liaison de données et Windows Forms](../Topic/Data%20Binding%20and%20Windows%20Forms.md).  
+     Vous pouvez faire glisser le contrôle <xref:Microsoft.Office.Tools.Word.Bookmark> vers votre document à partir de la fenêtre **Sources de données**. Cela est utile lorsque vous souhaitez lier simultanément le contrôle aux données. Vous pouvez ajouter le contrôle hôte de la même manière que vous ajouteriez un contrôle Windows Form à partir de la fenêtre **Sources de données**. Pour plus d'informations, consultez [Liaison de données et Windows Forms](http://msdn.microsoft.com/library/419aac5e-819b-4aad-88b0-73a2f8c0bd27).  
   
  [!INCLUDE[note_settings_general](../sharepoint/includes/note-settings-general-md.md)]  
   

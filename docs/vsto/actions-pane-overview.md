@@ -98,7 +98,7 @@ caps.handback.revision: 100
  Vous pouvez également écrire le code pour répondre aux événements de n'importe quel objet, y compris les événements de contrôle hôte, d'application ou de document.  Pour plus d'informations, consultez [Procédure pas à pas : programmation d'événements d'un contrôle NamedRange](../vsto/walkthrough-programming-against-events-of-a-namedrange-control.md).  
   
 ## Liaison de données aux contrôles dans le volet Actions  
- Les contrôles du volet Actions ont les mêmes fonctionnalités de liaison de données que les contrôles Windows Forms.  Vous pouvez lier les contrôles aux sources de données telles que les jeux de données, les groupes de données typées et XML.  Pour plus d'informations, consultez [Liaison de données et Windows Forms](../Topic/Data%20Binding%20and%20Windows%20Forms.md).  
+ Les contrôles du volet Actions ont les mêmes fonctionnalités de liaison de données que les contrôles Windows Forms.  Vous pouvez lier les contrôles aux sources de données telles que les jeux de données, les groupes de données typées et XML.  Pour plus d'informations, consultez [Liaison de données et Windows Forms](http://msdn.microsoft.com/library/419aac5e-819b-4aad-88b0-73a2f8c0bd27).  
   
  Vous pouvez lier des contrôles du volet Actions et des contrôles du document au même jeu de données.  Par exemple, vous pouvez créer une relation maître\/détail entre les contrôles du volet Actions et les contrôles de la feuille de calcul.  Pour plus d'informations, consultez [Procédure pas à pas : liaison de données aux contrôles dans un volet Actions Excel](../vsto/walkthrough-binding-data-to-controls-on-an-excel-actions-pane.md).  
   
@@ -124,7 +124,7 @@ caps.handback.revision: 100
  [!code-vb[Trin_VstcoreActionsPaneExcel#10](../snippets/visualbasic/VS_Snippets_OfficeSP/Trin_VstcoreActionsPaneExcel/VB/ThisWorkbook.vb#10)]  
   
 ## Ancrage des contrôles  
- Si l'utilisateur redimensionne le volet Actions au moment de l'exécution, les contrôles peuvent être redimensionnés avec le volet Actions.  Vous pouvez utiliser la propriété <xref:System.Windows.Forms.Control.Anchor%2A> d'un contrôle Windows Forms pour ancrer des contrôles au volet Actions.  Vous pouvez également ancrer les contrôles Windows Forms au contrôle utilisateur de la même manière.  Pour plus d'informations, consultez [Comment : ancrer des contrôles aux Windows Forms](../Topic/How%20to:%20Anchor%20Controls%20on%20Windows%20Forms.md).  
+ Si l'utilisateur redimensionne le volet Actions au moment de l'exécution, les contrôles peuvent être redimensionnés avec le volet Actions.  Vous pouvez utiliser la propriété <xref:System.Windows.Forms.Control.Anchor%2A> d'un contrôle Windows Forms pour ancrer des contrôles au volet Actions.  Vous pouvez également ancrer les contrôles Windows Forms au contrôle utilisateur de la même manière.  Pour plus d'informations, consultez [Comment : ancrer des contrôles aux Windows Forms](http://msdn.microsoft.com/library/59ea914f-fbd3-427a-80fe-decd02f7ae6d).  
   
 ## Redimensionnement du volet Actions  
  Vous ne pouvez pas modifier directement la taille d'un <xref:Microsoft.Office.Tools.ActionsPane>, car le <xref:Microsoft.Office.Tools.ActionsPane> est incorporé au volet des tâches.  Toutefois, vous pouvez modifier par programmation la largeur du volet des tâches en définissant la propriété <xref:Microsoft.Office.Core.CommandBar.Width%2A> du <xref:Microsoft.Office.Core.CommandBar> qui représente le volet des tâches.  Vous pouvez modifier la hauteur du volet des tâches s'il est ancré horizontalement ou est flottant.  
