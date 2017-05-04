@@ -1,0 +1,1 @@
+Internet Explorer 4.0
