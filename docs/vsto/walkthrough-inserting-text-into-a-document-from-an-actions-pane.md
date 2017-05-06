@@ -1,5 +1,5 @@
 ---
-title: "Proc&#233;dure pas &#224; pas : Insertion de texte dans un document &#224; partir d&#39;un volet Actions | Microsoft Docs"
+title: "Proc&#233;dure pas &#224; pas : Insertion de texte dans un document &#224; partir d&#39;un volet Actions"
 ms.custom: ""
 ms.date: "02/02/2017"
 ms.prod: "visual-studio-dev14"

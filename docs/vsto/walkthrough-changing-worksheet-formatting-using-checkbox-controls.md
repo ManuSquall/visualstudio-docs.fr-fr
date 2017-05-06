@@ -1,5 +1,5 @@
 ---
-title: "Proc&#233;dure pas &#224; pas&#160;: modification de la mise en forme d&#39;une feuille de calcul &#224; l&#39;aide de contr&#244;les CheckBox | Microsoft Docs"
+title: "Proc&#233;dure pas &#224; pas&#160;: modification de la mise en forme d&#39;une feuille de calcul &#224; l&#39;aide de contr&#244;les CheckBox"
 ms.custom: ""
 ms.date: "02/02/2017"
 ms.prod: "visual-studio-dev14"

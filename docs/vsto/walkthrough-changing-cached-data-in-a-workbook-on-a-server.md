@@ -1,5 +1,5 @@
 ---
-title: "Proc&#233;dure pas &#224; pas&#160;: modification des donn&#233;es mises en cache dans un classeur sur un serveur | Microsoft Docs"
+title: "Proc&#233;dure pas &#224; pas&#160;: modification des donn&#233;es mises en cache dans un classeur sur un serveur"
 ms.custom: ""
 ms.date: "02/02/2017"
 ms.prod: "visual-studio-dev14"

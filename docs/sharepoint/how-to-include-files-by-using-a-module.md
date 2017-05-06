@@ -1,5 +1,5 @@
 ---
-title: "Comment&#160;: inclure des fichiers &#224; l&#39;aide d&#39;un module | Microsoft Docs"
+title: "Comment&#160;: inclure des fichiers &#224; l&#39;aide d&#39;un module"
 ms.custom: ""
 ms.date: "02/02/2017"
 ms.prod: "visual-studio-dev14"

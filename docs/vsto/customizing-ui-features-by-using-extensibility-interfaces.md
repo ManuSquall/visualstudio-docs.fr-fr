@@ -1,5 +1,5 @@
 ---
-title: "Personnalisation des fonctionnalit&#233;s de l&#39;interface utilisateur &#224; l&#39;aide d&#39;interfaces d&#39;extensibilit&#233; | Microsoft Docs"
+title: "Personnalisation des fonctionnalit&#233;s de l&#39;interface utilisateur &#224; l&#39;aide d&#39;interfaces d&#39;extensibilit&#233;"
 ms.custom: ""
 ms.date: "02/02/2017"
 ms.prod: "visual-studio-dev14"

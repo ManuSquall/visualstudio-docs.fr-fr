@@ -1,5 +1,5 @@
 ---
-title: "Protection par mot de passe des documents Office | Microsoft Docs"
+title: "Protection par mot de passe des documents Office"
 ms.custom: ""
 ms.date: "02/02/2017"
 ms.prod: "visual-studio-dev14"

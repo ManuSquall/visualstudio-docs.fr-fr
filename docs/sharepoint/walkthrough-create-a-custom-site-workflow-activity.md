@@ -1,5 +1,5 @@
 ---
-title: "Proc&#233;dures pas &#224; pas&#160;: cr&#233;ation d&#39;une activit&#233; de workflow de site personnalis&#233;e | Microsoft Docs"
+title: "Proc&#233;dures pas &#224; pas&#160;: cr&#233;ation d&#39;une activit&#233; de workflow de site personnalis&#233;e"
 ms.custom: ""
 ms.date: "02/02/2017"
 ms.prod: "visual-studio-dev14"

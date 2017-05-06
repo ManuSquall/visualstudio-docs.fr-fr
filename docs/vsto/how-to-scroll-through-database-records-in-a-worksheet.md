@@ -1,5 +1,5 @@
 ---
-title: "Comment&#160;: parcourir les enregistrements de base de donn&#233;es dans une feuille de calcul | Microsoft Docs"
+title: "Comment&#160;: parcourir les enregistrements de base de donn&#233;es dans une feuille de calcul"
 ms.custom: ""
 ms.date: "02/02/2017"
 ms.prod: "visual-studio-dev14"

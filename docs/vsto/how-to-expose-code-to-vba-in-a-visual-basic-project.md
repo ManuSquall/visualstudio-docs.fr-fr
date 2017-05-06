@@ -1,5 +1,5 @@
 ---
-title: "Comment&#160;: exposer du code &#224; VBA dans un projet Visual Basic | Microsoft Docs"
+title: "Comment&#160;: exposer du code &#224; VBA dans un projet Visual Basic"
 ms.custom: ""
 ms.date: "02/02/2017"
 ms.prod: "visual-studio-dev14"

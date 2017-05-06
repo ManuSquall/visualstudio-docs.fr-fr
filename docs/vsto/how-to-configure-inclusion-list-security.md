@@ -1,5 +1,5 @@
 ---
-title: "Comment&#160;: configurer la s&#233;curit&#233; de la liste d&#39;inclusion | Microsoft Docs"
+title: "Comment&#160;: configurer la s&#233;curit&#233; de la liste d&#39;inclusion"
 ms.custom: ""
 ms.date: "02/02/2017"
 ms.prod: "visual-studio-dev14"

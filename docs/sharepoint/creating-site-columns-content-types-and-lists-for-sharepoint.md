@@ -1,5 +1,5 @@
 ---
-title: "Cr&#233;ation de colonnes de sites, de types de contenu et de listes pour SharePoint | Microsoft Docs"
+title: "Cr&#233;ation de colonnes de sites, de types de contenu et de listes pour SharePoint"
 ms.custom: ""
 ms.date: "02/02/2017"
 ms.prod: "visual-studio-dev14"

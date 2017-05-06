@@ -1,5 +1,5 @@
 ---
-title: "Fonctionnalit&#233;s disponibles par type d&#39;application et de projet Office | Microsoft Docs"
+title: "Fonctionnalit&#233;s disponibles par type d&#39;application et de projet Office"
 ms.custom: ""
 ms.date: "02/02/2017"
 ms.prod: "visual-studio-dev14"

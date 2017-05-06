@@ -1,5 +1,5 @@
 ---
-title: "T&#226;ches courantes en mati&#232;re de programmation Office | Microsoft Docs"
+title: "T&#226;ches courantes en mati&#232;re de programmation Office"
 ms.custom: ""
 ms.date: "02/02/2017"
 ms.prod: "visual-studio-dev14"

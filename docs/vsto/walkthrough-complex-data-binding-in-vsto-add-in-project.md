@@ -1,5 +1,5 @@
 ---
-title: "Proc&#233;dure pas &#224; pas&#160;: liaison de donn&#233;es complexe dans un projet de compl&#233;ment VSTO | Microsoft Docs"
+title: "Proc&#233;dure pas &#224; pas&#160;: liaison de donn&#233;es complexe dans un projet de compl&#233;ment VSTO"
 ms.custom: ""
 ms.date: "02/02/2017"
 ms.prod: "visual-studio-dev14"

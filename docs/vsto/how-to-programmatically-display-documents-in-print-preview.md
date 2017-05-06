@@ -1,5 +1,5 @@
 ---
-title: "Comment&#160;: afficher des documents en mode Aper&#231;u avant impression par programmation | Microsoft Docs"
+title: "Comment&#160;: afficher des documents en mode Aper&#231;u avant impression par programmation"
 ms.custom: ""
 ms.date: "02/02/2017"
 ms.prod: "visual-studio-dev14"

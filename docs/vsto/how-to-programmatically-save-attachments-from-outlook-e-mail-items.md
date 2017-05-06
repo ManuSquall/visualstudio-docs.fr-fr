@@ -1,5 +1,5 @@
 ---
-title: "Comment&#160;: enregistrer des pi&#232;ces jointes &#224; partir d&#39;&#233;l&#233;ments de messagerie Outlook par programmation | Microsoft Docs"
+title: "Comment&#160;: enregistrer des pi&#232;ces jointes &#224; partir d&#39;&#233;l&#233;ments de messagerie Outlook par programmation"
 ms.custom: ""
 ms.date: "02/02/2017"
 ms.prod: "visual-studio-dev14"

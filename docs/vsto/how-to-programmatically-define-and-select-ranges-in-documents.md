@@ -1,5 +1,5 @@
 ---
-title: "Comment&#160;: d&#233;finir et s&#233;lectionner des plages dans les documents par programmation | Microsoft Docs"
+title: "Comment&#160;: d&#233;finir et s&#233;lectionner des plages dans les documents par programmation"
 ms.custom: ""
 ms.date: "02/02/2017"
 ms.prod: "visual-studio-dev14"

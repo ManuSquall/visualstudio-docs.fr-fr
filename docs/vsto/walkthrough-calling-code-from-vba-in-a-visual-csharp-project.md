@@ -1,5 +1,5 @@
 ---
-title: "Proc&#233;dure pas &#224; pas&#160;: appel de code &#224; partir de VBA dans un projet Visual&#160;C# | Microsoft Docs"
+title: "Proc&#233;dure pas &#224; pas&#160;: appel de code &#224; partir de VBA dans un projet Visual&#160;C#"
 ms.custom: ""
 ms.date: "02/02/2017"
 ms.prod: "visual-studio-dev14"

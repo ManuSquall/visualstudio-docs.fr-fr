@@ -1,5 +1,5 @@
 ---
-title: "Proc&#233;dure pas &#224; pas&#160;: cr&#233;ation d&#39;une relation ma&#238;tre/d&#233;tail &#224; l&#39;aide d&#39;un groupe de donn&#233;es mis en cache | Microsoft Docs"
+title: "Proc&#233;dure pas &#224; pas&#160;: cr&#233;ation d&#39;une relation ma&#238;tre/d&#233;tail &#224; l&#39;aide d&#39;un groupe de donn&#233;es mis en cache"
 ms.custom: ""
 ms.date: "02/02/2017"
 ms.prod: "visual-studio-dev14"

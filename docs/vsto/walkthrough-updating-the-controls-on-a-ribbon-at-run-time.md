@@ -1,5 +1,5 @@
 ---
-title: "Proc&#233;dure pas &#224; pas&#160;: mise &#224; niveau des contr&#244;les sur un ruban au moment de l&#39;ex&#233;cution | Microsoft Docs"
+title: "Proc&#233;dure pas &#224; pas&#160;: mise &#224; niveau des contr&#244;les sur un ruban au moment de l&#39;ex&#233;cution"
 ms.custom: ""
 ms.date: "02/02/2017"
 ms.prod: "visual-studio-dev14"

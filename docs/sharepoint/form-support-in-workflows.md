@@ -1,5 +1,5 @@
 ---
-title: "Prise en charge des formulaires dans les flux de travail | Microsoft Docs"
+title: "Prise en charge des formulaires dans les flux de travail"
 ms.custom: ""
 ms.date: "02/02/2017"
 ms.prod: "visual-studio-dev14"

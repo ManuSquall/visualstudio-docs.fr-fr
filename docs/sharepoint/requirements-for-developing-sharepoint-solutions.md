@@ -1,5 +1,5 @@
 ---
-title: "Configuration requise pour d&#233;velopper des solutions SharePoint | Microsoft Docs"
+title: "Configuration requise pour d&#233;velopper des solutions SharePoint"
 ms.custom: ""
 ms.date: "02/02/2017"
 ms.prod: "visual-studio-dev14"

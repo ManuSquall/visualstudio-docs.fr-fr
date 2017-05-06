@@ -1,5 +1,5 @@
 ---
-title: "Comment&#160;: ajouter une m&#233;thode de cr&#233;ation | Microsoft Docs"
+title: "Comment&#160;: ajouter une m&#233;thode de cr&#233;ation"
 ms.custom: ""
 ms.date: "02/02/2017"
 ms.prod: "visual-studio-dev14"

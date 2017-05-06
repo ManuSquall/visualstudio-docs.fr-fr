@@ -1,5 +1,5 @@
 ---
-title: "Comment&#160;: ajouter des parties XML personnalis&#233;es aux personnalisations au niveau du document | Microsoft Docs"
+title: "Comment&#160;: ajouter des parties XML personnalis&#233;es aux personnalisations au niveau du document"
 ms.custom: ""
 ms.date: "02/02/2017"
 ms.prod: "visual-studio-dev14"

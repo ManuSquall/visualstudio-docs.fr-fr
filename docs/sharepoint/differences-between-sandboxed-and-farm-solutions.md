@@ -1,5 +1,5 @@
 ---
-title: "Diff&#233;rences entre les solutions bac &#224; sable (sandbox) et les solutions de batterie | Microsoft Docs"
+title: "Diff&#233;rences entre les solutions bac &#224; sable (sandbox) et les solutions de batterie"
 ms.custom: ""
 ms.date: "02/02/2017"
 ms.prod: "visual-studio-dev14"

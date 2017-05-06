@@ -1,5 +1,5 @@
 ---
-title: "Utilisation de formes Visio | Microsoft Docs"
+title: "Utilisation de formes Visio"
 ms.custom: ""
 ms.date: "02/02/2017"
 ms.prod: "visual-studio-dev14"

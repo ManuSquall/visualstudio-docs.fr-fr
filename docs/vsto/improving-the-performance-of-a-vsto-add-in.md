@@ -1,5 +1,5 @@
 ---
-title: "Am&#233;lioration des performances d&#39;un compl&#233;ment VSTO | Microsoft Docs"
+title: "Am&#233;lioration des performances d&#39;un compl&#233;ment VSTO"
 ms.custom: ""
 ms.date: "02/02/2017"
 ms.prod: "visual-studio-dev14"

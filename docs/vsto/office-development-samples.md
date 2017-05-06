@@ -1,5 +1,5 @@
 ---
-title: "Exemples de d&#233;veloppement Office | Microsoft Docs"
+title: "Exemples de d&#233;veloppement Office"
 ms.custom: ""
 ms.date: "02/02/2017"
 ms.prod: "visual-studio-dev14"

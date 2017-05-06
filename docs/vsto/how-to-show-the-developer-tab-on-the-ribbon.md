@@ -1,5 +1,5 @@
 ---
-title: "Comment&#160;: afficher l&#39;onglet D&#233;veloppeur sur le ruban | Microsoft Docs"
+title: "Comment&#160;: afficher l&#39;onglet D&#233;veloppeur sur le ruban"
 ms.custom: ""
 ms.date: "02/02/2017"
 ms.prod: "visual-studio-dev14"

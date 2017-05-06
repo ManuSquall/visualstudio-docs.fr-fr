@@ -1,5 +1,5 @@
 ---
-title: "Comment&#160;: ajouter un param&#232;tre &#224; une m&#233;thode | Microsoft Docs"
+title: "Comment&#160;: ajouter un param&#232;tre &#224; une m&#233;thode"
 ms.custom: ""
 ms.date: "02/02/2017"
 ms.prod: "visual-studio-dev14"

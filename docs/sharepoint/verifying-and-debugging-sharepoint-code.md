@@ -1,5 +1,5 @@
 ---
-title: "V&#233;rification et d&#233;bogage du code SharePoint | Microsoft Docs"
+title: "V&#233;rification et d&#233;bogage du code SharePoint"
 ms.custom: ""
 ms.date: "02/02/2017"
 ms.prod: "visual-studio-dev14"

@@ -1,5 +1,5 @@
 ---
-title: "Comment&#160;: lire des propri&#233;t&#233;s de document et en &#233;crire | Microsoft Docs"
+title: "Comment&#160;: lire des propri&#233;t&#233;s de document et en &#233;crire"
 ms.custom: ""
 ms.date: "02/02/2017"
 ms.prod: "visual-studio-dev14"

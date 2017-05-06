@@ -1,5 +1,5 @@
 ---
-title: "Comment&#160;: ajouter et supprimer des &#233;l&#233;ments dans des fonctionnalit&#233;s SharePoint | Microsoft Docs"
+title: "Comment&#160;: ajouter et supprimer des &#233;l&#233;ments dans des fonctionnalit&#233;s SharePoint"
 ms.custom: ""
 ms.date: "02/02/2017"
 ms.prod: "visual-studio-dev14"

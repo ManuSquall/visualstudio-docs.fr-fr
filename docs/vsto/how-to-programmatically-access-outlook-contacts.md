@@ -1,5 +1,5 @@
 ---
-title: "Comment&#160;: acc&#233;der &#224; des contacts Outlook par programmation | Microsoft Docs"
+title: "Comment&#160;: acc&#233;der &#224; des contacts Outlook par programmation"
 ms.custom: ""
 ms.date: "02/02/2017"
 ms.prod: "visual-studio-dev14"

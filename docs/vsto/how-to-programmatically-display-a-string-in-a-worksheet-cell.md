@@ -1,5 +1,5 @@
 ---
-title: "Comment&#160;: afficher une cha&#238;ne dans une cellule de feuille de calcul par programmation | Microsoft Docs"
+title: "Comment&#160;: afficher une cha&#238;ne dans une cellule de feuille de calcul par programmation"
 ms.custom: ""
 ms.date: "02/02/2017"
 ms.prod: "visual-studio-dev14"

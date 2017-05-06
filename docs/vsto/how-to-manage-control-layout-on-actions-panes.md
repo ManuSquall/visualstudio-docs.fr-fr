@@ -1,5 +1,5 @@
 ---
-title: "Comment&#160;: g&#233;rer la disposition des contr&#244;les dans les volets Actions | Microsoft Docs"
+title: "Comment&#160;: g&#233;rer la disposition des contr&#244;les dans les volets Actions"
 ms.custom: ""
 ms.date: "02/02/2017"
 ms.prod: "visual-studio-dev14"

@@ -1,5 +1,5 @@
 ---
-title: "Programmation de personnalisations au niveau du document | Microsoft Docs"
+title: "Programmation de personnalisations au niveau du document"
 ms.custom: ""
 ms.date: "02/02/2017"
 ms.prod: "visual-studio-dev14"

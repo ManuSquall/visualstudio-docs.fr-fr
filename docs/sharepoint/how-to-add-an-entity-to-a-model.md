@@ -1,5 +1,5 @@
 ---
-title: "Comment&#160;: ajouter une entit&#233; &#224; un mod&#232;le | Microsoft Docs"
+title: "Comment&#160;: ajouter une entit&#233; &#224; un mod&#232;le"
 ms.custom: ""
 ms.date: "02/02/2017"
 ms.prod: "visual-studio-dev14"

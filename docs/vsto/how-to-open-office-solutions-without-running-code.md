@@ -1,5 +1,5 @@
 ---
-title: "Comment&#160;: ouvrir des solutions Office sans ex&#233;cuter le code | Microsoft Docs"
+title: "Comment&#160;: ouvrir des solutions Office sans ex&#233;cuter le code"
 ms.custom: ""
 ms.date: "02/02/2017"
 ms.prod: "visual-studio-dev14"

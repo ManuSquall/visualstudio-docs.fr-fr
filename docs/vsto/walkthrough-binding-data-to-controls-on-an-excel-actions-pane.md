@@ -1,5 +1,5 @@
 ---
-title: "Proc&#233;dure pas &#224; pas&#160;: liaison de donn&#233;es aux contr&#244;les dans un volet Actions Excel | Microsoft Docs"
+title: "Proc&#233;dure pas &#224; pas&#160;: liaison de donn&#233;es aux contr&#244;les dans un volet Actions Excel"
 ms.custom: ""
 ms.date: "02/02/2017"
 ms.prod: "visual-studio-dev14"

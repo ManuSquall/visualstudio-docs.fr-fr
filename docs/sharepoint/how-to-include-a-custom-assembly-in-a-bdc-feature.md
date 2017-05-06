@@ -1,5 +1,5 @@
 ---
-title: "Comment&#160;: inclure un assembly personnalis&#233; dans une fonctionnalit&#233; BDC | Microsoft Docs"
+title: "Comment&#160;: inclure un assembly personnalis&#233; dans une fonctionnalit&#233; BDC"
 ms.custom: ""
 ms.date: "02/02/2017"
 ms.prod: "visual-studio-dev14"

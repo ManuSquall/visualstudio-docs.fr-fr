@@ -1,5 +1,5 @@
 ---
-title: "Comment&#160;: remplir de donn&#233;es des contr&#244;les ListObject | Microsoft Docs"
+title: "Comment&#160;: remplir de donn&#233;es des contr&#244;les ListObject"
 ms.custom: ""
 ms.date: "02/02/2017"
 ms.prod: "visual-studio-dev14"

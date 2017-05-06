@@ -1,5 +1,5 @@
 ---
-title: "Utilisation des feuilles de calcul | Microsoft Docs"
+title: "Utilisation des feuilles de calcul"
 ms.custom: ""
 ms.date: "02/02/2017"
 ms.prod: "visual-studio-dev14"

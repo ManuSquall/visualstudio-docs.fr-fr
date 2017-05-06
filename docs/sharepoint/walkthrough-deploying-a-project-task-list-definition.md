@@ -1,5 +1,5 @@
 ---
-title: "Proc&#233;dure pas &#224; pas&#160;: d&#233;ploiement d&#39;une d&#233;finition de liste de t&#226;ches de projet | Microsoft Docs"
+title: "Proc&#233;dure pas &#224; pas&#160;: d&#233;ploiement d&#39;une d&#233;finition de liste de t&#226;ches de projet"
 ms.custom: ""
 ms.date: "02/02/2017"
 ms.prod: "visual-studio-dev14"

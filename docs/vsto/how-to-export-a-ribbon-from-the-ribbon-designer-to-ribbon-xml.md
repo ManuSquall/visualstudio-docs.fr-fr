@@ -1,5 +1,5 @@
 ---
-title: "Comment&#160;: exporter un ruban &#224; partir du Concepteur de ruban vers l&#39;&#233;l&#233;ment XML Ribbon | Microsoft Docs"
+title: "Comment&#160;: exporter un ruban &#224; partir du Concepteur de ruban vers l&#39;&#233;l&#233;ment XML Ribbon"
 ms.custom: ""
 ms.date: "02/02/2017"
 ms.prod: "visual-studio-dev14"

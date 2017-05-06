@@ -1,5 +1,5 @@
 ---
-title: "Comment&#160;: installer les assemblys PIA (Primary Interop Assembly) d&#39;Office | Microsoft Docs"
+title: "Comment&#160;: installer les assemblys PIA (Primary Interop Assembly) d&#39;Office"
 ms.custom: ""
 ms.date: "02/02/2017"
 ms.prod: "visual-studio-dev14"

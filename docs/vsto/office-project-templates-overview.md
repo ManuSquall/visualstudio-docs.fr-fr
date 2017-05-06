@@ -1,5 +1,5 @@
 ---
-title: "Vue d&#39;ensemble des mod&#232;les de projet Office | Microsoft Docs"
+title: "Vue d&#39;ensemble des mod&#232;les de projet Office"
 ms.custom: ""
 ms.date: "02/02/2017"
 ms.prod: "visual-studio-dev14"

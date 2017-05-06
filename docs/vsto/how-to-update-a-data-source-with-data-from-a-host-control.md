@@ -1,5 +1,5 @@
 ---
-title: "Comment&#160;: mettre &#224; jour une source de donn&#233;es avec les donn&#233;es d&#39;un contr&#244;le h&#244;te | Microsoft Docs"
+title: "Comment&#160;: mettre &#224; jour une source de donn&#233;es avec les donn&#233;es d&#39;un contr&#244;le h&#244;te"
 ms.custom: ""
 ms.date: "02/02/2017"
 ms.prod: "visual-studio-dev14"

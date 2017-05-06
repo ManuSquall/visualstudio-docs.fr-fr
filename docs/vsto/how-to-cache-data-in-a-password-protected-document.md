@@ -1,5 +1,5 @@
 ---
-title: "Comment&#160;: mettre en cache des donn&#233;es dans un document prot&#233;g&#233; par un mot de passe | Microsoft Docs"
+title: "Comment&#160;: mettre en cache des donn&#233;es dans un document prot&#233;g&#233; par un mot de passe"
 ms.custom: ""
 ms.date: "02/02/2017"
 ms.prod: "visual-studio-dev14"

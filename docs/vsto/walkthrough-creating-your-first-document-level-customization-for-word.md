@@ -1,5 +1,5 @@
 ---
-title: "Proc&#233;dure pas &#224; pas&#160;: cr&#233;ation de votre premi&#232;re personnalisation au niveau du document pour Word | Microsoft Docs"
+title: "Proc&#233;dure pas &#224; pas&#160;: cr&#233;ation de votre premi&#232;re personnalisation au niveau du document pour Word"
 ms.custom: ""
 ms.date: "02/02/2017"
 ms.prod: "visual-studio-dev14"

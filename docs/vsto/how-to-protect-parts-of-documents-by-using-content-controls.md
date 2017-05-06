@@ -1,5 +1,5 @@
 ---
-title: "Comment&#160;: prot&#233;ger des parties de documents &#224; l&#39;aide de contr&#244;les de contenu | Microsoft Docs"
+title: "Comment&#160;: prot&#233;ger des parties de documents &#224; l&#39;aide de contr&#244;les de contenu"
 ms.custom: ""
 ms.date: "02/02/2017"
 ms.prod: "visual-studio-dev14"

@@ -1,5 +1,5 @@
 ---
-title: "Comment&#160;: ajouter et supprimer des assemblys suppl&#233;mentaires | Microsoft Docs"
+title: "Comment&#160;: ajouter et supprimer des assemblys suppl&#233;mentaires"
 ms.custom: ""
 ms.date: "02/02/2017"
 ms.prod: "visual-studio-dev14"

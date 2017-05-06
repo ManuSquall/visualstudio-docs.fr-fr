@@ -1,5 +1,5 @@
 ---
-title: "XmlMappedRange, contr&#244;le | Microsoft Docs"
+title: "XmlMappedRange, contr&#244;le"
 ms.custom: ""
 ms.date: "02/02/2017"
 ms.prod: "visual-studio-dev14"

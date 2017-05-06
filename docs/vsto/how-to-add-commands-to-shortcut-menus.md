@@ -1,5 +1,5 @@
 ---
-title: "Comment&#160;: ajouter des commandes &#224; des menus contextuels | Microsoft Docs"
+title: "Comment&#160;: ajouter des commandes &#224; des menus contextuels"
 ms.custom: ""
 ms.date: "02/02/2017"
 ms.prod: "visual-studio-dev14"

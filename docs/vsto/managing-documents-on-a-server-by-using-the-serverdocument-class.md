@@ -1,5 +1,5 @@
 ---
-title: "Gestion de documents sur un serveur &#224; l&#39;aide de la classe ServerDocument | Microsoft Docs"
+title: "Gestion de documents sur un serveur &#224; l&#39;aide de la classe ServerDocument"
 ms.custom: ""
 ms.date: "02/02/2017"
 ms.prod: "visual-studio-dev14"

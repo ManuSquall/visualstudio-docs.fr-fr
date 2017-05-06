@@ -1,5 +1,5 @@
 ---
-title: "Proc&#233;dure pas &#224; pas&#160;: cr&#233;ation d&#39;une liste externe dans SharePoint &#224; l&#39;aide de donn&#233;es m&#233;tiers | Microsoft Docs"
+title: "Proc&#233;dure pas &#224; pas&#160;: cr&#233;ation d&#39;une liste externe dans SharePoint &#224; l&#39;aide de donn&#233;es m&#233;tiers"
 ms.custom: ""
 ms.date: "02/02/2017"
 ms.prod: "visual-studio-dev14"

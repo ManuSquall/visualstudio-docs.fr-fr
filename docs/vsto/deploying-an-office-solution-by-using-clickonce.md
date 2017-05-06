@@ -1,5 +1,5 @@
 ---
-title: "D&#233;ploiement d&#39;une solution Office &#224; l&#39;aide de ClickOnce | Microsoft Docs"
+title: "D&#233;ploiement d&#39;une solution Office &#224; l&#39;aide de ClickOnce"
 ms.custom: ""
 ms.date: "02/02/2017"
 ms.prod: "visual-studio-dev14"

@@ -1,5 +1,5 @@
 ---
-title: "Proc&#233;dure pas &#224; pas&#160;: importation d&#39;une page ma&#238;tre et d&#39;une page de site personnalis&#233;es avec une image | Microsoft Docs"
+title: "Proc&#233;dure pas &#224; pas&#160;: importation d&#39;une page ma&#238;tre et d&#39;une page de site personnalis&#233;es avec une image"
 ms.custom: ""
 ms.date: "02/02/2017"
 ms.prod: "visual-studio-dev14"

@@ -1,5 +1,5 @@
 ---
-title: "Vue d&#39;ensemble de l&#39;utilisation de fichiers de base de donn&#233;es locaux dans les solutions Office | Microsoft Docs"
+title: "Vue d&#39;ensemble de l&#39;utilisation de fichiers de base de donn&#233;es locaux dans les solutions Office"
 ms.custom: ""
 ms.date: "02/02/2017"
 ms.prod: "visual-studio-dev14"

@@ -1,5 +1,5 @@
 ---
-title: "Comment&#160;: d&#233;finir les options de recherche dans Word par programmation | Microsoft Docs"
+title: "Comment&#160;: d&#233;finir les options de recherche dans Word par programmation"
 ms.custom: ""
 ms.date: "02/02/2017"
 ms.prod: "visual-studio-dev14"

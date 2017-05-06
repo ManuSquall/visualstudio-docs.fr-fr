@@ -1,5 +1,5 @@
 ---
-title: "Comment&#160;: redimensionner des contr&#244;les dans des cellules de feuille de calcul | Microsoft Docs"
+title: "Comment&#160;: redimensionner des contr&#244;les dans des cellules de feuille de calcul"
 ms.custom: ""
 ms.date: "02/02/2017"
 ms.prod: "visual-studio-dev14"

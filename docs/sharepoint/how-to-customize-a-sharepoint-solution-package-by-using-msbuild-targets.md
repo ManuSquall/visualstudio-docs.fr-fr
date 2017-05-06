@@ -1,5 +1,5 @@
 ---
-title: "Comment&#160;: personnaliser un package de solution SharePoint &#224; l&#39;aide de cibles de MSBuild | Microsoft Docs"
+title: "Comment&#160;: personnaliser un package de solution SharePoint &#224; l&#39;aide de cibles de MSBuild"
 ms.custom: ""
 ms.date: "02/02/2017"
 ms.prod: "visual-studio-dev14"

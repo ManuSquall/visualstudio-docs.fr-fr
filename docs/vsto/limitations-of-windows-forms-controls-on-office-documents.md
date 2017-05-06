@@ -1,5 +1,5 @@
 ---
-title: "Limitations des contr&#244;les Windows Forms dans les documents Office | Microsoft Docs"
+title: "Limitations des contr&#244;les Windows Forms dans les documents Office"
 ms.custom: ""
 ms.date: "02/02/2017"
 ms.prod: "visual-studio-dev14"

@@ -1,5 +1,5 @@
 ---
-title: "Vue d&#39;ensemble du volet Actions | Microsoft Docs"
+title: "Vue d&#39;ensemble du volet Actions"
 ms.custom: ""
 ms.date: "02/02/2017"
 ms.prod: "visual-studio-dev14"

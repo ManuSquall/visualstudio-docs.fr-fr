@@ -1,5 +1,5 @@
 ---
-title: "Proc&#233;dures pas &#224; pas relatives &#224; la s&#233;curit&#233; et au d&#233;ploiement | Microsoft Docs"
+title: "Proc&#233;dures pas &#224; pas relatives &#224; la s&#233;curit&#233; et au d&#233;ploiement"
 ms.custom: ""
 ms.date: "02/02/2017"
 ms.prod: "visual-studio-dev14"

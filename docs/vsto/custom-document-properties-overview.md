@@ -1,5 +1,5 @@
 ---
-title: "Vue d&#39;ensemble des propri&#233;t&#233;s de document personnalis&#233;es | Microsoft Docs"
+title: "Vue d&#39;ensemble des propri&#233;t&#233;s de document personnalis&#233;es"
 ms.custom: ""
 ms.date: "02/02/2017"
 ms.prod: "visual-studio-dev14"

@@ -1,5 +1,5 @@
 ---
-title: "Comment&#160;: d&#233;finir une instance de m&#233;thode | Microsoft Docs"
+title: "Comment&#160;: d&#233;finir une instance de m&#233;thode"
 ms.custom: ""
 ms.date: "02/02/2017"
 ms.prod: "visual-studio-dev14"

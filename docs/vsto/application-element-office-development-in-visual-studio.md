@@ -1,5 +1,5 @@
 ---
-title: "&#201;l&#233;ment &lt;application&gt; (D&#233;veloppement Office dans Visual Studio) | Microsoft Docs"
+title: "&#201;l&#233;ment &lt;application&gt; (D&#233;veloppement Office dans Visual Studio)"
 ms.custom: ""
 ms.date: "02/02/2017"
 ms.prod: "visual-studio-dev14"

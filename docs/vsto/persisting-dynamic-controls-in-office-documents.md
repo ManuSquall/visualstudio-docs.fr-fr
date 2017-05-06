@@ -1,5 +1,5 @@
 ---
-title: "Rendre des contr&#244;les dynamiques persistants dans des documents Office | Microsoft Docs"
+title: "Rendre des contr&#244;les dynamiques persistants dans des documents Office"
 ms.custom: ""
 ms.date: "02/02/2017"
 ms.prod: "visual-studio-dev14"

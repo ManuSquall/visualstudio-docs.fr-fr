@@ -1,5 +1,5 @@
 ---
-title: "Comment&#160;: mettre en cache des donn&#233;es pour une utilisation hors connexion ou sur un serveur | Microsoft Docs"
+title: "Comment&#160;: mettre en cache des donn&#233;es pour une utilisation hors connexion ou sur un serveur"
 ms.custom: ""
 ms.date: "02/02/2017"
 ms.prod: "visual-studio-dev14"

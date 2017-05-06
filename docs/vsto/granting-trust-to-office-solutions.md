@@ -1,5 +1,5 @@
 ---
-title: "Octroi de niveaux de confiance &#224; des solutions Office | Microsoft Docs"
+title: "Octroi de niveaux de confiance &#224; des solutions Office"
 ms.custom: ""
 ms.date: "02/02/2017"
 ms.prod: "visual-studio-dev14"

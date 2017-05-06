@@ -1,5 +1,5 @@
 ---
-title: "Comment&#160;: modifier une configuration de d&#233;ploiement SharePoint | Microsoft Docs"
+title: "Comment&#160;: modifier une configuration de d&#233;ploiement SharePoint"
 ms.custom: ""
 ms.date: "02/02/2017"
 ms.prod: "visual-studio-dev14"

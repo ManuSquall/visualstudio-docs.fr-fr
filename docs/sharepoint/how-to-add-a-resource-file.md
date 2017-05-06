@@ -1,5 +1,5 @@
 ---
-title: "Comment&#160;: ajouter un fichier de ressources | Microsoft Docs"
+title: "Comment&#160;: ajouter un fichier de ressources"
 ms.custom: ""
 ms.date: "02/02/2017"
 ms.prod: "visual-studio-dev14"

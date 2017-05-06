@@ -1,5 +1,5 @@
 ---
-title: "Comment&#160;: d&#233;marrer avec la personnalisation du ruban | Microsoft Docs"
+title: "Comment&#160;: d&#233;marrer avec la personnalisation du ruban"
 ms.custom: ""
 ms.date: "02/02/2017"
 ms.prod: "visual-studio-dev14"

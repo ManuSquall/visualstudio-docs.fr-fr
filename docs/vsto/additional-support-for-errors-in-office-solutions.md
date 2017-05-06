@@ -1,5 +1,5 @@
 ---
-title: "Ressources suppl&#233;mentaires de r&#233;solution des erreurs dans les solutions Office | Microsoft Docs"
+title: "Ressources suppl&#233;mentaires de r&#233;solution des erreurs dans les solutions Office"
 ms.custom: ""
 ms.date: "02/02/2017"
 ms.prod: "visual-studio-dev14"

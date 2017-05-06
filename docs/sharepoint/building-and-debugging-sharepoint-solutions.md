@@ -1,5 +1,5 @@
 ---
-title: "G&#233;n&#233;ration et d&#233;bogage de solutions SharePoint | Microsoft Docs"
+title: "G&#233;n&#233;ration et d&#233;bogage de solutions SharePoint"
 ms.custom: ""
 ms.date: "02/02/2017"
 ms.prod: "visual-studio-dev14"

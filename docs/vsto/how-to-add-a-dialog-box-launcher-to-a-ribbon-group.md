@@ -1,5 +1,5 @@
 ---
-title: "Comment&#160;: ajouter un lanceur de bo&#238;te de dialogue &#224; un groupe de ruban | Microsoft Docs"
+title: "Comment&#160;: ajouter un lanceur de bo&#238;te de dialogue &#224; un groupe de ruban"
 ms.custom: ""
 ms.date: "02/02/2017"
 ms.prod: "visual-studio-dev14"

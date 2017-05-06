@@ -1,5 +1,5 @@
 ---
-title: "Comment&#160;: cibler l&#39;interface utilisateur multilingue d&#39;Office | Microsoft Docs"
+title: "Comment&#160;: cibler l&#39;interface utilisateur multilingue d&#39;Office"
 ms.custom: ""
 ms.date: "02/02/2017"
 ms.prod: "visual-studio-dev14"

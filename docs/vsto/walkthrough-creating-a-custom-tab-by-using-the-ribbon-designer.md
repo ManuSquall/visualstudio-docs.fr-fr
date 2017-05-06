@@ -1,5 +1,5 @@
 ---
-title: "Proc&#233;dure pas &#224; pas&#160;: cr&#233;ation d&#39;un onglet personnalis&#233; &#224; l&#39;aide du Concepteur de ruban | Microsoft Docs"
+title: "Proc&#233;dure pas &#224; pas&#160;: cr&#233;ation d&#39;un onglet personnalis&#233; &#224; l&#39;aide du Concepteur de ruban"
 ms.custom: ""
 ms.date: "02/02/2017"
 ms.prod: "visual-studio-dev14"

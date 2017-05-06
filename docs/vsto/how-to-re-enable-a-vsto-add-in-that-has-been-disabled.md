@@ -1,5 +1,5 @@
 ---
-title: "Comment&#160;: r&#233;activer un compl&#233;ment VSTO qui a &#233;t&#233; d&#233;sactiv&#233; | Microsoft Docs"
+title: "Comment&#160;: r&#233;activer un compl&#233;ment VSTO qui a &#233;t&#233; d&#233;sactiv&#233;"
 ms.custom: ""
 ms.date: "02/02/2017"
 ms.prod: "visual-studio-dev14"

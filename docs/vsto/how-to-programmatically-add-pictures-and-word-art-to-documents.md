@@ -1,5 +1,5 @@
 ---
-title: "Comment&#160;: ajouter des images et des effets WordArt aux documents par programmation | Microsoft Docs"
+title: "Comment&#160;: ajouter des images et des effets WordArt aux documents par programmation"
 ms.custom: ""
 ms.date: "02/02/2017"
 ms.prod: "visual-studio-dev14"

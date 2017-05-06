@@ -1,5 +1,5 @@
 ---
-title: "Comment&#160;: stocker et r&#233;cup&#233;rer des valeurs de date dans des plages Excel par programmation | Microsoft Docs"
+title: "Comment&#160;: stocker et r&#233;cup&#233;rer des valeurs de date dans des plages Excel par programmation"
 ms.custom: ""
 ms.date: "02/02/2017"
 ms.prod: "visual-studio-dev14"

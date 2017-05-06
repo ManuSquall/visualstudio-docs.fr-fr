@@ -1,5 +1,5 @@
 ---
-title: "Vue d&#39;ensemble de la gestion des droits relatifs &#224; l&#39;information et des extensions de code manag&#233; | Microsoft Docs"
+title: "Vue d&#39;ensemble de la gestion des droits relatifs &#224; l&#39;information et des extensions de code manag&#233;"
 ms.custom: ""
 ms.date: "02/02/2017"
 ms.prod: "visual-studio-dev14"

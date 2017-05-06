@@ -1,5 +1,5 @@
 ---
-title: "Comment&#160;: cr&#233;er un contr&#244;le utilisateur pour un composant WebPart ou une page d&#39;application SharePoint | Microsoft Docs"
+title: "Comment&#160;: cr&#233;er un contr&#244;le utilisateur pour un composant WebPart ou une page d&#39;application SharePoint"
 ms.custom: ""
 ms.date: "02/02/2017"
 ms.prod: "visual-studio-dev14"

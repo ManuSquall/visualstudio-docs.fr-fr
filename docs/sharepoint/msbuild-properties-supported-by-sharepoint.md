@@ -1,5 +1,5 @@
 ---
-title: "Propri&#233;t&#233;s MSBuild prises en charge par SharePoint | Microsoft Docs"
+title: "Propri&#233;t&#233;s MSBuild prises en charge par SharePoint"
 ms.custom: ""
 ms.date: "02/02/2017"
 ms.prod: "visual-studio-dev14"

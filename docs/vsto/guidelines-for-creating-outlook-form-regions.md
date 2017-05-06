@@ -1,5 +1,5 @@
 ---
-title: "Directives pour la cr&#233;ation de zones de formulaire Outlook | Microsoft Docs"
+title: "Directives pour la cr&#233;ation de zones de formulaire Outlook"
 ms.custom: ""
 ms.date: "02/02/2017"
 ms.prod: "visual-studio-dev14"

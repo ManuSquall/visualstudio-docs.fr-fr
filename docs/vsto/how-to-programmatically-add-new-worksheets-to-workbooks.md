@@ -1,5 +1,5 @@
 ---
-title: "Comment&#160;: ajouter des feuilles de calcul &#224; des classeurs par programmation | Microsoft Docs"
+title: "Comment&#160;: ajouter des feuilles de calcul &#224; des classeurs par programmation"
 ms.custom: ""
 ms.date: "02/02/2017"
 ms.prod: "visual-studio-dev14"

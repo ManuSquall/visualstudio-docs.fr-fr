@@ -1,5 +1,5 @@
 ---
-title: "Limitations de programmation des &#233;l&#233;ments h&#244;tes et des contr&#244;les h&#244;tes | Microsoft Docs"
+title: "Limitations de programmation des &#233;l&#233;ments h&#244;tes et des contr&#244;les h&#244;tes"
 ms.custom: ""
 ms.date: "02/02/2017"
 ms.prod: "visual-studio-dev14"

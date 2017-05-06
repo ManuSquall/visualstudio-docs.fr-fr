@@ -1,5 +1,5 @@
 ---
-title: "Actions personnalis&#233;es dans les zones de formulaire Outlook | Microsoft Docs"
+title: "Actions personnalis&#233;es dans les zones de formulaire Outlook"
 ms.custom: ""
 ms.date: "02/02/2017"
 ms.prod: "visual-studio-dev14"

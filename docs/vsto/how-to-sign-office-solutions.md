@@ -1,5 +1,5 @@
 ---
-title: "Comment&#160;: signer des solutions Office | Microsoft Docs"
+title: "Comment&#160;: signer des solutions Office"
 ms.custom: ""
 ms.date: "02/02/2017"
 ms.prod: "visual-studio-dev14"

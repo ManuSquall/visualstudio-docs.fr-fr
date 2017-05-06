@@ -1,5 +1,5 @@
 ---
-title: "Comment&#160;: g&#233;n&#233;rer des solutions SharePoint | Microsoft Docs"
+title: "Comment&#160;: g&#233;n&#233;rer des solutions SharePoint"
 ms.custom: ""
 ms.date: "02/02/2017"
 ms.prod: "visual-studio-dev14"

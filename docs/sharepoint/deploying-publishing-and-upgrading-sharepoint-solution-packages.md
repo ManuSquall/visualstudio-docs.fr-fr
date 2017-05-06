@@ -1,5 +1,5 @@
 ---
-title: "D&#233;ploiement, publication et mise &#224; niveau de packages de solutions SharePoint | Microsoft Docs"
+title: "D&#233;ploiement, publication et mise &#224; niveau de packages de solutions SharePoint"
 ms.custom: ""
 ms.date: "02/02/2017"
 ms.prod: "visual-studio-dev14"

@@ -1,5 +1,5 @@
 ---
-title: "Exemples de d&#233;veloppement SharePoint | Microsoft Docs"
+title: "Exemples de d&#233;veloppement SharePoint"
 ms.custom: ""
 ms.date: "02/02/2017"
 ms.prod: "visual-studio-dev14"

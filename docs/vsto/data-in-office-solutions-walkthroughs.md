@@ -1,5 +1,5 @@
 ---
-title: "Proc&#233;dures pas &#224; pas relatives aux donn&#233;es dans les solutions Office | Microsoft Docs"
+title: "Proc&#233;dures pas &#224; pas relatives aux donn&#233;es dans les solutions Office"
 ms.custom: ""
 ms.date: "02/02/2017"
 ms.prod: "visual-studio-dev14"

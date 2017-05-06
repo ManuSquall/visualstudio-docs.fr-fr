@@ -1,5 +1,5 @@
 ---
-title: "&#201;criture de code dans les solutions Office | Microsoft Docs"
+title: "&#201;criture de code dans les solutions Office"
 ms.custom: ""
 ms.date: "02/02/2017"
 ms.prod: "visual-studio-dev14"

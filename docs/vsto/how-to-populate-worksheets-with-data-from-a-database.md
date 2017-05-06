@@ -1,5 +1,5 @@
 ---
-title: "Comment&#160;: remplir des feuilles de calcul avec des donn&#233;es provenant d&#39;une base de donn&#233;es | Microsoft Docs"
+title: "Comment&#160;: remplir des feuilles de calcul avec des donn&#233;es provenant d&#39;une base de donn&#233;es"
 ms.custom: ""
 ms.date: "02/02/2017"
 ms.prod: "visual-studio-dev14"

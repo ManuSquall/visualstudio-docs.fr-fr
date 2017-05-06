@@ -1,5 +1,5 @@
 ---
-title: "Configuration d&#39;un ordinateur pour d&#233;velopper des solutions Office | Microsoft Docs"
+title: "Configuration d&#39;un ordinateur pour d&#233;velopper des solutions Office"
 ms.custom: ""
 ms.date: "02/02/2017"
 ms.prod: "visual-studio-dev14"

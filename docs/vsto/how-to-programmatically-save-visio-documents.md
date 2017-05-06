@@ -1,5 +1,5 @@
 ---
-title: "Comment&#160;: enregistrer des documents Visio par programmation | Microsoft Docs"
+title: "Comment&#160;: enregistrer des documents Visio par programmation"
 ms.custom: ""
 ms.date: "02/02/2017"
 ms.prod: "visual-studio-dev14"

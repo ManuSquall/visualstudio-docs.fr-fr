@@ -1,5 +1,5 @@
 ---
-title: "Comment&#160;: masquer des contr&#244;les sur des feuilles de calcul lors de l&#39;impression | Microsoft Docs"
+title: "Comment&#160;: masquer des contr&#244;les sur des feuilles de calcul lors de l&#39;impression"
 ms.custom: ""
 ms.date: "02/02/2017"
 ms.prod: "visual-studio-dev14"

@@ -1,5 +1,5 @@
 ---
-title: "Param&#232;tres optionnels dans les solutions Office | Microsoft Docs"
+title: "Param&#232;tres optionnels dans les solutions Office"
 ms.custom: ""
 ms.date: "02/02/2017"
 ms.prod: "visual-studio-dev14"

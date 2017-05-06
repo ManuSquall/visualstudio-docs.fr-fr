@@ -1,5 +1,5 @@
 ---
-title: "Comment&#160;: utiliser des bo&#238;tes de dialogue Word en mode masqu&#233; par programmation | Microsoft Docs"
+title: "Comment&#160;: utiliser des bo&#238;tes de dialogue Word en mode masqu&#233; par programmation"
 ms.custom: ""
 ms.date: "02/02/2017"
 ms.prod: "visual-studio-dev14"

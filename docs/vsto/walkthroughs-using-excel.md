@@ -1,5 +1,5 @@
 ---
-title: "Proc&#233;dures pas&#160;&#224;&#160;pas utilisant Excel | Microsoft Docs"
+title: "Proc&#233;dures pas&#160;&#224;&#160;pas utilisant Excel"
 ms.custom: ""
 ms.date: "02/02/2017"
 ms.prod: "visual-studio-dev14"

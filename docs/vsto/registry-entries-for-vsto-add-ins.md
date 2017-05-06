@@ -1,5 +1,5 @@
 ---
-title: "Entr&#233;es de Registre pour les compl&#233;ments VSTO | Microsoft Docs"
+title: "Entr&#233;es de Registre pour les compl&#233;ments VSTO"
 ms.custom: ""
 ms.date: "02/02/2017"
 ms.prod: "visual-studio-dev14"

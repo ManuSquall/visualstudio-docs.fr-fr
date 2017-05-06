@@ -1,5 +1,5 @@
 ---
-title: "Comment&#160;: cibler les applications Office via les assemblys PIA (Primary Interop Assembly) | Microsoft Docs"
+title: "Comment&#160;: cibler les applications Office via les assemblys PIA (Primary Interop Assembly)"
 ms.custom: ""
 ms.date: "02/02/2017"
 ms.prod: "visual-studio-dev14"

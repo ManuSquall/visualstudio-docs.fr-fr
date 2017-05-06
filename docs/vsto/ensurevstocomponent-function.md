@@ -1,5 +1,5 @@
 ---
-title: "EnsureVSTOComponent, fonction | Microsoft Docs"
+title: "EnsureVSTOComponent, fonction"
 ms.custom: ""
 ms.date: "02/02/2017"
 ms.prod: "visual-studio-dev14"

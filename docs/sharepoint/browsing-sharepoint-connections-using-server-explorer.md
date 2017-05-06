@@ -1,5 +1,5 @@
 ---
-title: "Parcours des connexions SharePoint &#224; l&#39;aide de l&#39;Explorateur de serveurs | Microsoft Docs"
+title: "Parcours des connexions SharePoint &#224; l&#39;aide de l&#39;Explorateur de serveurs"
 ms.custom: ""
 ms.date: "02/02/2017"
 ms.prod: "visual-studio-dev14"

@@ -1,5 +1,5 @@
 ---
-title: "Protection des documents dans les solutions au niveau du document | Microsoft Docs"
+title: "Protection des documents dans les solutions au niveau du document"
 ms.custom: ""
 ms.date: "02/02/2017"
 ms.prod: "visual-studio-dev14"

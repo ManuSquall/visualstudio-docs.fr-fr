@@ -1,5 +1,5 @@
 ---
-title: "Comment&#160;: ajouter ou supprimer des connexions SharePoint | Microsoft Docs"
+title: "Comment&#160;: ajouter ou supprimer des connexions SharePoint"
 ms.custom: ""
 ms.date: "02/02/2017"
 ms.prod: "visual-studio-dev14"

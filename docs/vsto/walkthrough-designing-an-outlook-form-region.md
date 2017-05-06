@@ -1,5 +1,5 @@
 ---
-title: "Proc&#233;dure pas &#224; pas&#160;: conception d&#39;une zone de formulaire Outlook | Microsoft Docs"
+title: "Proc&#233;dure pas &#224; pas&#160;: conception d&#39;une zone de formulaire Outlook"
 ms.custom: ""
 ms.date: "02/02/2017"
 ms.prod: "visual-studio-dev14"

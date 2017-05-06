@@ -1,5 +1,5 @@
 ---
-title: "Sch&#233;mas et donn&#233;es XML dans les personnalisations au niveau du document | Microsoft Docs"
+title: "Sch&#233;mas et donn&#233;es XML dans les personnalisations au niveau du document"
 ms.custom: ""
 ms.date: "02/02/2017"
 ms.prod: "visual-studio-dev14"

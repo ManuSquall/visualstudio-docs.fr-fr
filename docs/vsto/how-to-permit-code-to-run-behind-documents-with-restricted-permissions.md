@@ -1,5 +1,5 @@
 ---
-title: "Comment&#160;: permettre au code de s&#39;ex&#233;cuter derri&#232;re des documents dot&#233;s d&#39;autorisations restreintes | Microsoft Docs"
+title: "Comment&#160;: permettre au code de s&#39;ex&#233;cuter derri&#232;re des documents dot&#233;s d&#39;autorisations restreintes"
 ms.custom: ""
 ms.date: "02/02/2017"
 ms.prod: "visual-studio-dev14"

@@ -1,5 +1,5 @@
 ---
-title: "Proc&#233;dure pas&#160;&#224;&#160;pas&#160;: affichage de texte dans une zone de texte d&#39;une feuille de calcul &#224; l&#39;aide d&#39;un bouton | Microsoft Docs"
+title: "Proc&#233;dure pas&#160;&#224;&#160;pas&#160;: affichage de texte dans une zone de texte d&#39;une feuille de calcul &#224; l&#39;aide d&#39;un bouton"
 ms.custom: ""
 ms.date: "02/02/2017"
 ms.prod: "visual-studio-dev14"

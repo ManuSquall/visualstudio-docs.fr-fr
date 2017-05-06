@@ -1,5 +1,5 @@
 ---
-title: "Automatisation de Word &#224; l&#39;aide d&#39;objets &#233;tendus | Microsoft Docs"
+title: "Automatisation de Word &#224; l&#39;aide d&#39;objets &#233;tendus"
 ms.custom: ""
 ms.date: "02/02/2017"
 ms.prod: "visual-studio-dev14"

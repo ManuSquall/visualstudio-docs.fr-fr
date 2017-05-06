@@ -1,5 +1,5 @@
 ---
-title: "Utilisation des &#233;l&#233;ments du calendrier | Microsoft Docs"
+title: "Utilisation des &#233;l&#233;ments du calendrier"
 ms.custom: ""
 ms.date: "02/02/2017"
 ms.prod: "visual-studio-dev14"

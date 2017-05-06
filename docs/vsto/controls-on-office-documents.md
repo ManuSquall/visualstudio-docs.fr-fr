@@ -1,5 +1,5 @@
 ---
-title: "Contr&#244;les sur des documents Office | Microsoft Docs"
+title: "Contr&#244;les sur des documents Office"
 ms.custom: ""
 ms.date: "02/02/2017"
 ms.prod: "visual-studio-dev14"

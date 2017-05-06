@@ -1,5 +1,5 @@
 ---
-title: "Comment&#160;: exclure les marques de paragraphe lors de la cr&#233;ation de plages par programmation | Microsoft Docs"
+title: "Comment&#160;: exclure les marques de paragraphe lors de la cr&#233;ation de plages par programmation"
 ms.custom: ""
 ms.date: "02/02/2017"
 ms.prod: "visual-studio-dev14"

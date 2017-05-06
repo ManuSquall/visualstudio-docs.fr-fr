@@ -1,5 +1,5 @@
 ---
-title: "Comment&#160;: rechercher du texte dans les plages de la feuille de calcul par programmation | Microsoft Docs"
+title: "Comment&#160;: rechercher du texte dans les plages de la feuille de calcul par programmation"
 ms.custom: ""
 ms.date: "02/02/2017"
 ms.prod: "visual-studio-dev14"

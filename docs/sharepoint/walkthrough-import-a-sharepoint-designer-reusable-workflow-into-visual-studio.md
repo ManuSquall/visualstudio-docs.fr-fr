@@ -1,5 +1,5 @@
 ---
-title: "Proc&#233;dure pas &#224; pas&#160;: importation d&#39;un flux de travail r&#233;utilisable de SharePoint Designer dans Visual Studio | Microsoft Docs"
+title: "Proc&#233;dure pas &#224; pas&#160;: importation d&#39;un flux de travail r&#233;utilisable de SharePoint Designer dans Visual Studio"
 ms.custom: ""
 ms.date: "02/02/2017"
 ms.prod: "visual-studio-dev14"

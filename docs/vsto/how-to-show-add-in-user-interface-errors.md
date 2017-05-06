@@ -1,5 +1,5 @@
 ---
-title: "Comment&#160;: afficher les erreurs de l&#39;interface utilisateur du compl&#233;ment | Microsoft Docs"
+title: "Comment&#160;: afficher les erreurs de l&#39;interface utilisateur du compl&#233;ment"
 ms.custom: ""
 ms.date: "02/02/2017"
 ms.prod: "visual-studio-dev14"

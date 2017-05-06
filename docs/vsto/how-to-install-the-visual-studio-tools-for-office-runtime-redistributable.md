@@ -1,5 +1,5 @@
 ---
-title: "Comment&#160;: installer Visual Studio Tools pour Office Runtime Redistributable | Microsoft Docs"
+title: "Comment&#160;: installer Visual Studio Tools pour Office Runtime Redistributable"
 ms.custom: ""
 ms.date: "02/02/2017"
 ms.prod: "visual-studio-dev14"

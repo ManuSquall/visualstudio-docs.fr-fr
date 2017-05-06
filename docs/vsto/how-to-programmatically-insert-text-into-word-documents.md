@@ -1,5 +1,5 @@
 ---
-title: "Comment&#160;: ins&#233;rer du texte dans les documents Word par programmation | Microsoft Docs"
+title: "Comment&#160;: ins&#233;rer du texte dans les documents Word par programmation"
 ms.custom: ""
 ms.date: "02/02/2017"
 ms.prod: "visual-studio-dev14"

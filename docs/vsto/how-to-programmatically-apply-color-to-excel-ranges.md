@@ -1,5 +1,5 @@
 ---
-title: "Comment&#160;: appliquer de la couleur &#224; des plages Excel par programmation | Microsoft Docs"
+title: "Comment&#160;: appliquer de la couleur &#224; des plages Excel par programmation"
 ms.custom: ""
 ms.date: "02/02/2017"
 ms.prod: "visual-studio-dev14"

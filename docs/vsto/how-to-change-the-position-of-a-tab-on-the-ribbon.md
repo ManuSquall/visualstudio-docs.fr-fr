@@ -1,5 +1,5 @@
 ---
-title: "Comment&#160;: modifier la position d&#39;un onglet dans le ruban | Microsoft Docs"
+title: "Comment&#160;: modifier la position d&#39;un onglet dans le ruban"
 ms.custom: ""
 ms.date: "02/02/2017"
 ms.prod: "visual-studio-dev14"

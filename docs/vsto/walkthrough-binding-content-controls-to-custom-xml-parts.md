@@ -1,5 +1,5 @@
 ---
-title: "Proc&#233;dure pas &#224; pas&#160;: liaison de contr&#244;les de contenu &#224; des parties XML personnalis&#233;es | Microsoft Docs"
+title: "Proc&#233;dure pas &#224; pas&#160;: liaison de contr&#244;les de contenu &#224; des parties XML personnalis&#233;es"
 ms.custom: ""
 ms.date: "02/02/2017"
 ms.prod: "visual-studio-dev14"

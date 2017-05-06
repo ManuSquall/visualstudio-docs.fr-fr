@@ -1,5 +1,5 @@
 ---
-title: "D&#233;pannage de la s&#233;curit&#233; des solutions Office | Microsoft Docs"
+title: "D&#233;pannage de la s&#233;curit&#233; des solutions Office"
 ms.custom: ""
 ms.date: "02/02/2017"
 ms.prod: "visual-studio-dev14"

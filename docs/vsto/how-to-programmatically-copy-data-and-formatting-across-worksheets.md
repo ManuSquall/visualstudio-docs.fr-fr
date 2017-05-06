@@ -1,5 +1,5 @@
 ---
-title: "Comment&#160;: copier des donn&#233;es et une mise en forme d&#39;une feuille de calcul &#224; l&#39;autre par programmation | Microsoft Docs"
+title: "Comment&#160;: copier des donn&#233;es et une mise en forme d&#39;une feuille de calcul &#224; l&#39;autre par programmation"
 ms.custom: ""
 ms.date: "02/02/2017"
 ms.prod: "visual-studio-dev14"

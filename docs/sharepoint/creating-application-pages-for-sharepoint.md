@@ -1,5 +1,5 @@
 ---
-title: "Cr&#233;ation de pages d&#39;application pour SharePoint | Microsoft Docs"
+title: "Cr&#233;ation de pages d&#39;application pour SharePoint"
 ms.custom: ""
 ms.date: "02/02/2017"
 ms.prod: "visual-studio-dev14"

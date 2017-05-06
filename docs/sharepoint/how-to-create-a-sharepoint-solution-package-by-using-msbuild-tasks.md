@@ -1,5 +1,5 @@
 ---
-title: "Comment&#160;: cr&#233;er un package de solution SharePoint &#224; l&#39;aide de t&#226;ches MSBuild | Microsoft Docs"
+title: "Comment&#160;: cr&#233;er un package de solution SharePoint &#224; l&#39;aide de t&#226;ches MSBuild"
 ms.custom: ""
 ms.date: "02/02/2017"
 ms.prod: "visual-studio-dev14"

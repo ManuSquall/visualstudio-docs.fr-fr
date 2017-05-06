@@ -1,5 +1,5 @@
 ---
-title: "Cr&#233;ation d&#39;un mod&#232;le de connectivit&#233; de donn&#233;es m&#233;tiers | Microsoft Docs"
+title: "Cr&#233;ation d&#39;un mod&#232;le de connectivit&#233; de donn&#233;es m&#233;tiers"
 ms.custom: ""
 ms.date: "02/02/2017"
 ms.prod: "visual-studio-dev14"

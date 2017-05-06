@@ -1,5 +1,5 @@
 ---
-title: "Comment&#160;: r&#233;cup&#233;rer des messages non lus de la bo&#238;te de r&#233;ception par programmation | Microsoft Docs"
+title: "Comment&#160;: r&#233;cup&#233;rer des messages non lus de la bo&#238;te de r&#233;ception par programmation"
 ms.custom: ""
 ms.date: "02/02/2017"
 ms.prod: "visual-studio-dev14"

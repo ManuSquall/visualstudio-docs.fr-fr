@@ -1,5 +1,5 @@
 ---
-title: "Proc&#233;dure pas &#224; pas&#160;: cr&#233;ation d&#39;un flux de travail avec des formulaires d&#39;association et d&#39;initiation | Microsoft Docs"
+title: "Proc&#233;dure pas &#224; pas&#160;: cr&#233;ation d&#39;un flux de travail avec des formulaires d&#39;association et d&#39;initiation"
 ms.custom: ""
 ms.date: "02/02/2017"
 ms.prod: "visual-studio-dev14"

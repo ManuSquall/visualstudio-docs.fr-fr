@@ -1,5 +1,5 @@
 ---
-title: "Utilisation de texte dans des documents | Microsoft Docs"
+title: "Utilisation de texte dans des documents"
 ms.custom: ""
 ms.date: "02/02/2017"
 ms.prod: "visual-studio-dev14"

@@ -1,5 +1,5 @@
 ---
-title: "Comment&#160;: d&#233;ployer, publier et mettre &#224; niveau des solutions SharePoint sur un serveur distant | Microsoft Docs"
+title: "Comment&#160;: d&#233;ployer, publier et mettre &#224; niveau des solutions SharePoint sur un serveur distant"
 ms.custom: ""
 ms.date: "02/02/2017"
 ms.prod: "visual-studio-dev14"

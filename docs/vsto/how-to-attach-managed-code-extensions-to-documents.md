@@ -1,5 +1,5 @@
 ---
-title: "Comment&#160;: attacher des extensions de code manag&#233; &#224; des documents | Microsoft Docs"
+title: "Comment&#160;: attacher des extensions de code manag&#233; &#224; des documents"
 ms.custom: ""
 ms.date: "02/02/2017"
 ms.prod: "visual-studio-dev14"

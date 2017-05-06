@@ -1,5 +1,5 @@
 ---
-title: "Comment&#160;: utiliser les bo&#238;tes de dialogue int&#233;gr&#233;es dans Word par programmation | Microsoft Docs"
+title: "Comment&#160;: utiliser les bo&#238;tes de dialogue int&#233;gr&#233;es dans Word par programmation"
 ms.custom: ""
 ms.date: "02/02/2017"
 ms.prod: "visual-studio-dev14"

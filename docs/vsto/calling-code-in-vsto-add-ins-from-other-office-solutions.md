@@ -1,5 +1,5 @@
 ---
-title: "Appel de code dans des compl&#233;ments VSTO &#224; partir d&#39;autres solutions Office | Microsoft Docs"
+title: "Appel de code dans des compl&#233;ments VSTO &#224; partir d&#39;autres solutions Office"
 ms.custom: ""
 ms.date: "02/02/2017"
 ms.prod: "visual-studio-dev14"

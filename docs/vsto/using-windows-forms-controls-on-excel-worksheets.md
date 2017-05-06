@@ -1,5 +1,5 @@
 ---
-title: "Utilisation de contr&#244;les Windows Forms sur des feuilles de calcul Excel | Microsoft Docs"
+title: "Utilisation de contr&#244;les Windows Forms sur des feuilles de calcul Excel"
 ms.custom: ""
 ms.date: "02/02/2017"
 ms.prod: "visual-studio-dev14"

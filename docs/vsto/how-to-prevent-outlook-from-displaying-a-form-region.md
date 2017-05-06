@@ -1,5 +1,5 @@
 ---
-title: "Comment&#160;: emp&#234;cher Outlook d&#39;afficher une zone de formulaire | Microsoft Docs"
+title: "Comment&#160;: emp&#234;cher Outlook d&#39;afficher une zone de formulaire"
 ms.custom: ""
 ms.date: "02/02/2017"
 ms.prod: "visual-studio-dev14"

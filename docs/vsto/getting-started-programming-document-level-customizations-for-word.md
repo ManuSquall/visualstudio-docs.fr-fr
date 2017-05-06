@@ -1,5 +1,5 @@
 ---
-title: "Mise en route de la programmation des personnalisations au niveau du document pour Word | Microsoft Docs"
+title: "Mise en route de la programmation des personnalisations au niveau du document pour Word"
 ms.custom: ""
 ms.date: "02/02/2017"
 ms.prod: "visual-studio-dev14"

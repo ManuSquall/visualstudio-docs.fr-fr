@@ -1,5 +1,5 @@
 ---
-title: "Mod&#232;les de projets et d&#39;&#233;l&#233;ments de projet SharePoint | Microsoft Docs"
+title: "Mod&#232;les de projets et d&#39;&#233;l&#233;ments de projet SharePoint"
 ms.custom: ""
 ms.date: "02/22/2017"
 ms.prod: "visual-studio-dev14"

@@ -1,5 +1,5 @@
 ---
-title: "Comment&#160;: ajouter un volet Actions &#224; des documents Word ou &#224; des classeurs Excel | Microsoft Docs"
+title: "Comment&#160;: ajouter un volet Actions &#224; des documents Word ou &#224; des classeurs Excel"
 ms.custom: ""
 ms.date: "02/02/2017"
 ms.prod: "visual-studio-dev14"

@@ -1,5 +1,5 @@
 ---
-title: "Int&#233;gration de donn&#233;es m&#233;tiers dans SharePoint | Microsoft Docs"
+title: "Int&#233;gration de donn&#233;es m&#233;tiers dans SharePoint"
 ms.custom: ""
 ms.date: "02/02/2017"
 ms.prod: "visual-studio-dev14"

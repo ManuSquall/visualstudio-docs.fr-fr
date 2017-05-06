@@ -1,5 +1,5 @@
 ---
-title: "Comment&#160;: associer une page Web &#224; un dossier Outlook par programmation | Microsoft Docs"
+title: "Comment&#160;: associer une page Web &#224; un dossier Outlook par programmation"
 ms.custom: ""
 ms.date: "02/02/2017"
 ms.prod: "visual-studio-dev14"

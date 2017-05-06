@@ -1,5 +1,5 @@
 ---
-title: "Comment&#160;: mapper des colonnes ListObject aux donn&#233;es | Microsoft Docs"
+title: "Comment&#160;: mapper des colonnes ListObject aux donn&#233;es"
 ms.custom: ""
 ms.date: "02/02/2017"
 ms.prod: "visual-studio-dev14"

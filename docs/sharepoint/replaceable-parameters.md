@@ -1,5 +1,5 @@
 ---
-title: "Param&#232;tres rempla&#231;ables | Microsoft Docs"
+title: "Param&#232;tres rempla&#231;ables"
 ms.custom: ""
 ms.date: "02/02/2017"
 ms.prod: "visual-studio-dev14"

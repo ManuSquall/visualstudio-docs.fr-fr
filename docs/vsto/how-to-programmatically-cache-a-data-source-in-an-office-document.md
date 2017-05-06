@@ -1,5 +1,5 @@
 ---
-title: "Comment&#160;: mettre en cache par programmation une source de donn&#233;es dans un document Office | Microsoft Docs"
+title: "Comment&#160;: mettre en cache par programmation une source de donn&#233;es dans un document Office"
 ms.custom: ""
 ms.date: "02/02/2017"
 ms.prod: "visual-studio-dev14"

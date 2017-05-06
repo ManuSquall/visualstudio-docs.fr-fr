@@ -1,5 +1,5 @@
 ---
-title: "Comment&#160;: ajouter des contr&#244;les au mode Backstage | Microsoft Docs"
+title: "Comment&#160;: ajouter des contr&#244;les au mode Backstage"
 ms.custom: ""
 ms.date: "02/02/2017"
 ms.prod: "visual-studio-dev14"

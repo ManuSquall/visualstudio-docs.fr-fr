@@ -1,5 +1,5 @@
 ---
-title: "Comment&#160;: ajouter un fichier de mod&#232;le BDC existant &#224; un projet SharePoint | Microsoft Docs"
+title: "Comment&#160;: ajouter un fichier de mod&#232;le BDC existant &#224; un projet SharePoint"
 ms.custom: ""
 ms.date: "02/02/2017"
 ms.prod: "visual-studio-dev14"

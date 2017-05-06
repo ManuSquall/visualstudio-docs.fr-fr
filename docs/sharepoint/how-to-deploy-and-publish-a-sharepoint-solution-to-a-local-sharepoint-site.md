@@ -1,5 +1,5 @@
 ---
-title: "Comment&#160;: d&#233;ployer et publier une solution SharePoint sur le site SharePoint local | Microsoft Docs"
+title: "Comment&#160;: d&#233;ployer et publier une solution SharePoint sur le site SharePoint local"
 ms.custom: ""
 ms.date: "02/02/2017"
 ms.prod: "visual-studio-dev14"

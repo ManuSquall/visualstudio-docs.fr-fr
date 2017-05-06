@@ -1,5 +1,5 @@
 ---
-title: "Utilisation de documents Visio | Microsoft Docs"
+title: "Utilisation de documents Visio"
 ms.custom: ""
 ms.date: "02/02/2017"
 ms.prod: "visual-studio-dev14"

@@ -1,5 +1,5 @@
 ---
-title: "Proc&#233;dure pas &#224; pas&#160;: ajout de contr&#244;les &#224; un document au moment de l’ex&#233;cution dans un compl&#233;ment VSTO | Microsoft Docs"
+title: "Proc&#233;dure pas &#224; pas&#160;: ajout de contr&#244;les &#224; un document au moment de l’ex&#233;cution dans un compl&#233;ment VSTO"
 ms.custom: ""
 ms.date: "02/02/2017"
 ms.prod: "visual-studio-dev14"

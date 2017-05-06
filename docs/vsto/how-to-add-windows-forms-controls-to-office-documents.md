@@ -1,5 +1,5 @@
 ---
-title: "Comment&#160;: ajouter des contr&#244;les Windows Forms &#224; des documents Office | Microsoft Docs"
+title: "Comment&#160;: ajouter des contr&#244;les Windows Forms &#224; des documents Office"
 ms.custom: ""
 ms.date: "02/02/2017"
 ms.prod: "visual-studio-dev14"

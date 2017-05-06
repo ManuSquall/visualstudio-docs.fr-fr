@@ -1,5 +1,5 @@
 ---
-title: "&#201;l&#233;ment h&#244;te de document | Microsoft Docs"
+title: "&#201;l&#233;ment h&#244;te de document"
 ms.custom: ""
 ms.date: "02/02/2017"
 ms.prod: "visual-studio-dev14"

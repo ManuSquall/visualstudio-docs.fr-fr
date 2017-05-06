@@ -1,5 +1,5 @@
 ---
-title: "&#201;l&#233;ment XML Ribbon | Microsoft Docs"
+title: "&#201;l&#233;ment XML Ribbon"
 ms.custom: ""
 ms.date: "02/02/2017"
 ms.prod: "visual-studio-dev14"

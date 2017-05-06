@@ -1,5 +1,5 @@
 ---
-title: "Proc&#233;dure pas &#224; pas&#160;: affichage de volets des t&#226;ches personnalis&#233;s avec des messages &#233;lectroniques dans Outlook | Microsoft Docs"
+title: "Proc&#233;dure pas &#224; pas&#160;: affichage de volets des t&#226;ches personnalis&#233;s avec des messages &#233;lectroniques dans Outlook"
 ms.custom: ""
 ms.date: "02/02/2017"
 ms.prod: "visual-studio-dev14"

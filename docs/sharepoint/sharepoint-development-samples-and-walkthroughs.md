@@ -1,5 +1,5 @@
 ---
-title: "Exemples et proc&#233;dures pas &#224; pas relatifs au d&#233;veloppement SharePoint | Microsoft Docs"
+title: "Exemples et proc&#233;dures pas &#224; pas relatifs au d&#233;veloppement SharePoint"
 ms.custom: ""
 ms.date: "02/02/2017"
 ms.prod: "visual-studio-dev14"

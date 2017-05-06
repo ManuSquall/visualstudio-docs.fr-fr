@@ -1,5 +1,5 @@
 ---
-title: "Comment&#160;: mettre &#224; jour le texte d&#39;un signet par programmation | Microsoft Docs"
+title: "Comment&#160;: mettre &#224; jour le texte d&#39;un signet par programmation"
 ms.custom: ""
 ms.date: "02/02/2017"
 ms.prod: "visual-studio-dev14"

@@ -1,5 +1,5 @@
 ---
-title: "Fourniture d&#39;informations de cr&#233;ation de packages et de d&#233;ploiement dans des &#233;l&#233;ments de projet | Microsoft Docs"
+title: "Fourniture d&#39;informations de cr&#233;ation de packages et de d&#233;ploiement dans des &#233;l&#233;ments de projet"
 ms.custom: ""
 ms.date: "02/02/2017"
 ms.prod: "visual-studio-dev14"

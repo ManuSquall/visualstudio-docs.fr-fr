@@ -1,5 +1,5 @@
 ---
-title: "Personnalisation d&#39;un ruban pour InfoPath | Microsoft Docs"
+title: "Personnalisation d&#39;un ruban pour InfoPath"
 ms.custom: ""
 ms.date: "02/02/2017"
 ms.prod: "visual-studio-dev14"

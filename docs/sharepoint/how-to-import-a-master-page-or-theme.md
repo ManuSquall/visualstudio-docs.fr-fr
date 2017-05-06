@@ -1,5 +1,5 @@
 ---
-title: "Comment&#160;: importer une page ma&#238;tre ou un th&#232;me | Microsoft Docs"
+title: "Comment&#160;: importer une page ma&#238;tre ou un th&#232;me"
 ms.custom: ""
 ms.date: "02/02/2017"
 ms.prod: "visual-studio-dev14"

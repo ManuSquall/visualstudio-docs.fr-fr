@@ -1,5 +1,5 @@
 ---
-title: "Messages d&#39;erreur (D&#233;veloppement Office dans Visual Studio) | Microsoft Docs"
+title: "Messages d&#39;erreur (D&#233;veloppement Office dans Visual Studio)"
 ms.custom: ""
 ms.date: "02/02/2017"
 ms.prod: "visual-studio-dev14"

@@ -1,5 +1,5 @@
 ---
-title: "Proc&#233;dure pas &#224; pas&#160;: cr&#233;ation d&#39;un &#233;l&#233;ment de projet Colonne de site avec un mod&#232;le de projet, premi&#232;re&#160;partie | Microsoft Docs"
+title: "Proc&#233;dure pas &#224; pas&#160;: cr&#233;ation d&#39;un &#233;l&#233;ment de projet Colonne de site avec un mod&#232;le de projet, premi&#232;re&#160;partie"
 ms.custom: ""
 ms.date: "02/02/2017"
 ms.prod: "visual-studio-dev14"

@@ -1,5 +1,5 @@
 ---
-title: "Bo&#238;te de dialogue du s&#233;lecteur d&#39;URL (d&#233;veloppement SharePoint dans Visual Studio) | Microsoft Docs"
+title: "Bo&#238;te de dialogue du s&#233;lecteur d&#39;URL (d&#233;veloppement SharePoint dans Visual Studio)"
 ms.custom: ""
 ms.date: "02/02/2017"
 ms.prod: "visual-studio-dev14"

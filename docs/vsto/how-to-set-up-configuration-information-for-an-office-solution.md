@@ -1,5 +1,5 @@
 ---
-title: "Comment&#160;: configurer les informations de configuration d&#39;une solution Office | Microsoft Docs"
+title: "Comment&#160;: configurer les informations de configuration d&#39;une solution Office"
 ms.custom: ""
 ms.date: "02/02/2017"
 ms.prod: "visual-studio-dev14"

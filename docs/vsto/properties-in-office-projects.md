@@ -1,5 +1,5 @@
 ---
-title: "Propri&#233;t&#233;s dans les projets Office | Microsoft Docs"
+title: "Propri&#233;t&#233;s dans les projets Office"
 ms.custom: ""
 ms.date: "02/02/2017"
 ms.prod: "visual-studio-dev14"

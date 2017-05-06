@@ -1,5 +1,5 @@
 ---
-title: "Comment&#160;: supprimer des extensions de code manag&#233; de documents | Microsoft Docs"
+title: "Comment&#160;: supprimer des extensions de code manag&#233; de documents"
 ms.custom: ""
 ms.date: "02/02/2017"
 ms.prod: "visual-studio-dev14"

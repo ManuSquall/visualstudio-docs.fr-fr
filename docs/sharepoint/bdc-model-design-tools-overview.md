@@ -1,5 +1,5 @@
 ---
-title: "Vue d&#39;ensemble des outils de conception du mod&#232;le BDC | Microsoft Docs"
+title: "Vue d&#39;ensemble des outils de conception du mod&#232;le BDC"
 ms.custom: ""
 ms.date: "02/02/2017"
 ms.prod: "visual-studio-dev14"

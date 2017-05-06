@@ -1,5 +1,5 @@
 ---
-title: "Comment&#160;: valider des donn&#233;es lorsqu&#39;une nouvelle ligne est ajout&#233;e &#224; un contr&#244;le ListObject | Microsoft Docs"
+title: "Comment&#160;: valider des donn&#233;es lorsqu&#39;une nouvelle ligne est ajout&#233;e &#224; un contr&#244;le ListObject"
 ms.custom: ""
 ms.date: "02/02/2017"
 ms.prod: "visual-studio-dev14"

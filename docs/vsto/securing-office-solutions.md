@@ -1,5 +1,5 @@
 ---
-title: "S&#233;curisation des solutions Office | Microsoft Docs"
+title: "S&#233;curisation des solutions Office"
 ms.custom: ""
 ms.date: "02/02/2017"
 ms.prod: "visual-studio-dev14"

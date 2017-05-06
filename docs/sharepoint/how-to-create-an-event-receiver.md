@@ -1,5 +1,5 @@
 ---
-title: "Comment&#160;: cr&#233;er un r&#233;cepteur d&#39;&#233;v&#233;nements | Microsoft Docs"
+title: "Comment&#160;: cr&#233;er un r&#233;cepteur d&#39;&#233;v&#233;nements"
 ms.custom: ""
 ms.date: "02/02/2017"
 ms.prod: "visual-studio-dev14"

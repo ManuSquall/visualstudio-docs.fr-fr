@@ -1,5 +1,5 @@
 ---
-title: "Comment&#160;: ajouter une propri&#233;t&#233; personnalis&#233;e | Microsoft Docs"
+title: "Comment&#160;: ajouter une propri&#233;t&#233; personnalis&#233;e"
 ms.custom: ""
 ms.date: "02/02/2017"
 ms.prod: "visual-studio-dev14"

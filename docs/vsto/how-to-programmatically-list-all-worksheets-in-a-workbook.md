@@ -1,5 +1,5 @@
 ---
-title: "Comment&#160;: r&#233;pertorier toutes les feuilles de calcul d&#39;un classeur par programmation | Microsoft Docs"
+title: "Comment&#160;: r&#233;pertorier toutes les feuilles de calcul d&#39;un classeur par programmation"
 ms.custom: ""
 ms.date: "02/02/2017"
 ms.prod: "visual-studio-dev14"

@@ -1,5 +1,5 @@
 ---
-title: "Mise en cache des donn&#233;es | Microsoft Docs"
+title: "Mise en cache des donn&#233;es"
 ms.custom: ""
 ms.date: "02/02/2017"
 ms.prod: "visual-studio-dev14"

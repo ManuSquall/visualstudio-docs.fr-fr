@@ -1,5 +1,5 @@
 ---
-title: "Extension de documents Word et de classeurs Excel dans des compl&#233;ments VSTO au moment de l&#39;ex&#233;cution | Microsoft Docs"
+title: "Extension de documents Word et de classeurs Excel dans des compl&#233;ments VSTO au moment de l&#39;ex&#233;cution"
 ms.custom: ""
 ms.date: "02/02/2017"
 ms.prod: "visual-studio-dev14"

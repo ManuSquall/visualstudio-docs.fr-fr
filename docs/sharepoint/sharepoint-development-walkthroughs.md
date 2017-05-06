@@ -1,5 +1,5 @@
 ---
-title: "Proc&#233;dures pas &#224; pas pour le d&#233;veloppement SharePoint | Microsoft Docs"
+title: "Proc&#233;dures pas &#224; pas pour le d&#233;veloppement SharePoint"
 ms.custom: ""
 ms.date: "02/02/2017"
 ms.prod: "visual-studio-dev14"

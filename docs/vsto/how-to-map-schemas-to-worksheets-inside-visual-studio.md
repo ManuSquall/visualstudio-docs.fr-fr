@@ -1,5 +1,5 @@
 ---
-title: "Comment&#160;: mapper des sch&#233;mas &#224; des feuilles de calcul dans Visual Studio | Microsoft Docs"
+title: "Comment&#160;: mapper des sch&#233;mas &#224; des feuilles de calcul dans Visual Studio"
 ms.custom: ""
 ms.date: "02/02/2017"
 ms.prod: "visual-studio-dev14"

@@ -1,5 +1,5 @@
 ---
-title: "Acc&#232;s global aux objets dans les projets Office | Microsoft Docs"
+title: "Acc&#232;s global aux objets dans les projets Office"
 ms.custom: ""
 ms.date: "02/02/2017"
 ms.prod: "visual-studio-dev14"

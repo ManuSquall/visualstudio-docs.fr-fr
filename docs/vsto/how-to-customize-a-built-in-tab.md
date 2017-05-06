@@ -1,5 +1,5 @@
 ---
-title: "Comment&#160;: personnaliser un onglet int&#233;gr&#233; | Microsoft Docs"
+title: "Comment&#160;: personnaliser un onglet int&#233;gr&#233;"
 ms.custom: ""
 ms.date: "02/02/2017"
 ms.prod: "visual-studio-dev14"

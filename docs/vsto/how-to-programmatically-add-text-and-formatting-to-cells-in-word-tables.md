@@ -1,5 +1,5 @@
 ---
-title: "Comment&#160;: ajouter du texte et une mise en forme aux cellules des tableaux Word par programmation | Microsoft Docs"
+title: "Comment&#160;: ajouter du texte et une mise en forme aux cellules des tableaux Word par programmation"
 ms.custom: ""
 ms.date: "02/02/2017"
 ms.prod: "visual-studio-dev14"

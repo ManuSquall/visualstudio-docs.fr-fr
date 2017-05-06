@@ -1,5 +1,5 @@
 ---
-title: "D&#233;pannage du d&#233;ploiement de solutions Office | Microsoft Docs"
+title: "D&#233;pannage du d&#233;ploiement de solutions Office"
 ms.custom: ""
 ms.date: "02/02/2017"
 ms.prod: "visual-studio-dev14"

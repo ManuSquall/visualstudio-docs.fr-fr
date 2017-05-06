@@ -1,5 +1,5 @@
 ---
-title: "Comment&#160;: r&#233;pertorier les fichiers de classeur r&#233;cemment utilis&#233;s par programmation | Microsoft Docs"
+title: "Comment&#160;: r&#233;pertorier les fichiers de classeur r&#233;cemment utilis&#233;s par programmation"
 ms.custom: ""
 ms.date: "02/02/2017"
 ms.prod: "visual-studio-dev14"

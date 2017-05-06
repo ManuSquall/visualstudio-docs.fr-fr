@@ -1,5 +1,5 @@
 ---
-title: "R&#233;f&#233;rence manag&#233;e (d&#233;veloppement Office dans Visual Studio) | Microsoft Docs"
+title: "R&#233;f&#233;rence manag&#233;e (d&#233;veloppement Office dans Visual Studio)"
 ms.custom: ""
 ms.date: "02/02/2017"
 ms.prod: "visual-studio-dev14"

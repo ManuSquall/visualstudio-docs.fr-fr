@@ -1,5 +1,5 @@
 ---
-title: "Comment&#160;: cr&#233;er et modifier des propri&#233;t&#233;s de document personnalis&#233;es | Microsoft Docs"
+title: "Comment&#160;: cr&#233;er et modifier des propri&#233;t&#233;s de document personnalis&#233;es"
 ms.custom: ""
 ms.date: "02/02/2017"
 ms.prod: "visual-studio-dev14"

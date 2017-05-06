@@ -1,5 +1,5 @@
 ---
-title: "Comment&#160;: cr&#233;er une association entre des entit&#233;s | Microsoft Docs"
+title: "Comment&#160;: cr&#233;er une association entre des entit&#233;s"
 ms.custom: ""
 ms.date: "02/02/2017"
 ms.prod: "visual-studio-dev14"

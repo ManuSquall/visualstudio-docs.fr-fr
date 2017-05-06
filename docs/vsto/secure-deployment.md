@@ -1,5 +1,5 @@
 ---
-title: "D&#233;ploiement s&#233;curis&#233; | Microsoft Docs"
+title: "D&#233;ploiement s&#233;curis&#233;"
 ms.custom: ""
 ms.date: "02/02/2017"
 ms.prod: "visual-studio-dev14"

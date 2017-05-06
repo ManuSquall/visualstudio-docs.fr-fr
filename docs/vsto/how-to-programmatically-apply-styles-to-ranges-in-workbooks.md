@@ -1,5 +1,5 @@
 ---
-title: "Comment&#160;: appliquer des styles &#224; des plages dans les classeurs par programmation | Microsoft Docs"
+title: "Comment&#160;: appliquer des styles &#224; des plages dans les classeurs par programmation"
 ms.custom: ""
 ms.date: "02/02/2017"
 ms.prod: "visual-studio-dev14"

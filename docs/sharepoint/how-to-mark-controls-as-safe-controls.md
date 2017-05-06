@@ -1,5 +1,5 @@
 ---
-title: "Comment&#160;: marquer des contr&#244;les comme &#233;tant des contr&#244;les s&#233;curis&#233;s | Microsoft Docs"
+title: "Comment&#160;: marquer des contr&#244;les comme &#233;tant des contr&#244;les s&#233;curis&#233;s"
 ms.custom: ""
 ms.date: "02/02/2017"
 ms.prod: "visual-studio-dev14"

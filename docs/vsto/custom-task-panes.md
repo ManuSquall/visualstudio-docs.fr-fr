@@ -1,5 +1,5 @@
 ---
-title: "Volets de t&#226;ches personnalis&#233;s | Microsoft Docs"
+title: "Volets de t&#226;ches personnalis&#233;s"
 ms.custom: ""
 ms.date: "02/02/2017"
 ms.prod: "visual-studio-dev14"

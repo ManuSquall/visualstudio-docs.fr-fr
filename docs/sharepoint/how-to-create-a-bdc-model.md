@@ -1,5 +1,5 @@
 ---
-title: "Comment&#160;: cr&#233;er un mod&#232;le BDC | Microsoft Docs"
+title: "Comment&#160;: cr&#233;er un mod&#232;le BDC"
 ms.custom: ""
 ms.date: "02/02/2017"
 ms.prod: "visual-studio-dev14"

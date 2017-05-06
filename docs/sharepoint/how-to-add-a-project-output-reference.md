@@ -1,5 +1,5 @@
 ---
-title: "Comment&#160;: ajouter une r&#233;f&#233;rence de sortie de projet | Microsoft Docs"
+title: "Comment&#160;: ajouter une r&#233;f&#233;rence de sortie de projet"
 ms.custom: ""
 ms.date: "02/02/2017"
 ms.prod: "visual-studio-dev14"

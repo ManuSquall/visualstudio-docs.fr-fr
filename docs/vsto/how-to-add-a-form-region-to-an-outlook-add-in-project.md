@@ -1,5 +1,5 @@
 ---
-title: "Comment&#160;: ajouter une zone de formulaire &#224; un projet de compl&#233;ment Outlook | Microsoft Docs"
+title: "Comment&#160;: ajouter une zone de formulaire &#224; un projet de compl&#233;ment Outlook"
 ms.custom: ""
 ms.date: "02/02/2017"
 ms.prod: "visual-studio-dev14"

@@ -1,5 +1,5 @@
 ---
-title: "Assemblys PIA (Primary Interop Assembly) Office | Microsoft Docs"
+title: "Assemblys PIA (Primary Interop Assembly) Office"
 ms.custom: ""
 ms.date: "02/02/2017"
 ms.prod: "visual-studio-dev14"

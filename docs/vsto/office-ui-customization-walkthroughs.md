@@ -1,5 +1,5 @@
 ---
-title: "Proc&#233;dures pas &#224; pas relatives &#224; la personnalisation de l&#39;interface utilisateur Office | Microsoft Docs"
+title: "Proc&#233;dures pas &#224; pas relatives &#224; la personnalisation de l&#39;interface utilisateur Office"
 ms.custom: ""
 ms.date: "02/02/2017"
 ms.prod: "visual-studio-dev14"

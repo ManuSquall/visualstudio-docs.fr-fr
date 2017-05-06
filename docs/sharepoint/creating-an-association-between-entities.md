@@ -1,5 +1,5 @@
 ---
-title: "Cr&#233;ation d&#39;une association entre des entit&#233;s | Microsoft Docs"
+title: "Cr&#233;ation d&#39;une association entre des entit&#233;s"
 ms.custom: ""
 ms.date: "02/02/2017"
 ms.prod: "visual-studio-dev14"

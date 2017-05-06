@@ -1,5 +1,5 @@
 ---
-title: "Automatisation d&#39;Excel &#224; l&#39;aide d&#39;objets &#233;tendus | Microsoft Docs"
+title: "Automatisation d&#39;Excel &#224; l&#39;aide d&#39;objets &#233;tendus"
 ms.custom: ""
 ms.date: "02/02/2017"
 ms.prod: "visual-studio-dev14"

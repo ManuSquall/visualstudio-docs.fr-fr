@@ -1,5 +1,5 @@
 ---
-title: "Comment&#160;: ajouter et supprimer des d&#233;pendances de fonctionnalit&#233;s | Microsoft Docs"
+title: "Comment&#160;: ajouter et supprimer des d&#233;pendances de fonctionnalit&#233;s"
 ms.custom: ""
 ms.date: "02/02/2017"
 ms.prod: "visual-studio-dev14"

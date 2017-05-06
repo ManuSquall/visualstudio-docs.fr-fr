@@ -1,5 +1,5 @@
 ---
-title: "Vue d&#39;ensemble du mod&#232;le d&#39;objet Outlook | Microsoft Docs"
+title: "Vue d&#39;ensemble du mod&#232;le d&#39;objet Outlook"
 ms.custom: ""
 ms.date: "02/02/2017"
 ms.prod: "visual-studio-dev14"

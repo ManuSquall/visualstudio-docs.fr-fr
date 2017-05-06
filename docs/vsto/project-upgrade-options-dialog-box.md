@@ -1,5 +1,5 @@
 ---
-title: "Mise &#224; niveau du projet, bo&#238;te de dialogue Options | Microsoft Docs"
+title: "Mise &#224; niveau du projet, bo&#238;te de dialogue Options"
 ms.custom: ""
 ms.date: "02/02/2017"
 ms.prod: "visual-studio-dev14"

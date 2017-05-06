@@ -1,5 +1,5 @@
 ---
-title: "Mise en route de la programmation des personnalisations au niveau du document pour Excel | Microsoft Docs"
+title: "Mise en route de la programmation des personnalisations au niveau du document pour Excel"
 ms.custom: ""
 ms.date: "02/02/2017"
 ms.prod: "visual-studio-dev14"

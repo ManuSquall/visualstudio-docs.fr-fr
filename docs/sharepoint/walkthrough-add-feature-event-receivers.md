@@ -1,5 +1,5 @@
 ---
-title: "Proc&#233;dure pas &#224; pas&#160;: ajout de r&#233;cepteurs d&#39;&#233;v&#233;nements de fonctionnalit&#233; | Microsoft Docs"
+title: "Proc&#233;dure pas &#224; pas&#160;: ajout de r&#233;cepteurs d&#39;&#233;v&#233;nements de fonctionnalit&#233;"
 ms.custom: ""
 ms.date: "02/02/2017"
 ms.prod: "visual-studio-dev14"

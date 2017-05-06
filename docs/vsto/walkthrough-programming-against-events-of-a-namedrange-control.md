@@ -1,5 +1,5 @@
 ---
-title: "Proc&#233;dure pas &#224; pas&#160;: programmation d&#39;&#233;v&#233;nements d&#39;un contr&#244;le NamedRange | Microsoft Docs"
+title: "Proc&#233;dure pas &#224; pas&#160;: programmation d&#39;&#233;v&#233;nements d&#39;un contr&#244;le NamedRange"
 ms.custom: ""
 ms.date: "02/02/2017"
 ms.prod: "visual-studio-dev14"

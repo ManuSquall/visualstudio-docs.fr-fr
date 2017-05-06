@@ -1,5 +1,5 @@
 ---
-title: "Empaquetage et d&#233;ploiement de solutions SharePoint | Microsoft Docs"
+title: "Empaquetage et d&#233;ploiement de solutions SharePoint"
 ms.custom: ""
 ms.date: "02/02/2017"
 ms.prod: "visual-studio-dev14"

@@ -1,5 +1,5 @@
 ---
-title: "Proc&#233;dure pas &#224; pas&#160;: mise &#224; jour d&#39;un graphique dans une feuille de calcul &#224; l&#39;aide de cases d&#39;option | Microsoft Docs"
+title: "Proc&#233;dure pas &#224; pas&#160;: mise &#224; jour d&#39;un graphique dans une feuille de calcul &#224; l&#39;aide de cases d&#39;option"
 ms.custom: ""
 ms.date: "02/02/2017"
 ms.prod: "visual-studio-dev14"

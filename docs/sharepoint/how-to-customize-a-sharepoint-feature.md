@@ -1,5 +1,5 @@
 ---
-title: "Comment&#160;: personnaliser une fonctionnalit&#233; SharePoint | Microsoft Docs"
+title: "Comment&#160;: personnaliser une fonctionnalit&#233; SharePoint"
 ms.custom: ""
 ms.date: "02/02/2017"
 ms.prod: "visual-studio-dev14"

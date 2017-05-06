@@ -1,5 +1,5 @@
 ---
-title: "Cr&#233;ation de contr&#244;les r&#233;utilisables pour les composants WebPart ou les pages d&#39;application | Microsoft Docs"
+title: "Cr&#233;ation de contr&#244;les r&#233;utilisables pour les composants WebPart ou les pages d&#39;application"
 ms.custom: ""
 ms.date: "02/02/2017"
 ms.prod: "visual-studio-dev14"

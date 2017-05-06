@@ -1,5 +1,5 @@
 ---
-title: "Utilisation des &#233;l&#233;ments de contact | Microsoft Docs"
+title: "Utilisation des &#233;l&#233;ments de contact"
 ms.custom: ""
 ms.date: "02/02/2017"
 ms.prod: "visual-studio-dev14"

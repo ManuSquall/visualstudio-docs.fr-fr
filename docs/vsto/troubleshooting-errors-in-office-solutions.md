@@ -1,5 +1,5 @@
 ---
-title: "D&#233;pannage d&#39;erreurs dans les solutions Office | Microsoft Docs"
+title: "D&#233;pannage d&#39;erreurs dans les solutions Office"
 ms.custom: ""
 ms.date: "02/02/2017"
 ms.prod: "visual-studio-dev14"

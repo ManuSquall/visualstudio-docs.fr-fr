@@ -1,5 +1,5 @@
 ---
-title: "Comment&#160;: ajouter un descripteur de filtre &#224; une m&#233;thode de recherche | Microsoft Docs"
+title: "Comment&#160;: ajouter un descripteur de filtre &#224; une m&#233;thode de recherche"
 ms.custom: ""
 ms.date: "02/02/2017"
 ms.prod: "visual-studio-dev14"

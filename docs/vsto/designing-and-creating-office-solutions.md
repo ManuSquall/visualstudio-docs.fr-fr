@@ -1,5 +1,5 @@
 ---
-title: "Conception et cr&#233;ation de solutions Office | Microsoft Docs"
+title: "Conception et cr&#233;ation de solutions Office"
 ms.custom: ""
 ms.date: "02/02/2017"
 ms.prod: "visual-studio-dev14"

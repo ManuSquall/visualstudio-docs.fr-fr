@@ -1,5 +1,5 @@
 ---
-title: "Comment&#160;: ajouter des parties XML personnalis&#233;es &#224; des documents &#224; l&#39;aide de compl&#233;ments VSTO | Microsoft Docs"
+title: "Comment&#160;: ajouter des parties XML personnalis&#233;es &#224; des documents &#224; l&#39;aide de compl&#233;ments VSTO"
 ms.custom: ""
 ms.date: "02/02/2017"
 ms.prod: "visual-studio-dev14"

@@ -1,5 +1,5 @@
 ---
-title: "Fusionner du code&#160;XML dans des manifestes de fonctionnalit&#233;s et de packages | Microsoft Docs"
+title: "Fusionner du code&#160;XML dans des manifestes de fonctionnalit&#233;s et de packages"
 ms.custom: ""
 ms.date: "02/02/2017"
 ms.prod: "visual-studio-dev14"

@@ -1,5 +1,5 @@
 ---
-title: "S&#233;curit&#233; pour les solutions SharePoint | Microsoft Docs"
+title: "S&#233;curit&#233; pour les solutions SharePoint"
 ms.custom: ""
 ms.date: "02/02/2017"
 ms.prod: "visual-studio-dev14"

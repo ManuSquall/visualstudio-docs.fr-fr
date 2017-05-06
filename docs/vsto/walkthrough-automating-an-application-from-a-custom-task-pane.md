@@ -1,5 +1,5 @@
 ---
-title: "Proc&#233;dure pas &#224; pas&#160;: automatisation d&#39;une application &#224; partir d&#39;un volet de t&#226;ches personnalis&#233; | Microsoft Docs"
+title: "Proc&#233;dure pas &#224; pas&#160;: automatisation d&#39;une application &#224; partir d&#39;un volet de t&#226;ches personnalis&#233;"
 ms.custom: ""
 ms.date: "02/02/2017"
 ms.prod: "visual-studio-dev14"

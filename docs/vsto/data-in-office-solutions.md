@@ -1,5 +1,5 @@
 ---
-title: "Donn&#233;es dans les solutions Office | Microsoft Docs"
+title: "Donn&#233;es dans les solutions Office"
 ms.custom: ""
 ms.date: "02/02/2017"
 ms.prod: "visual-studio-dev14"

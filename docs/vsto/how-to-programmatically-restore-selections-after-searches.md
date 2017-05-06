@@ -1,5 +1,5 @@
 ---
-title: "Comment&#160;: restaurer des s&#233;lections apr&#232;s des recherches par programmation | Microsoft Docs"
+title: "Comment&#160;: restaurer des s&#233;lections apr&#232;s des recherches par programmation"
 ms.custom: ""
 ms.date: "02/02/2017"
 ms.prod: "visual-studio-dev14"

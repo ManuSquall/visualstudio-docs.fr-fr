@@ -1,5 +1,5 @@
 ---
-title: "Comment&#160;: remplir des documents avec les donn&#233;es de services | Microsoft Docs"
+title: "Comment&#160;: remplir des documents avec les donn&#233;es de services"
 ms.custom: ""
 ms.date: "02/02/2017"
 ms.prod: "visual-studio-dev14"

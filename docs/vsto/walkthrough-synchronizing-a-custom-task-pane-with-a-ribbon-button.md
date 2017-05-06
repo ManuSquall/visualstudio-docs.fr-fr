@@ -1,5 +1,5 @@
 ---
-title: "Proc&#233;dure pas &#224; pas&#160;: synchronisation d&#39;un volet de t&#226;ches personnalis&#233; avec un bouton dans le ruban | Microsoft Docs"
+title: "Proc&#233;dure pas &#224; pas&#160;: synchronisation d&#39;un volet de t&#226;ches personnalis&#233; avec un bouton dans le ruban"
 ms.custom: ""
 ms.date: "02/02/2017"
 ms.prod: "visual-studio-dev14"

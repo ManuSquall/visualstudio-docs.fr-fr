@@ -1,5 +1,5 @@
 ---
-title: "Consid&#233;rations sur les solutions bac &#224; sable (sandbox) | Microsoft Docs"
+title: "Consid&#233;rations sur les solutions bac &#224; sable (sandbox)"
 ms.custom: ""
 ms.date: "02/02/2017"
 ms.prod: "visual-studio-dev14"

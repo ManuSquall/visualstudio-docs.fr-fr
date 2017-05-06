@@ -1,5 +1,5 @@
 ---
-title: "Liaison de donn&#233;es aux contr&#244;les dans les solutions Office | Microsoft Docs"
+title: "Liaison de donn&#233;es aux contr&#244;les dans les solutions Office"
 ms.custom: ""
 ms.date: "02/02/2017"
 ms.prod: "visual-studio-dev14"

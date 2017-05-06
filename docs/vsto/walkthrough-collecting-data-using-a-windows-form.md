@@ -1,5 +1,5 @@
 ---
-title: "Proc&#233;dure pas&#160;&#224;&#160;pas&#160;: collecte de donn&#233;es &#224; l&#39;aide d&#39;un Windows Form | Microsoft Docs"
+title: "Proc&#233;dure pas&#160;&#224;&#160;pas&#160;: collecte de donn&#233;es &#224; l&#39;aide d&#39;un Windows Form"
 ms.custom: ""
 ms.date: "02/02/2017"
 ms.prod: "visual-studio-dev14"

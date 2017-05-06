@@ -1,5 +1,5 @@
 ---
-title: "Directives pour l&#39;importation de flux de travail r&#233;utilisables | Microsoft Docs"
+title: "Directives pour l&#39;importation de flux de travail r&#233;utilisables"
 ms.custom: ""
 ms.date: "02/02/2017"
 ms.prod: "visual-studio-dev14"

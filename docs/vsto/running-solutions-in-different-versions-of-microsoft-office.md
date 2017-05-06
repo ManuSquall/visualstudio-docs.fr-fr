@@ -1,5 +1,5 @@
 ---
-title: "Ex&#233;cution de solutions dans diff&#233;rentes versions de Microsoft Office | Microsoft Docs"
+title: "Ex&#233;cution de solutions dans diff&#233;rentes versions de Microsoft Office"
 ms.custom: ""
 ms.date: "02/02/2017"
 ms.prod: "visual-studio-dev14"

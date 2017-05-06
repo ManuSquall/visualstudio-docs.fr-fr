@@ -1,5 +1,5 @@
 ---
-title: "Association d&#39;une zone de formulaire &#224; une classe de message Outlook | Microsoft Docs"
+title: "Association d&#39;une zone de formulaire &#224; une classe de message Outlook"
 ms.custom: ""
 ms.date: "02/02/2017"
 ms.prod: "visual-studio-dev14"
