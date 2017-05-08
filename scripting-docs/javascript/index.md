@@ -1,9 +1,10 @@
 ---
 layout: LandingPage
 title: JavaScript dans Visual Studio
-translationtype: Human Translation
+ms.translationtype: Human Translation
 ms.sourcegitcommit: 9328c347d548a03a536cea16bd5851817c03d5a2
 ms.openlocfilehash: 31389d1757a5f48123c99bde41aea0c5fec5aebb
+ms.contentlocale: fr-fr
 ms.lasthandoff: 04/10/2017
 
 ---
