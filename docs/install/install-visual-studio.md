@@ -36,18 +36,19 @@ translation.priority.mt:
 - pl-pl
 - pt-br
 - tr-tr
-translationtype: Human Translation
+ms.translationtype: Human Translation
 ms.sourcegitcommit: 47c39bd711b69efdb863d71f11e3e472054a3ce3
 ms.openlocfilehash: 059dd2068c5aa0d55f94f293d8430a1f401354ba
+ms.contentlocale: fr-fr
 ms.lasthandoff: 04/06/2017
 
 ---
 # <a name="install-visual-studio-2017"></a>Installer Visual Studio 2017
-Découvrez une nouvelle façon d’installer Visual Studio ! Dans notre dernière version, nous avons simplifié la sélection et l’installation des fonctionnalités dont vous avez besoin, et nous avons réduit l’empreinte minimale de Visual Studio pour qu’il s’installe plus rapidement et avec moins d’impact système qu’auparavant.  
+Découvrez une nouvelle façon d’installer Visual Studio ! Dans notre dernière version, nous avons simplifié la sélection et l’installation des fonctionnalités dont vous avez besoin, et nous avons réduit l’empreinte minimale de Visual Studio pour qu’il s’installe plus rapidement et avec moins d’impact système qu’auparavant.
 
  Vous voulez en savoir plus sur les autres nouveautés ? Consultez nos [notes de publication](https://www.visualstudio.com/news/releasenotes/vs15-relnotes). Pour des informations plus détaillées sur la nouvelle conception de l’expérience d’installation, consultez nos billets de blog, « [Faster and leaner Visual Studio installer](https://blogs.msdn.microsoft.com/visualstudio/2016/04/01/faster-leaner-visual-studio-installer/) » (Programme d’installation Visual Studio plus rapide et plus léger) et « [Anatomy of a low-impact Visual Studio installation](https://blogs.msdn.microsoft.com/visualstudio/2016/04/25/anatomy-of-a-low-impact-visual-studio-install/) » (Anatomie d’une installation de Visual Studio à faible impact).  
 
- Prêt pour l’installation ? Nous allons vous guider dans les étapes de l’installation. Allons-y.  
+ Prêt pour l’installation ? Nous allons vous guider dans les étapes de l’installation. Allons-y.
 
 ## <a name="install-the-installer"></a>Installer le programme d’installation  
  Quand vous téléchargez Visual Studio 2017, vous obtenez un fichier de programme d’amorçage qui installe à son tour notre nouveau programme d’installation allégé. Ce nouveau programme d’installation inclut tout ce dont vous avez besoin pour personnaliser votre installation.  

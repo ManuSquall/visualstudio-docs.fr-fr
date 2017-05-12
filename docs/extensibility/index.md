@@ -7,10 +7,10 @@ ms.technology: vs-ide-sdk
 ms.topic: landing-page
 title: "Documentation de l’extensibilité de Visual Studio"
 description: "En savoir plus sur l’extensibilité Visual Studio."
-translationtype: Human Translation
+translationtype: Machine Translation
 ms.sourcegitcommit: 1f20a1f524efcd6f16b33ce6fd6887a6ed83c422
 ms.openlocfilehash: 814072a253d17466f270afa63629dd61d5868133
-ms.lasthandoff: 03/07/2017
+ms.lasthandoff: 05/02/2017
 
 ---
 # <a name="visual-studio-extensibility-documentation"></a>Documentation de l’extensibilité de Visual Studio
