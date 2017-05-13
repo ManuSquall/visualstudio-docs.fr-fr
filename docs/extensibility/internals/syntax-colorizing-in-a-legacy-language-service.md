@@ -31,9 +31,10 @@ translation.priority.mt:
 - tr-tr
 - zh-cn
 - zh-tw
-translationtype: Machine Translation
+ms.translationtype: Machine Translation
 ms.sourcegitcommit: 5db97d19b1b823388a465bba15d057b30ff0b3ce
 ms.openlocfilehash: b9d98323b3957108746b22702306c9155b142fb9
+ms.contentlocale: fr-fr
 ms.lasthandoff: 02/22/2017
 
 ---
@@ -82,21 +83,21 @@ namespace TestLanguagePackage
         TestLanguageService() : base()  
         {  
             m_colorableItems = new ColorableItem[] {  
-                new ColorableItem("TestLanguage – Text",  
+                new ColorableItem("TestLanguage - Text",  
                                   "Text",  
                                   COLORINDEX.CI_SYSPLAINTEXT_FG,  
                                   COLORINDEX.CI_SYSPLAINTEXT_BK,  
                                   System.Drawing.Color.Empty,  
                                   System.Drawing.Color.Empty,  
                                   FONTFLAGS.FF_DEFAULT),  
-                new ColorableItem("TestLanguage – Keyword",  
+                new ColorableItem("TestLanguage - Keyword",  
                                   "Keyword",  
                                   COLORINDEX.CI_MAROON,  
                                   COLORINDEX.CI_SYSPLAINTEXT_BK,  
                                   System.Drawing.Color.FromArgb(192,32,32),  
                                   System.Drawing.Color.Empty,  
                                   FONTFLAGS.FF_BOLD),  
-                new ColorableItem("TestLanguage – Comment",  
+                new ColorableItem("TestLanguage - Comment",  
                                   "Comment",  
                                   COLORINDEX.CI_DARKGREEN,  
                                   COLORINDEX.CI_LIGHTGRAY,  
