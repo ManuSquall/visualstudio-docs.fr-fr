@@ -1,7 +1,7 @@
 ---
 title: "Débogage en mode mixte pour Python dans Visual Studio | Microsoft Docs"
 ms.custom: 
-ms.date: 4/10/2017
+ms.date: 5/8/2017
 ms.prod: visual-studio-dev15
 ms.reviewer: 
 ms.suite: 
@@ -28,22 +28,26 @@ translation.priority.ht:
 - tr-tr
 - zh-cn
 - zh-tw
-translationtype: Human Translation
-ms.sourcegitcommit: 9328c347d548a03a536cea16bd5851817c03d5a2
-ms.openlocfilehash: bdc621831893f907beba7ec5ad503fe4d96c0042
-ms.lasthandoff: 04/10/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: 85576806818a6ed289c2f660f87b5c419016c600
+ms.openlocfilehash: 919227fb624f4b6dc51e13ccadea8e2682b9816f
+ms.contentlocale: fr-fr
+ms.lasthandoff: 05/09/2017
 
 ---
 
 # <a name="debugging-python-and-c-together"></a>Débogage conjoint de Python et de C++
 
-La plupart des débogueurs Python standard prend en charge le débogage de code Python uniquement. Toutefois, dans la pratique, Python est utilisé conjointement avec C ou C++ dans les cas qui nécessitent de hautes performances ou la possibilité d’appeler directement les API de plateforme (pour obtenir un exemple, consultez [Création d’une extension C++ pour Python](cpp-and-python.md)). Visual Studio (lors de l’utilisation de Python Tools pour Visual Studio 2.0 et versions ultérieures) intègre un débogage en mode mixte simultané de code Python et C/C++ natif, incluant des piles des appels combinées, la possibilité d’effectuer un pas à pas détaillé alternant entre du code Python et natif, des points d’arrêt dans l’un ou l’autre type de code, ainsi que la possibilité de visualiser des représentations Python des objets dans des cadres natifs et vice versa :
+La plupart des débogueurs Python standard prend en charge le débogage de code Python uniquement. Toutefois, dans la pratique, Python est utilisé conjointement avec C ou C++ dans les cas qui nécessitent de hautes performances ou la possibilité d’appeler directement les API de plateforme (pour obtenir un exemple, consultez [Création d’une extension C++ pour Python](cpp-and-python.md)). Visual Studio intègre un débogage en mode mixte simultané de code Python et C/C++ natif, incluant des piles des appels combinées, la possibilité d’effectuer un pas à pas détaillé alternant entre du code Python et natif, des points d’arrêt dans l’un ou l’autre type de code, ainsi que la possibilité de visualiser des représentations Python des objets dans des cadres natifs et vice versa :
 
 ![Débogage en mode mixte](media/mixed-mode-debugging.png) 
 
 Pour découvrir une présentation de la génération, du test et du débogage de modules C natifs avec Visual Studio, visionnez la vidéo [Deep Dive: Creating Native Modules](https://youtu.be/D9RlT06a1EI) (Exploration de la création de modules natifs), (youtube.com, 9 mn 9 s).
 
 > [!VIDEO https://www.youtube.com/embed/D9RlT06a1EI]
+
+> [!Note]
+> Le débogage en mode mixte n’est pas disponible avec Python Tools pour Visual Studio 1.x.
 
 ## <a name="enabling-mixed-mode-debugging"></a>Activation du débogage en mode mixte
 

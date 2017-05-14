@@ -28,10 +28,11 @@ translation.priority.ht:
 - tr-tr
 - zh-cn
 - zh-tw
-translationtype: Human Translation
-ms.sourcegitcommit: 9328c347d548a03a536cea16bd5851817c03d5a2
-ms.openlocfilehash: b9e1c2b6be671adb99a13e4a0eb4357fbba477b2
-ms.lasthandoff: 04/10/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: 85576806818a6ed289c2f660f87b5c419016c600
+ms.openlocfilehash: a14bc7e8c9194fff3a1bec2739c9e9c2480e905b
+ms.contentlocale: fr-fr
+ms.lasthandoff: 05/09/2017
 
 ---
 
@@ -44,7 +45,7 @@ Dans Visual Studio, vous pouvez rapidement remettre en forme le code selon les o
 
 Les options sont définies par le biais de la commande **Outils > Options > Éditeur de texte > Python > Mise en forme** et de ses sous-onglets, et correspondent par défaut à un sur-ensemble du [guide de style PEP 8](http://www.python.org/dev/peps/pep-0008/). L’onglet **Général** détermine les cas dans lesquels la mise en forme est appliquée ; les trois autres sous-onglets sont décrits dans les sections suivantes.
 
-La prise en charge de Python dans Visual Studio ajoute également la commande [Redisposer le paragraphe de commentaires](#fill-comment-paragraph-command) au menu **Modifier > Avancé**, comme décrit ci-dessous.
+[La prise en charge de Python dans Visual Studio](installation.md) ajoute également la commande [Redisposer le paragraphe de commentaires](#fill-comment-paragraph-command) au menu **Modifier > Avancé**, comme décrit ci-dessous.
 
 ## <a name="spacing"></a>Espacement
 

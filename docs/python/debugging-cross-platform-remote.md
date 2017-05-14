@@ -28,10 +28,11 @@ translation.priority.ht:
 - tr-tr
 - zh-cn
 - zh-tw
-translationtype: Human Translation
-ms.sourcegitcommit: adf122a478b29674dc2924dcf7d42972a5a3f52e
-ms.openlocfilehash: df4d74d9fe884f3aff1998f4b0b38dbff6d1359f
-ms.lasthandoff: 04/10/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: 85576806818a6ed289c2f660f87b5c419016c600
+ms.openlocfilehash: fa3d69cbb34a61a327d0b4c27430ff04b670a568
+ms.contentlocale: fr-fr
+ms.lasthandoff: 05/09/2017
 
 ---
 
@@ -111,7 +112,10 @@ Dans ces étapes, nous allons définir un point d’arrêt simple pour arrêter 
 
 1. Dans la boîte de dialogue **Attacher au processus** qui s’affiche, définissez **Type de connexion** sur **Python à distance (ptvsd)**. (Dans les versions antérieures de Visual Studio, ces options s’appellent **Transport** et **Débogage à distance Python**.)
 
-1. Dans le champ **Cible de la connexion** (ou **Qualificateur** dans les versions antérieures), entrez `tcp://<secret>@<ip_address>:5678` où `<secret>` est la chaîne `enable_attach` passée dans le code Python, `<ip_address>` est celle de la machine virtuelle (qui peut être une adresse explicite ou un nom tel que myvm.cloudapp.net) et `:5678` est le numéro du port de débogage à distance. 
+1. Dans le champ **Cible de la connexion** (ou **Qualificateur** dans les versions antérieures), entrez `tcp://<secret>@<ip_address>:5678` où `<secret>` est la chaîne `enable_attach` passée dans le code Python, `<ip_address>` est celle de la machine virtuelle (qui peut être une adresse explicite ou un nom tel que myvm.cloudapp.net) et `:5678` est le numéro du port de débogage à distance.
+
+    > [!Warning]
+    > Si vous créez une connexion sur l’Internet public, vous devez utiliser `tcps` à la place et suivre les instructions ci-dessous pour [sécuriser la connexion du débogueur avec SSL](#securing-the-debugger-connection-with-ssl).
 
 1. Appuyez sur Entrée pour remplir la liste des processus ptvsd disponibles sur cette machine :
 
@@ -194,5 +198,5 @@ Visual Studio vous avertit de problèmes de certificat potentiels quand vous vou
     ![Avertissement lié au nom d’hôte du certificat SSL](media/remote-debugging-ssl-warning2.png)
 
 > [!Warning]
-> Visual Studio 2017 Preview ne répond plus si vous ignorez ces avertissements. Assurez-vous de corriger tous les problèmes avant d’essayer de vous connecter.
+> À l’heure actuelle, Visual Studio 2017 se bloque si vous ignorez ces avertissements. Assurez-vous de corriger tous les problèmes avant d’essayer de vous connecter.
 

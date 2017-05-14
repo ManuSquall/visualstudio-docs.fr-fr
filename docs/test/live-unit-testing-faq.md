@@ -26,10 +26,11 @@ translation.priority.ht:
 - tr-tr
 - zh-cn
 - zh-tw
-translationtype: Human Translation
-ms.sourcegitcommit: e9a05d008f671fb79d6813a14c594b82f27697e3
-ms.openlocfilehash: 03abb5a6508a6c93c6770bd9373381c9173b7103
-ms.lasthandoff: 03/27/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: c9df048a49580f3526b48e29041ef3758722ed27
+ms.openlocfilehash: 08677472bc13d58d9ab0b42b856955f8434089e4
+ms.contentlocale: fr-fr
+ms.lasthandoff: 05/03/2017
 
 ---
 # <a name="live-unit-testing-frequently-asked-questions"></a>Questions fréquentes concernant Live Unit Testing
@@ -229,6 +230,8 @@ Vous pouvez collecter des journaux plus détaillés de plusieurs manières :
 - Accédez à **Outils**, **Options**, **Live Unit Testing** et définissez l’option de journalisation sur **Détaillé**. Des journaux plus détaillés s’afficheront alors dans la fenêtre Sortie. 
 
 - Définissez la variable d’environnement utilisateur `LiveUnitTesting_BuildLog` sur le nom du fichier que vous souhaitez utiliser pour capturer le journal MSBuild. Vous pourrez ensuite récupérer à partir de ce fichier les messages détaillés du journal MSBuild compilé à partir des builds Live Unit Testing.
+
+- Affectez à la variable d’environnement utilisateur `LiveUnitTesting_TestPlatformLog` la valeur `1` pour capturer le journal de la plateforme de test. Vous pourrez ensuite récupérer à partir de `[Solution Root]\.vs\[Solution Name]\log\[VisualStudio Process ID]` les messages détaillés de la plateforme de test issus des séries de tests Live Unit Testing.
 
 - Créez une variable d’environnement de niveau utilisateur nommée `VS_UTE_DIAGNOSTICS` et affectez-lui la valeur 1 (ou n’importe quelle valeur), puis redémarrez Visual Studio. L’onglet **Sortie – Tests** de Visual Studio devrait maintenant contenir un nombre important de consignations. 
  
