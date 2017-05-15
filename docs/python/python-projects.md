@@ -28,10 +28,11 @@ translation.priority.ht:
 - tr-tr
 - zh-cn
 - zh-tw
-translationtype: Human Translation
-ms.sourcegitcommit: 9328c347d548a03a536cea16bd5851817c03d5a2
-ms.openlocfilehash: eb3abd0f37e52f2b1db3793a5471b74a5e0c37ff
-ms.lasthandoff: 04/10/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: 85576806818a6ed289c2f660f87b5c419016c600
+ms.openlocfilehash: 3190be68fbba464a84a7a25b2d829979944bdb1f
+ms.contentlocale: fr-fr
+ms.lasthandoff: 05/09/2017
 
 ---
 
@@ -69,7 +70,7 @@ Visionnez également la vidéo [Deep Dive: Using source control with Python proj
 
 ## <a name="adding-files-assigning-a-startup-file-and-setting-environments"></a>Ajout de fichiers, attribution d’un fichier de démarrage et définition des environnements
 
-Lorsque vous développez votre application, vous devez généralement ajouter des fichiers de différents types pour le projet. Vous pouvez le faire en cliquant avec le bouton droit sur le projet et en sélectionnant **Ajouter > Élément existant...** pour rechercher un fichier à ajouter, ou en sélectionnant **Ajouter > Nouvel élément...**, qui affiche une boîte de dialogue avec un large éventail de modèles d’élément, y compris des fichiers Python vides, une classe Python, un test unitaire et divers fichiers associés aux applications web. Nous vous encourageons à explorer ces options avec un projet de test pour savoir ce qui est disponible dans votre version de Visual Studio.
+Lorsque vous développez votre application, vous devez généralement ajouter des fichiers de différents types pour le projet. Vous pouvez le faire en cliquant avec le bouton droit sur le projet et en sélectionnant **Ajouter > Élément existant...** pour rechercher un fichier à ajouter, ou en sélectionnant  **Ajouter > Nouvel élément...**, qui affiche une boîte de dialogue avec un large éventail de modèles d’élément, y compris des fichiers Python vides, une classe Python, un test unitaire et divers fichiers associés aux applications web. Nous vous encourageons à explorer ces options avec un projet de test pour savoir ce qui est disponible dans votre version de Visual Studio.
 
 Chaque projet Python comprend un fichier de démarrage attribué, indiqué en gras dans l’Explorateur de solutions. Il s’agit du fichier qui est exécuté quand vous démarrez le débogage (F5 ou **Déboguer > Démarrer le débogage**) ou exécutez votre projet dans la fenêtre interactive (Maj+Alt+F5 ou **Déboguer > Exécuter le projet en mode interactif Python**). Pour changer de fichier de démarrage, cliquez sur le nouveau fichier et sélectionnez **Définir comme fichier de démarrage**.
 
@@ -100,7 +101,7 @@ Le tableau suivant résume les modèles disponibles dans Visual Studio 2017 (to
 | IronPython Silverlight Web Page (Page web Silverlight IronPython) | Un projet IronPython qui s’exécute dans un navigateur à l’aide de Silverlight. Le code Python de l’application est inclus dans la page web en tant que script. Une balise de script réutilisable extrait du code JavaScript qui initialise IronPython s’exécutant dans Silverlight, à partir duquel votre code Python peut interagir avec DOM. |
 | IronPython Windows Forms Application (Application Windows Forms IronPython) | Une structure de projet utilisant IronPython avec l’interface utilisateur créée à partir du code avec Windows Forms. L’application s’exécute sans affichage d’une console. |
 | Background Application (IoT) (Application d’arrière-plan (IoT)) | Prend en charge le déploiement de projets Python pour une exécution en tant que services d’arrière-plan sur les appareils. Visitez le [centre de développement Windows IoT](https://dev.windows.com/en-us/iot) pour plus d’informations. |
-| Module d’extension Python | Ce modèle s’affiche sous Visual C++ si vous avez installé **Outils de développement natifs Python** avec la charge de travail Python dans Visual Studio 2017 Preview (consultez [Installation](installation.md)). Il fournit la structure de base pour une DLL d’extension C++, similaire à ce qui est décrit dans [Création d’une extension C++ pour Python](cpp-and-python.md). |
+| Module d’extension Python | Ce modèle s’affiche sous Visual C++ si vous avez installé **Outils de développement natifs Python** avec la charge de travail Python dans Visual Studio 2017 (consultez [Installation](installation.md)). Il fournit la structure de base pour une DLL d’extension C++, similaire à ce qui est décrit dans [Création d’une extension C++ pour Python](cpp-and-python.md). |
 
 <a name="create-project-from-existing-files"</a>
 ### <a name="creating-a-project-from-existing-files"></a>Création d’un projet à partir de fichiers existants

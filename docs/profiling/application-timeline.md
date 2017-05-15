@@ -28,13 +28,14 @@ translation.priority.mt:
 - pl-pl
 - pt-br
 - tr-tr
-translationtype: Human Translation
-ms.sourcegitcommit: a42f5a30375192c89c9984e40ba0104da98d7253
-ms.openlocfilehash: 5455d9a16004fef1aec02fbaf856f336c67dfb05
-ms.lasthandoff: 03/07/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: 4c744284c198a645440494ee79ee0e722904fda5
+ms.openlocfilehash: b6fd9ebbd931604b12c772f4e2514c86f5c9dd70
+ms.contentlocale: fr-fr
+ms.lasthandoff: 05/04/2017
 
 ---
-# <a name="analyze-resource-consumption-and-ui-thread-acitivity-xaml"></a>Analyser la consommation des ressources et l’activité des threads de l’interface utilisateur (XAML)
+# <a name="analyze-resource-consumption-and-ui-thread-activity-xaml"></a>Analyser la consommation des ressources et l’activité des threads de l’interface utilisateur (XAML)
 Utilisez le profileur **Chronologie de l'application** pour rechercher et corriger les problèmes de performances liés à l'interaction d'application dans les applications XAML. Cet outil vous aide à améliorer les performances des applications XAML en fournissant une vue détaillée de la consommation des ressources des applications. Vous pouvez analyser le temps passé par votre application à préparer les trames de l'interface utilisateur (mise en page et rendu), à traiter les demandes du réseau et des disques, et dans les scénarios comme le démarrage de l'application, le chargement des pages et le redimensionnement des fenêtres.  
   
  La **Chronologie de l’application** fait partie des outils que vous pouvez démarrer avec la commande **Déboguer -> Profileur de performances...**.  
@@ -88,7 +89,7 @@ Utilisez le profileur **Chronologie de l'application** pour rechercher et corrig
   
 2.  À l'aide des informations des graphiques **Utilisation des threads de l'interface utilisateur** ou **Débit visuel (i/s)** , examinez les détails de la vue **Détails de la chronologie** pour découvrir les causes possibles d'un manque apparent de réactivité.  
   
-###  <a name="BKMK_Report_scenarios_categories_and_events"></a> Créer des rapports contenant des scénarios, des catégories et des événements  
+###  <a name="BKMK_Report_scenarios_categories_and_events"></a> Scénarios de rapport, catégories et événements  
  L'outil **Chronologie de l'application** affiche les données de la chronologie pour les scénarios, les catégories et les événements liés aux performances XAML.  
   
 ###  <a name="BKMK_Diagnostic_session_timeline"></a> Chronologie de session de diagnostic  
@@ -117,9 +118,9 @@ Utilisez le profileur **Chronologie de l'application** pour rechercher et corrig
 |-|-|  
 |**Analyse**|Temps passé à l'analyse de fichiers XAML et à la création d'objets.<br /><br /> Le développement d'un nœud **Analyse** dans **Détails de la chronologie** affiche la chaîne de dépendance de tous les fichiers XAML qui ont été analysés comme résultat de l'événement racine. Cela vous permettra d'identifier l'analyse de fichiers inutiles et la création d'objets dans les scénarios critiques de performances, et de les optimiser.|  
 |**Disposition**|Dans les grandes applications, des milliers d'éléments peuvent s'afficher en même temps sur l'écran. Ceci peut entraîner un faible débit des trames d'interface utilisateur et en conséquence, une réactivité faible de l'application. L’événement Layout détermine avec précision le coût de la disposition de chaque élément (c’est-à-dire le temps passé dans les fonctions Arrange, Measure, ApplyTemplate et ArrangeOverride) et génère les arborescences des éléments visuels qui ont participé à une passe de disposition. Vous pouvez utiliser cette visualisation pour déterminer laquelle de vos arborescences logiques doit être élaguée ou pour évaluer d'autres mécanismes de report pour optimiser votre passe de disposition.|  
-|**Affichage**|Temps passé à dessiner les éléments XAML à l'écran.|  
+|**Afficher**|Temps passé à dessiner les éléments XAML à l'écran.|  
 |**E/S**|Durée de récupération de données à partir du disque local ou à partir des ressources réseau qui sont accessibles par le biais de l’ [API Microsoft Windows Internet (WinINet)](https://msdn.microsoft.com/en-us/library/windows/desktop/aa385331.aspx).|  
-|**Code d’application**|Indique le temps passé à l'exécution du code de l'application (utilisateur) qui n'est pas lié à l'analyse ou à la disposition.|  
+|**App Code**|Indique le temps passé à l'exécution du code de l'application (utilisateur) qui n'est pas lié à l'analyse ou à la disposition.|  
 |**Autres Xaml**|Temps passé à exécuter le code du runtime XAML.|  
   
 > [!TIP]

@@ -1,7 +1,7 @@
 ---
-title: "Débogage dans Python Tools pour Visual Studio | Microsoft Docs"
+title: "Débogage de Python dans Visual Studio | Microsoft Docs"
 ms.custom: 
-ms.date: 3/7/2017
+ms.date: 5/8/2017
 ms.prod: visual-studio-dev15
 ms.reviewer: 
 ms.suite: 
@@ -28,16 +28,17 @@ translation.priority.ht:
 - tr-tr
 - zh-cn
 - zh-tw
-translationtype: Human Translation
-ms.sourcegitcommit: adf122a478b29674dc2924dcf7d42972a5a3f52e
-ms.openlocfilehash: 1d26ca1a464e2ec15c0d5d338a46b6fb1e7e1d65
-ms.lasthandoff: 04/10/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: 85576806818a6ed289c2f660f87b5c419016c600
+ms.openlocfilehash: e15edc1f2739cad0960619aa6cb4b089589eebd8
+ms.contentlocale: fr-fr
+ms.lasthandoff: 05/09/2017
 
 ---
 
 # <a name="debugging-your-python-code"></a>Débogage de votre code Python
 
-Python Tools pour Visual Studio (PTVS) offre une expérience de débogage complète pour Python, comprenant notamment l’attachement à des processus en cours d’exécution, l’évaluation d’expressions dans les Fenêtres Espion et Exécution, l’inspection de variables locales, les points d’arrêt, les instructions de pas à pas détaillé/sortant/principal, la définition de l’instruction suivante, etc. 
+Visual Studio offre une expérience de débogage complète pour Python, comprenant notamment l’attachement à des processus en cours d’exécution, l’évaluation d’expressions dans les Fenêtres Espion et Exécution, l’inspection de variables locales, les points d’arrêt, les instructions de pas à pas détaillé/sortant/principal, la définition de l’instruction suivante, etc. 
 
 Pour obtenir une vue d’ensemble du débogage, visionnez la vidéo [Getting Started with PTVS, Part 4: Debugging](https://youtu.be/bO7wpzgy74A?list=PLReL099Y5nRdLgGAdrb_YeTdEnd23s6Ff) (Prise en main de PTVS, Partie 4 : Débogage) (youtube.com, 3 mn 30 s).
 
@@ -58,7 +59,7 @@ Consultez également les articles ci-après concernant le débogage propre à un
 
 <a name="debugging-without-a-project"</a>
 > [!Tip]
-> PTVS prend en charge le débogage sans projet. Après avoir ouvert un fichier Python autonome dans Visual Studio, cliquez avec le bouton droit dans l’éditeur, puis sélectionnez **Start with Debugging** (Démarrer avec débogage). PTVS lance alors le script avec l’environnement global par défaut (consultez l’article [Environnements Python](python-environments.md)) sans aucun argument. Mais vous bénéficiez désormais d’une prise en charge complète du débogage.
+> Python dans Visual Studio prend en charge le débogage sans projet. Après avoir ouvert un fichier Python autonome, cliquez avec le bouton droit dans l’éditeur, puis sélectionnez **Démarrer avec débogage**. Visual Studio lance alors le script avec l’environnement global par défaut (consultez l’article [Environnements Python](python-environments.md)) sans aucun argument. Mais vous bénéficiez désormais d’une prise en charge complète du débogage.
 >
 > Pour contrôler l’environnement et les arguments, vous devrez créer un projet pour le code. Vous pouvez facilement effectuer cette opération à l’aide du modèle [From Existing Python Code](python-projects.md#creating-a-project-from-existing-files) (À partir d’un code Python existant).
 

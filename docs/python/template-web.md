@@ -1,7 +1,7 @@
 ---
-title: "Modèle de projet Web dans Python Tools pour Visual Studio | Microsoft Docs"
+title: "Modèle de projet web pour Python dans Visual Studio | Microsoft Docs"
 ms.custom: 
-ms.date: 3/7/2017
+ms.date: 5/8/2017
 ms.prod: visual-studio-dev15
 ms.reviewer: 
 ms.suite: 
@@ -28,16 +28,17 @@ translation.priority.ht:
 - tr-tr
 - zh-cn
 - zh-tw
-translationtype: Human Translation
-ms.sourcegitcommit: 7d726441c2d6953bd7b50451bec7fff05d5d71b0
-ms.openlocfilehash: 2375c0c3b1a692d03d8790e400e3fea606355831
-ms.lasthandoff: 03/10/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: 85576806818a6ed289c2f660f87b5c419016c600
+ms.openlocfilehash: 20edb7a53adf400fba94556e659b4215a0060c1b
+ms.contentlocale: fr-fr
+ms.lasthandoff: 05/09/2017
 
 ---
 
 # <a name="python-web-project-templates"></a>Modèles de projet Web Python
 
-Python Tools pour Visual Studio (PTVS) prend en charge le développement de projets Web dans des infrastructures telles que Bottle, Django et Flask. Ceci inclut des modèles de projet et un lanceur de débogage qui peuvent être configurés pour gérer différentes infrastructures. En revanche, PTVS n’intègre pas les infrastructures proprement dites. Vous devrez installer ces dernières séparément en cliquant avec le bouton droit sur le projet et en sélectionnant **Python > Install/upgrade framework... (Installer/mettre à niveau une infrastructure)**.
+La prise en charge de Python dans Visual Studio permet le développement de projets web dans des infrastructures telles que Bottle, Django et Flask. Ceci inclut des modèles de projet et un lanceur de débogage qui peuvent être configurés pour gérer différentes infrastructures. En revanche, Visual Studio n’intègre pas les infrastructures proprement dites. Vous devrez installer ces dernières séparément en cliquant avec le bouton droit sur le projet et en sélectionnant **Python > Install/upgrade framework** (Installer/mettre à niveau une infrastructure).
 
 Chaque modèle (accessible par le biais des commandes **Fichier > Nouveau > Projet...**) lance un serveur web avec un port local sélectionné de manière aléatoire, ouvre votre navigateur par défaut lors du débogage et autorise une publication directe sur [Microsoft Azure](http://www.azure.com). Des modèles sont fournis pour Bottle, Flask et Django, et vous pouvez utiliser le modèle générique « Projet Web » pour d’autres infrastructures telles que Pyramid.
 
@@ -59,7 +60,7 @@ Pour découvrir une présentation des projets Web Python, visionnez la vidéo [G
 
 ## <a name="debugging"></a>Débogage
 
-Lorsqu’un projet Web est démarré à des fins de débogage, PTVS démarre le serveur web localement et ouvre votre navigateur par défaut au niveau de cette adresse et de ce port. Pour spécifier des options supplémentaires, cliquez avec le bouton droit sur le projet, sélectionnez **Propriétés**, puis sélectionnez l’onglet **Web Launcher** (Lanceur web) :
+Quand un projet web est démarré à des fins de débogage, Visual Studio démarre le serveur web localement et ouvre votre navigateur par défaut au niveau de cette adresse et de ce port. Pour spécifier des options supplémentaires, cliquez avec le bouton droit sur le projet, sélectionnez **Propriétés**, puis sélectionnez l’onglet **Web Launcher** (Lanceur web) :
 
   ![Propriétés du lanceur web pour le modèle web générique](media/template-web-launcher-properties.png)
 
@@ -67,7 +68,7 @@ Dans le groupe **Débogage** :
 
 - **Chemins de recherche**, **Arguments de script**, **Interpreter Arguments** (Arguments d’interpréteur) et **Interpreter Path** (Chemin d’interpréteur) : ces valeurs sont identiques à celles du [débogage standard](debugging.md).
 - **URL de lancement** : spécifie l’URL qui s’ouvrira dans votre navigateur. Ce champ est défini sur `localhost` par défaut.
-- **Numéro de port** : port à utiliser si aucun n’est spécifié dans l’URL (PTVS sélectionne automatiquement un port par défaut). Ceci vous permet de remplacer la valeur par défaut de la variable d’environnement `SERVER_PORT`, qui est utilisée par les modèles pour configurer le port écouté par le serveur de débogage local.
+- **Numéro de port** : port à utiliser si aucun n’est spécifié dans l’URL (Visual Studio sélectionne automatiquement un port par défaut). Ceci vous permet de remplacer la valeur par défaut de la variable d’environnement `SERVER_PORT`, qui est utilisée par les modèles pour configurer le port écouté par le serveur de débogage local.
 
 Les propriétés des groupes **Run Server Command** (Commande du serveur d’exécution) et **Debug Server Command** (Commande du serveur de débogage) (ce dernier apparaissant sous le contenu présenté par l’image) déterminent la façon dont le serveur web est lancé. Étant donné que de nombreuses infrastructures nécessitent l’utilisation d’un script à l’extérieur du projet actuel, il est possible de configurer le script à cet emplacement et de transmettre le nom du module de démarrage sous la forme d’un paramètre.
 
@@ -94,7 +95,7 @@ Le modèle de projet Web Bottle inclut un code réutilisable qui effectue la con
     - **Commande** : `bottle` (module)
     - **Arguments** : `--debug --bind=%SERVER_HOST%:%SERVER_PORT% {StartupModule}:app`
 
-L’option `--reload` n’est pas recommandée lors de l’utilisation de PTVS pour le débogage.
+L’option `--reload` n’est pas recommandée en cas d’utilisation de Visual Studio pour le débogage.
 
 ### <a name="sample-pyramid-configuration"></a>Exemple de configuration Pyramid
 

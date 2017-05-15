@@ -1,7 +1,7 @@
 ---
-title: "Tests unitaires dans Python Tools pour Visual Studio | Microsoft Docs"
+title: Tests unitaires pour Python dans Visual Studio | Microsoft Docs
 ms.custom: 
-ms.date: 3/7/2017
+ms.date: 5/8/2017
 ms.prod: visual-studio-dev15
 ms.reviewer: 
 ms.suite: 
@@ -28,10 +28,11 @@ translation.priority.ht:
 - tr-tr
 - zh-cn
 - zh-tw
-translationtype: Human Translation
-ms.sourcegitcommit: adf122a478b29674dc2924dcf7d42972a5a3f52e
-ms.openlocfilehash: 878bd0baaa0e08a31274645213b222bf6faeb412
-ms.lasthandoff: 04/10/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: 85576806818a6ed289c2f660f87b5c419016c600
+ms.openlocfilehash: 2597583912c7694495617c53839f41aa13cda871
+ms.contentlocale: fr-fr
+ms.lasthandoff: 05/09/2017
 
 ---
 
@@ -39,13 +40,13 @@ ms.lasthandoff: 04/10/2017
 
 Les tests unitaires sont des éléments de code qui permettent de tester d’autres unités de code dans une application, généralement des fonctions isolées, des classes, etc. Lorsqu’une application réussit tous ses tests unitaires, vous avez au moins la garantie que ses fonctionnalités secondaires sont correctes.
 
-Python utilise largement les tests unitaires pour valider des scénarios lors de la conception d’un programme. Python Tools pour Visual Studio (PTVS) prend en charge la détection, l’exécution et le débogage de tests unitaires dans le cadre de votre processus de développement, sans avoir à les exécuter séparément.
+Python utilise largement les tests unitaires pour valider des scénarios lors de la conception d’un programme. La prise en charge de Python dans Visual Studio inclut la découverte, l’exécution et le débogage de tests unitaires dans le cadre de votre processus de développement, sans qu’il soit nécessaire de les exécuter séparément.
 
 Cette rubrique fournit une brève description des fonctionnalités de tests unitaires contenues dans Visual Studio avec Python. Pour plus d’informations sur les tests unitaires en général, consultez la page [Tests unitaires sur votre code](../test/unit-test-your-code.md).
 
 ## <a name="discovering-and-viewing-tests"></a>Détection et affichage des tests
 
-Par convention, PTVS identifie les tests comme des méthodes dont le nom commence par « test ». Pour le voir, procédez comme suit :
+Par convention, Visual Studio identifie les tests comme des méthodes dont le nom commence par « test ». Pour le voir, procédez comme suit :
 
 1. Ouvrez un [projet Python](python-projects.md) chargé dans Visual Studio, cliquez avec le bouton droit sur votre projet, sélectionnez **Ajouter > Nouvel élément...**, puis sélectionnez **Python Unit Test** (Test unitaire Python) et **Ajouter**.
 
@@ -98,13 +99,13 @@ Les tests s’exécutent en arrière-plan et l’Explorateur de tests met à jou
 
 ## <a name="debugging-tests"></a>Débogage des tests
 
-Étant donné que les tests unitaires sont des éléments de code, ils sont exposés à des bogues tout comme n’importe quel autre code. Ils doivent parfois être exécutés dans un débogueur, dans lequel vous pouvez définir des points d’arrêt, examiner des variables et parcourir le code. PTVS fournit également des outils de diagnostic
+Étant donné que les tests unitaires sont des éléments de code, ils sont exposés à des bogues tout comme n’importe quel autre code. Ils doivent parfois être exécutés dans un débogueur, dans lequel vous pouvez définir des points d’arrêt, examiner des variables et parcourir le code. Visual Studio fournit également des outils de diagnostic
 
 Pour démarrer le débogage, définissez un point d’arrêt initial dans votre code, puis cliquez avec le bouton droit sur le test (ou sur une sélection) dans l’Explorateur de tests et sélectionnez **Debug Selected Tests** (Déboguer les tests sélectionnés). Visual Studio démarre le débogueur Python comme il le ferait pour un code d’application.
 
 ![Débogage d’un test](media/unit-test-debugging.png)
 
-Vous pouvez également utiliser les commandes **Analyser la couverture du code pour les tests sélectionnés** et **Profiler le test**, selon votre version de PTVS (voir la [matrice des fonctionnalités](python-in-visual-studio.md#features-matrix)).
+Vous pouvez également utiliser les commandes **Analyser la couverture du code pour les tests sélectionnés** et **Profiler le test**, selon votre version de Visual Studio (voir la [matrice des fonctionnalités](python-in-visual-studio.md#features-matrix)).
 
 ### <a name="known-issues"></a>Problèmes connus
 

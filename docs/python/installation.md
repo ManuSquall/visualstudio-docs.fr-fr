@@ -1,7 +1,7 @@
 ---
 title: "Installation pour Python dans Visual Studio | Microsoft Docs"
 ms.custom: 
-ms.date: 3/7/2017
+ms.date: 5/8/2017
 ms.prod: visual-studio-dev15
 ms.reviewer: 
 ms.suite: 
@@ -28,14 +28,15 @@ translation.priority.ht:
 - tr-tr
 - zh-cn
 - zh-tw
-translationtype: Human Translation
-ms.sourcegitcommit: e9a05d008f671fb79d6813a14c594b82f27697e3
-ms.openlocfilehash: e0a51155a42fb51244114da86a292381a7a28a21
-ms.lasthandoff: 03/27/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: 85576806818a6ed289c2f660f87b5c419016c600
+ms.openlocfilehash: 9cdd87d81f0b0f4748a25c7bb87fb840e246854c
+ms.contentlocale: fr-fr
+ms.lasthandoff: 05/09/2017
 
 ---
 
-# <a name="installing-python-support-for-visual-studio"></a>Installation de la prise en charge de Python pour Visual Studio
+# <a name="installing-python-support-in-visual-studio"></a>Installation de la prise en charge de Python dans Visual Studio
 
 Pour installer la prise en charge de Python pour Visual Studio, suivez les instructions de la section qui correspond à votre version de Visual Studio :
 
@@ -52,11 +53,14 @@ Pour tester rapidement la prise en charge de Python après avoir suivi la procé
 
 ## <a name="visual-studio-2017"></a>Visual Studio 2017
 
-1. Installez [« Visual Studio 2017 Preview » à partir de https://www.visualstudio.com/vs/preview](https://www.visualstudio.com/vs/preview). **Remarque :** Ce canal de préversion est *distinct* de la version finale de Visual Studio 2017 et contient des fonctionnalités en cours de développement pour les mises à jour ultérieures de Visual Studio 2017, dont la prise en charge de Python.
+1. Installez Visual Studio 2017 à partir de [https://www.visualstudio.com/vs/](https://www.visualstudio.com/vs/).
 
-1. Dans le programme d’installation de Preview, sélectionnez la charge de travail **Web et cloud > Développement Python** :
+1. Dans le programme d’installation de Visual Studio, sélectionnez la charge de travail **Web et cloud > Développement Python**.
 
     ![Charge de travail de développement Python dans le programme d’installation de Visual Studio](media/installation-python-workload.png)
+
+    > [!Note]
+    > Python est également inclus dans la charge de travail **Applications de science et analyse des données**.
 
 1. Sur le côté droit du programme d’installation, sélectionnez les interpréteurs Python et les autres outils associés que vous souhaitez inclure. Par exemple, si vous envisagez de développer des extensions C++ pour Python, ajoutez l’option **Outils de développement natifs Python**.
 
@@ -88,7 +92,7 @@ Pour tester rapidement la prise en charge de Python après avoir suivi la procé
 
 Par défaut, la prise en charge de Python est installée pour tous les utilisateurs d’un ordinateur.
 
-Pour Visual Studio 2017, la charge de travail Python est installée dans `%ProgramFiles(x86)%\Microsoft Visual Studio\Preview\<VS_edition>Common7\IDE\Extensions\Microsoft\Python` où &lt;VS_edition&gt; correspond à Community, Professional ou Enterprise.
+Pour Visual Studio 2017, la charge de travail Python est installée dans `%ProgramFiles(x86)%\Microsoft Visual Studio\2017\<VS_edition>Common7\IDE\Extensions\Microsoft\Python` où &lt;VS_edition&gt; correspond à Community, Professional ou Enterprise.
 
 Pour Visual Studio 2015 et les versions antérieures, les chemins d’accès de l’installation sont les suivants :
 
@@ -110,5 +114,5 @@ où :
 
 ### <a name="user-specific-installations-15-and-earlier"></a>Installations propres à l’utilisateur (1.5 et versions antérieures)
 
-Python Tools pour Visual Studio 1.5 et les versions antérieures n’autorisent l’installation que pour l’utilisateur actuel. Dans ce cas, le chemin d’accès de l’installation est `%LocalAppData%\Microsoft\VisualStudio\<VS_ver>\Extensions\Microsoft\Python Tools for Visual Studio\<PTVS_ver>`, où les valeurs &lt;VS_ver&gt; et &lt;PTVS_ver&gt; sont identiques à celles décrites ci-dessus.
+Python Tools pour Visual Studio 1.5 et antérieur n’autorisent l’installation que pour l’utilisateur actuel. Dans ce cas, le chemin d’accès de l’installation est `%LocalAppData%\Microsoft\VisualStudio\<VS_ver>\Extensions\Microsoft\Python Tools for Visual Studio\<PTVS_ver>`, où les valeurs &lt;VS_ver&gt; et &lt;PTVS_ver&gt; sont identiques à celles décrites ci-dessus.
 
