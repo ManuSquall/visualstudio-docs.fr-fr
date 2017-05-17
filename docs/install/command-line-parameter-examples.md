@@ -1,8 +1,8 @@
 ---
 title: "Exemples de paramètres de ligne de commande pour l’installation de Visual Studio | Microsoft Docs"
 ms.custom: 
-ms.date: 04/05/2017
-ms.reviewer: 
+ms.date: 05/06/2017
+ms.reviewer: tims
 ms.suite: 
 ms.technology:
 - vs-ide-install
@@ -27,10 +27,11 @@ translation.priority.mt:
 - pl-pl
 - pt-br
 - tr-tr
-translationtype: Human Translation
-ms.sourcegitcommit: 4e33dc3ebb32569b547aa9bcb6db9a15dbe4fc21
-ms.openlocfilehash: ff67313f350264b39151bc0e2f7191ab16300f24
-ms.lasthandoff: 04/05/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: 85576806818a6ed289c2f660f87b5c419016c600
+ms.openlocfilehash: 0f07824b29e7851e353d472838a897853e227d6c
+ms.contentlocale: fr-fr
+ms.lasthandoff: 05/09/2017
 
 ---
 # <a name="command-line-parameter-examples-for-visual-studio-2017-installation"></a>Exemples de paramètres de ligne de commande pour l’installation de Visual Studio 2017
@@ -41,65 +42,63 @@ Dans chaque exemple, `vs_enterprise.exe`, `vs_professional.exe` et `vs_community
 > [!NOTE]
 > Toutes les commandes nécessitent une élévation administrative. Une invite du Contrôle de compte d’utilisateur s’affiche si le processus n’est pas démarré à partir d’une invite avec élévation de privilèges.
 
+> [!NOTE]
+>  Vous pouvez utiliser le caractère `^` à la fin d’une ligne de commande pour concaténer plusieurs lignes en une seule commande. Vous pouvez aussi simplement regrouper ces lignes sur une seule ligne. Dans PowerShell, le caractère équivalent est l’accent grave (`` ` ``). 
+
 * Installez une instance minimale de Visual Studio, sans invites interactives, mais avec la progression affichée :
-```cmd
+```
 vs_enterprise.exe --installPath C:\minVS ^
    --add Microsoft.VisualStudio.Workload.CoreEditor ^
    --passive --norestart
 ```
 
 * Installez une instance de bureau de Visual Studio en mode silencieux, avec le module linguistique français, avec un retour uniquement une fois le produit installé.
-```cmd
+```
 vs_enterprise.exe --installPath C:\desktopVS ^
    --addProductLang fr-FR ^
    --add Microsoft.VisualStudio.Workload.ManagedDesktop ^
-   --quiet --wait
+   --includeRecommended --quiet --wait
 ```
 
-  > [!NOTE]
-  >  Le paramètre `--wait` est conçu pour être utilisé dans un fichier de commandes. Dans un fichier de commandes, l’exécution de la commande suivante s’interrompt jusqu’à ce que l’installation soit terminée. La variable d’environnement `%ERRORLEVEL%` contient la valeur de retour de la commande, comme indiqué dans la page [Utiliser les paramètres de ligne de commande pour installer Visual Studio](use-command-line-parameters-to-install-visual-studio.md).
+> [!NOTE]
+>  Le paramètre `--wait` est conçu pour être utilisé dans un fichier de commandes. Dans un fichier de commandes, l’exécution de la commande suivante s’interrompt jusqu’à ce que l’installation soit terminée. La variable d’environnement `%ERRORLEVEL%` contient la valeur de retour de la commande, comme indiqué dans la page [Utiliser les paramètres de ligne de commande pour installer Visual Studio](use-command-line-parameters-to-install-visual-studio.md).
 
-* Téléchargez le bureau .NET et les charges de travail web .NET avec tous les composants recommandés et l’extension GitHub. Incluez uniquement le module linguistique anglais :
+* Téléchargez l’éditeur de base de Visual Studio (configuration minimale de Visual Studio). Incluez uniquement le module linguistique anglais :
+
 ```cmd
 vs_community.exe --layout C:\VS2017
    --lang en-US ^
-   --add Microsoft.VisualStudio.Workload.CoreEditor ^
-   --add Microsoft.VisualStudio.Workload.NetWeb ^
-   --add Microsoft.VisualStudio.Workload.ManagedDesktop ^
-   --add Microsoft.Net.ComponentGroup.TargetingPacks.Common ^
-   --add Microsoft.ComponentGroup.Blend ^
-   --add Microsoft.VisualStudio.Component.EntityFramework ^
-   --add Microsoft.VisualStudio.Component.DiagnosticTools ^
-   --add Microsoft.VisualStudio.Component.DockerTools ^
-   --add Microsoft.VisualStudio.Component.CloudExplorer ^
-   --add Microsoft.VisualStudio.Component.Wcf.Tooling ^
-   --add Component.GitHub.VisualStudio
+   --add Microsoft.VisualStudio.Workload.CoreEditor
 ```
 
-   >[!NOTE]
-   L’édition Enterprise contient des composants recommandés supplémentaires par rapport à ceux présentés ici. Consultez [Répertoire de composants Visual Studio Enterprise 2017](workload-component-id-vs-enterprise.md) pour obtenir la liste de tous les composants recommandés disponibles dans Visual Studio Enterprise.
+* Téléchargez le bureau .NET et les charges de travail web .NET avec tous les composants recommandés et l’extension GitHub. Incluez uniquement le module linguistique anglais :
+```
+vs_community.exe --layout C:\VS2017 ^
+   --lang en-US ^
+   --add Microsoft.VisualStudio.Workload.NetWeb ^
+   --add Microsoft.VisualStudio.Workload.ManagedDesktop ^
+   --add Component.GitHub.VisualStudio ^
+   --includeRecommended
+```
 
 * Démarrez une installation interactive de l’ensemble des charges de travail et composants disponibles dans Visual Studio 2017 Enterprise Edition :
-```cmd
+```
 vs_enterprise.exe --all --includeRecommended --includeOptional
 ```
 
 * Installez une deuxième instance nommée de Visual Studio 2017 Professional sur un ordinateur sur lequel Visual Studio 2017 Community Edition est déjà installé, avec prise en charge du développement Node.js :
-```cmd
+```
 vs_professional.exe --installPath C:\VSforNode ^
-   --add Microsoft.VisualStudio.Workload.Node --nickname VSforNode
+   --add Microsoft.VisualStudio.Workload.Node --includeRecommended --nickname VSforNode
 ```
 
 * Supprimez le composant Outils de profilage de l’instance de Visual Studio installée par défaut :
-```cmd
+```
 vs_enterprise.exe modify ^
    --installPath "C:\Program Files (x86)\Microsoft Visual Studio\2017\Enterprise" ^
    --remove Microsoft.VisualStudio.Component.DiagnosticTools ^
    --passive
 ```
-
-  > [!NOTE]
-  >  Vous pouvez utiliser le caractère `^` à la fin d’une ligne de commande pour concaténer plusieurs lignes en une seule commande. Vous pouvez aussi simplement regrouper ces lignes sur une seule ligne.
 
 ## <a name="see-also"></a>Voir aussi
 
