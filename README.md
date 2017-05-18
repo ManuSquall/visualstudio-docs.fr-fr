@@ -17,3 +17,4 @@ Vos contributions sont les bienvenues pour nous aider à améliorer la documenta
 Plusieurs fonctionnalités de Visual Studio ont leurs propres dossiers dans ce dépôt, comme **debugger** pour les rubriques sur le débogage, **ide** pour les rubriques sur l’environnement de développement intégré (IDE) de Visual Studio, et ainsi de suite. Le sous-dossier **/media** dans chaque dossier contient les fichiers art pour les rubriques. Le [guide du contributeur](CONTRIBUTING.md) contient d’autres informations.
 
 Ce projet a adopté le [Code de conduite open source de Microsoft](https://opensource.microsoft.com/codeofconduct/). Pour plus d’informations, consultez la [FAQ sur le code de conduite](https://opensource.microsoft.com/codeofconduct/faq/) ou envoyez vos questions ou commentaires à [opencode@microsoft.com](mailto:opencode@microsoft.com).
+# <a name="officedev-reference"></a>officedev-reference
