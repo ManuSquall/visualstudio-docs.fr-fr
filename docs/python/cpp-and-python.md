@@ -28,10 +28,11 @@ translation.priority.ht:
 - tr-tr
 - zh-cn
 - zh-tw
-translationtype: Human Translation
-ms.sourcegitcommit: 9328c347d548a03a536cea16bd5851817c03d5a2
-ms.openlocfilehash: 002c77b27f7283ecd28d7ec5470b0ed44b2bb7a4
-ms.lasthandoff: 04/10/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: 85576806818a6ed289c2f660f87b5c419016c600
+ms.openlocfilehash: f8a0bef07667e5f876473c966ed3d14a1b84dd0b
+ms.contentlocale: fr-fr
+ms.lasthandoff: 05/09/2017
 
 ---
 
@@ -49,11 +50,14 @@ L’approche choisie ici est celle pour les extensions CPython standard, comme d
 
 ## <a name="prerequisites"></a>Prérequis
 
-Cette procédure pas à pas est écrite pour Visual Studio 2017 Preview avec les charges de travail **Développement Desktop en C++** et **Développement Python** et leurs options par défaut (par exemple, Python 3.6 comme interpréteur par défaut). Dans la charge de travail **Développement Python**, cochez aussi la case située à droite pour **Outils de développement natifs Python**, qui définit la plupart des options décrites dans cette rubrique. (Cette option inclut également la charge de travail C++ automatiquement.)
+Cette procédure pas à pas est écrite pour Visual Studio 2017 avec les charges de travail **Développement Desktop en C++** et **Développement Python** et leurs options par défaut (par exemple, Python 3.6 comme interpréteur par défaut). Dans la charge de travail **Développement Python**, cochez aussi la case située à droite pour **Outils de développement natifs Python**, qui définit la plupart des options décrites dans cette rubrique. (Cette option inclut également la charge de travail C++ automatiquement.) 
 
 ![Sélection de l’option Outils de développement natifs Python](media/cpp-install-native.png)
 
 Pour plus d’informations, consultez [Installation de la prise en charge de Python pour Visual Studio](installation.md), notamment l’utilisation d’autres versions de Visual Studio. Si vous installez Python séparément, veillez à sélectionner **Télécharger les symboles de débogage** et **Télécharger les binaires de débogage** sous **Options avancées** dans le programme d’installation. Vous êtes ainsi certain d’avoir à votre disposition les bibliothèques de débogage nécessaires si vous choisissez d’effectuer une build Debug.
+
+> [!Note]
+> Python est également disponible via la charge de travail **Applications de science et analyse des données**, qui inclut Anaconda 3 64 bits (avec la dernière version de CPython) et l’option **Outils de développement natifs Python** par défaut.
 
 ## <a name="create-the-python-application"></a>Créer l’application Python
 
@@ -265,7 +269,7 @@ Vous pouvez maintenant appeler le code `tanh` du module et comparer ses performa
 
 ## <a name="debug-the-c-code"></a>Déboguer le code C++
 
-Avec la prise en charge de Python dans Visual Studio, vous pouvez [déboguer simultanément le code Python et C++](debugging-mixed-mode.md). Pour ce faire, effectuez les étapes suivantes :
+Avec la [prise en charge de Python dans Visual Studio](installation.md), vous pouvez [déboguer simultanément le code Python et C++](debugging-mixed-mode.md). Pour ce faire, effectuez les étapes suivantes :
 
 1. Dans l’Explorateur de solutions, cliquez avec le bouton droit sur le projet Python, sélectionnez **Propriétés**, l’onglet **Déboguer**, puis l’option **Déboguer > Permettre le débogage du code natif**.
 
