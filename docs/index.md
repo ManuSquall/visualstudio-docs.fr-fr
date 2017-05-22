@@ -3,10 +3,11 @@ layout: HubPage
 hide_bc: true
 title: Documentation de Visual Studio
 description: "Apprenez à utiliser Visual Studio 2017 pour développer des applications, des services et des outils dans le langage de votre choix pour vos plateformes et vos appareils."
-translationtype: Human Translation
-ms.sourcegitcommit: 06cdfb076120ffd7459a16b56c659bb86942cd7f
-ms.openlocfilehash: 5a8448dff45473fa40892fb07604759a9d015021
-ms.lasthandoff: 03/31/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: 2831d252fbc9601e62c372ac3df7704e1dc65f2a
+ms.openlocfilehash: a8f12e3418da5ec6fe778d3a7eaed610c120a859
+ms.contentlocale: fr-fr
+ms.lasthandoff: 05/10/2017
 
 ---
 <div id="main" class="v2">
@@ -201,7 +202,7 @@ ms.lasthandoff: 03/31/2017
                                                     </div>
                                                 </div>
                                                 <div class="cardText">
-                                                    <h3>Python (préversion)</h3>
+                                                    <h3>Python</h3>
                                                     <p>Développement interactif pour les applications Python à l’aide de frameworks connus comme Django et Flask.</p>
                                                 </div>
                                             </div>
@@ -247,6 +248,25 @@ ms.lasthandoff: 03/31/2017
                                     </div>
                                 </a>
                             </li>                            
+                            <li>        
+                                <a href="https://go.microsoft.com/fwlink/?linkid=834748">        
+                                  <div class="cardSize">        
+                                    <div class="cardPadding">        
+                                      <div class="card">        
+                                        <div class="cardImageOuter">        
+                                          <div class="cardImage bgdAccent1 cardScaleImage">        
+                                            <img data-scaleimage="./images/vs_web-6.svg" src="./images/vs_web-6.svg" alt="" />        
+                                        </div>        
+                                        </div>        
+                                          <div class="cardText">        
+                                            <h3>Applications de science des données et analytiques</h3>        
+                                            <p>Langages et outils permettant de créer des applications de science des données, notamment Python, R et F#.</p>        
+                                        </div>        
+                                      </div>        
+                                    </div>        
+                                  </div>        
+                                </a>        
+                            </li>
                             <li>
                                 <a href="https://go.microsoft.com/fwlink/?linkid=833075">
                                     <div class="cardSize">
@@ -287,7 +307,7 @@ ms.lasthandoff: 03/31/2017
                                                     </div>
                                                 </div>
                                                 <div class="cardText">
-                                                    <h3>Développement mobile en .NET</h3>
+                                                    <h3>Développement mobile pour .NET</h3>
                                                     <p>Créez des applications multiplateformes pour iOS, Android ou Windows à l’aide de Xamarin.</p>
                                                 </div>
                                             </div>
@@ -589,7 +609,7 @@ ms.lasthandoff: 03/31/2017
                                                 </div>
                                                 <div class="cardText">
                                                     <h3>Données</h3>
-                                                    <p>Créez des applications connectées aux données de virtuellement n’importe quel service ou produit de base de données, dans n’importe quel format et où vous voulez : sur une machine locale, un réseau local ou un cloud public, privé ou hybride.</p>
+                                                    <p>Créez des applications de données qui se connectent à n’importe quel service ou base de données, localement ou dans le cloud. </p>
                                                 </div>
                                             </div>
                                         </div>
@@ -731,7 +751,7 @@ ms.lasthandoff: 03/31/2017
                                             </div>
                                             <div class="cardText">
                                                 <a href="https://go.microsoft.com/fwlink/?linkid=833068">
-                                                    <h3>Python (préversion)</h3>
+                                                    <h3>Python</h3>
                                                     <p>Langage de programmation de haut niveau, dynamique et orienté objet, souvent utilisé pour développer rapidement des applications.</p>
                                                 </a>
                                             </div>
@@ -774,7 +794,7 @@ ms.lasthandoff: 03/31/2017
                 <a href="https://go.microsoft.com/fwlink/?linkid=833101"> Twitter </a>
             </li>
             <li>
-                <a href="https://go.microsoft.com/fwlink/?linkid=833103"> Dépassement de capacité de la pile </a>
+                <a href="https://go.microsoft.com/fwlink/?linkid=833103"> Stack Overflow </a>
             </li>
             <li>
                 <a href="https://go.microsoft.com/fwlink/?linkid=833104"> Signalement de problèmes </a>
