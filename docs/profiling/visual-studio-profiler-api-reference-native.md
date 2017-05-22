@@ -30,17 +30,18 @@ translation.priority.ht:
 - tr-tr
 - zh-cn
 - zh-tw
-translationtype: Human Translation
-ms.sourcegitcommit: 5db97d19b1b823388a465bba15d057b30ff0b3ce
-ms.openlocfilehash: d30482dd7f179b38babf0bdaab9cd0e38389541e
-ms.lasthandoff: 02/22/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: c9df048a49580f3526b48e29041ef3758722ed27
+ms.openlocfilehash: 142df9fbf327ee8ebc39c3558ef1632a1bd23ae7
+ms.contentlocale: fr-fr
+ms.lasthandoff: 05/03/2017
 
 ---
 # <a name="visual-studio-profiler-api-reference-native"></a>Informations de référence sur les API du profileur Visual Studio (natives)
 Les API du profileur Visual Studio vous permettent de contrôler par programmation la quantité de données collectées et d’insérer des marques d’horodateur et de profil durant le profilage. Pour utiliser des API natives, vous devez inclure le fichier d’en-tête VSPerf.h et ajouter VSPerf.lib dans votre projet.  
   
 > [!NOTE]
->  Par défaut, VSPerf.h et VSPerf.lib se trouvent dans le répertoire \<lecteur>:\Program Files\Microsoft Visual Studio 9\Team Tools\Performance Tools\PerfSDK.  
+>  Par défaut, VSPerf.h et VSPerf.lib se trouvent dans un dossier nommé PerfSDK. Répertoire \<lecteur>:\Program Files\Microsoft Visual Studio 14.0\Team Tools\Performance Tools\PerfSDK, par exemple.  
   
 ## <a name="in-this-section"></a>Dans cette section  
  [CommentMarkAtProfile](../profiling/commentmarkatprofile.md)  
@@ -64,3 +65,4 @@ Les API du profileur Visual Studio vous permettent de contrôler par programmati
 ## <a name="see-also"></a>Voir aussi  
  [API des outils de profilage](../profiling/profiling-tools-apis.md)   
  [Procédure pas à pas : utilisation des API du profileur](../profiling/walkthrough-using-profiler-apis.md)
+
