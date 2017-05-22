@@ -32,9 +32,10 @@ translation.priority.mt:
 - pl-pl
 - pt-br
 - tr-tr
-translationtype: Human Translation
+ms.translationtype: Human Translation
 ms.sourcegitcommit: 5db97d19b1b823388a465bba15d057b30ff0b3ce
 ms.openlocfilehash: 9e2c533f31c0fd0e73e990a747491ffd1d6cb267
+ms.contentlocale: fr-fr
 ms.lasthandoff: 02/22/2017
 
 ---
@@ -45,7 +46,7 @@ Une **session de performance** vous permet de configurer les paramètres qui dé
   
 -   [!INCLUDE[vsUltLong](../code-quality/includes/vsultlong_md.md)], [!INCLUDE[vsPreLong](../code-quality/includes/vsprelong_md.md)], [!INCLUDE[vsPro](../code-quality/includes/vspro_md.md)]  
   
- Pour créer une **session de performance**, exécutez l’**Assistant Performance** ou créez une session manuellement. Une fois la **session de performance** créée, elle s’affiche dans l’**Explorateur de performances******.  
+ Pour créer une **session de performance**, exécutez l’**Assistant Performance** ou créez une session manuellement. Une fois la **session de performance** créée, **session de performance** s’affiche dans l’**Explorateur de performances**.  
   
  Pour afficher les propriétés d’une **session de performance**, sélectionnez son nom dans l’**Explorateur de performances**, cliquez dessus avec le bouton droit, puis sélectionnez **Propriétés**.  
   

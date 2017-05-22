@@ -45,9 +45,10 @@ translation.priority.ht:
 - tr-tr
 - zh-cn
 - zh-tw
-translationtype: Human Translation
+ms.translationtype: Human Translation
 ms.sourcegitcommit: 5db97d19b1b823388a465bba15d057b30ff0b3ce
 ms.openlocfilehash: b3d922c4aee9136a35e1a2c9669f7cf3380d7609
+ms.contentlocale: fr-fr
 ms.lasthandoff: 02/22/2017
 
 ---
@@ -69,7 +70,7 @@ Encapsule l’outil Compilateur MIDL (Microsoft Interface Definition Language), 
   
      Paramètre de **chaîne** facultatif.  
   
-     Liste des options de ligne de commande. Par exemple, **« ***/option1 /option2 /option#* ». Utilisez ce paramètre pour spécifier des options de ligne de commande qui ne sont pas représentées par un autre paramètre de tâche MIDL.  
+     Liste des options de ligne de commande. Par exemple, **«** */option1 /option2 /option#* ». Utilisez ce paramètre pour spécifier des options de ligne de commande qui ne sont pas représentées par un autre paramètre de tâche MIDL.  
   
      Pour plus d’informations, consultez « MIDL Command-Line Reference (Informations de référence sur les lignes de commande MIDL) » sur le site web [MSDN](http://go.microsoft.com/fwlink/?LinkId=737).  
   
