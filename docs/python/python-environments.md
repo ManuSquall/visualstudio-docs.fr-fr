@@ -42,8 +42,8 @@ Python dans Visual Studio simplifie la gestion de plusieurs environnements Pytho
 
 Remarque : Si vous êtes un nouvel utilisateur de Python dans Visual Studio, consultez tout d’abord les rubriques suivantes, car cette discussion repose sur ces dernières :
 
-    - [Utilisation de Python dans Visual Studio](python-in-visual-studio.md)
-    - [Installation de la prise en charge de Python dans Visual Studio](installation.md)
+- [Utilisation de Python dans Visual Studio](python-in-visual-studio.md)
+- [Installation de la prise en charge de Python dans Visual Studio](installation.md)
 
 Un *environnement* Python, dans lequel vous exécutez toujours le code Python, comprend un interpréteur, une bibliothèque (généralement la bibliothèque Python standard) et un ensemble de packages installés. Tous ces éléments déterminent quelles sont les constructions de langage et la syntaxe valides, les fonctionnalités du système d’exploitation auxquelles vous pouvez accéder et quels packages utiliser.
 

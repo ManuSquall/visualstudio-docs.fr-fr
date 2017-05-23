@@ -32,9 +32,10 @@ translation.priority.ht:
 - tr-tr
 - zh-cn
 - zh-tw
-translationtype: Human Translation
+ms.translationtype: Human Translation
 ms.sourcegitcommit: 5658ecf52637a38bc3c2a5ad9e85b2edebf7d445
 ms.openlocfilehash: a2cd0d3a9f964136e971f3709b5eacc9600832d0
+ms.contentlocale: fr-fr
 ms.lasthandoff: 02/22/2017
 
 ---
@@ -99,7 +100,7 @@ Utilisez la page **Générer** du **Concepteur de projet** pour spécifier les p
  **Niveau d’avertissement**  
  Spécifie le niveau d’affichage pour les avertissements du compilateur. Pour plus d’informations, consultez l’article [/warn (C# Compiler Options) (/warn [Options du compilateur C#])](/dotnet/csharp/language-reference/compiler-options/warn-compiler-option).  
   
- **Supprimer les avertissements **  
+ **Supprimer les avertissements**  
  Empêche le compilateur de générer un ou plusieurs avertissements. Séparez les numéros des avertissements par une virgule ou un point-virgule. Pour plus d’informations, consultez l’article [/nowarn (C# Compiler Options) (/nowarn [Options du compilateur C#])](/dotnet/csharp/language-reference/compiler-options/nowarn-compiler-option).  
   
 ## <a name="treat-warnings-as-errors"></a>Considérer les avertissements comme des erreurs  
