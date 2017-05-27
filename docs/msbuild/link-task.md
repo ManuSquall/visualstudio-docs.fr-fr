@@ -49,9 +49,10 @@ translation.priority.ht:
 - tr-tr
 - zh-cn
 - zh-tw
-translationtype: Human Translation
+ms.translationtype: Human Translation
 ms.sourcegitcommit: ca7c86466fa23fb21a932f26dc24e37c71cf29b4
 ms.openlocfilehash: a062b0a929ce812f19bcc6c89594b8f3b2e93b6f
+ms.contentlocale: fr-fr
 ms.lasthandoff: 04/05/2017
 
 ---
@@ -89,7 +90,7 @@ Encapsule l’outil Éditeur de liens Visual C++, link.exe. L’outil Éditeur 
   
      Paramètre de **chaîne** facultatif.  
   
-     Liste des options de l’Éditeur de liens indiquées sur la ligne de commande. Par exemple, **« ***/option1 /option2 /option#* ». Utilisez ce paramètre pour spécifier des options de l’Éditeur de liens qui ne sont pas représentées par un autre paramètre de tâche **Link**.  
+     Liste des options de l’Éditeur de liens indiquées sur la ligne de commande. Par exemple, **«** */option1 /option2 /option#* ». Utilisez ce paramètre pour spécifier des options de l’Éditeur de liens qui ne sont pas représentées par un autre paramètre de tâche **Link**.  
   
      Pour plus d’informations, consultez l’article [Options de l’Éditeur de liens](/cpp/build/reference/linker-options).  
   
