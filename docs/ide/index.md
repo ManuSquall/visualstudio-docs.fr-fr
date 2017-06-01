@@ -5,9 +5,10 @@ ms.author: apexprodleads
 ms.topic: landing-page
 title: "Documentation sur l’IDE Visual Studio"
 description: "Découvrez comment l’environnement de développement intégré (IDE) Visual Studio peut vous aider à développer des applications à l’aide de presque n’importe quel langage de code."
-translationtype: Human Translation
+ms.translationtype: Human Translation
 ms.sourcegitcommit: 0e5a449ef396e7b9fd23a2c018bdc7f8791b7b38
 ms.openlocfilehash: 7f55b5d4cc58620e292cc11399c086e26184081f
+ms.contentlocale: fr-fr
 ms.lasthandoff: 03/13/2017
 
 ---
@@ -54,7 +55,7 @@ Des didacticiels, des vidéos et d’autres documents vous montrent comment cré
         </a>
     </li>
     <li>
-        <a href="/dotnet/articles/welcome">
+        <a href="/dotnet/welcome">
         <div class="cardSize">
             <div class="cardPadding">
                 <div class="card">

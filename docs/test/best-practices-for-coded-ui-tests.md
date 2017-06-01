@@ -28,10 +28,11 @@ translation.priority.ht:
 - tr-tr
 - zh-cn
 - zh-tw
-translationtype: Human Translation
+ms.translationtype: Human Translation
 ms.sourcegitcommit: 5ab78b6b8eaa8156ed2c8a807b1d8a80e75afa84
 ms.openlocfilehash: 444f6bf46c3eac65a2771655616fd67d8ed83b32
-ms.lasthandoff: 04/04/2017
+ms.contentlocale: fr-fr
+ms.lasthandoff: 05/19/2017
 
 ---
 # <a name="best-practices-for-coded-ui-tests"></a>Meilleures pratiques pour les tests codés de l'interface utilisateur
@@ -64,13 +65,13 @@ Cette rubrique décrit les pratiques recommandées à suivre pour développer de
   
 -   Dans l'application testée, utilisez des noms significatifs quand vous créez les contrôles d'interface utilisateur. Le sens et la facilité d'utilisation des noms de contrôles générés automatiquement sont ainsi renforcés.  
   
--   Si vous créez des assertions en codant avec l’API, créez une méthode pour chaque assertion dans la partie de la classe <xref:Microsoft.VisualStudio.TestTools.UITest.Common.UIMap.UIMap> qui se trouve dans le fichier `UIMap.cs`. Appelez cette méthode depuis votre méthode de test pour exécuter l'assertion.  
+-   Si vous créez des assertions en codant avec l'API, créez une méthode pour chaque assertion dans le cadre de la classe <xref:Microsoft.VisualStudio.TestTools.UITest.Common.UIMap.UIMap> qui se trouve dans le fichier `UIMap.cs`. Appelez cette méthode depuis votre méthode de test pour exécuter l'assertion.  
   
 -   Si vous codez directement avec l'API, utilisez les propriétés et méthodes dans les classes générées dans le fichier `UIMap.Designer.cs` de votre code autant que possible. Ces classes facilitent votre travail, le rendent plus fiable et vous permettent d'augmenter votre productivité.  
   
  Les tests codés de l'interface utilisateur s'adaptent automatiquement à de nombreuses modifications dans l'interface utilisateur. Si, par exemple, un élément d'interface utilisateur a changé de position ou de couleur, la plupart du temps, le test codé de l'interface utilisateur trouve quand même le bon élément.  
   
- Pendant l’exécution d’un test, les contrôles d’interface utilisateur sont localisés par le framework de test à l’aide d’un jeu de propriétés de recherche qui sont appliquées à chaque classe de contrôle dans les définitions créées par le **Générateur de test codé de l’interface utilisateur** dans le fichier `UIMap.Designer.cs`. Les propriétés de recherche contiennent des paires nom-valeur de noms de propriété et des valeurs de propriété qui peuvent servir à identifier le contrôle, comme les propriétés <xref:Microsoft.VisualStudio.TestTools.UITesting.UITestControl.FriendlyName%2A>, <xref:Microsoft.VisualStudio.TestTools.UITesting.UITestControl.Name%2A>, et <xref:Microsoft.VisualStudio.TestTools.UITesting.UITestControl.ControlType%2A> du contrôle. Si les propriétés de recherche ne sont pas modifiées, le test codé de l'interface utilisateur trouve correctement le contrôle dans l'interface utilisateur. Si les propriétés de recherche sont modifiées, les tests codés de l'interface utilisateur ont un algorithme de correspondance intelligent qui applique des paramètres heuristiques pour rechercher des contrôles et fenêtres dans l'interface utilisateur. Quand l'interface utilisateur a changé, vous pouvez peut-être modifier les propriétés de recherche des éléments précédemment identifiés pour vérifier qu'ils sont trouvés.  
+ Pendant l’exécution d’un test, les contrôles d’interface utilisateur sont localisés par le framework de test à l’aide d’un jeu de propriétés de recherche qui sont appliquées à chaque classe de contrôle dans les définitions créées par le **Générateur de test codé de l’interface utilisateur** dans le fichier `UIMap.Designer.cs`. Les propriétés de recherche contiennent des paires nom-valeur de noms de propriété et des valeurs de propriété qui peuvent servir à identifier le contrôle, comme les propriétés <xref:Microsoft.VisualStudio.TestTools.UITesting.UITestControl.FriendlyName%2A>, <xref:Microsoft.VisualStudio.TestTools.UITesting.UITestControl.Name%2A> et <xref:Microsoft.VisualStudio.TestTools.UITesting.UITestControl.ControlType%2A> du contrôle. Si les propriétés de recherche ne sont pas modifiées, le test codé de l'interface utilisateur trouve correctement le contrôle dans l'interface utilisateur. Si les propriétés de recherche sont modifiées, les tests codés de l'interface utilisateur ont un algorithme de correspondance intelligent qui applique des paramètres heuristiques pour rechercher des contrôles et fenêtres dans l'interface utilisateur. Quand l'interface utilisateur a changé, vous pouvez peut-être modifier les propriétés de recherche des éléments précédemment identifiés pour vérifier qu'ils sont trouvés.  
   
 ## <a name="what-to-do-if-your-user-interface-changes"></a>Que faire si votre interface utilisateur change ?  
  Les interfaces utilisateur changent souvent au cours du développement. Voici quelques façons de réduire l'effet de ces changements :  
@@ -88,7 +89,7 @@ Cette rubrique décrit les pratiques recommandées à suivre pour développer de
  Pour plus d’informations sur la manière d’enregistrer des tests codés de l’interface utilisateur, consultez [Utiliser l’automatisation de l’interface utilisateur pour tester votre code](../test/use-ui-automation-to-test-your-code.md).  
   
 ## <a name="what-to-do-if-a-background-process-needs-to-complete-before-the-test-can-continue"></a>Que faire si un processus en arrière-plan doit être terminé pour que le test puisse continuer ?  
- Vous devez peut-être attendre qu'un processus se termine pour pouvoir poursuivre avec l'action d'interface utilisateur suivante. Pour cela, vous pouvez utiliser <xref:Microsoft.VisualStudio.TestTools.UITesting.PlaybackSettings.WaitForReadyLevel%2A> pour attendre avant de continuer le test comme dans l’exemple suivant.  
+ Vous devez peut-être attendre qu'un processus se termine pour pouvoir poursuivre avec l'action d'interface utilisateur suivante. Pour cela, vous pouvez utiliser <xref:Microsoft.VisualStudio.TestTools.UITesting.PlaybackSettings.WaitForReadyLevel%2A> pour attendre avant de continuer le test comme dans l'exemple suivant.  
   
 ```  
 // Set the playback to wait for all threads to finish  

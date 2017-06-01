@@ -26,10 +26,11 @@ translation.priority.ht:
 - tr-tr
 - zh-cn
 - zh-tw
-translationtype: Human Translation
-ms.sourcegitcommit: 5658ecf52637a38bc3c2a5ad9e85b2edebf7d445
-ms.openlocfilehash: 612a2a800227d3a0bd1b416160058c44ba3e2cd8
-ms.lasthandoff: 02/22/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: 47057e9611b824c17077b9127f8d2f8b192d6eb8
+ms.openlocfilehash: 2ad95e87681907117eb9a3329716a3dd590bd6b8
+ms.contentlocale: fr-fr
+ms.lasthandoff: 05/13/2017
 
 ---
 # <a name="extending-coded-ui-tests-and-action-recordings-to-support-microsoft-excel"></a>Extension des tests codés de l'interface utilisateur t enregistrements des actions pour prendre charge Microsoft Excel
@@ -79,7 +80,7 @@ Vue d'ensemble de l'architecture
   
  "`%CommonProgramFiles(x86)%\Microsoft Shared\VSTT\<version number>\UITestExtensionPackages\*.*`", où le numéro de version peut être 11.0, 12.0, etc. selon votre version de Visual Studio.  
   
- La DLL `ExcelUICommunicationHelper` et les fichiers PDB sont copiés vers `"%ProgramFiles(x86)%\Microsoft Visual Studio <version number>\Common7\IDE\PrivateAssemblies”`.  
+ La DLL `ExcelUICommunicationHelper` et les fichiers PDB sont copiés vers `"%ProgramFiles(x86)%\Microsoft Visual Studio <version number>\Common7\IDE\PrivateAssemblies"`.  
   
  Vous devrez peut-être changer les chemins d'accès de copie, mais aucune installation supplémentaire n'est nécessaire. Sur un ordinateur 64 bits, utilisez l'invite de commandes de Visual Studio Enterprise 32 bits pour exécuter le fichier `CopyDrop.bat`.  
   
