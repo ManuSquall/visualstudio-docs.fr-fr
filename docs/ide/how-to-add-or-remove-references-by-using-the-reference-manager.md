@@ -41,13 +41,14 @@ translation.priority.ht:
 - tr-tr
 - zh-cn
 - zh-tw
-translationtype: Human Translation
+ms.translationtype: Human Translation
 ms.sourcegitcommit: 5db97d19b1b823388a465bba15d057b30ff0b3ce
 ms.openlocfilehash: 1e73cc14de8a94b2e2ce631834e36b6bc30fa7a6
+ms.contentlocale: fr-fr
 ms.lasthandoff: 02/22/2017
 
 ---
-# <a name="how-to-add-or-remove-references-by-using-the-reference-manager"></a>How to: Add or Remove References By Using the Reference Manager
+# <a name="how-to-add-or-remove-references-by-using-the-reference-manager"></a>Guide pratique pour ajouter ou supprimer des références à l’aide du gestionnaire de références
 Vous pouvez utiliser la boîte de dialogue **Gestionnaire de références** pour ajouter et gérer des références aux composants développés par vous, par Microsoft ou par une autre société. Si vous développez une application Windows universelle, votre projet référence automatiquement toutes les DLL correctes du kit SDK Windows. Si vous développez une application .NET, votre projet référence automatiquement mscorlib.dll. Certaines API .NET sont exposées dans des composants que vous devez ajouter manuellement. Les références à des composants COM ou à des composants personnalisés doivent être ajoutées manuellement.  
 
 ## <a name="adding-and-removing-a-reference"></a>Ajout et suppression d'une référence  
