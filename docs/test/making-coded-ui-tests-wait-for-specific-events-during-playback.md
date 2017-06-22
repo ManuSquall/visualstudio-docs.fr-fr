@@ -26,16 +26,17 @@ translation.priority.ht:
 - tr-tr
 - zh-cn
 - zh-tw
-translationtype: Human Translation
-ms.sourcegitcommit: 5658ecf52637a38bc3c2a5ad9e85b2edebf7d445
-ms.openlocfilehash: 060dc127a1cc08dcf28a59feaa774b0094e42d56
-ms.lasthandoff: 02/22/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: 47057e9611b824c17077b9127f8d2f8b192d6eb8
+ms.openlocfilehash: 3be7ff30658fc7e0de4cf04cab71fdae44b1b15e
+ms.contentlocale: fr-fr
+ms.lasthandoff: 05/13/2017
 
 ---
 # <a name="making-coded-ui-tests-wait-for-specific-events-during-playback"></a>Suspension des tests codés de l'interface utilisateur en attendant des événements spécifiques pendant la lecture
-Dans une lecture de test codé de l'interface utilisateur, vous pouvez faire en sorte que le test attende que certains événements se produisent (par exemple qu'une fenêtre s'affiche, que la barre de progression disparaisse, et ainsi de suite). Pour cela, utilisez la méthode UITestControl.WaitForControlXXX() appropriée, comme décrit dans le tableau suivant. Pour obtenir un exemple de test codé de l’interface utilisateur qui attend l’activation d’un contrôle à l’aide de la méthode <xref:Microsoft.VisualStudio.TestTools.UITesting.UITestControl.WaitForControlEnabled%2A>, consultez [Procédures pas à pas : création, édition et gestion d’un test codé de l’interface utilisateur](../test/walkthrough-creating-editing-and-maintaining-a-coded-ui-test.md).  
+Dans une lecture de test codé de l'interface utilisateur, vous pouvez faire en sorte que le test attende que certains événements se produisent (par exemple qu'une fenêtre s'affiche, que la barre de progression disparaisse, et ainsi de suite). Pour cela, utilisez la méthode UITestControl.WaitForControlXXX() appropriée, comme décrit dans le tableau suivant. Pour obtenir un exemple de test codé de l’interface utilisateur qui attend l’activation d’un contrôle à l’aide de la méthode <xref:Microsoft.VisualStudio.TestTools.UITesting.UITestControl.WaitForControlEnabled%2A>, consultez [Procédure pas à pas : création, édition et gestion d’un test codé de l’interface utilisateur](../test/walkthrough-creating-editing-and-maintaining-a-coded-ui-test.md).  
   
- **Requirements**  
+ **Prérequis**  
   
  Visual Studio Enterprise  
   
@@ -109,11 +110,11 @@ UITestControl.WaitForCondition<UITestControl[]>(new UITestControl[] { statusText
   
  Les méthodes retournent true si l'attente a abouti et false si l'attente a échoué.  
   
- Le délai d’attente implicite de l’opération d’attente est spécifié par la propriété <xref:Microsoft.VisualStudio.TestTools.UITesting.PlaybackSettings.WaitForReadyTimeout%2A>. La valeur par défaut de cette propriété s'élève à 60 000 millisecondes (une minute).  
+ Le délai d'attente implicite de l'opération d'attente est spécifié par  la propriété <xref:Microsoft.VisualStudio.TestTools.UITesting.PlaybackSettings.WaitForReadyTimeout%2A>. La valeur par défaut de cette propriété s'élève à 60 000 millisecondes (une minute).  
   
  Les méthodes ont une surcharge pour accepter un délai d'attente explicite en millisecondes. Toutefois, quand l'opération d'attente entraîne une recherche implicite du contrôle ou, quand l'application est occupée, le temps d'attente réel peut dépasser le délai d'attente spécifié.  
   
- Les fonctions précédentes sont puissantes et flexibles et doivent répondre à presque toutes les conditions. Toutefois, au cas où ces méthodes ne répondraient pas à vos besoins et où vous souhaiteriez utiliser <xref:Microsoft.VisualStudio.TestTools.UITesting.Playback.Wait%2A> ou <xref:System.Threading.Thread.Sleep%2A> dans votre code, il est recommandé d’utiliser Playback.Wait() à la place de l’API Thread.Sleep(). Les raisons sont les suivantes :  
+ Les fonctions précédentes sont puissantes et flexibles et doivent répondre à presque toutes les conditions. Toutefois, au cas où ces méthodes ne répondraient pas à vos besoins et que vous devriez coder un <xref:Microsoft.VisualStudio.TestTools.UITesting.Playback.Wait%2A> ou un <xref:System.Threading.Thread.Sleep%2A> dans votre code, nous vous recommandons d'utiliser l'API Playback.Wait() au lieu de l'API Thread.Sleep(). Les raisons sont les suivantes :  
   
  Vous pouvez utiliser la propriété <xref:Microsoft.VisualStudio.TestTools.UITesting.PlaybackSettings.ThinkTimeMultiplier%2A> pour modifier la durée de veille. Par défaut, cette variable a la valeur 1, mais vous pouvez l'augmenter ou la réduire pour modifier le temps d'attente dans tout le code. Par exemple, si vous effectuez des tests sur un réseau lent ou dans d'autres circonstances où les performances sont lentes, vous pouvez affecter à cette variable la valeur 1,5 à un seul endroit (ou même dans le fichier de configuration) pour ajouter 50 % d'attente supplémentaire à tous les emplacements.  
   
@@ -124,7 +125,7 @@ UITestControl.WaitForCondition<UITestControl[]>(new UITestControl[] { statusText
   
  **Aide**  
   
- Pour obtenir des informations supplémentaires, consultez [Test de la livraison continue avec Visual Studio 2012 - Chapitre 5 : Automatisation des tests système](http://go.microsoft.com/fwlink/?LinkID=255196)  
+ Pour obtenir des informations supplémentaires, consultez [Test de la livraison continue avec Visual Studio 2012 - Chapitre 5 : Automatisation des tests système](http://go.microsoft.com/fwlink/?LinkID=255196)  
   
 ## <a name="see-also"></a>Voir aussi  
  [Utiliser UI Automation pour tester votre code](../test/use-ui-automation-to-test-your-code.md)   
