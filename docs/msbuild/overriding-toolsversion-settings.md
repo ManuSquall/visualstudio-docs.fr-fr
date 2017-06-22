@@ -1,51 +1,68 @@
 ---
-title: "Overriding ToolsVersion Settings | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-helpviewer_keywords: 
-  - "MSBuild, overriding ToolsVersion setting"
-  - "MSBuild, building solutions with"
+title: "Substitution des paramètres ToolsVersion | Microsoft Docs"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology:
+- vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+helpviewer_keywords:
+- MSBuild, overriding ToolsVersion setting
+- MSBuild, building solutions with
 ms.assetid: ccd42c07-0fb6-4e8b-9ebb-a6a6db18aa2e
 caps.latest.revision: 24
-author: "kempb"
-ms.author: "kempb"
-manager: "ghogen"
-caps.handback.revision: 24
----
-# Overriding ToolsVersion Settings
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
+author: kempb
+ms.author: kempb
+manager: ghogen
+translation.priority.ht:
+- cs-cz
+- de-de
+- es-es
+- fr-fr
+- it-it
+- ja-jp
+- ko-kr
+- pl-pl
+- pt-br
+- ru-ru
+- tr-tr
+- zh-cn
+- zh-tw
+ms.translationtype: Human Translation
+ms.sourcegitcommit: 47057e9611b824c17077b9127f8d2f8b192d6eb8
+ms.openlocfilehash: ffb0544e0f48f0bd52ac3edb3a820b594d9d2264
+ms.contentlocale: fr-fr
+ms.lasthandoff: 05/13/2017
 
-Vous pouvez modifier l'ensemble d'outils des projets et des solutions de trois façons différentes :  
+---
+# <a name="overriding-toolsversion-settings"></a>Substitution des paramètres ToolsVersion
+Vous pouvez changer l’Ensemble d’outils pour les projets et solutions de trois manières :  
   
-1.  en utilisant le commutateur `/ToolsVersion` \(ou `/tv`, en abrégé\) lorsque vous générez le projet ou la solution depuis la ligne de commande  
+1.  À l’aide du commutateur `/ToolsVersion` (ou `/tv`, en abrégé) quand vous générez le projet ou la solution à partir de la ligne de commande  
   
-2.  en définissant le paramètre `ToolsVersion` dans la tâche MSBuild.  
+2.  En définissant le paramètre `ToolsVersion` de la tâche MSBuild  
   
-3.  en définissant la propriété `$(ProjectToolsVersion)` sur un projet dans une solution.  Cela vous permet de générer un projet dans une solution avec une version de l'ensemble d'outils qui diffère de celle des autres projets.  
+3.  En définissant la propriété `$(ProjectToolsVersion)` sur un projet dans une solution Cela vous permet de générer un projet dans une solution avec une version de l’Ensemble d’outils qui diffère de celle des autres projets.  
   
-## Substituer les paramètres ToolsVersion de Projets et solutions avec les générations de ligne de commande  
- Bien que les projets Visual Studio soient généralement générés avec l'attribut ToolsVersion spécifié dans le fichier projet, vous pouvez utiliser le commutateur `/ToolsVersion` \(ou `/tv`\) sur la ligne de commande pour remplacer cette valeur et générer tous les projets et les dépendances qui existent entre eux avec un autre ensemble d'outils.  Par exemple :  
+## <a name="override-the-toolsversion-settings-of-projects-and-solutions-on-command-line-builds"></a>Substituer les paramètres ToolsVersion de projets et de solutions sur des générations en mode ligne de commande  
+ Bien que les projets Visual Studio soient généralement générés avec la version ToolsVersion spécifiée dans le fichier projet, vous pouvez utiliser le commutateur `/ToolsVersion` (ou `/tv`) sur la ligne de commande pour substituer cette valeur et générer tous les projets et leurs dépendances projet-à-projet avec un autre Ensemble d’outils. Exemple :  
   
 ```  
 msbuild.exe someproj.proj /tv:12.0 /p:Configuration=Debug  
 ```  
   
- Dans cet exemple, tous les projets sont générés à l'aide de ToolsVersion 12.0. \(Toutefois, consultez la section « Ordre de priorité » présentée ultérieurement dans cette rubrique.\)  
+ Dans cet exemple, tous les projets sont générés à l’aide de ToolsVersion 12.0. (Toutefois, consultez la section « Ordre de priorité » plus loin dans cette rubrique.)  
   
- Lorsque vous utilisez le commutateur `/tv` dans la ligne de commande, vous pouvez utiliser la propriété `$(ProjectToolsVersion)` dans les projets individuels pour les générer avec une valeur ToolsVersion différente des autres projets de la solution.  
+ Quand vous utilisez le commutateur `/tv` sur la ligne de commande, vous pouvez éventuellement utiliser la propriété `$(ProjectToolsVersion)` dans des projets pour les générer avec une autre valeur de ToolsVersion que les autres projets dans la solution.  
   
-## Substitution du paramètre ToolsVersion à l'aide du paramètre ToolsVersion de la tâche MSBuild.  
- La tâche MSBuild est le moyen principal d'un projet pour en générer un autre.  Pour permettre à la tâche MSBuild de générer un projet avec un ToolsVersion différent de celui spécifié dans le projet, elle fournit un paramètre de tâche facultatif nommé `ToolsVersion`.  L'exemple suivant montre comment utiliser ce paramètre :  
+## <a name="override-the-toolsversion-settings-using-the-toolsversion-parameter-of-the-msbuild-task"></a>Substituer les paramètres ToolsVersion à l’aide du paramètre ToolsVersion de la tâche MSBuild  
+ La tâche MSBuild est le moyen principal par lequel un projet peut en générer un autre. Pour permettre à la tâche MSBuild de générer un projet avec des paramètres ToolsVersion différents de ceux spécifiés dans le projet, un paramètre de tâche facultatif nommé `ToolsVersion` est disponible. L’exemple suivant illustre comment utiliser ce paramètre :  
   
-1.  Créez un fichier nommé `projectA.proj` et qui contient le code suivant :  
+1.  Créez un fichier nommé `projectA.proj` contenant le code suivant :  
   
-    ```  
+    ```xml  
     <Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003"  
     ToolsVersion="12.0">  
   
@@ -61,9 +78,9 @@ msbuild.exe someproj.proj /tv:12.0 /p:Configuration=Debug
     </Project>  
     ```  
   
-2.  Créez un autre fichier nommé `projectB.proj` et qui contient le code suivant :  
+2.  Créez un autre fichier nommé `projectB.proj` contenant le code suivant :  
   
-    ```  
+    ```xml  
     <Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003"  
     ToolsVersion="12.0">  
   
@@ -75,15 +92,15 @@ msbuild.exe someproj.proj /tv:12.0 /p:Configuration=Debug
     </Project>  
     ```  
   
-3.  Entrez la commande suivante à une invite de commandes :  
+3.  À l’invite de commandes, tapez la commande suivante :  
   
     ```  
     msbuild projectA.proj /t:go /toolsversion:3.5  
     ```  
   
-4.  La sortie suivante s'affiche.  Pour `projectA`, le paramètre `/toolsversion:3.5` sur la ligne de commande remplace le paramètre `ToolsVersion=12.0` dans la balise `Project`.  
+4.  La sortie suivante apparaît. Pour `projectA`, le paramètre `/toolsversion:3.5` de la ligne de commande remplace le paramètre `ToolsVersion=12.0` dans la balise `Project`.  
   
-     `ProjectB` est appelé par une tâche dans `projectA`.  Cette tâche contient `ToolsVersion=2.0`, qui remplace les autres paramètres `ToolsVersion` pour `projectB`.  
+     `ProjectB` est appelé par une tâche dans `projectA`. Cette tâche a `ToolsVersion=2.0`, qui remplace les autres paramètres `ToolsVersion` pour `projectB`.  
   
     ```  
     Output:  
@@ -96,37 +113,37 @@ msbuild.exe someproj.proj /tv:12.0 /p:Configuration=Debug
       MSBuildToolsPath:    C:\Windows\Microsoft.NET\Framework\v2.0.50727  
     ```  
   
-## Ordre de priorité  
- L'ordre de priorité \(du plus élevé au plus faible\) utilisé pour déterminer `ToolsVersion` est :  
+## <a name="order-of-precedence"></a>Ordre de priorité  
+ L’ordre de priorité, du plus élevé au plus bas, utilisé pour déterminer `ToolsVersion` est le suivant :  
   
-1.  L'attribut `ToolsVersion` de la tâche MSBuild utilisée pour générer le projet, si existant.  
+1.  L’attribut `ToolsVersion` sur la tâche MSBuild utilisé pour générer le projet, le cas échéant.  
   
-2.  Commutateur `/toolsversion` \(ou `/tv`\) utilisé dans la commande msbuild.exe, le cas échéant.  
+2.  Le commutateur `/toolsversion` (ou `/tv`) utilisé dans la commande msbuild.exe, le cas échéant.  
   
-3.  Si la variable d'environnement `MSBUILDTREATALLTOOLSVERSIONSASCURRENT` est définie, utilisez le `ToolsVersion` actuel.  
+3.  Si la variable d’environnement `MSBUILDTREATALLTOOLSVERSIONSASCURRENT` est définie, utiliser le paramètre `ToolsVersion` actuel.  
   
-4.  Si la variable d'environnement `MSBUILDTREATHIGHERTOOLSVERSIONASCURRENT` est définie et que le `ToolsVersion` défini dans le fichier projet est supérieur au `ToolsVersion` actuel, utilisez le `ToolsVersion` actuel.  
+4.  Si la variable d’environnement `MSBUILDTREATHIGHERTOOLSVERSIONASCURRENT` est définie et que la valeur de `ToolsVersion` définie dans le fichier projet est supérieure à la valeur actuelle de `ToolsVersion`, utiliser la valeur actuelle de `ToolsVersion`.  
   
-5.  Si la variable d'environnement `MSBUILDLEGACYDEFAULTTOOLSVERSION` est définie, ou si `ToolsVersion` n'est pas défini, les étapes suivantes sont utilisées :  
+5.  Si la variable d’environnement `MSBUILDLEGACYDEFAULTTOOLSVERSION` est définie, ou si `ToolsVersion` n’est pas défini, l’ordre de priorité est le suivant :  
   
-    1.  Attribut `ToolsVersion` de l'élément [Project](../msbuild/project-element-msbuild.md) du fichier de projet.  Si cet attribut n'existe pas, il est considéré comme la version actuelle.  
+    1.  L’attribut `ToolsVersion` de l’élément [Project](../msbuild/project-element-msbuild.md) du fichier projet. Si cet attribut n’existe pas, il est supposé être égal à la version actuelle.  
   
-    2.  La valeur par défaut dans le fichier MSBuild.exe.config.  
+    2.  La version des outils par défaut dans le fichier MSBuild.exe.config.  
   
-    3.  La version des outils par défaut dans le Registre.  Pour plus d'informations, consultez [Standard and Custom Toolset Configurations](../msbuild/standard-and-custom-toolset-configurations.md).  
+    3.  La version des outils par défaut dans le Registre. Pour plus d’informations, consultez [Configurations standard et personnalisée de l’ensemble d’outils](../msbuild/standard-and-custom-toolset-configurations.md).  
   
-6.  Si la variable d'environnement `MSBUILDLEGACYDEFAULTTOOLSVERSION` n'est pas définie, les étapes suivantes sont utilisées :  
+6.  Si la variable d’environnement `MSBUILDLEGACYDEFAULTTOOLSVERSION` n’est pas définie, l’ordre de priorité est le suivant :  
   
-    1.  Si la variable d'environnement `MSBUILDDEFAULTTOOLSVERSION` a la valeur d'un `ToolsVersion` existant, utilisez\-le.  
+    1.  Si la variable d’environnement `MSBUILDDEFAULTTOOLSVERSION` est définie sur une `ToolsVersion` qui existe, elle est utilisée.  
   
-    2.  Si `DefaultOverrideToolsVersion` est défini dans MSBuild.exe.config, utilisez\-le.  
+    2.  Si `DefaultOverrideToolsVersion` est défini dans MSBuild.exe.config, il est utilisé.  
   
-    3.  Si `DefaultOverrideToolsVersion` est défini dans le registre, utilisez\-le.  
+    3.  Si `DefaultOverrideToolsVersion` est défini dans le Registre, il est utilisé.  
   
-    4.  Autrement, utilisez `ToolsVersion` en cours.  
+    4.  Sinon, utilisez la valeur actuelle de `ToolsVersion`.  
   
-## Voir aussi  
- [Multitargeting](../msbuild/msbuild-multitargeting-overview.md)   
- [MSBuild Concepts](../msbuild/msbuild-concepts.md)   
- [Toolset \(ToolsVersion\)](../msbuild/msbuild-toolset-toolsversion.md)   
- [Standard and Custom Toolset Configurations](../msbuild/standard-and-custom-toolset-configurations.md)
+## <a name="see-also"></a>Voir aussi  
+ [Multiciblage](../msbuild/msbuild-multitargeting-overview.md)   
+ [Concepts MSBuild](../msbuild/msbuild-concepts.md)   
+ [Ensemble d’outils (ToolsVersion)](../msbuild/msbuild-toolset-toolsversion.md)   
+ [Configurations standard et personnalisée de l’ensemble d’outils](../msbuild/standard-and-custom-toolset-configurations.md)

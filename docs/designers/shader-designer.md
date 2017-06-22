@@ -31,10 +31,11 @@ translation.priority.mt:
 - pl-pl
 - pt-br
 - tr-tr
-translationtype: Human Translation
-ms.sourcegitcommit: 5db97d19b1b823388a465bba15d057b30ff0b3ce
-ms.openlocfilehash: ff6e473c6e5b2d7a24a4e906d2f592742e3c2d14
-ms.lasthandoff: 02/22/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: 47057e9611b824c17077b9127f8d2f8b192d6eb8
+ms.openlocfilehash: af7472d5152babe2088ae3cc49caaf718a539878
+ms.contentlocale: fr-fr
+ms.lasthandoff: 05/13/2017
 
 ---
 # <a name="shader-designer"></a>Concepteur Shader
@@ -144,7 +145,7 @@ Ce document décrit l’utilisation du concepteur de nuanceur [!INCLUDE[vsprvs](
   
 |Paramètre|Propriétés|  
 |---------------|----------------|  
-|**Texture 1** – **Texture 8**|**Accès** :                             **Public** pour que la propriété puisse être définie dans l’éditeur de modèle. **Privé** dans le cas contraire.<br /><br /> **Nom de fichier** : chemin d’accès complet au fichier de texture associé à ce registre de texture.|  
+|**Texture 1** - **Texture 8**|**Accès** :                             **Public** pour que la propriété puisse être définie dans l’éditeur de modèle. **Privé** dans le cas contraire.<br /><br /> **Nom de fichier** : chemin d’accès complet au fichier de texture associé à ce registre de texture.|  
 |**Matériau ambiant**|**Accès** :                             **Public** pour que la propriété puisse être définie dans l’éditeur de modèle. **Privé** dans le cas contraire.<br /><br /> **Valeur** : couleur diffuse du pixel actuel qui est due à l’éclairage indirect, ou ambiant.|  
 |**Matériau diffus**|**Accès** : **Public** pour que la propriété puisse être définie dans l’éditeur de modèle. **Privé** dans le cas contraire.<br /><br /> **Valeur** : couleur qui décrit la manière dont le pixel actuel diffuse la lumière directe.|  
 |**Matériau émissif**|**Accès** :                              **Public** pour que la propriété puisse être définie dans l’éditeur de modèle. **Privé** dans le cas contraire.<br /><br /> **Valeur** : contribution de couleur du pixel actuel, basée sur l’auto-éclairage.|  

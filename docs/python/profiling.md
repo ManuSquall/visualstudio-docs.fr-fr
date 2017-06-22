@@ -28,10 +28,11 @@ translation.priority.ht:
 - tr-tr
 - zh-cn
 - zh-tw
-translationtype: Human Translation
-ms.sourcegitcommit: 7d726441c2d6953bd7b50451bec7fff05d5d71b0
-ms.openlocfilehash: 2511f1076450848dfc75584edc97950fd4279c7b
-ms.lasthandoff: 03/10/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: 47057e9611b824c17077b9127f8d2f8b192d6eb8
+ms.openlocfilehash: 8d52ad780eb8aa29132626644d581d3a5b6e66b4
+ms.contentlocale: fr-fr
+ms.lasthandoff: 05/13/2017
 
 ---
 
@@ -49,7 +50,7 @@ Lorsque vous sélectionnez **OK**, le profileur s’exécute et ouvre un rapport
 
 Pour une vue d’ensemble, consultez ce qui suit.
 
-Pour une démonstration de la procédure pas à pas, visionnez la vidéo [Profiling with Python Tools for Visual Studio](http://www.youtube.com/watch?v=K-KqkFkp55k) (Profilage avec Python Tools pour Visual Studio ;&8; min52 s).
+Pour une démonstration de la procédure pas à pas, visionnez la vidéo [Profiling with Python Tools for Visual Studio](http://www.youtube.com/watch?v=K-KqkFkp55k) (Profilage avec Python Tools pour Visual Studio ; 8 min52 s).
 
 > [!VIDEO https://www.youtube.com/embed/K-KqkFkp55k]
 

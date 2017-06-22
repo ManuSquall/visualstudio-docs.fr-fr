@@ -1,7 +1,7 @@
 ---
 title: "Visite guidée des fonctionnalités de profilage | Microsoft Docs"
-ms.custom: 
-ms.date: 02/03/2016
+ms.custom: H1HackMay2017
+ms.date: 05/18/2017
 ms.reviewer: 
 ms.suite: 
 ms.technology:
@@ -30,13 +30,14 @@ translation.priority.mt:
 - pl-pl
 - pt-br
 - tr-tr
-translationtype: Human Translation
-ms.sourcegitcommit: 2beee9df6c4897d1fa7d55502a7ed277a1eb6046
-ms.openlocfilehash: 4a64d7385009b6d502fc20acfbead4b49323fa4f
-ms.lasthandoff: 03/21/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: 90b2481b0ec4f9387fe3a2c0b733a103e8c03845
+ms.openlocfilehash: a219a09f96b34a434a3bf1103e560104c294eb96
+ms.contentlocale: fr-fr
+ms.lasthandoff: 05/23/2017
 
 ---
-# <a name="profiling-feature-tour"></a>Visite guidée des fonctionnalités de profilage
+# <a name="feature-tour-of-profiling-in-visual-studio"></a>Visite guidée des fonctionnalités de profilage dans Visual Studio
 
 Visual Studio propose des outils de profilage pour vous aider à diagnostiquer différents types de problèmes de performances en fonction de votre type d’application.
 
@@ -169,14 +170,14 @@ Voici un tableau qui recense les différents outils proposés par Visual Studio,
 |Outil d’analyse des performances|Bureau Windows|Universel Windows/Store|ASP.NET/ASP.NET Core|  
 |----------------------|---------------------|------------------------------|-------------|  
 |[Utilisation de la mémoire](../profiling/memory-usage.md)|oui|oui|oui|  
-|[Utilisation de l’UC](../profiling/cpu-usage.md)|oui|oui|oui|  
+|[Utilisation de l'UC](../profiling/cpu-usage.md)|oui|oui|oui|  
 |[Utilisation du GPU](../debugger/gpu-usage.md)|oui|oui|non|  
-|[Chronologie de l’application](../profiling/application-timeline.md)|oui|oui|non|  
-|[PerfTips](../profiling/perftips.md)|oui|oui pour XAML, non pour HTML|oui|  
+|[Chronologie de l'application](../profiling/application-timeline.md)|oui|oui|non|  
+|[Conseils sur les performances](../profiling/perftips.md)|oui|oui pour XAML, non pour HTML|oui|  
 |[Explorateur de performances](../profiling/performance-explorer.md)|oui|non|oui (non pour ASP.NET Core)|  
 |[IntelliTrace](../debugger/intellitrace.md)|.NET Enterprise uniquement|.NET Enterprise uniquement|.NET Enterprise uniquement|
 |[Utilisation du réseau](../profiling/network-usage.md)|non|oui|non| 
-|[Réactivité de l’interface utilisateur HTML](../profiling/html-ui-responsiveness.md)|non|oui pour HTML, non pour XAML|non|  
+|[HTML UI responsiveness](../profiling/html-ui-responsiveness.md)|non|oui pour HTML, non pour XAML|non|  
 |[Mémoire JavaScript](../profiling/javascript-memory.md)|non|oui pour HTML, non pour XAML|non|  
 
 ## <a name="see-also"></a>Voir aussi  

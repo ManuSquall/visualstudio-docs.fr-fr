@@ -29,10 +29,11 @@ translation.priority.mt:
 - pl-pl
 - pt-br
 - tr-tr
-translationtype: Human Translation
-ms.sourcegitcommit: 5ab78b6b8eaa8156ed2c8a807b1d8a80e75afa84
-ms.openlocfilehash: bcfa2bb3a1841f2d960580506b638edcf650ca9e
-ms.lasthandoff: 04/04/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: 47057e9611b824c17077b9127f8d2f8b192d6eb8
+ms.openlocfilehash: b6b865f51ca12312ad439d059097c328576dfa4e
+ms.contentlocale: fr-fr
+ms.lasthandoff: 05/13/2017
 
 ---
 # <a name="run-unit-tests-with-test-explorer"></a>Exécuter des tests unitaires avec l'Explorateur de tests
@@ -41,7 +42,7 @@ Utilisez l'Explorateur de tests pour exécuter des tests unitaires à partir de 
 ##  <a name="BKMK_Contents"></a> Sommaire  
  [Frameworks de tests unitaires et projets de test](#BKMK_Unit_test_frameworks_and_test_projects)  
   
- [Exécuter des tests dans l’Explorateur de tests](#BKMK_Run_tests_in_Test_Explorer)  
+ [Exécuter des tests dans l’explorateur de tests](#BKMK_Run_tests_in_Test_Explorer)  
   
  [Afficher les résultats des tests](#BKMK_View_test_results)  
   
@@ -158,12 +159,12 @@ Utilisez l'Explorateur de tests pour exécuter des tests unitaires à partir de 
   
  **Caractéristiques dans le framework de tests unitaires Microsoft pour le code managé**  
   
- Dans le framework de tests unitaires Microsoft pour les applications managées, vous définissez une paire nom/valeur de caractéristique dans un attribut <xref:Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute>. Le framework de tests contient également les caractéristiques prédéfinies suivantes :  
+ Dans le framework de tests unitaires Microsoft pour les applications managées, vous définissez une paire nom/valeur de caractéristique dans un attribut <xref:Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute>. Le framework de tests contient également les caractéristiques prédéfinies suivantes :   
   
 |Caractéristique|Description|  
 |-----------|-----------------|  
-|<xref:Microsoft.VisualStudio.TestTools.UnitTesting.OwnerAttribute>|La catégorie Owner est définie par le framework de tests unitaires et vous demande de fournir une valeur de chaîne du propriétaire.|  
-|<xref:Microsoft.VisualStudio.TestTools.UnitTesting.PriorityAttribute>|La catégorie Priority est définie par le framework de tests unitaires et vous demande de fournir une valeur entière de la priorité.|  
+|<xref:Microsoft.VisualStudio.TestTools.UnitTesting.OwnerAttribute>|La catégorie Owner est définie par le framework de tests unitaires et nécessite que vous fournissiez une valeur de chaîne du propriétaire.|  
+|<xref:Microsoft.VisualStudio.TestTools.UnitTesting.PriorityAttribute>|La catégorie Priority est définie par le framework de tests unitaires et nécessite que vous fournissiez une valeur entière de la priorité.|  
 |<xref:Microsoft.VisualStudio.TestTools.UnitTesting.TestCategoryAttribute>|L'attribut TestCategory vous permet de fournir une catégorie sans valeur. Une catégorie définie par l'attribut TestCategory peut également être la catégorie d'un attribut TestProperty.|  
 |<xref:Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute>|L'attribut TestProperty vous permet de définir la paire catégorie/valeur de caractéristique.|  
   
