@@ -26,10 +26,11 @@ translation.priority.ht:
 - tr-tr
 - zh-cn
 - zh-tw
-translationtype: Human Translation
-ms.sourcegitcommit: 5ab78b6b8eaa8156ed2c8a807b1d8a80e75afa84
-ms.openlocfilehash: 5778e6b7c4a93c2d03ff00fcaaaf5a25807b0a00
-ms.lasthandoff: 04/04/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: 90b2481b0ec4f9387fe3a2c0b733a103e8c03845
+ms.openlocfilehash: 01dc224a571144744028e98153df1c525c461156
+ms.contentlocale: fr-fr
+ms.lasthandoff: 05/23/2017
 
 ---
 # <a name="customizing-code-coverage-analysis"></a>Personnalisation de l'analyse de couverture du code
@@ -64,7 +65,7 @@ Par défaut, l’outil de couverture de Visual Studio Code 2012 analyse tous le
   
 3.  Dans le menu **Test**, choisissez **Paramètres de test**, **Sélectionner le fichier de paramètres des tests** et sélectionnez le fichier.  
   
-4.  Dorénavant, quand vous exécuterez **Analyser la couverture du code**, ce fichier `.runsettings` vérifiera son comportement. N'oubliez pas que vous devez exécuter à nouveau la couverture du code : les résultats de couverture et la coloration de code précédents ne sont pas automatiquement masqué lorsque vous exécutez des tests ou que vous mettez à jour votre code.  
+4.  Dorénavant, quand vous exécuterez **Analyser la couverture du code**, ce fichier `.runsettings` vérifiera son comportement. N’oubliez pas que vous devez exécuter à nouveau la couverture du code : les résultats de couverture et la coloration de code précédents ne sont pas automatiquement masqués quand vous exécutez des tests ou que vous mettez à jour votre code.  
   
 5.  Pour activer ou désactiver les paramètres personnalisés, désélectionnez ou sélectionnez le fichier dans le menu **Test**, **Paramètres de test**.  
   
@@ -154,17 +155,17 @@ Par défaut, l’outil de couverture de Visual Studio Code 2012 analyse tous le
 ### <a name="other-ways-to-include-or-exclude-elements"></a>Autres façons d'inclure ou d'exclure des éléments  
  Consultez la [section d’exemples à la fin de cette rubrique](#sample) pour obtenir des exemples.  
   
--   `ModulePath` – Assemblys spécifiés par le chemin d'accès de fichier d'assembly.  
+-   `ModulePath` : assemblys spécifiés par le chemin de fichier d’assembly.  
   
--   `CompanyName` – Correspond aux assemblys par l'attribut Société.  
+-   `CompanyName` : correspond aux assemblys par l’attribut Société.  
   
--   `PublicKeyToken` – Correspond aux assemblys signés par le jeton de clé publique. Par exemple, pour correspondre à tous les composants et extensions Visual Studio, utilisez `<PublicKeyToken>^B03F5F7F11D50A3A$</PublicKeyToken>`.  
+-   `PublicKeyToken` : correspond aux assemblys signés par le jeton de clé publique. Par exemple, pour correspondre à tous les composants et extensions Visual Studio, utilisez `<PublicKeyToken>^B03F5F7F11D50A3A$</PublicKeyToken>`.  
   
--   `Source` – Correspond à des éléments par le chemin d'accès du fichier source dans lequel ils sont définis.  
+-   `Source` : correspond à des éléments par le chemin du fichier source dans lequel ils sont définis.  
   
--   `Attribute` – Correspond à des éléments auxquels un attribut spécial est attaché. Spécifiez le nom complet de l'attribut, en insérant « Attribute » à la fin du nom.  
+-   `Attribute` : correspond à des éléments auxquels un attribut spécial est attaché. Spécifiez le nom complet de l'attribut, en insérant « Attribute » à la fin du nom.  
   
--   `Function` – Correspond à des procédures, des fonctions ou des méthodes par le nom qualifié complet.  
+-   `Function` : correspond à des procédures, des fonctions ou des méthodes par le nom qualifié complet.  
   
  **Correspondance avec un nom de fonction**  
   
@@ -284,7 +285,7 @@ Included items must then not match any entries in the exclude list to remain inc
             <!-- Match attributes on any code element: -->  
             <Attributes>  
               <Exclude>  
-                <!—Don't forget "Attribute" at the end of the name -->  
+                <!-- Don't forget "Attribute" at the end of the name -->  
                 <Attribute>^System\.Diagnostics\.DebuggerHiddenAttribute$</Attribute>  
                 <Attribute>^System\.Diagnostics\.DebuggerNonUserCodeAttribute$</Attribute>  
                 <Attribute>^System\.Runtime\.CompilerServices.CompilerGeneratedAttribute$</Attribute>  

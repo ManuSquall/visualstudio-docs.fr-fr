@@ -27,16 +27,17 @@ translation.priority.mt:
 - pl-pl
 - pt-br
 - tr-tr
-translationtype: Human Translation
-ms.sourcegitcommit: 5658ecf52637a38bc3c2a5ad9e85b2edebf7d445
-ms.openlocfilehash: 04c981d458912aaf3802e727369893759faab3a5
-ms.lasthandoff: 02/22/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: 47057e9611b824c17077b9127f8d2f8b192d6eb8
+ms.openlocfilehash: 1600207e0c504f4b4dcbf620e92bcc06e14ec035
+ms.contentlocale: fr-fr
+ms.lasthandoff: 05/13/2017
 
 ---
 # <a name="configure-unit-tests-by-using-a-runsettings-file"></a>Configurer des tests unitaires à l'aide d'un fichier .runsettings
-Les tests unitaires dans Visual Studio peuvent être configurés à l’aide d’un fichier *.runsettings. (Le nom du fichier n'a pas d'importance, à condition que l'extension soit « .runsettings ».) Par exemple, vous pouvez modifier le .NET Framework sur lequel les tests sont exécutés, le répertoire dans lequel les résultats des tests sont remis et les données recueillies pendant une série de tests.  
+Les tests unitaires dans Visual Studio peuvent être configurés à l’aide d’un fichier *.runsettings. (Le nom du fichier n’a pas d’importance, à condition que l’extension soit « .runsettings ».) Par exemple, vous pouvez modifier le .NET Framework sur lequel les tests sont exécutés, le répertoire dans lequel les résultats des tests sont remis et les données collectées pendant une série de tests.  
   
- Si vous ne voulez pas appliquer de configuration spéciale, vous n’avez pas besoin de fichier *.runsettings. L’utilisation la plus fréquente consiste à personnaliser la [couverture du code](../test/customizing-code-coverage-analysis.md).  
+ Si vous ne voulez pas appliquer de configuration spéciale, vous n’avez pas besoin d’un fichier *.runsettings. L’utilisation la plus fréquente consiste à personnaliser la [couverture du code](../test/customizing-code-coverage-analysis.md).  
   
 > [!NOTE]
 >  **.runsettings et .testsettings**  
@@ -142,11 +143,11 @@ Les tests unitaires dans Visual Studio peuvent être configurés à l’aide d�
 |Nœud|Par défaut|Valeurs|  
 |----------|-------------|------------|  
 |`ResultsDirectory`||Répertoire où les résultats de test seront placés.|  
-|`TargetFrameworkVersion`|Framework40|Framework35, Framework40, Framework45<br /><br /> Spécifie la version de l’infrastructure de tests unitaires qui est utilisée pour découvrir et exécuter les tests. Elle peut être différente de la version de la plateforme .NET. que vous spécifiez dans les propriétés de génération du projet de test unitaire.|  
+|`TargetFrameworkVersion`|Framework40|Framework35, Framework40, Framework45<br /><br /> Spécifie la version du framework de tests unitaires qui est utilisée pour découvrir et exécuter les tests. Elle peut être différente de la version de la plateforme .NET. que vous spécifiez dans les propriétés de génération du projet de test unitaire.|  
 |`TargetPlatform`|x86|x86, x64|  
 |`TreatTestAdapterErrorsAsWarnings`|false|false, true|  
 |`TestAdaptersPaths`||Un ou plusieurs chemins au répertoire où se trouvent les TestAdapters|  
-|`MaxCpuCount`|1|Cela permet de contrôler le degré d’exécution de tests parallèles pendant les tests unitaires, en utilisant les cœurs disponibles sur la machine.  Le moteur d’exécution de test démarre en tant que processus distinct sur chaque cœur disponible et donne à chaque cœur un conteneur de tests à exécuter, tel qu’un assembly, une DLL ou l’artefact correspondant.  Le conteneur de test est l’unité de planification.  Dans chaque conteneur, les tests sont exécutés en fonction de l’infrastructure de tests configurée.  S’il y a beaucoup de conteneurs, chaque processus reçoit le conteneur disponible suivant dès qu’il a terminé l’exécution des tests d’un conteneur.<br /><br /> Valeur possible pour MaxCpuCount :<br /><br /> n, où 1 < = n < = nombre de cœurs : jusqu’à n processus peuvent être lancés.<br /><br /> n, où n = toute autre valeur : le nombre de processus lancés dépend du nombre de cœurs disponibles sur la machine.|  
+|`MaxCpuCount`|1|Cela permet de contrôler le degré d’exécution de tests parallèles pendant les tests unitaires, en utilisant les cœurs disponibles sur la machine.  Le moteur d’exécution de test démarre en tant que processus distinct sur chaque cœur disponible et donne à chaque cœur un conteneur de tests à exécuter, tel qu’un assembly, une DLL ou l’artefact correspondant.  Le conteneur de test est l’unité de planification.  Dans chaque conteneur, les tests sont exécutés en fonction du framework de test configuré.  S’il y a beaucoup de conteneurs, chaque processus reçoit le conteneur disponible suivant dès qu’il a terminé l’exécution des tests d’un conteneur.<br /><br /> Valeur possible pour MaxCpuCount :<br /><br /> n, où 1 < = n < = nombre de cœurs : jusqu’à n processus peuvent être lancés.<br /><br /> n, où n = toute autre valeur : le nombre de processus lancés dépend du nombre de cœurs disponibles sur la machine.|  
   
 ### <a name="diagnostic-data-adapters-data-collectors"></a>Diagnostic des adaptateurs de données (collecteurs de données)  
  L’élément `DataCollectors` spécifie les paramètres des adaptateurs de données de diagnostic. Les adaptateurs de données de diagnostic sont utilisés pour rassembler des informations supplémentaires sur l’environnement et l’application testée. Chaque adaptateur a des paramètres par défaut. Il vous suffit de fournir des paramètres si vous ne souhaitez pas utiliser les valeurs par défaut.  

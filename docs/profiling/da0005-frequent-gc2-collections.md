@@ -1,47 +1,64 @@
 ---
-title: "DA0005&#160;: Collections GC2 fr&#233;quentes | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-debug"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "vs.performance.DA0005"
-  - "vs.performance.rules.DAManyGC2Collections"
-  - "vs.performance.5"
-  - "vs.performance.rules.DA0005"
+title: "DA0005 : Collections GC2 fréquentes | Microsoft Docs"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology:
+- vs-ide-debug
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords:
+- vs.performance.DA0005
+- vs.performance.rules.DAManyGC2Collections
+- vs.performance.5
+- vs.performance.rules.DA0005
 ms.assetid: 8d3f267c-8a74-4cf4-91a5-0b06a76dc2bd
 caps.latest.revision: 11
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 11
----
-# DA0005&#160;: Collections GC2 fr&#233;quentes
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+translation.priority.ht:
+- cs-cz
+- de-de
+- es-es
+- fr-fr
+- it-it
+- ja-jp
+- ko-kr
+- pl-pl
+- pt-br
+- ru-ru
+- tr-tr
+- zh-cn
+- zh-tw
+ms.translationtype: Human Translation
+ms.sourcegitcommit: 47057e9611b824c17077b9127f8d2f8b192d6eb8
+ms.openlocfilehash: 40c7e8f21c6e9c8ef212860a639a7e8e16381dc7
+ms.contentlocale: fr-fr
+ms.lasthandoff: 05/13/2017
 
+---
+# <a name="da0005-frequent-gc2-collections"></a>DA0005 : Collections GC2 fréquentes
 |||  
 |-|-|  
-|Id de la règle|DA0005|  
+|RuleId|DA0005|  
 |Catégorie|Utilisation du .NET Framework|  
 |Méthode de profilage|Mémoire .NET|  
-|Message|De nombreux objets sont collectés dans un garbage collection gen2.|  
-|Type de message|Avertissement|  
+|Message|Bon nombre de vos objets sont collectés dans un garbage collection de génération 2.|  
+|Type de message|Warning|  
   
-## Cause  
- Un nombre élevé d'objets mémoire .NET est libéré dans le garbage collection de 2e génération.  
+## <a name="cause"></a>Cause  
+ Un nombre élevé d’objets mémoire .NET est actuellement récupéré dans le cadre d’un garbage collection de génération 2.  
   
-## Description de la règle  
- Le CLR Microsoft .NET offre un mécanisme de gestion automatique de la mémoire qui utilise un garbage collector pour libérer la mémoire des objets que l'application n'utilise plus.  Le garbage collector est orienté génération, basé sur l'hypothèse que de nombreuses allocations ont une courte durée de vie.  Les variables locales, par exemple, doivent avoir une courte durée de vie.  Les objets nouvellement créés commencent à la génération 0 \(gen 0\),puis progressent jusqu'à la génération 1 lorsqu'ils survivent à une exécution de garbage collection et effectuent enfin une transition vers la génération 2 si l'application les utilise encore.  
+## <a name="rule-description"></a>Description de la règle  
+ Le common language runtime (CLR) Microsoft .NET fournit un mécanisme de gestion automatique de la mémoire qui utilise un récupérateur de mémoire pour récupérer la mémoire des objets que l’application n’utilise plus. Le récupérateur de mémoire est orienté génération et repose sur l’hypothèse que de nombreuses allocations sont de courte durée. Les variables locales, par exemple, doivent avoir une durée de vie courte. Les objets récemment créés commencent à la génération 0 (gen 0), puis progressent jusqu’à la génération 1 lorsqu’ils survivent à l’exécution d’un garbage collection. Enfin, ils passent à la génération 2 si l’application les utilise toujours.  
   
- Les objets de la génération 0 sont collectés fréquemment et généralement de façon très efficace.  Les objets de la génération 1 sont collectés moins fréquemment et de façon moins efficace.  Enfin, les objets à longue durée de vie dans la génération 2 doivent être collectés moins fréquemment encore.  La collection de génération 2, qui est une exécution de garbage collection complet, est également l'opération la plus coûteuse.  
+ Les objets de la génération 0 sont collectés fréquemment et généralement de manière très efficace. Les objets de la génération 1 sont collectés moins fréquemment et moins efficacement. Enfin, les objets à longue durée de vie de la génération 2 doivent être collectés encore moins fréquemment. Le garbage collection de génération 2, qui correspond à un garbage collection complet, constitue l’option la plus coûteuse.  
   
- Cette règle se déclenche lorsque proportionnellement trop de garbage collections de génération 2 se sont produits.  Si trop d'objets relativement éphémères subsistent de la collection de génération 1 mais sont ensuite capables d'être collectés dans une collection complète de génération 2, le coût de gestion de la mémoire peut facilement devenir excessif.  Pour plus d'informations, consultez la publication [Crise de la cinquantaine \(page éventuellement en anglais\)](http://go.microsoft.com/fwlink/?LinkId=177835) dans Rico Mariani's Performance Tidbits sur le site Web MSDN.  
+ Cette règle est déclenchée lorsque, proportionnellement, un trop grand nombre de garbage collections de génération 2 se sont produits. Si trop d’objets dont la durée de vie est relativement courte survivent au garbage collection de génération 1, mais qu’ils peuvent ensuite être collectés lors d’un garbage collection de génération 2, le coût de la gestion de la mémoire peut aisément devenir excessif. Pour plus d’informations, consultez [Mid-life crisis](http://go.microsoft.com/fwlink/?LinkId=177835) sur le blog Performance Tidbits de Rico Mariani sur le site MSDN.  
   
-## Comment examiner un avertissement  
- Examinez les rapports [Vues de données de mémoire .NET](../profiling/dotnet-memory-data-views.md) pour comprendre le modèle d'allocation de mémoire de l'application.  Utilisez l'[Mode Durée de vie de l'objet](../profiling/object-lifetime-view.md) pour déterminer quels sont les objets de données du programme qui survivent dans la génération 2 et qui sont ensuite récupérés.  Utilisez l'[Mode Allocations](../profiling/dotnet-memory-allocations-view.md) pour déterminer le chemin d'exécution ayant entraîné ces allocations.  
+## <a name="how-to-investigate-a-warning"></a>Comment rechercher la cause d’un avertissement  
+ Consultez les rapports [Vues de données de mémoire .NET](../profiling/dotnet-memory-data-views.md) pour comprendre le modèle d’allocation de mémoire de l’application. Consultez la [vue Durée de vie des objets](../profiling/object-lifetime-view.md) pour déterminer quels objets de données du programme passent d’une génération 2 à une autre, puis sont récupérés. Consultez la [vue Allocations](../profiling/dotnet-memory-allocations-view.md) pour connaître le chemin d’exécution qui a entraîné ces allocations.  
   
- Pour plus d'informations sur l'amélioration des performances d'une opération garbage collection, consultez [Garbage Collector Basics and Performance Hints](http://go.microsoft.com/fwlink/?LinkId=148226) \(page éventuellement en anglais\) sur le site Web Microsoft.  Pour plus d'informations sur la surcharge d'une opération garbage collection automatique, consultez [Le tas des objets volumineux dévoilé](http://go.microsoft.com/fwlink/?LinkId=177836).
+ Pour plus d’informations sur l’amélioration des performances du garbage collection, consultez [Garbage Collector Basics and Performance Hints](http://go.microsoft.com/fwlink/?LinkId=148226) sur le site de Microsoft. Pour plus d’informations sur la surcharge du garbage collection automatique, consultez [Le tas des objets volumineux dévoilé](http://go.microsoft.com/fwlink/?LinkId=177836).

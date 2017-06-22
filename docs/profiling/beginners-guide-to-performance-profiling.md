@@ -1,7 +1,7 @@
 ---
 title: "Guide du débutant en profilage des performances dans Visual Studio | Microsoft Docs"
 ms.custom: H1Hack27Feb2017
-ms.date: 11/04/2016
+ms.date: 02/27/2017
 ms.reviewer: 
 ms.suite: 
 ms.technology:
@@ -34,10 +34,11 @@ translation.priority.ht:
 - tr-tr
 - zh-cn
 - zh-tw
-translationtype: Human Translation
-ms.sourcegitcommit: a42f5a30375192c89c9984e40ba0104da98d7253
-ms.openlocfilehash: fe329cd5395db3afae1c3f3e98bb6e480323e21f
-ms.lasthandoff: 03/07/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: 90b2481b0ec4f9387fe3a2c0b733a103e8c03845
+ms.openlocfilehash: 36770fe6fad52e33144f382446d7e851734f87c5
+ms.contentlocale: fr-fr
+ms.lasthandoff: 05/23/2017
 
 ---
 # <a name="beginners-guide-to-performance-profiling"></a>Guide du débutant en profilage des performances
@@ -135,8 +136,8 @@ Nous vous recommandons de commencer à analyser vos données en examinant la lis
 |||
 |-|-|
 |![Étape 1](../profiling/media/ProcGuid_1.png "ProcGuid_1")|Le nœud de premier niveau des arborescences d'appels de l'outil Utilisation de l'UC est un pseudo-nœud|  
-|![Étape 2](../profiling/media/ProcGuid_2.png "ProcGuid_2")|Dans la plupart des applications, quand l'option [Afficher le code externe](#BKMK_External_Code) est désactivée, le nœud de deuxième niveau est un nœud **[Code externe]** contenant le code système et de l'infrastructure qui démarre et arrête l'application, dessine l'interface utilisateur, contrôle la planification des threads et fournit d'autres services de niveau inférieur à l'application.|  
-|![Étape 3](../profiling/media/ProcGuid_3.png "ProcGuid_3")|Les enfants du nœud de deuxième niveau sont les méthodes en code utilisateur et des routines asynchrones appelées ou créées par le code système et d'infrastructure de deuxième niveau.|
+|![Étape 2](../profiling/media/ProcGuid_2.png "ProcGuid_2")|Dans la plupart des applications, quand l'option [Afficher le code externe](#BKMK_External_Code) est désactivée, le nœud de deuxième niveau est un nœud **[Code externe]** contenant le code système et framework qui démarre et arrête l'application, dessine l'interface utilisateur, contrôle la planification des threads et fournit d'autres services de niveau inférieur à l'application.|  
+|![Étape 3](../profiling/media/ProcGuid_3.png "ProcGuid_3")|Les enfants du nœud de deuxième niveau sont les méthodes en code utilisateur et des routines asynchrones appelées ou créées par le code système et framework de deuxième niveau.|
 |![Étape 4](../profiling/media/ProcGuid_4.png "ProcGuid_4")|Les nœuds enfants d'une méthode contiennent des données seulement pour les appels de la méthode parente. Lorsque l'option **Afficher le Code externe** est désactivée, les méthodes d'application peuvent également contenir un nœud **[Code externe]** .|
 
 Voici davantage d’informations sur les valeurs de colonne :
@@ -149,13 +150,13 @@ Voici davantage d’informations sur les valeurs de colonne :
 
 ## <a name="BKMK_External_Code"></a>Afficher le code externe
 
-Le code externe correspond aux fonctions des composants système et infrastructure exécutés par le code que vous écrivez. Le code externe inclut les fonctions qui démarrent et arrêtent l'application, dessinent l'interface utilisateur, contrôlent les threads et fournissent d'autres services de bas niveau à l'application. Dans la plupart des cas, vous ne serez pas intéressé par le code externe. L’outil Utilisation de l’UC regroupe donc les fonctions externes d’une méthode utilisateur au sein d’un même nœud **[Code externe]**.
+Le code externe correspond aux fonctions des composants système et framework exécutés par le code que vous écrivez. Le code externe inclut les fonctions qui démarrent et arrêtent l'application, dessinent l'interface utilisateur, contrôlent les threads et fournissent d'autres services de bas niveau à l'application. Dans la plupart des cas, vous n’êtes pas intéressé par le code externe. L’outil Utilisation de l’UC regroupe donc les fonctions externes d’une méthode utilisateur au sein d’un même nœud **[Code externe]**.
   
 Si vous voulez afficher les chemins d’appel du code externe, choisissez **Afficher le code externe** dans la liste **Filtrer la vue**, puis **Appliquer**.  
   
 ![Choisir Filtrer l’affichage, puis Afficher le code externe](../profiling/media/DiagToolsShowExternalCode.png "DiagToolsShowExternalCode")  
   
-N'oubliez pas que de nombreuses chaînes d'appel en code externe sont profondément imbriquées, la largeur de la colonne Nom de fonction ne peut pas dépasser la largeur d'affichage de presque tous les moniteurs d'ordinateur, sauf les plus larges. Si tel est le cas, les noms de fonctions sont affichés ainsi : **[…]**.
+N'oubliez pas que de nombreuses chaînes d'appel en code externe sont profondément imbriquées, la largeur de la colonne Nom de fonction ne peut pas dépasser la largeur d'affichage de presque tous les moniteurs d'ordinateur, sauf les plus larges. Si tel est le cas, les noms de fonction sont affichés sous forme de **[…]**.
   
 Utilisez la zone de recherche pour trouver le nœud que vous cherchez, puis utilisez la barre de défilement horizontal pour afficher les données dans la vue.
 

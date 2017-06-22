@@ -27,16 +27,17 @@ translation.priority.mt:
 - pl-pl
 - pt-br
 - tr-tr
-translationtype: Human Translation
-ms.sourcegitcommit: 5db97d19b1b823388a465bba15d057b30ff0b3ce
-ms.openlocfilehash: b55b2ffdc3c5bd0ec0fb1b1b556a8f343aab1844
-ms.lasthandoff: 02/22/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: 47057e9611b824c17077b9127f8d2f8b192d6eb8
+ms.openlocfilehash: 7ab8ce7199fec306a0f50344619200266a2261b8
+ms.contentlocale: fr-fr
+ms.lasthandoff: 05/13/2017
 
 ---
 # <a name="testing-sharepoint-2010-applications-with-coded-ui-tests"></a>Test des applications SharePoint 2010 avec des tests codés de l'interface utilisateur
 L'ajout de tests codés de l'interface utilisateur dans une application SharePoint vous permet de vérifier si l'application entière, y compris ses contrôles d'interface utilisateur, fonctionne correctement. Les tests codés de l'interface utilisateur peuvent aussi valider les valeurs et la logique de l'interface utilisateur.  
   
- **Requirements**  
+ **Spécifications**  
   
 -   Visual Studio Enterprise  
   
@@ -50,12 +51,12 @@ L'ajout de tests codés de l'interface utilisateur dans une application SharePoi
 -   ![Prérequis](../test/media/prereq.png "Prereq") Les contrôles pour Visio et PowerPoint 2010 ne sont pas pris en charge dans votre application SharePoint.  
   
 ## <a name="creating-a-coded-ui-test-for-your-sharepoint-app"></a>Créer un test d'interface utilisateur codé pour votre application SharePoint  
- La [création de tests codés de l’interface utilisateur](../test/use-ui-automation-to-test-your-code.md#VerifyingCodeUsingCUITCreate) pour vos applications SharePoint 2010 est identique à la création de tests pour d’autres types d’applications. L'enregistrement et la lecture sont pris en charge pour tous les contrôles sur l'interface de modification Web. L'interface de sélection des catégories et des composants WebPart est constituée de contrôles Web standard.  
+ La[création de tests codés de l'interface utilisateur](../test/use-ui-automation-to-test-your-code.md#VerifyingCodeUsingCUITCreate) pour vos applications SharePoint 2010 est identique à la création de tests pour d'autres types d'applications. L'enregistrement et la lecture sont pris en charge pour tous les contrôles sur l'interface de modification Web. L'interface de sélection des catégories et des composants WebPart est constituée de contrôles Web standard.  
   
  ![Composants WebPart SharePoint](../test/media/cuit_sharepoint.png "CUIT_SharePoint")  
   
 > [!NOTE]
->  Si vous enregistrez une action, validez les actions avant de générer le code. Étant donné que plusieurs comportements sont associés aux pointages de la souris, celle-ci est activée par défaut. Veillez à supprimer les pointages redondants de vos tests codés de l'interface utilisateur. Pour ce faire, modifiez le code du test ou utilisez l’[Éditeur de test codé de l’interface utilisateur](../test/editing-coded-ui-tests-using-the-coded-ui-test-editor.md).  
+>  Si vous enregistrez une action, validez les actions avant de générer le code. Étant donné que plusieurs comportements sont associés aux pointages de la souris, celle-ci est activée par défaut. Veillez à supprimer les pointages redondants de vos tests codés de l'interface utilisateur. Pour ce faire, modifiez le code du test ou utilisez l' [Éditeur de test codé de l'interface utilisateur](../test/editing-coded-ui-tests-using-the-coded-ui-test-editor.md).  
   
 ## <a name="including-testing-of-office-2010-controls-within-your-sharepoint-app"></a>Inclusion du test des contrôles Office 2010 dans votre application SharePoint  
  Pour activer l'automatisation de certains composants WebPart Office 2010 dans votre application SharePoint, vous devez apporter des modifications de code mineures.  
@@ -64,7 +65,7 @@ L'ajout de tests codés de l'interface utilisateur dans une application SharePoi
 >  Les contrôles pour Visio et PowerPoint 2010 ne sont pas pris en charge.  
   
 ### <a name="excel-2010-cell-controls"></a>Contrôles des cellules Excel 2010  
- Pour inclure les contrôles de cellules Excel, vous devez apporter des modifications dans le code du test codé de l'interface utilisateur.  
+ Pour inclure les contrôles de cellules Excel, vous devez apporter des modifications dans le code du test codé de l’interface utilisateur.  
   
 > [!WARNING]
 >  La saisie de texte dans une cellule Excel, suivie d'une pression sur une touche de direction, ne fonctionne pas correctement. Utilisez la souris pour sélectionner des cellules.  
@@ -124,7 +125,7 @@ uiGridKeyboardInputEdit.Text=value;
   
 3.  Installez [Fiddler](http://www.fiddler2.com/fiddler2/). Il s'agit simplement d'un outil qui capture et enregistre le trafic HTTP.  
   
-4.  Téléchargez le [projet fiddlerXap](http://blogs.msdn.com/cfs-file.ashx/__key/communityserver-components-postattachments/00-10-36-48-70/FiddlerXapProxy.zip). Décompressez-le, générez-le, puis exécutez le script "CopySLHelper.bat" pour installer la DLL du programme d'assistance qui est requise pour analyser les composants WebPart Silverlight lorsque vous utilisez l'outil Fiddler.  
+4.  Téléchargez le [projet fiddlerXap](http://blogs.msdn.com/cfs-file.ashx/__key/communityserver-components-postattachments/00-10-36-48-70/FiddlerXapProxy.zip). Décompressez-le, générez-le, puis exécutez le script « CopySLHelper.bat » pour installer la DLL du programme d’assistance qui est requise pour analyser les composants WebPart Silverlight quand vous utilisez l’outil Fiddler.  
   
  Après avoir configuré votre ordinateur, vous pouvez démarrer le test de votre application SharePoint 2010 avec des composants WebPart Silverlight en procédant comme suit :  
   
@@ -145,7 +146,7 @@ uiGridKeyboardInputEdit.Text=value;
 ## <a name="external-resources"></a>Ressources externes  
   
 ### <a name="blogs"></a>Blogs  
- [UI Testing SharePoint 2010 with Visual Studio 2012](http://blogs.msdn.com/b/visualstudioalm/archive/2012/11/01/ui-testing-sharepoint-2010-with-visual-studio-2012.aspx)  
+ [UI Testing SharePoint 2010 with Visual Studio 2012](http://blogs.msdn.com/b/visualstudioalm/archive/2012/11/01/ui-testing-sharepoint-2010-with-visual-studio-2012.aspx)  
   
  [Understanding the Search logic for Silverlight controls in Coded UI Test](http://blogs.msdn.com/b/tapas_sahoos_blog/archive/2010/11/16/understanding-the-search-logic-for-silverlight-controls-in-coded-ui-test.aspx)  
   
@@ -154,7 +155,7 @@ uiGridKeyboardInputEdit.Text=value;
  [Content Index for Coded UI Test](http://blogs.msdn.com/b/mathew_aniyan/archive/2010/02/11/content-index-for-coded-ui-test.aspx)  
   
 ### <a name="guidance"></a>Conseils  
- [Testing for Continuous Delivery with Visual Studio 2012 – Chapter 5 Automating System Tests (Test de la livraison continue avec Visual Studio 2012 - Chapitre 5 : Automatisation des tests système)](http://go.microsoft.com/fwlink/?LinkID=255196)  
+ [Testing for Continuous Delivery with Visual Studio 2012 - Chapter 5 Automating System Tests (Test de la livraison continue avec Visual Studio 2012 - Chapitre 5 : Automatisation des tests système)](http://go.microsoft.com/fwlink/?LinkID=255196)  
   
 ### <a name="forum"></a>Forum  
  [Blog Visual Studio ALM + Team Foundation Server](http://go.microsoft.com/fwlink/?LinkID=254496)  

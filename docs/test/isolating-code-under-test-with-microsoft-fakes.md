@@ -26,10 +26,11 @@ translation.priority.ht:
 - tr-tr
 - zh-cn
 - zh-tw
-translationtype: Human Translation
-ms.sourcegitcommit: 5ab78b6b8eaa8156ed2c8a807b1d8a80e75afa84
-ms.openlocfilehash: acc2f3de7000e438829486b23b9652cb8d34db26
-ms.lasthandoff: 04/04/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: 47057e9611b824c17077b9127f8d2f8b192d6eb8
+ms.openlocfilehash: 3941968fa0e2e6205c94076f555c8366f009d4c0
+ms.contentlocale: fr-fr
+ms.lasthandoff: 05/13/2017
 
 ---
 # <a name="isolating-code-under-test-with-microsoft-fakes"></a>Isolation du code sous test avec Microsoft Fakes
@@ -58,11 +59,11 @@ Microsoft Fakes vous aide à isoler le code que vous testez en remplaçant d’a
   
  **Méthodes statiques, types sealed.** Vous pouvez uniquement utiliser les stubs pour implémenter les interfaces. Par conséquent, les types stub ne peuvent pas être utilisés pour les méthodes statiques, les méthodes non virtuelles, les méthodes virtuelles sealed, les méthodes dans les types sealed, etc.  
   
- **Types internes.** Les stubs et les shims peuvent être utilisés avec les types internes qui sont rendus accessibles à l’aide de l’attribut d’assembly <xref:System.Runtime.CompilerServices.InternalsVisibleToAttribute>.  
+ **Types internes.** Les stubs et les shims peuvent être utilisés avec les types internes qui sont rendus accessibles à l'aide de l'attribut d'assembly <xref:System.Runtime.CompilerServices.InternalsVisibleToAttribute>.  
   
  **Méthodes privées.** Les shims peuvent remplacer les appels aux méthodes privées si tous les types dans la signature de méthode sont visibles. Les stubs peuvent uniquement remplacer des méthodes visibles.  
   
- **Interfaces et méthodes abstraites.** Les stubs fournissent des implémentations d'interfaces et de méthodes abstraites qui peuvent être utilisées lors du test. Les shims ne peuvent pas instrumenter les interfaces ni les méthodes abstraites, car ils n'ont pas de corps de méthode.  
+ **Interfaces et méthodes abstraites.** Les stubs fournissent des implémentations d'interfaces et de méthodes abstraites qui peuvent être utilisées lors du test. Les shims ne peuvent pas instrumenter les interfaces ni les méthodes abstraites, car ils n’ont pas de corps de méthode.  
   
  En général, nous vous conseillons d'utiliser des types stub pour isoler des dépendances dans votre base de code. Pour cela, masquez les composants derrière les interfaces. Les types shim peuvent être utilisés pour isoler des composants tiers qui ne fournissent pas d'API pouvant être testée.  
   
@@ -176,11 +177,11 @@ Microsoft Fakes vous aide à isoler le code que vous testez en remplaçant d’a
   
  Pendant le test, placez un shim sur la propriété `Now`, car la vraie version retourne incommodément une valeur différente à chaque appel.  
   
- Pour utiliser les shims, vous ne devez pas modifier le code de l'application ni l'écrire d'une façon particulière.  
+ Pour utiliser des shims, vous ne devez pas modifier le code de l’application ni l’écrire d’une façon particulière.  
   
 1.  **Ajouter un assembly Fakes**  
   
-     Dans l'Explorateur de solutions, ouvrez les références de votre projet de test unitaire et sélectionnez la référence à l'assembly qui contient la méthode pour laquelle vous souhaitez utiliser Fake. Dans cet exemple, la classe `DateTime` se trouve dans **System.dll**.  Pour afficher les références dans un projet Visual Basic, choisissez **Afficher tous les fichiers**.  
+     Dans l’Explorateur de solutions, ouvrez les références de votre projet de test unitaire et sélectionnez la référence à l’assembly qui contient la méthode que vous souhaitez simuler. Dans cet exemple, la classe `DateTime` se trouve dans **System.dll**.  Pour afficher les références dans un projet Visual Basic, choisissez **Afficher tous les fichiers**.  
   
      Choisissez **Ajouter un assembly Fakes**.  
   
@@ -245,7 +246,7 @@ Microsoft Fakes vous aide à isoler le code que vous testez en remplaçant d’a
     End Class  
     ```  
   
-     Les noms de classe de shim sont obtenus en ajoutant le préfixe `Fakes.Shim` au nom de type d'origine. Les noms de paramètres sont ajoutés au nom de la méthode. (Vous ne devez ajouter aucune référence d'assembly à System.Fakes)  
+     Les noms de classe de shim sont obtenus en ajoutant le préfixe `Fakes.Shim` au nom de type d'origine. Les noms de paramètres sont ajoutés au nom de la méthode. (Vous ne devez ajouter aucune référence d’assembly à System.Fakes)  
   
  L'exemple précédent utilise un shim pour une méthode statique. Pour utiliser un shim pour une méthode d'instance, écrivez `AllInstances` entre le nom du type et le nom de la méthode :  
   
@@ -253,7 +254,7 @@ Microsoft Fakes vous aide à isoler le code que vous testez en remplaçant d’a
 System.IO.Fakes.ShimFile.AllInstances.ReadToEnd = ...  
 ```  
   
- (Il n'existe aucun assembly « System.IO.Fakes » à référencer. L'espace de noms est généré par le processus de création de shim. Toutefois, vous pouvez utiliser 'using' ou 'Import' de la façon habituelle.)  
+ (Il n’existe aucun assembly « System.IO.Fakes » à référencer. L'espace de noms est généré par le processus de création de shim. Toutefois, vous pouvez utiliser « using » ou « Import » de la façon habituelle.)  
   
  Vous pouvez également créer des shims pour des instances spécifiques, des constructeurs et des propriétés. Pour plus d’informations, consultez [Utilisation de shims pour isoler votre application des autres assemblys pour des tests unitaires](../test/using-shims-to-isolate-your-application-from-other-assemblies-for-unit-testing.md).  
   

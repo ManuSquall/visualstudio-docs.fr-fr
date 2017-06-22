@@ -26,10 +26,11 @@ translation.priority.ht:
 - tr-tr
 - zh-cn
 - zh-tw
-translationtype: Human Translation
-ms.sourcegitcommit: 5ab78b6b8eaa8156ed2c8a807b1d8a80e75afa84
-ms.openlocfilehash: ab5c909dd61334920bcdd38ce19e6dcc34b09cbb
-ms.lasthandoff: 04/04/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: 47057e9611b824c17077b9127f8d2f8b192d6eb8
+ms.openlocfilehash: 28ce78165492b6f74cdd85ba79eae26e4d68d32c
+ms.contentlocale: fr-fr
+ms.lasthandoff: 05/13/2017
 
 ---
 # <a name="using-different-web-browsers-with-coded-ui-tests"></a>Utilisation de différents navigateurs Web avec des tests codés de l'interface utilisateur

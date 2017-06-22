@@ -1,50 +1,53 @@
 ---
-title: "Comment&#160;: exporter une texture qui poss&#232;de des valeurs alpha pr&#233;multipli&#233;es | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-general"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+title: "Guide pratique pour exporter une texture qui a des valeurs alpha prémultipliées | Microsoft Docs"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology:
+- vs-ide-general
+ms.tgt_pltfrm: 
+ms.topic: article
 ms.assetid: 05348afa-f079-4f53-a05b-ecd91d13adab
 caps.latest.revision: 4
-author: "BrianPeek"
-ms.author: "brpeek"
-manager: "ghogen"
-caps.handback.revision: 4
----
-# Comment&#160;: exporter une texture qui poss&#232;de des valeurs alpha pr&#233;multipli&#233;es
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
+author: BrianPeek
+ms.author: brpeek
+manager: ghogen
+ms.translationtype: Human Translation
+ms.sourcegitcommit: 47057e9611b824c17077b9127f8d2f8b192d6eb8
+ms.openlocfilehash: b7b38036fafe64a86a132253b2597cd6d59eec6c
+ms.contentlocale: fr-fr
+ms.lasthandoff: 05/13/2017
 
-Le pipeline de contenu d'image peut générer des textures alpha prémultipliées à partir d'une image source.  Ils peuvent être plus simples à utiliser et plus fiables que les textures qui ne contiennent pas de données alpha prémultipliées.  
+---
+# <a name="how-to-export-a-texture-that-has-premultiplied-alpha"></a>Guide pratique pour exporter une texture qui a des valeurs alpha prémultipliées
+Le pipeline de contenus d’image peut générer des textures alpha prémultipliées à partir d’une image source. Ces textures peuvent être plus faciles à utiliser et plus robustes que celles ne contenant pas de valeurs alpha prémultipliées.  
   
- Ce document démontre les activités suivantes :  
+ Ce document illustre ces activités :  
   
--   Configurer l'image source de sorte qu'elle soit traitée par le pipeline de contenu d'image.  
+-   Configuration de l’image source à traiter par le pipeline de contenus d’image.  
   
--   Configurer le pipeline de contenu d'image pour générer des données alpha prémultipliées.  
+-   Configuration du pipeline de contenus d’image pour générer des valeurs alpha prémultipliées.  
   
-## Alpha prémultiplié  
- L'alpha prémultiplié offre plusieurs avantages par rapport à l'alpha conventionnel non prémultiplié, car il représente mieux l'interaction réelle de la lumière avec les matériaux physiques en séparant la contribution de couleur du texel \(la couleur qu'il ajoute à la scène\) de sa translucidité \(la quantité de couleur sous\-jacente qu'il laisse passer\).  L'utilisation de l'alpha prémultiplié présente les avantages suivants :  
+## <a name="premultiplied-alpha"></a>Valeurs alpha prémultipliées  
+ Les valeurs alpha prémultipliées offrent plusieurs avantages par rapport aux valeurs alpha conventionnelles non prémultipliées, car elles représentent mieux l’interaction réelle de la lumière avec les matériaux physiques en séparant la contribution de couleur du texel (couleur qu’il ajoute à la scène) de sa translucidité (quantité de couleur sous-jacente qu’il laisse passer). L’utilisation de valeurs alpha prémultipliées présente les avantages suivants :  
   
--   Mélanger avec des données alpha prémultipliées est une opération associative ; le résultat du mélange de plusieurs textures translucides est identique, indépendamment de l'ordre dans lequel les textures sont mélangées.  
+-   Le mélange avec des données alpha prémultipliées est une opération associative ; le résultat du mélange de plusieurs textures translucides est identique, indépendamment de l’ordre dans lequel les textures sont mélangées.  
   
--   Étant donné la nature associative de la fusion avec l'alpha prémultiplié, le rendu multipasse des objets translucides est simplifié.  
+-   En raison de la nature associative du mélange avec les valeurs alpha prémultipliées, le rendu multipasse des objets translucides est simplifié.  
   
--   En utilisant des données alpha prémultipliées, le mélange additif pur \(en définissant alpha à zéro\) et le mélange linéairement interpolé peuvent être réalisés simultanément.  Par exemple, dans un système de particules, une particule de feu fusionnée par ajout peut devenir une particule de fumée translucide fusionnée à l'aide de l'interpolation linéaire.  Sans alpha prémultiplié, vous devriez dessiner les particules de feu séparément des particules de fumée, et modifier l'état de rendu entre les appels de dessin.  
+-   En utilisant des valeurs alpha prémultipliées, vous pouvez réaliser simultanément le mélange additif pur (en définissant la valeur alpha à zéro) et le mélange linéairement interpolé. Par exemple, dans un système de particules, une particule de feu mélangée par ajout peut devenir une particule de fumée translucide mélangée à l’aide de l’interpolation linéaire. Sans valeur alpha prémultipliée, vous devriez dessiner les particules de feu séparément des particules de fumée, et modifier l’état de rendu entre les appels de dessin.  
   
--   Les textures qui utilisent l'alpha prémultiplié compressent avec une qualité supérieure par rapport à celles qui ne l'utilisent pas, et elles n'exposent pas les bords décolorées ou « l'effet de halo » qui peut se produire lorsque vous fusionnez des textures qui n'utilisent pas l'alpha prémultiplié.  
+-   Les textures qui utilisent des valeurs alpha prémultipliées sont mieux compressées que celles qui ne l’utilisent pas, et elles n’exposent pas les bords décolorés ou « l’effet de halo » qui peut se produire quand vous mélangez des textures qui n’utilisent pas de valeurs alpha prémultipliées.  
   
-#### Pour créer une texture qui utilise l'alpha prémultiplié  
+#### <a name="to-create-a-texture-that-uses-premultiplied-alpha"></a>Pour créer une texture qui utilise des valeurs alpha prémultipliées  
   
-1.  Démarrez avec une texture de base.  Chargez un fichier image existant, ou créez\-en un comme décrit dans [Comment : créer une texture de base](../Topic/How%20to:%20Create%20a%20Basic%20Texture.md).  
+1.  Commencez par une texture de base. Chargez un fichier image existant ou créez-en un comme décrit dans [Guide pratique pour créer une texture de base](../designers/how-to-create-a-basic-texture.md).  
   
-2.  Configurez le fichier de texture afin qu'il soit traité par le pipeline de contenu d'image.  Dans l'**Explorateur de solutions**, ouvrez le menu contextuel du fichier de texture, puis choisissez **Propriétés**.  Dans la page **Propriétés de configuration**, **Général**, affectez à la propriété **Type d'élément** la valeur **Pipeline de contenu d'image**.  Assurez\-vous que la propriété **Contenu** a la valeur **Oui** et que **Exclu de la génération** a la valeur **Non**, puis cliquez sur le bouton **Appliquer**.  La page de propriétés de configuration **Pipeline de contenu d'image** s'affiche.  
+2.  Configurez le fichier de texture pour qu’il soit traité par le pipeline de contenus d’image. Dans l’**Explorateur de solutions**, ouvrez le menu contextuel du fichier de texture, puis choisissez **Propriétés**. Dans la page **Propriétés de configuration**, **Général**, définissez la propriété **Type d’élément** sur **Pipeline de contenus d’image**. Vérifiez que la propriété **Contenu** est définie sur **Oui** et que **Exclure de la génération** est défini sur **Non**, puis choisissez le bouton **Appliquer**. La page des propriétés de configuration du **Pipeline de contenus d’image** apparaît.  
   
-3.  Configurez le pipeline de contenu d'image pour générer des données alpha prémultipliées.  Dans la page **Propriétés de configuration**, **Pipeline de contenu d'image**, **Général**, affectez à la propriété **Convertir au format alpha prémultiplié** la valeur **Oui \(\/generatepremultipliedalpha\)**.  
+3.  Configurez le pipeline de contenus d’image pour générer des valeurs alpha prémultipliées. Dans la page **Propriétés de configuration**, **Pipeline de contenus d’image**, **Général**, définissez la propriété **Convertir au format alpha prémultiplié** sur **Oui (/generatepremultipliedalpha)**.  
   
-4.  Cliquez sur le bouton **OK**.  
+4.  Sélectionnez le bouton **OK** .  
   
- Lorsque vous générez le projet, le pipeline de contenu d'image convertit l'image source depuis le format de travail vers le format de sortie que vous avez spécifié – conversion incluse de l'image au format alpha prémultiplié – et le résultat est copié dans le répertoire de sortie du projet.
+ Quand vous générez le projet, le pipeline de contenus d’image convertit l’image source du format de travail dans le format de sortie que vous avez spécifié (cette opération inclut la conversion de l’image au format des valeurs alpha prémultipliées) et le résultat est copié dans le répertoire de sortie du projet.

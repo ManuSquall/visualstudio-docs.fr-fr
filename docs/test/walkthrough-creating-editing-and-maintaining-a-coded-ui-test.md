@@ -26,10 +26,11 @@ translation.priority.ht:
 - tr-tr
 - zh-cn
 - zh-tw
-translationtype: Human Translation
-ms.sourcegitcommit: 5db97d19b1b823388a465bba15d057b30ff0b3ce
-ms.openlocfilehash: 75dc59de6446e4de3f1fa0522150eabcf800b24b
-ms.lasthandoff: 02/22/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: 47057e9611b824c17077b9127f8d2f8b192d6eb8
+ms.openlocfilehash: b7ef6829b8fca9f08b9c1fc526c975dad54f24d2
+ms.contentlocale: fr-fr
+ms.lasthandoff: 05/13/2017
 
 ---
 # <a name="walkthrough-creating-editing-and-maintaining-a-coded-ui-test"></a>Procédures pas à pas : création, édition et gestion d'un test codé de l'interface utilisateur
@@ -48,7 +49,7 @@ Dans cette procédure pas à pas, vous allez créer une simple application WPF (
   
 2.  Dans le volet **Installé**, développez **Visual C#** puis sélectionnez **Bureau Windows**.  
   
-3.  Au-dessus du volet central, vérifiez que la liste déroulante des infrastructures cibles est définie sur **.NET Framework 4.5**.  
+3.  Au-dessus du volet central, vérifiez que la liste déroulante des frameworks cibles est définie sur **.NET Framework 4.5**.  
   
 4.  Dans le volet central, sélectionnez le modèle **Application WPF**.  
   
@@ -156,11 +157,11 @@ Dans cette procédure pas à pas, vous allez créer une simple application WPF (
   
 7.  Sélectionnez l’option **Enregistrer les actions, modifier le mappage de l’interface utilisateur ou ajouter des assertions** et choisissez **OK**.  
   
-     L'UIMap – Générateur de test codé de l'interface utilisateur apparaît et la fenêtre Visual Studio est réduite.  
+     La boîte de dialogue UIMap - Générateur de test codé de l’interface utilisateur apparaît et la fenêtre Visual Studio est réduite.  
   
      Pour plus d’informations sur les options de la boîte de dialogue, consultez [Création de tests codés de l’interface utilisateur](../test/use-ui-automation-to-test-your-code.md#VerifyingCodeUsingCUITCreate).  
   
-8.  Choisissez **Démarrer l’enregistrement** dans l’UIMap – Générateur de test codé de l’interface utilisateur.  
+8.  Choisissez **Démarrer l’enregistrement** dans la boîte de dialogue UIMap - Générateur de test codé de l’interface utilisateur.  
   
      ![Démarrer l’enregistrement](../test/media/cuit_builder_record.png "CUIT_Builder_Record")  
   
@@ -187,7 +188,7 @@ Dans cette procédure pas à pas, vous allez créer une simple application WPF (
   
 14. Dans la zone Nom de la méthode, tapez **SimpleAppTest** et choisissez **Ajouter et générer**. En quelques secondes, le test codé de l'interface utilisateur s'affiche et est ajouté à la solution.  
   
-15. Fermez la boîte de dialogue UIMap – Générateur de test codé de l'interface utilisateur.  
+15. Fermez la boîte de dialogue UIMap - Générateur de test codé de l’interface utilisateur.  
   
      Le fichier CodedUITest1.cs s'affiche dans l'Éditeur de code.  
   
@@ -306,17 +307,17 @@ Dans cette procédure pas à pas, vous allez créer une simple application WPF (
   
      Notez que la ligne de code présentée précédemment dans cette procédure utilise `UiStartButton` qui est le nom UIMap avant sa refactorisation.  
   
-     Pour corriger le problème, vous pouvez ajouter le contrôle refactorisé à UIMap à l'aide du Générateur de test codé de l'interface utilisateur. Vous pouvez mettre à jour le code du test pour utiliser le code, comme l'illustre la procédure suivante.  
+     Pour corriger le problème, vous pouvez ajouter le contrôle refactorisé à UIMap à l'aide du Générateur de test codé de l'interface utilisateur. Vous pouvez mettre à jour le code du test pour utiliser le code, comme l’illustre la procédure suivante.  
   
 ### <a name="map-refactored-control-and-edit-and-rerun-the-coded-ui-test"></a>Mapper le contrôle refactorisé et modifier et réexécuter le test codé de l'interface utilisateur  
   
 1.  Dans le fichier CodedUITest1.cs, dans la méthode **CodedUITestMethod1()**, cliquez avec le bouton droit, sélectionnez **Générer le code pour le test codé de l’interface utilisateur**, puis choisissez **Utiliser le générateur de test codé de l’interface utilisateur**.  
   
-     La boîte de dialogue UIMap – Générateur de test codé de l'interface utilisateur s'affiche.  
+     La boîte de dialogue UIMap - Générateur de test codé de l’interface utilisateur s’affiche.  
   
 2.  À l'aide du raccourci sur le Bureau que vous avez créé précédemment, exécutez l'application SimpleWPFApp créée précédemment.  
   
-3.  Dans la boîte de dialogue UIMap – Générateur de test codé de l’interface utilisateur, faites glisser l’outil en forme de mire sur le bouton **Start** de SimpleWPFApp.  
+3.  Dans la boîte de dialogue UIMap - Générateur de test codé de l’interface utilisateur, faites glisser l’outil en forme de mire sur le bouton **Start** de SimpleWPFApp.  
   
      Le bouton **Start** apparaît dans une zone bleue et le Générateur de test codé de l’interface utilisateur prend quelques secondes pour traiter les données du contrôle sélectionné et affiche les propriétés des contrôles. Notez que **AutomationUId** est nommé **buttonA**.  
   
@@ -326,17 +327,17 @@ Dans cette procédure pas à pas, vous allez créer une simple application WPF (
   
      L’état situé en bas de la fenêtre vérifie l’action en affichant **Le contrôle sélectionné a été ajouté au mappage de contrôle d’interface utilisateur**.  
   
-6.  Dans UIMap - Générateur de test codé de l’interface utilisateur, choisissez **Générer le code**.  
+6.  Sur UIMap - Générateur de test codé de l’interface utilisateur, choisissez **Générer le code**.  
   
-     Le Générateur de test codé de l'interface utilisateur - Générer le code s'affiche avec une note qui indique qu'aucune nouvelle méthode n'est obligatoire et ce code ne sera généré que pour les modifications apportées au mappage de contrôle d'interface utilisateur.  
+     La boîte de dialogue Générateur de test codé de l’interface utilisateur - Générer le code s’affiche avec une note qui indique qu’aucune nouvelle méthode n’est obligatoire et que ce code ne sera généré que pour les modifications apportées au mappage de contrôle d’interface utilisateur.  
   
 7.  Choisissez **Générer**.  
   
 8.  Fermez SimpleWPFApp.exe.  
   
-9. Fermez la boîte de dialogue UIMap – Générateur de test codé de l'interface utilisateur.  
+9. Fermez la boîte de dialogue UIMap - Générateur de test codé de l’interface utilisateur.  
   
-     La boîte de dialogue UIMap – Générateur de test codé de l'interface utilisateur prend quelques secondes pour traiter les modifications du mappage de contrôle d'interface utilisateur.  
+     La boîte de dialogue UIMap - Générateur de test codé de l’interface utilisateur prend quelques secondes pour traiter les modifications du mappage de contrôle d’interface utilisateur.  
   
 10. Dans l'Explorateur de solutions, ouvrez le fichier UIMap.Designer.cs.  
   

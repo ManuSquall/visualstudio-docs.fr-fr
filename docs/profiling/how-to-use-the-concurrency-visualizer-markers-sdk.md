@@ -28,10 +28,11 @@ translation.priority.mt:
 - pl-pl
 - pt-br
 - tr-tr
-translationtype: Human Translation
+ms.translationtype: Human Translation
 ms.sourcegitcommit: 1a51a8dbf28be35febf4a0954a997e542ffd0f09
 ms.openlocfilehash: a05e0509ec092f810e0990fbc838707d126595e1
-ms.lasthandoff: 02/22/2017
+ms.contentlocale: fr-fr
+ms.lasthandoff: 05/19/2017
 
 ---
 # <a name="how-to-use-the-concurrency-visualizer-markers-sdk"></a>Guide pratique pour utiliser le kit SDK des marqueurs du visualiseur concurrentiel
@@ -112,7 +113,7 @@ Cette rubrique montre comment utiliser le kit SDK du visualiseur concurrentiel p
     using Microsoft.ConcurrencyVisualizer.Instrumentation;  
     ```  
   
-3.  Ajoutez du code pour créer trois étendues dans la série de marqueurs par défaut et écrire un indicateur, un message et une alerte (un pour chaque étendue). Vous créez un objet <xref:Microsoft.ConcurrencyVisualizer.Instrumentation.Span> en appelant la méthode [EnterSpan](assetId:///EnterSpan?qualifyHint=False&autoUpgrade=True) statique. Pour écrire dans la série par défaut, vous utilisez les méthodes d’écriture statiques de la classe <xref:Microsoft.ConcurrencyVisualizer.Instrumentation.Markers>.  
+3.  Ajoutez du code pour créer trois étendues dans la série de marqueurs par défaut et écrire un indicateur, un message et une alerte (un pour chaque étendue). Créez un objet <xref:Microsoft.ConcurrencyVisualizer.Instrumentation.Span> en appelant la méthode statique [EnterSpan](assetId:///EnterSpan?qualifyHint=False&autoUpgrade=True). Pour écrire dans la série par défaut, utilisez les méthodes d’écriture statiques de la classe <xref:Microsoft.ConcurrencyVisualizer.Instrumentation.Markers>.  
   
     ```VB  
   
@@ -157,7 +158,7 @@ Cette rubrique montre comment utiliser le kit SDK du visualiseur concurrentiel p
   
      ![Visualiseur concurrentiel avec des marqueurs et des alertes](../profiling/media/cvmarkersmanaged.png "CvMarkersManaged")  
   
-5.  Ajoutez du code pour créer des séries de marqueurs personnalisés à l’aide de la méthode statique <xref:Microsoft.ConcurrencyVisualizer.Instrumentation.Markers.CreateMarkerSeries%2A>. La classe <xref:Microsoft.ConcurrencyVisualizer.Instrumentation.MarkerSeries> contient des méthodes pour la création d’étendues et l’écriture d’indicateurs, de messages et d’alertes.  
+5.  Ajoutez du code pour créer une série de marqueurs de client à l’aide de la méthode statique <xref:Microsoft.ConcurrencyVisualizer.Instrumentation.Markers.CreateMarkerSeries%2A>. La classe <xref:Microsoft.ConcurrencyVisualizer.Instrumentation.MarkerSeries> contient des méthodes pour créer des étendues et écrire des indicateurs, des messages et des alertes.  
   
     ```VB  
   

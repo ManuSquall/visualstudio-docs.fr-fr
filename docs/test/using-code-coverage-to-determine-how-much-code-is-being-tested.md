@@ -28,10 +28,11 @@ translation.priority.ht:
 - tr-tr
 - zh-cn
 - zh-tw
-translationtype: Human Translation
-ms.sourcegitcommit: 5658ecf52637a38bc3c2a5ad9e85b2edebf7d445
-ms.openlocfilehash: 86e3e1625cffabf3b64edd0da7307db7773adf4c
-ms.lasthandoff: 02/22/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: 47057e9611b824c17077b9127f8d2f8b192d6eb8
+ms.openlocfilehash: 90d4fec70dd131289f37d35f896d87c6e0843e83
+ms.contentlocale: fr-fr
+ms.lasthandoff: 05/13/2017
 
 ---
 # <a name="using-code-coverage-to-determine-how-much-code-is-being-tested"></a>Utilisation de la couverture du code pour déterminer la quantité de code testé
@@ -65,7 +66,7 @@ Pour déterminer la proportion de code de votre projet qui sera réellement test
 >      Si vous travaillez avec le code non managé (natif), utilisez une version Debug.  
 > -   Assurez-vous que vous générez des fichiers de symboles (.pdb) pour chaque assembly.  
 >   
->  Si vous n’obtenez pas les résultats escomptés, consultez [Résolution des problèmes liés à la couverture du code](../test/troubleshooting-code-coverage.md). . N'oubliez pas d'exécuter à nouveau la couverture du code après la mise à jour votre code. Les résultats de couverture et la coloration du code ne sont pas automatiquement mis à jour après avoir la modification de votre code ou lorsque vous exécutez des tests.  
+>  Si vous n’obtenez pas les résultats escomptés, consultez [Résolution des problèmes liés à la couverture du code](../test/troubleshooting-code-coverage.md). . N’oubliez pas de réexécuter la couverture du code après la mise à jour de votre code. Les résultats de couverture et la coloration du code ne sont pas automatiquement mis à jour après avoir la modification de votre code ou lorsque vous exécutez des tests.  
   
 ## <a name="reporting-in-blocks-or-lines"></a>Rapport dans les blocs ou les lignes  
  La couverture du code est mesurée en *blocs*. Un bloc est un fragment de code avec un seul point d'entrée et de sortie.  Si le flux de contrôle du programme traverse un bloc pendant une série de tests, ce bloc est considéré comme couvert. Le nombre de fois où le bloc est utilisé n'a aucun effet sur le résultat.  
@@ -263,7 +264,7 @@ ExcludeSourceFromCodeCoverage(Exclusion4, L"*\\unittest1.cpp");
  Vous pouvez mieux contrôler les assemblys et les éléments qui sont sélectionnés pour l'analyse de la couverture du code en écrivant un fichier .runsettings. Par exemple, vous pouvez exclure des assemblys de type particulier sans devoir ajouter des attributs à leurs classes. Pour plus d’informations, consultez [Personnalisation de l’analyse de couverture du code](../test/customizing-code-coverage-analysis.md).  
   
 ## <a name="analyzing-code-coverage-in-the-build-service"></a>Analyse de la couverture du code dans le service de build  
- Lorsque vous archivez votre code, vos tests s’exécutent sur le serveur de builds, avec l’ensemble des tests des autres membres de l’équipe. (Si vous ne l’avez pas déjà fait, consultez [Exécuter des tests dans votre processus de génération](http://msdn.microsoft.com/Library/d05743a1-c5cf-447e-bed9-bed3cb595e38).) L'analyse de la couverture du code sur le service de build est utile, car elle permet d'obtenir l'image la plus récente et la plus complète de la couverture du projet entier. Elle inclut également des tests système automatisés et d'autres tests codés qui ne sont généralement pas exécutés sur les ordinateurs de développement.  
+ Lorsque vous archivez votre code, vos tests s’exécutent sur le serveur de builds, avec l’ensemble des tests des autres membres de l’équipe. (Si vous ne l’avez pas déjà fait, consultez [Exécuter des tests dans votre processus de génération](http://msdn.microsoft.com/Library/d05743a1-c5cf-447e-bed9-bed3cb595e38).) L’analyse de la couverture du code sur le service de build est utile, car elle permet d’obtenir l’image la plus récente et la plus complète de la couverture du projet entier. Elle inclut également des tests système automatisés et d’autres tests codés qui ne sont généralement pas exécutés sur les ordinateurs de développement.  
   
 1.  Dans Team Explorer, ouvrez **Builds**, puis ajoutez ou modifiez une définition de build.  
   
@@ -271,7 +272,7 @@ ExcludeSourceFromCodeCoverage(Exclusion4, L"*\\unittest1.cpp");
   
      Si vous avez plusieurs définitions de source de test, répétez cette étape pour chaque définition.  
   
-    -   *Mais aucun champ n’est nommé**Type des paramètres d’exécution**.*  
+    -   *Mais aucun champ n’est nommé **Type de fichier des paramètres d’exécution**.*  
   
          Sous **Tests automatisés**, sélectionnez **Assembly de test**, puis choisissez le bouton de sélection **[...]** situé à la fin de la ligne. Dans la boîte de dialogue **Ajouter/Modifier une série de tests**, sous **Test Runner**, choisissez **Visual Studio Test Runner**.  
   

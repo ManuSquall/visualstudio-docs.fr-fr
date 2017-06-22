@@ -29,14 +29,15 @@ translation.priority.mt:
 - pl-pl
 - pt-br
 - tr-tr
-translationtype: Human Translation
-ms.sourcegitcommit: 5ab78b6b8eaa8156ed2c8a807b1d8a80e75afa84
-ms.openlocfilehash: 8d08dc2578390db8dedd535cfb27261ea71d73cc
-ms.lasthandoff: 04/04/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: 47057e9611b824c17077b9127f8d2f8b192d6eb8
+ms.openlocfilehash: 67f42e3a79d30254d3f5942b3fc9938957d5ff99
+ms.contentlocale: fr-fr
+ms.lasthandoff: 05/13/2017
 
 ---
 # <a name="unit-test-basics"></a>Notions de base des tests unitaires
-Vérifiez que votre code fonctionne comme prévu en créant et en exécutant des tests unitaires. Un test unitaire consiste à décomposer les fonctionnalités de votre programme en comportements testables discrets que vous pouvez tester en tant qu’ *unités*individuelles. L’explorateur de tests de Visual Studio offre un moyen souple et efficace d’exécuter vos tests unitaires et d’afficher leurs résultats dans Visual Studio. Visual Studio installe les frameworks de tests unitaires Microsoft pour le code managé et le code natif. Utilisez un *framework de tests unitaires* pour créer des tests unitaires, les exécuter et signaler les résultats de ces tests. Réexécutez des tests unitaires quand vous apportez des modifications pour vérifier que votre code fonctionne toujours correctement. Quand vous utilisez Visual Studio Enterprise, vous pouvez exécuter automatiquement des tests après chaque génération.  
+Vérifiez que votre code fonctionne comme prévu en créant et en exécutant des tests unitaires. Un test unitaire consiste à décomposer les fonctionnalités de votre programme en comportements testables discrets que vous pouvez tester en tant qu’*unités* individuelles. L’explorateur de tests de Visual Studio offre un moyen souple et efficace d’exécuter vos tests unitaires et d’afficher leurs résultats dans Visual Studio. Visual Studio installe les frameworks de tests unitaires Microsoft pour le code managé et le code natif. Utilisez un *framework de tests unitaires* pour créer des tests unitaires, les exécuter et signaler les résultats de ces tests. Réexécutez des tests unitaires quand vous apportez des modifications pour vérifier que votre code fonctionne toujours correctement. Quand vous utilisez Visual Studio Enterprise, vous pouvez exécuter automatiquement des tests après chaque génération.  
   
  Les tests unitaires ont le plus d’effet sur la qualité du code quand ils font partie intégrante du flux de travail de votre développement logiciel. Dès que vous écrivez une fonction ou un autre bloc de code d’application, créez des tests unitaires pour vérifier le comportement du code en réponse aux cas standard, limite et incorrects des données d’entrée, ainsi que les hypothèses explicites ou implicites du code. Avec le *développement axé sur des tests*, comme vous créez les tests unitaires avant d’écrire le code, vous utilisez les tests unitaires comme documentation de conception et spécifications fonctionnelles.  
   
@@ -52,7 +53,7 @@ Vérifiez que votre code fonctionne comme prévu en créant et en exécutant des
   
 -   [Écrire vos tests](#BKMK_Writing_your_tests)  
   
--   [Exécuter des tests dans l’Explorateur de tests](#BKMK_Running_tests_in_Test_Explorer)  
+-   [Exécuter des tests dans l’explorateur de tests](#BKMK_Running_tests_in_Test_Explorer)  
   
 -   [Exécuter et afficher des tests](#BKMK_Running_and_viewing_tests_from_the_Test_Explorer_toolbar)  
   
@@ -67,7 +68,7 @@ Vérifiez que votre code fonctionne comme prévu en créant et en exécutant des
   
 -   [Tests unitaires de code natif avec l’Explorateur de tests](http://msdn.microsoft.com/en-us/8a09d6d8-3613-49d8-9ffe-11375ac4736c)  
   
-##  <a name="BKMK_The_MyBank_Solution_example"></a>Exemple de solution MyBank  
+##  <a name="BKMK_The_MyBank_Solution_example"></a> Exemple de solution MyBank  
  Dans cette rubrique, nous utilisons comme exemple le développement d’une application fictive, appelée `MyBank` . Vous n’avez pas besoin du code réel pour suivre les explications fournies dans cette rubrique. Les méthodes de test sont écrites en C# et présentées à l’aide du framework de tests unitaires Microsoft pour le code managé. Cependant, les concepts peuvent être facilement transférés vers d’autres langages et frameworks.  
   
  ![Solution MyBank](../test/media/ute_mybanksolution.png "UTE_MyBankSolution")  
@@ -131,7 +132,7 @@ public void Withdraw(double amount)
   
  Un projet de test unitaire reflète généralement la structure d’un seul projet de code. Dans l’exemple MyBank, vous ajoutez deux projets de test unitaire nommés `AccountsTests` et `BankDbTests` à la solution `MyBanks` . Les noms des projets de test sont arbitraires, mais l’adoption d’une convention d’affectation de noms standard est une bonne idée.  
   
- **Pour ajouter un projet de test unitaire à une solution :**  
+ **Pour ajouter un projet de test unitaire à une solution :**  
   
 1.  Dans le menu **Fichier** , choisissez **Nouveau** , puis **Projet** (Ctrl+Maj+N).  
   
@@ -233,7 +234,7 @@ public void My_Test ()
 }  
 ```  
   
-##  <a name="BKMK_Running_tests_in_Test_Explorer"></a> Exécuter des tests dans l’Explorateur de tests  
+##  <a name="BKMK_Running_tests_in_Test_Explorer"></a> Exécuter des tests dans l’explorateur de tests  
  Quand vous générez le projet de test, les tests s’affichent dans l’explorateur de tests. Si l’explorateur de tests n’est pas visible, sélectionnez **Test** dans le menu Visual Studio et choisissez **Fenêtres**, puis **Explorateur de tests**.  
   
  ![Explorateur de tests unitaires](../ide/media/ute_failedpassednotrunsummary.png "UTE_FailedPassedNotRunSummary")  
@@ -251,7 +252,7 @@ public void My_Test ()
   
  Si les tests individuels n’ont aucune dépendance qui les empêche d’être exécutés dans n’importe quel ordre, activez l’exécution parallèle des tests avec le bouton bascule ![UTE&#95;parallelicon&#45;small](../test/media/ute_parallelicon-small.png "UTE_parallelicon-small") dans la barre d’outils. Cela peut réduire sensiblement le temps nécessaire pour exécuter tous les tests.  
   
-###  <a name="BKMK_Running_tests_after_every_build"></a>Exécuter des tests après chaque génération  
+###  <a name="BKMK_Running_tests_after_every_build"></a> Exécuter des tests après chaque génération  
   
 > [!WARNING]
 >  L’exécution de tests unitaires après chaque génération est prise en charge uniquement dans Visual Studio Enterprise.  
@@ -272,7 +273,7 @@ public void My_Test ()
  Pour plus d’informations, consultez [Exécuter des tests unitaires avec l’Explorateur de tests](../test/run-unit-tests-with-test-explorer.md).  
   
 ## <a name="qa"></a>Questions et réponses  
- **Q : Comment déboguer des tests unitaires ?**  
+ **Q : Comment déboguer des tests unitaires ?**  
   
  **R :** Utilisez l’explorateur de tests pour démarrer une session de débogage de vos tests. L’exécution pas à pas de votre code avec le débogueur Visual Studio vous conduit de manière transparente à des allers et retours entre les tests unitaires et le projet testé. Pour démarrer le débogage :  
   
@@ -283,7 +284,7 @@ public void My_Test ()
   
 2.  Dans l’explorateur de tests, sélectionnez les méthodes de test, puis choisissez **Déboguer les tests sélectionnés** dans le menu contextuel.  
   
- Découvrez plus en détail le [débogage des tests unitaires](../debugger/debugging-in-visual-studio.md).  
+ En savoir plus sur le [débogage des tests unitaires](../debugger/debugging-in-visual-studio.md).  
   
  **Q : Si j’utilise le développement axé sur des tests, comment générer du code à partir de mes tests ?**  
   
@@ -323,9 +324,9 @@ public void AddIntegerHelper_DataDrivenValues_AllShouldPass()
   
  La méthode attribuée s’exécute une fois pour chaque ligne de la table. L’explorateur de tests indique un échec du test de la méthode si l’une des itérations échoue. Le volet Détails des résultats du test de la méthode vous indique le statut réussite/échec pour chaque ligne de données.  
   
- Découvrez plus en détail les [tests unitaires pilotés par les données](../test/how-to-create-a-data-driven-unit-test.md).  
+ En savoir plus sur les [tests unitaires pilotés par les données](../test/how-to-create-a-data-driven-unit-test.md).  
   
- **Q : Puis-je afficher la quantité de code testée par mes tests unitaires ?**  
+ **Q : Puis-je afficher la quantité de code testée par mes tests unitaires ?**  
   
  **R :** Oui. Vous pouvez déterminer la quantité de code qui est réellement testée par vos tests unitaires à l’aide de l’outil de couverture du code Visual Studio. Les langages natifs et managés ainsi que tous les frameworks de tests unitaires qui peuvent être exécutés par le framework de tests unitaires sont pris en charge.  
   
@@ -339,7 +340,7 @@ public void AddIntegerHelper_DataDrivenValues_AllShouldPass()
   
  Découvrez plus en détail la [couverture du code](../test/using-code-coverage-to-determine-how-much-code-is-being-tested.md).  
   
- **Q : Comment puis-je tester des méthodes de mon code qui ont des dépendances externes ?**  
+ **Q : Comment puis-je tester des méthodes de mon code qui ont des dépendances externes ?**  
   
  **R :** Oui. Si vous disposez de Visual Studio Enterprise, Microsoft Fakes peut être utilisé avec les méthodes de test que vous écrivez à l’aide des frameworks de tests unitaires pour le code managé.  
   
@@ -351,7 +352,7 @@ public void AddIntegerHelper_DataDrivenValues_AllShouldPass()
   
  Dans les deux approches, vous utilisez les délégués générés des appels à la méthode de dépendance pour spécifier le comportement souhaité dans la méthode de test.  
   
- Découvrez plus en détail l’[isolement des méthodes de test unitaire avec Microsoft Fakes](../test/isolating-code-under-test-with-microsoft-fakes.md).  
+ En savoir plus sur l’ [isolement des méthodes de test unitaire avec Microsoft Fakes](../test/isolating-code-under-test-with-microsoft-fakes.md).  
   
  **Q : Puis-je utiliser d’autres frameworks de tests unitaires pour créer des tests unitaires ?**  
   

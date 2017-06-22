@@ -26,10 +26,11 @@ translation.priority.ht:
 - tr-tr
 - zh-cn
 - zh-tw
-translationtype: Human Translation
-ms.sourcegitcommit: 5ab78b6b8eaa8156ed2c8a807b1d8a80e75afa84
-ms.openlocfilehash: 6dfb5758833d9ecda1a6ac378eb3f5069cc80561
-ms.lasthandoff: 04/04/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: 47057e9611b824c17077b9127f8d2f8b192d6eb8
+ms.openlocfilehash: 1d64aafdb107e0398c25f6efed7203524c111f18
+ms.contentlocale: fr-fr
+ms.lasthandoff: 05/13/2017
 
 ---
 # <a name="using-shims-to-isolate-your-application-from-other-assemblies-for-unit-testing"></a>Utilisation de shims pour isoler votre application des autres assemblys pour des tests unitaires
@@ -89,7 +90,7 @@ Les **types shim** sont l’une des deux technologies utilisées par le framewor
  [Limitations](../test/using-shims-to-isolate-your-application-from-other-assemblies-for-unit-testing.md#BKMK_Limitations)  
   
 ##  <a name="BKMK_Example__The_Y2K_bug"></a>Exemple : le bogue de l’an 2000  
- Prenons l'exemple d'une méthode qui lève une exception le 1er janvier 2000 :  
+ Prenons l’exemple d’une méthode qui lève une exception le 1er janvier 2000 :  
   
 ```c#  
 // code under test  
@@ -133,7 +134,7 @@ using (ShimsContext.Create()
 3.  Dans le menu contextuel, choisissez **Ajouter un assembly Fakes**.  
   
 ###  <a name="ShimsContext"></a> Utiliser ShimsContext  
- Lors de l'utilisation de types shim dans un framework de tests unitaires, vous devez encapsuler le code de test dans un `ShimsContext` pour contrôler la durée de vie de vos shims. Sans cette exigence, les shims dureraient jusqu'à l'arrêt d'AppDomain. La façon la plus facile de créer un `ShimsContext` consiste à utiliser la méthode statique `Create()` comme illustré dans le code suivant :   
+ Lors de l'utilisation de types shim dans un framework de tests unitaires, vous devez encapsuler le code de test dans un `ShimsContext` pour contrôler la durée de vie de vos shims. Sans cette exigence, les shims dureraient jusqu’à l’arrêt d’AppDomain. La façon la plus facile de créer un `ShimsContext` consiste à utiliser la méthode statique `Create()` comme illustré dans le code suivant :   
   
 ```c#  
 //unit test code  
@@ -512,7 +513,7 @@ ShimMyClass.BehaveAsNotImplemented();
 ```  
   
 ##  <a name="BKMK_Concurrency"></a> Accès concurrentiel  
- Les types shim s'appliquent à tous les threads de l'AppDomain et n'ont pas d'affinité de thread. Il s'agit d'un fait important si vous prévoyez d'utiliser un Test Runner qui prend en charge la concurrence : les tests impliquant des types shim ne peuvent pas s'exécuter simultanément. Cette propriété n'est pas appliquée par le runtime Fakes.  
+ Les types shim s’appliquent à tous les threads de l’AppDomain et n’ont pas d’affinité de thread. Il s'agit d'un fait important si vous prévoyez d'utiliser un Test Runner qui prend en charge la concurrence : les tests impliquant des types shim ne peuvent pas s'exécuter simultanément. Cette propriété n'est pas appliquée par le runtime Fakes.  
   
 ##  <a name="BKMK_Calling_the_original_method_from_the_shim_method"></a> Appel de la méthode d’origine à partir de la méthode shim  
  Supposons que nous voulons réellement écrire le texte vers le système de fichiers après avoir validé le nom du fichier passé à la méthode. Dans ce cas, nous voulons appeler la méthode d'origine au milieu de la méthode shim.  
@@ -539,7 +540,7 @@ ShimFile.WriteAllTextStringString = (fileName, content) => {
 ShimsDelegates.Action<string, string> shim = null;  
 shim = (fileName, content) => {  
   try {  
-    Console.WriteLine("enter”);  
+    Console.WriteLine("enter");  
     // remove shim in order to call original method  
     ShimFile.WriteAllTextStringString = null;  
     File.WriteAllText(fileName, content);  
@@ -566,6 +567,6 @@ ShimFile.WriteAllTextStringString = shim;
   
 ## <a name="see-also"></a>Voir aussi  
  [Isolation du code sous test avec Microsoft Fakes](../test/isolating-code-under-test-with-microsoft-fakes.md)   
- [Blog de Peter Provost : shims Visual Studio 2012](http://www.peterprovost.org/blog/2012/04/25/visual-studio-11-fakes-part-2)   
+ [Blog de Peter Provost : shims Visual Studio 2012](http://www.peterprovost.org/blog/2012/04/25/visual-studio-11-fakes-part-2)   
  [Vidéo (1h16) : Testing Un-testable Code with Fakes in Visual Studio 2012](http://go.microsoft.com/fwlink/?LinkId=261837)
 

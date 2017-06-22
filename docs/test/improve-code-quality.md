@@ -29,16 +29,17 @@ translation.priority.ht:
 - tr-tr
 - zh-cn
 - zh-tw
-translationtype: Human Translation
-ms.sourcegitcommit: a42f5a30375192c89c9984e40ba0104da98d7253
-ms.openlocfilehash: 2fa87621ed76fb93a9e92d558be5519d783274c5
-ms.lasthandoff: 03/07/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: 47057e9611b824c17077b9127f8d2f8b192d6eb8
+ms.openlocfilehash: fbc3a182d2c3dbceaa17685f649ea73a3e73ed85
+ms.contentlocale: fr-fr
+ms.lasthandoff: 05/13/2017
 
 ---
 # <a name="improve-code-quality"></a>Améliorer la qualité du code
 Qu'est-ce que la qualité du code ? Pour que le code que vous créez soit de qualité, il faut qu'il soit correct, facile à maintenir et même élégant. Quelle que soit la façon dont vous le définissez, les outils de test de Visual Studio peuvent vous aider vous et votre équipe à développer et à maintenir des normes élevées d’excellence du code.  
   
- **Requirements**  
+ **Prérequis**  
   
 -   Certains outils et fonctionnalités décrits dans cette section sont uniquement disponibles dans des éditions spécifiques de Visual Studio. Ils ne sont pas universellement disponibles dans Visual Studio. Les spécifications propres à chaque édition sont répertoriées dans la documentation de ces outils et fonctionnalités.  
   
@@ -47,7 +48,7 @@ Qu'est-ce que la qualité du code ? Pour que le code que vous créez soit de qu
   
 |||  
 |-|-|  
-|[Tests unitaires sur votre code](../test/unit-test-your-code.md)|L'Explorateur de tests facilite l'intégration des tests unitaires dans votre pratique de développement. Vous pouvez utiliser l'infrastructure de test unitaire Microsoft ou une des infrastructures tierces et ouvertes.|  
+|[Tests unitaires sur votre code](../test/unit-test-your-code.md)|L'Explorateur de tests facilite l'intégration des tests unitaires dans votre pratique de développement. Vous pouvez utiliser le framework de tests unitaires Microsoft ou un des frameworks tiers et ouverts.|  
 |[Live Unit Testing avec Visual Studio](../test/live-unit-testing.md)|Live Unit Testing exécute automatiquement des tests unitaires en arrière-plan et affiche graphiquement les résultats de test et de couverture du code dans l’éditeur de code Visual Studio.|  
 |[Analyse de la qualité des applications](../code-quality/analyzing-application-quality-by-using-code-analysis-tools.md)|Les outils d'analyse du code statique recherchent la conception, l'utilisation, la maintenabilité, et les problèmes de style en C++ et code managé. Bon nombre de ces problèmes peuvent provoquer des bogues difficiles à reproduire dans l'environnement de test standard.|  
 |[Mesures de la complexité et de la facilité de maintenance du code managé](../code-quality/measuring-complexity-and-maintainability-of-managed-code.md)|La métrique du code est un jeu de mesures de logiciel qui fournit aux développeurs plus de détails sur le code qu'ils développent. La métrique inclut un index de maintenabilité des fonctions et des classes, la complexité cyclomatique des fonctions, la profondeur d'héritage des classes et la quantité de couplage entre les classes.|  

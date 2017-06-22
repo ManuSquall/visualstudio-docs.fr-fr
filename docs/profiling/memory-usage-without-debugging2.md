@@ -33,10 +33,11 @@ translation.priority.mt:
 - pl-pl
 - pt-br
 - tr-tr
-translationtype: Human Translation
-ms.sourcegitcommit: a42f5a30375192c89c9984e40ba0104da98d7253
-ms.openlocfilehash: 9ff0dfb7330f70bb66597127347c8375f2c4c9ea
-ms.lasthandoff: 03/07/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: 47057e9611b824c17077b9127f8d2f8b192d6eb8
+ms.openlocfilehash: baf1e18c56587b071aaa25fd522e3aa1b27a0b30
+ms.contentlocale: fr-fr
+ms.lasthandoff: 05/13/2017
 
 ---
 # <a name="memory-usage-without-the-debugger"></a>Utilisation de la mémoire sans le débogueur
@@ -75,7 +76,7 @@ Vous pouvez utiliser l’outil **Utilisation de la mémoire** sans débogage pou
  Pour arrêter une session de surveillance sans créer de rapport, fermez simplement la fenêtre de diagnostic. Pour générer un rapport quand vous avez créé des instantanés de la mémoire, choisissez **Arrêter**.  
   
 ##  <a name="BKMK_Take_snapshots_to_analyze_the_memory_state_of_your_app"></a> Créer des instantanés de l’état de la mémoire de votre application  
- Si vous détectez un problème de mémoire que vous voulez examiner, vous pouvez prendre des instantanés pendant la session de diagnostic pour capturer des objets dans la mémoire à des moments précis. Dans la mesure où une application utilise un grand nombre de plusieurs types d'objets, il peut être utile de concentrer votre analyse sur un seul scénario. Il peut être également utile de disposer d'un instantané de référence de l'application avant qu'un problème de mémoire ne se produise, d'un autre instantané après la première occurrence du problème et d'un ou plusieurs instantanés supplémentaires si vous pouvez répéter le scénario.  
+ Si vous détectez un problème de mémoire que vous voulez examiner, vous pouvez prendre des instantanés pendant la session de diagnostic pour capturer des objets dans la mémoire à des moments précis. Dans la mesure où une application utilise un grand nombre de plusieurs types d'objets, il peut être utile de concentrer votre analyse sur un seul scénario. Il peut être également utile de disposer d’un instantané de référence de l’application avant qu’un problème de mémoire ne se produise, d’un autre instantané après la première occurrence du problème et d’un ou plusieurs instantanés supplémentaires si vous pouvez répéter le scénario.  
   
  Pour collecter des instantanés, démarrez une nouvelle session de diagnostic. Choisissez **Prendre un instantané** quand vous voulez capturer les données de mémoire. Pour générer un rapport, choisissez **Arrêter**.  
   
@@ -121,7 +122,7 @@ Vous pouvez utiliser l’outil **Utilisation de la mémoire** sans débogage pou
   
  Les noms d'instance sont des ID uniques générés par l'outil Utilisation de la mémoire.  
   
- Si vous notez un type difficilement identifiable ou si vous ne savez pas de quelle façon il est impliqué dans votre code, il s’agit probablement d’un objet du .NET Framework, du système d’exploitation ou du compilateur que l’outil Utilisation de la mémoire affiche, car il est impliqué dans les chaînes de propriétés de vos objets.  
+ Si vous notez un type difficilement identifiable ou que vous ne savez pas de quelle façon il est impliqué dans votre code, il s’agit probablement d’un objet du .NET Framework, du système d’exploitation ou du compilateur que l’outil Utilisation de la mémoire affiche, car il est impliqué dans les chaînes de propriétés de vos objets.  
   
 ###  <a name="BKMK_Report_tree_filters_"></a> Filtres des arborescences de rapport  
  La plupart des applications contiennent un très grand nombre de types, dont une majorité n'est pas très utile au développeur d'application. L’outil **Utilisation de la mémoire** définit deux filtres permettant de masquer la plupart de ces types dans les arborescences **Tas managé** et **Chemins d’accès à la racine**. Vous pouvez également filtrer une arborescence par nom de type.  

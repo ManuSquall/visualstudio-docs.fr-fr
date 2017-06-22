@@ -28,16 +28,17 @@ translation.priority.mt:
 - pl-pl
 - pt-br
 - tr-tr
-translationtype: Human Translation
-ms.sourcegitcommit: f78e2b713e75c5601a07907e7f717db92571568b
-ms.openlocfilehash: 37155aa4767b54a8ff057e96a405c8670a66367e
-ms.lasthandoff: 02/22/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: 47057e9611b824c17077b9127f8d2f8b192d6eb8
+ms.openlocfilehash: 1464a7e654c68828e132e2d6973c9e558ebe23a5
+ms.contentlocale: fr-fr
+ms.lasthandoff: 05/13/2017
 
 ---
 # <a name="application-lifecycle-management-alm-with-xamarin-apps"></a>Application Lifecycle Management (ALM) avec les applications Xamarin
 Xamarin vous permet de générer des applications mobiles multiplateformes ciblant Android, iOS et Windows à l’aide de C#, .NET et Visual Studio. Xamarin autorise le partage d’une grande partie du code entre les plateformes. Seul un petit pourcentage du code doit être spécifique à chaque plateforme. Pour plus d’informations sur Xamarin, consultez [Visual Studio et Xamarin](../cross-platform/visual-studio-and-xamarin.md).  
   
- Le développement d'applications pour des plateformes modernes implique de nombreuses activités qui vont bien au-delà de la simple écriture de code. Ces activités, appelées DevOps (développement + opérations), couvrent le cycle de vie complet de l’application et incluent la planification et le suivi du travail, la conception et l’implémentation du code, la gestion d’un dépôt de code source, l’exécution des builds, la gestion des intégrations continues et des déploiements continus, les tests (notamment les tests unitaires et les tests d’IU), l’exécution de différentes formes de diagnostics dans les environnements de développement et de production, ainsi que la surveillance en temps réel des performances des applications et des comportements des utilisateurs via la télémétrie et l’analyse.  
+ Le développement d'applications pour des plateformes modernes implique de nombreuses activités qui vont bien au-delà de la simple écriture de code. Ces activités, appelées DevOps (développement + opérations), couvrent le cycle de vie complet de l’application et incluent la planification et le suivi du travail, la conception et l’implémentation du code, la gestion d’un dépôt de code source, l’exécution des builds, la gestion des intégrations continues et des déploiements continus, les tests (notamment les tests unitaires et les tests d’IU), l’exécution de différentes formes de diagnostics dans les environnements de développement et de production, ainsi que la surveillance en temps réel des performances des applications et des comportements des utilisateurs par le biais de la télémétrie et l’analyse.  
   
  Visual Studio, Visual Studio Team Services et Team Foundation Server fournissent de nombreuses fonctionnalités DevOps, également appelées fonctionnalités Application Lifecycle Management (ALM). Bon nombre d'entre elles sont entièrement applicables aux projets multiplateformes.  
   
@@ -81,7 +82,7 @@ Xamarin vous permet de générer des applications mobiles multiplateformes cibla
 |[Utiliser Team Foundation Version Control](http://msdn.microsoft.com/Library/1d629052-c65d-4c5d-81eb-eaa4413fe285) ou Visual Studio Team Services|Oui||  
 |[Bien démarrer avec Git dans Team Services](http://msdn.microsoft.com/Library/32f46ecd-1b03-4ef0-a9c4-8a120da2b03f)|Oui||  
 |[Analyse du code/Améliorer la qualité du code (références, suggestions de changement, etc.)](http://msdn.microsoft.com/Library/73baa961-c21f-43fe-bb92-3f59ae9b5945)|Oui||  
-|[Rechercher les modifications de code et d’autres historiques](../ide/find-code-changes-and-other-history-with-codelens.md)|Oui|Sauf au-delà des limites spécifiques à la plate-forme où l'implémentation n'est résolue qu'au moment de l'exécution.|  
+|[Rechercher les modifications de code et d’autres historiques](../ide/find-code-changes-and-other-history-with-codelens.md)|Oui|Sauf au-delà des limites spécifiques de la plateforme où l’implémentation n’est résolue qu’au moment de l’exécution.|  
 |[Utiliser des cartes de code pour déboguer vos applications](../modeling/use-code-maps-to-debug-your-applications.md)|Oui||  
   
 ## <a name="build"></a>Build  
@@ -116,7 +117,7 @@ Xamarin vous permet de générer des applications mobiles multiplateformes cibla
 |[Recherche du code dupliqué à l’aide de la détection de clone de code](http://msdn.microsoft.com/Library/a97cd5a6-5ffa-4104-9627-8e59e513654d)|Oui||  
 |[Mesures de la complexité et de la facilité de maintenance du code managé](../code-quality/measuring-complexity-and-maintainability-of-managed-code.md)|Oui||  
 |[Explorateur de performances](../profiling/performance-explorer.md)|Non|Utilisez le [Profileur Xamarin](http://developer.xamarin.com/guides/cross-platform/deployment,_testing,_and_metrics/) par le biais de Xamarin Studio à la place. Notez que Xamarin Profiler est actuellement disponible en version préliminaire et qu'il ne fonctionne pas pour le moment avec les cibles Windows.|  
-|[Analyser les problèmes de mémoire liés au .NET Framework](https://msdn.microsoft.com/en-us/library/dn342825.aspx)|Non|Visual Studio Tools ne possède pas de hook à l'infrastructure Mono pour le profilage.|  
+|[Analyser les problèmes de mémoire liés au .NET Framework](https://msdn.microsoft.com/en-us/library/dn342825.aspx)|Non|Visual Studio Tools n’a pas de hook au framework Mono pour le profilage.|  
   
 ## <a name="release-management"></a>Gestion des versions  
  Lien de référence : **[Automatiser les déploiements avec Release Management](https://msdn.microsoft.com/library/vs/alm/release/overview)**  

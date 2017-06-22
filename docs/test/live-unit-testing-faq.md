@@ -27,10 +27,10 @@ translation.priority.ht:
 - zh-cn
 - zh-tw
 ms.translationtype: Human Translation
-ms.sourcegitcommit: c9df048a49580f3526b48e29041ef3758722ed27
-ms.openlocfilehash: 08677472bc13d58d9ab0b42b856955f8434089e4
+ms.sourcegitcommit: 47057e9611b824c17077b9127f8d2f8b192d6eb8
+ms.openlocfilehash: e59263c352084107d9849ab656b8b7d034337c53
 ms.contentlocale: fr-fr
-ms.lasthandoff: 05/03/2017
+ms.lasthandoff: 05/13/2017
 
 ---
 # <a name="live-unit-testing-frequently-asked-questions"></a>Questions fréquentes concernant Live Unit Testing
@@ -41,7 +41,7 @@ ms.lasthandoff: 05/03/2017
 
 Live Unit Testing ne fonctionne pas actuellement avec .NET Core. Nous nous efforçons d’ajouter cette prise en charge dans une prochaine version. 
 
-## <a name="why-doesnt-live-unit-testing-work-when-i-turn-it-on"></a>Pourquoi Live Unit Testing ne fonctionne-t-il pas lorsque je l’active ? 
+## <a name="why-doesnt-live-unit-testing-work-when-i-turn-it-on"></a>Pourquoi Live Unit Testing ne fonctionne-t-il pas quand je l’active ? 
 
 **Réponse :** 
 
@@ -49,9 +49,9 @@ La **Fenêtre Sortie** (lorsque vous sélectionnez la liste déroulante Live Uni
 
 - Si les packages NuGet référencés par les projets de la solution n’ont pas été restaurés, Live Unit Testing ne peut pas fonctionner. Pour résoudre ce problème, vous pouvez effectuer une génération explicite de la solution ou restaurer les packages NuGet dans la solution avant d’activer Live Unit Testing. 
 
-- Si vous utilisez des tests basés sur MSTest dans vos projets, veillez à supprimer la référence à `Microsoft.VisualStudio.QualityTools.UnitTestFramework` et à ajouter des références aux derniers packages NuGet MSTest, `MSTest.TestAdapter` (version 1.1.4 préliminaire au minimum) et `MSTest.TestFramework` (version 1.0.5 préliminaire au minimum). Pour plus d’informations, reportez-vous à la section « Supported test frameworks » (Infrastructures de test prises en charge) de la rubrique [Use Live Unit Testing in Visual Studio 2017 Enterprise Edition](live-unit-testing.md#supported-test-frameworks) (Utilisation de Live Unit Testing dans Visual Studio 2017 Édition Entreprise).
+- Si vous utilisez des tests basés sur MSTest dans vos projets, veillez à supprimer la référence à `Microsoft.VisualStudio.QualityTools.UnitTestFramework` et à ajouter des références aux derniers packages NuGet MSTest, `MSTest.TestAdapter` (version 1.1.4 préliminaire au minimum) et `MSTest.TestFramework` (version 1.0.5 préliminaire au minimum). Pour plus d’informations, reportez-vous à la section « Frameworks de test pris en charge » dans la rubrique [Utilisation de Live Unit Testing dans Visual Studio 2017 Enterprise Edition](live-unit-testing.md#supported-test-frameworks).
  
-- Au moins un projet de votre solution doit contenir une référence NuGet ou une référence directe à l’infrastructure de test xUnit, NUnit ou MSTest. Ce projet doit également faire référence au package NuGet des adaptateurs de test Visual Studio correspondants. L’adaptateur de test Visual Studio peut également être référencé via un fichier `.runsettings`. Le fichier `.runsettings` doit comporter une entrée similaire à celle-ci : 
+- Au moins un projet de votre solution doit contenir une référence NuGet ou une référence directe au framework de test xUnit, NUnit ou MSTest. Ce projet doit également faire référence au package NuGet des adaptateurs de test Visual Studio correspondants. L’adaptateur de test Visual Studio peut également être référencé via un fichier `.runsettings`. Le fichier `.runsettings` doit comporter une entrée similaire à celle-ci : 
 
    ```xml
     <RunSettings> 
@@ -89,7 +89,7 @@ Par exemple, vous pouvez avoir une cible qui génère des packages NuGet dans le
 
 ## <a name="error-messages-with-ltoutputpathgt-or-ltoutdirgt"></a>Messages d’erreur avec &lt;OutputPath&gt; ou &lt;OutDir&gt;
 
-**Pourquoi l’erreur suivante s’affiche-t-elle lorsque Live Unit Testing tente de générer ma solution : « ... appears to unconditionally set `<OutputPath>` or `<OutDir>`. Live Unit Testing will not execute tests from the output assembly » ?**
+**Pourquoi l’erreur suivante s’affiche-t-elle quand Live Unit Testing tente de générer ma solution : « ... appears to unconditionally set `<OutputPath>` or `<OutDir>`. Live Unit Testing will not execute tests from the output assembly » ?**
 
 **Réponse :**
 
@@ -199,7 +199,7 @@ Live Unit Testing démarre une build chaque fois qu’il détecte une modificati
 
 **Réponse :**
 
-Live Unit Testing ne prend pas très bien en charge la fonctionnalité Lightweight Solution Load si tous les projets de la solution ne sont pas encore chargés. Vous risquez d’obtenir des informations de couverture incorrectes dans de tels scénarios.
+Live Unit Testing ne prend pas très bien en charge la fonctionnalité Chargement de solution allégé si tous les projets de la solution ne sont pas encore chargés. Vous risquez d’obtenir des informations de couverture incorrectes dans de tels scénarios.
  
 ## <a name="why-does-live-unit-testing-does-not-capture-coverage-from-a-new-process-created-by-a-test"></a>Pourquoi Live Unit Testing ne capture-t-il pas la couverture à partir d’un nouveau processus créé par un test ?
  
@@ -233,7 +233,7 @@ Vous pouvez collecter des journaux plus détaillés de plusieurs manières :
 
 - Affectez à la variable d’environnement utilisateur `LiveUnitTesting_TestPlatformLog` la valeur `1` pour capturer le journal de la plateforme de test. Vous pourrez ensuite récupérer à partir de `[Solution Root]\.vs\[Solution Name]\log\[VisualStudio Process ID]` les messages détaillés de la plateforme de test issus des séries de tests Live Unit Testing.
 
-- Créez une variable d’environnement de niveau utilisateur nommée `VS_UTE_DIAGNOSTICS` et affectez-lui la valeur 1 (ou n’importe quelle valeur), puis redémarrez Visual Studio. L’onglet **Sortie – Tests** de Visual Studio devrait maintenant contenir un nombre important de consignations. 
+- Créez une variable d’environnement de niveau utilisateur nommée `VS_UTE_DIAGNOSTICS` et affectez-lui la valeur 1 (ou n’importe quelle valeur), puis redémarrez Visual Studio. L’onglet **Sortie - Tests** de Visual Studio devrait maintenant contenir un nombre important de consignations. 
  
 ## <a name="see-also"></a>Voir aussi
 

@@ -29,10 +29,11 @@ translation.priority.ht:
 - tr-tr
 - zh-cn
 - zh-tw
-translationtype: Human Translation
-ms.sourcegitcommit: 5db97d19b1b823388a465bba15d057b30ff0b3ce
-ms.openlocfilehash: 5c2ab4063911852bbc79b8239693a01e0818b4a9
-ms.lasthandoff: 02/22/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: 47057e9611b824c17077b9127f8d2f8b192d6eb8
+ms.openlocfilehash: f880816f383712f87624467c9ed3b45a1c2ccb8c
+ms.contentlocale: fr-fr
+ms.lasthandoff: 05/13/2017
 
 ---
 # <a name="creating-a-ui-by-using-blend-for-visual-studio"></a>Création d'une interface utilisateur à l'aide de Blend pour Visual Studio
@@ -93,11 +94,11 @@ Blend pour Visual Studio vous aide à concevoir des applications de bureau Wind
 |-|-|  
 |![](../designers/media/b1_1.png "B1_1")|**Liste d’objets** Affiche une arborescence visuelle d’un document. Vous pouvez explorer divers niveaux de détail. Vous pouvez aussi ajouter des couches pour mieux disposer les objets sur la planche graphique. Vous pouvez ainsi les verrouiller et les masquer en groupe.|  
 |![](../designers/media/b1_2.png "B1_2")|**Indicateur du mode d’enregistrement** Indique si vous enregistrez les modifications apportées aux propriétés dans une chronologie.|  
-|![](../designers/media/b1_3.png "B1_3")|**Sélecteur de tables de montage séquentiel** Affiche la liste des tables de montage séquentiel que vous avez créées.|  
+|![](../designers/media/b1_3.png "B1_3")|**Sélecteur de tables de montage séquentiel** Affiche la liste des tables de montage séquentiel que vous avez créées.|  
 |![](../designers/media/b1_4.png "B1_4")|**Fermer la table de montage séquentiel** Ferme la table de montage séquentiel active.|  
 |![](../designers/media/b1_5.png "B1_5")|**Options de table de montage séquentiel** Permet de créer, dupliquer, inverser, supprimer, renommer ou fermer une table de montage séquentiel.|  
 |![](../designers/media/b1_6.png "B1_6")|**Contrôles de lecture** Permet de parcourir la chronologie. Vous pouvez également faire glisser la tête de lecture pour naviguer (ou *lire à vitesse variable*) dans la chronologie.|  
-|![](../designers/media/b1_7.png "B1_7")|**Rétablir l’étendue à** Permet de rétablir l’objet racine précédent ou l’étendue précédente de la liste d’objets. Cela n'est possible qu'à l'occasion de la modification d'un style ou d'un modèle.|  
+|![](../designers/media/b1_7.png "B1_7")|**Rétablir l’étendue à** Permet de rétablir l’objet racine précédent ou l’étendue précédente de la liste d’objets. Cela n’est possible qu’à l’occasion de la modification d’un style ou d’un modèle.|  
 |![](../designers/media/b1_8.png "B1_8")|**Enregistrer une image clé** Permet d’enregistrer une capture instantanée des propriétés de l’objet sélectionné au moment dans le temps actuel.|  
 |![](../designers/media/b1_9.png "B1_9")|**Options d’alignement** Permet de définir l’alignement de la chronologie, la résolution d’alignement, et de désactiver l’alignement de la chronologie.|  
 |![](../designers/media/97fa60b9-0caf-4387-9225-b57510d32209.png "97fa60b9-0caf-4387-9225-b57510d32209")|**Afficher/masquer**, **Verrouiller/déverrouiller** Permet d’afficher ou de masquer les options de visibilité et de verrouillage de la liste d’objets.|  

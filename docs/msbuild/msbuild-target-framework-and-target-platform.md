@@ -27,14 +27,15 @@ translation.priority.ht:
 - tr-tr
 - zh-cn
 - zh-tw
-translationtype: Human Translation
-ms.sourcegitcommit: 79460291e91f0659df0a4241e17616e55187a0e2
-ms.openlocfilehash: f91e102854a83cc70e7b7f4adbc2cd2afb727b07
-ms.lasthandoff: 02/22/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: 47057e9611b824c17077b9127f8d2f8b192d6eb8
+ms.openlocfilehash: 1628b0c5d74e642e1c52323a74bcd2279ad79436
+ms.contentlocale: fr-fr
+ms.lasthandoff: 05/13/2017
 
 ---
 # <a name="msbuild-target-framework-and-target-platform"></a>Framework cible et plateforme cible (MSBuild)
-Un projet peut être généré pour s’exécuter sur un *framework cible*, qui est une version particulière du .NET Framework, et sur une *plateforme cible*, qui est une architecture logicielle particulière.  Par exemple, vous pouvez cibler une application pour qu'elle s'exécute sur le .NET Framework 2.0, sur une plateforme 32 bits qui est compatible avec la famille de processeurs 802x86 (« x86 »). La combinaison de framework cible et de plateforme cible porte le nom de *contexte cible*.  
+Un projet peut être généré pour s’exécuter sur un *framework cible*, qui est une version particulière du .NET Framework, et sur une *plateforme cible*, qui est une architecture logicielle particulière.  Par exemple, vous pouvez cibler une application pour qu’elle s’exécute sur le .NET Framework 2.0, sur une plateforme 32 bits compatible avec la famille de processeurs 802x86 (« x86 »). La combinaison de framework cible et de plateforme cible porte le nom de *contexte cible*.  
   
 ## <a name="target-framework-and-profile"></a>Version cible du .NET Framework et profil cible  
  Une version cible du .NET Framework est la version particulière du [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] sur laquelle le projet généré doit s'exécuter. La spécification d'une version cible du .NET Framework est nécessaire, car elle active des fonctionnalités du compilateur et des références d'assemblys qui sont spécifiques à cette version du .NET Framework.  

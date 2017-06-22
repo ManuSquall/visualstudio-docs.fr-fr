@@ -30,10 +30,11 @@ translation.priority.ht:
 - tr-tr
 - zh-cn
 - zh-tw
-translationtype: Human Translation
-ms.sourcegitcommit: 5db97d19b1b823388a465bba15d057b30ff0b3ce
-ms.openlocfilehash: 1dee6e1a0e92ecf5c8be64c4c3c477cf31291203
-ms.lasthandoff: 02/22/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: 47057e9611b824c17077b9127f8d2f8b192d6eb8
+ms.openlocfilehash: fb1bcd92e8f7bda12e774b969da2c71dfc38ab2f
+ms.contentlocale: fr-fr
+ms.lasthandoff: 05/13/2017
 
 ---
 # <a name="how-to-create-and-apply-a-resource"></a>Guide pratique pour créer et appliquer une ressource
@@ -73,14 +74,14 @@ Les styles et les modèles des éléments du concepteur XAML sont stockés dans 
   
     -   Appliquer une ressource à une propriété. Dans la fenêtre Propriétés, cliquez sur le marqueur de propriété en regard de la valeur de propriété, choisissez **Ressource locale** ou **Ressource système**, puis sélectionnez une ressource disponible dans la liste qui apparaît.  
   
-         L'absence d'une ressource peut s'expliquer par le fait que son type ne correspond pas au type de la propriété.  
+         L’absence d’une ressource peut s’expliquer par le fait que son type ne correspond pas au type de la propriété.  
   
     -   Appliquer une ressource de modèle de style ou de contrôle à un contrôle. Ouvrez le menu contextuel d’un contrôle dans la fenêtre Structure du document, choisissez **Modifier un modèle** ou **Modifier d’autres modèles**, **Appliquer la ressource**, puis le nom du modèle de contrôle dans la liste qui s’affiche.  
   
         > [!NOTE]
         >  **Modifier un modèle** est utilisé pour appliquer des modèles de contrôle. **Modifier d’autres modèles** est utilisé pour appliquer d’autres types de modèle.  
   
-     Les ressources sont applicables si elles sont compatibles. Par exemple, une ressource de pinceau peut être appliquée à la propriété **Foreground** d’un contrôle <xref:Windows.UI.Xaml.Controls.TextBox>.  
+     Les ressources sont applicables si elles sont compatibles. Par exemple, une ressource de pinceau peut être appliquée à la propriété **Foreground<xref:Windows.UI.Xaml.Controls.TextBox> d’un contrôle** .  
   
 ### <a name="to-edit-a-resource"></a>Pour modifier une ressource  
   

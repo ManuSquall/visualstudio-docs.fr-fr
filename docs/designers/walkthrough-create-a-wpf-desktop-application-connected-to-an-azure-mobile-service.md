@@ -28,19 +28,20 @@ translation.priority.mt:
 - pl-pl
 - pt-br
 - tr-tr
-translationtype: Human Translation
-ms.sourcegitcommit: 5db97d19b1b823388a465bba15d057b30ff0b3ce
-ms.openlocfilehash: df243cc90a27f971c4e57eb6f9f6a251513d8fb2
-ms.lasthandoff: 02/22/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: 47057e9611b824c17077b9127f8d2f8b192d6eb8
+ms.openlocfilehash: 7716a0e9249c67760ae7b31160dcae89b77b9ca7
+ms.contentlocale: fr-fr
+ms.lasthandoff: 05/13/2017
 
 ---
 # <a name="walkthrough-create-a-wpf-desktop-application-connected-to-an-azure-mobile-service"></a>Procédure pas à pas : création d’une application de bureau WPF connectée à un service mobile Azure
 Vous pouvez utiliser Windows Presentation Foundation (WPF) pour créer rapidement une application de bureau moderne qui utilise un service mobile Azure pour stocker et fournir des données.  
   
-##  <a name="Requirements"></a> Conditions préalables  
- Les éléments suivants sont nécessaires pour effectuer cette procédure pas à pas :  
+##  <a name="Requirements"></a> Composants requis  
+ Les éléments suivants sont nécessaires pour effectuer cette procédure pas à pas :  
   
--   Visual Studio 2015 – toute version prenant en charge le développement WPF.  
+-   Visual Studio 2015 - toute version prenant en charge le développement WPF.  
   
 -   Un compte Microsoft Azure actif.  
   
@@ -82,7 +83,7 @@ Vous pouvez utiliser Windows Presentation Foundation (WPF) pour créer rapidemen
     >  Si vous n’acceptez pas les termes du contrat de licence, cliquez sur le bouton **Je refuse** . Dans ce cas, vous ne pouvez pas terminer le reste de la procédure pas à pas.  
   
 ## <a name="create-the-user-interface"></a>Créer l’interface utilisateur  
- L’étape suivante consiste à créer l’interface utilisateur de l’application. Tout d’abord, vous créez un contrôle utilisateur réutilisable qui affiche une disposition standard de deux volets côte à côte. Vous ajoutez le contrôle utilisateur dans la fenêtre d’application principale ainsi que des contrôles permettant d’entrer et d’afficher les données. Ensuite, vous écrivez du code pour définir l’interaction avec le serveur principal du service mobile.  
+ L’étape suivante consiste à créer l’interface utilisateur de l’application. Tout d’abord, vous créez un contrôle utilisateur réutilisable qui affiche une disposition standard de deux volets côte à côte. Vous ajoutez le contrôle utilisateur à la fenêtre d’application principale, ainsi que des contrôles permettant d’entrer et d’afficher les données. Ensuite, vous écrivez du code pour définir l’interaction avec le serveur principal du service mobile.  
   
 #### <a name="to-add-a-user-control"></a>Pour ajouter un contrôle utilisateur  
   
@@ -222,17 +223,17 @@ Vous pouvez utiliser Windows Presentation Foundation (WPF) pour créer rapidemen
   
 1.  Dans l’ **Explorateur de solutions**, ouvrez le fichier **MainWindow.xaml** .  
   
-2.  **Important**. Cette étape concerne uniquement C#. Si vous utilisez Visual Basic, passez à l’étape suivante. Dans le volet inférieur du concepteur, recherchez la ligne `xmlns:local=”clr-namespace:WPFQuickStart”` et remplacez-la par le code XAML suivant :  
+2.  **Important**. Cette étape concerne uniquement C#. Si vous utilisez Visual Basic, passez à l’étape suivante. Dans le volet inférieur du concepteur, recherchez la ligne `xmlns:local="clr-namespace:WPFQuickStart"` et remplacez-la par le code XAML suivant :  
   
     ```xaml  
-    xmlns:local=”clr-namespace:WPFQuickStart.Common”  
+    xmlns:local="clr-namespace:WPFQuickStart.Common"  
     ```  
   
 3.  Dans la boîte de dialogue **Propriétés** , développez le nœud de catégorie **Common** et choisissez la propriété **Title** , puis entrez `WPF Todo List` et appuyez sur la touche **Entrée** .  
   
      Notez que l’élément **Title** de la fenêtre XAML est remplacé par la nouvelle valeur. Vous pouvez modifier des propriétés XAML dans la fenêtre XAML ou la fenêtre **Propriétés** , les modifications sont synchronisées.  
   
-4.  Dans la fenêtre XAML, affectez à l’élément **Hauteur** la valeur `768`et à la propriété **Largeur** la valeur `1280`.  
+4.  Dans la fenêtre XAML, définissez la valeur de l’élément **Height** sur `768`et la valeur de la propriété **Width** sur `1280`.  
   
      Ces éléments correspondent aux propriétés **Height** et **Width** de la catégorie **Disposition** de la fenêtre **Propriétés** .  
   
@@ -502,7 +503,7 @@ Vous pouvez utiliser Windows Presentation Foundation (WPF) pour créer rapidemen
   
      L’URL pour le service est alors définie sur *https://wpfquickstart01.azure-mobile.net/*.  
   
-4.  Dans la liste **Base de données** , choisissez une option de base de données. Comme il s’agit d’une application qui ne sera probablement pas beaucoup utilisée, choisissez l’option **Créer une base de données SQL gratuite de 20 Mo** , ou choisissez la base de données gratuite déjà associée à votre abonnement.  
+4.  Dans la liste **Base de données** , choisissez une option de base de données. Comme il s’agit d’une application qui ne sera probablement pas beaucoup utilisée, choisissez l’option **Créer une base de données SQL gratuite de 20 Mo** , ou choisissez la base de données gratuite déjà associée à votre abonnement.  
   
 5.  Dans la liste **Région** , choisissez le centre de données dans lequel déployer le service mobile, puis choisissez le bouton **Suivant** (flèche droite).  
   
@@ -519,7 +520,7 @@ Vous pouvez utiliser Windows Presentation Foundation (WPF) pour créer rapidemen
   
 9. Dans la boîte de dialogue **Gérer les clés d’accès** , copiez la **Clé d’application**.  
   
-     Vous allez l’utiliser dans la procédure suivante.  
+     Vous l’utiliserez dans la procédure suivante.  
   
 #### <a name="to-create-a-table"></a>Pour créer une table  
   

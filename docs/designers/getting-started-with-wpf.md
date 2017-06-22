@@ -28,14 +28,15 @@ translation.priority.mt:
 - pl-pl
 - pt-br
 - tr-tr
-translationtype: Human Translation
-ms.sourcegitcommit: 5658ecf52637a38bc3c2a5ad9e85b2edebf7d445
-ms.openlocfilehash: b4c56d1428506de5998f4f430239422d72df9a44
-ms.lasthandoff: 02/22/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: 47057e9611b824c17077b9127f8d2f8b192d6eb8
+ms.openlocfilehash: a737c447bc97738c6e8f5285f672e9964578061b
+ms.contentlocale: fr-fr
+ms.lasthandoff: 05/13/2017
 
 ---
 # <a name="getting-started-with-wpf"></a>Bien démarrer avec WPF
-Windows Presentation Foundation (WPF) est une infrastructure d’interface utilisateur qui permet de créer des applications de bureau clientes. La plateforme de développement WPF prend en charge un large éventail de fonctionnalités de développement d’applications, notamment un modèle d’application, des ressources, des contrôles, des graphiques, une disposition, la liaison de données, des documents et la sécurité. S’agissant d’un sous-ensemble du .NET Framework, si vous avez déjà créé des applications avec le .NET Framework à l’aide d’ASP.NET ou de Windows Forms, l’environnement de programmation doit vous être familier. WPF utilise le langage XAML (Extensible Application Markup Language) pour fournir un modèle déclaratif à des fins de programmation d’applications. Cette section contient des rubriques de présentation et d’aide à la prise en main de WPF.  
+Windows Presentation Foundation (WPF) est un framework d’interface utilisateur qui permet de créer des applications de bureau clientes. La plateforme de développement WPF prend en charge un large éventail de fonctionnalités de développement d’applications, notamment un modèle d’application, des ressources, des contrôles, des graphiques, une disposition, la liaison de données, des documents et la sécurité. S’agissant d’un sous-ensemble du .NET Framework, si vous avez déjà créé des applications avec le .NET Framework à l’aide d’ASP.NET ou de Windows Forms, l’environnement de programmation doit vous être familier. WPF utilise le langage XAML (Extensible Application Markup Language) pour fournir un modèle déclaratif à des fins de programmation d’applications. Cette section contient des rubriques de présentation et d’aide à la prise en main de WPF.  
   
 ## <a name="where-should-i-start"></a>Où est-ce que je dois démarrer ?  
   

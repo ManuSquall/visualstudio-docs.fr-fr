@@ -37,10 +37,11 @@ translation.priority.ht:
 - tr-tr
 - zh-cn
 - zh-tw
-translationtype: Human Translation
-ms.sourcegitcommit: 79460291e91f0659df0a4241e17616e55187a0e2
-ms.openlocfilehash: 6a67893ef4326eaef3d3ca016f6da23e4687c780
-ms.lasthandoff: 02/22/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: 47057e9611b824c17077b9127f8d2f8b192d6eb8
+ms.openlocfilehash: e22d2cb649528d527cf37e80fda0ad49671863d3
+ms.contentlocale: fr-fr
+ms.lasthandoff: 05/13/2017
 
 ---
 # <a name="generatebootstrapper-task"></a>GenerateBootstrapper, tâche
@@ -166,8 +167,8 @@ Fournit un moyen automatisé de détecter, télécharger et installer une applic
   
      Si `true`, le programme d’amorçage exécute la validation XSD sur les éléments de programme d’amorçage d’entrée spécifiés. La valeur par défaut de ce paramètre est `false`.  
   
-## <a name="remarks"></a>Notes  
- Outre les paramètres énumérés ci-dessus, cette tâche hérite des paramètres de la classe <xref:Microsoft.Build.Tasks.TaskExtension>, qui hérite elle-même de la classe <xref:Microsoft.Build.Utilities.Task>. Pour obtenir la liste de ces paramètres supplémentaires et de leurs descriptions, consultez l’article [TaskExtension Base Class (Classe de base TaskExtension)](../msbuild/taskextension-base-class.md).  
+## <a name="remarks"></a>Remarques  
+ En plus des paramètres énumérés ci-dessus, cette tâche hérite des paramètres de la classe <xref:Microsoft.Build.Tasks.TaskExtension>, qui elle-même hérite de la classe <xref:Microsoft.Build.Utilities.Task>. Pour obtenir la liste de ces paramètres supplémentaires et leurs descriptions, consultez [TaskExtension Base Class](../msbuild/taskextension-base-class.md).  
   
 ## <a name="example"></a>Exemple  
  L’exemple suivant utilise la tâche `GenerateBootstrapper` pour installer une application qui doit avoir le composant requis [!INCLUDE[dnprdnlong](../code-quality/includes/dnprdnlong_md.md)] installé.  

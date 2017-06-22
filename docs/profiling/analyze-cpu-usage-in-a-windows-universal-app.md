@@ -29,10 +29,11 @@ translation.priority.mt:
 - pl-pl
 - pt-br
 - tr-tr
-translationtype: Human Translation
-ms.sourcegitcommit: a42f5a30375192c89c9984e40ba0104da98d7253
-ms.openlocfilehash: c0fa199f2ccbdc7b4e60b4295645ccf83792d435
-ms.lasthandoff: 03/07/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: 47057e9611b824c17077b9127f8d2f8b192d6eb8
+ms.openlocfilehash: 8e829f0c69a777dcdcda75aa9305b9202748f23e
+ms.contentlocale: fr-fr
+ms.lasthandoff: 05/13/2017
 
 ---
 # <a name="analyze-cpu-usage-in-a-universal-windows-app-uwp"></a>Analyser l’utilisation du processeur dans une application Windows universelle (UWP)
@@ -88,7 +89,7 @@ ms.lasthandoff: 03/07/2017
 ###  <a name="BKMK_CPU_utilization_timeline_graph"></a> Graphique chronologique d’utilisation de l’UC  
  ![Graphique chronologique CpuUtilization &#40;%&#41;](../profiling/media/cpu_use_wt_timelinegraph.png "CPU_USE_WT_TimelineGraph")  
   
- Le graphique d'utilisation de l'UC indique l'activité processeur de l'application sous forme de pourcentage du temps processeur total de tous les processeurs de l'appareil. Les données de ce rapport ont été collectées sur une machine double cœur. Les deux grandes pointes représentent l'activité processeur de deux clics de bouton. `GetMaxNumberButton_Click` s'effectue de manière synchrone sur un seul cœur, il est donc normal que la hauteur du graphique de la méthode ne dépasse jamais 50 %. `GetMaxNumberAsycButton_Click` s'exécute de manière asynchrone sur les deux cœurs, il est donc également normal que sa pointe soit presqu'aussi élevée qu'en cas d'utilisation de toutes les ressources processeur sur les deux cœurs.  
+ Le graphique d'utilisation de l'UC indique l'activité processeur de l'application sous forme de pourcentage du temps processeur total de tous les processeurs de l'appareil. Les données de ce rapport ont été collectées sur une machine double cœur. Les deux grandes pointes représentent l'activité processeur de deux clics de bouton. `GetMaxNumberButton_Click` s’effectue de manière synchrone sur un seul cœur, il est donc normal que la hauteur du graphique de la méthode ne dépasse jamais 50 %. `GetMaxNumberAsycButton_Click` s'exécute de manière asynchrone sur les deux cœurs, il est donc également normal que sa pointe soit presqu'aussi élevée qu'en cas d'utilisation de toutes les ressources processeur sur les deux cœurs.  
   
 ####  <a name="BKMK_Select_timeline_segments_to_view_details"></a> Sélectionner des segments chronologiques pour afficher les détails  
  Utilisez les barres de sélection de la chronologie de la **Session de diagnostic** pour vous concentrer sur les données de GetMaxNumberButton_Click :  
@@ -112,18 +113,18 @@ ms.lasthandoff: 03/07/2017
 |||  
 |-|-|  
 |![Étape 1](../profiling/media/procguid_1.png "ProcGuid_1")|Le nœud de premier niveau des arborescences d'appels de l'outil Utilisation de l'UC est un pseudo-nœud|  
-|![Étape 2](../profiling/media/procguid_2.png "ProcGuid_2")|Dans la plupart des applications, quand l'option **Afficher le code externe** est désactivée, le nœud de deuxième niveau est un nœud **[Code externe]** contenant le code système et de l'infrastructure qui démarre et arrête l'application, dessine l'interface utilisateur, contrôle la planification des threads et fournit d'autres services de niveau inférieur à l'application.|  
-|![Étape 3](../profiling/media/procguid_3.png "ProcGuid_3")|Les enfants du nœud de deuxième niveau sont les méthodes en code utilisateur et des routines asynchrones appelées ou créées par le code système et d'infrastructure de deuxième niveau.|  
+|![Étape 2](../profiling/media/procguid_2.png "ProcGuid_2")|Dans la plupart des applications, quand l'option **Afficher le code externe** est désactivée, le nœud de deuxième niveau est un nœud **[Code externe]** contenant le code système et framework qui démarre et arrête l'application, dessine l'interface utilisateur, contrôle la planification des threads et fournit d'autres services de niveau inférieur à l'application.|  
+|![Étape 3](../profiling/media/procguid_3.png "ProcGuid_3")|Les enfants du nœud de deuxième niveau sont les méthodes en code utilisateur et des routines asynchrones appelées ou créées par le code système et framework de deuxième niveau.|  
 |![Étape 4](../profiling/media/procguid_4.png "ProcGuid_4")|Les nœuds enfants d'une méthode contiennent des données seulement pour les appels de la méthode parente. Lorsque l'option **Afficher le Code externe** est désactivée, les méthodes d'application peuvent également contenir un nœud **[Code externe]** .|  
   
 ####  <a name="BKMK_External_Code"></a> Code externe  
- Le code externe est constitué des fonctions des composants système et infrastructure exécutés par le code que vous écrivez. Le code externe comprend des fonctions qui démarrent et arrêtent l’application, dessinent l’interface utilisateur, contrôlent les threads et fournissent d’autres services de bas niveau à l’application. Dans la plupart des cas, vous ne serez pas intéressé par le code externe ; par conséquent, l'arborescence des appels de l'utilisation du processeur regroupe les fonctions externes d'une méthode utilisateur en un seul nœud **[Code externe]** .  
+ Le code externe est constitué des fonctions des composants système et framework exécutés par le code que vous écrivez. Le code externe comprend des fonctions qui démarrent et arrêtent l’application, dessinent l’interface utilisateur, contrôlent les threads et fournissent d’autres services de bas niveau à l’application. Dans la plupart des cas, vous n’êtes pas intéressé par le code externe. Par conséquent, l’arborescence des appels de l’utilisation du processeur regroupe les fonctions externes d’une méthode utilisateur en un seul nœud **[Code externe]**.  
   
  Quand vous voulez afficher les chemins d'appel du code externe, choisissez **Afficher le code externe** dans la liste **Filtrer la vue** , puis **Appliquer**.  
   
  ![Choisir Filtrer l’affichage, puis Afficher le code externe](../profiling/media/cpu_use_wt_filterview.png "CPU_USE_WT_FilterView")  
   
- N'oubliez pas que de nombreuses chaînes d'appel en code externe sont profondément imbriquées, la largeur de la colonne Nom de fonction ne peut pas dépasser la largeur d'affichage de presque tous les moniteurs d'ordinateur, sauf les plus larges. Si tel est le cas, les noms de fonction sont affichés sous forme de **[…]**:  
+ N'oubliez pas que de nombreuses chaînes d'appel en code externe sont profondément imbriquées, la largeur de la colonne Nom de fonction ne peut pas dépasser la largeur d'affichage de presque tous les moniteurs d'ordinateur, sauf les plus larges. Si tel est le cas, les noms de fonction sont affichés sous forme de **[…]** :  
   
  ![Code externe imbriqué dans l’arborescence des appels](../profiling/media/cpu_use_wt_showexternalcodetoowide.png "CPU_USE_WT_ShowExternalCodeTooWide")  
   
@@ -141,14 +142,14 @@ ms.lasthandoff: 03/07/2017
 |**Processeur auto (ms)**|Nombre de millisecondes utilisées par les appels à la fonction dans la plage de temps sélectionnée et les fonctions appelées par la fonction.|  
 |**Module**|Nom du module contenant la fonction, ou le nombre de modules contenant les fonctions dans un nœud [Code externe].|  
   
-###  <a name="BKMK_Asynchronous_functions_in_the_CPU_Usage_call_tree"></a> Fonctions asynchrones de l’arborescence des appels de l’utilisation du processeur  
- Lorsque le compilateur rencontre une méthode asynchrone, il crée une classe masquée pour contrôler l'exécution de la méthode. Conceptuellement, la classe est une machine à états qui inclut la liste des fonctions générées par le compilateur qui appellent les opérations de la méthode d'origine en mode asynchrone, ainsi que les rappels, le planificateur et les itérateurs requis. Quand la méthode d'origine est appelée par une méthode parente, le runtime supprime la méthode du contexte d'exécution du parent et exécute les méthodes de la classe masquée dans le contexte du code système et de l'infrastructure qui contrôle l'exécution de l'application. Les méthodes asynchrones sont souvent, mais pas toujours, exécutées sur un ou plusieurs threads différents. Ce code est affiché dans l'arborescence des appels de l'utilisation du processeur en tant qu'enfants du nœud **[Code externe]** situé immédiatement sous le nœud supérieur de l'arborescence.  
+###  <a name="BKMK_Asynchronous_functions_in_the_CPU_Usage_call_tree"></a> Fonctions asynchrones de l'arborescence des appels de l'utilisation du processeur  
+ Quand le compilateur rencontre une méthode asynchrone, il crée une classe masquée pour contrôler l’exécution de la méthode. Conceptuellement, la classe est une machine à états qui inclut la liste des fonctions générées par le compilateur qui appellent les opérations de la méthode d'origine en mode asynchrone, ainsi que les rappels, le planificateur et les itérateurs requis. Quand la méthode d’origine est appelée par une méthode parente, le runtime supprime la méthode du contexte d’exécution du parent et exécute les méthodes de la classe masquée dans le contexte du code système et de framework qui contrôle l’exécution de l’application. Les méthodes asynchrones sont souvent, mais pas toujours, exécutées sur un ou plusieurs threads différents. Ce code est affiché dans l'arborescence des appels de l'utilisation du processeur en tant qu'enfants du nœud **[Code externe]** situé immédiatement sous le nœud supérieur de l'arborescence.  
   
  Pour le voir dans notre exemple, resélectionnez le segment `GetMaxNumberAsyncButton_Click` dans la chronologie.  
   
  ![Sélection du rapport GetMaxNumberAsyncButton&#95;Click](../profiling/media/cpu_use_wt_getmaxnumberasync_selected.png "CPU_USE_WT_GetMaxNumberAsync_Selected")  
   
- Les deux premiers nœuds sous **[Code externe]** sont les méthodes générées par le compilateur de la classe de la machine d'état. Le troisième nœud est l'appel de la méthode d'origine. En développant les méthodes générées, vous avez un aperçu de ce qui se passe.  
+ Les deux premiers nœuds sous **[Code externe]** sont les méthodes générées par le compilateur de la classe de la machine d'état. Le troisième nœud est l'appel de la méthode d'origine. En développant les méthodes générées, vous obtenez un aperçu de ce qui se passe.  
   
  ![Arborescence des appels GetMaxNumberAsyncButton&#95;Click développée](../profiling/media/cpu_use_wt_getmaxnumberasync_expandedcalltree.png "CPU_USE_WT_GetMaxNumberAsync_ExpandedCallTree")  
   
@@ -163,7 +164,7 @@ ms.lasthandoff: 03/07/2017
   
 -   Notez que `MainPage::<GetNumberAsync>b__b` consacre plus de temps au [Code externe] qu'à l'exécution de la méthode GetNumber. Une grande partie de ce temps est consacré au traitement des opérations asynchrones. Essayez d'augmenter le nombre de tâches (défini dans la constante `NUM_TASKS` de MainPage.xaml.cs) et de réduire le nombre d'itérations dans `GetNumber` (modifiez la valeur `MIN_ITERATIONS`). Exécutez le scénario de collecte et comparez l'activité processeur de `MainPage::<GetNumberAsync>b__b` à celle de la session de diagnostic d'Utilisation de l'UC d'origine. Essayez de réduire les tâches et d'augmenter les itérations.  
   
--   Souvent, les utilisateurs ne s'intéressent pas aux performances réelles de votre application, mais aux performances perçues et à la réactivité de l'application. L'outil Réactivité de l'interface utilisateur XAML vous montre les détails de l'activité sur le thread d'interface utilisateur qui affecte la perception de la réactivité.  
+-   Souvent, les utilisateurs ne s’intéressent pas aux performances réelles de votre application, mais aux performances perçues et à la réactivité de l’application. L'outil Réactivité de l'interface utilisateur XAML vous montre les détails de l'activité sur le thread d'interface utilisateur qui affecte la perception de la réactivité.  
   
      Créez une session dans le hub Performances et diagnostics et ajoutez les outils Réactivité de l'interface utilisateur XAML et Utilisation de l'UC. Exécutez le scénario de collection. À ce stade, le rapport ne vous dit probablement rien que vous ne sachiez déjà, mais les différences entre les graphiques chronologiques **Utilisation du thread d’interface utilisateur** des deux méthodes sont frappantes. Dans les applications complexes du monde réel, la combinaison des outils peut être très utile.  
   
