@@ -32,9 +32,10 @@ translation.priority.mt:
 - pl-pl
 - pt-br
 - tr-tr
-translationtype: Human Translation
+ms.translationtype: Human Translation
 ms.sourcegitcommit: 5db97d19b1b823388a465bba15d057b30ff0b3ce
 ms.openlocfilehash: 1777df83f2c2764e173300f897b18a699a38c197
+ms.contentlocale: fr-fr
 ms.lasthandoff: 02/22/2017
 
 ---
@@ -113,7 +114,7 @@ vue Threads
  Quand vous sélectionnez un point dans un segment d’exécution, le visualiseur concurrentiel recherche ce point dans le temps sur la pile des appels appropriée, puis affiche un signe d’insertion noir au-dessus du point sélectionné dans le segment d’exécution et affiche la pile des appels elle-même sous l’onglet **Pile active**. Vous pouvez sélectionner plusieurs points sur le segment d’exécution.  
   
 > [!NOTE]
->  Le visualiseur concurrentiel n’est parfois pas en mesure de résoudre une sélection sur un segment d’exécution. En général, ceci se produit quand la durée du segment est inférieure à&1; milliseconde.  
+>  Le visualiseur concurrentiel n’est parfois pas en mesure de résoudre une sélection sur un segment d’exécution. En général, ceci se produit quand la durée du segment est inférieure à 1 milliseconde.  
   
  Pour obtenir un profil d’exécution pour tous les threads activés (non masqués) dans la période de temps sélectionnée, choisissez le bouton **Exécution** dans la légende active.  
   
