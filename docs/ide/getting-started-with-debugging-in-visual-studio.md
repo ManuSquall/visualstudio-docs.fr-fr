@@ -27,9 +27,10 @@ translation.priority.ht:
 - tr-tr
 - zh-cn
 - zh-tw
-translationtype: Human Translation
+ms.translationtype: Human Translation
 ms.sourcegitcommit: 5db97d19b1b823388a465bba15d057b30ff0b3ce
 ms.openlocfilehash: 9226dacfa63287857c09e5c6945363ccafadc2c7
+ms.contentlocale: fr-fr
 ms.lasthandoff: 02/22/2017
 
 ---
@@ -48,7 +49,7 @@ Visual Studio intègre un ensemble puissant d’outils de génération et de dé
 
  ![Bouton de version Debug Visual Studio](../ide/media/vs_ide_gs_debug_build_type1.PNG "Vs_ide_gs_debug_build_type1")  
 
- Vous pouvez également cibler une plateforme de génération spécifique, telle que **x86** (processeurs Intel&32; bits), **x64** (processeurs Intel&64; bits) et **ARM** (processeurs ARM uniquement pris en charge pour certains types d’applications). La valeur par défaut est **x86** pour les projets managés et natifs. Pour modifier cette valeur, cliquez sur la liste déroulante Plateforme de génération, puis sélectionnez une autre plateforme ou **Gestionnaire de configurations**.  
+ Vous pouvez également cibler une plateforme de génération spécifique, telle que **x86** (processeurs Intel 32 bits), **x64** (processeurs Intel 64 bits) et **ARM** (processeurs ARM uniquement pris en charge pour certains types d’applications). La valeur par défaut est **x86** pour les projets managés et natifs. Pour modifier cette valeur, cliquez sur la liste déroulante Plateforme de génération, puis sélectionnez une autre plateforme ou **Gestionnaire de configurations**.  
 
  ![Fenêtre Gestionnaire de fichiers de configuration Visual Studio](../ide/media/vs_ide_gs_debug_build_cf_mgr.PNG "Vs_ide_gs_debug_build_cf_mgr")  
 
