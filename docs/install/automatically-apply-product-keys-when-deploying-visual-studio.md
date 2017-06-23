@@ -50,7 +50,7 @@ Vous pouvez appliquer votre clé de produit par programmation dans le cadre du s
  Voici un exemple de ligne de commande visant à appliquer la licence pour Visual Studio 2017 Enterprise, qui a un code MPC de 08860, avec une clé de produit `AAAAA-BBBBB-CCCCC-DDDDDD-EEEEEE`, en supposant une installation à un emplacement par défaut :
 
  ```cmd
- C:\Program Files (x86)\Microsoft Visual Studio\2017\Enterprise\Common7\IDE\StorePID.exe AAAAA-BBBBB-CCCCC-DDDDDD-EEEEEE 08860
+ "C:\Program Files (x86)\Microsoft Visual Studio\2017\Enterprise\Common7\IDE\StorePID.exe" AAAAA-BBBBB-CCCCC-DDDDDD-EEEEEE 08860
  ```
 
  Le tableau suivant répertorie les codes MPC pour chaque édition de Visual Studio :
