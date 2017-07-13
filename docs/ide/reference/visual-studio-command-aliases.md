@@ -35,13 +35,15 @@ translation.priority.ht:
 - tr-tr
 - zh-cn
 - zh-tw
-translationtype: Human Translation
+ms.translationtype: Human Translation
 ms.sourcegitcommit: 5db97d19b1b823388a465bba15d057b30ff0b3ce
 ms.openlocfilehash: 0baf22ca488f4500fb3f4e845a0957b6225dd327
-ms.lasthandoff: 02/22/2017
+ms.contentlocale: fr-fr
+ms.lasthandoff: 05/19/2017
 
 ---
-# <a name="visual-studio-command-aliases"></a>Alias de commandes Visual Studio
+# Alias de commandes Visual Studio
+<a id="visual-studio-command-aliases" class="xliff"></a>
 Les alias constituent un moyen rapide d’entrer une commande dans la zone **Rechercher/Commande** ou la fenêtre **Commande** en abrégeant le texte nécessaire pour exécuter la commande. Par exemple, au lieu d’entrer le texte `>File.OpenFile` pour afficher la boîte de dialogue **Ouvrir un fichier**, vous pouvez utiliser l’alias prédéfini `>of`.  
   
  Tapez `alias` dans la fenêtre **Commande** pour afficher la liste des alias actuels et leurs définitions. Tapez `>cls` pour effacer le contenu de la fenêtre **Commande**. Si vous souhaitez voir l’alias d’une commande spécifique, tapez `alias <command name>`.  
@@ -142,7 +144,8 @@ Les alias constituent un moyen rapide d’entrer une commande dans la zone **Rec
 |Afficher les processus|&#124;|Debug.ListProcesses|  
 |[Répertorier les threads, commande](../../ide/reference/list-threads-command.md)|~ ~*k ~\*kb|Debug.ListThreads Debug.ListTheads /AllThreads|  
   
-## <a name="see-also"></a>Voir aussi  
+## Voir aussi
+<a id="see-also" class="xliff"></a>  
  [Commandes Visual Studio](../../ide/reference/visual-studio-commands.md)   
  [Fenêtre Commande](../../ide/reference/command-window.md)   
  [Rechercher/Commande, zone](../../ide/find-command-box.md)
