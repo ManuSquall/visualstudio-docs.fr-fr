@@ -42,17 +42,19 @@ translation.priority.ht:
 - tr-tr
 - zh-cn
 - zh-tw
-translationtype: Human Translation
-ms.sourcegitcommit: 5658ecf52637a38bc3c2a5ad9e85b2edebf7d445
-ms.openlocfilehash: 50f1d083b54ecc8418cac66086b40de8e3c69b73
-ms.lasthandoff: 02/22/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: 5ea9179ad37514ffad4876177b05150eecc22def
+ms.openlocfilehash: e2852ef4eb48247a97fe513efc7cdecb89ec619a
+ms.contentlocale: fr-fr
+ms.lasthandoff: 05/24/2017
 
 ---
-# <a name="web-browser-environment-options-dialog-box"></a>Navigateur web, Environnement, boîte de dialogue Options | Microsoft Docs
+# Navigateur web, Environnement, boîte de dialogue Options | Microsoft Docs
+<a id="web-browser-environment-options-dialog-box" class="xliff"></a>
 Définit les options à la fois pour le navigateur web interne et pour Internet Explorer. Pour accéder à cette boîte de dialogue, cliquez sur **Options** dans le menu **Outils**, développez le dossier **Environnement**, puis sélectionnez **Navigateur web**.  
   
 > [!NOTE]
->  Les boîtes de dialogue et les commandes de menu qui s'affichent peuvent être différentes de celles qui sont décrites dans l'aide, en fonction de vos paramètres actifs ou de l'édition utilisée. Pour modifier vos paramètres, choisissez Importation et exportation de paramètres dans le menu Outils. Pour plus d’informations, consultez [Personnalisation des paramètres de développement dans Visual Studio](http://msdn.microsoft.com/en-us/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
+>  Les boîtes de dialogue et les commandes de menu qui s'affichent peuvent être différentes de celles qui sont décrites dans l'aide, en fonction de vos paramètres actifs ou de l'édition utilisée. Pour modifier vos paramètres, choisissez Importation et exportation de paramètres dans le menu Outils. Pour plus d’informations, consultez [Personnaliser l’IDE Visual Studio](../../ide/personalizing-the-visual-studio-ide.md).  
   
 > [!IMPORTANT]
 >  L’ouverture de certains fichiers ou composants à partir du web peut entraîner l’exécution de code sur votre ordinateur.  
@@ -78,7 +80,8 @@ Définit les options à la fois pour le navigateur web interne et pour Internet 
 > [!NOTE]
 >  Pour remplacer le navigateur web interne de Visual Studio, qui est une version d’Internet Explorer, par un autre navigateur web externe, utilisez la boîte de dialogue Naviguer avec.  
   
-## <a name="see-also"></a>Voir aussi  
+## Voir aussi
+<a id="see-also" class="xliff"></a>  
  [Environnement, boîte de dialogue Options](../../ide/reference/environment-options-dialog-box.md)   
  [Général, Environnement, boîte de dialogue Options](../../ide/reference/general-environment-options-dialog-box.md)   
  [Concepteur HTML](http://msdn.microsoft.com/Library/640043cc-3657-4677-a091-bc315e636477)

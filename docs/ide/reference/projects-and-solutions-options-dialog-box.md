@@ -30,19 +30,22 @@ translation.priority.ht:
 - tr-tr
 - zh-cn
 - zh-tw
-translationtype: Human Translation
-ms.sourcegitcommit: 5658ecf52637a38bc3c2a5ad9e85b2edebf7d445
-ms.openlocfilehash: 5c6c36ca969d5ca9ca3957a886ce45597159bc5c
-ms.lasthandoff: 02/22/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: 5ea9179ad37514ffad4876177b05150eecc22def
+ms.openlocfilehash: a41015624d9c64e053770707bf09b73d8606cb03
+ms.contentlocale: fr-fr
+ms.lasthandoff: 05/24/2017
 
 ---
-# <a name="projects-and-solutions-options-dialog-box"></a>Projets et solutions, boîte de dialogue Options
+# Projets et solutions, boîte de dialogue Options
+<a id="projects-and-solutions-options-dialog-box" class="xliff"></a>
 Définit le chemin par défaut des dossiers du projet [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] et détermine le comportement par défaut de la fenêtre **Sortie**, de la **Liste des tâches** et de l’**Explorateur de solutions** au fur et à mesure que les projets sont développés et générés. Pour accéder à cette boîte de dialogue, cliquez sur **Outils / Options**, développez **Projets et solutions**, puis cliquez sur **Général**.  
   
 > [!NOTE]
->  Les options disponibles dans les boîtes de dialogue, ainsi que les noms et emplacements des commandes de menu que vous voyez, peuvent différer de ce qui est décrit dans l'aide selon vos paramètres actifs ou votre édition. Cette page d’aide concerne les **Paramètres de développement généraux**. Pour afficher ou modifier vos paramètres, choisissez **Importation et exportation de paramètres** dans le menu **Outils**. Pour plus d’informations, consultez [Personnalisation des paramètres de développement dans Visual Studio](http://msdn.microsoft.com/en-us/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
+>  Les options disponibles dans les boîtes de dialogue, ainsi que les noms et emplacements des commandes de menu que vous voyez, peuvent différer de ce qui est décrit dans l'aide selon vos paramètres actifs ou votre édition. Cette page d’aide concerne les **Paramètres de développement généraux**. Pour afficher ou modifier vos paramètres, choisissez **Importation et exportation de paramètres** dans le menu **Outils**. Pour plus d’informations, consultez [Personnaliser l’IDE Visual Studio](../../ide/personalizing-the-visual-studio-ide.md).  
   
-## <a name="settings"></a>Paramètres  
+## Paramètres
+<a id="settings" class="xliff"></a>  
  **Emplacement des projets**  
  Définit l’emplacement par défaut où sont créés les projets et les répertoires et dossiers de solution. Plusieurs boîtes de dialogue utilisent aussi l'emplacement défini dans cette option comme point de démarrage des dossiers. Par exemple, la boîte de dialogue Ouvrir un projet utilise cet emplacement pour le raccourci Mes projets.  
   
@@ -78,5 +81,6 @@ Définit le chemin par défaut des dossiers du projet [!INCLUDE[vsprvs](../../co
  **Inviter à utiliser des noms symboliques au moment de renommer les fichiers**  
  Lorsque cette option est sélectionnée, un message s'affiche et demande si [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] doit également renommer toutes les références du projet à l'élément de code.  
   
-## <a name="see-also"></a>Voir aussi  
+## Voir aussi
+<a id="see-also" class="xliff"></a>  
  [Options, boîte de dialogue, Projets et solutions, Générer et exécuter](../../ide/reference/options-dialog-box-projects-and-solutions-build-and-run.md)

@@ -36,18 +36,21 @@ translation.priority.mt:
 - pl-pl
 - pt-br
 - tr-tr
-translationtype: Human Translation
-ms.sourcegitcommit: ca7c86466fa23fb21a932f26dc24e37c71cf29b4
-ms.openlocfilehash: b88c533d613d531a7dcc24e0610e2fb2a7a3d880
-ms.lasthandoff: 04/05/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: 8bf0b097be929b30627e0f1139c6e0b145933ab4
+ms.openlocfilehash: 5a8237e5c437878b22bd3c67a3a4ba2cdc3fa126
+ms.contentlocale: fr-fr
+ms.lasthandoff: 05/26/2017
 
 ---
-# <a name="prerequisites-dialog-box"></a>Prerequisites Dialog Box
+# Prerequisites Dialog Box
+<a id="prerequisites-dialog-box" class="xliff"></a>
 Cette boîte de dialogue spécifie quels composants requis sont installés, comment ils sont installés et l'ordre dans lequel les packages sont installés.  
   
  Pour accéder à cette boîte de dialogue, sélectionnez un nœud de projet dans l’**Explorateur de solutions**, puis cliquez sur **Propriétés** dans le menu **Projet**. Lorsque le **Concepteur de projets** apparaît, cliquez sur l'onglet **Publier** . Dans la page **Publier**, cliquez sur le bouton **Composants requis**. Pour les projets d’installation, dans le menu **Projet**, cliquez sur **Propriétés**. Quand la boîte de dialogue **Pages de propriétés** apparaît, cliquez sur **Composants requis**.  
   
-## <a name="uielement-list"></a>Liste UIElement  
+## Liste UIElement
+<a id="uielement-list" class="xliff"></a>  
   
 |Élément|Description|  
 |-------------|-----------------|  
@@ -58,17 +61,18 @@ Cette boîte de dialogue spécifie quels composants requis sont installés, comm
 |**Télécharger les composants requis à partir de l’emplacement de mon application**|Fait en sorte que les composants requis soient installés à partir du même emplacement que l'application. Copie tous les packages de composants requis à l'emplacement de publication. Pour que cette option fonctionne, les packages de composants requis doivent être sur l'ordinateur de développement.|  
 |**Télécharger les composants requis depuis l’emplacement suivant**|Fait en sorte que les composants requis soient installés à partir de l'emplacement que vous sélectionnez. Vous pouvez utiliser le bouton **Parcourir** pour sélectionner un emplacement.|  
   
-## <a name="prerequisites-information"></a>Informations sur les composants requis  
+## Informations sur les composants requis
+<a id="prerequisites-information" class="xliff"></a>  
  Les composants requis qui apparaissent dans la boîte de dialogue **Composants requis** peuvent différer de ceux de la liste suivante. Les packages de prérequis répertoriés dans la **boîte de dialogue Composants requis** sont définis automatiquement la première fois que vous ouvrez la boîte de dialogue. Si vous modifiez ultérieurement le framework cible du projet, vous devrez sélectionner manuellement les composants requis pour qu'ils correspondent au nouveau framework cible.  
   
 |Élément|Description|  
 |-------------|-----------------|  
 |**.NET Framework 3.5 SP1**|Ce package installe les éléments suivants :<br /><br /> - .NET Framework versions 2.0, 3.0 et 3.5.<br />- Prise en charge de toutes les versions de .NET Framework sur les systèmes d’exploitation 32 bits (x86) et 64 bits (x64).<br />- Modules linguistiques pour chaque version de .NET Framework installée avec le package.<br />- Service Packs pour .NET Framework 2.0 et 3.0.<br /><br /> .NET Framework 3.0 est inclus avec Windows Vista et .NET Framework 3.5 avec [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]. .NET Framework 3.5 est requis pour tous les projets Visual Basic et Visual C# qui sont compilés pour les systèmes d’exploitation 32 bits et dont la version cible de .NET Framework est **.NET Framework 3.5**, ainsi que pour les projets Visual Basic et Visual C# compilés pour les systèmes d’exploitation 64 bits. (IA64 non pris en charge.) Notez que les projets Visual Basic et Visual C# sont compilés par défaut pour toutes les architectures UC. Pour plus d’informations, consultez [Vue d’ensemble du multiciblage Visual Studio](../../ide/visual-studio-multi-targeting-overview.md), [Redistributing the .NET Framework](http://msdn.microsoft.com/en-us/a18d0456-fd89-493e-97f4-756505bfe287) (Redistribution du .NET Framework) et [Composants requis pour le déploiement d’applications 64 bits](../../deployment/deploying-prerequisites-for-64-bit-applications.md).<br /><br /> Cet élément est sélectionné par défaut.|  
-|**.NET Framework 3.5 SP1 Client Profile**|.NET Framework Client Profile est un sous-ensemble de .NET Framework 3.5 SP1 complet qui cible des applications clientes. Il fournit un sous-ensemble simplifié de fonctionnalités Windows Presentation Foundation (WPF), Windows Forms, Windows Communication Foundation (WCF) et ClickOnce. Cela permet des scénarios de déploiement rapides pour les applications WPF, Windows Forms, WCF et console qui ciblent .NET Framework Client Profile. Pour plus d’informations, consultez [.NET Framework Client Profile](http://msdn.microsoft.com/Library/f0219919-1f02-4588-8704-327a62fd91f1).|  
+|**.NET Framework 3.5 SP1 Client Profile**|.NET Framework Client Profile est un sous-ensemble de .NET Framework 3.5 SP1 complet qui cible des applications clientes. Il fournit un sous-ensemble simplifié de fonctionnalités Windows Presentation Foundation (WPF), Windows Forms, Windows Communication Foundation (WCF) et ClickOnce. Cela permet des scénarios de déploiement rapides pour les applications WPF, Windows Forms, WCF et console qui ciblent .NET Framework Client Profile. Pour plus d’informations, consultez [.NET Framework Client Profile](/dotnet/framework/deployment/client-profile).|  
 |**Microsoft .NET Framework 4 (x86 et x64)**|Ce package installe .NET Framework 4 pour les plateformes x64 et x86.<br /><br /> Pour plus d’informations, consultez [Vue d’ensemble du multiciblage Visual Studio](../../ide/visual-studio-multi-targeting-overview.md), [Redistributing the .NET Framework](http://msdn.microsoft.com/en-us/a18d0456-fd89-493e-97f4-756505bfe287) (Redistribution du .NET Framework) et [Composants requis pour le déploiement d’applications 64 bits](../../deployment/deploying-prerequisites-for-64-bit-applications.md).<br /><br /> Cet élément est sélectionné par défaut.|  
-|**Microsoft .NET Framework 4 Client Profile (x86 et x64)**|.NET Framework 4 Client Profile est un sous-ensemble de .NET Framework 4 complet qui cible des applications clientes. Il fournit un sous-ensemble simplifié de fonctionnalités Windows Presentation Foundation (WPF), Windows Forms, Windows Communication Foundation (WCF) et ClickOnce. Cela permet des scénarios de déploiement rapides pour les applications WPF, Windows Forms et console qui ciblent .NET Framework 4 Client Profile. Pour plus d’informations, consultez [.NET Framework Client Profile](http://msdn.microsoft.com/Library/f0219919-1f02-4588-8704-327a62fd91f1).|  
+|**Microsoft .NET Framework 4 Client Profile (x86 et x64)**|.NET Framework 4 Client Profile est un sous-ensemble de .NET Framework 4 complet qui cible des applications clientes. Il fournit un sous-ensemble simplifié de fonctionnalités Windows Presentation Foundation (WPF), Windows Forms, Windows Communication Foundation (WCF) et ClickOnce. Cela permet des scénarios de déploiement rapides pour les applications WPF, Windows Forms et console qui ciblent .NET Framework 4 Client Profile. Pour plus d’informations, consultez [.NET Framework Client Profile](/dotnet/framework/deployment/client-profile).|  
 |**Assemblys PIA (Primary Interop Assembly) Microsoft Office 2007**|Ce package installe les assemblys PIA pour les produits Microsoft Office 2007. Ils permettent au code managé d'interagir avec le modèle d'objet COM d'une application Microsoft Office. Pour plus d’informations, consultez [Assemblys PIA (Primary Interop Assembly) Office](/office-dev/office-dev/office-primary-interop-assemblies).|  
-|**Microsoft Visual Basic PowerPacks version 10.0**|Les Power Packs sont des compléments, des contrôles, des composants et des outils destinés à vous aider à développer des applications Visual Basic. Cette version contient le composant <xref:Microsoft.VisualBasic.PowerPacks.Printing.PrintForm>, qui vous permet d’imprimer le contenu d’un Windows Form, et la Bibliothèque de compatibilité des imprimantes, qui permet au code Printer Visual Basic 6.0 de s’exécuter sans modification.|  
+|**Microsoft Visual Basic PowerPacks version 10.0**|Les Power Packs sont des compléments, des contrôles, des composants et des outils destinés à vous aider à développer des applications Visual Basic. Cette version contient le composant <xref:Microsoft.VisualBasic.PowerPacks.Printing.PrintForm>, qui vous permet d'imprimer le contenu d'un Windows Form, et la Bibliothèque de compatibilité des imprimantes, qui permet au code Printer Visual Basic 6.0 de s'exécuter sans modification.|  
 |**Microsoft Visual F# Runtime for .NET 2.0**|Ce package installe les bibliothèques Runtime Visual F# pour les systèmes d'exploitation x64 et x86, permettant ainsi la prise en charge de la programmation fonctionnelle, mais aussi de la programmation orientée objet et impérative (procédurale) traditionnelle. Ce package doit être installé si l'application ou ses composants sont créés dans Visual F# et .NET Framework 2.0, .NET Framework 3.0 ou .NET Framework 3.5.<br /><br /> Pour plus d’informations, consultez [Informations de référence du langage F#](http://msdn.microsoft.com/Library/16b706f8-b5f2-4ff7-b2c1-64df33cd6adf).|  
 |**Microsoft Visual F# Runtime for .NET 4.0**|Ce package installe les bibliothèques Runtime Visual F# pour les systèmes d'exploitation x64 et x86, permettant ainsi la prise en charge de la programmation fonctionnelle, mais aussi de la programmation orientée objet et impérative (procédurale) traditionnelle. Ce package doit être installé si l'application ou ses composants sont créés dans Visual F# et .NET Framework 4.<br /><br /> Pour plus d’informations, consultez [Informations de référence du langage F#](http://msdn.microsoft.com/Library/16b706f8-b5f2-4ff7-b2c1-64df33cd6adf).|  
 |**Visionneuse de rapports Microsoft Visual Studio 2010**|Ce package installe les contrôles de la visionneuse de rapports que vous pouvez utiliser pour ajouter des rapports de données élaborés à Windows Forms et aux applications ASP.NET.|  
@@ -81,7 +85,8 @@ Cette boîte de dialogue spécifie quels composants requis sont installés, comm
 |**Windows Installer 3.1**|Ce package installe la version 3.1 du redistribuable Microsoft Windows Installer, qui permet l'installation de projets d'installation Windows Installer. Il est préinstallé sur Windows Server 2003 avec SP1 et versions ultérieures.<br /><br /> Cet élément est sélectionné par défaut.|  
 |**Windows Installer 4.5**|Ce package installe la version 4.5 du redistribuable Microsoft Windows Installer, qui permet l’installation de projets d’installation Windows Installer.|  
   
-## <a name="see-also"></a>Voir aussi  
+## Voir aussi
+<a id="see-also" class="xliff"></a>  
  [Page Publier, Concepteur de projets](../../ide/reference/publish-page-project-designer.md)   
  [Prérequis pour le déploiement d’applications](../../deployment/application-deployment-prerequisites.md)   
  [Redistribution du .NET Framework](http://msdn.microsoft.com/en-us/a18d0456-fd89-493e-97f4-756505bfe287)   

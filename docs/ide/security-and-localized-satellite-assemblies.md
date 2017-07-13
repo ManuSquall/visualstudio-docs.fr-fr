@@ -36,20 +36,23 @@ translation.priority.ht:
 - tr-tr
 - zh-cn
 - zh-tw
-translationtype: Human Translation
-ms.sourcegitcommit: 5658ecf52637a38bc3c2a5ad9e85b2edebf7d445
-ms.openlocfilehash: 587b403257a5fadefd32e57ecdd9914bd60a9e26
-ms.lasthandoff: 02/22/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: 3d32d11a430227800cb3ed53831a9565eb6adeb3
+ms.openlocfilehash: 2bac6b9d00c52e782cf2993ce70c3bd3466aba55
+ms.contentlocale: fr-fr
+ms.lasthandoff: 05/30/2017
 
 ---
-# <a name="security-and-localized-satellite-assemblies"></a>Sécurité et assemblys satellites localisés
-Si votre assembly principal utilise des noms forts, les assemblys satellites doivent être signés avec la même clé privée que l’assembly principal. Si la paire de clés publique/privée ne correspond pas entre les assemblys principal et satellites, vos ressources ne sont pas chargées. Pour plus d’informations sur la signature des assemblys, consultez [Comment : signer un assembly avec un nom fort](http://msdn.microsoft.com/Library/2c30799a-a826-46b4-a25d-c584027a6c67).  
+# Sécurité et assemblys satellites localisés
+<a id="security-and-localized-satellite-assemblies" class="xliff"></a>
+Si votre assembly principal utilise des noms forts, les assemblys satellites doivent être signés avec la même clé privée que l’assembly principal. Si la paire de clés publique/privée ne correspond pas entre les assemblys principal et satellites, vos ressources ne sont pas chargées. Pour plus d’informations sur la signature des assemblys, consultez [Comment : signer un assembly avec un nom fort](/dotnet/framework/app-domains/how-to-sign-an-assembly-with-a-strong-name).  
   
- En règle générale, il peut s’avérer nécessaire que le groupe de signature de votre organisation ou une organisation de signature externe signe avec la clé privée. En effet, en raison de la nature sensible de la clé privée, l’accès est souvent limité à quelques personnes. Vous pouvez utiliser la signature différée pendant le développement. Pour plus d’informations, consultez [Temporisation de signature d’un assembly](http://msdn.microsoft.com/Library/9d300e17-5bf1-4360-97da-2aa55efd9070).  
+ En règle générale, il peut s’avérer nécessaire que le groupe de signature de votre organisation ou une organisation de signature externe signe avec la clé privée. En effet, en raison de la nature sensible de la clé privée, l’accès est souvent limité à quelques personnes. Vous pouvez utiliser la signature différée pendant le développement. Pour plus d’informations, consultez [Temporisation de signature d’un assembly](/dotnet/framework/app-domains/delay-sign-assembly).  
   
-## <a name="see-also"></a>Voir aussi  
- [Aspects de la sécurité des assemblys](http://msdn.microsoft.com/Library/1b5439c1-f3d5-4529-bd69-01814703d067)   
- [Concepts fondamentaux sur la sécurité](http://msdn.microsoft.com/Library/3cfced4f-ea02-4e66-ae98-d69286363e98)   
+## Voir aussi
+<a id="see-also" class="xliff"></a>  
+ [Aspects de la sécurité des assemblys](/dotnet/framework/app-domains/assembly-security-considerations)   
+ [Concepts fondamentaux sur la sécurité](/dotnet/standard/security/key-security-concepts)   
  [Introduction aux applications internationales basées sur le .NET Framework](../ide/introduction-to-international-applications-based-on-the-dotnet-framework.md)   
  [Localisation d’applications](../ide/localizing-applications.md)   
  [Globalisation et localisation d’applications](../ide/globalizing-and-localizing-applications.md)

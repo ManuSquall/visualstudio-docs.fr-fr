@@ -34,25 +34,29 @@ translation.priority.ht:
 - tr-tr
 - zh-cn
 - zh-tw
-translationtype: Human Translation
-ms.sourcegitcommit: ca7c86466fa23fb21a932f26dc24e37c71cf29b4
-ms.openlocfilehash: 80ce7de7e89844d8c9cb1052499b2d873e04965e
-ms.lasthandoff: 04/05/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: 5ea9179ad37514ffad4876177b05150eecc22def
+ms.openlocfilehash: 41cca3051eaf1bfdc90f6616900699b8996033b0
+ms.contentlocale: fr-fr
+ms.lasthandoff: 05/24/2017
 
 ---
-# <a name="options-text-editor-cc-formatting"></a>Options, Éditeur de texte, C/C++, Mise en forme
+# Options, Éditeur de texte, C/C++, Mise en forme
+<a id="options-text-editor-cc-formatting" class="xliff"></a>
 Vous permet de modifier le comportement par défaut de l'Éditeur de code lorsque vous programmez en C ou C++.  
   
  Pour accéder à cette page, dans la boîte de dialogue **Options**, dans le volet gauche, développez **Éditeur de texte**, développez **C/C++**, puis cliquez sur **Mise en forme**.  
   
 > [!NOTE]
->  Il est possible que pour certains des éléments de l’interface utilisateur de Visual Studio, votre ordinateur affiche des noms ou des emplacements différents de ceux indiqués dans les instructions suivantes. L'édition de Visual Studio dont vous disposez et les paramètres que vous utilisez déterminent ces éléments. Pour plus d’informations, consultez [Personnalisation des paramètres de développement dans Visual Studio](http://msdn.microsoft.com/en-us/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
+>  Il est possible que pour certains des éléments de l’interface utilisateur de Visual Studio, votre ordinateur affiche des noms ou des emplacements différents de ceux indiqués dans les instructions suivantes. L'édition de Visual Studio dont vous disposez et les paramètres que vous utilisez déterminent ces éléments. Pour plus d’informations, consultez [Personnaliser l’IDE Visual Studio](../../ide/personalizing-the-visual-studio-ide.md).  
   
-## <a name="cc-options"></a>Options C/C++  
+## Options C/C++
+<a id="cc-options" class="xliff"></a>  
  **Activer les info-bulles Info express automatique**  
  Cette case à cocher permet d’activer ou de désactiver la fonctionnalité IntelliSense Info express.  
   
-## <a name="inactive-code"></a>Code inactif  
+## Code inactif
+<a id="inactive-code" class="xliff"></a>  
  **Afficher les blocs de code inactifs**  
  Le code qui est inactif en raison de déclarations `#ifdef` est colorisé différemment pour vous aider à l'identifier.  
   
@@ -62,21 +66,24 @@ Vous permet de modifier le comportement par défaut de l'Éditeur de code lorsqu
  **Pourcentage d’opacité du code inactif**  
  Le degré d'opacité des blocs de code inactifs peut être personnalisé.  
   
-## <a name="indentation"></a>Indentation  
+## Indentation
+<a id="indentation" class="xliff"></a>  
  **Mettre en retrait les accolades**  
  Vous pouvez configurer la manière dont les accolades sont alignées lorsque vous appuyez sur ENTRÉE après avoir commencé un bloc de code, tel qu'une fonction ou une boucle `for`. Les accolades peuvent être alignées avec le premier caractère du bloc de code ou mises en retrait.  
   
  **Retrait automatique sur les onglets**  
  Vous pouvez configurer ce qui arrive sur la ligne de code actuelle lorsque vous appuyez sur la touche de tabulation. La ligne est mise en retrait ou un onglet est inséré.  
   
-## <a name="miscellaneous"></a>Divers  
+## Divers
+<a id="miscellaneous" class="xliff"></a>  
  **Énumérer les commentaires dans la fenêtre Liste des tâches**  
  L'éditeur peut rechercher des mots prédéfinis dans les commentaires de fichiers sources ouverts. Il crée une entrée dans la fenêtre **Liste des tâches** pour tous les mots clés qu’il trouve.  
   
  **Surligner les jetons correspondants**  
  Lorsque le curseur se trouve à côté d'une accolade, l'éditeur peut mettre en surbrillance l'accolade correspondante afin que vous puissiez consulter le code contenu plus facilement.  
   
-## <a name="outlining"></a>Mode Plan  
+## Mode Plan
+<a id="outlining" class="xliff"></a>  
  **Passer en mode Plan à l’ouverture des fichiers**  
  Lorsque vous ouvrez un fichier dans l’éditeur de texte, vous pouvez activer la fonctionnalité mode Plan. Pour plus d’informations, voir [Mode Plan](../../ide/outlining.md). Lorsque cette option est sélectionnée, la fonctionnalité mode Plan est activée à l’ouverture d’un fichier.  
   
@@ -92,6 +99,7 @@ Vous permet de modifier le comportement par défaut de l'Éditeur de code lorsqu
   
 -   [while, instruction (C++)](/cpp/cpp/while-statement-cpp)  
   
-## <a name="see-also"></a>Voir aussi  
+## Voir aussi
+<a id="see-also" class="xliff"></a>  
  [Général, Environnement, boîte de dialogue Options](../../ide/reference/general-environment-options-dialog-box.md)   
  [Utilisation de la fonctionnalité IntelliSense](../../ide/using-intellisense.md)
