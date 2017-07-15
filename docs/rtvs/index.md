@@ -1,42 +1,30 @@
 ---
 title: R Tools pour Visual Studio | Microsoft Docs
 ms.custom: 
-ms.date: 5/1/2017
+ms.date: 6/29/2017
 ms.prod: visual-studio-dev15
 ms.reviewer: 
 ms.suite: 
 ms.technology:
 - devlang-r
+ms.devlang: r
 ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: hero-article
 ms.assetid: 11324501-ceb6-47a2-ae13-e9e992d3603e
 caps.latest.revision: 1
 author: kraigb
 ms.author: kraigb
 manager: ghogen
-translation.priority.ht:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 7a873df77756e5a957d327049566c8e0db1f3a8a
-ms.openlocfilehash: e166fceac0f29b5ee0880d2542eedddc066fa9f1
+ms.translationtype: HT
+ms.sourcegitcommit: 712cc780388acc5e373f71d51fc8f1f42adb5bed
+ms.openlocfilehash: 80a10c710aac8413bd59b53bb61de7a982c09952
 ms.contentlocale: fr-fr
-ms.lasthandoff: 05/12/2017
+ms.lasthandoff: 07/12/2017
 
 ---
 
-# <a name="working-with-r-in-visual-studio"></a>Utilisation de R dans Visual Studio
+# Utilisation de R dans Visual Studio
+<a id="working-with-r-in-visual-studio" class="xliff"></a>
 
 R est un langage très extensible et un environnement pour le calcul de statistiques et les graphiques. Il est distribué gratuitement sous la licence GNU GPL, bénéficie d’un large support de la Communauté et est connu pour sa capacité à générer des graphiques prêts pour la publication qui incluent des formules et des symboles mathématiques. Pour en savoir plus sur R, consultez [r-project.org](https://www.r-project.org/about.html) et [An Introduction to R](https://cran.r-project.org/doc/manuals/r-release/R-intro.html).
 
@@ -47,12 +35,12 @@ Pour utiliser R dans Visual Studio :
 - [Installez R Tools](installation.md).
 - Suivez le guide [Bien démarrer](getting-started-with-r.md), ainsi que les rubriques [Exemples](getting-started-samples.md) et [Obtention d’aide](getting-started-help.md).
 
-Suivez ensuite les liens ci-dessous pour en savoir plus sur les fonctionnalités de R, ainsi que sur les fonctionnalités générales de Visual Studio.
+Suivez ensuite les liens pour en savoir plus sur les fonctionnalités de R, ainsi que sur les fonctionnalités générales de Visual Studio.
 
 | Fonctionnalité | Description | Documentation générale de Visual Studio | 
 | --- | --- | --- |
 | [Système de projet Visual Studio](projects.md) | Organisez et gérez des fichiers connexes dans une structure pratique, et aidez-vous de modèles utiles dans le code R, la documentation de R, R Markdown, les requêtes SQL et les procédures stockées. Profitez également du [Gestionnaire de package](package-manager.md) et de l’[intégration de SQL Server](sql-server.md).  | [Solutions et projets dans Visual Studio](../ide/solutions-and-projects-in-visual-studio.md) |
-| [Espace de travail](workspaces.md) | Vous pouvez lier RTVS aux espaces de travail locaux et distants, ce qui vous permet de développer du code R localement à l’aide de petits jeux de données, puis de l’exécuter facilement sur des ordinateurs cloud plus puissants avec des jeux de données beaucoup plus grands et de collaborer avec vos collègues. | N/A |
+| [Espace de travail](workspaces.md) | Vous pouvez lier RTVS aux espaces de travail locaux et distants, ce qui vous permet de développer du code R localement à l’aide de petits jeux de données, puis de l’exécuter facilement sur des ordinateurs cloud plus puissants avec des jeux de données beaucoup plus grands. | N/A |
 | [Options de R Tools](options.md) | Contrôlez divers aspects de RTVS. | [Boîte de dialogue Options](../ide/reference/options-dialog-box-visual-studio.md) |
 | [Édition avancée, IntelliSense et extraits de code](code-editing.md) | Inclut la coloration syntaxique, [IntelliSense](code-intellisense.md) dans l’ensemble du code et des bibliothèques, la mise en forme du code, une assistance pour la signature, les fonctions Atteindre la définition et Rechercher toutes les références, des [extraits de code](code-snippets.md) et plus encore. | [Écriture de code dans l’éditeur de code et de texte](../ide/writing-code-in-the-code-and-text-editor.md) |
 | [R Markdown](rmarkdown.md) | Les documents R Markdown vous aident à partager vos résultats de données grâce à l’intégration du code R dans les blocs de code Markdown. | N/A |
@@ -65,7 +53,8 @@ La vidéo suivante présente aussi brièvement (5m 48s) les fonctionnalités de 
 
 > [!VIDEO https://www.youtube.com/embed/RcSDEfMgUvU]
 
-## <a name="frequently-asked-questions"></a>Questions fréquemment posées
+## Questions fréquemment posées
+<a id="frequently-asked-questions" class="xliff"></a>
 
 **Q. RTVS fonctionne-t-il avec les éditions Visual Studio Express ?**
 
@@ -99,19 +88,19 @@ R. RStudio est un IDE fantastique et abouti pour R qui est resté en phase de d�
 
 **Q. RTVS fonctionne-t-il sur OS X ou Linux ?**
 
-R. Non, RTVS repose sur Visual Studio, qui est une implémentation Windows uniquement. Ceci dit, Microsoft cherche à créer un nouvel ensemble d’outils basés sur [Visual Studio Code](https://code.visualstudio.com/), l’éditeur multiplateforme largement répandu de Microsoft.
+R. Non, RTVS repose sur Visual Studio, qui est une implémentation Windows uniquement. Ceci dit, Microsoft cherche à créer un nouvel ensemble d’outils basés sur [Visual Studio Code](https://code.visualstudio.com/), l’éditeur multiplateforme connu de Microsoft.
 
 **Q. Puis-je contribuer à RTVS ?**
 
-R. Absolument ! Le code source se trouve sur [Github](https://github.com/microsoft/RTVS). Veuillez utiliser le suivi des problèmes pour envoyer des bogues et des commentaires sur ces fichiers.
+R. Absolument ! Le code source se trouve sur [Github](https://github.com/microsoft/RTVS). Utilisez le suivi des problèmes pour envoyer des bogues et des commentaires sur ces fichiers.
 
-Vous êtes également invité à contribuer à cette documentation, sélectionnez simplement la commande **Modifier** en haut à droite de chaque page. Vos commentaires sur la documentation sont également bienvenus. Vous pouvez en ajouter en bas de chaque page.
+Vous êtes également invité à contribuer à cette documentation&mdash; sélectionnez simplement la commande **Modifier** en haut à droite de chaque page. Vos commentaires sur la documentation sont également bienvenus. Vous pouvez en ajouter en bas de chaque page.
 
 **Q. RTVS fonctionne-t-il avec mon système de gestion de code source ?**
 
 R. Oui, vous pouvez utiliser n’importe quel système de gestion de code source intégré à Visual Studio.
 
-**Q. Je n’utilise pas les paramètres régionaux Anglais (États-Unis) dans Windows ou Visual Studio. RTVS fonctionnera-t-il ?**
+**Q. RTVS fonctionne-t-il avec des paramètres régionaux non anglais ?**
 
 R. La version 1.0 de RTVS est en anglais uniquement. La version 1.1 sera localisée dans les mêmes langues que celles de Visual Studio. En attendant, utilisez le [module linguistique en anglais de Visual Studio 2015](https://www.microsoft.com/download/details.aspx?id=48157) ou dans Visual Studio 2017, exécutez le programme d’installation et sélectionnez Anglais dans l’onglet **Modules linguistiques**.
 
@@ -131,13 +120,14 @@ R. Github conserve un dépôt principal des fichiers `.gitignore` recommandés. 
 
 **Q. Puis-je stocker mon projet Visual Studio sur un partage réseau ?**
 
-R. Non, ce n’est pas pris en charge par Visual Studio.
+R. Non, Visual Studio ne prend pas en charge le chargement des projets à partir d’un partage réseau.
 
-## <a name="send-us-your-feedback"></a>Envoyez-nous vos commentaires !
+## Envoyez-nous vos commentaires !
+<a id="send-us-your-feedback" class="xliff"></a>
 
 1. **Problèmes Github** : la meilleure façon de contacter l’équipe RTVS est de [signaler un problème sur GitHub](https://github.com/Microsoft/RTVS/issues) ou d’utiliser le menu **R Tools > Commentaires**.
 
-1. **Envoyer un sourire / smiley mécontent** : le menu **R Tools > Commentaires** est un moyen rapide d’envoyer des commentaires et de joindre des fichiers journaux RTVS pour faciliter le diagnostic de votre problème. (Les journaux sont écrits dans `%temp%/RTVSlogs.zip` au cas où vous souhaitez les envoyer séparément.) Notez que la journalisation est désactivée si vous avez refusé la télémétrie de Visual Studio via la commande de menu **Aide > Commentaires > Paramètres** ou lors de l’installation.
+1. **Envoyer un sourire / smiley mécontent** : le menu **R Tools > Commentaires** est un moyen rapide d’envoyer des commentaires et de joindre des fichiers journaux RTVS pour faciliter le diagnostic de votre problème. (Les journaux sont écrits dans `%temp%/RTVSlogs.zip` au cas où vous souhaitez les envoyer séparément.) La journalisation est désactivée si vous avez refusé la télémétrie de Visual Studio via la commande de menu **Aide > Commentaires > Paramètres** ou lors de l’installation.
 
 1. **E-mail** : vous pouvez envoyer des commentaires directement à l’équipe *rtvsuserfeedback (at) microsoft.com*.
 
