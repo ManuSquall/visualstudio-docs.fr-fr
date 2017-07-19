@@ -34,11 +34,11 @@ translation.priority.ht:
 - tr-tr
 - zh-cn
 - zh-tw
-ms.translationtype: Human Translation
+ms.translationtype: HT
 ms.sourcegitcommit: 7a873df77756e5a957d327049566c8e0db1f3a8a
 ms.openlocfilehash: f1f9931e6e7c8dda4cb74f407901f41467c690cc
 ms.contentlocale: fr-fr
-ms.lasthandoff: 05/11/2017
+ms.lasthandoff: 07/14/2017
 
 ---
 # <a name="msbuild-reserved-and-well-known-properties"></a>MSBuild, propriétés réservées et connues
@@ -77,5 +77,4 @@ ms.lasthandoff: 05/11/2017
 |`MSBuildToolsVersion`|Version de l'ensemble d'outils [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] qui est utilisée pour générer le projet.<br /><br /> Remarque : un ensemble d’outils [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] se compose de tâches, de cibles et d’outils, qui sont utilisés pour générer une application. Les outils incluent des compilateurs tels que csc.exe et vbc.exe. Pour plus d’informations, consultez les articles [Toolset (ToolsVersion) Ensemble d’outils MSBuild [ToolsVersion])](../msbuild/msbuild-toolset-toolsversion.md) et [Configurations standard et personnalisée de l’ensemble d’outils](../msbuild/standard-and-custom-toolset-configurations.md).|Réservée|  
   
 ## <a name="see-also"></a>Voir aussi  
- [Référence MSBuild](../msbuild/msbuild-reference.md)
- [Propriétés MSBuild](../msbuild/msbuild-properties.md)
+ [Référence MSBuild](../msbuild/msbuild-reference.md) [Propriétés MSBuild](../msbuild/msbuild-properties.md)

@@ -1,36 +1,53 @@
 ---
-title: "How to: Customize Class Diagrams (Class Designer) | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-general"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-helpviewer_keywords: 
-  - "class diagrams, customizing"
-  - "shapes, removing type from class diagrams"
-  - "type shapes, removing from class diagrams"
-  - "class diagrams, removing type shapes"
+title: Guide pratique pour personnaliser des diagrammes de classes (Concepteur de classes) | Microsoft Docs
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology:
+- vs-ide-general
+ms.tgt_pltfrm: 
+ms.topic: article
+helpviewer_keywords:
+- class diagrams, customizing
+- shapes, removing type from class diagrams
+- type shapes, removing from class diagrams
+- class diagrams, removing type shapes
 ms.assetid: e9030aea-c77d-4cc1-b8f6-b6ca469b692d
 caps.latest.revision: 29
-author: "kempb"
-ms.author: "kempb"
-manager: "ghogen"
-caps.handback.revision: 29
----
-# How to: Customize Class Diagrams (Class Designer)
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
+author: kempb
+ms.author: kempb
+manager: ghogen
+translation.priority.ht:
+- cs-cz
+- de-de
+- es-es
+- fr-fr
+- it-it
+- ja-jp
+- ko-kr
+- pl-pl
+- pt-br
+- ru-ru
+- tr-tr
+- zh-cn
+- zh-tw
+ms.translationtype: HT
+ms.sourcegitcommit: 63aad78bdc7df685ca3a73ec16a9cbc87b78151f
+ms.openlocfilehash: af498b50a5ccde20d2f05a92e5431ff1f888cfae
+ms.contentlocale: fr-fr
+ms.lasthandoff: 07/14/2017
 
-Vous pouvez modifier la façon dont les diagrammes de classes affichent les informations.  Il est possible de personnaliser le diagramme tout entier ou chaque type sur l'aire de conception.  
+---
+# <a name="how-to-customize-class-diagrams-class-designer"></a>Comment : personnaliser des diagrammes de classes (Concepteur de classes)
+Vous pouvez modifier la façon dont les diagrammes de classes affichent les informations. Il est possible de personnaliser le diagramme tout entier ou chaque type sur l'aire de conception.  
   
  Par exemple, vous pouvez ajuster le niveau de zoom d'un diagramme de classes entier, modifier la manière dont les membres de type sont groupés et ordonnés, masquer ou afficher les relations, et déplacer chaque type ou ensemble de types à votre guise dans le diagramme.  
   
 > [!NOTE]
->  Personnaliser la façon dont les formes apparaissent dans le diagramme ne modifie pas le code sous\-jacent pour les types représentés dans le diagramme.  
+>  Personnaliser la façon dont les formes apparaissent dans le diagramme ne modifie pas le code sous-jacent pour les types représentés dans le diagramme.  
   
- Les sections qui contiennent des membres de type, telles que la section Propriétés d'une classe, sont appelées compartiments.  Vous pouvez masquer ou afficher des compartiments spécifiques et des membres de type.  
+ Les sections qui contiennent des membres de type, telles que la section Propriétés d'une classe, sont appelées compartiments. Vous pouvez masquer ou afficher des compartiments spécifiques et des membres de type.  
   
  **Dans cette rubrique**  
   
@@ -56,11 +73,11 @@ Vous pouvez modifier la façon dont les diagrammes de classes affichent les info
   
 1.  Ouvrez et sélectionnez un fichier de diagramme de classes dans le Concepteur de classes.  
   
-2.  Sur la barre d'outils Concepteur de classes, cliquez sur le bouton **Zoom avant** ou **Zoom arrière** pour modifier le niveau de zoom de l'aire du concepteur.  
+2.  Sur la barre d’outils Concepteur de classes, cliquez sur le bouton **Zoom avant** ou**Zoom arrière** pour modifier le niveau de zoom de l’aire du concepteur.  
   
      ou  
   
-     Spécifiez une valeur de zoom particulière.  Vous pouvez utiliser la liste déroulante **Zoom** ou taper un niveau de zoom valide \(la plage valide est comprise entre 10 % et 400 %\).  
+     Spécifiez une valeur de zoom particulière. Vous pouvez utiliser la liste déroulante **Zoom** ou taper un niveau de zoom valide (la plage valide est comprise entre 10 % et 400 %).  
   
     > [!NOTE]
     >  La modification du niveau de zoom n'affecte pas l'échelle d'impression de votre diagramme de classes.  
@@ -69,21 +86,21 @@ Vous pouvez modifier la façon dont les diagrammes de classes affichent les info
   
 1.  Ouvrez et sélectionnez un fichier de diagramme de classes dans le Concepteur de classes.  
   
-2.  Cliquez avec le bouton droit sur une zone vide de l'aire de conception et pointez sur **Membres du groupe**.  
+2.  Cliquez avec le bouton droit sur une zone vide de l’aire de conception et pointez sur **Membres du groupe**.  
   
 3.  Sélectionnez l'une des options disponibles :  
   
-    1.  **Grouper par genre** sépare chaque membre de type dans une liste groupée de propriétés, de méthodes, d'événements et de champs.  Les groupes dépendent individuellement de la définition d'entités : par exemple, une classe n'affichera pas de groupe d'événements si aucun événement n'a encore été défini pour cette classe.  
+    1.  **Grouper par genre** sépare chaque membre de type dans une liste groupée de propriétés, de méthodes, d’événements et de champs. Les groupes dépendent individuellement de la définition d'entités : par exemple, une classe n'affichera pas de groupe d'événements si aucun événement n'a encore été défini pour cette classe.  
   
-    2.  **Grouper par accès** sépare chaque membre de type dans une liste groupée en fonction des modificateurs d'accès du membre.  Par exemple, Public et Privé.  
+    2.  **Grouper par accès** sépare chaque membre de type dans une liste groupée en fonction des modificateurs d’accès du membre. Par exemple, Public et Privé.  
   
-    3.  **Trier par ordre alphabétique** affiche les éléments qui composent une entité en tant que liste unique classée par ordre alphabétique.  La liste est triée dans l'ordre croissant.  
+    3.  **Trier par ordre alphabétique** affiche les éléments qui composent une entité en tant que liste unique classée par ordre alphabétique. La liste est triée dans l'ordre croissant.  
   
 ##  <a name="HideCompartments"></a> Masquer des compartiments sur un type  
   
 1.  Ouvrez et sélectionnez un fichier de diagramme de classes dans le Concepteur de classes.  
   
-2.  Cliquez avec le bouton droit sur la catégorie de membre dans le type que vous souhaitez personnaliser \(par exemple, sélectionnez le nœud **Méthodes** dans une classe\).  
+2.  Cliquez avec le bouton droit sur la catégorie de membre dans le type que vous souhaitez personnaliser (par exemple, sélectionnez le nœud **Méthodes** dans une classe).  
   
 3.  Cliquez sur **Masquer le compartiment**.  
   
@@ -115,7 +132,7 @@ Vous pouvez modifier la façon dont les diagrammes de classes affichent les info
   
 2.  Cliquez avec le bouton droit sur la ligne d'association ou d'héritage que vous souhaitez masquer.  
   
-3.  Cliquez sur **Masquer** pour les lignes d'association et sur **Masquer la ligne d'héritage** pour les lignes d'héritage.  
+3.  Cliquez sur **Masquer** pour les lignes d’association et sur **Masquer la ligne d’héritage** pour les lignes d’héritage.  
   
 4.  Cliquez sur **Afficher tous les membres**.  
   
@@ -127,10 +144,10 @@ Vous pouvez modifier la façon dont les diagrammes de classes affichent les info
   
 2.  Cliquez avec le bouton droit sur le type avec l'association ou l'héritage masqué.  
   
- Cliquez sur **Afficher tous les membres** pour les lignes d'association et sur **Afficher la classe de base** ou **Afficher les classes dérivées** pour les lignes d'héritage.  
+ Cliquez sur **Afficher tous les membres** pour les lignes d’association et sur **Afficher la classe de base** ou **Afficher les classes dérivées** pour les lignes d’héritage.  
   
 ##  <a name="RemoveCodeAndShape"></a> Supprimer une forme dans un diagramme de classes  
- Vous pouvez supprimer une forme de type dans le diagramme de classes sans affecter le code sous\-jacent du type.  La suppression de formes de type d'un diagramme de classes affecte uniquement ce diagramme : le code sous\-jacent qui définit le type et les autres diagrammes qui affichent le type ne sont pas affectés.  
+ Vous pouvez supprimer une forme de type dans le diagramme de classes sans affecter le code sous-jacent du type. La suppression de formes de type d'un diagramme de classes affecte uniquement ce diagramme : le code sous-jacent qui définit le type et les autres diagrammes qui affichent le type ne sont pas affectés.  
   
 1.  Sur le diagramme de classes, sélectionnez la forme de type que vous souhaitez supprimer du diagramme.  
   
@@ -138,16 +155,16 @@ Vous pouvez modifier la façon dont les diagrammes de classes affichent les info
   
      La forme de type et les lignes d'association ou d'héritage connectées à la forme n'apparaissent plus sur le diagramme.  
   
-##  <a name="DeleteTypeShapeAndCode"></a> Supprimer une forme de type et son code sous\-jacent  
+##  <a name="DeleteTypeShapeAndCode"></a> Supprimer une forme de type et son code sous-jacent  
   
 1.  Cliquez avec le bouton droit sur la forme dans l'aire de conception.  
   
 2.  Sélectionnez **Supprimer le code** dans le menu contextuel.  
   
-     La forme est supprimée du diagramme et son code sous\-jacent est supprimé du projet.  
+     La forme est supprimée du diagramme et son code sous-jacent est supprimé du projet.  
   
-## Voir aussi  
- [Working with Class Diagrams \(Class Designer\)](../ide/working-with-class-diagrams-class-designer.md)   
- [How to: Change Between Member Notation and Association Notation \(Class Designer\)](../Topic/How%20to:%20Change%20Between%20Member%20Notation%20and%20Association%20Notation%20\(Class%20Designer\).md)   
- [How to: View Existing Types \(Class Designer\)](../Topic/How%20to:%20View%20Existing%20Types%20\(Class%20Designer\).md)   
- [Viewing Types and Relationships \(Class Designer\)](../ide/viewing-types-and-relationships-class-designer.md)
+## <a name="see-also"></a>Voir aussi  
+ [Utilisation des diagrammes de classes (Concepteur de classes)](../ide/working-with-class-diagrams-class-designer.md)   
+ [Guide pratique pour changer la notation entre les membres et les associations (Concepteur de classes)](../ide/how-to-change-between-member-notation-and-association-notation-class-designer.md)   
+ [Guide pratique pour afficher des types existants (Concepteur de classes)](../ide/how-to-view-existing-types-class-designer.md)   
+ [Affichage des types et relations (Concepteur de classes)](../ide/viewing-types-and-relationships-class-designer.md)
