@@ -32,25 +32,29 @@ translation.priority.ht:
 - tr-tr
 - zh-cn
 - zh-tw
-translationtype: Human Translation
-ms.sourcegitcommit: 5658ecf52637a38bc3c2a5ad9e85b2edebf7d445
-ms.openlocfilehash: bb3fc61c821aa9412421c1e2ff9024465b078d1e
-ms.lasthandoff: 02/22/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: 3d32d11a430227800cb3ed53831a9565eb6adeb3
+ms.openlocfilehash: 45e9bb684e7f1f83c41b04dd4b9e9b3218df8358
+ms.contentlocale: fr-fr
+ms.lasthandoff: 05/30/2017
 
 ---
-# <a name="targeting-a-specific-net-framework-version"></a>Cibler une version spécifique du .NET Framework
+# Cibler une version spécifique du .NET Framework
+<a id="targeting-a-specific-net-framework-version" class="xliff"></a>
 Dans Visual Studio, vous pouvez spécifier la version ou le profil du .NET Framework que votre projet doit cibler. Pour qu'une application s'exécute sur un autre ordinateur, la version du Framework ciblée par l'application doit être compatible avec la version du Framework qui est installée sur l'ordinateur.  
   
  Cette section contient des rubriques qui décrivent comment cibler des versions spécifiques du [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] dans vos projets.  
   
-## <a name="in-this-section"></a>Dans cette section  
+## Dans cette section
+<a id="in-this-section" class="xliff"></a>  
  [Vue d’ensemble du multiciblage Visual Studio](../ide/visual-studio-multi-targeting-overview.md)  
  Fournit une vue d’ensemble des fonctionnalités de multi-ciblage dans Visual Studio.  
   
  [Guide pratique pour cibler une version du .NET Framework](../ide/how-to-target-a-version-of-the-dotnet-framework.md)  
  Explique comment spécifier un [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] particulier pour votre projet Visual Basic, Visual C# ou Visual F#.  
   
-## <a name="related-sections"></a>Rubriques connexes  
+## Rubriques connexes
+<a id="related-sections" class="xliff"></a>  
  [.NET Framework Multi-Targeting pour les projets web ASP.NET](http://msdn.microsoft.com/Library/8b8145a9-62f6-4fc4-8a83-47b0487cbe76)  
  Explique comment utiliser cette version de Visual Studio pour développer des applications web qui s'exécutent dans des versions antérieures du .NET Framework.  
   
@@ -60,5 +64,5 @@ Dans Visual Studio, vous pouvez spécifier la version ou le profil du .NET Frame
  [Page Application, Concepteur de projets (Visual Basic)](../ide/reference/application-page-project-designer-visual-basic.md)  
  Décrit le contrôle **Framework cible** dans le Concepteur de projet pour les projets [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)].  
   
- [Comment : modifier la version cible de .Net Framework et l’ensemble d’outils de la plateforme](http://msdn.microsoft.com/Library/031b1d54-e6e1-4da7-9868-3e75a87d9ffe)  
+ [Comment : modifier la version cible de .Net Framework et l’ensemble d’outils de la plateforme](/cpp/build/how-to-modify-the-target-framework-and-platform-toolset)  
  Décrit comment modifier les paramètres pour les projets Visual C++ afin qu'ils ciblent d'autres versions du .NET Framework et qu'ils utilisent d'autres ensembles d'outils de plateforme.

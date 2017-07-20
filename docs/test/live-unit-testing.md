@@ -26,10 +26,11 @@ translation.priority.ht:
 - tr-tr
 - zh-cn
 - zh-tw
-translationtype: Human Translation
-ms.sourcegitcommit: edb6c75d35f89df363a07eb24ba31e203bc6672e
-ms.openlocfilehash: 30261d8b75029bac15c9ab881d9f43c1a717d8cd
-ms.lasthandoff: 03/15/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: 47057e9611b824c17077b9127f8d2f8b192d6eb8
+ms.openlocfilehash: b699132bf1a31d3ef9dc3ba5af3f99c22890c632
+ms.contentlocale: fr-fr
+ms.lasthandoff: 05/13/2017
 
 ---
 
@@ -40,15 +41,15 @@ Lorsque vous développez une application, Live Unit Testing exécute automatique
 > [!NOTE]
 > Live Unit Testing est disponible pour les projets Visual Basic et C# qui ciblent le .NET Framework dans l’édition Enterprise de Visual Studio 2017. À ce jour, Live Unit Testing n’est pas disponible avec .NET Core.
 
-## <a name="supported-test-frameworks"></a>Infrastructures de test prises en charge
+## <a name="supported-test-frameworks"></a>Frameworks de test pris en charge
 
-Live Unit Testing fonctionne avec les trois infrastructures de test unitaire populaires répertoriées dans le tableau suivant. La version minimale prise en charge des adaptateurs et des infrastructures est également répertoriée dans le tableau. Les infrastructures de test unitaire sont toutes disponibles à partir de NuGet.org.
+Live Unit Testing fonctionne avec les trois frameworks de tests unitaires populaires listés dans le tableau suivant. La version minimale prise en charge des adaptateurs et des frameworks est également listée dans le tableau. Les frameworks de tests unitaires sont tous disponibles dans NuGet.org.
  
 <table> 
 <tr>
-   <th>Infrastructure de test</th>
+   <th>Framework de test</th>
    <th>Version minimale de l’adaptateur Visual Studio</th>
-   <th>Version minimale de l’infrastructure</th>
+   <th>Version minimale du framework</th>
 </tr>
 <tr>
    <td>xUnit.net</td>
@@ -62,12 +63,12 @@ Live Unit Testing fonctionne avec les trois infrastructures de test unitaire pop
 </tr>
 <tr>
    <td>MSTest</td>
-   <td>MSTest.TestAdapter 1.1.4-version préliminaire</td>
-   <td>MSTest.TestFramework 1.0.5-version préliminaire</td>
+   <td>MSTest.TestAdapter 1.1.4-preview</td>
+   <td>MSTest.TestFramework 1.0.5-preview</td>
 </tr>
 </table>
 
-Si vous avez d’anciennes références d’infrastructure de test et d’adaptateur issues de vos projets existants, veillez à les supprimer. (Veillez à supprimer la référence à `Microsoft.VisualStudio.QualityTools.UnitTestFramework`, si vous utilisez MSTest.) Ajoutez les nouvelles références si Live Unit Testing ne fonctionne pas pour vous. 
+Si vous avez d’anciennes références de framework de test et d’adaptateur issues de vos projets existants, veillez à les supprimer. (Veillez à supprimer la référence à `Microsoft.VisualStudio.QualityTools.UnitTestFramework`, si vous utilisez MSTest.) Ajoutez les nouvelles références si Live Unit Testing ne fonctionne pas pour vous. 
 
 Dans certains cas, vous devez peut-être restaurer explicitement les packages NuGet référencés par les projets dans la solution pour que Live Unit Testing fonctionne. Pour ce faire, générez une version explicite de la solution (sélectionnez **Générer**, **Régénérer la solution** à partir du menu de Visual Studio de niveau supérieur) ou restaurez les packages dans la solution (cliquez avec le bouton droit sur la solution et sélectionnez **Restaurer des packages NuGet**) avant d’activer Live Unit Testing. 
 
@@ -91,7 +92,7 @@ Pour capturer les messages détaillés du journal MSBuild depuis Live Unit Testi
 
 ## <a name="starting-pausing-and-stopping-live-unit-testing"></a>Démarrage, interruption et arrêt de Live Unit Testing
 
-Pour activer Live Unit Testing, sélectionnez **Tester**, **Live Unit Testing**, **Démarrer** dans le menu Visual Studio de niveau supérieur. Une fois Live Unit Testing activé, les options disponibles dans le menu **Live Unit Testing** changent à partir d’un seul élément, de **Démarrer** à **Pause**, **Arrêter** et **Redémarrer**.
+Pour activer Live Unit Testing, sélectionnez **Tester** , **Live Unit Testing**, **Démarrer** dans le menu Visual Studio de niveau supérieur. Une fois Live Unit Testing activé, les options disponibles dans le menu **Live Unit Testing** changent à partir d’un seul élément, de **Démarrer** à **Pause**, **Arrêter** et **Redémarrer**.
 
 À tout moment, vous pouvez interrompre temporairement ou arrêter complètement Live Unit Testing. Vous souhaiterez peut-être le faire si, par exemple, vous êtes en pleine refactorisation et que vous savez que vos tests seront incorrects pendant un certain temps. Les trois options du menu sont :
 

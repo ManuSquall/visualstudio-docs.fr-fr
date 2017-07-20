@@ -29,10 +29,10 @@ translation.priority.mt:
 - pt-br
 - tr-tr
 ms.translationtype: Human Translation
-ms.sourcegitcommit: 4c744284c198a645440494ee79ee0e722904fda5
-ms.openlocfilehash: b6fd9ebbd931604b12c772f4e2514c86f5c9dd70
+ms.sourcegitcommit: 47057e9611b824c17077b9127f8d2f8b192d6eb8
+ms.openlocfilehash: 0c850e9be6f05bac6c312ef8d746b92754eb3e6c
 ms.contentlocale: fr-fr
-ms.lasthandoff: 05/04/2017
+ms.lasthandoff: 05/13/2017
 
 ---
 # <a name="analyze-resource-consumption-and-ui-thread-activity-xaml"></a>Analyser la consommation des ressources et l’activité des threads de l’interface utilisateur (XAML)
@@ -110,7 +110,7 @@ Utilisez le profileur **Chronologie de l'application** pour rechercher et corrig
  Le diagramme linéaire **Débit visuel (i/s)** montre les images par seconde (FPS) sur l'interface utilisateur et le thread de composition pour l'application.  
   
 ###  <a name="BKMK_Timeline_details_"></a> Détails de la chronologie  
- C'est dans la vue Détails que vous passerez le plus de temps à analyser le rapport. Il montre une vue détaillée de l'utilisation de l'UC par votre application, en fonction de la catégorie du sous-système d'infrastructure d'interface utilisateur ou du composant système qui a consommé l'UC.  
+ C'est dans la vue Détails que vous passerez le plus de temps à analyser le rapport. Il montre une vue détaillée de l'utilisation de l'UC par votre application, en fonction de la catégorie du sous-système de framework d'interface utilisateur ou du composant système qui a consommé l'UC.  
   
  Les événements suivants sont pris en charge :  
   

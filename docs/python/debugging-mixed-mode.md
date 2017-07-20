@@ -29,16 +29,16 @@ translation.priority.ht:
 - zh-cn
 - zh-tw
 ms.translationtype: Human Translation
-ms.sourcegitcommit: 85576806818a6ed289c2f660f87b5c419016c600
-ms.openlocfilehash: 919227fb624f4b6dc51e13ccadea8e2682b9816f
+ms.sourcegitcommit: 90b2481b0ec4f9387fe3a2c0b733a103e8c03845
+ms.openlocfilehash: 9e8ac0cbafe296223de68eb5b4f1b89680f61088
 ms.contentlocale: fr-fr
-ms.lasthandoff: 05/09/2017
+ms.lasthandoff: 05/23/2017
 
 ---
 
 # <a name="debugging-python-and-c-together"></a>Débogage conjoint de Python et de C++
 
-La plupart des débogueurs Python standard prend en charge le débogage de code Python uniquement. Toutefois, dans la pratique, Python est utilisé conjointement avec C ou C++ dans les cas qui nécessitent de hautes performances ou la possibilité d’appeler directement les API de plateforme (pour obtenir un exemple, consultez [Création d’une extension C++ pour Python](cpp-and-python.md)). Visual Studio intègre un débogage en mode mixte simultané de code Python et C/C++ natif, incluant des piles des appels combinées, la possibilité d’effectuer un pas à pas détaillé alternant entre du code Python et natif, des points d’arrêt dans l’un ou l’autre type de code, ainsi que la possibilité de visualiser des représentations Python des objets dans des cadres natifs et vice versa :
+La plupart des débogueurs Python standard prend en charge le débogage de code Python uniquement. Toutefois, dans la pratique, Python est utilisé conjointement avec C ou C++ dans les cas qui nécessitent de hautes performances ou la possibilité d’appeler directement les API de plateforme (pour obtenir un exemple, consultez [Création d’une extension C++ pour Python](cpp-and-python.md)). Quand un projet Python est chargé, Visual Studio intègre un débogage en mode mixte simultané de code Python et C/C++ natif, incluant des piles des appels combinées, la possibilité d’effectuer un pas à pas détaillé alternant entre du code Python et natif, des points d’arrêt dans l’un ou l’autre type de code, ainsi que la possibilité de visualiser des représentations Python des objets dans des cadres natifs et vice versa :
 
 ![Débogage en mode mixte](media/mixed-mode-debugging.png) 
 
@@ -70,6 +70,13 @@ Pour découvrir une présentation de la génération, du test et du débogage de
 
 1. Vous voudrez peut-être aussi disposer du code source Python proprement dit. Vous pouvez obtenir le code Python standard à l’adresse [https://www.python.org/downloads/source/](https://www.python.org/downloads/source/). Téléchargez l’archive appropriée à votre version et extrayez-la dans un dossier. Faites pointer Visual Studio vers des fichiers spécifiques dans ce dossier quand il vous le demande.
 
+> [!Note]
+> Le débogage en mode mixte tel qu’il est décrit ici est uniquement activé quand un projet Python est chargé dans Visual Studio. Ce projet détermine le mode de débogage de Visual Studio, lequel active l’option de débogage en mode mixte. Si, toutefois, un projet C++ est chargé (ce qui se produit en cas d’[incorporation de Python dans une autre application, comme décrit sur python.org](https://docs.python.org/3/extending/embedding.html)), Visual Studio utilise le débogueur C++ natif qui ne prend pas en charge le débogage en mode mixte.
+>
+> Dans ce cas, démarrez le projet C++ sans débogage (**Déboguer > Démarrer sans débogage** ou Ctrl+F5), puis utilisez **Déboguer > Attacher au processus**. Dans la boîte de dialogue qui s’affiche, sélectionnez le processus approprié, puis utilisez le bouton **Sélectionner** pour ouvrir la boîte de dialogue **Sélectionner le type de code**. Dans celle-ci, sélectionnez Python (comme indiqué ci-dessous). Sélectionnez **OK** pour fermer cette boîte de dialogue, puis sélectionnez **Attacher** pour démarrer le débogueur. Notez que vous devrez peut-être introduire une pause ou un délai approprié dans l’application C++ pour que celle-ci n’appelle pas le code Python à déboguer avant l’attachement du débogueur.
+>
+> ![Sélection de Python comme type de débogage au moment de l’attachement d’un débogueur](media/mixed-mode-debugging-attach-type.png)
+
 ## <a name="mixed-mode-specific-features"></a>Fonctionnalités spécifiques du mode mixte
 
 - [Pile des appels combinée](#combined-call-stack)
@@ -94,7 +101,7 @@ Lorsque vous utilisez les commandes Pas à pas détaillé (F11) ou Pas à pas so
 
 ### <a name="pyobject-values-view-in-native-code"></a>Vue des valeurs PyObject dans le code natif
 
-Lorsqu’un frame natif (C ou C++) est actif, ses variables locales s’affichent dans la fenêtre Variables locales du débogueur. Dans les modules d’extension Python natifs, de nombreuses variables sont de type `PyObject` (qui est un typedef de `_object`), ou de quelques autres types Python fondamentaux (voir la liste ci-dessous). Dans le cadre du débogage en mode mixte, ces valeurs présentent un nœud enfant supplémentaire intitulé « Python view » (Vue Python). Lorsque ce nœud est développé, il affiche la représentation Python de la variable, telle qu’elle apparaîtrait si une variable locale référençant le même objet était présente dans un frame Python. Les enfants de ce nœud sont modifiables.
+Lorsqu’un frame natif (C ou C++) est actif, ses variables locales s’affichent dans la fenêtre Variables locales du débogueur. Dans les modules d’extension Python natifs, de nombreuses variables sont de type `PyObject` (qui est un typedef de `_object`), ou de quelques autres types Python fondamentaux (voir la liste ci-dessous). Dans le cadre du débogage en mode mixte, ces valeurs présentent un nœud enfant supplémentaire intitulé « Python view » (Vue Python). Quand ce nœud est développé, il affiche la représentation Python de la variable, telle qu’elle apparaîtrait si une variable locale référençant le même objet était présente dans un frame Python. Les enfants de ce nœud sont modifiables.
 
 ![Vue Python](media/mixed-mode-debugging-python-view.png)
 

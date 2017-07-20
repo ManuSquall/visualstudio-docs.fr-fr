@@ -1,72 +1,101 @@
 ---
-title: "&#201;l&#233;ment ItemGroup (MSBuild) | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "http://schemas.microsoft.com/developer/msbuild/2003#ItemGroup"
-dev_langs: 
-  - "VB"
-  - "CSharp"
-  - "C++"
-  - "jsharp"
-helpviewer_keywords: 
-  - "ItemGroup, élément [MSBuild]"
-  - "<ItemGroup>, élément [MSBuild]"
+title: "Élément ItemGroup (MSBuild) | Microsoft Docs"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology:
+- vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords:
+- http://schemas.microsoft.com/developer/msbuild/2003#ItemGroup
+dev_langs:
+- VB
+- CSharp
+- C++
+- jsharp
+helpviewer_keywords:
+- ItemGroup element [MSBuild]
+- <ItemGroup> element [MSBuild]
 ms.assetid: aac894e3-a9f1-4bbc-a796-6ef07001f35b
 caps.latest.revision: 24
-author: "kempb"
-ms.author: "kempb"
-manager: "ghogen"
-caps.handback.revision: 24
----
-# &#201;l&#233;ment ItemGroup (MSBuild)
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
+author: kempb
+ms.author: kempb
+manager: ghogen
+translation.priority.ht:
+- de-de
+- es-es
+- fr-fr
+- it-it
+- ja-jp
+- ko-kr
+- ru-ru
+- zh-cn
+- zh-tw
+translation.priority.mt:
+- cs-cz
+- pl-pl
+- pt-br
+- tr-tr
+ms.translationtype: HT
+ms.sourcegitcommit: 38c6099f912424d21df2aeea4cfdd0401ba57465
+ms.openlocfilehash: e63c0dd4e201ef83f84f01148aacd4458806103d
+ms.contentlocale: fr-fr
+ms.lasthandoff: 07/14/2017
 
-Contient un ensemble d'éléments [Item](../msbuild/item-element-msbuild.md) définis par l'utilisateur.  Chaque élément utilisé dans un projet [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] doit être spécifié en tant qu'enfant d'un élément `ItemGroup`.  
+---
+# Élément ItemGroup (MSBuild)
+<a id="itemgroup-element-msbuild" class="xliff"></a>
+Contient un ensemble d’éléments [Item](../msbuild/item-element-msbuild.md) définis par l’utilisateur. Chaque élément utilisé dans un projet [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] doit être spécifié en tant qu’enfant d’un élément `ItemGroup`.  
   
-## Syntaxe  
+ \<Project>  
+ \<ItemGroup>  
   
-```  
+## Syntaxe
+<a id="syntax" class="xliff"></a>  
+  
+```xml  
 <ItemGroup Condition="'String A' == 'String B'">  
     <Item1>... </Item1>  
     <Item2>... </Item2>  
 </ItemGroup>  
 ```  
   
-## Attributs et éléments  
+## Attributs et éléments
+<a id="attributes-and-elements" class="xliff"></a>  
  Les sections suivantes décrivent des attributs, des éléments enfants et des éléments parents.  
   
-### Attributs  
+### Attributs
+<a id="attributes" class="xliff"></a>  
   
 |Attribut|Description|  
-|--------------|-----------------|  
-|`Condition`|Attribut facultatif.  Condition à évaluer.  Pour plus d'informations, consultez [Conditions](../msbuild/msbuild-conditions.md).|  
+|---------------|-----------------|  
+|`Condition`|Attribut facultatif. Condition à évaluer. Pour plus d’informations, consultez l’article [Conditions (Conditions MSBuild)](../msbuild/msbuild-conditions.md).|  
   
-### Éléments enfants  
+### Éléments enfants
+<a id="child-elements" class="xliff"></a>  
   
 |Élément|Description|  
 |-------------|-----------------|  
-|[Élément](../msbuild/item-element-msbuild.md)|Définit les entrées pour le processus de génération.  Un élément `ItemGroup` peut contenir zéro, un ou plusieurs éléments `Item`.|  
+|[Item](../msbuild/item-element-msbuild.md)|Définit les entrées du processus de génération. Un élément `ItemGroup` peut ne contenir aucun élément `Item` ou en contenir plusieurs.|  
   
-### Éléments parents  
+### Éléments parents
+<a id="parent-elements" class="xliff"></a>  
   
 |Élément|Description|  
 |-------------|-----------------|  
 |[Projet](../msbuild/project-element-msbuild.md)|Élément racine requis d'un fichier projet [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)].|  
-|[Cible](../msbuild/target-element-msbuild.md)|Si vous démarrez le .NET Framework 3.5, l'élément `ItemGroup` peut s'afficher à l'intérieur d'un élément `Target`.  Pour plus d'informations, consultez [Targets](../msbuild/msbuild-targets.md).|  
+|[Target](../msbuild/target-element-msbuild.md)|Depuis .NET Framework 3.5, l’élément `ItemGroup` peut apparaître dans un élément `Target`. Pour plus d’informations, consultez l’article [Targets (Cibles MSBuild)](../msbuild/msbuild-targets.md).|  
   
-## Notes  
+## Notes
+<a id="remarks" class="xliff"></a>  
   
-## Exemple  
- L'exemple de code suivant illustre les collections d'éléments définies par l'utilisateur `Res` et `CodeFiles`, déclarées dans un élément `ItemGroup`.  Chaque élément de la collection `Res` contient un élément [ItemMetadata](../msbuild/itemmetadata-element-msbuild.md) enfant défini par l'utilisateur.  
+## Exemple
+<a id="example" class="xliff"></a>  
+ L’exemple de code suivant illustre les collections d’éléments définis par l’utilisateur `Res` et `CodeFiles` déclarés dans un élément `ItemGroup`. Chacun des éléments de la collection d’éléments `Res` contient un élément [ItemMetadata](../msbuild/itemmetadata-element-msbuild.md) enfant défini par l’utilisateur.  
   
-```  
+```xml  
 <Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">  
     <ItemGroup>  
         <Res Include = "Strings.fr.resources" >  
@@ -83,7 +112,8 @@ Contient un ensemble d'éléments [Item](../msbuild/item-element-msbuild.md) dé
 </Project>  
 ```  
   
-## Voir aussi  
- [Project File Schema Reference](../msbuild/msbuild-project-file-schema-reference.md)   
- [Items](../msbuild/msbuild-items.md)   
- [Common MSBuild Project Items](../msbuild/common-msbuild-project-items.md)
+## Voir aussi
+<a id="see-also" class="xliff"></a>  
+ [Référence du schéma de fichier projet](../msbuild/msbuild-project-file-schema-reference.md)   
+ [Éléments](../msbuild/msbuild-items.md)   
+ [Éléments communs des projets MSBuild](../msbuild/common-msbuild-project-items.md)

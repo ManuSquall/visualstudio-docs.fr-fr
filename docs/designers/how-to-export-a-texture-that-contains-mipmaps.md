@@ -1,42 +1,45 @@
 ---
-title: "Comment&#160;: exporter une texture qui contient des mipmaps | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-general"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+title: Guide pratique pour exporter une texture qui contient des mipmaps | Microsoft Docs
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology:
+- vs-ide-general
+ms.tgt_pltfrm: 
+ms.topic: article
 ms.assetid: 3d1ad14b-44fb-4cf0-a995-5e2f60026524
 caps.latest.revision: 7
-author: "BrianPeek"
-ms.author: "brpeek"
-manager: "ghogen"
-caps.handback.revision: 7
----
-# Comment&#160;: exporter une texture qui contient des mipmaps
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
+author: BrianPeek
+ms.author: brpeek
+manager: ghogen
+ms.translationtype: Human Translation
+ms.sourcegitcommit: 47057e9611b824c17077b9127f8d2f8b192d6eb8
+ms.openlocfilehash: 2176086d813109a92f1e2467498d3f1ad4b18c5e
+ms.contentlocale: fr-fr
+ms.lasthandoff: 05/13/2017
 
-Le pipeline de contenu d'image peut générer des mipmaps à partir d'une image source dans le cadre de la phase de génération de votre projet.  Lorsque vous n'avez pas besoin de spécifier le contenu en image de chaque niveau MIP manuellement – comme ce pourrait être le cas pour obtenir certains effets – la génération des mipmaps au moment de la génération garantit que les contenus des mipmaps ne sont jamais désynchronisés et élimine le coût des performances de la génération des mipmaps au moment de l'exécution.  
+---
+# <a name="how-to-export-a-texture-that-contains-mipmaps"></a>Guide pratique pour exporter une texture qui contient des mipmaps
+Le pipeline de contenus d’image peut générer des mipmaps à partir d’une image source dans la phase de génération de votre projet. Quand vous n’avez pas besoin de spécifier le contenu de l’image de chaque niveau MIP manuellement, comme cela peut être nécessaire pour obtenir certains effets, la génération de mipmaps au moment de la génération garantit que le contenu des mipmaps n’est jamais désynchronisé et élimine la réduction des performances découlant de la génération de mipmaps au moment de l’exécution.  
   
- Ce document démontre les activités suivantes :  
+ Ce document illustre ces activités :  
   
--   Configurer l'image source de sorte qu'elle soit traitée par le pipeline de contenu d'image.  
+-   Configuration de l’image source à traiter par le pipeline de contenus d’image.  
   
--   Configurer le pipeline de contenu d'image pour générer des mipmap.  
+-   Configuration du pipeline de contenus d’image pour générer des mipmaps.  
   
-## Exportation de mipmaps  
- Le mappage MIP fournit un niveau de détail automatique dans l'espace à l'écran pour les surfaces texturisées dans un jeu ou une application 3D.  Il améliore les performances de rendu d'un jeu ou d'une application en précalculant les versions sous\-échantillonnées d'une texture afin qu'il ne soit pas nécessaire de sous\-échantillonner la texture entière à chaque échantillonnage.  
+## <a name="exporting-mipmaps"></a>Exportation de mipmaps  
+ Le mipmapping fournit automatiquement le niveau de détail de l’espace à l’écran pour les surfaces texturées dans une application ou un jeu 3D. Il améliore les performances de rendu d’un jeu ou d’une application en précalculant des versions sous-échantillonnées d’une texture. Ainsi, une texture entière ne doit pas être sous-échantillonnée chaque fois qu’elle est échantillonnée.  
   
-#### Pour exporter une texture qui a des mipmaps  
+#### <a name="to-export-a-texture-that-has-mipmaps"></a>Pour exporter une texture contenant des mipmaps  
   
-1.  Démarrez avec une texture de base.  Chargez un fichier image existant, ou créez\-en un comme décrit dans [Comment : créer une texture de base](../Topic/How%20to:%20Create%20a%20Basic%20Texture.md).  Pour prendre en charge les mipmaps, spécifiez une texture qui a une largeur et une hauteur qui ont la même puissance de deux en taille, par exemple, 64x64, 256x256, ou 512x512.  
+1.  Commencez par une texture de base. Chargez un fichier image existant ou créez-en un comme décrit dans [Guide pratique pour créer une texture de base](../designers/how-to-create-a-basic-texture.md). Pour prendre en charge les mipmaps, spécifiez une texture dont la largeur et la hauteur ont pour valeur la même puissance de deux (par exemple : 64x64, 256x256 ou 512x512).  
   
-2.  Configurez le fichier de texture que vous venez de créer afin qu'il soit traité par le pipeline de contenu d'image.  Dans l'**Explorateur de solutions**, ouvrez le menu contextuel du fichier de texture que vous venez de créer, puis choisissez **Propriétés**.  Dans la page **Propriétés de configuration**, **Général**, affectez à la propriété **Type d'élément** la valeur **Pipeline de contenu d'image**.  Assurez\-vous que la propriété **Contenu** a la valeur **Oui** et que **Exclu de la génération** a la valeur **Non**, puis cliquez sur le bouton **Appliquer**.  La page de propriétés de configuration **Pipeline de contenu d'image** s'affiche.  
+2.  Configurez le fichier de texture que vous venez de créer pour qu’il soit traité par le pipeline de contenus d’image. Dans l’**Explorateur de solutions**, ouvrez le menu contextuel pour le fichier de texture que vous venez de créer puis choisissez **Propriétés**. Dans la page **Propriétés de configuration**, **Général**, définissez la propriété **Type d’élément** sur **Pipeline de contenus d’image**. Vérifiez que la propriété **Contenu** est définie sur **Oui** et que **Exclure de la génération** est défini sur **Non**, puis choisissez le bouton **Appliquer**. La page des propriétés de configuration du **Pipeline de contenus d’image** apparaît.  
   
-3.  Configurez le pipeline de contenu d'image pour générer des mipmap.  Dans la page **Propriétés de configuration**, **Pipeline de contenu d'image**, **Général**, affectez à la propriété **Générer des mips** la valeur **Oui \(\/generatemips\)**.  
+3.  Configurez le pipeline de contenus d’image pour générer des mipmaps. Dans la page **Propriétés de configuration**, **Pipeline de contenus d’image**, **Général**, affectez à la propriété **Générer des mips** la valeur **Oui (/generatemips)**.  
   
-4.  Cliquez sur le bouton **OK**.  
+4.  Sélectionnez le bouton **OK** .  
   
- Lorsque vous générez le projet, le pipeline de contenu d'image convertit l'image source depuis le format de travail vers le format de sortie que vous avez spécifié, niveaux MIP inclus, et le résultat est copié dans le répertoire de sortie du projet.
+ Quand vous générez le projet, le pipeline de contenus d’image convertit l’image source du format de travail dans le format de sortie que vous avez spécifié, notamment les niveaux MIP, et le résultat est copié dans le répertoire de sortie du projet.

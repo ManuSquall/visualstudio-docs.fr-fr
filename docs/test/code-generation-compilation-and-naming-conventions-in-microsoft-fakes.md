@@ -26,10 +26,11 @@ translation.priority.ht:
 - tr-tr
 - zh-cn
 - zh-tw
-translationtype: Human Translation
-ms.sourcegitcommit: 5658ecf52637a38bc3c2a5ad9e85b2edebf7d445
-ms.openlocfilehash: 2aff9b2c34bf8897adc7edee3a1205317258fc0f
-ms.lasthandoff: 02/22/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: 47057e9611b824c17077b9127f8d2f8b192d6eb8
+ms.openlocfilehash: 5acc74abd56b128bf9df708ab7c0f3451c6eb270
+ms.contentlocale: fr-fr
+ms.lasthandoff: 05/13/2017
 
 ---
 # <a name="code-generation-compilation-and-naming-conventions-in-microsoft-fakes"></a>Génération et compilation de code et conventions de nommage dans Microsoft Fakes
@@ -40,22 +41,39 @@ Cette rubrique traite des options et des problèmes dans la génération et la c
 -   Visual Studio Enterprise  
   
 ##  <a name="BKMK_In_this_topic"></a> Dans cette rubrique  
- [Génération et compilation de code](#BKMK_Code_generation_and_compilation)  
   
--   [Configuration de la génération du code des stubs](#BKMK_Configuring_code_generation_of_stubs) • [Filtrage de types](#BKMK_Type_filtering) • [Classes concrètes et méthodes virtuelles d’opérations stub](#BKMK_Stubbing_concrete_classes_and_virtual_methods) • [Types internes](#BKMK_Internal_types) • [Optimisation de la durée de génération](#BKMK_Optimizing_build_times) • [Prévention du conflit de nom d’assembly](#BKMK_Avoiding_assembly_name_clashing)  
+-   [Génération et compilation de code](#BKMK_Code_generation_and_compilation)  
   
- [Conventions d’affectation de noms Fakes](#BKMK_Fakes_naming_conventions)  
+-   [Configuration de la génération du code des stubs](#BKMK_Configuring_code_generation_of_stubs)
   
--   [Conventions de nommage du type shim et du type stub](#BKMK_Shim_type_and_stub_type_naming_conventions) • [Conventions de nommage de la propriété déléguée shim ou du champ délégué stub](#BKMK_Shim_delegate_property_or_stub_delegate_field_naming_conventions) • [Conventions d’affectation de nom de type de paramètre](#BKMK_Parameter_type_naming_conventions) • [Règles récursives](#BKMK_Recursive_rules)  
+-   [Filtrage de types](#BKMK_Type_filtering)
   
- [Ressources externes](#BKMK_External_resources)  
+-   [Classes concrètes et méthodes virtuelles d’opérations stub](#BKMK_Stubbing_concrete_classes_and_virtual_methods)
+  
+-   [Types internes](#BKMK_Internal_types)
+  
+-   [Optimisation de la durée de génération](#BKMK_Optimizing_build_times)
+  
+-   [Prévention du conflit de nom d’assembly](#BKMK_Avoiding_assembly_name_clashing)  
+  
+-   [Conventions d’affectation de noms Fakes](#BKMK_Fakes_naming_conventions)  
+  
+-   [Conventions de nommage du type shim et du type stub](#BKMK_Shim_type_and_stub_type_naming_conventions)
+  
+-   [Conventions de nommage de la propriété déléguée shim ou du champ délégué stub](#BKMK_Shim_delegate_property_or_stub_delegate_field_naming_conventions)
+  
+-   [Conventions de nommage du type de paramètre](#BKMK_Parameter_type_naming_conventions)
+  
+-   [Règles récursives](#BKMK_Recursive_rules)  
+  
+-   [Ressources externes](#BKMK_External_resources)  
   
 -   [Aide](#BKMK_Guidance)  
   
 ##  <a name="BKMK_Code_generation_and_compilation"></a> Génération et compilation de code  
   
 ###  <a name="BKMK_Configuring_code_generation_of_stubs"></a> Configuration de la génération du code des stubs  
- La génération de types stub est configurée dans un fichier XML avec l’extension de fichier .fakes. L'infrastructure Fakes s'intègre au processus de génération via des tâches personnalisées MSBuild et détecte ces fichiers au moment de la génération. Le générateur de code Fakes compile les types stub dans un assembly et ajoute la référence au projet.  
+ La génération de types stub est configurée dans un fichier XML avec l’extension de fichier .fakes. Le framework Fakes s'intègre au processus de génération via des tâches personnalisées MSBuild et détecte ces fichiers au moment de la génération. Le générateur de code Fakes compile les types stub dans un assembly et ajoute la référence au projet.  
   
  L'exemple suivant montre des types stub définis dans FileSystem.dll :  
   
@@ -125,7 +143,7 @@ Cette rubrique traite des options et des problèmes dans la génération et la c
 ```  
   
 ###  <a name="BKMK_Internal_types"></a> Types internes  
- Le générateur de code Fakes génère des types shim et stub pour les types qui sont visibles pour l'assembly généré Fakes. Pour que les types internes d’un assembly ayant fait l’objet d’un shim soient visibles pour l’assembly Fakes et votre assembly de test, ajoutez les attributs <xref:System.Runtime.CompilerServices.InternalsVisibleToAttribute> au code de l’assembly ayant fait l’objet d’un shim qui donne de la visibilité à l’assembly Fakes généré et à l’assembly de test. Voici un exemple :  
+ Le générateur de code Fakes génère des types shim et stub pour les types qui sont visibles pour l'assembly généré Fakes. Pour que les types internes d'un assembly ayant fait l'objet d'un shim soient visibles pour l'assembly Fakes et votre assembly de test, ajoutez les attributs <xref:System.Runtime.CompilerServices.InternalsVisibleToAttribute> au code de l'assembly ayant fait l'objet d'un shim qui donne de la visibilité à l'assembly Fakes généré et à l'assembly de test. Voici un exemple :  
   
 ```c#  
 // FileSystem\AssemblyInfo.cs  
@@ -149,9 +167,9 @@ Cette rubrique traite des options et des problèmes dans la génération et la c
         PublicKey=<Test_assembly_public_key>)]  
     ```  
   
- Si l'assembly ayant fait l'objet d'un shim porte un nom fort, l'infrastructure Fakes signe automatiquement fortement l'assembly Fakes généré. Vous devez signer avec un nom fort l'assembly de test. Consultez [Création et utilisation d’assemblys avec nom fort](http://msdn.microsoft.com/Library/ffbf6d9e-4a88-4a8a-9645-4ce0ee1ee5f9).  
+ Si l'assembly ayant fait l'objet d'un shim porte un nom fort, le framework Fakes signe automatiquement fortement l'assembly Fakes généré. Vous devez signer avec un nom fort l'assembly de test. Consultez [Création et utilisation d’assemblys avec nom fort](http://msdn.microsoft.com/Library/ffbf6d9e-4a88-4a8a-9645-4ce0ee1ee5f9).  
   
- L’infrastructure Fakes utilise la même clé pour signer tous les assemblys générés. Ainsi, vous pouvez utiliser cet extrait de code comme point de départ pour ajouter l’attribut **InternalsVisibleTo** de l’assembly Fakes à votre code assembleur ayant fait l’objet d’un shim.  
+ Le framework Fakes utilise la même clé pour signer tous les assemblys générés. Ainsi, vous pouvez utiliser cet extrait de code comme point de départ pour ajouter l’attribut **InternalsVisibleTo** de l’assembly Fakes à votre code assembleur ayant fait l’objet d’un shim.  
   
 ```c#  
 [assembly: InternalsVisibleTo("FileSystem.Fakes, PublicKey=0024000004800000940000000602000000240000525341310004000001000100e92decb949446f688ab9f6973436c535bf50acd1fd580495aae3f875aa4e4f663ca77908c63b7f0996977cb98fcfdb35e05aa2c842002703cad835473caac5ef14107e3a7fae01120a96558785f48319f66daabc862872b2c53f5ac11fa335c0165e202b4c011334c7bc8f4c4e570cf255190f4e3e2cbc9137ca57cb687947bc")]  
@@ -277,7 +295,7 @@ attribute of the Assembly element in the .fakes:
   
 ###  <a name="BKMK_Parameter_type_naming_conventions"></a> Conventions d’affectation de nom de type de paramètre  
   
-|Étant donné|La chaîne ajoutée est…|  
+|Étant donné|La chaîne ajoutée est...|  
 |-----------|-------------------------|  
 |Un **type**`T`|T<br /><br /> L’espace de noms, la structure imbriquée et les tics génériques sont supprimés.|  
 |Un **paramètre de sortie**`out T`|`TOut`|  
@@ -285,7 +303,7 @@ attribute of the Assembly element in the .fakes:
 |Un **type tableau**`T[]`|`TArray`|  
 |Un type **tableau multidimensionnel** `T[ , , ]`|`T3`|  
 |Un type **pointeur** `T*`|`TPtr`|  
-|Un **type générique**`T<R1, …>`|`TOfR1`|  
+|Un **type générique**`T<R1, ...>`|`TOfR1`|  
 |Un **argument de type générique**`!i` de type `C<TType>`|`Ti`|  
 |Un **argument de méthode générique**`!!i` de méthode `M<MMethod>`|`Mi`|  
 |Un **type imbriqué**`N.T`|`N` est ajouté, puis `T`|  

@@ -27,10 +27,11 @@ translation.priority.ht:
 - tr-tr
 - zh-cn
 - zh-tw
-translationtype: Human Translation
-ms.sourcegitcommit: 5db97d19b1b823388a465bba15d057b30ff0b3ce
-ms.openlocfilehash: 65bcf9081699a793ddc1876fec266c8b3ed9ba90
-ms.lasthandoff: 02/22/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: 47057e9611b824c17077b9127f8d2f8b192d6eb8
+ms.openlocfilehash: 28bbc6d742a072f1305b0daed7720816492083fd
+ms.contentlocale: fr-fr
+ms.lasthandoff: 05/13/2017
 
 ---
 # <a name="using-visual-studio-tools-for-unity"></a>Utilisation de Visual Studio Tools pour Unity
@@ -93,7 +94,7 @@ Dans cette section, vous allez apprendre à utiliser les fonctionnalités d’in
   
      ![Afficher la fenêtre Explorateur de projet Unity.](../cross-platform/media/vstu_view_unity_project_explorer.png "vstu_unity_project_explorer")  
   
- L'Explorateur de projets Unity affiche l'ensemble de vos répertoires et fichiers projet Unity de la même façon que l'éditeur Unity : il en va différemment de la navigation dans vos scripts Unity avec l'Explorateur de solutions, qui ne contient que vos fichiers script et les affiche, car les projets et solutions générés par Visual Studio Tools pour Unity les organise. En particulier dans les projets volumineux, il est souvent plus facile de localiser le script que vous souhaitez modifier à l'aide de l'Explorateur de projets Unity. Il est alors également aisé de modifier d'autres types de fichiers, comme les fichiers de configuration texte, dans Visual Studio sans les ajouter à l'un des projets de la solution Visual Studio.  
+ L’Explorateur de projets Unity affiche l’ensemble de vos répertoires et fichiers projet Unity de la même façon que l’éditeur Unity : il en va différemment de la navigation dans vos scripts Unity avec l’Explorateur de solutions, qui ne contient que vos fichiers script et les affiche, car les projets et solutions générés par Visual Studio Tools pour Unity les organise. En particulier dans les projets volumineux, il est souvent plus facile de localiser le script que vous souhaitez modifier à l'aide de l'Explorateur de projets Unity. Il est alors également aisé de modifier d'autres types de fichiers, comme les fichiers de configuration texte, dans Visual Studio sans les ajouter à l'un des projets de la solution Visual Studio.  
   
 ### <a name="unity-error-list"></a>Liste d'erreurs Unity  
  Vous pouvez afficher les messages à partir de la console Unity à l'intérieur de Visual Studio lorsqu'il est connecté à une instance Unity. Les erreurs et les avertissements Unity sont inclus. Les messages sont affichés dans la fenêtre **Liste d’erreurs** de Visual Studio ; les messages d’erreur Unity s’affichent sous l’onglet **Erreurs**, les messages d’avertissement sous l’onglet **Avertissements** et les autres messages, comme ceux envoyés à l’aide de l’API Unity Debug.Log, sous l’onglet **Messages**.  
@@ -189,9 +190,9 @@ Dans cette section, vous allez apprendre à utiliser les fonctionnalités d’in
   
      Dans les deux cas, Visual Studio Tools pour Unity conserve la référence de projet, même s'il doit régénérer les fichiers projet et solution ; par conséquent, vous ne devez effectuer ces étapes qu'une seule fois.  
   
-2.  Référencez le profil d'infrastructure Unity correct dans le projet DLL. Dans Visual Studio, dans les propriétés du projet DLL, définissez la propriété **Framework cible** avec la version du Framework Unity que vous utilisez. Il s'agit de la bibliothèque des classes de base Unity qui correspond à la compatibilité d'API ciblée par votre projet, comme les bibliothèques de classes de base Unity complètes, micro ou web. De cette façon, votre DLL ne peut pas appeler les méthodes du Framework qui existent dans d'autres infrastructures ou niveaux de compatibilité, mais qui n'existent peut-être pas dans la version du Framework Unity que vous utilisez.  
+2.  Référencez le bon profil du framework Unity dans le projet DLL. Dans Visual Studio, dans les propriétés du projet DLL, définissez la propriété **Framework cible** avec la version du Framework Unity que vous utilisez. Il s'agit de la bibliothèque des classes de base Unity qui correspond à la compatibilité d'API ciblée par votre projet, comme les bibliothèques de classes de base Unity complètes, micro ou web. De cette façon, votre DLL ne peut pas appeler les méthodes du framework qui existent dans d'autres frameworks ou niveaux de compatibilité, mais qui n'existent peut-être pas dans la version du framework Unity que vous utilisez.  
   
-     ![Définissez Unity comme infrastructure cible de la DLL.] (../cross-platform/media/vstu_debugging_dll_target_framework.png "vstu_debugging_dll_target_framework")  
+     ![Définissez Unity comme framework cible de la DLL.] (../cross-platform/media/vstu_debugging_dll_target_framework.png "vstu_debugging_dll_target_framework")  
   
 3.  Copiez la DLL dans le dossier Composants de votre projet Unity. Dans Unity, les composants désignent les fichiers regroupés et déployés au même titre que votre application Unity afin de pouvoir être chargés au moment de l'exécution. Comme les DLL sont liées à l'exécution, elles doivent être déployées en tant que composants. Pour que la DLL soit déployée comme composant, l'éditeur Unity requiert que les DLL soient placées dans le dossier Composants de votre projet Unity. Il existe deux façons de procéder :  
   

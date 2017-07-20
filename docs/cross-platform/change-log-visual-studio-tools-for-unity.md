@@ -28,10 +28,11 @@ translation.priority.mt:
 - pl-pl
 - pt-br
 - tr-tr
-translationtype: Human Translation
-ms.sourcegitcommit: 47c39bd711b69efdb863d71f11e3e472054a3ce3
-ms.openlocfilehash: 2af148cb8367ea3a584ac8e028c8167e4ad6123b
-ms.lasthandoff: 04/06/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: 47057e9611b824c17077b9127f8d2f8b192d6eb8
+ms.openlocfilehash: 7aa8de1116409f30cf1a0cd2fd689c03c2242724
+ms.contentlocale: fr-fr
+ms.lasthandoff: 05/13/2017
 
 ---
 # <a name="change-log-visual-studio-tools-for-unity"></a>Journal des modifications (Visual Studio Tools pour Unity)
@@ -292,7 +293,7 @@ Journal des modifications Visual Studio Tools pour Unity
   
     -   Correction de la génération des références à System.Xml.Link et System.Runtime.Serialization.  
   
-    -   Ajout de la prise en charge de plusieurs abonnés aux raccordements API pour la génération du fichier projet.  
+    -   Ajout de la prise en charge de plusieurs abonnés aux hooks d’API pour la génération du fichier projet.  
   
     -   Toujours terminer la génération du fichier projet même quand l’un des fichiers à générer est verrouillé.  
   
@@ -461,7 +462,7 @@ Journal des modifications Visual Studio Tools pour Unity
   
 -   Corriger le filtrage des MonoBehaviours par version Unity dans les Assistants.  
   
--   Fix bug where all assets were included in the project files if the extension filter was empty.  
+-   Corriger les bogues où tous les composants ont été inclus dans les fichiers projet si le filtre d’extension était vide.  
   
 ## <a name="191"></a>1.9.1  
  Publication 22-09-2014  
@@ -760,7 +761,7 @@ Journal des modifications Visual Studio Tools pour Unity
   
 -   Résolution de bogue UVS-11 : variables locales dans les coroutines.  
   
-## <a name="11--beta-release"></a>1.1 – Version bêta  
+## <a name="11---beta-release"></a>1.1 - Version bêta  
  Publication 09-10-2014  
   
 ## <a name="1013"></a>1.0.13  
@@ -963,6 +964,6 @@ Journal des modifications Visual Studio Tools pour Unity
   
 -   Résolution de l’exécution de la DLL dans le dossier Ressources pour UnityScript et Boo.  
   
-## <a name="10--initial-release"></a>1.0 – Version initiale  
+## <a name="10---initial-release"></a>1.0 - Version initiale  
  Publication 22-08-2012
 

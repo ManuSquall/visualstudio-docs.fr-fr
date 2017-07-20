@@ -37,10 +37,11 @@ translation.priority.ht:
 - tr-tr
 - zh-cn
 - zh-tw
-translationtype: Human Translation
-ms.sourcegitcommit: 79460291e91f0659df0a4241e17616e55187a0e2
-ms.openlocfilehash: f3f7d61bf46f318249dd3b54caee27998d7fd105
-ms.lasthandoff: 02/22/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: 47057e9611b824c17077b9127f8d2f8b192d6eb8
+ms.openlocfilehash: 3184299feb0834dc7e3b6980f4f3fed87b99092c
+ms.contentlocale: fr-fr
+ms.lasthandoff: 05/13/2017
 
 ---
 # <a name="al-assembly-linker-task"></a>AL (Assembly Linker), tâche
@@ -52,7 +53,7 @@ La tâche AL encapsule AL.exe, un outil distribué avec le [!INCLUDE[winsdklong]
 |Paramètre|Description|  
 |---------------|-----------------|  
 |`AlgorithmID`|Paramètre `String` facultatif.<br /><br /> Spécifie un algorithme de hachage de tous les fichiers dans un assembly multifichier, à l'exception du fichier qui contient le manifeste d'assembly. Pour plus d’informations, consultez la documentation relative à l’option `/algid` dans [Al.exe (Assembly Linker)](http://msdn.microsoft.com/Library/b5382965-0053-47cf-b92f-862860275a01).|  
-|`BaseAddress`|Paramètre `String` facultatif.<br /><br /> Spécifie l’adresse de chargement d’une DLL sur l’ordinateur de l’utilisateur au moment de l’exécution. Le chargement des applications est plus rapide si vous spécifiez l’adresse de base des DLL au lieu de laisser le système d’exploitation déplacer les DLL dans l’espace de processus. Ce paramètre correspond à l’option /base[address] dans [Al.exe (Assembly Linker)](http://msdn.microsoft.com/Library/b5382965-0053-47cf-b92f-862860275a01).|  
+|`BaseAddress`|Paramètre `String` facultatif.<br /><br /> Spécifie l'adresse de chargement d'une DLL sur l'ordinateur de l'utilisateur au moment de l'exécution. Le chargement des applications est plus rapide si vous spécifiez l’adresse de base des DLL au lieu de laisser le système d’exploitation déplacer les DLL dans l’espace de processus. Ce paramètre correspond à l’option /base[address] dans [Al.exe (Assembly Linker)](http://msdn.microsoft.com/Library/b5382965-0053-47cf-b92f-862860275a01).|  
 |`CompanyName`|Paramètre `String` facultatif.<br /><br /> Spécifie une chaîne pour le champ `Company` de l'assembly. Pour plus d’informations, consultez la documentation relative à l’option `/comp[any]` dans [Al.exe (Assembly Linker)](http://msdn.microsoft.com/Library/b5382965-0053-47cf-b92f-862860275a01).|  
 |`Configuration`|Paramètre `String` facultatif.<br /><br /> Spécifie une chaîne pour le champ `Configuration` de l'assembly. Pour plus d’informations, consultez la documentation relative à l’option `/config[uration]` dans [Al.exe (Assembly Linker)](http://msdn.microsoft.com/Library/b5382965-0053-47cf-b92f-862860275a01).|  
 |`Copyright`|Paramètre `String` facultatif.<br /><br /> Spécifie une chaîne pour le champ `Copyright` de l'assembly. Pour plus d’informations, consultez la documentation relative à l’option `/copy[right]` dans [Al.exe (Assembly Linker)](http://msdn.microsoft.com/Library/b5382965-0053-47cf-b92f-862860275a01).|  
@@ -87,7 +88,7 @@ La tâche AL encapsule AL.exe, un outil distribué avec le [!INCLUDE[winsdklong]
 |`Win32Resource`|Paramètre `String` facultatif.<br /><br /> Insère une ressource Win32 (fichier .res) dans le fichier de sortie. Pour plus d’informations, consultez la documentation relative à l’option `/win32res` dans [Al.exe (Assembly Linker)](http://msdn.microsoft.com/Library/b5382965-0053-47cf-b92f-862860275a01).|  
   
 ## <a name="remarks"></a>Remarques  
- Outre les paramètres énumérés ci-dessus, cette tâche hérite des paramètres de la classe <xref:Microsoft.Build.Tasks.ToolTaskExtension>, qui elle-même hérite de la classe <xref:Microsoft.Build.Utilities.ToolTask>. Pour obtenir la liste de ces paramètres supplémentaires et de leurs descriptions, consultez l’article [ToolTaskExtension Base Class (Classe de base ToolTaskExtension)](../msbuild/tooltaskextension-base-class.md).  
+ En plus des paramètres énumérés ci-dessus, cette tâche hérite des paramètres de la classe <xref:Microsoft.Build.Tasks.ToolTaskExtension>, qui elle-même hérite de la classe <xref:Microsoft.Build.Utilities.ToolTask>. Pour obtenir la liste de ces paramètres supplémentaires et de leurs descriptions, consultez l’article [ToolTaskExtension Base Class (Classe de base ToolTaskExtension)](../msbuild/tooltaskextension-base-class.md).  
   
 ## <a name="example"></a>Exemple  
  L’exemple suivant crée un assembly avec les options spécifiées.  

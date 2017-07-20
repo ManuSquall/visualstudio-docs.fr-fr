@@ -1,5 +1,5 @@
 ---
-title: "Écriture de tests unitaires pour C/C++ à l’aide de l’infrastructure de tests unitaires Microsoft pour C++ | Microsoft Docs"
+title: "Écriture de tests unitaires pour C/C++ à l’aide du framework de tests unitaires Microsoft pour C++ | Microsoft Docs"
 ms.custom: 
 ms.date: 11/04/2016
 ms.reviewer: 
@@ -27,13 +27,14 @@ translation.priority.mt:
 - pl-pl
 - pt-br
 - tr-tr
-translationtype: Human Translation
-ms.sourcegitcommit: ca7c86466fa23fb21a932f26dc24e37c71cf29b4
-ms.openlocfilehash: 84549f28f33933eacbf44742b5be129df8ab780e
-ms.lasthandoff: 04/05/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: 47057e9611b824c17077b9127f8d2f8b192d6eb8
+ms.openlocfilehash: 203cc6111870cbf3342fd84c5931a0dadc2bdde0
+ms.contentlocale: fr-fr
+ms.lasthandoff: 05/13/2017
 
 ---
-# <a name="writing-unit-tests-for-cc-with-the-microsoft-unit-testing-framework-for-c"></a>Écriture de tests unitaires pour C/C++ à l’aide de l’infrastructure de tests unitaires Microsoft pour C++
+# <a name="writing-unit-tests-for-cc-with-the-microsoft-unit-testing-framework-for-c"></a>Écriture de tests unitaires pour C/C++ à l’aide du framework de tests unitaires Microsoft pour C++
 Dans Visual Studio, vous pouvez créer des tests unitaires pour le code non managé écrit en C++. Le code non managé est parfois appelé code natif.  
   
  La procédure suivante contient les informations essentielles qui vous aideront à démarrer. Les sections suivantes fournissent une procédure pas à pas qui décrit les étapes plus en détail.  
@@ -46,7 +47,7 @@ Dans Visual Studio, vous pouvez créer des tests unitaires pour le code non mana
   
 2.  Rendez la DLL accessible au projet de test :  
   
-    -   `#include` un fichier `.h` contenant les déclarations de fonctions de la DLL accessibles de l'extérieur.  
+    -   `#include` un fichier `.h` contenant les déclarations de fonctions de la DLL accessibles de l’extérieur.  
   
          Le fichier `.h` doit contenir les déclarations de fonction marquées avec `_declspec(dllimport)`. Vous pouvez également exporter les méthodes à l'aide d'un fichier DEF. Pour plus d’informations, consultez [Importation et exportation](/cpp/build/importing-and-exporting).  
   

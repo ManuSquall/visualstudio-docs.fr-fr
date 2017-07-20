@@ -31,10 +31,11 @@ translation.priority.mt:
 - pl-pl
 - pt-br
 - tr-tr
-translationtype: Human Translation
-ms.sourcegitcommit: a42f5a30375192c89c9984e40ba0104da98d7253
-ms.openlocfilehash: 7ec312bf7c85759fef700f0746c0981f263d46e2
-ms.lasthandoff: 03/07/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: 47057e9611b824c17077b9127f8d2f8b192d6eb8
+ms.openlocfilehash: 362a756e434f93eb39776c76382d059cc2744cae
+ms.contentlocale: fr-fr
+ms.lasthandoff: 05/13/2017
 
 ---
 # <a name="welcome-to-visual-studio-2017"></a>Bienvenue dans Visual Studio 2017 !
@@ -90,7 +91,7 @@ De plus, vous pouvez intégrer les API REST Office 365 à votre propre applicat
  Utilisez [Visual Studio Team Services](https://www.visualstudio.com/team-services/) pour stocker votre code dans le cloud sans avoir à gérer de serveur local. Utilisez [Team Foundation Server](https://www.visualstudio.com/tfs/) si vous voulez gérer un serveur local. Chaque fois que vous créez un projet de code, vous avez la possibilité de l’ajouter à la gestion de version. Découvrez le système de gestion de version qui convient le mieux à vos besoins : [Choix de la gestion de version adaptée à votre projet](https://www.visualstudio.com/en-us/docs/tfvc/comparison-git-tfvc).  
 
 ### <a name="build-your-app"></a>Générer votre application  
- Vous pouvez [générer votre application localement](ide/compiling-and-building-in-visual-studio.md) et vérifier qu’elle fonctionne correctement. Utilisez ensuite les [outils de débogage](debugger/debugging-in-visual-studio.md) pour résoudre les éventuels problèmes qu’elle présente. Vous pouvez également créer des projets sur des serveurs partagés ou dans le cloud. Automatisez votre processus de génération pour générer le code que les développeurs de votre équipe ont vérifié dans la gestion de version. Par exemple, vous pouvez générer un ou plusieurs projets la nuit ou chaque fois le code est archivé. Pour plus d’informations, consultez [Intégration continue sur n’importe quelle plateforme](https://www.visualstudio.com/en-us/docs/build/overview).
+ Vous pouvez [générer votre application localement](ide/compiling-and-building-in-visual-studio.md) et vérifier qu’elle fonctionne correctement. Utilisez ensuite les [outils de débogage](debugger/debugging-in-visual-studio.md) pour résoudre les éventuels problèmes qu’elle présente. Vous pouvez également créer des projets sur des serveurs partagés ou dans le cloud. Automatisez votre processus de génération pour générer le code que les développeurs de votre équipe ont vérifié dans le contrôle de version. Par exemple, vous pouvez générer un ou plusieurs projets la nuit ou chaque fois le code est archivé. Pour plus d’informations, consultez [Intégration continue sur n’importe quelle plateforme](https://www.visualstudio.com/en-us/docs/build/overview).
 
 ### <a name="test-and-improve-your-app"></a>Tester et améliorer votre application  
 [Créez des tests unitaires](test/unit-test-your-code.md) pour améliorer la qualité de votre application. Ces tests peuvent être exécutés à chaque archivage et dans le cadre de votre build.  
@@ -99,22 +100,22 @@ Planifiez, créez et exécutez des tests automatisés et manuels pour votre appl
 
 Diagnostiquez l’utilisation de la mémoire et du processeur, ainsi que d’autres problèmes au niveau de l’application. Pour plus d’informations, consultez [Outils de profilage](profiling/profiling-tools.md).
 
-### <a name="deliver-your-teams-code-faster"></a>Fournir le code de votre équipe plus rapidement  
- Supprimez les barrières entre les membres de votre équipe et améliorez la collaboration. Allez plus loin en automatisant la publication de votre application à chaque étape du développement, jusqu’au stade de la production. Surveillez les performances et la disponibilité de votre application en direct. Recueillez des données en temps réel sur l’utilisation que font vos clients de l’application. Pour plus d’informations, consultez [DevOps et Application Lifecycle Management](https://www.visualstudio.com/en-us/docs/vsts-tfs-overview).  
+### <a name="deliver-your-teams-code-faster"></a>Distribuer le code de votre équipe plus rapidement  
+ Supprimez les barrières entre les membres de votre équipe et améliorez la collaboration. Allez plus loin en automatisant la publication de votre application à chaque étape du développement, jusqu’au stade de la production. Surveillez les performances et la disponibilité de votre application en direct. Recueillez des données en temps réel sur l’utilisation que font vos clients de l’application. Pour en savoir plus, consultez [DevOps and Application Lifecycle Management](https://www.visualstudio.com/en-us/docs/vsts-tfs-overview) .  
 
 ## <a name="whats-new"></a>Nouveautés  
 Découvrez les nouveautés de Visual Studio.
 
 |||  
 |-|-|  
-|[Nouveautés dans Visual Studio 2017](ide/whats-new-in-visual-studio.md)|[Nouveautés de Visual C++](/cpp/top/what-s-new-for-visual-cpp-in-visual-studio)
-|[Nouveautés de Visual C#](/dotnet/articles/csharp/csharp-7)|
+|[Nouveautés dans Visual Studio 2017](ide/whats-new-in-visual-studio.md)|[Nouveautés de Visual C++](/cpp/top/what-s-new-for-visual-cpp-in-visual-studio)
+|[Nouveautés dans Visual C#](/dotnet/articles/csharp/csharp-7)|
 
 
 ## <a name="extend-visual-studio"></a>Extension de Visual Studio  
 Ajoutez votre propre extension Visual Studio afin d’inclure un outil ou un script que vous utilisez souvent en codage. Vous pouvez créer des éléments de menu et des fenêtres d’outils personnalisés afin d’intégrer vos propres outils dans l’environnement de développement de Visual Studio. Vous pouvez prolonger l’éditeur Visual Studio pour analyser ou fixer le code, ou ajouter un nouveau type de projet de manière à inclure exactement ce dont vous avez besoin.  
 
-Pour obtenir la dernière version des outils d’extensibilité Visual Studio (VS SDK), consultez [Kit SDK Visual Studio](extensibility/visual-studio-sdk.md).  
+Pour obtenir la dernière version des outils d’extensibilité de Visual Studio (Visual Studio SDK), consultez [Visual Studio SDK](extensibility/visual-studio-sdk.md).  
 
 Vous pouvez écrire vos propres analyseurs et générateurs de code à l’aide de la plateforme de compilateurs .NET (Roslyn). Trouvez tout ce dont vous avez besoin sur [Roslyn](https://github.com/dotnet/Roslyn).  
 

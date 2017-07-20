@@ -39,10 +39,11 @@ translation.priority.mt:
 - pl-pl
 - pt-br
 - tr-tr
-translationtype: Human Translation
-ms.sourcegitcommit: a42f5a30375192c89c9984e40ba0104da98d7253
-ms.openlocfilehash: 618aaec3a0ae735560d14bea43cc2b08bd9e5445
-ms.lasthandoff: 03/07/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: 47057e9611b824c17077b9127f8d2f8b192d6eb8
+ms.openlocfilehash: 90fed413835f118e59bc32f0b94cb62a40baaca1
+ms.contentlocale: fr-fr
+ms.lasthandoff: 05/13/2017
 
 ---
 # <a name="analyze-html-ui-responsiveness-in-universal-windows-apps"></a>Analyser la réactivité de l’interface utilisateur HTML dans les applications Windows universelles
@@ -69,13 +70,13 @@ Cette rubrique explique comment isoler les problèmes de performances dans vos a
   
      Les options suivantes sont disponibles pour la cible d'analyse :  
   
-    -   **Projet de démarrage**. Sélectionnez cette option pour analyser le projet de démarrage actif. Si vous exécutez l'application sur un ordinateur/un appareil distant, vous devez utiliser ce paramètre, qui est la valeur par défaut.  
+    -   **Projet de démarrage**. Sélectionnez cette option pour analyser le projet de démarrage actif. Si vous exécutez l'application sur un ordinateur ou un périphérique distants, vous devez utiliser ce paramètre, qui est la valeur par défaut.  
   
-    -   **Application en cours d'exécution**. Sélectionnez cette option pour choisir l'application Windows Store dans la liste des applications en cours d'exécution. Vous ne pouvez pas utiliser cette option lorsque vous exécutez l'application sur un ordinateur/un appareil distant.  
+    -   **Application en cours d'exécution**. Sélectionnez cette option pour choisir l'application Windows Store dans la liste des applications en cours d'exécution. Vous ne pouvez pas utiliser cette option lorsque vous exécutez l'application sur un ordinateur ou un périphérique distants.  
   
          Vous pouvez utiliser cette option pour analyser les performances des applications en cours d'exécution sur votre ordinateur lorsque vous n'avez pas accès au code source.  
   
-    -   **Application installée**. Sélectionnez cette option pour sélectionner une application installée à analyser. Vous ne pouvez pas utiliser cette option lorsque vous exécutez l'application sur un ordinateur/un appareil distant.  
+    -   **Application installée**. Sélectionnez cette option pour sélectionner une application installée à analyser. Vous ne pouvez pas utiliser cette option lorsque vous exécutez l'application sur un ordinateur ou un périphérique distants.  
   
          Vous pouvez utiliser cette option pour analyser les performances des applications que vous avez installées sur votre ordinateur lorsque vous n'avez pas accès au code source. Cette option s'avère également utile lorsque vous souhaitez uniquement analyser les performances d'une application, en dehors de votre propre développement d'applications.  
   
@@ -149,12 +150,12 @@ Cette rubrique explique comment isoler les problèmes de performances dans vos a
   
 13. Une fois le zoom avant effectué, sélectionnez une partie du graphique de l'utilisation de l'UC ou du graphique visuel de débit. Lorsque vous effectuez une sélection, le graphique des détails de chronologie dans le volet inférieur du profileur change pour n'afficher que la période sélectionnée.  
   
-###  <a name="IsolateVisualThroughput"></a> Isoler un problème de débit d’affichage  
+###  <a name="IsolateVisualThroughput"></a> Isolate a visual throughput problem  
  Les périodes d'utilisation excessive de l'UC peuvent entraîner des fréquences d'images faibles ou incohérentes. Si vous développez des applications multimédias élaborées et des jeux, le graphique visuel de débit peut fournir des données plus importantes que le graphique d'utilisation de l'UC.  
   
  Pour isoler un problème de débit visuel, suivez les étapes décrites dans la section précédente, mais utilisez le graphique visuel de débit comme l'un des points de données clés.  
   
-###  <a name="ProfileMark"></a> Marquer du code pour l’analyser  
+###  <a name="ProfileMark"></a> Marquer du code pour l'analyser  
  Pour aider à isoler une section de code d'application associé à des données affichées dans les graphiques, vous pouvez ajouter un appel de fonction dans votre application. Cet appel de fonction indique au profileur d'insérer une marque de profil (un triangle inversé) dans la chronologie lors de l'exécution de la fonction. Toute marque utilisateur ajoutée s'affiche dans la chronologie du graphique d'utilisation de l'UC, du graphique visuel de débit et dans celui des détails de chronologie.  
   
  Pour ajouter une marque utilisateur, ajoutez le code suivant à votre application. Dans cet exemple, la description de l'événement est « obtention de données ».  
@@ -202,13 +203,13 @@ if (performance.mark && performance.measure) {
   
  La chronologie indique le moment où se produisent les événements du cycle de vie d'une application, comme l'événement d'activation, et indique les marques utilisateur (les triangles Marque utilisateur) que vous pouvez ajouter à votre code. Vous pouvez sélectionner les événements pour afficher des info-bulles contenant plus d’informations. Pour plus d'informations sur les marques utilisateur, consultez [Marquer du code pour l'analyser](#ProfileMark) dans cette rubrique.  
   
- Les événements du cycle de vie de l'application s'affichent sous forme de losanges. Ce sont des événements DOM et ils comprennent notamment :  
+ Les événements du cycle de vie de l'application s'affichent sous forme de losanges. Ce sont des événements DOM et ils comprennent notamment :  
   
--   Les événements `DOMContentLoaded` et `Load`, qui se produisent généralement dans le gestionnaire d'événements activé dans votre code. L'info-bulle de ces événements montre l'événement spécifique et l'URL.  
+-   Les événements`DOMContentLoaded` et `Load` events, which typically occur in the activated event hetler in your code. L'info-bulle de ces événements montre l'événement spécifique et l'URL.  
   
 -   Un événement de navigation, qui se produit lorsque vous accédez à une autre page. L'info-bulle de cet événement indique l'URL de la page de destination.  
   
-###  <a name="CPUUtilization"></a> Visualiser l’utilisation de l’UC  
+###  <a name="CPUUtilization"></a> Visualiser l'utilisation de l'UC  
  Le graphique d'utilisation de l'UC vous permet d'identifier les périodes pour lesquelles il existe une activité excessive du processeur. Il fournit des informations sur l'utilisation moyenne du processeur par l'application sur une période donnée. Les informations sont colorées pour représenter les catégories spécifiques suivantes : **Chargement en cours**, **Scripts**, garbage collection (**GC**), **Styles**, **Rendu**et **Décodage d'image**. Pour plus d'informations sur ces catégories, consultez [Profiler event reference](#ProfilerEvents) plus loin dans cette rubrique.  
   
  Le graphique d'utilisation de l'UC illustre le temps passé sur tous les threads d'application, en combinant les valeurs d'utilisation de l'UC pour un ou plusieurs processeurs en une seule valeur de pourcentage. La valeur d'utilisation de l'UC peut dépasser 100 % lorsque plusieurs processeurs sont en cours d'utilisation.  
@@ -230,7 +231,7 @@ if (performance.mark && performance.measure) {
   
  Pour plus d'informations sur l'utilisation du graphique, voir [Isolate a UI responsiveness problem](#Workflow) dans cette rubrique.  
   
-###  <a name="VisualThroughput"></a> Visualiser le débit d’affichage (i/s)  
+###  <a name="VisualThroughput"></a> Visualiser le débit visuel (i/s)  
  Le graphique visuel de débit vous permet d'identifier les périodes durant lesquelles la fréquence d'images a été supprimée. Il indique les images par seconde (i/s) pour l'application. Ce graphique est très utile pour le développement de jeux et d'applications multimédias élaborées.  
   
  La fréquence d'images affichée peut différer de la fréquence d'images réelle. Gardez les informations ci-dessous à l'esprit lorsque vous examinez les données de ce graphique.  
@@ -325,20 +326,20 @@ if (performance.mark && performance.measure) {
 ##  <a name="SaveSession"></a> Enregistrer une session de diagnostic  
  Dans Visual Studio, vous pouvez enregistrer une session en fermant l'onglet associé à celle-ci. Les sessions enregistrées peuvent être rouvertes ultérieurement.  
   
-##  <a name="ProfilerEvents"></a> Informations de référence sur les événements du profileur  
+##  <a name="ProfilerEvents"></a> Profiler event reference  
  Les événements du profileur sont classés et colorés dans le profileur de réactivité de l'interface utilisateur. Voici les catégories d'événements :  
   
--   **Chargement.** Indique le temps passé à la récupération des ressources d'application et à l'analyse du code HTML et CSS lors du premier chargement de l'application. Les demandes réseau peuvent être incluses.  
+-   **Chargement en cours.** Indique le temps passé à la récupération des ressources d'application et à l'analyse du code HTML et CSS lors du premier chargement de l'application. Les demandes réseau peuvent être incluses.  
   
 -   **Scripts.** Indique le temps passé à l'analyse et à l'exécution du code JavaScript. Sont inclus les événements DOM, les minuteries, l'évaluation des scripts et le framework d'animation. Sont compris le code utilisateur et le code de bibliothèque.  
   
 -   **GC.** Indique le temps passé à effectuer le garbage collection.  
   
--   **Styles.** Indique le temps passé à analyser le code CSS et à calculer la présentation et la disposition des éléments.  
+-   **Style.** Indique le temps passé à analyser le code CSS et à calculer la présentation et la disposition des éléments.  
   
 -   **Rendu.** Indique le temps consacré à la peinture de l'écran.  
   
--   **Décodage d’image.** Indique le temps passé à décompresser er décoder les images.  
+-   **Décodage d'image.** Indique le temps passé à décompresser er décoder les images.  
   
  Pour le script et les catégories de style, le profileur de réactivité de l'interface utilisateur peut fournir des données sur lesquelles vous pouvez agir dans le graphique des détails de chronologie. Si vous identifiez des problèmes liés aux scripts comme un problème, vous pouvez exécuter le profileur d'échantillonnage de l'UC avec le profileur de réactivité de l'interface utilisateur. Vous pouvez également utiliser le profileur de fonction de Visual Studio pour obtenir un plus grand nombre de données détaillées. Pour plus d’informations, consultez [Mémoire JavaScript](../profiling/javascript-memory.md).  
   
@@ -356,7 +357,7 @@ if (performance.mark && performance.measure) {
 |Événement DOM|Scripts|Un événement DOM s'est produit et a été exécuté.<br /><br /> La propriété `context` de l'événement DOM, par exemple  `DOMContentLoaded` ou `click`, est affichée entre parenthèses.|  
 |Écouteur d'événements|Scripts|Un écouteur d'événements a été appelé et exécuté.|  
 |Écouteur de requête multimédia|Scripts|Une requête multimédia inscrite a été annulée, ce qui a entraîné l'exécution de ses écouteurs associés.|  
-|Observateur de mutations|Scripts|Un ou plusieurs éléments DOM observés ont été modifiés, ce qui a entraîné l'exécution du rappel associé à MutationObserver.|  
+|Observateur de mutations|Scripts|Un ou plusieurs éléments DOM observés ont été modifiés, ce qui a entraîné l’exécution du rappel associé à MutationObserver.|  
 |Évaluation des scripts|Scripts|Un nouvel élément SCRIPT a été trouvé dans le DOM et il a été tenté d'analyser et d'exécuter le script.|  
 |Minuterie|Scripts|Une minuterie planifiée s'est écoulée et a provoqué l'exécution de sa fonction de rappel associée.|  
 |Fonction de rappel asynchrone Windows Runtime|Scripts|Une opération asynchrone qui a déclenché une fonction de rappel `Promise` a été effectuée par un objet Runtime Windows.|  

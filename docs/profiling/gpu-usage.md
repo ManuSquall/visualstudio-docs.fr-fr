@@ -27,10 +27,11 @@ translation.priority.ht:
 - tr-tr
 - zh-cn
 - zh-tw
-translationtype: Human Translation
-ms.sourcegitcommit: e9a05d008f671fb79d6813a14c594b82f27697e3
-ms.openlocfilehash: 1613943840c79028e3c60db0f54a73243eb3948c
-ms.lasthandoff: 03/27/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: 47057e9611b824c17077b9127f8d2f8b192d6eb8
+ms.openlocfilehash: a2958c20bbfbd9f4f3d03946dbe230326894b1c1
+ms.contentlocale: fr-fr
+ms.lasthandoff: 05/13/2017
 
 ---
 # <a name="gpu-usage"></a>Utilisation du GPU
@@ -51,7 +52,7 @@ Servez-vous de l'outil Utilisation du GPU dans le hub Performances et diagnostic
  Pour plus d’informations sur les conditions requises par l’exécution de Graphics Diagnostics, consultez [Prise en main](../debugger/graphics/getting-started-with-visual-studio-graphics-diagnostics.md).  
   
 ## <a name="using-the-gpu-usage-tool"></a>Emploi de l'outil Utilisation du GPU  
- Quand vous exécutez votre application dans l'Outil utilisation du GPU, Visual Studio crée une session de diagnostic qui représente sous forme graphique des informations générales relatives aux performances de rendu et à l'utilisation du GPU en temps réel de votre application.  
+ Quand vous exécutez votre application dans l’Outil utilisation du GPU, Visual Studio crée une session de diagnostic qui représente sous forme graphique des informations générales relatives aux performances de rendu et à l’utilisation du GPU en temps réel de votre application.  
   
 #### <a name="to-start-the-gpu-usage-tool"></a>Pour démarrer l'outil Utilisation du GPU :  
   
@@ -66,11 +67,11 @@ Servez-vous de l'outil Utilisation du GPU dans le hub Performances et diagnostic
   
 3.  Choisissez le bouton **Démarrer** bleu au bas du hub Performances et diagnostics pour exécuter votre application à l’aide des outils que vous avez sélectionnés.  
   
- Les informations générales qui s'affichent en temps réel incluent le minutage de frame, la fréquence d'images et l'utilisation du GPU. Chacune de ces informations est représentée graphiquement de manière indépendante, mais selon une échelle de temps commune, ce qui vous permet d'associer facilement les informations entre elles.  
+ Les informations générales qui s’affichent en temps réel incluent le minutage de frame, la fréquence d’images et l’utilisation du GPU. Chacune de ces informations est représentée graphiquement de manière indépendante, mais selon une échelle de temps commune, ce qui vous permet d'associer facilement les informations entre elles.  
   
- Les graphiques **Durée de frame (ms)** et **Images par seconde (FPS)** contiennent deux lignes rouges horizontales qui représentent les performances cibles de 60 et 30 frames par seconde. Dans le graphique **Durée de frame**, votre application dépasse les performances cibles quand le graphique est en dessous de la ligne, et n’atteint pas les performances cibles quand le graphique est au-dessus de la ligne. Pour le graphique Images par seconde, la situation est inversée. Votre application dépasse les performances cibles quand le graphique est au-dessus de la ligne, et n’atteint pas les performances cibles quand le graphique est en dessous de la ligne. Ces graphiques servent principalement à obtenir une idée générale des performances de votre application, et à identifier les ralentissements dont vous souhaitez peut-être connaître l'origine (par exemple, une chute soudaine de la fréquence d'images ou un pic d'utilisation du GPU).  
+ Les graphiques **Durée de frame (ms)** et **Images par seconde (FPS)** contiennent deux lignes rouges horizontales qui représentent les performances cibles de 60 et 30 frames par seconde. Dans le graphique **Durée de frame**, votre application dépasse les performances cibles quand le graphique est en dessous de la ligne, et n’atteint pas les performances cibles quand le graphique est au-dessus de la ligne. Pour le graphique Images par seconde, la situation est inversée. Votre application dépasse les performances cibles quand le graphique est au-dessus de la ligne, et n’atteint pas les performances cibles quand le graphique est en dessous de la ligne. Ces graphiques servent principalement à obtenir une idée générale des performances de votre application, et à identifier les ralentissements dont vous souhaitez peut-être connaître l’origine (par exemple, une chute soudaine de la fréquence d’images ou un pic d’utilisation du GPU).  
   
- Pendant que votre application s'exécute dans l'outil Utilisation du GPU, la session de diagnostic collecte également des informations détaillées sur les événements graphiques exécutés sur le GPU. Ces informations sont utilisées pour générer un rapport plus précis de la manière dont votre application utilise le matériel. Dans la mesure où ce rapport prend un certain temps pour générer les résultats à partir des informations collectées, il est disponible uniquement à la fin de la collecte d'informations de la session de diagnostic.  
+ Pendant que votre application s'exécute dans l'outil Utilisation du GPU, la session de diagnostic collecte également des informations détaillées sur les événements graphiques exécutés sur le GPU. Ces informations sont utilisées pour générer un rapport plus précis de la manière dont votre application utilise le matériel. Dans la mesure où ce rapport prend un certain temps pour générer les résultats à partir des informations collectées, il est disponible uniquement à la fin de la collecte d’informations de la session de diagnostic.  
   
  Quand vous souhaitez examiner plus attentivement un problème de performances ou d'utilisation, arrêtez de collecter les informations de performances pour que le rapport puisse être généré.  
   
@@ -108,7 +109,7 @@ Servez-vous de l'outil Utilisation du GPU dans le hub Performances et diagnostic
   
  Si vous sélectionnez l’un des événements dans la partie inférieure du rapport, cela entraîne le placement d’un marqueur au niveau des événements correspondants dans les chronologies appropriées, en général un événement sur un thread d’UC qui représente l’appel d’API et un autre événement sur l’une des chronologies GPU qui représente la fin de l’achèvement de la tâche par le GPU. De même, si vous sélectionnez l'un des événements d'une chronologie, cela entraîne la mise en surbrillance de l'événement correspondant dans la partie inférieure du rapport. Quand vous effectuez un zoom arrière des chronologies dans la partie supérieure du rapport, seuls les événements les plus longs sont visibles. Pour afficher les événements qui ont une durée plus courte, effectuez un zoom avant des chronologies en appuyant sur la touche Ctrl et en utilisant la roulette de votre dispositif de pointage, ou via le contrôle de mise à l'échelle situé dans le coin inférieur gauche du panneau supérieur. Vous pouvez également faire glisser le contenu du panneau de chronologie pour parcourir les événements enregistrés.  
   
- Pour faciliter vos recherches, vous pouvez filtrer le rapport d'utilisation du GPU en fonction des noms de processus, des ID de thread et du nom d'événement. En outre, vous pouvez choisir la fréquence de rafraîchissement de l'affichage qui détermine les lignes vsync, et vous pouvez trier les événements hiérarchiquement si votre application utilise l'interface ID3DUserDefinedAnnotation pour regrouper les commandes de rendu.  
+ Pour faciliter vos recherches, vous pouvez filtrer le rapport d’utilisation du GPU en fonction des noms de processus, des ID de thread et du nom d’événement. En outre, vous pouvez choisir la fréquence de rafraîchissement de l’affichage qui détermine les lignes vsync, et vous pouvez trier les événements hiérarchiquement si votre application utilise l’interface ID3DUserDefinedAnnotation pour regrouper les commandes de rendu.  
   
  Voici des détails supplémentaires :  
   
@@ -132,10 +133,10 @@ Servez-vous de l'outil Utilisation du GPU dans le hub Performances et diagnostic
 |**ID de thread**|ID de thread d'où provient l'événement.|  
   
 > [!IMPORTANT]
->  Windows 8.1 est obligatoire pour l'attribution d'événement. En outre, si votre GPU ou pilote ne prend pas en charge les fonctionnalités d'instrumentation nécessaires, tous les événements s'affichent comme étant « non attribués ». Veillez à mettre à jour votre GPU/pilote, puis réessayez si vous rencontrez ce problème. Pour plus d’informations, consultez [Prise en charge du matériel et des pilotes](#hwsupport) ci-dessous.  
+>  Windows 8.1 est obligatoire pour l'attribution d'événement. En outre, si votre GPU ou pilote ne prend pas en charge les fonctionnalités d’instrumentation nécessaires, tous les événements s’affichent comme étant « non attribués ». Veillez à mettre à jour votre GPU/pilote, puis réessayez si vous rencontrez ce problème. Pour plus d’informations, consultez [Prise en charge du matériel et des pilotes](#hwsupport) ci-dessous.  
   
 ## <a name="gpu-usage-settings"></a>Paramètres d'utilisation du GPU  
- Vous pouvez configurer l'outil Utilisation du GPU pour reporter la collecte des informations de profilage, au lieu de commencer à collecter les informations dès le démarrage de l'application. Dans la mesure où la taille des informations de profilage peut être significative, cela s'avère utile de savoir que le ralentissement des performances de votre application ne se reproduira pas avant longtemps.  
+ Vous pouvez configurer l'outil Utilisation du GPU pour reporter la collecte des informations de profilage, au lieu de commencer à collecter les informations dès le démarrage de l'application. Dans la mesure où la taille des informations de profilage peut être significative, cela s’avère utile de savoir que le ralentissement des performances de votre application ne se reproduira pas avant longtemps.  
   
 #### <a name="to-postpone-profiling-from-the-start-of-the-app"></a>Pour reporter le profilage au démarrage de l'application :  
   
@@ -157,8 +158,8 @@ Servez-vous de l'outil Utilisation du GPU dans le hub Performances et diagnostic
   
 |Fournisseur|Description du GPU|Version de pilote nécessaire|  
 |------------|---------------------|-----------------------------|  
-|Intel®|4e génération des processeurs Intel® Core ("Haswell")<br /><br /> -   Intel® HD Graphics (GT1)<br />-   Intel® HD Graphics 4200 (GT2)<br />-   Intel® HD Graphics 4400 (GT2)<br />-   Intel® HD Graphics 4600 (GT2)<br />-   Intel® HD Graphics P4600 (GT2)<br />-   Intel® HD Graphics P4700 (GT2)<br />-   Intel® HD Graphics 5000 (GT3)<br />-   Intel® Iris™ Graphics 5100 (GT3)<br />-   Intel® Iris™ Pro Graphics 5200 (GT3e)|-- (utilisez les derniers pilotes)|  
-|AMD®|La plupart, à partir d'AMD Radeon™ HD série 7000 (sauf AMD Radeon™ HD 7350-7670)<br /><br /> GPU AMD Radeon™, GPU AMD FirePro™ et accélérateurs GPU AMD FirePro incluant l'architecture Graphics Core Next (GCN).<br /><br /> Unités de traitement accéléré (APU) AMD® série E et AMD série A incluant l'architecture Graphics Core Next (GCN) - ('Kaveri', 'Kabini', 'Temash', 'Beema', 'Mullins')|14.7 RC3 ou version supérieure|  
+|Intel®|4e génération des processeurs Intel® Core (« Haswell »)<br /><br /> -   Intel® HD Graphics (GT1)<br />-   Intel® HD Graphics 4200 (GT2)<br />-   Intel® HD Graphics 4400 (GT2)<br />-   Intel® HD Graphics 4600 (GT2)<br />-   Intel® HD Graphics P4600 (GT2)<br />-   Intel® HD Graphics P4700 (GT2)<br />-   Intel® HD Graphics 5000 (GT3)<br />-   Intel® Iris™ Graphics 5100 (GT3)<br />-   Intel® Iris™ Pro Graphics 5200 (GT3e)|-- (utilisez les derniers pilotes)|  
+|AMD®|La plupart, à partir d'AMD Radeon™ HD série 7000 (sauf AMD Radeon™ HD 7350-7670)<br /><br /> GPU AMD Radeon™, GPU AMD FirePro™ et accélérateurs GPU AMD FirePro incluant l'architecture Graphics Core Next (GCN).<br /><br /> Unités de traitement accéléré (APU) AMD® série E et AMD série A incluant l’architecture Graphics Core Next (GCN) - (« Kaveri », « Kabini », « Temash », « Beema », « Mullins »)|14.7 RC3 ou version supérieure|  
 |NVIDIA®|La plupart, à partir de NVIDIA® GeForce® série 400.<br /><br /> GPU NVIDIA® GeForce®, GPU NVIDIA Quadro® et accélérateurs GPU NVIDIA® Tesla™ incluant l'architecture Fermi™, Kepler™ ou Maxwell™.|343.37 ou version supérieure|  
   
  Les configurations à plusieurs GPU, telles que NVIDIA® SLI™ et AMD Crossfire™, ne sont pas prises en charge pour l'instant. Les configurations graphiques hybrides, telles que NVIDIA® Optimus™ et AMD Enduro™, sont prises en charge.  

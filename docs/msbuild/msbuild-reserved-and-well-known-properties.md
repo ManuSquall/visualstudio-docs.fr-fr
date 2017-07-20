@@ -34,10 +34,11 @@ translation.priority.ht:
 - tr-tr
 - zh-cn
 - zh-tw
-translationtype: Human Translation
-ms.sourcegitcommit: 5db97d19b1b823388a465bba15d057b30ff0b3ce
-ms.openlocfilehash: 078576d6e1988bf1cefbb09646ea44f61085f5cf
-ms.lasthandoff: 02/22/2017
+ms.translationtype: HT
+ms.sourcegitcommit: 7a873df77756e5a957d327049566c8e0db1f3a8a
+ms.openlocfilehash: f1f9931e6e7c8dda4cb74f407901f41467c690cc
+ms.contentlocale: fr-fr
+ms.lasthandoff: 07/14/2017
 
 ---
 # <a name="msbuild-reserved-and-well-known-properties"></a>MSBuild, propriétés réservées et connues
@@ -64,6 +65,7 @@ ms.lasthandoff: 02/22/2017
 |`MSBuildProjectFile`|Nom de fichier complet du fichier projet, y compris l'extension de nom de fichier. Par exemple : MyApp.proj.|Réservée|  
 |`MSBuildProjectFullPath`|Chemin d'accès absolu et nom de fichier complet du fichier projet, notamment l'extension du nom de fichier. Par exemple : C:\MyCompany\MyProduct\MyApp.proj.|Réservée|  
 |`MSBuildProjectName`|Nom de fichier du fichier projet sans l'extension de nom de fichier. Par exemple : MyApp.|Réservée|  
+|`MSBuildRuntimeType`|Type du runtime en cours d’exécution. Introduit dans MSBuild 15. La valeur peut être indéfinie (avant MSBuild 15), `Full` (MSBuild s’exécute sur le .NET Framework Desktop), `Core` (MSBuild s’exécute sur .NET Core) ou `Mono` (MSBuild s’exécute sur Mono).|Réservée|  
 |`MSBuildStartupDirectory`|Chemin d'accès absolu du dossier où [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] est appelé. Cette propriété vous permet de générer tout élément sous un point spécifique dans une arborescence du projet sans créer de fichiers dirs.proj dans chaque répertoire. À la place, vous avez un seul projet, par exemple, c:\traversal.proj, comme indiqué ici :<br /><br /> `<Project ...>     <ItemGroup>         <ProjectFiles              Include="$            (MSBuildStartupDirectory)            **\*.csproj"/>     </ItemGroup>     <Target Name="build">         <MSBuild             Projects="@(ProjectFiles)"/>     </Target> </Project>`<br /><br /> Pour générer des éléments en tout point de l'arborescence, tapez :<br /><br /> `msbuild c:\traversal.proj`<br /><br /> N'incluez pas la barre oblique inverse finale dans cette propriété.|Réservée|  
 |`MSBuildThisFile`|Nom de fichier et partie de l'extension de fichier de `MSBuildThisFileFullPath`.|Réservée|  
 |`MSBuildThisFileDirectory`|Partie de répertoire de `MSBuildThisFileFullPath`.<br /><br /> Incluez la barre oblique inverse finale dans le chemin.|Réservée|  
@@ -75,5 +77,4 @@ ms.lasthandoff: 02/22/2017
 |`MSBuildToolsVersion`|Version de l'ensemble d'outils [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] qui est utilisée pour générer le projet.<br /><br /> Remarque : un ensemble d’outils [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] se compose de tâches, de cibles et d’outils, qui sont utilisés pour générer une application. Les outils incluent des compilateurs tels que csc.exe et vbc.exe. Pour plus d’informations, consultez les articles [Toolset (ToolsVersion) Ensemble d’outils MSBuild [ToolsVersion])](../msbuild/msbuild-toolset-toolsversion.md) et [Configurations standard et personnalisée de l’ensemble d’outils](../msbuild/standard-and-custom-toolset-configurations.md).|Réservée|  
   
 ## <a name="see-also"></a>Voir aussi  
- [Référence MSBuild](../msbuild/msbuild-reference.md)
- [Propriétés MSBuild](../msbuild/msbuild-properties.md)
+ [Référence MSBuild](../msbuild/msbuild-reference.md) [Propriétés MSBuild](../msbuild/msbuild-properties.md)

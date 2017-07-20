@@ -28,10 +28,11 @@ translation.priority.ht:
 - tr-tr
 - zh-cn
 - zh-tw
-translationtype: Human Translation
-ms.sourcegitcommit: 5db97d19b1b823388a465bba15d057b30ff0b3ce
-ms.openlocfilehash: 9885f3cff76b9c5e1d053550be80c4b68cf9de1b
-ms.lasthandoff: 02/22/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: 47057e9611b824c17077b9127f8d2f8b192d6eb8
+ms.openlocfilehash: 2c4cb515c4442b3c48c42f47f9116e9ff536a5f4
+ms.contentlocale: fr-fr
+ms.lasthandoff: 05/13/2017
 
 ---
 # <a name="creating-a-data-driven-coded-ui-test"></a>Création d'un test codé de l'interface utilisateur piloté par les données
@@ -58,7 +59,7 @@ Pour tester différentes conditions, vous pouvez exécuter vos tests à plusieur
   
      ![Enregistrer les actions](../test/media/cuit_datadriven_cuitbuilder.png "CUIT_dataDriven_CUITBuilder")  
   
-4.  Additionnez 1 et 2, interrompez l'enregistreur et générez la méthode de test. Plus tard, nous allons remplacer les valeurs de cette entrée utilisateur par les valeurs d'un fichier de données.  
+4.  Additionnez 1 et 2, interrompez l'enregistreur et générez la méthode de test. Plus tard, nous allons remplacer les valeurs de cette entrée utilisateur par les valeurs d’un fichier de données.  
   
      ![Générer la méthode de test](../test/media/cuit_datadriven_cuitbuildergencode.png "CUIT_dataDriven_CUITBuilderGenCode")  
   
@@ -78,7 +79,7 @@ Pour tester différentes conditions, vous pouvez exécuter vos tests à plusieur
   
      Le résultat du test qui indique si le test a réussi ou a échoué apparaît dans la fenêtre Explorateur de tests. Pour ouvrir la fenêtre Explorateur de tests, dans le menu **TEST**, choisissez **Fenêtres**, puis **Explorateur de tests**.  
   
-6.  Dans la mesure où une source de données peut également être utilisée pour les valeurs de paramètre d'assertion (qui sont utilisées par le test pour vérifier les valeurs attendues), ajoutons une assertion pour confirmer que la somme des deux nombres est correcte. Placez le curseur dans la méthode de test illustrée ci-dessus, ouvrez le menu contextuel et choisissez **Générer le code pour le test codé de l’interface utilisateur**, puis **Utiliser le générateur de test codé de l’interface utilisateur**.  
+6.  Dans la mesure où une source de données peut également être utilisée pour les valeurs de paramètre d’assertion (qui sont utilisées par le test pour vérifier les valeurs attendues), ajoutons une assertion pour confirmer que la somme des deux nombres est correcte. Placez le curseur dans la méthode de test illustrée ci-dessus, ouvrez le menu contextuel et choisissez **Générer le code pour le test codé de l’interface utilisateur**, puis **Utiliser le générateur de test codé de l’interface utilisateur**.  
   
      Mappez le contrôle de texte dans la calculatrice qui affiche la somme.  
   
@@ -129,13 +130,13 @@ Pour tester différentes conditions, vous pouvez exécuter vos tests à plusieur
   
 3.  Il est important d'enregistrer le fichier .csv en utilisant le bon encodage. Dans le menu **FICHIER**, choisissez **Options d’enregistrement avancées** et choisissez l’encodage **Unicode (UTF-8 sans signature) - Page de codes 65001**.  
   
-4.  Le fichier .csv doit être copié dans le répertoire de sortie, sans quoi le test ne peut pas s'exécuter. Utilisez la fenêtre Propriétés pour le copier.  
+4.  Le fichier .csv doit être copié dans le répertoire de sortie, sans quoi le test ne peut pas s’exécuter. Utilisez la fenêtre Propriétés pour le copier.  
   
      ![Déployer le fichier .CSV](../test/media/cuit_datadriven_deploycsvfile.png "CUIT_dataDriven_DeployCSVFile")  
   
      Maintenant que nous avons créé le jeu de données, nous allons lier les données au test.  
   
-#### <a name="step-3--add-data-source-binding"></a>Étape 3 : ajouter une liaison de source de données  
+#### <a name="step-3---add-data-source-binding"></a>Étape 3 : ajouter une liaison de source de données  
   
 1.  Pour lier la source de données, ajoutez un attribut `DataSource` dans l'attribut `[TestMethod]` existant qui se trouve juste au-dessus de la méthode de test.  
   
@@ -163,7 +164,7 @@ Pour tester différentes conditions, vous pouvez exécuter vos tests à plusieur
   
      Ensuite, nous allons configurer le test pour utiliser les valeurs incluses dans le fichier de la source de données.  
   
-#### <a name="step-4--use-the-data-in-the-coded-ui-test"></a>Étape 4 : utiliser les données dans le test codé de l'interface utilisateur  
+#### <a name="step-4---use-the-data-in-the-coded-ui-test"></a>Étape 4 : utiliser les données dans le test codé de l’interface utilisateur  
   
 1.  Ajoutez `using Microsoft.VisualStudio.TestTools.UITesting.WinControls` en début du fichier CodedUITest.cs :  
   
@@ -212,7 +213,7 @@ Pour tester différentes conditions, vous pouvez exécuter vos tests à plusieur
   
 3.  Enregistrez la solution.  
   
-#### <a name="step-5--run-the-data-driven-test"></a>Étape 5 : exécuter le test piloté par les données  
+#### <a name="step-5---run-the-data-driven-test"></a>Étape 5 : exécuter le test piloté par les données  
   
 1.  Vérifiez que le test est maintenant piloté par les données en l'exécutant de nouveau.  
   
@@ -220,7 +221,7 @@ Pour tester différentes conditions, vous pouvez exécuter vos tests à plusieur
   
  **Aide**  
   
- Pour plus d’informations, consultez [Test de livraison continue avec Visual Studio 2012 - Chapitre 2 : Tests unitaires : tester l’intérieur](http://go.microsoft.com/fwlink/?LinkID=255188) et [Test de livraison continue avec Visual Studio 2012 - Chapitre 5 : Automatisation des tests système](http://go.microsoft.com/fwlink/?LinkID=255196)  
+ Pour plus d’informations, consultez [Test de livraison continue avec Visual Studio 2012 - Chapitre 2 : Tests unitaires : tester l’intérieur](http://go.microsoft.com/fwlink/?LinkID=255188) et [Test de livraison continue avec Visual Studio 2012 - Chapitre 5 : Automatisation des tests système](http://go.microsoft.com/fwlink/?LinkID=255196)  
   
 ## <a name="q--a"></a>Q et R  
   
@@ -262,7 +263,7 @@ public void DataDrivingDemo_MyTestMethod(int x, int y)
   
  Pour plus d’informations, consultez [Utiliser les tests codés de l’interface utilisateur pilotés par les données sur des applications Windows Phone](../test/test-windows-phone-8-1-apps-with-coded-ui-tests.md#TestingPhoneAppsCodedUI_DataDriven).  
   
-### <a name="q-why-cant-i-modify-the-code-in-the-uimapdesigner-file"></a>Q : pourquoi ne puis-je pas modifier le code du fichier UIMap.Designer ?  
+### <a name="q-why-cant-i-modify-the-code-in-the-uimapdesigner-file"></a>Q : pourquoi ne puis-je pas modifier le code du fichier UIMap.Designer ?  
  **R :** toutes les modifications du code que vous effectuez dans le fichier UIMapDesigner.cs sont remplacées chaque fois que vous générez du code dans UIMap - Générateur de test codé de l’interface utilisateur. Dans cet exemple et dans la plupart des cas, les modifications de code nécessaires pour permettre à un test d'utiliser une source de données peuvent être apportées au fichier de code source du test (c'est-à-dire, CodedUITest1.cs).  
   
  Si vous devez modifier une méthode enregistrée, vous devez la copier dans le fichier UIMap.cs et la renommer. Le fichier UIMap.cs peut être utilisé pour remplacer les méthodes et les propriétés dans le fichier UIMapDesigner.cs. Vous devez supprimer la référence à la méthode d’origine dans le fichier Coded UITest.cs et la remplacer par le nom de la méthode renommée.  

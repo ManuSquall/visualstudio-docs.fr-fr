@@ -30,10 +30,11 @@ translation.priority.mt:
 - pl-pl
 - pt-br
 - tr-tr
-translationtype: Human Translation
-ms.sourcegitcommit: 5658ecf52637a38bc3c2a5ad9e85b2edebf7d445
-ms.openlocfilehash: 0b25d326d103c5da3b09b79d3a574734debed071
-ms.lasthandoff: 02/22/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: 47057e9611b824c17077b9127f8d2f8b192d6eb8
+ms.openlocfilehash: 89694c49fdd115064d1ebe9f5dfe910b77548a76
+ms.contentlocale: fr-fr
+ms.lasthandoff: 05/13/2017
 
 ---
 # <a name="advanced-settings-dialog-box-concurrency-visualizer"></a>Paramètres avancés, boîte de dialogue (visualiseur concurrentiel)
@@ -75,7 +76,7 @@ La boîte de dialogue **Paramètres avancés** du visualiseur concurrentiel vous
  Sous l’onglet Marqueurs, vous pouvez configurer l’ensemble des fournisseurs ETW affichés comme Marqueurs dans le visualiseur concurrentiel.  Vous pouvez également filtrer la collection de marqueurs selon le niveau d’importance et la catégorie ETW.  Si vous utilisez le [kit SDK du visualiseur concurrentiel](../profiling/concurrency-visualizer-sdk.md) et votre propre fournisseur de marqueurs, vous pouvez l’inscrire ici pour qu’il apparaisse dans la vue Threads.  
   
 ### <a name="adding-a-new-provider"></a>Ajouter un nouveau fournisseur  
- Si votre code utilise le [kit SDK du visualiseur concurrentiel](../profiling/concurrency-visualizer-sdk.md) ou génère des événements ETW qui respectent la convention <xref:System.Diagnostics.Tracing.EventSource>, vous pouvez afficher ces événements dans le visualiseur concurrentiel en les inscrivant dans cette boîte de dialogue.  
+ Si votre code utilise le [SDK du visualiseur concurrentiel](../profiling/concurrency-visualizer-sdk.md) ou génère des événements ETW qui respectent la convention <xref:System.Diagnostics.Tracing.EventSource>, vous pouvez afficher ces événements dans le visualiseur concurrentiel en les inscrivant dans cette boîte de dialogue.  
   
  Dans le champ Nom, entrez un nom qui décrit les types d’événements générés par le fournisseur.  Dans le champ de GUID, entrez le GUID associé à ce fournisseur. (Un GUID est associé à chaque fournisseur ETW.)  
   
@@ -87,7 +88,7 @@ La boîte de dialogue **Paramètres avancés** du visualiseur concurrentiel vous
  Pour modifier les paramètres associés à un fournisseur existant, sélectionnez-le dans la liste, puis choisissez le bouton **Modifier le fournisseur**.  Vous pouvez modifier le nom, le GUID et les paramètres de filtrage.  
   
 ### <a name="filter-marker-data-out-of-concurrency-visualizer-reports"></a>Exclure les données de marqueur des rapports du visualiseur concurrentiel  
- Si vous ne souhaitez pas que les données d’un fournisseur particulier s’affichent dans les futures traces, décochez la case située à coté du fournisseur à supprimer.  
+ Si vous ne voulez pas que les données d’un fournisseur particulier s’affichent dans les futures traces, décochez la case située à coté du fournisseur à supprimer.  
   
 ## <a name="files"></a>Fichiers  
  Sous l’onglet **Fichiers**, vous pouvez spécifier le répertoire dans lequel les fichiers de trace sont stockés chaque fois qu’une trace est collectée.  Le visualiseur concurrentiel génère quatre fichiers pour chaque trace qu’il collecte :  

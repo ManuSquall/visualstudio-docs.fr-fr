@@ -27,10 +27,11 @@ translation.priority.mt:
 - pl-pl
 - pt-br
 - tr-tr
-translationtype: Human Translation
-ms.sourcegitcommit: 5ab78b6b8eaa8156ed2c8a807b1d8a80e75afa84
-ms.openlocfilehash: e5e0d87e05a5900d335670cf9dcb79d58839892e
-ms.lasthandoff: 04/04/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: 47057e9611b824c17077b9127f8d2f8b192d6eb8
+ms.openlocfilehash: 2efe98a5b421fbffbe2a39cc69a5e0acf06af7db
+ms.contentlocale: fr-fr
+ms.lasthandoff: 05/13/2017
 
 ---
 # <a name="quick-start-test-driven-development-with-test-explorer"></a>Démarrage rapide : développement piloté avec l’Explorateur de tests
@@ -83,7 +84,7 @@ Nous vous recommandons de créer des tests unitaires pour que votre code continu
 > [!NOTE]
 >  Si aucun test n'apparaît, vérifiez que vous avez installé un adaptateur pour connecter l'Explorateur de tests au framework de test que vous utilisez. Pour plus d’informations, consultez [Utilisation de différents frameworks de test dans l'Explorateur de tests](#frameworks).  
   
-##  <a name="walkthrough"></a>Procédure pas à pas : utilisation de tests unitaires pour développer une méthode  
+##  <a name="walkthrough"></a> Procédure pas à pas : Utilisation de tests unitaires pour développer une méthode  
  Cette procédure pas à pas montre comment développer une méthode testée en C# à l’aide du framework des tests unitaires Microsoft. Vous pouvez facilement l'adapter à d'autres langages et utiliser d'autres frameworks de tests comme NUnit. Pour plus d'informations, consultez [Utilisation de différents frameworks de tests](#frameworks).  
   
 #### <a name="creating-the-test-and-method"></a>Créer le test et la méthode  
@@ -168,7 +169,7 @@ Nous vous recommandons de créer des tests unitaires pour que votre code continu
 1.  Pour renforcer votre confiance dans le fonctionnement de votre code dans tous les cas, ajoutez des tests qui essaient un plus grand nombre de valeurs d'entrée.  
   
     > [!TIP]
-    >  Évitez de modifier les tests existants qui réussissent. Au lieu de cela, ajoutez de nouveaux tests. Modifiez les tests existants uniquement lorsque les besoins des utilisateurs changent. Cette stratégie permet de garantir que vous ne perdez pas de fonctionnalités existantes à mesure que vous travaillez pour étendre le code.  
+    >  Évitez de modifier les tests existants qui réussissent. Au lieu de cela, ajoutez de nouveaux tests. Modifiez les tests existants uniquement lorsque les besoins des utilisateurs changent. Cette stratégie permet de garantir que vous ne perdez pas de fonctionnalités existantes quand vous travaillez pour étendre le code.  
   
      Dans votre classe de test, ajoutez le test suivant, qui essaie une plage de valeurs d'entrée :  
   

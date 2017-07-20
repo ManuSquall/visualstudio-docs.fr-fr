@@ -30,10 +30,11 @@ translation.priority.mt:
 - pl-pl
 - pt-br
 - tr-tr
-translationtype: Human Translation
-ms.sourcegitcommit: 5658ecf52637a38bc3c2a5ad9e85b2edebf7d445
-ms.openlocfilehash: 2981d5082fdbcc9f15c1b36552787e0a78727e38
-ms.lasthandoff: 02/22/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: 47057e9611b824c17077b9127f8d2f8b192d6eb8
+ms.openlocfilehash: da79533a7a40b6e1b79c66f023beba2c1162bd08
+ms.contentlocale: fr-fr
+ms.lasthandoff: 05/13/2017
 
 ---
 # <a name="concurrency-visualizer-command-line-utility-cvcollectioncmd"></a>Utilitaire en ligne de commande du visualiseur concurrentiel (CVCollectionCmd)
@@ -59,8 +60,8 @@ Vous pouvez utiliser l’utilitaire en ligne de commande Visualiseur concurrenti
   
 |Option|Description|Paramètres|Valeurs de retour|  
 |------------|-----------------|----------------|-------------------|  
-|Query|Retourne une valeur qui indique si la collecte peut démarrer.|Aucun.|0 si la collecte peut démarrer.<br /><br /> 1 si la collecte est déjà en cours.<br /><br /> 2 si la collecte n’est pas en cours, mais qu’une ou plusieurs des sessions [ETW](http://msdn.microsoft.com/Library/ac99a063-e2d2-40cc-b659-d23c2f783f92) nécessaires sont déjà activées.|  
-|Launch|Exécute le processus spécifié sous le Visualiseur concurrentiel.|Chemin de l’exécutable.|0 si l’exécution a réussi.<br /><br /> 1 si l’exécution a échoué en raison de l’impossibilité de démarrer l’application cible.<br /><br /> 13 si l’exécution a échoué en raison des autorisations de CVCollectionCmd, insuffisantes pour écrire dans le répertoire de sortie spécifié.|  
+|Query|Retourne une valeur qui indique si la collecte peut démarrer.|Aucun.|0 si la collecte peut démarrer.<br /><br /> 1 si la collecte est déjà en cours.<br /><br /> 2 si la collecte n’est pas en cours, mais qu’une ou plusieurs des sessions [ETW](http://msdn.microsoft.com/Library/ac99a063-e2d2-40cc-b659-d23c2f783f92) nécessaires sont déjà activées.|  
+|Lancer|Exécute le processus spécifié sous le Visualiseur concurrentiel.|Chemin de l’exécutable.|0 si l’exécution a réussi.<br /><br /> 1 si l’exécution a échoué en raison de l’impossibilité de démarrer l’application cible.<br /><br /> 13 si l’exécution a échoué en raison des autorisations de CVCollectionCmd, insuffisantes pour écrire dans le répertoire de sortie spécifié.|  
 |Attach|Commence la collecte d’une trace à l’échelle du système ; sinon, établit une liaison avec un processus si vous en avez spécifié un.|Aucun.|0 si l’attachement a abouti.<br /><br /> 1 si l’attachement a échoué en raison de la non validité et du caractère ambigu du processus spécifié.<br /><br /> 13 si l’attachement a échoué en raison des autorisations de CVCollectionCmd, insuffisantes pour écrire dans le répertoire de sortie spécifié.|  
 |Detach|Arrête la collecte.|Aucun.|0 si le détachement a réussi.<br /><br /> 1 si le détachement a échoué, car la collecte n’est pas en cours.<br /><br /> 2 si le détachement a échoué pour cause d’impossibilité d’arrêter la collecte.|  
 |Analyze|Analyse la trace spécifiée.|Chemin du fichier CVTrace.|0 si l’analyse a abouti.<br /><br /> 1 si l’analyse n’a pas pu démarrer, car la trace spécifiée était à l’échelle du système, mais aucun processus cible n’a été spécifié.<br /><br /> 2 si l’analyse n’a pas pu démarrer, car la trace n’était pas à l’échelle du système et un processus a été spécifié.<br /><br /> 3 si l’analyse a échoué en raison de la non validité du processus spécifié.<br /><br /> 4 si l’analyse a échoué en raison de la non validité du fichier CVTrace spécifié.|  
@@ -83,8 +84,8 @@ Vous pouvez utiliser l’utilitaire en ligne de commande Visualiseur concurrenti
 |Balise|Description|Valeurs|  
 |---------|-----------------|------------|  
 |Config|Délimite le fichier de configuration dans son ensemble.|Doit contenir les éléments suivants :<br /><br /> -   MinorVersion<br />-   MajorVersion|  
-|MajorVersion|Spécifie la version majeure du fichier de configuration.|Doit avoir la valeur 1 pour les projets [!INCLUDE[vs_dev11_long](../data-tools/includes/vs_dev11_long_md.md)]. Si la valeur est différente de 1, l’utilitaire ne fonctionne pas.|  
-|MinorVersion|Spécifie la version mineure du fichier de configuration.|Doit avoir la valeur 0 pour les projets [!INCLUDE[vs_dev11_long](../data-tools/includes/vs_dev11_long_md.md)]. Si la valeur est différente de 0, l’utilitaire ne fonctionne pas.|  
+|MajorVersion|Spécifie la version majeure du fichier de configuration.|Doit avoir la valeur 1 pour les projets [!INCLUDE[vs_dev11_long](../data-tools/includes/vs_dev11_long_md.md)] . Si la valeur est différente de 1, l’utilitaire ne fonctionne pas.|  
+|MinorVersion|Spécifie la version mineure du fichier de configuration.|Doit avoir la valeur 0 pour les projets [!INCLUDE[vs_dev11_long](../data-tools/includes/vs_dev11_long_md.md)] . Si la valeur est différente de 0, l’utilitaire ne fonctionne pas.|  
 |IncludeEnvSymbolPath|Définit une valeur qui détermine si le chemin du symbole d’environnement (_NT_SYMBOL_PATH) est utilisé.|-   True<br />-   False|  
 |DeleteEtlsAfterAnalysis|Définit une valeur qui détermine si les fichiers ETL sont supprimés une fois l’analyse terminée.|-   True<br />-   False|  
 |SymbolPath|Spécifie le chemin du serveur de symboles. Pour plus d’informations, consultez [Utiliser le serveur de symboles Microsoft pour obtenir des fichiers de symboles de débogage](http://go.microsoft.com/fwlink/?LinkID=149389).|Nom de répertoire ou URL.|  

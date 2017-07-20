@@ -1,62 +1,80 @@
 ---
-title: "Kit de d&#233;veloppement logiciel (SDK) du visualiseur concurrentiel | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-debug"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "vs.cv.sdk.about"
+title: Kit SDK du visualiseur concurrentiel | Microsoft Docs
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology:
+- vs-ide-debug
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords:
+- vs.cv.sdk.about
 ms.assetid: 4b22cdf9-59b1-4c88-a6d8-1644a4a11e08
 caps.latest.revision: 11
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 11
----
-# Kit de d&#233;veloppement logiciel (SDK) du visualiseur concurrentiel
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+translation.priority.ht:
+- de-de
+- es-es
+- fr-fr
+- it-it
+- ja-jp
+- ko-kr
+- ru-ru
+- zh-cn
+- zh-tw
+translation.priority.mt:
+- cs-cz
+- pl-pl
+- pt-br
+- tr-tr
+ms.translationtype: Human Translation
+ms.sourcegitcommit: 47057e9611b824c17077b9127f8d2f8b192d6eb8
+ms.openlocfilehash: 0d5c4895cb77388e45442dccdbfdd98884e81c18
+ms.contentlocale: fr-fr
+ms.lasthandoff: 05/13/2017
 
-Vous pouvez instrumenter votre code source en utilisant le Kit de développement logiciel Visualiseur Concurrentiel pour afficher des informations supplémentaires dans le visualiseur d'accès concurrentiel.  Vous pouvez associer des informations supplémentaires avec les phases et des événements dans votre code.  Ces visualisations supplémentaires sont appelés *jetons*.  Pour une introduction sur le sujet, consultez [lntroduction au Concurrency Visualizer SDK](http://go.microsoft.com/fwlink/?LinkId=235405).  
+---
+# <a name="concurrency-visualizer-sdk"></a>Kit SDK du visualiseur concurrentiel
+Vous pouvez instrumenter votre code source à l’aide du kit SDK du visualiseur concurrentiel pour afficher des informations supplémentaires dans le visualiseur concurrentiel. Vous pouvez associer les données supplémentaires à des phases et à des événements de votre code. Ces visualisations supplémentaires sont appelées *marqueurs*.  Pour obtenir une introduction pas à pas, consultez [Introducing the Concurrency Visualizer SDK](http://go.microsoft.com/fwlink/?LinkId=235405).  
   
-## Propriétés  
- Les balises, les étendues, et les messages ont chacun deux propriétés : catégorie et importance.  Dans la boîte de dialogue [Paramètres avancés](../profiling/advanced-settings-dialog-box-concurrency-visualizer.md), vous pouvez utiliser ces propriétés pour filtrer l'ensemble des jetons affichées.  En outre, ces propriétés affectent la représentation visuelle des jetons.  Par exemple, la taille des balises est utilisée pour représenter l'importance.  En outre, la couleur est utilisée pour indiquer la catégorie.  
+## <a name="properties"></a>Propriétés  
+ Les indicateurs, les intervalles et les messages ont deux propriétés : la catégorie et l’importance. Dans la boîte de dialogue [Paramètres avancés](../profiling/advanced-settings-dialog-box-concurrency-visualizer.md), vous pouvez utiliser ces propriétés pour filtrer l’affichage des marqueurs. Ces propriétés ont également un impact sur la représentation visuelle des marqueurs. Par exemple, la taille des indicateurs est utilisée pour représenter l’importance. La couleur, quant à elle, est utilisée pour indiquer la catégorie.  
   
-## Utilisation de base  
- Le Visualiseur concurrentiel expose un fournisseur par défaut que vous pouvez utiliser pour générer des jetons.  Le fournisseur est déjà enregistré avec le Visualiseur concurrentiel et vous rien à faire d'autres pour inciter l'affichage des jetons dans l'interface utilisateur.  
+## <a name="basic-usage"></a>Utilisation de base  
+ Le visualiseur concurrentiel expose un fournisseur par défaut que vous pouvez utiliser pour générer des marqueurs. Le fournisseur est déjà inscrit avec le visualiseur concurrentiel. Aucune autre étape n’est donc nécessaire pour afficher les marqueurs dans l’interface utilisateur.  
   
-### Visual Basic et C\#  
- En C\#, Visual Basic, et tout autre code managé, utilisez le fournisseur par défaut en appelant <xref:Microsoft.ConcurrencyVisualizer.Instrumentation.Markers>.  Il expose quatre fonctions pour générer des jetons : <xref:Microsoft.ConcurrencyVisualizer.Instrumentation.Markers.WriteFlag%2A>, <xref:Microsoft.ConcurrencyVisualizer.Instrumentation.Markers.EnterSpan%2A>, <xref:Microsoft.ConcurrencyVisualizer.Instrumentation.Markers.WriteMessage%2A>, et <xref:Microsoft.ConcurrencyVisualizer.Instrumentation.Markers.WriteAlert%2A>.  Il y a plusieurs surcharges de ces fonctions, selon que vous souhaitez utiliser des valeurs par défaut pour les propriétés.  La surcharge la plus simple prend un seul paramètre de chaîne de caractères qui spécifie la description de l'événement.  La description s'affiche dans les rapports de Visualiseur concurrentiel.  
+### <a name="c-and-visual-basic"></a>C# et Visual Basic  
+ En C#, en Visual Basic et dans tout autre code managé, utilisez le fournisseur par défaut en appelant <xref:Microsoft.ConcurrencyVisualizer.Instrumentation.Markers>. Il expose quatre fonctions de génération de marqueurs : <xref:Microsoft.ConcurrencyVisualizer.Instrumentation.Markers.WriteFlag%2A>, <xref:Microsoft.ConcurrencyVisualizer.Instrumentation.Markers.EnterSpan%2A>, <xref:Microsoft.ConcurrencyVisualizer.Instrumentation.Markers.WriteMessage%2A> et <xref:Microsoft.ConcurrencyVisualizer.Instrumentation.Markers.WriteAlert%2A>. Il existe plusieurs surcharges pour ces fonctions, selon que vous souhaitez utiliser les valeurs par défaut des propriétés.  La surcharge la plus simple accepte un seul paramètre de chaîne qui spécifie la description de l’événement. La description s’affiche dans les rapports du visualiseur concurrentiel.  
   
-##### Pour ajouter la prise en charge du Kit de développement logiciel en C\# ou à un projet Visual Basic  
+##### <a name="to-add-sdk-support-to-a-c-or-visual-basic-project"></a>Pour ajouter la prise en charge du kit SDK à un projet C# ou Visual Basic  
   
-1.  Dans la barre de menus, sélectionnez **Analyser**, **Visualiseur concurrentiel**, **Ajouter le SDK au projet**.  
+1.  Dans la barre de menus, choisissez **Analyser**, **Visualiseur concurrentiel**, **Ajouter le SDK au projet**.  
   
-2.  Sélectionnez le projet dans lequel vous souhaitez accéder au Kit de développement logiciel puis choisissez le bouton **Ajouter le SDK au projet sélectionné**.  
+2.  Sélectionnez le projet dans lequel vous souhaitez accéder au kit SDK, puis cliquez sur le bouton **Ajouter le SDK au projet sélectionné**.  
   
-3.  Ajoutez les importations ou l'instruction using à votre code.  
+3.  Ajoutez une instruction imports ou using à votre code.  
   
-    ```c#  
+    ```CSharp  
     using Microsoft.ConcurrencyVisualizer.Instrumentation;  
     ```  
   
-    ```vb  
+    ```VB  
     Imports Microsoft.ConcurrencyVisualizer.Instrumentation  
     ```  
   
-### C\+\+  
- En C\+\+, créez un objet [marker\_series, classe](../profiling/marker-series-class.md) et utilisez\-le pour appeler des fonctions.  La classe `marker_series` expose trois fonctions pour générer des jetons, [marker\_series::write\_flag, méthode](../profiling/marker-series-write-flag-method.md), [marker\_series::write\_message, méthode](../profiling/marker-series-write-message-method.md), et [marker\_series::write\_alert, méthode](../profiling/marker-series-write-alert-method.md).  
+### <a name="c"></a>C++  
+ En C++, créez un objet de [classe marker_series](../profiling/marker-series-class.md) et utilisez-le pour appeler des fonctions.  La classe `marker_series` expose trois fonctions pour générer des marqueurs : la [méthode marker_series::write_flag](../profiling/marker-series-write-flag-method.md), la [méthode marker_series::write_message](../profiling/marker-series-write-message-method.md) et la [méthode marker_series::write_alert](../profiling/marker-series-write-alert-method.md).  
   
-##### Pour ajouter la prise en charge du Kit de développement logiciel en c\+\+ ou C projet  
+##### <a name="to-add-sdk-support-to-a-c-or-c-project"></a>Pour ajouter la prise en charge du kit SDK à un projet C++ ou C  
   
-1.  Dans la barre de menus, sélectionnez **Analyser**, **Visualiseur concurrentiel**, **Ajouter le SDK au projet**.  
+1.  Dans la barre de menus, choisissez **Analyser**, **Visualiseur concurrentiel**, **Ajouter le SDK au projet**.  
   
-2.  Sélectionnez le projet dans lequel vous souhaitez accéder au Kit de développement logiciel puis choisissez le bouton **Ajouter le SDK au projet sélectionné**.  
+2.  Sélectionnez le projet dans lequel vous souhaitez accéder au kit SDK, puis cliquez sur le bouton **Ajouter le SDK au projet sélectionné**.  
   
-3.  Pour C\+\+, incluez `cvmarkersobj.h`.  Pour C, incluez `cvmarkers.h`.  
+3.  En C++, ajoutez `cvmarkersobj.h`. En C, ajoutez `cvmarkers.h`.  
   
 4.  Ajoutez une instruction using à votre code.  
   
@@ -64,68 +82,68 @@ Vous pouvez instrumenter votre code source en utilisant le Kit de développement
     using namespace Concurrency::diagnostic;  
     ```  
   
-5.  Créez un objet `marker_series` et passez\-lui le constructeur `span`.  
+5.  Créez un objet `marker_series` et passez-le au constructeur `span`.  
   
-    ```cpp  
+    ```C++  
   
     marker_series mySeries;  
     span s(mySeries, _T("Span description"));  
   
     ```  
   
-## Utilisation personnalisée  
- Pour les scénarios avancés, le Kit de développement logiciel Visualiseur Concurrentiel expose plus de contrôle.  Deux concepts principaux sont associés à des scénarios plus avancés : fournisseurs de jeton et séries de jeton.  Les fournisseurs de jeton sont différents des fournisseurs ETW \(chacun a un GUID différent\).  Les séries de jetons sont les canaux séquentiels des événements qui sont générés par un fournisseur.  Vous pouvez l'utiliser pour organiser les événements qui sont générés par un fournisseur de jeton.  
+## <a name="custom-usage"></a>Utilisation personnalisée  
+ Pour les scénarios avancés, le kit SDK du visualiseur concurrentiel peut permettre un plus grand contrôle.  Deux grands concepts sont associés aux scénarios plus avancés : les fournisseurs de marqueurs et les séries de marqueurs. Les fournisseurs de marqueurs sont différents des fournisseurs ETW (car ils ont chacun leur propre GUID). Les séries de marqueurs sont des canaux d’événements en série qui sont générés par un fournisseur. Vous pouvez les utiliser pour organiser les événements générés par un fournisseur de marqueurs.  
   
-#### Pour utiliser un fournisseur de jeton dans un projet C\# ou Visual Basic  
+#### <a name="to-use-a-new-marker-provider-in-a-c-or-visual-basic-project"></a>Pour utiliser un nouveau fournisseur de marqueurs dans un projet C# ou Visual Basic  
   
-1.  Créez un objet <xref:Microsoft.ConcurrencyVisualizer.Instrumentation.MarkerWriter>.  Le constructeur prend un GUID.  
+1.  Créez un objet <xref:Microsoft.ConcurrencyVisualizer.Instrumentation.MarkerWriter>.  Le constructeur accepte un GUID.  
   
-2.  Pour enregistrer le fournisseur, ouvrez la boîte de dialogue [Paramètres avancés](../profiling/advanced-settings-dialog-box-concurrency-visualizer.md) du Visualiseur concurrentiel.  Sélectionnez l'onglet **Jetons** puis choisissez le bouton **Ajouter un nouveau fournisseur**.  Dans la boîte de dialogue [Paramètres avancés](../profiling/advanced-settings-dialog-box-concurrency-visualizer.md), entrez un GUID qui a été utilisée pour créer le fournisseur et une description du fournisseur.  
+2.  Pour inscrire le fournisseur, ouvrez la boîte de dialogue [Paramètres avancés](../profiling/advanced-settings-dialog-box-concurrency-visualizer.md) du visualiseur concurrentiel.  Sélectionnez l’onglet **Marqueurs**, puis cliquez sur le bouton **Ajouter un nouveau fournisseur**. Dans la boîte de dialogue [Paramètres avancés](../profiling/advanced-settings-dialog-box-concurrency-visualizer.md), entrez le GUID qui a été utilisé pour créer le fournisseur, ainsi que la description du fournisseur.  
   
-#### Pour utiliser un fournisseur de jeton dans un projet C\+\+ ou C  
+#### <a name="to-use-a-new-marker-provider-in-a-c-or-c-project"></a>Pour utiliser un nouveau fournisseur de marqueurs dans un projet C++ ou C  
   
-1.  Utilisez la fonction `CvInitProvider` pour initialiser un PCV\_PROVIDER.  Le constructeur prend un GUID\* et un PCV\_PROVIDER\*.  
+1.  Utilisez la fonction `CvInitProvider` pour initialiser un PCV_PROVIDER.  Le constructeur accepte un GUID* et un PCV_PROVIDER\*.  
   
-2.  Pour enregistrer le fournisseur, ouvrez la boîte de dialogue [Paramètres avancés](../profiling/advanced-settings-dialog-box-concurrency-visualizer.md).  Sélectionnez l'onglet **Jetons** puis choisissez le bouton **Ajouter un nouveau fournisseur**.  Dans cette boîte de dialogue, entrez GUID qui a été utilisé pour créer le fournisseur et une description du fournisseur.  
+2.  Pour inscrire le fournisseur, ouvrez la boîte de dialogue [Paramètres avancés](../profiling/advanced-settings-dialog-box-concurrency-visualizer.md).  Sélectionnez l’onglet **Marqueurs**, puis cliquez sur le bouton **Ajouter un nouveau fournisseur**. Dans la boîte de dialogue, entrez le GUID qui a été utilisé pour créer le fournisseur, ainsi que la description du fournisseur.  
   
-#### Pour utiliser la série d'un jeton dans un projet C\# ou Visual Basic  
+#### <a name="to-use-a-marker-series-in-a-c-or-visual-basic-project"></a>Pour utiliser une série de marqueurs dans un projet C# ou Visual Basic  
   
-1.  Pour utiliser un nouvel <xref:Microsoft.ConcurrencyVisualizer.Instrumentation.MarkerSeries>, créez\-le d'abord à l'aide d'un objet <xref:Microsoft.ConcurrencyVisualizer.Instrumentation.MarkerWriter>, et générez ensuite les événements de jeton directement à partir de la nouvelle série.  
+1.  Pour utiliser un nouveau <xref:Microsoft.ConcurrencyVisualizer.Instrumentation.MarkerSeries>, commencez par en créer un à l’aide d’un objet <xref:Microsoft.ConcurrencyVisualizer.Instrumentation.MarkerWriter>, puis générez les événements de marqueur directement à partir de la nouvelle série.  
   
-    ```c#  
-    MarkerSeries series1 = myMarkerWriter.CreateMarkerSeries(″Series 1″);  
-    series1.WriteFlag(″My flag″);  
+    ```CSharp  
+    MarkerSeries series1 = myMarkerWriter.CreateMarkerSeries("Series 1");  
+    series1.WriteFlag("My flag");  
     ```  
   
-    ```vb  
-    Dim series1 As New myMarkerWriter.CreateMarkerSeries(″Series 1″)  
-    series1.WriteFlag(″My flag″)  
+    ```VB  
+    Dim series1 As New myMarkerWriter.CreateMarkerSeries("Series 1")  
+    series1.WriteFlag("My flag")  
     ```  
   
-#### Pour utiliser la série d'un jeton dans un projet C\+\+  
+#### <a name="to-use-a-marker-series-in-a-c-project"></a>Pour utiliser une série de marqueurs dans un projet en C++  
   
-1.  Créez un objet `marker_series`.  Vous pouvez générer des événements de cette nouvelle série.  
+1.  Créez un objet `marker_series`.  Vous pouvez générer des événements à partir de cette nouvelle série.  
   
     ```scr  
     marker_series series;  
     series.write_flag(_T("Hello world!"));  
     ```  
   
-#### Pour utiliser la série d'un jeton dans un projet C  
+#### <a name="to-use-a-marker-series-in-a-c-project"></a>Pour utiliser une série de marqueurs dans un projet en C  
   
-1.  Utilisez la fonction `CvCreateMarkerSeries` pour créer un PCV\_MARKERSERIES.  
+1.  Utilisez la fonction `CvCreateMarkerSeries` pour créer une série PCV_MARKERSERIES.  
   
-    ```cpp  
+    ```C++  
     PCV_MARKERSERIES series;  
     CvCreatemarkerSeries(myProvider, _T("My Series"), &series);  
     CvWriteFlag(series, _T("Writing a flag"));  
     ```  
   
-## Rubriques connexes  
+## <a name="related-topics"></a>Rubriques connexes  
   
 |Titre|Description|  
 |-----------|-----------------|  
-|[Référence de bibliothèque C\+\+](../profiling/cpp-library-reference.md)|Décrit l'API du Visualiseur concurrentiel pour C\+\+.|  
-|[Informations de référence sur la bibliothèque C](../profiling/c-library-reference.md)|Décrit l'API du Visualiseur concurrentiel pour C.|  
-|<xref:Microsoft.ConcurrencyVisualizer.Instrumentation>|Décrit l'API du Visualiseur concurrentiel pour le code managé.|  
-|[Visualiseur concurrence](../profiling/concurrency-visualizer.md)|Informations de référence pour les vues et rapports des fichiers de données de profilage générés à l'aide de la méthode de concurrence et comprenant des données d'exécution de thread.|
+|[Informations de référence sur la bibliothèque C++](../profiling/cpp-library-reference.md)|Décrit l’API du visualiseur concurrentiel pour le langage C++.|  
+|[Informations de référence sur la bibliothèque C](../profiling/c-library-reference.md)|Décrit l’API du visualiseur concurrentiel pour le langage C.|  
+|<xref:Microsoft.ConcurrencyVisualizer.Instrumentation>|Décrit l’API du visualiseur concurrentiel pour le code managé.|  
+|[Visualiseur concurrentiel](../profiling/concurrency-visualizer.md)|Informations de référence sur les vues et les rapports des fichiers de données de profilage qui sont générés à l’aide de la méthode d’accès concurrentiel et qui comprennent des données d’exécution des threads.|

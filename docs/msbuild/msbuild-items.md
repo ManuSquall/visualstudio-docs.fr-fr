@@ -29,10 +29,11 @@ translation.priority.ht:
 - tr-tr
 - zh-cn
 - zh-tw
-translationtype: Human Translation
-ms.sourcegitcommit: 3ba7680d46345f2b49019659c715cfb418933d39
-ms.openlocfilehash: cba81e0eee6a0ce278c65e8952e75b23a6ebf3cc
-ms.lasthandoff: 02/22/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: 47057e9611b824c17077b9127f8d2f8b192d6eb8
+ms.openlocfilehash: 754cec0effaaa0cf68cf1a4bbc4d536dbdcf0298
+ms.contentlocale: fr-fr
+ms.lasthandoff: 05/13/2017
 
 ---
 # <a name="msbuild-items"></a>Éléments MSBuild
@@ -73,7 +74,7 @@ Les éléments MSBuild sont des entrées du système de génération qui représ
     -   [Attribut KeepDuplicates](#BKMK_KeepDuplicates)  
   
 ##  <a name="BKMK_Creating1"></a> Création d’éléments dans un fichier projet  
- Vous déclarez des éléments dans le fichier projet en tant qu’éléments enfants d’un élément [ItemGroup](../msbuild/itemgroup-element-msbuild.md). Le nom de l’élément enfant est le type de l’élément. L’attribut `Include` de l’élément spécifie les éléments (fichiers) à inclure avec ce type d’élément. Par exemple, le code XML suivant crée un type d’élément nommé `Compile` et composé de deux fichiers.  
+ Vous déclarez des éléments dans le fichier projet en tant qu’éléments enfants d’un élément [ItemGroup](../msbuild/itemgroup-element-msbuild.md). Le nom de l’élément enfant est le type de l’élément. L’attribut `Include` de l’élément spécifie les éléments (fichiers) à inclure avec ce type d’élément. Par exemple, le code XML suivant crée un type d’élément nommé `Compile` et composé de deux fichiers.  
   
 ```xml  
 <ItemGroup>  
@@ -82,7 +83,7 @@ Les éléments MSBuild sont des entrées du système de génération qui représ
 </ItemGroup>  
 ```  
   
- L’élément « file2.cs » ne remplace pas l’élément « file1.cs ». Le nom de fichier est ajouté à la liste des valeurs correspondant au type d’élément `Compile`. Vous ne pouvez pas supprimer un élément d’un type d’élément pendant la phase d’évaluation d’une génération.  
+ L’élément « file2.cs » ne remplace pas l’élément « file1.cs ». Le nom de fichier est ajouté à la liste des valeurs correspondant au type d’élément `Compile`. Vous ne pouvez pas supprimer un élément d’un type d’élément pendant la phase d’évaluation d’une build.  
   
  Le code XML suivant crée le même type d’élément en déclarant les deux fichiers dans un attribut `Include`. Notez que les noms de fichiers sont séparés par un point-virgule.  
   
@@ -102,9 +103,9 @@ Les éléments MSBuild sont des entrées du système de génération qui représ
 -   Depuis .NET Framework 3.5, les éléments `Target` peuvent contenir des éléments [ItemGroup](../msbuild/itemgroup-element-msbuild.md) qui peuvent comporter des éléments Item.  
   
 ##  <a name="BKMK_ReferencingItems"></a> Référencement d’éléments dans un fichier projet  
- Pour référencer des types d’éléments dans tout le fichier projet, vous devez utiliser la syntaxe @(`ItemType`). Par exemple, vous devez référencer le type d’élément dans l’exemple précédent en utilisant `@(Compile)`. À l’aide de cette syntaxe, vous pouvez transmettre des éléments aux tâches en spécifiant le type d’élément en tant que paramètre de la tâche en question. Pour plus d’informations, consultez l’article [How to: Select the Files to Build (Comment : sélectionner les fichiers pour une génération)](../msbuild/how-to-select-the-files-to-build.md).  
+ Pour référencer des types d’éléments dans tout le fichier projet, vous devez utiliser la syntaxe @(`ItemType`). Par exemple, vous devez référencer le type d’élément dans l’exemple précédent en utilisant `@(Compile)`. À l’aide de cette syntaxe, vous pouvez transmettre des éléments aux tâches en spécifiant le type d’élément en tant que paramètre de la tâche en question. Pour plus d’informations, consultez l’article [Guide pratique pour sélectionner des fichiers dans une build](../msbuild/how-to-select-the-files-to-build.md).  
   
- Par défaut, les éléments d’un type d’élément sont séparés par des points-virgules (;) lorsque ce dernier est développé. Vous pouvez utiliser la syntaxe @(*ItemType*, ’*separator*’) pour spécifier un séparateur autre que celui indiqué par défaut. Pour plus d’informations, consultez l’article [Comment : afficher une liste d’éléments séparés par des virgules](../msbuild/how-to-display-an-item-list-separated-with-commas.md).  
+ Par défaut, les éléments d’un type d’élément développé sont séparés par des points-virgules (;). Vous pouvez utiliser la syntaxe @(*ItemType*, ’*separator*’) pour spécifier un séparateur autre que celui indiqué par défaut. Pour plus d’informations, consultez l’article [Comment : afficher une liste d’éléments séparés par des virgules](../msbuild/how-to-display-an-item-list-separated-with-commas.md).  
   
 ##  <a name="BKMK_Wildcards"></a> Utilisation de caractères génériques pour spécifier des éléments  
  Vous pouvez utiliser les caractères génériques **, \* et ? pour spécifier un groupe de fichiers comme entrées d’une génération au lieu de répertorier chaque fichier séparément.  
@@ -127,7 +128,7 @@ Les éléments MSBuild sont des entrées du système de génération qui représ
 <VBFile Include="D:/**/*.vb"/>  
 ```  
   
- Pour plus d’informations sur les caractères génériques, consultez l’article [How to: Select the Files to Build (Comment : sélectionner les fichiers pour une génération)](../msbuild/how-to-select-the-files-to-build.md).  
+ Pour plus d’informations sur les caractères génériques, consultez l’article [Guide pratique pour sélectionner des fichiers dans une build](../msbuild/how-to-select-the-files-to-build.md).  
   
 ##  <a name="BKMK_ExcludeAttribute"></a> Utilisation de l’attribut Exclude  
  Les éléments Item peuvent contenir l’attribut `Exclude` qui exclut des éléments spécifiques (fichiers) du type d’élément. L’attribut `Exclude` est généralement utilisé avec des caractères génériques. Par exemple, le code XML suivant ajoute tous les fichiers .cs du répertoire au type d’élément CSFile, à l’exception du fichier `DoNotBuild.cs`.  
@@ -372,7 +373,7 @@ Output:
 ## <a name="see-also"></a>Voir aussi  
  [Concepts MSBuild](../msbuild/msbuild-concepts.md)  
  [MSBuild](../msbuild/msbuild.md)   
- [How to: Select the Files to Build (Comment : sélectionner les fichiers à générer)](../msbuild/how-to-select-the-files-to-build.md)   
+ [Guide pratique pour sélectionner des fichiers dans une build](../msbuild/how-to-select-the-files-to-build.md)   
  [Comment : exclure des fichiers de la génération](../msbuild/how-to-exclude-files-from-the-build.md)   
  [Comment : afficher une liste d’éléments séparés par des virgules](../msbuild/how-to-display-an-item-list-separated-with-commas.md)   
  [Item Definitions (Définitions d’éléments)](../msbuild/item-definitions.md)   

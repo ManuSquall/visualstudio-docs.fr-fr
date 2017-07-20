@@ -30,10 +30,11 @@ translation.priority.mt:
 - pl-pl
 - pt-br
 - tr-tr
-translationtype: Human Translation
-ms.sourcegitcommit: 0d129b4820944f5717c63243cb8550bc4fed3385
-ms.openlocfilehash: 380b65540d8f5c6ea6d8a8adf1f3c5575f5dd9dc
-ms.lasthandoff: 03/20/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: 47057e9611b824c17077b9127f8d2f8b192d6eb8
+ms.openlocfilehash: 09c33f3cc331af03659922e178e4089f177132de
+ms.contentlocale: fr-fr
+ms.lasthandoff: 05/13/2017
 
 ---
 # <a name="profiling-tools"></a>Outils de profilage
@@ -52,7 +53,7 @@ Les outils de profilage et de diagnostic vous aident à diagnostiquer l’utilis
 ## <a name="memory-usage"></a>Utilisation de la mémoire  
  ![DiagMemorySmall](../profiling/media/diagmemorysmall.png "DiagMemorySmall")  
   
- Identifiez les fuites de mémoire et les utilisations inefficaces de la mémoire pendant le débogage à l’aide de l’outil **Utilisation de la mémoire** . L’outil vous permet de prendre des captures instantanées du tas de mémoire managé et natif. Vous pouvez utiliser cet outil avec les applications de bureau, les applications universelles Windows et les applications ASP.NET. L’outil **Utilisation de la mémoire** peut être exécuté à partir de la fenêtre **Outils de diagnostic** pendant le débogage (**Déboguer / Windows / Afficher les outils de diagnostic**) ou en dehors du débogueur (**Déboguer / Profileur de performances...**). Pour plus d’informations, consultez [Utilisation de la mémoire](../profiling/memory-usage.md) et [Utilisation de la mémoire sans débogage](../profiling/Memory-Usage-without-Debugging2.md) .  
+ Identifiez les fuites de mémoire et les utilisations inefficaces de la mémoire pendant le débogage à l’aide de l’outil **Utilisation de la mémoire**. L’outil vous permet de prendre des captures instantanées du tas de mémoire managé et natif. Vous pouvez utiliser cet outil avec les applications de bureau, les applications universelles Windows et les applications ASP.NET. L’outil **Utilisation de la mémoire** peut être exécuté à partir de la fenêtre **Outils de diagnostic** pendant le débogage (**Déboguer / Windows / Afficher les outils de diagnostic**) ou en dehors du débogueur (**Déboguer / Profileur de performances...**). Pour plus d’informations, consultez [Utilisation de la mémoire](../profiling/memory-usage.md) et [Utilisation de la mémoire sans débogage](../profiling/Memory-Usage-without-Debugging2.md) .  
   
 ## <a name="cpu-usage"></a>Utilisation de l'UC  
  ![DiagCPUSmall](../profiling/media/diagcpusmall.png "DiagCPUSmall")  
@@ -106,14 +107,14 @@ Les outils de profilage et de diagnostic vous aident à diagnostiquer l’utilis
 |Outil d’analyse des performances|Bureau Windows|Universel Windows/Store|ASP.NET/ASP.NET Core|  
 |----------------------|---------------------|------------------------------|-------------|  
 |[Utilisation de la mémoire](../profiling/memory-usage.md)|oui|oui|oui|  
-|[Utilisation de l’UC](../profiling/cpu-usage.md)|oui|oui|oui|  
+|[Utilisation de l'UC](../profiling/cpu-usage.md)|oui|oui|oui|  
 |[Utilisation du GPU](../debugger/gpu-usage.md)|oui|oui|non|  
-|[Chronologie de l’application](../profiling/application-timeline.md)|oui|oui|non|  
-|[PerfTips](../profiling/perftips.md)|oui|oui pour XAML, non pour HTML|oui|  
+|[Chronologie de l'application](../profiling/application-timeline.md)|oui|oui|non|  
+|[Conseils sur les performances](../profiling/perftips.md)|oui|oui pour XAML, non pour HTML|oui|  
 |[Explorateur de performances](../profiling/performance-explorer.md)|oui|non|oui (non pour ASP.NET Core)|  
 |[IntelliTrace](../debugger/intellitrace.md)|.NET Enterprise uniquement|.NET Enterprise uniquement|.NET Enterprise uniquement|
 |[Utilisation du réseau](../profiling/network-usage.md)|non|oui|non| 
-|[Réactivité de l’interface utilisateur HTML](../profiling/html-ui-responsiveness.md)|non|oui pour HTML, non pour XAML|non|  
+|[HTML UI responsiveness](../profiling/html-ui-responsiveness.md)|non|oui pour HTML, non pour XAML|non|  
 |[Mémoire JavaScript](../profiling/javascript-memory.md)|non|oui pour HTML, non pour XAML|non|  
   
 ## <a name="see-also"></a>Voir aussi  

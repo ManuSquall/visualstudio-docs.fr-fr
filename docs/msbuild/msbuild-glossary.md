@@ -28,10 +28,11 @@ translation.priority.mt:
 - pl-pl
 - pt-br
 - tr-tr
-translationtype: Human Translation
-ms.sourcegitcommit: d014b703c491603c86fcd6a89c1dc17f35b0deae
-ms.openlocfilehash: 4e0a5eca9b1d7da650c9e612076bda80b4eeda24
-ms.lasthandoff: 02/22/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: 47057e9611b824c17077b9127f8d2f8b192d6eb8
+ms.openlocfilehash: f680d18660c15e96c87d868cc45cc3a66e8fc553
+ms.contentlocale: fr-fr
+ms.lasthandoff: 05/13/2017
 
 ---
 # <a name="msbuild-glossary"></a>Glossaire MSBuild
@@ -39,7 +40,7 @@ Ces termes sont utilisés pour décrire Microsoft Build Engine (MSBuild) et ses 
   
 ## <a name="glossary"></a>Glossaire  
  AssemblyFoldersEx  
- Emplacement du Registre dans lequel les fournisseurs tiers stockent les chemins d’accès de chaque version de l’infrastructure qu’ils prennent en charge, où la résolution au moment du design peut rechercher des assemblys de référence.  
+ Emplacement du Registre dans lequel les fournisseurs tiers stockent les chemins de chaque version du framework qu’ils prennent en charge, où la résolution au moment du design peut rechercher des assemblys de référence.  
   
  traitement par lots  
  Répartition des éléments en différentes catégories appelées *lots*, en fonction des métadonnées d’élément, puis exécution d’une cible ou d’une tâche à la fois en utilisant chaque lot. Le traitement par lot est l’équivalent MSBuild de la construction « for loop ». Pour plus d’informations, consultez l’article [Batching (Traitement par lot MSBuild)](../msbuild/msbuild-batching.md).  
@@ -96,10 +97,10 @@ Ces termes sont utilisés pour décrire Microsoft Build Engine (MSBuild) et ses 
  Les métadonnées connues sont des métadonnées d’élément en lecture seule qui sont initialisées à l’aide d’une valeur prédéfinie. Les métadonnées connues fournissent des informations descriptives sur un élément qui référence un fichier. Par exemple, la valeur de la métadonnée connue `FullPath` est le chemin d’accès complet du fichier référencé. Pour plus d’informations, consultez l’article [Éléments MSBuild](../msbuild/msbuild-items.md).  
   
  multi-ciblage  
- Possibilité pour un projet d’application ou d’assembly de cibler différents CLR et infrastructures à partir de MSBuild et de Visual Studio.  
+ Possibilité pour un projet d’application ou d’assembly de cibler différents CLR et frameworks à partir de MSBuild et de Visual Studio.  
   
- profile  
- Sous-ensemble de l’infrastructure totale. Permet de diminuer la quantité à télécharger sur un ordinateur.  
+ profil  
+ Partie du framework entier. Permet de diminuer la quantité à télécharger sur un ordinateur.  
   
  fichier projet  
  Contient le script MSBuild qui contrôle la génération. Les fichiers projet sont généralement pourvus d’une extension de fichier se terminant par « proj », par exemple .csproj ou .vbproj. Ils peuvent importer des fichiers de propriétés et des fichiers cibles.  
@@ -142,7 +143,7 @@ Ces termes sont utilisés pour décrire Microsoft Build Engine (MSBuild) et ses 
  Un projet enfant est créé par la tâche MSBuild pendant une génération de projet. Ce nouveau projet est un enfant du projet qui contient ou importe la cible comportant la tâche MSBuild. Le projet enfant hérite des propriétés globales du projet parent, sauf si elles sont modifiées par l’attribut `Properties`.  
   
  liste de composants redistribuables  
- Liste des assemblys qui correspondent à une infrastructure donnée.  
+ Liste des assemblys qui correspondent à un framework donné.  
   
  assembly de référence  
  Assembly utilisé au moment du design pour créer une application. Le code réel et les interfaces privées peuvent être supprimés d’un assembly de référence, laissant ainsi uniquement les métadonnées et les interfaces publiques.  
@@ -169,10 +170,10 @@ Ces termes sont utilisés pour décrire Microsoft Build Engine (MSBuild) et ses 
  Si la compilation incrémentielle détermine que tous les fichiers de sortie sont à jour, la cible est ignorée. En d’autres termes, la cible est évaluée, mais les tâches dans la cible ne sont pas exécutées. Pour plus d’informations, voir l’entrée « cible, évaluation ».  
   
  moniker de la version cible de .Net Framework  
- Nom qui décrit l’infrastructure (par exemple .NET Framework, Silverlight, etc.), la version et le profil (par exemple, client, serveur, etc.) que vous souhaitez cibler.  
+ Nom qui décrit le framework (par exemple .NET Framework, Silverlight, etc.), la version et le profil (par exemple, client, serveur, etc.) que vous souhaitez cibler.  
   
  pack de ciblage  
- Liste des assemblys qui sont distribués avec une infrastructure donnée et le jeu d’assemblys de référence correspondant à cette infrastructure.  
+ Liste des assemblys qui sont distribués avec un framework donné et le jeu d’assemblys de référence correspondant à ce framework.  
   
  fichier de cibles  
  Fichier projet qui contient principalement des cibles et des tâches qui guident la génération. Par convention, il est pourvu de l’extension de fichier .targets. Les fichiers de cibles sont généralement importés à la fin des fichiers projet associés.  

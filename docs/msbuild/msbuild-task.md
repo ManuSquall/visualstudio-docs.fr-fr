@@ -1,174 +1,192 @@
 ---
-title: "MSBuild, t&#226;che | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "http://schemas.microsoft.com/developer/msbuild/2003#MSBuild"
-dev_langs: 
-  - "VB"
-  - "CSharp"
-  - "C++"
-  - "jsharp"
-helpviewer_keywords: 
-  - "MSBuild (tâche MSBuild)"
-  - "MSBuild, tâche MSBuild"
+title: "Tâche MSBuild | Microsoft Docs"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology:
+- vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords:
+- http://schemas.microsoft.com/developer/msbuild/2003#MSBuild
+dev_langs:
+- VB
+- CSharp
+- C++
+- jsharp
+helpviewer_keywords:
+- MSBuild task [MSBuild]
+- MSBuild, MSBuild task
 ms.assetid: 76577f6c-7669-44ad-a840-363e37a04d34
 caps.latest.revision: 32
-author: "kempb"
-ms.author: "kempb"
-manager: "ghogen"
-caps.handback.revision: 32
----
-# MSBuild, t&#226;che
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
+author: kempb
+ms.author: kempb
+manager: ghogen
+translation.priority.ht:
+- de-de
+- es-es
+- fr-fr
+- it-it
+- ja-jp
+- ko-kr
+- ru-ru
+- zh-cn
+- zh-tw
+translation.priority.mt:
+- cs-cz
+- pl-pl
+- pt-br
+- tr-tr
+ms.translationtype: Human Translation
+ms.sourcegitcommit: 47057e9611b824c17077b9127f8d2f8b192d6eb8
+ms.openlocfilehash: 0540432e570bf533df1f6437361486f9dd7b6727
+ms.contentlocale: fr-fr
+ms.lasthandoff: 05/13/2017
 
-Génère des projets [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] depuis un autre projet [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)].  
+---
+# <a name="msbuild-task"></a>MSBuild, tâche
+Génère des projets [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] à partir d’un autre projet [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)].  
   
-## Paramètres  
- Le tableau suivant décrit les paramètres de la tâche `MSBuild`.  
+## <a name="parameters"></a>Paramètres  
+ Le tableau ci-dessous décrit les paramètres de la tâche `MSBuild`.  
   
 |Paramètre|Description|  
 |---------------|-----------------|  
-|`BuildInParallel`|Paramètre `Boolean` facultatif.<br /><br /> Si ce paramètre a la valeur `true`, les projets spécifiés dans le paramètre `Projects` sont générés en parallèle si possible.  La valeur par défaut est `false`.|  
+|`BuildInParallel`|Paramètre `Boolean` facultatif.<br /><br /> Si `true`, les projets spécifiés dans le paramètre `Projects` sont générés en parallèle dans la mesure du possible. La valeur par défaut est `false`.|  
 |`Projects`|Paramètre <xref:Microsoft.Build.Framework.ITaskItem>`[]` obligatoire.<br /><br /> Spécifie les fichiers projet à générer.|  
-|`Properties`|Paramètre `String` facultatif.<br /><br /> Liste délimitée par des points\-virgules de paires nom\/valeur de propriété à appliquer en tant que propriétés globales au projet enfant.  Lorsque vous spécifiez ce paramètre, cela équivaut, d'un point de vue fonctionnel, à définir des propriétés possédant le commutateur **\/property** lorsque vous générez avec [MSBuild.exe](../msbuild/msbuild-command-line-reference.md).  Par exemple :<br /><br /> `Properties="Configuration=Debug;Optimize=$(Optimize)"`<br /><br /> Lorsque vous passez des propriétés au projet via le paramètre `Properties`, [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] crée une nouvelle instance du projet, même si le fichier projet a déjà été chargé.  Lorsqu'une nouvelle instance du projet est créée, [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] traite cette instance comme un projet différent avec des propriétés globales différentes et qui peut être généré en parallèle avec d'autres instances du projet.  Par exemple, une configuration Release pourrait être générée en même temps qu'une configuration Debug.|  
-|`RebaseOutputs`|Paramètre `Boolean` facultatif.<br /><br /> Si la valeur est `true`, les chemins d'accès relatifs des éléments de sortie cibles des projets créés sont modifiés par rapport au projet appelant.  La valeur par défaut est `false`.|  
-|`RemoveProperties`|Paramètre `String` facultatif.<br /><br /> Spécifie le jeu de propriétés globales à supprimer.|  
-|`RunEachTargetSeparately`|Paramètre `Boolean` facultatif.<br /><br /> Si le paramètre a la valeur `true`, la tâche [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] appelle une par une chaque cible de la liste passée à [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)], plutôt que de les appeler en même temps.  Affecter à ce paramètre la valeur `true` garantit que les cibles sont toutes appelées même en cas d'échec de l'appel d'une des cibles.  Sinon, une erreur de build arrêterait l'appel de toutes les cibles consécutives.  La valeur par défaut est `false`.|  
-|`SkipNonexistentProjects`|Paramètre `Boolean` facultatif.<br /><br /> Si la valeur est `true`, les fichiers projet qui n'existent pas sur le disque seront ignorés.  Sinon, ces projets provoqueront une erreur.|  
-|`StopOnFirstFailure`|Paramètre `Boolean` facultatif.<br /><br /> Si la valeur est `true`, lorsque la génération de l'un des projets échoue, plus aucun projet n'est généré.  Actuellement, cela n'est pas pris en charge lors de la génération en parallèle \(avec plusieurs processeurs\).|  
-|`TargetAndPropertyListSeparators`|Paramètre `String[]` facultatif.<br /><br /> Spécifie une liste de cibles et de propriétés comme des métadonnées d'élément de `Project`\).  Les séparateurs seront placés hors d'une séquence d'échappement avant le traitement.  par.. exemple %3B d'échappement \(« ; "\) est traité comme s'il s'agissait ONU\- d'échappement « ;  ».|  
-|`TargetOutputs`|Paramètre de sortie en lecture seule <xref:Microsoft.Build.Framework.ITaskItem>`[]` facultatif.<br /><br /> Retourne les sorties des cibles générées à partir de tous les fichiers projet.  Seules les sorties provenant des cibles spécifiées sont retournées, pas les sorties qui peuvent exister sur les cibles sur lesquelles dépendent ces cibles.<br /><br /> Le paramètre `TargetOutputs` contient également les métadonnées suivantes :<br /><br /> -   `MSBuildSourceProjectFile` : le fichier projet [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] qui contient la cible qui a défini les sorties ;<br />-   `MSBuildSourceTargetName` : la cible qui a défini les sorties. **Note:**  Si vous souhaitez distinguer les sorties de chaque fichier projet ou cible, exécutez la tâche `MSBuild` séparément pour chaque fichier projet ou cible.  Si vous exécutez une seule fois la tâche `MSBuild` pour générer tous les fichiers projet, les sorties de toutes les cibles sont collectées dans un seul tableau.|  
-|`Targets`|Paramètre `String` facultatif.<br /><br /> Spécifie la ou les cibles à générer dans les fichiers projet.  Utilisez un point\-virgule pour séparer une liste de noms cibles.  Si aucune cible n'est spécifiée dans la tâche `MSBuild`, cette dernière génère les cibles par défaut spécifiées dans les fichiers projet. **Note:**  Les cibles doivent exister dans tous les fichiers projet,  sans quoi une erreur de build se produit.|  
-|`ToolsVersion`|Paramètre `String` facultatif.<br /><br /> Spécifie la `ToolsVersion` à utiliser lorsque des projets de génération sont passés à cette tâche.<br /><br /> Permet à une tâche [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] de générer un projet qui vise une version différente du [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] de celle spécifiée dans le projet.  Les valeurs valides sont `2.0`, `3.0` et `3.5`.  La valeur par défaut est `3.5`|  
-|`UnloadProjectsOnCompletion`|Paramètre `Boolean` facultatif.<br /><br /> Si la valeur est `true`, le projet doit être déchargé une fois l'opération terminée.|  
-|`UseResultsCache`|Paramètre `Boolean` facultatif.<br /><br /> Si la valeur est `true`, le résultat mis en cache sera retourné, le cas échéant.  Si la tâche MSBuild est exécutée, son résultat est mis en cache dans une portée \(NomFichierProjet, PropriétésGlobales\)\[NomsCibles\]<br /><br /> comme une liste d'éléments de génération|  
+|`Properties`|Paramètre `String` facultatif.<br /><br /> Liste délimitée par des points-virgules de paires nom/valeur de propriété à appliquer en tant que propriétés globales au projet enfant. Si vous spécifiez ce paramètre, son fonctionnement revient à définir des propriétés pourvues du commutateur **/property** lorsque vous procédez à une génération avec [MSBuild.exe](../msbuild/msbuild-command-line-reference.md). Exemple :<br /><br /> `Properties="Configuration=Debug;Optimize=$(Optimize)"`<br /><br /> Si vous transmettez des propriétés au projet via le paramètre `Properties`, [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] crée une instance du projet même si le fichier projet a déjà été chargé. Si une instance du projet a été créée, [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] la considère comme un autre projet pourvu de propriétés globales différentes qui peut être généré en parallèle avec d’autres instances du projet. Par exemple, une configuration Release peut être générée en même temps qu’une configuration Debug.|  
+|`RebaseOutputs`|Paramètre `Boolean` facultatif.<br /><br /> Si `true`, les chemins d’accès relatifs des éléments de sortie cibles des projets générés sont modifiés par rapport au projet appelant. La valeur par défaut est `false`.|  
+|`RemoveProperties`|Paramètre `String` facultatif.<br /><br /> Spécifie l’ensemble des propriétés globales à supprimer.|  
+|`RunEachTargetSeparately`|Paramètre `Boolean` facultatif.<br /><br /> Si `true`, la tâche [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] appelle une à une chaque cible de la liste transmise à [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)], au lieu de les appeler toutes en même temps. Définir ce paramètre sur `true` garantit que les cibles ultérieures seront appelées même en cas d’échec des cibles précédemment appelées. Dans le cas contraire, une erreur de génération arrêterait l’appel de toutes les cibles suivantes. La valeur par défaut est `false`.|  
+|`SkipNonexistentProjects`|Paramètre `Boolean` facultatif.<br /><br /> Si `true`, les fichiers projet qui n’existent pas sur le disque sont ignorés. Dans le cas contraire, ces projets provoquent une erreur.|  
+|`StopOnFirstFailure`|Paramètre `Boolean` facultatif.<br /><br /> Si `true`, en cas d’échec de génération de l’un des projets, aucun autre projet n’est généré. Pour le moment, cela n’est pas pris en charge lors de la génération en parallèle (avec plusieurs processeurs).|  
+|`TargetAndPropertyListSeparators`|Paramètre `String[]` facultatif.<br /><br /> Spécifie une liste de cibles et de propriétés en tant que métadonnées d’élément `Project`. Avant le traitement, les séparateurs sont retirés de la séquence d’échappement. Par exemple, %3B (caractère « ; » inséré dans une séquence d’échappement) est traité comme s’il s’agissait du caractère « ; » sans séquence d’échappement.|  
+|`TargetOutputs`|Paramètre de sortie en lecture seule <xref:Microsoft.Build.Framework.ITaskItem>`[]` facultatif.<br /><br /> Retourne les sorties des cibles générées à partir de tous les fichiers projet. Seules les sorties des cibles spécifiées sont retournées. Les sorties qui peuvent exister sur les cibles dont dépendent ces cibles ne sont pas retournées.<br /><br /> Le paramètre `TargetOutputs` contient également les métadonnées suivantes :<br /><br /> -   `MSBuildSourceProjectFile` : fichier projet [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] qui contient la cible qui a défini les sorties.<br />-   `MSBuildSourceTargetName` : cible qui a défini les sorties. **Remarque :** si vous souhaitez identifier les sorties de chaque fichier projet ou de chaque cible séparément, exécutez la tâche `MSBuild` séparément pour chaque fichier projet ou cible. Si vous exécutez la tâche `MSBuild` une seule fois pour générer tous les fichiers projet, les sorties de toutes les cibles sont collectées dans un seul tableau.|  
+|`Targets`|Paramètre `String` facultatif.<br /><br /> Spécifie la ou les cibles à générer dans les fichiers projet. Utilisez un point-virgule pour séparer les noms de cibles dans la liste. Si aucune cible n’est spécifiée dans la tâche `MSBuild`, les cibles par défaut spécifiées dans les fichiers projet sont créées. **Remarque :** les cibles doivent exister dans tous les fichiers projet. Si tel n’est pas le cas, une erreur de génération se produit.|  
+|`ToolsVersion`|Paramètre `String` facultatif.<br /><br /> Spécifie la `ToolsVersion` à utiliser lors de la génération des projets transmis à cette tâche.<br /><br /> Permet à une tâche [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] de générer un projet qui cible une version différente de [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] de celle spécifiée dans le projet. Les valeurs valides sont `2.0`, `3.0` et `3.5`. La valeur par défaut est `3.5`.|  
+|`UnloadProjectsOnCompletion`|Paramètre `Boolean` facultatif.<br /><br /> Si `true`, le projet doit être déchargé une fois l’opération terminée.|  
+|`UseResultsCache`|Paramètre `Boolean` facultatif.<br /><br /> Si `true`, le résultat mis en cache est retourné, le cas échéant. Si la tâche MSBuild est exécutée, son résultat est mis en cache dans une portée (ProjectFileName, GlobalProperties)[TargetNames]<br /><br /> en tant que liste d’éléments de génération.|  
   
-## Notes  
- En plus des paramètres énumérés ci\-dessus, cette tâche hérite des paramètres de la classe <xref:Microsoft.Build.Tasks.TaskExtension>, qui hérite elle\-même de la classe <xref:Microsoft.Build.Utilities.Task>.  Pour obtenir la liste de ces paramètres supplémentaires et de leurs descriptions, consultez [TaskExtension Base Class](../msbuild/taskextension-base-class.md).  
+## <a name="remarks"></a>Remarques  
+ En plus des paramètres énumérés ci-dessus, cette tâche hérite des paramètres de la classe <xref:Microsoft.Build.Tasks.TaskExtension>, qui elle-même hérite de la classe <xref:Microsoft.Build.Utilities.Task>. Pour obtenir la liste de ces paramètres supplémentaires et leurs descriptions, consultez [TaskExtension Base Class](../msbuild/taskextension-base-class.md).  
   
- Contrairement à ce qui se passe lors de l'utilisation de la [Exec Task](../msbuild/exec-task.md) pour appeler MSBuild.exe, cette tâche utilise le même processus [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] pour générer les projets enfants.  La liste de cibles déjà générées qu'il est possible d'ignorer est partagée entre les générations parentes et enfants.  Cette tâche est également plus rapide car aucun nouveau processus [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] n'est créé.  
+ Contrairement à l’utilisation de la [tâche Exec](../msbuild/exec-task.md) pour démarrer MSBuild.exe, cette tâche utilise le même processus [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] pour générer les projets enfants. La liste des cibles déjà générées qui peuvent être ignorées est partagée entre la génération parente et les générations enfants. Cette tâche est également plus rapide, car aucun nouveau processus [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] n’est créé.  
   
- Cette tâche peut traiter non seulement les fichiers projet, mais aussi les fichiers solution.  
+ Cette tâche peut traiter non seulement les fichiers projet, mais également les fichiers solution.  
   
- Toute configuration requise par [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] pour permettre à des projets d'être générés en même temps, même si la configuration implique une infrastructure distante \(par exemple : ports, protocoles, délais d'attente, tentatives, etc.\), doit être configurable via un fichier de configuration.  Lorsque cela est possible, les éléments de configuration doivent être en mesure d'être spécifiés comme paramètres de tâche de la tâche `MSBuild`.  
+ Toute configuration requise par [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] pour permettre la génération simultanée des projets, même si la configuration implique une infrastructure distante (par exemple, des ports, protocoles, délais d’attente, tentatives, etc.) doit être rendue configurable à l’aide d’un fichier de configuration. Dans la mesure du possible, il convient de spécifier les éléments de configuration comme paramètres de tâche dans la tâche `MSBuild`.  
   
- Depuis [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 3.5, les projets Solution font maintenant ressurgir TargetOutputs parmi tous les sous\-projets qu'ils génèrent.  
+ Depuis [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 3.5, les projets solution surfacent TargetOutputs depuis tous les sous-projets générés.  
   
-## Passage de propriétés aux projets  
- Dans les versions de [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] antérieures à [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 3.5, le passage de différents jeux de propriétés aux différents projets répertoriés dans l'élément [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] présentait quelques difficultés.  Si vous utilisiez l'attribut Properties de [MSBuild Task](../msbuild/msbuild-task.md), cette configuration était alors appliquée à tous les projets construits à moins que vous n'ayez regroupé la [MSBuild Task](../msbuild/msbuild-task.md) et attribué, de manière conditionnelle, différentes propriétés à chaque projet de la liste d'éléments.  
+## <a name="passing-properties-to-projects"></a>Transmission des propriétés aux projets  
+ Dans les versions de [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] antérieures à [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 3.5, la transmission des différents ensembles de propriétés aux différents projets répertoriés dans l’élément [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] était difficile. Si vous utilisiez l’attribut Properties de la [tâche MSBuild](../msbuild/msbuild-task.md), son paramètre était appliqué à tous les projets générés à moins que vous n’ayez traité par lot la [tâche MSBuild](../msbuild/msbuild-task.md) et fourni de façon conditionnelle des propriétés différentes pour chaque projet de la liste d’éléments.  
   
- Toutefois, [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 3.5 fournit deux nouveaux éléments de métadonnées réservés, Properties et AdditionalProperties, qui vous offrent une méthode flexible pour passer des propriétés différentes à différents projets construits à l'aide de la [MSBuild Task](../msbuild/msbuild-task.md).  
-  
-> [!NOTE]
->  Ces nouveaux éléments de métadonnées sont uniquement applicables aux éléments passés dans l'attribut Projects de la [MSBuild Task](../msbuild/msbuild-task.md).  
-  
-## Avantages de la génération multiprocesseur  
- L'un des avantages majeurs de l'utilisation de ces nouvelles métadonnées est flagrant lorsque vous générés vos projets en parallèle sur un système multiprocesseur.  Les métadonnées vous permettent de consolider tous les projets en un appel de [MSBuild Task](../msbuild/msbuild-task.md) sans devoir effectuer de traitement par lot ou définir des tâches [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] conditionnelles.  Et lorsque vous appelez uniquement une [MSBuild Task](../msbuild/msbuild-task.md)unique, tous les projets répertoriés dans l'attribut Projects seront générés en parallèle.  \(Toutefois, uniquement si l'attribut `BuildInParallel=true` est présent dans la [MSBuild Task](../msbuild/msbuild-task.md).\) Pour plus d'informations, consultez [Building Multiple Projects in Parallel](../msbuild/building-multiple-projects-in-parallel-with-msbuild.md).  
-  
-## Métadonnées Properties  
- Un scénario courant est lorsque vous générez plusieurs fichiers solution à l'aide de la [MSBuild Task](../msbuild/msbuild-task.md) avec différentes configurations de build.  Vous voulez peut\-être générer la solution a1 en configuration Debug et la solution a2 en configuration Release.  Dans [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 2.0, le fichier projet ressemblerait à ceci :  
+ [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 3.5 propose néanmoins deux nouveaux éléments de métadonnées réservés, Properties et AdditionalProperties, qui vous permettent de transmettre simplement les propriétés différentes de plusieurs projets générés à l’aide de la [tâche MSBuild](../msbuild/msbuild-task.md).  
   
 > [!NOTE]
->  Dans l'exemple suivant, "…" représente des fichiers solution supplémentaires.  
+>  Ces nouveaux éléments de métadonnées s’appliquent uniquement aux éléments transmis dans l’attribut Projects de la [tâche MSBuild](../msbuild/msbuild-task.md).  
   
-### a.proj  
+## <a name="multi-processor-build-benefits"></a>Avantages de la génération multiprocesseur  
+ L’un des principaux avantages liés à l’utilisation de ces nouvelles métadonnées se présente lorsque vous générez vos projets en parallèle sur un système multiprocesseur. Les métadonnées vous permettent de consolider tous les projets dans un seul et même appel de [tâche MSBuild](../msbuild/msbuild-task.md) sans devoir effectuer de traitement par lot ou de tâches [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] conditionnelles. Si vous appelez une seule [tâche MSBuild](../msbuild/msbuild-task.md), tous les projets répertoriés dans l’attribut Projects sont générés en parallèle. (Toutefois cela se produit uniquement si l’attribut `BuildInParallel=true` est présent dans la [tâche MSBuild](../msbuild/msbuild-task.md).) Pour plus d’informations, consultez l’article [Building Multiple Projects in Parallel (Génération de plusieurs projets en parallèle avec MSBuild)](../msbuild/building-multiple-projects-in-parallel-with-msbuild.md).  
   
-```  
-<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">  
-    <Target Name="Build">  
-        <MSBuild Projects="a1.sln..." Properties="Configuration=Debug"/>  
-        <MSBuild Projects="a2.sln" Properties="Configuration=Release"/>  
-    </Target>  
-</Project>  
-```  
+## <a name="properties-metadata"></a>Métadonnées Properties  
+ Lorsque vous générez plusieurs fichiers solution à l’aide de la [tâche MSBuild](../msbuild/msbuild-task.md), il est courant d’utiliser uniquement différentes configurations de build. Vous souhaiterez peut-être générer la solution a1 à l’aide de la configuration Debug, et la solution a2 à l’aide de la configuration Release. Dans [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 2.0, ce fichier projet ressemblerait à ce qui suit :  
   
- En utilisant les métadonnées Properties, vous pouvez pourtant simplifier ceci en une [MSBuild Task](../msbuild/msbuild-task.md) unique, comme indiqué ci\-après :  
+> [!NOTE]
+>  Dans l’exemple suivant, « ... » représente des fichiers solution supplémentaires.  
   
-### a.proj  
+### <a name="aproj"></a>a.proj  
   
-```  
-<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">  
-    <ItemGroup>  
-        <ProjectToBuild Include="a1.sln…">  
-            <Properties>Configuration=Debug</Properties>  
-        </ProjectToBuild>  
-        <ProjectToBuild Include="a2.sln">  
-            <Properties>Configuration=Release</Properties>  
-        </ProjectToBuild>  
-    </ItemGroup>  
-    <Target Name="Build">  
-        <MSBuild Projects="@(ProjectToBuild)"/>  
-    </Target>  
-</Project>  
-```  
-  
- \- ou \-  
-  
-```  
-<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">  
-    <ItemGroup>  
-        <ProjectToBuild Include="a1.sln…"/>  
-        <ProjectToBuild Include="a2.sln">  
-            <Properties>Configuration=Release</Properties>  
-        </ProjectToBuild>  
-    </ItemGroup>  
-    <Target Name="Build">  
-        <MSBuild Projects="@(ProjectToBuild)"   
-          Properties="Configuration=Debug"/>  
-    </Target>  
-</Project>  
-```  
-  
-## Métadonnées AdditionalProperties  
- Considérez le scénario suivant où vous générez deux fichiers solution à l'aide de la [MSBuild Task](../msbuild/msbuild-task.md), tous deux en configuration Release, mais un sur l'architecture x86 et l'autre sur l'architecture ia64.  Dans [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 2.0, vous devriez créer plusieurs instances de la [MSBuild Task](../msbuild/msbuild-task.md) : une pour générer le projet en configuration Release avec l'architecture x86, l'autre en configuration Release avec l'architecture ia64.  Votre fichier projet ressemblerait à ceci :  
-  
-### a.proj  
-  
-```  
+```xml  
 <Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">  
     <Target Name="Build">  
-        <MSBuild Projects="a1.sln…" Properties="Configuration=Release;   
-          Architecture=x86"/>  
-        <MSBuild Projects="a2.sln" Properties="Configuration=Release;   
-          Architecture=ia64"/>  
-    </Target>  
+        <MSBuild Projects="a1.sln..." Properties="Configuration=Debug"/>  
+        <MSBuild Projects="a2.sln" Properties="Configuration=Release"/>  
+    </Target>  
 </Project>  
 ```  
   
- En utilisant les métadonnées AdditionalProperties, vous pouvez simplifier ceci pour n'utiliser qu'une [MSBuild Task](../msbuild/msbuild-task.md) unique, de la manière suivante :  
+ En utilisant les métadonnées Properties, vous pouvez néanmoins simplifier cela pour utiliser une seule [tâche MSBuild](../msbuild/msbuild-task.md), comme indiqué ci-après :  
   
-### a.proj  
+### <a name="aproj"></a>a.proj  
   
-```  
+```xml  
 <Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">  
     <ItemGroup>  
-        <ProjectToBuild Include="a1.sln…">  
-            <AdditionalProperties>Architecture=x86  
+        <ProjectToBuild Include="a1.sln...">  
+            <Properties>Configuration=Debug</Properties>  
+        </ProjectToBuild>  
+        <ProjectToBuild Include="a2.sln">  
+            <Properties>Configuration=Release</Properties>  
+        </ProjectToBuild>  
+    </ItemGroup>  
+    <Target Name="Build">  
+        <MSBuild Projects="@(ProjectToBuild)"/>  
+    </Target>  
+</Project>  
+```  
+  
+ \- ou -  
+  
+```xml  
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">  
+    <ItemGroup>  
+        <ProjectToBuild Include="a1.sln..."/>  
+        <ProjectToBuild Include="a2.sln">  
+            <Properties>Configuration=Release</Properties>  
+        </ProjectToBuild>  
+    </ItemGroup>  
+    <Target Name="Build">  
+        <MSBuild Projects="@(ProjectToBuild)"   
+          Properties="Configuration=Debug"/>  
+    </Target>  
+</Project>  
+```  
+  
+## <a name="additionalproperties-metadata"></a>Métadonnées AdditionalProperties  
+ Considérez le scénario suivant où vous générez deux fichiers solution à l’aide de la [tâche MSBuild](../msbuild/msbuild-task.md), tous deux utilisant la configuration Release, mais l’un avec l’architecture x86 et l’autre avec l’architecture ia64. Dans [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 2.0, vous devriez créer plusieurs instances de la [tâche MSBuild](../msbuild/msbuild-task.md) : l’une pour générer le projet à l’aide de la configuration Release avec l’architecture x86, et l’autre à l’aide de la configuration Release avec l’architecture ia64. Votre fichier projet ressemblerait à ce qui suit :  
+  
+### <a name="aproj"></a>a.proj  
+  
+```xml  
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">  
+    <Target Name="Build">  
+        <MSBuild Projects="a1.sln..." Properties="Configuration=Release;   
+          Architecture=x86"/>  
+        <MSBuild Projects="a2.sln" Properties="Configuration=Release;   
+          Architecture=ia64"/>  
+    </Target>  
+</Project>  
+```  
+  
+ En utilisant les métadonnées AdditionalProperties, vous pouvez simplifier cela pour utiliser une seule [tâche MSBuild](../msbuild/msbuild-task.md) de la manière suivante :  
+  
+### <a name="aproj"></a>a.proj  
+  
+```xml  
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">  
+    <ItemGroup>  
+        <ProjectToBuild Include="a1.sln...">  
+            <AdditionalProperties>Architecture=x86  
               </AdditionalProperties>  
         </ProjectToBuild>  
         <ProjectToBuild Include="a2.sln">  
-            <AdditionalProperties>Architecture=ia64  
+            <AdditionalProperties>Architecture=ia64  
               </AdditionalProperties>  
-        </ProjectToBuild>  
-    </ItemGroup>  
+        </ProjectToBuild>  
+    </ItemGroup>  
     <Target Name="Build">  
-        <MSBuild Projects="@(ProjectToBuild)"   
+        <MSBuild Projects="@(ProjectToBuild)"   
           Properties="Configuration=Release"/>  
-    </Target>  
+    </Target>  
 </Project>  
 ```  
   
-## Exemple  
- L'exemple suivant utilise la tâche `MSBuild` pour générer les projets spécifiés par la collection d'éléments `ProjectReferences`.  Les sorties cibles résultantes sont stockées dans la collection d'éléments `AssembliesBuiltByChildProjects`.  
+## <a name="example"></a>Exemple  
+ L’exemple suivant utilise la tâche `MSBuild` pour générer les projets spécifiés par la collection d’éléments `ProjectReferences`. Les sorties cibles obtenues sont stockées dans la collection d’éléments `AssembliesBuiltByChildProjects`.  
   
-```  
+```xml  
 <Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">  
   
     <ItemGroup>  
@@ -188,6 +206,6 @@ Génère des projets [!INCLUDE[vstecmsbuild](../extensibility/internals/includes
 </Project>  
 ```  
   
-## Voir aussi  
- [Tasks](../msbuild/msbuild-tasks.md)   
- [Task Reference](../msbuild/msbuild-task-reference.md)
+## <a name="see-also"></a>Voir aussi  
+ [Tâches MSBuild](../msbuild/msbuild-tasks.md)   
+ [Task Reference (Informations de référence sur les tâches MSBuild)](../msbuild/msbuild-task-reference.md)

@@ -75,25 +75,29 @@ translation.priority.ht:
 - tr-tr
 - zh-cn
 - zh-tw
-translationtype: Human Translation
-ms.sourcegitcommit: ca7c86466fa23fb21a932f26dc24e37c71cf29b4
-ms.openlocfilehash: 07dfd26933090708cf40adff5f7ceb4785686245
-ms.lasthandoff: 04/05/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: 5ea9179ad37514ffad4876177b05150eecc22def
+ms.openlocfilehash: 1d273749cc41eb975dc9f93329edf9a57aaae09a
+ms.contentlocale: fr-fr
+ms.lasthandoff: 05/24/2017
 
 ---
-# <a name="manage-external-tools"></a>Gérer les outils externes
+# Gérer les outils externes
+<a id="manage-external-tools" class="xliff"></a>
 Vous pouvez appeler des outils externes depuis Visual Studio en utilisant le menu **Outils**. Certains outils par défaut sont disponibles dans le menu **Outils**, mais vous pouvez ajouter vos propres exécutables.  
 
-## <a name="tools-available-on-the-visual-studio-tools-menu"></a>Outils disponibles dans le menu Outils de Visual Studio
+## Outils disponibles dans le menu Outils de Visual Studio
+<a id="tools-available-on-the-visual-studio-tools-menu" class="xliff"></a>
  Le menu **Outils** contient plusieurs commandes prédéfinies comme :
 
 *  **Extensions et mises à jour** pour [gérer les extensions Visual Studio](finding-and-using-visual-studio-extensions.md)
 *  **Gestionnaire des extraits de code...** pour [organiser les extraits de code](code-snippets.md#code-snippet-manager)
 *  **PreEmptive Protection - Dotfuscator** pour lancer [Dotfuscator Community Edition (CE)](dotfuscator/index.md) s’il est [installé](dotfuscator/install.md)
-*  **Personnaliser...** pour [personnaliser les menus et les barres d’outils](how-to-customize-menus-and-toolbars-in-visual-studio)
+*  **Personnaliser...** pour [personnaliser les menus et les barres d’outils](how-to-customize-menus-and-toolbars-in-visual-studio.md)
 *  **Options...** pour [définir différentes options de l’IDE Visual Studio et d’autres outils](reference/options-dialog-box-visual-studio.md)
 
-## <a name="add-new-tools-to-the-tools-menu"></a>Ajouter de nouveaux outils au menu Outils 
+## Ajouter de nouveaux outils au menu Outils
+<a id="add-new-tools-to-the-tools-menu" class="xliff"></a> 
  Vous pouvez ajouter un outil externe au menu **Outils**. Ouvrez la boîte de dialogue **Outils externes...**, cliquez sur **Ajouter** puis entrez les informations. Par exemple, l'entrée suivante peut provoquer l'ouverture de l'Explorateur Windows dans le répertoire du fichier qui est actuellement ouvert dans Visual Studio :  
   
 1.  Titre : *Ouvrir l’emplacement du fichier*
@@ -126,6 +130,7 @@ Vous pouvez appeler des outils externes depuis Visual Studio en utilisant le men
 |Répertoire de la solution|$(SolutionDir)|Répertoire de la solution active (lecteur + chemin d'accès).|  
 |Nom du fichier solution|$(SolutionFileName)|Nom de fichier de la solution active (lecteur + chemin d’accès + nom de fichier).|  
 
-## <a name="see-also"></a>Voir aussi  
+## Voir aussi
+<a id="see-also" class="xliff"></a>  
  [Outils de génération C/C++](/cpp/build/reference/c-cpp-build-tools)
 

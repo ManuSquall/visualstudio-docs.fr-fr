@@ -28,10 +28,11 @@ translation.priority.mt:
 - pl-pl
 - pt-br
 - tr-tr
-translationtype: Human Translation
-ms.sourcegitcommit: f78e2b713e75c5601a07907e7f717db92571568b
-ms.openlocfilehash: b9e8ab5432e5c546776a61b364c0886d9f96c096
-ms.lasthandoff: 02/22/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: 47057e9611b824c17077b9127f8d2f8b192d6eb8
+ms.openlocfilehash: 48b5010ae161b2ce6ad22513afbca4a8e5fe82d3
+ms.contentlocale: fr-fr
+ms.lasthandoff: 05/13/2017
 
 ---
 # <a name="build-apps-with-native-ui-using-xamarin-in-visual-studio"></a>Générer des applications Xamarin avec une interface utilisateur native dans Visual Studio
@@ -76,11 +77,11 @@ Une fois que vous avez effectué les étapes dans [Configurer et installer](../c
   
 1.  Dans Visual Studio, créez une solution **Application vide (native portable)** et nommez-la **WeatherApp**. Vous pouvez trouver plus facilement ce modèle en entrant **native portable** dans le champ de recherche.  
   
-     S’il n’y figure pas, vous devrez peut-être installer Xamarin ou activer la fonctionnalité Visual Studio 2015. Consultez [Configurer et installer](../cross-platform/setup-and-install.md).  
+     S’il n’y figure pas, vous devez peut-être installer Xamarin ou activer la fonctionnalité Visual Studio 2015. Consultez [Configuration et installation](../cross-platform/setup-and-install.md).  
   
-2.  Après avoir cliqué sur OK pour créer la solution, vous avez un certain nombre de projets individuels :  
+2.  Après avoir cliqué sur OK pour créer la solution, vous obtenez un certain nombre de projets individuels :  
   
-    -   **WeatherApp (Portable)**: bibliothèque PCL où vous allez écrire du code qui est partagé entre les plateformes, notamment une logique métier commune et le code de l’interface utilisateur à l’aide de Xamarin.Forms.  
+    -   **WeatherApp (Portable)** : Bibliothèque PCL où vous écrivez du code partagé entre les plateformes, notamment une logique métier commune et le code de l’interface utilisateur à l’aide de Xamarin.Forms.  
   
     -   **WeatherApp.Droid**: projet qui contient le code Android natif. Ce projet est défini comme projet de démarrage par défaut.  
   
@@ -90,7 +91,7 @@ Une fois que vous avez effectué les étapes dans [Configurer et installer](../c
   
      Dans chaque projet natif, vous avez accès au concepteur natif pour la plateforme correspondante. Vous pouvez implémenter des écrans spécifiques à la plateforme.  
   
-3.  Ajoutez les packages NuGet et **Newtonsoft.Json** au projet de bibliothèque PCL, que vous allez utiliser pour traiter les informations récupérées à partir d’un service de données météo :  
+3.  Ajoutez les packages NuGet et **Newtonsoft.Json** au projet de bibliothèque PCL, que vous utilisez pour traiter les informations récupérées à partir d’un service de données météo :  
   
     -   Dans l’Explorateur de solutions, cliquez avec le bouton droit sur **Solution ‘WeatherApp’**, puis sélectionnez **Gérer les packages NuGet pour la solution**.  
   
@@ -111,13 +112,13 @@ Une fois que vous avez effectué les étapes dans [Configurer et installer](../c
 5.  Générez votre solution et vérifiez l’absence d’erreur de génération.  
   
 ##  <a name="dataservice"></a> Écrire le code de service de données partagé  
- Le projet **WeatherApp (Portable)** est l’emplacement où vous allez écrire du code pour la bibliothèque PCL partagée entre les plateformes. La bibliothèque PCL est automatiquement incluse dans les packages d’application générés par les projets iOS, Android et Windows Phone.  
+ C’est dans le projet **WeatherApp (Portable)** que vous écrivez du code pour la bibliothèque PCL partagée entre les plateformes. La bibliothèque PCL est automatiquement incluse dans les packages d’application générés par les projets iOS, Android et Windows Phone.  
   
  Les étapes suivantes permettent d’ajouter du code à la bibliothèque PCL pour accéder aux données de ce service météo et stocker ces données :  
   
 1.  Pour exécuter cet exemple, vous devez tout d’abord vous inscrire pour obtenir une clé API gratuite sur [http://openweathermap.org/appid](http://openweathermap.org/appid).  
   
-2.  Cliquez avec le bouton droit sur le projet **WeatherApp** et sélectionnez **Ajouter > Classe**. Dans la boîte de dialogue **Ajouter un nouvel élément** , nommez le fichier **Weather.cs**. Vous utiliserez cette classe pour stocker les données du service de données météo.  
+2.  Cliquez avec le bouton droit sur le projet **WeatherApp** et sélectionnez **Ajouter > Classe...**. Dans la boîte de dialogue **Ajouter un nouvel élément** , nommez le fichier **Weather.cs**. Vous utilisez cette classe pour stocker les données du service de données météo.  
   
 3.  Remplacez l’intégralité du contenu de **Weather.cs** par le code suivant :  
   
@@ -150,7 +151,7 @@ Une fois que vous avez effectué les étapes dans [Configurer et installer](../c
     }  
     ```  
   
-4.  Ajoutez une autre classe au projet de bibliothèque PCL nommée **DataService.cs** que vous allez utiliser pour traiter les données JSON du service de données météo.  
+4.  Ajoutez une autre classe au projet de bibliothèque PCL nommée **DataService.cs**, que vous utilisez pour traiter les données JSON du service de données météo.  
   
 5.  Remplacez l’intégralité du contenu de **DataService.cs** par le code suivant :  
   
@@ -181,7 +182,7 @@ Une fois que vous avez effectué les étapes dans [Configurer et installer](../c
     }  
     ```  
   
-6.  Ajoutez une troisième classe à la bibliothèque PCL nommée **Core** , où vous allez placer la logique métier partagée, telle que la logique qui forme une chaîne de requête avec un code postal, appelle le service de données météo, puis remplit une instance de la classe **Weather** .  
+6.  Ajoutez une troisième classe à la bibliothèque PCL nommée **Core**, où vous placez la logique métier partagée, comme la logique qui forme une chaîne de requête avec un code postal, appelle le service de données météo, puis remplit une instance de la classe **Weather** .  
   
 7.  Remplacez le contenu de **Core.cs** par le code suivant :  
   
@@ -298,8 +299,8 @@ Une fois que vous avez effectué les étapes dans [Configurer et installer](../c
   
     |Propriété|Valeur|  
     |--------------|-----------|  
-    |**text**|**Zip Code**|  
-    |**id**|`@+id/ZipCodeLabel`|  
+    |**texte**|**Code postal**|  
+    |**ID**|`@+id/ZipCodeLabel`|  
     |**layout_marginLeft**|`10dp`|  
     |**layout_marginTop**|`5dp`|  
   
@@ -320,7 +321,7 @@ Une fois que vous avez effectué les étapes dans [Configurer et installer](../c
   
     |Propriété|Valeur|  
     |--------------|-----------|  
-    |**id**|`@+id/zipCodeEntry`|  
+    |**ID**|`@+id/zipCodeEntry`|  
     |**layout_marginLeft**|`10dp`|  
     |**layout_marginBottom**|`10dp`|  
     |**width**|`165dp`|  
@@ -343,8 +344,8 @@ Une fois que vous avez effectué les étapes dans [Configurer et installer](../c
   
     |Propriété|Valeur|  
     |--------------|-----------|  
-    |**id**|`@+id/weatherBtn`|  
-    |**text**|**Get Weather**|  
+    |**ID**|`@+id/weatherBtn`|  
+    |**texte**|**Obtenir la météo**|  
     |**layout_marginLeft**|`20dp`|  
     |**layout_alignBottom**|`@id/zipCodeEntry`|  
     |**width**|`165dp`|  

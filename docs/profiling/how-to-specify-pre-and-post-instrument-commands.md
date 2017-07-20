@@ -34,10 +34,11 @@ translation.priority.mt:
 - pl-pl
 - pt-br
 - tr-tr
-translationtype: Human Translation
-ms.sourcegitcommit: 5db97d19b1b823388a465bba15d057b30ff0b3ce
-ms.openlocfilehash: f69134d056015f0208e7f5f8d0c7121bd0060223
-ms.lasthandoff: 02/22/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: 47057e9611b824c17077b9127f8d2f8b192d6eb8
+ms.openlocfilehash: afbc73dbeda9d8201d1ed0cfccdf80025fc82306
+ms.contentlocale: fr-fr
+ms.lasthandoff: 05/13/2017
 
 ---
 # <a name="how-to-specify-pre--and-post-instrument-commands"></a>Guide pratique pour spécifier des commandes de pré-instrumentation et de post-instrumentation
@@ -51,11 +52,11 @@ Vous pouvez spécifier des commandes qui s’exécutent avant ou après l’inst
   
  Le répertoire de travail dans lequel les commandes sont exécutées dépend du système d’exploitation où vous exécutez [!INCLUDE[vs_current_short](../code-quality/includes/vs_current_short_md.md)] et de la plateforme cible de l’application profilée.  
   
- **Ordinateurs&32; bits**  
+ **Ordinateurs 32 bits**  
   
  Sur les ordinateurs 32 bits, le répertoire des outils de profilage par défaut est Lecteur\Program Files\Microsoft Visual Studio 10.0\Team Tools\Performance Tools.  
   
- **Ordinateurs&64; bits**  
+ **Ordinateurs 64 bits**  
   
  Sur les ordinateurs 64 bits, spécifiez le chemin en fonction de la plateforme cible de l’application profilée :  
   
@@ -80,7 +81,7 @@ Vous pouvez spécifier des commandes qui s’exécutent avant ou après l’inst
 3.  Tapez la commande dans la zone de texte **Ligne de commande** sous **Événements de pré-instrumentation**.  
   
     > [!NOTE]
-    >  Vous pouvez cliquer sur le bouton de sélection **(...)** en regard de la zone **Ligne de commande** pour rechercher et sélectionner le fichier .exe, .cmd ou .bat approprié.  
+    >  Vous pouvez cliquer sur le bouton de sélection **(...)** à côté de la zone **Ligne de commande** pour rechercher et sélectionner le fichier .exe, .cmd ou .bat approprié.  
   
 4.  Cliquez sur **OK**.  
   
@@ -99,7 +100,7 @@ Vous pouvez spécifier des commandes qui s’exécutent avant ou après l’inst
 3.  Tapez la commande dans la zone de texte **Ligne de commande** sous **Événements de post-instrumentation**.  
   
     > [!NOTE]
-    >  Vous pouvez cliquer sur le bouton de sélection **(...)** en regard de la zone **Ligne de commande** pour rechercher et sélectionner le fichier .exe, .cmd ou .bat approprié.  
+    >  Vous pouvez cliquer sur le bouton de sélection **(...)** à côté de la zone **Ligne de commande** pour rechercher et sélectionner le fichier .exe, .cmd ou .bat approprié.  
   
 4.  Cliquez sur **OK**.  
   
