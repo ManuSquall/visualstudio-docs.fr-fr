@@ -1,7 +1,7 @@
 ---
 title: JavaScript IntelliSense | Microsoft Docs
 ms.custom: 
-ms.date: 11/04/2016
+ms.date: 06/28/2017
 ms.reviewer: 
 ms.suite: 
 ms.technology:
@@ -51,8 +51,7 @@ ms.contentlocale: fr-fr
 ms.lasthandoff: 07/11/2017
 
 ---
-# IntelliSense JavaScript
-<a id="javascript-intellisense" class="xliff"></a>
+# <a name="javascript-intellisense"></a>IntelliSense JavaScript
 [!include[vs_dev15](../misc/includes/vs_dev15_md.md)] procure une expérience d’édition JavaScript puissante et immédiate. Grâce à un service de langage TypeScript, Visual Studio offre des fonctionnalités IntelliSense plus riches, la prise en charge de fonctionnalités JavaScript modernes et des fonctionnalités de productivité améliorées, parmi lesquelles Atteindre la définition ou la refactorisation.
 
 > [!NOTE]
@@ -60,8 +59,7 @@ ms.lasthandoff: 07/11/2017
 
 Pour plus d’informations sur les fonctionnalités IntelliSense générales de [!INCLUDE[vs_current_short](../code-quality/includes/vs_current_short_md.md)], consultez [Utilisation de la fonctionnalité IntelliSense](../ide/using-intellisense.md). 
 
-## Nouveautés du service de langage JavaScript dans [!include[vs_dev15](../misc/includes/vs_dev15_md.md)]
-<a id="whats-new-in-the-javascript-language-service-in-includevsdev15miscincludesvsdev15mdmd" class="xliff"></a>
+## <a name="whats-new-in-the-javascript-language-service-in-includevsdev15miscincludesvsdev15mdmd"></a>Nouveautés du service de langage JavaScript dans [!include[vs_dev15](../misc/includes/vs_dev15_md.md)]
 
 JavaScript IntelliSense dans [!include[vs_dev15](../misc/includes/vs_dev15_md.md)] affiche désormais beaucoup plus d’informations sur les listes de paramètres et de membres.
 Ces nouvelles informations sont fournies par le service de langage TypeScript, qui utilise l’analyse statique en arrière-plan pour mieux comprendre votre code.
