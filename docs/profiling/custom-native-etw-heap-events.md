@@ -29,16 +29,17 @@ translation.priority.ht:
 - tr-tr
 - zh-cn
 - zh-tw
-translationtype: Human Translation
-ms.sourcegitcommit: 83fbf12dce91f79d537b574ea9903af5d6e61d1f
-ms.openlocfilehash: 0cc24f68ddef374f539c299d87cede8a13fac1a2
-ms.lasthandoff: 02/28/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: 795bf9746c4ae48ac04141a05ba56462ecb90482
+ms.openlocfilehash: afc044be4d63b7a292a6d94e360366913bd28883
+ms.contentlocale: fr-fr
+ms.lasthandoff: 06/23/2017
 
 ---
 
 # <a name="custom-native-etw-heap-events"></a>Événements de tas ETW natifs personnalisés
 
-Visual Studio contient de nombreux [outils de profilage et de diagnostic](https://docs.microsoft.com/en-us/visualstudio/profiling/profiling-tools), y compris un profileur de mémoire native.  Ce profileur raccorde les [événements ETW](https://msdn.microsoft.com/en-us/library/windows/desktop/aa363668(v=vs.85).aspx) à partir du fournisseur de tas et fournit une analyse indiquant comment la mémoire est allouée et utilisée.  Par défaut, cet outil peut uniquement analyser les allocations effectuées à partir du tas Windows standard, et aucune allocation en dehors de ce tas natif n’est affichée.
+Visual Studio contient de nombreux [outils de profilage et de diagnostic](https://docs.microsoft.com/en-us/visualstudio/profiling/profiling-tools), y compris un profileur de mémoire native.  Ce profileur raccorde les [événements ETW](/windows-hardware/drivers/devtest/event-tracing-for-windows--etw-) à partir du fournisseur de tas et fournit une analyse indiquant comment la mémoire est allouée et utilisée.  Par défaut, cet outil peut uniquement analyser les allocations effectuées à partir du tas Windows standard, et aucune allocation en dehors de ce tas natif n’est affichée.
 
 Il existe de nombreux cas dans lesquels vous souhaiterez utiliser votre propre tas personnalisé et éviter la surcharge d’allocation liée au tas standard.  Par exemple, vous pouvez utiliser [VirtualAlloc](https://msdn.microsoft.com/library/windows/desktop/aa366887(v=vs.85).aspx) pour allouer une grande quantité de mémoire au démarrage de l’application ou du jeu, puis gérer vos propres blocs dans cette liste.  Dans ce scénario, le profileur de mémoire voit uniquement cette allocation initiale, et pas la gestion personnalisée effectuée à l’intérieur du bloc de mémoire.  Toutefois, à l’aide du fournisseur ETW de tas natif personnalisé, vous pouvez laisser l’outil connaître toutes les allocations que vous effectuez en dehors du tas standard.
 

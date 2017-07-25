@@ -29,10 +29,10 @@ translation.priority.mt:
 - pt-br
 - tr-tr
 ms.translationtype: Human Translation
-ms.sourcegitcommit: 47057e9611b824c17077b9127f8d2f8b192d6eb8
-ms.openlocfilehash: 1464a7e654c68828e132e2d6973c9e558ebe23a5
+ms.sourcegitcommit: 6fbf89668d47d55d1d77a1d7f11765567fc73405
+ms.openlocfilehash: e5ed1f9b6771b489218d2c6118454f1070535b6d
 ms.contentlocale: fr-fr
-ms.lasthandoff: 05/13/2017
+ms.lasthandoff: 05/26/2017
 
 ---
 # <a name="application-lifecycle-management-alm-with-xamarin-apps"></a>Application Lifecycle Management (ALM) avec les applications Xamarin
@@ -81,7 +81,7 @@ Xamarin vous permet de générer des applications mobiles multiplateformes cibla
 |-------------|----------------------------|-------------------------|  
 |[Utiliser Team Foundation Version Control](http://msdn.microsoft.com/Library/1d629052-c65d-4c5d-81eb-eaa4413fe285) ou Visual Studio Team Services|Oui||  
 |[Bien démarrer avec Git dans Team Services](http://msdn.microsoft.com/Library/32f46ecd-1b03-4ef0-a9c4-8a120da2b03f)|Oui||  
-|[Analyse du code/Améliorer la qualité du code (références, suggestions de changement, etc.)](http://msdn.microsoft.com/Library/73baa961-c21f-43fe-bb92-3f59ae9b5945)|Oui||  
+|[Améliorer la qualité du code](/visualstudio/test/improve-code-quality)|Oui||  
 |[Rechercher les modifications de code et d’autres historiques](../ide/find-code-changes-and-other-history-with-codelens.md)|Oui|Sauf au-delà des limites spécifiques de la plateforme où l’implémentation n’est résolue qu’au moment de l’exécution.|  
 |[Utiliser des cartes de code pour déboguer vos applications](../modeling/use-code-maps-to-debug-your-applications.md)|Oui||  
   
@@ -109,7 +109,7 @@ Xamarin vous permet de générer des applications mobiles multiplateformes cibla
 |[Utiliser UI Automation pour tester votre code](../test/use-ui-automation-to-test-your-code.md)|Windows uniquement|L’enregistreur de test d’IU de Visual Studio est réservé à Windows. Pour toutes les plateformes, consultez [Xamarin Test Recorder](https://www.xamarin.com/test-cloud/recorder).|  
   
 ## <a name="improve-code-quality"></a>Améliorer la qualité du code  
- Lien de référence : **[Améliorer la qualité du code](http://msdn.microsoft.com/Library/73baa961-c21f-43fe-bb92-3f59ae9b5945)**  
+ Lien de référence : **[Améliorer la qualité du code](/visualstudio/test/improve-code-quality)**  
   
 |Fonctionnalité|Prise en charge par Xamarin|Commentaires supplémentaires|  
 |-------------|----------------------------|-------------------------|  

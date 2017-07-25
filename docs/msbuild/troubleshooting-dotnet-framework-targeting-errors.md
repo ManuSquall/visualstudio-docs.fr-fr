@@ -37,10 +37,10 @@ translation.priority.ht:
 - zh-cn
 - zh-tw
 ms.translationtype: Human Translation
-ms.sourcegitcommit: 47057e9611b824c17077b9127f8d2f8b192d6eb8
-ms.openlocfilehash: 23510bfb61028db6d62912066bc6f4756e8ec37e
+ms.sourcegitcommit: 8bf0b097be929b30627e0f1139c6e0b145933ab4
+ms.openlocfilehash: 0fb16d2625bde02a6370a1f06483d7b486c46f4a
 ms.contentlocale: fr-fr
-ms.lasthandoff: 05/13/2017
+ms.lasthandoff: 05/26/2017
 
 ---
 # <a name="troubleshooting-net-framework-targeting-errors"></a>Dépannage des erreurs de ciblage du .NET Framework
@@ -74,6 +74,6 @@ Cette rubrique décrit les erreurs MSBuild qui peuvent se produire en raison de 
   
 ## <a name="see-also"></a>Voir aussi  
  [Guide pratique pour cibler une version du .NET Framework](../ide/how-to-target-a-version-of-the-dotnet-framework.md)   
- [.NET Framework Client Profile](http://msdn.microsoft.com/Library/f0219919-1f02-4588-8704-327a62fd91f1)   
+ [.NET Framework Client Profile](/dotnet/framework/deployment/client-profile)   
  [Ciblage d’une version spécifique du .NET Framework](../ide/targeting-a-specific-dotnet-framework-version.md)   
  [Multiciblage](../msbuild/msbuild-multitargeting-overview.md)

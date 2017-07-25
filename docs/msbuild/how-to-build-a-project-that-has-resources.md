@@ -32,10 +32,11 @@ translation.priority.ht:
 - tr-tr
 - zh-cn
 - zh-tw
-translationtype: Human Translation
-ms.sourcegitcommit: 3ba7680d46345f2b49019659c715cfb418933d39
-ms.openlocfilehash: f0c10c20b96ebbbaaad4047349d7586b584b8b57
-ms.lasthandoff: 02/22/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: 3d32d11a430227800cb3ed53831a9565eb6adeb3
+ms.openlocfilehash: 641697cabee22a86e3b5ee7a360cbea154ead486
+ms.contentlocale: fr-fr
+ms.lasthandoff: 05/30/2017
 
 ---
 # <a name="how-to-build-a-project-that-has-resources"></a>Comment : générer un projet qui dispose de ressources
@@ -57,7 +58,7 @@ Si vous générez les versions localisées d’un projet, tous les éléments de
 ## <a name="example"></a>Exemple  
  L’exemple de code suivant montre comment l’élément `Output` spécifie que l’attribut `OutputResources` de la tâche `GenerateResource` contient les fichiers de ressources compilés `alpha.resources` et `beta.resources` et que ces deux fichiers sont placés dans la liste d’éléments `Resources`. En identifiant ces fichiers .resources comme collection d’éléments du même nom, vous pouvez les utiliser facilement comme entrées d’une autre tâche, par exemple la tâche [Csc](../msbuild/csc-task.md).  
   
- Cette tâche revient à utiliser le commutateur **/compiler** pour [Resgen.exe](http://msdn.microsoft.com/Library/8ef159de-b660-4bec-9213-c3fbc4d1c6f4) :  
+ Cette tâche revient à utiliser le commutateur **/compiler** pour [Resgen.exe](/dotnet/framework/tools/resgen-exe-resource-file-generator) :  
   
  `Resgen.exe /compile alpha.resx,alpha.resources /compile beta.txt,beta.resources`  
   
@@ -98,4 +99,4 @@ Si vous générez les versions localisées d’un projet, tous les éléments de
 [MSBuild](../msbuild/msbuild.md)  
  [GenerateResource Task (Tâche GenerateResource)](../msbuild/generateresource-task.md)   
  [Tâche Csc](../msbuild/csc-task.md)   
- [Resgen.exe (Resource File Generator)](http://msdn.microsoft.com/Library/8ef159de-b660-4bec-9213-c3fbc4d1c6f4)
+ [Resgen.exe (Resource File Generator)](/dotnet/framework/tools/resgen-exe-resource-file-generator)

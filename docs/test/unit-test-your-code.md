@@ -31,10 +31,10 @@ translation.priority.ht:
 - zh-cn
 - zh-tw
 ms.translationtype: Human Translation
-ms.sourcegitcommit: 47057e9611b824c17077b9127f8d2f8b192d6eb8
-ms.openlocfilehash: 1a47ab6e11e4c67713961078f125bb7abca23bb9
+ms.sourcegitcommit: 6fbf89668d47d55d1d77a1d7f11765567fc73405
+ms.openlocfilehash: 2e777b966cd332871533434728a6a565c51a5336
 ms.contentlocale: fr-fr
-ms.lasthandoff: 05/13/2017
+ms.lasthandoff: 05/26/2017
 
 ---
 # <a name="unit-test-your-code"></a>Tests unitaires sur votre code
@@ -101,6 +101,6 @@ Les tests unitaires offrent aux développeurs et aux testeurs une méthode rapid
  [Index de contenu des tests unitaires](http://go.microsoft.com/fwlink/?LinkID=254719)  
   
 ## <a name="see-also"></a>Voir aussi  
- [Améliorer la qualité du code](http://msdn.microsoft.com/Library/73baa961-c21f-43fe-bb92-3f59ae9b5945)   
+ [Améliorer la qualité du code](/visualstudio/test/improve-code-quality)   
  [Test de l’application](/devops-test-docs/test/test-apps-early-and-often)
 

@@ -33,10 +33,11 @@ translation.priority.ht:
 - tr-tr
 - zh-cn
 - zh-tw
-translationtype: Human Translation
-ms.sourcegitcommit: 5658ecf52637a38bc3c2a5ad9e85b2edebf7d445
-ms.openlocfilehash: a116306cdd3fc0cd636077bf2a0d6bc87b49e96b
-ms.lasthandoff: 02/22/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: 3d32d11a430227800cb3ed53831a9565eb6adeb3
+ms.openlocfilehash: e13a7e293038cf3a9b085d14e428767c561e5e3e
+ms.contentlocale: fr-fr
+ms.lasthandoff: 05/30/2017
 
 ---
 # <a name="vsinstr-warnings"></a>Avertissements VSInstr
@@ -45,7 +46,7 @@ Le tableau suivant répertorie les avertissements émis par l’outil VSInstr.ex
 |Numéro d’avertissement|Description|  
 |--------------------|-----------------|  
 |**VSP2000**|Erreur interne. Impossible d’obtenir le nom de fichier du module de cet exécutable.|  
-|**VSP2001**|\<nom_assembly> est un assembly à nom fort. Vous devrez le resigner avant de l’exécuter.<br /><br /> Cet avertissement se produit quand un assembly signé est instrumenté. Vous pouvez utiliser l’outil sn.exe pour resigner le fichier binaire ou désactiver temporairement la spécification de nom fort. Pour plus d’informations, consultez [Sn.exe (Strong Name Tool)](http://msdn.microsoft.com/Library/c1d2b532-1b8e-4c7a-8ac5-53b801135ec6).|  
+|**VSP2001**|\<nom_assembly> est un assembly à nom fort. Vous devrez le resigner avant de l’exécuter.<br /><br /> Cet avertissement se produit quand un assembly signé est instrumenté. Vous pouvez utiliser l’outil sn.exe pour resigner le fichier binaire ou désactiver temporairement la spécification de nom fort. Pour plus d’informations, consultez [Sn.exe (Strong Name Tool)](/dotnet/framework/tools/sn-exe-strong-name-tool).|  
 |**VSP2002**|Impossible de trouver la fonction \<nom_fonction> dans le fichier \<nom_fichier><br /><br /> Cet avertissement se produit si une fonction est introuvable dans le fichier spécifié.|  
 |**VSP2003**|Impossible de trouver des sauts croisés vers la fonction \<nom_fonction> dans le fichier \<nom_fichier>.<br /><br /> Cet avertissement se produit si VSInstr ne peut pas annuler les sauts croisés. Les sauts croisés sont utilisés pour optimiser le code.|  
 |**VSP2004**|La fonction \<nom_fonction> a été exclue à l’aide du commutateur de ligne de commande EXCLUDE mais était requise parce qu’elle contenait un saut croisé.<br /><br /> Cet avertissement se produit quand une fonction exigée pendant le processus d’instrumentation est exclue à l’aide de l’option EXCLUDE. Le profileur inclut automatiquement la fonction exigée.|  
