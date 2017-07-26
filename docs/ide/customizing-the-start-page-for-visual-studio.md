@@ -35,10 +35,11 @@ translation.priority.ht:
 - tr-tr
 - zh-cn
 - zh-tw
-translationtype: Human Translation
-ms.sourcegitcommit: d797017eb46f38a81f4d5ba6f1999457aa816d1c
-ms.openlocfilehash: 69cc33533afd449e50bfc3ecbc8384359253fabb
-ms.lasthandoff: 02/22/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: 5ea9179ad37514ffad4876177b05150eecc22def
+ms.openlocfilehash: 102091f8214b822a5b6be1c93f913d6ddbcd8d9b
+ms.contentlocale: fr-fr
+ms.lasthandoff: 05/24/2017
 
 ---
 # <a name="customize-the-start-page-for-visual-studio"></a>Personnaliser la page de démarrage de Visual Studio
@@ -74,5 +75,5 @@ Vous pouvez personnaliser la page de démarrage de Visual Studio de plusieurs fa
 >  Si une erreur dans une page de démarrage personnalisée provoque le blocage de Visual Studio, vous pouvez démarrer Visual Studio en mode sans erreur, puis le configurer pour utiliser la page de démarrage par défaut. Consultez [/SafeMode (devenv.exe)](../ide/reference/safemode-devenv-exe.md).  
 
 ## <a name="see-also"></a>Voir aussi  
- [Personnalisation des paramètres de développement dans Visual Studio](http://msdn.microsoft.com/en-us/22c4debb-4e31-47a8-8f19-16f328d7dcd3)   
+ [Personnaliser l’IDE Visual Studio](../ide/personalizing-the-visual-studio-ide.md)   
 

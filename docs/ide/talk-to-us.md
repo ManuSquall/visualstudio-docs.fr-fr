@@ -28,10 +28,11 @@ translation.priority.mt:
 - pl-pl
 - pt-br
 - tr-tr
-translationtype: Human Translation
-ms.sourcegitcommit: a42f5a30375192c89c9984e40ba0104da98d7253
-ms.openlocfilehash: d580064a03291aad49134674bd42413ae05e3e72
-ms.lasthandoff: 03/07/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: 47057e9611b824c17077b9127f8d2f8b192d6eb8
+ms.openlocfilehash: 99d1cfc816d5fd64367ff4524de89776ef25a4b8
+ms.contentlocale: fr-fr
+ms.lasthandoff: 05/13/2017
 
 ---
 # <a name="talk-to-us"></a>Nous contacter
@@ -64,7 +65,7 @@ Les services de support technique Microsoft sont soumis aux prix, modalités et 
  Si vous souhaitez partager vos questions et vos réponses avec d’autres développeurs, vous pouvez utiliser le site de la [Communauté de développeurs Visual Studio](https://developercommunity.visualstudio.com/index.html), les [Forums MSDN](http://social.msdn.microsoft.com/Forums/home) ou [StackOverflow](http://stackoverflow.com/). Vous pouvez aussi afficher le code d’autres développeurs et partager vos propres informations sur les sites web [Exemples de code pour développeurs](http://code.msdn.microsoft.com/) et [CodePlex](http://www.codeplex.com/) . Pour finir, vous pouvez partager votre expertise en répondant aux commentaires des clients dans la section Commentaires dans n’importe quelle page de Visual Studio sur [docs.microsoft.com](https://docs.microsoft.com/visualstudio/).
 
 ## <a name="i-want-to-help-improve-the-visual-studio-documentation"></a>Je souhaite aider à améliorer la documentation de Visual Studio  
-  Utilisez notre bouton Commentaires (**Cette page vous a-t-elle été utile ?**au bas de la page. Vous trouverez ce bouton dans toutes les pages de notre documentation. Si vous n’arrivez pas à trouver ce que vous cherchez, indiquez-nous les informations recherchées. (Vous pouvez également ajouter des commentaires à n’importe quelle page de Visual Studio sur [docs.microsoft.com](https://docs.microsoft.com/visualstudio/) à l’aide de la section Commentaires.)
+  Utilisez notre bouton Commentaires (**Cette page vous a-t-elle été utile ?**au bas de la page. Vous trouverez ce bouton dans toutes les pages de notre documentation. Si vous n’arrivez pas à obtenir de réponse, indiquez-nous les informations recherchées. (Vous pouvez également ajouter des commentaires à n’importe quelle page de Visual Studio sur [docs.microsoft.com](https://docs.microsoft.com/visualstudio/) à l’aide de la section Commentaires.)
 
 ## <a name="see-also"></a>Voir aussi  
  [Guide pratique pour signaler un problème avec Visual Studio](how-to-report-a-problem-with-visual-studio-2017.md)

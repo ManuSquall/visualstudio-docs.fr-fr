@@ -38,10 +38,11 @@ translation.priority.ht:
 - tr-tr
 - zh-cn
 - zh-tw
-translationtype: Human Translation
-ms.sourcegitcommit: 5658ecf52637a38bc3c2a5ad9e85b2edebf7d445
-ms.openlocfilehash: 4669932307d37593154e337265288919a1042f37
-ms.lasthandoff: 02/22/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: 3d32d11a430227800cb3ed53831a9565eb6adeb3
+ms.openlocfilehash: e4abacb0286de16c148076572e73043daed4d567
+ms.contentlocale: fr-fr
+ms.lasthandoff: 05/30/2017
 
 ---
 # <a name="signing-page-project-designer"></a>Page Signature, Concepteur de projets
@@ -83,7 +84,7 @@ Utilisez la page **Signature** du **Concepteur de projet** pour signer les manif
  Case à cocher **Signer l’assembly**.  
  Cochez cette case pour signer l’assembly et créer un fichier de clé de nom fort. Pour plus d’informations sur la signature d’assemblys à l’aide du **Concepteur de projet**, consultez [Comment : signer un assembly (Visual Studio)](http://msdn.microsoft.com/en-us/f468a7d3-234c-4353-924d-8e0ae5896564).  
   
- Cette option utilise l’outil Al.exe fourni par le [!INCLUDE[winsdklong](../../deployment/includes/winsdklong_md.md)] pour signer l’assembly. Pour plus d’informations sur Al.exe, consultez [Comment : signer un assembly avec un nom fort](http://msdn.microsoft.com/Library/2c30799a-a826-46b4-a25d-c584027a6c67).  
+ Cette option utilise l’outil Al.exe fourni par le [!INCLUDE[winsdklong](/dotnet/framework/app-domains/how-to-sign-an-assembly-with-a-strong-name).  
   
  Liste **Choisir un fichier de clé de nom fort**  
  Permet de spécifier un fichier de clé de nom fort nouveau ou existant pour signer l’assembly. Sélectionnez **\<Parcourir...>** pour sélectionner un fichier de clé existant.  
@@ -98,7 +99,7 @@ Utilisez la page **Signature** du **Concepteur de projet** pour signer les manif
  Case à cocher **Différer la signature uniquement**  
  Cochez cette case pour différer la signature.  
   
- Notez qu’un projet à signature différée ne s’exécute pas et ne peut pas être débogué. Toutefois, vous pouvez utiliser [Sn.exe (Strong Name Tool)](http://msdn.microsoft.com/Library/c1d2b532-1b8e-4c7a-8ac5-53b801135ec6) avec l’option `-Vr` pour ignorer l’étape de vérification pendant le développement.  
+ Notez qu’un projet à signature différée ne s’exécute pas et ne peut pas être débogué. Toutefois, vous pouvez utiliser [Sn.exe (Strong Name Tool)](/dotnet/framework/tools/sn-exe-strong-name-tool) avec l’option `-Vr` pour ignorer l’étape de vérification pendant le développement.  
   
 > [!NOTE]
 >  Lorsque vous signez un assembly, vous pouvez ne pas avoir accès à une clé privée. Par exemple, une entreprise peut avoir une paire de clés protégées auxquelles les développeurs n’ont pas accès tous les jours. La clé publique peut être disponible, mais l’accès à la clé privée est limité à quelques personnes. Dans ce cas, vous pouvez utiliser la *signature différée* ou la *signature partielle* pour fournir la clé publique, en différant l’ajout de la clé privée jusqu’à ce que l’assembly soit remis.  
@@ -109,5 +110,5 @@ Utilisez la page **Signature** du **Concepteur de projet** pour signer les manif
  [Signature avec nom fort pour les applications managées](http://msdn.microsoft.com/en-us/5fef3490-c519-4363-94fd-8b1ad260dab5)   
  [Guide pratique pour signer des manifestes d’application et de déploiement](../../ide/how-to-sign-application-and-deployment-manifests.md)   
  [Guide pratique pour signer un assembly (Visual Studio)](http://msdn.microsoft.com/en-us/f468a7d3-234c-4353-924d-8e0ae5896564)   
- [Guide pratique pour signer un assembly avec un nom fort](http://msdn.microsoft.com/Library/2c30799a-a826-46b4-a25d-c584027a6c67)   
+ [Guide pratique pour signer un assembly avec un nom fort](/dotnet/framework/app-domains/how-to-sign-an-assembly-with-a-strong-name)   
  [Assemblys avec nom fort](http://msdn.microsoft.com/Library/d4a80263-f3e0-4d81-9b61-f0cbeae3797b)

@@ -28,10 +28,11 @@ translation.priority.mt:
 - pl-pl
 - pt-br
 - tr-tr
-translationtype: Human Translation
+ms.translationtype: Human Translation
 ms.sourcegitcommit: 5db97d19b1b823388a465bba15d057b30ff0b3ce
 ms.openlocfilehash: d89b7cf0a81ed9987f8a09fb6e3139deb13f579e
-ms.lasthandoff: 02/22/2017
+ms.contentlocale: fr-fr
+ms.lasthandoff: 05/19/2017
 
 ---
 # <a name="step-10-write-code-for-additional-buttons-and-a-check-box"></a>Étape 10 : écrire du code pour les boutons supplémentaires et une case à cocher
@@ -48,8 +49,7 @@ Vous êtes maintenant prêt à générer les quatre autres méthodes. Vous pourr
   
 -   Ajoutez le code suivant à votre fichier de code Form1 (Form1.cs ou Form1.vb). Sélectionnez l’onglet **VB** pour afficher le code Visual Basic.  
   
-     [!code-vb[VbExpressTutorial1Step9_10#2](../ide/codesnippet/VisualBasic/step-10-write-code-for-additional-buttons-and-a-check-box_1.vb)]
-     [!code-cs[VbExpressTutorial1Step9_10#2](../ide/codesnippet/CSharp/step-10-write-code-for-additional-buttons-and-a-check-box_1.cs)]  
+     [!code-vb[VbExpressTutorial1Step9_10#2](../ide/codesnippet/VisualBasic/step-10-write-code-for-additional-buttons-and-a-check-box_1.vb)]  [!code-cs[VbExpressTutorial1Step9_10#2](../ide/codesnippet/CSharp/step-10-write-code-for-additional-buttons-and-a-check-box_1.cs)]  
   
 ### <a name="to-continue-or-review"></a>Pour continuer ou examiner  
   

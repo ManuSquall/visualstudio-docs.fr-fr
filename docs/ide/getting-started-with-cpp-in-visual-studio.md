@@ -28,14 +28,15 @@ translation.priority.mt:
 - pl-pl
 - pt-br
 - tr-tr
-translationtype: Human Translation
-ms.sourcegitcommit: c0966f42efc54452d0f7cd11e19c6f82f7686474
-ms.openlocfilehash: 079c15ffcc9b51fc1f4630051c561f9f8ff7fb87
-ms.lasthandoff: 02/22/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: 47057e9611b824c17077b9127f8d2f8b192d6eb8
+ms.openlocfilehash: 65b94b58da1e06febb1c189ddff85f792fef1737
+ms.contentlocale: fr-fr
+ms.lasthandoff: 05/13/2017
 
 ---
 # <a name="getting-started-with-c-in-visual-studio"></a>Bien démarrer avec C++ dans Visual Studio
-En suivant cette procédure pas à pas, vous allez vous familiariser avec la plupart des outils et boîtes de dialogue que vous pouvez utiliser lorsque vous développez des applications avec Visual Studio. Vous allez créer une simple application de type « Hello, World », tout en approfondissant votre connaissance de l’utilisation de l’IDE (environnement de développement intégré).  
+En suivant cette procédure pas à pas, vous allez vous familiariser avec la plupart des outils et boîtes de dialogue que vous pouvez utiliser lorsque vous développez des applications avec Visual Studio. Vous allez créer une simple application de type « Hello, World », tout en approfondissant votre connaissance de l’utilisation de l’IDE (environnement de développement intégré).  
   
  Cette rubrique contient les sections suivantes :  
   
@@ -47,10 +48,10 @@ En suivant cette procédure pas à pas, vous allez vous familiariser avec la plu
   
  [Déboguer et tester l’application](../ide/getting-started-with-cpp-in-visual-studio.md#BKMK_DebugTest)  
   
- [Générer une version Release de l’application](../ide/getting-started-with-cpp-in-visual-studio.md#BKMK_BuildRelease)  
+ [Générer une version release de l’application](../ide/getting-started-with-cpp-in-visual-studio.md#BKMK_BuildRelease)  
   
-##  <a name="a-namebkmkconfigurea-sign-in-to-visual-studio"></a><a name="BKMK_Configure"></a> Se connecter à Visual Studio  
- Lorsque vous démarrez Visual Studio pour la première fois, vous avez la possibilité de vous connecter à l’aide d’un compte Microsoft tel que Live ou Outlook. En vous connectant, vous autorisez la synchronisation de vos paramètres sur tous vos appareils. Pour plus d’informations, consultez [Connexion à Visual Studio](../ide/signing-in-to-visual-studio.md).  
+##  <a name="BKMK_Configure"></a> Se connecter à Visual Studio  
+ Lorsque vous démarrez Visual Studio pour la première fois, vous avez la possibilité de vous connecter à l’aide d’un compte Microsoft tel que Live ou Outlook. La connexion permet que vos paramètres soient synchronisés sur tous vos appareils. Pour plus d’informations, consultez [Signing in to Visual Studio](../ide/signing-in-to-visual-studio.md)  
   
  Figure 1 : IDE de Visual Studio  
   
@@ -58,7 +59,7 @@ En suivant cette procédure pas à pas, vous allez vous familiariser avec la plu
   
  Après avoir ouvert Visual Studio, vous pouvez voir les trois composants de base de l’IDE : les fenêtres Outil, les menus et les barres d’outils, ainsi que l’espace de la fenêtre principale. Les fenêtres Outil sont ancrées sur les côtés gauche et droit de la fenêtre d’application. **Lancement rapide**, la barre de menus et la barre d’outils standard se trouvent en haut. La **Page de démarrage**est située au centre de la fenêtre d’application. Lorsque vous ouvrez une solution ou un projet, les éditeurs et les concepteurs apparaissent dans cet espace. Lorsque vous développez une application, vous passez la majeure partie de votre temps dans cette zone centrale.  
   
-##  <a name="a-namebkmkcreateappa-create-a-simple-application"></a><a name="BKMK_CreateApp"></a> Créer une application simple  
+##  <a name="BKMK_CreateApp"></a> Créer une application simple  
  Lorsque vous créez une application dans Visual Studio, vous créez d’abord un projet et une solution. Dans cet exemple, vous allez créer une application console Windows.  
   
 #### <a name="to-create-a-console-app"></a>Pour créer une application console  
@@ -82,10 +83,10 @@ En suivant cette procédure pas à pas, vous allez vous familiariser avec la plu
   
  ![Fichiers pour la solution dans l’Explorateur de solutions](../ide/media/c--ide_solutioncontents.png "C++IDE_SolutionContents")  
   
-##  <a name="a-namebkmkaddcodea-add-code-to-the-application"></a><a name="BKMK_AddCode"></a> Ajouter du code à l’application  
+##  <a name="BKMK_AddCode"></a> Ajouter du code à l’application  
  Ensuite, vous ajouterez le code pour afficher le mot « Hello » dans la fenêtre de console.  
   
-#### <a name="to-display-hello-in-the-console-window"></a>Pour afficher « Hello » dans la fenêtre de console  
+#### <a name="to-display-hello-in-the-console-window"></a>Pour afficher « Hello » dans la fenêtre de la console  
   
 1.  Dans le fichier GreetingsConsoleApp.cpp, entrez une ligne vide avant la ligne `return 0;` , puis entrez le code suivant :  
   
@@ -108,7 +109,7 @@ En suivant cette procédure pas à pas, vous allez vous familiariser avec la plu
     using namespace std;  
     ```  
   
-     Vous avez probablement remarqué qu’une zone est apparue tandis que vous entriez le code et qu’elle vous a fourni des suggestions pour les caractères que vous tapiez. Cette zone fait partie de C++ IntelliSense, qui fournit des invites de codage, telles que la liste des membres de classe ou des membres d’interface et les informations de paramètre. Vous pouvez aussi utiliser des extraits de code, qui sont des blocs de code prédéfinis. Pour plus d’informations, consultez [Utilisation d’IntelliSense](../ide/using-intellisense.md) et [Extraits de code](../ide/code-snippets.md).  
+     Vous avez probablement remarqué qu’une zone est apparue tandis que vous entriez le code et qu’elle vous a fourni des suggestions pour les caractères que vous tapiez. Cette zone fait partie de C++ IntelliSense, qui fournit des invites de codage, telles que la liste des membres de classe ou des membres d’interface et les informations de paramètre. Vous pouvez aussi utiliser des extraits de code, qui sont des blocs de code prédéfinis. Pour plus d’informations, consultez [Using IntelliSense](../ide/using-intellisense.md) et [Code Snippets](../ide/code-snippets.md).  
   
      La ligne ondulée rouge sous `cout` disparaît lorsque vous corrigez l’erreur.  
   
@@ -116,7 +117,7 @@ En suivant cette procédure pas à pas, vous allez vous familiariser avec la plu
   
      ![Code qui corrige les erreurs cout](../ide/media/c--ide_coutfix.png "C++IDE_CoutFix")  
   
-##  <a name="a-namebkmkdebugtesta-debug-and-test-the-application"></a><a name="BKMK_DebugTest"></a> Déboguer et tester l’application  
+##  <a name="BKMK_DebugTest"></a> Déboguer et tester l’application  
  Vous pouvez déboguer GreetingsConsoleApp pour voir si le mot « Hello » s’affiche dans la fenêtre de console.  
   
 #### <a name="to-debug-the-application"></a>Pour déboguer l’application  
@@ -145,8 +146,8 @@ En suivant cette procédure pas à pas, vous allez vous familiariser avec la plu
   
  Pour plus d’informations, consultez [Projets console](../debugger/debugging-preparation-console-projects.md).  
   
-##  <a name="a-namebkmkbuildreleasea-build-a-release-version-of-the-app"></a><a name="BKMK_BuildRelease"></a> Générer une version Release de l’application  
- Maintenant que vous avez vérifié que tout fonctionne, vous pouvez préparer une version Release de l'application.  
+##  <a name="BKMK_BuildRelease"></a> Générer une version release de l’application  
+ Maintenant que vous avez vérifié que tout fonctionne correctement, vous pouvez préparer une build de version release de l’application.  
   
 #### <a name="to-clean-the-solution-files-and-build-a-release-version"></a>Pour nettoyer les fichiers solution et générer une version Release  
   

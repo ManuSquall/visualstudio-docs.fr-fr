@@ -1,7 +1,7 @@
 ---
 title: Extraits de code Visual C# | Microsoft Docs
 ms.custom: 
-ms.date: 11/04/2016
+ms.date: 06/05/2017
 ms.reviewer: 
 ms.suite: 
 ms.technology:
@@ -34,33 +34,34 @@ translation.priority.mt:
 - pl-pl
 - pt-br
 - tr-tr
-translationtype: Human Translation
-ms.sourcegitcommit: 5b6334c38a6c058f274498c06f8e07c934931910
-ms.openlocfilehash: 01c13c4e0c9107f07580fb1701f81eac74a5022f
-ms.lasthandoff: 03/22/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: 5f996aff0c247db658f3b9f1fec666792751ae11
+ms.openlocfilehash: 407ef81649de1c62d91d5a79535a8f9c67feb97c
+ms.contentlocale: fr-fr
+ms.lasthandoff: 06/06/2017
 
 ---
 # <a name="visual-c-code-snippets"></a>Extraits de code Visual C#
 Les extraits de code sont des extraits prêts à l’emploi que vous pouvez rapidement insérer dans votre code. Par exemple, l’extrait de code `for` crée une boucle `for` vide. Certains extraits de code sont des extraits « Entourer de ». Il vous permettent de sélectionner des lignes de code, puis de choisir un extrait de code qui incorpore les lignes sélectionnées. Par exemple, quand vous sélectionnez des lignes de code et que vous activez l’extrait de code `for`, cela crée une boucle `for` avec ces lignes de code dans le bloc de boucle. Les extraits de code peuvent accélérer, simplifier et fiabiliser l’écriture de code de programme.  
-  
+
  Vous pouvez insérer un extrait de code à l’emplacement du curseur, ou insérer un extrait de code « Entourer de » autour du code actuellement sélectionné. L’outil d’insertion d’extraits de code est appelé par le biais de la commande **Insérer un extrait de code** ou **Entourer de** du menu **IntelliSense**, ou à l’aide des raccourcis clavier Ctrl+K puis X, ou Ctrl+K puis S, respectivement.  
-  
+
  L’outil d’insertion d’extraits de code affiche le nom de l’extrait de code pour tous les extraits de code disponibles. Il inclut également une boîte de dialogue d’entrée où vous pouvez taper le nom de l’extrait de code, ou une partie du nom. Il met en évidence la correspondance la plus proche avec un nom d’extrait de code. Une pression sur la touche Tab à tout moment fait disparaître l’outil d’insertion d’extraits de code et insère l’extrait de code sélectionné. Une pression sur la touche Échap ou un clic sur le bouton de la souris dans l’Éditeur de code fait disparaître l’outil d’insertion d’extraits de code sans insérer d’extrait de code.  
-  
+
 ## <a name="default-code-snippets"></a>Extraits de code par défaut  
  Par défaut, les extraits de code suivants sont inclus dans Visual Studio.  
-  
+
 |Nom (ou raccourci)|Description|Emplacements valides où insérer l’extrait de code|  
 |--------------------------|-----------------|---------------------------------------|  
 |#if|Crée une directive [#if](/dotnet/csharp/language-reference/preprocessor-directives/preprocessor-if) et une directive [#endif](/dotnet/csharp/language-reference/preprocessor-directives/preprocessor-endif).|N’importe où.|  
 |#region|Crée une directive [#region](/dotnet/csharp/language-reference/preprocessor-directives/preprocessor-region) et une directive [#endregion](/dotnet/csharp/language-reference/preprocessor-directives/preprocessor-endregion).|N’importe où.|  
 |~|Crée un destructeur pour la classe conteneur.|Dans une classe.|  
-|attribute|Crée une déclaration pour une classe qui dérive de <xref:System.Attribute>.|Dans un espace de noms (notamment l’espace de noms global), une classe ou un struct.|  
+|Attribut|Crée une déclaration pour une classe qui dérive de <xref:System.Attribute>.|Dans un espace de noms (notamment l’espace de noms global), une classe ou un struct.|  
 |checked|Crée un bloc [checked](/dotnet/csharp/language-reference/keywords/checked).|Dans une méthode, un indexeur, un accesseur de propriété ou un accesseur d’événement.|  
 |class|Crée une déclaration de classe.|Dans un espace de noms (notamment l’espace de noms global), une classe ou un struct.|  
 |ctor|Crée un constructeur pour la classe conteneur.|Dans une classe.|  
 |cw|Crée un appel à <xref:System.Console.WriteLine%2A>.|Dans une méthode, un indexeur, un accesseur de propriété ou un accesseur d’événement.|  
-|do|Crée une boucle [do](/dotnet/csharp/language-reference/keywords/do)`while`.|Dans une méthode, un indexeur, un accesseur de propriété ou un accesseur d’événement.|  
+|do|Crée une boucle [do](/dotnet/csharp/language-reference/keywords/do) `while`.|Dans une méthode, un indexeur, un accesseur de propriété ou un accesseur d’événement.|  
 |else|Crée un bloc [else](/dotnet/csharp/language-reference/keywords/if-else).|Dans une méthode, un indexeur, un accesseur de propriété ou un accesseur d’événement.|  
 |enum|Crée une déclaration [enum](/dotnet/csharp/language-reference/keywords/enum).|Dans un espace de noms (notamment l’espace de noms global), une classe ou un struct.|  
 |equals|Crée une déclaration de méthode qui substitue la méthode <xref:System.Object.Equals%2A> définie dans la classe <xref:System.Object>.|Dans une classe ou un struct.|  
@@ -78,11 +79,11 @@ Les extraits de code sont des extraits prêts à l’emploi que vous pouvez rapi
 |mbox|Crée un appel à <xref:System.Windows.Forms.MessageBox.Show%2A?displayProperty=fullName>. Vous devrez peut-être ajouter une référence à System.Windows.Forms.dll.|Dans une méthode, un indexeur, un accesseur de propriété ou un accesseur d’événement.|  
 |namespace|Crée une déclaration [namespace](/dotnet/csharp/language-reference/keywords/namespace).|Dans un espace de noms (notamment l’espace de noms global).|  
 |prop|Crée une déclaration de [propriété implémentée automatiquement](/dotnet/csharp/programming-guide/classes-and-structs/auto-implemented-properties).|Dans une classe ou un struct.|  
-propfull|Crée une déclaration de propriété avec des accesseurs get et set.|Dans une classe ou un struct.|  
-|propg|Crée une [propriété implémentée automatiquement](/dotnet/csharp/programming-guide/classes-and-structs/auto-implemented-properties) en lecture seule avec un accesseur « set » privé.|Dans une classe ou un struct.|  
-|sim|Crée une déclaration de méthode Main [static](/dotnet/csharp/language-reference/keywords/static)[int](/dotnet/csharp/language-reference/keywords/int).|Dans une classe ou un struct.|  
+|propfull|Crée une déclaration de propriété avec des accesseurs `get` et `set`.|Dans une classe ou un struct.|  
+|propg|Crée une [propriété implémentée automatiquement](/dotnet/csharp/programming-guide/classes-and-structs/auto-implemented-properties) en lecture seule avec un accesseur `set` private.|Dans une classe ou un struct.|  
+|sim|Crée une déclaration de méthode Main [static](/dotnet/csharp/language-reference/keywords/static) [int](/dotnet/csharp/language-reference/keywords/int).|Dans une classe ou un struct.|  
 |struct|Crée une déclaration [struct](/dotnet/csharp/language-reference/keywords/struct).|Dans un espace de noms (notamment l’espace de noms global), une classe ou un struct.|  
-|svm|Crée une déclaration de méthode Main [static](/dotnet/csharp/language-reference/keywords/static)[void](/dotnet/csharp/language-reference/keywords/void).|Dans une classe ou un struct.|  
+|svm|Crée une déclaration de méthode Main [static](/dotnet/csharp/language-reference/keywords/static) [void](/dotnet/csharp/language-reference/keywords/void).|Dans une classe ou un struct.|  
 |switch|Crée un bloc [switch](/dotnet/csharp/language-reference/keywords/switch).|Dans une méthode, un indexeur, un accesseur de propriété ou un accesseur d’événement.|  
 |try|Crée un bloc [try-catch](/dotnet/csharp/language-reference/keywords/try-catch).|Dans une méthode, un indexeur, un accesseur de propriété ou un accesseur d’événement.|  
 |tryf|Crée un bloc [try-finally](/dotnet/csharp/language-reference/keywords/try-finally).|Dans une méthode, un indexeur, un accesseur de propriété ou un accesseur d’événement.|  
@@ -90,12 +91,10 @@ propfull|Crée une déclaration de propriété avec des accesseurs get et set.|D
 |unsafe|Crée un bloc [unsafe](/dotnet/csharp/language-reference/keywords/unsafe).|Dans une méthode, un indexeur, un accesseur de propriété ou un accesseur d’événement.|  
 |using|Crée une directive [using](/dotnet/csharp/language-reference/keywords/using-directive).|Dans un espace de noms (notamment l’espace de noms global).|  
 |while|Crée une boucle [while](/dotnet/csharp/language-reference/keywords/while).|Dans une méthode, un indexeur, un accesseur de propriété ou un accesseur d’événement.|  
-  
+
 ## <a name="see-also"></a>Voir aussi  
  [Fonctions des extraits de code](../ide/code-snippet-functions.md)   
  [Extraits de code](../ide/code-snippets.md)   
- [Guide pratique pour créer un nouvel extrait de code avec remplacements](http://msdn.microsoft.com/en-us/8d56d43c-097a-475b-aa85-cae1554b6338)   
  [Paramètres de modèle](../ide/template-parameters.md)   
  [Guide pratique pour utiliser des extraits de code Entourer de](../ide/how-to-use-surround-with-code-snippets.md)   
- 
 

@@ -31,10 +31,11 @@ translation.priority.ht:
 - tr-tr
 - zh-cn
 - zh-tw
-translationtype: Human Translation
-ms.sourcegitcommit: 5db97d19b1b823388a465bba15d057b30ff0b3ce
-ms.openlocfilehash: 2ce4f6545e3497b829234a6f21983a406059d3e0
-ms.lasthandoff: 02/22/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: 5ea9179ad37514ffad4876177b05150eecc22def
+ms.openlocfilehash: 99f7756369fe4848fc5641009e95bbba23c95227
+ms.contentlocale: fr-fr
+ms.lasthandoff: 05/24/2017
 
 ---
 # <a name="visual-c-intellisense"></a>Visual C# IntelliSense
@@ -53,7 +54,7 @@ Visual C# IntelliSense est disponible quand vous écrivez du code dans l’édi
   
 -   [Méthodes d’extension](#ExtensionMethods)  
   
- La liste de saisie semi-automatique en C# est également assez intelligente pour éliminer les jetons inappropriés et présélectionner un jeton selon le contexte. Pour plus d’informations, consultez [Listes de saisie semi-automatique filtrées en C#](../misc/filtered-completion-lists-in-csharp.md) et [Éléments présélectionnés d’une liste de saisie semi-automatique en C#](../misc/pre-selected-completion-list-items-in-csharp.md).  
+ La liste de saisie semi-automatique en C# est également assez intelligente pour éliminer les jetons inappropriés et présélectionner un jeton selon le contexte. Pour plus d’informations, consultez [Listes de saisie semi-automatique filtrées](#filtered-completion-lists).  
   
 ###  <a name="CodeSnippets"></a> Extraits de code dans les listes de saisie semi-automatique  
  Dans Visual C#, la liste de saisie semi-automatique comprend des extraits de code pour vous aider à insérer facilement des entités prédéfinies de code dans votre programme. Les extraits de code apparaissent dans la liste de saisie semi-automatique en tant qu’[éléments Shortcut (extraits de code Intellisense)](http://msdn.microsoft.com/en-us/052cc97a-5c70-42f8-b398-4c3adf670cfa) de l’extrait de code.  Pour plus d’informations sur les extraits de code fournis par défaut en Visual C#, consultez [Extraits de code Visual C#](../ide/visual-csharp-code-snippets.md).  
@@ -65,18 +66,18 @@ Visual C# IntelliSense est disponible quand vous écrivez du code dans l’édi
  Dans Visual C#, la liste de saisie semi-automatique inclut les méthodes d’extension qui sont dans la portée.  
   
 > [!NOTE]
->  La liste de saisie semi-automatique n’affiche pas toutes les méthodes d’extension pour les objets <xref:System.String>.  
+>  La liste de saisie semi-automatique n'affiche pas toutes les méthodes d'extension pour les objets <xref:System.String>.  
   
  Les méthodes d’extension utilisent une icône différente de celle des méthodes d’instance. Pour obtenir la liste des icônes de liste, consultez [Icônes de l’Explorateur d’objets et de la fenêtre Affichage de classes](../ide/class-view-and-object-browser-icons.md). Quand une méthode d’instance et une méthode d’extension portant le même nom sont toutes deux dans la portée, la liste de saisie semi-automatique affiche l’icône de la méthode d’extension.  
   
-### <a name="filtered-completion-lists"></a>Listes de saisie semi-automatique filtrées  
+### <a name="filtered-completion-lists"></a> Listes de saisie semi-automatique filtrées  
  IntelliSense supprime les membres inutiles de la liste de saisie semi-automatique à l'aide de filtres.  
   
  Visual C# filtre les listes de saisie semi-automatique qui apparaissent pour les éléments suivants :  
   
 -   **Interfaces et classes de base**. IntelliSense supprime automatiquement les éléments dans les listes de saisie semi-automatique des interfaces et des classes de base, à la fois dans les listes d'interface et de classe de base de déclaration, et dans les listes de contraintes. Par exemple, les enums n'apparaissent pas dans la liste de saisie semi-automatique pour les classes de base, car les enums ne peuvent pas être utilisés pour les classes de base. La liste de saisie semi-automatique des classes de base contient uniquement des interfaces et des espaces de noms. Si vous sélectionnez un élément dans la liste et que vous tapez une virgule, IntelliSense supprime les classes de base de la liste de saisie semi-automatique car Visual C# ne prend pas en charge l'héritage multiple. Le même comportement se produit également pour les clauses de contrainte.  
   
--   **Attributs** : quand vous appliquez un attribut à un type, la liste de saisie semi-automatique est filtrée afin de répertorier uniquement les types qui descendent des espaces de noms qui contiennent ces types, tels que <xref:System.Attribute>.  
+-   **Attributs** : quand vous appliquez un attribut à un type, la liste de saisie semi-automatique est filtrée afin de répertorier uniquement les types qui descendent des espaces de noms qui contiennent ces types, comme <xref:System.Attribute>.  
   
 -   Opérateurs `as` et `is`  
   
@@ -85,6 +86,8 @@ Visual C# IntelliSense est disponible quand vous écrivez du code dans l’édi
 -   **Initialiseurs d’objets** : seuls les membres qui peuvent être initialisés apparaissent dans la liste de saisie semi-automatique.  
   
 -   **Mot clé new** : quand vous tapez `new` et appuyez sur la barre d’espace, une liste de saisie semi-automatique s’affiche. Un élément est sélectionné automatiquement dans la liste en fonction du contexte de votre code. Par exemple, des éléments sont automatiquement sélectionnés dans la liste de saisie semi-automatique pour les déclarations et pour les instructions return dans les méthodes.  
+  
+-   **Mot clé enum** : quand vous appuyez sur la barre d’espace après un signe égal pour une assignation enum, une liste de saisie semi-automatique apparaît. Un élément est sélectionné automatiquement dans la liste en fonction du contexte de votre code. Par exemple, des éléments sont automatiquement sélectionnés dans la liste de saisie semi-automatique quand vous tapez le mot clé return et quand vous effectuez une déclaration.  
   
 -   **Opérateurs as et is** : une liste de saisie semi-automatique filtrée s’affiche automatiquement quand vous appuyez sur la barre d’espace après avoir tapé le mot clé `as` ou `is`.  
   
@@ -125,6 +128,8 @@ Visual C# IntelliSense est disponible quand vous écrivez du code dans l’édi
  IntelliSense fournit une option qui vous aidera à implémenter automatiquement les membres d'une classe de base abstraite pendant que vous travaillez dans l'éditeur de code. Normalement, pour implémenter les membres d'une classe de base abstraite, il est nécessaire de créer une nouvelle définition de méthode pour chaque méthode de la classe de base abstraite dans votre classe dérivée. Grâce à IntelliSense, après avoir tapé le nom d'une classe de base abstraite dans une déclaration de classe, une balise active apparaît. Cette balise active vous permet d'implémenter automatiquement les méthodes de la classe de base.  
   
  Les stubs de méthode générés par la fonctionnalité Implémenter une classe de base abstraite sont modélisés par l'extrait de code défini dans le fichier MethodStub.snippet. Les extraits de code sont modifiables. Pour plus d’informations, consultez [Procédure pas à pas : création d’un extrait de code](../ide/walkthrough-creating-a-code-snippet.md).  
+  
+<a name="generate-from-usage></a>  
   
 ### <a name="generate-from-usage"></a>Générer à partir de l'utilisation  
  La fonctionnalité **Générer à partir de l’utilisation** permet d’utiliser des classes et des membres avant de les définir. Vous pouvez générer un stub pour une classe, un constructeur, une méthode, une propriété, un champ ou une énumération quelconque que vous souhaitez utiliser, mais que vous n'avez pas encore défini. Vous pouvez générer de nouveaux types et membres sans quitter votre emplacement actuel dans le code. Cette opération réduit l'interruption de votre flux de travail.  
@@ -169,8 +174,6 @@ Visual C# IntelliSense est disponible quand vous écrivez du code dans l’édi
   
 > [!NOTE]
 >  Utilisez la commande **Naviguer vers l’arrière** du menu **Affichage** (Ctrl + -) pour revenir à l’instruction de connexion d’événements.  
-  
- La tâche suivante montre comment IntelliSense connecte automatiquement un gestionnaire d'événements nommé `button1_Click` à un champ d'événement nommé `button1.Click`.  
   
 ## <a name="see-also"></a>Voir aussi  
  [IDE Visual Studio](../ide/visual-studio-ide.md)

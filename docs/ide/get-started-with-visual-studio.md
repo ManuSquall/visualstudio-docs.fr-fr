@@ -31,15 +31,16 @@ translation.priority.mt:
 - pl-pl
 - pt-br
 - tr-tr
-translationtype: Human Translation
-ms.sourcegitcommit: a42f5a30375192c89c9984e40ba0104da98d7253
-ms.openlocfilehash: 15f7678c7d0cba1afaa71e0443efc756880d99cc
-ms.lasthandoff: 03/07/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: 47057e9611b824c17077b9127f8d2f8b192d6eb8
+ms.openlocfilehash: 078619c93e18fd25dfbc728d75835f5af58988fe
+ms.contentlocale: fr-fr
+ms.lasthandoff: 05/13/2017
 
 ---
 # <a name="get-started-with-visual-studio"></a>Bien démarrer avec Visual Studio
 
-Visual Studio est un outil puissant pour développer vos applications. Si ce n’est déjà fait, téléchargez et installez [Visual Studio](https://www.visualstudio.com/vs/). Regardez la vidéo sur le [démarrage de Visual Studio et la configuration de votre IDE](https://www.youtube.com/watch?v=xLCedknQkN0&list=PLReL099Y5nRfw6VNvzMkv0sabT2crbSpK&index=1) pour plus d’informations sur le téléchargement et la configuration de Visual Studio.
+Visual Studio est un outil puissant pour développer vos applications. Si ce n’est déjà fait, téléchargez et installez [Visual Studio](https://www.visualstudio.com/vs/). Regardez la vidéo sur la [mise en route de Visual Studio et la configuration de votre environnement de développement intégré](https://www.youtube.com/watch?v=xLCedknQkN0&list=PLReL099Y5nRfw6VNvzMkv0sabT2crbSpK&index=1) pour plus d’informations sur le téléchargement et la configuration de Visual Studio.
 
 ## <a name="visual-studio-tour"></a>Visite guidée de Visual Studio
 Visual Studio comporte un groupe de fenêtres d’outils, de menus et de barres d’outils collectivement appelés « environnement de développement intégré » ou IDE. L’IDE Visual Studio vous permet d’accomplir vos tâches de développement. Voici un aperçu des éléments de l’IDE que vous utiliserez probablement le plus souvent.
@@ -55,7 +56,7 @@ Certains types de solutions peuvent inclure des fenêtres appelées *formulaires
 
 ### <a name="solution-explorer"></a>Explorateur de solutions
 
-Une fenêtre d’outils appelée **Explorateur de solutions** répertorie tous les fichiers de votre code. L’Explorateur de solutions peut vous aider à organiser votre code en regroupant ses fichiers dans des projets et des solutions. Le projet en gras est appelé *projet de démarrage*. C’est le premier code qui s’exécute quand vous démarrez votre solution. Vous pouvez modifier le projet de démarrage. Pour plus d’informations, regardez la vidéo sur le [démarrage de Visual Studio et les composantes de l’IDE)](https://www.youtube.com/watch?v=JHc3_gsCmZg&index=2&list=PLReL099Y5nRfw6VNvzMkv0sabT2crbSpK).
+Une fenêtre d’outils appelée **Explorateur de solutions** répertorie tous les fichiers de votre code. L’Explorateur de solutions peut vous aider à organiser votre code en regroupant ses fichiers dans des projets et des solutions. Le projet en gras est appelé *projet de démarrage*. Il s’agit du premier code qui s’exécute quand vous démarrez votre solution. Vous pouvez modifier le projet de démarrage. Pour plus d’informations, regardez la vidéo sur la [mise en route de Visual Studio et les composantes de l’environnement de développement intégré](https://www.youtube.com/watch?v=JHc3_gsCmZg&index=2&list=PLReL099Y5nRfw6VNvzMkv0sabT2crbSpK).
 
 ![Nœuds réduits dans l’Explorateur de solutions](../ide/media/VSIDE_SolutionExplorer2_callouts.png)
 
@@ -79,7 +80,7 @@ Notez que les commandes de menu et les icônes de barre d’outils peuvent chang
 ### <a name="team-explorer"></a>Team Explorer
 **Team Explorer** vous permet de vous connecter à des outils de contrôle de code source tels que [Git](https://git-scm.com/) et [Team Foundation Version Control (TFVC)](https://www.visualstudio.com/en-us/docs/tfvc/overview) pour stocker votre code localement ou le partager avec d’autres utilisateurs sur un service hébergé. Vous pouvez également l’utiliser pour effectuer le suivi des tâches et bien plus encore.
 
-Pour plus d’informations, regardez les vidéos sur le [démarrage de Visual Studio et les composantes de l’IDE](https://www.youtube.com/watch?v=JHc3_gsCmZg&index=2&list=PLReL099Y5nRfw6VNvzMkv0sabT2crbSpK) et sur le [démarrage de Visual Studio et l’ouverture d’un projet à partir du contrôle de code Source](https://www.youtube.com/watch?v=pc9vX_4RGV4&list=PLReL099Y5nRfw6VNvzMkv0sabT2crbSpK&index=3).
+Pour plus d’informations, regardez les vidéos sur la [mise en route de Visual Studio et les composantes de l’environnement de développement intégré](https://www.youtube.com/watch?v=JHc3_gsCmZg&index=2&list=PLReL099Y5nRfw6VNvzMkv0sabT2crbSpK) et sur la [mise en route de Visual Studio et l’ouverture d’un projet à partir du contrôle de code source](https://www.youtube.com/watch?v=pc9vX_4RGV4&list=PLReL099Y5nRfw6VNvzMkv0sabT2crbSpK&index=3).
 
 ![Team Explorer](../ide/media/TeamExplorer.png)
 

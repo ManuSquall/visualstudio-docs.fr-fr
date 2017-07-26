@@ -1,30 +1,47 @@
 ---
-title: "Propri&#233;t&#233;s d&#39;une application | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-general"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-helpviewer_keywords: 
-  - "Application (page dans le Concepteur de projets)"
-  - "propriétés de l'application (Visual Studio)"
-  - "Concepteur de projets, Application (page)"
+title: "Propriétés des applications | Microsoft Docs"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology:
+- vs-ide-general
+ms.tgt_pltfrm: 
+ms.topic: article
+helpviewer_keywords:
+- application properties [Visual Studio]
+- Project Designer, Application page
+- Application page in Project Designer
 ms.assetid: 0ad4926f-636e-41f8-a5b1-faf9d9b0a254
 caps.latest.revision: 20
-author: "kempb"
-ms.author: "kempb"
-manager: "ghogen"
-caps.handback.revision: 20
----
-# Propri&#233;t&#233;s d&#39;une application
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
+author: kempb
+ms.author: kempb
+manager: ghogen
+translation.priority.ht:
+- cs-cz
+- de-de
+- es-es
+- fr-fr
+- it-it
+- ja-jp
+- ko-kr
+- pl-pl
+- pt-br
+- ru-ru
+- tr-tr
+- zh-cn
+- zh-tw
+ms.translationtype: Human Translation
+ms.sourcegitcommit: 7e372d9d6d935ff40054b8ba3f7684bf5ea9c458
+ms.openlocfilehash: 3274157b4463c902bc14fe077f1b8d2ca022170c
+ms.contentlocale: fr-fr
+ms.lasthandoff: 06/22/2017
 
-Vous pouvez définir les propriétés générales des applications Visual Basic, C\# et F\#, telles que le type d'application, l'objet de démarrage et les informations de l'assembly, dans le volet **Application** du **Concepteur de projets**.  
+---
+# <a name="application-properties"></a>Propriétés des applications
+Vous pouvez définir les propriétés générales des applications Visual Basic, C# et F#, telles que le type d’application, l’objet de démarrage et les informations de l’assembly, dans le volet **Application** du **Concepteur de projet**.  
   
- Les tâches suivantes peuvent être effectuées dans le volet **Application** :  
+ Vous pouvez effectuer les tâches suivantes dans le volet **Application** :  
   
 -   Spécifier les informations de l'assembly  
   
@@ -32,13 +49,13 @@ Vous pouvez définir les propriétés générales des applications Visual Basic,
   
 -   Spécifier les événements de niveau application  
   
--   Modifier le nom de l'assembly  
+-   Changer le nom de l'assembly  
   
--   Modifier l'espace de noms pour une application  
+-   Changer l’espace de noms d’une application  
   
--   Modifier le type d'une application  
+-   Changer le type d’une application  
   
--   Modifier l'objet de démarrage d'une application  
+-   Changer l’objet de démarrage d’une application  
   
 -   Spécifier une icône d'application  
   
@@ -52,16 +69,15 @@ Vous pouvez définir les propriétés générales des applications Visual Basic,
   
  Les tâches réalisables pour votre application dépendent du langage de développement utilisé.  
   
-## Dans cette section  
- [Comment : spécifier une icône d'application \(Visual Basic, C\#\)](../Topic/How%20to:%20Specify%20an%20Application%20Icon%20\(Visual%20Basic,%20C%23\).md)  
+## <a name="in-this-section"></a>Dans cette section  
+ [Guide pratique pour spécifier une icône d’application (Visual Basic, C#)](../ide/how-to-specify-an-application-icon-visual-basic-csharp.md)  
   
-## Voir aussi  
- [Page Application, Concepteur de projets \(Visual Basic\)](../ide/reference/application-page-project-designer-visual-basic.md)   
- [Page Application, Concepteur de projets \(C\#\)](../ide/reference/application-page-project-designer-csharp.md)   
- [Introduction to the Project Designer](http://msdn.microsoft.com/fr-fr/898dd854-c98d-430c-ba1b-a913ce3c73d7)   
- [Publishing ClickOnce Applications](../deployment/publishing-clickonce-applications.md)   
+## <a name="see-also"></a>Voir aussi  
+ [Page Application, Concepteur de projets (Visual Basic)](../ide/reference/application-page-project-designer-visual-basic.md)   
+ [Page Application, Concepteur de projets (C#)](../ide/reference/application-page-project-designer-csharp.md)   
+ [Publication d’applications ClickOnce](../deployment/publishing-clickonce-applications.md)   
  [Sécurisation des applications ClickOnce](../deployment/securing-clickonce-applications.md)   
- [Managing Debugging Properties](http://msdn.microsoft.com/fr-fr/92474d16-e7fe-4fac-9287-6bd6b3a7eb68)   
- [Managing Compilation Properties](http://msdn.microsoft.com/fr-fr/94308881-f10f-4caf-a729-f1028e596a2c)   
- [Gestion des ressources d'une application \(.NET\)](../ide/managing-application-resources-dotnet.md)   
- [Gestion des paramètres d'une application \(.NET\)](../ide/managing-application-settings-dotnet.md)
+ [Gestion des propriétés de débogage](http://msdn.microsoft.com/en-us/92474d16-e7fe-4fac-9287-6bd6b3a7eb68)   
+ [Gestion des propriétés de compilation](http://msdn.microsoft.com/en-us/94308881-f10f-4caf-a729-f1028e596a2c)   
+ [Gestion des ressources d’une application (.NET)](../ide/managing-application-resources-dotnet.md)   
+ [Gestion des paramètres d’une application (.NET)](../ide/managing-application-settings-dotnet.md)

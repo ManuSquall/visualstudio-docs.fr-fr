@@ -1,5 +1,5 @@
 ---
-title: Substitutions Help Content Manager | Microsoft Docs
+title: Changements dans Help Content Manager | Microsoft Docs
 ms.custom: 
 ms.date: 11/04/2016
 ms.reviewer: 
@@ -27,14 +27,15 @@ translation.priority.ht:
 - tr-tr
 - zh-cn
 - zh-tw
-translationtype: Human Translation
-ms.sourcegitcommit: 5db97d19b1b823388a465bba15d057b30ff0b3ce
-ms.openlocfilehash: e8657d2ff12e911286fd120d3d19e16aed838db6
-ms.lasthandoff: 02/22/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: 47057e9611b824c17077b9127f8d2f8b192d6eb8
+ms.openlocfilehash: c4889d40e9ca53cccf7de384e609eb959d8981f5
+ms.contentlocale: fr-fr
+ms.lasthandoff: 05/13/2017
 
 ---
-# <a name="help-content-manager-overrides"></a>Substitutions Help Content Manager
-Vous pouvez modifier le Registre pour modifier le comportement par défaut de la visionneuse d’aide et les fonctionnalités relatives à l’aide de l’IDE Visual Studio.  
+# <a name="help-content-manager-overrides"></a>Changements dans Help Content Manager
+Vous pouvez modifier le Registre pour changer le comportement par défaut de la visionneuse et des fonctionnalités de l’aide dans l’IDE Visual Studio.  
   
 |Tâche|Clé de Registre|Valeur et définition|  
 |----------|------------------|--------------------------|  
@@ -44,7 +45,7 @@ Vous pouvez modifier le Registre pour modifier le comportement par défaut de la
 |Substituer la priorité des travaux BITS|HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node (sur un ordinateur 64 bits)\Microsoft\Help\v2.2|BITSPriority--Utilisez l’une des valeurs suivantes : **foreground**, **high**, **normal** ou **low**.|  
 |Désactiver en ligne (et option IDE en ligne)|HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node (sur un ordinateur 64 bits)\Microsoft\VisualStudio\14.0\Help|OnlineHelpPreferenceDisabled--Indiquez la valeur 1 pour désactiver l’accès au contenu d’aide en ligne.|  
 |Désactiver Gérer le contenu|HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node (sur un ordinateur 64 bits)\Microsoft\VisualStudio\14.0\Help|ContentManagementDisabled--Indiquez la valeur 1 pour désactiver l’onglet **Gérer le contenu** dans la visionneuse d’aide.|  
-|Pointer vers le magasin de contenu local sur un partage réseau|HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Help\v2.2\Catalogs\VisualStudio11|LocationPath=« *ContentStoreNetworkShare* »|  
+|Pointer vers le magasin de contenu local sur un partage réseau|HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Help\v2.2\Catalogs\VisualStudio11|LocationPath="*ContentStoreNetworkShare*"|  
 |Désactiver l’installation du contenu au premier démarrage de la fonctionnalité Visual Studio.|HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node (sur un ordinateur 64 bits)\Microsoft\VisualStudio\14.0\Help|DisableFirstRunHelpSelection--Définir sur 1 pour désactiver les fonctionnalités d’aide configurées au premier démarrage de Visual Studio.|  
   
 ## <a name="see-also"></a>Voir aussi  

@@ -31,10 +31,10 @@ translation.priority.mt:
 - pt-br
 - tr-tr
 ms.translationtype: Human Translation
-ms.sourcegitcommit: edc126208bb401c8dba9a6be722cbd0dbda21caf
-ms.openlocfilehash: 720048b861bfb208489a62340efca28ae88d1951
+ms.sourcegitcommit: 8bf0b097be929b30627e0f1139c6e0b145933ab4
+ms.openlocfilehash: 28c6a166a423b3341ae32676830861eaa78cb40d
 ms.contentlocale: fr-fr
-ms.lasthandoff: 04/22/2017
+ms.lasthandoff: 05/26/2017
 
 ---
 # <a name="what39s-new-in-visual-studio-2017"></a>Nouveautés dans Visual Studio 2017 RC
@@ -132,7 +132,7 @@ Pour étendre les fonctionnalités DevOps au développement de base de données 
 
 Inclus avec Visual Studio Enterprise 2017 :
 - [Redgate ReadyRoll Core](http://www.red-gate.com/products/sql-development/readyroll/entrypage/microsoft-and-readyroll?utm_source=microsoft&utm_medium=link&utm_campaign=readyroll&utm_term=docs-newinvs) vous permet de développer des scripts de migration, de gérer les modifications de base de données à l’aide du contrôle de code source et d’automatiser en toute sécurité des déploiements de modifications de base de données en même temps que les modifications des applications.
-- [Redgate SQL Prompt Core](http://www.red-gate.com/products/sql-development/sql-prompt/entrypage/microsoft-and-sql-prompt?utm_source=microsoft&utm_medium=link&utm_campaign=sqlprompt&utm_term=docs-newinvs) vous permet d’écrire du code SQL plus rapidement et avec une plus grande précision grâce à la complétion de code intelligente. SQL Prompt complète automatiquement les objets et les mots clés de la base de données et du système, et propose des suggestions de colonne au fil de votre frappe. Cela aboutit à un code plus propre et à moins d’erreurs, car vous n’avez pas à vous souvenir de chaque nom de colonne ou de chaque alias.
+- [Redgate SQL Prompt Core](http://www.red-gate.com/products/sql-development/sql-prompt/entrypage/microsoft-and-sql-prompt?utm_source=microsoft&utm_medium=link&utm_campaign=sqlprompt&utm_term=docs-newinvs) vous permet d’écrire du code SQL plus rapidement et avec une plus grande précision grâce à la complétion de code intelligente. SQL Prompt complète automatiquement les objets et les mots clés de la base de données et du système, et propose des suggestions de colonne au fil de votre frappe. Cela aboutit à un code plus propre et à moins d’erreurs, car vous n’avez pas à vous souvenir de chaque nom de colonne ni de chaque alias.
 
 Inclus avec toutes les éditions de Visual Studio 2017 :
 - [Redgate SQL Search](http://www.red-gate.com/products/sql-development/sql-search/?utm_source=microsoft&utm_medium=link&utm_campaign=sqlsearch&utm_term=docs-newinvs) augmente votre productivité en vous aidant à trouver rapidement des objets et des fragments SQL parmi plusieurs bases de données.
@@ -155,7 +155,7 @@ Nous avons actualisé l’expérience de navigation pour permettre le déplaceme
 
 * **Atteindre** (Ctrl + F12) &ndash; accède depuis n’importe quel type ou membre de base à ses diverses implémentations.
 
-* **Atteindre** (Ctrl + T ou Ctrl +,) &ndash; accède directement à toute déclaration de fichier/type/membre/symbole. Vous pouvez filtrer votre liste de résultats ou utiliser la syntaxe de requête (par exemple, « f searchTerm » pour les fichiers, « t searchTerm » pour les types, etc..).
+* **Atteindre** (Ctrl + T ou Ctrl +,) &ndash; accède directement à toute déclaration de fichier/type/membre/symbole. Vous pouvez filtrer votre liste de résultats ou utiliser la syntaxe de requête (par exemple, « f searchTerm » pour les fichiers, « t searchTerm » pour les types, etc.).
 
  ![Amélioration de Atteindre tout](../ide/media/vs2017ide-navigation-go-to.png "Exemple de la fonctionnalité Atteindre tout améliorée")
 
@@ -199,11 +199,11 @@ Si vous souhaitez faire des suggestions sur la façon dont nous pouvons amélior
  Parfois, un message ne suffit pas pour transmettre l’impact complet du problème que vous avez rencontré. Si vous rencontrez un blocage, un incident ou autre problème de performances, vous pouvez facilement partager avec nous les étapes de reproduction et les fichiers de prise en charge (tels que des captures d’écran et des fichiers de trace et de vidage de tas) à l’aide de l’outil **Signaler un problème**. Pour plus d’informations sur l’utilisation de cet outil, consultez la page [Guide pratique pour signaler un problème](how-to-report-a-problem-with-visual-studio-2017.md).  
 
 ### <a name="track-your-issue-in-connect"></a>Effectuer le suivi d'un problème dans Connect  
- Si vous voulez savoir où en est la prise en compte de vos commentaires sur Visual Studio, il vous suffit d’accéder à la page [Connect](http://connect.microsoft.com/), et d’y signaler le bogue. Après cela, vous pouvez revenir à Connect pour suivre l’état du bogue.  
+ Si vous voulez savoir où en est la prise en compte de vos commentaires sur Visual Studio, il vous suffit d’accéder à la page [Connect](http://connect.microsoft.com/) et d’y signaler le bogue. Après cela, vous pouvez revenir à Connect pour suivre l’état du bogue.  
 
 ## <a name="see-also"></a>Voir aussi  
 * [Nouveautés de Visual C++](/cpp/top/what-s-new-for-visual-cpp-in-visual-studio)
-* [Nouveautés de C#](https://docs.microsoft.com/en-us/dotnet/articles/csharp/csharp-7)  
+* [Nouveautés de C#](https://docs.microsoft.com/en-us/dotnet/csharp/csharp-7)  
 * [Nouveautés de Team Foundation Server](https://www.visualstudio.com/en-us/docs/whats-new)
 * [Notes de mise à jour de Visual Studio](https://www.visualstudio.com/news/vs2015-vs)
 

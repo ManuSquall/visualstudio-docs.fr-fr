@@ -31,10 +31,10 @@ translation.priority.mt:
 - pt-br
 - tr-tr
 ms.translationtype: Human Translation
-ms.sourcegitcommit: 85576806818a6ed289c2f660f87b5c419016c600
-ms.openlocfilehash: 2c709b5aa90ff4f5f70f0411c7f4f1870d1725d4
+ms.sourcegitcommit: 7a873df77756e5a957d327049566c8e0db1f3a8a
+ms.openlocfilehash: c77f0321e50a27635e083d656cf6ba8011a4ef4d
 ms.contentlocale: fr-fr
-ms.lasthandoff: 05/09/2017
+ms.lasthandoff: 05/11/2017
 
 ---
 # <a name="how-to-define-settings-in-a-response-file"></a>Guide pratique pour définir des paramètres dans un fichier réponse
@@ -103,4 +103,6 @@ Cet exemple installe Visual Studio Enterprise avec six charges de travail et com
     ]
 }
 ```
+## <a name="see-also"></a>Voir aussi
+* [ID de charge de travail et de composant Visual Studio 2017](workload-and-component-ids.md)
 

@@ -30,22 +30,23 @@ translation.priority.ht:
 - tr-tr
 - zh-cn
 - zh-tw
-translationtype: Human Translation
-ms.sourcegitcommit: ca7c86466fa23fb21a932f26dc24e37c71cf29b4
-ms.openlocfilehash: 2587e4a10a4caa1192a0efc31448078db553dfb4
-ms.lasthandoff: 04/05/2017
+ms.translationtype: HT
+ms.sourcegitcommit: dc7a0c10390de67b56a83d2824224bed24125db0
+ms.openlocfilehash: 702be191610ce05e91d081fed9c70a135c72c971
+ms.contentlocale: fr-fr
+ms.lasthandoff: 07/17/2017
 
 ---
 # <a name="walkthrough-creating-a-multiple-computer-build-environment"></a>Procédure pas à pas : création d'un environnement de build sur plusieurs ordinateurs
+
 Vous pouvez créer un environnement de build dans votre organisation en installant Visual Studio sur un ordinateur hôte, puis en copiant plusieurs fichiers et paramètres sur un autre ordinateur afin qu’il puisse participer aux builds. Vous n’avez pas à installer Visual Studio sur un autre ordinateur.  
   
- Ce document ne confère pas de droits pour redistribuer le logiciel en externe ou pour fournir des environnements de build à des tiers.  
+Ce document ne confère pas de droits pour redistribuer le logiciel en externe ou pour fournir des environnements de build à des tiers.  
   
-||  
-|-|  
-|Exclusion de responsabilité<br /><br /> Ce document est fourni "en l’état". Nous avons testé les étapes décrites, mais nous ne pouvons pas tester exhaustivement chaque configuration. Nous tenterons de maintenir le document à jour avec toute information supplémentaire obtenue. Les informations et opinions présentées dans ce document, notamment les URL et autres références à des sites web Internet, peuvent être modifiées sans information préalable. Microsoft n’offre aucune garantie, expresse ou implicite, concernant les informations fournies ici. Vous assumez tous les risques liés à leur utilisation.<br /><br /> Ce document ne vous donne aucun droit légal de propriété intellectuelle quant aux produits Microsoft. Vous pouvez copier et utiliser ce document à titre de référence interne.<br /><br /> Vous n’avez aucune obligation de faire à Microsoft des suggestions, commentaires ou autre retour concernant ce document. Toutefois, tout commentaire que vous fournissez volontairement peut être utilisé dans des produits Microsoft et les spécifications liées ou dans une autre documentation (collectivement, les "Offres Microsoft") qui peuvent elles-mêmes être utilisées par des tiers pour développer leurs propres produits. Par conséquent, si vous envoyez des retours sous forme de commentaires à Microsoft concernant n’importe quelle version de ce document ou les Offres Microsoft auxquelles ils s’appliquent, vous acceptez les points suivants : (a) Microsoft peut librement utiliser, reproduire, autoriser, distribuer et commercialiser vos commentaires dans toute Offre Microsoft ; (b) vous n’accorderez également aux tiers, sans frais, que les droits de brevet nécessaires pour permettre à d’autres produits d’utiliser ou d’interagir avec toutes les parties spécifiques d’un produit Microsoft qui incorporent vos commentaires ; et (c) vous n’enverrez à Microsoft aucun commentaire (i) pour lequel vous avez une raison de croire qu’il est soumis à un brevet, un copyright ou une autre revendication de propriété intellectuelle ou un autre droit envers un tiers ; ou (ii) qui soit soumis aux termes d’un contrat de licence exigeant que toute Offre Microsoft intégrant ou dérivée de ces commentaires, ou d’une autre propriété intellectuelle Microsoft, soit fournie sous licence à tout tiers ou partagée avec celui-ci.|  
-  
- Cette procédure pas à pas a été validée par rapport aux systèmes d’exploitation suivants, en exécutant MSBuild à partir de la ligne de commande et en utilisant Team Foundation Build.  
+> Exclusion de responsabilité<br /><br /> Ce document est fourni « en l’état ». Nous avons testé les étapes décrites, mais nous ne pouvons pas tester exhaustivement chaque configuration. Nous tenterons de maintenir le document à jour avec toute information supplémentaire obtenue. Les informations et opinions présentées dans ce document, notamment les URL et autres références à des sites web Internet, peuvent être modifiées sans information préalable. Microsoft n’offre aucune garantie, expresse ou implicite, concernant les informations fournies ici. Vous assumez tous les risques liés à leur utilisation.<br /><br /> Ce document ne vous donne aucun droit légal de propriété intellectuelle quant aux produits Microsoft. Vous pouvez copier et utiliser ce document à titre de référence interne.<br /><br /> Vous n’avez aucune obligation de faire à Microsoft des suggestions, commentaires ou autre retour concernant ce document. Toutefois, tout commentaire que vous fournissez volontairement peut être utilisé dans des produits Microsoft et les spécifications liées ou dans une autre documentation (collectivement, les "Offres Microsoft") qui peuvent elles-mêmes être utilisées par des tiers pour développer leurs propres produits. Par conséquent, si vous envoyez des retours sous forme de commentaires à Microsoft concernant n’importe quelle version de ce document ou les Offres Microsoft auxquelles ils s’appliquent, vous acceptez les points suivants : (a) Microsoft peut librement utiliser, reproduire, autoriser, distribuer et commercialiser vos commentaires dans toute Offre Microsoft ; (b) vous n’accorderez également aux tiers, sans frais, que les droits de brevet nécessaires pour permettre à d’autres produits d’utiliser ou d’interagir avec toutes les parties spécifiques d’un produit Microsoft qui incorporent vos commentaires ; et (c) vous n’enverrez à Microsoft aucun commentaire (i) pour lequel vous avez une raison de croire qu’il est soumis à un brevet, un copyright ou une autre revendication de propriété intellectuelle ou un autre droit envers un tiers ; ou (ii) qui soit soumis aux termes d’un contrat de licence exigeant que toute Offre Microsoft intégrant ou dérivée de ces commentaires, ou d’une autre propriété intellectuelle Microsoft, soit fournie sous licence à tout tiers ou partagée avec celui-ci.
+
+
+Cette procédure pas à pas a été validée par rapport aux systèmes d’exploitation suivants, en exécutant MSBuild à partir de la ligne de commande et en utilisant Team Foundation Build.  
   
 -   Windows 8 (x86 et x64)  
   
@@ -389,7 +390,7 @@ Vous pouvez créer un environnement de build dans votre organisation en installa
   
          par celle-ci :  
   
-         AssemblyFile="$(VCTargetsPath11)Microsoft.Build.CppTasks.Common.v110.dll”.  
+         AssemblyFile="$(VCTargetsPath11)Microsoft.Build.CppTasks.Common.v110.dll".  
   
          Le nommage précédent dépend de l’assembly installé dans le GAC.  
   
@@ -399,9 +400,9 @@ Vous pouvez créer un environnement de build dans votre organisation en installa
   
          par celle-ci :  
   
-         AssemblyFile="$(VCTargetsPath11)Microsoft.Build.CppTasks.Common.v110.dll”.  
+         AssemblyFile="$(VCTargetsPath11)Microsoft.Build.CppTasks.Common.v110.dll".  
   
-4.  Créez un fichier .props (par exemple, Partner.AutoImports.props), puis placez-le à la racine du dossier qui contient vos projets. Ce fichier sert à définir les variables qui sont utilisées par MSBuild pour rechercher diverses ressources. Si les variables ne sont pas définies par ce fichier, elles sont définies par d’autres fichiers .props et des fichiers .targets qui reposent sur des valeurs de Registre. Comme nous ne définissons aucune valeur de Registre, ces variables seraient vides et la génération échouerait. À la place, ajoutez ceci à Partner.AutoImports.props :  
+4.  Créez un fichier .props (par exemple, Partner.AutoImports.props), puis placez-le à la racine du dossier qui contient vos projets. Ce fichier sert à définir les variables qui sont utilisées par MSBuild pour rechercher diverses ressources. Si les variables ne sont pas définies par ce fichier, elles sont définies par d’autres fichiers .props et des fichiers .targets qui reposent sur des valeurs de Registre. Comme nous ne définissons aucune valeur de Registre, ces variables sont vides et la génération échoue. À la place, ajoutez ceci à Partner.AutoImports.props :  
   
     ```  
     <?xml version="1.0" encoding="utf-8"?>  
@@ -424,7 +425,7 @@ Vous pouvez créer un environnement de build dans votre organisation en installa
     </Project>  
     ```  
   
-5.  Dans chacun de vos fichiers projet, ajoutez la ligne suivante en haut, après la ligne `<Project Default Targets…>`.  
+5.  Dans chacun de vos fichiers projet, ajoutez la ligne suivante en haut, après la ligne `<Project Default Targets...>`.  
   
     ```  
     <Import Project="$([MSBuild]::GetDirectoryNameOfFileAbove($(MSBuildThisFileDirectory), Partner.AutoImports.props))\Partner.AutoImports.props"/>  

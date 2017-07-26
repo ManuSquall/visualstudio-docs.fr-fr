@@ -1,7 +1,7 @@
 ---
 title: "Guide pratique pour définir plusieurs projets de démarrage | Microsoft Docs"
 ms.custom: 
-ms.date: 11/04/2016
+ms.date: 06/21/2017
 ms.reviewer: 
 ms.suite: 
 ms.technology:
@@ -29,25 +29,30 @@ translation.priority.ht:
 - tr-tr
 - zh-cn
 - zh-tw
-translationtype: Human Translation
-ms.sourcegitcommit: 5db97d19b1b823388a465bba15d057b30ff0b3ce
-ms.openlocfilehash: e0ed2d6fb66d7560a8b22328e3f78999a1e4d9f9
-ms.lasthandoff: 02/22/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: d2f4eba36e9069a35cf279ccf1c78f72a51d77a1
+ms.openlocfilehash: 745a92734a6b7bfcee1e0e566aa08a03c3b70850
+ms.contentlocale: fr-fr
+ms.lasthandoff: 06/23/2017
 
 ---
-# <a name="how-to-set-multiple-startup-projects"></a>Comment : définir plusieurs projets de démarrage
+# <a name="how-to-set-multiple-startup-projects"></a>Guide pratique pour définir plusieurs projets de démarrage
 Visual Studio vous permet de spécifier la façon dont plusieurs projets sont exécutés quand vous démarrez le débogueur.  
-  
+
 ### <a name="to-set-multiple-startup-projects"></a>Pour définir plusieurs projets de démarrage  
-  
-1.  Dans l’**Explorateur de solutions**, sélectionnez la solution (le nœud tout en haut). Cliquez avec le bouton droit sur le nœud pour afficher le menu contextuel.  
-  
-2.  Sélectionnez **Propriétés**. La boîte de dialogue **Pages de propriétés de Solution** s’affiche.  
-  
-3.  Développez le nœud **Propriétés communes** et cliquez sur **Projet de démarrage**.  
-  
-4.  Cliquez sur **Plusieurs projets de démarrage** et définissez les actions appropriées. Pour plus d’informations, consultez [NIB Guide pratique pour modifier des propriétés de projet et des paramètres de configuration](http://msdn.microsoft.com/en-us/e7184bc5-2f2b-4b4f-aa9a-3ecfcbc48b67).  
-  
+
+1.  Dans l’**Explorateur de solutions**, sélectionnez la solution (le nœud tout en haut).  
+
+2.  Choisissez le menu de contexte (clic droit) du nœud de la solution, puis choisissez **Propriétés**. La boîte de dialogue **Pages de propriétés de Solution** s’affiche.  
+
+3.  Développez le nœud **Propriétés communes** et choisissez **Projet de démarrage**.  
+
+4.  Choisissez l’option **Plusieurs projets de démarrage** et définissez les actions appropriées.
+
 ## <a name="see-also"></a>Voir aussi  
- [Compilation et génération](../ide/compiling-and-building-in-visual-studio.md)   
+ [Compilation et génération](../ide/compiling-and-building-in-visual-studio.md)
+
  [Création de solutions et de projets](../ide/creating-solutions-and-projects.md)
+
+ [Gestion des propriétés des projets et des solutions](../ide/managing-project-and-solution-properties.md)
+

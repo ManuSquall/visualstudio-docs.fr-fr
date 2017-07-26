@@ -34,10 +34,11 @@ translation.priority.ht:
 - tr-tr
 - zh-cn
 - zh-tw
-translationtype: Human Translation
-ms.sourcegitcommit: 5db97d19b1b823388a465bba15d057b30ff0b3ce
-ms.openlocfilehash: 11c0b7e3bf572aa99610acf6b218cccf360ed7ba
-ms.lasthandoff: 02/22/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: 5ea9179ad37514ffad4876177b05150eecc22def
+ms.openlocfilehash: ee881a2ecb205ad01a1d8be6229947dd748cb2b7
+ms.contentlocale: fr-fr
+ms.lasthandoff: 05/24/2017
 
 ---
 # <a name="error-list-window"></a>Liste d'erreurs, fenêtre
@@ -65,7 +66,7 @@ ms.lasthandoff: 02/22/2017
  Pour trier la liste, cliquez sur n'importe quel en-tête de colonne. Pour trier à nouveau sur une colonne supplémentaire, maintenez la touche Maj enfoncée et cliquez sur un autre en-tête de colonne. Pour sélectionner les colonnes qui doivent être affichées et celles qui doivent être masquées, choisissez **Afficher les colonnes** dans le menu contextuel. Pour modifier l'ordre dans lequel les colonnes sont affichées, faites glisser les en-têtes de votre choix vers la droite ou la gauche.  
   
 > [!NOTE]
->  Les boîtes de dialogue et les commandes de menu qui s'affichent peuvent être différentes de celles qui sont décrites ici, en fonction de vos paramètres actifs ou de l'édition utilisée. Pour modifier vos paramètres, cliquez sur **Outils/Importation et exportation de paramètres**. Pour plus d’informations, consultez [Personnalisation des paramètres de développement dans Visual Studio](http://msdn.microsoft.com/en-us/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
+>  Les boîtes de dialogue et les commandes de menu qui s'affichent peuvent être différentes de celles qui sont décrites ici, en fonction de vos paramètres actifs ou de l'édition utilisée. Pour modifier vos paramètres, cliquez sur **Outils/Importation et exportation de paramètres**. Pour plus d’informations, consultez [Personnaliser l’IDE Visual Studio](../../ide/personalizing-the-visual-studio-ide.md).  
   
 ## <a name="error-list-filters"></a>Filtres de la liste d'erreurs  
  Il existe deux types de filtre dans deux zones de liste déroulante, l’un à droite de la barre d’outils, et l’autre à gauche de la barre d’outils. La liste déroulante située à gauche de la barre d’outils spécifie l’ensemble de fichiers de code à utiliser (**Solution complète**, **Documents ouverts**, **Projet actif**, **Document actif**).  
@@ -81,7 +82,7 @@ ms.lasthandoff: 02/22/2017
   
 3.  **Document actif** : afficher les erreurs, les avertissements et les messages du document actuellement sélectionné dans l’**Éditeur** ou dans l’**Explorateur de solutions**.  
   
- Si un filtre est actuellement appliqué aux résultats de la recherche, le nom du filtre apparaît dans la barre de titre **Liste d’erreurs**. Les boutons **Erreurs**, **Avertissements** et **Messages** affichent alors le nombre d’éléments filtrés affichés, ainsi que le nombre total d’éléments ; par exemple, les boutons indiquent x erreurs sur y. Si aucun filtre n'est appliqué, la barre de titre indique uniquement « Liste d'erreurs ».  
+ Si un filtre est actuellement appliqué aux résultats de la recherche, le nom du filtre apparaît dans la barre de titre **Liste d’erreurs**. Les boutons **Erreurs**, **Avertissements** et **Messages** affichent alors le nombre d’éléments filtrés affichés, ainsi que le nombre total d’éléments ; par exemple, les boutons indiquent x erreurs sur y. Si aucun filtre n’est appliqué, la barre de titre indique uniquement « Liste d’erreurs ».  
   
  La liste située à droite de la barre d'outils indique si les erreurs doivent être affichées à partir de la build (erreurs résultant d'une opération de build) ou à partir d'IntelliSense (erreurs détectées avant d'exécuter une build), ou les deux.  
   

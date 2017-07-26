@@ -28,10 +28,11 @@ translation.priority.mt:
 - pl-pl
 - pt-br
 - tr-tr
-translationtype: Human Translation
+ms.translationtype: Human Translation
 ms.sourcegitcommit: 5db97d19b1b823388a465bba15d057b30ff0b3ce
 ms.openlocfilehash: c4060c35d7bfd0f82cb05a7fbb99931fae0d1f1e
-ms.lasthandoff: 02/22/2017
+ms.contentlocale: fr-fr
+ms.lasthandoff: 05/19/2017
 
 ---
 # <a name="step-5-add-enter-event-handlers-for-the-numericupdown-controls"></a>Étape 5 : ajouter des gestionnaires d'événements Enter pour les contrôles NumericUpDown
@@ -69,8 +70,7 @@ Propriétés, boîte de dialogue
   
 3.  Dans la méthode du gestionnaire d’événements **answer_Enter**, ajoutez le code suivant.  
   
-     [!code-vb[VbExpressTutorial3Step5_6#11](../ide/codesnippet/VisualBasic/step-5-add-enter-event-handlers-for-the-numericupdown-controls_1.vb)]
-     [!code-cs[VbExpressTutorial3Step5_6#11](../ide/codesnippet/CSharp/step-5-add-enter-event-handlers-for-the-numericupdown-controls_1.cs)]  
+     [!code-vb[VbExpressTutorial3Step5_6#11](../ide/codesnippet/VisualBasic/step-5-add-enter-event-handlers-for-the-numericupdown-controls_1.vb)]  [!code-cs[VbExpressTutorial3Step5_6#11](../ide/codesnippet/CSharp/step-5-add-enter-event-handlers-for-the-numericupdown-controls_1.cs)]  
   
      Ce code peut sembler complexe, mais vous le comprendrez si vous l'examinez de manière détaillée. Commencez par analyser le haut de la méthode : `object sender` en C# ou `sender As System.Object` en Visual Basic. Ce paramètre désigne l'objet dont l'événement se déclenche, appelé l'expéditeur. Dans ce cas, l'objet expéditeur est le contrôle NumericUpDown. Ainsi, dans la première ligne de la méthode, vous indiquez que l'expéditeur n'est pas seulement un objet générique, mais plus précisément un contrôle NumericUpDown. (Chaque contrôle NumericUpDown est un objet, mais chaque objet n'est pas un contrôle NumericUpDown.) Le contrôle NumericUpDown est nommé **answerBox** dans cette méthode, car il sera utilisé pour tous les contrôles NumericUpDown du formulaire et pas seulement pour le contrôle NumericUpDown de somme. Comme vous déclarez la variable answerBox dans cette méthode, sa portée s'applique uniquement à cette méthode. En d'autres termes, la variable peut être utilisée uniquement dans cette méthode.  
   

@@ -38,22 +38,22 @@ translation.priority.ht:
 - zh-cn
 - zh-tw
 ms.translationtype: Human Translation
-ms.sourcegitcommit: 5658ecf52637a38bc3c2a5ad9e85b2edebf7d445
-ms.openlocfilehash: 6d7266c35746fa4413ffd4ce058b1acbe9229af2
+ms.sourcegitcommit: 3d32d11a430227800cb3ed53831a9565eb6adeb3
+ms.openlocfilehash: 541b728d006f85fc550c5ddad2a7cd74190c244a
 ms.contentlocale: fr-fr
-ms.lasthandoff: 02/22/2017
+ms.lasthandoff: 05/30/2017
 
 ---
 # <a name="using-regular-expressions-in-visual-studio"></a>Utilisation d’expressions régulières dans Visual Studio
-[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] utilise les expressions régulières du .NET Framework pour rechercher et remplacer du texte. Pour plus d’informations sur les expressions régulières du .NET, consultez [Expressions régulières du .NET Framework](http://msdn.microsoft.com/Library/521b3f6d-f869-42e1-93e5-158c54a6895d).  
+[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] utilise les expressions régulières du .NET Framework pour rechercher et remplacer du texte. Pour plus d’informations sur les expressions régulières du .NET, consultez [Expressions régulières du .NET Framework](/dotnet/standard/base-types/regular-expressions).  
   
  Avant Visual Studio 2012, Visual Studio utilisait la syntaxe d'expression régulière personnalisée dans les fenêtres Rechercher et remplacer. Pour savoir comment convertir certains des symboles d’expressions régulières personnalisées les plus couramment utilisés dans les versions du .NET Framework, consultez [Conversions des expressions régulières Visual Studio](https://msdn.microsoft.com/en-us/library/2k3te2cs\(v=vs.110\).aspx).  
   
 > [!TIP]
->  Dans les systèmes d'exploitation Windows, la plupart des lignes se terminent par « \r\n » (retour chariot suivi d'une nouvelle ligne). Ces caractères ne sont pas visibles, mais sont présents dans l'éditeur et sont transmis au service d'expressions régulières .NET.  
+>  Dans les systèmes d’exploitation Windows, la plupart des lignes se terminent par « \r\n » (retour chariot suivi d’une nouvelle ligne). Ces caractères ne sont pas visibles, mais sont présents dans l'éditeur et sont transmis au service d'expressions régulières .NET.  
   
 > [!TIP]
->  Pour plus d’informations sur les expressions régulières utilisées dans les modèles de remplacement, consultez [Substitutions](http://msdn.microsoft.com/Library/d1f52431-1c7d-4dc6-8792-6b988256892e). Pour utiliser un groupe de captures numéroté, la syntaxe est `$1` pour spécifier le groupe numéroté et `(x)` pour spécifier le groupe en question. Par exemple, l’expression régulière groupée `(\d)([a-z])` trouve quatre correspondances dans la chaîne suivante : **1a 2b 3c 4d**. La chaîne de remplacement `z$1` convertit cette chaîne en **z1 z2 z3 z4**.  
+>  Pour plus d’informations sur les expressions régulières utilisées dans les modèles de remplacement, consultez [Substitutions](/dotnet/standard/base-types/substitutions-in-regular-expressions). Pour utiliser un groupe de captures numéroté, la syntaxe est `$1` pour spécifier le groupe numéroté et `(x)` pour spécifier le groupe en question. Par exemple, l’expression régulière groupée `(\d)([a-z])` trouve quatre correspondances dans la chaîne suivante : **1a 2b 3c 4d**. La chaîne de remplacement `z$1` convertit cette chaîne en **z1 z2 z3 z4**.  
   
 ## <a name="regular-expressions-in-visual-studio"></a>Expressions régulières dans Visual Studio  
  Voici quelques exemples.  
@@ -71,13 +71,13 @@ ms.lasthandoff: 02/22/2017
 |Ancre la chaîne de correspondance à la fin d'une ligne|\r?$|`End\r?$` correspond au mot "end" uniquement quand il apparaît à la fin d’une ligne.|  
 |Correspond à n'importe quel caractère unique d'un ensemble|[abc]|`b[abc]` correspond à "ba", "bb" et "bc".|  
 |Correspond à n'importe quel caractère dans une plage de caractères|[a-f]|`be[n-t]` correspond à "bet" dans "between", à "ben" dans "beneath" et à "bes" dans "beside", mais pas à "below".|  
-|Capture et numérote implicitement l'expression contenue dans les parenthèses|()|`([a-z])X\1` correspond à "aXa" et à "bXb", mais pas à "aXb". ". « \1 » fait référence au premier groupe d'expression « [a-z] ».|  
+|Capture et numérote implicitement l'expression contenue dans les parenthèses|()|`([a-z])X\1` correspond à "aXa" et à "bXb", mais pas à "aXb". ". « \1 » fait référence au premier groupe d’expressions « [a-z] ».|  
 |Invalide une correspondance|(?!abc)|`real (?!ity)` correspond à "real" dans "realty" et dans "really", mais pas dans "reality". Trouve également le deuxième « real » (mais pas le premier « real ») dans « realityreal ».|  
 |Correspond à n'importe quel caractère qui ne figure pas dans un ensemble donné de caractères|[^abc]|`be[^n-t]` correspond à "bef" dans "before », à "beh" dans "behind" et à "bel" dans "below", mais pas à "beneath".|  
 |Correspond à l'expression placée avant ou après le symbole.|&#124;|`(sponge&#124;mud) bath` correspond à "sponge bath" et à "mud bath".|  
 |Crée une séquence d'échappement pour le caractère placé après la barre oblique inverse|\|`\^` correspond au caractère ^.|  
 |Spécifie le nombre d'occurrences du caractère ou du groupe précédent|{x}, où x est le nombre d'occurrences|`x(ab){2}x` correspond à "xababx", et `x(ab){2,3}x` correspond à "xababx" et à "xabababx", mais pas à "xababababx".|  
-|Met en correspondance du texte dans une classe de caractères Unicode, où « X » est le numéro Unicode. Pour plus d'informations sur les classes de caractères Unicode, consultez<br /><br /> [Propriétés des caractères de la norme Unicode 5.2](http://www.unicode.org/versions/Unicode5.2.0/ch04.pdf).|\p{X}|`\p{Lu}` correspond à "T" et à "D" dans "Thomas Doe".|  
+|Met en correspondance du texte dans une classe de caractères Unicode, où « X » est le nombre Unicode. Pour plus d'informations sur les classes de caractères Unicode, consultez<br /><br /> [Propriétés des caractères de la norme Unicode 5.2](http://www.unicode.org/versions/Unicode5.2.0/ch04.pdf).|\p{X}|`\p{Lu}` correspond à "T" et à "D" dans "Thomas Doe".|  
 |Correspond à la limite d'un mot|`\b` (En dehors d’une classe de caractères, \b spécifie une limite de mot ; à l’intérieur d’une classe de caractères, \b spécifie un retour arrière.)|`\bin` correspond à "in" dans "inside", mais pas dans "pinto".|  
 |Correspond à un saut de ligne (c'est-à-dire un retour chariot suivi d'une nouvelle ligne)|\r?\n|`End\r?\nBegin` correspond à "End" et à "Begin" uniquement quand "END" est la dernière chaîne d’une ligne et "Begin" la première chaîne de la ligne suivante.|  
 |Correspond à n'importe quel caractère alphanumérique|\w|`a\wd` correspond à "add" et à "a1d", mais pas à "a d".|  

@@ -29,10 +29,11 @@ translation.priority.ht:
 - tr-tr
 - zh-cn
 - zh-tw
-translationtype: Human Translation
-ms.sourcegitcommit: 5658ecf52637a38bc3c2a5ad9e85b2edebf7d445
-ms.openlocfilehash: a267468b7b23dd0d2ed6c43df6c63c78d862ddbb
-ms.lasthandoff: 02/22/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: 3d32d11a430227800cb3ed53831a9565eb6adeb3
+ms.openlocfilehash: 3a1ae20e3aca94339621546ac69bbfffd3a75ab3
+ms.contentlocale: fr-fr
+ms.lasthandoff: 05/30/2017
 
 ---
 # <a name="toolbox-components-tab"></a>Boîte à outils, onglet Composants
@@ -79,8 +80,8 @@ Affiche les composants que vous pouvez ajouter aux concepteurs [!INCLUDE[vbprvb]
  **ServiceController**  
  Crée une instance du composant <xref:System.ServiceProcess.ServiceController> que vous pouvez utiliser pour manipuler des services existants, notamment pour démarrer et arrêter des services, ainsi que pour envoyer des commandes vers ceux-ci. Pour plus d’informations, consultez [Surveillance des services Windows](http://msdn.microsoft.com/en-us/4542ee3f-e052-4cb9-8726-58e9420de222).  
   
- **Timer**  
- Crée une instance du composant <xref:System.Windows.Forms.Timer> que vous pouvez utiliser pour ajouter une fonctionnalité à durée définie à vos applications Windows. Pour plus d’informations, consultez [Timer, composant](http://msdn.microsoft.com/Library/6700e534-6382-43d5-98ed-14205435fff7).  
+ **Minuterie**  
+ Crée une instance du composant <xref:System.Windows.Forms.Timer> que vous pouvez utiliser pour ajouter une fonctionnalité à durée définie à vos applications Windows. Pour plus d’informations, consultez [Timer, composant](/dotnet/framework/winforms/controls/timer-component-windows-forms).  
   
 > [!NOTE]
 >  Il existe également un composant <xref:System.Timers.Timer> basé sur le système que vous pouvez ajouter à la **boîte à outils**. Ce <xref:System.Timers.Timer> est optimisé pour les applications serveur. Le <xref:System.Windows.Forms.Timer> Windows Forms, quant à lui, convient mieux à une utilisation sur les Windows Forms.  

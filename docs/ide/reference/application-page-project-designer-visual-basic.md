@@ -34,13 +34,14 @@ translation.priority.mt:
 - pl-pl
 - pt-br
 - tr-tr
-translationtype: Human Translation
-ms.sourcegitcommit: 5db97d19b1b823388a465bba15d057b30ff0b3ce
-ms.openlocfilehash: d95f62f61261c9c5c9af36e3bb2ee6fe66d63d2a
-ms.lasthandoff: 02/22/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: 6fbf89668d47d55d1d77a1d7f11765567fc73405
+ms.openlocfilehash: 4be8a1f36d81e2cb36d9daab9817f04d18ecb94a
+ms.contentlocale: fr-fr
+ms.lasthandoff: 05/26/2017
 
 ---
-# <a name="application-page-project-designer-visual-basic"></a>Application Page, Project Designer (Visual Basic)
+# <a name="application-page-project-designer-visual-basic"></a>Page Application, Concepteur de projet (Visual Basic)
 Utilisez la page **Application** du Concepteur de projet pour spécifier les paramètres d’application et les propriétés du projet.  
   
  Pour accéder à la page **Application**, choisissez un nœud de projet (pas le nœud **Solution**) dans l’**Explorateur de solutions**. Ensuite, choisissez **Projet**, **Propriétés** dans la barre de menus. Quand le Concepteur de projet apparaît, cliquez sur l’onglet **Application**.  
@@ -51,7 +52,7 @@ Utilisez la page **Application** du Concepteur de projet pour spécifier les par
  Les options suivantes permettent de configurer les paramètres généraux d’une application.  
   
  **Nom de l’assembly**  
- Spécifie le nom du fichier de sortie qui contient le manifeste de l’assembly. La modification de cette propriété modifie également la propriété **Nom de sortie**. Vous pouvez également effectuer cette modification à partir d’une invite de commande à l’aide de [/out (Visual Basic)](/dotnet/visual-basic/reference/command-line-compiler/out). Pour plus d’informations sur l’accès par programmation à cette propriété, consultez <xref:VSLangProj.ProjectProperties.AssemblyName%2A>.  
+ Spécifie le nom du fichier de sortie qui contient le manifeste de l’assembly. La modification de cette propriété modifie également la propriété **Nom de sortie**. Vous pouvez également effectuer cette modification à partir d’une invite de commande à l’aide de [/out (Visual Basic)](/dotnet/visual-basic/reference/command-line-compiler/out). Pour plus d’informations sur la façon d’accéder à cette propriété par programmation, consultez <xref:VSLangProj.ProjectProperties.AssemblyName%2A>.  
   
  **Espace de noms racine**  
  Spécifie l’espace de noms de base pour tous les fichiers du projet. Par exemple, si vous définissez l’**espace de noms racine** sur `Project1` et que vous avez un `Class1` en dehors des espaces de noms dans votre code, son espace de noms est `Project1.Class1`. Si vous avez un `Class2` dans un espace de noms `Order` dans le code, son espace de noms est `Project1.Order.Class2`.  
@@ -65,7 +66,7 @@ Utilisez la page **Application** du Concepteur de projet pour spécifier les par
   
  Pour plus d’informations sur la propriété d’espace de noms racine, consultez [/rootnamespace](/dotnet/visual-basic/reference/command-line-compiler/rootnamespace).  
   
- Pour plus d’informations sur l’accès par programmation à cette propriété, consultez <xref:VSLangProj.ProjectProperties.RootNamespace%2A>.  
+ Pour plus d’informations sur la façon d’accéder à cette propriété par programmation, consultez <xref:VSLangProj.ProjectProperties.RootNamespace%2A>.  
   
  **Framework cible (toutes les configurations)**  
  Spécifie la version du .NET Framework ciblée par l’application. Cette option peut avoir des valeurs différentes selon les versions du .NET Framework installées sur votre ordinateur.  
@@ -82,26 +83,26 @@ Utilisez la page **Application** du Concepteur de projet pour spécifier les par
   
  Pour un projet d’application web, vous devez spécifier **Bibliothèque de classes**.  
   
- Si vous spécifiez l’option **Fichier WinMD**, les types peuvent être projetés dans n’importe quel langage de programmation de Windows Runtime. En plaçant la sortie du projet dans un fichier WinMD, vous pouvez coder une application dans plusieurs langages et faire interagir le code comme si vous l’aviez écrit dans le même langage. Vous pouvez utiliser l’option **Fichier WinMD** pour les solutions qui ciblent les bibliothèques Windows Runtime, y compris les applications [!INCLUDE[win8_appname_long](../../debugger/includes/win8_appname_long_md.md)]. Pour plus d’informations, consultez [Création de composants Windows Runtime en C# et Visual Basic](http://go.microsoft.com/fwlink/?LinkId=231895).  
+ Si vous spécifiez l’option **Fichier WinMD**, les types peuvent être projetés dans n’importe quel langage de programmation de Windows Runtime. En plaçant la sortie du projet dans un fichier WinMD, vous pouvez coder une application dans plusieurs langages et faire interagir le code comme si vous l’aviez écrit dans le même langage. Vous pouvez utiliser l’option **Fichier WinMD** pour les solutions qui ciblent les bibliothèques Windows Runtime, y compris les applications [!INCLUDE[win8_appname_long](../../debugger/includes/win8_appname_long_md.md)]. Pour plus d’informations, consultez [Création de composants Windows Runtime en C# et Visual Basic](/windows/uwp/winrt-components/creating-windows-runtime-components-in-csharp-and-visual-basic).  
   
 > [!NOTE]
 >  Le Windows Runtime peut projeter des types pour qu’ils apparaissent comme des objets natifs dans le langage qui les utilise. Par exemple, les applications JavaScript qui interagissent avec Windows Runtime l’utilisent comme un ensemble d’objets JavaScript, et les applications C# utilisent la bibliothèque comme une collection d’objets .NET. En plaçant la sortie du projet dans un fichier WinMD, vous tirez parti de la même technologie que celle utilisée par Windows Runtime.  
   
- Pour plus d’informations sur la propriété **Type d’application**, consultez [/target (Visual Basic)](/dotnet/visual-basic/reference/command-line-compiler/target). Pour plus d’informations sur l’accès par programmation à cette propriété, consultez <xref:VSLangProj.ProjectProperties.OutputType%2A>.  
+ Pour plus d’informations sur la propriété **Type d’application**, consultez [/target (Visual Basic)](/dotnet/visual-basic/reference/command-line-compiler/target). Pour plus d’informations sur la façon d’accéder à cette propriété par programmation, consultez <xref:VSLangProj.ProjectProperties.OutputType%2A>.  
   
  **Icône**  
- Définit le fichier .ico à utiliser comme icône de votre programme. Sélectionnez **\<Parcourir...>** pour rechercher un graphique existant. Pour plus d’informations, consultez [/win32icon](/dotnet/visual-basic/reference/command-line-compiler/win32icon) (ou [/win32icon (Options du compilateur C#)](/dotnet/csharp/language-reference/compiler-options/win32icon-compiler-option). Pour accéder par programmation à cette propriété, consultez <xref:VSLangProj.ProjectProperties.ApplicationIcon%2A>.  
+ Définit le fichier .ico à utiliser comme icône de votre programme. Sélectionnez **\<Parcourir...>** pour rechercher un graphique existant. Pour plus d’informations, consultez [/win32icon](/dotnet/visual-basic/reference/command-line-compiler/win32icon) (ou [/win32icon (Options du compilateur C#)](/dotnet/csharp/language-reference/compiler-options/win32icon-compiler-option). Pour accéder à cette propriété par programmation, consultez <xref:VSLangProj.ProjectProperties.ApplicationIcon%2A>.  
   
  **Formulaire de démarrage / Objet de démarrage / URI de démarrage**  
  Spécifie le formulaire de démarrage ou le point d’entrée de l’application.  
   
  Si **Activer l’infrastructure de l’application** est sélectionné (par défaut), cette liste est intitulée **Formulaire de démarrage** et affiche uniquement des formulaires, car le framework d’application ne prend en charge que les formulaires de démarrage, et non les objets.  
   
- Si le projet est une application de navigateur WPF, cette liste est intitulée **URI de démarrage** et la valeur par défaut est **Page1.xaml**. La liste **URI de démarrage** permet de spécifier la ressource d’interface utilisateur (un élément XAML) que l’application affiche au démarrage. Pour plus d’informations, consultez <xref:System.Windows.Application.StartupUri%2A>.  
+ Si le projet est une application de navigateur WPF, cette liste est intitulée **URI de démarrage** et la valeur par défaut est **Page1.xaml**. La liste **URI de démarrage** permet de spécifier la ressource d’interface utilisateur (un élément XAML) que l’application affiche au démarrage. Pour plus d'informations, consultez <xref:System.Windows.Application.StartupUri%2A>.  
   
  Si **Activer l’infrastructure de l’application** n’est pas sélectionné, cette liste devient **Objet de démarrage**, et affiche des formulaires et des classes ou des modules avec un `Sub Main`.  
   
- L’**objet de démarrage** définit le point d’entrée à appeler quand l’application se charge. Cet objet est généralement défini sur le formulaire principal de votre application ou sur la procédure `Sub Main` qui s’exécute quand l’application démarre. Comme les bibliothèques de classes n’ont pas de point d’entrée, la seule option disponible pour cette propriété est **(Aucun)**. Pour plus d’informations, consultez [/main](/dotnet/visual-basic/reference/command-line-compiler/main). Pour accéder par programmation à cette propriété, consultez <xref:VSLangProj.ProjectProperties.StartupObject%2A>.  
+ L’**objet de démarrage** définit le point d’entrée à appeler quand l’application se charge. Cet objet est généralement défini sur le formulaire principal de votre application ou sur la procédure `Sub Main` qui s’exécute quand l’application démarre. Comme les bibliothèques de classes n’ont pas de point d’entrée, la seule option disponible pour cette propriété est **(Aucun)**. Pour plus d’informations, consultez [/main](/dotnet/visual-basic/reference/command-line-compiler/main). Pour accéder à cette propriété par programmation, consultez <xref:VSLangProj.ProjectProperties.StartupObject%2A>.  
   
  **Informations de l’assembly**  
  Cliquez sur ce bouton pour afficher la [boîte de dialogue Informations de l’assembly](../../ide/reference/assembly-information-dialog-box.md).  

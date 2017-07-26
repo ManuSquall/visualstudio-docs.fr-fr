@@ -22,10 +22,11 @@ translation.priority.mt:
 - pl-pl
 - pt-br
 - tr-tr
-translationtype: Human Translation
-ms.sourcegitcommit: 5db97d19b1b823388a465bba15d057b30ff0b3ce
-ms.openlocfilehash: 741deb2d7ddb86e0a0dc0246b1c53f497d0ab5f8
-ms.lasthandoff: 02/22/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: 5ea9179ad37514ffad4876177b05150eecc22def
+ms.openlocfilehash: 6e74ef38969cb62790629b34041ceef535ff6f9e
+ms.contentlocale: fr-fr
+ms.lasthandoff: 05/24/2017
 
 ---
 # <a name="updateconfiguration-devenvexe"></a>/Updateconfiguration (devenv.exe)
@@ -48,5 +49,5 @@ Devenv.exe /updateconfiguration
 ```  
   
 ## <a name="see-also"></a>Voir aussi  
- [Personnalisation des paramètres de développement dans Visual Studio](http://msdn.microsoft.com/en-us/22c4debb-4e31-47a8-8f19-16f328d7dcd3)   
+ [Personnaliser l’IDE Visual Studio](../../ide/personalizing-the-visual-studio-ide.md)   
  [Commutateurs de la ligne de commande Devenv](../../ide/reference/devenv-command-line-switches.md)
