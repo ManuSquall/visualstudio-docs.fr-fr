@@ -44,7 +44,7 @@ Cette page vous guide dans la désinstallation de Visual Studio, notre suite int
 
 1.  Recherchez le programme d’installation de Visual Studio sur votre ordinateur.  
 
-     Par exemple, sur un ordinateur exécutant la Mise à jour anniversaire Windows 10, sélectionnez **Démarrer**, puis faites défiler jusqu’à la lettre **V** pour l’afficher comme **Programme d’installation de Visual Studio**.  
+     Par exemple, sur un ordinateur exécutant la Mise à jour anniversaire Windows 10, cliquez sur **Démarrer**, puis faites défiler jusqu’à la lettre **V** pour l’afficher comme **Programme d’installation de Visual Studio**.  
 
      ![Programme d’installation de Visual Studio](media/vs2017-locate-the-visual-studio-installer.PNG "Localiser le programme d’installation de Microsoft Visual Studio")
 
