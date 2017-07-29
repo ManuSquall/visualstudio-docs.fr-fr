@@ -1,7 +1,7 @@
 ---
 title: "Visite guidée des fonctionnalités de l’IDE Visual Studio | Microsoft Docs"
 ms.custom: 
-ms.date: 03/07/2017
+ms.date: 06/28/2017
 ms.reviewer: 
 ms.suite: 
 ms.tgt_pltfrm: 
@@ -26,10 +26,11 @@ translation.priority.mt:
 - pl-pl
 - pt-br
 - tr-tr
-translationtype: Human Translation
-ms.sourcegitcommit: 06cdfb076120ffd7459a16b56c659bb86942cd7f
-ms.openlocfilehash: c8276097c53ea49d223c43ada5511ab5d5f38036
-ms.lasthandoff: 03/31/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: 669bc5894727c207691a7e37937f432d98fee8b1
+ms.openlocfilehash: 8d2c20b32201b3df85e5150828565eee84d66375
+ms.contentlocale: fr-fr
+ms.lasthandoff: 06/30/2017
 
 ---
 # <a name="visual-studio-ide-feature-tour"></a>Visite guidée des fonctionnalités de l’IDE Visual Studio
@@ -40,7 +41,7 @@ Vous souhaitez créer une application pour un téléphone Android ? C’est pos
 
 ![Projets Visual Studio](../ide/media/VSIDE_Tour_Projects_List.png)
 
-Vous pouvez aussi ouvrir tout simplement presque n’importe quel code obtenu où que vous soyez et commencer à travailler. Vous voyez sur GitHub un projet qui vous plaît ? Il vous suffit de cloner le référentiel, de l’ouvrir dans Visual Studio et de commencer à rédiger le code !
+Vous pouvez aussi ouvrir tout simplement presque n’importe quel code obtenu où que vous soyez et commencer à travailler. Vous voyez sur GitHub un projet qui vous plaît ? Il vous suffit de cloner le dépôt, de l’ouvrir dans Visual Studio et de commencer à rédiger le code !
 
 ### <a name="create-mobile-apps"></a>Créer des applications mobiles
 Vous pouvez créer des applications mobiles natives pour différentes plateformes à l’aide de Visual C# et Xamarin ou Visual C++ natives ou des applications hybrides à l’aide de JavaScript avec Apache Cordova. Vous pouvez créer des jeux mobiles pour Unity, Unreal, DirectX, Cocos, et plus encore. Visual Studio inclut un émulateur Android pour vous aider à exécuter et déboguer des applications Android.
@@ -138,11 +139,11 @@ Récapitulons ce que vous avez fait jusqu’à présent. Vous avez créé un pro
 
 
 ## <a name="debug-test-and-improve-your-code"></a>Déboguer, tester et améliorer votre code
-Des erreurs peuvent survenir lors de l’exécution. Lorsque vous écrivez du code, vous devez l’exécuter, tester ses performances et rechercher les bogues. Le système de débogage de pointe de Visual Studio vous permet de déboguer du code en cours d’exécution dans votre projet local, sur un appareil distant ou sur un émulateur, comme ceux destinés aux appareils Android ou Windows Phone. Vous pouvez parcourir le code instruction par instruction et examiner les variables au fil de la progression, vous pouvez avancer pas à pas dans des applications multithread, et vous pouvez définir des points d'arrêt qui sont atteints seulement quand une condition spécifiée est vraie. Vous pouvez surveiller les valeurs des variables à mesure que le code s’exécute. Tout ceci peut être géré dans l’éditeur de code lui-même, ce qui vous permet de ne pas quitter votre code.
+Des erreurs peuvent survenir lors de l’exécution. Lorsque vous écrivez du code, vous devez l’exécuter, tester ses performances et rechercher les bogues. Le système de débogage de pointe de Visual Studio vous permet de déboguer du code en cours d’exécution dans votre projet local, sur un appareil distant ou sur un émulateur comme ceux destinés aux appareils Android ou Windows Phone. Vous pouvez parcourir le code instruction par instruction et examiner les variables au fil de la progression, vous pouvez avancer pas à pas dans des applications multithread, et vous pouvez définir des points d'arrêt qui sont atteints seulement quand une condition spécifiée est vraie. Vous pouvez surveiller les valeurs des variables à mesure que le code s’exécute. Tout ceci peut être géré dans l’éditeur de code lui-même, ce qui vous permet de ne pas quitter votre code.
 
 ![Débogage](../ide/media/VSIDE_Tour_Debugging.png)
 
-À des fins de test, Visual Studio propose des tests unitaires, IntelliTest, des tests de charge et de performances et bien plus encore. Pour en savoir plus sur le processus de débogage de Visual Studio, consultez [Debugger Feature Tour](https://review.docs.microsoft.com/visualstudio/debugger/debugger-feature-tour?branch=mikejo-tour) (Présentation des fonctionnalités de débogage). Pour plus d’informations sur le test, consultez [Outils de test](https://www.visualstudio.com/vs/testing-tools/). Pour en savoir plus sur l’amélioration des performances de vos applications, consultez [Outils de profilage](https://docs.microsoft.com/visualstudio/profiling/profiling-tools).
+À des fins de test, Visual Studio propose des tests unitaires, IntelliTest, des tests de charge et de performances et bien plus encore. Pour en savoir plus sur le processus de débogage de Visual Studio, consultez [Debugger Feature Tour](../debugger/debugger-feature-tour.md) (Présentation des fonctionnalités de débogage). Pour plus d’informations sur le test, consultez [Outils de test](https://www.visualstudio.com/vs/testing-tools/). Pour en savoir plus sur l’amélioration des performances de vos applications, consultez [Visite guidée des fonctionnalités de profilage](../profiling/profiling-feature-tour.md).
 
 ## <a name="deploy-your-finished-application"></a>Déployer votre application terminée  
 Quand votre application est prête à être déployée auprès des utilisateurs ou des clients, Visual Studio fournit les outils nécessaires, qu’elle soit déployée dans le Windows Store, sur un site SharePoint ou à l’aide des technologies InstallShield ou Windows Installer. Ils sont tous accessibles via l’IDE. Pour plus d’informations, consultez [Déploiement d’applications, de services et de composants](../deployment/deploying-applications-services-and-components.md).
@@ -167,7 +168,7 @@ Voici d’autres fonctionnalités de productivité courantes de Visual Studio.
 
  ![Refactorisation](../ide/media/VSIDE_refactor.png)  
 
--  **IntelliSense** est un terme couvrant un ensemble de fonctionnalités appréciées qui affichent des informations sur les types concernant votre code directement dans l’éditeur et qui, dans certains cas, écrivent de petits extraits de code pour vous. Cela revient à avoir de la documentation de base incluse dans l'éditeur, ce qui vous évite d'avoir à rechercher des informations sur les types dans une fenêtre d'aide distincte. Les fonctionnalités d'IntelliSense varient selon le langage. Pour plus d’informations, consultez [Visual C# IntelliSense](../ide/visual-csharp-intellisense.md), [Visual C++ Intellisense](../ide/visual-cpp-intellisense.md), [JavaScript IntelliSense](../ide/javascript-intellisense.md), [Options IntelliSense propres à Visual Basic](../ide/visual-basic-specific-intellisense.md). L'illustration suivante montre certaines fonctionnalités IntelliSense à l'œuvre :  
+-  **IntelliSense** est un terme couvrant un ensemble de fonctionnalités appréciées qui affichent des informations sur les types concernant votre code directement dans l’éditeur et qui, dans certains cas, écrivent de petits extraits de code pour vous. Cela revient à avoir de la documentation de base incluse dans l’éditeur, ce qui vous évite d’avoir à rechercher des informations sur les types dans une fenêtre d’aide distincte. Les fonctionnalités d'IntelliSense varient selon le langage. Pour plus d’informations, consultez [Visual C# IntelliSense](../ide/visual-csharp-intellisense.md), [Visual C++ Intellisense](../ide/visual-cpp-intellisense.md), [JavaScript IntelliSense](../ide/javascript-intellisense.md), [Options IntelliSense propres à Visual Basic](../ide/visual-basic-specific-intellisense.md). L’illustration suivante montre certaines fonctionnalités IntelliSense à l'œuvre :  
 
   ![Liste des membres Visual Studio](../ide/media/vs2017_Intellisense.png)  
 
@@ -196,9 +197,9 @@ Voici d’autres fonctionnalités de productivité courantes de Visual Studio.
   ![Explorateur d’objets montrant le composant System.Timer](../ide/media/objectbrowser.png)  
 
 ## <a name="manage-your-source-code-and-collaborate-with-others"></a>Gérer votre code source et collaborer avec d’autres utilisateurs
-Vous pouvez gérer votre code source dans des référentiels Git hébergés par tous types de fournisseurs, y compris GitHub. Ou utilisez [Visual Studio Team Services (VSTS)](https://www.visualstudio.com/team-services/) pour gérer le code en même temps que les bogues et les éléments de travail de votre projet entier. Pour en savoir plus sur la gestion des dépôts Git dans Visual Studio à l’aide de Team Explorer, consultez la page [Bien démarrer avec Git et Team Services](https://www.visualstudio.com/en-us/docs/git/gitquickstart-vs2017).  Visual Studio dispose également d’autres fonctionnalités de contrôle de code source intégrées. Pour en savoir plus à ce sujet, consultez le blog [New Git Features in Visual Studio 2017](https://blogs.msdn.microsoft.com/visualstudioalm/2017/03/06/new-git-features-in-visual-studio-2017/).
+Vous pouvez gérer votre code source dans des dépôts Git hébergés par tous types de fournisseurs, notamment GitHub. Ou utilisez [Visual Studio Team Services (VSTS)](https://www.visualstudio.com/team-services/) pour gérer le code en même temps que les bogues et les éléments de travail de votre projet entier. Pour en savoir plus sur la gestion des dépôts Git dans Visual Studio à l’aide de Team Explorer, consultez la page [Bien démarrer avec Git et Team Services](https://www.visualstudio.com/en-us/docs/git/gitquickstart-vs2017).  Visual Studio dispose également d’autres fonctionnalités de contrôle de code source intégrées. Pour en savoir plus à ce sujet, consultez le blog [New Git Features in Visual Studio 2017](https://blogs.msdn.microsoft.com/visualstudioalm/2017/03/06/new-git-features-in-visual-studio-2017/).
 
-Visual Studio Team Services est un service basé sur le cloud destiné à héberger des projets de logiciels et à permettre la collaboration dans des équipes. VSTS prend en charge les systèmes de contrôle de code source Git et Team Foundation, ainsi que les méthodologies de développement Scrum, CMMI et Agile. La gestion de version Team Foundation (TFVC) utilise un référentiel de serveur unique et centralisé pour effectuer le suivi et la gestion des versions des fichiers. Les modifications locales sont toujours archivées sur le serveur central, où les autres développeurs peuvent obtenir les dernières modifications.
+Visual Studio Team Services est un service basé sur le cloud destiné à héberger des projets de logiciels et à permettre la collaboration dans des équipes. VSTS prend en charge les systèmes de contrôle de code source Git et Team Foundation, ainsi que les méthodologies de développement Scrum, CMMI et Agile. La gestion de version Team Foundation (TFVC) utilise un dépôt de serveur unique et centralisé pour effectuer le suivi et la gestion des versions des fichiers. Les modifications locales sont toujours archivées sur le serveur central, où les autres développeurs peuvent obtenir les dernières modifications.
 
 Team Foundation Server (TFS) est le hub de gestion du cycle de vie des applications pour Visual Studio. Il permet à toutes personnes impliquées dans le processus de développement de participer à une même solution. TFS est également utile pour la gestion des équipes et des projets hétérogènes.
 
@@ -221,11 +222,11 @@ Vous pouvez afficher et gérer vos ressources de Cloud basées sur Azure dans Vi
 
 ![Cloud Explorer](../ide/media/VSIDE_CloudExplorer.png)
 
-L’**Explorateur de serveurs** permet de parcourir et de gérer les instances et les ressources SQL Server sur Azure, Salesforce.com, Office 365 et les sites Web. Pour ouvrir l’Explorateur de serveurs, dans le menu principal, choisissez **Affichage**, **Explorateur de serveurs**. Consultez la page [Ajouter de nouvelles connexions](https://docs.microsoft.com/visualstudio/data-tools/add-new-connections) pour plus d’informations sur l’Explorateur de serveurs.
+L’**Explorateur de serveurs** permet de parcourir et de gérer les instances et les ressources SQL Server sur Azure, Salesforce.com, Office 365 et les sites web. Pour ouvrir l’Explorateur de serveurs, dans le menu principal, choisissez **Affichage**, **Explorateur de serveurs**. Consultez la page [Ajouter de nouvelles connexions](https://docs.microsoft.com/visualstudio/data-tools/add-new-connections) pour plus d’informations sur l’Explorateur de serveurs.
 
 [SQL Server Data Tools (SSDT)](https://docs.microsoft.com/sql/ssdt/download-sql-server-data-tools-ssdt) est un environnement de développement puissant pour SQL Server, Azure SQL Database et Azure SQL Data Warehouse. Il vous permet de générer, déboguer, gérer et refactoriser des bases de données. Vous pouvez travailler avec un projet de base de données, ou directement avec une instance de base de données connectée, locale ou hors site.
 
-L’**Explorateur d’objets SQL Server** de Visual Studio offre une vue des objets de base de données similaire à celle de SQL Server Management Studio. L’Explorateur d’objets SQL Server vous permet d’effectuer des tâches simples d’administration et de conception de base de données, y compris la modification des données des tables, la comparaison de schémas et l’exécution de requêtes à l’aide de menus contextuels directement depuis l’Explorateur d’objets SQL Server, et plus encore. Consultez la page [Manage Objects by Using Object Explorer](https://docs.microsoft.com/sql/ssms/object/manage-objects-by-using-object-explorer) (Gérer des objets à l’aide de l’Explorateur d’objets) pour plus d’informations.
+L’**Explorateur d’objets SQL Server** de Visual Studio offre une vue des objets de base de données similaire à celle de SQL Server Management Studio. L’Explorateur d’objets SQL Server vous permet d’effectuer des tâches simples d’administration et de conception de base de données, y compris la modification des données des tables, la comparaison de schémas et l’exécution de requêtes à l’aide de menus contextuels directement depuis l’Explorateur d’objets SQL Server, et plus encore. Pour plus d’informations, consultez [Gérer les objets à l’aide de l’Explorateur d’objets](https://docs.microsoft.com/sql/ssms/object/manage-objects-by-using-object-explorer).
 
 ![Explorateur d'objets SQL Server](../ide/media/vs2015_sqlobjectexplorer.png)  
 

@@ -1,64 +1,82 @@
 ---
-title: "Conseils de recherche en texte int&#233;gral | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-general"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "hv_search"
-helpviewer_keywords: 
-  - "Help Viewer 2.0, conseils de recherche en texte intégral"
-  - "conseils de recherche en texte intégral [Help Viewer 2.0]"
+title: "Conseils de recherche en texte intégral | Microsoft Docs"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology:
+- vs-ide-general
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords:
+- hv_search
+helpviewer_keywords:
+- Help Viewer 2.0, full-text search tips
+- full-text search tips [Help Viewer 2.0]
 ms.assetid: bcaad23d-2ca7-4bec-8b54-b884bc34e70b
 caps.latest.revision: 13
-author: "kempb"
-ms.author: "kempb"
-manager: "ghogen"
-caps.handback.revision: 13
----
-# Conseils de recherche en texte int&#233;gral
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
+author: kempb
+ms.author: kempb
+manager: ghogen
+translation.priority.ht:
+- de-de
+- es-es
+- fr-fr
+- it-it
+- ja-jp
+- ko-kr
+- ru-ru
+- zh-cn
+- zh-tw
+translation.priority.mt:
+- cs-cz
+- pl-pl
+- pt-br
+- tr-tr
+ms.translationtype: Human Translation
+ms.sourcegitcommit: 47057e9611b824c17077b9127f8d2f8b192d6eb8
+ms.openlocfilehash: b03bbfbe9f96931ad9b64dd8542529ee258f0392
+ms.contentlocale: fr-fr
+ms.lasthandoff: 05/13/2017
 
-L'une des méthodes les plus utiles pour localiser les informations dans l'Aide consiste à effectuer une recherche de texte intégral.  Pour affiner et personnaliser vos résultats, vous devez comprendre la manière dont la syntaxe affecte votre requête.  Cette rubrique fournit des conseils, des procédures, des informations de syntaxe détaillées pour vous aider à mieux maîtriser vos requêtes.  
+---
+# <a name="full-text-search-tips"></a>Conseils de recherche en texte intégral
+L’une des approches les plus utiles pour trouver des informations dans l’Aide consiste à effectuer une recherche en texte intégral. Pour affiner et personnaliser vos résultats, vous devez comprendre comment la syntaxe affecte votre requête. Cette rubrique fournit des conseils, des procédures et des informations détaillées sur la syntaxe pour vous aider à mieux écrire vos requêtes.  
   
-## Conseils de recherche en texte intégral  
- Créez des recherches plus ciblées qui retournent uniquement les rubriques qui vous intéressent, si vous comprenez comment l'aide interprète la mise en forme que vous utilisez dans les requêtes.  Ces formats incluent des caractères spéciaux, des mots réservés et des filtres.  
+## <a name="full-text-search-tips"></a>Conseils de recherche en texte intégral  
+ Pour créer des recherches ciblées qui retournent uniquement les rubriques qui vous intéressent, vous devez comprendre comment l’Aide interprète la mise en forme que vous utilisez dans les requêtes. Ces mises en forme comprennent les caractères spéciaux, les mots réservés et les filtres.  
   
-### Indications générales  
- Le tableau suivant contient les règles de base et les directives de développement des requêtes de recherche dans l'aide.  
+### <a name="general-guidelines"></a>Indications générales  
+ Le tableau suivant présente quelques règles de base et des instructions pour le développement de requêtes de recherche dans l’Aide.  
   
 |Syntaxe|Description|  
-|-------------|-----------------|  
-|Respect de la casse|Les recherches ne respectent pas la casse.  Développez vos critères de recherche à l'aide de caractères majuscules ou minuscules.  Par exemple, « OLE » et « ole » retournent les mêmes résultats.|  
-|Combinaisons de caractères|Vous ne pouvez pas rechercher uniquement des lettres \(a\-z\) ou nombres \(0\-9\) individuels.  Si vous essayez de rechercher certains mots réservés, tels que « et », « de » et « par », ils seront ignorés.  Pour plus d'informations, consultez "Mots ignorés dans les Recherches \(mots vides\)" plus loin dans cette rubrique.|  
-|Ordre d'évaluation|Les requêtes de recherche sont évaluées de gauche à droite.|  
+|------------|-----------------|  
+|Respect de la casse|Les recherches ne respectent pas la casse. Développez vos critères de recherche à l’aide de caractères majuscules ou minuscules. Par exemple, « OLE » et « ole » retournent les mêmes résultats.|  
+|Combinaisons de caractères|Vous ne pouvez pas rechercher uniquement des lettres (a-z) ou des nombres (0-9). Si vous tentez de rechercher certains mots réservés, tels que « and », « from » ou « with », ils sont ignorés. Pour plus d’informations, consultez « Mots ignorés dans les recherches (mots vides) » plus loin dans cette rubrique.|  
+|Ordre d’évaluation|Les requêtes de recherche sont évaluées de gauche à droite.|  
   
-### Syntaxe de recherche  
- Si vous spécifiez une chaîne de recherche qui comprend plusieurs mots, tels que « mot1 mot2 », cette chaîne est équivalente à « word1 ET word2 », qui retourne uniquement les rubriques qui contiennent tous les mots individuels dans la chaîne de recherche.  
+### <a name="search-syntax"></a>Syntaxe de recherche  
+ Si vous spécifiez une chaîne de recherche qui comprend plusieurs mots, tels que « mot1 mot2 » cette chaîne revient à taper « mot1 AND mot2 », qui retourne uniquement les rubriques qui contiennent tous les mots de la chaîne de recherche.  
   
 > [!IMPORTANT]
->  1.  Les recherches d'expressions ne sont pas prises en charge.  Si vous spécifiez plusieurs mots dans une chaîne de recherche, les rubriques retournées contiendront tous les mots spécifiés mais pas nécessairement l'expression exacte spécifiée.  
-> 2.  Utilisez des opérateurs logiques pour spécifier la relation entre les mots dans votre expression de recherche.  Incluez des opérateurs logiques, tels que AND, OR, NOT et NEAR, pour affiner davantage votre recherche.  Par exemple, si vous recherchez « déclaration PRÈS union », les résultats de la recherche afficheront les rubriques contenant les mots « déclaration » et « union » espacés de quelques mots maximum.  Pour plus d'informations, consultez [Opérateurs logiques dans les expressions de recherche](../ide/logical-operators-in-search-expressions.md).  
+>  1.  Les recherches d’expressions ne sont pas prises en charge. Si vous spécifiez plusieurs mots dans une chaîne de recherche, les rubriques retournées contiennent tous les mots que vous avez spécifiés, mais pas nécessairement l’expression exacte que vous avez spécifiée.  
+> 2.  Utilisez des opérateurs logiques pour spécifier la relation entre les mots dans votre expression de recherche. Vous pouvez inclure des opérateurs logiques, tels que AND, OR, NOT et NEAR, pour affiner votre recherche. Par exemple, si vous recherchez « déclarer NEAR union », les résultats de recherche incluent les rubriques dans lesquelles les mots « déclarer » et « union » ne sont séparés que de quelques mots. Pour plus d’informations, consultez [Opérateurs logiques dans les expressions de recherche](../ide/logical-operators-in-search-expressions.md).  
   
-### Filtres  
- Vous pouvez restreindre davantage les résultats de la recherche à l'aide des opérateurs de recherche avancée.  Pour filtrer les résultats d'une recherche en texte intégral, utilisez trois catégories dans l'Aide : Titre, Code, et Mot clé.  Pour plus d'informations, consultez [Opérateurs de recherche avancés dans les expressions de recherche](../ide/advanced-search-operators-in-search-expressions.md).  
+### <a name="filters"></a>Filtres  
+ Vous pouvez restreindre davantage les résultats de la recherche en utilisant des opérateurs de recherche avancée. L’Aide inclut trois catégories que vous pouvez utiliser pour filtrer les résultats d’une recherche en texte intégral : titre, code et mot clé. Pour plus d’informations, consultez [Opérateurs de recherche avancée dans les expressions de recherche](../ide/advanced-search-operators-in-search-expressions.md).  
   
-### Classement des résultats de la recherche  
- L'algorithme de recherche applique certains critères pour aider à classer les résultats de la recherche vers le haut ou le bas de la liste des résultats.  En général :  
+### <a name="ranking-of-search-results"></a>Classement des résultats de recherche  
+ L’algorithme de recherche applique certains critères pour aider à classer les résultats de la recherche dans la liste des résultats. En général :  
   
-1.  Le contenu qui inclut des mots de recherche dans le titre est mieux classé que le contenu qui n'en inclut pas.  
+1.  Le contenu qui comprend les mots à rechercher dans le titre a un classement plus élevé.  
   
-2.  Le contenu qui inclut des mots de recherche très proches est mieux classé que le contenu dont les mots de recherche ne le sont pas.  
+2.  Le contenu dans lequel les mots à rechercher sont situés à proximité les uns des autres a un classement plus élevé.  
   
-3.  Le contenu dont la densité des mots trouvés est plus élevée est mieux classé que le contenu dont la densité des mots trouvés est plus faible.  
+3.  Le contenu où la densité de mots à rechercher est supérieure a un classement plus élevé.  
   
-### Mots ignorés dans les recherches \(mots d'arrêt\)  
- Les mots ou des nombres courants, parfois appelés mots vides, sont automatiquement ignorés pendant une recherche en texte intégral.  Par exemple, si vous recherchez l'expression « passer par », les résultats de la recherche afficheront les rubriques contenant le mot « passer » sans tenir compte du mot « par ».  
+### <a name="words-ignored-in-searches-stop-words"></a>Mots ignorés dans les recherches (mots vides)  
+ Les mots ou les nombres courants, parfois appelés mots vides, sont automatiquement ignorés lors d’une recherche en texte intégral. Par exemple, si vous recherchez l’expression « pass through », les résultats de la recherche affichent les rubriques qui contiennent le mot « pass », mais pas « through ».  
   
-## Voir aussi  
- [Informations relatives aux paramètres régionaux](../ide/locate-information.md)   
+## <a name="see-also"></a>Voir aussi  
+ [Rechercher des informations](../ide/locate-information.md)   
  [Opérateurs logiques dans les expressions de recherche](../ide/logical-operators-in-search-expressions.md)

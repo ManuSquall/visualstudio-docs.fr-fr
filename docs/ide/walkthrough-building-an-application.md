@@ -27,10 +27,11 @@ translation.priority.ht:
 - tr-tr
 - zh-cn
 - zh-tw
-translationtype: Human Translation
-ms.sourcegitcommit: 4f237be3ffdfe2bca52e885822a9fbfbbf97ba6a
-ms.openlocfilehash: 738e8c25509253872274a49303b2b02a8f7ba1a6
-ms.lasthandoff: 02/22/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: 3d32d11a430227800cb3ed53831a9565eb6adeb3
+ms.openlocfilehash: dc4bcdcc11e357979641268ae77a8e39f8408f7a
+ms.contentlocale: fr-fr
+ms.lasthandoff: 05/30/2017
 
 ---
 # <a name="walkthrough-building-an-application"></a>Procédure pas à pas : génération d'une application
@@ -108,7 +109,7 @@ Avec cette procédure pas à pas, vous allez vous familiariser avec plusieurs op
   
 4.  Dans la liste **Plateforme de la solution active**, choisissez **Nouveau**.  
   
-5.  Dans la boîte de dialogue **Nouvelle configuration de solution**, sélectionnez **x64**et ne copiez pas les paramètres de la plateforme x86.  
+5.  Dans la boîte de dialogue **Nouvelle plateforme de solution**, sélectionnez **x64** et ne copiez pas les paramètres de la plateforme x86.  
   
      ![Boîte de dialogue Nouvelle plateforme de solution](../ide/media/buildwalk_newsolutionplatform.png "BuildWalk_NewSolutionPlatform")  
   
@@ -208,7 +209,7 @@ Avec cette procédure pas à pas, vous allez vous familiariser avec plusieurs op
   
      Par exemple, dans la build Visual C#, l’option [/nowarn](/dotnet/visual-basic/reference/command-line-compiler/nowarn) contient le code d’avertissement (1762) que vous avez spécifié précédemment dans cette rubrique, ainsi que les trois autres avertissements.  
   
-     Dans la build Visual Basic, [/nowarn](/dotnet/visual-basic/reference/command-line-compiler/nowarn) n’inclut pas d’avertissements à exclure, donc aucun avertissement ne s’affiche.  
+     Dans la build Visual Basic, comme [/nowarn](/dotnet/visual-basic/reference/command-line-compiler/nowarn) n’inclut pas d’avertissements à exclure, aucun avertissement ne s’affiche.  
   
     > [!TIP]
     >  Pour effectuer une recherche dans la fenêtre **Sortie**, affichez la boîte de dialogue **Rechercher** en appuyant sur les touches Ctrl + F.  
@@ -271,7 +272,7 @@ Avec cette procédure pas à pas, vous allez vous familiariser avec plusieurs op
  La procédure pas à pas est terminée.  
   
 ## <a name="see-also"></a>Voir aussi  
- [Procédure pas à pas : génération d’un projet (C++)](http://msdn.microsoft.com/Library/d459bc03-88ef-48d0-9f9a-82d17f0b6a4d)   
+ [Procédure pas à pas : génération d’un projet (C++)](/cpp/ide/walkthrough-building-a-project-cpp)   
  [Présentation de la précompilation de projets d’application web ASP.NET](http://msdn.microsoft.com/en-us/b940abbd-178d-4570-b441-52914fa7b887)   
  [Procédures pas à pas : utilisation de MSBuild](../msbuild/walkthrough-using-msbuild.md)
 

@@ -30,13 +30,14 @@ translation.priority.ht:
 - tr-tr
 - zh-cn
 - zh-tw
-translationtype: Human Translation
-ms.sourcegitcommit: 5658ecf52637a38bc3c2a5ad9e85b2edebf7d445
-ms.openlocfilehash: 5b55bd1c7b6be5c8fabafded8cd3a658ec9602d8
-ms.lasthandoff: 02/22/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: 3d32d11a430227800cb3ed53831a9565eb6adeb3
+ms.openlocfilehash: 001e8d8c1a6371d76b1a52826da16d471f07c1ba
+ms.contentlocale: fr-fr
+ms.lasthandoff: 05/30/2017
 
 ---
-# <a name="how-to-create-a-nullable-type-class-designer"></a>Comment : créer un type Nullable (Concepteur de classes)
+# <a name="how-to-create-a-nullable-type-class-designer"></a>Guide pratique pour créer un type Nullable (Concepteur de classes)
 Certains types valeur n’ont pas, ou n’ont pas besoin d’avoir, systématiquement une valeur définie. Il s’agit d’une pratique courante dans les bases de données, où certains champs peuvent ne se voir assigner aucune valeur. Par exemple, vous pouvez assigner une valeur null à un champ de base de données, qu’il conservera jusqu’à ce qu’une valeur lui soit affectée.  
   
  Un *type Nullable* est un type de valeur que vous étendez afin qu’il accepte la plage ordinaire de valeurs de ce type, ainsi qu’une valeur null. Par exemple, un type Nullable `Int32`, également appelé Nullable\<Int32>, peut se voir assigner n’importe quelle valeur entre -2147483648 et 2147483647, ou une valeur null. Un type Nullable\<bool> peut se voir assigner les valeurs `True`, `False` ou null (aucune valeur).  
@@ -87,5 +88,5 @@ Certains types valeur n’ont pas, ou n’ont pas besoin d’avoir, systématiqu
  <xref:System.Nullable%601>   
  [Types Nullable](/dotnet/csharp/programming-guide/nullable-types/index)   
  [Utilisation de types Nullable](/dotnet/csharp/programming-guide/nullable-types/using-nullable-types)   
- [Comment : identifier un type Nullable](http://msdn.microsoft.com/Library/d4b67ee2-66e8-40c1-ae9d-545d32c71387)   
+ [Comment : identifier un type Nullable](/dotnet/csharp/programming-guide/nullable-types/how-to-identify-a-nullable-type)   
  [Types valeur Nullable](/dotnet/visual-basic/programming-guide/language-features/data-types/nullable-value-types)

@@ -29,10 +29,10 @@ translation.priority.mt:
 - pt-br
 - tr-tr
 ms.translationtype: Human Translation
-ms.sourcegitcommit: 47057e9611b824c17077b9127f8d2f8b192d6eb8
-ms.openlocfilehash: 7e95cec543216f13de06d2c2b86bc08040d1a7fb
+ms.sourcegitcommit: 6fbf89668d47d55d1d77a1d7f11765567fc73405
+ms.openlocfilehash: de365cf073ed234ece1d9af56232a29b7ef8eec4
 ms.contentlocale: fr-fr
-ms.lasthandoff: 05/13/2017
+ms.lasthandoff: 05/26/2017
 
 ---
 # <a name="application-lifecycle-management-alm-with-unity-apps"></a>Application Lifecycle Management (ALM) avec les applications Unity
@@ -77,7 +77,7 @@ Le développement d'applications pour des plateformes modernes implique de nombr
 |-------------|--------------------------|-------------------------|  
 |[Utiliser Team Foundation Version Control](http://msdn.microsoft.com/Library/1d629052-c65d-4c5d-81eb-eaa4413fe285) ou Visual Studio Team Services|Oui|Les projets Unity se résument à une collection de fichiers qui peuvent être placés dans des systèmes de gestion de version comme n’importe quel autre projet. Toutefois, vous devez prendre en compte certaines considérations particulières décrites après le tableau ci-dessous.|  
 |[Bien démarrer avec Git dans Team Services](http://msdn.microsoft.com/Library/32f46ecd-1b03-4ef0-a9c4-8a120da2b03f)|Oui|Consultez les remarques après le tableau.|  
-|[Analyse du code/Améliorer la qualité du code (références, suggestions de changement, etc.)](http://msdn.microsoft.com/Library/73baa961-c21f-43fe-bb92-3f59ae9b5945)|Oui||  
+|[Améliorer la qualité du code](/visualstudio/test/improve-code-quality)|Oui||  
 |[Rechercher les modifications de code et d’autres historiques](../ide/find-code-changes-and-other-history-with-codelens.md)|Oui||  
 |[Utiliser des cartes de code pour déboguer vos applications](../modeling/use-code-maps-to-debug-your-applications.md)|Oui||  
   
@@ -113,7 +113,7 @@ Le développement d'applications pour des plateformes modernes implique de nombr
 |[Utiliser UI Automation pour tester votre code](../test/use-ui-automation-to-test-your-code.md)|Non|Les tests codés de l’interface utilisateur s’appuient sur des contrôles lisibles dans l’interface utilisateur de l’application. Les applications Unity sont graphiques par nature et le contenu n’est donc pas lisible par les outils de test codés de l’interface utilisateur.|  
   
 ## <a name="improve-code-quality"></a>Améliorer la qualité du code  
- Lien de référence : **[Améliorer la qualité du code](http://msdn.microsoft.com/Library/73baa961-c21f-43fe-bb92-3f59ae9b5945)**  
+ Lien de référence : **[Améliorer la qualité du code](/visualstudio/test/improve-code-quality)**  
   
 |Fonctionnalité|Prise en charge avec Unity|Commentaires supplémentaires|  
 |-------------|--------------------------|-------------------------|  
@@ -129,8 +129,8 @@ Le développement d'applications pour des plateformes modernes implique de nombr
 |Fonctionnalité|Prise en charge avec Unity|Commentaires supplémentaires|  
 |-------------|--------------------------|-------------------------|  
 |Gérer les processus de publication des versions|Oui||  
-|Déploiement sur des serveurs pour le chargement indépendant via des scripts|Oui||  
-|Charger sur l’App Store|Partiel|Il existe des extensions qui peuvent automatiser ce processus pour certains App Stores.  Consultez [Extensions pour Visual Studio Team Services](https://marketplace.visualstudio.com/VSTS), par exemple l’[extension pour Google Play](https://marketplace.visualstudio.com/items?itemName=ms-vsclient.google-play).|  
+|Déploiement sur des serveurs pour le chargement de version test via des scripts|Oui||  
+|Télécharger vers le magasin d'applications|Partial|Il existe des extensions qui peuvent automatiser ce processus pour certains magasins d’applications.  Consultez [Extensions pour Visual Studio Team Services](https://marketplace.visualstudio.com/VSTS), par exemple l’[extension pour Google Play](https://marketplace.visualstudio.com/items?itemName=ms-vsclient.google-play).|  
   
 ## <a name="monitor-with-hockeyapp"></a>Analyser avec HockeyApp  
  Lien de référence : **[Analyser avec HockeyApp](https://www.hockeyapp.net/features/)**  

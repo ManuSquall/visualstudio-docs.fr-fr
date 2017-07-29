@@ -38,10 +38,10 @@ translation.priority.ht:
 - zh-cn
 - zh-tw
 ms.translationtype: Human Translation
-ms.sourcegitcommit: 47057e9611b824c17077b9127f8d2f8b192d6eb8
-ms.openlocfilehash: 699ad120c95500e04d238270b8ac282ad0a8d288
+ms.sourcegitcommit: 11a9cee75f912c5fb31cf4a031644abe9c63d744
+ms.openlocfilehash: d376d2f99ccfddb2d96797fa2db0e1ef3872f34b
 ms.contentlocale: fr-fr
-ms.lasthandoff: 05/13/2017
+ms.lasthandoff: 06/03/2017
 
 ---
 # <a name="vbc-task"></a>Vbc, tâche
@@ -68,7 +68,7 @@ Encapsule vbc.exe, qui produit des fichiers exécutables (.exe), des bibliothèq
 |`Imports`|Paramètre <xref:Microsoft.Build.Framework.ITaskItem>`[]` facultatif.<br /><br /> Importe des espaces de noms à partir des collections d’éléments spécifiées. Ce paramètre correspond au commutateur [/imports](/dotnet/visual-basic/reference/command-line-compiler/imports) du compilateur vbc.exe.|  
 |`KeyContainer`|Paramètre `String` facultatif.<br /><br /> Spécifie le nom du conteneur de la clé de chiffrement. Ce paramètre correspond au commutateur [/keycontainer](/dotnet/visual-basic/reference/command-line-compiler/keycontainer) du compilateur vbc.exe.|  
 |`KeyFile`|Paramètre `String` facultatif.<br /><br /> Spécifie le nom du fichier contenant la clé de chiffrement. Pour plus d’informations, consultez [/keyfile](/dotnet/visual-basic/reference/command-line-compiler/keyfile).|  
-|`LangVersion`|Paramètre de [chaîne](assetId:///String?qualifyHint=False&autoUpgrade=True) facultatif.<br /><br /> Spécifie la version du langage, « 9 » ou « 10 ».|  
+|`LangVersion`|Paramètre <xref:System.String?displayProperty=fullName> facultatif.<br /><br /> Spécifie la version du langage, « 9 » ou « 10 ».|  
 |`LinkResources`|Paramètre <xref:Microsoft.Build.Framework.ITaskItem>`[]` facultatif.<br /><br /> Crée un lien à une ressource .NET Framework dans le fichier de sortie ; le fichier de ressources n’est pas placé dans le fichier de sortie. Ce paramètre correspond au commutateur [/linkresource](/dotnet/visual-basic/reference/command-line-compiler/linkresource) du compilateur vbc.exe.|  
 |`MainEntryPoint`|Paramètre `String` facultatif.<br /><br /> Spécifie la classe ou le module qui contient la procédure `Sub Main`. Ce paramètre correspond au commutateur [/main](/dotnet/visual-basic/reference/command-line-compiler/main) du compilateur vbc.exe.|  
 |`ModuleAssemblyName`|Paramètre `String` facultatif.<br /><br /> Spécifie l’assembly dont ce module fait partie.|  

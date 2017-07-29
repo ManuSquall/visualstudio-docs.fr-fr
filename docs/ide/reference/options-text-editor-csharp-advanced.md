@@ -38,19 +38,20 @@ translation.priority.ht:
 - tr-tr
 - zh-cn
 - zh-tw
-translationtype: Human Translation
-ms.sourcegitcommit: 5db97d19b1b823388a465bba15d057b30ff0b3ce
-ms.openlocfilehash: d0d1bb04347f3b4ce4578a15acf8f9118a6ba02d
-ms.lasthandoff: 02/22/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: 5ea9179ad37514ffad4876177b05150eecc22def
+ms.openlocfilehash: 61a061b6a58b18451fc53c8d53f77889cc1ea253
+ms.contentlocale: fr-fr
+ms.lasthandoff: 05/24/2017
 
 ---
 # <a name="options-text-editor-c-advanced"></a>Options, Éditeur de texte, C#, Avancé
 Utilisez cette boîte de dialogue pour modifier les paramètres de mise en forme de l’éditeur, la refactorisation de code et les commentaires sur la documentation XML pour Visual C#. Pour accéder à cette boîte de dialogue, dans le menu **Outils**, cliquez sur **Options**, développez le dossier **Éditeur de texte**, développez **C#**, puis cliquez sur **Avancé**.  
   
 > [!NOTE]
->  Les boîtes de dialogue et les commandes de menu qui s'affichent peuvent être différentes de celles qui sont décrites dans l'aide, en fonction de vos paramètres actifs ou de l'édition utilisée. Pour modifier vos paramètres, choisissez **Importation et exportation de paramètres** dans le menu **Outils** . Pour plus d’informations, consultez [Personnalisation des paramètres de développement dans Visual Studio](http://msdn.microsoft.com/en-us/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
+>  Les boîtes de dialogue et les commandes de menu qui s'affichent peuvent être différentes de celles qui sont décrites dans l'aide, en fonction de vos paramètres actifs ou de l'édition utilisée. Pour modifier vos paramètres, choisissez **Importation et exportation de paramètres** dans le menu **Outils** . Pour plus d’informations, consultez [Personnaliser l’IDE Visual Studio](../../ide/personalizing-the-visual-studio-ide.md).  
   
-## <a name="outlining"></a>Mode Plan  
+## <a name="outlining"></a>mode Plan  
  Passer en mode Plan à l'ouverture des fichiers  
  Quand cette option est sélectionnée, le fichier de code passe automatiquement en mode Plan, ce qui crée des blocs de code réductibles. La première fois qu’un fichier est ouvert, les blocs #regions et les blocs de code inactifs sont réduits.  
   
@@ -91,7 +92,7 @@ Utilisez cette boîte de dialogue pour modifier les paramètres de mise en forme
   
 ## <a name="organize-usings"></a>Organiser les instructions Using  
  Placer les directives « System » en premier lors du tri des usings  
- Quand cette option est sélectionnée, des directives using `System` apparaissent avant les autres directives using. Pour plus d’informations, consultez [Trier les instructions Using](../../misc/sort-usings.md).  
+ Quand cette option est sélectionnée, des directives using `System` apparaissent avant les autres directives using. Pour plus d’informations, consultez Organiser les instructions Using dans [Visual C# IntelliSense](../../ide/visual-csharp-intellisense.md#automatic-code-generation).  
   
 ## <a name="see-also"></a>Voir aussi  
  [Commentaires sur la documentation XML](/dotnet/csharp/programming-guide/xmldoc/xml-documentation-comments)   

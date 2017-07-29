@@ -32,10 +32,11 @@ translation.priority.ht:
 - tr-tr
 - zh-cn
 - zh-tw
-translationtype: Human Translation
-ms.sourcegitcommit: 5db97d19b1b823388a465bba15d057b30ff0b3ce
-ms.openlocfilehash: 4d03ab21333e269d10ef9a013a11665ed3fbba92
-ms.lasthandoff: 02/22/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: 47057e9611b824c17077b9127f8d2f8b192d6eb8
+ms.openlocfilehash: 18627c9f14e82bef85ff433eea14d99653f78e68
+ms.contentlocale: fr-fr
+ms.lasthandoff: 05/13/2017
 
 ---
 # <a name="code-snippets-schema-reference"></a>Référence de schéma des extraits de code
@@ -433,7 +434,7 @@ is a great color. I love Blue.
 |[Default, élément](../ide/code-snippets-schema-reference.md#default)|Élément requis. Spécifie la valeur par défaut du littéral lorsque vous insérez l'extrait de code. Un élément `Default` doit contenir exactement un élément `Literal`.|  
 |[Function, élément](../ide/code-snippets-schema-reference.md#function)|Élément facultatif. Spécifie une fonction à exécuter lorsque le littéral reçoit le focus dans Visual Studio. Il peut y avoir zéro ou un élément `Function` dans un élément `Literal`.|  
 |[ID, élément](../ide/code-snippets-schema-reference.md#id)|Élément requis. Spécifie l'identificateur unique du littéral. Un élément `ID` doit contenir exactement un élément `Literal`.|  
-|[ToolTip, élément](../ide/code-snippets-schema-reference.md#tooltip)|Élément facultatif. Décrit la valeur attendue et l'utilisation du littéral. Un élément **peut contenir zéro ou un élément**Tooltip`Literal`.|  
+|[ToolTip, élément](../ide/code-snippets-schema-reference.md#tooltip)|Élément facultatif. Décrit la valeur attendue et l'utilisation du littéral. Un élément  **peut contenir zéro ou un élément** Tooltip`Literal`.|  
   
 |Parent, élément|Description|  
 |--------------------|-----------------|  
@@ -479,7 +480,7 @@ is a great color. I love Blue.
 |[Default, élément](../ide/code-snippets-schema-reference.md#default)|Élément requis. Spécifie la valeur par défaut du littéral lorsque vous insérez l'extrait de code. Un élément `Default` doit contenir exactement un élément `Literal`.|  
 |[Function, élément](../ide/code-snippets-schema-reference.md#function)|Élément facultatif. Spécifie une fonction à exécuter lorsque le littéral reçoit le focus dans Visual Studio. Il peut y avoir zéro ou un élément `Function` dans un élément `Literal`.|  
 |[ID, élément](../ide/code-snippets-schema-reference.md#id)|Élément requis. Spécifie l'identificateur unique du littéral. Un élément `ID` doit contenir exactement un élément `Literal`.|  
-|[ToolTip, élément](../ide/code-snippets-schema-reference.md#tooltip)|Élément facultatif. Décrit la valeur attendue et l'utilisation du littéral. Un élément **peut contenir zéro ou un élément**Tooltip`Literal`.|  
+|[ToolTip, élément](../ide/code-snippets-schema-reference.md#tooltip)|Élément facultatif. Décrit la valeur attendue et l'utilisation du littéral. Un élément  **peut contenir zéro ou un élément** Tooltip`Literal`.|  
 |[Type, élément](../ide/code-snippets-schema-reference.md#type)|Élément requis. Spécifie le type de l'objet. Un élément `Type` doit contenir exactement un élément `Object`.|  
   
 |Parent, élément|Description|  
@@ -532,7 +533,7 @@ is a great color. I love Blue.
  Spécifie le texte de raccourci utilisé pour insérer l'extrait de code. La valeur texte d'un élément `Shortcut` peut contenir uniquement des signes alphanumériques, des traits d'union (-) et des traits de soulignement (_).  
   
 > [!CAUTION]
->  _ et – ne sont pas des caractères pris en charge dans les raccourcis de l'extrait de code C++.  
+>  _ et - ne sont pas des caractères pris en charge dans les raccourcis de l’extrait de code C++.  
   
 ```xml  
 <Shortcut>  

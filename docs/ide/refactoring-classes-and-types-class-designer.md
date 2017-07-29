@@ -39,17 +39,18 @@ translation.priority.mt:
 - pl-pl
 - pt-br
 - tr-tr
-translationtype: Human Translation
-ms.sourcegitcommit: 5db97d19b1b823388a465bba15d057b30ff0b3ce
-ms.openlocfilehash: d0d537c3611faff3b81760daf95b6fc01e0d01a0
-ms.lasthandoff: 02/22/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: 47057e9611b824c17077b9127f8d2f8b192d6eb8
+ms.openlocfilehash: ba2ed6d0973e4775b1137c300608bc5ca1bdcb66
+ms.contentlocale: fr-fr
+ms.lasthandoff: 05/13/2017
 
 ---
 # <a name="refactoring-classes-and-types-class-designer"></a>Refactorisation des classes et des types (Concepteur de classes)
 Quand vous refactorisez du code, vous le rendez plus facile à comprendre et à gérer. Vous le rendez également plus efficace en changeant sa structure interne et la conception de ses objets, sans altérer son comportement externe. Utilisez le Concepteur de classes et la fenêtre Détails de classe pour réduire votre charge de travail et limiter le risque d'introduire des bugs quand vous refactorisez du code Visual C# .NET, Visual Basic .NET ou C++ dans votre projet Visual Studio.  
   
 > [!NOTE]
->  Les fichiers d'un projet peuvent être en lecture seule, car le projet est sous contrôle de code source et n'est pas extrait (projet référencé), ou ses fichiers sont marqués en lecture seule sur le disque. Quand vous travaillez dans un projet ayant l'un de ces états, vous avez plusieurs façons différentes d'enregistrer votre travail. Cela s'applique au code que vous refactorisez et au code que vous changez d'une autre façon, par exemple en le modifiant directement. Pour plus d’informations, consultez [Affichage d’informations en lecture seule (Concepteur de classes)](http://msdn.microsoft.com/en-us/33e2d3a9-1668-4d10-ae56-fa09b3156e0a).  
+>  Les fichiers d'un projet peuvent être en lecture seule, car le projet est sous contrôle de code source et n'est pas extrait (projet référencé), ou ses fichiers sont marqués en lecture seule sur le disque. Quand vous travaillez dans un projet ayant l’un de ces états, vous avez plusieurs façons différentes d’enregistrer votre travail. Cela s'applique au code que vous refactorisez et au code que vous changez d'une autre façon, par exemple en le modifiant directement. Pour plus d’informations, consultez [Affichage d’informations en lecture seule (Concepteur de classes)](http://msdn.microsoft.com/en-us/33e2d3a9-1668-4d10-ae56-fa09b3156e0a).  
   
 ## <a name="common-tasks"></a>Tâches courantes  
   
@@ -57,9 +58,9 @@ Quand vous refactorisez du code, vous le rendez plus facile à comprendre et à 
 |----------|------------------------|  
 |**Refactorisation des classes** : vous pouvez utiliser les opérations de refactorisation pour fractionner une classe en classes partielles ou pour implémenter une classe de base abstraite.|-   [Guide pratique pour fractionner une classe en classes partielles (Concepteur de classes)](../ide/how-to-split-a-class-into-partial-classes-class-designer.md)|  
 |**Utilisation des interfaces** : dans le Concepteur de classes, vous pouvez implémenter une interface pour le diagramme de classes en la connectant à une classe qui fournit du code pour les méthodes d’interface.|-   [Guide pratique pour implémenter une interface (Concepteur de classes)](../ide/how-to-implement-an-interface-class-designer.md)|  
-|**Refactorisation des types, des membres de type et des paramètres** : à l’aide du Concepteur de classes, vous pouvez renommer des types, substituer des membres de type ou les déplacer d’un type à un autre. Vous pouvez également créer des types Nullable.|-   [Attribution d’un nouveau nom aux types et membres de type](../ide/refactoring-classes-and-types-class-designer.md#RenamingTypesAndMembers)<br />-   [Déplacement des membres de type d’un type à un autre](../ide/refactoring-classes-and-types-class-designer.md#MovingTypeMembers)<br />-   [Guide pratique pour créer un type Nullable (Concepteur de classes)](../ide/how-to-create-a-nullable-type-class-designer.md)|  
+|**Refactorisation des types, des membres de type et des paramètres** : à l’aide du Concepteur de classes, vous pouvez renommer des types, substituer des membres de type ou les déplacer d’un type à un autre. Vous pouvez également créer des types Nullable.|-   [Attribution d'un nouveau nom aux types et membres de type](../ide/refactoring-classes-and-types-class-designer.md#RenamingTypesAndMembers)<br />-   [Déplacement des membres de type d’un type à un autre](../ide/refactoring-classes-and-types-class-designer.md#MovingTypeMembers)<br />-   [Guide pratique pour créer un type Nullable (Concepteur de classes)](../ide/how-to-create-a-nullable-type-class-designer.md)|  
   
-###  <a name="a-namerenamingtypesandmembersa-renaming-types-and-type-members"></a><a name="RenamingTypesAndMembers"></a> Attribution d’un nouveau nom aux types et membres de type  
+###  <a name="RenamingTypesAndMembers"></a> Attribution d’un nouveau nom aux types et membres de type  
  Au sein du Concepteur de classes, vous pouvez renommer un type ou un membre de type dans le diagramme de classes ou dans la fenêtre Propriétés. Dans la fenêtre Détails de classe, vous pouvez changer le nom d'un membre mais pas d'un type. Le changement de nom d'un type ou d'un membre de type se propage à toutes les fenêtres et tous les emplacements de code où apparaissait l'ancien nom.  
   
 ##### <a name="to-rename-a-name-in-the-class-designer"></a>Pour attribuer un nouveau nom dans le Concepteur de classes  
@@ -93,7 +94,7 @@ Quand vous refactorisez du code, vous le rendez plus facile à comprendre et à 
   
      Le nouveau nom se propage à l'ensemble des fenêtres et des emplacements de code du projet actif, où apparaissait l'ancien nom.  
   
-###  <a name="a-namemovingtypemembersa-moving-type-members-from-one-type-to-another"></a><a name="MovingTypeMembers"></a> Déplacement des membres de type d’un type à un autre  
+###  <a name="MovingTypeMembers"></a> Déplacement des membres de type d'un type à un autre  
  À l'aide du **Concepteur de classes**, vous pouvez déplacer un membre de type d'un type à un autre, si les deux types sont visibles dans le diagramme de classes actif.  
   
 ##### <a name="to-move-a-type-member-from-one-type-to-another"></a>Pour déplacer un membre de type d'un type à un autre  

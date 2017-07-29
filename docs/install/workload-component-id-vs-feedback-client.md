@@ -32,10 +32,10 @@ translation.priority.mt:
 - pt-br
 - tr-tr
 ms.translationtype: Human Translation
-ms.sourcegitcommit: 47c39bd711b69efdb863d71f11e3e472054a3ce3
-ms.openlocfilehash: 6b981d8ec1594da3db8fa1384ddeeee9da519837
+ms.sourcegitcommit: 47057e9611b824c17077b9127f8d2f8b192d6eb8
+ms.openlocfilehash: 5d9a1cd072ce56e0695240febdaff6fe6aa3f12f
 ms.contentlocale: fr-fr
-ms.lasthandoff: 04/06/2017
+ms.lasthandoff: 05/13/2017
 
 ---
 
@@ -45,9 +45,9 @@ Les tableaux de cette page listent les ID que vous pouvez utiliser pour installe
 
 En outre, notez ce qui suit concernant la page :
 
-* Chaque charge de travail possède sa propre section, suivie de l’ID de charge de travail et d’un tableau des composants disponibles pour cette charge.
+* Chaque charge de travail possède sa propre section, suivie de l’ID de charge de travail et d’une table des composants disponibles pour cette charge.
 * Par défaut, les composants **requis** sont installés lorsque vous installez la charge de travail. Si vous le souhaitez, vous pouvez également installer les composants **recommandés** et **facultatifs**.
-* Nous avons également ajouté une section qui liste les composants supplémentaires qui ne sont affiliés à aucune charge de travail.
+* Nous avons également ajouté une section qui répertorie les composants supplémentaires qui ne sont affiliés à aucune charge de travail.
 
 Pour plus d’informations sur l’utilisation de ces ID, consultez la page [Utiliser les paramètres de ligne de commande pour installer Visual Studio 2017 RC](use-command-line-parameters-to-install-visual-studio.md). Pour obtenir la liste des ID de charge de travail et de composant triés des autres produits, consultez la page [ID de composant et de charge de travail de Visual Studio 2017](workload-and-component-ids.md).
 

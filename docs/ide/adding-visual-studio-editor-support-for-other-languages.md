@@ -19,10 +19,11 @@ caps.latest.revision: 13
 author: kempb
 ms.author: kempb
 manager: ghogen
-translationtype: Human Translation
-ms.sourcegitcommit: 5db97d19b1b823388a465bba15d057b30ff0b3ce
-ms.openlocfilehash: 1901f0dde22fb44ecf3d1b549505590125999700
-ms.lasthandoff: 02/22/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: 47057e9611b824c17077b9127f8d2f8b192d6eb8
+ms.openlocfilehash: 65cb324c1a7ed91ad5209da7826a1899657a414f
+ms.contentlocale: fr-fr
+ms.lasthandoff: 05/13/2017
 
 ---
 # <a name="adding-visual-studio-editor-support-for-other-languages"></a>Ajout de la prise en charge de l’éditeur Visual Studio dans d’autres langages
@@ -38,7 +39,7 @@ Découvrez comment l’éditeur Visual Studio prend en charge la lecture et la n
 |||||||  
 |-|-|-|-|-|-|  
 |Bat|F#|Java|Markdown|Rust|Visual Basic|  
-|Clojure|Go|JavaDoc|Objective-C|ShaderLab|Visual C#|  
+|Clojure|Go|JavaDoc|Objective-C|ShaderLab|Visual C#|  
 |CMake|Groovy|JSON|Perl|ShellScript|Visual C++|  
 |CoffeeScript|HTML|LESS|Python|SQL|VBNet|  
 |CSS|INI|LUA|R|Swift|XML|  
@@ -60,7 +61,7 @@ Découvrez comment l’éditeur Visual Studio prend en charge la lecture et la n
   
 -   Visual C++  
   
--   Visual C#  
+-   Visual C#  
   
  Tous ces types de fichier offrent les fonctionnalités décrites précédemment même si la prise en charge d’un langage donné n’a pas encore été installée. L’installation de la prise en charge spécialisée pour certains langages peut fournir une prise en charge de langage supplémentaire, comme IntelliSense ou d’autres fonctionnalités de langage avancées comme les ampoules.  
   

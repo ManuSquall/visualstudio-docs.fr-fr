@@ -28,10 +28,11 @@ translation.priority.mt:
 - pl-pl
 - pt-br
 - tr-tr
-translationtype: Human Translation
-ms.sourcegitcommit: 2f67cbb9e3a2895dc6c35e68dbd6b262862c6514
-ms.openlocfilehash: 5a42f721c30dba9c14f7871a0d771f07054e2550
-ms.lasthandoff: 02/22/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: 47057e9611b824c17077b9127f8d2f8b192d6eb8
+ms.openlocfilehash: 8b1f56944190c60795d5bbd726388309caca7070
+ms.contentlocale: fr-fr
+ms.lasthandoff: 05/13/2017
 
 ---
 # <a name="sign-in-to-visual-studio"></a>Se connecter à Visual Studio
@@ -42,15 +43,15 @@ Vous pouvez éventuellement personnaliser et optimiser votre expérience de dév
 
 -   **Bénéficier d’un large éventail d’avantages** à partir du programme Visual Studio Dev Essentials, notamment de logiciels gratuits, de formations, d’une assistance et plus encore. Voir [Visual Studio Dev Essentials](http://aka.ms/vsdevhelp) pour obtenir de plus amples informations.  
 
--   **Synchroniser vos paramètres Visual Studio** - Les paramètres que vous personnalisez, comme les combinaisons de touches, la disposition des fenêtres et le thème de couleur, s'appliquent immédiatement lorsque vous vous connectez à Visual Studio sur un appareil. Consultez [Paramètres synchronisés dans Visual Studio](../ide/synchronized-settings-in-visual-studio.md).  
+-   **Synchroniser vos paramètres Visual Studio** : les paramètres que vous personnalisez, comme les combinaisons de touches, la disposition des fenêtres et le thème de couleur, s’appliquent immédiatement quand vous vous connectez à Visual Studio sur un appareil. Voir [Paramètres synchronisés dans Visual Studio](../ide/synchronized-settings-in-visual-studio.md).  
 
--   **Déverrouiller définitivement une édition de Visual Studio Express** - Vous pouvez utiliser n'importe quelle édition de Visual Studio Express aussi longtemps que vous le souhaitez, au lieu de vous limiter à la période d'évaluation de 30 jours.  
+-   **Déverrouiller définitivement une édition de Visual Studio Express** : vous pouvez utiliser n’importe quelle édition de Visual Studio Express aussi longtemps que vous le souhaitez, au lieu de vous limiter à la période d’évaluation de 30 jours.  
 
 -   **Déverrouiller l'édition Visual Studio Community** au lieu d'être limité à la période d'évaluation de 30 jours.  
 
--   **Prolonger la période d'évaluation de Visual Studio** - Vous pouvez utiliser Visual Studio Professional ou Visual Studio Enterprise pendant 90 jours supplémentaires, au lieu d'être limité à la période d'évaluation de 30 jours.  
+-   **Prolonger la période d’évaluation de Visual Studio** : vous pouvez utiliser Visual Studio Professional ou Visual Studio Enterprise pendant 90 jours supplémentaires, au lieu de vous limiter à la période d’évaluation de 30 jours.  
 
--   **Déverrouiller Visual Studio si vous utilisez un compte qui est associé à un abonnement MSDN ou VSO**. Consultez [Guide pratique pour déverrouiller Visual Studio](../ide/how-to-unlock-visual-studio.md).  
+-   **Déverrouiller Visual Studio si vous utilisez un compte qui est associé à un abonnement MSDN ou VSO**. Consultez [Déverrouillage de Visual Studio](../ide/how-to-unlock-visual-studio.md).  
 
 -   **Se connecter automatiquement à des services tels qu’Azure et Visual Studio Team Services** dans l’IDE sans demander à nouveau les informations d’identification pour le même compte.  
 

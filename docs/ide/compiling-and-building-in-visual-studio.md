@@ -1,7 +1,7 @@
 ---
 title: "Compilation et génération dans Visual Studio | Microsoft Docs"
 ms.custom: 
-ms.date: 11/04/2016
+ms.date: 7/14/2017
 ms.reviewer: 
 ms.suite: 
 ms.technology:
@@ -16,60 +16,48 @@ caps.latest.revision: 28
 author: kempb
 ms.author: kempb
 manager: ghogen
-translation.priority.ht:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
-translationtype: Human Translation
-ms.sourcegitcommit: 5581224b17a7b42f65b69f741f984a144d78fc26
-ms.openlocfilehash: f4ae98f4e9b7dbf4b1066120316ee5a167ae78f2
-ms.lasthandoff: 04/04/2017
+ms.translationtype: HT
+ms.sourcegitcommit: e48ebcafaca37505dbcc92bce682d0c6169004e1
+ms.openlocfilehash: 800fcd5ff96e9e6d05b79c4d6fc5ccf17ba3084b
+ms.contentlocale: fr-fr
+ms.lasthandoff: 07/26/2017
 
 ---
+
 # <a name="compiling-and-building-in-visual-studio"></a>Compilation et génération dans Visual Studio
-Vous pouvez utiliser Visual Studio pour générer des applications et créer des assemblys et des programmes exécutables à intervalles fréquents pendant un cycle de développement. En générant souvent votre code, vous pouvez identifier plus tôt les erreurs de compilation, telles qu'une syntaxe incorrecte, des mots clés mal orthographiés et des incompatibilités de types. Vous pouvez également détecter et corriger les erreurs d'exécution, telles que les erreurs de logique et les erreurs sémantiques, en générant et en exécutant souvent les versions Debug du code.  
-  
- Une fois qu'un projet ou une solution est entièrement développé et suffisamment débogué, il est possible de compiler ses composants dans une version Release. Par défaut, une version Release est optimisée et conçue pour être plus petite et s’exécuter plus rapidement qu’une version Debug. Pour plus d’informations, consultez [Procédure pas à pas : génération d’une application](../ide/walkthrough-building-an-application.md).  
-  
-## <a name="choosing-a-build-method"></a>Choix d'une méthode de génération  
- Vous pouvez générer une application à l'aide des options de build par défaut dans l'IDE, à l'invite de commandes ou à l'aide de Team Foundation Build. Chacune de ces options utilise MSBuild comme technologie sous-jacente, et chaque approche présente des avantages spécifiques, comme indiqué dans le tableau suivant.  
-  
-|Méthode de génération|Avantages|Pour plus d'informations|  
-|------------------|--------------|--------------------------|  
-|Utilisation de l'IDE|-   Vous pouvez créer plus facilement des builds et les exécuter immédiatement.<br />-   Vous pouvez exécuter des builds multiprocesseurs pour les projets C++ et C#.<br />-   Vous pouvez personnaliser certains aspects du système de génération.|[Génération et nettoyage de solutions et de projets dans Visual Studio](../ide/building-and-cleaning-projects-and-solutions-in-visual-studio.md)|  
-|Exécution d'une ligne de commande MSBuild|-   Vous pouvez générer des projets sans installer Visual Studio.<br />-   Vous pouvez exécuter des builds multiprocesseurs pour tous les types de projets.<br />-   Vous pouvez personnaliser la plupart des zones du système de génération.|[MSBuild](../msbuild/msbuild.md)|  
-|Utilisation de Team Foundation Build|-   Vous pouvez automatiser votre processus de génération. Par exemple, vous pouvez générer un ou plusieurs projets la nuit ou chaque fois le code est archivé. Vous pouvez également générer des projets sur les serveurs de build partagés plutôt que sur votre ordinateur de développement.<br />-   Vous pouvez spécifier rapidement le code que vous souhaitez générer, les tests à exécuter et d’autres options courantes.<br />-   Vous pouvez modifier le flux de travail de build et, si nécessaire, créer des activités de build pour effectuer des tâches profondément personnalisées.|[Générer l’application](http://msdn.microsoft.com/Library/a971b0f9-7c28-479d-a37b-8fd7e27ef692)|  
-  
-## <a name="building-from-the-ide"></a>Génération à partir de l'IDE  
- Lorsque vous créez un projet, les configurations de build par défaut sont définies pour ce projet, et une configuration de build de solution par défaut lui est assignée pour fournir un contexte aux builds. Les configurations de solution définissent comment les projets de la solution sont générés et déployés. Les configurations de projet sont un jeu de propriétés de projet qui sont uniques pour un type de plateforme et de build (par exemple, Release Win32). Vous pouvez modifier ces configurations par défaut, et créer vos propres configurations. Pour plus d’informations, consultez [Introduction au Concepteur de projets](http://msdn.microsoft.com/en-us/898dd854-c98d-430c-ba1b-a913ce3c73d7) et [NIB Guide pratique pour modifier des propriétés de projet et des paramètres de configuration](http://msdn.microsoft.com/en-us/e7184bc5-2f2b-4b4f-aa9a-3ecfcbc48b67).  
-  
- Dans l’IDE, vous pouvez effectuer les tâches additionnelles suivantes :  
-  
--   [Modifier le répertoire de sortie de génération](../ide/how-to-change-the-build-output-directory.md).  
-  
--   [Identifier les projets qui dépendent de la sortie d’un autre projet pour effectuer une génération correcte](../ide/how-to-create-and-remove-project-dependencies.md).  
-  
--   [Modifier la quantité d’informations contenues dans le journal de génération ou la fenêtre Sortie des builds](../ide/how-to-view-save-and-configure-build-log-files.md).  
-  
--   [Masquer les avertissements spécifiques du compilateur pour Visual C#, Visual C++ ou Visual Basic](../ide/how-to-suppress-compiler-warnings.md).  
-  
--   [Spécifier des actions de précompilation et de post-compilation personnalisées pour une build](../ide/specifying-custom-build-events-in-visual-studio.md).  
-  
--   Améliorer les performances de génération en utilisant des builds parallèles. Pour plus d’informations, consultez [Génération parallèle de plusieurs projets](../msbuild/building-multiple-projects-in-parallel-with-msbuild.md) ou le billet de blog [Réglage du parallélisme de génération C++](http://blogs.msdn.com/b/msbuild/archive/2010/03/08/tuning-c-build-parallelism-in-vs2010.aspx).  
+
+L’exécution d’une génération crée des assemblys et des applications exécutables à partir de votre code source à n’importe quel moment de votre cycle de développement. D’une façon générale, le processus de génération est très similaire entre de nombreux types différents de projets, comme Windows, ASP.NET, des applications mobiles, etc. Le processus de génération est également très similaire entre les langages de programmation, comme C#, Visual Basic, C++ et F#. 
+
+En générant souvent une build à partir de votre code, vous pouvez identifier rapidement les erreurs de compilation, comme une syntaxe incorrecte, des mots clés mal orthographiés et des incompatibilités de types. Vous pouvez aussi détecter et corriger les erreurs d’exécution, comme les erreurs de logique et les erreurs sémantiques, en générant et en exécutant souvent des versions Debug du code.  
+
+Une build réussie est essentiellement une validation que le code source de l’application contient une syntaxe correcte et que toutes les références statiques à des bibliothèques, des assemblys et à d’autres composants ont été résolues. Le résultat est une application exécutable dont le fonctionnement correct peut ensuite être testé à la fois dans un [environnement de débogage](../debugger/index.md) et par différents tests manuels et automatisés pour [vérifier la qualité du code](../test/improve-code-quality.md). Une fois que l’application a été entièrement testée, vous pouvez alors compiler une version Release à déployer auprès de vos clients. Pour une présentation de cette procédure, consultez [Procédure pas à pas : génération d’une application](../ide/walkthrough-building-an-application.md).  
+
+Dans la famille de produits Visual Studio, vous pouvez utiliser trois méthodes pour générer une application : l’IDE de Visual Studio, les outils en ligne de commande MSBuild et Team Foundation Build sur Visual Studio Team Services :
+ 
+| Méthode de génération | Avantages | 
+| --- |--- | --- |  
+| IDE |- Créer des builds immédiatement et les tester dans un débogueur.<br />- Exécuter des builds multiprocesseurs pour des projets C++ et C#.<br />- Personnaliser différents aspects du système de génération. |
+| Ligne de commande MSBuild| - Générer des projets sans installer Visual Studio.<br />- Exécuter des builds multiprocesseurs pour tous les types de projets.<br />- Personnaliser la plupart des éléments du système de génération.|
+| Team Foundation Build | - Automatiser votre processus de génération dans un pipeline d’intégration continue/de livraison continue.<br />- Appliquer des tests automatisés avec chaque build.<br />- Utiliser des ressources cloud virtuellement illimitées pour les processus de génération.<br />- Modifier le flux de travail de la génération et créer des activités de génération pour effectuer des tâches fortement personnalisées.|  
+
+La documentation de cette section contient plus de détails sur le processus de génération avec l’IDE. Pour plus d’informations sur les autres méthodes, consultez [MSBuild](../msbuild/msbuild.md) et [Intégration et déploiement continus](https://www.visualstudio.com/docs/build/overview), respectivement.
+
+## <a name="overview-of-building-from-the-ide"></a>Vue d’ensemble de la génération à partir de l’IDE  
+
+Quand vous créez un projet, Visual Studio crée des configurations de build par défaut pour le projet et la solution qui contient le projet.  Ces configurations définissent comment les solutions et les projets sont générés et déployés. En particulier, les configurations de projet sont uniques pour une plateforme cible (comme Windows ou Linux) et un type de build (comme Debug ou Release). Vous pouvez modifier ces configurations comme vous le souhaitez et aussi créer vos propres configurations selon vos besoins.
+
+Pour une première présentation de la génération dans l’IDE, consultez [Procédure pas à pas : génération d’une application](walkthrough-building-an-application.md).  
+
+Consultez ensuite [Génération et nettoyage des solutions et de projets dans Visual Studio](building-and-cleaning-projects-and-solutions-in-visual-studio.md) pour en savoir plus sur les personnalisations des différents aspects que vous pouvez apporter au processus. Les personnalisations portent notamment sur le [changement des répertoires de sortie](how-to-change-the-build-output-directory.md), la [spécification d’événements de build personnalisés](specifying-custom-build-events-in-visual-studio.md), la [gestion des dépendances du projet](how-to-create-and-remove-project-dependencies.md), la [gestion des fichiers journaux de génération](how-to-view-save-and-configure-build-log-files.md) et la [suppression des avertissements du compilateur](how-to-suppress-compiler-warnings.md).
+
+À partir de là, vous pouvez explorer différentes autres tâches :
+- [Présentation des configurations de build](understanding-build-configurations.md)
+- [Présentation des plateformes de génération](understanding-build-platforms.md)
+- [Gestion des propriétés des projets et des solutions](managing-project-and-solution-properties.md).  
+- Spécification des événements de build dans [C#](how-to-specify-build-events-csharp.md) et [Visual Basic](how-to-specify-build-events-visual-basic.md). 
+- [Définition des options de génération](reference/options-dialog-box-projects-and-solutions-build-and-run.md)
+- [Génération parallèle de plusieurs projets](../msbuild/building-multiple-projects-in-parallel-with-msbuild.md).  
   
 ## <a name="see-also"></a>Voir aussi  
- [Procédure pas à pas : génération d’une application](../ide/walkthrough-building-an-application.md)   
- [Présentation des configurations de build](../ide/understanding-build-configurations.md)   
- [Présentation des plateformes de générations](../ide/understanding-build-platforms.md)   
- [Génération de sites web](http://msdn.microsoft.com/Library/a9cbb88c-8fff-4c67-848b-98fbfd823193)   
- [Guide pratique pour créer et supprimer les dépendances d’un projet](../ide/how-to-create-and-remove-project-dependencies.md)
+
+- [Génération (compilation) de projets de site web](http://msdn.microsoft.com/Library/a9cbb88c-8fff-4c67-848b-98fbfd823193)   

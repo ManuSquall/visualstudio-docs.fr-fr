@@ -1,53 +1,28 @@
 # [Python dans Visual Studio](python-in-visual-studio.md)
-
 ## [Installation](installation.md)
-
 ### [Environnements Python](python-environments.md)
-
+### [Gestion de Python sur Azure App Service](managing-python-on-azure-app-service.md)
 ### [Kit SDK Azure pour Python](azure-sdk-for-python.md)
-
 ## [Bien démarrer avec Python](getting-started.md)
-
 ### [Publication sur Azure](publishing-to-azure.md)
-
 ### [Création d’une extension C++ pour Python](cpp-and-python.md)
-
 ## [Projets Python](python-projects.md)
-
 ### [Modèles de projets web](template-web.md)
-
 ### [Modèle de projet web Django](template-django.md)
-
 ### [Modèle de service cloud Azure](template-azure-cloud-service.md)
-
 ## [Modification du code](code-editing.md)
-
 ### [Mise en forme du code](code-formatting.md)
-
 ### [Refactorisation du code](code-refactoring.md)
-
 ### [Utilisation de PyLint](code-pylint.md)
-
 ## [Interactive Python (REPL)](interactive-repl.md)
-
 ### [Utilisation d’IPython REPL](interactive-repl-ipython.md)
-
 ## [Débogage](debugging.md)
-
 ### [Débogage distant Azure](debugging-azure-remote.md)
-
 ### [Résolution des problèmes du débogage distant Azure](debugging-azure-remote-troubleshooting.md)
-
 ### [Débogage distant multiplateforme](debugging-cross-platform-remote.md)
-
 ### [Débogage en mode mixte Python/C++](debugging-mixed-mode.md)
-
 ### [Symboles de débogage en mode mixte](debugging-symbols-for-mixed-mode.md)
-
 ## [Options](options.md)
-
 ## [Profilage](profiling.md)
-
 ## [Tests unitaires](unit-testing.md)
-
 ## [Utilisation de l’extension Cookiecutter](cookiecutter.md)

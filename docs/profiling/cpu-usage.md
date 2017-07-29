@@ -29,16 +29,16 @@ translation.priority.mt:
 - pt-br
 - tr-tr
 ms.translationtype: Human Translation
-ms.sourcegitcommit: 47057e9611b824c17077b9127f8d2f8b192d6eb8
-ms.openlocfilehash: 8ef43b82ba8a9ca138872a152e8811174e20d1fe
+ms.sourcegitcommit: 795bf9746c4ae48ac04141a05ba56462ecb90482
+ms.openlocfilehash: 74e69f0d5d04192eb801f5e56e1a4ee6ca2cc57a
 ms.contentlocale: fr-fr
-ms.lasthandoff: 05/13/2017
+ms.lasthandoff: 06/23/2017
 
 ---
 # <a name="analyze-cpu-usage"></a>Analyser l'utilisation de l'UC
 Lorsque vous devez étudier les problèmes de performances de votre application, un bon point de départ consiste à comprendre son utilisation du processeur. L’outil **Utilisation du processeur** vous montre où le processeur exécute du code Visual C++, Visual C#/Visual Basic et JavaScript. À compter de Visual Studio 2015 Update 1, vous pouvez afficher une répartition par fonction de l’utilisation du processeur sans quitter le débogueur. Vous pouvez activer et désactiver le profilage du processeur pendant le débogage, et afficher les résultats quand l’exécution est arrêtée, par exemple à un point d’arrêt.  
   
-Vous disposez de plusieurs options pour exécuter et gérer votre session de diagnostic. Par exemple, vous pouvez exécuter l’outil **Utilisation du processeur** sur les ordinateurs locaux ou distants, ou bien dans un simulateur ou un émulateur. Vous pouvez analyser les performances d'un projet ouvert dans Visual Studio, attaché à une application en cours d'exécution, ou démarrer une application installée à partir du Windows Store. Pour plus d’informations, consultez [Exécution des outils de profilage avec ou sans débogueur](../profiling/running-profiling-tools-with-or-without-the-debugger.md). Pour obtenir une procédure pas à pas qui analyse les performances d’une application du Windows Store, consultez [Analyser l’utilisation de l’UC dans les applications du Windows Store](https://msdn.microsoft.com/en-us/library/windows/apps/dn641982.aspx). 
+Vous disposez de plusieurs options pour exécuter et gérer votre session de diagnostic. Par exemple, vous pouvez exécuter l’outil **Utilisation du processeur** sur les ordinateurs locaux ou distants, ou bien dans un simulateur ou un émulateur. Vous pouvez analyser les performances d'un projet ouvert dans Visual Studio, attaché à une application en cours d'exécution, ou démarrer une application installée à partir du Windows Store. Pour plus d’informations, consultez [Exécution des outils de profilage avec ou sans débogueur](../profiling/running-profiling-tools-with-or-without-the-debugger.md). Pour obtenir une procédure pas à pas qui analyse les performances d’une application du Windows Store, consultez [Analyser l’utilisation de l’UC dans les applications du Windows Store](analyze-cpu-usage-in-a-windows-universal-app.md). 
 
 Nous vous montrons ici comment collecter et analyser l’utilisation de l’UC avec les versions finales. Pour analyser l’utilisation de l’UC pendant le débogage, consultez [Guide du débutant en profilage des performances](../profiling/beginners-guide-to-performance-profiling.md). 
   
@@ -88,7 +88,7 @@ Nous vous montrons ici comment collecter et analyser l’utilisation de l’UC a
 |![Étape 4](../profiling/media/procguid_4.png "ProcGuid_4")|Les nœuds enfants d'une méthode contiennent des données seulement pour les appels de la méthode parente. Lorsque l'option **Afficher le Code externe** est désactivée, les méthodes d'application peuvent également contenir un nœud **[Code externe]** .|  
   
 ####  <a name="BKMK_External_Code"></a> Code externe  
- Le code externe correspond aux fonctions des composants système et framework exécutés par le code que vous écrivez. Le code externe inclut les fonctions qui démarrent et arrêtent l'application, dessinent l'interface utilisateur, contrôlent les threads et fournissent d'autres services de bas niveau à l'application. Dans la plupart des cas, vous ne serez pas intéressé par le code externe ; par conséquent, l’arborescence des appels de l’utilisation du processeur regroupe les fonctions externes d’une méthode utilisateur en un seul nœud **[Code externe]** .  
+ Le code externe correspond aux fonctions des composants système et infrastructure exécutés par le code que vous écrivez. Le code externe inclut les fonctions qui démarrent et arrêtent l'application, dessinent l'interface utilisateur, contrôlent les threads et fournissent d'autres services de bas niveau à l'application. Dans la plupart des cas, vous ne serez pas intéressé par le code externe ; par conséquent, l’arborescence des appels de l’utilisation du processeur regroupe les fonctions externes d’une méthode utilisateur en un seul nœud **[Code externe]** .  
   
  Quand vous voulez afficher les chemins d'appel du code externe, choisissez **Afficher le code externe** dans la liste **Filtrer la vue** , puis **Appliquer**.  
   

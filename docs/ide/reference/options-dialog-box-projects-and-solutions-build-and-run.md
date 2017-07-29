@@ -1,80 +1,65 @@
 ---
-title: "Options (bo&#238;te de dialogue), Projets et solutions, G&#233;n&#233;rer et ex&#233;cuter | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-general"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "VS.ToolsOptionsPages.Projects.Build_and_Run"
-  - "VS.ToolsOptionsPag.Projects.Build_and_Run"
-helpviewer_keywords: 
-  - "builds (Visual Studio), configuration"
-  - "actions d'exécution"
-  - "débogueur, options d’exécution"
+title: "Options (boîte de dialogue), Projets et solutions, Générer et exécuter | Microsoft Docs"
+ms.custom: 
+ms.date: 7/14/2017
+ms.reviewer: 
+ms.suite: 
+ms.technology:
+- vs-ide-general
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords:
+- VS.ToolsOptionsPages.Projects.Build_and_Run
+- VS.ToolsOptionsPag.Projects.Build_and_Run
+helpviewer_keywords:
+- builds [Visual Studio], setting up
+- run actions
+- debugger, run options
 ms.assetid: c884976e-c0df-4c6d-8e3a-856ea2bd547c
 caps.latest.revision: 20
-author: "kempb"
-ms.author: "kempb"
-manager: "ghogen"
-caps.handback.revision: 20
----
-# Options (bo&#238;te de dialogue), Projets et solutions, G&#233;n&#233;rer et ex&#233;cuter
-[!INCLUDE[vs2017banner](../../code-quality/includes/vs2017banner.md)]
+author: kempb
+ms.author: kempb
+manager: ghogen
+ms.translationtype: HT
+ms.sourcegitcommit: e48ebcafaca37505dbcc92bce682d0c6169004e1
+ms.openlocfilehash: 8e5165b4b17195e5f9172dd25962c9486a7aeeeb
+ms.contentlocale: fr-fr
+ms.lasthandoff: 07/26/2017
 
-Dans cette boîte de dialogue, vous pouvez spécifier le nombre maximal de projets Visual C\+\+ ou Visual C\# pouvant être générés simultanément, certains comportements de génération par défaut et certains paramètres du journal de génération.  Pour ouvrir la boîte de dialogue **Options**, choisissez **Outils**, **Options** dans la barre de menus.  Pour accéder à ce jeu d'options, développez **Projets et solutions**, puis choisissez **Générer et exécuter**.  
+---
+
+# <a name="options-dialog-box--projects-and-solutions-build-and-run"></a>Options (boîte de dialogue), Projets et solutions, Générer et exécuter
+
+Dans cette boîte de dialogue, vous pouvez spécifier le nombre maximal de projets Visual C++ ou Visual C# pouvant être générés simultanément, certains comportements de génération par défaut et certains paramètres du journal de génération. Pour accéder à ces options, sélectionnez **Outils > Options**, développez **Projets et solutions** et sélectionnez **Générer et exécuter**.
   
-## Liste UIElement  
- **Nombre maximal de générations de projets en parallèle**  
- Spécifie le nombre maximal de projets Visual C\+\+ et Visual C\# qui peuvent être générés en même temps.  Pour optimiser le processus de génération, le nombre maximal de générations de projets en parallèle est automatiquement défini par rapport au nombre de processeurs équipant votre ordinateur.  Le nombre maximal est 32.  
-  
- **Générer uniquement des projets de démarrage et des dépendances à l'exécution**  
- Seul le projet de démarrage et ses dépendances sont générés si cette case est cochée quand vous appuyez sur la touche F5, quand vous choisissez **Déboguer**, **Démarrer** dans la barre de menus, ou quand vous choisissez **Build**, **Build** dans la barre de menus.  Tous les projets, dépendances et fichiers solution sont générés si cette case est décochée quand vous appuyez sur la touche F5, quand vous choisissez **Déboguer**, **Démarrer** dans la barre de menus, ou quand vous choisissez **Build**, **Build** dans la barre de menus.  Cette option est décochée par défaut.  
-  
- **À l'exécution, lorsque les projets sont obsolètes**  
- > [!NOTE]
->  Cette liste s'applique aux projets [!INCLUDE[vcprvc](../../debugger/includes/vcprvc_md.md)] uniquement.  
-  
- Par défaut, un message s'affiche si une configuration de projet est obsolète quand vous appuyez sur la touche F5 ou quand vous choisissez **Déboguer**, **Démarrer** dans la barre de menus.  Vous pouvez spécifier s'il faut ou non générer le projet obsolète, et si un message doit s'afficher.  Utilisez cette option pour spécifier si le message s'affiche et, s'il ne s'affiche pas, indiquer le comportement de génération souhaité.  
-  
- **Toujours générer**  
- Le message ne s'affiche pas, et le projet est généré malgré sa configuration obsolète.  Pour spécifier cette option, cochez **Ne plus afficher cette boîte de dialogue** dans le message et cliquez sur le bouton **Oui**.  
-  
- **Ne jamais générer**  
- Le message ne s'affiche pas, et le projet n'est pas généré.  Pour spécifier cette option, cochez **Ne plus afficher cette boîte de dialogue** dans le message et cliquez sur le bouton **Non**.  
-  
- **Inviter à générer**  
- Affiche le message chaque fois qu'une configuration de projet est obsolète.  
-  
- **À l'exécution, lors d'erreurs de génération ou de déploiement**  
- Si des erreurs de génération se produisent quand vous démarrez une génération à partir du menu **Build**, un message s'affiche.  Vous pouvez spécifier s'il faut continuer en démarrant l'application et si le message doit s'afficher dès qu'une erreur de génération se produit.  Utilisez cette option pour spécifier si le message s'affiche et, s'il ne s'affiche pas, indiquer le comportement souhaité.  
-  
-> [!NOTE]
->  Cette option s'applique aux projets [!INCLUDE[vcprvc](../../debugger/includes/vcprvc_md.md)] uniquement.  
-  
- **Inviter à lancer**  
- Affiche un message chaque fois qu'une erreur de génération se produit.  
-  
- **Ne pas lancer**  
- Le message ne s'affiche pas, et l'application n'est pas démarrée.  Pour spécifier cette option, cochez **Ne plus afficher cette boîte de dialogue** dans le message et cliquez sur le bouton **Non**.  
-  
- **Lancer l'ancienne version**  
- Le message ne s'affiche pas, et la nouvelle version de l'application générée n'est pas démarrée.  Pour spécifier cette option, cochez **Ne plus afficher cette boîte de dialogue** dans le message et cliquez sur le bouton **Oui**.  
-  
- **Pour les nouvelles solutions, utiliser le projet sélectionné actuellement comme projet de démarrage**  
- Si cette case est cochée, toutes les nouvelles solutions utilisent le projet actuellement sélectionné comme projet de démarrage.  
-  
- **Commentaires relatifs à la sortie de génération du projet MSBuild**  
- Détermine quelles informations s'affichent dans la fenêtre **Sortie** pour la génération.  
-  
- **Commentaires du fichier journal de génération du projet MSBuild**  
- > [!NOTE]
->  Cette option s'applique aux projets Visual C\+\+ uniquement.  
-  
- Détermine quelles informations sont écrites dans le fichier journal de génération, situé dans \\...  \\*NomProjet*\\Debug\\*NomProjet*.log.  
-  
-## Voir aussi  
- [Génération d'applications dans Visual Studio](../../ide/compiling-and-building-in-visual-studio.md)
+**Nombre maximal de générations de projets en parallèle**  
+Spécifie le nombre maximal de projets Visual C++ et Visual C# qui peuvent être générés en même temps. Pour optimiser le processus de génération, le nombre maximal de générations de projets en parallèle est automatiquement défini par rapport au nombre de processeurs équipant votre ordinateur. Le nombre maximal est 32.  
+
+**Générer uniquement des projets de démarrage et des dépendances à l'exécution**  
+Génère uniquement le projet de démarrage et ses dépendances lorsque vous utilisez la touche F5, sélectionnez la commande de menu **Déboguer > Démarrer** ou les commandes applicables du menu **Générer**. Si cette option est décochée, tous les projets et toutes les dépendances sont générés. 
+
+**À l'exécution, lorsque les projets sont obsolètes**  
+*S’applique aux projets [!INCLUDE[vcprvc](../../code-quality/includes/vcprvc_md.md)] uniquement.*
+
+Lors de l’exécution d’un projet avec F5 ou la commande **Déboguer > Démarrer**, le paramètre par défaut **Inviter à générer** affiche un message si une configuration de projet est obsolète. Sélectionnez **Toujours générer** pour générer le projet chaque fois qu’il est exécuté. Sélectionnez **Jamais générer** pour supprimer toutes les builds automatiques quand un projet est exécuté.
+
+**À l’exécution, lors d’erreurs de génération ou de déploiement**  
+*S’applique aux projets [!INCLUDE[vcprvc](../../code-quality/includes/vcprvc_md.md)] uniquement.*
+
+Lors de l’exécution d’un projet avec F5 ou la commande **Déboguer > Démarrer**, le paramètre par défaut **Inviter à générer** affiche un message si un projet doit être exécuté même si la génération a échoué. Sélectionnez **Lancer l’ancienne version** pour lancer automatiquement la dernière build correcte, ce qui peut entraîner des incompatibilités entre le code en cours d’exécution et le code source. Sélectionnez **Ne pas lancer** pour supprimer le message.
+
+**Pour les nouvelles solutions, utiliser le projet sélectionné actuellement comme projet de démarrage**  
+Quand cette option est définie, les nouvelles solutions utilisent le projet sélectionné comme projet de démarrage.  
+
+**Commentaires relatifs à la sortie de build du projet MSBuild**  
+Détermine quelles informations s’affichent dans la fenêtre **Sortie** de la build.  
+
+**Commentaires du fichier journal de génération du projet MSBuild**  
+*S’applique aux projets [!INCLUDE[vcprvc](../../code-quality/includes/vcprvc_md.md)] uniquement.*
+
+Détermine quelles informations sont écrites dans le fichier journal de build, qui se trouve dans \\...\\*Nom_Projet*\Debug\\*Nom_Projet*.log.  
+
+## <a name="see-also"></a>Voir aussi  
+-[Compilation et génération](../../ide/compiling-and-building-in-visual-studio.md)
+- [Options (boîte de dialogue), Projets et solutions](projects-and-solutions-options-dialog-box.md)
+- [Options (boîte de dialogue), Projets et solutions, Projets web](options-dialog-box-projects-and-solutions-web-projects.md)

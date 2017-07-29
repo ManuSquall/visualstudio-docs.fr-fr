@@ -33,10 +33,11 @@ translation.priority.ht:
 - tr-tr
 - zh-cn
 - zh-tw
-translationtype: Human Translation
-ms.sourcegitcommit: 5658ecf52637a38bc3c2a5ad9e85b2edebf7d445
-ms.openlocfilehash: 47cc71da3637ae7f3bdb7ff4b09451a87d546bff
-ms.lasthandoff: 02/22/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: 3d32d11a430227800cb3ed53831a9565eb6adeb3
+ms.openlocfilehash: e165ec6487a17819313dacd819ca1147b9953339
+ms.contentlocale: fr-fr
+ms.lasthandoff: 05/30/2017
 
 ---
 # <a name="localizing-applications"></a>Localisation d'applications
@@ -59,7 +60,7 @@ La *localisation* est le processus de personnalisation de votre application pour
  [Introduction aux applications internationales basées sur le .NET Framework](../ide/introduction-to-international-applications-based-on-the-dotnet-framework.md)  
  Décrit les concepts relatifs au développement de logiciels pour un marché international à l’aide de Visual Basic ou de Visual C#.  
   
- [Globalisation des Windows Forms](http://msdn.microsoft.com/Library/72f6cd92-83be-45ec-aa37-9cb8e3ebc3c5)  
+ [Globalisation des Windows Forms](/dotnet/framework/winforms/advanced/globalizing-windows-forms)  
  Fournit des liens vers des pages sur la création d’applications Windows qui prennent en charge plusieurs cultures.  
   
  [Globalisation et localisation](http://msdn.microsoft.com/Library/8ef3838e-9d05-4236-9dd0-ceecff9df80d)  

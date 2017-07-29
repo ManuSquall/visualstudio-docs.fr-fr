@@ -33,10 +33,11 @@ translation.priority.ht:
 - tr-tr
 - zh-cn
 - zh-tw
-translationtype: Human Translation
-ms.sourcegitcommit: ca7c86466fa23fb21a932f26dc24e37c71cf29b4
-ms.openlocfilehash: 9c9e9e8c63d69e797a28ce4f8b1ac0adcf074b77
-ms.lasthandoff: 04/05/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: 5ea9179ad37514ffad4876177b05150eecc22def
+ms.openlocfilehash: aecc19cb20592940ab773322764e5383365b3865
+ms.contentlocale: fr-fr
+ms.lasthandoff: 05/24/2017
 
 ---
 # <a name="options-text-editor-cc-advanced"></a>Options, Éditeur de texte, C/C++, Avancé
@@ -45,7 +46,7 @@ En modifiant ces options, vous pouvez changer le comportement lié à IntelliSen
  Pour accéder à cette page, dans le volet gauche de la boîte de dialogue **Options**, développez **Éditeur de texte**, **C/C++**, puis choisissez **Avancé**.  
   
 > [!NOTE]
->  Il est possible que pour certains des éléments de l'interface utilisateur de Visual Studio, votre ordinateur affiche des noms ou des emplacements différents de ceux indiqués dans les instructions suivantes. L’édition de Visual Studio dont vous disposez et les paramètres que vous utilisez déterminent ces éléments. Consultez [Personnalisation des paramètres de développement dans Visual Studio](http://msdn.microsoft.com/en-us/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
+>  Il est possible que pour certains des éléments de l'interface utilisateur de Visual Studio, votre ordinateur affiche des noms ou des emplacements différents de ceux indiqués dans les instructions suivantes. L'édition de Visual Studio dont vous disposez et les paramètres que vous utilisez déterminent ces éléments. Consultez [Personnaliser l’IDE Visual Studio](../../ide/personalizing-the-visual-studio-ide.md).  
   
 ## <a name="browsingnavigation"></a>Navigation de fichiers/répertoires  
  Vous ne devez jamais utiliser ces options, sauf dans les rares cas où une solution est tellement volumineuse que l’activité de base de données consomme une quantité inacceptable de ressources système.  
@@ -106,10 +107,10 @@ En modifiant ces options, vous pouvez changer le comportement lié à IntelliSen
  L’emplacement de secours est l’endroit où les fichiers de support IntelliSense et SDF (par exemple, iPCH) sont placés quand l’emplacement principal (même répertoire que la solution) n’est pas utilisé. Cette situation peut se produire si l’utilisateur n’a pas l’autorisation d’écrire dans le répertoire de solution ou si le répertoire de solution se trouve sur un appareil lent. L’emplacement de secours par défaut est le répertoire temp de l’utilisateur.  
   
  **Toujours utiliser l’emplacement de secours**  
- Indique que la base de données de navigation du code et les fichiers IntelliSense doivent toujours être stockés dans un dossier que vous spécifiez comme « Emplacement de secours », et non avec le fichier .sln. L’IDE n’essaie jamais de placer les fichiers SDF ou iPCH à côté du répertoire de solution et utilise toujours l’emplacement de secours.  
+ Indique que la base de données de navigation du code et les fichiers IntelliSense doivent toujours être stockés dans un dossier que vous spécifiez comme « Emplacement de secours », et non avec le fichier .sln. L’IDE n’essaie jamais de placer les fichiers SDF ou iPCH à côté du répertoire de solution et utilise toujours l’emplacement de secours.  
   
  **Ne pas avertir si l’emplacement de secours est utilisé**  
- Vous n’êtes pas informé ou sollicité si un emplacement de secours est utilisé. Normalement, l’IDE vous indique s’il a dû utiliser l’emplacement de secours. Cette option désactive cet avertissement.  
+ Vous n’êtes pas informé ni sollicité si un « emplacement de secours » est utilisé. Normalement, l’IDE vous indique s’il a dû utiliser l’emplacement de secours. Cette option désactive cet avertissement.  
   
  **Emplacement de secours**  
  Cette valeur est utilisée comme emplacement secondaire pour stocker la base de données de navigation du code ou les fichiers IntelliSense. Par défaut, votre répertoire temporaire est votre emplacement de secours. L’IDE crée un sous-répertoire sous le chemin spécifié (ou le répertoire temp) qui inclut le nom de la solution avec un hachage du chemin complet de la solution, ce qui évite les problèmes de noms de solution identiques.  
@@ -134,7 +135,7 @@ En modifiant ces options, vous pouvez changer le comportement lié à IntelliSen
  Désactive la saisie semi-automatique des instructions `#include`.  
   
  **Utiliser la barre oblique dans la saisie semi-automatique des #include**  
- Déclenche la saisie semi-automatique des instructions `#include` quand « / » est utilisé. Le délimiteur par défaut est une barre oblique inverse « \ ». Le compilateur peut accepter les deux, donc utilisez cette option pour spécifier le délimiteur que votre base de code utilise.  
+ Déclenche la saisie semi-automatique des instructions `#include` quand « / » est utilisé. Le délimiteur par défaut est une barre oblique inverse ’\'. Le compilateur peut accepter les deux, donc utilisez cette option pour spécifier le délimiteur que votre base de code utilise.  
   
  **Unités de traduction mises en cache maximum**  
  Nombre maximal d’unités de traduction qui restent actives à tout moment pour les demandes IntelliSense. Vous devez spécifier une valeur entre 2 et 15. Ce nombre est directement lié au nombre maximal de processus VCPkgSrv.exe qui s’exécutent (pour une instance donnée de Visual Studio). La valeur par défaut est 2, mais si vous avez de la mémoire disponible, vous pouvez augmenter cette valeur et éventuellement obtenir des performances légèrement supérieures dans IntelliSense.  
@@ -170,7 +171,7 @@ En modifiant ces options, vous pouvez changer le comportement lié à IntelliSen
  Pour des motifs de performances, « Rechercher toutes les références » affiche par défaut les résultats de recherche en texte brut au lieu d’utiliser IntelliSense pour vérifier chaque candidat. Vous pouvez décocher cette case pour obtenir des résultats plus précis sur toutes les opérations de recherche. Pour appliquer des filtres par recherche, ouvrez le menu contextuel de la liste des résultats, puis choisissez « Résoudre les résultats ».  
   
  **Masquer les éléments non confirmés**  
- Masquez les éléments non confirmés dans les résultats de « Rechercher toutes les références ». Si vous annuler l’option « Désactiver la résolution », vous pouvez utiliser cette option pour masquer les éléments non confirmés dans les résultats.  
+ Masquez les éléments non confirmés dans les résultats de « Rechercher toutes les références ». Si vous annulez l’option « Désactiver la résolution », vous pouvez utiliser cette option pour masquer les éléments non confirmés dans les résultats.  
   
  **Désactiver la mise en surbrillance des références**  
 

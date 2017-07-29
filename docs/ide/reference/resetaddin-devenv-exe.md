@@ -31,10 +31,11 @@ translation.priority.ht:
 - tr-tr
 - zh-cn
 - zh-tw
-translationtype: Human Translation
-ms.sourcegitcommit: 5db97d19b1b823388a465bba15d057b30ff0b3ce
-ms.openlocfilehash: cfc96ba712fbc057f9e6e57c61c80ebe38bd662c
-ms.lasthandoff: 02/22/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: 5ea9179ad37514ffad4876177b05150eecc22def
+ms.openlocfilehash: 826740ff2c56f50426d51e91fe9ccf8cdcb99081
+ms.contentlocale: fr-fr
+ms.lasthandoff: 05/24/2017
 
 ---
 # <a name="resetaddin-devenvexe"></a>/ResetAddin (devenv.exe)
@@ -61,5 +62,5 @@ Devenv.exe /ResetAddin MyAddin.Connect.MyAddin
 ```  
   
 ## <a name="see-also"></a>Voir aussi  
- [Personnalisation des paramètres de développement dans Visual Studio](http://msdn.microsoft.com/en-us/22c4debb-4e31-47a8-8f19-16f328d7dcd3)   
+ [Personnaliser l’IDE Visual Studio](../../ide/personalizing-the-visual-studio-ide.md)   
  [Commutateurs de la ligne de commande Devenv](../../ide/reference/devenv-command-line-switches.md)

@@ -31,17 +31,17 @@ translation.priority.mt:
 - pt-br
 - tr-tr
 ms.translationtype: Human Translation
-ms.sourcegitcommit: 47057e9611b824c17077b9127f8d2f8b192d6eb8
-ms.openlocfilehash: da79533a7a40b6e1b79c66f023beba2c1162bd08
+ms.sourcegitcommit: c559290c8e88c8b4e37feabc7014188fad15434d
+ms.openlocfilehash: f219ae7937ea3810b58faa34f6320a627ede99ae
 ms.contentlocale: fr-fr
-ms.lasthandoff: 05/13/2017
+ms.lasthandoff: 06/08/2017
 
 ---
 # <a name="concurrency-visualizer-command-line-utility-cvcollectioncmd"></a>Utilitaire en ligne de commande du visualiseur concurrentiel (CVCollectionCmd)
-Vous pouvez utiliser l’utilitaire en ligne de commande Visualiseur concurrentiel (CVCollectionCmd.exe) pour recueillir des traces à partir de la ligne de commande de façon à les afficher dans le Visualiseur concurrentiel pour Visual Studio. Vous pouvez utiliser ces outils sur des ordinateurs sur lesquels Visual Studio n’est pas installé.  
+Vous pouvez utiliser l’utilitaire en ligne de commande Visualiseur concurrentiel (CVCollectionCmd.exe) pour recueillir des traces à partir de la ligne de commande de façon à les afficher dans le Visualiseur concurrentiel pour Visual Studio. Vous pouvez utiliser ces outils sur des ordinateurs sur lesquels Visual Studio n'est pas installé.  
   
 > [!NOTE]
->  À compter de Visual Studio 2013, le Visualiseur concurrentiel est une extension facultative (il était autrefois inclus dans Visual Studio). Vous pouvez télécharger les [Outils de collecte du visualiseur concurrentiel pour Visual Studio 2015](http://www.microsoft.com/en-in/download/details.aspx?id=49103) à partir du Centre de téléchargement.  
+>  À compter de Visual Studio 2013, le Visualiseur concurrentiel est une extension facultative (il était autrefois inclus dans Visual Studio). Vous pouvez télécharger les [Outils de collecte du visualiseur concurrentiel pour Visual Studio 2015](http://www.microsoft.com/en-in/download/details.aspx?id=49103) à partir du Centre de téléchargement.  
   
 ## <a name="download-the-concurrency-visualizer-command-line-utility"></a>Télécharger l’utilitaire en ligne de commande Visualiseur concurrentiel  
  Pour télécharger et installer l’utilitaire en ligne de commande, accédez aux [outils de collecte du visualiseur concurrentiel pour Visual Studio 2015](http://www.microsoft.com/en-in/download/details.aspx?id=49103) , puis suivez les instructions. Par défaut, CVCollectionCmd.exe est installé dans %ProgramFiles%\Microsoft Concurrency Visualizer Collection Tools\ (%ProgramFiles(x86)%\Microsoft Concurrency Visualizer Collection Tools\ sur les ordinateurs x64).  
@@ -60,7 +60,7 @@ Vous pouvez utiliser l’utilitaire en ligne de commande Visualiseur concurrenti
   
 |Option|Description|Paramètres|Valeurs de retour|  
 |------------|-----------------|----------------|-------------------|  
-|Query|Retourne une valeur qui indique si la collecte peut démarrer.|Aucun.|0 si la collecte peut démarrer.<br /><br /> 1 si la collecte est déjà en cours.<br /><br /> 2 si la collecte n’est pas en cours, mais qu’une ou plusieurs des sessions [ETW](http://msdn.microsoft.com/Library/ac99a063-e2d2-40cc-b659-d23c2f783f92) nécessaires sont déjà activées.|  
+|Query|Retourne une valeur qui indique si la collecte peut démarrer.|Aucun.|0 si la collecte peut démarrer.<br /><br /> 1 si la collecte est déjà en cours.<br /><br /> 2 si la collecte n’est pas en cours, mais qu’une ou plusieurs des sessions [ETW](/dotnet/framework/wcf/samples/etw-tracing) nécessaires sont déjà activées.|  
 |Lancer|Exécute le processus spécifié sous le Visualiseur concurrentiel.|Chemin de l’exécutable.|0 si l’exécution a réussi.<br /><br /> 1 si l’exécution a échoué en raison de l’impossibilité de démarrer l’application cible.<br /><br /> 13 si l’exécution a échoué en raison des autorisations de CVCollectionCmd, insuffisantes pour écrire dans le répertoire de sortie spécifié.|  
 |Attach|Commence la collecte d’une trace à l’échelle du système ; sinon, établit une liaison avec un processus si vous en avez spécifié un.|Aucun.|0 si l’attachement a abouti.<br /><br /> 1 si l’attachement a échoué en raison de la non validité et du caractère ambigu du processus spécifié.<br /><br /> 13 si l’attachement a échoué en raison des autorisations de CVCollectionCmd, insuffisantes pour écrire dans le répertoire de sortie spécifié.|  
 |Detach|Arrête la collecte.|Aucun.|0 si le détachement a réussi.<br /><br /> 1 si le détachement a échoué, car la collecte n’est pas en cours.<br /><br /> 2 si le détachement a échoué pour cause d’impossibilité d’arrêter la collecte.|  
@@ -170,3 +170,4 @@ Vous pouvez utiliser l’utilitaire en ligne de commande Visualiseur concurrenti
 </LocalConfig>  
   
 ```
+

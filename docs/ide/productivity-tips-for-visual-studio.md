@@ -27,16 +27,17 @@ translation.priority.ht:
 - tr-tr
 - zh-cn
 - zh-tw
-translationtype: Human Translation
-ms.sourcegitcommit: 5658ecf52637a38bc3c2a5ad9e85b2edebf7d445
-ms.openlocfilehash: 5b845b8be2d60e1a32cc570fd59ae94f2063c116
-ms.lasthandoff: 02/22/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: 5ea9179ad37514ffad4876177b05150eecc22def
+ms.openlocfilehash: cc0ac8b3418c725579b25712e14c373028fca339
+ms.contentlocale: fr-fr
+ms.lasthandoff: 05/24/2017
 
 ---
 # <a name="productivity-tips-for-visual-studio"></a>Conseils de productivité pour Visual Studio
 En suivant ces conseils, vous pouvez écrire, parcourir et déboguer votre code plus rapidement et plus efficacement dans Visual Studio. Pour plus d’informations sur les raccourcis clavier courants, consultez [Trucs et astuces](../ide/tips-and-tricks-for-visual-studio.md). Pour obtenir une liste plus complète, consultez [Identification et personnalisation des raccourcis clavier](../ide/identifying-and-customizing-keyboard-shortcuts-in-visual-studio.md) et [Raccourcis clavier par défaut](../ide/default-keyboard-shortcuts-in-visual-studio.md).  
   
- Cette rubrique comporte les sections suivantes :  
+ Cette rubrique comporte les sections suivantes :  
   
  [Accès à Visual Studio Tools](../ide/productivity-tips-for-visual-studio.md#BKMK_Access)  
   
@@ -50,7 +51,7 @@ En suivant ces conseils, vous pouvez écrire, parcourir et déboguer votre code 
   
  [Gestion de fichiers, de barres d’outils et de fenêtres](../ide/productivity-tips-for-visual-studio.md#BKMK_Managing)  
   
-##  <a name="a-namebkmkaccessa-accessing-visual-studio-tools"></a><a name="BKMK_Access"></a> Accès à Visual Studio Tools  
+##  <a name="BKMK_Access"></a> Accès à Visual Studio Tools  
  Vous pouvez accéder plus facilement à une invite de commandes développeur ou à un autre outil si vous l’épinglez à l’écran de démarrage ou à la barre des tâches.  
   
 1.  Dans l’écran de démarrage, entrez `Visual Studio Tools`, puis appuyez sur la touche Entrée.  
@@ -75,7 +76,7 @@ En suivant ces conseils, vous pouvez écrire, parcourir et déboguer votre code 
   
 3.  Choisissez **Épingler à l’écran d’accueil** ou **Épingler à la barre des tâches**.  
   
-##  <a name="a-namebkmkwritinga-writing-code"></a><a name="BKMK_Writing"></a> Écriture de code  
+##  <a name="BKMK_Writing"></a> Écriture de code  
  Écrivez le code plus rapidement à l’aide des fonctionnalités suivantes.  
   
 -   **Utiliser des exemples d’applications**. Vous pouvez accélérer le développement d'applications en téléchargeant et en installant des exemples d'applications à partir de MSDN Code Gallery. Vous pouvez également apprendre une technologie ou un concept de programmation spécifiques en téléchargeant et en explorant un exemple de pack pour cette zone.  
@@ -108,27 +109,27 @@ En suivant ces conseils, vous pouvez écrire, parcourir et déboguer votre code 
   
      Pour ouvrir une définition dans une fenêtre indépendante, mettez l’élément en surbrillance, puis appuyez sur Alt+F12, ou ouvrez le menu contextuel de l’élément, puis choisissez **Aperçu de définition**. Pour ouvrir une définition dans une nouvelle fenêtre de code, ouvrez le menu contextuel de l’élément de code, puis choisissez **Atteindre la définition**.  
   
-##  <a name="a-namebkmknavigatinga-navigating-within-your-code"></a><a name="BKMK_Navigating"></a> Navigation dans le code  
+##  <a name="BKMK_Navigating"></a> Navigation dans le code  
  Vous pouvez utiliser différentes techniques pour rechercher et vous déplacer plus rapidement vers des emplacements spécifiques de votre code.  
   
 -   **Insérer un signet sur les lignes de code**. Vous pouvez utiliser des signets pour naviguer rapidement vers les lignes de code spécifiques d'un fichier.  
   
      Pour définir un signet, sélectionnez **Edition**, **Signets**, **Activer/Désactiver le signet** dans la barre de menus. Vous pouvez afficher tous les signets d’une solution dans la fenêtre **Signets**. Pour plus d’informations, consultez [Définition de signets dans le code](../ide/setting-bookmarks-in-code.md).  
   
--   **Rechercher des définitions de symbole dans un fichier**. Vous pouvez faire une recherche dans une solution pour trouver des définitions de symbole et des noms de fichiers, mais les résultats de la recherche ne comportent pas d'espaces de noms ni de variables locales.  
+-   **Rechercher des définitions de symbole dans un fichier**. Vous pouvez faire une recherche dans une solution pour trouver des définitions de symbole et des noms de fichiers, mais les résultats de la recherche ne comportent pas d’espaces de noms ni de variables locales.  
   
      Pour accéder à cette fonctionnalité, sélectionnez **Edition**, **Naviguer vers** dans la barre de menus.  
   
 -   **Parcourir la structure globale de votre code**. Dans l’**Explorateur de solutions**, vous pouvez rechercher et parcourir des classes, ainsi que leurs types et membres dans vos projets. Vous pouvez également rechercher des symboles, afficher la hiérarchie d’appels d’une méthode, rechercher des références de symboles et effectuer d’autres tâches. Si vous sélectionnez un élément de code dans l’**Explorateur de solutions**, le fichier associé s’ouvre dans un onglet **Aperçu** et le curseur se déplace vers l’élément dans le fichier. Pour plus d’informations, consultez [Affichage de la structure du code](../ide/viewing-the-structure-of-code.md).  
   
-##  <a name="a-namebkmkfindinga-finding-items-faster"></a><a name="BKMK_Finding"></a> Recherche d’éléments plus rapide  
+##  <a name="BKMK_Finding"></a> Recherche d’éléments plus rapide  
  Vous pouvez rechercher des commandes, des fichiers et des options dans l’IDE en plus de filtrer le contenu des fenêtres Outil pour afficher uniquement les informations importantes pour votre tâche actuelle.  
   
 -   **Filtrer le contenu des fenêtres d’outils**. Vous pouvez faire une recherche dans le contenu de nombreuses fenêtres d’outils, telles que la **Boîte à outils**, la fenêtre **Propriétés** et l’**Explorateur de solutions**, mais afficher uniquement les éléments dont les noms contiennent les caractères que vous spécifiez.  
   
 -   **Afficher uniquement les erreurs que vous souhaitez traiter**. Si vous sélectionnez le bouton **Filtre** dans la barre d’outils **Liste d’erreurs**, vous pouvez réduire le nombre d’erreurs qui s’affichent dans la fenêtre **Liste d’erreurs**. Vous pouvez afficher uniquement les erreurs des fichiers ouverts dans l'éditeur, uniquement les erreurs du fichier actif ou uniquement les erreurs du projet actif. Vous pouvez également rechercher des erreurs spécifiques dans la fenêtre Liste d'erreurs.  
   
--   **Rechercher des boîtes de dialogue, commandes de menu et options**. Dans la zone [boîte de dialogue Lancement rapide, Environnement, Options](../ide/reference/quick-launch-environment-options-dialog-box.md), entrez les mots clés ou expressions pour les éléments recherchés. Par exemple, les options suivantes apparaissent si vous entrez `new project` :  
+-   **Rechercher des boîtes de dialogue, commandes de menu et options**. Dans la zone [Lancement rapide, Environnement, boîte de dialogue Options](../ide/reference/quick-launch-environment-options-dialog-box.md), entrez des mots clés ou expressions pour les éléments recherchés. Par exemple, les options suivantes apparaissent si vous entrez `new project` :  
   
      Figure 3 : Liste des résultats de lancement rapide pour `new project`  
   
@@ -136,7 +137,7 @@ En suivant ces conseils, vous pouvez écrire, parcourir et déboguer votre code 
   
      **Lancement rapide** affiche notamment des liens vers les boîtes de dialogue **Nouveau projet** et **Ajouter un nouvel élément**, ainsi que vers la page Projets et solutions dans la boîte de dialogue **Options**. Les résultats de lancement rapide peuvent également inclure des fichiers de projet et des fenêtres Outil.  
   
-##  <a name="a-namebkmkdebugginga-debugging-code"></a><a name="BKMK_Debugging"></a> Débogage du code  
+##  <a name="BKMK_Debugging"></a> Débogage du code  
  Le débogage peut prendre beaucoup de temps, mais les conseils suivants peuvent vous aider à accélérer le processus.  
   
 -   **Tester la même page, la même application ou le même site dans divers navigateurs**. Quand vous déboguez votre code, vous pouvez basculer facilement entre les navigateurs web installés, notamment l’[Inspecteur de page (Visual Studio)](http://msdn.microsoft.com/Library/65880969-1ad2-47be-85b9-bb12c81bf209), sans avoir besoin d’ouvrir la boîte de dialogue **Naviguer avec**. Vous pouvez utiliser la liste **Cible de débogage**, qui se trouve dans la barre d’outils **Standard** en regard du bouton **Démarrer le débogage**, pour vérifier rapidement le navigateur que vous utilisez quand vous déboguez ou visualisez des pages.  
@@ -159,18 +160,18 @@ En suivant ces conseils, vous pouvez écrire, parcourir et déboguer votre code 
   
      Pour plus d’informations sur d’autres commandes, consultez [Alias de commandes Visual Studio](../ide/reference/visual-studio-command-aliases.md).  
   
-##  <a name="a-namebkmkmanaginga-managing-files-toolbars-and-windows"></a><a name="BKMK_Managing"></a> Gestion de fichiers, de barres d’outils et de fenêtres  
- À tout moment, vous pouvez travailler dans plusieurs fichiers de code et vous déplacer sur plusieurs fenêtres Outil à mesure que vous développez une application. Vous pouvez préserver un bonne organisation en utilisant les conseils suivants.  
+##  <a name="BKMK_Managing"></a> Gestion de fichiers, de barres d’outils et de fenêtres  
+ À tout moment, vous pouvez travailler dans plusieurs fichiers de code et vous déplacer sur plusieurs fenêtres Outil à mesure que vous développez une application. Vous pouvez préserver une bonne organisation en utilisant les conseils suivants.  
   
 -   **Faire en sorte que les fichiers que vous utilisez fréquemment soient visibles dans l’éditeur**. Vous pouvez épingler des fichiers à gauche de l'onglet afin qu'ils restent visibles quel que soit le nombre de fichiers ouverts dans l'éditeur.  
   
      Pour épingler un fichier, sélectionnez l’onglet du fichier, puis sélectionnez le bouton **Basculer l’état de l’épinglage**.  
   
--   **Déplacer des documents et des fenêtres vers d’autres moniteurs**. Si vous utilisez plusieurs écrans lorsque vous développez des applications, vous pouvez travailler plus facilement sur des parties de votre application en déplaçant les fichiers ouverts dans l'éditeur vers un autre moniteur. Vous pouvez également déplacer les fenêtres d'outils, comme les fenêtres du débogueur, vers un autre moniteur et ancrer ensemble des fenêtres de documents et d'outils pour créer des ensembles flottants. Pour plus d’informations, consultez [Guide pratique pour réorganiser et ancrer des fenêtres](../misc/how-to-arrange-and-dock-windows.md).  
+-   **Déplacer des documents et des fenêtres vers d’autres moniteurs**. Si vous utilisez plusieurs écrans lorsque vous développez des applications, vous pouvez travailler plus facilement sur des parties de votre application en déplaçant les fichiers ouverts dans l'éditeur vers un autre moniteur. Vous pouvez également déplacer les fenêtres Outil, comme les fenêtres du débogueur, vers un autre moniteur, et ancrer ensemble des fenêtres de documents et des fenêtres Outil pour créer des « ensembles flottants ». Pour plus d’informations, consultez [Personnalisation des dispositions de fenêtres dans Visual Studio](../ide/customizing-window-layouts-in-visual-studio.md).  
   
      Vous pouvez également gérer des fichiers plus facilement en créant une autre instance de l’**Explorateur de solutions** et en la déplaçant vers un autre moniteur. Pour créer une autre instance de l’**Explorateur de solutions**, ouvrez un menu contextuel dans l’**Explorateur de solutions**, puis choisissez **Nouvelle vue Explorateur de solutions**.  
   
--   **Personnaliser les polices qui apparaissent dans Visual Studio**. Vous pouvez modifier le type, la taille et la couleur de police utilisés pour le texte dans l'IDE. Par exemple, vous pouvez personnaliser la couleur des éléments de code spécifiques dans l'éditeur et le type de police dans les fenêtres Outil ou dans tout l'IDE. Pour plus d’informations, consultez [Guide pratique pour modifier les polices et les couleurs](../ide/how-to-change-fonts-and-colors-in-visual-studio.md) et [Guide pratique pour modifier les polices et les couleurs utilisées dans l’Éditeur](../ide/reference/how-to-change-fonts-and-colors-in-the-editor.md).  
+-   **Personnaliser les polices qui apparaissent dans Visual Studio**. Vous pouvez modifier le type, la taille et la couleur de police utilisés pour le texte dans l’IDE. Par exemple, vous pouvez personnaliser la couleur des éléments de code spécifiques dans l'éditeur et le type de police dans les fenêtres Outil ou dans tout l'IDE. Pour plus d’informations, consultez [Guide pratique pour modifier les polices et les couleurs](../ide/how-to-change-fonts-and-colors-in-visual-studio.md) et [Guide pratique pour modifier les polices et les couleurs utilisées dans l’Éditeur](../ide/reference/how-to-change-fonts-and-colors-in-the-editor.md).  
   
 ## <a name="see-also"></a>Voir aussi  
  [Raccourcis clavier par défaut pour les commandes fréquemment utilisées](../ide/default-keyboard-shortcuts-for-frequently-used-commands-in-visual-studio.md)   

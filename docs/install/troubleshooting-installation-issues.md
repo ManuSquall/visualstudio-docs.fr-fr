@@ -1,6 +1,6 @@
 ---
 title: "Résolution des problèmes d’installation | Microsoft Docs"
-description: "{{ESPACE RÉSERVÉ}}"
+description: "Parfois, des problèmes peuvent se produire. Cette page peut vous aider en cas d’échec de l’installation ou de la mise à niveau de Visual Studio."
 ms.date: 04/14/2017
 ms.reviewer: 
 ms.suite: 
@@ -31,13 +31,13 @@ translation.priority.mt:
 - pt-br
 - tr-tr
 ms.translationtype: Human Translation
-ms.sourcegitcommit: 85576806818a6ed289c2f660f87b5c419016c600
-ms.openlocfilehash: d8125873ab5a92d9af26c556cb2f953a606c28d9
+ms.sourcegitcommit: d9de84bed187c62962a76424aabdc5f355dff4dc
+ms.openlocfilehash: e6c301a7b784c5966d4f7216e67067ef6ce3ed70
 ms.contentlocale: fr-fr
-ms.lasthandoff: 05/09/2017
+ms.lasthandoff: 05/15/2017
 
 ---
-# <a name="troubleshooting-visual-studio-2017-installation-and-upgrade-failures"></a>Résolution des problèmes d’installation et de mise à niveau de Visual Studio 2017
+# <a name="troubleshooting-visual-studio-2017-installation-and-upgrade-issues"></a>Résolution des problèmes d’installation et de mise à niveau de Visual Studio 2017
 
 ## <a name="symptoms"></a>Symptômes
 Quand vous essayez d’installer ou de mettre à jour Microsoft Visual Studio 2017, l’opération échoue.
@@ -58,7 +58,7 @@ Le programme d’amorçage du programme d’installation de Visual Studio est un
 2. Supprimez le répertoire du programme d’installation de Visual Studio. Il s’agit généralement du répertoire C:\Program Files (x86)\Microsoft Visual Studio\Installer.
 3. Exécutez le programme d’amorçage du programme d’installation de Visual Studio. Vous pouvez trouver le programme d’amorçage dans votre dossier Téléchargements sous un nom au format ```vs_[Visual Studio edition]__*.exe```. Si vous ne trouvez pas cette application, vous pouvez télécharger le programme d’amorçage en accédant à la page des [téléchargements Visual Studio](https://www.visualstudio.com/downloads/), puis en cliquant sur le bouton de **téléchargement** correspondant à votre édition de Visual Studio. Exécutez cet exécutable pour réinitialiser les métadonnées d’installation.
 4. Essayez à nouveau d’installer ou de mettre à jour Visual Studio. Si le programme d’installation échoue à nouveau, passez directement à l’étape 4 ci-dessous.
-<br/>**Remarque :** Cette étape réinstalle les fichiers du programme d’installation de Visual Studio et réinitialise les métadonnées d’installation. 
+<br/>**Remarque :** Cette étape réinstalle les fichiers du programme d’installation de Visual Studio et réinitialise les métadonnées d’installation.
 
 ### <a name="step-4---report-a-problem"></a>Étape 4 : Signaler un problème
 Dans certains cas (fichiers endommagés, par exemple), il peut se révéler nécessaire de résoudre les problèmes de manière individuelle :
@@ -92,6 +92,4 @@ Voici un tableau susceptible de vous aider qui présente des problèmes connus e
 | ----------- | ---------------------- | -------- |
 | Les utilisateurs n’ont pas accès aux fichiers. | autorisations (ACL) | Vérifiez que vous ajustez les autorisations (ACL) de sorte qu’elles accordent un accès en lecture aux autres utilisateurs *avant* de partager l’installation hors connexion. |
 | L’installation des nouvelles charges de travail, langues et des nouveaux composants a échoué.  | `--layout`  | Si vous effectuez l’installation à partir d’une disposition partielle et que vous sélectionnez des charges de travail, des composants ou des langues qui ne sont pas disponibles dans la disposition précédente, vérifiez que vous disposez d’une connexion à Internet. |
-
-
 

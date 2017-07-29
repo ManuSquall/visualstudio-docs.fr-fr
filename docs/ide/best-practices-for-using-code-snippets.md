@@ -30,17 +30,18 @@ translation.priority.ht:
 - tr-tr
 - zh-cn
 - zh-tw
-translationtype: Human Translation
-ms.sourcegitcommit: 5658ecf52637a38bc3c2a5ad9e85b2edebf7d445
-ms.openlocfilehash: 954bd5e0ba38d7a538700cba175933cc8303c863
-ms.lasthandoff: 02/22/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: 3d32d11a430227800cb3ed53831a9565eb6adeb3
+ms.openlocfilehash: 165fe357bd9849ca2588542614449558eae52740
+ms.contentlocale: fr-fr
+ms.lasthandoff: 05/30/2017
 
 ---
 # <a name="best-practices-for-using-code-snippets"></a>Meilleures pratiques pour l'utilisation des extraits de code
 Le code d’un extrait de code montre uniquement le moyen le plus simple de faire quelque chose. Dans la plupart des cas, le code doit être modifié pour s’adapter à l’application,  
   
 ## <a name="handling-exceptions"></a>Gestion des exceptions  
- Habituellement, l'extrait de code "Try...Catch" empêche les interceptions et réinitialise toutes les exceptions. ce qui peut ne pas être le bon choix pour votre projet. Pour chaque exception, il existe plusieurs façons de répondre. Pour obtenir des exemples, consultez [Comment : gérer une exception à l’aide de try/catch (Guide de programmation C#)](http://msdn.microsoft.com/Library/ca8e3773-980e-4767-8633-7408540e9818) et [Try...Catch...Finally, instruction](/dotnet/visual-basic/language-reference/statements/try-catch-finally-statement).  
+ Habituellement, l’extrait de code Try...Catch empêche les interceptions et réinitialise toutes les exceptions. ce qui peut ne pas être le bon choix pour votre projet. Pour chaque exception, il existe plusieurs façons de répondre. Pour obtenir des exemples, consultez [Comment : gérer une exception à l’aide de try/catch (Guide de programmation C#)](/dotnet/csharp/programming-guide/exceptions/how-to-handle-an-exception-using-try-catch) et [Try...Catch...Finally, instruction](/dotnet/visual-basic/language-reference/statements/try-catch-finally-statement).  
   
 ## <a name="file-locations"></a>Emplacements des fichiers  
  Lorsque vous adaptez des emplacements de fichiers à votre application, vous devez réfléchir à ce qui suit :  
@@ -49,7 +50,7 @@ Le code d’un extrait de code montre uniquement le moyen le plus simple de fair
   
 -   Trouver un emplacement sécurisé. Le stockage des fichiers dans le dossier racine (C:\\) n’est pas sécurisé. Pour les données d’application, nous vous recommandons le dossier \Application Data. Pour les données utilisateur, l’application peut créer un fichier pour chaque utilisateur dans le dossier \Mes documents.  
   
--   Utiliser un nom de fichier valide. Vous pouvez utiliser les contrôles <xref:System.Windows.Forms.OpenFileDialog> et <xref:System.Windows.Forms.SaveFileDialog> pour réduire les risques de noms de fichiers non valides. N’oubliez pas qu’entre le moment où l’utilisateur sélectionne un fichier et celui où votre code manipule ce fichier, ce dernier peut avoir été supprimé. En outre, l’utilisateur peut ne pas avoir les autorisations pour écrire dans le fichier.  
+-   Utiliser un nom de fichier valide. Vous pouvez utiliser les contrôles <xref:System.Windows.Forms.OpenFileDialog> et <xref:System.Windows.Forms.SaveFileDialog> pour réduire la probabilité d’avoir des noms de fichiers non valides. N’oubliez pas qu’entre le moment où l’utilisateur sélectionne un fichier et celui où votre code manipule ce fichier, ce dernier peut avoir été supprimé. En outre, l’utilisateur peut ne pas avoir les autorisations pour écrire dans le fichier.  
   
 ## <a name="security"></a>Sécurité  
  Le niveau de sécurisation d’un extrait de code dépend de l’endroit où il est utilisé dans le code source et de la façon dont il est modifié une fois qu’il se trouve dans le code. La liste suivante contient quelques-uns des points qui doivent être pris en compte.  

@@ -43,10 +43,11 @@ translation.priority.mt:
 - pl-pl
 - pt-br
 - tr-tr
-translationtype: Human Translation
-ms.sourcegitcommit: 841c635c00aea5e78396f27098a1e64fbe29a421
-ms.openlocfilehash: b2a09ceddbfcbfb8632f777f55229d186f6e5ae9
-ms.lasthandoff: 02/22/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: 5ea9179ad37514ffad4876177b05150eecc22def
+ms.openlocfilehash: 8ab795965dc205cd783f469d134d64fb2b5dacf6
+ms.contentlocale: fr-fr
+ms.lasthandoff: 05/24/2017
 
 ---
 # <a name="customize-window-layouts-in-visual-studio"></a>Personnalisation des dispositions de fenêtres dans Visual Studio
@@ -62,7 +63,7 @@ Dans Visual Studio, vous pouvez personnaliser la position, la taille et le compo
 ### <a name="preview-tab-document-windows"></a>Onglet Aperçu (fenêtres de document)  
  L'onglet Aperçu vous permet d'afficher les fichiers dans l'éditeur sans les ouvrir. Vous pouvez afficher un aperçu des fichiers en les sélectionnant dans l' **Explorateur de solutions**, pendant le débogage lorsque vous effectuez un pas à pas détaillé des fichiers, avec Atteindre la définition et quand vous parcourez les résultats d'une recherche. Les fichiers d'aperçu apparaissent aussi sous un onglet à droite de l'onglet de document. Le fichier s'ouvre pour modification si vous le modifiez ou si vous choisissez **Ouvrir**.  
 
-### <a name="tab-groups"></a>Groupes d’onglets  
+### <a name="tab-groups"></a>Groupes d'onglets  
  Les groupes d'onglets vous permettent de mieux gérer l'espace de travail limité quand vous travaillez avec deux documents ouverts ou plus dans l'IDE. Vous pouvez organiser plusieurs fenêtres Outil et fenêtres de document en groupes d'onglets verticaux ou horizontaux et lire de façon aléatoire les documents d'un groupe d'onglets à un autre.  
 
 ### <a name="split-windows"></a>Fenêtres fractionnées  
@@ -72,7 +73,7 @@ Dans Visual Studio, vous pouvez personnaliser la position, la taille et le compo
  Vous pouvez organiser les barres d'outils en les faisant glisser ou en utilisant la boîte de dialogue **Personnaliser** . Pour plus d’informations sur le positionnement et la personnalisation des barres d’outils, consultez [Guide pratique pour personnaliser des menus et des barres d’outils](../ide/how-to-customize-menus-and-toolbars-in-visual-studio.md).  
 
 ## <a name="arrange-and-dock-windows"></a>Organiser et ancrer des fenêtres  
- Vous pouvez *ancrer*les fenêtres de document et les fenêtres pour définir leur position et leur taille dans le cadre de la fenêtre IDE, ou les faire flotter sous forme de fenêtres distinctes indépendantes de l'IDE. Les fenêtres Outil peuvent être ancrées n'importe où dans le cadre de l'IDE ; certaines fenêtres Outil peuvent être ancrées sous forme de fenêtres à onglets dans le cadre de l'éditeur. Les fenêtres de document peuvent être ancrées dans le cadre de l'éditeur, et elles peuvent être épinglées à leur position actuelle dans l'ordre de tabulation. Vous pouvez ancrer plusieurs fenêtres pour les faire flotter ensemble dans un « rafting » par-dessus l'IDE ou en dehors de celui-ci. Il est aussi possible de masquer ou de minimiser les fenêtres.  
+ Vous pouvez *ancrer*les fenêtres de document et les fenêtres pour définir leur position et leur taille dans le cadre de la fenêtre IDE, ou les faire flotter sous forme de fenêtres distinctes indépendantes de l'IDE. Les fenêtres Outil peuvent être ancrées n'importe où dans le cadre de l'IDE ; certaines fenêtres Outil peuvent être ancrées sous forme de fenêtres à onglets dans le cadre de l'éditeur. Les fenêtres de document peuvent être ancrées dans le cadre de l'éditeur, et elles peuvent être épinglées à leur position actuelle dans l'ordre de tabulation. Vous pouvez ancrer plusieurs fenêtres pour les faire flotter ensemble dans un « raft » par-dessus l’IDE ou en dehors de celui-ci. Il est aussi possible de masquer ou de minimiser les fenêtres.  
 
  Vous pouvez organiser les fenêtres comme suit :  
 
@@ -93,7 +94,7 @@ Dans Visual Studio, vous pouvez personnaliser la position, la taille et le compo
  Pour réorganiser les fenêtres Outil et les fenêtres de document, vous pouvez les faire glisser, utiliser les commandes du menu **Fenêtre** ou encore cliquer avec le bouton droit sur la barre de titre de la fenêtre à réorganiser.  
 
 > [!NOTE]
->  Il est possible que pour certains des éléments de l’interface utilisateur de Visual Studio, votre ordinateur affiche des noms ou des emplacements différents de ceux indiqués dans les instructions suivantes. L'édition de Visual Studio dont vous disposez et les paramètres que vous utilisez déterminent ces éléments. Pour plus d’informations, consultez [Personnalisation des paramètres de développement dans Visual Studio](http://msdn.microsoft.com/en-us/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
+>  Il est possible que pour certains des éléments de l’interface utilisateur de Visual Studio, votre ordinateur affiche des noms ou des emplacements différents de ceux indiqués dans les instructions suivantes. L'édition de Visual Studio dont vous disposez et les paramètres que vous utilisez déterminent ces éléments. Pour plus d’informations, consultez [Personnaliser l’IDE Visual Studio](../ide/personalizing-the-visual-studio-ide.md).  
 
 ### <a name="dock-windows"></a>Ancrer des fenêtres  
  Quand vous cliquez sur la barre de titre d'une fenêtre outil ou sur l'onglet de la fenêtre de document et que vous le faites glisser, un repère en forme de losange apparaît. Au cours de l'opération de glissement, quand le curseur de la souris se trouve sur l'une des flèches dans le losange, une zone grisée apparaît pour vous montrer où la fenêtre sera ancrée si vous relâchez le bouton de la souris à ce moment-là.  
@@ -122,13 +123,13 @@ Dans Visual Studio, vous pouvez personnaliser la position, la taille et le compo
  ![Masquer automatiquement](../ide/media/vs2015_auto_hide.png "vs2017_auto_hide")  
 
 > [!NOTE]
->  Pour indiquer si la fonctionnalité Masquer automatiquement agit sur chaque fenêtre Outil ou sur des groupes de fenêtres ancrées, sélectionnez ou désélectionnez **Le bouton Masquer automatiquement n'affecte que la fenêtre Outil active** dans la boîte de dialogue **Options** . Pour plus d’informations, consultez [Général, Environnement, boîte de dialogue Options](../ide/reference/general-environment-options-dialog-box.md).  
+>  Pour indiquer si la fonctionnalité Masquer automatiquement agit sur chaque fenêtre Outil ou sur des groupes de fenêtres ancrées, sélectionnez ou désélectionnez **Le bouton Masquer automatiquement n'affecte que la fenêtre Outil active** dans la boîte de dialogue **Options** . Pour plus d'informations, consultez [General, Environment, Options Dialog Box](../ide/reference/general-environment-options-dialog-box.md).  
 
 > [!NOTE]
 >  Les fenêtres Outil automatiquement masquées peuvent s'afficher temporairement quand la fenêtre a le focus. Pour masquer à nouveau la fenêtre, sélectionnez un élément qui se trouve en dehors de la fenêtre active. Quand la fenêtre perd le focus, elle disparaît à nouveau.  
 
 ### <a name="specifying-a-second-monitor"></a>Spécification d’un second moniteur  
- Si vous possédez un deuxième écran et que votre système d'exploitation le prend en charge, vous pouvez choisir celui qui affiche une fenêtre. Vous pouvez même regrouper plusieurs fenêtres en « raftings » sur d'autres écrans.  
+ Si vous possédez un deuxième écran et que votre système d'exploitation le prend en charge, vous pouvez choisir celui qui affiche une fenêtre. Vous pouvez même regrouper plusieurs fenêtres en « rafts » sur d’autres écrans.  
 
 > [!TIP]
 >  Vous pouvez créer plusieurs instances de l' **Explorateur de solutions** et les déplacer dans un autre écran. Cliquez avec le bouton droit sur la fenêtre et choisissez **Nouvelle vue Explorateur de solutions**. Vous pouvez faire revenir toutes les fenêtres sur l'écran d'origine en effectuant un double-clic tout en appuyant sur la touche Ctrl.  
@@ -149,15 +150,15 @@ Dans Visual Studio, vous pouvez personnaliser la position, la taille et le compo
 
 ##### <a name="create-a-ui-project-and-customize-the-layout"></a>Créer un projet d'interface utilisateur et personnaliser la disposition  
 
-1.  Dans la boîte de dialogue **Nouveau projet** , créez une application de bureau WPF Visual C# et donnez-lui un nom quelconque. Supposons que vous deviez travailler sur l'interface utilisateur de ce projet. Vous voulez donc maximiser l'espace de la fenêtre du concepteur et pousser les autres fenêtres d'outils à l'écart.  
+1.  Dans la boîte de dialogue **Nouveau projet** , créez une application de bureau WPF Visual C# et donnez-lui un nom quelconque. Supposons que vous devez travailler sur l’interface utilisateur de ce projet. Vous voulez donc maximiser l’espace de la fenêtre du concepteur et mettre les autres fenêtres Outil à l’écart.  
 
 2.  Si vous avez plusieurs écrans, déplacez les fenêtres **Explorateur de solutions** et **Propriétés** sur votre deuxième écran. Dans un système à un seul écran, essayez de fermer toutes les fenêtres à l'exception de celle du concepteur.  
 
-3.  Appuyez sur **Ctrl + Alt + X** pour afficher la boîte à outils. Si la fenêtre est ancrée, faites-la glisser pour la faire flotter où vous le souhaitez sur l'un des deux écrans.  
+3.  Appuyez sur **Ctrl + Alt + X** pour afficher la boîte à outils. Si la fenêtre est ancrée, faites-la glisser pour la faire flotter où vous le souhaitez sur l’un des écrans.  
 
 4.  Appuyez sur F5 pour configurer Visual Studio en mode débogage. Ajustez librement la position des fenêtres de débogage Auto, Pile des appels et Sortie. La disposition que vous allez créer s'applique à la fois au mode d'édition et au mode débogage.  
 
-5.  Quand vous êtes satisfait de vos dispositions dans les modes d’édition et débogage, accédez au menu principal et choisissez **Fenêtre > Enregistrer la disposition de fenêtre**. Appelez cette disposition « Concepteur ».  
+5.  Quand vous êtes satisfait de vos dispositions dans les modes d’édition et débogage, accédez au menu principal et choisissez **Fenêtre > Enregistrer la disposition de fenêtre**. Appelez cette disposition « Concepteur ».  
 
      Notez que le prochain raccourci clavier disponible dans la liste réservée (Ctrl + Alt + 1...0) est attribué à votre nouvelle disposition.  
 
@@ -165,9 +166,9 @@ Dans Visual Studio, vous pouvez personnaliser la position, la taille et le compo
 
 1.  Ajoutez un nouveau projet **Base de données SQL Server** à la solution.  
 
-2.  Cliquez avec le bouton droit sur le nouveau projet dans l'Explorateur de solutions et choisissez **Afficher dans l'Explorateur d'objets**. Dans la fenêtre **Explorateur d'objets SQL Server** qui s'affiche, vous pouvez accéder aux tables, vues et autres objets dans votre base de données. Vous pouvez soit faire flotter cette fenêtre ou la laisser ancrée. Ajustez librement les autres fenêtres d'outils. Pour plus de réalisme, vous pouvez ajouter une vraie base de données, mais cette étape n'est pas obligatoire dans cette procédure pas à pas.  
+2.  Cliquez avec le bouton droit sur le nouveau projet dans l'Explorateur de solutions et choisissez **Afficher dans l'Explorateur d'objets**. Dans la fenêtre **Explorateur d'objets SQL Server** qui s'affiche, vous pouvez accéder aux tables, vues et autres objets dans votre base de données. Vous pouvez soit faire flotter cette fenêtre ou la laisser ancrée. Ajustez librement les autres fenêtres d'outils. Pour plus de réalisme, vous pouvez ajouter une base de données réelle, mais cette étape n’est pas obligatoire dans cette procédure pas à pas.  
 
-3.  Quand vous êtes satisfait de votre disposition, accédez au menu principal et choisissez **Fenêtre > Enregistrer la disposition de fenêtre**. Nommez cette disposition « Projet BD ». (Nous n’allons pas nous ennuyer à créer une disposition pour le mode débogage dans ce projet.)  
+3.  Quand vous êtes satisfait de votre disposition, accédez au menu principal et choisissez **Fenêtre > Enregistrer la disposition de fenêtre**. Nommez cette disposition « Projet BD ». (Nous ne prenons pas la peine de créer une disposition en mode débogage pour ce projet.)  
 
 ##### <a name="switch-between-the-layouts"></a>Basculer entre les dispositions  
 

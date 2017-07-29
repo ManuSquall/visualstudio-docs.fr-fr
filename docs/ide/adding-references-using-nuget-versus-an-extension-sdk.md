@@ -27,16 +27,17 @@ translation.priority.ht:
 - tr-tr
 - zh-cn
 - zh-tw
-translationtype: Human Translation
-ms.sourcegitcommit: 5db97d19b1b823388a465bba15d057b30ff0b3ce
-ms.openlocfilehash: 3f4740d442a7ef24803d6360cdcc480d9d6fca84
-ms.lasthandoff: 02/22/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: 5b67a4c254e2410302997dee5ec36a2243c6ed11
+ms.openlocfilehash: 29db26d6c885b297ff3b8c39776c9fe59ca3ea05
+ms.contentlocale: fr-fr
+ms.lasthandoff: 06/10/2017
 
 ---
 # <a name="adding-references-using-nuget-versus-an-extension-sdk"></a>Ajout de références avec NuGet ou un kit SDK d’extension
 Dans les projets Visual Studio, vous pouvez fournir un package pour la consommation avec l’extension NuGet pour Visual Studio ou avec un kit SDK. En décrivant les ressemblances et les différences entre les deux mécanismes, cette rubrique peut vous aider à choisir la plus adaptée à votre tâche.  
   
--   NuGet est un système de gestion de packages open source qui simplifie le processus d’intégration de bibliothèques dans une solution de projet. Pour plus d’informations, consultez une [présentation de NuGet](http://go.microsoft.com/fwlink/?LinkId=254877).  
+-   NuGet est un système de gestion de packages open source qui simplifie le processus d’intégration de bibliothèques dans une solution de projet. Pour plus d’informations, consultez la [documentation de NuGet ](http://docs.microsoft.com/nuget).  
   
 -   Un kit SDK est une collection de fichiers que Visual Studio traite comme un seul élément de référence. Quand vous affichez la boîte de dialogue **Gestionnaire de références**, vous voyez la liste de tous les kits SDK pertinents pour le projet ouvert. Quand vous ajoutez un kit SDK à un projet, vous pouvez accéder à tout son contenu dans IntelliSense, la **Boîte à outils**, les concepteurs, l’**Explorateur d’objets**, MSBuild, le déploiement, le débogage et l’empaquetage. Pour plus d’informations sur les kits SDK, consultez [Création d’un Kit de développement logiciel](../extensibility/creating-a-software-development-kit.md).  
   

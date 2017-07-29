@@ -29,19 +29,20 @@ translation.priority.ht:
 - tr-tr
 - zh-cn
 - zh-tw
-translationtype: Human Translation
-ms.sourcegitcommit: 5db97d19b1b823388a465bba15d057b30ff0b3ce
-ms.openlocfilehash: efcb84a2cc8b681f3509e397776f86bf7c832a74
-ms.lasthandoff: 02/22/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: 47057e9611b824c17077b9127f8d2f8b192d6eb8
+ms.openlocfilehash: 8700d4814494aafb6558f354d5904ed647c1f5a7
+ms.contentlocale: fr-fr
+ms.lasthandoff: 05/13/2017
 
 ---
-# <a name="how-to-distribute-code-snippets"></a>Comment : distribuer des extraits de code
+# <a name="how-to-distribute-code-snippets"></a>Guide pratique pour distribuer des extraits de code
 Vous pouvez vous contenter de donner vos extraits de code à vos amis pour qu'ils les installent sur leurs propres ordinateurs à l'aide du Gestionnaire des extraits de code. Toutefois, si vous avez plusieurs extraits de code à distribuer ou que vous souhaitez les distribuer plus largement, vous pouvez inclure votre fichier d'extraits de code dans une extension Visual Studio, que les utilisateurs de Visual Studio peuvent installer.  
 
  Vous devez installer le kit SDK Visual Studio pour pouvoir créer des extensions Visual Studio. Recherchez la version du SDK Visual Studio qui correspond à votre installation de Visual Studio dans la page [Téléchargements Visual Studio](https://www.visualstudio.com/downloads/).  
 
 ## <a name="setting-up-the-extension"></a>Configuration de l’extension  
- Dans cette procédure, nous utiliserons l’extrait de code Hello World qui a été créé dans [Procédure pas à pas : création d’un extrait de code](../ide/walkthrough-creating-a-code-snippet.md). Nous fournirons le texte .snippet afin que vous n'ayez pas à revenir en arrière et à en créer un.  
+ Dans cette procédure, nous utiliserons l’extrait de code Hello World qui a été créé dans [Procédure pas à pas : création d’un extrait de code](../ide/walkthrough-creating-a-code-snippet.md). Nous fournirons le texte .snippet afin que vous n’ayez pas à revenir en arrière et à en créer un.  
 
 1.  Créez un projet VSIX nommé **TestSnippet**. (**Fichier / Nouveau / Projet / Visual C# (ou Visual Basic) / Extensibilité**)  
 

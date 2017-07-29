@@ -9,6 +9,7 @@
 ## [Exemples de paramètres de ligne de commande](command-line-parameter-examples.md)
 ## [Créer une installation réseau de Visual Studio](create-a-network-installation-of-visual-studio.md)
 ## [Considérations particulières relatives à l’installation de Visual Studio dans un environnement hors connexion](install-visual-studio-in-offline-environment.md)
+## [Installation de Visual Studio derrière un pare-feu ou un serveur proxy](install-visual-studio-behind-a-firewall-or-proxy-server.md)
 ## [Automatiser l’installation de Visual Studio avec un fichier réponse](automated-installation-with-response-file.md)
 ## [Appliquer automatiquement des clés de produit lors du déploiement de Visual Studio](automatically-apply-product-keys-when-deploying-visual-studio.md)
 ## [Définir les valeurs par défaut des déploiements d’entreprise de Visual Studio](set-defaults-for-enterprise-deployments.md)

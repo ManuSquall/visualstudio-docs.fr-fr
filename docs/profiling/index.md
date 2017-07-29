@@ -3,15 +3,14 @@ layout: LandingPage
 title: Profilage de vos applications avec Visual Studio
 description: "Apprenez à utiliser Visual Studio 2017 pour profiler les performances de vos applications, services et outils dans le langage de votre choix."
 ms.technology: vs-ide-debug
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 669bc5894727c207691a7e37937f432d98fee8b1
-ms.openlocfilehash: 6b54253dadb80dd6881ba366b5bb466f4eae7706
+ms.translationtype: HT
+ms.sourcegitcommit: 5c28e68b89f6583dc35a91b275693c11e0259dfd
+ms.openlocfilehash: e90fc5b4997acd7a9228e8132eb00f6f32ed2d3d
 ms.contentlocale: fr-fr
-ms.lasthandoff: 06/30/2017
+ms.lasthandoff: 07/13/2017
 
 ---
-# Profilage dans Visual Studio
-<a id="profiling-in-visual-studio" class="xliff"></a>
+# <a name="profiling-in-visual-studio"></a>Profilage dans Visual Studio
 
 Les outils de profilage et de diagnostic vous aident à diagnostiquer l’utilisation de la mémoire et du processeur et d’autres problèmes au niveau de l’application. Grâce à ces outils, vous pouvez accumuler des données (par exemple, des valeurs de variables, des appels de fonctions et des événements) pendant que vous exécutez votre application dans le débogueur. Vous pouvez examiner l’état de votre application à différents stades au cours de l’exécution de votre code. 
 
@@ -53,7 +52,7 @@ Les outils de profilage et de diagnostic vous aident à diagnostiquer l’utilis
         </a>
     </li>
     <li>
-        <a href="https://www.youtube.com/watch?v=e-3txyAFzmw">
+        <a href="https://docs.microsoft.com/en-us/visualstudio/profiling/beginners-guide-to-performance-profiling.md#video">
         <div class="cardSize">
             <div class="cardPadding">
                 <div class="card">
@@ -63,7 +62,7 @@ Les outils de profilage et de diagnostic vous aident à diagnostiquer l’utilis
                         </div>
                     </div>
                     <div class="cardText">
-                        <h3>Regarder une vidéo sur les outils de diagnostic (VS 2015)</h3>
+                        <h3>Regarder une vidéo sur les outils de diagnostic</h3>
                     </div>
                 </div>
             </div>

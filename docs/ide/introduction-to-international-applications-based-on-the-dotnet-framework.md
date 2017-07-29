@@ -44,10 +44,11 @@ translation.priority.ht:
 - tr-tr
 - zh-cn
 - zh-tw
-translationtype: Human Translation
+ms.translationtype: Human Translation
 ms.sourcegitcommit: 5658ecf52637a38bc3c2a5ad9e85b2edebf7d445
 ms.openlocfilehash: 5d04af26004b5915fcd373fda154ac79816e475c
-ms.lasthandoff: 02/22/2017
+ms.contentlocale: fr-fr
+ms.lasthandoff: 05/19/2017
 
 ---
 # <a name="introduction-to-international-applications-based-on-the-net-framework"></a>Introduction aux applications internationales basées sur le .NET Framework
@@ -61,7 +62,7 @@ Dans [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)], il existe deux p
   
  Le système de projet pour les Windows Forms et Web Forms vous permet de générer des fichiers de ressources à l’aide d’un modèle de fichier de ressources d’assembly, d’accéder aux ressources et de générer votre projet. Les assemblys satellites sont créés avec l’assembly principal.  
   
- Quand une application localisée s’exécute, deux valeurs de culture déterminent son apparence. (Une *culture* est un ensemble de préférences utilisateur liées à la langue, à l’environnement et aux conventions culturelles de l’utilisateur.) Le paramètre de culture de l’interface utilisateur détermine les ressources qui sont chargées. La culture d’interface utilisateur est définie en tant que `UICulture` dans les fichiers Web.config et les directives de page, et <xref:System.Globalization.CultureInfo.CurrentUICulture%2A> dans le code Visual Basic ou Visual C#. Le paramètre de culture détermine la mise en forme des valeurs telles que les dates, les nombres et les devises. La culture est définie en tant que `Culture` dans les fichiers Web.config et les directives de page, <xref:System.Globalization.CultureInfo.CurrentCulture%2A> dans le code Visual Basic ou Visual C#.  
+ Quand une application localisée s’exécute, deux valeurs de culture déterminent son apparence. (Une *culture* est un ensemble de préférences utilisateur liées à la langue, à l’environnement et aux conventions culturelles de l’utilisateur.) Le paramètre de culture de l’interface utilisateur détermine les ressources qui sont chargées. La culture de l’interface utilisateur est définie en tant que `UICulture` dans les fichiers Web.config et les directives de page, et <xref:System.Globalization.CultureInfo.CurrentUICulture%2A> dans le code Visual Basic ou Visual C#. Le paramètre de culture détermine la mise en forme des valeurs telles que les dates, les nombres et les devises. La culture est définie en tant que `Culture` dans les fichiers Web.config et les directives de page, <xref:System.Globalization.CultureInfo.CurrentCulture%2A> dans le code Visual Basic ou Visual C#.  
   
 ## <a name="see-also"></a>Voir aussi  
  <xref:System.Globalization>   
