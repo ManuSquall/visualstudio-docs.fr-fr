@@ -78,7 +78,7 @@ Si les icônes se trouvent dans les mêmes cellules à chaque partie, le jeu ne 
   
 5.  Fermez votre programme et exécutez-le à nouveau. Remarquez que des icônes différentes sont assignées à chaque contrôle Label, comme indiqué dans la figure ci-dessous.  
   
-     ![Jeu de combinaisons avec des icônes aléatoires](../ide/media/express_tut4step3.png "Express_Tut4Step3")  
+     ![Jeu de combinaisons avec des icônes aléatoires](~/docs/ide/media/express_tut4step3.png "Express_Tut4Step3")  
 Jeu de combinaisons avec des icônes aléatoires  
   
      Les icônes sont désormais visibles car vous ne les avez pas masquées. Pour les dissimuler au joueur, vous pouvez définir la propriété `Forecolor` de chaque contrôle Label sur la même couleur que sa propriété `BackColor`.  

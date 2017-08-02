@@ -275,15 +275,15 @@ caps.handback.revision: 37
   
 6.  Dans la fenêtre **Propriétés**, donnez la valeur *taskToken* à la propriété **CorrelationToken**.  
   
-7.  Développez la propriété **CorrelationToken** en cliquant sur le signe plus \(![TreeView plus](../sharepoint/media/plus.png "TreeView plus")\) en regard de celle\-ci.  
+7.  Développez la propriété **CorrelationToken** en cliquant sur le signe plus \(![TreeView plus](~/docs/sharepoint/media/plus.gif "TreeView plus")\) en regard de celle\-ci.  
   
 8.  Cliquez sur la flèche déroulante de la propriété de sous\-type **OwnerActivityName**, puis définissez la valeur *Workflow1*.  
   
-9. Cliquez sur la propriété **TaskId**, puis sur le bouton de sélection \(![Bouton de sélection du concepteur ASP.NET mobile](../sharepoint/media/mwellipsis.png "Bouton de sélection du concepteur ASP.NET mobile")\) pour afficher la boîte de dialogue **Lier la propriété**.  
+9. Cliquez sur la propriété **TaskId**, puis sur le bouton de sélection \(![Bouton de sélection du concepteur ASP.NET mobile](~/docs/sharepoint/media/mwellipsis.gif "Bouton de sélection du concepteur ASP.NET mobile")\) pour afficher la boîte de dialogue **Lier la propriété**.  
   
 10. Choisissez l'onglet **Lier à un nouveau membre**, sélectionnez la case d'option **Créer un champ**, puis cliquez sur le bouton **OK**.  
   
-11. Cliquez sur la propriété **TaskProperties**, puis sur le bouton de sélection \(![Bouton de sélection du concepteur ASP.NET mobile](../sharepoint/media/mwellipsis.png "Bouton de sélection du concepteur ASP.NET mobile")\) pour afficher la boîte de dialogue **Lier la propriété**.  
+11. Cliquez sur la propriété **TaskProperties**, puis sur le bouton de sélection \(![Bouton de sélection du concepteur ASP.NET mobile](~/docs/sharepoint/media/mwellipsis.gif "Bouton de sélection du concepteur ASP.NET mobile")\) pour afficher la boîte de dialogue **Lier la propriété**.  
   
 12. Choisissez l'onglet **Lier à un nouveau membre**, sélectionnez la case d'option **Créer un champ**, puis cliquez sur le bouton **OK**.  
   
@@ -363,7 +363,7 @@ caps.handback.revision: 37
   
 5.  Dans la fenêtre **Propriétés**, cliquez sur la flèche déroulante de la propriété **Condition**, puis mettez la valeur *Code Condition*.  
   
-6.  Développez la propriété **Condition** en cliquant sur le signe plus \(![TreeView plus](../sharepoint/media/plus.png "TreeView plus")\) en regard de celle\-ci, puis donnez\-lui la valeur *checkApprovalNeeded*.  
+6.  Développez la propriété **Condition** en cliquant sur le signe plus \(![TreeView plus](~/docs/sharepoint/media/plus.gif "TreeView plus")\) en regard de celle\-ci, puis donnez\-lui la valeur *checkApprovalNeeded*.  
   
 7.  Dans le Concepteur de flux de travail, ouvrez le menu contextuel de l'activité **logToHistoryListActivity1**, puis sélectionnez **Générer les gestionnaires** afin de créer une méthode vide pour l'événement `MethodInvoking`.  
   

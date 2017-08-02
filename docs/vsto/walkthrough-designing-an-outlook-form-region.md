@@ -48,7 +48,7 @@ caps.handback.revision: 40
   
 -   [!INCLUDE[Outlook_15_short](../vsto/includes/outlook-15-short-md.md)] ou [!INCLUDE[Outlook_14_short](../vsto/includes/outlook-14-short-md.md)].  
   
- ![lien vers la vidéo](../vsto/media/playvideo.png "lien vers la vidéo") Pour visionner la version vidéo de cette rubrique, consultez [Vidéo : conception d'une zone de formulaire Outlook](http://go.microsoft.com/fwlink/?LinkId=140824).  
+ ![lien vers la vidéo](~/docs/data-tools/media/playvideo.gif "lien vers la vidéo") Pour visionner la version vidéo de cette rubrique, consultez [Vidéo : conception d'une zone de formulaire Outlook](http://go.microsoft.com/fwlink/?LinkId=140824).  
   
 ## Création d'un projet de complément VSTO Outlook  
  Commencez par créer un projet de complément VSTO de base.  

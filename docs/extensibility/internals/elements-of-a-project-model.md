@@ -35,7 +35,7 @@ Les interfaces et les implémentations de tous les projets dans [!INCLUDE[vsprvs
   
  L'illustration suivante montre les interfaces principales, les services, et les objets qui composent un mise en ? uvre de projet classique.  Vous pouvez utiliser le programme d'assistance d'application, HierUtil7, créer les objets sous\-jacents et d'autres zones fixes de programmation.  Pour plus d'informations sur le programme d'assistance de l'application HierUtil7, consultez l' [Not in Build: Using HierUtil7 Project Classes to Implement a Project Type \(C\+\+\)](http://msdn.microsoft.com/fr-fr/a5c16a09-94a2-46ef-87b5-35b815e2f346).  
   
- ![Graphique de modèle de projet Visual Studio](../../extensibility/internals/media/vsprojectmodel.png "vsProjectModel")  
+ ![Graphique de modèle de projet Visual Studio](~/docs/extensibility/internals/media/vsprojectmodel.gif "vsProjectModel")  
 modèle de projet  
   
  Pour plus d'informations sur les interfaces et les services répertoriés dans le diagramme précédent, et d'autres interfaces facultatives non inclus dans le diagramme, consultez [Composants de modèle de projet](../../extensibility/internals/project-model-core-components.md).  

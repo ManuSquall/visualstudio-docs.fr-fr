@@ -47,7 +47,7 @@ caps.handback.revision: 31
 > [!NOTE]  
 >  Il est possible que pour certains des éléments de l'interface utilisateur de Visual Studio, votre ordinateur affiche des noms ou des emplacements différents de ceux indiqués dans les instructions suivantes. L'édition de Visual Studio dont vous disposez et les paramètres que vous utilisez déterminent ces éléments. Pour plus d’informations, consultez [Personnalisation des paramètres de développement dans Visual Studio](http://msdn.microsoft.com/fr-fr/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
   
- ![lien vers la vidéo](../vsto/media/playvideo.png "lien vers la vidéo") Pour obtenir une démonstration vidéo, consultez la [vidéo pratique sur la création de zones de formulaire Outlook à l’aide de Visual Studio 2008](http://go.microsoft.com/fwlink/?LinkID=130305).  
+ ![lien vers la vidéo](~/docs/data-tools/media/playvideo.gif "lien vers la vidéo") Pour obtenir une démonstration vidéo, consultez la [vidéo pratique sur la création de zones de formulaire Outlook à l’aide de Visual Studio 2008](http://go.microsoft.com/fwlink/?LinkID=130305).  
   
 ## Conception d’une zone de formulaire à l’aide du Concepteur de zones de formulaire dans Outlook  
  Dans cette étape, vous allez concevoir une zone de formulaire dans Outlook. Vous enregistrerez ensuite la zone de formulaire à un emplacement facile à trouver pour pouvoir l’importer dans [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)].  

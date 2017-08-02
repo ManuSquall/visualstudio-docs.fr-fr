@@ -44,7 +44,7 @@ Vous pouvez identifier les fuites et l'utilisation inefficace de la mémoire dan
   
  Pour chaque application, le garbage collector tient à jour une arborescence de références qui assure le suivi des objets référencés par l'application.  L'*arborescence de références* comprend un ensemble de racines, qui inclut des objets globaux et statiques, ainsi que des piles de threads associées et des objets instanciés de manière dynamique.  Un objet est enraciné si au moins l'un de ses objets parents y fait référence.  Le garbage collector peut récupérer la mémoire d'un objet uniquement quand aucun autre objet ou variable dans l'application n'y fait référence.  
   
- ![Retour au début](../debugger/media/pcs_backtotop.png "PCS\_BackToTop") [Contenu](#BKMK_Contents)  
+ ![Retour au début](~/docs/debugger/media/pcs_backtotop.png "PCS\_BackToTop") [Contenu](#BKMK_Contents)  
   
 ##  <a name="BKMK_Identify_a_memory_issue_in_an_app"></a> Identifier un problème de mémoire dans une application  
  Le symptôme le plus visible des problèmes de mémoire est le niveau de performances de votre application, en particulier s'il diminue au fil du temps.  Une dégradation des performances d'autres applications pendant que votre application est en cours d'exécution peut également indiquer qu'il existe un problème de mémoire.  Si vous suspectez qu'il existe un problème de mémoire, utilisez un outil tel que le Gestionnaire des tâches ou l'[Analyseur de performances Windows](http://technet.microsoft.com/library/cc749249.aspx) pour effectuer un examen plus approfondi.  Par exemple, une augmentation de la taille totale de mémoire que vous ne pouvez pas expliquer peut être envisagée comme une source possible de fuites de mémoire :  
@@ -73,7 +73,7 @@ Vous pouvez identifier les fuites et l'utilisation inefficace de la mémoire dan
   
  Pour analyser l'augmentation de l'utilisation de la mémoire par une application, recueillez deux fichiers dump à partir d'une même instance de l'application.  
   
- ![Retour au début](../debugger/media/pcs_backtotop.png "PCS\_BackToTop") [Contenu](#BKMK_Contents)  
+ ![Retour au début](~/docs/debugger/media/pcs_backtotop.png "PCS\_BackToTop") [Contenu](#BKMK_Contents)  
   
 ##  <a name="BKMK_Analyze_memory_use"></a> Analyser l'utilisation de la mémoire  
  [Filtrer la liste d'objets](#BKMK_Filter_the_list_of_objects) **&#124;** [Analyser les données de mémoire d'un seul instantané](#BKMK_Analyze_memory_data_in_from_a_single_snapshot) **&#124;** [Comparer deux instantanés de mémoire](#BKMK_Compare_two_memory_snapshots)  
@@ -88,7 +88,7 @@ Vous pouvez identifier les fuites et l'utilisation inefficace de la mémoire dan
   
  L'analyseur de mémoire démarre une session de débogage pour analyser le fichier et affiche les résultats dans la page Affichage du tas :  
   
- ![Retour au début](../debugger/media/pcs_backtotop.png "PCS\_BackToTop") [Contenu](#BKMK_Contents)  
+ ![Retour au début](~/docs/debugger/media/pcs_backtotop.png "PCS\_BackToTop") [Contenu](#BKMK_Contents)  
   
 ###  <a name="BKMK_Filter_the_list_of_objects"></a> Filtrer la liste d'objets  
  Par défaut, l'analyseur de mémoire filtre la liste d'objets dans un instantané de la mémoire pour afficher uniquement les types et instances codés par un utilisateur et uniquement les types dont la taille inclusive totale dépasse un seuil de pourcentage de la taille totale du tas.  Vous pouvez modifier ces options dans la liste **Paramètres de l'affichage** :  
@@ -100,14 +100,14 @@ Vous pouvez identifier les fuites et l'utilisation inefficace de la mémoire dan
   
  Vous pouvez aussi filtrer la liste de types en entrant une chaîne dans la zone **Rechercher**.  La liste affiche uniquement les types dont le nom contient la chaîne.  
   
- ![Retour au début](../debugger/media/pcs_backtotop.png "PCS\_BackToTop") [Contenu](#BKMK_Contents)  
+ ![Retour au début](~/docs/debugger/media/pcs_backtotop.png "PCS\_BackToTop") [Contenu](#BKMK_Contents)  
   
 ###  <a name="BKMK_Analyze_memory_data_in_from_a_single_snapshot"></a> Analyser les données de mémoire d'un seul instantané  
  Visual Studio démarre une nouvelle session de débogage pour analyser le fichier et affiche les données de mémoire dans une fenêtre Affichage du tas.  
   
  ![La liste Type d'objet](../misc/media/dbg_mma_objecttypelist.png "DBG\_MMA\_ObjectTypeList")  
   
- ![Retour au début](../debugger/media/pcs_backtotop.png "PCS\_BackToTop") [Contenu](#BKMK_Contents)  
+ ![Retour au début](~/docs/debugger/media/pcs_backtotop.png "PCS\_BackToTop") [Contenu](#BKMK_Contents)  
   
 #### Table Type d'objet  
  La table du haut mentionne les types d'objets contenus en mémoire.  
@@ -118,7 +118,7 @@ Vous pouvez identifier les fuites et l'utilisation inefficace de la mémoire dan
   
 -   **Taille inclusive \(octets\)** indique les tailles des objets référencés.  
   
- Vous pouvez choisir l'icône d'instance \(![L'icône d'instance dans la colonne Type d'objet](../misc/media/dbg_mma_instancesicon.png "DBG\_MMA\_InstancesIcon")\) dans la colonne **Type d'objet** pour afficher une liste des instances du type.  
+ Vous pouvez choisir l'icône d'instance \(![L'icône d'instance dans la colonne Type d'objet](~/docs/profiling/media/dbg_mma_instancesicon.png "DBG\_MMA\_InstancesIcon")\) dans la colonne **Type d'objet** pour afficher une liste des instances du type.  
   
 #### Table Instance  
  ![Table Instances](../misc/media/dbg_mma_instancestable.png "DBG\_MMA\_InstancesTable")  
@@ -181,7 +181,7 @@ Vous pouvez identifier les fuites et l'utilisation inefficace de la mémoire dan
   
  Une colonne **Diff. au niveau du nombre de références** est aussi ajoutée à la table **Chemins d'accès à la racine**.  
   
- ![Retour au début](../debugger/media/pcs_backtotop.png "PCS\_BackToTop") [Contenu](#BKMK_Contents)  
+ ![Retour au début](~/docs/debugger/media/pcs_backtotop.png "PCS\_BackToTop") [Contenu](#BKMK_Contents)  
   
 ## Voir aussi  
  [Blog VS ALM TFS : Using Visual Studio 2013 to Diagnose .NET Memory Issues in Production](http://blogs.msdn.com/b/visualstudioalm/archive/2013/06/20/using-visual-studio-2013-to-diagnose-net-memory-issues-in-production.aspx)   

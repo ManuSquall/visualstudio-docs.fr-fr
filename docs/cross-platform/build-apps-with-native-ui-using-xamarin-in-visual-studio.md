@@ -38,7 +38,7 @@ ms.lasthandoff: 05/13/2017
 # <a name="build-apps-with-native-ui-using-xamarin-in-visual-studio"></a>Générer des applications Xamarin avec une interface utilisateur native dans Visual Studio
 Une fois que vous avez effectué les étapes dans [Configurer et installer](../cross-platform/setup-and-install.md) et [Vérifier votre environnement Xamarin](../cross-platform/verify-your-xamarin-environment.md), cette procédure pas à pas vous montre comment générer une application Xamarin de base (ci-dessous) avec des couches d’IU (interface utilisateur) natives. Avec une IU native, le code partagé réside dans une bibliothèque de classes portable (PCL), et les projets de plateforme individuels contiennent les définitions d’IU.  
   
- ![Application Xamarin sur Android et Windows Phone](../cross-platform/media/cross-plat-xamarin-build-1.png "Build Xamarin multiplateforme 1")  
+ ![Application Xamarin sur Android et Windows Phone](~/docs/cross-platform/media/cross-plat-xamarin-build-1.png "Build Xamarin multiplateforme 1")  
   
  Vous allez effectuer les opérations suivantes pour la générer :  
   
@@ -468,7 +468,7 @@ Une fois que vous avez effectué les étapes dans [Configurer et installer](../c
   
 13. Enregistrez le fichier, puis passez en mode **Design**. Votre interface utilisateur doit s'afficher comme suit :  
   
-     ![Interface utilisateur pour application Android](../cross-platform/media/xamarin_androidui.png "Xamarin_AndroidUI")  
+     ![Interface utilisateur pour application Android](~/docs/cross-platform/media/xamarin_androidui.png "Xamarin_AndroidUI")  
   
 14. Ouvrez **MainActivity.cs**, puis supprimez les lignes de la méthode *OnCreate* qui référencent le bouton par défaut supprimé précédemment. Une fois que vous avez terminé, le code doit ressembler à ceci :  
   
@@ -597,13 +597,13 @@ Une fois que vous avez effectué les étapes dans [Configurer et installer](../c
   
  Dans la vue de conception, votre interface utilisateur doit ressembler à ce qui suit :  
   
- ![Interface utilisateur d’application Windows Phone](../cross-platform/media/xamarin_winphone_finalui.png "Xamarin_WinPhone_FinalUI")  
+ ![Interface utilisateur d’application Windows Phone](~/docs/cross-platform/media/xamarin_winphone_finalui.png "Xamarin_WinPhone_FinalUI")  
   
 ### <a name="consume-your-shared-code"></a>Consommer votre code partagé  
   
 1.  Dans le concepteur, sélectionnez le bouton **Obtenir la météo** .  
   
-2.  Dans la fenêtre **Propriétés**, choisissez le bouton du gestionnaire d’événements (![Icône des gestionnaires d’événements Visual Studio](../cross-platform/media/blend_vs_eventhandlers_icon.png "blend_VS_EventHandlers_icon")).  
+2.  Dans la fenêtre **Propriétés**, choisissez le bouton du gestionnaire d’événements (![Icône des gestionnaires d’événements Visual Studio](~/docs/cross-platform/media/blend_vs_eventhandlers_icon.png "blend_VS_EventHandlers_icon")).  
   
      Cette icône figure dans l'angle supérieur de la fenêtre **Propriétés** .  
   

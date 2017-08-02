@@ -268,7 +268,7 @@ public void My_Test ()
   
 |||  
 |-|-|  
-|![Bouton du groupe d’explorateur de tests](../test/media/ute_groupby_btn.png "UTE_GroupBy_btn")|Pour regrouper vos tests par catégorie, choisissez le bouton **Grouper par** .|  
+|![Bouton du groupe d’explorateur de tests](~/docs/test/media/ute_groupby_btn.png "UTE_GroupBy_btn")|Pour regrouper vos tests par catégorie, choisissez le bouton **Grouper par** .|  
   
  Pour plus d’informations, consultez [Exécuter des tests unitaires avec l’Explorateur de tests](../test/run-unit-tests-with-test-explorer.md).  
   

@@ -139,7 +139,7 @@ caps.handback.revision: 51
   
 -   [Word, InfoPath et PowerPoint](#WordAndInfoPath)  
   
- ![lien vers la vidéo](../vsto/media/playvideo.png "lien vers la vidéo") Pour visionner une vidéo associée, consultez [Comment : gérer les volets de tâches dans les compléments VSTO Word](http://go.microsoft.com/fwlink/?LinkID=136781).  
+ ![lien vers la vidéo](~/docs/data-tools/media/playvideo.gif "lien vers la vidéo") Pour visionner une vidéo associée, consultez [Comment : gérer les volets de tâches dans les compléments VSTO Word](http://go.microsoft.com/fwlink/?LinkID=136781).  
   
 ##  <a name="Outlook"></a> Outlook  
  Quand vous créez un volet de tâches personnalisé pour Outlook, le volet est associé à une fenêtre d'explorateur ou d'inspecteur spécifique.  Les explorateurs sont des fenêtres qui affichent le contenu d'un dossier, et les inspecteurs sont des fenêtres qui affichent un élément tel qu'un message électronique ou une tâche.  

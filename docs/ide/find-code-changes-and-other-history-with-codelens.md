@@ -64,7 +64,7 @@ Restez concentré sur votre travail pendant que vous cherchez ce qui est arrivé
   
  Pour afficher le code de référencement, placez la souris sur la référence.  
   
- ![CodeLens &#45; Aperçu de référence](../ide/media/codelensviewreferencespeekreference.png "CodeLensViewReferencesPeekReference")  
+ ![CodeLens &#45; Aperçu de référence](~/docs/ide/media/codelensviewreferencespeekreference.png "CodeLensViewReferencesPeekReference")  
   
  Pour ouvrir le fichier contenant la référence, double-cliquez sur cette dernière.  
   
@@ -85,34 +85,34 @@ Restez concentré sur votre travail pendant que vous cherchez ce qui est arrivé
   
  Pour le code Visual C# .NET ou Visual Basic .NET stocké avec la gestion de version Team Foundation (TFVC) ou Git, vous obtenez les détails CodeLens au niveau des classes et des méthodes (indicateurs de*niveau élément de code* ). Si votre dépôt Git est hébergé dans TfGit, vous obtenez également des liens vers les éléments de travail TFS.  
   
- ![Indicateurs de niveau d’élément dans le code](../ide/media/codelenselementlevelindicators.png "CodeLensElementLevelIndicators")  
+ ![Indicateurs de niveau d’élément dans le code](~/docs/ide/media/codelenselementlevelindicators.png "CodeLensElementLevelIndicators")  
   
  Pour tous les autres types de fichiers que vous pouvez ouvrir dans l'éditeur Visual Studio, vous obtenez les détails CodeLens pour l'intégralité du fichier dans un endroit unique au bas de la fenêtre (indicateurs de*niveau fichier* ).  
   
- ![Indicateurs de niveau d’élément CodeLens](../ide/media/almcodelensfilelevelindicators.png "ALMCodeLensFileLevelIndicators")  
+ ![Indicateurs de niveau d’élément CodeLens](~/docs/ide/media/almcodelensfilelevelindicators.png "ALMCodeLensFileLevelIndicators")  
   
  Pour utiliser le clavier afin de sélectionner des indicateurs, maintenez enfoncée la touche **Alt** pour afficher les touches numériques associées.  
   
- ![Appuyez sur Alt pour afficher les numéros d’accès clavier](../ide/media/codelensaltkeyindicators.png "CodeLensAltKeyIndicators")  
+ ![Appuyez sur Alt pour afficher les numéros d’accès clavier](~/docs/ide/media/codelensaltkeyindicators.png "CodeLensAltKeyIndicators")  
   
 ### <a name="find-changes-in-your-code"></a>Rechercher des modifications dans votre code  
  Recherchez qui a modifié votre code C# ou Visual Basic, ainsi que les modifications apportées, dans les indicateurs de niveau d'élément de code C’est ce que vous voyez quand vous utilisez la gestion de version Team Foundation (TFVC) dans Team Foundation Server ou Visual Studio Team Services.  
   
- ![CodeLens : obtenir l’historique des modifications de votre code dans TFVC](../ide/media/codelenscodechanges.png "CodeLensCodeChanges")  
+ ![CodeLens : obtenir l’historique des modifications de votre code dans TFVC](~/docs/ide/media/codelenscodechanges.png "CodeLensCodeChanges")  
   
  La période prise en charge par défaut s'étend sur les 12 derniers mois. Si votre code est stocké dans Team Foundation Server, vous pouvez modifier cette période en exécutant la [commande TFSConfig](http://msdn.microsoft.com/en-us/94424190-3b6b-4f33-a6b6-5807f4225b62) avec la [commande CodeIndex](../ide/codeindex-command.md) et l'indicateur **/indexHistoryPeriod** .  
   
  Pour afficher un historique détaillé de toutes les modifications, y compris celles de plus d'un an, choisissez **Afficher toutes les modifications de fichier**.  
   
- ![Afficher toutes les modifications du code](../ide/media/codelensshowsallchanges.png "CodeLensShowsAllChanges")  
+ ![Afficher toutes les modifications du code](~/docs/ide/media/codelensshowsallchanges.png "CodeLensShowsAllChanges")  
   
  La fenêtre Historique s'ouvre alors pour les ensembles de modifications.  
   
- ![Fenêtre d’historique pour toutes les modifications du code](../ide/media/codelenscodechangeshistory.png "CodeLensCodeChangesHistory")  
+ ![Fenêtre d’historique pour toutes les modifications du code](~/docs/ide/media/codelenscodechangeshistory.png "CodeLensCodeChangesHistory")  
   
  Quand vos fichiers sont dans un dépôt Git et que vous choisissez l'indicateur de modifications de niveau d'élément de code, voici ce que vous voyez.  
   
- ![CodeLens : obtenir l’historique des modifications de votre code dans Git](../ide/media/codelenscodechangesgit.png "CodeLensCodeChangesGit")  
+ ![CodeLens : obtenir l’historique des modifications de votre code dans Git](~/docs/ide/media/codelenscodechangesgit.png "CodeLensCodeChangesGit")  
   
  Recherchez les modifications pour un fichier entier (à l'exception des fichiers C# et Visual Basic) dans les indicateurs de niveau fichier au bas de la fenêtre.  
   
@@ -122,7 +122,7 @@ Restez concentré sur votre travail pendant que vous cherchez ce qui est arrivé
   
  Vous pouvez également voir qui a modifié votre code au fil du temps. Cette fonctionnalité vous permet de découvrir des modèles dans les modifications effectuées par votre équipe, et d’en évaluer l’impact.  
   
- ![CodeLens : voir l’historique des modifications du code sous forme de graphique](../ide/media/codelens.png "CodeLens")  
+ ![CodeLens : voir l’historique des modifications du code sous forme de graphique](~/docs/ide/media/codelens.png "CodeLens")  
   
 #### <a name="find-changes-in-your-current-branch"></a>Rechercher des modifications dans votre branche actuelle  
  Supposez que votre équipe a plusieurs branches (une branche principale et un développement enfant) pour réduire le risque de rupture du code stable :  
@@ -167,14 +167,14 @@ Restez concentré sur votre travail pendant que vous cherchez ce qui est arrivé
   
 |**Icône**|**D’où provient la modification ?**|  
 |--------------|-----------------------------------------|  
-|![CodeLens : icône Changer à partir de la branche actuelle](../ide/media/codelensbranchcurrenticon.png "CodeLensBranchCurrentIcon")|La branche actuelle|  
-|![CodeLens &#45; Icône Changer à partir de la branche parente](../ide/media/codelensbranchparenticon.png "CodeLensBranchParentIcon")|La branche parente|  
-|![CodeLens : icône Changer à partir de la branche enfant](../ide/media/codelensbranchchildicon.png "CodeLensBranchChildIcon")|Un branche enfant|  
-|![CodeLens &#45; Icône Changer à partir de la branche homologue](../ide/media/codelensbranchpeericon.png "CodeLensBranchPeerIcon")|Une branche homologue|  
-|![CodeLens &#45; Icône Changer à partir d’une branche plus éloignée](../ide/media/codelensbranchfurtherawayicon.png "CodeLensBranchFurtherAwayIcon")|Une branche plus éloignée qu'un parent, enfant ou homologue|  
-|![CodeLens : icône Fusionner à partir du parent](../ide/media/codelensbranchmergefromparenticon.png "CodeLensBranchMergeFromParentIcon")|Une fusion de la branche parente à une branche enfant|  
-|![CodeLens : icône Fusionner à partir de la branche enfant](../ide/media/codelensbranchmergefromchildicon.png "CodeLensBranchMergeFromChildIcon")|Une fusion d'une branche enfant à la branche parente|  
-|![CodeLens : icône Fusionner à partir d’une branche sans relation](../ide/media/codelensbranchmergefromunrelatedicon.png "CodeLensBranchMergeFromUnrelatedIcon")|Une fusion d'une branche sans relation (fusion sans base)|  
+|![CodeLens : icône Changer à partir de la branche actuelle](~/docs/ide/media/codelensbranchcurrenticon.png "CodeLensBranchCurrentIcon")|La branche actuelle|  
+|![CodeLens &#45; Icône Changer à partir de la branche parente](~/docs/ide/media/codelensbranchparenticon.png "CodeLensBranchParentIcon")|La branche parente|  
+|![CodeLens : icône Changer à partir de la branche enfant](~/docs/ide/media/codelensbranchchildicon.png "CodeLensBranchChildIcon")|Un branche enfant|  
+|![CodeLens &#45; Icône Changer à partir de la branche homologue](~/docs/ide/media/codelensbranchpeericon.png "CodeLensBranchPeerIcon")|Une branche homologue|  
+|![CodeLens &#45; Icône Changer à partir d’une branche plus éloignée](~/docs/ide/media/codelensbranchfurtherawayicon.png "CodeLensBranchFurtherAwayIcon")|Une branche plus éloignée qu'un parent, enfant ou homologue|  
+|![CodeLens : icône Fusionner à partir du parent](~/docs/ide/media/codelensbranchmergefromparenticon.png "CodeLensBranchMergeFromParentIcon")|Une fusion de la branche parente à une branche enfant|  
+|![CodeLens : icône Fusionner à partir de la branche enfant](~/docs/ide/media/codelensbranchmergefromchildicon.png "CodeLensBranchMergeFromChildIcon")|Une fusion d'une branche enfant à la branche parente|  
+|![CodeLens : icône Fusionner à partir d’une branche sans relation](~/docs/ide/media/codelensbranchmergefromunrelatedicon.png "CodeLensBranchMergeFromUnrelatedIcon")|Une fusion d'une branche sans relation (fusion sans base)|  
   
 ### <a name="find-linked-work-items"></a>Rechercher des éléments de travail liés  
  ![CodeLens &#45; Rechercher des éléments de travail pour un code spécifique](../ide/media/codelensworkitems.png "CodeLensWorkItems")  
@@ -186,11 +186,11 @@ Restez concentré sur votre travail pendant que vous cherchez ce qui est arrivé
  ![CodeLens &#45; Rechercher les bogues liés aux ensembles de modifications](../ide/media/codelensbugschangesets.png "CodeLensBugsChangesets")  
   
 ### <a name="contact-the-owner-of-an-item"></a>Contacter le propriétaire d'un élément  
- ![Contacter le propriétaire d’un élément](../ide/media/codelenscontactitemowner.png "CodeLensContactItemOwner")  
+ ![Contacter le propriétaire d’un élément](~/docs/ide/media/codelenscontactitemowner.png "CodeLensContactItemOwner")  
   
  Ouvrez le menu contextuel d'un élément pour afficher les options de contact. Si vous avez installé Lync ou Skype Entreprise, les options suivantes apparaissent :  
   
- ![Options de contact pour un élément](../ide/media/codelensitemcontactmenu.png "CodeLensItemContactMenu")  
+ ![Options de contact pour un élément](~/docs/ide/media/codelensitemcontactmenu.png "CodeLensItemContactMenu")  
   
 ##  <a name="FindRunUnitTests"></a> Rechercher des tests unitaires pour votre code  
  Découvrez en plus sur les tests unitaires qui existent pour votre code sans ouvrir l'Explorateur de tests. Vous aurez besoin de :  
@@ -207,7 +207,7 @@ Restez concentré sur votre travail pendant que vous cherchez ce qui est arrivé
   
      ![CodeLens &#45; Choisir l’état de test dans l’éditeur de code](../ide/media/codelenschoosetestindicator.png "CodeLensChooseTestIndicator")  
   
-3.  Si une icône d’avertissement s’affiche ![CodeLens &#45; Avertissement sur les tests unitaires non encore exécutés](../ide/media/codelenstestwarningicon.png "CodeLensTestWarningIcon"), exécutez les tests.  
+3.  Si une icône d’avertissement s’affiche ![CodeLens &#45; Avertissement sur les tests unitaires non encore exécutés](~/docs/ide/media/codelenstestwarningicon.png "CodeLensTestWarningIcon"), exécutez les tests.  
   
      ![CodeLens &#45; Afficher les tests unitaires non encore exécutés](../ide/media/codelenstestsnotyetrun.png "CodeLensTestsNotYetRun")  
   
@@ -215,7 +215,7 @@ Restez concentré sur votre travail pendant que vous cherchez ce qui est arrivé
   
      ![CodeLens &#45; Accéder à la définition des tests unitaires](../ide/media/codelensunittestdefinition.png "CodeLensUnitTestDefinition")  
   
-5.  Vérifiez les résultats du test. Choisissez l’indicateur d’état de test (![CodeLens &#45; Icône d’échec de test unitaire](../ide/media/codelenstestfailedicon.png "CodeLensTestFailedIcon") ou ![CodeLens &#45; Icône de réussite de test unitaire](../ide/media/codelenstestpassedicon.png "CodeLensTestPassedIcon")), ou appuyez sur **Alt + 1**.  
+5.  Vérifiez les résultats du test. Choisissez l’indicateur d’état de test (![CodeLens &#45; Icône d’échec de test unitaire](~/docs/ide/media/codelenstestfailedicon.png "CodeLensTestFailedIcon") ou ![CodeLens &#45; Icône de réussite de test unitaire](~/docs/ide/media/codelenstestpassedicon.png "CodeLensTestPassedIcon")), ou appuyez sur **Alt + 1**.  
   
      ![CodeLens &#45; Afficher le résultat de test unitaire](../ide/media/codelensunittestresult.png "CodeLensUnitTestResult")  
   
@@ -232,7 +232,7 @@ Restez concentré sur votre travail pendant que vous cherchez ce qui est arrivé
   
  Activez et désactivez les indicateurs de niveau fichier CodeLens à l'aide des icônes en forme de chevron situées en bas de la fenêtre de l'éditeur.  
   
- ![Activer et désactiver les indicateurs de niveau fichier](../ide/media/codelensfilelevelonandoff.png "CodeLensFileLevelOnAndOff")  
+ ![Activer et désactiver les indicateurs de niveau fichier](~/docs/ide/media/codelensfilelevelonandoff.png "CodeLensFileLevelOnAndOff")  
   
 ###  <a name="NoIndicators"></a>Q : Où est CodeLens ?  
  **R :** CodeLens apparaît dans le code Visual C# .NET et Visual Basic .NET, au niveau de la méthode, de la classe, de l'indexeur et de la propriété. CodeLens apparaît au niveau du fichier pour tous les autres types de fichiers.  
@@ -277,11 +277,11 @@ Restez concentré sur votre travail pendant que vous cherchez ce qui est arrivé
 4.  Appuyez sur **Tabulation** pour accéder à la liste **Afficher les paramètres de** , puis appuyez sur **Flèche bas** pour sélectionner **CodeLens**.  
   
 ### <a name="q-can-i-move-the-codelens-heads-up-display"></a>Q : Puis-je déplacer l'affichage tête haute CodeLens ?  
- **R :** Oui, choisissez ![CodeLens &#45; Ancrer en tant que fenêtre](../ide/media/codelensdockwindow.png "CodeLensDockWindow") pour ancrer CodeLens en tant que fenêtre.  
+ **R :** Oui, choisissez ![CodeLens &#45; Ancrer en tant que fenêtre](~/docs/ide/media/codelensdockwindow.png "CodeLensDockWindow") pour ancrer CodeLens en tant que fenêtre.  
   
- ![Ancrer la fenêtre d’indicateur CodeLens](../ide/media/codelensselectdockwindow.png "CodeLensSelectDockWindow")  
+ ![Ancrer la fenêtre d’indicateur CodeLens](~/docs/ide/media/codelensselectdockwindow.png "CodeLensSelectDockWindow")  
   
- ![Fenêtre ancrée des références CodeLens](../ide/media/codelensreferencesdockedwindow.png "CodeLensReferencesDockedWindow")  
+ ![Fenêtre ancrée des références CodeLens](~/docs/ide/media/codelensreferencesdockedwindow.png "CodeLensReferencesDockedWindow")  
   
 ### <a name="q-how-do-i-refresh-the-indicators"></a>Q : Comment actualiser les indicateurs ?  
  **R :** cela dépend de l'indicateur :  

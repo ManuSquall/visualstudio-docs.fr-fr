@@ -27,7 +27,7 @@ caps.handback.revision: 35
   
  [!INCLUDE[appliesto_xlalldocapp](../vsto/includes/appliesto-xlalldocapp-md.md)]  
   
- ![lien vers la vidéo](../vsto/media/playvideo.png "lien vers la vidéo") Pour une démonstration vidéo connexe, consultez [Comment faire pour créer, dans Excel, une liste qui soit connectée à une liste SharePoint ?](http://go.microsoft.com/fwlink/?LinkID=130263).  
+ ![lien vers la vidéo](~/docs/data-tools/media/playvideo.gif "lien vers la vidéo") Pour une démonstration vidéo connexe, consultez [Comment faire pour créer, dans Excel, une liste qui soit connectée à une liste SharePoint ?](http://go.microsoft.com/fwlink/?LinkID=130263).  
   
 ## Mappage de colonnes  
   

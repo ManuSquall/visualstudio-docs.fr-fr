@@ -52,11 +52,11 @@ Cet exemple propose une introduction approfondie de R avec des commentaires dé
 
 - `1-Getting Started with R.R` couvre de nombreux principes fondamentaux de R, notamment l’utilisation de packages, le chargement et l’analyse des données, ainsi que le traçage.
 
-    ![Exemple de sortie de l’exemple 1-Getting Started with R.R](media/samples-getting-started-output.png)
+    ![Exemple de sortie de l’exemple 1-Getting Started with R.R](~/docs/rtvs/media/samples-getting-started-output.png)
 
 - `2-Introduction to ggplot2.R` présente le package graphique ggplot2 connu pour ses beaux graphiques et sa syntaxe simple. Cet exemple permet de visualiser des données sur les tremblements de terre à Fidji.
 
-    ![Exemple de sortie de l’exemple 2-Introduction to ggplot2.R](media/samples-ggplot-output.png)
+    ![Exemple de sortie de l’exemple 2-Introduction to ggplot2.R](~/docs/rtvs/media/samples-ggplot-output.png)
 
 
 ## <a name="microsoft-r-server-and-machine-learning"></a>Microsoft R Server et Machine Learning
@@ -67,7 +67,7 @@ Le meilleur moyen de découvrir un exemple, quel qu’il soit, consiste à ouvri
 
 - `Benchmarks` exécute plusieurs benchmarks nécessitant beaucoup de ressources système pour montrer les gains de performance qui découlent de l’utilisation de Microsoft R Open et d’Intel Math Kernel Library (MKL) dans le cadre de l’exécution de calculs parallèles d’algèbre linéaire. Basé sur des données simulées, il compare spécifiquement le nombre de threads utilisés, un ou deux, pour effectuer certains calculs liés aux matrices.   
 
-    ![Exemple de tracé de benchmark](media/samples-mro-benchmark-plot.png)
+    ![Exemple de tracé de benchmark](~/docs/rtvs/media/samples-mro-benchmark-plot.png)
 
 - `Bike_Rental_Estimation_with_MRS` crée un modèle de prévision de demande de location de vélos selon un jeu de données d’historique à l’aide de Microsoft R Server. 
 
@@ -76,7 +76,7 @@ Le meilleur moyen de découvrir un exemple, quel qu’il soit, consiste à ouvri
     - `Import Data from URL to xdf.R` montre comment charger un fichier de données identifié par URL dans Microsoft R Server en tant que fichier xdf. (Nécessite MRS.)
     - `Using ggplot2.R` est une extension de l’exemple `A First Look at R/2-Introduction to ggplot2.R`. Il traite de manière plus approfondie des fonctionnalités de ggplot2, notamment le traçage 3D interactif.
 
-        ![Sortie de l’exemple Using ggplot2.R](media/samples-3d-interactive.png)
+        ![Sortie de l’exemple Using ggplot2.R](~/docs/rtvs/media/samples-3d-interactive.png)
 
 - `Datasets` contient trois fichiers `.csv` utilisés par d’autres exemples.
 - `Flight_Delays_Prediction_with_R` et `Flight_Delays_Prediction_with_MRS` montrent comment prédire les vols en retard à l’aide de R, de Machine Learning et des données d’historique sur les vols à l’heure et la météo. 
@@ -100,11 +100,11 @@ Le meilleur moyen de découvrir un exemple, quel qu’il soit, consiste à ouvri
 
 La comparaison suivante montre que MRS et MRO avec MKL offrent des performances de calcul nettement supérieures à celles obtenues par R et MRO sans MKL pour certains calculs de matrice. Des données simulées sont utilisées dans ce calcul :
 
-![Comparaison entre, d’une part, MRS et MRO avec MKL et, d’autre part, R et MRO sans MKL](media/samples-speed-comparison.png)
+![Comparaison entre, d’une part, MRS et MRO avec MKL et, d’autre part, R et MRO sans MKL](~/docs/rtvs/media/samples-speed-comparison.png)
 
 Pour obtenir une comparaison technique de R avec MRO et MRS, lisez la [discussion approfondie de Lixun Zhang](http://htmlpreview.github.io/?https://github.com/lixzhang/R-MRO-MRS/blob/master/Introduction_to_MRO_and_MRS.html) sur le sujet.
 
 La figure suivante compare ensuite la durée calendaire en secondes utilisée dans la création de modèles de régression logistique pour prédire si l’arrivée de vols passagers réguliers sera retardée de plus de 15 minutes. La durée calendaire dans CRAN R augmente considérablement à la suite d’une légère augmentation du nombre de lignes, tandis que la durée calendaire dans MRS n’est multipliée que par deux environ. Pour plus d’informations sur ce benchmark, passez en revue l’exemple `Benchmarks/rxGlm_benchmark.R`.
 
-![Benchmark rxGlm](media/samples-rxGLM-benchmark.png)
+![Benchmark rxGlm](~/docs/rtvs/media/samples-rxGLM-benchmark.png)
 

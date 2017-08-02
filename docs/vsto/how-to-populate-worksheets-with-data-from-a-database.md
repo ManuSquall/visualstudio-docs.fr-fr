@@ -30,7 +30,7 @@ caps.handback.revision: 38
   
  L'exemple suivant indique comment ajouter des contrôles liés aux données dans des projets au niveau du document à l'aide d'un concepteur.  Pour obtenir un exemple d'ajout de contrôles liés aux données dans des projets au niveau de l'application au moment de l'exécution, consultez [Procédure pas à pas : liaison de données complexe dans un projet de complément VSTO](../vsto/walkthrough-complex-data-binding-in-vsto-add-in-project.md).  
   
- ![lien vers la vidéo](../vsto/media/playvideo.png "lien vers la vidéo") Pour une démonstration vidéo connexe, consultez [Comment faire pour transférer des données dans une feuille de calcul Excel ? \(page éventuellement en anglais\)](http://go.microsoft.com/fwlink/?LinkID=130277) et [Comment faire pour consommer des données de base de données dans Excel ? \(page éventuellement en anglais\)](http://go.microsoft.com/fwlink/?LinkID=130287).  
+ ![lien vers la vidéo](~/docs/data-tools/media/playvideo.gif "lien vers la vidéo") Pour une démonstration vidéo connexe, consultez [Comment faire pour transférer des données dans une feuille de calcul Excel ? \(page éventuellement en anglais\)](http://go.microsoft.com/fwlink/?LinkID=130277) et [Comment faire pour consommer des données de base de données dans Excel ? \(page éventuellement en anglais\)](http://go.microsoft.com/fwlink/?LinkID=130287).  
   
 ## Ajout d'un contrôle lié aux données à une feuille de calcul au moment du design  
   

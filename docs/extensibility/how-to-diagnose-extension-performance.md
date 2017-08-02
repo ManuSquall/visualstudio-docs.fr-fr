@@ -41,7 +41,7 @@ En fonction des commentaires des clients, un des domaines d’intérêt pour la 
 
 Pour aider les utilisateurs à comprendre cet impact, nous avons ajouté une nouvelle fonctionnalité dans Visual Studio pour informer les utilisateurs des extensions lentes. Lorsque Visual Studio détecte une nouvelle extension qui ralentit la charge de la solution ou de démarrage, les utilisateurs verront une notification dans l’IDE à la nouvelle boîte de dialogue « Gérer des performances Visual Studio ». Cette boîte de dialogue est toujours accessible par menu d’aide pour parcourir les extensions détectées précédemment.
 
-![gérer les performances de Visual Studio](media/manage-performance.png)
+![gérer les performances de Visual Studio](~/docs/extensibility/media/manage-performance.png)
 
 Ce document vise à aider les développeurs d’extensions en décrivant comment l’impact de l’extension est calculée et comment il peut être analysé en local pour tester si une extension peut s’afficher comme une extension aient un impact sur des performances.
 
@@ -143,7 +143,7 @@ private void DoMoreWork()
 
 Une fois que vous configurez votre environnement Visual Studio avec votre extension installée, vous pouvez enregistrer une trace de démarrage en ouvrant PerfView et en ouvrant le dialogue collecter à partir du menu « Collecter ».
 
-![menu collecter perfview](media/perfview-collect-menu.png)
+![menu collecter perfview](~/docs/extensibility/media/perfview-collect-menu.png)
 
 Les options par défaut fournit les piles d’appels pour l’utilisation du processeur, mais puisque nous sommes intéressés à temps de blocage, ainsi, vous devez également activer des piles de « Temps de Thread ». Une fois que les paramètres sont prêts, vous pouvez cliquez sur « Démarrer la collecte » et démarrez Visual Studio une fois l’enregistrement est démarré.
 
@@ -155,7 +155,7 @@ Une fois l’enregistrement terminé PerfView automatiquement ouvrir la trace et
 
 Dans le cadre de cet exemple, nous nous intéressons principalement la vue « Threads des piles de temps » qui se trouve sous « Groupe avancé ». Cette vue affiche le temps total passé sur un thread par une méthode, y compris le temps processeur et le temps bloqué, telles que les e/s disque ou en attendant des handles.
 
- ![piles des threads](media/perfview-thread-time-stacks.png)
+ ![piles des threads](~/docs/extensibility/media/perfview-thread-time-stacks.png)
 
  Lors de l’ouverture de vue « Threads des piles de temps », vous devez choisir le processus « devenv » pour démarrer l’analyse.
 
@@ -170,11 +170,11 @@ Pour l’exemple ci-dessus certains appel intéressante piles serait :
 
 1. E/s à l’aide de la classe de System.IO : tandis que le coût inclusif de ces images peut ne pas être très coûteux dans la trace, ils sont une cause potentielle d’un problème dans la mesure où la vitesse d’e/s de fichier varie d’un ordinateur à un autre.
 
-  ![trames de système d’e/s](media/perfview-system-io-frames.png)
+  ![trames de système d’e/s](~/docs/extensibility/media/perfview-system-io-frames.png)
 
 2. Blocage des appels en attente sur une autre tâche asynchrone : dans ce cas temps inclusif représentent le temps que le thread principal est bloqué sur l’achèvement du travail asynchrone.
 
-  ![frames d’appels bloquants](media/perfview-blocking-call-frames.png)
+  ![frames d’appels bloquants](~/docs/extensibility/media/perfview-blocking-call-frames.png)
 
 Une des vues dans la trace qui seront utiles pour déterminer l’impact sera les piles « charge de l’Image ». Vous pouvez appliquer les mêmes filtres appliqués à la vue « Threads des piles de temps » et Découvrez tous les assemblys chargés en raison du code exécuté par votre package chargé automatiquement.
 

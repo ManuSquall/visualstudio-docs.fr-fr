@@ -52,7 +52,7 @@ L’approche choisie ici est celle pour les extensions CPython standard, comme d
 
 Cette procédure pas à pas est écrite pour Visual Studio 2017 avec les charges de travail **Développement Desktop en C++** et **Développement Python** et leurs options par défaut (par exemple, Python 3.6 comme interpréteur par défaut). Dans la charge de travail **Développement Python**, cochez aussi la case située à droite pour **Outils de développement natifs Python**, qui définit la plupart des options décrites dans cette rubrique. (Cette option inclut également la charge de travail C++ automatiquement.) 
 
-![Sélection de l’option Outils de développement natifs Python](media/cpp-install-native.png)
+![Sélection de l’option Outils de développement natifs Python](~/docs/python/media/cpp-install-native.png)
 
 Pour plus d’informations, consultez [Installation de la prise en charge de Python pour Visual Studio](installation.md), notamment l’utilisation d’autres versions de Visual Studio. Si vous installez Python séparément, veillez à sélectionner **Télécharger les symboles de débogage** et **Télécharger les binaires de débogage** sous **Options avancées** dans le programme d’installation. Vous êtes ainsi certain d’avoir à votre disposition les bibliothèques de débogage nécessaires si vous choisissez d’effectuer une build Debug.
 
@@ -278,7 +278,7 @@ Avec la [prise en charge de Python dans Visual Studio](installation.md), vous po
 
 1. Dans votre code C++, définissez un point d’arrêt sur la première ligne de la méthode `tanh`, puis démarrez le débogueur. Vous verrez que le débogueur s’arrête quand ce code est appelé :
 
-    ![Arrêt au niveau d’un point d’arrêt dans le code C++](media/cpp-debugging.png)
+    ![Arrêt au niveau d’un point d’arrêt dans le code C++](~/docs/python/media/cpp-debugging.png)
 
 1. À ce stade vous pouvez, entre autres, parcourir le code C++ et examiner des variables comme expliqué dans [Débogage simultané de code Python et C++](debugging-mixed-mode.md).
 

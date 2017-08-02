@@ -67,11 +67,11 @@ Pour créer un site temporaire dans Azure App Service sans souscrire un abonneme
 
 1. Lorsque vous êtes invité à installer les packages externes, sélectionnez **Install into a virtual environment** (Installer dans un environnement virtuel). Notez le contrôle **Show required packages** (Afficher les packages requis) au bas de la boîte de dialogue, destiné à indiquer les packages qui seront installés :
 
-  ![Installation des packages requis](media/tutorials-common-external-packages.png)
+  ![Installation des packages requis](~/docs/python/media/tutorials-common-external-packages.png)
 
 1. Sélectionnez votre interpréteur de base favori pour l’environnement virtuel (par exemple, **Python 2.7** ou **Python 3.4**), puis cliquez sur **Créer** :
 
-  ![Ajout d’un environnement virtuel lors de la création d’un projet](media/tutorials-common-add-virtual-environment.png)
+  ![Ajout d’un environnement virtuel lors de la création d’un projet](~/docs/python/media/tutorials-common-add-virtual-environment.png)
 
 1. Une fois le projet créé, testez-le localement en sélectionnant **Débogage > Démarrer le débogage** ou en appuyant sur F5. Par défaut, l’application utilise un référentiel en mémoire qui ne requiert aucune configuration. Lorsque le serveur web sera arrêté, toutes les données seront perdues.
 
@@ -85,7 +85,7 @@ Pour créer un site temporaire dans Azure App Service sans souscrire un abonneme
 
 1. Dans la boîte de dialogue **Publier**, sélectionnez **Microsoft Azure App Service** :
 
-  ![Publication sur Azure, étape 1](media/tutorials-common-publish-1.png)
+  ![Publication sur Azure, étape 1](~/docs/python/media/tutorials-common-publish-1.png)
 
 1. Sélectionnez une cible :
 
@@ -94,7 +94,7 @@ Pour créer un site temporaire dans Azure App Service sans souscrire un abonneme
 
 1. Les détails d’App Service apparaissent dans l’onglet **Connexion** ci-dessous de la boîte de dialogue **Publier**.
 
-  ![Publication sur Azure, étape 2](media/tutorials-common-publish-2.png)
+  ![Publication sur Azure, étape 2](~/docs/python/media/tutorials-common-publish-2.png)
 
 1. Sélectionnez **Suivant >** autant de fois que nécessaire pour examiner les paramètres supplémentaires. Si vous prévoyez de [déboguer à distance votre code Python sur Azure](debugging-azure-remote.md), vous devez définir **Configuration** sur **Débogage**.
 1. Sélectionnez **Publier**. Une fois votre application déployée sur Azure, votre navigateur par défaut s’ouvrira au niveau de ce site. 

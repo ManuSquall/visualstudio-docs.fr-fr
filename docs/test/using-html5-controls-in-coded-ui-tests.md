@@ -59,7 +59,7 @@ Les tests codés de l'interface utilisateur incluent la prise en charge d'une pa
 ###  <a name="UsingHTML5ControlsCodedUITestsAudio"></a> Contrôle Audio  
  **Contrôle Audio :** les actions sur le contrôle Audio HTML5 sont correctement enregistrées et lues.  
   
- ![Contrôle Audio HTML5](../test/media/codedui_html5_audio.png "CodedUI_HTML5_Audio")  
+ ![Contrôle Audio HTML5](~/docs/test/media/codedui_html5_audio.png "CodedUI_HTML5_Audio")  
   
 |Action|Enregistrement|Code généré|  
 |------------|---------------|--------------------|  
@@ -102,7 +102,7 @@ string Volume
 ###  <a name="UsingHTML5ControlsCodedUITestsVideo"></a> Contrôle Video  
  **Contrôle Video :** les actions sur le contrôle Video HTML5 sont correctement enregistrées et lues.  
   
- ![Contrôle Video HTML5](../test/media/codedui_html5_video.png "CodedUI_HTML5_Video")  
+ ![Contrôle Video HTML5](~/docs/test/media/codedui_html5_video.png "CodedUI_HTML5_Video")  
   
 |Action|Enregistrement|Code généré|  
 |------------|---------------|--------------------|  
@@ -132,7 +132,7 @@ string VideoWidth
 ###  <a name="UsingHTML5ControlsCodedUITestsSlider"></a> Slider  
  **Contrôle Slider :** les actions sur le contrôle Slider HTML5 sont correctement enregistrées et lues.  
   
- ![Contrôle Slider HTML5](../test/media/codedui_html5_slider.png "CodedUI_HTML5_Slider")  
+ ![Contrôle Slider HTML5](~/docs/test/media/codedui_html5_slider.png "CodedUI_HTML5_Slider")  
   
 |Action|Enregistrement|Code généré|  
 |------------|---------------|--------------------|  
@@ -152,7 +152,7 @@ string ValueAsNumber
 ###  <a name="UsingHTML5ControlsCodedUITestsProgressbar"></a> ProgressBar  
  **Contrôle ProgressBar :** ProgressBar est un contrôle sur lequel il n’est pas possible d’interagir. Vous pouvez ajouter des assertions sur les propriétés `Value` et `Max` de ce contrôle.  
   
- ![Contrôle ProgressBar HTML5](../test/media/codedui_html5_progressbar.png "CodedUI_HTML5_ProgressBar")  
+ ![Contrôle ProgressBar HTML5](~/docs/test/media/codedui_html5_progressbar.png "CodedUI_HTML5_ProgressBar")  
   
 ## <a name="see-also"></a>Voir aussi  
  [Éléments HTML](http://go.microsoft.com/fwlink/?LinkID=232441)   

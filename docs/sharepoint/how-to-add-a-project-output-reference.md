@@ -36,7 +36,7 @@ caps.handback.revision: 14
   
 2.  Dans l'**Explorateur de solutions**, cliquez sur un élément dans le noeud du projet SharePoint.  
   
-3.  Dans la fenêtre **Propriétés**, cliquez sur la propriété **Project Output References**, puis sur le bouton de sélection \(![Bouton de sélection du concepteur ASP.NET mobile](../sharepoint/media/mwellipsis.png "Bouton de sélection du concepteur ASP.NET mobile")\) en regard de celle\-ci.  
+3.  Dans la fenêtre **Propriétés**, cliquez sur la propriété **Project Output References**, puis sur le bouton de sélection \(![Bouton de sélection du concepteur ASP.NET mobile](~/docs/sharepoint/media/mwellipsis.gif "Bouton de sélection du concepteur ASP.NET mobile")\) en regard de celle\-ci.  
   
 4.  Dans la boîte de dialogue **Références de sortie de projet**, cliquez sur le bouton **Ajouter**.  
   

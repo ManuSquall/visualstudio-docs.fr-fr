@@ -47,7 +47,7 @@ Dans bien des cas, les exceptions non gérées dans le concepteur XAML peuvent �
   
  Quand le code de projet est désactivé, Visual Studio affiche des espaces réservés. Pour une liaison, il peut s’agir du nom de la propriété dans le cas où les données ne sont plus disponibles ou bien un espace réservé pour un contrôle qui n’est plus en cours d’exécution.  
   
- ![Boîte de dialogue d’exception non gérée](../designers/media/xaml_unhandledexception.png "XAML_UnhandledException")  
+ ![Boîte de dialogue d’exception non gérée](~/docs/designers/media/xaml_unhandledexception.png "XAML_UnhandledException")  
   
 #### <a name="to-determine-if-project-code-is-causing-an-exception"></a>Pour déterminer si le code de projet est à l’origine d’une exception  
   
@@ -63,7 +63,7 @@ Dans bien des cas, les exceptions non gérées dans le concepteur XAML peuvent �
   
 2.  Dans le Gestionnaire des tâches Windows, cliquez sur le bouton **Fin de tâche** pour fermer toutes les instances du concepteur XAML Visual Studio en cours d’exécution.  
   
-     ![Instances du concepteur XAML dans TaskManager](../designers/media/xaml_taskmanager.png "XAML_TaskManager")  
+     ![Instances du concepteur XAML dans TaskManager](~/docs/designers/media/xaml_taskmanager.png "XAML_TaskManager")  
   
 3.  Dans Visual Studio, ouvrez la page XAML qui contient le code ou le contrôle à déboguer.  
   
@@ -75,7 +75,7 @@ Dans bien des cas, les exceptions non gérées dans le concepteur XAML peuvent �
   
 7.  Dans la boîte de dialogue **Attacher au processus** , dans la liste **Processus disponibles** , choisissez **XDesProc.exe**, puis cliquez sur le bouton **Attacher** .  
   
-     ![Processus du concepteur XAML](../designers/media/xaml_attach.png "XAML_Attach")  
+     ![Processus du concepteur XAML](~/docs/designers/media/xaml_attach.png "XAML_Attach")  
   
      Il s’agit ici du processus destiné au concepteur XAML de la première instance de Visual Studio.  
   
@@ -89,7 +89,7 @@ Dans bien des cas, les exceptions non gérées dans le concepteur XAML peuvent �
   
 -   Sinon, dans la barre d’outils du concepteur XAML, cliquez sur le bouton **Désactiver le code de projet** .  
   
-     ![Le bouton Désactiver le code de projet](../designers/media/xaml_disablecode.png "XAML_DisableCode")  
+     ![Le bouton Désactiver le code de projet](~/docs/designers/media/xaml_disablecode.png "XAML_DisableCode")  
   
      Vous pouvez cliquer à nouveau sur le bouton pour réactiver le code de projet.  
   

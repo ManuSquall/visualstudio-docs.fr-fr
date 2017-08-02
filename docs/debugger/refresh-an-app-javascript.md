@@ -28,7 +28,7 @@ caps.handback.revision: 20
 # Actualiser une application (JavaScript)
 [!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
 
-![S'applique à Windows et Windows Phone](../debugger/media/windows_and_phone_content.png "windows\_and\_phone\_content")  
+![S'applique à Windows et Windows Phone](~/docs/debugger/media/windows_and_phone_content.png "windows\_and\_phone\_content")  
   
  Vous pouvez modifier votre code pendant le débogage, puis actualiser une application de Store en JavaScript en sélectionnant le bouton **Actualiser l'application Windows** de la barre d'outils **Déboguer**.  Ce bouton permet de recharger l'application sans arrêter, ni redémarrer le débogueur.  La fonction Actualiser vous permet de modifier le code HTML, CSS et JavaScript et de visualiser rapidement le résultat.  Cette fonctionnalité est prise en charge pour les applications du Windows Store et les applications du Windows Phone Store.  
   
@@ -77,7 +77,7 @@ caps.handback.revision: 20
     Hello!  
     ```  
   
-7.  Cliquez sur le bouton **Actualiser l'application Windows**, similaire à : ![Bouton d'actualisation de l'application Windows](../debugger/media/js_refresh.png "JS\_Refresh").  \(Ou appuyez sur F4.\)  
+7.  Cliquez sur le bouton **Actualiser l'application Windows**, similaire à : ![Bouton d'actualisation de l'application Windows](~/docs/debugger/media/js_refresh.png "JS\_Refresh").  \(Ou appuyez sur F4.\)  
   
 8.  Basculez vers l'application.  L'application est rechargée sans que le débogueur redémarre, et le nouveau titre de la page apparaît.  
   

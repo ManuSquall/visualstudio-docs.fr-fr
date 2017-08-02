@@ -78,7 +78,7 @@ Vous pouvez personnaliser Visual Studio non seulement en ajoutant et en supprima
   
     -   Pour ajouter un menu, choisissez le bouton **Ajouter un nouveau menu**, choisissez le bouton **Modifier la sélection**, puis nommez le menu à ajouter.  
   
-         ![Boîte de dialogue Personnaliser montrant comment ajouter un menu](../ide/media/addmenu.png "AddMenu")  
+         ![Boîte de dialogue Personnaliser montrant comment ajouter un menu](~/docs/ide/media/addmenu.png "AddMenu")  
   
     -   Pour supprimer un menu, choisissez-le dans la liste **Contrôles**, puis choisissez le bouton **Supprimer**.  
   
@@ -94,7 +94,7 @@ Vous pouvez personnaliser Visual Studio non seulement en ajoutant et en supprima
   
     -   Pour ajouter une barre d’outils, choisissez le bouton **Nouveau**, spécifiez le nom de la barre d’outils à ajouter, puis choisissez le bouton **OK**.  
   
-         ![Boîte de dialogue Personnaliser montrant comment ajouter une barre d’outils](../ide/media/addtoolbar.png "AddToolbar")  
+         ![Boîte de dialogue Personnaliser montrant comment ajouter une barre d’outils](~/docs/ide/media/addtoolbar.png "AddToolbar")  
   
     -   Pour supprimer une barre d’outils personnalisée, choisissez-la dans la liste **Barres d’outils**, puis choisissez le bouton **Supprimer**.  
   
@@ -122,7 +122,7 @@ Vous pouvez personnaliser Visual Studio non seulement en ajoutant et en supprima
   
          Dans la boîte de dialogue **Ajouter une commande**, choisissez un élément dans la liste **Catégories**, choisissez un élément dans la liste **Commandes**, puis choisissez le bouton **OK**.  
   
-         ![Boîte de dialogue Ajouter une commande de Visual Studio](../ide/media/addcommand.png "AddCommand")  
+         ![Boîte de dialogue Ajouter une commande de Visual Studio](~/docs/ide/media/addcommand.png "AddCommand")  
   
     -   Pour supprimer une commande, choisissez-la dans la liste **Contrôles**, puis choisissez le bouton **Supprimer**.  
   

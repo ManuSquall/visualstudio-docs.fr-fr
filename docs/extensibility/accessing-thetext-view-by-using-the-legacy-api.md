@@ -24,7 +24,7 @@ Un affichage de texte est une présentation de texte stocké dans une mémoire t
 ## objet d'affichage de texte  
  Chaque vue est associée à sa propre mémoire tampon de texte, et la vue est une fenêtre sur les données dans la mémoire tampon.  Le diagramme suivant illustre les interfaces principales de l'objet d'affichage de texte, représenté par <xref:Microsoft.VisualStudio.TextManager.Interop.VsTextView>.  
   
- ![Objet de vue de texte Visual Studio](../extensibility/media/vstextview.png "vstextview")  
+ ![Objet de vue de texte Visual Studio](~/docs/extensibility/media/vstextview.gif "vstextview")  
 objet d'affichage de texte  
   
  La vue est un moyen de disposition du texte dans la mémoire tampon.  Il inclut des fonctionnalités telles que le retour automatique à la ligne, et le mode plan, afin que ce que vous voyez dans la vue ne soit pas une représentation exacte du texte dans la mémoire tampon.  

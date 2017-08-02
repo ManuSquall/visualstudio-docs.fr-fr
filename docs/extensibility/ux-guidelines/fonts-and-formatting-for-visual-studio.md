@@ -300,11 +300,11 @@ protected static void SetFontStyles(Control topControl, Control parent, Font ref
 ### <a name="testing-the-environment-font"></a>La police d’environnement de test  
  Pour vous assurer que votre interface utilisateur à l’aide de la police d’environnement et qu’il respecte les paramètres de taille, ouvrez **Outils > Options > environnement > polices et couleurs** et sélectionnez « Police d’environnement » sous la « afficher les paramètres de : « menu déroulant.  
   
- ![Paramètres de polices et couleurs dans les outils &gt; boîte de dialogue Options](../../extensibility/ux-guidelines/media/0201-a_optionsfonts.png "0201-a_OptionsFonts")<br />Paramètres de polices et couleurs dans les outils &gt; boîte de dialogue Options
+ ![Paramètres de polices et couleurs dans les outils &gt; boîte de dialogue Options](~/docs/extensibility/ux-guidelines/media/0201-a_optionsfonts.png "0201-a_OptionsFonts")<br />Paramètres de polices et couleurs dans les outils &gt; boîte de dialogue Options
   
  Définir la police à très autre chose que la valeur par défaut. Pour bien qui ne met pas à jour l’interface utilisateur, choisir une police à empattements (par exemple « Times New Roman ») et définissez une taille très importante. Testez ensuite votre interface utilisateur pour vous assurer qu’il respecte l’environnement. Voici un exemple d’utilisation de la boîte de dialogue de licence :  
   
- ![Exemple de texte de l’interface utilisateur qui ne respecte pas la police d’environnement](../../extensibility/ux-guidelines/media/0201-b_wrongfontdialog.png "0201-b_WrongFontDialog")<br />Exemple de texte de l’interface utilisateur qui ne respecte pas la police d’environnement
+ ![Exemple de texte de l’interface utilisateur qui ne respecte pas la police d’environnement](~/docs/extensibility/ux-guidelines/media/0201-b_wrongfontdialog.png "0201-b_WrongFontDialog")<br />Exemple de texte de l’interface utilisateur qui ne respecte pas la police d’environnement
   
  Dans ce cas, « Informations utilisateur » et « Informations de produit » sont respectant pas la police. Dans certains cas, cela peut être un choix de conception explicite, mais il peut être un bogue si la police explicite n’est pas spécifiée dans le cadre des ligne rouge de spécifications.  
   
@@ -443,7 +443,7 @@ protected static void SetFontStyles(Control topControl, Control parent, Font ref
   
 |||  
 |-|-|  
-|**Utilisation :**<br /><br /> -Les titres de section document bien l’interface utilisateur<br />-Rapports<br /><br /> **Faire :** phrase cas d’usage<br /><br /> **Ne pas :**<br /><br /> -En gras, italique ou gras italique<br />-Utilisez corps du texte<br />-Utilisez dans les contrôles standard de Visual Studio<br />-Utilisez dans les fenêtres Outil|**Apparaît sous la forme :** 14 pt Segoe UI<br /><br /> **Exemple visuel :**<br /><br /> ![Exemple de titre de police d’environnement 155 %](../../extensibility/ux-guidelines/media/0202-c_ef155.png "0202-c_EF155")|  
+|**Utilisation :**<br /><br /> -Les titres de section document bien l’interface utilisateur<br />-Rapports<br /><br /> **Faire :** phrase cas d’usage<br /><br /> **Ne pas :**<br /><br /> -En gras, italique ou gras italique<br />-Utilisez corps du texte<br />-Utilisez dans les contrôles standard de Visual Studio<br />-Utilisez dans les fenêtres Outil|**Apparaît sous la forme :** 14 pt Segoe UI<br /><br /> **Exemple visuel :**<br /><br /> ![Exemple de titre de police d’environnement 155 %](~/docs/extensibility/ux-guidelines/media/0202-c_ef155.png "0202-c_EF155")|  
   
 #### <a name="133-environment-font"></a>Police d’environnement 133 %  
   

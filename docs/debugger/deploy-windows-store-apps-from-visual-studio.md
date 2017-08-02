@@ -23,7 +23,7 @@ caps.handback.revision: 14
 # D&#233;ployer des applications du Windows&#160;Store &#224; partir de Visual Studio
 [!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
 
-![S'applique uniquement à Windows](../debugger/media/windows_only_content.png "windows\_only\_content")  
+![S'applique uniquement à Windows](~/docs/debugger/media/windows_only_content.png "windows\_only\_content")  
   
  La fonctionnalité de déploiement de Visual Studio génère et enregistre les applications du Windows Store créées avec Visual Studio sur un périphérique cible. La façon dont l'application est exactement enregistrée varie selon que le périphérique cible est local ou distant :  
   
@@ -80,13 +80,13 @@ caps.handback.revision: 14
   
 4.  Vous pouvez entrer le nom ou l'adresse IP du périphérique distant, ou choisir le périphérique dans la boîte de dialogue **Sélectionner une connexion du débogueur distant**.  
   
-     ![Boîte de dialogue Sélectionner la connexion au Remote Debugger](../debugger/media/vsrun_selectremotedebuggerdlg.png "VSRUN\_SelectRemoteDebuggerDlg")  
+     ![Boîte de dialogue Sélectionner la connexion au Remote Debugger](~/docs/debugger/media/vsrun_selectremotedebuggerdlg.png "VSRUN\_SelectRemoteDebuggerDlg")  
   
      La boîte de dialogue **Sélectionner une connexion du débogueur distant** affiche les périphériques situés sur le sous\-réseau du réseau local et tout périphérique qui est directement connecté à l'ordinateur Visual Studio via un câble Ethernet.  
   
  **Spécification du périphérique distant dans une page de projet JavaScript ou Visual C\+\+**  
   
- ![Propriétés du projet C&#43;&#43; pour le débogage distant](../debugger/media/vsrun_cpp_projprop_remote.png "VSRUN\_CPP\_ProjProp\_Remote")  
+ ![Propriétés du projet C&#43;&#43; pour le débogage distant](~/docs/debugger/media/vsrun_cpp_projprop_remote.png "VSRUN\_CPP\_ProjProp\_Remote")  
   
 1.  Choisissez **Remote Debugger** dans la liste **Débogueur à lancer**.  
   

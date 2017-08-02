@@ -20,7 +20,7 @@ caps.handback.revision: 22
 
 Lorsque vous créez une visionneuse d'images, la première étape consiste à créer un projet d'application Windows Forms.  
   
- ![lien vers la vidéo](../data-tools/media/playvideo.png "PlayVideo") Pour obtenir une version vidéo de cette rubrique, consultez [Didacticiel 1 : Créer une visionneuse d'images en Visual Basic – Vidéo 1](http://go.microsoft.com/fwlink/?LinkId=205209) ou [Didacticiel 1 : Créer une visionneuse d'images en C\# – Vidéo 1](http://go.microsoft.com/fwlink/?LinkId=205199).  Ces vidéos utilisent une version antérieure de Visual Studio et présentent donc de légères différences quant à certaines commandes de menu et autres éléments d'interface utilisateur.  Toutefois, les concepts et les procédures fonctionnent de façon similaire dans la version actuelle de Visual Studio.  
+ ![lien vers la vidéo](~/docs/data-tools/media/playvideo.gif "PlayVideo") Pour obtenir une version vidéo de cette rubrique, consultez [Didacticiel 1 : Créer une visionneuse d'images en Visual Basic – Vidéo 1](http://go.microsoft.com/fwlink/?LinkId=205209) ou [Didacticiel 1 : Créer une visionneuse d'images en C\# – Vidéo 1](http://go.microsoft.com/fwlink/?LinkId=205199).  Ces vidéos utilisent une version antérieure de Visual Studio et présentent donc de légères différences quant à certaines commandes de menu et autres éléments d'interface utilisateur.  Toutefois, les concepts et les procédures fonctionnent de façon similaire dans la version actuelle de Visual Studio.  
   
 ### Pour créer un projet Application Windows Forms  
   
@@ -62,7 +62,7 @@ Fenêtre IDE
   
      Vous pouvez aussi sélectionner le bouton **Enregistrer tout**, présenté dans l'illustration suivante, dans la barre d'outils.  
   
-     ![Bouton de barre d'outils Enregistrer tout](../ide/media/express_iconsaveall.png "Express\_IconSaveAll")  
+     ![Bouton de barre d'outils Enregistrer tout](~/docs/ide/media/express_iconsaveall.png "Express\_IconSaveAll")  
 Bouton Enregistrer tout de la barre d'outils  
   
      Visual Studio renseigne automatiquement le nom du dossier et le nom du projet, puis crée le projet dans votre dossier de projets.  

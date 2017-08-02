@@ -65,7 +65,7 @@ caps.handback.revision: 22
   
 1.  Dans le projet que vous avez créé précédemment, choisissez un dossier mappé.  
   
-2.  Dans la fenêtre **Propriétés**, placez le bouton de sélection \(![Bouton de sélection du concepteur ASP.NET mobile](../sharepoint/media/mwellipsis.png "Bouton de sélection du concepteur ASP.NET mobile")\) sur la propriété **Deployment location**.  
+2.  Dans la fenêtre **Propriétés**, placez le bouton de sélection \(![Bouton de sélection du concepteur ASP.NET mobile](~/docs/sharepoint/media/mwellipsis.gif "Bouton de sélection du concepteur ASP.NET mobile")\) sur la propriété **Deployment location**.  
   
 3.  Dans la boîte de dialogue **Ajouter un dossier mappé SharePoint**, recherchez le dossier vers lequel le dossier mappé doit renvoyer.  
   

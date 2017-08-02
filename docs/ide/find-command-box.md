@@ -28,7 +28,7 @@ Vous pouvez rechercher des commandes Visual Studio de texte et de passage de la 
   
  La zone **Rechercher\/Commande** mémorise les 20 derniers éléments entrés, qu'elle affiche dans une liste déroulante.  Vous pouvez parcourir la liste en choisissant les touches de direction.  
   
- ![Zone Rechercher&#47;Commande](../ide/media/findcommandbox.png "FindCommandBox")  
+ ![Zone Rechercher&#47;Commande](~/docs/ide/media/findcommandbox.png "FindCommandBox")  
 Zone Rechercher\/Commande  
   
 ## Rechercher du texte  

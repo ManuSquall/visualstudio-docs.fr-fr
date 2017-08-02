@@ -141,11 +141,11 @@ L’éditeur Visual Studio fournit de nombreuses fonctionnalités facilitant l�
 ## <a name="navigate-and-find-code"></a>Parcourir et rechercher du code  
 Vous pouvez vous déplacer dans un document de différentes façons. Outre les opérations standard, vous pouvez utiliser les boutons **Naviguer vers l’arrière** (Ctrl+Moins) et **Naviguer vers l’avant** (Ctrl+Maj+Moins) de la barre d’outils pour déplacer le point d’insertion vers des emplacements précédents ou retourner à des emplacements plus récents dans le document actif. Ces boutons conservent les 20 derniers emplacements du point d’insertion.
 
-![Boutons de navigation Suivant et Précédent](../ide/media/vs2017_nav_buttons.png)
+![Boutons de navigation Suivant et Précédent](~/docs/ide/media/vs2017_nav_buttons.png)
 
 La fonctionnalité Visualiseur de structure de l’éditeur de code montre des *lignes de repère de structure* (lignes en pointillés verticales qui indiquent les accolades correspondantes dans votre code base). Cela permet de voir plus facilement où commencent et où se terminent les blocs logiques.
 
-![Visualiseur de structure](../ide/media/vside_structure_visualizer.png)
+![Visualiseur de structure](~/docs/ide/media/vside_structure_visualizer.png)
 
 Pour désactiver les lignes de repère de structure, accédez à **Outils**, **Options**, **Éditeur de texte**, **Général**, puis décochez la case **Afficher les lignes de repère de structure**.
 
@@ -167,7 +167,7 @@ Les commandes suivantes sont des méthodes de navigation spécifiques au code :
 
  Vous pouvez également utiliser la **barre de navigation** (zones de liste déroulante en haut de la fenêtre de code) pour rechercher du code dans un code base. Vous pouvez choisir un type ou un membre pour l’atteindre directement. La barre de navigation s’affiche quand vous modifiez du code dans un code base Visual Basic, C# ou C++.
 
- ![Barre de navigation dans le code](../ide/media/vside_navigation_bar.png)
+ ![Barre de navigation dans le code](~/docs/ide/media/vside_navigation_bar.png)
 
  Pour masquer la barre de navigation, changez l’option **Barre de navigation** dans les paramètres Tous les langages de l’éditeur de texte (**Outils**, **Options**, **Éditeur de texte**, **Tous les langages**. Vous pouvez également modifier les paramètres pour des langages spécifiques.) Vous pouvez naviguer dans les zones de liste déroulante comme suit :  
 
@@ -194,7 +194,7 @@ La commande **Atteindre** de Visual Studio effectue une recherche ciblée dans v
 1. Dans le menu principal, choisissez **Modifier**, **Atteindre**. Une petite zone de texte s’affiche dans l’angle supérieur de l’éditeur de code.
 1. Dans la zone de texte, entrez le nom de l’élément de code que vous souhaitez rechercher.
 
-    ![Fenêtre Naviguer vers](../ide/media/vside_navigatetowindow.png "Fenêtre Naviguer vers")
+    ![Fenêtre Naviguer vers](~/docs/ide/media/vside_navigatetowindow.png "Fenêtre Naviguer vers")
 
     À mesure que vous tapez, les résultats s’affichent dans une liste déroulante sous la zone de texte.
 1. Pour accéder à un élément, sélectionnez-le dans la liste.
@@ -217,11 +217,11 @@ Par exemple, pour limiter votre recherche aux symboles de code, ouvrez la boîte
 
 Vous pouvez aussi changer rapidement le filtre de recherche en choisissant des boutons dans la barre d’outils de la boîte de dialogue Atteindre. Les boutons qui changent les filtres se trouvent à gauche, et les boutons qui changent la portée de la recherche se trouvent à droite.
 
-![](../ide/media/vside_navigation_toolbar.png)
+![](~/docs/ide/media/vside_navigation_toolbar.png)
 
 Si vous utilisez la [casse mixte](https://en.wikipedia.org/wiki/Camel_case) dans votre code, vous pouvez trouver plus rapidement des éléments de code en entrant uniquement les lettres majuscules de leur nom. Par exemple, si votre code dispose d’un type appelé `CredentialViewModel`, vous pouvez affiner la recherche en choisissant le filtre Type ("t"), puis en entrant simplement les lettres majuscules du nom (`CVM`) dans la boîte de dialogue Atteindre.
 
-![Fenêtre Naviguer vers - recherche en lettres capitales](../ide/media/vside_capitalsearch.png)
+![Fenêtre Naviguer vers - recherche en lettres capitales](~/docs/ide/media/vside_capitalsearch.png)
 
 Cette fonctionnalité peut être particulièrement utile si votre code contient des noms longs.
 
@@ -239,7 +239,7 @@ Les résultats s’affichent dans une fenêtre Outil nommée **’*{élément}*�
 
 Vous pouvez également placer le pointeur de la souris sur n’importe quel résultat de la recherche pour afficher un aperçu de l’élément retourné.
 
-![Fenêtre Outil Rechercher toutes les références](../ide/media/vside_findallreferences.png)
+![Fenêtre Outil Rechercher toutes les références](~/docs/ide/media/vside_findallreferences.png)
 
 Pour conserver les résultats de votre recherche, choisissez le bouton **Conserver les résultats**. Les résultats de la recherche actuelle restent alors dans cette fenêtre, et les résultats des nouvelles recherches s’affichent dans une nouvelle fenêtre Outil.
 

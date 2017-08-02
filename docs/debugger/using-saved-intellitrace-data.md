@@ -120,7 +120,7 @@ Accédez aux points spécifiques de l’exécution de votre application lorsque 
   
      Si la méthode se trouve dans votre code d’application, Visual Studio y accède.  
   
-     ![Accéder au code de l'application à partir d'un événement de performance](../debugger/media/ffr_itsummarypageperformancegotocode.png "FFR\_ITSummaryPagePerformanceGoToCode")  
+     ![Accéder au code de l'application à partir d'un événement de performance](~/docs/debugger/media/ffr_itsummarypageperformancegotocode.png "FFR\_ITSummaryPagePerformanceGoToCode")  
   
      Vous pouvez maintenant examiner d’autres valeurs enregistrées, la pile des appels, parcourir votre code ou utiliser la fenêtre **IntelliTrace** pour [remonter ou avancer « dans le temps » entre d’autres méthodes](../debugger/intellitrace.md) appelées pendant cet événement de performance.  
   

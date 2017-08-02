@@ -77,7 +77,7 @@ Une session de débogage est initialisée par la commande **Débogage > Démarre
 
 Les points d’arrêt arrêtent l’exécution du code au niveau d’un point marqué, ce qui vous permet d’inspecter l’état du programme. Pour définir des points d’arrêt, cliquez dans la marge gauche de l’éditeur de code, ou cliquez avec le bouton droit sur une ligne de code et sélectionnez **Point d’arrêt > Insérer un point d’arrêt**. Un point rouge apparaît sur chaque ligne comportant un point d’arrêt.
 
-![Points d’arrêt dans Visual Studio](media/debugging-breakpoints.png)
+![Points d’arrêt dans Visual Studio](~/docs/python/media/debugging-breakpoints.png)
 
 Pour supprimer un point d’arrêt, cliquez sur le point rouge, ou cliquez avec le bouton droit sur la ligne de code et sélectionnez **Point d’arrêt > Supprimer le point d’arrêt**. Vous pouvez également désactiver le point d’arrêt sans le supprimer en utilisant la commande **Point d’arrêt > Désactiver le point d’arrêt**.
 
@@ -88,7 +88,7 @@ Vous pouvez personnaliser les conditions de déclenchement d’un point d’arr�
 
 Lorsque vous définissez des conditions, vous pouvez également définir **Action** et créer un message à consigner dans la fenêtre de sortie, tout en demandant éventuellement la poursuite automatique de l’exécution. Cette opération crée un *point de trace* sans nécessiter l’introduction d’un code de journalisation directement dans votre application :
 
-![Création d’un point de trace avec un point d’arrêt](media/debugging-tracepoint.png)
+![Création d’un point de trace avec un point d’arrêt](~/docs/python/media/debugging-tracepoint.png)
 
 ### <a name="stepping-through-code"></a>Exécution de code pas à pas
 
@@ -110,27 +110,27 @@ Lorsque vous êtes arrêté dans le débogueur, vous pouvez inspecter et modifie
 
 Pour visualiser une valeur à l’aide des DataTips, il vous suffit de positionner le pointeur de la souris sur une variable quelconque dans l’éditeur. Vous pouvez alors cliquer sur cette valeur si vous souhaitez la modifier :
 
-![DataTips dans le débogueur](media/debugging-quick-tips.png)
+![DataTips dans le débogueur](~/docs/python/media/debugging-quick-tips.png)
 
 La fenêtre Automatique (**Débogage > Fenêtres > Automatique**) contient les variables et expressions qui sont proches de l’instruction actuelle. Vous pouvez double-cliquer sur la colonne Valeur ou sélectionner une valeur et appuyer sur F2 pour la modifier :
 
-![Fenêtre Automatique dans le débogueur](media/debugging-autos-window.png)
+![Fenêtre Automatique dans le débogueur](~/docs/python/media/debugging-autos-window.png)
 
 La fenêtre Variables locales (**Débogage > Fenêtres > Variables locales**) affiche toutes les variables qui se trouvent dans la portée actuelle et que vous pouvez modifier :
 
-![Fenêtre Variables locales dans le débogueur](media/debugging-locals-window.png)
+![Fenêtre Variables locales dans le débogueur](~/docs/python/media/debugging-locals-window.png)
 
 Pour plus d’informations sur l’utilisation des fenêtres Automatique et Variables locales, consultez l’article [Inspecting Variables in the Autos and Locals Windows](../debugger/autos-and-locals-windows.md) (Inspecter les variables dans les fenêtres Automatique et Variables locales).
 
 Les Fenêtres Espion (**Débogage > Fenêtres > Espion > Espion 1-4**) vous permettent d’entrer des expressions Python arbitraires et d’en visualiser les résultats. Les expressions sont réévaluées pour chaque étape :
 
-![Fenêtre Espion dans le débogueur](media/debugging-watch-window.png)
+![Fenêtre Espion dans le débogueur](~/docs/python/media/debugging-watch-window.png)
 
 Pour plus d’informations sur l’utilisation de la fonctionnalité Espion, consultez l’article [Setting a Watch on Variables using the Watch and QuickWatch Windows](../debugger/watch-and-quickwatch-windows.md) (Définir un Espion sur les variables à l’aide des Fenêtres Espion et Espion express).
 
 Lors de l’inspection d’une valeur de chaîne (`str`, `unicode`, `bytes` et `bytearray` sont toutes considérées comme des chaînes dans ce but), une icône Loupe apparaît à droite de la valeur. Lorsque vous cliquez sur cette icône, la valeur de chaîne sans guillemets s’affiche dans une boîte de dialogue contextuelle, avec retour à la ligne et défilement, ce qui est utile pour les chaînes longues. En outre, un clic sur la flèche déroulante vers le bas en regard de l’icône vous permet de sélectionner des visualisations aux formats texte brut, HTML, XML et JSON :
 
-![Visualiseurs de chaîne](media/debugging-string-visualizers.png)
+![Visualiseurs de chaîne](~/docs/python/media/debugging-string-visualizers.png)
 
 Les visualisations HTML, XML et JSON apparaissent dans des fenêtres contextuelles distinctes avec des arborescences et mise en surbrillance de la syntaxe.
 
@@ -138,13 +138,13 @@ Les visualisations HTML, XML et JSON apparaissent dans des fenêtres contextuell
 
 Si une erreur survient lors du débogage de votre programme, et que vous disposez pas d’un gestionnaire d’exceptions à cet effet, le débogueur s’arrête au niveau de l’exception :
 
-![Fenêtre contextuelle d’exceptions](media/debugging-exception-popup.png)
+![Fenêtre contextuelle d’exceptions](~/docs/python/media/debugging-exception-popup.png)
 
 À ce stade, vous pouvez inspecter l’état du programme, y compris la pile des appels. Toutefois, si vous essayez d’exécuter le code pas à pas, l’exception continuera d’être levée jusqu’à ce qu’elle soit gérée ou que votre programme se ferme.
 
 La commande de menu **Débogage > Fenêtres > Paramètres d’exception** affiche une fenêtre vous permettant de développer **Python Exceptions** (Exceptions Python) :
 
-![Fenêtre d’exceptions](media/debugging-exception-settings.png)
+![Fenêtre d’exceptions](~/docs/python/media/debugging-exception-settings.png)
 
 La case à cocher de chaque exception détermine si le débogueur s’arrête *systématiquement* lorsque l’exception est déclenchée. Vous devez cocher cette case si vous souhaitez que le débogueur s’arrête plus souvent pour une exception spécifique.
 
@@ -156,7 +156,7 @@ Pour configurer une exception absente de cette liste, ajoutez-la en cliquant sur
 
 Par défaut, le débogueur démarre votre programme avec le lanceur Python standard, sans aucun argument de ligne de commande et aucun autre chemin d’accès ni condition spéciaux. Vous pouvez modifier ce comportement par le biais des propriétés de débogage du projet en cliquant avec le bouton droit sur votre projet dans l’Explorateur de solutions, en sélectionnant **Propriétés**, puis en sélectionnant l’onglet **Débogage**.
 
-![Propriétés de débogage du projet](media/debugging-project-properties.png)
+![Propriétés de débogage du projet](~/docs/python/media/debugging-project-properties.png)
 
 ### <a name="launch-mode-options"></a>Options du mode de lancement
 
@@ -188,7 +188,7 @@ La fenêtre Exécution (**Débogage > Fenêtres > Exécution**) est utilisée po
 
 La fenêtre de débogage Python interactive (**Débogage > Fenêtres > Python Debug Interactive (Fenêtre de débogage Python interactive)**) est plus élaborée, car elle offre une expérience [REPL interactive](interactive-repl.md) complète au cours du débogage, notamment pour l’écriture et l’exécution de code. Elle se connecte automatiquement à tout processus démarré dans le débogueur à l’aide du lanceur Python standard (y compris les processus attachés par le biais de la commande **Débogage > Attacher au processus*). Toutefois, cette fenêtre n’est pas disponible en cas d’utilisation du débogage C/C++ en mode mixte.
 
-![Fenêtre de débogage Python interactive](media/debugging-interactive.png)
+![Fenêtre de débogage Python interactive](~/docs/python/media/debugging-interactive.png)
 
 Outre les [commandes REPL standard](interactive-repl.md#meta-commands), la fenêtre de débogage interactive prend en charge des méta commandes spéciales :
 
@@ -215,4 +215,4 @@ Notez que les fenêtres du débogueur standard telles que Processus, Threads et 
 
 La fenêtre de débogage interactive comporte son propre jeu d’options, accessibles par le biais des commandes **Outils > Options > Python Tools > Debug Interactive Window (Fenêtre de débogage interactive)**. Contrairement à la fenêtre interactive Python standard, dont il existe une instance distincte pour chaque environnement Python, il n’existe qu’une seule fenêtre de débogage interactive, laquelle utilise systématiquement l’interpréteur Python pour le processus en cours de débogage.
 
-![Options de la fenêtre de débogage interactive](media/debugging-interactive-options.png)
+![Options de la fenêtre de débogage interactive](~/docs/python/media/debugging-interactive-options.png)

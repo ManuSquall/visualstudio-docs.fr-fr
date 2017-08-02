@@ -65,13 +65,13 @@ Cette rubrique est destinée aux développeurs qui travaillent principalement su
 
 2.  Dans le programme d’installation, cliquez sur le bouton **Choix supplémentaires** (icône à trois barres) _à côté de_ **Lancer**, puis choisissez **Modifier** :  
   
-     ![Choisir l’option Modifier dans le programme d’installation de Visual Studio](../cross-platform/media/cross-plat-xamarin-setup-1a.png "Configuration multiplateforme de Xamarin 1")  
+     ![Choisir l’option Modifier dans le programme d’installation de Visual Studio](~/docs/cross-platform/media/cross-plat-xamarin-setup-1a.png "Configuration multiplateforme de Xamarin 1")  
   
 3.  Cochez les cases suivantes :
 
     1.  **Mobile et jeux > Développement mobile en .NET**. Différents outils Android sont aussi automatiquement sélectionnés sous Kits de développement logiciel (SDK) et outils courants. Cette option permet également de mettre à jour les installations Xamarin existantes.  
   
-         ![Sélectionner l’option Développement mobile sous Jeux et Développement mobile](../cross-platform/media/cross-plat-xamarin-setup-2a.png "Configuration multiplateforme de Xamarin 2")  
+         ![Sélectionner l’option Développement mobile sous Jeux et Développement mobile](~/docs/cross-platform/media/cross-plat-xamarin-setup-2a.png "Configuration multiplateforme de Xamarin 2")  
   
     2. (Facultatif) **Windows > Développement pour la plateforme Windows universelle**. Des options y sont proposées pour l’installation d’images d’émulateurs dont le chargement prend davantage de temps : vous pouvez toujours revenir au programme d’installation de Visual Studio pour les ajouter ultérieurement.  
 
@@ -130,8 +130,8 @@ Cette rubrique est destinée aux développeurs qui travaillent principalement su
 
     2.  Sélectionnez la cible **iPhoneSimulator** dans la liste déroulante des builds de Visual Studio, comme indiqué ci-dessous. Si aucun simulateur ne figure dans la liste, lancez Xcode sur votre Mac, sélectionnez **Xcode->Préférences**, puis cliquez sur **Télécharger**. Sous **Components** , vous devez voir les versions de simulateur qui sont disponibles en téléchargement. Vous trouverez des instructions supplémentaires pour le débogage dans la page [Debugging](https://developer.xamarin.com/guides/ios/deployment,_testing,_and_metrics/debugging_in_xamarin_ios/#Debugging_on_the_Simulator) de Xamarin (xamarin.com).
 
-         ![Sélection de la cible de génération iPhoneSimulator](../cross-platform/media/crossplat-xamarin-verify-5.png "CrossPlat Xamarin Verify 5")
+         ![Sélection de la cible de génération iPhoneSimulator](~/docs/cross-platform/media/crossplat-xamarin-verify-5.png "CrossPlat Xamarin Verify 5")
 
     3.  Sélectionnez une cible iPhone dans le menu déroulant du débogage de Visual Studio comme illustré ci-dessous, puis démarrez le débogueur en appuyant sur F5. Ceci lance le simulateur sur le Mac, où vous allez interagir avec l’application, alors que le débogage se fait dans Visual Studio.
 
-         ![Sélection d’une cible de débogage iPhone](../cross-platform/media/crossplat-xamarin-verify-6.png "CrossPlat Xamarin Verify 6")
+         ![Sélection d’une cible de débogage iPhone](~/docs/cross-platform/media/crossplat-xamarin-verify-6.png "CrossPlat Xamarin Verify 6")

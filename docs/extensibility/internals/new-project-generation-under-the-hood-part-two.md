@@ -134,7 +134,7 @@ namespace Simple
   
  La structure de dossiers d’application Windows résultante ressemble à ceci :  
   
- ![SimpleSolution](../../extensibility/internals/media/simplesolution.png "SimpleSolution")  
+ ![SimpleSolution](~/docs/extensibility/internals/media/simplesolution.png "SimpleSolution")  
   
  Le premier et unique \<projet > balise dans le modèle est le suivant :  
   

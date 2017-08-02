@@ -67,7 +67,7 @@ Toutes les entrées et sorties précédentes de la fenêtre REPL étant en lectu
 
 Si vous commencez à taper une instruction et que vous appuyez sur Entrée, RTVS sait que l’instruction n’est pas terminée. Il passe alors en mode multiligne, affiche une invite + à gauche et applique la mise en retrait appropriée. RTVS complète également les parenthèses, les crochets et les accolades :
 
-![Entrée d’une instruction multiligne dans la fenêtre interactive](media/repl-multiline-entry.png)
+![Entrée d’une instruction multiligne dans la fenêtre interactive](~/docs/rtvs/media/repl-multiline-entry.png)
 
 En mode multiligne, la touche Entrée n’exécute le bloc de code que si le curseur se trouve à la fin du bloc ; sinon, une nouvelle ligne est insérée. Toutefois, vous pouvez appuyer sur Ctrl+Entrée à n’importe quel emplacement pour exécuter immédiatement ce bloc de code.
 
@@ -75,23 +75,23 @@ En mode multiligne, la touche Entrée n’exécute le bloc de code que si le cur
 
 La fenêtre interactive et sa barre d’outils sont présentées ci-dessous :
 
-![Fenêtre interactive avec sa barre d’outils](media/repl-window.png)
+![Fenêtre interactive avec sa barre d’outils](~/docs/rtvs/media/repl-window.png)
 
 Les commandes de la barre d’outils sont répertoriées ci-après. La plupart d’entre elles ont des équivalents clavier et sont disponibles dans les menus **Outils R > Session** et **Outils R > Répertoire de travail** (ou comme indiqué) :
 
 | Bouton | Commande | Combinaison de touches | Description | 
 | --- | --- | --- | --- |
-| ![Bouton Réinitialiser](media/repl-toolbar-01-reset.png) | Réinitialiser | Ctrl+Maj+F10 | Réinitialise la session de la fenêtre interactive. Toutes les variables et l’historique sont effacés. |
-| ![Bouton Effacer](media/repl-toolbar-02-clear.png) | Effacer | Ctrl+L | Efface la sortie affichée dans la fenêtre interactive ; n’affecte pas les variables ou l’historique de la session. |
-| ![Boutons Historique](media/repl-toolbar-03-history.png) | Commande précédente de l’historique<br/>Commande suivante de l’historique | Haut, bas<br/>Alt+Flèche haut, Alt+Flèche bas | Fait défiler l’historique, avec certains comportements pour les blocs de code multiligne. Consultez [Historique](#history). |
-| ![Bouton Charger l’espace de travail](media/repl-toolbar-04-load-workspace.png) | Charger l’espace de travail | N/A | Charge un espace de travail précédemment enregistré (consultez [Espaces de travail et sessions](#workspaces-and-sessions)). |
-| ![Bouton Enregistrer l’espace de travail sous](media/repl-toolbar-05-save-workspace-as.png)| Enregistrer l’espace de travail sous | N/A | Enregistre l’état actuel de la session en tant qu’espace de travail (consultez [Espaces de travail et sessions](#workspaces-and-sessions)). |
-| ![Bouton Script R source](media/repl-toolbar-06-source-r-script.png) | Script R source | Ctrl+Maj+S | Appelle `source` avec le script R actuellement actif dans l’éditeur Visual Studio, qui exécute le code.  Ce bouton n’apparaît que si un fichier R est ouvert dans l’éditeur Visual Studio. | 
-| ![Bouton Script R source avec Echo](media/repl-toolbar-07-source-r-script-with-echo.png) | Script R source avec Echo | Ctrl+Maj+Entrée | Identique à Approvisionner le script R, mais affiche le contenu du script dans la fenêtre interactive. | 
-| ![Bouton Interrompre R](media/repl-toolbar-08-interrupt-r.png)| Interrompre R | Échap | Arrête tout code en cours d’exécution dans la fenêtre interactive, comme la boucle `while` dans la capture d’écran ci-dessus. |
-| ![Bouton Attacher le débogueur](media/repl-toolbar-09b-attach-debugger.png)| Attacher le débogueur | N/A | Également disponible par le biais de la commande **Déboguer > Joindre à la fenêtre interactive R**. | 
-| ![Bouton Définir le répertoire de travail à l’emplacement du fichier source](media/repl-toolbar-10-set-working-directory-source.png)| Définir le répertoire de travail à l’emplacement du fichier source | Ctrl+Maj+E | Définit le répertoire de travail à l’emplacement du dernier fichier source chargé dans la fenêtre interactive (à l’aide de `source`). Consultez [Répertoire de travail](#working-directory). |
-| ![Bouton Définir le répertoire de travail à l’emplacement du projet](media/repl-toolbar-11-set-working-directory-to-project.png) | Définir le répertoire de travail à l’emplacement du projet | Ctrl+Maj+P | Définit le répertoire de travail à la racine du projet actuellement chargé dans Visual Studio. Consultez [Répertoire de travail](#working-directory). |
+| ![Bouton Réinitialiser](~/docs/rtvs/media/repl-toolbar-01-reset.png) | Réinitialiser | Ctrl+Maj+F10 | Réinitialise la session de la fenêtre interactive. Toutes les variables et l’historique sont effacés. |
+| ![Bouton Effacer](~/docs/rtvs/media/repl-toolbar-02-clear.png) | Effacer | Ctrl+L | Efface la sortie affichée dans la fenêtre interactive ; n’affecte pas les variables ou l’historique de la session. |
+| ![Boutons Historique](~/docs/rtvs/media/repl-toolbar-03-history.png) | Commande précédente de l’historique<br/>Commande suivante de l’historique | Haut, bas<br/>Alt+Flèche haut, Alt+Flèche bas | Fait défiler l’historique, avec certains comportements pour les blocs de code multiligne. Consultez [Historique](#history). |
+| ![Bouton Charger l’espace de travail](~/docs/rtvs/media/repl-toolbar-04-load-workspace.png) | Charger l’espace de travail | N/A | Charge un espace de travail précédemment enregistré (consultez [Espaces de travail et sessions](#workspaces-and-sessions)). |
+| ![Bouton Enregistrer l’espace de travail sous](~/docs/rtvs/media/repl-toolbar-05-save-workspace-as.png)| Enregistrer l’espace de travail sous | N/A | Enregistre l’état actuel de la session en tant qu’espace de travail (consultez [Espaces de travail et sessions](#workspaces-and-sessions)). |
+| ![Bouton Script R source](~/docs/rtvs/media/repl-toolbar-06-source-r-script.png) | Script R source | Ctrl+Maj+S | Appelle `source` avec le script R actuellement actif dans l’éditeur Visual Studio, qui exécute le code.  Ce bouton n’apparaît que si un fichier R est ouvert dans l’éditeur Visual Studio. | 
+| ![Bouton Script R source avec Echo](~/docs/rtvs/media/repl-toolbar-07-source-r-script-with-echo.png) | Script R source avec Echo | Ctrl+Maj+Entrée | Identique à Approvisionner le script R, mais affiche le contenu du script dans la fenêtre interactive. | 
+| ![Bouton Interrompre R](~/docs/rtvs/media/repl-toolbar-08-interrupt-r.png)| Interrompre R | Échap | Arrête tout code en cours d’exécution dans la fenêtre interactive, comme la boucle `while` dans la capture d’écran ci-dessus. |
+| ![Bouton Attacher le débogueur](~/docs/rtvs/media/repl-toolbar-09b-attach-debugger.png)| Attacher le débogueur | N/A | Également disponible par le biais de la commande **Déboguer > Joindre à la fenêtre interactive R**. | 
+| ![Bouton Définir le répertoire de travail à l’emplacement du fichier source](~/docs/rtvs/media/repl-toolbar-10-set-working-directory-source.png)| Définir le répertoire de travail à l’emplacement du fichier source | Ctrl+Maj+E | Définit le répertoire de travail à l’emplacement du dernier fichier source chargé dans la fenêtre interactive (à l’aide de `source`). Consultez [Répertoire de travail](#working-directory). |
+| ![Bouton Définir le répertoire de travail à l’emplacement du projet](~/docs/rtvs/media/repl-toolbar-11-set-working-directory-to-project.png) | Définir le répertoire de travail à l’emplacement du projet | Ctrl+Maj+P | Définit le répertoire de travail à la racine du projet actuellement chargé dans Visual Studio. Consultez [Répertoire de travail](#working-directory). |
 | (Champ de texte) | Sélectionner le répertoire de travail | N/A | Champ d’entrée directe pour le répertoire de travail. Consultez [Répertoire de travail](#working-directory). |
 
 

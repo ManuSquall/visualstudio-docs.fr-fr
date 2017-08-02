@@ -30,7 +30,7 @@ caps.handback.revision: 22
  [!INCLUDE[appliesto_olkallapp](../vsto/includes/appliesto-olkallapp-md.md)]  
   
 ## Ajout d'actions personnalisées à une zone de formulaire  
- Pour ajouter une action personnalisée à une zone de formulaire, utilisez la boîte de dialogue **Actions personnalisées**.  Vous pouvez ouvrir la boîte de dialogue **actions personnalisées** dans **Explorateur de solutions** en développant le nœud **manifeste** , en sélectionnant la propriété **CustomActions** , puis en cliquant sur le bouton de sélection \(![Bouton de sélection du concepteur ASP.NET mobile](../sharepoint/media/mwellipsis.png "Bouton de sélection du concepteur ASP.NET mobile")\).  
+ Pour ajouter une action personnalisée à une zone de formulaire, utilisez la boîte de dialogue **Actions personnalisées**.  Vous pouvez ouvrir la boîte de dialogue **actions personnalisées** dans **Explorateur de solutions** en développant le nœud **manifeste** , en sélectionnant la propriété **CustomActions** , puis en cliquant sur le bouton de sélection \(![Bouton de sélection du concepteur ASP.NET mobile](~/docs/sharepoint/media/mwellipsis.gif "Bouton de sélection du concepteur ASP.NET mobile")\).  
   
  Vous pouvez utiliser la boîte de dialogue **Actions personnalisées** pour spécifier un *formulaire cible*.  Le formulaire cible est le formulaire qui s'affiche lorsque l'utilisateur exécute l'action personnalisée.  
   

@@ -34,7 +34,7 @@ Si vous rencontrez un problème avec Visual Studio, nous aimerions en être info
   1. Cliquez sur le bouton **Se connecter** situé sur le côté gauche de l’outil, comme indiqué dans la capture d’écran suivante.
   2. Suivez les instructions à l’écran pour vous connecter.
 
-  ![Se connecter pour signaler un problème](../ide/media/vs2017-report-a-problem-sign-in.png "Se connecter pour signaler un problème")
+  ![Se connecter pour signaler un problème](~/docs/ide/media/vs2017-report-a-problem-sign-in.png "Se connecter pour signaler un problème")
 
 
 ## <a name="search-and-vote-for-similar-problems"></a>Rechercher et voter pour des problèmes similaires  
@@ -43,7 +43,7 @@ Si vous rencontrez un problème avec Visual Studio, nous aimerions en être info
 1.  Recherchez votre problème et vérifiez si d’autres personnes l’ont déjà signalé.
 2.  Si quelqu’un l’a signalé, rappelez-le nous.  
 
-  ![VS15-FeedbackTool-SearchForSimilarReportedProblems](../ide/media/vs2017-report-a-problem-search-and-vote.png "Rechercher et voter pour des problèmes similaires")
+  ![VS15-FeedbackTool-SearchForSimilarReportedProblems](~/docs/ide/media/vs2017-report-a-problem-search-and-vote.png "Rechercher et voter pour des problèmes similaires")
 
 
 ## <a name="report-a-new-problem"></a>Signaler un nouveau problème

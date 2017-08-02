@@ -46,7 +46,7 @@ ms.lasthandoff: 06/23/2017
 Utilisez cet outil pour renforcer, protéger et nettoyer vos applications bureau, mobiles, serveur et intégrées afin de sécuriser les secrets industriels et autres droits de propriété intellectuelle (IP), réduire le piratage et la contrefaçon et vous protéger contre la falsification et le débogage non autorisé.
 Dotfuscator fonctionne avec des assemblys compilés sans nécessiter de programmation supplémentaire ni même d’accès au code source.
 
-![](media/header.svg)
+![](~/docs/ide/dotfuscator/media/header.svg)
 
 ## <a name="why-protection-matters"></a>Importance de la protection
 

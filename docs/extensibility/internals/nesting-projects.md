@@ -31,7 +31,7 @@ Les développeurs d'applications entreprise qui utilisent votre Package VS peuve
  Vous trouverez un exemple de projets imbriqués dans l'exemple de projet Example.Nested c\#.  
   
 ## Exemple de projets imbriqués  
- ![Solution de projets imbriqués](../../extensibility/internals/media/vsnestedprojects.gif "vsNestedProjects")  
+ ![Solution de projets imbriqués](~/docs/extensibility/internals/media/vsnestedprojects.gif "vsNestedProjects")  
 Exemple de projets imbriqués  
   
 ## Voir aussi  

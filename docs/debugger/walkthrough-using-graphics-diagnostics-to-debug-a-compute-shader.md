@@ -32,7 +32,7 @@ Cette procédure pas à pas montre comment utiliser les outils Visual Studio Gra
 ## Scénario  
  Dans ce scénario, vous avez écrit une simulation relative à la dynamique des fluides, qui utilise DirectCompute pour effectuer les calculs les plus poussés de la mise à jour de la simulation.  Quand l'application est exécutée, le rendu du jeu de données et de l'interface utilisateur semble correct. Toutefois, la simulation ne se comporte pas comme prévu.  À l'aide de Graphics Diagnostics, vous pouvez capturer le problème dans un journal de graphisme pour déboguer l'application.  Le problème se présente ainsi dans l'application :  
   
- ![Le fluide simulé est défaillant.](../debugger/media/gfx_diag_demo_compute_shader_fluid_problem.png "gfx\_diag\_demo\_compute\_shader\_fluid\_problem")  
+ ![Le fluide simulé est défaillant.](~/docs/debugger/graphics/media/gfx_diag_demo_compute_shader_fluid_problem.png "gfx\_diag\_demo\_compute\_shader\_fluid\_problem")  
   
  Pour plus d'informations sur la capture des problèmes graphiques dans un journal de graphisme, voir [Capture d'informations Graphics](../debugger/capturing-graphics-information.md).  
   
@@ -55,13 +55,13 @@ Cette procédure pas à pas montre comment utiliser les outils Visual Studio Gra
   
 2.  Inspectez la **Liste des événements Graphics** à la recherche de l'événement de dessin qui effectue le rendu du jeu de données.  Pour rendre la tâche plus simple, entrez `Draw` dans la zone **Rechercher**, dans le coin supérieur droit de la fenêtre **Liste des événements Graphics**.  Cela permet de filtrer la liste pour retenir uniquement les événements qui contiennent « Draw » dans leur titre.  Dans ce scénario, vous découvrez que les événements de dessin suivants se sont produits :  
   
-     ![La liste des événements affiche les événements draw.](../debugger/media/gfx_diag_demo_compute_shader_fluid_step_2.png "gfx\_diag\_demo\_compute\_shader\_fluid\_step\_2")  
+     ![La liste des événements affiche les événements draw.](~/docs/debugger/graphics/media/gfx_diag_demo_compute_shader_fluid_step_2.png "gfx\_diag\_demo\_compute\_shader\_fluid\_step\_2")  
   
 3.  Parcourez chaque événement de dessin pendant que vous regardez la cible de rendu sous l'onglet du document journal de graphisme.  
   
 4.  Arrêtez\-vous quand la cible de rendu affiche pour la première fois le jeu de données.  Dans ce scénario, le jeu de données est rendu dans le premier événement de dessin.  L'erreur de la simulation s'affiche :  
   
-     ![Cet événement draw restitue le jeu de données de simulation.](../debugger/media/gfx_diag_demo_compute_shader_fluid_step_3.png "gfx\_diag\_demo\_compute\_shader\_fluid\_step\_3")  
+     ![Cet événement draw restitue le jeu de données de simulation.](~/docs/debugger/graphics/media/gfx_diag_demo_compute_shader_fluid_step_3.png "gfx\_diag\_demo\_compute\_shader\_fluid\_step\_3")  
   
 5.  Inspectez la **Liste des événements Graphics** à la recherche de l'événement `Dispatch` qui met à jour la simulation.  Comme il est probable que la simulation est mise à jour avant son rendu, vous pouvez vous concentrer tout d'abord sur les événements `Dispatch` qui se produisent avant l'événement de dessin de rendu des résultats.  Pour rendre la tâche plus simple, entrez dans la zone **Rechercher** `Draw;Dispatch;CSSetShader(`.  Cela permet de filtrer la liste pour qu'elle contienne également les événements `Dispatch` et `CSSetShader`, en plus des événements de dessin.  Dans ce scénario, vous découvrez que plusieurs événements `Dispatch` se sont produits avant l'événement de dessin :  
   
@@ -89,7 +89,7 @@ Cette procédure pas à pas montre comment utiliser les outils Visual Studio Gra
   
 3.  Examinez le code source du nuanceur de calcul à l'étape d'intégration pour rechercher la source de l'erreur.  Quand vous utilisez Graphics Diagnostics pour déboguer du code de nuanceur de calcul HLSL, vous pouvez effectuer un pas à pas détaillé dans le code, et utiliser d'autres outils de débogage familiers tels que les fenêtres Espion.  Dans ce scénario, vous déterminez qu'il ne semble pas y avoir d'erreurs dans le nuanceur de calcul qui exécute l'étape d'intégration.  
   
-     ![Débogage du nuanceur programmable IntegrateCS.](../debugger/media/gfx_diag_demo_compute_shader_fluid_step_7.png "gfx\_diag\_demo\_compute\_shader\_fluid\_step\_7")  
+     ![Débogage du nuanceur programmable IntegrateCS.](~/docs/debugger/graphics/media/gfx_diag_demo_compute_shader_fluid_step_7.png "gfx\_diag\_demo\_compute\_shader\_fluid\_step\_7")  
   
 4.  Pour arrêter le débogage du nuanceur de calcul, dans la barre d'outils **Déboguer**, choisissez **Arrêter le débogage** \(clavier : Maj\+F5\).  
   
@@ -101,12 +101,12 @@ Cette procédure pas à pas montre comment utiliser les outils Visual Studio Gra
   
 6.  Examinez le code source du nuanceur de calcul pour l'étape de calcul des forces.  Dans ce scénario, vous déterminez que la source de l'erreur se trouve ici.  
   
-     ![Débogage du nuanceur programmable ForceCS&#95;Simple.](../debugger/media/gfx_diag_demo_compute_shader_fluid_step_9.png "gfx\_diag\_demo\_compute\_shader\_fluid\_step\_9")  
+     ![Débogage du nuanceur programmable ForceCS&#95;Simple.](~/docs/debugger/graphics/media/gfx_diag_demo_compute_shader_fluid_step_9.png "gfx\_diag\_demo\_compute\_shader\_fluid\_step\_9")  
   
  Après avoir déterminé l'emplacement de l'erreur, vous pouvez arrêter le débogage et modifier le code source du nuanceur de calcul pour calculer correctement la distance entre les particules en interaction.  Dans ce scénario, vous remplacez simplement la ligne `float2 diff = N_position + P_position;` par `float2 diff = N_position - P_position;` :  
   
- ![Code du nuanceur de calcul corrigé.](../debugger/media/gfx_diag_demo_compute_shader_fluid_step_10.png "gfx\_diag\_demo\_compute\_shader\_fluid\_step\_10")  
+ ![Code du nuanceur de calcul corrigé.](~/docs/debugger/graphics/media/gfx_diag_demo_compute_shader_fluid_step_10.png "gfx\_diag\_demo\_compute\_shader\_fluid\_step\_10")  
   
  Dans ce scénario, les nuanceurs de calcul étant compilés au moment de l'exécution, redémarrez simplement l'application après avoir apporté les changements nécessaires pour voir comment ils affectent la simulation.  Vous n'êtes pas obligé de régénérer l'application.  Quand vous exécutez l'application, vous découvrez que la simulation se comporte correctement désormais.  
   
- ![Le fluide simulé se comporte correctement.](../debugger/media/gfx_diag_demo_compute_shader_fluid_resolution.png "gfx\_diag\_demo\_compute\_shader\_fluid\_resolution")
+ ![Le fluide simulé se comporte correctement.](~/docs/debugger/graphics/media/gfx_diag_demo_compute_shader_fluid_resolution.png "gfx\_diag\_demo\_compute\_shader\_fluid\_resolution")

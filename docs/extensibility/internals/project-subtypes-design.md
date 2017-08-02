@@ -52,7 +52,7 @@ Sous\-types de projet permettent de VSPackages étendre des projets avec Microso
   
  l'illustration suivante montre une représentation schématique d'un regroupement multiniveau de sous\-type de projet.  
   
- ![Graphique projectflavor à plusieurs niveaux Visual Studio](../../extensibility/internals/media/vs_multilevelprojectflavor.gif "VS\_MultilevelProjectFlavor")  
+ ![Graphique projectflavor à plusieurs niveaux Visual Studio](~/docs/extensibility/internals/media/vs_multilevelprojectflavor.gif "VS\_MultilevelProjectFlavor")  
 sous\-type à plusieurs niveaux de projet  
   
  Un regroupement multiniveau de sous\-type de projet se compose de trois couches, un projet de base, qui est regroupé par un sous\-type de projet, effectue alors de synthèse par un sous\-type avancée de projet.  L'illustration se concentre sur certaines interfaces de prise en charge qui sont fournies en tant que partie de l'architecture de sous\-type de projet de [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] .  
@@ -62,7 +62,7 @@ sous\-type à plusieurs niveaux de projet
   
  l'illustration suivante se concentre sur l'implémentation d'extendeur d'automation, la configuration de projet parcourent l'objet en particulier, utilisé par des sous\-types de projet pour étendre le système de projet de base.  
   
- ![Graphique d'extendeur automatique de la version d'un projet VS](../../extensibility/internals/media/vs_projectflavorautoextender.png "VS\_ProjectFlavorAutoExtender")  
+ ![Graphique d'extendeur automatique de la version d'un projet VS](~/docs/extensibility/internals/media/vs_projectflavorautoextender.gif "VS\_ProjectFlavorAutoExtender")  
 extendeur Automation de sous\-type de projet.  
   
  Sous\-types de projet peuvent davantage étendre le système de projet de base en étendant le modèle objet Automation.  Celles\-ci sont définies comme une partie de l'objet Automation DTE et sont utilisées pour étendre l'objet Project, l'objet d' `ProjectItem` et l'objet d' `Configuration` .  Pour plus d'informations, consultez [Extension du modèle d'objet du projet de Base](../../extensibility/internals/extending-the-object-model-of-the-base-project.md).  

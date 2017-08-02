@@ -51,7 +51,7 @@ caps.handback.revision: 78
 > [!NOTE]  
 >  Certaines tâches ne sont pas réalisables avec le Concepteur de ruban.  Pour plus d'informations sur ces tâches et la façon de les réaliser, consultez [Vue d'ensemble du ruban](../vsto/ribbon-overview.md).  
   
- ![lien vers la vidéo](../vsto/media/playvideo.png "lien vers la vidéo") Pour une démonstration vidéo connexe, consultez la page expliquant [Comment utiliser le Concepteur de ruban pour personnaliser le ruban dans Outlook ?](http://go.microsoft.com/fwlink/?LinkID=130312).  
+ ![lien vers la vidéo](~/docs/data-tools/media/playvideo.gif "lien vers la vidéo") Pour une démonstration vidéo connexe, consultez la page expliquant [Comment utiliser le Concepteur de ruban pour personnaliser le ruban dans Outlook ?](http://go.microsoft.com/fwlink/?LinkID=130312).  
   
 ## Ajout d'un élément de ruban \(Concepteur visuel\) à un Projet  
  Pour utiliser le Concepteur de ruban, ajoutez un élément **Ruban \(Concepteur visuel\)** à votre projet.  Pour plus d'informations, consultez [Comment : démarrer avec la personnalisation du ruban](../vsto/how-to-get-started-customizing-the-ribbon.md).  
@@ -109,7 +109,7 @@ caps.handback.revision: 78
   
 -   Ouvrez l'**Éditeur de collections Tab**, puis cliquez sur **Ajouter**.  
   
-     Pour ouvrir l'**Éditeur de collections Tab**, dans la fenêtre **Propriétés**, sélectionnez la propriété **Tabs**, puis cliquez sur le bouton de sélection ![Bouton de sélection du concepteur ASP.NET mobile](../sharepoint/media/mwellipsis.png "Bouton de sélection du concepteur ASP.NET mobile").  
+     Pour ouvrir l'**Éditeur de collections Tab**, dans la fenêtre **Propriétés**, sélectionnez la propriété **Tabs**, puis cliquez sur le bouton de sélection ![Bouton de sélection du concepteur ASP.NET mobile](~/docs/sharepoint/media/mwellipsis.gif "Bouton de sélection du concepteur ASP.NET mobile").  
   
  Après avoir ajouté un onglet, vous pouvez ajouter des groupes qui contiendront des contrôles.  
   

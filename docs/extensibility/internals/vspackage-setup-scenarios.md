@@ -38,7 +38,7 @@ Il est important de concevoir votre programme d’installation du package VS de 
 ## Scénario 1 : VSPackage partagé  
  Dans ce scénario, un VSPackage partagé \(un seul binaire qui prend en charge plusieurs versions de [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]\) est inclus dans un package Windows Installer. L’enregistrement avec chaque version de [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] est contrôlé par les fonctionnalités sélectionnables par l’utilisateur. Cela signifie également que lorsque affecté pour séparer les fonctionnalités, chaque composant peut être individuellement sélectionné pour l’installation ou la désinstallation, plaçant l’utilisateur dans le contrôle d’intégration le VSPackage dans différentes versions de [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]. \(Voir [fonctionnalités de Windows Installer](http://msdn.microsoft.com/library/aa372840\(VS.85\).aspx) pour plus d’informations sur l’utilisation de fonctions dans les packages de programme d’installation de Windows.\)  
   
- ![Graphique VSPackage partagé VS](../../extensibility/internals/media/vs_sharedpackage.png "VS\_SharedPackage")  
+ ![Graphique VSPackage partagé VS](~/docs/extensibility/internals/media/vs_sharedpackage.gif "VS\_SharedPackage")  
 Programme d’installation du package VS partagé  
   
  Comme indiqué dans l’illustration, les composants partagés sont effectuées de la fonctionnalité Feat\_Common, qui est toujours installée. En apportant les fonctionnalités Feat\_VS2002 et Feat\_VS2003 visible, les utilisateurs peuvent choisir au moment de l’installation dans les versions de [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] qu’ils souhaitent le VSPackage à intégrer. Utilisateurs peuvent également utiliser le mode de maintenance de Windows Installer pour ajouter ou supprimer des fonctionnalités, qui dans ce cas d’ajoute ou supprime les informations d’inscription VSPackage de différentes versions de [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)].  
@@ -52,7 +52,7 @@ Programme d’installation du package VS partagé
 > [!CAUTION]
 >  Chaque fois qu’un VSPackage est partagé entre plusieurs versions de [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)], il est essentiel que les versions ultérieures du VSPackage maintenir la compatibilité descendante avec les versions antérieures de [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]. Si vous ne pouvez pas conserver la compatibilité descendante, vous devez utiliser VSPackages côte\-à\-côte, privés. Pour plus d'informations, consultez [Prise en charge de plusieurs Versions de Visual Studio](../../extensibility/supporting-multiple-versions-of-visual-studio.md).  
   
- ![Image de mise à jour du package VS partagé VS](../../extensibility/internals/media/vs_sharedpackageupdate.png "VS\_SharedPackageUpdate")  
+ ![Image de mise à jour du package VS partagé VS](~/docs/extensibility/internals/media/vs_sharedpackageupdate.gif "VS\_SharedPackageUpdate")  
 Partagé du programme d’installation de la mise à jour VSPackage  
   
  Ce scénario présente un nouveau programme d’installation VSPackage, tirant parti de la prise en charge de Windows Installer pour les mises à niveau mineures. Les utilisateurs installent simplement la version 1.1, et il met à niveau la version 1.0. Toutefois, il n’est pas nécessaire de disposer de la version 1.0 sur le système. Le même programme d’installation va installer la version 1.1 sur un ordinateur sans version 1.0. L’avantage de fournir des mises à niveau mineures de cette manière, qu’il n’est pas nécessaire suivre le travail de développement d’un programme d’installation de mise à niveau et un programme d’installation complète. Un programme d’installation effectue les deux tâches. Un correctif de sécurité ou un service pack peut à la place tirer parti des correctifs de Windows Installer. Pour plus d’informations, consultez [mises à niveau et mise à jour corrective](http://msdn.microsoft.com/library/aa370579\(VS.85\).aspx).  
@@ -60,7 +60,7 @@ Partagé du programme d’installation de la mise à jour VSPackage
 ## Scénario 3 : Côte\-à\-côte VSPackage  
  Ce scénario présente deux programmes d’installation du package VS : une pour chaque version de Visual Studio .NET 2003 et [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]. Chaque programme d’installation installe un côté à côte ou private, VSPackage \(celui qui est spécifiquement créé et installé une version particulière de [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]\). Chaque VSPackage est dans son propre composant. Par conséquent, chaque peut être traitée individuellement avec les correctifs logiciels ou de gestion des mises à jour. La DLL VSPackage étant désormais spécifique à la version, il est en toute sécurité à ses informations d’inscription dans le même composant que la DLL.  
   
- ![Graphique du package VS côte à côte VS](../../extensibility/internals/media/vs_sbys_package.gif "VS\_SbyS\_Package")  
+ ![Graphique du package VS côte à côte VS](~/docs/extensibility/internals/media/vs_sbys_package.gif "VS\_SbyS\_Package")  
 Programme d’installation du package VS côte à côte  
   
  Chaque programme d’installation inclut également le code qui est partagée entre les deux programmes d’installation. Si le code partagé est installé dans un emplacement commun, l’installation de deux fichiers .msi installe le code partagé une seule fois. Le programme d’installation deuxième incrémente un décompte de références sur le composant. Le décompte de références garantit que si un des VSPackages est désinstallé, le code partagé restent pour l’autres VSPackage. Si le deuxième VSPackage est désinstallé, le code partagé est supprimé.  
@@ -70,7 +70,7 @@ Programme d’installation du package VS côte à côte
   
  Dans ce cas, le VSPackage est un VSPackage managé installé dans le global assembly cache \(GAC\). Lorsque vous le régénérez pour inclure le correctif de sécurité, vous devez modifier la partie de numéro de révision du numéro de version d’assembly. Les informations d’inscription à l’origine pour le nouveau numéro de version d’assembly remplace la version précédente, [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] pour charger l’assembly fixe.  
   
- ![Graphique de mise à jour du package VS côte à côte VS](../../extensibility/internals/media/vs_sbys_packageupdate.png "VS\_SbyS\_PackageUpdate")  
+ ![Graphique de mise à jour du package VS côte à côte VS](~/docs/extensibility/internals/media/vs_sbys_packageupdate.gif "VS\_SbyS\_PackageUpdate")  
 Programme d’installation de mise à jour côte\-à\-côte VSPackage  
   
  **Remarque** pour plus d’informations sur le déploiement des assemblys côte à côte, consultez [en simplifiant le déploiement et la résolution de l’enfer des DLL avec le .NET Framework](http://msdn.microsoft.com/library/ms973843.aspx).  

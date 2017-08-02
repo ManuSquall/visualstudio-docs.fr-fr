@@ -41,7 +41,7 @@ Ensuite, ajoutez un contrôle **Timer** au jeu de combinaisons. Une minuterie at
   
 1.  Dans la boîte à outils du Concepteur Windows Forms, choisissez **Timer** (dans la catégorie **Composants**) et appuyez sur Entrée ou double-cliquez sur la minuterie pour ajouter un contrôle Timer au formulaire. L’icône de la minuterie, appelée **Timer1**, doit apparaître dans un espace sous le formulaire, comme le montre la figure suivante.  
   
-     ![Minuterie](../ide/media/express_timer.png "Express_Timer")  
+     ![Minuterie](~/docs/ide/media/express_timer.png "Express_Timer")  
 Minuterie  
   
     > [!NOTE]

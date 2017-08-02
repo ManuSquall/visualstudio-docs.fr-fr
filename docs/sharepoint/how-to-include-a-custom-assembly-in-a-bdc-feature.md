@@ -37,7 +37,7 @@ caps.handback.revision: 16
   
 2.  Dans le menu **Affichage**, cliquez sur **Fenêtre Propriétés**.  
   
-3.  Dans la fenêtre **Propriétés**, sélectionnez la propriété **Assemblys**, puis choisissez le bouton de sélection \(![Bouton de sélection du concepteur ASP.NET mobile](../sharepoint/media/mwellipsis.png "Bouton de sélection du concepteur ASP.NET mobile")\).  
+3.  Dans la fenêtre **Propriétés**, sélectionnez la propriété **Assemblys**, puis choisissez le bouton de sélection \(![Bouton de sélection du concepteur ASP.NET mobile](~/docs/sharepoint/media/mwellipsis.gif "Bouton de sélection du concepteur ASP.NET mobile")\).  
   
      La boîte de dialogue **Assigner des assemblys référencés à des LobSystems** apparaît.  
   

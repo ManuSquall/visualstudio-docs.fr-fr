@@ -23,7 +23,7 @@ caps.handback.revision: 10
 # D&#233;boguer un contr&#244;le WebView
 [!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
 
-![S'applique à Windows et Windows Phone](../debugger/media/windows_and_phone_content.png "windows\_and\_phone\_content")  
+![S'applique à Windows et Windows Phone](~/docs/debugger/media/windows_and_phone_content.png "windows\_and\_phone\_content")  
   
  Pour inspecter et déboguer des contrôles `WebView` dans une application Windows Runtime, vous pouvez configurer Visual Studio de sorte à attacher le débogueur de scripts au démarrage de l'application.  Quand vous démarrez Visual Studio 2013 Update 2, vous avez deux moyens d'interagir avec les contrôles `WebView` à l'aide du débogueur :  
   
@@ -78,7 +78,7 @@ caps.handback.revision: 10
   
 5.  Dans la fenêtre de la console, sélectionnez la page web ou un `iFrame` affiché par le contrôle `WebView` dans la liste **Cible**.  
   
-     ![Sélection cible dans la fenêtre de la console JavaScript](../debugger/media/js_console_target.png "JS\_Console\_Target")  
+     ![Sélection cible dans la fenêtre de la console JavaScript](~/docs/debugger/media/js_console_target.png "JS\_Console\_Target")  
   
     > [!NOTE]
     >  À l'aide de la console, vous pouvez interagir avec un seul `WebView`, `iFrame`, contrat de partage ou traitement web à la fois.  Chaque élément requiert une instance distincte de l'hôte de plateforme web \(WWAHost.exe\).  Vous pouvez interagir avec un seul hôte à la fois.  

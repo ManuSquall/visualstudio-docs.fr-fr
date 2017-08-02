@@ -132,7 +132,7 @@ Vous configurez le projet **OfficeAddInSetup** pour inclure la sortie de votre p
 2. Dans la barre de menus, sélectionnez **Afficher**, **Ouvrir**.  
   
 3. En bas de la page **Assistant Projet**, choisissez le bouton **Fichiers d'application**, comme le montre l'illustration suivante.  
-    ![Bouton Fichiers d'application](../vsto/media/installshield-applicationfiles.png "Bouton Fichiers d'application")  
+    ![Bouton Fichiers d'application](~/docs/vsto/media/installshield-applicationfiles.png "Bouton Fichiers d'application")  
   
 4. Dans la page **Fichiers d'application**, choisissez le bouton **Ajouter les sorties du projet**.  
   
@@ -267,7 +267,7 @@ Les installations par utilisateur requièrent un seul programme d'installation q
     Dans la barre de menus, sélectionnez **Afficher**, **Ouvrir**.  
   
 2. En bas de la page **Assistant Projet**, choisissez le bouton **Registre de l'application**, comme le montre l'illustration suivante.  
-    ![Bouton Registre d'application.](../vsto/media/installshield-applicationregistry.png "Bouton Registre d'application.")  
+    ![Bouton Registre d'application.](~/docs/vsto/media/installshield-applicationregistry.gif "Bouton Registre d'application.")  
   
     La page **Registre de l'application** s'affiche.  
   
@@ -385,7 +385,7 @@ Pour modifier des propriétés personnalisées, créez un programme qui supprime
 2. Dans la barre de menus, sélectionnez **Afficher**, **Ouvrir**.  
   
 3. En bas de la page **Assistant Projet**, choisissez le bouton **Fichiers d'application**, comme le montre l'illustration suivante.  
-    ![Bouton Fichiers d'application](../vsto/media/installshield-applicationfiles.png "Bouton Fichiers d'application")  
+    ![Bouton Fichiers d'application](~/docs/vsto/media/installshield-applicationfiles.png "Bouton Fichiers d'application")  
   
 4. Dans la page **Fichiers d'application**, choisissez le bouton **Ajouter les sorties du projet**.  
     La boîte de dialogue **Sélecteur de sortie de Visual Studio** apparaît.  

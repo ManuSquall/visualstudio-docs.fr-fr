@@ -28,7 +28,7 @@ caps.handback.revision: 39
   
  [!INCLUDE[appliesto_xlalldoc](../vsto/includes/appliesto-xlalldoc-md.md)]  
   
- ![lien vers la vidéo](../vsto/media/playvideo.png "lien vers la vidéo") Pour une démonstration vidéo connexe, consultez [Comment faire pour utiliser le mappage XML dans Excel ? \(page éventuellement en anglais\)](http://go.microsoft.com/fwlink/?LinkID=130288).  
+ ![lien vers la vidéo](~/docs/data-tools/media/playvideo.gif "lien vers la vidéo") Pour une démonstration vidéo connexe, consultez [Comment faire pour utiliser le mappage XML dans Excel ? \(page éventuellement en anglais\)](http://go.microsoft.com/fwlink/?LinkID=130288).  
   
 ## Liaison de données au contrôle  
  Un contrôle <xref:Microsoft.Office.Tools.Excel.XmlMappedRange> prend en charge la liaison à un seul champ de données \(liaison de données simple\).  Le contrôle <xref:Microsoft.Office.Tools.Excel.ListObject> peut prendre en charge la liaison de données complexe et est automatiquement créé lorsqu'un élément de schéma répétitif est mappé à une cellule.  Pour plus d’informations, consultez [ListObject, contrôle](../vsto/listobject-control.md).  

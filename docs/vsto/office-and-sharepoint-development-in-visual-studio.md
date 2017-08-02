@@ -96,7 +96,7 @@ caps.handback.revision: 87
   
  Voici un exemple de ce que peut faire un complément VSTO. Ce complément VSTO ajoute des contrôles de ruban, un volet des tâches personnalisé et une boîte de dialogue dans PowerPoint.  
   
- ![Solution de complément PowerPoint](../vsto/media/powerpointaddin.png "Solution de complément PowerPoint")  
+ ![Solution de complément PowerPoint](~/docs/vsto/media/powerpointaddin.png "Solution de complément PowerPoint")  
   
  **En savoir plus**  
   

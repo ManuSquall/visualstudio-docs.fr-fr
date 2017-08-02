@@ -32,7 +32,7 @@ Si votre mode Éditeur héberge ActiveX ou d’autres contrôles actifs, vous de
 ## Objets et interfaces utilisés  
  Les objets qui sont utilisés pour créer l’activation sur place sont affichés dans l’illustration suivante.  
   
- ![Éditeur d'activation sur place](../misc/media/vsinplaceactivationeditor.png "vsInPlaceActivationEditor")  
+ ![Éditeur d'activation sur place](~/docs/extensibility/media/vsinplaceactivationeditor.gif "vsInPlaceActivationEditor")  
 Éditeur d’activation sur place  
   
 > [!NOTE]

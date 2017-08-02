@@ -38,7 +38,7 @@ ms.lasthandoff: 07/19/2017
 # <a name="introduction-to-wpf"></a>Présentation de WPF
 Windows Presentation Foundation (WPF) vous permet de créer des applications clientes de bureau pour Windows avec des expériences utilisateur visuellement surprenantes.  
   
- ![Exemple d’interface utilisateur Contoso Healthcare](../designers/media/wpfintrofigure24.png "WPFIntroFigure24")  
+ ![Exemple d’interface utilisateur Contoso Healthcare](~/docs/designers/media/wpfintrofigure24.png "WPFIntroFigure24")  
   
  Le cœur de WPF est un moteur de rendu vectoriel et indépendant de toute résolution, créé pour tirer parti du matériel graphique moderne. WPF étend le cœur avec un ensemble complet de fonctionnalités de développement d’applications qui incluent XAML (Extensible Application Markup Language), des contrôles, la liaison de données, la disposition, les graphiques 2D et 3D, l’animation, les styles, les modèles, les documents, les médias, le texte et la typographie. WPF étant inclus dans le .NET Framework, vous pouvez développer des applications qui incorporent d’autres éléments de la bibliothèque de classes .NET Framework.  
   
@@ -81,7 +81,7 @@ Windows Presentation Foundation (WPF) vous permet de créer des applications cli
   
  L’illustration suivante montre l’interface utilisateur définie par XAML dans l’exemple précédent.  
   
- ![Fenêtre contenant un bouton](../designers/media/wpfintrofigure10.png "WPFIntroFigure10")  
+ ![Fenêtre contenant un bouton](~/docs/designers/media/wpfintrofigure10.png "WPFIntroFigure10")  
   
  Comme XAML est basé sur XML, l’interface utilisateur que vous composez avec est assemblée dans une hiérarchie d’éléments imbriqués, connue sous le nom d’ [arborescence des éléments](https://msdn.microsoft.com/en-us/library/ms753391\(v=vs.100\).aspx). L’arborescence des éléments offre un moyen logique et intuitif de créer et gérer des interfaces utilisateur.  
   
@@ -158,7 +158,7 @@ End Namespace
   
  L’illustration suivante affiche le résultat obtenu quand vous cliquez sur le bouton.  
   
- ![Une boîte de message](../designers/media/wpfintrofigure25.png "WPFIntroFigure25")  
+ ![Une boîte de message](~/docs/designers/media/wpfintrofigure25.png "WPFIntroFigure25")  
   
 ##  <a name="Controls"></a> Contrôles  
  Les expériences utilisateur fournies par le modèle d’application sont des contrôles construits Dans WPF, « contrôle » est un terme général qui s’applique à une catégorie de classes WPF qui sont hébergées dans une fenêtre ou une page, qui ont une interface utilisateur et qui implémentent un certain comportement.  
@@ -229,7 +229,7 @@ End Namespace
   
  L’illustration suivante affiche le résultat du balisage XAML dans l’exemple précédent.  
   
- ![Page DockPanel](../designers/media/wpfintrofigure11.png "WPFIntroFigure11")  
+ ![Page DockPanel](~/docs/designers/media/wpfintrofigure11.png "WPFIntroFigure11")  
   
 ##  <a name="Data_Binding"></a> Liaison de données  
  La plupart des applications sont créées pour permettre aux utilisateurs d’afficher et de modifier des données. Pour les applications WPF, le travail de stockage et d’accès aux données est déjà fourni par des technologies telles que Microsoft SQL Server et ADO.NET. Après avoir accédé aux données et les avoir chargées dans les objets managés d’une application, les difficultés commencent pour les applications WPF. Cela implique essentiellement deux opérations :  
@@ -276,7 +276,7 @@ End Namespace
 ### <a name="2-d-shapes"></a>Formes 2D  
  WPF fournit une bibliothèque de formes vectorielles courantes 2D, telles que les rectangles et ellipses présentés dans l’illustration suivante.  
   
- ![Ellipses et rectangles](../designers/media/wpfintrofigure4.PNG "WPFIntroFigure4")  
+ ![Ellipses et rectangles](~/docs/designers/media/wpfintrofigure4.PNG "WPFIntroFigure4")  
   
  Les formes ont notamment pour intérêt de ne pas servir uniquement à l’affichage ; elles implémentent la majorité des fonctionnalités que vous attendez des contrôles, y compris l’entrée au clavier et à la souris. L’exemple suivant montre l’événement <xref:System.Windows.UIElement.MouseUp> d’une <xref:System.Windows.Shapes.Ellipse> gérée.  
   
@@ -287,7 +287,7 @@ End Namespace
   
  L’illustration suivante montre ce qui est produit par le code précédent.  
   
- ![Fenêtre avec le texte « vous avez cliqué sur l’ellipse &#33;»](../designers/media/wpfintrofigure12.png "WPFIntroFigure12")  
+ ![Fenêtre avec le texte « vous avez cliqué sur l’ellipse &#33;»](~/docs/designers/media/wpfintrofigure12.png "WPFIntroFigure12")  
   
  Pour plus d’informations, consultez [Vue d’ensemble des formes et dessins de base dans WPF](https://msdn.microsoft.com/en-us/library/ms747393\(v=vs.100\).aspx).  
   
@@ -298,28 +298,28 @@ End Namespace
   
  Les objets <xref:System.Windows.Media.Geometry> peuvent être utilisés pour le découpage, les tests de recherche et le rendu de données graphiques 2D.  
   
- ![Différentes utilisations d’un chemin](../designers/media/wpfintrofigure5.PNG "WPFIntroFigure5")  
+ ![Différentes utilisations d’un chemin](~/docs/designers/media/wpfintrofigure5.PNG "WPFIntroFigure5")  
   
  Pour plus d’informations, consultez [Vue d’ensemble de Geometry](https://msdn.microsoft.com/en-us/library/ms751808\(v=vs.100\).aspx).  
   
 ### <a name="2-d-effects"></a>Effets 2D  
  Un sous-ensemble de fonctions 2D WPF inclut des effets visuels tels que des dégradés, des bitmaps, des dessins, la peinture avec des vidéos, la rotation, la mise à l’échelle et l’inclinaison. Ces derniers sont tous réalisés avec des pinceaux ; l’illustration suivante montre quelques exemples.  
   
- ![Illustration de différents pinceaux](../designers/media/wpfintrofigure6.PNG "WPFIntroFigure6")  
+ ![Illustration de différents pinceaux](~/docs/designers/media/wpfintrofigure6.PNG "WPFIntroFigure6")  
   
  Pour plus d’informations, consultez [Vue d’ensemble des pinceaux WPF](https://msdn.microsoft.com/en-us/library/aa970904\(v=vs.100\).aspx).  
   
 ### <a name="3-d-rendering"></a>Rendu 3D  
  WPF comprend également des fonctionnalités de rendu 3D s’intégrant aux graphiques 2D, permettant ainsi la création d’interfaces utilisateur plus intéressantes. Par exemple, l’illustration suivante montre des images 2D restituées sur des formes 3D.  
   
- ![Capture d’écran : exemple Visual3D](../designers/media/wpfintrofigure13.png "WPFIntroFigure13")  
+ ![Capture d’écran : exemple Visual3D](~/docs/designers/media/wpfintrofigure13.png "WPFIntroFigure13")  
   
  Pour plus d’informations, consultez [Vue d’ensemble des graphiques 3D](https://msdn.microsoft.com/en-us/library/ms747437\(v=vs.100\).aspx).  
   
 ##  <a name="Animation"></a> Animation  
  La prise en charge d’animations WPF vous permet d’agrandir, de faire bouger, de faire pivoter et de réaliser des fondus avec les contrôles pour créer des transitions de page intéressantes, et plus encore. Vous pouvez animer la plupart des classes WPF, même les classes personnalisées. L’illustration suivante montre une animation simple en action.  
   
- ![Images d’un cube animé](../designers/media/wpfintrofigure7.png "WPFIntroFigure7")  
+ ![Images d’un cube animé](~/docs/designers/media/wpfintrofigure7.png "WPFIntroFigure7")  
   
  Pour plus d’informations, consultez [Vue d’ensemble de l’animation](https://msdn.microsoft.com/en-us/library/ms752312\(v=vs.100\).aspx).  
   
@@ -329,7 +329,7 @@ End Namespace
 ### <a name="images"></a>Images  
  Les images sont communes à la plupart des applications et WPF fournit plusieurs façons de les utiliser. L’illustration suivante montre une interface utilisateur avec une zone de liste qui contient des images miniatures. Lorsque vous sélectionnez une miniature, l’image s’affiche en grand.  
   
- ![Images miniatures et image en taille réelle](../designers/media/wpfintrofigure8.PNG "WPFIntroFigure8")  
+ ![Images miniatures et image en taille réelle](~/docs/designers/media/wpfintrofigure8.PNG "WPFIntroFigure8")  
   
  Pour plus d’informations, consultez [Vue d’ensemble de la création d’images](https://msdn.microsoft.com/en-us/library/ms748873\(v=vs.100\).aspx).  
   
@@ -340,7 +340,7 @@ End Namespace
   
  La fenêtre de l’illustration suivante montre le contrôle <xref:System.Windows.Controls.MediaElement> en action.  
   
- ![Contrôle MediaElement avec audio et vidéo](../designers/media/wpfintrofigure1.png "WPFIntroFigure1")  
+ ![Contrôle MediaElement avec audio et vidéo](~/docs/designers/media/wpfintrofigure1.png "WPFIntroFigure1")  
   
  Pour plus d’informations, consultez [Vue d’ensemble des médias, de l’animation et des graphiques WPF](https://msdn.microsoft.com/en-us/library/ms742562\(v=vs.100\).aspx).  
   
@@ -359,7 +359,7 @@ End Namespace
   
  Comme démonstration d’une intégration de texte avec des graphiques, l’illustration suivante montre l’application d’un ornement de texte.  
   
- ![Texte avec différents ornements de texte](../designers/media/wpfintrofigure23.png "WPFIntroFigure23")  
+ ![Texte avec différents ornements de texte](~/docs/designers/media/wpfintrofigure23.png "WPFIntroFigure23")  
   
  Pour plus d’informations, consultez [Typographie dans WPF](https://msdn.microsoft.com/en-us/library/ms742190\(v=vs.100\).aspx).  
   
@@ -379,7 +379,7 @@ End Namespace
   
  L’illustration suivante affiche le résultat.  
   
- ![Contrôle TextBox contenant du texte](../designers/media/wpfintrofigure21.png "WPFIntroFigure21")  
+ ![Contrôle TextBox contenant du texte](~/docs/designers/media/wpfintrofigure21.png "WPFIntroFigure21")  
   
  Toutefois, d’autres contrôles peuvent contenir plusieurs éléments de différents types de contenu ; le contenu d’un <xref:System.Windows.Controls.Button>, spécifié par la propriété <xref:System.Windows.Controls.ContentControl.Content%2A>, peut contenir différents éléments, y compris des contrôles de disposition, du texte, des images et des formes. L’exemple suivant montre un <xref:System.Windows.Controls.Button> avec du contenu qui inclut un <xref:System.Windows.Controls.DockPanel>, une <xref:System.Windows.Controls.Label>, une <xref:System.Windows.Controls.Border> et un <xref:System.Windows.Controls.MediaElement>.  
   
@@ -389,7 +389,7 @@ End Namespace
   
  L’illustration suivante montre le contenu de ce bouton.  
   
- ![Bouton contenant plusieurs types de contenu](../designers/media/wpfintrofigure22.png "WPFIntroFigure22")  
+ ![Bouton contenant plusieurs types de contenu](~/docs/designers/media/wpfintrofigure22.png "WPFIntroFigure22")  
   
  Pour plus d’informations sur les types de contenu pris en charge par différents contrôles, consultez [Modèle de contenu WPF](https://msdn.microsoft.com/en-us/library/bb613548\(v=vs.100\).aspx).  
   
@@ -410,12 +410,12 @@ End Namespace
   
  Dans cet exemple, l’interface utilisateur du bouton par défaut a été remplacée par une <xref:System.Windows.Shapes.Ellipse> aux bords bleu foncé remplie à l’aide d’un <xref:System.Windows.Media.RadialGradientBrush>. Le contrôle <xref:System.Windows.Controls.ContentPresenter> affiche le contenu du <xref:System.Windows.Controls.Button>, « Click Me! ». Quand l’utilisateur clique sur <xref:System.Windows.Controls.Button> , l’événement <xref:System.Windows.Controls.Primitives.ButtonBase.Click> est toujours déclenché dans le cadre du comportement par défaut du contrôle <xref:System.Windows.Controls.Button> . Le résultat est affiché dans l’illustration suivante.  
   
- ![Un bouton en forme d’ellipse et une deuxième fenêtre](../designers/media/wpfintrofigure2.png "WPFIntroFigure2")  
+ ![Un bouton en forme d’ellipse et une deuxième fenêtre](~/docs/designers/media/wpfintrofigure2.png "WPFIntroFigure2")  
   
 ### <a name="data-templates"></a>Modèles de données  
  Alors qu’un modèle de contrôle vous permet de spécifier l’apparence d’un contrôle, un modèle de données vous permet de spécifier l’apparence du contenu d’un contrôle. Les modèles de données sont souvent utilisés pour améliorer l’affichage des données liées. L’illustration suivante montre l’apparence par défaut d’une <xref:System.Windows.Controls.ListBox> liée à une collection d’objets `Task`, où chaque tâche a un nom, une description et une priorité.  
   
- ![Zone de liste avec l’apparence par défaut](../designers/media/wpfintrofigure18.png "WPFIntroFigure18")  
+ ![Zone de liste avec l’apparence par défaut](~/docs/designers/media/wpfintrofigure18.png "WPFIntroFigure18")  
   
  L’apparence par défaut correspond à ce que vous pourriez attendre d’une <xref:System.Windows.Controls.ListBox>. Toutefois, l’apparence par défaut de chaque tâche ne contient que le nom de la tâche. Pour afficher le nom, la description et la priorité de la tâche, l’apparence par défaut des éléments de liste liés du contrôle <xref:System.Windows.Controls.ListBox> doit être modifiée à l’aide d’un <xref:System.Windows.DataTemplate>. Le code XAML suivant définit ce type de <xref:System.Windows.DataTemplate> appliqué à chaque tâche à l’aide de l’attribut <xref:System.Windows.Controls.ItemsControl.ItemTemplate%2A>.  
   
@@ -426,7 +426,7 @@ End Namespace
   
  L’illustration suivante montre l’effet de ce code.  
   
- ![Zone de liste utilisant un modèle de données](../designers/media/wpfintrofigure19.png "WPFIntroFigure19")  
+ ![Zone de liste utilisant un modèle de données](~/docs/designers/media/wpfintrofigure19.png "WPFIntroFigure19")  
   
  Notez que la <xref:System.Windows.Controls.ListBox> a conservé son comportement et son apparence globale ; seule l’apparence du contenu affiché par la zone de liste a été modifiée.  
   
@@ -442,7 +442,7 @@ End Namespace
   
  Étant donné que ce style cible tous les contrôles <xref:System.Windows.Controls.Button>, le style est automatiquement appliqué à tous les boutons de la fenêtre, comme indiqué dans l’illustration suivante.  
   
- ![Deux boutons orange](../designers/media/wpfintrofigure20.png "WPFIntroFigure20")  
+ ![Deux boutons orange](~/docs/designers/media/wpfintrofigure20.png "WPFIntroFigure20")  
   
  Pour plus d’informations, consultez [Application d’un style et création de modèles](https://msdn.microsoft.com/en-us/library/ms745683\(v=vs.100\).aspx).  
   
@@ -507,7 +507,7 @@ End Namespace
   
  L’illustration suivante montre le contrôle `NumericUpDown` hébergé dans une <xref:System.Windows.Window>.  
   
- ![UserControl personnalisé](../designers/media/wpfintrofigure3.png "WPFIntroFigure3")  
+ ![UserControl personnalisé](~/docs/designers/media/wpfintrofigure3.png "WPFIntroFigure3")  
   
  Pour plus d’informations sur les contrôles personnalisés, consultez [Vue d’ensemble de la création de contrôles](https://msdn.microsoft.com/en-us/library/ms745025\(v=vs.100\).aspx).  
   

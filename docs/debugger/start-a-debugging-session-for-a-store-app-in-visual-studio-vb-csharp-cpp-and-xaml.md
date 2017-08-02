@@ -44,7 +44,7 @@ manager: "ghogen"
 # D&#233;marrer une session de d&#233;bogage pour une application du Windows Store dans Visual Studio (VB, C#, C++ et XAML)
 [!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
 
-![S'applique à Windows et Windows Phone](../debugger/media/windows_and_phone_content.png "windows\_and\_phone\_content")  
+![S'applique à Windows et Windows Phone](~/docs/debugger/media/windows_and_phone_content.png "windows\_and\_phone\_content")  
   
  Cette rubrique décrit comment démarrer une session de débogage pour les applications Windows Store écrites en XAML et Visual C\+\+, Visual C\# ou Visual Basic. Le débogage d'une application implique la configuration de la session de débogage et le choix de la méthode de démarrage de l'application.  
   
@@ -104,11 +104,11 @@ manager: "ghogen"
   
     -   Pour les applications Visual C\# et Visual Basic, choisissez **Déboguer**.  
   
-         ![Page de propriétés de débogage de projet C&#35; &#47; VB](../debugger/media/dbg_csvb_debugpropertypage.png "DBG\_CsVb\_DebugPropertyPage")  
+         ![Page de propriétés de débogage de projet C&#35; &#47; VB](~/docs/debugger/media/dbg_csvb_debugpropertypage.png "DBG\_CsVb\_DebugPropertyPage")  
   
     -   Pour les applications Visual C\+\+, développez le nœud **Propriétés de configuration** , puis choisissez **Débogage**.  
   
-         ![Page de propriétés de débogage de l’application Windows Store C&#43;&#43;](../debugger/media/dbg_cpp_debugpropertypage.png "DBG\_CPP\_DebugPropertyPage")  
+         ![Page de propriétés de débogage de l’application Windows Store C&#43;&#43;](~/docs/debugger/media/dbg_cpp_debugpropertypage.png "DBG\_CPP\_DebugPropertyPage")  
   
 ###  <a name="BKMK_Choose_the_build_configuration_options"></a> Choisir les options de configuration de build  
   
@@ -117,7 +117,7 @@ manager: "ghogen"
 2.  Dans la liste **Plateforme**, sélectionnez la plateforme cible à générer. Dans la plupart des cas, **Any CPU** \(**Toutes les plateformes** dans Visual C\+\+\) est le meilleur choix.  
   
 ###  <a name="BKMK_Choose_the_deployment_target"></a> Sélectionner la cible de déploiement  
- ![S'applique uniquement à Windows](../debugger/media/windows_only_content.png "windows\_only\_content")  
+ ![S'applique uniquement à Windows](~/docs/debugger/media/windows_only_content.png "windows\_only\_content")  
   
  Vous pouvez déployer et déboguer une application Windows Store sur l'ordinateur Visual Studio, dans le simulateur Visual Studio sur l'ordinateur local ou sur un appareil distant.  
   
@@ -149,12 +149,12 @@ manager: "ghogen"
   
     -   Pour les applications C\+\+, choisissez la flèche bas dans la zone **Nom de l'ordinateur** et choisissez **\<Rechercher...\>**.  
   
-     ![Boîte de dialogue Sélectionner la connexion au Remote Debugger](../debugger/media/vsrun_selectremotedebuggerdlg.png "VSRUN\_SelectRemoteDebuggerDlg")  
+     ![Boîte de dialogue Sélectionner la connexion au Remote Debugger](~/docs/debugger/media/vsrun_selectremotedebuggerdlg.png "VSRUN\_SelectRemoteDebuggerDlg")  
   
     > [!NOTE]
     >  La boîte de dialogue **Sélectionner une connexion du débogueur distant** affiche les ordinateurs situés sur le sous\-réseau et les ordinateurs locaux qui sont directement connectés à l'ordinateur Visual Studio via un câble Ethernet. Pour spécifier un autre ordinateur, entrez le nom dans la zone **Nom de l'ordinateur**.  
   
- ![S'applique uniquement à Windows Phone](../debugger/media/phone_only_content.png "phone\_only\_content")  
+ ![S'applique uniquement à Windows Phone](~/docs/debugger/media/phone_only_content.png "phone\_only\_content")  
   
  Vous pouvez déployer et déboguer une application Windows Phone Store sur un appareil ou sur l'un des émulateurs Windows Phone de Visual Studio. Sélectionnez l'appareil ou l'émulateur dans la liste **Appareil cible**.  
   
@@ -177,7 +177,7 @@ manager: "ghogen"
 |**Mixte \(natif et managé\)**|Déboguez le code natif et managé C\/C\+\+ dans votre application. Le code JavaScript est ignoré.|  
 |**GPU uniquement**|Déboguez le code C\+\+ natif qui s'exécute sur une unité de traitement graphique \(GPU\).|  
   
- ![S'applique uniquement à Windows Phone](../debugger/media/phone_only_content.png "phone\_only\_content")  
+ ![S'applique uniquement à Windows Phone](~/docs/debugger/media/phone_only_content.png "phone\_only\_content")  
   
  Pour les applications Windows Phone Store, vous pouvez aussi choisir d'utiliser le débogueur pour les processus en arrière\-plan à partir de **Processus de tâche en arrière\-plan**.  
   
@@ -191,7 +191,7 @@ manager: "ghogen"
 -   Pour les applications Visual C\+\+, choisissez **Oui** dans la liste **Lancer l'application** sur la page des propriétés **Débogage**.  
   
 ###  <a name="BKMK__Optional__Disable_network_loopbacks"></a> Désactiver les bouclages de réseau \(facultatif\)  
- ![S'applique uniquement à Windows](../debugger/media/windows_only_content.png "windows\_only\_content")  
+ ![S'applique uniquement à Windows](~/docs/debugger/media/windows_only_content.png "windows\_only\_content")  
   
  Pour des raisons de sécurité, une application Windows Store installée en mode standard n'est pas autorisée à effectuer des appels réseau vers le périphérique sur lequel elle est installée. Par défaut, le déploiement Visual Studio crée une exemption à cette règle pour l'application déployée. Cette exemption vous permet de tester les procédures de communication sur un seul ordinateur. Avant d'envoyer votre application au Windows Store, vous devez la tester sans l'exemption.  
   
@@ -205,7 +205,7 @@ manager: "ghogen"
  Pour diagnostiquer les problèmes liés à l'installation et à la configuration initiale de votre application Visual C\# ou Visual Basic, choisissez **Désinstaller et réinstaller mon package** sur la page des propriétés **Déboguer** pour recréer une installation d'origine lorsque vous démarrez le débogage. Cette option n'est pas disponible pour les projets Visual C\+\+.  
   
 ###  <a name="BKMK__Optional__Disable_authentication_requirement_to_start_the_remote_debugger"></a> \(Facultatif\) Désactivez la condition d'authentification pour démarrer le débogueur distant  
- ![S'applique uniquement à Windows](../debugger/media/windows_only_content.png "windows\_only\_content")  
+ ![S'applique uniquement à Windows](~/docs/debugger/media/windows_only_content.png "windows\_only\_content")  
   
  Par défaut, vous devez fournir des informations d'identification pour exécuter le débogueur distant.  
   

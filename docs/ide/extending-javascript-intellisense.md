@@ -29,7 +29,7 @@ Les fonctionnalités d'extensibilité JavaScript Intellisense vous permet de per
   
  Le service de langage JavaScript fournit des fonctionnalités Intellisense pour les bibliothèques JavaScript tiers qui sont ajoutées à un projet.  Pour la plupart des bibliothèques, la saisie semi\-automatique des instructions est fournie automatiquement par le service de langage.  L'illustration suivante montre un exemple de la saisie semi\-automatique des instructions :  
   
- ![Exemple de fin de l’instruction](../ide/media/js_intellisense_completion.png "js\_intellisense\_completion")  
+ ![Exemple de fin de l’instruction](~/docs/ide/media/js_intellisense_completion.png "js\_intellisense\_completion")  
   
  Si votre bibliothèque inclut les descriptions des variables, des fonctions, des objets et dans les balises standard de commentaire JavaScript \(\/\), vous bénéficiez automatiquement, par défaut, les fonctionnalités d'extensibilité Intellisense, qui fournissent des informations descriptives dans une zone contextuel qui apparaît à droite des éléments dans une liste de saisie semi\-automatique, ou lorsque vous tapez la parenthèse ouvrante dans un appel de fonction.  Les commentaires dans la zone contextuel contiennent la description du membre.  L'exemple suivant illustre la zone contextuel pour obtenir la liste de saisie semi\-automatique.  
   
@@ -488,7 +488,7 @@ intellisense.addEventListener('statementcompletion', function (event) {
   
 4.  Dans appCode.js, tapez le code suivant.  Lorsque vous tapez, vous verrez que l'icône de l'espace de noms a changé « {} », comme est utilisé en c.  
   
-     ![Exemple illustrant l’utilisation de la propriété glyphe](../ide/media/js_intellisense_glyph_namespace.png "js\_intellisense\_glyph\_namespace")  
+     ![Exemple illustrant l’utilisation de la propriété glyphe](~/docs/ide/media/js_intellisense_glyph_namespace.png "js\_intellisense\_glyph\_namespace")  
   
 5.  Dans appCode.js, tapez le code suivant.  Lorsque vous tapez, vous verrez une nouvelle icône d'énumération pour le membre Enum1, et une nouvelle icône de classe pour le membre SomeClass1.  
   
@@ -543,7 +543,7 @@ intellisense.addEventListener('statementcompletion', function (event) {
   
 5.  Dans appCode.js, testez les résultats en tapant vous le même code qui a entré précédemment.  Cette fois, Intellisense fournit les informations souhaitées.  
   
-     ![Exemple de la substitution des résultats IntelliSense](../ide/media/js_intellisense_override_fixed.png "js\_intellisense\_override\_fixed")  
+     ![Exemple de la substitution des résultats IntelliSense](~/docs/ide/media/js_intellisense_override_fixed.png "js\_intellisense\_override\_fixed")  
   
 ## Voir aussi  
  [IntelliSense JavaScript](../ide/javascript-intellisense.md)   

@@ -23,7 +23,7 @@ caps.handback.revision: 12
 
 les handles d'environnement **Save**, **Save As**, et commandes d' **Save All** .  Lorsqu'un utilisateur clique sur **Enregistrer**, **Enregistrer sous**, **ou enregistrer tout** dans le menu de **Fichier** ou fermez la solution, ce qui entraînerait une sauvegarde toute, le processus suivant se produit.  
   
- ![Enregistrer l'éditeur du client](../../extensibility/internals/media/private.gif "Private")  
+ ![Enregistrer l'éditeur du client](~/docs/extensibility/internals/media/private.gif "Private")  
 Enregistrez, enregistrer sous, puis enregistrez toutes la gestion de contrôle pour un éditeur personnalisé  
   
  Ce processus est indiqué dans les étapes suivantes :  

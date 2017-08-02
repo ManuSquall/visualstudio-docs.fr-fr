@@ -60,7 +60,7 @@ IntelliSense fournit [les saisies semi-automatiques](#completions), [l’assista
 
 Les saisies semi-automatiques s’affichent sous forme d’instructions, d’identificateurs et d’autres mots qui peuvent tout à fait être saisis à l’emplacement actuel dans l’éditeur. Ce qui apparaît dans la liste est basé sur le contexte et est filtré pour omettre les options inappropriées ou inexactes. Les saisies semi-automatiques sont souvent déclenchées en tapant diverses instructions (comme `import`) et différents opérateurs (y compris un point), mais vous pouvez les afficher à tout moment en tapant la séquence suivante : Ctrl-J, espace.
 
-![Saisie semi-automatique de membres](media/code-editing-completions-simple.png)
+![Saisie semi-automatique de membres](~/docs/python/media/code-editing-completions-simple.png)
 
 Lorsqu’une liste de saisies semi-automatiques est ouverte, vous pouvez rechercher la proposition que vous souhaitez grâce aux touches de direction, à la souris ou en continuant de taper. À mesure que vous tapez, la liste est filtrée pour afficher les propositions les plus probables. Ce filtrage intelligent vous permet d’utiliser des raccourcis tels que :
 
@@ -70,27 +70,27 @@ Lorsqu’une liste de saisies semi-automatiques est ouverte, vous pouvez recherc
 
 Voici quelques exemples :
 
-![Saisie semi-automatique de membres avec filtrage](media/code-editing-completion-filtering.png)
+![Saisie semi-automatique de membres avec filtrage](~/docs/python/media/code-editing-completion-filtering.png)
 
 Les saisies semi-automatiques de membres apparaissent automatiquement lorsque vous tapez un point après une variable ou une valeur, et affichent les méthodes et les attributs des types potentiels. Si une variable peut être plus d’un type, la liste inclut toutes les possibilités de tous les types, avec des informations supplémentaires pour indiquer quels types prennent en charge chaque proposition. Lorsqu’une saisie semi-automatique est prise en charge par tous les types possibles, elle est affichée sans annotation.
 
-![Saisie semi-automatique de membres sur plusieurs types](media/code-editing-completion-types.png)
+![Saisie semi-automatique de membres sur plusieurs types](~/docs/python/media/code-editing-completion-types.png)
 
 Par défaut, les membres commençant et se terminant par un trait de soulignement double ne sont pas affichés. En règle générale, vous ne devez pas accéder à ces membres directement, mais si vous en avez besoin, taper le trait de soulignement double permettra d’ajouter ces saisies semi-automatiques à la liste :
 
-![Saisie semi-automatique de membres privés](media/code-editing-completion-dunder.png)
+![Saisie semi-automatique de membres privés](~/docs/python/media/code-editing-completion-dunder.png)
 
 Les instructions `import` et `from ... import` affichent une liste des modules qui peuvent être importés et, dans le cas de `from ... import`, les membres qui peuvent être importés à partir du module spécifié.
 
-![Importation de saisie semi-automatique](media/code-editing-completion-import.png)
+![Importation de saisie semi-automatique](~/docs/python/media/code-editing-completion-import.png)
 
 Les instructions `raise` et `except` affichent les listes des classes susceptibles d’être des types d’erreurs. Toutes les exceptions définies par l’utilisateur peuvent ne pas faire partie de ces listes, mais ces dernières vous permettront de trouver les exceptions intégrées appropriées rapidement :
 
-![Saisie semi-automatique d’exceptions](media/code-editing-completion-exception.png)
+![Saisie semi-automatique d’exceptions](~/docs/python/media/code-editing-completion-exception.png)
 
 Taper @ lance un décorateur et affiche les décorateurs potentiels. La plupart de ces éléments ne sont pas utilisables en tant que décorateurs et vous devez consulter la documentation de la bibliothèque pour déterminer lequel utiliser :
 
-![Saisie semi-automatique de décorateurs](media/code-editing-completion-decorator.png)
+![Saisie semi-automatique de décorateurs](~/docs/python/media/code-editing-completion-decorator.png)
 
 > [!Tip]
 > Vous pouvez configurer le comportement des saisies semi-automatiques via **Outils > Options > Éditeur de texte > Python > Avancé**. Parmi les options proposées, **Filter list based on search string** (Filtrer la liste en fonction de la chaîne de recherche) applique un filtre aux propositions de saisie semi-automatique à mesure que vous tapez (option sélectionnée par défaut) et **Member completion displays intersection of members** (La saisie semi-automatique de membres affiche l’intersection des membres) affiche uniquement les saisies semi-automatiques prises en charge par tous les types possibles (option non sélectionnée par défaut).
@@ -100,7 +100,7 @@ Taper @ lance un décorateur et affiche les décorateurs potentiels. La plupart 
 
 Lorsque vous écrivez du code qui appelle une fonction, l’assistance pour la signature apparaît lorsque vous tapez le caractère `(` ouvrant et affiche les informations sur le paramètre et la documentation disponibles. Vous pouvez également les faire apparaître avec Ctrl + Maj + Espace à l’intérieur d’un appel de fonction. Les informations affichées dépendent des chaînes de documentation du code source de la fonction, mais elles incluent toutes les valeurs par défaut.
 
-![Assistance pour la signature](media/code-editing-signature-help.png)
+![Assistance pour la signature](~/docs/python/media/code-editing-signature-help.png)
 
 > [!Tip]
 > Pour désactiver l’assistance pour la signature, accédez à **Outils > Options > Éditeur de texte > Python > Général** et désactivez **Saisie semi-automatique des instructions > Informations sur les paramètres**.
@@ -109,17 +109,17 @@ Lorsque vous écrivez du code qui appelle une fonction, l’assistance pour la s
 
 Placer le pointeur de la souris sur un identificateur permet d’afficher une info-bulle Info express. En fonction de l’identificateur, Info express peut afficher les valeurs ou les types potentiels, la documentation disponible, les types de retour et les emplacements de définition :
 
-![Info express](media/code-editing-quick-info.png)
+![Info express](~/docs/python/media/code-editing-quick-info.png)
 
 ### <a name="code-coloring"></a>Coloration du code
 
 La coloration du code utilise les informations issues de l’analyse du code pour les variables de couleurs, les instructions et d’autres parties de votre code. Par exemple, les variables qui font référence à des modules ou à des classes peuvent être affichées dans une couleur différente pour des fonctions ou d’autres valeurs, et les noms de paramètres s’affichent dans une couleur différente pour les variables locales ou globales (notez que par défaut, les fonctions ne sont pas affichées en gras) :
 
-![Coloration du code](media/code-editing-code-coloring.png)
+![Coloration du code](~/docs/python/media/code-editing-code-coloring.png)
 
 Pour personnaliser les couleurs utilisées, accédez à **Outils > Options > Environnement > Polices et couleurs** et modifiez les entrées de Python dans la liste **Afficher les éléments**.
 
-![Options Polices et couleurs](media/code-editing-customize-colors.png)
+![Options Polices et couleurs](~/docs/python/media/code-editing-customize-colors.png)
 
 > [!Tip]
 > Pour désactiver la coloration du code, accédez à **Outils > Options > Éditeur de texte > Python > Avancé** et désactivez **Options diverses > Color names based on type** (Colorer les noms en fonction du type).
@@ -128,11 +128,11 @@ Pour personnaliser les couleurs utilisées, accédez à **Outils > Options > Env
 
 Les extraits de code sont des fragments de code qui peuvent être insérés dans vos fichiers en tapant un raccourci et en appuyant sur la touche de tabulation ou à l’aide des commandes **Modifier > IntelliSense > Insérer un extrait de code** **Entourer de**. Par exemple, si vous tapez `class` puis que vous appuyez sur la touche de tabulation, le reste de la classe est généré. Vous pouvez taper le nom et la liste de bases, passer d’un champ en surbrillance à l’autre avec la touche de tabulation, puis appuyer sur Entrée pour commencer à taper le corps du texte.
 
-![Extraits de code](media/code-editing-code-snippets.png)
+![Extraits de code](~/docs/python/media/code-editing-code-snippets.png)
 
 Vous pouvez voir les extraits de code disponibles dans le Gestionnaire des extraits de code (**Outils > Gestionnaire des extraits de code**), en sélectionnant **Python** comme langage :
 
-![Gestionnaire des extraits de code](media/code-editing-code-snippets-manager.png)
+![Gestionnaire des extraits de code](~/docs/python/media/code-editing-code-snippets-manager.png)
 
 Pour créer vos propres extraits de code, consultez [Procédure pas à pas : création d’un extrait de code](https://docs.microsoft.com/en-us/visualstudio/ide/walkthrough-creating-a-code-snippet).
 Les extraits de code peuvent être personnalisés en [créant un extrait de code](https://msdn.microsoft.com/en-us/library/ms165394.aspx) et en l’important via 
@@ -148,7 +148,7 @@ La prise en charge de Python dans Visual Studio fournit plusieurs options pour n
 
 La barre de navigation s’affiche en haut de chaque fenêtre de l’éditeur et inclut une liste de définitions à deux niveaux. La liste déroulante de gauche contient des définitions de fonction et de classe de niveau supérieur du fichier actuel. La liste déroulante de droite affiche une liste de définitions dans l’étendue illustrée à gauche. À mesure de vos déplacements dans l’éditeur, ces listes sont mises à jour pour afficher votre contexte actuel. En outre, vous pouvez sélectionner une entrée à partir de ces listes pour atteindre directement celle-ci.
 
-![Barre de navigation](media/code-editing-navigation-bar.png)
+![Barre de navigation](~/docs/python/media/code-editing-navigation-bar.png)
 
 > [!Tip]
 > Pour masquer la barre de navigation, accédez à **Outils > Options > Éditeur de texte > Python > Général** et désactivez **Paramètres > Barre de navigation**.
@@ -157,7 +157,7 @@ La barre de navigation s’affiche en haut de chaque fenêtre de l’éditeur et
 
 **Atteindre la définition** permet de passer rapidement de l’utilisation d’un identificateur (p. ex. un nom de fonction, une classe ou une variable) au code source dans lequel il est défini. Pour l’appeler, vous devez cliquer avec le bouton droit sur un identificateur et sélectionner **Atteindre la définition** ou placer le signe insertion dans l’identificateur et appuyer sur F12. Cela fonctionne dans l’ensemble de votre code et des bibliothèques externes sous réserve que ce code source soit disponible. Si le code source de la bibliothèque n’est pas disponible, **Atteindre la définition** passe à l’instruction `import` appropriée pour une référence de module ou affiche une erreur.
 
-![Atteindre la définition](media/code-editing-go-to-definition.png)
+![Atteindre la définition](~/docs/python/media/code-editing-go-to-definition.png)
 
 ### <a name="navigate-to"></a>Naviguer vers
 
@@ -165,10 +165,10 @@ La commande **Modifier > Naviguer vers...** (Ctrl-virgule) affiche une zone de r
 
 Double-cliquer sur un nom ou sélectionner des touches de direction et Entrée permet d’accéder à la définition de cet identificateur.
 
-![Naviguer vers](media/code-editing-navigate-to.png)
+![Naviguer vers](~/docs/python/media/code-editing-navigate-to.png)
 
 ### <a name="find-all-references"></a>Rechercher toutes les références
 
 **Rechercher toutes les références** est une option utile pour déterminer où un identificateur donné est à la fois défini et utilisé, y compris les importations et les affectations. Pour l’appeler, vous devez cliquer avec le bouton droit sur un identificateur et sélectionner **Rechercher toutes les références** ou placer le signe insertion dans l’identificateur et appuyer sur Maj+F12. Double-cliquer sur un élément de la liste permet d’accéder à son emplacement.
 
-![Résultats de Rechercher toutes les références](media/code-editing-find-all-references.png)
+![Résultats de Rechercher toutes les références](~/docs/python/media/code-editing-find-all-references.png)

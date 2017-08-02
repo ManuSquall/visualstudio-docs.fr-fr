@@ -26,7 +26,7 @@ caps.handback.revision: 24
 # D&#233;marrer une session de d&#233;bogage dans Visual&#160;Studio (JavaScript) pour des applications du Windows&#160;Store
 [!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
 
-![S'applique à Windows et Windows Phone](../debugger/media/windows_and_phone_content.png "windows\_and\_phone\_content")  
+![S'applique à Windows et Windows Phone](~/docs/debugger/media/windows_and_phone_content.png "windows\_and\_phone\_content")  
   
  Cette rubrique explique comment démarrer une session de débogage pour les applications du Windows Store écrites en JavaScript et HTML5. Vous pouvez démarrer le débogage avec une seule séquence de touches ou configurer la session de débogage pour des scénarios spécifiques, puis choisir de quelle façon démarrer l'application.  
   
@@ -67,7 +67,7 @@ caps.handback.revision: 24
 -   [Attacher le débogueur](#BKMK_Attach_the_debugger)  
   
 ##  <a name="BKMK_The_easy_way_to_start_debugging"></a> La méthode simple pour démarrer le débogage  
- ![S'applique uniquement à Windows](../debugger/media/windows_only_content.png "windows\_only\_content")  
+ ![S'applique uniquement à Windows](~/docs/debugger/media/windows_only_content.png "windows\_only\_content")  
   
 1.  Ouvrez la solution d'application dans Visual Studio.  
   
@@ -75,7 +75,7 @@ caps.handback.revision: 24
   
 3.  Appuyez sur F5.  
   
- ![S'applique uniquement à Windows Phone](../debugger/media/phone_only_content.png "phone\_only\_content")  
+ ![S'applique uniquement à Windows Phone](~/docs/debugger/media/phone_only_content.png "phone\_only\_content")  
   
  Visual Studio génère et démarre l'application avec le débogueur attaché. L'exécution se poursuit jusqu'à ce qu'un point d'arrêt soit atteint, que vous suspendiez manuellement l'exécution, qu'une exception non gérée se produise ou que l'application se termine. Pour plus d'informations, consultez [Démarrage rapide : déboguer du code HTML et CSS](../debugger/quickstart-debug-html-and-css.md).  
   
@@ -97,7 +97,7 @@ caps.handback.revision: 24
 ###  <a name="BKMK_Choose_the_deployment_target"></a> Sélectionner la cible de déploiement  
  Vous pouvez déployer et déboguer une application sur l'ordinateur Visual Studio, dans le simulateur Visual Studio sur l'ordinateur local ou sur un appareil distant. Vous choisissez la cible dans la liste **Débogueur à lancer** de la page de propriétés **Débogage** du projet.  
   
- ![S'applique uniquement à Windows](../debugger/media/windows_only_content.png "windows\_only\_content")  
+ ![S'applique uniquement à Windows](~/docs/debugger/media/windows_only_content.png "windows\_only\_content")  
   
  Pour une application du Windows Store, choisissez l'une des options suivantes dans la liste **Appareil cible** :  
   
@@ -113,12 +113,12 @@ caps.handback.revision: 24
   
 -   Choisissez la flèche Bas dans la zone **Nom de l'ordinateur**, puis sélectionnez **\<Rechercher...\>**. Choisissez ensuite l'ordinateur distant dans la boîte de dialogue **Sélectionner une connexion du débogueur distant**.  
   
-     ![Sélectionner la connexion au Remote Debugger](../debugger/media/vsrun_pro_selectremotedebuggerdlg.png "VSRUN\_PRO\_SelectRemoteDebuggerDlg")  
+     ![Sélectionner la connexion au Remote Debugger](~/docs/debugger/media/vsrun_pro_selectremotedebuggerdlg.png "VSRUN\_PRO\_SelectRemoteDebuggerDlg")  
   
     > [!NOTE]
     >  La boîte de dialogue Sélectionner une connexion du débogueur distant affiche les ordinateurs situés sur le sous\-réseau local et les ordinateurs locaux qui sont directement connectés à l'ordinateur Visual Studio via un câble Ethernet. Pour spécifier un autre ordinateur, entrez le nom dans la zone **Nom de l'ordinateur**.  
   
- ![S'applique uniquement à Windows Phone](../debugger/media/phone_only_content.png "phone\_only\_content")  
+ ![S'applique uniquement à Windows Phone](~/docs/debugger/media/phone_only_content.png "phone\_only\_content")  
   
  Pour une application du Windows Phone Store, sélectionnez **Appareil** ou l'un des émulateurs de la liste **Appareil cible**.  
   
@@ -145,7 +145,7 @@ caps.handback.revision: 24
 -   Choisissez **Oui** pour lancer l'application immédiatement.  
   
 ###  <a name="BKMK__Optional__Disable_network_loopbacks"></a> Désactiver les bouclages de réseau \(facultatif\)  
- ![S'applique uniquement à Windows](../debugger/media/windows_only_content.png "windows\_only\_content")  
+ ![S'applique uniquement à Windows](~/docs/debugger/media/windows_only_content.png "windows\_only\_content")  
   
  Pour des raisons de sécurité, une application du Windows Store installée en mode standard n'est pas autorisée à effectuer des appels réseau vers l'appareil sur lequel elle est installée. Par défaut, le déploiement Visual Studio crée une exemption à cette règle pour l'application déployée. Cette exemption vous permet de tester les procédures de communication sur un seul ordinateur. Avant de soumettre votre application au Windows Store, vous devez la tester sans l'exemption.  
   

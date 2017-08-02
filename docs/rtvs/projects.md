@@ -49,11 +49,11 @@ Les projets sont toujours gérés dans une *solution* Visual Studio, qui peut co
 1. Choisissez **Fichier > Nouveau > Projet** (Ctrl+Maj+N)
 1. Sélectionnez « Projet R » sous **Modèles > R**, donnez au projet un nom et un emplacement, puis sélectionnez **OK** :
 
-    ![Boîte de dialogue Nouveau projet pour R dans Visual Studio (RTVS dans VS2017)](media/getting-started-01-new-project.png)
+    ![Boîte de dialogue Nouveau projet pour R dans Visual Studio (RTVS dans VS2017)](~/docs/rtvs/media/getting-started-01-new-project.png)
 
 Cela crée un projet avec un fichier `script.R` vide ouvert dans l’éditeur. Notez également dans l’**Explorateur de solutions** que deux autres fichiers figurent dans le projet :
 
-![Contenu d’un projet R créé à partir du modèle](media/projects-template-results.png)
+![Contenu d’un projet R créé à partir du modèle](~/docs/rtvs/media/projects-template-results.png)
 
 Le fichier `.Rhistory` enregistre toutes les commandes que vous entrez dans la [Fenêtre interactive R](interactive-repl.md). Vous pouvez ouvrir une fenêtre d’historique dédiée avec la commande **Outils R > Fenêtres > Historique**. Cette fenêtre comporte un bouton et des éléments de menu contextuel pour effacer le contenu de l’historique.
 
@@ -133,7 +133,7 @@ Les solutions Visual Studio constituent un emplacement logique idéal où regrou
 
 Dans l’exemple ci-dessous, la solution contient un projet R avec un modèle créé à l’aide de R et d’Azure Machine Learning, un projet Python/scikit-learn, un projet C++ contenant des modules de travail de calcul intensif, un projet SQL pour la gestion des données et un projet Python/Bottle pour le site web qui publie le résultat :
 
-![Explorateur de solutions Visual Studio affichant plusieurs projets associés dans une solution](media/projects-polyglot.png)
+![Explorateur de solutions Visual Studio affichant plusieurs projets associés dans une solution](~/docs/rtvs/media/projects-polyglot.png)
 
 Le projet affiché en gras est le projet de « démarrage » de la solution. Pour le changer, cliquez sur un autre projet et sélectionnez **Définir comme projet de démarrage**.
 

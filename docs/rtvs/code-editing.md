@@ -57,15 +57,15 @@ Consultez également les rubriques sur [IntelliSense](code-intellisense.md), les
 
 En plus de colorer différentes parties de votre code, comme les chaînes, les commentaires et les mots clés, RTVS met en évidence et active des liens dans les commentaires :
 
-![Couleurs de syntaxe pour le code R](media/editing-syntax-colors.png)
+![Couleurs de syntaxe pour le code R](~/docs/rtvs/media/editing-syntax-colors.png)
 
 Pour personnaliser les polices et certaines couleurs de surbrillance, sélectionnez la commande **Outils > Options**, accédez à **Environnement > Polices et couleurs**, puis modifiez les paramètres pour les éléments liés à R dans la zone **Éléments affichés :** :
 
-![Polices et options de couleur pour le code R](media/editing-syntax-colors-options.png)
+![Polices et options de couleur pour le code R](~/docs/rtvs/media/editing-syntax-colors-options.png)
 
 Visual Studio souligne également les erreurs de syntaxe dans l’éditeur :
 
-![Mise en surbrillance des erreurs de syntaxe dans le code R](media/editing-syntax-error.png)
+![Mise en surbrillance des erreurs de syntaxe dans le code R](~/docs/rtvs/media/editing-syntax-error.png)
 
 Pour changer ce comportement, consultez le paramètre **Avancé > Vérification de la syntaxe** sous [Options de l’éditeur](#editor-options).
 
@@ -73,11 +73,11 @@ Pour changer ce comportement, consultez le paramètre **Avancé > Vérification
 
 Quand vous tapez du code, RTVS propose une saisie semi-automatique, comme décrit dans la page [IntelliSense](code-intellisense.md). Il applique également une mise en forme automatique comme la saisie semi-automatique des parenthèses et des accolades : 
 
-![Animation de la mise en forme inline](media/editing-inline-formatting.gif)
+![Animation de la mise en forme inline](~/docs/rtvs/media/editing-inline-formatting.gif)
 
 Quand vous tapez des appels à des fonctions qui ont plusieurs paramètres, souvent, vous voulez organiser les paramètres pour rendre le code plus facile à lire. RTVS se souvient du retrait que vous avez défini pour les paramètres et applique automatiquement ce retrait aux lignes suivantes :
 
-![Animation du retrait automatique](media/editing-auto-indentation.gif)
+![Animation du retrait automatique](~/docs/rtvs/media/editing-auto-indentation.gif)
 
 Pour changer ce comportement, consultez les [options de l’éditeur](#editor-options) ci-dessous pour le groupe **Onglets**.
 
@@ -85,7 +85,7 @@ Les régions de code réductibles vous permettent de masquer temporairement une 
 
 Pour créer une région de votre choix, entourez le code souhaité avec des commentaires qui se terminent par `---`. Les contrôles +/- à gauche du code vous permettent ensuite de développer et réduire des régions :
 
-![Création d’une zone réductible avec des commentaires](media/editing-collapsible-regions.gif)
+![Création d’une zone réductible avec des commentaires](~/docs/rtvs/media/editing-collapsible-regions.gif)
  
 Par défaut, Visual Studio insère des espaces quand vous appuyez sur la touche Tab. Vous pouvez là encore modifier ce comportement, comme décrit dans [Options, Éditeur de texte, Onglets](../ide/reference/options-text-editor-all-languages.md).
 
@@ -99,7 +99,7 @@ Cette opération ouvre une nouvelle fenêtre d’éditeur contenant le code sour
 
 La fonctionnalité **Aperçu de la définition**, appelée à partir du menu contextuel ou en appuyant sur Alt+F12, insère une zone de défilement en lecture seule qui contient le code source de la fonction située en dessous de l’appel de fonction :
 
-![Animation de l’aperçu de la définition](media/editing-peek-definition.gif)
+![Animation de l’aperçu de la définition](~/docs/rtvs/media/editing-peek-definition.gif)
 
 ## <a name="sending-code-to-the-interactive-window"></a>Envoi de code dans la fenêtre interactive
 
@@ -131,7 +131,7 @@ Les options de mise en forme (y compris la désactivation de la mise en forme) s
 
 RTVS fournit un raccourci pour la génération de commentaires [Roxygen](http://roxygen.org/) à l’aide des noms de paramètre d’une fonction. Il suffit de taper `###` sur une ligne vide au-dessus de la définition de fonction :
 
-![Animation de l’insertion d’un commentaire Roxygen](media/editing-roxygen-comments.gif)
+![Animation de l’insertion d’un commentaire Roxygen](~/docs/rtvs/media/editing-roxygen-comments.gif)
 
 ## <a name="editor-options"></a>Options de l’éditeur
 

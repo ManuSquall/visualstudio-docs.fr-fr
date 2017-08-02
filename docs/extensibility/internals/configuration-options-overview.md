@@ -65,7 +65,7 @@ Dans les projets [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] pe
   
  Le diagramme suivant montre comment les interfaces qui prennent en charge les configurations de projet et solution sont implémentées :  
   
- ![Graphique des Interfaces de configuration](../../extensibility/internals/media/vsconfiginterfaces.gif "vsConfigInterfaces")  
+ ![Graphique des Interfaces de configuration](~/docs/extensibility/internals/media/vsconfiginterfaces.gif "vsConfigInterfaces")  
 Interfaces de configuration  
   
  Voici quelques remarques concernant le diagramme précédent :  

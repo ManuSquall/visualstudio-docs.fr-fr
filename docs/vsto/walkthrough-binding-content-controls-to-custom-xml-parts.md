@@ -89,15 +89,15 @@ caps.handback.revision: 50
     > [!NOTE]  
     >  Si l'onglet **Développeur** n'est pas visible, vous devez d'abord l'afficher.  Pour plus d'informations, consultez [Comment : afficher l'onglet Développeur sur le ruban](../vsto/how-to-show-the-developer-tab-on-the-ribbon.md).  
   
-6.  Dans le groupe **Contrôles**, cliquez sur le bouton **Texte** ![PlainTextContentControl](../vsto/media/plaintextcontrol.png "PlainTextContentControl") pour ajouter un <xref:Microsoft.Office.Tools.Word.PlainTextContentControl> à la première cellule.  
+6.  Dans le groupe **Contrôles**, cliquez sur le bouton **Texte** ![PlainTextContentControl](~/docs/vsto/media/plaintextcontrol.gif "PlainTextContentControl") pour ajouter un <xref:Microsoft.Office.Tools.Word.PlainTextContentControl> à la première cellule.  
   
 7.  Dans la deuxième colonne de la table, sélectionnez la deuxième ligne \(en regard de **Date d'embauche**\).  
   
-8.  Dans le groupe **Contrôles**, cliquez sur le bouton **Sélecteur de dates** ![DatePickerContentControl](../vsto/media/datepicker.png "DatePickerContentControl") pour ajouter un <xref:Microsoft.Office.Tools.Word.DatePickerContentControl> à la deuxième cellule.  
+8.  Dans le groupe **Contrôles**, cliquez sur le bouton **Sélecteur de dates** ![DatePickerContentControl](~/docs/vsto/media/datepicker.gif "DatePickerContentControl") pour ajouter un <xref:Microsoft.Office.Tools.Word.DatePickerContentControl> à la deuxième cellule.  
   
 9. Dans la deuxième colonne de la table, sélectionnez la troisième ligne \(en regard de **Titre**\).  
   
-10. Dans le groupe **Contrôles**, cliquez sur le bouton **Liste déroulante** ![DropDownListContentControl](../vsto/media/dropdownlist.png "DropDownListContentControl") pour ajouter un <xref:Microsoft.Office.Tools.Word.DropDownListContentControl> à la dernière cellule.  
+10. Dans le groupe **Contrôles**, cliquez sur le bouton **Liste déroulante** ![DropDownListContentControl](~/docs/vsto/media/dropdownlist.gif "DropDownListContentControl") pour ajouter un <xref:Microsoft.Office.Tools.Word.DropDownListContentControl> à la dernière cellule.  
   
  Il s'agit de la totalité de l'interface utilisateur pour ce projet.  Si vous exécutez le projet maintenant, vous pouvez entrer un texte dans la première ligne et sélectionner une date dans la deuxième ligne.  L'étape suivante consiste à lier les données que vous souhaitez afficher au document d'un fichier XML.  
   

@@ -40,11 +40,11 @@ Vous pouvez vous connecter à une base de données Access \(un fichier .mdf ou u
   
 2.  Dans le menu **Afficher**, choisissez **Autres fenêtres** \> **Sources de données**.  
   
-     ![Afficher d'autres sources de données Windows](../data-tools/media/viewdatasources.png "ViewDataSources")  
+     ![Afficher d'autres sources de données Windows](~/docs/data-tools/media/viewdatasources.png "ViewDataSources")  
   
 3.  Dans la fenêtre **Sources de données**, cliquez sur **Ajouter une nouvelle source de données**.  
   
-     ![Ajouter une nouvelle source de données](../data-tools/media/dataaddnewdatasource.png "dataAddNewDataSource")  
+     ![Ajouter une nouvelle source de données](~/docs/data-tools/media/dataaddnewdatasource.png "dataAddNewDataSource")  
   
 4.  Sélectionnez **Base de données** dans la page **Choisir un type de source de données** puis choisissez **Suivant**.  
   
@@ -87,11 +87,11 @@ Vous pouvez vous connecter à une base de données Access \(un fichier .mdf ou u
   
 2.  Dans le menu **Afficher**, choisissez **Autres fenêtres** \> **Sources de données**.  
   
-     ![Afficher d'autres sources de données Windows](../data-tools/media/viewdatasources.png "ViewDataSources")  
+     ![Afficher d'autres sources de données Windows](~/docs/data-tools/media/viewdatasources.png "ViewDataSources")  
   
 3.  Dans la fenêtre **Sources de données**, cliquez sur **Ajouter une nouvelle source de données**.  
   
-     ![Ajouter une nouvelle source de données](../data-tools/media/dataaddnewdatasource.png "dataAddNewDataSource")  
+     ![Ajouter une nouvelle source de données](~/docs/data-tools/media/dataaddnewdatasource.png "dataAddNewDataSource")  
   
 4.  Sélectionnez **Base de données** dans la page **Choisir un type de source de données** puis choisissez **Suivant**.  
   

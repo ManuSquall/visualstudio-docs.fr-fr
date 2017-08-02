@@ -79,7 +79,7 @@ Cette boîte de dialogue vous permet de modifier le comportement par défaut de 
  Afficher des glyphes visuels pour le retour automatique à la ligne  
  Lorsque cette option est sélectionnée, un indicateur fléché de retour s’affiche à l’endroit où une ligne longue est automatiquement renvoyée à une deuxième ligne.  
   
- ![Capture d’écran LineBreakSymbol](../../ide/reference/media/linebreak.gif "linebreak")  
+ ![Capture d’écran LineBreakSymbol](~/docs/ide/reference/media/linebreak.gif "linebreak")  
   
  Désactivez cette option si vous préférez ne pas afficher ces indicateurs.  
   

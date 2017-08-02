@@ -45,7 +45,7 @@ Voici un extrait de MSDN expliquant quel « ngen » est :
 
 Dans l’ordre à « ngen » un assembly, l’extension VSIX doit être installé « par instance par ordinateur ». Cela peut être activée en cochant la case « tous les utilisateurs » dans le concepteur extension.vsixmanifest :
 
-![Vérifiez tous les utilisateurs](media/check-all-users.png)
+![Vérifiez tous les utilisateurs](~/docs/extensibility/media/check-all-users.png)
 
 ## <a name="how-to-enable-ngen"></a>L’activation de Ngen
 
@@ -60,7 +60,7 @@ Il existe 4 propriétés qui peuvent être définies :
 
 Voici un aperçu de la **propriétés** fenêtre en action :
 
-![Ngen dans les propriétés](media/ngen-in-properties.png)
+![Ngen dans les propriétés](~/docs/extensibility/media/ngen-in-properties.png)
 
 Cette opération ajoute des métadonnées à la référence de projet à l’intérieur de l’extension VSIX fichier .csproj :
 

@@ -46,7 +46,7 @@ Vous pouvez tester votre contrôle plus facilement si vous implémentez la prise
   
 4.  [Prendre en charge les actions avec intention en implémentant un filtre d’action](../test/enable-coded-ui-testing-of-your-controls.md#intentawareactions)  
   
- ![CUIT&#95;Full](../test/media/cuit_full.png "CUIT_Full")  
+ ![CUIT&#95;Full](~/docs/test/media/cuit_full.png "CUIT_Full")  
   
 ##  <a name="recordandplayback"></a>Prendre en charge l’enregistrement et la lecture, ainsi que la validation de propriété, en implémentant l’accessibilité  
  Le générateur de test codé de l'interface utilisateur capture des informations sur les contrôles qu'il rencontre lors d'un enregistrement et génère ensuite le code pour relire la session. Si votre contrôle ne prend pas en charge l'accessibilité, le générateur de test codé de l'interface utilisateur capture les actions (telles que les clics de souris) à l'aide des coordonnées d'écran. Lorsque le test est lu, le code généré émet les clics de souris dans ces mêmes coordonnées d'écran. Si votre contrôle s'affiche à un autre emplacement de l'écran lors de la lecture du test, le code généré échoue à effectuer cette action sur votre contrôle. Il peut en résulter un échec si le test est lu sur d'autres configurations d'écran, dans des environnements différents ou après que des modifications ont été apportées à la disposition de l'interface utilisateur.  
@@ -60,7 +60,7 @@ Vous pouvez tester votre contrôle plus facilement si vous implémentez la prise
 ### <a name="to-support-record-and-playback-property-validation-and-navigation-for-a-windows-forms-control"></a>Pour prendre en charge l’enregistrement et la lecture, la validation de propriété et la navigation d’un contrôle Windows Forms  
  Implémentez l'accessibilité de votre contrôle, comme indiqué dans la procédure suivante et expliqué en détail dans <xref:System.Windows.Forms.AccessibleObject>.  
   
- ![CUIT&#95;Accessible](../test/media/cuit_accessible.png "CUIT_Accessible")  
+ ![CUIT&#95;Accessible](~/docs/test/media/cuit_accessible.png "CUIT_Accessible")  
   
 1.  Implémentez une classe qui dérive de <xref:System.Windows.Forms.Control.ControlAccessibleObject> et remplacez la propriété <xref:System.Windows.Forms.Control.AccessibilityObject%2A> pour retourner un objet de votre classe.  
   
@@ -102,7 +102,7 @@ Vous pouvez tester votre contrôle plus facilement si vous implémentez la prise
  ![CUIT&#95;CustomProps](../test/media/cuit_customprops.png "CUIT_CustomProps")  
   
 ### <a name="to-support-custom-property-validation"></a>Pour prendre en charge la validation de propriété personnalisée  
- ![CUIT&#95;Props](../test/media/cuit_props.png "CUIT_Props")  
+ ![CUIT&#95;Props](~/docs/test/media/cuit_props.png "CUIT_Props")  
   
 1.  Substituez la propriété <xref:System.Windows.Forms.AccessibleObject.Description%2A> de l’objet accessible de la légende de la courbe pour passer des valeurs de propriété fournies dans la chaîne de description, séparées de la description principale (et les unes des autres si vous implémentez plusieurs propriétés) par des points-virgules (;).  
   
@@ -177,7 +177,7 @@ Vous pouvez tester votre contrôle plus facilement si vous implémentez la prise
   
 <CodeContentPlaceHolder>11</CodeContentPlaceHolder>  
 ### <a name="to-add-a-specialized-class-to-access-your-control"></a>Pour ajouter une classe spécialisée pour accéder à votre contrôle  
- ![CUIT&#95;CodeGen](../test/media/cuit_codegen.png "CUIT_CodeGen")  
+ ![CUIT&#95;CodeGen](~/docs/test/media/cuit_codegen.png "CUIT_CodeGen")  
   
 1.  Implémentez une classe dérivée de <xref:Microsoft.VisualStudio.TestTools.UITesting.WinControls.WinControl> et ajoutez le type de contrôle à la collection de propriétés de recherche du constructeur.  
   
@@ -195,7 +195,7 @@ Vous pouvez tester votre contrôle plus facilement si vous implémentez la prise
  Lorsque Visual Studio enregistre un test, il capture chaque événement de souris et de clavier. Toutefois, dans certains cas, l'objectif de l'action peut se perdre dans la série d'événements de souris et de clavier. Par exemple, si votre contrôle prend en charge la saisie semi-automatique, le même jeu d'événements de souris et de clavier peut entraîner une valeur différente lorsque le test est lu dans un environnement différent. Vous pouvez ajouter un plug-in de filtre d'action qui remplace la série d'événements de clavier et de souris par une seule action. De cette façon, vous pouvez remplacer la série d'événements de clavier et de souris qui résulte de la sélection d'une valeur par une action unique qui définit la valeur. Ce remplacement permet de protéger les tests codés de l'interface utilisateur contre les différences de saisie semi-automatique d'un environnement à un autre.  
   
 ### <a name="to-support-intent-aware-actions"></a>Pour prendre en charge les actions avec intention  
- ![CUIT&#95;Actions](../test/media/cuit_actions.png "CUIT_Actions")  
+ ![CUIT&#95;Actions](~/docs/test/media/cuit_actions.png "CUIT_Actions")  
   
 1.  Implémentez une classe de filtre d’action dérivée de <xref:Microsoft.VisualStudio.TestTools.UITest.Common.UITestActionFilter>, en substituant les propriétés <xref:Microsoft.VisualStudio.TestTools.UITest.Common.UITestActionFilter.ApplyTimeout%2A>, <xref:Microsoft.VisualStudio.TestTools.UITest.Common.UITestActionFilter.Category%2A>, <xref:Microsoft.VisualStudio.TestTools.UITest.Common.UITestActionFilter.Enabled%2A>, <xref:Microsoft.VisualStudio.TestTools.UITest.Common.UITestActionFilter.FilterType%2A>, <xref:Microsoft.VisualStudio.TestTools.UITest.Common.UITestActionFilter.Group%2A> et <xref:Microsoft.VisualStudio.TestTools.UITest.Common.UITestActionFilter.Name%2A>.  
   

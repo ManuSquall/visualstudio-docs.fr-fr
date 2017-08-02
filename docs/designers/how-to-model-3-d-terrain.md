@@ -37,7 +37,7 @@ Ce document montre comment utiliser l'Editeur de modèles pour créer un modèle
   
  Lorsque vous avez terminé, le modèle doit se présenter de la manière suivante :  
   
- ![Scène 3&#45;D illustrant un modèle de terrain](../designers/media/digit-terrain-model.png "Digit\-Terrain\-Model")  
+ ![Scène 3&#45;D illustrant un modèle de terrain](~/docs/designers/media/digit-terrain-model.png "Digit\-Terrain\-Model")  
   
  Avant de commencer, assurez\-vous que la fenêtre **Propriétés** et que la **Boîte à outils** sont affichées.  
   
@@ -65,7 +65,7 @@ Ce document montre comment utiliser l'Editeur de modèles pour créer un modèle
   
  Le modèle de terrain est maintenant terminé.  Voici encore le modèle final auquel on a appliqué le shading Phong.  
   
- ![Scène 3&#45;D illustrant un modèle de terrain](../designers/media/digit-terrain-model.png "Digit\-Terrain\-Model")  
+ ![Scène 3&#45;D illustrant un modèle de terrain](~/docs/designers/media/digit-terrain-model.png "Digit\-Terrain\-Model")  
   
  Vous pouvez utiliser ce modèle de terrain pour illustrer l'effet du nuanceur de dégradé qui est décrit dans [Comment : créer un nuanceur de géométrie dégradé](../designers/how-to-create-a-geometry-based-gradient-shader.md).  
   

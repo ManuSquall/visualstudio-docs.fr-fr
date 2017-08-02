@@ -85,7 +85,7 @@ Ce guide de démarrage rapide montre comment naviguer dans le débogueur Visual 
   
 1.  **Définir un point d'arrêt.** Définissez un point d'arrêt au niveau de l'instruction `callTrack = "module function";` qui se produit juste après l'appel à `app.start()`. Sélectionnez la ligne dans la marge grisée de l’éditeur de code source \(clavier : positionnez le curseur sur la ligne et appuyez sur la touche **F9**\).  
   
-     ![Définir un point d’arrêt au niveau de l’exemple1](../debugger/media/dbg_jsnav_example1_breakpoint.png "DBG\_JSNAV\_example1\_breakpoint")  
+     ![Définir un point d’arrêt au niveau de l’exemple1](~/docs/debugger/media/dbg_jsnav_example1_breakpoint.png "DBG\_JSNAV\_example1\_breakpoint")  
   
      L'icône du point d'arrêt apparaît dans la marge.  
   
@@ -93,13 +93,13 @@ Ce guide de démarrage rapide montre comment naviguer dans le débogueur Visual 
   
      L'exécution de l'application démarre et est suspendue immédiatement avant l'instruction au niveau de laquelle vous avez défini le point d'arrêt. L'icône de la ligne en cours dans la marge identifie l'emplacement et l'instruction en cours est mise en surbrillance.  
   
-     ![Exécuter jusqu’au point d’arrêt](../debugger/media/dbg_jsnav_example1_run_to_breakpoint.png "DBG\_JSNAV\_example1\_run\_to\_breakpoint")  
+     ![Exécuter jusqu’au point d’arrêt](~/docs/debugger/media/dbg_jsnav_example1_run_to_breakpoint.png "DBG\_JSNAV\_example1\_run\_to\_breakpoint")  
   
      Vous êtes maintenant aux commandes de l'exécution de l'application et pouvez examiner l'état du programme lorsque vous exécutez pas\-à\-pas les instructions de programmation.  
   
 3.  **Effectuer un pas à pas détaillé dans la fonction.** Dans le menu **Déboguer**, choisissez **Pas à pas détaillé** \(clavier : **F11**\).  
   
-     ![Pas à pas détaillé d’une ligne de code](../debugger/media/dbg_jsnav_example1_step_into.png "DBG\_JSNAV\_example1\_step\_into")  
+     ![Pas à pas détaillé d’une ligne de code](~/docs/debugger/media/dbg_jsnav_example1_step_into.png "DBG\_JSNAV\_example1\_step\_into")  
   
      Notez que le débogueur passe à la ligne suivante, qui est un appel à la fonction `example1`. Choisissez à nouveau **Pas à pas détaillé**. Le débogueur accède à la première ligne de code de la fonction `example1`. La ligne en surbrillance n’a pas été exécutée, mais la fonction a été chargée sur la pile des appels et la mémoire pour les variables locales a été allouée.  
   
@@ -113,7 +113,7 @@ Ce guide de démarrage rapide montre comment naviguer dans le débogueur Visual 
   
 5.  **Afficher les valeurs des variables dans des bulles d’informations.** Continuez à parcourir les instructions de `example1` jusqu'à atteindre le point de sortie. Le débogueur met en surbrillance l'accolade fermante de la fonction. Quand vous placez la souris sur un nom de variable, le nom et la valeur de la variable sont affichés dans une bulle d’informations.  
   
-     ![Afficher les valeur de variable dans la bulle d’informations](../debugger/media/dbg_jsnav_data_tip.png "DBG\_JSNAV\_data\_tip")  
+     ![Afficher les valeur de variable dans la bulle d’informations](~/docs/debugger/media/dbg_jsnav_data_tip.png "DBG\_JSNAV\_data\_tip")  
   
 6.  **Ajouter un espion pour la variable callTrack.** La variable `callTrack` est utilisée tout au long de ce guide de démarrage rapide pour afficher les fonctions appelées dans les exemples. Pour faciliter l'affichage de la valeur de la variable, ajoutez\-la à une fenêtre Espion. Sélectionnez le nom de la variable dans l’éditeur, puis choisissez **Ajouter un espion** dans le menu contextuel.  
   
@@ -132,14 +132,14 @@ Ce guide de démarrage rapide montre comment naviguer dans le débogueur Visual 
   
  Le survol et la sortie de code d'une fonction permettent d'exécuter la fonction.  
   
- ![Pas à pas détaillé, principal et sortant des méthodes](../debugger/media/dbg_basics_stepintooverout.png "DBG\_Basics\_StepIntoOverOut")  
+ ![Pas à pas détaillé, principal et sortant des méthodes](~/docs/debugger/media/dbg_basics_stepintooverout.png "DBG\_Basics\_StepIntoOverOut")  
   
 ###  <a name="BKMK_Example_2"></a> Exemple 2  
  Dans cet exemple, vous effectuez un pas à pas détaillé, principal et sortant dans des fonctions.  
   
 1.  **Appeler la fonction example2 dans la fonction module.** Éditez la fonction `module` et remplacez la ligne qui suit `var callTrack = "module function"` par `example2();`.  
   
-     ![Appeler la fonction de l’exemple2](../debugger/media/dbg_jsnav_example2.png "DBG\_JSNAV\_example2")  
+     ![Appeler la fonction de l’exemple2](~/docs/debugger/media/dbg_jsnav_example2.png "DBG\_JSNAV\_example2")  
   
 2.  **Lancer l'exécution jusqu'au point d'arrêt.** Démarrez la session de débogage en choisissant **Démarrer le débogage** dans le menu **Déboguer** \(clavier : F5\). Le débogueur interrompt l'exécution au point d'arrêt.  
   
@@ -147,7 +147,7 @@ Ce guide de démarrage rapide montre comment naviguer dans le débogueur Visual 
   
 4.  **Exécuter un pas à pas détaillé de example2 et example2\_a.** Appuyez sur la touche **F11** pour effectuer un pas à pas détaillé dans la fonction `example2`. Continuez à parcourir les instructions `example2` jusqu'à atteindre la ligne `var x = example2_a();`. Là encore, effectuez un pas à pas détaillé sur cette ligne pour accéder au point d'entrée de `example2_a`. Continuez le pas à pas détaillé de chaque instruction de `example2_a` jusqu’à revenir à `example2`.  
   
-     ![Pas à pas principal d’une fonction](../debugger/media/dbg_jsnav_example2_a.png "DBG\_JSNAV\_example2\_a")  
+     ![Pas à pas principal d’une fonction](~/docs/debugger/media/dbg_jsnav_example2_a.png "DBG\_JSNAV\_example2\_a")  
   
 5.  **Survol d'une fonction.** Notez que la ligne suivante dans `example2`, `var y = example2_a();`, est essentiellement identique à la ligne précédente. Vous pouvez effectuer sans risque le survol de cette ligne. Appuyez sur la touche **F10** pour passer de la reprise de `example2` à ce deuxième appel à `example2_a`. Notez que la chaîne `callTrack` indique que la fonction `example2_a` a été exécutée deux fois.  
   
@@ -167,7 +167,7 @@ Ce guide de démarrage rapide montre comment naviguer dans le débogueur Visual 
   
 1.  **Appeler la fonction example3 dans la fonction module.** Éditez la fonction `module` et remplacez la ligne qui suit `var callTrack = "module function";` par la ligne `example3();`.  
   
-     ![Exemple3 d’appel](../debugger/media/dbg_jsnav_example3.png "DBG\_JSNAV\_example3")  
+     ![Exemple3 d’appel](~/docs/debugger/media/dbg_jsnav_example3.png "DBG\_JSNAV\_example3")  
   
 2.  **Lancer l'exécution jusqu'au point d'arrêt.** Démarrez la session de débogage en choisissant **Démarrer le débogage** dans le menu **Déboguer** \(clavier : **F5**\). Le débogueur suspend l’exécution au point d’arrêt dans la fonction `module`.  
   
@@ -177,7 +177,7 @@ Ce guide de démarrage rapide montre comment naviguer dans le débogueur Visual 
   
      Cochez la case **Condition**, puis tapez `i == 500;` dans la zone de texte. Choisissez l'option **Est VRAI**, puis **OK**. Le point d'arrêt permet de vérifier la valeur à la 500 ème itération de la boucle `for`. Vous pouvez identifier une icône de point d'arrêt conditionnel par la croix blanche associée.  
   
-     ![Icône de point d’arrêt conditionnel](../debugger/media/dbg_jsnav_breakpoint_condition_icon.png "DBG\_JSNAV\_Breakpoint\_Condition\_icon")  
+     ![Icône de point d’arrêt conditionnel](~/docs/debugger/media/dbg_jsnav_breakpoint_condition_icon.png "DBG\_JSNAV\_Breakpoint\_Condition\_icon")  
   
 5.  **Lancer l'exécution jusqu'au point d'arrêt.** Dans le menu **Déboguer**, choisissez **Continuer** \(clavier : **F5**\). Interrompez l'exécution au niveau du `i` pour confirmer que la valeur actuelle de `i` est 500. Notez également que la variable `s` est représentée comme une seule ligne et qu’elle est beaucoup plus longue que la fenêtre de bulle d’informations.  
   
@@ -185,7 +185,7 @@ Ce guide de démarrage rapide montre comment naviguer dans le débogueur Visual 
   
      La fenêtre du visualiseur de texte apparaît et la valeur de la chaîne est présentée comme chaîne multiligne.  
   
-     ![Déboguer le visualiseur de texte](../debugger/media/dbg_jsnav_text_visualizer.png "DBG\_JSNAV\_Text\_Visualizer")  
+     ![Déboguer le visualiseur de texte](~/docs/debugger/media/dbg_jsnav_text_visualizer.png "DBG\_JSNAV\_Text\_Visualizer")  
   
 7.  **Lancer l'exécution jusqu'au curseur.** Sélectionnez la ligne `callTrack += "->example3";`, puis choisissez **Exécuter jusqu'au curseur** dans le menu contextuel \(clavier : **Ctrl\+F10**\). Le débogueur exécute les itérations de boucle, puis suspend l'exécution au niveau de la ligne.  
   
@@ -211,7 +211,7 @@ Ce guide de démarrage rapide montre comment naviguer dans le débogueur Visual 
   
 1.  **Ajouter un objet tableau à la fonction module.** Éditez la fonction `module` et remplacez la ligne qui suit `var callTrack = "module function"` par `var myArray = new Array(1, 2, 3);`.  
   
-     ![définition de myArray](../debugger/media/dbg_jsnav_myarray.png "DBG\_JSNAV\_myArray")  
+     ![définition de myArray](~/docs/debugger/media/dbg_jsnav_myarray.png "DBG\_JSNAV\_myArray")  
   
 2.  **Lancer l'exécution jusqu'au point d'arrêt.** Démarrez la session de débogage en choisissant **Démarrer le débogage** dans le menu **Déboguer** \(clavier : **F5**\). Le débogueur interrompt l'exécution au point d'arrêt. Effectuez un pas à pas détaillé jusqu’à la ligne.  
   
@@ -248,7 +248,7 @@ Ce guide de démarrage rapide montre comment naviguer dans le débogueur Visual 
   
 1.  **Appeler la fonction example4 à partir de la fonction module.** Éditez la fonction `module` et remplacez la ligne qui suit `var callTrack = "module function"` par `example4()` :  
   
-     ![Exemple4 d’appel](../debugger/media/dbg_jsnav_example4.png "DBG\_JSNAV\_example4")  
+     ![Exemple4 d’appel](~/docs/debugger/media/dbg_jsnav_example4.png "DBG\_JSNAV\_example4")  
   
 2.  **Lancer l'exécution jusqu'au point d'arrêt.** Démarrez la session de débogage en choisissant **Démarrer le débogage** dans le menu **Déboguer** \(clavier : **F5**\). Le débogueur interrompt l'exécution au point d'arrêt.  
   
@@ -258,7 +258,7 @@ Ce guide de démarrage rapide montre comment naviguer dans le débogueur Visual 
   
 5.  **Effectuer un pas à pas détaillé dans example4 et examiner ses variables locales et de portée** Effectuez un pas à pas détaillé \(clavier : **F11**\) dans la fonction `example4`. Étant donné que `example4` est définie dans la fonction `module`, la fonction `module` devient la portée parente.`example4` peut appeler n’importe quelle fonction de la fonction `module` et accéder à ses variables. Développez le nœud **\[Portée\]** dans la fenêtre Variables locales ; notez qu’il contient les mêmes variables que la fonction `module`.  
   
-     ![Portées de la méthode de l'exemple4](../debugger/media/dbg_jsnav_locals_example4_scope.png "DBG\_JSNAV\_Locals\_example4\_scope")  
+     ![Portées de la méthode de l'exemple4](~/docs/debugger/media/dbg_jsnav_locals_example4_scope.png "DBG\_JSNAV\_Locals\_example4\_scope")  
   
 6.  **Effectuer un pas à pas détaillé dans example4\_a et examiner ses variables locales et de portée** Continuez le pas à pas détaillé dans `example4` et dans l’appel à `example4_a`. Notez que les variables locales sont maintenant tirées de `example4_a` et que le nœud **\[Portée\]** continue à contenir les variables de la fonction `module`. Même si les variables de `example4` sont actives, elles ne sont pas accessibles par `example4_a` et ne font plus partie de la chaîne de portée.  
   
@@ -284,7 +284,7 @@ Ce guide de démarrage rapide montre comment naviguer dans le débogueur Visual 
   
 1.  **Appeler la fonction example5 dans la fonction module.** Éditez la fonction `module` et remplacez la ligne qui suit `var callTrack = "module function";` par la ligne `example5();`.  
   
-     ![Exemple5 d’appel](../debugger/media/dbg_jsnav_example5.png "DBG\_JSNAV\_example5")  
+     ![Exemple5 d’appel](~/docs/debugger/media/dbg_jsnav_example5.png "DBG\_JSNAV\_example5")  
   
 2.  **Lancer l'exécution jusqu'au point d'arrêt.** Démarrez la session de débogage en choisissant **Démarrer le débogage** dans le menu **Déboguer** \(clavier : **F5**\). Le débogueur suspend l’exécution au point d’arrêt dans la fonction module.  
   
@@ -296,7 +296,7 @@ Ce guide de démarrage rapide montre comment naviguer dans le débogueur Visual 
   
 4.  **Effectuer un pas à pas détaillé dans les fonctions pour atteindre la fonction example5\_d.** Choisissez **Pas à pas détaillé** dans le menu **Déboguer** \(clavier : **F11**\) pour exécuter les appels dans le chemin d'appel jusqu'à atteindre le point d'entrée de la fonction example5\_d. Notez que chaque fois qu'une fonction appelle une fonction, le numéro de ligne de la fonction appelante est enregistré et la fonction appelée est placée en haut de la pile. Le numéro de ligne de la fonction appelante est le point auquel elle a interrompu l'exécution. Une flèche jaune pointe vers la fonction actuellement en cours d’exécution.  
   
-     ![Fenêtre Pile des appels](../debugger/media/dbg_jsnav_callstack_windows.png "DBG\_JSNAV\_CallStack\_windows")  
+     ![Fenêtre Pile des appels](~/docs/debugger/media/dbg_jsnav_callstack_windows.png "DBG\_JSNAV\_CallStack\_windows")  
   
 5.  **Utiliser la fenêtre Pile des appels pour accéder au code de example5\_a et définir un point d’arrêt.** Dans la fenêtre Pile des appels, sélectionnez l'élément de liste `example5_a`, puis choisissez **Atteindre la source** dans le menu contextuel. L'éditeur de code définit son curseur sur la ligne de retour de la fonction. Définissez un point d'arrêt sur cette ligne. Notez que la ligne d'exécution active n'est pas modifiée. Seul le curseur de l’éditeur a été déplacé.  
   

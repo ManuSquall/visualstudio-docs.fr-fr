@@ -92,7 +92,7 @@ Vous pouvez déboguer une application Visual Studio qui a été déployée sur u
   
 6.  Une fois la configuration terminée, la fenêtre du débogueur distant s’affiche.  
   
-     ![RemoteDebuggerWindow](../debugger/media/remotedebuggerwindow.png "RemoteDebuggerWindow")  
+     ![RemoteDebuggerWindow](~/docs/debugger/media/remotedebuggerwindow.png "RemoteDebuggerWindow")  
   
  Vous pouvez arrêter le débogueur distant en cliquant sur **Fichier \/ Quitter** dans la fenêtre. Vous pouvez le redémarrer à partir du menu **Démarrer** ou de la ligne de commande :  
   
@@ -170,7 +170,7 @@ Vous pouvez déboguer une application Visual Studio qui a été déployée sur u
   
 7.  Pour la configuration **Debug**, cochez la case **Déployer**.  
   
-     ![RemoteDebugCplusDeploy](../debugger/media/remotedebugcplusdeploy.png "RemoteDebugCplusDeploy")  
+     ![RemoteDebugCplusDeploy](~/docs/debugger/media/remotedebugcplusdeploy.png "RemoteDebugCplusDeploy")  
   
 8.  Démarrez le débogage \(**Déboguer \/ Démarrer le débogage** ou appuyez sur **F5**.  
   

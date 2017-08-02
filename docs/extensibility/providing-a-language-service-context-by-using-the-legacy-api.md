@@ -59,7 +59,7 @@ Il existe deux options pour un service de langage fournir le contexte de l’uti
   
  Le diagramme suivant illustre la façon dont le contexte est fourni pour un service de langage qui implémente `IVsLanguageContextProvider`.  
   
- ![Graphique de LangServiceImplementation2](../extensibility/media/vslanguageservice2.gif "vsLanguageService2")  
+ ![Graphique de LangServiceImplementation2](~/docs/extensibility/media/vslanguageservice2.gif "vsLanguageService2")  
 Contexte d’un service de langage  
   
  Comme vous pouvez le voir dans le diagramme, le [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] éditeur de texte de base a un sac de contextes associé. Ce sac de contextes pointe vers trois conteneurs sous-contexte distincts : service de langage, l’éditeur par défaut et marqueur de texte. Langage service et texte marqueur sous-contexte sacs contiennent des attributs et des mots clés pour le service de langage si la <xref:Microsoft.VisualStudio.TextManager.Interop.IVsLanguageContextProvider>est implémentée et des marqueurs de texte si la <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextMarkerContextProvider>est implémentée.</xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextMarkerContextProvider> </xref:Microsoft.VisualStudio.TextManager.Interop.IVsLanguageContextProvider> Si vous n’implémentez pas une de ces interfaces, l’éditeur fournit de contexte pour le mot clé à l’emplacement du curseur dans le sac de son éditeur par défaut.  

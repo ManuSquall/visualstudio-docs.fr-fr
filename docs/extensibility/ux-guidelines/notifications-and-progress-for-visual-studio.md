@@ -75,7 +75,7 @@ ms.lasthandoff: 02/22/2017
 ####  <a name="a-namebkmkmodalerrormessagedialogsa-modal-error-message-dialogs"></a><a name="BKMK_ModalErrorMessageDialogs"></a>Boîtes de dialogue de message erreur modal  
  Boîte de message d’erreur modal est utilisée pour afficher un message d’erreur qui requiert une confirmation ou action de l’utilisateur.  
   
- ![Message d’erreur modal](../../extensibility/ux-guidelines/media/0901-01_modalerrormessage.png "01_ModalErrorMessage-0901")  
+ ![Message d’erreur modal](~/docs/extensibility/ux-guidelines/media/0901-01_modalerrormessage.png "01_ModalErrorMessage-0901")  
   
  **Une boîte de dialogue modale erreur message avertissant l’utilisateur d’une chaîne de connexion non valide à une base de données**  
   
@@ -88,14 +88,14 @@ ms.lasthandoff: 02/22/2017
   
  La barre d’état est également colorée pour ajouter un intérêt visuel et valeur fonctionnelle en communiquant différents changements d’état IDE tel que lorsque l’IDE est en mode débogage.  
   
- ![Les modifications de couleur de la barre d’état IDE](../../extensibility/ux-guidelines/media/0901-02_idestatusbar.png "02_IDEStatusBar-0901")  
+ ![Les modifications de couleur de la barre d’état IDE](~/docs/extensibility/ux-guidelines/media/0901-02_idestatusbar.png "02_IDEStatusBar-0901")  
   
  **Couleurs de barre d’état IDE**  
   
 ####  <a name="a-namebkmkembeddedinfobara-embedded-infobar"></a><a name="BKMK_EmbeddedInfobar"></a>Barre d’informations incorporée  
  Une barre d’informations peut servir à informer l’utilisateur d’un état ou une condition en haut d’une fenêtre de document ou d’une fenêtre outil. Il peut également offrir des commandes afin que l’utilisateur peut avoir un moyen de tirer facilement action. La barre d’informations est un contrôle d’interface standard. Évitez de créer votre propre, qui agissent et semblent incohérent avec d’autres utilisateurs dans l’IDE. Consultez la page [barres](../../extensibility/ux-guidelines/notifications-and-progress-for-visual-studio.md#BKMK_Infobars) pour des détails d’implémentation et le Guide d’utilisation.  
   
- ![Embedded barre d’informations](../../extensibility/ux-guidelines/media/0901-03_embeddedinfobar.png "03_EmbeddedInfobar-0901")  
+ ![Embedded barre d’informations](~/docs/extensibility/ux-guidelines/media/0901-03_embeddedinfobar.png "03_EmbeddedInfobar-0901")  
   
  **Une barre d’informations incorporées dans une fenêtre de document, avertissant l’utilisateur que l’IDE est en mode débogage d’historique et l’éditeur ne répondra pas de la même façon que le mode débogage standard.**  
   
@@ -114,21 +114,21 @@ ms.lasthandoff: 02/22/2017
   
  La fenêtre Notifications n’est pas actuellement extensible.  
   
- ![Fenêtre de Visual Studio Notifications](../../extensibility/ux-guidelines/media/0901-06_vsnotificationswindow.png "06_VSNotificationsWindow-0901")  
+ ![Fenêtre de Visual Studio Notifications](~/docs/extensibility/ux-guidelines/media/0901-06_vsnotificationswindow.png "06_VSNotificationsWindow-0901")  
   
  **Fenêtre de Visual Studio Notifications outil**  
   
 ####  <a name="a-namebkmkerrorlista-error-list"></a><a name="BKMK_ErrorList"></a>Liste d’erreurs  
  Une notification dans la liste d’erreurs indiquent des erreurs et avertissements qui s’est produite lors de la compilation et de processus de génération et permettant à l’utilisateur de naviguer dans le code de cette erreur de code spécifique.  
   
- ![Liste d’erreurs](../../extensibility/ux-guidelines/media/0901-08_errorlist.png "08_ErrorList-0901")  
+ ![Liste d’erreurs](~/docs/extensibility/ux-guidelines/media/0901-08_errorlist.png "08_ErrorList-0901")  
   
  **Liste d’erreurs dans Visual Studio**  
   
 ####  <a name="a-namebkmkembeddedstatusbarsa-embedded-status-bars"></a><a name="BKMK_EmbeddedStatusBars"></a>Barres d’état incorporée  
  La barre d’état IDE étant dynamique, avec son contexte de région client défini dans la fenêtre de document actif et de la mise à jour sur le contexte de l’utilisateur et/ou les réponses du système d’informations, il est difficile de maintenir un affichage d’informations en continu ou donner un état de processus asynchrones à long terme. Par exemple, la barre d’état IDE n’est pas appropriée pour les notifications de résultats de la série de tests pour plusieurs séries et/ou les sélections d’élément immédiatement exploitable. Il est important de conserver ces informations d’état dans le contexte de la fenêtre de document ou l’outil où l’utilisateur effectue une sélection ou démarre un processus.  
   
- ![Barre d’état incorporée](../../extensibility/ux-guidelines/media/0901-09_embeddedstatusbar.png "09_EmbeddedStatusBar-0901")  
+ ![Barre d’état incorporée](~/docs/extensibility/ux-guidelines/media/0901-09_embeddedstatusbar.png "09_EmbeddedStatusBar-0901")  
   
  **Barre d’état incorporée dans Visual Studio**  
   
@@ -140,7 +140,7 @@ ms.lasthandoff: 02/22/2017
 ####  <a name="a-namebkmknotificationbubblesa-notification-bubbles"></a><a name="BKMK_NotificationBubbles"></a>Bulles de notification  
  Les bulles de notification peuvent apparaître à titre d’information au sein d’un éditeur/concepteur ou dans le cadre de la zone de Notification Windows. L’utilisateur perçoit ces bulles comme problèmes qu’ils peuvent résoudre plus tard, qui est un avantage pour les notifications non critiques. Les bulles sont inappropriés pour que l’utilisateur doit résoudre immédiatement les informations critiques. Si vous utilisez des bulles de notification dans Visual Studio, suivez les [des conseils de bureau Windows pour les bulles de notification](https://msdn.microsoft.com/en-us/library/windows/desktop/dn742472\(v=vs.85\).aspx).  
   
- ![Bulle de notification](../../extensibility/ux-guidelines/media/0901-07_notificationbubbles.png "07_NotificationBubbles-0901")  
+ ![Bulle de notification](~/docs/extensibility/ux-guidelines/media/0901-07_notificationbubbles.png "07_NotificationBubbles-0901")  
   
  **Bulle de notification dans la zone de Notification Windows utilisée pour Visual Studio**  
   
@@ -191,14 +191,14 @@ ms.lasthandoff: 02/22/2017
 #### <a name="progress-bars"></a>Barres de progression  
   
 ##### <a name="indeterminate"></a>Indéterminé  
- ![Barre de progression indéterminée](../../extensibility/ux-guidelines/media/0901-04_indeterminate.png "04_Indeterminate-0901")  
+ ![Barre de progression indéterminée](~/docs/extensibility/ux-guidelines/media/0901-04_indeterminate.png "04_Indeterminate-0901")  
   
  **Barre de progression indéterminée**  
   
  « Indéterminé » signifie que la progression globale d’une opération ou le processus ne peut pas être déterminé. Utilisez les barres de progression indéterminée pour les opérations qui requièrent un nombre illimité de fois ou qui accèdent à un nombre inconnu d’objets. Utilisez une description textuelle pour accompagner ce qui se passe. Utiliser des délais d’attente pour permettre à des limites aux opérations basées sur le temps. Barres de progression indéterminée utilisent des animations pour montrer que progression est en cours, mais fournissent pas d’autres informations. Ne choisissez pas une barre de progression indéterminée basée uniquement sur le manque de précision seul possible.  
   
 ##### <a name="determinate"></a>Déterminée  
- ![Barre de progression déterminée](../../extensibility/ux-guidelines/media/0901-05_determinate.png "05_Determinate-0901")  
+ ![Barre de progression déterminée](~/docs/extensibility/ux-guidelines/media/0901-05_determinate.png "05_Determinate-0901")  
   
  **Barre de progression déterminée**  
   
@@ -217,12 +217,12 @@ ms.lasthandoff: 02/22/2017
 #### <a name="other-progress-indicators"></a>Autres indicateurs de progression  
   
 ##### <a name="ants-animated-horizontal-dots"></a>ANTS (points animés horizontales)  
- ![Tirets de progression](../../extensibility/ux-guidelines/media/0903-01_ants.png "0903-01_Ants")  
+ ![Tirets de progression](~/docs/extensibility/ux-guidelines/media/0903-01_ants.png "0903-01_Ants")  
   
  « Fourmis, » points horizontales animés, fournissent une référence visuelle d’un processus serveur aller-retour indéterminé.  
   
 ##### <a name="spinner-progress-ring"></a>Spinner (boucle de progression)  
- ![Compteur de progression](../../extensibility/ux-guidelines/media/0903-02_spinner.png "0903-02_Spinner")  
+ ![Compteur de progression](~/docs/extensibility/ux-guidelines/media/0903-02_spinner.png "0903-02_Spinner")  
   
  La zone de sélection numérique (également appelé une « boucle de progression ») est un indicateur de progression indéterminée principalement utilisé par rapport à l’interface utilisateur contextuelle. Afficher un compteur à proximité de son contenu associé, comme un en-tête de catégorie de texte, de messagerie ou un contrôle.  
   
@@ -234,69 +234,69 @@ ms.lasthandoff: 02/22/2017
 ##### <a name="status-bar"></a>Barre d'état  
  La barre d’état permet à votre application à afficher des messages et des informations utiles à l’utilisateur sans interrompre le travail de l’utilisateur. Généralement affiché au bas d’une fenêtre, l’état de progression sera un volet d’outils de pointe qui contient un message concernant la mesure de la progression en association avec un indicateur de barre de progression.  
   
- ![Barre d’état avec barre de progression](../../extensibility/ux-guidelines/media/0903-03_statusbarprogressbar.png "0903-03_StatusBarProgressBar")  
+ ![Barre d’état avec barre de progression](~/docs/extensibility/ux-guidelines/media/0903-03_statusbarprogressbar.png "0903-03_StatusBarProgressBar")  
   
  **Barre d’état avec barre de progression**  
   
- ![Barre d’état avec messagerie](../../extensibility/ux-guidelines/media/0903-04_statusbarmessage.png "0903-04_StatusBarMessage")  
+ ![Barre d’état avec messagerie](~/docs/extensibility/ux-guidelines/media/0903-04_statusbarmessage.png "0903-04_StatusBarMessage")  
   
  **Barre d’état avec le texte de description**  
   
 ##### <a name="infobar"></a>Barre d'informations  
  Similaire à la barre d’état, la barre d’informations fournit des notifications contextuelles et messagerie, qui peut également être associé aux indicateurs de progression indéterminée telles que la barre de progression ou le compteur. La barre d’informations ne doit pas fournir de progression au niveau granulaire ou une indication de progression déterminée. Consultez la page [barres](../../extensibility/ux-guidelines/notifications-and-progress-for-visual-studio.md#BKMK_Infobars).  
   
- ![Barre d’informations avec messagerie et de la barre de progression](../../extensibility/ux-guidelines/media/0903-05_infobar.png "0903-05_InfoBar")  
+ ![Barre d’informations avec messagerie et de la barre de progression](~/docs/extensibility/ux-guidelines/media/0903-05_infobar.png "0903-05_InfoBar")  
   
  **Barre d’informations avec la barre de progression et une description textuelle**  
   
- ![Barre d’informations à l’intérieur d’une fenêtre](../../extensibility/ux-guidelines/media/0903-06_infobarinwindow.png "0903-06_InfoBarInWindow")  
+ ![Barre d’informations à l’intérieur d’une fenêtre](~/docs/extensibility/ux-guidelines/media/0903-06_infobarinwindow.png "0903-06_InfoBarInWindow")  
   
  **Barre d’informations à l’intérieur de la fenêtre d’analyse du Code**  
   
 ##### <a name="inline"></a>Inline  
  Indication de progression inline peut être représentée par les types de chargeur de progression. L’indicateur de progression est généralement combinée avec la messagerie, mais ce n’est pas obligatoire.  
   
- ![Compteur de progression inline](../../extensibility/ux-guidelines/media/0903-07_inlinespinner.png "0903-07_InlineSpinner")  
+ ![Compteur de progression inline](~/docs/extensibility/ux-guidelines/media/0903-07_inlinespinner.png "0903-07_InlineSpinner")  
   
  **Combiné avec une description textuelle de compteur**  
   
- ![Barres de progression empilées inline](../../extensibility/ux-guidelines/media/0903-08_inlinestackedprogress.png "0903-08_InlineStackedProgress")  
+ ![Barres de progression empilées inline](~/docs/extensibility/ux-guidelines/media/0903-08_inlinestackedprogress.png "0903-08_InlineStackedProgress")  
   
  **Barres de progression empilées déterminée**  
   
- ![Messagerie de progression inline](../../extensibility/ux-guidelines/media/0903-09_inlinetext.png "0903-09_InlineText")  
+ ![Messagerie de progression inline](~/docs/extensibility/ux-guidelines/media/0903-09_inlinetext.png "0903-09_InlineText")  
   
  **Texte de Server Explorer en ligne : l’actualisation...**  
   
 ##### <a name="tool-windows"></a>Fenêtres d’outil  
  Indication de la progression globale est représentée par une barre de progression indéterminée placée directement sous la barre d’outils.  
   
- ![Barre de progression indéterminée globale](../../extensibility/ux-guidelines/media/0903-23_globalindeterminate.png "0903-23_GlobalIndeterminate")  
+ ![Barre de progression indéterminée globale](~/docs/extensibility/ux-guidelines/media/0903-23_globalindeterminate.png "0903-23_GlobalIndeterminate")  
   
  **Barre de progression indéterminée globale de Team Explorer**  
   
 ##### <a name="dialogs"></a>Boîtes de dialogue  
  Boîtes de dialogue peuvent contenir les types de chargeur de progression. Indicateurs de progression peuvent être associées à la messagerie ainsi que combinées avec plusieurs niveaux d’indication de progression pour représenter granulaire et sous-processus.  
   
- ![Boîte de dialogue avec plusieurs types d’indicateurs de progression](../../extensibility/ux-guidelines/media/0903-11_dialog.png "0903-11_Dialog")  
+ ![Boîte de dialogue avec plusieurs types d’indicateurs de progression](~/docs/extensibility/ux-guidelines/media/0903-11_dialog.png "0903-11_Dialog")  
   
  **Boîte de dialogue Visual Studio avec plusieurs types d’indicateurs de progression et les processus simultanés**  
   
- ![Boîte de dialogue avec messagerie et chargeur de progression](../../extensibility/ux-guidelines/media/0903-12_dialog2.png "0903-12_Dialog2")  
+ ![Boîte de dialogue avec messagerie et chargeur de progression](~/docs/extensibility/ux-guidelines/media/0903-12_dialog2.png "0903-12_Dialog2")  
   
  **Boîte de dialogue Visual Studio avec les commandes en ligne de messagerie et chargeur de progression**  
   
 ##### <a name="document-well"></a>Document bien  
  Le document peut également afficher plusieurs types de chargeur de progression en association avec des contrôles.  
   
- ![Messagerie de progression dans le document de configuration](../../extensibility/ux-guidelines/media/0903-13_documentwell.png "0903-13_DocumentWell")  
+ ![Messagerie de progression dans le document de configuration](~/docs/extensibility/ux-guidelines/media/0903-13_documentwell.png "0903-13_DocumentWell")  
   
  **Barre de progression indéterminée sous la barre d’outils**  
   
 ##### <a name="output-window"></a>Fenêtre Sortie  
  La fenêtre de sortie est appropriée pour la gestion des processus progression et l’état de progression en cours via la messagerie textuelle inline. Vous devez utiliser la barre d’état, ainsi que n’importe quel rapport de progression de fenêtre de sortie.  
   
- ![Messagerie de progression dans la fenêtre sortie](../../extensibility/ux-guidelines/media/0903-14_outputwindow.png "0903-14_OutputWindow")  
+ ![Messagerie de progression dans la fenêtre sortie](~/docs/extensibility/ux-guidelines/media/0903-14_outputwindow.png "0903-14_OutputWindow")  
   
  **La fenêtre de sortie avec l’état du processus en cours et attente de messagerie**  
   
@@ -305,7 +305,7 @@ ms.lasthandoff: 02/22/2017
 ### <a name="overview"></a>Vue d'ensemble  
  Barres donner à l’utilisateur un indicateur proche de leur point d’attention et l’utilisation du contrôle de barre d’informations partagées garantit la cohérence dans apparence visuelle et d’interaction.  
   
- ![Barre d’informations](../../extensibility/ux-guidelines/media/0904-01_infobar.png "0904-01_Infobar")  
+ ![Barre d’informations](~/docs/extensibility/ux-guidelines/media/0904-01_infobar.png "0904-01_Infobar")  
   
  **Barres dans Visual Studio**  
   
@@ -377,7 +377,7 @@ public InfoBarModel(string text, IEnumerable<IVsInfoBarActionItem> actionItems, 
   
  Voici un exemple qui crée un InfoBarModel avec du texte avec un lien hypertexte, un bouton d’action et une icône.  
   
- ![Barre d’informations avec lien hypertexte](../../extensibility/ux-guidelines/media/0904-02_infobarhyperlink.png "0904-02_InfobarHyperlink")  
+ ![Barre d’informations avec lien hypertexte](~/docs/extensibility/ux-guidelines/media/0904-02_infobarhyperlink.png "0904-02_InfobarHyperlink")  
   
 ```  
 var infoBar = new InfoBarModel(  
@@ -495,31 +495,31 @@ public interface IVsInfoBarUIEvents
 ### <a name="field-validation"></a>Validation de champ  
  Validation de formulaire et le champ se compose de trois composants : un contrôle, une icône et une info-bulle. Bien que plusieurs types de contrôles peuvent utiliser cette option, une zone de texte sera utilisée comme un exemple.  
   
- ![Champ de validation (vide)](../../extensibility/ux-guidelines/media/0905-01_fieldvalidation.png "0905-01_FieldValidation")  
+ ![Champ de validation (vide)](~/docs/extensibility/ux-guidelines/media/0905-01_fieldvalidation.png "0905-01_FieldValidation")  
   
  Si le champ est obligatoire, il convient de filigrane affiche un message indiquant ** \<requis >** et l’arrière-plan du champ doit être clair jaune (VSColor : `Environment.ControlEditRequiredBackground`) et gris au premier plan (VSColor : `Environment.ControlEditRequiredHintText`) :  
   
- ![Champ de validation avec étiquette « Obligatoire »](../../extensibility/ux-guidelines/media/0905-02_fieldvalidationrequired.png "0905-02_FieldValidationRequired")  
+ ![Champ de validation avec étiquette « Obligatoire »](~/docs/extensibility/ux-guidelines/media/0905-02_fieldvalidationrequired.png "0905-02_FieldValidationRequired")  
   
  Le programme peut déterminer que le contrôle est dans un état de *contenu non valide entré* lorsque le focus est déplacé vers un autre contrôle ou lorsque l’utilisateur clique sur un bouton de validation [OK] ou lorsque l’utilisateur enregistre le document ou le formulaire.  
   
  Lorsque l’état du contenu non valide est détecté, une icône apparaît dans le contrôle ou juste à côté de lui. Pointage de l’icône ou le contrôle, une info-bulle qui décrit l’erreur doit apparaître. En outre, une bordure de 1 pixel doit apparaître autour du contrôle qui crée l’état non valide.  
   
- ![Spécifications de disposition de validation de champ](../../extensibility/ux-guidelines/media/0905-03_layoutspecs.png "0905-03_LayoutSpecs")  
+ ![Spécifications de disposition de validation de champ](~/docs/extensibility/ux-guidelines/media/0905-03_layoutspecs.png "0905-03_LayoutSpecs")  
   
  **Spécifications de disposition pour la validation de champ**  
   
 #### <a name="acceptable-variations-for-icon-location"></a>Variations acceptables pour l’emplacement de l’icône  
  Il existe des cas uniques innombrables dans lequel les utilisateurs doivent être informés sur les erreurs de validation. Si l'on considère le type de contrôle et la configuration de l’interface utilisateur, choisissez le positionnement de l’icône correspondant à votre situation.  
   
- ![Emplacements acceptables pour l’emplacement de l’icône](../../extensibility/ux-guidelines/media/0905-04_iconlocation.png "0905-04_IconLocation")  
+ ![Emplacements acceptables pour l’emplacement de l’icône](~/docs/extensibility/ux-guidelines/media/0905-04_iconlocation.png "0905-04_IconLocation")  
   
  **Variations acceptables pour les emplacements d’icône de validation de champ**  
   
 #### <a name="validation-requiring-a-round-trip-to-a-server-or-network-connection"></a>Validation nécessitant un aller-retour vers un serveur ou une connexion réseau  
  Dans certains cas, un aller-retour vers le serveur est nécessaire pour vérifier le contenu et il est important afficher la progression de l’utilisateur, vérifié et les États d’erreur. La figure ci-dessous montre un exemple de ce cas et l’interface utilisateur recommandée.  
   
- ![Validation impliquant un aller-retour vers un serveur](../../extensibility/ux-guidelines/media/0905-05_roundtrip.png "0905-05_RoundTrip")  
+ ![Validation impliquant un aller-retour vers un serveur](~/docs/extensibility/ux-guidelines/media/0905-05_roundtrip.png "0905-05_RoundTrip")  
   
  **Validation impliquant un aller-retour vers un serveur**  
   
@@ -528,13 +528,13 @@ public interface IVsInfoBarUIEvents
 #### <a name="in-place-warning-text"></a>Texte d’avertissement sur place  
  Lorsque l’espace disponible pour placer le message d’erreur proche du contrôle dans un état d’erreur est, il est préférable à l’aide de l’info-bulle uniquement.  
   
- ![Avertissement sur place](../../extensibility/ux-guidelines/media/0905-06_inplacewarning.png "0905-06_InPlaceWarning")  
+ ![Avertissement sur place](~/docs/extensibility/ux-guidelines/media/0905-06_inplacewarning.png "0905-06_InPlaceWarning")  
   
  **Texte d’avertissement sur place**  
   
 #### <a name="watermarks"></a>Filigranes  
  Parfois, une fenêtre ou un contrôle entier est dans un état d’erreur. Dans ce cas, utilisez un filigrane pour indiquer l’erreur.  
   
- ![Filigrane](../../extensibility/ux-guidelines/media/0905-07_watermark.png "0905-07_Watermark")  
+ ![Filigrane](~/docs/extensibility/ux-guidelines/media/0905-07_watermark.png "0905-07_Watermark")  
   
  **Validation de champ filigrane**

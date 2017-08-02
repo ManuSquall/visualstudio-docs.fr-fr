@@ -46,14 +46,14 @@ L'ajout de tests codés de l'interface utilisateur dans une application SharePoi
   
  **Remarques**  
   
--   ![Prérequis](../test/media/prereq.png "Prereq") Les tests codés de l’interface utilisateur pour les applications SharePoint ne sont pris en charge qu’avec SharePoint 2010.  
+-   ![Prérequis](~/docs/test/media/prereq.png "Prereq") Les tests codés de l’interface utilisateur pour les applications SharePoint ne sont pris en charge qu’avec SharePoint 2010.  
   
--   ![Prérequis](../test/media/prereq.png "Prereq") Les contrôles pour Visio et PowerPoint 2010 ne sont pas pris en charge dans votre application SharePoint.  
+-   ![Prérequis](~/docs/test/media/prereq.png "Prereq") Les contrôles pour Visio et PowerPoint 2010 ne sont pas pris en charge dans votre application SharePoint.  
   
 ## <a name="creating-a-coded-ui-test-for-your-sharepoint-app"></a>Créer un test d'interface utilisateur codé pour votre application SharePoint  
  La[création de tests codés de l'interface utilisateur](../test/use-ui-automation-to-test-your-code.md#VerifyingCodeUsingCUITCreate) pour vos applications SharePoint 2010 est identique à la création de tests pour d'autres types d'applications. L'enregistrement et la lecture sont pris en charge pour tous les contrôles sur l'interface de modification Web. L'interface de sélection des catégories et des composants WebPart est constituée de contrôles Web standard.  
   
- ![Composants WebPart SharePoint](../test/media/cuit_sharepoint.png "CUIT_SharePoint")  
+ ![Composants WebPart SharePoint](~/docs/test/media/cuit_sharepoint.png "CUIT_SharePoint")  
   
 > [!NOTE]
 >  Si vous enregistrez une action, validez les actions avant de générer le code. Étant donné que plusieurs comportements sont associés aux pointages de la souris, celle-ci est activée par défaut. Veillez à supprimer les pointages redondants de vos tests codés de l'interface utilisateur. Pour ce faire, modifiez le code du test ou utilisez l' [Éditeur de test codé de l'interface utilisateur](../test/editing-coded-ui-tests-using-the-coded-ui-test-editor.md).  

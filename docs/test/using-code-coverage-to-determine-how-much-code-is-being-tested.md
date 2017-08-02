@@ -52,7 +52,7 @@ Pour déterminer la proportion de code de votre projet qui sera réellement test
   
 1.  Dans le menu **Test**, choisissez **Analyser la couverture du code**.  
   
-2.  Pour voir les lignes qui ont été exécutées, choisissez ![Icône Afficher la coloration de la couverture du code](../test/media/codecoverage-showcoloringicon.png "CodeCoverage-ShowColoringIcon")**Afficher la coloration de la couverture du code**.  
+2.  Pour voir les lignes qui ont été exécutées, choisissez ![Icône Afficher la coloration de la couverture du code](~/docs/test/media/codecoverage-showcoloringicon.png "CodeCoverage-ShowColoringIcon")**Afficher la coloration de la couverture du code**.  
   
      Pour modifier les couleurs ou utiliser des caractères gras, choisissez **Outils**, **Options**, **Environnement**, **Polices et couleurs**, **Afficher les paramètres de : Éditeur de texte**. Sous **Éléments affichés**, ajustez les éléments de couverture.  
   
@@ -97,7 +97,7 @@ Pour déterminer la proportion de code de votre projet qui sera réellement test
   
  Supposons par exemple que, lorsque vous exécutez un test avec l'entrée « 2 », vous constatez que 50 % d'une fonction spécifique est couvert. Lorsque vous exécutez le test une deuxième fois avec l'entrée « -2 », vous constatez dans la vue de coloration de couverture que le reste de la fonction (50 %) est couvert. Fusionnez maintenant les résultats des deux séries de tests. Le rapport et la vue de coloration de couverture indiquent que la fonction a été couverte à 100 %.  
   
- Pour cela, utilisez ![Icône du bouton de fusion dans la fenêtre Couverture du code](../test/media/codecoverage-mergeicon.png "CodeCoverage-MergeIcon")**Fusionner les résultats de la couverture du code**. Vous pouvez choisir n'importe quelle combinaison de séries récentes ou de résultats importés. Si vous souhaitez combiner des résultats exportés, vous devez d'abord les importer.  
+ Pour cela, utilisez ![Icône du bouton de fusion dans la fenêtre Couverture du code](~/docs/test/media/codecoverage-mergeicon.png "CodeCoverage-MergeIcon")**Fusionner les résultats de la couverture du code**. Vous pouvez choisir n'importe quelle combinaison de séries récentes ou de résultats importés. Si vous souhaitez combiner des résultats exportés, vous devez d'abord les importer.  
   
  Utilisez **Exporter les résultats de la couverture du code** pour enregistrer les résultats d’une opération de fusion.  
   

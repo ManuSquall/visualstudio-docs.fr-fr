@@ -44,22 +44,22 @@ Visual Studio offre une fonctionnalité IntelliSense complète pour les projets 
 
 - Variables de contexte transmises dans le modèle :
 
-    ![IntelliSense pour les variables de contexte](media/template-django-intellisense.png)
+    ![IntelliSense pour les variables de contexte](~/docs/python/media/template-django-intellisense.png)
 
 - Balisage et filtrage pour les éléments intégrés et définis par l’utilisateur :
 
-    ![IntelliSense pour les balises et les filtres](media/template-django-intellisense-filter.png)
+    ![IntelliSense pour les balises et les filtres](~/docs/python/media/template-django-intellisense-filter.png)
 
 - Coloration syntaxique pour les éléments CSS et JavaScript incorporés :
 
-    ![IntelliSense pour CSS](media/template-django-intellisense-css.png)
+    ![IntelliSense pour CSS](~/docs/python/media/template-django-intellisense-css.png)
 
-    ![IntelliSense JavaScript](media/template-django-intellisense-js.png)
+    ![IntelliSense JavaScript](~/docs/python/media/template-django-intellisense-js.png)
 
 
 Visual Studio offre également une [prise en charge complète du débogage](debugging.md) pour les projets Django : 
 
-![Points d’arrêt](media/template-django-debugging.png)
+![Points d’arrêt](~/docs/python/media/template-django-debugging.png)
 
 ## <a name="django-management-console"></a>Console de gestion Django
 
@@ -67,16 +67,16 @@ La console de gestion Django est accessible par le biais de plusieurs commandes 
 
 - **Open Django Shell... (Ouvrir l’interpréteur de commandes Django)** : ouvre un interpréteur de commandes dans le contexte de l’application qui vous permet de manipuler vos modèles :
 
-    ![Console](media/template-django-console-shell.png)
+    ![Console](~/docs/python/media/template-django-console-shell.png)
 
 - **Django Sync DB (Base de données de synchronisation Django)** : exécute `manage.py syncdb` dans une fenêtre interactive :
 
-    ![Console](media/template-django-console-sync-db.png)
+    ![Console](~/docs/python/media/template-django-console-sync-db.png)
 
 - **Collect Static (Collecter les fichiers statiques)** : exécute `manage.py collectstatic --noinput` pour copier tous les fichiers statiques dans le chemin d’accès spécifié par `STATIC_ROOT` dans votre fichier `settings.py`. Notez que lors de la [publication sur Microsoft Azure](template-web.md#publishing-to-azure-app-service), les fichiers statiques sont automatiquement collectés dans le cadre de l’opération de publication.
 
-    ![Console](media/template-django-console-collect-static.png)
+    ![Console](~/docs/python/media/template-django-console-collect-static.png)
 
 - **Valider** : exécute `manage.py validate`, qui signale toutes les erreurs de validation dans les modèles installés spécifiés par `INSTALLED_APPS` dans votre fichier `settings.py` :
 
-    ![Console](media/template-django-console-validate.png)
+    ![Console](~/docs/python/media/template-django-console-validate.png)

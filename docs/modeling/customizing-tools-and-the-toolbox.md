@@ -201,17 +201,17 @@ using Microsoft.VisualStudio.Modeling.Diagrams;
   
  **Connexion à un OutPort à partir d’un composant imbriqué**  
   
- ![Générateur de connexion](../modeling/media/connectionbuilder_3.png "ConnectionBuilder_3")  
+ ![Générateur de connexion](~/docs/modeling/media/connectionbuilder_3.png "ConnectionBuilder_3")  
   
  Par conséquent, il se peut que vous vouliez spécifier qu'une connexion puisse aller d'un composant imbriqué vers un OutPort. Pour spécifier une telle connexion, vous définissez **utilise l’acceptation personnalisée** sur la **InPort** type en tant que rôle source et le **OutPort** type comme rôle cible de la **détails DSL** fenêtre, comme indiqué dans les illustrations suivantes :  
   
  **Lien Directive de connexion dans l’Explorateur DSL**  
   
- ![Image du Générateur de connexion](../modeling/media/connectionbuilder_4a.png "ConnectionBuilder_4a")  
+ ![Image du Générateur de connexion](~/docs/modeling/media/connectionbuilder_4a.png "ConnectionBuilder_4a")  
   
  **Lien de se connecter à la Directive dans la fenêtre Détails DSL**  
   
- ![](../modeling/media/connectionbuilder_4b.png "ConnectionBuilder_4b")  
+ ![](~/docs/modeling/media/connectionbuilder_4b.png "ConnectionBuilder_4b")  
   
  Vous devez ensuite fournir les méthodes de la classe ConnectionBuilder :  
   

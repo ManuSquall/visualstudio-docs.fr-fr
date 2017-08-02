@@ -42,7 +42,7 @@ Les applications Python sont généralement définies à l’aide de fichiers et
 
 En outre, les projets sont toujours gérés dans une *solution* Visual Studio, qui peut contenir n’importe quel nombre de projets pouvant faire référence les uns aux autres. Par exemple, un projet Python peut faire référence à un projet C++ pour un module d’extension, de façon que Visual Studio génère automatiquement le projet C++ (si nécessaire) lorsque vous commencez à déboguer le projet Python. (Pour des informations d’ordre général à ce sujet, consultez [Solutions et projets dans Visual Studio](../ide/solutions-and-projects-in-visual-studio.md).)
 
-![Projet Python dans l’Explorateur de solutions](media/projects-solution-explorer.png)
+![Projet Python dans l’Explorateur de solutions](~/docs/python/media/projects-solution-explorer.png)
 
 Visual Studio fournit divers modèles de projet Python pour configurer rapidement un certain nombre de structures d’application, y compris un modèle pour créer un projet à partir d’une arborescence de dossiers existante et un modèle pour créer un projet propre et vide. Consultez la section [Modèles de projet](#project-templates) ci-dessous pour un index.
 
@@ -79,14 +79,14 @@ Chaque projet Python comprend un fichier de démarrage attribué, indiqué en gr
 
 Un nouveau projet est toujours associé à l’environnement Python global par défaut. Pour associer le projet à un autre environnement (y compris les environnements virtuels), cliquez avec le bouton droit sur le nœud **Environnements Python** du projet, sélectionnez **Add/Remove Python Environments** (Ajouter/supprimer des environnement Python) et sélectionnez ceux que vous souhaitez. Pour modifier l’environnement actif, cliquez avec le bouton droit sur l’environnement souhaité et sélectionnez **Activate Environment** (Activer l’environnement) comme indiqué ci-dessous. Pour plus d’informations, consultez [Environnements Python](python-environments.md#project-specific-environments).
 
-![Activation d’un environnement pour un projet Python](media/projects-activate-environment.png)
+![Activation d’un environnement pour un projet Python](~/docs/python/media/projects-activate-environment.png)
 
 <a name="project-types"</a>
 ## <a name="project-templates"></a>Modèles de projet
 
 Visual Studio vous propose diverses méthodes pour configurer un projet Python, que ce soit à partir de zéro ou en utilisant du code existant. Pour utiliser un modèle, sélectionnez la commande de menu **Fichier > Nouveau > Projet...** ou cliquez avec le bouton droit sur la solution dans l’Explorateur de solutions, puis sélectionnez **Ajouter > Nouveau projet...**. Ces deux options permettent d’afficher la boîte de dialogue **Nouveau projet** ci-dessous. Pour afficher les modèles spécifiques à Python, effectuez une recherche sur « Python » ou sélectionnez le nœud **Modèles > Autres langages > Python** :
 
-![Boîte de dialogue Nouveau projet avec les modèles Python](media/projects-new-project-dialog.png)
+![Boîte de dialogue Nouveau projet avec les modèles Python](~/docs/python/media/projects-new-project-dialog.png)
 
 Le tableau suivant résume les modèles disponibles dans Visual Studio 2017 (tous les modèles ne sont pas disponibles dans toutes les versions antérieures) :
 
@@ -109,21 +109,21 @@ Le tableau suivant résume les modèles disponibles dans Visual Studio 2017 (to
 1. Sélectionnez le menu **Fichier > Nouveau > Projet...**, puis sélectionnez le modèle **From Existing Python Code** (À partir du code Python existant).
 1. Dans la boîte de dialogue suivante, définissez le chemin d’accès à votre code existant, un filtre pour les types de fichier et les chemins de recherche nécessaires à votre projet, puis sélectionnez **Suivant** :
 
-    ![Nouveau projet à partir du code existant, étape 1](media/projects-from-existing-1.png)
+    ![Nouveau projet à partir du code existant, étape 1](~/docs/python/media/projects-from-existing-1.png)
 
 1. Choisissez un environnement pour le projet et le fichier de démarrage, puis appuyez sur **Suivant**. (Notez que la boîte de dialogue affiche uniquement les fichiers dans la racine de l’arborescence de dossiers ; si le fichier que vous souhaitez utilisé se trouve dans un sous-dossier, laissez le champ correspondant au fichier de démarrage vide et définissez-le ultérieurement dans l’Explorateur de solutions).
 
-    ![Nouveau projet à partir du code existant, étape 2](media/projects-from-existing-2.png)
+    ![Nouveau projet à partir du code existant, étape 2](~/docs/python/media/projects-from-existing-2.png)
 
 1. Sélectionnez l’emplacement pour enregistrer le fichier projet (cette opération ne déplace et ne copie pas les fichiers source d’origine ; si vous souhaitez une copie, vous devez la faire avant d’utiliser le modèle). Dans cette boîte de dialogue, vous pouvez également inclure la détection automatique des environnements virtuels et personnaliser le projet pour différentes infrastructures web.
 
-    ![Nouveau projet à partir du code existant, étape 3](media/projects-from-existing-3.png)
+    ![Nouveau projet à partir du code existant, étape 3](~/docs/python/media/projects-from-existing-3.png)
 
 1.  Sélectionnez **Terminer**, et Visual Studio crée le projet et l’ouvre dans l’Explorateur de solutions. Si vous souhaitez déplacer le fichier .pyproj, sélectionnez-le dans l’Explorateur de solutions et choisissez **Fichier > Enregistrer sous**. Cela met à jour les références de fichier dans le projet, mais ne déplace pas de fichier de code.
 
 ## <a name="linked-files"></a>Fichiers liés
 
-Les fichiers liés sont ceux qui sont placés dans un projet, mais qui se trouvent généralement en dehors des dossiers du projet de l’application. Ils apparaissent dans l’Explorateur de solutions en tant que fichiers normaux avec une icône de raccourci superposée : ![Icône de fichier lié](media/projects-linked-file-icon.png)
+Les fichiers liés sont ceux qui sont placés dans un projet, mais qui se trouvent généralement en dehors des dossiers du projet de l’application. Ils apparaissent dans l’Explorateur de solutions en tant que fichiers normaux avec une icône de raccourci superposée : ![Icône de fichier lié](~/docs/python/media/projects-linked-file-icon.png)
 
 Les fichiers liés sont spécifiés dans le fichier `.pyproj` à l’aide de l’élément `<Compile Include="...">` normal. Ils peuvent être implicites s’ils utilisent un chemin d’accès relatif en dehors de la structure de répertoires, ou explicites en spécifiant leur chemin d’accès dans l’Explorateur de solutions :
 
@@ -154,7 +154,7 @@ Les fichiers liés ne peuvent pas être renommés.
 
 Les projets Visual Studio prennent en charge l’ajout de références aux projets et aux extensions, qui apparaissent sous le nœud **Références** dans l’Explorateur de solutions :
 
-![Références d’extension dans les projets Python](media/projects-extension-references.png)
+![Références d’extension dans les projets Python](~/docs/python/media/projects-extension-references.png)
 
 En général, les références d’extension indiquent les dépendances entre les projets et sont utilisées pour proposer IntelliSense au moment de la conception ou lors de la création de lien au moment de la compilation. Les projets Python utilisent des références de la même manière, mais en raison de la nature dynamique de Python, elles sont principalement utilisées au moment de la conception pour proposer des fonctionnalités IntelliSense améliorées. Elles peuvent également servir pour le déploiement sur Microsoft Azure, afin d’installer des dépendances supplémentaires.
 
@@ -176,4 +176,4 @@ Les références dans IronPython n’étant pas disponibles tant qu’un appel �
 
 Vous pouvez ajouter des références aux entrées de produit WebPI pour le déploiement sur Microsoft Azure Cloud Service où vous pouvez installer des composants supplémentaires via le flux WebPI. Par défaut, le flux affiché est spécifique à Python et inclut Django, CPython et d’autres composants de base. Vous pouvez également sélectionner votre propre flux comme illustré ci-dessous. Lorsque vous publiez vers Microsoft Azure, une tâche d’installation installe tous les produits référencés.
 
-![Références WebPI](media/projects-webPI-components.png)
+![Références WebPI](~/docs/python/media/projects-webPI-components.png)

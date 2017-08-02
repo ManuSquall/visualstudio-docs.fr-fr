@@ -70,24 +70,24 @@ Recherchez les fuites de mémoire et les utilisations inefficaces de la mémoire
 
 4.  Choisissez **Utilisation de la mémoire** avec **Sélectionner les outils** dans la barre d’outils.
 
-     ![Afficher les outils de diagnostics](../profiling/media/DiagToolsSelectTool.png "DiagToolsSelectTool")
+     ![Afficher les outils de diagnostics](~/docs/profiling/media/DiagToolsSelectTool.png "DiagToolsSelectTool")
 
 5.  Cliquez sur **Déboguer / Démarrer le débogage** (ou **Démarrer** dans la barre d’outils, ou **F5**).
 
      Lorsque l’application est chargée, la vue Résumé des outils de diagnostics s’affiche.
 
-     ![Onglet Résumé des outils de diagnostics](../profiling/media/DiagToolsSummaryTab.png "DiagToolsSummaryTab")
+     ![Onglet Résumé des outils de diagnostics](~/docs/profiling/media/DiagToolsSummaryTab.png "DiagToolsSummaryTab")
 
      > [!NOTE]
      >  Comme la collecte des données de la mémoire peut affecter les performances du débogage de vos applications natives ou en mode mixte, les instantanés de la mémoire sont désactivés par défaut. Pour activer les instantanés dans des applications natives ou en mode mixte, démarrez une session de débogage (touche de raccourci : **F5**). Quand la fenêtre **Outils de diagnostic** apparaît, choisissez l’onglet Utilisation de la mémoire, puis **Profilage du tas**.  
      >   
-     >  ![Activer les instantanés](../profiling/media/dbgdiag_mem_mixedtoolbar_enablesnapshot.png "DBGDIAG_MEM_MixedToolbar_EnableSnapshot")  
+     >  ![Activer les instantanés](~/docs/profiling/media/dbgdiag_mem_mixedtoolbar_enablesnapshot.png "DBGDIAG_MEM_MixedToolbar_EnableSnapshot")  
      >   
      >  Arrêtez (touche de raccourci : **Maj + F5**) et redémarrez le débogage.  
 
 6.  Pour prendre un instantané au début de votre session de débogage, choisissez **Prendre un instantané** dans la barre d’outils récapitulative **Utilisation de la mémoire**. (Il peut être utile de définir un point d’arrêt ici aussi.)
 
-    ![Prendre un instantané](../profiling/media/dbgdiag_mem_mixedtoolbar_takesnapshot.png "DBGDIAG_MEM_MixedToolbar_TakeSnapshot") 
+    ![Prendre un instantané](~/docs/profiling/media/dbgdiag_mem_mixedtoolbar_takesnapshot.png "DBGDIAG_MEM_MixedToolbar_TakeSnapshot") 
      
      > [!TIP]
      >  Pour créer une ligne de base pour les comparaisons de mémoire, envisagez de prendre un instantané au démarrage de votre session de débogage.  
@@ -105,7 +105,7 @@ Recherchez les fuites de mémoire et les utilisations inefficaces de la mémoire
 ## <a name="analyze-memory-usage-data"></a>Analyser l’utilisation de la mémoire
 Les lignes du tableau récapitulatif Utilisation de la mémoire listent les instantanés que vous avez pris pendant la session de débogage et fournissent des liens vers des vues plus détaillées.
 
-![Tableau récapitulatif de la mémoire](../profiling/media/dbgdiag_mem_summarytable.png "DBGDIAG_MEM_SummaryTable")
+![Tableau récapitulatif de la mémoire](~/docs/profiling/media/dbgdiag_mem_summarytable.png "DBGDIAG_MEM_SummaryTable")
 
  Les noms des colonnes varient selon le mode de débogage que vous choisissez dans les propriétés du projet : .NET, natif ou mixte (.NET et natif).  
   
@@ -117,7 +117,7 @@ Quand vous avez pris plusieurs instantanés, les cellules de la table de résum�
 
 Pour analyser l’utilisation de la mémoire, cliquez sur un des liens qui ouvrent un rapport détaillé de l’utilisation de la mémoire :  
 
--   Pour voir les détails de la différence entre l’instantané actif et l’instantané précédent, cliquez sur le lien Modification à gauche de la flèche (![Augmentation de l’utilisation de la mémoire](../profiling/media/prof-tour-mem-usage-up-arrow.png "Augmentation de l’utilisation de la mémoire")). Une flèche rouge indique une augmentation de l’utilisation de la mémoire et une flèche verte indique une baisse.
+-   Pour voir les détails de la différence entre l’instantané actif et l’instantané précédent, cliquez sur le lien Modification à gauche de la flèche (![Augmentation de l’utilisation de la mémoire](~/docs/profiling/media/prof-tour-mem-usage-up-arrow.png "Augmentation de l’utilisation de la mémoire")). Une flèche rouge indique une augmentation de l’utilisation de la mémoire et une flèche verte indique une baisse.
 
     > [!TIP]
     >  Pour aider à identifier les problèmes de mémoire plus rapidement, les rapports de comparaison sont triés selon les types d’objets dont le nombre total a le plus augmenté (cliquez sur le lien de modification dans la colonne **Objets (Diff.)**) ou qui ont le plus augmenté dans la taille de segment totale (cliquez sur le lien de modification dans la colonne **Taille du tas (Diff.)**).
@@ -139,7 +139,7 @@ Pour analyser l’utilisation de la mémoire, cliquez sur un des liens qui ouvre
   
  ![Affichage du rapport des types référencés managés](../profiling/media/dbgdiag_mem_managedtypesreport_referencedtypes.png "DBGDIAG_MEM_ManagedTypesReport_ReferencedTypes")  
   
- Pour afficher les instances d’un type sélectionné dans le volet du haut, choisissez l’icône ![Icône d’instance](../profiling/media/dbgdiag_mem_instanceicon.png "DBGDIAG_MEM_InstanceIcon").  
+ Pour afficher les instances d’un type sélectionné dans le volet du haut, choisissez l’icône ![Icône d’instance](~/docs/profiling/media/dbgdiag_mem_instanceicon.png "DBGDIAG_MEM_InstanceIcon").  
   
  ![Vue Instances](../profiling/media/dbgdiag_mem_managedtypesreport_instances.png "DBGDIAG_MEM_ManagedTypesReport_Instances")  
   
@@ -152,7 +152,7 @@ Pour analyser l’utilisation de la mémoire, cliquez sur un des liens qui ouvre
   
  La **vue Types** affiche le nombre et la taille des types dans l’instantané.  
   
--   Cliquez sur l’icône des instances (![L’icône d’instance dans la colonne Type d’objet](../profiling/media/dbg_mma_instancesicon.png "DBG_MMA_InstancesIcon")) d’un type sélectionné pour afficher des informations sur les objets du type sélectionné dans l’instantané.  
+-   Cliquez sur l’icône des instances (![L’icône d’instance dans la colonne Type d’objet](~/docs/profiling/media/dbg_mma_instancesicon.png "DBG_MMA_InstancesIcon")) d’un type sélectionné pour afficher des informations sur les objets du type sélectionné dans l’instantané.  
   
      La vue **Instances** affiche chaque instance du type sélectionné. La sélection d’une instance affiche la pile des appels qui a entraîné la création de l’instance dans le volet **Pile des appels d’allocation** .  
   
@@ -170,7 +170,7 @@ Pour analyser l’utilisation de la mémoire, cliquez sur un des liens qui ouvre
   
 -   Choisissez un instantané dans la liste **Comparer à** d’un rapport sur la mémoire managée ou native.  
   
-     ![Choisir un instantané dans la liste Comparer à](../profiling/media/dbgdiag_mem_choosecompareto.png "DBGDIAG_MEM_ChooseCompareTo")  
+     ![Choisir un instantané dans la liste Comparer à](~/docs/profiling/media/dbgdiag_mem_choosecompareto.png "DBGDIAG_MEM_ChooseCompareTo")  
   
  Le rapport des modifications ajoute des colonnes (marquées par la mention **(Diff)**) au rapport de base, qui affichent la différence entre la valeur de l’instantané de base et celle de l’instantané comparé. Voici à quoi peut ressembler un rapport des différences de la vue des types natifs :  
   

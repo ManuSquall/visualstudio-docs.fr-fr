@@ -74,7 +74,7 @@ Si vous souhaitez un contrôle direct sur l’emplacement où Visual Studio rech
  8. Les nouvelles installations installeront automatiquement la version mise à jour de Visual Studio directement à partir de la disposition.
 
 ## <a name="controlling-notifications-in-the-visual-studio-ide"></a>Contrôle des notifications dans l’IDE de Visual Studio
-Comme décrit ci-dessus, Visual Studio vérifie l’emplacement à partir duquel il a été installé (par exemple, le partage réseau ou Internet), pour voir si des mises à jour sont disponibles. Quand une mise à jour est disponible, Visual Studio avertit par défaut l’utilisateur avec un indicateur de notification dans le coin supérieur droit de la fenêtre : ![Indicateur de notification des mises à jour](media/notification-flag.png)
+Comme décrit ci-dessus, Visual Studio vérifie l’emplacement à partir duquel il a été installé (par exemple, le partage réseau ou Internet), pour voir si des mises à jour sont disponibles. Quand une mise à jour est disponible, Visual Studio avertit par défaut l’utilisateur avec un indicateur de notification dans le coin supérieur droit de la fenêtre : ![Indicateur de notification des mises à jour](~/docs/install/media/notification-flag.png)
 
 Si vous ne voulez pas que les utilisateurs finaux soient informés des mises à jour (par exemple, vous transmettez des mises à jour via un mécanisme de distribution de logiciels central), vous pouvez désactiver ces notifications.
 

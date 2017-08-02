@@ -102,7 +102,7 @@ R. Oui, vous pouvez utiliser n’importe quel système de gestion de code source
 
 R. La version 1.0 de RTVS est en anglais uniquement. La version 1.1 sera localisée dans les mêmes langues que celles de Visual Studio. En attendant, utilisez le [module linguistique en anglais de Visual Studio 2015](https://www.microsoft.com/download/details.aspx?id=48157) ou dans Visual Studio 2017, exécutez le programme d’installation et sélectionnez Anglais dans l’onglet **Modules linguistiques**.
 
-![Paramètres internationaux de Visual Studio 2017](media/FAQ-international-settings.png)
+![Paramètres internationaux de Visual Studio 2017](~/docs/rtvs/media/FAQ-international-settings.png)
 
 **Q. RTVS fonctionne-t-il avec les éditions 32 bits de R ?**
 

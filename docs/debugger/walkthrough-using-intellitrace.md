@@ -54,7 +54,7 @@ Vous pouvez utiliser IntelliTrace pour collecter des informations sur des évén
   
      La capture d’écran suivante a été faite à partir de Visual Studio 2015 Update 1.  
   
-     ![IntelliTrace&#45;Update1](../debugger/media/intellitrace-update1.png "IntelliTrace\-Update1")  
+     ![IntelliTrace&#45;Update1](~/docs/debugger/media/intellitrace-update1.png "IntelliTrace\-Update1")  
   
 7.  Sélectionnez l'événement pour développer ses détails.  
   
@@ -68,7 +68,7 @@ Vous pouvez utiliser IntelliTrace pour collecter des informations sur des évén
   
      La capture d’écran suivante a été faite à partir de Visual Studio 2015 Update 1.  
   
-     ![HistoricalDebugging&#45;Update1](../debugger/media/historicaldebugging-update1.png "HistoricalDebugging\-Update1")  
+     ![HistoricalDebugging&#45;Update1](~/docs/debugger/media/historicaldebugging-update1.png "HistoricalDebugging\-Update1")  
   
 8.  Si vous ne trouvez pas le bogue, essayez de tester d'autres événements aboutissant au bogue. IntelliTrace peut également enregistrer des informations sur les appels pour vous permettre de parcourir pas à pas les appels de fonction.  
   

@@ -54,7 +54,7 @@ Ce document montre comment utiliser l’éditeur d’images pour créer une text
   
  Les étapes suivantes montrent comment créer une texture représentant une cible. Lorsque vous avez terminé, la texture doit ressembler à l’image suivante. Pour mettre en évidence la transparence de la texture, l’éditeur d’images a été configuré pour utiliser un modèle à damiers verts pour l’afficher.  
   
- ![Cible avec transparence affichée en vert](../designers/media/digit-bullseye-texture-in-editor.png "Digit-Bullseye-Texture-In-Editor")  
+ ![Cible avec transparence affichée en vert](~/docs/designers/media/digit-bullseye-texture-in-editor.png "Digit-Bullseye-Texture-In-Editor")  
   
  Avant de commencer, assurez-vous que la fenêtre **Propriétés** est affichée. Vous allez l’utiliser pour définir la taille de l’image, modifier les propriétés des outils et spécifier des couleurs pendant que vous travaillez.  
   
@@ -102,7 +102,7 @@ Ce document montre comment utiliser l’éditeur d’images pour créer une text
   
  La texture de cible est complète. Voici l’image finale, affichée avec la transparence.  
   
- ![Texture de cible complète](../designers/media/gfx_image_demo_bullseye.png "gfx_image_demo_bullseye")  
+ ![Texture de cible complète](~/docs/designers/media/gfx_image_demo_bullseye.png "gfx_image_demo_bullseye")  
   
  Ensuite, vous pouvez générer des niveaux MIP pour cette texture. Pour plus d’informations, consultez l’article [Comment : créer et modifier les niveaux MIP](../designers/how-to-create-and-modify-mip-levels.md).  
   

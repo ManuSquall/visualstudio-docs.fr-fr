@@ -43,7 +43,7 @@ Outils R pour Visual Studio (RTVS) s’intègre au système complet de débogag
 
 La procédure de lancement du débogueur pour un fichier R de démarrage dans un projet R est la même que celle utilisée pour d’autres types de projet. Vous pouvez donc utiliser la commande **Déboguer > Démarrer le débogage**, la touche F5 ou l’option **Fichier de démarrage source** dans la barre d’outils de débogage illustrée ci-dessous. Pour changer le fichier de démarrage, cliquez avec le bouton droit sur un fichier dans l’Explorateur de solutions et sélectionnez **Définir comme script R de démarrage**.
 
-![Bouton de démarrage du débogueur pour R](media/debugger-start-button.png)
+![Bouton de démarrage du débogueur pour R](~/docs/rtvs/media/debugger-start-button.png)
 
 Dans tous les cas, le démarrage du débogueur « approvisionne » le fichier dans la fenêtre interactive, c’est-à-dire que le fichier est chargé et exécuté dans cette fenêtre. En fait, quand vous commencez le débogage, la fenêtre interactive affiche une sortie similaire à celle-ci :
 
@@ -85,5 +85,5 @@ Le navigateur d’environnement prend en charge plusieurs commandes spéciales 
 | help | afficher l’aide : affiche les commandes disponibles dans la fenêtre interactive. |
 | &lt;expr&gt; | évaluer l’expression dans *expr*. |
 
-![Navigateur d’environnement dans la fenêtre interactive](media/debugger-environment-browser.png)
+![Navigateur d’environnement dans la fenêtre interactive](~/docs/rtvs/media/debugger-environment-browser.png)
 

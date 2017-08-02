@@ -44,7 +44,7 @@ Visual Studio dispose d’un système de notification qui vous avertit de divers
   
  Si vous choisissez de toujours ignorer une notification, Visual Studio cesse de l'afficher. Vous pouvez réinitialiser la liste des notifications ignorées dans la [boîte de dialogue Notifications, Environnement, Options](../ide/reference/notifications-environment-options-dialog-box.md).  
   
- ![Icône de notification de Visual Studio](../ide/media/vs2015_notificationicon.png "vs2015_NotificationIcon")  
+ ![Icône de notification de Visual Studio](~/docs/ide/media/vs2015_notificationicon.png "vs2015_NotificationIcon")  
   
 ## <a name="see-also"></a>Voir aussi  
  [IDE Visual Studio](../ide/visual-studio-ide.md)

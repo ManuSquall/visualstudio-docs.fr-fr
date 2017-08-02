@@ -52,18 +52,18 @@ Voici comment procéder.
 
      Par exemple, sur un ordinateur exécutant la Mise à jour anniversaire Windows 10, sélectionnez **Démarrer**, puis faites défiler jusqu’à la lettre **V** pour l’afficher comme **Programme d’installation de Visual Studio**.  
 
-     ![Programme d’installation de Visual Studio](media/vs2017-locate-the-visual-studio-installer.PNG "Localiser le programme d’installation de Microsoft Visual Studio")
+     ![Programme d’installation de Visual Studio](~/docs/install/media/vs2017-locate-the-visual-studio-installer.PNG "Localiser le programme d’installation de Microsoft Visual Studio")
 
      >[!NOTE]
      Sur certains ordinateurs, le programme d’installation de Visual Studio peut être répertorié sous la lettre **« M »** comme **Microsoft, programme d’installation de Visual Studio**.
 
 2.  Cliquez ou appuyez pour démarrer le programme d’installation, puis cliquez sur **Modifier**.  
 
-     ![Lancer ou modifier Visual Studio](media/vs2017-modify.PNG "Modifier Visual Studio 2017")  
+     ![Lancer ou modifier Visual Studio](~/docs/install/media/vs2017-modify.PNG "Modifier Visual Studio 2017")  
 
 3.  Dans l’écran **Charges de travail**, sélectionnez ou désélectionnez les charges de travail que vous voulez installer ou désinstaller.  
 
-    ![Boîte de dialogue d’installation de Visual Studio 2017](media/vs2017-modify-workloads.PNG "Choisir une charge de travail dans Visual Studio 2017")
+    ![Boîte de dialogue d’installation de Visual Studio 2017](~/docs/install/media/vs2017-modify-workloads.PNG "Choisir une charge de travail dans Visual Studio 2017")
 
 4. Cliquez ou appuyez à nouveau sur **Modifier**.  
 

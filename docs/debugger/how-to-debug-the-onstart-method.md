@@ -51,7 +51,7 @@ Vous pouvez déboguer un service Windows en le démarrant et en attachant le dé
   
 4.  Dans la fenêtre du débogueur juste\-à\-temps, sélectionnez la version de Visual Studio à utiliser pour le débogage.  
   
-     ![JustInTimeDebugger](../debugger/media/justintimedebugger.png "JustInTimeDebugger")  
+     ![JustInTimeDebugger](~/docs/debugger/media/justintimedebugger.png "JustInTimeDebugger")  
   
 5.  Une nouvelle instance de Visual Studio démarre, mais son exécution s’arrête à la méthode `Debugger.Launch()`.  
   

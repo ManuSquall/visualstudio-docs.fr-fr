@@ -25,7 +25,7 @@ Le débogage d'historique est un mode de débogage qui repose sur les informatio
 ## Pourquoi utiliser le débogage d'historique ?  
  La définition de points d'arrêt pour rechercher des bogues peut être assez aléatoire.  Vous définissez un point d'arrêt proche de l'endroit dans votre code où vous pensez que se trouve le bogue, puis vous exécutez l'application dans le débogueur en espérant que votre point d'arrêt soit atteint et que l'endroit où l'exécution s'arrête puisse révéler la source du bogue.  Si ce n'est pas le cas, vous devez essayer de définir un point d'arrêt autre part dans le code puis réexécuter le débogueur, en réexécutant vos étapes de façon répétée jusqu'à ce que vous puissiez identifier le problème.  
   
- ![définition d'un point d'arrêt](../debugger/media/breakpointprocesa.png "BreakpointProcesa")  
+ ![définition d'un point d'arrêt](~/docs/debugger/media/breakpointprocesa.png "BreakpointProcesa")  
   
  Vous pouvez utiliser IntelliTrace et le débogage d'historique pour parcourir votre application et inspecter son état \(pile des appels et variables locales\) sans avoir à définir des points d'arrêt, à redémarrer le débogage et à répéter les étapes de test.  Vous pouvez gagner beaucoup de temps, en particulier quand le bogue se trouve loin dans un scénario de test dont l'exécution est  très longue.  
   
@@ -71,7 +71,7 @@ private static int AddInt(int add)
   
 4.  Ouvrez la fenêtre **Outils de diagnostic** \(**Déboguer \/ Afficher les outils de diagnostic**\).  La fenêtre de code doit ressembler à ce qui suit :  
   
-     ![Fenêtre de code au point d'arrêt](../debugger/media/historicaldebuggingbreakpoint.png "HistoricalDebuggingBreakpoint")  
+     ![Fenêtre de code au point d'arrêt](~/docs/debugger/media/historicaldebuggingbreakpoint.png "HistoricalDebuggingBreakpoint")  
   
 5.  Vous devez voir une double flèche en regard de la marge de gauche, juste au\-dessus du point d'arrêt.  Cette zone est appelée « marge de navigation » et est utilisée pour le débogage d'historique.  Cliquez sur la flèche.  
   
@@ -79,7 +79,7 @@ private static int AddInt(int add)
   
      La fenêtre de code doit maintenant ressembler à ceci :  
   
-     ![fenêtre de code en mode débogage d’historique](../debugger/media/historicaldebuggingback.png "HistoricalDebuggingBack")  
+     ![fenêtre de code en mode débogage d’historique](~/docs/debugger/media/historicaldebuggingback.png "HistoricalDebuggingBack")  
   
 6.  À présent, vous pouvez effectuer un pas à pas détaillé dans la méthode `AddAll()` \(appuyez sur la touche **F11** ou sur le bouton **Pas à pas détaillé** dans la marge de navigation\).  Avancez \(touche **F10** ou bouton **Aller à l'appel suivant** dans la marge de navigation\).  Le trait rose est désormais sur la ligne `j = AddInt(j);`.  Appuyer sur la touche **F10** dans ce cas ne permet pas d'accéder à la ligne de code suivante.  En fait, vous accédez à l'appel de fonction suivant.  Le débogage d'historique permet de naviguer d'un appel à l'autre. Il ignore les lignes de code qui n'incluent pas d'appel de fonction.  
   

@@ -199,7 +199,7 @@ L’outil Visionneuse bibliothèque d’images Visual Studio peut charger et rec
   
  Les informations affichées pour chaque source d’image inclut le type d’arrière-plan pour l’afficher, si elle peut être à thème ou prend en charge le contraste élevé, les tailles est valide pour ou s’il est indépendant de la taille et si l’image provient d’un assembly natif.  
   
- ![Visionneuse de bibliothèque d’images - Possibilité d’appliquer un thème](../../extensibility/internals/media/image-library-viewer-can-theme.png "Image Library Viewer Can Theme")  
+ ![Visionneuse de bibliothèque d’images - Possibilité d’appliquer un thème](~/docs/extensibility/internals/media/image-library-viewer-can-theme.png "Image Library Viewer Can Theme")  
   
  Lorsque vous validez un manifeste de l’image, nous vous recommandons de déployer le manifeste et l’image de DLL dans leurs emplacements réels. Cette commande vérifie que les chemins d’accès relatifs sont fonctionne correctement et que la bibliothèque d’images peut rechercher et charger le manifeste et l’image de DLL.  
   

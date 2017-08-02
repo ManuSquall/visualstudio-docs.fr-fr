@@ -84,11 +84,11 @@ static void Main(string[] args) { int a, b, c; a = 1; b = 2; c = 0; for (int i =
   
  Par exemple, si vous avez le code présenté dans la section précédente, vous pouvez obtenir la moyenne des trois valeurs comme ceci :  
   
- ![WatchExpression](../debugger/media/watchexpression.png "WatchExpression")  
+ ![WatchExpression](~/docs/debugger/media/watchexpression.png "WatchExpression")  
   
  En général, les règles d’évaluation des expressions dans la fenêtre **Espion** sont les mêmes que dans votre langage de codage. Si votre expression contient une erreur de syntaxe, vous pouvez vous attendre à voir la même erreur de compilateur dans l’éditeur de code. Voici un exemple :  
   
- ![WatchExpressionError](../debugger/media/watchexpressionerror.png "WatchExpressionError")  
+ ![WatchExpressionError](~/docs/debugger/media/watchexpressionerror.png "WatchExpressionError")  
   
 ##  <a name="bkmk_refreshWatch"></a> Actualisation des valeurs obsolètes dans la fenêtre Espion  
  Dans certaines circonstances, une icône d’actualisation \(cercle avec deux flèches ou cercle avec deux lignes ondulées\) peut apparaître pendant l’évaluation d’une expression dans la fenêtre **Espion**.  Par exemple, si vous avez désactivé l’évaluation de propriété \(**Outils\/Options\/Débogage\/Activer l’évaluation de la propriété et d’autres appels de fonction implicite**\) et que vous avez le code suivant :  

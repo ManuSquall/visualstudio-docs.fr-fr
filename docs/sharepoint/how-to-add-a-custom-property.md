@@ -37,7 +37,7 @@ caps.handback.revision: 9
   
 2.  Dans la barre de menus, choisissez **Affichage**, **Fenêtre Propriétés**.  
   
-3.  Dans la fenêtre **Propriétés**, choisissez la propriété **Custom Properties**, puis choisissez le bouton de sélection \(![Bouton de sélection du concepteur ASP.NET mobile](../sharepoint/media/mwellipsis.png "Bouton de sélection du concepteur ASP.NET mobile")\).  
+3.  Dans la fenêtre **Propriétés**, choisissez la propriété **Custom Properties**, puis choisissez le bouton de sélection \(![Bouton de sélection du concepteur ASP.NET mobile](~/docs/sharepoint/media/mwellipsis.gif "Bouton de sélection du concepteur ASP.NET mobile")\).  
   
      La boîte de dialogue **Éditeur de propriétés** s'affiche.  
   

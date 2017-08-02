@@ -80,7 +80,7 @@ La fenêtre **Tâches** ressemble à la fenêtre **Threads**, excepté qu'elle a
 ## Vue Parent enfant  
  \(cette vue est uniquement disponible pour le code managé\) En cliquant avec le bouton droit sur un en\-tête de colonne et en cliquant ensuite sur **Vue Parent enfant**, vous pouvez transformer la liste de tâches en une vue hiérarchique, au sein de laquelle chaque tâche enfant constitue un sous\-nœud qui peut être affiché ou masqué sous son parent.  L'illustration suivante présente les tâches au sein de la vue parent\-enfant.  
   
- ![Vue parent&#45;enfant dans la fenêtre Tâches parallèles](../debugger/media/parallel_tasks_parentchildview.png "Parallel\_Tasks\_ParentChildView")  
+ ![Vue parent&#45;enfant dans la fenêtre Tâches parallèles](~/docs/debugger/media/parallel_tasks_parentchildview.png "Parallel\_Tasks\_ParentChildView")  
   
 ## Ajout d'indicateurs à des tâches  
  Vous pouvez marquer le thread sur lequel une tâche s'exécute en sélectionnant la tâche, puis en choisissant **Marquer** dans le menu contextuel, ou en cliquant sur l'icône d'indicateur dans la première colonne.  Si vous signalez plusieurs tâches, vous pouvez ensuite effectuer un tri sur la colonne d'indicateur pour déplacer toutes les tâches avec indicateur vers le haut afin de pouvoir vous concentrer uniquement sur celles\-ci.  Vous pouvez également utiliser la fenêtre **Piles parallèles** pour afficher uniquement les tâches avec indicateur.  Cela vous permet d'éliminer par filtrage les tâches qui ne vous intéressent pas pour le débogage.  Les indicateurs ne sont pas persistants entre les sessions de débogage.  

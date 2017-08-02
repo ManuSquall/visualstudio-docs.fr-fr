@@ -79,7 +79,7 @@ Ce document décrit l’utilisation du concepteur de nuanceur [!INCLUDE[vsprvs](
   
  Barre d’outils **Mode du concepteur de nuanceur** :  
   
- ![Barre d’outils modale du concepteur de nuanceur.](../designers/media/digit-dsd-modal-toolbar.png "Digit-DSD-Modal-Toolbar")  
+ ![Barre d’outils modale du concepteur de nuanceur.](~/docs/designers/media/digit-dsd-modal-toolbar.png "Digit-DSD-Modal-Toolbar")  
   
  Ce tableau décrit les éléments de la barre d’outils **Mode du concepteur de nuanceur**, répertoriés suivant l’ordre de leur affichage, de gauche à droite.  
   

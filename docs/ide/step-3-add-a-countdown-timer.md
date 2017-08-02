@@ -115,7 +115,7 @@ Dans la troisième partie de ce didacticiel, vous allez ajouter un temporisateur
   
      La minuterie commence le compte à rebours. Lorsque le temps est écoulé, le questionnaire se termine et la réponse s'affiche. L'illustration suivante montre le questionnaire en cours.  
   
-     ![Questionnaire mathématique en cours](../ide/media/express_addcountdown.png "Express_AddCountdown")  
+     ![Questionnaire mathématique en cours](~/docs/ide/media/express_addcountdown.png "Express_AddCountdown")  
 Questionnaire mathématique en cours  
   
 ### <a name="to-continue-or-review"></a>Pour continuer ou examiner  

@@ -58,17 +58,17 @@ La fenêtre interactive Visual Studio en mode IPython est un environnement de d�
 
 1. Si tout est correctement configuré, vous devriez obtenir quelque chose de similaire à ce qui suit :
 
-    ![Sortie de la configuration IPython ](media/ipython-repl-01.png)
+    ![Sortie de la configuration IPython ](~/docs/python/media/ipython-repl-01.png)
 
 1. Ouvrez Visual Studio, basculez vers la fenêtre des environnements Python (**View > Other Windows > Python Environments** [Affichage > Autres fenêtres > Environnements Python]), puis sélectionnez votre environnement Python.
 1. Examinez l’onglet **pip** et vérifiez que `IPython` et `matplotlib` sont répertoriés. Si ce n’est pas le cas, installez-les ici.
 1. Dans l’onglet **Vue d’ensemble**, sélectionnez **Configure interactive options** (Configurer les options interactives), définissez **Mode interactif** sur IPython, puis cliquez sur **OK** :
 
-    ![Définition du mode interactif sur IPython](media/ipython-repl-02.png)
+    ![Définition du mode interactif sur IPython](~/docs/python/media/ipython-repl-02.png)
 
 1. Sélectionnez **Open interactive window** (Ouvrir une fenêtre interactive) pour afficher la fenêtre interactive en mode IPython avec PyLab. Vous devrez peut-être réinitialiser la fenêtre si vous venez de modifier le mode interactif :
 
-    ![Fenêtre interactive en mode IPython](media/ipython-repl-03.png)
+    ![Fenêtre interactive en mode IPython](~/docs/python/media/ipython-repl-03.png)
 
 1. Entrez le code suivant :
 
@@ -80,7 +80,7 @@ La fenêtre interactive Visual Studio en mode IPython est un environnement de d�
 
 1. Après avoir entré la dernière ligne, vous devriez voir un graphique inline (que vous pouvez redimensionner en faisant glisser le coin inférieur droit, si vous le souhaitez).
 
-    ![Graphique inline dans la fenêtre interactive](media/ipython-repl-04.png)
+    ![Graphique inline dans la fenêtre interactive](~/docs/python/media/ipython-repl-04.png)
 
 1. Au lieu d’effectuer une saisie dans la boucle REPL, vous pouvez écrire du code dans l’éditeur, le sélectionner, cliquer dessus avec le bouton droit et sélectionner la commande **Envoyer vers Interactive** (Ctrl-E,E). Essayez de coller le code ci-dessous dans l’éditeur, de le sélectionner à l’aide des touches Ctrl + A, puis de l’envoyer dans la fenêtre interactive. (Notez que lorsque Visual Studio envoie du code dans la fenêtre interactive, il l’envoie en une seule unité pour éviter de vous donner des graphiques intermédiaires ou partiels.)
 
@@ -105,15 +105,15 @@ La fenêtre interactive Visual Studio en mode IPython est un environnement de d�
     plt.show()
     ```
 
-    ![Envoi de code de l’éditeur vers la fenêtre interactive](media/ipython-repl-05.png)
+    ![Envoi de code de l’éditeur vers la fenêtre interactive](~/docs/python/media/ipython-repl-05.png)
 
 1. Pour afficher les graphiques en dehors de la fenêtre interactive, exécutez le code en utilisant cette fois la commande **Debug > Start without Debugging** (Déboguer > Démarrer sans débogage).
     
 1. IPython comporte de nombreuses fonctions utiles, par exemple des fonctions de sortie vers l’interpréteur de commandes système, de substitution de variables, de capture de sortie, etc. Pour plus d’informations, reportez-vous au guide de référence IPython :
 
-    ![Sortie vers l’interpréteur de commandes système](media/ipython-repl-06.png)
+    ![Sortie vers l’interpréteur de commandes système](~/docs/python/media/ipython-repl-06.png)
 
 1. Vous pouvez également utiliser IPython en mode « bloc-notes » pour pouvoir utiliser n’importe quel navigateur sur n’importe quel système d’exploitation comme zone de dessin. Le moteur IPython principal peut résider en local sur votre ordinateur, ou bien distant. Azure prend en charge l’exécution [d’IPython sur une machine virtuelle Windows ou Linux](https://docs.microsoft.com/azure/virtual-machines/virtual-machines-linux-jupyter-notebook). Consultez également les [notebooks Azure en version préliminaire](https://notebooks.azure.com) pour accéder gratuitement à des blocs-notes Jupyter disponibles en tant que service sur Azure :
 
-    ![IPython en mode bloc-notes](media/ipython-repl-07.png)
+    ![IPython en mode bloc-notes](~/docs/python/media/ipython-repl-07.png)
 

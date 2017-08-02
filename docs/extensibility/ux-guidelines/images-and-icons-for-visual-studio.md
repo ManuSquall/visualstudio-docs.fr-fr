@@ -115,7 +115,7 @@ ms.lasthandoff: 05/04/2017
 |||  
 |-|-|  
 |**Icônes d’arborescence correcte**|**Icônes d’arborescence incorrecte**|  
-|![Icône d’arborescence correcte &#40; 1 &#41; ] (../../extensibility/ux-guidelines/media/0404-11_treeviewcorrect1.png "0404-11_TreeViewCorrect1") ![corriger l’icône d’arborescence &#40; 2 &#41;] (../../extensibility/ux-guidelines/media/0404-12_treeviewcorrect2.png "0404-12_TreeViewCorrect2")|![Icône d’arborescence incorrecte &#40; 1 &#41; ] (../../extensibility/ux-guidelines/media/0404-13_treeviewincorrect1.png "0404-13_TreeViewIncorrect1") ![incorrecte icône d’arborescence &#40; 2 &#41;] (../../extensibility/ux-guidelines/media/0404-14_treeviewincorrect2.png "0404-14_TreeViewIncorrect2")|  
+|![Icône d’arborescence correcte &#40; 1 &#41; ] (../../extensibility/ux-guidelines/media/0404-11_treeviewcorrect1.png "0404-11_TreeViewCorrect1") ![corriger l’icône d’arborescence &#40; 2 &#41;] (~/docs/extensibility/ux-guidelines/media/0404-12_treeviewcorrect2.png "0404-12_TreeViewCorrect2")|![Icône d’arborescence incorrecte &#40; 1 &#41; ] (../../extensibility/ux-guidelines/media/0404-13_treeviewincorrect1.png "0404-13_TreeViewIncorrect1") ![incorrecte icône d’arborescence &#40; 2 &#41;] (../../extensibility/ux-guidelines/media/0404-14_treeviewincorrect2.png "0404-14_TreeViewIncorrect2")|  
   
 ### <a name="style-details"></a>Détails de style  
   
@@ -132,7 +132,7 @@ ms.lasthandoff: 05/04/2017
   
  Icônes de projet sont généralement les fichiers .ico qui contiennent plusieurs tailles. La plupart des icônes 16 x 16 contiennent les mêmes éléments. Les versions de 32 x 32 ont plus de détails, notamment le type de projet, le cas échéant.  
   
- ![Icônes de projet dans Visual Studio](../../extensibility/ux-guidelines/media/0404-18_iconprojectthreesizes.png "0404-18_IconProjectThreeSizes")<br />Icônes de projet de bibliothèque de contrôles Windows VB, 16 x 16 et 32 x 32 
+ ![Icônes de projet dans Visual Studio](~/docs/extensibility/ux-guidelines/media/0404-18_iconprojectthreesizes.png "0404-18_IconProjectThreeSizes")<br />Icônes de projet de bibliothèque de contrôles Windows VB, 16 x 16 et 32 x 32 
   
  Centre une icône dans son frame de pixels. Si ce n’est pas possible, aligner l’icône en haut et/ou à droite de l’image.  
   
@@ -154,7 +154,7 @@ ms.lasthandoff: 05/04/2017
 |||  
 |-|-|  
 |**Parité de taille correcte**|**Parité de taille incorrecte**|  
-|![Corriger la taille d’icône et la parité](../../extensibility/ux-guidelines/media/0404-24_sizeparitycorrect.png "0404-24_SizeParityCorrect")|![Taille d’icône incorrect et la parité](../../extensibility/ux-guidelines/media/0404-25_sizeparityincorrect.png "0404-25_SizeParityIncorrect")|  
+|![Corriger la taille d’icône et la parité](~/docs/extensibility/ux-guidelines/media/0404-24_sizeparitycorrect.png "0404-24_SizeParityCorrect")|![Taille d’icône incorrect et la parité](../../extensibility/ux-guidelines/media/0404-25_sizeparityincorrect.png "0404-25_SizeParityIncorrect")|  
   
  Utilisez ligne cohérente et poids visual. Évaluer la différence entre aux autres icônes de l’icône que vous créez à l’aide d’une comparaison côte-à-côte. Utilisez l’image 16 x 16 entière, n’utilisez jamais 15 x 15 ou plus petites. Le rapport de (dark-clair) négatif à positif doit être 50/50.  
   

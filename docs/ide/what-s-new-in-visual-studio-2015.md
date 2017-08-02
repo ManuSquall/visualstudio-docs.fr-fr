@@ -64,7 +64,7 @@ Bienvenue dans Visual Studio 2015, une suite intégrée d'outils de productivit
 ### Applications Windows universelles pour tout appareil Windows 10  
  Avec la plateforme Windows universelle et notre noyau Windows, vous pouvez exécuter la même application sur n'importe quel appareil Windows 10, des téléphones jusqu'aux ordinateurs de bureau. Créez ces applications Windows universelles avec Visual Studio 2015 et les outils de développement d’applications Windows universelles.  
   
- ![Plateforme Windows universelle](../cross-platform/media/uwp_coreextensions.png "UWP\_CoreExtensions")  
+ ![Plateforme Windows universelle](~/docs/cross-platform/media/uwp_coreextensions.png "UWP\_CoreExtensions")  
   
  Exécutez votre application sur un téléphone Windows 10, un Bureau Windows 10 ou une console Xbox. C’est le même package d’application \! Avec l’introduction d’un noyau unifié unique dans Windows 10, le même package d’application peut s’exécuter sur toutes les plateformes. Plusieurs plateformes ont des kits de développement logiciel \(SDK\) Extension que vous pouvez ajouter à votre application pour tirer parti des comportements spécifiques à une plateforme. Par exemple, un SDK d’extension pour mobile gère le comportement du bouton Précédent sur un Windows Phone. Si vous référencez un SDK d’extension dans votre projet, il vous suffit ensuite d’ajouter des vérifications à l’exécution pour vérifier si ce SDK est disponible sur cette plateforme. C’est comme cela que vous pouvez utiliser le même package d’application pour toutes les plateformes \!  
   
@@ -95,7 +95,7 @@ Bienvenue dans Visual Studio 2015, une suite intégrée d'outils de productivit
 ## Barre de menus Aperçu de l'appareil  
  Dans les projets de plateforme Windows universelle, la barre de menus Aperçu de l'appareil vous permet de voir comment votre interface utilisateur basée sur XAML sera rendue dans différentes tailles d'écran.  
   
- ![Menu Aperçu de l'appareil](../ide/media/vs2015_device_preview.png "vs2015\_device\_preview")  
+ ![Menu Aperçu de l'appareil](~/docs/ide/media/vs2015_device_preview.png "vs2015\_device\_preview")  
   
 ## Diagnostics des graphiques Visual Studio  
  Depuis Visual Studio 2013, Diagnostics des graphiques Visual Studio a ajouté de nombreuses nouvelles fonctionnalités, y compris l'analyse des frames, la prise en charge de Windows Phone, la modification et l'application de nuanceur, ainsi que des outils de capture de ligne de commande. La prise en charge du débogage des applications DirectX12 a également été ajoutée. Pour plus d'informations, consultez [Diagnostics des graphiques Visual Studio](../debugger/visual-studio-graphics-diagnostics.md).  
@@ -168,7 +168,7 @@ Bienvenue dans Visual Studio 2015, une suite intégrée d'outils de productivit
 ### Images en haute résolution et prise en charge de l'interface tactile  
  L'IDE de Visual Studio dispose désormais de véritables images en haute définition pour les affichages plus denses \(dans les zones comme les menus, les menus contextuels, les barres de commandes de la fenêtre Outil, ainsi que dans certains projets de l'Explorateur de solutions\). En outre, sur un écran tactile, dans la fenêtre de l'éditeur de code Visual Studio, vous pouvez maintenant utiliser des actions telles que maintenir appuyé, pincer, appuyer, etc., pour zoomer, faire défiler, sélectionner du texte ou appeler des menus contextuels.  
   
- ![Prise en charge de l’interface tactile dans l’éditeur](../ide/media/vs2015_touchsupport.png "VS2015\_TouchSupport")  
+ ![Prise en charge de l’interface tactile dans l’éditeur](~/docs/ide/media/vs2015_touchsupport.png "VS2015\_TouchSupport")  
   
 ### Dispositions personnalisées  
  Vous pouvez créer, stocker et rendre itinérantes des dispositions de fenêtres personnalisées. Par exemple, vous pouvez définir une disposition favorite à utiliser sur votre ordinateur de bureau, et une autre disposition à utiliser sur un ordinateur portable ou un appareil avec un petit écran. Vous pouvez également préférer une disposition particulière pour un projet d'interface utilisateur, et une autre pour un projet de base de données. Les combinaisons de touches vous permettent de passer rapidement d'une disposition à une autre. Ces dispositions sont accessibles dans toutes les instances de Visual Studio quand vous êtes connecté. Pour plus d'informations, consultez [Créer des dispositions de fenêtres personnalisées](../misc/create-custom-window-layouts.md).  
@@ -189,7 +189,7 @@ Bienvenue dans Visual Studio 2015, une suite intégrée d'outils de productivit
   
 -   Consulter un graphique indiquant les personnes qui ont modifié votre code. Cette fonctionnalité vous permet de découvrir des modèles dans les modifications effectuées par votre équipe, et d’en évaluer l’impact.  
   
-     ![CodeLens : voir l'historique des modifications du code sous forme de graphique](../ide/media/codelens.png "CodeLens")  
+     ![CodeLens : voir l'historique des modifications du code sous forme de graphique](~/docs/ide/media/codelens.png "CodeLens")  
   
 -   Afficher rapidement la date de dernière modification de votre code.  
   
@@ -204,7 +204,7 @@ Bienvenue dans Visual Studio 2015, une suite intégrée d'outils de productivit
   
  Dans cette version, nous avons simplifié l'utilisation des liens et des menus contextuels pour les éléments de code en regroupant les commandes dans des sections en rapport avec la sélection, la modification, la gestion des groupes et la modification de la disposition du contenu des groupes. Notez également que les projets de test sont affichés dans un style différent des autres projets et que nous avons mis à jour les icônes des éléments sur la carte avec des versions plus appropriées.  
   
- ![Afficher les éléments sélectionnés dans une nouvelle carte du code](../ide/media/codemapsshowonnewmap.png "CodeMapsShowOnNewMap")  
+ ![Afficher les éléments sélectionnés dans une nouvelle carte du code](~/docs/ide/media/codemapsshowonnewmap.png "CodeMapsShowOnNewMap")  
   
  Voici quelques autres améliorations qui ont été apportées :  
   

@@ -42,9 +42,9 @@ Le simulateur Visual Studio pour les applications Windows Store est une applicat
 ##  <a name="BKMK_Choose_an_interaction_mode"></a> Choisir un mode d'interaction  
  Vous avez le choix entre les modes d’interaction suivants  
   
--   ![Bouton de mode de la souris](../debugger/media/simulator_mousemodebtn.png "SIMULATOR\_MouseModeBtn") Mode de la souris : définit le mode d’interaction sur les mouvements de la souris. Les mouvements de souris incluent les clics, les double\-clics et le déplacement d'objets par glissement.  
+-   ![Bouton de mode de la souris](~/docs/debugger/media/simulator_mousemodebtn.png "SIMULATOR\_MouseModeBtn") Mode de la souris : définit le mode d’interaction sur les mouvements de la souris. Les mouvements de souris incluent les clics, les double\-clics et le déplacement d'objets par glissement.  
   
--   ![Bouton de démarrage de l'émulation tactile](../debugger/media/simulator_starttouchemulationbtn.png "SIMULATOR\_StartTouchEmulationBtn") Démarrer l’émulation tactile : définit le mode d’interaction sur les mouvements tactiles à l’aide d’un seul doigt. Les événements à un seul doigt incluent la pression simple, le déplacement et le glissement.  
+-   ![Bouton de démarrage de l'émulation tactile](~/docs/debugger/media/simulator_starttouchemulationbtn.png "SIMULATOR\_StartTouchEmulationBtn") Démarrer l’émulation tactile : définit le mode d’interaction sur les mouvements tactiles à l’aide d’un seul doigt. Les événements à un seul doigt incluent la pression simple, le déplacement et le glissement.  
   
      ![Simulator one finger target](../debugger/media/simulator_onefinger.png "SIMULATOR\_OneFinger") L’icône de cible unique indique l’emplacement des événements dans le simulateur. Utilisez la souris pour positionner le pointeur.  
   
@@ -53,7 +53,7 @@ Le simulateur Visual Studio pour les applications Windows Store est une applicat
 ## Pincement de deux doigts pour zoomer  
  Définit le mode d'interaction pour utiliser le pincement de deux doigts pour zoomer.  
   
--   ![Siimulator two finger target](../debugger/media/simulator_twofinger.png "SIMULATOR\_TwoFinger")  
+-   ![Siimulator two finger target](~/docs/debugger/media/simulator_twofinger.png "SIMULATOR\_TwoFinger")  
   
      L'icône double cible indique l'emplacement des deux doigts sur l'écran du périphérique.  
   
@@ -108,7 +108,7 @@ Le simulateur Visual Studio pour les applications Windows Store est une applicat
   
 -   Pour définir l’emplacement où se trouve les captures d’écran, sélectionnez le bouton **Paramètres de capture d’écran** et sélectionnez l’emplacement dans le menu contextuel.  
   
-     ![Menu contextuel des paramètres de capture d’écran](../debugger/media/simulator_screenshotsettingscntxmnu.png "SIMULATOR\_ScreenShotSettingsCntxMnu")  
+     ![Menu contextuel des paramètres de capture d’écran](~/docs/debugger/media/simulator_screenshotsettingscntxmnu.png "SIMULATOR\_ScreenShotSettingsCntxMnu")  
   
 ##  <a name="BKMK_Simulate_network_connection_properties"></a> Simuler des propriétés de connexion réseau  
  Vous pouvez aider les utilisateurs de votre application à gérer le coût des connexions réseau limitées en faisant bien comprendre le coût des connexions réseau ou les modifications de l'état du forfait données et en permettant à votre application d'utiliser ces informations pour éviter de subir des frais d'itinérance supplémentaires ou de dépasser la limite de transfert de données spécifiée. Les API [Windows.Networking.Connectivity](https://msdn.microsoft.com/en-us/library/windows/apps/windows.networking.connectivity.aspx) vous permettent de répondre aux événements [NetworkStatusChanged](https://msdn.microsoft.com/en-us/library/windows/apps/windows.networking.connectivity.networkinformation.networkstatuschanged.aspx) et [TriggerType](https://msdn.microsoft.com/en-us/library/windows/apps/windows.applicationmodel.background.systemtrigger.triggertype.aspx) qui assurent la connexion. Consultez [Comment gérer les contraintes liées au coût des connexions réseau limitées \(HTML\)](http://msdn.microsoft.com/library/windows/apps/Hh750310.aspx).  

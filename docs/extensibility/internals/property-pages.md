@@ -32,7 +32,7 @@ Les utilisateurs peuvent afficher et modifier le projet selon la configuration e
   
  Il existe deux types généraux de boîtes de dialogue de **ProjetPages de propriétés** disponibles dans [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)].  Dans le premier, pour les projets Visual Basic, par exemple, les pages de propriétés sont affichées en utilisant un format de champ, comme indiqué dans la capture d'écran suivante.  Dans la deuxième, indiqué plus loin dans cette section, la page de propriétés héberge une grille de propriétés similaire à celle située dans la fenêtre Propriétés.  
   
- ![Pages de propriétés Visual Basic](../../extensibility/internals/media/vsvbproppages.png "vsVBPropPages")  
+ ![Pages de propriétés Visual Basic](~/docs/extensibility/internals/media/vsvbproppages.gif "vsVBPropPages")  
 Boîte de dialogue pages de propriétés du projet au format et l'arborescence de champ  
   
  L'arborescence dans la boîte de dialogue pages de propriétés n'est pas générée à <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchy>.  L'environnement, selon le nom de niveau passé par <xref:Microsoft.VisualStudio.OLE.Interop.ISpecifyPropertyPages> et les interfaces d' <xref:Microsoft.VisualStudio.Shell.Interop.IVsPropertyPage> , le génère l'erreur.  
@@ -57,7 +57,7 @@ Boîte de dialogue pages de propriétés du projet au format et l'arborescence d
   
  Le second type de pages de propriétés affichées dans les exemples héberge un formulaire de la grille des propriétés, comme indiqué dans la capture d'écran suivante.  
   
- ![Pages de propriétés VC](../../extensibility/internals/media/vsvcproppages.gif "vsVCPropPages")  
+ ![Pages de propriétés VC](~/docs/extensibility/internals/media/vsvcproppages.gif "vsVCPropPages")  
 Boîte de dialogue pages de propriétés avec la grille des propriétés  
   
  les interfaces `IVSMDPropertyBrowser` et `IVSMDPropertyGrid` \(déclarés dans vsmanaged.h\) sont utilisées pour créer et remplir la grille des propriétés dans une boîte de dialogue ou une fenêtre.  
