@@ -69,7 +69,7 @@ Les cartes de code peuvent vous éviter de vous perdre dans les bases de code vo
   
  ![Carte de code &#45; Rechercher toutes les références](../modeling/media/codemapstoryboardpaint6.png "CodeMapStoryboardPaint6")  
   
- ![Ouvrir une carte du code à partir de l'éditeur de code](../modeling/media/codemapstoryboardpaint6a.png "CodeMapStoryboardPaint6A")  
+ ![Ouvrir une carte du code à partir de l'éditeur de code](~/modeling/media/codemapstoryboardpaint6a.PNG "CodeMapStoryboardPaint6A")  
   
 > [!NOTE]
 >  Si vous ajoutez des éléments à partir d'un projet partagé par plusieurs applications, comme Windows Phone ou Windows Store, ces éléments apparaissent toujours avec le projet d'application actif sur la carte.  Ainsi, si vous changez de contexte vers un autre projet d'application, le contexte sur la carte change également pour tout élément récemment ajouté à partir du projet partagé.  Les opérations que vous effectuez avec un élément de la carte s'appliquent uniquement aux éléments qui partagent le même contexte.  

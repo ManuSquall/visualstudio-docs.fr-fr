@@ -34,7 +34,7 @@ caps.handback.revision: 58
   
  [!INCLUDE[appliesto_olkallapp](../vsto/includes/appliesto-olkallapp-md.md)]  
   
- ![lien vers la vidéo](../vsto/media/playvideo.png "lien vers la vidéo") Pour visionner la démonstration vidéo associée, consultez [Comment : utiliser Outlook pour créer un rapport des tâches personnalisé](http://go.microsoft.com/fwlink/?LinkID=130315).  
+ ![lien vers la vidéo](~/data-tools/media/playvideo.gif "lien vers la vidéo") Pour visionner la démonstration vidéo associée, consultez [Comment : utiliser Outlook pour créer un rapport des tâches personnalisé](http://go.microsoft.com/fwlink/?LinkID=130315).  
   
 ## Accès aux objets dans un projet Outlook  
  Outlook fournit de nombreux objets avec lesquels vous pouvez interagir. Pour utiliser le modèle objet efficacement, vous devez être familiarisé avec les objets de niveau supérieur suivants :  

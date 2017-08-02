@@ -50,7 +50,7 @@ Les styles et les modèles des éléments du concepteur XAML sont stockés dans 
   
      La boîte de dialogue appropriée pour la création d'une ressource s'affiche. Cette boîte de dialogue apparaît quand vous créez une ressource à partir d'un pinceau :  
   
-     ![Boîte de dialogue Créer une ressource](../designers/media/xaml_create_resource.png "xaml_create_resource")  
+     ![Boîte de dialogue Créer une ressource](~/designers/media/xaml_create_resource.png "xaml_create_resource")  
   
 3.  Dans la zone **Nom (Clé)**, entrez un nom de clé. C'est le nom que vous pouvez utiliser pour que d'autres éléments fassent référence à la ressource.  
   

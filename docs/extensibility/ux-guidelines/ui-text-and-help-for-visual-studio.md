@@ -65,7 +65,7 @@ caps.handback.revision: 2
   
  **Texte supplémentaire dans Visual Studio**  
   
- ![Supplemental text in Visual Studio](../../extensibility/ux-guidelines/media/0601-c_supplementaltext2.png "0601\-c\_SupplementalText2")  
+ ![Supplemental text in Visual Studio](~/extensibility/ux-guidelines/media/0601-c_supplementaltext2.png "0601\-c\_SupplementalText2")  
   
  **Texte supplémentaire dans Visual Studio**  
   
@@ -108,7 +108,7 @@ caps.handback.revision: 2
   
 -   Lors du lancement de boîtes de dialogue, mettre à jour les normes des ellipses : aucune sélection pour la navigation, si la tâche requiert l'interface utilisateur supplémentaire des points de suspension.  
   
-     ![Help link in Visual Studio](../../extensibility/ux-guidelines/media/0601-e_helplink.png "0601\-e\_HelpLink")  
+     ![Help link in Visual Studio](~/extensibility/ux-guidelines/media/0601-e_helplink.png "0601\-e\_HelpLink")  
   
      **Points de suspension \(...\) dans l'aide un lien indique la tâche requiert l'interface utilisateur supplémentaire.**  
   
@@ -260,7 +260,7 @@ caps.handback.revision: 2
   
 |Bon|Incorrecte|  
 |---------|----------------|  
-|« Le nombre que vous avez composé n'est plus en service. Veuillez vérifier le numéro et recomposer ou composez le 0 pour l'opérateur ».|-   « Erreur \(449\): nombre non conforme »<br />-   « Cette erreur d'exception non prise en charge indique que l'opération a réussi. »<br /><br /> ![Bad error message in Visual Studio](../../extensibility/ux-guidelines/media/0602-a_errordialog.png "0602\-a\_ErrorDialog")|  
+|« Le nombre que vous avez composé n'est plus en service. Veuillez vérifier le numéro et recomposer ou composez le 0 pour l'opérateur ».|-   « Erreur \(449\): nombre non conforme »<br />-   « Cette erreur d'exception non prise en charge indique que l'opération a réussi. »<br /><br /> ![Bad error message in Visual Studio](~/extensibility/ux-guidelines/media/0602-a_errordialog.png "0602\-a\_ErrorDialog")|  
   
 ## Accéder à l'aide  
   

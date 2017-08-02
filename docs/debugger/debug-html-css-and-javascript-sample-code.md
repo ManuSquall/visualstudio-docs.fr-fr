@@ -23,7 +23,7 @@ caps.handback.revision: 13
 # D&#233;boguer un exemple de code HTML, CSS et JavaScript
 [!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
 
-![S'applique à Windows et Windows Phone](../debugger/media/windows_and_phone_content.png "windows\_and\_phone\_content")  
+![S'applique à Windows et Windows Phone](~/debugger/media/windows_and_phone_content.png "windows\_and\_phone\_content")  
   
  Le code dans cette rubrique est l'exemple de fichier pour [Démarrage rapide : déboguer du code HTML et CSS](../debugger/quickstart-debug-html-and-css.md).  Les erreurs présentes par conception dans le guide de démarrage rapide sont résolues dans cette version du code.  
   

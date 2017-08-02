@@ -79,11 +79,11 @@ private void button_Click(object sender, RoutedEventArgs e)
   
  Quand la fenêtre apparaît, cliquez sur le bouton **Ajouter un élément** deux fois.  Vous devez voir quelque chose de similaire à :  
   
- ![Fenêtre principale de l'application](../debugger/media/livevisualtree-app.png "LiveVIsualTree\-App")  
+ ![Fenêtre principale de l'application](~/debugger/media/livevisualtree-app.png "LiveVIsualTree\-App")  
   
  À présent, ouvrez la fenêtre **Arborescence d'éléments visuels dynamique** \(**Déboguer \/ Windows \/ Arborescence d'éléments visuels dynamique** ou recherchez\-la sur le côté gauche de l'IDE\).  Faites\-la glisser hors de sa position d'ancrage afin de la positionner à côté de la fenêtre **Propriétés dynamiques**.  Dans la fenêtre **Arborescence d'éléments visuels dynamique**, développez le nœud **ContentPresenter**.  Il doit contenir des nœuds pour le bouton et la zone de liste.  Développez la zone de liste \(puis **ScrollContentPresenter** et **ItemsPresenter**\) pour rechercher les éléments de zone de liste.  La fenêtre doit ressembler à ceci :  
   
- ![ListBoxItems dans l'arborescence d'éléments visuels dynamique](../debugger/media/livevisualtree-listboxitems.png "LiveVisualTree\-ListBoxItems")  
+ ![ListBoxItems dans l'arborescence d'éléments visuels dynamique](~/debugger/media/livevisualtree-listboxitems.png "LiveVisualTree\-ListBoxItems")  
   
  Revenez à la fenêtre d'application et ajoutez quelques éléments.  Vous devriez voir des éléments de zone de liste supplémentaires dans l'**arborescence d'éléments visuels dynamique**.  
   
@@ -95,7 +95,7 @@ private void button_Click(object sender, RoutedEventArgs e)
   
  **Afficher les ornements de disposition dans l'application en cours d'exécution**.  Vous pouvez activer ce mode quand vous sélectionnez le bouton situé immédiatement à droite du bouton Activer la sélection.  Quand l'option **Afficher les ornements de disposition** est activée, la fenêtre d'application affiche des lignes horizontales et verticales le long des limites de l'objet sélectionné pour vous permettre de voir avec quoi il est aligné, ainsi que des rectangles montrant les marges.  Par exemple, activez les deux options **Activer la sélection** et **Afficher la disposition**, puis sélectionnez le bloc de texte **Ajouter un élément** dans l'application.  Vous devez voir le nœud du bloc de texte dans l'**arborescence d'éléments visuels dynamique** et les propriétés du bloc de texte dans la **visionneuse de propriétés dynamique**, ainsi que les lignes horizontales et verticales sur les limites du bloc de texte.  
   
- ![LivePropertyViewer dans DisplayLayout](../debugger/media/livevisualtreelivepropertyviewer-displaylayout.png "LiveVisualTreeLivePropertyViewer\-DisplayLayout")  
+ ![LivePropertyViewer dans DisplayLayout](~/debugger/media/livevisualtreelivepropertyviewer-displaylayout.png "LiveVisualTreeLivePropertyViewer\-DisplayLayout")  
   
  **Aperçu de la sélection**.  Vous pouvez activer ce mode en sélectionnant le troisième bouton en partant de la gauche dans la barre d'outils de l'arborescence d'éléments visuels dynamique.  Ce mode affiche le code XAML dans lequel l'élément a été déclaré, si vous avez accès au code source de l'application.  Sélectionnez **Activer la sélection** et **Aperçu de la sélection**, puis sélectionnez le bouton figurant dans l'application de test.  Le fichier MainWindow.xaml s'ouvre dans Visual Studio et le curseur est placé sur la ligne où le bouton est défini.  
   

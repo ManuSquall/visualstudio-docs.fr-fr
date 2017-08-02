@@ -128,7 +128,7 @@ caps.handback.revision: 58
   
      L'illustration suivante représente la structure du dossier de publication pour un complément VSTO Outlook.  
   
-     ![Structure du dossier de publication](../vsto/media/publishfolderstructure.png "Structure du dossier de publication")  
+     ![Structure du dossier de publication](~/vsto/media/publishfolderstructure.png "Structure du dossier de publication")  
   
     > [!NOTE]  
     >  ClickOnce ajoute l'extension .deploy aux assemblys afin qu'une installation sécurisée d'Internet Information Services \(IIS\) ne bloque pas les fichiers en raison d'une extension non sécurisée.  Lorsque l'utilisateur installe la solution, ClickOnce supprime l'extension .deploy.  
@@ -451,7 +451,7 @@ caps.handback.revision: 58
   
      L'illustration suivante représente la structure des dossiers de publication de cet exemple.  
   
-     ![Structure du dossier de publication](../vsto/media/publishfolderstructure.png "Structure du dossier de publication")  
+     ![Structure du dossier de publication](~/vsto/media/publishfolderstructure.png "Structure du dossier de publication")  
   
      Le changement de manifeste de déploiement sera détecté la prochaine fois qu'un utilisateur ouvre l'application ou le document personnalisé.  La version antérieure de la solution Office s'exécute depuis le cache ClickOnce.  
   

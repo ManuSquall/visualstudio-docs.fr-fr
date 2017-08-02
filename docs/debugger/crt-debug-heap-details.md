@@ -144,7 +144,7 @@ typedef struct _CrtMemBlockHeader
  Nouveaux objets \(0xCD\)  
  Les nouveaux objets contiennent 0xCD lorsqu'ils sont alloués.  
   
- ![Retour au début](../debugger/media/pcs_backtotop.png "PCS\_BackToTop") [Sommaire](#BKMK_Contents)  
+ ![Retour au début](~/debugger/media/pcs_backtotop.png "PCS\_BackToTop") [Sommaire](#BKMK_Contents)  
   
 ##  <a name="BKMK_Types_of_blocks_on_the_debug_heap"></a> Types de bloc sur le tas de débogage  
  Chaque bloc de mémoire dans le tas de débogage est assigné à l'un des cinq types d'allocations.  Ces types sont suivis et reportés différemment pour la détection des fuites et la création de rapports d'état.  Vous pouvez spécifier un type de bloc en l'allouant avec un appel direct à l'une des fonctions d'allocation du tas de débogage, telles que [\_malloc\_dbg](/visual-cpp/c-runtime-library/reference/malloc-dbg).  Les cinq types de bloc de mémoire dans le tas de débogage \(défini dans le membre **nBlockUse** de la structure **\_CrtMemBlockHeader**\) sont les suivants :  
@@ -178,7 +178,7 @@ freedbg(pbData, _CLIENT_BLOCK|(MYSUBTYPE<<16));
 #define _BLOCK_SUBTYPE(block)       (block >> 16 & 0xFFFF)  
 ```  
   
- ![Retour au début](../debugger/media/pcs_backtotop.png "PCS\_BackToTop") [Sommaire](#BKMK_Contents)  
+ ![Retour au début](~/debugger/media/pcs_backtotop.png "PCS\_BackToTop") [Sommaire](#BKMK_Contents)  
   
 ##  <a name="BKMK_Check_for_heap_integrity_and_memory_leaks"></a> Contrôler l'intégrité et les fuites de mémoire de tas  
  L'accès à de nombreuses fonctionnalités du tas de débogage doit s'effectuer à partir de votre code.  La section suivante décrit certaines fonctionnalités et la façon de les utiliser.  
@@ -199,7 +199,7 @@ freedbg(pbData, _CLIENT_BLOCK|(MYSUBTYPE<<16));
 |**\_CRTDBG\_CHECK\_CRT\_DF**|Off|Entraîne l'inclusion des blocs marqués avec le type **\_CRT\_BLOCK** dans les opérations de détection des fuites et de différence des états.  Lorsque ce bit est à 0, la mémoire utilisée en interne par la bibliothèque Runtime est ignorée pendant ces opérations.|  
 |**\_CRTDBG\_LEAK\_CHECK\_DF**|Off|Provoque une vérification des fuites à l'arrêt du programme par l'intermédiaire d'un appel à **\_CrtDumpMemoryLeaks**.  Un rapport d'erreurs est généré si l'application n'a pas pu libérer toute la mémoire qu'elle a allouée.|  
   
- ![Retour au début](../debugger/media/pcs_backtotop.png "PCS\_BackToTop") [Sommaire](#BKMK_Contents)  
+ ![Retour au début](~/debugger/media/pcs_backtotop.png "PCS\_BackToTop") [Sommaire](#BKMK_Contents)  
   
 ##  <a name="BKMK_Configure_the_debug_heap"></a> Configurer le tas de débogage  
  Tous les appels aux fonctions du tas, telles que `malloc`, `free`, `calloc`, `realloc`, `new` et `delete`, sont traduits dans les versions Debug de ces fonctions qui opèrent dans le tas de débogage.  Lorsque vous libérez un bloc de mémoire, le tas de débogage vérifie automatiquement l'intégrité des mémoires tampons de chaque côté de votre zone allouée et envoie un rapport d'erreur si un remplacement a eu lieu.  
@@ -234,7 +234,7 @@ tmpFlag &= ~_CRTDBG_CHECK_CRT_DF;
 _CrtSetDbgFlag( tmpFlag );  
 ```  
   
- ![Retour au début](../debugger/media/pcs_backtotop.png "PCS\_BackToTop") [Sommaire](#BKMK_Contents)  
+ ![Retour au début](~/debugger/media/pcs_backtotop.png "PCS\_BackToTop") [Sommaire](#BKMK_Contents)  
   
 ##  <a name="BKMK_new__delete__and__CLIENT_BLOCKs_in_the_C___debug_heap"></a> nouveau, supprimer et \_CLIENT\_BLOCKs dans le tas de débogage C\+\+  
  Les versions de débogage de la bibliothèque Runtime C contiennent les versions de débogage des opérateurs C\+\+ `new` et `delete`.  Si vous utilisez le type d'allocation `_CLIENT_BLOCK`, vous devez appeler la version Debug de l'opérateur `new` directement ou créer des macros qui remplacent l'opérateur `new` en mode debug, comme le montre l'exemple suivant :  
@@ -272,7 +272,7 @@ int main( )   {
   
  La version Debug de l'opérateur `delete` fonctionne avec tous les types de bloc et ne nécessite aucune modification dans votre programme lorsque vous compilez une version Release.  
   
- ![Retour au début](../debugger/media/pcs_backtotop.png "PCS\_BackToTop") [Sommaire](#BKMK_Contents)  
+ ![Retour au début](~/debugger/media/pcs_backtotop.png "PCS\_BackToTop") [Sommaire](#BKMK_Contents)  
   
 ##  <a name="BKMK_Heap_State_Reporting_Functions"></a> Fonctions de création de rapports sur l'état du tas  
  **\_CrtMemState**  
@@ -309,7 +309,7 @@ typedef struct _CrtMemState
 |[\_CrtMemDumpAllObjectsSince](/visual-cpp/c-runtime-library/reference/crtmemdumpallobjectssince)|Fait un dump des informations sur tous les objets alloués depuis la capture d'un instantané donné du tas ou le début de l'exécution.  Chaque fois qu'elle fait un dump d'un bloc **\_CLIENT\_BLOCK**, elle appelle une fonction de raccordement fournie par l'application, si une telle fonction a été installée à l'aide de la routine **\_CrtSetDumpClient**.|  
 |[\_CrtDumpMemoryLeaks](/visual-cpp/c-runtime-library/reference/crtdumpmemoryleaks)|Détermine si des fuites de mémoire se sont produites depuis le début de l'exécution du programme et, dans ce cas, fait un dump de tous les objets alloués.  Chaque fois que la fonction **\_CrtDumpMemoryLeaks** fait un dump d'un bloc **\_CLIENT\_BLOCK**, elle appelle une fonction de raccordement fournie par l'application, si une telle fonction a été installée à l'aide de la routine **\_CrtSetDumpClient**.|  
   
- ![Retour au début](../debugger/media/pcs_backtotop.png "PCS\_BackToTop") [Sommaire](#BKMK_Contents)  
+ ![Retour au début](~/debugger/media/pcs_backtotop.png "PCS\_BackToTop") [Sommaire](#BKMK_Contents)  
   
 ##  <a name="BKMK_Track_Heap_Allocation_Requests"></a> Suivre les demandes d'allocation du tas  
  La localisation du nom du fichier source et du numéro de ligne où une macro d'assertion ou de création de rapports est exécutée facilite souvent l'identification de la cause d'un problème. Dans le cas des fonctions d'allocation du tas, cela est moins sûr.  Alors que les macros peuvent être insérées en de nombreux points appropriés dans l'arborescence logique d'une application, une allocation est souvent enfouie dans une routine spéciale appelée à partir de nombreux emplacements distincts et à différentes heures.  En général, la question n'est pas de savoir quelle ligne de code a effectué une mauvaise allocation, mais plutôt quelle est, parmi les milliers d'allocations effectuées par cette ligne de code, celle qui était incorrecte, et pour quelle raison elle l'était.  
@@ -364,7 +364,7 @@ int addNewRecord(struct RecStruct *prevRecord,
   
  Dorénavant, le nom du fichier source et le numéro de ligne où `addNewRecord` a été appelé seront stockés à l'intérieur de chaque bloc résultant alloué dans le tas de débogage et seront reportés lors de l'examen de ce bloc.  
   
- ![Retour au début](../debugger/media/pcs_backtotop.png "PCS\_BackToTop") [Sommaire](#BKMK_Contents)  
+ ![Retour au début](~/debugger/media/pcs_backtotop.png "PCS\_BackToTop") [Sommaire](#BKMK_Contents)  
   
 ## Voir aussi  
  [Débogage du code natif](../debugger/debugging-native-code.md)

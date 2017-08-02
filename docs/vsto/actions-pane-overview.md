@@ -34,7 +34,7 @@ caps.handback.revision: 100
 > [!NOTE]  
 >  Le volet Actions diffère des volets de tâches personnalisés.  Les volets de tâches personnalisés sont associés à l'application, pas à un document spécifique.  Vous pouvez créer des volets de tâches personnalisés dans les compléments VSTO pour certaines applications Microsoft Office.  Pour plus d'informations, consultez [Volets de tâches personnalisés](../vsto/custom-task-panes.md).  
   
- ![lien vers la vidéo](../vsto/media/playvideo.png "lien vers la vidéo") Pour visionner la démonstration vidéo associée, consultez [Comment : utiliser les contrôles WPF dans un volet Actions Excel](http://go.microsoft.com/fwlink/?LinkID=132763).  
+ ![lien vers la vidéo](~/data-tools/media/playvideo.gif "lien vers la vidéo") Pour visionner la démonstration vidéo associée, consultez [Comment : utiliser les contrôles WPF dans un volet Actions Excel](http://go.microsoft.com/fwlink/?LinkID=132763).  
   
 ## Affichage du volet Actions  
  Le volet Actions est représenté par la classe <xref:Microsoft.Office.Tools.ActionsPane>.  Lorsque vous créez un projet au niveau du document, une instance de cette classe est disponible pour votre code à l'aide du champ `ActionsPane` de la classe `ThisWorkbook` \(pour Excel\) ou `ThisDocument` \(pour Word\) de votre projet.  Pour afficher le volet Actions, ajoutez un contrôle Windows Forms à la propriété <xref:Microsoft.Office.Tools.ActionsPane.Controls%2A> du champ `ActionsPane`.  L'exemple de code suivant ajoute un contrôle nommé `actions` au volet Actions.  

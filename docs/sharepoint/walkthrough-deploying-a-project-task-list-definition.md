@@ -166,7 +166,7 @@ caps.handback.revision: 33
   
 2.  Dans la boîte de dialogue **Publier**, sélectionnez la case d'option **Publier dans le système de fichiers**.  
   
-     Vous pouvez modifier l'emplacement cible dans la boîte de dialogue **Publier** en choisissant le bouton ![Icône du bouton de sélection (...)](../sharepoint/media/ellipsisicon.png "Icône du bouton de sélection (...)") puis en accédant à un autre emplacement.  
+     Vous pouvez modifier l'emplacement cible dans la boîte de dialogue **Publier** en choisissant le bouton ![Icône du bouton de sélection (...)](~/sharepoint/media/ellipsisicon.gif "Icône du bouton de sélection (...)") puis en accédant à un autre emplacement.  
   
 3.  Cliquez sur le bouton **Publish**  
   

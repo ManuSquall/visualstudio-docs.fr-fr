@@ -43,7 +43,7 @@ caps.handback.revision: 21
   
      La boîte de dialogue **Ajouter un assembly existant** s'affiche.  
   
-4.  Choisissez le bouton de sélection \(![Bouton de sélection du concepteur ASP.NET mobile](../sharepoint/media/mwellipsis.png "Bouton de sélection du concepteur ASP.NET mobile")\), puis choisissez l'assembly que vous avez l'intention d'ajouter.  Nous vous recommandons d'utiliser un chemin d'accès relatif à l'assembly sélectionné à des fins de portabilité.  
+4.  Choisissez le bouton de sélection \(![Bouton de sélection du concepteur ASP.NET mobile](~/sharepoint/media/mwellipsis.gif "Bouton de sélection du concepteur ASP.NET mobile")\), puis choisissez l'assembly que vous avez l'intention d'ajouter.  Nous vous recommandons d'utiliser un chemin d'accès relatif à l'assembly sélectionné à des fins de portabilité.  
   
 5.  Pour la **cible de déploiement**, cliquez sur le bouton d'option **GlobalAssemblyCache** afin de déployer l'assembly dans le Global Assembly Cache ou cliquez sur le boutton d'option **WebApplication** pour le déployer dans le dossier WebApplication sur le serveur SharePoint.  
   
@@ -81,7 +81,7 @@ caps.handback.revision: 21
   
 2.  Dans le volet **Ressources de classe**, cliquez sur le bouton **Cliquez ici pour ajouter un nouvel élément**.  
   
-3.  Dans la colonne **Nom de fichier**, cliquez sur le bouton de sélection \(![Bouton de sélection du concepteur ASP.NET mobile](../sharepoint/media/mwellipsis.png "Bouton de sélection du concepteur ASP.NET mobile")\) et sélectionnez la ressource de classe que vous voulez ajouter.  
+3.  Dans la colonne **Nom de fichier**, cliquez sur le bouton de sélection \(![Bouton de sélection du concepteur ASP.NET mobile](~/sharepoint/media/mwellipsis.gif "Bouton de sélection du concepteur ASP.NET mobile")\) et sélectionnez la ressource de classe que vous voulez ajouter.  
   
 ## Suppression des assemblys personnalisés  
  Vous pouvez supprimer des assemblys dans un package SharePoint ou éliminer les contrôles sécurisés et les ressources de classe d'assemblys existants.  

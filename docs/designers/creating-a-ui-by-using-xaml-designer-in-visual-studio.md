@@ -82,7 +82,7 @@ Les quadrillages `Grid` permettent de gérer les lignes et les colonnes dans un 
   
  En mode Création, des commandes supplémentaires de la planche graphique sont disponibles dans la partie inférieure gauche de la zone de l'écran, comme indiqué ci-après :  
   
- ![Commandes du mode Création](../designers/media/xaml_editor_design_controls.png "xaml_editor_design_controls")  
+ ![Commandes du mode Création](~/designers/media/xaml_editor_design_controls.png "xaml_editor_design_controls")  
   
  Les commandes suivantes sont disponibles dans cette barre d'outils :  
   

@@ -41,7 +41,7 @@ Le modèle automation se compose d’un ensemble d’objets par rapport à laque
 ## <a name="objects-in-the-automation-model"></a>Objets dans le modèle Automation  
  Le modèle automation se compose de groupes d’objets qui contrôlent les aspects de l’environnement du common liés. Voici un diagramme qui montre le large éventail d’objets qui composent le modèle automation.  
   
- ![Graphique d’objet Automation Visual Studio](../../extensibility/internals/media/vsvisualstudioautomationobjectchart.gif "vsVisualStudioAutomationObjectChart")  
+ ![Graphique d’objet Automation Visual Studio](~/extensibility/internals/media/vsvisualstudioautomationobjectchart.gif "vsVisualStudioAutomationObjectChart")  
 Objets automation Visual Studio  
   
  Pour plus d’informations, consultez [extension de l’environnement Visual Studio](http://msdn.microsoft.com/Library/4173a963-7ac7-4966-9bb7-e28a9d9f6792).  

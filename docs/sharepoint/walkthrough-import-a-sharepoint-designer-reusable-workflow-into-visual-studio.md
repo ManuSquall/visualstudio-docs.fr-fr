@@ -194,7 +194,7 @@ caps.handback.revision: 34
   
     1.  Dans l'**Explorateur de solutions**, choisissez le nœud  **Flux de travail SPD TestFT**.  
   
-    2.  Cliquez sur le bouton de sélection \(![Bouton de sélection du concepteur ASP.NET mobile](../sharepoint/media/mwellipsis.png "Bouton de sélection du concepteur ASP.NET mobile")\) à côté de l'une des propriétés de liste, telle que la propriété **Liste cible**.  
+    2.  Cliquez sur le bouton de sélection \(![Bouton de sélection du concepteur ASP.NET mobile](~/sharepoint/media/mwellipsis.gif "Bouton de sélection du concepteur ASP.NET mobile")\) à côté de l'une des propriétés de liste, telle que la propriété **Liste cible**.  
   
     3.  Remplissez les valeurs manquantes dans l'Assistant de personnalisation SharePoint, puis choisissez le bouton **Terminer**.  
   

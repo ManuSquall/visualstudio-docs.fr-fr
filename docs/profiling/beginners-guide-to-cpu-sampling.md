@@ -90,7 +90,7 @@ Vous pouvez utiliser les outils de profilage de Visual Studio pour analyser les 
   
  Chaque zone numérotée dans l'illustration est en rapport avec une étape de la procédure.  
   
- ![Vue de rapport de synthèse pour l’échantillonnage](../profiling/media/summary_sampling.png "Summary_Sampling")  
+ ![Vue de rapport de synthèse pour l’échantillonnage](~/profiling/media/summary_sampling.png "Summary_Sampling")  
   
 #### <a name="to-analyze-sampling-data"></a>Pour analyser les données d'échantillonnage  
   

@@ -91,7 +91,7 @@ Quand vous créez une application pour mobile, une application, un site web, une
 
  Le diagramme suivant montre la relation entre les projets et les solutions, ainsi que les éléments qu'ils contiennent au sens logique.  
 
- ![Projets et solutions Visual Studio](../ide/media/vside-project-diagram.png)  
+ ![Projets et solutions Visual Studio](~/ide/media/vside-project-diagram.png)  
 
  Vous pouvez aussi créer des modèles de projets et d'éléments personnalisés. Pour plus d’informations, consultez [Création de modèles de projet et d’élément](../ide/creating-project-and-item-templates.md).  
 
@@ -101,7 +101,7 @@ Quand vous créez une application pour mobile, une application, un site web, une
 ## <a name="managing-projects-in-solution-explorer"></a>Gestion de projets dans l'Explorateur de solutions  
  Après avoir créé un nouveau projet, vous utilisez **l'Explorateur de solutions** pour afficher et gérer des projets et des solutions, ainsi que leurs éléments associés. L’illustration suivante montre l’Explorateur de solutions avec une solution C# qui contient deux projets.  
 
- ![Explorateur de solutions](../ide/media/vs2015_solution_explorer.png "vs2015_solution_explorer")  
+ ![Explorateur de solutions](~/ide/media/vs2015_solution_explorer.png "vs2015_solution_explorer")  
 
 ## <a name="in-this-section"></a>Dans cette section  
 

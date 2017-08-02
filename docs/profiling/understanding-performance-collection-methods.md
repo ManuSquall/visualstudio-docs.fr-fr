@@ -120,7 +120,7 @@ Les outils de profilage Visual Studio fournissent cinq méthodes que vous pouvez
 ##  <a name="tier_interaction"></a> Interaction de couche  
  Le profilage d'interaction de couche ajoute des informations à un fichier de données de profilage sur les appels [!INCLUDE[vstecado](../data-tools/includes/vstecado_md.md)] synchrones entre une page [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] ou une autre application et une base de données [!INCLUDE[ssNoVersion](../data-tools/includes/ssnoversion_md.md)].  Les données incluent le nombre d'appels et l'heure, ainsi que le nombre maximal et minimal d'appels.  Les données d'interaction de couche peuvent être ajoutées aux données de profilage collectées avec les méthodes d'échantillonnage, d'instrumentation, de mémoire .NET ou de concurrence.  
   
- ![Données de profilage d'interaction de couche](../profiling/media/tierinteraction_profilingtools.png "TierInteraction\_ProfilingTools")  
+ ![Données de profilage d'interaction de couche](~/profiling/media/tierinteraction_profilingtools.png "TierInteraction\_ProfilingTools")  
 Données d'interaction de couche collectées par les outils de profilage  
   
  [Collecte de données d’interaction de couche](../profiling/collecting-tier-interaction-data.md)  

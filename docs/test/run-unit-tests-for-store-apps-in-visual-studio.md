@@ -119,7 +119,7 @@ Cette rubrique décrit comment exécuter des tests unitaires à l'aide de l'Expl
   
 |||  
 |-|-|  
-|![Bouton du groupe d’explorateur de tests](../test/media/ute_groupby_btn.png "UTE_GroupBy_btn")|Pour regrouper vos tests d’après la durée nécessaire à leur exécution, ouvrez la liste **Grouper par** et choisissez **Durée**. Choisissez **Résultat du test** pour basculer vers le regroupement d’origine.|  
+|![Bouton du groupe d’explorateur de tests](~/test/media/ute_groupby_btn.png "UTE_GroupBy_btn")|Pour regrouper vos tests d’après la durée nécessaire à leur exécution, ouvrez la liste **Grouper par** et choisissez **Durée**. Choisissez **Résultat du test** pour basculer vers le regroupement d’origine.|  
   
 ###  <a name="BKMK_Searching_and_filtering_the_test_list"></a> Recherche et filtrage de la liste de tests  
  Quand vous avez un grand nombre de tests, vous pouvez taper du texte dans la zone de recherche de l'Explorateur de tests pour filtrer la liste selon la chaîne spécifiée. Vous pouvez limiter votre filtre à certains types de chaînes en choisissant dans la liste des filtres avant d'entrer la chaîne de recherche.  

@@ -39,7 +39,7 @@ Servez-vous de l'outil Utilisation du GPU dans le hub Performances et diagnostic
   
  Voici la fenêtre **Rapport d’utilisation du GPU** :  
   
- ![Rapport d’utilisation du GPU, avec les chronologies GPU et UC](media/gfx_diag_gpu_usage_report.png "gfx_diag_gpu_usage_report")  
+ ![Rapport d’utilisation du GPU, avec les chronologies GPU et UC](~/profiling/media/gfx_diag_gpu_usage_report.png "gfx_diag_gpu_usage_report")  
   
 ## <a name="requirements"></a>Spécifications  
  Voici les conditions requises pour l'outil Utilisation du GPU, en plus de celles de Graphics Diagnostics.  
@@ -60,7 +60,7 @@ Servez-vous de l'outil Utilisation du GPU dans le hub Performances et diagnostic
   
 2.  Dans le hub Performances et diagnostics, cochez la case en regard de l’option **Utilisation du GPU**. Vous pouvez éventuellement cocher les cases en regard des autres outils qui vous intéressent. Vous pouvez exécuter simultanément plusieurs outils du hub Performances et diagnostics pour obtenir une image plus complète des performances de votre application.  
   
-     ![Choisissez les outils de diagnostic que vous souhaitez utiliser.](media/gfx_diag_diagsession_tools.png "gfx_diag_diagsession_tools")  
+     ![Choisissez les outils de diagnostic que vous souhaitez utiliser.](~/profiling/media/gfx_diag_diagsession_tools.png "gfx_diag_diagsession_tools")  
   
     > [!NOTE]
     >  Tous les outils du hub Performances et diagnostics peuvent être utilisés en même temps.  
@@ -79,15 +79,15 @@ Servez-vous de l'outil Utilisation du GPU dans le hub Performances et diagnostic
   
 1.  Dans la partie inférieure de la fenêtre de session de diagnostic, choisissez le lien **Arrêter la collecte** ou appuyez sur **Arrêter** en haut à gauche.  
   
-     ![Collectez les informations de minutage GPU et UC.](media/gfx_diag_gpu_usage_collect.png "gfx_diag_gpu_usage_collect")  
+     ![Collectez les informations de minutage GPU et UC.](~/profiling/media/gfx_diag_gpu_usage_collect.png "gfx_diag_gpu_usage_collect")  
   
 2.  Dans la partie supérieure du rapport, sélectionnez une section dans l'un des graphiques qui illustre le problème à examiner. Votre sélection peut durer jusqu'à 3 secondes. Le début des sections plus longues est tronqué.  
   
-     ![Postcollection, sélectionner une plage pour afficher les détails](media/gfx_diag_gpu_usage_select1.png "gfx_diag_gpu_usage_select1")  
+     ![Postcollection, sélectionner une plage pour afficher les détails](~/profiling/media/gfx_diag_gpu_usage_select1.png "gfx_diag_gpu_usage_select1")  
   
 3.  Dans la partie inférieure du rapport, choisissez le lien **Afficher les détails** du message **...cliquez ici pour afficher les détails de l’utilisation du GPU pour cette plage** afin d’afficher une chronologie détaillée de votre sélection.  
   
-     ![Postcollection, avec la plage sélectionnée](media/gfx_diag_gpu_usage_select2.png "gfx_diag_gpu_usage_select2")  
+     ![Postcollection, avec la plage sélectionnée](~/profiling/media/gfx_diag_gpu_usage_select2.png "gfx_diag_gpu_usage_select2")  
   
  Cela entraîne l'ouverture d'un nouveau document avec onglets qui contient le rapport. Le rapport Utilisation du GPU vous aide à identifier le moment où un événement graphique démarre sur l'UC et où il atteint le GPU, ainsi que sa durée d'exécution par le GPU. Ces informations peuvent vous aider à identifier les goulots d’étranglement et les opportunités d’augmentation du parallélisme dans votre code.  
 
@@ -95,7 +95,7 @@ Servez-vous de l'outil Utilisation du GPU dans le hub Performances et diagnostic
 ## <a name="export-to-gpuview-or-windows-performance-analyzer"></a>Exporter vers GPUView ou Windows Performance Analyzer
 À partir de Visual Studio 2017, vous pouvez ouvrir ces données avec [GPUView](/windows-hardware/drivers/display/using-gpuview) et [Windows Performance Analyzer](/windows-hardware/test/wpt/windows-performance-analyzer) en cliquant sur les liens **Ouvrir dans GpuView** ou **Ouvrir dans WPA** situés en bas à droite de la session de diagnostic.
 
-![Ouvrir dans...](media/gfx_diag_open_in.png)
+![Ouvrir dans...](~/profiling/media/gfx_diag_open_in.png)
 <!-- /VERSIONLESS -->
 
 ## <a name="using-the-gpu-usage-report"></a>Emploi du rapport Utilisation du GPU  
@@ -105,7 +105,7 @@ Servez-vous de l'outil Utilisation du GPU dans le hub Performances et diagnostic
   
  Voici la fenêtre **Rapport d’utilisation du GPU** :  
   
- ![Rapport d’utilisation du GPU, avec les chronologies GPU et UC](media/gfx_diag_gpu_usage_report.png "gfx_diag_gpu_usage_report")  
+ ![Rapport d’utilisation du GPU, avec les chronologies GPU et UC](~/profiling/media/gfx_diag_gpu_usage_report.png "gfx_diag_gpu_usage_report")  
   
  Si vous sélectionnez l’un des événements dans la partie inférieure du rapport, cela entraîne le placement d’un marqueur au niveau des événements correspondants dans les chronologies appropriées, en général un événement sur un thread d’UC qui représente l’appel d’API et un autre événement sur l’une des chronologies GPU qui représente la fin de l’achèvement de la tâche par le GPU. De même, si vous sélectionnez l'un des événements d'une chronologie, cela entraîne la mise en surbrillance de l'événement correspondant dans la partie inférieure du rapport. Quand vous effectuez un zoom arrière des chronologies dans la partie supérieure du rapport, seuls les événements les plus longs sont visibles. Pour afficher les événements qui ont une durée plus courte, effectuez un zoom avant des chronologies en appuyant sur la touche Ctrl et en utilisant la roulette de votre dispositif de pointage, ou via le contrôle de mise à l'échelle situé dans le coin inférieur gauche du panneau supérieur. Vous pouvez également faire glisser le contenu du panneau de chronologie pour parcourir les événements enregistrés.  
   
@@ -146,7 +146,7 @@ Servez-vous de l'outil Utilisation du GPU dans le hub Performances et diagnostic
   
 3.  Sous **Configuration du profilage GPU**, dans la page de propriétés **Général**, décochez la case **Commencer le profilage au démarrage de l’application** pour reporter le profilage.  
   
-     ![Configurer le moment du démarrage de la collecte de données d’utilisation du GPU](media/gfx_diag_gpu_usage_config.png "gfx_diag_gpu_usage_config")  
+     ![Configurer le moment du démarrage de la collecte de données d’utilisation du GPU](~/profiling/media/gfx_diag_gpu_usage_config.png "gfx_diag_gpu_usage_config")  
   
 > [!IMPORTANT]
 >  Le report du profilage n'est pas pris en charge actuellement pour les applications Direct3D 12.  

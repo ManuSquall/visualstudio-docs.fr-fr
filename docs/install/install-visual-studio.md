@@ -75,7 +75,7 @@ Quand vous téléchargez Visual Studio 2017, vous obtenez un fichier de program
 
 2.  Vous devez accepter les [Termes du contrat de licence](https://www.visualstudio.com/license-terms/) Microsoft et la [Déclaration de confidentialité](https://go.microsoft.com/fwlink/?LinkID=824704) Microsoft. Cliquez sur **Continuer**.  
 
-   ![Termes du contrat de licence et déclaration de confidentialité](media/vs2017-privacy-and-license-terms.PNG "Termes du contrat de licence et déclaration de confidentialité Microsoft")  
+   ![Termes du contrat de licence et déclaration de confidentialité](~/install/media/vs2017-privacy-and-license-terms.PNG "Termes du contrat de licence et déclaration de confidentialité Microsoft")  
 
 Plusieurs écrans d’état montrant la progression de l’installation s’affichent. Une fois que le programme d’installation a terminé l’installation, vous pouvez choisir les ensembles de fonctionnalités (ou charges de travail) qui vous intéressent.
 
@@ -86,7 +86,7 @@ Plusieurs écrans d’état montrant la progression de l’installation s’affi
 
 1.  Recherchez la charge de travail que vous voulez dans l’écran **Installation de Visual Studio**.  
 
-  ![Boîte de dialogue d’installation de Visual Studio 2017](media/vs2017-workloads.PNG "Installer les charges de travail de Visual Studio")
+  ![Boîte de dialogue d’installation de Visual Studio 2017](~/install/media/vs2017-workloads.PNG "Installer les charges de travail de Visual Studio")
 
      Par exemple, choisissez la charge de travail du développement .NET Desktop. Elle comprend l’éditeur principal par défaut, qui inclut une prise en charge de la modification du code de base pour plus de 20 langues, la possibilité d’ouvrir et de modifier le code dans n’importe quel dossier sans projet et un contrôle de code source intégré.  
 
@@ -100,13 +100,13 @@ Plusieurs écrans d’état montrant la progression de l’installation s’affi
 
 Si vous ne voulez pas utiliser la fonctionnalité pratique Charges de travail pour personnaliser votre installation de Visual Studio, cliquez sur l’option **Composants individuels** dans le programme d’installation de Visual Studio, sélectionnez les composants que vous voulez, puis suivez les invites.
 
-  ![Visual Studio 2017 - Installer des composants individuels](media/vs2017-components.PNG "Installer des composants individuels de Visual Studio")
+  ![Visual Studio 2017 - Installer des composants individuels](~/install/media/vs2017-components.PNG "Installer des composants individuels de Visual Studio")
 
 ## <a name="install-language-packs"></a>Installer des modules linguistiques
 
 Pour installer Visual Studio 2017 dans la langue de votre choix, cliquez sur l’option **Modules linguistiques** dans le programme d’installation de Visual Studio et suivez les invites.
 
-  ![Visual Studio 2017 - Installer des modules linguistiques](media/vs2017-languages.PNG "Installer des modules linguistiques de Visual Studio")
+  ![Visual Studio 2017 - Installer des modules linguistiques](~/install/media/vs2017-languages.PNG "Installer des modules linguistiques de Visual Studio")
 
 ### <a name="change-the-installer-language"></a>Modifier la langue du programme d’installation
 

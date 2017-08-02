@@ -101,7 +101,7 @@ L’émulateur Visual Studio pour Android s’exécute en tant que machine virtu
   
  Pour vérifier la configuration requise pour la RAM et Windows, dans le Panneau de configuration, choisissez Système et sécurité, puis Système.  
   
- ![Vérifier la configuration requise](../cross-platform/media/android_emu_system_requirements.png "Android_Emu_System_Requirements")  
+ ![Vérifier la configuration requise](~/cross-platform/media/android_emu_system_requirements.png "Android_Emu_System_Requirements")  
   
 ##  <a name="Network"></a> Configuration réseau requise  
  Votre réseau doit remplir les conditions suivantes :  
@@ -147,7 +147,7 @@ L’émulateur Visual Studio pour Android s’exécute en tant que machine virtu
 > [!IMPORTANT]
 >  Une fois que vous avez rejoint le groupe, déconnectez-vous ou redémarrez l’ordinateur pour que la modification prenne effet.  
   
- ![Entrée dans le groupe de sécurité Administrateurs Hyper&#45;V](../cross-platform/media/android_emu_hyperv_admin.png "Android_Emu_HyperV_Admin")  
+ ![Entrée dans le groupe de sécurité Administrateurs Hyper&#45;V](~/cross-platform/media/android_emu_hyperv_admin.png "Android_Emu_HyperV_Admin")  
   
  Pour vous ajouter à un groupe manuellement, ouvrez le composant logiciel enfichable Utilisateurs et groupes locaux. Pour plus d’informations, consultez [Ajouter un compte d’utilisateur à un groupe](http://windows.microsoft.com/en-us/windows/add-user-account-to-group#1TC=windows-7). (Cette rubrique Windows 7 s’applique aussi à Windows 8.)  
   

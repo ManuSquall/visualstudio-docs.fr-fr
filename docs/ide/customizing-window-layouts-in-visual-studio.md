@@ -105,22 +105,22 @@ Dans Visual Studio, vous pouvez personnaliser la position, la taille et le compo
 
  L'illustration suivante montre le repère en forme de losange pour les fenêtres de document, celles-ci pouvant uniquement être ancrées dans le cadre de modification :  
 
- ![Repère en forme de losange de la fenêtre de document](../ide/media/documentwindowguidediamonds.png "Documentwindowguidediamonds")  
+ ![Repère en forme de losange de la fenêtre de document](~/ide/media/documentwindowguidediamonds.png "Documentwindowguidediamonds")  
 
  Les fenêtres Outil peuvent être ancrées à un côté d'un cadre dans l'IDE ou dans le cadre de modification. Quand vous faites glisser une fenêtre Outil vers un autre emplacement, un repère en forme de losange apparaît pour vous aider à la réancrer facilement.  
 
  Repère en forme de losange pour les fenêtres Outil  
 
- ![Repère en forme de losange de la fenêtre d’outils](../ide/media/vs10guidediamond.png "VS10GuideDiamond")  
+ ![Repère en forme de losange de la fenêtre d’outils](~/ide/media/vs10guidediamond.png "VS10GuideDiamond")  
 
  L'illustration suivante montre l'ancrage de l'Explorateur de solutions dans un nouvel emplacement indiqué par la zone ombrée bleue :  
 
- ![Ancrage de l’Explorateur de solutions dans une nouvelle position](../ide/media/vs2015_dock_diamond.png "VS2017_Dock_diamond")  
+ ![Ancrage de l’Explorateur de solutions dans une nouvelle position](~/ide/media/vs2015_dock_diamond.png "VS2017_Dock_diamond")  
 
 ### <a name="close-and-auto-hide-tool-windows"></a>Fermer et masquer les fenêtres d’outil  
  Vous pouvez fermer une fenêtre Outil en cliquant sur le X dans le coin supérieur droit de la barre de titre. Pour rouvrir la fenêtre, utilisez le raccourci clavier correspondant ou la commande de menu. Les fenêtres Outil prennent en charge une fonctionnalité nommée Masquer automatiquement qui permet de faire disparaître une fenêtre quand vous utilisez une autre fenêtre. Quand une fenêtre est automatiquement masquée, son nom s'affiche sous un onglet au bord de l'IDE. Pour réutiliser la fenêtre, pointez sur l'onglet pour que la fenêtre soit de nouveau visible.  
 
- ![Masquer automatiquement](../ide/media/vs2015_auto_hide.png "vs2017_auto_hide")  
+ ![Masquer automatiquement](~/ide/media/vs2015_auto_hide.png "vs2017_auto_hide")  
 
 > [!NOTE]
 >  Pour indiquer si la fonctionnalité Masquer automatiquement agit sur chaque fenêtre Outil ou sur des groupes de fenêtres ancrées, sélectionnez ou désélectionnez **Le bouton Masquer automatiquement n'affecte que la fenêtre Outil active** dans la boîte de dialogue **Options** . Pour plus d'informations, consultez [General, Environment, Options Dialog Box](../ide/reference/general-environment-options-dialog-box.md).  

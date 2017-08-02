@@ -52,7 +52,7 @@ Après avoir installé Outils R pour Visual Studio (RTVS) (voir [Installation](
 1. Choisissez **Fichier > Nouveau > Projet**. (Ctrl+Maj+N)
 1. Sélectionnez « Projet R » sous **Modèles > R**, donnez au projet un nom et un emplacement, puis sélectionnez **OK** :
 
-   ![Boîte de dialogue Nouveau projet pour R dans Visual Studio (RTVS dans VS2017)](media/getting-started-01-new-project.png)
+   ![Boîte de dialogue Nouveau projet pour R dans Visual Studio (RTVS dans VS2017)](~/rtvs/media/getting-started-01-new-project.png)
 
 1. Une fois le projet créé, les éléments suivants sont visibles :
 
@@ -67,29 +67,29 @@ Après avoir installé Outils R pour Visual Studio (RTVS) (voir [Installation](
 
 1. Pour vérifier que la fenêtre interactive fonctionne, tapez `3 + 4` et appuyez sur Entrée pour afficher le résultat :
 
-    ![Fenêtre R Interactive dans Visual Studio 2017 (VS2017)](media/getting-started-02-interactive1.png)
+    ![Fenêtre R Interactive dans Visual Studio 2017 (VS2017)](~/rtvs/media/getting-started-02-interactive1.png)
 
 1. Entrez une commande un peu plus compliquée, par exemple `ds <- c(1.5, 6.7, 8.9) * 1:12`, puis entrez `ds` pour afficher le résultat :
 
-    ![Autre exemple interactif pour R dans Visual Studio](media/getting-started-03-interactive2.png)
+    ![Autre exemple interactif pour R dans Visual Studio](~/rtvs/media/getting-started-03-interactive2.png)
 
 1. Tapez `mean(ds)`. Notez que dès que vous tapez `m` ou `me`, Visual Studio IntelliSense propose des options de saisie semi-automatique, comme celles indiquées ci-dessous. Après avoir sélectionné la saisie semi-automatique désirée dans la liste, appuyez sur Tab pour l’insérer. Vous pouvez changer de sélection à l’aide de la souris ou des touches de direction.
 
-    ![Apparition d’IntelliSense quand vous entrez du code](media/getting-started-04-intellisense1.png)
+    ![Apparition d’IntelliSense quand vous entrez du code](~/rtvs/media/getting-started-04-intellisense1.png)
 
 1. Une fois la saisie de `mean` terminée, tapez la parenthèse ouvrante `(` et notez l’aide en ligne que vous propose IntelliSense pour la fonction :
 
-    ![IntelliSense affichant de l’aide pour une fonction](media/getting-started-05-intellisense2.png)
+    ![IntelliSense affichant de l’aide pour une fonction](~/rtvs/media/getting-started-05-intellisense2.png)
 
 1. Terminez la saisie de la ligne `mean(ds)` et appuyez sur Entrée pour afficher le résultat (`[1] 39.51667`).
 
 1. La fenêtre interactive est intégrée à l’aide. Par exemple, entrez `?mean` pour afficher de l’aide pour cette fonction dans la fenêtre **Aide R** de Visual Studio. Pour plus d’informations sur cette fonctionnalité, consultez [Aide dans Outils R pour Visual Studio](getting-started-help.md).
 
-    ![Fenêtre d’aide R dans Visual Studio](media/getting-started-06-help.png)
+    ![Fenêtre d’aide R dans Visual Studio](~/rtvs/media/getting-started-06-help.png)
 
 1. Certaines commandes, telles que `plot(1:100)`, ouvrent une nouvelle fenêtre dans Visual Studio quand la sortie ne peut pas être affichée directement dans la fenêtre interactive :
 
-    ![Affichage d’un tracé dans Visual Studio](media/getting-started-07-plot-window.png)
+    ![Affichage d’un tracé dans Visual Studio](~/rtvs/media/getting-started-07-plot-window.png)
 
 La fenêtre interactive vous permet également de passer en revue votre historique, de charger et d’enregistrer des espaces de travail, d’attacher un débogueur et d’interagir avec des fichiers de code source pour réduire les opérations de copier-coller. Pour plus d’informations, consultez [Utilisation de la fenêtre interactive R](interactive-repl.md).
 
@@ -113,7 +113,7 @@ Par exemple, les étapes suivantes créent un petit extrait de code pour explore
 
 1. Pour afficher rapidement les résultats, sélectionnez tout le code (Ctrl+A), puis appuyez sur Ctrl+Entrée ou cliquez avec le bouton droit et sélectionnez **Exécuter en mode interactif**. Tout le code sélectionné est entré dans la fenêtre interactive comme si vous l’aviez tapé directement. Le résultat s’affiche dans une fenêtre de tracés :
 
-    ![Affichage d’un tracé dans Visual Studio](media/getting-started-08-plot1.png)
+    ![Affichage d’un tracé dans Visual Studio](~/rtvs/media/getting-started-08-plot1.png)
 
 1. Pour une ligne unique, vous pouvez simplement appuyer sur Ctrl+Entrée à tout moment pour l’exécuter dans la fenêtre interactive.
 
@@ -132,7 +132,7 @@ Par exemple, les étapes suivantes créent un petit extrait de code pour explore
 
 1. Appuyez une nouvelle fois sur Ctrl+A et sur Ctrl+Entrée pour réexécuter le code et produire ce qui suit :
 
-    ![Tracé double mis à jour dans Visual Studio](media/getting-started-09-plot2.png)
+    ![Tracé double mis à jour dans Visual Studio](~/rtvs/media/getting-started-09-plot2.png)
 
 1. Le problème, c’est que le premier tracé détermine l’échelle verticale et qu’il ne reste pas assez de place pour le second (avec `lines`). Pour corriger ce problème, nous devons définir le paramètre `ylim` sur l’appel `plot`. Mais pour bien faire, nous devons ajouter du code pour calculer la valeur verticale maximale. Le fait de procéder ligne par ligne dans la fenêtre interactive est peu pratique, car nous devons réorganiser le code pour utiliser `samp.means` avant d’appeler `plot`. Cependant, dans un fichier de code, nous pouvons apporter facilement les modifications appropriées :
 
@@ -154,7 +154,7 @@ Par exemple, les étapes suivantes créent un petit extrait de code pour explore
 
 1. Appuyez sur Ctrl+A et sur Ctrl+Entrée une nouvelle fois pour afficher le résultat :
 
-    ![Tracé double mis à jour dans Visual Studio, mis à l’échelle correctement](media/getting-started-10-plot3.png)
+    ![Tracé double mis à jour dans Visual Studio, mis à l’échelle correctement](~/rtvs/media/getting-started-10-plot3.png)
 
 L’éditeur offre bien d’autres fonctionnalités. Pour plus d’informations, consultez [Modification du code](code-editing.md), [IntelliSense](code-intellisense.md) et [Extraits de code](code-snippets.md).
 
@@ -166,23 +166,23 @@ L’un des atouts de Visual Studio est son interface utilisateur de débogage. B
 
 1. Dans le fichier `script.R` créé dans la section précédente, définissez un point d’arrêt sur la ligne qui commence par `pop <-`. Pour cela, placez le signe insertion sur cette ligne et appuyez sur F9, ou sélectionnez la commande de menu **Déboguer > Point d’arrêt**. Vous pouvez effectuer cette opération en une seule étape en cliquant dans la marge de gauche (ou reliure) de cette ligne où se trouve le point d’arrêt rouge :
 
-    ![Définition d’un point d’arrêt dans l’éditeur](media/getting-started-11-debug1.png)
+    ![Définition d’un point d’arrêt dans l’éditeur](~/rtvs/media/getting-started-11-debug1.png)
 
 1. Lancez le débogueur avec le code dans `script.R`. Pour cela, trois options s’offrent à vous : sélectionnez le bouton **Fichier de démarrage source** dans la barre d’outils, sélectionnez l’élément de menu **Déboguer > Fichier de démarrage source** ou appuyez sur F5. Visual Studio entre alors en mode de débogage et démarre l’exécution du code. Toutefois, il s’arrête sur la ligne où vous avez défini le point d’arrêt :
 
-    ![Arrêt sur un point d’arrêt dans le débogueur Visual Studio](media/getting-started-12-debug2.png)
+    ![Arrêt sur un point d’arrêt dans le débogueur Visual Studio](~/rtvs/media/getting-started-12-debug2.png)
 
 1. Durant le débogage, Visual Studio vous permet d’avancer dans votre code ligne par ligne. Vous pouvez notamment effectuer un pas à pas détaillé dans les fonctions, effectuer un pas à pas principal sur celles-ci ou encore effectuer un pas à pas sortant pour accéder au contexte d’appel. Ces fonctionnalités, ainsi que d’autres, sont disponibles dans le menu **Déboguer**, le menu contextuel dans l’éditeur et la barre d’outils de débogage :
 
-    ![Barre d’outils de débogage dans Visual Studio](media/getting-started-13-debug3.png)
+    ![Barre d’outils de débogage dans Visual Studio](~/rtvs/media/getting-started-13-debug3.png)
 
 1. Quand l’exécution est arrêtée au niveau d’un point d’arrêt, vous pouvez examiner les valeurs des variables. Recherchez la fenêtre **Automatique** dans Visual Studio et sélectionnez l’onglet dans la partie inférieure nommé **Variables locales**. La fenêtre **Variables locales** affiche les variables locales au niveau du point actif dans le programme. Si vous êtes arrêté sur le point d’arrêt défini précédemment, vous pouvez constater que la variable `pop` n’est pas encore définie. Utilisez maintenant la commande **Déboguer > Pas à pas principal** (F10) pour afficher la valeur de pop :
 
-    ![Fenêtre Variables locales dans Visual Studio](media/getting-started-14-debug4.png)
+    ![Fenêtre Variables locales dans Visual Studio](~/rtvs/media/getting-started-14-debug4.png)
 
 1. Pour examiner des variables dans des portées différentes, notamment la portée globale et les portées de package, utilisez l’[Explorateur de variables](variable-explorer.md) ci-dessous. L’Explorateur de variables vous permet également de passer à une vue tabulaire composée de colonnes pouvant être triées et d’exporter les données dans un fichier CSV.
 
-    ![Vue développée de l’Explorateur de variables](media/variable-explorer-expanded-results.png)
+    ![Vue développée de l’Explorateur de variables](~/rtvs/media/variable-explorer-expanded-results.png)
 
 1. Vous pouvez soit continuer à exécuter pas à pas le programme, soit sélectionner **Continuer** (F5) pour l’exécuter jusqu’à sa complétion (ou jusqu’au point d’arrêt suivant).
 

@@ -51,12 +51,12 @@ Dans la sixième partie de ce didacticiel, vous allez ajouter un problème de so
   
      Vous pouvez appeler la méthode `Next()` de la classe `Random`, que vous avez nommée « randomizer » précédemment dans ce didacticiel, de plusieurs façons.  Les méthodes que vous appelez de plusieurs façons sont désignées comme étant surchargées, et vous pouvez utiliser IntelliSense pour les explorer.  Examinez à nouveau l'info\-bulle de la fenêtre IntelliSense pour la méthode `Next()`.  
   
-     ![Info&#45;bulle de la fenêtre Intellisense](../ide/media/express_overloads.png "Express\_Overloads")  
+     ![Info&#45;bulle de la fenêtre Intellisense](~/ide/media/express_overloads.png "Express\_Overloads")  
 Info\-bulle de la fenêtre Intellisense  
   
      L'info\-bulle affiche **\(\+ 2 surcharge\(s\)\)**, ce qui signifie que vous pouvez appeler la méthode `Next()` de deux manières différentes.  Les surcharges contiennent des nombres ou des types d'arguments leur permettant de fonctionner un peu différemment les unes des autres.  Par exemple, une méthode peut prendre un argument entier unique, alors qu'une de ses surcharges peut prendre un entier et une chaîne.  Choisissez la surcharge appropriée en fonction de ce que vous souhaitez qu'elle fasse.  Lorsque vous ajoutez du code à la méthode `StartTheQuiz()`, plus d'informations apparaissent dans la fenêtre IntelliSense dès que vous entrez `randomizer.Next(`.  Choisissez les flèches vers le haut et vers le bas pour parcourir les surcharges, comme indiqué dans l'illustration suivante.  
   
-     ![Surcharge pour la méthode Next&#40;&#41; dans IntelliSense](../ide/media/express_nextoverload.png "Express\_NextOverload")  
+     ![Surcharge pour la méthode Next&#40;&#41; dans IntelliSense](~/ide/media/express_nextoverload.png "Express\_NextOverload")  
 Surcharge pour la méthode Next\(\) dans IntelliSense  
   
      Dans ce cas, vous souhaitez choisir la dernière surcharge, car vous pouvez spécifier les valeurs minimales et maximales.  

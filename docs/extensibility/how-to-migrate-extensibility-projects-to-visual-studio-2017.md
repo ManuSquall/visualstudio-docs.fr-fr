@@ -66,7 +66,7 @@ Pour mettre à jour les références NuGet Microsoft.VSSDK.BuildTools :
 * Sélectionnez Microsoft.VSSDK.BuildTools (dernière version).
 * Appuyez sur **mise à jour**.
 
-![Outils de génération VSSDK](media/vssdk-build-tools.png)
+![Outils de génération VSSDK](~/extensibility/media/vssdk-build-tools.png)
 
 ## <a name="make-changes-to-the-vsix-extension-manifest"></a>Apporter des modifications au manifeste de l’extension VSIX
 
@@ -103,18 +103,18 @@ Au lieu de modifier directement le manifeste XML, vous pouvez utiliser la nouvel
 * Ouvrez le fichier source.extension.vsixmanifest [Design].
 * Sélectionnez **conditions préalables** onglet et appuyez sur **nouveau** bouton.
 
-  ![Concepteur de manifeste VSIX](media/vsix-manifest-designer.png)
+  ![Concepteur de manifeste VSIX](~/extensibility/media/vsix-manifest-designer.png)
 
 * Le **ajouter nouvelle vérification** fenêtre s’ouvre.
 
-  ![ajouter la condition préalable vsix](media/add-vsix-prerequisite.png)
+  ![ajouter la condition préalable vsix](~/extensibility/media/add-vsix-prerequisite.png)
 
 * Cliquez sur la liste déroulante pour **nom** et sélectionnez la configuration requise de votre choix.
 * Si nécessaire, mettez à jour la version.
 
   >Remarque : La version de champ sera préremplie avec la version du composant actuellement installé, avec une plage couvrant jusqu'à (mais ne contient ne pas les) la prochaine version majeure du composant.
 
-  ![ajouter la condition préalable roslyn](media/add-roslyn-prerequisite.png)
+  ![ajouter la condition préalable roslyn](~/extensibility/media/add-roslyn-prerequisite.png)
 
 * Press **OK**.
 
@@ -133,7 +133,7 @@ Cela peut ressembler :
 C:\Program Files (x86)\Microsoft Visual Studio\2017\Enterprise\Common7\IDE\devenv.exe
 ```
 
-![Démarrer le programme externe](media/start-external-program.png)
+![Démarrer le programme externe](~/extensibility/media/start-external-program.png)
 
 >**Remarque :** l’Action de démarrage de débogage est généralement stockée dans la. csproj.user fichier. Ce fichier est généralement inclus dans le fichier .gitignore et, par conséquent, est normalement pas enregistré avec d’autres fichiers de projet lorsque engagé à contrôle de code source. Par conséquent, si vous avez extrait votre solution immédiate à partir du contrôle de code source, il est probablement que le projet n’aura aucune valeur définie pour l’Action de démarrage. Nouveaux projets VSIX créés avec Visual Studio 2017 aura une. csproj.user les fichiers créés avec les valeurs par défaut qui pointe vers le répertoire d’installation de Visual Studio en cours. Toutefois si vous effectuez une migration d’une extension VSIX v2, il est probable que le. csproj.user fichier contiendra des références au répertoire d’installation de la version précédente Visual Studio. Configurez la valeur de **déboguer** > **action de démarrage** permettra le correct instance expérimentale de Visual Studio à lancer lorsque vous essayez de déboguer votre extension.
 
@@ -158,7 +158,7 @@ Essayez d’installer l’extension :
 
 * Dans Visual Studio 2017
 
-![Programme d’installation de l’extension VSIX dans Visual Studio 2017](media/vsixinstaller-vs-2017.png)
+![Programme d’installation de l’extension VSIX dans Visual Studio 2017](~/extensibility/media/vsixinstaller-vs-2017.png)
 
 * Facultatif : Vérifier les versions précédentes de Visual Studio.
   * Afin de garantir la compatibilité descendante.
@@ -169,7 +169,7 @@ Essayez d’installer l’extension :
 
 Si Visual Studio a été récemment ouvert, vous pouvez voir une boîte de dialogue comme suit :
 
-![processus en cours d’exécution de Visual Studio](media/vs-running-processes.png)
+![processus en cours d’exécution de Visual Studio](~/extensibility/media/vs-running-processes.png)
 
 Attendez que les processus s’est arrêté ou arrêtez manuellement les tâches. Vous trouverez les processus par le nom répertorié, ou avec le PID figure entre parenthèses.
 
@@ -181,7 +181,7 @@ Attendez que les processus s’est arrêté ou arrêtez manuellement les tâches
 * Vérifiez que l’installation identifie le composant manquant/s et les affiche comme une condition préalable dans la VSIXInstaller.
 * Remarque : Une élévation sera nécessaire si les conditions préalables doivent être installés avec l’extension.
 
-![élément requis manquant vsixinstaller](media/vsixinstaller-missing-prerequisite.png)
+![élément requis manquant vsixinstaller](~/extensibility/media/vsixinstaller-missing-prerequisite.png)
 
 ## <a name="deciding-on-components"></a>Décidez de composants
 

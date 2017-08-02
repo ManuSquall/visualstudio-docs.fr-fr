@@ -124,7 +124,7 @@ La fenêtre Étapes de canalisation Graphics vous permet de comprendre comment u
   
  Pour afficher le résultat de l'étape du nuanceur de sommets, choisissez la miniature de l'étape Nuanceur de sommets afin d'accéder à une image filaire rastérisée en taille réelle du maillage après sa transformation par le nuanceur de sommets.  
   
- ![Aperçu du résultat de l'étape du nuanceur de sommets](../debugger/media/gfx_diag_vertex_shader_preview.png "gfx\_diag\_vertex\_shader\_preview")  
+ ![Aperçu du résultat de l'étape du nuanceur de sommets](~/debugger/graphics/media/gfx_diag_vertex_shader_preview.png "gfx\_diag\_vertex\_shader\_preview")  
   
 ## Voir aussi  
  [Procédure pas à pas : objets manquants en raison de Vertex Shader](../debugger/walkthrough-missing-objects-due-to-vertex-shading.md)   

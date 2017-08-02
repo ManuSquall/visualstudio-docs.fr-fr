@@ -91,7 +91,7 @@ Ce document explique comment utiliser l'éditeur de modèle [!INCLUDE[vsprvs](..
   
  La barre d'outils **Éditeur de model** est illustrée ci\-dessous :  
   
- ![Barre d'outils de la visionneuse de modèles](../designers/media/digit-mre-toolbar.png "Digit\-MRE\-Toolbar")  
+ ![Barre d'outils de la visionneuse de modèles](~/designers/media/digit-mre-toolbar.png "Digit\-MRE\-Toolbar")  
   
  Le prochain tableau décrit les éléments de la barre d'outils **Éditeur de modèle**, répertoriés dans l'ordre où ils figurent, de haut en bas.  
   

@@ -30,7 +30,7 @@ caps.handback.revision: 39
   
  L’exemple suivant montre comment ajouter des contrôles liés aux données à des documents au moment du design. Pour obtenir un exemple montrant comment ajouter des contrôles liés aux données dans des compléments VSTO au moment de l’exécution, consultez [Procédure pas à pas : Liaison à des données de service dans un projet de complément VSTO](../vsto/walkthrough-binding-to-data-from-a-service-in-a-vsto-add-in-project.md).  
   
- ![lien vers la vidéo](../vsto/media/playvideo.png "lien vers la vidéo") Pour obtenir une démonstration vidéo connexe, consultez [Comment faire pour interagir avec ses services web à partir de Microsoft Excel ?](http://go.microsoft.com/fwlink/?LinkID=130284).  
+ ![lien vers la vidéo](~/data-tools/media/playvideo.gif "lien vers la vidéo") Pour obtenir une démonstration vidéo connexe, consultez [Comment faire pour interagir avec ses services web à partir de Microsoft Excel ?](http://go.microsoft.com/fwlink/?LinkID=130284).  
   
 ### Pour remplir un projet au niveau du document avec les données d’un service web  
   

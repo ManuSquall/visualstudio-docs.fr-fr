@@ -67,7 +67,7 @@ Foo* pFoo3 = (Foo*)mPool.allocate();
 
 Un instantané à partir de l’outil [Utilisation de la mémoire](https://docs.microsoft.com/en-us/visualstudio/profiling/memory-usage) sans suivi des tas personnalisés montrerait uniquement l’allocation de 8 192 octets, sans mention des allocations personnalisées effectuées par le pool :
 
-![Allocation des tas Windows](media/heap-example-windows-heap.png)
+![Allocation des tas Windows](~/profiling/media/heap-example-windows-heap.png)
 
 En procédant aux étapes suivantes, nous pouvons utiliser ce même outil pour effectuer le suivi de l’utilisation de la mémoire dans notre tas personnalisé.
 
@@ -158,17 +158,17 @@ Cette bibliothèque peut facilement être utilisée en C et C++.
 ## <a name="tracking-memory-usage"></a>Suivi de l’utilisation de la mémoire
 Une fois ces appels en place, vous pouvez effectuer le suivi de l’utilisation du tas personnalisé à l’aide de l’outil **Utilisation de la mémoire** standard disponible dans Visual Studio.  Pour plus d’informations sur l’utilisation de cet outil, consultez la documentation [Memory Usage](https://docs.microsoft.com/en-us/visualstudio/profiling/memory-usage) (Utilisation de la mémoire). Vous devez activer le profilage du tas avec des instantanés pour que l’utilisation du tas personnalisé s’affiche. 
 
-![Activer le profilage du tas](media/heap-enable-heap.png)
+![Activer le profilage du tas](~/profiling/media/heap-enable-heap.png)
 
 Pour afficher le suivi de votre tas personnalisé, dans le coin supérieur droit de la fenêtre **Instantané**, ouvrez le menu déroulant **Tas**, puis, à la place de *Tas NT*, choisissez votre propre tas, tel que vous l’avez nommé.
 
-![Sélection du tas](media/heap-example-custom-heap.png)
+![Sélection du tas](~/profiling/media/heap-example-custom-heap.png)
 
 À l’aide de l’exemple de code ci-dessus, avec `MemoryPool` créant un objet `VSHeapTracker::CHeapTracker` et notre propre méthode `allocate` appelant maintenant la méthode `AllocateEvent`, vous pouvez maintenant voir le résultat de cette allocation personnalisée, qui affiche 3 instances pour un total de 24 octets, toutes de type `Foo`.
 
 Le tas *Tas NT* par défaut a le même aspect qu’auparavant, à ceci près que notre objet `CHeapTracker` lui a été ajouté.
 
-![Tas NT avec dispositif de suivi](media/heap-example-windows-heap.png)
+![Tas NT avec dispositif de suivi](~/profiling/media/heap-example-windows-heap.png)
 
 Comme avec le tas Windows standard, vous pouvez également utiliser cet outil pour comparer des instantanés et rechercher des fuites et des défaillances dans votre tas personnalisé, comme le décrit la documentation principale [Memory Usage](https://docs.microsoft.com/en-us/visualstudio/profiling/memory-usage) (Utilisation de la mémoire).
 

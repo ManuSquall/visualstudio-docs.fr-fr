@@ -23,7 +23,7 @@ caps.handback.revision: 43
 # Ex&#233;cuter des applications du Windows Store sur un ordinateur distant
 [!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
 
-![S'applique uniquement à Windows](../debugger/media/windows_only_content.png "windows\_only\_content")  
+![S'applique uniquement à Windows](~/debugger/media/windows_only_content.png "windows\_only\_content")  
   
  Les outils de contrôle à distance de Visual Studio permettent d'exécuter, de déboguer, de profiler et de tester une application Windows Store en cours d'exécution sur un périphérique à partir d'un deuxième ordinateur exécutant Visual Studio. L'exécution sur un périphérique distant peut être particulièrement efficace lorsque l'ordinateur Visual Studio ne prend pas en charge une fonctionnalité spécifique aux applications Windows Store, telle que la fonction tactile, la géo\-localisation et l'orientation physique. Cette rubrique décrit les procédures de configuration et de démarrage d'une session distante.  
   
@@ -147,7 +147,7 @@ caps.handback.revision: 43
 ##  <a name="BKMK_ConnectVS"></a> Configuration du projet Visual Studio pour le débogage distant  
  Vous spécifiez le périphérique distant auquel se connecter dans les propriétés du projet. La procédure varie en fonction du langage de programmation. Entrez le nom de réseau de l'appareil distant ou sélectionnez\-le dans la boîte de dialogue Sélectionner une connexion du débogueur distant.  
   
- ![Boîte de dialogue Sélectionner la connexion au Remote Debugger](../debugger/media/vsrun_selectremotedebuggerdlg.png "VSRUN\_SelectRemoteDebuggerDlg")  
+ ![Boîte de dialogue Sélectionner la connexion au Remote Debugger](~/debugger/media/vsrun_selectremotedebuggerdlg.png "VSRUN\_SelectRemoteDebuggerDlg")  
   
  La boîte de dialogue répertorie uniquement les appareils qui se trouvent sur le sous\-réseau local de l'ordinateur Visual Studio et qui exécutent le débogueur distant.  
   
@@ -166,7 +166,7 @@ caps.handback.revision: 43
 4.  Entrez le nom réseau du périphérique distant dans la zone **Ordinateur distant** ou choisissez **Rechercher** pour sélectionner le périphérique dans la boîte de dialogue **Sélectionner une connexion au débogueur distant**.  
   
 ###  <a name="BKMK_Choosing_the_remote_device_for_JavaScript_and_C___projects"></a> Choix de l'appareil distant pour les projets JavaScript et C\+\+  
- ![Propriétés du projet C&#43;&#43; pour le débogage distant](../debugger/media/vsrun_cpp_projprop_remote.png "VSRUN\_CPP\_ProjProp\_Remote")  
+ ![Propriétés du projet C&#43;&#43; pour le débogage distant](~/debugger/media/vsrun_cpp_projprop_remote.png "VSRUN\_CPP\_ProjProp\_Remote")  
   
 1.  Sélectionnez le nom du projet dans l'Explorateur de solutions, puis choisissez **Propriétés** dans le menu contextuel.  
   

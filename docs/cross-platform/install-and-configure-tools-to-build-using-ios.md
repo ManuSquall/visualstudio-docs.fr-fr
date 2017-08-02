@@ -127,7 +127,7 @@ Vous pouvez utiliser Visual C++ pour le développement mobile multiplateforme po
   
  La première fois que vous démarrez l’agent et à chaque fois que vous créez un certificat client, les informations nécessaires à la configuration de l’agent dans Visual Studio vous sont fournies, notamment le nom d’hôte, le port et le code confidentiel.  
   
- ![Utiliser vcremote pour générer un code PIN sécurisé](../cross-platform/media/cppmdd_vcremote_generateclientcert.png "CPPMDD_vcremote_generateClientCert")  
+ ![Utiliser vcremote pour générer un code PIN sécurisé](~/cross-platform/media/cppmdd_vcremote_generateclientcert.png "CPPMDD_vcremote_generateClientCert")  
   
  Si vous envisagez de configurer l’agent distant dans Visual Studio en utilisant le nom d’hôte, envoyez une requête ping au Mac à partir de Windows en utilisant le nom d’hôte pour vérifier qu’il est accessible. Dans le cas contraire, vous serez peut-être amené à utiliser l’adresse IP à la place.  
   
@@ -177,7 +177,7 @@ Vous pouvez utiliser Visual C++ pour le développement mobile multiplateforme po
   
 7.  Choisissez **Coupler** pour activer le jumelage.  
   
-     ![Configurer la connexion vcremote pour les builds iOS](../cross-platform/media/cppmdd_options_ios.PNG "CPPMDD_Options_iOS")  
+     ![Configurer la connexion vcremote pour les builds iOS](~/cross-platform/media/cppmdd_options_ios.PNG "CPPMDD_Options_iOS")  
   
      Le couplage persiste tant que vous ne changez pas de nom d’hôte ou de port. Si vous changez de nom d’hôte ou de port dans la boîte de dialogue **Options** , pour annuler la modification, choisissez le bouton **Rétablir** pour revenir au couplage précédent.  
   

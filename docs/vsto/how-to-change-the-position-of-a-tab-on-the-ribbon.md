@@ -34,7 +34,7 @@ caps.handback.revision: 25
   
 3.  Cliquez avec le bouton droit sur le Concepteur de ruban, puis cliquez sur **Propriétés**.  
   
-4.  Dans la fenêtre **Propriétés**, sélectionnez la propriété **Tabs**, puis cliquez sur le bouton de sélection \(![Bouton de sélection du concepteur ASP.NET mobile](../sharepoint/media/mwellipsis.png "Bouton de sélection du concepteur ASP.NET mobile")\).  
+4.  Dans la fenêtre **Propriétés**, sélectionnez la propriété **Tabs**, puis cliquez sur le bouton de sélection \(![Bouton de sélection du concepteur ASP.NET mobile](~/sharepoint/media/mwellipsis.gif "Bouton de sélection du concepteur ASP.NET mobile")\).  
   
      L'**Éditeur de collections Tab** s'affiche.  
   

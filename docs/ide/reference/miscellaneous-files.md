@@ -34,7 +34,7 @@ Il se peut que vous vouliez utiliser les éditeurs de [!INCLUDE[vsprvs](../../co
   
  L'ouverture de fichiers indépendamment d'un conteneur est utile pour diverses raisons.  Il se peut que, lors du développement d'une solution composée de plusieurs projets, vous souhaitiez visualiser un dossier qui ne fait pas partie intégrante du développement de la solution.  Les exemples les plus courants sont les instructions ou conseils de développement, les schémas de base de données ou les clips de code.  De même, vous pouvez vouloir créer un fichier autonome.  
   
- ![Projets de solutions](../../ide/reference/media/projects_solutions_misc.png "Projects\_Solutions\_Misc")  
+ ![Projets de solutions](~/ide/reference/media/projects_solutions_misc.gif "Projects\_Solutions\_Misc")  
   
  Pour que l'Explorateur de solutions affiche le dossier Fichiers divers correspondant à ces fichiers, les options appropriées du dossier doivent être activées.  Les options peuvent être définies à partir de la [Documents, Environnement, boîte de dialogue Options](../../ide/reference/documents-environment-options-dialog-box.md).  Quand vous fermez un fichier divers, il n'est pas associé à une solution particulière ou un projet particulier si vous n'avez pas activé l'option correspondante.  
   

@@ -29,7 +29,7 @@ caps.handback.revision: 44
 # D&#233;boguer les styles CSS avec l’explorateur DOM
 [!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
 
-![S'applique à Windows et Windows Phone](../debugger/media/windows_and_phone_content.png "windows\_and\_phone\_content")  
+![S'applique à Windows et Windows Phone](~/debugger/media/windows_and_phone_content.png "windows\_and\_phone\_content")  
   
  Quand vous déboguez des applications Windows Store, des applications Windows Phone Store et des applications créées avec Visual Studio Tools pour Apache Cordova, vous pouvez afficher et modifier les règles CSS pour les éléments DOM sélectionnés et leurs éléments enfants.  
   
@@ -47,7 +47,7 @@ caps.handback.revision: 44
 -   Utilisez l’onglet **Modifications** \(applications Windows Store et Windows Phone Store uniquement\) pour identifier et suivre les styles CSS modifiés au cours d’une session de débogage.  
   
 > [!TIP]
->  Les modifications que vous effectuez sous les onglets **Styles** et **Calculé** ne sont pas définitives. Elles ne sont pas conservées quand vous arrêtez le débogage. Pour modifier le code source et recharger les pages sans arrêter ni redémarrer le débogueur, actualisez votre application à l’aide du bouton ![Bouton d'actualisation de l'application Windows](../debugger/media/js_refresh.png "JS\_Refresh") \(**Actualiser l’application Windows**\) dans la barre d’outils **Déboguer** \(applications Windows Store et Windows Phone Store uniquement\). Pour plus d’informations, consultez [Actualiser une application \(JavaScript\)](../debugger/refresh-an-app-javascript.md).  
+>  Les modifications que vous effectuez sous les onglets **Styles** et **Calculé** ne sont pas définitives. Elles ne sont pas conservées quand vous arrêtez le débogage. Pour modifier le code source et recharger les pages sans arrêter ni redémarrer le débogueur, actualisez votre application à l’aide du bouton ![Bouton d'actualisation de l'application Windows](~/debugger/media/js_refresh.png "JS\_Refresh") \(**Actualiser l’application Windows**\) dans la barre d’outils **Déboguer** \(applications Windows Store et Windows Phone Store uniquement\). Pour plus d’informations, consultez [Actualiser une application \(JavaScript\)](../debugger/refresh-an-app-javascript.md).  
   
 ## Exemple de définition d’une règle CSS  
  Cet exemple montre comment examiner les règles CSS et déboguer un problème de style. Pour cet exemple, supposons que vous souhaitez modifier la couleur d’une police utilisée pour afficher les titres de groupe dans le modèle Application partagée [!INCLUDE[win8_appname_long](../debugger/includes/win8_appname_long_md.md)].  
@@ -122,13 +122,13 @@ caps.handback.revision: 44
   
 9. Décochez la case de la première occurrence du style `color`, qui se rapporte au sélecteur `.itemspage .itemslist .item .item-overlay .item-title`. Désormais, dans le simulateur, vous constatez que la couleur de tous les titres des éléments devient orange, comme nous le souhaitions, et que le sélecteur que nous avons modifié dans CSS, `.itemspage .itemslist .item`, n’est plus remplacé \(autrement dit, son texte n’est plus barré\). Voici l’onglet **Calculé** une fois la case décochée.  
   
-     ![Onglet Calculé après la mise à jour du style CSS](../debugger/media/js_css_styles_fixed.png "JS\_CSS\_Styles\_Fixed")  
+     ![Onglet Calculé après la mise à jour du style CSS](~/debugger/media/js_css_styles_fixed.png "JS\_CSS\_Styles\_Fixed")  
   
 10. Sélectionnez l’onglet **Modifications**.  
   
      Utilisez l’onglet **Modifications** pour identifier et suivre les modifications de style effectuées au cours d’une session de débogage. L’illustration suivante présente le sélecteur `.itemspage .itemslist .item .item-overlay .item-title` sous l’onglet **Modifications**, qui est à présent remplacé.  
   
-     ![Onglet Modifications de l'explorateur DOM](../debugger/media/js_css_styles_changes.png "JS\_CSS\_Styles\_Changes")  
+     ![Onglet Modifications de l'explorateur DOM](~/debugger/media/js_css_styles_changes.png "JS\_CSS\_Styles\_Changes")  
   
 11. Vous pouvez également modifier manuellement des valeurs de style CSS et voir le résultat immédiat obtenu à l’aide de l’onglet **Styles**.  
   
@@ -140,7 +140,7 @@ caps.handback.revision: 44
   
 15. Utilisez le clavier pour modifier cette valeur. Remplacez\-la par `rgb(255, 255, 0, 0.87)` et appuyez sur Entrée. Les couleurs des titres des éléments dans le simulateur deviennent jaunes.  
   
-16. Pour modifier le fichier CSS source, cliquez sur le lien **items.css** sous l’onglet **Styles**. Vous ouvrez ainsi items.css, dans lequel vous pouvez modifier la valeur du style `color` de votre code d’application. Pour actualiser l’application sans arrêter ni redémarrer le débogueur, cliquez sur le bouton ![Bouton d'actualisation de l'application Windows](../debugger/media/js_refresh.png "JS\_Refresh") \(**Actualiser l’application Windows**\) dans la barre d’outils **Déboguer**.  
+16. Pour modifier le fichier CSS source, cliquez sur le lien **items.css** sous l’onglet **Styles**. Vous ouvrez ainsi items.css, dans lequel vous pouvez modifier la valeur du style `color` de votre code d’application. Pour actualiser l’application sans arrêter ni redémarrer le débogueur, cliquez sur le bouton ![Bouton d'actualisation de l'application Windows](~/debugger/media/js_refresh.png "JS\_Refresh") \(**Actualiser l’application Windows**\) dans la barre d’outils **Déboguer**.  
   
 ## Voir aussi  
  [Démarrage rapide : déboguer du code HTML et CSS](../debugger/quickstart-debug-html-and-css.md)   

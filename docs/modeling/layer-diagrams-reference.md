@@ -64,7 +64,7 @@ Dans Visual Studio, vous pouvez utiliser un *diagramme de dépendances* pour vis
  Cette rubrique décrit les éléments que vous pouvez utiliser sur un diagramme de dépendances. Pour plus d’informations sur la façon de créer et dessiner des diagrammes de dépendance, consultez [des diagrammes de dépendance : les instructions](../modeling/layer-diagrams-guidelines.md). Pour plus d’informations sur les modèles en couches, visitez le [site de modèles et méthodes se](http://go.microsoft.com/fwlink/?LinkId=145794).  
   
 ## <a name="reading-dependency-diagrams"></a>Lecture des diagrammes de dépendance  
- ![Éléments des diagrammes de dépendance](../modeling/media/uml_layerrefreading.png "UML_LayerRefReading")  
+ ![Éléments des diagrammes de dépendance](~/modeling/media/uml_layerrefreading.png "UML_LayerRefReading")  
   
  Le tableau suivant décrit les éléments que vous pouvez utiliser sur un diagramme de dépendances.  
   

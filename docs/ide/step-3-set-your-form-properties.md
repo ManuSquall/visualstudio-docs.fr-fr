@@ -20,7 +20,7 @@ caps.handback.revision: 18
 
 Ensuite, vous utilisez la fenêtre **Propriétés** pour modifier l'apparence de votre formulaire.  
   
- ![lien vers la vidéo](../data-tools/media/playvideo.png "PlayVideo") Pour obtenir une version vidéo de cette rubrique, consultez [Didacticiel 1 : Créer une visionneuse d'images en Visual Basic – Vidéo 1](http://go.microsoft.com/fwlink/?LinkId=205209) ou [Didacticiel 1 : Créer une visionneuse d'images en C\# – Vidéo 1](http://go.microsoft.com/fwlink/?LinkId=205199).  Ces vidéos utilisent une version antérieure de Visual Studio et présentent donc de légères différences quant à certaines commandes de menu et autres éléments d'interface utilisateur.  Toutefois, les concepts et les procédures fonctionnent de façon similaire dans la version actuelle de Visual Studio.  
+ ![lien vers la vidéo](~/data-tools/media/playvideo.gif "PlayVideo") Pour obtenir une version vidéo de cette rubrique, consultez [Didacticiel 1 : Créer une visionneuse d'images en Visual Basic – Vidéo 1](http://go.microsoft.com/fwlink/?LinkId=205209) ou [Didacticiel 1 : Créer une visionneuse d'images en C\# – Vidéo 1](http://go.microsoft.com/fwlink/?LinkId=205199).  Ces vidéos utilisent une version antérieure de Visual Studio et présentent donc de légères différences quant à certaines commandes de menu et autres éléments d'interface utilisateur.  Toutefois, les concepts et les procédures fonctionnent de façon similaire dans la version actuelle de Visual Studio.  
   
 ### Pour définir les propriétés de votre formulaire  
   
@@ -41,7 +41,7 @@ Fenêtre Propriétés
   
 4.  Revenez au Concepteur Windows Forms.  Sélectionnez la poignée de déplacement située dans l'angle inférieur droit du formulaire, c'est\-à\-dire le petit carré blanc présenté ci\-dessous.  
   
-     ![Faire glisser la poignée](../ide/media/express_bottomrt_drag.png "Express\_BottomRT\_Drag")  
+     ![Faire glisser la poignée](~/ide/media/express_bottomrt_drag.png "Express\_BottomRT\_Drag")  
 Poignée de déplacement  
   
      Faites glisser la poignée pour redimensionner le formulaire et le rendre plus large et un peu plus grand.  

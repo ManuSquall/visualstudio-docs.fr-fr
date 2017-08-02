@@ -54,7 +54,7 @@ Ce document montre comment utiliser l'éditeur de modèle pour créer un modèle
   
  Lorsque vous avez terminé, le modèle doit se présenter comme suit :  
   
- ![Modèle terminé de la maison simplifiée](../designers/media/gfx_model_demo_house_final.png "gfx_model_demo_house_final")  
+ ![Modèle terminé de la maison simplifiée](~/designers/media/gfx_model_demo_house_final.png "gfx_model_demo_house_final")  
   
  Avant de commencer, assurez-vous que la fenêtre **Propriétés** et la **Boîte à outils** sont affichées.  
   
@@ -68,27 +68,27 @@ Ce document montre comment utiliser l'éditeur de modèle pour créer un modèle
   
 4.  Subdivisez le haut du cube. En mode de sélection de face, sélectionnez le cube une fois pour l'activer pour la sélection, puis choisissez le haut du cube pour sélectionner la face supérieure. Dans la barre d’outils de l’éditeur de modèle, choisissez **Subdiviser la face**. De nouveaux sommets sont ajoutés en haut du cube qui le fractionnent en quatre partitions de même taille.  
   
-     ![Le haut du cube a été subdivisé](../designers/media/gfx_model_demo_house_subdiv.png "gfx_model_demo_house_subdiv")  
+     ![Le haut du cube a été subdivisé](~/designers/media/gfx_model_demo_house_subdiv.png "gfx_model_demo_house_subdiv")  
   
 5.  Extrudez deux côtés adjacents du cube, par exemple, les côtés avant et droit du cube. En mode de sélection de face, sélectionnez le cube une fois pour l'activer pour la sélection, puis choisissez un côté du cube. Appuyez sur la touche Contrôle de façon prolongée, choisissez un autre côté du cube adjacent au côté que vous avez sélectionné en premier, puis choisissez **Extruder la face** dans la barre d’outils de l’éditeur de modèle.  
   
-     ![Les côtés du cube ont été extrudés](../designers/media/gfx_model_demo_house_extrude.png "gfx_model_demo_house_extrude")  
+     ![Les côtés du cube ont été extrudés](~/designers/media/gfx_model_demo_house_extrude.png "gfx_model_demo_house_extrude")  
   
 6.  Étendez une des extrusions. Choisissez l’une des faces que vous venez d’extruder, puis, dans la barre d’outils de l’éditeur de modèle, choisissez l’outil **Translater** et déplacez le manipulateur de translation dans la même direction que l’extrusion.  
   
-     ![Un côté du cube a été extrudé davantage.](../designers/media/gfx_model_demo_house_extend.png "gfx_model_demo_house_extend")  
+     ![Un côté du cube a été extrudé davantage.](~/designers/media/gfx_model_demo_house_extend.png "gfx_model_demo_house_extend")  
   
 7.  Effectuez une triangulation du modèle. Dans la barre d’outils de l’éditeur de modèle, choisissez **Avancé**, **Outils**, **Effectuer une triangulation**.  
   
 8.  Créez le toit de la maison. Passez en mode de sélection d’arête en choisissant **Sélectionner le bord** dans la barre d’outils de l’éditeur de modèle, puis choisissez le cube pour l’activer. Appuyez sur la touche Contrôle et maintenez-la enfoncée tout en sélectionnant les arêtes illustrées ici :  
   
-     ![Bords qui forment la pointe du toit](../designers/media/gfx_model_demo_house_edges.png "gfx_model_demo_house_edges")  
+     ![Bords qui forment la pointe du toit](~/designers/media/gfx_model_demo_house_edges.png "gfx_model_demo_house_edges")  
   
      Lorsque les bords sont sélectionnés, dans la barre d’outils de l’éditeur de modèle, choisissez l’outil **Translater**, puis déplacez le manipulateur de translation au-dessus pour créer le toit de la maison.  
   
  Le modèle de maison simplifié est terminé. Voici à nouveau le modèle final, avec l'ombrage constant appliqué :  
   
- ![Modèle terminé de la maison simplifiée](../designers/media/gfx_model_demo_house_final.png "gfx_model_demo_house_final")  
+ ![Modèle terminé de la maison simplifiée](~/designers/media/gfx_model_demo_house_final.png "gfx_model_demo_house_final")  
   
  Ensuite, vous pouvez appliquer un nuanceur à ce modèle 3D. Pour en savoir plus, consultez l’article [Comment : appliquer un nuanceur à un modèle 3D](../designers/how-to-apply-a-shader-to-a-3-d-model.md).  
   

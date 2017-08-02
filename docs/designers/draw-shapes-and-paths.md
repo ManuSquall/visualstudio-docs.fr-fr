@@ -57,7 +57,7 @@ Dans le concepteur XAML, une *forme* correspond exactement à ce à quoi vous pe
 ##  <a name="Shape"></a> Dessiner une forme  
  Vous pouvez trouver des formes dans le panneau **Composants** .  
   
- ![Catégorie Formes du volet Composants](../designers/media/b4_shapes_assetspanel.png "b4_Shapes_AssetsPanel")  
+ ![Catégorie Formes du volet Composants](~/designers/media/b4_shapes_assetspanel.png "b4_Shapes_AssetsPanel")  
   
  Faites glisser la forme de votre choix vers la planche graphique. Vous pouvez ensuite utiliser les poignées de la forme pour la mettre à l'échelle, la faire pivoter, la déplacer ou l'incliner.  
   
@@ -68,7 +68,7 @@ Dans le concepteur XAML, une *forme* correspond exactement à ce à quoi vous pe
   
  Vous pouvez dessiner un tracé à l'aide d'une ligne, d'une plume ou d'un crayon. Ces outils se trouvent dans le panneau **Outils** .  
   
- ![](../designers/media/717956a8-b6a5-4e37-8af3-70bcfc78c82a.png "717956a8-b6a5-4e37-8af3-70bcfc78c82a") ![](../designers/media/8fbbbb21-be83-4cf6-903b-3a49f00c9860.png "8fbbbb21-be83-4cf6-903b-3a49f00c9860")  
+ ![](~/designers/media/717956a8-b6a5-4e37-8af3-70bcfc78c82a.png "717956a8-b6a5-4e37-8af3-70bcfc78c82a") ![](~/designers/media/8fbbbb21-be83-4cf6-903b-3a49f00c9860.png "8fbbbb21-be83-4cf6-903b-3a49f00c9860")  
   
 ### <a name="draw-a-straight-line"></a>Tracer une ligne droite  
  Utilisez l’outil **Plume** ![](../designers/media/894f8612-e0ed-4e00-84cf-a9bc8f38fc54.png "894f8612-e0ed-4e00-84cf-a9bc8f38fc54") ou l’outil **Ligne** ![](../designers/media/eb618397-5283-48be-8396-3449be7b6fbf.png "eb618397-5283-48be-8396-3449be7b6fbf").  
@@ -116,12 +116,12 @@ Dans le concepteur XAML, une *forme* correspond exactement à ce à quoi vous pe
 ##  <a name="Convert"></a> Convertir une forme en tracé  
  Pour modifier une forme à la manière d’un tracé, convertissez la forme en tracé.  
   
- **Regardez une courte vidéo :** ![Configurer les fonctionnalités installées](../designers/media/bldadminconsoleinitialconfigicon.PNG "BldAdminConsoleInitialConfigIcon") [Working with paths: Convert a shape to a path (Utilisation de tracés : convertir une forme en tracé)](https://www.youtube.com/watch?v=Io5bC0-nH6Q#t=147).  
+ **Regardez une courte vidéo :** ![Configurer les fonctionnalités installées](~/designers/media/bldadminconsoleinitialconfigicon.PNG "BldAdminConsoleInitialConfigIcon") [Working with paths: Convert a shape to a path (Utilisation de tracés : convertir une forme en tracé)](https://www.youtube.com/watch?v=Io5bC0-nH6Q#t=147).  
   
 ##  <a name="Combine"></a> Combiner des tracés  
  Vous pouvez combiner des tracés et des formes pour en faire un seul et même tracé.  
   
- ![](../designers/media/2df17a5d-a338-4ef4-96c5-dae51cc1ca8a.png "2df17a5d-a338-4ef4-96c5-dae51cc1ca8a")  
+ ![](~/designers/media/2df17a5d-a338-4ef4-96c5-dae51cc1ca8a.png "2df17a5d-a338-4ef4-96c5-dae51cc1ca8a")  
   
 |||||  
 |-|-|-|-|  
@@ -129,7 +129,7 @@ Dans le concepteur XAML, une *forme* correspond exactement à ce à quoi vous pe
 |![](../designers/media/b1_2.png "B1_2")|Unir|![](../designers/media/b1_5.png "B1_5")|Exclure le chevauchement|  
 |![](../designers/media/b1_3.png "B1_3")|Diviser|![](../designers/media/b1_6.png "B1_6")|Soustraire|  
   
- **Regardez une courte vidéo :** ![Configurer les fonctionnalités installées](../designers/media/bldadminconsoleinitialconfigicon.PNG "BldAdminConsoleInitialConfigIcon") [Working with paths: Combine paths (Utilisation de tracés : combiner des tracés)](https://www.youtube.com/watch?v=Io5bC0-nH6Q#t=195).  
+ **Regardez une courte vidéo :** ![Configurer les fonctionnalités installées](~/designers/media/bldadminconsoleinitialconfigicon.PNG "BldAdminConsoleInitialConfigIcon") [Working with paths: Combine paths (Utilisation de tracés : combiner des tracés)](https://www.youtube.com/watch?v=Io5bC0-nH6Q#t=195).  
   
 ##  <a name="Compound"></a> Créer un tracé composite  
  Quand vous créez un tracé composite, toutes les parties situées à l'intersection des tracés sont soustraites du résultat, et le tracé obtenu adopte les propriétés visuelles du tracé inférieur.  
@@ -138,14 +138,14 @@ Dans le concepteur XAML, une *forme* correspond exactement à ce à quoi vous pe
   
  ![](../designers/media/2157a8aa-d9a7-4de4-8de5-b10d28f08a84.png "2157a8aa-d9a7-4de4-8de5-b10d28f08a84")  
   
- **Regardez une courte vidéo :** ![Configurer les fonctionnalités installées](../designers/media/bldadminconsoleinitialconfigicon.PNG "BldAdminConsoleInitialConfigIcon") [Working with paths: Create a compound path (Utilisation de tracés : créer un tracé composite)](https://www.youtube.com/watch?v=Io5bC0-nH6Q).  
+ **Regardez une courte vidéo :** ![Configurer les fonctionnalités installées](~/designers/media/bldadminconsoleinitialconfigicon.PNG "BldAdminConsoleInitialConfigIcon") [Working with paths: Create a compound path (Utilisation de tracés : créer un tracé composite)](https://www.youtube.com/watch?v=Io5bC0-nH6Q).  
   
 ##  <a name="Clipping"></a> Créer un tracé de détourage  
  Un tracé de détourage est un tracé ou une forme qui est appliqué à un autre objet ; les parties de l’objet masqué situées à l’extérieur du tracé de détourage sont masquées.  
   
  ![](../designers/media/22471e98-a841-4f39-a3ef-36090cf5a625.png "22471e98-a841-4f39-a3ef-36090cf5a625")  
   
- **Regardez une courte vidéo :** ![Configurer les fonctionnalités installées](../designers/media/bldadminconsoleinitialconfigicon.PNG "BldAdminConsoleInitialConfigIcon") [Working with paths: Create a compound path (Utilisation de tracés : créer un tracé de détourage)](https://www.youtube.com/watch?v=Io5bC0-nH6Q#t=232).  
+ **Regardez une courte vidéo :** ![Configurer les fonctionnalités installées](~/designers/media/bldadminconsoleinitialconfigicon.PNG "BldAdminConsoleInitialConfigIcon") [Working with paths: Create a compound path (Utilisation de tracés : créer un tracé de détourage)](https://www.youtube.com/watch?v=Io5bC0-nH6Q#t=232).  
   
 ## <a name="see-also"></a>Voir aussi  
  [Création d’une interface utilisateur à l’aide de Blend pour Visual Studio](../designers/creating-a-ui-by-using-blend-for-visual-studio.md)

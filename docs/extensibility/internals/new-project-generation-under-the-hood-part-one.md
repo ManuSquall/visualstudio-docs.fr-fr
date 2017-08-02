@@ -37,7 +37,7 @@ Avez\-vous déjà songé comment créer votre propre type de projet ? Vous vous
 ## La boîte de dialogue Nouveau projet  
  Tout commence lorsque vous sélectionnez un type de projet pour un nouveau projet. Nous allons commencer en cliquant sur **Nouveau projet** sur la **fichier** menu. Le **Nouveau projet** boîte de dialogue s’affiche, en recherchant quelque chose comme ceci :  
   
- ![Boîte de dialogue Nouveau projet](../../extensibility/internals/media/newproject.png "NewProject")  
+ ![Boîte de dialogue Nouveau projet](~/extensibility/internals/media/newproject.gif "NewProject")  
   
  Examinons plus proche. Le **types de projets** les différents types de projet, vous pouvez créer des listes d’arborescence. Lorsque vous sélectionnez un type de projet comme **Windows Visual C\#**, vous verrez une liste de modèles d’application pour vous aider à démarrer.**Modèles visual Studio installés** sont installés par Visual Studio et sont disponibles pour tous les utilisateurs de votre ordinateur. Nouveaux modèles que vous créez ou collectez peuvent être ajoutés à **Mes modèles** et sont disponibles uniquement pour vous.  
   
@@ -107,11 +107,11 @@ devenv /installvstemplates
   
  Pour Visual Studio avec des paramètres de développeur c\#, le **types de projets** arborescence ressemble à ceci :  
   
- ![Types de projet](../../extensibility/internals/media/projecttypes.png "ProjectTypes")  
+ ![Types de projet](~/extensibility/internals/media/projecttypes.png "ProjectTypes")  
   
  Le dossier ProjectTemplates correspondant ressemble à ceci :  
   
- ![Modèles de projet](../../extensibility/internals/media/projecttemplates.png "ProjectTemplates")  
+ ![Modèles de projet](~/extensibility/internals/media/projecttemplates.png "ProjectTemplates")  
   
  Lors de la **Nouveau projet** boîte de dialogue s’ouvre, [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] parcourt le dossier ProjectTemplates et recrée la structure dans le **types de projets** arborescence avec des modifications :  
   
@@ -209,7 +209,7 @@ devenv /installvstemplates
   
 1.  Ouvrir le **Nouveau projet** boîte de dialogue zone, puis développez le **Visual C\#** le nœud de projet.  
   
- ![MyProjectNode](../../extensibility/internals/media/myprojectnode.png "MyProjectNode")  
+ ![MyProjectNode](~/extensibility/internals/media/myprojectnode.png "MyProjectNode")  
   
  **MyProjectNode** apparaît comme un nœud enfant de Visual C\# juste sous le nœud de Windows.  
   

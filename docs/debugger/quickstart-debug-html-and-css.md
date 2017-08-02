@@ -30,7 +30,7 @@ caps.handback.revision: 101
 # D&#233;marrage rapide&#160;: d&#233;boguer du code HTML et CSS
 [!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
 
-![S'applique à Windows et Windows Phone](../debugger/media/windows_and_phone_content.png "windows\_and\_phone\_content")  
+![S'applique à Windows et Windows Phone](~/debugger/media/windows_and_phone_content.png "windows\_and\_phone\_content")  
   
  Pour les applications JavaScript, Visual Studio fournit une expérience de débogage complète qui inclut des fonctionnalités familières aux développeurs Internet Explorer et Visual Studio. Ces fonctionnalités sont prises en charge par les applications [!INCLUDE[win8_appname_long](../debugger/includes/win8_appname_long_md.md)], les applications Windows Phone Store et les applications créées avec Visual Studio Tools pour Apache Cordova.  
   
@@ -108,7 +108,7 @@ caps.handback.revision: 101
   
      L’illustration suivante montre le résultat attendu si cette application est exécutée dans Windows Phone Emulator \(même apparence dans le simulateur\). Toutefois, avant de parvenir à ce résultat, il nous faudra corriger un certain nombre de bogues.  
   
-     ![Application FlipView affichant les résultats attendus](../debugger/media/js_dom_appfixed.png "JS\_DOM\_AppFixed")  
+     ![Application FlipView affichant les résultats attendus](~/debugger/media/js_dom_appfixed.png "JS\_DOM\_AppFixed")  
   
 7.  Sélectionnez **Simulateur** ou **Emulator 8.1 WVGA 512 Mo** dans la liste déroulante située en regard du bouton **Démarrer le débogage** dans la barre d’outils **Déboguer** :  
   
@@ -193,7 +193,7 @@ caps.handback.revision: 101
   
 2.  Ouvrez le fichier default.html et modifiez votre code source en définissant la hauteur et la largeur de l’élément DIV `"fView"` sur la valeur 100 %.  
   
-3.  Sélectionnez le bouton **Actualiser l’application Windows** dans la barre d’outils Déboguer \(ou appuyez sur F4\). Le bouton présente l’aspect suivant : ![Bouton d'actualisation de l'application Windows](../debugger/media/js_refresh.png "JS\_Refresh").  
+3.  Sélectionnez le bouton **Actualiser l’application Windows** dans la barre d’outils Déboguer \(ou appuyez sur F4\). Le bouton présente l’aspect suivant : ![Bouton d'actualisation de l'application Windows](~/debugger/media/js_refresh.png "JS\_Refresh").  
   
      Les pages d’application sont rechargées et le simulateur ou l’émulateur Windows Phone s’affiche au premier plan.  
   
@@ -216,7 +216,7 @@ caps.handback.revision: 101
   
  Avant de choisir **Sélectionner un élément**, spécifiez si les éléments doivent être mis en surbrillance dans l’application en cours d’exécution en activant le bouton **Afficher les zones de surlignement de la page web pour l’élément sélectionné dans l’arborescence DOM**. Voici une illustration de ce bouton. Les zones de surlignement sont affichées par défaut.  
   
- ![Bouton pour afficher les éléments essentiels du site web](../debugger/media/js_dom_display_highlights_button.png "JS\_DOM\_Display\_Highlights\_Button")  
+ ![Bouton pour afficher les éléments essentiels du site web](~/debugger/media/js_dom_display_highlights_button.png "JS\_DOM\_Display\_Highlights\_Button")  
   
  Quand vous choisissez de mettre en surbrillance des éléments, les éléments pointés dans le simulateur sont mis en surbrillance. Les couleurs des éléments mis en surbrillance correspondent au modèle de boîte qui apparaît sous l’onglet **Disposition** de l’explorateur DOM.  
   

@@ -74,7 +74,7 @@ Vous pouvez écrire du code pour créer et supprimer des éléments de modèle, 
   
  Ce modèle est une instance de cette solution DSL :  
   
- ![Modèle d’arbre généalogique Tudor](../modeling/media/tudor_familytreemodel.png "Tudor_FamilyTreeModel")  
+ ![Modèle d’arbre généalogique Tudor](~/modeling/media/tudor_familytreemodel.png "Tudor_FamilyTreeModel")  
   
 ### <a name="references-and-namespaces"></a>Espaces de noms et références  
  Pour exécuter le code dans cette rubrique, vous devez référencer :  

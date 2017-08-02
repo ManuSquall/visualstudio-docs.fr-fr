@@ -38,7 +38,7 @@ Contrairement à un langage à usage général tel que c\# ou l'UML, un langage 
   
  L'illustration suivante montre un petit modèle dans un domaine \(schématique :  
   
- ![Modèle d'arbre généalogique de la famille Tudor](../modeling/media/tudor_familytreemodel.png "Tudor\_FamilyTreeModel")  
+ ![Modèle d'arbre généalogique de la famille Tudor](~/modeling/media/tudor_familytreemodel.png "Tudor\_FamilyTreeModel")  
   
 ## Les opérations réalisables avec langages spécifiques à un domaine  
  Une application classique d'un DÉSOLÉ est de générer du code de programme ou d'autres artefacts.  Lorsque vous définissez votre DÉSOLÉ, vous pouvez définir *des modèles de texte* qui indiquent un modèle du langage DÉSOLÉ et génèrent des fichiers texte.  

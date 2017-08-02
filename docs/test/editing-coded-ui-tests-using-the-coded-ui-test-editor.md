@@ -106,15 +106,15 @@ Modifier les propriétés d'un contrôle
  *Que dois-je savoir de plus ?*  
  **Conseils**  
   
--   ![Conseil](../test/media/tip.png "Conseil") Si la fenêtre Propriétés n’est pas affichée, maintenez la touche **Alt** enfoncée et appuyez sur **Entrée**, ou appuyez sur la touche **F4**.  
+-   ![Conseil](~/test/media/tip.png "Conseil") Si la fenêtre Propriétés n’est pas affichée, maintenez la touche **Alt** enfoncée et appuyez sur **Entrée**, ou appuyez sur la touche **F4**.  
   
--   ![Conseil](../test/media/tip.png "Conseil") Pour annuler les modifications apportées à des propriétés, sélectionnez **Annuler** dans le menu **Edition** ou appuyez sur Ctrl+Z.  
+-   ![Conseil](~/test/media/tip.png "Conseil") Pour annuler les modifications apportées à des propriétés, sélectionnez **Annuler** dans le menu **Edition** ou appuyez sur Ctrl+Z.  
   
--   ![Conseil](../test/media/tip.png "Conseil") Vous pouvez utiliser le bouton **Trouver** dans la barre d’outils de l’éditeur de test codé de l’interface utilisateur pour ouvrir l’outil Rechercher et remplacer dans Visual Studio. Vous pouvez ensuite utiliser le contrôle de recherche pour localiser une action d'interface utilisateur dans l'éditeur de test codé de l'interface utilisateur. Par exemple, vous pouvez essayer de trouver « Cliquez sur le bouton 'Login' ». Cela peut être utile dans les tests de grande taille. Notez que vous ne pouvez pas utiliser la fonctionnalité de remplacement de l'outil Rechercher et remplacer dans l'éditeur de test codé de l'interface utilisateur. Pour plus d’informations, consultez la rubrique relative au contrôle de recherche dans [Recherche et remplacement de texte](../ide/finding-and-replacing-text.md).  
+-   ![Conseil](~/test/media/tip.png "Conseil") Vous pouvez utiliser le bouton **Trouver** dans la barre d’outils de l’éditeur de test codé de l’interface utilisateur pour ouvrir l’outil Rechercher et remplacer dans Visual Studio. Vous pouvez ensuite utiliser le contrôle de recherche pour localiser une action d'interface utilisateur dans l'éditeur de test codé de l'interface utilisateur. Par exemple, vous pouvez essayer de trouver « Cliquez sur le bouton 'Login' ». Cela peut être utile dans les tests de grande taille. Notez que vous ne pouvez pas utiliser la fonctionnalité de remplacement de l'outil Rechercher et remplacer dans l'éditeur de test codé de l'interface utilisateur. Pour plus d’informations, consultez la rubrique relative au contrôle de recherche dans [Recherche et remplacement de texte](../ide/finding-and-replacing-text.md).  
   
--   ![Conseil](../test/media/tip.png "Conseil") Parfois, il peut être difficile de visualiser l’emplacement des contrôles dans l’interface utilisateur de l’application testée. L'une des fonctionnalités de l'éditeur de test codé de l'interface utilisateur vous permet de sélectionner un contrôle répertorié dans le mappage de contrôle d'interface utilisateur et d'afficher son emplacement dans l'application testée. [!INCLUDE[crdefault](../test/includes/crdefault_md.md)][Localisation d’un contrôle d’interface utilisateur dans l’application testée](#CodedUITestEditor_LocateUIControl) un peu plus loin dans cette rubrique.  
+-   ![Conseil](~/test/media/tip.png "Conseil") Parfois, il peut être difficile de visualiser l’emplacement des contrôles dans l’interface utilisateur de l’application testée. L'une des fonctionnalités de l'éditeur de test codé de l'interface utilisateur vous permet de sélectionner un contrôle répertorié dans le mappage de contrôle d'interface utilisateur et d'afficher son emplacement dans l'application testée. [!INCLUDE[crdefault](../test/includes/crdefault_md.md)][Localisation d’un contrôle d’interface utilisateur dans l’application testée](#CodedUITestEditor_LocateUIControl) un peu plus loin dans cette rubrique.  
   
--   ![Conseil](../test/media/tip.png "Conseil") Il peut s’avérer nécessaire de développer le contrôle conteneur qui contient le contrôle à modifier. [!INCLUDE[crdefault](../test/includes/crdefault_md.md)][Localisation d’un contrôle et de ses descendants](#CodedUITestEditor_LocateDecendants) un peu plus loin dans cette rubrique.  
+-   ![Conseil](~/test/media/tip.png "Conseil") Il peut s’avérer nécessaire de développer le contrôle conteneur qui contient le contrôle à modifier. [!INCLUDE[crdefault](../test/includes/crdefault_md.md)][Localisation d’un contrôle et de ses descendants](#CodedUITestEditor_LocateDecendants) un peu plus loin dans cette rubrique.  
   
 ##  <a name="CodedUITestEditor_DeleteUIActions"></a> Supprimer les actions d’interface utilisateur inutiles  
  Vous pouvez facilement supprimer les actions d'interface utilisateur inutiles dans votre test codé de l'interface utilisateur.  
@@ -137,13 +137,13 @@ Modifier les propriétés d'un contrôle
  *Que dois-je savoir de plus ?*  
  **Problèmes importants**  
   
--   ![Icône Avertissement](../test/media/caution.gif "avertissement") **Avertissement :** si vous fractionnez une méthode, vous devez modifier tout le code qui appelle la méthode existante de sorte à appeler également la nouvelle méthode que vous êtes sur le point de créer si vous voulez toujours inclure ces actions d’interface. Quand vous fractionnez une méthode, une boîte de dialogue Microsoft Visual Studio s'affiche. Elle vous avertit que vous devez modifier tout code qui appelle la méthode existante de sorte à appeler également la nouvelle méthode que vous êtes sur le point de créer. Cliquez sur **Oui**.  
+-   ![Icône Avertissement](~/test/media/caution.gif "avertissement") **Avertissement :** si vous fractionnez une méthode, vous devez modifier tout le code qui appelle la méthode existante de sorte à appeler également la nouvelle méthode que vous êtes sur le point de créer si vous voulez toujours inclure ces actions d’interface. Quand vous fractionnez une méthode, une boîte de dialogue Microsoft Visual Studio s'affiche. Elle vous avertit que vous devez modifier tout code qui appelle la méthode existante de sorte à appeler également la nouvelle méthode que vous êtes sur le point de créer. Cliquez sur **Oui**.  
   
  **Conseils**  
   
--   ![Conseil](../test/media/tip.png "Conseil") Pour annuler le fractionnement, choisissez **Annuler** dans le menu **Edition** ou appuyez sur Ctrl+Z.  
+-   ![Conseil](~/test/media/tip.png "Conseil") Pour annuler le fractionnement, choisissez **Annuler** dans le menu **Edition** ou appuyez sur Ctrl+Z.  
   
--   ![Conseil](../test/media/tip.png "Conseil") Vous pouvez renommer la nouvelle méthode. Sélectionnez-la dans le volet Actions d'interface utilisateur et choisissez le bouton **Renommer** dans la barre d'outils de l'éditeur de test codé de l'interface utilisateur.  
+-   ![Conseil](~/test/media/tip.png "Conseil") Vous pouvez renommer la nouvelle méthode. Sélectionnez-la dans le volet Actions d'interface utilisateur et choisissez le bouton **Renommer** dans la barre d'outils de l'éditeur de test codé de l'interface utilisateur.  
   
      ou  
   
@@ -161,11 +161,11 @@ Modifier les propriétés d'un contrôle
  *Que dois-je savoir de plus ?*  
  **Problèmes importants**  
   
--   ![Icône Avertissement](../test/media/caution.gif "avertissement") **Avertissement :** une fois que vous avez déplacé la méthode, vous ne pouvez plus la modifier à l’aide de l’éditeur de test codé de l’interface utilisateur. Vous devez ajouter le code personnalisé et le gérer à l'aide de l'éditeur de code. Quand vous déplacez une méthode, une boîte de dialogue Microsoft Visual Studio s'affiche. Elle vous informe que la méthode sera déplacée du fichier UIMap.uitest vers le fichier UIMap.cs ou UIMap.vb et que vous ne pourrez plus la modifier à l'aide de l'éditeur de test codé de l'interface utilisateur. Cliquez sur **Oui**.  
+-   ![Icône Avertissement](~/test/media/caution.gif "avertissement") **Avertissement :** une fois que vous avez déplacé la méthode, vous ne pouvez plus la modifier à l’aide de l’éditeur de test codé de l’interface utilisateur. Vous devez ajouter le code personnalisé et le gérer à l'aide de l'éditeur de code. Quand vous déplacez une méthode, une boîte de dialogue Microsoft Visual Studio s'affiche. Elle vous informe que la méthode sera déplacée du fichier UIMap.uitest vers le fichier UIMap.cs ou UIMap.vb et que vous ne pourrez plus la modifier à l'aide de l'éditeur de test codé de l'interface utilisateur. Cliquez sur **Oui**.  
   
  **Conseils**  
   
--   ![Conseil](../test/media/tip.png "Conseil") Pour annuler le déplacement, choisissez **Annuler** dans le menu **Edition** ou appuyez sur Ctrl+Z. Toutefois, vous devez ensuite supprimer manuellement le code du fichier UIMap.cs ou UIMap.vb.  
+-   ![Conseil](~/test/media/tip.png "Conseil") Pour annuler le déplacement, choisissez **Annuler** dans le menu **Edition** ou appuyez sur Ctrl+Z. Toutefois, vous devez ensuite supprimer manuellement le code du fichier UIMap.cs ou UIMap.vb.  
   
 ##  <a name="CodedUITestEditor_LocateUIControl"></a> Locating a UI Control in the application under test  
  Parfois, il peut être difficile de visualiser l’emplacement des contrôles dans l’interface utilisateur de l’application testée. L'une des fonctionnalités de l'éditeur de test codé de l'interface utilisateur vous permet de sélectionner un contrôle répertorié dans le mappage de contrôle d'interface utilisateur et d'afficher son emplacement dans l'application testée. L'utilisation de la fonctionnalité **Localiser le contrôle IU** dans l'application testée peut également servir à vérifier les modifications de propriété de recherche que vous avez apportées à un contrôle.  
@@ -179,11 +179,11 @@ Modifier les propriétés d'un contrôle
  *Que dois-je savoir de plus ?*  
  **Problèmes importants**  
   
--   ![Icône Avertissement](../test/media/caution.gif "avertissement") **Avertissement :** avant de localiser un contrôle d’interface utilisateur, vérifiez que l’application associée au test est en cours d’exécution.  
+-   ![Icône Avertissement](~/test/media/caution.gif "avertissement") **Avertissement :** avant de localiser un contrôle d’interface utilisateur, vérifiez que l’application associée au test est en cours d’exécution.  
   
  **Conseils**  
   
--   ![Conseil](../test/media/tip.png "Conseil") Vous pouvez également utiliser l’option **Localiser tout** pour vérifier que tous les contrôles inclus dans un conteneur peuvent être correctement localisés. Cette option est décrite dans la section suivante.  
+-   ![Conseil](~/test/media/tip.png "Conseil") Vous pouvez également utiliser l’option **Localiser tout** pour vérifier que tous les contrôles inclus dans un conteneur peuvent être correctement localisés. Cette option est décrite dans la section suivante.  
   
 ##  <a name="CodedUITestEditor_LocateDecendants"></a> Localisation d’un contrôle et de ses descendants  
  Vous pouvez vérifier que tous les contrôles inclus dans un conteneur peuvent être correctement localisés dans l'interface utilisateur de l'application testée. Cela peut s'avérer utile pour vérifier les modifications de propriété de recherche apportées au conteneur. De plus, si des modifications importantes ont été apportées à l'interface utilisateur de l'application testée, vous pouvez vous assurer que les propriétés de recherche des contrôles existants sont toujours correctes.  
@@ -197,7 +197,7 @@ Modifier les propriétés d'un contrôle
  *Que dois-je savoir de plus ?*  
  **Problèmes importants**  
   
--   ![Icône Avertissement](../test/media/caution.gif "avertissement") **Avertissement :** avant de localiser des contrôles d’interface utilisateur, vérifiez que l’application associée au test est en cours d’exécution.  
+-   ![Icône Avertissement](~/test/media/caution.gif "avertissement") **Avertissement :** avant de localiser des contrôles d’interface utilisateur, vérifiez que l’application associée au test est en cours d’exécution.  
   
 ##  <a name="CodedUITestEditor_InsertDelay"></a> Insertion d’un délai avant une action d’interface utilisateur  
  Parfois, vous pouvez avoir besoin que le test attende que certains événements se produisent, notamment qu'une fenêtre s'affiche, que la barre de progression disparaisse, etc. À l'aide de l'éditeur de test codé de l'interface utilisateur, vous pouvez définir cette attente en insérant un délai avant une action d'interface utilisateur. Vous pouvez indiquer le nombre de secondes du délai.  
@@ -213,11 +213,11 @@ Modifier les propriétés d'un contrôle
  *Que dois-je savoir de plus ?*  
  **Remarques**  
   
--   ![Composant requis](../test/media/prereq.png "Composant requis") Si vous devez vous assurer qu’un contrôle spécifique est disponible avant une action d’interface utilisateur, vous devez envisager d’ajouter du code personnalisé à votre méthode de test à l’aide de la méthode UITestControl.WaitForControlXXX() appropriée. [!INCLUDE[crdefault](../test/includes/crdefault_md.md)][Suspension des tests codés de l’interface utilisateur en attendant des événements spécifiques pendant la lecture](../test/making-coded-ui-tests-wait-for-specific-events-during-playback.md).  
+-   ![Composant requis](~/test/media/prereq.png "Composant requis") Si vous devez vous assurer qu’un contrôle spécifique est disponible avant une action d’interface utilisateur, vous devez envisager d’ajouter du code personnalisé à votre méthode de test à l’aide de la méthode UITestControl.WaitForControlXXX() appropriée. [!INCLUDE[crdefault](../test/includes/crdefault_md.md)][Suspension des tests codés de l’interface utilisateur en attendant des événements spécifiques pendant la lecture](../test/making-coded-ui-tests-wait-for-specific-events-during-playback.md).  
   
  **Conseils**  
   
--   ![Conseil](../test/media/tip.png "Conseil") Si la fenêtre Propriétés n’est pas affichée, maintenez la touche Alt enfoncée et appuyez sur Entrée, ou appuyez sur la touche F4.  
+-   ![Conseil](~/test/media/tip.png "Conseil") Si la fenêtre Propriétés n’est pas affichée, maintenez la touche Alt enfoncée et appuyez sur Entrée, ou appuyez sur la touche F4.  
   
 ## <a name="external-resources"></a>Ressources externes  
   

@@ -28,7 +28,7 @@ caps.handback.revision: 41
 # Personnalisation d&#39;un ruban pour Outlook
   Quand vous personnalisez le ruban dans Microsoft Office Outlook, vous devez prendre en compte l'emplacement où votre ruban personnalisé apparaîtra dans l'application.  Outlook affiche le ruban dans l'interface utilisateur principale de l'application et dans les fenêtres qui s'ouvrent lorsque les utilisateurs effectuent certaines tâches, telles que la création de messages électroniques.  Ces fenêtres d'application sont appelées inspecteurs.  
   
- ![lien vers la vidéo](../vsto/media/playvideo.png "lien vers la vidéo") Pour visionner la démonstration vidéo associée, consultez [Comment : utiliser Concepteur de ruban pour personnaliser le ruban dans Outlook](http://go.microsoft.com/fwlink/?LinkID=130312).  
+ ![lien vers la vidéo](~/data-tools/media/playvideo.gif "lien vers la vidéo") Pour visionner la démonstration vidéo associée, consultez [Comment : utiliser Concepteur de ruban pour personnaliser le ruban dans Outlook](http://go.microsoft.com/fwlink/?LinkID=130312).  
   
  [!INCLUDE[appliesto_olkallapp](../vsto/includes/appliesto-olkallapp-md.md)]  
   

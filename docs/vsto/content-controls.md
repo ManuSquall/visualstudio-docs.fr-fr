@@ -58,7 +58,7 @@ caps.handback.revision: 64
   
  [!INCLUDE[appliesto_wdalldocapp](../vsto/includes/appliesto-wdalldocapp-md.md)]  
   
- ![lien vers la vidéo](../vsto/media/playvideo.png "lien vers la vidéo") Pour obtenir une démonstration vidéo connexe, consultez [Liaison de données aux contrôles de contenu Word 2007 à l'aide de Visual Studio Tools pour Office System \(3.0\)](http://go.microsoft.com/fwlink/?LinkId=136785).  
+ ![lien vers la vidéo](~/data-tools/media/playvideo.gif "lien vers la vidéo") Pour obtenir une démonstration vidéo connexe, consultez [Liaison de données aux contrôles de contenu Word 2007 à l'aide de Visual Studio Tools pour Office System \(3.0\)](http://go.microsoft.com/fwlink/?LinkId=136785).  
   
 ## Vue d'ensemble des contrôles de contenu  
  Les contrôles de contenu fournissent une interface utilisateur optimisée à la fois pour l'entrée d'utilisateur et pour l'impression.  Lorsque vous ajoutez un contrôle de contenu à un document, le contrôle est identifié par une bordure, un titre et un texte temporaire qui peut fournir des instructions à l'utilisateur.  La bordure et le titre du contrôle n'apparaissent pas dans les versions imprimées du document.  

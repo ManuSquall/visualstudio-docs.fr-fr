@@ -64,7 +64,7 @@ Vous pouvez accéder n’importe quelle fenêtre outil dans Visual Studio. Cette
   
 3.  Faites glisser un **zone de texte**, un **bouton**et un **ListBox** à la zone de dessin. Organiser des éléments afin que la zone de texte et le bouton se trouvent sur le même niveau, et la zone de liste remplisse le reste de la fenêtre ci-dessous, comme dans l’image ci-dessous.  
   
-     ![Fin de fenêtre outil](../extensibility/media/t5-toolwindow.png "T5-(fenêtre outil)")  
+     ![Fin de fenêtre outil](~/extensibility/media/t5-toolwindow.png "T5-(fenêtre outil)")  
   
 4.  Dans le volet XAML, recherchez le bouton et affectez à sa propriété de contenu **ajouter**. Reconnectez le Gestionnaire d’événements de bouton pour le contrôle bouton en ajoutant un `Click="button1_Click"` attribut. Le bloc de la zone de dessin doit ressembler à ceci :  
   
@@ -152,7 +152,7 @@ Vous pouvez accéder n’importe quelle fenêtre outil dans Visual Studio. Cette
   
      Lorsqu’un utilisateur ouvre votre page d’Options, il doit ressembler à l’image suivante.  
   
-     ![Page Options](../extensibility/media/t5optionspage.gif "T5OptionsPage")  
+     ![Page Options](~/extensibility/media/t5optionspage.gif "T5OptionsPage")  
   
      Notez que la catégorie **ToDo** et la sous-catégorie **général**.  
   
@@ -165,7 +165,7 @@ Vous pouvez accéder n’importe quelle fenêtre outil dans Visual Studio. Cette
   
      Pour rendre les données disponibles dans le **propriétés** fenêtre, vous pouvez convertir les données en propriétés publiques qui ont deux attributs spéciaux, `Description` et `Category`. `Description`est le texte qui apparaît au bas de la **propriétés** fenêtre. `Category`détermine où la propriété doit apparaître lorsque le **propriétés** fenêtre s’affiche dans le **par catégorie** vue. Dans l’image suivante, le **propriétés** fenêtre est **par catégorie** vue, le **nom** propriété dans le **ToDo Fields** la catégorie sélectionnée et la description de la **nom** propriété s’affiche en bas de la fenêtre.  
   
-     ![Fenêtre Propriétés](../extensibility/media/t5properties.png "T5Properties")  
+     ![Fenêtre Propriétés](~/extensibility/media/t5properties.png "T5Properties")  
   
 2.  Ajoutez le code suivant à l’aide des instructions du fichier TodoItem.cs.  
   

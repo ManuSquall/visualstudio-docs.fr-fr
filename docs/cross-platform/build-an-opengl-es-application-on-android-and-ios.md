@@ -109,7 +109,7 @@ Quand vous installez l’option Développement multiplateforme en Visual C++ pou
   
      Visual Studio démarre l’émulateur qui, après quelques secondes, charge et déploie votre code. Voici comment l’application apparaît dans l’émulateur Visual Studio pour Android.  
   
-     ![Application en cours d’exécution dans l’émulateur Android](../cross-platform/media/cppmdd_opengles_andemulator.png "CPPMDD_OpenGLES_AndEmulator")  
+     ![Application en cours d’exécution dans l’émulateur Android](~/cross-platform/media/cppmdd_opengles_andemulator.png "CPPMDD_OpenGLES_AndEmulator")  
   
      Une fois l’application démarrée, vous pouvez définir des points d’arrêt et utiliser le débogueur pour parcourir le code, examiner les variables locales et observer les valeurs.  
   
@@ -150,7 +150,7 @@ Quand vous installez l’option Développement multiplateforme en Visual C++ pou
   
      Une fois l’application démarrée, vous pouvez définir des points d’arrêt et utiliser le débogueur Visual Studio pour examiner les variables locales, consulter la pile des appels et observer les valeurs.  
   
-     ![Débogueur au point d’arrêt dans une application iOS](../cross-platform/media/cppmdd_opengles_iosdebug.png "CPPMDD_OpenGLES_iOSDebug")  
+     ![Débogueur au point d’arrêt dans une application iOS](~/cross-platform/media/cppmdd_opengles_iosdebug.png "CPPMDD_OpenGLES_iOSDebug")  
   
 5.  Appuyez sur Maj+F5 pour arrêter le débogage.  
   

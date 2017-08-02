@@ -115,7 +115,7 @@ Vous pouvez utiliser Windows Presentation Foundation (WPF) pour créer rapidemen
   
      Ce code XAML crée une disposition réutilisable avec des espaces réservés pour les champs number, title et description. Au moment de l’exécution, les espaces réservés peuvent être remplacés par du texte, comme indiqué dans l’illustration suivante.  
   
-     ![Contrôle utilisateur QuickStartTask](../designers/media/wpfquickstart1.PNG "WPFQuickStart1")  
+     ![Contrôle utilisateur QuickStartTask](~/designers/media/wpfquickstart1.PNG "WPFQuickStart1")  
   
 6.  Dans l’ **Explorateur de solutions**, développez le nœud **QuickStartTask.xaml** et ouvrez le fichier **QuickStartTask.xaml.cs** ou **QuickStartTask.xaml.vb** .  
   
@@ -302,7 +302,7 @@ Vous pouvez utiliser Windows Presentation Foundation (WPF) pour créer rapidemen
   
      À ce stade, la conception doit ressembler à l’illustration suivante :  
   
-     ![MainWindow dans le concepteur](../designers/media/wpfquickstart2.PNG "WPFQuickStart2")  
+     ![MainWindow dans le concepteur](~/designers/media/wpfquickstart2.PNG "WPFQuickStart2")  
   
     > [!NOTE]
     >  Pendant l’application des procédures suivantes, vous pouvez observer des erreurs dans la **Liste d’erreurs** , si elle est ouverte. Ne vous inquiétez pas, ces erreurs disparaissent à la fin des procédures restantes.  
@@ -572,7 +572,7 @@ Vous pouvez utiliser Windows Presentation Foundation (WPF) pour créer rapidemen
   
      Notez que les deux entrées sont ajoutées à la liste **Query and Update Data** , comme indiqué dans l’illustration suivante.  
   
-     ![Les éléments TODO sont ajoutés à la liste.](../designers/media/wpfquickstart3.PNG "WPFQuickStart3")  
+     ![Les éléments TODO sont ajoutés à la liste.](~/designers/media/wpfquickstart3.PNG "WPFQuickStart3")  
   
 4.  Cochez la case de l’entrée **Do something else** dans la liste.  
   

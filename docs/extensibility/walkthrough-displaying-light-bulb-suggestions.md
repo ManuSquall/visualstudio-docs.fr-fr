@@ -45,11 +45,11 @@ Les ampoules sont des icônes utilisées dans l’éditeur Visual Studio qui se 
   
  Voici à quoi ressemble une ampoule. Dans un projet Visual Basic ou Visual c#, une ligne ondulée rouge s’affiche sous un nom de variable lorsqu’il n’est pas valide. Lorsque vous déplacez la souris sur l’identificateur non valide, une ampoule apparaît près du curseur.  
   
- ![ampoule](../extensibility/media/lightbulb.png "l’ampoule")  
+ ![ampoule](~/extensibility/media/lightbulb.png "l’ampoule")  
   
  Si vous cliquez sur la flèche vers le bas par l’ampoule, un ensemble d’actions suggérées s’affiche, avec un aperçu de l’action sélectionnée. Dans ce cas, il indique les modifications qui seront apportées à votre code si vous exécutez l’action.  
   
- ![aperçu d’ampoule](../extensibility/media/lightbulbpreview.png "LightBulbPreview")  
+ ![aperçu d’ampoule](~/extensibility/media/lightbulbpreview.png "LightBulbPreview")  
   
  Vous pouvez utiliser les ampoules pour fournir vos propres actions suggérées. Par exemple, vous pouvez fournir des actions pour déplacer l’ouverture des accolades pour une nouvelle ligne ou de les déplacer vers la fin de la ligne précédente. La procédure suivante explique comment créer une ampoule qui s’affiche sur le mot en cours et a deux actions suggérées : **convertir en majuscules** et **convertir en minuscules**.  
   
@@ -371,12 +371,12 @@ Les ampoules sont des icônes utilisées dans l’éditeur Visual Studio qui se 
   
 3.  Créez un fichier texte et tapez du texte. Vous devez voir une ampoule apparaît à gauche du texte.  
   
-     ![tester l’ampoule](../extensibility/media/testlightbulb.png "TestLIghtBulb")  
+     ![tester l’ampoule](~/extensibility/media/testlightbulb.png "TestLIghtBulb")  
   
 4.  Pointez sur l’ampoule. Vous devez voir une flèche vers le bas.  
   
 5.  Lorsque vous cliquez sur l’ampoule, deux actions suggérées doivent être affichées, ainsi que la version préliminaire de l’action sélectionnée.  
   
-     ![tester l’ampoule, développé](../extensibility/media/testlightbulbexpanded.gif "TestLIghtBulbExpanded")  
+     ![tester l’ampoule, développé](~/extensibility/media/testlightbulbexpanded.gif "TestLIghtBulbExpanded")  
   
 6.  Si vous cliquez sur la première action, tout le texte du mot actuel doit être converti en majuscules. Si vous cliquez sur la deuxième action, tout le texte doit être converti en minuscules.

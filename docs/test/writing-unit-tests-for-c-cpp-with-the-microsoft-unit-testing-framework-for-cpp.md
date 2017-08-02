@@ -243,7 +243,7 @@ Dans Visual Studio, vous pouvez créer des tests unitaires pour le code non mana
   
 5.  Dans l'Explorateur de tests, choisissez **Exécuter tout**.  
   
-     ![Explorateur de tests unitaires &#45; Réussite du test de base](../test/media/utecpp10.png "UteCpp10")  
+     ![Explorateur de tests unitaires &#45; Réussite du test de base](~/test/media/utecpp10.png "UteCpp10")  
   
  Vous avez configuré le test et les projets de code, et vérifié que vous pouviez exécuter des tests exécutant les fonctions du projet de code. Maintenant, vous pouvez commencer à écrire le code et les tests réels.  
   

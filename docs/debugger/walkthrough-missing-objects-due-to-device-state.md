@@ -49,7 +49,7 @@ Cette procédure pas à pas montre comment utiliser Graphics Diagnostics dans [!
   
 2.  Dans **Liste de frames**, sélectionnez un frame qui montre que le modèle n’est pas affiché. La cible de rendu est mise à jour pour refléter le frame sélectionné. Dans ce scénario, l'onglet du journal de graphisme se présente comme suit :  
   
-     ![Liste des frames et aperçu de la mémoire tampon de frame de l'onglet .vsglog](../debugger/media/vsg_walkthru1_experiment.png "vsg\_walkthru1\_experiment")  
+     ![Liste des frames et aperçu de la mémoire tampon de frame de l'onglet .vsglog](~/debugger/graphics/media/vsg_walkthru1_experiment.png "vsg\_walkthru1\_experiment")  
   
  Une fois que vous avez sélectionné un frame qui illustre le problème, vous pouvez utiliser la **Liste des événements Graphics** pour le diagnostiquer. La fenêtre **Liste des événements Graphics** contient chaque appel d’API Direct3D qui a été effectué pour afficher le frame actif, par exemple les appels API pour configurer l’état de l’appareil, créer et mettre à jour les mémoires tampons, et dessiner les objets qui apparaissent dans le frame. Plusieurs types d’appels sont intéressants, car il y a souvent \(mais pas toujours\) une modification correspondante dans la cible de rendu quand l’application fonctionne comme prévu. C’est le cas des appels de dessin, de distribution, de copie ou d’effacement, par exemple. Les appels de dessin sont particulièrement intéressants, car chacun d’eux représente la géométrie affichée par l’application \(les appels de distribution permettent aussi cela\).  
   
@@ -107,4 +107,4 @@ Cette procédure pas à pas montre comment utiliser Graphics Diagnostics dans [!
   
  Après avoir déterminé que le problème de rendu est lié à une fonction de profondeur mal configurée, vous pouvez utiliser cette information ainsi que votre connaissance du code pour identifier l’emplacement où la fonction de profondeur a été mal définie, et résoudre le problème. Si vous êtes peu familiarisé avec le code, vous pouvez identifier le problème à l’aide des indices que vous avez rassemblés lors du débogage. Par exemple, en reprenant la **description du stencil de profondeur** de ce scénario, vous pouvez rechercher le code pour les mots tels que « profondeur » ou « supérieure ». Après avoir corrigé le code, vous devez le régénérer, puis réexécuter l’application pour vérifier que le problème d’affichage est résolu :  
   
- ![Application après la résolution du problème](../debugger/media/vsg_walkthru1_finalview.png "vsg\_walkthru1\_finalview")
+ ![Application après la résolution du problème](~/debugger/graphics/media/vsg_walkthru1_finalview.png "vsg\_walkthru1\_finalview")

@@ -53,7 +53,7 @@ Le jeu de combinaisons fonctionne comme suit :
   
 3.  Choisissez le bouton **Événements** dans la barre d’outils de la fenêtre **Propriétés** pour afficher la page **Événements** dans la fenêtre **Propriétés**. Faites défiler l’écran vers le bas jusqu’à l’événement **Click**, puis entrez **label_Click** dans la zone, comme indiqué à la figure suivante.  
   
-     ![Fenêtre Propriétés affichant l’événement Click](../ide/media/express_labelclick.png "Express_labelClick")  
+     ![Fenêtre Propriétés affichant l’événement Click](~/ide/media/express_labelclick.png "Express_labelClick")  
 Fenêtre Propriétés affichant l'événement Click  
   
 4.  Appuyez sur Entrée. L'IDE ajoute un gestionnaire d'événements Click appelé `label_Click()` au code et le raccorde à chacun des contrôles Label sur le formulaire.  

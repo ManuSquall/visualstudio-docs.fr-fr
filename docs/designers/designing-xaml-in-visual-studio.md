@@ -48,7 +48,7 @@ Visual Studio et Blend pour Visual Studio fournissent tous deux des outils visue
   
 -   **Une interface utilisateur cohérente :** vous pouvez concevoir vos applications dans le contexte familier de l'interface utilisateur de Visual Studio, ce qui rend le passage d'un IDE à un autre plus agréable et plus productif. Blend pour Visual Studio utilise le thème sombre de Visual Studio qui vous permet de vous concentrer sur le contenu que vous créez en améliorant le contraste entre le contenu et l'interface utilisateur. Consultez [Création d’une interface utilisateur à l’aide du concepteur XAML](../designers/creating-a-ui-by-using-xaml-designer-in-visual-studio.md).  
   
-     ![Environnement IDE Blend pour Visual Studio](../designers/media/blendide.png "BlendIDE")  
+     ![Environnement IDE Blend pour Visual Studio](~/designers/media/blendide.png "BlendIDE")  
   
 -   **XAML IntelliSense :** les deux IDE prennent en charge toutes les fonctionnalités courantes que vous pouvez attendre d'IntelliSense, notamment la saisie semi-automatique des instructions, la prise en charge des opérations courantes de l'éditeur telles que l'ajout de commentaires et la mise en forme de code, ainsi que la navigation des ressources, la liaison et le code.  
   
@@ -56,7 +56,7 @@ Visual Studio et Blend pour Visual Studio fournissent tous deux des outils visue
   
 -   **Expérience de rechargement de fichier :** vous pouvez modifier vos fichiers XAML dans Blend pour Visual Studio ou dans Visual Studio. Vos fichiers modifiés sont alors rechargés automatiquement quand vous passez de l'un à l'autre. Pour minimiser les interruptions de flux de travail, vous pouvez maintenant définir vos préférences de rechargement des fichiers dans la boîte de dialogue correspondante.  
   
-     ![Expérience de rechargement de fichiers](../designers/media/blendfilereload.png "BlendFileReload")  
+     ![Expérience de rechargement de fichiers](~/designers/media/blendfilereload.png "BlendFileReload")  
   
 -   **Dispositions et paramètres synchronisés :** les dispositions personnalisées vous permettent d'enregistrer et d'appliquer des personnalisations de disposition de fenêtre Outil. Visual Studio synchronise ces personnalisations et ces préférences à la fois pour Visual Studio et pour Blend pour Visual Studio sur différents ordinateurs lorsque vous vous connectez avec le même compte Microsoft. Consultez [Personnalisation des paramètres de développement dans Visual Studio](http://msdn.microsoft.com/en-us/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
   

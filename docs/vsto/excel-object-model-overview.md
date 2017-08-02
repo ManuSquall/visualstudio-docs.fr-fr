@@ -47,7 +47,7 @@ caps.handback.revision: 65
   
  Cette rubrique propose une vue d'ensemble succincte du modèle objet Excel.  Pour obtenir la liste des ressources fournissant des informations complémentaires sur le modèle objet Excel complet, consultez [Utilisation de la documentation du modèle objet Excel](#ExcelOMDocumentation).  
   
- ![lien vers la vidéo](../vsto/media/playvideo.png "lien vers la vidéo") Pour obtenir une démonstration vidéo connexe, consultez [Comment utiliser des gestionnaires d'événements dans une macro complémentaire Excel 2007 ?](http://go.microsoft.com/fwlink/?LinkID=130291) et [Comment utiliser des formes pour créer un graphique en bulles dans Excel ?](http://go.microsoft.com/fwlink/?LinkID=130313).  
+ ![lien vers la vidéo](~/data-tools/media/playvideo.gif "lien vers la vidéo") Pour obtenir une démonstration vidéo connexe, consultez [Comment utiliser des gestionnaires d'événements dans une macro complémentaire Excel 2007 ?](http://go.microsoft.com/fwlink/?LinkID=130291) et [Comment utiliser des formes pour créer un graphique en bulles dans Excel ?](http://go.microsoft.com/fwlink/?LinkID=130313).  
   
 ## Accès aux objets dans un projet Excel  
  Quand vous créez un projet de complément VSTO pour Excel, Visual Studio crée automatiquement un fichier de code ThisAddIn.vb ou ThisAddIn.cs.  Vous pouvez accéder à l'objet Application à l'aide de `Me.Application` ou de `this.Application`.  

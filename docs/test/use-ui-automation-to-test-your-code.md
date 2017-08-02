@@ -48,7 +48,7 @@ Vous pouvez créer des tests automatisés qui vérifient l’interface utilisate
   
  Comme l'illustre la figure ci-dessous, dans un scénario de développement par défaut, il est courant qu'initialement vous génériez simplement votre application (F5) et cliquiez parmi les contrôles d'interface utilisateur pour vérifier que tout fonctionne comme prévu. Vous pouvez ensuite décider de créer un test codé pour ne pas avoir à continuer de tester l’application manuellement. Selon les fonctionnalités spécifiques testées dans votre application, vous pouvez écrire du code pour un test fonctionnel ou pour un test d'intégration qui peut ou non inclure des tests au niveau de l'interface utilisateur. Si vous souhaitez simplement accéder directement à une logique métier, vous pouvez coder un test unitaire. Toutefois, dans certaines circonstances, il peut être bénéfique de tester les différents contrôles d'interface utilisateur de votre application. Un test codé de l'interface utilisateur peut automatiser le scénario initial (F5) et vérifier que l'évolution du code n'a aucun impact sur la fonctionnalité de votre application.  
   
- ![Test durant le développement d’applications](../test/media/cuit_overview.png "CUIT_Overview")  
+ ![Test durant le développement d’applications](~/test/media/cuit_overview.png "CUIT_Overview")  
   
  Créer un test codé de l'interface utilisateur est très facile. Il vous suffit d'exécuter le test manuellement pendant que le Générateur de test codé de l'interface utilisateur s'exécute en arrière-plan. Vous pouvez aussi spécifier les valeurs qui doivent apparaître dans des champs spécifiques. Le Générateur de test codé de l'interface utilisateur enregistre vos actions et génère du code à partir de ces actions. Une fois le test créé, vous pouvez le modifier dans un éditeur spécial qui vous permet de modifier la séquence d'actions.  
   
@@ -96,15 +96,15 @@ Vous pouvez créer des tests automatisés qui vérifient l’interface utilisate
   
      Si vous venez de créer un projet de test codé de l'interface utilisateur, le premier fichier de test codé de l'interface utilisateur est ajouté automatiquement. Pour ajouter un autre fichier de test, ouvrez le menu contextuel du projet de test codé de l’interface utilisateur, pointez sur **Ajouter**, puis choisissez **Test codé de l’interface utilisateur**.  
   
-     ![Créer un test codé de l’interface utilisateur](../test/media/codedui_create.png "CodedUI_Create")  
+     ![Créer un test codé de l’interface utilisateur](~/test/media/codedui_create.png "CodedUI_Create")  
   
      Dans la boîte de dialogue **Générer le code pour le test codé de l’interface utilisateur**, choisissez **Enregistrer les actions, modifier le mappage d’IU ou ajouter des assertions**.  
   
-     ![Sélectionner des actions d’enregistrement](../test/media/codedui_codegendialogb.png "CodedUI_CodeGenDialogB")  
+     ![Sélectionner des actions d’enregistrement](~/test/media/codedui_codegendialogb.png "CodedUI_CodeGenDialogB")  
   
      Le Générateur de test codé de l'interface utilisateur apparaît et Visual Studio est réduit.  
   
-     ![Générateur de test codé de l’interface utilisateur](../test/media/codedui_testbuilder.png "CodedUI_TestBuilder")  
+     ![Générateur de test codé de l’interface utilisateur](~/test/media/codedui_testbuilder.png "CodedUI_TestBuilder")  
   
 3.  **Enregistrer une séquence d’actions**.  
   
@@ -127,7 +127,7 @@ Vous pouvez créer des tests automatisés qui vérifient l’interface utilisate
   
      Fermez la fenêtre d’assertion et choisissez **Générer le code**.  
   
-     ![Élément de ciblage du test codé de l’interface utilisateur](../test/media/codedui_1.png "CodedUI_1")  
+     ![Élément de ciblage du test codé de l’interface utilisateur](~/test/media/codedui_1.png "CodedUI_1")  
   
     > [!TIP]
     >  Alternez entre l'enregistrement des actions et la vérification des valeurs. Générez le code à la fin de chaque séquence d'actions ou de vérifications. Si vous le souhaitez, vous pourrez insérer de nouvelles actions et vérifications ultérieurement.  
@@ -161,7 +161,7 @@ Vous pouvez créer des tests automatisés qui vérifient l’interface utilisate
   
      Ouvrez UIMap.uitest. Ce fichier s'ouvre dans l'Éditeur de test codé de l'interface utilisateur, où vous pouvez modifier n'importe quelle séquence d'actions enregistrée et vos assertions.  
   
-     ![Éditeur de test codé de l’interface utilisateur](../test/media/cuit_editor_edit.png "CUIT_Editor_edit")  
+     ![Éditeur de test codé de l’interface utilisateur](~/test/media/cuit_editor_edit.png "CUIT_Editor_edit")  
   
      Pour plus d’informations, consultez [Modification des tests codés de l’interface utilisateur à l’aide de l’éditeur de test codé de l’interface utilisateur](../test/editing-coded-ui-tests-using-the-coded-ui-test-editor.md).  
   
@@ -176,26 +176,26 @@ Vous pouvez créer des tests automatisés qui vérifient l’interface utilisate
 ###  <a name="starting"></a> Démarrage et arrêt de l’application testée  
  *Je ne souhaite pas démarrer et arrêter mon application, mon navigateur ou ma base de données séparément pour chaque test. Comment faire ?*  
   
--   ![Prérequis](../test/media/prereq.png "Prérequis") Si vous ne souhaitez pas enregistrer les actions de démarrage de votre application durant le test, vous devez la démarrer avant de choisir l’icône **Enregistrer**.  
+-   ![Prérequis](~/test/media/prereq.png "Prérequis") Si vous ne souhaitez pas enregistrer les actions de démarrage de votre application durant le test, vous devez la démarrer avant de choisir l’icône **Enregistrer**.  
   
--   ![Prérequis](../test/media/prereq.png "Prérequis")À la fin du test, le processus dans lequel le test s’exécute est arrêté. Si vous avez démarré votre application dans le test, l'application se ferme généralement à l'issue du test.  Si vous ne voulez pas que votre application soit fermée à la fin du test, vous devez ajouter un fichier .runsettings à votre solution et utiliser l'option `KeepExecutorAliveAfterLegacyRun`. Pour plus d’informations, consultez [Configurer des tests unitaires à l’aide d’un fichier .runsettings](../test/configure-unit-tests-by-using-a-dot-runsettings-file.md).  
+-   ![Prérequis](~/test/media/prereq.png "Prérequis")À la fin du test, le processus dans lequel le test s’exécute est arrêté. Si vous avez démarré votre application dans le test, l'application se ferme généralement à l'issue du test.  Si vous ne voulez pas que votre application soit fermée à la fin du test, vous devez ajouter un fichier .runsettings à votre solution et utiliser l'option `KeepExecutorAliveAfterLegacyRun`. Pour plus d’informations, consultez [Configurer des tests unitaires à l’aide d’un fichier .runsettings](../test/configure-unit-tests-by-using-a-dot-runsettings-file.md).  
   
--   ![Prérequis](../test/media/prereq.png "Prérequis") Vous pouvez ajouter une méthode d’initialisation de test, identifiée par un attribut [TestInitialize], qui exécute du code au début de chaque méthode de test. Vous pouvez par exemple démarrer l'application à partir de la méthode TestInitialize.  
+-   ![Prérequis](~/test/media/prereq.png "Prérequis") Vous pouvez ajouter une méthode d’initialisation de test, identifiée par un attribut [TestInitialize], qui exécute du code au début de chaque méthode de test. Vous pouvez par exemple démarrer l'application à partir de la méthode TestInitialize.  
   
--   ![Prérequis](../test/media/prereq.png "Prérequis") Vous pouvez ajouter une méthode de nettoyage de test, identifiée par un attribut [TestCleanup], qui exécute du code à la fin de chaque méthode de test. La méthode de fermeture de l'application pourrait par exemple être appelée à partir de la méthode TestCleanup.  
+-   ![Prérequis](~/test/media/prereq.png "Prérequis") Vous pouvez ajouter une méthode de nettoyage de test, identifiée par un attribut [TestCleanup], qui exécute du code à la fin de chaque méthode de test. La méthode de fermeture de l'application pourrait par exemple être appelée à partir de la méthode TestCleanup.  
   
 ###  <a name="VerifyingCodeUsingCUITGenerateAssertions"></a> Validation des propriétés des contrôles d’IU  
  Vous pouvez utiliser le **Générateur de test codé de l’interface utilisateur** pour ajouter un contrôle d’interface utilisateur à l’objet <xref:Microsoft.VisualStudio.TestTools.UITest.Common.UIMap.UIMap> de votre test ou pour générer du code pour une méthode de validation qui utilise une assertion pour un contrôle d’interface utilisateur.  
   
  Pour générer des assertions pour vos contrôles d’IU, choisissez l’outil **Ajouter des assertions** dans le Générateur de test codé de l’interface utilisateur, puis faites-le glisser vers le contrôle de l’application testée dont vous souhaitez vérifier le bon fonctionnement. Quand la zone met votre contrôle en surbrillance, relâchez le bouton de la souris. Le code de la classe de contrôle est créé immédiatement dans le fichier `UIMap.Designer.cs`.  
   
- ![Élément de ciblage du test codé de l’interface utilisateur](../test/media/codedui_1.png "CodedUI_1")  
+ ![Élément de ciblage du test codé de l’interface utilisateur](~/test/media/codedui_1.png "CodedUI_1")  
   
  Les propriétés de ce contrôle sont maintenant listées dans la boîte de dialogue **Ajouter des assertions**.  
   
  Une autre approche pour accéder à un contrôle spécifique consiste à choisir la flèche **(<<)** pour développer l’affichage du **Mappage de contrôle d’IU**. Pour rechercher un contrôle parent, frère ou enfant, vous pouvez cliquer n’importe où sur le mappage et utiliser les touches de direction pour vous déplacer dans l’arborescence.  
   
- ![Propriétés du test codé de l’interface utilisateur](../test/media/codedui_2.png "CodedUI_2")  
+ ![Propriétés du test codé de l’interface utilisateur](~/test/media/codedui_2.png "CodedUI_2")  
   
 -   *Je ne vois aucune propriété quand je sélectionne un contrôle dans mon application, ou je ne vois pas le contrôle dans le Mappage de contrôle d’interface utilisateur.*  
   
@@ -203,7 +203,7 @@ Vous pouvez créer des tests automatisés qui vérifient l’interface utilisate
   
  Ouvrez ensuite le menu contextuel sur la propriété du contrôle d’IU à vérifier, puis pointez sur **Ajouter une assertion**. Dans la boîte de dialogue **Ajouter une assertion**, sélectionnez le **Comparateur** pour votre assertion, par exemple <xref:Microsoft.VisualStudio.TestTools.UnitTesting.Assert.AreEqual%2A>, et tapez la valeur de votre assertion dans **Valeur de comparaison**.  
   
- ![Assertions du test codé de l’interface utilisateur](../test/media/codedui_3.png "CodedUI_3")  
+ ![Assertions du test codé de l’interface utilisateur](~/test/media/codedui_3.png "CodedUI_3")  
   
  Une fois que vous avez ajouté toutes les assertions pour votre test, choisissez **OK**.  
   
@@ -224,7 +224,7 @@ Vous pouvez créer des tests automatisés qui vérifient l’interface utilisate
   
 -   Ajoute une méthode nommée `AssertForAddTwoNumbers` à votre mappage d'interface utilisateur (UIMap.uitest). Ce fichier s'ouvre dans l'Éditeur de test codé de l'interface utilisateur, où vous pouvez modifier les assertions.  
   
-     ![Modifier l’assertion à l’aide de l’éditeur de test codé de l’interface utilisateur](../test/media/cuit_editor_assert.png "CUIT_Editor_assert")  
+     ![Modifier l’assertion à l’aide de l’éditeur de test codé de l’interface utilisateur](~/test/media/cuit_editor_assert.png "CUIT_Editor_assert")  
   
      Pour plus d’informations, consultez [Modification des tests codés de l’interface utilisateur à l’aide de l’éditeur de test codé de l’interface utilisateur](../test/editing-coded-ui-tests-using-the-coded-ui-test-editor.md).  
   
@@ -242,7 +242,7 @@ Vous pouvez créer des tests automatisés qui vérifient l’interface utilisate
   
  Parfois, pour [ajouter des contrôles et valider leurs propriétés](#VerifyingCodeUsingCUITGenerateAssertions), vous devez utiliser le clavier. Par exemple, quand vous essayez d'enregistrer un test codé de l'interface utilisateur qui utilise un contrôle de menu contextuel, la liste des éléments de menu dans le contrôle perd le focus et disparaît quand vous tentez de sélectionner l'outil Ajouter des assertions dans le Générateur de test codé de l'interface utilisateur. Ainsi, dans l'illustration ci-dessous, le menu contextuel dans Internet Explorer perd le focus et disparaît si vous essayez de le sélectionner avec l'outil Ajouter des assertions.  
   
- ![CodedUITest&#95;SelectControlKeyboard](../test/media/codeduitest_selectcontrolkeyboard.png "CodedUITest_SelectControlKeyboard")  
+ ![CodedUITest&#95;SelectControlKeyboard](~/test/media/codeduitest_selectcontrolkeyboard.png "CodedUITest_SelectControlKeyboard")  
   
  Pour utiliser le clavier pour sélectionner un contrôle d'interface utilisateur, placez le pointeur de la souris sur le contrôle. Maintenez enfoncées la touche **Ctrl** et la touche **I** en même temps. Relâchez les touches. Le contrôle est enregistré par le Générateur de test codé de l'interface utilisateur.  
   
@@ -256,7 +256,7 @@ Vous pouvez créer des tests automatisés qui vérifient l’interface utilisate
   
  Quand vous exécutez votre test codé de l'interface utilisateur, placez le pointeur de la souris sur le contrôle. Ensuite, maintenez enfoncée la touche Ctrl pendant que vous maintenez enfoncées les touches Maj et R de votre clavier. Relâchez les touches. Un événement de pointage de la souris est enregistré par le Générateur de test codé de l'interface utilisateur.  
   
- ![CodedUI&#95;Hover](../test/media/codedui_hover.png "CodedUI_Hover")  
+ ![CodedUI&#95;Hover](~/test/media/codedui_hover.png "CodedUI_Hover")  
   
  Une fois que vous avez généré la méthode de test, du code semblable à celui de l'exemple ci-dessous est ajouté au fichier UIMap.Desinger.cs :  
   

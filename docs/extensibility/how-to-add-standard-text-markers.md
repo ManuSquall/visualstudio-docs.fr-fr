@@ -39,7 +39,7 @@ Utilisez la procédure suivante pour créer un des types de marqueur de texte pa
   
      Par exemple, les commandes de point d'arrêt\-détail dans le menu contextuel incluent **supprimez le point d'arrêt** via **Nouveau point d'arrêt**, comme le montre la capture d'écran suivante.  
   
-     ![Menu contextuel Marqueur](../extensibility/media/vsmarkercontextmenu.png "vsMarkercontextmenu")  
+     ![Menu contextuel Marqueur](~/extensibility/media/vsmarkercontextmenu.gif "vsMarkercontextmenu")  
   
 2.  Passez en arrière du texte identifiant le nom de la commande personnalisée.  Par exemple, **supprimez le point d'arrêt** peut être une commande personnalisée si l'environnement ne la fournissait pas déjà.  Vous passez également en arrière si la commande est prise en charge, disponible et actif, et\/ou une bascule aligner sur.  L'environnement utilise ces informations pour afficher la commande personnalisée dans le menu contextuel de la façon correcte.  
   

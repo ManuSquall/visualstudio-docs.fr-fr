@@ -200,7 +200,7 @@ caps.handback.revision: 53
   
     -   Commentaires  
   
-14. Dans la liste **Propriétés**, choisissez la propriété **Tri et regroupement**, puis sélectionnez le bouton ![Icône du bouton de sélection (...)](../sharepoint/media/ellipsisicon.png "Icône du bouton de sélection (...)") pour afficher la boîte de dialogue **Tri et regroupement**.  
+14. Dans la liste **Propriétés**, choisissez la propriété **Tri et regroupement**, puis sélectionnez le bouton ![Icône du bouton de sélection (...)](~/sharepoint/media/ellipsisicon.gif "Icône du bouton de sélection (...)") pour afficher la boîte de dialogue **Tri et regroupement**.  
   
 15. Dans la liste **Nom de la colonne**, choisissez **Nom du patient**, assurez\-vous que la colonne **Tri** est définie sur **Croissant**, puis cliquez sur le bouton **OK**.  
   

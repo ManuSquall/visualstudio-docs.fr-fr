@@ -58,7 +58,7 @@ IntelliSense est le terme général employé pour plusieurs fonctionnalités : 
   
  Le paramètre suivant à taper pour la fonction vous est indiqué en gras.  Pour les fonctions surchargées, vous pouvez utiliser les touches de direction Haut et Bas pour consulter les différentes informations de paramètres concernant les surcharges de fonction.  
   
- ![Informations sur les paramètres](../ide/media/vs2015_param_info.png "VS2015\_param\_Info")  
+ ![Informations sur les paramètres](~/ide/media/vs2015_param_info.png "VS2015\_param\_Info")  
   
  Lorsque vous annotez des fonctions et des paramètres avec les commentaires de documentation XML, les commentaires apparaissent comme Informations sur les paramètres.  Pour plus d'informations, consultez [Insertion de commentaires dans le code XML](../ide/supplying-xml-code-comments.md).  
   
@@ -67,11 +67,11 @@ IntelliSense est le terme général employé pour plusieurs fonctionnalités : 
 ## Info express  
  Infos express affiche la déclaration complète de tout identificateur dans votre code.  
   
- ![Info express Visual Studio](../ide/media/vs2015_quick_info.png "VS2015\_Quick\_info")  
+ ![Info express Visual Studio](~/ide/media/vs2015_quick_info.png "VS2015\_Quick\_info")  
   
  Lorsque vous sélectionnez un membre dans la zone **Liste des Membres**, les Infos express apparaissent également.  
   
- ![Informations sur les paramètres dans un fichier de code C&#35;](../ide/media/vs2015_paraminfo.png "VS2015\_ParamInfo")  
+ ![Informations sur les paramètres dans un fichier de code C&#35;](~/ide/media/vs2015_paraminfo.png "VS2015\_ParamInfo")  
   
  Vous pouvez appeler manuellement la fonctionnalité Info express en cliquant sur **Modifier\/IntelliSense\/Info express**, en tapant Ctrl\+I ou en cliquant sur le bouton **Info express** dans la barre d'outils de l'éditeur.  
   

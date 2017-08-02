@@ -48,15 +48,15 @@ Le Gestionnaire de package comporte trois onglets, comme décrit ci-dessous. Tou
 
 - **Disponible** vous permet de parcourir les packages à installer. Si le package est déjà installé, le bouton **Installer** à droite devient **Désinstaller**.
 
-    ![Onglet Packages disponibles dans le Gestionnaire de package Outils R pour Visual Studio](media/package-manager-available.png)
+    ![Onglet Packages disponibles dans le Gestionnaire de package Outils R pour Visual Studio](~/rtvs/media/package-manager-available.png)
 
 - **Installé** affiche tous les packages installés et chargés. Un point vert en regard d’un package signifie qu’il est chargé dans la session R. Vous pouvez utiliser la croix rouge dans la liste de gauche ou le bouton **Désinstaller** à droite pour désinstaller le package. Une flèche bleue vers le haut affichée à droite d’un package installé permet de mettre à jour le package si une version plus récente est disponible.
 
-    ![Onglet Packages installés dans le Gestionnaire de package Outils R pour Visual Studio](media/package-manager-installed.png)
+    ![Onglet Packages installés dans le Gestionnaire de package Outils R pour Visual Studio](~/rtvs/media/package-manager-installed.png)
 
 - **Chargé** affiche uniquement les packages qui sont chargés dans la session R. Ils comportent donc tous un point vert. Vous pouvez également désinstaller et mettre à jour des packages à partir de cet onglet.
 
-    ![Onglet Packages chargés dans le Gestionnaire de package Outils R pour Visual Studio](media/package-manager-loaded.png)
+    ![Onglet Packages chargés dans le Gestionnaire de package Outils R pour Visual Studio](~/rtvs/media/package-manager-loaded.png)
 
 ## <a name="package-locations"></a>Emplacements des packages
 

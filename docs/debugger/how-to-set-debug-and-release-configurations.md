@@ -60,7 +60,7 @@ Les projets Visual Studio ont des configurations Release et Debug distinctes pou
   
 2.  Dans la barre d'outils, choisissez **Debug**  ou **Release** dans la zone de liste **Configurations de solutions**.  
   
-     ![configuration de build de barre d’outils](../debugger/media/toolbarbuildconfiguration.png "ToolbarBuildConfiguration")  
+     ![configuration de build de barre d’outils](~/debugger/media/toolbarbuildconfiguration.png "ToolbarBuildConfiguration")  
   
      Cette barre d'outils n'est pas disponible dans les éditions Express.  Vous pouvez utiliser les commandes de menu **Générer la solution \(F6\)** et **Démarrer le débogage \(F5\)** pour choisir la configuration.  
   

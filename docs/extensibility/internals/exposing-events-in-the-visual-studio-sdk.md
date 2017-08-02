@@ -61,7 +61,7 @@ caps.handback.revision: 16
   
  Lorsqu’un de vos objets événement sont demandé par un client automation, créer un objet racine qui a des méthodes pour n’importe quel événement prenant en charge votre VSPackage. L’environnement appelle approprié `get_` méthode sur cet objet. Par exemple, si `DTE.Events.AutomationProjectsEvents` est appelée, la `get_AutomationProjectsEvents` méthode est appelée sur l’objet racine.  
   
- ![Événements de projet Visual Studio](../../extensibility/internals/media/projectevents.png "ProjectEvents")  
+ ![Événements de projet Visual Studio](~/extensibility/internals/media/projectevents.gif "ProjectEvents")  
 Modèle Automation pour les événements  
   
  La classe `CProjectEventsContainer` représente l’objet source pour BscProjectsEvents, tandis que `CProjectItemsEventsContainer` représente l’objet source pour BscProjectItemsEvents.  

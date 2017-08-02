@@ -58,7 +58,7 @@ Image créée dans ce didacticiel
   
  Pour télécharger une version complète de l’exemple, consultez la rubrique [Exemple complet de visionneuse d’images du didacticiel](http://code.msdn.microsoft.com/Complete-Picture-Viewer-7d91d3a8).  
   
- ![lien vers la vidéo](../data-tools/media/playvideo.gif "PlayVideo")Pour obtenir une version vidéo de cette rubrique, consultez [Comment créer une visionneuse d’images en Visual Basic](http://go.microsoft.com/fwlink/?LinkId=205207) ou [Comment créer une visionneuse d’images en C#](http://go.microsoft.com/fwlink/?LinkId=205198).  
+ ![lien vers la vidéo](~/data-tools/media/playvideo.gif "PlayVideo")Pour obtenir une version vidéo de cette rubrique, consultez [Comment créer une visionneuse d’images en Visual Basic](http://go.microsoft.com/fwlink/?LinkId=205207) ou [Comment créer une visionneuse d’images en C#](http://go.microsoft.com/fwlink/?LinkId=205198).  
   
 > [!NOTE]
 >  Ces vidéos utilisent une version antérieure de Visual Studio et présentent donc de légères différences quant à certaines commandes de menu et autres éléments d’interface utilisateur. Toutefois, les concepts et les procédures fonctionnent de façon similaire dans la version actuelle de Visual Studio. Visual C# et Visual Basic sont tous deux traités dans ce didacticiel. Ne tenez compte que des informations spécifiques au langage de programmation que vous utilisez.  

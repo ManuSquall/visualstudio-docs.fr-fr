@@ -119,7 +119,7 @@ Dans ces étapes, nous allons définir un point d’arrêt simple pour arrêter 
 
 1. Appuyez sur Entrée pour remplir la liste des processus ptvsd disponibles sur cette machine :
 
-    ![Saisie de la cible de la connexion et affichage de la liste des processus](media/remote-debugging-qualifier.png)
+    ![Saisie de la cible de la connexion et affichage de la liste des processus](~/python/media/remote-debugging-qualifier.png)
 
     Si vous avez démarré un autre programme sur la machine distante après avoir rempli cette liste, sélectionnez le bouton **Actualiser**.
 
@@ -127,7 +127,7 @@ Dans ces étapes, nous allons définir un point d’arrêt simple pour arrêter 
 
 1. Visual Studio passe alors en mode débogage. Le script continue à s’exécuter sur la machine distante pour fournir toutes les fonctionnalités de [débogage](debugging.md) habituelles. Par exemple, définissez un point d’arrêt sur la ligne `if guess < number:`, puis basculez sur la machine distante et entrez une autre hypothèse (guess). Après cela, Visual Studio s’arrête sur votre machine locale au point d’arrêt défini, affiche les variables locales, et ainsi de suite :
 
-    ![Le point d’arrêt est atteint](media/remote-debugging-breakpoint-hit.png)
+    ![Le point d’arrêt est atteint](~/python/media/remote-debugging-breakpoint-hit.png)
 
 1. Quand vous arrêtez le débogage, Visual Studio se détache du programme, qui continue à s’exécuter sur la machine distante. ptvsd poursuit également l’écoute des attachements de débogueurs, pour vous permettre de rattacher le processus à tout moment.
 
@@ -183,7 +183,7 @@ Par défaut, la connexion au serveur de débogage à distance ptvsd est sécuris
 
 1. Répétez le processus d’attachement dans Visual Studio comme décrit précédemment, en spécifiant cette fois-ci le protocole `tcps://` dans **Cible de la connexion** (ou **Qualificateur**).
 
-    ![Choix du transport de débogage à distance avec SSL](media/remote-debugging-qualifier-ssl.png)
+    ![Choix du transport de débogage à distance avec SSL](~/python/media/remote-debugging-qualifier-ssl.png)
 
 ### <a name="warnings"></a>Avertissements
 
@@ -191,11 +191,11 @@ Visual Studio vous avertit de problèmes de certificat potentiels quand vous vou
 
 1. Si vous recevez un avertissement du type « le certificat distant n’est pas approuvé », comme celui illustré ci-dessous, cela signifie que vous n’avez pas ajouté correctement le certificat à l’autorité de certification racine de confiance. Vérifiez ces étapes, puis réessayez.
 
-    ![Avertissement lié au certificat SSL approuvé](media/remote-debugging-ssl-warning.png)
+    ![Avertissement lié au certificat SSL approuvé](~/python/media/remote-debugging-ssl-warning.png)
 
 1. Si vous recevez un avertissement du type « le nom du certificat distant ne correspond pas au nom d’hôte », comme celui illustré ci-dessous, cela signifie que vous n’avez pas utilisé le nom d’hôte ou l’adresse IP approprié comme **nom commun** lors de la création du certificat.
 
-    ![Avertissement lié au nom d’hôte du certificat SSL](media/remote-debugging-ssl-warning2.png)
+    ![Avertissement lié au nom d’hôte du certificat SSL](~/python/media/remote-debugging-ssl-warning2.png)
 
 > [!Warning]
 > À l’heure actuelle, Visual Studio 2017 se bloque si vous ignorez ces avertissements. Assurez-vous de corriger tous les problèmes avant d’essayer de vous connecter.

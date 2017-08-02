@@ -49,13 +49,13 @@ Voici quelques exemples simples :
 
 Les extraits de code peuvent apporter bien plus que la saisie semi-automatique de caractères. Par exemple, ils peuvent vous éviter d’avoir à mémoriser les noms de paramètres dans l’appel de fonction complexes, comme cet extrait de code qui permet de lire un fichier CSV avec la fonction `read.csv` :
 
-![Animation de l’utilisation d’un extrait de code pour insérer un appel dans read.csv](media/code-snippet-expansion.gif)
+![Animation de l’utilisation d’un extrait de code pour insérer un appel dans read.csv](~/rtvs/media/code-snippet-expansion.gif)
 
 Dans ce cas, quand vous tapez `readc`, IntelliSense affiche une liste de saisie semi-automatique. En sélectionnant cette saisie semi-automatique dans la liste déroulante et en appuyant sur Tab, vous sélectionnez `readc`, et en rappuyant sur Tab vous développez l’extrait de code. (Pour cette raison, le développement de l’extrait de code est souvent évoqué comme « tapez l’extrait de code et appuyez deux fois sur Tab »). Dans la plupart des cas, le premier appui sur Tab effectue la sélection IntelliSense et le deuxième appui déclenche le développement.
 
 Pour voir tous les extraits de code disponibles, ouvrez la boîte de dialogue **Outils > Gestionnaire des extraits de Code...** (Ctrl+K,B) et sélectionnez **R** pour **Langage**. Développez les groupes, puis sélectionnez les extraits de code individuels pour afficher une description et le texte de raccourci :
 
-![Boîte de dialogue Extraits de code pour R](media/code-snippet-dialog.png)
+![Boîte de dialogue Extraits de code pour R](~/rtvs/media/code-snippet-dialog.png)
 
 Pour créer des extraits de code personnalisés, suivez les instructions de [Procédure pas à pas : création d’un extrait de code](../ide/walkthrough-creating-a-code-snippet.md). En fin de compte, un extrait de code est un simple fichier XML. Par exemple, ce qui suit est l’extrait de code pour l’opération de barre verticale (raccourci `>`)
 

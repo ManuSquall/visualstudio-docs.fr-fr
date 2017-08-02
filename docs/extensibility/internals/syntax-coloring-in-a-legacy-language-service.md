@@ -25,7 +25,7 @@ caps.handback.revision: 22
 ## modèle de coloriseur  
  Le service de langage implémente l'interface d' <xref:Microsoft.VisualStudio.TextManager.Interop.IVsColorizer> , qui est ensuite utilisée par les éditeurs.  Cette implémentation est un objet distinct du service de langage, comme indiqué dans l'illustration suivante.  
   
- ![Graphique Coloriseur SVC](../../extensibility/internals/media/figlgsvccolorizer.png "FigLgSvcColorizer")  
+ ![Graphique Coloriseur SVC](~/extensibility/internals/media/figlgsvccolorizer.gif "FigLgSvcColorizer")  
 modèle simple de coloriseur  
   
 > [!NOTE]

@@ -308,7 +308,7 @@ L'analyseur de mémoire JavaScript est disponible dans Visual Studio pour vous a
   
 -   **Tous les objets de l’instantané n° \<numéro>**. Ce paramètre de filtre ne filtre aucun objet du tas.  
   
- Pour afficher les références d’objet qui ne correspondent pas au filtre **Portée**, sélectionnez **Afficher les références incohérentes** dans la liste des paramètres ![Liste déroulante des paramètres dans l’analyseur de mémoire](../profiling/media/js_mem_settings.png "JS_Mem_Settings") située dans l’angle supérieur droit du volet. Si vous activez ce paramètre, les références incohérentes sont affichées en texte gris.  
+ Pour afficher les références d’objet qui ne correspondent pas au filtre **Portée**, sélectionnez **Afficher les références incohérentes** dans la liste des paramètres ![Liste déroulante des paramètres dans l’analyseur de mémoire](~/profiling/media/js_mem_settings.png "JS_Mem_Settings") située dans l’angle supérieur droit du volet. Si vous activez ce paramètre, les références incohérentes sont affichées en texte gris.  
   
 > [!TIP]
 >  Nous recommandons de suivre les étapes décrites dans [Isolate a memory leak](#Isolate) puis d'utiliser le filtre **Portée** des objets restants pour identifier plus facilement les objets qui présentent une fuite de mémoire.  
@@ -316,7 +316,7 @@ L'analyseur de mémoire JavaScript est disponible dans Visual Studio pour vous a
 ##  <a name="FoldObjects"></a> Afficher les objets par dominateur  
  Dans les vues Types et Dominators, vous pouvez choisir d'afficher les objets dans leurs dominateurs (il s'agit de la vue par défaut sous l'onglet Dominators). Quand cette vue est sélectionnée, seuls les dominateurs sont affichés dans la vue de niveau supérieur des objets. (Les objets qui sont des descendants d'objets non globaux sont masqués de la vue de niveau supérieur.) Pour certaines applications, cela peut montrer plus précisément les objets qui sont la cause d'une fuite de mémoire en réduisant le volume de données.  
   
- Pour basculer la vue des objets par dominateur, choisisse le bouton **Plier les objets par dominateur** . ![Repli d’objets dans leurs dominateurs](../profiling/media/js_mem_fold_objects.png "JS_Mem_Fold_Objects")  
+ Pour basculer la vue des objets par dominateur, choisisse le bouton **Plier les objets par dominateur** . ![Repli d’objets dans leurs dominateurs](~/profiling/media/js_mem_fold_objects.png "JS_Mem_Fold_Objects")  
   
  Pour plus d'informations sur les dominateurs, consultez [Visualiser les détails de l'instantané](#SnapshotDetails).  
   
@@ -334,7 +334,7 @@ L'analyseur de mémoire JavaScript est disponible dans Visual Studio pour vous a
 > [!NOTE]
 >  Les références circulaires sont indiquées par un astérisque (*) et une info-bulle, et ne peuvent pas être développées. Dans le cas contraire, cela vous empêcherez de parcourir l'arborescence et d'identifier les objets qui retiennent de la mémoire.  
   
- Si vous souhaitez obtenir une aide supplémentaire pour identifier les objets équivalents, choisissez **Afficher les ID d’objet** dans la liste des paramètres ![Liste déroulante des paramètres dans l’analyseur de mémoire](../profiling/media/js_mem_settings.png "JS_Mem_Settings") située dans l’angle supérieur droit du volet supérieur. Cette option affiche les ID d'objet en regard des noms d'objet dans la liste **Identificateur(s)** (les ID apparaissent dans toutes les vues, pas seulement dans la liste des références d'objet). Les objets qui possèdent le même ID sont des références partagées.  
+ Si vous souhaitez obtenir une aide supplémentaire pour identifier les objets équivalents, choisissez **Afficher les ID d’objet** dans la liste des paramètres ![Liste déroulante des paramètres dans l’analyseur de mémoire](~/profiling/media/js_mem_settings.png "JS_Mem_Settings") située dans l’angle supérieur droit du volet supérieur. Cette option affiche les ID d'objet en regard des noms d'objet dans la liste **Identificateur(s)** (les ID apparaissent dans toutes les vues, pas seulement dans la liste des références d'objet). Les objets qui possèdent le même ID sont des références partagées.  
   
  L'illustration suivante montre la liste des références d'objet pour un élément sélectionné avec des ID affichés.  
   
@@ -343,7 +343,7 @@ L'analyseur de mémoire JavaScript est disponible dans Visual Studio pour vous a
 ##  <a name="BuiltInValues"></a> Afficher les objets intégrés  
  Par défaut, les vues Dominators et Types affichent uniquement les objets que vous créez dans votre application. Cela vous aide à exclure les informations superflues et à isoler les problèmes liés à l'application. Cependant, il peut parfois être utile d'afficher tous les objets générés par le runtime JavaScript pour votre application.  
   
- Pour afficher ces objets, choisissez **Afficher les éléments intégrés** dans la liste des paramètres ![Liste déroulante des paramètres dans l’analyseur de mémoire](../profiling/media/js_mem_settings.png "JS_Mem_Settings") située dans l’angle supérieur droit du volet.  
+ Pour afficher ces objets, choisissez **Afficher les éléments intégrés** dans la liste des paramètres ![Liste déroulante des paramètres dans l’analyseur de mémoire](~/profiling/media/js_mem_settings.png "JS_Mem_Settings") située dans l’angle supérieur droit du volet.  
   
 ##  <a name="Save"></a> Enregistrer les fichiers de diagnostic de session  
  Les résumés d'instantanés de diagnostic et les vues de détails qui leur sont associées sont enregistrés en tant que fichiers .diagsession. L'**Explorateur de solutions** affiche les sessions de diagnostic précédentes dans le dossier Sessions de diagnostic. Dans l' **Explorateur de solutions**, vous pouvez ouvrir les sessions précédentes, ou supprimer ou renommer des fichiers.  

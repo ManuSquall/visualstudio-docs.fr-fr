@@ -80,7 +80,7 @@ private async void ThreadsExampleBtn_Click(object sender, RoutedEventArgs e) { T
 private async void ThreadsExampleBtn_Click(object sender, EventArgs e) { TextBox1.Text = String.Empty; var tbLinesList = new List<string>() {"Simulating work on UI thread."}; TextBox1.Lines = tbLinesList.ToArray(); DoSomeWork(20, tbLinesList); tbLinesList.Add("Simulating work on non-UI thread."); TextBox1.Lines = tbLinesList.ToArray(); await Task.Run(() => DoSomeWork(1000, tbLinesList)); tbLinesList.Add("ThreadsExampleBtn_Click completes."); TextBox1.Lines = tbLinesList.ToArray(); } private void DoSomeWork(int msOfWork, List<string> tbLinesList) { // simulate work var endTime = DateTime.Now.AddMilliseconds(msOfWork); while (DateTime.Now < endTime) { }; { // spin }; // report completion var msg = String.Format("Some work completed in {0} ms on UI thread. \n", msOfWork); tbLinesList.Add(msg); TextBox1.Lines = tbLinesList.ToArray(); }  
 ```  
   
- ![Retour au début](../debugger/media/pcs_backtotop.png "PCS\_BackToTop") [Dans cet article](#BKMK_In_this_article) ![In this section](../misc/media/pcs_backtotopmid.png "PCS\_BackToTopMid") [Une méthode qui s'exécute sur un autre thread qu'un thread d'interface utilisateur met à jour l'interface utilisateur](#BKMK_A_method_running_on_a_non_UI_thread_updates_the_UI)  
+ ![Retour au début](~/debugger/media/pcs_backtotop.png "PCS\_BackToTop") [Dans cet article](#BKMK_In_this_article) ![In this section](../misc/media/pcs_backtotopmid.png "PCS\_BackToTopMid") [Une méthode qui s'exécute sur un autre thread qu'un thread d'interface utilisateur met à jour l'interface utilisateur](#BKMK_A_method_running_on_a_non_UI_thread_updates_the_UI)  
   
 ###  <a name="BKMK_Avoiding_InvalidOperationExceptions_on_non_UI_threads"></a> Éviter les exceptions InvalidOperationException sur les autres threads que les threads d'interface utilisateur  
  Les infrastructures d'interface utilisateur Windows implémentent un modèle de *répartiteur* qui inclut une méthode permettant de vérifier si l'appel d'un membre d'élément d'interface utilisateur est en cours d'exécution sur le thread d'interface utilisateur, ainsi que d'autres méthodes permettant de planifier l'appel sur le thread d'interface utilisateur.  
@@ -110,7 +110,7 @@ private void DoSomeWork(int msOfWork, List<string> tbLinesList) { // simulate wo
 private void DoSomeWork(int msOfWork) { // simulate work var endTime = DateTime.Now.AddMilliseconds(msOfWork); while (DateTime.Now < endTime) { // spin }; // report completion var msgFormat = "Some work completed in {0} ms on {1}UI thread.\n"; var msg = String.Empty; if (TextBox1.Dispatcher.HasThreadAccess) { msg = String.Format(msgFormat, msOfWork, String.Empty); TextBox1.Text += msg; } else { msg = String.Format(msgFormat, msOfWork, "non-"); TextBox1.Dispatcher.RunAsync(Windows.UI.Core.CoreDispatcherPriority.Normal,()=> {TextBox1.Text += msg;}); } }  
 ```  
   
- ![Retour au début](../debugger/media/pcs_backtotop.png "PCS\_BackToTop") [Dans cet article](#BKMK_In_this_article) ![In this section](../misc/media/pcs_backtotopmid.png "PCS\_BackToTopMid") [Une méthode qui s'exécute sur un autre thread qu'un thread d'interface utilisateur met à jour l'interface utilisateur](#BKMK_A_method_running_on_a_non_UI_thread_updates_the_UI)  
+ ![Retour au début](~/debugger/media/pcs_backtotop.png "PCS\_BackToTop") [Dans cet article](#BKMK_In_this_article) ![In this section](../misc/media/pcs_backtotopmid.png "PCS\_BackToTopMid") [Une méthode qui s'exécute sur un autre thread qu'un thread d'interface utilisateur met à jour l'interface utilisateur](#BKMK_A_method_running_on_a_non_UI_thread_updates_the_UI)  
   
 ##  <a name="BKMK_A_statement_in_a_foreach_For_Each_in_Visual_Basic_block_changes_the_collection_it_is_iterating"></a> Une instruction d'un bloc foreach \(For Each en Visual Basic\) change la collection dans laquelle elle itère  
  [Levée d'une exception InvalidOperationException avec foreach](#BKMK_Causing_an_InvalidOperationException_with_foreach)  **&#124;**  [Éviter les exceptions InvalidOperationException dans les boucles](#BKMK_Avoiding_InvalidOperationExceptions_in_loops)  
@@ -125,7 +125,7 @@ private void DoSomeWork(int msOfWork) { // simulate work var endTime = DateTime.
 -   Informations supplémentaires : la collection a été modifiée ; l'opération d'énumération peut ne pas s'exécuter.  
   
 <CodeContentPlaceHolder>5</CodeContentPlaceHolder>  
- ![Retour au début](../debugger/media/pcs_backtotop.png "PCS\_BackToTop") [Dans cet article](#BKMK_In_this_article) ![In this section](../misc/media/pcs_backtotopmid.png "PCS\_BackToTopMid") [Une instruction d'un bloc foreach (For Each en Visual Basic) change la collection dans laquelle elle itère](#BKMK_A_statement_in_a_foreach_For_Each_in_Visual_Basic_block_changes_the_collection_it_is_iterating)  
+ ![Retour au début](~/debugger/media/pcs_backtotop.png "PCS\_BackToTop") [Dans cet article](#BKMK_In_this_article) ![In this section](../misc/media/pcs_backtotopmid.png "PCS\_BackToTopMid") [Une instruction d'un bloc foreach (For Each en Visual Basic) change la collection dans laquelle elle itère](#BKMK_A_statement_in_a_foreach_For_Each_in_Visual_Basic_block_changes_the_collection_it_is_iterating)  
   
 ###  <a name="BKMK_Avoiding_InvalidOperationExceptions_in_loops"></a> Éviter les exceptions InvalidOperationException dans les boucles  
   
@@ -136,7 +136,7 @@ private void DoSomeWork(int msOfWork) { // simulate work var endTime = DateTime.
  Si vous êtes obligé d'ajouter ou de supprimer des éléments dans une liste durant une itération dans une collection, utilisez une boucle [for](/dotnet/csharp/language-reference/keywords/for) \([For](/dotnet/visual-basic/language-reference/statements/for-next-statement) en Visual Basic\) :  
   
 <CodeContentPlaceHolder>7</CodeContentPlaceHolder>  
- ![Retour au début](../debugger/media/pcs_backtotop.png "PCS\_BackToTop") [Dans cet article](#BKMK_In_this_article) ![In this section](../misc/media/pcs_backtotopmid.png "PCS\_BackToTopMid") [Une instruction d'un bloc foreach (For Each en Visual Basic) change la collection dans laquelle elle itère](#BKMK_A_statement_in_a_foreach_For_Each_in_Visual_Basic_block_changes_the_collection_it_is_iterating)  
+ ![Retour au début](~/debugger/media/pcs_backtotop.png "PCS\_BackToTop") [Dans cet article](#BKMK_In_this_article) ![In this section](../misc/media/pcs_backtotopmid.png "PCS\_BackToTopMid") [Une instruction d'un bloc foreach (For Each en Visual Basic) change la collection dans laquelle elle itère](#BKMK_A_statement_in_a_foreach_For_Each_in_Visual_Basic_block_changes_the_collection_it_is_iterating)  
   
 ##  <a name="BKMK_A_Nullable_T_that_is_null_is_cast_to_T"></a> Un Nullable\<T\> qui a la valeur Null fait l'objet d'un transtypage en T  
  [Levée d'une exception InvalidOperationException avec un transtypage non valide](#BKMK_Causing_an_InvalidOperationException_with_an_invalid_cast)  **&#124;**  [Éviter l'exception InvalidOperationException à partir d'un transtypage incorrect](#BKMK_Avoiding_InvalidOperationException_from_a_bad_cast)  
@@ -155,7 +155,7 @@ private void MapQueryResults() { var dbQueryResults = new int?[] { 1, 2, null, 4
   
 ```  
   
- ![Retour au début](../debugger/media/pcs_backtotop.png "PCS\_BackToTop") [Dans cet article](#BKMK_In_this_article) ![In this section](../misc/media/pcs_backtotopmid.png "PCS\_BackToTopMid") [Un Nullable&lt;T&gt; qui a la valeur Null fait l'objet d'un transtypage en T](#BKMK_A_Nullable_T_that_is_null_is_cast_to_T)  
+ ![Retour au début](~/debugger/media/pcs_backtotop.png "PCS\_BackToTop") [Dans cet article](#BKMK_In_this_article) ![In this section](../misc/media/pcs_backtotopmid.png "PCS\_BackToTopMid") [Un Nullable&lt;T&gt; qui a la valeur Null fait l'objet d'un transtypage en T](#BKMK_A_Nullable_T_that_is_null_is_cast_to_T)  
   
 ###  <a name="BKMK_Avoiding_InvalidOperationException_from_a_bad_cast"></a> Éviter l'exception InvalidOperationException à partir d'un transtypage incorrect  
  Pour éviter <xref:System.InvalidOperationException> :  
@@ -179,7 +179,7 @@ private void MapQueryResults() { var dbQueryResults = new int?[] { 1, 2, null, 4
   
 ```  
   
- ![Retour au début](../debugger/media/pcs_backtotop.png "PCS\_BackToTop") [Dans cet article](#BKMK_In_this_article) ![In this section](../misc/media/pcs_backtotopmid.png "PCS\_BackToTopMid") [Un Nullable&lt;T&gt; qui a la valeur Null fait l'objet d'un transtypage en T](#BKMK_A_Nullable_T_that_is_null_is_cast_to_T)  
+ ![Retour au début](~/debugger/media/pcs_backtotop.png "PCS\_BackToTop") [Dans cet article](#BKMK_In_this_article) ![In this section](../misc/media/pcs_backtotopmid.png "PCS\_BackToTopMid") [Un Nullable&lt;T&gt; qui a la valeur Null fait l'objet d'un transtypage en T](#BKMK_A_Nullable_T_that_is_null_is_cast_to_T)  
   
 ##  <a name="BKMK_A_System_Linq_Enumerable_method_is_called_on_an_empty_collection"></a> Une méthode System.Linq.Enumerable est appelée sur une collection vide  
  Les méthodes <xref:System.Linq.Enumerable><xref:System.Linq.Enumerable.Aggregate%2A>, <xref:System.Linq.Enumerable.Average%2A>, <xref:System.Linq.Enumerable.Last%2A>, <xref:System.Linq.Enumerable.Max%2A>, <xref:System.Linq.Enumerable.Min%2A>, <xref:System.Linq.Enumerable.First%2A>, <xref:System.Linq.Enumerable.Single%2A> et <xref:System.Linq.Enumerable.SingleOrDefault%2A> effectuent des opérations sur une séquence et ne retournent qu'un seul résultat.  
@@ -219,7 +219,7 @@ private void FindAverageOfNumbersGreaterThan4() { var dbQueryResults = new[] { 1
   
 ```  
   
- ![Retour au début](../debugger/media/pcs_backtotop.png "PCS\_BackToTop") [Dans cet article](#BKMK_In_this_article) ![In this section](../misc/media/pcs_backtotopmid.png "PCS\_BackToTopMid") [Une méthode System.Linq.Enumerable est appelée sur une collection vide](#BKMK_A_System_Linq_Enumerable_method_is_called_on_an_empty_collection)  
+ ![Retour au début](~/debugger/media/pcs_backtotop.png "PCS\_BackToTop") [Dans cet article](#BKMK_In_this_article) ![In this section](../misc/media/pcs_backtotopmid.png "PCS\_BackToTopMid") [Une méthode System.Linq.Enumerable est appelée sur une collection vide](#BKMK_A_System_Linq_Enumerable_method_is_called_on_an_empty_collection)  
   
 ###  <a name="BKMK_First_and_FirstOrDefault_methods"></a> Méthodes First et FirstOrDefault  
  <xref:System.Linq.Enumerable.First%2A> retourne le premier élément d'une séquence ou lève une exception <xref:System.InvalidOperationException> si la séquence est vide.  Vous pouvez appeler la méthode <xref:System.Linq.Enumerable.FirstOrDefault%2A> à la place de <xref:System.Linq.Enumerable.First%2A> pour retourner une valeur spécifique ou par défaut au lieu de lever l'exception.  
@@ -254,7 +254,7 @@ private void FindANumbersGreaterThan4() { var dbQueryResults = new[] { 1, 2, 3, 
   
 ```  
   
- ![Retour au début](../debugger/media/pcs_backtotop.png "PCS\_BackToTop") [Dans cet article](#BKMK_In_this_article) ![In this section](../misc/media/pcs_backtotopmid.png "PCS\_BackToTopMid") [Une méthode System.Linq.Enumerable est appelée sur une collection vide](#BKMK_A_System_Linq_Enumerable_method_is_called_on_an_empty_collection)  
+ ![Retour au début](~/debugger/media/pcs_backtotop.png "PCS\_BackToTop") [Dans cet article](#BKMK_In_this_article) ![In this section](../misc/media/pcs_backtotopmid.png "PCS\_BackToTopMid") [Une méthode System.Linq.Enumerable est appelée sur une collection vide](#BKMK_A_System_Linq_Enumerable_method_is_called_on_an_empty_collection)  
   
 ###  <a name="BKMK_Single_and_SingleOrDefault_methods"></a> Méthodes Single et SingleOrDefault  
  Les méthodes <xref:System.Linq.Enumerable.Single%2A?displayProperty=fullName> retournent le seul élément d'une séquence, ou le seul élément d'une séquence qui répond au test spécifié.  
@@ -313,7 +313,7 @@ private void FindTheOnlyNumberGreaterThan2() { var dbQueryResults = new[] { (obj
   
 ```  
   
- ![Retour au début](../debugger/media/pcs_backtotop.png "PCS\_BackToTop") [Dans cet article](#BKMK_In_this_article) ![In this section](../misc/media/pcs_backtotopmid.png "PCS\_BackToTopMid") [Une méthode System.Linq.Enumerable est appelée sur une collection vide](#BKMK_A_System_Linq_Enumerable_method_is_called_on_an_empty_collection)  
+ ![Retour au début](~/debugger/media/pcs_backtotop.png "PCS\_BackToTop") [Dans cet article](#BKMK_In_this_article) ![In this section](../misc/media/pcs_backtotopmid.png "PCS\_BackToTopMid") [Une méthode System.Linq.Enumerable est appelée sur une collection vide](#BKMK_A_System_Linq_Enumerable_method_is_called_on_an_empty_collection)  
   
 ##  <a name="BKMK_Related_articles"></a> Articles connexes  
  [Instructions de conception pour les exceptions \(Instructions de conception du .NET Framework\)](http://msdn.microsoft.com/library/ms229014)  
@@ -346,4 +346,4 @@ private void FindTheOnlyNumberGreaterThan2() { var dbQueryResults = new[] { (obj
   
  [Gestion des exceptions dans les applications réseau \(XAML\) \(Windows\)](http://msdn.microsoft.com/library/Dn263240)  
   
- ![Retour au début](../debugger/media/pcs_backtotop.png "PCS\_BackToTop") [Dans cet article](#BKMK_In_this_article)
+ ![Retour au début](~/debugger/media/pcs_backtotop.png "PCS\_BackToTop") [Dans cet article](#BKMK_In_this_article)

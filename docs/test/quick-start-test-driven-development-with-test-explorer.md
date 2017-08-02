@@ -46,7 +46,7 @@ Nous vous recommandons de créer des tests unitaires pour que votre code continu
 -   Consultez dans une seule fenêtre toutes les informations dont vous avez besoin.  
   
 ## <a name="using-test-explorer"></a>Utilisation de l'Explorateur de tests  
- ![Explorateur de tests unitaires montrant le bouton Exécuter tout](../test/media/unittestexplorer-beta-.png "UnitTestExplorer(beta)")  
+ ![Explorateur de tests unitaires montrant le bouton Exécuter tout](~/test/media/unittestexplorer-beta-.png "UnitTestExplorer(beta)")  
   
 #### <a name="to-run-unit-tests-by-using-test-explorer"></a>Pour exécuter des tests unitaires à l'aide de l'Explorateur de tests  
   

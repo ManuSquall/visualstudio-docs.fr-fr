@@ -59,7 +59,7 @@ caps.handback.revision: 58
   
 -   Microsoft [!INCLUDE[Outlook_15_short](../vsto/includes/outlook-15-short-md.md)] ou Microsoft Outlook 2010  
   
- ![lien vers la vidéo](../vsto/media/playvideo.png "lien vers la vidéo") Pour obtenir une démonstration vidéo associée, consultez la [Vidéo pratique : Comment utiliser les volets des tâches dans Outlook ?](http://go.microsoft.com/fwlink/?LinkID=130309).  
+ ![lien vers la vidéo](~/data-tools/media/playvideo.gif "lien vers la vidéo") Pour obtenir une démonstration vidéo associée, consultez la [Vidéo pratique : Comment utiliser les volets des tâches dans Outlook ?](http://go.microsoft.com/fwlink/?LinkID=130309).  
   
 ## Création du projet  
  Les volets des tâches personnalisés sont implémentés dans les compléments VSTO. Commencez par créer un projet de complément VSTO pour Outlook.  

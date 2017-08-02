@@ -31,7 +31,7 @@ caps.handback.revision: 47
   
  L'exemple suivant montre comment ajouter des contrôles liés aux données dans les projets au niveau du document à l'aide d'un concepteur.  Pour obtenir un exemple montrant comment ajouter des contrôles liés aux données dans les projets de complément VSTO au moment de l'exécution, consultez [Procédure pas à pas : liaison de données simple dans un projet de complément VSTO](../vsto/walkthrough-simple-data-binding-in-vsto-add-in-project.md).  
   
- ![lien vers la vidéo](../vsto/media/playvideo.png "lien vers la vidéo") Pour une démonstration vidéo connexe, consultez [Liaison de données aux contrôles de contenu Word 2007 à l'aide de Visual Studio Tools pour Office System \(3.0\)](http://go.microsoft.com/fwlink/?LinkId=136785).  
+ ![lien vers la vidéo](~/data-tools/media/playvideo.gif "lien vers la vidéo") Pour une démonstration vidéo connexe, consultez [Liaison de données aux contrôles de contenu Word 2007 à l'aide de Visual Studio Tools pour Office System \(3.0\)](http://go.microsoft.com/fwlink/?LinkId=136785).  
   
 ## Ajout d'un contrôle à un document au moment du design  
   

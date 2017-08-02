@@ -55,7 +55,7 @@ Fichiers dump avec ou sans tas ; créez un fichier dump ; ouvrez un fichier du
   
  Les dumps sont principalement utilisés pour le débogage des problèmes qui se produisent sur des ordinateurs sur lesquels le développeur n'a pas accès.  Par exemple, vous pouvez utiliser un fichier dump de l'ordinateur d'un client lorsque vous ne pouvez pas reproduire l'incident ou le blocage du client sur votre ordinateur.  Les dumps sont également créés par les testeurs pour enregistrer les données d'incident et pour que l'ordinateur de test puisse effectuer plus de tests.  Le débogueur Visual Studio peut enregistrer des fichiers dump pour le code managé ou natif.  Le débogueur peut charger des fichiers dump créés par Visual Studio ou par d'autres programmes qui enregistrent les fichiers au format *minidump*.  
   
- ![Retour au début](../debugger/media/pcs_backtotop.png "PCS\_BackToTop") [Contenu](#BKMK_Contents)  
+ ![Retour au début](~/debugger/media/pcs_backtotop.png "PCS\_BackToTop") [Contenu](#BKMK_Contents)  
   
 ##  <a name="BKMK_Dump_files__with_or_without_heaps"></a> Fichiers dump, avec ou sans tas  
  Vous pouvez créer des fichiers dump avec ou sans information du tas.  
@@ -64,7 +64,7 @@ Fichiers dump avec ou sans tas ; créez un fichier dump ; ouvrez un fichier du
   
 -   Les **fichiers dump sans tas** sont beaucoup plus petits que les dumps avec les informations du tas.  Toutefois, le débogueur doit charger les binaires d'application pour trouver les informations de symbole.  Les binaires doivent être une correspondance exacte des binaires utilisés lors de la création du dump.  Seules les valeurs des variables de pile sont stockées dans des fichiers dump sans données de tas.  
   
- ![Retour au début](../debugger/media/pcs_backtotop.png "PCS\_BackToTop") [Contenu](#BKMK_Contents)  
+ ![Retour au début](~/debugger/media/pcs_backtotop.png "PCS\_BackToTop") [Contenu](#BKMK_Contents)  
   
 ##  <a name="BKMK_Requirements_and_limitations"></a> Spécifications et limitations  
   
@@ -82,7 +82,7 @@ Fichiers dump avec ou sans tas ; créez un fichier dump ; ouvrez un fichier du
   
 -   Pour déboguer avec le fichier [SOS.dll \(SOS Debugging Extension\)](../Topic/SOS.dll%20\(SOS%20Debugging%20Extension\).md) dans Visual Studio, vous devez installer les outils de débogage pour Windows qui font partie du Kit WDK \(Windows Driver Kit\).  Consultez [Windows 8.1 Preview : télécharger des kits et des outils](http://msdn.microsoft.com/en-us/library/windows/hardware/bg127147.aspx).  
   
- ![Retour au début](../debugger/media/pcs_backtotop.png "PCS\_BackToTop") [Contenu](#BKMK_Contents)  
+ ![Retour au début](~/debugger/media/pcs_backtotop.png "PCS\_BackToTop") [Contenu](#BKMK_Contents)  
   
 ##  <a name="BKMK_Create_a_dump_file"></a> Créer un fichier dump  
  Pour créer un fichier dump avec Visual Studio :  
@@ -93,7 +93,7 @@ Fichiers dump avec ou sans tas ; créez un fichier dump ; ouvrez un fichier du
   
  Vous pouvez également créer des fichiers dump avec n'importe quel programme qui prend en charge le format minidump Windows.  Par exemple, l'utilitaire en ligne de commande **Procdump** de [Windows Sysinternals](http://technet.microsoft.com/sysinternals/default) peut créer des fichiers dump de blocage de processus à partir de déclencheurs ou à la demande.  Voir les [Spécifications et limitations](../debugger/using-dump-files.md#BKMK_Requirements_and_limitations) dans cette rubrique pour plus d'informations sur l'utilisation d'autres outils pour créer des fichiers dump.  
   
- ![Retour au début](../debugger/media/pcs_backtotop.png "PCS\_BackToTop") [Contenu](#BKMK_Contents)  
+ ![Retour au début](~/debugger/media/pcs_backtotop.png "PCS\_BackToTop") [Contenu](#BKMK_Contents)  
   
 ##  <a name="BKMK_Open_a_dump_file"></a> Ouvrir un fichier dump  
   
@@ -136,7 +136,7 @@ Fichiers dump avec ou sans tas ; créez un fichier dump ; ouvrez un fichier du
   
  Si Visual Studio ne peut pas trouver les fichiers nécessaires pour déboguer un module dans le dump, il affiche une page appropriée \(**Aucun binaire n'a été trouvé**, **Aucun symbole trouvé** ou **Aucune source trouvée**\).  Ces pages fournissent des informations détaillées sur la cause du problème et fournissent des liens d'action qui peuvent vous aider à identifier l'emplacement correct des fichiers.  Consultez [Spécifier les fichiers de symbole \(.pdb\) et les fichiers sources](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md).  
   
- ![Retour au début](../debugger/media/pcs_backtotop.png "PCS\_BackToTop") [Contenu](#BKMK_Contents)  
+ ![Retour au début](~/debugger/media/pcs_backtotop.png "PCS\_BackToTop") [Contenu](#BKMK_Contents)  
   
 ## Voir aussi  
  [Débogage juste\-à\-temps](../debugger/just-in-time-debugging-in-visual-studio.md)   

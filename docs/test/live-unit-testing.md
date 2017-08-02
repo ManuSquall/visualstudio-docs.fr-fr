@@ -76,7 +76,7 @@ Dans certains cas, vous devez peut-être restaurer explicitement les packages Nu
 
 Vous pouvez configurer Live Unit Testing en sélectionnant **Outils**, **Options** à partir du menu de Visual Studio de niveau supérieur, puis en sélectionnant **Live Unit Testing** dans le volet gauche de la boîte de dialogue **Options**. La figure suivante montre les options de configuration disponibles de Live Unit Testing disponibles dans la boîte de dialogue.
 
-  ![Image](./media/lut-options.png)
+  ![Image](~/test/media/lut-options.png)
 
 Les options configurables sont les suivantes :
 
@@ -105,21 +105,21 @@ Pour activer Live Unit Testing, sélectionnez **Tester** , **Live Unit Testing**
 
 Une fois activé, Live Unit Testing met à jour chaque ligne de code dans l’éditeur Visual Studio pour vous indiquer si le code que vous écrivez est couvert par les tests unitaires et si les tests qui le couvrent réussissent.  La figure suivante montre les lignes de code avec des résultats positifs et négatifs aux tests, ainsi que les lignes de code qui ne sont pas couvertes par les tests. Les lignes avec un symbole « ✓ » vert sont couvertes uniquement par les tests ayant réussi, les lignes assorties d’un symbole « 🞩 » rouge sont couvertes par un ou plusieurs tests ayant échoué et les lignes avec un symbole «  » bleu ne sont pas couvertes par les tests.
 
-  ![Image](./media/lut-codewindow.png)
+  ![Image](~/ide/media/lut-codewindow.png)
 
 La visualisation de couverture Live Unit Testing est immédiatement mise à jour lorsque vous modifiez le code dans l’éditeur de code. Lors du traitement des modifications, la visualisation change pour indiquer que les données ne sont pas à jour en ajoutant une image de minuteur en dessous des symboles de réussite, d’échec et de non-couverture, comme présenté dans la figure suivante.
 
-  ![Image](./media/lut-codeupdating.png)
+  ![Image](~/test/media/lut-codeupdating.png)
  
 ## <a name="getting-information-on-successful-or-failed-tests"></a>Obtention d’informations sur les réussites ou les échecs aux tests
 
 En passant la souris sur le symbole de réussite ou d’échec dans la fenêtre de code, vous pouvez voir combien de tests ont atteint cette ligne. Si vous cliquez sur le symbole, vous pouvez voir l’état de chaque test, comme le montre la figure suivante.
  
-  ![Image](./media/lut-failedinfo.png) 
+  ![Image](~/test/media/lut-failedinfo.png) 
 
 Lorsque vous passez la souris sur le test ayant échoué dans l’info-bulle, celle-ci se développe pour fournir des informations supplémentaires sur l’échec, comme illustré dans l’image ci-dessous. Si vous cliquez sur le test ayant échoué dans l’info-bulle, vous pouvez y accéder directement.
 
-  ![Image](./media/lut-failedmsg.png) 
+  ![Image](~/test/media/lut-failedmsg.png) 
 
 ## <a name="diagnosing-and-correcting-test-failures"></a>Diagnostics et corrections des échecs aux tests
 

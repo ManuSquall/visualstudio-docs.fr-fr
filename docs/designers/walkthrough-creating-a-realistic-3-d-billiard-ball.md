@@ -67,11 +67,11 @@ Cette procédure pas à pas montre comment créer une boule de billard 3D réali
   
      La texture doit ressembler à ceci :  
   
-     ![Texture de la boule de billard](../designers/media/gfx_shader_demo_billiard_art_ball_texture.png "gfx_shader_demo_billiard_art_ball_texture")  
+     ![Texture de la boule de billard](~/designers/media/gfx_shader_demo_billiard_art_ball_texture.png "gfx_shader_demo_billiard_art_ball_texture")  
   
 4.  Vous pouvez éventuellement réduire les exigences en matière de stockage de cette texture. Pour cela, vous devez réduire la largeur de la texture afin qu’elle corresponde à sa hauteur. Cela compresse la texture par rapport à sa largeur, mais en raison de la manière dont la texture est mappée à la sphère, elle sera développée quand la balle de billard sera affichée. Après le redimensionnement, la texture doit ressembler à ceci :  
   
-     ![Texture de la boule de billard compressée en carré](../designers/media/gfx_shader_demo_billiard_art_ball_texture_square.png "gfx_shader_demo_billiard_art_ball_texture_square")  
+     ![Texture de la boule de billard compressée en carré](~/designers/media/gfx_shader_demo_billiard_art_ball_texture_square.png "gfx_shader_demo_billiard_art_ball_texture_square")  
   
  Vous pouvez maintenant créer un nuanceur qui applique cette texture au modèle.  
   
@@ -93,7 +93,7 @@ Cette procédure pas à pas montre comment créer une boule de billard 3D réali
   
  Votre boule de billard doit maintenant ressembler à ceci :  
   
- ![Gros plan de la boule de billard avec texture](../designers/media/gfx_shader_demo_.png "gfx_shader_demo_")  
+ ![Gros plan de la boule de billard avec texture](~/designers/media/gfx_shader_demo_.png "gfx_shader_demo_")  
   
 ## <a name="creating-depth-with-the-lambert-lighting-model"></a>Création d’une profondeur avec le modèle d’éclairage Lambert  
  Jusqu’à présent, vous avez créé une boule de billard facilement reconnaissable. Toutefois, elle semble plate et inintéressante, et ressemble davantage à une représentation de boule de billard dans un dessin animé qu’à une réplique convaincante. L’apparence à deux dimensions résulte du nuanceur simpliste, qui se comporte comme si chaque pixel à la surface de la boule de billard recevait la même quantité de lumière.  
@@ -114,7 +114,7 @@ Cette procédure pas à pas montre comment créer une boule de billard 3D réali
   
  Quand l’éclairage Lambert est appliqué, la boule de billard doit ressembler à ceci :  
   
- ![Gros plan de la boule de billard éclairée et avec texture](../designers/media/gfx_shader_demo_billiard_ball_2.png "gfx_shader_demo_billiard_ball_2")  
+ ![Gros plan de la boule de billard éclairée et avec texture](~/designers/media/gfx_shader_demo_billiard_ball_2.png "gfx_shader_demo_billiard_ball_2")  
   
 ## <a name="enhancing-the-basic-appearance-with-specular-highlights"></a>Amélioration de l’apparence de base avec les surbrillances spéculaires  
  Le modèle d’éclairage Lambert fournit le sens de la forme et des dimensions absent du nuanceur limité à la texture. Toutefois, la boule de billard a toujours une apparence quelque peu mate.  
@@ -135,7 +135,7 @@ Cette procédure pas à pas montre comment créer une boule de billard 3D réali
   
  Quand une mise en surbrillance spéculaire est appliquée, la boule de billard doit ressembler à ceci :  
   
- ![Gros plan de la boule de billard avec surbrillance spéculaire ajouté](../designers/media/gfx_shader_demo_billiard_ball_3.png "gfx_shader_demo_billiard_ball_3")  
+ ![Gros plan de la boule de billard avec surbrillance spéculaire ajouté](~/designers/media/gfx_shader_demo_billiard_ball_3.png "gfx_shader_demo_billiard_ball_3")  
   
 ## <a name="creating-a-sense-of-space-by-reflecting-the-environment"></a>Création d’un sens de l’espace en reflétant l’environnement  
  Quand des mises en surbrillances spéculaires sont appliquées, la boule de billard semble plutôt convaincante. Elle a la bonne forme, le bon travail de peinture et le bon fini. Toutefois, il existe encore une technique qui donnera à votre boule de billard une apparence tout à fait intégrée à son environnement.  
@@ -158,13 +158,13 @@ Cette procédure pas à pas montre comment créer une boule de billard 3D réali
   
 4.  Créez une deuxième texture qui a la même taille que la première. Cette texture est répétée pour les quatre côtés de la carte cubique, qui correspondent à la surface et aux côtés d’une table de billard, ainsi qu’à la zone autour de la table de billard. Veillez à dessiner la surface de la table de billard dans cette texture en utilisant la même couleur que dans la texture du bas. La texture doit ressembler à ceci :  
   
-     ![Texture des côtés de la carte cubique](../designers/media/gfx_shader_demo_billiard_art_env_texture_side.png "gfx_shader_demo_billiard_art_env_texture_side")  
+     ![Texture des côtés de la carte cubique](~/designers/media/gfx_shader_demo_billiard_art_env_texture_side.png "gfx_shader_demo_billiard_art_env_texture_side")  
   
      N’oubliez pas qu’une image de reflet ne doit pas être photoréaliste pour être efficace ; par exemple, la carte cubique utilisée pour créer des images dans cet article contient seulement quatre trous au lieu de six.  
   
 5.  Créez une troisième texture qui a la même taille que les autres. Cette texture sera le haut de la carte cubique, qui correspond au plafond situé au-dessus de la table de billard. Pour rendre cette partie du reflet plus intéressante, vous pouvez dessiner une lumière de plafond pour renforcer les surbrillances spéculaires que vous avez ajoutées au nuanceur lors de la procédure précédente. La texture doit ressembler à ceci :  
   
-     ![Texture du haut de la carte cubique](../designers/media/gfx_shader_demo_billiard_art_env_texture_top2.png "gfx_shader_demo_billiard_art_env_texture_top2")  
+     ![Texture du haut de la carte cubique](~/designers/media/gfx_shader_demo_billiard_art_env_texture_top2.png "gfx_shader_demo_billiard_art_env_texture_top2")  
   
  Maintenant que vous avez créé des textures individuelles pour les côtés de la carte cubique, vous pouvez utiliser un outil pour les assembler en une carte cubique qui peut être stockée dans une texture .dds unique. Vous pouvez utiliser le programme de votre choix pour créer la carte cubique tant qu’il peut l’enregistrer au format de texture .dds. Cette procédure pas à pas montre comment créer la texture à l’aide de l’outil de texture DirectX qui fait partie du SDK de juin 2010.  
   
@@ -188,7 +188,7 @@ Cette procédure pas à pas montre comment créer une boule de billard 3D réali
   
  Vous pouvez imaginer la disposition de la carte cubique comme suit  :  
   
- ![Disposition de la carte cubique d’environnement](../designers/media/gfx_shader_demo_billiard_art_env_texture_top.png "gfx_shader_demo_billiard_art_env_texture_top")  
+ ![Disposition de la carte cubique d’environnement](~/designers/media/gfx_shader_demo_billiard_art_env_texture_top.png "gfx_shader_demo_billiard_art_env_texture_top")  
   
  L’image en haut est la face de cube Y positif (+Y) ; au milieu, de gauche à droite, il s’agit des faces de cube -X, +Z, +X et -Z ; en bas il s’agit de la face de cube -Y.  
   
@@ -212,7 +212,7 @@ Cette procédure pas à pas montre comment créer une boule de billard 3D réali
   
  Quand le mappage d’environnement est appliqué, la boule de billard doit ressembler à ceci :  
   
- ![Gros plan de la boule de billard mappée sur l’environnement](../designers/media/gfx_shader_demo_billiard_ball_4.png "gfx_shader_demo_billiard_ball_4")  
+ ![Gros plan de la boule de billard mappée sur l’environnement](~/designers/media/gfx_shader_demo_billiard_ball_4.png "gfx_shader_demo_billiard_ball_4")  
   
  Dans cette image finale, notez comment les effets que vous avez ajoutés se combinent pour créer une boule de billard très convaincante. La forme, la texture et l’éclairage créent l’apparence de base d’un objet 3D. Les reflets et les surbrillances spéculaires rendent la boule de billard plus intéressante et intégrée à l’environnement.  
   

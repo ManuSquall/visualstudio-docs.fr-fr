@@ -25,7 +25,7 @@ Une fenêtre de code est un objet de fenêtre de document qui prend en charge un
   
  Une fenêtre de code est un <xref:Microsoft.VisualStudio.Shell.Interop.IVsWindowFrame> objet qui a une vue de texte et tous les ornements doit se trouver dans l’objet. Lorsque vous créez la fenêtre de code pendant votre instanciation de la base de l’éditeur, votre service de langage peut attacher un <xref:Microsoft.VisualStudio.TextManager.Interop.IVsCodeWindowManager> dans la fenêtre de code comme est indiqué dans l’illustration suivante.  
   
- ![Graphique CodeWindow](../extensibility/media/vscodewindow.png "vscodewindow")  
+ ![Graphique CodeWindow](~/extensibility/media/vscodewindow.gif "vscodewindow")  
 Fenêtre Code  
   
  Le service de langage implémente le Gestionnaire de fenêtres de code et est chargé de gérer les ornements, comme une barre de menu déroulant. La fenêtre de code appelle la <xref:Microsoft.VisualStudio.TextManager.Interop.IVsCodeWindowManager.AddAdornments%2A> méthode lors de l’initialisation de fenêtre de code. Lorsque cet appel est effectué, le service de langage peut ajouter une barre de menu déroulant ou une barre de boutons \(<xref:Microsoft.VisualStudio.TextManager.Interop.IVsButtonBarClient>\) dans la fenêtre de code.  

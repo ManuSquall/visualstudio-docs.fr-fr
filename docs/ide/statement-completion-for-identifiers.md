@@ -56,7 +56,7 @@ N'autorise pas JavaScript en tapant des déclarations de variables explicite.  P
   
  **Options de saisie semi\-automatique pour un objet qui ne peut pas être identifié.**  
   
- ![JavaScript IntelliSense pour les identificateurs](../ide/media/js_intellisense_identifiers.png "js\_intellisense\_identifiers")  
+ ![JavaScript IntelliSense pour les identificateurs](~/ide/media/js_intellisense_identifiers.png "js\_intellisense\_identifiers")  
   
  Vous pouvez substituer la liste de saisie semi\-automatique pour un objet à l'aide de commentaires de documentation XML ou des fonctionnalités d'extensibilité JavaScript IntelliSense.  L'utilisation de ces fonctionnalités, vous pouvez fournir des informations de type de plus descriptif IntelliSense lorsqu'il sinon peut\-être pas disponible.  Pour plus d'informations, consultez [Extension de JavaScript IntelliSense](../ide/extending-javascript-intellisense.md) et [Comment : créer des commentaires de documentation XML JavaScript](../ide/create-xml-documentation-comments-for-javascript-intellisense.md).  
   

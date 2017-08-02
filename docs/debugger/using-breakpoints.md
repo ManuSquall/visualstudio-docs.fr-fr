@@ -56,11 +56,11 @@ Vous pouvez définir des points d’arrêt quand vous voulez interrompre l’ex�
 ##  <a name="BKMK_Overview"></a> Définition d’un point d’arrêt sur fonction dans le code source  
  Vous pouvez définir un point d’arrêt sur fonction dans le code source en cliquant dans la marge de gauche d’un fichier de code source ou en plaçant votre curseur sur une ligne de code et en appuyant sur F9. Le point d’arrêt apparaît sous forme de point rouge dans la marge de gauche, et la ligne de code est aussi en couleur :  
   
- ![Définir un point d’arrêt](../debugger/media/basicbreakpoint.png "BasicBreakpoint")  
+ ![Définir un point d’arrêt](~/debugger/media/basicbreakpoint.png "BasicBreakpoint")  
   
  Quand vous exécutez ce code dans le débogueur, l’exécution s’interrompt chaque fois que le point d’arrêt est atteint, avant que le code de cette ligne soit exécuté. La ligne de code source est de couleur jaune :  
   
- ![L'exécution du point d'arrêt s'est arrêtée](../debugger/media/breakpointexecution.png "BreakpointExecution")  
+ ![L'exécution du point d'arrêt s'est arrêtée](~/debugger/media/breakpointexecution.png "BreakpointExecution")  
   
  À ce stade, la valeur de `testInt` est toujours égale à 1.  
   
@@ -134,7 +134,7 @@ Vous pouvez définir des points d’arrêt quand vous voulez interrompre l’ex�
 ##  <a name="BKMK_Specify_advanced_properties_of_a_breakpoint_"></a> Gestion des points d’arrêt  
  Vous pouvez utiliser la fenêtre **Points d’arrêt** \(**Déboguer\/Fenêtres\/Points d’arrêt** ou **Ctrl\+Alt\+B**\) pour afficher tous les points d’arrêt que vous avez définis dans votre solution :  
   
- ![Points d'arrêt &#40;fenêtre&#41;](../debugger/media/breakpointswindow.png "BreakpointsWindow")  
+ ![Points d'arrêt &#40;fenêtre&#41;](~/debugger/media/breakpointswindow.png "BreakpointsWindow")  
   
  La fenêtre **Points d’arrêt** est un emplacement centralisé d’où vous pouvez gérer tous vos points d’arrêt, ce qui peut être particulièrement utile dans une solution de grande taille ou dans un scénario de débogage complexe où les points d’arrêt sont déterminants. Si vous devez enregistrer ou partager l’état et l’emplacement d’un ensemble de points d’arrêt, vous pouvez exporter et importer des points d’arrêt uniquement à partir de la fenêtre **Points d’arrêt**.  
   

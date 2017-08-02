@@ -328,7 +328,7 @@ En tant qu’une transition animée lorsqu’un élément d’interface utilisat
 #### <a name="x-y-position-change"></a>X-Y placer des modifications  
 Avec ce modèle, un élément d’interface utilisateur change sa position X ou Y ou les deux.  
   
-![Animation de modification de position X-Y](../../extensibility/ux-guidelines/media/1202-f_xypositionchange.png "1202-f_XYPositionChange")<br />Animation de modification de position X-Y  
+![Animation de modification de position X-Y](~/extensibility/ux-guidelines/media/1202-f_xypositionchange.png "1202-f_XYPositionChange")<br />Animation de modification de position X-Y  
   
 ##### <a name="correct-usage"></a>Utilisation correcte  
 En tant qu’une transition animée lorsqu’un élément d’interface utilisateur change de position d’un contexte à un autre.  
@@ -351,7 +351,7 @@ Réorganisation de l’onglet
 #### <a name="rotate"></a>Faire pivoter  
 Avec ce modèle, l’élément d’interface utilisateur fait pivoter.  
   
-![Animation de rotation de l’interface utilisateur élément](../../extensibility/ux-guidelines/media/1202-g_rotate.png "1202-g_Rotate")<br />Animation de rotation de l’interface utilisateur élément  
+![Animation de rotation de l’interface utilisateur élément](~/extensibility/ux-guidelines/media/1202-g_rotate.png "1202-g_Rotate")<br />Animation de rotation de l’interface utilisateur élément  
   
 ##### <a name="correct-usage"></a>Utilisation correcte  
 Uniquement pour l’indicateur de progression en rotation indéterminé.  

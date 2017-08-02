@@ -98,7 +98,7 @@ Cette boîte de dialogue vous permet de modifier les paramètres globaux de l’
   
 |Marge de sélection activée|Marge de sélection désactivée|  
 |-------------------------|--------------------------|  
-|![Capture d’écran HTMLpageSelectionMarginOn](../../ide/reference/media/vxselmaron.gif "vxSelmaron")|![Capture d’écran HTMLpageSelectionMarginOff](../../ide/reference/media/vxselmaroff.gif "vxSelmaroff")|  
+|![Capture d’écran HTMLpageSelectionMarginOn](~/ide/reference/media/vxselmaron.gif "vxSelmaron")|![Capture d’écran HTMLpageSelectionMarginOff](~/ide/reference/media/vxselmaroff.gif "vxSelmaroff")|  
   
  Marge des indicateurs  
  Quand cette option est sélectionnée, une marge verticale s’affiche à l’extérieur du bord gauche de la zone de texte de l’éditeur. Quand vous cliquez dans cette marge, une icône et une info-bulle relatives au texte s’affichent. Par exemple, les raccourcis des points d’arrêt ou de la liste des tâches s’affichent dans la marge des indicateurs. Le contenu de la marge des indicateurs ne s’imprime pas.  

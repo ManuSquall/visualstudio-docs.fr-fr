@@ -49,7 +49,7 @@ Les applications de données *multicouches* sont des applications qui accèdent 
   
 -   écrire du code pour remplir les tables de données.  
   
- ![lien vers la vidéo](../data-tools/media/playvideo.png "PlayVideo") Pour regarder une vidéo sur cette rubrique, consultez [Vidéo : Création d'une application de données multicouche](http://go.microsoft.com/fwlink/?LinkId=115188).  
+ ![lien vers la vidéo](~/data-tools/media/playvideo.gif "PlayVideo") Pour regarder une vidéo sur cette rubrique, consultez [Vidéo : Création d'une application de données multicouche](http://go.microsoft.com/fwlink/?LinkId=115188).  
   
 ## Composants requis  
  Pour exécuter cette procédure pas à pas, vous avez besoin des éléments suivants :  

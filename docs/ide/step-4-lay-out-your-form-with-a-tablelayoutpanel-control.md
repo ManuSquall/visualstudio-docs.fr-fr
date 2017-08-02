@@ -37,7 +37,7 @@ ms.lasthandoff: 05/13/2017
 # <a name="step-4-lay-out-your-form-with-a-tablelayoutpanel-control"></a>Étape 4 : composer votre formulaire avec un contrôle TableLayoutPanel
 Dans cette étape, vous allez ajouter un contrôle `TableLayoutPanel` à votre formulaire. Le contrôle TableLayoutPanel permet d'aligner correctement les contrôles du formulaire que vous ajouterez ultérieurement.  
   
- ![lien vers la vidéo](../data-tools/media/playvideo.gif "PlayVideo")Pour obtenir une version vidéo de cette rubrique, consultez [Didacticiel 1 : Créer une visionneuse d’images en Visual Basic – Vidéo 2](http://go.microsoft.com/fwlink/?LinkId=205211) ou [Didacticiel 1 : Créer une visionneuse d’images en C# – Vidéo 2](http://go.microsoft.com/fwlink/?LinkId=205200). Ces vidéos utilisent une version antérieure de Visual Studio et présentent donc de légères différences quant à certaines commandes de menu et autres éléments d’interface utilisateur. Toutefois, les concepts et les procédures fonctionnent de façon similaire dans la version actuelle de Visual Studio.  
+ ![lien vers la vidéo](~/data-tools/media/playvideo.gif "PlayVideo")Pour obtenir une version vidéo de cette rubrique, consultez [Didacticiel 1 : Créer une visionneuse d’images en Visual Basic – Vidéo 2](http://go.microsoft.com/fwlink/?LinkId=205211) ou [Didacticiel 1 : Créer une visionneuse d’images en C# – Vidéo 2](http://go.microsoft.com/fwlink/?LinkId=205200). Ces vidéos utilisent une version antérieure de Visual Studio et présentent donc de légères différences quant à certaines commandes de menu et autres éléments d’interface utilisateur. Toutefois, les concepts et les procédures fonctionnent de façon similaire dans la version actuelle de Visual Studio.  
   
 ### <a name="to-lay-out-your-form-with-a-tablelayoutpanel-control"></a>Pour composer votre formulaire avec un contrôle TableLayoutPanel  
   
@@ -58,7 +58,7 @@ Contrôle TableLayoutPanel
   
      Notez que la Boîte à outils se développe pour recouvrir votre formulaire lorsque vous sélectionnez son onglet, et se referme lorsque vous effectuez une sélection en dehors de celle-ci. Il s'agit de la fonctionnalité Masquer automatiquement de l'IDE. Vous pouvez l'activer ou la désactiver pour chaque fenêtre en cliquant sur l'icône de la punaise dans l'angle supérieur droit de la fenêtre (et ainsi choisir de masquer la fenêtre automatiquement ou de la garder à l'écran). L'icône de la punaise apparaît comme suit.  
   
-     ![Icône Punaise](../ide/media/express_pushpintoolbox.png "Express_PushpinToolbox")  
+     ![Icône Punaise](~/ide/media/express_pushpintoolbox.png "Express_PushpinToolbox")  
 Icône Punaise  
   
 4.  Veillez à sélectionner **TableLayoutPanel**. Vous pouvez vérifier quel contrôle est sélectionné en examinant la liste déroulante en haut de la fenêtre **Propriétés**, comme indiqué dans l’image suivante.  
@@ -82,7 +82,7 @@ Fenêtre Propriétés avec Remplissage sélectionné
   
 8.  Actuellement, le TableLayoutPanel est composé de deux lignes et colonnes de taille égale. Vous devez les redimensionner pour que la ligne du haut et la colonne de droite soient beaucoup plus grandes. Dans le Concepteur Windows Forms, sélectionnez le TableLayoutPanel. Dans l'angle supérieur droit, il y a un petit bouton en forme de triangle noir, comme celui illustré ci-dessous.  
   
-     ![Bouton Triangle](../ide/media/express_iconblacktriangle.gif "Express_IconBlackTriangle")  
+     ![Bouton Triangle](~/ide/media/express_iconblacktriangle.gif "Express_IconBlackTriangle")  
 Bouton Triangle  
   
      Ce bouton indique que le contrôle dispose de tâches vous permettant de définir ses propriétés automatiquement.  

@@ -90,7 +90,7 @@ ms.lasthandoff: 05/13/2017
   
     -   Sélectionnez une cible **Émulateur 8.1** ou un appareil attaché dans le menu déroulant du débogage de Visual Studio comme illustré ci-dessous, et démarrez le débogueur en appuyant sur F5.  
   
-         ![Sélection d’un émulateur Windows Phone comme cible de débogage](../cross-platform/media/crossplat-xamarin-verify-4.png "CrossPlat Xamarin Verify 4")  
+         ![Sélection d’un émulateur Windows Phone comme cible de débogage](~/cross-platform/media/crossplat-xamarin-verify-4.png "CrossPlat Xamarin Verify 4")  
   
     -   Si vous avez des difficultés à faire fonctionner l’émulateur, consultez [Dépannage de l’émulateur Windows Phone 8](https://msdn.microsoft.com/library/windows/apps/jj681694.aspx).  
   
@@ -106,11 +106,11 @@ ms.lasthandoff: 05/13/2017
   
     2.  Sélectionnez la cible **iPhoneSimulator** dans la liste déroulante des builds de Visual Studio, comme illustré ci-dessous, ou la cible **iPhone** si vous utilisez un appareil attaché. Si aucun simulateur ne figure dans la liste, lancez Xcode sur votre Mac, sélectionnez **Xcode->Préférences**, puis cliquez sur **Télécharger**. Sous **Components** , vous devez voir les versions de simulateur qui sont disponibles en téléchargement. Vous trouverez des instructions supplémentaires pour le débogage dans la page [Debugging](https://developer.xamarin.com/guides/ios/deployment,_testing,_and_metrics/debugging_in_xamarin_ios/#Debugging_on_the_Simulator) de Xamarin (xamarin.com).  
   
-         ![Sélection de la cible de génération iPhoneSimulator](../cross-platform/media/crossplat-xamarin-verify-5.png "CrossPlat Xamarin Verify 5")  
+         ![Sélection de la cible de génération iPhoneSimulator](~/cross-platform/media/crossplat-xamarin-verify-5.png "CrossPlat Xamarin Verify 5")  
   
     3.  Sélectionnez une cible iPhone dans le menu déroulant du débogage de Visual Studio comme illustré ci-dessous, puis démarrez le débogueur en appuyant sur F5. Ceci lance le simulateur sur le Mac, où vous allez interagir avec l’application, alors que le débogage se fait dans Visual Studio. Si vous avez un iPhone ou iPad physique connecté au Mac, il apparaît ici. Vous pouvez le sélectionner à la place. Si aucun appareil ou simulateur ne figure dans la liste, vérifiez la connexion au Mac en consultant la rubrique liée à l’étape 1 ci-dessus, ou en accédant à **Outils** >**iOS** >**Xamarin Mac Agent**  
   
-         ![Sélection d’une cible de débogage iPhone](../cross-platform/media/crossplat-xamarin-verify-6.png "CrossPlat Xamarin Verify 6")  
+         ![Sélection d’une cible de débogage iPhone](~/cross-platform/media/crossplat-xamarin-verify-6.png "CrossPlat Xamarin Verify 6")  
   
     4.  Si vous rencontrez des problèmes pour vous connecter au Mac, consultez [Connection Troubleshooting](http://developer.xamarin.com/guides/ios/getting_started/installation/windows/xamarin-mac-agent/xma-troubleshooting/) (xamarin.com).  
   

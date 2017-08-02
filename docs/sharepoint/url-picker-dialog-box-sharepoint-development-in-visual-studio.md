@@ -27,7 +27,7 @@ caps.handback.revision: 14
 # Bo&#238;te de dialogue du s&#233;lecteur d&#39;URL (d&#233;veloppement SharePoint dans Visual Studio)
   Dans la boîte de dialogue du sélecteur d'URL, vous avez la possibilité de choisir des fichiers tels que des fichiers de page maître ou des fichiers image se trouvant dans votre projet ou sur le serveur qui exécute SharePoint.  
   
- Cette boîte de dialogue apparaît lorsque vous avez la possibilité de choisir un fichier pour définir une propriété.  Vous pouvez ouvrir cette boîte de dialogue en choisissant le bouton de sélection \(![Bouton de sélection du concepteur ASP.NET mobile](../sharepoint/media/mwellipsis.png "Bouton de sélection du concepteur ASP.NET mobile") \) en regard de différentes propriétés dans la fenêtre **Propriétés**.  Le bouton de sélection apparaît également comme une invite IntelliSense lorsque vous assignez des valeurs à certains attributs à partir du mode **Source** du concepteur.  
+ Cette boîte de dialogue apparaît lorsque vous avez la possibilité de choisir un fichier pour définir une propriété.  Vous pouvez ouvrir cette boîte de dialogue en choisissant le bouton de sélection \(![Bouton de sélection du concepteur ASP.NET mobile](~/sharepoint/media/mwellipsis.gif "Bouton de sélection du concepteur ASP.NET mobile") \) en regard de différentes propriétés dans la fenêtre **Propriétés**.  Le bouton de sélection apparaît également comme une invite IntelliSense lorsque vous assignez des valeurs à certains attributs à partir du mode **Source** du concepteur.  
   
 ## Liste UIElement  
  **Dossiers du projet**  
