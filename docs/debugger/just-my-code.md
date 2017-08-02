@@ -49,7 +49,7 @@ Les développeurs qui utilisent des langages du .NET Framework sont familiarisé
 > [!NOTE]
 >  Le paramètre **Afficher le code externe** est enregistré dans le profileur de l'utilisateur actif.  Il est appliqué à tous les projets dans tous les langages qui sont ouverts par l'utilisateur.  
   
- ![Retour au début](~/docs/debugger/media/pcs_backtotop.png "PCS\_BackToTop") [Contenu](#BKMK_Contents)  
+ ![Retour au début](~/debugger/media/pcs_backtotop.png "PCS\_BackToTop") [Contenu](#BKMK_Contents)  
   
 ##  <a name="BKMK__NET_Framework_Just_My_Code"></a> Uniquement mon code .NET Framework  
  [Code utilisateur et non-utilisateur](#BKMK_NET_User_and_non_user_code) **&#124;** [Comportement d'exécution pas à pas](#BKMK_NET_Stepping_behavior) **&#124;** [Comportement des points d'arrêt](#BKMK_NET_Breakpoint_behavior) **&#124;** [Comportement des exceptions](#BKMK_NET_Exception_behavior)  
@@ -71,24 +71,24 @@ Les développeurs qui utilisent des langages du .NET Framework sont familiarisé
   
  Tout le reste du code est considéré comme du code utilisateur.  
   
- ![Retour au début](~/docs/debugger/media/pcs_backtotop.png "PCS\_BackToTop") [Contenu](#BKMK_Contents) **&#124;** [Uniquement mon code .NET Framework](#BKMK__NET_Framework_Just_My_Code)  
+ ![Retour au début](~/debugger/media/pcs_backtotop.png "PCS\_BackToTop") [Contenu](#BKMK_Contents) **&#124;** [Uniquement mon code .NET Framework](#BKMK__NET_Framework_Just_My_Code)  
   
 ###  <a name="BKMK_NET_Stepping_behavior"></a> Comportement d'exécution pas à pas  
  Quand vous effectuez un **Pas à pas détaillé** \(raccourci clavier : F11\) du code non\-utilisateur, le débogueur exécute le code pas à pas jusqu'à l'instruction utilisateur suivante.  Quand vous effectuez un **Pas à pas sortant** \(clavier : Maj\+F11\), le débogueur exécute jusqu'à la ligne de code utilisateur suivante.  Si aucun code utilisateur n'est rencontré, l'exécution se poursuit jusqu'à ce que l'application se termine, jusqu'à ce qu'un point d'arrêt soit atteint ou jusqu'à ce qu'une exception se produise.  
   
- ![Retour au début](~/docs/debugger/media/pcs_backtotop.png "PCS\_BackToTop") [Contenu](#BKMK_Contents) **&#124;** [Uniquement mon code .NET Framework](#BKMK__NET_Framework_Just_My_Code)  
+ ![Retour au début](~/debugger/media/pcs_backtotop.png "PCS\_BackToTop") [Contenu](#BKMK_Contents) **&#124;** [Uniquement mon code .NET Framework](#BKMK__NET_Framework_Just_My_Code)  
   
 ###  <a name="BKMK_NET_Breakpoint_behavior"></a> Comportement des points d'arrêt  
  Quand Uniquement mon code est activé, vous pouvez choisir **Interrompre tout** \(clavier : Ctrl\+Alt\+Attn\) et arrêter l'exécution à un emplacement où il n'existe pas de code utilisateur à afficher.  Dans ce cas, la fenêtre Pas de code source s'affiche.  Si vous choisissez ensuite une commande d'étape, le débogueur vous amène à la ligne de code utilisateur suivante.  
   
- ![Retour au début](~/docs/debugger/media/pcs_backtotop.png "PCS\_BackToTop") [Contenu](#BKMK_Contents) **&#124;** [Uniquement mon code .NET Framework](#BKMK__NET_Framework_Just_My_Code)  
+ ![Retour au début](~/debugger/media/pcs_backtotop.png "PCS\_BackToTop") [Contenu](#BKMK_Contents) **&#124;** [Uniquement mon code .NET Framework](#BKMK__NET_Framework_Just_My_Code)  
   
 ###  <a name="BKMK_NET_Exception_behavior"></a> Comportement des exceptions  
  Si une exception non gérée se produit dans du code non\-utilisateur, le débogueur s'arrête à la ligne de code utilisateur où lequel l'exception a été générée.  
   
  Si les exceptions de première chance sont activées pour l'exception, la ligne de code utilisateur est mise en surbrillance en vert.  La pile des appels affiche un cadre annoté intitulé **\[Code externe\]**.  
   
- ![Retour au début](~/docs/debugger/media/pcs_backtotop.png "PCS\_BackToTop") [Contenu](#BKMK_Contents) **&#124;** [Uniquement mon code .NET Framework](#BKMK__NET_Framework_Just_My_Code)  
+ ![Retour au début](~/debugger/media/pcs_backtotop.png "PCS\_BackToTop") [Contenu](#BKMK_Contents) **&#124;** [Uniquement mon code .NET Framework](#BKMK__NET_Framework_Just_My_Code)  
   
 ##  <a name="BKMK_C___Just_My_Code"></a> Uniquement mon code C\+\+  
  [Code utilisateur et non-utilisateur](#BKMK_CPP_User_and_non_user_code) **&#124;** [Comportement d'exécution pas à pas](#BKMK_CPP_Stepping_behavior) **&#124;** [Comportement des exceptions](#BKMK_CPP_Exception_behavior) **&#124;** [Personnaliser le comportement d'exécution pas à pas](#BKMK_CPP_Customize_stepping_behavior) **&#124;** [Personnaliser le comportement de la pile des appels](#BKMK_CPP_Customize_call_stack_behavior)  
@@ -112,19 +112,19 @@ Les développeurs qui utilisent des langages du .NET Framework sont familiarisé
   
  Vous pouvez créer vos propres fichiers `.natstepfilter` et `.natjmc` pour personnaliser le comportement de l'exécution pas à pas et de la fenêtre de pile des appels, et les placer dans le dossier `%USERPROFILE%\My Documents\Visual Studio 2015\Visualizers`.  
   
- ![Retour au début](~/docs/debugger/media/pcs_backtotop.png "PCS\_BackToTop") [Contenu](#BKMK_Contents) **&#124;** [Uniquement mon code C++](#BKMK_C___Just_My_Code)  
+ ![Retour au début](~/debugger/media/pcs_backtotop.png "PCS\_BackToTop") [Contenu](#BKMK_Contents) **&#124;** [Uniquement mon code C++](#BKMK_C___Just_My_Code)  
   
 ###  <a name="BKMK_CPP_Stepping_behavior"></a> Comportement d'exécution pas à pas  
  Quand vous effectuez un **Pas à pas détaillé** \(raccourci clavier : F11\) du code non\-utilisateur depuis du code utilisateur, le débogueur exécute le code pas à pas jusqu'à la ligne de code utilisateur suivante.  Quand vous effectuez un **Pas à pas sortant** \(clavier : Maj\+F11\), le débogueur exécute jusqu'à la ligne de code utilisateur suivante.  Si aucun code utilisateur n'est rencontré, l'exécution se poursuit jusqu'à ce que l'application se termine, jusqu'à ce qu'un point d'arrêt soit atteint ou jusqu'à ce qu'une exception se produise.  
   
  Si le débogueur s'arrête dans du code non\-utilisateur \(par exemple si une commande Interrompre tout s'arrête dans du code non\-utilisateur\), l'exécution pas à pas continue dans le code non\-utilisateur.  
   
- ![Retour au début](~/docs/debugger/media/pcs_backtotop.png "PCS\_BackToTop") [Contenu](#BKMK_Contents) **&#124;** [Uniquement mon code C++](#BKMK_C___Just_My_Code)  
+ ![Retour au début](~/debugger/media/pcs_backtotop.png "PCS\_BackToTop") [Contenu](#BKMK_Contents) **&#124;** [Uniquement mon code C++](#BKMK_C___Just_My_Code)  
   
 ###  <a name="BKMK_CPP_Exception_behavior"></a> Comportement des exceptions  
  Quand le débogueur rencontre une exception, il s'arrête sur l'exception, qu'il s'agisse de code utilisateur ou de code non\-utilisateur.  Les options **Non géré par l'utilisateur** de la boîte de dialogue **Exceptions** sont ignorées.  
   
- ![Retour au début](~/docs/debugger/media/pcs_backtotop.png "PCS\_BackToTop") [Contenu](#BKMK_Contents) **&#124;** [Uniquement mon code C++](#BKMK_C___Just_My_Code)  
+ ![Retour au début](~/debugger/media/pcs_backtotop.png "PCS\_BackToTop") [Contenu](#BKMK_Contents) **&#124;** [Uniquement mon code C++](#BKMK_C___Just_My_Code)  
   
 ###  <a name="BKMK_CPP_Customize_stepping_behavior"></a> Personnaliser le comportement d'exécution pas à pas  
  Vous pouvez spécifier des fonctions que l'exécution pas à pas doit ignorer en les répertoriant comme étant du code non\-utilisateur dans des fichiers `*.natstepfilter`.  
@@ -158,7 +158,7 @@ Les développeurs qui utilisent des langages du .NET Framework sont familiarisé
 |`Module`|Facultatif.  Une expression régulière mise en forme selon ECMA\-262 spécifiant le chemin d'accès complet au module contenant la fonction.  La recherche de correspondance ne respecte pas la casse.|  
 |`Action`|Obligatoire.  Une des valeurs suivantes \(respectant la casse\) :<br /><br /> -   `NoStepInto`  : indique au débogueur d'ignorer la fonction concernée.<br />-   `StepInto`  : indique au débogueur d'exécuter pas à pas les fonctions concernées, en prenant la priorité sur tout autre élément `NoStepInto` pour ces fonctions.|  
   
- ![Retour au début](~/docs/debugger/media/pcs_backtotop.png "PCS\_BackToTop") [Contenu](#BKMK_Contents) **&#124;** [Uniquement mon code C++](#BKMK_C___Just_My_Code)  
+ ![Retour au début](~/debugger/media/pcs_backtotop.png "PCS\_BackToTop") [Contenu](#BKMK_Contents) **&#124;** [Uniquement mon code C++](#BKMK_C___Just_My_Code)  
   
 ###  <a name="BKMK_CPP_Customize_call_stack_behavior"></a> Personnaliser le comportement de la pile des appels  
  Vous pouvez spécifier des modules, des fichiers sources et des fonctions à traiter comme du code non\-utilisateur dans les piles des appels en les spécifiant dans des fichiers `*.natjmc`.  
@@ -210,7 +210,7 @@ Les développeurs qui utilisent des langages du .NET Framework sont familiarisé
 |`Module`|Facultatif.  Le nom ou le chemin d'accès complet au module qui contient la fonction.  Vous pouvez utiliser cet attribut pour lever l'ambiguïté entre des fonctions du même nom.|  
 |`ExceptionImplementation`|Quand la valeur est définie sur `true`, la pile des appels affiche la fonction qui a levé l'exception, au lieu de cette fonction.|  
   
- ![Retour au début](~/docs/debugger/media/pcs_backtotop.png "PCS\_BackToTop") [Contenu](#BKMK_Contents) **&#124;** [Uniquement mon code C++](#BKMK_C___Just_My_Code)  
+ ![Retour au début](~/debugger/media/pcs_backtotop.png "PCS\_BackToTop") [Contenu](#BKMK_Contents) **&#124;** [Uniquement mon code C++](#BKMK_C___Just_My_Code)  
   
 ##  <a name="BKMK_JavaScript_Just_My_Code"></a> Uniquement mon code JavaScript  
  [Code utilisateur et non-utilisateur](#BKMK_JS_User_and_non_user_code) **&#124;** [Comportement d'exécution pas à pas](#BKMK_JS_Stepping_behavior) **&#124;** [Comportement des points d'arrêt](#BKMK_JS_Breakpoint_behavior) **&#124;** [Comportement des exceptions](#BKMK_JS_Exception_behavior) **&#124;** [Personnaliser Uniquement mon code](#BKMK_JS_Customize_Just_My_Code)  
@@ -242,7 +242,7 @@ Les développeurs qui utilisent des langages du .NET Framework sont familiarisé
   
  Le reste du code est classé comme **MyCode**.  
   
- ![Retour au début](~/docs/debugger/media/pcs_backtotop.png "PCS\_BackToTop") [Contenu](#BKMK_Contents) **&#124;** [Uniquement mon code JavaScript](#BKMK_JavaScript_Just_My_Code)  
+ ![Retour au début](~/debugger/media/pcs_backtotop.png "PCS\_BackToTop") [Contenu](#BKMK_Contents) **&#124;** [Uniquement mon code JavaScript](#BKMK_JavaScript_Just_My_Code)  
   
 ###  <a name="BKMK_JS_Stepping_behavior"></a> Comportement d'exécution pas à pas  
   
@@ -254,7 +254,7 @@ Les développeurs qui utilisent des langages du .NET Framework sont familiarisé
   
 -   **Pas à pas sortant** \(clavier : Maj\+F11\) s'arrête sur la ligne de code utilisateur suivante.  Si aucun code utilisateur n'est rencontré, l'exécution se poursuit jusqu'à ce que l'application se termine, jusqu'à ce qu'un point d'arrêt soit atteint ou jusqu'à ce qu'une exception se produise.  
   
- ![Retour au début](~/docs/debugger/media/pcs_backtotop.png "PCS\_BackToTop") [Contenu](#BKMK_Contents) **&#124;** [Uniquement mon code JavaScript](#BKMK_JavaScript_Just_My_Code)  
+ ![Retour au début](~/debugger/media/pcs_backtotop.png "PCS\_BackToTop") [Contenu](#BKMK_Contents) **&#124;** [Uniquement mon code JavaScript](#BKMK_JavaScript_Just_My_Code)  
   
 ###  <a name="BKMK_JS_Breakpoint_behavior"></a> Comportement des points d'arrêt  
   
@@ -266,7 +266,7 @@ Les développeurs qui utilisent des langages du .NET Framework sont familiarisé
   
     -   du code **UnrelatedCode**, le débogueur ne s'arrête pas.  
   
- ![Retour au début](~/docs/debugger/media/pcs_backtotop.png "PCS\_BackToTop") [Contenu](#BKMK_Contents) **&#124;** [Uniquement mon code JavaScript](#BKMK_JavaScript_Just_My_Code)  
+ ![Retour au début](~/debugger/media/pcs_backtotop.png "PCS\_BackToTop") [Contenu](#BKMK_Contents) **&#124;** [Uniquement mon code JavaScript](#BKMK_JavaScript_Just_My_Code)  
   
 ###  <a name="BKMK_JS_Exception_behavior"></a> Comportement des exceptions  
  Si une exception non gérée se produit dans :  
@@ -281,7 +281,7 @@ Les développeurs qui utilisent des langages du .NET Framework sont familiarisé
   
 -   Si l'exception n'est pas gérée, le débogueur s'arrête.  
   
- ![Retour au début](~/docs/debugger/media/pcs_backtotop.png "PCS\_BackToTop") [Contenu](#BKMK_Contents) **&#124;** [Uniquement mon code JavaScript](#BKMK_JavaScript_Just_My_Code)  
+ ![Retour au début](~/debugger/media/pcs_backtotop.png "PCS\_BackToTop") [Contenu](#BKMK_Contents) **&#124;** [Uniquement mon code JavaScript](#BKMK_JavaScript_Just_My_Code)  
   
 ###  <a name="BKMK_JS_Customize_Just_My_Code"></a> Personnaliser Uniquement mon code  
  Pour classer par catégorie du code utilisateur et non\-utilisateur pour un seul projet Visual Studio, ajoutez un fichier .json nommé `mycode.json` dans le dossier racine du projet.  
@@ -352,4 +352,4 @@ Les développeurs qui utilisent des langages du .NET Framework sont familiarisé
   
  La chaîne d'URL ou de fichiers peut contenir un ou plusieurs caractères `*`, qui correspondent à zéro ou plusieurs caractères.  `*` est l'équivalent de l'expression régulière `.*`.  
   
- ![Retour au début](~/docs/debugger/media/pcs_backtotop.png "PCS\_BackToTop") [Contenu](#BKMK_Contents) **&#124;** [Uniquement mon code JavaScript](#BKMK_JavaScript_Just_My_Code)
+ ![Retour au début](~/debugger/media/pcs_backtotop.png "PCS\_BackToTop") [Contenu](#BKMK_Contents) **&#124;** [Uniquement mon code JavaScript](#BKMK_JavaScript_Just_My_Code)

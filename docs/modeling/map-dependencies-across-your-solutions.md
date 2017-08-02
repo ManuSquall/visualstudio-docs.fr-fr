@@ -55,7 +55,7 @@ ms.lasthandoff: 02/22/2017
 # <a name="map-dependencies-across-your-solutions"></a>Mapper les dépendances dans vos solutions
 Pour comprendre les dépendances présentes dans votre code, vous pouvez les visualiser en créant des cartes de code. Vous pouvez ainsi voir comment le code s’ajuste sans avoir à parcourir les fichiers et les lignes de code.  
   
- ![Afficher les dépendances entre vos solutions](~/docs/modeling/media/codemapsmainintro.png "CodeMapsMainIntro")  
+ ![Afficher les dépendances entre vos solutions](~/modeling/media/codemapsmainintro.png "CodeMapsMainIntro")  
   
  **Voici quelques vidéos**:  
   
@@ -101,7 +101,7 @@ Pour comprendre les dépendances présentes dans votre code, vous pouvez les vis
   
 2.  Sélectionnez les projets, références d’assembly, dossiers, fichiers, types ou membres que vous souhaitez afficher sur la carte.  
   
-3.  Sur le **l’Explorateur de solutions** la barre d’outils, choisissez **afficher sur la carte de Code**![créer nouveau graphique à partir de nœuds bouton sélectionnés](~/docs/modeling/media/createnewgraphfromselectedbutton.gif "CreateNewGraphFromSelectedButton"). Ou bien, ouvrez le menu contextuel et choisissez **Afficher sur la carte de code**. Vous pouvez également faire glisser des éléments à partir de l’affichage de classes ou de l’Explorateur d’objets vers une nouvelle carte de code ou une carte existante.  
+3.  Sur le **l’Explorateur de solutions** la barre d’outils, choisissez **afficher sur la carte de Code**![créer nouveau graphique à partir de nœuds bouton sélectionnés](~/modeling/media/createnewgraphfromselectedbutton.gif "CreateNewGraphFromSelectedButton"). Ou bien, ouvrez le menu contextuel et choisissez **Afficher sur la carte de code**. Vous pouvez également faire glisser des éléments à partir de l’affichage de classes ou de l’Explorateur d’objets vers une nouvelle carte de code ou une carte existante.  
   
 4.  Consultez[Visualiser les dépendances spécifiques](#SeeSpecificSource) pour comprendre comment utiliser des cartes de code pour afficher des dépendances spécifiques au sein de votre solution.  
   
@@ -135,23 +135,23 @@ Pour comprendre les dépendances présentes dans votre code, vous pouvez les vis
   
 1.  Dans le menu **Architecture** , choisissez **Générer une carte du code pour la solution**.  
   
-     ![Générer une commande de carte de code](~/docs/modeling/media/codemapsarchitecturemenu.png "CodeMapsArchitectureMenu")  
+     ![Générer une commande de carte de code](~/modeling/media/codemapsarchitecturemenu.png "CodeMapsArchitectureMenu")  
   
      Vous obtenez une carte qui affiche les assemblys de niveau supérieur et les liens globaux qui les relient. Plus le lien global est large, plus il représente de dépendances.  
   
 2.  Utilisez le bouton **Légende** dans la barre d’outils de la carte de code pour afficher ou masquer la liste des icônes de type de projet (comme Projet de test, Projet web et Projet de téléphone), les éléments de code (comme Classes, Méthodes et Propriétés) et les types de relations (comme Hérite de, Implémente et Appelle).  
   
-     ![Graphique de dépendance de niveau supérieur des assemblys](~/docs/modeling/media/dependencygraph_toplevelassemblies.png "DependencyGraph_TopLevelAssemblies")  
+     ![Graphique de dépendance de niveau supérieur des assemblys](~/modeling/media/dependencygraph_toplevelassemblies.png "DependencyGraph_TopLevelAssemblies")  
   
      Cet exemple de solution contient des dossiers de solution (**Tests** et **Composants**), des projets de test, des projets web et des assemblys. Par défaut, toutes les relations d’imbrication apparaissent sous forme de *groupes*que vous pouvez développer et réduire. Le groupe **Externes** contient les éléments qui ne font pas partie de votre solution, notamment les dépendances de plateforme. Les assemblys externes affichent uniquement les éléments utilisés. Par défaut, les types de base du système sont masqués pour ne pas trop encombrer la carte.  
   
 3.  Pour descendre dans la hiérarchie de la carte, développez les groupes qui représentent des projets et des assemblys. Pour développer tout, appuyez sur **Ctrl+A** pour sélectionner tous les nœuds. Ensuite, choisissez **Groupe**, puis **Développer** dans le menu contextuel.  
   
-     ![Développement de tous les groupes dans une carte de code](~/docs/modeling/media/codemapsexpandallgroups.png "CodeMapsExpandAllGroups")  
+     ![Développement de tous les groupes dans une carte de code](~/modeling/media/codemapsexpandallgroups.png "CodeMapsExpandAllGroups")  
   
 4.  Ceci peut toutefois ne pas s’avérer très utile pour une solution de grande taille. En fait, pour les solutions complexes, les limitations de mémoire peuvent vous empêcher de développer tous les groupes. Pour visualiser l’intérieur d’un nœud individuel, développez-le. Déplacez le pointeur de la souris au-dessus du nœud, puis cliquez sur le chevron (flèche bas) quand il apparaît.  
   
-     ![Développement d’un nœud dans une carte de code](~/docs/modeling/media/dependencygraph_containment.png "DependencyGraph_Containment")  
+     ![Développement d’un nœud dans une carte de code](~/modeling/media/dependencygraph_containment.png "DependencyGraph_Containment")  
   
      Ou bien, sélectionnez l’élément et appuyez sur la touche plus (**+**) du clavier. Pour explorer des niveaux plus profonds de code, procédez de même pour les espaces de noms, les types et les membres.  
   
@@ -160,13 +160,13 @@ Pour comprendre les dépendances présentes dans votre code, vous pouvez les vis
   
 5.  Pour simplifier la carte et cibler des parties individuelles, choisissez **Filtres** dans la barre d’outils de la carte de code et sélectionnez uniquement les types de nœuds et de liens qui vous intéressent. Par exemple, vous pouvez masquer tous les conteneurs Dossier Solution et Assembly.  
   
-     ![Simplifier la carte en filtrant les conteneurs](~/docs/modeling/media/codemapsfilterfoldersassemblies.png "CodeMapsFilterFoldersAssemblies")  
+     ![Simplifier la carte en filtrant les conteneurs](~/modeling/media/codemapsfilterfoldersassemblies.png "CodeMapsFilterFoldersAssemblies")  
   
      Vous pouvez également simplifier la carte en masquant ou en supprimant des groupes et des éléments individuels de la carte, sans affecter le code de la solution sous-jacent.  
   
 6.  Pour visualiser les relations entre les éléments, sélectionnez-les dans la carte. Les couleurs des liens indiquent les types de relations, comme le montre le volet **Légende** .  
   
-     ![Afficher les dépendances entre vos solutions](~/docs/modeling/media/codemapsmainintro.png "CodeMapsMainIntro")  
+     ![Afficher les dépendances entre vos solutions](~/modeling/media/codemapsmainintro.png "CodeMapsMainIntro")  
   
      Dans cet exemple, les liens violets correspondent aux appels, les liens en pointillés aux références et les liens bleu clair à l’accès aux champs. Les liens verts peuvent représenter l’héritage ou correspondre à des *liens globaux* qui indiquent plusieurs types de relations (ou *catégories*).  
   
@@ -175,25 +175,25 @@ Pour comprendre les dépendances présentes dans votre code, vous pouvez les vis
   
 7.  Pour obtenir plus d’informations sur un élément ou un lien, déplacez le pointeur sur celui-ci jusqu’à ce qu’une info-bulle apparaisse. Celle-ci donne des détails sur un élément de code ou les catégories représentées par un lien.  
   
-     ![Afficher les catégories d’une relation](~/docs/modeling/media/codemapsshowlinkcatgories.png "CodeMapsShowLinkCatgories")  
+     ![Afficher les catégories d’une relation](~/modeling/media/codemapsshowlinkcatgories.png "CodeMapsShowLinkCatgories")  
   
 8.  Pour examiner les éléments et les dépendances représentés par un lien global, sélectionnez d’abord le lien, puis ouvrez son menu contextuel. Choisissez **Afficher les liens de contribution** (ou **Afficher les liens de contribution sur des nouvelles cartes de code**). Cette opération développe les groupes aux deux extrémités du lien et affiche uniquement les éléments et les dépendances qui participent au lien.  
   
 9. Pour cibler des parties spécifiques de la carte, continuez à supprimer les éléments qui ne vous intéressent pas. Par exemple, pour analyser l’affichage des classes et des membres, filtrez simplement tous les nœuds d’espace de noms dans le volet **Filtres** .  
   
-     ![Exploration au niveau de classe et du membre](~/docs/modeling/media/dependencygraph_expandedselectedgroups_2012.png "DependencyGraph_ExpandedSelectedGroups_2012")  
+     ![Exploration au niveau de classe et du membre](~/modeling/media/dependencygraph_expandedselectedgroups_2012.png "DependencyGraph_ExpandedSelectedGroups_2012")  
   
 10. Pour simplifier une carte de solution complexe, vous pouvez aussi générer une nouvelle carte contenant une sélection d’éléments à partir d’une carte existante. Maintenez la touche **Ctrl** enfoncée tout en sélectionnant les éléments qui vous intéressent, ouvrez le menu contextuel, puis choisissez **Nouveau graphique à partir de la sélection**.  
   
-     ![Afficher les éléments sélectionnés dans une nouvelle carte de code](~/docs/ide/media/codemapsshowonnewmap.png "CodeMapsShowOnNewMap")  
+     ![Afficher les éléments sélectionnés dans une nouvelle carte de code](~/ide/media/codemapsshowonnewmap.png "CodeMapsShowOnNewMap")  
   
 11. Le contexte est reporté sur la nouvelle carte. Masquez les dossiers de solution et tout autre conteneur que vous ne souhaitez pas afficher à l’aide du volet **Filtres** .  
   
-     ![Filtrer les conteneurs pour simplifier l’affichage](~/docs/modeling/media/codemapsexpandnewgroups.png "CodeMapsExpandNewGroups")  
+     ![Filtrer les conteneurs pour simplifier l’affichage](~/modeling/media/codemapsexpandnewgroups.png "CodeMapsExpandNewGroups")  
   
 12. Développez les groupes et sélectionnez les éléments dans la carte pour afficher les relations.  
   
-     ![Sélectionnez les éléments pour afficher les relations](~/docs/modeling/media/codemapsviewnewrelationships.png "CodeMapsViewNewRelationships")  
+     ![Sélectionnez les éléments pour afficher les relations](~/modeling/media/codemapsviewnewrelationships.png "CodeMapsViewNewRelationships")  
   
  Voir aussi :  
   
@@ -215,19 +215,19 @@ Pour comprendre les dépendances présentes dans votre code, vous pouvez les vis
 ##  <a name="a-nameseespecificsourcea-see-specific-dependencies"></a><a name="SeeSpecificSource"></a>Afficher des dépendances spécifiques  
  Par exemple, supposons que vous deviez réviser du code dans certains fichiers contenant des modifications en attente. Pour visualiser les dépendances dans ces modifications, vous pouvez créer une carte de code à partir de ces fichiers.  
   
- ![Afficher les dépendances spécifiques sur une carte de code](~/docs/modeling/media/codemapsspecificdependenciesintro.png "CodeMapsSpecificDependenciesIntro")  
+ ![Afficher les dépendances spécifiques sur une carte de code](~/modeling/media/codemapsspecificdependenciesintro.png "CodeMapsSpecificDependenciesIntro")  
   
 ### <a name="see-specific-dependencies-in-your-solution"></a>Visualiser les dépendances spécifiques dans votre solution  
   
 1.  Ouvrez l’ **Explorateur de solutions**. Sélectionnez les projets, références d’assembly, dossiers, fichiers, types et membres qui vous intéressent. Pour rechercher les éléments qui ont des dépendances sur les types ou les membres, ouvrez le menu contextuel du type ou du membre depuis l’ **Explorateur de solutions**. Choisissez le type de dépendance, puis sélectionnez les résultats.  
   
-2.  Créez une carte de vos éléments et de leurs membres. Sur le **l’Explorateur de solutions** cliquez sur barre d’outils **afficher sur la carte de Code**![créer nouveau graphique à partir de nœuds bouton sélectionnés](~/docs/modeling/media/createnewgraphfromselectedbutton.gif "CreateNewGraphFromSelectedButton").  
+2.  Créez une carte de vos éléments et de leurs membres. Sur le **l’Explorateur de solutions** cliquez sur barre d’outils **afficher sur la carte de Code**![créer nouveau graphique à partir de nœuds bouton sélectionnés](~/modeling/media/createnewgraphfromselectedbutton.gif "CreateNewGraphFromSelectedButton").  
   
-     ![Sélectionnez les éléments que vous souhaitez mapper](~/docs/modeling/media/codemapsselectinsolutionexplorer.png "CodeMapsSelectInSolutionExplorer")  
+     ![Sélectionnez les éléments que vous souhaitez mapper](~/modeling/media/codemapsselectinsolutionexplorer.png "CodeMapsSelectInSolutionExplorer")  
   
 3.  La carte montre les éléments sélectionnés au sein des assemblys conteneurs.  
   
-     ![Sélectionné des éléments affichés sous forme de groupes dans la carte](~/docs/modeling/media/codemapsshowitemsfromsolnexplorer.png "CodeMapsShowItemsFromSolnExplorer")  
+     ![Sélectionné des éléments affichés sous forme de groupes dans la carte](~/modeling/media/codemapsshowitemsfromsolnexplorer.png "CodeMapsShowItemsFromSolnExplorer")  
   
      Vous pouvez également faire glisser des éléments à partir de l’Explorateur de solutions, de l’affichage de classes ou de l’Explorateur d’objets vers une carte de code vide ou existante. Pour créer une carte vide, consultez [Créer une carte de code vide](#GetStarted). Pour inclure la hiérarchie parente de vos éléments, maintenez la touche **Ctrl** enfoncée tout en faisant glisser des éléments ou utilisez le bouton **Inclure les parents** dans la barre d’outils de la carte de code pour spécifier l’action par défaut.  
   
@@ -236,15 +236,15 @@ Pour comprendre les dépendances présentes dans votre code, vous pouvez les vis
   
 4.  Pour explorer des éléments, développez-les. Déplacez le pointeur de la souris au-dessus d’un élément, puis cliquez sur l’icône en forme de chevron (flèche bas) quand elle apparaît.  
   
-     ![Développement d’un nœud dans une carte de code](~/docs/modeling/media/dependencygraph_containment.png "DependencyGraph_Containment")  
+     ![Développement d’un nœud dans une carte de code](~/modeling/media/dependencygraph_containment.png "DependencyGraph_Containment")  
   
      Pour développer tous les éléments, sélectionnez-les en appuyant sur **Ctrl+A**, ouvrez le menu contextuel de la carte, puis choisissez **Groupe**, **Développer**. Toutefois, cette option n’est pas disponible si le développement de tous les groupes crée une carte inutilisable ou entraîne des problèmes de mémoire.  
   
 5.  Continuez à développer les éléments qui vous intéressent jusqu’au niveau de la classe et du membre si nécessaire.  
   
-     ![Développer les groupes au niveau de la classe et du membre](~/docs/modeling/media/codemapsexpandtoclassandmember.png "CodeMapsExpandToClassAndMember")  
+     ![Développer les groupes au niveau de la classe et du membre](~/modeling/media/codemapsexpandtoclassandmember.png "CodeMapsExpandToClassAndMember")  
   
-     Pour afficher les membres qui sont dans le code, mais n’apparaissent pas sur la carte, cliquez sur le **récupérer à nouveau les enfants** icône ![icône récupérer à nouveau d’enfants](~/docs/modeling/media/dependencygraph_deletednodesicon.png "DependencyGraph_DeletedNodesIcon") dans le coin supérieur gauche d’un groupe.  
+     Pour afficher les membres qui sont dans le code, mais n’apparaissent pas sur la carte, cliquez sur le **récupérer à nouveau les enfants** icône ![icône récupérer à nouveau d’enfants](~/modeling/media/dependencygraph_deletednodesicon.png "DependencyGraph_DeletedNodesIcon") dans le coin supérieur gauche d’un groupe.  
   
 6.  Pour afficher d’autres d’éléments associés à ceux présents sur la carte, sélectionnez un élément et choisissez **Afficher les éléments associés** dans la barre d’outils de la carte de code, puis sélectionnez le type d’éléments associés à ajouter à la carte. Vous pouvez également sélectionner un ou plusieurs éléments, ouvrir le menu contextuel, puis choisir l’option **Afficher** pour le type d’éléments associés à ajouter à la carte. Par exemple :  
   
@@ -287,15 +287,15 @@ Pour comprendre les dépendances présentes dans votre code, vous pouvez les vis
     |**Afficher le Type conteneur**|Ajoutez le type de parent.|  
     |**Afficher, Namespace et l’Assembly contenant le Type**|Ajoutez la hiérarchie de conteneurs parents.|  
   
-     ![Afficher les méthodes appelées par ce membre](~/docs/modeling/media/codemapsshowrelatedmethods.png "CodeMapsShowRelatedMethods")  
+     ![Afficher les méthodes appelées par ce membre](~/modeling/media/codemapsshowrelatedmethods.png "CodeMapsShowRelatedMethods")  
   
 7.  La carte affiche les relations. Dans cet exemple, les méthodes appelées par la méthode `Find` et leur emplacement dans la solution ou à l’extérieur.  
   
-     ![Afficher les dépendances spécifiques sur une carte de code](~/docs/modeling/media/codemapsspecificdependenciesintro.png "CodeMapsSpecificDependenciesIntro")  
+     ![Afficher les dépendances spécifiques sur une carte de code](~/modeling/media/codemapsspecificdependenciesintro.png "CodeMapsSpecificDependenciesIntro")  
   
 8.  Pour simplifier la carte et cibler des parties individuelles, choisissez **Filtres** dans la barre d’outils de la carte de code et sélectionnez uniquement les types de nœuds et de liens qui vous intéressent. Par exemple, désactivez l’affichage des dossiers solution, des assemblys et des espaces de noms.  
   
-     ![Utilisez le volet de filtre pour simplifier l’affichage](~/docs/modeling/media/almcodemapfilterpane.png "ALMCodeMapFilterPane")  
+     ![Utilisez le volet de filtre pour simplifier l’affichage](~/modeling/media/almcodemapfilterpane.png "ALMCodeMapFilterPane")  
   
 ##  <a name="a-nameseesourceheadera-see-dependencies-between-c-and-c-source-files-and-header-files"></a><a name="SeeSourceHeader"></a>Visualiser les dépendances entre les fichiers sources C et C++ et les fichiers d’en-tête  
  Si vous souhaitez créer des cartes plus complètes pour des projets C++, définissez l’option du compilateur d’informations de consultation (**/FR**) sur ces projets. Sinon, un message vous invite à définir cette option. Si vous sélectionnez **OK**, l’option est définie uniquement pour la carte active. Vous pouvez choisir de masquer le message pour toutes les cartes ultérieures. Si vous masquez ce message, vous pouvez le faire réapparaître. Affectez à la clé de Registre suivante la valeur `0` ou supprimez-la :  
@@ -306,11 +306,11 @@ Pour comprendre les dépendances présentes dans votre code, vous pouvez les vis
   
 -   Pour visualiser les dépendances entre tous les fichiers sources et fichiers d’en-tête de votre solution, dans le menu **Architecture** , choisissez **Générer le graphique des fichiers Include**.  
   
-     ![Graphique de dépendance pour le code natif](~/docs/modeling/media/dependencygraphgeneral_nativecode.png "DependencyGraphGeneral_NativeCode")  
+     ![Graphique de dépendance pour le code natif](~/modeling/media/dependencygraphgeneral_nativecode.png "DependencyGraphGeneral_NativeCode")  
   
 -   Pour visualiser les dépendances entre le fichier actuellement ouvert et les fichiers sources et fichiers d’en-tête associés, ouvrez soit le fichier source, soit le fichier d’en-tête. Ouvrez le menu contextuel n’importe où dans le fichier. Choisissez **Générer le graphique des fichiers Include**.  
   
-     ![Graphique de dépendance de premier niveau pour le fichier .h](~/docs/modeling/media/dependencygraph_native_firstlevel.png "DependencyGraph_Native_FirstLevel")  
+     ![Graphique de dépendance de premier niveau pour le fichier .h](~/modeling/media/dependencygraph_native_firstlevel.png "DependencyGraph_Native_FirstLevel")  
   
 ###  <a name="a-nametroubleshootinga-troubleshoot-maps-for-c-and-c-code"></a><a name="Troubleshooting"></a>Résoudre les problèmes des cartes de code C et C++  
  Ces éléments ne sont pas pris en charge pour le code C et C++ :  
@@ -345,7 +345,7 @@ Pour comprendre les dépendances présentes dans votre code, vous pouvez les vis
   
 -   Modifiez directement le fichier de la carte de code pour supprimer les nœuds et les liens dont vous n’avez pas besoin. La modification de la carte n’affecte pas le code sous-jacent. Consultez la page [code de personnaliser les cartes en modifiant les fichiers DGML](../modeling/customize-code-maps-by-editing-the-dgml-files.md).  
   
- ![Boutons Skip Build et inclure les Parents](~/docs/modeling/media/codemapsfilterskipbuildicons.png "CodeMapsFilterSkipBuildIcons")  
+ ![Boutons Skip Build et inclure les Parents](~/modeling/media/codemapsfilterskipbuildicons.png "CodeMapsFilterSkipBuildIcons")  
   
  Bien que Visual Studio puisse fonctionner avec 1 Go de mémoire, nous recommandons que votre ordinateur ait au moins 2 Go de mémoire pour éviter des délais importants quand Visual Studio crée l’index de code et génère la carte.  
   
@@ -362,7 +362,7 @@ Pour comprendre les dépendances présentes dans votre code, vous pouvez les vis
   
  Pour enregistrer la carte en tant que partie d’un projet spécifique, dans la barre d’outils de la carte, choisissez **partage**, **déplacer** \< *CodeMapName*>**.dgml vers**, puis choisissez le projet où vous souhaitez enregistrer la carte.  
   
- ![Déplacer une carte dans un autre projet](~/docs/modeling/media/codemapsmovemapmenu.png "CodeMapsMoveMapMenu")  
+ ![Déplacer une carte dans un autre projet](~/modeling/media/codemapsmovemapmenu.png "CodeMapsMoveMapMenu")  
   
  Visual Studio enregistre la carte en tant que fichier .dgml que vous pouvez partager avec d’autres utilisateurs de Visual Studio Enterprise et de Visual Studio Professional.  
   

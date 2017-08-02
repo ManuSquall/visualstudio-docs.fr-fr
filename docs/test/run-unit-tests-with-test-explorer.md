@@ -59,7 +59,7 @@ Utilisez l'Explorateur de tests pour exécuter des tests unitaires à partir de 
   
  L'Explorateur de tests peut exécuter des tests à partir de plusieurs projets de test dans une solution et à partir de classes de test qui font partie des projets de code de production. Les projets de test peuvent utiliser différents frameworks de tests unitaires. Quand le code testé est écrit pour le .NET Framework, le projet de test peut être écrit dans n'importe quel langage qui cible également le .NET Framework, quel que soit le langage du code cible. Les projets de code C/C++ natifs doivent être testés à l'aide d'un framework de tests unitaires C++.  
   
- ![Retour au début](~/docs/debugger/media/pcs_backtotop.png "PCS_BackToTop") [Sommaire](#BKMK_Contents)  
+ ![Retour au début](~/debugger/media/pcs_backtotop.png "PCS_BackToTop") [Sommaire](#BKMK_Contents)  
   
 ##  <a name="BKMK_Run_tests_in_Test_Explorer"></a> Exécuter des tests dans l’Explorateur de tests  
  [Exécuter des tests](#BKMK_Run_tests) **&#124;** [Exécuter des tests après chaque génération](#BKMK_Run_tests_after_every_build)  
@@ -74,7 +74,7 @@ Utilisez l'Explorateur de tests pour exécuter des tests unitaires à partir de 
   
  ![Exécuter des tests à partir de la barre d’outils de l’explorateur de tests](../test/media/ute_toolbar.png "UTE_ToolBar")  
   
- ![Retour au début](~/docs/debugger/media/pcs_backtotop.png "PCS_BackToTop") [Sommaire](#BKMK_Contents)  
+ ![Retour au début](~/debugger/media/pcs_backtotop.png "PCS_BackToTop") [Sommaire](#BKMK_Contents)  
   
 ###  <a name="BKMK_Run_tests"></a> Exécuter les tests  
  Vous pouvez exécuter tous les tests dans la solution, tous les tests dans un groupe, ou un ensemble de tests que vous sélectionnez. Effectuez l’une des opérations suivantes :  
@@ -89,7 +89,7 @@ Utilisez l'Explorateur de tests pour exécuter des tests unitaires à partir de 
   
  La barre Réussite/Échec en haut de la fenêtre Explorateur de tests est animée pendant l'exécution des tests. À la fin de la série de tests, la barre Réussite/Échec devient verte si tous les tests ont réussi ou rouge si un test a échoué.  
   
- ![Retour au début](~/docs/debugger/media/pcs_backtotop.png "PCS_BackToTop") [Sommaire](#BKMK_Contents)  
+ ![Retour au début](~/debugger/media/pcs_backtotop.png "PCS_BackToTop") [Sommaire](#BKMK_Contents)  
   
 ###  <a name="BKMK_Run_tests_after_every_build"></a> Exécuter des tests après chaque génération  
   
@@ -100,7 +100,7 @@ Utilisez l'Explorateur de tests pour exécuter des tests unitaires à partir de 
 |-|-|  
 |![Exécuter après génération](../test/media/ute_runafterbuild_btn.png "UTE_RunAfterBuild_btn")|Pour exécuter vos tests unitaires après chaque génération locale, choisissez **Test** dans le menu standard, puis **Exécuter les tests après la génération** dans la barre d'outils de l'Explorateur de tests.|  
   
- ![Retour au début](~/docs/debugger/media/pcs_backtotop.png "PCS_BackToTop") [Sommaire](#BKMK_Contents)  
+ ![Retour au début](~/debugger/media/pcs_backtotop.png "PCS_BackToTop") [Sommaire](#BKMK_Contents)  
   
 ##  <a name="BKMK_View_test_results"></a> Afficher les résultats des tests  
  [Afficher les détails du test](#BKMK_View_test_details) **&#124;** [Afficher le code source d’une méthode de test](#BKMK_View_the_source_code_of_a_test_method)  
@@ -110,7 +110,7 @@ Utilisez l'Explorateur de tests pour exécuter des tests unitaires à partir de 
 ###  <a name="BKMK_View_test_details"></a> Afficher les détails du test  
  Pour afficher les détails d'un test individuel, sélectionnez le test.  
   
- ![Détails de l’exécution de tests](~/docs/test/media/ute_testdetails.png "UTE_TestDetails")  
+ ![Détails de l’exécution de tests](~/test/media/ute_testdetails.png "UTE_TestDetails")  
   
  Le volet d'informations de test affiche les informations suivantes :  
   
@@ -126,12 +126,12 @@ Utilisez l'Explorateur de tests pour exécuter des tests unitaires à partir de 
   
 -   La trace de la pile au moment de l'échec du test.  
   
- ![Retour au début](~/docs/debugger/media/pcs_backtotop.png "PCS_BackToTop") [Sommaire](#BKMK_Contents)  
+ ![Retour au début](~/debugger/media/pcs_backtotop.png "PCS_BackToTop") [Sommaire](#BKMK_Contents)  
   
 ###  <a name="BKMK_View_the_source_code_of_a_test_method"></a> Afficher le code source d’une méthode de test  
  Pour afficher le code source d'une méthode de test dans l'éditeur Visual Studio, sélectionnez le test, puis choisissez **Ouvrir un test** dans le menu contextuel (clavier : F12).  
   
- ![Retour au début](~/docs/debugger/media/pcs_backtotop.png "PCS_BackToTop") [Sommaire](#BKMK_Contents)  
+ ![Retour au début](~/debugger/media/pcs_backtotop.png "PCS_BackToTop") [Sommaire](#BKMK_Contents)  
   
 ##  <a name="BKMK_Group_and_filter_the_test_list"></a> Regrouper et filtrer la liste de tests  
  [Regroupement de la liste de tests](#BKMK_Grouping_the_test_list) **&#124;** [Regrouper par caractéristiques](#BKMK_Group_by_traits) **&#124;** [Rechercher et filtrer la liste de tests](#BKMK_Search_and_filter_the_test_list)  
@@ -139,7 +139,7 @@ Utilisez l'Explorateur de tests pour exécuter des tests unitaires à partir de 
  L'Explorateur de tests vous permet de regrouper vos tests en catégories prédéfinies. La plupart des frameworks de tests unitaires qui s'exécutent dans l'Explorateur de tests vous permettent de définir vos propres catégories et paires catégorie/valeur pour regrouper vos tests. Vous pouvez également filtrer la liste de tests en mettant en correspondance les chaînes avec les propriétés de test.  
   
 ###  <a name="BKMK_Grouping_the_test_list"></a> Regroupement de la liste de tests  
- Pour modifier le mode d’organisation des tests, cliquez sur la flèche vers le bas à côté du bouton **Grouper par** ![Bouton Grouper de l’Explorateur de tests](~/docs/test/media/ute_groupby_btn.png "UTE_GroupBy_btn") et sélectionnez un nouveau critère de regroupement.  
+ Pour modifier le mode d’organisation des tests, cliquez sur la flèche vers le bas à côté du bouton **Grouper par** ![Bouton Grouper de l’Explorateur de tests](~/test/media/ute_groupby_btn.png "UTE_GroupBy_btn") et sélectionnez un nouveau critère de regroupement.  
   
  ![Grouper les tests par catégorie dans l’Explorateur de tests](../test/media/ute_groupbycategory.png "UTE_GroupByCategory")  
   
@@ -152,7 +152,7 @@ Utilisez l'Explorateur de tests pour exécuter des tests unitaires à partir de 
 |**Caractéristiques**|Regroupe les tests selon les paires catégorie/valeur que vous définissez. La syntaxe permettant de spécifier les catégories et les valeurs des caractéristiques est définie par le framework de tests unitaires.|  
 |**Project**|Regroupe les tests selon le nom des projets.|  
   
- ![Retour au début](~/docs/debugger/media/pcs_backtotop.png "PCS_BackToTop") [Sommaire](#BKMK_Contents)  
+ ![Retour au début](~/debugger/media/pcs_backtotop.png "PCS_BackToTop") [Sommaire](#BKMK_Contents)  
   
 ###  <a name="BKMK_Group_by_traits"></a> Regrouper par caractéristiques  
  Une caractéristique est habituellement une paire nom/valeur de catégorie, mais elle peut également être une catégorie unique. Des caractéristiques peuvent être assignées aux méthodes identifiées comme une méthode de test par le framework de tests unitaires. Un framework de tests unitaires peut définir des catégories de caractéristiques. Vous pouvez ajouter des valeurs aux catégories de caractéristiques pour définir vos propres paires nom/valeur de catégorie. La syntaxe permettant de spécifier les catégories et les valeurs des caractéristiques est définie par le framework de tests unitaires.  
@@ -200,7 +200,7 @@ TEST_METHOD(Method1)
 |`TEST_OWNER(ownerAlias)`|Utilisez la caractéristique Owner prédéfinie pour spécifier un propriétaire de la méthode de test.|  
 |`TEST_PRIORITY(priority)`|Utilisez la caractéristique Priority prédéfinie pour assigner des priorités relatives à vos méthodes de test.|  
   
- ![Retour au début](~/docs/debugger/media/pcs_backtotop.png "PCS_BackToTop") [Sommaire](#BKMK_Contents)  
+ ![Retour au début](~/debugger/media/pcs_backtotop.png "PCS_BackToTop") [Sommaire](#BKMK_Contents)  
   
 ###  <a name="BKMK_Search_and_filter_the_test_list"></a> Rechercher et filtrer la liste de tests  
  Vous pouvez utiliser des filtres de l'Explorateur de tests pour limiter les méthodes de test dans les projets que vous affichez et exécutez.  
@@ -244,7 +244,7 @@ FullName:"MyClass" - FullName:"PerfTest"
   
  retourne tous les tests qui incluent « MyClass » dans leur nom sauf ceux qui incluent également « PerfTest » dans leur nom.  
   
- ![Retour au début](~/docs/debugger/media/pcs_backtotop.png "PCS_BackToTop") [Sommaire](#BKMK_Contents)  
+ ![Retour au début](~/debugger/media/pcs_backtotop.png "PCS_BackToTop") [Sommaire](#BKMK_Contents)  
   
 ##  <a name="BKMK_Create_custom_playlists"></a> Créer des sélections personnalisées  
  Vous pouvez créer et enregistrer une liste de tests que vous souhaitez exécuter ou visualiser en tant que groupe. Quand vous sélectionnez une sélection, les tests de la liste sont affichés dans l'Explorateur de tests. Vous pouvez ajouter un test à plusieurs sélections, et tous les tests de votre projet sont disponibles quand vous choisissez la sélection par défaut **Tous les tests** .  
@@ -259,7 +259,7 @@ FullName:"MyClass" - FullName:"PerfTest"
   
  Si les tests individuels n’ont aucune dépendance qui les empêche d’être exécutés dans n’importe quel ordre, activez l’exécution parallèle des tests avec le bouton bascule ![UTE&#95;parallelicon&#45;small](../test/media/ute_parallelicon-small.png "UTE_parallelicon-small") dans la barre d’outils. Cela peut réduire sensiblement le temps nécessaire pour exécuter tous les tests.  
   
- ![Retour au début](~/docs/debugger/media/pcs_backtotop.png "PCS_BackToTop") [Sommaire](#BKMK_Contents)  
+ ![Retour au début](~/debugger/media/pcs_backtotop.png "PCS_BackToTop") [Sommaire](#BKMK_Contents)  
   
 ##  <a name="BKMK_Debug_and_analyze_unit_tests"></a> Déboguer et analyser des tests unitaires  
  [Déboguer les tests unitaires](#BKMK_Debug_unit_tests) **&#124;** [Diagnostiquer les problèmes de performances de méthode de test](#BKMK_Diagnose_test_method_performance_issues) **&#124;** [Analyser la couverture de code de test unitaire](#BKMK_Analyzeunit_test_code_coverage)  
@@ -276,7 +276,7 @@ FullName:"MyClass" - FullName:"PerfTest"
   
  Pour plus d’informations sur le débogueur, consultez [Débogage dans Visual Studio](../debugger/debugging-in-visual-studio.md).  
   
- ![Retour au début](~/docs/debugger/media/pcs_backtotop.png "PCS_BackToTop") [Sommaire](#BKMK_Contents)  
+ ![Retour au début](~/debugger/media/pcs_backtotop.png "PCS_BackToTop") [Sommaire](#BKMK_Contents)  
   
 ###  <a name="BKMK_Diagnose_test_method_performance_issues"></a> Diagnostiquer les problèmes de performances de méthode de test  
  Pour diagnostiquer la raison pour laquelle une méthode de test est beaucoup trop longue, sélectionnez la méthode dans l'Explorateur de tests, puis choisissez Profil dans le menu contextuel. Consultez [Explorateur de performances](../profiling/performance-explorer.md).  
@@ -302,7 +302,7 @@ FullName:"MyClass" - FullName:"PerfTest"
   
  Pour plus d’informations, consultez [Utilisation de la couverture du code pour déterminer la quantité de code testé](../test/using-code-coverage-to-determine-how-much-code-is-being-tested.md).  
   
- ![Retour au début](~/docs/debugger/media/pcs_backtotop.png "PCS_BackToTop") [Sommaire](#BKMK_Contents)  
+ ![Retour au début](~/debugger/media/pcs_backtotop.png "PCS_BackToTop") [Sommaire](#BKMK_Contents)  
   
 ##  <a name="BKMK_External_resources"></a> Ressources externes  
   

@@ -73,10 +73,10 @@ Boîte de dialogue Nouveau projet de test
   
 3.  Recherchez la méthode `TestMethod1()` et renommez-la `DefaultAutomobileIsInitializedCorrectly()`. Dans cette méthode, créez une instance d’une classe nommée `Automobile`, comme indiqué dans les illustrations suivantes. Un soulignement ondulé indique une erreur de compilation et une balise active apparaît sous le nom de type. L’emplacement exact de la balise active varie selon que vous utilisez [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] ou [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)].  
   
-     ![Soulignement d’étiquette active en Visual Basic](~/docs/ide/media/genclass_underlinevb.png "GenClass_UnderlineVB")  
+     ![Soulignement d’étiquette active en Visual Basic](~/ide/media/genclass_underlinevb.png "GenClass_UnderlineVB")  
 Visual Basic  
   
-     ![Soulignement d’étiquette active en C&#35;](~/docs/ide/media/genclass_underline.png "GenClass_Underline")  
+     ![Soulignement d’étiquette active en C&#35;](~/ide/media/genclass_underline.png "GenClass_Underline")  
 Visual C#  
   
 4.  Placez le pointeur de la souris sur la balise active pour afficher un message d’erreur indiquant qu’aucun type nommé `Automobile` n’est encore défini. Cliquez sur la balise active ou appuyez sur Ctrl+. (Ctrl+point) pour ouvrir le menu contextuel Générer à partir de l’utilisation, comme indiqué dans les illustrations suivantes.  

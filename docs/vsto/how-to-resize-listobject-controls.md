@@ -39,7 +39,7 @@ caps.handback.revision: 46
   
  Pour plus d’informations sur les contrôles <xref:Microsoft.Office.Tools.Excel.ListObject>, consultez [ListObject, contrôle](../vsto/listobject-control.md).  
   
- ![lien vers la vidéo](~/docs/data-tools/media/playvideo.gif "lien vers la vidéo") Pour obtenir une démonstration vidéo connexe, consultez [Comment ajouter des colonnes à un objet de liste lié aux données au moment de l’exécution ?](http://go.microsoft.com/fwlink/?LinkID=130318).  
+ ![lien vers la vidéo](~/data-tools/media/playvideo.gif "lien vers la vidéo") Pour obtenir une démonstration vidéo connexe, consultez [Comment ajouter des colonnes à un objet de liste lié aux données au moment de l’exécution ?](http://go.microsoft.com/fwlink/?LinkID=130318).  
   
 ##  <a name="designtime"></a> Redimensionnement d’un contrôle ListObject au moment du design  
  Pour redimensionner une liste, vous pouvez cliquer sur l’une des poignées de redimensionnement et la faire glisser, ou vous pouvez redéfinir sa taille dans la boîte de dialogue **Redimensionner la liste**.  

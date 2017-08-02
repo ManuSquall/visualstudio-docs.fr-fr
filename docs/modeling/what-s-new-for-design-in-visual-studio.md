@@ -44,17 +44,17 @@ ms.lasthandoff: 02/22/2017
 Suppression des dépendances indésirables est une partie importante de la gestion de la dette technique.
 Validation en direct de dépendances est maintenant inclus, fournissant des informations précises sur les problèmes et bénéficiant pleinement parti des nouvelles fonctionnalités dans la liste d’erreurs et l’éditeur.
 
-![Validation de dépendance dynamique en action](~/docs/modeling/media/dep-validation-whatsnew-01.png)
+![Validation de dépendance dynamique en action](~/modeling/media/dep-validation-whatsnew-01.png)
 
 L’expérience de création a changé pour effectuer la validation de dépendance plus visibles et plus accessibles, modification de la terminologie à partir de « Diagramme de couche » à « Diagramme de dépendance ».
 
 Le **Architecture** menu contient à présent une commande pour créer directement un diagramme de dépendances :
 
-![Élément de dépendance en direct sur le menu d’Architecture](~/docs/modeling/media/dep-validation-whatsnew-02.png)
+![Élément de dépendance en direct sur le menu d’Architecture](~/modeling/media/dep-validation-whatsnew-02.png)
 
 ... et les noms des propriétés d’une couche dans un diagramme de dépendances et leurs descriptions, ont été modifiés pour les rendre plus significatives :
 
-![Noms de propriété de dépendance Live mis à jour](~/docs/modeling/media/dep-validation-whatsnew-03.png)
+![Noms de propriété de dépendance Live mis à jour](~/modeling/media/dep-validation-whatsnew-03.png)
 
 Vous consultez maintenant l’impact de vos modifications immédiatement dans les résultats d’analyse du code en cours dans la solution chaque fois que vous enregistrez le diagramme. Vous n’êtes pas obligé d’attendre plus longtemps l’achèvement de la commande « Dépendances de validation ».
 

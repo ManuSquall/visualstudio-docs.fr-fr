@@ -36,7 +36,7 @@ Cette procédure pas à pas montre comment utiliser les outils Graphics Diagnost
   
  Dans ce scénario, quand l’application est exécutée pour être testée, l’arrière\-plan est affiché comme prévu, mais l’un des objets ne s’affiche pas. À l’aide de Graphics Diagnostics, vous capturez le problème dans un journal de graphisme pour déboguer l’application. Le problème se présente ainsi dans l'application :  
   
- ![L’objet n’est pas visible.](~/docs/debugger/graphics/media/gfx_diag_demo_missing_object_shader_problem.png "gfx\_diag\_demo\_missing\_object\_shader\_problem")  
+ ![L’objet n’est pas visible.](~/debugger/graphics/media/gfx_diag_demo_missing_object_shader_problem.png "gfx\_diag\_demo\_missing\_object\_shader\_problem")  
   
 ## Examen  
  À l’aide des outils Graphics Diagnostics, vous pouvez charger le fichier journal de graphisme pour examiner les frames capturés pendant le test.  
@@ -68,7 +68,7 @@ Cette procédure pas à pas montre comment utiliser les outils Graphics Diagnost
   
 4.  Arrêtez quand vous atteignez l’appel de dessin qui correspond à l’objet manquant. Dans ce scénario, la fenêtre **Étapes de canalisation Graphics** indique que la géométrie a été émise vers le GPU \(indiqué par la présence de l’aperçu Assembleur d’entrée\), mais elle n’apparaît pas dans la cible de rendu à cause d’une erreur survenue à l’étape du nuanceur de sommets \(indiquée par l’aperçu Nuanceur de sommets\) :  
   
-     ![Événement DrawIndexed et son effet sur le pipeline](~/docs/debugger/graphics/media/gfx_diag_demo_missing_object_shader_step_2.png "gfx\_diag\_demo\_missing\_object\_shader\_step\_2")  
+     ![Événement DrawIndexed et son effet sur le pipeline](~/debugger/graphics/media/gfx_diag_demo_missing_object_shader_step_2.png "gfx\_diag\_demo\_missing\_object\_shader\_step\_2")  
   
  Une fois que vous avez constaté que l’application a effectué un appel de dessin pour la géométrie de l’objet manquant et que vous avez découvert que le problème se produit à l’étape du nuanceur de sommets, vous pouvez utiliser le débogueur HLSL pour examiner le nuanceur de sommets et comprendre ce qui s’est passé avec la géométrie de l’objet. Le débogueur HLSL vous permet d’examiner l’état des variables HLSL pendant l’exécution, d’exécuter pas à pas le code HLSL et de définir des points d’arrêt pour vous aider à diagnostiquer le problème.  
   
@@ -80,19 +80,19 @@ Cette procédure pas à pas montre comment utiliser les outils Graphics Diagnost
   
 3.  La première modification apportée à `output` est l’écriture du membre `worldPos`.  
   
-     ![La valeur « output.worldPos » semble raisonnable](~/docs/debugger/graphics/media/gfx_diag_demo_missing_object_shader_step_4.png "gfx\_diag\_demo\_missing\_object\_shader\_step\_4")  
+     ![La valeur « output.worldPos » semble raisonnable](~/debugger/graphics/media/gfx_diag_demo_missing_object_shader_step_4.png "gfx\_diag\_demo\_missing\_object\_shader\_step\_4")  
   
      Comme sa valeur vous semble correcte, vous continuez l’exécution du code pas à pas jusqu’à la ligne suivante qui modifie `output`.  
   
 4.  La modification suivante apportée à `output` est l’écriture du membre `pos`.  
   
-     ![La valeur de « output.pos » a été remise à zéro](~/docs/debugger/graphics/media/gfx_diag_demo_missing_object_shader_step_5.png "gfx\_diag\_demo\_missing\_object\_shader\_step\_5")  
+     ![La valeur de « output.pos » a été remise à zéro](~/debugger/graphics/media/gfx_diag_demo_missing_object_shader_step_5.png "gfx\_diag\_demo\_missing\_object\_shader\_step\_5")  
   
      Cette fois, la valeur du membre `pos`, composée uniquement de zéros, vous semble douteuse. Vous voulez alors essayer de comprendre pourquoi `output.pos` a cette valeur composée de zéros.  
   
 5.  Vous remarquez que `output.pos` prend sa valeur d’une variable nommée `temp`. Sur la ligne précédente, vous constatez que la valeur de `temp` est le résultat de la multiplication de sa valeur précédente par une constante nommée `projection`. Vous supposez que la valeur douteuse de `temp` est le résultat de cette multiplication. Quand vous placez le pointeur sur `projection`, vous voyez que sa valeur n’est composée que de zéros, elle aussi.  
   
-     ![La matrice de projection contient une transformation incorrecte](~/docs/debugger/graphics/media/gfx_diag_demo_missing_object_shader_step_6.png "gfx\_diag\_demo\_missing\_object\_shader\_step\_6")  
+     ![La matrice de projection contient une transformation incorrecte](~/debugger/graphics/media/gfx_diag_demo_missing_object_shader_step_6.png "gfx\_diag\_demo\_missing\_object\_shader\_step\_6")  
   
      Dans ce scénario, l’examen révèle que la valeur douteuse de `temp` est probablement le résultat de la multiplication par `projection`. De plus, comme `projection` est une constante censée contenir une matrice de projection, vous savez qu’elle ne doit pas contenir que des zéros.  
   
@@ -104,7 +104,7 @@ Cette procédure pas à pas montre comment utiliser les outils Graphics Diagnost
   
 2.  Remontez la pile des appels dans le code source de votre application. Dans la fenêtre **Pile des appels des événements Graphics**, choisissez le premier appel en haut pour voir si la mémoire tampon constante est remplie à cet endroit. Si ce n’est pas le cas, continuez de remonter la pile des appels jusqu’à ce que vous trouviez l’endroit où elle est remplie. Dans ce scénario, vous découvrez que la mémoire tampon constante est remplie, via l’API Direct3D `UpdateSubresource`, plus haut dans la pile des appels dans une fonction nommée `MarbleMaze::Render`, et que sa valeur provient d’un objet mémoire tampon constante nommé `m_marbleConstantBufferData` :  
   
-     ![Code qui définit la mémoire tampon constante de l’objet](~/docs/debugger/graphics/media/gfx_diag_demo_missing_object_shader_step_7.png "gfx\_diag\_demo\_missing\_object\_shader\_step\_7")  
+     ![Code qui définit la mémoire tampon constante de l’objet](~/debugger/graphics/media/gfx_diag_demo_missing_object_shader_step_7.png "gfx\_diag\_demo\_missing\_object\_shader\_step\_7")  
   
     > [!TIP]
     >  Si vous déboguez simultanément votre application, vous pouvez définir un point d’arrêt à cet emplacement, qui sera atteint lorsque le frame suivant sera affiché. En examinant ensuite les membres de `m_marbleConstantBufferData`, vous constatez que le membre `projection` a une valeur composée uniquement de zéros quand la mémoire tampon constante est remplie.  
@@ -119,12 +119,12 @@ Cette procédure pas à pas montre comment utiliser les outils Graphics Diagnost
   
  Après avoir trouvé où `m_marbleConstantBufferData.projection` est défini, vous pouvez examiner le code source environnant pour déterminer l’origine de la valeur incorrecte. Dans ce scénario, vous constatez que la valeur de `m_marbleConstantBufferData.projection` est définie sur une variable locale nommée `projection` avant son initialisation sur une valeur fournie par le code `m_camera->GetProjection(&projection);` sur la ligne suivante.  
   
- ![La projection marble est définie avant l’initialisation](~/docs/debugger/graphics/media/gfx_diag_demo_missing_object_shader_step_9.png "gfx\_diag\_demo\_missing\_object\_shader\_step\_9")  
+ ![La projection marble est définie avant l’initialisation](~/debugger/graphics/media/gfx_diag_demo_missing_object_shader_step_9.png "gfx\_diag\_demo\_missing\_object\_shader\_step\_9")  
   
  Pour résoudre le problème, déplacez la ligne de code qui définit la valeur de `m_marbleConstantBufferData.projection` après la ligne qui initialise la valeur de la variable locale `projection`.  
   
- ![Code source C&#43;&#43; corrigé](~/docs/debugger/graphics/media/gfx_diag_demo_missing_object_shader_step_10.png "gfx\_diag\_demo\_missing\_object\_shader\_step\_10")  
+ ![Code source C&#43;&#43; corrigé](~/debugger/graphics/media/gfx_diag_demo_missing_object_shader_step_10.png "gfx\_diag\_demo\_missing\_object\_shader\_step\_10")  
   
  Après avoir corrigé le code, vous pouvez le régénérer, puis réexécuter l’application pour vérifier que le problème d’affichage est résolu :  
   
- ![L’objet est désormais affiché.](~/docs/debugger/graphics/media/gfx_diag_demo_missing_object_shader_resolution.png "gfx\_diag\_demo\_missing\_object\_shader\_resolution")
+ ![L’objet est désormais affiché.](~/debugger/graphics/media/gfx_diag_demo_missing_object_shader_resolution.png "gfx\_diag\_demo\_missing\_object\_shader\_resolution")

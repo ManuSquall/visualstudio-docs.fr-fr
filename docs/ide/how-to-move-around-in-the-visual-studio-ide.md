@@ -74,7 +74,7 @@ L’environnement de développement intégré (IDE) a été conçu pour vous per
   
  Le **Navigateur IDE** fonctionne de façon très similaire au commutateur d’applications Windows. Il n'est pas disponible à partir des menus et il n'est accessible qu'à l'aide des touches de raccourci. Vous pouvez utiliser l’une des deux commandes disponibles pour accéder au **Navigateur IDE** (illustré ci-dessous) afin de parcourir des fichiers, selon l’ordre de défilement de votre choix.  
   
- ![Navigateur de l’IDE Visual Studio](~/docs/ide/media/vs2015_ide_navigator.png "VS2015_IDE_Navigator")  
+ ![Navigateur de l’IDE Visual Studio](~/ide/media/vs2015_ide_navigator.png "VS2015_IDE_Navigator")  
   
  `Window.PreviousDocumentWindowNav` vous permet de passer au fichier ayant le plus récemment fait l'objet d'un accès, tandis que `Window.NextDocumentWindowNav` vous permet de vous déplacer dans le sens contraire. Les paramètres de développement généraux assignent Ctrl + Maj + Tab à `Window.PreviousDocumentWindowNav` et Ctrl + Tab à `Window.NextDocumentWindowNav`.  
   

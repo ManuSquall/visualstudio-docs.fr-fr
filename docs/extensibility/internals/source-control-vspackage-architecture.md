@@ -40,7 +40,7 @@ Un package de contrôle de code source est un VSPackage qui utilise les services
   
  Lorsqu'un package de contrôle de code source est le package actif, en revanche, le stub de contrôle de code source communique directement avec le package à l'aide de les interfaces de package de contrôle de code source de [!INCLUDE[vsipsdk](../../extensibility/includes/vsipsdk_md.md)] .  Le package de contrôle de code source est responsable de l'hébergement de son propre contrôle de code source interface utilisateur.  
   
- ![Graphique de l'architecture des contrôles de code source](~/docs/extensibility/internals/media/vsipsccarch.gif "VSIPSCCArch")  
+ ![Graphique de l'architecture des contrôles de code source](~/extensibility/internals/media/vsipsccarch.gif "VSIPSCCArch")  
   
  Pour un package de contrôle de code source, [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] ne fournit pas le code du contrôle de code source ou d'une API pour l'intégration.  Comparons \-la à l'approche présentées dans [Création d'un contrôle de Source de plug\-in](../../extensibility/internals/creating-a-source-control-plug-in.md) où le plug\-in contrôle de code source doit implémenter un ensemble rigide de fonctions et de rappels.  
   

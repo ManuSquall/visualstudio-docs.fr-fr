@@ -50,7 +50,7 @@ ed## Pour déverrouiller Visual Studio à l'aide d'un abonnement en ligne
 ### <a name="update-stale-licenses"></a>Mettre à jour des licences obsolètes  
  Vous avez peut-être vu le message suivant indiquant que votre licence est sur le point d’expirer dans Visual Studio « Votre licence est sur le point d'expirer et doit être mise à jour. »
   
- ![Message d’expiration de licence Visual Studio](~/docs/ide/media/vs2017_stale-license.png)  
+ ![Message d’expiration de licence Visual Studio](~/ide/media/vs2017_stale-license.png)  
   
  Ce message indique que, même si votre abonnement est peut-être toujours valide, le jeton de licence que Visual Studio utilise pour maintenir votre abonnement à jour n’a pas été actualisé et est devenu obsolète en raison de l’une des raisons suivantes :  
   

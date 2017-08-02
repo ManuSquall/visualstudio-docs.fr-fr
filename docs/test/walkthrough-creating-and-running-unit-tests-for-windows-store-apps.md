@@ -147,7 +147,7 @@ Visual Studio inclut la prise en charge des tests unitaires des applications [!I
     >   
     >  De plus, vous pouvez choisir **Déboguer les tests sélectionnés**, **Ouvrir un test**, puis utiliser l'option **Propriétés** .  
     >   
-    >  ![Explorateur de tests unitaires &#45; menu contextuel de test unitaire](~/docs/test/media/unit_test_win8_unittestexplorer_contextmenu.png "Unit_Test_Win8_UnitTestExplorer_ContextMenu")  
+    >  ![Explorateur de tests unitaires &#45; menu contextuel de test unitaire](~/test/media/unit_test_win8_unittestexplorer_contextmenu.png "Unit_Test_Win8_UnitTestExplorer_ContextMenu")  
   
      Le test unitaire s'exécute. Une fois l’opération terminée, l’Explorateur de tests affiche l’état du test, la durée calendaire et fournit un lien vers la source.  
   

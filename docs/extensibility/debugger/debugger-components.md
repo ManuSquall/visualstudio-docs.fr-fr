@@ -37,7 +37,7 @@ Le débogueur de [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] es
   
  Le diagramme suivant illustre la relation entre ces éléments du débogueur Visual Studio.  
   
- ![Vue d'ensemble du débogage de composants](~/docs/extensibility/debugger/media/dbugcompovrview.gif "DBugCompOvrview")  
+ ![Vue d'ensemble du débogage de composants](~/extensibility/debugger/media/dbugcompovrview.gif "DBugCompOvrview")  
   
 ## Dans cette section  
  [Déboguer le Package](../../extensibility/debugger/debug-package.md)  

@@ -52,7 +52,7 @@ Le moyen le plus simple de personnaliser un objet est d’en définir les propri
 ##  <a name="Brushes"></a> Pinceaux : modifier l’apparence d’un objet  
  Appliquez un pinceau à un objet si vous voulez modifier son apparence.  
   
- **Regardez une courte vidéo :** ![Configurer les fonctionnalités installées](~/docs/designers/media/bldadminconsoleinitialconfigicon.PNG "BldAdminConsoleInitialConfigIcon") [Brushes Editor (Éditeur de pinceaux)](http://www.popscreen.com/v/6A4mO/Microsoft-Expression-Blend-The-Brushes-Editor).  
+ **Regardez une courte vidéo :** ![Configurer les fonctionnalités installées](~/designers/media/bldadminconsoleinitialconfigicon.PNG "BldAdminConsoleInitialConfigIcon") [Brushes Editor (Éditeur de pinceaux)](http://www.popscreen.com/v/6A4mO/Microsoft-Expression-Blend-The-Brushes-Editor).  
   
 ### <a name="paint-a-repeating-image-or-pattern-on-an-object"></a>Peindre une image ou un motif qui se répète sur un objet  
  Vous pouvez peindre une image ou un motif qui se répète sur un objet à l’aide d’un *pinceau mosaïque*.  
@@ -61,17 +61,17 @@ Le moyen le plus simple de personnaliser un objet est d’en définir les propri
   
  Vous pouvez créer un pinceau d'image à l'aide d'une image. Les illustrations suivantes montrent le pinceau d'image, le pinceau d'image en mosaïque et le pinceau d'image retourné.  
   
- ![](~/docs/designers/media/81f84f56-906d-456b-8288-d77da1e01e31.png "81f84f56-906d-456b-8288-d77da1e01e31") ![](~/docs/designers/media/d3782ca8-64da-47a4-a095-c6cdd0fa47a2.png "d3782ca8-64da-47a4-a095-c6cdd0fa47a2") ![](~/docs/designers/media/38ae3691-f3f1-4a1e-82ca-c7fa164bf56e.png "38ae3691-f3f1-4a1e-82ca-c7fa164bf56e")  
+ ![](~/designers/media/81f84f56-906d-456b-8288-d77da1e01e31.png "81f84f56-906d-456b-8288-d77da1e01e31") ![](~/designers/media/d3782ca8-64da-47a4-a095-c6cdd0fa47a2.png "d3782ca8-64da-47a4-a095-c6cdd0fa47a2") ![](~/designers/media/38ae3691-f3f1-4a1e-82ca-c7fa164bf56e.png "38ae3691-f3f1-4a1e-82ca-c7fa164bf56e")  
   
  Vous pouvez créer un pinceau de dessin à l'aide d'un dessin vectoriel, tel qu'un trait ou une forme. Les illustrations suivantes montrent le pinceau de dessin, le pinceau de dessin en mosaïque et le pinceau de dessin retourné.  
   
- ![](~/docs/designers/media/197666ac-ef57-4c5c-9779-669e991a00a5.png "197666ac-ef57-4c5c-9779-669e991a00a5") ![](~/docs/designers/media/ba09cda3-4cee-40ba-b3d4-edc032158bdc.png "ba09cda3-4cee-40ba-b3d4-edc032158bdc") ![](~/docs/designers/media/15bf6021-620c-4490-9eae-086153d3f14f.png "15bf6021-620c-4490-9eae-086153d3f14f")  
+ ![](~/designers/media/197666ac-ef57-4c5c-9779-669e991a00a5.png "197666ac-ef57-4c5c-9779-669e991a00a5") ![](~/designers/media/ba09cda3-4cee-40ba-b3d4-edc032158bdc.png "ba09cda3-4cee-40ba-b3d4-edc032158bdc") ![](~/designers/media/15bf6021-620c-4490-9eae-086153d3f14f.png "15bf6021-620c-4490-9eae-086153d3f14f")  
   
  Vous pouvez créer un pinceau visuel à partir d'un contrôle, tel qu'un bouton. Les illustrations suivantes montrent le pinceau visuel et le pinceau visuel en mosaïque.  
   
- ![](~/docs/designers/media/fb6c90e0-153c-48fe-b563-e601beac6227.png "fb6c90e0-153c-48fe-b563-e601beac6227") ![](~/docs/designers/media/e261b99f-7d8f-4d91-bc84-19c7beccc255.png "e261b99f-7d8f-4d91-bc84-19c7beccc255")  
+ ![](~/designers/media/fb6c90e0-153c-48fe-b563-e601beac6227.png "fb6c90e0-153c-48fe-b563-e601beac6227") ![](~/designers/media/e261b99f-7d8f-4d91-bc84-19c7beccc255.png "e261b99f-7d8f-4d91-bc84-19c7beccc255")  
   
- **Regardez une courte vidéo :** ![Configurer les fonctionnalités installées](~/docs/designers/media/bldadminconsoleinitialconfigicon.PNG "BldAdminConsoleInitialConfigIcon") [Tile Brushes (Pinceaux mosaïques)](http://www.popscreen.com/v/6A4iM/Microsoft-Expression-Blend-Tile-Brushes).  
+ **Regardez une courte vidéo :** ![Configurer les fonctionnalités installées](~/designers/media/bldadminconsoleinitialconfigicon.PNG "BldAdminConsoleInitialConfigIcon") [Tile Brushes (Pinceaux mosaïques)](http://www.popscreen.com/v/6A4iM/Microsoft-Expression-Blend-Tile-Brushes).  
   
 ##  <a name="Styles"></a> Styles et modèles : créer une apparence cohérente pour les contrôles  
  Vous pouvez concevoir l’apparence et le comportement d’un même contrôle et appliquer cette conception à d’autres contrôles pour vous éviter d’avoir à les gérer un à un.  
@@ -87,7 +87,7 @@ Le moyen le plus simple de personnaliser un objet est d’en définir les propri
   
  Si vous voulez baser votre modèle sur un contrôle existant, sélectionnez un objet sur la planche graphique. Ensuite, en haut de la planche graphique, choisissez successivement le bouton de la barre de navigation, **Modifier le modèle**, puis **Modifier une copie** ou **Créer vide**.  
   
- ![](~/docs/designers/media/5ebdb33f-aad2-4c10-a328-5e8b04c56a36.png "5ebdb33f-aad2-4c10-a328-5e8b04c56a36")  
+ ![](~/designers/media/5ebdb33f-aad2-4c10-a328-5e8b04c56a36.png "5ebdb33f-aad2-4c10-a328-5e8b04c56a36")  
   
  Pour créer un style, sélectionnez l’objet puis, dans le menu **Objet**, choisissez **Modifier le style**, puis **Modifier une copie** ou **Créer vide**.  
   
@@ -99,40 +99,40 @@ Le moyen le plus simple de personnaliser un objet est d’en définir les propri
   
  Dans la boîte de dialogue **Créer une ressource de style**, vous pouvez soit nommer le style ou le modèle pour pouvoir l’utiliser ultérieurement, soit appliquer le style ou le modèle à tous les contrôles de ce type.  
   
- ![](~/docs/designers/media/4818ee6a-ce60-4b79-91c8-3b1871829eea.png "4818ee6a-ce60-4b79-91c8-3b1871829eea")  
+ ![](~/designers/media/4818ee6a-ce60-4b79-91c8-3b1871829eea.png "4818ee6a-ce60-4b79-91c8-3b1871829eea")  
   
 > [!NOTE]
 >  Vous ne pouvez pas créer de styles ou de modèles pour chaque type de contrôle. Si un contrôle ne les prend pas en charge, le bouton de la barre de navigation ne s’affiche pas au-dessus de la planche graphique.  
 >   
 >  Pour revenir à la portée d’édition de votre document principal, cliquez sur **Rétablir l’étendue à** ![](../designers/media/55844eb3-ed98-4f20-aa66-a6f5b23eeb2b.png "55844eb3-ed98-4f20-aa66-a6f5b23eeb2b").  
 >   
->  ![](~/docs/designers/media/4a5612e1-7a28-4587-b870-0fe7112ec2ad.png "4a5612e1-7a28-4587-b870-0fe7112ec2ad")  
+>  ![](~/designers/media/4a5612e1-7a28-4587-b870-0fe7112ec2ad.png "4a5612e1-7a28-4587-b870-0fe7112ec2ad")  
   
- **Regardez une courte vidéo :** ![Configurer les fonctionnalités installées](~/docs/designers/media/bldadminconsoleinitialconfigicon.PNG "BldAdminConsoleInitialConfigIcon") [Create a style (Créer un style)](http://www.microsoft.com/showcase/details.aspx?uuid=9b8e86e2-8e90-4d61-81af-fa5b5afb3e95).  
+ **Regardez une courte vidéo :** ![Configurer les fonctionnalités installées](~/designers/media/bldadminconsoleinitialconfigicon.PNG "BldAdminConsoleInitialConfigIcon") [Create a style (Créer un style)](http://www.microsoft.com/showcase/details.aspx?uuid=9b8e86e2-8e90-4d61-81af-fa5b5afb3e95).  
   
- **Regardez une courte vidéo :** ![Configurer les fonctionnalités installées](~/docs/designers/media/bldadminconsoleinitialconfigicon.PNG "BldAdminConsoleInitialConfigIcon") [Creating a Control Template in Expression Blend (Créer un modèle de contrôle dans Expression Blend)](http://msdn.microsoft.com/expression/cc263912.aspx).  
+ **Regardez une courte vidéo :** ![Configurer les fonctionnalités installées](~/designers/media/bldadminconsoleinitialconfigicon.PNG "BldAdminConsoleInitialConfigIcon") [Creating a Control Template in Expression Blend (Créer un modèle de contrôle dans Expression Blend)](http://msdn.microsoft.com/expression/cc263912.aspx).  
   
 ### <a name="apply-a-style-or-template-to-a-control"></a>Appliquer un style ou un modèle à un contrôle  
  Cliquez avec le bouton droit sur un objet dans le panneau [Objets et chronologie](http://msdn.microsoft.com/en-us/135a5a5e-ec6d-4f38-8827-60e284cd5f57), choisissez **Modifier un modèle**, puis **Appliquer la ressource**.  
   
- ![](~/docs/designers/media/dc12debc-7711-47d9-84ce-10322a384397.png "dc12debc-7711-47d9-84ce-10322a384397")  
+ ![](~/designers/media/dc12debc-7711-47d9-84ce-10322a384397.png "dc12debc-7711-47d9-84ce-10322a384397")  
   
 ### <a name="restore-the-default-style-or-template-of-a-control"></a>Restaurer le style ou le modèle par défaut d'un contrôle  
- Sélectionnez le contrôle puis, dans le panneau [Propriétés](http://msdn.microsoft.com/en-us/135a5a5e-ec6d-4f38-8827-60e284cd5f57), recherchez la propriété **Style** ou **Modèle**. Cliquez ensuite sur **Options avancées** ![](~/docs/designers/media/12e06962-5d8a-480d-a837-e06b84c545bb.png "12e06962-5d8a-480d-a837-e06b84c545bb"), puis sur **Réinitialiser** dans le menu contextuel.  
+ Sélectionnez le contrôle puis, dans le panneau [Propriétés](http://msdn.microsoft.com/en-us/135a5a5e-ec6d-4f38-8827-60e284cd5f57), recherchez la propriété **Style** ou **Modèle**. Cliquez ensuite sur **Options avancées** ![](~/designers/media/12e06962-5d8a-480d-a837-e06b84c545bb.png "12e06962-5d8a-480d-a837-e06b84c545bb"), puis sur **Réinitialiser** dans le menu contextuel.  
   
 ##  <a name="Visual"></a> États visuels : modifier l’apparence d’un contrôle en fonction de son état  
  Les contrôles peuvent avoir des apparences visuelles différentes en fonction des interactions de l'utilisateur. Par exemple, vous pouvez faire en sorte qu'un bouton devienne vert quand un utilisateur clique dessus ou qu'il exécute une animation. Vous pouvez raccourcir ou allonger la durée entre les états visuels à l'aide de transitions.  
   
- ![](~/docs/designers/media/a95c671a-5639-40b9-83db-1e6b214330d5.png "a95c671a-5639-40b9-83db-1e6b214330d5")  
+ ![](~/designers/media/a95c671a-5639-40b9-83db-1e6b214330d5.png "a95c671a-5639-40b9-83db-1e6b214330d5")  
   
- **Regardez une courte vidéo :** ![Configurer les fonctionnalités installées](~/docs/designers/media/bldadminconsoleinitialconfigicon.PNG "BldAdminConsoleInitialConfigIcon") [Manage the state of your WPF controls (Gérer l’état de vos contrôles WPF)](https://www.youtube.com/watch?v=m0PlkF5i6uw).  
+ **Regardez une courte vidéo :** ![Configurer les fonctionnalités installées](~/designers/media/bldadminconsoleinitialconfigicon.PNG "BldAdminConsoleInitialConfigIcon") [Manage the state of your WPF controls (Gérer l’état de vos contrôles WPF)](https://www.youtube.com/watch?v=m0PlkF5i6uw).  
   
 ##  <a name="Resources"></a> Ressources : créer des couleurs, des styles et des modèles et les réutiliser ultérieurement  
  Vous pouvez convertir pratiquement tous les éléments de votre projet en ressource. Une ressource consiste simplement en un objet que vous pouvez réutiliser à différents endroits dans votre application. Par exemple, vous pouvez créer une couleur, en faire une ressource, puis appliquer cette couleur à plusieurs objets. Pour modifier la couleur de tous ces objets, il vous suffit de modifier la ressource de couleur.  
   
- ![](~/docs/designers/media/89203705-cf66-46e0-b153-52a23cd744f7.png "89203705-cf66-46e0-b153-52a23cd744f7") ![](~/docs/designers/media/6bff8b19-3cd5-41a0-bbf9-ff65532d5aae.png "6bff8b19-3cd5-41a0-bbf9-ff65532d5aae")  
+ ![](~/designers/media/89203705-cf66-46e0-b153-52a23cd744f7.png "89203705-cf66-46e0-b153-52a23cd744f7") ![](~/designers/media/6bff8b19-3cd5-41a0-bbf9-ff65532d5aae.png "6bff8b19-3cd5-41a0-bbf9-ff65532d5aae")  
   
- **Regardez une courte vidéo :** ![Configurer les fonctionnalités installées](~/docs/designers/media/bldadminconsoleinitialconfigicon.PNG "BldAdminConsoleInitialConfigIcon") [A brief touch on resources (Bref survol des ressources)](http://www.popscreen.com/v/6A4k7/Microsoft-Expression-Blend-Brief-Touch-on-Resources).  
+ **Regardez une courte vidéo :** ![Configurer les fonctionnalités installées](~/designers/media/bldadminconsoleinitialconfigicon.PNG "BldAdminConsoleInitialConfigIcon") [A brief touch on resources (Bref survol des ressources)](http://www.popscreen.com/v/6A4k7/Microsoft-Expression-Blend-Brief-Touch-on-Resources).  
   
 ## <a name="see-also"></a>Voir aussi  
  [Création d’une interface utilisateur à l’aide de Blend pour Visual Studio](../designers/creating-a-ui-by-using-blend-for-visual-studio.md)

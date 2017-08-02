@@ -99,7 +99,7 @@ Avec cette procédure pas à pas, vous allez vous familiariser avec la plupart d
   
      Vous pouvez également taper **Nouveau projet** dans la zone **Lancement rapide** pour effectuer la même opération.  
   
-     ![Dans la zone de lancement rapide, indiquez "nouveau projet"](~/docs/ide/media/exploreide-quicklaunchnewprojectsmall.png "ExploreIDE-QuickLaunchNewProjectsmall")  
+     ![Dans la zone de lancement rapide, indiquez "nouveau projet"](~/ide/media/exploreide-quicklaunchnewprojectsmall.png "ExploreIDE-QuickLaunchNewProjectsmall")  
   
 2.  Choisissez le modèle Application WPF Visual Basic ou Application WPF Visual C# en sélectionnant dans le volet gauche **Installé**, **Modèles**, **Visual C#**, **Windows**, par exemple, puis Application WPF dans le volet du milieu.  Nommez le projet HelloWPFApp en bas de la boîte de dialogue Nouveau projet.  
   
@@ -113,7 +113,7 @@ Avec cette procédure pas à pas, vous allez vous familiariser avec la plupart d
   
  Figure 5 : Éléments du projet  
   
- ![Explorateur de solutions avec les fichiers HelloWPFApp chargés](~/docs/ide/media/exploreide-hellowpfappfiles.png "ExploreIDE-HelloWPFAppFiles")  
+ ![Explorateur de solutions avec les fichiers HelloWPFApp chargés](~/ide/media/exploreide-hellowpfappfiles.png "ExploreIDE-HelloWPFAppFiles")  
   
  Après avoir créé le projet, vous pouvez le personnaliser. Dans la fenêtre **Propriétés** (disponible dans le menu **Affichage** ), vous pouvez afficher et modifier les options des éléments du projet, des contrôles et des autres éléments d'une application. À l'aide des propriétés d'un projet et des pages de propriétés, vous pouvez afficher et modifier les options des projets et des solutions.  
   
@@ -121,7 +121,7 @@ Avec cette procédure pas à pas, vous allez vous familiariser avec la plupart d
   
 1.  Dans la procédure suivante, vous donnerez à MainWindow un nom plus spécifique. Dans l' **Explorateur de solutions**, sélectionnez MainWindow.xaml. Vous devez voir la fenêtre **Propriétés** mais, si tel n’est pas le cas, choisissez le menu **Affichage** et l’élément **Fenêtre Propriétés**. Remplacez la propriété **Nom de fichier** par `Greetings.xaml`.  
   
-     ![Fenêtre Propriétés avec Nom de fichier en surbrillance](~/docs/ide/media/exploreide-filenameinpropertieswindow.png "ExploreIDE-FilenameinPropertiesWindow")  
+     ![Fenêtre Propriétés avec Nom de fichier en surbrillance](~/ide/media/exploreide-filenameinpropertieswindow.png "ExploreIDE-FilenameinPropertiesWindow")  
   
      L'**Explorateur de solutions** indique que le nom du fichier est maintenant Greetings.xaml. Si vous développez le nœud MainWindow.xaml (en plaçant le focus dans le nœud et en appuyant sur la touche flèche droite), vous voyez que le nom de MainWindow.xaml.vb ou MainWindow.xaml.cs est désormais Greetings.xaml.vb ou Greetings.xaml.cs. Ce fichier de code est imbriqué sous le nœud de fichier .xaml pour montrer qu'ils sont étroitement liés entre eux.  
   

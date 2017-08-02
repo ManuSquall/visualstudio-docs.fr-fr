@@ -63,7 +63,7 @@ Si vous disposez uniquement de Visual Studio Shell, qui est fourni avec d’autr
 1. Exécutez le programme d’installation de Visual Studio.
 2. Sélectionnez la charge de travail **Applications de science et analyse des données** :
 
-    ![Applications de science et analyse des données dans VS2017](~/docs/rtvs/media/installation-data-science-workload.png)
+    ![Applications de science et analyse des données dans VS2017](~/rtvs/media/installation-data-science-workload.png)
 
 3. Définissez toute option supplémentaire à droite sous le même nom de charge de travail. Notez que, par défaut, cette charge de travail prend en charge F# et Python. Pour R, vous devez au minimum sélectionner **Prise en charge du langage R**, **Prise en charge du runtime pour les outils de développement R** et **Microsoft R Client**.
 

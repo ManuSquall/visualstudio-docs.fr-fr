@@ -92,7 +92,7 @@ Les commandes de menu **Créer IntelliTest** et **Exécuter IntelliTest** :
   
      Passez en revue les avertissements et décidez de la marche à suivre.  
   
-     ![Afficher les avertissements](~/docs/test/media/pexviewwarning.png "PEXViewWarning")  
+     ![Afficher les avertissements](~/test/media/pexviewwarning.png "PEXViewWarning")  
   
 2.  Après avoir étudié le code et identifié les parties à tester, vous pouvez traiter l'avertissement et choisir les classes à utiliser pour tester l'interface.  
   

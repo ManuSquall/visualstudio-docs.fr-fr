@@ -32,7 +32,7 @@ Un service de langage définit les éléments et les fonctionnalités pour une l
   
  Le dessin conceptuel suivant affiche un modèle d'un service de langage de base.  
   
- ![Graphique du modèle de service de langage](~/docs/extensibility/media/vslanguageservicemodel.gif "vsLanguageServiceModel")  
+ ![Graphique du modèle de service de langage](~/extensibility/media/vslanguageservicemodel.gif "vsLanguageServiceModel")  
 Modèle de base de service de langage  
   
  La fenêtre de document héberge *la vue du document* de l'éditeur, auquel cas l'éditeur principal de [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] .  La vue du document et la mémoire tampon de texte sont détenues par l'éditeur.  Ces objets fonctionnent avec [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] via une fenêtre de document spécialisée appelée *une fenêtre de code*.  La fenêtre de code est contenue dans un objet d'<xref:Microsoft.VisualStudio.Shell.Interop.IVsWindowFrame> créé et contrôlé par l'IDE.  

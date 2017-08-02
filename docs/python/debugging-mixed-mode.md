@@ -40,7 +40,7 @@ ms.lasthandoff: 05/23/2017
 
 La plupart des débogueurs Python standard prend en charge le débogage de code Python uniquement. Toutefois, dans la pratique, Python est utilisé conjointement avec C ou C++ dans les cas qui nécessitent de hautes performances ou la possibilité d’appeler directement les API de plateforme (pour obtenir un exemple, consultez [Création d’une extension C++ pour Python](cpp-and-python.md)). Quand un projet Python est chargé, Visual Studio intègre un débogage en mode mixte simultané de code Python et C/C++ natif, incluant des piles des appels combinées, la possibilité d’effectuer un pas à pas détaillé alternant entre du code Python et natif, des points d’arrêt dans l’un ou l’autre type de code, ainsi que la possibilité de visualiser des représentations Python des objets dans des cadres natifs et vice versa :
 
-![Débogage en mode mixte](~/docs/python/media/mixed-mode-debugging.png) 
+![Débogage en mode mixte](~/python/media/mixed-mode-debugging.png) 
 
 Pour découvrir une présentation de la génération, du test et du débogage de modules C natifs avec Visual Studio, visionnez la vidéo [Deep Dive: Creating Native Modules](https://youtu.be/D9RlT06a1EI) (Exploration de la création de modules natifs), (youtube.com, 9 mn 9 s).
 
@@ -53,14 +53,14 @@ Pour découvrir une présentation de la génération, du test et du débogage de
 
 1. Dans l’Explorateur de solutions, cliquez avec le bouton droit sur le projet, sélectionnez **Propriétés**, sélectionnez l’onglet **Débogage**, puis activez l’option **Permettre le débogage du code natif**. Cette opération active le mode mixte pour toutes les sessions de débogage.
 
-    ![Activation du débogage du code natif](~/docs/python/media/mixed-mode-debugging-enable-native.png)
+    ![Activation du débogage du code natif](~/python/media/mixed-mode-debugging-enable-native.png)
 
     > [!Tip]    
     > Quand vous activez le débogage du code natif, la fenêtre de sortie Python peut disparaître immédiatement une fois le programme terminé sans afficher la pause habituelle « Appuyez sur une touche pour continuer... ». Pour forcer une pause, ajoutez l’option `-i` au champ **Exécuter > Arguments de l’interpréteur** sous l’onglet **Déboguer** quand vous activez le débogage du code natif. L’interpréteur Python passe ainsi en mode interactif à la fin du code, où il attend que vous appuyiez sur Ctrl+Z, Entrée pour quitter.
 
 1. Lorsque vous attachez le débogueur en mode mixte à un processus existant (**Débogage > Attacher au processus...**), sélectionnez le bouton **Sélectionner...** pour ouvrir la boîte de dialogue **Sélectionner le type de code**, activez l’option **Déboguer ces types de codes**, puis sélectionnez à la fois **Natif** et **Python** dans la liste :
 
-    ![Sélection des types de codes Natif et Python](~/docs/python/media/mixed-mode-debugging-code-type.png)
+    ![Sélection des types de codes Natif et Python](~/python/media/mixed-mode-debugging-code-type.png)
 
     Les paramètres de type de code sont persistants. Par conséquent, si vous souhaitez désactiver le débogage en mode mixte lors de l’attachement à un autre processus par la suite, vous devrez répéter ces étapes et désélectionner le type de code Python.
 
@@ -75,7 +75,7 @@ Pour découvrir une présentation de la génération, du test et du débogage de
 >
 > Dans ce cas, démarrez le projet C++ sans débogage (**Déboguer > Démarrer sans débogage** ou Ctrl+F5), puis utilisez **Déboguer > Attacher au processus**. Dans la boîte de dialogue qui s’affiche, sélectionnez le processus approprié, puis utilisez le bouton **Sélectionner** pour ouvrir la boîte de dialogue **Sélectionner le type de code**. Dans celle-ci, sélectionnez Python (comme indiqué ci-dessous). Sélectionnez **OK** pour fermer cette boîte de dialogue, puis sélectionnez **Attacher** pour démarrer le débogueur. Notez que vous devrez peut-être introduire une pause ou un délai approprié dans l’application C++ pour que celle-ci n’appelle pas le code Python à déboguer avant l’attachement du débogueur.
 >
-> ![Sélection de Python comme type de débogage au moment de l’attachement d’un débogueur](~/docs/python/media/mixed-mode-debugging-attach-type.png)
+> ![Sélection de Python comme type de débogage au moment de l’attachement d’un débogueur](~/python/media/mixed-mode-debugging-attach-type.png)
 
 ## <a name="mixed-mode-specific-features"></a>Fonctionnalités spécifiques du mode mixte
 
@@ -88,7 +88,7 @@ Pour découvrir une présentation de la génération, du test et du débogage de
 
 La fenêtre Pile des appels affiche des frames de pile natifs et Python entrelacés, en insérant des transitions entre les deux :
 
-![Pile des appels combinée](~/docs/python/media/mixed-mode-debugging-call-stack.png)
+![Pile des appels combinée](~/python/media/mixed-mode-debugging-call-stack.png)
 
 > [!Note]
 > Si l’option **Outils > Options > Débogage > Général > Activer Uniquement mon code** est définie, les transitions apparaissent sous la forme « [Code externe] », sans spécifier la direction de la transition.
@@ -103,11 +103,11 @@ Lorsque vous utilisez les commandes Pas à pas détaillé (F11) ou Pas à pas so
 
 Lorsqu’un frame natif (C ou C++) est actif, ses variables locales s’affichent dans la fenêtre Variables locales du débogueur. Dans les modules d’extension Python natifs, de nombreuses variables sont de type `PyObject` (qui est un typedef de `_object`), ou de quelques autres types Python fondamentaux (voir la liste ci-dessous). Dans le cadre du débogage en mode mixte, ces valeurs présentent un nœud enfant supplémentaire intitulé « Python view » (Vue Python). Quand ce nœud est développé, il affiche la représentation Python de la variable, telle qu’elle apparaîtrait si une variable locale référençant le même objet était présente dans un frame Python. Les enfants de ce nœud sont modifiables.
 
-![Vue Python](~/docs/python/media/mixed-mode-debugging-python-view.png)
+![Vue Python](~/python/media/mixed-mode-debugging-python-view.png)
 
 Pour désactiver cette fonctionnalité, cliquez avec le bouton droit sur un emplacement quelconque de la fenêtre Variables locales, puis désélectionnez l’option de menu **Python > Show Python View Nodes (Afficher les nœuds de vue Python)** :
 
-![Activation de la vue Python](~/docs/python/media/mixed-mode-debugging-enable-python-view.png)
+![Activation de la vue Python](~/python/media/mixed-mode-debugging-enable-python-view.png)
 
 Types C affichant les nœuds « [Python View] » (Vue Python) (si cette option est activée) :
 
@@ -137,11 +137,11 @@ Une autre option (mieux adaptée) consiste à suivre la spécification [PEP 312
 
 Comme dans la section précédente, vous pouvez activer un nœud « [C++ View] » (Vue C++) pour les valeurs natives dans la fenêtre Variables locales lorsqu’un frame Python est actif. Cette fonctionnalité est désactivée par défaut. Si vous souhaitez l’activer, cliquez avec le bouton droit dans la fenêtre Variables locales, puis sélectionnez l’option **Python > Show C++ View Nodes (Afficher les nœuds de vue C++)**.
 
-![Activation de la vue C++](~/docs/python/media/mixed-mode-debugging-enable-cpp-view.png)
+![Activation de la vue C++](~/python/media/mixed-mode-debugging-enable-cpp-view.png)
 
 Le nœud « [C++ View] » (Vue C++) fournit une représentation de la structure C/C++ sous-jacente d’une valeur, telle qu’elle apparaîtrait dans un frame natif. Par exemple, il affiche une instance de `_longobject` (dont `PyLongObject` est un typedef) pour un entier long Python, et il essaiera de déduire les types des classes natives que vous avez vous-même créées. Les enfants de ce nœud sont modifiables.
 
-![Vue C++](~/docs/python/media/mixed-mode-debugging-cpp-view.png)
+![Vue C++](~/python/media/mixed-mode-debugging-cpp-view.png)
 
 Si un champ enfant d’un objet est du type `PyObject` ou de l’un des autres types pris en charge, il comportera un nœud de représentation « [Python View] » (Vue Python) (si cette fonctionnalité est activée), offrant ainsi la possibilité de parcourir les graphiques d’objet lorsque les liens ne sont pas directement exposés à Python.
 

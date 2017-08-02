@@ -36,7 +36,7 @@ ms.lasthandoff: 04/04/2017
 
 ---
 # <a name="analyze-c-code-quality-of-store-apps-using-visual-studio-static-code-analysis"></a>Analyser la qualité du code C++ des applications du Windows Store à l'aide de l'analyse statique du code Visual Studio
-![S’applique à Windows et Windows Phone](~/docs/debugger/media/windows_and_phone_content.png "windows_and_phone_content")  
+![S’applique à Windows et Windows Phone](~/debugger/media/windows_and_phone_content.png "windows_and_phone_content")  
   
  L'outil d'analyse du code dans les éditions Visual Studio Express examine votre code à la recherche d'un ensemble d'erreurs courantes et du non-respect d'une bonne approche en matière de programmation. Les avertissements de l'analyse du code diffèrent des erreurs et des avertissements du compilateur, car l'analyse du code recherche des modèles de code spécifiques qui sont valides, mais qui peuvent créer des problèmes pour vous ou d'autres utilisateurs de votre code. L'analyse du code peut également trouver des erreurs dans votre code qui seraient difficiles à détecter en testant. L'exécution de l'outil d'analyse du code à intervalles réguliers pendant le processus de développement peut améliorer la qualité de votre application terminée.  
   
@@ -78,7 +78,7 @@ ms.lasthandoff: 04/04/2017
   
  Quand vous développez un avertissement, les lignes de code à l’origine de l’avertissement sont mises en surbrillance dans l’éditeur de Visual Studio Code.  
   
- ![Code source en surbrillance](~/docs/test/media/ca_cpp_sourceline.png "CA_CPP_SourceLine")  
+ ![Code source en surbrillance](~/test/media/ca_cpp_sourceline.png "CA_CPP_SourceLine")  
   
  Après avoir identifié le problème, vous pouvez le résoudre dans votre code. Relancez ensuite l'analyse du code pour vérifier que l'avertissement ne s'affiche plus dans la fenêtre Analyse du code, et que le correctif n'a pas levé de nouveaux avertissements.  
   

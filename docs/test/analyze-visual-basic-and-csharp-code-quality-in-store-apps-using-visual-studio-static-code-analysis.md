@@ -21,7 +21,7 @@ manager: "douge"
 # Analyser la qualit&#233; du code Visual Basic et C# dans les applications du Windows Store &#224; l&#39;aide de l&#39;analyse statique du code Visual&#160;Studio
 [!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
 
-![S'applique à Windows et Windows Phone](~/docs/debugger/media/windows_and_phone_content.png "windows\_and\_phone\_content")  
+![S'applique à Windows et Windows Phone](~/debugger/media/windows_and_phone_content.png "windows\_and\_phone\_content")  
   
  L'outil d'analyse du code dans Visual Studio Express examine votre code à la recherche d'un ensemble d'erreurs courantes et du non\-respect d'une bonne approche en matière de programmation.  Les avertissements de l'analyse du code diffèrent des erreurs et des avertissements du compilateur parce que l'outil d'analyse du code recherche des modèles de code spécifiques qui sont valides, mais qui peuvent créer des problèmes pour vous ou d'autres utilisateurs de votre code.  L'analyse du code peut également trouver des erreurs dans votre code qui seraient difficiles à détecter en testant.  L'exécution de l'outil d'analyse du code à intervalles réguliers pendant le processus de développement peut améliorer la qualité de votre application terminée.  
   
@@ -63,7 +63,7 @@ manager: "douge"
   
  Lorsque vous développez un avertissement, la ligne de code à l'origine de l'avertissement est mise en surbrillance dans l'éditeur de code Visual Studio.  
   
- ![Mise en surbrillance du texte d’analyse du code](~/docs/test/media/ca_managed_sourceline.png "CA\_Managed\_SourceLine")  
+ ![Mise en surbrillance du texte d’analyse du code](~/test/media/ca_managed_sourceline.png "CA\_Managed\_SourceLine")  
   
  Une fois que vous avez compris le problème, vous pouvez le résoudre dans votre code.  Réexécutez l'analyse du code pour vérifier que l'avertissement n'apparaît plus dans la fenêtre Analyse du code et que votre correctif n'a pas généré de nouveaux avertissements.  
   

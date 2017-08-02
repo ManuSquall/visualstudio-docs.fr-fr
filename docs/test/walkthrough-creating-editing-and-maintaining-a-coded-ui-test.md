@@ -71,7 +71,7 @@ Dans cette procédure pas à pas, vous allez créer une simple application WPF (
   
 12. Sélectionnez le contrôle Checkbox. Dans la fenêtre Propriétés, changez la valeur de la propriété **Nom** de \<Sans nom> en checkBox1 et effacez la valeur de la propriété **IsEnabled**.  
   
-     ![Application WPF simple](~/docs/test/media/codedui_wpfapp.png "CodedUI_WPFApp")  
+     ![Application WPF simple](~/test/media/codedui_wpfapp.png "CodedUI_WPFApp")  
   
 13. Double-cliquez sur le contrôle bouton pour ajouter un gestionnaire d'événements Click.  
   
@@ -163,11 +163,11 @@ Dans cette procédure pas à pas, vous allez créer une simple application WPF (
   
 8.  Choisissez **Démarrer l’enregistrement** dans la boîte de dialogue UIMap - Générateur de test codé de l’interface utilisateur.  
   
-     ![Démarrer l’enregistrement](~/docs/test/media/cuit_builder_record.png "CUIT_Builder_Record")  
+     ![Démarrer l’enregistrement](~/test/media/cuit_builder_record.png "CUIT_Builder_Record")  
   
      Vous pouvez mettre l'enregistrement en pause si nécessaire, par exemple si vous recevez du courrier électronique et que vous souhaitez y répondre.  
   
-     ![Suspendre l’enregistrement](~/docs/test/media/cuit_.png "CUIT_")  
+     ![Suspendre l’enregistrement](~/test/media/cuit_.png "CUIT_")  
   
     > [!WARNING]
     >  Toutes les actions effectuées sur le Bureau sont enregistrées. Mettez l'enregistrement en pause si vous effectuez des actions susceptibles d'inclure des données confidentielles dans l'enregistrement.  
@@ -385,11 +385,11 @@ Dans cette procédure pas à pas, vous allez créer une simple application WPF (
 ## <a name="external-resources"></a>Ressources externes  
   
 ### <a name="videos"></a>Vidéos  
- ![lien vers une vidéo](~/docs/data-tools/media/playvideo.gif "PlayVideo") [Coded UI Tests-DeepDive-Episode1-GettingStarted](http://go.microsoft.com/fwlink/?LinkID=230573)  
+ ![lien vers une vidéo](~/data-tools/media/playvideo.gif "PlayVideo") [Coded UI Tests-DeepDive-Episode1-GettingStarted](http://go.microsoft.com/fwlink/?LinkID=230573)  
   
- ![lien vers une vidéo](~/docs/data-tools/media/playvideo.gif "PlayVideo") [Coded UI Tests-DeepDive-Episode2-MaintainenceAndDebugging](http://go.microsoft.com/fwlink/?LinkID=230574)  
+ ![lien vers une vidéo](~/data-tools/media/playvideo.gif "PlayVideo") [Coded UI Tests-DeepDive-Episode2-MaintainenceAndDebugging](http://go.microsoft.com/fwlink/?LinkID=230574)  
   
- ![lien vers une vidéo](~/docs/data-tools/media/playvideo.gif "PlayVideo") [Coded UI Tests-DeepDive-Episode3-HandCoding](http://go.microsoft.com/fwlink/?LinkID=230575)  
+ ![lien vers une vidéo](~/data-tools/media/playvideo.gif "PlayVideo") [Coded UI Tests-DeepDive-Episode3-HandCoding](http://go.microsoft.com/fwlink/?LinkID=230575)  
   
 ### <a name="hands-on-lab"></a>Ateliers pratiques  
  [Laboratoire virtuel MSDN : Introduction à la création de tests codés de l’interface utilisateur avec Visual Studio 2010](http://go.microsoft.com/fwlink/?LinkID=22508)  

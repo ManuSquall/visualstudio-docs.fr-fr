@@ -34,7 +34,7 @@ Cette procédure pas à pas montre comment utiliser Graphics Diagnostics dans [!
   
  Dans ce scénario, vous venez d’ajouter un objet à votre application, ainsi que de nouveaux nuanceurs de sommets et de pixels pour transformer l’objet et lui donner une apparence unique. Vous exécutez l’application pendant un test et vous constatez que l’objet est affiché dans une couleur noire unie. À l’aide de Graphics Diagnostics, vous capturez le problème dans un journal de graphisme pour déboguer l’application. Le problème se présente ainsi dans l'application :  
   
- ![Objet rendu avec des couleurs incorrectes.](~/docs/debugger/graphics/media/gfx_diag_demo_render_error_shader_problem.png "gfx\_diag\_demo\_render\_error\_shader\_problem")  
+ ![Objet rendu avec des couleurs incorrectes.](~/debugger/graphics/media/gfx_diag_demo_render_error_shader_problem.png "gfx\_diag\_demo\_render\_error\_shader\_problem")  
   
 ## Examen  
  À l'aide des outils Graphics Diagnostics, vous pouvez charger le document du journal de graphisme pour examiner les frames capturés pendant le test.  
@@ -45,7 +45,7 @@ Cette procédure pas à pas montre comment utiliser Graphics Diagnostics dans [!
   
 2.  Dans **Liste de frames**, sélectionnez un frame dans lequel l’objet n’a pas l’apparence correcte. La cible de rendu est mise à jour pour refléter le frame sélectionné. Dans ce scénario, la fenêtre de document du journal de graphiques se présente comme suit :  
   
-     ![Document du journal des graphiques dans Visual Studio.](~/docs/debugger/graphics/media/gfx_diag_demo_render_error_shader_step_1.png "gfx\_diag\_demo\_render\_error\_shader\_step\_1")  
+     ![Document du journal des graphiques dans Visual Studio.](~/debugger/graphics/media/gfx_diag_demo_render_error_shader_step_1.png "gfx\_diag\_demo\_render\_error\_shader\_step\_1")  
   
  Une fois que vous avez sélectionné un frame qui illustre le problème, vous pouvez utiliser la fenêtre **Historique des pixels Graphics** pour le diagnostiquer. La fenêtre **Historique des pixels Graphics** affiche les primitives ayant pu avoir un effet sur un pixel spécifique, leurs nuanceurs et les effets sur la cible de rendu, dans l’ordre chronologique.  
   
@@ -59,7 +59,7 @@ Cette procédure pas à pas montre comment utiliser Graphics Diagnostics dans [!
   
      La fenêtre **Historique des pixels Graphics** est actualisée pour afficher le pixel sélectionné. Dans ce scénario, la fenêtre **Historique des pixels Graphics** se présente comme suit :  
   
-     ![La fenêtre d'historique affiche un événement DrawIndexed.](~/docs/debugger/graphics/media/gfx_diag_demo_render_error_shader_step_3.png "gfx\_diag\_demo\_render\_error\_shader\_step\_3")  
+     ![La fenêtre d'historique affiche un événement DrawIndexed.](~/debugger/graphics/media/gfx_diag_demo_render_error_shader_step_3.png "gfx\_diag\_demo\_render\_error\_shader\_step\_3")  
   
      Notez que le résultat du nuanceur de pixels est noir entièrement opaque \(0, 0, 0, 1\) : **Fusion de sortie** a combiné cette couleur avec la couleur **Précédent** du pixel pour que le **Résultat** soit également noir entièrement opaque.  
   
@@ -73,7 +73,7 @@ Cette procédure pas à pas montre comment utiliser Graphics Diagnostics dans [!
   
 3.  Placez le pointeur sur `input.color`. Notez que sa valeur est la couleur noire entièrement opaque \(0, 0, 0, 1\).  
   
-     ![Le membre « couleur » de « entrée » est noir.](~/docs/debugger/graphics/media/gfx_diag_demo_render_error_shader_step_5.png "gfx\_diag\_demo\_render\_error\_shader\_step\_5")  
+     ![Le membre « couleur » de « entrée » est noir.](~/debugger/graphics/media/gfx_diag_demo_render_error_shader_step_5.png "gfx\_diag\_demo\_render\_error\_shader\_step\_5")  
   
      Dans ce scénario, l'examen révèle que la couleur incorrecte est probablement due au fait que le nuanceur de sommets ne fournit pas les informations de couleur correctes nécessaires au bon fonctionnement du nuanceur de pixels.  
   
@@ -87,7 +87,7 @@ Cette procédure pas à pas montre comment utiliser Graphics Diagnostics dans [!
   
 3.  Vérifiez que le membre de couleur n'est jamais copié à partir de la structure d'entrée. Étant donné que la valeur `output.color` est définie sur la couleur noire entièrement opaque juste avant que la structure `output` ne soit retournée, il est préférable de vérifier que la valeur de `output` n'a pas été correctement initialisée sur une ligne précédente. Parcourez le code du nuanceur de sommets jusqu'à ce que vous atteigniez la ligne qui définit `output.color` sur Noir lorsque vous examinez la valeur de `output.color`. Notez que la valeur de `output.color` n'est pas initialisée tant qu'elle n'est pas définie sur Noir. Cela confirme que la ligne de code qui définit `output.color` sur Noir doit être modifiée, et non pas supprimée.  
   
-     ![La valeur « output.color » est noir.](~/docs/debugger/graphics/media/gfx_diag_demo_render_error_shader_step_7.png "gfx\_diag\_demo\_render\_error\_shader\_step\_7")  
+     ![La valeur « output.color » est noir.](~/debugger/graphics/media/gfx_diag_demo_render_error_shader_step_7.png "gfx\_diag\_demo\_render\_error\_shader\_step\_7")  
   
  Après avoir déterminé que le problème de rendu est lié au fait que le nuanceur de sommets ne fournit pas la couleur appropriée au nuanceur de pixels, vous pouvez utiliser ces informations pour résoudre le problème. Dans ce scénario, vous pouvez le résoudre en modifiant le code ci\-après dans le nuanceur de sommets  
   
@@ -103,8 +103,8 @@ output.color = input.color;
   
  Ce code passe seulement la couleur des sommets de l’objet sans la modifier, mais il est possible que des nuanceurs de sommets plus complexes modifient la couleur avant de la passer. Le code du nuanceur de sommets corrigé doit ressembler à ceci :  
   
- ![Code du nuanceur de sommets corrigé.](~/docs/debugger/graphics/media/gfx_diag_demo_render_error_shader_step_8.png "gfx\_diag\_demo\_render\_error\_shader\_step\_8")  
+ ![Code du nuanceur de sommets corrigé.](~/debugger/graphics/media/gfx_diag_demo_render_error_shader_step_8.png "gfx\_diag\_demo\_render\_error\_shader\_step\_8")  
   
  Après avoir corrigé le code, vous devez le régénérer, puis réexécuter l’application pour constater que le problème d’affichage est résolu.  
   
- ![Objet rendu avec des couleurs correctes.](~/docs/debugger/graphics/media/gfx_diag_demo_render_error_shader_resolution.png "gfx\_diag\_demo\_render\_error\_shader\_resolution")
+ ![Objet rendu avec des couleurs correctes.](~/debugger/graphics/media/gfx_diag_demo_render_error_shader_resolution.png "gfx\_diag\_demo\_render\_error\_shader\_resolution")

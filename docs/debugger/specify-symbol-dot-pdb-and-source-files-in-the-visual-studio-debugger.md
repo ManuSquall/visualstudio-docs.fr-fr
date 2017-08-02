@@ -65,7 +65,7 @@ Un fichier de base de données du programme \(.pdb\), également appelé fichier
   
      ![Page Outils &#45; Options &#45; Débogage &#45; Symboles](../debugger/media/dbg_tools_options_symbols.png "DBG\_Tools\_Options\_Symbols")  
   
-2.  Choisissez l'icône de dossier ![Icône du dossier Outils&#47; Options&#47; Débogage&#47;Symboles](~/docs/debugger/media/dbg_tools_options_foldersicon.png "DBG\_Tools\_Options\_FoldersIcon"). Le texte modifiable s'affiche dans la zone **Emplacements du fichier de symboles \(.pdb\)**.  
+2.  Choisissez l'icône de dossier ![Icône du dossier Outils&#47; Options&#47; Débogage&#47;Symboles](~/debugger/media/dbg_tools_options_foldersicon.png "DBG\_Tools\_Options\_FoldersIcon"). Le texte modifiable s'affiche dans la zone **Emplacements du fichier de symboles \(.pdb\)**.  
   
 3.  Tapez l'URL ou le chemin d'accès du serveur de symboles ou de l'emplacement de symboles. La saisie semi\-automatique des instructions vous aide à rechercher le format correct.  
   
@@ -147,7 +147,7 @@ Un fichier de base de données du programme \(.pdb\), également appelé fichier
   
 -   Pour toujours afficher le code machine lorsque la source ou les fichiers de symboles sont introuvables, choisissez le lien **Boîte de dialogue Options**, puis sélectionnez **Activer le débogage au niveau de l'adresse** et **Afficher le code machine si la source n'est pas disponible**.  
   
-     ![Options de code machine Options &#47; Débogage &#47; Général](~/docs/debugger/media/dbg_options_general_disassembly_checkbox.png "DBG\_Options\_General\_disassembly\_checkbox")  
+     ![Options de code machine Options &#47; Débogage &#47; Général](~/debugger/media/dbg_options_general_disassembly_checkbox.png "DBG\_Options\_General\_disassembly\_checkbox")  
   
  **Changer les options de symbole depuis le menu contextuel**  
   
@@ -214,7 +214,7 @@ Un fichier de base de données du programme \(.pdb\), également appelé fichier
   
 2.  Sous le nœud **Propriétés communes**, choisissez **Fichiers sources pour le débogage**.  
   
-3.  Cliquez sur l'icône de dossier ![Icône du dossier Outils&#47; Options&#47; Débogage&#47;Symboles](~/docs/debugger/media/dbg_tools_options_foldersicon.png "DBG\_Tools\_Options\_FoldersIcon"). Le texte modifiable apparaît dans la liste **Répertoires contenant du code source**.  
+3.  Cliquez sur l'icône de dossier ![Icône du dossier Outils&#47; Options&#47; Débogage&#47;Symboles](~/debugger/media/dbg_tools_options_foldersicon.png "DBG\_Tools\_Options\_FoldersIcon"). Le texte modifiable apparaît dans la liste **Répertoires contenant du code source**.  
   
 4.  Ajoutez le chemin que vous souhaitez rechercher.  
   
@@ -238,7 +238,7 @@ Un fichier de base de données du programme \(.pdb\), également appelé fichier
   
 4.  Activez la case à cocher **Activer le support du serveur source**.  
   
-     ![Activer les options du serveur source](~/docs/debugger/media/dbg_options_general_enablesrcsrvr_checkbox.png "DBG\_Options\_General\_EnableSrcSrvr\_checkbox")  
+     ![Activer les options du serveur source](~/debugger/media/dbg_options_general_enablesrcsrvr_checkbox.png "DBG\_Options\_General\_EnableSrcSrvr\_checkbox")  
   
 5.  \(Facultatif\) Sélectionnez les options enfants que vous souhaitez.  
   

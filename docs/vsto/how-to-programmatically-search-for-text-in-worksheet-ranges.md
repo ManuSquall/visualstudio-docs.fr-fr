@@ -33,7 +33,7 @@ caps.handback.revision: 47
 > [!NOTE]  
 >  La recherche de la méthode <xref:Microsoft.Office.Interop.Excel.Range.FindNext%2A> revient au début de la plage de recherche lorsqu'elle en a atteint la fin.  Votre code ne doit pas décrire une boucle infinie.  L'exemple de procédure indique comment éviter cela à l'aide de la propriété <xref:Microsoft.Office.Interop.Excel.Range.Address%2A>.  
   
- ![lien vers la vidéo](~/docs/data-tools/media/playvideo.gif "lien vers la vidéo") Pour une démonstration vidéo connexe, consultez [Comment faire pour utiliser la méthode Find dans un complément Excel ? \(page éventuellement en anglais\)](http://go.microsoft.com/fwlink/?LinkID=130294).  
+ ![lien vers la vidéo](~/data-tools/media/playvideo.gif "lien vers la vidéo") Pour une démonstration vidéo connexe, consultez [Comment faire pour utiliser la méthode Find dans un complément Excel ? \(page éventuellement en anglais\)](http://go.microsoft.com/fwlink/?LinkID=130294).  
   
 ### Pour rechercher du texte dans une plage de feuille de calcul  
   

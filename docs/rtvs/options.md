@@ -45,7 +45,7 @@ ms.lasthandoff: 05/12/2017
  
 Les paramètres sont accessibles par l’intermédiaire du menu **Outils R > Options**, ou par l’intermédiaire d’**Outils > Options** et en faisant défiler la page jusqu’à **Outils R** :
  
-  ![Boîte de dialogue Options pour les Outils R](~/docs/rtvs/media/options-dialog.png)
+  ![Boîte de dialogue Options pour les Outils R](~/rtvs/media/options-dialog.png)
 
 Les sections suivantes décrivent les différentes options disponibles dans cette page.
 
@@ -56,7 +56,7 @@ Les sections suivantes décrivent les différentes options disponibles dans cett
 
 Il existe également un élément de menu spécial **Outils R > Paramètres de science des données** qui configure l’IDE de Visual Studio avec une disposition optimisée pour les besoins des scientifiques des données. Plus précisément, cette option ouvre les fenêtres [Interactive](interactive-repl.md), [Explorateur de variables](variable-explorer.md) et [Espaces de travail](workspaces.md) :
 
-![Disposition de fenêtre pour scientifique des données dans Visual Studio](~/docs/rtvs/media/installation-data-scientist-layout-result.png)
+![Disposition de fenêtre pour scientifique des données dans Visual Studio](~/rtvs/media/installation-data-scientist-layout-result.png)
 
 > [!Important]      
 > Pour revenir ultérieurement à d’autres paramètres de Visual Studio, utilisez d’abord la commande **Outils > Importation et exportation de paramètres**, en sélectionnant **Exporter les paramètres d’environnement sélectionnés** et en spécifiant un nom de fichier. Pour restaurer ces paramètres, utilisez la même commande et sélectionnez **Importer les paramètres d’environnement sélectionnés**. Vous pouvez aussi utiliser les mêmes commandes si vous changez la disposition pour les scientifiques des données et que vous souhaitez y revenir plus tard, au lieu d’utiliser directement la commande **Paramètres de science des données**.

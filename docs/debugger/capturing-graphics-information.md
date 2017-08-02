@@ -38,7 +38,7 @@ Capturez les informations graphiques de votre application Direct3D pour pouvoir 
   
 #### Pour capturer un frame  
   
--   Dans Visual Studio, dans la barre d'outils **Graphiques**, choisissez le bouton **Capturer le frame**![Icône du bouton de capture de graphiques](~/docs/debugger/graphics/media/debuggingdirectxgraphics.png "DebuggingDirectXGraphics").  
+-   Dans Visual Studio, dans la barre d'outils **Graphiques**, choisissez le bouton **Capturer le frame**![Icône du bouton de capture de graphiques](~/debugger/graphics/media/debuggingdirectxgraphics.png "DebuggingDirectXGraphics").  
   
 -   Appuyez sur la touche Impr. écran du clavier.  
   

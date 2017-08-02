@@ -22,7 +22,7 @@ caps.handback.revision: 9
 
 Vous pouvez utiliser le navigateur de l'utilisation du Visualiseur concurrentiel pour sélectionner un intervalle de temps dans une trace.  Le Visualiseur concurrentiel affiche l'utilisation des cœur de l'UC par le processus cible au fil du temps.  Cela facilite l'examen des modèles d'utilisation de l'UC et permet également la comparaison entre les données d'utilisation et les données dans d'autres vues.  Le navigateur d'utilisation apparaît en haut de chaque vue dans le visualiseur d'accès concurrentiel.  L'illustration suivante montre le navigateur d'utilisation.  
   
- ![Navigateur d'utilisation indiquant la période sélectionnée](~/docs/profiling/media/cvutilizationnavigator.png "CVUtilizationNavigator")  
+ ![Navigateur d'utilisation indiquant la période sélectionnée](~/profiling/media/cvutilizationnavigator.png "CVUtilizationNavigator")  
 Navigateur d'utilisation et un délai sélectionné  
   
  Dans l'illustration, la plage sélectionnée est défini par un rectangle rouge, appelé *curseur de défilement*.  

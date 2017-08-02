@@ -32,11 +32,11 @@ Quand vous travaillez sur de longs fichiers de code, il peut être difficile de 
   
      Voici à quoi ressemble la barre de défilement après la recherche d'une chaîne.  Notez que toutes les instances de la chaîne sont affichées.  
   
-     ![Barre de défilement après recherche d’une chaîne.](~/docs/ide/media/enhancedscrollbarsearch.png "EnhancedScrollbarSearch")  
+     ![Barre de défilement après recherche d’une chaîne.](~/ide/media/enhancedscrollbarsearch.png "EnhancedScrollbarSearch")  
   
      Voici la barre de défilement après le remplacement de toutes les instances de la chaîne.  Vous voyez immédiatement que l'opération a causé quelques problèmes.  
   
-     ![Barre de défilement après remplacement d’une chaîne sans erreurs](~/docs/ide/media/enhancedscrollbarreplace.png "EnhancedScrollbarReplace")  
+     ![Barre de défilement après remplacement d’une chaîne sans erreurs](~/ide/media/enhancedscrollbarreplace.png "EnhancedScrollbarReplace")  
   
 ### Pour définir le mode d'affichage de la barre de défilement  
   
@@ -46,10 +46,10 @@ Quand vous travaillez sur de longs fichiers de code, il peut être difficile de 
   
      Voici comment se présente l'exemple de recherche avec le mode mappage et une largeur moyenne :  
   
-     ![Barre de défilement en mode mappage](~/docs/ide/media/enhancedscrollbar.png "EnhancedScrollbar")  
+     ![Barre de défilement en mode mappage](~/ide/media/enhancedscrollbar.png "EnhancedScrollbar")  
   
 2.  En mode mappage, pour activer les aperçus du code quand vous déplacez le curseur vers le haut et le bas dans la barre de défilement, sélectionnez l'option **Afficher l'info\-bulle d'aperçu**.  Voici le résultat :  
   
-     ![Barre de défilement avec une info&#45;bulle](~/docs/ide/media/enhancedscrollbarsearchtooltip.png "EnhancedScrollbarSearchTooltip")  
+     ![Barre de défilement avec une info&#45;bulle](~/ide/media/enhancedscrollbarsearchtooltip.png "EnhancedScrollbarSearchTooltip")  
   
      Pour conserver le mode mappage et l'info\-bulle d'aperçu de la barre de défilement, mais pas la vue d'ensemble du code source, définissez **Vue d'ensemble du code source** sur **Désactivé**.

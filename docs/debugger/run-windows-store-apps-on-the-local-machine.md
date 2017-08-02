@@ -23,7 +23,7 @@ caps.handback.revision: 15
 # Ex&#233;cuter des applications du Windows&#160;Store sur un ordinateur local
 [!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
 
-![S'applique uniquement à Windows](~/docs/debugger/media/windows_only_content.png "windows\_only\_content")  
+![S'applique uniquement à Windows](~/debugger/media/windows_only_content.png "windows\_only\_content")  
   
  Pour déboguer, tester ou exécuter l'analyse des performances d'une application du Windows Store, vous pouvez exécuter l'application sur le même ordinateur que celui qui héberge Visual Studio.  Si l'appareil dispose d'un écran tactile, vous pouvez tester l'ensemble des fonctionnalités de l'application ; sinon, vous devrez vous contenter du clavier et des mouvements de la souris.  
   
@@ -47,7 +47,7 @@ caps.handback.revision: 15
   
 -   Dans les projets C\# et Visual Basic, cliquez sur **Déboguer**, puis sélectionnez **Ordinateur local** dans la liste déroulante **Périphérique cible**.  
   
-     ![Page de propriétés du projet C&#35; et Visual Basic](~/docs/debugger/media/vsrun_cs_vb_projprop_local.png "VSRUN\_CS\_VB\_ProjProp\_Local")  
+     ![Page de propriétés du projet C&#35; et Visual Basic](~/debugger/media/vsrun_cs_vb_projprop_local.png "VSRUN\_CS\_VB\_ProjProp\_Local")  
   
 -   Dans les projets C\+\+ et JavaScript, développez le nœud **Propriétés de configuration**, cliquez sur **Débogage**, puis sélectionnez **Débogueur local** dans la liste **Débogueur à lancer**.  
   

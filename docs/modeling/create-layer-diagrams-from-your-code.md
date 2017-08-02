@@ -39,7 +39,7 @@ ms.lasthandoff: 02/22/2017
 # <a name="create-dependency-diagrams-from-your-code"></a>Créer des diagrammes de dépendance à partir de votre code.
 Pour visualiser l’architecture de haut niveau et logique de votre système logiciel, créez un *diagramme de dépendances* dans Visual Studio. Pour vous assurer que votre code demeure conforme à cette conception, validez votre code avec un diagramme de dépendances. Vous pouvez créer des diagrammes de dépendance pour les projets Visual c# .NET et Visual Basic .NET. Pour connaître les versions de Visual Studio prennent en charge cette fonctionnalité, consultez [Version prise en charge pour l’architecture et les outils de modélisation](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport)  
   
- ![Créer un diagramme de dépendance](~/docs/modeling/media/layerdiagramvisualizecode.png "LayerDiagramVisualizeCode")  
+ ![Créer un diagramme de dépendance](~/modeling/media/layerdiagramvisualizecode.png "LayerDiagramVisualizeCode")  
   
  Un diagramme de dépendance vous permet d’organiser les éléments de solution Visual Studio en groupes logiques et abstraits appelés *couches*. Vous pouvez utiliser les couches pour décrire des tâches importantes que ces artefacts effectuent ou bien les principaux composants du système. Chaque couche peut contenir d’autres couches qui décrivent des tâches plus détaillées. Vous pouvez également spécifier prévues ou existantes *dépendances* entre les couches. Ces dépendances, qui sont représentées par des flèches, indiquent quels couches peuvent utiliser ou utilisent actuellement la fonctionnalité représentée par d'autres couches. Pour maintenir le contrôle architecturel du code, affichez les dépendances prévues sur le diagramme, puis validez le code par rapport au diagramme.  
   
@@ -88,7 +88,7 @@ Pour visualiser l’architecture de haut niveau et logique de votre système log
 
 7. Cela illustre l’architecture d’application actuelle. Décider ce que vous voulez l’architecture pour être et modifier le diagramme de dépendances en conséquence.
 
-![Diagramme de dépendances généré à partir d’une carte de Code](~/docs/modeling/media/dependency-validation-01.png)
+![Diagramme de dépendances généré à partir d’une carte de Code](~/modeling/media/dependency-validation-01.png)
   
 ##  <a name="a-namecreatelayersa-create-layers-from-artifacts"></a><a name="CreateLayers"></a>Créer des couches à partir d’artefacts  
  Vous pouvez créer des couches à partir d'éléments de solution Visual Studio, tels que des projets, des fichiers de code, des espaces de noms, des classes et des méthodes. Cela crée automatiquement des liens entre ces couches et les éléments, les incluant dans le processus de validation de couche.  

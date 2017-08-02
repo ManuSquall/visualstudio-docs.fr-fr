@@ -78,7 +78,7 @@ caps.handback.revision: 52
   
 3.  Dans la fenêtre **Propriétés**, développez la propriété **\(DataBindings\)**.  
   
-4.  À côté de la propriété **\(Advanced\)**, cliquez sur le bouton de sélection \(![Capture d'écran VisualStudioEllipsesButton](~/docs/vsto/media/vbellipsesbutton.png "Capture d'écran VisualStudioEllipsesButton")\).  
+4.  À côté de la propriété **\(Advanced\)**, cliquez sur le bouton de sélection \(![Capture d'écran VisualStudioEllipsesButton](~/vsto/media/vbellipsesbutton.png "Capture d'écran VisualStudioEllipsesButton")\).  
   
 5.  Dans la boîte de dialogue **Mise en forme et liaison avancée**, cliquez sur la liste déroulante **Mode de mise à jour de la source de données** et sélectionnez l’une des valeurs suivantes :  
   

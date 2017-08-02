@@ -44,7 +44,7 @@ Cookiecutter nécessite Python 3.3 ou version ultérieure (32 ou 64 bits) ou An
 
 Une fois l’installation terminée, sélectionnez **Affichage > Cookiecutter Explorer** (Explorateur Cookiecutter) pour ouvrir sa fenêtre :
 
-![Fenêtre principale Cookiecutter](~/docs/python/media/cookiecutter-overview.png)
+![Fenêtre principale Cookiecutter](~/python/media/cookiecutter-overview.png)
 
 ## <a name="cookiecutter-workflow"></a>Flux de travail Cookiecutter
 
@@ -76,7 +76,7 @@ Si vous sélectionnez un modèle à partir du groupe **Installé** ou si vous sa
 
 Une fois le modèle installé localement, Cookiecutter affiche une page d’options dans laquelle vous pouvez spécifier l’endroit où Cookiecutter doit générer des fichiers, ainsi que d’autres options :
 
-![Page d’options de Cookiecutter](~/docs/python/media/cookiecutter-template-options.png)
+![Page d’options de Cookiecutter](~/python/media/cookiecutter-template-options.png)
 
 Chaque modèle Cookiecutter définit son propre ensemble d’options et spécifie une valeur par défaut pour chacune d’elles (affichée en tant que texte suggéré dans chaque champ d’entrée). Une valeur par défaut peut être un extrait de code, souvent lorsqu’il s’agit d’une valeur dynamique qui utilise d’autres options. 
 
@@ -90,13 +90,13 @@ Une fois vos options définies, sélectionnez **Créer** pour générer du code.
 
 Une fois les fichiers créés, Cookiecutter propose une option permettant d’ouvrir les fichiers dans **l’Explorateur de solutions** :
 
-![Commande de Cookiecutter affichant l’Explorateur de solutions](~/docs/python/media/cookiecutter-files-created.png)
+![Commande de Cookiecutter affichant l’Explorateur de solutions](~/python/media/cookiecutter-files-created.png)
 
 ## <a name="cookiecutter-options"></a>Options de Cookiecutter
 
 Les options de Cookiecutter sont accessibles via **Outils > Options > Cookiecutter** :
 
-![Options de Cookiecutter](~/docs/python/media/cookiecutter-tools-options.png)
+![Options de Cookiecutter](~/python/media/cookiecutter-tools-options.png)
 
 | Option | Description |
 | --- | --- |

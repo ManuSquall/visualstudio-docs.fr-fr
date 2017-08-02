@@ -77,7 +77,7 @@ Il existe de nombreuses façons de parcourir votre code dans le débogueur : vo
   
      Pour définir un point d'arrêt simple dans votre code, ouvrez le fichier source dans l'éditeur Visual Studio. Définissez le curseur sur la ligne de code à laquelle vous souhaitez vous arrêter, puis choisissez **Point d'arrêt**, **Insérer un point d'arrêt** dans le menu contextuel \(raccourci : **F9**. Le débogueur interrompt l'exécution juste avant que la ligne soit exécutée.  
   
-     ![Définir un point d’arrêt](~/docs/debugger/media/dbg_basics_setbreakpoint.png "DBG\_Basics\_SetBreakpoint")  
+     ![Définir un point d’arrêt](~/debugger/media/dbg_basics_setbreakpoint.png "DBG\_Basics\_SetBreakpoint")  
   
      Les points d'arrêt dans Visual Studio fournissent un ensemble enrichi de fonctionnalités supplémentaires, telles que les points d'arrêt et les points de trace conditionnels. Consultez [Utilisation des points d'arrêt](../debugger/using-breakpoints.md).  
   
@@ -116,12 +116,12 @@ Il existe de nombreuses façons de parcourir votre code dans le débogueur : vo
   
  Si la fonction est surchargée ou si elle figure dans plusieurs espaces de noms, vous pouvez choisir les fonctions souhaitées dans la boîte de dialogue **Choisir les points d'arrêt**.  
   
- ![Boîte de dialogue Choisir les points d’arrêt](~/docs/debugger/media/dbg_execution_overloadedbreakpoints.png "DBG\_Execution\_OverloadedBreakpoints")  
+ ![Boîte de dialogue Choisir les points d’arrêt](~/debugger/media/dbg_execution_overloadedbreakpoints.png "DBG\_Execution\_OverloadedBreakpoints")  
   
 ##  <a name="BKMK_Set_the_next_statement_to_execute"></a> Définir l'instruction suivante à exécuter  
  Après une interruption dans le débogueur, vous pouvez déplacer le point d'exécution pour désigner l'instruction suivante à exécuter. Dans la marge d'une fenêtre source ou Code Machine, une flèche jaune marque l'emplacement de la prochaine instruction à exécuter. Déplacer cette flèche permet d'ignorer une partie du code ou de revenir à une ligne déjà exécutée. Vous pouvez utiliser cette fonctionnalité, par exemple, pour ignorer une section de code qui contient un bogue connu.  
   
- ![Exemple2](~/docs/debugger/media/dbg_basics_example2.png "DBG\_Basics\_Example2")  
+ ![Exemple2](~/debugger/media/dbg_basics_example2.png "DBG\_Basics\_Example2")  
   
  Pour définir l'instruction suivante à exécuter, appliquez l'une de ces procédures :  
   

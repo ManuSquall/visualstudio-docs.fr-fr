@@ -109,7 +109,7 @@ static void Main(string[] args) { int a, b, c, d; a = 1; b = 2; c = 3; d = 4; in
 ## Barre d’outils Emplacement de débogage  
  Vous pouvez utiliser la barre d’outils **Emplacement de débogage** pour sélectionner la fonction, le thread ou le processus souhaité. Définissez un point d’arrêt et démarrez le débogage. \(Si vous ne voyez pas cette barre d’outils, vous pouvez l’activer en cliquant dans une partie vide de la zone de la barre d’outils. Vous devez voir une liste de barres d’outils ; sélectionnez **Emplacement de débogage**\). Lorsque le point d’arrêt est atteint, l’exécution s’arrête et vous pouvez voir la barre d’outils Emplacement de débogage, qui est la ligne inférieure de l’image suivante :  
   
- ![DebugLocationToolbar](~/docs/debugger/media/debuglocationtoolbar.png "DebugLocationToolbar")  
+ ![DebugLocationToolbar](~/debugger/media/debuglocationtoolbar.png "DebugLocationToolbar")  
   
  Vous pouvez également remplacer le contexte par différents appels de fonction, threads ou processus en double\-cliquant sur l’élément dans la fenêtre **Pile des appels**, **Threads** ou **Processus**.  
   

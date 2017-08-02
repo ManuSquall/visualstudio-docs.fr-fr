@@ -44,7 +44,7 @@ Le Kit de développement Visual Studio est une fonctionnalité facultative dans 
 ## <a name="installing-the-visual-studio-sdk-from-a-solution"></a>L’installation du Kit de développement logiciel de Visual Studio à partir d’une Solution  
  Si vous ouvrez une solution avec un projet d’extensibilité sans d’abord installer VSSDK, vous êtes invité par une barre d’informations en surbrillance au-dessus de l’Explorateur de solutions. Il doit se présenter comme suit :  
   
- ![SolutionExplorerInstall](~/docs/extensibility/media/solutionexplorerinstall.png "SolutionExplorerInstall")  
+ ![SolutionExplorerInstall](~/extensibility/media/solutionexplorerinstall.png "SolutionExplorerInstall")  
   
 ## <a name="installing-the-visual-studio-sdk-from-the-command-line"></a>L’installation du Kit de développement logiciel de Visual Studio à partir de la ligne de commande  
 Comme avec une charge de travail de Visual Studio ou un composant, vous pouvez également installer l’élément à partir de la ligne de commande. Consultez la page [utiliser des paramètres de ligne de commande pour installer Visual Studio](../install/use-command-line-parameters-to-install-visual-studio.md) pour plus d’informations sur les commutateurs de ligne de commande appropriée et comment déterminer les identificateurs de charge de travail ou d’un composant.

@@ -63,7 +63,7 @@ Dans cette rubrique, nous allons aborder l’analyse de l’utilisation du proce
 
 4.  Vous pouvez choisir d’afficher **Utilisation de la mémoire**, [Utilisation de l’UC](../profiling/Memory-Usage.md) ou les deux, avec le paramètre **Sélectionner les outils** de la barre d’outils. Si vous exécutez Visual Studio Enterprise, vous pouvez également activer ou désactiver IntelliTrace dans **Outils / Options / IntelliTrace**.
 
-     ![Afficher les outils de diagnostics](~/docs/profiling/media/DiagToolsSelectTool.png "DiagToolsSelectTool")
+     ![Afficher les outils de diagnostics](~/profiling/media/DiagToolsSelectTool.png "DiagToolsSelectTool")
 
      Nous allons nous intéresser principalement à l’utilisation du processeur. Vérifiez donc que l’outil **Utilisation de l’UC** est activé (il est activé par défaut).
 
@@ -71,7 +71,7 @@ Dans cette rubrique, nous allons aborder l’analyse de l’utilisation du proce
 
      Lorsque l’application est chargée, la vue Résumé des outils de diagnostics s’affiche.
 
-     ![Onglet Résumé des outils de diagnostics](~/docs/profiling/media/DiagToolsSummaryTab.png "DiagToolsSummaryTab")
+     ![Onglet Résumé des outils de diagnostics](~/profiling/media/DiagToolsSummaryTab.png "DiagToolsSummaryTab")
 
      Pour plus d’informations sur les événements, consultez [Searching and filtering the Events tab of the Diagnostic Tools window](http://blogs.msdn.com/b/visualstudioalm/archive/2015/11/12/searching-and-filtering-the-events-tab-of-the-diagnostic-tools-window.aspx).
 
@@ -79,7 +79,7 @@ Dans cette rubrique, nous allons aborder l’analyse de l’utilisation du proce
 
 7.  Pendant que le débogueur est suspendu, activez la collecte des données d’utilisation du processeur, puis ouvrez l’onglet **Utilisation de l’UC**.
 
-     ![Outils de diagnostics - Activer le profilage de l’UC](~/docs/profiling/media/DiagToolsEnableCPUProfiling.png "DiagToolsEnableCPUProfiling")
+     ![Outils de diagnostics - Activer le profilage de l’UC](~/profiling/media/DiagToolsEnableCPUProfiling.png "DiagToolsEnableCPUProfiling")
 
      Lorsque vous choisissez **Activer le profilage de l’UC**, Visual Studio commence à enregistrer vos fonctions, ainsi que la durée de leur exécution. Vous pouvez uniquement afficher les données collectées lorsque votre application s’interrompt à un point d’arrêt.
 
@@ -89,15 +89,15 @@ Dans cette rubrique, nous allons aborder l’analyse de l’utilisation du proce
 
 9.  Sélectionnez la région que vous voulez analyser dans la chronologie de l’UC (il doit s’agir d’une région qui affiche des données de profilage).
 
-     ![Outils de diagnostics - Sélection d’un segment de temps](~/docs/profiling/media/DiagToolsSelectTimeSegment.png "DiagToolsSelectTimeSegment")
+     ![Outils de diagnostics - Sélection d’un segment de temps](~/profiling/media/DiagToolsSelectTimeSegment.png "DiagToolsSelectTimeSegment")
 
      Le profileur commence la préparation des données de thread. Attendez qu’elle se termine.
 
-     ![Outils de diagnostics - Préparation des threads](~/docs/profiling/media/DiagToolsPreparingThreads.png "DiagToolsPreparingThreads")
+     ![Outils de diagnostics - Préparation des threads](~/profiling/media/DiagToolsPreparingThreads.png "DiagToolsPreparingThreads")
   
      L’outil Utilisation de l’UC affiche le rapport sous l’onglet **Utilisation de l’UC**.
   
-     ![Outils de diagnostics - Onglet Utilisation de l’UC](~/docs/profiling/media/DiagToolsCPUUsageTab.png "DiagToolsCPUUsageTab")
+     ![Outils de diagnostics - Onglet Utilisation de l’UC](~/profiling/media/DiagToolsCPUUsageTab.png "DiagToolsCPUUsageTab")
 
      À ce stade, vous pouvez commencer à analyser les données.
 
@@ -107,7 +107,7 @@ Nous vous recommandons de commencer à analyser vos données en examinant la lis
 
 1. Dans la liste des fonctions, examinez celles qui effectuent le plus de travail.
 
-    ![Outils de diagnostics - Utilisation de l’UC - Liste des fonctions](~/docs/profiling/media/DiagToolsCPUUsageFunctionList.png "DiagToolsCPUUsageFunctionList")
+    ![Outils de diagnostics - Utilisation de l’UC - Liste des fonctions](~/profiling/media/DiagToolsCPUUsageFunctionList.png "DiagToolsCPUUsageFunctionList")
 
     > [!TIP]
     > Les fonctions sont classées par ordre et ce sont celles qui effectuent le plus de travail qui figurent en haut de la liste (elles ne sont pas classées selon leur ordre d’appel). Ainsi, vous pouvez identifier rapidement les fonctions avec les temps d’exécution les plus longs.
@@ -116,7 +116,7 @@ Nous vous recommandons de commencer à analyser vos données en examinant la lis
 
     Lorsque vous double-cliquez sur une fonction, la vue **Appelant/appelé** s’ouvre dans le volet gauche. 
 
-    ![Outils de diagnostics - Vue Appelant/appelé](~/docs/profiling/media/DiagToolsCallerCallee.png "DiagToolsCallerCallee")
+    ![Outils de diagnostics - Vue Appelant/appelé](~/profiling/media/DiagToolsCallerCallee.png "DiagToolsCallerCallee")
 
     Dans cette vue, la fonction sélectionnée apparaît dans le titre et dans la zone **Fonction active** (ici, GetNumber). La fonction qui a appelé la fonction active s’affiche sur la gauche sous **Fonctions appelantes**, et toutes les fonctions appelées par la fonction active s’affichent dans la zone **Fonctions appelées** située à droite. Vous pouvez sélectionner l’une ou l’autre de ces zones pour modifier la fonction active.
 
@@ -131,7 +131,7 @@ Nous vous recommandons de commencer à analyser vos données en examinant la lis
  
     Chaque zone numérotée dans l'illustration est en rapport avec une étape de la procédure.
   
-    ![Outils de diagnostics - Arborescence des appels](~/docs/profiling/media/DiagToolsCallTree.png "DiagToolsCallTree")
+    ![Outils de diagnostics - Arborescence des appels](~/profiling/media/DiagToolsCallTree.png "DiagToolsCallTree")
   
 |||
 |-|-|
@@ -154,7 +154,7 @@ Le code externe correspond aux fonctions des composants système et framework ex
   
 Si vous voulez afficher les chemins d’appel du code externe, choisissez **Afficher le code externe** dans la liste **Filtrer la vue**, puis **Appliquer**.  
   
-![Choisir Filtrer l’affichage, puis Afficher le code externe](~/docs/profiling/media/DiagToolsShowExternalCode.png "DiagToolsShowExternalCode")  
+![Choisir Filtrer l’affichage, puis Afficher le code externe](~/profiling/media/DiagToolsShowExternalCode.png "DiagToolsShowExternalCode")  
   
 N'oubliez pas que de nombreuses chaînes d'appel en code externe sont profondément imbriquées, la largeur de la colonne Nom de fonction ne peut pas dépasser la largeur d'affichage de presque tous les moniteurs d'ordinateur, sauf les plus larges. Si tel est le cas, les noms de fonction sont affichés sous forme de **[…]**.
   

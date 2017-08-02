@@ -35,7 +35,7 @@ Vous pouvez fournir plusieurs vue d'un document en créant des objets de vue dis
 ## Déterminer si les données de document est déjà ouverte  
  Le tableau en cours de exécution de \(RDT\) document dans des \(IDE\) outils d'environnement de développement intégré suivent si les données d'un document est déjà ouverte, comme illustré dans le diagramme suivant.  
   
- ![Graphique DocDataView](~/docs/extensibility/media/docdataview.gif "Docdataview")  
+ ![Graphique DocDataView](~/extensibility/media/docdataview.gif "Docdataview")  
 plusieurs vues  
   
  Par défaut, chaque vue \(objet de vue du document\) est contenue dans son propre frame de fenêtre \(<xref:Microsoft.VisualStudio.Shell.Interop.IVsWindowFrame>\).  Comme déjà indiqué, toutefois, les données du document peut être affiché dans plusieurs vues.  Pour cela, Visual Studio permet le transformateur rotatif pour déterminer si le document en question est déjà ouvert dans un éditeur.  Lorsque l'IDE appelle l' <xref:Microsoft.VisualStudio.Shell.Interop.IVsEditorFactory.CreateEditorInstance%2A> pour créer l'éditeur, une valeur non null retournée dans le paramètre d' `punkDocDataExisting` indique que le document est déjà ouvert dans un autre éditeur.  Pour plus d'informations sur la façon dont le transformateur rotatif fonctionne, consultez [Table de Document en cours d’exécution](../extensibility/internals/running-document-table.md).  

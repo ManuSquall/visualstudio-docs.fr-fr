@@ -67,11 +67,11 @@ Par convention, Visual Studio identifie les tests comme des méthodes dont le no
 
 1. L’Explorateur de tests recherche des tests dans votre projet et les affiche, comme indiqué ci-dessous. Double-cliquez sur un test pour ouvrir son fichier source.
 
-    ![Explorateur de tests indiquant le test_A par défaut](~/docs/python/media/unit-test-A.png)
+    ![Explorateur de tests indiquant le test_A par défaut](~/python/media/unit-test-A.png)
 
 1. Lorsque vous ajoutez d’autres tests à votre projet, vous pouvez organiser l’affichage dans l’Explorateur de tests à l’aide du menu Regrouper par de la barre d’outils :
 
-    ![Menu Regrouper par de la barre d’outils de l’Explorateur de tests](~/docs/python/media/unit-test-group-menu.png)
+    ![Menu Regrouper par de la barre d’outils de l’Explorateur de tests](~/python/media/unit-test-group-menu.png)
 
 1. Vous pouvez également saisir du texte dans le champ de recherche pour filtrer les tests par nom.
 
@@ -89,13 +89,13 @@ Les tests s’exécutent en arrière-plan et l’Explorateur de tests met à jou
 
 - Les tests réussis sont marqués par une coche verte, accompagnée du temps nécessaire à l’exécution du test :
 
-    ![Réussite de test_A](~/docs/python/media/unit-test-A-pass.png)
+    ![Réussite de test_A](~/python/media/unit-test-A-pass.png)
 
 - Les tests ayant échoué sont indiqués par une croix rouge accompagnée d’un lien **Sortie** qui affiche la sortie de la console et la sortie `unittest` de l’exécution du test :
 
-    ![Échec de test_A](~/docs/python/media/unit-test-A-fail.png)
+    ![Échec de test_A](~/python/media/unit-test-A-fail.png)
 
-    ![Échec de test_A avec motif](~/docs/python/media/unit-test-A-fail-reason.png)
+    ![Échec de test_A avec motif](~/python/media/unit-test-A-fail-reason.png)
 
 ## <a name="debugging-tests"></a>Débogage des tests
 
@@ -103,7 +103,7 @@ Les tests s’exécutent en arrière-plan et l’Explorateur de tests met à jou
 
 Pour démarrer le débogage, définissez un point d’arrêt initial dans votre code, puis cliquez avec le bouton droit sur le test (ou sur une sélection) dans l’Explorateur de tests et sélectionnez **Debug Selected Tests** (Déboguer les tests sélectionnés). Visual Studio démarre le débogueur Python comme il le ferait pour un code d’application.
 
-![Débogage d’un test](~/docs/python/media/unit-test-debugging.png)
+![Débogage d’un test](~/python/media/unit-test-debugging.png)
 
 Vous pouvez également utiliser les commandes **Analyser la couverture du code pour les tests sélectionnés** et **Profiler le test**, selon votre version de Visual Studio (voir la [matrice des fonctionnalités](python-in-visual-studio.md#features-matrix)).
 

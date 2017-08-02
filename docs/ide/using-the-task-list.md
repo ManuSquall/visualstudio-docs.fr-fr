@@ -65,7 +65,7 @@ Avec la **liste des tâches** , effectuez le suivi des commentaires de code qui 
   
 -   Dans le menu **Affichage**, choisissez **Liste des tâches** (clavier : Ctrl+\\,T).  
   
-     ![Fenêtre Liste des tâches](~/docs/ide/media/vs2015_task_list.png "vs2015_task_list")  
+     ![Fenêtre Liste des tâches](~/ide/media/vs2015_task_list.png "vs2015_task_list")  
   
 #### <a name="to-change-the-sort-order-of-the-list"></a>Pour modifier l'ordre de tri de la liste  
   
@@ -114,7 +114,7 @@ Avec la **liste des tâches** , effectuez le suivi des commentaires de code qui 
   
      La boîte de dialogue [Liste des tâches, Environnement, Options](../ide/reference/task-list-environment-options-dialog-box.md) s’affiche.  
   
-     ![Liste des tâches Visual Studio](~/docs/ide/media/vs2015_task_list_options.png "vs2015_task_list_options")  
+     ![Liste des tâches Visual Studio](~/ide/media/vs2015_task_list_options.png "vs2015_task_list_options")  
   
 3.  Dans la catégorie **Jetons** , dans la zone de texte **Nom** , entrez le nom du jeton, par exemple « BOGUE ».  
   
@@ -134,7 +134,7 @@ Avec la **liste des tâches** , effectuez le suivi des commentaires de code qui 
 ##  <a name="shortcuts"></a> Raccourcis  
  Un *raccourci* est un signet dans le code qui est suivi dans la **Liste des tâches** ; son icône est différente de celle d’un signet normal. Double-cliquez sur le raccourci dans la fenêtre **Liste des tâches** pour accéder à l'emplacement correspondant dans le code.  
   
- ![Icône de raccourci de la liste des tâches Visual Studio](~/docs/ide/media/vs2015_task_list_bookmark.png "vs2015_task_list_bookmark")  
+ ![Icône de raccourci de la liste des tâches Visual Studio](~/ide/media/vs2015_task_list_bookmark.png "vs2015_task_list_bookmark")  
   
 #### <a name="to-create-a-shortcut"></a>Pour créer un raccourci  
   

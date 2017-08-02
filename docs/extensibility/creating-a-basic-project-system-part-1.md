@@ -75,7 +75,7 @@ Dans Visual Studio, les projets sont les conteneurs que les développeurs utilis
   
 3.  Rendre l’icône distinctive. Cette icône s’affiche dans le **Nouveau projet** boîte de dialogue plus loin dans la procédure pas à pas.  
   
-     ![Icône de projet simple](~/docs/extensibility/media/simpleprojicon.png "SimpleProjIcon")  
+     ![Icône de projet simple](~/extensibility/media/simpleprojicon.png "SimpleProjIcon")  
   
 4.  L’icône Enregistrer et fermer l’éditeur d’icônes.  
   
@@ -471,7 +471,7 @@ Dans Visual Studio, les projets sont les conteneurs que les développeurs utilis
   
 2.  Dans le **propriétés** windows, réduire la bitmap de 16 par 16 pixels. Rendre le bitmap distinctive.  
   
-     ![Commande de projet simple](~/docs/extensibility/media/simpleprojprojectcomm.png "SimpleProjProjectComm")  
+     ![Commande de projet simple](~/extensibility/media/simpleprojprojectcomm.png "SimpleProjProjectComm")  
   
 3.  Dans le **propriétés** fenêtre, de modifier le **action de génération** de la bitmap à **ressource incorporée**.  
   
@@ -546,7 +546,7 @@ Dans Visual Studio, les projets sont les conteneurs que les développeurs utilis
   
 2.  Dans le projet nouvellement créé, notez que SimpleProjectNode.bmp est utilisé en tant que l’icône de nœud de projet.  
   
-     ![Nœud Projet simple &#45; Nouveau projet](~/docs/extensibility/media/simpleprojnewprojectnode.png "SimpleProjNewProjectNode")  
+     ![Nœud Projet simple &#45; Nouveau projet](~/extensibility/media/simpleprojnewprojectnode.png "SimpleProjNewProjectNode")  
   
 3.  Ouvrez le fichier Program.cs dans l’éditeur de code. Vous devez voir le code source qui ressemble au code suivant.  
   
@@ -649,6 +649,6 @@ Dans Visual Studio, les projets sont les conteneurs que les développeurs utilis
   
 6.  Démarrer le débogage du projet. Le nouveau projet doit compiler, exécuter et afficher « Hello VSX \!\!\! » dans la fenêtre de console.  
   
-     ![Commande de projet simple](~/docs/extensibility/media/simpleprojcommand.png "SimpleProjCommand")  
+     ![Commande de projet simple](~/extensibility/media/simpleprojcommand.png "SimpleProjCommand")  
   
  Félicitations \! Vous avez implémenté un système de base du projet managé.

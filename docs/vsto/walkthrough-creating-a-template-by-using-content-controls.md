@@ -87,19 +87,19 @@ caps.handback.revision: 42
     > [!NOTE]  
     >  Si l'onglet **Développeur** n'est pas visible, vous devez commencer par l'afficher.  Pour plus d'informations, consultez [Comment : afficher l'onglet Développeur sur le ruban](../vsto/how-to-show-the-developer-tab-on-the-ribbon.md).  
   
-6.  Dans le groupe **Contrôles**, cliquez sur le bouton **Texte** ![PlainTextContentControl](~/docs/vsto/media/plaintextcontrol.gif "PlainTextContentControl") pour ajouter <xref:Microsoft.Office.Tools.Word.PlainTextContentControl> dans la première cellule.  
+6.  Dans le groupe **Contrôles**, cliquez sur le bouton **Texte** ![PlainTextContentControl](~/vsto/media/plaintextcontrol.gif "PlainTextContentControl") pour ajouter <xref:Microsoft.Office.Tools.Word.PlainTextContentControl> dans la première cellule.  
   
 7.  Cliquez dans la deuxième cellule de la seconde colonne \(à côté de **Date d'embauche**\).  
   
-8.  Dans le groupe **Contrôles**, cliquez sur le bouton **Sélecteur de dates** ![DatePickerContentControl](~/docs/vsto/media/datepicker.gif "DatePickerContentControl") pour ajouter <xref:Microsoft.Office.Tools.Word.DatePickerContentControl> dans la deuxième cellule.  
+8.  Dans le groupe **Contrôles**, cliquez sur le bouton **Sélecteur de dates** ![DatePickerContentControl](~/vsto/media/datepicker.gif "DatePickerContentControl") pour ajouter <xref:Microsoft.Office.Tools.Word.DatePickerContentControl> dans la deuxième cellule.  
   
 9. Cliquez dans la troisième cellule de la seconde colonne \(à côté de **Titre**\).  
   
-10. Dans le groupe **Contrôles**, cliquez sur le bouton **Zone de liste modifiable** ![ComboBoxContentControl](~/docs/vsto/media/combobox.gif "ComboBoxContentControl") pour ajouter <xref:Microsoft.Office.Tools.Word.ComboBoxContentControl> dans la troisième cellule.  
+10. Dans le groupe **Contrôles**, cliquez sur le bouton **Zone de liste modifiable** ![ComboBoxContentControl](~/vsto/media/combobox.gif "ComboBoxContentControl") pour ajouter <xref:Microsoft.Office.Tools.Word.ComboBoxContentControl> dans la troisième cellule.  
   
 11. Cliquez dans la dernière cellule de la seconde colonne \(à côté de **Image**\).  
   
-12. Dans le groupe **Contrôles**, cliquez sur le bouton **Contrôle du contenu d'image** ![PictureContentControl](~/docs/vsto/media/pictcontentcontrol.gif "PictureContentControl") pour ajouter <xref:Microsoft.Office.Tools.Word.PictureContentControl> dans la dernière cellule.  
+12. Dans le groupe **Contrôles**, cliquez sur le bouton **Contrôle du contenu d'image** ![PictureContentControl](~/vsto/media/pictcontentcontrol.gif "PictureContentControl") pour ajouter <xref:Microsoft.Office.Tools.Word.PictureContentControl> dans la dernière cellule.  
   
 ## Création du tableau Commentaires des clients  
  Créez un tableau contenant trois types différents de contrôles de contenu, dans lequel l'utilisateur peut entrer des informations sur les commentaires des clients.  
@@ -124,15 +124,15 @@ caps.handback.revision: 42
   
 6.  Dans le ruban, cliquez sur l'onglet **Développeur**.  
   
-7.  Dans le groupe **Contrôles**, cliquez sur le bouton **Texte** ![PlainTextContentControl](~/docs/vsto/media/plaintextcontrol.gif "PlainTextContentControl") pour ajouter <xref:Microsoft.Office.Tools.Word.PlainTextContentControl> dans la première cellule.  
+7.  Dans le groupe **Contrôles**, cliquez sur le bouton **Texte** ![PlainTextContentControl](~/vsto/media/plaintextcontrol.gif "PlainTextContentControl") pour ajouter <xref:Microsoft.Office.Tools.Word.PlainTextContentControl> dans la première cellule.  
   
 8.  Cliquez dans la deuxième cellule de la seconde colonne \(à côté de **Satisfaction**\).  
   
-9. Dans le groupe **Contrôles**, cliquez sur le bouton **Liste déroulante** ![DropDownListContentControl](~/docs/vsto/media/dropdownlist.gif "DropDownListContentControl") pour ajouter <xref:Microsoft.Office.Tools.Word.DropDownListContentControl> dans la deuxième cellule.  
+9. Dans le groupe **Contrôles**, cliquez sur le bouton **Liste déroulante** ![DropDownListContentControl](~/vsto/media/dropdownlist.gif "DropDownListContentControl") pour ajouter <xref:Microsoft.Office.Tools.Word.DropDownListContentControl> dans la deuxième cellule.  
   
 10. Cliquez dans la dernière cellule de la seconde colonne \(à côté de **Commentaires**\).  
   
-11. Dans le groupe **Contrôles**, cliquez sur le bouton **Texte enrichi** ![RichTextContentControl](~/docs/vsto/media/richtextcontrol.gif "RichTextContentControl") pour ajouter <xref:Microsoft.Office.Tools.Word.RichTextContentControl> dans la dernière cellule.  
+11. Dans le groupe **Contrôles**, cliquez sur le bouton **Texte enrichi** ![RichTextContentControl](~/vsto/media/richtextcontrol.gif "RichTextContentControl") pour ajouter <xref:Microsoft.Office.Tools.Word.RichTextContentControl> dans la dernière cellule.  
   
 ## Remplissage par programmation de la zone de liste modifiable et de la liste déroulante  
  Vous pouvez initialiser les contrôles de contenu au moment du design en utilisant la fenêtre **Propriétés** de [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)].  Vous pouvez également les initialiser au moment de l'exécution, ce qui vous permet de définir leurs états initiaux de manière dynamique.  Pour cette procédure pas à pas, utilisez du code pour renseigner les entrées des objets <xref:Microsoft.Office.Tools.Word.ComboBoxContentControl> et <xref:Microsoft.Office.Tools.Word.DropDownListContentControl> au moment de l'exécution, pour être en mesure de voir comment ces objets fonctionnent.  

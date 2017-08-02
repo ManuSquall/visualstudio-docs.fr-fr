@@ -38,7 +38,7 @@ caps.handback.revision: 46
   
 -   [Exposition d'un code qui n'est pas dans une classe d'élément hôte](#NonHostItem)  
   
- ![lien vers la vidéo](~/docs/data-tools/media/playvideo.gif "lien vers la vidéo") Pour une démonstration vidéo connexe, consultez [How Do I: Call VSTO Code from VBA?](http://go.microsoft.com/fwlink/?LinkId=136757) \(page éventuellement en anglais\).  
+ ![lien vers la vidéo](~/data-tools/media/playvideo.gif "lien vers la vidéo") Pour une démonstration vidéo connexe, consultez [How Do I: Call VSTO Code from VBA?](http://go.microsoft.com/fwlink/?LinkId=136757) \(page éventuellement en anglais\).  
   
 ##  <a name="HostItemCode"></a> Exposition d'un code dans une classe d'élément hôte  
  Pour permettre au code VBA d'appeler le code Visual Basic dans une classe d'élément hôte, affectez la valeur **True** à la propriété **EnableVbaCallers** de l'élément hôte.  

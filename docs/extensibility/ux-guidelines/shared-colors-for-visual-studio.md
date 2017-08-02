@@ -63,7 +63,7 @@ Lorsque vous utilisez une barre de commandes de Visual Studio standard dans votr
 
 **Bouton : état standard**
 
-![Bouton standard](~/docs/extensibility/ux-guidelines/media/03.03.Button.Standard.png "03.03.Button.Standard")<br />Bouton standard
+![Bouton standard](~/extensibility/ux-guidelines/media/03.03.Button.Standard.png "03.03.Button.Standard")<br />Bouton standard
 
 | Élément | Nom du jeton : Category.color |
 | --- | --- |
@@ -72,7 +72,7 @@ Lorsque vous utilisez une barre de commandes de Visual Studio standard dans votr
 
 **Bouton : état par défaut**
 
-![Bouton par défaut](~/docs/extensibility/ux-guidelines/media/03.03.Button.Default.png "03.03.Button.Default")<br />Bouton par défaut
+![Bouton par défaut](~/extensibility/ux-guidelines/media/03.03.Button.Default.png "03.03.Button.Default")<br />Bouton par défaut
 
 | Élément | Nom du jeton : Category.color | 
 | --- | --- | 
@@ -81,7 +81,7 @@ Lorsque vous utilisez une barre de commandes de Visual Studio standard dans votr
 
 **Bouton : état désactivé**  
 
-![Bouton désactivé](~/docs/extensibility/ux-guidelines/media/03.03.Button.Disabled.png "03.03.Button.Disabled")<br />Bouton désactivé  
+![Bouton désactivé](~/extensibility/ux-guidelines/media/03.03.Button.Disabled.png "03.03.Button.Disabled")<br />Bouton désactivé  
 
 | Élément | Nom du jeton : Category.color |
 | --- | --- |
@@ -90,7 +90,7 @@ Lorsque vous utilisez une barre de commandes de Visual Studio standard dans votr
 
 **Bouton : état de pointage**  
 
-![Bouton au pointage](~/docs/extensibility/ux-guidelines/media/03.03.Button.hover.png "03.03.Button.hover")<br />Bouton au pointage  
+![Bouton au pointage](~/extensibility/ux-guidelines/media/03.03.Button.hover.png "03.03.Button.hover")<br />Bouton au pointage  
 
 | Élément | Nom du jeton : Category.color |
 | --- | --- |
@@ -99,7 +99,7 @@ Lorsque vous utilisez une barre de commandes de Visual Studio standard dans votr
 
 **Bouton : état enfoncé**  
 
-![Bouton enfoncé](~/docs/extensibility/ux-guidelines/media/03.03.Button.Pressed.png "03.03.Button.Pressed")<br />Bouton enfoncé  
+![Bouton enfoncé](~/extensibility/ux-guidelines/media/03.03.Button.Pressed.png "03.03.Button.Pressed")<br />Bouton enfoncé  
 
 | Élément | Nom du jeton : Category.color |
 | --- | --- |
@@ -108,7 +108,7 @@ Lorsque vous utilisez une barre de commandes de Visual Studio standard dans votr
 
 **Bouton : état ayant le focus**  
 
-![Bouton actif](~/docs/extensibility/ux-guidelines/media/03.03.Button.Focused.png "03.03.Button.Focused")<br />Bouton actif  
+![Bouton actif](~/extensibility/ux-guidelines/media/03.03.Button.Focused.png "03.03.Button.Focused")<br />Bouton actif  
 
 | Élément | Nom du jeton : Category.color |
 | --- | --- |
@@ -340,7 +340,7 @@ Les en-têtes de colonnes comprennent un arrière-plan, une bordure, le texte du
 #### <a name="instructional-text"></a>Texte d’instructions
 Texte d’instructions donne une explication principale visible quoi faire dans une page de boîte de dialogue ou document.
 
-![Texte d’instructions par défaut](~/docs/extensibility/ux-guidelines/media/0303_InstructionalText.png "0303_InstructionalText.png")<br />Texte d’instructions par défaut
+![Texte d’instructions par défaut](~/extensibility/ux-guidelines/media/0303_InstructionalText.png "0303_InstructionalText.png")<br />Texte d’instructions par défaut
 
 | Élément | Nom du jeton : Category.color |
 | --- | --- |
@@ -349,7 +349,7 @@ Texte d’instructions donne une explication principale visible quoi faire dans 
 #### <a name="secondary-instructional-text"></a>Texte d’instructions secondaire
 Dans les pages de document avec un grand nombre de contrôles et texte, du texte d’instruction utilise une valeur de couleur différente. Cela permet de transmettre les informations qui sont plus importantes et de réduire la densité globale des éléments d’interface utilisateur. (Voir aussi la ci-dessous la section sur le texte d’indication.)
 
-![Texte d’instructions secondaire](~/docs/extensibility/ux-guidelines/media/0303_SecondaryInstructionalText.png "0303_SecondaryInstructionalText.png")<br />Texte d’instructions secondaire
+![Texte d’instructions secondaire](~/extensibility/ux-guidelines/media/0303_SecondaryInstructionalText.png "0303_SecondaryInstructionalText.png")<br />Texte d’instructions secondaire
 
 | Élément | Nom du jeton : Category.color |
 | --- | --- |
@@ -360,7 +360,7 @@ Texte d’information s’affiche dans un contrôle vide, en dessous d’un cont
 
 **Texte d’indication de valeur par défaut**
 
-![Texte d’indication de valeur par défaut](~/docs/extensibility/ux-guidelines/media/0303_HintText.png "0303_HintText.png")<br />Texte d’indication de valeur par défaut
+![Texte d’indication de valeur par défaut](~/extensibility/ux-guidelines/media/0303_HintText.png "0303_HintText.png")<br />Texte d’indication de valeur par défaut
 
 | Élément | Nom du jeton : Category.color |
 | --- | --- |
@@ -368,7 +368,7 @@ Texte d’information s’affiche dans un contrôle vide, en dessous d’un cont
 
 **Texte d’indication requis**
 
-![Texte d’indication requis](~/docs/extensibility/ux-guidelines/media/0303_RequiredHintText.png "0303_RequiredHintText.png")<br />Texte d’indication requis
+![Texte d’indication requis](~/extensibility/ux-guidelines/media/0303_RequiredHintText.png "0303_RequiredHintText.png")<br />Texte d’indication requis
 
 | Élément | Nom du jeton : Category.color |
 | --- | --- |
@@ -379,7 +379,7 @@ Texte d’information s’affiche dans un contrôle vide, en dessous d’un cont
 
 > Consultez [zones de recherche](../../extensibility/ux-guidelines/shared-colors-for-visual-studio.md#BKMK_SearchBoxes) pour les autres jetons de couleur associées au contrôle de recherche.
 
-![Texte de contrôle de zone de recherche](~/docs/extensibility/ux-guidelines/media/0303_SearchBoxControl.png "0303_SearchBoxControl.png")<br />Texte de contrôle de zone de recherche
+![Texte de contrôle de zone de recherche](~/extensibility/ux-guidelines/media/0303_SearchBoxControl.png "0303_SearchBoxControl.png")<br />Texte de contrôle de zone de recherche
 
 | Élément | Nom du jeton : Category.color |
 | --- | --- |
@@ -447,7 +447,7 @@ Les barres d’informations sont utilisées pour fournir plus d’informations s
 
 **Fermeture de la barre d’informations (&times;) bouton : état par défaut**
 
-![Valeur par défaut de la barre d’informations fermer (&times;) bouton](~/docs/extensibility/ux-guidelines/media/0303_InfobarCloseDefault.png "0303_InfobarCloseDefault.png")<br />Valeur par défaut de la barre d’informations fermer (&times;) bouton
+![Valeur par défaut de la barre d’informations fermer (&times;) bouton](~/extensibility/ux-guidelines/media/0303_InfobarCloseDefault.png "0303_InfobarCloseDefault.png")<br />Valeur par défaut de la barre d’informations fermer (&times;) bouton
 
 | Élément | Nom du jeton : Category.color |
 | --- | --- |
@@ -457,7 +457,7 @@ Les barres d’informations sont utilisées pour fournir plus d’informations s
 
 **Fermeture de la barre d’informations (&times;) bouton : pointez avec état**
 
-![Fermeture de la barre d’informations (&times;) bouton au pointage](~/docs/extensibility/ux-guidelines/media/0303_InfobarCloseHover.png "0303_InfobarCloseHover.png")<br />Fermeture de la barre d’informations (&times;) bouton au pointage
+![Fermeture de la barre d’informations (&times;) bouton au pointage](~/extensibility/ux-guidelines/media/0303_InfobarCloseHover.png "0303_InfobarCloseHover.png")<br />Fermeture de la barre d’informations (&times;) bouton au pointage
 
 | Élément | Nom du jeton : Category.color |
 | --- | --- |
@@ -467,7 +467,7 @@ Les barres d’informations sont utilisées pour fournir plus d’informations s
 
 **Fermeture de la barre d’informations (&times;) bouton : état enfoncé**
 
-![Utilisateur appuie sur la barre d’informations fermer (&times;) bouton](~/docs/extensibility/ux-guidelines/media/0303_InfobarClosePressed.png "0303_InfobarClosePressed.png")<br />Utilisateur appuie sur la barre d’informations fermer (&times;) bouton
+![Utilisateur appuie sur la barre d’informations fermer (&times;) bouton](~/extensibility/ux-guidelines/media/0303_InfobarClosePressed.png "0303_InfobarClosePressed.png")<br />Utilisateur appuie sur la barre d’informations fermer (&times;) bouton
 
 | Élément | Nom du jeton : Category.color |
 | --- | --- |
@@ -477,7 +477,7 @@ Les barres d’informations sont utilisées pour fournir plus d’informations s
 
 **Bouton de lien hypertexte de barre d’informations : état par défaut**
 
-![Bouton de lien hypertexte de barre d’informations par défaut](~/docs/extensibility/ux-guidelines/media/0303_InfobarHyperlinkButtonDefault.png "0303_InfobarHyperlinkButtonDefault.png")<br />Bouton de lien hypertexte de barre d’informations par défaut
+![Bouton de lien hypertexte de barre d’informations par défaut](~/extensibility/ux-guidelines/media/0303_InfobarHyperlinkButtonDefault.png "0303_InfobarHyperlinkButtonDefault.png")<br />Bouton de lien hypertexte de barre d’informations par défaut
 
 | Élément | Nom du jeton : Category.color |
 | --- | --- |
@@ -485,7 +485,7 @@ Les barres d’informations sont utilisées pour fournir plus d’informations s
 
 **Bouton de lien hypertexte de barre d’informations : pointez avec état**
 
-![Bouton de lien hypertexte de barre d’informations sur pointage](~/docs/extensibility/ux-guidelines/media/0303_InfobarHyperlinkButtonHover.png "0303_InfobarHyperlinkButtonHover.png")<br />Bouton de lien hypertexte de barre d’informations sur pointage
+![Bouton de lien hypertexte de barre d’informations sur pointage](~/extensibility/ux-guidelines/media/0303_InfobarHyperlinkButtonHover.png "0303_InfobarHyperlinkButtonHover.png")<br />Bouton de lien hypertexte de barre d’informations sur pointage
 
 | Élément | Nom du jeton : Category.color |
 | --- | --- |
@@ -493,7 +493,7 @@ Les barres d’informations sont utilisées pour fournir plus d’informations s
 
 **Bouton de lien hypertexte de barre d’informations : état enfoncé**
 
-![Bouton de lien hypertexte enfoncé de barre d’informations](~/docs/extensibility/ux-guidelines/media/0303_InfobarHyperlinkButtonPressed.png "0303_InfobarHyperlinkButtonPressed.png")<br />Bouton de lien hypertexte enfoncé de barre d’informations
+![Bouton de lien hypertexte enfoncé de barre d’informations](~/extensibility/ux-guidelines/media/0303_InfobarHyperlinkButtonPressed.png "0303_InfobarHyperlinkButtonPressed.png")<br />Bouton de lien hypertexte enfoncé de barre d’informations
 
 | Élément | Nom du jeton : Category.color |
 | --- | --- |
@@ -501,7 +501,7 @@ Les barres d’informations sont utilisées pour fournir plus d’informations s
 
 **Un lien hypertexte de barre d’informations en ligne (au sein d’une phrase) : état par défaut**
 
-![Bouton de lien hypertexte de barre d’informations d’inline par défaut](~/docs/extensibility/ux-guidelines/media/0303_InfobarHyperlinkButtonDefault.png "0303_InfobarHyperlinkButtonDefault.png")<br />Bouton de lien hypertexte de barre d’informations d’inline par défaut
+![Bouton de lien hypertexte de barre d’informations d’inline par défaut](~/extensibility/ux-guidelines/media/0303_InfobarHyperlinkButtonDefault.png "0303_InfobarHyperlinkButtonDefault.png")<br />Bouton de lien hypertexte de barre d’informations d’inline par défaut
 
 | Élément | Nom du jeton : Category.color |
 | --- | --- |
@@ -509,7 +509,7 @@ Les barres d’informations sont utilisées pour fournir plus d’informations s
 
 **Un lien hypertexte de barre d’informations en ligne (au sein d’une phrase) : pointez avec état**
 
-![Bouton de lien hypertexte inline de barre d’informations sur pointage](~/docs/extensibility/ux-guidelines/media/0303_InfobarHyperlinkInlineHover.png "0303_InfobarHyperlinkInlineHover.png")<br />Bouton de lien hypertexte inline de barre d’informations sur pointage
+![Bouton de lien hypertexte inline de barre d’informations sur pointage](~/extensibility/ux-guidelines/media/0303_InfobarHyperlinkInlineHover.png "0303_InfobarHyperlinkInlineHover.png")<br />Bouton de lien hypertexte inline de barre d’informations sur pointage
 
 | Élément | Nom du jeton : Category.color |
 | --- | --- |
@@ -517,7 +517,7 @@ Les barres d’informations sont utilisées pour fournir plus d’informations s
 
 **Un lien hypertexte de barre d’informations en ligne (au sein d’une phrase) : état enfoncé**
 
-![Bouton de barre d’informations en ligne lien hypertexte enfoncé](~/docs/extensibility/ux-guidelines/media/0303_InfobarHyperlinkInlinePressed.png "0303_InfobarHyperlinkInlinePressed.png")<br />Bouton de barre d’informations en ligne lien hypertexte enfoncé
+![Bouton de barre d’informations en ligne lien hypertexte enfoncé](~/extensibility/ux-guidelines/media/0303_InfobarHyperlinkInlinePressed.png "0303_InfobarHyperlinkInlinePressed.png")<br />Bouton de barre d’informations en ligne lien hypertexte enfoncé
 
 | Élément | Nom du jeton : Category.color |
 | --- | --- |
@@ -525,7 +525,7 @@ Les barres d’informations sont utilisées pour fournir plus d’informations s
 
 **Bouton de barre d’informations : état par défaut**
 
-![Bouton de barre d’informations par défaut](~/docs/extensibility/ux-guidelines/media/0303_InfobarButtonDefault.png "0303_InfobarButtonDefault.png")<br />Bouton de barre d’informations par défaut
+![Bouton de barre d’informations par défaut](~/extensibility/ux-guidelines/media/0303_InfobarButtonDefault.png "0303_InfobarButtonDefault.png")<br />Bouton de barre d’informations par défaut
 
 | Élément | Nom du jeton : Category.color |
 | --- | --- |
@@ -535,7 +535,7 @@ Les barres d’informations sont utilisées pour fournir plus d’informations s
 
 **Bouton de barre d’informations : pointez avec état**
 
-![Bouton de barre d’informations sur pointage](~/docs/extensibility/ux-guidelines/media/0303_InfobarButtonHover.png "0303_InfobarButtonHover.png")<br />Bouton de barre d’informations sur pointage
+![Bouton de barre d’informations sur pointage](~/extensibility/ux-guidelines/media/0303_InfobarButtonHover.png "0303_InfobarButtonHover.png")<br />Bouton de barre d’informations sur pointage
 
 | Élément | Nom du jeton : Category.color |
 | --- | --- |
@@ -545,7 +545,7 @@ Les barres d’informations sont utilisées pour fournir plus d’informations s
 
 **Bouton de barre d’informations : état enfoncé**
 
-![Bouton de barre d’informations enfoncé](~/docs/extensibility/ux-guidelines/media/0303_InfobarButtonPressed.png "0303_InfobarButtonPressed.png")<br />Bouton de barre d’informations enfoncé
+![Bouton de barre d’informations enfoncé](~/extensibility/ux-guidelines/media/0303_InfobarButtonPressed.png "0303_InfobarButtonPressed.png")<br />Bouton de barre d’informations enfoncé
 
 | Élément | Nom du jeton : Category.color |
 | --- | --- |
@@ -555,7 +555,7 @@ Les barres d’informations sont utilisées pour fournir plus d’informations s
 
 **Bouton de barre d’informations : l’état désactivé**
 
-![Bouton de barre d’informations désactivé](~/docs/extensibility/ux-guidelines/media/0303_InfobarButtonDisabled.png "0303_InfobarButtonDisabled.png")<br />Bouton de barre d’informations désactivé
+![Bouton de barre d’informations désactivé](~/extensibility/ux-guidelines/media/0303_InfobarButtonDisabled.png "0303_InfobarButtonDisabled.png")<br />Bouton de barre d’informations désactivé
 
 | Élément | Nom du jeton : Category.color |
 | --- | --- |
@@ -565,7 +565,7 @@ Les barres d’informations sont utilisées pour fournir plus d’informations s
 
 **Bouton de barre d’informations : état de focus**
 
-![Bouton de barre d’informations ayant le focus](~/docs/extensibility/ux-guidelines/media/0303_InfobarButtonFocus.png "0303_InfobarButtonFocus.png")<br />Bouton de barre d’informations ayant le focus
+![Bouton de barre d’informations ayant le focus](~/extensibility/ux-guidelines/media/0303_InfobarButtonFocus.png "0303_InfobarButtonFocus.png")<br />Bouton de barre d’informations ayant le focus
 
 | Élément | Nom du jeton : Category.color |
 | --- | --- |
@@ -1128,7 +1128,7 @@ Les titres de menu comprennent un arrière-plan, une bordure et le texte du titr
 #### <a name="menu-items"></a>Éléments de menu
 Un élément de menu individuel comporte le texte du menu et éventuellement une icône, une case à cocher ou un glyphe de sous-menu. Sa couleur d’arrière-plan et de texte change au passage du curseur de la souris. Ce jeton de couleur est une paire arrière-plan/premier plan.  
 
-![Ligne rouge d’éléments de menu](~/docs/extensibility/ux-guidelines/media/0303-009_menuitemredline.png "0303-009_MenuItemRedline")  
+![Ligne rouge d’éléments de menu](~/extensibility/ux-guidelines/media/0303-009_menuitemredline.png "0303-009_MenuItemRedline")  
 
 | Utilisez... | N’utilisez pas...  |
 |---|---|
@@ -1137,7 +1137,7 @@ Un élément de menu individuel comporte le texte du menu et éventuellement une
 
 **Éléments de menu : état par défaut**
 
-![Éléments de menu par défaut](~/docs/extensibility/ux-guidelines/media/0303-010_menudefault.png "0303-010_MenuDefault")<br />Éléments de menu par défaut  
+![Éléments de menu par défaut](~/extensibility/ux-guidelines/media/0303-010_menudefault.png "0303-010_MenuDefault")<br />Éléments de menu par défaut  
 
 | Élément | Nom du jeton : Category.color |
 | --- | --- |
@@ -1153,7 +1153,7 @@ Un élément de menu individuel comporte le texte du menu et éventuellement une
 
 ![Menu activé](../../extensibility/ux-guidelines/media/0303-011_menuchecked.png "0303-011_MenuChecked")<br />Élément de menu activé
 
-![Menu sélectionné](~/docs/extensibility/ux-guidelines/media/0303-012_menuselected.png "0303-012_MenuSelected")<br />Élément de menu sélectionné    
+![Menu sélectionné](~/extensibility/ux-guidelines/media/0303-012_menuselected.png "0303-012_MenuSelected")<br />Élément de menu sélectionné    
 
 | Élément | Nom du jeton : Category.color |
 | --- | --- |
@@ -1238,7 +1238,7 @@ Un groupe de barres de commandes se compose d’un ensemble de contrôles de bar
 
 **Icône de commande : état par défaut**  
 
-![Valeur par défaut icône de commande](~/docs/extensibility/ux-guidelines/media/0303-023_commandicondefault.png "0303-023_CommandIconDefault")<br />Icône de commande par défaut
+![Valeur par défaut icône de commande](~/extensibility/ux-guidelines/media/0303-023_commandicondefault.png "0303-023_CommandIconDefault")<br />Icône de commande par défaut
 
 | Élément | Nom du jeton : Category.color |
 | --- | --- |

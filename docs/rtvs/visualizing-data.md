@@ -41,7 +41,7 @@ ms.lasthandoff: 05/12/2017
 
 Le traçage est une partie essentielle du flux de travail d’un scientifique des données. Dans les Outils R pour Visual Studio (RTVS), toutes les activités de traçage sont centrées sur une ou plusieurs fenêtres de traçage, qui sont conçues pour améliorer votre productivité avec cette activité.
 
-![Image de traçage](~/docs/rtvs/media/plotting-hero-image.png)
+![Image de traçage](~/rtvs/media/plotting-hero-image.png)
 
 Dans cette rubrique :
 
@@ -58,7 +58,7 @@ La vidéo suivante (2m 02s) fournit une rapide présentation du traçage dans RT
 
 Une fenêtre de tracés contient une série de tracés, où chaque tracé est généré par une commande `plot`. Par exemple, si vous utilisez `plot(1:100)`, une nouvelle fenêtre de tracés est créée si aucune n’est disponible actuellement :
 
-![Tracé linéaire de 1 à 100](~/docs/rtvs/media/plotting-1-to-100.png)
+![Tracé linéaire de 1 à 100](~/rtvs/media/plotting-1-to-100.png)
 
 Techniquement parlant, les commandes `plot` R affichent leur sortie sur un périphérique d’affichage R. Une fenêtre de tracés restitue le contenu d’un périphérique graphique R, c’est pourquoi un numéro de périphérique est affecté à chaque fenêtre de tracés.
 
@@ -76,16 +76,16 @@ La barre d’outils de la fenêtre de tracés contient des commandes applicables
 
 | Bouton | Commande | Description | 
 | --- | --- | --- |
-| ![Bouton Nouvelle fenêtre de tracés](~/docs/rtvs/media/plotting-toolbar-01-new-plot-window.png) | Nouvelle fenêtre de tracés | Crée une fenêtre de tracés distincte avec son propre historique. Voir [Plusieurs fenêtres de tracés](#multiple-plot-windows). |
-| ![Bouton Activer la fenêtre de tracés](~/docs/rtvs/media/plotting-toolbar-02-activate-plot-window.png) | Activer la fenêtre de tracés | Définit la fenêtre de tracés active comme fenêtre active, afin que les commandes `plot` ultérieures soient affichées dans cette fenêtre. Voir [Plusieurs fenêtres de tracés](#multiple-plot-windows). Voir [Plusieurs fenêtres de tracés](#multiple-plot-windows). |
-| ![Bouton Fenêtre d’historique des tracés](~/docs/rtvs/media/plotting-toolbar-03-plot-history.png) | Fenêtre d’historique des tracés | Ouvre une fenêtre avec tous les tracés dans l’historique affichés sous forme de miniatures. Voir [Historique de tracés](#plot-history). |
-| ![Boutons Historique des tracés](~/docs/rtvs/media/plotting-toolbar-04-plot-history-arrows.png) | Tracé précédent/suivant |  Accès au tracé précédent ou suivant dans l’historique. Vous pouvez également parcourir l’historique avec Ctrl+Alt+F11 (Précédent) et Ctrl+Alt+F12 (Suivant). Voir [Historique de tracés](#plot-history). |
-| ![Bouton Enregistrer en tant qu’image](~/docs/rtvs/media/plotting-toolbar-05-save-as-image.png)| Enregistrer en tant qu’image | Invite à entrer un nom de fichier et enregistre le tracé actuel (le contenu de la fenêtre, à la taille de la fenêtre) dans un fichier image. Les formats disponibles sont `.png`, `.jpg`, `.bmp` et `.tif`. |
-| ![Bouton Enregistrer au format PDF](~/docs/rtvs/media/plotting-toolbar-06-save-as-pdf.png)| Enregistrer au format PDF | Enregistre le tracé actuel dans un fichier PDF, à l’aide de la taille de fenêtre actuelle. Le tracé sera réaffiché si le fichier PDF est mis à l’échelle. |
-| ![Bouton Copier en tant qu’image bitmap](~/docs/rtvs/media/plotting-toolbar-07-copy-as-bitmap.png)| Copier en tant qu’image bitmap | Copie le tracé dans le Presse-papiers sous forme de bitmap raster, à l’aide de la taille de fenêtre actuelle. | 
-| ![Bouton Copier en tant que métafichier](~/docs/rtvs/media/plotting-toolbar-08-copy-as-metafile.png)| Copier en tant que métafichier | Copie le tracé dans le Presse-papiers en tant que [métafichier Windows](https://en.wikipedia.org/wiki/Windows_Metafile) (Wikipedia). | 
-| ![Bouton Supprimer le tracé](~/docs/rtvs/media/plotting-toolbar-09-remove-plot.png)| Supprimer le tracé | Supprime le tracé actuel de l’historique. |
-| ![Bouton Effacer tous les tracés](~/docs/rtvs/media/plotting-toolbar-10-clear-all-plots.png) | Effacer tous les tracés | Supprime tous les tracés de l’historique (affiche une invite de confirmation). |
+| ![Bouton Nouvelle fenêtre de tracés](~/rtvs/media/plotting-toolbar-01-new-plot-window.png) | Nouvelle fenêtre de tracés | Crée une fenêtre de tracés distincte avec son propre historique. Voir [Plusieurs fenêtres de tracés](#multiple-plot-windows). |
+| ![Bouton Activer la fenêtre de tracés](~/rtvs/media/plotting-toolbar-02-activate-plot-window.png) | Activer la fenêtre de tracés | Définit la fenêtre de tracés active comme fenêtre active, afin que les commandes `plot` ultérieures soient affichées dans cette fenêtre. Voir [Plusieurs fenêtres de tracés](#multiple-plot-windows). Voir [Plusieurs fenêtres de tracés](#multiple-plot-windows). |
+| ![Bouton Fenêtre d’historique des tracés](~/rtvs/media/plotting-toolbar-03-plot-history.png) | Fenêtre d’historique des tracés | Ouvre une fenêtre avec tous les tracés dans l’historique affichés sous forme de miniatures. Voir [Historique de tracés](#plot-history). |
+| ![Boutons Historique des tracés](~/rtvs/media/plotting-toolbar-04-plot-history-arrows.png) | Tracé précédent/suivant |  Accès au tracé précédent ou suivant dans l’historique. Vous pouvez également parcourir l’historique avec Ctrl+Alt+F11 (Précédent) et Ctrl+Alt+F12 (Suivant). Voir [Historique de tracés](#plot-history). |
+| ![Bouton Enregistrer en tant qu’image](~/rtvs/media/plotting-toolbar-05-save-as-image.png)| Enregistrer en tant qu’image | Invite à entrer un nom de fichier et enregistre le tracé actuel (le contenu de la fenêtre, à la taille de la fenêtre) dans un fichier image. Les formats disponibles sont `.png`, `.jpg`, `.bmp` et `.tif`. |
+| ![Bouton Enregistrer au format PDF](~/rtvs/media/plotting-toolbar-06-save-as-pdf.png)| Enregistrer au format PDF | Enregistre le tracé actuel dans un fichier PDF, à l’aide de la taille de fenêtre actuelle. Le tracé sera réaffiché si le fichier PDF est mis à l’échelle. |
+| ![Bouton Copier en tant qu’image bitmap](~/rtvs/media/plotting-toolbar-07-copy-as-bitmap.png)| Copier en tant qu’image bitmap | Copie le tracé dans le Presse-papiers sous forme de bitmap raster, à l’aide de la taille de fenêtre actuelle. | 
+| ![Bouton Copier en tant que métafichier](~/rtvs/media/plotting-toolbar-08-copy-as-metafile.png)| Copier en tant que métafichier | Copie le tracé dans le Presse-papiers en tant que [métafichier Windows](https://en.wikipedia.org/wiki/Windows_Metafile) (Wikipedia). | 
+| ![Bouton Supprimer le tracé](~/rtvs/media/plotting-toolbar-09-remove-plot.png)| Supprimer le tracé | Supprime le tracé actuel de l’historique. |
+| ![Bouton Effacer tous les tracés](~/rtvs/media/plotting-toolbar-10-clear-all-plots.png) | Effacer tous les tracés | Supprime tous les tracés de l’historique (affiche une invite de confirmation). |
 
 ## <a name="multiple-plot-windows"></a>Plusieurs fenêtres de tracés
 
@@ -104,7 +104,7 @@ Les commandes de tracés sont conservées dans l’historique de tracés pour ch
 Pour voir l’ensemble des tracés, ouvrez la fenêtre d’historique de tracés à l’aide du bouton de barre d’outils ou en cliquant sur **Outils R > Tracés > Fenêtre d’historique des tracés**.
 Cela vous donne une liste des miniatures pour les tracés qui ont été affichés dans cette fenêtre, regroupés par fenêtres de tracés (ou périphériques). Les boutons de zoom dans la barre d’outils permettent de changer la taille des miniatures.
 
-![Fenêtre d’historique des tracés](~/docs/rtvs/media/plotting-plot-history-window.png)
+![Fenêtre d’historique des tracés](~/rtvs/media/plotting-plot-history-window.png)
 
 Pour ouvrir un tracé dans sa fenêtre associée, double-cliquez sur ce tracé, sélectionnez-le, puis cliquez sur le bouton de barre d’outils **Afficher le tracé**, ou cliquez avec le bouton droit et sélectionnez **Afficher le tracé**. Vous pouvez également sélectionner un tracé spécifique et copier, couper ou supprimer à partir du menu contextuel ou du menu **Edition**.
 

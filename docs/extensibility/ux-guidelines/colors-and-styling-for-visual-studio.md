@@ -301,7 +301,7 @@ Teintes pour chacun des noms de jeton autorisés sur une surface de l’éditeur
   
 Exemples de la surface de l’éditeur dans le thème bleu :  
   
-![Éditeur dans le thème bleu](~/docs/extensibility/ux-guidelines/media/030303-c_editorblue.png "030303-c_EditorBlue")<br />Éditeur dans le thème bleu
+![Éditeur dans le thème bleu](~/extensibility/ux-guidelines/media/030303-c_editorblue.png "030303-c_EditorBlue")<br />Éditeur dans le thème bleu
   
 ![Éditeur dans le thème à contraste élevé, #1](../../extensibility/ux-guidelines/media/030303-d_editorhc1.png "030303-d_EditorHC1")<br />Éditeur dans le thème à contraste élevé, #1
   
@@ -725,11 +725,11 @@ Visual Studio hôte déclencheurs plug-in thème modifications lorsqu’un utili
   
 **Thème de couleur :**  
   
-![Modifications de thème de couleur](~/docs/extensibility/ux-guidelines/media/0305-a_colortheme.png "0305-a_ColorTheme")<br />Modifications de thème de couleur  
+![Modifications de thème de couleur](~/extensibility/ux-guidelines/media/0305-a_colortheme.png "0305-a_ColorTheme")<br />Modifications de thème de couleur  
   
 **Thème d’environnement :**  
   
-![Modifications de thème d’environnement](~/docs/extensibility/ux-guidelines/media/0305-b_environmenttheme.png "0305-b_EnvironmentTheme")<br />Modifications de thème d'environnement  
+![Modifications de thème d’environnement](~/extensibility/ux-guidelines/media/0305-b_environmenttheme.png "0305-b_EnvironmentTheme")<br />Modifications de thème d'environnement  
   
 **Thème du système d’exploitation** (uniquement lors de la modification vers et à partir de contraste élevé) :  
   

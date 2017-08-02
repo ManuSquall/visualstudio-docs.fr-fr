@@ -23,7 +23,7 @@ L'environnement de développement intégré \(IDE\) de \(IDE\) [!INCLUDE[vsprvs]
 ## architecture d'extensibilité  
  l'illustration suivante montre l'architecture d'extensibilité de [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] .  notez que le concept de l'application logiciel est absent.  Au lieu de cela, l'IDE héberge les logiciels, les VSPackages appelé, qui fournissent la fonctionnalité de l'application.  Cette fonctionnalité, à son tour, est partagée entre l'IDE comme services.  Services d'offrir de VSPackages qu'elles et d'autres utilisations de VSPackages.  La norme IDE offre également une large gamme de services, tels qu' <xref:Microsoft.VisualStudio.Shell.Interop.SVsUIShell>, qui permettent d'accéder aux fonctionnalités de fenêtrage de l'IDE.  
   
- ![Graphique Architecture d’environnement](~/docs/extensibility/internals/media/environment.gif "environment")  
+ ![Graphique Architecture d’environnement](~/extensibility/internals/media/environment.gif "environment")  
 vue généralisée de l'architecture de Visual Studio  
   
  Notez que la relation entre les VSPackages et services est bidirectionnelle.  Bien que les services d'utilisation de VSPackages aient offert par d'autres, ils peuvent également offrir des services de leurs propres à l'aide de l'interface d' <xref:Microsoft.VisualStudio.Shell.Interop.IProfferService> .  Cette architecture service\-basée s'est développée hors de l'implémentation du concepteur Microsoft ActiveX, dans lequel un service est un groupe d'interfaces connexes qui exécutent une tâche.  Du point de vue strict COM, toutes les interfaces d'un service particulier doivent être implémentées dans une classe COM unique.  

@@ -47,7 +47,7 @@ ms.lasthandoff: 02/22/2017
   
  Un service de base du langage est indiqué dans l’illustration suivante.  
   
- ![Graphique du modèle de Service de langage](~/docs/extensibility/media/vslanguageservicemodel.gif "vsLanguageServiceModel")  
+ ![Graphique du modèle de Service de langage](~/extensibility/media/vslanguageservicemodel.gif "vsLanguageServiceModel")  
 Objets de service éditeur et la langue de base  
   
  L’objet de données de document pour l’éditeur de base est appelée mémoire tampon de texte et est représenté par la <xref:Microsoft.VisualStudio.TextManager.Interop.VsTextBuffer>objet.</xref:Microsoft.VisualStudio.TextManager.Interop.VsTextBuffer> L’objet de vue de document est appelée une vue de texte et est représenté par la <xref:Microsoft.VisualStudio.TextManager.Interop.VsCodeWindow>objet.</xref:Microsoft.VisualStudio.TextManager.Interop.VsCodeWindow> Ces deux objets collaborent via le service de langage pour fournir une vue unifiée de l’éditeur principal. Pour plus d’informations à partir de la mémoire tampon de texte et le mode texte s’affiche dans une fenêtre de document appelé une fenêtre de code. Le document de la fenêtre de code est géré par un gestionnaire de fenêtre de code.  

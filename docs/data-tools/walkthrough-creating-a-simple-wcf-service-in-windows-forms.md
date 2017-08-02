@@ -37,7 +37,7 @@ Cette procédure pas à pas montre comment créer un simple service [!INCLUDE[vs
     > [!NOTE]
     >  Un service actif est créé, qui peut être testé et est accessible.  Les deux étapes suivantes montrent comment vous pouvez modifier la méthode par défaut pour utiliser un autre type de données.  Dans une application réelle, vous ajouteriez également vos propres fonctions au service.  
   
-3.  ![Fichier IService1](~/docs/data-tools/media/wcf2.png "wcf2")  
+3.  ![Fichier IService1](~/data-tools/media/wcf2.png "wcf2")  
   
      Dans l'**Explorateur de solutions**, double\-cliquez sur IService1.vb ou IService1.cs, et recherchez la ligne suivante :  
   
@@ -120,7 +120,7 @@ Cette procédure pas à pas montre comment créer un simple service [!INCLUDE[vs
   
 5.  Appuyez sur **F5** pour exécuter le projet.  Entrez un texte et cliquez sur le bouton.  Le message « Vous avez entré : » s'affichera, suivi du texte que vous avez entré.  
   
-     ![Formulaire affichant le résultat](~/docs/data-tools/media/wcf10.png "wcf10")  
+     ![Formulaire affichant le résultat](~/data-tools/media/wcf10.png "wcf10")  
   
 ## Voir aussi  
  [Exemple de consommation des services ASMX et WCF](http://msdn.microsoft.com/fr-fr/788ddf2c-2ac1-416b-8789-2fbb1e29b8fe)

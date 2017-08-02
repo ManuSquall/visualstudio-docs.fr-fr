@@ -44,7 +44,7 @@ caps.handback.revision: 101
   
 -   [Ajout de contrôles Windows Forms aux documents](#WindowsForms)  
   
- ![lien vers la vidéo](~/docs/data-tools/media/playvideo.gif "lien vers la vidéo") Pour visionner la démonstration vidéo associée, consultez [Comment ajouter des contrôles à la surface d’un document au moment de l’exécution ?](http://go.microsoft.com/fwlink/?LinkId=132782).  
+ ![lien vers la vidéo](~/data-tools/media/playvideo.gif "lien vers la vidéo") Pour visionner la démonstration vidéo associée, consultez [Comment ajouter des contrôles à la surface d’un document au moment de l’exécution ?](http://go.microsoft.com/fwlink/?LinkId=132782).  
   
 ##  <a name="ControlsCollection"></a> Gestion de contrôles au moment de l’exécution à l’aide des collections de contrôle  
  Pour ajouter, obtenir ou supprimer des contrôles au moment de l’exécution, utilisez les méthodes d’assistance des objets <xref:Microsoft.Office.Tools.Excel.ControlCollection> et <xref:Microsoft.Office.Tools.Word.ControlCollection>.  

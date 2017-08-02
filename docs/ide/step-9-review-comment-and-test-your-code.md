@@ -44,7 +44,7 @@ Ensuite, ajoutez un commentaire à votre code.  Un commentaire est une annotatio
   
      Les instructions permettent à vos programmes d'effectuer des actions.  En Visual C\#, une instruction se termine toujours par un point\-virgule.  En Visual Basic, la fin d'une ligne indique la fin d'une instruction. \(Aucun point\-virgule n'est nécessaire en Visual Basic.\) L'instruction précédente indique à votre contrôle `PictureBox` de charger le fichier que l'utilisateur a sélectionné avec le composant **OpenFileDialog**.  
   
- ![lien vers la vidéo](~/docs/data-tools/media/playvideo.gif "PlayVideo") Pour obtenir une version vidéo de cette rubrique, consultez [Didacticiel 1 : Créer une visionneuse d'images en Visual Basic – Vidéo 5](http://go.microsoft.com/fwlink/?LinkId=205216) ou [Didacticiel 1 : Créer une visionneuse d'images en C\# – Vidéo 5](http://go.microsoft.com/fwlink/?LinkId=205206).  Ces vidéos utilisent une version antérieure de Visual Studio et présentent donc de légères différences quant à certaines commandes de menu et autres éléments d'interface utilisateur.  Toutefois, les concepts et les procédures fonctionnent de façon similaire dans la version actuelle de Visual Studio.  
+ ![lien vers la vidéo](~/data-tools/media/playvideo.gif "PlayVideo") Pour obtenir une version vidéo de cette rubrique, consultez [Didacticiel 1 : Créer une visionneuse d'images en Visual Basic – Vidéo 5](http://go.microsoft.com/fwlink/?LinkId=205216) ou [Didacticiel 1 : Créer une visionneuse d'images en C\# – Vidéo 5](http://go.microsoft.com/fwlink/?LinkId=205206).  Ces vidéos utilisent une version antérieure de Visual Studio et présentent donc de légères différences quant à certaines commandes de menu et autres éléments d'interface utilisateur.  Toutefois, les concepts et les procédures fonctionnent de façon similaire dans la version actuelle de Visual Studio.  
   
 ### Pour ajouter des commentaires  
   
@@ -65,7 +65,7 @@ Ensuite, ajoutez un commentaire à votre code.  Un commentaire est une annotatio
   
 2.  Avant d'exécuter votre programme, enregistrez\-le en choisissant le bouton **Enregistrer tout** \(qui se présente comme ci\-dessous\) dans la barre d'outils.  
   
-     ![Bouton de barre d'outils Enregistrer tout](~/docs/ide/media/express_iconsaveall.png "Express\_IconSaveAll")  
+     ![Bouton de barre d'outils Enregistrer tout](~/ide/media/express_iconsaveall.png "Express\_IconSaveAll")  
 Bouton Enregistrer tout  
   
      Vous pouvez également enregistrer votre programme en choisissant **Fichier**, **Enregistrer tout** dans la barre de menus.  Il est conseillé d'enregistrer votre travail régulièrement.  

@@ -59,12 +59,12 @@ Toutefois, il est facile d’installer Dotfuscator CE même si vous avez déjà 
 
 Vous pouvez installer Dotfuscator CE depuis l’IDE de Visual Studio :
 
-1. Dans la barre de recherche **Lancement rapide** (Ctrl + Q), tapez `dotfuscator`. <br/> <br/> ![](~/docs/ide/dotfuscator/media/install_from_vs_12.png) <br/> <br/>
+1. Dans la barre de recherche **Lancement rapide** (Ctrl + Q), tapez `dotfuscator`. <br/> <br/> ![](~/ide/dotfuscator/media/install_from_vs_12.png) <br/> <br/>
 2. Dans les résultats de Lancement rapide, sous le titre *Installer*, sélectionnez **Protection PreEmptive - Dotfuscator (Individual Component)** (Protection PreEmptive - Dotfuscator (composant individuel)).
   * Toutefois, si vous voyez, sous le titre *Menus*, **Outils - PreEmptive Protection - Dotfuscator**, Dotfuscator CE est déjà installé. Pour plus de détails sur l’utilisation, consultez la [page de prise en main dans le guide d’utilisation complet de Dotfuscator CE][get-started].
 3. Une fenêtre du programme d’installation Visual Studio s’ouvre, préconfigurée pour installer Dotfuscator CE.
   * Vous devrez peut-être fournir des informations d’identification d’administrateur pour continuer.
-4. Fermez toutes les instances de l’IDE de Visual Studio. <br/> <br/> ![](~/docs/ide/dotfuscator/media/install_from_vs_345.png) <br/> <br/>
+4. Fermez toutes les instances de l’IDE de Visual Studio. <br/> <br/> ![](~/ide/dotfuscator/media/install_from_vs_345.png) <br/> <br/>
 5. Dans la fenêtre du programme d’installation de Visual Studio, cliquez sur *Installer*.
 
 Une fois l’installation terminée, vous pouvez commencer à utiliser Dotfuscator CE. Pour plus de détails, consultez la [page de prise en main dans le guide d’utilisation complet de Dotfuscator CE][get-started].
@@ -74,13 +74,13 @@ Une fois l’installation terminée, vous pouvez commencer à utiliser Dotfuscat
 Si vous n’avez pas encore installé Visual Studio 2017, vous pouvez obtenir le programme d’installation à partir du [site web de Visual Studio][2017-install].
 Quand vous l’exécutez, il affiche les options d’installation de l’édition de Visual Studio sélectionnée.
 
-![](~/docs/ide/dotfuscator/media/install_ui.png)
+![](~/ide/dotfuscator/media/install_ui.png)
 
 Vous pouvez ensuite installer Dotfuscator CE en tant que composant individuel de Visual Studio 2017 :
 
 1. Sélectionnez l’onglet **Composants individuels**.
-2. Sous *Outils de code*, cochez l’élément *Protection PreEmptive - Dotfuscator*.<br/> <br/> ![](~/docs/ide/dotfuscator/media/install_individually_12.png) <br/> <br/>
-3. Le panneau *Résumé* affiche *Protection PreEmptive - Dotfuscator* dans la section *Composants individuels*. <br/> <br/> ![](~/docs/ide/dotfuscator/media/install_individually_3.png) <br/> <br/>
+2. Sous *Outils de code*, cochez l’élément *Protection PreEmptive - Dotfuscator*.<br/> <br/> ![](~/ide/dotfuscator/media/install_individually_12.png) <br/> <br/>
+3. Le panneau *Résumé* affiche *Protection PreEmptive - Dotfuscator* dans la section *Composants individuels*. <br/> <br/> ![](~/ide/dotfuscator/media/install_individually_3.png) <br/> <br/>
 4. Configurez les paramètres d’installation supplémentaires en fonction de votre environnement.
 5. Quand vous êtes prêt à installer Visual Studio, cliquez sur le bouton *Installer*.
 

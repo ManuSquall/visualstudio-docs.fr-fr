@@ -40,7 +40,7 @@ ms.lasthandoff: 05/12/2017
 
 Nous vous remercions d’avoir installé Outils R pour Visual Studio (RTVS). Familiarisez-vous avec ce produit et faites-nous part de vos commentaires en cliquant sur les liens situés sous la section [Ressources](#resources) ci-dessous.
 
-![Capture d’écran de RTVS](~/docs/rtvs/media/installer-screenshot.png)
+![Capture d’écran de RTVS](~/rtvs/media/installer-screenshot.png)
 
 ## <a name="resources"></a>Ressources
 

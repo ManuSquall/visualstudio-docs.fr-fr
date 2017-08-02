@@ -42,11 +42,11 @@ Visual Studio prend en charge le profilage d’une application Python lorsque de
 
 La commande de menu **Analyser > Launch Python Profiling** (Lancer le profilage Python) permet de lancer le profilage et ouvre une boîte de dialogue de configuration :
 
-![Boîte de dialogue de configuration du profilage](~/docs/python/media/profiling-start.png)
+![Boîte de dialogue de configuration du profilage](~/python/media/profiling-start.png)
 
 Lorsque vous sélectionnez **OK**, le profileur s’exécute et ouvre un rapport de performances vous permettant de connaître la répartition du temps dans l’application :
 
-![Rapport de performances de profilage](~/docs/python/media/profiling-results.png)
+![Rapport de performances de profilage](~/python/media/profiling-results.png)
 
 Pour une vue d’ensemble, consultez ce qui suit.
 

@@ -98,7 +98,7 @@ Utilisez l'analyse des frames graphiques dans Visual Studio Graphics Analyzer po
 #### Signification statistique  
  Pour attirer l'attention sur les variations de rendu les plus pertinentes, l'analyse des frames détermine la signification statistique de chaque variante de rendu et affiche les plus révélatrices en gras.  Elle affiche celles qui améliorent les performances en vert et celles qui les diminuent en rouge.  Elle affiche les résultats non significatifs du point de vue statistique en caractères normaux.  
   
- ![Pertinence statistique de la variante d'appel de dessin](~/docs/debugger/graphics/media/pix_frame_analysis_summary_stats.png "pix\_frame\_analysis\_summary\_stats")  
+ ![Pertinence statistique de la variante d'appel de dessin](~/debugger/graphics/media/pix_frame_analysis_summary_stats.png "pix\_frame\_analysis\_summary\_stats")  
   
  Pour déterminer la pertinence statistique, l'analyse des frames utilise le [test t de Student](http://www.wikipedia.org/wiki/Student%27s_t-test).  
   

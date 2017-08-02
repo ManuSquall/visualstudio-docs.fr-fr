@@ -78,7 +78,7 @@ ImageList_Create(VsUI::DpiHelper::LogicalToDeviceUnitsX(16),VsUI::DpiHelper::Log
   
  Le tableau suivant présente des exemples de comment images doivent être mis à l'échelle PPP correspondant facteurs d'échelle. Les images en vert indiquent nos meilleures pratiques à partir de Visual Studio 2013 \(échelle en PPP 100 à 200 %\) :  
   
- ![Problèmes de PPP lors de la mise à l’échelle](~/docs/extensibility/media/dpi-issues-scaling.png "DPI Issues Scaling")  
+ ![Problèmes de PPP lors de la mise à l’échelle](~/extensibility/media/dpi-issues-scaling.png "DPI Issues Scaling")  
   
 ## Problèmes de mise en page  
  Problèmes de mise en page peuvent être évités principalement en conservant des points dans l'interface utilisateur à l'échelle et par rapport à l'autre au lieu d'utiliser des emplacements absolus \(plus précisément, exprimées en pixels\). Exemple :  

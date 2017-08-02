@@ -63,7 +63,7 @@ Dans la cinquième partie de ce didacticiel, vous allez ajouter des gestionnaire
   
 2.  Sélectionnez l’événement **Enter**, entrez `answer_Enter`answer_Enter, puis choisissez la touche Entrée.  
   
-     ![Propriétés, boîte de dialogue](~/docs/ide/media/express_answerenter.png "Express_AnswerEnter")  
+     ![Propriétés, boîte de dialogue](~/ide/media/express_answerenter.png "Express_AnswerEnter")  
 Propriétés, boîte de dialogue  
   
      Vous venez d’ajouter un gestionnaire d’événements Enter pour le contrôle NumericUpDown de somme et vous avez nommé le gestionnaire **answer_Enter**.  

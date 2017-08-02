@@ -27,7 +27,7 @@ caps.handback.revision: 53
 # Comment&#160;: lire des propri&#233;t&#233;s de document et en &#233;crire
   Vous pouvez stocker des propriétés de document avec un document. Les applications Office fournissent plusieurs propriétés intégrées, telles que l'auteur, le titre et l'objet. Cette rubrique indique comment définir des propriétés de document dans Microsoft Office Excel et Microsoft Office Word.  
   
- ![lien vers la vidéo](~/docs/data-tools/media/playvideo.gif "lien vers la vidéo") Pour visionner une vidéo de démonstration associée, consultez [Comment : accéder aux propriétés de document personnalisées et les manipuler dans Microsoft Word](http://go.microsoft.com/fwlink/?LinkId=136772).  
+ ![lien vers la vidéo](~/data-tools/media/playvideo.gif "lien vers la vidéo") Pour visionner une vidéo de démonstration associée, consultez [Comment : accéder aux propriétés de document personnalisées et les manipuler dans Microsoft Word](http://go.microsoft.com/fwlink/?LinkId=136772).  
   
  [!INCLUDE[appliesto_docprops](../vsto/includes/appliesto-docprops-md.md)]  
   

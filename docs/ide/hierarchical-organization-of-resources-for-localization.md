@@ -58,11 +58,11 @@ Dans Visual Studio, les ressources localisées (les données comme des chaînes 
   
  Le meilleur moyen de stocker vos ressources consiste à les généraliser autant que possible. Cela signifie stocker les chaînes, les images, etc. localisées dans des fichiers de ressources pour des cultures neutres au lieu de cultures spécifiques, chaque fois que c’est possible. Par exemple, si vous avez des ressources pour la culture Français (Belgique) (« fr-BE ») et que les ressources immédiatement au-dessus sont les ressources de secours en anglais, un problème peut se produire quand une personne utilise votre application sur un système configuré pour la culture Français (Canada). Le système recherche un assembly satellite pour « fr-CA », ne le trouve pas et charge l’assembly principal contenant la ressource de secours, qui est Anglais, au lieu de charger les ressources Français. L’image suivante illustre ce scénario non souhaitable.  
   
- ![Ressources spécifiques uniquement](~/docs/ide/media/vbspecificresourcesonly.gif "vbSpecificResourcesOnly")  
+ ![Ressources spécifiques uniquement](~/ide/media/vbspecificresourcesonly.gif "vbSpecificResourcesOnly")  
   
  Si vous suivez la pratique recommandée consistant à placer autant de ressources que possible dans un fichier de ressources neutres pour la culture « fr », l’utilisateur du Français (Canada) ne voit pas les ressources marquées pour la culture « fr-BE », mais par contre voit les chaînes en français. La situation suivante illustre ce scénario préféré.  
   
- ![Graphique NeutralSpecificResources](~/docs/ide/media/vbneutralspecificresources.gif "vbNeutralSpecificResources")  
+ ![Graphique NeutralSpecificResources](~/ide/media/vbneutralspecificresources.gif "vbNeutralSpecificResources")  
   
 ## <a name="see-also"></a>Voir aussi  
  [Langues des ressources neutres pour la localisation](../ide/neutral-resources-languages-for-localization.md)   

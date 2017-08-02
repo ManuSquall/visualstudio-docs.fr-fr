@@ -66,7 +66,7 @@ Le profileur **Consommation d'énergie** de Visual Studio vous aide à analyser 
 ##  <a name="BKMK_Identify_scenarios_with_user_marks"></a> Identifier des scénarios avec des marques utilisateur  
  Vous pouvez ajouter des *marques utilisateur* à vos données de profilage pour vous aider à identifier des zones dans la chronologie.  
   
- ![Marques utilisateur dans la chronologie](~/docs/profiling/media/profilers_usermarktimeline.png "PROFILERS_UserMarkTimeline")  
+ ![Marques utilisateur dans la chronologie](~/profiling/media/profilers_usermarktimeline.png "PROFILERS_UserMarkTimeline")  
   
  La marque apparaît sous la forme d'un triangle orange dans la chronologie lorsque la méthode est exécutée. Le message et l'heure sont affichés sous la forme d'une info-bulle lorsque vous pointez sur la marque. Si plusieurs marques utilisateur sont proches, les marques sont fusionnées et les données de l'info-bulle sont rassemblées. Vous pouvez effectuer un zoom avant sur la chronologie pour dissocier les marques.  
   
@@ -117,7 +117,7 @@ if (performance && performance.mark) {
   
 4.  Pour arrêter le profilage, rebasculez vers Visual Studio (Alt + Tab) et cliquez sur **Arrêter la collecte** sur la page du hub de diagnostic.  
   
-     ![Arrêter la collecte de données](~/docs/profiling/media/xamlprof_stopcollection.png "XAMLProf_StopCollection")  
+     ![Arrêter la collecte de données](~/profiling/media/xamlprof_stopcollection.png "XAMLProf_StopCollection")  
   
      Visual Studio analyse les données collectées et affiche les résultats.  
   
@@ -141,12 +141,12 @@ if (performance && performance.mark) {
   
 |||  
 |-|-|  
-|![Étape 1](~/docs/profiling/media/procguid_1.png "ProcGuid_1")|Le fichier de rapport est nommé Report*AAAAMMJJ-HHMM*.diagsession. Vous pouvez modifier le nom du rapport si vous décidez de l'enregistrer.|  
-|![Étape 2](~/docs/profiling/media/procguid_2.png "ProcGuid_2")|La chronologie indique la durée de la session de profilage, les événements d'activation du cycle de vie de l'application et les marques utilisateur.|  
-|![Étape 3](~/docs/profiling/media/procguid_3.png "ProcGuid_3")|Vous pouvez limiter le rapport à une partie de la chronologie en faisant glisser les barres bleues pour sélectionner une zone de la chronologie.|  
-|![Étape 4](~/docs/profiling/media/procguid_4.png "ProcGuid_4")|Le graphique **Consommation d'énergie** est un graphique à courbes qui affiche la modification de la puissance de sortie provoquée par une ressource de l'appareil pendant une session de profilage. Le profileur Consommation d'énergie suit l'énergie utilisée par le processeur, l'activité réseau et l'écran.|  
-|![Étape 5](~/docs/profiling/media/procguid_6.png "ProcGuid_6")|Le graphique **Ressources (activées/désactivées)**  fournit des détails sur les coûts d'énergie de réseau. La barre **Réseau** représente la durée d'ouverture de la connexion réseau. La barre enfant **Transfert de données** est la durée pendant laquelle l'application a reçu ou envoyé des données via le réseau.|  
-|![Étape 6](~/docs/profiling/media/procguid_6a.png "ProcGuid_6a")|Le **Résumé de la consommation d'énergie** montre le montant proportionnel de l'énergie totale utilisée dans la chronologie sélectionnée par le processeur, l'activité réseau et l'écran.|  
+|![Étape 1](~/profiling/media/procguid_1.png "ProcGuid_1")|Le fichier de rapport est nommé Report*AAAAMMJJ-HHMM*.diagsession. Vous pouvez modifier le nom du rapport si vous décidez de l'enregistrer.|  
+|![Étape 2](~/profiling/media/procguid_2.png "ProcGuid_2")|La chronologie indique la durée de la session de profilage, les événements d'activation du cycle de vie de l'application et les marques utilisateur.|  
+|![Étape 3](~/profiling/media/procguid_3.png "ProcGuid_3")|Vous pouvez limiter le rapport à une partie de la chronologie en faisant glisser les barres bleues pour sélectionner une zone de la chronologie.|  
+|![Étape 4](~/profiling/media/procguid_4.png "ProcGuid_4")|Le graphique **Consommation d'énergie** est un graphique à courbes qui affiche la modification de la puissance de sortie provoquée par une ressource de l'appareil pendant une session de profilage. Le profileur Consommation d'énergie suit l'énergie utilisée par le processeur, l'activité réseau et l'écran.|  
+|![Étape 5](~/profiling/media/procguid_6.png "ProcGuid_6")|Le graphique **Ressources (activées/désactivées)**  fournit des détails sur les coûts d'énergie de réseau. La barre **Réseau** représente la durée d'ouverture de la connexion réseau. La barre enfant **Transfert de données** est la durée pendant laquelle l'application a reçu ou envoyé des données via le réseau.|  
+|![Étape 6](~/profiling/media/procguid_6a.png "ProcGuid_6a")|Le **Résumé de la consommation d'énergie** montre le montant proportionnel de l'énergie totale utilisée dans la chronologie sélectionnée par le processeur, l'activité réseau et l'écran.|  
   
  **Pour analyser les données de profil d'énergie**  
   

@@ -42,7 +42,7 @@ Les *conseils sur les performances* du débogueur et les **outils de diagnostic*
 ## <a name="perftips"></a>Conseils sur les performances  
  Quand le débogueur arrête l'exécution à un point d'arrêt ou lors de l'exécution pas à pas, le temps qui s'écoule entre l'arrêt et le point d'arrêt précédent apparaît sous la forme d'un conseil dans la fenêtre de l'éditeur. Pour plus d’informations, consultez [PerfTips: Performance Information at-a-glance while Debugging with Visual Studio](http://blogs.msdn.com/b/visualstudioalm/archive/2014/08/18/perftips-performance-information-at-a-glance-while-debugging-with-visual-studio.aspx).  
   
- ![Conseil sur les performances](~/docs/profiling/media/dbgdiag_perf_perftip.png "DBGDIAG_PERF_PerfTip")  
+ ![Conseil sur les performances](~/profiling/media/dbgdiag_perf_perftip.png "DBGDIAG_PERF_PerfTip")  
   
 ## <a name="diagnostics-tools-window"></a>Fenêtre Outils de diagnostic  
  Les points d'arrêt et les données de minutage associées sont enregistrés dans la fenêtre Outils de diagnostic.  

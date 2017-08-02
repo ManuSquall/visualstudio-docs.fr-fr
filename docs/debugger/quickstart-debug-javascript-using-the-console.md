@@ -29,7 +29,7 @@ caps.handback.revision: 7
 # D&#233;marrage rapide&#160;: d&#233;boguer du code JavaScript &#224; l’aide de la console
 [!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
 
-![S'applique à Windows et Windows Phone](~/docs/debugger/media/windows_and_phone_content.png "windows\_and\_phone\_content")  
+![S'applique à Windows et Windows Phone](~/debugger/media/windows_and_phone_content.png "windows\_and\_phone\_content")  
   
  Vous pouvez utiliser la fenêtre de la console JavaScript pour interagir avec les applications du Store développées en JavaScript. Ces fonctionnalités sont prises en charge par les applications du [!INCLUDE[win8_appname_long](../debugger/includes/win8_appname_long_md.md)], les applications du Windows Phone Store et les applications créées à l’aide de Visual Studio Tools pour Apache Cordova. Pour obtenir la référence des commandes de la console, voir [Commandes de la console JavaScript](../debugger/javascript-console-commands.md).  
   
@@ -161,7 +161,7 @@ caps.handback.revision: 7
   
      L’application passe en mode arrêt lorsque l’exécution atteint la fonction`updateImages()`, et la ligne en cours du programme d’exécution est mise en surbrillance en jaune.  
   
-     ![Utilisation du mode arrêt avec la console JavaScript](~/docs/debugger/media/js_breakmode.png "JS\_BreakMode")  
+     ![Utilisation du mode arrêt avec la console JavaScript](~/debugger/media/js_breakmode.png "JS\_BreakMode")  
   
      Modifiez les valeurs des variables pour changer immédiatement l’état du programme sans mettre fin à la session de débogage en cours.  
   
@@ -199,7 +199,7 @@ caps.handback.revision: 7
   
  L’illustration suivante montre la liste Cible dans la fenêtre de la console JavaScript.  
   
- ![Sélection cible dans la fenêtre de la console JavaScript](~/docs/debugger/media/js_console_target.png "JS\_Console\_Target")  
+ ![Sélection cible dans la fenêtre de la console JavaScript](~/debugger/media/js_console_target.png "JS\_Console\_Target")  
   
  Vous pouvez aussi basculer le contexte d’exécution à l’aide de la commande `cd`, mais vous devez connaître le nom de l’autre contexte d’exécution et la référence que vous devez utiliser dans la portée. La liste **Cible** offre le meilleur accès aux autres contextes d’exécution.  
   

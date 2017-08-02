@@ -102,7 +102,7 @@ Lorsque vous n'effectuez pas de débogage, Windows **Process Lifetime Management
   
 4.  Appuyez sur **F5** pour exécuter l'application en mode débogage. Notez que la liste **Processus** dans la barre d'outils **Emplacement de débogage** affiche le nom du package d'application pour indiquer que vous êtes en mode débogage.  
   
-     ![Liste des processus de tâches d'arrière&#45;plan](~/docs/debugger/media/dbg_backgroundtask_processlist.png "DBG\_BackgroundTask\_ProcessList")  
+     ![Liste des processus de tâches d'arrière&#45;plan](~/debugger/media/dbg_backgroundtask_processlist.png "DBG\_BackgroundTask\_ProcessList")  
   
 5.  Dans la liste des événements dans la barre d'outils **Emplacement de débogage**, choisissez la tâche en arrière\-plan à démarrer.  
   

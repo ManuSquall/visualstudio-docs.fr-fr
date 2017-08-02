@@ -50,7 +50,7 @@ Utilisez la commande **Aperçu de définition** pour afficher et modifier du cod
   
      Cette illustration représente la fenêtre **Aperçu de définition** pour une méthode nommée `Print()` :  
   
-     ![Fenêtre d’aperçu](~/docs/ide/media/peekwindow.png "PeekWindow")  
+     ![Fenêtre d’aperçu](~/ide/media/peekwindow.png "PeekWindow")  
   
      La fenêtre de définition apparaît sous la ligne `printer.Print("Hello World!")` du fichier d'origine. La fenêtre ne masque aucune partie du code de votre fichier d'origine. Les lignes qui suivent l'appel `printer.Print("Hello World!")` apparaissent sous la fenêtre de définition.  
   
@@ -64,13 +64,13 @@ Utilisez la commande **Aperçu de définition** pour afficher et modifier du cod
   
 -   Si une fenêtre **Aperçu de définition** est déjà ouverte, vous pouvez appeler de nouveau **Aperçu de définition** sur le code affiché dans cette fenêtre. Une autre fenêtre de définition s'ouvre. Un ensemble de points de navigation apparaissent en regard de l'onglet de la fenêtre de définition. Vous pouvez les utiliser pour naviguer entre les fenêtres de définition. L’info-bulle sur chaque point indique le nom et le chemin du fichier de définition que le point représente.  
   
-     ![Fenêtre d’aperçu dans une fenêtre d’aperçu](~/docs/ide/media/peekwithinpeek.png "PeekWithinPeek")  
+     ![Fenêtre d’aperçu dans une fenêtre d’aperçu](~/ide/media/peekwithinpeek.png "PeekWithinPeek")  
   
 #### <a name="to-use-peek-definition-with-multiple-results"></a>Pour utiliser l'option Aperçu de définition avec plusieurs résultats  
   
 -   Si vous utilisez l’option **Aperçu de définition** sur du code possédant plusieurs définitions (par exemple, des classes partielles), une liste de résultats apparaît à droite de la vue Définition de code. Vous pouvez choisir un résultat quelconque dans la liste pour afficher sa définition.  
   
-     ![Fenêtre d’aperçu de plusieurs résultats](~/docs/ide/media/peekmultiple.png "PeekMultiple")  
+     ![Fenêtre d’aperçu de plusieurs résultats](~/ide/media/peekmultiple.png "PeekMultiple")  
   
 #### <a name="to-edit-inside-the-peek-definition-window"></a>Pour apporter des modifications dans la fenêtre Aperçu de définition  
   

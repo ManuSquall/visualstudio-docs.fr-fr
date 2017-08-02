@@ -34,7 +34,7 @@ Chaque configuration peut prendre en charge un ensemble de processus de généra
   
  Les groupes peuvent également avoir une génération de clé qui permet de raccourcis de packaging pointer vers quelque chose de significatif. Un groupe peut être vide dans une configuration donnée, donc aucune hypothèse doit être effectuée sur la taille d'un groupe. La taille \(nombre de sorties\) de chaque groupe dans n'importe quelle configuration peut être différente de la taille d'un autre groupe dans la même configuration. Il peut également être différente de la taille du même groupe dans une autre configuration.  
   
- ![Graphique Groupes de sorties](~/docs/extensibility/internals/media/vsoutputgroups.gif "vsOutputGroups")  
+ ![Graphique Groupes de sorties](~/extensibility/internals/media/vsoutputgroups.gif "vsOutputGroups")  
 Groupes de sortie  
   
  Utilise principalement le <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectCfg> interface consiste à fournir un accès pour générer, déployer et déboguer des objets de gestion et permettent aux projets vers des sorties de groupe. Pour plus d'informations sur l'utilisation de cette interface, consultez la page [Objet de Configuration de projet](../../extensibility/internals/project-configuration-object.md).  

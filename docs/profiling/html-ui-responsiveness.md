@@ -317,7 +317,7 @@ if (performance.mark && performance.measure) {
 ###  <a name="GroupFrames"></a> Regrouper les événements par frame  
  Vous pouvez regrouper les événements qui s'affichent dans l'affichage des détails de la chronologie afin d'afficher des frames individuels. Ces événements de frame sont des événements générés par des outils qui représentent les conteneurs d'événements pour tout le travail de thread d'interface utilisateur qui se produit entre les événements de dessin. Pour activer cet affichage, sélectionnez **Regrouper les événements de niveau supérieur par frames**.  
   
- ![Regrouper les événements de plus haut niveau par frame](~/docs/profiling/media/js_htmlvizprofiler_frame_grouping_button.png "JS_HTMLVizProfiler_Frame_Grouping_Button")  
+ ![Regrouper les événements de plus haut niveau par frame](~/profiling/media/js_htmlvizprofiler_frame_grouping_button.png "JS_HTMLVizProfiler_Frame_Grouping_Button")  
   
  Quand vous regroupez les événements par frame, les événements de niveau supérieur dans l'affichage des détails de la chronologie représentent chacun un frame.  
   

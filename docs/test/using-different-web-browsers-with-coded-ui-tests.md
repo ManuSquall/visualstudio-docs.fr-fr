@@ -117,17 +117,17 @@ Les tests codés de l'interface utilisateur peuvent automatiser le test des appl
  *Que dois-je savoir de plus ?*  
  **Remarques**  
   
--   ![Prérequis](~/docs/test/media/prereq.png "Prérequis") Le navigateur web Apple Safari n’est pas pris en charge.  
+-   ![Prérequis](~/test/media/prereq.png "Prérequis") Le navigateur web Apple Safari n’est pas pris en charge.  
   
--   ![Prérequis](~/docs/test/media/prereq.png "Prérequis") L’action de démarrage du navigateur web doit faire partie du test codé de l’interface utilisateur.  
+-   ![Prérequis](~/test/media/prereq.png "Prérequis") L’action de démarrage du navigateur web doit faire partie du test codé de l’interface utilisateur.  
   
      Si un navigateur web est déjà ouvert et que vous souhaitez exécuter des étapes sur ce navigateur, la lecture échoue, sauf si vous utilisez Internet Explorer. Il est donc recommandé d'inclure le démarrage de votre navigateur web à vos tests codés de l'interface utilisateur.  
   
--   ![Prérequis](~/docs/test/media/prereq.png "Prérequis") L’automatisation d’actions d’interface utilisateur basées spécifiquement sur un navigateur, par exemple agrandir, réduire et restaurer, n’est pas prise en charge.  
+-   ![Prérequis](~/test/media/prereq.png "Prérequis") L’automatisation d’actions d’interface utilisateur basées spécifiquement sur un navigateur, par exemple agrandir, réduire et restaurer, n’est pas prise en charge.  
   
  **Conseils**  
   
--   ![Conseil](~/docs/test/media/tip.png "Conseil") Vous pouvez configurer la sortie pour inclure des captures d’écran dans les journaux codés de l’interface utilisateur. Pour cela, vous devez définir des paramètres de configuration dans le fichier QTAgent32.exe.config. Par défaut, ce fichier est installé à l'endroit suivant :  
+-   ![Conseil](~/test/media/tip.png "Conseil") Vous pouvez configurer la sortie pour inclure des captures d’écran dans les journaux codés de l’interface utilisateur. Pour cela, vous devez définir des paramètres de configuration dans le fichier QTAgent32.exe.config. Par défaut, ce fichier est installé à l'endroit suivant :  
   
      **C:\Program Files (x86)\Microsoft Visual Studio 11.0\Common7\IDE**  
   

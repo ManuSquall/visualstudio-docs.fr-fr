@@ -23,7 +23,7 @@ caps.handback.revision: 8
 
 Les handles d'environnement de la sauvegarde, enregistrez comme, et enregistrent toutes les commandes.  Lorsqu'un utilisateur sélectionne **Enregistrer**, **Enregistrer sous**, ou **Enregistrer tout** dans le menu de **Fichier** ou se ferme la solution, ce qui provoque **Enregistrer tout**, le processus suivant se produit.  
   
- ![Éditeur standard](~/docs/extensibility/internals/media/public.gif "Public")  
+ ![Éditeur standard](~/extensibility/internals/media/public.gif "Public")  
 Enregistrez, enregistrer sous, puis enregistrez toutes la gestion de commande pour un éditeur standard  
   
  Ce processus est indiqué dans les étapes suivantes :  

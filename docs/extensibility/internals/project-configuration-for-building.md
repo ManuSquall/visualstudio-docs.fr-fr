@@ -31,7 +31,7 @@ La liste des configurations de solution pour une solution donnée est gérée pa
   
  Lorsque l'utilisateur sélectionne le **sélection Multiple** élément dans la liste déroulante configuration, l'environnement affiche une boîte de dialogue qui fournit la liste des configurations disponibles.  
   
- ![Configurations multiples](~/docs/extensibility/internals/media/vsmultiplecfgs.gif "vsMultipleCfgs")  
+ ![Configurations multiples](~/extensibility/internals/media/vsmultiplecfgs.gif "vsMultipleCfgs")  
 Plusieurs configurations  
   
  Dans cette boîte de dialogue, l'utilisateur peut sélectionner une ou plusieurs configurations. Une fois sélectionné, les valeurs des propriétés affichées dans la boîte de dialogue des pages de propriétés reflètent l'intersection des valeurs pour les configurations sélectionnées.  
@@ -40,7 +40,7 @@ Plusieurs configurations
   
  Dépendances du projet et l'ordre de génération sont configuration indépendante de la solution : autrement dit, vous pouvez uniquement définir arborescence d'une dépendance pour tous les projets dans la solution. Clic droit sur la solution ou le projet et en sélectionnant le **dépendances du projet** ou **commande de génération de projet** option ouvre le **dépendances du projet** boîte de dialogue. Il peut également être ouvert à partir de la **projet** menu.  
   
- ![Dépendances du projet](~/docs/extensibility/internals/media/vsprojdependencies.gif "vsProjDependencies")  
+ ![Dépendances du projet](~/extensibility/internals/media/vsprojdependencies.gif "vsProjDependencies")  
 Dépendances du projet  
   
  Dépendances de projet déterminent l'ordre dans lequel les projets sont générés. Utilisez l'onglet de l'ordre de la génération dans la boîte de dialogue pour afficher l'ordre exact dans lequel les projets dans une solution générer et utilisez l'onglet dépendances pour modifier l'ordre de génération.  

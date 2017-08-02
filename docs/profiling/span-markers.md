@@ -52,7 +52,7 @@ Les couleurs des cinq premières catégories d’étendues
 ## <a name="span-aggregation-markers"></a>Marqueurs d’agrégation d’étendues  
  Parfois, les marqueurs d’étendue sont si proches les uns des autres dans le visualiseur concurrentiel qu’ils ne peuvent pas être dessinés individuellement. Quand c’est le cas, un *marqueur d’agrégation d’étendues* représentant les étendues sous-jacentes est affiché. Quand vous placez le pointeur sur une de ces icônes, une info-bulle montre le nombre d’étendues sous-jacentes qui sont représentées. Pour voir les étendues, faites un zoom avant. Si vous zoomez au maximum et que vous voyez toujours un marqueur d’agrégation d’étendues, vous pouvez voir les marqueurs des étendues sous-jacentes dans le [rapport Marqueurs](../profiling/markers-report.md). Cette illustration montre un marqueur d’agrégation d’étendues :  
   
- ![Un marqueur d’agrégation d’étendues dans le visualiseur concurrentiel](~/docs/profiling/media/cvmarkerspanaggregate.png "CVMarkerSpanAggregate")  
+ ![Un marqueur d’agrégation d’étendues dans le visualiseur concurrentiel](~/profiling/media/cvmarkerspanaggregate.png "CVMarkerSpanAggregate")  
 Un marqueur d’agrégation d’étendues  
   
 ## <a name="see-also"></a>Voir aussi  

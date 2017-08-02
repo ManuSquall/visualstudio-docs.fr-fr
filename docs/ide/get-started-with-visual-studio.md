@@ -48,7 +48,7 @@ Visual Studio comporte un groupe de fenêtres d’outils, de menus et de barres 
 ### <a name="code-editor"></a>Éditeur de code
 L’une des fenêtres d’outils les plus utilisées dans Visual Studio. C’est là que vous écrivez, affichez et parcourez votre code.
 
-![Éditeur de code](~/docs/ide/media/VSIDE_CodeWindow.png)
+![Éditeur de code](~/ide/media/VSIDE_CodeWindow.png)
 
 L’éditeur de code permet d’accélérer l’écriture du code grâce à des fonctionnalités telles que la saisie semi-automatique des instructions, la coloration syntaxique, le mode de mappage et plus encore. Pour plus d’informations, regardez la vidéo sur le [démarrage de Visual Studio et sur la modification et la navigation dans votre code](https://www.youtube.com/watch?v=4glwwioCVjA&list=PLReL099Y5nRfw6VNvzMkv0sabT2crbSpK&index=5).
 
@@ -58,22 +58,22 @@ Certains types de solutions peuvent inclure des fenêtres appelées *formulaires
 
 Une fenêtre d’outils appelée **Explorateur de solutions** répertorie tous les fichiers de votre code. L’Explorateur de solutions peut vous aider à organiser votre code en regroupant ses fichiers dans des projets et des solutions. Le projet en gras est appelé *projet de démarrage*. Il s’agit du premier code qui s’exécute quand vous démarrez votre solution. Vous pouvez modifier le projet de démarrage. Pour plus d’informations, regardez la vidéo sur la [mise en route de Visual Studio et les composantes de l’environnement de développement intégré](https://www.youtube.com/watch?v=JHc3_gsCmZg&index=2&list=PLReL099Y5nRfw6VNvzMkv0sabT2crbSpK).
 
-![Nœuds réduits dans l’Explorateur de solutions](~/docs/ide/media/VSIDE_SolutionExplorer2_callouts.png)
+![Nœuds réduits dans l’Explorateur de solutions](~/ide/media/VSIDE_SolutionExplorer2_callouts.png)
 
  En plus des projets et des solutions, l’Explorateur de solutions répertorie tous les fichiers de chaque projet quand vous développez le nœud du projet. Chaque projet contient un ou plusieurs fichiers, tels que les fichiers de code source et les fichiers de ressources comme les images ou les bibliothèques.
 
-![Explorateur de solutions](~/docs/ide/media/VSIDE_SolutionExplorer3.png)
+![Explorateur de solutions](~/ide/media/VSIDE_SolutionExplorer3.png)
 
 Pour afficher les propriétés des fichiers, projets et solutions, choisissez la commande **Propriétés** dans le menu contextuel (clic droit), ou choisissez **Affichage, Fenêtre Propriétés** dans le menu.
 
-![Fenêtre Propriétés](~/docs/ide/media/VSIDE_SolutionExplorer4.png)
+![Fenêtre Propriétés](~/ide/media/VSIDE_SolutionExplorer4.png)
 
 Vous n’êtes toutefois pas obligé de créer une solution ou un projet pour commencer le code. Vous pouvez simplement ouvrir des fichiers de code dans Visual Studio, tels que des fichiers clonés à partir d’un dépôt Git, et commencer à les modifier immédiatement. Les fichiers s’affichent dans l’Explorateur de solutions et vous donnent accès à la coloration syntaxique, la saisie semi-automatique des instructions de base et bien plus encore, tout comme avec les solutions traditionnelles. Consultez [Développer du code dans Visual Studio sans projets ni solutions](../ide/develop-code-in-visual-studio-without-projects-or-solutions.md) pour obtenir plus d’informations.
 
 ### <a name="toolbar-and-menus"></a>Barre d’outils et menus
 Pour exécuter votre projet, créer des solutions, enregistrer des fichiers et bien plus encore, utilisez les commandes de menu et de barre d’outils de Visual Studio. Par exemple, une fois que votre code est prêt à s’exécuter pour le débogage, vous pouvez choisir le bouton **Démarrer** dans la barre d’outils, ou choisir **Déboguer, Démarrer le débogage** dans le menu. Pour créer une solution, choisissez le bouton **Nouveau projet**, ou choisissez **Fichier, Nouveau, Projet** dans le menu, et ainsi de suite.
 
-![Barre d’outils de Visual Studio](~/docs/ide/media/VSIDE_SolutionExplorer5_callouts.png)
+![Barre d’outils de Visual Studio](~/ide/media/VSIDE_SolutionExplorer5_callouts.png)
 
 Notez que les commandes de menu et les icônes de barre d’outils peuvent changer en fonction du contexte (c’est-à-dire de l’élément actuellement sélectionné). Quasiment toutes les commandes sont accessibles via le clavier ou la souris.
 
@@ -87,7 +87,7 @@ Pour plus d’informations, regardez les vidéos sur la [mise en route de Visual
 ### <a name="output-window"></a>Fenêtre Sortie
 La fenêtre **Sortie** est l’emplacement où Visual Studio envoie ses notifications, telles que les messages d’erreur et de débogage, les avertissements du compilateur, les messages d’état de publication, et ainsi de suite. Chaque type de message a son propre onglet.
 
-![Fenêtre Sortie](~/docs/ide/media/VSIDE_OutputWindow.png)
+![Fenêtre Sortie](~/ide/media/VSIDE_OutputWindow.png)
 
 Pour en savoir plus sur l’utilisation de la fenêtre de sortie pour le débogage, consultez [Fenêtre Sortie pendant le débogage avec Visual Studio](https://blogs.msdn.microsoft.com/visualstudioalm/2015/02/09/the-output-window-while-debugging-with-visual-studio/).
 
@@ -105,7 +105,7 @@ Si vous souhaitez utiliser des ressources cloud dans votre application ou votre 
 
 Une fois la charge de travail de développement Azure installée, une nouvelle fenêtre d’outils appelée **Cloud Explorer** devient disponible dans Visual Studio. Cloud Explorer vous permet de parcourir et de gérer vos ressources Azure à partir de Visual Studio. Si une opération particulière nécessite le portail Azure, Cloud Explorer fournit des liens vers l’emplacement du portail Azure auquel vous devez accéder.
 
-![Cloud Explorer](~/docs/ide/media/VSIDE_CloudExplorer.png)
+![Cloud Explorer](~/ide/media/VSIDE_CloudExplorer.png)
 
 Pour en savoir plus sur l’utilisation de Cloud Explorer, consultez [Gestion des ressources Azure avec Cloud Explorer](https://azure.microsoft.com/en-us/documentation/articles/vs-azure-tools-resources-managing-with-cloud-explorer/).
 L’installation de la charge de travail de développement Azure vous donne également accès à [Visual Studio Tools pour Azure](https://www.visualstudio.com/vs/azure-tools/) et à d’autres outils associés.

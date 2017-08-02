@@ -24,7 +24,7 @@ la barre déroulante est fournie en haut de la fenêtre de code et contient deux
 ## interfaces déroulantes de barre  
  Dans [!INCLUDE[vcprvc](../debugger/includes/vcprvc_md.md)], par exemple, la barre déroulante contient des listes pour les fonctions membres d'éléments de [!INCLUDE[vcprvc](../debugger/includes/vcprvc_md.md)] et d'éléments de [!INCLUDE[vcprvc](../debugger/includes/vcprvc_md.md)] , comme indiqué dans l'image suivante.  
   
- ![Barres déroulantes](~/docs/extensibility/media/vsdropdown_bar.gif "vsDropdown\_bar")  
+ ![Barres déroulantes](~/extensibility/media/vsdropdown_bar.gif "vsDropdown\_bar")  
 barre déroulante  
   
  En implémentant une barre déroulante, il existe quatre interfaces d'importance primaire :  

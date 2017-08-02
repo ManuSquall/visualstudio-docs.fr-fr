@@ -43,7 +43,7 @@ Votre formulaire ne contient qu’un seul PictureBox. Lorsque vous l’avez ajou
   
  Il existe quatre boutons dans votre formulaire, et l’IDE les a nommés **button1**, **button2**, **button3**et **button4**. Leurs noms actuels ne vous permettent pas de savoir s’il s’agit du bouton **Fermer** ou du bouton **Afficher une image** . C’est pourquoi il est utile de donner à vos contrôles bouton des noms plus informatifs.  
   
- ![lien vers la vidéo](~/docs/data-tools/media/playvideo.gif "PlayVideo")Pour obtenir une version vidéo de cette rubrique, consultez [Didacticiel 1 : Créer une visionneuse d’images en Visual Basic – Vidéo 3](http://go.microsoft.com/fwlink/?LinkId=205213) ou [Didacticiel 1 : Créer une visionneuse d’images en C# – Vidéo 3](http://go.microsoft.com/fwlink/?LinkId=205202). Ces vidéos utilisent une version antérieure de Visual Studio et présentent donc de légères différences quant à certaines commandes de menu et autres éléments d’interface utilisateur. Toutefois, les concepts et les procédures fonctionnent de façon similaire dans la version actuelle de Visual Studio.  
+ ![lien vers la vidéo](~/data-tools/media/playvideo.gif "PlayVideo")Pour obtenir une version vidéo de cette rubrique, consultez [Didacticiel 1 : Créer une visionneuse d’images en Visual Basic – Vidéo 3](http://go.microsoft.com/fwlink/?LinkId=205213) ou [Didacticiel 1 : Créer une visionneuse d’images en C# – Vidéo 3](http://go.microsoft.com/fwlink/?LinkId=205202). Ces vidéos utilisent une version antérieure de Visual Studio et présentent donc de légères différences quant à certaines commandes de menu et autres éléments d’interface utilisateur. Toutefois, les concepts et les procédures fonctionnent de façon similaire dans la version actuelle de Visual Studio.  
   
 ### <a name="to-name-your-button-controls"></a>Pour nommer vos contrôles bouton  
   
@@ -59,7 +59,7 @@ Fenêtre Propriétés avec nom closeButton
   
 3.  Double-cliquez sur le bouton **Afficher une image** du formulaire. Vous pouvez également sélectionner le bouton **Afficher une image** sur le formulaire, puis appuyer sur la touche Entrée. Dans ce cas, l’IDE ouvre un onglet supplémentaire appelé **Form1.cs** (**Form1.vb** si vous utilisez Visual Basic) dans la fenêtre principale. Cet onglet affiche le fichier de code utilisé pour le formulaire, comme illustré dans l’image suivante.  
   
-     ![Onglet Form1.cs avec code Visual C&#35;](~/docs/ide/media/express_showbuttoncode.png "Express_ShowButtonCode")  
+     ![Onglet Form1.cs avec code Visual C&#35;](~/ide/media/express_showbuttoncode.png "Express_ShowButtonCode")  
 Onglet Form1.cs avec code Visual C#  
   
 4.  Examinez attentivement cette partie du code. (Sélectionnez l’onglet **VB** ci-dessous si vous utilisez Visual Basic pour consulter la version Visual Basic du code.)  

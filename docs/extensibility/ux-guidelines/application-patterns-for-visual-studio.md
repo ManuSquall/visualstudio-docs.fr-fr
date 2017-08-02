@@ -88,16 +88,16 @@ Fenêtres Outil Visual Studio ont des états différents, dont certains sont act
   
 -   **Document à onglets** fenêtres Outil peuvent être ancrées dans le document bien. Cela est utile pour les fenêtres d’outil volumineux, tels que l’Explorateur d’objets, qui a besoin de davantage de place que permet d’ancrage pour les bords du cadre.  
   
-![États de la fenêtre outil dans Visual Studio](~/docs/extensibility/ux-guidelines/media/0702-01_toolwindowstates.png "0702-01_ToolWindowStates")<br />États de la fenêtre Outil dans Visual Studio
+![États de la fenêtre outil dans Visual Studio](~/extensibility/ux-guidelines/media/0702-01_toolwindowstates.png "0702-01_ToolWindowStates")<br />États de la fenêtre Outil dans Visual Studio
   
 #### <a name="single-instance-and-multi-instance"></a>Instance unique et à plusieurs instances  
 Fenêtres Outil sont à instance unique ou à plusieurs instances. Certaines fenêtres Outil à instance unique peuvent être associées à la fenêtre de document actif, tandis que les fenêtres d’outil à instances multiples ne peuvent pas. Les fenêtres Outil multi-instance répondent à la **fenêtre &gt; nouvelle fenêtre** commande en créant une nouvelle instance de la fenêtre. L’image suivante illustre une fenêtre outil de l’activation de la commande nouvelle fenêtre lorsqu’une instance de la fenêtre est active :  
   
-![Fenêtre outil activant la commande « Nouvelle fenêtre » lorsqu’une instance de la fenêtre est active](~/docs/extensibility/ux-guidelines/media/0702-02_toolwindowenablingcommand.png "0702-02_ToolWindowEnablingCommand")<br />Fenêtre outil activant la commande « Nouvelle fenêtre » lorsqu’une instance de la fenêtre est active  
+![Fenêtre outil activant la commande « Nouvelle fenêtre » lorsqu’une instance de la fenêtre est active](~/extensibility/ux-guidelines/media/0702-02_toolwindowenablingcommand.png "0702-02_ToolWindowEnablingCommand")<br />Fenêtre outil activant la commande « Nouvelle fenêtre » lorsqu’une instance de la fenêtre est active  
   
 Windows de l’outil à instance unique peuvent être masqués ou affichés, alors que les fenêtres d’outil à instances multiples peuvent être fermés ainsi que masqués. Toutes les fenêtres Outil peuvent être ancrées, liée par onglets, flottante ou défini comme une fenêtre d’enfant d’Interface multidocument (MDI) (semblable à une fenêtre de document). Toutes les fenêtres Outil doivent répondre aux commandes de gestion de fenêtre appropriée dans le menu Fenêtre :  
   
-![Commandes de gestion de fenêtre dans le menu de la fenêtre Visual Studio](~/docs/extensibility/ux-guidelines/media/0702-03_windowmanagementcontrols.png "0702-03_WindowManagementControls")<br />Commandes de gestion de fenêtre dans le menu de la fenêtre Visual Studio
+![Commandes de gestion de fenêtre dans le menu de la fenêtre Visual Studio](~/extensibility/ux-guidelines/media/0702-03_windowmanagementcontrols.png "0702-03_WindowManagementControls")<br />Commandes de gestion de fenêtre dans le menu de la fenêtre Visual Studio
   
 #### <a name="document-specific-tool-windows"></a>Fenêtres de document spécifique  
 Certaines fenêtres Outil sont conçus pour modifier selon un type de document donné. Ces fenêtres continuellement mise à jour pour refléter les fonctionnalités sont applicables à la fenêtre de document actif dans l’IDE.  
@@ -330,7 +330,7 @@ Prendre en compte les différences entre ces types de base de boîtes de dialogu
 ####  <a name="BKMK_SimpleDialogs"></a>Boîtes de dialogue simples  
 Une boîte de dialogue simple est une présentation des contrôles dans une seule fenêtre modale. Cette présentation peut inclure les variantes des modèles de contrôle complexe, par exemple un sélecteur de champ. Pour les boîtes de dialogue simples, suivez la disposition générale standard, ainsi que toute mise en page spécifique requises pour les regroupements de contrôle complexe.
   
-![> créer une clé de nom fort est un exemple de boîte de dialogue simple dans Visual Studio.](~/docs/extensibility/ux-guidelines/media/0704-01_createstrongnamekey.png "0704-01_CreateStrongNameKey")<br />Créer une clé de nom fort est un exemple de boîte de dialogue simple dans Visual Studio.
+![> créer une clé de nom fort est un exemple de boîte de dialogue simple dans Visual Studio.](~/extensibility/ux-guidelines/media/0704-01_createstrongnamekey.png "0704-01_CreateStrongNameKey")<br />Créer une clé de nom fort est un exemple de boîte de dialogue simple dans Visual Studio.
   
 ####  <a name="BKMK_LayeredDialogs"></a>Boîtes de dialogue en couche  
 Les boîtes de dialogue superposées incluent les onglets, les tableaux de bord et les arbres incorporés. Ils sont utilisés pour optimiser immobilier lorsqu’il existe plusieurs groupes de contrôles proposés dans un seul élément de l’interface utilisateur. Les regroupements sont superposées afin que l’utilisateur peut choisir le regroupement pour afficher à tout moment.  
@@ -339,7 +339,7 @@ Dans le cas le plus simple, le mécanisme de basculer entre les regroupements es
   
 Le **outils &gt; Options** boîte de dialogue est un exemple de boîte de dialogue en couches à l’aide d’une arborescence incorporée :  
   
-![Outils > Options est un exemple d’une boîte de dialogue superposée dans Visual Studio.](~/docs/extensibility/ux-guidelines/media/0704-02_toolsoptions.png "0704-02_ToolsOptions")<br />Outils > Options est un exemple d’une boîte de dialogue superposée dans Visual Studio.
+![Outils > Options est un exemple d’une boîte de dialogue superposée dans Visual Studio.](~/extensibility/ux-guidelines/media/0704-02_toolsoptions.png "0704-02_ToolsOptions")<br />Outils > Options est un exemple d’une boîte de dialogue superposée dans Visual Studio.
   
 ####  <a name="BKMK_Wizards"></a>Assistants  
 Assistants sont utiles pour diriger l’utilisateur via une séquence logique d’étapes dans la réalisation d’une tâche. Une série de choix sont proposés dans les panneaux séquentielles, et l’utilisateur doit continuer à chaque étape avant de passer à la suivante. Une fois que les valeurs par défaut suffisantes sont disponibles, le **Terminer** bouton est activé.  
@@ -395,12 +395,12 @@ Lorsque les utilisateurs ont besoin effectuer les deux activités à la fois, co
   
 -   Boutons d’aide dans la barre de titre ont été déconseillées. N’ajoutez pas les boîtes de dialogue Nouveau. Lorsqu’ils n’existent pas, ils doivent lancer une rubrique d’aide sur le plan conceptuel correspondant à la tâche.  
   
- ![Spécifications des indications pour les barres de titre dans les boîtes de dialogue Visual Studio](~/docs/extensibility/ux-guidelines/media/0704-03_titlebarspecs.png "0704-03_TitleBarSpecs")<br />Spécifications des indications pour les barres de titre dans les boîtes de dialogue Visual Studio
+ ![Spécifications des indications pour les barres de titre dans les boîtes de dialogue Visual Studio](~/extensibility/ux-guidelines/media/0704-03_titlebarspecs.png "0704-03_TitleBarSpecs")<br />Spécifications des indications pour les barres de titre dans les boîtes de dialogue Visual Studio
   
 #### <a name="control-buttons"></a>Boutons de commande  
 En général, **OK**, **Annuler**, et **aide** boutons doivent être organisés horizontalement dans le coin inférieur droit de la boîte de dialogue. L’autre pile verticale est autorisée si une boîte de dialogue a plusieurs autres boutons au bas de la boîte de dialogue présente visual toute confusion avec les boutons du contrôle.  
   
-![Configurations acceptables pour les boutons de contrôle dans les boîtes de dialogue Visual Studio](~/docs/extensibility/ux-guidelines/media/0704-04_controlbuttonconfig.png "0704-04_ControlButtonConfig")<br />Configurations acceptables pour les boutons de contrôle dans les boîtes de dialogue Visual Studio
+![Configurations acceptables pour les boutons de contrôle dans les boîtes de dialogue Visual Studio](~/extensibility/ux-guidelines/media/0704-04_controlbuttonconfig.png "0704-04_ControlButtonConfig")<br />Configurations acceptables pour les boutons de contrôle dans les boîtes de dialogue Visual Studio
   
 La boîte de dialogue doit inclure un bouton de contrôle par défaut. Pour déterminer la meilleure commande à utiliser en tant que la valeur par défaut, choisissez parmi les options suivantes (répertoriées par ordre de priorité) :  
   
@@ -446,7 +446,7 @@ Couloirs et tableaux de bord est les boîtes de dialogue ou les panneaux qui fon
   
 Vous pouvez également une interface utilisateur qui offre toutes les fonctionnalités disponibles dans une collection unique plutôt que la fonctionnalité moins courants dans des emplacements distincts de refactorisation est simplement un tableau de bord.  
   
-![Concept de couloir pour exposer une interface utilisateur supplémentaire dans Outlook](~/docs/extensibility/ux-guidelines/media/0704-08_hallway.png "0704-08_Hallway")<br />Concept de couloir pour exposer une interface utilisateur supplémentaire dans Outlook
+![Concept de couloir pour exposer une interface utilisateur supplémentaire dans Outlook](~/extensibility/ux-guidelines/media/0704-08_hallway.png "0704-08_Hallway")<br />Concept de couloir pour exposer une interface utilisateur supplémentaire dans Outlook
   
 ##### <a name="adaptive-ui"></a>Interface utilisateur adaptative  
 Affichage ou masquage de l’interface utilisateur basée sur l’utilisation ou non signalé expérience d’un utilisateur est une autre façon de présenter l’interface utilisateur tout en masquant les autres parties. Cela n’est pas recommandée dans Visual Studio, comme les algorithmes pour le choix du moment afficher ou masquer l’interface utilisateur peuvent être difficile, et les règles ne sera toujours incorrect pour un jeu de cas.  
@@ -509,10 +509,10 @@ L’utilisateur doit toujours être en mesure de déterminer l’effet d’une o
   
 | Pointeur de la souris | Commande | Description |  
 | :---: | --- | --- |  
-| ![« Aucun dépôt » icône de souris](~/docs/extensibility/ux-guidelines/media/0706-01_mousenodrop.png "0706-01_MouseNoDrop") | Aucune suppression | Élément ne peut pas être déposé à l’emplacement spécifié. |  
-| ![Icône de souris « copier »](~/docs/extensibility/ux-guidelines/media/0706-02_mousecopy.png "0706-02_MouseCopy") | Copier | Élément sera copié vers l’emplacement cible. |  
-| ![Icône de souris « déplacer »](~/docs/extensibility/ux-guidelines/media/0706-03_mousemove.png "0706-03_MouseMove") | Déplacement | Élément sera déplacé vers l’emplacement cible. |  
-| ![Icône de souris « ajouter une référence »](~/docs/extensibility/ux-guidelines/media/0706-04_mouseaddref.png "0706-04_MouseAddRef") | Ajouter une référence | Une référence à l’élément sélectionné sera ajoutée à l’emplacement cible. |
+| ![« Aucun dépôt » icône de souris](~/extensibility/ux-guidelines/media/0706-01_mousenodrop.png "0706-01_MouseNoDrop") | Aucune suppression | Élément ne peut pas être déposé à l’emplacement spécifié. |  
+| ![Icône de souris « copier »](~/extensibility/ux-guidelines/media/0706-02_mousecopy.png "0706-02_MouseCopy") | Copier | Élément sera copié vers l’emplacement cible. |  
+| ![Icône de souris « déplacer »](~/extensibility/ux-guidelines/media/0706-03_mousemove.png "0706-03_MouseMove") | Déplacement | Élément sera déplacé vers l’emplacement cible. |  
+| ![Icône de souris « ajouter une référence »](~/extensibility/ux-guidelines/media/0706-04_mouseaddref.png "0706-04_MouseAddRef") | Ajouter une référence | Une référence à l’élément sélectionné sera ajoutée à l’emplacement cible. |
 
 #### <a name="reference-based-projects"></a>Projets basés sur une référence  
  Le tableau suivant récapitule les opérations de glisser-déplacer (ainsi que de couper/copier/coller) qui doivent être effectuées en fonction de la nature de l’élément et le modificateur clés source enfoncé pour les projets de cible basée sur référencé :  

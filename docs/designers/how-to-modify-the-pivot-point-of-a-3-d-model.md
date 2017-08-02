@@ -46,7 +46,7 @@ Ce document montre comment utiliser l'éditeur de modèle pour modifier *le poin
   
  Ici on a un modèle dont on a mdifié le point pivot:  
   
- ![Modèle de maison ayant un point pivot modifié](~/docs/designers/media/digit-modified-model.png "Digit\-Modified\-Model")  
+ ![Modèle de maison ayant un point pivot modifié](~/designers/media/digit-modified-model.png "Digit\-Modified\-Model")  
   
 ## Voir aussi  
  [Procédure : créer un modèle 3D de base](../Topic/How%20to:%20Create%20a%20Basic%203-D%20Model.md)   

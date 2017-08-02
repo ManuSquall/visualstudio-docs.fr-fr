@@ -104,7 +104,7 @@ Pour le comportement de l’interaction typique, suivez les [des recommandations
 #### <a name="layout"></a>Disposition  
 Zones de liste déroulante et les zones déroulantes doivent être dimensionnées en fonction du contenu, ne pas à la largeur de la fenêtre dans lequel elles sont affichées, ni à arbitrairement correspond à la longueur d’un champ long, comme un chemin d’accès.  
   
-![Incorrecte : la largeur de la liste déroulante est trop longue pour le contenu qui sera affiché.](~/docs/extensibility/ux-guidelines/media/0707-03_incorrectdropdownlayout.png "0707-03_IncorrectDropDownLayout")<br />Incorrecte : la largeur de la liste déroulante est trop longue pour le contenu qui sera affiché.
+![Incorrecte : la largeur de la liste déroulante est trop longue pour le contenu qui sera affiché.](~/extensibility/ux-guidelines/media/0707-03_incorrectdropdownlayout.png "0707-03_IncorrectDropDownLayout")<br />Incorrecte : la largeur de la liste déroulante est trop longue pour le contenu qui sera affiché.
   
 ![Correct : la liste déroulante est dimensionnée pour permettre la croissance de traduction, mais pas inutilement long.](../../extensibility/ux-guidelines/media/0707-04_correctdropdownlayout.png "0707-04_CorrectDropDownLayout")<br />Correct : la liste déroulante est dimensionnée pour permettre la croissance de traduction, mais pas inutilement long. 
   
@@ -160,11 +160,11 @@ Il existe deux manières d’afficher les informations de texte statique.
 
 Texte statique peut être sur son propre dans une boîte de dialogue sans toute relation contenant-contenu lorsqu’il n’existe aucun conflit de regroupement. Décider si les lignes supplémentaires d’une zone sont réellement nécessaires. Un exemple est l’affichage d’un chemin d’accès de répertoire sous une section créée par une ligne de groupe, comme indiqué ci-dessous :  
 
-![Informations de texte statique dans les contrôles de texte](~/docs/extensibility/ux-guidelines/media/DisplayingStaticText.png "DisplayingStaticText.png")<br />Informations de texte statique dans les contrôles de texte
+![Informations de texte statique dans les contrôles de texte](~/extensibility/ux-guidelines/media/DisplayingStaticText.png "DisplayingStaticText.png")<br />Informations de texte statique dans les contrôles de texte
 
 Dans une boîte de dialogue lorsque d’autres zones groupées existent et relation contenant-contenu de l’information peut vous aider à une meilleure lisibilité, et lorsque une section peut être masquée ou affichée (comme dans le **fenêtre Propriétés** volet description) ou vous souhaitez être cohérent avec l’interface utilisateur similaire, placez le texte statique dans une zone. Cette zone de groupe doit être une seule règle et de couleur avec la `ButtonShadow`:
 
-![Texte statique dans la fenêtre Propriétés](~/docs/extensibility/ux-guidelines/media/PropertiesWindow.png "PropertiesWindow.png")<br />Texte statique dans la fenêtre Propriétés
+![Texte statique dans la fenêtre Propriétés](~/extensibility/ux-guidelines/media/PropertiesWindow.png "PropertiesWindow.png")<br />Texte statique dans la fenêtre Propriétés
 
 ### <a name="read-only-text-box"></a>Zone de texte en lecture seule
 
@@ -172,7 +172,7 @@ Cela permet à l’utilisateur à sélectionner le texte dans le champ, mais pas
 
 Une zone de texte peut devenir active (modifiable) lorsqu’un utilisateur modifie un contrôle associé, tel que vérification/si vous décochez une case à cocher ou en sélectionnant/en désactivant une case d’option. Par exemple, dans le **outils &gt; Options** page illustré ci-dessous, le **Page d’accueil** zone de texte devient active lorsque le **par défaut** case à cocher est désactivée.
 
-![Zone de texte en lecture seule, affichant les états inactif et actif](~/docs/extensibility/ux-guidelines/media/ReadOnlyTextBox.png "ReadOnlyTextBox.png")<br />Zone de texte en lecture seule, affichant les états inactif et actif
+![Zone de texte en lecture seule, affichant les états inactif et actif](~/extensibility/ux-guidelines/media/ReadOnlyTextBox.png "ReadOnlyTextBox.png")<br />Zone de texte en lecture seule, affichant les états inactif et actif
 
 ### <a name="using-text-in-dialogs"></a>Utilisation de texte dans les boîtes de dialogue
 
@@ -219,7 +219,7 @@ Boîtes de dialogue de tirent parti de recommandations de filigrane légèrement
 
 -   Les filigranes peuvent être centrés ou aligné à gauche. Appliquer des règles de conception standard lors de la prise de décisions alignement. Impossible de sélectionner le filigrane sur l’arrière-plan.
 
-![Exemple de texte de filigrane](~/docs/extensibility/ux-guidelines/media/WatermarkTextExample.gif)<br />Exemple de texte de filigrane
+![Exemple de texte de filigrane](~/extensibility/ux-guidelines/media/WatermarkTextExample.gif)<br />Exemple de texte de filigrane
 
 ### <a name="context-specific-dynamic-text"></a>Texte (dynamique) de spécifique au contexte
 
@@ -319,7 +319,7 @@ Certains boutons doivent toujours utiliser une image de graphique et n’incluez
 | Fonction | Bouton |  
 | --- | --- |  
 | Ajouter | ![Graphique bouton « Ajouter »](../../extensibility/ux-guidelines/media/070703-08_buttonadd.png "070703-08_ButtonAdd") |
-| Remove | ![Graphique bouton « Supprimer »](~/docs/extensibility/ux-guidelines/media/070703-09_buttonremove.png "070703-09_ButtonRemove") |
+| Remove | ![Graphique bouton « Supprimer »](~/extensibility/ux-guidelines/media/070703-09_buttonremove.png "070703-09_ButtonRemove") |
 | Ajouter tout | ![Bouton graphique « Ajouter tout »](../../extensibility/ux-guidelines/media/070703-10_buttonaddall.png "070703-10_ButtonAddAll") |
 | Supprimer tout | ![Bouton graphique « Supprimer tout »](../../extensibility/ux-guidelines/media/070703-11_buttonremoveall.png "070703-11_ButtonRemoveAll") |
 | Monter | ![Bouton graphique « Monter »](../../extensibility/ux-guidelines/media/070703-12_buttonmoveup.png "070703-12_ButtonMoveUp") |

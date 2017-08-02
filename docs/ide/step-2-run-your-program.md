@@ -20,7 +20,7 @@ caps.handback.revision: 14
 
 Lorsque vous avez créé une solution, vous avez en fait généré un programme qui fonctionne.  Pour le moment, il n'offre que peu de possibilités : il se contente d'afficher une fenêtre vide qui indique **Form1** dans la barre de titre.  Mais il fonctionne réellement, comme vous allez le découvrir.  
   
- ![lien vers la vidéo](~/docs/data-tools/media/playvideo.gif "PlayVideo") Pour obtenir une version vidéo de cette rubrique, consultez [Didacticiel 1 : Créer une visionneuse d'images en Visual Basic – Vidéo 1](http://go.microsoft.com/fwlink/?LinkId=205209) ou [Didacticiel 1 : Créer une visionneuse d'images en C\# – Vidéo 1](http://go.microsoft.com/fwlink/?LinkId=205199).  Ces vidéos utilisent une version antérieure de Visual Studio et présentent donc de légères différences quant à certaines commandes de menu et autres éléments d'interface utilisateur.  Toutefois, les concepts et les procédures fonctionnent de façon similaire dans la version actuelle de Visual Studio.  
+ ![lien vers la vidéo](~/data-tools/media/playvideo.gif "PlayVideo") Pour obtenir une version vidéo de cette rubrique, consultez [Didacticiel 1 : Créer une visionneuse d'images en Visual Basic – Vidéo 1](http://go.microsoft.com/fwlink/?LinkId=205209) ou [Didacticiel 1 : Créer une visionneuse d'images en C\# – Vidéo 1](http://go.microsoft.com/fwlink/?LinkId=205199).  Ces vidéos utilisent une version antérieure de Visual Studio et présentent donc de légères différences quant à certaines commandes de menu et autres éléments d'interface utilisateur.  Toutefois, les concepts et les procédures fonctionnent de façon similaire dans la version actuelle de Visual Studio.  
   
 ### Pour exécuter votre programme  
   
@@ -37,7 +37,7 @@ Bouton de barre d'outils Démarrer le débogage
   
 2.  Visual Studio exécute votre programme et une fenêtre intitulée **Form1** s'affiche.  Le schéma suivant montre le programme que vous venez de générer.  Le programme est exécuté, et vous allez bientôt y faire des ajouts.  
   
-     ![Programme d'application Windows Form en cours d'exécution](~/docs/ide/media/express_firstrun.png "Express\_FirstRun")  
+     ![Programme d'application Windows Form en cours d'exécution](~/ide/media/express_firstrun.png "Express\_FirstRun")  
 Programme d'application Windows Form en cours d'exécution  
   
 3.  Revenez à l'environnement de développement intégré \(IDE\) de Visual Studio et examinez la nouvelle barre d'outils.  Des boutons supplémentaires apparaissent dans la barre d'outils lorsque vous exécutez un programme.  Ces boutons vous permettent d'effectuer des opérations comme arrêter et démarrer votre programme, et vous aident à localiser les erreurs \(bogues\) possibles.  Dans cet exemple, nous les utilisons pour démarrer et arrêter le programme.  

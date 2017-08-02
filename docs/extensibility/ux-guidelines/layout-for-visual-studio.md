@@ -143,7 +143,7 @@ La majorité des boîtes de dialogue Visual Studio sont [Mise en page de la boî
   
  **Figure 08.01\-h: Boîte de dialogue à thème**  
   
- ![Themed dialog dimensions](~/docs/extensibility/ux-guidelines/media/0801-i_themeddialogdimensions.png "0801\-i\_ThemedDialogDimensions")  
+ ![Themed dialog dimensions](~/extensibility/ux-guidelines/media/0801-i_themeddialogdimensions.png "0801\-i\_ThemedDialogDimensions")  
   
  **Figure 08.01\-i Dialogue à thème – Dimensions**  
   
@@ -151,7 +151,7 @@ La majorité des boîtes de dialogue Visual Studio sont [Mise en page de la boî
   
  **Figure 08.01\-j: Dialogue à thème : polices**  
   
- ![Themed dialog colors](~/docs/extensibility/ux-guidelines/media/0801-k_themeddialogcolors.png "0801\-k\_ThemedDialogColors")  
+ ![Themed dialog colors](~/extensibility/ux-guidelines/media/0801-k_themeddialogcolors.png "0801\-k\_ThemedDialogColors")  
   
  **Figure 08.01\-k: Dialogue à thème – couleurs**  
   

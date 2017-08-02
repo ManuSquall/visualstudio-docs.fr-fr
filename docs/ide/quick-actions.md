@@ -40,7 +40,7 @@ ms.lasthandoff: 05/26/2017
 # Actions rapides
 <a id="quick-actions" class="xliff"></a>
 
-Les [actions rapides](refactoring-code-generation-quick-actions.md#quick-actions) vous permettent de refactoriser, générer ou modifier facilement le code en une seule action.  Bien qu’il existe de nombreuses actions rapides qui s’appliquent spécifiquement à C# ou Visual Basic, il en existe également d’autres qui s’appliquent à la fois aux projets C# et Visual Basic.  Elles peuvent être appliquées en utilisant l’icône d’ampoule ![Petite icône en forme d’ampoule](~/docs/ide/media/vs2015_lightbulbsmall.png "VS2017_LightBulbSmall") ou en appuyant sur **Ctrl+.** quand votre curseur se trouve sur la ligne de code appropriée.
+Les [actions rapides](refactoring-code-generation-quick-actions.md#quick-actions) vous permettent de refactoriser, générer ou modifier facilement le code en une seule action.  Bien qu’il existe de nombreuses actions rapides qui s’appliquent spécifiquement à C# ou Visual Basic, il en existe également d’autres qui s’appliquent à la fois aux projets C# et Visual Basic.  Elles peuvent être appliquées en utilisant l’icône d’ampoule ![Petite icône en forme d’ampoule](~/ide/media/vs2015_lightbulbsmall.png "VS2017_LightBulbSmall") ou en appuyant sur **Ctrl+.** quand votre curseur se trouve sur la ligne de code appropriée.
 
 Une ampoule apparaît si votre code est souligné d’une ligne ondulée rouge et qu’une suggestion pour résoudre le problème est disponible dans Visual Studio. Par exemple, si une erreur est signalée par un soulignement rouge ondulé, une ampoule apparaît lorsque des corrections sont disponibles pour cette erreur. Des éditeurs tiers peuvent fournir des diagnostics et des suggestions personnalisés pour n'importe quel langage, par exemple dans le cadre d'un SDK. Dans ce cas, les ampoules Visual Studio s'allument en fonction des règles établies.  
 
@@ -357,47 +357,47 @@ Dim s As String = $"My string with {num} in the middle"
 <a id="remove-merge-conflict-markers" class="xliff"></a>
 Ces actions rapides vous permettent de résoudre les conflits de fusion par une « modification » qui supprime les marqueurs et le code en conflit. (Disponible uniquement dans Visual Studio 2017 [version 15.3, préversion].)
 
-![Refactorisation : résoudre les conflits de fusion](~/docs/ide/media/vside-refactoring-merge-conflicts.png)
+![Refactorisation : résoudre les conflits de fusion](~/ide/media/vside-refactoring-merge-conflicts.png)
 
 ### Ajouter des contrôles de valeurs Null pour les paramètres
 <a id="add-null-checks-for-parameters" class="xliff"></a>
 Cette action rapide vous permet d’ajouter un contrôle dans votre code pour déterminer si un paramètre est Null. (Disponible uniquement dans Visual Studio 2017 [version 15.3, préversion].)
 
-![Refactorisation : ajouter un contrôle de valeur Null](~/docs/ide/media/vside-refactoring-nullcheck.png)
+![Refactorisation : ajouter un contrôle de valeur Null](~/ide/media/vside-refactoring-nullcheck.png)
 
 ### Améliorations du générateur de constructeur
 <a id="constructor-generator-improvements" class="xliff"></a>
 Quand vous créez un constructeur, cette action rapide vous permet de sélectionner les propriétés ou les champs à générer, ou vous pouvez générer le constructeur à partir d’un corps vide. Vous pouvez également l’utiliser pour ajouter des paramètres à un constructeur existant à partir du site d’appel. (Disponible uniquement dans Visual Studio 2017 [version 15.3, préversion].)
 
-![Refactorisation : générer des constructeurs](~/docs/ide/media/vside-refactoring-constructors.png)
+![Refactorisation : générer des constructeurs](~/ide/media/vside-refactoring-constructors.png)
 
 ### Supprimer les variables inutilisées
 <a id="remove-unused-variables" class="xliff"></a>
 Cette action rapide vous permet de supprimer les variables qui ont été déclarées, mais jamais utilisées dans votre code. (Disponible uniquement dans Visual Studio 2017 [version 15.3, préversion].)
 
-![Refactorisation : variables inutilisées](~/docs/ide/media/vside-refactoring-unusedvars.png)
+![Refactorisation : variables inutilisées](~/ide/media/vside-refactoring-unusedvars.png)
 
 ### Générer des substitutions
 <a id="generate-overrides" class="xliff"></a>
 Cette action rapide vous permet de créer une substitution à partir d’une ligne vide dans une classe ou structure. La boîte de dialogue **Pick Members** (Choisir les membres) vous permet de choisir les membres à substituer. (Disponible uniquement dans Visual Studio 2017 [version 15.3, préversion].)
 
-![Refactorisation : substitutions](~/docs/ide/media/vside-refactoring-overrides.png)
+![Refactorisation : substitutions](~/ide/media/vside-refactoring-overrides.png)
 
-![Refactorisation : boîte de dialogue des substitutions](~/docs/ide/media/vside-refactoring-overrides-dialog.png)
+![Refactorisation : boîte de dialogue des substitutions](~/ide/media/vside-refactoring-overrides-dialog.png)
 
 ### Changer la base des littéraux numériques
 <a id="change-base-for-numeric-literals" class="xliff"></a>
 Cette action rapide vous permet de convertir un littéral numérique d’un système numérique de base en un autre. Par exemple, vous pouvez convertir un nombre en un format hexadécimal ou binaire. (Disponible uniquement dans Visual Studio 2017 [version 15.3, préversion].)
 
-![Refactorisation : changer la base](~/docs/ide/media/vside-refactoring-changebase1.png)
+![Refactorisation : changer la base](~/ide/media/vside-refactoring-changebase1.png)
 
-![Refactorisation : changer la base](~/docs/ide/media/vside-refactoring-changebase2.png)
+![Refactorisation : changer la base](~/ide/media/vside-refactoring-changebase2.png)
 
 ### Insérer des séparateurs numériques dans les littéraux
 <a id="insert-digit-separators-into-literals" class="xliff"></a>
 Cette action rapide vous permet d’ajouter des caractères de séparation aux valeurs littérales. (Disponible uniquement dans Visual Studio 2017 [version 15.3, préversion].)
 
-![Refactorisation : changer les séparateurs numériques](~/docs/ide/media/vside-refactoring-separators.png)
+![Refactorisation : changer les séparateurs numériques](~/ide/media/vside-refactoring-separators.png)
 
 ### Convertir une construction **if** en **switch**
 <a id="convert-if-construct-to-switch" class="xliff"></a>

@@ -29,7 +29,7 @@ Vous pouvez partager des contrôles, des modèles et des outils que vous dévelo
 ## Ajout d’une galerie privée à Extensions et mises à jour dans Visual Studio  
  Lorsqu’une galerie privée est disponible, vous pouvez l’ajouter à **Extensions et mises à jour** dans Visual Studio.  
   
- ![Boîte de dialogue d'ajout de gestionnaire d'extensions](~/docs/extensibility/media/em_adddialog.png "EM\_AddDialog")  
+ ![Boîte de dialogue d'ajout de gestionnaire d'extensions](~/extensibility/media/em_adddialog.png "EM\_AddDialog")  
   
 #### Pour ajouter une galerie privée à Extensions et mises à jour  
   
@@ -67,7 +67,7 @@ DisplayNamePackageGuid={GUID} (REG_SZ)
 ## Installation des Extensions à partir d’une galerie privée  
  Vous pouvez rechercher et installer des extensions Visual Studio à partir d’une galerie privée dans **Extensions et mises à jour**. Les étapes suivantes utilisent une galerie privée nommée `My Gallery`.  
   
- ![Galerie privée d'installation du gestionnaire d'extensions](~/docs/extensibility/media/em_.png "EM\_")  
+ ![Galerie privée d'installation du gestionnaire d'extensions](~/extensibility/media/em_.png "EM\_")  
   
 #### Pour rechercher et installer des extensions à partir d’une galerie privée  
   
@@ -80,7 +80,7 @@ DisplayNamePackageGuid={GUID} (REG_SZ)
 ## Mise à jour des Extensions à partir d’une galerie privée  
  Comme les nouvelles versions des extensions Visual Studio sont validées dans la galerie privée, vous pouvez mettre à jour les extensions que vous avez installés. Les étapes suivantes utilisent une galerie privée nommée `My Repository`.  
   
- ![Mise à jour de la galerie privée du gestionnaire d'extensions](~/docs/extensibility/media/em_update.png "EM\_Update")  
+ ![Mise à jour de la galerie privée du gestionnaire d'extensions](~/extensibility/media/em_update.png "EM\_Update")  
   
 #### Pour mettre à jour une extension installée à partir d’une galerie privée  
   

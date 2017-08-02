@@ -21,7 +21,7 @@ caps.handback.revision: 13
 
 Le modèle suivant représente un exemple d'implémentation de contrôle de code source.  Dans le modèle, les interfaces que vous devez implémenter et les services d'environnement que vous devez appeler.  Comme tous les services, vous appelez réellement les méthodes d'interface particulière que vous obtenez via le service.  Les noms de classes sont identifiés pour visualiser plus facilement comment le contrôle de code source est exécuté.  
   
- ![Exemples SCC&#95;TUP](~/docs/extensibility/internals/media/scc_tup.gif "SCC\_TUP")  
+ ![Exemples SCC&#95;TUP](~/extensibility/internals/media/scc_tup.gif "SCC\_TUP")  
 Projet de contrôle de l'exemple de code source  
   
 ## Interfaces  

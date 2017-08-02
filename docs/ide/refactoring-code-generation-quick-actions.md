@@ -51,7 +51,7 @@ Visual Studio peut générer des parties du code source à votre place, ce qui v
 
 <a name="#quick-actions"></a>
 ## <a name="quick-actions"></a>Actions rapides
-Les actions rapides vous permettent de refactoriser, générer ou modifier facilement le code en une seule action.  Elles peuvent être appliquées en utilisant l’icône d’ampoule ![Petite icône en forme d’ampoule](~/docs/ide/media/vs2015_lightbulbsmall.png "VS2017_LightBulbSmall") ou en appuyant sur **Ctrl+.** quand votre curseur se trouve sur la ligne de code appropriée.
+Les actions rapides vous permettent de refactoriser, générer ou modifier facilement le code en une seule action.  Elles peuvent être appliquées en utilisant l’icône d’ampoule ![Petite icône en forme d’ampoule](~/ide/media/vs2015_lightbulbsmall.png "VS2017_LightBulbSmall") ou en appuyant sur **Ctrl+.** quand votre curseur se trouve sur la ligne de code appropriée.
 
 * [Actions rapides](quick-actions.md)
 * [Styles de code et actions rapides](code-styles-and-quick-actions.md)

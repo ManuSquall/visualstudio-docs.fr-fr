@@ -84,18 +84,18 @@ Vous pouvez ouvrir la fenêtre Environnements Python de l’une des façons suiv
 1. Sélectionnez la commande de menu **Affichage > Other Windows (Autres fenêtres) > Environnements Python**.
 1. Cliquez avec le bouton droit sur **Environnements Python** pour un projet dans l’Explorateur de solutions et sélectionnez **View All Python Environments** (Afficher tous les environnements Python) :
 
-    ![Commande Afficher tous les environnements dans l’Explorateur de solutions](~/docs/python/media/environments-view-all.png)
+    ![Commande Afficher tous les environnements dans l’Explorateur de solutions](~/python/media/environments-view-all.png)
     
 Dans les deux cas, la fenêtre Environnements Python s’affiche en tant qu’onglet frère de l’Explorateur de solutions :
 
-![Fenêtre Environnements Python](~/docs/python/media/environments-default-view.png)
+![Fenêtre Environnements Python](~/python/media/environments-default-view.png)
 
 L’exemple ci-dessus indique que Python 3.4 (CPython 32 bits) est installé avec les versions 32 et 64 bits d’IronPython 2.7. Dans ce cas, l’environnement par défaut en gras est Python 3.4, qui sera utilisé pour tous les nouveaux projets. Si aucun environnement n’est répertorié, cela signifie que vous avez installé Python Tools pour Visual Studio dans Visual Studio 2015 ou version antérieure, mais que vous n’avez pas installé d’interpréteur Python (consultez la section [Sélection et installation des interpréteurs Python](#selecting-and-installing-python-interpreters) ci-dessus). 
 
 > [!Tip]
 > Lorsque la fenêtre *Environnements Python* est étroite, comme illustré ci-dessus, les environnements apparaissent en haut et les différents onglets en bas. Si vous développez la fenêtre suffisamment, toutefois, vous aurez un affichage plus large que vous pouvez trouver plus pratique à utiliser.
 >
-> ![Affichage développé de la fenêtre Environnements Python](~/docs/python/media/environments-expanded-view.png)
+> ![Affichage développé de la fenêtre Environnements Python](~/python/media/environments-expanded-view.png)
 
 > [!Note]
 > Bien que Visual Studio respecte l’option system-site-packages, il ne fournit pas de moyen permettant de la modifier à partir de Visual Studio.
@@ -106,7 +106,7 @@ Visual Studio recherche normalement un interpréteur Python installé en consult
 
 1. Sélectionnez **+ Personnalisé...** dans la fenêtre Environnements Python, ce qui crée un environnement et ouvre [ l’onglet **Configurer**](#configure-tab) décrit ci-dessous.
 
-    ![Affichage par défaut pour un nouvel environnement personnalisé](~/docs/python/media/environments-custom-1.png)
+    ![Affichage par défaut pour un nouvel environnement personnalisé](~/python/media/environments-custom-1.png)
 
 1. Entrez un nom pour l’environnement dans le champ **Description**.
 1. Entrez ou recherchez le chemin d’accès de l’interpréteur dans le champ **Prefix path** (Chemin du préfixe).
@@ -118,7 +118,7 @@ Visual Studio recherche normalement un interpréteur Python installé en consult
 
 Fournit des commandes et des informations de base pour l’environnement, par exemple pour définir l’environnement en tant qu’environnement par défaut, pour ouvrir une [fenêtre (REPL) interactive](interactive-repl.md) avec cet environnement et pour accéder à la boîte de dialogue permettant de configurer la fenêtre interactive (identique à la commande de menu **Outils > Options**, en sélectionnant **Python Tools > Fenêtres interactives** et le nom de l’environnement).
 
-![Onglet Vue d’ensemble, Environnements Python](~/docs/python/media/environments-overview-tab.png)
+![Onglet Vue d’ensemble, Environnements Python](~/python/media/environments-overview-tab.png)
 
 > [!Note]
 > Modifier l’environnement actif risque d’interrompre brièvement le fonctionnement de Visual Studio lors du chargement de la base de données IntelliSense. Les environnements avec de nombreux packages peuvent être interrompus pendant plus longtemps.
@@ -127,7 +127,7 @@ Fournit des commandes et des informations de base pour l’environnement, par ex
 
 S’il est affiché, il contient des informations comme décrit dans le tableau ci-dessous. Si cet onglet n’est pas affiché, cela signifie que Visual Studio gère automatiquement toutes les informations.
 
-![Onglet Configurer, Environnements Python](~/docs/python/media/environments-configure-tab.png)
+![Onglet Configurer, Environnements Python](~/python/media/environments-configure-tab.png)
 
 | Champ | Description |
 | --- | --- |
@@ -144,13 +144,13 @@ S’il est affiché, il contient des informations comme décrit dans le tableau 
 
 Gère les packages installés dans l’environnement, ce qui vous permet également de rechercher des packages et d’en installer de nouveaux (y compris toutes les dépendances). Effectuer une recherche filtre vos packages actuellement installés, tout comme effectuer une recherche [PyPI](https://pypi.python.org). En outre, vous pouvez entrer directement une commande `pip install` dans la zone de recherche, y compris les indicateurs tels que `--user` ou `--no-deps`.
 
-![Onglet pip, Environnements Python](~/docs/python/media/environments-pip-tab.png)
+![Onglet pip, Environnements Python](~/python/media/environments-pip-tab.png)
 
 ### <a name="intellisense-tab"></a>Onglet IntelliSense
 
 Affiche l’état actuel de la base de données de saisie semi-automatique IntelliSense :
 
-![Onglet IntelliSense, Environnements Python](~/docs/python/media/environments-intellisense-tab.png)
+![Onglet IntelliSense, Environnements Python](~/python/media/environments-intellisense-tab.png)
 
 La base de données contient des métadonnées pour toutes les bibliothèques de l’environnement, améliore la vitesse d’IntelliSense et réduit l’utilisation de la mémoire. Lorsque Visual Studio détecte un nouvel environnement (ou que vous en ajoutez un), il commence automatiquement à compiler la base de données en analysant les fichiers source de la bibliothèque. Ce processus peut prendre entre une minute et plus d’une heure, selon ce qui est installé. (Anaconda, par exemple, est fourni avec de nombreuses bibliothèques et la compilation de la base de données prend un certain temps). Une fois ce processus terminé, vous obtiendrez IntelliSense détaillée et n’aurez pas à actualiser une nouvelle fois la base de données (avec le bouton **Refresh DB** (Actualiser base de données)) jusqu’à ce que vous installiez d’autres bibliothèques.
 
@@ -174,11 +174,11 @@ Pour activer un environnement différent pour le projet, cliquez avec le bouton 
 
 N’importe quel environnement global peut être ajouté en tant qu’environnement de projet en cliquant avec le bouton droit sur **Environnements Python** et en sélectionnant **Add/Remove Python Environments...** (Ajouter/supprimer des environnements Python...). Dans la liste affichée, vous pouvez sélectionner ou désélectionner les environnements disponibles dans votre projet.
 
-![Boîte de dialogue Ajouter/supprimer des environnements Python](~/docs/python/media/environments-add-remove.png)
+![Boîte de dialogue Ajouter/supprimer des environnements Python](~/python/media/environments-add-remove.png)
 
 Dans l’Explorateur de solutions, vous pouvez également développer l’environnement pour afficher ses packages installés (ceux que vous pouvez importer et utiliser dans votre code lorsque l’environnement est actif) :
 
-![Packages Python pour un environnement dans l’Explorateur de solutions](~/docs/python/media/environments-installed-packages.png)
+![Packages Python pour un environnement dans l’Explorateur de solutions](~/python/media/environments-installed-packages.png)
 
 Pour installer de nouveaux packages, cliquez avec le bouton droit sur l’environnement, sélectionnez **Install Python Package...** (Installer un package Python...) et entrez le nom du package de votre choix. Les packages (et les dépendances) sont téléchargés à partir de [l’index de package Python (PyPI)](https://pypi.python.org/pypi), où vous pouvez également rechercher des packages disponibles. La barre d’état de Visual Studio et la fenêtre Sortie affichent des informations sur l’installation. Pour désinstaller un package, cliquez avec le bouton sur celui-ci et sélectionnez **Supprimer**.
 
@@ -199,7 +199,7 @@ Pour créer un environnement virtuel :
 
 1. Cliquez avec le bouton droit sur **Environnements Python** dans l’Explorateur de solutions, puis sélectionnez **Add Virtual Environment...** (Ajouter un environnement virtuel...), qui affiche ce qui suit :
 
-    ![Création d’un environnement virtuel](~/docs/python/media/environments-add-virtual-1.png)
+    ![Création d’un environnement virtuel](~/python/media/environments-add-virtual-1.png)
 
 1. Spécifiez un nom pour créer l’environnement virtuel dans votre chemin du projet, ou un chemin d’accès complet pour le créer ailleurs. (Pour assurer une compatibilité maximale avec d’autres outils, utilisez uniquement des chiffres et des lettres dans le nom.)
 
@@ -207,7 +207,7 @@ Pour créer un environnement virtuel :
 
     Si le chemin d’accès fourni est un environnement virtuel existant, l’interpréteur de base sera détecté et le bouton Créer sera modifié en bouton **Ajouter** :
 
-    ![Ajout d’un environnement virtuel existant](~/docs/python/media/environments-add-virtual-2.png)
+    ![Ajout d’un environnement virtuel existant](~/python/media/environments-add-virtual-2.png)
 
 Un environnement virtuel existant peut également être ajouté en cliquant avec le bouton droit sur **Environnements Python** dans l’Explorateur de solutions et en sélectionnant **Add Existing Virtual Environment...** (Ajouter un environnement virtuel existant...). Visual Studio détecte automatiquement l’interpréteur de base à l’aide du fichier `orig-prefix.txt` dans le répertoire `lib` de l’environnement.
 
@@ -223,11 +223,11 @@ Techniquement, tout filename peut être utilisé pour suivre les spécifications
 
 - Si vous avez chargé un projet contenant `requirements.txt` et si vous souhaitez installer tous les packages répertoriés dans ce fichier, cliquez avec le bouton droit sur le projet et sélectionnez **Install from requirements.txt** (Installer à partir de requirements.txt) :
 
-    ![Installer à partir de requirements.txt](~/docs/python/media/environments-requirements-txt-install.png)
+    ![Installer à partir de requirements.txt](~/python/media/environments-requirements-txt-install.png)
 
 - Lorsque vous disposez de tous les packages nécessaires installés dans un projet, vous pouvez cliquer avec le bouton droit sur le projet dans l’Explorateur de solutions et sélectionner **Generate requirements.txt** (Générer requirements.txt) pour créer le fichier nécessaire. Si le fichier existe déjà, plusieurs options vous seront proposées pour le mettre à jour :
 
-    ![Options de mise à jour pour requirements.txt](~/docs/python/media/environments-requirements-txt-replace.png)
+    ![Options de mise à jour pour requirements.txt](~/python/media/environments-requirements-txt-replace.png)
 
     - **Replace entire file** (Remplacer l’intégralité du fichier) supprime tous les éléments, commentaires et options qui existent.
     - **Refresh existing entries** (Actualiser les entrées existantes) détecte les spécifications du package et met à jour les spécificateurs de version pour qu’ils correspondent à la version actuellement installée.
@@ -237,7 +237,7 @@ Les fichiers `requirements.txt` étant destinés à figer les spécifications de
 
 Lorsque vous ajoutez un environnement virtuel, si un fichier ` requirements.txt` existe, la boîte de dialogue **Add Virtual Environment** (Ajouter un environnement virtuel) affiche une option pour installer les packages automatiquement, ce qui vous permet de recréer facilement un environnement sur un autre ordinateur :
 
-![Créer un environnement virtuel avec requirements.txt](~/docs/python/media/environments-requirements-txt.png)
+![Créer un environnement virtuel avec requirements.txt](~/python/media/environments-requirements-txt.png)
 
 Si un package ne peut pas être installé par pip et s’il apparaît dans un fichier `requirements.txt`, l’ensemble de l’installation échoue. Dans ce cas, modifiez manuellement le fichier à exclure de ce package ou utilisez [les options de pip](http://pip.readthedocs.org/en/latest/reference/pip_install.html#requirements-file-format) pour faire référence à une version installable du package. Par exemple, vous préférez peut-être utiliser [`pip wheel`](http://pip.readthedocs.org/en/latest/reference/pip_wheel.html) pour compiler une dépendance et ajouter l’option `--find-links <path>` à votre `requirements.txt` :
 

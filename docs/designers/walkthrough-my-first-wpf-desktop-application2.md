@@ -257,7 +257,7 @@ ms.lasthandoff: 05/13/2017
   
      L’illustration suivante montre l’application avec les boutons de la fenêtre de navigation.  
   
-     ![Exemple de capture d’écran ExpenseIt](~/docs/designers/media/gettingstartedfigure1.png "GettingStartedFigure1")  
+     ![Exemple de capture d’écran ExpenseIt](~/designers/media/gettingstartedfigure1.png "GettingStartedFigure1")  
   
 6.  Fermez l’application pour repasser en mode de conception.  
   
@@ -313,7 +313,7 @@ ms.lasthandoff: 05/13/2017
   
 3.  Générez et exécutez l’application. L’illustration suivante montre l’apparence au moment de l’exécution des contrôles créés par le code XAML dans cette procédure.  
   
-     ![Exemple de capture d’écran ExpenseIt](~/docs/designers/media/gettingstartedfigure2.png "GettingStartedFigure2")  
+     ![Exemple de capture d’écran ExpenseIt](~/designers/media/gettingstartedfigure2.png "GettingStartedFigure2")  
   
 4.  Fermez l’application pour repasser en mode de conception.  
   
@@ -480,7 +480,7 @@ ms.lasthandoff: 05/13/2017
   
 6.  Si vous générez et exécutez l’application à ce stade, elle doit ressembler à l’illustration suivante :  
   
-     ![Exemple de capture d’écran ExpenseIt](~/docs/designers/media/gettingstartedfigure3.png "GettingStartedFigure3")  
+     ![Exemple de capture d’écran ExpenseIt](~/designers/media/gettingstartedfigure3.png "GettingStartedFigure3")  
   
 #### <a name="to-add-code-to-the-button"></a>Pour ajouter du code au bouton  
   

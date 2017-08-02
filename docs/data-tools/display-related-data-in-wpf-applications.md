@@ -56,7 +56,7 @@ Dans certaines applications, vous pouvez utiliser des données qui viennent de p
   
      L'illustration suivante montre la table **Orders** connexe de la table **Customers** dans un groupe de données \(dataset\) dans la fenêtre **Sources de données**.  
   
-     ![Fenêtre Sources de données montrant des relations](~/docs/data-tools/media/datasources2.gif "DataSources2")  
+     ![Fenêtre Sources de données montrant des relations](~/data-tools/media/datasources2.gif "DataSources2")  
   
 ## Voir aussi  
  [Liaison de contrôles WPF avec des données dans Visual Studio](../data-tools/bind-wpf-controls-to-data-in-visual-studio1.md)   

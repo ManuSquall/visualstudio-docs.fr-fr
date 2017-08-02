@@ -74,7 +74,7 @@ caps.handback.revision: 30
   
  Pour obtenir des informations générales sur le fonctionnement des compléments VSTO, consultez [Architecture des compléments VSTO](../vsto/architecture-of-vsto-add-ins.md).  
   
- ![lien vers la vidéo](~/docs/data-tools/media/playvideo.gif "lien vers la vidéo") Pour visionner la démonstration vidéo associée, consultez [Comment faire pour automatiser PowerPoint à partir d’un complément Excel ?](http://go.microsoft.com/fwlink/?LinkID=130300).  
+ ![lien vers la vidéo](~/data-tools/media/playvideo.gif "lien vers la vidéo") Pour visionner la démonstration vidéo associée, consultez [Comment faire pour automatiser PowerPoint à partir d’un complément Excel ?](http://go.microsoft.com/fwlink/?LinkID=130300).  
   
 ### Modèle de programmation de complément Excel  
  Lorsque vous créez un projet de complément VSTO Excel, Visual Studio génère une classe, nommée `ThisAddIn`, qui est le fondement de votre solution. Cette classe fournit un point de départ pour écrire votre code et elle expose également le modèle objet d’Excel à votre complément VSTO.  

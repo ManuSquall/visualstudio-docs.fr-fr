@@ -37,7 +37,7 @@ caps.handback.revision: 53
   
 -   [Ajout de contrôles au moment de l'exécution dans des compléments VSTO](#runtimeaddin)  
   
- ![lien vers la vidéo](~/docs/data-tools/media/playvideo.gif "lien vers la vidéo") Pour visionner la démonstration vidéo associée, consultez les informations indiquant [comment ajouter des contrôles à la surface d'un document au moment de l'exécution](http://go.microsoft.com/fwlink/?LinkId=132782).  
+ ![lien vers la vidéo](~/data-tools/media/playvideo.gif "lien vers la vidéo") Pour visionner la démonstration vidéo associée, consultez les informations indiquant [comment ajouter des contrôles à la surface d'un document au moment de l'exécution](http://go.microsoft.com/fwlink/?LinkId=132782).  
   
 ##  <a name="designtime"></a> Ajout de contrôles au moment du design  
  Il existe plusieurs façons d'ajouter des contrôles Windows Forms au document dans un projet au niveau du document au moment du design.  

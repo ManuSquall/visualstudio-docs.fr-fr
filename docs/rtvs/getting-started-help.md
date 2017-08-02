@@ -41,7 +41,7 @@ ms.lasthandoff: 05/12/2017
 
 L’aide R est intégrée directement à la fenêtre interactive de Visual Studio. Chaque fois que vous utilisez la commande `?`, comme dans `?mtcars`, une rubrique d’aide issue de la documentation R s’affiche dans une fenêtre Visual Studio :
 
-![Fenêtre d’aide dans Visual Studio](~/docs/rtvs/media/help-window.png)
+![Fenêtre d’aide dans Visual Studio](~/rtvs/media/help-window.png)
 
 > [!Tip]
 > À l’instar des autres fenêtres dans Visual Studio, vous pouvez réorganiser et ancrer la fenêtre d’aide comme bon vous semble. Consultez [Personnaliser les dispositions de fenêtres dans Visual Studio](../ide/customizing-window-layouts-in-visual-studio.md).
@@ -54,11 +54,11 @@ Pour lancer une recherche dans l’aide, utilisez la commande `??` et mettez le 
 ??"Motor Trend"
 ```
 
-![Résultats d’une recherche dans l’aide](~/docs/rtvs/media/help-search1.png)
+![Résultats d’une recherche dans l’aide](~/rtvs/media/help-search1.png)
 
 La fenêtre d’aide comprend également un champ d’entrée de recherche qui vous permet de lancer directement des recherches dans la documentation R :
 
-![Résultats d’une recherche dans l’aide effectuée au moyen du champ d’entrée](~/docs/rtvs/media/help-search2.png)
+![Résultats d’une recherche dans l’aide effectuée au moyen du champ d’entrée](~/rtvs/media/help-search2.png)
 
 ## <a name="integrated-help-lookup"></a>Recherche dans l’aide intégrée
 
@@ -67,7 +67,7 @@ La fenêtre d’aide comprend également un champ d’entrée de recherche qui v
 - Appuyez sur F1 pendant une opération de saisie semi-automatique pour générer une liste de rubriques d’aide correspondant à la sous-chaîne.
 - Cliquez avec le bouton droit sur un terme de recherche (comme une fonction) et sélectionnez la commande **Aide sur**, ou appuyez sur F1, pour ouvrir la rubrique d’aide de cette fonction. Vous pouvez également appeler **Aide sur** pour n’importe quelle sélection.
 
-    ![Appel de l’aide par le biais du menu contextuel](~/docs/rtvs/media/help-right-click.png)
+    ![Appel de l’aide par le biais du menu contextuel](~/rtvs/media/help-right-click.png)
 
 > [!Tip]
 > Pour ouvrir l’aide intégrée dans un navigateur, sélectionnez **Outils R > Options** et affectez à **Navigateur web (F1)** la valeur `External`. Consultez [Options](options.md).
@@ -76,8 +76,8 @@ La fenêtre d’aide comprend également un champ d’entrée de recherche qui v
 
 Outre la documentation R, les développeurs consultent souvent StackOverflow quand ils écrivent du code. RTVS simplifie également ce processus. Cliquez avec le bouton droit sur un terme ou une sélection et sélectionnez la commande **Rechercher sur le web**, ou appuyez simplement sur Ctrl+F1. S’ouvre alors une fenêtre Visual Studio (ou un navigateur si vous avez changé l’option **Navigateur web (F1)**) où sont présentés, par défaut, les résultats de la recherche dans StackOverflow :
 
-![Résultats d’une recherche web dans Visual Studio](~/docs/rtvs/media/help-web-search-results.png)
+![Résultats d’une recherche web dans Visual Studio](~/rtvs/media/help-web-search-results.png)
 
 Vous pouvez modifier la chaîne ajoutée, `R site:stackoverflow`, à l’aide de l’option **Outils R > Options > Chaîne de recherche web (F1)** :
 
-![Changement de l’option de chaîne de recherche web (F1)](~/docs/rtvs/media/options-dialog.png)
+![Changement de l’option de chaîne de recherche web (F1)](~/rtvs/media/options-dialog.png)

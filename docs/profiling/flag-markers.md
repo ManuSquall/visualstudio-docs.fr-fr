@@ -43,19 +43,19 @@ Un marqueur indicateur représente un événement qui s’est produit à un inst
 ## <a name="flag-importance"></a>Importance des indicateurs  
  La taille des indicateurs dépend de leur importance. Comme pour tout autre type de marqueur, leur niveau d’importance peut être bas, normal, élevé ou critique.  Cette illustration montre l’apparence des marqueurs selon leur niveau d’importance :  
   
- ![Marqueurs d’importance Basse, Normale, Élevée et Critique](~/docs/profiling/media/cvmarkerimportance.png "CVMarkerImportance")  
+ ![Marqueurs d’importance Basse, Normale, Élevée et Critique](~/profiling/media/cvmarkerimportance.png "CVMarkerImportance")  
 Marqueurs indiquant l’importance des indicateurs  
   
 ## <a name="flag-category"></a>Catégories des indicateurs  
  Les indicateurs sont de cinq couleurs différentes, selon leur catégorie. Les couleurs sont réutilisées lorsqu’il y a plus de cinq catégories. Vous ne pouvez pas choisir la couleur. Comme pour tout autre marqueur, la catégorie peut correspondre à n’importe quel entier. L’illustration suivante montre les couleurs des cinq premières catégories.  
   
- ![Les cinq couleurs des marqueurs de catégorie](~/docs/profiling/media/cvmarkercategory.png "CVMarkerCategory")  
+ ![Les cinq couleurs des marqueurs de catégorie](~/profiling/media/cvmarkercategory.png "CVMarkerCategory")  
 Marqueurs montrant les catégories  
   
 ## <a name="alerts"></a>Alertes  
  Une alerte est un indicateur rouge qui représente un événement d’application critique, tel qu’une exception.  Voici un exemple d’alerte :  
   
- ![Marqueur d’alerte du visualiseur concurrentiel](~/docs/profiling/media/cvmarkeralert.png "CVMarkerAlert")  
+ ![Marqueur d’alerte du visualiseur concurrentiel](~/profiling/media/cvmarkeralert.png "CVMarkerAlert")  
 Marqueur d’alerte  
   
 ## <a name="aggregation-flags"></a>Indicateurs d’agrégation  
@@ -63,7 +63,7 @@ Marqueur d’alerte
   
  Les indicateurs d’agrégation peuvent avoir différentes tailles. La taille varie selon le niveau d’importance de l’indicateur le plus important de l’agrégation. L’illustration suivante montre les indicateurs d’agrégation, par ordre croissant d’importance.  
   
- ![Indicateurs d’agrégation affichant quatre niveaux d’importance](~/docs/profiling/media/cvmarkeraggregate.png "CVMarkerAggregate")  
+ ![Indicateurs d’agrégation affichant quatre niveaux d’importance](~/profiling/media/cvmarkeraggregate.png "CVMarkerAggregate")  
 Indicateurs d’agrégation par niveau d’importance  
   
 ## <a name="see-also"></a>Voir aussi  

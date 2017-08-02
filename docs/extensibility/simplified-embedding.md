@@ -21,7 +21,7 @@ caps.handback.revision: 16
 
 L'incorporation simplifiée est activée dans un éditeur lorsque son objet de vue du document \(autrement dit, est lancé à un enfant de\) [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]qui est apparenté, et l'interface d' <xref:Microsoft.VisualStudio.Shell.Interop.IVsWindowPane> est implémentée pour gérer ses commandes de fenêtre.  Simplifié incorporer des éditeurs ne peut pas héberger les contrôles activés.  Les objets utilisés pour créer un éditeur avec l'incorporation simplifiée sont présentés dans l'illustration suivante.  
   
- ![Graphique simplifié de l'éditeur d'incorporation](~/docs/extensibility/media/vssimplifiedembeddingeditor.gif "vsSimplifiedEmbeddingEditor")  
+ ![Graphique simplifié de l'éditeur d'incorporation](~/extensibility/media/vssimplifiedembeddingeditor.gif "vsSimplifiedEmbeddingEditor")  
 éditeur avec l'incorporation simplifiée  
   
 > [!NOTE]

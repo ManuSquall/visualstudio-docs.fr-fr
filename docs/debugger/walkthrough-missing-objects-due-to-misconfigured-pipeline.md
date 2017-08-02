@@ -36,7 +36,7 @@ Cette procédure pas à pas montre comment utiliser les outils Graphics Diagnost
   
  Dans ce scénario, quand l’application est exécutée pour être testée, l’arrière\-plan est affiché comme prévu, mais l’un des objets ne s’affiche pas. À l’aide de Graphics Diagnostics, vous capturez le problème dans un journal de graphisme pour déboguer l’application. Le problème se présente ainsi dans l'application :  
   
- ![L'objet ne peut être visualisé](~/docs/debugger/graphics/media/gfx_diag_demo_misconfigured_pipeline_problem.png "gfx\_diag\_demo\_misconfigured\_pipeline\_problem")  
+ ![L'objet ne peut être visualisé](~/debugger/graphics/media/gfx_diag_demo_misconfigured_pipeline_problem.png "gfx\_diag\_demo\_misconfigured\_pipeline\_problem")  
   
 ## Examen  
  À l'aide des outils Graphics Diagnostics, vous pouvez charger le document du journal de graphisme pour examiner les frames capturés pendant le test.  
@@ -100,7 +100,7 @@ Cette procédure pas à pas montre comment utiliser les outils Graphics Diagnost
   
  Pour résoudre le problème, affectez le nuanceur de pixels approprié à l’aide du premier paramètre de l’appel d’API `ID3D11DeviceContext::PSSetShader`.  
   
- ![Code source C&#43;&#43; corrigé](~/docs/debugger/graphics/media/gfx_diag_demo_misconfigured_pipeline_step_6.png "gfx\_diag\_demo\_misconfigured\_pipeline\_step\_6")  
+ ![Code source C&#43;&#43; corrigé](~/debugger/graphics/media/gfx_diag_demo_misconfigured_pipeline_step_6.png "gfx\_diag\_demo\_misconfigured\_pipeline\_step\_6")  
   
  Après avoir corrigé le code, vous pouvez le régénérer et réexécuter l’application pour vérifier que le problème d’affichage est résolu :  
   

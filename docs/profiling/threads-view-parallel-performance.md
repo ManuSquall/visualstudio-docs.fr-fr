@@ -86,7 +86,7 @@ La vue threads est la vue la plus détaillée et la plus riche en fonctionnalit�
   
  Voici une illustration de la vue Threads :  
   
- ![Vue Threads](~/docs/profiling/media/threadsviewnarrowing.png "ThreadsViewNarrowing")  
+ ![Vue Threads](~/profiling/media/threadsviewnarrowing.png "ThreadsViewNarrowing")  
 vue Threads  
   
  Initialement, les threads sont triés dans l’ordre où ils sont créés : le thread d’application principal figure donc en premier. Vous pouvez utiliser l’option de tri dans le coin supérieur gauche de la vue pour trier les threads selon un autre critère (par exemple sur la base de la plus grande quantité de travail d’exécution effectuée).  

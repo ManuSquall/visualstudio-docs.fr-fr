@@ -41,7 +41,7 @@ caps.handback.revision: 15
   
 2.  Ajoutez deux contrôles au WebPart : une zone de texte et un bouton.  Conservez les valeurs par défaut des noms, à savoir TextBox1 et Button1, respectivement.  
   
-3.  Ajoutez deux entrées à la propriété **Entrées de contrôle sécurisé** du composant WebPart.  Pour ce faire, cliquez sur le bouton de sélection \(![Bouton de sélection du concepteur ASP.NET mobile](~/docs/sharepoint/media/mwellipsis.gif "Bouton de sélection du concepteur ASP.NET mobile")\) en regard de la propriété **Entrées de contrôle sécurisé** dans la fenêtre **Propriétés**.  
+3.  Ajoutez deux entrées à la propriété **Entrées de contrôle sécurisé** du composant WebPart.  Pour ce faire, cliquez sur le bouton de sélection \(![Bouton de sélection du concepteur ASP.NET mobile](~/sharepoint/media/mwellipsis.gif "Bouton de sélection du concepteur ASP.NET mobile")\) en regard de la propriété **Entrées de contrôle sécurisé** dans la fenêtre **Propriétés**.  
   
      La boîte de dialogue **Entrées de contrôle sécurisé** apparaît.  
   
@@ -77,7 +77,7 @@ caps.handback.revision: 15
   
 7.  Sous **Assemblys supplémentaires**, cliquez sur le bouton **Ajouter** puis sélectionnez **Ajouter un assembly existant** dans la liste.  
   
-8.  Dans la boîte de dialogue **Ajouter un assembly existant**, cliquez sur le bouton de sélection \(![Bouton de sélection du concepteur ASP.NET mobile](~/docs/sharepoint/media/mwellipsis.gif "Bouton de sélection du concepteur ASP.NET mobile")\) en regard de **Chemin d'accès source**.  
+8.  Dans la boîte de dialogue **Ajouter un assembly existant**, cliquez sur le bouton de sélection \(![Bouton de sélection du concepteur ASP.NET mobile](~/sharepoint/media/mwellipsis.gif "Bouton de sélection du concepteur ASP.NET mobile")\) en regard de **Chemin d'accès source**.  
   
 9. Choisissez l'assembly de la solution SharePoint que vous avez créée à l'étape 1, puis cliquez sur le bouton **Ouvrir**.  
   
