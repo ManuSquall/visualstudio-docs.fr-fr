@@ -29,9 +29,10 @@ translation.priority.mt:
 - tr-tr
 - zh-cn
 - zh-tw
-translationtype: Machine Translation
+ms.translationtype: Machine Translation
 ms.sourcegitcommit: ca7c86466fa23fb21a932f26dc24e37c71cf29b4
 ms.openlocfilehash: 774266bbcd64e87229f8f97626cdff1462b27fcb
+ms.contentlocale: fr-fr
 ms.lasthandoff: 04/05/2017
 
 ---
@@ -45,7 +46,7 @@ Un VSPackage doit inscrire avec [!INCLUDE[vsprvs](../../code-quality/includes/vs
  [Référence de Table de Format de commande](http://msdn.microsoft.com/en-us/09e9c6ef-9863-48de-9483-d45b7b7c798f) ressources se trouvent dans des DLL de l’interface utilisateur de satellites non managé.  
   
 ## <a name="command-handler-registration-of-a-vspackage"></a>Inscription du Gestionnaire de commande d’un VSPackage  
- Un VSPackage agissant comme un gestionnaire pour l’interface utilisateur (IU)-en fonction des commandes nécessite une entrée de Registre nommée d’après le VSPackage `GUID`. Cette entrée de Registre spécifie l’emplacement du fichier de ressources de l’interface utilisateur du VSPackage et de la ressource de menu dans le fichier. L’entrée du Registre se trouve sous HKEY_LOCAL_MACHINE\Software\Microsoft\VisualStudio\\*\<Version >*\Menus, où *\<Version >* est la version de [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)], par exemple 9.0.  
+ Un VSPackage agissant comme un gestionnaire pour l’interface utilisateur (IU)-en fonction des commandes nécessite une entrée de Registre nommée d’après le VSPackage `GUID`. Cette entrée de Registre spécifie l’emplacement du fichier de ressources de l’interface utilisateur du VSPackage et de la ressource de menu dans le fichier. L’entrée du Registre se trouve sous HKEY_LOCAL_MACHINE\Software\Microsoft\VisualStudio\\*\<Version >*\Menus, où  *\<Version >* est la version de [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)], par exemple 9.0.  
   
 > [!NOTE]
 >  Le chemin d’accès racine de HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\\*\<Version >* peut être remplacée par une autre racine quand le [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] shell est initialisé. Pour plus d’informations sur le chemin d’accès racine, consultez [l’installation de VSPackages avec Windows Installer](../../extensibility/internals/installing-vspackages-with-windows-installer.md).  
