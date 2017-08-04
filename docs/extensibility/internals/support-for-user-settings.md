@@ -30,9 +30,10 @@ translation.priority.mt:
 - tr-tr
 - zh-cn
 - zh-tw
-translationtype: Machine Translation
+ms.translationtype: Machine Translation
 ms.sourcegitcommit: ca7c86466fa23fb21a932f26dc24e37c71cf29b4
 ms.openlocfilehash: 24bd28ad78f1cd3a21167215ed8348dc79edce6b
+ms.contentlocale: fr-fr
 ms.lasthandoff: 04/05/2017
 
 ---
@@ -48,7 +49,7 @@ Un VSPackage peut définir une ou plusieurs catégories de paramètres, qui sont
      Si un VSPackage unique prend en charge plusieurs Points de paramètres personnalisés, chaque Point de paramètres personnalisés est implémentée par une classe distincte, et chacun est enregistré par une instance unique de la <xref:Microsoft.VisualStudio.Shell.ProvideProfileAttribute>classe.</xref:Microsoft.VisualStudio.Shell.ProvideProfileAttribute> Par conséquent, une classe d’implémentation de paramètres peuvent prendre en charge plusieurs catégories de paramètres.  
   
 ## <a name="custom-settings-point-registry-entry-details"></a>Détails de l’entrée des paramètres personnalisés du Registre de Point  
- Points de paramètres personnalisés sont créés dans une entrée de Registre à l’emplacement suivant : HKLM\Software\Microsoft\VisualStudio\\*\<Version >*\UserSettings\\`<CSPName>`, où `<CSPName>` est le nom du Point de paramètres personnalisés le prend en charge VSPackage et *\<Version >* est la version de [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)], par exemple 8.0.  
+ Points de paramètres personnalisés sont créés dans une entrée de Registre à l’emplacement suivant : HKLM\Software\Microsoft\VisualStudio\\*\<Version >*\UserSettings\\`<CSPName>`, où `<CSPName>` est le nom du Point de paramètres personnalisés le prend en charge VSPackage et  *\<Version >* est la version de [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)], par exemple 8.0.  
   
 > [!NOTE]
 >  Le chemin d’accès racine de HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\\*\<Version >* peut être remplacée par une autre racine quand le [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] l’environnement de développement intégré (IDE) est initialisé. Pour plus d’informations, consultez [les commutateurs de ligne de commande](../../extensibility/command-line-switches-visual-studio-sdk.md).  
