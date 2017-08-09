@@ -16,10 +16,10 @@ author: kraigb
 ms.author: kraigb
 manager: ghogen
 ms.translationtype: HT
-ms.sourcegitcommit: 6d25db4639f2c8391c1e32542701ea359f560178
-ms.openlocfilehash: c64d1abc2266b7e2edbb2c81a46c53c39eb9a85a
+ms.sourcegitcommit: c00adbbabf0d3b82acb17f4a269dfc693246bc69
+ms.openlocfilehash: 89de0d11791dbf13b9d4fcfcea8168b443d2777b
 ms.contentlocale: fr-fr
-ms.lasthandoff: 07/18/2017
+ms.lasthandoff: 08/01/2017
 
 ---
 
@@ -45,7 +45,7 @@ Vous trouverez la documentation sur [azure-sdk-for-python.readthedocs.org](http:
 
 Le [Kit de développement logiciel (SDK) Azure pour le centre de développement Python](http://azure.microsoft.com/develop/python/) dispose également d’un certain nombre de ressources utiles, y compris d’une série de didacticiels tels que :
 
-  - Création d’applications web avec [Django](https://docs.microsoft.com/azure/service-bus-messaging/service-bus-python-how-to-use-topics-subscriptions) [Flask](https://docs.microsoft.com/azure/app-service-web/web-sites-python-create-deploy-flask-app) et [Bottle](https://docs.microsoft.com/azure/app-service-web/web-sites-python-create-deploy-bottle-app).
+  - Création d’applications web avec [Django](https://docs.microsoft.com/azure/app-service-web/web-sites-python-create-deploy-django-app) [Flask](https://docs.microsoft.com/azure/app-service-web/web-sites-python-create-deploy-flask-app) et [Bottle](https://docs.microsoft.com/azure/app-service-web/web-sites-python-create-deploy-bottle-app).
   - [Stockage d’objets BLOB](https://docs.microsoft.com/azure/storage/storage-python-how-to-use-blob-storage)
   - [Stockage de tables](https://docs.microsoft.com/azure/storage/storage-python-how-to-use-table-storage)
   - [Stockage de file d’attente](https://docs.microsoft.com/azure/storage/storage-python-how-to-use-queue-storage)
@@ -66,3 +66,4 @@ Pour les API publiques dépourvues de documentation, les tests d’unités du [r
 Le référentiel Git du Kit de développement logiciel (SDK) se trouve à l’adresse suivante : [https://github.com/Azure/azure-sdk-for-python](https://github.com/Azure/azure-sdk-for-python).
 
 [Signalez les problèmes au niveau du référentiel](https://github.com/Azure/azure-sdk-for-python/issues) si vous rencontrez des problèmes ou avez des questions concernant l’utilisation du Kit SDK.
+
