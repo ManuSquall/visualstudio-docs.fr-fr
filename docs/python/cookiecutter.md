@@ -1,12 +1,13 @@
 ---
 title: Extension CookieCutter pour Python dans Visual Studio | Microsoft Docs
 ms.custom: 
-ms.date: 5/8/2017
+ms.date: 7/12/2017
 ms.prod: visual-studio-dev15
 ms.reviewer: 
 ms.suite: 
 ms.technology:
 - devlang-python
+ms.devlang: python
 ms.tgt_pltfrm: 
 ms.topic: article
 ms.assetid: 783da5fd-726c-4716-994e-aa04d6b75896
@@ -14,25 +15,11 @@ caps.latest.revision: 1
 author: kraigb
 ms.author: kraigb
 manager: ghogen
-translation.priority.ht:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 85576806818a6ed289c2f660f87b5c419016c600
-ms.openlocfilehash: 44aa74104cbb27de62fe739dbdd8f269fbf42c53
+ms.translationtype: HT
+ms.sourcegitcommit: 6d25db4639f2c8391c1e32542701ea359f560178
+ms.openlocfilehash: 6db7e2efc54414dcb72899ab3238a9b7a0390921
 ms.contentlocale: fr-fr
-ms.lasthandoff: 05/09/2017
+ms.lasthandoff: 07/18/2017
 
 ---
 
@@ -40,15 +27,15 @@ ms.lasthandoff: 05/09/2017
 
 [Cookiecutter](https://cookiecutter.readthedocs.io/en/latest/) fournit une interface utilisateur graphique pour découvrir des modèles, des options de modèle d’entrée et créer des projets et des fichiers. Cette extension est incluse avec Visual Studio 2017 et peut être installée séparément dans les versions antérieures de Visual Studio.
 
-Cookiecutter nécessite Python 3.3 ou version ultérieure (32 ou 64 bits) ou Anaconda 3 4.2 ou version ultérieure (32 ou 64 bits). Si aucun interpréteur Python approprié n’est disponible, Visual Studio affiche un avertissement. Si vous installez un interpréteur Python pendant l’exécution de Visual Studio, cliquez sur le bouton Accueil dans la barre d’outils Cookiecutter pour détecter l’interpréteur nouvellement installé.
+Cookiecutter nécessite Python 3.3 ou version ultérieure (32 bits ou 64 bits) ou Anaconda 3 4.2 ou version ultérieure (32 bits ou 64 bits). Si aucun interpréteur Python approprié n’est disponible, Visual Studio affiche un avertissement. Si vous installez un interpréteur Python pendant l’exécution de Visual Studio, cliquez sur le bouton Accueil dans la barre d’outils Cookiecutter pour détecter l’interpréteur nouvellement installé.
 
-Une fois l’installation terminée, sélectionnez **Affichage > Cookiecutter Explorer** (Explorateur Cookiecutter) pour ouvrir sa fenêtre :
+Une fois l’installation terminée, sélectionnez **Affichage > Explorateur Cookiecutter** pour ouvrir sa fenêtre :
 
-![Fenêtre principale Cookiecutter](~/python/media/cookiecutter-overview.png)
+![Fenêtre principale Cookiecutter](media/cookiecutter-overview.png)
 
 ## <a name="cookiecutter-workflow"></a>Flux de travail Cookiecutter
 
-L’utilisation de Cookiecutter est un processus de navigation et de sélection d’un modèle, son clonage sur votre ordinateur local, la définition des options, puis la création de code à partir de ce modèle, comme décrit dans les sections suivantes.
+L’utilisation de Cookiecutter consiste à naviguer et sélectionner un modèle, le cloner sur votre ordinateur local, définir des options, puis créer du code à partir de ce modèle, comme décrit dans les sections suivantes.
 
 ### <a name="browsing-templates"></a>Modèles de navigation
 
@@ -65,7 +52,7 @@ La page d’accueil Cookiecutter affiche une liste des modèles que vous pouvez 
 
 Lorsque vous sélectionnez un modèle suivi par **Suivant**, Cookiecutter fait une copie locale à partir de laquelle travailler.
 
-Si vous sélectionnez un modèle à partir des groupes **Recommandé** ou **GitHub** ou si vous saisissez une URL personnalisée dans la zone de recherche et sélectionnez ce modèle, il est cloné et installé sur votre ordinateur local. Si ce modèle a été installé dans une session précédente de Visual Studio, il est automatiquement supprimé et la version la plus récente est clonée.
+Si vous sélectionnez un modèle à partir des groupes **Recommandé** ou **GitHub**, ou si vous saisissez une URL personnalisée dans la zone de recherche et sélectionnez ce modèle, il est cloné et installé sur votre ordinateur local. Si ce modèle a été installé dans une session précédente de Visual Studio, il est automatiquement supprimé et la version la plus récente est clonée.
 
 Si vous sélectionnez un modèle à partir du groupe **Installé** ou si vous saisissez un chemin d’accès au dossier personnalisé dans la zone de recherche et sélectionnez ce modèle, Visual Studio charge ce modèle sans effectuer de clonage.
 
@@ -76,27 +63,27 @@ Si vous sélectionnez un modèle à partir du groupe **Installé** ou si vous sa
 
 Une fois le modèle installé localement, Cookiecutter affiche une page d’options dans laquelle vous pouvez spécifier l’endroit où Cookiecutter doit générer des fichiers, ainsi que d’autres options :
 
-![Page d’options de Cookiecutter](~/python/media/cookiecutter-template-options.png)
+![Page d’options de Cookiecutter](media/cookiecutter-template-options.png)
 
 Chaque modèle Cookiecutter définit son propre ensemble d’options et spécifie une valeur par défaut pour chacune d’elles (affichée en tant que texte suggéré dans chaque champ d’entrée). Une valeur par défaut peut être un extrait de code, souvent lorsqu’il s’agit d’une valeur dynamique qui utilise d’autres options. 
 
-Il est possible de personnaliser les valeurs par défaut pour des options spécifiques avec un fichier de configuration utilisateur. Lorsque l’extension Cookiecutter détecte un fichier de configuration utilisateur, elle remplace les valeurs par défaut du modèle avec des valeurs par défaut de la configuration de l’utilisateur. Ce sujet est abordé dans la section [User Config (0.7.0+)](https://cookiecutter.readthedocs.io/en/latest/advanced/user_config.html) (Configuration utilisateur (0.7.0+)) de la documentation Cookiecutter.
+Il est possible de personnaliser les valeurs par défaut pour des options spécifiques avec un fichier de configuration utilisateur. Lorsque l’extension Cookiecutter détecte un fichier de configuration utilisateur, elle remplace les valeurs par défaut du modèle avec des valeurs par défaut de la configuration de l’utilisateur. Ce comportement est abordé dans la section [User Config](https://cookiecutter.readthedocs.io/en/latest/advanced/user_config.html) (Configuration utilisateur) de la documentation Cookiecutter.
 
 Si le modèle indique des tâches Visual Studio spécifiques à exécuter après la génération du code, une option **Run additional tasks on completion** (Exécuter des tâches supplémentaires à la fin) s’affiche et vous permet de refuser ces tâches. Les tâches consistent généralement à ouvrir un navigateur web, ouvrir des fichiers dans l’éditeur, installer des dépendances, etc.
 
 ### <a name="create"></a>Créer
 
-Une fois vos options définies, sélectionnez **Créer** pour générer du code. Notez que si le dossier de sortie n’est pas vide, un avertissement apparaîtra. Si vous êtes familier avec la sortie du modèle et si remplacer fichiers ne vous dérange pas, vous pouvez ignorer l’avertissement. Sinon, sélectionnez **Annuler**, spécifiez un dossier vide, puis copiez manuellement les fichiers créés dans votre dossier de sortie non vide.
+Une fois que vous avez défini les options, sélectionnez **Créer** pour générer du code (un avertissement s’affiche si le dossier de sortie n’est pas vide). Si vous êtes familier avec la sortie du modèle et si remplacer fichiers ne vous dérange pas, vous pouvez ignorer l’avertissement. Sinon, sélectionnez **Annuler**, spécifiez un dossier vide, puis copiez manuellement les fichiers créés dans votre dossier de sortie non vide.
 
 Une fois les fichiers créés, Cookiecutter propose une option permettant d’ouvrir les fichiers dans **l’Explorateur de solutions** :
 
-![Commande de Cookiecutter affichant l’Explorateur de solutions](~/python/media/cookiecutter-files-created.png)
+![Commande de Cookiecutter affichant l’Explorateur de solutions](media/cookiecutter-files-created.png)
 
 ## <a name="cookiecutter-options"></a>Options de Cookiecutter
 
 Les options de Cookiecutter sont accessibles via **Outils > Options > Cookiecutter** :
 
-![Options de Cookiecutter](~/python/media/cookiecutter-tools-options.png)
+![Options de Cookiecutter](media/cookiecutter-tools-options.png)
 
 | Option | Description |
 | --- | --- |
@@ -105,20 +92,20 @@ Les options de Cookiecutter sont accessibles via **Outils > Options > Cookiecutt
 
 ## <a name="optimizing-cookiecutter-templates-for-visual-studio"></a>Optimisation des modèles de Cookiecutter pour Visual Studio
 
-Pour les bases de la création d’un modèle Cookiecutter, consultez la [documentation Cookiecutter](https://cookiecutter.readthedocs.io/en/latest/first_steps.html). Notez que l’extension Cookiecutter pour Visual Studio prend en charge les modèles créés pour Cookiecutter v1.4.
+Pour les bases de la création d’un modèle Cookiecutter, consultez la [documentation Cookiecutter](https://cookiecutter.readthedocs.io/en/latest/first_steps.html). L’extension Cookiecutter pour Visual Studio prend en charge les modèles créés pour Cookiecutter v1.4.
 
-Le rendu par défaut des variables d’un modèle varie selon le type de données (chaîne ou liste) :
+Le rendu par défaut des variables de modèle varie selon le type de données (chaîne ou liste) :
 
 - Chaîne : une étiquette pour le nom de variable, une zone de texte pour la saisie de valeur et un filigrane indiquant la valeur par défaut. L’info-bulle dans la zone de texte affiche la valeur par défaut.
 - Liste : une étiquette pour le nom de variable, une zone de liste modifiable pour la sélection d’une valeur. L’info-bulle dans la zone de liste modifiable affiche la valeur par défaut.
 
-Il est possible d’améliorer cela en spécifiant des métadonnées supplémentaires dans votre fichier `cookiecutter.json` qui est spécifique à Visual Studio (et ignoré par l’interface de ligne de commande de Cookiecutter). Toutes les propriétés sont facultatives :
+Il est possible d’améliorer ce rendu en spécifiant des métadonnées supplémentaires dans votre fichier `cookiecutter.json` qui est spécifique à Visual Studio (et ignoré par l’interface de ligne de commande Cookiecutter). Toutes les propriétés sont facultatives :
 
 | Propriété | Description |
 | --- | --- |
 | Ajouter des contrôles | Spécifie ce qui apparaît au-dessus de l’éditeur pour la variable, au lieu du nom de la variable. |
-| Description | Spécifie l’info-bulle qui apparaît sur le contrôle d’édition qui affichera cette description, au lieu de la valeur par défaut de cette variable. |
-| URL | Transforme l’étiquette en lien hypertexte, avec une info-bulle qui affiche l’URL. Cliquer sur le lien hypertexte redirigera vers cette URL en ouvrant le navigateur par défaut de l’utilisateur. |
+| Description | Spécifie l’info-bulle qui apparaît sur le contrôle d’édition, au lieu de la valeur par défaut de cette variable. |
+| URL | Transforme l’étiquette en lien hypertexte, avec une info-bulle qui affiche l’URL. Un clic sur le lien hypertexte ouvre le navigateur par défaut de l’utilisateur pour une redirection vers cette URL. |
 | Sélecteur | Autorise la personnalisation de l’éditeur pour une variable. Les sélecteurs suivants sont actuellement pris en charge :<ul><li>`string` : zone de texte standard, valeur par défaut pour les chaînes.</li><li>`list` : zone de liste modifiable, valeur par défaut pour les listes.</li><li>`yesno` : zone de liste modifiable permettant de choisir entre `y` et `n`, pour les chaînes.</li><li>`odbcConnection` : zone de texte avec un bouton « ... » qui fait apparaître une boîte de dialogue de connexion de base de données.</li></ul> |
 
 Exemple :
@@ -154,7 +141,7 @@ Cookiecutter dispose d’une fonctionnalité appelée *Post-Generate Hooks* (Hoo
 
 Par exemple, vous souhaitez peut-être ouvrir un fichier dans l’éditeur Visual Studio, ou dans son navigateur web, ou déclencher l’interface utilisateur Visual Studio qui invite l’utilisateur à créer un environnement virtuel et installer les spécifications d’un package.
 
-Pour autoriser ces scénarios, Visual Studio recherche des métadonnées étendues dans `cookiecutter.json` qui décrivent les commandes à exécuter une fois que l’utilisateur a ouvert les fichiers générés dans l’Explorateur de solutions ou après que les fichiers ont été ajoutés à un projet existant. (Là encore, l’utilisateur peut refuser l’exécution des tâches en désactivant **Run additional tasks on completion** (Exécuter des tâches supplémentaires à la fin) dans les options de modèle.)
+Pour autoriser ces scénarios, Visual Studio recherche des métadonnées étendues dans `cookiecutter.json` qui décrivent les commandes à exécuter une fois que l’utilisateur a ouvert les fichiers générés dans l’Explorateur de solutions ou après que les fichiers ont été ajoutés à un projet existant. (Là encore, l’utilisateur peut refuser l’exécution des tâches en désactivant **Exécuter des tâches supplémentaires à la fin** dans les options de modèle.)
 
 Exemple :
 
@@ -189,7 +176,7 @@ Si vous n’avez pas besoin de transmettre un argument, laissez une chaîne vide
 ]
 ```
 
-Utilisez un tableau pour plusieurs arguments. Pour les commutateurs, diviser le commutateur et sa valeur en arguments distincts assure une mise entre guillemets appropriée. Exemple :
+Utilisez un tableau pour plusieurs arguments. Pour les commutateurs, séparez le commutateur et sa valeur en arguments distincts, et utilisez une mise entre guillemets appropriée. Exemple :
 
 ```json
 "_visual_studio_post_cmds": [
@@ -206,17 +193,17 @@ Utilisez un tableau pour plusieurs arguments. Pour les commutateurs, diviser le 
 
 Les arguments peuvent faire référence à d’autres variables Cookiecutter. Dans les exemples ci-dessus, la variable `_output_folder_path` interne est utilisée pour former un chemin d’accès absolu vers les fichiers générés.
 
-Notez que la commande `Python.InstallProjectRequirements` fonctionne uniquement lorsque vous ajoutez des fichiers à un projet existant. Cela s’explique par le fait qu’elle est traitée par le projet Python dans l’Explorateur de solutions, et qu’il n’existe aucun projet pour recevoir le message une fois dans l’affichage des dossiers de l’Explorateur de solutions. Nous espérons corriger cette limitation dans une version ultérieure (une meilleure prise en charge de l’affichage des dossiers en général).
+Notez que la commande `Python.InstallProjectRequirements` fonctionne uniquement lorsque vous ajoutez des fichiers à un projet existant. Cette limitation existe, car la commande est traitée par le projet Python dans l’Explorateur de solutions et il n’existe aucun projet pour recevoir le message une fois dans l’affichage des dossiers de l’Explorateur de solutions. Nous espérons supprimer cette limitation dans une version ultérieure (et fournir une meilleure prise en charge de l’affichage des dossiers en général).
 
 ## <a name="troubleshooting"></a>Résolution des problèmes
 
 ### <a name="error-loading-template"></a>Erreur lors du chargement du modèle
 
-Certains modèles peuvent utiliser des types de données non valides, tel que booléen, dans leur `cookiecutter.json`. Cela doit être signalé à l’auteur du modèle. Cliquez sur le lien **Problèmes** dans le volet d’informations du modèle.
+Certains modèles peuvent utiliser des types de données non valides, tel que booléen, dans leur `cookiecutter.json`. Signalez ces exemples à l’auteur du modèle en sélectionnant le lien **Problèmes** dans le volet d’informations du modèle.
 
 ### <a name="hook-script-failed"></a>Échec du script Hook
 
-Certains modèles peuvent utiliser des scripts post-génération qui sont incompatibles avec l’interface utilisateur Cookiecutter. Par exemple, les scripts qui interrogent l’utilisateur à saisir des valeurs échoueront, faute de console de terminal.
+Certains modèles peuvent utiliser des scripts post-génération qui sont incompatibles avec l’interface utilisateur Cookiecutter. Par exemple, les scripts qui demandent à l’utilisateur de saisir des valeurs échouent, faute de console de terminal.
 
 ### <a name="hook-script-not-supported-on-windows"></a>Script Hook non pris en charge sur Windows
 
@@ -237,7 +224,7 @@ Si le script post-génération est `.sh`, il peut ne pas être associé à une a
 Échecs d’exécution :
 
 - **iknite/cookiecutter-ansible-role** (le script Hook post-génération requiert une entrée de console)
-- **benregn/cookiecutter-django-ansible** (erreur jinja)
+- **benregn/cookiecutter-django-ansible** (erreur Jinja)
 
 Utilise un interpréteur de commandes (pas irrécupérable) :
 

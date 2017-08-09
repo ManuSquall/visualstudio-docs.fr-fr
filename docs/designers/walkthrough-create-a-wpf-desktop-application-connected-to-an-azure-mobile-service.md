@@ -13,26 +13,11 @@ caps.latest.revision: 7
 author: kempb
 ms.author: kempb
 manager: ghogen
-translation.priority.ht:
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- ru-ru
-- zh-cn
-- zh-tw
-translation.priority.mt:
-- cs-cz
-- pl-pl
-- pt-br
-- tr-tr
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 47057e9611b824c17077b9127f8d2f8b192d6eb8
-ms.openlocfilehash: 7716a0e9249c67760ae7b31160dcae89b77b9ca7
+ms.translationtype: HT
+ms.sourcegitcommit: 6d25db4639f2c8391c1e32542701ea359f560178
+ms.openlocfilehash: b42e50dcfc4820b750c04085f1e881ee25f786f9
 ms.contentlocale: fr-fr
-ms.lasthandoff: 05/13/2017
+ms.lasthandoff: 07/18/2017
 
 ---
 # <a name="walkthrough-create-a-wpf-desktop-application-connected-to-an-azure-mobile-service"></a>Procédure pas à pas : création d’une application de bureau WPF connectée à un service mobile Azure
@@ -41,7 +26,7 @@ Vous pouvez utiliser Windows Presentation Foundation (WPF) pour créer rapidemen
 ##  <a name="Requirements"></a> Composants requis  
  Les éléments suivants sont nécessaires pour effectuer cette procédure pas à pas :  
   
--   Visual Studio 2015 - toute version prenant en charge le développement WPF.  
+-   Visual Studio 2017 ou toute version prenant en charge le développement WPF.  
   
 -   Un compte Microsoft Azure actif.  
   
@@ -115,7 +100,7 @@ Vous pouvez utiliser Windows Presentation Foundation (WPF) pour créer rapidemen
   
      Ce code XAML crée une disposition réutilisable avec des espaces réservés pour les champs number, title et description. Au moment de l’exécution, les espaces réservés peuvent être remplacés par du texte, comme indiqué dans l’illustration suivante.  
   
-     ![Contrôle utilisateur QuickStartTask](~/designers/media/wpfquickstart1.PNG "WPFQuickStart1")  
+     ![Contrôle utilisateur QuickStartTask](../designers/media/wpfquickstart1.PNG "WPFQuickStart1")  
   
 6.  Dans l’ **Explorateur de solutions**, développez le nœud **QuickStartTask.xaml** et ouvrez le fichier **QuickStartTask.xaml.cs** ou **QuickStartTask.xaml.vb** .  
   
@@ -302,7 +287,7 @@ Vous pouvez utiliser Windows Presentation Foundation (WPF) pour créer rapidemen
   
      À ce stade, la conception doit ressembler à l’illustration suivante :  
   
-     ![MainWindow dans le concepteur](~/designers/media/wpfquickstart2.PNG "WPFQuickStart2")  
+     ![MainWindow dans le concepteur](../designers/media/wpfquickstart2.PNG "WPFQuickStart2")  
   
     > [!NOTE]
     >  Pendant l’application des procédures suivantes, vous pouvez observer des erreurs dans la **Liste d’erreurs** , si elle est ouverte. Ne vous inquiétez pas, ces erreurs disparaissent à la fin des procédures restantes.  
@@ -572,7 +557,7 @@ Vous pouvez utiliser Windows Presentation Foundation (WPF) pour créer rapidemen
   
      Notez que les deux entrées sont ajoutées à la liste **Query and Update Data** , comme indiqué dans l’illustration suivante.  
   
-     ![Les éléments TODO sont ajoutés à la liste.](~/designers/media/wpfquickstart3.PNG "WPFQuickStart3")  
+     ![Les éléments TODO sont ajoutés à la liste.](../designers/media/wpfquickstart3.PNG "WPFQuickStart3")  
   
 4.  Cochez la case de l’entrée **Do something else** dans la liste.  
   
@@ -581,8 +566,8 @@ Vous pouvez utiliser Windows Presentation Foundation (WPF) pour créer rapidemen
 ## <a name="next-steps"></a>Étapes suivantes  
  Vous avez terminé un exemple assez simple d’une application de bureau WPF avec un serveur principal Azure. Bien entendu, une application réelle est susceptible d’être beaucoup plus complexe, mais les mêmes concepts de base s’appliquent. Consultez [WPF dans le .NET Framework](https://msdn.microsoft.com/en-us/library/ms754130\(v=vs.100\).aspx).  
   
- Vous pouvez rendre l’interface utilisateur plus attrayante en ajoutant des couleurs, des formes, des graphiques et même des animations. Consultez l’article [Conception XAML dans Visual Studio et Blend pour Visual Studio](../designers/designing-xaml-in-visual-studio.md).  
-  
+ Vous pouvez rendre l’interface utilisateur plus attrayante en ajoutant des couleurs, des formes, des graphiques et même des animations. Consultez [Création d’une interface utilisateur à l’aide du concepteur XAML dans Visual Studio](creating-a-ui-by-using-xaml-designer-in-visual-studio.md) et [Création d’une interface utilisateur à l’aide de Blend pour Visual Studio](creating-a-ui-by-using-blend-for-visual-studio.md). Pour afficher une comparaison des outils, consultez [Conception XAML dans Visual Studio et Blend pour Visual Studio](../designers/designing-xaml-in-visual-studio.md).  
+
  Vous pouvez vous connecter aux bases de données SQL ou à d’autres sources de données à l’aide d’Azure Mobile Services. Consultez la [Documentation sur Mobile Services](http://azure.microsoft.com/en-us/services/app-service/mobile/).  
   
 ## <a name="see-also"></a>Voir aussi  

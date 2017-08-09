@@ -29,10 +29,10 @@ translation.priority.mt:
 - pt-br
 - tr-tr
 ms.translationtype: Human Translation
-ms.sourcegitcommit: 47057e9611b824c17077b9127f8d2f8b192d6eb8
-ms.openlocfilehash: 0c850e9be6f05bac6c312ef8d746b92754eb3e6c
+ms.sourcegitcommit: 669bc5894727c207691a7e37937f432d98fee8b1
+ms.openlocfilehash: 254f2d9121566ef14c5470c3d940e4f781a0f5e2
 ms.contentlocale: fr-fr
-ms.lasthandoff: 05/13/2017
+ms.lasthandoff: 06/30/2017
 
 ---
 # <a name="analyze-resource-consumption-and-ui-thread-activity-xaml"></a>Analyser la consommation des ressources et l’activité des threads de l’interface utilisateur (XAML)
@@ -110,7 +110,7 @@ Utilisez le profileur **Chronologie de l'application** pour rechercher et corrig
  Le diagramme linéaire **Débit visuel (i/s)** montre les images par seconde (FPS) sur l'interface utilisateur et le thread de composition pour l'application.  
   
 ###  <a name="BKMK_Timeline_details_"></a> Détails de la chronologie  
- C'est dans la vue Détails que vous passerez le plus de temps à analyser le rapport. Il montre une vue détaillée de l'utilisation de l'UC par votre application, en fonction de la catégorie du sous-système de framework d'interface utilisateur ou du composant système qui a consommé l'UC.  
+ C'est dans la vue Détails que vous passerez le plus de temps à analyser le rapport. Il montre une vue détaillée de l’utilisation de l’UC par votre application, en fonction de la catégorie du sous-système du framework d’interface utilisateur ou du composant système qui a consommé l'UC.  
   
  Les événements suivants sont pris en charge :  
   
@@ -120,7 +120,7 @@ Utilisez le profileur **Chronologie de l'application** pour rechercher et corrig
 |**Disposition**|Dans les grandes applications, des milliers d'éléments peuvent s'afficher en même temps sur l'écran. Ceci peut entraîner un faible débit des trames d'interface utilisateur et en conséquence, une réactivité faible de l'application. L’événement Layout détermine avec précision le coût de la disposition de chaque élément (c’est-à-dire le temps passé dans les fonctions Arrange, Measure, ApplyTemplate et ArrangeOverride) et génère les arborescences des éléments visuels qui ont participé à une passe de disposition. Vous pouvez utiliser cette visualisation pour déterminer laquelle de vos arborescences logiques doit être élaguée ou pour évaluer d'autres mécanismes de report pour optimiser votre passe de disposition.|  
 |**Afficher**|Temps passé à dessiner les éléments XAML à l'écran.|  
 |**E/S**|Durée de récupération de données à partir du disque local ou à partir des ressources réseau qui sont accessibles par le biais de l’ [API Microsoft Windows Internet (WinINet)](https://msdn.microsoft.com/en-us/library/windows/desktop/aa385331.aspx).|  
-|**App Code**|Indique le temps passé à l'exécution du code de l'application (utilisateur) qui n'est pas lié à l'analyse ou à la disposition.|  
+|**Code d'application**|Indique le temps passé à l'exécution du code de l'application (utilisateur) qui n'est pas lié à l'analyse ou à la disposition.|  
 |**Autres Xaml**|Temps passé à exécuter le code du runtime XAML.|  
   
 > [!TIP]
@@ -137,6 +137,6 @@ Utilisez le profileur **Chronologie de l'application** pour rechercher et corrig
 |![Personnaliser les informations de détails de chronologie](../profiling/media/timeline_viewsettings.png "TIMELINE_ViewSettings")|Permet de spécifier des annotations sur les événements.|  
   
 ## <a name="see-also"></a>Voir aussi  
- [Blog de l’équipe WPF : New UI Performance Analysis Tool for WPF Applications](http://blogs.msdn.com/b/wpf/archive/2015/01/16/new-ui-performance-analysis-tool-for-wpf-applications.aspx)   
+ [Blog de l’équipe WPF : New UI Performance Analysis Tool for WPF Applications](http://blogs.msdn.com/b/wpf/archive/2015/01/16/new-ui-performance-analysis-tool-for-wpf-applications.aspx)  
  [Meilleures pratiques pour les performances des applications du Windows Store en C++, C# et Visual Basic](http://msdn.microsoft.com/en-us/567bcefa-5da5-4e42-a4b8-1358c71adfa2)   
- [Optimisation des performances des applications WPF](http://msdn.microsoft.com/Library/ac8c6aa3-3c68-4a24-9827-3b6c829c1ebf)
+ [Optimisation des performances des applications WPF](/dotnet/framework/wpf/advanced/optimizing-wpf-application-performance) [Profilage dans Visual Studio](../profiling/index.md) [Visite guidée des fonctionnalités de profilage](../profiling/profiling-feature-tour.md)

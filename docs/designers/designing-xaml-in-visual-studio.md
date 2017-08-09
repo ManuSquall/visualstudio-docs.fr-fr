@@ -1,7 +1,7 @@
 ---
 title: "Conception XAML dans Visual Studio | Microsoft Docs"
 ms.custom: 
-ms.date: 11/04/2016
+ms.date: 7/17/2017
 ms.reviewer: 
 ms.suite: 
 ms.technology:
@@ -13,31 +13,23 @@ caps.latest.revision: 4
 author: kempb
 ms.author: kempb
 manager: ghogen
-translation.priority.ht:
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- ru-ru
-- zh-cn
-- zh-tw
-translation.priority.mt:
-- cs-cz
-- pl-pl
-- pt-br
-- tr-tr
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 47057e9611b824c17077b9127f8d2f8b192d6eb8
-ms.openlocfilehash: e832941dd00fa81bea1566f17504fe7e27c41a48
+ms.translationtype: HT
+ms.sourcegitcommit: 6d25db4639f2c8391c1e32542701ea359f560178
+ms.openlocfilehash: 535cd67469897e84a749e3e1c58c2695ddddd006
 ms.contentlocale: fr-fr
-ms.lasthandoff: 05/13/2017
+ms.lasthandoff: 07/18/2017
 
 ---
 # <a name="designing-xaml-in-visual-studio"></a>Conception XAML dans Visual Studio
-Visual Studio et Blend pour Visual Studio fournissent tous deux des outils visuels conçus pour générer des interfaces utilisateur attrayantes et des expériences multimédias élaborées pour les applications de bureau Windows, web, [Windows Phone](http://msdn.microsoft.com/library/windowsphone/develop/jj683071.aspx)et [Windows Store](http://msdn.microsoft.com/library/windows/apps/jj129478.aspx) en XAML. Ils partagent tous les deux en commun des fenêtres de conception, des fenêtres Outil et un éditeur XAML. Toutefois, Blend pour Visual Studio propose des outils de conception supplémentaires conçus pour des tâches plus avancées telles que l'animation et les comportements.  
+
+Visual Studio et Blend pour Visual Studio fournissent tous deux des outils visuels conçus pour générer des interfaces utilisateur attrayantes et des expériences multimédias élaborées avec XAML pour différents types d’applications. Les deux outils partagent un ensemble commun de fonctionnalités, dont un éditeur XAML visuel, mais Blend pour Visual Studio propose des outils de conception supplémentaires conçus pour des tâches plus avancées telles que l’animation et les comportements.  
   
+Le processus de conception d’une application dépend de l’outil que vous choisissez et de votre plateforme cible. Cette rubrique compare les outils de conception XAML dans Visual Studio et Blend pour Visual Studio. Pour obtenir des procédures pas à pas plus détaillées de l’utilisation des outils, consultez les rubriques suivantes :
+
+- [Création d’une interface utilisateur à l’aide du concepteur XAML dans Visual Studio](creating-a-ui-by-using-xaml-designer-in-visual-studio.md)
+- [Création d’une interface utilisateur à l’aide de Blend pour Visual Studio](creating-a-ui-by-using-blend-for-visual-studio.md)
+- [Créer des applications de bureau modernes à l’aide de Windows Presentation Foundation](create-modern-desktop-applications-with-windows-presentation-foundation.md)
+
 ## <a name="choosing-the-right-tool"></a>Sélection de l'outil approprié  
  Votre sélection des outils de conception dépend en grande partie de vos compétences. Si vous êtes davantage orienté code, vous pouvez écrire du code XAML dans Visual Studio même pour accomplir des tâches de conception avancées. Si vous êtes plus orientée conception, Blend pour Visual Studio vous permet d'effectuer des tâches avancées sans écrire de code.  
   
@@ -48,7 +40,7 @@ Visual Studio et Blend pour Visual Studio fournissent tous deux des outils visue
   
 -   **Une interface utilisateur cohérente :** vous pouvez concevoir vos applications dans le contexte familier de l'interface utilisateur de Visual Studio, ce qui rend le passage d'un IDE à un autre plus agréable et plus productif. Blend pour Visual Studio utilise le thème sombre de Visual Studio qui vous permet de vous concentrer sur le contenu que vous créez en améliorant le contraste entre le contenu et l'interface utilisateur. Consultez [Création d’une interface utilisateur à l’aide du concepteur XAML](../designers/creating-a-ui-by-using-xaml-designer-in-visual-studio.md).  
   
-     ![Environnement IDE Blend pour Visual Studio](~/designers/media/blendide.png "BlendIDE")  
+     ![Environnement IDE Blend pour Visual Studio](../designers/media/blendide.png "BlendIDE")  
   
 -   **XAML IntelliSense :** les deux IDE prennent en charge toutes les fonctionnalités courantes que vous pouvez attendre d'IntelliSense, notamment la saisie semi-automatique des instructions, la prise en charge des opérations courantes de l'éditeur telles que l'ajout de commentaires et la mise en forme de code, ainsi que la navigation des ressources, la liaison et le code.  
   
@@ -56,9 +48,9 @@ Visual Studio et Blend pour Visual Studio fournissent tous deux des outils visue
   
 -   **Expérience de rechargement de fichier :** vous pouvez modifier vos fichiers XAML dans Blend pour Visual Studio ou dans Visual Studio. Vos fichiers modifiés sont alors rechargés automatiquement quand vous passez de l'un à l'autre. Pour minimiser les interruptions de flux de travail, vous pouvez maintenant définir vos préférences de rechargement des fichiers dans la boîte de dialogue correspondante.  
   
-     ![Expérience de rechargement de fichiers](~/designers/media/blendfilereload.png "BlendFileReload")  
+     ![Expérience de rechargement de fichiers](../designers/media/blendfilereload.png "BlendFileReload")  
   
--   **Dispositions et paramètres synchronisés :** les dispositions personnalisées vous permettent d'enregistrer et d'appliquer des personnalisations de disposition de fenêtre Outil. Visual Studio synchronise ces personnalisations et ces préférences à la fois pour Visual Studio et pour Blend pour Visual Studio sur différents ordinateurs lorsque vous vous connectez avec le même compte Microsoft. Consultez [Personnalisation des paramètres de développement dans Visual Studio](http://msdn.microsoft.com/en-us/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
+-   **Dispositions et paramètres synchronisés :** les dispositions personnalisées vous permettent d'enregistrer et d'appliquer des personnalisations de disposition de fenêtre Outil. Visual Studio synchronise ces personnalisations et ces préférences à la fois pour Visual Studio et pour Blend pour Visual Studio sur différents ordinateurs lorsque vous vous connectez avec le même compte Microsoft. Consultez [Personnaliser l’IDE Visual Studio](../ide/personalizing-the-visual-studio-ide.md).  
   
 -   **Un Explorateur de solutions commun :** l'Explorateur de solutions vous offre une vue organisée de vos projets et de leurs fichiers, ainsi qu'un accès aux commandes qui s'y rapportent. Avec l'Explorateur de solutions, il est plus facile de travailler avec des grands projets d'entreprise. Consultez [Projets et solutions](../ide/solutions-and-projects-in-visual-studio.md).  
   

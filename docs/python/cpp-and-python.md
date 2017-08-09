@@ -1,38 +1,25 @@
 ---
 title: "Utilisation de C++ et Python dans Visual Studio | Microsoft Docs"
 ms.custom: 
-ms.date: 3/27/2017
+ms.date: 7/12/2017
 ms.reviewer: 
 ms.suite: 
 ms.technology:
 - devlang-python
+ms.devlang: python
 ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: get-started-article
 ms.assetid: f7dbda92-21bf-4af0-bb34-29b8bf231f32
 description: "Processus et étapes permettant d’écrire un module ou une extension C++ pour Python dans Visual Studio"
 caps.latest.revision: 1
 author: kraigb
 ms.author: kraigb
 manager: ghogen
-translation.priority.ht:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 85576806818a6ed289c2f660f87b5c419016c600
-ms.openlocfilehash: f8a0bef07667e5f876473c966ed3d14a1b84dd0b
+ms.translationtype: HT
+ms.sourcegitcommit: 6d25db4639f2c8391c1e32542701ea359f560178
+ms.openlocfilehash: 6128d78b99b7fa82ffd5676678a49b1b6a0de177
 ms.contentlocale: fr-fr
-ms.lasthandoff: 05/09/2017
+ms.lasthandoff: 07/18/2017
 
 ---
 
@@ -41,10 +28,10 @@ ms.lasthandoff: 05/09/2017
 Les modules écrits en C++ (ou C) sont couramment utilisés pour étendre les fonctionnalités d’un interpréteur Python et pour fournir un accès aux fonctionnalités de système d’exploitation de bas niveau. Il existe trois principaux types de modules :
 
 - Modules d’accélérateur : Python étant un langage interprété, certaines parties du code peuvent être écrites en C++ pour de meilleures performances. 
-- Modules de wrapper : exposez des interfaces C/C++ existantes dans le code Python ou exposez une API plus « Pythonique » qui utilise les fonctionnalités du langage Python pour être plus facile à utiliser.
+- Modules de wrapper : les wrappers exposent des interfaces C/C++ existantes dans le code Python ou une API plus « Pythonique » qui est facile à utiliser à partir de Python.
 - Modules d’accès au système de bas niveau : créés pour accéder aux fonctionnalités de plus bas niveau du runtime CPython, du système d’exploitation ou du matériel sous-jacent. 
 
-Cette rubrique vous guide dans la création d’un module d’extension C++ pour CPython qui calcule une tangente hyperbolique et l’appelle à partir du code Python. Pour illustrer la différence de performances, vous allez tout d’abord créer et tester la routine dans Python.
+Cette rubrique vous guide dans la création d’un module d’extension C++ pour CPython qui calcule une tangente hyperbolique et l’appelle à partir du code Python. La routine est implémentée en premier dans Python pour illustrer le gain de performances de l’implémentation de la même routine en C++.
 
 L’approche choisie ici est celle pour les extensions CPython standard, comme décrit dans la [documentation de Python](https://docs.python.org/3/c-api/). Une comparaison entre cette approche et d’autres méthodes est décrite sous [Autres approches](#alternative-approaches) à la fin de cette rubrique.
 
@@ -52,16 +39,16 @@ L’approche choisie ici est celle pour les extensions CPython standard, comme d
 
 Cette procédure pas à pas est écrite pour Visual Studio 2017 avec les charges de travail **Développement Desktop en C++** et **Développement Python** et leurs options par défaut (par exemple, Python 3.6 comme interpréteur par défaut). Dans la charge de travail **Développement Python**, cochez aussi la case située à droite pour **Outils de développement natifs Python**, qui définit la plupart des options décrites dans cette rubrique. (Cette option inclut également la charge de travail C++ automatiquement.) 
 
-![Sélection de l’option Outils de développement natifs Python](~/python/media/cpp-install-native.png)
+![Sélection de l’option Outils de développement natifs Python](media/cpp-install-native.png)
 
-Pour plus d’informations, consultez [Installation de la prise en charge de Python pour Visual Studio](installation.md), notamment l’utilisation d’autres versions de Visual Studio. Si vous installez Python séparément, veillez à sélectionner **Télécharger les symboles de débogage** et **Télécharger les binaires de débogage** sous **Options avancées** dans le programme d’installation. Vous êtes ainsi certain d’avoir à votre disposition les bibliothèques de débogage nécessaires si vous choisissez d’effectuer une build Debug.
+Pour plus d’informations, consultez [Installation de la prise en charge de Python pour Visual Studio](installation.md), notamment l’utilisation d’autres versions de Visual Studio. Si vous installez Python séparément, veillez à sélectionner **Télécharger les symboles de débogage** et **Télécharger les binaires de débogage** sous **Options avancées** dans le programme d’installation. Cette option garantit que vous avez à votre disposition les bibliothèques de débogage nécessaires si vous choisissez d’effectuer une build de débogage.
 
 > [!Note]
 > Python est également disponible via la charge de travail **Applications de science et analyse des données**, qui inclut Anaconda 3 64 bits (avec la dernière version de CPython) et l’option **Outils de développement natifs Python** par défaut.
 
 ## <a name="create-the-python-application"></a>Créer l’application Python
 
-1. Pour créer un projet Python dans Visual Studio, sélectionnez la commande de menu **Fichier > Nouveau > Projet**, recherchez « Python », choisissez le modèle **Application Python** en lui attribuant un nom et un emplacement appropriés, puis sélectionnez **OK**.
+1. Créez un projet Python dans Visual Studio en sélectionnant **Fichier > Nouveau > Projet**. Recherchez « Python », sélectionnez le modèle **Application Python** en lui attribuant un nom et un emplacement appropriés, puis sélectionnez **OK**.
 
 1. Dans le fichier `.py` du projet, collez le code suivant qui teste le calcul d’une tangente hyperbolique (implémentation sans utiliser la bibliothèque mathématique pour faciliter la comparaison). N’hésitez pas à entrer le code manuellement pour essayer certaines des [fonctionnalités d’édition de Python](code-editing.md).
 
@@ -111,7 +98,7 @@ Pour plus d’informations, consultez [Installation de la prise en charge de Pyt
         test(lambda d: [tanh(x) for x in d], '[tanh(x) for x in d]')
     ```
 
-1. Exécutez le programme en utilisant **Déboguer > Exécuter sans débogage** (Ctrl+F5) pour afficher les résultats. Vous verrez que l’exécution de chaque test d’évaluation prend plusieurs secondes.
+1. Exécutez le programme en utilisant **Déboguer > Exécuter sans débogage** (Ctrl+F5) pour afficher les résultats. L’exécution de chaque test d’évaluation prend plusieurs secondes.
 
 ## <a name="create-the-core-c-project"></a>Créer le projet C++ principal
 
@@ -127,23 +114,23 @@ Pour plus d’informations, consultez [Installation de la prise en charge de Pyt
 
     | Onglet | Propriété | Valeur | 
     | --- | --- | --- |
-    | Général | Général > Nom de la cible | Définissez cette propriété pour qu’elle corresponde exactement au nom du module tel que Python le voit. |
+    | Général | Général > Nom de la cible | Définissez ce champ pour qu’il corresponde exactement au nom du module tel que Python le voit. |
     | | Général > Extension de la cible | .pyd |
     | | Valeurs par défaut du projet > Type de configuration | Bibliothèque dynamique (.dll) |
     | C/C++ > Général | Autres répertoires Include | Ajoutez le dossier `include` Python en fonction de votre installation, par exemple `c:\Python36\include` |     
     | C/C++ > Génération de code | Bibliothèque Runtime | DLL multithread (/MD) (voir l’avertissement ci-dessous) |
-    | C/C++ > Préprocesseur | Définitions de préprocesseur | Ajoutez `Py_LIMITED_API;` au début de la chaîne. Cette action limite certaines des fonctions que vous pouvez appeler à partir de Python et rend le code plus portable entre les différentes versions de Python. |
+    | C/C++ > Préprocesseur | Définitions de préprocesseur | Ajoutez `Py_LIMITED_API;` au début de la chaîne, ce qui limite certaines des fonctions que vous pouvez appeler à partir de Python et rend le code plus portable entre les différentes versions de Python. |
     | Éditeur de liens > Général | Répertoires de bibliothèques supplémentaires | Ajoutez le dossier `lib` Python contenant des fichiers `.lib` en fonction de votre installation, par exemple `c:\Python36\libs`. (Veillez à pointer vers le dossier `libs` qui contient des fichiers `.lib`, et *pas* vers le dossier `Lib` qui contient des fichiers `.py`.) | 
 
     > [!Tip]
-    > Si vous ne voyez pas l’onglet C/C++, le projet ne contient aucun fichier qu’il identifie en tant que fichier source C/C++. Ce cas peut se produire si vous créez un fichier source sans extension `.c` ni `.cpp`. Par exemple, si vous avez accidentellement entré `module.coo` au lieu de `module.cpp` dans la nouvelle boîte de dialogue d’ajout d’élément, Visual Studio crée le fichier, mais ne définit pas le type de fichier « Code C/C++ » qui permet d’activer l’onglet de propriétés C/C++. Tel est le cas même si vous renommez le fichier avec l’extension `.cpp`. Pour corriger ce problème, cliquez avec le bouton droit sur le fichier dans l’Explorateur de solutions, sélectionnez **Propriétés**, puis affectez à **Type de fichier** la valeur **Code C/C++**.
+    > Si vous ne voyez pas l’onglet C/C++, le projet ne contient aucun fichier qu’il identifie en tant que fichier source C/C++. Cette condition peut se produire si vous créez un fichier source sans extension `.c` ni `.cpp`. Par exemple, si vous avez accidentellement entré `module.coo` au lieu de `module.cpp` dans la nouvelle boîte de dialogue d’ajout d’élément, Visual Studio crée le fichier, mais ne définit pas le type de fichier « Code C/C++ » qui permet d’activer l’onglet de propriétés C/C++. Cette erreur d’identification demeure, même si vous renommez le fichier avec l’extension `.cpp`. Pour définir correctement le type de fichier, cliquez avec le bouton droit sur le fichier dans l’Explorateur de solutions, sélectionnez **Propriétés**, puis affectez à **Type de fichier** la valeur **Code C/C++**.
 
     > [!Warning]
-    > N’affectez pas à l’option **C/C++ > Génération de code > Bibliothèque runtime** la valeur « DLL de débogage multithread (/MDd) » même pour une configuration Debug. Vous devez sélectionner le runtime « DLL multithread (/MD) » parce que les binaires Python qui ne sont pas de débogage sont générés avec cette option. S’il vous arrive de définir l’option /MDd, une erreur du type *C1189 : Py_LIMITED_API est incompatible avec Py_DEBUG, Py_TRACE_REFS et Py_REF_DEBUG* s’affiche lors de la création d’une configuration Debug de votre DLL. En outre, si vous supprimez `Py_LIMITED_API` pour éviter l’erreur de build, Python se bloque quand vous tentez d’importer le module. (L’incident se produit dans l’appel de la DLL à `PyModule_Create` comme décrit plus loin, avec le message de sortie du type *Erreur de Python irrécupérable : PyThreadState_Get : aucun thread actuel*.)
+    > N’affectez pas à l’option **C/C++ > Génération de code > Bibliothèque runtime** la valeur « DLL de débogage multithread (/MDd) » même pour une configuration Debug. Sélectionnez le runtime « DLL multithread (/MD) » parce que les binaires Python qui ne sont pas de débogage sont générés avec cette option. S’il vous arrive de définir l’option /MDd, une erreur du type *C1189 : Py_LIMITED_API est incompatible avec Py_DEBUG, Py_TRACE_REFS et Py_REF_DEBUG* s’affiche lors de la création d’une configuration Debug de votre DLL. En outre, si vous supprimez `Py_LIMITED_API` pour éviter l’erreur de build, Python se bloque quand vous tentez d’importer le module. (L’incident se produit dans l’appel de la DLL à `PyModule_Create` comme décrit plus loin, avec le message de sortie du type *Erreur de Python irrécupérable : PyThreadState_Get : aucun thread actuel*.)
     >
     > Notez que l’option /MDd permet de générer les binaires de débogage Python (par exemple, python_d.exe), mais sa sélection pour une DLL d’extension provoque toujours l’erreur de build avec `Py_LIMITED_API`.
    
-1. Cliquez avec le bouton droit sur le projet C++ et sélectionnez **Build** pour tester vos configurations (Debug et Release). Notez que vous trouverez les fichiers `.pyd` dans le dossier *solution* sous **Debug** et **Release**, et pas dans le dossier du projet C++ lui-même.
+1. Cliquez avec le bouton droit sur le projet C++ et sélectionnez **Build** pour tester vos configurations (Debug et Release). Les fichiers `.pyd` sont situés dans le dossier *solution* sous **Debug** et **Release**, et pas dans le dossier du projet C++ lui-même.
 
 1. Ajoutez le code suivant au fichier `.cpp` principal du projet C++ :
 
@@ -201,7 +188,7 @@ Pour transformer la DLL C++ en extension pour Python, vous devez modifier la mé
     };
     ```
 
-1. Ajoutez une structure qui définit le module tel que Python pourra le voir :
+1. Ajoutez une structure qui définit le module tel que Python peut le voir :
 
     ```cpp
     static PyModuleDef superfastcode_module = {
@@ -231,9 +218,9 @@ Il existe deux façons de rendre la DLL disponible pour Python. Tout d’abord, 
 
 1. Dans l’Explorateur de solutions, cliquez avec le bouton droit sur le projet Python et sélectionnez **Références**. Dans la boîte de dialogue, sélectionnez l’onglet **Projets**, le projet **superfastcode**, puis **OK**.
 
-Ensuite, vous pouvez installer le module dans l’environnement Python global, ce qui le rend également accessible aux autres projets Python. Notez que cette opération nécessite généralement une actualisation de la base de données de saisie semi-automatique IntelliSense pour cet environnement, tout comme la suppression du module de l’environnement.
+Ensuite, vous pouvez installer le module dans l’environnement Python global, ce qui le rend également accessible aux autres projets Python. Cette opération nécessite généralement une actualisation de la base de données de saisie semi-automatique IntelliSense pour cet environnement. Une actualisation est aussi nécessaire lors de la suppression du module de l’environnement.
 
-1. Si vous utilisez Visual Studio 2017, exécutez le programme d’installation de Visual Studio, sélectionnez **Modifier**, **Composants individuels > Compilateurs, outils de génération et runtime > Ensemble d’outils VC++ 2015.3 v140**. En effet, Python (pour Windows) est généré avec Visual Studio 2015 (version 14.0) et attend que ces outils soient accessibles lors de la création d’une extension via la méthode décrite ici.
+1. Si vous utilisez Visual Studio 2017, exécutez le programme d’installation de Visual Studio, sélectionnez **Modifier**, **Composants individuels > Compilateurs, outils de génération et runtime > Ensemble d’outils VC++ 2015.3 v140**. Cette étape est nécessaire, car Python (pour Windows) est généré avec Visual Studio 2015 (version 14.0) et attend que ces outils soient accessibles lors de la création d’une extension via la méthode décrite ici.
 
 1. Créez un fichier nommé `setup.py` dans votre projet C++ : cliquez avec le bouton droit sur le projet, sélectionnez **Ajouter > Nouveaux éléments...*, recherchez « Python », sélectionnez **Fichier Python**, nommez-le setup.py et sélectionnez **OK**. Quand le fichier s’affiche dans l’éditeur, collez-y le code suivant :
 
@@ -265,20 +252,20 @@ Vous pouvez maintenant appeler le code `tanh` du module et comparer ses performa
     test(lambda d: [fast_tanh(x) for x in d], '[fast_tanh(x) for x in d]')
     ```
 
-1. Exécutez le programme Python et vous verrez que l’exécution de la routine C++ est environ 15 à 20 fois plus rapide que l’implémentation de Python.
+1. Exécutez le programme Python et vous voyez que l’exécution de la routine C++ est environ 15 à 20 fois plus rapide que l’implémentation de Python.
 
 ## <a name="debug-the-c-code"></a>Déboguer le code C++
 
-Avec la [prise en charge de Python dans Visual Studio](installation.md), vous pouvez [déboguer simultanément le code Python et C++](debugging-mixed-mode.md). Pour ce faire, effectuez les étapes suivantes :
+Avec la [prise en charge de Python dans Visual Studio](installation.md), vous pouvez [déboguer simultanément le code Python et C++](debugging-mixed-mode.md). Pour tester ce débogage en mode mixte, effectuez les étapes suivantes :
 
 1. Dans l’Explorateur de solutions, cliquez avec le bouton droit sur le projet Python, sélectionnez **Propriétés**, l’onglet **Déboguer**, puis l’option **Déboguer > Permettre le débogage du code natif**.
 
     > [!Tip]
-    > Quand vous activez le débogage du code natif, la fenêtre de sortie Python peut disparaître immédiatement une fois le programme terminé sans afficher la pause habituelle « Appuyez sur une touche pour continuer... ». Pour forcer une pause, ajoutez l’option `-i` au champ **Exécuter > Arguments de l’interpréteur** sous l’onglet **Déboguer** quand vous activez le débogage du code natif. L’interpréteur Python passe ainsi en mode interactif à la fin du code, où il attend que vous appuyiez sur Ctrl+Z, Entrée pour quitter. (Sinon, si vous êtes prêt à modifier votre code Python, vous pouvez ajouter les instructions `import os` et `os.system("pause")` à la fin de votre programme. Cela double l’invite de pause d’origine.)
+    > Quand vous activez le débogage du code natif, la fenêtre de sortie Python peut disparaître immédiatement une fois le programme terminé sans afficher la pause habituelle « Appuyez sur une touche pour continuer... ». Pour forcer une pause, ajoutez l’option `-i` au champ **Exécuter > Arguments de l’interpréteur** sous l’onglet **Déboguer** quand vous activez le débogage du code natif. Avec cet argument, l’interpréteur Python passe en mode interactif à la fin du code, où il attend que vous appuyiez sur Ctrl+Z, Entrée pour quitter. (Sinon, si vous êtes prêt à modifier votre code Python, vous pouvez ajouter les instructions `import os` et `os.system("pause")` à la fin de votre programme. Ce code double l’invite de pause d’origine.)
 
-1. Dans votre code C++, définissez un point d’arrêt sur la première ligne de la méthode `tanh`, puis démarrez le débogueur. Vous verrez que le débogueur s’arrête quand ce code est appelé :
+1. Dans votre code C++, définissez un point d’arrêt sur la première ligne de la méthode `tanh`, puis démarrez le débogueur. Le débogueur s’arrête quand ce code est appelé :
 
-    ![Arrêt au niveau d’un point d’arrêt dans le code C++](~/python/media/cpp-debugging.png)
+    ![Arrêt au niveau d’un point d’arrêt dans le code C++](media/cpp-debugging.png)
 
 1. À ce stade vous pouvez, entre autres, parcourir le code C++ et examiner des variables comme expliqué dans [Débogage simultané de code Python et C++](debugging-mixed-mode.md).
 

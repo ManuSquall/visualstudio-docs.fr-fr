@@ -1,7 +1,7 @@
 ---
 title: "Porter, migrer et mettre à niveau des projets Visual Studio |Microsoft Docs"
 ms.custom: 
-ms.date: 04/28/2017
+ms.date: 7/14/2017
 ms.prod: visual-studio-dev15
 ms.reviewer: 
 ms.suite: 
@@ -23,48 +23,40 @@ ms.assetid: bee759bd-6ff5-4c2e-913a-ea7d3c906c29
 author: kraigb
 ms.author: kraigb
 manager: ghogen
-translation.priority.ht:
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- ru-ru
-- zh-cn
-- zh-tw
-translation.priority.mt:
-- cs-cz
-- pl-pl
-- pt-br
-- tr-tr
-ms.translationtype: Human Translation
-ms.sourcegitcommit: bd2199e68bf23a191efe624da311dd11217028a8
-ms.openlocfilehash: 77042a35175aa13d27ed31d1562198e800e065ae
+ms.translationtype: HT
+ms.sourcegitcommit: dc7a0c10390de67b56a83d2824224bed24125db0
+ms.openlocfilehash: 922bec8857910ae4fa1497137eb2e3d70ee133c7
 ms.contentlocale: fr-fr
-ms.lasthandoff: 05/15/2017
+ms.lasthandoff: 07/17/2017
 
 ---
+
 # <a name="port-migrate-and-upgrade-visual-studio-projects"></a>Porter, migrer et mettre à niveau des projets Visual Studio
 
-Chaque nouvelle version de Visual Studio prend généralement en charge la plupart des précédents types de projets, de fichiers et d’autres ressources. Vous pouvez les utiliser comme à votre habitude et, si vous ne dépendez pas de fonctionnalités récentes, Visual Studio préserve la compatibilité descendante avec les versions antérieures telles que Visual Studio 2015, Visual Studio 2013 et Visual Studio 2012. (Pour connaître les fonctionnalités spécifiques à telle ou telle version, consultez les [Notes de publication](https://www.visualstudio.com/vs/release-notes/).) La prise en charge de certains types change au fil du temps, toutefois. Une version plus récente de Visual Studio peut ne plus prendre en charge certains types ou exiger qu’ils soient migrés et mis à jour avec, pour conséquence, la perte de leur compatibilité descendante. Cette rubrique fournit des détails sur les types de projets affectés dans Visual Studio 2017. Vous trouverez une liste des types pris en charge pour Visual Studio 2017 dans la rubrique [Ciblage et compatibilité de la plateforme](https://www.visualstudio.com/productinfo/vs2017-compatibility-vs).
+Chaque nouvelle version de Visual Studio prend généralement en charge la plupart des précédents types de projets, de fichiers et d’autres ressources. Vous pouvez les utiliser comme à votre habitude et, si vous ne dépendez pas de fonctionnalités récentes, Visual Studio préserve la compatibilité descendante avec les versions antérieures telles que Visual Studio 2015, Visual Studio 2013 et Visual Studio 2012. (Pour connaître les fonctionnalités spécifiques à telle ou telle version, consultez les [Notes de publication](https://www.visualstudio.com/vs/release-notes/).)
 
-> [!Note]
-> L’ouverture de certains types de projets nécessite l’ajout de la charge de travail approprié par le biais du programme d’installation de Visual Studio.
+La prise en charge de certains types change au fil du temps, toutefois. Une version plus récente de Visual Studio peut ne plus prendre en charge certains types ou exiger qu’ils soient migrés et mis à jour avec, pour conséquence, la perte de leur compatibilité descendante. Pour connaître l’état actuel des problèmes de migration, reportez-vous au [site de la communauté des développeurs Visual Studio](https://developercommunity.visualstudio.com).
 
+> [!Important]
+> Cette rubrique fournit des détails uniquement pour les types de projets dans Visual Studio 2017 qui impliquent la migration. Elle n’inclut pas les types de projets pris en charge qui ne présentent aucun problème de migration ; cette liste se trouve dans la rubrique [Ciblage et compatibilité de la plateforme](https://www.visualstudio.com/productinfo/vs2017-compatibility-vs). Notez également que certains types de projets ne sont plus pris en charge du tout dans Visual Studio 2017 et ne peuvent par conséquent pas être migrés.
+
+> [!Important]
+> L’ajout de charges de travail appropriées dans le programme d’installation de Visual Studio est nécessaire à l’ouverture de certains types de projets. Si la charge de travail n’est pas installée, Visual Studio signale un type de projet inconnu ou non compatible. Dans ce cas, vérifiez vos options d’installation et réessayez. Là encore, consultez la rubrique [Ciblage et compatibilité de la plateforme](https://www.visualstudio.com/productinfo/vs2017-compatibility-vs) pour plus d’informations sur la prise en charge de projets dans Visual Studio 2017.
 
 ## <a name="projects"></a>Projets
 
-La liste suivante décrit la prise en charge dans Visual Studio 2017 pour les projets qui ont été créés dans des versions antérieures. Si un type de projet ou de fichier n’y est pas listé alors qu’il devrait l’être, consultez la [version Visual Studio 2015 de cette rubrique](https://msdn.microsoft.com/library/hh266747.aspx) et laissez une remarque dans la section Commentaires plus bas.
+La liste suivante décrit la prise en charge dans Visual Studio 2017 pour les projets qui ont été créés dans des versions antérieures.
+
+Si un type de projet ou de fichier n’y est pas listé alors qu’il devrait l’être, consultez la [version Visual Studio 2015 de cette rubrique](https://msdn.microsoft.com/library/hh266747.aspx) et laissez une remarque dans la section Commentaires plus bas.
 
 | Type de projet | Assistance |
 | --- | --- |
-| Projets .NET Core (.xproj) | Les projets créés avec Visual Studio 2015 utilisaient des outils d’aperçu incluant un fichier de projet .xproj. Quand vous ouvrez un fichier .xproj avec Visual Studio 2017, vous êtes invité à migrer le fichier vers le format .csproj (une sauvegarde du fichier .xproj est effectuée). Ce format .csproj pour les projets .NET Core n’est pas pris en charge dans VS 2015 et antérieur.  Le format .xproj n’est pas pris en charge dans Visual Studio 2017, sauf pour la migration vers .csproj. Pour plus d’informations, consultez l’article [Migration de projets .NET Core au format .csproj](https://docs.microsoft.com/dotnet/articles/core/migration/#visual-studio-2017).|
+| Projets .NET Core (.xproj) | Les projets créés avec Visual Studio 2015 utilisaient des outils d’aperçu incluant un fichier de projet .xproj. Quand vous ouvrez un fichier .xproj avec Visual Studio 2017, vous êtes invité à migrer le fichier vers le format .csproj (une sauvegarde du fichier .xproj est effectuée). Ce format .csproj pour les projets .NET Core n’est pas pris en charge dans VS 2015 et antérieur.  Le format .xproj n’est pas pris en charge dans Visual Studio 2017, sauf pour la migration vers .csproj. Pour plus d’informations, consultez l’article [Migration de projets .NET Core au format .csproj](https://docs.microsoft.com/dotnet/core/migration/#visual-studio-2017).|
 | Application web ASP.NET et application web ASP.NET Core avec Application Insights activé | Pour chaque utilisateur de Visual Studio, les informations sur les ressources sont stockées dans le Registre pour chaque instance utilisateur. Elles sont utilisées quand l’utilisateur n’a pas de projet ouvert et qu’il souhaite explorer des données Azure Application Insights. Visual Studio 2015 n’utilise pas le même emplacement du Registre que Visual Studio 2017 et n’entre pas en conflit.<br/><br/>Une fois qu’un utilisateur crée une application web ASP.NET ou une Application web ASP.NET Core, la ressource est stockée dans le fichier .suo. L’utilisateur peut ouvrir le projet dans Visual Studio 2015 ou 2017 et les informations de ressource serviront dans les deux cas tant que Visual Studio prend en charge les projets et solutions utilisés dans les deux versions. Les utilisateurs doivent s’authentifier une seule fois sur chaque produit. Par exemple, si un projet est créé avec Visual Studio 2015 et ouvert dans Visual Studio 2017, l’utilisateur doit s’authentifier sur Visual Studio 2017. |
 | C#/Visual Basic Webform ou Windows Form | Vous pouvez ouvrir le projet dans Visual Studio 2017 et Visual Studio 2015. |
 | Projets de test unitaire de base de données (.csproj, .vbproj)    | Les anciens projets de test unitaire de données sont chargés dans Visual Studio 2017, mais ils utilisent la version de dépendances placée dans le GAC. Pour mettre à niveau le projet de test unitaire afin d’utiliser les dernières dépendances, cliquez avec le bouton droit sur le projet dans l’Explorateur de solutions, puis sélectionnez **Convertir en projet de tests unitaires SQL Server...**. |
 | F# | Visual Studio 2017 peut ouvrir les projets créés dans Visual Studio 2013 et 2015. Pour activer les fonctionnalités de Visual Studio 2017 dans ces projets, toutefois, ouvrez les propriétés du projet et définissez la cible fsharp.core sur F# 4.1. Notez également que l’option **Prise en charge du langage F#** dans le programme d’installation de Visual Studio n’est pas sélectionnée par défaut avec les charges de travail .NET. Vous devez l’inclure en sélectionnant cette option pour la charge de travail, ou en la sélectionnant à partir de l’onglet **Composants individuels** sous **Activités de développement**. |
-| InstallShield<br/>Installation de MSI | Les projets d’installation créés dans Visual Studio 2010 peuvent être ouverts dans les versions ultérieures à l’aide de [l’extension des projets d’installation Visual Studio](https://marketplace.visualstudio.com/items?itemName=UnniRavindranathan-MSFT.MicrosoftVisualStudio2013InstallerProjects). Vous pouvez également gérer ces projets avec [InstallShield Limited Edition](https://blogs.msdn.microsoft.com/visualstudio/2013/08/15/whats-new-in-visual-studio-2013-and-installshield-limited-edition/). |
+| InstallShield<br/>Installation de MSI | Les projets d’installation créés dans Visual Studio 2010 peuvent être ouverts dans les versions ultérieures à l’aide de l’[extension des projets d’installation Visual Studio](https://marketplace.visualstudio.com/items?itemName=UnniRavindranathan-MSFT.MicrosoftVisualStudio2013InstallerProjects). Consultez également l’[extension WiX Toolset Visual Studio 2017](https://marketplace.visualstudio.com/items?itemName=RobMensching.WixToolsetVisualStudio2017Extension). InstallShield Limited Edition n’est plus inclus dans Visual Studio. Vérifiez la disponibilité pour Visual Studio 2017 auprès de [Flexera Software](http://learn.flexerasoftware.com/content/IS-EVAL-InstallShield-Limited-Edition-Visual-Studio). |
 | LightSwitch | LightSwitch n’est plus pris en charge dans Visual Studio 2017. Les projets créés avec Visual Studio versions 2012 et antérieures et ouverts dans Visual Studio 2013 ou Visual Studio 2015 sont mis à niveau et ne peuvent être ouverts par la suite que dans Visual Studio 2013 ou Visual Studio 2015. |
 | Microsoft Azure Tools pour Visual Studio | Pour ouvrir ces types de projets, installez tout d’abord le [kit SDK Microsoft Azure pour .NET.](http://azure.microsoft.com/downloads/), puis ouvrez le projet. Si nécessaire, votre projet est mis à jour. |
 | Framework du modèle ASP.NET MVC (Model-View-Controller) | Prise en charge des versions MVC et de Visual Studio :<ul><li>Visual Studio 2010 SP1 prend en charge MVC 2 et MVC 3, tandis que la prise en charge de MVC 4 est ajoutée par le biais du [téléchargement d’ASP.NET 4 MVC 4 pour Visual Studio 2010 SP1](https://www.microsoft.com/download/details.aspx?id=30683).</li><li>Visual Studio 2012 prend en charge uniquement MVC 3 et MVC 4.</li><li>Visual Studio 2013 prend en charge uniquement MVC 4 et MVC 5.</li><li>Visual Studio 2017 et Visual Studio 2015 prennent en charge MVC 4 (vous pouvez ouvrir des projets existants, mais pas en créer) et MVC 5.</li></ul><br/><br/>Mise à niveau de versions MVC :<ul><li>Pour plus d’informations sur la mise à niveau automatique de MVC 2 vers MCV 3, consultez [ASP.NET MVC 3 Application Upgrader](http://go.microsoft.com/fwlink/?LinkID=238178).</li><li>Pour plus d’informations sur la mise à niveau manuelle de MVC 2 vers MVC 3, consultez [Mise à niveau d’un projet ASP.NET MVC 2 vers ASP.NET MVC 3 Tools Update](http://go.microsoft.com/fwlink/?linkid=238178).</li><li>Pour plus d’informations sur la mise à niveau manuelle de MVC3 vers MVC 4, consultez [Mise à niveau d'un projet ASP.NET MVC 3 vers ASP.NET MVC 4](http://www.asp.net/whitepapers/mvc4-release-notes). Si votre projet cible .NET Framework 3.5 SP1, vous devez le rediriger pour utiliser .NET Framework 4.</li><li>Pour plus d’informations sur la mise à niveau manuelle de MVC 4 vers MVC 5, consultez [How to Upgrade an ASP.NET MVC 4 and Web API Project to ASP.NET MVC 5 and Web API 2](https://www.asp.net/mvc/overview/releases/how-to-upgrade-an-aspnet-mvc-4-and-web-api-project-to-aspnet-mvc-5-and-web-api-2) (Guide pratique pour mettre à niveau un projet ASP.NET MVC 4 et API Web vers ASP.NET MVC 5 et API Web 2).</li></ul> |
