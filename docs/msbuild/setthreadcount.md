@@ -1,44 +1,61 @@
 ---
-title: "SetThreadCount | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-apiname: 
-  - "SetThreadCount"
-apilocation: 
-  - "filetracker.dll"
-apitype: "COM"
-helpviewer_keywords: 
-  - "SetThreadCount"
+title: SetThreadCount | Microsoft Docs
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology:
+- vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+apiname:
+- SetThreadCount
+apilocation:
+- filetracker.dll
+apitype: COM
+helpviewer_keywords:
+- SetThreadCount
 ms.assetid: 335335a5-8ca0-4e18-95f5-62aa6a691386
 caps.latest.revision: 4
-author: "kempb"
-ms.author: "kempb"
-manager: "ghogen"
-caps.handback.revision: 4
----
-# SetThreadCount
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
+author: kempb
+ms.author: kempb
+manager: ghogen
+translation.priority.ht:
+- cs-cz
+- de-de
+- es-es
+- fr-fr
+- it-it
+- ja-jp
+- ko-kr
+- pl-pl
+- pt-br
+- ru-ru
+- tr-tr
+- zh-cn
+- zh-tw
+ms.translationtype: Human Translation
+ms.sourcegitcommit: 11a9cee75f912c5fb31cf4a031644abe9c63d744
+ms.openlocfilehash: d46fea0afc0d6d47a431954dc80a0b58611de0f3
+ms.contentlocale: fr-fr
+ms.lasthandoff: 06/03/2017
 
-Définit le nombre de threads global et assigne ce nombre au thread actuel.  
+---
+# <a name="setthreadcount"></a>SetThreadCount
+Définit le nombre global de threads et affecte ce nombre au thread actif.  
   
-## Syntaxe  
+## <a name="syntax"></a>Syntaxe  
   
 ```  
 HRESULT WINAPI SetThreadCount(int threadCount);  
 ```  
   
-#### Paramètres  
- \[in\] `threadCount`  
+#### <a name="parameters"></a>Paramètres  
+ [in] `threadCount`  
  Nombre de threads à utiliser.  
   
-## Valeur de retour  
- Un [HRESULT](assetId:///HRESULT?qualifyHint=False&autoUpgrade=True) avec le bit [SUCCEEDED](assetId:///SUCCEEDED?qualifyHint=False&autoUpgrade=True) défini si le nombre de threads a été mis à jour.  
+## <a name="return-value"></a>Valeur de retour  
+ **HRESULT** avec le bit **SUCCEEDED** défini si le nombre de threads a été mis à jour.  
   
-## Configuration requise  
- **En\-tête :** FileTracker.h
+## <a name="requirements"></a>Spécifications  
+ **En-tête :** FileTracker.h

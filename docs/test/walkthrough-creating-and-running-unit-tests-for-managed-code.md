@@ -33,42 +33,43 @@ translation.priority.mt:
 - pl-pl
 - pt-br
 - tr-tr
-translationtype: Human Translation
-ms.sourcegitcommit: 5658ecf52637a38bc3c2a5ad9e85b2edebf7d445
-ms.openlocfilehash: a00b80092a44190d626b93b0ecc5689bafd1a4e3
-ms.lasthandoff: 02/22/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: 11a9cee75f912c5fb31cf4a031644abe9c63d744
+ms.openlocfilehash: 8b60481a9895e818773273cecbf89212f557d620
+ms.contentlocale: fr-fr
+ms.lasthandoff: 06/03/2017
 
 ---
 # <a name="walkthrough-creating-and-running-unit-tests-for-managed-code"></a>Procédure pas à pas : création et exécution de tests unitaires pour le code managé
-Cette procédure pas à pas décrit la création, l’exécution et la personnalisation d’une série de tests unitaires à l’aide de l’infrastructure de tests unitaires Microsoft pour le code managé et de l’explorateur de tests de Visual Studio. Vous commencez avec un projet C# qui est en développement, vous créez des tests qui utilisent son code, vous exécutez les tests et vous examinez les résultats. Ensuite, vous pouvez modifier le code de votre projet et réexécuter les tests.  
+Cette procédure pas à pas décrit la création, l’exécution et la personnalisation d’une série de tests unitaires à l’aide du framework de tests unitaires Microsoft pour le code managé et de l’explorateur de tests de Visual Studio. Vous commencez avec un projet C# qui est en développement, vous créez des tests qui utilisent son code, vous exécutez les tests et vous examinez les résultats. Ensuite, vous pouvez modifier le code de votre projet et réexécuter les tests.  
   
  Cette rubrique contient les sections suivantes :  
   
- [Préparer la procédure pas à pas](../test/walkthrough-creating-and-running-unit-tests-for-managed-code.md#BKMK_Prepare_the_walkthrough)  
+ [Préparation de la procédure pas à pas](../test/walkthrough-creating-and-running-unit-tests-for-managed-code.md#BKMK_Prepare_the_walkthrough)  
   
  [Créer un projet de test unitaire](../test/walkthrough-creating-and-running-unit-tests-for-managed-code.md#BKMK_Create_a_unit_test_project)  
   
  [Créer la classe de test](../test/walkthrough-creating-and-running-unit-tests-for-managed-code.md#BKMK_Create_the_test_class)  
   
--   [Exigences de la classe de test](../test/walkthrough-creating-and-running-unit-tests-for-managed-code.md#BKMK_Test_class_requirements)  
+-   [Spécifications de la classe de test](../test/walkthrough-creating-and-running-unit-tests-for-managed-code.md#BKMK_Test_class_requirements)  
   
  [Créer la première méthode de test](../test/walkthrough-creating-and-running-unit-tests-for-managed-code.md#BKMK_Create_the_first_test_method)  
   
--   [Exigences des méthodes de test](../test/walkthrough-creating-and-running-unit-tests-for-managed-code.md#BKMK_Test_method_requirements)  
+-   [Spécifications des méthodes de test](../test/walkthrough-creating-and-running-unit-tests-for-managed-code.md#BKMK_Test_method_requirements)  
   
  [Générer et exécuter le test](../test/walkthrough-creating-and-running-unit-tests-for-managed-code.md#BKMK_Build_and_run_the_test)  
   
- [Corriger votre code et réexécuter vos tests](../test/walkthrough-creating-and-running-unit-tests-for-managed-code.md#BKMK_Fix_your_code_and_rerun_your_tests)  
+ [Vérifier votre code et exécuter à nouveau vos tests](../test/walkthrough-creating-and-running-unit-tests-for-managed-code.md#BKMK_Fix_your_code_and_rerun_your_tests)  
   
  [Utiliser les tests unitaires pour améliorer votre code](../test/walkthrough-creating-and-running-unit-tests-for-managed-code.md#BKMK_Use_unit_tests_to_improve_your_code)  
   
 > [!NOTE]
->  Cette procédure pas à pas utilise l’infrastructure de tests unitaires Microsoft pour le code managé. L’explorateur de tests peut également exécuter des tests depuis des infrastructures de tests unitaires tierces qui ont des adaptateurs pour l’explorateur de tests. Pour plus d’informations, consultez [Installer des frameworks de tests unitaires tiers](../test/install-third-party-unit-test-frameworks.md)  
+>  Cette procédure pas à pas utilise le framework de tests unitaires Microsoft pour le code managé. L’explorateur de tests peut également exécuter des tests depuis des frameworks de tests unitaires tiers qui ont des adaptateurs pour l’explorateur de tests. Pour plus d’informations, consultez [Installer des frameworks de tests unitaires tiers](../test/install-third-party-unit-test-frameworks.md)  
   
 > [!NOTE]
 >  Pour plus d’informations sur la façon d’exécuter des tests à partir d’une ligne de commande, consultez [Procédure pas à pas : utilisation de l’utilitaire de test de ligne de commande](http://msdn.microsoft.com/Library/52c11992-9e94-4067-a4b7-59f19d69d867).  
   
-## <a name="prerequisites"></a>Conditions préalables  
+## <a name="prerequisites"></a>Prérequis  
   
 -   Le projet Bank. Consultez [Exemple de projet pour la création de tests unitaires](../test/sample-project-for-creating-unit-tests.md).  
   
@@ -124,7 +125,7 @@ public void Debit(double amount)
 ```  
   
 ##  <a name="BKMK_Create_a_unit_test_project"></a> Créer un projet de test unitaire  
- **Prérequis** : suivez les étapes de la procédure [Préparer la procédure pas à pas](../test/walkthrough-creating-and-running-unit-tests-for-managed-code.md#BKMK_Prepare_the_walkthrough).  
+ **Condition préalable**: suivez les étapes de la procédure [Prepare the walkthrough](../test/walkthrough-creating-and-running-unit-tests-for-managed-code.md#BKMK_Prepare_the_walkthrough).  
   
 #### <a name="to-create-a-unit-test-project"></a>Pour créer un projet de test unitaire  
   
@@ -147,7 +148,7 @@ public void Debit(double amount)
 ##  <a name="BKMK_Create_the_test_class"></a> Créer la classe de test  
  Nous avons besoin d’une classe de test pour vérifier la classe `BankAccount` . Nous pouvons utiliser UnitTest1.cs qui a été généré par le modèle de projet, mais nous devons donner au fichier et à la classe des noms plus descriptifs. Nous pouvons effectuer cela en une seule étape en renommant le fichier dans l’Explorateur de solutions.  
   
- **Renommage d’un fichier de classe**  
+ **Changement du nom d’un fichier de classe**  
   
  Dans l’Explorateur de solutions, sélectionnez le fichier UnitTest1.cs dans le projet BankTests. Dans le menu contextuel, choisissez **Renommer**, puis renommez le fichier BankAccountTests.cs. Choisissez **Oui** dans la boîte de dialogue qui vous demande si vous souhaitez remplacer le nom de toutes les références du projet par « UnitTest1 ». Cette opération a pour effet de remplacer le nom de la classe par `BankAccountTest`.  
   
@@ -179,10 +180,10 @@ namespace BankTests
 using BankAccountNS;  
 ```  
   
-###  <a name="BKMK_Test_class_requirements"></a> Exigences de la classe de test  
+###  <a name="BKMK_Test_class_requirements"></a> Spécifications de la classe de test  
  La configuration minimale requise pour une classe de test est la suivante :  
   
--   L’attribut `[TestClass]` est requis dans l’infrastructure de tests unitaires Microsoft pour le code managé pour toute classe qui contient les méthodes de test unitaire à exécuter dans l’explorateur de tests.  
+-   L’attribut `[TestClass]` est requis dans le framework de tests unitaires Microsoft pour le code managé pour toute classe qui contient les méthodes de test unitaire à exécuter dans l’explorateur de tests.  
   
 -   Chaque méthode de test à exécuter avec l’explorateur de tests doit avoir l’attribut `[TestMethod]`.  
   
@@ -191,9 +192,9 @@ using BankAccountNS;
 ##  <a name="BKMK_Create_the_first_test_method"></a> Créer la première méthode de test  
  Dans cette procédure, nous écrirons des méthodes de test unitaire pour vérifier le comportement de la méthode `Debit` de la classe `BankAccount` . La méthode est répertoriée ci-dessus.  
   
- En analysant la méthode testée, nous déterminons qu’il existe au moins trois comportements qui doivent être vérifiés :  
+ En analysant la méthode testée, nous déterminons qu’il existe au moins trois comportements qui doivent être vérifiés :  
   
-1.  La méthode lève une exception [ArgumentOutOfRangeException](assetId:///ArgumentOutOfRangeException?qualifyHint=False&autoUpgrade=True) si le montant du débit est supérieur au solde.  
+1.  La méthode lève une exception <xref:System.ArgumentOutOfRangeException> si le montant du débit est supérieur au solde.  
   
 2.  Elle lève également l’exception `ArgumentOutOfRangeException` si le montant du débit est inférieur à zéro.  
   
@@ -227,9 +228,9 @@ using BankAccountNS;
     }  
     ```  
   
- La méthode est plutôt simple. Nous mettons en place un nouvel objet `BankAccount` avec un solde de début, puis nous retirons un montant valide. Nous utilisons le framework de test unitaire Microsoft pour la méthode <xref:Microsoft.VisualStudio.TestTools.UnitTesting.Assert.AreEqual%2A> de code managé afin de vérifier que le solde de fin répond à nos attentes.  
+ La méthode est plutôt simple. Nous mettons en place un nouvel objet `BankAccount` avec un solde de début, puis nous retirons un montant valide. Nous utilisons la méthode du framework de tests unitaires Microsoft pour le code managé <xref:Microsoft.VisualStudio.TestTools.UnitTesting.Assert.AreEqual%2A> pour vérifier que le solde de fin correspond à ce que nous attendions.  
   
-###  <a name="BKMK_Test_method_requirements"></a> Exigences des méthodes de test  
+###  <a name="BKMK_Test_method_requirements"></a> Spécifications des méthodes de test  
  Une méthode de test doit répondre aux spécifications suivantes :  
   
 -   La méthode doit être décorée avec l’attribut `[TestMethod]` .  
@@ -250,10 +251,10 @@ using BankAccountNS;
   
 3.  Dans ce cas, le test échoue. La méthode de test est déplacée vers le groupe **Échecs de tests** . Sélectionnez la méthode dans l’explorateur de tests pour en afficher les détails en bas de la fenêtre.  
   
-##  <a name="BKMK_Fix_your_code_and_rerun_your_tests"></a> Corriger votre code et réexécuter vos tests  
+##  <a name="BKMK_Fix_your_code_and_rerun_your_tests"></a> Vérifier votre code et exécuter à nouveau vos tests  
  **Analyser les résultats des tests**  
   
- Le résultat de test contient un message qui décrit l’échec. Pour la méthode `AreEquals`, un message affiche ce qui était attendu (le paramètre (**Expected\<*XXX*>**) et ce qui a été reçu réellement (le paramètre**Actual\<*YYY*>**). Nous nous attendions à ce que le solde décline par rapport au solde de début, mais il a plutôt augmenté du montant du retrait.  
+ Le résultat de test contient un message qui décrit l’échec. Pour la méthode `AreEquals`, un message affiche ce qui était attendu (le paramètre **Expected\<*XXX*>**) et ce qui a été reçu réellement (le paramètre **Actual\<*YYY*>**). Nous nous attendions à ce que le solde décline par rapport au solde de début, mais il a plutôt augmenté du montant du retrait.  
   
  Un réexamen du code Debit indique que le test unitaire a réussi à trouver un bogue. Le montant du retrait est ajouté au solde du compte quand il doit être soustrait.  
   
@@ -309,7 +310,7 @@ public void Debit_WhenAmountIsLessThanZero_ShouldThrowArgumentOutOfRange()
   
 ```  
   
- Nous utilisons l’attribut <xref:Microsoft.VisualStudio.TestTools.UnitTesting.ExpectedExceptionAttribute> pour indiquer que l’exception appropriée a été levée. L’attribut entraîne l’échec du test à moins qu’une exception `ArgumentOutOfRangeException` ne soit levée. L’exécution du test avec les valeurs `debitAmount` positives et négatives, puis en modifiant temporairement la méthode testée pour lever une exception <xref:System.ApplicationException> générique quand le montant est inférieur à zéro, démontre que le test se comporte correctement. Pour tester le cas où le montant retiré est supérieur au solde, il suffit d’effectuer les opérations suivantes :  
+ Nous utilisons l’attribut <xref:Microsoft.VisualStudio.TestTools.UnitTesting.ExpectedExceptionAttribute> pour déclarer que la bonne exception a été levée. L’attribut entraîne l’échec du test à moins qu’une exception `ArgumentOutOfRangeException` ne soit levée. L’exécution du test avec à la fois les valeurs `debitAmount` positives et négatives puis en modifiant temporairement la méthode testée pour lever une exception <xref:System.ApplicationException> générique quand le montant est inférieur à zéro indique que le test se comporte correctement. Pour tester le cas où le montant retiré est supérieur au solde, il suffit d’effectuer les opérations suivantes :  
   
 1.  Créez une méthode de test nommée `Debit_WhenAmountIsMoreThanBalance_ShouldThrowArgumentOutOfRange`.  
   
@@ -368,7 +369,7 @@ public const string DebitAmountLessThanZeroMessage = "Debit amount less than zer
   
 -   Déclarer que le message (le troisième paramètre du constructeur) inclut le `DebitAmountExceedsBalanceMessage` défini dans la classe `BankAccount` .  
   
- La méthode <xref:Microsoft.VisualStudio.TestTools.UnitTesting.StringAssert.Contains%2A?displayProperty=fullName> du framework de tests unitaires Microsoft nous permet de vérifier la deuxième option sans les calculs nécessaires à la première option.  
+ La méthode <xref:Microsoft.VisualStudio.TestTools.UnitTesting.StringAssert.Contains%2A?displayProperty=fullName> dans le framework de tests unitaires Microsoft nous permet de vérifier la deuxième option sans les calculs requis par la première option.  
   
  Une deuxième tentative de révision de `Debit_WhenAmountIsMoreThanBalance_ShouldThrowArgumentOutOfRange` pourrait ressembler à :  
   
@@ -404,7 +405,7 @@ public void Debit_WhenAmountIsMoreThanBalance_ShouldThrowArgumentOutOfRange()
   
 3.  Si la valeur de `debitAmount` est valide (autrement dit, inférieure au solde mais supérieure à zéro), aucune exception n’est interceptée et l’assertion n’est donc jamais interceptée. La méthode de test réussit. Cela ne convient pas, car nous souhaitons que la méthode de test échoue si aucune exception n’est levée.  
   
- Le troisième fait est un bogue dans notre méthode de test. Pour tenter de résoudre le problème, nous ajoutons une assertion <xref:Microsoft.VisualStudio.TestTools.UnitTesting.Assert.Fail%2A> à la fin de la méthode de test afin de gérer le cas où aucune exception ne serait levée.  
+ Le troisième fait est un bogue dans notre méthode de test. Pour essayer de résoudre le problème, nous ajoutons une assertion <xref:Microsoft.VisualStudio.TestTools.UnitTesting.Assert.Fail%2A> à la fin de la méthode de test pour gérer le cas où aucune exception n’est levée.  
   
  Cependant, un nouveau test montre que le test échoue maintenant si l’exception correcte est interceptée. L’instruction catch réinitialise l’exception et la méthode continue à s’exécuter. Elle échoue sur la nouvelle assertion. Pour résoudre le nouveau problème, nous ajoutons une instruction `return` après `StringAssert`. Le nouveau test confirme que nous avons résolu nos problèmes. Notre version finale de `Debit_WhenAmountIsMoreThanBalance_ShouldThrowArgumentOutOfRange` ressemble à ce qui suit :  
   

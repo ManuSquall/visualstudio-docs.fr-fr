@@ -1,54 +1,71 @@
 ---
-title: "WPF MSBuild Reference | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-dev_langs: 
-  - "VB"
-  - "CSharp"
-  - "C++"
-  - "jsharp"
-helpviewer_keywords: 
-  - "build support [WPF]"
-  - "MSBuild [WPF]"
+title: "Informations de référence sur WPF MSBuild | Microsoft Docs"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology:
+- vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+dev_langs:
+- VB
+- CSharp
+- C++
+- jsharp
+helpviewer_keywords:
+- build support [WPF]
+- MSBuild [WPF]
 ms.assetid: 94b12890-365d-479a-b239-71109fbcb462
 caps.latest.revision: 4
-author: "kempb"
-ms.author: "kempb"
-manager: "ghogen"
-caps.handback.revision: 4
----
-# WPF MSBuild Reference
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
+author: kempb
+ms.author: kempb
+manager: ghogen
+translation.priority.ht:
+- cs-cz
+- de-de
+- es-es
+- fr-fr
+- it-it
+- ja-jp
+- ko-kr
+- pl-pl
+- pt-br
+- ru-ru
+- tr-tr
+- zh-cn
+- zh-tw
+ms.translationtype: Human Translation
+ms.sourcegitcommit: 5ea9179ad37514ffad4876177b05150eecc22def
+ms.openlocfilehash: 126bcc37899efcc373f2bd92c054a02d6e4aca6b
+ms.contentlocale: fr-fr
+ms.lasthandoff: 05/24/2017
 
-Windows Presentation Foundation \(WPF\) étend le moteur Microsoft Build Engine \(MSBuild\) avec une prise en charge de génération supplémentaire, documentée dans cette section.  
+---
+# <a name="wpf-msbuild-reference"></a>Référence MSBuild - WPF
+Windows Presentation Foundation (WPF) étend Microsoft Build Engine (MSBuild) avec une prise en charge de la génération supplémentaire, qui est décrite dans cette section.  
   
-## Dans cette section  
- [.Targets Files](../msbuild/wpf-dot-targets-files.md)  
- Décrit des fichiers .Targets WPF.  
+## <a name="in-this-section"></a>Dans cette section  
+ [Fichiers .Targets](../msbuild/wpf-dot-targets-files.md)  
+ Décrits les fichiers .targets WPF.  
   
- [Task Reference](../msbuild/wpf-msbuild-task-reference.md)  
+ [Task Reference (Informations de référence sur les tâches MSBuild)](../msbuild/wpf-msbuild-task-reference.md)  
  Répertorie les tâches de génération WPF disponibles.  
   
  <xref:Microsoft.Build.Tasks>  
- Un assembly de tâche de génération.  
+ Assembly de tâche de génération.  
   
  <xref:Microsoft.Build.Tasks.Deployment.Bootstrapper>  
- Un assembly de programme d'amorçage de déploiement de tâche de génération.  
+ Assembly du programme d’amorçage du déploiement de la tâche de génération.  
   
  <xref:Microsoft.Build.Tasks.Deployment.ManifestUtilities>  
- Un assembly utilitaire de manifeste de déploiement de tâche de génération.  
+ Assembly de l’utilitaire du manifeste de déploiement de la tâche de génération.  
   
  <xref:Microsoft.Build.Tasks.Hosting>  
- Un assembly d'hébergement de tâche de génération.  
+ Assembly d’hébergement de la tâche de génération.  
   
  <xref:Microsoft.Build.Tasks.Windows>  
- Un assembly de fenêtres de tâche de génération.  
+ Assembly Windows de la tâche de génération.  
   
-## Voir aussi  
- [MSBuild](http://msdn.microsoft.com/fr-fr/7c49aba1-ee6c-47d8-9de1-6f29a906e20b)
+## <a name="see-also"></a>Voir aussi  
+ [MSBuild](../msbuild/msbuild.md)

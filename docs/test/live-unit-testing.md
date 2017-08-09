@@ -27,10 +27,10 @@ translation.priority.ht:
 - zh-cn
 - zh-tw
 ms.translationtype: Human Translation
-ms.sourcegitcommit: 47057e9611b824c17077b9127f8d2f8b192d6eb8
-ms.openlocfilehash: b699132bf1a31d3ef9dc3ba5af3f99c22890c632
+ms.sourcegitcommit: c559290c8e88c8b4e37feabc7014188fad15434d
+ms.openlocfilehash: 0a939044b9806236cf55333c30bce24ae0fdb28a
 ms.contentlocale: fr-fr
-ms.lasthandoff: 05/13/2017
+ms.lasthandoff: 06/08/2017
 
 ---
 
@@ -39,10 +39,9 @@ ms.lasthandoff: 05/13/2017
 Lorsque vous développez une application, Live Unit Testing exécute automatiquement tous les tests unitaires affectés en arrière-plan et présente les résultats et la couverture du code dans l’IDE de Visual Studio en temps réel. Lorsque vous modifiez votre code, Live Unit Testing fournit des commentaires sur l’impact de vos modifications sur les tests existants et vous indique si le code que vous avez ajouté est couvert par un ou plusieurs tests existants. Cela vous rappellera d’écrire des tests unitaires lorsque vous créez des correctifs de bogues ou que vous ajoutez des fonctionnalités.
 
 > [!NOTE]
-> Live Unit Testing est disponible pour les projets Visual Basic et C# qui ciblent le .NET Framework dans l’édition Enterprise de Visual Studio 2017. À ce jour, Live Unit Testing n’est pas disponible avec .NET Core.
+> Live Unit Testing est disponible pour les projets Visual Basic et C# qui ciblent .NET Core ou le .NET Framework dans l’édition Enterprise de Visual Studio 2017.
 
 ## <a name="supported-test-frameworks"></a>Frameworks de test pris en charge
-
 Live Unit Testing fonctionne avec les trois frameworks de tests unitaires populaires listés dans le tableau suivant. La version minimale prise en charge des adaptateurs et des frameworks est également listée dans le tableau. Les frameworks de tests unitaires sont tous disponibles dans NuGet.org.
  
 <table> 
@@ -63,8 +62,8 @@ Live Unit Testing fonctionne avec les trois frameworks de tests unitaires popula
 </tr>
 <tr>
    <td>MSTest</td>
-   <td>MSTest.TestAdapter 1.1.4-preview</td>
-   <td>MSTest.TestFramework 1.0.5-preview</td>
+   <td>MSTest.TestAdapter 1.1.11</td>
+   <td>MSTest.TestFramework 1.1.11</td>
 </tr>
 </table>
 
@@ -72,11 +71,11 @@ Si vous avez d’anciennes références de framework de test et d’adaptateur i
 
 Dans certains cas, vous devez peut-être restaurer explicitement les packages NuGet référencés par les projets dans la solution pour que Live Unit Testing fonctionne. Pour ce faire, générez une version explicite de la solution (sélectionnez **Générer**, **Régénérer la solution** à partir du menu de Visual Studio de niveau supérieur) ou restaurez les packages dans la solution (cliquez avec le bouton droit sur la solution et sélectionnez **Restaurer des packages NuGet**) avant d’activer Live Unit Testing. 
 
-#    <a name="configuring-live-unit-testing"></a>Configuration de Live Unit Testing
+#   <a name="configuring-live-unit-testing"></a>Configuration de Live Unit Testing
 
 Vous pouvez configurer Live Unit Testing en sélectionnant **Outils**, **Options** à partir du menu de Visual Studio de niveau supérieur, puis en sélectionnant **Live Unit Testing** dans le volet gauche de la boîte de dialogue **Options**. La figure suivante montre les options de configuration disponibles de Live Unit Testing disponibles dans la boîte de dialogue.
 
-  ![Image](~/test/media/lut-options.png)
+  ![Image](./media/lut-options.png)
 
 Les options configurables sont les suivantes :
 
@@ -101,25 +100,25 @@ Pour activer Live Unit Testing, sélectionnez **Tester** , **Live Unit Testing**
 - **Arrêter** permet d’arrêter complètement Live Unit Testing. Live Unit Testing abandonne toutes les données qu’il a collectées.
 - **Redémarrer** équivaut à sélectionner **Arrêter**, puis **Démarrer** dans le menu **Live Unit Testing**.
 
-##    <a name="viewing-coverage-visualization-in-the-editor-as-you-type"></a>Affichage de la visualisation de couverture dans l’éditeur à mesure que vous tapez
+##  <a name="viewing-coverage-visualization-in-the-editor-as-you-type"></a>Affichage de la visualisation de couverture dans l’éditeur à mesure que vous tapez
 
-Une fois activé, Live Unit Testing met à jour chaque ligne de code dans l’éditeur Visual Studio pour vous indiquer si le code que vous écrivez est couvert par les tests unitaires et si les tests qui le couvrent réussissent.  La figure suivante montre les lignes de code avec des résultats positifs et négatifs aux tests, ainsi que les lignes de code qui ne sont pas couvertes par les tests. Les lignes avec un symbole « ✓ » vert sont couvertes uniquement par les tests ayant réussi, les lignes assorties d’un symbole « 🞩 » rouge sont couvertes par un ou plusieurs tests ayant échoué et les lignes avec un symbole «  » bleu ne sont pas couvertes par les tests.
+Une fois activé, Live Unit Testing met à jour chaque ligne de code dans l’éditeur Visual Studio pour vous indiquer si le code que vous écrivez est couvert par les tests unitaires et si les tests qui le couvrent réussissent.  La figure suivante montre les lignes de code avec des résultats positifs et négatifs aux tests, ainsi que les lignes de code qui ne sont pas couvertes par les tests. Les lignes avec un symbole « ✓ » vert sont couvertes uniquement par les tests ayant réussi, les lignes assorties d’un symbole « 🞩 » rouge sont couvertes par un ou plusieurs tests ayant échoué et les lignes avec un symbole «  » bleu ne sont couvertes par aucun test.
 
-  ![Image](~/ide/media/lut-codewindow.png)
+  ![Image](./media/lut-codewindow.png)
 
 La visualisation de couverture Live Unit Testing est immédiatement mise à jour lorsque vous modifiez le code dans l’éditeur de code. Lors du traitement des modifications, la visualisation change pour indiquer que les données ne sont pas à jour en ajoutant une image de minuteur en dessous des symboles de réussite, d’échec et de non-couverture, comme présenté dans la figure suivante.
 
-  ![Image](~/test/media/lut-codeupdating.png)
+  ![Image](./media/lut-codeupdating.png)
  
 ## <a name="getting-information-on-successful-or-failed-tests"></a>Obtention d’informations sur les réussites ou les échecs aux tests
 
 En passant la souris sur le symbole de réussite ou d’échec dans la fenêtre de code, vous pouvez voir combien de tests ont atteint cette ligne. Si vous cliquez sur le symbole, vous pouvez voir l’état de chaque test, comme le montre la figure suivante.
  
-  ![Image](~/test/media/lut-failedinfo.png) 
+  ![Image](./media/lut-failedinfo.png) 
 
 Lorsque vous passez la souris sur le test ayant échoué dans l’info-bulle, celle-ci se développe pour fournir des informations supplémentaires sur l’échec, comme illustré dans l’image ci-dessous. Si vous cliquez sur le test ayant échoué dans l’info-bulle, vous pouvez y accéder directement.
 
-  ![Image](~/test/media/lut-failedmsg.png) 
+  ![Image](./media/lut-failedmsg.png) 
 
 ## <a name="diagnosing-and-correcting-test-failures"></a>Diagnostics et corrections des échecs aux tests
 
@@ -143,8 +142,8 @@ Pour les solutions comptant de nombreux projets de test, vous pouvez contrôler 
 
 Par exemple, si vous disposez d’une solution avec des centaines de projets de test, vous pouvez sélectionner un ensemble ciblé de projets de test à inclure dans Live Unit Testing. Pour sélectionner les projets individuels dans les tests unitaires, procédez comme suit une fois Live Unit Testing démarré :
 
-1.    Cliquez avec le bouton droit sur la solution dans l’Explorateur de solutions et choisissez **Live Tests** (Tests en direct), **Exclure** pour exclure toute la solution.
-2.    Cliquez avec le bouton droit sur chaque projet de test à inclure dans les tests et choisissez **Live Tests** (Tests en direct), **Inclure**.
+1.  Cliquez avec le bouton droit sur la solution dans l’Explorateur de solutions et choisissez **Live Tests** (Tests en direct), **Exclure** pour exclure toute la solution.
+2.  Cliquez avec le bouton droit sur chaque projet de test à inclure dans les tests et choisissez **Live Tests** (Tests en direct), **Inclure**.
  
 Utilisez la fenêtre de l’éditeur de code pour inclure ou exclure des méthodes de test. Cliquez avec le bouton droit sur la signature de la méthode de test dans la fenêtre de l’éditeur de code, puis sélectionnez **Live Tests** (Tests en direct), **Inclure** ou **Live Tests** (Tests en direct), **Exclure**. 
 
