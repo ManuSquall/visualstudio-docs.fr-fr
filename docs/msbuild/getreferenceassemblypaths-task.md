@@ -43,7 +43,7 @@ ms.lasthandoff: 06/03/2017
 Retourne les chemins des assemblys de référence des différents frameworks.  
   
 ## <a name="parameters"></a>Paramètres  
- Le tableau ci-dessous décrit les paramètres de la tâche `GetReferenceAssemblyPaths`.  
+ Le tableau ci-dessous décrit les paramètres de la tâche `GetReferenceAssemblyPaths` .  
   
 |Paramètre|Description|  
 |---------------|-----------------|  

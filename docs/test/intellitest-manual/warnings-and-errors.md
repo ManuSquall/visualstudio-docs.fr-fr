@@ -359,5 +359,5 @@ Dans certains cas, la modification d’un champ statique est acceptable :
 
 ## <a name="got-feedback"></a>Vous avez des commentaires ?
 
-Postez vos idées et vos demandes de fonctionnalité sur  **[UserVoice](https://visualstudio.uservoice.com/forums/121579-visual-studio-2015/category/157869-test-tools?query=IntelliTest)**.
+Postez vos idées et demandes de fonctionnalités sur **[UserVoice](https://visualstudio.uservoice.com/forums/121579-visual-studio-2015/category/157869-test-tools?query=IntelliTest)**.
 

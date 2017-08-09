@@ -48,7 +48,7 @@ ms.lasthandoff: 06/03/2017
 Prend une liste d’un ou plusieurs noms de bibliothèques de types ou de fichiers .tlb et résout ces bibliothèques de types aux emplacements sur le disque.  
   
 ## <a name="parameters"></a>Paramètres  
- Le tableau ci-dessous décrit les paramètres de la tâche `ResolveCOMReference`.  
+ Le tableau ci-dessous décrit les paramètres de la tâche `ResolveCOMReference` .  
   
 |Paramètre|Description|  
 |---------------|-----------------|  

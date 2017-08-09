@@ -48,7 +48,7 @@ ms.lasthandoff: 05/30/2017
 La tâche AL encapsule AL.exe, un outil distribué avec le [!INCLUDE[winsdklong](../deployment/includes/winsdklong_md.md)]. L’outil Assembly Linker sert à créer un assembly avec un manifeste à partir d’un ou plusieurs fichiers qui sont soit des modules, soit des fichiers de ressources. Les compilateurs et les environnements de développement pouvant déjà fournir ces fonctionnalités, il n’est généralement pas nécessaire d’utiliser cette tâche directement. Assembly Linker est très utile aux développeurs ayant besoin de créer un assembly unique à partir de plusieurs fichiers de composant, tels que ceux qui peuvent être générés par le développement en plusieurs langages. Cette tâche ne combine pas les modules dans un fichier d’assembly unique. Les modules individuels doivent toujours être distribués et disponibles pour que l’assembly résultant se charge correctement. Pour plus d’informations sur AL.exe, consultez [Al.exe (Assembly Linker)](/dotnet/framework/tools/al-exe-assembly-linker).  
   
 ## <a name="parameters"></a>Paramètres  
- Le tableau ci-dessous décrit les paramètres de la tâche `AL`.  
+ Le tableau ci-dessous décrit les paramètres de la tâche `AL` .  
   
 |Paramètre|Description|  
 |---------------|-----------------|  
