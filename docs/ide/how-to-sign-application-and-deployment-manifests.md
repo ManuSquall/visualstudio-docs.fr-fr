@@ -36,10 +36,11 @@ translation.priority.ht:
 - tr-tr
 - zh-cn
 - zh-tw
-translationtype: Human Translation
-ms.sourcegitcommit: 5658ecf52637a38bc3c2a5ad9e85b2edebf7d445
-ms.openlocfilehash: b59b417eb16674ff8c6c5223d790ae174ba20e09
-ms.lasthandoff: 02/22/2017
+ms.translationtype: HT
+ms.sourcegitcommit: a3c0f4d3bde8bb03d3766383eba01665e58458be
+ms.openlocfilehash: 18f1ea2f5ee76f4f8457b7254ff3dd3b7b3e4901
+ms.contentlocale: fr-fr
+ms.lasthandoff: 08/01/2017
 
 ---
 # <a name="how-to-sign-application-and-deployment-manifests"></a>Guide pratique pour signer des manifestes d’application et de déploiement
@@ -49,7 +50,7 @@ Si vous souhaitez publier une application à l’aide du déploiement ClickOnce,
   
  La signature des manifestes ClickOnce est facultative pour les applications .exe. Pour plus d’informations, consultez la section « Génération de manifestes non signés » de ce document.  
   
- Pour plus d’informations sur la création de fichiers de clés, consultez [Comment : créer une paire de clés publique/privée](http://msdn.microsoft.com/Library/05026813-f3bd-4d7c-9e0b-fc588eb3d114).  
+ Pour plus d’informations sur la création de fichiers de clés, consultez [Comment : créer une paire de clés publique/privée](/dotnet/framework/app-domains/how-to-create-a-public-private-key-pair).  
   
 > [!NOTE]
 >  [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] prend uniquement en charge les fichiers de clés PFX (Personal Information Exchange) portant l’extension .pfx. Toutefois, vous pouvez sélectionner d’autres types de certificats à partir du magasin de certificats Windows de l’utilisateur actuel en cliquant sur **Sélectionner dans Store** dans la page **Signature** des propriétés du projet.  
@@ -124,7 +125,7 @@ Si vous souhaitez publier une application à l’aide du déploiement ClickOnce,
 3.  Publiez l'application.  
   
 ## <a name="see-also"></a>Voir aussi  
- [Assemblys avec nom fort](http://msdn.microsoft.com/Library/d4a80263-f3e0-4d81-9b61-f0cbeae3797b)   
- [Comment : créer une paire de clés publique/privée](http://msdn.microsoft.com/Library/05026813-f3bd-4d7c-9e0b-fc588eb3d114)   
+ [Assemblys avec nom fort](/dotnet/framework/app-domains/strong-named-assemblies)   
+ [Comment : créer une paire de clés publique/privée](/dotnet/framework/app-domains/how-to-create-a-public-private-key-pair)   
  [Page Signature, Concepteur de projet](../ide/reference/signing-page-project-designer.md)   
  [Sécurité et déploiement ClickOnce](../deployment/clickonce-security-and-deployment.md)
