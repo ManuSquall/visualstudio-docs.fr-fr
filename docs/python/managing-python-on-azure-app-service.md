@@ -16,10 +16,10 @@ author: kraigb
 ms.author: kraigb
 manager: ghogen
 ms.translationtype: HT
-ms.sourcegitcommit: 6d25db4639f2c8391c1e32542701ea359f560178
-ms.openlocfilehash: 5b509a46dd3dbee3a45ab2eac57242636beee17b
+ms.sourcegitcommit: c00adbbabf0d3b82acb17f4a269dfc693246bc69
+ms.openlocfilehash: 56fccdd5e103cf29c8ea4a93ab80de7187275642
 ms.contentlocale: fr-fr
-ms.lasthandoff: 07/18/2017
+ms.lasthandoff: 08/01/2017
 
 ---
 
@@ -176,7 +176,7 @@ Au lieu d’utiliser la console Kudu via le portail Azure, vous pouvez exécuter
 }
 ```
 
-Pour plus d’informations sur les commandes et l’authentification, consultez la [documentation Kudu](https://github.com/projectkudu/kudu/wiki/REST-API). Vous pouvez également afficher des informations d’identification à l’aide de la commande [`az webapp deployment list-publishing-profiles command`](https://docs.microsoft.com/cli/azure/webapp/deployment#list-publishing-profiles) à partir de l’interface de ligne de commande Azure. Une bibliothèque d’assistance pour la publication des commandes Kudu est également disponible sur GitHub] (https://github.com/lmazuel/azure-webapp-publish/blob/master/azure_webapp_publish/kudu.py#L42).
+Pour plus d’informations sur les commandes et l’authentification, consultez la [documentation Kudu](https://github.com/projectkudu/kudu/wiki/REST-API). Vous pouvez également afficher des informations d’identification à l’aide de la commande [`az webapp deployment list-publishing-profiles command`](https://docs.microsoft.com/cli/azure/webapp/deployment#list-publishing-profiles) à partir de l’interface de ligne de commande Azure. Une bibliothèque d’assistance pour la publication de commandes Kudu est également [disponible sur GitHub](https://github.com/lmazuel/azure-webapp-publish/blob/master/azure_webapp_publish/kudu.py#L42).
 
 
 ### <a name="copying-libraries-into-app-source-code"></a>Copie des bibliothèques dans le code source d’application
@@ -188,3 +188,4 @@ L’inconvénient est que ces bibliothèques doivent correspondre exactement à 
 ### <a name="avoiding-virtual-environments"></a>Environnements virtuels déconseillés
 
 Bien que l’utilisation d’un environnement virtuel localement peut vous aider à bien comprendre les dépendances nécessaires à votre site, elle n’est pas recommandée sur App Service. Au lieu de cela, installez simplement les bibliothèques dans le dossier Python principal et déployez-les avec votre application pour éviter d’avoir des dépendances en conflit.
+

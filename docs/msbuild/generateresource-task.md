@@ -37,18 +37,18 @@ translation.priority.ht:
 - tr-tr
 - zh-cn
 - zh-tw
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 11a9cee75f912c5fb31cf4a031644abe9c63d744
-ms.openlocfilehash: 029b5627cf8f7213dfe3bab233db01fe27aa6c49
+ms.translationtype: HT
+ms.sourcegitcommit: c00adbbabf0d3b82acb17f4a269dfc693246bc69
+ms.openlocfilehash: d1e2efc557f90d01a955710d53a1f2724b5f5f7d
 ms.contentlocale: fr-fr
-ms.lasthandoff: 06/03/2017
+ms.lasthandoff: 08/01/2017
 
 ---
 # <a name="generateresource-task"></a>GenerateResource, tâche
 Convertit les fichiers .txt et .resx (format de ressources XML) en fichiers .resources binaires du Common Language Runtime qui peuvent être incorporés dans un exécutable binaire runtime ou compilés en assemblys satellites. Cette tâche est généralement utilisée pour convertir des fichiers .txt ou .resx en fichiers .resource. La fonctionnalité de la tâche `GenerateResource` est similaire à [resgen.exe](/dotnet/framework/tools/resgen-exe-resource-file-generator).  
   
 ## <a name="parameters"></a>Paramètres  
- Le tableau ci-dessous décrit les paramètres de la tâche `GenerateResource`.  
+ Le tableau ci-dessous décrit les paramètres de la tâche `GenerateResource` .  
   
 |Paramètre|Description|  
 |---------------|-----------------|  
@@ -58,7 +58,7 @@ Convertit les fichiers .txt et .resx (format de ressources XML) en fichiers .res
 |`ExecuteAsTool`|Paramètre `Boolean` facultatif.<br /><br /> Si la valeur est `true`, exécute tlbimp.exe et aximp.exe à partir du framework cible approprié out-of-process pour générer les assemblys de wrappers nécessaires. Ce paramètre autorise le multi-ciblage de `ResolveComReferences`.|  
 |`FilesWritten`|Paramètre de sortie <xref:Microsoft.Build.Framework.ITaskItem>`[]` facultatif.<br /><br /> Contient les noms de tous les fichiers écrits sur disque. Cela comprend le fichier cache, le cas échéant. Ce paramètre est utile pour les implémentations de Clean.|  
 |`MinimalRebuildFromTracking`|Paramètre `Boolean` facultatif.<br /><br /> Obtient ou définit un commutateur qui spécifie si la génération incrémentielle suivie sera utilisée. Si la valeur est `true`, la génération incrémentielle est activée ; sinon, une régénération est exécutée.|  
-|`NeverLockTypeAssemblies`|Paramètre `Boolean` facultatif.<br /><br /> Spécifie le nom des fichiers générés, comme les fichiers .resources. Si vous ne spécifiez pas de nom, le nom du fichier d’entrée correspondant est utilisé et le fichier .resources créé est placé dans le répertoire qui contient le fichier d’entrée.|  
+|`NeverLockTypeAssemblies`|Paramètre `Boolean` facultatif.<br /><br /> Obtient ou définit une valeur booléenne qui indique si un [AppDomain](https://docs.microsoft.com/dotnet/api/system.appdomain) doit être créé pour évaluer les fichiers de ressources (.resx) (true) ou si un [AppDomain](https://docs.microsoft.com/dotnet/api/system.appdomain) doit être créé uniquement quand les fichiers de ressources font référence à un assembly d’utilisateur (false).|  
 |`OutputResources`|Paramètre de sortie <xref:Microsoft.Build.Framework.ITaskItem>`[]` facultatif.<br /><br /> Spécifie le nom des fichiers générés, comme les fichiers .resources. Si vous ne spécifiez pas de nom, le nom du fichier d’entrée correspondant est utilisé et le fichier .resources créé est placé dans le répertoire qui contient le fichier d’entrée.|  
 |`PublicClass`|Paramètre `Boolean` facultatif.<br /><br /> Si la valeur est `true`, crée une classe de ressource fortement typée en tant que classe publique.|  
 |`References`|Paramètre `String[]` facultatif.<br /><br /> Références à partir desquelles charger les types dans les fichiers .resx. Les éléments de données de fichiers .resx peuvent avoir un type .NET. Lors de la lecture du fichier .resx, il doit être résolu. En règle générale, on utilise pour cela des règles de chargement de type standard. Si vous fournissez des assemblys dans `References`, ils sont prioritaires.<br /><br /> Ce paramètre n’est pas obligatoire pour les ressources fortement typées.|  
@@ -112,3 +112,4 @@ Convertit les fichiers .txt et .resx (format de ressources XML) en fichiers .res
 ## <a name="see-also"></a>Voir aussi  
  [Tâches MSBuild](../msbuild/msbuild-tasks.md)   
  [Task Reference (Informations de référence sur les tâches MSBuild)](../msbuild/msbuild-task-reference.md)
+

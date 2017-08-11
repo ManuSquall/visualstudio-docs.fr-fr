@@ -35,10 +35,10 @@ translation.priority.ht:
 - zh-cn
 - zh-tw
 ms.translationtype: HT
-ms.sourcegitcommit: 5c28e68b89f6583dc35a91b275693c11e0259dfd
-ms.openlocfilehash: 6e4094925eec3e4a8768219180e75fa9d1f1fa03
+ms.sourcegitcommit: 14c21f67beb92d3b13a5c54c755ccb846d116a9c
+ms.openlocfilehash: aaa19a3a818c3fa3196d79959ee30c5eae4c1b5f
 ms.contentlocale: fr-fr
-ms.lasthandoff: 07/13/2017
+ms.lasthandoff: 08/04/2017
 
 ---
 # <a name="beginners-guide-to-performance-profiling"></a>Guide du débutant en profilage des performances
@@ -48,7 +48,9 @@ Quand le débogueur est suspendu, l’outil **Utilisation de l’UC** collecte l
 
 Le hub de diagnostic propose de nombreuses autres options pour exécuter et gérer votre session de diagnostic. Si l’outil **Utilisation de l’UC** ne vous fournit pas les données dont vous avez besoin, les [autres outils de profilage](../profiling/Profiling-Tools.md) fournissent des types d’informations différents qui peuvent vous être utiles. Dans de nombreux cas, le goulot d’étranglement des performances de votre application peut ne pas provenir de votre processeur, mais de la mémoire, de l’interface utilisateur de rendu ou du temps de requête réseau. Le hub de diagnostic vous offre de nombreuses autres options pour enregistrer et analyser ce type de données.
 
-Vous pouvez également [regarder une vidéo sur l’utilisation des outils de diagnostics](#video) qui montre comment analyser l’utilisation de l’UC et l’utilisation de la mémoire.
+|         |         |
+|---------|---------|
+| ![Regarder une vidéo](../install/media/video-icon.png "WatchVideo") | [Regardez une vidéo](#video) sur l’utilisation des outils de diagnostics qui montre comment analyser l’utilisation de l’UC et l’utilisation de la mémoire. |
 
 Dans cette rubrique, nous allons aborder l’analyse de l’utilisation du processeur dans un flux de travail de débogage normal. Vous pouvez également analyser l’utilisation du processeur sans débogueur ou en ciblant une application en cours d’exécution. Pour plus d’informations, consultez [Exécution des outils de profilage avec ou sans le débogueur](../profiling/running-profiling-tools-with-or-without-the-debugger.md).
   
