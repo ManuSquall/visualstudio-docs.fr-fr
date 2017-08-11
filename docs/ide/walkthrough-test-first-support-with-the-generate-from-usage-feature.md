@@ -31,11 +31,11 @@ translation.priority.mt:
 - pl-pl
 - pt-br
 - tr-tr
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 5ea9179ad37514ffad4876177b05150eecc22def
-ms.openlocfilehash: b5c18e7d208879498c1923403ec1bd213adffb5a
+ms.translationtype: HT
+ms.sourcegitcommit: f0576ce6dd78fe1328bcea3ab9a27507ddc0f2c0
+ms.openlocfilehash: 4811dda912f20272733a4d878fc8c607eb2573fc
 ms.contentlocale: fr-fr
-ms.lasthandoff: 05/24/2017
+ms.lasthandoff: 08/07/2017
 
 ---
 # <a name="walkthrough-test-first-support-with-the-generate-from-usage-feature"></a>Procédure pas à pas : prise en charge du développement basé d’abord sur les tests avec la fonctionnalité Générer à partir de l’utilisation
@@ -60,7 +60,21 @@ Cette rubrique montre comment utiliser la fonctionnalité [Générer à partir d
      ![Boîte de dialogue Nouveau projet de test](../ide/media/newproject_test.png "NewProject_Test")  
 Boîte de dialogue Nouveau projet de test  
   
-4.  Cliquez sur **OK** pour fermer la boîte de dialogue **Nouveau projet** . Vous êtes maintenant prêt à commencer l’écriture des tests.  
+4.  Cliquez sur **OK** pour fermer la boîte de dialogue **Nouveau projet** .
+
+5.  Dans votre projet de classe, dans **l’Explorateur de solutions**, cliquez avec le bouton droit sur le nœud **Références**, puis cliquez sur **Ajouter une référence**.
+
+6.  Dans la boîte de dialogue **Gestionnaire de références**, sélectionnez **Projets**, puis sélectionnez votre projet de test unitaire.
+
+7.  Cliquez sur **OK** pour fermer la boîte de dialogue **Gestionnaire de références**.
+
+8.  Dans le fichier **Class1**, immédiatement après la toute dernière instruction **using**, ajoutez une instruction **using** pour le projet de test :
+
+    * En Visual Basic, ajoutez `Using UnitTestProject1`
+    
+    * En C#, ajoutez `using UnitTestProject1;`
+    
+9.  Enregistrez votre solution. Vous êtes maintenant prêt à commencer l’écriture des tests.  
   
 ### <a name="to-generate-a-new-class-from-a-unit-test"></a>Pour générer une nouvelle classe à partir d’un test unitaire  
   
@@ -73,10 +87,10 @@ Boîte de dialogue Nouveau projet de test
   
 3.  Recherchez la méthode `TestMethod1()` et renommez-la `DefaultAutomobileIsInitializedCorrectly()`. Dans cette méthode, créez une instance d’une classe nommée `Automobile`, comme indiqué dans les illustrations suivantes. Un soulignement ondulé indique une erreur de compilation et une balise active apparaît sous le nom de type. L’emplacement exact de la balise active varie selon que vous utilisez [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] ou [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)].  
   
-     ![Soulignement d’étiquette active en Visual Basic](~/ide/media/genclass_underlinevb.png "GenClass_UnderlineVB")  
+     ![Soulignement d’étiquette active en Visual Basic](../ide/media/genclass_underlinevb.png "GenClass_UnderlineVB")  
 Visual Basic  
   
-     ![Soulignement d’étiquette active en C&#35;](~/ide/media/genclass_underline.png "GenClass_Underline")  
+     ![Soulignement d’étiquette active en C&#35;](../ide/media/genclass_underline.png "GenClass_Underline")  
 Visual C#  
   
 4.  Placez le pointeur de la souris sur la balise active pour afficher un message d’erreur indiquant qu’aucun type nommé `Automobile` n’est encore défini. Cliquez sur la balise active ou appuyez sur Ctrl+. (Ctrl+point) pour ouvrir le menu contextuel Générer à partir de l’utilisation, comme indiqué dans les illustrations suivantes.  
@@ -84,7 +98,7 @@ Visual C#
      ![Menu contextuel de l’étiquette en Visual Basic](../ide/media/genclass_smartvb.png "GenClass_SmartVB")  
 Visual Basic  
   
-     ![Menu contextuel d’étiquette active en C&#35;](../ide/media/genclass_smartcs.png "GenClass_SmartCS")  
+     ![Menu contextuel de l’étiquette en C&#35;](../ide/media/genclass_smartcs.png "GenClass_SmartCS")  
 Visual C#  
   
 5.  Vous avez maintenant deux choix : Vous pouvez cliquer sur **Générer 'Class Automobile'** pour créer un fichier dans votre projet de test et le remplir avec une classe vide nommée `Automobile`. C’est un moyen rapide de créer une classe dans un nouveau fichier qui a des modificateurs d’accès par défaut dans le projet actuel. Vous pouvez également cliquer sur **Générer un nouveau type** pour ouvrir la boîte de dialogue **Générer un nouveau type** . Elle vous permet entre autres de placer la classe dans un fichier existant et d’ajouter le fichier à un autre projet.  
@@ -115,7 +129,7 @@ Boîte de dialogue Générer un nouveau type
      ![Menu contextuel Générer la propriété en Visual Basic](../ide/media/genpropertysmarttagvb.png "GenPropertySmartTagVB")  
 Visual Basic  
   
-     ![Menu contextuel Générer la propriété en C&#35;](../ide/media/genpropertysmarttagcs.png "GenPropertySmartTagCS")  
+     ![Menu contextuel Générer la propriété en C&#35;](../ide/media/genpropertysmarttagcs.png "GenPropertySmartTagCS")  
 Visual C#  
   
 ### <a name="to-locate-the-source-code"></a>Pour rechercher le code source  

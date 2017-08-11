@@ -30,11 +30,11 @@ translation.priority.mt:
 - pl-pl
 - pt-br
 - tr-tr
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 85576806818a6ed289c2f660f87b5c419016c600
-ms.openlocfilehash: a6c3aa65a2c0198c856f09f6f16f58bf16945d58
+ms.translationtype: HT
+ms.sourcegitcommit: c00adbbabf0d3b82acb17f4a269dfc693246bc69
+ms.openlocfilehash: 1228d2d471856b6ee9187818a57464be7125095b
 ms.contentlocale: fr-fr
-ms.lasthandoff: 05/09/2017
+ms.lasthandoff: 08/01/2017
 
 ---
 # <a name="tools-for-detecting-and-managing-visual-studio-instances"></a>Outils de détection et de gestion des instances de Visual Studio
@@ -42,11 +42,18 @@ ms.lasthandoff: 05/09/2017
 ## <a name="detecting-existing-visual-studio-instances"></a>Détection des instances existantes de Visual Studio
 Nous avons mis à disposition plusieurs outils qui vous aideront à détecter et à gérer les instances de Visual Studio installées sur les ordinateurs clients :
 
-* [VSWhere](https://github.com/microsoft/vswhere) : fichier exécutable C++ qui vous permet de rechercher l’emplacement des principaux outils Visual Studio à partir d’une instance installée de Visual Studio.
+* [VSWhere](https://github.com/microsoft/vswhere) : fichier exécutable intégré à Visual Studio ou disponible dans le cadre d’une distribution distincte qui vous permet de trouver l’emplacement de toutes les instances de Visual Studio sur un ordinateur particulier.
 * [VSSetup.PowerShell](https://github.com/microsoft/vssetup.powershell) : scripts PowerShell qui utilisent l’API de configuration de l’installation pour identifier les instances installées de Visual Studio.
 * [VS-Setup-Samples](https://github.com/microsoft/vs-setup-samples) : exemples C# et C++ qui montrent comment utiliser l’API de configuration de l’installation pour interroger une installation existante.
 
 De plus, l’[API de configuration de l’installation](https://msdn.microsoft.com/en-us/library/microsoft.visualstudio.setup.configuration.aspx) fournit des interfaces destinées aux développeurs qui veulent créer leurs propres utilitaires d’interrogation des instances de Visual Studio.
+
+## <a name="using-vswhereexe"></a>Utilisation de vswhere.exe
+`vswhere.exe` est inclus automatiquement dans Visual Studio 2017 version 15.2 ou supérieure, ou vous pouvez le télécharger à partir de la [page des versions Release](https://github.com/Microsoft/vswhere/releases). Utilisez `vswhere -?` pour obtenir des informations d’aide sur l’outil. Par exemple, cette commande affiche toutes les versions Release de Visual Studio, y compris les anciennes versions du produit et les préversions, et renvoie les résultats au format JSON :
+
+```cmd
+C:\Program Files (x86)\Microsoft Visual Studio\Installer> vswhere.exe -legacy -prerelease -format json
+```
 
 >[!TIP]
 >Pour plus d’informations sur l’installation de Visual Studio 2017, consultez les [articles de blog de Heath Stewart](https://blogs.msdn.microsoft.com/heaths/tag/vs2017/).
