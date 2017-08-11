@@ -91,7 +91,7 @@ Pour capturer les messages détaillés du journal MSBuild depuis Live Unit Testi
 
 ## <a name="starting-pausing-and-stopping-live-unit-testing"></a>Démarrage, interruption et arrêt de Live Unit Testing
 
-Pour activer Live Unit Testing, sélectionnez **Tester** , **Live Unit Testing**, **Démarrer** dans le menu Visual Studio de niveau supérieur. Une fois Live Unit Testing activé, les options disponibles dans le menu **Live Unit Testing** changent à partir d’un seul élément, de **Démarrer** à **Pause**, **Arrêter** et **Redémarrer**.
+Pour activer Live Unit Testing, sélectionnez **Tester **, **Live Unit Testing**, **Démarrer** dans le menu Visual Studio de niveau supérieur. Une fois Live Unit Testing activé, les options disponibles dans le menu **Live Unit Testing** changent à partir d’un seul élément, de **Démarrer** à **Pause**, **Arrêter** et **Redémarrer**.
 
 À tout moment, vous pouvez interrompre temporairement ou arrêter complètement Live Unit Testing. Vous souhaiterez peut-être le faire si, par exemple, vous êtes en pleine refactorisation et que vous savez que vos tests seront incorrects pendant un certain temps. Les trois options du menu sont :
 
@@ -102,7 +102,7 @@ Pour activer Live Unit Testing, sélectionnez **Tester** , **Live Unit Testing**
 
 ##  <a name="viewing-coverage-visualization-in-the-editor-as-you-type"></a>Affichage de la visualisation de couverture dans l’éditeur à mesure que vous tapez
 
-Une fois activé, Live Unit Testing met à jour chaque ligne de code dans l’éditeur Visual Studio pour vous indiquer si le code que vous écrivez est couvert par les tests unitaires et si les tests qui le couvrent réussissent.  La figure suivante montre les lignes de code avec des résultats positifs et négatifs aux tests, ainsi que les lignes de code qui ne sont pas couvertes par les tests. Les lignes avec un symbole « ✓ » vert sont couvertes uniquement par les tests ayant réussi, les lignes assorties d’un symbole « 🞩 » rouge sont couvertes par un ou plusieurs tests ayant échoué et les lignes avec un symbole «  » bleu ne sont couvertes par aucun test.
+Une fois activé, Live Unit Testing met à jour chaque ligne de code dans l’éditeur Visual Studio pour vous indiquer si le code que vous écrivez est couvert par les tests unitaires et si les tests qui le couvrent réussissent.  La figure suivante montre les lignes de code avec des résultats positifs et négatifs aux tests, ainsi que les lignes de code qui ne sont pas couvertes par les tests. Les lignes avec un symbole « ✓ » vert sont couvertes uniquement par les tests ayant réussi, les lignes assorties d’un symbole « 🞩 » rouge sont couvertes par un ou plusieurs tests ayant échoué et les lignes avec un symbole «  » bleu ne sont couvertes par aucun test.
 
   ![Image](./media/lut-codewindow.png)
 
