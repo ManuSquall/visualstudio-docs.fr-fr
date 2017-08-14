@@ -148,7 +148,7 @@ Pour plus d’informations, consultez [Installation de la prise en charge de Pyt
         return (1 + pow(e, (-2 * x))) / (2 * pow(e, -x));
     }
 
-    double tanh(x) {
+    double tanh(double x) {
         return sinh(x) / cosh(x);
     }
     ```
@@ -163,7 +163,7 @@ Pour transformer la DLL C++ en extension pour Python, vous devez modifier la mé
 1. Dans le fichier C++, incluez `Python.h` en haut :
 
     ```cpp
-    include <Python.h>
+    #include <Python.h>
     ```
 
 1. Modifiez la méthode `tanh` pour accepter et retourner des types Python :
