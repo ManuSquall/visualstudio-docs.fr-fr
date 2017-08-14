@@ -5,7 +5,7 @@ keywords:
 author: TerryGLee
 ms.author: tglee
 manager: ghogen
-ms.date: 05/10/2017
+ms.date: 08/09/2017
 ms.topic: article
 helpviewer_keywords:
 - workload ID, Visual Studio
@@ -62,6 +62,7 @@ Pour plus d’informations sur l’utilisation de ces ID, consultez la page [Uti
 ID de composant | Nom | Version | Type de dépendance
 --- | --- | --- | ---
 Microsoft.VisualStudio.ComponentGroup.TestTools.TestAgent | Fonctionnalités principales de Test Agent | 15.0.26208.0 | Obligatoire
+
 ## <a name="unaffiliated-components"></a>Composants non affiliés
 
 Il s’agit de composants qui ne sont inclus dans aucune charge de travail, mais qui peuvent être sélectionnés de manière individuelle.
@@ -69,6 +70,7 @@ Il s’agit de composants qui ne sont inclus dans aucune charge de travail, mais
 ID de composant | Nom | Version
 --- | --- | ---
 N/A | N/A | N/A
+
 
 ## <a name="see-also"></a>Voir aussi
 
