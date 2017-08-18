@@ -28,23 +28,100 @@ translation.priority.mt:
 - pl-pl
 - pt-br
 - tr-tr
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 47057e9611b824c17077b9127f8d2f8b192d6eb8
-ms.openlocfilehash: 7aa8de1116409f30cf1a0cd2fd689c03c2242724
+ms.translationtype: HT
+ms.sourcegitcommit: cd8418f782f800390d166403374ecb879970dbc3
+ms.openlocfilehash: 92304c73b1a098c32a74011956dadd8097b8329d
 ms.contentlocale: fr-fr
-ms.lasthandoff: 05/13/2017
+ms.lasthandoff: 08/11/2017
 
 ---
 # <a name="change-log-visual-studio-tools-for-unity"></a>Journal des modifications (Visual Studio Tools pour Unity)
 Journal des modifications Visual Studio Tools pour Unity  
 
+## <a name="3400"></a>3.4.0.0
+ Publication 22-08-2017
+
+### <a name="new-features"></a>Nouvelles fonctionnalités  
+
+-   **Project Generation:**  
+
+    -   Ajout de la prise en charge des unités de compilation assembly.json.
+
+    -   Arrêt de la copie des assemblys Unity dans le dossier du projet.
+    
+-   **Débogueur :**  
+
+    -   Ajout de la prise en charge de la définition de l’instruction suivante avec le nouveau runtime Unity.
+    
+    -   Ajout de la prise en charge du type Decimal avec le nouveau runtime Unity.
+    
+    -   Ajout de la prise en charge des conversions implicites/explicites.
+    
+### <a name="bug-fixes"></a>Correctifs de bogues  
+  
+-   **Évaluation :**  
+
+    -   Correction de la création d’un tableau avec une taille implicite.
+    
+    -   Correction des éléments générés par le compilateur avec des variables locales.
+   
+-   **Project Generation:**  
+   
+    -   Correction de la référence à Microsoft.CSharp fixe pour le niveau d’API 4.6.
+   
+## <a name="3300"></a>3.3.0.0
+ Publication 14-08-2017
+
+### <a name="new-features"></a>Nouvelles fonctionnalités  
+  
+-   **Évaluation :**  
+
+    -   Ajout de la prise en charge de la création de structs avec le nouveau runtime Unity.
+    
+    -   Ajout de la prise en charge minimaliste des pointeurs.
+    
+### <a name="bug-fixes"></a>Correctifs de bogues  
+  
+-   **Évaluation :**  
+
+    -   Correction de l’appel de méthode sur les primitives.
+    
+    -   Correction de l’évaluation des champs contenant des types marqués avec BeforeFieldInit.
+    
+    -   Correction des appels non pris en charge avec les opérateurs binaires (soustraction).
+    
+    -   Correction des problèmes liés à l’ajout d’éléments à Visual Studio Watch.
+
+-   **Project Generation:**  
+
+    -   Correction des références de nom d’assembly avec des fichiers mcs.rsp.
+    
+    -   Correction des définitions avec des niveaux d’API.    
+
+## <a name="3200"></a>3.2.0.0
+ Publication 10-05-2017
+
+### <a name="new-features"></a>Nouvelles fonctionnalités  
+  
+-   **Programme d’installation :**  
+   
+    -   Ajout de la prise en charge du nettoyage du cache MEF.
+   
+### <a name="bug-fixes"></a>Correctifs de bogues  
+  
+-   **Éditeur de code :**  
+
+    -   Correction de la classification/exécution avec des attributs personnalisés.
+
+    -   Correction du scintillement avec les messages Unity.
+    
 ## <a name="3100"></a>3.1.0.0
  Publication : 07-04-2017
 
 ### <a name="new-features"></a>Nouvelles fonctionnalités  
   
 -   **Débogueur :**  
-
+   
     -   Ajout de la prise en charge du nouveau runtime Unity (avec compatibilité avec .NET 4.6 / C# 6).
         
 -   **Génération de projet :**  
@@ -60,28 +137,28 @@ Journal des modifications Visual Studio Tools pour Unity
 ### <a name="bug-fixes"></a>Correctifs de bogues  
   
 -   **Éditeur de code :**  
-
+   
     -   Position du signe insertion fixe après l’insertion d’une méthode avec la saisie semi-automatique.
-  
+   
 -   **Génération de projet :**  
-  
+   
     -   Suppression du post-traitement de version d’assembly.
-
+   
 ## <a name="3001"></a>3.0.0.1
  Publication 07-03-2017
 
 ### <a name="this-version-includes-all-new-features-and-bug-fixes-introduced-with-28x-series"></a>Cette version inclut toutes les nouvelles fonctionnalités et les correctifs de bogues introduits avec la série 2.8.x.
 
-## <a name="282-30-preview-3"></a>2.8.2 (3.0 Preview 3)
+## <a name="2820---30-preview-3"></a>2.8.2.0 - 3.0 préversion 3
  Publication : 25-01-2017
    
 ### <a name="bug-fixes"></a>Correctifs de bogues  
-
+   
 -   **Génération de projet :**  
   
     -   Correction d’une régression où les projets Plug-ins étaient référencés à deux reprises, d’abord comme DLL binaire, puis comme projet de référence.
-
-## <a name="281-30-preview-2"></a>2.8.1 (3.0 Preview 2)
+   
+## <a name="2810---30-preview-2"></a>2.8.1.0 - 3.0 préversion 2
  Publication : 23-01-2017
    
 ### <a name="bug-fixes"></a>Correctifs de bogues  
@@ -108,7 +185,7 @@ Journal des modifications Visual Studio Tools pour Unity
     
     -   Passage à https pour cibler la documentation Unity distante.
 
-## <a name="28-30-preview"></a>2.8 (3.0 Preview)
+## <a name="2800---30-preview"></a>2.8.0.0 - 3.0 préversion
  Publication : 17-11-2016
 
 ### <a name="new-features"></a>Nouvelles fonctionnalités  
@@ -175,7 +252,7 @@ Journal des modifications Visual Studio Tools pour Unity
     
     -   Résolution d’un bogue qui empêche la compilation quand un script est compilé avec un nom de fichier encodé au format web.
 
-## <a name="23"></a>2.3  
+## <a name="2300"></a>2.3.0.0  
  Publication : 14-07-2016  
   
 ### <a name="new-features"></a>Nouvelles fonctionnalités  
@@ -187,13 +264,13 @@ Journal des modifications Visual Studio Tools pour Unity
     -   Ajout d’une option pour autoriser la modification des propriétés de projet générées.  
   
 -   **Débogueur :**  
-  
+   
     -   Ajout des visualiseurs de chaînes de texte, XML, HTML et JSON.  
-  
+   
 -   **Assistants :**  
-  
+   
     -   Ajout de MonoBehaviors manquants.  
-  
+   
 ### <a name="bug-fixes"></a>Correctifs de bogues  
   
 -   **Général :**  
@@ -210,12 +287,12 @@ Journal des modifications Visual Studio Tools pour Unity
   
     -   Correction de plusieurs problèmes d’évaluation d’expression.  
   
-## <a name="22"></a>2.2  
+## <a name="2200"></a>2.2.0.0  
  Publication 04-02-2016  
   
 ### <a name="new-features"></a>Nouvelles fonctionnalités  
   
--   **Assistants :**  
+-   **Assistants :**  
   
     -   Ajout de la recherche intelligente dans l’Assistant **Implémenter MonoBehavior** .  
   
@@ -223,7 +300,7 @@ Journal des modifications Visual Studio Tools pour Unity
   
     -   Prise en charge supplémentaire de messages NetworkBehavior dans les Assistants.  
   
--   **IU :**  
+-   **Interface utilisateur :**  
   
     -   Ajout d’une option pour configurer la visibilité des messages MonoBehavior.  
   
@@ -231,7 +308,7 @@ Journal des modifications Visual Studio Tools pour Unity
   
 ### <a name="bug-fixes"></a>Correctifs de bogues  
   
--   **Génération de projet :**  
+-   **Génération de projet :**  
   
     -   Correction des références à UnityEngine et UnityEditor sur Unity 4.6.  
   
@@ -241,23 +318,23 @@ Journal des modifications Visual Studio Tools pour Unity
   
     -   Limitation des projets générés à C# 4.  
   
--   **Débogueur :**  
+-   **Débogueur :**  
   
     -   Correction d’un problème d’évaluation d’expression lors du débogage au sein d’une coroutine Unity.  
   
     -   Correction d’un problème provoquant le blocage de Visual Studio pendant le débogage.  
   
--   **IU :**  
-  
+-   **Interface utilisateur :**  
+   
     -   Correction d’une incompatibilité avec l’extension [Tabs Studio](https://tabsstudio.com/) de Visual Studio.  
-  
--   **Programme d’installation :**  
+   
+-   **Programme d’installation :**  
   
     -   Prise en charge de l’installation de VSTU au niveau de la machine (installation pour tous les utilisateurs) en créant des entrées de Registre HKLM.  
   
     -   Correction des problèmes de désinstallation de VSTU quand la même version de VSTU est installée pour plusieurs versions différentes de Visual Studio. C’est le cas, par exemple, quand VSTU **2015** 2.1.0.0 et VSTU **2013** 2.1.0.0 ont été installés ensemble.  
   
-## <a name="21"></a>2.1  
+## <a name="2100"></a>2.1.0.0  
  Publication 08-09-2015  
   
 ### <a name="new-features"></a>Nouvelles fonctionnalités  
@@ -266,7 +343,7 @@ Journal des modifications Visual Studio Tools pour Unity
   
 ### <a name="bug-fixes"></a>Correctifs de bogues  
   
--   Afficher les éléments de menu sur Unity < 4.2  
+-   Afficher les éléments de menu sur Unity < 4.2  
   
 -   Un message d’erreur n’est plus affiché quand Visual Studio verrouille les fichiers XML intellisense.  
   
@@ -278,12 +355,12 @@ Journal des modifications Visual Studio Tools pour Unity
   
 -   Correction du nombre d’accès des points d’arrêt dans Visual Studio 2015.  
   
-## <a name="20"></a>2.0  
+## <a name="2000"></a>2.0.0.0  
  Publication 20-07-2015  
   
 ### <a name="bug-fixes"></a>Correctifs de bogues  
   
--   **Intégration Unity :**  
+-   **Intégration Unity :**  
   
     -   Correction de la conversion de symboles de débogage créés avec Visual Studio 2015 lors de l’importation d’une DLL et de ses symboles de débogage (PDB).  
   
@@ -293,19 +370,19 @@ Journal des modifications Visual Studio Tools pour Unity
   
     -   Correction de la génération des références à System.Xml.Link et System.Runtime.Serialization.  
   
-    -   Ajout de la prise en charge de plusieurs abonnés aux hooks d’API pour la génération du fichier projet.  
+    -   Ajout de la prise en charge de plusieurs abonnés aux raccordements API pour la génération du fichier projet.  
   
     -   Toujours terminer la génération du fichier projet même quand l’un des fichiers à générer est verrouillé.  
   
     -   Ajout de la prise en charge des caractères génériques (*) dans le filtre d’extension lors de la spécification des fichiers à inclure dans le projet C#.  
   
--   **Intégration Visual Studio :**  
+-   **Intégration Visual Studio :**  
   
     -   Correction d’un problème de compatibilité avec Productivity Power Tools.  
   
     -   Correction de la génération de MonoBehaviors autour des déclarations d’événements et de délégués.  
   
--   **Débogueur :**  
+-   **Débogueur :**  
   
     -   Correction d’un blocage potentiel lors du débogage.  
   
@@ -313,12 +390,12 @@ Journal des modifications Visual Studio Tools pour Unity
   
     -   Correction de l’inspection des tableaux vides.  
   
-## <a name="199-20-preview-2"></a>1.9.9 (2.0 Preview 2)
+## <a name="1990---20-preview-2"></a>1.9.9.0 - 2.0 préversion 2
  Publication 02-04-2015  
   
 ### <a name="new-features"></a>Nouvelles fonctionnalités  
   
--   **Explorateur de projets Unity :**  
+-   **Explorateur de projets Unity :**  
   
     -   Renommer automatiquement la classe lorsque vous renommez un fichier dans l’Explorateur de projets Unity (voir la boîte de dialogue **Options** ).  
   
@@ -330,7 +407,7 @@ Journal des modifications Visual Studio Tools pour Unity
   
     -   Adopter les icônes de Visual Studio dans le projet Unity.  
   
--   **Débogueur :**  
+-   **Débogueur :**  
   
     -   Sélectionner la cible de débogage active à partir d’une liste de cibles de débogage enregistrées ou récemment utilisées (voir la boîte de dialogue **Options** ).  
   
@@ -348,7 +425,7 @@ Journal des modifications Visual Studio Tools pour Unity
   
     -   Filtrer les membres obsolètes dans les fenêtres Espion du débogueur.  
   
--   **Programme d’installation :**  
+-   **Programme d’installation :**  
   
     -   Inscription optimisée de l’extension Visual Studio Tools pour Unity.  
   
@@ -364,7 +441,7 @@ Journal des modifications Visual Studio Tools pour Unity
   
 ### <a name="bug-fixes"></a>Correctifs de bogues  
   
--   **Explorateur de projets Unity :**  
+-   **Explorateur de projets Unity :**  
   
     -   Actualiser l’Explorateur de projets Unity après que les fichiers sont déplacés ou renommés à partir de l’Explorateur de solutions Visual Studio.  
   
@@ -374,13 +451,13 @@ Journal des modifications Visual Studio Tools pour Unity
   
     -   S’assurer que les fichiers nouvellement sélectionnés sont visibles dans l’Explorateur de projets Unity.  
   
--   **Débogueur :**  
+-   **Débogueur :**  
   
     -   Éviter un éventuel blocage de Visual Studio lors de l’évaluation des expressions dans le débogueur.  
   
     -   S’assurer que les appels de méthode s’exécutent sur le domaine approprié dans le débogueur.  
   
--   **Unity :**  
+-   **Unity :**  
   
     -   Corriger l’emplacement d’UnityVS.OpenFile avec Unity 5.  
   
@@ -402,7 +479,7 @@ Journal des modifications Visual Studio Tools pour Unity
   
 -   **Interface utilisateur :** prendre en charge les thèmes Visual Studio pour les icônes et le menu contextuel.  
   
-## <a name="198-20-preview"></a>1.9.8 (2.0 Preview)
+## <a name="1980---20-preview"></a>1.9.8.0 - 2.0 préversion
  Publication 12-11-2014  
   
 ### <a name="new-features"></a>Nouvelles fonctionnalités  
@@ -441,7 +518,7 @@ Journal des modifications Visual Studio Tools pour Unity
   
 -   Ne pas enregistrer le rappel du journal si ce n’est pas nécessaire.  
   
-## <a name="192"></a>1.9.2  
+## <a name="1920"></a>1.9.2.0  
  Publication 09-10-2014  
   
 ### <a name="new-features"></a>Nouvelles fonctionnalités  
@@ -462,9 +539,9 @@ Journal des modifications Visual Studio Tools pour Unity
   
 -   Corriger le filtrage des MonoBehaviours par version Unity dans les Assistants.  
   
--   Corriger les bogues où tous les composants ont été inclus dans les fichiers projet si le filtre d’extension était vide.  
+-   Fix bug where all assets were included in the project files if the extension filter was empty.  
   
-## <a name="191"></a>1.9.1  
+## <a name="1910"></a>1.9.1.0  
  Publication 22-09-2014  
   
 ### <a name="new-features"></a>Nouvelles fonctionnalités  
@@ -509,7 +586,7 @@ Journal des modifications Visual Studio Tools pour Unity
   
 -   Corriger l’ouverture de scripts avec VSTU dans les versions 64 bits d’Unity.  
   
-## <a name="19"></a>1.9  
+## <a name="1900"></a>1.9.0.0  
  Publication 29-07-2014  
   
 ### <a name="new-features"></a>Nouvelles fonctionnalités  
@@ -557,7 +634,7 @@ Journal des modifications Visual Studio Tools pour Unity
 > [!IMPORTANT]
 >  C# étant le langage prédominant de l’écosystème Unity - les nouvelles ressources d’exemples sont en C#, la documentation Unity sera par défaut en C# -, nous avons supprimé notre support de base pour UnityScript et pour Boo afin de mieux se concentrer sur l’expérience C#. Par conséquent, les solutions VSTU sont désormais en C# uniquement et beaucoup plus rapides à charger.  
   
-## <a name="182"></a>1.8.2  
+## <a name="1820"></a>1.8.2.0  
  Publication 07-01-2014  
   
 ### <a name="new-features"></a>Nouvelles fonctionnalités  
@@ -584,7 +661,7 @@ Journal des modifications Visual Studio Tools pour Unity
   
 -   Empêcher un incident dans Unity lorsque l’assembly généré spécifique à la version est désynchronisé.  
   
-## <a name="181"></a>1.8.1  
+## <a name="1810"></a>1.8.1.0  
  Publication 21-11-2013  
   
 ### <a name="new-features"></a>Nouvelles fonctionnalités  
@@ -617,7 +694,7 @@ Journal des modifications Visual Studio Tools pour Unity
   
 -   Correction des scripts d’ouverture d’Unity à ne pas confondre pas la commande ALT+TAB pour Unity 4.2 et versions ultérieures.  
   
-## <a name="180"></a>1.8.0  
+## <a name="1800"></a>1.8.0.0  
  Publication 24-09-2013  
   
 ### <a name="new-features"></a>Nouvelles fonctionnalités  
@@ -628,7 +705,7 @@ Journal des modifications Visual Studio Tools pour Unity
   
 -   Points d’arrêt conditionnels.  
   
--   Le générateur de fichiers projet gère désormais les modèles T4.  
+-   Le générateur de fichiers de projet gère désormais les modèles T4.  
   
 -   Mettre à jour les Assistants MonBehavior avec les nouvelles API.  
   
@@ -658,7 +735,7 @@ Journal des modifications Visual Studio Tools pour Unity
   
 -   Correction de la modification des valeurs booléennes dans la vue locale.  
   
-## <a name="122"></a>1.2.2  
+## <a name="1220"></a>1.2.2.0  
  Publication 09-07-2013  
   
 ### <a name="bug-fixes"></a>Correctifs de bogues  
@@ -681,7 +758,7 @@ Journal des modifications Visual Studio Tools pour Unity
   
 -   Correction de la gestion des assemblys de la version bêta Unity 4.2.  
   
-## <a name="121"></a>1.2.1  
+## <a name="1210"></a>1.2.1.0  
  Publication 09-04-2013  
   
 ### <a name="bug-fixes"></a>Correctifs de bogues  
@@ -694,7 +771,7 @@ Journal des modifications Visual Studio Tools pour Unity
   
 -   Correction de la liaison des points d’arrêt dans certaines DLL externes.  
   
-## <a name="12"></a>1.2  
+## <a name="1200"></a>1.2.0.0  
  Publication 25-03-2013  
   
 ### <a name="new-features"></a>Nouvelles fonctionnalités  
@@ -761,10 +838,10 @@ Journal des modifications Visual Studio Tools pour Unity
   
 -   Résolution de bogue UVS-11 : variables locales dans les coroutines.  
   
-## <a name="11---beta-release"></a>1.1 - Version bêta  
+## <a name="1100---beta-release"></a>1.1.0.0 - Version bêta  
  Publication 09-10-2014  
   
-## <a name="1013"></a>1.0.13  
+## <a name="10130"></a>1.0.13.0  
  Publication 21-01-2013  
   
 ### <a name="bug-fixes"></a>Correctifs de bogues  
@@ -787,7 +864,7 @@ Journal des modifications Visual Studio Tools pour Unity
   
 -   Correction de la gestion de longs messages envoyés d’Unity à UnityVS. Avant cela, les longs messages pouvaient bloquer la partie messagerie d’UnityVS. Par conséquent, il arrivait que UnityVS ne puisse pas ouvrir un fichier à partir d’Unity.  
   
-## <a name="1012"></a>1.0.12  
+## <a name="10120"></a>1.0.12.0  
  Publication 03-01-2013  
   
 ### <a name="bug-fixes"></a>Correctifs de bogues  
@@ -806,7 +883,7 @@ Journal des modifications Visual Studio Tools pour Unity
   
 -   Correction d’un problème d’API où le code utilisateur ne peut participer au Gestionnaire de rappel du journal.  
   
-## <a name="1011"></a>1.0.11  
+## <a name="10110"></a>1.0.11.0  
  Publication 28-11-2012  
   
 ### <a name="new-features"></a>Nouvelles fonctionnalités  
@@ -819,9 +896,9 @@ Journal des modifications Visual Studio Tools pour Unity
   
 -   Analyse du message de la console Info, afin qu’un clic sur la liste d’erreurs vous permette d’accéder à la première StackFrame avec symboles.  
   
--   Ajouter une [API](../cross-platform/customize-project-files-created-by-vstu.md) pour permettre à l’utilisateur de participer à la génération du projet.  
+-   Ajouter une [API](../cross-platform/customize-project-files-created-by-vstu.md) pour permettre à utilisateur de participer à la génération du projet.  
   
--   Ajouter une [API](../cross-platform/share-the-unity-log-callback-with-vstu.md) pour permettre à l’utilisateur de participer au LogCallback.  
+-   Ajouter une [API](../cross-platform/share-the-unity-log-callback-with-vstu.md) pour permettre à utilisateur de participer au rappel de journal.  
   
 ### <a name="bug-fixes"></a>Correctifs de bogues  
   
@@ -837,7 +914,7 @@ Journal des modifications Visual Studio Tools pour Unity
   
 -   Correction du problème s’il n’est pas possible d’injecter notre icône dans la barre d’état de Visual Studio.  
   
-## <a name="1010"></a>1.0.10  
+## <a name="10100"></a>1.0.10.0  
  Publication 09-10-2012  
   
 ### <a name="bug-fixes"></a>Correctifs de bogues  
@@ -850,7 +927,7 @@ Journal des modifications Visual Studio Tools pour Unity
   
 -   Résolution de la façon d’extraire des assemblys d’Unity pour éviter le verrouillage des fichiers et confondre le processus de génération d’Unity.  
   
-## <a name="109"></a>1.0.9  
+## <a name="1090"></a>1.0.9.0  
  Publication 03-10-2012  
   
 ### <a name="bug-fixes"></a>Correctifs de bogues  
@@ -869,7 +946,7 @@ Journal des modifications Visual Studio Tools pour Unity
   
 -   Résolution de bogue UVS-21 : pointeur non valide durant l’évaluation d’un appel de méthode vers l’API Math Unity.  
   
-## <a name="108"></a>1.0.8  
+## <a name="1080"></a>1.0.8.0  
  Publication 26-09-2012  
   
 ### <a name="bug-fixes"></a>Correctifs de bogues  
@@ -880,7 +957,7 @@ Journal des modifications Visual Studio Tools pour Unity
   
 -   Résolution de la façon dont UnityVS est enregistré sur Visual Studio 2010.  
   
-## <a name="107"></a>1.0.7  
+## <a name="1070"></a>1.0.7.0  
  Publication 14-09-2012  
   
 ### <a name="new-features"></a>Nouvelles fonctionnalités  
@@ -889,17 +966,17 @@ Journal des modifications Visual Studio Tools pour Unity
   
 ### <a name="bug-fixes"></a>Correctifs de bogues  
   
--   Résolution de la génération des fichiers projet de plug-ins et d’éditeur pour correspondre au comportement d’Unity.  
+-   Résolution de la génération des fichiers de projet de plug-ins et d’éditeur pour correspondre au comportement d’Unity.  
   
 -   Résolution de la traduction de symboles .pdb sur Unity 4.  
   
 > [!IMPORTANT]
->  En raison de la prise en charge de Visual Studio 2012, nous avons dû renommer quelques fichiers et déplacer d’autres. Le package UnityVS pour importer Unity est maintenant appelé UnityVS 2010 ou UnityVS 2012, pour, respectivement, Visual Studio 2010 et Visual Studio 2012. Cette version requiert également que les fichiers projet UnityVS soient régénérés.  
+>  En raison de la prise en charge de Visual Studio 2012, nous avons dû renommer quelques fichiers et déplacer d’autres. Le package UnityVS pour importer Unity est maintenant appelé UnityVS 2010 ou UnityVS 2012, pour, respectivement, Visual Studio 2010 et Visual Studio 2012. Cette version requiert également que les fichiers de projet UnityVS soient régénérés.  
   
-## <a name="106---internal-build"></a>1.0.6 - version interne  
+## <a name="1060---internal-build"></a>1.0.6.0 - Build interne  
  Publication 12-09-2012  
   
-## <a name="105"></a>1.0.5  
+## <a name="1050"></a>1.0.5.0  
  Publication 10-09-2012  
   
 ### <a name="bug-fixes"></a>Correctifs de bogues  
@@ -908,7 +985,7 @@ Journal des modifications Visual Studio Tools pour Unity
   
 -   Résolution de la détection d’instances Unity quand Unity a été connecté au serveur de ressources. Cela s’est traduit par un échec à l’ouverture de fichiers à partir de Unity et de la connexion automatique du débogueur Visual Studio.  
   
-## <a name="104"></a>1.0.4  
+## <a name="1040"></a>1.0.4.0  
  Publication 05-09-2012  
   
 ### <a name="new-features"></a>Nouvelles fonctionnalités  
@@ -921,7 +998,7 @@ Journal des modifications Visual Studio Tools pour Unity
   
 -   Résolution de l’incident UnityVS lors du débogage provoqué par les exceptions levées par des méthodes ou propriétés à l’intérieur d’Unity.  
   
-## <a name="103"></a>1.0.3  
+## <a name="1030"></a>1.0.3.0 
  Publication 04-09-2012  
   
 ### <a name="new-features"></a>Nouvelles fonctionnalités  
@@ -936,7 +1013,7 @@ Journal des modifications Visual Studio Tools pour Unity
   
 -   Résolution des pannes VS aléatoires causés par notre barre d’état personnalisé.  
   
-## <a name="102"></a>1.0.2  
+## <a name="1020"></a>1.0.2.0  
  Publication 30-08-2012  
   
 ### <a name="bug-fixes"></a>Correctifs de bogues  
@@ -947,7 +1024,7 @@ Journal des modifications Visual Studio Tools pour Unity
   
 -   Résolution du bogue dans la façon dont les scripts des assemblys ont été extraits d’Unity avec Unity 4 b7.  
   
-## <a name="101"></a>1.0.1  
+## <a name="1010"></a>1.0.1.0  
  Publication 28-08-2012  
   
 ### <a name="new-features"></a>Nouvelles fonctionnalités  
@@ -964,6 +1041,6 @@ Journal des modifications Visual Studio Tools pour Unity
   
 -   Résolution de l’exécution de la DLL dans le dossier Ressources pour UnityScript et Boo.  
   
-## <a name="10---initial-release"></a>1.0 - Version initiale  
+## <a name="1000---initial-release"></a>1.0.0.0 - Version initiale  
  Publication 22-08-2012
 

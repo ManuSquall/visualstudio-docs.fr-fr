@@ -1,52 +1,57 @@
 ---
-title: "Consid&#233;rations relatives &#224; l&#39;utilisation de l&#39;API Windows Runtime | Microsoft Docs"
-ms.custom: ""
-ms.date: "01/18/2017"
-ms.prod: "windows-client-threshold"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "javascript"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-helpviewer_keywords: 
-  - "JavaScript, API Windows Runtime."
+title: "Considérations sur l’utilisation de l’API Windows Runtime | Microsoft Docs"
+ms.custom: 
+ms.date: 01/18/2017
+ms.prod: windows-client-threshold
+ms.reviewer: 
+ms.suite: 
+ms.technology:
+- javascript
+ms.tgt_pltfrm: 
+ms.topic: article
+helpviewer_keywords:
+- JavaScript, Windows Runtime API
 ms.assetid: 2f56d70c-c80d-4876-8e6a-8ae031d31c22
 caps.latest.revision: 8
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 8
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.translationtype: HT
+ms.sourcegitcommit: 6fbf89668d47d55d1d77a1d7f11765567fc73405
+ms.openlocfilehash: 693b3dac9def5533417638c3ec1c0de8db1d5fe3
+ms.contentlocale: fr-fr
+ms.lasthandoff: 08/11/2017
+
 ---
-# Consid&#233;rations relatives &#224; l&#39;utilisation de l&#39;API Windows Runtime
-Utilisez presque chaque élément de l'API Windows Runtime dans JavaScript.  Toutefois, vous ne devez pas oublier certains aspects de la représentation JavaScript d'éléments de Windows Runtime.  
+# <a name="considerations-when-using-the-windows-runtime-api"></a>Considérations sur l’utilisation de l’API Windows Runtime
+Vous pouvez utiliser presque tous les éléments de l’API Windows Runtime en JavaScript. Toutefois, vous devez prendre en compte certains aspects de la représentation JavaScript des éléments Windows Runtime.  
   
 > [!IMPORTANT]
->  Pour plus d'informations sur la création de composants Windows Runtime dans C\+\+, C\#, ou Visual Basic et leur utilisation dans JavaScript, consultez [Création de composants Windows Runtime](http://msdn.microsoft.com/library/9a6b8f0a-7d5e-40a0-a9c5-a59b4908e133).  
+>  Pour obtenir des informations sur la création de composants Windows Runtime en C++, C# ou Visual Basic et leur utilisation dans JavaScript, consultez [Création de composants Windows Runtime en C++](/windows/uwp/winrt-components/creating-windows-runtime-components-in-cpp) et [Création de composants Windows Runtime en C# et Visual Basic](/windows/uwp/winrt-components/creating-windows-runtime-components-in-csharp-and-visual-basic).  
   
-## Cas particuliers de la représentation JavaScript des types Windows Runtime  
+## <a name="special-cases-in-the-javascript-representation-of-windows-runtime-types"></a>Cas particuliers de la représentation JavaScript des types Windows Runtime  
   
--   Chaînes : une chaîne non initialisée est passée à une méthode Windows Runtime en tant que chaîne « undefined », et une chaîne dont la valeur est `null` est passée en tant que chaîne « null ». \(C'est le cas lorsqu'une valeur `null` ou `undefined` est convertie en chaîne.\) Avant de passer une chaîne à une méthode Windows Runtime, elle doit être initialisée en chaîne vide \(« »\).  
+-   Chaînes : une chaîne non initialisée est passée à une méthode Windows Runtime comme chaîne « undefined », tandis qu’une chaîne `null` est passée comme chaîne « null ». (Cela est vrai chaque fois qu’une valeur `null` ou `undefined` est forcée en type chaîne.) Avant de passer une chaîne à une méthode Windows Runtime, vous devez l’initialiser comme chaîne vide ("").  
   
--   Interfaces : vous ne pouvez pas implémenter une interface Windows Runtime dans JavaScript.  
+-   Interfaces : vous ne pouvez pas implémenter une interface Windows Runtime dans JavaScript.  
   
--   Tableaux : les tableaux Windows Runtime ne sont pas redimensionnables. Les méthodes de redimensionnement des tableaux dans JavaScript ne s'appliquent pas pour les tableaux Windows Runtime.  
+-   Tableaux : les tableaux Windows Runtime ne sont pas redimensionnables. Les méthodes qui redimensionnement des tableaux dans JavaScript ne fonctionnent donc pas sur les tableaux Windows Runtime.  
   
--   Tableaux : si vous passez une valeur de tableau JavaScript à une méthode Windows Runtime, le tableau est copié.  Le tableau ou ses membres ne peuvent pas être modifiés par la méthode Windows Runtime et sont retournés à votre application JavaScript.  Toutefois, vous pouvez utiliser les tableaux typés \(par exemple, [Int32Array, objet](../javascript/reference/int32array-object.md)\), qui ne sont pas copiés.  
+-   Tableaux : si vous passez une valeur de tableau JavaScript à une méthode Windows Runtime, le tableau est copié. La méthode Windows Runtime ne peut pas modifier le tableau ou ses membres et les retourner à votre application JavaScript. Toutefois, vous pouvez utiliser des tableaux typés (par exemple, l’[objet Int32Array](../javascript/reference/int32array-object.md)), qui ne sont pas copiés.  
   
--   Structures : les structures Windows Runtime sont des objets dans JavaScript.  Si vous souhaitez passer une structure Windows Runtime à une méthode Windows Runtime, n'instanciez pas la structure avec le mot clé `new` .  Créez plutôt un objet et ajoutez les membres pertinents et leurs valeurs.  Les noms des membres doivent être dans la casse mixte : `SomeStruct.firstMember`.  
+-   Structures : les structures Windows Runtime sont des objets dans JavaScript. Si vous souhaitez passer une structure Windows Runtime à une méthode Windows Runtime, n’instanciez pas la structure avec le mot clé `new`. Au lieu de cela, créez un objet et ajoutez les membres concernés et leurs valeurs. Les noms des membres doivent être en casse mixte : `SomeStruct.firstMember`.  
   
--   Objets : les objets JavaScript ne sont pas identiques aux objets de code managé \(`System.Object`\).  Vous ne pouvez pas passer un objet JavaScript à une méthode Windows Runtime qui requiert un `System.Object`.  
+-   Objets : les objets JavaScript ne sont pas les mêmes que ceux en code managé (`System.Object`). Vous ne pouvez pas passer un objet JavaScript à une méthode Windows Runtime qui nécessite un `System.Object`.  
   
--   Identité d'objet : dans la plupart des cas, les objets passés entre Windows Runtime et JavaScript ne sont pas modifiés.  Le moteur JavaScript garde un mappage des objets connus.  Lorsqu'un objet est retourné par Windows Runtime, il est comparé au mappage, et s'il n'existe pas, un nouvel objet est créé.  La même procédure est appliquée pour les objets qui représentent les interfaces qui sont retournées par Windows Runtime.  Il existe deux types d'exceptions :  
+-   Identité de l’objet : dans la plupart des cas, les objets qui sont passés entre le Windows Runtime et JavaScript ne changent pas. Le moteur JavaScript gère un mappage d’objets connus. Quand un objet est retourné par le Windows Runtime, il est comparé au mappage et, s’il n’existe pas, un objet est créé. La même procédure est appliquée pour les objets qui représentent des interfaces retournées par les méthodes Windows Runtime. Il existe deux types d’exceptions :  
   
-    -   Les objects retournés d'un appel Windows Runtime, et ont alors une nouvelle propriété ajoutée \(expando\), ne conservent pas ces propriétés lorsqu'ils sont repassés au Windows Runtime.  Toutefois, lorsqu'ils sont retournés à l'application JavaScript, les objets retournés n'ont pas de propriété expando car ils sont mis en correspondance avec l'objet existant.  
+    -   Les objets retournés par un appel Windows Runtime, et auxquels de nouvelles propriétés (expando) sont ensuite ajoutées, ne conservent pas leurs nouvelles propriétés quand ils sont repassés au Windows Runtime. Toutefois, quand ils sont retournés à l’application JavaScript, dans la mesure où ils sont mappés à l’objet existant, l’objet retourné a les propriétés expando.  
   
-    -   Les structures et les délégués ne peuvent pas être identifiés dans Windows Runtime comme étant identiques aux structures ou aux délégués précédemment utilisés.  Chaque fois qu'une structure ou un délégué est retourné, il se voit attribué une nouvelle référence.  
+    -   Les structures et les délégués dans Windows Runtime ne peuvent pas être identifiés comme étant identiques aux structures ou délégués précédemment utilisés. Chaque fois qu’une structure ou un délégué est retourné, il obtient une nouvelle référence.  
   
--   Collisions de noms : de multiples interfaces Windows Runtime peuvent avoir des membres portant le même nom.  S'ils sont combinés dans un seul objet JavaScript \(qui peut être une représentation d'une classe d'exécution ou d'une interface\), les membres sont représentés avec des noms complets.  Ces membres peuvent être appelés à l'aide de la syntaxe suivante : `Class["MemberName"](parameter)`.  
+-   Collisions de noms : plusieurs interfaces Windows Runtime peuvent avoir des membres portant le même nom. Si elles sont combinées dans un seul objet JavaScript (qui peut être une représentation d’une interface ou d’une classe runtime), les membres sont représentés par des noms complets. Vous pouvez appeler ces membres à l’aide de la syntaxe suivante : `Class["MemberName"](parameter)`.  
   
-     Dans le code suivant, deux interfaces ont une méthode Draw, et une classe d'exécution implémente les deux interfaces.  
+     Dans le code suivant, deux interfaces ont une méthode Draw, et une classe runtime implémente les deux interfaces.  
   
     ```cpp#  
     namespace CollisionExample {  
@@ -65,15 +70,15 @@ Utilisez presque chaque élément de l'API Windows Runtime dans JavaScript.  To
     }  
     ```  
   
-     Voici comment appeler le code ci\-dessus dans JavaScript.  
+     Voici comment vous pouvez appeler le code ci-dessus en JavaScript.  
   
-    ```javascript  
+    ```JavaScript  
     var example = new ExampleObject();  
     example["CollisionExample.InterfaceA.draw"](12);  
     example["CollisionExample.InterfaceB.draw"]("hello");  
     ```  
   
--   Les paramètres `Out` : si une méthode Windows Runtime a plusieurs paramètres `out`, dans JavaScript, la méthode possède un objet JavaScript comme valeur de retour, et l'objet a des propriétés qui correspondent au paramètre `out`.  Prenons par exemple la signature Windows Runtime dans C\+\+.  
+-   Paramètres `Out` : prenez une méthode Windows Runtime avec plusieurs paramètres `out`. En JavaScript, la méthode a un objet JavaScript comme valeur de retour, et l’objet a des propriétés qui correspondent au paramètre `out`. Par exemple, considérez la signature Windows Runtime suivante en C++.  
   
     ```cpp#  
     void ExampleMethod(  
@@ -82,22 +87,22 @@ Utilisez presque chaque élément de l'API Windows Runtime dans JavaScript.  To
     )  
     ```  
   
-     La version JavaScript de cette signature est :  
+     La version JavaScript de cette signature est la suivante :  
   
-    ```javascript  
+    ```JavaScript  
     var returnValue = exampleMethod();  
   
     ```  
   
-     Dans cet exemple, `returnValue` est un objet JavaScript à deux champs : `first` et `second`.  
+     Dans cet exemple, `returnValue` est un objet JavaScript avec deux champs : `first` et `second`.  
   
--   Membres statiques : Windows Runtime définit à la fois les membres statiques et les membres d'instance.  Dans JavaScript, des membres statiques sont ajoutés à l'objet associé à la classe ou à l'interface Windows Runtime.  
+-   Membres statiques : le Windows Runtime définit les membres statiques et les membres d’instance. En JavaScript, les membres statiques sont ajoutés à l’objet qui est associé à l’interface ou à la classe Windows Runtime.  
   
-    ```javascript  
+    ```JavaScript  
     // Static method.   
     var accel = Windows.Devices.Sensors.Accelerometer.getDefault();   
     // Instance method.   
     var reading = accel.getCurrentReading();            
     ```  
   
- Pour plus d'informations sur les représentations JavaScript des types de base Windows Runtime, consultez [Représentation JavaScript des types Windows Runtime](../jswinrt/javascript-representation-of-windows-runtime-types.md).
+ Pour plus d’informations sur la représentation JavaScript des types de base Windows Runtime, consultez [Représentation JavaScript des types Windows Runtime](../jswinrt/javascript-representation-of-windows-runtime-types.md).
