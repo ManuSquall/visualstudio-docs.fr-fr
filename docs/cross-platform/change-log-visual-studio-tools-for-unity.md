@@ -29,48 +29,26 @@ translation.priority.mt:
 - pt-br
 - tr-tr
 ms.translationtype: HT
-ms.sourcegitcommit: cd8418f782f800390d166403374ecb879970dbc3
-ms.openlocfilehash: 92304c73b1a098c32a74011956dadd8097b8329d
+ms.sourcegitcommit: a2cfae1be1415a2d770d1467a09f207f73eafd05
+ms.openlocfilehash: 5b872f1d28c132fe2910bed16882ba6fb01e6782
 ms.contentlocale: fr-fr
-ms.lasthandoff: 08/11/2017
+ms.lasthandoff: 08/16/2017
 
 ---
 # <a name="change-log-visual-studio-tools-for-unity"></a>Journal des modifications (Visual Studio Tools pour Unity)
 Journal des modifications Visual Studio Tools pour Unity  
 
-## <a name="3400"></a>3.4.0.0
- Publication 22-08-2017
+## <a name="3302"></a>3.3.0.2
+ Publication : 15-08-2017
 
-### <a name="new-features"></a>Nouvelles fonctionnalités  
-
--   **Project Generation:**  
-
-    -   Ajout de la prise en charge des unités de compilation assembly.json.
-
-    -   Arrêt de la copie des assemblys Unity dans le dossier du projet.
-    
--   **Débogueur :**  
-
-    -   Ajout de la prise en charge de la définition de l’instruction suivante avec le nouveau runtime Unity.
-    
-    -   Ajout de la prise en charge du type Decimal avec le nouveau runtime Unity.
-    
-    -   Ajout de la prise en charge des conversions implicites/explicites.
-    
 ### <a name="bug-fixes"></a>Correctifs de bogues  
   
--   **Évaluation :**  
-
-    -   Correction de la création d’un tableau avec une taille implicite.
-    
-    -   Correction des éléments générés par le compilateur avec des variables locales.
+-   **Génération de projet :**  
    
--   **Project Generation:**  
-   
-    -   Correction de la référence à Microsoft.CSharp fixe pour le niveau d’API 4.6.
+    -   Correction de la génération de solutions Visual Studio sur Unity 5.5 et versions antérieures.
    
 ## <a name="3300"></a>3.3.0.0
- Publication 14-08-2017
+ Publication : 14-08-2017
 
 ### <a name="new-features"></a>Nouvelles fonctionnalités  
   
