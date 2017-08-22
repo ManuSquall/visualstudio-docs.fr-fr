@@ -1,41 +1,58 @@
 ---
-title: "D&#233;bogage d&#39;historique | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-debug"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+title: Historical Debugging | Microsoft Docs
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology:
+- vs-ide-debug
+ms.tgt_pltfrm: 
+ms.topic: article
 ms.assetid: 7cc5ddf2-2f7c-4f83-b7ca-58e92e9bfdd2
 caps.latest.revision: 3
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 3
----
-# D&#233;bogage d&#39;historique
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+translation.priority.ht:
+- cs-cz
+- de-de
+- es-es
+- fr-fr
+- it-it
+- ja-jp
+- ko-kr
+- pl-pl
+- pt-br
+- ru-ru
+- tr-tr
+- zh-cn
+- zh-tw
+ms.translationtype: HT
+ms.sourcegitcommit: 9e6c28d42bec272c6fd6107b4baf0109ff29197e
+ms.openlocfilehash: 9f73ccc235c3b893b2ad8d2ddb07dd1848414734
+ms.contentlocale: fr-fr
+ms.lasthandoff: 08/22/2017
 
-Le débogage d'historique est un mode de débogage qui repose sur les informations recueillies par IntelliTrace.  Il vous permet de parcourir l'exécution de votre application et d'inspecter son état.  
+---
+# <a name="historical-debugging"></a>Historical Debugging
+Historical debugging is a mode of debugging that depends on the information collected by IntelliTrace. It allows you to move backward and forward through the execution of your application and inspect its state.  
   
- Vous pouvez utiliser IntelliTrace dans Visual Studio Enterprise Edition \(mais pas dans les éditions Professional ou Community\).  
+ You can use IntelliTrace in Visual Studio Enterprise edition (but not the Professional or Community editions).  
   
-## Pourquoi utiliser le débogage d'historique ?  
- La définition de points d'arrêt pour rechercher des bogues peut être assez aléatoire.  Vous définissez un point d'arrêt proche de l'endroit dans votre code où vous pensez que se trouve le bogue, puis vous exécutez l'application dans le débogueur en espérant que votre point d'arrêt soit atteint et que l'endroit où l'exécution s'arrête puisse révéler la source du bogue.  Si ce n'est pas le cas, vous devez essayer de définir un point d'arrêt autre part dans le code puis réexécuter le débogueur, en réexécutant vos étapes de façon répétée jusqu'à ce que vous puissiez identifier le problème.  
+## <a name="why-use-historical-debugging"></a>Why use Historical Debugging?  
+ Setting breakpoints to find bugs can be a rather hit-or-miss affair. You set a breakpoint close to the place in your code where you suspect the bug to be, then run the application in the debugger and hope your breakpoint gets hit, and that the place where execution breaks can reveal the source of the bug. If not, you'll have to try setting a breakpoint somewhere else in the code and rerun the debugger, executing your test steps over and over until you find the problem.  
   
- ![définition d'un point d'arrêt](~/debugger/media/breakpointprocesa.png "BreakpointProcesa")  
+ ![setting a breakpoint](../debugger/media/breakpointprocesa.png "BreakpointProcesa")  
   
- Vous pouvez utiliser IntelliTrace et le débogage d'historique pour parcourir votre application et inspecter son état \(pile des appels et variables locales\) sans avoir à définir des points d'arrêt, à redémarrer le débogage et à répéter les étapes de test.  Vous pouvez gagner beaucoup de temps, en particulier quand le bogue se trouve loin dans un scénario de test dont l'exécution est  très longue.  
+ You can use IntelliTrace and Historical Debugging to roam around in your application and inspect its state (call stack and local variables) without having to set breakpoints, restart debugging, and repeat test steps. This can save you a lot of time, especially when the bug is located deep in a test scenario that takes a long time to execute.  
   
-## Comment utiliser le débogage d'historique ?  
- IntelliTrace est activé par défaut.  Tout ce que vous avez à faire, c'est identifier les événements et les appels de fonction qui vous intéressent.  Pour plus d'informations sur l'identification de ce que vous voulez rechercher, consultez [Fonctionnalités IntelliTrace](../debugger/intellitrace-features.md).  Pour obtenir une description pas à pas du débogage avec IntelliTrace, consultez [Procédure pas à pas : utilisation d'IntelliTrace](../debugger/walkthrough-using-intellitrace.md).  
+## <a name="how-do-i-start-using-historical-debugging"></a>How do I start using Historical Debugging?  
+ IntelliTrace is on by default. All you have to do is decide which events and function calls are of interest to you. For more information about defining what you want to look for, see [IntelliTrace Features](../debugger/intellitrace-features.md). For a step-by-step account of debugging with IntelliTrace, see [Walkthrough: Using IntelliTrace](../debugger/walkthrough-using-intellitrace.md).  
   
-## Navigation dans votre code avec le débogage d'historique  
- Commençons par un programme simple qui contient un bogue.  Dans une application de console C\#, ajoutez le code suivant :  
+## <a name="navigating-your-code-with-historical-debugging"></a>Navigating your code with Historical Debugging  
+ Let's start with a simple program that has a bug. In a C# console application, add the following code:  
   
-```c#  
+```CSharp  
 static void Main(string[] args)  
 {  
     int testInt = 0;  
@@ -61,28 +78,28 @@ private static int AddInt(int add)
 }  
 ```  
   
- Nous partons du principe que la valeur attendue de `resultInt` après avoir appelé `AddAll()` est 20 \(le résultat de 20 incrémentations de `testInt`\).  \(Nous partons également du principe que vous ne voyez pas le bogue dans `AddInt()`\). Mais le résultat est bien 44.  Comment trouver le bogue sans parcourir 10 fois `AddAll()` ?  Nous pouvons utiliser le débogage d'historique pour simplifier et accélérer l'identification du bogue.  Voici comment :  
+ We'll assume that the expected value of `resultInt` after calling `AddAll()` is 20 (the result of incrementing `testInt` 20 times). (We'll also assume that you can't see the bug in `AddInt()`).But the result is actually 44. How can we find the bug without stepping through `AddAll()` 10 times? We can use Historical Debugging to find the bug faster and more easily. Here's how:  
   
-1.  Dans Outils \/ Options \/ IntelliTrace \/ Général, assurez\-vous qu'IntelliTrace est activé et sélectionnez l'option Événements IntelliTrace et informations d'appel.  Si vous ne sélectionnez pas cette option, vous ne verrez pas la marge de navigation \(comme expliqué ci\-dessous\).  
+1.  In Tools > Options > IntelliTrace > General, make sure that IntelliTrace is enabled, and select the IntelliTrace events and call information option. If you do not select this option, you will not be able to see the navigation gutter (as explained below).  
   
-2.  Définissez un point d'arrêt sur la ligne `Console.WriteLine(resultInt);`.  
+2.  Set a breakpoint on the `Console.WriteLine(resultInt);` line.  
   
-3.  Démarrez le débogage.  Le code s'exécute jusqu'au point d'arrêt.  Dans la fenêtre **Variables locales**, vous pouvez constater que la valeur de `resultInt` est 44.  
+3.  Start debugging. The code executes to the breakpoint. In the **Locals** window, you can see that the value of `resultInt` is 44.  
   
-4.  Ouvrez la fenêtre **Outils de diagnostic** \(**Déboguer \/ Afficher les outils de diagnostic**\).  La fenêtre de code doit ressembler à ce qui suit :  
+4.  Open the **Diagnostic Tools** window (**Debug > Show Diagnostic Tools**). The code window should look like this:  
   
-     ![Fenêtre de code au point d'arrêt](~/debugger/media/historicaldebuggingbreakpoint.png "HistoricalDebuggingBreakpoint")  
+     ![Code window at the breakpoint](../debugger/media/historicaldebuggingbreakpoint.png "HistoricalDebuggingBreakpoint")  
   
-5.  Vous devez voir une double flèche en regard de la marge de gauche, juste au\-dessus du point d'arrêt.  Cette zone est appelée « marge de navigation » et est utilisée pour le débogage d'historique.  Cliquez sur la flèche.  
+5.  You should see a double arrow next to the left margin, just above the breakpoint. This area is called the navigation gutter, and is used for Historical Debugging. Click the arrow.  
   
-     Dans la fenêtre de code, vous devez voir que la ligne de code précédente \(`int resultInt = AddIterative(testInt);`\) est de couleur rose.  Au\-dessus de la fenêtre, vous devez voir un message indiquant que vous êtes en mode de débogage d'historique.  
+     In the code window, you should see that the preceding line of code (`int resultInt = AddIterative(testInt);`) is colored pink. Above the window, you should see a message that you are now in Historical Debugging.  
   
-     La fenêtre de code doit maintenant ressembler à ceci :  
+     The code window now looks like this:  
   
-     ![fenêtre de code en mode débogage d’historique](~/debugger/media/historicaldebuggingback.png "HistoricalDebuggingBack")  
+     ![code window in historical debugging mode](../debugger/media/historicaldebuggingback.png "HistoricalDebuggingBack")  
   
-6.  À présent, vous pouvez effectuer un pas à pas détaillé dans la méthode `AddAll()` \(appuyez sur la touche **F11** ou sur le bouton **Pas à pas détaillé** dans la marge de navigation\).  Avancez \(touche **F10** ou bouton **Aller à l'appel suivant** dans la marge de navigation\).  Le trait rose est désormais sur la ligne `j = AddInt(j);`.  Appuyer sur la touche **F10** dans ce cas ne permet pas d'accéder à la ligne de code suivante.  En fait, vous accédez à l'appel de fonction suivant.  Le débogage d'historique permet de naviguer d'un appel à l'autre. Il ignore les lignes de code qui n'incluent pas d'appel de fonction.  
+6.  Now you can step into the `AddAll()` method (**F11**, or the **Step Into** button in the navigation gutter. Step forward (**F10**, or **Go to Next Call** in the navigation gutter. The pink line is now on the `j = AddInt(j);` line. **F10** in this case does not step to the next line of code. Instead, it steps to the next function call. Historical debugging navigates from call to call, and it skips lines of code that do not include a function call.  
   
-7.  Maintenant, effectuez un pas à pas détaillé de la méthode `AddInt()`.  Vous devez voir immédiatement le bogue dans ce code.  
+7.  Now step into the `AddInt()` method. You should see the bug in this code immediately.  
   
- Cette procédure ne présente que succinctement ce que vous pouvez faire avec le débogage d'historique.  Pour en savoir plus sur les différents paramètres et les effets des différents boutons de la marge de navigation, consultez [Fonctionnalités IntelliTrace](../debugger/intellitrace-features.md).
+ This procedure just scratched the surface of what you can do with Historical Debugging. To find out more about the different settings and the effects of the different buttons in the navigation gutter, see [IntelliTrace Features](../debugger/intellitrace-features.md).

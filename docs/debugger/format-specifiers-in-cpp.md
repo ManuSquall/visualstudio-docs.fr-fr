@@ -1,143 +1,165 @@
 ---
-title: "Sp&#233;cificateurs de format en C++ | Microsoft Docs"
-ms.custom: ""
-ms.date: "12/05/2016"
-ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-debug"
-ms.tgt_pltfrm: ""
-ms.topic: "hero-article"
-f1_keywords: 
-  - "vs.debug"
-dev_langs: 
-  - "FSharp"
-  - "VB"
-  - "CSharp"
-  - "C++"
-helpviewer_keywords: 
-  - "Boîte de dialogue QuickWatch, spécificateurs de format en C++"
-  - "variables [débogueur], symboles de variable espion"
-  - "symboles, mise en forme de variable espion"
-  - "Boîte de dialogue QuickWatch, utilisation des spécificateurs de format"
-  - "expressions [C++], spécificateurs de format"
-  - "spécificateurs, format de variable espion"
-  - "spécificateurs"
-  - "Fenêtre Espion, spécificateurs de format en C++"
-  - "symboles de variable espion"
-  - "spécificateurs de format, débogueur"
-  - "débogueur, spécificateurs de format reconnus par"
+title: Format specifiers in the debugger (C++) | Microsoft Docs
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology:
+- vs-ide-debug
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords:
+- vs.debug
+dev_langs:
+- CSharp
+- VB
+- FSharp
+- C++
+helpviewer_keywords:
+- QuickWatch dialog box, format specifiers in C++
+- variables [debugger], watch variable symbols
+- symbols, watch variable formatting
+- QuickWatch dialog box, using format specifiers
+- expressions [C++], format specifiers
+- specifiers, watch variable format
+- specifiers
+- Watch window, format specifiers in C++
+- watch variable symbols
+- format specifiers, debugger
+- debugger, format specifiers recognized by
 ms.assetid: 0f6f3b7c-ce2c-4b4d-b14f-7589dbed5444
 caps.latest.revision: 40
-caps.handback.revision: 40
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
----
-# Sp&#233;cificateurs de format en C++
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+translation.priority.ht:
+- de-de
+- es-es
+- fr-fr
+- it-it
+- ja-jp
+- ko-kr
+- ru-ru
+- zh-cn
+- zh-tw
+translation.priority.mt:
+- cs-cz
+- pl-pl
+- pt-br
+- tr-tr
+ms.translationtype: HT
+ms.sourcegitcommit: 9e6c28d42bec272c6fd6107b4baf0109ff29197e
+ms.openlocfilehash: c0f3cc415b06c4c341a2b4279b7ada393192417c
+ms.contentlocale: fr-fr
+ms.lasthandoff: 08/22/2017
 
-Vous pouvez modifier le format dans lequel une valeur est affichée dans la fenêtre **Espion** à l’aide de spécificateurs de format.  
+---
+# <a name="format-specifiers-in-c-in-the-visual-studio-debugger"></a>Format specifiers in C++ in the Visual Studio debugger
+You can change the format in which a value is displayed in the **Watch** window using format specifiers.  
   
- Vous pouvez également utiliser des spécificateurs de format dans la fenêtre **Exécution**, la fenêtre **Commande** et même les fenêtres sources. Si vous effectuez une suspension sur une expression dans ces fenêtres, le résultat apparaît dans un DataTip. L’affichage du DataTip reflète le spécificateur de format.  
+ You can also use format specifiers in the **Immediate** window, the **Command** window, and even in source windows. If you pause on an expression in those windows, the result will appear in a DataTip. The DataTip display reflects the format specifier.  
   
 > [!NOTE]
->  Le débogueur natif Visual Studio utilise un nouveau moteur de débogage. Dans le cadre de cette modification, de nouveaux spécificateurs de format ont été ajoutés et d’anciens spécificateurs ont été supprimés. Le débogueur plus ancien est toujours utilisé quand vous effectuez un débogage d’interopérabilité \(native et managée à la fois\) avec C\+\+\/CLI. Les sections suivantes présentent les spécificateurs de format pour chaque moteur de débogage.  
+>  When the Visual Studio native debugger changed to a new debugging engine, some new format specifiers were added and some old ones were removed. The  older debugger is still used when you do interop (mixed native and managed) debugging with C++/CLI. The following sections in this topic show the format specifiers for each debug engine.
 >   
->  -   L’article [Spécificateurs de format](#BKMK_Visual_Studio_2012_format_specifiers) décrit les spécificateurs de format dans le nouveau moteur de débogage.  
-> -   L’article [Spécificateurs de format pour le débogage d’interopérabilité avec C++/CLI](#BKMK_Format_specifiers_for_interop_debugging_and_C___edit_and_continue) décrit les spécificateurs de format dans l’ancien moteur de débogage.  
+>  -   [Format Specifiers](#BKMK_Visual_Studio_2012_format_specifiers) describes the format specifiers in the new debugging engine.  
+> -   [Format specifiers for interop debugging with C++/CLI](#BKMK_Format_specifiers_for_interop_debugging_and_C___edit_and_continue) describes the format specifiers in the older debugging engine.  
   
-## Utilisation des spécificateurs de format  
- Si vous avez le code suivant :  
+## <a name="using-format-specifiers"></a>Using Format Specifiers  
+ If you have the following code:  
   
-```cpp  
-int main() { int my_var1 = 0x0065; int my_var2 = 0x0066; int my_var3 = 0x0067; }  
+```C++  
+int main() {  
+    int my_var1 = 0x0065;  
+    int my_var2 = 0x0066;  
+    int my_var3 = 0x0067;  
+}  
 ```  
   
- Ajoutez la variable `my_var1` à la fenêtre **Espion** \(pendant le débogage, **Déboguer \/ Fenêtres \/ Espion \/ Espion 1**\). Ensuite, passez à l’affichage hexadécimal \(dans la fenêtre **Espion**, cliquez avec le bouton droit sur la variable et sélectionnez **Affichage hexadécimal**\). La fenêtre Espion indique à présent qu’elle contient la valeur 0x0065. Pour que la valeur soit exprimée sous forme de caractère plutôt que sous forme d’entier, dans la colonne Nom, après le nom de la variable, ajoutez le spécificateur de format de caractère **, c**. La colonne **Valeur** apparaît désormais avec **101 ’e’**.  
+ Add the `my_var1` variable to the **Watch** window (while debugging, **Debug > Windows > Watch > Watch 1**) and set the display to hexadecimal (in the **Watch** window, right-click the variable and select **Hexadecimal Display**). Now the Watch window shows that it contains the value 0x0065. To see this value expressed as a character instead of an integer, in the Name column, after the variable name, add the character format specifier **, c**. The **Value** column now appears with **101 'e'**.  
   
  ![WatchFormatCPlus1](../debugger/media/watchformatcplus1.png "WatchFormatCPlus1")  
   
-##  <a name="BKMK_Visual_Studio_2012_format_specifiers"></a> Spécificateurs de format  
- Les tableaux suivants indiquent les spécificateurs de format que vous pouvez utiliser dans Visual Studio. Les spécificateurs en gras ne sont pas pris en charge pour le débogage d’interopérabilité avec C\+\+\/CLI.  
+##  <a name="BKMK_Visual_Studio_2012_format_specifiers"></a> Format Specifiers  
+ The following tables show the format specifiers that you can use in Visual Studio. Specifiers in bold are not supported for interop debugging with C++/CLI.  
   
-|Spécificateur|Format|Valeur d’espion d’origine|Valeur affichée|  
-|-------------------|------------|-------------------------------|---------------------|  
-|d|entier décimal|0x00000066|102|  
-|o|entier octal non signé|0x00000066|000000000146|  
-|x<br /><br /> **h**|entier hexadécimal|102|0xcccccccc|  
-|X<br /><br /> **H**|entier hexadécimal|102|0xCCCCCCCC|  
-|c|caractère unique|0x0065, c|101 ’e’|  
-|s|chaîne const char\*|\<location\> “hello world”|"hello world"|  
-|**sb**|chaîne const char\*|\<location\> “hello world”|hello world|  
-|s8|chaîne const char\*|\<location\> “hello world”|"hello world"|  
-|**s8b**|chaîne const char\*|\<location\> “hello world”|"hello world"|  
-|su|const const wchar\_t\*<br /><br /> chaîne char16\_t\*|\<location\> L”hello world”|L"hello world"<br /><br /> u"hello world"|  
-|sub|const const wchar\_t\*<br /><br /> chaîne char16\_t\*|\<location\> L”hello world”|hello world|  
-|bstr|chaîne BSTR|\<location\> L”hello world”|L”hello world”|  
-|**s32**|chaîne UTF\-32|\<location\> U”hello world”|U”hello world”|  
-|**s32b**|chaîne UTF\-32 \(sans guillemets\)|\<location\> U”hello world”|hello world|  
-|**en**|enum|Saturday\(6\)|Saturday|  
-|**hv**|Type de pointeur : indique que la valeur de pointeur inspectée est le résultat de l’allocation de tas d’un tableau, par exemple, `new int[3]`.|\<location\>{\<first member\>}|\<location\>{\<first member\>, \<second member\>, …}|  
-|**na**|Supprime l’adresse mémoire d’un pointeur vers un objet.|\<location\>, {member\=value…}|{member\=value…}|  
-|**nd**|Affiche uniquement les informations de classe de base, en ignorant les classes dérivées|`(Shape*) square` inclut les informations de classe de base et de classe dérivée|Affiche uniquement les informations de classe de base|  
-|hr|HRESULT ou code d’erreur Win32. \(Le débogueur décodant automatiquement HRESULTs, le spécificateur n’est pas nécessaire dans ces cas\-là.|S\_OK|S\_OK|  
-|wc|Indicateur de classe de fenêtre|0x0010|WC\_DEFAULTCHAR|  
-|wm|Numéros de messages Windows|16|WM\_CLOSE|  
-|\!|format brut, ignorant toutes les personnalisations d’affichage de type de données|\<customized representation\>|4|  
+|Specifier|Format|Original Watch Value|Value Displayed|  
+|---------------|------------|--------------------------|---------------------|  
+|d|decimal integer|0x00000066|102|  
+|o|unsigned octal integer|0x00000066|000000000146|  
+|x<br /><br /> **h**|hexadecimal integer|102|0xcccccccc|  
+|X<br /><br /> **H**|hexadecimal integer|102|0xCCCCCCCC|  
+|c|single character|0x0065, c|101 'e'|  
+|s|const char* string|\<location> "hello world"|"hello world"|  
+|**sb**|const char* string (no quotation marks)|\<location> "hello world"|hello world|  
+|s8|UTF-8 string|\<location> "This is a UTF-8 coffee cup â˜•"|"This is a UTF-8 coffee cup ☕"|
+|**s8b**|UTF-8 string (no quotation marks)|\<location> "hello world"|hello world|  
+|su|Unicode (UTF-16 encoding) string|\<location> L"hello world"|L"hello world"<br /><br /> u"hello world"|  
+|sub|Unicode (UTF-16 encoding) string (no quotation marks)|\<location> L"hello world"|hello world|  
+|bstr|BSTR string|\<location> L"hello world"|L"hello world"|  
+|env|Environment block (double-null terminated string)|\<location> L"=::=::\\\\"|L"=::=::\\\\\\0=C:=C:\\\\windows\\\\system32\\0ALLUSERSPROFILE=...|
+|**s32**|UTF-32 string|\<location> U"hello world"|U"hello world"|  
+|**s32b**|UTF-32 string (no quotation marks)|\<location> U"hello world"|hello world|  
+|**en**|enum|Saturday(6)|Saturday|  
+|**hv**|Pointer type - indicates that the pointer value being inspected is the result of the heap allocation of an array, for example, `new int[3]`.|\<location>{\<first member>}|\<location>{\<first member>, \<second member>, ...}|  
+|**na**|Suppresses the memory address of a pointer to an object.|\<location>, {member=value...}|{member=value...}|  
+|**nd**|Displays only the base class information, ignoring derived classes|`(Shape*) square` includes base class and derived class information|Displays only base class information|  
+|hr|HRESULT or Win32 error code. (The debugger now decodes HRESULTs automatically, so this specifier is not required in those cases.|S_OK|S_OK|  
+|wc|Window class flag|0x0010|WC_DEFAULTCHAR|  
+|wm|Windows message numbers|16|WM_CLOSE|  
+|!|raw format, ignoring any data type views customizations|\<customized representation>|4|  
   
 > [!NOTE]
->  Quand le spécificateur de format **hv** est présent, le débogueur tente de déterminer la taille de la mémoire tampon et d’afficher le nombre d’éléments approprié. Comme il n’est pas toujours possible pour le débogueur de rechercher la taille exacte de la mémoire tampon d’un tableau, vous devez utiliser un spécificateur de taille `(pBuffer,[bufferSize])` chaque fois que cela est possible. Le spécificateur de format **hv** est destiné aux scénarios dans lesquels la taille de la mémoire tampon n’est pas immédiatement disponible  
+>  When the **hv** format specifier is present, the debugger attempts to determine the length of the buffer and display the appropriate number of elements. Because it is not always possible for the debugger to find the exact buffer size of an array, you should use a size specifier `(pBuffer,[bufferSize])` whenever possible. The **hv** format specifier is intended for scenarios where the buffer size is not readily available  
   
-###  <a name="BKMK_Size_specifiers_for_pointers_as_arrays_in_Visual_Studio_2012"></a> Spécificateurs de taille pour les pointeurs en tant que tableaux  
- Si vous avez un pointeur vers un objet que vous souhaitez afficher sous forme de tableau, vous pouvez utiliser un entier ou une expression pour spécifier le nombre d’éléments du tableau :  
+###  <a name="BKMK_Size_specifiers_for_pointers_as_arrays_in_Visual_Studio_2012"></a> Size specifiers for pointers as arrays  
+ If you have a pointer to an object you want to view as an array, you can use an integer or an expression to specify the number of array elements:  
   
-|Spécificateur|Format|Valeur d’espion d’origine|Valeur affichée|  
-|-------------------|------------|-------------------------------|---------------------|  
-|n|Entier décimal ou **hexadécimal**|pBuffer,\[32\]<br /><br /> pBuffer,**\[0x20\]**|Affiche `pBuffer` sous forme d’un tableau de 32 éléments.|  
-|**\[exp\]**|Expression C\+\+ valide qui correspond à un entier.|pBuffer,\[bufferSize\]|Affiche pBuffer sous forme d’un tableau d’éléments `bufferSize`.|  
-|**expand\(n\)**|Expression C\+\+ valide qui correspond à un entier|pBuffer, expand\(2\)|Affiche le troisième élément de `pBuffer`.|  
+|Specifier|Format|Original Watch Value|Value Displayed|  
+|---------------|------------|---------------------------|---------------------|  
+|n|Decimal or **hexadecimal** integer|pBuffer,[32]<br /><br /> pBuffer,**[0x20]**|Displays `pBuffer` as a 32 element array.|  
+|**[exp]**|A valid C++ expression that evaluates to an integer.|pBuffer,[bufferSize]|Displays pBuffer as an array of `bufferSize` elements.|  
+|**expand(n)**|A valid C++ expression that evaluates to an integer|pBuffer, expand(2)|Displays the third element of  `pBuffer`|  
   
-##  <a name="BKMK_Format_specifiers_for_interop_debugging_and_C___edit_and_continue"></a> Spécificateurs de format pour le débogage d’interopérabilité avec C\+\+\/CLI  
- Les spécificateurs en **gras** sont pris en charge uniquement pour le débogage de code natif et C\+\+\/CLI.  
+##  <a name="BKMK_Format_specifiers_for_interop_debugging_and_C___edit_and_continue"></a> Format specifiers for interop debugging with C++/CLI  
+ Specifiers in **bold** are supported only for debugging native and C++/CLI code.  
   
-|Spécificateur|Format|Valeur d’espion d’origine|Valeur affichée|  
-|-------------------|------------|-------------------------------|---------------------|  
-|**d,i**|entier décimal signé|0xF000F065|\-268373915|  
-|**u**|entier décimal non signé|0x0065|101|  
-|o|entier octal non signé|0xF065|0170145|  
-|x,X|Entier hexadécimal|61541|0x0000f065|  
-|**l,h**|préfixe long ou court pour : d, i, u, o, x, X|00406042|0x0c22|  
-|**f**|virgule flottante signée|\(3.\/2.\), f|1,500000|  
-|**e**|notation scientifique signée|\(3.0\/2.0\)|1.500000e\+000|  
-|**g**g|virgule flottante signée ou notation scientifique signée, selon ce qui est le plus court|\(3.0\/2.0\)|1,5|  
-|c|caractère unique|\<location\>|101 ’e’|  
-|s|const char\*|\<location\>|"hello world"|  
-|su|const wchar\_t\*<br /><br /> const char16\_t\*|\<location\>|L"hello world"|  
-|sub|const wchar\_t\*<br /><br /> const char16\_t\*|\<location\>|hello world|  
-|s8|const char\*|\<location\>|"hello world"|  
-|hr|HRESULT ou code d’erreur Win32. \(Le débogueur décodant automatiquement HRESULTs, le spécificateur n’est pas nécessaire dans ces cas\-là.|S\_OK|S\_OK|  
-|wc|Indicateur de classe de fenêtre.|0x00000040,|WC\_DEFAULTCHAR|  
-|wm|Numéros de messages Windows|0x0010|WM\_CLOSE|  
-|\!|format brut, ignorant toutes les personnalisations d’affichage de type de données|\<customized representation\>|4|  
+|Specifier|Format|Original Watch Value|Value Displayed|  
+|---------------|------------|--------------------------|---------------------|  
+|**d,i**|signed decimal integer|0xF000F065|-268373915|  
+|**u**|unsigned decimal integer|0x0065|101|  
+|o|unsigned octal integer|0xF065|0170145|  
+|x,X|Hexadecimal integer|61541|0x0000f065|  
+|**l,h**|long or short prefix for: d, i, u, o, x, X|00406042|0x0c22|  
+|**f**|signed floating point|(3./2.), f|1.500000|  
+|**e**|signed scientific notation|(3.0/2.0)|1.500000e+000|  
+|**g**|signed floating point or signed scientific notation, whichever is shorter|(3.0/2.0)|1.5|  
+|c|single character|\<location>|101 'e'|  
+|s|const char*|\<location>|"hello world"|  
+|su|const wchar_t*<br /><br /> const char16_t\*|\<location>|L"hello world"|  
+|sub|const wchar_t*<br /><br /> const char16_t\*|\<location>|hello world|  
+|s8|const char*|\<location>|"hello world"|  
+|hr|HRESULT or Win32 error code. (The debugger now decodes HRESULTs automatically, so this specifier is not required in those cases.|S_OK|S_OK|  
+|wc|Window class flag.|0x00000040,|WC_DEFAULTCHAR|  
+|wm|Windows message numbers|0x0010|WM_CLOSE|  
+|!|raw format, ignoring any data type views customizations|\<customized representation>|4|  
   
-###  <a name="BKMK_Format_specifiers_memory_locations_in_interop_debugging_and_C___edit_and_continue"></a> Emplacements de mémoire des spécificateurs de format dans le débogage d’interopérabilité avec C\+\+\/CLI  
- Le tableau suivant contient les symboles de mise en forme pour les emplacements de mémoire. Vous pouvez utiliser un spécificateur d’emplacement de mémoire avec n’importe quelle valeur ou expression correspondant à un emplacement.  
+###  <a name="BKMK_Format_specifiers_memory_locations_in_interop_debugging_and_C___edit_and_continue"></a> Format specifiers memory locations in interop debugging with C++/CLI  
+ The following table contains formatting symbols used for memory locations. You can use a memory location specifier with any value or expression that evaluates to a location.  
   
-|Symbole|Format|Valeur d’espion d’origine|Valeur affichée|  
-|-------------|------------|-------------------------------|---------------------|  
-|**ma**|64 caractères ASCII|0x0012ffac|0x0012ffac .4...0...".0W&.......1W&.0.:W..1...."..1.JO&.1.2.."..1...0y....1|  
-|**m**|16 octets en hexadécimal suivis de 16 caractères ASCII|0x0012ffac|0x0012ffac B3 34 CB 00 84 30 94 80 FF 22 8A 30 57 26 00 00 .4...0...".0W&..|  
-|**mb**|16 octets en hexadécimal suivis de 16 caractères ASCII|0x0012ffac|0x0012ffac B3 34 CB 00 84 30 94 80 FF 22 8A 30 57 26 00 00 .4...0...".0W&..|  
-|**mw**|8 mots|0x0012ffac|0x0012ffac 34B3 00CB 3084 8094 22FF 308A 2657 0000|  
-|**md**|4 mots doubles|0x0012ffac|0x0012ffac 00CB34B3 80943084 308A22FF 00002657|  
-|**mq**|2 mots quadruples|0x0012ffac|0x0012ffac 7ffdf00000000000 5f441a790012fdd4|  
-|**mu**|caractères de 2 octets \(Unicode\)|0x0012ffac|0x0012ffac 8478 77f4 ffff ffff 0000 0000 0000 0000|  
+|Symbol|Format|Original Watch Value|Value Displayed|  
+|------------|------------|--------------------------|---------------------|  
+|**ma**|64 ASCII characters|0x0012ffac|0x0012ffac .4...0...".0W&.......1W&.0.:W..1...."..1.JO&.1.2.."..1...0y....1|  
+|**m**|16 bytes in hexadecimal, followed by 16 ASCII characters|0x0012ffac|0x0012ffac B3 34 CB 00 84 30 94 80 FF 22 8A 30 57 26 00 00 .4...0...".0W&..|  
+|**mb**|16 bytes in hexadecimal, followed by 16 ASCII characters|0x0012ffac|0x0012ffac B3 34 CB 00 84 30 94 80 FF 22 8A 30 57 26 00 00 .4...0...".0W&..|  
+|**mw**|8 words|0x0012ffac|0x0012ffac 34B3 00CB 3084 8094 22FF 308A 2657 0000|  
+|**md**|4 doublewords|0x0012ffac|0x0012ffac 00CB34B3 80943084 308A22FF 00002657|  
+|**mq**|2 quadwords|0x0012ffac|0x0012ffac 7ffdf00000000000 5f441a790012fdd4|  
+|**mu**|2-byte characters (Unicode)|0x0012ffac|0x0012ffac 8478 77f4 ffff ffff 0000 0000 0000 0000|  
   
-###  <a name="BKMK_Size_specifier_for_pointers_as_arrays_in_interop_debugging_and_C___edit_and_continue"></a> Spécificateur de taille pour les pointeurs en tant que tableaux dans le débogage d’interopérabilité avec C\+\+\/CLI  
- Si vous avez un pointeur vers un objet que vous souhaitez afficher sous forme de tableau, vous pouvez utiliser un entier pour spécifier le nombre d’éléments du tableau :  
+###  <a name="BKMK_Size_specifier_for_pointers_as_arrays_in_interop_debugging_and_C___edit_and_continue"></a> Size specifier for pointers as arrays in interop debugging with C++/CLIt  
+ If you have a pointer to an object you want to view as an array, you can use an integer to specify the number of array elements:  
   
-|Spécificateur|Format|Expression|Valeur affichée|  
-|-------------------|------------|----------------|---------------------|  
-|n|Entier décimal|pBuffer\[32\]|Affiche `pBuffer` sous forme d’un tableau de 32 éléments.|
+|Specifier|Format|Expression|Value Displayed|  
+|---------------|------------|----------------|---------------------|  
+|n|Decimal integer|pBuffer[32]|Displays `pBuffer` as a 32 element array.|

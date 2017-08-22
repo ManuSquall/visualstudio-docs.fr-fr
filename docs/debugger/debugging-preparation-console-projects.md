@@ -1,67 +1,84 @@
 ---
-title: "Pr&#233;paration du d&#233;bogage&#160;: projets console | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-debug"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-dev_langs: 
-  - "FSharp"
-  - "VB"
-  - "CSharp"
-  - "C++"
-helpviewer_keywords: 
-  - "applications console, débogage"
-  - "déboguer (Visual Studio), applications console"
-  - "déboguer les applications console"
+title: 'Debugging Preparation: Console Projects | Microsoft Docs'
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology:
+- vs-ide-debug
+ms.tgt_pltfrm: 
+ms.topic: article
+dev_langs:
+- CSharp
+- VB
+- FSharp
+- C++
+helpviewer_keywords:
+- debugging [Visual Studio], console applications
+- debugging console applications
+- console applications, debugging
 ms.assetid: 9641f1d9-2d5a-48b1-8731-6525e8f67892
 caps.latest.revision: 26
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 26
----
-# Pr&#233;paration du d&#233;bogage&#160;: projets console
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+translation.priority.ht:
+- cs-cz
+- de-de
+- es-es
+- fr-fr
+- it-it
+- ja-jp
+- ko-kr
+- pl-pl
+- pt-br
+- ru-ru
+- tr-tr
+- zh-cn
+- zh-tw
+ms.translationtype: HT
+ms.sourcegitcommit: 9e6c28d42bec272c6fd6107b4baf0109ff29197e
+ms.openlocfilehash: 5cb0008579e05b4b6f6281057106547c647734db
+ms.contentlocale: fr-fr
+ms.lasthandoff: 08/22/2017
 
-La préparation du débogage d'un projet console est identique à celle d'un projet Windows, avec quelques éléments supplémentaires à prendre en compte.  Pour plus d'informations, consultez [Applications Windows Forms](../debugger/debugging-preparation-windows-forms-applications.md) et [Debugging Preparation: Windows Forms Applications \(.NET\)](http://msdn.microsoft.com/fr-fr/a8bc54de-41a3-464d-9a12-db9bdcbc1ad5).  En raison de la similarité de toutes les applications console, cette rubrique couvre les types de projets suivants :  
+---
+# <a name="debugging-preparation-console-projects"></a>Debugging Preparation: Console Projects
+Preparing to debug a Console project is similar to preparing to debug a Windows project, with some additional considerations. For more information, see [Windows Forms Applications](../debugger/debugging-preparation-windows-forms-applications.md), and [Debugging Preparation: Windows Forms Applications (.NET)](http://msdn.microsoft.com/en-us/a8bc54de-41a3-464d-9a12-db9bdcbc1ad5). Because of the similarity of all console applications, this topic covers the following project types:  
   
--   Application console C\#  
+-   C# Console Application  
   
--   Application console Visual Basic  
+-   Visual Basic Console Application  
   
--   Application console C\+\+ \(.NET\)  
+-   C++ Console Application (.NET)  
   
--   Application console C\+\+ \(Win32\)  
+-   C++ Console Application (Win32)  
   
- Vous pouvez être amené à spécifier des arguments de ligne de commande pour votre application console.  Pour plus d'informations, consultez [Paramètres de projet pour une configuration Debug C\+\+](../debugger/project-settings-for-a-cpp-debug-configuration.md), [Paramètres de projet pour une configuration Debug Visual Basic](../debugger/project-settings-for-a-visual-basic-debug-configuration.md) ou [Paramètres de projet pour des configurations Debug C\#](../debugger/project-settings-for-csharp-debug-configurations.md).  
+ You might have to specify command-line arguments for your console application. For more information, see [Project Settings for a C++ Debug Configuration](../debugger/project-settings-for-a-cpp-debug-configuration.md), [Project Settings for a Visual Basic Debug Configuration](../debugger/project-settings-for-a-visual-basic-debug-configuration.md), or [Project Settings for  C# Debug Configurations](../debugger/project-settings-for-csharp-debug-configurations.md).  
   
- Comme toutes les propriétés de projet, ces arguments persistent entre les sessions de débogage et celles de Visual Studio.  Par conséquent, si vous avez débogué précédemment l'application console, n'oubliez pas qu'il existe peut\-être des arguments provenant des sessions précédentes dans la boîte de dialogue **Pages de propriétés de \<Projet\>**.  
+ Like all project properties, these arguments persist between debug sessions and between  Visual Studio sessions. Therefore, if the console application is one that you have debugged previously, remember that there might be arguments from previous sessions entered in the **\<Project> Property Pages** dialog box.  
   
- Une application console utilise la fenêtre de **console** pour accepter les entrées et afficher les messages de sortie.  Pour écrire dans la fenêtre **Console**, votre application doit utiliser l'objet **Console** au lieu de l'objet Debug.  Pour écrire dans la fenêtre **Sortie Visual Studio**, utilisez l'objet Debug, comme d'habitude.  Vérifiez l'emplacement dans lequel écrit votre application, sinon vous risquez de rechercher les messages au mauvais endroit.  Pour plus d'informations, consultez [Console, classe](https://msdn.microsoft.com/en-us/library/system.console.aspx), [Debug, classe](https://msdn.microsoft.com/en-us/library/system.diagnostics.debug.aspx) et [Sortie, fenêtre](../ide/reference/output-window.md).  
+ A console application uses the **Console** window to accept input and to display output messages. To write to the **Console** window, your application must use the **Console** object instead of the Debug object. To write to the **Visual Studio Output** window, use the Debug object, as usual. Be sure that you know where your application is writing or you might be looking for messages in the wrong place. For more information, see [Console Class](/dotnet/api/system.console), [Debug Class](/dotnet/api/system.diagnostics.debug), and [Output Window](../ide/reference/output-window.md).  
   
-## Démarrage de l'application  
- Lorsque certaines applications console démarrent, elles s'exécutent jusqu'à la fin, puis se ferment.  Ce comportement peut ne pas vous fournir suffisamment de temps pour interrompre l'exécution et le débogage.  Pour pouvoir déboguer une application, utilisez l'une des procédures suivantes pour démarrer l'application :  
+## <a name="starting-the-application"></a>Starting the application  
+ When some console applications start, they run to completion and then exit. This behavior might not give you enough time to break execution and debug. To be able to debug an application, use one of the following procedures to start the application:  
   
--   Votre application démarre l'exécution et s'exécute jusqu'à ce qu'elle atteigne le point d'arrêt.  
+-   Your application starts executing and runs until it reaches the breakpoint.  
   
--   Votre application démarre et s'arrête immédiatement à la première ligne de code source.  
+-   Your application starts and immediately breaks at the first line of source code.  
   
--   Dans une fenêtre de code source, cliquez avec le bouton droit sur une ligne et sélectionnez **Exécuter jusqu'au curseur**.  
+-   In a source code window, right-click a line and select **Run to cursor**.  
   
-     Votre application démarre et s'exécute jusqu'à la ligne sélectionnée, ou jusqu'à un point d'arrêt, si le point d'arrêt est atteint avant la ligne.  
+     Your application starts and runs to the selected line, or to a breakpoint, if the breakpoint is hit before the line.  
   
- Lors du débogage d'une application console, vous pouvez démarrer l'application à partir de l'invite de commandes au lieu de la démarrer à partir de Visual Studio.  Dans ce cas, vous pouvez démarrer l'application à partir de l'invite de commandes, puis l'attacher au débogueur Visual Studio.  Pour plus d'informations, consultez [Attacher aux processus en cours d'exécution](../debugger/attach-to-running-processes-with-the-visual-studio-debugger.md).  
+ When you debug a console application, you might want to start the application from the command prompt rather than from Visual Studio. In that case, you can start the application from the command prompt and attach the Visual Studio debugger to it. For more information, see [Attach to Running Processes](../debugger/attach-to-running-processes-with-the-visual-studio-debugger.md).  
   
- Lorsque vous démarrez une application console à partir de Visual Studio, la fenêtre **Console** apparaît quelquefois derrière la fenêtre Visual Studio.  Si vous essayez de démarrer votre application console à partir de Visual Studio et que rien ne se produit, essayez de déplacer la fenêtre Visual Studio.  
+ When you start a console application from Visual Studio, the **Console** window sometimes appears behind the Visual Studio window. If you try to start your console application from Visual Studio and nothing seems to happen, try to move the Visual Studio window.  
   
-## Voir aussi  
- [Débogage du code natif](../debugger/debugging-native-code.md)   
- [Débogage du code managé](../debugger/debugging-managed-code.md)   
- [Types de projets Visual C\+\+](../debugger/debugging-preparation-visual-cpp-project-types.md)   
- [Types de projets C\#, F\# et Visual Basic](../debugger/debugging-preparation-csharp-f-hash-and-visual-basic-project-types.md)   
- [Paramètres de projet pour une configuration Debug C\+\+](../debugger/project-settings-for-a-cpp-debug-configuration.md)   
- [Sécurité du débogueur](../debugger/debugger-security.md)
+## <a name="see-also"></a>See Also  
+ [Debugging Native Code](../debugger/debugging-native-code.md)   
+ [Debugging Managed Code](../debugger/debugging-managed-code.md)   
+ [Visual C++ Project Types](../debugger/debugging-preparation-visual-cpp-project-types.md)   
+ [C#, F#, and Visual Basic Project Types](../debugger/debugging-preparation-csharp-f-hash-and-visual-basic-project-types.md)   
+ [Project Settings for a C++ Debug Configuration](../debugger/project-settings-for-a-cpp-debug-configuration.md)   
+ [Debugger Security](../debugger/debugger-security.md)

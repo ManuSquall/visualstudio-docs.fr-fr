@@ -1,175 +1,208 @@
 ---
-title: "Naviguer dans le code avec le d&#233;bogueur | Microsoft Docs"
-ms.custom: ""
-ms.date: "12/08/2016"
-ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-debug"
-ms.tgt_pltfrm: ""
-ms.topic: "hero-article"
-f1_keywords: 
-  - "vs.debug.execution"
-dev_langs: 
-  - "FSharp"
-  - "VB"
-  - "CSharp"
-  - "C++"
-  - "JScript"
-helpviewer_keywords: 
-  - "déboguer (Visual Studio), contrôle d'exécution"
-  - "exécution, contrôler dans le débogueur"
-  - "exécuter pas à pas"
+title: Navigate Code with the Debugger in Visual Studio | Microsoft Docs
+ms.custom: H1Hack27Feb2017
+ms.date: 02/07/2017
+ms.reviewer: 
+ms.suite: 
+ms.technology:
+- vs-ide-debug
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords:
+- vs.debug.execution
+helpviewer_keywords:
+- stepping
+- debugging [Visual Studio], execution control
+- execution, controlling in debugger
 ms.assetid: 759072ba-4aaa-447e-8e51-0dd1456fe896
 caps.latest.revision: 42
-caps.handback.revision: 28
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
----
-# Naviguer dans le code avec le d&#233;bogueur
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+translation.priority.ht:
+- de-de
+- es-es
+- fr-fr
+- it-it
+- ja-jp
+- ko-kr
+- ru-ru
+- zh-cn
+- zh-tw
+translation.priority.mt:
+- cs-cz
+- pl-pl
+- pt-br
+- tr-tr
+ms.translationtype: HT
+ms.sourcegitcommit: 9e6c28d42bec272c6fd6107b4baf0109ff29197e
+ms.openlocfilehash: 7ccde2740ba5216ca8e2a6258c283f655da8b06f
+ms.contentlocale: fr-fr
+ms.lasthandoff: 08/22/2017
 
-Il existe de nombreuses façons de parcourir votre code dans le débogueur : vous pouvez effectuer un pas à pas détaillé ou principal des méthodes, exécuter le code jusqu'à un point d'arrêt ou un emplacement spécifié, et indiquer si vous voulez limiter le débogage à votre propre code ou inclure des symboles pour déboguer le code externe.  
+---
+# <a name="navigate-code-with-the-visual-studio-debugger"></a>Navigate Code with the Visual Studio Debugger
+Get familiar with commands and shortcuts to navigate code in the debugger and that will make it faster and easier to find and resolve issues in your app. While you navigate code in the debugger, you can inspect the state of your app or learn more about its execution flow.  
   
-##  <a name="BKMK_Step_into__over__or_out_of_the_code"></a> Effectuer un pas à pas détaillé, principal ou sortant  
- L'une des procédures de débogage les plus communes est l'*exécution pas à pas*. L'exécution pas à pas consiste à exécuter le code ligne par ligne. Lorsque vous avez interrompu l'exécution, par exemple en exécutant le débogueur à un point d'arrêt, vous pouvez utiliser trois commandes du menu **Déboguer** pour parcourir votre code :  
+## <a name="start-debugging"></a>Start debugging  
+ Often, you start a debugging session using **F5** (**Debug** > **Start Debugging**). This command starts your app with the debugger attached.  
   
-|Commande de menu|Raccourci clavier|Description|  
-|----------------------|-----------------------|-----------------|  
-|**Pas à pas détaillé**|**F11**|Si la ligne contient un appel à une fonction, **Pas à pas détaillé** n'exécute que l'appel, puis s'arrête à la première ligne de code se trouvant dans la fonction. Sinon, **Pas à pas détaillé** exécute l'instruction suivante.|  
-|**Pas à pas principal**|**F10**|Si la ligne contient un appel à une fonction, **Pas à pas principal** exécute la fonction appelée, puis s'arrête à la première ligne de code se trouvant dans la fonction appelante. Sinon, **Pas à pas détaillé** exécute l'instruction suivante.|  
-|**Pas à pas sortant**|**Shift\+F11**|**Pas à pas sortant** reprend l'exécution de votre code jusqu'au retour de la fonction, puis opère une interruption au point de retour dans la fonction appelante.|  
+ The green arrow also starts the debugger (same as **F5**).  
   
--   Dans un appel à plusieurs fonctions imbriquées, **Pas à pas détaillé** va jusqu'à la fonction se trouvant au niveau le plus profond. Si vous utilisez **Pas à pas détaillé** dans un appel tel que `Func1(Func2())`, le débogueur parcourt la fonction `Func2`.  
+ ![DBG&#95;Basics&#95;Start&#95;Debugging](../debugger/media/dbg_basics_start_debugging.png "DBG_Basics_Start_Debugging")  
   
--   En fait, le débogueur parcourt les instructions de code plutôt que les lignes physiques. Par exemple, une clause `if` peut être écrite sur une ligne :  
+ A few other ways that you can start the app with the debugger attached include **F11** ([step into code](#BKMK_Step_into__over__or_out_of_the_code)),  **F10** ([step over code](#BKMK_Step_over_Step_out)), or by using **Run to Cursor**.  See the other sections in this topic for info on what these options do.  
   
-    ```c#  
+ When you debug, the yellow line shows you the code that will execute next.  
+  
+ ![DBG&#95;Basics&#95;Break&#95;Mode](../debugger/media/dbg_basics_break_mode.png "DBG_Basics_Break_Mode")  
+  
+ While debugging, you can switch between commands like **F5**, **F11** and use other features described in this topic (like breakpoints) to quickly get to the code you want to look at.  
+  
+ Most debugger features, such as viewing variable values in the Locals window or evaluating expressions in the Watch window, are available only while the debugger is paused (also called *break mode*). When the debugger is paused, your app state is suspended while functions, variables, and objects remain in memory. While in break mode, you can examine the elements' positions and states to look for violations or bugs. For some project types, you can also make adjustments to the app while in break mode. To watch a video showing these features, see [Getting Started with the Debugger](https://www.youtube.com/watch?v=FtGCi5j30YU&list=PLReL099Y5nRfw6VNvzMkv0sabT2crbSpK&index=6).
+  
+##  <a name="BKMK_Step_into__over__or_out_of_the_code"></a> Step into code, line by line  
+ To stop on each line of code (each statement) while debugging, use the **F11** keyboard shortcut (or **Debug** > **Step Into** on the menu).  
+  
+> [!TIP]
+>  As you execute each line of code, you can hover over variables to see their values, or use the [Locals](../debugger/autos-and-locals-windows.md) and [Watch](../debugger/autos-and-locals-windows.md) windows to watch their values change.  
+  
+ Here are some details about the behavior of **Step Into**:  
+  
+-   On a nested function call, **Step Into** steps into the most deeply nested function. If you use **Step Into** on a call like `Func1(Func2())`, the debugger steps into the function `Func2`.  
+  
+-   The debugger actually steps through code statements rather than physical lines. For example an `if` clause can be written on one line:  
+  
+    ```CSharp  
     int x = 42;  
     string s = "Not answered";  
     if( int x == 42) s = "Answered!";  
     ```  
   
-    ```vb  
-    Dim x As Integet = 42  
+    ```VB  
+    Dim x As Integer = 42  
     Dim s As String = "Not answered"  
     If x = 42 Then s = "Answered!"  
     ```  
   
-     Lorsque vous parcourez cette ligne, le débogueur traite la condition comme une étape et la conséquence comme une autre \(dans cet exemple, la condition est remplie\).  
+     When you step into this line, the debugger treats the condition as one step and the consequence as another (In this example, the condition is true).  
   
- Pour afficher la trace de la pile des appels tout en effectuant un pas à pas détaillé dans les fonctions, consultez [Mapper les méthodes sur la pile des appels tout en déboguant](../debugger/map-methods-on-the-call-stack-while-debugging-in-visual-studio.md).  
+ To visually trace the call stack while stepping into functions, see [Map methods on the call stack while debugging](../debugger/map-methods-on-the-call-stack-while-debugging-in-visual-studio.md).  
   
-##  <a name="BKMK_Break_into_code_by_using_breakpoints_or_Break_All"></a> S'arrêter dans le code en utilisant des points d'arrêt ou Interrompre tout  
- Lorsque vous déboguez une application avec le débogueur VS, elle est soit en cours d'exécution, soit en mode arrêt.  
+##  <a name="BKMK_Step_over_Step_out"></a> Step through code, skipping functions  
+ When running code in the debugger, often you will realize that you don't need to see what happens in a particular function (you don't care about it or you know it works, like well-tested library code). Use these commands to skip through code (the functions still execute, of course, but the debugger skips over them).  
   
- Le débogueur interrompt l'exécution de l'application lorsqu'il rencontre un point d'arrêt ou lorsqu'une exception se produit. Vous pouvez également interrompre manuellement l'exécution à tout moment.  
+|Keyboard Command|Menu Command|Description|  
+|----------------------|------------------|-----------------|  
+|**F10**|**Step Over**|If the current line contains a function call, **Step Over** runs the code then suspends execution at the first line of code after the called function returns.|  
+|**Shift+F11**|**Step Out**|**Step Out** continues running code and suspends execution when the current function returns (the debugger skips through the current function).|  
   
- Un point d'arrêt est un signal qui indique au débogueur de suspendre temporairement l'exécution de votre application à un certain point. Lorsque l'exécution est suspendue au niveau d'un point d'arrêt, votre programme est dit en mode arrêt. Le passage en mode arrêt ne termine pas l'exécution de votre programme, qui peut reprendre à tout moment.  
+> [!TIP]
+>  If you need to find the entry point in your app, start with **F10** or **F11**. These commands are often helpful when you are inspecting your app state or trying to find out more about its execution flow.  
   
- La plupart des fonctionnalités du débogueur, comme l'affichage des valeurs des variables dans la fenêtre Variables locales ou l'évaluation des expressions dans la fenêtre Espion, sont disponibles uniquement en mode arrêt. Tous les éléments de votre application \(fonctions, variables et objets, par exemple\) restent en mémoire, mais leurs mouvements et leurs activités sont suspendus. En mode arrêt, vous pouvez examiner leurs positions et états à la recherche de violations ou de bogues. Vous pouvez également apporter des réglages à l'application en mode arrêt.  
+##  <a name="BKMK_Break_into_code_by_using_breakpoints_or_Break_All"></a> Run to a specific location or function  
+ Often the preferred method of debugging code, these methods are useful when you know exactly what code you want to inspect, or at least you know where you want to start debugging.  
   
- Vous pouvez configurer des points d'arrêt pour interrompre l'exécution selon plusieurs conditions. Consultez [Utilisation des points d'arrêt](../debugger/using-breakpoints.md). Cette section décrit deux méthodes de base pour arrêter le code.  
+-   **Set breakpoints in the code**  
   
-1.  **Définir des points d'arrêt dans le code**  
+     To set a simple breakpoint in your code, open the source file in the Visual Studio editor. Set the cursor at the line of code where you want to suspend execution, and then right-click in the code window to see the context menu and choose **Breakpoint > Insert Breakpoint** (or press **F9**). The debugger suspends execution right before the line is executed.  
   
-     Pour définir un point d'arrêt simple dans votre code, ouvrez le fichier source dans l'éditeur Visual Studio. Définissez le curseur sur la ligne de code à laquelle vous souhaitez vous arrêter, puis choisissez **Point d'arrêt**, **Insérer un point d'arrêt** dans le menu contextuel \(raccourci : **F9**. Le débogueur interrompt l'exécution juste avant que la ligne soit exécutée.  
+     ![Set a breakpoint](../debugger/media/dbg_basics_setbreakpoint.png "DBG_Basics_SetBreakpoint")  
   
-     ![Définir un point d’arrêt](~/debugger/media/dbg_basics_setbreakpoint.png "DBG\_Basics\_SetBreakpoint")  
+     Breakpoints in Visual Studio provide a rich set of additional functionality, such as conditional breakpoints and tracepoints. See [Using Breakpoints](../debugger/using-breakpoints.md).  
   
-     Les points d'arrêt dans Visual Studio fournissent un ensemble enrichi de fonctionnalités supplémentaires, telles que les points d'arrêt et les points de trace conditionnels. Consultez [Utilisation des points d'arrêt](../debugger/using-breakpoints.md).  
+-   **Run to the cursor location**  
   
-2.  **S'arrêter manuellement dans le code**  
+     To run to the cursor location, place the cursor on an executable line of code in a source window. On the editor's context menu (right-click in the editor), choose **Run to Cursor**. This is like setting a temporary breakpoint.
+
+-   **Run to Click** 
+
+    To run to a point in your code while paused in the debugger, select the **Run execution to here** green arrow icon (you see the icon while hovering over a line of code). This eliminates the need to set temporary breakpoints.
+
+    ![Debugger's Run to Click](../debugger/media/dbg-run-to-click.png "DbgRunToClick") 
+
+    > [!NOTE]
+    > **Run to Click** is new in [!include[vs_dev15](../misc/includes/vs_dev15_md.md)].
   
-     Pour vous arrêter sur la ligne de code suivante disponible dans une application en cours d'exécution, choisissez **Déboguer**, **Interrompre tout** \(raccourci : **Ctrl\+Alt\+Break**\).  
+-   **Manually break into code**  
   
--   Si vous déboguez avec l'option Uniquement mon code activée, l'exécution s'interrompt à la ligne de code suivante dans votre projet. Consultez [Limiter le pas à pas à Uniquement mon code](#BKMK_Restrict_stepping_to_Just_My_Code).  
+     To break into the next available line of code in an executing app, choose **Debug**, **Break All** (keyboard: **Ctrl+Alt+Break**). 
   
--   Si vous déboguez plusieurs programmes, un point d'arrêt ou une commande Interrompre tout affecte par défaut tous les programmes en cours de débogage. Consultez [Configurer le comportement d'exécution de plusieurs processus](../debugger/debug-multiple-processes.md#BKMK_Configure_the_execution_behavior_of_multiple_processes).  
+     If you break while executing code without corresponding source or symbol (.pdb) files), the debugger displays a **Source Files Not Found** or a **Symbols Not Found** page that can help you find the appropriate files. See [Specify Symbol (.pdb) and Source Files](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md). If you can't access the supporting files, you can still debug the assembly instructions in the Disassembly window.  
   
--   Si vous arrêtez l’exécution de code sans les fichiers sources ou de symboles \(.pdb\) correspondants, le débogueur affiche une page **Fichiers sources introuvables** ou **Symboles introuvables** qui peut vous aider à trouver les fichiers appropriés. Consultez [Spécifier les fichiers de symbole \(.pdb\) et les fichiers sources](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md).  
+-   **Run to a function on the call stack**  
   
-     Si vous ne pouvez pas accéder aux fichiers de prise en charge, vous pouvez tout de même déboguer les instructions assembleur dans la fenêtre Code Machine.  
+     In the **Call Stack** window (available while debugging), select the function, right-click and  choose **Run to Cursor**. To visually trace the call stack, see [Map methods on the call stack while debugging](../debugger/map-methods-on-the-call-stack-while-debugging-in-visual-studio.md).  
   
-##  <a name="BKMK_Run_to_a_specified_location_or_function"></a> Exécuter à un emplacement ou une fonction spécifié\(e\)  
- Parfois, il est nécessaire d'exécuter le code jusqu'à un certain point, puis d'interrompre l'exécution. Si un point d'arrêt est défini à l'emplacement où vous souhaitez interrompre l'exécution, choisissez **Déboguer**, **Démarrer le débogage** si vous n'avez pas démarré le débogage, ou **Déboguer**, **Continuer**. \(Dans les deux cas, le raccourci est **F5**.\) Le débogueur s'arrête au point d'arrêt suivant dans l'exécution du code. Sélectionnez **Déboguer**, **Continuer** jusqu'à atteindre le point d'arrêt souhaité.  
+-   **Run to a function specified by name**  
   
- Vous pouvez également exécuter le code jusqu'à l'emplacement du curseur dans l'éditeur de code ou jusqu'à la fonction spécifiée.  
+     You can tell the debugger to run your application until it reaches a specified function. You can specify the function by name or you can choose it from the call stack.  
   
- **Exécuter le code jusqu'à l'emplacement du curseur**  
+     To specify a function by name, choose **Debug**, **New Breakpoint**, **Break at Function**, then enter the name of the function and other identifying information.  
   
- Pour exécuter le code jusqu'à l'emplacement du curseur, placez le curseur sur une ligne de code exécutable dans une fenêtre source. Dans le menu contextuel de l'éditeur, choisissez **Exécuter jusqu'au curseur**.  
+     ![New Breakpoint dialog box](../debugger/media/dbg_execution_newbreakpoint.png "DBG_Execution_NewBreakpoint")  
   
- **Exécuter le code jusqu'à une fonction de la pile des appels**  
+     If the function is overloaded or is in multiple namespace, you can choose the functions that you want in the **Choose Breakpoints** dialog box.  
   
- Dans la fenêtre **Pile des appels**, sélectionnez la fonction, puis choisissez **Exécuter jusqu'au curseur** dans le menu contextuel. Pour afficher la trace de la pile des appels, consultez [Mapper les méthodes sur la pile des appels tout en déboguant](../debugger/map-methods-on-the-call-stack-while-debugging-in-visual-studio.md).  
+     ![Choose Breakpoints dialog box](../debugger/media/dbg_execution_overloadedbreakpoints.png "DBG_Execution_OverloadedBreakpoints")  
   
- **Exécuter le code jusqu'à une fonction spécifiée par nom**  
+##  <a name="BKMK_Set_the_next_statement_to_execute"></a> Move the pointer to change the execution flow  
+ While the debugger is paused, you can move the instruction pointer to set the next statement of code to be executed. A yellow arrowhead in the margin of a source or Disassembly window marks the location of the next statement to be executed. By moving this arrowhead, you can skip over a portion of code or return to a line previously executed. You can use this for situations such as skipping a section of code that contains a known bug.  
   
- Vous pouvez demander au débogueur d'exécuter une application jusqu'à une fonction spécifiée. Vous pouvez spécifier la fonction par nom ou la sélectionner dans la pile des appels.  
+ ![Moving the Pointer](../debugger/media/dbg_basics_example3.gif "DBG_Basics_Example3")
   
- Pour spécifier une fonction par nom, choisissez **Déboguer**, **Nouveau point d'arrêt**, **Interrompre à la fonction**, puis tapez le nom de la fonction et d'autres informations d'identification.  
+ To set the next statement to execute, use one of these procedures:  
   
- ![Boîte de dialogue Nouveau point d’arrêt](../debugger/media/dbg_execution_newbreakpoint.png "DBG\_Execution\_NewBreakpoint")  
+-   In a source window, drag the yellow arrowhead to a location where you want to set the next statement in the same source file  
   
- Si la fonction est surchargée ou si elle figure dans plusieurs espaces de noms, vous pouvez choisir les fonctions souhaitées dans la boîte de dialogue **Choisir les points d'arrêt**.  
+-   In a source window, set the cursor on the line that you want to execute next, right-click and choose **Set Next Statement**.  
   
- ![Boîte de dialogue Choisir les points d’arrêt](~/debugger/media/dbg_execution_overloadedbreakpoints.png "DBG\_Execution\_OverloadedBreakpoints")  
-  
-##  <a name="BKMK_Set_the_next_statement_to_execute"></a> Définir l'instruction suivante à exécuter  
- Après une interruption dans le débogueur, vous pouvez déplacer le point d'exécution pour désigner l'instruction suivante à exécuter. Dans la marge d'une fenêtre source ou Code Machine, une flèche jaune marque l'emplacement de la prochaine instruction à exécuter. Déplacer cette flèche permet d'ignorer une partie du code ou de revenir à une ligne déjà exécutée. Vous pouvez utiliser cette fonctionnalité, par exemple, pour ignorer une section de code qui contient un bogue connu.  
-  
- ![Exemple2](~/debugger/media/dbg_basics_example2.png "DBG\_Basics\_Example2")  
-  
- Pour définir l'instruction suivante à exécuter, appliquez l'une de ces procédures :  
-  
--   Dans une fenêtre source, faites glisser la flèche jaune vers l'emplacement où vous souhaitez définir l'instruction suivante dans le même fichier source.  
-  
--   Dans une fenêtre source, définissez le curseur sur la ligne que vous souhaitez exécuter ensuite et choisissez **Définir l'instruction suivante** dans le menu contextuel.  
-  
--   Dans la fenêtre Code Machine, définissez le curseur sur l'instruction assembleur que vous souhaitez exécuter ensuite et choisissez **Définir l'instruction suivante** dans le menu contextuel.  
+-   In the Disassembly window, set the cursor on the assembly instruction that you want to execute next, right-click an and choose **Set Next Statement**.  
   
 > [!CAUTION]
->  Le fait de définir l'instruction suivante fait en sorte que le compteur du programme accède directement au nouvel emplacement. Utilisez cette commande avec précaution :  
+>  Setting the next statement causes the program counter to jump directly to the new location. Use this command with caution:  
 >   
->  -   Les instructions entre les nouveaux et les anciens points d'exécution ne sont pas exécutées.  
-> -   Si vous déplacez le point d'exécution vers l'arrière, les instructions déjà traitées ne sont pas annulées.  
-> -   Le déplacement de l'instruction suivante vers une autre fonction ou portée entraîne généralement une altération de la pile des appels, provoquant une erreur ou exception d'exécution. Si vous tentez de déplacer l'instruction suivante vers une autre portée, le débogueur ouvre une boîte de dialogue avec un avertissement et vous donne une occasion d'annuler l'opération. En Visual Basic, vous ne pouvez pas déplacer l'instruction suivante à une autre portée ou fonction.  
-> -   En C\+\+ natif, si les contrôles d'exécution sont activés, la définition de l'instruction suivante peut provoquer la levée d'une exception lorsque l'exécution atteint la fin de la méthode.  
-> -   Lorsque Modifier & Continuer est activé, la commande **Définir l'instruction suivante** échoue si vous avez apporté des modifications qui ne peuvent pas être remappées immédiatement par Modifier & Continuer. Par exemple, cela peut se produire si vous avez modifié le code contenu dans un bloc catch. Dans ce cas, un message d'erreur s'affiche pour indiquer que l'opération n'est pas prise en charge.  
+>  -   Instructions between the old and new execution points are not executed.  
+> -   If you move the execution point backwards, intervening instructions are not undone.  
+> -   Moving the next statement to another function or scope usually results in call-stack corruption, causing a run-time error or exception. If you try moving the next statement to another scope, the debugger opens a dialog box with a warning and gives you a chance to cancel the operation. In Visual Basic, you cannot move the next statement to another scope or function.  
+> -   In native C++, if you have run-time checks enabled, setting the next statement can cause an exception to be thrown when execution reaches the end of the method.  
+> -   When Edit and Continue is enabled, **Set Next Statement** fails if you have made edits that Edit and Continue cannot remap immediately. This can occur, for example, if you have edited code inside a catch block. When this happens, you'll see an error message that tells you that the operation is not supported.  
   
 > [!NOTE]
->  Dans du code managé, vous ne pouvez pas déplacer l'instruction suivante dans les conditions suivantes :  
+>  In managed code, you cannot move the next statement under the following conditions:  
 >   
->  -   L'instruction suivante se trouve dans une méthode différente de celle de l'instruction actuelle.  
-> -   Le débogage a été démarré à l'aide du débogage juste\-à\-temps.  
-> -   Le déroulement d'une pile des appels est en cours.  
-> -   Une exception System.StackOverflowException ou System.Threading.ThreadAbortException a été levée.  
+>  -   The next statement is in a different method than the current statement.  
+> -   Debugging was started by using Just-In-Time debugging.  
+> -   A callstack unwind is in progress.  
+> -   A System.StackOverflowException or System.Threading.ThreadAbortException exception has been thrown.  
   
- Il est impossible de définir l'instruction suivante lorsque l'application est active. Pour définir l'instruction suivante, le débogueur doit être en mode arrêt.  
+ You cannot set the next statement while your application is actively running. To set the next statement, the debugger must be in break mode.  
   
-##  <a name="BKMK_Restrict_stepping_to_Just_My_Code"></a> Limiter le pas à pas à Uniquement mon code  
- Parfois, en cours de débogage, vous pouvez être amené à examiner uniquement le code que vous avez écrit et ignorer les autres éléments de code, par exemple les appels système. C'est précisément ce que permet de faire le mode de débogage Uniquement mon code. Uniquement mon code masque le code non\-utilisateur pour l'empêcher d'apparaître dans les fenêtres du débogueur. Lorsque vous parcourez le code, le débogueur parcourt le code de non\-utilisateur sans s'y arrêter. Voir [Uniquement mon code](../debugger/just-my-code.md)  
+## <a name="BKMK_Restrict_stepping_to_Just_My_Code"></a>Step into non-user code  
+ By default, the debugger tries to show you only your app code while debugging, which is determined by a debugger setting called *Just My Code*. (See [Just My Code](../debugger/just-my-code.md) to see how this works for different project types and languages and how you might customize the behavior.) However, sometimes while you are debugging, you might want to look at framework code, third-party library code, or calls to the operating system (system calls).  
+  
+ You can turn off Just My Code  by going to **Tools** > **Options** > **Debugging** and clear the **Enable Just My Code** checkbox.  
+  
+ When Just My Code is disabled, the debugger can step into non-user code and non-user code appears in the debugger windows.  
   
 > [!NOTE]
->  Uniquement mon code n'est pas pris en charge pour les projets Smart Device.  
+>  Just My Code is not supported for device projects.  
   
-##  <a name="BKMK_Step_into_system_calls"></a> Effectuer un pas à pas détaillé dans des appels système  
- Si vous avez chargé des symboles de débogage pour le code système et que l'option Uniquement mon code n'est pas activée, vous pouvez effectuer un pas à pas détaillé dans un appel système tout comme s'il s'agissait de n'importe quel autre appel.  
+ **Step into system calls**  
   
- Pour accéder aux fichiers de symboles Microsoft, consultez la section [Utiliser des serveurs de symboles pour rechercher des fichiers de symboles qui ne sont pas sur votre ordinateur local](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md#BKMK_Use_symbol_servers_to_find_symbol_files_not_on_your_local_machine) dans la rubrique [Spécifier les fichiers de symbole \(.pdb\) et les fichiers sources](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md).  
+ If you have loaded debugging symbols for system code and Just My Code is not enabled, you can step into a system call just as you can any other call.  
   
- Pour charger des symboles pour un composant système spécifique lors du débogage :  
+ To access Microsoft symbol files, see [Use symbol servers to find symbol files not on your local machine](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md#BKMK_Use_symbol_servers_to_find_symbol_files_not_on_your_local_machine) in the [Specify Symbol (.pdb) and Source Files](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md) topic.  
   
-1.  Ouvrez la fenêtre Modules \(raccourci : **Ctrl\+Alt\+U**\).  
+ To load symbols for a specific system component while you are debugging:  
   
-2.  Sélectionnez le module pour lequel vous souhaitez charger des symboles.  
+1.  Open the Modules window (keyboard: **Ctrl + Alt + U**).  
   
-     Consultez la colonne **État du symbole** pour connaître les modules qui possèdent des symboles chargés.  
+2.  Select the module that you want to load symbols for.  
   
-3.  Choisissez **Charger les symboles** dans le menu contextuel.  
+     You can tell which modules have symbols loaded by looking at the **Symbol Status** column.  
   
-##  <a name="BKMK_Step_into_properties_and_operators_in_managed_code"></a> Effectuer un pas à pas détaillé dans des propriétés et des opérateurs au sein du code managé  
- Par défaut, le débogueur effectue un pas à pas principal sur les propriétés et les opérateurs dans le code managé. Dans la plupart des cas, cela fournit une meilleure expérience de débogage. Pour activer le pas à pas détaillé des propriétés ou des opérateurs, choisissez **Déboguer**, **Options et paramètres**. Dans la page **Débogage**, **Général**, désactivez la case à cocher **Pas à pas principal dans les propriétés et les opérateurs \(Managé uniquement\)**.
+3.  Choose **Load Symbols** on the context menu.  
+  
+##  <a name="BKMK_Step_into_properties_and_operators_in_managed_code"></a> Step into properties and operators in managed code  
+ The debugger steps over properties and operators in managed code by default. In most cases, this provides a better debugging experience. To enable stepping into properties or operators, choose **Debug** > **Options**. On the **Debugging** > **General** page, clear the **Step over properties and operators (Managed only)** check box

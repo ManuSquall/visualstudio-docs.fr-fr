@@ -1,38 +1,55 @@
 ---
-title: "Erreur&#160;: RPC requiert une authentification | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-debug"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "vs.debug.error.rpc_requires_authentication"
-dev_langs: 
-  - "FSharp"
-  - "VB"
-  - "CSharp"
-  - "C++"
+title: 'Error: RPC Requires Authentication | Microsoft Docs'
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology:
+- vs-ide-debug
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords:
+- vs.debug.error.rpc_requires_authentication
+dev_langs:
+- CSharp
+- VB
+- FSharp
+- C++
 ms.assetid: 88362b3b-8fbe-431f-96a4-80e2d822bbc7
 caps.latest.revision: 11
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 11
----
-# Erreur&#160;: RPC requiert une authentification
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+translation.priority.ht:
+- cs-cz
+- de-de
+- es-es
+- fr-fr
+- it-it
+- ja-jp
+- ko-kr
+- pl-pl
+- pt-br
+- ru-ru
+- tr-tr
+- zh-cn
+- zh-tw
+ms.translationtype: HT
+ms.sourcegitcommit: 9e6c28d42bec272c6fd6107b4baf0109ff29197e
+ms.openlocfilehash: 862fd47d67bc46bc727954739c8dd24218c69377
+ms.contentlocale: fr-fr
+ms.lasthandoff: 08/22/2017
 
-Le débogueur Visual Studio ne peut pas se connecter à l'ordinateur distant.  Une stratégie RPC est activée sur l'ordinateur local qui empêche le débogage distant.  
+---
+# <a name="error-rpc-requires-authentication"></a>Error: RPC Requires Authentication
+The Visual Studio debugger cannot connect to the remote computer. An RPC policy is enabled on the local computer which prevents remote debugging.  
   
-### Pour corriger cette erreur  
+### <a name="to-correct-this-error"></a>To correct this error  
   
-1.  Exécutez `\`*windir*`\system32\regedt32.exe`  
+1.  Run `\`*windir*`\system32\regedt32.exe`  
   
-2.  Recherchez et supprimez `HKEY_LOCAL_MACHINE\Software\Policies\Microsoft\Windows NT\RPC\RestrictRemoteClients`.  
+2.  Locate and delete `HKEY_LOCAL_MACHINE\Software\Policies\Microsoft\Windows NT\RPC\RestrictRemoteClients`.  
   
-3.  Redémarrez votre ordinateur afin que la modification du Registre entre en vigueur.  
+3.  Restart your computer so the registry change will take effect.  
   
-4.  Si le problème persiste, contactez votre administrateur de domaine à propos du paramètre de stratégie de groupe Configuration de l'ordinateur\-\>Modèles d'administration\-\>Système\-\>Appel de procédure distante\>Restrictions pour les clients à distance RPC non authentifiés.
+4.  If the problem persists, contact your domain administrator about the **Computer Configuration > Administrative Templates > System > Remote Procedure Call > Restrictions for Unauthenticated RPC clients** group policy setting.

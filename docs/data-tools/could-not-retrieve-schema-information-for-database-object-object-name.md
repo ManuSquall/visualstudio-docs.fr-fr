@@ -1,27 +1,46 @@
 ---
-title: "Impossible d&#39;extraire les informations de sch&#233;ma pour l&#39;objet de base de donn&#233;es &lt;nom de l&#39;objet&gt; | Microsoft Docs"
-ms.custom: ""
-ms.date: "12/14/2016"
-ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+title: Could not retrieve schema information for database object &lt;object name&gt; | Microsoft Docs
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.tgt_pltfrm: 
+ms.topic: article
 ms.assetid: a1c8f833-c918-4a86-9679-d2a791f938a9
 caps.latest.revision: 3
-caps.handback.revision: 1
-author: "mikeblome"
-ms.author: "mblome"
-manager: "ghogen"
+author: mikeblome
+ms.author: mblome
+manager: ghogen
+translation.priority.ht:
+- de-de
+- es-es
+- fr-fr
+- it-it
+- ja-jp
+- ko-kr
+- ru-ru
+- zh-cn
+- zh-tw
+translation.priority.mt:
+- cs-cz
+- pl-pl
+- pt-br
+- tr-tr
+ms.translationtype: HT
+ms.sourcegitcommit: 9e6c28d42bec272c6fd6107b4baf0109ff29197e
+ms.openlocfilehash: 78c409016c5526fc1fb1f9870a2da45c3a0aae93
+ms.contentlocale: fr-fr
+ms.lasthandoff: 08/22/2017
+
 ---
-# Impossible d&#39;extraire les informations de sch&#233;ma pour l&#39;objet de base de donn&#233;es &lt;nom de l&#39;objet&gt;
-Ce message apparaît généralement lorsqu'un objet dans l'**Explorateur de serveurs\/Explorateur de bases de données** est copié vers le Presse\-papiers, supprimé de la base de données, puis collé dans le concepteur.Parce que l'objet de base de données n'existe plus, ce message apparaît.  
+# <a name="could-not-retrieve-schema-information-for-database-object-object-name"></a>Could not retrieve schema information for database object \<object name>
+This message typically appears when an object in **Server Explorer/Database Explorer** is copied to the clipboard, deleted from the database, and then pasted onto the designer. Because the database object no longer exists, this message appears.  
   
-### Pour corriger cette erreur  
+### <a name="to-correct-this-error"></a>To correct this error  
   
--   Cliquez sur **OK** pour fermer la boîte de dialogue.  
+-   Click **OK** to dismiss the dialog box.  
   
-## Voir aussi  
- [Vue d'ensemble du Concepteur O\/R](../Topic/LINQ%20to%20SQL%20Tools%20in%20Visual%20Studio1.md)   
- [Procédure pas à pas : création de classes LINQ to SQL \(Concepteur O\/R\)](../Topic/Walkthrough:%20Creating%20LINQ%20to%20SQL%20Classes%20\(O-R%20Designer\).md)   
- [LINQ à SQL](../Topic/LINQ%20to%20SQL.md)
+## <a name="see-also"></a>See Also  
+ [LINQ to SQL Tools in Visual Studio](../data-tools/linq-to-sql-tools-in-visual-studio2.md)   
+ [Walkthrough: Creating LINQ to SQL Classes (O-R Designer)](how-to-create-linq-to-sql-classes-mapped-to-tables-and-views-o-r-designer.md)   
+ [LINQ to SQL](/dotnet/framework/data/adonet/sql/linq/index)

@@ -1,66 +1,83 @@
 ---
-title: "Erreur&#160;: L&#39;authentification Kerberos a &#233;chou&#233; | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-debug"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "vs.debug.error.callback_kerberos_auth_failed"
-dev_langs: 
-  - "FSharp"
-  - "VB"
-  - "CSharp"
-  - "C++"
+title: 'Error: Kerberos Authentication Failed | Microsoft Docs'
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology:
+- vs-ide-debug
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords:
+- vs.debug.error.callback_kerberos_auth_failed
+dev_langs:
+- CSharp
+- VB
+- FSharp
+- C++
 ms.assetid: c18053f9-9074-4bc3-a8bf-13e4acbea921
 caps.latest.revision: 7
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 7
----
-# Erreur&#160;: L&#39;authentification Kerberos a &#233;chou&#233;
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+translation.priority.ht:
+- cs-cz
+- de-de
+- es-es
+- fr-fr
+- it-it
+- ja-jp
+- ko-kr
+- pl-pl
+- pt-br
+- ru-ru
+- tr-tr
+- zh-cn
+- zh-tw
+ms.translationtype: HT
+ms.sourcegitcommit: 9e6c28d42bec272c6fd6107b4baf0109ff29197e
+ms.openlocfilehash: a118e8fa105902ce655aa91038c968dfe5a40d7c
+ms.contentlocale: fr-fr
+ms.lasthandoff: 08/22/2017
 
-Lorsque vous essayez d'effectuer un débogage distant, le message d'erreur suivant peut s'afficher :  
+---
+# <a name="error-kerberos-authentication-failed"></a>Error: Kerberos Authentication Failed
+When you try to do remote debugging, you might get the following error message:  
   
 ```  
-Error: The Visual Studio Remote Debugger on the target computer cannot connect back to this computer. Kerberos auythentication failed.  
+Error: The Visual Studio Remote Debugger on the target computer cannot connect back to this computer. Kerberos authentication failed.  
 ```  
   
- Cette erreur se produit lorsque Visual Studio Remote Debugging Monitor est exécuté sous le compte Système local ou Service réseau.  Sous l'un de ces comptes, le débogueur distant doit établir une connexion d'authentification Kerberos pour communiquer avec l'ordinateur hôte du débogueur Visual Studio.  
+ This error occurs when the Visual Studio Remote Debugging Monitor is running under the Local System or Network Service account. Under one of these accounts, the remote debugger must establish a Kerberos authentication connection to communicate back to the Visual Studio debugger host computer.  
   
- L'authentification Kerberos n'est pas disponible dans les conditions suivantes :  
+ Kerberos authentication is not available under these conditions:  
   
--   L'ordinateur cible ou l'ordinateur hôte du débogueur est situé sur un groupe de travail, au lieu d'un domaine.  
+-   Either the target computer or the debugger host computer is on a workgroup, instead of a domain  
   
-     \- ou \-  
+     \- or -  
   
--   Kerberos a été désactivé sur le contrôleur de domaine.  
+-   Kerberos has been disabled on the domain controller.  
   
- Si l'authentification Kerberos n'est pas disponible, modifiez le compte utilisé pour exécuter Visual Studio Remote Debugging Monitor.  Pour afficher la procédure, consultez [Erreur : Le service Débogueur distant Visual Studio sur l'ordinateur cible ne peut pas se reconnecter à cet ordinateur](../debugger/error-the-visual-studio-remote-debugger-service-on-the-target-computer-cannot-connect-back-to-this-computer.md).  
+ If Kerberos authentication is not available, change the account that is used to run the Visual Studio Remote Debugging Monitor. For the procedure, see [Error: The Visual Studio Remote Debugger service on the target computer cannot connect back to this computer](../debugger/error-the-visual-studio-remote-debugger-service-on-the-target-computer-cannot-connect-back-to-this-computer.md).  
   
- Si ce message s'affiche encore alors que les deux ordinateurs sont connectés au même domaine, vérifiez que le DNS sur l'ordinateur cible résout correctement le nom de l'ordinateur hôte du débogueur.  Consultez la procédure suivante.  
+ If both computers are connected to the same domain and you still get this message, verify that DNS on the target computer is correctly resolving the name of the debugger host computer. See the following procedure.  
   
-### Pour vérifier que le DNS sur l'ordinateur cible résout correctement le nom de l'ordinateur hôte du débogueur  
+### <a name="to-verify-that-dns-on-the-target-computer-is-correctly-resolving-the-debugger-host-computer-name"></a>To verify that DNS on the target computer is correctly resolving the debugger host computer name  
   
-1.  Sur l'ordinateur cible, ouvrez le menu **Démarrer**, pointez sur **Accessoires**, puis cliquez sur **Invite de commandes**.  
+1.  On the target computer, open the **Start** menu, point to **Accessories** and then click **Command Prompt**.  
   
-2.  Dans la fenêtre **Invite de commandes**, tapez :  
+2.  In the **Command Prompt** window, type:  
   
     ```  
     ping <debugger_host_computer_name>  
     ```  
   
-3.  La première ligne de la réponse `ping` affiche le nom complet et l'adresse IP renvoyés par le DNS pour l'ordinateur spécifié.  
+3.  The first line of the `ping` response shows the full computer name and IP address returned by DNS for the specified computer.  
   
-4.  Sur l'ordinateur hôte du débogueur, ouvrez une fenêtre d'**invite de commandes** et exécutez `ipconfig`.  
+4.  On the debugger host computer, open a **Command Prompt** window and run `ipconfig`.  
   
-5.  Comparez les valeurs d'adresse IP.  
+5.  Compare the IP address values.  
   
-## Voir aussi  
- [Erreurs de débogage distant et dépannage](../debugger/remote-debugging-errors-and-troubleshooting.md)   
- [Débogage distant](../debugger/remote-debugging.md)
+## <a name="see-also"></a>See Also  
+ [Remote Debugging Errors and Troubleshooting](../debugger/remote-debugging-errors-and-troubleshooting.md)   
+ [Remote Debugging](../debugger/remote-debugging.md)

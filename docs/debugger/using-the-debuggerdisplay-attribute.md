@@ -1,109 +1,126 @@
 ---
-title: "Utilisation de l’attribut DebuggerDisplay | Microsoft Docs"
-ms.custom: ""
-ms.date: "12/14/2016"
-ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-debug"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-dev_langs: 
-  - "FSharp"
-  - "VB"
-  - "CSharp"
-  - "C++"
-helpviewer_keywords: 
-  - "attributs (C#), débogueur"
-  - "DebuggerDisplay (attribut)"
-  - "DebuggerDisplayAttribute (classe)"
+title: Using the DebuggerDisplay Attribute | Microsoft Docs
+ms.custom: 
+ms.date: 08/09/2017
+ms.reviewer: 
+ms.suite: 
+ms.technology:
+- vs-ide-debug
+ms.tgt_pltfrm: 
+ms.topic: article
+dev_langs:
+- CSharp
+- VB
+- FSharp
+- C++
+helpviewer_keywords:
+- attributes [C#], debugger
+- DebuggerDisplay attribute
+- DebuggerDisplayAttribute class
 ms.assetid: f4eb7c76-af4e-493b-9ab6-9cb05949d9b3
 caps.latest.revision: 47
-caps.handback.revision: 47
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
----
-# Utilisation de l’attribut DebuggerDisplay
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+translation.priority.ht:
+- de-de
+- es-es
+- fr-fr
+- it-it
+- ja-jp
+- ko-kr
+- ru-ru
+- zh-cn
+- zh-tw
+translation.priority.mt:
+- cs-cz
+- pl-pl
+- pt-br
+- tr-tr
+ms.translationtype: HT
+ms.sourcegitcommit: 9e6c28d42bec272c6fd6107b4baf0109ff29197e
+ms.openlocfilehash: 9c79cbf6f99ada07f84e54495ed492595f9b4ea0
+ms.contentlocale: fr-fr
+ms.lasthandoff: 08/22/2017
 
-La [DebuggerDisplayAttribute Classe](../Topic/DebuggerDisplayAttribute%20Class.md) contrôle la façon dont un objet, une propriété ou un champ s’affiche dans les fenêtres de variables du débogueur. Cet attribut peut être appliqué aux éléments suivants : types, délégués, propriétés, champs et assemblys.  
+---
+# <a name="using-the-debuggerdisplay-attribute"></a>Using the DebuggerDisplay Attribute
+The [DebuggerDisplayAttribute Class](/dotnet/api/system.diagnostics.debuggerdisplayattribute) controls how an object, property, or field is displayed in the debugger variable windows. This attribute can be applied to types, delegates, properties, fields, and assemblies.  
   
- L'attribut `DebuggerDisplay` possède un seul argument, qui est une chaîne à afficher dans la colonne valeur des instances du type. Cette chaîne peut contenir des accolades \(`{` et `}`\). Le texte entre deux accolades est évalué comme un champ, une propriété ou une méthode.  
+ The `DebuggerDisplay` attribute has a single argument, which is a string to be displayed in the value column for instances of the type. This string can contain braces (`{` and `}`). Text within a pair of braces is evaluated as a field, property or method.  
   
- Si une classe possède une méthode `ToString()` substituée, le débogueur utilise la méthode substituée à la place du `{<typeName>}` par défaut. Si vous avez substitué la méthode `ToString()`, le débogueur utilise la méthode substituée à la place du `{<typeName>}` par défaut. Il est donc inutile d’utiliser `DebuggerDisplay`. Si vous utilisez les deux, l’attribut `DebuggerDisplay` est prioritaire sur la méthode `ToString()` substituée.  
+ If a class has an overridden `ToString()` method, the debugger uses the overridden method instead of the default `{<typeName>}`. Thus, if you have overridden the `ToString()` method, the debugger uses the overridden method instead of the default`{<typeName>}`, and you do not have to use `DebuggerDisplay`. If you use both, the `DebuggerDisplay` attribute takes precedence over the  overridden `ToString()` method.  
   
- L’évaluation par le débogueur de cet appel `ToString()` implicite dépend d’un paramètre utilisateur dans la boîte de dialogue **Outils \/ Options \/ Débogage**. Visual Basic n’implémente pas cette évaluation `ToString()` implicite.  
+ Whether the debugger evaluates this implicit `ToString()` call depends on a user setting in the **Tools / Options / Debugging** dialog box . Visual Basic does not implement this implicit `ToString()` evaluation.  
   
 > [!IMPORTANT]
->  Si la case **Afficher la structure brute des objets dans des fenêtres de variables** est cochée dans la boîte de dialogue **Outils \/ Options \/ Débogage**, l’attribut `DebuggerDisplay` est ignoré.  
+>  If the **Show raw structure of objects in variables windows** check box is selected in the **Tools /Options / Debugging** dialog box, then the `DebuggerDisplay` attribute is ignored.  
   
- Le tableau suivant montre quelques\-unes des utilisations possibles de l'attribut `DebuggerDisplay` et quelques exemples de sorties.  
+ The following table shows some possible uses of the `DebuggerDisplay` attribute and example outputs.  
   
-|Attribut|Sortie \(affichée dans la colonne **Valeur**\)|  
-|--------------|----------------------------------------------------|  
-|`[DebuggerDisplay("x = {x} y = {y}")]`<br /><br /> Utilisé sur un type avec champs `x` et `y`.|`x = 5 y = 18`|  
-|`[DebuggerDisplay("String value is {getString()}")]`La syntaxe des paramètres peut varier d'un langage à l'autre. Par conséquent, soyez vigilant dans son emploi.|`String value is [5, 6, 6]`|  
+|Attribute|Output appearing in the Value column|  
+|---------------|------------------------------------------------|  
+|`[DebuggerDisplay("x = {x} y = {y}")]`<br /><br /> Used on a type with fields `x` and `y`.|`x = 5 y = 18`|  
+|`[DebuggerDisplay("String value is {getString()}")]`Parameter syntax can vary between languages. Therefore, use it with care.|`String value is [5, 6, 6]`|  
   
- `DebuggerDisplay` peut également accepter des paramètres nommés.  
+ `DebuggerDisplay` can also accept named parameters.  
   
-|Paramètres|Objectif|  
-|----------------|--------------|  
-|`Name`, `Type`|Ces paramètres affectent les colonnes **Nom** et **Type** des fenêtres de variables. \(Ils peuvent être appliqués aux chaînes à l'aide de la même syntaxe que le constructeur\). Une utilisation excessive ou inappropriée de ces paramètres peut générer un résultat confus.|  
-|`Target`, `TargetTypeName`|Spécifie le type cible lorsque l'attribut est utilisé au niveau de l'assembly.|  
+|Parameters|Purpose|  
+|----------------|-------------|  
+|`Name`, `Type`|These parameters affect the **Name** and **Type** columns of the variable windows. (They can be set to strings using the same syntax as the constructor.)Overusing these parameters, or using them incorrectly, can cause confusing output.|  
+|`Target`, `TargetTypeName`|Specifies the target type when the attribute is used at the assembly level.|  
   
- Le fichier autoexp.cs utilise l’attribut DebuggerDisplay au niveau de l’assembly. Le fichier autoexp.cs détermine les expansions par défaut utilisées par Visual Studio pour les objets .NET. Vous pouvez examiner le fichier autoexp.cs pour obtenir des exemples d’utilisation de l’attribut DebuggerDisplay, ou modifier et compiler le fichier autoexp.cs pour changer les expansions par défaut. Assurez\-vous d'avoir sauvegardé le fichier autoexp.cs avant de le modifier.  
+ The autoexp.cs file uses the DebuggerDisplay attribute at the assembly level. The autoexp.cs file determines the default expansions that Visual Studio uses for .NET objects. You can examine the autoexp.cs file for examples of how to use the DebuggerDisplay attribute, or you can modify and compile the autoexp.cs file to change the default expansions. Be sure to back up the autoexp.cs file before you modify it.  
   
- Pour générer autoexp.cs, ouvrez une Invite de commandes développeur pour VS2015, puis exécutez les commandes suivantes :  
+ To build autoexp.cs, open up a Developer Command Prompt for VS2015, and run the following commands  
   
 ```  
 cd <directory containing autoexp.cs>  
 csc /t:library autoexp.cs  
 ```  
   
- Les modifications apportées à autoexp.dll seront récupérées lors de la prochaine session de débogage.  
+ The changes to autoexp.dll will be picked up in the next debug session.  
   
-## Utilisation d'expressions dans DebuggerDisplay  
- Bien que vous puissiez utiliser une expression générale à l'intérieur de l'accolade dans un attribut DebuggerDisplay, cette méthode n'est pas recommandée.  
+## <a name="using-expressions-in-debuggerdisplay"></a>Using Expressions in DebuggerDisplay  
+ Although you can use a general expression between the braces in a DebuggerDisplay attribute, this practice is not recommended.  
   
- Une expression générale DebuggerDisplay dispose d'un accès implicite au pointeur `this` pour l'instance actuelle du type de cible uniquement. L'expression n'a accès ni aux alias, ni aux variables locales, ni aux pointeurs. Si l'expression référence des propriétés, les attributs de ces propriétés ne sont pas traités. Par exemple, le code C\# `[DebuggerDisplay("Object {count - 2}"`  afficherait `Object 6` si le champ `count` avait la valeur 8.  
+ A general expression in DebuggerDisplay has implicit access to the `this` pointer for the current instance of the target type only. The expression has no access to aliases, locals, or pointers. If the expression references properties, attributes on those properties are not processed. For example, the C# code `[DebuggerDisplay("Object {count - 2}"`  would display `Object 6` if the field `count` was 8.  
   
- L'utilisation d'expressions dans DebuggerDisplay peut provoquer les problèmes suivants :  
+ Using expressions in DebuggerDisplay can lead to the following issues:  
   
--   L'évaluation des expressions est l'opération la plus coûteuse dans le débogueur et l'expression est évaluée chaque fois qu'elle est affichée. Cela peut provoquer des problèmes de performances pendant l'exécution du code pas à pas. Par exemple, une expression complexe qui est utilisée pour afficher des valeurs dans une collection ou une liste peut être très lente lorsque le nombre d'éléments est important.  
+-   Evaluating expressions is the most expensive operation in the debugger and the expression is evaluated each time it is displayed. This can cause performance issues in stepping through code. For example, a complex expression that is used to display the values in a collection or list can be very slow when the number of elements is large.  
   
--   Les expressions sont évaluées par l'évaluateur d'expression du langage du cadre de pile actuel et pas par l'évaluateur du langage dans lequel l'expression a été écrite. Cela peut provoquer des résultats inattendus lorsque les langages sont différents.  
+-   Expressions are evaluated by the expression evaluator of the language of the current stack frame and not by the evaluator of the language in which the expression was written. This can cause unpredictable results when the languages are different.  
   
--   L'évaluation d'une expression peut modifier l'état de l'application. Par exemple, une expression qui définit la valeur d'une propriété transforme la valeur d'une propriété dans le code en cours de exécution.  
+-   Evaluating an expression can change the state of the application. For example, an expression that sets the value of a property mutates the property value in the executing code.  
   
- Une façon de réduire les problèmes potentiels de l'évaluation de l'expression consiste à créer une propriété privée qui exécute l'opération et retourne une chaîne. L'attribut DebuggerDisplay peut ensuite afficher la valeur de cette propriété privée. L'exemple suivant implémente ce modèle :  
+ One way to reduce the possible problems of expression evaluation is by creating a private property that performs the operation and returns a string. The DebuggerDisplay attribute can then display the value of that private property. The following example implements this pattern:  
   
-```c#  
+```CSharp  
 [DebuggerDisplay("{DebuggerDisplay,nq}")]  
 public sealed class MyClass   
-{      
-    public int count { get; set; }      
-    public bool flag { get; set; }      
+{      
+    public int count { get; set; }      
+    public bool flag { get; set; }      
     private string DebuggerDisplay  
-   {         
+   {         
         get  
         {  
              return string.Format("("Object {0}", count - 2);  
-        }      
+        }      
     }  
 }  
 ```  
   
-## Exemple  
- L'exemple de code suivant explique l'utilisation de `DebuggerDisplay`, ainsi que de `DebuggerBrowseable` et `DebuggerTypeProxy`. Lorsqu'il s'affiche dans une fenêtre de variables du débogueur, comme la fenêtre **Espion**, il produit une expansion de ce genre :  
+## <a name="example"></a>Example  
+ The following code example shows how to use `DebuggerDisplay`, together with `DebuggerBrowseable` and `DebuggerTypeProxy`. When viewed in a debugger variables window, such as the **Watch** window, it produces an expansion that looks like this:  
   
-|**Nom**|**Valeur**|**Type**|  
-|-------------|----------------|--------------|  
-|Clé|"trois"|objet {string}|  
-|Valeur|3|objet {int}|  
+|**Name**|**Value**|**Type**|  
+|--------------|---------------|--------------|  
+|Key|"three"|object {string}|  
+|Value|3|object {int}|  
   
-```c#  
+```CSharp  
 [DebuggerDisplay("{value}", Name = "{key}")]  
 internal class KeyValuePairs  
 {  
@@ -179,7 +196,8 @@ class MyHashtable
 }  
 ```  
   
-## Voir aussi  
- [Utilisation de l'attribut DebuggerTypeProxy](../debugger/using-debuggertypeproxy-attribute.md)   
- [Affichage des types de données personnalisés](../debugger/create-custom-views-of-dot-managed-objects.md)   
- [Enhancing Debugging with the Debugger Display Attributes](../Topic/Enhancing%20Debugging%20with%20the%20Debugger%20Display%20Attributes.md)
+## <a name="see-also"></a>See Also  
+ [Using DebuggerTypeProxy Attribute](../debugger/using-debuggertypeproxy-attribute.md)   
+ [Create custom views of managed objects](../debugger/create-custom-views-of-dot-managed-objects.md)   
+ [Format specifiers in C#](../debugger/format-specifiers-in-csharp.md)   
+ [Enhancing Debugging with the Debugger Display Attributes](/dotnet/framework/debug-trace-profile/enhancing-debugging-with-the-debugger-display-attributes)

@@ -1,226 +1,244 @@
 ---
-title: "D&#233;boguer un ou plusieurs processus dans Visual Studio | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-debug"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "vs.debug.programs"
-  - "vs.debug.processes.attaching"
-  - "vs.debug.activeprogram"
-  - "vs.debug.attaching"
-  - "vs.debug.attachedprocesses"
-dev_langs: 
-  - "FSharp"
-  - "VB"
-  - "CSharp"
-  - "C++"
+title: Debug Multiple Processes | Microsoft Docs
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology:
+- vs-ide-debug
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords:
+- vs.debug.programs
+- vs.debug.processes.attaching
+- vs.debug.activeprogram
+- vs.debug.attaching
+- vs.debug.attachedprocesses
+dev_langs:
+- CSharp
+- VB
+- FSharp
+- C++
 ms.assetid: bde37134-66af-4273-b02e-05b3370c31ab
 caps.latest.revision: 16
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 16
----
-# D&#233;boguer un ou plusieurs processus dans Visual Studio
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+translation.priority.ht:
+- cs-cz
+- de-de
+- es-es
+- fr-fr
+- it-it
+- ja-jp
+- ko-kr
+- pl-pl
+- pt-br
+- ru-ru
+- tr-tr
+- zh-cn
+- zh-tw
+ms.translationtype: HT
+ms.sourcegitcommit: 9e6c28d42bec272c6fd6107b4baf0109ff29197e
+ms.openlocfilehash: 0acc1dc2ec66758d827d7acbc9c04538dfcb3882
+ms.contentlocale: fr-fr
+ms.lasthandoff: 08/22/2017
 
-Voici comment démarrer les processus de débogage, basculer d'un processus à un autre, arrêter et continuer l'exécution, parcourir la source, arrêter le débogage et mettre fin ou se détacher d'un processus.  
+---
+# <a name="debug-multiple-processes"></a>Debug Multiple Processes
+Here's how to start debugging processes, switch between processes, break and continue execution, step through source, stop debugging, and terminate or detach from processes.  
   
-##  <a name="BKMK_Contents"></a> Sommaire  
- [Configurer le comportement d'exécution de plusieurs processus](#BKMK_Configure_the_execution_behavior_of_multiple_processes)  
+##  <a name="BKMK_Configure_the_execution_behavior_of_multiple_processes"></a> Configure the execution behavior of multiple processes  
+ By default, when multiple processes are running in the debugger, the breaking, stepping, and stopping debugger commands usually affect all the processes. For example, when one process is suspended at a breakpoint, the execution of all other processes is also suspended. You can change this default behavior to gain more control over the targets of execution commands.  
   
- [Rechercher les fichiers sources et de symboles (.pdb)](#BKMK_Find_the_source_and_symbol___pdb__files)  
+1.  Click **Debug > Options and Settings**.  
   
- [Démarrer plusieurs processus d'une solution VS, attacher à un processus, démarrer automatiquement un processus dans le débogueur](#BKMK_Start_multiple_processes_in_a_VS_solution__attach_to_a_process__automatically_start_a_process_in_the_debugger)  
+2.  On the **Debugging**, **General** page, clear the **Break all processes when one process breaks** check box.  
   
- [Basculer les processus, arrêter et poursuivre l'exécution, accéder à la source](#BKMK_Switch_processes__break_and_continue_execution__step_through_source)  
+ ![Back to top](../debugger/media/pcs_backtotop.png "PCS_BackToTop") [Contents](#BKMK_Contents)  
   
- [Arrêter le débogage, le terminer ou le détacher des processus](#BKMK_Stop_debugging__terminate_or_detach_from_processes)  
+##  <a name="BKMK_Find_the_source_and_symbol___pdb__files"></a> Find the source and symbol (.pdb) files  
+ To navigate the source code of a process, the debugger needs access to the source files and symbol files of the process. See [Specify Symbol (.pdb) and Source Files](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md).  
   
-##  <a name="BKMK_Configure_the_execution_behavior_of_multiple_processes"></a> Configurer le comportement d'exécution de plusieurs processus  
- Par défaut, lorsque plusieurs processus s'exécutent dans le débogueur, les commandes de saut, de progression et d'arrêt du débogueur affectent généralement tous les processus.  Par exemple, lorsqu'un processus est interrompu à un point d'arrêt, l'exécution de tous les autres processus est également interrompu.  Vous pouvez modifier ce comportement par défaut pour mieux contrôler les cibles des commandes d'exécution.  
+ If you can't access the files for a process, you can navigate by using the Disassembly window. See [How to: Use the Disassembly Window](../debugger/how-to-use-the-disassembly-window.md)  
   
-1.  Dans le menu **Déboguer**, choisissez **Options et paramètres**.  
+ ![Back to top](../debugger/media/pcs_backtotop.png "PCS_BackToTop") [Contents](#BKMK_Contents)  
   
-2.  Sur la page **Débogage**, **Général**, désactivez la case à cocher **Arrêter tous les processus lorsqu'un processus s'arrête**.  
+##  <a name="BKMK_Start_multiple_processes_in_a_VS_solution__attach_to_a_process__automatically_start_a_process_in_the_debugger"></a> Start multiple processes in a VS solution, attach to a process, automatically start a process in the debugger  
   
- ![Retour au début](~/debugger/media/pcs_backtotop.png "PCS\_BackToTop") [Sommaire](#BKMK_Contents)  
+-   [Start debugging multiple processes in a Visual Studio solution](#BKMK_Start_debugging_multiple_processes_in_a_Visual_Studio_solution)  
   
-##  <a name="BKMK_Find_the_source_and_symbol___pdb__files"></a> Rechercher les fichiers sources et de symboles \(.pdb\)  
- Pour parcourir le code source d'un processus, le débogueur doit accéder aux fichiers sources et aux fichiers de symboles du processus.  Consultez [Spécifier les fichiers de symbole \(.pdb\) et les fichiers sources](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md).  
+-   [Change the startup project](#BKMK_Change_the_startup_project)  
   
- Si vous ne pouvez pas accéder aux fichiers pour un processus, vous pouvez naviguer en utilisant la fenêtre Code Machine.  Consultez [Comment : utiliser la fenêtre Code Machine](../debugger/how-to-use-the-disassembly-window.md).  
+-   [Start a specific project in a solution](#BKMK_Start_a_specific_project_in_a_solution)  
   
- ![Retour au début](~/debugger/media/pcs_backtotop.png "PCS\_BackToTop") [Sommaire](#BKMK_Contents)  
+-   [Start multiple projects in a solution](#BKMK_Start_multiple_projects_in_a_solution)  
   
-##  <a name="BKMK_Start_multiple_processes_in_a_VS_solution__attach_to_a_process__automatically_start_a_process_in_the_debugger"></a> Démarrer plusieurs processus d'une solution VS, attacher à un processus, démarrer automatiquement un processus dans le débogueur  
+-   [Attach to a process](#BKMK_Attach_to_a_process)  
   
--   [Démarrer plusieurs processus de débogage dans une solution Visual Studio](#BKMK_Start_debugging_multiple_processes_in_a_Visual_Studio_solution) • [Modifier le projet de démarrage](#BKMK_Change_the_startup_project) • [Exécuter un projet spécifique dans une solution](#BKMK_Start_a_specific_project_in_a_solution) • [Démarrer plusieurs projets dans une solution](#BKMK_Start_multiple_projects_in_a_solution) • [Attacher à un processus](#BKMK_Attach_to_a_process) • [Démarrer automatiquement un processus du débogueur](#BKMK_Automatically_start_an_process_in_the_debugger)  
-  
-> [!NOTE]
->  Le débogueur n'effectue pas un attachement automatique à un processus enfant démarré par un processus débogué, même si le projet enfant se trouve dans la même solution.  Pour déboguer un processus enfant :  
->   
->  -   Effectuez un attachement au processus enfant après son démarrage.  
->   
->      ou  
-> -   Configurez Windows pour démarrer automatiquement le processus enfant dans une nouvelle instance du débogueur.  
-  
-###  <a name="BKMK_Start_debugging_multiple_processes_in_a_Visual_Studio_solution"></a> Démarrer plusieurs processus de débogage dans une solution Visual Studio  
- Lorsque vous disposez de plusieurs projets dans une solution Visual Studio qui peuvent s'exécuter indépendamment \(projets qui s'exécutent dans des processus distincts\), vous pouvez sélectionner les projets que le débogueur démarre.  
-  
- ![Modification du type de démarrage pour un projet](../debugger/media/dbg_execution_startmultipleprojects.png "DBG\_Execution\_StartMultipleProjects")  
-  
-####  <a name="BKMK_Change_the_startup_project"></a> Modifier le projet de démarrage  
- Pour modifier le projet de démarrage d'une solution, sélectionnez le projet dans l'Explorateur de solutions, puis choisissez **Définir comme projet de démarrage** dans le menu contextuel.  
-  
-####  <a name="BKMK_Start_a_specific_project_in_a_solution"></a> Exécuter un projet spécifique dans une solution  
- Pour démarrer un projet pour une solution sans modifier le projet de démarrage par défaut, sélectionnez le projet dans l'Explorateur de solutions, puis choisissez **Déboguer** dans le menu contextuel.  Vous pouvez ensuite sélectionner **Démarrer une nouvelle instance** ou **Pas à pas détaillé dans la nouvelle instance**.  
-  
- ![Retour au début](~/debugger/media/pcs_backtotop.png "PCS\_BackToTop") [Démarrer plusieurs processus d'une solution VS, attacher à un processus, démarrer automatiquement un processus dans le débogueur](../debugger/debug-multiple-processes.md#BKMK_Start_multiple_processes_in_a_VS_solution__attach_to_a_process__automatically_start_a_process_in_the_debugger)  
-  
- ![Retour au début](~/debugger/media/pcs_backtotop.png "PCS\_BackToTop") [Sommaire](#BKMK_Contents)  
-  
-####  <a name="BKMK_Start_multiple_projects_in_a_solution"></a> Démarrer plusieurs projets dans une solution  
-  
-1.  Dans l'Explorateur de solutions, sélectionnez la solution puis, dans le menu contextuel, sélectionnez **Propriétés**.  
-  
-2.  Sélectionnez **Propriétés communes**, **Projet de démarrage** dans la boîte de dialogue **Propriétés**.  
-  
-3.  Pour chaque projet à modifier, choisissez **Démarrer**, **Exécuter sans débogage** ou **Aucun**.  
-  
- ![Retour au début](~/debugger/media/pcs_backtotop.png "PCS\_BackToTop") [Démarrer plusieurs processus d'une solution VS, attacher à un processus, démarrer automatiquement un processus dans le débogueur](../debugger/debug-multiple-processes.md#BKMK_Start_multiple_processes_in_a_VS_solution__attach_to_a_process__automatically_start_a_process_in_the_debugger)  
-  
- ![Retour au début](~/debugger/media/pcs_backtotop.png "PCS\_BackToTop") [Sommaire](#BKMK_Contents)  
-  
-###  <a name="BKMK_Attach_to_a_process"></a> Attacher à un processus  
- Le débogueur peut également *s'attacher* aux programmes qui s'exécutent dans des processus en dehors de Visual Studio, notamment les programmes qui s'exécutent sur un périphérique distant.  Une fois l'attachement au programme effectué, vous pouvez utiliser les commandes d'exécution du débogueur, inspecter l'état du programme, et ainsi de suite.  Les possibilités d'inspection peuvent dépendre de la présence d'informations de débogage dans le programme, de vos droits d'accès au code source de ce dernier et du suivi des informations de débogage par le compilateur JIT Common Language Runtime.  
-  
- Pour plus d'informations, consultez [Attacher aux processus en cours d'exécution](../debugger/attach-to-running-processes-with-the-visual-studio-debugger.md).  
-  
- **Attacher à un processus qui s'exécute sur votre ordinateur local**  
-  
- Sélectionnez **Déboguer**, **Attacher au processus**.  Dans la boîte de dialogue **Attacher au processus**, sélectionnez le processus dans la liste **Processus disponibles**, puis choisissez **Attacher**.  
-  
- ![Boîte de dialogue Attacher au processus](../debugger/media/dbg_attachtoprocessdlg.png "DBG\_AttachToProcessDlg")  
-  
- ![Retour au début](~/debugger/media/pcs_backtotop.png "PCS\_BackToTop") [Sommaire](#BKMK_Contents)  
-  
-###  <a name="BKMK_Automatically_start_an_process_in_the_debugger"></a> Démarrer automatiquement un processus du débogueur  
- Il peut être utile de déboguer le code de démarrage d'un programme lancé par un autre processus.  C'est le cas des services et des actions d'installation personnalisée.  Dans ces scénarios, il est possible de demander un lancement du débogueur et sa connexion automatique au démarrage de l'application.  
-  
-1.  Démarrez l'Éditeur du Registre \(**regedit.exe**\).  
-  
-2.  Accédez au dossier **HKEY\_LOCAL\_MACHINE\\Software\\Microsoft\\Windows NT\\CurrentVersion\\Image File Execution Options**.  
-  
-3.  Sélectionnez le dossier de l'application à démarrer dans le débogueur.  
-  
-     Si le nom de l'application n'est pas répertorié comme dossier enfant, sélectionnez **Options d'exécution de fichier image** puis **Nouveau**, **Clé** dans le menu contextuel.  Sélectionnez la nouvelle clé, choisissez **Renommer** dans le menu contextuel, puis entrez le nom de l'application.  
-  
-4.  Dans le menu contextuel du dossier d'application, choisissez **Nouveau**, **Valeur de chaîne**.  
-  
-5.  Modifiez le nom de la nouvelle valeur de **New Value** en `débogueur`.  
-  
-6.  Dans le menu contextuel de l'entrée du débogueur, choisissez **Modifier**.  
-  
-7.  Dans la boîte de dialogue Modification de la chaîne, tapez `vsjitdebugger.exe` dans la zone **Données de la valeur**.  
-  
-     ![Boîte de dialogue Modification de la chaîne](../debugger/media/dbg_execution_automaticstart_editstringdlg.png "DBG\_Execution\_AutomaticStart\_EditStringDlg")  
-  
- ![Entrée de démarrage du débogueur automatique dans regedit.exe](~/debugger/media/dbg_execution_automaticstart_result.png "DBG\_Execution\_AutomaticStart\_Result")  
-  
- ![Retour au début](~/debugger/media/pcs_backtotop.png "PCS\_BackToTop") [Sommaire](#BKMK_Contents)  
-  
-##  <a name="BKMK_Switch_processes__break_and_continue_execution__step_through_source"></a> Basculer les processus, arrêter et poursuivre l'exécution, accéder à la source  
-  
--   [Basculer entre les processus](#BKMK_Switch_between_processes) • [Commandes Arrêter, Exécuter pas à pas, Continuer](#BKMK_Break__step__and_continue_commands)  
-  
-###  <a name="BKMK_Switch_between_processes"></a> Basculer entre les processus  
- Pendant un débogage, vous pouvez attacher plusieurs processus à la fois, mais seul l'un d'entre eux est actif dans le débogueur à un moment donné.  Vous pouvez définir le processus actif ou *actuel* dans la barre d'outils Emplacement de débogage ou dans la fenêtre **Processus**.  Pour basculer entre les processus, les deux processus doivent être en mode arrêt.  
-  
- **Pour définir le processus en cours**  
-  
--   Dans la barre d'outils Emplacement de débogage, choisissez **Processus** pour afficher la zone de liste **Processus**.  Sélectionnez le processus que vous souhaitez désigner comme processus actuel.  
-  
-     ![Basculer entre processus](../debugger/media/dbg_execution_switchbetweenmodules.png "DBG\_Execution\_SwitchBetweenModules")  
-  
-     Si la barre d'outils **Emplacement de débogage** n'est pas visible, sélectionnez **Outils**, **Personnaliser**.  Sous l'onglet **Barres d'outils**, choisissez **Emplacement de débogage**.  
-  
--   Ouvrez la fenêtre **Processus** \(raccourci **Ctrl\+Alt\+Z**\), recherchez le processus que vous souhaitez définir comme processus actuel et double\-cliquez dessus.  
-  
-     ![Fenêtre Processus](../debugger/media/dbg_processeswindow.png "DBG\_ProcessesWindow")  
-  
-     Le processus actuel est marqué par une flèche jaune.  
-  
- Basculer vers un projet en fait le processus en cours du débogage.  La fenêtre de débogueur que vous voyez affiche l'état du processus actuel, et toutes les commandes de progression n'affectent que le processus actuel.  
-  
- ![Retour au début](~/debugger/media/pcs_backtotop.png "PCS\_BackToTop") [Basculer les processus, arrêter et poursuivre l'exécution, accéder à la source](../debugger/debug-multiple-processes.md#BKMK_Switch_processes__break_and_continue_execution__step_through_source)  
-  
- ![Retour au début](~/debugger/media/pcs_backtotop.png "PCS\_BackToTop") [Sommaire](#BKMK_Contents)  
-  
-###  <a name="BKMK_Break__step__and_continue_commands"></a> Commandes Arrêter, Exécuter pas à pas, Continuer  
+-   [Automatically start a process in the debugger](#BKMK_Automatically_start_an_process_in_the_debugger)  
   
 > [!NOTE]
->  Par défaut, les commandes de débogage break, continue et step affectent tous les processus en cours de débogage.  Pour modifier ce comportement, consultez [Configurer le comportement d'exécution de plusieurs processus](#BKMK_Configure_the_execution_behavior_of_multiple_processes)  
+>  The debugger does not automatically attach to a child process that is started by a debugged process, even if the child project is in the same solution. To debug a child process:  
+>   
+>  -   Attach to the child process after it has been started.  
+>   
+>      -or-  
+> -   Configure Windows to automatically start the child process in a new instance of the debugger.  
+  
+###  <a name="BKMK_Start_debugging_multiple_processes_in_a_Visual_Studio_solution"></a> Start debugging multiple processes in a Visual Studio solution  
+ When you have more than one project in a Visual Studio solution that can run independently (projects that run in separate processes), you can select which projects the debugger starts.  
+  
+ ![Changing the startup type for a project](../debugger/media/dbg_execution_startmultipleprojects.png "DBG_Execution_StartMultipleProjects")  
+  
+####  <a name="BKMK_Change_the_startup_project"></a> Change the startup project  
+ To change the startup project for a solution, select the project in Solution Explorer and then choose **Set as Startup Project** from the context menu.  
+  
+####  <a name="BKMK_Start_a_specific_project_in_a_solution"></a> Start a specific project in a solution  
+ To start a project for a solution without changing the default startup project, select the project in Solution Explorer and then choose **Debug** from the context menu. You can then choose **Start new instance** or **Step Into new instance**.  
+  
+ ![Back to top](../debugger/media/pcs_backtotop.png "PCS_BackToTop") [Start multiple processes in a VS solution, attach to a process, automatically start a process in the debugger](../debugger/debug-multiple-processes.md#BKMK_Start_multiple_processes_in_a_VS_solution__attach_to_a_process__automatically_start_a_process_in_the_debugger)  
+  
+ ![Back to top](../debugger/media/pcs_backtotop.png "PCS_BackToTop") [Contents](#BKMK_Contents)  
+  
+####  <a name="BKMK_Start_multiple_projects_in_a_solution"></a> Start multiple projects in a solution  
+  
+1.  Select the solution in Solution Explorer and then choose **Properties** on the context menu.  
+  
+2.  Select **Common Properties**, **Startup Project** on the **Properties** dialog box.  
+  
+3.  For each project that you want to change, choose either **Start**, **Start without debugging**, or **None**.  
+  
+ ![Back to top](../debugger/media/pcs_backtotop.png "PCS_BackToTop") [Start multiple processes in a VS solution, attach to a process, automatically start a process in the debugger](../debugger/debug-multiple-processes.md#BKMK_Start_multiple_processes_in_a_VS_solution__attach_to_a_process__automatically_start_a_process_in_the_debugger)  
+  
+ ![Back to top](../debugger/media/pcs_backtotop.png "PCS_BackToTop") [Contents](#BKMK_Contents)  
+  
+###  <a name="BKMK_Attach_to_a_process"></a> Attach to a process  
+ The debugger can also to *attach* to programs that are running in processes outside of Visual Studio, including programs that are running on a remote device. After you attach to a program, you can use debugger execution commands, inspect the program state, and so on. Your ability to inspect the program might be limited, depending on whether the program was built with debug information and whether you have access to the program's source code, and whether the common language runtime JIT compiler is tracking debug information.  
+  
+ See [Attach to Running Processes](../debugger/attach-to-running-processes-with-the-visual-studio-debugger.md) for more information.  
+  
+ **Attach to a process that is running on your local machine**  
+  
+ Click **Debug > Attach to Process**. On the **Attach to Process** dialog box, select the process from the **Available Processes** list, and then choose **Attach**.  
+  
+ ![Attach to Process dialog box](../debugger/media/dbg_attachtoprocessdlg.png "DBG_AttachToProcessDlg")  
+  
+ ![Back to top](../debugger/media/pcs_backtotop.png "PCS_BackToTop") [Contents](#BKMK_Contents)  
+  
+###  <a name="BKMK_Automatically_start_an_process_in_the_debugger"></a> Automatically start a process in the debugger  
+ Sometimes, you might need to debug the startup code for a program that is launched by another process. Examples include services and custom setup actions. In these scenarios, you can have the debugger launch and automatically attach when your application starts.  
+  
+1.  Start the Registry Editor (**regedit.exe**).  
+  
+2.  Navigate to the **HKEY_LOCAL_MACHINE\Software\Microsoft\Windows NT\CurrentVersion\Image File Execution Options** folder.  
+  
+3.  Select the folder of the app that you want to start in the debugger.  
+  
+     If the name of the app is not listed as a child folder, select **Image File Execution Options** and then choose **New**, **Key** on the context menu. Select the new key, choose **Rename** on the shortcut menu, and then enter the name of the app.  
+  
+4.  On the context menu of the app folder, choose **New**, **String Value**.  
+  
+5.  Change the name of the new value from **New Value** to `debugger`.  
+  
+6.  On the context menu of the debugger entry, choose **Modify**.  
+  
+7.  On the Edit String dialog box, type `vsjitdebugger.exe` in the **Value data** box.  
+  
+     ![Edit String dialog box](../debugger/media/dbg_execution_automaticstart_editstringdlg.png "DBG_Execution_AutomaticStart_EditStringDlg")  
+  
+ ![Automatic debugger start entry in regedit.exe](../debugger/media/dbg_execution_automaticstart_result.png "DBG_Execution_AutomaticStart_Result")  
+  
+ ![Back to top](../debugger/media/pcs_backtotop.png "PCS_BackToTop") [Contents](#BKMK_Contents)  
+  
+##  <a name="BKMK_Switch_processes__break_and_continue_execution__step_through_source"></a> Switch processes, break and continue execution, step through source  
+  
+-   [Switch between processes](#BKMK_Switch_between_processes)  
+  
+-   [Break, step, and continue commands](#BKMK_Break__step__and_continue_commands)  
+  
+###  <a name="BKMK_Switch_between_processes"></a> Switch between processes  
+ You can attach to multiple processes when you are debugging, but only one process is active in the debugger at any given time. You can set the active or *current* process in the Debug Location toolbar or in the **Processes** window. To switch between processes, both processes must be in break mode.  
+  
+ **To set the current process**  
+  
+-   On the Debug Location toolbar, choose **Process** to view the **Process** list box. Select the process that you want to designate as current process.  
+  
+     ![Switch between processes](../debugger/media/dbg_execution_switchbetweenmodules.png "DBG_Execution_SwitchBetweenModules")  
+  
+     If the **Debug Location** toolbar is not visible, choose **Tools**, **Customize**. On the **Toolbars** tab, choose **Debug Location**.  
+  
+-   Open the **Processes** window (shortcut **Ctrl+Alt+Z**), find the process that you want to set as the current process, and double-click it.  
+  
+     ![Processes window](../debugger/media/dbg_processeswindow.png "DBG_ProcessesWindow")  
+  
+     The current process is marked by a yellow arrow.  
+  
+ Switching to a project sets it the current process for debugging purposes. Any debugger window that you view will show the state for the current process, and all stepping commands affect only the current process.  
+  
+ ![Back to top](../debugger/media/pcs_backtotop.png "PCS_BackToTop") [Switch processes, break and continue execution, step through source](../debugger/debug-multiple-processes.md#BKMK_Switch_processes__break_and_continue_execution__step_through_source)  
+  
+ ![Back to top](../debugger/media/pcs_backtotop.png "PCS_BackToTop") [Contents](#BKMK_Contents)  
+  
+###  <a name="BKMK_Break__step__and_continue_commands"></a> Break, step, and continue commands  
+  
+> [!NOTE]
+>  By default, the break, continue and step debugger commands affect all processes that are being debugged. To change this behavior, see [Configure the execution behavior of multiple processes](#BKMK_Configure_the_execution_behavior_of_multiple_processes)  
   
 ||||  
 |-|-|-|  
-|**Commande**|**Arrêter tous les processus lorsqu'un processus s'arrête**<br /><br /> Activé \(valeur par défaut\)|**Arrêter tous les processus lorsqu'un processus s'arrête**<br /><br /> Effacé|  
-|Menu**Déboguer** :<br /><br /> -   **Interrompre tout**|Tous les processus s'arrêtent.|Tous les processus s'arrêtent.|  
-|Menu**Déboguer** :<br /><br /> -   **Continue**|Tout les processus reprennent.|Tous les processus suspendus reprennent.|  
-|Menu**Déboguer** :<br /><br /> -   **Pas à pas détaillé**<br />-   **Pas à pas principal**<br />-   **Pas à pas sortant**|Tous les processus s'exécutent pendant les étapes de processus actuelles.<br /><br /> Puis, tous les processus s'arrêtent.|Étapes de processus actuel.<br /><br /> Les processus suspendus reprennent.<br /><br /> Les processus en cours d'exécution se poursuivent.|  
-|Menu**Déboguer** :<br /><br /> -   **Pas à pas détaillé du processus actuel**<br />-   **Pas à pas principal du processus actuel**<br />-   **Pas à pas sortant du processus actuel**|N\/A|Étapes de processus actuel.<br /><br /> D'autres processus conservent leur état existant \(Suspendu ou En cours d'exécution\).|  
-|Fenêtre source<br /><br /> -   **Point d'arrêt**|Tous les processus s'arrêtent.|Seul le processus de fenêtre source est rompu.|  
-|Menu contextuel de la fenêtre source :<br /><br /> -   **Exécuter jusqu'au curseur**<br /><br /> La fenêtre source doit figurer dans le processus actuel.|Tous les processus s'exécutent pendant que le processus de fenêtre source s'exécute jusqu'au curseur puis s'arrête.<br /><br /> Puis, tous les autres processus s'arrêtent.|Le processus de fenêtre source s'exécute sur le curseur.<br /><br /> D'autres processus conservent leur état existant \(Suspendu ou En cours d'exécution\).|  
-|Menu contextuel de la fenêtre**Processus** :<br /><br /> -   **Arrêter le processus**|N\/A|Le processus sélectionné s'interrompt.<br /><br /> D'autres processus conservent leur état existant \(Suspendu ou En cours d'exécution\).|  
-|Menu contextuel de la fenêtre**Processus** :<br /><br /> -   **Continuer le processus**|N\/A|Le processus sélectionné reprend.<br /><br /> D'autres processus conservent leur état existant \(Suspendu ou En cours d'exécution\).|  
+|**Command**|**Break all processes when one process breaks**<br /><br /> Checked (Default)|**Break all processes when one process breaks**<br /><br /> Cleared|  
+|**Debug** menu:<br /><br /> -   **Break All**|All processes break.|All processes break.|  
+|**Debug** menu:<br /><br /> -   **Continue**|All processes resume.|All suspended processes resume.|  
+|**Debug** menu:<br /><br /> -   **Step Into**<br />-   **Step Over**<br />-   **Step Out**|All processes run while current process steps.<br /><br /> Then all processes break.|Current process steps.<br /><br /> Suspended processes resume.<br /><br /> Running processes continue.|  
+|**Debug** menu:<br /><br /> -   **Step Into Current Process**<br />-   **Step Over Current Process**<br />-   **Step Out Current Process**|N/A|Current process steps.<br /><br /> Other processes maintain their existing state (suspended or running).|  
+|Source window<br /><br /> -   **Breakpoint**|All processes break.|Only source window process breaks.|  
+|Source window context menu:<br /><br /> -   **Run to cursor**<br /><br /> The source window must be in the current process.|All processes run while source window process runs to cursor and then breaks.<br /><br /> Then all other processes break.|Source window process runs to cursor.<br /><br /> Other processes maintain their existing state (suspended or running).|  
+|**Processes** window context menu:<br /><br /> -   **Break Process**|N/A|Selected process breaks.<br /><br /> Other processes maintain their existing state (suspended or running).|  
+|**Processes** window context menu:<br /><br /> -   **Continue  Process**|N/A|Selected process resumes.<br /><br /> Other processes maintain their existing state (suspended or running).|  
   
- ![Retour au début](~/debugger/media/pcs_backtotop.png "PCS\_BackToTop") [Basculer les processus, arrêter et poursuivre l'exécution, accéder à la source](../debugger/debug-multiple-processes.md#BKMK_Switch_processes__break_and_continue_execution__step_through_source)  
+ ![Back to top](../debugger/media/pcs_backtotop.png "PCS_BackToTop") [Switch processes, break and continue execution, step through source](../debugger/debug-multiple-processes.md#BKMK_Switch_processes__break_and_continue_execution__step_through_source)  
   
- ![Retour au début](~/debugger/media/pcs_backtotop.png "PCS\_BackToTop") [Sommaire](#BKMK_Contents)  
+ ![Back to top](../debugger/media/pcs_backtotop.png "PCS_BackToTop") [Contents](#BKMK_Contents)  
   
-##  <a name="BKMK_Stop_debugging__terminate_or_detach_from_processes"></a> Arrêter le débogage, le terminer ou le détacher des processus  
+##  <a name="BKMK_Stop_debugging__terminate_or_detach_from_processes"></a> Stop debugging, terminate or detach from processes  
   
--   [Commandes Arrêter, Terminer et Détacher](#BKMK_Stop__terminate__and_detach_commands)  
+-   [Stop, terminate, and detach commands](#BKMK_Stop__terminate__and_detach_commands)  
   
- Par défaut, lorsque vous choisissez **Déboguer**, **Arrêter le débogage** lorsque plusieurs processus sont ouverts dans le débogueur, le débogueur se termine ou se détache de tous les processus selon la façon dont le processus a été ouvert dans le débogueur :  
+ By default, when you choose **Debug**, **Stop Debugging** when multiple processes are open in the debugger, the debugger terminates or detaches from all processes depending on how the process was opened in the debugger:  
   
--   Si le processus actuel a été lancé dans le débogueur, ce processus serait terminé.  
+-   If the current process was launched in the debugger, that process is terminated.  
   
--   Si vous avez attaché le débogueur au processus actuel, le débogueur se détache du processus et le conserve.  
+-   If you attached the debugger to the current process, the debugger detaches from the process and leaves the process running.  
   
- Par exemple, si vous commencez à déboguer un processus à partir d'une solution Visual Studio, effectuez un attachement à un autre processus qui s'exécute déjà, puis choisissez **Arrêter le débogage**, la session de débogage se termine, le processus qui a été démarré dans Visual Studio est terminé, tandis que le processus que vous avez attaché est autorisé à s'exécuter.  Vous pouvez utiliser les procédures suivantes pour contrôler la façon dont vous arrêtez le débogage.  
+ For example, if you start debugging a process from a Visual Studio solution, attach to another process that is already running, and then choose **Stop Debugging**, the debugging session ends, the process that was started in Visual Studio is terminated, while the process that you attached is left running. You can use the following procedures to control the way that you stop debugging.  
   
 > [!NOTE]
->  L'option **Arrêter tous les processus lorsqu'un processus s'arrête** n'affecte pas l'arrêt du débogage ou l'arrêt et le détachement des processus.  
+>  The **Break all processes when one process breaks** option does not affect stopping debugging or terminating and detaching from processes.  
   
- **Pour modifier la façon dont l'arrêt du débogage affecte un processus individuel**  
+ **To change how Stop Debugging affects an individual process**  
   
--   Ouvrez la fenêtre **Processus** \(raccourci **Ctrl\+Alt\+Z**\).  Sélectionnez un processus puis activez ou désactivez la case à cocher **Détacher lorsque le débogage est arrêté**.  
+-   Open the **Processes** window (shortcut **Ctrl+Alt+Z**). Select a process and then select or clear the **Detach when debugging stopped** check box.  
   
-###  <a name="BKMK_Stop__terminate__and_detach_commands"></a> Commandes Arrêter, Terminer et Détacher  
+###  <a name="BKMK_Stop__terminate__and_detach_commands"></a> Stop, terminate, and detach commands  
   
 |||  
 |-|-|  
-|**Commande**|**Description**|  
-|Menu**Déboguer** :<br /><br /> -   **Arrêter le débogage**|Sauf si le comportement est modifié par l'option **Détacher lorsque le débogage est arrêté** dans la fenêtre **Processus** :<br /><br /> 1.  Les processus démarrés par le débogueur sont terminés.<br />2.  Les processus attachés sont détachés du débogueur.|  
-|Menu**Déboguer** :<br /><br /> -   **Tout arrêter**|Tous les processus sont terminés.|  
-|Menu**Déboguer** :<br /><br /> -   **Détacher tout**|Le débogueur se détache de tous les processus.|  
-|Menu contextuel de la fenêtre**Processus** :<br /><br /> -   **Détacher le processus**|Le débogueur se détache du processus sélectionné.<br /><br /> D'autres processus conservent leur état existant \(Suspendu ou En cours d'exécution\).|  
-|Menu contextuel de la fenêtre**Processus** :<br /><br /> -   **Terminer le processus**|Le processus sélectionné est terminé.<br /><br /> D'autres processus conservent leur état existant \(Suspendu ou En cours d'exécution\).|  
-|Menu contextuel de la fenêtre**Processus** :<br /><br /> -   **Détacher lorsque le débogage s'arrête**|Bascule le comportement de **Déboguer**, **Arrêter le débogage** pour le processus sélectionné :<br /><br /> -   Activé : le débogueur se détache du processus sélectionné.<br />-   Effacé : le processus est terminé.|  
+|**Command**|**Description**|  
+|**Debug** menu:<br /><br /> -   **Stop Debugging**|Unless the behavior is changed by **Processes** window **Detach when debugging stops** option:<br /><br /> 1.  Processes started by debugger are terminated.<br />2.  Attached processes are detached from the debugger.|  
+|**Debug** menu:<br /><br /> -   **Terminate All**|All processes are terminated.|  
+|**Debug** menu:<br /><br /> -   **Detach All**|The debugger detaches from all processes.|  
+|**Processes** window context menu:<br /><br /> -   **Detach Process**|The debugger detaches from the selected process.<br /><br /> Other processes maintain their existing state (suspended or running).|  
+|**Processes** window context menu:<br /><br /> -   **Terminate Process**|The selected process is terminated.<br /><br /> Other processes maintain their existing state (suspended or running).|  
+|**Processes** window context menu:<br /><br /> -   **Detach when debugging stops**|Toggles the behavior of **Debug**, **Stop Debugging** for the selected process:<br /><br /> -   Checked: The debugger detaches from the process.<br />-   Cleared: The process is terminated.|  
   
- ![Retour au début](~/debugger/media/pcs_backtotop.png "PCS\_BackToTop") [Arrêter le débogage, le terminer ou le détacher des processus](../debugger/debug-multiple-processes.md#BKMK_Stop_debugging__terminate_or_detach_from_processes)  
+ ![Back to top](../debugger/media/pcs_backtotop.png "PCS_BackToTop") [Stop debugging, terminate or detach from processes](../debugger/debug-multiple-processes.md#BKMK_Stop_debugging__terminate_or_detach_from_processes)  
   
- ![Retour au début](~/debugger/media/pcs_backtotop.png "PCS\_BackToTop") [Sommaire](#BKMK_Contents)  
+ ![Back to top](../debugger/media/pcs_backtotop.png "PCS_BackToTop") [Contents](#BKMK_Contents)  
   
-## Voir aussi  
- [Spécifier les fichiers de symbole \(.pdb\) et les fichiers sources](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md)   
- [Attacher aux processus en cours d'exécution](../debugger/attach-to-running-processes-with-the-visual-studio-debugger.md)   
- [Naviguer dans le code avec le débogueur](../debugger/navigating-through-code-with-the-debugger.md)   
- [Débogage juste\-à\-temps](../debugger/just-in-time-debugging-in-visual-studio.md)   
- [Déboguer les applications multithread](../debugger/debug-multithreaded-applications-in-visual-studio.md)
+## <a name="see-also"></a>See Also  
+ [Specify Symbol (.pdb) and Source Files](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md)   
+ [Attach to Running Processes](../debugger/attach-to-running-processes-with-the-visual-studio-debugger.md)   
+ [Navigating through Code with the Debugger](../debugger/navigating-through-code-with-the-debugger.md)   
+ [Just-In-Time Debugging](../debugger/just-in-time-debugging-in-visual-studio.md)   
+ [Debug Multithreaded Applications](../debugger/debug-multithreaded-applications-in-visual-studio.md)

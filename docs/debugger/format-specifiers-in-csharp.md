@@ -1,71 +1,92 @@
 ---
-title: "Sp&#233;cificateurs de format en C# | Microsoft Docs"
-ms.custom: ""
-ms.date: "12/05/2016"
-ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-debug"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-dev_langs: 
-  - "FSharp"
-  - "VB"
-  - "CSharp"
-  - "C++"
-  - "CSharp"
-helpviewer_keywords: 
-  - "débogueur, spécificateurs de format reconnus par"
-  - "expressions (C#), mettre en forme les valeurs"
-  - "spécificateurs de format, débogueur"
-  - "Espion express (boîte de dialogue), spécificateurs de format en C#"
-  - "Espion express (boîte de dialogue), utiliser des spécificateurs de format"
-  - "spécificateurs"
-  - "spécificateurs, format de variable espion"
-  - "symboles, format de variable espion"
-  - "variables (débogueur), symboles de variables espionnes"
-  - "symboles de variables espionnes"
-  - "Espion (fenêtre), spécificateurs de format en C#"
+title: Format specifiers in the debugger (C#) | Microsoft Docs
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology:
+- vs-ide-debug
+ms.tgt_pltfrm: 
+ms.topic: article
+dev_langs:
+- CSharp
+- VB
+- FSharp
+- C++
+helpviewer_keywords:
+- expressions [C#], formatting values
+- variables [debugger], watch variable symbols
+- symbols, watch variable formatting
+- QuickWatch dialog box, using format specifiers
+- specifiers, watch variable format
+- QuickWatch dialog box, format specifiers in C#
+- specifiers
+- watch variable symbols
+- Watch window, format specifiers in C#
+- format specifiers, debugger
+- debugger, format specifiers recognized by
 ms.assetid: 345c8589-5f36-4d34-a58c-e56271687dd6
 caps.latest.revision: 29
-caps.handback.revision: 29
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
----
-# Sp&#233;cificateurs de format en C# #
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+translation.priority.ht:
+- de-de
+- es-es
+- fr-fr
+- it-it
+- ja-jp
+- ko-kr
+- ru-ru
+- zh-cn
+- zh-tw
+translation.priority.mt:
+- cs-cz
+- pl-pl
+- pt-br
+- tr-tr
+ms.translationtype: HT
+ms.sourcegitcommit: 9e6c28d42bec272c6fd6107b4baf0109ff29197e
+ms.openlocfilehash: 969a1ccc042ba453fed1f7f774b23a5c8ba971a4
+ms.contentlocale: fr-fr
+ms.lasthandoff: 08/22/2017
 
-Vous pouvez modifier le format dans lequel une valeur est affichée dans la fenêtre **Espion** à l’aide de spécificateurs de format. Vous pouvez également utiliser des spécificateurs de format dans la fenêtre **Exécution**, la fenêtre **Commande** et même les fenêtres sources. Si vous effectuez une suspension sur une expression dans ces fenêtres, le résultat apparaît dans un DataTip. Les DataTips répercutent le spécificateur de format dans l’affichage du DataTip.  
+---
+# <a name="format-specifiers-in-c-in-the-visual-studio-debugger"></a>Format specifiers in C# in the Visual Studio debugger
+You can change the format in which a value is displayed in the **Watch** window using format specifiers. You can also use format specifiers in the **Immediate** window, the **Command** window, and even in source windows. If you pause on an expression in those windows, the result will appear in a DataTip. DataTips will reflect the format specifier in the DataTip display.  
   
- Pour utiliser un spécificateur de format, tapez l’expression suivie par une virgule. Après la virgule, ajoutez le spécificateur approprié.  
+ To use a format specifier, type the expression followed by a comma. After the comma, add the appropriate specifier.  
   
-## Utilisation de spécificateurs de format  
- Si vous avez le code suivant :  
+## <a name="using-format-specifiers"></a>Using Format Specifiers  
+ If you have the following code:  
   
+```CSharp  
+{  
+        int my_var1 = 0x0065;  
+        int my_var2 = 0x0066;  
+        int my_var3 = 0x0067;  
+}  
 ```  
-{ int my_var1 = 0x0065; int my_var2 = 0x0066; int my_var3 = 0x0067; }  
-```  
   
- Ajoutez la variable `my_var1` à la fenêtre Espion \(pendant le débogage, **Déboguer \/ Fenêtres \/ Espion \/ Espion 1**\). Ensuite, passez à l’affichage hexadécimal \(dans la fenêtre **Espion**, cliquez avec le bouton droit sur la variable et sélectionnez **Affichage hexadécimal**\). La fenêtre **Espion** indique à présent qu’elle contient la valeur 0x0065. Pour voir cette valeur exprimée sous la forme d’un entier décimal plutôt que sous la forme d’un entier hexadécimal, dans la colonne Nom, après le nom de la variable, ajoutez le spécificateur de format décimal : **, d**. La colonne Valeur affiche désormais la valeur décimale 101.  
+ Add the `my_var1` variable to the Watch window (while debugging, **Debug > Windows > Watch > Watch 1**) and set the display to hexadecimal (in the **Watch** window, right-click the variable and select **Hexadecimal Display**). Now the **Watch** window shows that it contains the value 0x0065. To see this value expressed as a decimal integer instead of a hexadecimal integer, in the Name column, after the variable name, add the decimal format specifier: **, d**. The Value column now displays the decimal value 101  
   
  ![WatchFormatCSharp](../debugger/media/watchformatcsharp.png "WatchFormatCSharp")  
   
-## Spécificateurs de format  
- Le tableau suivant montre les spécificateurs de format C\# reconnus par le débogueur.  
+## <a name="format-specifiers"></a>Format Specifiers  
+ The following table shows the C# format specifiers recognized by the debugger.  
   
-|Spécificateur|Format|Valeur d’espion d’origine|Affiche|  
-|-------------------|------------|-------------------------------|-------------|  
-|ac|Force l’évaluation d’une expression. Cela peut être utile lorsque l’évaluation implicite d’appels de propriétés et de fonction implicite est désactivée. Consultez [Effets secondaires et expressions](../Topic/Side%20Effects%20and%20Expressions.md).|Message « L’évaluation de fonction implicite est désactivée par l’utilisateur »|\<valeur\>|  
-|d|entier décimal|0x0065|101|  
-|dynamic|Affiche l’objet spécifié à l’aide d’un affichage dynamique|Affiche tous les membres de l’objet, y compris l’affichage dynamique|Affiche uniquement l’affichage dynamique|  
-|h|entier hexadécimal|61541|0x0000F065|  
-|nq|chaîne sans guillemets|"Ma chaîne"|Ma chaîne|  
-|hidden|Affiche tous les membres publics et non publics|Affiche les membres publics|Affiche tous les membres|  
-|raw|Affiche l’élément tel qu’il apparaît dans le nœud élément brut. Valide uniquement sur les objets proxy.|Dictionary\<T\>|Affichage brut de Dictionary\<T\>|  
-|résultats|Utilisé avec une variable d’un type qui implémente IEnumerable ou IEnumerable\<T\>, habituellement le résultat d’une expression de requête. Affiche uniquement les membres contenant les résultats de requête.|Affiche tous les membres.|Affiche les membres qui répondent aux conditions de la requête.|  
+|Specifier|Format|Original Watch Value|Displays|  
+|---------------|------------|--------------------------|--------------|  
+|ac|Force evaluation of an expression. This can be useful when implicit evaluation of properties and implicit function calls is turned off.|Message "Implicit function evaluation is turned off by the user"|\<value>|  
+|d|decimal integer|0x0065|101|  
+|dynamic|Displays the specified object using a Dynamic View|Displays all the members of the object, including the Dynamic View|Displays only the Dynamic View|  
+|h|hexadecimal integer|61541|0x0000F065|  
+|nq|string with no quotes|"My String"|My String|  
+|hidden|Displays all public and non-public members|Displays public members|Displays all members|  
+|raw|Displays item as it appears in the raw item node. Valid on proxy objects only.|Dictionary\<T>|Raw View of Dictionary\<T>|  
+|results|Used with a variable of a type that implements IEnumerable or IEnumerable\<T>, usually the result of a query expression. Displays only the members that contain the query result.|Displays all the members.|Displays the members the meet the conditions of the query.|  
   
-## Voir aussi  
- [Espion et Espion express, fenêtres](../debugger/watch-and-quickwatch-windows.md)   
- [Fenêtres de variables](../Topic/Variable%20Windows.md)
+## <a name="see-also"></a>See Also  
+ [Watch and QuickWatch Windows](../debugger/watch-and-quickwatch-windows.md)   
+ [Autos and Locals Windows](../debugger/autos-and-locals-windows.md)
+

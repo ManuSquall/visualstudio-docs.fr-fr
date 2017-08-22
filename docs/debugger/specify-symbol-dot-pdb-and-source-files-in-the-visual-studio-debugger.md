@@ -1,248 +1,275 @@
 ---
-title: "Sp&#233;cifiez les fichiers de symbole (.pdb) et les fichiers source dans le d&#233;bogueur Visual&#160;Studio. | Microsoft Docs"
-ms.custom: ""
-ms.date: "12/15/2016"
-ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-debug"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "VS.ToolsOptionsPages.Debugger.Native"
-  - "VS.ToolsOptionsPages.Debugger.Symbols"
-  - "vs.debug.options.Native"
-dev_langs: 
-  - "FSharp"
-  - "VB"
-  - "CSharp"
-  - "C++"
-helpviewer_keywords: 
-  - "code source"
-  - "fichiers .dbg"
-  - "code source, gestion"
-  - "symboles, gestion"
-  - "fichiers .pdb"
-  - "fichiers dbg"
-  - "fichiers pdb"
-  - "débogueur"
+title: Specify symbol (.pdb) and source files in the debugger | Microsoft Docs
+ms.custom: H1Hack27Feb2017
+ms.date: 04/05/2017
+ms.reviewer: 
+ms.suite: 
+ms.technology:
+- vs-ide-debug
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords:
+- VS.ToolsOptionsPages.Debugger.Native
+- VS.ToolsOptionsPages.Debugger.Symbols
+- vs.debug.options.Native
+- vs.debug.nosymbols
+dev_langs:
+- CSharp
+- VB
+- FSharp
+- C++
+helpviewer_keywords:
+- source code
+- .dbg files
+- source code, managing
+- symbols, managing
+- .pdb files
+- dbg files
+- pdb files
+- debugger
 ms.assetid: 1105e169-5272-4e7c-b3e7-cda1b7798a6b
 caps.latest.revision: 31
-caps.handback.revision: 31
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
----
-# Sp&#233;cifiez les fichiers de symbole (.pdb) et les fichiers source dans le d&#233;bogueur Visual&#160;Studio.
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+translation.priority.ht:
+- de-de
+- es-es
+- fr-fr
+- it-it
+- ja-jp
+- ko-kr
+- ru-ru
+- zh-cn
+- zh-tw
+translation.priority.mt:
+- cs-cz
+- pl-pl
+- pt-br
+- tr-tr
+ms.translationtype: HT
+ms.sourcegitcommit: 9e6c28d42bec272c6fd6107b4baf0109ff29197e
+ms.openlocfilehash: 8355e43e6c8e6142aedbe5dfb325196b01a7a681
+ms.contentlocale: fr-fr
+ms.lasthandoff: 08/22/2017
 
-Un fichier de base de données du programme \(.pdb\), également appelé fichier de symboles, mappe les identificateurs que vous créez dans les fichiers sources pour les classes, méthodes et autre code aux identificateurs utilisés dans les fichiers exécutables compilés de votre projet. Le fichier .pdb mappe également les instructions du code source aux instructions d'exécution des fichiers exécutables. Le débogueur utilise ces informations pour déterminer deux informations essentielles : le fichier source et le numéro de ligne qui s'affichent dans l'IDE de Visual Studio et l'emplacement où s'arrêter dans le fichier exécutable lorsque vous définissez un point d'arrêt. Un fichier de symboles contient également l'emplacement d'origine des fichiers sources, et éventuellement, l'emplacement d'un serveur source d'où les fichiers sources peuvent être extraits.  
+---
+# <a name="specify-symbol-pdb-and-source-files-in-the-visual-studio-debugger"></a>Specify symbol (.pdb) and source files in the Visual Studio debugger
+A program database (.pdb) file, also called a symbol file, maps the identifiers that you create in source code for classes, methods, and other code to the identifiers that are used in the compiled executables of your project. The .pdb file also maps the statements in the source code to the execution instructions in the executables. The debugger uses this information to determine two key pieces of information:
+
+* Name of the source file and line number to be displayed in the Visual Studio IDE
+* Location in the executable to stop at when you set a breakpoint
+
+A symbol file also contains the original location of the source files, and optionally, the location of a source server where the source files can be retrieved from.
   
- Quand vous déboguez un projet dans l’IDE de Visual Studio, le débogueur connaît l’emplacement par défaut des fichiers .pdb et des fichiers sources de votre code. Si vous souhaitez déboguer du code en dehors du code source de votre projet, tel que le code Windows ou tiers appelé par votre projet, vous devez spécifier l'emplacement du fichier .pdb \(et éventuellement, des fichiers sources du code externe\) et ces fichiers doivent correspondre exactement à la build des fichiers exécutables.  
+> [!TIP]
+> If you want to debug code outside your project source code, such as Windows code or third-party code your project calls, you have to specify the location of the .pdb (and optionally, the source files of the external code) and those files need to exactly match the build of the executables.  
+ 
+##  <a name="BKMK_Find_symbol___pdb__files"></a> Where does the debugger search for symbol files? 
   
- Avant Visual Studio 2012, quand vous déboguiez du code managé sur un appareil distant, vous deviez placer les fichiers de symboles sur l’ordinateur distant. Ce n'est désormais plus le cas. Tous les fichiers de symboles doivent se trouver sur l’ordinateur local ou à un emplacement spécifié dans la page **Outils \/ Options \/ Débogage \/ Symboles**.  
+1.  The location that is specified inside the DLL or the executable file.  
   
-##  <a name="BKMK_Find_symbol___pdb__files"></a> Où le débogueur recherche les fichiers .pdb  
+     (By default, if you have built a DLL or an executable file on your computer, the linker places the full path and file name of the associated .pdb file inside the DLL or the executable file. The debugger first checks to see if the symbol file exists in the location that is specified inside the DLL or the executable file. This is helpful, because you always have symbols available for code that you have compiled on your computer.)  
   
-1.  Emplacement spécifié à l'intérieur de la DLL ou du fichier exécutable.  
+2.  .pdb files that are present in the same folder as the DLL or executable file.
+
+3. Any locations [specified in the debugger options](#BKMK_Specify_symbol_locations_and_loading_behavior) for symbol files. 
   
-     \(Par défaut, si vous avez développé une DLL ou un fichier exécutable sur votre ordinateur, l'éditeur de liens place le chemin d'accès complet et le nom du fichier .pdb associé à l'intérieur de la DLL ou du fichier exécutable. Le débogueur vérifie d'abord si le fichier de symboles existe dans l'emplacement spécifié dans la DLL ou le fichier exécutable. Cela est utile, car vous avez toujours des symboles disponibles pour le code que vous avez compilé sur votre ordinateur.\)  
+    * Any local symbol cache folders.  
   
-2.  fichiers .pdb qui peuvent être présents dans le même dossier que la DLL ou le fichier exécutable.  
+    * Any network, internet, or local symbol servers and locations that are specified, such as the Microsoft symbol server (if enabled). 
+
+> [!NOTE]
+> Before Visual Studio 2012, when you debugged managed code on a remote device you needed to put the symbol files on the remote machine. Starting with Visual Studio 2012, all symbol files must be located on the local machine or in a location [specified in the debugger options](#BKMK_Specify_symbol_locations_and_loading_behavior).  
   
-3.  Tout dossier de cache de symboles local.  
+##  <a name="BKMK_Why_do_symbol_files_need_to_exactly_match_the_executable_files_"></a> Why do symbol files need to exactly match the executable files?  
+The debugger will load only a .pdb file for an executable file that exactly matches the .pdb file that was created when the executable was built (that is, the .pdb must be the original or a copy of the original .pdb file). Because the compiler is optimized for compilation speed in addition to its main task of creating correct and efficient code, the actual layout of an executable can change even if the code itself has not changed. For more information see [Why does Visual Studio require debugger symbol files to exactly match the binary files that they were built with?](https://blogs.msdn.microsoft.com/jimgries/2007/07/06/why-does-visual-studio-require-debugger-symbol-files-to-exactly-match-the-binary-files-that-they-were-built-with/)
   
-4.  Tout serveur de symboles réseau, internet ou local et tout emplacement sur lequel il sont spécifiés, comme le serveur de symboles Microsoft s'il est activé.  
+##  <a name="BKMK_Specify_symbol_locations_and_loading_behavior"></a> Configure where the debugger looks for symbol files and symbol loading behavior
+ When you debug a project in the Visual Studio IDE, the debugger automatically loads symbol files that are located in the project directory. You can specify alternative search paths and symbol servers for Microsoft, Windows, or third-party components in **Tools > Options > Debugging > Symbols**. You can also specify specific modules that you want the debugger to automatically load symbols for. And you can then change these settings manually while you are actively debugging.  
   
-###  <a name="BKMK_Why_do_symbol_files_need_to_exactly_match_the_executable_files_"></a> Pourquoi les fichiers de symboles doivent\-ils correspondre exactement aux fichiers exécutables ?  
- Le débogueur chargera uniquement un fichier .pdb pour un fichier exécutable qui correspond exactement au fichier .pdb créé lors de la génération du fichier exécutable \(autrement dit, le fichier .pdb doit être le fichier d'origine ou une copie du fichier .pdb d'origine\). Étant donné que le compilateur est optimisé pour la vitesse de compilation en plus de sa tâche principale qui consiste à créer du code correct et efficace, la disposition effective d’un fichier exécutable peut changer même si le code lui\-même n’a pas changé. Pour plus d’informations, consultez l’entrée de blog intitulée [Why does Visual Studio require debugger symbol files to \*exactly\* match the binary files that they were built with? \(Pourquoi Visual Studio exige\-t\-il que les fichiers de symboles du débogueur correspondent exactement aux fichiers binaires avec lesquels ils ont été créés ?\)](https://blogs.msdn.microsoft.com/jimgries/2007/07/06/why-does-visual-studio-require-debugger-symbol-files-to-exactly-match-the-binary-files-that-they-were-built-with/).  
+1.  In Visual Studio, open the **Tools > Options > Debugging > Symbols** page.  
   
-###  <a name="BKMK_Specify_symbol_locations_and_loading_behavior"></a> Spécifier les emplacements de symboles et le comportement de chargement  
- Lorsque vous déboguez un projet dans l'IDE de Visual Studio, le débogueur charge automatiquement les fichiers de symboles situés dans le répertoire du projet. Vous pouvez spécifier d’autres chemins de recherche et serveurs de symboles pour les composants Microsoft, Windows, ou composants tiers dans **Outils \/ Options \/ Débogage \/ Symboles**. Vous pouvez également spécifier des modules spécifiques pour lesquels vous souhaitez que le débogueur charge automatiquement des symboles. Et vous pouvez ensuite modifier ces paramètres manuellement lorsque vous déboguez activement.  
+     ![Tools &#45; Options &#45; Debugging &#45; Symbols page](../debugger/media/dbg_tools_options_symbols.gif "DBG_Tools_Options_Symbols")  
   
-1.  Dans Visual Studio, ouvrez la page **Outils \/ Options \/ Débogage \/ Symboles**.  
+2.  Choose the folder ![Tools&#47; Options&#47; Debugging&#47;Symbols  folder icon](../debugger/media/dbg_tools_options_foldersicon.png "DBG_Tools_Options_FoldersIcon") icon. Editable text appears in the **Symbol file (.pdb) locations** box.  
   
-     ![Page Outils &#45; Options &#45; Débogage &#45; Symboles](../debugger/media/dbg_tools_options_symbols.png "DBG\_Tools\_Options\_Symbols")  
+3.  Type the URL or directory path of the symbol server or symbol location. Statement completion helps you find the correct format.
+
+    You can use **Ctrl + Up** and **Ctrl + Down** to change the loading order for symbol locations. Press **F2** to edit a URL or directory path.
   
-2.  Choisissez l'icône de dossier ![Icône du dossier Outils&#47; Options&#47; Débogage&#47;Symboles](~/debugger/media/dbg_tools_options_foldersicon.png "DBG\_Tools\_Options\_FoldersIcon"). Le texte modifiable s'affiche dans la zone **Emplacements du fichier de symboles \(.pdb\)**.  
-  
-3.  Tapez l'URL ou le chemin d'accès du serveur de symboles ou de l'emplacement de symboles. La saisie semi\-automatique des instructions vous aide à rechercher le format correct.  
-  
-4.  Pour améliorer les performances de chargement de symboles, tapez le chemin d'accès d'un répertoire local dans lequel les symboles peuvent être copiés par les serveurs de symboles dans la zone **Mettre en cache les symboles dans ce répertoire** d'un répertoire local dans lequel les symboles peuvent être copiés.  
+4.  To improve symbol loading performance type the path a local directory where symbols can be copied by symbol servers in the **Cache symbols in this directory** box a local directory that symbols can be copied to.  
   
     > [!NOTE]
-    >  Ne placez pas votre cache de symboles dans un dossier protégé \(tel que le dossier C:\\Windows ou un de ses sous\-dossiers\). Utilisez plutôt un dossier en lecture\-écriture.  
+    >  Do not place your symbol cache in a protected folder (such as the C:\Windows folder or one of its subfolders). Use a read-write folder instead.  
   
- **Spécifier le comportement de chargement des symboles**  
+### <a name="specify-symbol-loading-behavior"></a>Specify symbol loading behavior 
   
- Vous pouvez spécifier les fichiers qui doivent être chargés automatiquement à partir des emplacements de zone **Emplacements du fichier de symboles \(.pdb\)** lorsque vous commencez le débogage. Les fichiers de symboles contenus dans le répertoire du projet sont toujours chargés.  
+You can specify the files that you want to be loaded automatically from **Symbol file (.pdb) locations** box locations when you start debugging. Symbol files in the project directory are always loaded.  
   
-1.  Sélectionnez **Tous les modules, sauf exclus** pour charger tous les symboles pour tous les modules à l'exception de ceux que vous spécifiez lorsque vous choisissez le lien **Spécifier les modules exclus**.  
+1.  Choose **All modules, unless excluded** to load all the symbols for all modules except those that you specify when you choose the **Specify excluded modules** link.  
   
-2.  Choisissez l'option **Modules spécifiés uniquement** puis choisissez **Spécifier les modules** pour répertorier les modules des fichiers de symboles que vous voulez charger automatiquement. Les fichiers de symboles d'autres modules sont ignorés.  
+2.  Choose the **Only specified modules** option and then choose **Specify modules** to list the modules that you symbol files that you want loaded automatically. The symbol files for other modules are ignored.  
   
- **Spécifier des options de symbole supplémentaires**  
+### <a name="specify-additional-symbol-options"></a>Specify additional symbol options 
   
- Vous pouvez également définir les options suivantes dans la page **Outils \/ Options \/ Débogage \/ Symboles** :  
+You can also set the following options on the **Tools > Options > Debugging > General** page:  
   
- **Avertir s'il n'y a aucun symbole au lancement \(natif uniquement\)**  
+**Load DLL exports (native only)**  
   
- Lorsqu'elle est sélectionnée, cette option affiche une boîte de dialogue d'avertissement quand vous essayez de déboguer un programme pour lequel le débogueur ne possède aucune information symbolique.  
+When selected, loads DLL export tables. Symbolic information from DLL export tables can be useful if you are working with Windows messages, Windows procedures (WindowProcs), COM objects, or marshaling, or any DLL for which you do not have symbols. Reading DLL export information involves some overhead. Therefore, this capability is turned off by default.  
   
- **Charger les exportations de DLL**  
+To see what symbols are available in the export table of a DLL, use `dumpbin /exports`. Symbols are available for any 32-bit system DLL. By reading the `dumpbin /exports` output, you can see the exact function name, including non-alphanumeric characters. This is useful for setting a breakpoint on a function. Function names from DLL export tables might appear truncated elsewhere in the debugger. The calls are listed in the calling order, with the current function (the most deeply nested) at the top. For more information, see [dumpbin /exports](/cpp/build/reference/dash-exports).  
   
- Lorsqu'elle est sélectionnée, cette option charge les tables d'exportation de DLL. Les informations symboliques de tables d'exportation de DLL peuvent être utiles si vous utilisez des messages Windows, des procédures Windows \(WindowProcs\), des objets COM, le marshaling ou toute DLL pour laquelle vous n'avez pas de symbole. La lecture des informations d'exportation des DLL implique une certaine charge mémoire. Par conséquent, cette fonctionnalité est désactivée par défaut.  
+###  <a name="BKMK_Use_symbol_servers_to_find_symbol_files_not_on_your_local_machine"></a> Use symbol servers to find symbol files not on your local machine  
+ [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] can download debugging symbol files from symbol servers that implement the symsrv protocol. [Visual Studio Team Foundation Server](http://msdn.microsoft.com/Library/bd6977ca-e30a-491a-a153-671d81222ce6) and the [Debugging Tools for Windows](http://msdn.microsoft.com/library/windows/hardware/ff551063\(v=VS.85\).aspx) are two tools that can implement symbol servers. You specify the symbol servers to use in the VS **Options** dialog box.  
   
- Pour savoir quels symboles sont disponibles dans la table d'exportation d'une DLL, utilisez `dumpbin /exports`. Il existe des symboles pour toutes les DLL système 32 bits. En lisant le résultat de `dumpbin /exports`, vous apprenez le nom exact de la fonction, y compris les caractères non alphanumériques. Cette information peut être utile pour définir un point d'arrêt sur une fonction. Les noms de fonctions provenant de tables d'exportation de DLL peuvent s'afficher sous une forme tronquée dans les autres parties du débogueur. Les appels sont répertoriés dans l'ordre chronologique inverse, la fonction en cours \(la plus profondément imbriquée\) apparaissant en tête de liste. Pour plus d'informations, consultez [dumpbin \/exports](/visual-cpp/build/reference/dash-exports).  
+ Symbol servers that you might use include:  
   
-###  <a name="BKMK_Use_symbol_servers_to_find_symbol_files_not_on_your_local_machine"></a> Utiliser des serveurs de symboles pour rechercher des fichiers de symboles qui ne sont pas sur votre ordinateur local  
- [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] peut télécharger les fichiers de symboles de débogage à partir des serveurs de symboles qui implémentent le protocole symsrv.[Visual Studio Team Foundation Server](../Topic/Index%20and%20publish%20symbol%20data.md) et les [outils de débogage pour Windows](http://msdn.microsoft.com/library/windows/hardware/ff551063\(v=VS.85\).aspx) sont deux outils qui peuvent implémenter des serveurs de symboles. Vous spécifiez les serveurs de symboles à utiliser dans la boîte de dialogue **Options** de Visual Studio.  
+ **Microsoft public symbol servers**  
   
- Les serveurs de symboles que vous pouvez utiliser sont les suivants :  
+ To debug a crash that occurs during a call to a system DLL or to a third-party library, you will often need system .pdb files, which contain symbols for Windows DLLs, EXEs, and device drivers. You can obtain these symbols from the Microsoft public sysmbol servers. The Microsoft public symbol servers provide symbols for Windows operating systems, in addition to MDAC, IIS, ISA, and the [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)].  
   
- **Serveurs de symboles publics Microsoft**  
+ To use the Microsoft symbol servers, choose **Options and Settings** on the **Debug** menu and then choose **Symbols**. Select **Microsoft Symbol Servers**.  
   
- Pour déboguer un incident survenu durant un appel à une DLL système ou une bibliothèque tierce, vous devrez souvent utiliser des fichiers .pdb système, qui contiennent les symboles des fichiers DLL, EXE et pilotes de périphériques de Windows. Vous pouvez obtenir ces symboles auprès des serveurs de symboles publics Microsoft. Les serveurs de symboles publics Microsoft fournissent des symboles pour les systèmes d'exploitation Windows, en plus de MDAC, d'IIS, d'ISA et du [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)].  
+ **Symbol servers on an internal network or on your local machine**  
   
- Pour utiliser les serveurs de symboles Microsoft, choisissez **Options et paramètres** dans le menu **Déboguer**, puis choisissez **Symboles**. Sélectionnez **Serveurs de symboles Microsoft**.  
+ Your team or company can create symbol servers for your own products and as a cache for symbols from external sources. You might have a symbol server on your own machine. You can enter the location of the symbol servers as a URL or as a path on the **Debugging**/**Symbols** page of the VS **Option Dialog**.  
   
- **Serveurs de symboles sur un réseau interne ou sur votre ordinateur local**  
+ **Third-party symbol servers**  
   
- Votre équipe ou société peut créer les serveurs de symboles de vos propres produits et comme cache des symboles à partir des sources externes. Vous pouvez avoir un serveur de symboles sur votre propre ordinateur. Vous pouvez entrer l'emplacement des serveurs de symboles en tant qu'URL ou comme chemin sur la page **Débogage**\/**Symboles** de la **boîte de dialogue Options** de Visual Studio.  
-  
- **Serveurs de symboles tiers**  
-  
- Les fournisseurs tiers des applications et des bibliothèques Windows peuvent donner accès au serveur de symboles sur Internet. Vous entrez également l'URL de ces serveurs de symboles sur la page **Débogage**\/**Symboles**,  
+ Third-party providers of Windows applications and libraries can provide access to symbol server on the internet. You also enter the URL of these symbol servers on the **Debugging**/**Symbols** page,  
   
 > [!NOTE]
->  Si vous utilisez un serveur de symboles autre que les serveurs de symboles publics Microsoft, assurez\-vous que ce serveur et son chemin d'accès sont dignes de confiance. Étant donné que les fichiers de symboles peuvent contenir du code exécutable arbitraire, vous vous exposez à des menaces de sécurité.  
+>  If you use a symbol server other than the Microsoft public symbol servers, make sure that the symbol server and its path are trustworthy. Because symbol files can contain arbitrary executable code, you can become exposed to security threats.  
   
-###  <a name="BKMK_Find_and_load_symbols_while_debugging"></a> Rechercher et charger des symboles pendant le débogage  
- Lorsque le débogueur est en mode arrêt, vous pouvez charger des symboles pour un module qui a été précédemment exclu par les options du débogueur ou que le compilateur n'a pas pu trouver. Vous pouvez charger les symboles à partir des menus contextuels des fenêtres Pile des appels, Modules, Variables locales, Automatique et Espion. Si le débogueur s'arrête dans du code qui ne contient pas de fichiers sources ou de symboles disponibles, une fenêtre de document s'affiche. Vous trouverez des informations sur les fichiers manquants et pourrez prendre des mesures pour les localiser et les charger.  
+###  <a name="BKMK_Find_and_load_symbols_while_debugging"></a> Find and load symbols while debugging  
+ At any time that the debugger is in break mode, you can load symbols for a module that was previously excluded by debugger options or that the compiler could not find. You can load symbols from the shortcut menus of the Call Stack, Modules, Locals, Autos, and all Watch windows. If the debugger breaks in code that does not have symbol or source files available, a document window appears. Here you can find information about the missing files and take actions to locate and load them.
   
- **Rechercher des symboles à l'aide des pages de document Aucun symbole n'a été chargé**  
+ **Find symbols with the No Symbols Loaded document pages**  
   
- Il existe plusieurs moyens pour que le débogueur se divise en code n'ayant pas de symboles disponibles :  
+ There are a number of ways for the debugger to break into code that does not have symbols available:  
   
-1.  Codage en mode pas à pas détaillé.  
+1.  Stepping into code.  
   
-2.  Arrêt dans le code depuis un point d'arrêt ou une exception.  
+2.  Breaking into code from a breakpoint or exception.  
   
-3.  Passage à un autre thread.  
+3.  Switching to a different thread.  
   
-4.  Modification du frame de pile en double\-cliquant sur un frame dans la fenêtre Pile des appels.  
+4.  Changing the stack frame by double-clicking a frame in the Call Stack window.  
   
- Lorsqu'un de ces événements se produit, le débogueur affiche la page **Aucun symbole n'a été chargé** pour vous aider à identifier et à charger les symboles nécessaires.  
+ When one of these events occurs, the debugger displays the **No Symbols Loaded** page to help you find and load the necessary symbols.  
   
- ![Page Aucun symbole n’a été chargé](../debugger/media/dbg_nosymbolsloaded.png "DBG\_NoSymbolsLoaded")  
+ ![No Symbols Loaded page](../debugger/media/dbg_nosymbolsloaded.png "DBG_NoSymbolsLoaded")  
   
--   Pour modifier les chemins de recherche, choisissez un chemin d'accès non sélectionné ou choisissez **Nouveau** et entrez un nouveau chemin d'accès. Sélectionnez **Charger** pour rechercher à nouveau les chemins d'accès et charger le fichier de symboles s'il est trouvé.  
+-   To change the search paths, choose an unselected path or choose **New** and enter a new path. Choose **Load** to search the paths again and load the symbol file if it is found.  
   
--   Choisissez **Parcourir et rechercher***nom\_exécutable***...** pour remplacer toutes les options de symbole et réessayer les chemins de recherche. Le fichier de symboles est chargé s'il est trouvé, ou un Explorateur de fichiers s'affiche pour sélectionner manuellement le fichier de symboles.  
+-   Choose **Browse and find***executable-name***...** to override any symbol options and retry the search paths. The symbol file is loaded if it is found, or a File Explorer is displayed for you to manually select the symbol file.  
   
--   Sélectionnez **Modifier les paramètres des symboles ...** pour afficher la page **Débogage** \/ **Symboles** de la boîte de dialogue Options de VS.  
+-   Choose **Change Symbol Settings ...** to display the **Debugging** > **Symbols** page of the VS Options dialog.  
   
--   Choisissez **afficher le code machine** pour afficher le code machine dans une nouvelle fenêtre.  
+-   Choose **view disassembly** to show the disassembly in a new window one time.  
   
--   Pour toujours afficher le code machine lorsque la source ou les fichiers de symboles sont introuvables, choisissez le lien **Boîte de dialogue Options**, puis sélectionnez **Activer le débogage au niveau de l'adresse** et **Afficher le code machine si la source n'est pas disponible**.  
+-   To always show the disassembly when the source or symbol files are not found, choose the **Options dialog** link, and select both **Enable address level debugging** and **Show disassembly if source not available**.  
   
-     ![Options de code machine Options &#47; Débogage &#47; Général](~/debugger/media/dbg_options_general_disassembly_checkbox.png "DBG\_Options\_General\_disassembly\_checkbox")  
+     ![Options &#47; Debugging  &#47; General disassembly options](../debugger/media/dbg_options_general_disassembly_checkbox.png "DBG_Options_General_disassembly_checkbox")  
   
- **Changer les options de symbole depuis le menu contextuel**  
+ **Change symbol options from the shortcut menu**  
   
- Lorsque vous êtes en mode arrêt, vous pouvez rechercher et charger les symboles des éléments affichés dans les fenêtres Pile des appels, Modules, Variables locales, Automatique et Espion. Sélectionnez un élément dans la fenêtre, ouvrez le menu contextuel, puis sélectionnez l'une des options suivantes :  
+ While you are in break mode, you can find and load symbols for items that are displayed in the Call Stack, Modules, Locals, Autos, and all Watch windows. Select an item in the window, open the shortcut menu, and choose one of the following options:  
   
 |Option|Description|  
 |------------|-----------------|  
-|**Charger les symboles**|Essaie de charger les symboles d'emplacements spécifiés sur la page **Débogage** \/ **Symboles** de la boîte de dialogue **Options**. Si le fichier de symboles est introuvable, l'Explorateur de fichiers est lancé afin que vous puissiez spécifier un nouvel emplacement de recherche.|  
-|**Informations sur le chargement de symboles**|Présente des informations indiquant l'emplacement d'un fichier de symboles chargé, ou les emplacements ayant fait l'objet d'une recherche si le débogueur ne trouve pas le fichier.|  
-|**Paramètres des symboles...**|Ouvre la page **Débogage** \/ **Symboles** de la boîte de dialogue **Options** de VS.|  
-|**Toujours charger automatiquement**|Ajoute le fichier de symboles à la liste des fichiers qui sont automatiquement chargés par le débogueur.|  
+|**Load Symbols**|Attempts to load symbols from locations specified on the **Debugging**/**Symbols** page of the **Options** dialog box. If the symbol file cannot be found, File Explorer is launched so that you can specify a new location to search.|  
+|**Symbol Load Information**|Presents information showing the location of a loaded symbol file, or the locations that were searched if the debugger cannot find the file.|  
+|**Symbol Settings...**|Opens the **Debugging**/**Symbols** page of the VS **Options** dialog box.|  
+|**Always Load Automatically**|Adds the symbol file to the list of files that are automatically loaded by the debugger.|  
   
-###  <a name="BKMK_Set_compiler_options_for_symbol_files"></a> Définir des options du compilateur pour les fichiers de symboles  
- Lorsque vous générez votre projet à partir du VS IDE et utilisez la configuration de build **Debug** standard, C\+\+ et les compilateurs managés créent les fichiers de symboles appropriés pour votre code. Vous pouvez aussi définir les options du compilateur sur la ligne de commande pour créer les fichiers de symboles.  
+###  <a name="BKMK_Set_compiler_options_for_symbol_files"></a> Set compiler options for symbol files  
+ When you build your project from the VS IDE and use the standard **Debug** build configuration, the C++ and managed compilers create the appropriate symbols files for your code. You can also set compiler options on the command line to create the symbol files.  
   
- **Options C\+\+**  
+ **C++ options**  
   
- Un fichier .pdb \(base de données du programme\) contient des informations sur l'état du projet et le débogage, qui permettent l'édition des liens incrémentielle pour la configuration Debug de votre programme. Un fichier .pdb est créé lors de la génération à l'aide de [\/ZI ou \/Zi](/visual-cpp/build/reference/z7-zi-zi-debug-information-format) \(pour C\/C\+\+\).  
+ A program database (.pdb) file holds debugging and project state information that allows incremental linking of a Debug configuration of your program. A .pdb file is created when you build with [/ZI or /Zi](/cpp/build/reference/z7-zi-zi-debug-information-format) (for C/C++).  
   
- Dans [!INCLUDE[vcprvc](../debugger/includes/vcprvc_md.md)], l'option [\/Fd](/visual-cpp/build/reference/fd-program-database-file-name) permet de nommer le fichier .pdb créé par le compilateur. Quand vous créez un projet dans [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] à l’aide des Assistants, l’option **\/Fd** est définie pour créer un fichier .pdb nommé *projet*.pdb.  
+ In [!INCLUDE[vcprvc](../code-quality/includes/vcprvc_md.md)], the [/Fd](/cpp/build/reference/fd-program-database-file-name) option names the .pdb file created by the compiler. When you create a project in [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] using wizards, the **/Fd** option is set to create a .pdb file named *project*.pdb.  
   
- Si vous générez votre application C\/C\+\+ à l’aide d’un makefile et que vous spécifiez **\/ZI** ou **\/Zi** sans **\/Fd**, vous obtenez finalement deux fichiers .pdb :  
+ If you build your C/C++ application using a makefile, and you specify **/ZI** or **/Zi** without **/Fd**, you end up with two .pdb files:  
   
--   VC*x*.pdb, où *x* représente la version de Visual C\+\+, par exemple VC11.pdb. Ce fichier stocke toutes les informations de débogage concernant les fichiers OBJ individuels et réside dans le même répertoire que le makefile du projet.  
+-   VC*x*.pdb, where *x* represents the version of Visual C++, for example VC11.pdb. This file stores all debugging information for the individual OBJ files and resides in the same directory as the project makefile.  
   
--   project.pdb   Ce fichier stocke toutes les informations de débogage concernant le fichier .exe. Pour C\/C\+\+, il réside dans le sous\-répertoire \\debug.  
+-   project.pdb   This file stores all debug information for the.exe file. For C/C++, it resides in the \debug subdirectory.  
   
- Chaque fois qu'il crée un fichier OBJ, le compilateur C\/C\+\+ fusionne les informations de débogage dans VC*x*.pdb. Celles\-ci se composent d'informations de type, mais pas d'informations de symbole telles que les définitions de fonctions. Par conséquent, même si chaque fichier source inclut des fichiers d'en\-tête courants tels que \<windows.h\>, les typedefs de ces en\-têtes ne sont stockés qu'une seule fois, au lieu de l'être pour chaque fichier OBJ.  
+ Each time it creates an OBJ file, the C/C++ compiler merges debug information into VC*x*.pdb. The inserted information includes type information but does not include symbol information such as function definitions. So even if every source file includes common header files such as \<windows.h>, the typedefs from those headers are stored only once, rather than being in every OBJ file.  
   
- L'Éditeur de liens crée projet.pdb, qui contient les informations de débogage concernant le fichier EXE du projet. Le fichier projet.pdb contient toutes les informations de débogage, y compris les prototypes de fonction et pas seulement les informations de type présentes dans VC*x*.pdb. Les deux fichiers .pdb autorisent les mises à jour incrémentielles. L'Éditeur de liens incorpore également le chemin d'accès au fichier .pdb dans le fichier .exe ou .dll qu'il crée.  
+ The linker creates project.pdb, which contains debug information for the project's EXE file. The project.pdb file contains full debug information, including function prototypes, not just the type information found in VC*x*.pdb. Both .pdb files allow incremental updates. The linker also embeds the path to the .pdb file in the .exe or .dll file that it creates.  
   
- Le débogueur [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] utilise le chemin d'accès au fichier .pdb dans le fichier EXE ou DLL pour rechercher le fichier project.pdb. Si le débogueur ne peut pas trouver le fichier .pdb à cet emplacement ou que le chemin d'accès n'est pas valide \(par exemple, lorsque le projet a été déplacé sur un autre ordinateur\), le débogueur recherche le chemin d'accès contenant le fichier EXE, les chemins d'accès aux symboles spécifiés dans la boîte de dialogue **Options** \(dossier **Débogage**, nœud **Symboles**\). Le débogueur ne chargera pas un fichier .pdb qui ne correspond pas au fichier exécutable débogué. Si le débogueur ne trouve aucun fichier .pdb, la boîte de dialogue **Rechercher des symboles** qui s'affiche vous permet de rechercher des symboles ou d'ajouter des emplacements supplémentaires au chemin de recherche.  
+ The [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] debugger uses the path to the .pdb file in the EXE or DLL file to find the project.pdb file. If the debugger cannot find the .pdb file at that location or if the path is invalid (for example, if the project was moved to another computer), the debugger searches the path containing the EXE, the symbol paths specified in the **Options** dialog box (**Debugging** folder, **Symbols** node). The debugger will not load a .pdb file that does not match the executable being debugged. If the debugger cannot find a .pdb file, a **Find Symbols** dialog box appears, which allows you to search for symbols or to add additional locations to the search path.  
   
- **Options du .NET Framework**  
+ **.NET Framework options**  
   
- Un fichier .pdb \(base de données du programme\) contient des informations sur l'état du projet et le débogage, qui permettent l'édition des liens incrémentielle pour la configuration Debug de votre programme. Un fichier .pdb est créé quand vous générez avec **\/debug**. Vous pouvez générer des applications avec **\/debug:full** ou **\/debug:pdbonly**. La génération avec **\/debug:full** génère du code pouvant être débogué. La génération avec **\/debug:pdbonly** permet d’obtenir des fichiers .pdb mais ne génère pas le `DebuggableAttribute` indiquant au compilateur JIT que des informations de débogage sont disponibles. Utilisez **\/debug:pdbonly** si vous souhaitez générer des fichiers .pdb pour une version Release sans qu’elle puisse être déboguée. Pour plus d'informations, consultez [\/debug \(Emit Debugging Information\)](/dotnet/csharp/language-reference/compiler-options/debug-compiler-option) ou [\/debug](/dotnet/visual-basic/reference/command-line-compiler/debug).  
+ A program database (.pdb) file holds debugging and project state information that allows incremental linking of a debug configuration of your program. A .pdb file is created when you build with **/debug**. You can build applications with **/debug:full** or **/debug:pdbonly**. Building with **/debug:full** generates debuggable code. Building with **/debug:pdbonly** generates .pdb files but does not generate the `DebuggableAttribute` that tells the JIT compiler that debug information is available. Use **/debug:pdbonly** if you want to generate .pdb files for a release build that you do not want to be debuggable. For more information, see [/debug (C# Compiler Options)](/dotnet/csharp/language-reference/compiler-options/debug-compiler-option) or [/debug (Visual Basic)](/dotnet/visual-basic/reference/command-line-compiler/debug).  
   
- Le débogueur [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] utilise le chemin d'accès au fichier .pdb dans le fichier EXE ou DLL pour rechercher le fichier project.pdb. Si le débogueur ne peut pas trouver le fichier .pdb à cet emplacement ou si le chemin d'accès n'est pas valide, le débogueur recherche le chemin d'accès qui contient l'EXE, puis les chemins d'accès aux symboles spécifiés dans la boîte de dialogue **Options**. Ce chemin d'accès est en général le dossier **Débogage** du nœud **Symboles**. Le débogueur ne chargera pas un fichier .pdb qui ne correspond pas au fichier exécutable débogué. Si le débogueur ne trouve aucun fichier .pdb, la boîte de dialogue **Rechercher des symboles** qui s'affiche vous permet de rechercher des symboles ou d'ajouter des emplacements supplémentaires au chemin de recherche.  
+ The [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] debugger uses the path to the .pdb file in the EXE or DLL file to find the project.pdb file. If the debugger cannot find the .pdb file at that location, or if the path is invalid, the debugger searches the path containing the EXE, and then the symbol paths specified in the **Options** dialog box. This path is generally the **Debugging** folder in the **Symbols** node. The debugger will not load a .pdb file that does not match the executable file being debugged. If the debugger cannot find a .pdb file, a **Find Symbols** dialog box appears, which allows you to search for symbols or to add additional locations to the search path.  
   
- **Applications Web**  
+ **Web applications**  
   
- Le fichier de configuration de votre application \(Web.config\) doit avoir pour valeur mode débogage. En mode débogage, ASP.NET génère des symboles pour les fichiers générés dynamiquement et le débogueur peut être attaché à l'application ASP.NET. VS définit cela automatiquement lorsque vous commencez le débogage, si vous avez créé votre projet à partir du modèle de projets web.  
+ The configuration file of your application (Web.config) must be set to debug mode. Debug mode causes ASP.NET to generate symbols for dynamically generated files and enables the debugger to attach to the ASP.NET application. Visual Studio sets this automatically when you start to debug, if you created your project from the Web projects template.  
   
-##  <a name="BKMK_Find_source_files"></a> Rechercher les fichiers sources  
+##  <a name="BKMK_Find_source_files"></a> Find source files  
   
-###  <a name="BKMK_Where_the_debugger_searches_for_source_files"></a> Où le débogueur recherche les fichiers source  
- Le débogueur recherche des fichiers sources dans les emplacements suivants :  
+###  <a name="BKMK_Where_the_debugger_searches_for_source_files"></a> Where the debugger searches for source files  
+ The debugger looks for source files in the following locations:  
   
-1.  Fichiers ouverts dans l'IDE de l'instance Visual Studio qui a lancé le débogueur.  
+1.  Files that are open in the IDE of the Visual Studio instance that launched the debugger.  
   
-2.  Fichiers dans la solution ouverte dans l’instance Visual Studio.  
+2.  Files in the solution that is open in the Visual Studio instance.  
   
-3.  Répertoires qui sont spécifiés dans la page **Propriétés communes** \/ **Fichiers sources pour le débogage** dans les propriétés de la solution. \(Dans le l’**Explorateur de solutions**, sélectionnez le nœud de la solution, cliquez dessus avec le bouton droit, puis sélectionnez **Propriétés**. \)  
+3.  Directories that are specified in the **Common Properties**/**Debug Source Files** page in the properties of the solution. (In the **Solution Explorer**, select the solution node, right-click, and select **Properties**. )  
   
-4.  Informations sources du .pdb du module. Il peut s'agir de l'emplacement du fichier source lorsque le module a été généré, ou d'une commande d'un serveur source.  
+4.  The source information of the .pdb of the module. This can be the location of the source file when the module was built, or it can be a command to a source server.  
   
-###  <a name="BKMK_Find_and_load_source_files_with_the_No_Source___No_Symbols_Loaded_pages"></a> Rechercher et charger des fichiers sources à l'aide des pages Aucune source \/ Aucun symbole n'a été chargé  
- Lorsque le débogueur interrompt l'exécution à un emplacement où le fichier source n'est pas disponible, il affiche les pages **Aucune source n'a été chargée** ou **Aucun symbole n'a été chargé** qui peuvent vous aider à trouver le fichier source. Le message **Aucun symbole n'a été chargé** apparaît lorsque le débogueur ne trouve aucun fichier de symboles \(.pdb\) pour le fichier exécutable pour terminer sa recherche. La page Aucun symbole fournit des options de recherche pour le fichier. Si le fichier .pdb est trouvé après l'exécution d'une des options et que le débogueur peut récupérer le fichier source à l'aide des informations contenues dans le fichier de symboles, la source est affichée. Sinon, la page **Aucune source n'a été chargée** apparaît et décrit le problème. La page affiche les liens d'option qui peuvent effectuer des actions pouvant résoudre le problème.  
+###  <a name="BKMK_Find_and_load_source_files_with_the_No_Source___No_Symbols_Loaded_pages"></a> Find and load source files with the No Source/No Symbols Loaded pages  
+ When the debugger breaks execution at a location where the source file is not available, it will display the **No Source Loaded** or **No Symbols Loaded** pages that can help you find the source file. The **No Symbols Loaded** appears when the debugger cannot find a symbol (.pdb) file for the executable file to complete its search. The No Symbols page provides options to search for the file. If the .pdb is found of after you execute one of the options and the debugger can retrieve the source file using the information in the symbols file, the source is displayed. Otherwise, a **No Source Loaded** page appears that describes the issue. The page displays option links that can perform actions that might resolve the issue.  
   
-###  <a name="BKMK_Add_source_file_search_paths_to_a_solution"></a> Ajouter des chemins de recherche de fichier source à une solution  
- Vous pouvez spécifier le réseau ou les répertoires locaux sur lesquels rechercher les fichiers sources.  
+###  <a name="BKMK_Add_source_file_search_paths_to_a_solution"></a> Add source file search paths to a solution  
+ You can specify a network or local directories to search for source files.  
   
-1.  Sélectionnez la solution dans l'Explorateur de solutions, puis choisissez **Propriétés** dans le menu contextuel.  
+1.  Select the solution in Solution Explorer and then choose **Properties** from the shortcut menu.  
   
-2.  Sous le nœud **Propriétés communes**, choisissez **Fichiers sources pour le débogage**.  
+2.  Under the **Common Properties** node, choose **Debug Source Files**.  
   
-3.  Cliquez sur l'icône de dossier ![Icône du dossier Outils&#47; Options&#47; Débogage&#47;Symboles](~/debugger/media/dbg_tools_options_foldersicon.png "DBG\_Tools\_Options\_FoldersIcon"). Le texte modifiable apparaît dans la liste **Répertoires contenant du code source**.  
+3.  Click the folder ![Tools&#47; Options&#47; Debugging&#47;Symbols  folder icon](../debugger/media/dbg_tools_options_foldersicon.png "DBG_Tools_Options_FoldersIcon") icon. Editable text appears in the **Directories containing source code** list.  
   
-4.  Ajoutez le chemin que vous souhaitez rechercher.  
+4.  Add the path that you want to search.  
   
- Notez que seul le répertoire spécifié est recherché. Vous devez ajouter des entrées pour tous les sous\-répertoires à explorer.  
+ Note that only the specified directory is searched. You must add entries for any subdirectories that you want to search.  
   
-###  <a name="BKMK_Use_source_servers"></a> Utiliser des serveurs sources  
- Lorsqu'il n'y a pas de code source sur l'ordinateur local ou si le fichier .pdb ne correspond pas au code source, le serveur source peut vous aider à déboguer une application. Il prend les demandes de fichiers et retourne les fichiers réels. Le serveur source s'exécute au moyen d'un fichier DLL nommé srcsrv.dll. Le serveur source lit le fichier .pdb de l'application, qui contient des pointeurs vers le référentiel de code source ainsi que des commandes utilisées pour extraire le code source du référentiel. Vous pouvez limiter les commandes dont vous autorisez l'exécution et appartenant au fichier .pdb de l'application en les répertoriant dans un fichier srcsrv.ini qui doit se trouver dans le même répertoire que srcsrv.dll et devenv.exe.  
+###  <a name="BKMK_Use_source_servers"></a> Use source servers  
+ When there is no source code on the local machine or the .pdb file does not match the source code, you can use Source Server to help debug an application. Source Server takes requests for files and returns the actual files. Source Server runs by means of a DLL file named srcsrv.dll. Source Server reads the application's .pdb file, which contains pointers to the source code repository, as well as commands used to retrieve source code from the repository. You can limit what commands are allowed to be executed from the application's .pdb file by listing the allowed commands inside a file named srcsrv.ini, which must be placed in the same directory as srcsrv.dll and devenv.exe.  
   
 > [!IMPORTANT]
->  Les commandes arbitraires peuvent être incorporées dans le fichier .pdb de l'application, veillez à ne mettre que celles que vous voulez exécuter dans le fichier srcsrv.ini. Toute tentative d'exécution d'une commande ne se trouvant pas dans le fichier srcsvr.ini provoque l'apparition d'une boîte de dialogue de confirmation. Pour plus d'informations, consultez [Avertissement de sécurité : Le débogueur doit exécuter cette commande non approuvée](../debugger/security-warning-debugger-must-execute-untrusted-command.md). Aucune validation n’est effectuée sur les paramètres de commande, soyez donc prudent avec les commandes de confiance. Par exemple, vous avez confiance en cmd.exe, mais un utilisateur malveillant a pu spécifier des paramètres qui rendent la commande dangereuse.  
+>  Arbitrary commands can be embedded in the application's .pdb file, so make sure you put only the ones you want to execute in the srcsrv.ini file. Any attempt to execute a command not in the srcsvr.ini file will cause a confirmation dialog box to appear. For more information, see [Security Warning: Debugger Must Execute Untrusted Command](../debugger/security-warning-debugger-must-execute-untrusted-command.md). No validation is done on command parameters, so be careful with trusted commands. For example, if you trusted cmd.exe, a malicious user might specify parameters that would make the command dangerous.  
   
- **Pour activer l'utilisation d'un serveur source**  
+ **To enable the use of a Source Server**  
   
-1.  Vérifiez que vous respectez les mesures de sécurité décrites dans la section précédente.  
+1.  Ensure that you have complied with the security measures described in the previous section.  
   
-2.  Dans le menu **Outils**, choisissez **Options**.  
+2.  On the **Tools** menu, choose **Options**.  
   
-     La boîte de dialogue **Options** s'affiche.  
+     The **Options** dialog box appears.  
   
-3.  Dans le nœud **Débogage**, choisissez la page **Général**.  
+3.  In the **Debugging** node, choose **General**.  
   
-4.  Activez la case à cocher **Activer le support du serveur source**.  
+4.  Select the **Enable source server support** check box.  
   
-     ![Activer les options du serveur source](~/debugger/media/dbg_options_general_enablesrcsrvr_checkbox.png "DBG\_Options\_General\_EnableSrcSrvr\_checkbox")  
+     ![Enable source server options](../debugger/media/dbg_options_general_enablesrcsrvr_checkbox.png "DBG_Options_General_EnableSrcSrvr_checkbox")  
   
-5.  \(Facultatif\) Sélectionnez les options enfants que vous souhaitez.  
+5.  (Optional) Choose the child options that you want.  
   
-     Notez que les deux options **Autoriser le serveur source pour les assemblys de confiance partielle \(managé uniquement\)** et **Toujours exécuter les commandes de serveur source non fiables sans demander de confirmation** peuvent augmenter les risques de sécurité décrits ci\-dessus.  
+     Note that both **Allow source server for partial trust assemblies (Managed only)** and **Always run untrusted source server commands without prompting** can increase the security risks discussed above.  
   
-## Voir aussi  
- [Modifications du chargement des symboles distants .NET dans Visual Studio 2012 et 2013](http://blogs.msdn.com/b/visualstudioalm/archive/2013/10/16/net-remote-symbol-loading-changes-in-visual-studio-2012-and-2013.aspx)
+## <a name="see-also"></a>See Also  
+[Understanding Symbol Files and Visual Studio Symbol Settings](https://blogs.msdn.microsoft.com/visualstudioalm/2015/01/05/understanding-symbol-files-and-visual-studios-symbol-settings/)
+
+[.NET Remote Symbol Loading Changes in Visual Studio 2012 and 2013](http://blogs.msdn.com/b/visualstudioalm/archive/2013/10/16/net-remote-symbol-loading-changes-in-visual-studio-2012-and-2013.aspx)

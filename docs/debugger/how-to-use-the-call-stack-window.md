@@ -1,145 +1,161 @@
 ---
-title: "Comment&#160;: utiliser la fen&#234;tre Pile des appels | Microsoft Docs"
-ms.custom: ""
-ms.date: "12/05/2016"
-ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-debug"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "vs.debug.callstack"
-dev_langs: 
-  - "FSharp"
-  - "VB"
-  - "CSharp"
-  - "C++"
-  - "JScript"
-  - "SQL"
-  - "aspx"
-helpviewer_keywords: 
-  - "threads (Visual Studio), affichage des appels vers ou provenant de"
-  - "fonctions (débogueur), affichage du code dans la pile des appels"
-  - "code machine"
-  - "point d’arrêts, fenêtre Pile des appels"
-  - "débogage (Visual Studio), basculement vers un autre frame de pile"
-  - "débogage (Visual Studio), fenêtre Pile des appels"
-  - "Pile des appels (fenêtre), affichage du code source de fonctions dans la pile des appels"
-  - "pile, basculement d’un frame à un autre"
-  - "Pile des appels (fenêtre), affichage du code machine de fonctions dans la pile des appels"
+title: View the call stack in the Visual Studio debugger | Microsoft Docs
+ms.custom: H1Hack27Feb2017
+ms.date: 04/06/2017
+ms.reviewer: 
+ms.suite: 
+ms.technology:
+- vs-ide-debug
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords:
+- vs.debug.callstack
+dev_langs:
+- CSharp
+- VB
+- FSharp
+- C++
+- JScript
+- SQL
+- aspx
+helpviewer_keywords:
+- threading [Visual Studio], displaying calls to or from
+- functions [debugger], viewing code on call stack
+- disassembly code
+- breakpoints, Call Stack window
+- debugging [Visual Studio], switching to another stack frame
+- debugging [Visual Studio], Call Stack window
+- Call Stack window, viewing source code for functions on the call stack
+- stack, switching stack frames
+- Call Stack window, viewing disassembly code for functions on the call stack
 ms.assetid: 5154a2a1-4729-4dbb-b675-db611a72a731
 caps.latest.revision: 40
-caps.handback.revision: 38
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
----
-# Comment&#160;: utiliser la fen&#234;tre Pile des appels
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+translation.priority.ht:
+- cs-cz
+- de-de
+- es-es
+- fr-fr
+- it-it
+- ja-jp
+- ko-kr
+- pl-pl
+- pt-br
+- ru-ru
+- tr-tr
+- zh-cn
+- zh-tw
+ms.translationtype: HT
+ms.sourcegitcommit: 9e6c28d42bec272c6fd6107b4baf0109ff29197e
+ms.openlocfilehash: 83977d96d8e8503565f811608089279cfbef5d05
+ms.contentlocale: fr-fr
+ms.lasthandoff: 08/22/2017
 
-La fenêtre **Pile des appels** permet d'afficher les appels de fonctions ou de procédures actuellement dans la pile.  
+---
+# <a name="view-the-call-stack-and-use-the-call-stack-window-in-the-visual-studio-debugger"></a>View the call stack and use the Call Stack Window in the Visual Studio debugger
+
+By using the **Call Stack** window, you can view the function or procedure calls that are currently on the stack. The **Call Stack** window shows the order in which methods and functions are getting called. The call stack is a good way to examine and understand the execution flow of an app.
   
- La fenêtre **Pile des appels** affiche le nom de chaque fonction et le langage de programmation dans lequel elle est écrite.  Le nom de la fonction ou de la procédure peut être accompagné d'informations facultatives, telles qu'un nom de module et un numéro de ligne, ainsi que des noms, des valeurs et des types de paramètres.  L'affichage de ces informations facultatives peut être activé ou désactivé.  
+When [debugging symbols](#bkmk_symbols) are not available for part of a call stack, the **Call Stack** window might not be able to display correct information for that part of the call stack. If that occurs, the following notation appears:  
   
- Une flèche jaune identifie le frame de pile où le pointeur d'exécution se trouve actuellement.  Par défaut, il s'agit du frame dont les informations apparaissent dans les fenêtres sources **Code machine**, **Variables locales**, **Espion** et **Automatique**.  Si vous voulez changer le contexte en un autre frame sur la pile, vous pouvez le faire dans la fenêtre **Pile des appels**.  
-  
- Lorsque les symboles de débogage ne sont pas disponibles pour une partie d'une pile des appels, la fenêtre **Pile des appels** peut ne pas être capable d'afficher des informations correctes pour cette partie de la pile des appels.  La notation suivante apparaît :  
-  
- \[Les frames ci\-dessous sont peut\-être incorrects et\/ou manquants, aucun symbole chargé pour name.dll\]  
-  
- En code managé, par défaut, la fenêtre **Pile des appels** masque les informations pour le code non\-utilisateur.  La notation suivante apparaît à la place des informations masquées :  
-  
- **\[\<External Code\>\]**  
-  
- Le code non\-utilisateur est un code qui n'est pas « Mon code que vous pouvez choisir pour afficher les informations de la pile des appels pour le code non\-utilisateur en utilisant le menu contextuel.  
-  
- Le menu contextuel vous permet de choisir si vous voulez afficher les appels entre les threads.  
-  
+`[Frames below may be incorrect and/or missing, no symbols loaded for name.dll]`
+
+>  [!NOTE]
+> The **Call Stack** window is similar to the Debug perspective in some IDEs like Eclipse. 
+
 > [!NOTE]
->  Selon vos paramètres actifs ou votre édition, les boîtes de dialogue et les commandes de menu affichées peuvent différer de celles qui sont décrites dans l'aide.  Pour modifier vos paramètres, cliquez sur **Importation et exportation de paramètres** dans le menu **Outils**.  Pour plus d'informations, consultez [Customizing Development Settings in Visual Studio](http://msdn.microsoft.com/fr-fr/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
+>  The dialog boxes and menu commands you see might differ from those described here, depending on your active settings or edition. To change your settings, select **Import and Export Settings** on the **Tools** menu.  See [Personalizing the IDE](../ide/personalizing-the-visual-studio-ide.md)
   
-### Pour afficher la fenêtre Pile des appels en mode arrêt ou en mode exécution  
+## <a name="view-the-call-stack-while-in-the-debugger"></a>View the call stack while in the debugger 
   
--   Dans le menu **Déboguer**, sélectionnez **Fenêtres**, puis cliquez sur **Pile des appels**.  
+-   While debugging, in the **Debug** menu, select **Windows > Call Stack**.
+
+ ![Call Stack Window](../debugger/media/dbg_basics_callstack_window.png "CallStackWindow")
+
+A yellow arrow identifies the stack frame where the execution pointer is currently located. By default, this is the stack frame whose information appears in the source, **Locals**, **Autos**, **Watch**, and **Disassembly** windows. If you want to change the debugger context to another frame on the stack, you can do that by [switching to another stack frame](#bkmk_switch).   
   
-### Pour modifier l'affichage des informations facultatives  
+## <a name="display-non-user-code-in-the-call-stack-window"></a>Display non-user code in the Call Stack window  
   
--   Cliquez avec le bouton droit sur la fenêtre **Pile des appels** et activez ou désactivez **Afficher \<***the information that you want***\>**.  
+-   Right-click the **Call Stack** window and select **Show External Code**.
+
+Non-user code is any code that is not shown when [Just My Code](../debugger/just-my-code.md) is enabled. In managed code, non-user code frames are hidden by default. The following notation appears instead of the non-user code frames:  
   
-### Pour afficher les frames de code non\-utilisateur dans la fenêtre Pile des appels  
+**[\<External Code>]**  
   
--   Cliquez avec le bouton droit sur la fenêtre **Pile des appels**, puis sélectionnez **Afficher le code externe** dans le menu contextuel.  
+## <a name="bkmk_switch"></a> Switch to another stack frame (change the debugger context)
   
-### Pour basculer vers un autre frame de pile  
+1.  In the **Call Stack** window, right-click the stack frame whose code and data that you want to view.
+
+    Or, you can double-click a frame in the **Call Stack** window to switch to the selected frame. 
   
-1.  Dans la fenêtre **Pile des appels**, cliquez avec le bouton droit sur le frame dont vous voulez afficher le code et les données.  
+2.  Select **Switch to Frame**.  
   
-2.  Sélectionnez **Basculer vers le frame**.  
+     A green arrow with a curly tail appears next to the stack frame you selected. The execution pointer remains in the original frame, which is still marked with the yellow arrow. If you select **Step** or **Continue** from the **Debug** menu, execution will continue in the original frame, not the frame you selected.  
   
-     Une flèche verte avec extrémité recourbée apparaît à côté du frame sélectionné.  Le pointeur d'exécution reste dans le frame d'origine, qui est toujours identifié par la flèche jaune.  Si vous sélectionnez **Pas à pas** ou **Continuer** dans le menu **Débogage**, l'exécution se poursuivra dans le frame d'origine, et non dans le frame sélectionné.  
+## <a name="view-the-source-code-for-a-function-on-the-call-stack"></a>View the source code for a function on the call stack  
   
-### Pour afficher des appels échangés avec d'autres threads  
+-   In the **Call Stack** window, right-click the function whose source code you want to see and select **Go To Source Code**.
+
+## <a name="run-to-a-specific-function-from-the-call-stack-window"></a>Run to a specific function from the Call Stack window  
   
--   Cliquez avec le bouton droit dans la fenêtre **Pile des appels**, puis sélectionnez **Inclure les appels échangés avec d'autres threads**.  
+-  In the **Call Stack** window, select the function, right-click and  choose **Run to Cursor**.  
   
-### Pour afficher le code source d'une fonction dans la pile des appels  
+## <a name="set-a-breakpoint-on-the-exit-point-of-a-function-call"></a>Set a breakpoint on the exit point of a function call  
   
--   Dans la fenêtre **Pile des appels**, cliquez avec le bouton droit sur la fonction dont vous voulez afficher le code source, puis sélectionnez **Atteindre le code source**.  
+-   See [Set a breakpoint at a call stack function](../debugger/using-breakpoints.md#BKMK_Set_a_breakpoint_in_the_call_stack_window).
+
+## <a name="display-calls-to-or-from-another-thread"></a>Display calls to or from another thread  
   
-### Pour assurer le suivi visuel de la pile des appels  
+-   Right-click the **Call Stack** window and select **Include Calls To/From Other Threads**.   
   
-1.  Dans la fenêtre **Pile des appels**, ouvrez le menu contextuel.  Sélectionnez **Afficher la pile d'appels sur la carte du code**. \(raccourci : **CTRL** \+ **MAJ** \+ **\`**\)  
+## <a name="visually-trace-the-call-stack"></a>Visually trace the call stack  
+
+If you are using Visual Studio Enterprise (only), you can view code maps for the call stack while debugging.
+
+- In the **Call Stack** window, open the shortcut menu. Choose **Show Call Stack on Code Map**. (Keyboard: **CTRL** + **SHIFT** + **`**)  
   
-     Consultez [Mapper les méthodes sur la pile des appels tout en déboguant](../debugger/map-methods-on-the-call-stack-while-debugging-in-visual-studio.md).  
+    For detailed information, see [Map methods on the call stack while debugging](../debugger/map-methods-on-the-call-stack-while-debugging-in-visual-studio.md).
+
+![Show Call Stack on Code Map](../debugger/media/dbg_basics_show_call_stack_on_code_map.gif "ShowCallStackOnCodeMap")
   
-### Pour afficher le code machine d'une fonction dans la pile des appels  
+## <a name="view-the-disassembly-code-for-a-function-on-the-call-stack"></a>View the disassembly code for a function on the call stack  
   
--   Dans la fenêtre **Pile des appels**, cliquez avec le bouton droit sur la fonction dont vous voulez afficher le code machine, puis sélectionnez **Atteindre le code machine**.  
+-   In the **Call Stack** window, right-click the function whose disassembly code you want to see and select **Go To Disassembly**.    
+
+## <a name="change-the-optional-information-displayed"></a>Change the optional information displayed  
   
-### Pour exécuter jusqu'à une fonction spécifique de la fenêtre Pile des appels  
+-   Right-click the **Call Stack** window and set or clear **Show \<***the information that you want***>**.  
   
--   Voir la rubrique sur [l'exécution d'un emplacement ou d'une fonction spécifié\(e\)](../debugger/navigating-through-code-with-the-debugger.md#BKMK_Run_to_a_specified_location_or_function).  
+## <a name="bkmk_symbols"></a> Load Symbols for a module
+In the **Call Stack** window, you can load debugging symbols for code that does not currently have symbols loaded. These symbols can be .NET Framework or system symbols downloaded from the Microsoft public symbol servers or symbols in a symbol path on the computer that you are debugging.  
   
-### Pour définir un point d'arrêt sur le point de sortie d'un appel de fonction  
+See [Specify Symbol (.pdb) and Source Files](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md)  
   
--   Consultez [Définir un point d'arrêt à une ligne source, une instruction d'assembly ou une fonction de pile des appels](../debugger/using-breakpoints.md#BKMK_Set_a_breakpoint_at_a_source_line__assembly_instruction__or_call_stack_function_).  
+### <a name="to-load-symbols"></a>To load symbols  
   
-### Charger les symboles d'un module  
+1.  In the **Call Stack** window, right-click the stack frame for which symbols are not loaded. The frame will be dimmed.  
   
--   Dans la fenêtre **Pile des appels**, cliquez avec le bouton droit sur le frame qui affiche le module dont vous voulez recharger les symboles, puis sélectionnez **Charger les symboles**.  
+2.  Point to **Load Symbols** and then click **Microsoft Symbol Servers** (if available) or browse to the symbol path.  
   
-## Chargement de symboles  
- Dans la fenêtre **Pile des appels**, vous pouvez charger des symboles de débogage pour du code qui ne possède actuellement aucun symbole chargé.  Ces symboles peuvent être des symboles .NET Framework ou système téléchargés à partir des serveurs de symboles publics de Microsoft ou des symboles situés dans un chemin d'accès aux symboles sur l'ordinateur que vous déboguez.  
+### <a name="to-set-the-symbol-path"></a>To set the symbol path  
   
- Consultez [Spécifier les fichiers de symbole \(.pdb\) et les fichiers sources](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md).  
+1.  In the **Call Stack** window, choose **Symbol Settings** from the shortcut menu.  
   
-#### Pour charger des symboles  
+     The **Options** dialog box opens and the **Symbols** page is displayed.  
   
-1.  Dans la fenêtre **Pile des appels**, cliquez avec le bouton droit sur le frame pour lequel des symboles ne sont pas chargés.  La frame est alors grisée.  
+2.  Click **Symbol Settings**.  
   
-2.  Pointez sur **Charger les symboles depuis** et cliquez sur **Serveur de symboles publics Microsoft** ou sur **Chemin d'accès aux symboles**.  
+3.  In the **Options** dialog box, click the Folder icon.  
   
-#### Pour définir le chemin d'accès aux symboles  
+     In the **Symbol file (.pdb) locations** box, a cursor appears.  
   
-1.  Dans la fenêtre **Pile des appels**, choisissez **Paramètres des symboles** dans le menu contextuel.  
+4.  Type a directory pathname to the symbol location on the computer that you are debugging. For local and remote debugging, this is a path on your local computer.
   
-     La boîte de dialogue **Options** s'ouvre et la page **Symboles** s'affiche.  
+5.  Click **OK** to close the **Options** dialog box.  
   
-2.  Cliquez sur **Paramètres des symboles**.  
-  
-3.  Dans la boîte de dialogue **Options**, cliquez sur l'icône de dossier.  
-  
-     Un curseur apparaît dans la zone **Emplacements du fichier de symboles \(.pdb\)**.  
-  
-4.  Tapez un chemin d'accès au répertoire correspondant à l'emplacement de symboles sur l'ordinateur que vous déboguez.  En cas de débogage local, il s'agit de votre ordinateur local.  Dans le cadre d'un débogage distant, il s'agit de l'ordinateur distant.  
-  
-5.  Cliquez sur **OK** pour fermer la boîte de dialogue **Options**.  
-  
-## Voir aussi  
- [Code mixte et informations manquantes dans la fenêtre Pile des appels](../debugger/mixed-code-and-missing-information-in-the-call-stack-window.md)   
- [Comment : modifier le format numérique des fenêtres du débogueur](../Topic/How%20to:%20Change%20the%20Numeric%20Format%20of%20Debugger%20Windows.md)   
- [Affichage des données dans le débogueur](../debugger/viewing-data-in-the-debugger.md)   
- [Spécifier les fichiers de symbole \(.pdb\) et les fichiers sources](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md)   
- [Utilisation des points d'arrêt](../debugger/using-breakpoints.md)
+## <a name="see-also"></a>See Also  
+ [Mixed Code and Missing Information in the Call Stack Window](../debugger/mixed-code-and-missing-information-in-the-call-stack-window.md) [Viewing Data in the Debugger](../debugger/viewing-data-in-the-debugger.md)   
+ [Specify Symbol (.pdb) and Source Files](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md)   
+ [Using Breakpoints](../debugger/using-breakpoints.md)
