@@ -1,62 +1,80 @@
 ---
-title: "Envoi des Extensions Visual Studio | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-helpviewer_keywords: 
-  - "Déploiement VSIX"
-  - "déploiement VSIX"
-  - "DLL satellites, de packages VSIX"
+title: Shipping Visual Studio Extensions | Microsoft Docs
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology:
+- vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+helpviewer_keywords:
+- VSIX deployment
+- deployment, VSIX
+- satellite DLLs, in VSIX packages
 ms.assetid: 13cd263d-25f7-488e-9c1a-cff908caedb6
 caps.latest.revision: 26
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 26
----
-# Envoi des Extensions Visual Studio
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
+ms.author: gregvanl
+manager: ghogen
+translation.priority.mt:
+- cs-cz
+- de-de
+- es-es
+- fr-fr
+- it-it
+- ja-jp
+- ko-kr
+- pl-pl
+- pt-br
+- ru-ru
+- tr-tr
+- zh-cn
+- zh-tw
+ms.translationtype: MT
+ms.sourcegitcommit: 3cd705d703b3d745c502290422e29b3c6da39ee5
+ms.openlocfilehash: 26cbfb7212d7f7242508a3d49789c7b68c3a0481
+ms.contentlocale: fr-fr
+ms.lasthandoff: 08/22/2017
 
-Après avoir terminé le développement de votre extension, vous pouvez installer sur d'autres ordinateurs, partager avec vos amis et collègues ou publiez\-la sur la galerie Visual Studio. Dans cette section, nous vous expliquons tout ce que vous devez effectuer afin de publier et gérer votre extension : utilisation des fichiers .vsix, publication, la localisation et la mise à jour.  
+---
+# <a name="shipping-visual-studio-extensions"></a>Shipping Visual Studio Extensions
+After you've finished developing your extension, you can install it on other machines, share it with your friends and coworkers, or publish it on the Visual Studio Gallery. In this section we explain all the things you need to do in order to publish and maintain your extension: working with .vsix files, publishing, localizing, and updating.  
   
-## Utilisation des Extensions VSIX  
- Vous pouvez créer les extensions VSIX en créant un projet VSIX vide et lui ajoutant les modèles d'élément différent. Pour plus d'informations, consultez [Modèle de projet VSIX](../extensibility/vsix-project-template.md).  
+## <a name="working-with-vsix-extensions"></a>Working with VSIX Extensions  
+ You can create a VSIX extensions by creating a blank VSIX Project, and then adding different item templates to it. For more information, see [VSIX Project Template](../extensibility/vsix-project-template.md).  
   
- Vous pouvez utiliser le format VSIX pour empaqueter des modèles de projet, des composants de Managed Extensibility Framework \(MEF\) les VSPackages, modèles, d'élément **boîte à outils** contrôles, des assemblys et des types personnalisés \(y compris les Pages de démarrage personnalisées\). Le format VSIX utilise un déploiement basé sur un fichier. Pour plus d'informations sur les packages VSIX, consultez [Anatomie d'un Package VSIX](../extensibility/anatomy-of-a-vsix-package.md).  
+ You can use the VSIX format to package project templates, item templates, VSPackages, Managed Extensibility Framework (MEF) components, **Toolbox** controls, assemblies, and custom types (this includes custom Start Pages). The VSIX format uses file-based deployment. For more information about VSIX packages, see [Anatomy of a VSIX Package](../extensibility/anatomy-of-a-vsix-package.md).  
   
- Le format VSIX ne prend pas en charge l'installation d'extraits de code. Elle aussi ne prend pas en charge certains autres scénarios tels que l'écriture vers le Global Assembly Cache \(GAC\) ou dans le Registre système. Si vous avez besoin écrire dans le GAC ou le Registre de l'installation, vous devez utiliser le programme d'installation de Windows. Pour plus d'informations, consultez [Préparation des Extensions pour le déploiement de Windows Installer](../extensibility/preparing-extensions-for-windows-installer-deployment.md).  
+ The VSIX format does not support the installation of code snippets. It also does not support certain other scenarios such as writing to the Global Assembly Cache (GAC) or to the system registry. If you need to write to the GAC or the registry in the installation, you must use the Windows Installer. For more information, see [Preparing Extensions for Windows Installer Deployment](../extensibility/preparing-extensions-for-windows-installer-deployment.md).  
   
-## Publication de votre Extension vers la galerie Visual Studio  
- Vous pouvez distribuer votre extension à d'autres personnes simplement par courrier le fichier .vsix ou insérer sur un serveur. Mais la meilleure façon d'obtenir le code entre les mains d'un grand nombre de personnes consiste à placer dans le [la galerie Visual Studio](http://go.microsoft.com/fwlink/?LinkID=123847). Extensions de la galerie Visual Studio sont disponibles pour les utilisateurs de Visual Studio via **Extensions et mises à jour**. Pour plus d'informations, consultez [Recherche et utilisation des extensions Visual Studio](../ide/finding-and-using-visual-studio-extensions.md).  
+## <a name="publishing-your-extension-to-the-visual-studio-gallery"></a>Publishing your Extension to the Visual Studio Gallery  
+ You can distribute your extension to other people simply by mailing them the .vsix file or putting in on a server. But the best way to get your code in the hands of a lot of people is to put it on the [Visual Studio Gallery](http://go.microsoft.com/fwlink/?LinkID=123847). Visual Studio Gallery extensions are available to Visual Studio users through **Extensions and Updates**. For more information, see [Finding and Using Visual Studio Extensions](../ide/finding-and-using-visual-studio-extensions.md).  
   
- Pour obtenir un exemple complet qui montre comment télécharger une extension vers la galerie Visual Studio, consultez [Procédure pas à pas : Publication d'une Extension Visual Studio](../extensibility/walkthrough-publishing-a-visual-studio-extension.md).  
+ For a full example that shows how to upload an extension to the Visual Studio Gallery, see [Walkthrough: Publishing a Visual Studio Extension](../extensibility/walkthrough-publishing-a-visual-studio-extension.md).  
   
-## Les galeries privées  
- Lorsque vous développez des contrôles, des modèles et des outils, vous pouvez les partager avec votre organisation, en les envoyant à une galerie privée sur votre intranet. Pour plus d'informations, consultez [Les galeries privées](../extensibility/private-galleries.md).  
+## <a name="private-galleries"></a>Private Galleries  
+ As you develop controls, templates, and tools, you can share them with your organization by posting them to a private gallery on your intranet. For more information, see [Private Galleries](../extensibility/private-galleries.md).  
   
-## Localisation de votre Extension  
- Si vous prévoyez de publier votre extension dans les différents paramètres régionaux, vous devez envisager de sa localisation. Pour obtenir une explication de ce qui est impliqué, consultez [Localisation de Packages VSIX](../extensibility/localizing-vsix-packages.md).  
+## <a name="localizing-your-extension"></a>Localizing your Extension  
+ If you're planning to release your extension in different locales, you should consider localizing it. For an explanation of what's involved, see [Localizing VSIX Packages](../extensibility/localizing-vsix-packages.md).  
   
-## Mise à jour et contrôle de version de votre Extension  
- Une fois que vous avez publié votre extension, il arrivera un moment lorsque vous devez mettre à jour. Pour savoir comment mettre à jour une extension qui a été publiée sur la galerie Visual Studio, consultez [Comment : mettre à jour une Extension](../extensibility/how-to-update-a-visual-studio-extension.md).  
+## <a name="updating-and-versioning-your-extension"></a>Updating and Versioning your Extension  
+ After you've published your extension, there will come a time when you need to update it. To find out how to update an extension that has been published on the Visual Studio Gallery, see [How to: Update an Extension](../extensibility/how-to-update-a-visual-studio-extension.md).  
   
- Vous pouvez définir votre extension pour prendre en charge plusieurs versions de Visual Studio. Pour plus d'informations, consultez [Prise en charge de plusieurs Versions de Visual Studio](../extensibility/supporting-multiple-versions-of-visual-studio.md).  
+ You can set your extension to support multiple versions of Visual Studio. For more information, see [Supporting Multiple Versions of Visual Studio](../extensibility/supporting-multiple-versions-of-visual-studio.md).  
   
-## Rubriques connexes  
+## <a name="related-topics"></a>Related Topics  
   
-|Titre|Description|  
+|Title|Description|  
 |-----------|-----------------|  
-|[Mise en route avec le modèle de projet VSIX](../extensibility/getting-started-with-the-vsix-project-template.md)|Explique comment utiliser le modèle de projet VSIX pour installer un modèle de projet personnalisé.|  
-|[Anatomie d'un Package VSIX](../extensibility/anatomy-of-a-vsix-package.md)|Décrit les composants d'un package VSIX.|  
-|[Modèle de projet VSIX](../extensibility/vsix-project-template.md)|Fournit des instructions détaillées sur la façon d'empaqueter et publier une extension.|  
-|[Localisation de Packages VSIX](../extensibility/localizing-vsix-packages.md)|Explique comment fournir du texte localisé pour le processus d'installation à l'aide de fichiers extension.vsixlangpack.|  
-|[Comment : mettre à jour une Extension](../extensibility/how-to-update-a-visual-studio-extension.md)|Décrit comment mettre à jour une extension sur votre système et comment déployer une mise à jour à une extension Visual Studio.|  
-|[Comment : ajouter une dépendance à un Package VSIX](../extensibility/how-to-add-a-dependency-to-a-vsix-package.md)|Décrit comment ajouter des références aux packages de déploiement VSIX.|  
-|[Préparation des Extensions pour le déploiement de Windows Installer](../extensibility/preparing-extensions-for-windows-installer-deployment.md)|Explique comment déployer votre extension avec Windows Installer.|  
-|[Signature de Packages VSIX](../extensibility/signing-vsix-packages.md)|Explique comment signer les packages VSIX.|  
-|[Les galeries privées](../extensibility/private-galleries.md)|Explique comment créer des galeries privées pour les extensions.|  
-|[Prise en charge de plusieurs Versions de Visual Studio](../extensibility/supporting-multiple-versions-of-visual-studio.md)|Montre comment votre extension de la prise en charge de plusieurs versions de Visual Studio.|
+|[Getting Started with the VSIX Project Template](../extensibility/getting-started-with-the-vsix-project-template.md)|Explains how to use the VSIX project template to install a custom project template.|  
+|[Anatomy of a VSIX Package](../extensibility/anatomy-of-a-vsix-package.md)|Describes the components of a VSIX package.|  
+|[VSIX Project Template](../extensibility/vsix-project-template.md)|Provides step-by-step instructions about how to package and publish an extension.|  
+|[Localizing VSIX Packages](../extensibility/localizing-vsix-packages.md)|Explains how to provide localized text for the installation process by using extension.vsixlangpack files.|  
+|[How to: Update an Extension](../extensibility/how-to-update-a-visual-studio-extension.md)|Describes how to update an extension on your system and how to deploy an update to an existing Visual Studio extension.|  
+|[How to: Add a Dependency to a VSIX Package](../extensibility/how-to-add-a-dependency-to-a-vsix-package.md)|Describes how to add references to VSIX deployment packages.|  
+|[Preparing Extensions for Windows Installer Deployment](../extensibility/preparing-extensions-for-windows-installer-deployment.md)|Explains how to deploy your extension with Windows Installer.|  
+|[Signing VSIX Packages](../extensibility/signing-vsix-packages.md)|Explains how to sign VSIX packages.|  
+|[Private Galleries](../extensibility/private-galleries.md)|Explains how to create private galleries for extensions.|  
+|[Supporting Multiple Versions of Visual Studio](../extensibility/supporting-multiple-versions-of-visual-studio.md)|Shows how to have your extension support multiple versions of Visual Studio.|
+|[Locating Visual Studio](locating-visual-studio.md)|Describes how to locate Visual Studio instances for custom extension deployment.|
