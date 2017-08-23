@@ -14,10 +14,10 @@ author: kempb
 ms.author: kempb
 manager: ghogen
 ms.translationtype: HT
-ms.sourcegitcommit: 6d25db4639f2c8391c1e32542701ea359f560178
-ms.openlocfilehash: 1f384f593129c4a0e879762d6e2e7f5944171af6
+ms.sourcegitcommit: 0387b9a656f97d9354f95f121cad8422e93a69bc
+ms.openlocfilehash: b1d99a132c6e29239862e9bd7629eb47a679138f
 ms.contentlocale: fr-fr
-ms.lasthandoff: 07/18/2017
+ms.lasthandoff: 08/18/2017
 
 ---
 # <a name="getting-started-with-wpf"></a>Bien démarrer avec WPF
@@ -38,3 +38,4 @@ Windows Presentation Foundation (WPF) est un framework d’interface utilisateur
  [Vue d’ensemble du développement d’applications](https://docs.microsoft.com/dotnet/framework/wpf/app-development/index)   
  [Page d’accueil de la documentation .NET](https://docs.microsoft.com/dotnet/index)   
  [Créer des applications de bureau modernes à l’aide de Windows Presentation Foundation](../designers/create-modern-desktop-applications-with-windows-presentation-foundation.md)
+
