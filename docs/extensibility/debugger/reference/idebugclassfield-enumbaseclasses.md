@@ -1,5 +1,5 @@
 ---
-title: IDebugClassField::EnumBaseClasses | Documents Microsoft
+title: IDebugClassField::EnumBaseClasses | Microsoft Docs
 ms.custom: 
 ms.date: 11/04/2016
 ms.reviewer: 
@@ -30,16 +30,17 @@ translation.priority.mt:
 - tr-tr
 - zh-cn
 - zh-tw
-translationtype: Machine Translation
-ms.sourcegitcommit: 5db97d19b1b823388a465bba15d057b30ff0b3ce
-ms.openlocfilehash: af9232375a7f46ce21cdef68f24e8cb721f404e1
-ms.lasthandoff: 02/22/2017
+ms.translationtype: MT
+ms.sourcegitcommit: ff8ecec19f8cab04ac2190f9a4a995766f1750bf
+ms.openlocfilehash: 6fac1067c3ff609a41cc4ba693b9feaf81f166b1
+ms.contentlocale: fr-fr
+ms.lasthandoff: 08/23/2017
 
 ---
 # <a name="idebugclassfieldenumbaseclasses"></a>IDebugClassField::EnumBaseClasses
-Crée un énumérateur pour les classes de base de cette classe.  
+Creates an enumerator for the base classes of this class.  
   
-## <a name="syntax"></a>Syntaxe  
+## <a name="syntax"></a>Syntax  
   
 ```cpp#  
 HRESULT EnumBaseClasses(   
@@ -47,21 +48,21 @@ HRESULT EnumBaseClasses(
 );  
 ```  
   
-```c#  
+```cs  
 int EnumBaseClasses(  
    out IEnumDebugFields ppEnum  
 );  
 ```  
   
-#### <a name="parameters"></a>Paramètres  
+#### <a name="parameters"></a>Parameters  
  `ppEnum`  
- [out] Retourne un [IEnumDebugFields](../../../extensibility/debugger/reference/ienumdebugfields.md) objet représentant la liste des classes de base. Retourne une valeur null si aucune classe de base.  
+ [out] Returns an [IEnumDebugFields](../../../extensibility/debugger/reference/ienumdebugfields.md) object representing the list of base classes. Returns a null value if there are no base classes.  
   
-## <a name="return-value"></a>Valeur de retour  
- En cas de réussite, retourne S_OK, renvoie la valeur S_SH_NO_BASE_CLASSES si aucune classe de base (et le `ppEnum` paramètre est défini sur une valeur null) ; sinon, retourne un code d’erreur.  
+## <a name="return-value"></a>Return Value  
+ If successful, returns S_OK, returns S_SH_NO_BASE_CLASSES if there are no base classes (and the `ppEnum` parameter is set to a null value); otherwise, returns an error code.  
   
-## <a name="remarks"></a>Remarques  
- Les classes de base de l’objet énumérateur sont spécifiés dans l’ordre de la classe de base plus immédiate (ou plus dérivée) à la classe de base plus à distance. Par exemple, étant donné les classes C++ :  
+## <a name="remarks"></a>Remarks  
+ The base classes in the enumerator object are specified in order of the most immediate (or most derived) base class to the most remote base class. For example, given the C++ classes:  
   
 ```  
 class Root { }  
@@ -70,8 +71,8 @@ class Level2 : Level1 { }
 class MyClass : Level2 { }  
 ```  
   
- L’énumération retournerait les classes de base dans l’ordre `Level2`, `Level1`, `Root`.  
+ The enumeration would return the base classes in the order `Level2`, `Level1`, `Root`.  
   
-## <a name="see-also"></a>Voir aussi  
+## <a name="see-also"></a>See Also  
  [IDebugClassField](../../../extensibility/debugger/reference/idebugclassfield.md)   
  [IEnumDebugFields](../../../extensibility/debugger/reference/ienumdebugfields.md)

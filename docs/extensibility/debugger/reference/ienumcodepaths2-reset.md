@@ -1,45 +1,62 @@
 ---
-title: "IEnumCodePaths2::Reset | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "IEnumCodePaths2::Reset"
-helpviewer_keywords: 
-  - "IEnumCodePaths2::Reset"
+title: IEnumCodePaths2::Reset | Microsoft Docs
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology:
+- vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords:
+- IEnumCodePaths2::Reset
+helpviewer_keywords:
+- IEnumCodePaths2::Reset
 ms.assetid: 490c0e19-ff4b-4673-bd06-cdee996ac226
 caps.latest.revision: 9
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 9
----
-# IEnumCodePaths2::Reset
-[!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]
+ms.author: gregvanl
+manager: ghogen
+translation.priority.mt:
+- cs-cz
+- de-de
+- es-es
+- fr-fr
+- it-it
+- ja-jp
+- ko-kr
+- pl-pl
+- pt-br
+- ru-ru
+- tr-tr
+- zh-cn
+- zh-tw
+ms.translationtype: MT
+ms.sourcegitcommit: ff8ecec19f8cab04ac2190f9a4a995766f1750bf
+ms.openlocfilehash: 94684b442e7194680058ed06fadbbe3d269f8f41
+ms.contentlocale: fr-fr
+ms.lasthandoff: 08/23/2017
 
-réinitialise l'énumération au premier élément.  
+---
+# <a name="ienumcodepaths2reset"></a>IEnumCodePaths2::Reset
+Resets the enumeration to the first element.  
   
-## Syntaxe  
+## <a name="syntax"></a>Syntax  
   
 ```cpp#  
 HRESULT Reset(  
-   void  
+   void  
 );  
 ```  
   
-```c#  
+```cs  
 int Reset();  
 ```  
   
-## Valeur de retour  
- En cas de réussite, retourne `S_OK`; sinon, retourne un code d'erreur.  
+## <a name="return-value"></a>Return Value  
+ If successful, returns `S_OK`; otherwise, returns an error code.  
   
-## Notes  
- Une fois que cette méthode soit appelée, l'appel suivant à la méthode d' [Suivant](../../../extensibility/debugger/reference/ienumcodepaths2-next.md) retourne le premier élément de l'énumération.  
+## <a name="remarks"></a>Remarks  
+ After this method is called, the next call to the [Next](../../../extensibility/debugger/reference/ienumcodepaths2-next.md) method returns the first element of the enumeration.  
   
-## Voir aussi  
+## <a name="see-also"></a>See Also  
  [IEnumCodePaths2](../../../extensibility/debugger/reference/ienumcodepaths2.md)

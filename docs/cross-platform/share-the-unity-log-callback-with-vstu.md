@@ -1,5 +1,5 @@
 ---
-title: Partager le rappel de journal Unity avec VSTU | Microsoft Docs
+title: Share the Unity Log Callback with VSTU | Microsoft Docs
 ms.custom: 
 ms.date: 11/04/2016
 ms.reviewer: 
@@ -27,21 +27,22 @@ translation.priority.ht:
 - tr-tr
 - zh-cn
 - zh-tw
-translationtype: Human Translation
-ms.sourcegitcommit: 5db97d19b1b823388a465bba15d057b30ff0b3ce
-ms.openlocfilehash: b4362bcbd04411be4db296fc5996232fd61f5d7f
-ms.lasthandoff: 02/22/2017
+ms.translationtype: HT
+ms.sourcegitcommit: ff8ecec19f8cab04ac2190f9a4a995766f1750bf
+ms.openlocfilehash: e598b0f08bd0703bdec3b1abb380fb127df550ae
+ms.contentlocale: fr-fr
+ms.lasthandoff: 08/23/2017
 
 ---
-# <a name="share-the-unity-log-callback-with-vstu"></a>Partager le rappel de journal Unity avec VSTU
-Visual Studio Tools pour Unity enregistre un rappel de journal avec Unity pour pouvoir diffuser sa console vers Visual Studio. Si vos scripts de l'éditeur enregistrent également un rappel de journal avec Unity, le rappel VSTU peut interférer avec votre rappel.  Pour éviter ce risque, utilisez l'événement `VisualStudioIntegration.LogCallback` pour coopérer avec VSTU.  
+# <a name="share-the-unity-log-callback-with-vstu"></a>Share the Unity Log Callback with VSTU
+Visual Studio Tools for Unity registers a log callback with Unity to be able to stream its console to Visual Studio. If your editor scripts also register a log callback with Unity, the VSTU callback might interfere with your callback. To prevent this possibility, use the `VisualStudioIntegration.LogCallback` event to cooperate with VSTU.  
   
-## <a name="demonstrates"></a>Démonstrations  
- Comment partager le rappel de journal Unity créé par Visual Studio Tools pour Unity.  
+## <a name="demonstrates"></a>Demonstrates  
+ How to share the Unity Log Callback created by Visual Studio Tools for Unity.  
   
-## <a name="example"></a>Exemple  
+## <a name="example"></a>Example  
   
-```c#  
+```cs  
 using System;  
   
 using UnityEngine;  
@@ -62,5 +63,5 @@ public class LogCallbackHook
 }  
 ```  
   
-## <a name="see-also"></a>Voir aussi  
- [Exemple : génération de fichier projet](../cross-platform/customize-project-files-created-by-vstu.md)
+## <a name="see-also"></a>See Also  
+ [Example: Project File Generation](../cross-platform/customize-project-files-created-by-vstu.md)

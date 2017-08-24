@@ -1,52 +1,69 @@
 ---
-title: "IDebugEvent2::GetAttributes | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "IDebugEvent2::GetAttributes"
-helpviewer_keywords: 
-  - "IDebugEvent2::GetAttributes"
+title: IDebugEvent2::GetAttributes | Microsoft Docs
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology:
+- vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords:
+- IDebugEvent2::GetAttributes
+helpviewer_keywords:
+- IDebugEvent2::GetAttributes
 ms.assetid: 2ac5b5fb-da17-43f7-811a-313f677e60d7
 caps.latest.revision: 10
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 10
----
-# IDebugEvent2::GetAttributes
-[!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]
+ms.author: gregvanl
+manager: ghogen
+translation.priority.mt:
+- cs-cz
+- de-de
+- es-es
+- fr-fr
+- it-it
+- ja-jp
+- ko-kr
+- pl-pl
+- pt-br
+- ru-ru
+- tr-tr
+- zh-cn
+- zh-tw
+ms.translationtype: MT
+ms.sourcegitcommit: ff8ecec19f8cab04ac2190f9a4a995766f1750bf
+ms.openlocfilehash: 11bfced25344dca6202fa4bbaa1206fd3a4e2056
+ms.contentlocale: fr-fr
+ms.lasthandoff: 08/23/2017
 
-Obtient les attributs de cet événement de débogage.  
+---
+# <a name="idebugevent2getattributes"></a>IDebugEvent2::GetAttributes
+Gets the attributes for this debug event.  
   
-## Syntaxe  
+## <a name="syntax"></a>Syntax  
   
 ```cpp#  
-HRESULT GetAttribute(   
-   DWORD* pdwAttrib  
+HRESULT GetAttribute(   
+   DWORD* pdwAttrib  
 );  
 ```  
   
-```c#  
-int GetAttribute(   
-   out uint pdwAttrib  
+```cs  
+int GetAttribute(   
+   out uint pdwAttrib  
 );  
 ```  
   
-#### Paramètres  
+#### <a name="parameters"></a>Parameters  
  `pdwAttrib`  
- \[out\]  Une combinaison des indicateurs d'énumération d' [EVENTATTRIBUTES](../../../extensibility/debugger/reference/eventattributes.md) .  
+ [out] A combination of flags from the [EVENTATTRIBUTES](../../../extensibility/debugger/reference/eventattributes.md) enumeration.  
   
-## Valeur de retour  
- En cas de réussite, retourne `S_OK`; sinon, retourne un code d'erreur.  
+## <a name="return-value"></a>Return Value  
+ If successful, returns `S_OK`; otherwise, returns an error code.  
   
-## Notes  
- l'interface d' [IDebugEvent2](../../../extensibility/debugger/reference/idebugevent2.md) est commune à tous les événements.  cette méthode décrit le type d'événement ; par exemple, est l'événement et synchrones ou asynchrones il est un événement arrêtant.  
+## <a name="remarks"></a>Remarks  
+ The [IDebugEvent2](../../../extensibility/debugger/reference/idebugevent2.md) interface is common to all events. This method describes the type of event; for example, is the event synchronous or asynchronous and is it a stopping event.  
   
-## Voir aussi  
+## <a name="see-also"></a>See Also  
  [IDebugEvent2](../../../extensibility/debugger/reference/idebugevent2.md)   
  [EVENTATTRIBUTES](../../../extensibility/debugger/reference/eventattributes.md)

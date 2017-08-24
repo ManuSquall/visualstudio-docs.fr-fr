@@ -1,5 +1,5 @@
 ---
-title: "Ajout d’un Menu contextuel dans une fenêtre outil | Documents Microsoft"
+title: Adding a Shortcut Menu in a Tool Window | Microsoft Docs
 ms.custom: 
 ms.date: 11/04/2016
 ms.reviewer: 
@@ -31,32 +31,33 @@ translation.priority.mt:
 - tr-tr
 - zh-cn
 - zh-tw
-translationtype: Machine Translation
-ms.sourcegitcommit: 5658ecf52637a38bc3c2a5ad9e85b2edebf7d445
-ms.openlocfilehash: ab921bec73528be7207baebdf9cb31885e2253fd
-ms.lasthandoff: 02/22/2017
+ms.translationtype: MT
+ms.sourcegitcommit: ff8ecec19f8cab04ac2190f9a4a995766f1750bf
+ms.openlocfilehash: d9fb26e32802c28da38ad4d2617280b1ec5aefa3
+ms.contentlocale: fr-fr
+ms.lasthandoff: 08/23/2017
 
 ---
-# <a name="adding-a-shortcut-menu-in-a-tool-window"></a>Ajout d’un Menu contextuel dans une fenêtre outil
-Cette procédure pas à pas place un menu contextuel dans une fenêtre outil. Un menu contextuel est un menu qui s’affiche lorsqu’un utilisateur clique sur un bouton, une zone de texte ou un arrière-plan de la fenêtre. Commandes du menu contextuel comportent comme des commandes d’autres menus ou les barres d’outils. Pour prendre en charge un menu contextuel, spécifiez-le dans le fichier .vsct et l’afficher en réponse à un clic droit de la souris.  
+# <a name="adding-a-shortcut-menu-in-a-tool-window"></a>Adding a Shortcut Menu in a Tool Window
+This walkthrough puts a shortcut menu in a tool window. A shortcut menu is a menu that appears when a user right-clicks a button, text box, or window background. Commands on a shortcut menu behave the same as commands on other menus or toolbars. To support a shortcut menu, specify it in the .vsct file and display it in response to the right-click of the mouse.  
   
- Une fenêtre outil est constitué d’un contrôle utilisateur WPF dans une classe de fenêtre Outil personnalisée qui hérite de <xref:Microsoft.VisualStudio.Shell.ToolWindowPane>.</xref:Microsoft.VisualStudio.Shell.ToolWindowPane>  
+ A tool window consists of a WPF user control in a custom tool window class that inherits from <xref:Microsoft.VisualStudio.Shell.ToolWindowPane>.  
   
- Cette procédure pas à pas montre comment créer un menu contextuel sous forme de menu Visual Studio, en déclarant les éléments de menu dans le fichier .vsct, puis en utilisant Managed Package Framework leur implémentation dans la classe qui définit la fenêtre outil. Cette approche facilite l’accès aux commandes de Visual Studio, des éléments de l’interface utilisateur et le modèle objet Automation.  
+ This walkthrough shows how to create a shortcut menu as a Visual Studio menu, by declaring menu items in the .vsct file, and then using the Managed Package Framework to implement them in the class that defines the tool window. This approach facilitates access to Visual Studio commands, UI elements, and the Automation object model.  
   
- Si le menu contextuel pas à accéder à des fonctionnalités de Visual Studio, vous pouvez également utiliser le <xref:System.Windows.FrameworkElement.ContextMenu%2A>propriété d’un élément XAML dans le contrôle utilisateur.</xref:System.Windows.FrameworkElement.ContextMenu%2A> Pour plus d’informations, consultez [ContextMenu](http://msdn.microsoft.com/Library/2f40b2bb-b702-4706-9fc4-10bcfd7cc35d).  
+ Alternatively, if your shortcut menu will not access Visual Studio functionality, you can use the <xref:System.Windows.FrameworkElement.ContextMenu%2A> property of a XAML element in the user control. For more information, see [ContextMenu](/dotnet/framework/wpf/controls/contextmenu).  
   
-## <a name="prerequisites"></a>Conditions préalables  
- À partir de Visual Studio 2015, vous n’installez pas Visual Studio SDK à partir du centre de téléchargement. Il est inclus comme fonctionnalité facultative dans le programme d’installation de Visual Studio. Vous pouvez également installer le Kit de développement logiciel Visual Studio plus tard. Pour plus d’informations, consultez [l’installation du Kit de développement logiciel Visual Studio](../extensibility/installing-the-visual-studio-sdk.md).  
+## <a name="prerequisites"></a>Prerequisites  
+ Starting in Visual Studio 2015, you do not install the Visual Studio SDK from the download center. It is included as an optional feature in Visual Studio setup. You can also install the VS SDK later on. For more information, see [Installing the Visual Studio SDK](../extensibility/installing-the-visual-studio-sdk.md).  
   
-## <a name="creating-the-tool-window-shortcut-menu-package"></a>Création du Package de Menu de raccourci de fenêtre outil  
+## <a name="creating-the-tool-window-shortcut-menu-package"></a>Creating the Tool Window Shortcut Menu Package  
   
-1.  Créez un projet VSIX nommé `TWShortcutMenu` et ajoutez un modèle de fenêtre outil nommé **menu de raccourcis** à celui-ci. Pour plus d’informations sur la création d’une fenêtre outil, consultez [création d’une Extension avec une fenêtre outil](../extensibility/creating-an-extension-with-a-tool-window.md).  
+1.  Create a VSIX project named `TWShortcutMenu` and add a tool window template named **ShortCutMenu** to it. For more information about creating a tool window, see [Creating an Extension with a Tool Window](../extensibility/creating-an-extension-with-a-tool-window.md).  
   
-## <a name="specifying-the-shortcut-menu"></a>Spécifier le Menu contextuel  
- Un menu contextuel comme celle illustrée dans cette procédure pas à pas permet à l’utilisateur sélectionner dans une liste de couleurs qui sont utilisées pour remplir l’arrière-plan de la fenêtre outil.  
+## <a name="specifying-the-shortcut-menu"></a>Specifying the Shortcut Menu  
+ A shortcut menu such as the one shown in this walkthrough lets the user select from a list of colors that are used to fill the background of the tool window.  
   
-1.  Dans ShortcutMenuPackage.vsct, recherchez dans l’élément GuidSymbol nommé guidShortcutMenuPackageCmdSet et déclarez le menu contextuel, groupe de menus contextuels et options de menu. L’élément GuidSymbol doit maintenant ressembler à ceci :  
+1.  In ShortcutMenuPackage.vsct, find in the GuidSymbol element named guidShortcutMenuPackageCmdSet, and declare the shortcut menu, shortcut menu group, and menu options. The GuidSymbol element should now look like this:  
   
     ```xml  
     <GuidSymbol name="guidShortcutMenuPackageCmdSet" value="{00000000-0000-0000-0000-0000}"> // your GUID here  
@@ -69,7 +70,7 @@ Cette procédure pas à pas place un menu contextuel dans une fenêtre outil. Un
     </GuidSymbol>  
     ```  
   
-2.  Juste avant l’élément de boutons, créez un élément de Menus, puis définir le menu contextuel dans celui-ci.  
+2.  Just before the Buttons element, create a Menus element and then define the shortcut menu in it.  
   
     ```vb  
     <Menus>  
@@ -82,9 +83,9 @@ Cette procédure pas à pas place un menu contextuel dans une fenêtre outil. Un
     </Menus>  
     ```  
   
-     Un menu contextuel n’a pas de parent, car il n’est pas partie d’un menu ou une barre d’outils.  
+     A shortcut menu does not have a parent because it is not part of a menu or toolbar.  
   
-3.  Créer un élément Groups avec un élément de groupe qui contient les éléments de menu contextuel et associez le groupe avec le menu contextuel.  
+3.  Create a Groups element with a Group element that contains the shortcut menu items, and associate the group with the shortcut menu.  
   
     ```xml  
     <Groups>  
@@ -94,7 +95,7 @@ Cette procédure pas à pas place un menu contextuel dans une fenêtre outil. Un
     </Groups>  
     ```  
   
-4.  Dans l’élément de boutons, définir des commandes individuelles qui apparaîtront dans le menu contextuel. L’élément de boutons doit ressembler à ceci :  
+4.  In the Buttons element, define the individual commands that will appear on the shortcut menu. The Buttons element should look like this:  
   
     ```xml  
     <Buttons>  
@@ -129,9 +130,9 @@ Cette procédure pas à pas place un menu contextuel dans une fenêtre outil. Un
     </Buttons>  
     ```  
   
-5.  Dans ShortcutMenuPackageGuids.cs, ajoutez que les définitions de la commande définir le GUID, le menu contextuel et les éléments de menu.  
+5.  In ShortcutMenuPackageGuids.cs, add the definitions for the command set GUID, the shortcut menu, and the menu items.  
   
-    ```c#  
+    ```cs  
     public const string guidShortcutMenuPackageCmdSet = "00000000-0000-0000-0000-00000000"; // your GUID will differ  
     public const int ColorMenu = 0x1000;  
     public const int cmdidRed = 0x102;  
@@ -139,23 +140,23 @@ Cette procédure pas à pas place un menu contextuel dans une fenêtre outil. Un
     public const int cmdidBlue = 0x104;  
     ```  
   
-     Il s’agit du même ID de commande qui sont définis dans la section Symbols du fichier ShortcutMenuPackage.vsct. Le groupe de contexte n’est pas inclus ici car elle est requise uniquement dans le fichier .vsct.  
+     These are the same command IDs that are defined in the Symbols section of the ShortcutMenuPackage.vsct file. The context group is not included here because it is required only in the .vsct file.  
   
-## <a name="implementing-the-shortcut-menu"></a>L’implémentation du Menu contextuel  
- Cette section implémente le menu contextuel et ses commandes.  
+## <a name="implementing-the-shortcut-menu"></a>Implementing the Shortcut Menu  
+ This section implements the shortcut menu and its commands.  
   
-1.  Dans ShortcutMenu.cs, la fenêtre outil peut obtenir le service de commande de menu, mais le contrôle qu’il contient ne peuvent pas. Les étapes suivantes montrent comment rendre le service de commande de menu disponibles pour le contrôle utilisateur.  
+1.  In ShortcutMenu.cs, the tool window can get the menu command service, but the control it contains cannot. The following steps show how to make the menu command service available to the user control.  
   
-2.  Dans ShortcutMenu.cs, ajoutez les instructions using :  
+2.  In ShortcutMenu.cs, add the following using statements:  
   
-    ```c#  
+    ```cs  
     using Microsoft.VisualStudio.Shell;  
     using System.ComponentModel.Design;  
     ```  
   
-3.  Remplacez la méthode Initialize() de la fenêtre outil pour obtenir le service de commande de menu et ajouter le contrôle, en passant le service de commande de menu pour le constructeur :  
+3.  Override the tool window's Initialize() method to get the menu command service and add the control, passing the menu command service to the contructor:  
   
-    ```c#  
+    ```cs  
     protected override void Initialize()  
     {  
         commandService = (OleMenuCommandService)GetService(typeof(IMenuCommandService));  
@@ -163,9 +164,9 @@ Cette procédure pas à pas place un menu contextuel dans une fenêtre outil. Un
     }  
     ```  
   
-4.  Dans le constructeur de fenêtre outil du menu de raccourcis, supprimez la ligne qui ajoute le contrôle. Le constructeur doit maintenant ressembler à ceci :  
+4.  In the ShortcutMenu tool window constructor, remove the line that adds the control. The constructor should now look like this:  
   
-    ```c#  
+    ```cs  
     public ShortcutMenu() : base(null)  
     {  
         this.Caption = "ShortcutMenu";  
@@ -174,9 +175,9 @@ Cette procédure pas à pas place un menu contextuel dans une fenêtre outil. Un
     }  
     ```  
   
-5.  Dans ShortcutMenuControl.xaml.cs, ajoutez un champ privé pour le service de commande de menu et modifiez le constructeur du contrôle pour prendre le service de commande de menu. Puis utilisez le service de commande de menu pour ajouter les commandes de menu contextuel. Le constructeur ShortcutMenuControl doit maintenant ressembler à du code suivant. Le Gestionnaire de commande est défini ultérieurement.  
+5.  In ShortcutMenuControl.xaml.cs, add a private field for the menu command service and change the control constructor to take the menu command service. Then use the menu command service to add the context menu commands. The ShortcutMenuControl constructor should now look like the following code. The command handler will be defined later.  
   
-    ```c#  
+    ```cs  
     public ShortcutMenuControl(OleMenuCommandService service)  
     {  
         this.InitializeComponent();  
@@ -200,7 +201,7 @@ Cette procédure pas à pas place un menu contextuel dans une fenêtre outil. Un
     }  
     ```  
   
-6.  Dans ShortcutMenuControl.xaml, ajoutez un <xref:System.Windows.UIElement.MouseRightButtonDown>événements au niveau supérieur <xref:System.Windows.Controls.UserControl>élément.</xref:System.Windows.Controls.UserControl> </xref:System.Windows.UIElement.MouseRightButtonDown> Le fichier XAML doit ressembler à ceci :  
+6.  In ShortcutMenuControl.xaml, add a <xref:System.Windows.UIElement.MouseRightButtonDown> event to the top level <xref:System.Windows.Controls.UserControl> element. The XAML file should now look like this:  
   
     ```vb  
     <UserControl x:Class="TWShortcutMenu.ShortcutMenuControl"  
@@ -222,18 +223,18 @@ Cette procédure pas à pas place un menu contextuel dans une fenêtre outil. Un
     </UserControl>  
     ```  
   
-7.  Dans ShortcutMenuControl.xaml.cs, ajoutez un stub pour le Gestionnaire d’événements.  
+7.  In ShortcutMenuControl.xaml.cs, add a stub for the event handler.  
   
-    ```c#  
+    ```cs  
     private void MyToolWindow_MouseRightButtonDown(object sender, MouseButtonEventArgs e)  
     {  
     . . .  
     }  
     ```  
   
-8.  Ajoutez le code suivant à l’aide des instructions dans le même fichier :  
+8.  Add the following using statements to the same file:  
   
-    ```c#  
+    ```cs  
     using Microsoft.VisualStudio.Shell;  
     using System.ComponentModel.Design;  
     using System;  
@@ -241,9 +242,9 @@ Cette procédure pas à pas place un menu contextuel dans une fenêtre outil. Un
     using System.Windows.Media;  
     ```  
   
-9. Implémentez la `MyToolWindowMouseRightButtonDown` événement comme suit.  
+9. Implement the `MyToolWindowMouseRightButtonDown` event as follows.  
   
-    ```c#  
+    ```cs  
     private void MyToolWindow_MouseRightButtonDown(object sender, MouseButtonEventArgs e)  
     {  
         if (null != commandService)  
@@ -257,11 +258,11 @@ Cette procédure pas à pas place un menu contextuel dans une fenêtre outil. Un
     }  
     ```  
   
-     Cela crée un <xref:System.ComponentModel.Design.CommandID>objet pour le menu contextuel, identifie l’emplacement de la souris et ouvre le menu contextuel dans cet emplacement à l’aide de la <xref:Microsoft.VisualStudio.Shell.OleMenuCommandService.ShowContextMenu%2A>méthode.</xref:Microsoft.VisualStudio.Shell.OleMenuCommandService.ShowContextMenu%2A> </xref:System.ComponentModel.Design.CommandID>  
+     This creates a <xref:System.ComponentModel.Design.CommandID> object for the shortcut menu, identifies the location of the mouse click, and opens the shortcut menu in that location by using the <xref:Microsoft.VisualStudio.Shell.OleMenuCommandService.ShowContextMenu%2A> method.  
   
-10. Implémenter le Gestionnaire de commandes.  
+10. Implement the command handler.  
   
-    ```c#  
+    ```cs  
     private void ChangeColor(object sender, EventArgs e)  
     {  
         var mc = sender as MenuCommand;  
@@ -281,18 +282,18 @@ Cette procédure pas à pas place un menu contextuel dans une fenêtre outil. Un
     }  
     ```  
   
-     Dans ce cas, une méthode gère les événements de tous les éléments de menu en identifiant les <xref:System.ComponentModel.Design.CommandID>et définir la couleur d’arrière-plan en conséquence.</xref:System.ComponentModel.Design.CommandID> Si les éléments de menu contenait des commandes sans rapport, c’êtes que vous avez créé un gestionnaire d’événements distinct pour chaque commande.  
+     In this case, just one method handles events for all of the menu items by identifying the <xref:System.ComponentModel.Design.CommandID> and setting the background color accordingly. If the menu items had contained unrelated commands, you would have created a separate event handler for each command.  
   
-## <a name="testing-the-tool-window-features"></a>Tester les fonctions de fenêtre outil  
+## <a name="testing-the-tool-window-features"></a>Testing the Tool Window Features  
   
-1.  Générez le projet et commencez le débogage. L’instance expérimentale s’affiche.  
+1.  Build the project and start debugging. The experimental instance appears.  
   
-2.  Dans l’instance expérimentale, cliquez sur **affichage / autres fenêtres**, puis cliquez sur **menu de raccourcis**. Cette opération doit afficher la fenêtre outil.  
+2.  In the experimental instance, click **View / Other Windows**, and then click **ShortcutMenu**. Doing this should display your tool window.  
   
-3.  Avec le bouton droit dans le corps de la fenêtre outil. Un menu contextuel qui contient une liste de couleurs doit être affiché.  
+3.  Right-click in the body of the tool window. A shortcut menu that has a list of colors should be displayed.  
   
-4.  Cliquez sur une couleur dans le menu contextuel. La couleur d’arrière-plan de fenêtre outil doit être remplacée par la couleur sélectionnée.  
+4.  Click a color on the shortcut menu. The tool window background color should be changed to the selected color.  
   
-## <a name="see-also"></a>Voir aussi  
- [Commandes, Menus et barres d’outils](../extensibility/internals/commands-menus-and-toolbars.md)   
- [À l’aide et fournir des Services](../extensibility/using-and-providing-services.md)
+## <a name="see-also"></a>See Also  
+ [Commands, Menus, and Toolbars](../extensibility/internals/commands-menus-and-toolbars.md)   
+ [Using and Providing Services](../extensibility/using-and-providing-services.md)

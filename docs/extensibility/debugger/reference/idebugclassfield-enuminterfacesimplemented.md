@@ -1,5 +1,5 @@
 ---
-title: IDebugClassField::EnumInterfacesImplemented | Documents Microsoft
+title: IDebugClassField::EnumInterfacesImplemented | Microsoft Docs
 ms.custom: 
 ms.date: 11/04/2016
 ms.reviewer: 
@@ -30,16 +30,17 @@ translation.priority.mt:
 - tr-tr
 - zh-cn
 - zh-tw
-translationtype: Machine Translation
-ms.sourcegitcommit: 5db97d19b1b823388a465bba15d057b30ff0b3ce
-ms.openlocfilehash: e185c6ba5d51332396670798df963b3f2612e33a
-ms.lasthandoff: 02/22/2017
+ms.translationtype: MT
+ms.sourcegitcommit: ff8ecec19f8cab04ac2190f9a4a995766f1750bf
+ms.openlocfilehash: e1e234620f89bf397eb7ec8470c57ecead52d48a
+ms.contentlocale: fr-fr
+ms.lasthandoff: 08/23/2017
 
 ---
 # <a name="idebugclassfieldenuminterfacesimplemented"></a>IDebugClassField::EnumInterfacesImplemented
-Crée un énumérateur pour les interfaces implémentées par cette classe.  
+Creates an enumerator for the interfaces implemented by this class.  
   
-## <a name="syntax"></a>Syntaxe  
+## <a name="syntax"></a>Syntax  
   
 ```cpp#  
 HRESULT EnumInterfacesImplemented(   
@@ -47,22 +48,22 @@ HRESULT EnumInterfacesImplemented(
 );  
 ```  
   
-```c#  
+```cs  
 int EnumInterfacesImplemented(  
    out IEnumDebugFields ppEnum  
 );  
 ```  
   
-#### <a name="parameters"></a>Paramètres  
+#### <a name="parameters"></a>Parameters  
  `ppEnum`  
- [out] Retourne un [IEnumDebugFields](../../../extensibility/debugger/reference/ienumdebugfields.md) objet représentant la liste des interfaces implémentées. Retourne une valeur null s’il n’y pas d’interfaces.  
+ [out] Returns an [IEnumDebugFields](../../../extensibility/debugger/reference/ienumdebugfields.md) object representing the list of interfaces implemented. Returns a null value if there are no interfaces.  
   
-## <a name="return-value"></a>Valeur de retour  
- En cas de réussite, retourne S_OK ou S_FALSE s’il n’y a aucuns interfaces implémentées sur cette classe. Sinon, retourne un code d'erreur.  
+## <a name="return-value"></a>Return Value  
+ If successful, returns S_OK or returns S_FALSE if there are no interfaces implemented on this class. Otherwise, returns an error code.  
   
-## <a name="remarks"></a>Remarques  
- Chaque élément de l’énumération est une [IDebugClassField](../../../extensibility/debugger/reference/idebugclassfield.md) objet décrivant une interface. Notez que non managée [!INCLUDE[vcprvc](../../../code-quality/includes/vcprvc_md.md)] code n’utilise pas les interfaces en tant qu’entité discrète donc cette méthode retourne toujours une valeur null pour les non managée [!INCLUDE[vcprvc](../../../code-quality/includes/vcprvc_md.md)] code.  
+## <a name="remarks"></a>Remarks  
+ Each element of the enumeration is an [IDebugClassField](../../../extensibility/debugger/reference/idebugclassfield.md) object describing an interface. Note that unmanaged [!INCLUDE[vcprvc](../../../code-quality/includes/vcprvc_md.md)] code does not use interfaces as a discrete entity so this method always returns a null value for unmanaged [!INCLUDE[vcprvc](../../../code-quality/includes/vcprvc_md.md)] code.  
   
-## <a name="see-also"></a>Voir aussi  
+## <a name="see-also"></a>See Also  
  [IDebugClassField](../../../extensibility/debugger/reference/idebugclassfield.md)   
  [IEnumDebugFields](../../../extensibility/debugger/reference/ienumdebugfields.md)

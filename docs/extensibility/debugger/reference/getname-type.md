@@ -1,89 +1,106 @@
 ---
-title: "GETNAME_TYPE | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "GETNAME_TYPE"
-helpviewer_keywords: 
-  - "Énumération de GETNAME_TYPE"
+title: GETNAME_TYPE | Microsoft Docs
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology:
+- vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords:
+- GETNAME_TYPE
+helpviewer_keywords:
+- GETNAME_TYPE enumeration
 ms.assetid: 2f9f1679-e9e8-4c9c-ac90-aa07bfe69914
 caps.latest.revision: 10
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 10
----
-# GETNAME_TYPE
-[!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]
+ms.author: gregvanl
+manager: ghogen
+translation.priority.mt:
+- cs-cz
+- de-de
+- es-es
+- fr-fr
+- it-it
+- ja-jp
+- ko-kr
+- pl-pl
+- pt-br
+- ru-ru
+- tr-tr
+- zh-cn
+- zh-tw
+ms.translationtype: MT
+ms.sourcegitcommit: ff8ecec19f8cab04ac2190f9a4a995766f1750bf
+ms.openlocfilehash: 19809c56d244d3fb74628042f9bfb9be5b53a088
+ms.contentlocale: fr-fr
+ms.lasthandoff: 08/23/2017
 
-Spécifie le type de nom de fichier pour récupérer.  
+---
+# <a name="getnametype"></a>GETNAME_TYPE
+Specifies the name type of files to retrieve.  
   
-## Syntaxe  
+## <a name="syntax"></a>Syntax  
   
 ```cpp#  
-enum enum_GETNAME_TYPE {   
-   GN_NAME         = 0,  
-   GN_FILENAME     = 1,  
-   GN_BASENAME     = 2,  
-   GN_MONIKERNAME  = 3,  
-   GN_URL          = 4,  
-   GN_TITLE        = 5,  
-   GN_STARTPAGEURL = 6  
+enum enum_GETNAME_TYPE {   
+   GN_NAME         = 0,  
+   GN_FILENAME     = 1,  
+   GN_BASENAME     = 2,  
+   GN_MONIKERNAME  = 3,  
+   GN_URL          = 4,  
+   GN_TITLE        = 5,  
+   GN_STARTPAGEURL = 6  
 };  
 typedef DWORD GETNAME_TYPE;  
 ```  
   
-```c#  
-public enum enum_GETNAME_TYPE {   
-   GN_NAME         = 0,  
-   GN_FILENAME     = 1,  
-   GN_BASENAME     = 2,  
-   GN_MONIKERNAME  = 3,  
-   GN_URL          = 4,  
-   GN_TITLE        = 5,  
-   GN_STARTPAGEURL = 6  
+```cs  
+public enum enum_GETNAME_TYPE {   
+   GN_NAME         = 0,  
+   GN_FILENAME     = 1,  
+   GN_BASENAME     = 2,  
+   GN_MONIKERNAME  = 3,  
+   GN_URL          = 4,  
+   GN_TITLE        = 5,  
+   GN_STARTPAGEURL = 6  
 };  
 ```  
   
-## Membres  
- GN\_NAME  
- spécifie un nom convivial du document ou du contexte.  
+## <a name="members"></a>Members  
+ GN_NAME  
+ Specifies a friendly name of the document or context.  
   
- GN\_FILENAME  
- Spécifie le chemin d'accès complet du document ou du contexte.  
+ GN_FILENAME  
+ Specifies the full path of the document or context.  
   
- GN\_BASENAME  
- Spécifie un nom de fichier de base au lieu d'un chemin d'accès complet du document ou du contexte.  
+ GN_BASENAME  
+ Specifies a base file name instead of a full path of the document or context.  
   
- GN\_MONIKERNAME  
- Spécifie un nom unique du document ou du contexte sous la forme d'un moniker.  
+ GN_MONIKERNAME  
+ Specifies a unique name of the document or context in the form of a moniker.  
   
- GN\_URL  
- spécifie un nom d'URL du document ou du contexte.  
+ GN_URL  
+ Specifies a URL name of the document or context.  
   
- GN\_TITLE  
- Spécifie un titre du document, le cas échéant.  
+ GN_TITLE  
+ Specifies a title of the document, if one exists.  
   
- GN\_STARTPAGEURL  
- Obtient l'URL de démarrage de page pour les processus.  
+ GN_STARTPAGEURL  
+ Gets the starting page URL for processes.  
   
-## Notes  
- Ces valeurs sont passées en tant que paramètres aux méthodes d' [GetName](../../../extensibility/debugger/reference/idebugdocument2-getname.md), d' [GetName](../../../extensibility/debugger/reference/idebugdocumentcontext2-getname.md), et d' [GetName](../../../extensibility/debugger/reference/idebugprocess2-getname.md) pour spécifier le type nom à retourner.  
+## <a name="remarks"></a>Remarks  
+ These values are passed as parameters to the [GetName](../../../extensibility/debugger/reference/idebugdocument2-getname.md), [GetName](../../../extensibility/debugger/reference/idebugdocumentcontext2-getname.md), and [GetName](../../../extensibility/debugger/reference/idebugprocess2-getname.md) methods to specify what kind of name to return.  
   
-## Configuration requise  
- en\-tête : msdbg.h  
+## <a name="requirements"></a>Requirements  
+ Header: msdbg.h  
   
- l'espace de noms : Microsoft.VisualStudio.Debugger.Interop  
+ Namespace: Microsoft.VisualStudio.Debugger.Interop  
   
- Assembly : Microsoft.VisualStudio.Debugger.Interop.dll  
+ Assembly: Microsoft.VisualStudio.Debugger.Interop.dll  
   
-## Voir aussi  
- [Énumérations](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)   
+## <a name="see-also"></a>See Also  
+ [Enumerations](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)   
  [GetName](../../../extensibility/debugger/reference/idebugdocument2-getname.md)   
  [GetName](../../../extensibility/debugger/reference/idebugdocumentcontext2-getname.md)   
  [GetName](../../../extensibility/debugger/reference/idebugprocess2-getname.md)

@@ -1,57 +1,74 @@
 ---
-title: "IDebugTypeFieldBuilder2::CreateArrayOfType | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-helpviewer_keywords: 
-  - "IDebugTypeFieldBuilder2::CreateArrayOfType"
-  - "CreateArrayOfType"
+title: IDebugTypeFieldBuilder2::CreateArrayOfType | Microsoft Docs
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology:
+- vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+helpviewer_keywords:
+- IDebugTypeFieldBuilder2::CreateArrayOfType
+- CreateArrayOfType
 ms.assetid: 85166ac9-0bff-49a0-b2fd-ca7f7a8eae4b
 caps.latest.revision: 8
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 8
----
-# IDebugTypeFieldBuilder2::CreateArrayOfType
-[!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]
+ms.author: gregvanl
+manager: ghogen
+translation.priority.mt:
+- cs-cz
+- de-de
+- es-es
+- fr-fr
+- it-it
+- ja-jp
+- ko-kr
+- pl-pl
+- pt-br
+- ru-ru
+- tr-tr
+- zh-cn
+- zh-tw
+ms.translationtype: MT
+ms.sourcegitcommit: ff8ecec19f8cab04ac2190f9a4a995766f1750bf
+ms.openlocfilehash: a40f6124acf092f3c799fbf971419d3b435af9a6
+ms.contentlocale: fr-fr
+ms.lasthandoff: 08/23/2017
 
-Crée un tableau du type et la taille indiquées.  
+---
+# <a name="idebugtypefieldbuilder2createarrayoftype"></a>IDebugTypeFieldBuilder2::CreateArrayOfType
+Creates an array of the specified type and size.  
   
-## Syntaxe  
+## <a name="syntax"></a>Syntax  
   
 ```cpp#  
 HRESULT CreateArrayOfType (  
-   IDebugField*  pTypeField,  
-   DWORD         rank,  
-   IDebugField** pArrayOfTypeField  
+   IDebugField*  pTypeField,  
+   DWORD         rank,  
+   IDebugField** pArrayOfTypeField  
 );  
 ```  
   
-```c#  
+```cs  
 int CreateArrayOfType (  
-   IDebugField     pTypeField,  
-   uint            rank,  
-   out IDebugField pArrayOfTypeField  
+   IDebugField     pTypeField,  
+   uint            rank,  
+   out IDebugField pArrayOfTypeField  
 );  
 ```  
   
-#### Paramètres  
+#### <a name="parameters"></a>Parameters  
  `pTypeField`  
- \[in\]  Type d'éléments que le tableau se gère.  
+ [in] Type of elements the array will hold.  
   
  `rank`  
- \[in\]  Nombre d'éléments du tableau.  
+ [in] Number of elements in the array.  
   
  `pArrayOfTypeField`  
- \[out\]  Retourne des objets d' [IDebugField](../../../extensibility/debugger/reference/idebugfield.md) qui représentent le nouveau tableau.  
+ [out] Returns the [IDebugField](../../../extensibility/debugger/reference/idebugfield.md) objects that represent the new array.  
   
-## Valeur de retour  
- En cas de réussite, retourne `S_OK`; sinon, retourne un code d'erreur.  
+## <a name="return-value"></a>Return Value  
+ If successful, returns `S_OK`; otherwise, returns an error code.  
   
-## Voir aussi  
+## <a name="see-also"></a>See Also  
  [IDebugTypeFieldBuilder2](../../../extensibility/debugger/reference/idebugtypefieldbuilder2.md)

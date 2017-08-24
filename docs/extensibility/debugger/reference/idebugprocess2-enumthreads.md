@@ -1,55 +1,72 @@
 ---
-title: "IDebugProcess2::EnumThreads | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "IDebugProcess2::EnumThreads"
-helpviewer_keywords: 
-  - "IDebugProcess2::EnumThreads"
+title: IDebugProcess2::EnumThreads | Microsoft Docs
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology:
+- vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords:
+- IDebugProcess2::EnumThreads
+helpviewer_keywords:
+- IDebugProcess2::EnumThreads
 ms.assetid: 05677385-7a7f-4545-8438-af00dde85db0
 caps.latest.revision: 10
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 10
----
-# IDebugProcess2::EnumThreads
-[!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]
+ms.author: gregvanl
+manager: ghogen
+translation.priority.mt:
+- cs-cz
+- de-de
+- es-es
+- fr-fr
+- it-it
+- ja-jp
+- ko-kr
+- pl-pl
+- pt-br
+- ru-ru
+- tr-tr
+- zh-cn
+- zh-tw
+ms.translationtype: MT
+ms.sourcegitcommit: ff8ecec19f8cab04ac2190f9a4a995766f1750bf
+ms.openlocfilehash: ad9d9612782c9f4a6387b382468f0f9cd635eca1
+ms.contentlocale: fr-fr
+ms.lasthandoff: 08/23/2017
 
-Extrait une liste de tous les threads en cours de exécution dans le processus.  
+---
+# <a name="idebugprocess2enumthreads"></a>IDebugProcess2::EnumThreads
+Retrieves a list of all the threads running in the process.  
   
-## Syntaxe  
+## <a name="syntax"></a>Syntax  
   
 ```cpp#  
-HRESULT EnumThreads(  
-   IEnumDebugThreads2** ppEnum  
+HRESULT EnumThreads(  
+   IEnumDebugThreads2** ppEnum  
 );  
 ```  
   
-```c#  
-int EnumThreads(  
-   out IEnumDebugThreads2 ppEnum  
+```cs  
+int EnumThreads(  
+   out IEnumDebugThreads2 ppEnum  
 );  
 ```  
   
-#### Paramètres  
+#### <a name="parameters"></a>Parameters  
  `ppEnum`  
- \[out\]  Retourne un objet d' [IEnumDebugThreads2](../../../extensibility/debugger/reference/ienumdebugthreads2.md) qui contient une liste de tous les threads de tous les programmes dans le processus.  
+ [out] Returns an [IEnumDebugThreads2](../../../extensibility/debugger/reference/ienumdebugthreads2.md) object that contains a list of all threads in all programs in the process.  
   
-## Valeur de retour  
- En cas de réussite, retourne `S_OK`; sinon, retourne un code d'erreur.  
+## <a name="return-value"></a>Return Value  
+ If successful, returns `S_OK`; otherwise, returns an error code.  
   
-## Notes  
- Cette méthode énumère les threads qui s'exécutent dans chaque programme puis les combine dans une vue processus des threads.  Un seul thread peut s'exécuter dans plusieurs programmes ; cette méthode énumère ce thread qu'une seule fois.  
+## <a name="remarks"></a>Remarks  
+ This method enumerates the threads running in each program and then combines them into a process view of the threads. A single thread may run in multiple programs; this method enumerates that thread only once.  
   
- Cette méthode présente une liste des threads du processus sans doublons.  Sinon, pour énumérer des threads qui s'exécutent dans un programme particulier, utilisez la méthode d' [EnumThreads](../../../extensibility/debugger/reference/idebugprogram2-enumthreads.md) .  
+ This method presents a list of the process's threads without duplicates. Otherwise, to enumerate the threads running in a particular program, use the [EnumThreads](../../../extensibility/debugger/reference/idebugprogram2-enumthreads.md) method.  
   
-## Voir aussi  
+## <a name="see-also"></a>See Also  
  [IDebugProcess2](../../../extensibility/debugger/reference/idebugprocess2.md)   
  [IEnumDebugThreads2](../../../extensibility/debugger/reference/ienumdebugthreads2.md)   
  [IDebugThread2](../../../extensibility/debugger/reference/idebugthread2.md)   

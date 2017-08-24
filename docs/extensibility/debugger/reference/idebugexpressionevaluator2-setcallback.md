@@ -1,5 +1,5 @@
 ---
-title: IDebugExpressionEvaluator2::SetCallback | Documents Microsoft
+title: IDebugExpressionEvaluator2::SetCallback | Microsoft Docs
 ms.custom: 
 ms.date: 11/04/2016
 ms.reviewer: 
@@ -29,16 +29,17 @@ translation.priority.mt:
 - tr-tr
 - zh-cn
 - zh-tw
-translationtype: Machine Translation
-ms.sourcegitcommit: 5db97d19b1b823388a465bba15d057b30ff0b3ce
-ms.openlocfilehash: f5f4757e09cc87d8481ae6501f178227df812fdc
-ms.lasthandoff: 02/22/2017
+ms.translationtype: MT
+ms.sourcegitcommit: ff8ecec19f8cab04ac2190f9a4a995766f1750bf
+ms.openlocfilehash: 063075468d7a12967eab2439b8e2dd157dc6288f
+ms.contentlocale: fr-fr
+ms.lasthandoff: 08/23/2017
 
 ---
 # <a name="idebugexpressionevaluator2setcallback"></a>IDebugExpressionEvaluator2::SetCallback
-Permet à l’évaluateur d’expression (EE) spécifier l’interface de rappel qui utilise le moteur du débogueur (DE) pour lire les paramètres de mesure.  
+Enables the expression evaluator (EE) to specify the callback interface that the debugger engine (DE) will use to read metric settings.  
   
-## <a name="syntax"></a>Syntaxe  
+## <a name="syntax"></a>Syntax  
   
 ```cpp#  
 HRESULT SetCallback (  
@@ -46,24 +47,24 @@ HRESULT SetCallback (
 );  
 ```  
   
-```c#  
+```cs  
 int SetCallback (  
    IDebugSettingsCallback2 pCallback  
 );  
 ```  
   
-#### <a name="parameters"></a>Paramètres  
+#### <a name="parameters"></a>Parameters  
  `pCallback`  
- [in] Interface à utiliser pour le rappel de paramètres.  
+ [in] Interface to use for the settings callback.  
   
-## <a name="return-value"></a>Valeur de retour  
- En cas de réussite, retourne `S_OK`; sinon, retourne un code d’erreur.  
+## <a name="return-value"></a>Return Value  
+ If successful, returns `S_OK`; otherwise, returns an error code.  
   
-## <a name="remarks"></a>Notes  
- Cette méthode fournit une interface pour le Gestionnaire de session de débogage un évaluateur d’expression permet de lire les paramètres de mesure. Il est utile dans le débogage distant pour lire des mesures sur les [!INCLUDE[vsprvs](../../../code-quality/includes/vsprvs_md.md)] ordinateur.  
+## <a name="remarks"></a>Remarks  
+ This method provides an interface to the session debug manager that an expression evaluator can use to read metric settings. It is useful in remote debugging to read metrics on the [!INCLUDE[vsprvs](../../../code-quality/includes/vsprvs_md.md)] computer.  
   
-## <a name="example"></a>Exemple  
- Les exemples suivants illustre l’implémentation de cette méthode pour un **CEE** objet qui expose les [IDebugSettingsCallback2](../../../extensibility/debugger/reference/idebugsettingscallback2.md) interface.  
+## <a name="example"></a>Example  
+ The following examples shows how to implement this method for a **CEE** object that exposes the [IDebugSettingsCallback2](../../../extensibility/debugger/reference/idebugsettingscallback2.md) interface.  
   
 ```cpp#  
 HRESULT CEE::SetCallback(IDebugSettingsCallback2* in_pCallback)  
@@ -90,5 +91,5 @@ HRESULT CEE::SetCallback(IDebugSettingsCallback2* in_pCallback)
 }  
 ```  
   
-## <a name="see-also"></a>Voir aussi  
+## <a name="see-also"></a>See Also  
  [IDebugExpressionEvaluator2](../../../extensibility/debugger/reference/idebugexpressionevaluator2.md)

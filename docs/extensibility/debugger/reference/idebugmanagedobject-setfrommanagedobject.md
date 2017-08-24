@@ -1,51 +1,68 @@
 ---
-title: "IDebugManagedObject::SetFromManagedObject | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "IDebugManagedObject::SetFromManagedObject"
-helpviewer_keywords: 
-  - "IDebugManagedObject::SetFromManagedObject (méthode)"
+title: IDebugManagedObject::SetFromManagedObject | Microsoft Docs
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology:
+- vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords:
+- IDebugManagedObject::SetFromManagedObject
+helpviewer_keywords:
+- IDebugManagedObject::SetFromManagedObject method
 ms.assetid: 8700ee8d-2704-4580-bccc-046837a24edd
 caps.latest.revision: 9
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 9
----
-# IDebugManagedObject::SetFromManagedObject
-[!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]
+ms.author: gregvanl
+manager: ghogen
+translation.priority.mt:
+- cs-cz
+- de-de
+- es-es
+- fr-fr
+- it-it
+- ja-jp
+- ko-kr
+- pl-pl
+- pt-br
+- ru-ru
+- tr-tr
+- zh-cn
+- zh-tw
+ms.translationtype: MT
+ms.sourcegitcommit: ff8ecec19f8cab04ac2190f9a4a995766f1750bf
+ms.openlocfilehash: 25193a7c8bc3809c3996f06cee4d88734bb00d1f
+ms.contentlocale: fr-fr
+ms.lasthandoff: 08/23/2017
 
-définit la valeur de l'instance de l'objet de classe de valeur de l'instance de la classe de valeur fournie comme paramètre.  
+---
+# <a name="idebugmanagedobjectsetfrommanagedobject"></a>IDebugManagedObject::SetFromManagedObject
+Sets the value of the instance of the value class object from the instance of the value class provided as a parameter.  
   
-## Syntaxe  
+## <a name="syntax"></a>Syntax  
   
 ```cpp#  
-HRESULT SetFromManagedObject(   
-   IUnknown* pManagedObject  
+HRESULT SetFromManagedObject(   
+   IUnknown* pManagedObject  
 );  
 ```  
   
-```c#  
+```cs  
 int SetFromManagedObject(  
-   object pManagedObject  
+   object pManagedObject  
 );  
 ```  
   
-#### Paramètres  
+#### <a name="parameters"></a>Parameters  
  `pManagedObject`  
- \[in\]  Une interface qui représente l'objet managé qui contient la nouvelle valeur.  
+ [in] An interface that represents the managed object containing the new value.  
   
-## Valeur de retour  
- En cas de réussite, retourne S\_OK ; sinon, retourne un code d'erreur.  
+## <a name="return-value"></a>Return Value  
+ If successful, returns S_OK; otherwise, returns an error code.  
   
-## Notes  
- cette méthode est utilisée pour modifier l'objet managé comme représenté par l'objet d' [IDebugManagedObject](../../../extensibility/debugger/reference/idebugmanagedobject.md) .  
+## <a name="remarks"></a>Remarks  
+ This method is used to change the managed object as represented by the [IDebugManagedObject](../../../extensibility/debugger/reference/idebugmanagedobject.md) object.  
   
-## Voir aussi  
+## <a name="see-also"></a>See Also  
  [IDebugManagedObject](../../../extensibility/debugger/reference/idebugmanagedobject.md)

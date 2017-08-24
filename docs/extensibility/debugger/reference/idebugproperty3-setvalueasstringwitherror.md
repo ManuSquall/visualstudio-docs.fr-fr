@@ -1,69 +1,86 @@
 ---
-title: "IDebugProperty3::SetValueAsStringWithError | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "IDebugProperty3::SetValueAsStringWithError"
-helpviewer_keywords: 
-  - "IDebugProperty3::SetValueAsStringWithError"
+title: IDebugProperty3::SetValueAsStringWithError | Microsoft Docs
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology:
+- vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords:
+- IDebugProperty3::SetValueAsStringWithError
+helpviewer_keywords:
+- IDebugProperty3::SetValueAsStringWithError
 ms.assetid: b378368f-4a45-4b2f-8e3d-3bff7a18ab17
 caps.latest.revision: 11
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 11
----
-# IDebugProperty3::SetValueAsStringWithError
-[!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]
+ms.author: gregvanl
+manager: ghogen
+translation.priority.mt:
+- cs-cz
+- de-de
+- es-es
+- fr-fr
+- it-it
+- ja-jp
+- ko-kr
+- pl-pl
+- pt-br
+- ru-ru
+- tr-tr
+- zh-cn
+- zh-tw
+ms.translationtype: MT
+ms.sourcegitcommit: ff8ecec19f8cab04ac2190f9a4a995766f1750bf
+ms.openlocfilehash: ea47050c28041ee660f971c8f0bafc2f57916724
+ms.contentlocale: fr-fr
+ms.lasthandoff: 08/23/2017
 
-Définit la valeur de cette propriété et retourne un message d'erreur, si nécessaire.  
+---
+# <a name="idebugproperty3setvalueasstringwitherror"></a>IDebugProperty3::SetValueAsStringWithError
+Sets the value of this property and returns an error message, if necessary.  
   
-## Syntaxe  
+## <a name="syntax"></a>Syntax  
   
 ```cpp  
-HRESULT SetValueAsStringWithError(  
-   LPCOLESTR pszValue,  
-   DWORD     dwRadix,  
-   DWORD     dwTimeout,  
-   BSTR*     errorString  
+HRESULT SetValueAsStringWithError(  
+   LPCOLESTR pszValue,  
+   DWORD     dwRadix,  
+   DWORD     dwTimeout,  
+   BSTR*     errorString  
 );  
 ```  
   
-```c#  
-int SetValueAsStringWithError(  
-   string     pszValue,  
-   uint       dwRadix,  
-   uint       dwTimeout,  
-   out string errorString  
+```cs  
+int SetValueAsStringWithError(  
+   string     pszValue,  
+   uint       dwRadix,  
+   uint       dwTimeout,  
+   out string errorString  
 );  
 ```  
   
-#### Paramètres  
+#### <a name="parameters"></a>Parameters  
  `pszValue`  
- \[in\]  Valeur à définir.  
+ [in] Value to set.  
   
  `dwRadix`  
- \[in\]  La base de la valeur définie.  
+ [in] The radix of the value being set.  
   
  `dwTimeout`  
- \[in\]  La durée d'attendre que la valeur à définir \(la possibilité d'`INFINITE` attendent pour toujours\).  
+ [in] The length of time to wait for the value to be set (`INFINITE` means wait forever).  
   
  `errorString`  
- \[out\]  Si une erreur s'est produite lorsque la valeur, cela permet la raison de l'échec.  
+ [out] If there was an error setting the value, this holds the reason for the failure.  
   
-## Valeur de retour  
- En cas de réussite, retourne `S_OK`; sinon, retourne un code d'erreur.  
+## <a name="return-value"></a>Return Value  
+ If successful, returns `S_OK`; otherwise, returns an error code.  
   
-## Notes  
- La valeur entrante pourrait être une expression à évaluer.  
+## <a name="remarks"></a>Remarks  
+ The incoming value could be an expression to be evaluated.  
   
-## Exemple  
- L'exemple suivant indique comment appliquer cette méthode d'un objet **de CProperty** qui expose l'interface d' [IDebugProperty3](../../../extensibility/debugger/reference/idebugproperty3.md) .  
+## <a name="example"></a>Example  
+ The following example shows how to implement this method for a **CProperty** object that exposes the [IDebugProperty3](../../../extensibility/debugger/reference/idebugproperty3.md) interface.  
   
 ```cpp#  
 HRESULT CProperty::SetValueAsStringWithError(   
@@ -167,5 +184,5 @@ HRESULT CProperty::SetValueAsStringWithError(
 }  
 ```  
   
-## Voir aussi  
+## <a name="see-also"></a>See Also  
  [IDebugProperty3](../../../extensibility/debugger/reference/idebugproperty3.md)

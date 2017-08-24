@@ -1,64 +1,81 @@
 ---
-title: "IDebugDocumentPosition2::GetRange | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "IDebugDocumentPosition2::GetRange"
-helpviewer_keywords: 
-  - "IDebugDocumentPosition2::GetRange"
+title: IDebugDocumentPosition2::GetRange | Microsoft Docs
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology:
+- vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords:
+- IDebugDocumentPosition2::GetRange
+helpviewer_keywords:
+- IDebugDocumentPosition2::GetRange
 ms.assetid: 91a06ee7-253a-4215-be22-04bf57305aa8
 caps.latest.revision: 10
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 10
----
-# IDebugDocumentPosition2::GetRange
-[!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]
+ms.author: gregvanl
+manager: ghogen
+translation.priority.mt:
+- cs-cz
+- de-de
+- es-es
+- fr-fr
+- it-it
+- ja-jp
+- ko-kr
+- pl-pl
+- pt-br
+- ru-ru
+- tr-tr
+- zh-cn
+- zh-tw
+ms.translationtype: MT
+ms.sourcegitcommit: ff8ecec19f8cab04ac2190f9a4a995766f1750bf
+ms.openlocfilehash: c735fe93b3801cfb5bb4dca6568b238966385d2f
+ms.contentlocale: fr-fr
+ms.lasthandoff: 08/23/2017
 
-obtient la plage pour cette position de document.  
+---
+# <a name="idebugdocumentposition2getrange"></a>IDebugDocumentPosition2::GetRange
+Gets the range for this document position.  
   
-## Syntaxe  
+## <a name="syntax"></a>Syntax  
   
 ```cpp#  
-HRESULT GetRange(   
-   TEXT_POSITION* pBegPosition,  
-   TEXT_POSITION* pEndPosition  
+HRESULT GetRange(   
+   TEXT_POSITION* pBegPosition,  
+   TEXT_POSITION* pEndPosition  
 );  
 ```  
   
-```c#  
-int GetRange(   
-   TEXT_POSITION[] pBegPosition,  
-   TEXT_POSITION[] pEndPosition  
+```cs  
+int GetRange(   
+   TEXT_POSITION[] pBegPosition,  
+   TEXT_POSITION[] pEndPosition  
 );  
 ```  
   
-#### Paramètres  
+#### <a name="parameters"></a>Parameters  
  `pBegPosition`  
- \[in, out\]  Une structure de [TEXT\_POSITION](../../../extensibility/debugger/reference/text-position.md) qui est terminée avec la position de départ.  Affectez à cet argument à une valeur NULL si ces informations ne sont pas nécessaires.  
+ [in, out] A [TEXT_POSITION](../../../extensibility/debugger/reference/text-position.md) structure that is filled in with the starting position. Set this argument to a null value if this information is not needed.  
   
  `pEndPosition`  
- \[in, out\]  Une structure de [TEXT\_POSITION](../../../extensibility/debugger/reference/text-position.md) qui est terminée avec la position de fin.  Affectez à cet argument à une valeur NULL si ces informations ne sont pas nécessaires.  
+ [in, out] A [TEXT_POSITION](../../../extensibility/debugger/reference/text-position.md) structure that is filled in with the ending position. Set this argument to a null value if this information is not needed.  
   
-## Valeur de retour  
- En cas de réussite, retourne `S_OK`; sinon, retourne un code d'erreur.  
+## <a name="return-value"></a>Return Value  
+ If successful, returns `S_OK`; otherwise, returns an error code.  
   
-## Notes  
- La plage spécifiée en position de le document pour un point d'arrêt d'emplacement est utilisée par le moteur de \(DE\) débogage pour rechercher vers l'avant une instruction qui offre réellement code.  Considérons par exemple le code suivant :  
+## <a name="remarks"></a>Remarks  
+ The range specified in a document position for a location breakpoint is used by the debug engine (DE) to search ahead for a statement that actually contributes code. For example, consider the following code:  
   
 ```  
 Line 5: // comment  
 Line 6: x = 1;  
 ```  
   
- La ligne 5 ne fournit aucun code au programme en cours de débogage.  Si le débogueur qui définit le point d'arrêt sur la ligne 5 souhaite le De pour rechercher vers l'avant une certaine quantité de la première ligne qui fournit le code, le débogueur assigne une plage qui comprend des lignes supplémentaires candidat où un point d'arrêt peut être correctement placé.  Le De rechercherait ensuite en accédant à avant lignes jusqu'à ce qu'il a trouvé une ligne qui peut accepter un point d'arrêt.  
+ Line 5 contributes no code to the program being debugged. If the debugger that sets the breakpoint on line 5 wants the DE to search forward a certain amount for the first line that contributes code, the debugger would specify a range that includes additional candidate lines where a breakpoint might be properly placed. The DE would then search forward through those lines until it found a line that could accept a breakpoint.  
   
-## Voir aussi  
+## <a name="see-also"></a>See Also  
  [IDebugDocumentPosition2](../../../extensibility/debugger/reference/idebugdocumentposition2.md)   
- [TEXT\_POSITION](../../../extensibility/debugger/reference/text-position.md)
+ [TEXT_POSITION](../../../extensibility/debugger/reference/text-position.md)

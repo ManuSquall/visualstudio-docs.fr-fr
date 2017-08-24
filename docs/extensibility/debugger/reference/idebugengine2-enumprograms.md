@@ -1,49 +1,66 @@
 ---
-title: "IDebugEngine2::EnumPrograms | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "IDebugEngine2::EnumPrograms"
-helpviewer_keywords: 
-  - "IDebugEngine2::EnumPrograms"
+title: IDebugEngine2::EnumPrograms | Microsoft Docs
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology:
+- vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords:
+- IDebugEngine2::EnumPrograms
+helpviewer_keywords:
+- IDebugEngine2::EnumPrograms
 ms.assetid: 56bf98eb-beec-4e5f-9ebe-46c922e54c56
 caps.latest.revision: 10
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 10
----
-# IDebugEngine2::EnumPrograms
-[!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]
+ms.author: gregvanl
+manager: ghogen
+translation.priority.mt:
+- cs-cz
+- de-de
+- es-es
+- fr-fr
+- it-it
+- ja-jp
+- ko-kr
+- pl-pl
+- pt-br
+- ru-ru
+- tr-tr
+- zh-cn
+- zh-tw
+ms.translationtype: MT
+ms.sourcegitcommit: ff8ecec19f8cab04ac2190f9a4a995766f1750bf
+ms.openlocfilehash: d836a93cfdf498cc3d8e31f2a39b03ac1a3bb6d4
+ms.contentlocale: fr-fr
+ms.lasthandoff: 08/23/2017
 
-Extrait une liste de tous les programmes débogué par un moteur de \(DE\) débogage.  
+---
+# <a name="idebugengine2enumprograms"></a>IDebugEngine2::EnumPrograms
+Retrieves a list of all programs being debugged by a debug engine (DE).  
   
-## Syntaxe  
+## <a name="syntax"></a>Syntax  
   
 ```cpp#  
-HRESULT EnumPrograms(   
-   IEnumDebugPrograms2** ppEnum  
+HRESULT EnumPrograms(   
+   IEnumDebugPrograms2** ppEnum  
 );  
 ```  
   
-```c#  
-int EnumPrograms(   
-   out IEnumDebugPrograms2 ppEnum  
+```cs  
+int EnumPrograms(   
+   out IEnumDebugPrograms2 ppEnum  
 );  
 ```  
   
-#### Paramètres  
+#### <a name="parameters"></a>Parameters  
  `ppEnum`  
- \[out\]  Retourne un objet d' [IEnumDebugPrograms2](../../../extensibility/debugger/reference/ienumdebugprograms2.md) qui contient une liste de tous les programmes débogué par un De.  
+ [out] Returns an [IEnumDebugPrograms2](../../../extensibility/debugger/reference/ienumdebugprograms2.md) object that contains a list of all programs being debugged by a DE.  
   
-## Valeur de retour  
- En cas de réussite, retourne `S_OK`; sinon, retourne un code d'erreur.  
+## <a name="return-value"></a>Return Value  
+ If successful, returns `S_OK`; otherwise, returns an error code.  
   
-## Voir aussi  
+## <a name="see-also"></a>See Also  
  [IDebugEngine2](../../../extensibility/debugger/reference/idebugengine2.md)   
  [IEnumDebugPrograms2](../../../extensibility/debugger/reference/ienumdebugprograms2.md)

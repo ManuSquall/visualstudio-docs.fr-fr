@@ -1,56 +1,73 @@
 ---
-title: "IDebugArrayObject::GetDimensions | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "IDebugArrayObject::GetDimensions"
-helpviewer_keywords: 
-  - "IDebugArrayObject::GetDimensions (méthode)"
+title: IDebugArrayObject::GetDimensions | Microsoft Docs
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology:
+- vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords:
+- IDebugArrayObject::GetDimensions
+helpviewer_keywords:
+- IDebugArrayObject::GetDimensions method
 ms.assetid: 113e0aff-9028-49d6-b104-9fe7be4772d7
 caps.latest.revision: 9
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 9
----
-# IDebugArrayObject::GetDimensions
-[!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]
+ms.author: gregvanl
+manager: ghogen
+translation.priority.mt:
+- cs-cz
+- de-de
+- es-es
+- fr-fr
+- it-it
+- ja-jp
+- ko-kr
+- pl-pl
+- pt-br
+- ru-ru
+- tr-tr
+- zh-cn
+- zh-tw
+ms.translationtype: MT
+ms.sourcegitcommit: ff8ecec19f8cab04ac2190f9a4a995766f1750bf
+ms.openlocfilehash: af8567c0c9935a53e3ec936861de0276bc5abe3b
+ms.contentlocale: fr-fr
+ms.lasthandoff: 08/23/2017
 
-Obtient les dimensions du tableau.  
+---
+# <a name="idebugarrayobjectgetdimensions"></a>IDebugArrayObject::GetDimensions
+Gets the dimensions of the array.  
   
-## Syntaxe  
+## <a name="syntax"></a>Syntax  
   
 ```cpp#  
-HRESULT GetDimensions(   
-   DWORD dwCount,  
-   DWORD dwDimensions[]  
+HRESULT GetDimensions(   
+   DWORD dwCount,  
+   DWORD dwDimensions[]  
 );  
 ```  
   
-```c#  
+```cs  
 int GetDimensions(  
-   [In] uint    dwCount,   
-   [Out] uint[] dwDimensions  
+   [In] uint    dwCount,   
+   [Out] uint[] dwDimensions  
 );  
 ```  
   
-#### Paramètres  
+#### <a name="parameters"></a>Parameters  
  `dwCount`  
- \[in\]  Le nombre de dimensions à récupérer.  
+ [in] The number of dimensions to retrieve.  
   
  `dwDimensions`  
- \[in, out\]  Un tableau qui est terminée avec les tailles de chaque dimension.  `dwCount` spécifie la taille maximale du tableau d' `dwDimensions` .  
+ [in, out] An array that is filled in with the sizes of each dimension. `dwCount` specifies the maximum size of the `dwDimensions` array.  
   
-## Valeur de retour  
- En cas de réussite, retourne S\_OK ; sinon, retourne un code d'erreur.  
+## <a name="return-value"></a>Return Value  
+ If successful, returns S_OK; otherwise, returns an error code.  
   
-## Notes  
- Un tableau multidimensionnel peut avoir des tailles différentes pour chaque dimension.  Par exemple, dans la tableau à trois dimensions `myarray[3][2][6]`, cette méthode retourne 3, 2, et 6 dans le paramètre d' `dwDimensions` dans cet ordre.  
+## <a name="remarks"></a>Remarks  
+ A multi-dimensional array can have different sizes for each dimension. For example, given the three-dimensional array `myarray[3][2][6]`, this method would return 3, 2, and 6 in the `dwDimensions` parameter in that order.  
   
-## Voir aussi  
+## <a name="see-also"></a>See Also  
  [IDebugArrayObject](../../../extensibility/debugger/reference/idebugarrayobject.md)

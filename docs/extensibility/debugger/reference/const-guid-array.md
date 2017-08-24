@@ -1,65 +1,82 @@
 ---
-title: "CONST_GUID_ARRAY | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "CONST_GUID_ARRAY"
-helpviewer_keywords: 
-  - "Structure CONST_GUID_ARRAY"
+title: CONST_GUID_ARRAY | Microsoft Docs
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology:
+- vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords:
+- CONST_GUID_ARRAY
+helpviewer_keywords:
+- CONST_GUID_ARRAY structure
 ms.assetid: bd55e7d8-372c-4c3e-9eed-28f6b415a5db
 caps.latest.revision: 9
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 9
----
-# CONST_GUID_ARRAY
-[!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]
+ms.author: gregvanl
+manager: ghogen
+translation.priority.mt:
+- cs-cz
+- de-de
+- es-es
+- fr-fr
+- it-it
+- ja-jp
+- ko-kr
+- pl-pl
+- pt-br
+- ru-ru
+- tr-tr
+- zh-cn
+- zh-tw
+ms.translationtype: MT
+ms.sourcegitcommit: ff8ecec19f8cab04ac2190f9a4a995766f1750bf
+ms.openlocfilehash: 6d819936facdd2f1c05af41b584d167aa39c7bd3
+ms.contentlocale: fr-fr
+ms.lasthandoff: 08/23/2017
 
-Une structure contenant une liste d' `GUID`S.  
+---
+# <a name="constguidarray"></a>CONST_GUID_ARRAY
+A structure that holds a list of `GUID`s.  
   
-## Syntaxe  
+## <a name="syntax"></a>Syntax  
   
 ```cpp#  
-typedef struct tagCONST_GUID_ARRAY {  
-   DWORD       dwCount;  
-   CONST GUID* Members;  
-} CONST_GUID_ARRAY;  
+typedef struct tagCONST_GUID_ARRAY {  
+   DWORD       dwCount;  
+   CONST GUID* Members;  
+} CONST_GUID_ARRAY;  
 ```  
   
-```c#  
-public struct CONST_GUID_ARRAY {  
-   public uint   dwCount;  
-   public Guid[] Members;  
+```cs  
+public struct CONST_GUID_ARRAY {  
+   public uint   dwCount;  
+   public Guid[] Members;  
 }  
 ```  
   
-## Membres  
+## <a name="members"></a>Members  
  dwCount  
- Nombre d' `GUID`s dans le tableau d' `Members` .  
+ Number of `GUID`s in the `Members` array.  
   
- Membres  
- Tableau d' `GUID`S.  
+ Members  
+ Array of `GUID`s.  
   
-## Notes  
- Cette structure est passée à la méthode d' [PublishProgram](../Topic/IDebugProgramPublisher2::PublishProgram.md) , et est retourné des méthodes d' [GetProviderProcessData](../../../extensibility/debugger/reference/idebugprogramprovider2-getproviderprocessdata.md) et d' [WatchForProviderEvents](../../../extensibility/debugger/reference/idebugprogramprovider2-watchforproviderevents.md) .  
+## <a name="remarks"></a>Remarks  
+ This structure is passed to the [PublishProgram](../../../extensibility/debugger/reference/idebugprogrampublisher2-publishprogram.md) method, and is returned from the [GetProviderProcessData](../../../extensibility/debugger/reference/idebugprogramprovider2-getproviderprocessdata.md) and [WatchForProviderEvents](../../../extensibility/debugger/reference/idebugprogramprovider2-watchforproviderevents.md) methods.  
   
- Le propriétaire d'une instance de cette structure est chargé de libérer de la mémoire alloué.  
+ The owner of an instance of this structure is responsible for freeing any memory allocated.  
   
-## Configuration requise  
- en\-tête : msdbg.h  
+## <a name="requirements"></a>Requirements  
+ Header: msdbg.h  
   
- l'espace de noms : Microsoft.VisualStudio.Debugger.Interop  
+ Namespace: Microsoft.VisualStudio.Debugger.Interop  
   
- Assembly : Microsoft.VisualStudio.Debugger.Interop.dll  
+ Assembly: Microsoft.VisualStudio.Debugger.Interop.dll  
   
-## Voir aussi  
- [Structures et Unions](../../../extensibility/debugger/reference/structures-and-unions.md)   
- [PublishProgram](../Topic/IDebugProgramPublisher2::PublishProgram.md)   
+## <a name="see-also"></a>See Also  
+ [Structures and Unions](../../../extensibility/debugger/reference/structures-and-unions.md)   
+ [PublishProgram](../../../extensibility/debugger/reference/idebugprogrampublisher2-publishprogram.md)   
  [GetProviderProcessData](../../../extensibility/debugger/reference/idebugprogramprovider2-getproviderprocessdata.md)   
  [WatchForProviderEvents](../../../extensibility/debugger/reference/idebugprogramprovider2-watchforproviderevents.md)

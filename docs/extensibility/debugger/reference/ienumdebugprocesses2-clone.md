@@ -1,5 +1,5 @@
 ---
-title: IEnumDebugProcesses2::Clone | Documents Microsoft
+title: IEnumDebugProcesses2::Clone | Microsoft Docs
 ms.custom: 
 ms.date: 11/04/2016
 ms.reviewer: 
@@ -30,16 +30,17 @@ translation.priority.mt:
 - tr-tr
 - zh-cn
 - zh-tw
-translationtype: Machine Translation
-ms.sourcegitcommit: 5db97d19b1b823388a465bba15d057b30ff0b3ce
-ms.openlocfilehash: dc00fa4cff607a758e8d26c6e03483ba2582c49b
-ms.lasthandoff: 02/22/2017
+ms.translationtype: MT
+ms.sourcegitcommit: ff8ecec19f8cab04ac2190f9a4a995766f1750bf
+ms.openlocfilehash: f042231c6ecadc5db92d2b9fd562587ae9bef1ba
+ms.contentlocale: fr-fr
+ms.lasthandoff: 08/23/2017
 
 ---
 # <a name="ienumdebugprocesses2clone"></a>IEnumDebugProcesses2::Clone
-Retourne une copie de l’énumération actuelle comme un objet distinct.  
+Returns a copy of the current enumeration as a separate object.  
   
-## <a name="syntax"></a>Syntaxe  
+## <a name="syntax"></a>Syntax  
   
 ```cpp#  
 HRESULT Clone(  
@@ -47,21 +48,21 @@ HRESULT Clone(
 );  
 ```  
   
-```c#  
+```cs  
 int Clone(  
    out IEnumDebugProcesses2 ppEnum  
 );  
 ```  
   
-#### <a name="parameters"></a>Paramètres  
+#### <a name="parameters"></a>Parameters  
  `ppEnum`  
- [out] Retourne une copie de cette énumération comme un objet distinct.  
+ [out] Returns a copy of this enumeration as a separate object.  
   
-## <a name="return-value"></a>Valeur de retour  
- En cas de réussite, retourne `S_OK`; sinon, retourne un code d’erreur.  
+## <a name="return-value"></a>Return Value  
+ If successful, returns `S_OK`; otherwise, returns an error code.  
   
-## <a name="remarks"></a>Remarques  
- La copie de l’énumération a le même état que l’original au moment de que l’appel de cette méthode. Toutefois, les États de la copie et l’original sont distincts et peuvent être modifiées individuellement.  
+## <a name="remarks"></a>Remarks  
+ The copy of the enumeration has the same state as the original at the time this method is called. However, the copy's and the original's states are separate and can be changed individually.  
   
-## <a name="see-also"></a>Voir aussi  
+## <a name="see-also"></a>See Also  
  [IEnumDebugProcesses2](../../../extensibility/debugger/reference/ienumdebugprocesses2.md)

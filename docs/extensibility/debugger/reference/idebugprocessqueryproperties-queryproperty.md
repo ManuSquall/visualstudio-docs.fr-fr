@@ -1,5 +1,5 @@
 ---
-title: IDebugProcessQueryProperties::QueryProperty | Documents Microsoft
+title: IDebugProcessQueryProperties::QueryProperty | Microsoft Docs
 ms.custom: 
 ms.date: 11/04/2016
 ms.reviewer: 
@@ -28,16 +28,17 @@ translation.priority.mt:
 - tr-tr
 - zh-cn
 - zh-tw
-translationtype: Machine Translation
-ms.sourcegitcommit: 5db97d19b1b823388a465bba15d057b30ff0b3ce
-ms.openlocfilehash: f1b945948d80b1f1dcfd65bd2ce626b45a77094e
-ms.lasthandoff: 02/22/2017
+ms.translationtype: MT
+ms.sourcegitcommit: ff8ecec19f8cab04ac2190f9a4a995766f1750bf
+ms.openlocfilehash: e9d9d5226745a544095a5f7a74c01625537a80f5
+ms.contentlocale: fr-fr
+ms.lasthandoff: 08/23/2017
 
 ---
 # <a name="idebugprocessquerypropertiesqueryproperty"></a>IDebugProcessQueryProperties::QueryProperty
-Requêtes de cette méthode pour une valeur de propriété spécifiée du processus de débogage.  
+This method queries for a specified property value of the debugging process.  
   
-## <a name="syntax"></a>Syntaxe  
+## <a name="syntax"></a>Syntax  
   
 ```cpp#  
 HRESULT QueryProperty(  
@@ -45,15 +46,15 @@ HRESULT QueryProperty(
    VARIANT               *pvarPropValue);  
 ```  
   
-```c#  
+```cs  
 int QueryProperty(  
    enum_PROCESS_PROPERTY_TYPE dwPropType,  
    out object                 pvarPropValue);  
 ```  
   
-#### <a name="parameters"></a>Paramètres  
+#### <a name="parameters"></a>Parameters  
  `dwPropType`  
- [in] Définition de la propriété interrogée. Les valeurs sont les suivantes :  
+ [in] Definition of the property queried. The values are:  
   
 -   PROCESS_PROPERTY_COMMAND_LINE = 1  
   
@@ -62,13 +63,13 @@ int QueryProperty(
 -   PROCESS_PROPERTY_ENVIRONMENT_VARIABLES = 3  
   
  `pvarPropValue`  
- [out] La valeur de la propriété.  
+ [out] The value of the property.  
   
-## <a name="return-value"></a>Valeur de retour  
- En cas de réussite, retourne `S_OK`; sinon, retourne un code d’erreur.  
+## <a name="return-value"></a>Return Value  
+ If successful, returns `S_OK`; otherwise, returns an error code.  
   
-## <a name="remarks"></a>Notes  
- Cette méthode est rarement utilisée.  
+## <a name="remarks"></a>Remarks  
+ This method is seldom used.  
   
-## <a name="see-also"></a>Voir aussi  
+## <a name="see-also"></a>See Also  
  [IDebugProcessQueryProperties](../../../extensibility/debugger/reference/idebugprocessqueryproperties.md)

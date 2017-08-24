@@ -1,69 +1,86 @@
 ---
-title: "IDebugDisassemblyStream2::Seek | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "IDebugDisassemblyStream2::Seek"
-helpviewer_keywords: 
-  - "IDebugDisassemblyStream2::Seek"
+title: IDebugDisassemblyStream2::Seek | Microsoft Docs
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology:
+- vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords:
+- IDebugDisassemblyStream2::Seek
+helpviewer_keywords:
+- IDebugDisassemblyStream2::Seek
 ms.assetid: afec3008-b1e0-4803-ad24-195dbfb6497e
 caps.latest.revision: 10
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 10
----
-# IDebugDisassemblyStream2::Seek
-[!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]
+ms.author: gregvanl
+manager: ghogen
+translation.priority.mt:
+- cs-cz
+- de-de
+- es-es
+- fr-fr
+- it-it
+- ja-jp
+- ko-kr
+- pl-pl
+- pt-br
+- ru-ru
+- tr-tr
+- zh-cn
+- zh-tw
+ms.translationtype: MT
+ms.sourcegitcommit: ff8ecec19f8cab04ac2190f9a4a995766f1750bf
+ms.openlocfilehash: 79ae3ce3671c5251f70ee8b3d0f888c8227c9e84
+ms.contentlocale: fr-fr
+ms.lasthandoff: 08/23/2017
 
-Déplace le pointeur de lecture dans le flux de code machine un nombre donné d'instruction par rapport à la position spécifiée.  
+---
+# <a name="idebugdisassemblystream2seek"></a>IDebugDisassemblyStream2::Seek
+Moves the read pointer in the disassembly stream a given number of instructions relative to a specified position.  
   
-## Syntaxe  
+## <a name="syntax"></a>Syntax  
   
 ```cpp#  
-HRESULT Seek(   
-   SEEK_START          dwSeekStart,  
-   IDebugCodeContext2* pCodeContext,  
-   UINT64              uCodeLocationId,  
-   INT64               iInstructions  
+HRESULT Seek(   
+   SEEK_START          dwSeekStart,  
+   IDebugCodeContext2* pCodeContext,  
+   UINT64              uCodeLocationId,  
+   INT64               iInstructions  
 );  
 ```  
   
-```c#  
-int Seek(   
-   enum_SEEK_START    dwSeekStart,  
-   IDebugCodeContext2 pCodeContext,  
-   ulong              uCodeLocationId,  
-   long               iInstructions  
+```cs  
+int Seek(   
+   enum_SEEK_START    dwSeekStart,  
+   IDebugCodeContext2 pCodeContext,  
+   ulong              uCodeLocationId,  
+   long               iInstructions  
 );  
 ```  
   
-#### Paramètres  
+#### <a name="parameters"></a>Parameters  
  `dwSeekStart`  
- \[in\]  Une valeur de l'énumération de [SEEK\_START](../../../extensibility/debugger/reference/seek-start.md) qui spécifie la position relative pour démarrer le processus d'accès.  
+ [in] A value from the [SEEK_START](../../../extensibility/debugger/reference/seek-start.md) enumeration that specifies the relative position to begin the seek process.  
   
  `pCodeContext`  
- \[in\]  L'objet d' [IDebugCodeContext2](../../../extensibility/debugger/reference/idebugcodecontext2.md) représentant le contexte de code que l'opération de recherche est associée.  Ce paramètre est utilisé uniquement si `dwSeekStart` \= `SEEK_START_CODECONTEXT`; sinon, ce paramètre est ignoré et peut être une valeur NULL.  
+ [in] The [IDebugCodeContext2](../../../extensibility/debugger/reference/idebugcodecontext2.md) object representing the code context that the seek operation is relative to. This parameter is used only if `dwSeekStart` = `SEEK_START_CODECONTEXT`; otherwise, this parameter is ignored and can be a null value.  
   
  `uCodeLocationId`  
- \[in\]  L'identificateur de l'emplacement du code que l'opération de recherche est associée.  Cette valeur est utilisée si `dwSeekStart` \= `SEEK_START_CODELOCID`; sinon, ce paramètre est ignoré et peut avoir la valeur 0.  Consultez la section Notes de la méthode d' [GetCodeLocationId](../Topic/IDebugDisassemblyStream2::GetCodeLocationId.md) pour une description d'un identificateur d'emplacement du code.  
+ [in] The code location identifier that the seek operation is relative to. This parameter is used if `dwSeekStart` = `SEEK_START_CODELOCID`; otherwise, this parameter is ignored and can be set to 0. See the Remarks section for the [GetCodeLocationId](../../../extensibility/debugger/reference/idebugdisassemblystream2-getcodelocationid.md) method for a description of a code location identifier.  
   
  `iInstructions`  
- \[in\]  Le nombre d'instructions de déplacer par rapport à la position spécifiée dans `dwSeekStart`.  cette valeur peut être négative pour déplacer vers l'arrière.  
+ [in] The number of instructions to move relative to the position specified in `dwSeekStart`. This value can be negative to move backwards.  
   
-## Valeur de retour  
- En cas de réussite, retourne `S_OK`.  Retourne `S_FALSE` si la position d'accès se trouvait à un point au delà de la liste d'instructions disponible.  Sinon, retourne un code d'erreur.  
+## <a name="return-value"></a>Return Value  
+ If successful, returns `S_OK`. Returns `S_FALSE` if the seek position was to a point beyond the list of available instructions. Otherwise, returns an error code.  
   
-## Notes  
- Si l'accès est à une position avant le début de la liste, la position de lecture soit défini à la première instruction dans la liste.  Si le voir était à une position après la fin de la liste, la position de lecture soit définie à la dernière instruction dans la liste.  
+## <a name="remarks"></a>Remarks  
+ If the seek was to a position before the beginning of the list, the read position is set to the first instruction in the list. If the see was to a position after the end of the list, the read position is set to the last instruction in the list.  
   
-## Voir aussi  
+## <a name="see-also"></a>See Also  
  [IDebugDisassemblyStream2](../../../extensibility/debugger/reference/idebugdisassemblystream2.md)   
- [SEEK\_START](../../../extensibility/debugger/reference/seek-start.md)   
+ [SEEK_START](../../../extensibility/debugger/reference/seek-start.md)   
  [IDebugCodeContext2](../../../extensibility/debugger/reference/idebugcodecontext2.md)   
- [GetCodeLocationId](../Topic/IDebugDisassemblyStream2::GetCodeLocationId.md)
+ [GetCodeLocationId](../../../extensibility/debugger/reference/idebugdisassemblystream2-getcodelocationid.md)

@@ -1,5 +1,5 @@
 ---
-title: IEnumDebugPrograms2::Clone | Documents Microsoft
+title: IEnumDebugPrograms2::Clone | Microsoft Docs
 ms.custom: 
 ms.date: 11/04/2016
 ms.reviewer: 
@@ -30,16 +30,17 @@ translation.priority.mt:
 - tr-tr
 - zh-cn
 - zh-tw
-translationtype: Machine Translation
-ms.sourcegitcommit: 5db97d19b1b823388a465bba15d057b30ff0b3ce
-ms.openlocfilehash: 13f35b5425c1a1480ec0b014099276bd8122aaf3
-ms.lasthandoff: 02/22/2017
+ms.translationtype: MT
+ms.sourcegitcommit: ff8ecec19f8cab04ac2190f9a4a995766f1750bf
+ms.openlocfilehash: a51a29d95293f881d5dd3bcdbc2f708d8af18f93
+ms.contentlocale: fr-fr
+ms.lasthandoff: 08/23/2017
 
 ---
 # <a name="ienumdebugprograms2clone"></a>IEnumDebugPrograms2::Clone
-Retourne une copie de l’énumération actuelle comme un objet distinct.  
+Returns a copy of the current enumeration as a separate object.  
   
-## <a name="syntax"></a>Syntaxe  
+## <a name="syntax"></a>Syntax  
   
 ```cpp#  
 HRESULT Clone(  
@@ -47,21 +48,21 @@ HRESULT Clone(
 );  
 ```  
   
-```c#  
+```cs  
 int Clone(  
    out IEnumDebugPrograms2 ppEnum  
 );  
 ```  
   
-#### <a name="parameters"></a>Paramètres  
+#### <a name="parameters"></a>Parameters  
  `ppEnum`  
- [out] Retourne une copie de cette énumération comme un objet distinct.  
+ [out] Returns a copy of this enumeration as a separate object.  
   
-## <a name="return-value"></a>Valeur de retour  
- En cas de réussite, retourne `S_OK`; sinon, retourne un code d’erreur.  
+## <a name="return-value"></a>Return Value  
+ If successful, returns `S_OK`; otherwise, returns an error code.  
   
-## <a name="remarks"></a>Notes  
- La copie de l’énumération a le même état que l’original au moment de que l’appel de cette méthode. Toutefois, les États de la copie et l’original sont distincts et peuvent être modifiées individuellement.  
+## <a name="remarks"></a>Remarks  
+ The copy of the enumeration has the same state as the original at the time this method is called. However, the copy's and the original's states are separate and can be changed individually.  
   
-## <a name="see-also"></a>Voir aussi  
+## <a name="see-also"></a>See Also  
  [IEnumDebugPrograms2](../../../extensibility/debugger/reference/ienumdebugprograms2.md)

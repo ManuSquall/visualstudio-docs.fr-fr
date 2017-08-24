@@ -1,5 +1,5 @@
 ---
-title: IDebugSymbolProvider::GetNextAddress | Documents Microsoft
+title: IDebugSymbolProvider::GetNextAddress | Microsoft Docs
 ms.custom: 
 ms.date: 11/04/2016
 ms.reviewer: 
@@ -30,16 +30,17 @@ translation.priority.mt:
 - tr-tr
 - zh-cn
 - zh-tw
-translationtype: Machine Translation
-ms.sourcegitcommit: 5db97d19b1b823388a465bba15d057b30ff0b3ce
-ms.openlocfilehash: 7f16f03e7e61fb059fdea10986ca76cf26b77590
-ms.lasthandoff: 02/22/2017
+ms.translationtype: MT
+ms.sourcegitcommit: ff8ecec19f8cab04ac2190f9a4a995766f1750bf
+ms.openlocfilehash: 3f5821f39a29d41cd56ac73d6f5b0be48ae8f2a2
+ms.contentlocale: fr-fr
+ms.lasthandoff: 08/23/2017
 
 ---
 # <a name="idebugsymbolprovidergetnextaddress"></a>IDebugSymbolProvider::GetNextAddress
-Obtient l’adresse de débogage qui suit une adresse donnée debug dans une méthode.  
+Gets the debug address that follows a given debug address in a method.  
   
-## <a name="syntax"></a>Syntaxe  
+## <a name="syntax"></a>Syntax  
   
 ```cpp#  
 HRESULT GetNextAddress(   
@@ -49,7 +50,7 @@ HRESULT GetNextAddress(
 );  
 ```  
   
-```c#  
+```cs  
 int GetNextAddress(   
    IDebugAddress     pAddress,  
    bool              fStatementOnly,  
@@ -57,18 +58,18 @@ int GetNextAddress(
 );  
 ```  
   
-#### <a name="parameters"></a>Paramètres  
+#### <a name="parameters"></a>Parameters  
  `pAddress`  
- [in] Adresse de débogage donné.  
+ [in] Given debug address.  
   
  `fStatementOnly`  
- [in] Si la valeur est TRUE, limite les adresses de débogage à une seule instruction.  
+ [in] If TRUE, limits the debug addresses to a single statement.  
   
  `ppAddress`  
- [out] Retourne l’adresse de débogage suivante.  
+ [out] Returns the next debug address.  
   
-## <a name="return-value"></a>Valeur de retour  
- Retourne un élément valide `HRESULT`, généralement S_OK.  
+## <a name="return-value"></a>Return Value  
+ Returns a valid `HRESULT`, typically S_OK.  
   
-## <a name="see-also"></a>Voir aussi  
+## <a name="see-also"></a>See Also  
  [IDebugSymbolProvider](../../../extensibility/debugger/reference/idebugsymbolprovider.md)

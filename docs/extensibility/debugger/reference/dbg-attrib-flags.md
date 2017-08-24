@@ -1,29 +1,46 @@
 ---
-title: "DBG_ATTRIB_FLAGS | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "DBG_ATTRIB_FLAGS"
-helpviewer_keywords: 
-  - "Énumérations DBGPROP_ATTRIB_FLAGS"
+title: DBG_ATTRIB_FLAGS | Microsoft Docs
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology:
+- vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords:
+- DBG_ATTRIB_FLAGS
+helpviewer_keywords:
+- DBGPROP_ATTRIB_FLAGS enumerations
 ms.assetid: 2f13e601-dadc-476e-a8ec-01c4515082e7
 caps.latest.revision: 17
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 17
----
-# DBG_ATTRIB_FLAGS
-[!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]
+ms.author: gregvanl
+manager: ghogen
+translation.priority.mt:
+- cs-cz
+- de-de
+- es-es
+- fr-fr
+- it-it
+- ja-jp
+- ko-kr
+- pl-pl
+- pt-br
+- ru-ru
+- tr-tr
+- zh-cn
+- zh-tw
+ms.translationtype: MT
+ms.sourcegitcommit: ff8ecec19f8cab04ac2190f9a4a995766f1750bf
+ms.openlocfilehash: 61d570da34c133ceb1b08ad56ae795b05afde421
+ms.contentlocale: fr-fr
+ms.lasthandoff: 08/23/2017
 
-Décrit plusieurs attributs pour [IDebugProperty2](../../../extensibility/debugger/reference/idebugproperty2.md) ou une interface d' [IDebugReference2](../../../extensibility/debugger/reference/idebugreference2.md) .  membre de la structure de [DEBUG\_PROPERTY\_INFO](../../../extensibility/debugger/reference/debug-property-info.md) .  
+---
+# <a name="dbgattribflags"></a>DBG_ATTRIB_FLAGS
+Describes various attributes for an [IDebugProperty2](../../../extensibility/debugger/reference/idebugproperty2.md) or an [IDebugReference2](../../../extensibility/debugger/reference/idebugreference2.md) interface. Member of the [DEBUG_PROPERTY_INFO](../../../extensibility/debugger/reference/debug-property-info.md) structure.  
   
-## Syntaxe  
+## <a name="syntax"></a>Syntax  
   
 ```cpp#  
 #define DBG_ATTRIB_NONE                 0x0000000000000000,  
@@ -95,7 +112,7 @@ Décrit plusieurs attributs pour [IDebugProperty2](../../../extensibility/debugg
 typedef UINT64 DBG_ATTRIB_FLAGS;  
 ```  
   
-```c#  
+```cs  
 public const int DBG_ATTRIB_NONE                 = 0x0000000000000000,  
 public const int DBG_ATTRIB_ALL                  = 0x00000000ffffffff,  
   
@@ -163,158 +180,158 @@ public const int DBG_ATTRIB_CHILD_ALL            = 0x0000ff0000000000,
 public const int DBG_ATTRIB_MULTI_CUSTOM_VIEWERS = 0x0001000000000000  
 ```  
   
-## Membres  
- DBG\_ATTRIB\_NONE  
- N'indique pas d'attributs.  
+## <a name="members"></a>Members  
+ DBG_ATTRIB_NONE  
+ Indicates no attributes.  
   
- DBG\_ATTRIB\_ALL  
- indique tous les attributs.  
+ DBG_ATTRIB_ALL  
+ Indicates all attributes.  
   
- DBG\_ATTRIB\_OBJ\_IS\_EXPANDABLE  
- indique que la référence ou la propriété a des enfants.  
+ DBG_ATTRIB_OBJ_IS_EXPANDABLE  
+ Indicates that the reference or property has children.  
   
- DBG\_ATTRIB\_OBJ\_HAS\_ID  
- Indique qu'un ID pour cet objet a été créé.  
+ DBG_ATTRIB_OBJ_HAS_ID  
+ Indicates that an ID for this object has been created.  
   
- DBG\_ATTRIB\_OBJ\_CAN\_HAVE\_ID  
- Indique qu'un ID pour cet objet peut être créé.  
+ DBG_ATTRIB_OBJ_CAN_HAVE_ID  
+ Indicates that an ID for this object can be created.  
   
- DBG\_ATTRIB\_VALUE\_READONLY  
- indique que la valeur est en lecture seule.  
+ DBG_ATTRIB_VALUE_READONLY  
+ Indicates that the value is read-only.  
   
- DBG\_ATTRIB\_VALUE\_ERROR  
- indique que la valeur est une erreur.  
+ DBG_ATTRIB_VALUE_ERROR  
+ Indicates that the value is an error.  
   
- DBG\_ATTRIB\_VALUE\_SIDE\_EFFECT  
- indique que l'évaluation a eu un effet secondaire.  
+ DBG_ATTRIB_VALUE_SIDE_EFFECT  
+ Indicates that the evaluation had a side effect.  
   
- DBG\_ATTRIB\_OVERLOADED\_CONTAINER  
- indique que cette propriété est vraiment un conteneur de surcharges.  
+ DBG_ATTRIB_OVERLOADED_CONTAINER  
+ Indicates that this property is really a container of overloads.  
   
- DBG\_ATTRIB\_VALUE\_BOOLEAN  
- indique que la valeur dans `DEBUG_PROPERTY_INFO::bstrValue` est booléenne.  
+ DBG_ATTRIB_VALUE_BOOLEAN  
+ Indicates that the value in `DEBUG_PROPERTY_INFO::bstrValue` is Boolean.  
   
- DBG\_ATTRIB\_VALUE\_BOOLEAN\_TRUE  
- indique que la valeur dans `DEBUG_PROPERTY_INFO::bstrValue` est booléenne et `TRUE`.  
+ DBG_ATTRIB_VALUE_BOOLEAN_TRUE  
+ Indicates that the value in `DEBUG_PROPERTY_INFO::bstrValue` is Boolean and `TRUE`.  
   
- DBG\_ATTRIB\_VALUE\_INVALID  
- Indique que la valeur dans `DEBUG_PROPERTY_INFO::bstrValue` est pas valide.  
+ DBG_ATTRIB_VALUE_INVALID  
+ Indicates that the value in `DEBUG_PROPERTY_INFO::bstrValue` is not valid.  
   
- DBG\_ATTRIB\_VALUE\_NAT  
- Indique que la valeur dans `DEBUG_PROPERTY_INFO::bstrValue` ne se*trouve une chaîne* » \(\(NAT\)\).  \(NAT\) décrit une balise de registre dans les processeurs 64 bits Intel qui indique des exceptions spéculatives différées.  
+ DBG_ATTRIB_VALUE_NAT  
+ Indicates that the value in `DEBUG_PROPERTY_INFO::bstrValue` is "*not a thing*" (NAT). NAT describes a register flag in Intel 64-bit processors that indicates deferred speculative exceptions.  
   
- DBG\_ATTRIB\_VALUE\_AUTOEXPANDED  
- Indique que la valeur dans `DEBUG_PROPERTY_INFO::bstrValue` utilisent probablement été développée.  
+ DBG_ATTRIB_VALUE_AUTOEXPANDED  
+ Indicates that the value in `DEBUG_PROPERTY_INFO::bstrValue` has possibly been auto-expanded.  
   
- DBG\_ATTRIB\_VALUE\_TIMEOUT  
- indique qu'une évaluation a chronométré\-.  
+ DBG_ATTRIB_VALUE_TIMEOUT  
+ Indicates that an evaluation has timed-out.  
   
- DBG\_ATTRIB\_VALUE\_RAW\_STRING  
- Indique que la valeur dans `DEBUG_PROPERTY_INFO::bstrValue` peut être représentée par une chaîne brut.  
+ DBG_ATTRIB_VALUE_RAW_STRING  
+ Indicates that the value in `DEBUG_PROPERTY_INFO::bstrValue` can be represented by a raw string.  
   
- DBG\_ATTRIB\_VALUE\_CUSTOM\_VIEWER  
- Indique que cette propriété contient au moins une visionneuse personnalisée associée.  
+ DBG_ATTRIB_VALUE_CUSTOM_VIEWER  
+ Indicates that this property has at least one custom viewer associated with it.  
   
- DBG\_ATTRIB\_ACCESS\_NONE  
- indique un objet qui n'a ni `public`, `private`, ni accès de type d' `protected` .  
+ DBG_ATTRIB_ACCESS_NONE  
+ Indicates an object that has neither `public`, `private`, nor `protected` type access.  
   
- DBG\_ATTRIB\_ACCESS\_PUBLIC  
- indique un objet qui a accès public.  
+ DBG_ATTRIB_ACCESS_PUBLIC  
+ Indicates an object that has public access.  
   
- DBG\_ATTRIB\_ACCESS\_PRIVATE  
- Indique un objet qui a un accès privé.  
+ DBG_ATTRIB_ACCESS_PRIVATE  
+ Indicates an object that has private access.  
   
- DBG\_ATTRIB\_ACCESS\_PROTECTED  
- indique un objet qui a protégé l'accès.  
+ DBG_ATTRIB_ACCESS_PROTECTED  
+ Indicates an object that has protected access.  
   
- DBG\_ATTRIB\_ACCESS\_FINAL  
- indique un objet qui a accès final.  
+ DBG_ATTRIB_ACCESS_FINAL  
+ Indicates an object that has final access.  
   
- DBG\_ATTRIB\_ACCESS\_ALL  
- Masque pour récupérer les attributs d'accès d' `DBG_ATTRIB_FLAGS`.  
+ DBG_ATTRIB_ACCESS_ALL  
+ Mask to extract the access attributes from `DBG_ATTRIB_FLAGS`.  
   
- DBG\_ATTRIB\_STORAGE\_NONE  
- Indique qu'il n'existe pas de type de stockage spécifié.  
+ DBG_ATTRIB_STORAGE_NONE  
+ Indicates that there is no storage type specified.  
   
- DBG\_ATTRIB\_STORAGE\_GLOBAL  
- indique le stockage global.  
+ DBG_ATTRIB_STORAGE_GLOBAL  
+ Indicates global storage.  
   
- DBG\_ATTRIB\_STORAGE\_STATIC  
- indique le stockage statique.  
+ DBG_ATTRIB_STORAGE_STATIC  
+ Indicates static storage.  
   
- DBG\_ATTRIB\_STORAGE\_REGISTER  
- indique le stockage dans le registre.  
+ DBG_ATTRIB_STORAGE_REGISTER  
+ Indicates storage in the register.  
   
- DBG\_ATTRIB\_STORAGE\_ALL  
- Masque pour récupérer les attributs de stockage d' `DBG_ATTRIB_FLAGS`.  
+ DBG_ATTRIB_STORAGE_ALL  
+ Mask to extract the storage attributes from `DBG_ATTRIB_FLAGS`.  
   
- DBG\_ATTRIB\_TYPE\_NONE  
- indique qu'il n'y a aucun modificateur de type.  
+ DBG_ATTRIB_TYPE_NONE  
+ Indicates that there is no type modifier.  
   
- DBG\_ATTRIB\_TYPE\_VIRTUAL  
- Indique le type d'objet est virtuel.  
+ DBG_ATTRIB_TYPE_VIRTUAL  
+ Indicates that the type of object is virtual.  
   
- DBG\_ATTRIB\_TYPE\_CONSTANT  
- Indique le type d'objet est constante.  
+ DBG_ATTRIB_TYPE_CONSTANT  
+ Indicates that the type of object is constant.  
   
- DBG\_ATTRIB\_TYPE\_SYNCHRONIZED  
- Indique le type d'objet est synchronisé.  
+ DBG_ATTRIB_TYPE_SYNCHRONIZED  
+ Indicates that the type of object is synchronized.  
   
- DBG\_ATTRIB\_TYPE\_VOLATILE  
- Indique le type d'objet est volatile.  
+ DBG_ATTRIB_TYPE_VOLATILE  
+ Indicates that the type of object is volatile.  
   
- DBG\_ATTRIB\_TYPE\_ALL  
- Masque pour récupérer les attributs de type d' `DBG_ATTRIB_FLAGS`.  
+ DBG_ATTRIB_TYPE_ALL  
+ Mask to extract the type attributes from `DBG_ATTRIB_FLAGS`.  
   
- DBG\_ATTRIB\_DATA  
- indique que cet objet est un champ de données.  
+ DBG_ATTRIB_DATA  
+ Indicates that this object is a data field.  
   
- DBG\_ATTRIB\_METHOD  
- indique que cet objet est une méthode.  
+ DBG_ATTRIB_METHOD  
+ Indicates that this object is a method.  
   
- DBG\_ATTRIB\_PROPERTY  
- indique que cet objet est une propriété.  
+ DBG_ATTRIB_PROPERTY  
+ Indicates that this object is a property.  
   
- DBG\_ATTRIB\_CLASS  
- indique que cet objet est une classe.  
+ DBG_ATTRIB_CLASS  
+ Indicates that this object is a class.  
   
- DBG\_ATTRIB\_BASECLASS  
- indique que cet objet est une classe de base.  
+ DBG_ATTRIB_BASECLASS  
+ Indicates that this object is a base class.  
   
- DBG\_ATTRIB\_INTERFACE  
- indique que cet objet est une interface.  
+ DBG_ATTRIB_INTERFACE  
+ Indicates that this object is an interface.  
   
- DBG\_ATTRIB\_INNERCLASS  
- indique que cet objet est une classe interne.  
+ DBG_ATTRIB_INNERCLASS  
+ Indicates that this object is an inner class.  
   
- DBG\_ATTRIB\_MOSTDERIVED  
- Indique que cet objet est « *plus* ».  Signifie que les « *plus\-dérivés* » term le type réel de l'objet, et pas le type de sa référence.  
+ DBG_ATTRIB_MOSTDERIVED  
+ Indicates that this object is '*most-derived*'. The term "*most-derived*" means the actual type of the object, and not the type of its reference.  
   
- DBG\_ATTRIB\_CHILD\_ALL  
- Indique un masque d' `DBG_ATTRIB_DATA` via `DBG_ATTRIB_MOSTDERIVED`.  
+ DBG_ATTRIB_CHILD_ALL  
+ Indicates a mask of `DBG_ATTRIB_DATA` through `DBG_ATTRIB_MOSTDERIVED`.  
   
- DBG\_ATTRIB\_MULTI\_CUSTOM\_VIEWERS  
- Indique que l'objet a plusieurs visionneuses personnalisées qui lui sont associées.  
+ DBG_ATTRIB_MULTI_CUSTOM_VIEWERS  
+ Indicates that the object has multiple custom viewers associated with it.  
   
-## Notes  
+## <a name="remarks"></a>Remarks  
   
 > [!NOTE]
->  Les valeurs de cette énumération ne sont pas définies réellement dans l'assembly pour c\#.  À la place, vous devez copier les définitions à votre fichier source.  
+>  The values in this enumeration are not actually defined in the assembly for C#. Instead, you must copy the definitions to your source file.  
   
- Ces indicateurs sont également utilisées pour filtrer les enfants d'un objet, par exemple, lorsqu'elles sont passées en tant qu'argument à [EnumChildren](../../../extensibility/debugger/reference/idebugproperty2-enumchildren.md).  Les valeurs peuvent être combinées avec `OR`de bits.  
+ These flags are also used to filter children of an object, for example, when passed as an argument to [EnumChildren](../../../extensibility/debugger/reference/idebugproperty2-enumchildren.md). The values may be combined with a bitwise `OR`.  
   
- La balise d' `DBG_ATTRIB_VALUE_CUSTOM_VIEWER` indique à [!INCLUDE[vsprvs](../../../code-quality/includes/vsprvs_md.md)] d'obtenir l'interface d' [IDebugProperty3](../../../extensibility/debugger/reference/idebugproperty3.md) de l'interface d' [IDebugProperty2](../../../extensibility/debugger/reference/idebugproperty2.md) et d'appeler [GetCustomViewerList](../../../extensibility/debugger/reference/idebugproperty3-getcustomviewerlist.md) pour obtenir la liste des visionneuses personnalisées.  
+ The `DBG_ATTRIB_VALUE_CUSTOM_VIEWER` flag is an indication to [!INCLUDE[vsprvs](../../../code-quality/includes/vsprvs_md.md)] to obtain the [IDebugProperty3](../../../extensibility/debugger/reference/idebugproperty3.md) interface from the [IDebugProperty2](../../../extensibility/debugger/reference/idebugproperty2.md) interface and call [GetCustomViewerList](../../../extensibility/debugger/reference/idebugproperty3-getcustomviewerlist.md) for a list of custom viewers.  
   
-## Configuration requise  
- en\-tête : msdbg.h  
+## <a name="requirements"></a>Requirements  
+ Header: msdbg.h  
   
- l'espace de noms : Microsoft.VisualStudio.Debugger.Interop  
+ Namespace: Microsoft.VisualStudio.Debugger.Interop  
   
- Assembly : Microsoft.VisualStudio.Debugger.Interop.dll  
+ Assembly: Microsoft.VisualStudio.Debugger.Interop.dll  
   
-## Voir aussi  
- [Énumérations](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)   
+## <a name="see-also"></a>See Also  
+ [Enumerations](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)   
  [IDebugProperty2](../../../extensibility/debugger/reference/idebugproperty2.md)   
  [IDebugProperty3](../../../extensibility/debugger/reference/idebugproperty3.md)   
  [IDebugReference2](../../../extensibility/debugger/reference/idebugreference2.md)   
- [DEBUG\_PROPERTY\_INFO](../../../extensibility/debugger/reference/debug-property-info.md)
+ [DEBUG_PROPERTY_INFO](../../../extensibility/debugger/reference/debug-property-info.md)

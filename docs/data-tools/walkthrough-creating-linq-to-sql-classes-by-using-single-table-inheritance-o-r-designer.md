@@ -1,154 +1,173 @@
 ---
-title: "Proc&#233;dure pas &#224; pas&#160;: cr&#233;ation de classes LINQ to SQL &#224; l&#39;aide de l&#39;h&#233;ritage &#224; table unique (Concepteur&#160;O/R) | Microsoft Docs"
-ms.custom: ""
-ms.date: "12/15/2016"
-ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+title: 'Walkthrough: Creating LINQ to SQL Classes by Using Single-Table Inheritance (O-R Designer) | Microsoft Docs'
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.tgt_pltfrm: 
+ms.topic: article
 ms.assetid: 63bc6328-e0df-4655-9ce3-5ff74dbf69a4
 caps.latest.revision: 4
-caps.handback.revision: 1
-author: "mikeblome"
-ms.author: "mblome"
-manager: "ghogen"
+author: mikeblome
+ms.author: mblome
+manager: ghogen
+translation.priority.ht:
+- de-de
+- es-es
+- fr-fr
+- it-it
+- ja-jp
+- ko-kr
+- ru-ru
+- zh-cn
+- zh-tw
+translation.priority.mt:
+- cs-cz
+- pl-pl
+- pt-br
+- tr-tr
+ms.translationtype: HT
+ms.sourcegitcommit: ff8ecec19f8cab04ac2190f9a4a995766f1750bf
+ms.openlocfilehash: 79d7cf0630eb433bb7cbbfba11f0d1f740d10617
+ms.contentlocale: fr-fr
+ms.lasthandoff: 08/23/2017
+
 ---
-# Proc&#233;dure pas &#224; pas&#160;: cr&#233;ation de classes LINQ to SQL &#224; l&#39;aide de l&#39;h&#233;ritage &#224; table unique (Concepteur&#160;O/R)
-Tel qu'il est implémenté dans les systèmes relationnels, le [Concepteur Objet\/Relationnel \(Concepteur O\/R\)](../data-tools/linq-to-sql-tools-in-visual-studio2.md) prend en charge l'héritage à table unique.Cette procédure pas à pas se développe à partir des étapes génériques fournies dans la rubrique [Procédure : configurer l'héritage à l'aide du Concepteur O\/R](../data-tools/how-to-configure-inheritance-by-using-the-o-r-designer.md) et illustre l'utilisation d'héritage dans le [!INCLUDE[vs_ordesigner_short](../data-tools/includes/vs_ordesigner_short_md.md)] par des données réelles.  
+# <a name="walkthrough-creating-linq-to-sql-classes-by-using-single-table-inheritance-or-designer"></a>Walkthrough: Creating LINQ to SQL Classes by Using Single-Table Inheritance (O/R Designer)
+The [LINQ to SQL Tools in Visual Studio](../data-tools/linq-to-sql-tools-in-visual-studio2.md) supports single-table inheritance as it is typically implemented in relational systems. This walkthrough expands upon the generic steps provided in the [How to: Configure inheritance by using the O/R Designer](../data-tools/how-to-configure-inheritance-by-using-the-o-r-designer.md) topic and provides some real data to demonstrate the use of inheritance in the [!INCLUDE[vs_ordesigner_short](../data-tools/includes/vs_ordesigner_short_md.md)].  
   
- Au cours de cette procédure, vous exécuterez les tâches suivantes :  
+ During this walkthrough, you will perform the following tasks:  
   
--   Créer une table de base de données et ajouter des données.  
+-   Create a database table and add data to it.  
   
--   Créer une application Windows Forms.  
+-   Create a Windows Forms application.  
   
--   Ajouter un fichier [!INCLUDE[vbtecdlinq](../data-tools/includes/vbtecdlinq_md.md)] à un projet.  
+-   Add a [!INCLUDE[vbtecdlinq](../data-tools/includes/vbtecdlinq_md.md)] file to a project.  
   
--   Créer de nouvelles classes d'entité.  
+-   Create new entity classes.  
   
--   Configurer les classes d'entité pour utiliser l'héritage.  
+-   Configure the entity classes to use inheritance.  
   
--   Interroger la classe héritée.  
+-   Query the inherited class.  
   
--   Afficher les données sur un Windows Form.  
+-   Display the data on a Windows Form.  
   
-## Création d'une table de laquelle hériter  
- Pour voir comment l'héritage fonctionne, vous allez créer une petite table Personnel que vous utiliserez comme classe de base, puis un objet Employé qui héritera de cette classe.  
+## <a name="create-a-table-to-inherit-from"></a>Create a Table to Inherit From  
+ To see how inheritance works, you will create a small Person table, use it as a base class, and then create an Employee object that inherits from it.  
   
-#### Pour créer une table de base illustrant l'héritage  
+#### <a name="to-create-a-base-table-to-demonstrate-inheritance"></a>To create a base table to demonstrate inheritance  
   
-1.  Dans l'**Explorateur de serveurs**\/**Explorateur de bases de données**, cliquez avec le bouton droit sur le nœud **Tables** et cliquez **Ajouter une nouvelle table**.  
+1.  In **Server Explorer**/**Database Explorer**, right-click the **Tables** node and click **Add New Table**.  
   
     > [!NOTE]
-    >  Vous pouvez utiliser la base de données Northwind ou toute autre base de données à laquelle vous pouvez ajouter une table.  
+    >  You can use the Northwind database or any other database that you can add a table to.  
   
-2.  Dans le Concepteur de tables, ajoutez les colonnes suivantes à la table :  
+2.  In the Table Designer, add the following columns to the table:  
   
-    |Nom de la colonne|Type de données|Null autorisé|  
-    |-----------------------|---------------------|-------------------|  
-    |ID|int|False|  
-    |Type|int|True|  
-    |FirstName|nvarchar\(200\)|False|  
-    |LastName|nvarchar\(200\)|False|  
-    |Manager|int|True|  
+    |Column Name|Data Type|Allow Nulls|  
+    |-----------------|---------------|-----------------|  
+    |**ID**|**int**|**False**|  
+    |**Type**|**int**|**True**|  
+    |**FirstName**|**nvarchar(200)**|**False**|  
+    |**LastName**|**nvarchar(200)**|**False**|  
+    |**Manager**|**int**|**True**|  
   
-3.  Définissez la colonne d'ID comme clé primaire.  
+3.  Set the ID column as the primary key.  
   
-4.  Enregistrez la table et dénommez\-la Personnel.  
+4.  Save the table and name it **Person**.  
   
-## Ajout de données à la table  
- Pour pouvoir vérifier si l'héritage est configuré correctement, la table a besoin de données dans chaque classe de l'héritage à table unique.  
+## <a name="add-data-to-the-table"></a>Add Data to the Table  
+ So that you can verify that inheritance is configured correctly, the table needs some data for each class in the single-table inheritance.  
   
-#### Pour ajouter des données à la table  
+#### <a name="to-add-data-to-the-table"></a>To add data to the table  
   
-1.  Ouvrez la table dans la vue de données.\(Cliquez avec le bouton droit sur la table **Personnel** dans l'**Explorateur de serveurs**\/**Explorateur de bases de données** et cliquez sur **Afficher les données de la table**.\)  
+1.  Open the table in data view. (Right-click the **Person** table in **Server Explorer**/**Database Explorer** and click **Show Table Data**.)  
   
-2.  Copiez les données suivantes dans la table.\(Vous pouvez les copier puis les coller dans la table en sélectionnant la ligne entière dans le [Results Pane](http://msdn.microsoft.com/fr-fr/3c712f20-7c9f-4021-b1ac-fdc6f534c95a).\)  
+2.  Copy the following data into the table. (You can copy it and then paste it into the table by selecting the whole row in the Results Pane.)  
   
     ||||||  
     |-|-|-|-|-|  
-    |ID|Type|FirstName|LastName|Manager|  
-    |1|1|Anne|Wallace|NULL|  
-    |2|1|Carlos|Grilo|NULL|  
-    |3|1|Yael|Peled|NULL|  
-    |4|2|Gatis|Ozolins|1|  
-    |5|2|Andreas|Hauser|1|  
-    |6|2|Tiffany|Phuvasate|1|  
-    |7|2|Alexey|Orekhov|2|  
-    |8|2|Michał|Poliszkiewicz|2|  
-    |9|2|Tai|Yee|2|  
-    |10|2|Fabricio|Noriega|3|  
-    |11|2|Mindy|Martin|3|  
-    |12|2|Ken|Kwok|3|  
+    |**ID**|**Type**|**FirstName**|**LastName**|**Manager**|  
+    |**1**|**1**|**Anne**|**Wallace**|**NULL**|  
+    |**2**|**1**|**Carlos**|**Grilo**|**NULL**|  
+    |**3**|**1**|**Yael**|**Peled**|**NULL**|  
+    |**4**|**2**|**Gatis**|**Ozolins**|**1**|  
+    |**5**|**2**|**Andreas**|**Hauser**|**1**|  
+    |**6**|**2**|**Tiffany**|**Phuvasate**|**1**|  
+    |**7**|**2**|**Alexey**|**Orekhov**|**2**|  
+    |**8**|**2**|**Michał**|**Poliszkiewicz**|**2**|  
+    |**9**|**2**|**Tai**|**Yee**|**2**|  
+    |**10**|**2**|**Fabricio**|**Noriega**|**3**|  
+    |**11**|**2**|**Mindy**|**Martin**|**3**|  
+    |**12**|**2**|**Ken**|**Kwok**|**3**|  
   
-## Création d'un projet  
- Maintenant que vous avez créé la table, créez un nouveau projet pour voir la configuration de l'héritage.  
+## <a name="create-a-new-project"></a>Create a New Project  
+ Now that you have created the table, create a new project to demonstrate configuring inheritance.  
   
-#### Pour créer une application Windows  
+#### <a name="to-create-the-new-windows-application"></a>To create the new Windows Application  
   
-1.  Dans le menu **Fichier**, créez un nouveau projet.  
+1.  From the **File** menu, create a new project.  
   
-2.  Nommez le projet InheritanceWalkthrough.  
+2.  Name the project **InheritanceWalkthrough**.  
   
     > [!NOTE]
-    >  Le [!INCLUDE[vs_ordesigner_short](../data-tools/includes/vs_ordesigner_short_md.md)] est pris en charge dans les projets Visual Basic et C\#.Vous pouvez donc créer le projet dans l'un ou l'autre de ces langages.  
+    >  The [!INCLUDE[vs_ordesigner_short](../data-tools/includes/vs_ordesigner_short_md.md)] is supported in Visual Basic and C# projects. Create the new project in one of these languages.  
   
-3.  Cliquez sur le modèle **Application Windows Forms**, puis sur **OK**.Pour plus d'informations, consultez [Applications clientes](../Topic/Developing%20Client%20Applications%20with%20the%20.NET%20Framework.md).  
+3.  Click the **Windows Forms Application** template and then click **OK**. For more information, see [Client Applications](/dotnet/framework/develop-client-apps).  
   
-4.  Le projet InheritanceWalkthrough est créé et ajouté à l'**Explorateur de solutions**.  
+4.  The InheritanceWalkthrough project is created and added to **Solution Explorer**.  
   
-## Ajout d'un fichier de classes LINQ to SQL au projet  
+## <a name="add-a-linq-to-sql-classes-file-to-the-project"></a>Add a LINQ to SQL Classes File to the Project  
   
-#### Pour ajouter un fichier LINQ to SQL au projet  
+#### <a name="to-add-a-linq-to-sql-file-to-the-project"></a>To add a LINQ to SQL File to the project  
   
-1.  Dans le menu **Projet**, cliquez sur **Ajouter un nouvel élément**.  
+1.  On the **Project** menu, click **Add New Item**.  
   
-2.  Cliquez sur le modèle **Classes LINQ to SQL**, puis cliquez sur **Ajouter**.  
+2.  Click the **LINQ to SQL Classes** template and then click **Add**.  
   
-     Le fichier .dbml est ajouté au projet et le [!INCLUDE[vs_ordesigner_short](../data-tools/includes/vs_ordesigner_short_md.md)] s'ouvre.  
+     The .dbml file is added to the project and the [!INCLUDE[vs_ordesigner_short](../data-tools/includes/vs_ordesigner_short_md.md)] opens.  
   
-## Création de l'héritage avec le Concepteur O\/R  
- Configurez l'héritage en faisant glisser un objet **Héritage** de la **Boîte à outils** vers l'aire de conception.  
+## <a name="create-the-inheritance-by-using-the-or-designer"></a>Create the Inheritance by Using the O/R Designer  
+ Configure the inheritance by dragging an **Inheritance** object from the **Toolbox** onto the design surface.  
   
-#### Pour créer l'héritage  
+#### <a name="to-create-the-inheritance"></a>To create the inheritance  
   
-1.  Dans l'**Explorateur de serveurs**\/**Explorateur de bases de données**, naviguez vers la table **Personnel** que vous avez créée précédemment.  
+1.  In **Server Explorer**/**Database Explorer**, navigate to the **Person** table that you created earlier.  
   
-2.  Faites glisser la table **Personnel** sur l'aire de conception du [!INCLUDE[vs_ordesigner_short](../data-tools/includes/vs_ordesigner_short_md.md)].  
+2.  Drag the **Person** table onto the [!INCLUDE[vs_ordesigner_short](../data-tools/includes/vs_ordesigner_short_md.md)] design surface.  
   
-3.  Faites glisser un deuxième tableau **Personnel** dans le [!INCLUDE[vs_ordesigner_short](../data-tools/includes/vs_ordesigner_short_md.md)] et modifiez son nom en Employé.  
+3.  Drag a second **Person** table onto the [!INCLUDE[vs_ordesigner_short](../data-tools/includes/vs_ordesigner_short_md.md)] and change its name to **Employee**.  
   
-4.  Supprimez la propriété **Manager** de l'objet **Personnel**.  
+4.  Delete the **Manager** property from the **Person** object.  
   
-5.  Supprimez les propriétés **Type**, **ID**, **FirstName**et **LastName** de l'objet **Employé**.\(En d'autres termes, supprimez toutes les propriétés à l'exception de **Manager**.\)  
+5.  Delete the **Type**, **ID**, **FirstName**, and **LastName** properties from the **Employee** object. (In other words, delete all properties except for **Manager**.)  
   
-6.  À partir de l'onglet **Concepteur Objet\/Relationnel** de la **Boîte à outils**, créez un **Héritage** entre les objets **Personnel** et **Employé**.Pour cela, cliquez sur l'élément **Héritage** dans la **Boîte à outils** et relâchez le bouton de la souris.Ensuite, cliquez sur l'objet **Employé**, puis sur l'objet **Personnel** dans le [!INCLUDE[vs_ordesigner_short](../data-tools/includes/vs_ordesigner_short_md.md)].La flèche sur la ligne d'héritage pointe sur l'objet **Personnel**.  
+6.  From the **Object Relational Designer** tab of the **Toolbox**, create an **Inheritance** between the **Person** and **Employee** objects. To do this, click the **Inheritance** item in the **Toolbox** and release the mouse button. Next, click the **Employee** object and then the **Person** object in the [!INCLUDE[vs_ordesigner_short](../data-tools/includes/vs_ordesigner_short_md.md)]. The arrow on the inheritance line will point to the **Person** object.  
   
-7.  Cliquez sur la ligne **Héritage** dans l'aire de conception.  
+7.  Click the **Inheritance** line on the design surface.  
   
-8.  Affectez à **Propriété de discriminateur**  la valeur **Type**.  
+8.  Set the **Discriminator Property** property to **Type**.  
   
-9. Affectez à la propriété **Valeur Discriminatoire de la classe dérivée** la valeur **2**.  
+9. Set the **Derived Class Discriminator Value** property to **2**.  
   
-10. Affectez à la propriété **Valeur discriminatoire de la classe de base** la valeur **1**.  
+10. Set the **Base Class Discriminator Value** property to **1**.  
   
-11. Affectez à la propriété **Héritage par défaut** la valeur **Personnel**.  
+11. Set the **Inheritance Default** property to **Person**.  
   
-12. Générez le projet.  
+12. Build the project.  
   
-## Interrogation de la classe héritée et affichage des données sur le formulaire  
- Vous ajouterez maintenant du code au formulaire qui interroge une classe spécifique dans le modèle objet.  
+## <a name="query-the-inherited-class-and-display-the-data-on-the-form"></a>Query the Inherited Class and Display the Data on the Form  
+ You will now add some code to the form that queries for a specific class in the object model.  
   
-#### Pour créer une requête LINQ et afficher les résultats sur le formulaire  
+#### <a name="to-create-a-linq-query-and-display-the-results-on-the-form"></a>To create a LINQ query and display the results on the form  
   
-1.  Faites glisser une **Zone de liste** sur Form1.  
+1.  Drag a **ListBox** onto Form1.  
   
-2.  Double\-cliquez sur le formulaire pour créer un gestionnaire d'événements `Form1_Load`.  
+2.  Double-click the form to create a `Form1_Load` event handler.  
   
-3.  Ajoutez le code suivant au gestionnaire d'événements `Form1_Load` :  
+3.  Add the following code to the `Form1_Load` event handler:  
   
-    ```vb#  
+    ```vb  
     Dim dc As New DataClasses1DataContext  
     Dim results = From emp In dc.Persons _  
         Where TypeOf emp Is Employee _  
@@ -159,7 +178,7 @@ Tel qu'il est implémenté dans les systèmes relationnels, le [Concepteur Objet
     Next  
     ```  
   
-    ```c#  
+    ```cs  
     NorthwindDataContext dc = new DataClasses1DataContext();  
     var results = from emp in dc.Persons  
                   where emp is Employee  
@@ -171,21 +190,20 @@ Tel qu'il est implémenté dans les systèmes relationnels, le [Concepteur Objet
     }  
     ```  
   
-## Test de l'application  
- Exécutez l'application et vérifiez que les enregistrements affichés dans la zone de liste sont tous des employés \(enregistrements qui ont une valeur 2 dans leur colonne de type\).  
+## <a name="test-the-application"></a>Test the Application  
+ Run the application and verify that the records displayed in the list box are all employees (records that have a value of 2 in their Type column).  
   
-#### Pour tester l'application  
+#### <a name="to-test-the-application"></a>To test the application  
   
-1.  Appuyez sur F5.  
+1.  Press F5.  
   
-2.  Vérifiez que seuls les enregistrements qui ont une valeur 2 dans leur colonne de type sont affichés.  
+2.  Verify that only records that have a value of 2 in their Type column are displayed.  
   
-3.  Fermez le formulaire.Dans le menu **Déboguer**, cliquez sur **Arrêter le débogage**.  
+3.  Close the form. (On the **Debug** menu, click **Stop Debugging**.)  
   
-## Voir aussi  
- [Vue d'ensemble du Concepteur O\/R](../Topic/LINQ%20to%20SQL%20Tools%20in%20Visual%20Studio1.md)   
- [Procédure : ajouter des classes LINQ to SQL à un projet \(Concepteur O\/R\)](../Topic/How%20to:%20Add%20LINQ%20to%20SQL%20Classes%20to%20a%20Project%20\(O-R%20Designer\).md)   
- [Procédure pas à pas : création de classes LINQ to SQL \(Concepteur O\/R\)](../Topic/Walkthrough:%20Creating%20LINQ%20to%20SQL%20Classes%20\(O-R%20Designer\).md)   
- [Procédure : assigner des procédures stockées pour effectuer des mises à jour, des insertions et des suppressions \(Concepteur O\/R\)](../data-tools/how-to-assign-stored-procedures-to-perform-updates-inserts-and-deletes-o-r-designer.md)   
- [LINQ à SQL](../Topic/LINQ%20to%20SQL.md)   
- [Procédure : générer le modèle objet en Visual Basic ou C\#](../Topic/How%20to:%20Generate%20the%20Object%20Model%20in%20Visual%20Basic%20or%20C%23.md)
+## <a name="see-also"></a>See Also  
+ [LINQ to SQL Tools in Visual Studio](../data-tools/linq-to-sql-tools-in-visual-studio2.md)   
+ [Walkthrough: Creating LINQ to SQL Classes (O-R Designer)](how-to-create-linq-to-sql-classes-mapped-to-tables-and-views-o-r-designer.md)   
+ [How to: Assign stored procedures to perform updates, inserts, and deletes (O/R Designer)](../data-tools/how-to-assign-stored-procedures-to-perform-updates-inserts-and-deletes-o-r-designer.md)   
+ [LINQ to SQL](/dotnet/framework/data/adonet/sql/linq/index)   
+ [How to: Generate the Object Model in Visual Basic or C#](/dotnet/framework/data/adonet/sql/linq/how-to-generate-the-object-model-in-visual-basic-or-csharp)

@@ -1,299 +1,332 @@
 ---
-title: "Comment&#160;: utiliser des Assistants avec des mod&#232;les de projet | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-general"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-helpviewer_keywords: 
-  - "IWizard (interface)"
-  - "modèles de projet (Visual Studio), Assistants"
-  - "modèles (Visual Studio), Assistants"
-  - "modèles Visual Studio, Assistants"
-  - "Assistants (Visual Studio), modèles de projet"
+title: 'How to: Use Wizards with Project Templates | Microsoft Docs'
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology:
+- vs-ide-general
+ms.tgt_pltfrm: 
+ms.topic: article
+helpviewer_keywords:
+- project templates [Visual Studio], wizards
+- Visual Studio templates, wizards
+- wizards [Visual Studio], project templates
+- templates [Visual Studio], wizards
+- IWizard interface
 ms.assetid: 47ee26cf-67b7-4ff1-8a9d-ab11a725405c
 caps.latest.revision: 23
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 23
----
-# Comment&#160;: utiliser des Assistants avec des mod&#232;les de projet
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
+ms.author: gregvanl
+manager: ghogen
+translation.priority.ht:
+- de-de
+- es-es
+- fr-fr
+- it-it
+- ja-jp
+- ko-kr
+- ru-ru
+- zh-cn
+- zh-tw
+translation.priority.mt:
+- cs-cz
+- pl-pl
+- pt-br
+- tr-tr
+ms.translationtype: MT
+ms.sourcegitcommit: ff8ecec19f8cab04ac2190f9a4a995766f1750bf
+ms.openlocfilehash: 3bfdafe26cfe58bad1ed8c82079761a04f337de9
+ms.contentlocale: fr-fr
+ms.lasthandoff: 08/23/2017
 
-Visual Studio fournit l'interface <xref:Microsoft.VisualStudio.TemplateWizard.IWizard> qui, une fois implémentée, vous permet d'exécuter un code personnalisé lorsqu'un utilisateur crée un projet à partir d'un modèle.  
+---
+# <a name="how-to-use-wizards-with-project-templates"></a>How to: Use Wizards with Project Templates
+Visual Studio provides the <xref:Microsoft.VisualStudio.TemplateWizard.IWizard> interface that, when implemented, enables you to run custom code when a user creates a project from a template.  
   
- La personnalisation du modèle de projet peut être utilisée pour effectuer les opérations suivantes :  
+ Project template customization can be used to display custom UI that collects user input to customize the template, add additional files to the template, or any other action allowed on a project.  
   
--   afficher une interface utilisateur personnalisée qui collecte les entrées d'utilisateur pour paramétrer le modèle ;  
+ The <xref:Microsoft.VisualStudio.TemplateWizard.IWizard> interface methods are called at various times while the project is being created, starting as soon as a user clicks **OK** on the **New Project** dialog box. Each method of the interface is named to describe the point at which it is called. For example, Visual Studio calls <xref:Microsoft.VisualStudio.TemplateWizard.IWizard.RunStarted%2A> immediately when it starts to create the project, making it a good location to write custom code to collect user input.  
   
--   ajouter des valeurs de paramètre à utiliser dans le modèle ;  
+## <a name="creating-a-project-template-project-with-a-vsix-project"></a>Creating a Project Template Project with a VSIX Project  
+ You start creating a custom template with the project template project., which is part of the Visual Studio SDK. In this procedure we will use a C# project template project, but there is also a Visual Basic project template project. Then you add a VSIX project to the solution that contains the project template project.  
   
--   ajouter des fichiers supplémentaires au modèle ;  
+1.  Create a C# project template project (in Visual Studio, **File / New / Project / Visual C# / Extensibility / C# Project Template**). Name it **MyProjectTemplate**.  
   
--   exécuter pratiquement n'importe quelle action autorisée par le modèle objet Automation de [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] sur un projet.  
+    > [!NOTE]
+    >  You may be asked to install the Visual Studio SDK. For more information, see [Installing the Visual Studio SDK](../extensibility/installing-the-visual-studio-sdk.md).  
   
- Les méthodes de l'interface <xref:Microsoft.VisualStudio.TemplateWizard.IWizard> sont appelées à différents moments au fil de la création du projet, en commençant dès qu'un utilisateur clique sur **OK** dans la boîte de dialogue **Nouveau projet**.  Chaque méthode de l'interface est nommée pour décrire le moment auquel elle est appelée.  Par exemple, [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] appelle immédiatement <xref:Microsoft.VisualStudio.TemplateWizard.IWizard.RunStarted%2A> dès qu'il commence à créer le projet, ce qui en fait un bon emplacement pour positionner un code personnalisé servant à collecter des entrées d'utilisateur.  
+2.  Add a new VSIX project (**File / New / Project / Visual C# / Extensibility / VSIX Project**) in the same solution as the project template project (in the **Solution Explorer**, select the solution node, right-click, and select **Add / New Project**). Name it **MyProjectWizard.**  
   
- Pour personnaliser le projet, la majeure partie du code que vous écrivez pour des Assistants personnalisés fait appel à l'objet <xref:EnvDTE.DTE>, qui constitue l'objet principal dans le modèle objet Automation de [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)].  Pour plus d'informations sur le modèle objet Automation, consultez [Extension de l'environnement Visual Studio](../Topic/Extending%20the%20Visual%20Studio%20Environment.md) et [Guide de référence de l'extensibilité et de l'automation](../Topic/Automation%20and%20Extensibility%20Reference.md).  
+3.  Set the VSIX project as the startup project. In the **Solution Explorer**, select the VSIX project node, right-click, and select **Set as Startup Project**.  
   
-## Création d'un Assistant de modèle personnalisé  
- Cette rubrique indique comment créer un Assistant personnalisé qui ouvre un Windows Form avant que le projet soit créé.  Ce formulaire permet à l'utilisateur d'ajouter une valeur de paramètre personnalisée qui sera à son tour ajoutée au code source pendant la création du projet.  Les étapes principales, expliquées individuellement en détails, sont les suivantes :  
+4.  Add the template project as an asset of the VSIX project. In the **Solution Explorer**, under the VSIX project node, find the **source.extension.vsixmanifest** file. Double-click it to open it in the manifest editor.  
   
-#### Pour créer un Assistant de modèle personnalisé  
+5.  In the manifest editor, select the **Assets** tab on the left side of the window.  
   
-1.  Créez un assembly qui implémente l'interface <xref:Microsoft.VisualStudio.TemplateWizard.IWizard>.  
+6.  In the **Assets** tab, select **New**. In the **Add New Asset** window, for the Type field, select **Microsoft.VisualStudio.ProjectTemplate**. In the **Source** field, select **A project in current solution**. In the **Project** field, select **MyProjectTemplate**. Then click **OK**.  
   
-2.  Installez l'assembly dans le Global Assembly Cache.  
+7.  Build the solution and start debugging. A second instance of Visual Studio appears. (This may take a few minutes.)  
   
-3.  Créez un projet et utilisez l'Assistant **Exportation de modèle** pour créer un modèle à partir du projet.  
+8.  In the second instance of Visual Studio, try to create a new project with your new template. (**File / New / Project / Visual C# / MyProject Template**). The new project should appear with a class named **Class1**. You have now created a custom project template! Stop debugging now.  
   
-4.  Modifiez le modèle en ajoutant un élément `WizardExtension` dans le fichier .vstemplate pour lier le modèle à l'assembly qui implémente <xref:Microsoft.VisualStudio.TemplateWizard.IWizard>.  
+## <a name="creating-a-custom-template-wizard"></a>Creating a Custom Template Wizard  
+ This topic shows how to create a custom wizard that opens a Windows Form before the project is created. The form allows users to add a custom parameter value that is added to the source code during project creation.  
   
-5.  Créer un projet à l'aide de l'Assistant personnalisé.  
+1.  Set up the VSIX project to allow it to create an assembly.  
   
-## Implémentation d'IWizard  
- La première étape du processus consiste à créer un assembly qui implémente <xref:Microsoft.VisualStudio.TemplateWizard.IWizard>.  Cet assembly utilise la méthode <xref:Microsoft.VisualStudio.TemplateWizard.IWizard.RunStarted%2A> pour afficher un Windows Form qui permet à l'utilisateur d'ajouter une valeur de paramètre personnalisée, qui sera utilisée pendant la création du projet.  
+2.  In the **Solution Explorer**, select the VSIX project node. Below the Solution Explorer, you should see the **Properties** window. If you do not, select **View / Properties Window**, or press **F4**. In the Properties window, select the following fields to `true`:  
   
-> [!NOTE]
->  Cet exemple utilise [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] pour implémenter <xref:Microsoft.VisualStudio.TemplateWizard.IWizard>, bien que vous puissiez également utiliser [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)].  
+    -   **IncludeAssemblyInVSIXContainer**  
   
-#### Pour implémenter IWizard  
+    -   **IncludeDebugSymbolsInVSIXContainer**  
   
-1.  Créez un projet Bibliothèque de classes.  
+    -   **IncludeDebugSymbolsInLocalVSIXDeployment**  
   
-2.  Définissez une classe qui implémente l'interface <xref:Microsoft.VisualStudio.TemplateWizard.IWizard>.  Consultez le code ci\-dessous pour un exemple [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] d'une interface <xref:Microsoft.VisualStudio.TemplateWizard.IWizard> intégralement implémentée.  
+3.  Add the assembly as an asset to the VSIX project. Open the source.extension.vsixmanifest file and select the **Assets** tab. In the **Add New Asset** window, for **Type** select **Microsoft.VisualStudio.Assembly**, for **Source** select **A project in current solution**, and for **Project** select **MyProjectWizard**.  
   
- Cet exemple contient deux fichiers de code : `IWizardImplementation`, une classe qui implémente l'interface <xref:Microsoft.VisualStudio.TemplateWizard.IWizard>, et `UserInputForm`, le Windows Form destiné aux entrées d'utilisateur.  
+4.  Add the following references to the VSIX project. (In the **Solution Explorer**, under the VSIX project node select **References**, right-click, and select **Add Reference**.) In the **Add Reference** dialog,  in the **Framework** tab, find the **System.Windows Forms** assembly and select it. Now select the **Extensions** tab. find the **EnvDTE** assembly and select it. Also find the **Microsoft.VisualStudio.TemplateWizardInterface** assembly and select it. Click **OK**.  
   
-### Classe IWizardImplementation  
- La classe `IWizardImplementation` contient des implémentations de méthodes pour chaque membre de <xref:Microsoft.VisualStudio.TemplateWizard.IWizard>.  Dans cet exemple, seule la méthode <xref:Microsoft.VisualStudio.TemplateWizard.IWizard.RunStarted%2A> réalise une tâche.  Les autres méthodes ne font rien ou retournent `true`.  
+5.  Add a class for the wizard implementation to the VSIX project. (In the Solution Explorer, right-click the VSIX project node and select **Add**, then **New Item**, then **Class**.) Name the class **WizardImplementation**.  
   
- La méthode <xref:Microsoft.VisualStudio.TemplateWizard.IWizard.RunStarted%2A> accepte quatre paramètres :  
+6.  Replace the code in the **WizardImplementationClass.cs** file with the following code:  
   
--   Un paramètre <xref:System.Object>, dont un cast en objet <xref:EnvDTE._DTE> racine peut être effectué, pour vous permettre de personnaliser le projet.  
+    ```cs  
+    using System;  
+    using System.Collections.Generic;  
+    using Microsoft.VisualStudio.TemplateWizard;  
+    using System.Windows.Forms;  
+    using EnvDTE;  
   
--   Un paramètre <xref:System.Collections.Generic.Dictionary%602> qui contient une collection de tous les paramètres prédéfinis dans le modèle.  Pour plus d'informations sur les paramètres de modèle, consultez [Paramètres de modèle](../ide/template-parameters.md).  
-  
--   Un paramètre <xref:Microsoft.VisualStudio.TemplateWizard.WizardRunKind> qui contient des informations sur le type de modèle utilisé.  
-  
--   Un tableau <xref:System.Object> qui contient un jeu de paramètres passé à l'Assistant par [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)].  
-  
- Cet exemple ajoute une valeur de paramètre issue du formulaire des entrées d'utilisateur au paramètre <xref:System.Collections.Generic.Dictionary%602>.  Chaque instance du paramètre `$custommessage$` dans le projet est remplacée par le texte saisi par l'utilisateur.  Vous devez ajouter les assemblages suivants à votre projet :  
-  
-1.  EnvDTE.dll  
-  
-2.  Microsoft.VisualStudio.TemplateWizardInterface.dll  
-  
-3.  System.Windows.Forms.dll  
-  
-> [!IMPORTANT]
->  L'UserInputForm utilisé dans cet exemple est défini dans la section suivante.  
-  
-```c#  
-using System;  
-using System.Collections.Generic;  
-using Microsoft.VisualStudio.TemplateWizard;  
-using System.Windows.Forms;  
-using EnvDTE;  
-  
-namespace CustomWizard  
-{  
-    public class IWizardImplementation:IWizard  
+    namespace MyProjectWizard  
     {  
-        private UserInputForm inputForm;  
-        private string customMessage;  
-  
-        // This method is called before opening any item that   
-        // has the OpenInEditor attribute.  
-        public void BeforeOpeningFile(ProjectItem projectItem)  
+        public class WizardImplementation:IWizard  
         {  
-        }  
+            private UserInputForm inputForm;  
+            private string customMessage;  
   
-        public void ProjectFinishedGenerating(Project project)  
-        {  
-        }  
-  
-        // This method is only called for item templates,  
-        // not for project templates.  
-        public void ProjectItemFinishedGenerating(ProjectItem   
-            projectItem)  
-        {  
-        }  
-  
-        // This method is called after the project is created.  
-        public void RunFinished()  
-        {  
-        }  
-  
-        public void RunStarted(object automationObject,  
-            Dictionary<string, string> replacementsDictionary,  
-            WizardRunKind runKind, object[] customParams)  
-        {  
-            try  
+            // This method is called before opening any item that   
+            // has the OpenInEditor attribute.  
+            public void BeforeOpeningFile(ProjectItem projectItem)  
             {  
-                // Display a form to the user. The form collects   
-                // input for the custom message.  
-                inputForm = new UserInputForm();  
-                inputForm.ShowDialog();  
-  
-                customMessage = inputForm.get_CustomMessage();  
-  
-                // Add custom parameters.  
-                replacementsDictionary.Add("$custommessage$",   
-                    customMessage);  
             }  
-            catch (Exception ex)  
+  
+            public void ProjectFinishedGenerating(Project project)  
             {  
-                MessageBox.Show(ex.ToString());  
+            }  
+  
+            // This method is only called for item templates,  
+            // not for project templates.  
+            public void ProjectItemFinishedGenerating(ProjectItem   
+                projectItem)  
+            {  
+            }  
+  
+            // This method is called after the project is created.  
+            public void RunFinished()  
+            {  
+            }  
+  
+            public void RunStarted(object automationObject,  
+                Dictionary<string, string> replacementsDictionary,  
+                WizardRunKind runKind, object[] customParams)  
+            {  
+                try  
+                {  
+                    // Display a form to the user. The form collects   
+                    // input for the custom message.  
+                    inputForm = new UserInputForm();  
+                    inputForm.ShowDialog();  
+  
+                    customMessage = UserInputForm.CustomMessage;  
+  
+                    // Add custom parameters.  
+                    replacementsDictionary.Add("$custommessage$",   
+                        customMessage);  
+                }  
+                catch (Exception ex)  
+                {  
+                    MessageBox.Show(ex.ToString());  
+                }  
+            }  
+  
+            // This method is only called for item templates,  
+            // not for project templates.  
+            public bool ShouldAddProjectItem(string filePath)  
+            {  
+                return true;  
+            }          
+        }  
+    }  
+    ```  
+  
+     The **UserInputForm** referenced in this code will be implemented later.  
+  
+     The `WizardImplementation` class contains method implementations for every member of <xref:Microsoft.VisualStudio.TemplateWizard.IWizard>. In this example, only the <xref:Microsoft.VisualStudio.TemplateWizard.IWizard.RunStarted%2A> method performs a task. All other methods either do nothing or return `true`.  
+  
+     The <xref:Microsoft.VisualStudio.TemplateWizard.IWizard.RunStarted%2A> method accepts four parameters:  
+  
+    -   An <xref:System.Object> parameter that can be cast to the root <xref:EnvDTE._DTE> object, to enable you to customize the project.  
+  
+    -   A <xref:System.Collections.Generic.Dictionary%602> parameter that contains a collection of all pre-defined parameters in the template. For more information on template parameters, see [Template Parameters](../ide/template-parameters.md).  
+  
+    -   A <xref:Microsoft.VisualStudio.TemplateWizard.WizardRunKind> parameter that contains information about what kind of template is being used.  
+  
+    -   An <xref:System.Object> array that contains a set of parameters passed to the wizard by Visual Studio.  
+  
+     This example adds a parameter value from the user input form to the <xref:System.Collections.Generic.Dictionary%602> parameter. Every instance of the `$custommessage$` parameter in the project will be replaced with the text entered by the user. You must add the following assemblies to your project: **System** and **System.Drawing**.
+  
+7.  Now create the **UserInputForm**. In the **WizardImplementation.cs** file, add the following code after the end of the **WizardImplementation** class.  
+  
+    ```cs  
+    public partial class UserInputForm : Form  
+        {  
+            private static string customMessage;  
+            private TextBox textBox1;  
+            private Button button1;  
+  
+            public UserInputForm()  
+            {  
+                this.Size = new System.Drawing.Size(155, 265);   
+  
+                button1 = new Button();  
+                button1.Location = new System.Drawing.Point(90, 25);  
+                button1.Size = new System.Drawing.Size(50, 25);  
+                button1.Click += button1_Click;  
+                this.Controls.Add(button1);  
+  
+                textBox1 = new TextBox();  
+                textBox1.Location = new System.Drawing.Point(10, 25);  
+                textBox1.Size = new System.Drawing.Size(70, 20);  
+                this.Controls.Add(textBox1);  
+            }  
+            public static string CustomMessage  
+            {  
+                get  
+                {  
+                    return customMessage;  
+                }  
+                set  
+                {  
+                    customMessage = value;  
+                }     
+            }  
+            private void button1_Click(object sender, EventArgs e)  
+            {  
+                customMessage = textBox1.Text;  
             }  
         }  
+    ```  
   
-        // This method is only called for item templates,  
-        // not for project templates.  
-        public bool ShouldAddProjectItem(string filePath)  
-        {  
-            return true;  
-        }          
-    }  
-}  
-```  
+     The user input form provides a simple form for entering a custom parameter. The form contains a text box named `textBox1` and a button named `button1`. When the button is clicked, the text from the text box is stored in the `customMessage` parameter.  
   
-### Formulaire des entrées d'utilisateur  
- Le formulaire des entrées d'utilisateur constitue un support simple pour entrer un paramètre personnalisé.  Le formulaire contient une zone de texte nommée `textBox1` et un bouton nommé `button1`.  Lorsque le bouton est activé, le texte présent dans la zone de texte est enregistré dans le paramètre `customMessage`.  
+## <a name="connect-the-wizard-to-the-custom-template"></a>Connect the Wizard to the Custom Template  
+ In order for your custom project template to use your custom wizard, you need to sign the wizard assembly and add some lines to your custom project template to let it know where to find the wizard implementation when a new project is created.  
   
-##### Pour ajouter un Windows Form à la solution  
+1.  Sign the assembly. In the **Solution Explorer**, select the VSIX project, right-click, and select **Project Properties**.  
   
-1.  Ajoutez le code suivant au fichier qui contient l'assistant d'implémentation.  
+2.  In the **Project Properties** window, select the **Signing** tab. in the **Signing** tab, check **Sign the assembly**. In the **Choose a strong name key file** field, select **\<New>**. In the **Create Strong Name Key** window, in the **Key file name** field, type **key.snk**. Uncheck the **Protect my key file with a password** field.  
   
-```c#  
-public partial class UserInputForm : Form  
-{  
-    private string customMessage;  
-    private TextBox textBox1;  
+3.  In the **Solution Explorer**, select the VSIX project and find the **Properties** window.  
   
-    public UserInputForm()  
-    {   
-        textBox1 = new TextBox();  
-        this.Controls.Add(textBox1);  
-    }  
+4.  Set the **Copy Build Output to Output Directory** field to **true**. This allows the assembly to be copied into the output directory when the solution is rebuilt. It is still contained in the .vsix file. You need to see the assembly in order to find out its signing key.  
   
-    public string get_CustomMessage()  
-    {  
-        return customMessage;  
-    }  
+5.  Rebuild the solution.  
   
-    private void textBox1_TextChanged(object sender, EventArgs e)  
-    {  
-        customMessage = textBox1.Text;  
-        this.Dispose();  
-    }  
-}  
-```  
+6.  You can now find the key.snk file in the MyProjectWizard project directory (**\<your disk location>\MyProjectTemplate\MyProjectWizard\key.snk**). Copy the key.snk file.  
   
-## Installation de l'assembly dans le Global Assembly Cache  
- L'assembly qui implémente <xref:Microsoft.VisualStudio.TemplateWizard.IWizard> doit être signé avec un nom fort et installé dans le Global Assembly Cache.  
+7.  Go to the output directory and find the assembly (**\<your disk location>\MyProjectTemplate/MyProjectWizard\bin\Debug\MyProjectWizard.dll**). Paste the key.snk file here. (This isn't absolutely necessary, but it will make the following steps easier.)  
   
-#### Pour installer l'assembly dans le Global Assembly Cache  
+8.  Open a command window, and change to the directory in which the assembly has been created.  
   
-1.  Signez l'assembly avec un nom fort.  Pour plus d'informations, consultez [Comment : signer un assembly avec un nom fort](../Topic/How%20to:%20Sign%20an%20Assembly%20with%20a%20Strong%20Name.md) ou [How to: Sign an Assembly \(Visual Studio\)](http://msdn.microsoft.com/fr-fr/f468a7d3-234c-4353-924d-8e0ae5896564) ;  
+9. Find the **sn.exe** signing tool. For example, on a Windows 10 64-bit operating system, a typical path would be the following:  
   
-2.  Installez l'assembly avec nom fort dans le Global Assembly Cache.  Pour plus d'informations, consultez [Comment : installer un assembly dans le Global Assembly Cache](../Topic/How%20to:%20Install%20an%20Assembly%20into%20the%20Global%20Assembly%20Cache.md).  
+     **C:\Program Files (x86)\Microsoft SDKs\Windows\v10.0A\bin\NETFX 4.6.1 Tools**  
   
-## Création d'un projet à utiliser comme modèle  
- Dans cet exemple, le projet utilisé en tant que modèle consiste en une application console qui affiche le message spécifié dans le formulaire des entrées d'utilisateur de l'Assistant personnalisé.  
+     If you can't find the tool, try running **where /R .  sn.exe** in the command window. Make a note of the path.  
   
-#### Pour créer l'exemple de projet  
+10. Extract the public key from the key.snk file. In the command window, type  
   
-1.  Créez une application console [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)].  
+     **\<location of sn.exe>\sn.exe - p key.snk outfile.key.**  
   
-2.  Dans la méthode `Main` de l'application, ajoutez la ligne de code suivante :  
+     Don't forget to surround the path of sn.exe with quotation marks if there are spaces in the directory names!  
+  
+11. Get the public key token from the outfile:  
+  
+     **\<location of sn.exe>\sn.exe - t outfile.key.**  
+  
+     Again, don't forget the quotation marks. You should see a line in the output like this  
+  
+     **Public key token is <token>**  
+  
+     Make a note of this value.  
+  
+12. Add the reference to the custom wizard to the .vstemplate file of the project template. In the Solution Explorer, find the file named MyProjectTemplate.vstemplate, and open it. After the end of the \<TemplateContent> section, add the following section:  
+  
+    ```xml  
+    <WizardExtension>  
+        <Assembly>MyProjectWizard, Version=1.0.0.0, Culture=Neutral, PublicKeyToken=token</Assembly>  
+        <FullClassName>MyProjectWizard.WizardImplementation</FullClassName>  
+    </WizardExtension>  
+    ```  
+  
+     Where **MyProjectWizard** is the name of the assembly, and **token** is the token you copied in the previous step.  
+  
+13. Save all the files in the project and rebuild.  
+  
+## <a name="adding-the-custom-parameter-to-the-template"></a>Adding the Custom Parameter to the Template  
+ In this example, the project used as the template displays the message specified in the user input form of the custom wizard.  
+  
+1.  In the Solution Explorer, go to the **MyProjectTemplate** project and open **Class1.cs**.  
+  
+2.  In the `Main` method of the application, add the following line of code.  
   
     ```  
     Console.WriteLine("$custommessage$");  
     ```  
   
-     Le paramètre `$custommessage$` est remplacé par le texte saisi dans le formulaire des entrées d'utilisateur lorsqu'un projet est créé à partir du modèle.  
+     The parameter `$custommessage$` is replaced with the text entered in the user input form when a project is created from the template.  
   
-3.  Dans le menu **Fichier**, cliquez sur **Exporter le modèle**.  
+ Here is the full code file before it has been exported to a template.  
   
-4.  Dans l'Assistant **Exportation de modèle**, cliquez sur **Modèle de projet**, sélectionnez le projet approprié, puis cliquez sur **Suivant**.  
-  
-5.  Dans l'Assistant **Exportation de modèle**, entrez des informations descriptives relatives au modèle, activez la case à cocher **Importer automatiquement le modèle dans Visual Studio**, puis cliquez sur **Terminer**.  
-  
-     Le modèle s'affiche à présent dans la boîte de dialogue **Nouveau projet**, mais n'utilise pas l'Assistant personnalisé.  
-  
- L'exemple suivant présente le fichier du code intégral avant son exportation vers un modèle.  
-  
-```c#  
+```cs  
 using System;  
 using System.Collections.Generic;  
-using System.Text;  
+$if$ ($targetframeworkversion$ >= 3.5)using System.Linq;  
+$endif$using System.Text;  
   
-namespace TemplateProject  
+namespace $safeprojectname$  
 {  
-    class WriteMessage  
+    public class Class1  
     {  
-        static void Main(string[] args)  
-        {  
-            Console.WriteLine("$custommessage$");  
-        }  
+          static void Main(string[] args)  
+          {  
+               Console.WriteLine("$custommessage$");  
+          }  
     }  
 }  
 ```  
   
-## Modification du modèle  
- Maintenant que le modèle est créé et qu'il s'affiche dans la boîte de dialogue **Nouveau projet**, vous devez le modifier afin qu'il utilise l'assembly que vous avez créé au cours des étapes précédentes.  
+## <a name="using-the-custom-wizard"></a>Using the Custom Wizard  
+ Now you can create a project from your template and use the custom wizard.  
   
-#### Pour ajouter l'Assistant personnalisé au modèle  
+1.  Rebuild the solution and start debugging. A second instance of Visual Studio should appear.  
   
-1.  Localisez le fichier .zip qui contient le modèle.  
+2.  Create a new MyProjectTemplate project. (**File / New / Project / Visual C# / MyProjectTemplate**)  
   
-    1.  Dans le menu **Outils**, cliquez sur **Options**.  
+3.  In the **New Project** dialog box, locate your template, type a name, and click **OK**.  
   
-    2.  Cliquez sur **Projets et solutions**.  
+     The wizard user input form opens.  
   
-    3.  Lisez le contenu de la zone de texte **Emplacement des modèles de projet pour l'utilisateur de Visual Studio**.  
+4.  Type a value for the custom parameter and click the button.  
   
-     Par défaut, cet emplacement est Mes Documents\\Visual Studio *Version*\\Templates\\ProjectTemplates.  
+     The wizard user input form closes, and a project is created from the template.  
   
-2.  Extrayez le fichier .zip.  
+5.  In **Solution Explorer**, right-click the source code file and click **View Code**.  
   
-3.  Ouvrez le fichier .vstemplate dans [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)].  
+     Notice that `$custommessage$` has been replaced with the text entered in the wizard user input form.  
   
-4.  Après l'élément `TemplateContent`, ajoutez un élément [WizardExtension, élément \(modèles Visual Studio\)](../extensibility/wizardextension-element-visual-studio-templates.md) avec le nom fort de votre assembly d'Assistant personnalisé.  Pour plus d'informations sur la recherche du nom fort de votre assembly, consultez [Comment : visualiser le contenu du Global Assembly Cache](../Topic/How%20to:%20View%20the%20Contents%20of%20the%20Global%20Assembly%20Cache.md)et [Comment : référencer un assembly avec nom fort](../Topic/How%20to:%20Reference%20a%20Strong-Named%20Assembly.md).  
-  
-     L'exemple suivant présente un élément `WizardExtension`.  
-  
-    ```  
-    <WizardExtension>  
-        <Assembly>CustomWizard, Version=1.0.0.0, Culture=Neutral, PublicKeyToken=fa3902f409bb6a3b</Assembly>  
-        <FullClassName>CustomWizard.IWizardImplementation</FullClassName>  
-    </WizardExtension>  
-    ```  
-  
-## Utilisation de l'Assistant personnalisé  
- Vous pouvez à présent créer un projet à partir de votre modèle et utiliser l'Assistant personnalisé.  
-  
-#### Pour utiliser l'Assistant personnalisé  
-  
-1.  Dans le menu **Fichier**, cliquez sur **Nouveau projet**.  
-  
-2.  Dans la boîte de dialogue **Nouveau projet**, localisez votre modèle, tapez un nom et cliquez sur **OK**.  
-  
-     Le formulaire des entrées d'utilisateur de l'Assistant s'affiche.  
-  
-3.  Tapez une valeur pour le paramètre personnalisé, puis cliquez sur le bouton.  
-  
-     Le formulaire des entrées d'utilisateur de l'Assistant se ferme ; un projet est créé à partir du modèle.  
-  
-4.  Dans l' **Explorateur de solutions**, cliquez avec le bouton droit sur le fichier du code source, puis cliquez sur **Afficher le code**.  
-  
-     Remarquez que `$custommessage$` a été remplacé par le texte entré dans le formulaire des entrées d'utilisateur de l'Assistant.  
-  
-## Voir aussi  
+## <a name="see-also"></a>See Also  
  <xref:Microsoft.VisualStudio.TemplateWizard.IWizard>   
- [Personnalisation des modèles](../ide/customizing-project-and-item-templates.md)   
- [WizardExtension, élément \(modèles Visual Studio\)](../extensibility/wizardextension-element-visual-studio-templates.md)
+ [Customizing Templates](../ide/customizing-project-and-item-templates.md)   
+ [WizardExtension Element (Visual Studio Templates)](../extensibility/wizardextension-element-visual-studio-templates.md)
+

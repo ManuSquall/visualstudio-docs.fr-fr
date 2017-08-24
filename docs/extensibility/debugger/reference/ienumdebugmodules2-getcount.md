@@ -1,51 +1,68 @@
 ---
-title: "IEnumDebugModules2::GetCount | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "IEnumDebugModules2::GetCount"
-helpviewer_keywords: 
-  - "IEnumDebugModules2::GetCount"
+title: IEnumDebugModules2::GetCount | Microsoft Docs
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology:
+- vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords:
+- IEnumDebugModules2::GetCount
+helpviewer_keywords:
+- IEnumDebugModules2::GetCount
 ms.assetid: f4def3d2-7cc9-4cd2-9649-3b7e00a76220
 caps.latest.revision: 10
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 10
----
-# IEnumDebugModules2::GetCount
-[!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]
+ms.author: gregvanl
+manager: ghogen
+translation.priority.mt:
+- cs-cz
+- de-de
+- es-es
+- fr-fr
+- it-it
+- ja-jp
+- ko-kr
+- pl-pl
+- pt-br
+- ru-ru
+- tr-tr
+- zh-cn
+- zh-tw
+ms.translationtype: MT
+ms.sourcegitcommit: ff8ecec19f8cab04ac2190f9a4a995766f1750bf
+ms.openlocfilehash: 8b4bd2d4a66e01e86c087f381b0b17cc1af75f65
+ms.contentlocale: fr-fr
+ms.lasthandoff: 08/23/2017
 
-Retourne le nombre d'éléments dans l'énumération.  
+---
+# <a name="ienumdebugmodules2getcount"></a>IEnumDebugModules2::GetCount
+Returns the number of elements in the enumeration.  
   
-## Syntaxe  
+## <a name="syntax"></a>Syntax  
   
 ```cpp#  
 HRESULT GetCount(  
-   ULONG* pcelt  
+   ULONG* pcelt  
 );  
 ```  
   
-```c#  
+```cs  
 int GetCount(  
-   out uint pcelt  
+   out uint pcelt  
 );  
 ```  
   
-#### Paramètres  
+#### <a name="parameters"></a>Parameters  
  `pcelt`  
- \[out\]  Retourne le nombre d'éléments dans l'énumération.  
+ [out] Returns the number of elements in the enumeration.  
   
-## Valeur de retour  
- En cas de réussite, retourne `S_OK`; sinon, retourne un code d'erreur.  
+## <a name="return-value"></a>Return Value  
+ If successful, returns `S_OK`; otherwise, returns an error code.  
   
-## Notes  
- Cette méthode ne fait pas partie de l'interface traditionnelles d'énumération COM qui spécifie que seuls `Next`, `Clone`, `Skip`les méthodes, et d' `Reset` doivent être implémentés.  
+## <a name="remarks"></a>Remarks  
+ This method is not part of the customary COM enumeration interface which specifies that only the `Next`, `Clone`, `Skip`, and `Reset` methods need to be implemented.  
   
-## Voir aussi  
+## <a name="see-also"></a>See Also  
  [IEnumDebugModules2](../../../extensibility/debugger/reference/ienumdebugmodules2.md)

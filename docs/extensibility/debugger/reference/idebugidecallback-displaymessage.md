@@ -1,5 +1,5 @@
 ---
-title: IDebugIDECallback::DisplayMessage | Documents Microsoft
+title: IDebugIDECallback::DisplayMessage | Microsoft Docs
 ms.custom: 
 ms.date: 11/04/2016
 ms.reviewer: 
@@ -28,16 +28,17 @@ translation.priority.mt:
 - tr-tr
 - zh-cn
 - zh-tw
-translationtype: Machine Translation
-ms.sourcegitcommit: 5db97d19b1b823388a465bba15d057b30ff0b3ce
-ms.openlocfilehash: d3aa786eb2440112713883ed6c600fc845975127
-ms.lasthandoff: 02/22/2017
+ms.translationtype: MT
+ms.sourcegitcommit: ff8ecec19f8cab04ac2190f9a4a995766f1750bf
+ms.openlocfilehash: f49cd40d8f936b316ee278efde198471c50ebc87
+ms.contentlocale: fr-fr
+ms.lasthandoff: 08/23/2017
 
 ---
 # <a name="idebugidecallbackdisplaymessage"></a>IDebugIDECallback::DisplayMessage
-Envoie la chaîne du message spécifié à la fenêtre de sortie du débogueur.  
+Sends the specified message string to the debugger's output window.  
   
-## <a name="syntax"></a>Syntaxe  
+## <a name="syntax"></a>Syntax  
   
 ```cpp#  
 HRESULT DisplayMessage (  
@@ -45,18 +46,18 @@ HRESULT DisplayMessage (
 );  
 ```  
   
-```c#  
+```cs  
 int DisplayMessage (  
    string szMessage  
 );  
 ```  
   
-#### <a name="parameters"></a>Paramètres  
+#### <a name="parameters"></a>Parameters  
  `szMessage`  
- [in] Chaîne de message à afficher dans la fenêtre de sortie du débogueur.  
+ [in] Message string to display in the debugger's output window.  
   
-## <a name="return-value"></a>Valeur de retour  
- En cas de réussite, retourne `S_OK`; sinon, retourne un code d’erreur.  
+## <a name="return-value"></a>Return Value  
+ If successful, returns `S_OK`; otherwise, returns an error code.  
   
-## <a name="see-also"></a>Voir aussi  
+## <a name="see-also"></a>See Also  
  [IDebugIDECallback](../../../extensibility/debugger/reference/idebugidecallback.md)

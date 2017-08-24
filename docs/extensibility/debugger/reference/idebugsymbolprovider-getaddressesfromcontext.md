@@ -1,70 +1,87 @@
 ---
-title: "IDebugSymbolProvider::GetAddressesFromContext | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "IDebugSymbolProvider::GetAddressesFromContext"
-helpviewer_keywords: 
-  - "IDebugSymbolProvider::GetAddressesFromContext (méthode)"
+title: IDebugSymbolProvider::GetAddressesFromContext | Microsoft Docs
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology:
+- vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords:
+- IDebugSymbolProvider::GetAddressesFromContext
+helpviewer_keywords:
+- IDebugSymbolProvider::GetAddressesFromContext method
 ms.assetid: a3124883-a255-4543-a5ec-e1c7a97beb69
 caps.latest.revision: 11
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 11
----
-# IDebugSymbolProvider::GetAddressesFromContext
-[!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]
+ms.author: gregvanl
+manager: ghogen
+translation.priority.mt:
+- cs-cz
+- de-de
+- es-es
+- fr-fr
+- it-it
+- ja-jp
+- ko-kr
+- pl-pl
+- pt-br
+- ru-ru
+- tr-tr
+- zh-cn
+- zh-tw
+ms.translationtype: MT
+ms.sourcegitcommit: ff8ecec19f8cab04ac2190f9a4a995766f1750bf
+ms.openlocfilehash: cb8b0c2178e9b4ab274db07c48263862b6229a21
+ms.contentlocale: fr-fr
+ms.lasthandoff: 08/23/2017
 
-Cette méthode mappe un contexte de document en un tableau d'adresses de débogage.  
+---
+# <a name="idebugsymbolprovidergetaddressesfromcontext"></a>IDebugSymbolProvider::GetAddressesFromContext
+This method maps a document context into an array of debug addresses.  
   
-## Syntaxe  
+## <a name="syntax"></a>Syntax  
   
 ```cpp#  
-HRESULT GetAddressesFromContext(   
-   IDebugDocumentContext2* pDocContext,  
-   BOOL                    fStatmentOnly,  
-   IEnumDebugAddresses**   ppEnumBegAddresses,  
-   IEnumDebugAddresses**   ppEnumEndAddresses  
+HRESULT GetAddressesFromContext(   
+   IDebugDocumentContext2* pDocContext,  
+   BOOL                    fStatmentOnly,  
+   IEnumDebugAddresses**   ppEnumBegAddresses,  
+   IEnumDebugAddresses**   ppEnumEndAddresses  
 );  
 ```  
   
-```c#  
+```cs  
 int GetAddressesFromContext(  
-   IDebugDocumentContext2  pDocContext,  
-   bool                    fStatmentOnly,  
-   out IEnumDebugAddresses ppEnumBegAddresses,  
-   out IEnumDebugAddresses ppEnumEndAddresses  
+   IDebugDocumentContext2  pDocContext,  
+   bool                    fStatmentOnly,  
+   out IEnumDebugAddresses ppEnumBegAddresses,  
+   out IEnumDebugAddresses ppEnumEndAddresses  
 );  
 ```  
   
-#### Paramètres  
+#### <a name="parameters"></a>Parameters  
  `pDocContext`  
- \[in\]  le contexte de document.  
+ [in] The document context.  
   
  `fStatmentOnly`  
- \[in\]  Si la valeur TRUE, limites que le débogage l'adresse à une seule instruction.  
+ [in] If TRUE, limits the debug addresses to a single statement.  
   
  `ppEnumBegAddresses`  
- \[out\]  Retourne un énumérateur pour les adresses de début de débogage associées à cette instruction ou ligne.  
+ [out] Returns an enumerator for the starting debug addresses associated with this statement or line.  
   
  `ppEnumEndAddresses`  
- \[out\]  Retourne un énumérateur d' [IEnumDebugAddresses](../../../extensibility/debugger/reference/ienumdebugaddresses.md) pour les adresses de débogage de fin associées à cette instruction ou ligne.  
+ [out] Returns an [IEnumDebugAddresses](../../../extensibility/debugger/reference/ienumdebugaddresses.md) enumerator for the ending debug addresses associated with this statement or line.  
   
-## Valeur de retour  
- En cas de réussite, retourne `S_OK`; sinon, retourne un code d'erreur.  
+## <a name="return-value"></a>Return Value  
+ If successful, returns `S_OK`; otherwise, returns an error code.  
   
-## Notes  
- Un contexte de document indique généralement une plage de lignes sources.  Cette méthode fournit les adresses de début et de fin de débogage associées à ces lignes.  Certains langages autorisent les instructions qui couvrent plusieurs lignes, ou des lignes qui contient plusieurs instructions.  Cette méthode fournit une balise pour limiter les adresses de débogage à une seule instruction.  
+## <a name="remarks"></a>Remarks  
+ A document context typically indicates a range of source lines. This method provides the starting and ending debug addresses associated with these lines. Some languages allow statements that span multiple lines, or lines that contains more than one statement. This method provides a flag to limit the debug addresses to a single statement.  
   
- Il est possible qu'une seule instruction peut contenir plusieurs adresses de débogage, comme dans le cas de les modèles.  
+ It is possible for a single statement to have multiple debug addresses, as in the case of templates.  
   
-## Voir aussi  
+## <a name="see-also"></a>See Also  
  [IDebugSymbolProvider](../../../extensibility/debugger/reference/idebugsymbolprovider.md)   
- [GetAddressesFromPosition](../Topic/IDebugSymbolProvider::GetAddressesFromPosition.md)   
+ [GetAddressesFromPosition](../../../extensibility/debugger/reference/idebugsymbolprovider-getaddressesfromposition.md)   
  [IEnumDebugAddresses](../../../extensibility/debugger/reference/ienumdebugaddresses.md)

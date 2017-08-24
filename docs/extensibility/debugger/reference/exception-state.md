@@ -1,140 +1,157 @@
 ---
-title: "EXCEPTION_STATE | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "EXCEPTION_STATE"
-helpviewer_keywords: 
-  - "Énumération de EXCEPTION_STATE"
+title: EXCEPTION_STATE | Microsoft Docs
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology:
+- vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords:
+- EXCEPTION_STATE
+helpviewer_keywords:
+- EXCEPTION_STATE enumeration
 ms.assetid: 597f4f4c-9b70-485c-b5dc-3c2e3aecc664
 caps.latest.revision: 11
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 11
----
-# EXCEPTION_STATE
-[!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]
+ms.author: gregvanl
+manager: ghogen
+translation.priority.mt:
+- cs-cz
+- de-de
+- es-es
+- fr-fr
+- it-it
+- ja-jp
+- ko-kr
+- pl-pl
+- pt-br
+- ru-ru
+- tr-tr
+- zh-cn
+- zh-tw
+ms.translationtype: MT
+ms.sourcegitcommit: ff8ecec19f8cab04ac2190f9a4a995766f1750bf
+ms.openlocfilehash: 32c278218eb5001e370f45e870c06093acfd6d04
+ms.contentlocale: fr-fr
+ms.lasthandoff: 08/23/2017
 
-spécifie l'état d'exception.  
+---
+# <a name="exceptionstate"></a>EXCEPTION_STATE
+Specifies the exception state.  
   
-## Syntaxe  
+## <a name="syntax"></a>Syntax  
   
 ```cpp#  
-enum enum_EXCEPTION_STATE {   
-   EXCEPTION_NONE                          = 0x0000,  
-   EXCEPTION_STOP_FIRST_CHANCE             = 0x0001,  
-   EXCEPTION_STOP_SECOND_CHANCE            = 0x0002,  
-   EXCEPTION_STOP_USER_FIRST_CHANCE        = 0x0010,  
-   EXCEPTION_STOP_USER_UNCAUGHT            = 0x0020,  
-   EXCEPTION_STOP_ALL                      = 0x00FF,  
-   EXCEPTION_CANNOT_BE_CONTINUED           = 0x0100,  
+enum enum_EXCEPTION_STATE {   
+   EXCEPTION_NONE                          = 0x0000,  
+   EXCEPTION_STOP_FIRST_CHANCE             = 0x0001,  
+   EXCEPTION_STOP_SECOND_CHANCE            = 0x0002,  
+   EXCEPTION_STOP_USER_FIRST_CHANCE        = 0x0010,  
+   EXCEPTION_STOP_USER_UNCAUGHT            = 0x0020,  
+   EXCEPTION_STOP_ALL                      = 0x00FF,  
+   EXCEPTION_CANNOT_BE_CONTINUED           = 0x0100,  
   
-   // These are for exception types only  
-   EXCEPTION_CODE_SUPPORTED                = 0x1000,  
-   EXCEPTION_CODE_DISPLAY_IN_HEX           = 0x2000,  
-   EXCEPTION_JUST_MY_CODE_SUPPORTED        = 0x4000,  
-   EXCEPTION_MANAGED_DEBUG_ASSISTANT       = 0x8000,  
+   // These are for exception types only  
+   EXCEPTION_CODE_SUPPORTED                = 0x1000,  
+   EXCEPTION_CODE_DISPLAY_IN_HEX           = 0x2000,  
+   EXCEPTION_JUST_MY_CODE_SUPPORTED        = 0x4000,  
+   EXCEPTION_MANAGED_DEBUG_ASSISTANT       = 0x8000,  
   
-   // These are no longer used  
-   EXCEPTION_STOP_FIRST_CHANCE_USE_PARENT      = 0x0004,  
-   EXCEPTION_STOP_SECOND_CHANCE_USE_PARENT     = 0x0008,  
-   EXCEPTION_STOP_USER_FIRST_CHANCE_USE_PARENT = 0x0040,  
-   EXCEPTION_STOP_USER_UNCAUGHT_USE_PARENT     = 0x0080,  
+   // These are no longer used  
+   EXCEPTION_STOP_FIRST_CHANCE_USE_PARENT      = 0x0004,  
+   EXCEPTION_STOP_SECOND_CHANCE_USE_PARENT     = 0x0008,  
+   EXCEPTION_STOP_USER_FIRST_CHANCE_USE_PARENT = 0x0040,  
+   EXCEPTION_STOP_USER_UNCAUGHT_USE_PARENT     = 0x0080,  
 };  
 typedef DWORD EXCEPTION_STATE;  
 ```  
   
-```c#  
-public enum enum_EXCEPTION_STATE {   
-   EXCEPTION_NONE                          = 0x0000,  
-   EXCEPTION_STOP_FIRST_CHANCE             = 0x0001,  
-   EXCEPTION_STOP_SECOND_CHANCE            = 0x0002,  
-   EXCEPTION_STOP_USER_FIRST_CHANCE        = 0x0010,  
-   EXCEPTION_STOP_USER_UNCAUGHT            = 0x0020,  
-   EXCEPTION_STOP_ALL                      = 0x00FF,  
-   EXCEPTION_CANNOT_BE_CONTINUED           = 0x0100,  
+```cs  
+public enum enum_EXCEPTION_STATE {   
+   EXCEPTION_NONE                          = 0x0000,  
+   EXCEPTION_STOP_FIRST_CHANCE             = 0x0001,  
+   EXCEPTION_STOP_SECOND_CHANCE            = 0x0002,  
+   EXCEPTION_STOP_USER_FIRST_CHANCE        = 0x0010,  
+   EXCEPTION_STOP_USER_UNCAUGHT            = 0x0020,  
+   EXCEPTION_STOP_ALL                      = 0x00FF,  
+   EXCEPTION_CANNOT_BE_CONTINUED           = 0x0100,  
   
-   // These are for exception types only  
-   EXCEPTION_CODE_SUPPORTED                = 0x1000,  
-   EXCEPTION_CODE_DISPLAY_IN_HEX           = 0x2000,  
-   EXCEPTION_JUST_MY_CODE_SUPPORTED        = 0x4000,  
-   EXCEPTION_MANAGED_DEBUG_ASSISTANT       = 0x8000,  
+   // These are for exception types only  
+   EXCEPTION_CODE_SUPPORTED                = 0x1000,  
+   EXCEPTION_CODE_DISPLAY_IN_HEX           = 0x2000,  
+   EXCEPTION_JUST_MY_CODE_SUPPORTED        = 0x4000,  
+   EXCEPTION_MANAGED_DEBUG_ASSISTANT       = 0x8000,  
   
-   // These are no longer used  
-   EXCEPTION_STOP_FIRST_CHANCE_USE_PARENT      = 0x0004,  
-   EXCEPTION_STOP_SECOND_CHANCE_USE_PARENT     = 0x0008,  
-   EXCEPTION_STOP_USER_FIRST_CHANCE_USE_PARENT = 0x0040,  
-   EXCEPTION_STOP_USER_UNCAUGHT_USE_PARENT     = 0x0080,  
+   // These are no longer used  
+   EXCEPTION_STOP_FIRST_CHANCE_USE_PARENT      = 0x0004,  
+   EXCEPTION_STOP_SECOND_CHANCE_USE_PARENT     = 0x0008,  
+   EXCEPTION_STOP_USER_FIRST_CHANCE_USE_PARENT = 0x0040,  
+   EXCEPTION_STOP_USER_UNCAUGHT_USE_PARENT     = 0x0080,  
 };  
 ```  
   
-## Membres  
- EXCEPTION\_NONE  
- Ne arrêtez pas à l'exception.  
+## <a name="members"></a>Members  
+ EXCEPTION_NONE  
+ Do not stop at the exception.  
   
- EXCEPTION\_STOP\_FIRST\_CHANCE  
- Niveau de la première mise à déclencher de l'exception.  En décrivant un événement exception, cet indicateur indique que l'événement exception est un événement exception de première\-chance.  
+ EXCEPTION_STOP_FIRST_CHANCE  
+ Stop at first firing of exception. When describing an exception event, this flag indicates that the exception event is a first-chance exception event.  
   
- EXCEPTION\_STOP\_SECOND\_CHANCE  
- Arrêt à la deuxième mise à déclencher de l'exception.  En décrivant un événement exception, indique que l'événement exception est un événement de seconde chance d'exception.  
+ EXCEPTION_STOP_SECOND_CHANCE  
+ Stop at second firing of exception. When describing an exception event, indicates that the exception event is a second-chance exception event.  
   
- EXCEPTION\_STOP\_USER\_FIRST\_CHANCE  
- Niveau de la première mise à déclencher d'une exception utilisateur.  En décrivant un événement exception, indique que l'événement exception est un événement exception utilisateur de première\-chance.  
+ EXCEPTION_STOP_USER_FIRST_CHANCE  
+ Stop at first firing of a user mode exception. When describing an exception event, indicates that the exception event is a first-chance user exception event.  
   
- EXCEPTION\_STOP\_USER\_UNCAUGHT  
- Arrêtez lorsqu'une exception utilisateur n'est pas interceptée.  En décrivant un événement exception, indique que l'événement exception est un événement non interceptée d'exception utilisateur.  
+ EXCEPTION_STOP_USER_UNCAUGHT  
+ Stop when a user mode exception is not caught. When describing an exception event, indicates that the exception event is an uncaught user mode exception event.  
   
- EXCEPTION\_STOP\_ALL  
- arrêt sur toute exception.  Non utilisé en décrivant un événement exception.  
+ EXCEPTION_STOP_ALL  
+ Stop on any exception. Not used when describing an exception event.  
   
- \_BE\_CONTINUED D'EXCEPTION\_CAN NOT  
- En décrivant un événement exception, indique que l'exception ne peut se poursuivre de.  
+ EXCEPTION_CANNOT_BE_CONTINUED  
+ When describing an exception event, indicates that the exception cannot be continued from.  
   
- EXCEPTION\_CODE\_SUPPORTED  
- Indique que l'exception a code la prise en charge.  utilisé en affichant une exception  
+ EXCEPTION_CODE_SUPPORTED  
+ Indicates that the exception has code supporting it. Used in displaying an exception  
   
- EXCEPTION\_CODE\_DISPLAY\_IN\_HEX  
- Indique que le code d'exception doit être affiché au format hexadécimal.  utilisé en affichant une exception.  
+ EXCEPTION_CODE_DISPLAY_IN_HEX  
+ Indicates that the exception code should be displayed in hexadecimal. Used in displaying an exception.  
   
- EXCEPTION\_JUST\_MY\_CODE\_SUPPORTED  
- Indique que le code d'exception prend en charge JustMyCode.  utilisé en affichant une exception.  
+ EXCEPTION_JUST_MY_CODE_SUPPORTED  
+ Indicates that the exception code supports JustMyCode. Used in displaying an exception.  
   
- EXCEPTION\_MANAGED\_DEBUG\_ASSISTANT  
- Indique que le débogueur de code managé doit gérer des exceptions.  sinon défini, le débogueur par défaut gère les exceptions.  Cela est passé à la méthode d' [SetAllExceptions](../../../extensibility/debugger/reference/idebugengine3-setallexceptions.md) et pas utilisé dans la structure d' [EXCEPTION\_INFO](../../../extensibility/debugger/reference/exception-info.md) .  
+ EXCEPTION_MANAGED_DEBUG_ASSISTANT  
+ Indicates that the managed code debugger should handle exceptions. If not set, the default debugger handles the exceptions. This is passed to the [SetAllExceptions](../../../extensibility/debugger/reference/idebugengine3-setallexceptions.md) method and not used in the [EXCEPTION_INFO](../../../extensibility/debugger/reference/exception-info.md) structure.  
   
- EXCEPTION\_STOP\_FIRST\_CHANCE\_USE\_PARENT  
- OBSOLÈTE, NE SUR UTILISEZ NOT.  
+ EXCEPTION_STOP_FIRST_CHANCE_USE_PARENT  
+ OBSOLETE, DO NOT USE.  
   
- EXCEPTION\_STOP\_SECOND\_CHANCE\_USE\_PARENT  
- OBSOLÈTE, NE SUR UTILISEZ NOT.  
+ EXCEPTION_STOP_SECOND_CHANCE_USE_PARENT  
+ OBSOLETE, DO NOT USE.  
   
- EXCEPTION\_STOP\_USER\_FIRST\_CHANCE\_USE\_PARENT  
- OBSOLÈTE, NE SUR UTILISEZ NOT.  
+ EXCEPTION_STOP_USER_FIRST_CHANCE_USE_PARENT  
+ OBSOLETE, DO NOT USE.  
   
- EXCEPTION\_STOP\_USER\_SECOND\_CHANCE\_USE\_PARENT  
- OBSOLÈTE, NE SUR UTILISEZ NOT.  
+ EXCEPTION_STOP_USER_SECOND_CHANCE_USE_PARENT  
+ OBSOLETE, DO NOT USE.  
   
-## Notes  
- Utilisé comme membre d' `dwState` de la structure d' [EXCEPTION\_INFO](../../../extensibility/debugger/reference/exception-info.md) pour indiquer l'état de l'exception et ce qui peut être fait le concernant.  
+## <a name="remarks"></a>Remarks  
+ Used as the `dwState` member of the [EXCEPTION_INFO](../../../extensibility/debugger/reference/exception-info.md) structure to indicate the state of the exception and what can be done about it.  
   
- ces valeurs sont également passées à la méthode d' [SetAllExceptions](../../../extensibility/debugger/reference/idebugengine3-setallexceptions.md) pour définir l'état de toutes les exceptions.  
+ These values are also passed to the [SetAllExceptions](../../../extensibility/debugger/reference/idebugengine3-setallexceptions.md) method to set the state of all exceptions.  
   
- Ces indicateurs peuvent être combinées avec une opération de bits OR.  
+ These flags may be combined with a bitwise OR.  
   
-## Configuration requise  
- en\-tête : msdbg.h  
+## <a name="requirements"></a>Requirements  
+ Header: msdbg.h  
   
- l'espace de noms : Microsoft.VisualStudio.Debugger.Interop  
+ Namespace: Microsoft.VisualStudio.Debugger.Interop  
   
- Assembly : Microsoft.VisualStudio.Debugger.Interop.dll  
+ Assembly: Microsoft.VisualStudio.Debugger.Interop.dll  
   
-## Voir aussi  
- [Énumérations](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)   
- [EXCEPTION\_INFO](../../../extensibility/debugger/reference/exception-info.md)   
+## <a name="see-also"></a>See Also  
+ [Enumerations](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)   
+ [EXCEPTION_INFO](../../../extensibility/debugger/reference/exception-info.md)   
  [SetAllExceptions](../../../extensibility/debugger/reference/idebugengine3-setallexceptions.md)

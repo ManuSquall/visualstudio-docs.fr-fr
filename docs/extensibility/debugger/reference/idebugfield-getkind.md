@@ -1,5 +1,5 @@
 ---
-title: IDebugField::GetKind | Documents Microsoft
+title: IDebugField::GetKind | Microsoft Docs
 ms.custom: 
 ms.date: 11/04/2016
 ms.reviewer: 
@@ -30,16 +30,17 @@ translation.priority.mt:
 - tr-tr
 - zh-cn
 - zh-tw
-translationtype: Machine Translation
-ms.sourcegitcommit: 5db97d19b1b823388a465bba15d057b30ff0b3ce
-ms.openlocfilehash: 723b2850a87c4da0c3e7b531c1b0cbf308ab2e2d
-ms.lasthandoff: 02/22/2017
+ms.translationtype: MT
+ms.sourcegitcommit: ff8ecec19f8cab04ac2190f9a4a995766f1750bf
+ms.openlocfilehash: cfeb62edc3de7e0a494ca8446903a2845a54e5f3
+ms.contentlocale: fr-fr
+ms.lasthandoff: 08/23/2017
 
 ---
 # <a name="idebugfieldgetkind"></a>IDebugField::GetKind
-Cette méthode obtient le type de champ.  
+This method gets the kind of field.  
   
-## <a name="syntax"></a>Syntaxe  
+## <a name="syntax"></a>Syntax  
   
 ```cpp#  
 HRESULT GetKind(   
@@ -47,19 +48,19 @@ HRESULT GetKind(
 );  
 ```  
   
-```c#  
+```cs  
 int GetKind(  
    out enum_FIELD_KIND pdwKind  
 );  
 ```  
   
-#### <a name="parameters"></a>Paramètres  
+#### <a name="parameters"></a>Parameters  
  `pdwKind`  
- [out] Retourne le type de champ sous la forme d’une combinaison de [FIELD_KIND](../../../extensibility/debugger/reference/field-kind.md) constantes.  
+ [out] Returns the kind of field as a combination of [FIELD_KIND](../../../extensibility/debugger/reference/field-kind.md) constants.  
   
-## <a name="return-value"></a>Valeur de retour  
- En cas de réussite, retourne `S_OK`; sinon, retourne un code d’erreur.  
+## <a name="return-value"></a>Return Value  
+ If successful, returns `S_OK`; otherwise, returns an error code.  
   
-## <a name="see-also"></a>Voir aussi  
+## <a name="see-also"></a>See Also  
  [IDebugField](../../../extensibility/debugger/reference/idebugfield.md)   
  [FIELD_KIND](../../../extensibility/debugger/reference/field-kind.md)

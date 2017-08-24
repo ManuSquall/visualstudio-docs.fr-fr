@@ -1,85 +1,250 @@
 ---
-title: "Manifeste au Code | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+title: Manifest to Code | Microsoft Docs
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.tgt_pltfrm: 
+ms.topic: article
 ms.assetid: 17ecacea-397d-4a97-b003-01bd5d56e936
 caps.latest.revision: 4
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 4
----
-# Manifeste au Code
-[!INCLUDE[vs2017banner](../../code-quality/includes/vs2017banner.md)]
+ms.author: gregvanl
+manager: ghogen
+translation.priority.mt:
+- cs-cz
+- de-de
+- es-es
+- fr-fr
+- it-it
+- ja-jp
+- ko-kr
+- pl-pl
+- pt-br
+- ru-ru
+- tr-tr
+- zh-cn
+- zh-tw
+ms.translationtype: MT
+ms.sourcegitcommit: ff8ecec19f8cab04ac2190f9a4a995766f1750bf
+ms.openlocfilehash: ba7136871f7c4d2ecbe323348ae062264525bf45
+ms.contentlocale: fr-fr
+ms.lasthandoff: 08/23/2017
 
-Le manifeste de l'outil du Code est une application console qui utilise un fichier de .imagemanifest pour le Service d'images Visual Studio et génère un wrapper ou les fichiers pour faire référence à des valeurs du manifeste de l'image en C\+\+, c\#, VB ou fichiers .vsct des extensions Visual Studio. Cet outil génère des fichiers de wrapper qui peuvent être utilisées pour le demandeur d'images à partir de Visual Studio Image celui\-ci directement ou en passant les valeurs de manifeste via les API si le code ne gère pas un de sa propre interface utilisateur et le rendu.  
+---
+# <a name="manifest-to-code"></a>Manifest to Code
+The Manifest to Code tool is a console application that takes an .imagemanifest file for the Visual Studio Image Service and generates a wrapper file or files for referencing the image manifest's values in C++, C#, VB, or .vsct files for Visual Studio extensions. This tool generates wrapper files that can be used for requesting images from the Visual Studio Image Service directly, or for passing the manifest values through APIs if the code does not handle any of its own UI and rendering.  
   
-## L'utilisation de l'outil  
- **Syntaxe**  
+## <a name="how-to-use-the-tool"></a>How to use the tool  
+ **Syntax**  
   
- ManifestToCode \/manifest : \< fichier de manifeste de l'Image \> \/language : \< Code langue \>\< arguments facultatifs \>  
+ ManifestToCode /manifest:\<Image Manifest file> /language:\<Code Language> \<Optional Args>  
   
  **Arguments**  
   
 ||||  
 |-|-|-|  
-|**Nom du commutateur**|**Notes**|**Obligatoire ou facultatif**|  
-|\/manifest|Le chemin d'accès au manifeste de l'image à utiliser pour créer ou mettre à jour le wrapper de code.|Obligatoire|  
-|\/Language|La langue à utiliser pour générer le wrapper de code.<br /><br /> Valeurs valides : CPP, C\+\+, CS, CSharp, c\#, VB ou VSCT les valeurs respectent la casse.<br /><br /> Le langage VSCT option, \/monikerClass, \/classAccess et\/namespace options sont ignorées.|Obligatoire|  
-|\/imageIdClass|Le nom de l'imageIdClass et le fichier associé, créé par l'outil. Pour l'option de langage C\+\+, seuls les fichiers .h sont générés.<br /><br /> Par défaut : \< chemin d'accès manifeste \> \\MyImageIds. \< Lang Ext \>|Facultatif|  
-|\/monikerClass|Le nom de la monikerClass et le fichier associé, créé par l'outil. Pour l'option de langage C\+\+, seuls les fichiers .h sont générés. Cela est ignoré pour la langue VSCT.<br /><br /> Par défaut : \< chemin d'accès manifeste \> \\MyMonikers. \< Lang Ext \>|Facultatif|  
-|\/classAccess|Le modificateur d'accès pour l'imageIdClass et le monikerClass. Assurez\-vous que le modificateur d'accès est valide pour la langue donnée. Ceci est ignoré pour l'option de langage VSCT.<br /><br /> Par défaut : Public|Facultatif|  
-|\/ namespace|L'espace de noms défini dans le wrapper de code. Ceci est ignoré pour l'option de langage VSCT. Soit «. » ou '::' sont des séparateurs d'espace de noms valide, quel que soit l'option de langage choisi.<br /><br /> Par défaut : MyImages|Facultatif|  
-|\/noLogo|Définition de cet indicateur, les informations de copyright et de produit de l'impression s'arrête.|Facultatif|  
-|\/?|Imprimer des informations d'aide.|Facultatif|  
-|\/help|Imprimer des informations d'aide.|Facultatif|  
+|**Switch name**|**Notes**|**Required or Optional**|  
+|/manifest|The path to the image manifest to use to create or update the code wrapper.|Required|  
+|/language|The language in which to generate the code wrapper.<br /><br /> Valid values: CPP, C++, CS, CSharp, C#, VB, or VSCT The values are case-insensitive.<br /><br /> For the VSCT language option, the /monikerClass, /classAccess, and /namespace options are ignored.|Required|  
+|/imageIdClass|The name of the imageIdClass and the associated file created by the tool. For the C++ language option, only .h files are generated.<br /><br /> Default: \<Manifest Path>\MyImageIds.\<Lang Ext>|Optional|  
+|/monikerClass|The name of the monikerClass and the associated file created by the tool. For the C++ language option, only .h files are generated. This is ignored for the VSCT language.<br /><br /> Default: \<Manifest Path>\MyMonikers.\<Lang Ext>|Optional|  
+|/classAccess|The access modifier for the imageIdClass and the monikerClass. Make sure the access modifier is valid for the given language. This is ignored for the VSCT language option.<br /><br /> Default: Public|Optional|  
+|/namespace|The namespace defined in the code wrapper. This is ignored for the VSCT language option. Either '.' or '::' are valid namespace separators, regardless of the chosen language option.<br /><br /> Default: MyImages|Optional|  
+|/noLogo|Setting this flag stops product and copyright information from printing.|Optional|  
+|/?|Print out Help information.|Optional|  
+|/help|Print out Help information.|Optional|  
   
- **Exemples**  
+ **Examples**  
   
--   \/ Language : CSharp de ManifestToCode \/manifest:D:\\MyManifest.imagemanifest  
+-   ManifestToCode /manifest:D:\MyManifest.imagemanifest                /language:CSharp  
   
--   \/ Namespace de ManifestToCode \/manifest:D:\\MyManifest.imagemanifest \/language:C\+\+ : mon:: espace de noms \/imageIdClass:MyImageIds \/monikerClass:MyMonikers \/classAccess:friend  
+-   ManifestToCode /manifest:D:\MyManifest.imagemanifest                /language:C++                /namespace:My::Namespace                /imageIdClass:MyImageIds                /monikerClass:MyMonikers                /classAccess:friend  
   
--   ManifestToCode \/manifest:D:\\MyManifest.imagemanifest \/language:VSCT \/imageIdClass:MyImageIds  
+-   ManifestToCode /manifest:D:\MyManifest.imagemanifest                /language:VSCT                /imageIdClass:MyImageIds  
   
-## Notes  
+## <a name="notes"></a>Notes  
   
--   Nous vous recommandons d'utiliser cet outil avec des manifestes de l'image qui ont été générés par le manifeste de l'outil de ressources.  
+-   We recommend that you use this tool with image manifests that were generated by the Manifest from Resources tool.  
   
--   L'outil examine uniquement les entrées de symbole pour générer les wrappers de code. Si un manifeste de l'image ne contient aucuns symboles, les wrappers de code généré sera vides. S'il existe une image ou un ensemble d'images dans le manifeste de l'image qui n'utilisent pas de symboles, puis elles sont exclues du wrapper de code.  
+-   The tool only looks at symbol entries to generate the code wrappers. If an image manifest contains no symbols, then the generated code wrappers will be empty. If there is an image or set of images in the image manifest that do not use symbols, then they will be excluded from the code wrapper.  
   
-## Résultat de l'exemple  
- **Wrappers c\#**  
+## <a name="sample-output"></a>Sample output  
+ **C# wrappers**  
   
- Une paire d'ID de l'image simple et le moniker de l'image des classes pour c\# sera similaire à du code ci\-dessous :  
+ A pair of simple image ID and image moniker classes for C# will be similar to the below code:  
   
-```c#  
-//----------------------------------------------------------------------------- // <auto-generated> //     This code was generated by the ManifestToCode tool. //     Tool Version: 14.0.15198 // </auto-generated> //----------------------------------------------------------------------------- using System; namespace MyImages { public static class MyImageIds { public static readonly Guid AssetsGuid = new Guid("{442d8739-efde-46a4-8f29-e3a1e5e7f8b4}"); public const int MyImage1 = 0; public const int MyImage2 = 1; } } //----------------------------------------------------------------------------- // <auto-generated> //     This code was generated by the ManifestToCode tool. //     Tool Version: 14.0.15198 // </auto-generated> //----------------------------------------------------------------------------- using Microsoft.VisualStudio.Imaging.Interop; namespace MyImages { public static class MyMonikers { public static ImageMoniker MyImage1 { get { return new ImageMoniker { Guid = MyImageIds.AssetsGuid, Id = MyImageIds.MyImage1 }; } } public static ImageMoniker MyImage2 { get { return new ImageMoniker { Guid = MyImageIds.AssetsGuid, Id = MyImageIds.MyImage2 }; } } } }  
+```cs  
+//-----------------------------------------------------------------------------  
+// <auto-generated>  
+//     This code was generated by the ManifestToCode tool.  
+//     Tool Version: 14.0.15198  
+// </auto-generated>  
+//-----------------------------------------------------------------------------  
+  
+using System;  
+  
+namespace MyImages  
+{  
+    public static class MyImageIds  
+    {  
+        public static readonly Guid AssetsGuid = new Guid("{442d8739-efde-46a4-8f29-e3a1e5e7f8b4}");  
+  
+        public const int MyImage1 = 0;  
+        public const int MyImage2 = 1;  
+    }  
+}  
+//-----------------------------------------------------------------------------  
+// <auto-generated>  
+//     This code was generated by the ManifestToCode tool.  
+//     Tool Version: 14.0.15198  
+// </auto-generated>  
+//-----------------------------------------------------------------------------  
+  
+using Microsoft.VisualStudio.Imaging.Interop;  
+  
+namespace MyImages  
+{  
+    public static class MyMonikers  
+    {  
+        public static ImageMoniker MyImage1 { get { return new ImageMoniker { Guid = MyImageIds.AssetsGuid, Id = MyImageIds.MyImage1 }; } }  
+        public static ImageMoniker MyImage2 { get { return new ImageMoniker { Guid = MyImageIds.AssetsGuid, Id = MyImageIds.MyImage2 }; } }  
+    }  
+}  
 ```  
   
- **Wrappers C\+\+**  
+ **C++ wrappers**  
   
- Une paire d'ID de l'image simple et le moniker de l'image des classes pour C\+\+ sera similaire à du code ci\-dessous :  
+ A pair of simple image ID and image moniker classes for C++ will be similar to the below code:  
   
 ```cpp  
-//----------------------------------------------------------------------------- // <auto-generated> //     This code was generated by the ManifestToCode tool. //     Tool Version: 14.0.15198 // </auto-generated> //----------------------------------------------------------------------------- #pragma once #include <guiddef.h> namespace MyImages { class MyImageIds { public: static const GUID AssetsGuid; static const int MyImage1 = 0; static const int MyImage2 = 1; }; __declspec(selectany) const GUID MyImageIds::AssetsGuid = {0x442d8739,0xefde,0x46a4,{0x8f,0x29,0xe3,0xa1,0xe5,0xe7,0xf8,0xb4}}; } //----------------------------------------------------------------------------- // <auto-generated> //     This code was generated by the ManifestToCode tool. //     Tool Version: 14.0.15198 // </auto-generated> //----------------------------------------------------------------------------- #pragma once #include "ImageParameters140.h" #include "MyImageIds.h" namespace MyImages { class MyMonikers { public: static const ImageMoniker MyImage1; static const ImageMoniker MyImage2; }; __declspec(selectany) const ImageMoniker MyMonikers::MyImage1 = { MyImageIds::AssetsGuid, MyImageIds::MyImage1 }; __declspec(selectany) const ImageMoniker MyMonikers::MyImage2 = { MyImageIds::AssetsGuid, MyImageIds::MyImage2 }; }  
+//-----------------------------------------------------------------------------  
+// <auto-generated>  
+//     This code was generated by the ManifestToCode tool.  
+//     Tool Version: 14.0.15198  
+// </auto-generated>  
+//-----------------------------------------------------------------------------  
+  
+#pragma once  
+  
+#include <guiddef.h>  
+  
+namespace MyImages {  
+  
+class MyImageIds {  
+public:  
+  
+    static const GUID AssetsGuid;  
+  
+    static const int MyImage1 = 0;  
+    static const int MyImage2 = 1;  
+  
+};  
+  
+__declspec(selectany) const GUID MyImageIds::AssetsGuid = {0x442d8739,0xefde,0x46a4,{0x8f,0x29,0xe3,0xa1,0xe5,0xe7,0xf8,0xb4}};  
+  
+}  
+//-----------------------------------------------------------------------------  
+// <auto-generated>  
+//     This code was generated by the ManifestToCode tool.  
+//     Tool Version: 14.0.15198  
+// </auto-generated>  
+//-----------------------------------------------------------------------------  
+  
+#pragma once  
+  
+#include "ImageParameters140.h"  
+#include "MyImageIds.h"  
+  
+namespace MyImages {  
+  
+class MyMonikers {  
+public:  
+  
+    static const ImageMoniker MyImage1;  
+    static const ImageMoniker MyImage2;  
+  
+};  
+  
+__declspec(selectany) const ImageMoniker MyMonikers::MyImage1 = { MyImageIds::AssetsGuid, MyImageIds::MyImage1 };  
+__declspec(selectany) const ImageMoniker MyMonikers::MyImage2 = { MyImageIds::AssetsGuid, MyImageIds::MyImage2 };  
+  
+}  
 ```  
   
- **Wrappers de Visual Basic**  
+ **Visual Basic wrappers**  
   
- Une paire d'ID de l'image simple et le moniker de l'image des classes de Visual Basic doit être similaire à du code ci\-dessous :  
+ A pair of simple image ID and image moniker classes for Visual Basic will be similar to the below code:  
   
 ```vb  
-' ----------------------------------------------------------------------------- '  <auto-generated> '      This code was generated by the ManifestToCode tool. '      Tool Version: 14.0.15198 '  </auto-generated> ' ----------------------------------------------------------------------------- Imports System Namespace MyImages Public Module MyImageIds Public Shared ReadOnly AssetsGuid As Guid = New Guid("{442d8739-efde-46a4-8f29-e3a1e5e7f8b4}") Public Const MyImage1 As Integer = 0 Public Const MyImage2 As Integer = 1 End Module End Namespace ' ----------------------------------------------------------------------------- '  <auto-generated> '      This code was generated by the ManifestToCode tool. '      Tool Version: 14.0.15198 '  </auto-generated> ' ----------------------------------------------------------------------------- Imports Microsoft.VisualStudio.Imaging.Interop Namespace MyImages Public Module MyMonikers Public Readonly Property MyImage1 Get Return New ImageMoniker With {.Guid = MyImageIds.AssetsGuid, .Id = MyImageIds.MyImage1} End Get End Property Public Readonly Property MyImage2 Get Return New ImageMoniker With {.Guid = MyImageIds.AssetsGuid, .Id = MyImageIds.MyImage2} End Get End Property End Module End Namespace  
+' -----------------------------------------------------------------------------  
+'  <auto-generated>  
+'      This code was generated by the ManifestToCode tool.  
+'      Tool Version: 14.0.15198  
+'  </auto-generated>  
+' -----------------------------------------------------------------------------  
+  
+Imports System  
+  
+Namespace MyImages  
+  
+    Public Module MyImageIds  
+  
+        Public Shared ReadOnly AssetsGuid As Guid = New Guid("{442d8739-efde-46a4-8f29-e3a1e5e7f8b4}")  
+  
+        Public Const MyImage1 As Integer = 0  
+        Public Const MyImage2 As Integer = 1  
+  
+    End Module  
+  
+End Namespace  
+' -----------------------------------------------------------------------------  
+'  <auto-generated>  
+'      This code was generated by the ManifestToCode tool.  
+'      Tool Version: 14.0.15198  
+'  </auto-generated>  
+' -----------------------------------------------------------------------------  
+  
+Imports Microsoft.VisualStudio.Imaging.Interop  
+  
+Namespace MyImages  
+  
+    Public Module MyMonikers  
+  
+        Public Readonly Property MyImage1  
+            Get  
+                Return New ImageMoniker With {.Guid = MyImageIds.AssetsGuid, .Id = MyImageIds.MyImage1}  
+            End Get  
+        End Property  
+  
+        Public Readonly Property MyImage2  
+            Get  
+                Return New ImageMoniker With {.Guid = MyImageIds.AssetsGuid, .Id = MyImageIds.MyImage2}  
+            End Get  
+        End Property  
+  
+    End Module  
+  
+End Namespace  
 ```  
   
- **Wrapper VSCT**  
+ **VSCT wrapper**  
   
- Un ensemble d'ID d'image d'un fichier .vsct sera similaire à ceci :  
+ A set of image IDs for a .vsct file will be similar to this:  
   
 ```xml  
-<?xml version='1.0' encoding='utf-8'?> <!-- [auto-generated] This code was generated by the ManifestToCode tool. Tool Version: 14.0.15198 [/auto-generated] --> <CommandTable xmlns="http://schemas.microsoft.com/VisualStudio/2005-10-18/CommandTable"> <Symbols> <GuidSymbol name="AssetsGuid" value="{442d8739-efde-46a4-8f29-e3a1e5e7f8b4}"> <IDSymbol name="MyImage1" value="0" /> <IDSymbol name="MyImage2" value="1" /> </GuidSymbol> </Symbols> </CommandTable>  
+<?xml version='1.0' encoding='utf-8'?>  
+<!--  
+ [auto-generated]  
+     This code was generated by the ManifestToCode tool.  
+     Tool Version: 14.0.15198  
+ [/auto-generated]  
+-->  
+<CommandTable xmlns="http://schemas.microsoft.com/VisualStudio/2005-10-18/CommandTable">  
+  <Symbols>  
+    <GuidSymbol name="AssetsGuid" value="{442d8739-efde-46a4-8f29-e3a1e5e7f8b4}">  
+      <IDSymbol name="MyImage1" value="0" />  
+      <IDSymbol name="MyImage2" value="1" />  
+    </GuidSymbol>  
+  </Symbols>  
+</CommandTable>  
 ```

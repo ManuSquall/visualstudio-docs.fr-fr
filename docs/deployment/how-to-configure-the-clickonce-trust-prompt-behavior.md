@@ -1,91 +1,108 @@
 ---
-title: "How to: Configure the ClickOnce Trust Prompt Behavior | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-deployment"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-dev_langs: 
-  - "VB"
-  - "CSharp"
-  - "C++"
-helpviewer_keywords: 
-  - "ClickOnce deployment, install without prompting"
-  - "deploying applications [ClickOnce], trust prompt"
-  - "ClickOnce applications, install without prompting"
-  - "ClickOnce applications, trust prompt"
-  - "ClickOnce deployment, trust prompt"
+title: 'How to: Configure the ClickOnce Trust Prompt Behavior | Microsoft Docs'
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology:
+- vs-ide-deployment
+ms.tgt_pltfrm: 
+ms.topic: article
+dev_langs:
+- VB
+- CSharp
+- C++
+helpviewer_keywords:
+- ClickOnce deployment, install without prompting
+- deploying applications [ClickOnce], trust prompt
+- ClickOnce applications, install without prompting
+- ClickOnce applications, trust prompt
+- ClickOnce deployment, trust prompt
 ms.assetid: cc04fa75-012b-47c9-9347-f4216be23cf2
 caps.latest.revision: 11
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
-caps.handback.revision: 11
----
-# How to: Configure the ClickOnce Trust Prompt Behavior
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
+author: stevehoag
+ms.author: shoag
+manager: wpickett
+translation.priority.ht:
+- cs-cz
+- de-de
+- es-es
+- fr-fr
+- it-it
+- ja-jp
+- ko-kr
+- pl-pl
+- pt-br
+- ru-ru
+- tr-tr
+- zh-cn
+- zh-tw
+ms.translationtype: HT
+ms.sourcegitcommit: ff8ecec19f8cab04ac2190f9a4a995766f1750bf
+ms.openlocfilehash: 443546b91a6e0c878882d86111e9d1ad173d19f2
+ms.contentlocale: fr-fr
+ms.lasthandoff: 08/23/2017
 
-Vous pouvez configurer l'invite d'approbation ClickOnce pour contrôler si les utilisateurs finaux peuvent installer des applications ClickOnce, telles que les applications Windows Forms, les applications Windows Presentation Foundation, les applications console, les applications de navigateur WPF et les solutions Office.  Vous configurez l'invite d'approbation en définissant des clés de Registre sur l'ordinateur de chaque utilisateur final.  
+---
+# <a name="how-to-configure-the-clickonce-trust-prompt-behavior"></a>How to: Configure the ClickOnce Trust Prompt Behavior
+You can configure the ClickOnce trust prompt to control whether end users are given the option of installing ClickOnce applications, such as Windows Forms applications, Windows Presentation Foundation applications, console applications, WPF browser applications, and Office solutions. You configure the trust prompt by setting registry keys on each end user's computer.  
   
- Le tableau suivant affiche les options de configuration qui peuvent être appliquées à chacune des cinq zones \(Internet, UntrustedSites, MyComputer, LocalIntranet et TrustedSites\).  
+ The following table shows the configuration options that can be applied to each of the five zones (Internet, UntrustedSites, MyComputer, LocalIntranet, and TrustedSites).  
   
-|Option|Valeur du paramètre du Registre|Description|  
-|------------|-------------------------------------|-----------------|  
-|Activer l'invite d'approbation.|`Activé`|L'invite d'approbation ClickOnce s'affiche afin que les utilisateurs finaux puissent approuver les applications ClickOnce.|  
-|Restreindre l'invite d'approbation.|`AuthenticodeRequired`|L'invite d'approbation ClickOnce s'affiche uniquement si les applications ClickOnce sont signées avec un certificat qui identifie l'éditeur.|  
-|Désactiver l'invite d'approbation.|`Disabled`|L'invite d'approbation ClickOnce ne s'affiche pas pour les applications ClickOnce qui ne sont pas signées avec un certificat explicitement approuvé.|  
+|Option|Registry setting value|Description|  
+|------------|----------------------------|-----------------|  
+|Enable the trust prompt.|`Enabled`|The ClickOnce trust prompt is display so that end users can grant trust to ClickOnce applications.|  
+|Restrict the trust prompt.|`AuthenticodeRequired`|The ClickOnce trust prompt is only displayed if ClickOnce applications are signed with a certificate that identifies the publisher.|  
+|Disable the trust prompt.|`Disabled`|The ClickOnce trust prompt is not displayed for any ClickOnce applications that are not signed with an explicitly trusted certificate.|  
   
- Le tableau suivant indique le comportement par défaut pour chaque zone.  La colonne Applications fait référence aux applications Windows Forms, aux applications Windows Presentation Foundation, aux applications de navigateur WPF et aux applications console.  
+ The following table shows the default behavior for each zone. The Applications column refers to Windows Forms applications, Windows Presentation Foundation applications, WPF browser applications, and console applications.  
   
-|Zone|Applications|solutions Office|  
+|Zone|Applications|Office solutions|  
 |----------|------------------|----------------------|  
-|`MyComputer`|`Activé`|`Activé`|  
-|`LocalIntranet`|`Activé`|`Activé`|  
-|`TrustedSites`|`Activé`|`Activé`|  
-|`Internet`|`Activé`|`AuthenticodeRequired`|  
+|`MyComputer`|`Enabled`|`Enabled`|  
+|`LocalIntranet`|`Enabled`|`Enabled`|  
+|`TrustedSites`|`Enabled`|`Enabled`|  
+|`Internet`|`Enabled`|`AuthenticodeRequired`|  
 |`UntrustedSites`|`Disabled`|`Disabled`|  
   
- Vous pouvez substituer ces paramètres en activant, restreignant ou désactivant l'invite d'approbation ClickOnce.  
+ You can override these settings by enabling, restricting, or disabling the ClickOnce trust prompt.  
   
-## Activation de l'invite d'approbation ClickOnce  
- Activez l'invite d'approbation pour une zone si vous voulez que les utilisateurs finaux aient la possibilité d'installer et d'exécuter les applications ClickOnce provenant de cette zone.  
+## <a name="enabling-the-clickonce-trust-prompt"></a>Enabling the ClickOnce Trust Prompt  
+ Enable the trust prompt for a zone when you want end users to be presented with the option of installing and running any ClickOnce application that comes from that zone.  
   
-#### Pour activer l'invite d'approbation ClickOnce à l'aide de l'Éditeur du Registre  
+#### <a name="to-enable-the-clickonce-trust-prompt-by-using-the-registry-editor"></a>To enable the ClickOnce trust prompt by using the registry editor  
   
-1.  Ouvrez l'Éditeur du Registre :  
+1.  Open the registry editor:  
   
-    1.  Cliquez sur **Démarrer**, puis sur **Exécuter**.  
+    1.  Click **Start**, and then click **Run**.  
   
-    2.  Dans la zone **Ouvrir**, tapez `regedit32`, puis cliquez sur **OK**.  
+    2.  In the **Open** box, type `regedit32`, and then click **OK**.  
   
-2.  Recherchez la clé de Registre suivante :  
+2.  Find the following registry key:  
   
-     \\HKEY\_LOCAL\_MACHINE\\SOFTWARE\\MICROSOFT\\.NETFramework\\Security\\TrustManager\\PromptingLevel  
+     \HKEY_LOCAL_MACHINE\SOFTWARE\MICROSOFT\\.NETFramework\Security\TrustManager\PromptingLevel  
   
-     Si cette clé n'existe pas, créez\-la.  
+     If the key does not exist, create it.  
   
-3.  Ajoutez les sous\-clés suivantes en tant que **Valeur chaîne**, si elles n'existent pas encore, avec les valeurs associées présentées dans le tableau suivant.  
+3.  Add the following subkeys as **String Value**, if they do not already exist, with the associated values shown in the following table.  
   
-    |Sous\-clé Valeur chaîne|Valeur|  
-    |-----------------------------|------------|  
-    |`Internet`|`Activé`|  
+    |String Value subkey|Value|  
+    |-------------------------|-----------|  
+    |`Internet`|`Enabled`|  
     |`UntrustedSites`|`Disabled`|  
-    |`MyComputer`|`Activé`|  
-    |`LocalIntranet`|`Activé`|  
-    |`TrustedSites`|`Activé`|  
+    |`MyComputer`|`Enabled`|  
+    |`LocalIntranet`|`Enabled`|  
+    |`TrustedSites`|`Enabled`|  
   
-     Pour les solutions Office, `Internet` a par défaut la valeur `AuthenticodeRequired` et `UntrustedSites` a la valeur `Disabled`.  Pour toutes les autres solutions, `Internet` a par défaut la valeur `Enabled`.  
+     For Office solutions, `Internet` has the default value `AuthenticodeRequired` and `UntrustedSites` has the value `Disabled`. For all others, `Internet` has the default value `Enabled`.  
   
-#### Pour activer l'invite d'approbation ClickOnce par programmation  
+#### <a name="to-enable-the-clickonce-trust-prompt-programmatically"></a>To enable the ClickOnce trust prompt programmatically  
   
-1.  Créez une application console Visual Basic ou Visual C\# dans Visual Studio.  
+1.  Create a Visual Basic or Visual C# console application in Visual Studio.  
   
-2.  Ouvrez le fichier Program.vb ou Program.cs à modifier et ajoutez le code suivant.  
+2.  Open the Program.vb or Program.cs file for editing and add the following code.  
   
-    ```vb#  
+    ```vb  
     Dim key As Microsoft.Win32.RegistryKey  
     key = Microsoft.Win32.Registry.LocalMachine.CreateSubKey("SOFTWARE\MICROSOFT\.NETFramework\Security\TrustManager\PromptingLevel")  
     key.SetValue("MyComputer", "Enabled")  
@@ -96,7 +113,7 @@ Vous pouvez configurer l'invite d'approbation ClickOnce pour contrôler si les u
     key.Close()  
     ```  
   
-    ```c#  
+    ```cs  
     Microsoft.Win32.RegistryKey key;  
     key = Microsoft.Win32.Registry.LocalMachine.CreateSubKey("SOFTWARE\\MICROSOFT\\.NETFramework\\Security\\TrustManager\\PromptingLevel");  
     key.SetValue("MyComputer", "Enabled");  
@@ -107,42 +124,42 @@ Vous pouvez configurer l'invite d'approbation ClickOnce pour contrôler si les u
     key.Close();  
     ```  
   
-3.  Générez et exécutez l'application.  
+3.  Build and run the application.  
   
-## Restriction de l'invite d'approbation ClickOnce  
- Restreignez l'invite d'approbation afin que les solutions soient signées avec des certificats Authenticode dont l'identité est connue avant que les utilisateurs ne soient invités à indiquer une décision d'approbation.  
+## <a name="restricting-the-clickonce-trust-prompt"></a>Restricting the ClickOnce Trust Prompt  
+ Restrict the trust prompt so that solutions must be signed with Authenticode certificates that have known identity before users are prompted for a trust decision.  
   
-#### Pour restreindre l'invite d'approbation ClickOnce à l'aide de l'Éditeur du Registre  
+#### <a name="to-restrict-the-clickonce-trust-prompt-by-using-the-registry-editor"></a>To restrict the ClickOnce trust prompt by using the registry editor  
   
-1.  Ouvrez l'Éditeur du Registre :  
+1.  Open the registry editor:  
   
-    1.  Cliquez sur **Démarrer**, puis sur **Exécuter**.  
+    1.  Click **Start**, and then click **Run**.  
   
-    2.  Dans la zone **Ouvrir**, tapez `regedit`, puis cliquez sur **OK**.  
+    2.  In the **Open** box, type `regedit`, and then click **OK**.  
   
-2.  Recherchez la clé de Registre suivante :  
+2.  Find the following registry key:  
   
-     \\HKEY\_LOCAL\_MACHINE\\SOFTWARE\\MICROSOFT\\.NETFramework\\Security\\TrustManager\\PromptingLevel  
+     \HKEY_LOCAL_MACHINE\SOFTWARE\MICROSOFT\\.NETFramework\Security\TrustManager\PromptingLevel  
   
-     Si cette clé n'existe pas, créez\-la.  
+     If the key does not exist, create it.  
   
-3.  Ajoutez les sous\-clés suivantes en tant que **Valeur chaîne**, si elles n'existent pas encore, avec les valeurs associées présentées dans le tableau suivant.  
+3.  Add the following subkeys as **String Value**, if they do not already exist, with the associated values shown in the following table.  
   
-    |Sous\-clé Valeur chaîne|Valeur|  
-    |-----------------------------|------------|  
+    |String Value subkey|Value|  
+    |-------------------------|-----------|  
     |`UntrustedSites`|`Disabled`|  
     |`Internet`|`AuthenticodeRequired`|  
     |`MyComputer`|`AuthenticodeRequired`|  
     |`LocalIntranet`|`AuthenticodeRequired`|  
     |`TrustedSites`|`AuthenticodeRequired`|  
   
-#### Pour restreindre l'invite d'approbation ClickOnce par programmation  
+#### <a name="to-restrict-the-clickonce-trust-prompt-programmatically"></a>To restrict the ClickOnce trust prompt programmatically  
   
-1.  Créez une application console Visual Basic ou Visual C\# dans Visual Studio.  
+1.  Create a Visual Basic or Visual C# console application in Visual Studio.  
   
-2.  Ouvrez le fichier Program.vb ou Program.cs à modifier et ajoutez le code suivant.  
+2.  Open the Program.vb or Program.cs file for editing and add the following code.  
   
-    ```vb#  
+    ```vb  
     Dim key As Microsoft.Win32.RegistryKey  
     key = Microsoft.Win32.Registry.LocalMachine.CreateSubKey("SOFTWARE\MICROSOFT\.NETFramework\Security\TrustManager\PromptingLevel")  
     key.SetValue("MyComputer", "AuthenticodeRequired")  
@@ -153,7 +170,7 @@ Vous pouvez configurer l'invite d'approbation ClickOnce pour contrôler si les u
     key.Close()  
     ```  
   
-    ```c#  
+    ```cs  
     Microsoft.Win32.RegistryKey key;  
     key = Microsoft.Win32.Registry.LocalMachine.CreateSubKey("SOFTWARE\\MICROSOFT\\.NETFramework\\Security\\TrustManager\\PromptingLevel");  
     key.SetValue("MyComputer", "AuthenticodeRequired");  
@@ -164,42 +181,42 @@ Vous pouvez configurer l'invite d'approbation ClickOnce pour contrôler si les u
     key.Close();  
     ```  
   
-3.  Générez et exécutez l'application.  
+3.  Build and run the application.  
   
-## Désactivation de l'invite d'approbation ClickOnce  
- Vous pouvez désactiver l'invite d'approbation afin que les utilisateurs finaux ne puissent pas installer de solutions qui ne sont pas déjà approuvées dans leur stratégie de sécurité.  
+## <a name="disabling-the-clickonce-trust-prompt"></a>Disabling the ClickOnce Trust Prompt  
+ You can disable the trust prompt so that end users are not given the option to install solutions that are not already trusted in their security policy.  
   
-#### Pour désactiver l'invite d'approbation ClickOnce à l'aide de l'Éditeur du Registre  
+#### <a name="to-disable-the-clickonce-trust-prompt-by-using-the-registry-editor"></a>To disable the ClickOnce trust prompt by using the registry editor  
   
-1.  Ouvrez l'Éditeur du Registre :  
+1.  Open the registry editor:  
   
-    1.  Cliquez sur **Démarrer**, puis sur **Exécuter**.  
+    1.  Click **Start**, and then click **Run**.  
   
-    2.  Dans la zone **Ouvrir**, tapez `regedit`, puis cliquez sur **OK**.  
+    2.  In the **Open** box, type `regedit`, and then click **OK**.  
   
-2.  Recherchez la clé de Registre suivante :  
+2.  Find the following registry key:  
   
-     \\HKEY\_LOCAL\_MACHINE\\SOFTWARE\\MICROSOFT\\.NETFramework\\Security\\TrustManager\\PromptingLevel  
+     \HKEY_LOCAL_MACHINE\SOFTWARE\MICROSOFT\\.NETFramework\Security\TrustManager\PromptingLevel  
   
-     Si cette clé n'existe pas, créez\-la.  
+     If the key does not exist, create it.  
   
-3.  Ajoutez les sous\-clés suivantes en tant que **Valeur chaîne**, si elles n'existent pas encore, avec les valeurs associées présentées dans le tableau suivant.  
+3.  Add the following subkeys as **String Value**, if they do not already exist, with the associated values shown in the following table.  
   
-    |Sous\-clé Valeur chaîne|Valeur|  
-    |-----------------------------|------------|  
+    |String Value subkey|Value|  
+    |-------------------------|-----------|  
     |`UntrustedSites`|`Disabled`|  
     |`Internet`|`Disabled`|  
     |`MyComputer`|`Disabled`|  
     |`LocalIntranet`|`Disabled`|  
     |`TrustedSites`|`Disabled`|  
   
-#### Pour désactiver l'invite d'approbation ClickOnce par programmation  
+#### <a name="to-disable-the-clickonce-trust-prompt-programmatically"></a>To disable the ClickOnce trust prompt programmatically  
   
-1.  Créez une application console Visual Basic ou Visual C\# dans Visual Studio.  
+1.  Create a Visual Basic or Visual C# console application in Visual Studio.  
   
-2.  Ouvrez le fichier Program.vb ou Program.cs à modifier et ajoutez le code suivant.  
+2.  Open the Program.vb or Program.cs file for editing and add the following code.  
   
-    ```vb#  
+    ```vb  
     Dim key As Microsoft.Win32.RegistryKey  
     key = Microsoft.Win32.Registry.LocalMachine.CreateSubKey("SOFTWARE\MICROSOFT\.NETFramework\Security\TrustManager\PromptingLevel")  
     key.SetValue("MyComputer", "Disabled")  
@@ -210,7 +227,7 @@ Vous pouvez configurer l'invite d'approbation ClickOnce pour contrôler si les u
     key.Close()  
     ```  
   
-    ```c#  
+    ```cs  
     Microsoft.Win32.RegistryKey key;  
     key = Microsoft.Win32.Registry.LocalMachine.CreateSubKey("SOFTWARE\\MICROSOFT\\.NETFramework\\Security\\TrustManager\\PromptingLevel");  
     key.SetValue("MyComputer", "Disabled");  
@@ -222,16 +239,16 @@ Vous pouvez configurer l'invite d'approbation ClickOnce pour contrôler si les u
   
     ```  
   
-3.  Générez et exécutez l'application.  
+3.  Build and run the application.  
   
-## Voir aussi  
- [Sécurisation des applications ClickOnce](../deployment/securing-clickonce-applications.md)   
- [Sécurité d'accès du code pour les applications ClickOnce](../deployment/code-access-security-for-clickonce-applications.md)   
- [ClickOnce et Authenticode](../deployment/clickonce-and-authenticode.md)   
- [Vue d'ensemble du déploiement d'applications approuvées](../deployment/trusted-application-deployment-overview.md)   
+## <a name="see-also"></a>See Also  
+ [Securing ClickOnce Applications](../deployment/securing-clickonce-applications.md)   
+ [Code Access Security for ClickOnce Applications](../deployment/code-access-security-for-clickonce-applications.md)   
+ [ClickOnce and Authenticode](../deployment/clickonce-and-authenticode.md)   
+ [Trusted Application Deployment Overview](../deployment/trusted-application-deployment-overview.md)   
  [How to: Enable ClickOnce Security Settings](../deployment/how-to-enable-clickonce-security-settings.md)   
- [Comment : définir une zone de sécurité pour une application ClickOnce](../deployment/how-to-set-a-security-zone-for-a-clickonce-application.md)   
- [Comment : définir des autorisations personnalisées pour une application ClickOnce](../deployment/how-to-set-custom-permissions-for-a-clickonce-application.md)   
- [Comment : déboguer une application ClickOnce avec des autorisations restreintes](../deployment/how-to-debug-a-clickonce-application-with-restricted-permissions.md)   
- [Comment : ajouter un éditeur approuvé à un ordinateur client pour les applications ClickOnce](../deployment/how-to-add-a-trusted-publisher-to-a-client-computer-for-clickonce-applications.md)   
- [How to: Re\-sign Application and Deployment Manifests](../deployment/how-to-re-sign-application-and-deployment-manifests.md)
+ [How to: Set a Security Zone for a ClickOnce Application](../deployment/how-to-set-a-security-zone-for-a-clickonce-application.md)   
+ [How to: Set Custom Permissions for a ClickOnce Application](../deployment/how-to-set-custom-permissions-for-a-clickonce-application.md)   
+ [How to: Debug a ClickOnce Application with Restricted Permissions](../deployment/how-to-debug-a-clickonce-application-with-restricted-permissions.md)   
+ [How to: Add a Trusted Publisher to a Client Computer for ClickOnce Applications](../deployment/how-to-add-a-trusted-publisher-to-a-client-computer-for-clickonce-applications.md)   
+ [How to: Re-sign Application and Deployment Manifests](../deployment/how-to-re-sign-application-and-deployment-manifests.md)

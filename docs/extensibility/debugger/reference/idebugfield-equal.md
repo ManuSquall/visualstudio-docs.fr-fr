@@ -1,48 +1,65 @@
 ---
-title: "IDebugField::Equal | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "IDebugField::Equal"
-helpviewer_keywords: 
-  - "IDebugField::Equal (méthode)"
+title: IDebugField::Equal | Microsoft Docs
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology:
+- vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords:
+- IDebugField::Equal
+helpviewer_keywords:
+- IDebugField::Equal method
 ms.assetid: 75369fe6-ddd3-497d-80d1-2488e6100e9f
 caps.latest.revision: 11
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 11
----
-# IDebugField::Equal
-[!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]
+ms.author: gregvanl
+manager: ghogen
+translation.priority.mt:
+- cs-cz
+- de-de
+- es-es
+- fr-fr
+- it-it
+- ja-jp
+- ko-kr
+- pl-pl
+- pt-br
+- ru-ru
+- tr-tr
+- zh-cn
+- zh-tw
+ms.translationtype: MT
+ms.sourcegitcommit: ff8ecec19f8cab04ac2190f9a4a995766f1750bf
+ms.openlocfilehash: b66dd6f8272221ec66cf2425883df6e591c416b0
+ms.contentlocale: fr-fr
+ms.lasthandoff: 08/23/2017
 
-cette méthode compare ce champ avec le champ spécifié pour l'égalité.  
+---
+# <a name="idebugfieldequal"></a>IDebugField::Equal
+This method compares this field with the specified field for equality.  
   
-## Syntaxe  
+## <a name="syntax"></a>Syntax  
   
 ```cpp#  
-HRESULT Equal(   
-   IDebugField* pField  
+HRESULT Equal(   
+   IDebugField* pField  
 );  
 ```  
   
-```c#  
+```cs  
 int Equal(  
-   IDebugField pField  
+   IDebugField pField  
 );  
 ```  
   
-#### Paramètres  
+#### <a name="parameters"></a>Parameters  
  `pField`  
- \[in\]  le champ à comparer à celui\-ci.  
+ [in] The field to compare to this one.  
   
-## Valeur de retour  
- Si les champs sont identiques, retourne `S_OK`.  Si les champs sont différents, retourne `S_FALSE.` sinon, retourne un code d'erreur.  
+## <a name="return-value"></a>Return Value  
+ If the fields are the same, returns `S_OK`. If the fields are different, returns `S_FALSE.` Otherwise, returns an error code.  
   
-## Voir aussi  
+## <a name="see-also"></a>See Also  
  [IDebugField](../../../extensibility/debugger/reference/idebugfield.md)

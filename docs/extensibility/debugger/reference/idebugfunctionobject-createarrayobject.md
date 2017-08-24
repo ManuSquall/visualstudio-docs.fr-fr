@@ -1,76 +1,93 @@
 ---
-title: "IDebugFunctionObject::CreateArrayObject | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "IDebugFunctionObject::CreateArrayObject"
-helpviewer_keywords: 
-  - "IDebugFunctionObject::CreateArrayObject (méthode)"
+title: IDebugFunctionObject::CreateArrayObject | Microsoft Docs
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology:
+- vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords:
+- IDebugFunctionObject::CreateArrayObject
+helpviewer_keywords:
+- IDebugFunctionObject::CreateArrayObject method
 ms.assetid: a380e53c-15f1-401f-927f-f366eea789e6
 caps.latest.revision: 10
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 10
----
-# IDebugFunctionObject::CreateArrayObject
-[!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]
+ms.author: gregvanl
+manager: ghogen
+translation.priority.mt:
+- cs-cz
+- de-de
+- es-es
+- fr-fr
+- it-it
+- ja-jp
+- ko-kr
+- pl-pl
+- pt-br
+- ru-ru
+- tr-tr
+- zh-cn
+- zh-tw
+ms.translationtype: MT
+ms.sourcegitcommit: ff8ecec19f8cab04ac2190f9a4a995766f1750bf
+ms.openlocfilehash: 8cca8cc0dd6cdd0ce6e8127f833eb04553f8949f
+ms.contentlocale: fr-fr
+ms.lasthandoff: 08/23/2017
 
-Crée un objet table.  Ce tableau peut contenir des valeurs de primitif ou d'instance de l'objet.  
+---
+# <a name="idebugfunctionobjectcreatearrayobject"></a>IDebugFunctionObject::CreateArrayObject
+Creates an array object. This array can contain either primitive or object instance values.  
   
-## Syntaxe  
+## <a name="syntax"></a>Syntax  
   
 ```cpp#  
-HRESULT CreateArrayObject(   
-   OBJECT_TYPE    ot,  
-   IDebugField*   pClassField,  
-   DWORD          dwRank,  
-   DWORD          dwDims[],  
-   DWORD          dwLowBounds[],  
-   IDebugObject** ppObject  
+HRESULT CreateArrayObject(   
+   OBJECT_TYPE    ot,  
+   IDebugField*   pClassField,  
+   DWORD          dwRank,  
+   DWORD          dwDims[],  
+   DWORD          dwLowBounds[],  
+   IDebugObject** ppObject  
 );  
 ```  
   
-```c#  
+```cs  
 int CreateArrayObject(  
-   enum_OBJECT_TYPE ot,   
-   IDebugField      pClassField,   
-   uint             dwRank,   
-   uint[]           dwDims,   
-   uint[]           dwLowBounds,   
-   out IDebugObject ppObject  
+   enum_OBJECT_TYPE ot,   
+   IDebugField      pClassField,   
+   uint             dwRank,   
+   uint[]           dwDims,   
+   uint[]           dwLowBounds,   
+   out IDebugObject ppObject  
 );  
 ```  
   
-#### Paramètres  
+#### <a name="parameters"></a>Parameters  
  `ot`  
- \[in\]  Spécifie une valeur de l'énumération d' [OBJECT\_TYPE](../../../extensibility/debugger/reference/object-type.md) indiquant le type du nouvel objet table.  
+ [in] Specifies a value from the [OBJECT_TYPE](../../../extensibility/debugger/reference/object-type.md) enumeration indicating the type of the new array object.  
   
  `pClassField`  
- \[in\]  Un objet d' [IDebugField](../../../extensibility/debugger/reference/idebugfield.md) qui représente la classe d'un objet, si vous créez un tableau de valeurs d'une instance d'objet.  Si vous créez un tableau d'objets primitifs, ce paramètre est une valeur NULL.  
+ [in] An [IDebugField](../../../extensibility/debugger/reference/idebugfield.md) object representing the class of an object, if creating an array of object instance values. If creating an array of primitive objects, this parameter is a null value.  
   
  `dwRank`  
- \[in\]  Le rang ou le nombre de dimensions du tableau.  
+ [in] The rank or number of dimensions of the array.  
   
  `dwDims`  
- \[in\]  Les tailles de chaque dimension du tableau.  
+ [in] The sizes of each dimension of the array.  
   
  `dwLowBounds`  
- \[in\]  l'origine de chaque dimension \(en général 0 ou 1\).  
+ [in] The origin of each dimension (typically 0 or 1).  
   
  `ppObject`  
- \[out\]  Retourne un objet d' [IDebugObject](../../../extensibility/debugger/reference/idebugobject.md) représentant le tableau nouvellement créée.  C'est précisément un objet d' [IDebugArrayObject](../../../extensibility/debugger/reference/idebugarrayobject.md) .  
+ [out] Returns an [IDebugObject](../../../extensibility/debugger/reference/idebugobject.md) object representing the newly created array. This is actually an [IDebugArrayObject](../../../extensibility/debugger/reference/idebugarrayobject.md) object.  
   
-## Valeur de retour  
- En cas de réussite, retourne S\_OK ; sinon, retourne un code d'erreur.  
+## <a name="return-value"></a>Return Value  
+ If successful, returns S_OK; otherwise, returns an error code.  
   
-## Notes  
- Appelez cette méthode pour créer un objet qui représente un paramètre de tableau à la fonction qui est représentée par l'interface d' [IDebugFunctionObject](../../../extensibility/debugger/reference/idebugfunctionobject.md) .  
+## <a name="remarks"></a>Remarks  
+ Call this method to create an object that represents an array parameter to the function which is represented by the [IDebugFunctionObject](../../../extensibility/debugger/reference/idebugfunctionobject.md) interface.  
   
-## Voir aussi  
+## <a name="see-also"></a>See Also  
  [IDebugFunctionObject](../../../extensibility/debugger/reference/idebugfunctionobject.md)

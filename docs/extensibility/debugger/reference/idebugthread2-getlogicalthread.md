@@ -1,5 +1,5 @@
 ---
-title: IDebugThread2::GetLogicalThread | Documents Microsoft
+title: IDebugThread2::GetLogicalThread | Microsoft Docs
 ms.custom: 
 ms.date: 11/04/2016
 ms.reviewer: 
@@ -30,16 +30,17 @@ translation.priority.mt:
 - tr-tr
 - zh-cn
 - zh-tw
-translationtype: Machine Translation
-ms.sourcegitcommit: 5db97d19b1b823388a465bba15d057b30ff0b3ce
-ms.openlocfilehash: d1591fab36316df8344d0602afaac0367b232c72
-ms.lasthandoff: 02/22/2017
+ms.translationtype: MT
+ms.sourcegitcommit: ff8ecec19f8cab04ac2190f9a4a995766f1750bf
+ms.openlocfilehash: 0f1e3209edb8df8a17c6c3e7417685e1ba8ca75a
+ms.contentlocale: fr-fr
+ms.lasthandoff: 08/23/2017
 
 ---
 # <a name="idebugthread2getlogicalthread"></a>IDebugThread2::GetLogicalThread
-Moteurs de débogage qui n’implémentent pas cette méthode.  
+Debug engines do not implement this method.  
   
-## <a name="syntax"></a>Syntaxe  
+## <a name="syntax"></a>Syntax  
   
 ```cpp#  
 HRESULT GetLogicalThread(   
@@ -48,22 +49,22 @@ HRESULT GetLogicalThread(
 );  
 ```  
   
-```c#  
+```cs  
 int GetLogicalThread(   
    IDebugStackFrame2        pStackFrame,  
    out IDebugLogicalThread2 ppLogicalThread  
 );  
 ```  
   
-#### <a name="parameters"></a>Paramètres  
+#### <a name="parameters"></a>Parameters  
  `pStackFrame`  
- [in] Un [IDebugStackFrame2](../../../extensibility/debugger/reference/idebugstackframe2.md) objet qui représente le frame de pile.  
+ [in] An [IDebugStackFrame2](../../../extensibility/debugger/reference/idebugstackframe2.md) object that represents the stack frame.  
   
  `ppLogicalThread`  
- [out] Retourne un `IDebugLogicalThread2` interface qui représente le thread logique associé. Une implémentation du moteur de débogage définissez-la sur une valeur null.  
+ [out] Returns an `IDebugLogicalThread2` interface that represents the associated logical thread. A debug engine implementation should set this to a null value.  
   
-## <a name="return-value"></a>Valeur de retour  
- Déboguer des implémentations de moteur retournent toujours `E_NOTIMPL`.  
+## <a name="return-value"></a>Return Value  
+ Debug engine implementations always return `E_NOTIMPL`.  
   
-## <a name="see-also"></a>Voir aussi  
+## <a name="see-also"></a>See Also  
  [IDebugThread2](../../../extensibility/debugger/reference/idebugthread2.md)

@@ -1,48 +1,65 @@
 ---
-title: "IDebugEngineProgram2::Stop | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "IDebugEngineProgram2::Stop"
-helpviewer_keywords: 
-  - "IDebugEngineProgram2::Stop"
+title: IDebugEngineProgram2::Stop | Microsoft Docs
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology:
+- vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords:
+- IDebugEngineProgram2::Stop
+helpviewer_keywords:
+- IDebugEngineProgram2::Stop
 ms.assetid: 6e1c3d56-fb67-4a5b-80f9-8ee5131972bf
 caps.latest.revision: 8
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 8
----
-# IDebugEngineProgram2::Stop
-[!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]
+ms.author: gregvanl
+manager: ghogen
+translation.priority.mt:
+- cs-cz
+- de-de
+- es-es
+- fr-fr
+- it-it
+- ja-jp
+- ko-kr
+- pl-pl
+- pt-br
+- ru-ru
+- tr-tr
+- zh-cn
+- zh-tw
+ms.translationtype: MT
+ms.sourcegitcommit: ff8ecec19f8cab04ac2190f9a4a995766f1750bf
+ms.openlocfilehash: ccc2100399700e057fc490850f9c2e9095840a74
+ms.contentlocale: fr-fr
+ms.lasthandoff: 08/23/2017
 
-Arrête tous les threads exécuter dans ce programme.  
+---
+# <a name="idebugengineprogram2stop"></a>IDebugEngineProgram2::Stop
+Stops all threads running in this program.  
   
-## Syntaxe  
+## <a name="syntax"></a>Syntax  
   
 ```cpp#  
-HRESULT Stop(   
-   void   
+HRESULT Stop(   
+   void   
 );  
 ```  
   
-```c#  
+```cs  
 int Stop();  
 ```  
   
-## Valeur de retour  
- En cas de réussite, retourne `S_OK`; sinon, retourne un code d'erreur.  
+## <a name="return-value"></a>Return Value  
+ If successful, returns `S_OK`; otherwise, returns an error code.  
   
-## Notes  
- Cette méthode est appelée lorsque ce programme est débogué dans un environnement de multiprogrammation.  Lorsqu'un événement arrêtant d'un autre programme est accepté, cette méthode est appelée sur ce programme.  L'implémentation de cette méthode doit être asynchrone ; autrement dit, tous les threads doivent être tenu d'être arrêtés avant que cette méthode retourne.  L'implémentation de cette méthode peut être aussi simple que l'appel de la méthode d' [CauseBreak](../../../extensibility/debugger/reference/idebugprogram2-causebreak.md) sur ce programme.  
+## <a name="remarks"></a>Remarks  
+ This method is called when this program is being debugged in a multi-program environment. When a stopping event from some other program is received, this method is called on this program. The implementation of this method should be asynchronous; that is, not all threads should be required to be stopped before this method returns. The implementation of this method may be as simple as calling the [CauseBreak](../../../extensibility/debugger/reference/idebugprogram2-causebreak.md) method on this program.  
   
- aucun événement de débogage n'est envoyé en réponse à cette méthode.  
+ No debug event is sent in response to this method.  
   
-## Voir aussi  
+## <a name="see-also"></a>See Also  
  [IDebugEngineProgram2](../../../extensibility/debugger/reference/idebugengineprogram2.md)   
  [CauseBreak](../../../extensibility/debugger/reference/idebugprogram2-causebreak.md)

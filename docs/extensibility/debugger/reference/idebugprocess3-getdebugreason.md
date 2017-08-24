@@ -1,49 +1,66 @@
 ---
-title: "IDebugProcess3::GetDebugReason | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "IDebugProcess3::GetDebugReason"
-helpviewer_keywords: 
-  - "IDebugProcess3::GetDebugReason"
+title: IDebugProcess3::GetDebugReason | Microsoft Docs
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology:
+- vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords:
+- IDebugProcess3::GetDebugReason
+helpviewer_keywords:
+- IDebugProcess3::GetDebugReason
 ms.assetid: f23fbabc-8b18-4278-bebf-4cdc7091513c
 caps.latest.revision: 11
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 11
----
-# IDebugProcess3::GetDebugReason
-[!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]
+ms.author: gregvanl
+manager: ghogen
+translation.priority.mt:
+- cs-cz
+- de-de
+- es-es
+- fr-fr
+- it-it
+- ja-jp
+- ko-kr
+- pl-pl
+- pt-br
+- ru-ru
+- tr-tr
+- zh-cn
+- zh-tw
+ms.translationtype: MT
+ms.sourcegitcommit: ff8ecec19f8cab04ac2190f9a4a995766f1750bf
+ms.openlocfilehash: 1f56dd1560045143d155825978eb152906accdf1
+ms.contentlocale: fr-fr
+ms.lasthandoff: 08/23/2017
 
-Cette méthode retourne la raison pour laquelle le processus a été lancé pour le débogage.  
+---
+# <a name="idebugprocess3getdebugreason"></a>IDebugProcess3::GetDebugReason
+This method returns the reason that the process was launched for debugging.  
   
-## Syntaxe  
+## <a name="syntax"></a>Syntax  
   
 ```cpp  
-HRESULT GetDebugReason(  
-   DEBUG_REASON* pReason  
+HRESULT GetDebugReason(  
+   DEBUG_REASON* pReason  
 );  
 ```  
   
-```c#  
+```cs  
 int GetDebugReason(  
-   out enum_DEBUG_REASON pReason  
+   out enum_DEBUG_REASON pReason  
 );  
 ```  
   
-#### Paramètres  
+#### <a name="parameters"></a>Parameters  
  `pReason`  
- \[out\]  Retourne une valeur de l'énumération de [DEBUG\_REASON](../../../extensibility/debugger/reference/debug-reason.md) .  
+ [out] Returns a value from the [DEBUG_REASON](../../../extensibility/debugger/reference/debug-reason.md) enumeration.  
   
-## Valeur de retour  
- En cas de réussite, retourne `S_OK`; sinon, le code d'erreur de retour.  
+## <a name="return-value"></a>Return Value  
+ If successful, returns `S_OK`; otherwise, returns error code.  
   
-## Voir aussi  
+## <a name="see-also"></a>See Also  
  [IDebugProcess3](../../../extensibility/debugger/reference/idebugprocess3.md)   
- [DEBUG\_REASON](../../../extensibility/debugger/reference/debug-reason.md)
+ [DEBUG_REASON](../../../extensibility/debugger/reference/debug-reason.md)

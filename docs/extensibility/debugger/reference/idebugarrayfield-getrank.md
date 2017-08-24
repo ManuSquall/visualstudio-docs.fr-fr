@@ -1,51 +1,68 @@
 ---
-title: "IDebugArrayField::GetRank | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "IDebugArrayField::GetRank"
-helpviewer_keywords: 
-  - "IDebugArrayField::GetRank (méthode)"
+title: IDebugArrayField::GetRank | Microsoft Docs
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology:
+- vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords:
+- IDebugArrayField::GetRank
+helpviewer_keywords:
+- IDebugArrayField::GetRank method
 ms.assetid: 2364b876-5be1-4bab-9b8f-3b6121da35c6
 caps.latest.revision: 9
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 9
----
-# IDebugArrayField::GetRank
-[!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]
+ms.author: gregvanl
+manager: ghogen
+translation.priority.mt:
+- cs-cz
+- de-de
+- es-es
+- fr-fr
+- it-it
+- ja-jp
+- ko-kr
+- pl-pl
+- pt-br
+- ru-ru
+- tr-tr
+- zh-cn
+- zh-tw
+ms.translationtype: MT
+ms.sourcegitcommit: ff8ecec19f8cab04ac2190f9a4a995766f1750bf
+ms.openlocfilehash: 1d3ccb71aec142b3c55298578afa78492b456d7b
+ms.contentlocale: fr-fr
+ms.lasthandoff: 08/23/2017
 
-Obtient le rang ou le nombre de dimensions du tableau.  
+---
+# <a name="idebugarrayfieldgetrank"></a>IDebugArrayField::GetRank
+Gets the rank or number of dimensions of the array.  
   
-## Syntaxe  
+## <a name="syntax"></a>Syntax  
   
 ```cpp#  
-HRESULT GetRank(   
-   DWORD* pdwRank  
+HRESULT GetRank(   
+   DWORD* pdwRank  
 );  
 ```  
   
-```c#  
+```cs  
 int GetRank(  
-   out uint pdwRank  
+   out uint pdwRank  
 );  
 ```  
   
-#### Paramètres  
+#### <a name="parameters"></a>Parameters  
  `pdwRank`  
- \[out\]  Retourne le classement.  
+ [out] Returns the rank.  
   
-## Valeur de retour  
- En cas de réussite, retourne S\_OK ; sinon, retourne un code d'erreur.  
+## <a name="return-value"></a>Return Value  
+ If successful, returns S_OK; otherwise, returns an error code.  
   
-## Notes  
- Le rang d'un tableau correspond au nombre de dimensions.  En C\+\+ et c\#, les tableaux multidimensionnels sont véritablement des tableaux de tableaux et peut donc être considérés comme un tableau unidimensionnel \(et la méthode d' `GetRank` retourne toujours 1\).  Dans [!INCLUDE[vbprvb](../../../code-quality/includes/vbprvb_md.md)], en revanche, les tableaux multidimensionnels sont gérés différemment et le rang d'une telle tableau reflète le nombre de dimensions \(et de la méthode d' `GetRank` retourne toujours le nombre de dimensions\).  
+## <a name="remarks"></a>Remarks  
+ The rank of an array corresponds to the number of dimensions. In C++ and C#, multi-dimensional arrays are really arrays of arrays and can therefore be considered just a one-dimensional array (and the `GetRank` method always returns 1). In [!INCLUDE[vbprvb](../../../code-quality/includes/vbprvb_md.md)], on the other hand, multi-dimensional arrays are handled differently and the rank of such an array reflects the number of dimensions (and the `GetRank` method always returns the number of dimensions).  
   
-## Voir aussi  
+## <a name="see-also"></a>See Also  
  [IDebugArrayField](../../../extensibility/debugger/reference/idebugarrayfield.md)

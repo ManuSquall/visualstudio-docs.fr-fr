@@ -1,30 +1,47 @@
 ---
-title: "L’inscription d’une fen&#234;tre outil | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-helpviewer_keywords: 
-  - "fenêtres Outil, l’inscription gérés"
-  - "fenêtres Outil, l’inscription"
+title: Registering a Tool Window | Microsoft Docs
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology:
+- vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+helpviewer_keywords:
+- tool windows, registering managed
+- tool windows, registering
 ms.assetid: 8c8c4a24-3da4-497b-9db2-0ddd7cfbfdd2
 caps.latest.revision: 14
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 14
----
-# L’inscription d’une fen&#234;tre outil
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
+ms.author: gregvanl
+manager: ghogen
+translation.priority.mt:
+- cs-cz
+- de-de
+- es-es
+- fr-fr
+- it-it
+- ja-jp
+- ko-kr
+- pl-pl
+- pt-br
+- ru-ru
+- tr-tr
+- zh-cn
+- zh-tw
+ms.translationtype: MT
+ms.sourcegitcommit: ff8ecec19f8cab04ac2190f9a4a995766f1750bf
+ms.openlocfilehash: 9587f6fa3ad0e23969af83da91a85895ee33bc16
+ms.contentlocale: fr-fr
+ms.lasthandoff: 08/23/2017
 
-Vous pouvez enregistrer vos fenêtres Outil à l’aide de <xref:Microsoft.VisualStudio.Shell.ProvideToolWindowAttribute> et  <xref:Microsoft.VisualStudio.Shell.ProvideToolWindowVisibilityAttribute>  
+---
+# <a name="registering-a-tool-window"></a>Registering a Tool Window
+You can register your tool windows using <xref:Microsoft.VisualStudio.Shell.ProvideToolWindowAttribute> and  <xref:Microsoft.VisualStudio.Shell.ProvideToolWindowVisibilityAttribute>  
   
-## Exemple  
+## <a name="example"></a>Example  
   
-```c#  
+```cs  
   
       [ProvideToolWindow(typeof(PersistedWindowPane), Style = MsVsShell.VsDockStyle.Tabbed, Window = "3ae79031-e1bc-11d0-8f78-00a0c9110057")] [ProvideToolWindow(typeof(DynamicWindowPane), PositionX=250, PositionY=250, Width=160, Height=180, Transient=true)] [ProvideToolWindowVisibility(typeof(DynamicWindowPane), /*UICONTEXT_SolutionExists*/"f1536ef8-92ec-443c-9ed7-fdadf150da82")]  
 [ProvideMenuResource(1000, 1)]  
@@ -34,4 +51,4 @@ public class PackageToolWindow : Package
 {  
 ```  
   
- Dans le code ci\-dessus, la <xref:Microsoft.VisualStudio.Shell.ProvideToolWindowAttribute> enregistre les fenêtres PersistedWindowPane et DynamicWindowPane avec Visual Studio. La fenêtre outil persistante est ancrée et à onglets avec **l’Explorateur de solutions**, et la fenêtre dynamique position et la taille de début par défaut. La fenêtre dynamique devient temporaire, ce qui signifie qu’il n’est pas créé au démarrage. Écrit une valeur DontForceCreate dans la clé ToolWindows dans le Registre système. Pour plus d'informations, consultez [Configuration de l'affichage fenêtre outil](../extensibility/tool-window-display-configuration.md).
+ In the code above, the <xref:Microsoft.VisualStudio.Shell.ProvideToolWindowAttribute> registers the PersistedWindowPane and DynamicWindowPane tool windows with Visual Studio. The persisted tool window is docked and tabbed with **Solution Explorer**, and the dynamic window is given a default starting position and size. The dynamic window is made transient, which indicates that it is not created on startup. This writes a DontForceCreate value in the ToolWindows key in the system registry. For more information, see [Tool Window Display Configuration](../extensibility/tool-window-display-configuration.md).

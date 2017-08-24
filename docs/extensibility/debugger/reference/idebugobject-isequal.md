@@ -1,5 +1,5 @@
 ---
-title: IDebugObject::IsEqual | Documents Microsoft
+title: IDebugObject::IsEqual | Microsoft Docs
 ms.custom: 
 ms.date: 11/04/2016
 ms.reviewer: 
@@ -30,16 +30,17 @@ translation.priority.mt:
 - tr-tr
 - zh-cn
 - zh-tw
-translationtype: Machine Translation
-ms.sourcegitcommit: 5db97d19b1b823388a465bba15d057b30ff0b3ce
-ms.openlocfilehash: 35d65729a75d06cb8aefc330441cefb09c95bb04
-ms.lasthandoff: 02/22/2017
+ms.translationtype: MT
+ms.sourcegitcommit: ff8ecec19f8cab04ac2190f9a4a995766f1750bf
+ms.openlocfilehash: 4a715a24014a8edd753327cf2dcc40ec10591c06
+ms.contentlocale: fr-fr
+ms.lasthandoff: 08/23/2017
 
 ---
 # <a name="idebugobjectisequal"></a>IDebugObject::IsEqual
-Compare un objet à cet objet.  
+Compares an object with this object.  
   
-## <a name="syntax"></a>Syntaxe  
+## <a name="syntax"></a>Syntax  
   
 ```cpp#  
 HRESULT IsEqual(   
@@ -48,25 +49,25 @@ HRESULT IsEqual(
 );  
 ```  
   
-```c#  
+```cs  
 int IsEqual(  
    IDebugObject pObject,  
    out int      pfIsEqual  
 );  
 ```  
   
-#### <a name="parameters"></a>Paramètres  
+#### <a name="parameters"></a>Parameters  
  `pObject`  
- [in] Un [IDebugObject](../../../extensibility/debugger/reference/idebugobject.md) objet représentant l’objet à comparer.  
+ [in] An [IDebugObject](../../../extensibility/debugger/reference/idebugobject.md) object representing the object to compare to.  
   
  `pfIsEqual`  
- [out] Renvoie une valeur non zéro (`TRUE`) si les valeurs des objets sont égaux ; sinon, retourne la valeur zéro (`FALSE`).  
+ [out] Returns non-zero (`TRUE`) if the values of the objects are equal; otherwise, returns zero (`FALSE`).  
   
-## <a name="return-value"></a>Valeur de retour  
- En cas de réussite, retourne S_OK ; Sinon, retourne un code d’erreur.  
+## <a name="return-value"></a>Return Value  
+ If successful, returns S_OK; otherwise, returns an error code.  
   
-## <a name="remarks"></a>Remarques  
- En règle générale, cette méthode peut comparer les adresses des valeurs représentées par le `pObject` paramètre et cela [IDebugObject](../../../extensibility/debugger/reference/idebugobject.md) objet ; si les adresses sont identiques, les objets peuvent être considérées comme égales.  
+## <a name="remarks"></a>Remarks  
+ Typically, this method can compare the addresses of the values represented by the `pObject` parameter and this [IDebugObject](../../../extensibility/debugger/reference/idebugobject.md) object; if the addresses are equal, then the objects can be considered equal.  
   
-## <a name="see-also"></a>Voir aussi  
+## <a name="see-also"></a>See Also  
  [IDebugObject](../../../extensibility/debugger/reference/idebugobject.md)

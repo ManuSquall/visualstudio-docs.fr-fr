@@ -1,5 +1,5 @@
 ---
-title: "Comment : diagnostiquer les performances de l’extension | Documents Microsoft"
+title: 'How to: Diagnose extension performance| Microsoft Docs'
 ms.custom: 
 ms.date: 11/08/2016
 ms.reviewer: 
@@ -27,80 +27,92 @@ translation.priority.mt:
 - tr-tr
 - zh-cn
 - zh-tw
-translationtype: Machine Translation
-ms.sourcegitcommit: 5db97d19b1b823388a465bba15d057b30ff0b3ce
-ms.openlocfilehash: f1226c9bd42476acc9fb57be0a6df8058174fd4d
-ms.lasthandoff: 02/22/2017
+ms.translationtype: MT
+ms.sourcegitcommit: ff8ecec19f8cab04ac2190f9a4a995766f1750bf
+ms.openlocfilehash: e15df613e678e577a16c613c8be0c302b2c8d1a3
+ms.contentlocale: fr-fr
+ms.lasthandoff: 08/23/2017
 
 ---
-# <a name="measuring-extension-impact-in-startup"></a>Mesurer l’impact d’extension dans le démarrage
+# <a name="measuring-extension-impact-in-startup"></a>Measuring extension impact in startup
 
-## <a name="focus-on-extension-performance-in-visual-studio-2017"></a>Se concentrer sur les performances de l’extension de Visual Studio 2017
+## <a name="focus-on-extension-performance-in-visual-studio-2017"></a>Focus on extension performance in Visual Studio 2017
 
-En fonction des commentaires des clients, un des domaines d’intérêt pour la version de Visual Studio 2017 a été performances de chargement de démarrage et de la solution. Bien que, en tant qu’équipe de plate-forme de Visual Studio, nous avons travaillé sur l’amélioration des performances de chargement de démarrage et de la solution en général, nos résultats de télémétrie suggère extensions installées peuvent avoir également un impact considérable sur ces scénarios.
+Based on customer feedback, one of the focus areas for Visual Studio 2017 release has been startup and solution load performance. While, as Visual Studio platform team, we have been working on improving startup and solution load performance in general, our telemetry suggests installed extensions can also have a considerable impact on those scenarios.
 
-Pour aider les utilisateurs à comprendre cet impact, nous avons ajouté une nouvelle fonctionnalité dans Visual Studio pour informer les utilisateurs des extensions lentes. Lorsque Visual Studio détecte une nouvelle extension qui ralentit la charge de la solution ou de démarrage, les utilisateurs verront une notification dans l’IDE à la nouvelle boîte de dialogue « Gérer des performances Visual Studio ». Cette boîte de dialogue est toujours accessible par menu d’aide pour parcourir les extensions détectées précédemment.
+To help users understand this impact, we added a new feature in Visual Studio to notify users of slow extensions. When Visual Studio detects a new extension that is slowing down either solution load or startup, users will see a notification in the IDE pointing them to new "Manage Visual Studio Performance" dialog. This dialog can also always be accessed by Help menu to browse previously detected extensions.
 
-![gérer les performances de Visual Studio](~/extensibility/media/manage-performance.png)
+![manage Visual Studio performace](media/manage-performance.png)
 
-Ce document vise à aider les développeurs d’extensions en décrivant comment l’impact de l’extension est calculée et comment il peut être analysé en local pour tester si une extension peut s’afficher comme une extension aient un impact sur des performances.
+This document aims to help extension developers by describing how extension impact is calculated and how it can be analyzed locally to test if an extension may be shown as a performance impacting extension.
 
-## <a name="how-extensions-can-impact-startup"></a>Impact extensions de démarrage
+## <a name="how-extensions-can-impact-startup"></a>How extensions can impact startup
 
-Une des façons plus courantes pour les extensions de l’impact sur les performances de démarrage est en choisissant de chargement automatique à un des contextes d’interface utilisateur démarrage connus tels que NoSolutionExists ou ShellInitialized. Les contextes d’interface utilisateur activation lors du démarrage et tous les packages qui incluent l’attribut « ProvideAutoLoad » dans leur définition avec ces contextes sont chargées et initialisées à ce moment-là.
+One of the most common ways for extensions to impact startup performance is by choosing to auto load at one of the known startup UI contexts such as NoSolutionExists or ShellInitialized. These UI contexts get activated during startup and any packages that include the "ProvideAutoLoad" attribute in their definition with those contexts will be loaded and initialized at that time.
 
-Lorsque nous mesurons l’impact d’une extension, nous concentrer principalement sur le temps passé par les extensions de choisir de chargement automatique dans les contextes ci-dessus. Mesuré fois seraient incluent, mais ne pas être limités à :
+When we measure the impact of an extension, we primarily focus on time spent by those extensions that choose to auto load in the contexts above. Measured times would include but not be limited to:
 
-* Chargement des assemblys d’extension pour les packages synchrone
-* Temps passé dans le constructeur de classe de package pour les packages synchrone
-* Temps passé dans la méthode Initialize (ou SetSite) de package pour les packages synchrone
-* Pour les packages asynchrones les opérations s’exécutent sur le thread d’arrière-plan et sont donc exclues de l’analyse
-* Temps passé dans n’importe quel travail asynchrone prévu lors de l’initialisation du package à exécuter sur le thread principal
-* Temps passé dans les gestionnaires d’événements, en particulier l’activation de contexte shell initialisé ou la modification d’état zombie shell
+* Loading of extension assemblies for synchronous packages
+* Time spent in the package class constructor for synchronous packages
+* Time spent in package Initialize (or SetSite) method for synchronous packages
+* For asynchronous packages the above operations run on background thread and therefore are excluded from monitoring
+* Time spent in any asynchronous work scheduled during package initialization to run on main thread
+* Time spent in event handlers, specifically shell initialized context activation or the shell zombie state change
+* Starting from Visual Studio 2017 Update 3, we will also start monitoring time spent in on idle calls before shell is initialized. Long operations in idle handlers also cause unresponsive IDE and contribute to perceived startup time by user.
 
-Nous avons ajouté plusieurs fonctionnalités à partir de Visual Studio 2015 pour aider à supprimer la nécessité pour les packages de charge automatique, reporter leur charge cas plus spécifiques où les utilisateurs seront à l’utilisation de l’extension ou de réduire un impact de l’extension lors du chargement automatiquement.
+We have added multiple features starting from Visual Studio 2015 to help with removing the need for packages to auto load, postpone their load to more specific cases where users would be more certain to use the extension or reduce an extension impact when loading automatically.
 
-Vous trouverez plus d’informations sur ces fonctionnalités dans les documents suivants :
+You can find more details about these features in the following documents:
 
-[Contextes d’interface utilisateur basée sur des règles](how-to-use-rule-based-ui-context-for-visual-studio-extensions.md): un moteur basé sur une règle plus riche construit autour des contextes d’interface utilisateur permettent de créer des contextes personnalisés basés sur les fonctionnalités de versions et types de projet. Les contextes personnalisés peuvent servir à charger un package au cours des scénarios plus spécifiques telles que la présence d’un projet à une fonctionnalité spécifique au lieu de démarrage ; ou autoriser [commande visibilité d’être rattachés à un contexte personnalisé](https://msdn.microsoft.com/en-us/library/bb166512.aspx) basé sur les fonctionnalités de projet ou d’autres termes disponibles afin d’éviter de charger un package pour inscrire un gestionnaire de requête de statut de commande.
+[Rule based UI Contexts](how-to-use-rule-based-ui-context-for-visual-studio-extensions.md): A richer rule based engine built around UI contexts allow you to create custom contexts based on project types, flavors and capabilities. These custom contexts can be used to load a package during more specific scenarios such as the presence of a project with a specific capability instead of startup; or allow [command visibility to be tied to a custom context](https://msdn.microsoft.com/en-us/library/bb166512.aspx) based on project capabilities or other available terms thus eliminating the need to load a package to register a command status query handler.
 
-[Prise en charge asynchrone package](how-to-use-asyncpackage-to-load-vspackages-in-the-background.md): packages Visual Studio doit être chargé dans l’arrière-plan de façon asynchrone si le chargement du package a été demandé par un attribut de chargement automatique ou d’une requête de service asynchrone permet à la nouvelle classe de base AsyncPackage dans Visual Studio 2015. Ce chargement en arrière-plan permet à l’IDE de rester réactif pendant que l’extension est initialisée en arrière-plan et des scénarios critiques comme charge de solution et de démarrage ne seraient pas affectées.
+[Asynchronous package support](how-to-use-asyncpackage-to-load-vspackages-in-the-background.md): The new AsyncPackage base class in Visual Studio 2015 allows Visual Studio packages to be loaded in the background asynchronously if package load was requested by an auto load attribute or an asynchronous service query. This background loading allows the IDE to stay responsive while the extension is initialized in the background and critical scenarios like startup and solution load wouldn't be impacted.
 
-[Les services asynchrones](how-to-provide-an-asynchronous-visual-studio-service.md): prise en charge asynchrone package, nous avons également ajouté la prise en charge pour l’interrogation des services de manière asynchrone et vous pouvez inscrire des services asynchrones. Plus important encore, nous travaillons sur la conversion de services Visual Studio de base pour prendre en charge la requête asynchrone afin que la majorité du travail dans une requête asynchrone se produit dans les threads d’arrière-plan. SComponentModel (hôte Visual Studio MEF) est un des principaux services qui prend désormais en charge une requête asynchrone pour autoriser des extensions prendre en charge le chargement asynchrone complètement.
+[Asynchronous services](how-to-provide-an-asynchronous-visual-studio-service.md): With asynchronous package support, we also added support for querying services asynchronously and being able to register asynchronous services. More importantly we are working on converting core Visual Studio services to support asynchronous query so that the majority of work in an async query occurs in background threads. SComponentModel (Visual Studio MEF host) is one of the major services that now supports asynchronous query to allow extensions to support asynchronous loading completely.
 
-## <a name="reducing-impact-of-auto-loaded-extensions"></a>Réduction de l’impact auto extensions chargées
+## <a name="reducing-impact-of-auto-loaded-extensions"></a>Reducing impact of auto loaded extensions
 
-Si un package doit toujours être automatiquement chargé au démarrage, il est important de réduire le travail effectué pendant l’initialisation de package pour réduire les risques de l’extension d’un impact sur le démarrage.
+If a package still needs to be auto loaded at startup, it is important to minimize the work done during package initialization to reduce the chances of the extension impacting startup.
 
-Certains exemples susceptible d’être coûteux de l’initialisation de package sont :
+Some examples that could cause package initialization to be expensive are:
 
-### <a name="use-of-synchronous-package-load-instead-of-asynchronous-package-load"></a>Utilisation du chargement du package synchrone au lieu de chargement du package asynchrone
+### <a name="use-of-synchronous-package-load-instead-of-asynchronous-package-load"></a>Use of synchronous package load instead of asynchronous package load
 
-Étant donné que les packages synchrones sont chargés sur le thread principal par défaut, nous encourageons les propriétaires d’extension qui ont chargé automatiquement les packages à utiliser la classe de base du package asynchrone à la place comme indiqué précédemment. Modification d’un package chargé automatiquement pour prendre en charge le chargement asynchrone également rend plus facile à résoudre les problèmes ci-dessous.
+Because synchronous packages are loaded on the main thread by default, we encourage extension owners that have auto loaded packages use the asynchronous package base class instead as mentioned earlier. Changing an auto loaded package to support asynchronous loading will also make it easier to resolve the other issues below.
 
-### <a name="synchronous-filenetwork-io-requests"></a>Requêtes d’e/s de fichier synchrones/réseau
+### <a name="synchronous-filenetwork-io-requests"></a>Synchronous file/network IO requests
 
-Dans l’idéal, toute demande d’e/s réseau ou de fichier synchrone doit être évité dans le thread principal comme leur impact varie selon l’état de l’ordinateur et peut se bloquer pendant de longues périodes de temps dans certains cas.
+Ideally any synchronous file or network IO request should be avoided in the main thread as their impact will depend on machine state and can block for long periods of time in some cases.
 
-À l’aide des API d’e/s asynchrones et chargement du package asynchrone doit s’assurer que l’initialisation du package ne bloque pas le thread principal dans ce cas, et les utilisateurs peuvent continuer à interagir avec Visual Studio pendant que les demandes d’e/s se produisent en arrière-plan.
+Using asynchronous package loading and asynchronous IO APIs should ensure that package initialization doesn't block the main thread in such cases and users can continue to interact with Visual Studio while I/O requests happen in background.
 
-### <a name="early-initialization-of-services-components"></a>Initialisation anticipée des services, composants
+### <a name="early-initialization-of-services-components"></a>Early initialization of services, components
 
-Un des modèles courants dans l’initialisation du package consiste à initialiser les services fournis par ce package dans la méthode de constructeur ou d’initialisation du package soit utilisé par. Alors que les services sont prêtes à être utilisées, ainsi il peut également ajouter des coûts inutiles pour empaqueter le chargement si ces services ne sont pas utilisées immédiatement. À la place de ces services doivent être initialisés à la demande afin de minimiser le travail effectué dans l’initialisation du package.
+One of the common patterns in package initialization is to initialize services either used by or provided by that package in the package constructor or initialize method. While this ensures services are ready to be used, it can also add unnecessary cost to package loading if those services are not used immediately. Instead such services should be initialized on demand to minimize the work done in package initialization.
 
-Pour les services globaux fournis par un package, vous pouvez utiliser les méthodes de AddService qui prend une fonction d’initialisation différée du service uniquement lorsque cela est demandé par un composant. Pour les services utilisés dans le package, vous pouvez utiliser Lazy<T> ou AsyncLazy<T> pour assurer les services sont initialisés ou interrogée à la première utilisation.
+For global services provided by a package, you can use AddService methods that takes a function to lazily initialize the service only when it is requested by a component. For services used within the package, you can utilize Lazy<T> or AsyncLazy<T> to ensure services are initialized/queried on first use.
 
-## <a name="measuring-impact-of-auto-loaded-extensions-using-perfview"></a>Mesurer l’impact auto chargé des extensions à l’aide de PerfView
+## <a name="measuring-impact-of-auto-loaded-extensions-using-activity-log"></a>Measuring impact of auto loaded extensions using Activity log
 
-Pendant l’analyse du code peut aider à identifier les chemins de code qui peuvent ralentir l’initialisation du package, vous pouvez également utiliser le suivi à l’aide d’applications telles que PerfView pour comprendre l’impact d’une charge de package dans le démarrage de Visual Studio.
+Beginning in Visual Studio 2017 Update 3, Visual Studio activity log will now contain entries for performance impact of packages during startup and solution load. In order to see these measurements, you have to start Visual Studio with /log switch and open ActivityLog.xml file.
 
-PerfView est un outil de suivi large de système qui vous aideront à comprendre les chemins d’accès à chaud dans une application en raison de l’utilisation du processeur ou le blocage des appels système. Voici un exemple rapide sur l’analyse d’un exemple d’extension à l’aide disponible à l’adresse PerfView le [Microsoft Download Center](https://www.microsoft.com/en-us/download/details.aspx?id=28567).
+In the activity log, the entries will be under "Manage Visual Studio Performance" source, and will look like following:
 
-**Exemple de code :**
+```Component: 3cd7f5bf-6662-4ff0-ade8-97b5ff12f39c, Inclusive Cost: 2008.9381, Exclusive Cost: 2008.9381, Top Level Inclusive Cost: 2008.9381```
 
-Cet exemple est basé sur l’exemple de code ci-dessous, qui est conçu pour afficher les cas de certaines causes courantes de délai :
+This means that package with GUID "3cd7f5bf-6662-4ff0-ade8-97b5ff12f39c" spent 2008 ms in startup of Visual Studio. Note that Visual Studio considers top level cost as the primary number when calculating impact of a package as that would be the savigs user see when they disable the extension for that package.
 
-```c#
+## <a name="measuring-impact-of-auto-loaded-extensions-using-perfview"></a>Measuring impact of auto loaded extensions using PerfView
+
+While code analysis can help identify code paths that can slow down package initialization, you can also utilize tracing by using applications like PerfView to understand the impact of a package load in Visual Studio startup.
+
+PerfView is a system wide tracing tool that will help you understand hot paths in an application either due to CPU usage or blocking system calls. Below is a quick example on analyzing a sample extension using PerfView available at the [Microsoft Download Center](https://www.microsoft.com/en-us/download/details.aspx?id=28567).
+
+**Example code:**
+
+This example is based on the sample code below, which is designed to show case some common delay causes:
+
+```cs
 protected override void Initialize()
 {
     // Initialize a class from another assembly as an example
@@ -139,47 +151,48 @@ private void DoMoreWork()
 }
 ```
 
-**Enregistrement d’une trace avec PerfView :**
+**Recording a trace with PerfView:**
 
-Une fois que vous configurez votre environnement Visual Studio avec votre extension installée, vous pouvez enregistrer une trace de démarrage en ouvrant PerfView et en ouvrant le dialogue collecter à partir du menu « Collecter ».
+Once you setup your Visual Studio environment with your extension installed, you can record a trace of startup by opening PerfView and opening Collect dialog from "Collect" menu.
 
-![menu collecter perfview](~/extensibility/media/perfview-collect-menu.png)
+![perfview collect menu](media/perfview-collect-menu.png)
 
-Les options par défaut fournit les piles d’appels pour l’utilisation du processeur, mais puisque nous sommes intéressés à temps de blocage, ainsi, vous devez également activer des piles de « Temps de Thread ». Une fois que les paramètres sont prêts, vous pouvez cliquez sur « Démarrer la collecte » et démarrez Visual Studio une fois l’enregistrement est démarré.
+The default options will provide call stacks for CPU consumption but since we are interested in blocking time as well, you also should enable "Thread Time" stacks. Once the settings are ready you can click on "Start Collection" and start Visual Studio once recording is started.
 
-Avant d’arrêter la collection, vous souhaitez vous assurer que Visual Studio est entièrement initialisé, la fenêtre principale est complètement visible et si votre extension a des parties de l’interface utilisateur s’affiche automatiquement, ils sont également visibles. Une fois que Visual Studio est complètement chargée et que votre extension est initialisée, pour arrêter l’enregistrement pour analyser la trace.
+Before you stop collection, you want to make sure Visual Studio is fully initialized, the main window is completely visible and if your extension has any UI pieces that automatically show,  they are also visible. Once Visual Studio is completely loaded and your extension is initialized, you can stop recording to analyze the trace.
 
-**Analyse une trace avec PerfView :**
+**Analyzing a trace with PerfView:**
 
-Une fois l’enregistrement terminé PerfView automatiquement ouvrir la trace et développez les options.
+Once recording is completed PerfView will automatically open the trace and expand options.
 
-Dans le cadre de cet exemple, nous nous intéressons principalement la vue « Threads des piles de temps » qui se trouve sous « Groupe avancé ». Cette vue affiche le temps total passé sur un thread par une méthode, y compris le temps processeur et le temps bloqué, telles que les e/s disque ou en attendant des handles.
+For the purposes of this example, we are mainly interested in the "Thread Time Stacks" view which you can find under "Advanced Group". This view will show total time spent on a thread by a method including both CPU time and blocked time, such as disk IO or waiting on handles.
 
- ![piles des threads](~/extensibility/media/perfview-thread-time-stacks.png)
+ ![thread time stacks](media/perfview-thread-time-stacks.png)
 
- Lors de l’ouverture de vue « Threads des piles de temps », vous devez choisir le processus « devenv » pour démarrer l’analyse.
+ While opening "Thread Time Stacks" view, you should choose the "devenv" process to start analysis.
 
-PerfView a conseils détaillés sur la lecture de thread piles fois sous son propre menu d’aide pour une analyse plus détaillée. Pour les besoins de cet exemple, nous voulons filtrer davantage cet affichage en incluant uniquement les piles avec notre thread de démarrage et le nom de module packages.
+PerfView has detailed guidance on how to read thread time stacks under its own Help menu for more detailed analysis. For purposes of this example, we want to filter this view further by only including stacks with our packages module name and startup thread.
 
-1. Texte vide à supprimer n’importe quel regroupement ajouté par défaut la valeur « GroupPats ».
-2. Ensemble « IncPats » pour inclure la partie de votre nom de l’assembly et le démarrage du Thread en plus de filtre de processus existant. Dans ce cas, il doit être « devenv ; Démarrage du Thread. MakeVsSlowExtension ».
+1. Set "GroupPats" to empty text to remove any grouping added by default.
+2. Set "IncPats" to include part of your assembly name and Startup Thread in addition to existing process filter. In this case, it should be "devenv;Startup Thread;MakeVsSlowExtension".
 
-La vue n’affiche désormais coût est associé avec les assemblys liés à l’extension. Dans cette vue, n’importe quel moment indiqué sous la colonne « Inc. » (coût inclus) du thread de démarrage est liée à notre extension filtrée et un impact sur démarrage.
+Now the view will only show cost that is associated with the assemblies related to extension. In this view, any time listed under "Inc" (Inclusive cost) column of startup thread is related to our filtered extension and will be impacting startup.
 
-Pour l’exemple ci-dessus certains appel intéressante piles serait :
+For the example above some interesting call stacks would be:
 
-1. E/s à l’aide de la classe de System.IO : tandis que le coût inclusif de ces images peut ne pas être très coûteux dans la trace, ils sont une cause potentielle d’un problème dans la mesure où la vitesse d’e/s de fichier varie d’un ordinateur à un autre.
+1. IO using System.IO class: While inclusive cost of these frames might not be very expensive in the trace, they are a potential cause of an issue since file IO speed will vary from machine to machine.
 
-  ![trames de système d’e/s](~/extensibility/media/perfview-system-io-frames.png)
+  ![system io frames](media/perfview-system-io-frames.png)
 
-2. Blocage des appels en attente sur une autre tâche asynchrone : dans ce cas temps inclusif représentent le temps que le thread principal est bloqué sur l’achèvement du travail asynchrone.
+2. Blocking calls waiting on other asynchronous work: In this case inclusive time would represent the time the main thread is blocked on the completion of asynchronous work.
 
-  ![frames d’appels bloquants](~/extensibility/media/perfview-blocking-call-frames.png)
+  ![blocking call frames](media/perfview-blocking-call-frames.png)
 
-Une des vues dans la trace qui seront utiles pour déterminer l’impact sera les piles « charge de l’Image ». Vous pouvez appliquer les mêmes filtres appliqués à la vue « Threads des piles de temps » et Découvrez tous les assemblys chargés en raison du code exécuté par votre package chargé automatiquement.
+One of the other views in the trace that will be useful to determine impact will be the "Image Load Stacks". You can apply the same filters as applied to "Thread Time Stacks" view and find out all assemblies loaded because of the code executed by your auto loaded package.
 
-Il est important de réduire le nombre d’assemblys chargés à l’intérieur d’une routine d’initialisation de package que chaque assembly supplémentaire implique l’e/s de disque supplémentaire qui peut ralentir le démarrage considérablement sur les ordinateurs plus lents.
+It is important to minimize number of loaded assemblies inside a package initialization routine as each additional assembly will involve extra disk I/O which can slow down startup considerably on slower machines.
 
-## <a name="summary"></a>Résumé
+## <a name="summary"></a>Summary
 
-Démarrage de Visual Studio a été parmi les zones que nous continuellement d’obtenir des commentaires. Notre objectif comme indiqué plus haut est pour tous les utilisateurs aient un démarrage cohérent avec tous les composants et extensions qu’ils ont installé et nous souhaitons travailler avec les propriétaires d’extension pour les aider à atteindre cet objectif. Les instructions ci-dessus devraient être utiles pour comprendre un impact extensions au démarrage et en évitant d’automatiquement la charge ou les charger asynchrone pour réduire l’impact sur la productivité des utilisateurs.
+Startup of Visual Studio has been one of the areas we continually get feedback on. Our goal as stated earlier is for all users to have a consistent startup experience regardless of components and extensions they have installed and we would like to work with extension owners to help them help us achieve that goal. The guidance above should be helpful in understanding an extensions impact on startup and either avoiding the need to auto load or load it asynchronously to minimize impact on user productivity.
+

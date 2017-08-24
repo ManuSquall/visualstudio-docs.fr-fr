@@ -1,132 +1,147 @@
 ---
-title: "Walkthrough: Downloading Assemblies on Demand with the ClickOnce Deployment API | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-deployment"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-dev_langs: 
-  - "VB"
-  - "CSharp"
-  - "C++"
-helpviewer_keywords: 
-  - "assemblies, downloading [ClickOnce]"
-  - "ClickOnce deployment, on-demand download"
-  - "on-demand assemblies, ClickOnce"
+title: 'Walkthrough: Downloading Assemblies on Demand with the ClickOnce Deployment API | Microsoft Docs'
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology:
+- vs-ide-deployment
+ms.tgt_pltfrm: 
+ms.topic: article
+dev_langs:
+- VB
+- CSharp
+- C++
+helpviewer_keywords:
+- assemblies, downloading [ClickOnce]
+- ClickOnce deployment, on-demand download
+- on-demand assemblies, ClickOnce
 ms.assetid: d20e2789-8621-4806-b5b7-841122da1456
 caps.latest.revision: 16
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
-caps.handback.revision: 16
----
-# Walkthrough: Downloading Assemblies on Demand with the ClickOnce Deployment API
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
+author: stevehoag
+ms.author: shoag
+manager: wpickett
+translation.priority.ht:
+- cs-cz
+- de-de
+- es-es
+- fr-fr
+- it-it
+- ja-jp
+- ko-kr
+- pl-pl
+- pt-br
+- ru-ru
+- tr-tr
+- zh-cn
+- zh-tw
+ms.translationtype: HT
+ms.sourcegitcommit: ff8ecec19f8cab04ac2190f9a4a995766f1750bf
+ms.openlocfilehash: 48594f38814cef86fcdbe32bc1b4037da573ee28
+ms.contentlocale: fr-fr
+ms.lasthandoff: 08/23/2017
 
-Par défaut, tous les assemblys inclus dans une application [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] sont téléchargés lors de la première exécution de l'application.  Toutefois, certaines parties de votre application peuvent n'être utilisées que par un petit nombre d'utilisateurs.  Dans ce cas, vous souhaitez télécharger un assembly uniquement lorsque vous créez l'un de ses types.  La procédure pas à pas suivante montre comment marquer certains assemblys de votre application comme « facultatifs » et les télécharger à l'aide de classes de l'espace de noms <xref:System.Deployment.Application> lorsque le Common Language Runtime \(CLR\) en a besoin.  
+---
+# <a name="walkthrough-downloading-assemblies-on-demand-with-the-clickonce-deployment-api"></a>Walkthrough: Downloading Assemblies on Demand with the ClickOnce Deployment API
+By default, all of the assemblies included in a [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] application are downloaded when the application is first run. However, you may have parts of your application that are used by a small set of your users. In this case, you want to download an assembly only when you create one of its types. The following walkthrough demonstrates how to mark certain assemblies in your application as "optional", and how to download them by using classes in the <xref:System.Deployment.Application> namespace when the common language runtime (CLR) demands them.  
   
 > [!NOTE]
->  Votre application devra s'exécuter avec une confiance totale pour utiliser cette procédure.  
+>  Your application will have to run in full trust to use this procedure.  
   
-## Composants requis  
- Vous aurez besoin d'un des composants suivants pour exécuter cette procédure pas à pas :  
+## <a name="prerequisites"></a>Prerequisites  
+ You will need one of the following components to complete this walkthrough:  
   
--   Kit de développement logiciel Windows.  Le Kit de développement logiciel \(SDK\) Windows peut être téléchargé à partir du Centre de téléchargement Microsoft.  
+-   The Windows SDK. The Windows SDK can be downloaded from the Microsoft Download Center.  
   
--   Visual Studio.  
+-   Visual Studio.  
   
-## Création du projet  
+## <a name="creating-the-projects"></a>Creating the Projects  
   
-#### Pour créer un projet qui utilise un assembly à la demande  
+#### <a name="to-create-a-project-that-uses-an-on-demand-assembly"></a>To create a project that uses an on-demand assembly  
   
-1.  Créez un répertoire nommé ClickOnceOnDemand.  
+1.  Create a directory named ClickOnceOnDemand.  
   
-2.  Ouvrez l'invite de commandes du Kit de développement Windows SDK ou l'invite de commandes [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)].  
+2.  Open the Windows SDK Command Prompt or the [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] Command Prompt.  
   
-3.  Accédez au répertoire ClickOnceOnDemand.  
+3.  Change to the ClickOnceOnDemand directory.  
   
-4.  Générez une paire de clés publique\/privée à l'aide de la commande suivante :  
+4.  Generate a public/private key pair using the following command:  
   
     ```  
     sn -k TestKey.snk  
     ```  
   
-5.  À l'aide du Bloc\-notes ou d'un autre éditeur de texte, définissez une classe nommée `DynamicClass` avec une seule propriété appelée `Message`.  
+5.  Using Notepad or another text editor, define a class named `DynamicClass` with a single property named `Message`.  
   
-     [!code-vb[ClickOnceLibrary#1](../deployment/codesnippet/VisualBasic/walkthrough-downloading-assemblies-on-demand-with-the-clickonce-deployment-api_1.vb)]
-     [!code-cs[ClickOnceLibrary#1](../deployment/codesnippet/CSharp/walkthrough-downloading-assemblies-on-demand-with-the-clickonce-deployment-api_1.cs)]  
+     [!code-vb[ClickOnceLibrary#1](../deployment/codesnippet/VisualBasic/walkthrough-downloading-assemblies-on-demand-with-the-clickonce-deployment-api_1.vb)]  [!code-cs[ClickOnceLibrary#1](../deployment/codesnippet/CSharp/walkthrough-downloading-assemblies-on-demand-with-the-clickonce-deployment-api_1.cs)]  
   
-6.  Enregistrez le texte en tant que fichier nommé `ClickOnceLibrary.cs` ou `ClickOnceLibrary.vb`, selon le langage vous utilisez, dans le répertoire ClickOnceOnDemand.  
+6.  Save the text as a file named `ClickOnceLibrary.cs` or `ClickOnceLibrary.vb`, depending on the language you use, to the ClickOnceOnDemand directory.  
   
-7.  Compilez le fichier dans un assembly.  
+7.  Compile the file into an assembly.  
   
-    ```c#  
+    ```cs  
     csc /target:library /keyfile:TestKey.snk ClickOnceLibrary.cs  
     ```  
   
-    ```vb#  
+    ```vb  
     vbc /target:library /keyfile:TestKey.snk ClickOnceLibrary.vb  
     ```  
   
-8.  Pour obtenir le jeton de clé publique de l'assembly, utilisez la commande suivante :  
+8.  To get the public key token for the assembly, use the following command:  
   
     ```  
     sn -T ClickOnceLibrary.dll  
     ```  
   
-9. Créez un fichier à l'aide de votre éditeur de texte et entrez le code suivant.  Ce code crée une application Windows Forms qui télécharge l'assembly ClickOnceLibrary lorsqu'il est requis.  
+9. Create a new file using your text editor and enter the following code. This code creates a Windows Forms application that downloads the ClickOnceLibrary assembly when it is required.  
   
-     [!code-cs[ClickOnceOnDemandCmdLine#1](../deployment/codesnippet/CSharp/walkthrough-downloading-assemblies-on-demand-with-the-clickonce-deployment-api_2.cs)]
-     [!code-vb[ClickOnceOnDemandCmdLine#1](../deployment/codesnippet/VisualBasic/walkthrough-downloading-assemblies-on-demand-with-the-clickonce-deployment-api_2.vb)]  
+     [!code-cs[ClickOnceOnDemandCmdLine#1](../deployment/codesnippet/CSharp/walkthrough-downloading-assemblies-on-demand-with-the-clickonce-deployment-api_2.cs)]   [!code-vb[ClickOnceOnDemandCmdLine#1](../deployment/codesnippet/VisualBasic/walkthrough-downloading-assemblies-on-demand-with-the-clickonce-deployment-api_2.vb)]  
   
-10. Dans le code, localisez l'appel à <xref:System.Reflection.Assembly.LoadFile%2A>.  
+10. In the code, locate the call to <xref:System.Reflection.Assembly.LoadFile%2A>.  
   
-11. Affectez à `PublicKeyToken` la valeur que vous avez récupérée précédemment.  
+11. Set`PublicKeyToken` to the value that you retrieved earlier.  
   
-12. Enregistrez le fichier en tant que `Form1.cs` ou `Form1.vb`.  
+12. Save the file as either `Form1.cs` or `Form1.vb`.  
   
-13. Compilez\-le dans un fichier exécutable à l'aide de la commande suivante.  
+13. Compile it into an executable using the following command.  
   
-    ```c#  
+    ```cs  
     csc /target:exe /reference:ClickOnceLibrary.dll Form1.cs  
     ```  
   
-    ```vb#  
+    ```vb  
     vbc /target:exe /reference:ClickOnceLibrary.dll Form1.vb  
     ```  
   
-## Marquage d'assemblys comme étant facultatifs  
+## <a name="marking-assemblies-as-optional"></a>Marking Assemblies as Optional  
   
-#### Pour marquer des assemblys comme étant facultatifs dans votre application ClickOnce à l'aide de MageUI.exe  
+#### <a name="to-mark-assemblies-as-optional-in-your-clickonce-application-by-using-mageuiexe"></a>To mark assemblies as optional in your ClickOnce application by using MageUI.exe  
   
-1.  À l'aide de MageUI.exe, créez un manifeste d'application comme décrit dans [Walkthrough: Manually Deploying a ClickOnce Application](../deployment/walkthrough-manually-deploying-a-clickonce-application.md).  Utilisez les paramètres suivants pour le manifeste d'application :  
+1.  Using MageUI.exe, create an application manifest as described in [Walkthrough: Manually Deploying a ClickOnce Application](../deployment/walkthrough-manually-deploying-a-clickonce-application.md). Use the following settings for the application manifest:  
   
-    -   Nommez le manifeste d'application `ClickOnceOnDemand`.  
+    -   Name the application manifest `ClickOnceOnDemand`.  
   
-    -   Dans la page **Fichiers**, sur la ligne ClickOnceLibrary.dll, affectez à la colonne **Type de fichier** la valeur **Aucun**.  
+    -   On the **Files** page, in the ClickOnceLibrary.dll row, set the **File Type** column to **None**.  
   
-    -   Dans la page **Fichiers**, sur la ligne ClickOnceLibrary.dll, tapez `ClickOnceLibrary.dll` dans la colonne **Groupe**.  
+    -   On the **Files** page, in the ClickOnceLibrary.dll row, type `ClickOnceLibrary.dll` in the **Group** column.  
   
-2.  À l'aide de MageUI.exe, créez un manifeste de déploiement comme décrit dans [Walkthrough: Manually Deploying a ClickOnce Application](../deployment/walkthrough-manually-deploying-a-clickonce-application.md).  Utilisez les paramètres suivants pour le manifeste de déploiement :  
+2.  Using MageUI.exe, create a deployment manifest as described in [Walkthrough: Manually Deploying a ClickOnce Application](../deployment/walkthrough-manually-deploying-a-clickonce-application.md). Use the following settings for the deployment manifest:  
   
-    -   Nommez le manifeste de déploiement `ClickOnceOnDemand`.  
+    -   Name the deployment manifest `ClickOnceOnDemand`.  
   
-## Test du nouvel assembly  
+## <a name="testing-the-new-assembly"></a>Testing the New Assembly  
   
-#### Pour tester votre assembly à la demande  
+#### <a name="to-test-your-on-demand-assembly"></a>To test your on-demand assembly  
   
-1.  Téléchargez votre déploiement [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] sur un serveur Web.  
+1.  Upload your [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] deployment to a Web server.  
   
-2.  Lancez votre application déployée avec [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] à partir d'un navigateur Web en entrant l'URL du manifeste de déploiement.  Si vous appelez votre application [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] `ClickOnceOnDemand` et si vous la téléchargez dans le répertoire racine de adatum.com, votre URL se présente comme suit :  
+2.  Start your application deployed with [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] from a Web browser by entering the URL to the deployment manifest. If you call your [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] application `ClickOnceOnDemand`, and you upload it to the root directory of adatum.com, your URL would look like this:  
   
     ```  
     http://www.adatum.com/ClickOnceOnDemand/ClickOnceOnDemand.application  
     ```  
   
-3.  Lorsque votre formulaire principal apparaît, appuyez sur <xref:System.Windows.Forms.Button>.  Vous devez voir la chaîne "Hello World\!" dans une fenêtre de message.  
+3.  When your main form appears, press the <xref:System.Windows.Forms.Button>. You should see a string in a message box window that reads "Hello, World!".  
   
-## Voir aussi  
+## <a name="see-also"></a>See Also  
  <xref:System.Deployment.Application.ApplicationDeployment>

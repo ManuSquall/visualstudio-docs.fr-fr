@@ -1,34 +1,51 @@
 ---
-title: "CA2151 : les champs avec des types critiques doivent &#234;tre des champs critiques de s&#233;curit&#233; | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-devops-test"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+title: 'CA2151: Fields with critical types should be security critical | Microsoft Docs'
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology:
+- vs-devops-test
+ms.tgt_pltfrm: 
+ms.topic: article
 ms.assetid: 09db9d25-7d58-4725-a252-4a07baadf046
 caps.latest.revision: 4
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
-caps.handback.revision: 4
----
-# CA2151 : les champs avec des types critiques doivent &#234;tre des champs critiques de s&#233;curit&#233;
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
+author: stevehoag
+ms.author: shoag
+manager: wpickett
+translation.priority.ht:
+- cs-cz
+- de-de
+- es-es
+- fr-fr
+- it-it
+- ja-jp
+- ko-kr
+- pl-pl
+- pt-br
+- ru-ru
+- tr-tr
+- zh-cn
+- zh-tw
+ms.translationtype: HT
+ms.sourcegitcommit: ff8ecec19f8cab04ac2190f9a4a995766f1750bf
+ms.openlocfilehash: b80c378d146629c553bd3f228b58c501f04d79fe
+ms.contentlocale: fr-fr
+ms.lasthandoff: 08/23/2017
 
+---
+# <a name="ca2151-fields-with-critical-types-should-be-security-critical"></a>CA2151: Fields with critical types should be security critical
 |||  
 |-|-|  
 |TypeName||  
 |CheckId|CA2151|  
-|Catégorie|Microsoft.Security|  
-|Modification avec rupture|Rupture|  
+|Category|Microsoft.Security|  
+|Breaking Change|Breaking|  
   
-## Cause  
- Un champ transparent de sécurité ou un champ critique sécurisé est déclaré.  Son type est spécifié comme critique de sécurité.  Par exemple :  
+## <a name="cause"></a>Cause  
+ A security transparent field or a safe critical field is declared. Its type is specified as security critical. For example:  
   
-```c#  
+```cs  
 [assembly: AllowPartiallyTrustedCallers]  
   
    [SecurityCritical]  
@@ -41,15 +58,15 @@ caps.handback.revision: 4
   
 ```  
   
- Dans cet exemple, `m_field` est un champ transparent de sécurité d'un type critique de sécurité.  
+ In this example, `m_field` is a security transparent field of a type that is security critical.  
   
-## Description de la règle  
- Pour utiliser les types critiques de sécurité, le code qui référence le type doit être critique de sécurité ou critique sécurisé.  Ceci est vrai même si la référence est indirecte.  Par exemple, lorsque vous faites référence à un champ transparent de type critique, votre code doit être critique de sécurité ou critique sécurisé.  Par conséquent, un champ transparent de sécurité ou critique sécurisé est trompeur, car le code transparent ne pourra toujours pas accéder au champ.  
+## <a name="rule-description"></a>Rule Description  
+ To use security critical types, the code that references the type must be either security critical or security safe critical. This is true even if the reference is indirect. For example, when you reference a transparent field that has a critical type, your code must be either security critical or security safe. Therefore, having a security transparent or security safe critical field is misleading because transparent code will still be unable to access the field.  
   
-## Comment corriger les violations  
- Pour corriger une violation de cette règle, marquez le champ avec l'attribut <xref:System.Security.SecurityCriticalAttribute> ou faites en sorte que le type référencé par le champ soit transparent de sécurité ou critique sécurisé.  
+## <a name="how-to-fix-violations"></a>How to Fix Violations  
+ To fix a violation of this rule, mark the field with the <xref:System.Security.SecurityCriticalAttribute> attribute, or make the type that is referenced by the field eith security transparent or safe critical.  
   
-```c#  
+```cs  
 // Fix 1: Make the referencing field security critical  
 [assembly: AllowPartiallyTrustedCallers]  
   
@@ -75,10 +92,10 @@ caps.handback.revision: 4
   
 ```  
   
-## Quand supprimer les avertissements  
- Ne supprimez aucun avertissement de cette règle.  
+## <a name="when-to-suppress-warnings"></a>When to Suppress Warnings  
+ Do not suppress a warning from this rule.  
   
-### Code  
+### <a name="code"></a>Code  
  [!code-cs[FxCop.Security.CA2145.TransparentMethodsShouldNotUseSuppressUnmanagedCodeSecurity#1](../code-quality/codesnippet/CSharp/ca2151-fields-with-critical-types-should-be-security-critical_1.cs)]  
   
-### Commentaires
+### <a name="comments"></a>Comments

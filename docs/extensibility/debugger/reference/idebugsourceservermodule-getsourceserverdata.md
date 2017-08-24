@@ -1,54 +1,71 @@
 ---
-title: "IDebugSourceServerModule::GetSourceServerData | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-helpviewer_keywords: 
-  - "IDebugSourceServerModule::GetSourceServerData"
+title: IDebugSourceServerModule::GetSourceServerData | Microsoft Docs
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology:
+- vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+helpviewer_keywords:
+- IDebugSourceServerModule::GetSourceServerData
 ms.assetid: f15d86aa-1bd9-4b16-a64a-21b01c27db2e
 caps.latest.revision: 9
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 9
----
-# IDebugSourceServerModule::GetSourceServerData
-[!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]
+ms.author: gregvanl
+manager: ghogen
+translation.priority.mt:
+- cs-cz
+- de-de
+- es-es
+- fr-fr
+- it-it
+- ja-jp
+- ko-kr
+- pl-pl
+- pt-br
+- ru-ru
+- tr-tr
+- zh-cn
+- zh-tw
+ms.translationtype: MT
+ms.sourcegitcommit: ff8ecec19f8cab04ac2190f9a4a995766f1750bf
+ms.openlocfilehash: 636b0b9810985ce753867edb2175d47ff1c65f73
+ms.contentlocale: fr-fr
+ms.lasthandoff: 08/23/2017
 
-Récupère un tableau des informations du serveur source.  
+---
+# <a name="idebugsourceservermodulegetsourceserverdata"></a>IDebugSourceServerModule::GetSourceServerData
+Retrieves an array of source server information.  
   
-## Syntaxe  
+## <a name="syntax"></a>Syntax  
   
 ```cpp#  
 HRESULT GetSourceServerData(  
-   ULONG* pDataByteCount,   
-   BYTE** ppData  
+   ULONG* pDataByteCount,   
+   BYTE** ppData  
 );  
 ```  
   
-```c#  
+```cs  
 public int GetSourceServerData(  
-   out uint  pDataByteCount,   
-   out int[] ppData  
+   out uint  pDataByteCount,   
+   out int[] ppData  
 );  
 ```  
   
-#### Paramètres  
+#### <a name="parameters"></a>Parameters  
  `pDataByteCount`  
- \[out\]  Nombre d'octets dans le tableau de données.  
+ [out] Number of bytes in the data array.  
   
  `ppData`  
- \[out\]  Référence au tableau de données.  
+ [out] Reference to the data array.  
   
-## Valeur de retour  
- En cas de réussite, retourne `S_OK`; sinon, retourne un code d'erreur.  
+## <a name="return-value"></a>Return Value  
+ If successful, returns `S_OK`; otherwise, returns an error code.  
   
-## Exemple  
- L'exemple suivant indique comment appliquer cette méthode d'un objet **de CModule** qui expose l'interface d' [IDebugSourceServerModule](../../../extensibility/debugger/reference/idebugsourceservermodule.md) .  
+## <a name="example"></a>Example  
+ The following example shows how to implement this method for a **CModule** object that exposes the [IDebugSourceServerModule](../../../extensibility/debugger/reference/idebugsourceservermodule.md) interface.  
   
 ```cpp#  
 HRESULT CModule::GetSourceServerData(ULONG* pDataByteCount, BYTE** ppData)  
@@ -72,5 +89,5 @@ Error:
 }  
 ```  
   
-## Voir aussi  
+## <a name="see-also"></a>See Also  
  [IDebugSourceServerModule](../../../extensibility/debugger/reference/idebugsourceservermodule.md)

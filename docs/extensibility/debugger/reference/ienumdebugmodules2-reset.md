@@ -1,5 +1,5 @@
 ---
-title: IEnumDebugModules2::Reset | Documents Microsoft
+title: IEnumDebugModules2::Reset | Microsoft Docs
 ms.custom: 
 ms.date: 11/04/2016
 ms.reviewer: 
@@ -30,16 +30,17 @@ translation.priority.mt:
 - tr-tr
 - zh-cn
 - zh-tw
-translationtype: Machine Translation
-ms.sourcegitcommit: 5db97d19b1b823388a465bba15d057b30ff0b3ce
-ms.openlocfilehash: c13d9c10efd0c802db3b54018495e6905bdd81ac
-ms.lasthandoff: 02/22/2017
+ms.translationtype: MT
+ms.sourcegitcommit: ff8ecec19f8cab04ac2190f9a4a995766f1750bf
+ms.openlocfilehash: d6152a3006328951d0ea5635ed87b6bd75325264
+ms.contentlocale: fr-fr
+ms.lasthandoff: 08/23/2017
 
 ---
 # <a name="ienumdebugmodules2reset"></a>IEnumDebugModules2::Reset
-Réinitialise l’énumération au premier élément.  
+Resets the enumeration to the first element.  
   
-## <a name="syntax"></a>Syntaxe  
+## <a name="syntax"></a>Syntax  
   
 ```cpp#  
 HRESULT Reset(  
@@ -47,15 +48,15 @@ HRESULT Reset(
 );  
 ```  
   
-```c#  
+```cs  
 int Reset();  
 ```  
   
-## <a name="return-value"></a>Valeur de retour  
- En cas de réussite, retourne `S_OK`; sinon, retourne un code d’erreur.  
+## <a name="return-value"></a>Return Value  
+ If successful, returns `S_OK`; otherwise, returns an error code.  
   
-## <a name="remarks"></a>Remarques  
- Une fois que cette méthode est appelée, l’appel suivant à la [suivant](../../../extensibility/debugger/reference/ienumdebugmodules2-next.md) méthode retourne le premier élément de l’énumération.  
+## <a name="remarks"></a>Remarks  
+ After this method is called, the next call to the [Next](../../../extensibility/debugger/reference/ienumdebugmodules2-next.md) method returns the first element of the enumeration.  
   
-## <a name="see-also"></a>Voir aussi  
+## <a name="see-also"></a>See Also  
  [IEnumDebugModules2](../../../extensibility/debugger/reference/ienumdebugmodules2.md)

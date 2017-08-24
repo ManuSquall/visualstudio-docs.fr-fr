@@ -1,5 +1,5 @@
 ---
-title: "Obtention d’une liste d’installé des extraits de Code (hérité) | Documents Microsoft"
+title: Getting a List of Installed Code Snippets (Legacy) | Microsoft Docs
 ms.custom: 
 ms.date: 11/04/2016
 ms.reviewer: 
@@ -30,24 +30,25 @@ translation.priority.mt:
 - tr-tr
 - zh-cn
 - zh-tw
-translationtype: Machine Translation
-ms.sourcegitcommit: d5bc147592bfc36247c35f23ac2885055d096af3
-ms.openlocfilehash: d49d5eb1a6a2e045d477dd03fba9372123cae83a
-ms.lasthandoff: 02/22/2017
+ms.translationtype: MT
+ms.sourcegitcommit: ff8ecec19f8cab04ac2190f9a4a995766f1750bf
+ms.openlocfilehash: 51bac52e28b37818b45fd63d3c30bebb7e8d8d35
+ms.contentlocale: fr-fr
+ms.lasthandoff: 08/23/2017
 
 ---
-# <a name="walkthrough-getting-a-list-of-installed-code-snippets-legacy-implementation"></a>Procédure pas à pas : Obtention d’une liste d’extraits de Code installé (implémentation hérité)
-Un extrait de code est un fragment de code qui peut être insérée dans la mémoire tampon source avec une commande de menu (ce qui permet de choisir parmi une liste d’extraits de code installé) ou en sélectionnant un raccourci d’extrait de code dans une liste de saisie semi-automatique IntelliSense.  
+# <a name="walkthrough-getting-a-list-of-installed-code-snippets-legacy-implementation"></a>Walkthrough: Getting a List of Installed Code Snippets (Legacy Implementation)
+A code snippet is a piece of code that can be inserted into the source buffer either with a menu command (which allows choosing among a list of installed code snippets) or by selecting a snippet shortcut from an IntelliSense completion list.  
   
- Le <xref:Microsoft.VisualStudio.TextManager.Interop.IVsExpansionManager.EnumerateExpansions%2A>méthode obtient tous les extraits de code pour une langue spécifique GUID.</xref:Microsoft.VisualStudio.TextManager.Interop.IVsExpansionManager.EnumerateExpansions%2A> Les raccourcis pour les extraits de code peuvent être insérées dans une liste de saisie semi-automatique IntelliSense.  
+ The <xref:Microsoft.VisualStudio.TextManager.Interop.IVsExpansionManager.EnumerateExpansions%2A> method gets all code snippets for a specific language GUID. The shortcuts for those snippets can be inserted into an IntelliSense completion list.  
   
- Consultez la page [prise en charge des extraits de Code dans un Service de langage hérité](../../extensibility/internals/support-for-code-snippets-in-a-legacy-language-service.md) pour plus d’informations sur l’implémentation des extraits de code dans un service de langage managé package framework (MPF).  
+ See [Support for Code Snippets in a Legacy Language Service](../../extensibility/internals/support-for-code-snippets-in-a-legacy-language-service.md) for details about implementing code snippets in a managed package framework (MPF) language service.  
   
-### <a name="to-retrieve-a-list-of-code-snippets"></a>Pour récupérer une liste d’extraits de code  
+### <a name="to-retrieve-a-list-of-code-snippets"></a>To retrieve a list of code snippets  
   
-1.  Le code suivant montre comment obtenir la liste des extraits de code pour une langue donnée. Les résultats sont stockés dans un tableau de <xref:Microsoft.VisualStudio.TextManager.Interop.VsExpansion>structures.</xref:Microsoft.VisualStudio.TextManager.Interop.VsExpansion> Cette méthode utilise la méthode statique <xref:Microsoft.VisualStudio.Shell.Package.GetGlobalService%2A>méthode permettant d’obtenir le <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextManager>de l’interface à partir de la <xref:Microsoft.VisualStudio.TextManager.Interop.SVsTextManager>service.</xref:Microsoft.VisualStudio.TextManager.Interop.SVsTextManager> </xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextManager> </xref:Microsoft.VisualStudio.Shell.Package.GetGlobalService%2A> Toutefois, vous pouvez également utiliser le fournisseur de services donné à votre package VS et les appeler le <xref:Microsoft.VisualStudio.OLE.Interop.IServiceProvider.QueryService%2A>méthode.</xref:Microsoft.VisualStudio.OLE.Interop.IServiceProvider.QueryService%2A>  
+1.  The following code shows how to get a list of code snippets for a given language. The results are stored in an array of <xref:Microsoft.VisualStudio.TextManager.Interop.VsExpansion> structures. This method uses the static <xref:Microsoft.VisualStudio.Shell.Package.GetGlobalService%2A> method to get the <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextManager> interface from the <xref:Microsoft.VisualStudio.TextManager.Interop.SVsTextManager> service. However, you can also use the service provider given to your VSPackage and call the <xref:Microsoft.VisualStudio.OLE.Interop.IServiceProvider.QueryService%2A> method.  
   
-    ```c#  
+    ```cs  
     using System;  
     using System.Collections;  
     using System.Runtime.InteropServices;  
@@ -118,14 +119,14 @@ Un extrait de code est un fragment de code qui peut être insérée dans la mém
     }  
     ```  
   
-### <a name="to-call-the-getsnippets-method"></a>Pour appeler la méthode GetSnippets  
+### <a name="to-call-the-getsnippets-method"></a>To call the GetSnippets method  
   
-1.  La méthode suivante montre comment appeler le `GetSnippets` méthode à la fin d’une opération d’analyse. <xref:Microsoft.VisualStudio.Package.LanguageService.OnParseComplete%2A>méthode est appelée après une opération d’analyse qui a été démarrée avec la raison <xref:Microsoft.VisualStudio.Package.ParseReason>.</xref:Microsoft.VisualStudio.Package.ParseReason> </xref:Microsoft.VisualStudio.Package.LanguageService.OnParseComplete%2A>  
+1.  The following method shows how to call the `GetSnippets` method at the completion of a parsing operation. The <xref:Microsoft.VisualStudio.Package.LanguageService.OnParseComplete%2A> method is called after a parsing operation that was started with the reason <xref:Microsoft.VisualStudio.Package.ParseReason>.  
   
 > [!NOTE]
->  Le `expansionsList` tableau listis mis en cache pour des raisons de performances. Modifications apportées aux extraits de code ne sont pas répercutées dans la liste jusqu'à ce que le service de langage est arrêté et rechargé (par exemple, en arrêtant et redémarrant [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]).  
+>  The `expansionsList` array listis cached for performance reasons. Changes to the snippets are not reflected in the list until the language service is stopped and reloaded (for example, by stopping and restarting [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]).  
   
-```c#  
+```cs  
 class TestLanguageService : LanguageService  
 {  
     private ArrayList expansionsList;  
@@ -142,15 +143,15 @@ class TestLanguageService : LanguageService
 }  
 ```  
   
-### <a name="to-use-the-snippet-information"></a>Pour utiliser les informations de l’extrait de code  
+### <a name="to-use-the-snippet-information"></a>To use the snippet information  
   
-1.  Le code suivant montre comment utiliser les informations de l’extrait de code renvoyées par le `GetSnippets` (méthode). Le `AddSnippets` méthode est appelée à partir de l’Analyseur de réponse pour une raison quelconque, l’analyse est utilisée pour remplir une liste d’extraits de code. Cela doit avoir lieu une fois l’analyse complète a été effectuée pour la première fois.  
+1.  The following code shows how to use the snippet information returned by the `GetSnippets` method. The `AddSnippets` method is called from the parser in response to any parse reason that is used to populate a list of code snippets. This should take place after the full parse has been done for the first time.  
   
-     Le `AddDeclaration` méthode crée une liste des déclarations qui est ensuite affichée dans une liste de saisie semi-automatique.  
+     The `AddDeclaration` method builds a list of declarations that is later displayed in a completion list.  
   
-     La `TestDeclaration` classe contient toutes les informations qui peuvent être affichées dans une liste de saisie semi-automatique, ainsi que le type de déclaration.  
+     The `TestDeclaration` class contains all the information that can be displayed in a completion list as well as the type of declaration.  
   
-    ```c#  
+    ```cs  
     class TestAuthoringScope : AuthoringScope  
     {  
         public void AddDeclarations(TestDeclaration declaration)  
@@ -193,5 +194,5 @@ class TestLanguageService : LanguageService
   
     ```  
   
-## <a name="see-also"></a>Voir aussi  
- [Prise en charge des extraits de Code dans un Service de langage hérité](../../extensibility/internals/support-for-code-snippets-in-a-legacy-language-service.md)
+## <a name="see-also"></a>See Also  
+ [Support for Code Snippets in a Legacy Language Service](../../extensibility/internals/support-for-code-snippets-in-a-legacy-language-service.md)

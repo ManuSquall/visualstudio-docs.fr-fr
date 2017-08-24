@@ -1,51 +1,68 @@
 ---
-title: "IDebugArrayObject::GetElements | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "IDebugArrayObject::GetElements"
-helpviewer_keywords: 
-  - "IDebugArrayObject::GetElements (méthode)"
+title: IDebugArrayObject::GetElements | Microsoft Docs
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology:
+- vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords:
+- IDebugArrayObject::GetElements
+helpviewer_keywords:
+- IDebugArrayObject::GetElements method
 ms.assetid: f6a6262f-5183-46ce-8a45-33ef46088b98
 caps.latest.revision: 10
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 10
----
-# IDebugArrayObject::GetElements
-[!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]
+ms.author: gregvanl
+manager: ghogen
+translation.priority.mt:
+- cs-cz
+- de-de
+- es-es
+- fr-fr
+- it-it
+- ja-jp
+- ko-kr
+- pl-pl
+- pt-br
+- ru-ru
+- tr-tr
+- zh-cn
+- zh-tw
+ms.translationtype: MT
+ms.sourcegitcommit: ff8ecec19f8cab04ac2190f9a4a995766f1750bf
+ms.openlocfilehash: e656313cdd0ffce45e7e2668990db1e22bf0f5f9
+ms.contentlocale: fr-fr
+ms.lasthandoff: 08/23/2017
 
-Obtient un énumérateur de tous les éléments du tableau.  
+---
+# <a name="idebugarrayobjectgetelements"></a>IDebugArrayObject::GetElements
+Gets an enumerator of all elements of the array.  
   
-## Syntaxe  
+## <a name="syntax"></a>Syntax  
   
 ```cpp#  
-HRESULT GetElements(   
-   IEnumDebugObjects** ppEnum  
+HRESULT GetElements(   
+   IEnumDebugObjects** ppEnum  
 );  
 ```  
   
-```c#  
+```cs  
 int GetElements(  
-   out IEnumDebugObjects ppEnum  
+   out IEnumDebugObjects ppEnum  
 );  
 ```  
   
-#### Paramètres  
+#### <a name="parameters"></a>Parameters  
  `ppEnum`  
- \[out\]  Retourne un objet d' [IEnumDebugObjects](../../../extensibility/debugger/reference/ienumdebugobjects.md) qui permet d'énumérer sein de tous les éléments.  
+ [out] Returns an [IEnumDebugObjects](../../../extensibility/debugger/reference/ienumdebugobjects.md) object that allows enumerating over all elements.  
   
-## Valeur de retour  
- En cas de réussite, retourne S\_OK ; sinon, retourne un code d'erreur.  
+## <a name="return-value"></a>Return Value  
+ If successful, returns S_OK; otherwise, returns an error code.  
   
-## Notes  
- Sinon, utilisez les méthodes d' [GetCount](../../../extensibility/debugger/reference/idebugarrayobject-getcount.md) et d' [GetElement](../Topic/IDebugArrayObject::GetElement.md) pour itérer au sein de les éléments.  
+## <a name="remarks"></a>Remarks  
+ As an alternative, use the [GetCount](../../../extensibility/debugger/reference/idebugarrayobject-getcount.md) and [GetElement](../../../extensibility/debugger/reference/idebugarrayobject-getelement.md) methods to iterate through the elements.  
   
-## Voir aussi  
+## <a name="see-also"></a>See Also  
  [IDebugArrayObject](../../../extensibility/debugger/reference/idebugarrayobject.md)

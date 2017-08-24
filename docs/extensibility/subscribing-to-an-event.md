@@ -1,5 +1,5 @@
 ---
-title: "S’abonner à un événement | Documents Microsoft"
+title: Subscribing to an Event | Microsoft Docs
 ms.custom: 
 ms.date: 11/04/2016
 ms.reviewer: 
@@ -29,29 +29,30 @@ translation.priority.mt:
 - tr-tr
 - zh-cn
 - zh-tw
-translationtype: Machine Translation
-ms.sourcegitcommit: 5db97d19b1b823388a465bba15d057b30ff0b3ce
-ms.openlocfilehash: 6bd1dd320ad5366ef494a8db958614d837529320
-ms.lasthandoff: 02/22/2017
+ms.translationtype: MT
+ms.sourcegitcommit: ff8ecec19f8cab04ac2190f9a4a995766f1750bf
+ms.openlocfilehash: 67e33377873d86731b839d114d155cc09adeefaf
+ms.contentlocale: fr-fr
+ms.lasthandoff: 08/23/2017
 
 ---
-# <a name="subscribing-to-an-event"></a>S’abonner à un événement
-Cette procédure pas à pas explique comment créer une fenêtre outil qui répond aux événements dans une table de documents en cours d’exécution (r & DT). Une fenêtre outil héberge un contrôle utilisateur qui implémente <xref:Microsoft.VisualStudio.Shell.Interop.IVsRunningDocTableEvents>.</xref:Microsoft.VisualStudio.Shell.Interop.IVsRunningDocTableEvents> Le <xref:Microsoft.VisualStudio.Shell.Interop.IVsRunningDocumentTable.AdviseRunningDocTableEvents%2A>méthode connecte l’interface aux événements.</xref:Microsoft.VisualStudio.Shell.Interop.IVsRunningDocumentTable.AdviseRunningDocTableEvents%2A>  
+# <a name="subscribing-to-an-event"></a>Subscribing to an Event
+This walkthrough explains how to create a tool window that responds to events in a running document table (RDT). A tool window hosts a user control that implements <xref:Microsoft.VisualStudio.Shell.Interop.IVsRunningDocTableEvents>. The <xref:Microsoft.VisualStudio.Shell.Interop.IVsRunningDocumentTable.AdviseRunningDocTableEvents%2A> method connects the interface to the events.  
   
-## <a name="prerequisites"></a>Conditions préalables  
- À partir de Visual Studio 2015, vous n’installez pas Visual Studio SDK à partir du centre de téléchargement. Il est inclus comme fonctionnalité facultative dans le programme d’installation de Visual Studio. Vous pouvez également installer le Kit de développement logiciel Visual Studio plus tard. Pour plus d’informations, consultez [l’installation du Kit de développement logiciel Visual Studio](../extensibility/installing-the-visual-studio-sdk.md).  
+## <a name="prerequisites"></a>Prerequisites  
+ Starting in Visual Studio 2015, you do not install the Visual Studio SDK from the download center. It is included as an optional feature in Visual Studio setup. You can also install the VS SDK later on. For more information, see [Installing the Visual Studio SDK](../extensibility/installing-the-visual-studio-sdk.md).  
   
-## <a name="subscribing-to-rdt-events"></a>S’abonner aux événements de r & DT  
+## <a name="subscribing-to-rdt-events"></a>Subscribing to RDT Events  
   
-#### <a name="to-create-an-extension-with-a-tool-window"></a>Pour créer une extension avec une fenêtre outil  
+#### <a name="to-create-an-extension-with-a-tool-window"></a>To create an extension with a tool window  
   
-1.  Créez un projet nommé **RDTExplorer** à l’aide du modèle VSIX et ajouter un modèle d’élément de fenêtre Outil personnalisée nommé **RDTExplorerWindow**.  
+1.  Create a project named **RDTExplorer** using the VSIX template, and add a custom tool window item template named **RDTExplorerWindow**.  
   
-     Pour plus d’informations sur la création d’une extension avec une fenêtre outil, consultez [création d’une Extension avec une fenêtre outil](../extensibility/creating-an-extension-with-a-tool-window.md).  
+     For more information about creating an extension with a tool window, see [Creating an Extension with a Tool Window](../extensibility/creating-an-extension-with-a-tool-window.md).  
   
-#### <a name="to-subscribe-to-rdt-events"></a>S’abonner aux événements de r & DT  
+#### <a name="to-subscribe-to-rdt-events"></a>To subscribe to RDT events  
   
-1.  Ouvrez le fichier RDTExplorerWindowControl.xaml et supprimez le bouton nommé `button1`. Ajouter un <xref:System.Windows.Forms.ListBox>contrôler et acceptez le nom par défaut.</xref:System.Windows.Forms.ListBox> L’élément Grid doit ressembler à ceci :  
+1.  Open the RDTExplorerWindowControl.xaml file and delete the button named `button1`. Add a <xref:System.Windows.Forms.ListBox> control and accept the default name. The Grid element should look like this:  
   
     ```xml  
     <Grid>  
@@ -62,42 +63,42 @@ Cette procédure pas à pas explique comment créer une fenêtre outil qui répo
     </Grid>  
     ```  
   
-2.  Ouvrez le fichier RDTExplorerWindow.cs en mode code. Ajoutez le code suivant à l’aide d’instructions au début du fichier.  
+2.  Open the RDTExplorerWindow.cs file in code view. Add the following using statements to the start of the file.  
   
-    ```c#  
+    ```cs  
     using Microsoft.VisualStudio;  
     using Microsoft.VisualStudio.Shell;  
     using Microsoft.VisualStudio.Shell.Interop;  
     ```  
   
-3.  Modifier la `RDTExplorerWindow` classe ainsi qu’en plus de dériver à partir de la <xref:Microsoft.VisualStudio.Shell.ToolWindowPane>(classe), il implémente le <xref:Microsoft.VisualStudio.Shell.Interop.IVsRunningDocTableEvents>interface.</xref:Microsoft.VisualStudio.Shell.Interop.IVsRunningDocTableEvents> </xref:Microsoft.VisualStudio.Shell.ToolWindowPane>  
+3.  Modify the `RDTExplorerWindow` class so that, in addition to deriving from the <xref:Microsoft.VisualStudio.Shell.ToolWindowPane> class, it implements the <xref:Microsoft.VisualStudio.Shell.Interop.IVsRunningDocTableEvents> interface.  
   
-    ```c#  
+    ```cs  
     public class RDTExplorerWindow : ToolWindowPane, IVsRunningDocTableEvents  
     {. . .}  
     ```  
   
-4.  Implémentez <xref:Microsoft.VisualStudio.Shell.Interop.IVsRunningDocTableEvents>.</xref:Microsoft.VisualStudio.Shell.Interop.IVsRunningDocTableEvents>  
+4.  Implement <xref:Microsoft.VisualStudio.Shell.Interop.IVsRunningDocTableEvents>.  
   
-    -   Implémentez l’interface. Placez le curseur sur le nom de IVsRunningDocTableEvents. Vous devez voir une ampoule apparaît dans la marge de gauche. Cliquez sur la flèche à droite de l’ampoule et sélectionnez **implémenter l’interface**.  
+    -   Implement the interface. Place the cursor on the IVsRunningDocTableEvents name. You should see a light bulb in the left margin. Click the Down arrow to the right of the light bulb and select **Implement interface**.  
   
-5.  Dans chaque méthode dans l’interface, remplacez la ligne `throw new NotImplementedException();` avec ce :  
+5.  In each method in the interface, replace the line `throw new NotImplementedException();` with this:  
   
-    ```c#  
+    ```cs  
     return VSConstants.S_OK;  
     ```  
   
-6.  Ajouter un champ de cookie à la classe RDTExplorerWindow.  
+6.  Add a cookie field to the RDTExplorerWindow class.  
   
-    ```c#  
+    ```cs  
     private uint rdtCookie;   
     ```  
   
-     Cela maintient le cookie qui est retourné par la <xref:Microsoft.VisualStudio.Shell.Interop.IVsRunningDocumentTable.AdviseRunningDocTableEvents%2A>méthode.</xref:Microsoft.VisualStudio.Shell.Interop.IVsRunningDocumentTable.AdviseRunningDocTableEvents%2A>  
+     This holds the cookie that is returned by the <xref:Microsoft.VisualStudio.Shell.Interop.IVsRunningDocumentTable.AdviseRunningDocTableEvents%2A> method.  
   
-7.  Substituez la méthode de Initialize() de la RDTExplorerWindow inscrire les événements de r & DT. Vous devez toujours obtenir les services dans la méthode Initialize() de la ToolWindowPane, pas dans le constructeur.  
+7.  Override the RDTExplorerWindow's Initialize() method to register for RDT events. You should always get services in the ToolWindowPane's Initialize() method, not in the constructor.  
   
-    ```c#  
+    ```cs  
     protected override void Initialize()  
     {  
         IVsRunningDocumentTable rdt = (IVsRunningDocumentTable)  
@@ -106,11 +107,11 @@ Cette procédure pas à pas explique comment créer une fenêtre outil qui répo
     }  
     ```  
   
-     Le <xref:Microsoft.VisualStudio.Shell.Interop.SVsRunningDocumentTable>service est appelé pour obtenir un <xref:Microsoft.VisualStudio.Shell.Interop.IVsRunningDocumentTable>interface.</xref:Microsoft.VisualStudio.Shell.Interop.IVsRunningDocumentTable> </xref:Microsoft.VisualStudio.Shell.Interop.SVsRunningDocumentTable> Le <xref:Microsoft.VisualStudio.Shell.Interop.IVsRunningDocumentTable.AdviseRunningDocTableEvents%2A>méthode connecte les événements de r & DT à un objet qui implémente <xref:Microsoft.VisualStudio.Shell.Interop.IVsRunningDocTableEvents>, dans ce cas, un objet RDTExplorer.</xref:Microsoft.VisualStudio.Shell.Interop.IVsRunningDocTableEvents> </xref:Microsoft.VisualStudio.Shell.Interop.IVsRunningDocumentTable.AdviseRunningDocTableEvents%2A>  
+     The <xref:Microsoft.VisualStudio.Shell.Interop.SVsRunningDocumentTable> service is called to obtain an <xref:Microsoft.VisualStudio.Shell.Interop.IVsRunningDocumentTable> interface. The <xref:Microsoft.VisualStudio.Shell.Interop.IVsRunningDocumentTable.AdviseRunningDocTableEvents%2A> method connects RDT events to an object that implements <xref:Microsoft.VisualStudio.Shell.Interop.IVsRunningDocTableEvents>, in this case, a RDTExplorer object.  
   
-8.  Mettre à jour la méthode Dispose() de la RDTExplorerWindow.  
+8.  Update the RDTExplorerWindow's Dispose() method.  
   
-    ```c#  
+    ```cs  
     protected override void Dispose(bool disposing)  
     {  
         // Release the RDT cookie.  
@@ -122,11 +123,11 @@ Cette procédure pas à pas explique comment créer une fenêtre outil qui répo
     }  
     ```  
   
-     Le <xref:Microsoft.VisualStudio.Shell.Interop.IVsRunningDocumentTable.UnadviseRunningDocTableEvents%2A>méthode supprime la connexion entre `RDTExplorer` et la notification d’événement de r & DT.</xref:Microsoft.VisualStudio.Shell.Interop.IVsRunningDocumentTable.UnadviseRunningDocTableEvents%2A>  
+     The <xref:Microsoft.VisualStudio.Shell.Interop.IVsRunningDocumentTable.UnadviseRunningDocTableEvents%2A> method deletes the connection between `RDTExplorer` and RDT event notification.  
   
-9. Ajoutez la ligne suivante au corps de la <xref:Microsoft.VisualStudio.Shell.Interop.IVsRunningDocTableEvents.OnBeforeLastDocumentUnlock%2A>Gestionnaire, juste avant la `return` instruction.</xref:Microsoft.VisualStudio.Shell.Interop.IVsRunningDocTableEvents.OnBeforeLastDocumentUnlock%2A>  
+9. Add the following line to the body of the <xref:Microsoft.VisualStudio.Shell.Interop.IVsRunningDocTableEvents.OnBeforeLastDocumentUnlock%2A> handler, just before the `return` statement.  
   
-    ```c#  
+    ```cs  
     public int OnBeforeLastDocumentUnlock(uint docCookie, uint dwRDTLockType, uint dwReadLocksRemaining, uint dwEditLocksRemaining)  
     {  
         ((RDTExplorerWindowControl)this.Content).listBox.Items.Add("Entering OnBeforeLastDocumentUnlock");  
@@ -134,9 +135,9 @@ Cette procédure pas à pas explique comment créer une fenêtre outil qui répo
     }  
     ```  
   
-10. Ajoutez une ligne semblable dans le corps de la <xref:Microsoft.VisualStudio.Shell.Interop.IVsRunningDocTableEvents.OnAfterFirstDocumentLock%2A>Gestionnaire et à d’autres événements que vous souhaitez voir dans la zone de liste.</xref:Microsoft.VisualStudio.Shell.Interop.IVsRunningDocTableEvents.OnAfterFirstDocumentLock%2A>  
+10. Add a similar line to the body of the <xref:Microsoft.VisualStudio.Shell.Interop.IVsRunningDocTableEvents.OnAfterFirstDocumentLock%2A> handler and to other events that you want to see in the list box.  
   
-    ```c#  
+    ```cs  
     public int OnAfterFirstDocumentLock(uint docCookie, uint dwRDTLockType, uint dwReadLocksRemaining, uint dwEditLocksRemaining)  
     {  
         ((RDTExplorerWindowControl)this.Content).listBox.Items.Add("Entering OnAfterFirstDocumentLock");  
@@ -144,12 +145,12 @@ Cette procédure pas à pas explique comment créer une fenêtre outil qui répo
     }  
     ```  
   
-11. Générez le projet et commencez le débogage. L’instance expérimentale de Visual Studio s’affiche.  
+11. Build the project and start debugging. The Visual Studio experimental instance appears.  
   
-12. Ouvrez la **RDTExplorerWindow** (**affichage / autres fenêtres / RDTExplorerWindow**).  
+12. Open the **RDTExplorerWindow** (**View / Other Windows / RDTExplorerWindow**).  
   
-     Le **RDTExplorerWindow** fenêtre s’ouvre avec une liste d’événements vide.  
+     The **RDTExplorerWindow** window opens with an empty event list.  
   
-13. Ouvrez ou créez une solution.  
+13. Open or create a solution.  
   
-     En tant que `OnBeforeLastDocument` et `OnAfterFirstDocument` les événements sont déclenchés, notification de chaque événement apparaît dans l’événement liste.
+     As `OnBeforeLastDocument` and `OnAfterFirstDocument` events are fired, notification of each event appears in the event list.

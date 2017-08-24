@@ -1,5 +1,5 @@
 ---
-title: IDebugPort2::GetPortSupplier | Documents Microsoft
+title: IDebugPort2::GetPortSupplier | Microsoft Docs
 ms.custom: 
 ms.date: 11/04/2016
 ms.reviewer: 
@@ -30,16 +30,17 @@ translation.priority.mt:
 - tr-tr
 - zh-cn
 - zh-tw
-translationtype: Machine Translation
-ms.sourcegitcommit: 5db97d19b1b823388a465bba15d057b30ff0b3ce
-ms.openlocfilehash: 675529c920c933aae9425de9b3a90c40bbbe71a6
-ms.lasthandoff: 02/22/2017
+ms.translationtype: MT
+ms.sourcegitcommit: ff8ecec19f8cab04ac2190f9a4a995766f1750bf
+ms.openlocfilehash: 5d675e9ce9565896a953aa4f80437312539c0e10
+ms.contentlocale: fr-fr
+ms.lasthandoff: 08/23/2017
 
 ---
 # <a name="idebugport2getportsupplier"></a>IDebugPort2::GetPortSupplier
-Obtient le fournisseur de port pour ce port.  
+Gets the port supplier for this port.  
   
-## <a name="syntax"></a>Syntaxe  
+## <a name="syntax"></a>Syntax  
   
 ```cpp#  
 HRESULT GetPortSupplier(   
@@ -47,19 +48,19 @@ HRESULT GetPortSupplier(
 );  
 ```  
   
-```c#  
+```cs  
 int GetPortSupplier(   
    out IDebugPortSupplier2 ppSupplier  
 );  
 ```  
   
-#### <a name="parameters"></a>Paramètres  
+#### <a name="parameters"></a>Parameters  
  `ppSupplier`  
- [out] Retourne un [IDebugPortSupplier2](../../../extensibility/debugger/reference/idebugportsupplier2.md) objet représente le fournisseur de port pour un port.  
+ [out] Returns an [IDebugPortSupplier2](../../../extensibility/debugger/reference/idebugportsupplier2.md) object represents the port supplier for a port.  
   
-## <a name="return-value"></a>Valeur de retour  
- En cas de réussite, retourne `S_OK`; sinon, retourne un code d’erreur.  
+## <a name="return-value"></a>Return Value  
+ If successful, returns `S_OK`; otherwise, returns an error code.  
   
-## <a name="see-also"></a>Voir aussi  
+## <a name="see-also"></a>See Also  
  [IDebugPort2](../../../extensibility/debugger/reference/idebugport2.md)   
  [IDebugPortSupplier2](../../../extensibility/debugger/reference/idebugportsupplier2.md)

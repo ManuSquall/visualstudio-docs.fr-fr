@@ -1,5 +1,5 @@
 ---
-title: "Validation des points d’arrêt dans un Service de langage hérité | Documents Microsoft"
+title: Validating Breakpoints in a Legacy Language Service | Microsoft Docs
 ms.custom: 
 ms.date: 11/04/2016
 ms.reviewer: 
@@ -29,33 +29,34 @@ translation.priority.mt:
 - tr-tr
 - zh-cn
 - zh-tw
-translationtype: Machine Translation
-ms.sourcegitcommit: 5db97d19b1b823388a465bba15d057b30ff0b3ce
-ms.openlocfilehash: 3a8c2df45c0a834430a499cf6a7e7ef2da10bdbf
-ms.lasthandoff: 02/22/2017
+ms.translationtype: MT
+ms.sourcegitcommit: ff8ecec19f8cab04ac2190f9a4a995766f1750bf
+ms.openlocfilehash: ca3399abbcb3f1238c7f2481a59403412c50fd0c
+ms.contentlocale: fr-fr
+ms.lasthandoff: 08/23/2017
 
 ---
-# <a name="validating-breakpoints-in-a-legacy-language-service"></a>Validation des points d’arrêt dans un Service de langage hérité
-Un point d’arrêt indique que l’exécution du programme doit s’arrêter à un moment donné pendant l’exécution dans un débogueur. Un utilisateur peut placer un point d’arrêt sur n’importe quelle ligne dans le fichier source, comme l’éditeur n’a aucune connaissance de ce qui constitue un emplacement valide pour un point d’arrêt. Lorsque le débogueur est lancé, tous les points d’arrêt marquées (appelés en attente de points d’arrêt) sont liés à l’emplacement approprié dans le programme en cours d’exécution. En même temps que les points d’arrêt sont validées pour garantir qu’ils marquent les emplacements de code valide. Par exemple, un point d’arrêt sur un commentaire n’est pas valide, car il n’existe aucun code à cet emplacement dans le code source. Le débogueur désactive les points d’arrêt non valides.  
+# <a name="validating-breakpoints-in-a-legacy-language-service"></a>Validating Breakpoints in a Legacy Language Service
+A breakpoint indicates that program execution should stop at a particular point while it is being run in a debugger. A user can place a breakpoint on any line in the source file, since the editor has no knowledge of what constitutes a valid location for a breakpoint. When the debugger is launched, all of the marked breakpoints (called pending breakpoints) are bound to the appropriate location in the running program. At the same time the breakpoints are validated to ensure that they mark valid code  locations. For example, a breakpoint on a comment is not valid, because there is no code at that location in the source code. The debugger disables invalid breakpoints.  
   
- Étant donné que le service de langage connaît le code source s’affiche, il peut valider des points d’arrêt avant de lancer le débogueur. Vous pouvez remplacer le <xref:Microsoft.VisualStudio.Package.LanguageService.ValidateBreakpointLocation%2A>méthode pour retourner une plage en spécifiant un emplacement valide pour un point d’arrêt.</xref:Microsoft.VisualStudio.Package.LanguageService.ValidateBreakpointLocation%2A> L’emplacement du point d’arrêt est toujours validé lorsque le débogueur est lancé, mais l’utilisateur est averti de points d’arrêt non valides sans attendre que le débogueur charge.  
+ Since the language service knows about the source code being displayed, it can validate breakpoints before the debugger is launched. You can override the <xref:Microsoft.VisualStudio.Package.LanguageService.ValidateBreakpointLocation%2A> method to return a span specifying a valid location for a breakpoint. The breakpoint location is still validated when the debugger is launched, but the user is notified of invalid breakpoints without waiting for the debugger to load.  
   
-## <a name="implementing-support-for-validating-breakpoints"></a>L’implémentation de la prise en charge pour la validation des points d’arrêt  
+## <a name="implementing-support-for-validating-breakpoints"></a>Implementing Support for Validating Breakpoints  
   
--   Le <xref:Microsoft.VisualStudio.Package.LanguageService.ValidateBreakpointLocation%2A>la position du point d’arrêt est donnée à la méthode.</xref:Microsoft.VisualStudio.Package.LanguageService.ValidateBreakpointLocation%2A> Votre implémentation doit décider ou non de l’emplacement est valide et indiquer ceci en retournant une étendue de texte qui identifie le code associé à la position de ligne du point d’arrêt.  
+-   The <xref:Microsoft.VisualStudio.Package.LanguageService.ValidateBreakpointLocation%2A> method is given the position of the breakpoint. Your implementation must decide whether or not the location is valid, and indicate this by returning a text span that identifies the code associated with the line position the breakpoint.  
   
--   Retourner <xref:Microsoft.VisualStudio.VSConstants.S_OK>Si l’emplacement est valide, ou <xref:Microsoft.VisualStudio.VSConstants.S_FALSE>s’il n’est pas valide.</xref:Microsoft.VisualStudio.VSConstants.S_FALSE> </xref:Microsoft.VisualStudio.VSConstants.S_OK>  
+-   Return <xref:Microsoft.VisualStudio.VSConstants.S_OK> if the location is valid, or <xref:Microsoft.VisualStudio.VSConstants.S_FALSE> if it is not valid.  
   
--   Si le point d’arrêt est valide, l’étendue de texte est mis en surbrillance, ainsi que le point d’arrêt.  
+-   If the breakpoint is valid the text span is highlighted along with the breakpoint.  
   
--   Si le point d’arrêt n’est pas valide, un message d’erreur s’affiche dans la barre d’état.  
+-   If the breakpoint is invalid, an error message appears in the status bar.  
   
-### <a name="example"></a>Exemple  
- Cet exemple illustre une implémentation de la <xref:Microsoft.VisualStudio.Package.LanguageService.ValidateBreakpointLocation%2A>méthode qui appelle l’analyseur pour obtenir l’étendue de code (le cas échéant) à l’emplacement spécifié.</xref:Microsoft.VisualStudio.Package.LanguageService.ValidateBreakpointLocation%2A>  
+### <a name="example"></a>Example  
+ This example shows an implementation of the <xref:Microsoft.VisualStudio.Package.LanguageService.ValidateBreakpointLocation%2A> method that calls the parser to obtain the span of code (if any) at the specified location.  
   
- Cet exemple suppose que vous avez ajouté un `GetCodeSpan` méthode à la <xref:Microsoft.VisualStudio.Package.AuthoringSink>classe qui valide l’étendue de texte et la retourne `true` s’il s’agit d’un point d’arrêt valide.</xref:Microsoft.VisualStudio.Package.AuthoringSink>  
+ This example assumes that you have added a `GetCodeSpan` method to the <xref:Microsoft.VisualStudio.Package.AuthoringSink> class that validates the text span and returns `true` if it is a valid breakpoint location.  
   
-```c#  
+```cs  
 using Microsoft VisualStudio;  
 using Microsoft.VisualStudio.Package;  
 using Microsoft.VisualStudio.TextManager.Interop;  
@@ -115,5 +116,5 @@ namespace TestLanguagePackage
 }  
 ```  
   
-## <a name="see-also"></a>Voir aussi  
- [Fonctionnalités du Service de langage ancien](../../extensibility/internals/legacy-language-service-features1.md)
+## <a name="see-also"></a>See Also  
+ [Legacy Language Service Features](../../extensibility/internals/legacy-language-service-features1.md)

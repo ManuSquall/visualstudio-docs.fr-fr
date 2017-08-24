@@ -1,40 +1,57 @@
 ---
-title: "Propri&#233;t&#233;s de Document personnalis&#233;es dans un Service de langage h&#233;rit&#233; | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-helpviewer_keywords: 
-  - "propriétés de document personnalisées, les services de langage (framework package managé)"
-  - "propriétés de document personnalisées"
-  - "services de langage (framework package managé), les propriétés de document personnalisées"
+title: Custom Document Properties in a Legacy Language Service | Microsoft Docs
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology:
+- vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+helpviewer_keywords:
+- custom document properties, language services [managed package framework]
+- document properties, custom
+- language services [managed package framework], custom document properties
 ms.assetid: cc714a67-b33e-4440-9203-3c90f648bd9c
 caps.latest.revision: 18
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 18
----
-# Propri&#233;t&#233;s de Document personnalis&#233;es dans un Service de langage h&#233;rit&#233;
-[!INCLUDE[vs2017banner](../../code-quality/includes/vs2017banner.md)]
+ms.author: gregvanl
+manager: ghogen
+translation.priority.mt:
+- cs-cz
+- de-de
+- es-es
+- fr-fr
+- it-it
+- ja-jp
+- ko-kr
+- pl-pl
+- pt-br
+- ru-ru
+- tr-tr
+- zh-cn
+- zh-tw
+ms.translationtype: MT
+ms.sourcegitcommit: ff8ecec19f8cab04ac2190f9a4a995766f1750bf
+ms.openlocfilehash: 92ab0eaeeafdaf89c9534ed9e9af0d48db868f81
+ms.contentlocale: fr-fr
+ms.lasthandoff: 08/23/2017
 
-Les propriétés de document peuvent être affichées dans la fenêtre de [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]**Propriétés** .  Les langages de programmation en général n'ont pas de propriétés associées à des fichiers sources. Toutefois, les propriétés de document de prises en charge XML qui affectent l'encodage, le schéma, et la feuille de style.  
+---
+# <a name="custom-document-properties-in-a-legacy-language-service"></a>Custom Document Properties in a Legacy Language Service
+Document properties can be displayed in the [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] **Properties** window. Programming languages generally do not have properties associated with individual source files. However, XML supports document properties that affect the encoding, schema, and stylesheet.  
   
-## Discussion  
- Si votre langage a besoin de propriétés de document personnalisées, vous devez dériver une classe de la classe d' <xref:Microsoft.VisualStudio.Package.DocumentProperties> et implémenter des propriétés nécessaires sur votre classe dérivée.  
+## <a name="discussion"></a>Discussion  
+ If your language needs custom document properties, you must derive a class from the <xref:Microsoft.VisualStudio.Package.DocumentProperties> class and implement the necessary properties on your derived class.  
   
- En outre, les propriétés du document sont généralement stockées dans le fichier source lui\-même.  Cela exige du service de langage pour analyser les informations de propriété du fichier source à afficher dans la fenêtre de **Propriétés** et pour mettre à jour le fichier source lorsqu'une modification est apportée aux propriétés de document de la fenêtre de **Propriétés** .  
+ In addition, document properties are typically stored in the source file itself. This requires the language service to parse the property information from the source file to display in the **Properties** window and to update the source file when a change is made to the document properties in the **Properties** window.  
   
-## personnaliser la classe de DocumentProperties  
- Pour prendre en charge des propriétés de document personnalisées, vous devez dériver une classe de la classe d' <xref:Microsoft.VisualStudio.Package.DocumentProperties> et ajouter autant de propriétés comme vous avez besoin.  Vous devez également fournir des attributs d'utilisateur pour les organiser dans l'affichage de la fenêtre de **Propriétés** .  Si une propriété n'a qu'un accesseur d' `get` , elle est affichée en lecture seule dans la fenêtre de **Propriétés** .  Si une propriété a `get` les accesseurs d' `set` , la propriété peut également être mise à jour dans la fenêtre de **Propriétés** .  
+## <a name="customizing-the-documentproperties-class"></a>Customizing the DocumentProperties Class  
+ To support custom document properties, you must derive a class from the <xref:Microsoft.VisualStudio.Package.DocumentProperties> class and add as many properties as you need. You should also supply user attributes to organize them in the **Properties** window display. If a property has only a `get` accessor, it is shown as read-only in the **Properties** window. If a property has both `get` and `set` accessors, the property can also be updated in the **Properties** window.  
   
-### Exemple  
- Voici une classe d'exemple dérivée d' <xref:Microsoft.VisualStudio.Package.DocumentProperties>, en affichant deux propriétés, les noms de fichiers et descriptions.  Lorsqu'une propriété est mise à jour, une méthode personnalisée pour la classe d' <xref:Microsoft.VisualStudio.Package.LanguageService> est appelée pour écrire la propriété au fichier source.  
+### <a name="example"></a>Example  
+ Here is an example class derived from <xref:Microsoft.VisualStudio.Package.DocumentProperties>, showing two properties, Filename and Description. When a property is updated, a custom method on the <xref:Microsoft.VisualStudio.Package.LanguageService> class is called to write the property to the source file.  
   
-```c#  
+```cs  
 using System.ComponentModel;  
 using Microsoft.VisualStudio.Package;  
   
@@ -121,12 +138,12 @@ namespace TestLanguagePackage
 }  
 ```  
   
-## instancier la classe personnalisée de DocumentProperties  
- Pour instancier votre classe de propriétés de document personnalisées, vous devez substituer la méthode d' <xref:Microsoft.VisualStudio.Package.LanguageService.CreateDocumentProperties%2A> dans votre version de la classe d' <xref:Microsoft.VisualStudio.Package.LanguageService> pour retourner une seule instance de votre classe d' <xref:Microsoft.VisualStudio.Package.DocumentProperties> .  
+## <a name="instantiating-the-custom-documentproperties-class"></a>Instantiating the Custom DocumentProperties class  
+ To instantiate your custom document properties class, you must override the <xref:Microsoft.VisualStudio.Package.LanguageService.CreateDocumentProperties%2A> method in your version of the <xref:Microsoft.VisualStudio.Package.LanguageService> class to return a single instance of your <xref:Microsoft.VisualStudio.Package.DocumentProperties> class.  
   
-### Exemple  
+### <a name="example"></a>Example  
   
-```c#  
+```cs  
 using System.ComponentModel;  
 using Microsoft.VisualStudio.Package;  
   
@@ -148,22 +165,22 @@ namespace TestLanguagePackage
 }  
 ```  
   
-## propriétés dans le fichier source  
- Étant donné que les propriétés de document sont généralement spécifiques au fichier source, les valeurs sont stockées dans le fichier source lui\-même.  Cela requiert la prise en charge de l'analyseur ou de scanneur de langage pour définir ces propriétés.  Par exemple, les propriétés d'un document XML sont à la racine nœud enregistré.  Le nœud de valeurs à la racine sont modifiés lorsque les valeurs de fenêtre de **Propriétés** sont modifiées, et le nœud racine est mis à jour dans l'éditeur.  
+## <a name="properties-in-the-source-file"></a>Properties in the Source File  
+ Since document properties are usually specific to the source file, the values are stored in the source file itself. This requires support from the language parser or scanner to define these properties. For example, the properties of an XML document are stored on the root node. The values on the root node are modified when the **Properties** window values are changed, and the root node is updated in the editor.  
   
-### Exemple  
- Cet exemple enregistre les propriétés « nomfichier » et « description » dans les deux premières lignes du fichier source, incorporées dans un en\-tête spécial de commentaire, comme suit :  
+### <a name="example"></a>Example  
+ This example stores the properties "Filename" and "Description" in the first two lines of the source file, embedded in a special comment header, as:  
   
 ```  
 //!Filename = file.testext  
 //!Description = A sample file  
 ```  
   
- Cet exemple indique que les deux méthodes nécessaires pour obtenir et définir les propriétés de document les deux premières lignes du fichier source et comment les propriétés sont mises à jour si l'utilisateur modifie le fichier source directement.  La méthode d' `SetPropertyValue` dans l'exemple présenté ici est la même appelée à partir de la classe d' `TestDocumentProperties` comme indiqué dans la section « personnalisation de DocumentProperties classe ».  
+ This example shows the two methods needed to get and set the document properties from the first two lines of the source file as well as how the properties are updated if the user modifies the source file directly. The `SetPropertyValue` method in the example shown here is the same one called from the `TestDocumentProperties` class as shown in the "Customizing the DocumentProperties class" section.  
   
- Cet exemple utilise le scanner pour déterminer le type de jetons dans les deux premières lignes.  Cet exemple est dans des fins de illustration uniquement.  Une approche plus courant à cette situation est d'analyser le fichier source en ce qu'on appelle arborescence d'analyser où chaque nœud de l'arborescence contient des informations sur un jeton donné.  Le nœud racine contient les propriétés du document.  
+ This example uses the scanner to determine the type of tokens in the first two lines. This example is for illustrative purposes only. A more typical approach to this situation is to parse the source file into what is called a parse tree where each node of the tree contains information about a particular token. The root node would contain the document properties.  
   
-```c#  
+```cs  
 using System.ComponentModel;  
 using Microsoft.VisualStudio.Package;  
   
@@ -398,5 +415,5 @@ namespace TestLanguagePackage
 }  
 ```  
   
-## Voir aussi  
- [Fonctionnalités du Service de langage ancien](../../extensibility/internals/legacy-language-service-features1.md)
+## <a name="see-also"></a>See Also  
+ [Legacy Language Service Features](../../extensibility/internals/legacy-language-service-features1.md)

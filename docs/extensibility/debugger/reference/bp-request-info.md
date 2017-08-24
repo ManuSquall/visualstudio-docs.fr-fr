@@ -1,111 +1,128 @@
 ---
-title: "BP_REQUEST_INFO | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "BP_REQUEST_INFO"
-helpviewer_keywords: 
-  - "Structure BP_REQUEST_INFO"
+title: BP_REQUEST_INFO | Microsoft Docs
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology:
+- vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords:
+- BP_REQUEST_INFO
+helpviewer_keywords:
+- BP_REQUEST_INFO structure
 ms.assetid: 42a31412-5b6b-47fe-a762-0c2bc769e1cc
 caps.latest.revision: 9
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 9
----
-# BP_REQUEST_INFO
-[!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]
+ms.author: gregvanl
+manager: ghogen
+translation.priority.mt:
+- cs-cz
+- de-de
+- es-es
+- fr-fr
+- it-it
+- ja-jp
+- ko-kr
+- pl-pl
+- pt-br
+- ru-ru
+- tr-tr
+- zh-cn
+- zh-tw
+ms.translationtype: MT
+ms.sourcegitcommit: ff8ecec19f8cab04ac2190f9a4a995766f1750bf
+ms.openlocfilehash: e7ca82d33c4fd7d67a75864a4b5b92971e837c2b
+ms.contentlocale: fr-fr
+ms.lasthandoff: 08/23/2017
 
-Contient des informations requises pour implémenter un point d'arrêt.  
+---
+# <a name="bprequestinfo"></a>BP_REQUEST_INFO
+Contains the information required to implement a breakpoint.  
   
-## Syntaxe  
+## <a name="syntax"></a>Syntax  
   
 ```cpp#  
-typedef struct _BP_REQUEST_INFO {  
-   BPREQI_FIELDS   dwFields;  
-   GUID            guidLanguage;  
-   BP_LOCATION     bpLocation;  
-   IDebugProgram2* pProgram;  
-   BSTR            bstrProgramName;  
-   IDebugThread2*  pThread;  
-   BSTR            bstrThreadName;  
-   BP_CONDITION    bpCondition;  
-   BP_PASSCOUNT    bpPassCount;  
-   BP_FLAGS        dwFlags;  
-} BP_REQUEST_INFO;  
+typedef struct _BP_REQUEST_INFO {  
+   BPREQI_FIELDS   dwFields;  
+   GUID            guidLanguage;  
+   BP_LOCATION     bpLocation;  
+   IDebugProgram2* pProgram;  
+   BSTR            bstrProgramName;  
+   IDebugThread2*  pThread;  
+   BSTR            bstrThreadName;  
+   BP_CONDITION    bpCondition;  
+   BP_PASSCOUNT    bpPassCount;  
+   BP_FLAGS        dwFlags;  
+} BP_REQUEST_INFO;  
 ```  
   
-```c#  
-public struct BP_REQUEST_INFO {  
-   public uint           dwFields;  
-   public Guid           guidLanguage;  
-   public BP_LOCATION    bpLocation;  
-   public IDebugProgram2 pProgram;  
-   public string         bstrProgramName;  
-   public IDebugThread2  pThread;  
-   public string         bstrThreadName;  
-   public BP_CONDITION   bpCondition;  
-   public BP_PASSCOUNT   bpPassCount;  
-   public uint           dwFlags;  
+```cs  
+public struct BP_REQUEST_INFO {  
+   public uint           dwFields;  
+   public Guid           guidLanguage;  
+   public BP_LOCATION    bpLocation;  
+   public IDebugProgram2 pProgram;  
+   public string         bstrProgramName;  
+   public IDebugThread2  pThread;  
+   public string         bstrThreadName;  
+   public BP_CONDITION   bpCondition;  
+   public BP_PASSCOUNT   bpPassCount;  
+   public uint           dwFlags;  
 };  
 ```  
   
-## Membres  
+## <a name="members"></a>Members  
  `dwFields`  
- Une combinaison des indicateurs d'énumération de [BPREQI\_FIELDS](../../../extensibility/debugger/reference/bpreqi-fields.md) qui spécifie quels champs sont remplis.  
+ A combination of flags from the [BPREQI_FIELDS](../../../extensibility/debugger/reference/bpreqi-fields.md) enumeration that specifies which fields are filled out.  
   
  `guidLanguage`  
- le langage GUID.  
+ The language GUID.  
   
  `bpLocation`  
- la structure de [BP\_LOCATION](../../../extensibility/debugger/reference/bp-location.md) qui spécifie le type de l'emplacement du point d'arrêt.  
+ The [BP_LOCATION](../../../extensibility/debugger/reference/bp-location.md) structure that specifies the type of the breakpoint location.  
   
  `pProgram`  
- l'objet d' [IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md) qui représente l'application dans laquelle le point d'arrêt se produit.  
+ The [IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md) object that represents the application in which the breakpoint occurs.  
   
  `bstrProgramName`  
- le nom de l'application dans laquelle le point d'arrêt se produit.  
+ The name of the application in which the breakpoint occurs.  
   
  `pThread`  
- L'objet d' [IDebugThread2](../../../extensibility/debugger/reference/idebugthread2.md) qui représente le thread dans lequel le point d'arrêt se produit.  
+ The [IDebugThread2](../../../extensibility/debugger/reference/idebugthread2.md) object that represents the thread in which the breakpoint occurs.  
   
  `bstrThreadName`  
- Le nom du thread où le point d'arrêt se produit.  
+ The name of the thread in which the breakpoint occurs.  
   
  `bpCondition`  
- La structure de [BP\_CONDITION](../../../extensibility/debugger/reference/bp-condition.md) qui décrit les conditions dans lesquelles le point d'arrêt le déclenche.  
+ The [BP_CONDITION](../../../extensibility/debugger/reference/bp-condition.md) structure that describes the conditions under which the breakpoint will fire.  
   
  `bpPassCount`  
- La structure de [BP\_PASSCOUNT](../../../extensibility/debugger/reference/bp-passcount.md) qui contient des informations sur le nombre à partir de le point d'arrêt.  
+ The [BP_PASSCOUNT](../../../extensibility/debugger/reference/bp-passcount.md) structure that contains the pass count information of the breakpoint.  
   
  `dwFlags`  
- Une combinaison des indicateurs d'énumération de [BP\_FLAGS](../../../extensibility/debugger/reference/bp-flags.md) qui spécifie des indicateurs pour le point d'arrêt demandé.  
+ A combination of flags from the [BP_FLAGS](../../../extensibility/debugger/reference/bp-flags.md) enumeration that specifies the flags for the requested breakpoint.  
   
-## Notes  
- cette structure est retournée par la méthode d' [GetRequestInfo](../../../extensibility/debugger/reference/idebugbreakpointrequest2-getrequestinfo.md) .  
+## <a name="remarks"></a>Remarks  
+ This structure is returned by the [GetRequestInfo](../../../extensibility/debugger/reference/idebugbreakpointrequest2-getrequestinfo.md) method.  
   
- Si vous devez obtenir le GUID du fournisseur de moteur de débogage, la contrainte de point d'arrêt ou de trace, consultez la structure de [BP\_REQUEST\_INFO2](../../../extensibility/debugger/reference/bp-request-info2.md) .  
+ If you need to obtain the debug engine vendor GUID, the breakpoint constraint or the tracepoint, see the [BP_REQUEST_INFO2](../../../extensibility/debugger/reference/bp-request-info2.md) structure.  
   
-## Configuration requise  
- en\-tête : msdbg.h  
+## <a name="requirements"></a>Requirements  
+ Header: msdbg.h  
   
- l'espace de noms : Microsoft.VisualStudio.Debugger.Interop  
+ Namespace: Microsoft.VisualStudio.Debugger.Interop  
   
- Assembly : Microsoft.VisualStudio.Debugger.Interop.dll  
+ Assembly: Microsoft.VisualStudio.Debugger.Interop.dll  
   
-## Voir aussi  
- [Structures et Unions](../../../extensibility/debugger/reference/structures-and-unions.md)   
+## <a name="see-also"></a>See Also  
+ [Structures and Unions](../../../extensibility/debugger/reference/structures-and-unions.md)   
  [GetRequestInfo](../../../extensibility/debugger/reference/idebugbreakpointrequest2-getrequestinfo.md)   
- [BPREQI\_FIELDS](../../../extensibility/debugger/reference/bpreqi-fields.md)   
- [BP\_LOCATION](../../../extensibility/debugger/reference/bp-location.md)   
+ [BPREQI_FIELDS](../../../extensibility/debugger/reference/bpreqi-fields.md)   
+ [BP_LOCATION](../../../extensibility/debugger/reference/bp-location.md)   
  [IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md)   
  [IDebugThread2](../../../extensibility/debugger/reference/idebugthread2.md)   
- [BP\_CONDITION](../../../extensibility/debugger/reference/bp-condition.md)   
- [BP\_PASSCOUNT](../../../extensibility/debugger/reference/bp-passcount.md)   
- [BP\_FLAGS](../../../extensibility/debugger/reference/bp-flags.md)   
- [BP\_REQUEST\_INFO2](../../../extensibility/debugger/reference/bp-request-info2.md)
+ [BP_CONDITION](../../../extensibility/debugger/reference/bp-condition.md)   
+ [BP_PASSCOUNT](../../../extensibility/debugger/reference/bp-passcount.md)   
+ [BP_FLAGS](../../../extensibility/debugger/reference/bp-flags.md)   
+ [BP_REQUEST_INFO2](../../../extensibility/debugger/reference/bp-request-info2.md)
