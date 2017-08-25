@@ -28,11 +28,11 @@ translation.priority.mt:
 - pl-pl
 - pt-br
 - tr-tr
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 669bc5894727c207691a7e37937f432d98fee8b1
-ms.openlocfilehash: 845811bb9ee9552f8fc66b2d2b4b24ecdb04baf0
+ms.translationtype: HT
+ms.sourcegitcommit: 8a544bd1e1242bb6fabe00f7842ac33ed9d9d444
+ms.openlocfilehash: b19a309f403daa0a3881ec154aa4cd3f5e4d97dc
 ms.contentlocale: fr-fr
-ms.lasthandoff: 06/30/2017
+ms.lasthandoff: 08/14/2017
 
 ---
 # <a name="perftips"></a>Conseils sur les performances
@@ -46,7 +46,7 @@ Les *conseils sur les performances* du débogueur et les **outils de diagnostic*
  ![Conseil sur les performances](../profiling/media/dbgdiag_perf_perftip.png "DBGDIAG_PERF_PerfTip")  
   
 ## <a name="diagnostics-tools-window"></a>Fenêtre Outils de diagnostic  
- Les points d'arrêt et les données de minutage associées sont enregistrés dans la fenêtre Outils de diagnostic.  
+ Les points d’arrêt et les données de minutage associées sont enregistrés dans la fenêtre Outils de diagnostic.  
   
  L’illustration suivante montre la fenêtre Outils de diagnostic de Visual Studio 2015 Update 1 :  
   
@@ -76,3 +76,4 @@ Les *conseils sur les performances* du débogueur et les **outils de diagnostic*
 
 ## <a name="see-also"></a>Voir aussi
  [Profilage dans Visual Studio](../profiling/index.md) [Visite guidée des fonctionnalités de profilage](../profiling/profiling-feature-tour.md)
+
