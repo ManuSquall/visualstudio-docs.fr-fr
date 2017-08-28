@@ -1,52 +1,73 @@
 ---
-title: "OPTNAMECHANGEPFN | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "OPTNAMECHANGEPFN"
-helpviewer_keywords: 
-  - "Fonction de rappel OPTNAMECHANGEPFN"
+title: OPTNAMECHANGEPFN | Microsoft Docs
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology:
+- vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords:
+- OPTNAMECHANGEPFN
+helpviewer_keywords:
+- OPTNAMECHANGEPFN callback function
 ms.assetid: 147303f3-c7f1-438a-81b7-db891ea3d076
 caps.latest.revision: 11
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 11
----
-# OPTNAMECHANGEPFN
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
+ms.author: gregvanl
+manager: ghogen
+translation.priority.mt:
+- cs-cz
+- de-de
+- es-es
+- fr-fr
+- it-it
+- ja-jp
+- ko-kr
+- pl-pl
+- pt-br
+- ru-ru
+- tr-tr
+- zh-cn
+- zh-tw
+ms.translationtype: MT
+ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
+ms.openlocfilehash: 9bdd0dfb945e35580a04630cbb0f47830959e5a7
+ms.contentlocale: fr-fr
+ms.lasthandoff: 08/28/2017
 
-Il s'agit d'une fonction de rappel spécifiée dans un appel à la [SccSetOption](../extensibility/sccsetoption-function.md) \(à l'aide d'option `SCC_OPT_NAMECHANGEPFN`\) et est utilisé pour communiquer les modifications de nom effectuées par le contrôle de code source du plug\-in à l'IDE.  
+---
+# <a name="optnamechangepfn"></a>OPTNAMECHANGEPFN
+This is a callback function specified in a call to the [SccSetOption](../extensibility/sccsetoption-function.md) (using option `SCC_OPT_NAMECHANGEPFN`) and is used to communicate name changes made by the source control plug-in back to the IDE.  
   
-## Signature  
+## <a name="signature"></a>Signature  
   
-```cpp#  
-typedef void (*OPTNAMECHANGEPFN)( LPVOID pvCallerData, LPCSTR pszOldName, LPCSTR pszNewName );  
+```cpp  
+typedef void (*OPTNAMECHANGEPFN)(  
+   LPVOID pvCallerData,  
+   LPCSTR pszOldName,  
+   LPCSTR pszNewName  
+);  
 ```  
   
-## Paramètres  
+## <a name="parameters"></a>Parameters  
  pvCallerData  
- \[in\] Valeur de l'utilisateur spécifié dans un appel précédent à la [SccSetOption](../extensibility/sccsetoption-function.md) \(à l'aide d'option `SCC_OPT_USERDATA`\).  
+ [in] User value specified in a previous call to the [SccSetOption](../extensibility/sccsetoption-function.md) (using option `SCC_OPT_USERDATA`).  
   
  pszOldName  
- \[in\] Le nom du fichier d'origine.  
+ [in] The original name of the file.  
   
  pszNewName  
- \[in\] Le nom du fichier a été renommé.  
+ [in] The name the file was renamed to.  
   
-## Valeur de retour  
- Aucun  
+## <a name="return-value"></a>Return Value  
+ None.  
   
-## Notes  
- Si un fichier est renommé pendant une opération de contrôle de code source, le plug\-in de contrôle de code source peut avertir l'IDE sur le changement de nom à ce rappel.  
+## <a name="remarks"></a>Remarks  
+ If a file is renamed during a source control operation, the source control plug-in can notify the IDE about the name change through this callback.  
   
- Si l'IDE ne prend pas en charge ce rappel, elle n'appelle pas la [SccSetOption](../extensibility/sccsetoption-function.md) pour le spécifier. Si le plug\-in ne prend pas en charge ce rappel, elle retournera `SCC_E_OPNOTSUPPORTED` à partir de la `SccSetOption` lorsque l'IDE tente de définir le rappel de fonction.  
+ If the IDE does not support this callback, it will not call the [SccSetOption](../extensibility/sccsetoption-function.md) to specify it. If the plug-in does not support this callback, it will return `SCC_E_OPNOTSUPPORTED` from the `SccSetOption` function when the IDE attempts to set the callback.  
   
-## Voir aussi  
- [Fonctions de rappel implémentées par l'IDE](../extensibility/callback-functions-implemented-by-the-ide.md)   
+## <a name="see-also"></a>See Also  
+ [Callback Functions Implemented by the IDE](../extensibility/callback-functions-implemented-by-the-ide.md)   
  [SccSetOption](../extensibility/sccsetoption-function.md)

@@ -1,55 +1,72 @@
 ---
-title: "BP_LOCATION_CODE_FILE_LINE | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "BP_LOCATION_CODE_FILE_LINE"
-helpviewer_keywords: 
-  - "Structure BP_LOCATION_CODE_FILE_LINE"
+title: BP_LOCATION_CODE_FILE_LINE | Microsoft Docs
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology:
+- vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords:
+- BP_LOCATION_CODE_FILE_LINE
+helpviewer_keywords:
+- BP_LOCATION_CODE_FILE_LINE structure
 ms.assetid: 3ff32032-d412-44d3-91bf-870cc354a09e
 caps.latest.revision: 10
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 10
----
-# BP_LOCATION_CODE_FILE_LINE
-[!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]
+ms.author: gregvanl
+manager: ghogen
+translation.priority.mt:
+- cs-cz
+- de-de
+- es-es
+- fr-fr
+- it-it
+- ja-jp
+- ko-kr
+- pl-pl
+- pt-br
+- ru-ru
+- tr-tr
+- zh-cn
+- zh-tw
+ms.translationtype: MT
+ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
+ms.openlocfilehash: f303e96852c3a30e79137e0ac2bbbfad12b73fe8
+ms.contentlocale: fr-fr
+ms.lasthandoff: 08/28/2017
 
-Contient les données pour l'emplacement d'un point d'arrêt sur une ligne spécifique dans un fichier source du code.  
+---
+# <a name="bplocationcodefileline"></a>BP_LOCATION_CODE_FILE_LINE
+Contains the data for the location of a breakpoint at a specific line in a code source file.  
   
-## Syntaxe  
+## <a name="syntax"></a>Syntax  
   
-```cpp#  
-typedef struct _BP_LOCATION_CODE_FILE_LINE {   
-   BSTR                     bstrContext;  
-   IDebugDocumentPosition2* pDocPos;  
+```cpp  
+typedef struct _BP_LOCATION_CODE_FILE_LINE {   
+   BSTR                     bstrContext;  
+   IDebugDocumentPosition2* pDocPos;  
 } BP_LOCATION_CODE_FILE_LINE;  
 ```  
   
-## Membres  
+## <a name="members"></a>Members  
  `bstrContext`  
- Le contexte du point d'arrêt, en général une méthode ou un nom de fonction comme indiqué sur une pile des appels.  
+ The context of the breakpoint, typically a method or function name as seen on a call stack.  
   
  `pDocPos`  
- l'objet d' [IDebugDocumentPosition2](../../../extensibility/debugger/reference/idebugdocumentposition2.md) qui représente la position de document du point d'arrêt.  
+ The [IDebugDocumentPosition2](../../../extensibility/debugger/reference/idebugdocumentposition2.md) object that represents the document position of the breakpoint.  
   
-## Notes  
- Cette structure est un membre de la structure de [BP\_LOCATION](../../../extensibility/debugger/reference/bp-location.md) dans le cadre d'une union.  
+## <a name="remarks"></a>Remarks  
+ This structure is a member of the [BP_LOCATION](../../../extensibility/debugger/reference/bp-location.md) structure as part of a union.  
   
-## Configuration requise  
- en\-tête : msdbg.h  
+## <a name="requirements"></a>Requirements  
+ Header: msdbg.h  
   
- l'espace de noms : Microsoft.VisualStudio.Debugger.Interop  
+ Namespace: Microsoft.VisualStudio.Debugger.Interop  
   
- Assembly : Microsoft.VisualStudio.Debugger.Interop.dll  
+ Assembly: Microsoft.VisualStudio.Debugger.Interop.dll  
   
-## Voir aussi  
- [Structures et Unions](../../../extensibility/debugger/reference/structures-and-unions.md)   
- [BP\_LOCATION](../../../extensibility/debugger/reference/bp-location.md)   
+## <a name="see-also"></a>See Also  
+ [Structures and Unions](../../../extensibility/debugger/reference/structures-and-unions.md)   
+ [BP_LOCATION](../../../extensibility/debugger/reference/bp-location.md)   
  [IDebugDocumentPosition2](../../../extensibility/debugger/reference/idebugdocumentposition2.md)

@@ -1,69 +1,86 @@
 ---
-title: "IDebugComPlusSymbolProvider::GetAttributedClassesinModule | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-helpviewer_keywords: 
-  - "IDebugComPlusSymbolProvider::GetAttributedClassesinModule"
-  - "GetAttributedClassesinModule"
+title: IDebugComPlusSymbolProvider::GetAttributedClassesinModule | Microsoft Docs
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology:
+- vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+helpviewer_keywords:
+- IDebugComPlusSymbolProvider::GetAttributedClassesinModule
+- GetAttributedClassesinModule
 ms.assetid: d8b087f3-1d32-4570-9eb0-7e0f7b051bc8
 caps.latest.revision: 10
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 10
----
-# IDebugComPlusSymbolProvider::GetAttributedClassesinModule
-[!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]
+ms.author: gregvanl
+manager: ghogen
+translation.priority.mt:
+- cs-cz
+- de-de
+- es-es
+- fr-fr
+- it-it
+- ja-jp
+- ko-kr
+- pl-pl
+- pt-br
+- ru-ru
+- tr-tr
+- zh-cn
+- zh-tw
+ms.translationtype: MT
+ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
+ms.openlocfilehash: 3dddd25c62033999e0a41b98870bae2cb69ed224
+ms.contentlocale: fr-fr
+ms.lasthandoff: 08/28/2017
 
-Récupère les classes avec l'attribut spécifié dans un module donné.  
+---
+# <a name="idebugcomplussymbolprovidergetattributedclassesinmodule"></a>IDebugComPlusSymbolProvider::GetAttributedClassesinModule
+Retrieves the classes with the specified attribute in a given module.  
   
-## Syntaxe  
+## <a name="syntax"></a>Syntax  
   
 ```  
 [C++]  
 HRESULT GetAttributedClassesinModule (  
-   ULONG32            ulAppDomainID,  
-   GUID               guidModule,  
-   LPOLESTR           pstrAttribute,  
-   IEnumDebugFields** ppEnum  
+   ULONG32            ulAppDomainID,  
+   GUID               guidModule,  
+   LPOLESTR           pstrAttribute,  
+   IEnumDebugFields** ppEnum  
 );  
 ```  
   
 ```  
 [C#]  
 int GetAttributedClassesinModule (  
-   uint                 ulAppDomainID,  
-   Guid                 guidModule,  
-   string               pstrAttribute,  
-   out IEnumDebugFields ppEnum  
+   uint                 ulAppDomainID,  
+   Guid                 guidModule,  
+   string               pstrAttribute,  
+   out IEnumDebugFields ppEnum  
 );  
 ```  
   
-#### Paramètres  
+#### <a name="parameters"></a>Parameters  
  `ulAppDomainID`  
- \[in\]  identificateur du domaine d'application.  
+ [in] Identifier of the application domain.  
   
  `guidModule`  
- \[in\]  identificateur unique du module.  
+ [in] Unique identifier of the module.  
   
  `pstrAttribute`  
- \[in\]  la chaîne d'attribut.  
+ [in] The attribute string.  
   
  `ppEnum`  
- \[out\]  Retourne une énumération de classes réaffectées.  
+ [out] Returns an enumeration of the attributed classes.  
   
-## Valeur de retour  
- En cas de réussite, retourne `S_OK`; sinon, retourne un code d'erreur.  
+## <a name="return-value"></a>Return Value  
+ If successful, returns `S_OK`; otherwise, returns an error code.  
   
-## Exemple  
- L'exemple suivant indique comment appliquer cette méthode d'un objet **de CDebugSymbolProvider** qui expose l'interface d' [IDebugComPlusSymbolProvider](../../../extensibility/debugger/reference/idebugcomplussymbolprovider.md) .  
+## <a name="example"></a>Example  
+ The following example shows how to implement this method for a **CDebugSymbolProvider** object that exposes the [IDebugComPlusSymbolProvider](../../../extensibility/debugger/reference/idebugcomplussymbolprovider.md) interface.  
   
-```cpp#  
+```cpp  
 HRESULT CDebugSymbolProvider::GetAttributedClassesinModule(  
     ULONG32 ulAppDomainID,  
     GUID guidModule,  
@@ -151,5 +168,5 @@ Error:
 }  
 ```  
   
-## Voir aussi  
+## <a name="see-also"></a>See Also  
  [IDebugComPlusSymbolProvider](../../../extensibility/debugger/reference/idebugcomplussymbolprovider.md)

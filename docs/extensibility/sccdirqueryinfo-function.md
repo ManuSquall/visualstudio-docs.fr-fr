@@ -1,31 +1,48 @@
 ---
-title: "SccDirQueryInfo (fonction) | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "SccDirQueryInfo"
-helpviewer_keywords: 
-  - "SccDirQueryInfo (fonction)"
+title: SccDirQueryInfo Function | Microsoft Docs
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology:
+- vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords:
+- SccDirQueryInfo
+helpviewer_keywords:
+- SccDirQueryInfo function
 ms.assetid: 459e2d99-573d-47c4-b834-6d82c5e14162
 caps.latest.revision: 14
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 14
----
-# SccDirQueryInfo (fonction)
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
+ms.author: gregvanl
+manager: ghogen
+translation.priority.mt:
+- cs-cz
+- de-de
+- es-es
+- fr-fr
+- it-it
+- ja-jp
+- ko-kr
+- pl-pl
+- pt-br
+- ru-ru
+- tr-tr
+- zh-cn
+- zh-tw
+ms.translationtype: MT
+ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
+ms.openlocfilehash: e8e155075ebf6e619c6504b24381bd3349b1c48b
+ms.contentlocale: fr-fr
+ms.lasthandoff: 08/28/2017
 
-Cette fonction examine une liste de répertoires complets pour leur état actuel.  
+---
+# <a name="sccdirqueryinfo-function"></a>SccDirQueryInfo Function
+This function examines a list of fully qualified directories for their current status.  
   
-## Syntaxe  
+## <a name="syntax"></a>Syntax  
   
-```cpp#  
+```cpp  
 SCCRTN SccDirQueryInfo(  
 LPVOID  pContext,  
 LONG    nDirs,  
@@ -34,37 +51,37 @@ LPLONG  lpStatus
 );  
 ```  
   
-#### Paramètres  
+#### <a name="parameters"></a>Parameters  
  pContext  
- \[in\] La structure de contexte du plug\-in de contrôle de source.  
+ [in] The source control plug-in context structure.  
   
  nDirs  
- \[in\] Le nombre de répertoires sélectionnés à interroger.  
+ [in] The number of directories selected to be queried.  
   
  lpDirNames  
- \[in\] Tableau des chemins d'accès complets des répertoires à interroger.  
+ [in] An array of fully qualified paths of the directories to be queried.  
   
  lpStatus  
- \[dans, out\] Une structure de tableau pour le plug\-in pour retourner les indicateurs d'état de contrôle de code source \(voir [Code d'état Active](../extensibility/directory-status-code-enumerator.md) Pour plus d'informations\).  
+ [in, out] An array structure for the source control plug-in to return the status flags (see [Directory Status Code](../extensibility/directory-status-code-enumerator.md) for details).  
   
-## Valeur de retour  
- L'implémentation de plug\-in de contrôle de source de cette fonction est censée renvoyer une des valeurs suivantes :  
+## <a name="return-value"></a>Return Value  
+ The source control plug-in implementation of this function is expected to return one of the following values:  
   
-|Valeur|Description|  
-|------------|-----------------|  
-|SCC\_OK|La requête a réussi.|  
-|SCC\_E\_OPNOTSUPPORTED|Le système de contrôle de code source ne prend pas en charge cette opération.|  
-|SCC\_E\_ACCESSFAILURE|Impossible d'accéder au système de contrôle source, probablement en raison de problèmes réseau ou de contention. Une nouvelle tentative est recommandée.|  
-|SCC\_E\_NONSPECIFICERROR<br /><br /> SCC\_E\_UNKNOWNERROR|Erreur non spécifique.|  
+|Value|Description|  
+|-----------|-----------------|  
+|SCC_OK|The query was successful.|  
+|SCC_E_OPNOTSUPPORTED|The source code control system does not support this operation.|  
+|SCC_E_ACCESSFAILURE|There was a problem accessing the source control system, probably due to network or contention issues. A retry is recommended.|  
+|SCC_E_NONSPECIFICERROR<br /><br /> SCC_E_UNKNOWNERROR|Nonspecific failure.|  
   
-## Notes  
- La fonction remplit le tableau de résultats avec un masque de bits à partir de la `SCC_DIRSTATUS` famille \(voir [Code d'état Active](../extensibility/directory-status-code-enumerator.md)\), une entrée pour chaque répertoire donné. Le tableau d'états est alloué par l'appelant.  
+## <a name="remarks"></a>Remarks  
+ The function fills the return array with a bitmask of bits from the `SCC_DIRSTATUS` family (see [Directory Status Code](../extensibility/directory-status-code-enumerator.md)), one entry for each directory given. The status array is allocated by the caller.  
   
- L'IDE utilise cette fonction avant qu'un répertoire est renommé pour vérifier si le répertoire est sous contrôle de code source en interrogeant s'il dispose d'un projet correspondant. Si le répertoire n'est pas sous contrôle de code source, l'IDE peut fournir l'avertissement approprié à l'utilisateur.  
+ The IDE uses this function before a directory is renamed to check whether the directory is under source control by querying whether it has a corresponding project. If the directory is not under source control, the IDE can provide the proper warning to the user.  
   
 > [!NOTE]
->  Si un plug\-in de contrôle de code source choisit ne pas implémenter une ou plusieurs valeurs d'état, non implémentées bits doivent être définis sur zéro.  
+>  If a source control plug-in chooses to not implement one or more of the status values, unimplemented bits should be set to zero.  
   
-## Voir aussi  
- [Fonctions d'API de plug\-in de contrôle de source](../extensibility/source-control-plug-in-api-functions.md)   
- [Code d'état Active](../extensibility/directory-status-code-enumerator.md)
+## <a name="see-also"></a>See Also  
+ [Source Control Plug-in API Functions](../extensibility/source-control-plug-in-api-functions.md)   
+ [Directory Status Code](../extensibility/directory-status-code-enumerator.md)

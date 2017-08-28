@@ -1,6 +1,6 @@
 ---
-title: "ID de composant et de charge de travail de Visual Studio 2017 | Microsoft Docs"
-description: "Utilisez les ID de composant et de charge de travail pour installer Visual Studio à l’aide d’une ligne de commande ou pour spécifier comme dépendance dans un manifeste VSIX"
+title: Visual Studio 2017 workload and component IDs | Microsoft Docs
+description: Use workload and component IDs to install Visual Studio by using a command line, or to specify as a dependency in a VSIX manifest
 keywords: 
 author: TerryGLee
 ms.author: tglee
@@ -18,33 +18,33 @@ ms.technology:
 - vs-ide-sdk
 ms.assetid: 34e19ef1-abfb-44fd-aad2-33c5d7874482
 ms.translationtype: HT
-ms.sourcegitcommit: 8a544bd1e1242bb6fabe00f7842ac33ed9d9d444
-ms.openlocfilehash: 2c4491ffbcc0fed757a18e044b9efdfe48898c3a
+ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
+ms.openlocfilehash: fb076a7d696d4600181577180f2609892c52e49b
 ms.contentlocale: fr-fr
-ms.lasthandoff: 08/14/2017
+ms.lasthandoff: 08/28/2017
 
 ---
 
-# <a name="visual-studio-2017-workload-and-component-ids"></a>ID de charge de travail et de composant Visual Studio 2017
-Cliquez sur les noms d’édition dans le tableau suivant pour voir les ID de composant et de charge de travail disponibles dont vous avez besoin pour installer Visual Studio via une ligne de commande, ou pour spécifier en tant que dépendance dans un manifeste VSIX.
+# <a name="visual-studio-2017-workload-and-component-ids"></a>Visual Studio 2017 workload and component IDs
+Click the edition names in the following table to see the available workload and component IDs you need to install Visual Studio by using a command line, or to specify as a dependency in a VSIX manifest.
 
-| **Édition** | **ID** | **Description** |
+| **Edition** | **ID** | **Description** |
 | ----------- | ------ | --------------- |
-| [Visual&nbsp;Studio Enterprise&nbsp;2017](workload-component-id-vs-enterprise.md) | Microsoft.VisualStudio.Product.Enterprise | Solution Microsoft DevOps axée sur la productivité et la coordination des équipes de toutes tailles |
-| [Visual&nbsp;Studio Professional&nbsp;2017](workload-component-id-vs-professional.md) | Microsoft.VisualStudio.Product.Professional | Outils et services de développement professionnels pour les équipes de petite taille |
-| [Visual&nbsp;Studio Community&nbsp;2017](workload-component-id-vs-community.md) | Microsoft.VisualStudio.Product.Community | Interface IDE gratuite et riche en fonctionnalités pour les étudiants et les développeurs open source et individuels |
-| [Visual&nbsp;Studio Team&nbsp;Explorer&nbsp;2017](workload-component-id-vs-team-explorer.md) | Microsoft.VisualStudio.Product.TeamExplorer | Interagissez avec Team Foundation Server et Visual Studio Team Services sans l’ensemble d’outils de développement Visual Studio |
-| [Visual&nbsp;Studio Build&nbsp;Tools&nbsp;2017](workload-component-id-vs-build-tools.md) | Microsoft.VisualStudio.Product.BuildTools | Visual Studio Build Tools vous permet de générer des applications MSBuild natives et managées sans passer par l’IDE Visual Studio. Il existe des options pour installer les compilateurs et bibliothèques Visual C++, ainsi que la prise en charge d’ATL, de MFC et de C++/CLI. |
-| [Visual&nbsp;Studio Test&nbsp;Agent&nbsp;2017](workload-component-id-vs-test-agent.md)  | Microsoft.VisualStudio.Product.TestAgent | Prend en charge l’exécution de tests automatisés et de tests de charge à distance |
-| [Visual&nbsp;Studio Test&nbsp;Controller 2017 ](workload-component-id-vs-test-controller.md) | Microsoft.VisualStudio.Product.TestController | Distribuer des tests automatisés à plusieurs machines |
-| [Visual&nbsp;Studio Test&nbsp;Professional&nbsp;2017](workload-component-id-vs-test-professional.md) | Microsoft.VisualStudio.Product.TestProfessional | Visual Studio Test Professional 2017 |
-| [Visual&nbsp;Studio Feedback&nbsp;Client&nbsp;2017](workload-component-id-vs-feedback-client.md) | Microsoft.VisualStudio.Product.FeedbackClient | Outil de Feedback de Visual Studio 2017 |
+| [Visual&nbsp;Studio Enterprise&nbsp;2017](workload-component-id-vs-enterprise.md) | Microsoft.VisualStudio.Product.Enterprise | Microsoft DevOps solution for productivity and coordination across teams of any size |
+| [Visual&nbsp;Studio Professional&nbsp;2017](workload-component-id-vs-professional.md) | Microsoft.VisualStudio.Product.Professional | Professional developer tools and services for small teams |
+| [Visual&nbsp;Studio Community&nbsp;2017](workload-component-id-vs-community.md) | Microsoft.VisualStudio.Product.Community | Free, fully featured IDE for students, open-source, and individual developers |
+| [Visual&nbsp;Studio Team&nbsp;Explorer&nbsp;2017](workload-component-id-vs-team-explorer.md) | Microsoft.VisualStudio.Product.TeamExplorer | Interact with Team Foundation Server and Visual Studio Team Services without a Visual Studio developer toolset |
+| [Visual&nbsp;Studio Build&nbsp;Tools&nbsp;2017](workload-component-id-vs-build-tools.md) | Microsoft.VisualStudio.Product.BuildTools | The Visual Studio Build Tools allows you to build native and managed MSBuild-based applications without requiring the Visual Studio IDE. There are options to install the Visual C++ compilers and libraries, MFC, ATL, and C++/CLI support. |
+| [Visual&nbsp;Studio Test&nbsp;Agent&nbsp;2017](workload-component-id-vs-test-agent.md)  | Microsoft.VisualStudio.Product.TestAgent | Supports running automated tests and load tests remotely |
+| [Visual&nbsp;Studio Test&nbsp;Controller 2017 ](workload-component-id-vs-test-controller.md) | Microsoft.VisualStudio.Product.TestController | Distribute automated tests to multiple machines |
+| [Visual&nbsp;Studio Test&nbsp;Professional&nbsp;2017](workload-component-id-vs-test-professional.md) | Microsoft.VisualStudio.Product.TestProfessional | Visual Studio Test Professional 2017 |
+| [Visual&nbsp;Studio Feedback&nbsp;Client&nbsp;2017](workload-component-id-vs-feedback-client.md) | Microsoft.VisualStudio.Product.FeedbackClient | Visual Studio Feedback Client 2017 |
 
-Pour plus d’informations sur l’utilisation de ces listes, consultez les pages [Utiliser les paramètres de ligne de commande pour installer Visual Studio 2017](use-command-line-parameters-to-install-visual-studio.md) et [Guide pratique pour migrer des projets d’extensibilité vers Visual Studio 2017](../extensibility/how-to-migrate-extensibility-projects-to-visual-studio-2017.md).
+For more information about how to use these lists, see the [Use command-line parameters to install Visual Studio 2017](use-command-line-parameters-to-install-visual-studio.md) page and the [How to: Migrate extensibility projects to Visual Studio 2017](../extensibility/how-to-migrate-extensibility-projects-to-visual-studio-2017.md) page.
 
-## <a name="see-also"></a>Voir aussi
-* [Guide de l’administrateur Visual Studio pour Visual Studio 2017](visual-studio-administrator-guide.md)
-* [Créer une installation hors connexion de Visual Studio 2017](create-an-offline-installation-of-visual-studio.md)
-* [Exemples de paramètres de ligne de commande pour l’installation de Visual Studio 2017](command-line-parameter-examples.md)
-* [Signaler un problème avec Visual Studio 2017](../ide/how-to-report-a-problem-with-visual-studio-2017.md)
+## <a name="see-also"></a>See Also
+* [Visual Studio administrator guide for Visual Studio 2017](visual-studio-administrator-guide.md)
+* [Create an offline installation of Visual Studio 2017](create-an-offline-installation-of-visual-studio.md)
+* [Command-line parameter examples for Visual Studio 2017 installation](command-line-parameter-examples.md)
+* [Report a problem with Visual Studio 2017](../ide/how-to-report-a-problem-with-visual-studio-2017.md)
 

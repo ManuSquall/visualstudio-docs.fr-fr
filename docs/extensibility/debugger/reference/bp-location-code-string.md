@@ -1,54 +1,71 @@
 ---
-title: "BP_LOCATION_CODE_STRING | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "BP_LOCATION_CODE_STRING"
-helpviewer_keywords: 
-  - "Structure BP_LOCATION_CODE_STRING"
+title: BP_LOCATION_CODE_STRING | Microsoft Docs
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology:
+- vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords:
+- BP_LOCATION_CODE_STRING
+helpviewer_keywords:
+- BP_LOCATION_CODE_STRING structure
 ms.assetid: a4cd71c6-5052-45fe-907b-ebc6ca1df2e4
 caps.latest.revision: 9
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 9
----
-# BP_LOCATION_CODE_STRING
-[!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]
+ms.author: gregvanl
+manager: ghogen
+translation.priority.mt:
+- cs-cz
+- de-de
+- es-es
+- fr-fr
+- it-it
+- ja-jp
+- ko-kr
+- pl-pl
+- pt-br
+- ru-ru
+- tr-tr
+- zh-cn
+- zh-tw
+ms.translationtype: MT
+ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
+ms.openlocfilehash: 24c9215aee75d2a1bbc7e123aed4ce3838982cc0
+ms.contentlocale: fr-fr
+ms.lasthandoff: 08/28/2017
 
-Utilisé pour définir des points d'arrêt de code en fonction d'une chaîne que l'utilisateur peut entrer de l'environnement de développement intégré \(IDE\) \(IDE\).  
+---
+# <a name="bplocationcodestring"></a>BP_LOCATION_CODE_STRING
+Used for setting code breakpoints based on a string that the user can enter from the integrated development environment (IDE).  
   
-## Syntaxe  
+## <a name="syntax"></a>Syntax  
   
-```cpp#  
-typedef struct _BP_LOCATION_CODE_STRING {   
-   BSTR bstrContext;  
-   BSTR bstrCodeExpr;  
+```cpp  
+typedef struct _BP_LOCATION_CODE_STRING {   
+   BSTR bstrContext;  
+   BSTR bstrCodeExpr;  
 } BP_LOCATION_CODE_STRING;  
 ```  
   
-## Membres  
+## <a name="members"></a>Members  
  `bstrContext`  
- Le contexte du point d'arrêt dans le code, en général une méthode ou un nom de fonction comme indiqué sur une pile des appels.  
+ The context of the breakpoint within the code, typically a method or function name as seen on a call stack.  
   
  `bstrCodeExpr`  
- La chaîne que l'utilisateur entre dans pour décrire le point d'arrêt de code.  
+ The string that the user types in to describe the code breakpoint.  
   
-## Notes  
- Cette structure est un membre de la structure de [BP\_LOCATION](../../../extensibility/debugger/reference/bp-location.md) dans le cadre d'une union.  
+## <a name="remarks"></a>Remarks  
+ This structure is a member of the [BP_LOCATION](../../../extensibility/debugger/reference/bp-location.md) structure as part of a union.  
   
-## Configuration requise  
- en\-tête : msdbg.h  
+## <a name="requirements"></a>Requirements  
+ Header: msdbg.h  
   
- l'espace de noms : Microsoft.VisualStudio.Debugger.Interop  
+ Namespace: Microsoft.VisualStudio.Debugger.Interop  
   
- Assembly : Microsoft.VisualStudio.Debugger.Interop.dll  
+ Assembly: Microsoft.VisualStudio.Debugger.Interop.dll  
   
-## Voir aussi  
- [Structures et Unions](../../../extensibility/debugger/reference/structures-and-unions.md)   
- [BP\_LOCATION](../../../extensibility/debugger/reference/bp-location.md)
+## <a name="see-also"></a>See Also  
+ [Structures and Unions](../../../extensibility/debugger/reference/structures-and-unions.md)   
+ [BP_LOCATION](../../../extensibility/debugger/reference/bp-location.md)

@@ -1,62 +1,79 @@
 ---
-title: "IDebugProgramProvider2 | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "IDebugProgramProvider2"
-helpviewer_keywords: 
-  - "Interface de IDebugProgramProvider2"
+title: IDebugProgramProvider2 | Microsoft Docs
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology:
+- vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords:
+- IDebugProgramProvider2
+helpviewer_keywords:
+- IDebugProgramProvider2 interface
 ms.assetid: a9ec7b3e-a59c-4069-b2ee-6f45916eeb78
 caps.latest.revision: 14
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 14
----
-# IDebugProgramProvider2
-[!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]
+ms.author: gregvanl
+manager: ghogen
+translation.priority.mt:
+- cs-cz
+- de-de
+- es-es
+- fr-fr
+- it-it
+- ja-jp
+- ko-kr
+- pl-pl
+- pt-br
+- ru-ru
+- tr-tr
+- zh-cn
+- zh-tw
+ms.translationtype: MT
+ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
+ms.openlocfilehash: a5263ebcd63110697ee34b279b1a1a995cab205c
+ms.contentlocale: fr-fr
+ms.lasthandoff: 08/28/2017
 
-Cette interface stockée permet au gestionnaire de débogage de session \(SDM\) pour obtenir des informations sur les programmes qui « ont été émis » via l'interface d' [IDebugProgramPublisher2](../../../extensibility/debugger/reference/idebugprogrampublisher2.md) .  
+---
+# <a name="idebugprogramprovider2"></a>IDebugProgramProvider2
+This registered interface allows the session debug manager (SDM) to obtain information about programs that have been "published" through the [IDebugProgramPublisher2](../../../extensibility/debugger/reference/idebugprogrampublisher2.md) interface.  
   
-## Syntaxe  
+## <a name="syntax"></a>Syntax  
   
 ```  
 IDebugProgramProvider2 : IUnknown  
 ```  
   
-## Remarques à l'intention des implémenteurs  
- Le moteur \(DE\) de débogage implémente cette interface pour fournir des informations sur les programmes en cours.  Cette interface est stockée dans LE section du Registre à l'aide de `metricProgramProvider`métriques, comme décrit dans [« Helpers » du Kit de développement logiciel pour le débogage](../../../extensibility/debugger/reference/sdk-helpers-for-debugging.md).  
+## <a name="notes-for-implementers"></a>Notes for Implementers  
+ The debug engine (DE) implements this interface to provide information about programs being debugged. This interface is registered in the DE section of the registry using the metric `metricProgramProvider`, as described in [SDK Helpers for Debugging](../../../extensibility/debugger/reference/sdk-helpers-for-debugging.md).  
   
-## Remarques pour les appelants  
- Fonction d' `CoCreateInstance` COM d'appel avec `CLSID` du fournisseur de programme qui est obtenu à partir de le Registre.  Consultez l'exemple.  
+## <a name="notes-for-callers"></a>Notes for Callers  
+ Call COM's `CoCreateInstance` function with the `CLSID` of the program provider that is obtained from the registry. See the Example.  
   
-## méthodes en commande de Vtable  
+## <a name="methods-in-vtable-order"></a>Methods in Vtable order  
   
-|Méthode|Description|  
-|-------------|-----------------|  
-|[GetProviderProcessData](../../../extensibility/debugger/reference/idebugprogramprovider2-getproviderprocessdata.md)|Obtient des informations sur les programmes exécutés, filtré de diverses manières.|  
-|[GetProviderProgramNode](../../../extensibility/debugger/reference/idebugprogramprovider2-getproviderprogramnode.md)|Obtient un nœud de programme, donné un identificateur de processus spécifique|  
-|[WatchForProviderEvents](../../../extensibility/debugger/reference/idebugprogramprovider2-watchforproviderevents.md)|Génère un rappel pour le surveiller les événements de fournisseur associés à des genres spécifiques de processus.|  
-|[SetLocale](../../../extensibility/debugger/reference/idebugprogramprovider2-setlocale.md)|Génère des paramètres régionaux pour toutes les ressources spécifiques à une langue requises par le De.|  
+|Method|Description|  
+|------------|-----------------|  
+|[GetProviderProcessData](../../../extensibility/debugger/reference/idebugprogramprovider2-getproviderprocessdata.md)|Obtains information about programs running, filtered in a variety of ways.|  
+|[GetProviderProgramNode](../../../extensibility/debugger/reference/idebugprogramprovider2-getproviderprogramnode.md)|Gets a program node, given a specific process ID.|  
+|[WatchForProviderEvents](../../../extensibility/debugger/reference/idebugprogramprovider2-watchforproviderevents.md)|Establishes a callback to watch for provider events associated with specific kinds of processes.|  
+|[SetLocale](../../../extensibility/debugger/reference/idebugprogramprovider2-setlocale.md)|Establishes a locale for any language-specific resources needed by the DE.|  
   
-## Notes  
- Normalement, un processus utilise cette interface pour déterminer sur les programmes s'exécutant dans ce processus.  
+## <a name="remarks"></a>Remarks  
+ Normally, a process uses this interface to find out about the programs running in that process.  
   
-## Configuration requise  
- en\-tête : msdbg.h  
+## <a name="requirements"></a>Requirements  
+ Header: msdbg.h  
   
- l'espace de noms : Microsoft.VisualStudio.Debugger.Interop  
+ Namespace: Microsoft.VisualStudio.Debugger.Interop  
   
- Assembly : Microsoft.VisualStudio.Debugger.Interop.dll  
+ Assembly: Microsoft.VisualStudio.Debugger.Interop.dll  
   
-## Exemple  
+## <a name="example"></a>Example  
   
-```cpp#  
+```cpp  
 IDebugProgramProvider2 *GetProgramProvider(GUID *pDebugEngineGuid)  
 {  
     // This is typically defined globally.  For this example, it is  
@@ -83,7 +100,7 @@ IDebugProgramProvider2 *GetProgramProvider(GUID *pDebugEngineGuid)
 }  
 ```  
   
-## Voir aussi  
- [Interfaces de base](../../../extensibility/debugger/reference/core-interfaces.md)   
+## <a name="see-also"></a>See Also  
+ [Core Interfaces](../../../extensibility/debugger/reference/core-interfaces.md)   
  [IDebugProgramPublisher2](../../../extensibility/debugger/reference/idebugprogrampublisher2.md)   
- [« Helpers » du Kit de développement logiciel pour le débogage](../../../extensibility/debugger/reference/sdk-helpers-for-debugging.md)
+ [SDK Helpers for Debugging](../../../extensibility/debugger/reference/sdk-helpers-for-debugging.md)
