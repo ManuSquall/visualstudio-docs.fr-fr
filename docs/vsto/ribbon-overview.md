@@ -1,138 +1,142 @@
 ---
-title: "Vue d&#39;ensemble du ruban"
-ms.custom: ""
-ms.date: "02/02/2017"
-ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "office-development"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-dev_langs: 
-  - "VB"
-  - "CSharp"
-helpviewer_keywords: 
-  - "ruban personnalisé, rubans multiples"
-  - "personnaliser le ruban, rubans multiples"
-  - "ruban (développement Office dans Visual Studio)"
-  - "ruban (développement Office dans Visual Studio), à propos du ruban"
-  - "ruban (développement Office dans Visual Studio), rubans multiples"
-  - "barres d'outils (développement Office dans Visual Studio)"
-  - "barres d'outils (développement Office dans Visual Studio), ruban"
+title: Ribbon Overview | Microsoft Docs
+ms.custom: 
+ms.date: 02/02/2017
+ms.prod: visual-studio-dev14
+ms.reviewer: 
+ms.suite: 
+ms.technology:
+- office-development
+ms.tgt_pltfrm: 
+ms.topic: article
+dev_langs:
+- VB
+- CSharp
+helpviewer_keywords:
+- customizing the Ribbon, multiple Ribbons
+- Ribbon [Office development in Visual Studio], about Ribbon
+- toolbars [Office development in Visual Studio], Ribbon
+- Ribbon [Office development in Visual Studio]
+- Ribbon [Office development in Visual Studio], multiple Ribbons
+- toolbars [Office development in Visual Studio]
+- custom Ribbon, multiple Ribbons
 ms.assetid: 2bdef092-190d-47e3-9440-e862b95dacaa
 caps.latest.revision: 64
-author: "kempb"
-ms.author: "kempb"
-manager: "ghogen"
-caps.handback.revision: 62
+author: kempb
+ms.author: kempb
+manager: ghogen
+ms.translationtype: HT
+ms.sourcegitcommit: eb5c9550fd29b0e98bf63a7240737da4f13f3249
+ms.openlocfilehash: 4335f1f397d8497ca0aaa359e443b823d7441dbe
+ms.contentlocale: fr-fr
+ms.lasthandoff: 08/30/2017
+
 ---
-# Vue d&#39;ensemble du ruban
-  Le ruban est une façon d'organiser des commandes associées pour les retrouver plus facilement.  Les commandes apparaissent sous forme de contrôles sur le ruban.  Les contrôles sont organisés en *groupes* le long d'une bande horizontale en haut d'une fenêtre d'application.  Les groupes connexes sont organisés sur les onglets.  
+# <a name="ribbon-overview"></a>Ribbon Overview
+  The Ribbon is a way to organize related commands so that they are easier to find. Commands appear as controls on the Ribbon. Controls are organized into *groups* along a horizontal strip at the top edge of an application window. Related groups are organized on tabs.  
   
- La plupart des fonctionnalités accessibles via les menus et les barres d'outils des versions antérieures de Microsoft Office System sont désormais accessibles à partir du ruban.  Pour plus d'informations, consultez l'article technique[Présentation orientée développeur de l'interface utilisateur pour Microsoft Office System 2007](http://go.microsoft.com/fwlink/?LinkID=70860).  
+ Most of the features that were accessed by using menus and toolbars in earlier versions of the Microsoft Office system can now be accessed by using the Ribbon. For more information, see the technical article [Developer Overview of the User Interface for the 2007 Microsoft Office System](http://go.microsoft.com/fwlink/?LinkID=70860).  
   
  [!INCLUDE[appliesto_ribbon](../vsto/includes/appliesto-ribbon-md.md)]  
   
-## Personnalisation du ruban Microsoft Office  
- Pour personnaliser le ruban, ajoutez l'un des éléments suivants du ruban à votre projet Office :  
+## <a name="customizing-the-microsoft-office-ribbon"></a>Customizing the Microsoft Office Ribbon  
+ To customize the Ribbon, add one of the following Ribbon items to your Office project:  
   
--   **Ruban \(Concepteur visuel\)**  
+-   **Ribbon (Visual Designer)**  
   
--   **Ruban \(XML\)**  
+-   **Ribbon (XML)**  
   
- Par exemple, pour personnaliser le ruban Excel, ajoutez un élément Ruban à un projet de complément VSTO Excel.  
+ For example, to customize the Excel Ribbon, add a Ribbon item to an Excel VSTO Add-in project.  
   
-### Élément Ruban \(Concepteur visuel\)  
- L'élément **Ruban \(Concepteur visuel\)** fournit des outils avancés qui rendent plus faciles la conception et le développement d'un ruban personnalisé.  Utilisez le **Ruban \(Concepteur visuel\)** pour personnaliser le ruban comme suit :  
+### <a name="ribbon-visual-designer-item"></a>Ribbon (Visual Designer) Item  
+ The **Ribbon (Visual Designer)** item provides advanced tools that make it easier for you to design and develop a custom Ribbon. Use the **Ribbon (Visual Designer)** item to customize the Ribbon in the following ways:  
   
--   Ajoutez des onglets personnalisés ou intégrés à un ruban.  
+-   Add custom or built-in tabs to a Ribbon.  
   
--   Ajouter des groupes personnalisés à un onglet personnalisé ou intégré.  
-  
-    > [!NOTE]  
-    >  Un groupe ou onglet intégré est celui qui existe déjà sur le ruban d'une application Microsoft Office.  Par exemple, l'onglet **Données** est un onglet intégré dans Excel.  Le groupe **Connexions** est un groupe intégré de l'onglet **Données**.  
-  
--   Ajoutez des contrôles personnalisés à un groupe personnalisé.  
-  
--   Ajoutez des contrôles personnalisés au mode Backstage.  
-  
- Pour plus d'informations sur la personnalisation d'un ruban à l'aide de l'élément **Ruban \(Concepteur visuel\)**, consultez [Concepteur de ruban](../vsto/ribbon-designer.md).  
-  
-### Élément Ruban \(XML\)  
- Utilisez l'élément **Ruban \(XML\)** si vous souhaitez personnaliser le ruban d'une façon qui n'est pas prise en charge par l'élément **Ruban \(Concepteur visuel\)**.  Utilisez l'élément **Ruban \(Concepteur visuel\)** pour personnaliser le ruban comme suit :  
-  
--   Ajoutez des groupes *intégrés* à un onglet personnalisé ou intégré.  
-  
--   Ajoutez des contrôles intégrés à un groupe personnalisé.  
-  
--   Ajoutez un code personnalisé pour substituer les gestionnaires d'événements des contrôles intégrés.  
-  
--   Personnaliser la barre d'outils Accès rapide  
-  
--   Partager une personnalisation de ruban entre le complément VSTO en utilisant un ID qualifié.  
-  
- Pour plus d'informations sur la personnalisation d'un ruban à l'aide de l'élément **Ruban \(XML\)**, consultez [Élément XML Ribbon](../vsto/ribbon-xml.md).  
-  
-## Exportation d'un ruban à partir du Concepteur de ruban vers Ruban XML  
- Si vous créez un ruban en utilisant le Concepteur de ruban et décidez ensuite que vous souhaitez personnaliser le ruban d'une façon que l'élément **Ruban \(Concepteur visuel\)** ne prend pas en charge, vous pouvez exporter le ruban vers XML.  
-  
- Visual Studio crée automatiquement un **Ruban \(XML\)** et remplit le fichier Ruban XML avec les éléments et les attributs de chaque contrôle sur le ruban.  
-  
- Toutes les propriétés qui  se trouvent pas dans la fenêtre **Propriétés** du Concepteur de ruban ne sont pas transférées vers le fichier XML du ruban.  Par exemple, Visual Studio n'exporte pas la valeur de la propriété **Image** ou **Texte**.  La raison en est que vous devez créer une méthode de rappel dans le fichier de code Ruban du projet exporté pour assigner une image ou définir le texte d'un contrôle.  Visual Studio ne génère pas automatiquement les méthodes de rappel dans le cadre du processus d'exportation.  
-  
- En outre, les valeurs de propriété par défaut inchangées n'apparaissent pas dans le fichier XML du ruban.  
-  
- Pour plus d'informations sur la façon d'exporter le ruban vers XML, consultez[Comment : exporter un ruban à partir du Concepteur de ruban vers l'élément XML Ribbon](../vsto/how-to-export-a-ribbon-from-the-ribbon-designer-to-ribbon-xml.md).  
-  
-### Mise à jour du code  
- Un nouveau fichier de code de ruban est ajouté à l'**Explorateur de solutions**.  Ce fichier contient la classe Ribbon XML.  Vous devez créer des méthodes de rappel dans la région `Ribbon Callbacks` de cette classe pour gérer les actions de l'utilisateur, telles qu'un clic sur un bouton.  Déplacez votre code des gestionnaires d'événements vers les méthodes de rappel et modifiez le code pour qu'il fonctionne avec le modèle de programmation de l'extensibilité du ruban \(RibbonX\).  Pour plus d'informations, consultez [Élément XML Ribbon](../vsto/ribbon-xml.md).  
-  
- Vous devez également ajouter le code à la classe `ThisAddIn`, `ThisWorkbook` ou `ThisDocument` qui remplace la méthode CreateRibbonExtensibilityObject et retourne la classe Ribbon XML à l'application Office.  
-  
- Pour plus d'informations, consultez [Élément XML Ribbon](../vsto/ribbon-xml.md).  
-  
-## Ajout de plusieurs éléments de ruban à un projet  
- Vous pouvez ajouter plusieurs éléments de ruban à un seul projet.  Cela est utile si vous souhaitez effectuer l'une des deux tâches suivantes :  
-  
--   Créer des rubans pour les *Inspecteurs* Outlook.  Pour plus d'informations, consultez [Personnalisation d'un ruban pour Outlook](../vsto/customizing-a-ribbon-for-outlook.md).  
+-   Add custom groups to a custom or built-in tab.  
   
     > [!NOTE]  
-    >  Un inspecteur est une fenêtre qui s'ouvre lorsque les utilisateurs effectuent certaines tâches, telles que la création d'un message électronique.  
+    >  A built-in tab or group is one that already exists on the Ribbon of a Microsoft Office application. For example, the **Data** tab is a built-in tab in Excel. The **Connections** group is a built-in group on the **Data** tab.  
   
--   Sélectionnez le ruban à afficher au moment de l'exécution.  
+-   Add custom controls to a custom group.  
   
-### Sélectionnez les rubans à afficher au moment de l'exécution.  
- Comme un projet peut contenir plusieurs rubans, vous pouvez sélectionner le ruban à afficher au moment de l'exécution.  
+-   Add custom controls to the Backstage View.  
   
- Pour sélectionner un ruban à afficher au moment de l'exécution, substituez la méthode CreateRibbonExtensibilityObject de la classe`ThisAddin`, `ThisWorkbook` ou `ThisDocument` de votre projet et retournez le ruban que vous souhaitez afficher.  L'exemple suivant vérifie la valeur d'un champ nommé `myCondition` et retourne le ruban approprié.  
+ For more information about how to customize a Ribbon by using the **Ribbon (Visual Designer)** item, see [Ribbon Designer](../vsto/ribbon-designer.md).  
+  
+### <a name="ribbon-xml-item"></a>Ribbon (XML) Item  
+ Use the **Ribbon (XML)** item if you want to customize the Ribbon in a way that is not supported by the **Ribbon (Visual Designer)** item. Use the **Ribbon (XML)** item to customize the Ribbon in the following ways:  
+  
+-   Add *built-in* groups to a custom tab or built-in tab.  
+  
+-   Add built-in controls to a custom group.  
+  
+-   Add custom code to override the event handlers of built-in controls.  
+  
+-   Customize the Quick Access Toolbar.  
+  
+-   Share a Ribbon customization between VSTO Add-in by using a qualified ID.  
+  
+ For more information about how to customize the Ribbon by using the **Ribbon (XML)** item, see [Ribbon XML](../vsto/ribbon-xml.md).  
+  
+## <a name="exporting-a-ribbon-from-the-ribbon-designer-to-ribbon-xml"></a>Exporting a Ribbon from the Ribbon Designer to Ribbon XML  
+ If you create a Ribbon by using the Ribbon Designer, and then decide that you want to customize the Ribbon in ways that the **Ribbon (Visual Designer)** item does not support, you can export the Ribbon to XML.  
+  
+ Visual Studio automatically creates a **Ribbon (XML)** item and populates the Ribbon XML file with elements and attributes for each control on the Ribbon.  
+  
+ Not all of the properties that are in the **Properties** window of the Ribbon designer are transferred to the Ribbon XML file.  For example, Visual Studio does not export the value of the **Image** or **Text** property. That is because you must create a callback method in the Ribbon code file of the exported project to assign an image or set the text of a control. Visual Studio does not automatically generate callback methods as part of the export process.  
+  
+ In addition, any unchanged default property values do not appear in the resulting Ribbon XML file.  
+  
+ For more information about how to export the Ribbon to XML, see [How to: Export a Ribbon from the Ribbon Designer to Ribbon XML](../vsto/how-to-export-a-ribbon-from-the-ribbon-designer-to-ribbon-xml.md).  
+  
+### <a name="updating-the-code"></a>Updating the Code  
+ A new Ribbon code file is added to **Solution Explorer**. This file contains the Ribbon XML class. You must create callback methods in the `Ribbon Callbacks` region of this class to handle user actions, such as clicking a button. Move your code from the event handlers to these callback methods and modify the code to work with the Ribbon extensibility (RibbonX) programming model. For more information, see [Ribbon XML](../vsto/ribbon-xml.md).  
+  
+ You must also add code to the `ThisAddIn`, `ThisWorkbook`, or `ThisDocument` class that overrides the CreateRibbonExtensibilityObject method and returns the Ribbon XML class to the Office application.  
+  
+ For more information, see [Ribbon XML](../vsto/ribbon-xml.md).  
+  
+## <a name="adding-multiple-ribbon-items-to-a-project"></a>Adding Multiple Ribbon Items to a Project  
+ You can add more than one Ribbon item to a single project. This is useful if you want to perform either of the following two tasks:  
+  
+-   Create Ribbons for Outlook *Inspectors*. For more information, see [Customizing a Ribbon for Outlook](../vsto/customizing-a-ribbon-for-outlook.md).  
+  
+    > [!NOTE]  
+    >  An Inspector is a window that opens when users perform certain tasks, such as creating an e-mail message.  
+  
+-   Select which Ribbon to display at run time.  
+  
+### <a name="selecting-which-ribbons-to-display-at-run-time"></a>Selecting Which Ribbons to Display at Run Time  
+ Because a project can contain more than one Ribbon, you can select which Ribbon to display at run time.  
+  
+ To select a Ribbon to display at run time, override the CreateRibbonExtensibilityObject method in the `ThisAddin`, `ThisWorkbook`, or `ThisDocument` class of your project and return the Ribbon that you want to display. The following example checks the value of a field named `myCondition` and returns the appropriate Ribbon.  
   
 > [!NOTE]  
->  La syntaxe utilisée dans cet exemple retourne un ruban qui a été créé à l'aide de l'élément **Ruban \(Concepteur visuel\)**.  La syntaxe de retour d'un ruban créé en utilisant un élément **Ruban \(XML\)** est légèrement différente.  Pour plus d'informations sur le retour d'un élément **Ruban \(XML\)**, consultez [Élément XML Ribbon](../vsto/ribbon-xml.md).  
+>  The syntax used in this example returns a Ribbon that was created by using the **Ribbon (Visual Designer)** item. The syntax for returning a Ribbon that is created by using a **Ribbon (XML)** item is slightly different. For more information about returning a **Ribbon (XML)** item, see [Ribbon XML](../vsto/ribbon-xml.md).  
   
- Ajoutez le code suivant :  
+ Add the following code:  
   
- [!code-csharp[Trin_Ribbon_Choose_Ribbon#1](../snippets/csharp/VS_Snippets_OfficeSP/Trin_Ribbon_Choose_Ribbon/CS/ThisWorkbook.cs#1)]
- [!code-vb[Trin_Ribbon_Choose_Ribbon#1](../snippets/visualbasic/VS_Snippets_OfficeSP/Trin_Ribbon_Choose_Ribbon/VB/ThisWorkbook.vb#1)]  
+ [!code-vb[Trin_Ribbon_Choose_Ribbon#1](../vsto/codesnippet/VisualBasic/trin_ribbon_choose_ribbon_4/ThisWorkbook.vb#1)] [!code-csharp[Trin_Ribbon_Choose_Ribbon#1](../vsto/codesnippet/CSharp/trin_ribbon_choose_ribbon_4/ThisWorkbook.cs#1)]  
   
-### Rubriques connexes  
+### <a name="related-topics"></a>Related Topics  
   
-|Titre|Description|  
+|Title|Description|  
 |-----------|-----------------|  
-|[Comment : démarrer avec la personnalisation du ruban](../vsto/how-to-get-started-customizing-the-ribbon.md)|Montre comment personnaliser le ruban d'une application Microsoft Office, ajouter un **Ruban \(Concepteur visuel\)** ou un élément **Ruban \(XML\)** à un projet Office.|  
-|[Concepteur de ruban](../vsto/ribbon-designer.md)|Décrit comment vous pouvez utiliser le Concepteur de ruban pour ajouter des onglets, groupes et contrôles personnalisés au ruban d'une application Microsoft Office.|  
-|[Procédure pas à pas : création d'un onglet personnalisé à l'aide du Concepteur de ruban](../vsto/walkthrough-creating-a-custom-tab-by-using-the-ribbon-designer.md)|Montre comment créer un onglet de ruban personnalisé à l'aide du Concepteur de ruban.  Vous pouvez utiliser le Concepteur de ruban pour ajouter et positionner des contrôles sur l'onglet personnalisé.|  
-|[Vue d'ensemble du modèle objet de ruban](../vsto/ribbon-object-model-overview.md)|Fournit une vue d'ensemble du modèle objet fortement typé que vous pouvez utiliser pour obtenir et définir les propriétés des contrôles de ruban au moment de l'exécution.|  
-|[Procédure pas à pas : mise à niveau des contrôles sur un ruban au moment de l'exécution](../vsto/walkthrough-updating-the-controls-on-a-ribbon-at-run-time.md)|Montre comment utiliser le modèle objet de ruban pour mettre à jour les contrôles d'un ruban après le chargement du ruban dans l'application Office.|  
-|[Personnalisation d'un ruban pour Outlook](../vsto/customizing-a-ribbon-for-outlook.md)|Fournit des conseils pour la personnalisation du ruban dans Microsoft Office Outlook.|  
-|[Personnalisation d'un ruban pour InfoPath](../vsto/customizing-a-ribbon-for-infopath.md)|Fournit des conseils pour la personnalisation du ruban dans Microsoft Office InfoPath.|  
-|[Accès au ruban au moment de l'exécution](../vsto/accessing-the-ribbon-at-run-time.md)|Montre comment afficher, masquer et modifier le ruban et permettre aux utilisateurs d'exécuter le code à partir de contrôles dans un volet de tâches personnalisé, un volet Actions ou une zone de formulaire Outlook.|  
-|[Comment : modifier la position d'un onglet dans le ruban](../vsto/how-to-change-the-position-of-a-tab-on-the-ribbon.md)|Montre comment modifier l'ordre des onglets d'un ruban.|  
-|[Comment : personnaliser un onglet intégré](../vsto/how-to-customize-a-built-in-tab.md)|Montre comment ajouter des groupes et des contrôles à un onglet intégré.|  
-|[Comment : ajouter des contrôles au mode Backstage](../vsto/how-to-add-controls-to-the-backstage-view.md)|Montre comment ajouter des contrôles au menu qui s'ouvre lorsque vous cliquez sur **Fichier**.|  
-|[Comment : ajouter un lanceur de boîte de dialogue à un groupe de ruban](../vsto/how-to-add-a-dialog-box-launcher-to-a-ribbon-group.md)|Montre comment ajouter un lanceur de boîte de dialogue à un groupe de ruban|  
-|[Comment : exporter un ruban à partir du Concepteur de ruban vers l'élément XML Ribbon](../vsto/how-to-export-a-ribbon-from-the-ribbon-designer-to-ribbon-xml.md)|Montre comment personnaliser le ruban de façon avancée en exportant le ruban du Concepteur vers Ruban XML.|  
-|[Élément XML Ribbon](../vsto/ribbon-xml.md)|Explique comment vous pouvez personnaliser un ruban en utilisant Ribbon XML.|  
-|[Procédure pas à pas : création d'un onglet personnalisé à l'aide du Concepteur de ruban](../vsto/walkthrough-creating-a-custom-tab-by-using-the-ribbon-designer.md)|Montre comment créer un onglet de ruban personnalisé à l'aide de l'élément  **Ruban \(XML\)**.|  
+|[How to: Get Started Customizing the Ribbon](../vsto/how-to-get-started-customizing-the-ribbon.md)|Shows you how to customize the Ribbon of a Microsoft Office application, add a **Ribbon (Visual Designer)** or **Ribbon (XML)** item to an Office project.|  
+|[Ribbon Designer](../vsto/ribbon-designer.md)|Describes how you can use the Ribbon Designer to add custom tabs, groups, and controls to the Ribbon of a Microsoft Office application.|  
+|[Walkthrough: Creating a Custom Tab by Using the Ribbon Designer](../vsto/walkthrough-creating-a-custom-tab-by-using-the-ribbon-designer.md)|Shows you how to create a custom Ribbon tab by using the Ribbon Designer. You can use the Ribbon Designer to add and position controls on the custom tab.|  
+|[Ribbon Object Model Overview](../vsto/ribbon-object-model-overview.md)|Provides an overview of the strongly typed object model that you can use to get and set the properties of Ribbon controls at run time.|  
+|[Walkthrough: Updating the Controls on a Ribbon at Run Time](../vsto/walkthrough-updating-the-controls-on-a-ribbon-at-run-time.md)|Demonstrates how to use the Ribbon object model to update the controls on a Ribbon after the Ribbon is loaded into the Office application.|  
+|[Customizing a Ribbon for Outlook](../vsto/customizing-a-ribbon-for-outlook.md)|Provides guidance for customizing the Ribbon in Microsoft Office Outlook.|  
+|[Customizing a Ribbon for InfoPath](../vsto/customizing-a-ribbon-for-infopath.md)|Provides guidance for customizing the Ribbon in Microsoft Office InfoPath.|  
+|[Accessing the Ribbon at Run Time](../vsto/accessing-the-ribbon-at-run-time.md)|Shows how to show, hide, and modify the Ribbon, and enable users to run the code from controls in a custom task pane, actions pane, or Outlook form region.|  
+|[How to: Change the Position of a Tab on the Ribbon](../vsto/how-to-change-the-position-of-a-tab-on-the-ribbon.md)|Shows how to change the order of tabs on a Ribbon.|  
+|[How to: Customize a Built-in Tab](../vsto/how-to-customize-a-built-in-tab.md)|Shows how to add groups and controls to a built-in tab.|  
+|[How to: Add Controls to the Backstage View](../vsto/how-to-add-controls-to-the-backstage-view.md)|Shows how to add controls to the menu that opens when you click the **File**.|  
+|[How to: Add a Dialog Box Launcher to a Ribbon Group](../vsto/how-to-add-a-dialog-box-launcher-to-a-ribbon-group.md)|Shows to add a dialog box launcher to any group on a Ribbon.|  
+|[How to: Export a Ribbon from the Ribbon Designer to Ribbon XML](../vsto/how-to-export-a-ribbon-from-the-ribbon-designer-to-ribbon-xml.md)|Shows how to customize the Ribbon in advanced ways by exporting the Ribbon from the designer to Ribbon XML.|  
+|[Ribbon XML](../vsto/ribbon-xml.md)|Explains how you can customize a Ribbon by using Ribbon XML.|  
+|[Walkthrough: Creating a Custom Tab by Using the Ribbon Designer](../vsto/walkthrough-creating-a-custom-tab-by-using-the-ribbon-designer.md)|Demonstrates how to create a custom Ribbon tab by using the **Ribbon (XML)** item.|  
   
   

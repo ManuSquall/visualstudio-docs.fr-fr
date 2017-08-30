@@ -1,95 +1,105 @@
 ---
-title: "CA1502&#160;: &#201;viter l&#39;exc&#232;s de complexit&#233; | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-devops-test"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "AvoidExcessiveComplexity"
-  - "CA1502"
-helpviewer_keywords: 
-  - "CA1502"
-  - "AvoidExcessiveComplexity"
+title: 'CA1502: Avoid excessive complexity | Microsoft Docs'
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology:
+- vs-devops-test
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords:
+- AvoidExcessiveComplexity
+- CA1502
+helpviewer_keywords:
+- CA1502
+- AvoidExcessiveComplexity
 ms.assetid: d735454b-2f8f-47ce-907d-f7a5a5391221
 caps.latest.revision: 30
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
-caps.handback.revision: 30
----
-# CA1502&#160;: &#201;viter l&#39;exc&#232;s de complexit&#233;
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
+author: stevehoag
+ms.author: shoag
+manager: wpickett
+translation.priority.ht:
+- de-de
+- es-es
+- fr-fr
+- it-it
+- ja-jp
+- ko-kr
+- ru-ru
+- zh-cn
+- zh-tw
+translation.priority.mt:
+- cs-cz
+- pl-pl
+- pt-br
+- tr-tr
+ms.translationtype: HT
+ms.sourcegitcommit: eb5c9550fd29b0e98bf63a7240737da4f13f3249
+ms.openlocfilehash: c04ac5e357556722770067fb61378580173f3462
+ms.contentlocale: fr-fr
+ms.lasthandoff: 08/30/2017
 
+---
+# <a name="ca1502-avoid-excessive-complexity"></a>CA1502: Avoid excessive complexity
 |||  
 |-|-|  
 |TypeName|AvoidExcessiveComplexity|  
 |CheckId|CA1502|  
-|Catégorie|Microsoft.Maintainability|  
-|Modification avec rupture|Modification sans rupture|  
+|Category|Microsoft.Maintainability|  
+|Breaking Change|Non-breaking|  
   
-## Cause  
- Une méthode affiche une complexité cyclomatic excessive.  
+## <a name="cause"></a>Cause  
+ A method has an excessive cyclomatic complexity.  
   
-## Description de la règle  
- La *complexité cyclomatic* mesure le nombre de chemins linéairement indépendants à travers la méthode, déterminé par le nombre et la complexité des branches conditionnelles.  Une complexité cyclomatic basse indique généralement une méthode facile de comprendre, à tester et à gérer.  La complexité cyclomatic est calculée à partir d'un graphique de flux de contrôle de la méthode et est fournie comme suit :  
+## <a name="rule-description"></a>Rule Description  
+ *Cyclomatic complexity* measures the number of linearly independent paths through the method, which is determined by the number and complexity of conditional branches. A low cyclomatic complexity generally indicates a method that is easy to understand, test, and maintain. The cyclomatic complexity is calculated from a control flow graph of the method and is given as follows:  
   
- complexité cyclomatic \= nombre de bords \- nombre de nœuds \+ 1  
+ cyclomatic complexity = the number of edges - the number of nodes + 1  
   
- où un nœud représente un point de branche logique et un bord une ligne entre des nœuds.  
+ where a node represents a logic branch point and an edge represents a line between nodes.  
   
- La règle signale une violation quand la complexité cyclomatic est supérieure à 25.  
+ The rule reports a violation when the cyclomatic complexity is more than 25.  
   
- Vous pouvez en apprendre plus sur les métriques du code grâce à [Mesures de la complexité et de la facilité de maintenance du code managé](../code-quality/measuring-complexity-and-maintainability-of-managed-code.md),  
+ You can learn more about code metrics at [Measuring Complexity and Maintainability of Managed Code](../code-quality/measuring-complexity-and-maintainability-of-managed-code.md),  
   
-## Comment corriger les violations  
- Pour corriger une violation de cette règle, refactorisez la méthode pour diminuer sa complexité cyclomatic.  
+## <a name="how-to-fix-violations"></a>How to Fix Violations  
+ To fix a violation of this rule, refactor the method to reduce its cyclomatic complexity.  
   
-## Quand supprimer les avertissements  
- Il est possible de supprimer sans risque un avertissement de cette règle si la complexité est difficile à réduire et si la méthode est facile à comprendre, à tester et à gérer.  En particulier, une méthode qui contient une instruction `switch` \(`Select` en [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)]\) de grande envergure est candidate à l'exclusion.  Le risque de déstabiliser la base de code à un point avancé du cycle de développement ou d'introduire un changement inattendu dans le comportement au moment de l'exécution d'un code précédemment expédié peut compenser les avantages conférés en termes de facilité de maintenance par la refactorisation du code.  
+## <a name="when-to-suppress-warnings"></a>When to Suppress Warnings  
+ It is safe to suppress a warning from this rule if the complexity cannot easily be reduced and the method is easy to understand, test, and maintain. In particular, a method that contains a large `switch` (`Select` in [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)]) statement is a candidate for exclusion. The risk of destabilizing the code base late in the development cycle or introducing an unexpected change in runtime behavior in previously shipped code might outweigh the maintainability benefits of refactoring the code.  
   
-## Mode de calcul de la complexité cyclomatic  
- La complexité cyclomatic est calculée en ajoutant 1 aux éléments suivants :  
+## <a name="how-cyclomatic-complexity-is-calculated"></a>How Cyclomatic Complexity is Calculated  
+ The cyclomatic complexity is calculated by adding 1 to the following:  
   
--   Nombre de branches \(par exemple `if`, `while` et `do`\)  
+-   Number of branches (such as `if`, `while`, and `do`)  
   
--   Nombre d'instructions `case` dans une instruction `switch`  
+-   Number of `case` statements in a `switch`  
   
- Les exemples suivants affichent des méthodes avec diverses complexités cyclomatic.  
+ The following examples show methods that have varying cyclomatic complexities.  
   
-## Exemple  
- **Complexité cyclomatic 1**  
+## <a name="example"></a>Example  
+ **Cyclomatic Complexity of 1**  
   
- [!code-cpp[FxCop.Maintainability.AvoidExcessiveComplexity#1](../code-quality/codesnippet/CPP/ca1502-avoid-excessive-complexity_1.cpp)]
- [!code-vb[FxCop.Maintainability.AvoidExcessiveComplexity#1](../code-quality/codesnippet/VisualBasic/ca1502-avoid-excessive-complexity_1.vb)]
- [!code-cs[FxCop.Maintainability.AvoidExcessiveComplexity#1](../code-quality/codesnippet/CSharp/ca1502-avoid-excessive-complexity_1.cs)]  
+ [!code-cpp[FxCop.Maintainability.AvoidExcessiveComplexity#1](../code-quality/codesnippet/CPP/ca1502-avoid-excessive-complexity_1.cpp)] [!code-vb[FxCop.Maintainability.AvoidExcessiveComplexity#1](../code-quality/codesnippet/VisualBasic/ca1502-avoid-excessive-complexity_1.vb)] [!code-csharp[FxCop.Maintainability.AvoidExcessiveComplexity#1](../code-quality/codesnippet/CSharp/ca1502-avoid-excessive-complexity_1.cs)]  
   
-## Exemple  
- **Complexité cyclomatic 2**  
+## <a name="example"></a>Example  
+ **Cyclomatic Complexity of 2**  
   
- [!code-cpp[FxCop.Maintainability.AvoidExcessiveComplexity#2](../code-quality/codesnippet/CPP/ca1502-avoid-excessive-complexity_2.cpp)]
- [!code-vb[FxCop.Maintainability.AvoidExcessiveComplexity#2](../code-quality/codesnippet/VisualBasic/ca1502-avoid-excessive-complexity_2.vb)]
- [!code-cs[FxCop.Maintainability.AvoidExcessiveComplexity#2](../code-quality/codesnippet/CSharp/ca1502-avoid-excessive-complexity_2.cs)]  
+ [!code-cpp[FxCop.Maintainability.AvoidExcessiveComplexity#2](../code-quality/codesnippet/CPP/ca1502-avoid-excessive-complexity_2.cpp)] [!code-vb[FxCop.Maintainability.AvoidExcessiveComplexity#2](../code-quality/codesnippet/VisualBasic/ca1502-avoid-excessive-complexity_2.vb)] [!code-csharp[FxCop.Maintainability.AvoidExcessiveComplexity#2](../code-quality/codesnippet/CSharp/ca1502-avoid-excessive-complexity_2.cs)]  
   
-## Exemple  
- **Complexité cyclomatic 3**  
+## <a name="example"></a>Example  
+ **Cyclomatic Complexity of 3**  
   
- [!code-cpp[FxCop.Maintainability.AvoidExcessiveComplexity#3](../code-quality/codesnippet/CPP/ca1502-avoid-excessive-complexity_3.cpp)]
- [!code-vb[FxCop.Maintainability.AvoidExcessiveComplexity#3](../code-quality/codesnippet/VisualBasic/ca1502-avoid-excessive-complexity_3.vb)]
- [!code-cs[FxCop.Maintainability.AvoidExcessiveComplexity#3](../code-quality/codesnippet/CSharp/ca1502-avoid-excessive-complexity_3.cs)]  
+ [!code-cpp[FxCop.Maintainability.AvoidExcessiveComplexity#3](../code-quality/codesnippet/CPP/ca1502-avoid-excessive-complexity_3.cpp)] [!code-vb[FxCop.Maintainability.AvoidExcessiveComplexity#3](../code-quality/codesnippet/VisualBasic/ca1502-avoid-excessive-complexity_3.vb)] [!code-csharp[FxCop.Maintainability.AvoidExcessiveComplexity#3](../code-quality/codesnippet/CSharp/ca1502-avoid-excessive-complexity_3.cs)]  
   
-## Exemple  
- **Complexité cyclomatic 8**  
+## <a name="example"></a>Example  
+ **Cyclomatic Complexity of 8**  
   
- [!code-cpp[FxCop.Maintainability.AvoidExcessiveComplexity#4](../code-quality/codesnippet/CPP/ca1502-avoid-excessive-complexity_4.cpp)]
- [!code-vb[FxCop.Maintainability.AvoidExcessiveComplexity#4](../code-quality/codesnippet/VisualBasic/ca1502-avoid-excessive-complexity_4.vb)]
- [!code-cs[FxCop.Maintainability.AvoidExcessiveComplexity#4](../code-quality/codesnippet/CSharp/ca1502-avoid-excessive-complexity_4.cs)]  
+ [!code-cpp[FxCop.Maintainability.AvoidExcessiveComplexity#4](../code-quality/codesnippet/CPP/ca1502-avoid-excessive-complexity_4.cpp)] [!code-vb[FxCop.Maintainability.AvoidExcessiveComplexity#4](../code-quality/codesnippet/VisualBasic/ca1502-avoid-excessive-complexity_4.vb)] [!code-csharp[FxCop.Maintainability.AvoidExcessiveComplexity#4](../code-quality/codesnippet/CSharp/ca1502-avoid-excessive-complexity_4.cs)]  
   
-## Règles connexes  
- [CA1501 : Éviter l'excès d'héritage](../code-quality/ca1501-avoid-excessive-inheritance.md)  
+## <a name="related-rules"></a>Related Rules  
+ [CA1501: Avoid excessive inheritance](../code-quality/ca1501-avoid-excessive-inheritance.md)  
   
-## Voir aussi  
- [Mesures de la complexité et de la facilité de maintenance du code managé](../code-quality/measuring-complexity-and-maintainability-of-managed-code.md)
+## <a name="see-also"></a>See Also  
+ [Measuring Complexity and Maintainability of Managed Code](../code-quality/measuring-complexity-and-maintainability-of-managed-code.md)

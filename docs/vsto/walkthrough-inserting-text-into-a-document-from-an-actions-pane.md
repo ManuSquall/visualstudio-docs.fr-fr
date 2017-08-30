@@ -1,191 +1,193 @@
 ---
-title: "Proc&#233;dure pas &#224; pas : Insertion de texte dans un document &#224; partir d&#39;un volet Actions"
-ms.custom: ""
-ms.date: "02/02/2017"
-ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "office-development"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-dev_langs: 
-  - "VB"
-  - "CSharp"
-helpviewer_keywords: 
-  - "volets Actions (développement Office dans Visual Studio), ajouter des contrôles"
-  - "volets Actions (développement Office dans Visual Studio), créer dans Word"
-  - "documents dynamiques (développement Office dans Visual Studio), ajouter des contrôles"
-  - "documents dynamiques (développement Office dans Visual Studio), créer dans Word"
+title: 'Walkthrough: Inserting Text into a Document from an Actions Pane | Microsoft Docs'
+ms.custom: 
+ms.date: 02/02/2017
+ms.prod: visual-studio-dev14
+ms.reviewer: 
+ms.suite: 
+ms.technology:
+- office-development
+ms.tgt_pltfrm: 
+ms.topic: article
+dev_langs:
+- VB
+- CSharp
+helpviewer_keywords:
+- smart documents [Office development in Visual Studio], creating in Word
+- smart documents [Office development in Visual Studio], adding controls
+- actions panes [Office development in Visual Studio], creating in Word
+- actions panes [Office development in Visual Studio], adding controls
 ms.assetid: fd14c896-5737-4a20-94f7-6064b67112c5
 caps.latest.revision: 70
-author: "kempb"
-ms.author: "kempb"
-manager: "ghogen"
-caps.handback.revision: 69
+author: kempb
+ms.author: kempb
+manager: ghogen
+ms.translationtype: HT
+ms.sourcegitcommit: eb5c9550fd29b0e98bf63a7240737da4f13f3249
+ms.openlocfilehash: f4952081dea98ae372ff1df9d87cd4146b6e6da6
+ms.contentlocale: fr-fr
+ms.lasthandoff: 08/30/2017
+
 ---
-# Proc&#233;dure pas &#224; pas : Insertion de texte dans un document &#224; partir d&#39;un volet Actions
-  Cette procédure pas à pas montre la création d'un volet Actions dans un document Microsoft Office Word.  Le volet Actions contient deux contrôles qui recueillent l'entrée puis envoient le texte au document.  
+# <a name="walkthrough-inserting-text-into-a-document-from-an-actions-pane"></a>Walkthrough: Inserting Text into a Document from an Actions Pane
+  This walkthrough demonstrates how to create an actions pane in a Microsoft Office Word document. The actions pane contains two controls that collect input and then send the text to the document.  
   
  [!INCLUDE[appliesto_wdalldoc](../vsto/includes/appliesto-wdalldoc-md.md)]  
   
- Cette procédure pas à pas décrit les tâches suivantes :  
+ This walkthrough illustrates the following tasks:  
   
--   Conception d'une interface en utilisant des contrôles Windows Forms sur un contrôle de volet Actions.  
+-   Designing an interface by using Windows Forms controls on an actions pane control.  
   
--   Affichage du volet Actions lors de l'ouverture de l'application.  
+-   Displaying the actions pane when the application opens.  
   
 > [!NOTE]  
->  Il est possible que pour certains des éléments de l'interface utilisateur de Visual Studio, votre ordinateur affiche des noms ou des emplacements différents de ceux indiqués dans les instructions suivantes.  Ces éléments dépendent de l'édition de Visual Studio dont vous disposez et des paramètres que vous utilisez.  Pour plus d’informations, consultez [Customizing Development Settings in Visual Studio](http://msdn.microsoft.com/fr-fr/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
+>  Your computer might show different names or locations for some of the Visual Studio user interface elements in the following instructions. The Visual Studio edition that you have and the settings that you use determine these elements. For more information, see [Personalize the Visual Studio IDE](../ide/personalizing-the-visual-studio-ide.md).  
   
-## Composants requis  
- Pour exécuter cette procédure pas à pas, vous devez disposer des composants suivants :  
+## <a name="prerequisites"></a>Prerequisites  
+ You need the following components to complete this walkthrough:  
   
 -   [!INCLUDE[vsto_vsprereq](../vsto/includes/vsto-vsprereq-md.md)]  
   
--   [!INCLUDE[Word_15_short](../vsto/includes/word-15-short-md.md)] ou [!INCLUDE[Word_14_short](../vsto/includes/word-14-short-md.md)].  
+-   [!INCLUDE[Word_15_short](../vsto/includes/word-15-short-md.md)] or [!INCLUDE[Word_14_short](../vsto/includes/word-14-short-md.md)].  
   
-## Création du projet  
- La première étape consiste à créer un projet de document Word.  
+## <a name="creating-the-project"></a>Creating the Project  
+ The first step is to create a Word Document project.  
   
-#### Pour créer un projet  
+#### <a name="to-create-a-new-project"></a>To create a new project  
   
-1.  Créez un projet de document Word et attribuez\-lui le nom My Basic Actions Pane.  Dans l'Assistant, sélectionnez **Créer un nouveau document**.  Pour plus d’informations, consultez [Comment : créer des projets Office dans Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md).  
+1.  Create a Word Document project with the name **My Basic Actions Pane**. In the wizard, select **Create a new document**. For more information, see [How to: Create Office Projects in Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md).  
   
-     Visual Studio ouvre le nouveau document Word dans le concepteur et ajoute le projet **My Basic Actions Pane** à l'**Explorateur de solutions**.  
+     Visual Studio opens the new Word document in the designer and adds the **My Basic Actions Pane** project to **Solution Explorer**.  
   
-## Ajout de texte et de signets au document  
- Le volet Actions enverra le texte aux signets dans le document.  Pour concevoir le document, tapez du texte pour créer un formulaire de base.  
+## <a name="adding-text-and-bookmarks-to-the-document"></a>Adding Text and Bookmarks to the Document  
+ The actions pane will send text to bookmarks in the document. To design the document, type some text to create a basic form.  
   
-#### Pour ajouter du texte à votre document  
+#### <a name="to-add-text-to-your-document"></a>To add text to your document  
   
-1.  Tapez le texte suivant dans votre document Word :  
+1.  Type the following text into your Word document:  
   
-     March 21, 2008  
+     **March 21, 2008**  
   
-     Nom  
+     **Name**  
   
-     Adresse  
+     **Address**  
   
-     Il s'agit d'un exemple de volet Actions de base dans Word.  
+     **This is an example of a basic actions pane in Word.**  
   
- Vous pouvez ajouter un contrôle <xref:Microsoft.Office.Tools.Word.Bookmark> dans votre document en le faisant glisser à partir de la **Boîte à outils** dans Visual Studio ou en utilisant la boîte de dialogue **Signet** dans Word.  
+ You can add a <xref:Microsoft.Office.Tools.Word.Bookmark> control to your document by dragging it from the **Toolbox** in Visual Studio or by using the **Bookmark** dialog box in Word.  
   
-#### Pour ajouter un contrôle Bookmark à votre document  
+#### <a name="to-add-a-bookmark-control-to-your-document"></a>To add a Bookmark control to your document  
   
-1.  À partir de l'onglet **Contrôles Word** de la **Boîte à outils**, faites glisser un contrôle <xref:Microsoft.Office.Tools.Word.Bookmark> vers votre document.  
+1.  From the **Word Controls** tab of the **Toolbox**, drag a <xref:Microsoft.Office.Tools.Word.Bookmark> control to your document.  
   
-     La boîte de dialogue **Ajouter un contrôle Bookmark** s'affiche.  
+     The **Add Bookmark Control** dialog box appears.  
   
-2.  Sélectionnez le mot **Name**, sans sélectionner la marque de paragraphe, et cliquez sur **OK**.  
+2.  Select the word **Name**, without selecting the paragraph mark, and click **OK**.  
   
     > [!NOTE]  
-    >  La marque de paragraphe doit être en dehors du signet.  Si les marques de paragraphe ne sont pas visibles dans le document, cliquez sur le menu **Outils**, pointez sur **Outils Microsoft Office Word**, puis cliquez sur **Options**.  Cliquez sur l'onglet **Affichage** et activez la case à cocher **Marques de paragraphe** dans la section **Marques de format** de la boîte de dialogue **Options**.  
+    >  The paragraph mark should be outside of the bookmark. If paragraph marks are not visible in the document, click the **Tools** menu, point to **Microsoft Office Word Tools** and then click **Options**. Click the **View** tab, and select the **Paragraph marks** check box in the **Formatting marks** section of the **Options** dialog box.  
   
-3.  Dans la fenêtre **Propriétés**, remplacez la propriété **Name** de **Bookmark1** par **showName**.  
+3.  In the **Properties** window, change the **Name** property of **Bookmark1** to **showName**.  
   
-4.  Sélectionnez le mot **Address**, sans sélectionner la marque de paragraphe.  
+4.  Select the word **Address**, without selecting the paragraph mark.  
   
-5.  Sous l'onglet **Insérer** du ruban, dans le groupe **Liens**, cliquez sur **Signet**.  
+5.  On the **Insert** tab of the Ribbon, in the **Links** group, click **Bookmark**.  
   
-6.  Dans la boîte de dialogue **Signet**, tapez **showAddress** dans la zone **Nom du signet** et cliquez sur **Ajouter**.  
+6.  In the **Bookmark** dialog box, type **showAddress** in the **Bookmark Name** box and click **Add**.  
   
-## Ajout de contrôles au volet Actions  
- Pour concevoir l'interface du volet Actions, ajoutez un contrôle de volet Actions au projet, puis ajoutez les contrôles Windows Forms au contrôle de volet Actions.  
+## <a name="adding-controls-to-the-actions-pane"></a>Adding Controls to the Actions Pane  
+ To design the actions pane interface, add an actions pane control to the project and then add Windows Forms controls to the actions pane control.  
   
-#### Pour ajouter un contrôle de volet Actions  
+#### <a name="to-add-an-actions-pane-control"></a>To add an actions pane control  
   
-1.  Sélectionnez le projet **My Basic Actions Pane** dans l'**Explorateur de solutions**.  
+1.  Select the **My Basic Actions Pane** project in **Solution Explorer**.  
   
-2.  Dans le menu **Projet**, cliquez sur **Ajouter un nouvel élément**.  
+2.  On the **Project** menu, click **Add New Item**.  
   
-3.  Dans la boîte de dialogue **Ajouter un nouvel élément**, cliquez sur **Contrôle de volet Actions**, nommez le contrôle **InsertTextControl** et cliquez sur **Ajouter**.  
+3.  In the **Add New Item** dialog box, click **Actions Pane Control**, name the control **InsertTextControl,** and click **Add**.  
   
-#### Pour ajouter des contrôles Windows Form au contrôle de volet Actions  
+#### <a name="to-add-windows-form-controls-to-the-actions-pane-control"></a>To add Windows Form controls to the actions pane control  
   
-1.  Si le contrôle de volet Actions n'est pas visible dans le concepteur, double\-cliquez sur **InsertTextControl**.  
+1.  If the actions pane control is not visible in the designer, double-click **InsertTextControl**.  
   
-2.  À partir de l'onglet **Contrôles communs** de la **Boîte à outils**, faites glisser un contrôle **Label** vers le contrôle de volet Actions.  
+2.  From the **Common Controls** tab of the **Toolbox**, drag a **Label** control to the actions pane control.  
   
-3.  Remplacez la propriété **Text** du contrôle Label par **Name**.  
+3.  Change the **Text** property of the Label control to **Name**.  
   
-4.  Ajoutez un contrôle **Textbox** au contrôle de volet Actions et modifiez les propriétés suivantes.  
+4.  Add a **Textbox** control to the actions pane control, and change the following properties.  
   
-    |Propriété|Valeur|  
-    |---------------|------------|  
-    |**Nom**|**getName**|  
-    |**Taille**|**130, 20**|  
+    |Property|Value|  
+    |--------------|-----------|  
+    |**Name**|**getName**|  
+    |**Size**|**130, 20**|  
   
-5.  Ajoutez un deuxième contrôle **Label** au contrôle de volet Actions et remplacez la propriété **Text** par **Address**.  
+5.  Add a second **Label** control to the actions pane control, and change the **Text** property to **Address**.  
   
-6.  Ajoutez un deuxième contrôle **Textbox** au contrôle de volet Actions et modifiez les propriétés suivantes.  
+6.  Add a second **Textbox** control to the actions pane control, and change the following properties.  
   
-    |Propriété|Valeur|  
-    |---------------|------------|  
-    |**Nom**|**getAddress**|  
+    |Property|Value|  
+    |--------------|-----------|  
+    |**Name**|**getAddress**|  
     |**Accepts Return**|**True**|  
     |**Multiline**|**True**|  
-    |**Taille**|**130, 40**|  
+    |**Size**|**130, 40**|  
   
-7.  Ajoutez un contrôle **Button** au contrôle de volet Actions et modifiez les propriétés suivantes.  
+7.  Add a **Button** control to the actions pane control, and change the following properties.  
   
-    |Propriété|Valeur|  
-    |---------------|------------|  
-    |**Nom**|**addText**|  
-    |**du texte ;**|**Insert**|  
+    |Property|Value|  
+    |--------------|-----------|  
+    |**Name**|**addText**|  
+    |**Text**|**Insert**|  
   
-## Ajout de code pour insérer du texte dans le document  
- Dans le volet Actions, écrivez un code qui insère le texte des zones de texte dans les contrôles <xref:Microsoft.Office.Tools.Word.Bookmark> appropriés dans le document.  Vous pouvez utiliser la classe `Globals` pour accéder aux contrôles du document à partir des contrôles du volet Actions.  Pour plus d’informations, consultez [Accès global aux objets dans les projets Office](../vsto/global-access-to-objects-in-office-projects.md).  
+## <a name="adding-code-to-insert-text-into-the-document"></a>Adding Code to Insert Text into the Document  
+ In the actions pane, write code that inserts the text from the text boxes into the appropriate <xref:Microsoft.Office.Tools.Word.Bookmark> controls in the document. You can use the `Globals` class to access controls on the document from the controls on the actions pane. For more information, see [Global Access to Objects in Office Projects](../vsto/global-access-to-objects-in-office-projects.md).  
   
-#### Pour insérer le texte du volet Actions dans un signet dans le document  
+#### <a name="to-insert-text-from-the-actions-pane-in-a-bookmark-in-the-document"></a>To insert text from the actions pane in a bookmark in the document  
   
-1.  Ajoutez le code suivant au gestionnaire d'événements <xref:System.Windows.Forms.Control.Click> du bouton **addText**.  
+1.  Add the following code to the <xref:System.Windows.Forms.Control.Click> event handler of the **addText** button.  
   
-     [!code-csharp[Trin_VstcoreActionsPaneWord#8](../snippets/csharp/VS_Snippets_OfficeSP/Trin_VstcoreActionsPaneWord/CS/InsertTextControl.cs#8)]
-     [!code-vb[Trin_VstcoreActionsPaneWord#8](../snippets/visualbasic/VS_Snippets_OfficeSP/Trin_VstcoreActionsPaneWord/VB/InsertTextControl.vb#8)]  
+     [!code-csharp[Trin_VstcoreActionsPaneWord#8](../vsto/codesnippet/CSharp/Trin_VstcoreActionsPaneWordCS/InsertTextControl.cs#8)]  [!code-vb[Trin_VstcoreActionsPaneWord#8](../vsto/codesnippet/VisualBasic/Trin_VstcoreActionsPaneWordVB/InsertTextControl.vb#8)]  
   
-2.  En C\#, vous devez ajouter un gestionnaire d'événements pour le clic de bouton.  Vous pouvez placer ce code dans le constructeur `InsertTextControl`, après l'appel à `IntializeComponent`.  Pour plus d'informations sur la création de gestionnaires d'événements, consultez [Comment : créer des gestionnaires d'événements dans les projets Office](../vsto/how-to-create-event-handlers-in-office-projects.md).  
+2.  In C#, you must add an event handler for the button click. You can place this code in the `InsertTextControl` constructor after the call to `IntializeComponent`. For information about creating event handlers, see [How to: Create Event Handlers in Office Projects](../vsto/how-to-create-event-handlers-in-office-projects.md).  
   
-     [!code-csharp[Trin_VstcoreActionsPaneWord#9](../snippets/csharp/VS_Snippets_OfficeSP/Trin_VstcoreActionsPaneWord/CS/InsertTextControl.cs#9)]  
+     [!code-csharp[Trin_VstcoreActionsPaneWord#9](../vsto/codesnippet/CSharp/Trin_VstcoreActionsPaneWordCS/InsertTextControl.cs#9)]  
   
-## Ajout de code pour afficher le volet Actions  
- Pour afficher le volet Actions, ajoutez le contrôle créé à la collection de contrôles.  
+## <a name="adding-code-to-show-the-actions-pane"></a>Adding Code to Show the Actions Pane  
+ To show the actions pane, add the control you created to the control collection.  
   
-#### Pour afficher le volet Actions  
+#### <a name="to-show-the-actions-pane"></a>To show the actions pane  
   
-1.  Créez une instance du contrôle de volet Actions dans la classe `ThisDocument`.  
+1.  Create a new instance of the actions pane control in the `ThisDocument` class.  
   
-     [!code-csharp[Trin_VstcoreActionsPaneWord#10](../snippets/csharp/VS_Snippets_OfficeSP/Trin_VstcoreActionsPaneWord/CS/ThisDocument.cs#10)]
-     [!code-vb[Trin_VstcoreActionsPaneWord#10](../snippets/visualbasic/VS_Snippets_OfficeSP/Trin_VstcoreActionsPaneWord/VB/ThisDocument.vb#10)]  
+     [!code-csharp[Trin_VstcoreActionsPaneWord#10](../vsto/codesnippet/CSharp/Trin_VstcoreActionsPaneWordCS/ThisDocument.cs#10)]  [!code-vb[Trin_VstcoreActionsPaneWord#10](../vsto/codesnippet/VisualBasic/Trin_VstcoreActionsPaneWordVB/ThisDocument.vb#10)]  
   
-2.  Ajoutez le code suivant au gestionnaire d'événements <xref:Microsoft.Office.Tools.Word.Document.Startup> de la classe `ThisDocument`.  
+2.  Add the following code to the <xref:Microsoft.Office.Tools.Word.Document.Startup> event handler of `ThisDocument`.  
   
-     [!code-csharp[Trin_VstcoreActionsPaneWord#11](../snippets/csharp/VS_Snippets_OfficeSP/Trin_VstcoreActionsPaneWord/CS/ThisDocument.cs#11)]
-     [!code-vb[Trin_VstcoreActionsPaneWord#11](../snippets/visualbasic/VS_Snippets_OfficeSP/Trin_VstcoreActionsPaneWord/VB/ThisDocument.vb#11)]  
+     [!code-csharp[Trin_VstcoreActionsPaneWord#11](../vsto/codesnippet/CSharp/Trin_VstcoreActionsPaneWordCS/ThisDocument.cs#11)]  [!code-vb[Trin_VstcoreActionsPaneWord#11](../vsto/codesnippet/VisualBasic/Trin_VstcoreActionsPaneWordVB/ThisDocument.vb#11)]  
   
-## Test de l'application  
- Testez votre document pour vérifier que le volet Actions s'ouvre lorsque le document est ouvert et que le texte tapé dans les zones de texte est inséré dans les signets lorsqu'un utilisateur clique sur le bouton.  
+## <a name="testing-the-application"></a>Testing the Application  
+ Test your document to verify that the actions pane opens when the document is opened and that text typed into the text boxes is inserted into the bookmarks when the button is clicked.  
   
-#### Pour tester votre document  
+#### <a name="to-test-your-document"></a>To test your document  
   
-1.  Appuyez sur F5 pour exécuter votre projet.  
+1.  Press F5 to run your project.  
   
-2.  Vérifiez que le volet Actions est visible.  
+2.  Confirm that the actions pane is visible.  
   
-3.  Tapez votre nom et votre adresse dans les zones de texte sur le volet Actions et cliquez sur **Insérer**.  
+3.  Type your name and address into the text boxes on the actions pane and click **Insert**.  
   
-## Étapes suivantes  
- Vous devrez peut\-être ensuite exécuter les opérations suivantes :  
+## <a name="next-steps"></a>Next Steps  
+ Here are some tasks that might come next:  
   
--   Création d'un volet Actions dans Excel.  Pour plus d’informations, consultez [How to: Add an Actions Pane to Excel Workbooks](http://msdn.microsoft.com/fr-fr/62abfce6-e44f-419d-85d8-26bf59f33872).  
+-   Creating an actions pane in Excel. For more information, see [How to: Add an Actions Pane to Excel Workbooks](http://msdn.microsoft.com/en-us/62abfce6-e44f-419d-85d8-26bf59f33872).  
   
--   Liaison de données aux contrôles d'un volet Actions  Pour plus d’informations, consultez [Procédure pas à pas : liaison de données aux contrôles dans un volet Actions Word](../vsto/walkthrough-binding-data-to-controls-on-a-word-actions-pane.md).  
+-   Binding data to controls on an actions pane. For more information, see [Walkthrough: Binding Data to Controls on a Word Actions Pane](../vsto/walkthrough-binding-data-to-controls-on-a-word-actions-pane.md).  
   
-## Voir aussi  
- [Vue d'ensemble du volet Actions](../vsto/actions-pane-overview.md)   
- [Comment : ajouter un volet Actions à des documents Word ou à des classeurs Excel](../vsto/how-to-add-an-actions-pane-to-word-documents-or-excel-workbooks.md)   
- [How to: Add an Actions Pane to Excel Workbooks](http://msdn.microsoft.com/fr-fr/62abfce6-e44f-419d-85d8-26bf59f33872)   
- [Comment : gérer la disposition des contrôles dans les volets Actions](../vsto/how-to-manage-control-layout-on-actions-panes.md)   
- [Bookmark, contrôle](../vsto/bookmark-control.md)  
+## <a name="see-also"></a>See Also  
+ [Actions Pane Overview](../vsto/actions-pane-overview.md)   
+ [How to: Add an Actions Pane to Word Documents or Excel Workbooks](../vsto/how-to-add-an-actions-pane-to-word-documents-or-excel-workbooks.md)   
+ [How to: Add an Actions Pane to Excel Workbooks](http://msdn.microsoft.com/en-us/62abfce6-e44f-419d-85d8-26bf59f33872)   
+ [How to: Manage Control Layout on Actions Panes](../vsto/how-to-manage-control-layout-on-actions-panes.md)   
+ [Bookmark Control](../vsto/bookmark-control.md)  
   
   

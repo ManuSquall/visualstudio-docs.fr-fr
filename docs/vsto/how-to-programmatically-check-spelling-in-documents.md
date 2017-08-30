@@ -1,41 +1,45 @@
 ---
-title: "Comment&#160;: v&#233;rifier l&#39;orthographe dans les documents par programmation"
-ms.custom: ""
-ms.date: "02/02/2017"
-ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "office-development"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-dev_langs: 
-  - "VB"
-  - "CSharp"
-helpviewer_keywords: 
-  - "documents (développement Office dans Visual Studio), vérifier l'orthographe"
-  - "vérificateur d'orthographe, documents"
+title: 'How to: Programmatically Check Spelling in Documents | Microsoft Docs'
+ms.custom: 
+ms.date: 02/02/2017
+ms.prod: visual-studio-dev14
+ms.reviewer: 
+ms.suite: 
+ms.technology:
+- office-development
+ms.tgt_pltfrm: 
+ms.topic: article
+dev_langs:
+- VB
+- CSharp
+helpviewer_keywords:
+- documents [Office development in Visual Studio], checking spelling
+- spelling checker, documents
 ms.assetid: 5bbe3a8d-fc65-4f57-bd63-5bb549dbc4bd
 caps.latest.revision: 24
-author: "kempb"
-ms.author: "kempb"
-manager: "ghogen"
-caps.handback.revision: 24
+author: kempb
+ms.author: kempb
+manager: ghogen
+ms.translationtype: HT
+ms.sourcegitcommit: eb5c9550fd29b0e98bf63a7240737da4f13f3249
+ms.openlocfilehash: 99897abad06494e64a5e6f885d7e3107908bc5ce
+ms.contentlocale: fr-fr
+ms.lasthandoff: 08/30/2017
+
 ---
-# Comment&#160;: v&#233;rifier l&#39;orthographe dans les documents par programmation
-  Pour vérifier l'orthographe dans un document, utilisez la méthode <xref:Microsoft.Office.Interop.Word._Application.CheckSpelling%2A>.  Cette méthode retourne une valeur booléenne indiquant si le paramètre fourni est correctement orthographié.  
+# <a name="how-to-programmatically-check-spelling-in-documents"></a>How to: Programmatically Check Spelling in Documents
+  To check the spelling in a document, use the <xref:Microsoft.Office.Interop.Word._Application.CheckSpelling%2A> method. This method returns a Boolean value that indicates whether the supplied parameter is spelled correctly.  
   
  [!INCLUDE[appliesto_wdalldocapp](../vsto/includes/appliesto-wdalldocapp-md.md)]  
   
-### Pour vérifier l'orthographe et afficher les résultats dans un message  
+### <a name="to-check-spelling-and-display-results-in-a-message-box"></a>To check spelling and display results in a message box  
   
-1.  Appelez la méthode <xref:Microsoft.Office.Interop.Word._Application.CheckSpelling%2A> et passez\-lui une plage de texte pour laquelle vérifier les fautes d'orthographe.  Pour utiliser cet exemple de code, exécutez\-le à partir de la classe `ThisDocument` ou `ThisAddIn` dans votre projet.  
+1.  Call the <xref:Microsoft.Office.Interop.Word._Application.CheckSpelling%2A> method and pass it a range of text to check for spelling errors. To use this code example, run it from the `ThisDocument` or `ThisAddIn` class in your project.  
   
-     [!code-csharp[Trin_VstcoreWordAutomation#113](../snippets/csharp/VS_Snippets_OfficeSP/Trin_VstcoreWordAutomation/CS/ThisDocument.cs#113)]
-     [!code-vb[Trin_VstcoreWordAutomation#113](../snippets/visualbasic/VS_Snippets_OfficeSP/Trin_VstcoreWordAutomation/VB/ThisDocument.vb#113)]  
+     [!code-vb[Trin_VstcoreWordAutomation#113](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationVB/ThisDocument.vb#113)]  [!code-csharp[Trin_VstcoreWordAutomation#113](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationCS/ThisDocument.cs#113)]  
   
-## Voir aussi  
- [Comment : définir et sélectionner des plages dans les documents par programmation](../vsto/how-to-programmatically-define-and-select-ranges-in-documents.md)   
- [Paramètres optionnels dans les solutions Office](../vsto/optional-parameters-in-office-solutions.md)  
+## <a name="see-also"></a>See Also  
+ [How to: Programmatically Define and Select Ranges in Documents](../vsto/how-to-programmatically-define-and-select-ranges-in-documents.md)   
+ [Optional Parameters in Office Solutions](../vsto/optional-parameters-in-office-solutions.md)  
   
   

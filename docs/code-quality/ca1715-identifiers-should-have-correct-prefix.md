@@ -1,81 +1,95 @@
 ---
-title: "CA1715 : Les identificateurs doivent &#234;tre dot&#233;s d&#39;un pr&#233;fixe correct | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-devops-test"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "CA1715"
-  - "IdentifiersShouldHaveCorrectPrefix"
-helpviewer_keywords: 
-  - "IdentifiersShouldHaveCorrectPrefix"
-  - "CA1715"
+title: 'CA1715: Identifiers should have correct prefix | Microsoft Docs'
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology:
+- vs-devops-test
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords:
+- CA1715
+- IdentifiersShouldHaveCorrectPrefix
+helpviewer_keywords:
+- IdentifiersShouldHaveCorrectPrefix
+- CA1715
 ms.assetid: cf45f8df-6855-4cb6-a4e2-7cfed714cf2f
 caps.latest.revision: 30
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
-caps.handback.revision: 30
----
-# CA1715 : Les identificateurs doivent &#234;tre dot&#233;s d&#39;un pr&#233;fixe correct
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
+author: stevehoag
+ms.author: shoag
+manager: wpickett
+translation.priority.ht:
+- de-de
+- es-es
+- fr-fr
+- it-it
+- ja-jp
+- ko-kr
+- ru-ru
+- zh-cn
+- zh-tw
+translation.priority.mt:
+- cs-cz
+- pl-pl
+- pt-br
+- tr-tr
+ms.translationtype: HT
+ms.sourcegitcommit: eb5c9550fd29b0e98bf63a7240737da4f13f3249
+ms.openlocfilehash: 79edfba42de7f89dd2827c3ce03a3a0194543361
+ms.contentlocale: fr-fr
+ms.lasthandoff: 08/30/2017
 
+---
+# <a name="ca1715-identifiers-should-have-correct-prefix"></a>CA1715: Identifiers should have correct prefix
 |||  
 |-|-|  
 |TypeName|IdentifiersShouldHaveCorrectPrefix|  
 |CheckId|CA1715|  
-|Catégorie|Microsoft.Naming|  
-|Modification avec rupture|Avec rupture \- lorsque déclenchée sur des interfaces.<br /><br /> Sans rupture \- lorsque déclenchée sur des paramètres de type générique.|  
+|Category|Microsoft.Naming|  
+|Breaking Change|Breaking - when fired on interfaces.<br /><br /> Non-breaking - when raised on generic type parameters.|  
   
-## Cause  
- Le nom d'une interface visible à l'extérieur ne commence pas par un "I" majuscule.  
+## <a name="cause"></a>Cause  
+ The name of an externally visible interface does not start with an uppercase 'I'.  
   
- ou  
+ -or-  
   
- Le nom d'un paramètre de type générique sur un type ou une méthode extérieurement visible ne commence pas par un 'T' majuscule.  
+ The name of a generic type parameter on an externally visible type or method does not start with an uppercase 'T'.  
   
-## Description de la règle  
- Par convention, les noms de certains éléments de programmation commencent par un préfixe spécifique.  
+## <a name="rule-description"></a>Rule Description  
+ By convention, the names of certain programming elements start with a specific prefix.  
   
- Les noms d'interfaces doivent commencer par un "I" majuscule suivi d'une autre lettre majuscule.  Cette règle rapporte des violations pour les noms d'interfaces tels que 'MyInterface' et 'IsolatedInterface'.  
+ Interface names should start with an uppercase 'I' followed by another uppercase letter. This rule reports violations for interface names such as 'MyInterface' and 'IsolatedInterface'.  
   
- Les noms de paramètre de type générique doivent commencer par un 'T' majuscule, suivi éventuellement d'une autre lettre majuscule.  Cette règle rapporte les violations pour les noms de paramètres de type générique, tels que ''V' et 'Type'.  
+ Generic type parameter names should start with an uppercase 'T' and optionally may be followed by another uppercase letter. This rule reports violations for generic type parameter names such as 'V' and 'Type'.  
   
- Les conventions d'affectation des noms confèrent un aspect commun aux bibliothèques qui ciblent le Common Language Runtime.  Elles réduisent ainsi la durée de l'apprentissage requis par les nouvelles bibliothèques de logiciels et confirment au client que la bibliothèque a été développée par une personne compétente en matière de développement de code managé.  
+ Naming conventions provide a common look for libraries that target the common language runtime. This reduces the learning curve that is required for new software libraries, and increases customer confidence that the library was developed by someone who has expertise in developing managed code.  
   
-## Comment corriger les violations  
- Renommez l'identificateur de sorte que son préfixe soit correct.  
+## <a name="how-to-fix-violations"></a>How to Fix Violations  
+ Rename the identifier so that it is correctly prefixed.  
   
-## Quand supprimer les avertissements  
- Ne supprimez aucun avertissement de cette règle.  
+## <a name="when-to-suppress-warnings"></a>When to Suppress Warnings  
+ Do not suppress a warning from this rule.  
   
-## Exemple  
- **L'exemple suivant présente une interface incorrectement nommée.**  
+## <a name="example"></a>Example  
+ **The following example shows an incorrectly named interface.**  
   
- [!code-cpp[FxCop.Naming.IdentifiersShouldHaveCorrectPrefix#1](../code-quality/codesnippet/CPP/ca1715-identifiers-should-have-correct-prefix_1.cpp)]
- [!code-vb[FxCop.Naming.IdentifiersShouldHaveCorrectPrefix#1](../code-quality/codesnippet/VisualBasic/ca1715-identifiers-should-have-correct-prefix_1.vb)]
- [!code-cs[FxCop.Naming.IdentifiersShouldHaveCorrectPrefix#1](../code-quality/codesnippet/CSharp/ca1715-identifiers-should-have-correct-prefix_1.cs)]  
+ [!code-cpp[FxCop.Naming.IdentifiersShouldHaveCorrectPrefix#1](../code-quality/codesnippet/CPP/ca1715-identifiers-should-have-correct-prefix_1.cpp)] [!code-vb[FxCop.Naming.IdentifiersShouldHaveCorrectPrefix#1](../code-quality/codesnippet/VisualBasic/ca1715-identifiers-should-have-correct-prefix_1.vb)] [!code-csharp[FxCop.Naming.IdentifiersShouldHaveCorrectPrefix#1](../code-quality/codesnippet/CSharp/ca1715-identifiers-should-have-correct-prefix_1.cs)]  
   
-## Exemple  
- **L'exemple suivant résout la violation précédente en faisant précéder le nom de l'interface par un 'I'.**  
+## <a name="example"></a>Example  
+ **The following example fixes the previous violation by prefixing the interface with 'I'.**  
   
- [!code-cs[FxCop.Naming.IdentifiersShouldHaveCorrectPrefix2#1](../code-quality/codesnippet/CSharp/ca1715-identifiers-should-have-correct-prefix_2.cs)]
- [!code-cpp[FxCop.Naming.IdentifiersShouldHaveCorrectPrefix2#1](../code-quality/codesnippet/CPP/ca1715-identifiers-should-have-correct-prefix_2.cpp)]
- [!code-vb[FxCop.Naming.IdentifiersShouldHaveCorrectPrefix2#1](../code-quality/codesnippet/VisualBasic/ca1715-identifiers-should-have-correct-prefix_2.vb)]  
+ [!code-csharp[FxCop.Naming.IdentifiersShouldHaveCorrectPrefix2#1](../code-quality/codesnippet/CSharp/ca1715-identifiers-should-have-correct-prefix_2.cs)] [!code-cpp[FxCop.Naming.IdentifiersShouldHaveCorrectPrefix2#1](../code-quality/codesnippet/CPP/ca1715-identifiers-should-have-correct-prefix_2.cpp)] [!code-vb[FxCop.Naming.IdentifiersShouldHaveCorrectPrefix2#1](../code-quality/codesnippet/VisualBasic/ca1715-identifiers-should-have-correct-prefix_2.vb)]  
   
-## Exemple  
- **L'exemple suivant présente un paramètre de type générique incorrectement nommé.**  
+## <a name="example"></a>Example  
+ **The following example shows an incorrectly named generic type parameter.**  
   
- [!CODE [FxCop.Naming.IdentifiersShouldHaveCorrectPrefix3#1](../CodeSnippet/VS_Snippets_CodeAnalysis/FxCop.Naming.IdentifiersShouldHaveCorrectPrefix3#1)]  
+ [!code-cpp[FxCop.Naming.IdentifiersShouldHaveCorrectPrefix3#1](../code-quality/codesnippet/CPP/ca1715-identifiers-should-have-correct-prefix_3.cpp)] [!code-vb[FxCop.Naming.IdentifiersShouldHaveCorrectPrefix3#1](../code-quality/codesnippet/VisualBasic/ca1715-identifiers-should-have-correct-prefix_3.vb)] [!code-csharp[FxCop.Naming.IdentifiersShouldHaveCorrectPrefix3#1](../code-quality/codesnippet/CSharp/ca1715-identifiers-should-have-correct-prefix_3.cs)]  
   
-## Exemple  
- **L'exemple suivant résout la violation précédente en faisant précéder le paramètre de type générique par un 'T'.**  
+## <a name="example"></a>Example  
+ **The following example fixes the previous violation by prefixing the generic type parameter with 'T'.**  
   
- [!CODE [FxCop.Naming.IdentifiersShouldHaveCorrectPrefix4#1](../CodeSnippet/VS_Snippets_CodeAnalysis/FxCop.Naming.IdentifiersShouldHaveCorrectPrefix4#1)]  
+ [!code-cpp[FxCop.Naming.IdentifiersShouldHaveCorrectPrefix4#1](../code-quality/codesnippet/CPP/ca1715-identifiers-should-have-correct-prefix_4.cpp)] [!code-csharp[FxCop.Naming.IdentifiersShouldHaveCorrectPrefix4#1](../code-quality/codesnippet/CSharp/ca1715-identifiers-should-have-correct-prefix_4.cs)] [!code-vb[FxCop.Naming.IdentifiersShouldHaveCorrectPrefix4#1](../code-quality/codesnippet/VisualBasic/ca1715-identifiers-should-have-correct-prefix_4.vb)]  
   
-## Règles connexes  
- [CA1722 : Les identificateurs ne doivent pas porter un préfixe incorrect](../code-quality/ca1722-identifiers-should-not-have-incorrect-prefix.md)
+## <a name="related-rules"></a>Related Rules  
+ [CA1722: Identifiers should not have incorrect prefix](../code-quality/ca1722-identifiers-should-not-have-incorrect-prefix.md)

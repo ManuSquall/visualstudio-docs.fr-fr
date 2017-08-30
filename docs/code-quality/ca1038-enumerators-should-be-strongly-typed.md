@@ -1,38 +1,55 @@
 ---
-title: "CA1038&#160;: Les &#233;num&#233;rateurs doivent &#234;tre fortement typ&#233;s | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-devops-test"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "EnumeratorsShouldBeStronglyTyped"
-  - "CA1038"
-helpviewer_keywords: 
-  - "CA1038"
-  - "EnumeratorsShouldBeStronglyTyped"
+title: 'CA1038: Enumerators should be strongly typed | Microsoft Docs'
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology:
+- vs-devops-test
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords:
+- EnumeratorsShouldBeStronglyTyped
+- CA1038
+helpviewer_keywords:
+- EnumeratorsShouldBeStronglyTyped
+- CA1038
 ms.assetid: 8919f526-d487-42a4-87dc-2b2ee25260c4
 caps.latest.revision: 16
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
-caps.handback.revision: 16
----
-# CA1038&#160;: Les &#233;num&#233;rateurs doivent &#234;tre fortement typ&#233;s
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
+author: stevehoag
+ms.author: shoag
+manager: wpickett
+translation.priority.ht:
+- cs-cz
+- de-de
+- es-es
+- fr-fr
+- it-it
+- ja-jp
+- ko-kr
+- pl-pl
+- pt-br
+- ru-ru
+- tr-tr
+- zh-cn
+- zh-tw
+ms.translationtype: HT
+ms.sourcegitcommit: eb5c9550fd29b0e98bf63a7240737da4f13f3249
+ms.openlocfilehash: 5ba630f68e9c49c755ab047a14a907822bee42e5
+ms.contentlocale: fr-fr
+ms.lasthandoff: 08/30/2017
 
+---
+# <a name="ca1038-enumerators-should-be-strongly-typed"></a>CA1038: Enumerators should be strongly typed
 |||  
 |-|-|  
 |TypeName|EnumeratorsShouldBeStronglyTyped|  
 |CheckId|CA1038|  
-|Catégorie|Microsoft.CSharp|  
-|Modification avec rupture|Oui|  
+|Category|Microsoft.Design|  
+|Breaking Change|Breaking|  
   
-## Cause  
- Un type public ou protégé implémente <xref:System.Collections.IEnumerator?displayProperty=fullName> mais ne fournit pas de version fortement typée de la propriété <xref:System.Collections.IEnumerator.Current%2A?displayProperty=fullName>.  Les types dérivés des types suivants ne sont pas soumis à cette règle :  
+## <a name="cause"></a>Cause  
+ A public or protected type implements <xref:System.Collections.IEnumerator?displayProperty=fullName> but does not provide a strongly typed version of the <xref:System.Collections.IEnumerator.Current%2A?displayProperty=fullName> property. Types that are derived from the following types are exempt from this rule:  
   
 -   <xref:System.Collections.CollectionBase?displayProperty=fullName>  
   
@@ -40,26 +57,26 @@ caps.handback.revision: 16
   
 -   <xref:System.Collections.ReadOnlyCollectionBase?displayProperty=fullName>  
   
-## Description de la règle  
- Cette règle requiert que les implémentations <xref:System.Collections.IEnumerator> fournissent également une version fortement typée de la propriété <xref:System.Collections.IEnumerator.Current%2A> afin que les utilisateurs ne soient pas tenus d'effectuer un cast de la valeur de retour en type fort lorsqu'ils utilisent les fonctionnalités fournies par l'interface.  Cette règle considère que le type qui implémente <xref:System.Collections.IEnumerator> contient une collection d'instances d'un type plus fort que <xref:System.Object>.  
+## <a name="rule-description"></a>Rule Description  
+ This rule requires <xref:System.Collections.IEnumerator> implementations to also provide a strongly typed version of the <xref:System.Collections.IEnumerator.Current%2A> property so that users are not required to cast the return value to the strong type when they use the functionality that is provided by the interface. This rule assumes that the type that implements <xref:System.Collections.IEnumerator> contains a collection of instances of a type that is stronger than <xref:System.Object>.  
   
-## Comment corriger les violations  
- Pour corriger une violation de cette règle, implémentez la propriété d'interface explicitement \(déclarez\-la en tant que `IEnumerator.Current`\).  Ajoutez une version publique fortement typée de la propriété, déclarée en tant que `Current`, et faites en sorte qu'elle retourne un objet fortement typé.  
+## <a name="how-to-fix-violations"></a>How to Fix Violations  
+ To fix a violation of this rule, implement the interface property explicitly (declare it as `IEnumerator.Current`). Add a public strongly typed version of the property, declared as `Current`, and have it return a strongly typed object.  
   
-## Quand supprimer les avertissements  
- Supprimez un avertissement de cette règle lors de l'implémentation d'un énumérateur fondé sur des objets à utiliser avec une collection fondée sur des objets, notamment un arbre binaire.  Les types qui étendent la nouvelle collection définissent l'énumérateur fortement typé et exposent la propriété fortement typée.  
+## <a name="when-to-suppress-warnings"></a>When to Suppress Warnings  
+ Suppress a warning from this rule when you implement an object-based enumerator for use with an object-based collection, such as a binary tree. Types that extend the new collection will define the strongly typed enumerator and expose the strongly typed property.  
   
-## Exemple  
- L'exemple suivant montre la manière correcte d'implémenter un type <xref:System.Collections.IEnumerator> fortement typé.  
+## <a name="example"></a>Example  
+ The following example demonstrates the correct way to implement a strongly typed <xref:System.Collections.IEnumerator> type.  
   
- [!CODE [FxCop.Design.IEnumeratorStrongTypes#1](../CodeSnippet/VS_Snippets_CodeAnalysis/FxCop.Design.IEnumeratorStrongTypes#1)]  
+ [!code-csharp[FxCop.Design.IEnumeratorStrongTypes#1](../code-quality/codesnippet/CSharp/ca1038-enumerators-should-be-strongly-typed_1.cs)]  
   
-## Règles connexes  
- [CA1035 : Les implémentations ICollection possèdent des membres fortement typés](../code-quality/ca1035-icollection-implementations-have-strongly-typed-members.md)  
+## <a name="related-rules"></a>Related Rules  
+ [CA1035: ICollection implementations have strongly typed members](../code-quality/ca1035-icollection-implementations-have-strongly-typed-members.md)  
   
- [CA1039 : Les listes sont fortement typées](../code-quality/ca1039-lists-are-strongly-typed.md)  
+ [CA1039: Lists are strongly typed](../code-quality/ca1039-lists-are-strongly-typed.md)  
   
-## Voir aussi  
+## <a name="see-also"></a>See Also  
  <xref:System.Collections.IEnumerator?displayProperty=fullName>   
  <xref:System.Collections.CollectionBase?displayProperty=fullName>   
  <xref:System.Collections.DictionaryBase?displayProperty=fullName>   

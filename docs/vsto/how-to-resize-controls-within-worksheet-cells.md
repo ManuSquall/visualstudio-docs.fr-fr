@@ -1,66 +1,70 @@
 ---
-title: "Comment&#160;: redimensionner des contr&#244;les dans des cellules de feuille de calcul"
-ms.custom: ""
-ms.date: "02/02/2017"
-ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "office-development"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-dev_langs: 
-  - "VB"
-  - "CSharp"
-helpviewer_keywords: 
-  - "contrôles (développement Office dans Visual Studio), redimensionner"
-  - "contrôles managés, redimensionner"
-  - "contrôles Windows Forms (développement Office dans Visual Studio), redimensionner"
-  - "feuilles de calcul, redimensionner"
+title: 'How to: Resize Controls Within Worksheet Cells | Microsoft Docs'
+ms.custom: 
+ms.date: 02/02/2017
+ms.prod: visual-studio-dev14
+ms.reviewer: 
+ms.suite: 
+ms.technology:
+- office-development
+ms.tgt_pltfrm: 
+ms.topic: article
+dev_langs:
+- VB
+- CSharp
+helpviewer_keywords:
+- controls [Office development in Visual Studio], resizing
+- managed controls, resizing
+- worksheets, resizing
+- Windows Forms controls [Office development in Visual Studio], resizing
 ms.assetid: 1439db4a-e64b-4381-a6e6-605ba94db3de
 caps.latest.revision: 33
-author: "kempb"
-ms.author: "kempb"
-manager: "ghogen"
-caps.handback.revision: 32
+author: kempb
+ms.author: kempb
+manager: ghogen
+ms.translationtype: HT
+ms.sourcegitcommit: eb5c9550fd29b0e98bf63a7240737da4f13f3249
+ms.openlocfilehash: 03a56a89259bd1f50be85ea244c97667bad906e1
+ms.contentlocale: fr-fr
+ms.lasthandoff: 08/30/2017
+
 ---
-# Comment&#160;: redimensionner des contr&#244;les dans des cellules de feuille de calcul
-  Lorsque vous redimensionnez des colonnes ou des lignes dans une feuille de calcul, tous les contrôles hôtes contenus dans les cellules sont automatiquement redimensionnés par rapport à la hauteur ou la largeur de la cellule qui a été redimensionnée.  Par défaut, les contrôles Windows Forms ne sont pas redimensionnés automatiquement.  
+# <a name="how-to-resize-controls-within-worksheet-cells"></a>How to: Resize Controls Within Worksheet Cells
+  When you resize columns or rows on a worksheet, any host controls contained in the cells automatically resize to the height or width of the cell that was resized. Windows Forms controls do not resize automatically by default.  
   
  [!INCLUDE[appliesto_xlalldoc](../vsto/includes/appliesto-xlalldoc-md.md)]  
   
- Si vous ajoutez les contrôles au moment du design, vous devez définir des options de positionnement pour chaque contrôle.  
+ If you add the controls at design time, you must set positioning options for each control.  
   
- Si vous ajoutez un contrôle Windows Forms par programmation et que vous fournissez un argument de plage, le contrôle est automatiquement redimensionné lorsqu'une cellule dans la plage est redimensionnée.  Pour plus d’informations, consultez [Ajout de contrôles à des documents Office au moment de l'exécution](../vsto/adding-controls-to-office-documents-at-run-time.md).  
+ If you add a Windows Forms control programmatically and supply a range argument, the control automatically resizes when a cell within the range is resized. For more information, see [Adding Controls to Office Documents at Run Time](../vsto/adding-controls-to-office-documents-at-run-time.md).  
   
-## Redimensionnement des contrôles au moment du design  
+## <a name="resizing-controls-at-design-time"></a>Resizing Controls at Design Time  
   
-#### Pour que les contrôles soient redimensionnés en même temps que les cellules au moment du design  
+#### <a name="to-make-controls-resize-with-cells-at-design-time"></a>To make controls resize with cells at design time  
   
-1.  À partir de la **boîte à outils**, faites glisser un contrôle Windows Forms vers une feuille de calcul.  
+1.  From the **Toolbox**, drag a Windows Forms control to a worksheet.  
   
-2.  Cliquez avec le bouton droit sur le contrôle et sélectionnez **Format de contrôle**.  
+2.  Right-click the control, and then click **Format Control**.  
   
-3.  Dans la boîte de dialogue **Format de contrôle**, cliquez sur l'onglet **Propriétés**.  
+3.  In the **Format Control** dialog box, click the **Properties** tab.  
   
-4.  Sous **Positionnement de l'objet**, sélectionnez l'option **Déplacer et dimensionner avec les cellules** et cliquez sur **OK**.  
+4.  Under **Object Positioning**, select the **Move and size with cells** option, and then click **OK**.  
   
-     Lorsque vous redimensionnez la cellule qui contient le contrôle, le contrôle est redimensionné par rapport à la cellule.  
+     When you resize the cell that contains the control, the control resizes to fit the cell.  
   
-## Redimensionnement des contrôles au moment de l'exécution  
- Si vous ajoutez un contrôle Windows Forms au moment de l'exécution et passez une <xref:Microsoft.Office.Interop.Excel.Range> comme emplacement pour le contrôle, le contrôle sera automatiquement redimensionné en même temps que la cellule de la feuille de calcul qui le contient.  
+## <a name="resizing-controls-at-run-time"></a>Resizing Controls at Run Time  
+ If you add a Windows Forms control at run time and pass in a <xref:Microsoft.Office.Interop.Excel.Range> as the location for the control, the control will automatically resize when the worksheet cell that contains the range is resized.  
   
-#### Pour que les contrôles soient redimensionnés en même temps que les cellules au moment de l'exécution  
+#### <a name="to-make-controls-resize-with-cells-at-run-time"></a>To make controls resize with cells at run time  
   
-1.  Ajoutez un contrôle à la plage A1.  
+1.  Add a control to range A1.  
   
-     [!code-csharp[Trin_VstcoreProgrammingControlsExcel#5](../snippets/csharp/VS_Snippets_OfficeSP/Trin_VstcoreProgrammingControlsExcel/CS/Sheet1.cs#5)]
-     [!code-vb[Trin_VstcoreProgrammingControlsExcel#5](../snippets/visualbasic/VS_Snippets_OfficeSP/Trin_VstcoreProgrammingControlsExcel/VB/Sheet1.vb#5)]  
+     [!code-vb[Trin_VstcoreProgrammingControlsExcel#5](../vsto/codesnippet/VisualBasic/my excel chart/Sheet1.vb#5)]  [!code-csharp[Trin_VstcoreProgrammingControlsExcel#5](../vsto/codesnippet/CSharp/Trin_VstcoreProgrammingControlsExcelCS/Sheet1.cs#5)]  
   
-     Lorsque vous redimensionnez la cellule qui contient le contrôle, le contrôle est redimensionné par rapport à la cellule.  
+     When you resize the cell that contains the control, the control resizes to fit the cell.  
   
-## Réinitialisation du positionnement du contrôle  
- Pour réinitialiser le positionnement et le redimensionnement du contrôle, affectez à la propriété `Placement` l'une des valeurs <xref:Microsoft.Office.Interop.Excel.XlPlacement> suivantes :  
+## <a name="resetting-control-placement"></a>Resetting Control Placement  
+ You can reset the placement and resizing of the control by setting the `Placement` property to one of the following <xref:Microsoft.Office.Interop.Excel.XlPlacement> values:  
   
 -   <xref:Microsoft.Office.Interop.Excel.XlPlacement.xlFreeFloating>  
   
@@ -68,18 +72,16 @@ caps.handback.revision: 32
   
 -   <xref:Microsoft.Office.Interop.Excel.XlPlacement.xlMoveAndSize>  
   
-#### Pour modifier le comportement d'un contrôle afin qu'il ne soit pas redimensionné ou déplacé avec la cellule  
+#### <a name="to-change-the-behavior-of-a-control-so-that-it-does-not-resize-or-move-with-the-cell"></a>To change the behavior of a control so that it does not resize or move with the cell  
   
-1.  Appelez la propriété de positionnement du contrôle et affectez\-lui la valeur <xref:Microsoft.Office.Interop.Excel.XlPlacement.xlFreeFloating>.  
+1.  Call the placement property of the control and set the value to <xref:Microsoft.Office.Interop.Excel.XlPlacement.xlFreeFloating>.  
   
-     [!code-csharp[Trin_VstcoreProgrammingControlsExcel#6](../snippets/csharp/VS_Snippets_OfficeSP/Trin_VstcoreProgrammingControlsExcel/CS/Sheet1.cs#6)]
-     [!code-vb[Trin_VstcoreProgrammingControlsExcel#6](../snippets/visualbasic/VS_Snippets_OfficeSP/Trin_VstcoreProgrammingControlsExcel/VB/Sheet1.vb#6)]  
+     [!code-vb[Trin_VstcoreProgrammingControlsExcel#6](../vsto/codesnippet/VisualBasic/my excel chart/Sheet1.vb#6)]  [!code-csharp[Trin_VstcoreProgrammingControlsExcel#6](../vsto/codesnippet/CSharp/Trin_VstcoreProgrammingControlsExcelCS/Sheet1.cs#6)]  
   
-## Voir aussi  
- [Contrôles sur des documents Office](../vsto/controls-on-office-documents.md)   
- [Comment : ajouter des contrôles Windows Forms à des documents Office](../vsto/how-to-add-windows-forms-controls-to-office-documents.md)   
- [Comment : masquer des contrôles sur des feuilles de calcul lors de l'impression](../vsto/how-to-hide-controls-on-worksheets-when-printing.md)   
- [Ajout de contrôles à des documents Office au moment de l'exécution](../vsto/adding-controls-to-office-documents-at-run-time.md)   
- [Limitations des contrôles Windows Forms dans les documents Office](../vsto/limitations-of-windows-forms-controls-on-office-documents.md)  
-  
+## <a name="see-also"></a>See Also  
+ [Controls on Office Documents](../vsto/controls-on-office-documents.md)   
+ [How to: Add Windows Forms Controls to Office Documents](../vsto/how-to-add-windows-forms-controls-to-office-documents.md)   
+ [How to: Hide Controls on Worksheets when Printing](../vsto/how-to-hide-controls-on-worksheets-when-printing.md)   
+ [Adding Controls to Office Documents at Run Time](../vsto/adding-controls-to-office-documents-at-run-time.md)   
+ [Limitations of Windows Forms Controls on Office Documents](../vsto/limitations-of-windows-forms-controls-on-office-documents.md)  
   

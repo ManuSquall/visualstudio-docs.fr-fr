@@ -1,53 +1,69 @@
 ---
-title: "CA2232&#160;: Marquez les points d&#39;entr&#233;e Windows Forms avec STAThread | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-devops-test"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "MarkWindowsFormsEntryPointsWithStaThread"
-  - "CA2232"
-helpviewer_keywords: 
-  - "CA2232"
-  - "MarkWindowsFormsEntryPointsWithStaThread"
+title: 'CA2232: Mark Windows Forms entry points with STAThread | Microsoft Docs'
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology:
+- vs-devops-test
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords:
+- MarkWindowsFormsEntryPointsWithStaThread
+- CA2232
+helpviewer_keywords:
+- CA2232
+- MarkWindowsFormsEntryPointsWithStaThread
 ms.assetid: a3c95130-8e7f-4419-9fcd-b67d077e8efb
 caps.latest.revision: 16
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
-caps.handback.revision: 16
----
-# CA2232&#160;: Marquez les points d&#39;entr&#233;e Windows Forms avec STAThread
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
+author: stevehoag
+ms.author: shoag
+manager: wpickett
+translation.priority.ht:
+- cs-cz
+- de-de
+- es-es
+- fr-fr
+- it-it
+- ja-jp
+- ko-kr
+- pl-pl
+- pt-br
+- ru-ru
+- tr-tr
+- zh-cn
+- zh-tw
+ms.translationtype: HT
+ms.sourcegitcommit: eb5c9550fd29b0e98bf63a7240737da4f13f3249
+ms.openlocfilehash: cd1be8452f4729ed17ae6fd87f835c50137c1806
+ms.contentlocale: fr-fr
+ms.lasthandoff: 08/30/2017
 
+---
+# <a name="ca2232-mark-windows-forms-entry-points-with-stathread"></a>CA2232: Mark Windows Forms entry points with STAThread
 |||  
 |-|-|  
 |TypeName|MarkWindowsFormsEntryPointsWithStaThread|  
 |CheckId|CA2232|  
-|Catégorie|Microsoft.Usage|  
-|Modification avec rupture|Modification sans rupture|  
+|Category|Microsoft.Usage|  
+|Breaking Change|Non Breaking|  
   
-## Cause  
- Un assembly référence l'espace de noms <xref:System.Windows.Forms>, et son point d'entrée n'est pas marqué avec l'attribut <xref:System.STAThreadAttribute?displayProperty=fullName>.  
+## <a name="cause"></a>Cause  
+ An assembly references the <xref:System.Windows.Forms> namespace, and its entry point is not marked with the <xref:System.STAThreadAttribute?displayProperty=fullName> attribute.  
   
-## Description de la règle  
- <xref:System.STAThreadAttribute> indique que le modèle de thread COM pour l'application est un thread cloisonné \(STA, Single\-Threaded Apartment\).  Cet attribut doit être présent au point d'entrée de toute application qui utilise des Windows Forms ; s'il est omis, les composants Windows peuvent ne pas fonctionner correctement.  Si l'attribut n'est pas présent, l'application utilise le modèle MTA \(Multi\-Threaded Apartment\) qui n'est pas pris en charge pour les Windows Forms.  
+## <a name="rule-description"></a>Rule Description  
+ <xref:System.STAThreadAttribute> indicates that the COM threading model for the application is single-threaded apartment. This attribute must be present on the entry point of any application that uses Windows Forms; if it is omitted, the Windows components might not work correctly. If the attribute is not present, the application uses the multithreaded apartment model, which is not supported for Windows Forms.  
   
 > [!NOTE]
->  Les projets [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] qui utilisent l'infrastructure d'application n'ont pas à marquer la méthode **Main** avec STAThread.  Le compilateur [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] le fait automatiquement.  
+>  [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] projects that use the Application Framework do not have to mark the **Main** method with STAThread. The [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] compiler does it automatically.  
   
-## Comment corriger les violations  
- Pour corriger une violation de cette règle, ajoutez l'attribut <xref:System.STAThreadAttribute> au point d'entrée.  Si l'attribut <xref:System.MTAThreadAttribute?displayProperty=fullName> est présent, supprimez\-le.  
+## <a name="how-to-fix-violations"></a>How to Fix Violations  
+ To fix a violation of this rule, add the <xref:System.STAThreadAttribute> attribute to the entry point. If the <xref:System.MTAThreadAttribute?displayProperty=fullName> attribute is present, remove it.  
   
-## Quand supprimer les avertissements  
- Il est possible de supprimer sans risque un avertissement de cette règle si vous développez pour le .NET Compact Framework pour lequel l'attribut <xref:System.STAThreadAttribute> n'est ni utile, ni pris en charge.  
+## <a name="when-to-suppress-warnings"></a>When to Suppress Warnings  
+ It is safe to suppress a warning from this rule if you are developing for the .NET Compact Framework, for which the <xref:System.STAThreadAttribute> attribute is unnecessary and not supported.  
   
-## Exemple  
- Les exemples suivants présentent l'utilisation correcte de <xref:System.STAThreadAttribute>.  
+## <a name="example"></a>Example  
+ The following examples demonstrate the correct usage of <xref:System.STAThreadAttribute>.  
   
- [!code-cs[FxCop.Usage.StaThread#1](../code-quality/codesnippet/CSharp/ca2232-mark-windows-forms-entry-points-with-stathread_1.cs)]
- [!code-vb[FxCop.Usage.StaThread#1](../code-quality/codesnippet/VisualBasic/ca2232-mark-windows-forms-entry-points-with-stathread_1.vb)]
+ [!code-csharp[FxCop.Usage.StaThread#1](../code-quality/codesnippet/CSharp/ca2232-mark-windows-forms-entry-points-with-stathread_1.cs)] [!code-vb[FxCop.Usage.StaThread#1](../code-quality/codesnippet/VisualBasic/ca2232-mark-windows-forms-entry-points-with-stathread_1.vb)]

@@ -1,95 +1,94 @@
 ---
-title: "Comment&#160;: enregistrer des classeurs par programmation"
-ms.custom: ""
-ms.date: "02/02/2017"
-ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "office-development"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-dev_langs: 
-  - "VB"
-  - "CSharp"
-helpviewer_keywords: 
-  - "classeurs, enregistrer"
-  - "classeurs, enregistrer des copies de sauvegarde"
-  - "classeurs, enregistrer au format XML"
+title: 'How to: Programmatically Save Workbooks | Microsoft Docs'
+ms.custom: 
+ms.date: 02/02/2017
+ms.prod: visual-studio-dev14
+ms.reviewer: 
+ms.suite: 
+ms.technology:
+- office-development
+ms.tgt_pltfrm: 
+ms.topic: article
+dev_langs:
+- VB
+- CSharp
+helpviewer_keywords:
+- workbooks, saving in XML format
+- workbooks, saving
+- workbooks, saving backup copies
 ms.assetid: 991ccf9b-5213-4094-9030-284ec167bdcc
 caps.latest.revision: 50
-author: "kempb"
-ms.author: "kempb"
-manager: "ghogen"
-caps.handback.revision: 49
+author: kempb
+ms.author: kempb
+manager: ghogen
+ms.translationtype: HT
+ms.sourcegitcommit: eb5c9550fd29b0e98bf63a7240737da4f13f3249
+ms.openlocfilehash: b20aa9c1bfa93295420f4a50803abb31e0d3da07
+ms.contentlocale: fr-fr
+ms.lasthandoff: 08/30/2017
+
 ---
-# Comment&#160;: enregistrer des classeurs par programmation
-  Il existe plusieurs façons d'enregistrer un classeur.  Vous pouvez le faire sans modifier le chemin d'accès.  Si le classeur n'a pas été enregistré auparavant, vous devez l'enregistrer en spécifiant un chemin d'accès.  Sans chemin d'accès explicite, Microsoft Office Excel enregistre le fichier dans le dossier actif avec le nom qui lui a été attribué lors de sa création.  Vous pouvez également enregistrer une copie du classeur sans modifier le classeur ouvert en mémoire.  
+# <a name="how-to-programmatically-save-workbooks"></a>How to: Programmatically Save Workbooks
+  There are several ways to save a workbook. You can save a workbook without changing the path. If the workbook has not been saved before, you should save the workbook by specifying a path. Without an explicit path, Microsoft Office Excel saves the file in the current folder with the name it was given when it was created. You can also save a copy of the workbook without modifying the open workbook in memory.  
   
  [!INCLUDE[appliesto_xlalldocapp](../vsto/includes/appliesto-xlalldocapp-md.md)]  
   
-## Enregistrement d'un classeur sans modifier le chemin d'accès  
+## <a name="saving-a-workbook-without-changing-the-path"></a>Saving a Workbook Without Changing the Path  
   
-#### Pour enregistrer un classeur associé à une personnalisation au niveau du document  
+#### <a name="to-save-a-workbook-associated-with-a-document-level-customization"></a>To save a workbook associated with a document-level customization  
   
-1.  Appelez la méthode <xref:Microsoft.Office.Tools.Excel.Workbook.Save%2A> de la classe ThisWorkbook.  
+1.  Call the <xref:Microsoft.Office.Tools.Excel.Workbook.Save%2A> method of the ThisWorkbook class.  
   
-     [!code-csharp[Trin_VstcoreExcelAutomation#4](../snippets/csharp/VS_Snippets_OfficeSP/Trin_VstcoreExcelAutomation/CS/ThisWorkbook.cs#4)]
-     [!code-vb[Trin_VstcoreExcelAutomation#4](../snippets/visualbasic/VS_Snippets_OfficeSP/Trin_VstcoreExcelAutomation/VB/ThisWorkbook.vb#4)]  
+     [!code-csharp[Trin_VstcoreExcelAutomation#4](../vsto/codesnippet/CSharp/Trin_VstcoreExcelAutomationCS/ThisWorkbook.cs#4)]  [!code-vb[Trin_VstcoreExcelAutomation#4](../vsto/codesnippet/VisualBasic/Trin_VstcoreExcelAutomation/ThisWorkbook.vb#4)]  
   
-#### Pour enregistrer le classeur actif dans un complément VSTO  
+#### <a name="to-save-the-active-workbook-in-a-vsto-add-in"></a>To save the active workbook in a VSTO Add-in  
   
-1.  Appelez la méthode <xref:Microsoft.Office.Interop.Excel._Workbook.Save%2A> pour enregistrer le classeur actif.  Pour utiliser l'exemple de code suivant, exécutez\-le dans la classe `ThisAddIn` dans un projet de complément VSTO pour Excel.  
+1.  Call the <xref:Microsoft.Office.Interop.Excel._Workbook.Save%2A> method to save the active workbook. To use the following code example, run it in the `ThisAddIn` class in a VSTO Add-in project for Excel.  
   
-     [!code-csharp[Trin_VstcoreExcelAutomationAddIn#3](../snippets/csharp/VS_Snippets_OfficeSP/Trin_VstcoreExcelAutomationAddIn/CS/ThisAddIn.cs#3)]
-     [!code-vb[Trin_VstcoreExcelAutomationAddIn#3](../snippets/visualbasic/VS_Snippets_OfficeSP/Trin_VstcoreExcelAutomationAddIn/VB/ThisAddIn.vb#3)]  
+     [!code-csharp[Trin_VstcoreExcelAutomationAddIn#3](../vsto/codesnippet/CSharp/trin_vstcoreexcelautomationaddin/ThisAddIn.cs#3)]  [!code-vb[Trin_VstcoreExcelAutomationAddIn#3](../vsto/codesnippet/VisualBasic/trin_vstcoreexcelautomationaddin/ThisAddIn.vb#3)]  
   
-## Enregistrement d'un classeur avec un nouveau chemin d'accès  
- Vous pouvez enregistrer le classeur spécifié dans un nouvel emplacement ou avec un nouveau nom, en spécifiant éventuellement un format de fichier, un mot de passe, un mode d'accès, etc.  
+## <a name="saving-a-workbook-with-a-new-path"></a>Saving a Workbook with a New Path  
+ You can save the specified workbook to a new location or with a new name, optionally specifying a file format, a password, an access mode, and more.  
   
 > [!NOTE]  
->  Vous souhaiterez peut\-être affecter la valeur **False** à la propriété <xref:Microsoft.Office.Interop.Excel._Application.DisplayAlerts%2A> avant d'enregistrer le classeur avec un nouveau chemin d'accès car l'enregistrement sous certains formats exige une interaction.  L'affectation de la valeur **False** à cette propriété indique à Excel d'utiliser toutes les valeurs par défaut.  
+>  You might want to set the <xref:Microsoft.Office.Interop.Excel._Application.DisplayAlerts%2A> property to **False** before saving the workbook with a new path because saving in some formats requires interaction. Setting this property to **False** causes Excel to use all defaults.  
   
-#### Pour enregistrer un classeur associé à une personnalisation au niveau du document  
+#### <a name="to-save-a-workbook-associated-with-a-document-level-customization"></a>To save a workbook associated with a document-level customization  
   
-1.  Appelez la méthode <xref:Microsoft.Office.Tools.Excel.Workbook.SaveAs%2A> de la classe `ThisWorkbook`.  Pour utiliser l'exemple de code suivant, exécutez\-le dans la classe `ThisWorkbook`.  
+1.  Call the <xref:Microsoft.Office.Tools.Excel.Workbook.SaveAs%2A> method of the `ThisWorkbook` class. To use the following code example, run it in the `ThisWorkbook` class.  
   
-     [!code-csharp[Trin_VstcoreExcelAutomation#5](../snippets/csharp/VS_Snippets_OfficeSP/Trin_VstcoreExcelAutomation/CS/ThisWorkbook.cs#5)]
-     [!code-vb[Trin_VstcoreExcelAutomation#5](../snippets/visualbasic/VS_Snippets_OfficeSP/Trin_VstcoreExcelAutomation/VB/ThisWorkbook.vb#5)]  
+     [!code-csharp[Trin_VstcoreExcelAutomation#5](../vsto/codesnippet/CSharp/Trin_VstcoreExcelAutomationCS/ThisWorkbook.cs#5)]  [!code-vb[Trin_VstcoreExcelAutomation#5](../vsto/codesnippet/VisualBasic/Trin_VstcoreExcelAutomation/ThisWorkbook.vb#5)]  
   
-#### Pour enregistrer le classeur actif dans un complément VSTO  
+#### <a name="to-save-the-active-workbook-in-a-vsto-add-in"></a>To save the active workbook in a VSTO Add-in  
   
-1.  Appelez la méthode <xref:Microsoft.Office.Interop.Excel._Workbook.SaveAs%2A> pour enregistrer le classeur actif avec un nouveau chemin d'accès.  Pour utiliser l'exemple de code suivant, exécutez\-le dans la classe `ThisAddIn` dans un projet de complément VSTO pour Excel.  
+1.  Call the <xref:Microsoft.Office.Interop.Excel._Workbook.SaveAs%2A> method to save the active workbook to a new path. To use the following code example, run it in the `ThisAddIn` class in a VSTO Add-in project for Excel.  
   
-     [!code-csharp[Trin_VstcoreExcelAutomationAddIn#4](../snippets/csharp/VS_Snippets_OfficeSP/Trin_VstcoreExcelAutomationAddIn/CS/ThisAddIn.cs#4)]
-     [!code-vb[Trin_VstcoreExcelAutomationAddIn#4](../snippets/visualbasic/VS_Snippets_OfficeSP/Trin_VstcoreExcelAutomationAddIn/VB/ThisAddIn.vb#4)]  
+     [!code-csharp[Trin_VstcoreExcelAutomationAddIn#4](../vsto/codesnippet/CSharp/trin_vstcoreexcelautomationaddin/ThisAddIn.cs#4)]  [!code-vb[Trin_VstcoreExcelAutomationAddIn#4](../vsto/codesnippet/VisualBasic/trin_vstcoreexcelautomationaddin/ThisAddIn.vb#4)]  
   
-## Enregistrement d'une copie du classeur  
- Vous pouvez enregistrer une copie du classeur dans un fichier sans modifier le classeur ouvert en mémoire.  Cela est utile quand vous souhaitez créer une copie de sauvegarde sans modifier l'emplacement du classeur.  
+## <a name="saving-a-copy-of-the-workbook"></a>Saving a Copy of the Workbook  
+ You can save a copy of the workbook to a file without modifying the open workbook in memory. This is useful when you want to create a backup copy without modifying the location of the workbook.  
   
-#### Pour enregistrer un classeur associé à une personnalisation au niveau du document  
+#### <a name="to-save-a-workbook-associated-with-a-document-level-customization"></a>To save a workbook associated with a document-level customization  
   
-1.  Appelez la méthode <xref:Microsoft.Office.Tools.Excel.Workbook.SaveCopyAs%2A> de la classe `ThisWorkbook`.  Pour utiliser l'exemple de code suivant, exécutez\-le dans la classe `ThisWorkbook`.  
+1.  Call the <xref:Microsoft.Office.Tools.Excel.Workbook.SaveCopyAs%2A> method of the `ThisWorkbook` class. To use the following code example, run it in the `ThisWorkbook` class.  
   
-     [!code-csharp[Trin_VstcoreExcelAutomation#6](../snippets/csharp/VS_Snippets_OfficeSP/Trin_VstcoreExcelAutomation/CS/ThisWorkbook.cs#6)]
-     [!code-vb[Trin_VstcoreExcelAutomation#6](../snippets/visualbasic/VS_Snippets_OfficeSP/Trin_VstcoreExcelAutomation/VB/ThisWorkbook.vb#6)]  
+     [!code-csharp[Trin_VstcoreExcelAutomation#6](../vsto/codesnippet/CSharp/Trin_VstcoreExcelAutomationCS/ThisWorkbook.cs#6)]  [!code-vb[Trin_VstcoreExcelAutomation#6](../vsto/codesnippet/VisualBasic/Trin_VstcoreExcelAutomation/ThisWorkbook.vb#6)]  
   
-#### Pour enregistrer le classeur actif dans un complément VSTO  
+#### <a name="to-save-the-active-workbook-in-a-vsto-add-in"></a>To save the active workbook in a VSTO Add-in  
   
-1.  Appelez la méthode <xref:Microsoft.Office.Interop.Excel._Workbook.SaveCopyAs%2A> pour enregistrer une copie du classeur actif.  Pour utiliser l'exemple de code suivant, exécutez\-le dans la classe `ThisAddIn` dans un projet de complément VSTO pour Excel.  
+1.  Call the <xref:Microsoft.Office.Interop.Excel._Workbook.SaveCopyAs%2A> method to save a copy of the active workbook. To use the following code example, run it in the `ThisAddIn` class in a VSTO Add-in project for Excel.  
   
-     [!code-csharp[Trin_VstcoreExcelAutomationAddIn#5](../snippets/csharp/VS_Snippets_OfficeSP/Trin_VstcoreExcelAutomationAddIn/CS/ThisAddIn.cs#5)]
-     [!code-vb[Trin_VstcoreExcelAutomationAddIn#5](../snippets/visualbasic/VS_Snippets_OfficeSP/Trin_VstcoreExcelAutomationAddIn/VB/ThisAddIn.vb#5)]  
+     [!code-csharp[Trin_VstcoreExcelAutomationAddIn#5](../vsto/codesnippet/CSharp/trin_vstcoreexcelautomationaddin/ThisAddIn.cs#5)]  [!code-vb[Trin_VstcoreExcelAutomationAddIn#5](../vsto/codesnippet/VisualBasic/trin_vstcoreexcelautomationaddin/ThisAddIn.vb#5)]  
   
-## Programmation fiable  
- L'annulation interactive d'une quelconque des méthodes qui enregistrent ou copient le classeur génère une erreur d'exécution dans votre code.  Par exemple, si votre procédure appelle la méthode <xref:Microsoft.Office.Tools.Excel.Workbook.SaveAs%2A> mais ne désactive pas les invites d'Excel, et que l'utilisateur clique sur **Annuler** quand il y est invité, Excel génère une erreur d'exécution.  
+## <a name="robust-programming"></a>Robust Programming  
+ Interactively canceling any of the methods that save or copy the workbook raises a run-time error in your code. For example, if your procedure calls the <xref:Microsoft.Office.Tools.Excel.Workbook.SaveAs%2A> method but does not disable prompts from Excel, and your user clicks **Cancel** when prompted, Excel raises a run-time error.  
   
-## Voir aussi  
- [Utilisation des classeurs](../vsto/working-with-workbooks.md)   
- [Élément hôte de classeur](../vsto/workbook-host-item.md)   
- [Comment : fermer des classeurs par programmation](../vsto/how-to-programmatically-close-workbooks.md)   
- [Limitations de programmation des éléments hôtes et des contrôles hôtes](../vsto/programmatic-limitations-of-host-items-and-host-controls.md)   
- [Paramètres optionnels dans les solutions Office](../vsto/optional-parameters-in-office-solutions.md)   
- [Vue d'ensemble des éléments hôtes et des contrôles hôtes](../vsto/host-items-and-host-controls-overview.md)  
+## <a name="see-also"></a>See Also  
+ [Working with Workbooks](../vsto/working-with-workbooks.md)   
+ [Workbook Host Item](../vsto/workbook-host-item.md)   
+ [How to: Programmatically Close Workbooks](../vsto/how-to-programmatically-close-workbooks.md)   
+ [Programmatic Limitations of Host Items and Host Controls](../vsto/programmatic-limitations-of-host-items-and-host-controls.md)   
+ [Optional Parameters in Office Solutions](../vsto/optional-parameters-in-office-solutions.md)   
+ [Host Items and Host Controls Overview](../vsto/host-items-and-host-controls-overview.md)  
   
   

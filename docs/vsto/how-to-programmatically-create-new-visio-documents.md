@@ -1,84 +1,85 @@
 ---
-title: "Comment&#160;: cr&#233;er des documents Visio par programmation"
-ms.custom: ""
-ms.date: "02/02/2017"
-ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "office-development"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-dev_langs: 
-  - "VB"
-  - "CSharp"
-helpviewer_keywords: 
-  - "Visio (développement Office dans Visual Studio), création de documents Visio"
-  - "documents (développement Office dans Visual Studio), création de documents Visio"
+title: 'How to: Programmatically Create New Visio Documents | Microsoft Docs'
+ms.custom: 
+ms.date: 02/02/2017
+ms.prod: visual-studio-dev14
+ms.reviewer: 
+ms.suite: 
+ms.technology:
+- office-development
+ms.tgt_pltfrm: 
+ms.topic: article
+dev_langs:
+- VB
+- CSharp
+helpviewer_keywords:
+- Visio [Office development in Visual Studio], creating Visio documents
+- documents [Office development in Visual Studio], creating Visio documents
 ms.assetid: a0294d4c-be49-4cd0-b22e-3ec7568f3ec7
 caps.latest.revision: 22
-author: "kempb"
-ms.author: "kempb"
-manager: "ghogen"
-caps.handback.revision: 21
+author: kempb
+ms.author: kempb
+manager: ghogen
+ms.translationtype: HT
+ms.sourcegitcommit: eb5c9550fd29b0e98bf63a7240737da4f13f3249
+ms.openlocfilehash: 65d5c2c857f8c859976e9964b866fa31fb2c912e
+ms.contentlocale: fr-fr
+ms.lasthandoff: 08/30/2017
+
 ---
-# Comment&#160;: cr&#233;er des documents Visio par programmation
-  Quand vous créez un dessin Microsoft Office Visio, vous l’ajoutez à la collection Microsoft.Office.Interop.Visio.Documents de documents Visio ouverts. Ainsi, la méthode Microsoft.Office.Interop.Visio.Documents.Add crée un dessin Visio. Pour plus d’informations, consultez la documentation de référence VBA de la méthode [Microsoft.Office.Interop.Visio.Documents.Add](HV10069241).  
+# <a name="how-to-programmatically-create-new-visio-documents"></a>How to: Programmatically Create New Visio Documents
+  When you create a new Microsoft Office Visio drawing document, you add it to the Microsoft.Office.Interop.Visio.Documents collection of open Visio documents. Consequently, the Microsoft.Office.Interop.Visio.Documents.Add method creates a new Visio drawing document. For more information, see the VBA reference documentation for the [Microsoft.Office.Interop.Visio.Documents.Add](http://msdn.microsoft.com/library/office/ff766868.aspx) method.  
   
-## Création de documents vierges  
+## <a name="creating-new-blank-documents"></a>Creating New Blank Documents  
   
-#### Pour créer un document  
+#### <a name="to-create-a-new-document"></a>To create a new document  
   
--   Utilisez la méthode Microsoft.Office.Interop.Visio.Documents.Add pour créer un document vierge qui n’est pas basé sur un modèle.  
+-   Use the Microsoft.Office.Interop.Visio.Documents.Add method to create a new blank document that is not based on a template.  
   
-     [!code-csharp[Trin_VstcoreVisioAutomationAddIn#1](../snippets/csharp/VS_Snippets_OfficeSP/Trin_VstcoreVisioAutomationAddIn/CS/ThisAddIn.cs#1)]
-     [!code-vb[Trin_VstcoreVisioAutomationAddIn#1](../snippets/visualbasic/VS_Snippets_OfficeSP/Trin_VstcoreVisioAutomationAddIn/VB/ThisAddIn.vb#1)]  
+     [!code-csharp[Trin_VstcoreVisioAutomationAddIn#1](../vsto/codesnippet/CSharp/trin_vstcorevisioautomationaddin/ThisAddIn.cs#1)]  [!code-vb[Trin_VstcoreVisioAutomationAddIn#1](../vsto/codesnippet/VisualBasic/trin_vstcorevisioautomationaddin/ThisAddIn.vb#1)]  
   
-## Création de documents copiés à partir de documents existants  
- La méthode Microsoft.Office.Interop.Visio.Documents.Add peut créer un document qui est une copie d’un document Visio existant. Vous devez fournir le nom de fichier et le chemin complet du diagramme.  
+## <a name="creating-documents-copied-from-existing-documents"></a>Creating Documents Copied From Existing Documents  
+ The Microsoft.Office.Interop.Visio.Documents.Add method can create a new document that is a copy of an existing Visio document. You must supply the file name and fully qualified path of the diagram.  
   
-#### Pour créer un document copié à partir d’un document existant  
+#### <a name="to-create-a-new-document-that-is-copied-from-an-existing-document"></a>To create a new document that is copied from an existing document  
   
--   Appelez la méthode Microsoft.Office.Interop.Visio.Documents.Add et spécifiez le chemin du diagramme Visio.  
+-   Call the Microsoft.Office.Interop.Visio.Documents.Add method and specify the path of the Visio diagram.  
   
-     [!code-csharp[Trin_VstcoreVisioAutomationAddIn#2](../snippets/csharp/VS_Snippets_OfficeSP/Trin_VstcoreVisioAutomationAddIn/CS/ThisAddIn.cs#2)]
-     [!code-vb[Trin_VstcoreVisioAutomationAddIn#2](../snippets/visualbasic/VS_Snippets_OfficeSP/Trin_VstcoreVisioAutomationAddIn/VB/ThisAddIn.vb#2)]  
+     [!code-csharp[Trin_VstcoreVisioAutomationAddIn#2](../vsto/codesnippet/CSharp/trin_vstcorevisioautomationaddin/ThisAddIn.cs#2)]  [!code-vb[Trin_VstcoreVisioAutomationAddIn#2](../vsto/codesnippet/VisualBasic/trin_vstcorevisioautomationaddin/ThisAddIn.vb#2)]  
   
-## Création de gabarits copiés à partir de gabarits existants  
- La méthode [Microsoft.Office.Interop.Visio.Documents.Add](HV10069241) peut créer un gabarit qui est une copie d’un gabarit Visio existant. Vous devez fournir le nom de fichier et le chemin complet du gabarit.  
+## <a name="creating-stencils-copied-from-existing-stencils"></a>Creating Stencils Copied From Existing Stencils  
+ The [Microsoft.Office.Interop.Visio.Documents.Add](http://msdn.microsoft.com/library/office/ff766868.aspx) method can create a new stencil that is a copy of an existing Visio stencil. You must supply the file name and fully qualified path of the stencil.  
   
-#### Pour créer un gabarit copié à partir d’un gabarit existant  
+#### <a name="to-create-a-new-stencil-that-is-copied-from-an-existing-stencil"></a>To create a new stencil that is copied from an existing stencil  
   
--   Appelez la méthode Microsoft.Office.Interop.Visio.Documents.Add et spécifiez le chemin du gabarit.  
+-   Call the Microsoft.Office.Interop.Visio.Documents.Add method and specify the path of the stencil.  
   
-     [!code-csharp[Trin_VstcoreVisioAutomationAddIn#3](../snippets/csharp/VS_Snippets_OfficeSP/Trin_VstcoreVisioAutomationAddIn/CS/ThisAddIn.cs#3)]
-     [!code-vb[Trin_VstcoreVisioAutomationAddIn#3](../snippets/visualbasic/VS_Snippets_OfficeSP/Trin_VstcoreVisioAutomationAddIn/VB/ThisAddIn.vb#3)]  
+     [!code-csharp[Trin_VstcoreVisioAutomationAddIn#3](../vsto/codesnippet/CSharp/trin_vstcorevisioautomationaddin/ThisAddIn.cs#3)]  [!code-vb[Trin_VstcoreVisioAutomationAddIn#3](../vsto/codesnippet/VisualBasic/trin_vstcorevisioautomationaddin/ThisAddIn.vb#3)]  
   
-## Création de documents basés sur des modèles existants  
- La méthode Microsoft.Office.Interop.Visio.Documents.Add peut créer un document \(fichier .vsd\) qui se base sur un modèle Visio existant \(fichier .vst\). Cette méthode copie les gabarits, styles et paramètres qui font partie de l’espace de travail du modèle. Vous devez fournir le nom de fichier et le chemin d'accès complet du modèle.  
+## <a name="creating-documents-based-on-existing-templates"></a>Creating Documents Based on Existing Templates  
+ The Microsoft.Office.Interop.Visio.Documents.Add method can create a new document (a .vsd file) that is based on an existing Visio template (a .vst file). This method copies the stencils, styles, and settings that are part of the template workspace. You must supply the file name and fully qualified path of the template.  
   
-#### Pour créer un document basé sur un modèle existant  
+#### <a name="to-create-a-new-document-that-is-based-on-an-existing-template"></a>To create a new document that is based on an existing template  
   
--   Appelez la méthode Microsoft.Office.Interop.Visio.Documents.Add et spécifiez le chemin du modèle.  
+-   Call the Microsoft.Office.Interop.Visio.Documents.Add method and specify the path of the template.  
   
-     [!code-csharp[Trin_VstcoreVisioAutomationAddIn#4](../snippets/csharp/VS_Snippets_OfficeSP/Trin_VstcoreVisioAutomationAddIn/CS/ThisAddIn.cs#4)]
-     [!code-vb[Trin_VstcoreVisioAutomationAddIn#4](../snippets/visualbasic/VS_Snippets_OfficeSP/Trin_VstcoreVisioAutomationAddIn/VB/ThisAddIn.vb#4)]  
+     [!code-csharp[Trin_VstcoreVisioAutomationAddIn#4](../vsto/codesnippet/CSharp/trin_vstcorevisioautomationaddin/ThisAddIn.cs#4)]  [!code-vb[Trin_VstcoreVisioAutomationAddIn#4](../vsto/codesnippet/VisualBasic/trin_vstcorevisioautomationaddin/ThisAddIn.vb#4)]  
   
-## Compilation du code  
- Cet exemple de code requiert ce qui suit :  
+## <a name="compiling-the-code"></a>Compiling the Code  
+ This code example requires the following:  
   
--   Un document Visio nommé `myDrawing.vsd` doit se trouver dans un répertoire nommé `Test` du dossier Mes documents \(Windows XP ou version antérieure\) ou du dossier Documents \(Windows Vista\).  
+-   A Visio document named `myDrawing.vsd` must be located in a directory named `Test` in the My Documents folder (for Windows XP and earlier) or the Documents folder (for Windows Vista).  
   
--   Un document Visio nommé `myStencil.vss` doit se trouver dans un répertoire nommé `Test` du dossier Mes documents \(Windows XP ou version antérieure\) ou du dossier Documents \(Windows Vista\).  
+-   A Visio document named `myStencil.vss` must be located in a directory named `Test` in the My Documents folder (for Windows XP and earlier) or the Documents folder (for Windows Vista).  
   
--   Un document Visio nommé `myTemplate.vst` doit se trouver dans un répertoire nommé `Test` du dossier Mes documents \(Windows XP ou version antérieure\) ou du dossier Documents \(Windows Vista\).  
+-   A Visio document named `myTemplate.vst` must be located in a directory named `Test` in the My Documents folder (for Windows XP and earlier) or the Documents folder (for Windows Vista).  
   
-## Voir aussi  
- [Solutions Visio](../vsto/visio-solutions.md)   
- [Vue d'ensemble du modèle objet Visio](../vsto/visio-object-model-overview.md)   
- [Comment : ouvrir des documents Visio par programmation](../vsto/how-to-programmatically-open-visio-documents.md)   
- [Comment : fermer des documents Visio par programmation](../vsto/how-to-programmatically-close-visio-documents.md)   
- [Comment : enregistrer des documents Visio par programmation](../vsto/how-to-programmatically-save-visio-documents.md)   
- [Comment : imprimer des documents Visio par programmation](../vsto/how-to-programmatically-print-visio-documents.md)  
+## <a name="see-also"></a>See Also  
+ [Visio Solutions](../vsto/visio-solutions.md)   
+ [Visio Object Model Overview](../vsto/visio-object-model-overview.md)   
+ [How to: Programmatically Open Visio Documents](../vsto/how-to-programmatically-open-visio-documents.md)   
+ [How to: Programmatically Close Visio Documents](../vsto/how-to-programmatically-close-visio-documents.md)   
+ [How to: Programmatically Save Visio Documents](../vsto/how-to-programmatically-save-visio-documents.md)   
+ [How to: Programmatically Print Visio Documents](../vsto/how-to-programmatically-print-visio-documents.md)  
   
   

@@ -1,142 +1,156 @@
 ---
-title: "&#201;l&#233;ment XML Ribbon"
-ms.custom: ""
-ms.date: "02/02/2017"
-ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "office-development"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "VSTO.Ribbon.RibbonXMLItem"
-dev_langs: 
-  - "VB"
-  - "CSharp"
-helpviewer_keywords: 
-  - "ruban personnalisé, XML"
-  - "personnalisation du ruban, XML"
-  - "ruban (développement Office dans Visual Studio), XML"
-  - "méthodes de rappel"
-  - "ruban personnalisé, affichage"
-  - "ruban personnalisé, définition du comportement"
-  - "XML (développement Office dans Visual Studio), ruban"
-  - "personnalisation du ruban, définition du comportement"
-  - "ruban (développement Office dans Visual Studio), personnalisation"
-  - "personnalisation du ruban, affichage"
+title: Ribbon XML | Microsoft Docs
+ms.custom: 
+ms.date: 02/02/2017
+ms.prod: visual-studio-dev14
+ms.reviewer: 
+ms.suite: 
+ms.technology:
+- office-development
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords:
+- VSTO.Ribbon.RibbonXMLItem
+dev_langs:
+- VB
+- CSharp
+helpviewer_keywords:
+- custom Ribbon, XML
+- customizing the Ribbon, XML
+- Ribbon [Office development in Visual Studio], XML
+- callback methods
+- custom Ribbon, displaying
+- custom Ribbon, defining behavior
+- XML [Office development in Visual Studio], Ribbon
+- customizing the Ribbon, defining behavior
+- Ribbon [Office development in Visual Studio], customizing
+- customizing the Ribbon, displaying
 ms.assetid: a5945667-40e8-4191-9f1e-71c18ec30a2e
 caps.latest.revision: 35
-author: "kempb"
-ms.author: "kempb"
-manager: "ghogen"
-caps.handback.revision: 34
+author: kempb
+ms.author: kempb
+manager: ghogen
+ms.translationtype: HT
+ms.sourcegitcommit: eb5c9550fd29b0e98bf63a7240737da4f13f3249
+ms.openlocfilehash: 6b0eb5783aa5a58a1292f52bb50cb765673deddb
+ms.contentlocale: fr-fr
+ms.lasthandoff: 08/30/2017
+
 ---
-# &#201;l&#233;ment XML Ribbon
-  L'élément Ruban \(XML\) vous permet de personnaliser un ruban en utilisant XML. Utilisez l'élément Ruban \(XML\) si vous souhaitez personnaliser le ruban d'une façon qui n'est pas prise en charge par l'élément Ruban \(Concepteur visuel\). Pour obtenir une comparaison de ce que vous pouvez faire avec chaque élément, consultez [Vue d'ensemble du ruban](../vsto/ribbon-overview.md).  
+# <a name="ribbon-xml"></a>Ribbon XML
+  The Ribbon (XML) item enables you to customize a Ribbon by using XML. Use the Ribbon (XML) item if you want to customize the Ribbon in a way that is not supported by the Ribbon (Visual Designer) item. For a comparison of what you can do with each item, see [Ribbon Overview](../vsto/ribbon-overview.md).  
   
  [!INCLUDE[appliesto_ribbon](../vsto/includes/appliesto-ribbon-md.md)]  
   
-## Ajout d'un élément Ruban \(XML\) à un projet  
- Vous pouvez ajouter un élément **Ruban \(XML\)** à tout projet Office à partir de la boîte de dialogue **Ajouter un nouvel élément**. Visual Studio ajoute automatiquement les fichiers suivants à votre projet :  
+## <a name="adding-a-ribbon-xml-item-to-a-project"></a>Adding a Ribbon (XML) Item to a Project  
+ You can add a **Ribbon (XML)** item to any Office project from the **Add New Item** dialog box. Visual Studio automatically adds the following files to your project:  
   
--   Un fichier XML de ruban. Ce fichier définit l'interface utilisateur du ruban. Utilisez ce fichier pour ajouter des éléments d'interface utilisateur tels que des onglets, des groupes et des contrôles. Pour plus d'informations, consultez [Référence du fichier XML du ruban](#RibbonDescriptorFile) plus loin dans cette rubrique.  
+-   A Ribbon XML file. This file defines the Ribbon user interface (UI). Use this file to add UI elements such as tabs, groups, and controls. For details, see [Ribbon XML File Reference](#RibbonDescriptorFile) later in this topic.  
   
--   Un fichier de code du ruban. Ce fichier contient la *classe du ruban*. Cette classe porte le nom que vous avez spécifié pour l'élément **Ruban \(XML\)** dans la boîte de dialogue **Ajouter un nouvel élément**. Les applications Microsoft Office utilisent une instance de cette classe pour charger le ruban personnalisé. Pour plus d'informations, consultez [Référence de la classe du ruban](#RibbonExtensionClass) plus loin dans cette rubrique.  
+-   A Ribbon code file. This file contains the *Ribbon class*. This class has the name that you specified for the **Ribbon (XML)** item in the **Add New Item** dialog box. Microsoft Office applications use an instance of this class to load the custom Ribbon. For details, see [Ribbon Class Reference](#RibbonExtensionClass) later in this topic.  
   
- Par défaut, ces fichiers ajoutent un groupe personnalisé sous l'onglet **Compléments** du ruban.  
+ By default, these files add a custom group to the **Add-Ins** tab in the Ribbon.  
   
-## Affichage du ruban personnalisé dans une application Microsoft Office  
- Après avoir ajouté un élément **Ruban \(XML\)** à votre projet, vous devez ajouter du code à la classe **ThisAddin**, **ThisWorkbook** ou **ThisDocument** qui remplace la méthode CreateRibbonExtensibilityObject et retourne la classe XML de ruban à l'application Office.  
+## <a name="displaying-the-custom-ribbon-in-a-microsoft-office-application"></a>Displaying the Custom Ribbon in a Microsoft Office Application  
+ After you add a **Ribbon (XML)** item to your project, you must add code to the **ThisAddin**, **ThisWorkbook**, or **ThisDocument** class that overrides the CreateRibbonExtensibilityObject method and returns the Ribbon XML class to the Office application.  
   
- L'exemple de code suivant remplace la méthode CreateRibbonExtensibilityObject et retourne une classe XML de ruban nommée MyRibbon.  
+ The following code example overrides the CreateRibbonExtensibilityObject method and returns a Ribbon XML class named MyRibbon.  
   
- [!code-csharp[Trin_Ribbon_Custom_Tab_XML#1](../snippets/csharp/VS_Snippets_OfficeSP/Trin_Ribbon_Custom_Tab_XML/CS/ThisAddIn.cs#1)]
- [!code-vb[Trin_Ribbon_Custom_Tab_XML#1](../snippets/visualbasic/VS_Snippets_OfficeSP/Trin_Ribbon_Custom_Tab_XML/VB/ThisAddIn.vb#1)]  
+ [!code-csharp[Trin_Ribbon_Custom_Tab_XML#1](../vsto/codesnippet/CSharp/Trin_Ribbon_Custom_Tab_XML_O12/ThisAddIn.cs#1)] [!code-vb[Trin_Ribbon_Custom_Tab_XML#1](../vsto/codesnippet/VisualBasic/Trin_Ribbon_Custom_Tab_XML_O12/ThisAddIn.vb#1)]  
   
-## Définition du comportement du ruban personnalisé  
- Vous pouvez répondre aux actions de l'utilisateur, telles qu'un clic sur un bouton du ruban, en créant des *méthodes de rappel*. Les méthodes de rappel ressemblent aux événements figurant dans les contrôles Windows Forms, mais elles sont identifiées par un attribut dans le code XML de l'élément d'interface utilisateur. Vous écrivez des méthodes dans la classe du ruban et un contrôle appelle la méthode qui porte le même nom que la valeur d'attribut. Par exemple, vous pouvez créer une méthode de rappel qui est appelée quand un utilisateur clique sur un bouton du ruban. Deux étapes sont nécessaires pour créer une méthode de rappel :  
+## <a name="defining-the-behavior-of-the-custom-ribbon"></a>Defining the Behavior of the Custom Ribbon  
+ You can respond to user actions, such as clicking a button on the Ribbon, by creating *callback methods*. Callback methods resemble events in Windows Forms controls, but they are identified by an attribute in the XML of the UI element. You write methods in the Ribbon class, and a control calls the method that has the same name as the attribute value. For example, you can create a callback method that is called when a user clicks a button on the Ribbon. Two steps are required to create a callback method:  
   
--   Assignez un attribut à un contrôle dans le fichier XML du ruban, qui identifie une méthode de rappel dans votre code.  
+-   Assign an attribute to a control in the Ribbon XML file that identifies a callback method in your code.  
   
--   Définissez la méthode de rappel dans la classe du ruban.  
+-   Define the callback method in the Ribbon class.  
   
 > [!NOTE]  
->  Outlook requiert une étape supplémentaire. Pour plus d'informations, consultez [Personnalisation d'un ruban pour Outlook](../vsto/customizing-a-ribbon-for-outlook.md).  
+>  Outlook requires an additional step. For more information, see [Customizing a Ribbon for Outlook](../vsto/customizing-a-ribbon-for-outlook.md).  
   
- Pour accéder à une procédure pas à pas qui montre comment automatiser une application à partir du ruban, consultez [Procédure pas à pas : création d'un onglet personnalisé à l'aide d'un élément XML Ribbon](../vsto/walkthrough-creating-a-custom-tab-by-using-ribbon-xml.md).  
+ For a walkthrough that demonstrates how to automate an application from the Ribbon, see [Walkthrough: Creating a Custom Tab by Using Ribbon XML](../vsto/walkthrough-creating-a-custom-tab-by-using-ribbon-xml.md).  
   
-### Affectation de méthodes de rappel à des contrôles  
- Pour affecter une méthode de rappel à un contrôle dans le fichier XML du ruban, ajoutez un attribut qui spécifie le type et le nom de cette méthode. Par exemple, l'élément suivant définit un bouton doté d'une méthode de rappel **onAction** nommée `OnToggleButton1`.  
+### <a name="assigning-callback-methods-to-controls"></a>Assigning Callback Methods to Controls  
+ To assign a callback method to a control in the Ribbon XML file, add an attribute that specifies the type of the callback method and the name of the method. For example, the following element defines a toggle button that has an **onAction** callback method named `OnToggleButton1`.  
   
 ```  
 <toggleButton id="toggleButton1" onAction="OnToggleButton1" />  
 ```  
   
- La méthode **onAction** est appelée quand l'utilisateur exécute la tâche principale associée à un contrôle particulier. Par exemple, la méthode de rappel **onAction** d'un bouton bascule est appelée quand l'utilisateur clique sur le bouton.  
+ **onAction** is called when the user performs the main task associated with a particular control. For example, the **onAction** callback method of a toggle button is called when the user clicks the button.  
   
- La méthode que vous spécifiez dans l'attribut peut avoir un nom quelconque. Toutefois, ce nom doit correspondre au nom de la méthode que vous définissez dans le fichier de code du ruban.  
+ The method that you specify in the attribute can have any name. However, it must match the name of the method that you define in the Ribbon code file.  
   
- De nombreux types différents de méthodes de rappel peuvent être affectés aux contrôles du ruban. Pour obtenir la liste complète des méthodes de rappel disponibles pour chaque contrôle, consultez l'article technique [Personnalisation de l'interface utilisateur du ruban Office \(2007\) pour les développeurs \(partie 3 sur 3\)](http://msdn.microsoft.com/fr-fr/a16c7df5-93f3-4920-baa8-7b7290794c15).  
+ There are many different types of callback methods that you can assign to Ribbon controls. For a complete list of the callback methods available for each control, see the technical article [Customizing the Office (2007) Ribbon User Interface for Developers (Part 3 of 3)](http://msdn.microsoft.com/en-us/a16c7df5-93f3-4920-baa8-7b7290794c15).  
   
-###  <a name="CallBackMethods"></a> Définition des méthodes de rappel  
- Définissez vos méthodes de rappel dans la classe du ruban, dans le fichier de code du ruban. Une méthode de rappel a plusieurs conditions requises :  
+###  <a name="CallBackMethods"></a> Defining Callback Methods  
+ Define your callback methods in the Ribbon class in the Ribbon code file. A callback method has several requirements:  
   
--   Elle doit être déclarée comme publique.  
+-   It must be declared as public.  
   
--   Son nom doit correspondre au nom d'une méthode de rappel que vous avez affectée à un contrôle dans le fichier XML du ruban.  
+-   Its name must match the name of a callback method that you assigned to a control in the Ribbon XML file.  
   
--   Sa signature doit correspondre à la signature d'un type de méthode de rappel disponible pour le contrôle du ruban associé.  
+-   Its signature must match the signature of a type of callback method that is available for the associated Ribbon control.  
   
- Pour obtenir la liste complète des signatures de méthode de rappel pour les contrôles du ruban, consultez l'article technique [Personnalisation de l'interface utilisateur du ruban Office \(2007\) pour les développeurs \(partie 3 sur 3\)](http://msdn.microsoft.com/fr-fr/a16c7df5-93f3-4920-baa8-7b7290794c15). Visual Studio ne fournit pas de prise en charge IntelliSense pour les méthodes de rappel que vous créez dans le fichier de code du ruban. Si vous créez une méthode de rappel qui ne correspond pas à une signature valide, le code est compilé mais rien ne se passe quand l'utilisateur clique sur le contrôle.  
+ For a complete list of the callback method signatures for Ribbon controls, see the technical article [Customizing the Office (2007) Ribbon User Interface for Developers (Part 3 of 3)](http://msdn.microsoft.com/en-us/a16c7df5-93f3-4920-baa8-7b7290794c15). Visual Studio does not provide IntelliSense support for callback methods that you create in the Ribbon code file. If you create a callback method that does not match a valid signature, the code will compile, but nothing will occur when the user clicks the control.  
   
- Toutes les méthodes de rappel ont un paramètre <xref:Microsoft.Office.Core.IRibbonControl> qui représente le contrôle qui a appelé la méthode. Ce paramètre permet de réutiliser la même méthode de rappel pour plusieurs contrôles. L'exemple de code suivant présente une méthode de rappel **onAction** qui exécute différentes tâches en fonction du contrôle sur lequel l'utilisateur clique.  
+ All callback methods have a <xref:Microsoft.Office.Core.IRibbonControl> parameter that represents the control that called the method. You can use this parameter to reuse the same callback method for multiple controls. The following code example demonstrates an **onAction** callback method that performs different tasks depending on which control the user clicks.  
   
- [!code-csharp[Trin_RibbonOutlookBasic#2](../snippets/csharp/VS_Snippets_OfficeSP/Trin_RibbonOutlookBasic/CS/Ribbon1.cs#2)]
- [!code-vb[Trin_RibbonOutlookBasic#2](../snippets/visualbasic/VS_Snippets_OfficeSP/Trin_RibbonOutlookBasic/VB/Ribbon1.vb#2)]  
+ [!code-csharp[Trin_RibbonOutlookBasic#2](../vsto/codesnippet/CSharp/Trin_RibbonOutlookBasic/Ribbon1.cs#2)] [!code-vb[Trin_RibbonOutlookBasic#2](../vsto/codesnippet/VisualBasic/Trin_RibbonOutlookBasic/Ribbon1.vb#2)]  
   
-##  <a name="RibbonDescriptorFile"></a> Référence du fichier XML du ruban  
- Vous pouvez définir votre ruban personnalisé en ajoutant des éléments et des attributs dans le fichier XML du ruban. Par défaut, le fichier XML du ruban contient le code XML suivant.  
+##  <a name="RibbonDescriptorFile"></a> Ribbon XML File Reference  
+ You can define your custom Ribbon by adding elements and attributes to the Ribbon XML file. By default, the Ribbon XML file contains the following XML.  
   
 ```  
-<?xml version="1.0" encoding="UTF-8"?> <customUI xmlns="http://schemas.microsoft.com/office/2006/01/customui" onLoad="OnLoad"> <ribbon> <tabs> <tab idMso="TabAddIns"> <group id="MyGroup" label="My Group"> </group> </tab> </tabs> </ribbon> </customUI>  
+<?xml version="1.0" encoding="UTF-8"?>  
+<customUI xmlns="http://schemas.microsoft.com/office/2006/01/customui" onLoad="OnLoad">  
+  <ribbon>  
+    <tabs>  
+      <tab idMso="TabAddIns">  
+        <group id="MyGroup"  
+               label="My Group">  
+        </group>  
+      </tab>  
+    </tabs>  
+  </ribbon>  
+</customUI>  
 ```  
   
- Le tableau suivant décrit les éléments par défaut du fichier XML du ruban.  
+ The following table describes the default elements in the Ribbon XML file.  
   
-|Élément|Description|  
+|Element|Description|  
 |-------------|-----------------|  
-|**customUI**|Représente le ruban personnalisé dans le projet de complément VSTO.|  
-|**ribbon**|Représente le ruban.|  
-|**tabs**|Représente un ensemble d'onglets du ruban.|  
-|**tab**|Représente un onglet individuel du ruban.|  
-|**group**|Représente un groupe de contrôles sous l'onglet du ruban.|  
+|**customUI**|Represents the custom Ribbon in the VSTO Add-in project.|  
+|**ribbon**|Represents the Ribbon.|  
+|**tabs**|Represents a set of Ribbon tabs.|  
+|**tab**|Represents a single Ribbon tab.|  
+|**group**|Represents a group of controls on the Ribbon tab.|  
   
- Ces éléments ont des attributs qui spécifient l'apparence et le comportement du ruban personnalisé. Le tableau suivant décrit les attributs par défaut figurant dans le fichier XML du ruban.  
+ These elements have attributes that specify the appearance and behavior of the custom Ribbon. The following table describes the default attributes in the Ribbon XML file.  
   
-|Attribut|Élément parent|Description|  
-|--------------|--------------------|-----------------|  
-|**onLoad**|**customUI**|Identifie une méthode qui est appelée quand l'application charge le ruban.|  
-|**idMso**|**tab**|Identifie un onglet intégré à afficher dans le ruban.|  
-|**id**|**group**|Identifie le groupe.|  
-|**label**|**group**|Spécifie le texte qui apparaît sur le groupe.|  
+|Attribute|Parent element|Description|  
+|---------------|--------------------|-----------------|  
+|**onLoad**|**customUI**|Identifies a method that is called when the application loads the Ribbon.|  
+|**idMso**|**tab**|Identifies a built-in tab to display in the Ribbon.|  
+|**id**|**group**|Identifies the group.|  
+|**label**|**group**|Specifies the text that appears on the group.|  
   
- Les éléments et les attributs par défaut figurant dans le fichier XML du ruban sont un petit sous\-ensemble des éléments et attributs disponibles. Pour obtenir la liste complète des éléments et des attributs disponibles, consultez l'article technique [Personnalisation de l'interface utilisateur du ruban Office \(2007\) pour les développeurs \(partie 2 sur 3\)](http://msdn.microsoft.com/fr-fr/6b904f55-525f-4520-9b81-a017db65657b).  
+ The default elements and attributes in the Ribbon XML file are a small subset of the elements and attributes that are available. For a complete list of the available elements and attributes, see the technical article [Customizing the Office (2007) Ribbon User Interface for Developers (Part 2 of 3)](http://msdn.microsoft.com/en-us/6b904f55-525f-4520-9b81-a017db65657b).  
   
-##  <a name="RibbonExtensionClass"></a> Référence de la classe du ruban  
- Visual Studio génère la classe du ruban dans le fichier de code du ruban. Ajoutez à cette classe les méthodes de rappel pour les contrôles figurant dans le ruban. Cette classe implémente l'interface <xref:Microsoft.Office.Core.IRibbonExtensibility>.  
+##  <a name="RibbonExtensionClass"></a> Ribbon Class Reference  
+ Visual Studio generates the Ribbon class in the Ribbon code file. Add the callback methods for controls on the Ribbon to this class. This class implements the <xref:Microsoft.Office.Core.IRibbonExtensibility> interface.  
   
- Le tableau suivant décrit les méthodes par défaut de cette classe.  
+ The following table describes the default methods in this class.  
   
-|Méthode|Description|  
-|-------------|-----------------|  
-|`GetCustomUI`|Retourne le contenu du fichier XML du ruban. Les applications Microsoft Office appellent cette méthode pour obtenir une chaîne XML définissant l'interface utilisateur de votre ruban personnalisé. Cette méthode implémente la méthode <xref:Microsoft.Office.Core.IRibbonExtensibility.GetCustomUI%2A>. **Note:**  La méthode `GetCustomUI` doit être implémentée uniquement pour retourner le contenu du fichier XML du ruban. Elle ne doit pas être utilisée pour initialiser votre complément VSTO. En particulier, vous ne devez pas essayer d'afficher des boîtes de dialogue ni d'autres fenêtres dans votre implémentation de `GetCustomUI`. Sinon, le ruban personnalisé risque de ne pas fonctionner correctement. Si vous devez exécuter du code qui initialise votre complément VSTO, ajoutez ce code au gestionnaire d’événements `ThisAddIn_Startup`.|  
-|`OnLoad`|Affecte le paramètre <xref:Microsoft.Office.Core.IRibbonControl>au champ `ribbon`. Les applications Microsoft Office appellent cette méthode quand elles chargent le ruban personnalisé. Vous pouvez utiliser ce champ pour mettre à jour dynamiquement le ruban personnalisé. Pour plus d'informations, consultez l'article technique [Personnalisation de l'interface utilisateur du ruban Office \(2007\) pour les développeurs \(partie 1 sur 3\)](http://msdn.microsoft.com/fr-fr/a4fd6d18-d4a8-4e64-bd89-f437208573d3).|  
-|`GetResourceText`|Appelée par la méthode `GetCustomUI` pour obtenir le contenu du fichier XML du ruban.|  
+|Method|Description|  
+|------------|-----------------|  
+|`GetCustomUI`|Returns the contents of the Ribbon XML file. Microsoft Office applications call this method to obtain an XML string that defines the user interface of your custom Ribbon. This method implements the <xref:Microsoft.Office.Core.IRibbonExtensibility.GetCustomUI%2A> method. **Note:**  `GetCustomUI` should be implemented only to return the contents of the Ribbon XML file; it should not be used to initialize your VSTO Add-in. In particular, you should not try to display dialog boxes or other windows in your `GetCustomUI` implementation. Otherwise, the custom Ribbon might not behave correctly. If you have to run code that initializes your VSTO Add-in, add the code to the `ThisAddIn_Startup` event handler.|  
+|`OnLoad`|Assigns the <xref:Microsoft.Office.Core.IRibbonControl> parameter to the `ribbon` field. Microsoft Office applications call this method when they load the custom Ribbon. You can use this field to dynamically update the custom Ribbon. For more information, see the technical article [Customizing the Office (2007) Ribbon User Interface for Developers (Part 1 of 3)](http://msdn.microsoft.com/en-us/a4fd6d18-d4a8-4e64-bd89-f437208573d3).|  
+|`GetResourceText`|Called by the `GetCustomUI` method to obtain the contents of the Ribbon XML file.|  
   
-## Voir aussi  
- [Vue d'ensemble du ruban](../vsto/ribbon-overview.md)   
- [Procédure pas à pas : création d'un onglet personnalisé à l'aide d'un élément XML Ribbon](../vsto/walkthrough-creating-a-custom-tab-by-using-ribbon-xml.md)   
- [Personnalisation de l'interface utilisateur Office](../vsto/office-ui-customization.md)  
+## <a name="see-also"></a>See Also  
+ [Ribbon Overview](../vsto/ribbon-overview.md)   
+ [Walkthrough: Creating a Custom Tab by Using Ribbon XML](../vsto/walkthrough-creating-a-custom-tab-by-using-ribbon-xml.md)   
+ [Office UI Customization](../vsto/office-ui-customization.md)  
   
   

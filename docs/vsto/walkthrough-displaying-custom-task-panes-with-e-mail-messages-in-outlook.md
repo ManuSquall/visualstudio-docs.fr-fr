@@ -1,282 +1,274 @@
 ---
-title: "Proc&#233;dure pas &#224; pas&#160;: affichage de volets des t&#226;ches personnalis&#233;s avec des messages &#233;lectroniques dans Outlook"
-ms.custom: ""
-ms.date: "02/02/2017"
-ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "office-development"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-dev_langs: 
-  - "VB"
-  - "CSharp"
-helpviewer_keywords: 
-  - "Outlook (développement Office dans Visual Studio), volets des tâches personnalisés"
-  - "volets des tâches (développement Office dans Visual Studio), afficher avec des messages électroniques"
-  - "afficher des volets des tâches personnalisés dans le courrier électronique"
-  - "messagerie électronique (développement Office dans Visual Studio), volets des tâches personnalisés affichés dans"
-  - "volets des tâches personnalisés (développement Office dans Visual Studio), afficher avec des messages électroniques"
+title: 'Walkthrough: Displaying Custom Task Panes with E-Mail Messages in Outlook | Microsoft Docs'
+ms.custom: 
+ms.date: 02/02/2017
+ms.prod: visual-studio-dev14
+ms.reviewer: 
+ms.suite: 
+ms.technology:
+- office-development
+ms.tgt_pltfrm: 
+ms.topic: article
+dev_langs:
+- VB
+- CSharp
+helpviewer_keywords:
+- Outlook [Office development in Visual Studio], custom task panes
+- task panes [Office development in Visual Studio], displaying with e-mail messages
+- displaying custom task panes in e-mail
+- e-mail [Office development in Visual Studio], custom task panes displayed in
+- custom task panes [Office development in Visual Studio], displaying with e-mail messages
 ms.assetid: 04943967-a7ef-4876-9584-84ada427e3f3
 caps.latest.revision: 59
-author: "kempb"
-ms.author: "kempb"
-manager: "ghogen"
-caps.handback.revision: 58
+author: kempb
+ms.author: kempb
+manager: ghogen
+ms.translationtype: HT
+ms.sourcegitcommit: eb5c9550fd29b0e98bf63a7240737da4f13f3249
+ms.openlocfilehash: 0487a8842e8e5ec2fed0006937fd9d5b38e051cf
+ms.contentlocale: fr-fr
+ms.lasthandoff: 08/30/2017
+
 ---
-# Proc&#233;dure pas &#224; pas&#160;: affichage de volets des t&#226;ches personnalis&#233;s avec des messages &#233;lectroniques dans Outlook
-  Cette procédure pas à pas montre comment afficher une instance unique d’un volet des tâches personnalisé avec chaque message électronique créé ou ouvert. Les utilisateurs peuvent afficher ou masquer le volet des tâches personnalisé à l’aide d’un bouton situé sur le ruban de chaque message électronique.  
+# <a name="walkthrough-displaying-custom-task-panes-with-e-mail-messages-in-outlook"></a>Walkthrough: Displaying Custom Task Panes with E-Mail Messages in Outlook
+  This walkthrough demonstrates how to display a unique instance of a custom task pane with each e-mail message that is created or opened. Users can display or hide the custom task pane by using a button on the Ribbon of each e-mail message.  
   
  [!INCLUDE[appliesto_olkallapp](../vsto/includes/appliesto-olkallapp-md.md)]  
   
- Pour afficher un volet des tâches personnalisé avec plusieurs fenêtres d’explorateur ou d’inspecteur, vous devez créer une instance du volet des tâches personnalisé pour chaque fenêtre ouverte. Pour plus d’informations sur le comportement des volets des tâches personnalisés dans les fenêtres Outlook, consultez [Volets de tâches personnalisés](../vsto/custom-task-panes.md).  
+ To display a custom task pane with multiple Explorer or Inspector windows, you must create an instance of the custom task pane for every window that is opened. For more information about the behavior of custom task panes in Outlook windows, see [Custom Task Panes](../vsto/custom-task-panes.md).  
   
 > [!NOTE]  
->  Cette procédure pas à pas présente le code du complément VSTO en petites sections afin de simplifier la présentation de la logique que suit le code.  
+>  This walkthrough presents the VSTO Add-in code in small sections to make it easier to discuss the logic behind the code.  
   
- Cette procédure pas à pas décrit les tâches suivantes :  
+ This walkthrough illustrates the following tasks:  
   
--   Conception de l’interface utilisateur du volet des tâches personnalisé.  
+-   Designing the user interface (UI) of the custom task pane.  
   
--   Création d’une interface utilisateur du ruban personnalisée.  
+-   Creating a custom Ribbon UI.  
   
--   Affichage de l’interface utilisateur du ruban personnalisée avec les messages électroniques.  
+-   Displaying the custom Ribbon UI with e-mail messages.  
   
--   Création d’une classe pour gérer les fenêtres d’inspecteur et les volets des tâches personnalisés.  
+-   Creating a class to manage Inspector windows and custom task panes.  
   
--   Initialisation et nettoyage des ressources utilisées par le complément VSTO.  
+-   Initializing and cleaning up resources used by the VSTO Add-in.  
   
--   Synchronisation du bouton bascule du ruban avec le volet des tâches personnalisé.  
+-   Synchronizing the Ribbon toggle button with the custom task pane.  
   
 > [!NOTE]  
->  Il est possible que pour certains des éléments de l'interface utilisateur de Visual Studio, votre ordinateur affiche des noms ou des emplacements différents de ceux indiqués dans les instructions suivantes. L'édition de Visual Studio dont vous disposez et les paramètres que vous utilisez déterminent ces éléments. Pour plus d’informations, consultez [Personnalisation des paramètres de développement dans Visual Studio](http://msdn.microsoft.com/fr-fr/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
+>  Your computer might show different names or locations for some of the Visual Studio user interface elements in the following instructions. The Visual Studio edition that you have and the settings that you use determine these elements. For more information, see [Personalize the Visual Studio IDE](../ide/personalizing-the-visual-studio-ide.md).  
   
-## Composants requis  
- Pour exécuter cette procédure pas à pas, vous devez disposer des composants suivants :  
+## <a name="prerequisites"></a>Prerequisites  
+ You need the following components to complete this walkthrough:  
   
 -   [!INCLUDE[vsto_vsprereq](../vsto/includes/vsto-vsprereq-md.md)]  
   
--   Microsoft [!INCLUDE[Outlook_15_short](../vsto/includes/outlook-15-short-md.md)] ou Microsoft Outlook 2010  
+-   Microsoft [!INCLUDE[Outlook_15_short](../vsto/includes/outlook-15-short-md.md)] or Microsoft Outlook 2010.  
   
- ![lien vers la vidéo](~/data-tools/media/playvideo.gif "lien vers la vidéo") Pour obtenir une démonstration vidéo associée, consultez la [Vidéo pratique : Comment utiliser les volets des tâches dans Outlook ?](http://go.microsoft.com/fwlink/?LinkID=130309).  
+ ![link to video](../vsto/media/playvideo.gif "link to video") For a related video demonstration, see [How Do I: Use Task Panes in Outlook?](http://go.microsoft.com/fwlink/?LinkID=130309).  
   
-## Création du projet  
- Les volets des tâches personnalisés sont implémentés dans les compléments VSTO. Commencez par créer un projet de complément VSTO pour Outlook.  
+## <a name="creating-the-project"></a>Creating the Project  
+ Custom task panes are implemented in VSTO Add-ins. Start by creating an VSTO Add-in project for Outlook.  
   
-#### Pour créer un projet  
+#### <a name="to-create-a-new-project"></a>To create a new project  
   
-1.  Créez un projet de **Complément Outlook** portant le nom **OutlookMailItemTaskPane**. Utilisez le modèle de projet **Complément Outlook**. Pour plus d'informations, consultez [Comment : créer des projets Office dans Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md).  
+1.  Create an **Outlook Add-in** project with the name **OutlookMailItemTaskPane**. Use the **Outlook Add-in** project template. For more information, see [How to: Create Office Projects in Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md).  
   
-     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] ouvre le fichier de code **ThisAddIn.cs** ou **ThisAddIn.vb** et ajoute le projet **OutlookMailItemTaskPane** à l’**Explorateur de solutions**.  
+     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] opens the **ThisAddIn.cs** or **ThisAddIn.vb** code file and adds the **OutlookMailItemTaskPane** project to **Solution Explorer**.  
   
-## Conception de l’interface utilisateur du volet des tâches personnalisé  
- Il n’existe pas de concepteur visuel pour les volets des tâches personnalisés, mais vous pouvez concevoir un contrôle utilisateur avec l’interface utilisateur de votre choix. Le volet des tâches personnalisé de ce complément VSTO offre une interface utilisateur simple qui contient un contrôle <xref:System.Windows.Forms.TextBox>. À une étape ultérieure de cette procédure, vous ajouterez le contrôle utilisateur au volet des tâches personnalisé.  
+## <a name="designing-the-user-interface-of-the-custom-task-pane"></a>Designing the User Interface of the Custom Task Pane  
+ There is no visual designer for custom task panes, but you can design a user control with the UI you want. The custom task pane in this VSTO Add-in has a simple UI that contains a <xref:System.Windows.Forms.TextBox> control. Later in this walkthrough, you will add the user control to the custom task pane.  
   
-#### Pour concevoir l’interface utilisateur du volet des tâches personnalisé  
+#### <a name="to-design-the-user-interface-of-the-custom-task-pane"></a>To design the user interface of the custom task pane  
   
-1.  Dans l’**Explorateur de solutions**, cliquez sur le projet **OutlookMailItemTaskPane**.  
+1.  In **Solution Explorer**, click the **OutlookMailItemTaskPane** project.  
   
-2.  Dans le menu **Projet**, cliquez sur **Ajouter un contrôle utilisateur**.  
+2.  On the **Project** menu, click **Add User Control**.  
   
-3.  Dans la boîte de dialogue **Ajouter un nouvel élément**, remplacez le nom du nouveau contrôle utilisateur par **TaskPaneControl**, puis cliquez sur **Ajouter**.  
+3.  In the **Add New Item** dialog box, change the name of the user control to **TaskPaneControl**, and then click **Add**.  
   
-     Le contrôle utilisateur s'ouvre dans le concepteur.  
+     The user control opens in the designer.  
   
-4.  Sous l’onglet **Contrôles communs** de la **boîte à outils**, faites glisser un contrôle **TextBox** vers le contrôle utilisateur.  
+4.  From the **Common Controls** tab of the **Toolbox**, drag a **TextBox** control to the user control.  
   
-## Conception de l’interface utilisateur du ruban  
- L’un des objectifs de ce complément VSTO est de permettre aux utilisateurs de masquer ou d’afficher le volet des tâches personnalisé à partir du ruban de chaque message électronique. Pour fournir l’interface utilisateur, créez une interface utilisateur du ruban personnalisée qui affiche un bouton bascule sur lequel les utilisateurs peuvent cliquer pour afficher ou masquer le volet des tâches personnalisé.  
+## <a name="designing-the-user-interface-of-the-ribbon"></a>Designing the User Interface of the Ribbon  
+ One of the goals for this VSTO Add-in is to give users a way to hide or display the custom task pane from the Ribbon of each e-mail message. To provide the user interface, create a custom Ribbon UI that displays a toggle button that users can click to display or hide the custom task pane.  
   
-#### Pour créer une interface utilisateur du ruban personnalisée  
+#### <a name="to-create-a-custom-ribbon-ui"></a>To create a custom Ribbon UI  
   
-1.  Dans le menu **Projet**, cliquez sur **Ajouter un nouvel élément**.  
+1.  On the **Project** menu, click **Add New Item**.  
   
-2.  Dans la boîte de dialogue **Ajouter un nouvel élément**, sélectionnez **Ruban \(Concepteur visuel\)**.  
+2.  In the **Add New Item** dialog box, select **Ribbon (Visual Designer)**.  
   
-3.  Remplacez le nom du nouveau ruban par **ManageTaskPaneRibbon**, puis cliquez sur **Ajouter**.  
+3.  Change the name of the new Ribbon to **ManageTaskPaneRibbon**, and click **Add**.  
   
-     Le fichier **ManageTaskPaneRibbon.cs** ou **ManageTaskPaneRibbon.vb** s’ouvre dans le Concepteur de ruban, affichant un onglet et un groupe par défaut.  
+     The **ManageTaskPaneRibbon.cs** or **ManageTaskPaneRibbon.vb** file opens in the Ribbon Designer and displays a default tab and group.  
   
-4.  Dans le Concepteur de ruban, cliquez sur **group1**.  
+4.  In the Ribbon Designer, click **group1**.  
   
-5.  Dans la fenêtre **Propriétés**, définissez la propriété **Label** sur la valeur **Gestionnaire de volets des tâches**.  
+5.  In the **Properties** window, set the **Label** property to **Task Pane Manager**.  
   
-6.  Sous l’onglet **Contrôles de ruban Office** de la **boîte à outils**, faites glisser un contrôle ToggleButton dans le groupe  **Gestionnaire de volets des tâches**.  
+6.  From the **Office Ribbon Controls** tab of the **Toolbox**, drag a ToggleButton control onto the **Task Pane Manager** group.  
   
-7.  Cliquez sur **toggleButton1**.  
+7.  Click **toggleButton1**.  
   
-8.  Dans la fenêtre **Propriétés**, définissez la propriété **Label** sur la valeur **Afficher le volet des tâches**.  
+8.  In the **Properties** window, set the **Label** property to **Show Task Pane**.  
   
-## Afficher l’interface utilisateur du ruban personnalisée avec les messages électroniques  
- Le volet des tâches personnalisé créé dans cette procédure pas à pas est conçu pour ne s’afficher qu’avec les fenêtres d’inspecteur qui contiennent des messages électroniques. Par conséquent, définissez les propriétés afin d’afficher votre interface utilisateur du ruban personnalisée uniquement avec ces fenêtres.  
+## <a name="display-the-custom-ribbon-user-interface-with-e-mail-messages"></a>Display the Custom Ribbon User Interface with E-Mail Messages  
+ The custom task pane that you create in this walkthrough is designed to appear only with Inspector windows that contain e-mail messages. Therefore, set the properties to display your custom Ribbon UI only with these windows.  
   
-#### Pour afficher l’interface utilisateur du ruban personnalisée avec les messages électroniques  
+#### <a name="to-display-the-custom-ribbon-ui-with-e-mail-messages"></a>To display the custom Ribbon UI with e-mail messages  
   
-1.  Dans le Concepteur de ruban, cliquez sur le ruban **ManageTaskPaneRibbon**.  
+1.  In the Ribbon Designer, click the **ManageTaskPaneRibbon** Ribbon.  
   
-2.  Dans la fenêtre **Propriétés**, cliquez sur la liste déroulante en regard de **RibbonType**, puis sélectionnez **Microsoft.Outlook.Mail.Compose** et **Microsoft.Outlook.Mail.Read**.  
+2.  In the **Properties** window, click the drop-down list next to **RibbonType**, and select **Microsoft.Outlook.Mail.Compose** and **Microsoft.Outlook.Mail.Read**.  
   
-## Création d’une classe pour gérer les fenêtres d’inspecteur et les volets des tâches personnalisés  
- Il existe plusieurs cas dans lesquels le complément VSTO doit identifier le volet des tâches personnalisé associé à un message électronique spécifique. Il s’agit notamment des cas suivants :  
+## <a name="creating-a-class-to-manage-inspector-windows-and-custom-task-panes"></a>Creating a Class to Manage Inspector Windows and Custom Task Panes  
+ There are several cases in which the VSTO Add-in must identify which custom task pane is associated with a specific e-mail message. These cases include the following:  
   
--   Lorsque l’utilisateur ferme un message électronique. Dans ce cas, le complément VSTO doit supprimer le volet des tâches personnalisé correspondant afin de garantir que les ressources utilisées par le complément VSTO sont correctement nettoyées.  
+-   When the user closes an e-mail message. In this case, the VSTO Add-in must remove the corresponding custom task pane to ensure that resources used by the VSTO Add-in are cleaned up correctly.  
   
--   Lorsque l’utilisateur ferme le volet des tâches personnalisé. Dans ce cas, le complément VSTO doit mettre à jour l’état du bouton bascule sur le ruban du message électronique.  
+-   When the user closes the custom task pane. In this case, the VSTO Add-in must update the state of the toggle button on the Ribbon of the e-mail message.  
   
--   Lorsque l’utilisateur clique sur le bouton bascule situé sur le ruban. Dans ce cas, le complément VSTO doit masquer ou afficher le volet des tâches correspondant.  
+-   When the user clicks the toggle button on the Ribbon. In this case, the VSTO Add-in must hide or display the corresponding task pane.  
   
- Pour permettre au complément VSTO d’effectuer le suivi des associations entre un volet des tâches personnalisé et chaque message électronique ouvert, créez une classe personnalisée qui encapsule des paires d’objets <xref:Microsoft.Office.Interop.Outlook.Inspector> et <xref:Microsoft.Office.Tools.CustomTaskPane>. Cette classe crée un objet de volet des tâches personnalisé pour chaque message électronique et supprime le volet des tâches personnalisé lorsque le message électronique correspondant est fermé.  
+ To enable the VSTO Add-in to keep track of which custom task pane is associated with each open e-mail message, create a custom class that wraps pairs of <xref:Microsoft.Office.Interop.Outlook.Inspector> and <xref:Microsoft.Office.Tools.CustomTaskPane> objects. This class creates a new custom task pane object for each e-mail message, and it deletes the custom task pane when the corresponding e-mail message is closed.  
   
-#### Pour créer une classe pour gérer les fenêtres d’inspecteur et les volets des tâches personnalisés  
+#### <a name="to-create-a-class-to-manage-inspector-windows-and-custom-task-panes"></a>To create a class to manage Inspector windows and custom task panes  
   
-1.  Dans l’**Explorateur de solutions**, cliquez avec le bouton droit sur le fichier **ThisAddIn.cs** ou **ThisAddIn.vb**, puis cliquez sur **Afficher le code**.  
+1.  In **Solution Explorer**, right-click the **ThisAddIn.cs** or **ThisAddIn.vb** file, and then click **View Code**.  
   
-2.  Ajoutez les instructions suivantes au début du fichier.  
+2.  Add the following statements to the top of the file.  
   
-     [!code-csharp[Trin_OutlookMailItemTaskPane#2](../snippets/csharp/VS_Snippets_OfficeSP/Trin_OutlookMailItemTaskPane/CS/ThisAddIn.cs#2)]
-     [!code-vb[Trin_OutlookMailItemTaskPane#2](../snippets/visualbasic/VS_Snippets_OfficeSP/Trin_OutlookMailItemTaskPane/VB/ThisAddIn.vb#2)]  
+     [!code-csharp[Trin_OutlookMailItemTaskPane#2](../vsto/codesnippet/CSharp/Trin_OutlookMailItemTaskPane/ThisAddIn.cs#2)]  [!code-vb[Trin_OutlookMailItemTaskPane#2](../vsto/codesnippet/VisualBasic/Trin_OutlookMailItemTaskPane/ThisAddIn.vb#2)]  
   
-3.  Ajoutez le code suivant au fichier **ThisAddIn.cs** ou **ThisAddIn.vb**, en dehors de la classe `ThisAddIn` \(pour Visual C\#, ajoutez ce code dans l’espace de noms `OutlookMailItemTaskPane`\). La classe `InspectorWrapper` gère une paire d’objets <xref:Microsoft.Office.Interop.Outlook.Inspector> et <xref:Microsoft.Office.Tools.CustomTaskPane>. Vous effectuez la définition de cette classe dans les étapes suivantes.  
+3.  Add the following code to the **ThisAddIn.cs** or **ThisAddIn.vb** file, outside the `ThisAddIn` class (for Visual C#, add this code inside the `OutlookMailItemTaskPane` namespace). The `InspectorWrapper` class manages a pair of <xref:Microsoft.Office.Interop.Outlook.Inspector> and <xref:Microsoft.Office.Tools.CustomTaskPane> objects. You will complete the definition of this class in the following steps.  
   
-     [!code-csharp[Trin_OutlookMailItemTaskPane#3](../snippets/csharp/VS_Snippets_OfficeSP/Trin_OutlookMailItemTaskPane/CS/ThisAddIn.cs#3)]
-     [!code-vb[Trin_OutlookMailItemTaskPane#3](../snippets/visualbasic/VS_Snippets_OfficeSP/Trin_OutlookMailItemTaskPane/VB/ThisAddIn.vb#3)]  
+     [!code-csharp[Trin_OutlookMailItemTaskPane#3](../vsto/codesnippet/CSharp/Trin_OutlookMailItemTaskPane/ThisAddIn.cs#3)]  [!code-vb[Trin_OutlookMailItemTaskPane#3](../vsto/codesnippet/VisualBasic/Trin_OutlookMailItemTaskPane/ThisAddIn.vb#3)]  
   
-4.  Ajoutez le constructeur suivant après le code ajouté à l’étape précédente. Ce constructeur crée et initialise un nouveau volet de tâches personnalisé associé à l’objet <xref:Microsoft.Office.Interop.Outlook.Inspector> qui est passé. En C\#, le constructeur attache également des gestionnaires d’événements à l’événement <xref:Microsoft.Office.Interop.Outlook.InspectorEvents_Event.Close> de l’objet <xref:Microsoft.Office.Interop.Outlook.Inspector> et à l’événement <xref:Microsoft.Office.Tools.CustomTaskPane.VisibleChanged> de l’objet <xref:Microsoft.Office.Tools.CustomTaskPane>.  
+4.  Add the following constructor after the code that you added in the previous step. This constructor creates and initializes a new custom task pane that is associated with the <xref:Microsoft.Office.Interop.Outlook.Inspector> object that is passed in. In C#, the constructor also attaches event handlers to the <xref:Microsoft.Office.Interop.Outlook.InspectorEvents_Event.Close> event of the <xref:Microsoft.Office.Interop.Outlook.Inspector> object and to the <xref:Microsoft.Office.Tools.CustomTaskPane.VisibleChanged> event of the <xref:Microsoft.Office.Tools.CustomTaskPane> object.  
   
-     [!code-csharp[Trin_OutlookMailItemTaskPane#4](../snippets/csharp/VS_Snippets_OfficeSP/Trin_OutlookMailItemTaskPane/CS/ThisAddIn.cs#4)]
-     [!code-vb[Trin_OutlookMailItemTaskPane#4](../snippets/visualbasic/VS_Snippets_OfficeSP/Trin_OutlookMailItemTaskPane/VB/ThisAddIn.vb#4)]  
+     [!code-csharp[Trin_OutlookMailItemTaskPane#4](../vsto/codesnippet/CSharp/Trin_OutlookMailItemTaskPane/ThisAddIn.cs#4)]  [!code-vb[Trin_OutlookMailItemTaskPane#4](../vsto/codesnippet/VisualBasic/Trin_OutlookMailItemTaskPane/ThisAddIn.vb#4)]  
   
-5.  Ajoutez la méthode suivante après le code ajouté à l’étape précédente. Il s’agit d’un gestionnaire d’événements pour l’événement <xref:Microsoft.Office.Tools.CustomTaskPane.VisibleChanged> de l’objet <xref:Microsoft.Office.Tools.CustomTaskPane> contenu dans la classe `InspectorWrapper`. Ce code met à jour l’état du bouton bascule chaque fois que l’utilisateur ouvre ou ferme le volet des tâches personnalisé.  
+5.  Add the following method after the code that you added in the previous step. This method is an event handler for the <xref:Microsoft.Office.Tools.CustomTaskPane.VisibleChanged> event of the <xref:Microsoft.Office.Tools.CustomTaskPane> object that is contained in the `InspectorWrapper` class. This code updates the state of the toggle button whenever the user opens or closes the custom task pane.  
   
-     [!code-csharp[Trin_OutlookMailItemTaskPane#5](../snippets/csharp/VS_Snippets_OfficeSP/Trin_OutlookMailItemTaskPane/CS/ThisAddIn.cs#5)]
-     [!code-vb[Trin_OutlookMailItemTaskPane#5](../snippets/visualbasic/VS_Snippets_OfficeSP/Trin_OutlookMailItemTaskPane/VB/ThisAddIn.vb#5)]  
+     [!code-csharp[Trin_OutlookMailItemTaskPane#5](../vsto/codesnippet/CSharp/Trin_OutlookMailItemTaskPane/ThisAddIn.cs#5)]  [!code-vb[Trin_OutlookMailItemTaskPane#5](../vsto/codesnippet/VisualBasic/Trin_OutlookMailItemTaskPane/ThisAddIn.vb#5)]  
   
-6.  Ajoutez la méthode suivante après le code ajouté à l’étape précédente. Il s’agit d’un gestionnaire d’événements pour l’événement <xref:Microsoft.Office.Interop.Outlook.InspectorEvents_Event.Close> de l’objet <xref:Microsoft.Office.Interop.Outlook.Inspector> qui contient le message électronique actuel. Le gestionnaire d’événements libère des ressources lorsque le message électronique est fermé. Il supprime également le volet des tâches personnalisé actuel de la collection `CustomTaskPanes`. Cela permet d’éviter la présence de plusieurs instances du volet des tâches personnalisé lorsque le message électronique suivant est ouvert.  
+6.  Add the following method after the code that you added in the previous step. This method is an event handler for the <xref:Microsoft.Office.Interop.Outlook.InspectorEvents_Event.Close> event of the <xref:Microsoft.Office.Interop.Outlook.Inspector> object that contains the current e-mail message. The event handler frees resources when the e-mail message is closed. The event handler also removes the current custom task pane from the `CustomTaskPanes` collection. This helps prevent multiple instances of the custom task pane when the next e-mail message is opened.  
   
-     [!code-csharp[Trin_OutlookMailItemTaskPane#6](../snippets/csharp/VS_Snippets_OfficeSP/Trin_OutlookMailItemTaskPane/CS/ThisAddIn.cs#6)]
-     [!code-vb[Trin_OutlookMailItemTaskPane#6](../snippets/visualbasic/VS_Snippets_OfficeSP/Trin_OutlookMailItemTaskPane/VB/ThisAddIn.vb#6)]  
+     [!code-csharp[Trin_OutlookMailItemTaskPane#6](../vsto/codesnippet/CSharp/Trin_OutlookMailItemTaskPane/ThisAddIn.cs#6)]  [!code-vb[Trin_OutlookMailItemTaskPane#6](../vsto/codesnippet/VisualBasic/Trin_OutlookMailItemTaskPane/ThisAddIn.vb#6)]  
   
-7.  Ajoutez le code suivant après le code ajouté à l’étape précédente. À une étape ultérieure de cette procédure, vous appellerez cette propriété à partir d’une méthode dans l’interface utilisateur du ruban personnalisée pour afficher ou masquer le volet des tâches personnalisé.  
+7.  Add the following code after the code that you added in the previous step. Later in this walkthrough, you will call this property from a method in the custom Ribbon UI to display or hide the custom task pane.  
   
-     [!code-csharp[Trin_OutlookMailItemTaskPane#7](../snippets/csharp/VS_Snippets_OfficeSP/Trin_OutlookMailItemTaskPane/CS/ThisAddIn.cs#7)]
-     [!code-vb[Trin_OutlookMailItemTaskPane#7](../snippets/visualbasic/VS_Snippets_OfficeSP/Trin_OutlookMailItemTaskPane/VB/ThisAddIn.vb#7)]  
+     [!code-csharp[Trin_OutlookMailItemTaskPane#7](../vsto/codesnippet/CSharp/Trin_OutlookMailItemTaskPane/ThisAddIn.cs#7)]  [!code-vb[Trin_OutlookMailItemTaskPane#7](../vsto/codesnippet/VisualBasic/Trin_OutlookMailItemTaskPane/ThisAddIn.vb#7)]  
   
-## Initialisation et nettoyage des ressources utilisées par le complément VSTO  
- Ajoutez du code à la classe `ThisAddIn` pour initialiser le complément VSTO lorsqu’il est chargé et pour nettoyer les ressources utilisées par le complément VSTO lorsqu’il est déchargé. Pour initialiser le complément VSTO, vous configurez un gestionnaire d’événements pour l’événement <xref:Microsoft.Office.Interop.Outlook.InspectorsEvents_Event.NewInspector> et passez tous les messages électroniques existants à ce gestionnaire d’événements. Lorsque le complément VSTO est déchargé, détachez le gestionnaire d’événements et nettoyez les objets utilisés par le complément VSTO.  
+## <a name="initializing-and-cleaning-up-resources-used-by-the-add-in"></a>Initializing and Cleaning Up Resources Used by the Add-In  
+ Add code to the `ThisAddIn` class to initialize the VSTO Add-in when it is loaded, and to clean up resources used by the VSTO Add-in when it is unloaded. You initialize the VSTO Add-in by setting up an event handler for the <xref:Microsoft.Office.Interop.Outlook.InspectorsEvents_Event.NewInspector> event and by passing all existing e-mail messages to this event handler. When the VSTO Add-in is unloaded, detach the event handler and clean up objects used by the VSTO Add-in.  
   
-#### Pour initialiser et nettoyer les ressources utilisées par le complément VSTO  
+#### <a name="to-initialize-and-clean-up-resources-used-by-the-vsto-add-in"></a>To initialize and clean up resources used by the VSTO Add-in  
   
-1.  Dans le fichier **ThisAddIn.cs** ou **ThisAddIn.vb**, localisez la définition de la classe `ThisAddIn`.  
+1.  In the **ThisAddIn.cs** or **ThisAddIn.vb** file, locate the definition of the `ThisAddIn` class.  
   
-2.  Ajoutez les déclarations suivantes à la classe `ThisAddIn` :  
+2.  Add the following declarations to the `ThisAddIn` class:  
   
-    -   Le champ `inspectorWrappersValue` contient tous les objets <xref:Microsoft.Office.Interop.Outlook.Inspector> et `InspectorWrapper` gérés par le complément VSTO.  
+    -   The `inspectorWrappersValue` field contains all the <xref:Microsoft.Office.Interop.Outlook.Inspector> and `InspectorWrapper` objects that are managed by the VSTO Add-in.  
   
-    -   Le champ `inspectors` conserve une référence à la collection de fenêtres Inspecteur de l'instance Outlook actuelle. Cette référence empêche le garbage collector de libérer la mémoire qui contient le gestionnaire d’événements pour l’événement <xref:Microsoft.Office.Interop.Outlook.InspectorsEvents_Event.NewInspector>, que vous allez déclarer à l’étape suivante.  
+    -   The `inspectors` field maintains a reference to the collection of Inspector windows in the current Outlook instance. This reference prevents the garbage collector from freeing the memory that contains the event handler for the <xref:Microsoft.Office.Interop.Outlook.InspectorsEvents_Event.NewInspector> event, which you will declare in the next step.  
   
-     [!code-csharp[Trin_OutlookMailItemTaskPane#8](../snippets/csharp/VS_Snippets_OfficeSP/Trin_OutlookMailItemTaskPane/CS/ThisAddIn.cs#8)]
-     [!code-vb[Trin_OutlookMailItemTaskPane#8](../snippets/visualbasic/VS_Snippets_OfficeSP/Trin_OutlookMailItemTaskPane/VB/ThisAddIn.vb#8)]  
+     [!code-csharp[Trin_OutlookMailItemTaskPane#8](../vsto/codesnippet/CSharp/Trin_OutlookMailItemTaskPane/ThisAddIn.cs#8)] [!code-vb[Trin_OutlookMailItemTaskPane#8](../vsto/codesnippet/VisualBasic/Trin_OutlookMailItemTaskPane/ThisAddIn.vb#8)]  
   
-3.  Remplacez la méthode `ThisAddIn_Startup` par le code suivant. Ce code attache un gestionnaire d’événements à l’événement <xref:Microsoft.Office.Interop.Outlook.InspectorsEvents_Event.NewInspector> et passe chaque objet <xref:Microsoft.Office.Interop.Outlook.Inspector> existant au gestionnaire d’événements. Si l’utilisateur charge le complément VSTO alors qu’Outlook est déjà en cours d’exécution, le complément VSTO utilise ces informations pour créer des volets des tâches personnalisés pour tous les messages électroniques déjà ouverts.  
+3.  Replace the `ThisAddIn_Startup` method with the following code. This code attaches an event handler to the <xref:Microsoft.Office.Interop.Outlook.InspectorsEvents_Event.NewInspector> event, and it passes every existing <xref:Microsoft.Office.Interop.Outlook.Inspector> object to the event handler. If the user loads the VSTO Add-in after Outlook is already running, the VSTO Add-in uses this information to create custom task panes for all e-mail messages that are already open.  
   
-     [!code-csharp[Trin_OutlookMailItemTaskPane#9](../snippets/csharp/VS_Snippets_OfficeSP/Trin_OutlookMailItemTaskPane/CS/ThisAddIn.cs#9)]
-     [!code-vb[Trin_OutlookMailItemTaskPane#9](../snippets/visualbasic/VS_Snippets_OfficeSP/Trin_OutlookMailItemTaskPane/VB/ThisAddIn.vb#9)]  
+     [!code-csharp[Trin_OutlookMailItemTaskPane#9](../vsto/codesnippet/CSharp/Trin_OutlookMailItemTaskPane/ThisAddIn.cs#9)]  [!code-vb[Trin_OutlookMailItemTaskPane#9](../vsto/codesnippet/VisualBasic/Trin_OutlookMailItemTaskPane/ThisAddIn.vb#9)]  
   
-4.  Remplacez la méthode `ThisAddIn_ShutDown` par le code suivant. Ce code détache le gestionnaire d’événements <xref:Microsoft.Office.Interop.Outlook.InspectorsEvents_Event.NewInspector> et nettoie les objets utilisés par le complément VSTO.  
+4.  Replace the `ThisAddIn_ShutDown` method with the following code. This code detaches the <xref:Microsoft.Office.Interop.Outlook.InspectorsEvents_Event.NewInspector> event handler and cleans up objects used by the VSTO Add-in.  
   
-     [!code-csharp[Trin_OutlookMailItemTaskPane#10](../snippets/csharp/VS_Snippets_OfficeSP/Trin_OutlookMailItemTaskPane/CS/ThisAddIn.cs#10)]
-     [!code-vb[Trin_OutlookMailItemTaskPane#10](../snippets/visualbasic/VS_Snippets_OfficeSP/Trin_OutlookMailItemTaskPane/VB/ThisAddIn.vb#10)]  
+     [!code-csharp[Trin_OutlookMailItemTaskPane#10](../vsto/codesnippet/CSharp/Trin_OutlookMailItemTaskPane/ThisAddIn.cs#10)]  [!code-vb[Trin_OutlookMailItemTaskPane#10](../vsto/codesnippet/VisualBasic/Trin_OutlookMailItemTaskPane/ThisAddIn.vb#10)]  
   
-5.  Ajoutez le gestionnaire d’événements <xref:Microsoft.Office.Interop.Outlook.InspectorsEvents_Event.NewInspector> suivant à la classe `ThisAddIn`. Si un nouvel objet <xref:Microsoft.Office.Interop.Outlook.Inspector> contient un message électronique, la méthode crée une instance d’un nouvel objet `InspectorWrapper` pour gérer la relation entre le message électronique et le volet des tâches correspondant.  
+5.  Add the following <xref:Microsoft.Office.Interop.Outlook.InspectorsEvents_Event.NewInspector> event handler to the `ThisAddIn` class. If a new <xref:Microsoft.Office.Interop.Outlook.Inspector> contains an e-mail message, the method creates an instance of a new `InspectorWrapper` object to manage the relationship between the e-mail message and the corresponding task pane.  
   
-     [!code-csharp[Trin_OutlookMailItemTaskPane#11](../snippets/csharp/VS_Snippets_OfficeSP/Trin_OutlookMailItemTaskPane/CS/ThisAddIn.cs#11)]
-     [!code-vb[Trin_OutlookMailItemTaskPane#11](../snippets/visualbasic/VS_Snippets_OfficeSP/Trin_OutlookMailItemTaskPane/VB/ThisAddIn.vb#11)]  
+     [!code-csharp[Trin_OutlookMailItemTaskPane#11](../vsto/codesnippet/CSharp/Trin_OutlookMailItemTaskPane/ThisAddIn.cs#11)]  [!code-vb[Trin_OutlookMailItemTaskPane#11](../vsto/codesnippet/VisualBasic/Trin_OutlookMailItemTaskPane/ThisAddIn.vb#11)]  
   
-6.  Ajoutez la propriété suivante à la classe `ThisAddIn`. Cette propriété expose le champ `inspectorWrappersValue` privé au code en dehors de la classe `ThisAddIn`.  
+6.  Add the following property to the `ThisAddIn` class. This property exposes the private `inspectorWrappersValue` field to code outside the `ThisAddIn` class.  
   
-     [!code-csharp[Trin_OutlookMailItemTaskPane#12](../snippets/csharp/VS_Snippets_OfficeSP/Trin_OutlookMailItemTaskPane/CS/ThisAddIn.cs#12)]
-     [!code-vb[Trin_OutlookMailItemTaskPane#12](../snippets/visualbasic/VS_Snippets_OfficeSP/Trin_OutlookMailItemTaskPane/VB/ThisAddIn.vb#12)]  
+     [!code-csharp[Trin_OutlookMailItemTaskPane#12](../vsto/codesnippet/CSharp/Trin_OutlookMailItemTaskPane/ThisAddIn.cs#12)]  [!code-vb[Trin_OutlookMailItemTaskPane#12](../vsto/codesnippet/VisualBasic/Trin_OutlookMailItemTaskPane/ThisAddIn.vb#12)]  
   
-## Point de contrôle  
- Générez votre projet pour vous assurer qu’il est compilé sans erreur.  
+## <a name="checkpoint"></a>Checkpoint  
+ Build your project to ensure that it compiles without errors.  
   
-#### Pour générer votre projet  
+#### <a name="to-build-your-project"></a>To build your project  
   
-1.  Dans l’**Explorateur de solutions**, cliquez avec le bouton droit sur le projet **OutlookMailItemTaskPane**, puis cliquez sur **Générer**. Vérifiez que le projet se compile sans erreur.  
+1.  In **Solution Explorer**, right-click the **OutlookMailItemTaskPane** project and then click **Build**. Verify that the project compiles without errors.  
   
-## Synchronisation du bouton bascule du ruban avec le volet des tâches personnalisé  
- Le bouton semble enfoncé lorsque le volet Office est visible, et il semble être désactivé lorsque le volet Office est masqué. Pour synchroniser l’état du bouton avec le volet des tâches personnalisé, modifiez le gestionnaire d’événements <xref:Microsoft.Office.Tools.Ribbon.RibbonToggleButton.Click> du bouton bascule.  
+## <a name="synchronizing-the-ribbon-toggle-button-with-the-custom-task-pane"></a>Synchronizing the Ribbon Toggle Button with the Custom Task Pane  
+ The toggle button will appear to be pressed in when the task pane is visible, and it will appear to be not pressed in when the task pane is hidden. To synchronize the state of the button with the custom task pane, modify the <xref:Microsoft.Office.Tools.Ribbon.RibbonToggleButton.Click> event handler of the toggle button.  
   
-#### Pour synchroniser le volet des tâches personnalisé avec le bouton bascule  
+#### <a name="to-synchronize-the-custom-task-pane-with-the-toggle-button"></a>To synchronize the custom task pane with the toggle button  
   
-1.  Dans le Concepteur de ruban, double\-cliquez sur le bouton bascule **Afficher le Volet Office**.  
+1.  In the Ribbon Designer, double-click the **Show Task Pane** toggle button.  
   
-     Visual Studio génère automatiquement un gestionnaire d’événements nommé `toggleButton1_Click`, qui gère l’événement <xref:Microsoft.Office.Tools.Ribbon.RibbonToggleButton.Click> du bouton bascule. Visual Studio ouvre également le fichier **ManageTaskPaneRibbon.cs** ou **ManageTaskPaneRibbon.vb** dans l’éditeur de code  
+     Visual Studio automatically generates an event handler named `toggleButton1_Click`, which handles the <xref:Microsoft.Office.Tools.Ribbon.RibbonToggleButton.Click> event of the toggle button. Visual Studio also opens the **ManageTaskPaneRibbon.cs** or **ManageTaskPaneRibbon.vb** file in the Code Editor.  
   
-2.  Ajoutez les instructions suivantes au début du fichier **ManageTaskPaneRibbon.cs** ou **ManageTaskPaneRibbon.vb**.  
+2.  Add the following statements to the top of the **ManageTaskPaneRibbon.cs** or **ManageTaskPaneRibbon.vb** file.  
   
-     [!code-csharp[Trin_OutlookMailItemTaskPane#14](../snippets/csharp/VS_Snippets_OfficeSP/Trin_OutlookMailItemTaskPane/CS/ManageTaskPaneRibbon.cs#14)]
-     [!code-vb[Trin_OutlookMailItemTaskPane#14](../snippets/visualbasic/VS_Snippets_OfficeSP/Trin_OutlookMailItemTaskPane/VB/ManageTaskPaneRibbon.vb#14)]  
+     [!code-csharp[Trin_OutlookMailItemTaskPane#14](../vsto/codesnippet/CSharp/Trin_OutlookMailItemTaskPane/ManageTaskPaneRibbon.cs#14)]  [!code-vb[Trin_OutlookMailItemTaskPane#14](../vsto/codesnippet/VisualBasic/Trin_OutlookMailItemTaskPane/ManageTaskPaneRibbon.vb#14)]  
   
-3.  Remplacez le gestionnaire d'événements `toggleButton1_Click` par le code suivant. Lorsque l’utilisateur clique sur le bouton bascule, cette méthode masque ou affiche le volet des tâches personnalisé associé à la fenêtre d’inspecteur actuelle.  
+3.  Replace the `toggleButton1_Click` event handler with the following code. When the user clicks the toggle button, this method hides or displays the custom task pane that is associated with the current Inspector window.  
   
-     [!code-csharp[Trin_OutlookMailItemTaskPane#15](../snippets/csharp/VS_Snippets_OfficeSP/Trin_OutlookMailItemTaskPane/CS/ManageTaskPaneRibbon.cs#15)]
-     [!code-vb[Trin_OutlookMailItemTaskPane#15](../snippets/visualbasic/VS_Snippets_OfficeSP/Trin_OutlookMailItemTaskPane/VB/ManageTaskPaneRibbon.vb#15)]  
+     [!code-csharp[Trin_OutlookMailItemTaskPane#15](../vsto/codesnippet/CSharp/Trin_OutlookMailItemTaskPane/ManageTaskPaneRibbon.cs#15)]  [!code-vb[Trin_OutlookMailItemTaskPane#15](../vsto/codesnippet/VisualBasic/Trin_OutlookMailItemTaskPane/ManageTaskPaneRibbon.vb#15)]  
   
-## Test du projet  
- Lorsque vous commencez à déboguer le projet, Outlook s’ouvre et le complément VSTO est chargé. Le complément VSTO affiche une instance unique du volet des tâches personnalisé avec chaque message électronique ouvert. Créez plusieurs messages électroniques pour tester le code  
+## <a name="testing-the-project"></a>Testing the Project  
+ When you start debugging the project, Outlook opens and the VSTO Add-in is loaded. The VSTO Add-in displays a unique instance of the custom task pane with each e-mail message that is opened. Create several new e-mail messages to test the code.  
   
-#### Pour tester le complément VSTO  
+#### <a name="to-test-the-vsto-add-in"></a>To test the VSTO Add-in  
   
-1.  Appuyez sur F5.  
+1.  Press F5.  
   
-2.  Dans Outlook, cliquez sur **Nouveau** pour créer un message électronique.  
+2.  In Outlook, click **New** to create a new e-mail message.  
   
-3.  Dans le ruban du message électronique, cliquez sur l’onglet **Compléments**, puis sur le bouton **Afficher le Volet Office**.  
+3.  On the Ribbon of the e-mail message, click the **Add-Ins** tab, and then click the **Show Task Pane** button.  
   
-     Vérifiez qu’un volet des tâches portant le titre **Mon volet des tâches** s’affiche avec le message électronique.  
+     Verify that a task pane with the title **My task pane** is displayed with the e-mail message.  
   
-4.  Dans le volet des tâches, tapez **Premier volet des tâches** dans la zone de texte.  
+4.  In the task pane, type **First task pane** in the text box.  
   
-5.  Fermez le volet des tâches.  
+5.  Close the task pane.  
   
-     Vérifiez que l’état du bouton **Afficher le volet Office** change de sorte qu’il ne soit plus enfoncé.  
+     Verify that the state of the **Show Task Pane** button changes so that it is no longer pressed.  
   
-6.  Cliquez de nouveau sur le bouton **Afficher le volet Office**.  
+6.  Click the **Show Task Pane** button again.  
   
-     Assurez\-vous que le volet des tâches s’ouvre et que la zone de texte contient encore la chaîne **Premier volet des tâches**.  
+     Verify that the task pane opens, and that the text box still contains the string **First task pane**.  
   
-7.  Dans Outlook, cliquez sur **Nouveau** pour créer un deuxième message électronique.  
+7.  In Outlook, click **New** to create a second e-mail message.  
   
-8.  Dans le ruban du message électronique, cliquez sur l’onglet **Compléments**, puis sur le bouton **Afficher le Volet Office**.  
+8.  On the Ribbon of the e-mail message, click the **Add-Ins** tab, and then click the **Show Task Pane** button.  
   
-     Vérifiez qu’un volet des tâches portant le titre **Mon volet des tâches** s’affiche avec le message électronique et que la zone de texte de ce volet des tâches est vide.  
+     Verify that a task pane with the title **My task pane** is displayed with the e-mail message, and the text box in this task pane is empty.  
   
-9. Dans le volet des tâches, tapez **Second volet des tâches** dans la zone de texte.  
+9. In the task pane, type **Second task pane** in the text box.  
   
-10. Placer le focus sur le premier message électronique.  
+10. Change focus to the first e-mail message.  
   
-     Vérifiez que le volet des tâches associé à ce message électronique affiche toujours **Premier volet des tâches** dans la zone de texte.  
+     Verify that the task pane that is associated with this e-mail message still displays **First task pane** in the text box.  
   
- Ce complément VSTO gère également des scénarios plus avancés que vous pouvez tester. Par exemple, vous pouvez tester le comportement lors de la consultation de messages électroniques à l’aide des boutons **Élément suivant** et **Élément précédent**. Vous pouvez également tester le comportement lorsque vous déchargez le complément VSTO, ouvrez plusieurs messages électroniques, puis rechargez le complément VSTO.  
+ This VSTO Add-in also handles more advanced scenarios that you can try. For example, you can test the behavior when viewing e-mails by using the **Next Item** and **Previous Item** buttons. You can also test the behavior when you unload the VSTO Add-in, open several e-mail messages, and then reload the VSTO Add-in.  
   
-## Étapes suivantes  
- Pour en savoir plus sur la création de volets des tâches personnalisés, consultez les rubriques suivantes :  
+## <a name="next-steps"></a>Next Steps  
+ You can learn more about how to create custom task panes from these topics:  
   
--   Créer un volet de tâches personnalisé dans un complément VSTO pour une autre application. Pour plus d’informations sur les applications qui prennent en charge les volets des tâches personnalisés, consultez [Volets de tâches personnalisés](../vsto/custom-task-panes.md).  
+-   Create a custom task pane in an VSTO Add-in for a different application. For more information about the applications that support custom task panes, see [Custom Task Panes](../vsto/custom-task-panes.md).  
   
--   Automatiser une application Microsoft Office à l’aide d’un volet des tâches personnalisé. Pour plus d'informations, consultez [Procédure pas à pas : automatisation d'une application à partir d'un volet de tâches personnalisé](../vsto/walkthrough-automating-an-application-from-a-custom-task-pane.md).  
+-   Automate a Microsoft Office application by using a custom task pane. For more information, see [Walkthrough: Automating an Application from a Custom Task Pane](../vsto/walkthrough-automating-an-application-from-a-custom-task-pane.md).  
   
--   Créer un bouton du ruban dans Excel pour masquer ou afficher un volet des tâches personnalisé. Pour plus d'informations, consultez [Procédure pas à pas : synchronisation d'un volet de tâches personnalisé avec un bouton dans le ruban](../vsto/walkthrough-synchronizing-a-custom-task-pane-with-a-ribbon-button.md).  
+-   Create a Ribbon button in Excel that can be used to hide or display a custom task pane. For more information, see [Walkthrough: Synchronizing a Custom Task Pane with a Ribbon Button](../vsto/walkthrough-synchronizing-a-custom-task-pane-with-a-ribbon-button.md).  
   
-## Voir aussi  
- [Volets de tâches personnalisés](../vsto/custom-task-panes.md)   
- [Comment : ajouter un volet de tâches personnalisé à une application](../vsto/how-to-add-a-custom-task-pane-to-an-application.md)   
- [Procédure pas à pas : automatisation d'une application à partir d'un volet de tâches personnalisé](../vsto/walkthrough-automating-an-application-from-a-custom-task-pane.md)   
- [Procédure pas à pas : synchronisation d'un volet de tâches personnalisé avec un bouton dans le ruban](../vsto/walkthrough-synchronizing-a-custom-task-pane-with-a-ribbon-button.md)   
- [Vue d'ensemble du ruban](../vsto/ribbon-overview.md)   
- [Vue d'ensemble du modèle d'objet Outlook](../vsto/outlook-object-model-overview.md)   
- [Accès au ruban au moment de l'exécution](../vsto/accessing-the-ribbon-at-run-time.md)  
+## <a name="see-also"></a>See Also  
+ [Custom Task Panes](../vsto/custom-task-panes.md)   
+ [How to: Add a Custom Task Pane to an Application](../vsto/how-to-add-a-custom-task-pane-to-an-application.md)   
+ [Walkthrough: Automating an Application from a Custom Task Pane](../vsto/walkthrough-automating-an-application-from-a-custom-task-pane.md)   
+ [Walkthrough: Synchronizing a Custom Task Pane with a Ribbon Button](../vsto/walkthrough-synchronizing-a-custom-task-pane-with-a-ribbon-button.md)   
+ [Ribbon Overview](../vsto/ribbon-overview.md)   
+ [Outlook Object Model Overview](../vsto/outlook-object-model-overview.md)   
+ [Accessing the Ribbon at Run Time](../vsto/accessing-the-ribbon-at-run-time.md)  
   
   

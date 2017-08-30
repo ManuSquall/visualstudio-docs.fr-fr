@@ -1,55 +1,71 @@
 ---
-title: "CA1300&#160;: Sp&#233;cifier MessageBoxOptions | Microsoft Docs"
-ms.custom: ""
-ms.date: "12/15/2016"
-ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-devops-test"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "SpecifyMessageBoxOptions"
-  - "CA1300"
-helpviewer_keywords: 
-  - "SpecifyMessageBoxOptions"
-  - "CA1300"
+title: 'CA1300: Specify MessageBoxOptions | Microsoft Docs'
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology:
+- vs-devops-test
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords:
+- SpecifyMessageBoxOptions
+- CA1300
+helpviewer_keywords:
+- SpecifyMessageBoxOptions
+- CA1300
 ms.assetid: 9357a724-026e-4a3d-a03a-f14635064ec6
 caps.latest.revision: 19
-caps.handback.revision: 19
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
----
-# CA1300&#160;: Sp&#233;cifier MessageBoxOptions
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
+author: stevehoag
+ms.author: shoag
+manager: wpickett
+translation.priority.ht:
+- de-de
+- es-es
+- fr-fr
+- it-it
+- ja-jp
+- ko-kr
+- ru-ru
+- zh-cn
+- zh-tw
+translation.priority.mt:
+- cs-cz
+- pl-pl
+- pt-br
+- tr-tr
+ms.translationtype: HT
+ms.sourcegitcommit: eb5c9550fd29b0e98bf63a7240737da4f13f3249
+ms.openlocfilehash: 7d4799fa48ea21c98603ce9aee5de1353618960c
+ms.contentlocale: fr-fr
+ms.lasthandoff: 08/30/2017
 
+---
+# <a name="ca1300-specify-messageboxoptions"></a>CA1300: Specify MessageBoxOptions
 |||  
 |-|-|  
 |TypeName|SpecifyMessageBoxOptions|  
 |CheckId|CA1300|  
-|Catégorie|Microsoft.Globalization|  
-|Modification avec rupture|Modification sans rupture|  
+|Category|Microsoft.Globalization|  
+|Breaking Change|Non-breaking|  
   
-## Cause  
- Une méthode appelle une surcharge de la méthode <xref:System.Windows.Forms.MessageBox.Show%2A?displayProperty=fullName> qui n'accepte pas d'argument <xref:System.Windows.Forms.MessageBoxOptions?displayProperty=fullName>.  
+## <a name="cause"></a>Cause  
+ A method calls an overload of the <xref:System.Windows.Forms.MessageBox.Show%2A?displayProperty=fullName> method that does not take a <xref:System.Windows.Forms.MessageBoxOptions?displayProperty=fullName> argument.  
   
-## Description de la règle  
- Pour afficher correctement une boîte de message pour les cultures qui utilisent un sens de lecture de droite à gauche, les membres <xref:System.Windows.Forms.MessageBoxOptions> et <xref:System.Windows.Forms.MessageBoxOptions> de l'énumération <xref:System.Windows.Forms.MessageBoxOptions> doivent être passés à la méthode <xref:System.Windows.Forms.MessageBox.Show%2A>.  Examinez la propriété <xref:System.Windows.Forms.Control.RightToLeft%2A?displayProperty=fullName> du contrôle conteneur pour déterminer s'il faut ou non utiliser un sens de lecture de droite à gauche.  
+## <a name="rule-description"></a>Rule Description  
+ To display a message box correctly for cultures that use a right-to-left reading order, the <xref:System.Windows.Forms.MessageBoxOptions> and <xref:System.Windows.Forms.MessageBoxOptions> members of the <xref:System.Windows.Forms.MessageBoxOptions> enumeration must be passed to the <xref:System.Windows.Forms.MessageBox.Show%2A> method. Examine the <xref:System.Windows.Forms.Control.RightToLeft%2A?displayProperty=fullName> property of the containing control to determine whether to use a right-to-left reading order.  
   
-## Comment corriger les violations  
- Pour corriger une violation de cette règle, appelez une surcharge de la méthode <xref:System.Windows.Forms.MessageBox.Show%2A> qui accepte un argument <xref:System.Windows.Forms.MessageBoxOptions>.  
+## <a name="how-to-fix-violations"></a>How to Fix Violations  
+ To fix a violation of this rule, call an overload of the <xref:System.Windows.Forms.MessageBox.Show%2A> method that takes a <xref:System.Windows.Forms.MessageBoxOptions> argument.  
   
-## Quand supprimer les avertissements  
- Il est possible de supprimer sans risque un avertissement de cette règle lorsque la bibliothèque de code n'est pas localisée pour une culture dont le sens de lecture va de droite à gauche.  
+## <a name="when-to-suppress-warnings"></a>When to Suppress Warnings  
+ It is safe to suppress a warning from this rule when the code library will not be localized for a culture that uses a right-to-left reading order.  
   
-## Exemple  
- L'exemple suivant présente une méthode qui affiche une boîte de message dotée des options appropriées au sens de lecture de la culture.  Un fichier de ressources, qui n'est pas présenté, est requis pour générer l'exemple.  Suivez les commentaires de l'exemple pour générer l'exemple sans fichier de ressources et tester la fonctionnalité de lecture de droite à gauche.  
+## <a name="example"></a>Example  
+ The following example shows a method that displays a message box that has options that are appropriate for the reading order of the culture. A resource file, which is not shown, is required to build the example. Follow the comments in the example to build the example without a resource file and to test the right-to-left feature.  
   
- [!code-vb[FxCop.Globalization.SpecifyMBOptions#1](../code-quality/codesnippet/VisualBasic/ca1300-specify-messageboxoptions_1.vb)]
- [!code-cs[FxCop.Globalization.SpecifyMBOptions#1](../code-quality/codesnippet/CSharp/ca1300-specify-messageboxoptions_1.cs)]  
+ [!code-vb[FxCop.Globalization.SpecifyMBOptions#1](../code-quality/codesnippet/VisualBasic/ca1300-specify-messageboxoptions_1.vb)] [!code-csharp[FxCop.Globalization.SpecifyMBOptions#1](../code-quality/codesnippet/CSharp/ca1300-specify-messageboxoptions_1.cs)]  
   
-## Voir aussi  
+## <a name="see-also"></a>See Also  
  <xref:System.Resources.ResourceManager?displayProperty=fullName>   
- [Ressources dans des applications de bureau](../Topic/Resources%20in%20Desktop%20Apps.md)
+ [Resources in Desktop Apps](/dotnet/framework/resources/index)

@@ -1,233 +1,233 @@
 ---
-title: "Proc&#233;dure pas &#224; pas&#160;: cr&#233;ation d&#39;un composant WebPart pour SharePoint"
-ms.custom: ""
-ms.date: "02/02/2017"
-ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "office-development"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-dev_langs: 
-  - "VB"
-  - "CSharp"
-  - "VB"
-  - "CSharp"
-helpviewer_keywords: 
-  - "WebParts (développement SharePoint dans Visual Studio), créer"
-  - "WebParts (développement SharePoint dans Visual Studio), concevoir"
-  - "WebParts (développement SharePoint dans Visual Studio), développer"
+title: 'Walkthrough: Creating a Web Part for SharePoint | Microsoft Docs'
+ms.custom: 
+ms.date: 02/02/2017
+ms.prod: visual-studio-dev14
+ms.reviewer: 
+ms.suite: 
+ms.technology:
+- office-development
+ms.tgt_pltfrm: 
+ms.topic: article
+dev_langs:
+- VB
+- CSharp
+- VB
+- CSharp
+helpviewer_keywords:
+- Web Parts [SharePoint development in Visual Studio], developing
+- Web Parts [SharePoint development in Visual Studio], creating
+- Web Parts [SharePoint development in Visual Studio], designing
 ms.assetid: 51fb5bdd-b99c-4716-83bc-e66a5da15169
 caps.latest.revision: 34
-author: "kempb"
-ms.author: "kempb"
-manager: "ghogen"
-caps.handback.revision: 33
+author: kempb
+ms.author: kempb
+manager: ghogen
+ms.translationtype: HT
+ms.sourcegitcommit: eb5c9550fd29b0e98bf63a7240737da4f13f3249
+ms.openlocfilehash: f2d3c5ecf34ccbe92ad5303ee8439b68bec26adb
+ms.contentlocale: fr-fr
+ms.lasthandoff: 08/30/2017
+
 ---
-# Proc&#233;dure pas &#224; pas&#160;: cr&#233;ation d&#39;un composant WebPart pour SharePoint
-  Les composants WebPart permettent aux utilisateurs de modifier directement le contenu, l'apparence et le comportement des pages d'un site SharePoint à l'aide d'un navigateur.  Cette procédure pas à pas vous indique comment créer un composant WebPart à l'aide d'un modèle d'élément **WebPart** dans Visual Studio 2010.  
+# <a name="walkthrough-creating-a-web-part-for-sharepoint"></a>Walkthrough: Creating a Web Part for SharePoint
+  Web Parts enable users to directly modify the content, appearance, and behavior of SharePoint site pages by using a browser. This walkthrough shows you how to create a Web Part by using the **Web Part** item template in Visual Studio 2010.  
   
- Le composant WebPart affiche des employés dans une grille de données.  L'utilisateur spécifie l'emplacement du fichier qui contient les données sur les employés.  Il peut également filtrer la grille de données de manière à n'afficher dans la liste que les employés qui sont directeurs.  
+ The Web Part displays employees in a data grid. The user specifies the location of the file that contains the employee data. The user can also filter the data grid so that employees who are managers appear in the list only.  
   
- Cette procédure pas à pas décrit les tâches suivantes :  
+ This walkthrough illustrates the following tasks:  
   
--   Création d'un composant WebPart à l'aide du modèle d'élément **WebPart** de Visual Studio  
+-   Creating a Web Part by using the Visual Studio **Web Part** item template.  
   
--   Création d'une propriété pouvant être définie par l'utilisateur du composant WebPart.  Cette propriété spécifie l'emplacement du fichier de données sur les employés.  
+-   Creating a property that can be set by the user of the Web Part. This property specifies the location of the employee data file.  
   
--   Restitution du contenu dans un composant WebPart en ajoutant des contrôles à la collection de contrôles WebPart  
+-   Rendering content in a Web Part by adding controls to the Web Part controls collection.  
   
--   Création d'un élément de menu, désigné par « *verbe* », figurant dans le menu d'actions verbales du composant WebPart restitué.  Les verbes permettent à l'utilisateur de modifier les données qui s'affichent dans le composant WebPart.  
+-   Creating a new menu item, referred to as a *verb,* that appears in the verbs menu of the rendered Web part. Verbs enable the user to modify the data that appears in the Web Part.  
   
--   Test du composant WebPart dans SharePoint  
+-   Testing the Web Part in SharePoint.  
   
     > [!NOTE]  
-    >  Il est possible que pour certains des éléments de l'interface utilisateur de Visual Studio, votre ordinateur affiche des noms ou des emplacements différents de ceux indiqués dans les instructions suivantes.  Ces éléments dépendent de l'édition de Visual Studio dont vous disposez et des paramètres que vous utilisez.  Pour plus d'informations, consultez [Customizing Development Settings in Visual Studio](http://msdn.microsoft.com/fr-fr/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
+    >  Your computer might show different names or locations for some of the Visual Studio user interface elements in the following instructions. The Visual Studio edition that you have and the settings that you use determine these elements. For more information, see [Personalize the Visual Studio IDE](../ide/personalizing-the-visual-studio-ide.md).  
   
-## Composants requis  
- Pour exécuter cette procédure pas à pas, vous devez disposer des composants suivants :  
+## <a name="prerequisites"></a>Prerequisites  
+ You need the following components to complete this walkthrough:  
   
--   Éditions de Microsoft Windows et SharePoint prises en charge.  Pour plus d'informations, consultez [Configuration requise pour développer des solutions SharePoint](../sharepoint/requirements-for-developing-sharepoint-solutions.md).  
+-   Supported editions of Microsoft Windows and SharePoint. For more information, see [Requirements for Developing SharePoint Solutions](../sharepoint/requirements-for-developing-sharepoint-solutions.md).  
   
--   [!INCLUDE[vs_pro_current_short](../sharepoint/includes/vs-pro-current-short-md.md)] ou une édition de Visual Studio Application Lifecycle Management \(ALM\).  
+-   [!INCLUDE[vs_pro_current_short](../sharepoint/includes/vs-pro-current-short-md.md)] or an edition of Visual Studio Application Lifecycle Management (ALM).  
   
-## Création d'un projet SharePoint vide  
- Commencez par créer un projet SharePoint vide.  Vous ajouterez ensuite un composant WebPart au projet à l'aide du modèle d'élément **WebPart**.  
+## <a name="creating-an-empty-sharepoint-project"></a>Creating an Empty SharePoint Project  
+ First, create a Empty SharePoint project. Later, you will add a Web Part to the project by using the **Web Part** item template.  
   
-#### Pour créer un projet SharePoint vide  
+#### <a name="to-create-an-empty-sharepoint-project"></a>To create an Empty SharePoint Project  
   
-1.  Démarrez [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] en sélectionnant l'option **Exécuter en tant qu'administrateur**.  
+1.  Start [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] by using the **Run as Administrator** option.  
   
-2.  Dans la barre de menus, choisissez **Fichier**, **Nouveau**, **Projet**.  
+2.  On the men bar, choose **File**, **New**, **Project**.  
   
-3.  Dans la boîte de dialogue **Nouveau projet**, développez le nœud **SharePoint** sous le langage que vous souhaitez utiliser, puis sélectionnez le nœud **2010**.  
+3.  In the **New Project** dialog box, expand the **SharePoint** node under the language that you want to use, and then choose the **2010** node.  
   
-4.  Dans le volet **Modèles**, sélectionnez l'élément **Projet SharePoint 2010**, puis choisissez le bouton **OK**.  
+4.  In the **Templates** pane, choose **SharePoint 2010 Project**, and then choose the **OK** button.  
   
-     L'**Assistant Personnalisation de SharePoint** s'affiche.  Cet Assistant vous permet de sélectionner le site à utiliser pour déboguer le projet et le niveau de confiance de la solution.  
+     The **SharePoint Customization Wizard** appears. This wizard enables you to select the site that you will use to debug the project and the trust level of the solution.  
   
-5.  Sélectionnez la case d'option **Déployer en tant que solution de batterie**, puis choisissez le bouton **Terminer** pour accepter le site SharePoint local par défaut.  
+5.  Choose the **Deploy as a farm solution** option button, and then choose the **Finish** button to accept the default local SharePoint site.  
   
-## Ajout d'un composant WebPart au projet  
- Vous pouvez ajouter un élément **WebPart** au projet.  L'élément **WebPart** ajoute le fichier de code du composant WebPart.  Vous ajouterez ensuite du code à ce fichier pour restituer le contenu du composant WebPart.  
+## <a name="adding-a-web-part-to-the-project"></a>Adding a Web Part to the Project  
+ Add a **Web Part** item to the project. The **Web Part** item adds the Web Part code file. Later, you will add code to the Web Part code file to render the contents of the Web Part.  
   
-#### Pour ajouter un composant WebPart au projet  
+#### <a name="to-add-a-web-part-to-the-project"></a>To add a Web Part to the Project  
   
-1.  Dans la barre de menus, choisissez **Projet**, **Ajouter un nouvel élément**.  
+1.  On the menu bar, choose **Project**, **Add New Item**.  
   
-2.  Dans la boîte de dialogue **Ajouter un nouvel élément**, dans le volet **Modèles installés**, développez le nœud **SharePoint**, puis cliquez sur **2010**.  
+2.  In the **Add New Item** dialog box, in the **Installed Templates** pane, expand the **SharePoint** node, and then choose the **2010** node.  
   
-3.  Dans la liste des modèles, sélectionnez le modèle **SharePoint 2013 \- Composant Visual Web Part**, puis choisissez le bouton **OK**.  
+3.  In the list of SharePoint templates, choose the **Web Part** template, and then choose the **Add** button.  
   
-     L'élément **WebPart** s'affiche dans l'**Explorateur de solutions**.  
+     The **Web Part** item appears in **Solution Explorer**.  
   
-## Restitution du contenu du composant WebPart  
- Vous pouvez spécifier les contrôles à afficher dans le composant WebPart en les ajoutant à la collection de contrôles de la classe WebPart.  
+## <a name="rendering-content-in-the-web-part"></a>Rendering Content in the Web Part  
+ You can specify which controls you want to appear in the Web Part by adding them to the controls collection of the Web Part class.  
   
-#### Pour restituer le contenu du composant WebPart  
+#### <a name="to-render-content-in-the-web-part"></a>To render content in the Web Part  
   
-1.  Dans l'**Explorateur de solutions**, double\-cliquez sur WebPart1.vb \(en Visual Basic\) ou WebPart1.cs \(en C\#\).  
+1.  In **Solution Explorer**, open WebPart1.vb (in Visual Basic) or WebPart1.cs (in C#).  
   
-     Le fichier de code du composant WebPart s'ouvre dans l'éditeur de code.  
+     The Web Part code file opens in Code Editor.  
   
-2.  Ajoutez les instructions suivantes au début du fichier de code du composant WebPart.  
+2.  Add the following statements to the top of the Web Part code file.  
   
-     [!code-csharp[SP_WebPart#1](../snippets/csharp/VS_Snippets_OfficeSP/sp_webpart/cs/webpart1/webpart1.cs#1)]
-     [!code-vb[SP_WebPart#1](../snippets/visualbasic/VS_Snippets_OfficeSP/sp_webpart/vb/webpart1/webpart1.vb#1)]  
+     [!code-csharp[SP_WebPart#1](../sharepoint/codesnippet/CSharp/spext_webpart/webpart1/webpart1.cs#1)]  [!code-vb[SP_WebPart#1](../sharepoint/codesnippet/VisualBasic/spext_webpart/webpart1/webpart1.vb#1)]  
   
-3.  Ajoutez le code suivant à la classe `WebPart1`.  Ce code déclare les champs suivants :  
+3.  Add the following code to the `WebPart1` class. This code declares the following fields:  
   
-    -   Grille de données pour afficher les employés dans le composant WebPart  
+    -   A data grid to display employees in the Web Part.  
   
-    -   Texte qui s'affiche sur le contrôle utilisé pour filtrer la grille de données  
+    -   Text that appears on the control that is used to filter the data grid.  
   
-    -   Étiquette qui affiche une erreur lorsque la grille de données ne peut pas afficher de données  
+    -   A label that displays an error if the data grid is unable to display data.  
   
-    -   Chaîne qui contient le chemin d'accès du fichier de données sur les employés  
+    -   A string that contains the path of the employee data file.  
   
-     [!code-csharp[SP_WebPart#2](../snippets/csharp/VS_Snippets_OfficeSP/sp_webpart/cs/webpart1/webpart1.cs#2)]
-     [!code-vb[SP_WebPart#2](../snippets/visualbasic/VS_Snippets_OfficeSP/sp_webpart/vb/webpart1/webpart1.vb#2)]  
+     [!code-csharp[SP_WebPart#2](../sharepoint/codesnippet/CSharp/spext_webpart/webpart1/webpart1.cs#2)] [!code-vb[SP_WebPart#2](../sharepoint/codesnippet/VisualBasic/spext_webpart/webpart1/webpart1.vb#2)]  
   
-4.  Ajoutez le code suivant à la classe `WebPart1`.  Ce code ajoute une propriété personnalisée nommée `DataFilePath` au composant WebPart.  Une propriété personnalisée est une propriété qui peut être définie par l'utilisateur dans SharePoint.  Cette propriété obtient et définit l'emplacement d'un fichier de données XML utilisé pour remplir la grille de données.  
+4.  Add the following code to the `WebPart1` class. This code adds a custom property named `DataFilePath` to the Web Part. A custom property is a property that can be set in SharePoint by the user. This property gets and sets the location of a XML data file that is used to populate the data grid.  
   
-     [!code-csharp[SP_WebPart#3](../snippets/csharp/VS_Snippets_OfficeSP/sp_webpart/cs/webpart1/webpart1.cs#3)]
-     [!code-vb[SP_WebPart#3](../snippets/visualbasic/VS_Snippets_OfficeSP/sp_webpart/vb/webpart1/webpart1.vb#3)]  
+     [!code-csharp[SP_WebPart#3](../sharepoint/codesnippet/CSharp/spext_webpart/webpart1/webpart1.cs#3)]  [!code-vb[SP_WebPart#3](../sharepoint/codesnippet/VisualBasic/spext_webpart/webpart1/webpart1.vb#3)]  
   
-5.  Remplacez la méthode `CreateChildControls` par le code ci\-dessous.  Ce code exécute les tâches suivantes :  
+5.  Replace the `CreateChildControls` method with the following code. This code performs the following tasks:  
   
-    -   Il ajoute la grille de données et l'étiquette que vous avez déclarées au cours de l'étape précédente.  
+    -   Adds the data grid and label that you declared in the previous step.  
   
-    -   Il lie la grille de données à un fichier XML qui contient des données sur les employés.  
+    -   Binds the data grid to an XML file that contains employee data.  
   
-     [!code-csharp[SP_WebPart#4](../snippets/csharp/VS_Snippets_OfficeSP/sp_webpart/cs/webpart1/webpart1.cs#4)]
-     [!code-vb[SP_WebPart#4](../snippets/visualbasic/VS_Snippets_OfficeSP/sp_webpart/vb/webpart1/webpart1.vb#4)]  
+     [!code-csharp[SP_WebPart#4](../sharepoint/codesnippet/CSharp/spext_webpart/webpart1/webpart1.cs#4)] [!code-vb[SP_WebPart#4](../sharepoint/codesnippet/VisualBasic/spext_webpart/webpart1/webpart1.vb#4)]  
   
-6.  Ajoutez la méthode suivante à la classe `WebPart1`.  Ce code exécute les tâches suivantes :  
+6.  Add the following method to the `WebPart1` class. This code performs the following tasks:  
   
-    -   Il crée un verbe qui s'affiche dans le menu d'actions verbales WebPart du composant WebPart restitué.  
+    -   Creates a verb that appears in the Web Part verbs menu of the rendered Web part.  
   
-    -   Il gère l'événement qui est déclenché lorsque l'utilisateur clique sur le verbe dans le menu d'actions verbales.  Ce code filtre la liste des employés qui s'affiche dans la grille de données.  
+    -   Handles the event that is raised when the user chooses the verb in the verbs menu. This code filters the list of employees that appears in the data grid.  
   
-     [!code-csharp[SP_WebPart#5](../snippets/csharp/VS_Snippets_OfficeSP/sp_webpart/cs/webpart1/webpart1.cs#5)]
-     [!code-vb[SP_WebPart#5](../snippets/visualbasic/VS_Snippets_OfficeSP/sp_webpart/vb/webpart1/webpart1.vb#5)]  
+     [!code-csharp[SP_WebPart#5](../sharepoint/codesnippet/CSharp/spext_webpart/webpart1/webpart1.cs#5)] [!code-vb[SP_WebPart#5](../sharepoint/codesnippet/VisualBasic/spext_webpart/webpart1/webpart1.vb#5)]  
   
-## Test du composant WebPart  
- Lorsque vous exécutez le projet, le site SharePoint s'ouvre.  Le composant WebPart est automatiquement ajouté à la galerie de composants WebPart dans SharePoint.  Vous pouvez ajouter le composant WebPart à toute page WebPart.  
+## <a name="testing-the-web-part"></a>Testing the Web Part  
+ When you run the project, the SharePoint site opens. The Web Part is automatically added to the Web Part Gallery in SharePoint. You can add the Web Part to any Web Part page.  
   
-#### Pour tester le composant WebPart  
+#### <a name="to-test-the-web-part"></a>To test the Web Part  
   
-1.  Collez le code XML suivant dans un fichier Bloc\-notes.  Ce fichier XML contient des exemples de données qui s'afficheront dans le composant WebPart.  
+1.  Paste the following XML into a Notepad file. This XML file contains the sample data that will appear in the Web Part.  
   
     ```  
-  
-    <employees xmlns="http://schemas.microsoft.com/vsto/samples">  
-       <employee>  
-           <name>David Hamilton</name>  
-           <hireDate>2001-05-11</hireDate>  
-           <title>Sales Associate</title>  
-       </employee>  
-       <employee>  
-           <name>Karina Leal</name>  
-           <hireDate>1999-04-01</hireDate>  
-           <title>Manager</title>  
-       </employee>  
-       <employee>  
-           <name>Nancy Davolio</name>  
-           <hireDate>1992-05-01</hireDate>  
-           <title>Sales Associate</title>  
-       </employee>  
-       <employee>  
-           <name>Steven Buchanan</name>  
-           <hireDate>1955-03-04</hireDate>  
-           <title>Manager</title>  
-       </employee>  
-       <employee>  
-           <name>Suyama Michael</name>  
-           <hireDate>1963-07-02</hireDate>  
-           <title>Sales Associate</title>  
-       </employee>  
-    </employees>  
+    <?xml version="1.0" encoding="utf-8" ?>  
+        <employees xmlns="http://schemas.microsoft.com/vsto/samples">  
+           <employee>  
+               <name>David Hamilton</name>  
+               <hireDate>2001-05-11</hireDate>  
+               <title>Sales Associate</title>  
+           </employee>  
+           <employee>  
+               <name>Karina Leal</name>  
+               <hireDate>1999-04-01</hireDate>  
+               <title>Manager</title>  
+           </employee>  
+           <employee>  
+               <name>Nancy Davolio</name>  
+               <hireDate>1992-05-01</hireDate>  
+               <title>Sales Associate</title>  
+           </employee>  
+           <employee>  
+               <name>Steven Buchanan</name>  
+               <hireDate>1955-03-04</hireDate>  
+               <title>Manager</title>  
+           </employee>  
+           <employee>  
+               <name>Suyama Michael</name>  
+               <hireDate>1963-07-02</hireDate>  
+               <title>Sales Associate</title>  
+           </employee>  
+        </employees>  
     ```  
   
-2.  Dans la barre de menus du Bloc\-notes, choisissez **Fichier**, **Enregistrer**.  
+2.  In Notepad, on the menu bar, choose **File**, **Save As**.  
   
-3.  Dans la boîte de dialogue **Enregistrer sous**, dans la liste déroulante **Type**, sélectionnez **Tous les fichiers**.  
+3.  In the **Save As** dialog box, in the **Save as type** list, choose **All Files**.  
   
-4.  Dans la zone **Nom de fichier**, tapez data.xml.  
+4.  In the **File name** box, enter **data.xml**.  
   
-5.  Sélectionnez un dossier à l'aide du bouton **Parcourir les dossiers**, puis cliquez sur **Enregistrer**.  
+5.  Choose any folder by using the **Browse Folders** button, and then choose the **Save** button.  
   
-6.  Dans Visual Studio, appuyez sur la touche **F5**.  
+6.  In Visual Studio, choose the **F5** key.  
   
-     Le site SharePoint s'ouvre.  
+     The SharePoint site opens.  
   
-7.  Dans le menu **Actions du site**, cliquez sur **Autres options**.  
+7.  On the **Site Actions** menu, choose **More Options**.  
   
-8.  Dans la page **Créer**, sélectionnez le type **Page de composant WebPart**, puis choisissez le bouton **Créer**.  
+8.  In the **Create** page, choose the **Web Part Page** type, then choose the **Create** button.  
   
-9. Dans la page **Nouvelle page de composants WebPart**, nommez la page **SampleWebPartPage.aspx**, puis choisissez le bouton **Créer**.  
+9. In the **New Web Part Page** page, name the page **SampleWebPartPage.aspx**, and then choose the **Create** button.  
   
-     La page de composants WebPart s'affiche.  
+     The Web Part page appears.  
   
-10. Sélectionnez une zone sur la page de composants WebPart.  
+10. Select any zone on the Web Part page.  
   
-11. En haut de la page, cliquez sur l'onglet **Insérer**, puis sur **WebPart**.  
+11. At the top of the page, choose the **Insert** tab, and then choose the **Web Part** button.  
   
-12. Dans le volet **Catégories**, cliquez sur le dossier **Personnalisé**, puis sur le composant WebPart **WebPart1** et sur **Ajouter**.  
+12. In the **Categories** pane, choose the **Custom** folder, choose the **WebPart1** Web Part, and then choose the **Add** button.  
   
-     Le composant WebPart s'affiche dans la page.  
+     The Web Part appears on the page.  
   
-## Test de la propriété personnalisée  
- Pour remplir la grille de données qui s'affiche dans le composant WebPart, spécifiez le chemin d'accès du fichier XML qui contient des données sur chaque employé.  
+## <a name="testing-the-custom-property"></a>Testing the Custom Property  
+ To populate the data grid that appears in the Web Part, specify the path of the XML file that contains data about each employee.  
   
-#### Pour tester la propriété personnalisée  
+#### <a name="to-test-the-custom-property"></a>To test the custom property  
   
-1.  Cliquez sur la flèche qui apparaît à droite du composant WebPart, puis choisissez **Modifier le composant WebPart** dans le menu qui s'affiche.  
+1.  Choose the arrow that appears on the right side of the Web Part, and then choose **Edit Web Part** from the menu that appears.  
   
-     Un volet qui contient les propriétés du composant WebPart s'affiche à droite de la page.  
+     A pane that contains properties for the Web Part appears on the right side of the page.  
   
-2.  Dans ce volet, développez le nœud **Divers**, tapez le chemin d'accès du fichier XML que vous avez précédemment créé, puis cliquez sur**Appliquer** et sur **OK**.  
+2.  In the pane, expand the **Miscellaneous** node, enter the path of the XML file that you created earlier, choose the **Apply** button, and then choose the **OK** button.  
   
-     Vérifiez qu'une liste d'employés s'affiche dans le composant WebPart.  
+     Verify that a list of employees appears in the Web Part.  
   
-## Test du verbe WebPart  
- Vous pouvez afficher et masquer les employés qui ne sont pas directeurs en cliquant sur un élément qui figure dans le menu d'actions verbales WebPart.  
+## <a name="testing-the-web-part-verb"></a>Testing the Web Part Verb  
+ Show and hide employees that are not managers by clicking an item that appears in the Web Part verbs menu.  
   
-#### Pour tester le verbe WebPart  
+#### <a name="to-test-the-web-part-verb"></a>To test the Web Part verb  
   
-1.  Cliquez sur la flèche qui apparaît à droite du composant WebPart, puis choisissez **Modifier le composant WebPart** dans le menu qui s'affiche.  
+1.  Choose the arrow that appears on the right side of the Web Part, and then choose **Show Managers Only** from the menu that appears.  
   
-     Seuls les employés qui sont directeurs s'affichent dans le composant WebPart.  
+     Only employees who are managers appear in the Web Part.  
   
-2.  Choisissez la flèche, puis choisissez **Afficher tous les employés** dans le menu qui apparaît.  
+2.  Choose the arrow again, and then choose **Show All Employees** from the menu that appears.  
   
-     Tous les employés s'affichent dans le composant WebPart.  
+     All employees appear in the Web Part.  
   
-## Voir aussi  
- [Création de composants WebPart pour SharePoint](../sharepoint/creating-web-parts-for-sharepoint.md)   
- [Comment : créer un composant WebPart SharePoint](../sharepoint/how-to-create-a-sharepoint-web-part.md)   
- [Comment : créer un composant WebPart SharePoint à l'aide d'un concepteur](../sharepoint/how-to-create-a-sharepoint-web-part-by-using-a-designer.md)   
- [Procédure pas à pas : création d'un composant WebPart pour SharePoint à l'aide d'un concepteur](../sharepoint/walkthrough-creating-a-web-part-for-sharepoint-by-using-a-designer.md)  
+## <a name="see-also"></a>See Also  
+ [Creating Web Parts for SharePoint](../sharepoint/creating-web-parts-for-sharepoint.md)   
+ [How to: Create a SharePoint Web Part](../sharepoint/how-to-create-a-sharepoint-web-part.md)   
+ [How to: Create a SharePoint Web Part by Using a Designer](../sharepoint/how-to-create-a-sharepoint-web-part-by-using-a-designer.md)   
+ [Walkthrough: Creating a Web Part for SharePoint by Using a Designer](../sharepoint/walkthrough-creating-a-web-part-for-sharepoint-by-using-a-designer.md)  
   
   

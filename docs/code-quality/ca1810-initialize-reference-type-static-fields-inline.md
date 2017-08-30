@@ -1,63 +1,88 @@
 ---
-title: "CA1810 : Initialisez les champs statiques de type r&#233;f&#233;rence en ligne | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-devops-test"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "InitializeReferenceTypeStaticFieldsInline"
-  - "CA1810"
-helpviewer_keywords: 
-  - "InitializeReferenceTypeStaticFieldsInline"
-  - "CA1810"
+title: 'CA1810: Initialize reference type static fields inline | Microsoft Docs'
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology:
+- vs-devops-test
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords:
+- InitializeReferenceTypeStaticFieldsInline
+- CA1810
+helpviewer_keywords:
+- InitializeReferenceTypeStaticFieldsInline
+- CA1810
 ms.assetid: e9693118-a914-4efb-9550-ec659d8d97d2
 caps.latest.revision: 21
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
-caps.handback.revision: 21
----
-# CA1810 : Initialisez les champs statiques de type r&#233;f&#233;rence en ligne
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
+author: stevehoag
+ms.author: shoag
+manager: wpickett
+translation.priority.ht:
+- de-de
+- es-es
+- fr-fr
+- it-it
+- ja-jp
+- ko-kr
+- ru-ru
+- zh-cn
+- zh-tw
+translation.priority.mt:
+- cs-cz
+- pl-pl
+- pt-br
+- tr-tr
+ms.translationtype: HT
+ms.sourcegitcommit: eb5c9550fd29b0e98bf63a7240737da4f13f3249
+ms.openlocfilehash: f3660a31f03daaf278453dddd46a1e73cb7b200d
+ms.contentlocale: fr-fr
+ms.lasthandoff: 08/30/2017
 
+---
+# <a name="ca1810-initialize-reference-type-static-fields-inline"></a>CA1810: Initialize reference type static fields inline
 |||  
 |-|-|  
 |TypeName|InitializeReferenceTypeStaticFieldsInline|  
 |CheckId|CA1810|  
-|Catégorie|Microsoft.Performance|  
-|Modification avec rupture|Modification sans rupture|  
+|Category|Microsoft.Performance|  
+|Breaking Change|Non-breaking|  
   
-## Cause  
- Un type référence déclare un constructeur statique explicite.  
+## <a name="cause"></a>Cause  
+ A reference type declares an explicit static constructor.  
   
-## Description de la règle  
- Lorsqu'un type déclare un constructeur statique explicite, le compilateur juste\-à\-temps \(JIT, Just\-In\-Time\) ajoute une vérification à chacun des méthodes statiques et constructeurs d'instances du type afin de garantir que le constructeur statique a été appelé précédemment.  L'initialisation statique est déclenchée lorsque de l'accès à un membre statique ou lorsqu'une instance du type est créée.  Toutefois, l'initialisation statique n'est pas déclenchée si vous déclarez une variable du type sans l'utiliser, ce qui peut s'avérer important si l'initialisation modifie l'état global.  
+## <a name="rule-description"></a>Rule Description  
+ When a type declares an explicit static constructor, the just-in-time (JIT) compiler adds a check to each static method and instance constructor of the type to make sure that the static constructor was previously called. Static initialization is triggered when any static member is accessed or when an instance of the type is created. However, static initialization is not triggered if you declare a variable of the type but do not use it, which can be important if the initialization changes global state.  
   
- Lorsque toutes les données statiques sont initialisées inline et lorsqu'un constructeur statique explicite n'est pas déclaré, les compilateurs de langage intermédiaire de Microsoft MSIL \(MicroSoft Intermediate Language\) ajoutent à la définition de type MSIL l'indicateur `beforefieldinit` et un constructeur statique implicite qui initialise les données statiques.  Lorsque le compilateur JIT rencontre l'indicateur `beforefieldinit`, la plupart du temps, les vérifications du constructeur statique ne sont pas ajoutées.  L'exécution de l'initialisation statique est garantie avant tout accès à des champs statiques, mais non avant l'appel à une méthode statique ou à un constructeur d'instances.  Remarquez que l'initialisation statique peut se produire n'importe quand après la déclaration d'une variable du type.  
+ When all static data is initialized inline and an explicit static constructor is not declared, Microsoft intermediate language (MSIL) compilers add the `beforefieldinit` flag and an implicit static constructor, which initializes the static data, to the MSIL type definition. When the JIT compiler encounters the `beforefieldinit` flag, most of the time the static constructor checks are not added. Static initialization is guaranteed to occur at some time before any static fields are accessed but not before a static method or instance constructor is invoked. Note that static initialization can occur at any time after a variable of the type is declared.  
   
- Les vérifications des constructeurs statiques peuvent diminuer les performances.  Un constructeur statique est souvent utilisé uniquement pour initialiser des champs statiques, auquel cas vous devez seulement vous assurer que l'initialisation statique se produit avant le premier accès d'un champ statique.  Le comportement de `beforefieldinit` est adapté à ceux\-ci, ainsi qu'à la plupart des autres types.  Il est inadapté uniquement lorsque l'initialisation statique affecte l'état global et lorsqu'une des conditions suivantes est vraie :  
+ Static constructor checks can decrease performance. Often a static constructor is used only to initialize static fields, in which case you must only make sure that static initialization occurs before the first access of a static field. The `beforefieldinit` behavior is appropriate for these and most other types. It is only inappropriate when static initialization affects global state and one of the following is true:  
   
--   L'incidence sur l'état global est coûteuse et n'est pas nécessaire si le type n'est pas utilisé.  
+-   The effect on global state is expensive and is not required if the type is not used.  
   
--   Les effets de l'état global sont accessibles sans nécessiter d'accès à un champ statique du type.  
+-   The global state effects can be accessed without accessing any static fields of the type.  
   
-## Comment corriger les violations  
- Pour corriger une violation de cette règle, initialisez toutes les données statiques lorsqu'elles sont déclarées et supprimez le constructeur statique.  
+## <a name="how-to-fix-violations"></a>How to Fix Violations  
+ To fix a violation of this rule, initialize all static data when it is declared and remove the static constructor.  
   
-## Quand supprimer les avertissements  
- Il est possible de supprimer sans risque un avertissement de cette règle si les performances ne constituent pas une priorité, ou si les modifications de l'état global dues à une initialisation statique sont coûteuses ou si leur exécution doit être garantie avant qu'une méthode statique du type soit appelée ou une instance du type créée.  
+## <a name="when-to-suppress-warnings"></a>When to Suppress Warnings  
+ It is safe to suppress a warning from this rule if performance is not a concern; or if global state changes that are caused by static initialization are expensive or must be guaranteed to occur before a static method of the type is called or an instance of the type is created.  
   
-## Exemple  
- L'exemple suivant présente un type, `StaticConstructor`, qui enfreint la règle et un autre, `NoStaticConstructor`, qui remplace le constructeur statique au moyen d'une initialisation inline visant à satisfaire la règle.  
+## <a name="example"></a>Example  
+ The following example shows a type, `StaticConstructor`, that violates the rule and a type, `NoStaticConstructor`, that replaces the static constructor with inline initialization to satisfy the rule.  
   
- [!CODE [FxCop.Performance.RefTypeStaticCtor#1](../CodeSnippet/VS_Snippets_CodeAnalysis/FxCop.Performance.RefTypeStaticCtor#1)]  
+ [!code-csharp[FxCop.Performance.RefTypeStaticCtor#1](../code-quality/codesnippet/CSharp/ca1810-initialize-reference-type-static-fields-inline_1.cs)] [!code-vb[FxCop.Performance.RefTypeStaticCtor#1](../code-quality/codesnippet/VisualBasic/ca1810-initialize-reference-type-static-fields-inline_1.vb)]  
   
- Remarquez l'ajout de l'indicateur `beforefieldinit` sur la définition MSIL pour la classe `NoStaticConstructor`.  
+ Note the addition of the `beforefieldinit` flag on the MSIL definition for the `NoStaticConstructor` class.  
   
-  **La norme ANSI publique auto StaticConstructor étend \[mscorlib\]System.Object {} \/\/ Fin de la classe StaticConstructor. La norme ANSI publique beforefieldinit de la classe NoStaticConstructor étend \[mscorlib\]System.Object { } \/\/ Fin de la classe NoStaticConstructor**   
-## Règles connexes  
- [CA2207 : Initialisez les champs statiques des types valeur en ligne](../code-quality/ca2207-initialize-value-type-static-fields-inline.md)
+ **.class public auto ansi StaticConstructor**  
+ **extends [mscorlib]System.Object**  
+**{**  
+**} // end of class StaticConstructor**  
+**.class public auto ansi beforefieldinit NoStaticConstructor**  
+ **extends [mscorlib]System.Object**  
+**{**  
+**} // end of class NoStaticConstructor**   
+## <a name="related-rules"></a>Related Rules  
+ [CA2207: Initialize value type static fields inline](../code-quality/ca2207-initialize-value-type-static-fields-inline.md)

@@ -1,69 +1,84 @@
 ---
-title: "CA1046&#160;: Ne pas surcharger l&#39;op&#233;rateur &#233;gal &#224; sur les types r&#233;f&#233;rence | Microsoft Docs"
-ms.custom: ""
-ms.date: "12/14/2016"
-ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-devops-test"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "DoNotOverloadOperatorEqualsOnReferenceTypes"
-  - "CA1046"
-helpviewer_keywords: 
-  - "CA1046"
-  - "DoNotOverloadOperatorEqualsOnReferenceTypes"
+title: 'CA1046: Do not overload operator equals on reference types | Microsoft Docs'
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology:
+- vs-devops-test
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords:
+- DoNotOverloadOperatorEqualsOnReferenceTypes
+- CA1046
+helpviewer_keywords:
+- CA1046
+- DoNotOverloadOperatorEqualsOnReferenceTypes
 ms.assetid: c1dfbfe3-63f9-4005-a81a-890427b77e79
 caps.latest.revision: 14
-caps.handback.revision: 14
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
----
-# CA1046&#160;: Ne pas surcharger l&#39;op&#233;rateur &#233;gal &#224; sur les types r&#233;f&#233;rence
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
+author: stevehoag
+ms.author: shoag
+manager: wpickett
+translation.priority.ht:
+- cs-cz
+- de-de
+- es-es
+- fr-fr
+- it-it
+- ja-jp
+- ko-kr
+- pl-pl
+- pt-br
+- ru-ru
+- tr-tr
+- zh-cn
+- zh-tw
+ms.translationtype: HT
+ms.sourcegitcommit: eb5c9550fd29b0e98bf63a7240737da4f13f3249
+ms.openlocfilehash: 0677ccd263ae3cd2a171eb99ef9aaf006d0dd88e
+ms.contentlocale: fr-fr
+ms.lasthandoff: 08/30/2017
 
+---
+# <a name="ca1046-do-not-overload-operator-equals-on-reference-types"></a>CA1046: Do not overload operator equals on reference types
 |||  
 |-|-|  
 |TypeName|DoNotOverloadOperatorEqualsOnReferenceTypes|  
 |CheckId|CA1046|  
-|Catégorie|Microsoft.CSharp|  
-|Modification avec rupture|Oui|  
+|Category|Microsoft.Design|  
+|Breaking Change|Breaking|  
   
-## Cause  
- Un type référence public ou public imbriqué surcharge l'opérateur d'égalité.  
+## <a name="cause"></a>Cause  
+ A public or nested public reference type overloads the equality operator.  
   
-## Description de la règle  
- Pour les types référence, l'implémentation par défaut de l'opérateur d'égalité est presque toujours correcte.  Par défaut, deux références sont égales uniquement si elles pointent sur le même objet.  
+## <a name="rule-description"></a>Rule Description  
+ For reference types, the default implementation of the equality operator is almost always correct. By default, two references are equal only if they point to the same object.  
   
-## Comment corriger les violations  
- Pour corriger une violation de cette règle, supprimez l'implémentation de l'opérateur d'égalité.  
+## <a name="how-to-fix-violations"></a>How to Fix Violations  
+ To fix a violation of this rule, remove the implementation of the equality operator.  
   
-## Quand supprimer les avertissements  
- Il est possible de supprimer sans risque un avertissement de cette règle quand le type référence se comporte comme un type valeur intégré.  Si appliquer des additions ou des soustractions à des instances du type est pertinent, il est probablement correct d'implémenter l'opérateur d'égalité et de supprimer la violation.  
+## <a name="when-to-suppress-warnings"></a>When to Suppress Warnings  
+ It is safe to suppress a warning from this rule when the reference type behaves like a built-in value type. If it is meaningful to do addition or subtraction on instances of the type, it is probably correct to implement the equality operator and suppress the violation.  
   
-## Exemple  
- L'exemple suivant montre le comportement par défaut lors de la comparaison de deux références.  
+## <a name="example"></a>Example  
+ The following example demonstrates the default behavior when comparing two references.  
   
- [!code-cs[FxCop.Design.RefTypesNoEqualityOp#1](../code-quality/codesnippet/CSharp/ca1046-do-not-overload-operator-equals-on-reference-types_1.cs)]  
+ [!code-csharp[FxCop.Design.RefTypesNoEqualityOp#1](../code-quality/codesnippet/CSharp/ca1046-do-not-overload-operator-equals-on-reference-types_1.cs)]  
   
-## Exemple  
- L'application suivante compare des références.  
+## <a name="example"></a>Example  
+ The following application compares some references.  
   
- [!code-cs[FxCop.Design.TestRefTypesNoEqualityOp#1](../code-quality/codesnippet/CSharp/ca1046-do-not-overload-operator-equals-on-reference-types_2.cs)]  
+ [!code-csharp[FxCop.Design.TestRefTypesNoEqualityOp#1](../code-quality/codesnippet/CSharp/ca1046-do-not-overload-operator-equals-on-reference-types_2.cs)]  
   
- Cet exemple génère la sortie suivante.  
+ This example produces the following output.  
   
-  **a \= nouveau \(2,2\) et b \= nouveau \(2,2\) sont égaux ?**  
- **Aucun c et a ne sont égaux ?**  
- **Oui b et a sont \=\= ?**  
- **Aucun c et a ne sont \=\= ?**  
- **Oui**   
-## Règles connexes  
- [CA1013 : Surchargez l'opérateur égal lors de la surcharge de l'opérateur d'addition et de soustraction](../code-quality/ca1013-overload-operator-equals-on-overloading-add-and-subtract.md)  
+ **a = new (2,2) and b = new (2,2) are equal? No**  
+**c and a are equal? Yes**  
+**b and a are == ? No**  
+**c and a are == ? Yes**   
+## <a name="related-rules"></a>Related Rules  
+ [CA1013: Overload operator equals on overloading add and subtract](../code-quality/ca1013-overload-operator-equals-on-overloading-add-and-subtract.md)  
   
-## Voir aussi  
+## <a name="see-also"></a>See Also  
  <xref:System.Object.Equals%2A?displayProperty=fullName>   
- [Opérateurs d'égalité](../Topic/Equality%20Operators.md)
+ [Equality Operators](/dotnet/standard/design-guidelines/equality-operators)

@@ -1,38 +1,55 @@
 ---
-title: "CA1039&#160;: Les listes sont fortement typ&#233;es | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-devops-test"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "CA1039"
-  - "ListsAreStronglyTyped"
-helpviewer_keywords: 
-  - "CA1039"
-  - "ListsAreStronglyTyped"
+title: 'CA1039: Lists are strongly typed | Microsoft Docs'
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology:
+- vs-devops-test
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords:
+- CA1039
+- ListsAreStronglyTyped
+helpviewer_keywords:
+- CA1039
+- ListsAreStronglyTyped
 ms.assetid: 5ac366c4-fd87-4d5c-95d5-f755510c8e5c
 caps.latest.revision: 15
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
-caps.handback.revision: 15
----
-# CA1039&#160;: Les listes sont fortement typ&#233;es
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
+author: stevehoag
+ms.author: shoag
+manager: wpickett
+translation.priority.ht:
+- cs-cz
+- de-de
+- es-es
+- fr-fr
+- it-it
+- ja-jp
+- ko-kr
+- pl-pl
+- pt-br
+- ru-ru
+- tr-tr
+- zh-cn
+- zh-tw
+ms.translationtype: HT
+ms.sourcegitcommit: eb5c9550fd29b0e98bf63a7240737da4f13f3249
+ms.openlocfilehash: b6063c818995f2b0c7c4d181ee3b6203f2c1f66a
+ms.contentlocale: fr-fr
+ms.lasthandoff: 08/30/2017
 
+---
+# <a name="ca1039-lists-are-strongly-typed"></a>CA1039: Lists are strongly typed
 |||  
 |-|-|  
 |TypeName|ListsAreStronglyTyped|  
 |CheckId|CA1039|  
-|Catégorie|Microsoft.CSharp|  
-|Modification avec rupture|Oui|  
+|Category|Microsoft.Design|  
+|Breaking Change|Breaking|  
   
-## Cause  
- Le type public ou protégé implémente <xref:System.Collections.IList?displayProperty=fullName> mais ne fournit aucune méthode fortement typée pour l'un ou plusieurs des éléments suivants :  
+## <a name="cause"></a>Cause  
+ The public or protected type implements <xref:System.Collections.IList?displayProperty=fullName> but does not provide a strongly typed method for one or more of the following:  
   
 -   IList.Item  
   
@@ -46,30 +63,30 @@ caps.handback.revision: 15
   
 -   IList.Remove  
   
-## Description de la règle  
- Cette règle requiert que les implémentations <xref:System.Collections.IList> fournissent des membres fortement typés afin que les utilisateurs ne soient pas tenus d'effectuer un cast d'arguments en type <xref:System.Object?displayProperty=fullName> lorsqu'ils utilisent les fonctionnalités fournies par l'interface.  L'interface <xref:System.Collections.IList> est implémentée par des collections des objets accessibles par index.  Cette règle suppose que le type qui implémente <xref:System.Collections.IList> le fasse pour gérer une collection d'instances d'un type plus fort que <xref:System.Object>.  
+## <a name="rule-description"></a>Rule Description  
+ This rule requires <xref:System.Collections.IList> implementations to provide strongly typed members so that users are not required to cast arguments to the <xref:System.Object?displayProperty=fullName> type when they use the functionality that is provided by the interface. The <xref:System.Collections.IList> interface is implemented by collections of objects that can be accessed by index. This rule assumes that the type that implements <xref:System.Collections.IList> does this to manage a collection of instances of a type that is stronger than <xref:System.Object>.  
   
- <xref:System.Collections.IList> implémente les interfaces <xref:System.Collections.ICollection?displayProperty=fullName> et <xref:System.Collections.IEnumerable?displayProperty=fullName>.  Si vous implémentez <xref:System.Collections.IList>, vous devez fournir les membres fortement typés requis pour <xref:System.Collections.ICollection>.  Si les objets de la collection étendent <xref:System.ValueType?displayProperty=fullName>, vous devez fournir un membre fortement typé pour <xref:System.Collections.IEnumerable.GetEnumerator%2A> pour éviter la baisse de performances provoquée par une opération boxing ; celle\-ci n'est pas requise si les objets de la collection constituent un type référence.  
+ <xref:System.Collections.IList> implements the <xref:System.Collections.ICollection?displayProperty=fullName> and <xref:System.Collections.IEnumerable?displayProperty=fullName> interfaces. If you implement <xref:System.Collections.IList>, you must provide the required strongly typed members for <xref:System.Collections.ICollection>. If the objects in the collection extend <xref:System.ValueType?displayProperty=fullName>, you must provide a strongly typed member for <xref:System.Collections.IEnumerable.GetEnumerator%2A> to avoid the decrease in performance that is caused by boxing; this is not required when the objects of the collection are a reference type.  
   
- Pour vous conformer à cette règle, implémentez explicitement les membres d'interface à l'aide de noms figurant dans le formulaire InterfaceName.InterfaceMemberName, tels que <xref:System.Collections.IList.Add%2A>.  Les membres d'interface explicites utilisent les types de données déclarés par l'interface.  Implémentez les membres fortement typés à l'aide du nom de membre d'interface, tel que `Add`.  Déclarez les membres fortement typés comme publics et déclarez des paramètres et des valeurs de retour de sorte qu'ils soient du type fort géré par la collection.  Les types forts remplacent les types plus faibles, tels que <xref:System.Object> et <xref:System.Array>, déclarés par l'interface.  
+ To comply with this rule, implement the interface members explicitly by using names in the form InterfaceName.InterfaceMemberName, such as <xref:System.Collections.IList.Add%2A>. The explicit interface members use the data types that are declared by the interface. Implement the strongly typed members by using the interface member name, such as `Add`. Declare the strongly typed members as public, and declare parameters and return values to be of the strong type that is managed by the collection. The strong types replace weaker types such as <xref:System.Object> and <xref:System.Array> that are declared by the interface.  
   
-## Comment corriger les violations  
- Pour résoudre une violation de cette règle, implémentez explicitement des membres <xref:System.Collections.IList> et fournissez des substituts fortement typés pour les membres notés précédemment.  Pour le code qui implémente correctement l'interface <xref:System.Collections.IList> et fournit les membres fortement typés requis, consultez l'exemple suivant.  
+## <a name="how-to-fix-violations"></a>How to Fix Violations  
+ To fix a violation of this rule, explicitly implement <xref:System.Collections.IList> members and provide strongly typed alternatives for the members that were noted previously. For code that correctly implements the <xref:System.Collections.IList> interface and provides the required strongly typed members, see the following example.  
   
-## Quand supprimer les avertissements  
- Supprimez un avertissement de cette règle lorsque vous implémentez une nouvelle collection fondée sur des objets, telle qu'une liste liée, où des types qui étendent la nouvelle collection déterminent le type fort.  Ces types doivent se conformer à cette règle et exposer des membres fortement typés.  
+## <a name="when-to-suppress-warnings"></a>When to Suppress Warnings  
+ Suppress a warning from this rule when you implement a new object-based collection, such as a linked list, where types that extend the new collection determine the strong type. These types should comply with this rule and expose strongly typed members.  
   
-## Exemple  
- Dans l'exemple suivant, le type `YourType` étend <xref:System.Collections.CollectionBase?displayProperty=fullName>, comme le doivent toutes les collections fortement typées.  Notez que <xref:System.Collections.CollectionBase> vous fournit l'implémentation explicite de l'interface <xref:System.Collections.IList>.  Par conséquent, vous devez fournir uniquement les membres fortement typés pour <xref:System.Collections.IList> et <xref:System.Collections.ICollection>.  
+## <a name="example"></a>Example  
+ In the following example, the type `YourType` extends <xref:System.Collections.CollectionBase?displayProperty=fullName>, as should all strongly typed collections. Note that <xref:System.Collections.CollectionBase> provides the explicit implementation of the <xref:System.Collections.IList> interface for you. Therefore, you must only provide the strongly typed members for <xref:System.Collections.IList> and <xref:System.Collections.ICollection>.  
   
- [!code-cs[FxCop.Design.IListStrongTypes#1](../code-quality/codesnippet/CSharp/ca1039-lists-are-strongly-typed_1.cs)]  
+ [!code-csharp[FxCop.Design.IListStrongTypes#1](../code-quality/codesnippet/CSharp/ca1039-lists-are-strongly-typed_1.cs)]  
   
-## Règles connexes  
- [CA1035 : Les implémentations ICollection possèdent des membres fortement typés](../code-quality/ca1035-icollection-implementations-have-strongly-typed-members.md)  
+## <a name="related-rules"></a>Related Rules  
+ [CA1035: ICollection implementations have strongly typed members](../code-quality/ca1035-icollection-implementations-have-strongly-typed-members.md)  
   
- [CA1038 : Les énumérateurs doivent être fortement typés](../code-quality/ca1038-enumerators-should-be-strongly-typed.md)  
+ [CA1038: Enumerators should be strongly typed](../code-quality/ca1038-enumerators-should-be-strongly-typed.md)  
   
-## Voir aussi  
+## <a name="see-also"></a>See Also  
  <xref:System.Collections.CollectionBase?displayProperty=fullName>   
  <xref:System.Collections.ICollection?displayProperty=fullName>   
  <xref:System.Collections.IEnumerable?displayProperty=fullName>   

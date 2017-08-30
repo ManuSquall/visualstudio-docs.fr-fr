@@ -1,44 +1,48 @@
 ---
-title: "Comment&#160;: r&#233;pertorier les fichiers de classeur r&#233;cemment utilis&#233;s par programmation"
-ms.custom: ""
-ms.date: "02/02/2017"
-ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "office-development"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-dev_langs: 
-  - "VB"
-  - "CSharp"
-helpviewer_keywords: 
-  - "Excel (développement Office dans Visual Studio), liste des fichiers récemment utilisés"
-  - "liste des fichiers récents, Excel"
-  - "RecentFiles (propriété)"
-  - "classeurs, répertorier les derniers utilisés"
+title: 'How to: Programmatically List Recently Used Workbook Files | Microsoft Docs'
+ms.custom: 
+ms.date: 02/02/2017
+ms.prod: visual-studio-dev14
+ms.reviewer: 
+ms.suite: 
+ms.technology:
+- office-development
+ms.tgt_pltfrm: 
+ms.topic: article
+dev_langs:
+- VB
+- CSharp
+helpviewer_keywords:
+- workbooks, listing recently used
+- RecentFiles property
+- Excel [Office development in Visual Studio], recently used files listing
+- recent file list, Excel
 ms.assetid: 210a3753-4845-4875-b34a-a30d3a1299b3
 caps.latest.revision: 42
-author: "kempb"
-ms.author: "kempb"
-manager: "ghogen"
-caps.handback.revision: 42
+author: kempb
+ms.author: kempb
+manager: ghogen
+ms.translationtype: HT
+ms.sourcegitcommit: eb5c9550fd29b0e98bf63a7240737da4f13f3249
+ms.openlocfilehash: 44ae72b875f59edee7ae73f07e5ee77d42d9869f
+ms.contentlocale: fr-fr
+ms.lasthandoff: 08/30/2017
+
 ---
-# Comment&#160;: r&#233;pertorier les fichiers de classeur r&#233;cemment utilis&#233;s par programmation
-  La propriété <xref:Microsoft.Office.Interop.Excel._Application.RecentFiles%2A> retourne une collection contenant les noms de tous les fichiers qui apparaissent dans la liste Microsoft Office Excel des fichiers récemment utilisés.  La longueur de la liste varie en fonction du nombre de fichiers que l'utilisateur a choisi de conserver.  Vous pouvez afficher les résultats dans une plage.  
+# <a name="how-to-programmatically-list-recently-used-workbook-files"></a>How to: Programmatically List Recently Used Workbook Files
+  The <xref:Microsoft.Office.Interop.Excel._Application.RecentFiles%2A> property returns a collection that contains the names of all the files that appear in the Microsoft Office Excel list of recently used files. The length of the list varies depending on the number of files the user has selected to retain. You can display the results in a range.  
   
  [!INCLUDE[appliesto_xlalldocapp](../vsto/includes/appliesto-xlalldocapp-md.md)]  
   
-### Pour répertorier les classeurs récemment utilisés dans un objet de plage  
+### <a name="to-list-recently-used-workbooks-in-a-range-object"></a>To list recently used workbooks in a range object  
   
-1.  Parcourez la liste des fichiers récents et affichez les noms dans les cellules relatives à un objet <xref:Microsoft.Office.Interop.Excel.Range>.  
+1.  Loop through the list of recent files and display the names in cells relative to a <xref:Microsoft.Office.Interop.Excel.Range> object.  
   
-     [!code-csharp[Trin_VstcoreExcelAutomationAddIn#9](../snippets/csharp/VS_Snippets_OfficeSP/Trin_VstcoreExcelAutomationAddIn/CS/ThisAddIn.cs#9)]
-     [!code-vb[Trin_VstcoreExcelAutomationAddIn#9](../snippets/visualbasic/VS_Snippets_OfficeSP/Trin_VstcoreExcelAutomationAddIn/VB/ThisAddIn.vb#9)]  
+     [!code-csharp[Trin_VstcoreExcelAutomationAddIn#9](../vsto/codesnippet/CSharp/trin_vstcoreexcelautomationaddin/ThisAddIn.cs#9)]  [!code-vb[Trin_VstcoreExcelAutomationAddIn#9](../vsto/codesnippet/VisualBasic/trin_vstcoreexcelautomationaddin/ThisAddIn.vb#9)]  
   
-## Voir aussi  
- [Utilisation des classeurs](../vsto/working-with-workbooks.md)   
- [NamedRange, contrôle](../vsto/namedrange-control.md)   
- [Paramètres optionnels dans les solutions Office](../vsto/optional-parameters-in-office-solutions.md)  
+## <a name="see-also"></a>See Also  
+ [Working with Workbooks](../vsto/working-with-workbooks.md)   
+ [NamedRange Control](../vsto/namedrange-control.md)   
+ [Optional Parameters in Office Solutions](../vsto/optional-parameters-in-office-solutions.md)  
   
   

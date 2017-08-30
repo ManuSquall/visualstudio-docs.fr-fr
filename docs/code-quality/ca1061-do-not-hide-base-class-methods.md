@@ -1,49 +1,66 @@
 ---
-title: "CA1061&#160;: Ne pas masquer les m&#233;thodes de la classe de base | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-devops-test"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "CA1061"
-  - "DoNotHideBaseClassMethods"
-helpviewer_keywords: 
-  - "CA1061"
-  - "DoNotHideBaseClassMethods"
+title: 'CA1061: Do not hide base class methods | Microsoft Docs'
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology:
+- vs-devops-test
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords:
+- CA1061
+- DoNotHideBaseClassMethods
+helpviewer_keywords:
+- DoNotHideBaseClassMethods
+- CA1061
 ms.assetid: 0bda9dc8-87b4-4038-ab9d-563298387466
 caps.latest.revision: 9
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
-caps.handback.revision: 9
----
-# CA1061&#160;: Ne pas masquer les m&#233;thodes de la classe de base
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
+author: stevehoag
+ms.author: shoag
+manager: wpickett
+translation.priority.ht:
+- cs-cz
+- de-de
+- es-es
+- fr-fr
+- it-it
+- ja-jp
+- ko-kr
+- pl-pl
+- pt-br
+- ru-ru
+- tr-tr
+- zh-cn
+- zh-tw
+ms.translationtype: HT
+ms.sourcegitcommit: eb5c9550fd29b0e98bf63a7240737da4f13f3249
+ms.openlocfilehash: b16bc49bf9206ebbbcc0b0be8397c01d6cbec6e9
+ms.contentlocale: fr-fr
+ms.lasthandoff: 08/30/2017
 
+---
+# <a name="ca1061-do-not-hide-base-class-methods"></a>CA1061: Do not hide base class methods
 |||  
 |-|-|  
 |TypeName|DoNotHideBaseClassMethods|  
 |CheckId|CA1061|  
-|Catégorie|Microsoft.CSharp|  
-|Modification avec rupture|Oui|  
+|Category|Microsoft.Design|  
+|Breaking Change|Breaking|  
   
-## Cause  
- Un type dérivé déclare une méthode avec le même nom et le même nombre de paramètres que l'une de ses méthodes de base, un ou plusieurs des paramètres est un type de base du paramètre correspondant dans la méthode de base et tous paramètres restants ont des types qui sont identiques aux paramètres correspondants dans la méthode de base.  
+## <a name="cause"></a>Cause  
+ A derived type declares a method with the same name and with the same number of parameters as one of its base methods; one or more of the parameters is a base type of the corresponding parameter in the base method; and any remaining parameters have types that are identical to the corresponding parameters in the base method.  
   
-## Description de la règle  
- Une méthode dans un type de base est masquée par une méthode portant le même nom dans un type dérivé lorsque la signature de paramètre de la méthode dérivée diffère uniquement par les types qui sont dérivés plus faiblement que les types correspondants dans la signature de paramètre de la méthode de base.  
+## <a name="rule-description"></a>Rule Description  
+ A method in a base type is hidden by an identically named method in a derived type when the parameter signature of the derived method differs only by types that are more weakly derived than the corresponding types in the parameter signature of the base method.  
   
-## Comment corriger les violations  
- Pour corriger une violation de cette règle, supprimez ou renommez la méthode, ou modifiez la signature de paramètre afin que la méthode ne masque pas la méthode de base.  
+## <a name="how-to-fix-violations"></a>How to Fix Violations  
+ To fix a violation of this rule, remove or rename the method, or change the parameter signature so that the method does not hide the base method.  
   
-## Quand supprimer les avertissements  
- Ne supprimez aucun avertissement de cette règle.  
+## <a name="when-to-suppress-warnings"></a>When to Suppress Warnings  
+ Do not suppress a warning from this rule.  
   
-## Exemple  
- L'exemple suivant présente une méthode qui enfreint la règle.  
+## <a name="example"></a>Example  
+ The following example shows a method that violates the rule.  
   
- [!code-cs[FxCop.Design.HideBaseMethod#1](../code-quality/codesnippet/CSharp/ca1061-do-not-hide-base-class-methods_1.cs)]
+ [!code-csharp[FxCop.Design.HideBaseMethod#1](../code-quality/codesnippet/CSharp/ca1061-do-not-hide-base-class-methods_1.cs)]

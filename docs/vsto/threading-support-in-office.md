@@ -1,83 +1,86 @@
 ---
-title: "Prise en charge des threads dans Office"
-ms.custom: ""
-ms.date: "02/02/2017"
-ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "office-development"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-dev_langs: 
-  - "VB"
-  - "CSharp"
-helpviewer_keywords: 
-  - "threads multiples (développement Office dans Visual Studio)"
-  - "modèles objet (développement Office dans Visual Studio), prise en charge du modèle de thread"
-  - "applications Office (développement Office dans Visual Studio), prise en charge du modèle de thread"
-  - "threads (développement Office dans Visual Studio)"
+title: Threading Support in Office | Microsoft Docs
+ms.custom: 
+ms.date: 02/02/2017
+ms.prod: visual-studio-dev14
+ms.reviewer: 
+ms.suite: 
+ms.technology:
+- office-development
+ms.tgt_pltfrm: 
+ms.topic: article
+dev_langs:
+- VB
+- CSharp
+helpviewer_keywords:
+- multiple threads [Office development in Visual Studio]
+- threading [Office development in Visual Studio]
+- Office applications [Office development in Visual Studio], threading support
+- object models [Office development in Visual Studio], threading support
 ms.assetid: 810a6648-fece-4b43-9eb6-948d28ed2157
 caps.latest.revision: 33
-author: "kempb"
-ms.author: "kempb"
-manager: "ghogen"
-caps.handback.revision: 32
+author: kempb
+ms.author: kempb
+manager: ghogen
+ms.translationtype: HT
+ms.sourcegitcommit: eb5c9550fd29b0e98bf63a7240737da4f13f3249
+ms.openlocfilehash: 10df94908366d53a01239bbd2ce9837d2b6780e6
+ms.contentlocale: fr-fr
+ms.lasthandoff: 08/30/2017
+
 ---
-# Prise en charge des threads dans Office
-  Cette rubrique fournit des informations sur la prise en charge des threads dans le modèle objet Microsoft Office.  Le modèle objet Office n'est pas thread\-safe, mais il est possible de travailler avec plusieurs threads dans une solution Office.  Les applications Office sont des serveurs COM \(Component Object Model\).  COM permet aux clients d'appeler des serveurs COM sur des threads arbitraires.  Pour les serveurs COM qui ne sont pas thread\-safe, COM fournit un mécanisme pour sérialiser les appels simultanés afin qu'un seul thread logique s'exécute sur le serveur à tout moment.  Ce mécanisme est connu sous le nom de modèle STA \(Single\-Threaded Apartment\).  Étant donné que les appels sont sérialisés, les appelants peuvent être bloqués pendant un certain temps alors que le serveur est occupé ou gère d'autres appels sur un thread d'arrière\-plan.  
+# <a name="threading-support-in-office"></a>Threading Support in Office
+  This topic provides information about how threading is supported in the Microsoft Office object model. The Office object model is not thread safe, but it is possible to work with multiple threads in an Office solution. Office applications are Component Object Model (COM) servers. COM allows clients to call COM servers on arbitrary threads. For COM servers that are not thread safe, COM provides a mechanism to serialize concurrent calls so that only one logical thread executes on the server at any time. This mechanism is known as the single-threaded apartment (STA) model. Because calls are serialized, callers might be blocked for periods of time while the server is busy or is handling other calls on a background thread.  
   
  [!INCLUDE[appliesto_all](../vsto/includes/appliesto-all-md.md)]  
   
-## Connaissances requises pour les procédures multithread  
- Pour travailler avec plusieurs threads, vous devez au moins avoir des connaissances de base sur les aspects suivants du multithreading :  
+## <a name="knowledge-required-when-using-multiple-threads"></a>Knowledge Required When Using Multiple Threads  
+ To work with multiple threads, you must have at least basic knowledge of the following aspects of multithreading:  
   
--   les API Windows ;  
+-   Windows APIs  
   
--   les concepts liés aux objets COM multithread ;  
+-   COM multithreaded concepts  
   
--   l'accès concurrentiel ;  
+-   Concurrency  
   
--   Synchronisation  
+-   Synchronization  
   
--   le marshaling.  
+-   Marshaling  
   
- Pour des informations générales sur le multithreading, consultez [Multithreading in Components](http://msdn.microsoft.com/library/2fc31e68-fb71-4544-b654-0ce720478779).  
+ For general information about multithreading, see [Managed Threading](/dotnet/standard/threading/).  
   
- Office s'exécute sur le STA principal.  Sachant ce que cela implique, il est plus facile de comprendre l'utilisation de plusieurs threads avec Office.  
+ Office runs in the main STA. Understanding the implications of this makes it possible to understand how to use multiple threads with Office.  
   
-## Scénario multithread de base  
- Le code dans les solutions Office s'exécute toujours sur le thread d'interface utilisateur principal.  Vous pouvez harmoniser les performances de l'application en exécutant une tâche séparée sur un thread d'arrière\-plan.  L'objectif est d'effectuer deux tâches apparemment en même temps au lieu d'une tâche après l'autre, ce qui devrait harmoniser leur exécution \(c'est la raison principale d'utiliser plusieurs threads\).  Par exemple, le code de l'événement peut s'exécuter sur le thread d'interface utilisateur Excel principal et, sur un thread d'arrière\-plan, vous pouvez exécuter une tâche qui rassemble les données d'un serveur et met à jour les cellules dans l'interface utilisateur Excel avec les données du serveur.  
+## <a name="basic-multithreading-scenario"></a>Basic Multithreading Scenario  
+ Code in Office solutions always runs on the main UI thread. You might want to smooth out application performance by running a separate task on a background thread. The goal is to complete two tasks seemingly at once instead of one task followed by the other, which should result in smoother execution (the main reason to use multiple threads). For example, you might have your event code on the main Excel UI thread, and on a background thread you might run a task that gathers data from a server and updates cells in the Excel UI with the data from the server.  
   
-## Threads d'arrière\-plan qui appellent le modèle objet Office  
- Lorsqu'un thread d'arrière\-plan appelle l'application Office, l'appel est marshalé automatiquement dans les limites du mode STA.  Toutefois, il n'existe aucune garantie que l'application Office puisse gérer l'appel au moment où le thread d'arrière\-plan l'émet.  Il existe plusieurs possibilités :  
+## <a name="background-threads-that-call-into-the-office-object-model"></a>Background Threads That Call into the Office Object Model  
+ When a background thread makes a call to the Office application, the call is automatically marshaled across the STA boundary. However, there is no guarantee that the Office application can handle the call at the time the background thread makes it. There are several possibilities:  
   
-1.  L'application Office doit pomper des messages pour l'appel pour avoir la possibilité de s'ouvrir.  Cela peut prendre du temps si le traitement est difficile et qu'aucun résultat n'est obtenu.  
+1.  The Office application must pump messages for the call to have the opportunity to enter. If it is doing heavy processing without yielding this could take time.  
   
-2.  Le nouveau thread ne peut pas entrer si un autre thread logique se trouve déjà dans l'apartment.  Cela arrive souvent lorsqu'un thread logique entre dans l'application Office puis émet un rappel réentrant à l'apartment de l'appelant.  L'application est bloquée dans l'attente du retour de cet appel.  
+2.  If another logical thread is already in the apartment, the new thread cannot enter. This often happens when a logical thread enters the Office application and then makes a reentrant call back to the caller's apartment. The application is blocked waiting for that call to return.  
   
-3.  Excel peut être dans l'incapacité de gérer immédiatement un appel entrant.  Par exemple, il se peut que l'application Office affiche une boîte de dialogue modale.  
+3.  Excel might be in a state such that it cannot immediately handle an incoming call. For example, the Office application might be displaying a modal dialog.  
   
- Pour les possibilités 2 et 3, COM fournit l'interface [IMessageFilter](http://msdn.microsoft.com/fr-fr/e12d48c0-5033-47a8-bdcd-e94c49857248).  Si le serveur l'implémente, tous les appels entrent via une méthode appelée [HandleIncomingCall](http://msdn.microsoft.com/fr-fr/7e31b518-ef4f-4bdd-b5c7-e1b16383a5be).  Pour la possibilité 2, les appels sont rejetés automatiquement.  Pour la possibilité 3, le serveur peut rejeter l'appel en fonction des circonstances.  Si l'appel est rejeté, l'appelant doit décider des actions suivantes.  Normalement, l'appelant implémente [IMessageFilter](http://msdn.microsoft.com/fr-fr/e12d48c0-5033-47a8-bdcd-e94c49857248), auquel cas le rejet serait notifié par la méthode [RetryRejectedCall](http://msdn.microsoft.com/fr-fr/3f800819-2a21-4e46-ad15-f9594fac1a3d).  
+ For possibilities 2 and 3, COM provides the [IMessageFilter](http://msdn.microsoft.com/en-us/e12d48c0-5033-47a8-bdcd-e94c49857248) interface. If the server implements it, all calls enter through the [HandleIncomingCall](http://msdn.microsoft.com/en-us/7e31b518-ef4f-4bdd-b5c7-e1b16383a5be) method. For possibility 2, calls are automatically rejected. For possibility 3, the server can reject the call, depending on the circumstances. If the call is rejected, the caller must decide what to do. Normally, the caller implements [IMessageFilter](http://msdn.microsoft.com/en-us/e12d48c0-5033-47a8-bdcd-e94c49857248), in which case it would be notified of the rejection by the [RetryRejectedCall](http://msdn.microsoft.com/en-us/3f800819-2a21-4e46-ad15-f9594fac1a3d) method.  
   
- Toutefois, dans le cas de solutions créées à l'aide des outils de développement Office dans Visual Studio, COM Interop convertit tous les appels rejetés en <xref:System.Runtime.InteropServices.COMException> \(« Le filtre de messages indique que l'application est occupée »\).  À chaque appel de modèle objet sur un thread d'arrière\-plan, vous devez vous attendre à gérer cette exception.  En général, vous devrez réessayer pendant un certain temps avant qu'une boîte de dialogue ne s'affiche.  Toutefois, vous pouvez également créer le thread d'arrière\-plan en tant que STA, puis enregistrer un filtre de messages pour ce thread afin de gérer cette situation.  
+ However, in the case of solutions created by using the Office development tools in Visual Studio, COM interop converts all rejected calls to a <xref:System.Runtime.InteropServices.COMException> ("The message filter indicated that the application is busy"). Whenever you make an object model call on a background thread, you must to be prepared to handle this exception. Typically, that involves retrying for a certain amount of time and then displaying a dialog. However, you can also create the background thread as STA and then register a message filter for that thread to handle this case.  
   
-## Démarrage correct du thread  
- Lorsque vous créez un nouveau thread STA, définissez l'état de cloisonnement sur STA avant de démarrer le thread.  L'exemple de code suivant montre comment procéder.  
+## <a name="starting-the-thread-correctly"></a>Starting the Thread Correctly  
+ When you create a new STA thread, set the apartment state to STA before you start the thread. The following code example demonstrates how to do this.  
   
- [!code-csharp[Trin_VstcoreCreatingExcel#5](../snippets/csharp/VS_Snippets_OfficeSP/Trin_VstcoreCreatingExcel/CS/ThisWorkbook.cs#5)]
- [!code-vb[Trin_VstcoreCreatingExcel#5](../snippets/visualbasic/VS_Snippets_OfficeSP/Trin_VstcoreCreatingExcel/VB/ThisWorkbook.vb#5)]  
+ [!code-csharp[Trin_VstcoreCreatingExcel#5](../vsto/codesnippet/CSharp/Trin_VstcoreCreatingExcelCS/ThisWorkbook.cs#5)] [!code-vb[Trin_VstcoreCreatingExcel#5](../vsto/codesnippet/VisualBasic/Trin_VstcoreCreatingExcelVB/ThisWorkbook.vb#5)]  
   
- Pour plus d’informations, consultez [Managed Threading Best Practices](http://msdn.microsoft.com/library/e51988e7-7f4b-4646-a06d-1416cee8d557).  
+ For more information, see [Managed Threading Best Practices](/dotnet/standard/threading/managed-threading-best-practices).  
   
-## Formulaires non modaux  
- Un formulaire non modal permet certain type d'interaction avec l'application pendant qu'il est affiché.  L'utilisateur interagit avec le formulaire et le formulaire interagit avec l'application sans se fermer.  Le modèle objet Office prend en charge des formulaires non modaux managés. Toutefois, ils ne peuvent pas être utilisés sur un thread d'arrière\-plan.  
+## <a name="modeless-forms"></a>Modeless Forms  
+ A modeless form allows some type of interaction with the application while the form is displayed. The user interacts with the form, and the form interacts with the application without closing. The Office object model supports managed modeless forms; however, they should not be used on a background thread.  
   
-## Voir aussi  
- [Multithreading in Components](http://msdn.microsoft.com/library/2fc31e68-fb71-4544-b654-0ce720478779)   
- [Managed Threading](http://msdn.microsoft.com/library/7b46a7d9-c6f1-46d1-a947-ae97471bba87)   
- [Threads &#40;C&#35; et Visual Basic&#41;](http://msdn.microsoft.com/library/552f6c68-dbdb-4327-ae36-32cf9063d88c)   
- [Using Threads and Threading](http://msdn.microsoft.com/library/9b5ec2cd-121b-4d49-b075-222cf26f2344)   
- [Conception et création de solutions Office](../vsto/designing-and-creating-office-solutions.md)  
+## <a name="see-also"></a>See Also  
+ [Managed Threading](/dotnet/standard/threading/)  
+ [Threading (C#)](/dotnet/csharp/programming-guide/concepts/threading/index) [Threading (Visual Basic)](/dotnet/visual-basic/programming-guide/concepts/threading/index)   
+ [Using Threads and Threading](/dotnet/standard/threading/using-threads-and-threading)   
+ [Designing and Creating Office Solutions](../vsto/designing-and-creating-office-solutions.md)  
   
   

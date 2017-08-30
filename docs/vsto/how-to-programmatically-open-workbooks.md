@@ -1,52 +1,56 @@
 ---
-title: "Comment&#160;: ouvrir des classeurs par programmation"
-ms.custom: ""
-ms.date: "02/02/2017"
-ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "office-development"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-dev_langs: 
-  - "VB"
-  - "CSharp"
-helpviewer_keywords: 
-  - "Excel (développement Office dans Visual Studio), ouvrir des classeurs"
-  - "classeurs, ouvrir"
+title: 'How to: Programmatically Open Workbooks | Microsoft Docs'
+ms.custom: 
+ms.date: 02/02/2017
+ms.prod: visual-studio-dev14
+ms.reviewer: 
+ms.suite: 
+ms.technology:
+- office-development
+ms.tgt_pltfrm: 
+ms.topic: article
+dev_langs:
+- VB
+- CSharp
+helpviewer_keywords:
+- workbooks, opening
+- Excel [Office development in Visual Studio], opening workbooks
 ms.assetid: 06c0ac87-a2c6-4cc1-87be-39be0cb81c71
 caps.latest.revision: 36
-author: "kempb"
-ms.author: "kempb"
-manager: "ghogen"
-caps.handback.revision: 36
+author: kempb
+ms.author: kempb
+manager: ghogen
+ms.translationtype: HT
+ms.sourcegitcommit: eb5c9550fd29b0e98bf63a7240737da4f13f3249
+ms.openlocfilehash: be53929363f0e984ca006e657de4940b9d075ed2
+ms.contentlocale: fr-fr
+ms.lasthandoff: 08/30/2017
+
 ---
-# Comment&#160;: ouvrir des classeurs par programmation
-  La collection <xref:Microsoft.Office.Interop.Excel.Workbooks> de Microsoft Office Excel permet d'utiliser tous les classeurs ouverts et d'ouvrir des classeurs.  
+# <a name="how-to-programmatically-open-workbooks"></a>How to: Programmatically Open Workbooks
+  The <xref:Microsoft.Office.Interop.Excel.Workbooks> collection in Microsoft Office Excel makes it possible to work with all open workbooks and to open workbooks.  
   
  [!INCLUDE[appliesto_xlalldocapp](../vsto/includes/appliesto-xlalldocapp-md.md)]  
   
-### Pour ouvrir un classeur existant  
+### <a name="to-open-an-existing-workbook"></a>To open an existing workbook  
   
-1.  Utilisez la méthode <xref:Microsoft.Office.Interop.Excel.Workbooks.Open%2A> de la collection <xref:Microsoft.Office.Interop.Excel.Workbooks>, en passant le chemin d'accès au classeur.  
+1.  Use the <xref:Microsoft.Office.Interop.Excel.Workbooks.Open%2A> method of the <xref:Microsoft.Office.Interop.Excel.Workbooks> collection, passing in the path to the workbook.  
   
-     [!code-csharp[Trin_VstcoreExcelAutomation#2](../snippets/csharp/VS_Snippets_OfficeSP/Trin_VstcoreExcelAutomation/CS/Sheet1.cs#2)]
-     [!code-vb[Trin_VstcoreExcelAutomation#2](../snippets/visualbasic/VS_Snippets_OfficeSP/Trin_VstcoreExcelAutomation/VB/Sheet1.vb#2)]  
+     [!code-csharp[Trin_VstcoreExcelAutomation#2](../vsto/codesnippet/CSharp/Trin_VstcoreExcelAutomationCS/Sheet1.cs#2)]  [!code-vb[Trin_VstcoreExcelAutomation#2](../vsto/codesnippet/VisualBasic/Trin_VstcoreExcelAutomation/Sheet1.vb#2)]  
   
-## Compilation du code  
- Cet exemple de code nécessite ce qui suit :  
+## <a name="compiling-the-code"></a>Compiling the Code  
+ This code example requires the following:  
   
--   Un classeur nommé `YourWorkbook.xls` doit résider dans un répertoire nommé `Test` sur le lecteur C.  
+-   A workbook named `YourWorkbook.xls` must exist in a directory named `Test` on drive C.  
   
-## Voir aussi  
- [Utilisation des classeurs](../vsto/working-with-workbooks.md)   
- [Comment : ouvrir des fichiers texte en tant que classeurs par programmation](../vsto/how-to-programmatically-open-text-files-as-workbooks.md)   
- [Comment : créer des classeurs par programmation](../vsto/how-to-programmatically-create-new-workbooks.md)   
- [Comment : enregistrer des classeurs par programmation](../vsto/how-to-programmatically-save-workbooks.md)   
- [Comment : fermer des classeurs par programmation](../vsto/how-to-programmatically-close-workbooks.md)   
- [Limitations de programmation des éléments hôtes et des contrôles hôtes](../vsto/programmatic-limitations-of-host-items-and-host-controls.md)   
- [Paramètres optionnels dans les solutions Office](../vsto/optional-parameters-in-office-solutions.md)   
- [Vue d'ensemble des éléments hôtes et des contrôles hôtes](../vsto/host-items-and-host-controls-overview.md)  
+## <a name="see-also"></a>See Also  
+ [Working with Workbooks](../vsto/working-with-workbooks.md)   
+ [How to: Programmatically Open Text Files as Workbooks](../vsto/how-to-programmatically-open-text-files-as-workbooks.md)   
+ [How to: Programmatically Create New Workbooks](../vsto/how-to-programmatically-create-new-workbooks.md)   
+ [How to: Programmatically Save Workbooks](../vsto/how-to-programmatically-save-workbooks.md)   
+ [How to: Programmatically Close Workbooks](../vsto/how-to-programmatically-close-workbooks.md)   
+ [Programmatic Limitations of Host Items and Host Controls](../vsto/programmatic-limitations-of-host-items-and-host-controls.md)   
+ [Optional Parameters in Office Solutions](../vsto/optional-parameters-in-office-solutions.md)   
+ [Host Items and Host Controls Overview](../vsto/host-items-and-host-controls-overview.md)  
   
   

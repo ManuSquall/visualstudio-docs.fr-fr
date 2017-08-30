@@ -1,50 +1,66 @@
 ---
-title: "CA2211&#160;: Les champs non constants ne doivent pas &#234;tre visibles | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-devops-test"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "CA2211"
-  - "NonConstantFieldsShouldNotBeVisible"
-helpviewer_keywords: 
-  - "CA2211"
-  - "NonConstantFieldsShouldNotBeVisible"
+title: 'CA2211: Non-constant fields should not be visible | Microsoft Docs'
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology:
+- vs-devops-test
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords:
+- CA2211
+- NonConstantFieldsShouldNotBeVisible
+helpviewer_keywords:
+- NonConstantFieldsShouldNotBeVisible
+- CA2211
 ms.assetid: e1e42c40-0acd-4312-af29-70133739a304
 caps.latest.revision: 13
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
-caps.handback.revision: 13
----
-# CA2211&#160;: Les champs non constants ne doivent pas &#234;tre visibles
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
+author: stevehoag
+ms.author: shoag
+manager: wpickett
+translation.priority.ht:
+- cs-cz
+- de-de
+- es-es
+- fr-fr
+- it-it
+- ja-jp
+- ko-kr
+- pl-pl
+- pt-br
+- ru-ru
+- tr-tr
+- zh-cn
+- zh-tw
+ms.translationtype: HT
+ms.sourcegitcommit: eb5c9550fd29b0e98bf63a7240737da4f13f3249
+ms.openlocfilehash: 57ba4fb986fe2cf5c81ce83e6e6b02b57aa64dd6
+ms.contentlocale: fr-fr
+ms.lasthandoff: 08/30/2017
 
+---
+# <a name="ca2211-non-constant-fields-should-not-be-visible"></a>CA2211: Non-constant fields should not be visible
 |||  
 |-|-|  
 |TypeName|NonConstantFieldsShouldNotBeVisible|  
 |CheckId|CA2211|  
-|Catégorie|Microsoft.Usage|  
-|Modification avec rupture|Oui|  
+|Category|Microsoft.Usage|  
+|Breaking Change|Breaking|  
   
-## Cause  
- Un champ statique public ou protégé n'est ni constant ni en lecture seule.  
+## <a name="cause"></a>Cause  
+ A public or protected static field is not constant nor is it read-only.  
   
-## Description de la règle  
- Les champs statiques qui ne sont ni constants ni en lecture seule ne sont pas thread\-safe.  L'accès à un tel champ doit être scrupuleusement contrôlé et requiert des techniques de programmation évoluées pour synchroniser l'accès à l'objet de classe.  Sachant que ces compétences sont difficiles à apprendre et à maîtriser, et que le test d'un tel objet pose ses propres difficultés, les champs statiques trouvent leur meilleure utilisation dans le stockage de données qui ne changent pas.  Cette règle s'applique aux bibliothèques ; les applications ne doivent exposer aucun champ.  
+## <a name="rule-description"></a>Rule Description  
+ Static fields that are neither constants nor read-only are not thread-safe. Access to such a field must be carefully controlled and requires advanced programming techniques for synchronizing access to the class object. Because these are difficult skills to learn and master, and testing such an object poses its own challenges, static fields are best used to store data that does not change. This rule applies to libraries; applications should not expose any fields.  
   
-## Comment corriger les violations  
- Pour corriger une violation de cette règle, rendez le champ statique constant ou en lecture seule.  Si ce n'est pas possible, refondez le design du type pour utiliser un mécanisme de substitution tel qu'une propriété thread\-safe qui gère l'accès thread\-safe au champ sous\-jacent.  Vous devez comprendre que des problèmes tels que le conflit de verrous et les interblocages peuvent affecter les performances et le comportement de la bibliothèque.  
+## <a name="how-to-fix-violations"></a>How to Fix Violations  
+ To fix a violation of this rule, make the static field constant or read-only. If this is not possible, redesign the type to use an alternative mechanism such as a thread-safe property that manages thread-safe access to the underlying field. Realize that issues such as lock contention and deadlocks might affect the performance and behavior of the library.  
   
-## Quand supprimer les avertissements  
- Il est possible de supprimer sans risque un avertissement de cette règle si vous développez une application, et par conséquent, disposez d'un contrôle total sur l'accès au type qui contient le champ statique.  Les concepteurs de bibliothèque ne doivent supprimer aucun avertissement de cette règle ; l'utilisation de champs statiques non constants peut rendre une utilisation correcte de la bibliothèque difficile pour les développeurs.  
+## <a name="when-to-suppress-warnings"></a>When to Suppress Warnings  
+ It is safe to suppress a warning from this rule if you are developing an application and therefore have full control over access to the type that contains the static field. Library designers should not suppress a warning from this rule; using non-constant static fields can make using the library difficult for developers to use correctly.  
   
-## Exemple  
- L'exemple suivant affiche un type qui ne respecte pas cette règle.  
+## <a name="example"></a>Example  
+ The following example shows a type that violates this rule.  
   
- [!code-vb[FxCop.Usage.AvoidStaticNonConstants#1](../code-quality/codesnippet/VisualBasic/ca2211-non-constant-fields-should-not-be-visible_1.vb)]
- [!code-cs[FxCop.Usage.AvoidStaticNonConstants#1](../code-quality/codesnippet/CSharp/ca2211-non-constant-fields-should-not-be-visible_1.cs)]
+ [!code-vb[FxCop.Usage.AvoidStaticNonConstants#1](../code-quality/codesnippet/VisualBasic/ca2211-non-constant-fields-should-not-be-visible_1.vb)] [!code-csharp[FxCop.Usage.AvoidStaticNonConstants#1](../code-quality/codesnippet/CSharp/ca2211-non-constant-fields-should-not-be-visible_1.cs)]

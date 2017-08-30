@@ -1,5 +1,5 @@
 ---
-title: "Étape 10 : écrire du code pour les boutons supplémentaires et une case à cocher | Microsoft Docs"
+title: 'Step 10: Write Code for Additional Buttons and a Check Box | Microsoft Docs'
 ms.custom: 
 ms.date: 11/04/2016
 ms.reviewer: 
@@ -28,31 +28,31 @@ translation.priority.mt:
 - pl-pl
 - pt-br
 - tr-tr
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 5db97d19b1b823388a465bba15d057b30ff0b3ce
-ms.openlocfilehash: d89b7cf0a81ed9987f8a09fb6e3139deb13f579e
+ms.translationtype: HT
+ms.sourcegitcommit: eb5c9550fd29b0e98bf63a7240737da4f13f3249
+ms.openlocfilehash: fe0fe695d94ce3b2fa6910211cf5b63fac12c625
 ms.contentlocale: fr-fr
-ms.lasthandoff: 05/19/2017
+ms.lasthandoff: 08/30/2017
 
 ---
-# <a name="step-10-write-code-for-additional-buttons-and-a-check-box"></a>Étape 10 : écrire du code pour les boutons supplémentaires et une case à cocher
-Vous êtes maintenant prêt à générer les quatre autres méthodes. Vous pourriez copier et coller ce code, mais pour tirer pleinement parti de ce didacticiel, il serait préférable que vous tapiez le code et que vous utilisiez IntelliSense.  
+# <a name="step-10-write-code-for-additional-buttons-and-a-check-box"></a>Step 10: Write Code for Additional Buttons and a Check Box
+Now you're ready to complete the other four methods. You could copy and paste this code, but if you want to learn the most from this tutorial, type the code and use IntelliSense.  
   
- Ce code ajoute des fonctionnalités aux boutons que vous avez ajoutés précédemment. Sans le code, les boutons n'ont aucun effet. Les boutons utilisent un code dans leurs événements `Click` (et la case à cocher utilise l'événement `CheckChanged`) pour effectuer différentes opérations lorsque vous activez les contrôles. Par exemple, l’événement `clearButton_Click`, qui s’active quand vous choisissez le bouton **Effacer l’image**, efface l’image actuelle en attribuant à sa propriété `Image` la valeur `null` (ou `nothing`). Chaque événement dans le code inclut des commentaires qui expliquent la fonction du code.  
+ This code adds functionality to the buttons you added earlier. Without this code, the buttons don't do anything. The buttons use code in their `Click` events (and the check box uses the `CheckChanged` event) to do different things when you activate the controls. For example, the `clearButton_Click` event, which activates when you choose the **Clear the picture** button, erases the current image by setting its `Image` property to `null` (or, `nothing`). Each event in the code includes comments that explain what the code does.  
   
- ![lien vers la vidéo](~/data-tools/media/playvideo.gif "PlayVideo")Pour obtenir une version vidéo de cette rubrique, consultez [Didacticiel 1 : Créer une visionneuse d’images en Visual Basic – Vidéo 5](http://go.microsoft.com/fwlink/?LinkId=205216) ou [Didacticiel 1 : Créer une visionneuse d’images en C# – Vidéo 5](http://go.microsoft.com/fwlink/?LinkId=205206). Ces vidéos utilisent une version antérieure de Visual Studio et présentent donc de légères différences quant à certaines commandes de menu et autres éléments d’interface utilisateur. Toutefois, les concepts et les procédures fonctionnent de façon similaire dans la version actuelle de Visual Studio.  
+ ![link to video](../data-tools/media/playvideo.gif "PlayVideo")For a video version of this topic, see [Tutorial 1: Create a Picture Viewer in Visual Basic - Video 5](http://go.microsoft.com/fwlink/?LinkId=205216) or [Tutorial 1: Create a Picture Viewer in C# - Video 5](http://go.microsoft.com/fwlink/?LinkId=205206). These videos use an earlier version of Visual Studio, so there are slight differences in some menu commands and other user interface elements. However, the concepts and procedures work similarly in the current version of Visual Studio.  
   
 > [!NOTE]
->  N'oubliez pas de toujours commenter votre code. Les commentaires sont des informations qu'une personne peut lire, et il est toujours utile de prendre un peu de temps pour détailler les objectifs de votre code. Tout le contenu d'une ligne de commentaire est ignoré par le programme. Pour insérer un commentaire, tapez deux barres obliques au début de la ligne (//) si vous écrivez en Visual C# et un guillemet simple (') si vous écrivez en Visual Basic.  
+>  As a best practice: Always comment your code. Comments are information for a person to read, and it's worth the time to make your code understandable. Everything on a comment line is ignored by the program. In Visual C#, you comment a line by typing two forward slashes at the beginning (//), and in Visual Basic you comment a line by starting with a single quotation mark (').  
   
-### <a name="to-write-code-for-additional-buttons-and-a-check-box"></a>Pour écrire du code pour des boutons supplémentaires et une case à cocher  
+### <a name="to-write-code-for-additional-buttons-and-a-check-box"></a>To write code for additional buttons and a check box  
   
--   Ajoutez le code suivant à votre fichier de code Form1 (Form1.cs ou Form1.vb). Sélectionnez l’onglet **VB** pour afficher le code Visual Basic.  
+-   Add the following code to your Form1 code file (Form1.cs or Form1.vb). Choose the **VB** tab to view Visual Basic code.  
   
-     [!code-vb[VbExpressTutorial1Step9_10#2](../ide/codesnippet/VisualBasic/step-10-write-code-for-additional-buttons-and-a-check-box_1.vb)]  [!code-cs[VbExpressTutorial1Step9_10#2](../ide/codesnippet/CSharp/step-10-write-code-for-additional-buttons-and-a-check-box_1.cs)]  
+     [!code-vb[VbExpressTutorial1Step9_10#2](../ide/codesnippet/VisualBasic/step-10-write-code-for-additional-buttons-and-a-check-box_1.vb)]  [!code-csharp[VbExpressTutorial1Step9_10#2](../ide/codesnippet/CSharp/step-10-write-code-for-additional-buttons-and-a-check-box_1.cs)]  
   
-### <a name="to-continue-or-review"></a>Pour continuer ou examiner  
+### <a name="to-continue-or-review"></a>To continue or review  
   
--   Pour passer à l’étape suivante du didacticiel, consultez [Étape 11 : exécuter votre programme et tester d’autres fonctionnalités](../ide/step-11-run-your-program-and-try-other-features.md).  
+-   To go to the next tutorial step, see [Step 11: Run Your Program and Try Other Features](../ide/step-11-run-your-program-and-try-other-features.md).  
   
--   Pour revenir à l’étape précédente du didacticiel, consultez [Étape 9 : examiner, commenter et tester votre code](../ide/step-9-review-comment-and-test-your-code.md).
+-   To return to the previous tutorial step, see [Step 9: Review, Comment, and Test Your Code](../ide/step-9-review-comment-and-test-your-code.md).

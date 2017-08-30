@@ -1,54 +1,72 @@
 ---
-title: "CA1306&#160;: D&#233;finir les param&#232;tres r&#233;gionaux pour les types de donn&#233;es | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-devops-test"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "CA1306"
-  - "SetLocaleForDataTypes"
-helpviewer_keywords: 
-  - "CA1306"
-  - "SetLocaleForDataTypes"
+title: 'CA1306: Set locale for data types | Microsoft Docs'
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology:
+- vs-devops-test
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords:
+- CA1306
+- SetLocaleForDataTypes
+helpviewer_keywords:
+- CA1306
+- SetLocaleForDataTypes
 ms.assetid: 104297b2-5806-4de0-a8d9-c589380a796c
 caps.latest.revision: 15
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
-caps.handback.revision: 15
----
-# CA1306&#160;: D&#233;finir les param&#232;tres r&#233;gionaux pour les types de donn&#233;es
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
+author: stevehoag
+ms.author: shoag
+manager: wpickett
+translation.priority.ht:
+- de-de
+- es-es
+- fr-fr
+- it-it
+- ja-jp
+- ko-kr
+- ru-ru
+- zh-cn
+- zh-tw
+translation.priority.mt:
+- cs-cz
+- pl-pl
+- pt-br
+- tr-tr
+ms.translationtype: HT
+ms.sourcegitcommit: eb5c9550fd29b0e98bf63a7240737da4f13f3249
+ms.openlocfilehash: 80905172a6a64af9056945935562f7d6b3bb778b
+ms.contentlocale: fr-fr
+ms.lasthandoff: 08/30/2017
 
+---
+# <a name="ca1306-set-locale-for-data-types"></a>CA1306: Set locale for data types
 |||  
 |-|-|  
 |TypeName|SetLocaleForDataTypes|  
 |CheckId|CA1306|  
-|Catégorie|Microsoft.Globalization|  
-|Modification avec rupture|Modification sans rupture|  
+|Category|Microsoft.Globalization|  
+|Breaking Change|Non-breaking|  
   
-## Cause  
- Une méthode ou constructeur a créé une ou plusieurs instances de <xref:System.Data.DataTable?displayProperty=fullName> ou <xref:System.Data.DataSet?displayProperty=fullName> et n'a pas défini explicitement la propriété de paramètres régionaux \(<xref:System.Data.DataTable.Locale%2A?displayProperty=fullName> ou <xref:System.Data.DataSet.Locale%2A?displayProperty=fullName>\).  
+## <a name="cause"></a>Cause  
+ A method or constructor created one or more <xref:System.Data.DataTable?displayProperty=fullName> or <xref:System.Data.DataSet?displayProperty=fullName> instances and did not explicitly set the locale property (<xref:System.Data.DataTable.Locale%2A?displayProperty=fullName> or <xref:System.Data.DataSet.Locale%2A?displayProperty=fullName>).  
   
-## Description de la règle  
- Les paramètres régionaux déterminent des éléments de présentation des données spécifiques à la culture, telles que la mise en forme utilisée pour les valeurs numériques, les symboles monétaires et l'ordre de tri.  Lorsque vous créez un <xref:System.Data.DataTable> ou un <xref:System.Data.DataSet>, vous devez définir les paramètres régionaux explicitement.  Par défaut, les paramètres régionaux de ces types sont la culture actuelle.  Pour les données stockées dans une base de données ou un fichier et partagées globalement, les paramètres régionaux devraient normalement avoir pour valeur la culture indifférente \(<xref:System.Globalization.CultureInfo.InvariantCulture%2A?displayProperty=fullName>\).  Lorsque les données sont partagées à l'échelle des différentes cultures, le recours à des paramètres régionaux par défaut peut entraîner une présentation ou une interprétation incorrecte des contenus du <xref:System.Data.DataTable> ou du <xref:System.Data.DataSet>.  
+## <a name="rule-description"></a>Rule Description  
+ The locale determines culture-specific presentation elements for data, such as formatting used for numeric values, currency symbols, and sort order. When you create a <xref:System.Data.DataTable> or <xref:System.Data.DataSet>, you should set the locale explicitly. By default, the locale for these types is the current culture. For data that is stored in a database or file and is shared globally, the locale should ordinarily be set to the invariant culture (<xref:System.Globalization.CultureInfo.InvariantCulture%2A?displayProperty=fullName>). When data is shared across cultures, using the default locale can cause the contents of the <xref:System.Data.DataTable> or <xref:System.Data.DataSet> to be presented or interpreted incorrectly.  
   
-## Comment corriger les violations  
- Pour corriger une violation de cette règle, définissez explicitement les paramètres régionaux \(via la propriété locale\) pour le <xref:System.Data.DataTable> ou le <xref:System.Data.DataSet>.  
+## <a name="how-to-fix-violations"></a>How to Fix Violations  
+ To fix a violation of this rule, explicitly set the locale for the <xref:System.Data.DataTable> or <xref:System.Data.DataSet>.  
   
-## Quand supprimer les avertissements  
- Il est possible de supprimer sans risque un avertissement de cette règle lorsque la bibliothèque ou l'application est destinée à une audience locale limitée, lorsque les données ne sont pas partagées, ou lorsque le paramétrage par défaut débouche sur le comportement désiré dans tous les scénarios pris en charge.  
+## <a name="when-to-suppress-warnings"></a>When to Suppress Warnings  
+ It is safe to suppress a warning from this rule when the library or application is for a limited local audience, the data is not shared, or the default setting yields the desired behavior in all supported scenarios.  
   
-## Exemple  
- L'exemple suivant crée deux instances de <xref:System.Data.DataTable>.  
+## <a name="example"></a>Example  
+ The following example creates two <xref:System.Data.DataTable> instances.  
   
- [!code-cs[FxCop.Globalization.DataTable#1](../code-quality/codesnippet/CSharp/ca1306-set-locale-for-data-types_1.cs)]  
+ [!code-csharp[FxCop.Globalization.DataTable#1](../code-quality/codesnippet/CSharp/ca1306-set-locale-for-data-types_1.cs)]  
   
-## Voir aussi  
+## <a name="see-also"></a>See Also  
  <xref:System.Data.DataTable?displayProperty=fullName>   
  <xref:System.Data.DataSet?displayProperty=fullName>   
  <xref:System.Globalization.CultureInfo?displayProperty=fullName>   
