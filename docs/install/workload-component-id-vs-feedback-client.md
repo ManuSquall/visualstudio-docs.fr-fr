@@ -1,11 +1,11 @@
 ---
-title: "ID de composant et de charge de travail de Visual Studio Feedback Client 2017 | Microsoft Docs"
-description: Utiliser les ID de composant et de charge de travail Visual Studio pour fournir des commentaires complets concernant Visual Studio Team Services ou Team Foundation Server
+title: Visual Studio Feedback Client 2017 workload and component IDs | Microsoft Docs
+description: Use Visual Studio workload and component IDs to provide rich feedback for Visual Studio Team Services or Team Foundation Server
 keywords: 
 author: TerryGLee
 ms.author: tglee
 manager: ghogen
-ms.date: 08/09/2017
+ms.date: 08/30/2017
 ms.topic: article
 helpviewer_keywords:
 - workload ID, Visual Studio
@@ -31,52 +31,52 @@ translation.priority.mt:
 - pl-pl
 - pt-br
 - tr-tr
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 47057e9611b824c17077b9127f8d2f8b192d6eb8
-ms.openlocfilehash: 5d9a1cd072ce56e0695240febdaff6fe6aa3f12f
+ms.translationtype: HT
+ms.sourcegitcommit: 96018963278cd1d53b226473baade41da1e98111
+ms.openlocfilehash: 9bc2b7440f61e4940b4ef0b1396724a716f34e84
 ms.contentlocale: fr-fr
-ms.lasthandoff: 05/13/2017
+ms.lasthandoff: 08/30/2017
 
 ---
 
-# <a name="visual-studio-feedback-client-2017-component-directory"></a>Répertoire de composants Visual Studio Feedback Client 2017
+# <a name="visual-studio-feedback-client-2017-component-directory"></a>Visual Studio Feedback Client 2017 component directory
 
-Les tableaux de cette page listent les ID que vous pouvez utiliser pour installer Visual Studio à l’aide de la ligne de commande. Notez que nous ajouterons des composants supplémentaires lors de la publication de mises à jour de Visual Studio.
+The tables on this page list the IDs that you can use to install Visual Studio by using the command line. Note that we will add additional components as we release updates to Visual Studio.
 
-En outre, notez ce qui suit concernant la page :
+Also note the following about the page:
 
-* Chaque charge de travail possède sa propre section, suivie de l’ID de charge de travail et d’une table des composants disponibles pour cette charge.
-* Par défaut, les composants **requis** sont installés lorsque vous installez la charge de travail. Si vous le souhaitez, vous pouvez également installer les composants **recommandés** et **facultatifs**.
-* Nous avons également ajouté une section qui répertorie les composants supplémentaires qui ne sont affiliés à aucune charge de travail.
+* Each workload has its own section, followed by the workload ID and a table of the components that are available for the workload.
+* By default, the **Required** components will be installed when you install the workload. If you choose to, you can also install the **Recommended** and **Optional** components.
+* We've also added a section that lists the additional components that are not affiliated with any workload.
 
-Pour plus d’informations sur l’utilisation de ces ID, consultez la page [Utiliser les paramètres de ligne de commande pour installer Visual Studio 2017 RC](use-command-line-parameters-to-install-visual-studio.md). Pour obtenir la liste des ID de charge de travail et de composant triés des autres produits, consultez la page [ID de composant et de charge de travail de Visual Studio 2017](workload-and-component-ids.md).
+For more information about how to use these IDs, see [Use Command-Line Parameters to Install Visual Studio 2017](use-command-line-parameters-to-install-visual-studio.md) page. And, for a list of workload and component IDs for other products, see [Visual Studio 2017 Workload and Component IDs](workload-and-component-ids.md) page.
 
 ## <a name="feedback-client"></a>Feedback Client
 
-**ID :** Microsoft.VisualStudio.Workload.FeedbackClient
+**ID:** Microsoft.VisualStudio.Workload.FeedbackClient
 
-**Description :** Feedback Client permet de fournir des commentaires détaillés sur Visual Studio Team Services ou Team Foundation Server.
+**Description:** Feedback client allows Stakeholders to provide rich feedback for Visual Studio Team Services or Team Foundation Server.
 
-### <a name="components-included-by-this-workload"></a>Composants inclus par cette charge de travail
+### <a name="components-included-by-this-workload"></a>Components included by this workload
 
-ID de composant | Nom | Version | Type de dépendance
+Component ID | Name | Version | Dependency type
 --- | --- | --- | ---
-Microsoft.VisualStudio.Component.TestTools.FeedbackClient | Microsoft Feedback Client | 15.0.26208.0 | Obligatoire
+Microsoft.VisualStudio.Component.TestTools.FeedbackClient | Microsoft Feedback Client | 15.0.26711.1 | Required
 
-## <a name="unaffiliated-components"></a>Composants non affiliés
+## <a name="unaffiliated-components"></a>Unaffiliated components
 
-Il s’agit de composants qui ne sont inclus dans aucune charge de travail, mais qui peuvent être sélectionnés de manière individuelle.
+These are components that are not included with any workload, but may be selected as an individual component.
 
-ID de composant | Nom | Version
+Component ID | Name | Version
 --- | --- | ---
-N/A | N/A | N/A
+n/a | n/a | n/a
 
 
-## <a name="see-also"></a>Voir aussi
+## <a name="see-also"></a>See also
 
-* [ID de charge de travail et de composant Visual Studio](workload-and-component-ids.md)
-* [Guide de l’administrateur Visual Studio](visual-studio-administrator-guide.md)
-* [Utiliser les paramètres de ligne de commande pour installer Visual Studio](use-command-line-parameters-to-install-visual-studio.md)
-  * [Exemples de paramètres de ligne de commande](command-line-parameter-examples.md)
-* [Créer une installation hors connexion de Visual Studio](create-an-offline-installation-of-visual-studio.md)
+* [Visual Studio workload and component IDs](workload-and-component-ids.md)
+* [Visual Studio administrator guide](visual-studio-administrator-guide.md)
+* [Use command-line parameters to install Visual Studio](use-command-line-parameters-to-install-visual-studio.md)
+  * [Command-line parameter examples](command-line-parameter-examples.md)
+* [Create an offline installation of Visual Studio](create-an-offline-installation-of-visual-studio.md)
 
