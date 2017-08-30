@@ -1,42 +1,46 @@
 ---
-title: "Comment&#160;: joindre des fichiers aux &#233;l&#233;ments de messagerie Outlook par programmation"
-ms.custom: ""
-ms.date: "02/02/2017"
-ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "office-development"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-dev_langs: 
-  - "VB"
-  - "CSharp"
-helpviewer_keywords: 
-  - "pièces jointes (développement Office dans Visual Studio)"
-  - "messagerie électronique (développement Office dans Visual Studio), pièces jointes"
-  - "éléments de messagerie (développement Office dans Visual Studio), pièces jointes"
-  - "Outlook (développement Office dans Visual Studio), pièces jointes"
+title: 'How to: Programmatically Attach Files to Outlook E-Mail Items | Microsoft Docs'
+ms.custom: 
+ms.date: 02/02/2017
+ms.prod: visual-studio-dev14
+ms.reviewer: 
+ms.suite: 
+ms.technology:
+- office-development
+ms.tgt_pltfrm: 
+ms.topic: article
+dev_langs:
+- VB
+- CSharp
+helpviewer_keywords:
+- Outlook [Office development in Visual Studio], attachments
+- e-mail [Office development in Visual Studio], attachments
+- mail items [Office development in Visual Studio], attachments
+- attachments [Office development in Visual Studio]
 ms.assetid: 9bccf6f9-3c63-4d23-8f44-f7a608a43613
 caps.latest.revision: 14
-author: "kempb"
-ms.author: "kempb"
-manager: "ghogen"
-caps.handback.revision: 14
+author: kempb
+ms.author: kempb
+manager: ghogen
+ms.translationtype: HT
+ms.sourcegitcommit: 21a413a3e2d17d77fd83d5109587a96f323a0511
+ms.openlocfilehash: 8d04f2e092e60c9c9f8d4380ceaa18c1f07ad777
+ms.contentlocale: fr-fr
+ms.lasthandoff: 08/30/2017
+
 ---
-# Comment&#160;: joindre des fichiers aux &#233;l&#233;ments de messagerie Outlook par programmation
-  Cet exemple joint un fichier à un nouvel élément de courrier et l'envoie à Armando Pinto.  L'exemple suppose qu'une personne nommée Armando Pinto existe en tant que destinataire.  
+# <a name="how-to-programmatically-attach-files-to-outlook-e-mail-items"></a>How to: Programmatically Attach Files to Outlook E-Mail Items
+  This example attaches a file to a new mail item and sends it to Armando Pinto. The example assumes a person named Armando Pinto exists as the recipient.  
   
  [!INCLUDE[appliesto_olkallapp](../vsto/includes/appliesto-olkallapp-md.md)]  
   
-## Exemple  
- [!code-csharp[Trin_Outlook_RL_AttachFiles#1](../snippets/csharp/VS_Snippets_OfficeSP/Trin_Outlook_RL_AttachFiles/CS/thisaddin.cs#1)]
- [!code-vb[Trin_Outlook_RL_AttachFiles#1](../snippets/visualbasic/VS_Snippets_OfficeSP/Trin_Outlook_RL_AttachFiles/VB/thisaddin.vb#1)]  
+## <a name="example"></a>Example  
+ [!code-cs[Trin_Outlook_RL_AttachFiles#1](../vsto/codesnippet/CSharp/Trin_Outlook_RL_AttachFiles/thisaddin.cs#1)] [!code-vb[Trin_Outlook_RL_AttachFiles#1](../vsto/codesnippet/VisualBasic/Trin_Outlook_RL_AttachFiles/thisaddin.vb#1)]  
   
-## Voir aussi  
- [Utilisation d'éléments de messagerie](../vsto/working-with-mail-items.md)   
- [Comment : envoyer un message électronique par programmation](../vsto/how-to-programmatically-send-e-mail-programmatically.md)   
- [Comment : enregistrer des pièces jointes à partir d'éléments de messagerie Outlook par programmation](../vsto/how-to-programmatically-save-attachments-from-outlook-e-mail-items.md)   
- [Comment : créer un élément de messagerie par programmation](../vsto/how-to-programmatically-create-an-e-mail-item.md)  
+## <a name="see-also"></a>See Also  
+ [Working with Mail Items](../vsto/working-with-mail-items.md)   
+ [How to: Programmatically Send E-Mail](../vsto/how-to-programmatically-send-e-mail-programmatically.md)   
+ [How to: Programmatically Save Attachments from Outlook E-Mail Items](../vsto/how-to-programmatically-save-attachments-from-outlook-e-mail-items.md)   
+ [How to: Programmatically Create an E-Mail Item](../vsto/how-to-programmatically-create-an-e-mail-item.md)  
   
   

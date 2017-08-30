@@ -1,121 +1,147 @@
 ---
-title: "Remplissage de groupes de donn&#233;es avec des donn&#233;es | Microsoft Docs"
-ms.custom: ""
-ms.date: "12/15/2016"
-ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-dev_langs: 
-  - "VB"
-  - "CSharp"
-  - "C++"
-  - "aspx"
-helpviewer_keywords: 
-  - "données (Visual Studio), groupes de données"
-  - "données (Visual Studio), récupérer"
-  - "récupération des données"
-  - "groupes de données (Visual Basic)"
-  - "groupes de données (Visual Basic), remplir"
-  - "groupes de données (Visual Basic), charger des données"
-  - "récupérer des données"
+title: Fill datasets by using TableAdapters | Microsoft Docs
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.tgt_pltfrm: 
+ms.topic: article
+dev_langs:
+- VB
+- CSharp
+helpviewer_keywords:
+- datasets [Visual Basic]
+- datasets [Visual Basic], loading data
+- data retrieval
+- retrieving data
+- datasets [Visual Basic], filling
+- data [Visual Studio], retrieving
+- data [Visual Studio], datasets
 ms.assetid: 55f3bfbe-db78-4486-add3-c62f49e6b9a0
 caps.latest.revision: 32
-caps.handback.revision: 14
-author: "mikeblome"
-ms.author: "mblome"
-manager: "ghogen"
+author: mikeblome
+ms.author: mblome
+manager: ghogen
+translation.priority.ht:
+- de-de
+- es-es
+- fr-fr
+- it-it
+- ja-jp
+- ko-kr
+- ru-ru
+- zh-cn
+- zh-tw
+translation.priority.mt:
+- cs-cz
+- pl-pl
+- pt-br
+- tr-tr
+ms.translationtype: HT
+ms.sourcegitcommit: 21a413a3e2d17d77fd83d5109587a96f323a0511
+ms.openlocfilehash: ea2911cfacd37325c89a799cd0b21e31f1efe9ad
+ms.contentlocale: fr-fr
+ms.lasthandoff: 08/30/2017
+
 ---
-# Remplissage de groupes de donn&#233;es avec des donn&#233;es
-Le TableAdapter est le mécanisme Visual Studio standard pour exécuter des requêtes Transact\-SQL et pour remplir des groupes de données.  
-  
- Vous pouvez exécuter des instructions SQL ou des procédures stockées sur une source de données à l'aide de TableAdapters ou d'objets de commande \(par exemple, <xref:System.Data.SqlClient.SqlCommand>\).  Pour charger des données dans des groupes de données créés à l'aide d'outils de conception dans [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)], utilisez des TableAdapters.  Pour charger des données dans des groupes de données créés par programmation, utilisez des adaptateurs de données.  Si votre application n'utilise pas de groupes de données, utilisez des objets de commande pour exécuter directement les instructions SQL ou les procédures stockées sur une base de données.  
-  
- Les rubriques suivantes fournissent des détails sur le remplissage de groupes de données avec des données Visual Studio :  
-  
-|Rubrique|Description|  
-|--------------|-----------------|  
-|[Comment : remplir de données un groupe de données](../data-tools/how-to-fill-a-dataset-with-data.md)|Fournit des détails sur le chargement de données dans des groupes de données à l'aide de TableAdapters et de DataAdapters.|  
-|[Comment : créer et exécuter une instruction SQL qui retourne des lignes](../Topic/How%20to:%20Create%20and%20Execute%20an%20SQL%20Statement%20that%20Returns%20Rows.md)|Fournit des détails sur la création et l'exécution d'instructions SQL qui retournent des lignes à l'aide de requêtes TableAdapter et d'objets Command.|  
-|[Comment : créer et exécuter une instruction SQL qui retourne une seule valeur](../data-tools/how-to-create-and-execute-an-sql-statement-that-returns-a-single-value.md)|Fournit des détails sur la création et l'exécution d'instructions SQL qui retournent des valeurs uniques à l'aide de requêtes TableAdapter et d'objets Command.|  
-|[Comment : créer et exécuter une instruction SQL qui ne retourne aucune valeur](../data-tools/how-to-create-and-execute-an-sql-statement-that-returns-no-value.md)|Fournit des détails sur la création et l'exécution d'instructions SQL qui ne retournent aucune valeur à l'aide de requêtes TableAdapter et d'objets Command.|  
-|[Comment : exécuter une procédure stockée qui retourne des lignes](../Topic/How%20to:%20Execute%20a%20Stored%20Procedure%20that%20Returns%20Rows.md)|Fournit des détails sur l'exécution de procédures stockées qui retournent des lignes à l'aide de requêtes TableAdapter et d'objets Command.|  
-|[Comment : exécuter une procédure stockée qui retourne une seule valeur](../data-tools/how-to-execute-a-stored-procedure-that-returns-a-single-value.md)|Fournit des détails sur l'exécution de procédures stockées qui retournent des valeurs uniques à l'aide de requêtes TableAdapter et d'objets Command.|  
-|[Comment : exécuter une procédure stockée qui ne retourne aucune valeur](../data-tools/how-to-execute-a-stored-procedure-that-returns-no-value.md)|Fournit des détails sur l'exécution de procédures stockées qui ne retournent aucune valeur à l'aide de requêtes TableAdapter et d'objets Command.|  
-|[Comment : définir et obtenir des paramètres pour des objets de commande](../Topic/How%20to:%20Set%20and%20Get%20Parameters%20for%20Command%20Objects.md)|Fournit des détails sur l'assignation de valeurs à des paramètres dans des requêtes et des procédures stockées, ainsi que sur la lecture des valeurs dans les paramètres retournés par des commandes exécutées.|  
-|[Procédure pas à pas : remplissage d'un Dataset avec des données](../Topic/Walkthrough:%20Filling%20a%20Dataset%20with%20Data.md)|Fournit des informations sur la création d'un groupe de données et son remplissage avec des données provenant d'une base de données.|  
-|[Procédure pas à pas : lecture des données XML dans un groupe de données](../data-tools/read-xml-data-into-a-dataset.md)|Fournit des détails sur la création d'une application Windows qui charge des données XML dans un groupe de données, puis affiche ce dernier dans un contrôle <xref:System.Windows.Forms.DataGridView>.|  
-  
-## Le remplissage de groupes de données  
- Si vous créez un groupe de données avec un outil de conception [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] \(tel que le [Concepteur de DataSet](../data-tools/creating-and-editing-typed-datasets.md) ou l'[Configuration de source de données \(Assistant\)](../data-tools/media/data-source-configuration-wizard.png)\), vous utilisez un TableAdapter pour le remplir.  Les TableAdapters exécutent vos instructions SQL ou vos procédures stockées.  
-  
- Si vous créez un groupe de données sans outil de conception, vous devez utiliser des adaptateurs de données pour remplir et mettre à jour les données.  \(Les TableAdapters ne sont pas des classes réelles dans le [.NET Framework 4.6 et 4.5](../Topic/.NET%20Framework%204.6%20and%204.5.md) ; ils ne sont donc pas appropriés à l'utilisation de groupes de données créés sans outils de conception.\)  Pour plus d'informations sur la façon de charger des données dans des groupes de données avec des TableAdapters ou des adaptateurs de données, consultez [Comment : remplir de données un groupe de données](../data-tools/how-to-fill-a-dataset-with-data.md).  
-  
-## Requêtes TableAdapter  
- Vous pouvez exécuter des requêtes TableAdapter pour remplir des données dans des groupes de données \(en particulier pour charger des données dans les DataTables qui composent un groupe de données\).  Vous pouvez créer des requêtes TableAdapter à l'aide de l'[Configuration de requête TableAdapter \(Assistant\)](../data-tools/editing-tableadapters.md) dans le **Concepteur de DataSet**.  Les requêtes TableAdapter apparaissent en tant que méthodes nommées sur un TableAdapter et sont exécutées en appelant la méthode TableAdapter.  Pour plus d'informations sur la création et l'exécution des requêtes TableAdapter, consultez les pages suivantes :  
-  
--   [Comment : créer et exécuter une instruction SQL qui retourne des lignes](../Topic/How%20to:%20Create%20and%20Execute%20an%20SQL%20Statement%20that%20Returns%20Rows.md)  
-  
--   [Comment : créer et exécuter une instruction SQL qui retourne une seule valeur](../data-tools/how-to-create-and-execute-an-sql-statement-that-returns-a-single-value.md)  
-  
--   [Comment : créer et exécuter une instruction SQL qui ne retourne aucune valeur](../data-tools/how-to-create-and-execute-an-sql-statement-that-returns-no-value.md)  
-  
--   [Comment : exécuter une procédure stockée qui retourne des lignes](../Topic/How%20to:%20Execute%20a%20Stored%20Procedure%20that%20Returns%20Rows.md)  
-  
--   [Comment : exécuter une procédure stockée qui retourne une seule valeur](../data-tools/how-to-execute-a-stored-procedure-that-returns-a-single-value.md)  
-  
--   [Comment : exécuter une procédure stockée qui ne retourne aucune valeur](../data-tools/how-to-execute-a-stored-procedure-that-returns-no-value.md)  
-  
-## Objets de commande  
- Les objets de commande vous permettent d'exécuter directement des instructions SQL et des procédures stockées sur une base de données, sans avoir besoin d'un <xref:System.Data.DataSet>, d'un TableAdapter ou d'un <xref:System.Data.Common.DataAdapter>.  \(Le terme *objet de commande* fait référence à la commande propre au Fournisseur de données .NET Framework que votre application utilise.  Par exemple, si votre application utilise le fournisseur de données .NET Framework pour SQL Server, l'objet de commande est <xref:System.Data.SqlClient.SqlCommand>.\)  
-  
- Pour configurer des commandes afin d'interroger des données à l'aide d'instructions SQL ou de procédures stockées, affectez à la propriété `CommandType` de la commande de données l'une des valeurs comprises dans l'énumération <xref:System.Data.IDbCommand.CommandType%2A>.  Affectez à `CommandType` la valeur <xref:System.Data.CommandType> pour exécuter des instructions SQL ou la valeur <xref:System.Data.CommandType> pour exécuter des procédures stockées.  Ensuite, affectez comme valeur à la propriété `CommandText` une instruction SQL ou le nom de la procédure stockée.  Vous pouvez maintenant exécuter la commande de données en appelant l'une de ses méthodes d'exécution \(`ExecuteReader`, `ExecuteScalar`, `ExecuteNonQuery`\).  
-  
- Chacun des [Fournisseurs de données .NET Framework](../Topic/.NET%20Framework%20Data%20Providers.md) propose un objet de commande optimisé pour les bases de données spécifiques.  
-  
- En utilisant les commandes de données, vous pouvez effectuer les opérations suivantes dans votre application :  
-  
--   Exécuter des commandes Select qui retournent directement des résultats directement lisibles plutôt que de le charger dans le groupe de données.  Pour lire les résultats, utilisez un lecteur de données \(objet <xref:System.Data.OleDb.OleDbDataReader>, <xref:System.Data.SqlClient.SqlDataReader>, <xref:System.Data.Odbc.OdbcDataReader> ou <xref:System.Data.OracleClient.OracleDataReader>\) qui fonctionne comme un curseur avant uniquement en lecture seule auquel vous pouvez lier des contrôles.  Cette stratégie est utile pour réduire la quantité de mémoire utilisée et pour charger des données en lecture seule très rapidement.  
-  
--   Exécuter des commandes du langage de définition des données \(DDL\) pour créer, modifier et supprimer des tables, des procédures stockées et d'autres structures de base de données.  \(Vous devez bien sûr avoir l'autorisation d'effectuer ces opérations\).  
-  
--   Exécuter des commandes pour obtenir des informations sur le catalogue de base de données.  
-  
--   Exécuter des commandes SQL dynamiques pour mettre à jour, insérer et supprimer des enregistrements, plutôt que de mettre à jour des tables de groupe de données et de copier ensuite les modifications dans la base de données.  
-  
--   Exécuter des commandes qui retournent une valeur scalaire \(c'est\-à\-dire une valeur unique\), telle que les résultats d'une fonction d'agrégation \(SUM, COUNT, AVG, etc.\).  
-  
--   Exécuter des commandes qui retournent des données d'une base de données SQL Server \(version 7.0 ou ultérieure\) au format XML.  Une utilisation courante consiste, par exemple, à exécuter une requête et à récupérer les données au format XML, à leur appliquer une transformation XSLT \(pour les convertir en données HTML\), puis à envoyer les résultats à un navigateur.  
-  
- Les propriétés d'une commande contiennent toutes les informations nécessaires pour exécuter cette commande sur une base de données.  Et notamment :  
-  
--   **Une connexion** La commande référence une connexion qu'elle utilise pour communiquer avec la base de données.  
-  
--   **Le nom ou le texte d'une commande** La commande contient le texte réel d'une instruction SQL ou le nom d'une procédure stockée à exécuter.  
-  
--   **Des paramètres** Une commande peut requérir que vous passiez avec elle des valeurs de paramètre \(paramètres d'entrée\).  La commande peut également retourner des valeurs sous la forme d'une valeur de retour ou de valeurs de paramètres de sortie.  Chaque commande possède une collection de paramètres que vous pouvez définir ou lire individuellement pour passer ou recevoir des valeurs.  Pour plus d'informations, consultez [Comment : définir et obtenir des paramètres pour des objets de commande](../Topic/How%20to:%20Set%20and%20Get%20Parameters%20for%20Command%20Objects.md).  
-  
- Une commande est exécutée en utilisant une méthode adaptée aux résultats que vous vous attendez à obtenir.  Si, par exemple, vous attendez des lignes, appelez la méthode `ExecuteReader` de la commande, qui retourne des enregistrements dans un lecteur de données.  Si vous exécutez une commande UPDATE, INSERT ou DELETE, appelez la méthode `ExecuteNonQuery` de la commande, qui retourne une valeur indiquant le nombre de lignes affectées.  Si vous exécutez une fonction d'agrégation, telle que le retour du nombre de commandes d'un client, vous devez appeler la méthode `ExecuteScalar`.  
-  
-### Jeux de résultats multiples  
- Une utilisation standard d'un objet de commande consiste à retourner une table de données unique \(un jeu de lignes\).  Toutefois, les commandes peuvent aussi exécuter des procédures retournant plusieurs jeux de résultats.  Cela peut se produire de différentes manières.  Par exemple, la commande peut référencer une procédure stockée retournant plusieurs jeux de résultats.  Ou encore, elle peut contenir au moins deux noms d'instruction ou de procédure stockée.  Dans ce cas, les instructions ou les procédures sont exécutées séquentiellement et elles retournent des jeux de résultats multiples à l'aide d'un seul appel.  
-  
- Si vous spécifiez plusieurs instructions ou procédures pour une commande, elles doivent toutes appartenir au même type.  Par exemple, vous pouvez exécuter plusieurs instructions SQL ou procédures stockées successives.  Toutefois, vous ne pouvez pas mélanger des appels de procédure stockée et des instructions SQL dans la même commande.  Pour plus d'informations, consultez [Extraction de données à l'aide d'un DataReader](../Topic/Retrieving%20Data%20Using%20a%20DataReader.md).  
+# <a name="fill-datasets-by-using-tableadapters"></a>Fill datasets by using TableAdapters
+A TableAdapter component  fills a dataset with data from the database, based on one or more queries or stored procedures that you specify. TableAdapters can also perform adds, updates, and deletes on the database to persist changes that you make to the dataset. You can also issue global commands that are unrelated to any specific table.  
   
 > [!NOTE]
->  Pour Oracle, le fournisseur de données .NET Framework pour Oracle ne prend pas en charge les instructions SQL par lots.  Cependant, il permet l'utilisation de plusieurs paramètres de sortie REF CURSOR pour remplir un groupe de données, chacun dans sa propre table de données.  Vous devez définir les paramètres, les marquer comme paramètres de sortie, puis indiquer qu'il s'agit de types de données REF CURSOR.  Remarquez que vous ne pouvez pas utiliser la méthode `Update` lorsque l'objet <xref:System.Data.OracleClient.OracleDataAdapter> est rempli à partir de paramètres REF CURSOR vers une procédure stockée, car Oracle ne fournit pas les informations nécessaires pour déterminer le nom de la table et des colonnes lors de l'exécution de l'instruction SQL.  
+>  TableAdapters are generated by Visual Studio designers. If you are creating datasets programmatically, then use DataAdapter, which is a .NET Framework class.  
   
-## Sécurité  
- Lorsque vous utilisez des commandes de données avec une propriété `CommandType` possédant la valeur <xref:System.Data.CommandType>, vérifiez attentivement les informations envoyées par un client avant de les passer à la base de données.  Des utilisateurs malveillants peuvent tenter d'envoyer \(injecter\) des instructions SQL modifiées ou supplémentaires afin d'accéder à la base de données ou de l'endommager.  Avant de transférer la saisie d'un utilisateur vers une base de données, vous devez toujours vérifier la validité des informations.  Il est recommandé de toujours utiliser des requêtes ou des procédures stockées paramétrées lorsque cela est possible.  
+ For detailed information about TableAdapter operations, you can skip directly to one of these topics:  
   
-## Voir aussi  
- [Vue d'ensemble d'applications de données dans Visual Studio](../data-tools/overview-of-data-applications-in-visual-studio.md)   
- [Connexion aux données dans Visual Studio](../data-tools/connecting-to-data-in-visual-studio.md)   
- [Préparation de votre application pour recevoir des données](../Topic/Preparing%20Your%20Application%20to%20Receive%20Data.md)   
- [Extraction de données dans votre application](../data-tools/fetching-data-into-your-application.md)   
- [Liaison de contrôles à des données dans Visual Studio](../data-tools/bind-controls-to-data-in-visual-studio.md)   
- [Modification des données dans votre application](../data-tools/editing-data-in-your-application.md)   
- [Validation des données](../Topic/Validating%20Data.md)   
- [Enregistrement des données](../data-tools/saving-data.md)   
- [Outils permettant d'utiliser des sources de données dans Visual Studio](../Topic/Tools%20for%20Working%20with%20Data%20Sources%20in%20Visual%20Studio.md)
+|Topic|Description|  
+|-----------|-----------------|  
+|[Create and configure TableAdapters](../data-tools/create-and-configure-tableadapters.md)|How to use the designers to create and configure TableAdapters|  
+|[Create parameterized TableAdapter queries](../data-tools/create-parameterized-tableadapter-queries.md)|How to enable users to supply arguments to TableAdapter procedures or queries|  
+|[Directly access the database with a TableAdapter](../data-tools/directly-access-the-database-with-a-tableadapter.md)|How to use the Dbdirect methods of TableAdapters|  
+|[Turn off constraints while filling a dataset](../data-tools/turn-off-constraints-while-filling-a-dataset.md)|How to work with foreign-key constraints when updating data|  
+|[How to extend the functionality of a TableAdapter](../data-tools/fill-datasets-by-using-tableadapters.md)|How to add custom code to TableAdapters|  
+|[Read XML data into a dataset](../data-tools/read-xml-data-into-a-dataset.md)|How to work with XML|  
+  
+<a name="tableadapter-overview"></a>  
+  
+## <a name="tableadapter-overview"></a>TableAdapter overview  
+ TableAdapters are designer-generated components that connect to a database, run queries or stored procedures, and fill their DataTable with the returned data. TableAdapters  also  send updated data from your application back to the database. You can run as many queries as you want on a TableAdapter as long as they return data that conforms to the schema of the table with which the TableAdapter is associated. The following diagram shows how TableAdapters interact with databases and other objects in memory:  
+  
+ ![Data flow in a client application](../data-tools/media/clientdatadiagram.gif "ClientDataDiagram")  
+  
+ While TableAdapters are designed with the **Dataset Designer**, the TableAdapter classes are not generated as nested classes of  <xref:System.Data.DataSet>. They are located in separate namespaces that are specific to each dataset. For example, if you have a dataset named `NorthwindDataSet`, the TableAdapters that are associated with  <xref:System.Data.DataTable>s in the `NorthwindDataSet` would be in the `NorthwindDataSetTableAdapters` namespace. To access a particular TableAdapter programmatically, you must declare a new instance of the TableAdapter. For example:  
+  
+ [!code-cs[VbRaddataTableAdapters#7](../data-tools/codesnippet/CSharp/fill-datasets-by-using-tableadapters_1.cs)] [!code-vb[VbRaddataTableAdapters#7](../data-tools/codesnippet/VisualBasic/fill-datasets-by-using-tableadapters_1.vb)]  
+  
+## <a name="associated-datatable-schema"></a>Associated DataTable schema  
+ When you create a TableAdapter, you use the initial query or stored procedure  to define the schema of the TableAdapter's associated <xref:System.Data.DataTable>. You run this initial query or stored procedure by calling the TableAdapter's `Fill` method (which fills the TableAdapter's associated <xref:System.Data.DataTable>). Any changes that are made to the TableAdapter's main query are reflected in the schema of the associated data table. For example, removing a column from the main query also removes the column from the associated data table. If any additional queries on the TableAdapter use SQL statements that return columns that are not in the main query,  the designer attempts to synchronize the column changes between the main query and the additional queries. 
+  
+## <a name="tableadapter-update-commands"></a>TableAdapter update commands  
+ The update functionality of a TableAdapter is dependent on how much information is available in the main query  in the TableAdapter Wizard. For example, TableAdapters that are configured to fetch values from multiple tables (JOINs), scalar values, views, or the results of aggregate functions are not initially created with the ability to send updates back to the underlying database. However, you can configure the INSERT, UPDATE, and DELETE commands manually in the **Properties** window.  
+  
+## <a name="tableadapter-queries"></a>TableAdapter queries  
+ ![TableAdapter with multiple queries](../data-tools/media/tableadapter.gif "TableAdapter")  
+  
+ TableAdapters can contain multiple queries to fill their associated data tables. You can define as many queries for a TableAdapter as your application requires, as long as each query returns data that conforms to the same schema as its associated data table. This capability enable a TableAdapter to load different results based on differing criteria.  
+  
+ For example, if your application contains a table with customer names, you can create a query that fills the table with every customer name that begins with a certain letter, and another  that fills the table with all customers that are located in the same state. To fill a `Customers` table with customers in a given state, you can create a `FillByState` query that takes a parameter for the state value as follows: `SELECT * FROM Customers WHERE State = @State`. You run the query by calling the `FillByState` method and passing in the parameter value like this: `CustomerTableAdapter.FillByState("WA")`.  
+  
+ In addition to adding queries that return data of the same schema as the TableAdapter's data table, you can add queries that return scalar (single) values. For example,  a query that returns a count of customers (`SELECT Count(*) From Customers`) is valid for a `CustomersTableAdapter,` even though the data that's returned doesn't conform to the table's schema.  
+  
+## <a name="clearbeforefill-property"></a>ClearBeforeFill property  
+ By default, every time you run a query to fill a TableAdapter's data table, the existing data is cleared, and only the results of the query are loaded into the table. Set the TableAdapter's `ClearBeforeFill` property to `false` if you want to add or merge the data that's returned from a query to the existing data in a data table. Regardless of whether you clear the data, you need to explicitly send updates back to the database, if you want to persist them. So remember to save any changes  to the data in the table before running another query that fills the table. For more information, see [Update data by using a TableAdapter](../data-tools/update-data-by-using-a-tableadapter.md).  
+  
+## <a name="tableadapter-inheritance"></a>TableAdapter inheritance  
+ TableAdapters extend the functionality of standard data adapters by encapsulating a configured <xref:System.Data.Common.DataAdapter> class?qualifyHint=False&autoUpgrade=True. By default, the TableAdapter inherits from the <xref:System.ComponentModel.Component> class and can't be cast to the <xref:System.Data.Common.DataAdapter> class. Casting a TableAdapter to the <xref:System.Data.Common.DataAdapter> class results in a <xref:System.InvalidCastException> error?qualifyHint=False&autoUpgrade=True. To change the base class of a TableAdapter, you can type a class that derives from <xref:System.ComponentModel.Component> in the **Base Class** property of the TableAdapter in the **Dataset Designer**.  
+  
+## <a name="tableadapter-methods-and-properties"></a>TableAdapter methods and properties  
+ The TableAdapter class is not part of the [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)]. This means you can't look it up in the documentation or the **Object Browser**. It's created at design time when you use one of the wizards mentioned earlier. The name that's assigned to a TableAdapter when you create it is based on the name of the table you are working with. For example, when you create a TableAdapter based on a table in a database named `Orders`, the TableAdapter is named `OrdersTableAdapter`. The class name of the TableAdapter can be changed using the **Name** property in the **Dataset Designer**.  
+  
+ Following are the commonly used methods and properties of TableAdapters:  
+  
+|Member|Description|  
+|------------|-----------------|  
+|`TableAdapter.Fill`|Populates the TableAdapter's associated data table with the results of the TableAdapter's SELECT command.|  
+|`TableAdapter.Update`|Sends changes back to the database and returns an integer that represents the number of rows affected by the update. For more information, see [Update data by using a TableAdapter](../data-tools/update-data-by-using-a-tableadapter.md).|  
+|`TableAdapter.GetData`|Returns a new <xref:System.Data.DataTable> that's filled with data.|  
+|`TableAdapter.Insert`|Creates a new row in the data table. For more information, see [Insert new records into a database](../data-tools/insert-new-records-into-a-database.md).|  
+|`TableAdapter.ClearBeforeFill`|Determines whether a data table is emptied before you call one of the `Fill` methods.|  
+  
+## <a name="tableadapter-update-method"></a>TableAdapter update method  
+ TableAdapters use data commands to read to and write from the database. The TableAdapter's initial `Fill` (main) query is used as the basis for creating the schema of the associated data table, as well as the `InsertCommand`, `UpdateCommand`, and `DeleteCommand` commands that are associated with the `TableAdapter.Update` method. Calling a TableAdapter's `Update` method runs the statements that were created when the TableAdapter was originally configured,  not one of the additional queries that was added with the **TableAdapter Query Configuration Wizard**.  
+  
+ When you use a TableAdapter, it effectively performs the same operations with the commands that you typically would perform. For example, when you call the adapter's `Fill` method, the adapter runs the data command in its `SelectCommand` property and uses a data reader (for example, <xref:System.Data.SqlClient.SqlDataReader>) to load the result set into the data table. Similarly, when you call the adapter's `Update` method, it runs the appropriate command (in the `UpdateCommand`, `InsertCommand`, and `DeleteCommand` properties) for each changed record in the data table.  
+  
+> [!NOTE]
+>  If there is enough information in the main query, the `InsertCommand`, `UpdateCommand`, and `DeleteCommand` commands are created by default when the TableAdapter is generated. If the TableAdapter's main query is more than a single table SELECT statement, it's possible the designer won't be able to generate  `InsertCommand`, `UpdateCommand`, and `DeleteCommand`. If these commands are not generated, you might receive an error when running the `TableAdapter.Update` method.  
+  
+## <a name="tableadapter-generatedbdirectmethods"></a>TableAdapter GenerateDbDirectMethods  
+ In addition to  `InsertCommand`, `UpdateCommand`, and `DeleteCommand`, TableAdapters are created with methods that can be run directly against the database. These methods (`TableAdapter.Insert`, `TableAdapter.Update`, and `TableAdapter.Delete`) can be called directly to manipulate data in the database. This means you can call these individual methods from your code instead of calling `TableAdapter.Update` to handle the inserts, updates, and deletes that are pending for the associated data table.  
+  
+ If you don't want to create these direct methods, set the TableAdapter's **GenerateDbDirectMethods** property to `false` (in the **Properties** window). Additional queries that are added to the TableAdapter are standalone queries — they don't generate these methods.  
+  
+## <a name="tableadapter-support-for-nullable-types"></a>TableAdapter support for nullable types  
+ TableAdapters support nullable types `Nullable(Of T)` and `T?`. For more information about nullable types in Visual Basic, see [Nullable Value Types](/dotnet/visual-basic/programming-guide/language-features/data-types/nullable-value-types.md). For more information about nullable types in C#, see [Using Nullable Types](/dotnet/csharp/programming-guide/nullable-types/using-nullable-types).  
+  
+<a name="tableadaptermanager-reference"></a>  
+  
+## <a name="tableadaptermanager-reference"></a>TableAdapterManager reference  
+ By default, a `TableAdapterManager` class is generated when you create a dataset that contains related tables. To prevent the class from being generated, change the value of the `Hierarchical Update` property of the dataset to false. When you drag a table that has a relation onto the design surface of a Windows Form or WPF page, Visual Studio declares a member variable of the class. If you don't use databinding, you have to manually declare the variable.  
+  
+ The `TableAdapterManager` class is not part of the [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)]. Therefore, you cannot look it up in the documentation. It is created at design time as part of the dataset creation process.  
+  
+ The following are the frequently used methods and properties of the `TableAdapterManager` class:  
+  
+|Member|Description|  
+|------------|-----------------|  
+|`UpdateAll` method|Saves all data from all data tables.|  
+|`BackUpDataSetBeforeUpdate` property|Determines whether to create a backup copy of the dataset before executing the `TableAdapterManager.UpdateAll` method.Boolean.|  
+|*tableName* `TableAdapter` property|Represents a `TableAdapter`. The generated `TableAdapterManager` contains a property for each `TableAdapter` it manages. For example, a dataset with a Customers and Orders table is generated with a `TableAdapterManager` that contains `CustomersTableAdapter` and `OrdersTableAdapter` properties.|  
+|`UpdateOrder` property|Controls the order of the individual insert, update, and delete commands. Set this to one of the values in the `TableAdapterManager.UpdateOrderOption` enumeration.<br /><br /> By default, the `UpdateOrder` is set to **InsertUpdateDelete**. This means that inserts, then updates, and then deletes are performed for all tables in the dataset.|  
+  
+
+
+## <a name="security"></a>Security  
+ When you use data commands with a `CommandType` property set to <xref:System.Data.CommandType>, carefully check information that is sent from a client before passing it to your database. Malicious users might try to send (inject) modified or additional SQL statements in an effort to gain unauthorized access or damage the database. Before you transfer user input to a database, always verify that the information is valid. A best practice is to always use parameterized queries or stored procedures when possible.  
+  
+## <a name="see-also"></a>See Also  
+ [Dataset tools in Visual Studio](../data-tools/dataset-tools-in-visual-studio.md)

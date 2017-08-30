@@ -1,65 +1,79 @@
 ---
-title: "Comment&#160;: afficher des donn&#233;es connexes dans des applications WPF | Microsoft Docs"
-ms.custom: ""
-ms.date: "09/21/2016"
-ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-dev_langs: 
-  - "VB"
-  - "CSharp"
-  - "C++"
-  - "aspx"
-helpviewer_keywords: 
-  - "données (WPF), afficher"
-  - "liaison de données, WPF"
-  - "afficher les données, WPF"
-  - "WPF (WPF), données"
-  - "liaison de données WPF (Visual Studio)"
-  - "concepteur WPF, liaison de données"
-  - "WPF, liaison de données dans Visual Studio"
+title: Display related data in WPF applications | Microsoft Docs
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.tgt_pltfrm: 
+ms.topic: article
+helpviewer_keywords:
+- data [WPF], displaying
+- WPF, data binding in Visual Studio
+- WPF data binding [Visual Studio]
+- displaying data, WPF
+- WPF [WPF], data
+- WPF Designer, data binding
+- data binding, WPF
 ms.assetid: 3aa80194-0191-474d-9d28-5ec05654b426
 caps.latest.revision: 16
-caps.handback.revision: 13
-author: "mikeblome"
-ms.author: "mblome"
-manager: "ghogen"
+author: mikeblome
+ms.author: mblome
+manager: ghogen
+translation.priority.ht:
+- de-de
+- es-es
+- fr-fr
+- it-it
+- ja-jp
+- ko-kr
+- ru-ru
+- zh-cn
+- zh-tw
+translation.priority.mt:
+- cs-cz
+- pl-pl
+- pt-br
+- tr-tr
+ms.translationtype: HT
+ms.sourcegitcommit: 21a413a3e2d17d77fd83d5109587a96f323a0511
+ms.openlocfilehash: b28319fe2bdc885c660ac8e26b1edbc83a1118fa
+ms.contentlocale: fr-fr
+ms.lasthandoff: 08/30/2017
+
 ---
-# Comment&#160;: afficher des donn&#233;es connexes dans des applications WPF
-Dans certaines applications, vous pouvez utiliser des données qui viennent de plusieurs tables ou entités mises en rapport les unes avec les autres dans une relation parent\-enfant.  Par exemple, vous pouvez afficher une grille qui montre les clients d'une table `Customers`.  Lorsque l'utilisateur sélectionne un client spécifique, une autre grille affiche les commandes pour ce client à partir d'une table `Orders` connexe.  
+# <a name="display-related-data-in-wpf-applications"></a>Display related data in WPF applications
+In some applications, you might want to work with data that comes from multiple tables or entities that are related to each other in a parent-child relationship. For example, you might want to display a grid that displays customers from a `Customers` table. When the user selects a specific customer, another grid displays the orders for that customer from a related `Orders` table.  
   
- Vous pouvez créer des contrôles liés aux données qui affichent les données connexes en faisant glisser des éléments de la fenêtre **Sources de données** vers le Concepteur WPF.  
+ You can create data-bound controls that display related data by dragging items from the **Data Sources** window to the WPF Designer.  
   
-### Pour créer des contrôles qui affichent des enregistrements connexes  
+## <a name="to-create-controls-that-display-related-records"></a>To create controls that display related records  
   
-1.  Dans le menu **Données**, cliquez sur **Afficher les sources de données** pour ouvrir la fenêtre **Sources de données**.  
+1.  On the **Data** menu, click **Show Data Sources** to open the **Data Sources** window.  
   
-2.  Cliquez sur **Ajouter une nouvelle source de données**, puis exécutez l'**Assistant Configuration de source de données**.  
+2.  Click **Add New Data Source**, and complete the **Data Source Configuration** wizard.  
   
-3.  Ouvrez le Concepteur WPF et assurez\-vous qu'il inclut un conteneur étant une cible de déplacement valide pour les éléments de la fenêtre **Sources de données**.  
+3.  Open the WPF designer, and make sure that the designer contains a container that is a valid drop target for the items in the **Data Sources** window.  
   
-     Pour plus d'informations sur les cibles de déplacement valides, consultez [Liaison de contrôles WPF avec des données dans Visual Studio](../data-tools/bind-wpf-controls-to-data-in-visual-studio1.md).  
+     For more information about valid drop targets, see [Bind WPF controls to data in Visual Studio](../data-tools/bind-wpf-controls-to-data-in-visual-studio.md).  
   
-4.  Dans la fenêtre **Sources de données**, développez le nœud qui représente la table ou l'objet parent dans la relation.  La table ou l'objet parent représente la partie « un » d'une relation un\-à\-plusieurs.  
+4.  In the **Data Sources** window, expand the node that represents the parent table or object in the relationship. The parent table or object is on the "one" side of a one-to-many relationship.  
   
-5.  Faites glisser le nœud parent \(ou les éléments un par un dans le nœud parent\) de la fenêtre **Sources de données** vers une cible valide de déplacement dans le concepteur.  
+5.  Drag the parent node (or any individual items in the parent node) from the **Data Sources** window onto a valid drop target in the designer.  
   
-     Visual Studio génère du code XAML qui crée des contrôles liés aux données pour chaque élément que vous faites glisser.  Le code XAML ajoute également une nouvelle <xref:System.Windows.Data.CollectionViewSource> pour la table ou l'objet parent aux ressources de la cible de déplacement.  Pour certaines sources de données, Visual Studio génère également du code permettant de charger les données dans la table ou l'objet parent.  Pour plus d'informations, consultez [Liaison de contrôles WPF avec des données dans Visual Studio](../data-tools/bind-wpf-controls-to-data-in-visual-studio1.md).  
+     Visual Studio generates XAML that creates new data-bound controls for each item that you drag. The XAML also adds a new <xref:System.Windows.Data.CollectionViewSource> for the parent table or object to the resources of the drop target. For some data sources, Visual Studio also generates code to load the data into the parent table or object. For more information, see [Bind WPF controls to data in Visual Studio](../data-tools/bind-wpf-controls-to-data-in-visual-studio.md).  
   
-6.  Dans la fenêtre **Sources de données**, localisez la table ou l'objet enfant connexe.  Les tables et objets enfants connexes apparaissent sous forme de nœuds extensibles en bas de la liste des colonnes du nœud parent.  
+6.  In the **Data Sources** window, locate the related child table or object. Related child tables and objects appear as expandable nodes at the bottom of the parent node's list of data.  
   
-7.  Faites glisser le nœud enfant \(ou les éléments un par un dans le nœud enfant\) de la fenêtre **Sources de données** vers une cible valide de déplacement dans le concepteur.  
+7.  Drag the child node (or any individual items in the child node) from the **Data Sources** window onto a valid drop target in the designer.  
   
-     Visual Studio génère du code XAML qui crée des contrôles liés aux données pour chaque élément que vous faites glisser.  Le code XAML ajoute également une nouvelle <xref:System.Windows.Data.CollectionViewSource> pour la table ou l'objet enfant aux ressources de la cible de déplacement.  Cette nouvelle <xref:System.Windows.Data.CollectionViewSource> est liée à la propriété de la table ou de l'objet parent que vous venez de faire glisser vers le concepteur.  Pour certaines sources de données, Visual Studio génère également du code permettant de charger les données dans la table ou l'objet enfant.  
+     Visual Studio generates XAML that creates new data-bound controls for each of the items you drag. The XAML also adds a new <xref:System.Windows.Data.CollectionViewSource> for the child table or object to the resources of the drop target. This new <xref:System.Windows.Data.CollectionViewSource> is bound to the property of the parent table or object that you just dragged to the designer. For some data sources, Visual Studio also generates code to load the data into the child table or object.  
   
-     L'illustration suivante montre la table **Orders** connexe de la table **Customers** dans un groupe de données \(dataset\) dans la fenêtre **Sources de données**.  
+     The following figure demonstrates the related **Orders** table of the **Customers** table in a dataset in the **Data Sources** window.  
   
-     ![Fenêtre Sources de données montrant des relations](~/data-tools/media/datasources2.gif "DataSources2")  
+     ![Data Sources Window showing relation](../data-tools/media/datasources2.gif "DataSources2")  
   
-## Voir aussi  
- [Liaison de contrôles WPF avec des données dans Visual Studio](../data-tools/bind-wpf-controls-to-data-in-visual-studio1.md)   
- [Comment : lier des contrôles WPF à des données dans Visual Studio](../data-tools/bind-wpf-controls-to-data-in-visual-studio2.md)   
- [Comment : créer des tables de correspondance dans des applications WPF](../data-tools/create-lookup-tables-in-wpf-applications.md)   
- [Procédure pas à pas : affichage de données connexes dans une application WPF](../data-tools/walkthrough-displaying-related-data-in-a-wpf-application.md)
+## <a name="see-also"></a>See Also  
+ [Bind WPF controls to data in Visual Studio](../data-tools/bind-wpf-controls-to-data-in-visual-studio.md)   
+ [Bind WPF controls to data in Visual Studio](../data-tools/bind-wpf-controls-to-data-in-visual-studio.md)   
+ [Create lookup tables in WPF applications](../data-tools/create-lookup-tables-in-wpf-applications.md)   
+ [Walkthrough: Displaying Related Data in a WPF Application](../data-tools/display-related-data-in-wpf-applications.md)

@@ -1,66 +1,67 @@
 ---
-title: "Comment&#160;: ex&#233;cuter des calculs Excel par programmation"
-ms.custom: ""
-ms.date: "02/02/2017"
-ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "office-development"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-dev_langs: 
-  - "VB"
-  - "CSharp"
-helpviewer_keywords: 
-  - "calculs, exécuter dans Excel"
-  - "Excel (développement Office dans Visual Studio), exécuter des calculs par programmation"
-  - "plages, exécuter des calculs"
-  - "classeurs, exécuter des calculs"
+title: 'How to: Programmatically Run Excel Calculations | Microsoft Docs'
+ms.custom: 
+ms.date: 02/02/2017
+ms.prod: visual-studio-dev14
+ms.reviewer: 
+ms.suite: 
+ms.technology:
+- office-development
+ms.tgt_pltfrm: 
+ms.topic: article
+dev_langs:
+- VB
+- CSharp
+helpviewer_keywords:
+- ranges, running calculations
+- calculations, running in Excel
+- Excel [Office development in Visual Studio], running calculations programmatically
+- workbooks, running calculations
 ms.assetid: 0bf30d93-8620-43ad-bfb8-f45bf3b5461f
 caps.latest.revision: 38
-author: "kempb"
-ms.author: "kempb"
-manager: "ghogen"
-caps.handback.revision: 38
+author: kempb
+ms.author: kempb
+manager: ghogen
+ms.translationtype: HT
+ms.sourcegitcommit: 21a413a3e2d17d77fd83d5109587a96f323a0511
+ms.openlocfilehash: 5fc097b5f6036c6797bf3401923cdba27dc714f3
+ms.contentlocale: fr-fr
+ms.lasthandoff: 08/30/2017
+
 ---
-# Comment&#160;: ex&#233;cuter des calculs Excel par programmation
-  Vous utilisez un processus semblable pour exécuter des calculs dans un contrôle <xref:Microsoft.Office.Tools.Excel.NamedRange> ou un objet de plage Excel natif.  
+# <a name="how-to-programmatically-run-excel-calculations"></a>How to: Programmatically Run Excel Calculations  
+  You use a similar process to run calculations in a <xref:Microsoft.Office.Tools.Excel.NamedRange> control or a native Excel range object.  
   
  [!INCLUDE[appliesto_xlalldocapp](../vsto/includes/appliesto-xlalldocapp-md.md)]  
   
-## Exécution de calculs dans un contrôle NamedRange  
- L'exemple suivant crée un <xref:Microsoft.Office.Tools.Excel.NamedRange> à la cellule A1, puis calcule cette cellule.  Ce code doit être placé dans une classe sheet et non dans la classe `ThisWorkbook`.  
+## <a name="running-calculations-in-a-namedrange-control"></a>Running Calculations in a NamedRange Control  
+ The following example creates a <xref:Microsoft.Office.Tools.Excel.NamedRange> at cell A1 and then calculates the cell. This code must be placed in a sheet class, not in the `ThisWorkbook` class.  
   
-#### Pour exécuter des calculs dans un contrôle NamedRange  
+#### <a name="to-run-calculations-in-a-namedrange-control"></a>To run calculations in a NamedRange control  
   
-1.  Créez la plage nommée.  
+1.  Create the named range.  
   
-     [!code-csharp[Trin_VstcoreExcelAutomation#75](../snippets/csharp/VS_Snippets_OfficeSP/Trin_VstcoreExcelAutomation/CS/Sheet1.cs#75)]
-     [!code-vb[Trin_VstcoreExcelAutomation#75](../snippets/visualbasic/VS_Snippets_OfficeSP/Trin_VstcoreExcelAutomation/VB/Sheet1.vb#75)]  
+     [!code-cs[Trin_VstcoreExcelAutomation#75](../vsto/codesnippet/CSharp/Trin_VstcoreExcelAutomationCS/Sheet1.cs#75)]  [!code-vb[Trin_VstcoreExcelAutomation#75](../vsto/codesnippet/VisualBasic/Trin_VstcoreExcelAutomation/Sheet1.vb#75)]  
   
-2.  Appelez la méthode <xref:Microsoft.Office.Tools.Excel.NamedRange.Calculate%2A> de la plage spécifiée.  
+2.  Call the <xref:Microsoft.Office.Tools.Excel.NamedRange.Calculate%2A> method of the specified range.  
   
-     [!code-csharp[Trin_VstcoreExcelAutomation#76](../snippets/csharp/VS_Snippets_OfficeSP/Trin_VstcoreExcelAutomation/CS/Sheet1.cs#76)]
-     [!code-vb[Trin_VstcoreExcelAutomation#76](../snippets/visualbasic/VS_Snippets_OfficeSP/Trin_VstcoreExcelAutomation/VB/Sheet1.vb#76)]  
+     [!code-cs[Trin_VstcoreExcelAutomation#76](../vsto/codesnippet/CSharp/Trin_VstcoreExcelAutomationCS/Sheet1.cs#76)]  [!code-vb[Trin_VstcoreExcelAutomation#76](../vsto/codesnippet/VisualBasic/Trin_VstcoreExcelAutomation/Sheet1.vb#76)]  
   
-## Exécution de calculs dans une plage Excel native  
+## <a name="running-calculations-in-a-native-excel-range"></a>Running Calculations in a Native Excel Range  
   
-#### Pour exécuter des calculs dans une plage Excel native  
+#### <a name="to-run-calculations-in-a-native-excel-range"></a>To run calculations in a native Excel Range  
   
-1.  Créez la plage nommée.  
+1.  Create the named range.  
   
-     [!code-csharp[Trin_VstcoreExcelAutomationAddIn#30](../snippets/csharp/VS_Snippets_OfficeSP/Trin_VstcoreExcelAutomationAddIn/CS/ThisAddIn.cs#30)]
-     [!code-vb[Trin_VstcoreExcelAutomationAddIn#30](../snippets/visualbasic/VS_Snippets_OfficeSP/Trin_VstcoreExcelAutomationAddIn/VB/ThisAddIn.vb#30)]  
+     [!code-cs[Trin_VstcoreExcelAutomationAddIn#30](../vsto/codesnippet/CSharp/trin_vstcoreexcelautomationaddin/ThisAddIn.cs#30)]  [!code-vb[Trin_VstcoreExcelAutomationAddIn#30](../vsto/codesnippet/VisualBasic/trin_vstcoreexcelautomationaddin/ThisAddIn.vb#30)]  
   
-2.  Appelez la méthode <xref:Microsoft.Office.Interop.Excel.Range.Calculate%2A> de la plage spécifiée.  
+2.  Call the <xref:Microsoft.Office.Interop.Excel.Range.Calculate%2A> method of the specified range.  
   
-     [!code-csharp[Trin_VstcoreExcelAutomationAddIn#31](../snippets/csharp/VS_Snippets_OfficeSP/Trin_VstcoreExcelAutomationAddIn/CS/ThisAddIn.cs#31)]
-     [!code-vb[Trin_VstcoreExcelAutomationAddIn#31](../snippets/visualbasic/VS_Snippets_OfficeSP/Trin_VstcoreExcelAutomationAddIn/VB/ThisAddIn.vb#31)]  
+     [!code-cs[Trin_VstcoreExcelAutomationAddIn#31](../vsto/codesnippet/CSharp/trin_vstcoreexcelautomationaddin/ThisAddIn.cs#31)]  [!code-vb[Trin_VstcoreExcelAutomationAddIn#31](../vsto/codesnippet/VisualBasic/trin_vstcoreexcelautomationaddin/ThisAddIn.vb#31)]  
   
-## Voir aussi  
- [Utilisation des plages](../vsto/working-with-ranges.md)   
- [NamedRange, contrôle](../vsto/namedrange-control.md)   
- [Paramètres optionnels dans les solutions Office](../vsto/optional-parameters-in-office-solutions.md)  
+## <a name="see-also"></a>See Also  
+ [Working with Ranges](../vsto/working-with-ranges.md)   
+ [NamedRange Control](../vsto/namedrange-control.md)   
+ [Optional Parameters in Office Solutions](../vsto/optional-parameters-in-office-solutions.md)  
   
   

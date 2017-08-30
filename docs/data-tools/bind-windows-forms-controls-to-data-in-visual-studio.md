@@ -1,107 +1,90 @@
 ---
-title: "Liaison de contr&#244;les Windows Forms &#224; des donn&#233;es dans Visual Studio | Microsoft Docs"
-ms.custom: ""
-ms.date: "12/14/2016"
-ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-dev_langs: 
-  - "VB"
-  - "CSharp"
-  - "C++"
-  - "aspx"
-helpviewer_keywords: 
-  - "données (Windows Forms), sources de données"
-  - "données (Windows Forms), afficher"
-  - "sources de données, afficher les données"
-  - "afficher des données sur des formulaires"
-  - "afficher les données, Windows Forms"
-  - "formulaires, afficher les données"
-  - "Windows Forms, liaison de données"
-  - "Windows Forms, afficher les données"
+title: Bind Windows Forms controls to data in Visual Studio | Microsoft Docs
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.tgt_pltfrm: 
+ms.topic: article
+helpviewer_keywords:
+- data [Windows Forms], data sources
+- Windows Forms, data binding
+- Windows Forms, displaying data
+- displaying data on forms
+- forms, displaying data
+- data sources, displaying data
+- displaying data, Windows Forms
+- data [Windows Forms], displaying
 ms.assetid: 243338ef-41af-4cc5-aff7-1e830236f0ec
 caps.latest.revision: 37
-caps.handback.revision: 31
-author: "mikeblome"
-ms.author: "mblome"
-manager: "ghogen"
+author: mikeblome
+ms.author: mblome
+manager: ghogen
+translation.priority.ht:
+- de-de
+- es-es
+- fr-fr
+- it-it
+- ja-jp
+- ko-kr
+- ru-ru
+- zh-cn
+- zh-tw
+translation.priority.mt:
+- cs-cz
+- pl-pl
+- pt-br
+- tr-tr
+ms.translationtype: HT
+ms.sourcegitcommit: 21a413a3e2d17d77fd83d5109587a96f323a0511
+ms.openlocfilehash: 62af6f84a24dcbf185cd9789a6d7abe379449abe
+ms.contentlocale: fr-fr
+ms.lasthandoff: 08/30/2017
+
 ---
-# Liaison de contr&#244;les Windows Forms &#224; des donn&#233;es dans Visual Studio
-Vous pouvez afficher des données pour les utilisateurs de votre application en liant les données à des Windows Forms.  Pour créer ces contrôles liés aux données, vous pouvez faire glisser des éléments de la fenêtre **Sources de données** sur le Concepteur Windows Forms dans Visual Studio.  Cette rubrique décrit quelques tâches, outils et classes les plus courants utilisés pour la création d'applications Windows Forms liées aux données.  
+# <a name="bind-windows-forms-controls-to-data-in-visual-studio"></a>Bind Windows Forms controls to data in Visual Studio
+You can display data to users of your application by binding data to Windows Forms. To create these data-bound controls, you can drag items from the **Data Sources** window onto the Windows Forms Designer in Visual Studio. This topic describes some of the most common tasks, tools, and classes involved in creating data-bound Windows Forms applications.  
   
- Pour plus d'informations sur la création de contrôles liés aux données dans Visual Studio, consultez [Liaison de contrôles à des données dans Visual Studio](../data-tools/bind-controls-to-data-in-visual-studio.md).  Pour plus d'informations sur la liaison de données dans les Windows Forms, consultez [Liaison de données Windows Forms](../Topic/Windows%20Forms%20Data%20Binding.md).  
+ ![Data Source drag operation](../data-tools/media/raddata-data-source-drag-operation.png "raddata Data Source drag operation")  
   
-## Tâches impliquées dans l'affichage de données sur un formulaire dans une application Windows  
- Le tableau suivant répertorie les tâches courantes liées à l'affichage des données sur un formulaire dans une application Windows.  
+ For general information about how to create data-bound controls in Visual Studio, see [Bind controls to data in Visual Studio](../data-tools/bind-controls-to-data-in-visual-studio.md). For more information about data binding in Windows Forms, see [Windows Forms Data Binding](/dotnet/framework/winforms/windows-forms-data-binding).  
   
-|Tâche|Complément d'information|  
-|-----------|------------------------------|  
-|Créer des contrôles liés aux données.<br /><br /> Lier des contrôles existants à des données.|[Comment : lier des contrôles Windows Forms à des données](../data-tools/bind-windows-forms-controls-to-data.md)|  
-|Créer des contrôles qui affichent les données connexes d'une relation parent\-enfant : lorsque l'utilisateur sélectionne un enregistrement de données dans un contrôle, un autre contrôle affiche les données connexes pour l'enregistrement sélectionné.|[Comment : afficher des données connexes dans une application Windows Forms](../Topic/How%20to:%20Display%20Related%20Data%20in%20a%20Windows%20Forms%20Application.md)|  
-|Créer une *table de correspondance*.  Une table de correspondance affiche les informations d'une table en fonction de la valeur du champ de clé étrangère d'une autre table.|[Comment : créer des tables de correspondance dans des applications Windows Forms](../data-tools/create-lookup-tables-in-windows-forms-applications.md)|  
-|Mettre en forme la façon dont les contrôles affichent les données.|[Formatting and Advanced Binding Dialog Box](http://msdn.microsoft.com/fr-fr/42638120-9e6f-436b-985f-4036664230fd)|  
-|Modifier le comportement de la fonctionnalité de retouche des légendes dans la fenêtre **Sources de données**.|[Comment : personnaliser la façon dont Visual Studio crée des légendes pour les contrôles liés aux données](../data-tools/customize-how-visual-studio-creates-captions-for-data-bound-controls.md)|  
-|Ajouter des contrôles qui exécutent une requête paramétrable.|[Comment : ajouter une requête paramétrable à une application Windows Forms](../Topic/How%20to:%20Add%20a%20Parameterized%20Query%20to%20a%20Windows%20Forms%20Application.md)|  
-|Définir une colonne de façon à utiliser un contrôle d'image pour afficher des images dans une base de données.|[Comment : lier des contrôles à des images d'une base de données](../data-tools/bind-controls-to-pictures-from-a-database.md)|  
-|Filtrer ou trier des données dans un groupe de données.|[Comment : filtrer et trier des données connexes dans une application Windows Forms](../data-tools/filter-and-sort-data-in-a-windows-forms-application.md)|  
+## <a name="in-this-section"></a>In this section  
   
- Les rubriques suivantes fournissent des exemples de liaisons de contrôles Windows Forms à des données.  
+-   [Bind Windows Forms controls to data](../data-tools/bind-windows-forms-controls-to-data.md)  
   
- [Procédure pas à pas : affichage de données sur un Windows Form](../data-tools/walkthrough-displaying-data-on-a-windows-form.md)  
- Fournit des détails pas à pas sur l'interrogation de données provenant d'une base de données et leur affichage sur un Windows Form.  
+-   [Commit in-process edits on data-bound controls before saving data](../data-tools/commit-in-process-edits-on-data-bound-controls-before-saving-data.md)  
   
- [Procédure pas à pas : affichage de données liées sur un Windows Form](../Topic/Walkthrough:%20Displaying%20Related%20Data%20on%20a%20Windows%20Form.md)  
- Fournit des détails pas à pas sur l'affichage de données provenant de deux tables connexes et leur affichage sur un Windows Form.  
+-   [Create lookup tables in Windows Forms applications](../data-tools/create-lookup-tables-in-windows-forms-applications.md)  
   
- [Procédure pas à pas : création d'un Windows Form pour rechercher des données](../data-tools/create-a-windows-form-to-search-data.md)  
- Fournit des détails pas à pas sur la façon de créer un Windows Form qui effectue une recherche dans une base de données en fonction de l'entrée utilisateur.  
+-   [Create a Windows Form to search data](../data-tools/create-a-windows-form-to-search-data.md)  
   
- [Procédure pas à pas : création d'une table de correspondance dans une application Windows Forms](../Topic/Walkthrough:%20Creating%20a%20Lookup%20Table%20in%20a%20Windows%20Forms%20Application.md)  
- Fournit des détails pas à pas sur la façon d'afficher des données d'une table basée sur les données sélectionnées dans une autre table.  
+-   [Create a Windows Forms user control that supports simple data binding](../data-tools/create-a-windows-forms-user-control-that-supports-simple-data-binding.md)  
   
- [Procédure pas à pas : passage de données entre Windows Forms](../data-tools/pass-data-between-forms.md)  
- Fournit des détails pas à pas sur la façon de passer des valeurs d'un formulaire à un autre formulaire dans une application.  
+-   [Create a Windows Forms user control that supports complex data binding](../data-tools/create-a-windows-forms-user-control-that-supports-complex-data-binding.md)  
   
- [Procédure pas à pas : création d'un contrôle utilisateur Windows Forms prenant en charge la liaison de données simple](../data-tools/create-a-windows-forms-user-control-that-supports-simple-data-binding.md)  
- Fournit des détails pas à pas sur la création d'un contrôle personnalisé qui peut être utilisé dans la fenêtre **Sources de données**.  
+-   [Create a Windows Forms user control that supports lookup data binding](../data-tools/create-a-windows-forms-user-control-that-supports-lookup-data-binding.md)  
   
- [Procédure pas à pas : création d'un contrôle utilisateur Windows Forms prenant en charge la liaison de données complexe](../data-tools/create-a-windows-forms-user-control-that-supports-complex-data-binding.md)  
- Fournit des détails pas à pas sur la création d'un contrôle personnalisé qui peut être utilisé dans la fenêtre **Sources de données**.  
+-   [Pass data between forms](../data-tools/pass-data-between-forms.md)  
   
- [Procédure pas à pas : création d'un contrôle utilisateur Windows Forms prenant en charge la liaison de données de recherche](../data-tools/create-a-windows-forms-user-control-that-supports-lookup-data-binding.md)  
- Fournit des détails pas à pas sur la création d'un contrôle personnalisé qui peut être utilisé dans la fenêtre **Sources de données**.  
+## <a name="bindingsource-component"></a>BindingSource component  
+ The <xref:System.Windows.Forms.BindingSource> component serves two purposes. First, it provides a layer of abstraction when binding the controls on your form to data. Controls on the form are bound to the <xref:System.Windows.Forms.BindingSource> component (instead of being bound directly to a data source).  
   
-## Balises actives de données  
- Les balises actives spécifiques à l'utilisation de données sont disponibles sur de nombreux contrôles.  Lorsque certains contrôles sont ajoutés à un formulaire, un jeu d'actions possible lié aux données est disponible sur la balise active.  
+ Second, it can manage a collection of objects. Adding a type to the <xref:System.Windows.Forms.BindingSource> creates a list of that type.  
   
-## Composant BindingSource  
- Le composant <xref:System.Windows.Forms.BindingSource> remplit deux fonctions.  Il fournit une couche d'abstraction lors de la liaison des contrôles figurant sur votre formulaire aux données.  Les contrôles sur le formulaire sont liés au composant <xref:System.Windows.Forms.BindingSource> \(au lieu d'être lié directement à une source de données\).  
+ For more information about the <xref:System.Windows.Forms.BindingSource> component, see:  
   
- Il permet de gérer une collection d'objets.  L'ajout d'un type au composant <xref:System.Windows.Forms.BindingSource> crée une liste de ce type.  
+-   [BindingSource Component](/dotnet/framework/winforms/controls/bindingsource-component)  
   
- Pour plus d'informations sur le composant <xref:System.Windows.Forms.BindingSource>, consultez :  
+-   [BindingSource Component Overview](/dotnet/framework/winforms/controls/bindingsource-component-overview)  
   
--   [Composant BindingSource](../Topic/BindingSource%20Component.md)  
+-   [BindingSource Component Architecture](/dotnet/framework/winforms/controls/bindingsource-component-architecture)  
   
--   [Vue d'ensemble du composant BindingSource](../Topic/BindingSource%20Component%20Overview.md)  
+## <a name="bindingnavigator-control"></a>BindingNavigator control  
+ This component provides a user interface for navigating through data displayed by a Windows application. For more information, see [BindingNavigator Control](/dotnet/framework/winforms/controls/bindingnavigator-control-windows-forms).  
   
--   [Architecture du composant BindingSource](../Topic/BindingSource%20Component%20Architecture.md)  
+## <a name="datagridview-control"></a>DataGridView control  
+ To display and edit tabular data from many different kinds of data sources, use the <xref:System.Windows.Forms.DataGridView> control. You can bind data to a <xref:System.Windows.Forms.DataGridView> by using the <xref:System.Windows.Forms.DataGridView.DataSource%2A> property. For more information, see [DataGridView Control Overview](/dotnet/framework/winforms/controls/datagridview-control-overview-windows-forms).  
   
-## Contrôle BindingNavigator  
- Ce composant fournit une interface utilisateur pour la navigation dans des données affichées par une application Windows.  Pour plus d'informations, consultez [BindingNavigator, contrôle](../Topic/BindingNavigator%20Control%20\(Windows%20Forms\).md).  
-  
-## Contrôle DataGridView  
- Le contrôle <xref:System.Windows.Forms.DataGridView> vous permet d'afficher et de modifier les données sous forme de tableau provenant de nombreux types de sources de données différents.  Vous pouvez lier des données à un <xref:System.Windows.Forms.DataGridView> à l'aide de la propriété <xref:System.Windows.Forms.DataGridView.DataSource%2A>.  Pour plus d'informations, consultez [Vue d'ensemble du contrôle DataGridView](../Topic/DataGridView%20Control%20Overview%20\(Windows%20Forms\).md).  
-  
-## Voir aussi  
- [Procédures pas à pas relatives aux données](../Topic/Data%20Walkthroughs.md)   
- [Sources de données \(fenêtre\)](../Topic/Data%20Sources%20Window.md)   
- [Liaison de contrôles à des données dans Visual Studio](../data-tools/bind-controls-to-data-in-visual-studio.md)   
- [Procédure pas à pas : affichage de données sur un Windows Form](../data-tools/walkthrough-displaying-data-on-a-windows-form.md)   
- [Création et modification de Datasets typés](../data-tools/creating-and-editing-typed-datasets.md)   
- [Vue d'ensemble des sources de données](../data-tools/add-new-data-sources.md)   
- [Procédure pas à pas : création d'un contrôle utilisateur Windows Forms prenant en charge la liaison de données simple](../data-tools/create-a-windows-forms-user-control-that-supports-simple-data-binding.md)   
- [Procédure pas à pas : création d'un contrôle utilisateur Windows Forms prenant en charge la liaison de données complexe](../data-tools/create-a-windows-forms-user-control-that-supports-complex-data-binding.md)   
- [Procédure pas à pas : création d'un contrôle utilisateur Windows Forms prenant en charge la liaison de données de recherche](../data-tools/create-a-windows-forms-user-control-that-supports-lookup-data-binding.md)
+## <a name="see-also"></a>See Also  
+ [Bind controls to data in Visual Studio](../data-tools/bind-controls-to-data-in-visual-studio.md)

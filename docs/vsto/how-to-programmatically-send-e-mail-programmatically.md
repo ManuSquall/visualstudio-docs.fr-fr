@@ -1,49 +1,54 @@
 ---
-title: "Comment&#160;: envoyer un message &#233;lectronique par programmation"
-ms.custom: ""
-ms.date: "02/02/2017"
-ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "office-development"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-dev_langs: 
-  - "VB"
-  - "CSharp"
-helpviewer_keywords: 
-  - "messagerie électronique (développement Office dans Visual Studio), envoyer"
-  - "éléments de messagerie (développement Office dans Visual Studio), envoyer un message électronique"
-  - "Outlook (développement Office dans Visual Studio), créer un message électronique"
-  - "Outlook (développement Office dans Visual Studio), envoyer un message électronique"
+title: 'How to: Programmatically Send E-Mail | Microsoft Docs'
+ms.custom: 
+ms.date: 02/02/2017
+ms.prod: visual-studio-dev14
+ms.reviewer: 
+ms.suite: 
+ms.technology:
+- office-development
+ms.tgt_pltfrm: 
+ms.topic: article
+dev_langs:
+- VB
+- CSharp
+helpviewer_keywords:
+- mail items [Office development in Visual Studio], sending e-mail
+- Outlook [Office development in Visual Studio], creating e-mail
+- Outlook [Office development in Visual Studio], sending e-mail
+- e-mail [Office development in Visual Studio], sending
 ms.assetid: 4fa0e1b5-2caf-4a11-8626-df643b23f5f0
 caps.latest.revision: 18
-author: "kempb"
-ms.author: "kempb"
-manager: "ghogen"
-caps.handback.revision: 17
+author: kempb
+ms.author: kempb
+manager: ghogen
+ms.translationtype: HT
+ms.sourcegitcommit: 21a413a3e2d17d77fd83d5109587a96f323a0511
+ms.openlocfilehash: 58349ce01a01536557be051142e7657506b6360e
+ms.contentlocale: fr-fr
+ms.lasthandoff: 08/30/2017
+
 ---
-# Comment&#160;: envoyer un message &#233;lectronique par programmation
-  Cet exemple envoie un courrier électronique à des contacts dont l'adresse de messagerie a pour nom de domaine **example.com**.  
+# <a name="how-to-programmatically-send-e-mail"></a>How to: Programmatically Send E-Mail  
+  This example sends an e-mail message to contacts that have the domain name **example.com** in their e-mail addresses.  
   
  [!INCLUDE[appliesto_olkallapp](../vsto/includes/appliesto-olkallapp-md.md)]  
   
-## Exemple  
- [!code-csharp[Trin_OL_ProgramEmail#1](../snippets/csharp/VS_Snippets_OfficeSP/Trin_OL_ProgramEMail/CS/thisaddin.cs#1)]  
+## <a name="example"></a>Example  
+ [!code-cs[Trin_OL_ProgramEmail#1](../vsto/codesnippet/CSharp/Trin_OL_ProgramEMail/thisaddin.cs#1)]  
   
-## Compilation du code  
- Cet exemple nécessite :  
+## <a name="compiling-the-code"></a>Compiling the Code  
+ This example requires:  
   
--   Des contacts dont l'adresse de messagerie a pour nom de domaine **example.com**.  
+-   Contacts that have the domain name **example.com** in their e-mail addresses.  
   
-## Programmation fiable  
- Ne supprimez pas le code de filtre qui recherche le nom de domaine **example.com**.  Si vous supprimez le filtre, votre solution enverra des courriers électroniques à tous vos contacts.  
+## <a name="robust-programming"></a>Robust Programming  
+ Do not remove the filter code that searches for the domain name **example.com**. Your solution will send e-mail messages to all of your contacts if you remove the filter.  
   
-## Voir aussi  
- [Utilisation d'éléments de messagerie](../vsto/working-with-mail-items.md)   
- [Comment : créer un élément de messagerie par programmation](../vsto/how-to-programmatically-create-an-e-mail-item.md)   
- [Comment : accéder à des contacts Outlook par programmation](../vsto/how-to-programmatically-access-outlook-contacts.md)   
- [Comment : exécuter des actions lors de la réception d'un message électronique par programmation](../vsto/how-to-programmatically-perform-actions-when-an-e-mail-message-is-received.md)  
+## <a name="see-also"></a>See Also  
+ [Working with Mail Items](../vsto/working-with-mail-items.md)   
+ [How to: Programmatically Create an E-Mail Item](../vsto/how-to-programmatically-create-an-e-mail-item.md)   
+ [How to: Programmatically Access Outlook Contacts](../vsto/how-to-programmatically-access-outlook-contacts.md)   
+ [How to: Programmatically Perform Actions When an E-Mail Message Is Received](../vsto/how-to-programmatically-perform-actions-when-an-e-mail-message-is-received.md)  
   
   
