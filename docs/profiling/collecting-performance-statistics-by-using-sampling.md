@@ -1,56 +1,74 @@
 ---
-title: "Collecte de statistiques de performance &#224; l’aide de l’&#233;chantillonnage | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-debug"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-helpviewer_keywords: 
-  - "Outils de profilage, échantillonner"
-  - "méthode de profilage par échantillonnage"
+title: Collecting Performance Statistics by Using Sampling | Microsoft Docs
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology:
+- vs-ide-debug
+ms.tgt_pltfrm: 
+ms.topic: article
+helpviewer_keywords:
+- Profiling Tools,sampling
+- sampling profiling method
 ms.assetid: 8e36361b-bb3d-40c6-b286-0e68c0ecb915
 caps.latest.revision: 21
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 21
----
-# Collecte de statistiques de performance &#224; l’aide de l’&#233;chantillonnage
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+translation.priority.ht:
+- de-de
+- es-es
+- fr-fr
+- it-it
+- ja-jp
+- ko-kr
+- ru-ru
+- zh-cn
+- zh-tw
+translation.priority.mt:
+- cs-cz
+- pl-pl
+- pt-br
+- tr-tr
+ms.translationtype: HT
+ms.sourcegitcommit: 7c87490f8e4ad01df8761ebb2afee0b2d3744fe2
+ms.openlocfilehash: b70e791d001cee1ae49cf9561b914c0a72c862ae
+ms.contentlocale: fr-fr
+ms.lasthandoff: 08/31/2017
 
-Par défaut, la méthode d'échantillonnage des outils de profilage [!INCLUDE[vsPreShort](../code-quality/includes/vspreshort_md.md)] collecte les informations de profilage tous les 10 000 000 cycles de processeur \(soit environ tous les centièmes de seconde sur un ordinateur cadencé à 1 GHz\).  La méthode d'échantillonnage est utile pour détecter les problèmes d'utilisation du processeur et est suggérée pour commencer la plupart des examens de performances.  
+---
+# <a name="collecting-performance-statistics-by-using-sampling"></a>Collecting Performance Statistics by Using Sampling
+By default, the [!INCLUDE[vsPreShort](../code-quality/includes/vspreshort_md.md)] Profiling Tools sampling method collects profiling information every 10,000,000 processor cycles (approximately every one-hundredth of a second on a 1 GHz computer). The sampling method is useful for finding processor utilization issues and is the suggested method for starting most performance investigations.  
   
- **Conditions requises**  
+ **Requirements**  
   
 -   [!INCLUDE[vsUltLong](../code-quality/includes/vsultlong_md.md)], [!INCLUDE[vsPreLong](../code-quality/includes/vsprelong_md.md)], [!INCLUDE[vsPro](../code-quality/includes/vspro_md.md)]  
   
 > [!NOTE]
->  Les fonctionnalités de sécurité renforcée dans Windows 8 et Windows Server 2012 nécessitaient d'importantes modifications de la manière dont le profileur Visual Studio collecte des données sur ces plateformes.  Les applications Windows Store requièrent également de nouvelles techniques de collecte.  Consultez [Profilage d'applications Windows 8 et Windows Server 2012](../profiling/performance-tools-on-windows-8-and-windows-server-2012-applications.md).  
+>  Enhanced security features in Windows 8 and Windows Server 2012 required significant changes in the way the Visual Studio profiler collects data on these platforms. Windows Store apps also require new collection techniques. See [Performance Tools on Windows 8 and Windows Server 2012 applications](../profiling/performance-tools-on-windows-8-and-windows-server-2012-applications.md).  
   
- Vous pouvez spécifier la méthode d'échantillonnage à l'aide d'une des procédures suivantes :  
+ You can specify the sampling method by using one of the following procedures:  
   
--   Sur la première page de l'Assistant de profilage, cliquez sur **Échantillonnage de l'UC \(recommandé\)**.  
+-   On the first page of the Profiling Wizard, click **CPU Sampling (recommended)**.  
   
--   Dans la barre d'outils **Explorateur de performances**, dans la liste **Méthode**, cliquez sur **Échantillonnage**.  
+-   On the **Performance Explorer** toolbar, in the **Method** list, click **Sampling**.  
   
--   Sur la page **Général** de la boîte de dialogue des propriétés de la session de performance, cliquez sur **Échantillonnage**.  
+-   On the **General** page of the properties dialog box for the performance session, click **Sampling**.  
   
-## Tâches courantes  
- Spécifiez des options supplémentaires dans la boîte de dialogue **Pages de propriétés** de la *Performance Session*.  Pour ouvrir cette boîte de dialogue :  
+## <a name="common-tasks"></a>Common Tasks  
+ You can specify additional options in the *Performance Session***Property Pages** dialog box of the performance session. To open this dialog box:  
   
--   Dans l'**Explorateur de performances**, cliquez avec le bouton droit sur le nom de la session de performance, puis cliquez sur **Propriétés**.  
+-   In **Performance Explorer**, right-click the performance session name, and then click **Properties**.  
   
- Les tâches du tableau suivant décrivent les options que vous pouvez spécifier dans la boîte de dialogue **Pages de propriétés** de *Performance Session* lorsque vous effectuez un profilage à l'aide de la méthode d'échantillonnage.  
+ The tasks in the following table describe options that you can specify in the *Performance Session***Property Pages** dialog box when you profile by using the sampling method.  
   
-|Tâche|Contenu associé|  
-|-----------|---------------------|  
-|Sur la page **Général**, ajoutez l'allocation de mémoire .NET et la collecte de données sur la durée de vie, puis spécifiez les détails d'attribution de nom du fichier de données de profilage \(.vsp\) généré.|-   [Collecte de données liées à l’allocation et à la durée de vie de la mémoire .NET](../profiling/collecting-dotnet-memory-allocation-and-lifetime-data.md)<br />-   [Comment : définir les options de nom de fichier de données de profilage](../profiling/how-to-set-performance-data-file-name-options.md)|  
-|Sur la page **Échantillonnage**, modifiez le taux d'échantillonnage, modifiez l'événement d'échantillonnage pour utiliser un autre compteur de performance du processeur plutôt que les cycles d'horloge du processeur, ou modifiez les deux.|-   [Comment : choisir des événements d’échantillonnage](../Topic/How%20to:%20Choose%20Sampling%20Events.md)|  
-|Sur la page **Lancer**, spécifiez l'application à démarrer et l'ordre de démarrage si votre solution de code comprend plusieurs projets .exe.|-   [Collecte de données d’interaction de couche](../profiling/collecting-tier-interaction-data.md)|  
-|Sur la page **Interactions de couche**, ajoutez les informations d'appel ADO.NET aux données collectées lors de l'exécution du profilage.|-   [Collecte de données d’interaction de couche](../profiling/collecting-tier-interaction-data.md)|  
-|Sur la page **Événements Windows**, spécifiez un ou plusieurs événements de Suivi d'événements pour Windows \(ETW\) à collecter avec les données d'échantillonnage.|-   [Comment : collecter les données de suivi d’événements pour Windows \(ETW\)](../Topic/How%20to:%20Collect%20Event%20Tracing%20for%20Windows%20\(ETW\)%20Data.md)|  
-|Dans la page **Compteurs Windows**, spécifiez un ou plusieurs compteurs de performance de système d'exploitation à ajouter aux données de profilage en tant que marques.|-   [Comment : collecter les données des compteurs Windows](../profiling/how-to-collect-windows-counter-data.md)|  
-|Sur la page **Avancé**, spécifiez la version du runtime .NET Framework à profiler si vos modules d'application utilisent plusieurs versions.  Par défaut, la première version chargée est profilée.|-   [Comment : spécifier le runtime .NET Framework à profiler dans les scénarios côte à côte](../Topic/How%20to:%20Specify%20the%20.NET%20Framework%20Runtime.md)|
+|Task|Related Content|  
+|----------|---------------------|  
+|On the **General** page, add .NET memory allocation and lifetime data collection, and specify naming details for the generated profiling data (.vsp) file.|-   [Collecting .NET Memory Allocation and Lifetime Data](../profiling/collecting-dotnet-memory-allocation-and-lifetime-data.md)<br />-   [How to: Set Performance Data File Name Options](../profiling/how-to-set-performance-data-file-name-options.md)|  
+|On the **Sampling** page, change the sampling rate, change the sampling event from processor clock cycles to another processor performance counter, or change both..|-   [How to: Choose Sampling Events](../profiling/how-to-choose-sampling-events.md)|  
+|On the **Launch** page, specify the application to start and the start order if you have multiple .exe projects in your code solution.|-   [Collecting tier interaction data](../profiling/collecting-tier-interaction-data.md)|  
+|On the **Tier Interaction** page, add ADO.NET call information to the data collected in theprofiling run.|-   [Collecting tier interaction data](../profiling/collecting-tier-interaction-data.md)|  
+|On the **Windows Events** page, specify one or more Event Tracing for Windows (ETW) events to collect with the sampling data.|-   [How to: Collect Event Tracing for Windows (ETW) Data](../profiling/how-to-collect-event-tracing-for-windows-etw-data.md)|  
+|On the **Windows Counters** page, specify one or more operating system performance counters to add to the profiling data as marks.|-   [How to: Collect Windows Counter Data](../profiling/how-to-collect-windows-counter-data.md)|  
+|On the **Advanced** page, specify the version of the .NET Framework runtime to profile if your application modules use multiple versions. By default, the first version loaded is profiled.|-   [How to: Specify the .NET Framework Runtime](../profiling/how-to-specify-the-dotnet-framework-runtime.md)|
