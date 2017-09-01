@@ -47,7 +47,7 @@ Vous pouvez éventuellement personnaliser et optimiser votre expérience de dév
 
  Après avoir fourni les paramètres, Visual Studio démarre et vous êtes enregistré et prêt à commencer. Pour vérifier si vous êtes connecté, recherchez votre nom dans l'angle supérieur droit de l'environnement Visual Studio.  
 
- ![Utilisateur actuellement connecté dans VS2017](~/ide/media/vs2017_username.png)
+ ![Utilisateur actuellement connecté dans VS2017](../ide/media/vs2017_username.png)
 
  À moins de vous déconnecter, vous êtes automatiquement connecté à Visual Studio chaque fois que vous le démarrez, et toutes les modifications apportées aux paramètres synchronisés s'appliquent automatiquement. Pour vous déconnecter, choisissez la flèche bas en regard de votre nom de profil dans l'environnement Visual Studio, cliquez sur la commande **Paramètres du compte** , puis sélectionnez le lien **Se déconnecter** . Pour se connecter à nouveau, choisissez la commande **Se connecter** dans l'angle supérieur droit de l'environnement Visual Studio.  
 
