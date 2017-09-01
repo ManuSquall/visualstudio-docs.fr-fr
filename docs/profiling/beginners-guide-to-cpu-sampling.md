@@ -33,11 +33,11 @@ translation.priority.ht:
 - tr-tr
 - zh-cn
 - zh-tw
-ms.translationtype: Human Translation
-ms.sourcegitcommit: a42f5a30375192c89c9984e40ba0104da98d7253
-ms.openlocfilehash: ddd52c1af0a164235de2e5055896e020dc8715c3
+ms.translationtype: HT
+ms.sourcegitcommit: 5c28e68b89f6583dc35a91b275693c11e0259dfd
+ms.openlocfilehash: 251b00c479c3853ba4fc00521f3e4cac74a93d27
 ms.contentlocale: fr-fr
-ms.lasthandoff: 03/07/2017
+ms.lasthandoff: 07/13/2017
 
 ---
 # <a name="beginners-guide-to-cpu-sampling"></a>Guide du débutant en échantillonnage de l’UC
@@ -90,7 +90,7 @@ Vous pouvez utiliser les outils de profilage de Visual Studio pour analyser les 
   
  Chaque zone numérotée dans l'illustration est en rapport avec une étape de la procédure.  
   
- ![Vue de rapport de synthèse pour l’échantillonnage](~/profiling/media/summary_sampling.png "Summary_Sampling")  
+ ![Vue de rapport de synthèse pour l’échantillonnage](../profiling/media/summary_sampling.png "Summary_Sampling")  
   
 #### <a name="to-analyze-sampling-data"></a>Pour analyser les données d'échantillonnage  
   
@@ -139,9 +139,9 @@ Vous pouvez utiliser les outils de profilage de Visual Studio pour analyser les 
   
 4.  Une fois que vous avez réexécuté la session, un autre fichier de données est ajouté au dossier **Rapports** de la session dans **l’Explorateur de performances**. Sélectionnez les données de profilage d’origine et les nouvelles données de profilage, cliquez avec le bouton droit sur la sélection, puis cliquez sur **Comparer les rapports de performances**.  
   
-     Une nouvelle fenêtre de rapport s'ouvre et affiche les résultats de la comparaison. Pour plus d’informations sur l’utilisation de la vue de comparaison, consultez [Guide pratique pour comparer des fichiers de données du profileur](../profiling/how-to-compare-performance-data-files.md).  
+     Une nouvelle fenêtre de rapport s'ouvre et affiche les résultats de la comparaison. Pour plus d’informations sur l’utilisation de la vue de comparaison, consultez [Guide pratique pour comparer des fichiers de données du profileur](../profiling/how-to-compare-performance-data-files.md).
   
 ## <a name="see-also"></a>Voir aussi  
  [Explorateur de performances](../profiling/performance-explorer.md)   
  [Bien démarrer](../profiling/getting-started-with-performance-tools.md)   
- [Vues d’ensemble](../profiling/overviews-performance-tools.md)
+ [Vues d’ensemble](../profiling/overviews-performance-tools.md) [Profilage dans Visual Studio](../profiling/index.md) [Visite guidée des fonctionnalités de profilage](../profiling/profiling-feature-tour.md)

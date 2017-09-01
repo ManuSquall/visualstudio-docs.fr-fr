@@ -1,126 +1,130 @@
 ---
-title: "Proc&#233;dure pas &#224; pas&#160;: ajout de r&#233;cepteurs d&#39;&#233;v&#233;nements de fonctionnalit&#233;"
-ms.custom: ""
-ms.date: "02/02/2017"
-ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "office-development"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-dev_langs: 
-  - "VB"
-  - "CSharp"
-  - "VB"
-  - "CSharp"
-helpviewer_keywords: 
-  - "développement SharePoint dans Visual Studio, outils d'empaquetage avancés"
-  - "développement SharePoint dans Visual Studio, récepteurs d'événements"
-  - "développement SharePoint dans Visual Studio, récepteurs d'événements de fonctionnalité"
+title: 'Walkthrough: Add Feature Event Receivers | Microsoft Docs'
+ms.custom: 
+ms.date: 02/02/2017
+ms.prod: visual-studio-dev14
+ms.reviewer: 
+ms.suite: 
+ms.technology:
+- office-development
+ms.tgt_pltfrm: 
+ms.topic: article
+dev_langs:
+- VB
+- CSharp
+- VB
+- CSharp
+helpviewer_keywords:
+- SharePoint development in Visual Studio, advanced packaging tools
+- SharePoint development in Visual Studio, event receivers
+- SharePoint development in Visual Studio, feature event receivers
 ms.assetid: fbd44c33-2c27-4d57-abca-21cddc16fbc3
 caps.latest.revision: 24
-author: "kempb"
-ms.author: "kempb"
-manager: "ghogen"
-caps.handback.revision: 23
+author: kempb
+ms.author: kempb
+manager: ghogen
+ms.translationtype: HT
+ms.sourcegitcommit: eb5c9550fd29b0e98bf63a7240737da4f13f3249
+ms.openlocfilehash: 5509743aa0d815bb2b3a7eece6c5822ac189ed14
+ms.contentlocale: fr-fr
+ms.lasthandoff: 08/30/2017
+
 ---
-# Proc&#233;dure pas &#224; pas&#160;: ajout de r&#233;cepteurs d&#39;&#233;v&#233;nements de fonctionnalit&#233;
-  Les récepteurs d'événements de fonctionnalité sont des méthodes prévues pour s'exécuter lorsque l'un des événements suivants ayant trait aux fonctionnalités se produit dans SharePoint :  
+# <a name="walkthrough-add-feature-event-receivers"></a>Walkthrough: Add Feature Event Receivers
+  Feature event receivers are methods that execute when one of the following feature-related events occurs in SharePoint:  
   
--   Installation d'une fonctionnalité.  
+-   A feature is installed.  
   
--   Activation d'une fonctionnalité.  
+-   A feature is activated.  
   
--   Désactivation d'une fonctionnalité.  
+-   A feature is deactivated.  
   
--   Suppression d'une fonctionnalité.  
+-   A feature is removed.  
   
- Cette procédure pas à pas montre comment ajouter un récepteur d'événements à une fonctionnalité dans un projet SharePoint.  Elle prend en compte les tâches suivantes :  
+ This walkthrough demonstrates how to add an event receiver to a feature in a SharePoint project. It demonstrates the following tasks:  
   
--   Création d'un projet vide avec un récepteur d'événements de fonctionnalité.  
+-   Creating an empty project with a feature event receiver.  
   
--   Gestion de la méthode **FeatureDeactivating**.  
+-   Handling the **FeatureDeactivating** method.  
   
--   Utilisation du modèle d'objet du projet SharePoint pour ajouter une annonce à la liste Annonces.  
+-   Using the SharePoint project object model to add an announcement to the Announcements list.  
   
  [!INCLUDE[note_settings_general](../sharepoint/includes/note-settings-general-md.md)]  
   
-## Composants requis  
- Pour exécuter cette procédure pas à pas, vous devez disposer des composants suivants :  
+## <a name="prerequisites"></a>Prerequisites  
+ You need the following components to complete this walkthrough:  
   
--   Éditions de Microsoft Windows et SharePoint prises en charge.  Pour plus d'informations, consultez [Configuration requise pour développer des solutions SharePoint](../sharepoint/requirements-for-developing-sharepoint-solutions.md).  
+-   Supported editions of Microsoft Windows and SharePoint. For more information, see [Requirements for Developing SharePoint Solutions](../sharepoint/requirements-for-developing-sharepoint-solutions.md).  
   
--   Visual Studio.  
+-   Visual Studio.  
   
-## Création d'un projet pour un récepteur d'événements de fonctionnalité  
- Commencez par créer un projet destiné à contenir le récepteur d'événements de fonctionnalité.  
+## <a name="creating-a-feature-event-receiver-project"></a>Creating a Feature Event Receiver Project  
+ First, create a project to contain the feature event receiver.  
   
-#### Pour créer un projet avec un récepteur d'événements de fonctionnalité  
+#### <a name="to-create-a-project-with-a-feature-event-receiver"></a>To create a project with a feature event receiver  
   
-1.  Dans la barre de menus, choisissez **Fichier**, **Nouveau**, **Projet** pour afficher la boîte de dialogue **Nouveau projet**.  
+1.  On the menu bar, choose **File**, **New**, **Project** to display the **New Project** dialog box.  
   
-2.  Développez le nœud **SharePoint** sous **Visual C\#** ou **Visual Basic**, puis cliquez sur le noeud **2010**.  
+2.  Expand the **SharePoint** node under either **Visual C#** or **Visual Basic**, and then choose the **2010** node.  
   
-3.  Dans le volet de **Modèles**, sélectionnez le modèle **Projet SharePoint 2010**.  
+3.  In the **Templates** pane, choose the **SharePoint 2010 Project** template.  
   
-     Ce type de projet est destiné aux récepteurs d'événements de fonctionnalité, car il n'existe pas de modèle de projet pour eux.  
+     You use this project type for feature event receivers because they have no project template.  
   
-4.  Dans la zone **Nom**, tapez TestÉvénementFonctionnalité, puis cliquez sur **OK** pour afficher l'**Assistant Personnalisation de SharePoint**.  
+4.  In the **Name** box, enter **FeatureEvtTest**, and then choose the **OK** button to display the **SharePoint Customization Wizard**.  
   
-5.  Dans la page **Spécifier le site et le niveau de sécurité pour le débogage**, entrez l'URL du site de serveur SharePoint auquel vous souhaitez ajouter le nouvel élément de champ personnalisé ou utilisez l'emplacement par défaut \(http:\/\/\<*system name*\>\/\).  
+5.  On the **Specify the site and security level for debugging** page, enter the URL for the SharePoint server site to which you want to add the new custom field item, or use the default location (http://\<*system name*>/).  
   
-6.  Dans la section **Quel est le niveau de confiance de cette solution SharePoint ?**, choisissez la case d'option **Déployer en tant que solution de batterie**.  
+6.  In the **What is the trust level for this SharePoint solution?** section, choose the **Deploy as a farm solution** option button.  
   
-     Pour plus d'informations sur les différences entre les solutions bac à sable \(sandbox\) et les solutions de batterie, consultez [Considérations sur les solutions bac à sable &#40;sandbox&#41;](../sharepoint/sandboxed-solution-considerations.md).  
+     For more information about sandboxed solutions versus farm solutions, see [Sandboxed Solution Considerations](../sharepoint/sandboxed-solution-considerations.md).  
   
-7.  Cliquez sur le bouton **Terminer**, puis notez qu'une fonctionnalité appelée Feature1 apparaît sous le nœud **Fonctionnalités**.  
+7.  Choose the **Finish** button, and then notice that a feature that's named Feature1 appears under the **Features** node.  
   
-## Ajout d'un récepteur d'événements à la fonctionnalité  
- Il convient maintenant d'ajouter un récepteur d'événements à la fonctionnalité et de prévoir le code à exécuter en cas de désactivation de la fonctionnalité.  
+## <a name="adding-an-event-receiver-to-the-feature"></a>Adding an Event Receiver to the Feature  
+ Next, add an event receiver to the feature and add code that executes when the feature is deactivated.  
   
-#### Pour ajouter un récepteur d'événements à la fonctionnalité  
+#### <a name="to-add-an-event-receiver-to-the-feature"></a>To add an event receiver to the feature  
   
-1.  Ouvrir le menu contextuel du noeud des composants, puis choisissez **Ajouter un composant** pour créer un composant.  
+1.  Open the shortcut menu for the Features node, and then choose **Add Feature** to create a feature.  
   
-2.  Sous le nœud **Composants**, ouvrez le menu contextuel de **Feature1**, puis choisissez **Ajouter un récepteur d'événements** pour ajouter un récepteur d'événements aux fonctionnalités.  
+2.  Under the **Features** node, open the shortcut menu for **Feature1**, and then choose **Add Event Receiver** to add an event receiver to the feature.  
   
-     Cela permet d'insérer un fichier de code sous Feature1.  Dans le cas présent, il est nommé Feature1.EventReceiver.cs ou Feature1.EventReceiver.vb, selon le langage de développement de votre projet.  
+     This adds a code file under Feature1. In this case, it is named either Feature1.EventReceiver.cs or Feature1.EventReceiver.vb, depending on your project's development language.  
   
-3.  Si votre projet est écrit dans [!INCLUDE[csprcs](../sharepoint/includes/csprcs-md.md)], ajoutez le code suivant en haut du récepteur d'événements s'il n'y est pas déjà :  
+3.  If your project is written in [!INCLUDE[csprcs](../sharepoint/includes/csprcs-md.md)], add the following code at the top of the event receiver if it is not already there:  
   
-     [!code-csharp[SP_FeatureEvt#1](../snippets/csharp/VS_Snippets_OfficeSP/sp_featureevt/cs/features/feature1/feature1.eventreceiver.cs#1)]  
+     [!code-csharp[SP_FeatureEvt#1](../sharepoint/codesnippet/CSharp/featureevttest2/features/feature1/feature1.eventreceiver.cs#1)]  
   
-4.  La classe de récepteur d'événements contient plusieurs méthodes commentées se comportant comme des événements.  Remplacez la méthode **FeatureDeactivating** par la méthode suivante :  
+4.  The event receiver class contains several commented-out methods that act as events. Replace the **FeatureDeactivating** method with the following:  
   
-     [!code-csharp[SP_FeatureEvt#2](../snippets/csharp/VS_Snippets_OfficeSP/sp_featureevt/cs/features/feature1/feature1.eventreceiver.cs#2)]
-     [!code-vb[SP_FeatureEvt#2](../snippets/visualbasic/VS_Snippets_OfficeSP/sp_featureevt/vb/features/feature1/feature1.eventreceiver.vb#2)]  
+     [!code-vb[SP_FeatureEvt#2](../sharepoint/codesnippet/VisualBasic/featureevt2vb/features/feature1/feature1.eventreceiver.vb#2)]  [!code-csharp[SP_FeatureEvt#2](../sharepoint/codesnippet/CSharp/featureevttest2/features/feature1/feature1.eventreceiver.cs#2)]  
   
-## Test du récepteur d'événements de la fonctionnalité  
- Veuillez à présent désactiver la fonctionnalité pour tester si la méthode **FeatureDeactivating** produit une annonce dans la liste des annonces SharePoint.  
+## <a name="testing-the-feature-event-receiver"></a>Testing the Feature Event Receiver  
+ Next, deactivate the feature to test whether the **FeatureDeactivating** method outputs an announcement to the SharePoint Announcements list.  
   
-#### Pour tester le récepteur d'événements de la fonctionnalité  
+#### <a name="to-test-the-feature-event-receiver"></a>To test the feature event receiver  
   
-1.  Affectez à la propriété **Configuration de déploiement active** du projet, la valeur **Aucune activation**.  
+1.  Set the value of the project's **Active Deployment Configuration** property to **No Activation**.  
   
-     Cela empêche l'activation de la fonctionnalité dans SharePoint et vous permet de déboguer les récepteurs d'événements de la fonctionnalité.  Pour plus d'informations, consultez [Débogage de solutions SharePoint](../sharepoint/debugging-sharepoint-solutions.md).  
+     Setting this property prevents the feature from activating in SharePoint and lets you debug feature event receivers. For more information, see [Debugging SharePoint Solutions](../sharepoint/debugging-sharepoint-solutions.md).  
   
-2.  Appuyez sur la touche **F5** pour exécuter le projet et le déployer sur SharePoint.  
+2.  Choose the **F5** key to run the project and deploy it to SharePoint.  
   
-3.  En haut de la page Web SharePoint, ouvrez le menu **Actions du site**, puis cliquez sur **Paramètres du site**.  
+3.  At the top of the SharePoint Web page, open the **Site Actions** menu, and then choose **Site Settings**.  
   
-4.  Dans la section **Actions du site** de la page **Paramètres du site**, cliquez sur le lien **Gérer les fonctionnalités du site**.  
+4.  Under the **Site Actions** section of the **Site Settings** page, choose the **Manage site features** link.  
   
-5.  Dans la page **Fonctionnalités du site**, cliquez sur le bouton **Activer** en regard de la fonctionnalité **TestÉvénementFonctionnalité Feature1**.  
+5.  On the **Features** page, choose the **Activate** button next to the **FeatureEvtTest Feature1** Feature.  
   
-6.  Dans la page **Composants**, cliquez sur le bouton **Désactiver** à côté du composant **FeatureEvtTest Feature1**, puis sélectionnez le lien de confirmation **Désactiver ce composant** pour désactiver le composant.  
+6.  On the **Features** page, choose the **Deactivate** button next to the **FeatureEvtTest Feature1** Feature, and then choose the **Deactivate this feature** confirmation link to deactivate the Feature.  
   
-7.  Choisissez le bouton **Accueil**.  
+7.  Choose the **Home** button.  
   
-     Notez la présence d'une annonce dans la liste **Annonces** une fois la fonctionnalité désactivée.  
+     Notice that an announcement appears in the **Announcements** list after the feature is deactivated.  
   
-## Voir aussi  
- [Comment : créer un récepteur d'événements](../sharepoint/how-to-create-an-event-receiver.md)   
+## <a name="see-also"></a>See Also  
+ [How to: Create an Event Receiver](../sharepoint/how-to-create-an-event-receiver.md)   
  [Developing SharePoint Solutions](../sharepoint/developing-sharepoint-solutions.md)  
   
   

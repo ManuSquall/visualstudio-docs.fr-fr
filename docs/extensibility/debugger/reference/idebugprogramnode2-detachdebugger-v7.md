@@ -1,5 +1,5 @@
 ---
-title: IDebugProgramNode2::DetachDebugger_V7 | Documents Microsoft
+title: IDebugProgramNode2::DetachDebugger_V7 | Microsoft Docs
 ms.custom: 
 ms.date: 11/04/2016
 ms.reviewer: 
@@ -31,36 +31,37 @@ translation.priority.mt:
 - tr-tr
 - zh-cn
 - zh-tw
-translationtype: Machine Translation
-ms.sourcegitcommit: 5db97d19b1b823388a465bba15d057b30ff0b3ce
-ms.openlocfilehash: ea8843a824eb5e1cd0c7bcd658908d7cdaac98ce
-ms.lasthandoff: 02/22/2017
+ms.translationtype: MT
+ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
+ms.openlocfilehash: a281d92d93473dffeb8f488cd802a9cee4a779d7
+ms.contentlocale: fr-fr
+ms.lasthandoff: 08/28/2017
 
 ---
 # <a name="idebugprogramnode2detachdebuggerv7"></a>IDebugProgramNode2::DetachDebugger_V7
-DÉCONSEILLÉE. N’UTILISEZ PAS.  
+DEPRECATED. DO NOT USE.  
   
-## <a name="syntax"></a>Syntaxe  
+## <a name="syntax"></a>Syntax  
   
-```cpp#  
+```cpp  
 HRESULT DetachDebugger_V7 (   
    void   
 );  
 ```  
   
-```c#  
+```csharp  
 int DetachDebugger_V7 ();  
 ```  
   
-## <a name="return-value"></a>Valeur de retour  
- Une implémentation doit toujours retourner `E_NOTIMPL`.  
+## <a name="return-value"></a>Return Value  
+ An implementation should always return `E_NOTIMPL`.  
   
-## <a name="remarks"></a>Notes  
+## <a name="remarks"></a>Remarks  
   
 > [!WARNING]
->  En tant que de [!INCLUDE[vsprvslong](../../../code-quality/includes/vsprvslong_md.md)], cette méthode n’est plus utilisée et doit toujours renvoyer `E_NOTIMPL`.  
+>  As of [!INCLUDE[vsprvslong](../../../code-quality/includes/vsprvslong_md.md)], this method is no longer used and should always return `E_NOTIMPL`.  
   
- Cette méthode est appelée lorsque le débogueur se ferme de façon inattendue. Lorsque cette méthode est appelée, le DE doit reprendre le programme comme si l’utilisateur détachée à partir de celui-ci. Plus aucun événement de débogage doit être envoyé. Le programme doit être dans un état où il pouvant être attachée à partir d’une autre instance du débogueur.  
+ This method is called when the debugger unexpectedly quits. When this method is called, the DE should resume the program as though the user detached from it. No more debug events should be sent. The program should be in a state where it is attachable from another instance of the debugger.  
   
-## <a name="see-also"></a>Voir aussi  
+## <a name="see-also"></a>See Also  
  [IDebugProgramNode2](../../../extensibility/debugger/reference/idebugprogramnode2.md)

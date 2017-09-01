@@ -44,8 +44,7 @@ ms.contentlocale: fr-fr
 ms.lasthandoff: 05/24/2017
 
 ---
-# Options, Éditeur de texte, C#, IntelliSense
-<a id="options-text-editor-c-intellisense" class="xliff"></a>
+# <a name="options-text-editor-c-intellisense"></a>Options, Éditeur de texte, C#, IntelliSense
 Utilisez la page de propriétés **IntelliSense** pour modifier les paramètres qui affectent le comportement d’IntelliSense pour Visual C#. Pour accéder à la page de propriétés **IntelliSense**, cliquez sur **Options** dans le menu **Outils**, cliquez sur **C#** dans le dossier **Éditeur de texte**, puis cliquez sur **IntelliSense**.  
   
 > [!NOTE]
@@ -53,8 +52,7 @@ Utilisez la page de propriétés **IntelliSense** pour modifier les paramètres 
   
  La page de propriétés **IntelliSense** contient les propriétés suivantes :  
   
-## Listes de saisie semi-automatique
-<a id="completion-lists" class="xliff"></a>  
+## <a name="completion-lists"></a>Listes de saisie semi-automatique  
  **Afficher la liste de saisie semi-automatique après la saisie d’un caractère**  
  Quand cette option est sélectionnée et que vous commencez à taper, IntelliSense affiche automatiquement la liste de saisie semi-automatique. Quand cette option n’est pas sélectionnée, vous pouvez utiliser la saisie semi-automatique IntelliSense à partir du menu **IntelliSense** ou en appuyant sur Ctrl+espace.  
   
@@ -64,8 +62,7 @@ Utilisez la page de propriétés **IntelliSense** pour modifier les paramètres 
  **Placer les extraits de code dans les listes de saisie semi-automatique**  
  Quand cette option est sélectionnée, IntelliSense ajoute des alias pour les extraits de code C# à la liste de saisie semi-automatique. Si l’alias d’extrait de code est identique à un mot clé, par exemple, [class](/dotnet/csharp/language-reference/keywords/class), le mot clé est remplacé par le raccourci. Pour plus d’informations, consultez [Extraits de code Visual C#](../../ide/visual-csharp-code-snippets.md).  
   
-## Sélection dans la liste de saisie semi-automatique
-<a id="selection-in-completion-lists" class="xliff"></a>  
+## <a name="selection-in-completion-lists"></a>Sélection dans la liste de saisie semi-automatique  
  **Validé en tapant les caractères suivants :**  
  Spécifie tous les caractères qui exécutent la saisie semi-automatique IntelliSense pour l’élément sélectionné dans la liste de saisie semi-automatique, une fois qu’ils ont été entrés.  
   
@@ -85,13 +82,11 @@ Utilisez la page de propriétés **IntelliSense** pour modifier les paramètres 
   
  `else|` (emplacement du curseur)  
   
-## Sélection de membres IntelliSense
-<a id="intellisense-member-selection" class="xliff"></a>  
+## <a name="intellisense-member-selection"></a>Sélection de membres IntelliSense  
  **Présélectionner le dernier membre utilisé**  
  Quand cette option est sélectionnée, IntelliSense présélectionne les membres que vous avez récemment sélectionnés dans la zone Liste des membres contextuelle pour la saisie automatique du nom d’objet, pendant votre session actuelle dans l’environnement de développement intégré (IDE). L'historique des membres utilisés récemment est effacé entre chaque session dans l'IDE. Pour plus d’informations, consultez [IntelliSense pour les membres les plus récemment utilisés](../../ide/visual-csharp-intellisense.md#most-recently-used-members).  
   
-## Voir aussi
-<a id="see-also" class="xliff"></a>  
+## <a name="see-also"></a>Voir aussi  
  [Général, Environnement, boîte de dialogue Options](../../ide/reference/general-environment-options-dialog-box.md)   
  [Commentaires sur la documentation XML](/dotnet/csharp/programming-guide/xmldoc/xml-documentation-comments)   
  [Utilisation de la fonctionnalité IntelliSense](../../ide/using-intellisense.md)

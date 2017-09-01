@@ -1,62 +1,79 @@
 ---
-title: "IDebugProcessEx2::AddImplicitProgramNodes | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "IDebugProcessEx2::AddImplicitProgramNodes"
-helpviewer_keywords: 
-  - "IDebugProcessEx2::AddImplicitProgramNodes (méthode)"
+title: IDebugProcessEx2::AddImplicitProgramNodes | Microsoft Docs
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology:
+- vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords:
+- IDebugProcessEx2::AddImplicitProgramNodes
+helpviewer_keywords:
+- IDebugProcessEx2::AddImplicitProgramNodes method
 ms.assetid: 8b491b00-f9e7-45b3-9115-fe58c3464289
 caps.latest.revision: 10
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 10
----
-# IDebugProcessEx2::AddImplicitProgramNodes
-[!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]
+ms.author: gregvanl
+manager: ghogen
+translation.priority.mt:
+- cs-cz
+- de-de
+- es-es
+- fr-fr
+- it-it
+- ja-jp
+- ko-kr
+- pl-pl
+- pt-br
+- ru-ru
+- tr-tr
+- zh-cn
+- zh-tw
+ms.translationtype: MT
+ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
+ms.openlocfilehash: b248f3077a21e0e1f8dfc989971454a8e5c06aa7
+ms.contentlocale: fr-fr
+ms.lasthandoff: 08/28/2017
 
-Cette méthode ajoute un nœud de programme pour chaque moteur de débogage \(DE\) spécifié.  
+---
+# <a name="idebugprocessex2addimplicitprogramnodes"></a>IDebugProcessEx2::AddImplicitProgramNodes
+This method adds a program node for each debug engine (DE) specified.  
   
-## Syntaxe  
+## <a name="syntax"></a>Syntax  
   
-```cpp#  
+```cpp  
 HRESULT AddImplicitProgramNodes(  
-   REFGUID guidLaunchingEngine,  
-   GUID*   rgguidSpecificEngines,  
-   DWORD   celtSpecificEngines  
+   REFGUID guidLaunchingEngine,  
+   GUID*   rgguidSpecificEngines,  
+   DWORD   celtSpecificEngines  
 );  
 ```  
   
-```c#  
+```csharp  
 int AddImplicitProgramNodes(  
-   ref Guid guidLaunchingEngine,  
-   Guid[]   rgguidSpecificEngines,  
-   uint     celtSpecificEngines  
+   ref Guid guidLaunchingEngine,  
+   Guid[]   rgguidSpecificEngines,  
+   uint     celtSpecificEngines  
 );  
 ```  
   
-#### Paramètres  
+#### <a name="parameters"></a>Parameters  
  `guidLaunchingEngine`  
- \[in\]  `GUID` d'un De devant être utilisé pour exécuter les programmes \(et est supposé pour ajouter ses propres nœuds de programme\).  
+ [in] The `GUID` of a DE that is to be used to launch programs (and is assumed to add its own program nodes).  
   
  `rgguidSpecificEngines`  
- \[in\]  Tableau d' `GUID`s de les pour lequel des nœuds de programme seront ajoutés.  
+ [in] Array of `GUID`s of DEs for which program nodes will be added.  
   
  `celtSpecificEngines`  
- \[in\]  Le numéro d' `GUID`s dans le tableau d' `rgguidSpecificEngines` .  
+ [in] The number of `GUID`s in the `rgguidSpecificEngines` array.  
   
-## Valeur de retour  
- En cas de réussite, retourne `S_OK`; sinon, retourne un code d'erreur.  
+## <a name="return-value"></a>Return Value  
+ If successful, returns `S_OK`; otherwise, returns an error code.  
   
-## Notes  
- [Nœuds de programme](../../../extensibility/debugger/program-nodes.md) sera ajouté pour chaque De répertorié dans `rgguidSpecificEngines`\- exclusion du moteur lancement \(comme indiqué dans `guidLaunchingEngine`\), il est supposé que qui ajoute son propre nœud de programme lorsqu'il exécute un programme.  
+## <a name="remarks"></a>Remarks  
+ [Program Nodes](../../../extensibility/debugger/program-nodes.md) will be added for each DE listed in `rgguidSpecificEngines`—excluding the launching engine (as given in `guidLaunchingEngine`), which is assumed to add its own program node when it launches a program.  
   
-## Voir aussi  
+## <a name="see-also"></a>See Also  
  [IDebugProgramEx2](../../../extensibility/debugger/reference/idebugprogramex2.md)   
- [Nœuds de programme](../../../extensibility/debugger/program-nodes.md)
+ [Program Nodes](../../../extensibility/debugger/program-nodes.md)

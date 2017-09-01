@@ -1,72 +1,89 @@
 ---
-title: "IDebugComPlusSymbolProvider::GetLocalVariablelayout | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-helpviewer_keywords: 
-  - "GetLocalVariablelayout"
-  - "IDebugComPlusSymbolProvider::GetLocalVariablelayout"
+title: IDebugComPlusSymbolProvider::GetLocalVariablelayout | Microsoft Docs
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology:
+- vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+helpviewer_keywords:
+- GetLocalVariablelayout
+- IDebugComPlusSymbolProvider::GetLocalVariablelayout
 ms.assetid: b7328d85-e5e9-4d9f-bcd1-e7711fd33878
 caps.latest.revision: 10
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 10
----
-# IDebugComPlusSymbolProvider::GetLocalVariablelayout
-[!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]
+ms.author: gregvanl
+manager: ghogen
+translation.priority.mt:
+- cs-cz
+- de-de
+- es-es
+- fr-fr
+- it-it
+- ja-jp
+- ko-kr
+- pl-pl
+- pt-br
+- ru-ru
+- tr-tr
+- zh-cn
+- zh-tw
+ms.translationtype: MT
+ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
+ms.openlocfilehash: 4776f56ea10c6b99cc59761139e9112d9a8780b2
+ms.contentlocale: fr-fr
+ms.lasthandoff: 08/28/2017
 
-Extrait la disposition des variables locales pour un ensemble de méthodes.  
+---
+# <a name="idebugcomplussymbolprovidergetlocalvariablelayout"></a>IDebugComPlusSymbolProvider::GetLocalVariablelayout
+Retrieves the layout of local variables for a set of methods.  
   
-## Syntaxe  
+## <a name="syntax"></a>Syntax  
   
-```cpp#  
+```cpp  
 HRESULT GetLocalVariablelayout(  
-   ULONG32   ulAppDomainID,  
-   GUID      guidModule,  
-   ULONG32   cMethods,  
-   _mdToken  rgMethodTokens[],  
-   IStream** pStreamLayout  
+   ULONG32   ulAppDomainID,  
+   GUID      guidModule,  
+   ULONG32   cMethods,  
+   _mdToken  rgMethodTokens[],  
+   IStream** pStreamLayout  
 );  
 ```  
   
-```c#  
+```csharp  
 int GetLocalVariablelayout(  
-   uint        ulAppDomainID,  
-   Guid        guidModule,  
-   uint        cMethods,  
-   int[]       rgMethodTokens,  
-   out IStream pStreamLayout  
+   uint        ulAppDomainID,  
+   Guid        guidModule,  
+   uint        cMethods,  
+   int[]       rgMethodTokens,  
+   out IStream pStreamLayout  
 );  
 ```  
   
-#### Paramètres  
+#### <a name="parameters"></a>Parameters  
  `ulAppDomainID`  
- \[in\]  identificateur du domaine d'application.  
+ [in] Identifier of the application domain.  
   
  `guidModule`  
- \[in\]  identificateur unique du module.  
+ [in] Unique identifier of the module.  
   
  `cMethods`  
- \[in\]  Numéro de jetons de méthode dans le tableau d' `rgMethodTokens` .  
+ [in] Number of method tokens in the `rgMethodTokens` array.  
   
  `rgMethodTokens`  
- \[in\]  Tableau de jetons de méthode.  
+ [in] Array of method tokens.  
   
  `pStreamLayout`  
- \[out\]  Un flux de texte qui contient la disposition variable.  
+ [out] A text stream that contains the variable layout.  
   
-## Valeur de retour  
- En cas de réussite, retourne `S_OK`; sinon, retourne un code d'erreur.  
+## <a name="return-value"></a>Return Value  
+ If successful, returns `S_OK`; otherwise, returns an error code.  
   
-## Exemple  
- L'exemple suivant indique comment appliquer cette méthode d'un objet **de CDebugSymbolProvider** qui expose l'interface d' [IDebugComPlusSymbolProvider](../../../extensibility/debugger/reference/idebugcomplussymbolprovider.md) .  
+## <a name="example"></a>Example  
+ The following example shows how to implement this method for a **CDebugSymbolProvider** object that exposes the [IDebugComPlusSymbolProvider](../../../extensibility/debugger/reference/idebugcomplussymbolprovider.md) interface.  
   
-```cpp#  
+```cpp  
 HRESULT CDebugSymbolProvider::GetLocalVariablelayout(  
     ULONG32 ulAppDomainID,   
     GUID guidModule,   
@@ -111,5 +128,5 @@ HRESULT CDebugSymbolProvider::GetLocalVariablelayout(
 }  
 ```  
   
-## Voir aussi  
+## <a name="see-also"></a>See Also  
  [IDebugComPlusSymbolProvider](../../../extensibility/debugger/reference/idebugcomplussymbolprovider.md)

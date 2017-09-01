@@ -1,61 +1,78 @@
 ---
-title: "IDebugProgramEngines2::EnumPossibleEngines | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "IDebugProgramEngines2::EnumPossibleEngines"
-helpviewer_keywords: 
-  - "IDebugProgramEngines2::EnumPossibleEngines"
+title: IDebugProgramEngines2::EnumPossibleEngines | Microsoft Docs
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology:
+- vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords:
+- IDebugProgramEngines2::EnumPossibleEngines
+helpviewer_keywords:
+- IDebugProgramEngines2::EnumPossibleEngines
 ms.assetid: 993d70a4-f6a5-4e47-a603-0b162b9fde00
 caps.latest.revision: 10
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 10
----
-# IDebugProgramEngines2::EnumPossibleEngines
-[!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]
+ms.author: gregvanl
+manager: ghogen
+translation.priority.mt:
+- cs-cz
+- de-de
+- es-es
+- fr-fr
+- it-it
+- ja-jp
+- ko-kr
+- pl-pl
+- pt-br
+- ru-ru
+- tr-tr
+- zh-cn
+- zh-tw
+ms.translationtype: MT
+ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
+ms.openlocfilehash: 64431c8adeeb56c17546f4aa6c16f517734f8941
+ms.contentlocale: fr-fr
+ms.lasthandoff: 08/28/2017
 
-Retourne le GUID pour tous les moteurs de débogage possibles \(DE\) qui peuvent mettre ce programme.  
+---
+# <a name="idebugprogramengines2enumpossibleengines"></a>IDebugProgramEngines2::EnumPossibleEngines
+Returns the GUIDs for all the possible debug engines (DE) that can debug this program.  
   
-## Syntaxe  
+## <a name="syntax"></a>Syntax  
   
-```cpp#  
-HRESULT EnumPossibleEngines(   
-   DWORD  celtBuffer,  
-   GUID*  rgguidEngines,  
-   DWORD* pceltEngines  
+```cpp  
+HRESULT EnumPossibleEngines(   
+   DWORD  celtBuffer,  
+   GUID*  rgguidEngines,  
+   DWORD* pceltEngines  
 );  
 ```  
   
-```c#  
-int EnumPossibleEngines(   
-   uint      celtBuffer,  
-   GUID[]    rgguidEngines,  
-   ref DWORD pceltEngines  
+```csharp  
+int EnumPossibleEngines(   
+   uint      celtBuffer,  
+   GUID[]    rgguidEngines,  
+   ref DWORD pceltEngines  
 );  
 ```  
   
-#### Paramètres  
+#### <a name="parameters"></a>Parameters  
  `celtBuffer`  
- \[in\]  Le nombre de GUID à retourner.  Cela spécifie également la taille maximale du tableau d' `rgguidEngines` .  
+ [in] The number of DE GUIDs to return. This also specifies the maximum size of the `rgguidEngines` array.  
   
  `rgguidEngines`  
- \[in, out\]  Un tableau de GUID à accomplir.  
+ [in, out] An array of DE GUIDs to be filled in.  
   
  `pceltEngines`  
- \[out\]  Retourne le nombre réel de GUID retournés.  
+ [out] Returns the actual number of DE GUIDs that are returned.  
   
-## Valeur de retour  
- En cas de réussite, retourne `S_OK`; sinon, retourne un code d'erreur.  Retourne \[C\+\+\] `HRESULT_FROM_WIN32(ERROR_INSUFFICIENT_BUFFER)` ou \[c\#\] 0x8007007A si la mémoire tampon n'est pas suffisamment grande.  
+## <a name="return-value"></a>Return Value  
+ If successful, returns `S_OK`; otherwise, returns an error code. Returns [C++] `HRESULT_FROM_WIN32(ERROR_INSUFFICIENT_BUFFER)` or [C#] 0x8007007A if the buffer is not large enough.  
   
-## Notes  
- Pour déterminer le nombre de moteurs sont présents, appellent cette méthode une fois avec le jeu de paramètres d' `celtBuffer` à 0 et le jeu de paramètres d' `rgguidEngines` à une valeur NULL.  Retourne `HRESULT_FROM_WIN32(ERROR_INSUFFICIENT_BUFFER)` \(0x8007007A pour c\#\), et le paramètre d' `pceltEngines` retourne la taille nécessaire de la mémoire tampon.  
+## <a name="remarks"></a>Remarks  
+ In order to determine how many engines there are, call this method once with the `celtBuffer` parameter set to 0 and the `rgguidEngines` parameter set to a null value. This returns `HRESULT_FROM_WIN32(ERROR_INSUFFICIENT_BUFFER)` (0x8007007A for C#), and the `pceltEngines` parameter returns the necessary size of the buffer.  
   
-## Voir aussi  
+## <a name="see-also"></a>See Also  
  [IDebugProgramEngines2](../../../extensibility/debugger/reference/idebugprogramengines2.md)

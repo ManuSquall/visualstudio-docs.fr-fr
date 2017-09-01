@@ -38,17 +38,14 @@ ms.contentlocale: fr-fr
 ms.lasthandoff: 05/30/2017
 
 ---
-# Globalisation d'applications
-<a id="globalizing-applications" class="xliff"></a>
+# <a name="globalizing-applications"></a>Globalisation d'applications
 La globalisation est le processus de conception et de développement d’un produit logiciel qui fonctionne pour plusieurs cultures. Cette section s’applique aux pages Windows Forms et Web Forms.  
   
-## Dans cette section
-<a id="in-this-section" class="xliff"></a>  
+## <a name="in-this-section"></a>Dans cette section  
  [Classes spécifiques à la culture pour les Windows Forms et les Web Forms globaux](../ide/culture-specific-classes-for-global-windows-forms-and-web-forms.md)  
  Décrit les classes de mise en forme des dates, des heures, des nombres, des devises et d’autres informations en fonction du paramètre de culture.  
   
-## Rubriques connexes
-<a id="related-sections" class="xliff"></a>  
+## <a name="related-sections"></a>Rubriques connexes  
  [Globalisation des Windows Forms](/dotnet/framework/winforms/advanced/globalizing-windows-forms)  
  Fournit des liens vers des pages d’aide relatives à la globalisation des Windows Forms.  
   

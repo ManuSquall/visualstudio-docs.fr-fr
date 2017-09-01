@@ -1,41 +1,58 @@
 ---
-title: "Cr&#233;ation d’une fen&#234;tre d’outil d’instances multiples | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-helpviewer_keywords: 
-  - "multiple"
-  - "fenêtres Outil"
+title: Creating a Multi-Instance Tool Window | Microsoft Docs
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology:
+- vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+helpviewer_keywords:
+- multi
+- tool windows
 ms.assetid: 4a7872f1-acc9-4f43-8932-5a526b36adea
 caps.latest.revision: 12
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 12
----
-# Cr&#233;ation d’une fen&#234;tre d’outil d’instances multiples
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
+ms.author: gregvanl
+manager: ghogen
+translation.priority.mt:
+- cs-cz
+- de-de
+- es-es
+- fr-fr
+- it-it
+- ja-jp
+- ko-kr
+- pl-pl
+- pt-br
+- ru-ru
+- tr-tr
+- zh-cn
+- zh-tw
+ms.translationtype: MT
+ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
+ms.openlocfilehash: bed04fe13e7232b2c227072ab91e6a56db0c6963
+ms.contentlocale: fr-fr
+ms.lasthandoff: 08/28/2017
 
-Vous pouvez programmer une fenêtre outil afin que plusieurs instances de ce type peuvent être ouverts simultanément. Par défaut, les fenêtres Outil peuvent ouvrir qu’une seule instance.  
+---
+# <a name="creating-a-multi-instance-tool-window"></a>Creating a Multi-Instance Tool Window
+You can program a tool window so that multiple instances of it can be open simultaneously. By default, tool windows can have only one instance open.  
   
- Lorsque vous utilisez une fenêtre d’outil d’instances multiples, vous pouvez afficher plusieurs sources connexes d’informations en même temps. Par exemple, vous pouvez placer un multiligne <xref:System.Windows.Forms.TextBox> contrôle dans une fenêtre d’outil d’instances multiples de sorte que plusieurs extraits de code sont accessibles simultanément pendant une session de programmation. Également par exemple, vous pouvez placer un <xref:System.Windows.Forms.DataGrid> contrôle et une liste déroulante de zone dans une fenêtre d’outils multi\-instance afin que plusieurs sources de données en temps réel peuvent être suivis simultanément.  
+ When you use a multi-instance tool window, you can show several related sources of information at the same time. For example, you could put a multi-line <xref:System.Windows.Forms.TextBox> control in a multi-instance tool window so that several code snippets are simultaneously available during a programming session. Also for example, you could put a <xref:System.Windows.Forms.DataGrid> control and a drop-down list box in a multi-instance tool window so that several real-time data sources can be tracked simultaneously.  
   
-## Création d’une fenêtre d’outil Basic \(uniques\)  
+## <a name="creating-a-basic-single-instance-tool-window"></a>Creating a Basic (Single-Instance) Tool Window  
   
-1.  Créez un projet nommé **MultiInstanceToolWindow** à l’aide du modèle VSIX et ajouter un modèle d’élément de fenêtre Outil personnalisée nommé **MIToolWindow**.  
+1.  Create a project named **MultiInstanceToolWindow** using the VSIX template, and add a custom tool window item template named **MIToolWindow**.  
   
     > [!NOTE]
-    >  Pour plus d’informations sur la création d’une extension avec une fenêtre outil, consultez [Création d'une Extension avec une fenêtre outil](../extensibility/creating-an-extension-with-a-tool-window.md).  
+    >  For more information about creating an extension with a tool window, see [Creating an Extension with a Tool Window](../extensibility/creating-an-extension-with-a-tool-window.md).  
   
-## Rendre une instance de fenêtre multiples  
+## <a name="making-a-tool-window-multi-instance"></a>Making a tool window multi-instance  
   
-1.  Ouvrez la **MIToolWindowPackage.cs** de fichiers et recherchez le `ProvideToolWindow` attribut. et le `MultiInstances=true` paramètre, comme indiqué dans l’exemple suivant.  
+1.  Open the **MIToolWindowPackage.cs** file and find the `ProvideToolWindow` attribute. and the `MultiInstances=true` parameter, as shown in the following example.  
   
-    ```c#  
+    ```csharp  
     [PackageRegistration(UseManagedResourcesOnly = true)]  
         [InstalledProductRegistration("#110", "#112", "1.0", IconResourceID = 400)] // Info on this package for Help/About  
         [ProvideMenuResource("Menus.ctmenu", 1)]  
@@ -45,17 +62,17 @@ Vous pouvez programmer une fenêtre outil afin que plusieurs instances de ce typ
     {. . .}  
     ```  
   
-2.  Dans le fichier MIToolWindowCommand.cs, recherchez la méthode ShowToolWindos\(\). Dans cette méthode, appelez la <xref:Microsoft.VisualStudio.Shell.Package.FindToolWindow%2A> méthode et définissez son `create` indicateur `false` afin qu’il effectue une itération dans les instances existantes de fenêtre outil jusqu'à une disponible `id` est trouvé.  
+2.  In the MIToolWindowCommand.cs file, find the ShowToolWindos() method. In this method, call the <xref:Microsoft.VisualStudio.Shell.Package.FindToolWindow%2A> method and set its `create` flag to `false` so that it will iterate through existing tool window instances until an available `id` is found.  
   
-3.  Pour créer une instance de fenêtre outil, appelez le <xref:Microsoft.VisualStudio.Shell.Package.FindToolWindow%2A> méthode et définissez son `id` à des valeurs disponibles et ses `create` indicateur `true`.  
+3.  To create a tool window instance, call the <xref:Microsoft.VisualStudio.Shell.Package.FindToolWindow%2A> method and set its `id` to an available value and its `create` flag to `true`.  
   
-     Par défaut, la valeur de le `id` paramètre de la <xref:Microsoft.VisualStudio.Shell.Package.FindToolWindow%2A> méthode est `0`. Cela permet une fenêtre outil d’instance unique. Pour plus d’une instance hébergée, chaque instance doit posséder son propre `id`.  
+     By default, the value of the `id` parameter of the <xref:Microsoft.VisualStudio.Shell.Package.FindToolWindow%2A> method is `0`. This makes a single-instance tool window. For more than one instance to be hosted, every instance must have its own unique `id`.  
   
-4.  Appelez le <xref:Microsoft.VisualStudio.Shell.Interop.IVsWindowFrame.Show%2A> méthode sur le <xref:Microsoft.VisualStudio.Shell.Interop.IVsWindowFrame> objet qui est retourné par la <xref:Microsoft.VisualStudio.Shell.ToolWindowPane.Frame%2A> propriété de l’instance de fenêtre outil.  
+4.  Call the <xref:Microsoft.VisualStudio.Shell.Interop.IVsWindowFrame.Show%2A> method on the <xref:Microsoft.VisualStudio.Shell.Interop.IVsWindowFrame> object that is returned by the <xref:Microsoft.VisualStudio.Shell.ToolWindowPane.Frame%2A> property of the tool window instance.  
   
-5.  Par défaut, le `ShowToolWindow` méthode créé par le modèle d’élément de fenêtre outil crée une fenêtre outil d’instance unique. L’exemple suivant montre comment modifier le `ShowToolWindow` méthode pour créer plusieurs instances.  
+5.  By default, the `ShowToolWindow` method that is created by the tool window item template creates a single-instance tool window. The following example shows how to modify the `ShowToolWindow` method to create multiple instances.  
   
-    ```c#  
+    ```csharp  
     private void ShowToolWindow(object sender, EventArgs e)  
     {  
         for (int i = 0; i < 10; i++)  

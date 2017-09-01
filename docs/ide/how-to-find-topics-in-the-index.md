@@ -35,10 +35,11 @@ translation.priority.mt:
 - pl-pl
 - pt-br
 - tr-tr
-translationtype: Human Translation
+ms.translationtype: HT
 ms.sourcegitcommit: 5db97d19b1b823388a465bba15d057b30ff0b3ce
 ms.openlocfilehash: 884530b6c2ebc44f935dd814a39bbf0495764303
-ms.lasthandoff: 02/22/2017
+ms.contentlocale: fr-fr
+ms.lasthandoff: 08/08/2017
 
 ---
 # <a name="how-to-find-topics-in-the-index"></a>Guide pratique pour rechercher des rubriques dans l’index

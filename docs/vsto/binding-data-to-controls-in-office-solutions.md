@@ -1,114 +1,117 @@
 ---
-title: "Liaison de donn&#233;es aux contr&#244;les dans les solutions Office"
-ms.custom: ""
-ms.date: "02/02/2017"
-ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "office-development"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-dev_langs: 
-  - "VB"
-  - "CSharp"
-helpviewer_keywords: 
-  - "documents Office (développement Office dans Visual Studio), connexion aux données"
-  - "données, liaison de données"
-  - "liaison de données"
-  - "liaison de données, solutions Office"
-  - "liaison de données, contrôles"
-  - "applications Office (développement Office dans Visual Studio), liaison de données"
-  - "contrôles, liaison de données"
+title: Binding Data to Controls in Office Solutions | Microsoft Docs
+ms.custom: 
+ms.date: 02/02/2017
+ms.prod: visual-studio-dev14
+ms.reviewer: 
+ms.suite: 
+ms.technology:
+- office-development
+ms.tgt_pltfrm: 
+ms.topic: article
+dev_langs:
+- VB
+- CSharp
+helpviewer_keywords:
+- Office documents [Office development in Visual Studio], connecting to data
+- data, data binding
+- data binding
+- data binding, Office solutions
+- data binding, controls
+- Office applications [Office development in Visual Studio], data binding
+- controls, data binding
 ms.assetid: b6faaed7-df9b-4d78-9863-e515cd5c7ed9
 caps.latest.revision: 70
-author: "kempb"
-ms.author: "kempb"
-manager: "ghogen"
-caps.handback.revision: 69
+author: kempb
+ms.author: kempb
+manager: ghogen
+ms.translationtype: HT
+ms.sourcegitcommit: eb5c9550fd29b0e98bf63a7240737da4f13f3249
+ms.openlocfilehash: 665747b872ecaa847ee60f693c2e5f3750d4072a
+ms.contentlocale: fr-fr
+ms.lasthandoff: 08/30/2017
+
 ---
-# Liaison de donn&#233;es aux contr&#244;les dans les solutions Office
-  Vous pouvez lier des contrôles Windows Forms et des *contrôles hôtes* dans un document Microsoft Office Word ou une feuille de calcul Microsoft Office Excel à une source de données pour que les contrôles affichent automatiquement les données. Vous pouvez lier des données à des contrôles dans des projets de niveau application et au niveau du document.  
+# <a name="binding-data-to-controls-in-office-solutions"></a>Binding Data to Controls in Office Solutions
+  You can bind Windows Forms controls and *host controls* on a Microsoft Office Word document or Microsoft Office Excel worksheet to a data source so the controls automatically display the data. You can bind data to controls in both application-level and document-level projects.  
   
  [!INCLUDE[appliesto_all](../vsto/includes/appliesto-all-md.md)]  
   
- Les contrôles hôtes étendent des objets qui se trouvent dans les modèles objet Word et Excel, tels que les contrôles de contenu dans Word et les plages nommées dans Excel. Pour plus d'informations, consultez [Vue d'ensemble des éléments hôtes et des contrôles hôtes](../vsto/host-items-and-host-controls-overview.md).  
+ Host controls extend objects that are in the Word and Excel object models, such as content controls in Word and named ranges in Excel. For more information, see [Host Items and Host Controls Overview](../vsto/host-items-and-host-controls-overview.md).  
   
- Les contrôles Windows Forms et les contrôles hôtes utilisent le modèle de liaison de données Windows Forms, qui prend en charge la *liaison de données simple* et la *liaison de données complexe* à des sources de données telles que les datasets et les tables de données. Pour obtenir des informations complètes sur le modèle de liaison de données dans les Windows Forms, consultez [Liaison de données et Windows Forms](http://msdn.microsoft.com/library/419aac5e-819b-4aad-88b0-73a2f8c0bd27).  
+ Both Windows Forms and host controls use the Windows Forms data binding model, which supports both *simple data binding* and *complex data binding* to data sources such as datasets and data tables. For complete information about the data binding model in Windows Forms, see [Data Binding and Windows Forms](/dotnet/framework/winforms/data-binding-and-windows-forms).  
   
- ![lien vers la vidéo](~/data-tools/media/playvideo.gif "lien vers la vidéo") Pour obtenir une démonstration vidéo associée, consultez [Comment faire pour consommer des données de base de données dans Excel ?](http://go.microsoft.com/fwlink/?LinkID=130287).  
+ ![link to video](../vsto/media/playvideo.gif "link to video") For a related video demonstration, see [How Do I: Consume Database Data in Excel?](http://go.microsoft.com/fwlink/?LinkID=130287).  
   
-## Liaison de données simple  
- Il existe une liaison de données simple quand une propriété de contrôle est liée à un seul élément de données, tel qu’une valeur dans une table de données. Par exemple, le contrôle <xref:Microsoft.Office.Tools.Excel.NamedRange> a une propriété <xref:Microsoft.Office.Tools.Excel.NamedRange.Value2%2A> qui peut être liée à un champ dans un dataset. Lorsque le champ dans le dataset change, la valeur dans la plage nommée change également. Tous les contrôles hôtes, à l’exception du contrôle <xref:Microsoft.Office.Tools.Word.XMLNodes>, prennent en charge la liaison de données simple. Le contrôle <xref:Microsoft.Office.Tools.Word.XMLNodes> étant une collection, il ne prend pas en charge la liaison de données.  
+## <a name="simple-data-binding"></a>Simple Data Binding  
+ Simple data binding exists when a control property is bound to a single data element, such as a value in a data table. For example, the <xref:Microsoft.Office.Tools.Excel.NamedRange> control has a <xref:Microsoft.Office.Tools.Excel.NamedRange.Value2%2A> property that can be bound to a field in a dataset. When the field in the dataset changes, the value in the named range also changes. All host controls, except for the <xref:Microsoft.Office.Tools.Word.XMLNodes> control, support simple data binding. The <xref:Microsoft.Office.Tools.Word.XMLNodes> control is a collection, and therefore it does not support data binding.  
   
- Pour effectuer une liaison de données simple à un contrôle hôte, ajoutez un <xref:System.Windows.Forms.Binding> à la propriété DataBindings du contrôle. Un objet <xref:System.Windows.Forms.Binding> représente la liaison simple entre une valeur de propriété du contrôle et la valeur d’un élément de données.  
+ To perform simple data binding to a host control, add a <xref:System.Windows.Forms.Binding> to the DataBindings property of the control. A <xref:System.Windows.Forms.Binding> object represents the simple binding between a property value of the control and the value of a data element.  
   
- L’exemple suivant montre comment lier la propriété <xref:Microsoft.Office.Tools.Excel.NamedRange.Value2%2A> à un élément de données dans un projet au niveau du document.  
+ The following example demonstrates how to bind the <xref:Microsoft.Office.Tools.Excel.NamedRange.Value2%2A> property to a data element in a document-level project.  
   
- [!code-csharp[Trin_BindableComponent#4](../snippets/csharp/VS_Snippets_OfficeSP/Trin_BindableComponent/CS/Sheet1.cs#4)]
- [!code-vb[Trin_BindableComponent#4](../snippets/visualbasic/VS_Snippets_OfficeSP/Trin_BindableComponent/VB/Sheet1.vb#4)]  
+ [!code-vb[Trin_BindableComponent#4](../vsto/codesnippet/VisualBasic/Trin_BindableComponent/Sheet1.vb#4)] [!code-csharp[Trin_BindableComponent#4](../vsto/codesnippet/CSharp/Trin_BindableComponent/Sheet1.cs#4)]  
   
- Pour obtenir des procédures pas à pas qui illustrent la liaison de données simple, consultez [Procédure pas à pas : liaison de données simple dans un projet au niveau du document](../vsto/walkthrough-simple-data-binding-in-a-document-level-project.md) pour un projet au niveau du document et [Procédure pas à pas : liaison de données simple dans un projet de complément VSTO](../vsto/walkthrough-simple-data-binding-in-vsto-add-in-project.md) pour un projet de complément VSTO.  
+ For walkthroughs that demonstrates simple data binding, see [Walkthrough: Simple Data Binding in a Document-Level Project](../vsto/walkthrough-simple-data-binding-in-a-document-level-project.md) for a document-level project and [Walkthrough: Simple Data Binding in VSTO add-in Project](../vsto/walkthrough-simple-data-binding-in-vsto-add-in-project.md) for an VSTO Add-in project.  
   
-## Liaison de données complexe  
- Il existe une liaison de données complexe quand une propriété de contrôle est liée à plusieurs éléments de données, par exemple plusieurs colonnes dans une table de données. Le contrôle <xref:Microsoft.Office.Tools.Excel.ListObject> pour Excel est le seul contrôle hôte qui prend en charge la liaison de données complexe. Il existe également de nombreux contrôles Windows Forms qui prennent en charge la liaison de données complexe, tels que le contrôle <xref:System.Windows.Forms.DataGridView>.  
+## <a name="complex-data-binding"></a>Complex Data Binding  
+ Complex data binding exists when a control property is bound to more than one data element, such as multiple columns in a data table. The <xref:Microsoft.Office.Tools.Excel.ListObject> control for Excel is the only host control that supports complex data binding. There are also many Windows Forms controls that support complex data binding, such as the <xref:System.Windows.Forms.DataGridView> control.  
   
- Pour effectuer une liaison de données complexe, affectez comme valeur de la propriété DataSource du contrôle un objet de source de données qui est pris en charge par la liaison de données complexe. Par exemple, la propriété <xref:Microsoft.Office.Tools.Excel.ListObject.DataSource%2A> du contrôle <xref:Microsoft.Office.Tools.Excel.ListObject> peut être liée à plusieurs colonnes dans une table de données. Toutes les données de la table s’affichent dans le contrôle <xref:Microsoft.Office.Tools.Excel.ListObject>, et le <xref:Microsoft.Office.Tools.Excel.ListObject> change à mesure que les données de la table de données changent. Pour obtenir la liste des sources de données que vous pouvez utiliser pour la liaison de données complexe, consultez [Sources de données prises en charge par les Windows Forms](http://msdn.microsoft.com/library/3d2c43f6-462b-4d35-9c86-13e9afe012e1).  
+ To perform complex data binding, set the DataSource property of the control to a data source object that is supported by complex data binding. For example, the <xref:Microsoft.Office.Tools.Excel.ListObject.DataSource%2A> property of the <xref:Microsoft.Office.Tools.Excel.ListObject> control can be bound to multiple columns in a data table. All of the data in the data table appears in the <xref:Microsoft.Office.Tools.Excel.ListObject> control, and as the data in the data table changes, the <xref:Microsoft.Office.Tools.Excel.ListObject> also changes. For a list of the data sources that you can use for complex data binding, see [Data Sources Supported by Windows Forms](/dotnet/framework/winforms/data-sources-supported-by-windows-forms).  
   
- L’exemple de code suivant crée un <xref:System.Data.DataSet> avec deux objets <xref:System.Data.DataTable> et remplit l’une des tables avec des données. Le code lie ensuite le <xref:Microsoft.Office.Tools.Excel.ListObject> à la table qui contient des données. Cet exemple concerne un projet Excel au niveau du document.  
+ The following code example creates a <xref:System.Data.DataSet> with two <xref:System.Data.DataTable> objects and populates one of the tables with data. The code then binds the <xref:Microsoft.Office.Tools.Excel.ListObject> to the table that contains data. This example is for an Excel document-level project.  
   
- [!code-csharp[Trin_ExcelListObject#18](../snippets/csharp/VS_Snippets_OfficeSP/Trin_ExcelListObject/CS/Trin_ExcelListObject.cs#18)]
- [!code-vb[Trin_ExcelListObject#18](../snippets/visualbasic/VS_Snippets_OfficeSP/Trin_ExcelListObject/VB/Sheet1.vb#18)]  
+ [!code-csharp[Trin_ExcelListObject#18](../vsto/codesnippet/CSharp/Trin_ExcelListObject/Trin_ExcelListObject.cs#18)] [!code-vb[Trin_ExcelListObject#18](../vsto/codesnippet/VisualBasic/Trin_ExcelListObject/Sheet1.vb#18)]  
   
- Pour obtenir des procédures pas à pas qui illustrent la liaison de données complexe, consultez [Procédure pas à pas : liaison de données complexe dans un projet au niveau du document](../vsto/walkthrough-complex-data-binding-in-a-document-level-project.md) pour un projet au niveau du document et [Procédure pas à pas : liaison de données complexe dans un projet de complément VSTO](../vsto/walkthrough-complex-data-binding-in-vsto-add-in-project.md) pour un projet de complément VSTO.  
+ For walkthroughs that demonstrate complex data binding, see [Walkthrough: Complex Data Binding in a Document-Level Project](../vsto/walkthrough-complex-data-binding-in-a-document-level-project.md) for a document-level project and [Walkthrough: Complex Data Binding in VSTO add-in Project](../vsto/walkthrough-complex-data-binding-in-vsto-add-in-project.md) for an VSTO Add-in project.  
   
-## Affichage de données dans des documents et des classeurs  
- Dans les projets au niveau du document, vous pouvez utiliser la fenêtre **Sources de données** pour ajouter facilement des contrôles liés aux données à vos documents ou vos classeurs, comme vous le feriez pour des Windows Forms. Pour plus d’informations sur l’utilisation de la fenêtre **Sources de données**, consultez [Liaison de contrôles Windows Forms à des données dans Visual Studio](../Topic/Binding%20Windows%20Forms%20controls%20to%20data%20in%20Visual%20Studio.md) et [Sources de données &#40;fenêtre&#41;](http://msdn.microsoft.com/library/0d20f699-cc95-45b3-8ecb-c7edf1f67992).  
+## <a name="displaying-data-in-documents-and-workbooks"></a>Displaying Data in Documents and Workbooks  
+ In document-level projects, you can use the **Data Sources** window to add data-bound controls to your documents or workbooks easily, the same way you use it for Windows Forms. For more information about using the **Data Sources** window, see [Bind Windows Forms controls to data in Visual Studio](../data-tools/bind-windows-forms-controls-to-data-in-visual-studio.md) and [Add new data sources](../data-tools/add-new-data-sources.md).  
   
-### Glissement de contrôles à partir de la fenêtre Sources de données  
- Un contrôle est créé sur le document quand vous faites glisser un objet sur à partir de la fenêtre **Sources de données**. Le type de contrôle créé varie selon que vous liez une ou plusieurs colonnes de données.  
+### <a name="dragging-controls-from-the-data-sources-window"></a>Dragging Controls from the Data Sources Window  
+ A control is created on the document when you drag an object onto it from the **Data Sources** window. The type of control that is created depends on whether you are binding a single column of data or multiple columns of data.  
   
- Pour Excel, un contrôle <xref:Microsoft.Office.Tools.Excel.NamedRange> est créé sur la feuille de calcul pour chaque champ, et un contrôle <xref:Microsoft.Office.Tools.Excel.ListObject> est créé pour chaque plage de données qui comprend plusieurs lignes et colonnes. Vous pouvez modifier ce comportement par défaut en sélectionnant la table ou le champ dans la fenêtre **Sources de données**, puis en choisissant un autre contrôle dans la liste déroulante.  
+ For Excel, a <xref:Microsoft.Office.Tools.Excel.NamedRange> control is created on the worksheet for each individual field, and a <xref:Microsoft.Office.Tools.Excel.ListObject> control is created for each data range that includes multiple rows and columns. You can change this default by selecting the table or field in the **Data Sources** window and then choosing a different control from the drop-down list.  
   
- Un contrôle <xref:Microsoft.Office.Tools.Word.ContentControl> est ajouté aux documents. Le type de contrôle de contenu dépend du type de données du champ sélectionné.  
+ A <xref:Microsoft.Office.Tools.Word.ContentControl> control is added to documents. The type of content control depends on the data type of the field that you selected.  
   
-### Liaison de données dans des projets au niveau du document au moment du design  
- Les rubriques suivantes présentent des exemples de liaison de données au moment du design :  
+### <a name="binding-data-in-document-level-projects-at-design-time"></a>Binding Data in Document-Level Projects at Design Time  
+ The following topics show examples of binding data at design time:  
   
--   [Comment : remplir des feuilles de calcul avec des données provenant d'une base de données](../vsto/how-to-populate-worksheets-with-data-from-a-database.md)  
+-   [How to: Populate Worksheets with Data from a Database](../vsto/how-to-populate-worksheets-with-data-from-a-database.md)  
   
--   [Comment : remplir des documents avec les données d'une base de données](../vsto/how-to-populate-documents-with-data-from-a-database.md)  
+-   [How to: Populate Documents with Data from a Database](../vsto/how-to-populate-documents-with-data-from-a-database.md)  
   
--   [Comment : remplir des documents avec les données d'objets](../vsto/how-to-populate-documents-with-data-from-objects.md)  
+-   [How to: Populate Documents with Data from Objects](../vsto/how-to-populate-documents-with-data-from-objects.md)  
   
--   [Comment : remplir des documents avec les données de services](../vsto/how-to-populate-documents-with-data-from-services.md)  
+-   [How to: Populate Documents with Data from Services](../vsto/how-to-populate-documents-with-data-from-services.md)  
   
--   [Comment : parcourir les enregistrements de base de données dans une feuille de calcul](../vsto/how-to-scroll-through-database-records-in-a-worksheet.md)  
+-   [How to: Scroll Through Database Records in a Worksheet](../vsto/how-to-scroll-through-database-records-in-a-worksheet.md)  
   
-### Liaison de données dans des projets de complément VSTO  
- Dans les projets de complément VSTO, vous pouvez ajouter des contrôles uniquement au moment de l’exécution. Les rubriques suivantes présentent des exemples de liaison de données au moment de l’exécution :  
+### <a name="binding-data-in-vsto-add-in-projects"></a>Binding Data in VSTO Add-in projects  
+ In VSTO Add-in projects, you can add controls only at run time. The following topics show examples of binding data at run time:  
   
--   [Procédure pas à pas : liaison de données simple dans un projet de complément VSTO](../vsto/walkthrough-simple-data-binding-in-vsto-add-in-project.md)  
+-   [Walkthrough: Simple Data Binding in VSTO add-in Project](../vsto/walkthrough-simple-data-binding-in-vsto-add-in-project.md)  
   
--   [Procédure pas à pas : liaison de données complexe dans un projet de complément VSTO](../vsto/walkthrough-complex-data-binding-in-vsto-add-in-project.md)  
+-   [Walkthrough: Complex Data Binding in VSTO add-in Project](../vsto/walkthrough-complex-data-binding-in-vsto-add-in-project.md)  
   
-## Mise à jour de données liées à des contrôles hôtes  
- La liaison de données entre une source de données et un contrôle hôte implique une mise à jour de données bidirectionnelle. Avec la liaison de données simple, les modifications de la source de données sont répercutées automatiquement dans le contrôle hôte, mais les modifications du contrôle hôte nécessitent un appel explicite pour mettre à jour la source de données. En effet, dans certains cas les modifications d’un champ lié aux données ne sont acceptées que si elles sont accompagnées de modifications dans un autre champ lié aux données. Par exemple, vous pouvez avoir deux champs, un pour l’âge et un autre pour les années d’expérience. L’expérience ne peut pas dépasser l’âge. Un utilisateur ne peut pas mettre à jour l’âge de 50 à 25 puis l’expérience de 30 à 10 à moins d’apporter les modifications en même temps. Pour résoudre ce problème, les champs avec liaison de données simple ne sont mis à jour qu’une fois que les mises à jour ont été envoyées explicitement par le code.  
+## <a name="updating-data-that-is-bound-to-host-controls"></a>Updating Data That Is Bound to Host Controls  
+ Data binding between a data source and a host control involves a two-way data update. In simple data binding, changes in the data source are reflected automatically in the host control, but changes in the host control require an explicit call to update the data source. The reason is that in some cases, changes in one data-bound field are not accepted unless they are accompanied by changes in another data-bound field. For example, you might have two fields, one for age and one for years of experience. Experience cannot exceed age. A user cannot update the age from 50 to 25 and then the experience from 30 to 10 unless he or she makes the changes at the same time. To solve this problem, fields with simple data binding are not updated until the updates are explicitly sent by code.  
   
- Pour mettre à jour une source de données à partir de contrôles hôtes qui autorisent la liaison de données simple, vous devez envoyer des mises à jour à la source de données en mémoire \(comme un <xref:System.Data.DataSet> ou <xref:System.Data.DataTable>\) et à la base de données principale, si votre solution en utilise une.  
+ To update a data source from host controls that enable simple data binding, you must send updates to the in-memory data source (such as a <xref:System.Data.DataSet> or <xref:System.Data.DataTable>) and to the back-end database, if your solution uses one.  
   
- Vous n’avez pas besoin de mettre à jour la source de données en mémoire de manière explicite quand vous effectuez une liaison de données complexe à l’aide du contrôle <xref:Microsoft.Office.Tools.Excel.ListObject>. Dans ce cas, les modifications sont envoyées automatiquement à la source de données en mémoire sans code supplémentaire.  
+ You do not need to explicitly update the in-memory data source when you perform complex data binding using the <xref:Microsoft.Office.Tools.Excel.ListObject> control. In that case, changes are automatically sent to the in-memory data source without additional code.  
   
- Pour plus d'informations, consultez [Comment : mettre à jour une source de données avec les données d'un contrôle hôte](../vsto/how-to-update-a-data-source-with-data-from-a-host-control.md).  
+ For more information, see [How to: Update a Data Source with Data from a Host Control](../vsto/how-to-update-a-data-source-with-data-from-a-host-control.md).  
   
-## Voir aussi  
- [Comment faire pour utiliser des données d’une base de données dans Excel ?](http://go.microsoft.com/fwlink/?LinkID=130287)   
- [Liaison de données et Windows Forms](http://msdn.microsoft.com/library/419aac5e-819b-4aad-88b0-73a2f8c0bd27)   
- [Comment : créer un contrôle à liaison simple dans un Windows Form](http://msdn.microsoft.com/library/3bcaded8-0f1a-4cc0-8830-f59be253bf4e)   
- [Liaison de contrôles Windows Forms à des données dans Visual Studio](../Topic/Binding%20Windows%20Forms%20controls%20to%20data%20in%20Visual%20Studio.md)   
- [Enregistrement de données dans des groupes de données](../Topic/Saving%20data%20back%20to%20the%20database.md)   
- [Comment : mettre à jour les données à l'aide d'un TableAdapter](../data-tools/update-data-by-using-a-tableadapter.md)   
- [Mise en cache des données](../vsto/caching-data.md)   
- [Données dans les solutions Office](../vsto/data-in-office-solutions.md)  
+## <a name="see-also"></a>See Also  
+ [How Do I: Consume Database Data in Excel?](http://go.microsoft.com/fwlink/?LinkID=130287)   
+ [Data Binding and Windows Forms](/dotnet/framework/winforms/data-binding-and-windows-forms)   
+ [How to: Create a Simple-Bound Control on a Windows Form](/dotnet/framework/winforms/how-to-create-a-simple-bound-control-on-a-windows-form)   
+ [Bind Windows Forms controls to data in Visual Studio](../data-tools/bind-windows-forms-controls-to-data-in-visual-studio.md)   
+ [Save data back to the database](../data-tools/save-data-back-to-the-database.md)    
+ [Update data by using a TableAdapter](../data-tools/update-data-by-using-a-tableadapter.md)    
+ [Caching Data](../vsto/caching-data.md)   
+ [Data in Office Solutions](../vsto/data-in-office-solutions.md)  
   
   

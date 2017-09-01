@@ -1,12 +1,13 @@
 ---
 title: Projets dans les Outils R pour Visual Studio | Microsoft Docs
 ms.custom: 
-ms.date: 4/26/2017
+ms.date: 6/29/2017
 ms.prod: visual-studio-dev15
 ms.reviewer: 
 ms.suite: 
 ms.technology:
 - devlang-r
+ms.devlang: r
 ms.tgt_pltfrm: 
 ms.topic: article
 ms.assetid: 732b73cf-2014-4f98-838e-4141ef9dedac
@@ -14,48 +15,33 @@ caps.latest.revision: 1
 author: kraigb
 ms.author: kraigb
 manager: ghogen
-translation.priority.ht:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 7a873df77756e5a957d327049566c8e0db1f3a8a
-ms.openlocfilehash: b2e331fe3a538150845ede2534b2164393d6c5e6
+ms.translationtype: HT
+ms.sourcegitcommit: 712cc780388acc5e373f71d51fc8f1f42adb5bed
+ms.openlocfilehash: 00ccd6319f13fc6be32ca7bde4e2c5f76a5cbc49
 ms.contentlocale: fr-fr
-ms.lasthandoff: 05/12/2017
+ms.lasthandoff: 07/12/2017
 
 ---
 
-
 # <a name="creating-r-projects-in-visual-studio"></a>Création de projets R dans Visual Studio
 
-Un projet R (un fichier `.rxproj`) identifie tous les fichiers sources et de contenu associés à votre projet, contient des informations de génération pour chaque fichier, tient à jour les informations pour l’intégration aux systèmes de contrôle de code source et vous permet d’organiser votre application en composants logiques. Notez que les informations relatives à l’espace de travail, telles que la liste des packages installés, est tenue à jour séparément dans l’espace de travail.
+Un projet R (un fichier `.rxproj`) identifie tous les fichiers sources et de contenu associés à votre projet. Il contient également des informations de génération pour chaque fichier, tient à jour les informations pour l’intégration aux systèmes de contrôle de code source et vous permet d’organiser votre application en composants logiques. Les informations relatives à l’espace de travail, telles que la liste des packages installés, sont toutefois gérées séparément dans l’espace de travail.
 
-Les projets sont toujours gérés dans une *solution* Visual Studio, qui peut contenir un nombre quelconque de projets pouvant faire référence les uns aux autres. Consultez [Utiliser plusieurs types de projets dans Visual Studio](#use-multiple-project-types-in-visual-studio) ci-dessous.
+Les projets sont toujours gérés dans une *solution* Visual Studio, qui peut contenir un nombre quelconque de projets pouvant faire référence les uns aux autres. Consultez [Utiliser plusieurs types de projets dans Visual Studio](#use-multiple-project-types-in-visual-studio).
 
 ## <a name="creating-a-new-r-project"></a>Création d’un projet R
 
 1. Démarrez Visual Studio.
-1. Choisissez **Fichier > Nouveau > Projet** (Ctrl+Maj+N)
-1. Sélectionnez « Projet R » sous **Modèles > R**, donnez au projet un nom et un emplacement, puis sélectionnez **OK** :
+1. Choisissez **Fichier > Nouveau > Projet**. (Ctrl+Maj+N)
+1. Sélectionnez « Projet R » sous **Modèles > R**, donnez au projet un nom et un emplacement, puis sélectionnez **OK** :
 
-    ![Boîte de dialogue Nouveau projet pour R dans Visual Studio (RTVS dans VS2017)](~/rtvs/media/getting-started-01-new-project.png)
+    ![Boîte de dialogue Nouveau projet pour R dans Visual Studio (RTVS dans VS2017)](media/getting-started-01-new-project.png)
 
-Cela crée un projet avec un fichier `script.R` vide ouvert dans l’éditeur. Notez également dans l’**Explorateur de solutions** que deux autres fichiers figurent dans le projet :
+Cette commande crée un projet avec un fichier `script.R` vide ouvert dans l’éditeur. Notez également dans l’**Explorateur de solutions** que deux autres fichiers figurent dans le projet :
 
-![Contenu d’un projet R créé à partir du modèle](~/rtvs/media/projects-template-results.png)
+![Contenu d’un projet R créé à partir du modèle](media/projects-template-results.png)
 
-Le fichier `.Rhistory` enregistre toutes les commandes que vous entrez dans la [Fenêtre interactive R](interactive-repl.md). Vous pouvez ouvrir une fenêtre d’historique dédiée avec la commande **Outils R > Fenêtres > Historique**. Cette fenêtre comporte un bouton et des éléments de menu contextuel pour effacer le contenu de l’historique.
+Le fichier `.Rhistory` enregistre toutes les commandes que vous entrez dans la [Fenêtre interactive R](interactive-repl.md). Vous pouvez ouvrir une fenêtre d’historique dédiée avec la commande **Outils R > Fenêtres > Historique**. Cette fenêtre comporte un bouton de barre d’outils et des éléments de menu contextuel pour effacer le contenu de l’historique.
 
 Le fichier `rproject.rproj` tient à jour certains paramètres de projet propres à R qui ne sont pas tenus à jour par Visual Studio :
 
@@ -79,41 +65,41 @@ Si vous avez un dossier de fichiers `.R` que vous souhaitez gérer dans un proje
 1. Créez un projet dans Visual Studio comme décrit dans la section précédente.
 1. Copiez vos fichiers dans le dossier du projet.
 1. Dans l’Explorateur de solutions Visual Studio, cliquez avec le bouton droit sur le projet, sélectionnez **Ajouter > Élément existant** et accédez aux fichiers à ajouter. Quand vous sélectionnez **OK**, ils apparaissent dans l’arborescence du projet.
-1. Pour organiser le code en sous-dossiers, cliquez avec le bouton droit sur le projet, sélectionnez tout d’abord **Ajouter > Nouveau dossier**, puis copiez les fichiers dans ce dossier et tous les éléments existants comme indiqué ci-dessus.
+1. Pour organiser le code en sous-dossiers, cliquez avec le bouton droit sur le projet, sélectionnez tout d’abord **Ajouter > Nouveau dossier**, puis copiez les fichiers dans ce dossier et ajoutez les éléments existants dans l’étape 3.
 
 ## <a name="project-properties"></a>Propriétés de projet
 
-Pour ouvrir les pages de propriétés du projet, cliquez avec le bouton droit sur le projet dans l’**Explorateur de solutions** et sélectionnez **Propriétés**, ou sélectionnez l’élément de menu **Projet > Propriétés de (nom du projet)*. Une fenêtre s’ouvre avec les propriétés suivantes :
+Pour ouvrir les pages de propriétés du projet, cliquez avec le bouton droit sur le projet dans l’**Explorateur de solutions** et sélectionnez **Propriétés**, ou sélectionnez l’élément de menu **Projet > Propriétés de (nom du projet)*. La fenêtre qui s’ouvre affiche les propriétés du projet :
 
-| Onglet | Propriété | Description |
+| Tab | Propriété | Description |
 | --- | --- | --- |
-| Exécuter | Fichier de démarrage | Nom du fichier qui est exécuté avec la commande **Fichier de démarrage source**, F5, **Déboguer > Démarrer le débogage**, ou **Déboguer > Démarrer sans débogage**. Vous pouvez également le définir en double-cliquant sur le fichier dans le projet et en sélectionnant **Définir comme script R de démarrage**. |
+| Exécuter | Fichier de démarrage | Nom du fichier qui est exécuté avec la commande **Fichier de démarrage source**, F5, **Déboguer > Démarrer le débogage**, ou **Déboguer > Démarrer sans débogage**. Vous pouvez également le définir comme fichier de démarrage en cliquant avec le bouton droit sur le fichier dans le projet et en sélectionnant **Définir comme script R de démarrage**. |
 | | Réinitialiser la Fenêtre interactive R à l’exécution | Efface toutes les variables de l’espace de travail de la fenêtre interactive quand vous exécutez le projet. Cela permet de garantir l’absence de contenu d’espace de travail résiduel des exécutions précédentes. |
 | | Chemin de projet distant | Chemin à un espace de travail distant. |
 | | Transférer des fichiers à l’exécution | Indique si les fichiers projet, conformément au filtre dans **Fichiers à transférer**, doivent être copiés vers un espace de travail distant à chaque exécution. |
 | | Fichiers à transférer | Noms de fichiers et caractères génériques indiquant les fichiers à copier vers un espace de travail distant si **Transférer des fichiers à l’exécution** est sélectionné. |
-| Paramètres | (Fichier Settings.R) | Les paramètres de projet R proviennent de fichiers `Settings.R` ou `*.Settings.R` qui se trouvent dans le projet. S’il n’existe aucun fichier de paramètres, vous pouvez ajouter des variables et enregistrer la page, et un fichier `Settings.R` par défaut sera créé pour vous. Vous pouvez également ajouter le fichier de paramètres au projet par le biais de la commande de menu **Fichier > Ajouter un nouvel élément*. <br/> Les paramètres sont stockés sous forme de code R et le fichier peut être sourcé avant d’exécuter d’autres modules. Ainsi, l’environnement est prérempli avec les paramètres prédéfinis. |
+| Paramètres | (Fichier Settings.R) | Les paramètres de projet R proviennent de fichiers `Settings.R` ou `*.Settings.R` qui se trouvent dans le projet. S’il n’existe aucun fichier de paramètres, vous pouvez ajouter des variables, enregistrer la page, et un fichier `Settings.R` par défaut est créé pour vous. Vous pouvez également ajouter le fichier de paramètres au projet par le biais de la commande de menu **Fichier > Ajouter un nouvel élément*. <br/> Les paramètres sont stockés sous forme de code R et le fichier peut être approvisionné avant d’exécuter d’autres modules. Ainsi, l’environnement est prérempli avec les paramètres prédéfinis. |
 
 ## <a name="r-specific-project-commands"></a>Commandes de projet propres à R
 
 Les projets Visual Studio prennent en charge plusieurs commandes générales par l’intermédiaire du menu contextuel et du menu **Projet**. Pour plus d’informations sur ces fonctionnalités générales, consultez [Solutions et projets dans Visual Studio](../ide/solutions-and-projects-in-visual-studio.md). Toutefois, n’oubliez pas que 
 
-les Outils R pour Visual Studio ajoutent leurs propres commandes au menu contextuel pour un projet R, et également des fichiers et des dossiers dans le projet.
+Les outils R pour Visual Studio (RTVS) ajoutent certaines de leurs propres commandes au menu contextuel pour un projet R, ainsi que des fichiers et des dossiers dans le projet.
 
 | Commande | Description |
 | --- | --- |
-| Définir le répertoire de travail ici | Définit le dossier du projet comme répertoire de travail de la Fenêtre interactive R. Peut également être utilisé sur n’importe quel sous-dossier dans un projet. |
+| Définir le répertoire de travail ici | Définit le dossier du projet comme répertoire de travail de la fenêtre interactive R. Peut également être utilisé sur n’importe quel sous-dossier dans un projet. |
 | Ouvrir le dossier conteneur | Ouvre l’Explorateur Windows à l’emplacement du fichier sélectionné. | 
-| Ajouter un script R | Crée et ouvre un nouveau fichier `.R` avec un nom par défaut. Vous pouvez aussi utiliser la commande **Ajouter > Nouvel élément** pour créer des fichiers `.R` et plusieurs autres types de fichiers. Voir ci-dessous sous [Modèles d’élément propres à R](#r-specific-item-templates). |
-| Ajouter un fichier Markdown R | Crée et ouvre un nouveau document `.rmd` avec un nom par défaut. Vous pouvez aussi utiliser la commande **Ajouter > Nouvel élément** pour créer des fichiers `.rmd` et plusieurs autres types de fichiers. Voir ci-dessous sous [Modèles d’élément propres à R](#r-specific-item-templates).  | 
+| Ajouter un script R | Crée et ouvre un nouveau fichier `.R` avec un nom par défaut. Vous pouvez aussi utiliser la commande **Ajouter > Nouvel élément** pour créer des fichiers `.R` et plusieurs autres types de fichiers. Consultez [Modèles d’élément propres à R](#r-specific-item-templates). |
+| Ajouter un fichier Markdown R | Crée et ouvre un nouveau document `.rmd` avec un nom par défaut. Vous pouvez aussi utiliser la commande **Ajouter > Nouvel élément** pour créer des fichiers `.rmd` et plusieurs autres types de fichiers. Consultez [Modèles d’élément propres à R](#r-specific-item-templates).  | 
 | Publier les procédures stockées | Démarre un processus pour publier toutes les procédures stockées contenues dans le script R. Voir [Working with SQL Server stored procedures (Utilisation de procédures stockées SQL Server)](sql-server.md#working-with-sql-server-stored-procedures). | 
 
 ## <a name="r-specific-item-templates"></a>Modèles d’élément propres à R
 
-Les Outils R pour Visual Studio incluent plusieurs modèles pour des types de fichiers spécifiques. Vous pouvez y accéder en double-cliquant sur un projet R et en sélectionnant **Ajouter > Nouvel élément**, par l’intermédiaire de **Projet > Ajouter un nouvel élément**, ou par l’intermédiaire de **Fichier > Nouveau > Fichier** et en sélectionnant l’onglet **R**. Le meilleur moyen d’explorer ces options consiste à simplement créer un projet et à insérer des fichiers de chaque type.
+Les outils R pour Visual Studio incluent plusieurs modèles pour des types de fichiers spécifiques. Vous pouvez y accéder en cliquant avec le bouton droit sur un projet R et en sélectionnant **Ajouter > Nouvel élément**, en sélectionnant **Projet > Ajouter un nouvel élément** ou en utilisant **Fichier > Nouveau > Fichier** et en sélectionnant l’onglet **R**. Le meilleur moyen d’explorer un modèle consiste à créer un projet et à insérer des fichiers de chaque type.
 
 > [!Note]
-> Les commandes **Ajouter > Nouvel élément** affichent également les types de fichiers généraux qui ne sont pas répertoriés ci-dessous. Avec **Fichier > Nouveau > Fichier**, ces types figurent plutôt sous l’onglet **Général**.
+> Les commandes **Ajouter > Nouvel élément** affichent également les types de fichiers généraux qui ne sont pas répertoriés dans le tableau. Avec **Fichier > Nouveau > Fichier**, ces types figurent plutôt sous l’onglet **Général**.
 
 | Type de fichier | Description |
 | --- | --- |
@@ -129,11 +115,11 @@ Les Outils R pour Visual Studio incluent plusieurs modèles pour des types de fi
 
 ## <a name="use-multiple-project-types-in-visual-studio"></a>Utiliser plusieurs types de projets dans Visual Studio
 
-Les solutions Visual Studio constituent un emplacement logique idéal où regrouper et gérer des projets associés. Cela aide à organiser le code et facilite la collaboration au sein des équipes.
+Les solutions Visual Studio constituent un emplacement logique idéal où regrouper et gérer des projets associés. Les solutions aident à organiser le code et facilitent la collaboration au sein des équipes.
 
 Dans l’exemple ci-dessous, la solution contient un projet R avec un modèle créé à l’aide de R et d’Azure Machine Learning, un projet Python/scikit-learn, un projet C++ contenant des modules de travail de calcul intensif, un projet SQL pour la gestion des données et un projet Python/Bottle pour le site web qui publie le résultat :
 
-![Explorateur de solutions Visual Studio affichant plusieurs projets associés dans une solution](~/rtvs/media/projects-polyglot.png)
+![Explorateur de solutions Visual Studio affichant plusieurs projets associés dans une solution](media/projects-polyglot.png)
 
 Le projet affiché en gras est le projet de « démarrage » de la solution. Pour le changer, cliquez sur un autre projet et sélectionnez **Définir comme projet de démarrage**.
 

@@ -1,5 +1,5 @@
 ---
-title: IDebugCodeContext3::GetModule | Documents Microsoft
+title: IDebugCodeContext3::GetModule | Microsoft Docs
 ms.custom: 
 ms.date: 11/04/2016
 ms.reviewer: 
@@ -28,40 +28,41 @@ translation.priority.mt:
 - tr-tr
 - zh-cn
 - zh-tw
-translationtype: Machine Translation
-ms.sourcegitcommit: 5db97d19b1b823388a465bba15d057b30ff0b3ce
-ms.openlocfilehash: c45688d1238e961a68166e199d696cfa98f6b536
-ms.lasthandoff: 02/22/2017
+ms.translationtype: MT
+ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
+ms.openlocfilehash: c015c7b6cb604e1f5da5ca13cb7a58425c622773
+ms.contentlocale: fr-fr
+ms.lasthandoff: 08/28/2017
 
 ---
 # <a name="idebugcodecontext3getmodule"></a>IDebugCodeContext3::GetModule
-Récupère une référence à l’interface du module de débogage.  
+Retrieves a reference to the interface of the debug module.  
   
-## <a name="syntax"></a>Syntaxe  
+## <a name="syntax"></a>Syntax  
   
-```cpp#  
+```cpp  
 HRESULT GetModule(   
    IDebugModule2 **ppModule  
 );  
 ```  
   
-```c#  
+```csharp  
 public int GetModule(   
    out IDebugModule2 ppModule  
 );  
 ```  
   
-#### <a name="parameters"></a>Paramètres  
+#### <a name="parameters"></a>Parameters  
  `ppModule`  
- [out] Référence à l’interface de module de débogage.  
+ [out] Reference to the debug module interface.  
   
-## <a name="return-value"></a>Valeur de retour  
- En cas de réussite, retourne `S_OK`; sinon, retourne un code d’erreur.  
+## <a name="return-value"></a>Return Value  
+ If successful, returns `S_OK`; otherwise, returns an error code.  
   
-## <a name="example"></a>Exemple  
- L’exemple suivant montre comment implémenter cette méthode pour un **CDebugCodeContext** objet qui expose les [IDebugBeforeSymbolSearchEvent2](../../../extensibility/debugger/reference/idebugbeforesymbolsearchevent2.md) interface.  
+## <a name="example"></a>Example  
+ The following example shows how to implement this method for a **CDebugCodeContext** object that exposes the [IDebugBeforeSymbolSearchEvent2](../../../extensibility/debugger/reference/idebugbeforesymbolsearchevent2.md) interface.  
   
-```cpp#  
+```cpp  
 HRESULT CDebugCodeContext::GetModule(IDebugModule2** ppModule)  
 {  
     HRESULT hr = S_OK;  
@@ -79,5 +80,5 @@ Error:
 }  
 ```  
   
-## <a name="see-also"></a>Voir aussi  
+## <a name="see-also"></a>See Also  
  [IDebugCodeContext3](../../../extensibility/debugger/reference/idebugcodecontext3.md)

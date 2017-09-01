@@ -1,63 +1,80 @@
 ---
-title: "CA2229&#160;: Impl&#233;mentez des constructeurs de s&#233;rialisation | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-devops-test"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "CA2229"
-  - "ImplementSerializationConstructors"
-helpviewer_keywords: 
-  - "CA2229"
-  - "ImplementSerializationConstructors"
+title: 'CA2229: Implement serialization constructors | Microsoft Docs'
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology:
+- vs-devops-test
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords:
+- CA2229
+- ImplementSerializationConstructors
+helpviewer_keywords:
+- CA2229
+- ImplementSerializationConstructors
 ms.assetid: 8e04d5fe-dfad-445a-972e-0648324fac45
 caps.latest.revision: 15
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
-caps.handback.revision: 15
----
-# CA2229&#160;: Impl&#233;mentez des constructeurs de s&#233;rialisation
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
+author: stevehoag
+ms.author: shoag
+manager: wpickett
+translation.priority.ht:
+- cs-cz
+- de-de
+- es-es
+- fr-fr
+- it-it
+- ja-jp
+- ko-kr
+- pl-pl
+- pt-br
+- ru-ru
+- tr-tr
+- zh-cn
+- zh-tw
+ms.translationtype: HT
+ms.sourcegitcommit: eb5c9550fd29b0e98bf63a7240737da4f13f3249
+ms.openlocfilehash: d604f1d7d1acdbf72681378dd5780d5e76c6aec6
+ms.contentlocale: fr-fr
+ms.lasthandoff: 08/30/2017
 
+---
+# <a name="ca2229-implement-serialization-constructors"></a>CA2229: Implement serialization constructors
 |||  
 |-|-|  
 |TypeName|ImplementSerializationConstructors|  
 |CheckId|CA2229|  
-|Catégorie|Microsoft.Usage|  
-|Modification avec rupture|Modification sans rupture|  
+|Category|Microsoft.Usage|  
+|Breaking Change|Non Breaking|  
   
-## Cause  
- Le type implémente l'interface <xref:System.Runtime.Serialization.ISerializable?displayProperty=fullName>, n'est ni un délégué ni une interface, et l'une des conditions suivantes est vraie :  
+## <a name="cause"></a>Cause  
+ The type implements the <xref:System.Runtime.Serialization.ISerializable?displayProperty=fullName> interface, is not a delegate or interface, and one of the following conditions is true:  
   
--   Le type ne dispose d'aucun constructeur qui accepte un objet <xref:System.Runtime.Serialization.SerializationInfo?displayProperty=fullName> et un objet <xref:System.Runtime.Serialization.StreamingContext?displayProperty=fullName> \(la signature du constructeur de sérialisation\).  
+-   The type does not have a constructor that takes a <xref:System.Runtime.Serialization.SerializationInfo?displayProperty=fullName> object and a <xref:System.Runtime.Serialization.StreamingContext?displayProperty=fullName> object (the signature of the serialization constructor).  
   
--   Le type est non\-sealed \(non scellé\) et le modificateur d'accès pour son constructeur de sérialisation n'est pas protégé \(famille\).  
+-   The type is unsealed and the access modifier for its serialization constructor is not protected (family).  
   
--   Le type est sealed \(scellé\) et le modificateur d'accès pour son constructeur de sérialisation n'est pas privé.  
+-   The type is sealed and the access modifier for its serialization constructor is not private.  
   
-## Description de la règle  
- Cette règle est pertinente pour les types qui prennent en charge la sérialisation personnalisée.  Un type prend en charge la sérialisation personnalisée s'il implémente l'interface <xref:System.Runtime.Serialization.ISerializable>.  Le constructeur de sérialisation est tenu de désérialiser ou de recréer des objets qui ont été sérialisés à l'aide de la méthode <xref:System.Runtime.Serialization.ISerializable.GetObjectData%2A?displayProperty=fullName>.  
+## <a name="rule-description"></a>Rule Description  
+ This rule is relevant for types that support custom serialization. A type supports custom serialization if it implements the <xref:System.Runtime.Serialization.ISerializable> interface. The serialization constructor is required to deserialize, or re-create objects that have been serialized using the <xref:System.Runtime.Serialization.ISerializable.GetObjectData%2A?displayProperty=fullName> method.  
   
-## Comment corriger les violations  
- Pour corriger une violation de cette règle, implémentez le constructeur de sérialisation.  Dans le cas d'une classe sealed, rendez le constructeur privé ; sinon, attribuez\-lui l'état protégé.  
+## <a name="how-to-fix-violations"></a>How to Fix Violations  
+ To fix a violation of this rule, implement the serialization constructor. For a sealed class, make the constructor private; otherwise, make it protected.  
   
-## Quand supprimer les avertissements  
- Ne supprimez aucune violation de la règle.  Le type ne sera pas désérialisable et ne fonctionnera pas dans de nombreux scénarios.  
+## <a name="when-to-suppress-warnings"></a>When to Suppress Warnings  
+ Do not suppress a violation of the rule. The type will not be deserializable, and will not function in many scenarios.  
   
-## Exemple  
- L'exemple suivant présente un type qui satisfait la règle.  
+## <a name="example"></a>Example  
+ The following example shows a type that satisfies the rule.  
   
- [!code-cs[FxCop.Usage.ISerializableCtor#1](../code-quality/codesnippet/CSharp/ca2229-implement-serialization-constructors_1.cs)]  
+ [!code-csharp[FxCop.Usage.ISerializableCtor#1](../code-quality/codesnippet/CSharp/ca2229-implement-serialization-constructors_1.cs)]  
   
-## Règles connexes  
- [CA2237 : Marquer les types ISerializable avec SerializableAttribute](../code-quality/ca2237-mark-iserializable-types-with-serializableattribute.md)  
+## <a name="related-rules"></a>Related Rules  
+ [CA2237: Mark ISerializable types with SerializableAttribute](../code-quality/ca2237-mark-iserializable-types-with-serializableattribute.md)  
   
-## Voir aussi  
+## <a name="see-also"></a>See Also  
  <xref:System.Runtime.Serialization.ISerializable?displayProperty=fullName>   
  <xref:System.Runtime.Serialization.SerializationInfo?displayProperty=fullName>   
  <xref:System.Runtime.Serialization.StreamingContext?displayProperty=fullName>

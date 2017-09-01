@@ -1,65 +1,82 @@
 ---
-title: "Cr&#233;ation d’une cat&#233;gorie de param&#232;tres | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-helpviewer_keywords: 
-  - "paramètres du profil, créer des catégories"
+title: Creating a Settings Category | Microsoft Docs
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology:
+- vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+helpviewer_keywords:
+- profile settings, creating categories
 ms.assetid: 97c88693-05ff-499e-8c43-352ee073dcb7
 caps.latest.revision: 39
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 39
----
-# Cr&#233;ation d’une cat&#233;gorie de param&#232;tres
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
+ms.author: gregvanl
+manager: ghogen
+translation.priority.mt:
+- cs-cz
+- de-de
+- es-es
+- fr-fr
+- it-it
+- ja-jp
+- ko-kr
+- pl-pl
+- pt-br
+- ru-ru
+- tr-tr
+- zh-cn
+- zh-tw
+ms.translationtype: MT
+ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
+ms.openlocfilehash: 6a5d6b839eb021bded2627241b6f7cbfdbfcbac3
+ms.contentlocale: fr-fr
+ms.lasthandoff: 08/28/2017
 
-Dans cette procédure pas à pas vous créez une catégorie de paramètres Visual Studio et l’utiliser pour enregistrer les valeurs et restaurer les valeurs à partir d’un fichier de paramètres. Une catégorie de paramètres est un groupe de propriétés connexes qui apparaissent sous la forme d’un « point de paramètres personnalisés ; » Autrement dit, en tant qu’une case à cocher dans le **importation et exportation de paramètres** Assistant. \(Vous pouvez le trouver sur le **outils** menu.\) Paramètres enregistrés ou restaurés comme une catégorie et les paramètres individuels ne sont pas affichés dans l’Assistant. Pour plus d’informations, consultez [Personnalisation des paramètres de développement dans Visual Studio](http://msdn.microsoft.com/fr-fr/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
+---
+# <a name="creating-a-settings-category"></a>Creating a Settings Category
+In this walkthrough you create a Visual Studio settings category and use it to save values to and restore values from a settings file. A settings category is a group of related properties that appear as a "custom settings point"; that is, as a check box in the **Import and Exports Settings** Wizard. (You can find it on the **Tools** menu.) Settings are saved or restored as a category, and individual settings are not displayed in the wizard. For more information, see [Personalize the Visual Studio IDE](../ide/personalizing-the-visual-studio-ide.md).  
   
- Vous créez une catégorie de paramètres en dérivant de la <xref:Microsoft.VisualStudio.Shell.DialogPage> classe.  
+ You create a settings category by deriving it from the <xref:Microsoft.VisualStudio.Shell.DialogPage> class.  
   
- Pour démarrer cette procédure pas à pas, vous devez effectuer la première section de [Création d’une Page d’Options](../extensibility/creating-an-options-page.md). La grille des propriétés qui en résulte Options vous permet d’examiner et modifier les propriétés de la catégorie. Après avoir enregistré la catégorie de propriété dans un fichier de paramètres, vous examinez le fichier pour voir comment les valeurs de propriété sont stockées.  
+ To start this walkthrough, you must first complete the first section of [Creating an Options Page](../extensibility/creating-an-options-page.md). The resulting Options property grid lets you examine and change the properties in the category. After you save the property category in a settings file, you examine the file to see how the property values are stored.  
   
-## Composants requis  
- À partir de Visual Studio 2015, vous n’installez pas Visual Studio SDK à partir du centre de téléchargement. Il est inclus comme fonctionnalité facultative dans le programme d’installation de Visual Studio. Vous pouvez également installer le Kit de développement logiciel Visual Studio plus tard. Pour plus d'informations, consultez [L'installation du Kit de développement logiciel de Visual Studio](../extensibility/installing-the-visual-studio-sdk.md).  
+## <a name="prerequisites"></a>Prerequisites  
+ Starting in Visual Studio 2015, you do not install the Visual Studio SDK from the download center. It is included as an optional feature in Visual Studio setup. You can also install the VS SDK later on. For more information, see [Installing the Visual Studio SDK](../extensibility/installing-the-visual-studio-sdk.md).  
   
-## Création d’une catégorie de paramètres  
- Dans cette section, vous utilisez un point de paramètres personnalisés pour enregistrer et restaurer les valeurs de la catégorie de paramètres.  
+## <a name="creating-a-settings-category"></a>Creating a Settings Category  
+ In this section, you use a custom settings point to save and restore the values of the settings category.  
   
-#### Pour créer une catégorie de paramètres  
+#### <a name="to-create-a-settings-category"></a>To create a settings category  
   
-1.  Terminer la [Création d’une Page d’Options](../extensibility/creating-an-options-page.md).  
+1.  Complete the [Creating an Options Page](../extensibility/creating-an-options-page.md).  
   
-2.  Ouvrez le fichier VSPackage.resx et ajoutez ces ressources de chaîne de trois :  
+2.  Open the VSPackage.resx file and add these three string resources:  
   
-    |Nom|Valeur|  
-    |---------|------------|  
-    |106|Ma catégorie|  
-    |107|Mes paramètres|  
-    |108|OptionInteger et OptionFloat|  
+    |Name|Value|  
+    |----------|-----------|  
+    |106|My Category|  
+    |107|My Settings|  
+    |108|OptionInteger and OptionFloat|  
   
-     Cela crée les ressources ce nom de la catégorie « My Category », l’objet « mes paramètres » et la description de la catégorie « OptionInteger et OptionFloat ».  
+     This creates resources that name the category "My Category", the object "My Settings", and the category description "OptionInteger and OptionFloat".  
   
     > [!NOTE]
-    >  Parmi ces trois, uniquement le nom de catégorie n’apparaît pas dans l’Assistant Importation et exportation de paramètres.  
+    >  Of these three, only the category name does not appear in the Import and Export Settings wizard.  
   
-3.  Dans MyToolsOptionsPackage.cs, ajoutez un `float` propriété nommée `OptionFloat` à la `OptionPageGrid` classe, comme indiqué dans l’exemple suivant.  
+3.  In MyToolsOptionsPackage.cs, add a `float` property named `OptionFloat` to the `OptionPageGrid` class, as shown in the following example.  
   
-    ```c#  
-    public class OptionPageGrid : DialogPage  
+    ```csharp  
+    public class OptionPageGrid : DialogPage  
     {  
-        private int optionInt = 256;  
-        private float optionFloat = 3.14F;  
+        private int optionInt = 256;  
+        private float optionFloat = 3.14F;  
   
         [Category("My Options")]  
         [DisplayName("My Integer option")]  
         [Description("My integer option")]  
-        public int OptionInteger  
+        public int OptionInteger  
         {  
             get { return optionInt; }  
             set { optionInt = value; }  
@@ -67,7 +84,7 @@ Dans cette procédure pas à pas vous créez une catégorie de paramètres Visua
         [Category("My Options")]  
         [DisplayName("My Float option")]  
         [Description("My float option")]  
-        public float OptionFloat  
+        public float OptionFloat  
         {  
             get { return optionFloat; }  
             set { optionFloat = value; }  
@@ -76,81 +93,81 @@ Dans cette procédure pas à pas vous créez une catégorie de paramètres Visua
     ```  
   
     > [!NOTE]
-    >  Le `OptionPageGrid` catégorie nommée « My Category » maintenant se compose des deux propriétés, `OptionInteger` et `OptionFloat`.  
+    >  The `OptionPageGrid` category named "My Category" now consists of the two properties, `OptionInteger` and `OptionFloat`.  
   
-4.  Ajouter un <xref:Microsoft.VisualStudio.Shell.ProvideProfileAttribute> pour la `MyToolsOptionsPackage` classe et donnez\-lui le nom de la catégorie « My Category », attribuez\-lui ObjectName « Mes paramètres » et isToolsOptionPage la valeur true. Définissez les categoryResourceID, objectNameResourceID et DescriptionResourceID à la ressource correspondante de la chaîne Qu'id créés précédemment.  
+4.  Add a <xref:Microsoft.VisualStudio.Shell.ProvideProfileAttribute> to the `MyToolsOptionsPackage` class and give it the CategoryName "My Category", give it the ObjectName "My Settings", and set isToolsOptionPage to true. Set the categoryResourceID, objectNameResourceID, and DescriptionResourceID to the corresponding string resource IDs created earlier.  
   
-    ```c#  
+    ```csharp  
     [ProvideProfileAttribute(typeof(OptionPageGrid),   
         "My Category", "My Settings", 106, 107, isToolsOptionPage:true, DescriptionResourceID = 108)]  
     ```  
   
-5.  Générez le projet et commencez le débogage. Dans l’instance expérimentale, vous devez voir que **Ma Page de grille** a maintenant des valeurs integer et float.  
+5.  Build the project and start debugging. In the experimental instance you should see that **My Grid Page** now has both integer and float values.  
   
-## Examen du fichier de paramètres  
- Dans cette section, vous exportez les valeurs de catégorie de propriété dans un fichier de paramètres. Vous examinez le fichier et puis réimportez les valeurs dans la catégorie de propriété.  
+## <a name="examining-the-settings-file"></a>Examining the Settings File  
+ In this section, you export property category values to a settings file. You examine the file and then import the values back into the property category.  
   
-1.  Démarrer le projet en mode débogage en appuyant sur F5. Cela démarre l’instance expérimentale.  
+1.  Start the project in debug mode by pressing F5. This starts the experimental instance.  
   
-2.  Ouvrez le **Outils \/ Options** boîte de dialogue.  
+2.  Open the **Tools / Options** dialog.  
   
-3.  Dans l’arborescence dans le volet gauche, développez **Mes catégorie** puis **Ma Page de grille**.  
+3.  In the tree view in the left pane, expand **My Category** and then click **My Grid Page**.  
   
-4.  Modifiez la valeur de **OptionFloat** à 3.1416 et **OptionInteger** et 12. Cliquez sur **OK**.  
+4.  Change the value of **OptionFloat** to 3.1416 and **OptionInteger** to 12. Click **OK**.  
   
-5.  Dans le menu **Outils**, cliquez sur **Importation et exportation des paramètres**.  
+5.  On the **Tools** menu, click **Import and Export Settings**.  
   
-     Le **importation et exportation de paramètres** Assistant s’affiche.  
+     The **Import and Export Settings** wizard appears.  
   
-6.  Assurez\-vous que **Exporter les paramètres d’environnement sélectionnés** est sélectionnée, puis cliquez sur **Suivant**.  
+6.  Make sure **Export selected environment settings** is selected, and then click **Next**.  
   
-     Le **Choisir les paramètres d’exportation** page s’affiche.  
+     The **Choose Settings to Export** page appears.  
   
-7.  Cliquez sur **Mes paramètres**.  
+7.  Click **My Settings**.  
   
-     Le **Description** devient **OptionInteger et OptionFloat**.  
+     The **Description** changes to **OptionInteger and OptionFloat**.  
   
-8.  Assurez\-vous que **Mes paramètres** est la seule catégorie qui est sélectionnée, puis cliquez sur **Suivant**.  
+8.  Make sure that **My Settings** is the only category that is selected, and then click **Next**.  
   
-     Le **nom de votre fichier de paramètres** page s’affiche.  
+     The **Name Your Settings File** page appears.  
   
-9. Nommez le nouveau fichier de paramètres `MySettings.vssettings` et enregistrez\-le dans un répertoire approprié. Cliquez sur **Terminer**.  
+9. Name the new settings file `MySettings.vssettings` and save it in an appropriate directory. Click **Finish**.  
   
-     Le **exportation terminée** page signale que vos paramètres ont été exportés avec succès.  
+     The **Export Complete** page reports that your settings were successfully exported.  
   
-10. Sur le **fichier** menu, pointez sur **Open**, puis cliquez sur **fichier**. Recherchez `MySettings.vssettings` et ouvrez\-le.  
+10. On the **File** menu, point to **Open**, and then click **File**. Locate `MySettings.vssettings` and open it.  
   
-     Vous trouverez la catégorie de propriété que vous avez exporté dans la section suivante du fichier \(vos GUID diffèrent\).  
+     You can find the property category you exported in the following section of the file (your GUIDs will differ).  
   
     ```  
     <Category name="My Category_My Settings"   
-          Category="{4802bc3e-3d9d-4591-8201-23d1a05216a6}"   
-          Package="{6bb6942e-014c-489e-a612-a935680f703d}"   
-          RegisteredName="My Category_My Settings">  
-          PackageName="MyToolsOptionsPackage">  
-       <PropertyValue name="OptionFloat">3.1416</PropertyValue>   
-       <PropertyValue name="OptionInteger">12</PropertyValue>   
+          Category="{4802bc3e-3d9d-4591-8201-23d1a05216a6}"   
+          Package="{6bb6942e-014c-489e-a612-a935680f703d}"   
+          RegisteredName="My Category_My Settings">  
+          PackageName="MyToolsOptionsPackage">  
+       <PropertyValue name="OptionFloat">3.1416</PropertyValue>   
+       <PropertyValue name="OptionInteger">12</PropertyValue>   
     </Category>  
     ```  
   
-     Notez que le nom complet de catégorie est formé par l’ajout d’un trait de soulignement le nom de catégorie suivi du nom de l’objet. OptionFloat et OptionInteger s’affichent dans la catégorie, ainsi que leurs valeurs exportés.  
+     Notice that the full category name is formed by the addition of an underscore to the category name followed by the object name. OptionFloat and OptionInteger appear in the category, together with their exported values.  
   
-11. Fermez le fichier de paramètres sans le modifier.  
+11. Close the settings file without changing it.  
   
-12. Sur le **outils** menu, cliquez sur **Options**, développez **Mes catégories**, cliquez sur **Ma Page de grille** et modifiez la valeur de **OptionFloat** 1.0 et **OptionInteger** à 1. Cliquez sur **OK**.  
+12. On the **Tools** menu, click **Options**, expand **My Category**, click **My Grid Page** and then change the value of **OptionFloat** to 1.0 and **OptionInteger** to 1. Click **OK**.  
   
-13. Sur le **outils** menu, cliquez sur **importation et exportation de paramètres**, sélectionnez **Importer les paramètres d’environnement sélectionnés**, puis cliquez sur **Suivant**.  
+13. On the **Tools** menu, click **Import and Export Settings**, select **Import selected environment settings**, and then click **Next**.  
   
-     Le **Enregistrer les paramètres actuels** page s’affiche.  
+     The **Save Current Settings** page appears.  
   
-14. Sélectionnez **non, importer simplement de nouveaux paramètres** puis **Suivant**.  
+14. Select **No, just import new settings** and then click **Next**.  
   
-     Le **Choisir une Collection de paramètres à importer** page s’affiche.  
+     The **Choose a Collection of Settings to Import** page appears.  
   
-15. Sélectionnez le `MySettings.vssettings` de fichiers dans le **Mes paramètres** nœud de l’arborescence. Si le fichier n’apparaît pas dans l’arborescence, cliquez sur **Parcourir** à trouver. Cliquez sur **Suivant**.  
+15. Select the `MySettings.vssettings` file in the **My Settings** node of the tree view. If the file does not appear in the tree view, click **Browse** and find it. Click **Next**.  
   
-     Le **Choisir les paramètres à importer** boîte de dialogue s’affiche.  
+     The **Choose Settings to Import** dialog box appears.  
   
-16. Assurez\-vous que **Mes paramètres** est sélectionnée, puis cliquez sur **Terminer**. Lors de la **importation complète** page s’affiche, cliquez sur **Fermer**.  
+16. Make sure that **My Settings** is selected, and then click **Finish**. When the **Import Complete** page appears, click **Close**.  
   
-17. Sur le **outils** menu, cliquez sur **Options**, développez **Mes catégorie**, cliquez sur **Ma Page de grille** et vérifiez que les valeurs de catégorie de propriété ont été restaurés.
+17. On the **Tools** menu, click **Options**, expand **My Category**, click **My Grid Page** and verify that the property category values have been restored.

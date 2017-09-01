@@ -1,5 +1,5 @@
 ---
-title: IDebugPort2::EnumProcesses | Documents Microsoft
+title: IDebugPort2::EnumProcesses | Microsoft Docs
 ms.custom: 
 ms.date: 11/04/2016
 ms.reviewer: 
@@ -30,36 +30,37 @@ translation.priority.mt:
 - tr-tr
 - zh-cn
 - zh-tw
-translationtype: Machine Translation
-ms.sourcegitcommit: 5db97d19b1b823388a465bba15d057b30ff0b3ce
-ms.openlocfilehash: 15f31118b114819fac63b1cc9c8b1b0e66f353b0
-ms.lasthandoff: 02/22/2017
+ms.translationtype: MT
+ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
+ms.openlocfilehash: e16d46d63ee6f2cac5998c84c62299bb2e909948
+ms.contentlocale: fr-fr
+ms.lasthandoff: 08/28/2017
 
 ---
 # <a name="idebugport2enumprocesses"></a>IDebugPort2::EnumProcesses
-Retourne une liste de tous les processus en cours d’exécution sur un port.  
+Returns a list of all the processes running on a port.  
   
-## <a name="syntax"></a>Syntaxe  
+## <a name="syntax"></a>Syntax  
   
-```cpp#  
+```cpp  
 HRESULT EnumProcesses(   
    IEnumDebugProcesses2** ppEnum  
 );  
 ```  
   
-```c#  
+```csharp  
 int EnumProcesses(   
    out IEnumDebugProcesses2 ppEnum  
 );  
 ```  
   
-#### <a name="parameters"></a>Paramètres  
+#### <a name="parameters"></a>Parameters  
  `ppEnum`  
- [out] Retourne un [IEnumDebugProcesses2](../../../extensibility/debugger/reference/ienumdebugprocesses2.md) objet qui contient une liste de tous les processus en cours d’exécution sur un port.  
+ [out] Returns an [IEnumDebugProcesses2](../../../extensibility/debugger/reference/ienumdebugprocesses2.md) object that contains a list of all the processes running on a port.  
   
-## <a name="return-value"></a>Valeur de retour  
- En cas de réussite, retourne `S_OK`; sinon, retourne un code d’erreur.  
+## <a name="return-value"></a>Return Value  
+ If successful, returns `S_OK`; otherwise, returns an error code.  
   
-## <a name="see-also"></a>Voir aussi  
+## <a name="see-also"></a>See Also  
  [IDebugPort2](../../../extensibility/debugger/reference/idebugport2.md)   
  [IEnumDebugProcesses2](../../../extensibility/debugger/reference/ienumdebugprocesses2.md)

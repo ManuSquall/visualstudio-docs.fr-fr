@@ -1,51 +1,55 @@
 ---
-title: "Comment&#160;: emp&#234;cher Outlook d&#39;afficher une zone de formulaire"
-ms.custom: ""
-ms.date: "02/02/2017"
-ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "office-development"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-dev_langs: 
-  - "VB"
-  - "CSharp"
-helpviewer_keywords: 
-  - "annuler l'affichage de la zone de formulaire"
-  - "zones de formulaire (développement Office dans Visual Studio), annuler l'affichage"
+title: 'How to: Prevent Outlook from Displaying a Form Region | Microsoft Docs'
+ms.custom: 
+ms.date: 02/02/2017
+ms.prod: visual-studio-dev14
+ms.reviewer: 
+ms.suite: 
+ms.technology:
+- office-development
+ms.tgt_pltfrm: 
+ms.topic: article
+dev_langs:
+- VB
+- CSharp
+helpviewer_keywords:
+- form regions [Office development in Visual Studio], canceling display
+- canceling form region display
 ms.assetid: 82a25def-776a-476a-a72d-d0a48a827d3c
 caps.latest.revision: 24
-author: "kempb"
-ms.author: "kempb"
-manager: "ghogen"
-caps.handback.revision: 24
+author: kempb
+ms.author: kempb
+manager: ghogen
+ms.translationtype: HT
+ms.sourcegitcommit: eb5c9550fd29b0e98bf63a7240737da4f13f3249
+ms.openlocfilehash: e1b1d6af0009b071618cf2611f8198b04a64044b
+ms.contentlocale: fr-fr
+ms.lasthandoff: 08/30/2017
+
 ---
-# Comment&#160;: emp&#234;cher Outlook d&#39;afficher une zone de formulaire
-  Dans certains cas, vous ne souhaitez pas que Microsoft Office Outlook affiche une zone de formulaire pour un élément particulier.  Par exemple, si un contact ne contient pas d'adresse professionnelle, vous pouvez empêcher l'affichage d'une zone indiquant l'emplacement de l'entreprise sur une carte.  
+# <a name="how-to-prevent-outlook-from-displaying-a-form-region"></a>How to: Prevent Outlook from Displaying a Form Region
+  There might be situations in which you do not want Microsoft Office Outlook to display a form region for a particular item. For example, if a contact item does not contain a business address, you can prevent a form region that shows the location of the business in a map from appearing.  
   
  [!INCLUDE[appliesto_olkallapp](../vsto/includes/appliesto-olkallapp-md.md)]  
   
-### Pour empêcher Outlook d'afficher une zone de formulaire  
+### <a name="to-prevent-outlook-from-displaying-a-form-region"></a>To prevent Outlook from displaying a form region  
   
-1.  Ouvrez le fichier de code de la zone de formulaire que vous souhaitez modifier.  
+1.  Open the code file for the form region you want to modify.  
   
-2.  Développez la région de code **Fabrique de zones de formulaire**.  
+2.  Expand the **Form Region Factory** code region.  
   
-3.  Ajoutez le code au gestionnaire d'événements  `FormRegionInitializing` qui affecte à la propriété <xref:System.ComponentModel.CancelEventArgs.Cancel%2A> de la classe <xref:Microsoft.Office.Tools.Outlook.FormRegionInitializingEventArgs> la valeur **true**.  
+3.  Add code to the `FormRegionInitializing` event handler that sets the <xref:System.ComponentModel.CancelEventArgs.Cancel%2A> property of the <xref:Microsoft.Office.Tools.Outlook.FormRegionInitializingEventArgs> class to **true**.  
   
- Dans cet exemple, si l'élément de contact ne contient pas d'adresse, la propriété <xref:System.ComponentModel.CancelEventArgs.Cancel%2A> a la valeur **true** et la zone de formulaire n'apparaît pas.  
+ In this example, if the contact item does not contain an address, the <xref:System.ComponentModel.CancelEventArgs.Cancel%2A> property is set to **true**, and the form region does not appear.  
   
-## Exemple  
- [!code-csharp[Trin_Outlook_FR_Separate#1](../snippets/csharp/VS_Snippets_OfficeSP/Trin_Outlook_FR_Separate/CS/MapIt.cs#1)]
- [!code-vb[Trin_Outlook_FR_Separate#1](../snippets/visualbasic/VS_Snippets_OfficeSP/Trin_Outlook_FR_Separate/VB/MapIt.vb#1)]  
+## <a name="example"></a>Example  
+ [!code-csharp[Trin_Outlook_FR_Separate#1](../vsto/codesnippet/CSharp/Trin_Outlook_FR_Separate_O12/MapIt.cs#1)] [!code-vb[Trin_Outlook_FR_Separate#1](../vsto/codesnippet/VisualBasic/Trin_Outlook_FR_Separate_O12/MapIt.vb#1)]  
   
-## Voir aussi  
- [Création de zones de formulaire Outlook](../vsto/creating-outlook-form-regions.md)   
- [Procédure pas à pas : conception d'une zone de formulaire Outlook](../vsto/walkthrough-designing-an-outlook-form-region.md)   
- [Comment : ajouter une zone de formulaire à un projet de complément Outlook](../vsto/how-to-add-a-form-region-to-an-outlook-add-in-project.md)   
- [Procédure pas à pas : conception d'une zone de formulaire Outlook](../vsto/walkthrough-designing-an-outlook-form-region.md)   
- [Procédure pas à pas : importation d'une zone de formulaire conçue dans Outlook](../vsto/walkthrough-importing-a-form-region-that-is-designed-in-outlook.md)  
+## <a name="see-also"></a>See Also  
+ [Creating Outlook Form Regions](../vsto/creating-outlook-form-regions.md)   
+ [Walkthrough: Designing an Outlook Form Region](../vsto/walkthrough-designing-an-outlook-form-region.md)   
+ [How to: Add a Form Region to an Outlook Add-in Project](../vsto/how-to-add-a-form-region-to-an-outlook-add-in-project.md)   
+ [Walkthrough: Designing an Outlook Form Region](../vsto/walkthrough-designing-an-outlook-form-region.md)   
+ [Walkthrough: Importing a Form Region That Is Designed in Outlook](../vsto/walkthrough-importing-a-form-region-that-is-designed-in-outlook.md)  
   
   

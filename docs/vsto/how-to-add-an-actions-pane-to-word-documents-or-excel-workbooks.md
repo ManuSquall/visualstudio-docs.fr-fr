@@ -1,86 +1,88 @@
 ---
-title: "Comment&#160;: ajouter un volet Actions &#224; des documents Word ou &#224; des classeurs Excel"
-ms.custom: ""
-ms.date: "02/02/2017"
-ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "office-development"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-dev_langs: 
-  - "VB"
-  - "CSharp"
-helpviewer_keywords: 
-  - "volets Actions (développement Office dans Visual Studio), ajouter des contrôles"
-  - "volets Actions (développement Office dans Visual Studio), créer dans Word"
-  - "documents dynamiques (développement Office dans Visual Studio), ajouter des contrôles"
-  - "documents dynamiques (développement Office dans Visual Studio), créer dans Word"
+title: 'How to: Add an Actions Pane to Word Documents or Excel Workbooks | Microsoft Docs'
+ms.custom: 
+ms.date: 02/02/2017
+ms.prod: visual-studio-dev14
+ms.reviewer: 
+ms.suite: 
+ms.technology:
+- office-development
+ms.tgt_pltfrm: 
+ms.topic: article
+dev_langs:
+- VB
+- CSharp
+helpviewer_keywords:
+- smart documents [Office development in Visual Studio], creating in Word
+- smart documents [Office development in Visual Studio], adding controls
+- actions panes [Office development in Visual Studio], creating in Word
+- actions panes [Office development in Visual Studio], adding controls
 ms.assetid: cea3c2b6-9364-4134-b812-50888ad8bd76
 caps.latest.revision: 63
-author: "kempb"
-ms.author: "kempb"
-manager: "ghogen"
-caps.handback.revision: 62
+author: kempb
+ms.author: kempb
+manager: ghogen
+ms.translationtype: HT
+ms.sourcegitcommit: eb5c9550fd29b0e98bf63a7240737da4f13f3249
+ms.openlocfilehash: d6f6d0bb3a1d0c0975023bd4c70718106d3f5e93
+ms.contentlocale: fr-fr
+ms.lasthandoff: 08/30/2017
+
 ---
-# Comment&#160;: ajouter un volet Actions &#224; des documents Word ou &#224; des classeurs Excel
-  Pour ajouter un volet Actions dans un document Microsoft Office Word ou un classeur Microsoft Excel, créez d'abord un contrôle utilisateur Windows Forms.  Ensuite, ajoutez le contrôle utilisateur à la propriété d' <xref:Microsoft.Office.Tools.ActionsPane.Controls%2A> du champ d' `ThisDocument.ActionsPane` \(Word\) ou du champ d' `ThisWorkbook.ActionsPane` \(Excel\) dans votre projet.  
+# <a name="how-to-add-an-actions-pane-to-word-documents-or-excel-workbooks"></a>How to: Add an Actions Pane to Word Documents or Excel Workbooks
+  To add an actions pane to a Microsoft Office Word document or a Microsoft Excel workbook, first create a Windows Forms user control. Then, add the user control to the <xref:Microsoft.Office.Tools.ActionsPane.Controls%2A> property of the `ThisDocument.ActionsPane` field (Word) or `ThisWorkbook.ActionsPane` field (Excel) in your project.  
   
  [!INCLUDE[appliesto_alldoc](../vsto/includes/appliesto-alldoc-md.md)]  
   
 > [!NOTE]  
->  Il est possible que pour certains des éléments de l'interface utilisateur de Visual Studio, votre ordinateur affiche des noms ou des emplacements différents de ceux indiqués dans les instructions suivantes.  Ces éléments dépendent de l'édition de Visual Studio dont vous disposez et des paramètres que vous utilisez.  Pour plus d’informations, consultez [Customizing Development Settings in Visual Studio](http://msdn.microsoft.com/fr-fr/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
+>  Your computer might show different names or locations for some of the Visual Studio user interface elements in the following instructions. The Visual Studio edition that you have and the settings that you use determine these elements. For more information, see [Personalize the Visual Studio IDE](../ide/personalizing-the-visual-studio-ide.md).  
   
-## Création du contrôle utilisateur  
- La procédure suivante indique comment créer le contrôle utilisateur dans un projet Word ou Excel.  Elle ajoute également un bouton au contrôle utilisateur qui écrit le texte au document ou au classeur lorsqu'un utilisateur clique dessus.  
+## <a name="creating-the-user-control"></a>Creating the User Control  
+ The following procedure shows how to create user control in a Word or Excel project. It also adds a button to the user control that writes text to the document or workbook when it is clicked.  
   
-#### Pour créer le contrôle utilisateur  
+#### <a name="to-create-the-user-control"></a>To create the user control  
   
-1.  Ouvrez votre projet au niveau de le document Word ou excel dans Visual Studio.  
+1.  Open your Word or Excel document-level project in Visual Studio.  
   
-2.  Dans le menu **Projet**, cliquez sur **Ajouter un nouvel élément**.  
+2.  On the **Project** menu, click **Add New Item**.  
   
-3.  Dans la boîte de dialogue **Ajouter un nouvel élément**, sélectionnez **Contrôle de volet Actions**, attribuez\-lui le nom **HelloControl** et cliquez sur **Ajouter**.  
-  
-    > [!NOTE]  
-    >  Vous pouvez ajouter un élément **Contrôle utilisateur** à votre projet.  Les classes générées par les éléments **Contrôle de volet Actions** et **Contrôle utilisateur** sont équivalentes d'un point de vue fonctionnel.  
-  
-4.  À partir de l'onglet **Windows Forms** de la **Boîte à outils**, faites glisser un contrôle **Button** sur le contrôle.  
+3.  In the **Add New Item** dialog box, select **Actions Pane Control**, name it **HelloControl**, and click **Add**.  
   
     > [!NOTE]  
-    >  Si le contrôle n'est pas visible dans le concepteur, double\-cliquez sur **HelloControl** dans l'**Explorateur de solutions**.  
+    >  You can alternatively add a **User Control** item to your project. The classes generated by the **Actions Pane Control** and **User Control** items are functionally equivalent.  
   
-5.  Ajoutez le code au gestionnaire d'événements d' <xref:System.Windows.Forms.Control.Click> du bouton.  L'exemple suivant montre le code pour un document Microsoft Office Word.  
+4.  From the **Windows Forms** tab of the **Toolbox,** drag a **Button** control onto the control.  
   
-     [!code-csharp[Trin_VstcoreActionsPaneWord#12](../snippets/csharp/VS_Snippets_OfficeSP/Trin_VstcoreActionsPaneWord/CS/HelloControl.cs#12)]
-     [!code-vb[Trin_VstcoreActionsPaneWord#12](../snippets/visualbasic/VS_Snippets_OfficeSP/Trin_VstcoreActionsPaneWord/VB/HelloControl.vb#12)]  
+    > [!NOTE]  
+    >  If the control is not visible in the designer, double click **HelloControl** in **Solution Explorer**.  
   
-6.  En C\#, vous devez ajouter un gestionnaire d'événements pour le clic de bouton.  Vous pouvez placer ce code dans le constructeur `HelloControl`, après l'appel à `IntializeComponent`.  
+5.  Add the code to the <xref:System.Windows.Forms.Control.Click> event handler of the button. The following example shows code for a Microsoft Office Word document.  
   
-     Pour plus d'informations sur la création de gestionnaires d'événements, consultez [Comment : créer des gestionnaires d'événements dans les projets Office](../vsto/how-to-create-event-handlers-in-office-projects.md).  
+     [!code-csharp[Trin_VstcoreActionsPaneWord#12](../vsto/codesnippet/CSharp/Trin_VstcoreActionsPaneWordCS/HelloControl.cs#12)]  [!code-vb[Trin_VstcoreActionsPaneWord#12](../vsto/codesnippet/VisualBasic/Trin_VstcoreActionsPaneWordVB/HelloControl.vb#12)]  
   
-     [!code-csharp[Trin_VstcoreActionsPaneWord#13](../snippets/csharp/VS_Snippets_OfficeSP/Trin_VstcoreActionsPaneWord/CS/HelloControl.cs#13)]  
+6.  In C#, you must add an event handler for the button click. You can place this code in the `HelloControl` constructor after the call to `IntializeComponent`.  
   
-## Ajout du contrôle utilisateur au volet Actions  
- Pour afficher le volet Actions, ajoutez le contrôle utilisateur à la propriété d' <xref:Microsoft.Office.Tools.ActionsPane.Controls%2A> du champ d' `ThisDocument.ActionsPane` \(Word\) ou du champ d' `ThisWorkbook.ActionsPane` \(Excel\).  
+     For information about how to create event handlers, see [How to: Create Event Handlers in Office Projects](../vsto/how-to-create-event-handlers-in-office-projects.md).  
   
-#### Pour ajouter le contrôle utilisateur au volet Actions  
+     [!code-csharp[Trin_VstcoreActionsPaneWord#13](../vsto/codesnippet/CSharp/Trin_VstcoreActionsPaneWordCS/HelloControl.cs#13)]  
   
-1.  Ajoutez le code suivant à la classe d' `ThisDocument` ou d' `ThisWorkbook` comme déclaration au niveau de la classe \(n'ajoutez pas ce code à une méthode\).  
+## <a name="adding-the-user-control-to-the-actions-pane"></a>Adding the User Control to the Actions Pane  
+ To show the actions pane, add the user control to the <xref:Microsoft.Office.Tools.ActionsPane.Controls%2A> property of the `ThisDocument.ActionsPane` field (Word) or `ThisWorkbook.ActionsPane` field (Excel).  
   
-     [!code-csharp[Trin_VstcoreActionsPaneWord#14](../snippets/csharp/VS_Snippets_OfficeSP/Trin_VstcoreActionsPaneWord/CS/ThisDocument.cs#14)]
-     [!code-vb[Trin_VstcoreActionsPaneWord#14](../snippets/visualbasic/VS_Snippets_OfficeSP/Trin_VstcoreActionsPaneWord/VB/ThisDocument.vb#14)]  
+#### <a name="to-add-the-user-control-to-the-actions-pane"></a>To add the user control to the actions pane  
   
-2.  Ajoutez le code suivant au gestionnaire d'événements d' `ThisDocument_Startup` de la classe d' `ThisDocument` ou au gestionnaire d'événements d' `ThisWorkbook_Startup` de la classe d' `ThisWorkbook` .  
+1.  Add the following code to the `ThisDocument` or `ThisWorkbook` class as a class-level declaration (do not add this code to a method).  
   
-     [!code-csharp[Trin_VstcoreActionsPaneWord#15](../snippets/csharp/VS_Snippets_OfficeSP/Trin_VstcoreActionsPaneWord/CS/ThisDocument.cs#15)]
-     [!code-vb[Trin_VstcoreActionsPaneWord#15](../snippets/visualbasic/VS_Snippets_OfficeSP/Trin_VstcoreActionsPaneWord/VB/ThisDocument.vb#15)]  
+     [!code-csharp[Trin_VstcoreActionsPaneWord#14](../vsto/codesnippet/CSharp/Trin_VstcoreActionsPaneWordCS/ThisDocument.cs#14)]  [!code-vb[Trin_VstcoreActionsPaneWord#14](../vsto/codesnippet/VisualBasic/Trin_VstcoreActionsPaneWordVB/ThisDocument.vb#14)]  
   
-## Voir aussi  
- [Vue d'ensemble du volet Actions](../vsto/actions-pane-overview.md)   
- [Procédure pas à pas : Insertion de texte dans un document à partir d'un volet Actions](../vsto/walkthrough-inserting-text-into-a-document-from-an-actions-pane.md)   
- [Comment : gérer la disposition des contrôles dans les volets Actions](../vsto/how-to-manage-control-layout-on-actions-panes.md)   
- [Procédure pas à pas : Insertion de texte dans un document à partir d'un volet Actions](../vsto/walkthrough-inserting-text-into-a-document-from-an-actions-pane.md)  
+2.  Add the following code to the `ThisDocument_Startup` event handler of the `ThisDocument` class or the `ThisWorkbook_Startup` event handler of the `ThisWorkbook` class.  
+  
+     [!code-csharp[Trin_VstcoreActionsPaneWord#15](../vsto/codesnippet/CSharp/Trin_VstcoreActionsPaneWordCS/ThisDocument.cs#15)]  [!code-vb[Trin_VstcoreActionsPaneWord#15](../vsto/codesnippet/VisualBasic/Trin_VstcoreActionsPaneWordVB/ThisDocument.vb#15)]  
+  
+## <a name="see-also"></a>See Also  
+ [Actions Pane Overview](../vsto/actions-pane-overview.md)   
+ [Walkthrough: Inserting Text into a Document from an Actions Pane](../vsto/walkthrough-inserting-text-into-a-document-from-an-actions-pane.md)   
+ [How to: Manage Control Layout on Actions Panes](../vsto/how-to-manage-control-layout-on-actions-panes.md)   
+ [Walkthrough: Inserting Text into a Document from an Actions Pane](../vsto/walkthrough-inserting-text-into-a-document-from-an-actions-pane.md)  
   
   

@@ -1,63 +1,79 @@
 ---
-title: "CA1408&#160;: Ne pas utiliser le param&#232;tre AutoDual ClassInterfaceType | Microsoft Docs"
-ms.custom: ""
-ms.date: "12/14/2016"
-ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-devops-test"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "DoNotUseAutoDualClassInterfaceType"
-  - "CA1408"
-helpviewer_keywords: 
-  - "CA1408"
-  - "DoNotUseAutoDualClassInterfaceType"
+title: 'CA1408: Do not use AutoDual ClassInterfaceType | Microsoft Docs'
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology:
+- vs-devops-test
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords:
+- DoNotUseAutoDualClassInterfaceType
+- CA1408
+helpviewer_keywords:
+- CA1408
+- DoNotUseAutoDualClassInterfaceType
 ms.assetid: 60ca5e02-3c51-42dd-942b-4f950eecfa0f
 caps.latest.revision: 16
-caps.handback.revision: 16
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
----
-# CA1408&#160;: Ne pas utiliser le param&#232;tre AutoDual ClassInterfaceType
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
+author: stevehoag
+ms.author: shoag
+manager: wpickett
+translation.priority.ht:
+- de-de
+- es-es
+- fr-fr
+- it-it
+- ja-jp
+- ko-kr
+- ru-ru
+- zh-cn
+- zh-tw
+translation.priority.mt:
+- cs-cz
+- pl-pl
+- pt-br
+- tr-tr
+ms.translationtype: HT
+ms.sourcegitcommit: eb5c9550fd29b0e98bf63a7240737da4f13f3249
+ms.openlocfilehash: 2cceb66b5687cd06d2455396bc875bf11ea80208
+ms.contentlocale: fr-fr
+ms.lasthandoff: 08/30/2017
 
+---
+# <a name="ca1408-do-not-use-autodual-classinterfacetype"></a>CA1408: Do not use AutoDual ClassInterfaceType
 |||  
 |-|-|  
 |TypeName|DoNotUseAutoDualClassInterfaceType|  
 |CheckId|CA1408|  
-|Catégorie|Microsoft.Interoperability|  
-|Modification avec rupture|Oui|  
+|Category|Microsoft.Interoperability|  
+|Breaking Change|Breaking|  
   
-## Cause  
- Un type COM \(Component Object Model\) visible est marqué avec l'attribut <xref:System.Runtime.InteropServices.ClassInterfaceAttribute> défini sur la valeur `AutoDual` de <xref:System.Runtime.InteropServices.ClassInterfaceType>.  
+## <a name="cause"></a>Cause  
+ A Component Object Model (COM) visible type is marked with the <xref:System.Runtime.InteropServices.ClassInterfaceAttribute> attribute set to the `AutoDual` value of <xref:System.Runtime.InteropServices.ClassInterfaceType>.  
   
-## Description de la règle  
- Les types qui utilisent une interface double permettent aux clients de se lier à une disposition d'interface spécifique.  Les modifications apportées à une version future de la disposition du type ou des types de base bloquent les clients COM qui se lient à l'interface.  Par défaut, si l'attribut <xref:System.Runtime.InteropServices.ClassInterfaceAttribute> n'est pas spécifié, une interface de répartition uniquement est utilisée.  
+## <a name="rule-description"></a>Rule Description  
+ Types that use a dual interface enable clients to bind to a specific interface layout. Any changes in a future version to the layout of the type or any base types will break COM clients that bind to the interface. By default, if the <xref:System.Runtime.InteropServices.ClassInterfaceAttribute> attribute is not specified, a dispatch-only interface is used.  
   
- Sauf s'ils sont marqués autrement, tous les types publics et non génériques sont visibles dans COM ; tous les types non publics et génériques ne sont pas visibles dans COM.  
+ Unless marked otherwise, all public nongeneric types are visible to COM; all nonpublic and generic types are invisible to COM.  
   
-## Comment corriger les violations  
- Pour corriger une violation de cette règle, remplacez la valeur de l'attribut <xref:System.Runtime.InteropServices.ClassInterfaceAttribute> par la valeur `None` de <xref:System.Runtime.InteropServices.ClassInterfaceType> et définissez explicitement l'interface.  
+## <a name="how-to-fix-violations"></a>How to Fix Violations  
+ To fix a violation of this rule, change the value of the <xref:System.Runtime.InteropServices.ClassInterfaceAttribute> attribute to the `None` value of <xref:System.Runtime.InteropServices.ClassInterfaceType> and explicitly define the interface.  
   
-## Quand supprimer les avertissements  
- Ne supprimez pas d'avertissement de cette règle sauf s'il est certain que la disposition du type et de ses types de base ne change pas dans une version future.  
+## <a name="when-to-suppress-warnings"></a>When to Suppress Warnings  
+ Do not suppress a warning from this rule unless it is certain that the layout of the type and its base types will not change in a future version.  
   
-## Exemple  
- L'exemple suivant présente une classe qui ne respecte pas la règle et une nouvelle déclaration de la classe pour utiliser une interface explicite.  
+## <a name="example"></a>Example  
+ The following example shows a class that violates the rule and a re-declaration of the class to use an explicit interface.  
   
- [!code-cs[FxCop.Interoperability.AutoDual#1](../code-quality/codesnippet/CSharp/ca1408-do-not-use-autodual-classinterfacetype_1.cs)]
- [!code-vb[FxCop.Interoperability.AutoDual#1](../code-quality/codesnippet/VisualBasic/ca1408-do-not-use-autodual-classinterfacetype_1.vb)]  
+ [!code-csharp[FxCop.Interoperability.AutoDual#1](../code-quality/codesnippet/CSharp/ca1408-do-not-use-autodual-classinterfacetype_1.cs)] [!code-vb[FxCop.Interoperability.AutoDual#1](../code-quality/codesnippet/VisualBasic/ca1408-do-not-use-autodual-classinterfacetype_1.vb)]  
   
-## Règles connexes  
- [CA1403 : Les types Structurer automatiquement ne doivent pas être visibles par COM](../code-quality/ca1403-auto-layout-types-should-not-be-com-visible.md)  
+## <a name="related-rules"></a>Related Rules  
+ [CA1403: Auto layout types should not be COM visible](../code-quality/ca1403-auto-layout-types-should-not-be-com-visible.md)  
   
- [CA1412 : Marquer les interfaces ComSource comme IDispatch](../code-quality/ca1412-mark-comsource-interfaces-as-idispatch.md)  
+ [CA1412: Mark ComSource Interfaces as IDispatch](../code-quality/ca1412-mark-comsource-interfaces-as-idispatch.md)  
   
-## Voir aussi  
- [Introducing the Class Interface](http://msdn.microsoft.com/fr-fr/733c0dd2-12e5-46e6-8de1-39d5b25df024)   
- [Qualifying .NET Types for Interoperation](../Topic/Qualifying%20.NET%20Types%20for%20Interoperation.md)   
- [Interoperating with Unmanaged Code](../Topic/Interoperating%20with%20Unmanaged%20Code.md)
+## <a name="see-also"></a>See Also  
+ [Introducing the Class Interface](http://msdn.microsoft.com/en-us/733c0dd2-12e5-46e6-8de1-39d5b25df024)   
+ [Qualifying .NET Types for Interoperation](/dotnet/framework/interop/qualifying-net-types-for-interoperation)   
+ [Interoperating with Unmanaged Code](/dotnet/framework/interop/index)

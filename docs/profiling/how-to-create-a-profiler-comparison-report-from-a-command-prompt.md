@@ -1,37 +1,54 @@
 ---
-title: "Comment&#160;: cr&#233;er un rapport de comparaisons du profileur &#224; partir d&#39;une invite de commandes | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-debug"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+title: 'How to: Create a Profiler Comparison Report from a Command Prompt | Microsoft Docs'
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology:
+- vs-ide-debug
+ms.tgt_pltfrm: 
+ms.topic: article
 ms.assetid: 00548d16-eb5b-46f7-8a65-862f98a43831
 caps.latest.revision: 10
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 10
----
-# Comment&#160;: cr&#233;er un rapport de comparaisons du profileur &#224; partir d&#39;une invite de commandes
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+translation.priority.ht:
+- cs-cz
+- de-de
+- es-es
+- fr-fr
+- it-it
+- ja-jp
+- ko-kr
+- pl-pl
+- pt-br
+- ru-ru
+- tr-tr
+- zh-cn
+- zh-tw
+ms.translationtype: HT
+ms.sourcegitcommit: 7c87490f8e4ad01df8761ebb2afee0b2d3744fe2
+ms.openlocfilehash: 064bad8c9344e3d10941341fa4f382e90c041c20
+ms.contentlocale: fr-fr
+ms.lasthandoff: 08/31/2017
 
-Vous pouvez créer un rapport des outils de profilage [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] qui compare les données de performances de deux fichiers de données de profilage \(.VSP \/ou .VSPS\).  Le rapport affiche les différences, régressions de performance et améliorations qui sont apparues entre deux sessions de profilage.  Les valeurs dans le rapport présentent le delta, ou la modification, par rapport à la planification initiale du premier fichier que vous spécifiez.  Ce delta est calculé en déterminant la différence entre l'ancienne valeur, qui est la valeur de planification initiale, et la valeur de résultat de la nouvelle analyse.  Les comparaisons de données de profileur peuvent être basées sur les fonctions dans le code, les modules de l'application, les lignes, les pointeurs d'instruction \(IP\) et les types.  
+---
+# <a name="how-to-create-a-profiler-comparison-report-from-a-command-prompt"></a>How to: Create a Profiler Comparison Report from a Command Prompt
+You can generate a [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] Profiling Tools report that compares the performance data of two profiling data (.VSP /or .VSPS) files. The report shows the differences, performance regressions, and improvements that occurred from one profiling session to the other. The values in the report present the delta, or change, from the baseline of the first file that you specify. This delta is calculated by determining the difference between the old value, which is the baseline value, and the result value from the new analysis. Comparisons of profiler data can be based on the functions in the code, modules in the application, lines, instruction pointers (IPs), and types.  
   
- Pour répertorier les identificateurs des catégories et des champs de comparaison, tapez la ligne de commande suivante :  
+ To list the identifiers of the comparison categories and fields, type the following command line:  
   
- **VSPerfReport \/querydifftables**  *VspNomFichier1* *VspNomFichier2*  
+ **VSPerfReport /querydifftables**  *VspFileName1* *VspFileName2*  
   
- Utilisez la syntaxe d'URL suivante pour créer le rapport de comparaison :  
+ Use the following syntax to create the comparison report:  
   
- **VSPerfReport \/diff**  `VspFileName1` *VspNomFichier2* \[**\/**`Options`\]  
+ **VSPerfReport /diff**  `VspFileName1` *VspFileName2* [**/**`Options`]  
   
- Vous pouvez ajouter des options, à partir du tableau suivant, à la ligne de commande **VSPerfReport \/diff** .  
+ You can add options from the following table to the **VSPerfReport /diff** command line.  
   
 |Option|Description|  
 |------------|-----------------|  
-|**DiffThreshold:**\[*Valeur*\]|Ignore la différence si la valeur est inférieure à cette valeur seuil en pourcentage.  De même, les nouvelles données affichant des valeurs inférieures à ce seuil n'apparaîtront pas.|  
-|**DiffTable:** *NomTable*|Utilise ce tableau spécifique pour comparer des fichiers.  Par défaut, le tableau des fonctions est utilisé.  Spécifiez l'identificateur répertorié dans **VSPerfReport \/querydifftables**.|  
-|**DiffColumn:** *ColumnName*|Utilise cette colonne spécifique pour comparer des valeurs.  Par défaut, la colonne de pourcentage d'échantillons exclusifs est utilisée.  Spécifiez l'identificateur répertorié dans **VSPerfReport \/querydifftables**.|
+|**DiffThreshold:**[*Value*]|Disregard the difference if it is below this percentage threshold value. Also, new data with values that are below this threshold will not appear.|  
+|**DiffTable:** *TableName*|Use this table to compare files. By default, the functions table is used. Specify the identifier that is listed in **VSPerfReport /querydifftables**.|  
+|**DiffColumn:** *ColumnName*|Use this column to compare values. By default, the exclusive samples percent column is used. Specify the identifier that is listed in **VSPerfReport /querydifftables**.|

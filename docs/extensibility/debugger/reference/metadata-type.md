@@ -1,5 +1,5 @@
 ---
-title: METADATA_TYPE | Documents Microsoft
+title: METADATA_TYPE | Microsoft Docs
 ms.custom: 
 ms.date: 11/04/2016
 ms.reviewer: 
@@ -30,18 +30,19 @@ translation.priority.mt:
 - tr-tr
 - zh-cn
 - zh-tw
-translationtype: Machine Translation
-ms.sourcegitcommit: 5db97d19b1b823388a465bba15d057b30ff0b3ce
-ms.openlocfilehash: 478cf0efe2bcb9079731ffd3154ce55352e35805
-ms.lasthandoff: 02/22/2017
+ms.translationtype: MT
+ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
+ms.openlocfilehash: f2fd53d0e6a0b92a3c8c7b030d503578aa9d2f98
+ms.contentlocale: fr-fr
+ms.lasthandoff: 08/28/2017
 
 ---
 # <a name="metadatatype"></a>METADATA_TYPE
-Cette structure fournit des informations sur un type de champ extraites à partir des métadonnées.  
+This structure specifies information about a field type taken from metadata.  
   
-## <a name="syntax"></a>Syntaxe  
+## <a name="syntax"></a>Syntax  
   
-```cpp#  
+```cpp  
 typedef struct _tagTYPE_METADATA {  
    ULONG32  ulAppDomainID;  
    GUID     guidModule;  
@@ -49,7 +50,7 @@ typedef struct _tagTYPE_METADATA {
 } METADATA_TYPE;  
 ```  
   
-```c#  
+```csharp  
 public struct METADATA_TYPE {  
    public uint ulAppDomainID;  
    public Guid guidModule;  
@@ -57,31 +58,31 @@ public struct METADATA_TYPE {
 };  
 ```  
   
-#### <a name="parameters"></a>Paramètres  
+#### <a name="parameters"></a>Parameters  
  ulAppDomainID  
- ID de l’application d'où provenance le symbole. Cela est utilisé pour identifier de manière unique une instance de l’application.  
+ ID of the application from which the symbol came. This is used to uniquely identify an instance of the application.  
   
  guidModule  
- Le GUID du module qui contient ce champ.  
+ The GUID of the module that contains this field.  
   
  tokClass  
- ID du jeton de métadonnées de ce type.  
+ The metadata token ID of this type.  
   
  [C++] `_mdToken` is a `typedef` for a 32-bit `int`.  
   
-## <a name="remarks"></a>Remarques  
- Cette structure apparaît dans le cadre de l’union dans la [TYPE_INFO](../../../extensibility/debugger/reference/type-info.md) lorsque la structure le `dwKind` champ la `TYPE_INFO` structure est définie sur `TYPE_KIND_METADATA` (une valeur à partir de la [dwTYPE_KIND](../../../extensibility/debugger/reference/dwtype-kind.md) énumération).  
+## <a name="remarks"></a>Remarks  
+ This structure appears as part of the union in the [TYPE_INFO](../../../extensibility/debugger/reference/type-info.md) structure when the `dwKind` field of the `TYPE_INFO` structure is set to `TYPE_KIND_METADATA` (a value from the [dwTYPE_KIND](../../../extensibility/debugger/reference/dwtype-kind.md) enumeration).  
   
- Le `tokClass` valeur est un jeton de métadonnées qui identifie un type. Pour plus d’informations sur la façon d’interpréter les bits de l’ID de jeton de métadonnées, consultez la `CorTokenType` énumération dans le fichier corhdr.h dans le [!INCLUDE[dnprdnshort](../../../code-quality/includes/dnprdnshort_md.md)] SDK.  
+ The `tokClass` value is a metadata token that uniquely identifies a type. For details on how to interpret the upper bits of the metadata token ID, see the `CorTokenType` enumeration in the corhdr.h file in the [!INCLUDE[dnprdnshort](../../../code-quality/includes/dnprdnshort_md.md)] SDK.  
   
-## <a name="requirements"></a>Spécifications  
- En-tête : sh.h  
+## <a name="requirements"></a>Requirements  
+ Header: sh.h  
   
- Namespace : Microsoft.VisualStudio.Debugger.Interop  
+ Namespace: Microsoft.VisualStudio.Debugger.Interop  
   
- Assembly : Microsoft.VisualStudio.Debugger.Interop.dll  
+ Assembly: Microsoft.VisualStudio.Debugger.Interop.dll  
   
-## <a name="see-also"></a>Voir aussi  
- [Structures et Unions](../../../extensibility/debugger/reference/structures-and-unions.md)   
+## <a name="see-also"></a>See Also  
+ [Structures and Unions](../../../extensibility/debugger/reference/structures-and-unions.md)   
  [TYPE_INFO](../../../extensibility/debugger/reference/type-info.md)   
  [dwTYPE_KIND](../../../extensibility/debugger/reference/dwtype-kind.md)

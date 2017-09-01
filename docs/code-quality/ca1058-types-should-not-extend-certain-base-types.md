@@ -1,38 +1,55 @@
 ---
-title: "CA1058&#160;: Les types ne doivent pas &#233;tendre certains types de base | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-devops-test"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "TypesShouldNotExtendCertainBaseTypes"
-  - "CA1058"
-helpviewer_keywords: 
-  - "CA1058"
-  - "TypesShouldNotExtendCertainBaseTypes"
+title: 'CA1058: Types should not extend certain base types | Microsoft Docs'
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology:
+- vs-devops-test
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords:
+- TypesShouldNotExtendCertainBaseTypes
+- CA1058
+helpviewer_keywords:
+- CA1058
+- TypesShouldNotExtendCertainBaseTypes
 ms.assetid: 8446ee40-beb1-49fa-8733-4d8e813471c0
 caps.latest.revision: 24
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
-caps.handback.revision: 24
----
-# CA1058&#160;: Les types ne doivent pas &#233;tendre certains types de base
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
+author: stevehoag
+ms.author: shoag
+manager: wpickett
+translation.priority.ht:
+- cs-cz
+- de-de
+- es-es
+- fr-fr
+- it-it
+- ja-jp
+- ko-kr
+- pl-pl
+- pt-br
+- ru-ru
+- tr-tr
+- zh-cn
+- zh-tw
+ms.translationtype: HT
+ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
+ms.openlocfilehash: def196d568d99947219baf406b7cbf922f95e387
+ms.contentlocale: fr-fr
+ms.lasthandoff: 08/28/2017
 
+---
+# <a name="ca1058-types-should-not-extend-certain-base-types"></a>CA1058: Types should not extend certain base types
 |||  
 |-|-|  
 |TypeName|TypesShouldNotExtendCertainBaseTypes|  
 |CheckId|CA1058|  
-|Catégorie|Microsoft.CSharp|  
-|Modification avec rupture|Oui|  
+|Category|Microsoft.Design|  
+|Breaking Change|Breaking|  
   
-## Cause  
- Un type visible de l'extérieur étend certains types de base.  Cette règle indique actuellement les types qui dérivent des types suivants :  
+## <a name="cause"></a>Cause  
+ An externally visible type extends certain base types. Currently, this rule reports types that derive from the following types:  
   
 -   <xref:System.ApplicationException?displayProperty=fullName>  
   
@@ -50,17 +67,17 @@ caps.handback.revision: 24
   
 -   <xref:System.Collections.Stack?displayProperty=fullName>  
   
-## Description de la règle  
- Pour la version 1 de [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)], il était recommandé de dériver les nouvelles exceptions de <xref:System.ApplicationException>.  Cette recommandation a changé et les nouvelles exceptions doivent dériver de <xref:System.Exception?displayProperty=fullName> ou d'une de ses sous\-classes dans l'espace de noms <xref:System>.  
+## <a name="rule-description"></a>Rule Description  
+ For [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] version 1, it was recommended to derive new exceptions from <xref:System.ApplicationException>. The recommendation has changed and new exceptions should derive from <xref:System.Exception?displayProperty=fullName> or one of its subclasses in the <xref:System> namespace.  
   
- Ne créez pas de sous\-classe de <xref:System.Xml.XmlDocument> si vous souhaitez créer un affichage XML d'un modèle objet ou d'une source de données sous\-jacent.  
+ Do not create a subclass of <xref:System.Xml.XmlDocument> if you want to create an XML view of an underlying object model or data source.  
   
-### Collections non génériques  
- Utiliser et\/ou étendre des collections génériques chaque fois que possible.  N'étendez pas de collections non génériques dans votre code, à moins que vous ne les ayez expédiées précédemment.  
+### <a name="non-generic-collections"></a>Non-generic Collections  
+ Use and/or extend generic collections whenever possible. Do not extend non-generic collections in your code, unless you shipped it previously.  
   
- **Exemples d'utilisations incorrectes**  
+ **Examples of Incorrect Usage**  
   
-```c#  
+```csharp  
 public class MyCollection : CollectionBase  
 {  
 }  
@@ -70,9 +87,9 @@ public class MyReadOnlyCollection : ReadOnlyCollectionBase
 }  
 ```  
   
- **Exemples d'utilisations correctes**  
+ **Examples of Correct Usage**  
   
-```c#  
+```csharp  
 public class MyCollection : Collection<T>  
 {  
 }  
@@ -82,8 +99,8 @@ public class MyReadOnlyCollection : ReadOnlyCollection<T>
 }  
 ```  
   
-## Comment corriger les violations  
- Pour résoudre une violation de cette règle, dérivez le type d'un type de base différent ou d'une collection générique.  
+## <a name="how-to-fix-violations"></a>How to Fix Violations  
+ To fix a violation of this rule, derive the type from a different base type or a generic collection.  
   
-## Quand supprimer les avertissements  
- Ne supprimez pas un avertissement de cette règle pour les violations concernant <xref:System.ApplicationException>.  Il est possible de supprimer sans risque un avertissement de cette règle pour les violations concernant <xref:System.Xml.XmlDocument>.  Il est possible de supprimer un avertissement à propos d'une collection non générique si le code a été diffusé précédemment.
+## <a name="when-to-suppress-warnings"></a>When to Suppress Warnings  
+ Do not suppress a warning from this rule for violations about <xref:System.ApplicationException>. It is safe to suppress a warning from this rule for violations about <xref:System.Xml.XmlDocument>. It is safe to suppress a warning about a non-generic collection if the code was released previously.

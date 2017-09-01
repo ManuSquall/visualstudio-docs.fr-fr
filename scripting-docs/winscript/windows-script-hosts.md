@@ -1,40 +1,45 @@
 ---
-title: "Windows Script Hosts | Microsoft Docs"
-ms.custom: ""
-ms.date: "01/18/2017"
-ms.prod: "windows-script-interfaces"
-ms.reviewer: ""
-ms.suite: ""
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-helpviewer_keywords: 
-  - "Windows Script Host, implémenter les hôtes"
+title: "Hôtes Windows Script | Microsoft Docs"
+ms.custom: 
+ms.date: 01/18/2017
+ms.prod: windows-script-interfaces
+ms.reviewer: 
+ms.suite: 
+ms.tgt_pltfrm: 
+ms.topic: article
+helpviewer_keywords:
+- Windows Script Host, implementing hosts
 ms.assetid: 9d5f6471-b318-40f3-be01-d9cd0b1cdd47
 caps.latest.revision: 7
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 7
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.translationtype: HT
+ms.sourcegitcommit: 6fbf89668d47d55d1d77a1d7f11765567fc73405
+ms.openlocfilehash: 41fa898c7f0d62cd35cc1cb1c7b35eb2651c8bb6
+ms.contentlocale: fr-fr
+ms.lasthandoff: 08/11/2017
+
 ---
-# Windows Script Hosts
-En implémentant l'hôte de script Microsoft Windows, vous pouvez ignorer sans risque supposer qu'un moteur de script appelle uniquement l'interface d' [IActiveScriptSite](../winscript/reference/iactivescriptsite.md) dans le contexte du thread de base tant que l'hôte effectue les opérations suivantes :  
+# <a name="windows-script-hosts"></a>Windows Script Hosts
+Quand vous implémentez un hôte Microsoft Windows Script, vous pouvez raisonnablement supposer qu’un moteur de script appelle uniquement l’interface [IActiveScriptSite](../winscript/reference/iactivescriptsite.md) dans le contexte du thread de base, et ce tant que l’hôte effectue les opérations suivantes :  
   
--   Choisit un thread de base \(généralement le thread qui contient la boucle de message\).  
+-   Choisit un thread de base (généralement le thread qui contient la boucle de messages).  
   
 -   Instancie le moteur de script dans le thread de base.  
   
--   Méthodes du moteur de script d'appels uniquement le thread de base, sauf dans spécifiquement autorisé, comme lorsqu'il s'agit d' [IActiveScript::InterruptScriptThread](../winscript/reference/iactivescript-interruptscriptthread.md) et d' [IActiveScript::Clone](../winscript/reference/iactivescript-clone.md).  
+-   Appelle les méthodes du moteur de script uniquement à partir du thread de base, sauf aux emplacements spécifiquement autorisés, comme avec [IActiveScript::InterruptScriptThread](../winscript/reference/iactivescript-interruptscriptthread.md) et [IActiveScript::Clone](../winscript/reference/iactivescript-clone.md).  
   
--   Appelle l'objet de l'expédition du moteur de script que le thread de base.  
+-   Appelle l’objet de répartition du moteur de script uniquement à partir du thread de base.  
   
--   Garantit que la boucle de message s'exécute dans le thread de base si un handle de fenêtre est fournie.  
+-   Garantit que la boucle de messages s’exécute dans le thread de base si un handle de fenêtre est fourni.  
   
--   Garantit que les objets des événements de source du modèle objet de l'hôte uniquement dans le thread de base.  
+-   Garantit que les objets dans le modèle objet de l’hôte approvisionnent uniquement des événements dans le thread de base.  
   
- Ces règles sont automatiquement suivies par tous les hôtes monothread.  Le modèle décrit ci\-dessus est limité volontairement assez faible pour permettre à un hôte pour interrompre un script coincé en appelant [IActiveScript::InterruptScriptThread](../winscript/reference/iactivescript-interruptscriptthread.md) d'un autre thread \(initialisé par un gestionnaire de CTRL\+ATTN ou analogues\), ou pour reproduire un script dans un nouveau thread à l'aide de [IActiveScript::Clone](../winscript/reference/iactivescript-clone.md).  
+ Ces règles sont suivies automatiquement par tous les hôtes à thread unique. Le modèle restreint décrit ci-dessus a été intentionnellement conçu de manière assez souple pour permettre à un hôte d’abandonner un script bloqué en appelant [IActiveScript::InterruptScriptThread](../winscript/reference/iactivescript-interruptscriptthread.md) à partir d’un autre thread (lancé par un gestionnaire Ctrl+Pause ou similaire) ou de dupliquer un script dans un nouveau thread en utilisant [IActiveScript::Clone](../winscript/reference/iactivescript-clone.md).  
   
-## Remarques  
- Aucune de ces restrictions n'applique à un hôte qui choisit d'implémenter une interface libre de threads d' [IActiveScriptSite](../winscript/reference/iactivescriptsite.md) et un modèle objet libre de threads.  Un tel hôte peut utiliser l'interface d' [IActiveScript](../winscript/reference/iactivescript.md) de n'importe quel thread, sans restriction.  
+## <a name="remarks"></a>Remarques  
+ Aucune de ces restrictions ne s’applique à un hôte qui choisit d’implémenter une interface [IActiveScriptSite](../winscript/reference/iactivescriptsite.md) à threads libres et un modèle objet à threads libres. Un tel hôte peut utiliser l’interface [IActiveScript](../winscript/reference/iactivescript.md) à partir de n’importe quel thread, sans restriction.  
   
-## Voir aussi  
- [\<PAVE OVER\> Interfaces de script Microsoft Windows \- Introduction](http://msdn.microsoft.com/library/3d10169f-2984-49ef-90c6-dd89c97f1dd6)
+## <a name="see-also"></a>Voir aussi  
+ [Windows Script, interfaces](../winscript/windows-script-interfaces.md)

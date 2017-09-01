@@ -1,73 +1,91 @@
 ---
-title: "VSPerf | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-debug"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+title: VSPerf | Microsoft Docs
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology:
+- vs-ide-debug
+ms.tgt_pltfrm: 
+ms.topic: article
 ms.assetid: b5854e62-279e-4850-bfeb-0c6ef82f4805
 caps.latest.revision: 6
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 6
----
-# VSPerf
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+translation.priority.ht:
+- de-de
+- es-es
+- fr-fr
+- it-it
+- ja-jp
+- ko-kr
+- ru-ru
+- zh-cn
+- zh-tw
+translation.priority.mt:
+- cs-cz
+- pl-pl
+- pt-br
+- tr-tr
+ms.translationtype: HT
+ms.sourcegitcommit: 7c87490f8e4ad01df8761ebb2afee0b2d3744fe2
+ms.openlocfilehash: d150336c336d046983d44afffc59c90cd30136af
+ms.contentlocale: fr-fr
+ms.lasthandoff: 08/31/2017
 
-Utilisez l'outil de ligne de commande **VsPerf** :  
+---
+# <a name="vsperf"></a>VSPerf
+Use the **VsPerf** command line tool to:  
   
-1.  Les fenêtres de profil stockent les applications de ligne de commande lorsque Visual Studio n'est pas installé sur le périphérique.  
+1.  Profile Windows Store apps from the command line when Visual Studio is not installed on the device.  
   
-2.  Profilez les Applications de Bureau Windows 8 et les applications Windows Server 2012 à l'aide de la méthode de profilage de l'échantillonnage.  
+2.  Profile Windows 8 desktop applications and Windows Server 2012 applications using the sampling profiling method.  
   
- Pour plus d'informations sur vos options de profilage, consultez [Profilage d'applications Windows 8 et Windows Server 2012](../profiling/performance-tools-on-windows-8-and-windows-server-2012-applications.md).  
+ For more information about your profiling options, see [Performance Tools on Windows 8 and Windows Server 2012 applications](../profiling/performance-tools-on-windows-8-and-windows-server-2012-applications.md).  
   
-##  <a name="BKMK_In_this_topic"></a> Dans cette rubrique  
- Cette rubrique décrit les options que vous pouvez utiliser avec l'outil de ligne de commande de `vsperf.exe`.  La rubrique contient les sections suivantes :  
+##  <a name="BKMK_In_this_topic"></a> In this topic  
+ This topic describes the options that you can use with the `vsperf.exe` command line tool. The topic contains the following sections:  
   
- [Applications de Windows Store seulement](#BKMK_windows_store_apps_only)  
+ [Windows Store apps only](#BKMK_windows_store_apps_only)  
   
- [Applications de Bureau Windows 8 et Applications Windows Server 2012 seulement](#BKMK_Windows_8_classic_applications_and_Windows_Server_2012_applications_only)  
+ [Windows 8 desktop applications and Windows Server 2012 applications only](#BKMK_Windows_8_classic_applications_and_Windows_Server_2012_applications_only)  
   
- [Toutes les applications](#BKMK_All_applications)  
+ [All applications](#BKMK_All_applications)  
   
-##  <a name="BKMK_windows_store_apps_only"></a> Applications de Windows Store seulement  
- Ces options s'appliquent uniquement aux applications du Windows Store  
-  
-|||  
-|-|-|  
-|**\/app:{AppName}**|Démarre le Générateur de profils et attend l'application spécifiée à partir du menu Démarrer<br /><br /> Exécutez `vsperf /listapps` pour afficher le nom de l'application et le PackageFullName des applications installées.|  
-|**\/package:{PackageFullName}**|Démarre le Générateur de profils et attend l'application spécifiée à partir du menu Démarrer<br /><br /> Exécutez `vsperf /listapps` pour afficher le nom de l'application et le PackageFullName des applications installées.|  
-|**\/js**|Requis pour profiler les applications JavaScript.<br /><br /> Regrouper des données de performances des applications JavaScript.<br /><br /> Utilisez uniquement avec \/package ou \/attach.|  
-|**\/noclr**|Optionnel.  Ne collecte pas des données CLR.<br /><br /> Utilisez uniquement avec \/package ou \/attach.<br /><br /> Optimisation, aucun symbole géré ne sera résolu.|  
-|**\/listapps**|Liste les noms des applications installées et PakageFullNames.|  
-  
-##  <a name="BKMK_Windows_8_classic_applications_and_Windows_Server_2012_applications_only"></a> Applications de Bureau Windows 8 et Applications Windows Server 2012 seulement  
- Ces options ne fonctionnent pas pour les applications du Windows Store.  
+##  <a name="BKMK_windows_store_apps_only"></a> Windows Store apps only  
+ These options apply only to Windows Store apps.  
   
 |||  
 |-|-|  
-|**\/launch:{Executable}**|Démarre et commence le profilage de l'exécutable spécifié.|  
-|**\/args:{ExecutableArguments}**|Spécifie les arguments de ligne de commande pour passer la cible **\/launch**.|  
-|**\/console**|Exécute la cible **\/launch** dans une nouvelle fenêtre de commande.|  
+|**/app:{AppName}**|Starts the profiler and waits for the specified app to be launched from the Start menu.<br /><br /> Run `vsperf /listapps` to view the app Name and PackageFullName of installed apps.|  
+|**/package:{PackageFullName}**|Starts the profiler and waits for the specified app to be launched from the Start menu.<br /><br /> Run `vsperf /listapps` to view the app Name and PackageFullName of installed apps.|  
+|**/js**|Required for profiling JavaScript apps.<br /><br /> Collect performance data from JavaScript apps.<br /><br /> Use only with /package or /attach.|  
+|**/noclr**|Optional. Do not collect CLR data.<br /><br /> Use only with /package or /attach.<br /><br /> Optimization, no managed symbols will resolve.|  
+|**/listapps**|List installed app Names and PackageFullNames.|  
   
-##  <a name="BKMK_All_applications"></a> Toutes les applications  
- Ces options s'appliquent à toute application Windows 8 ou application Windows Server 2012.  
+##  <a name="BKMK_Windows_8_classic_applications_and_Windows_Server_2012_applications_only"></a> Windows 8 desktop applications and Windows Server 2012 applications only  
+ These options do not work on Windows Store apps.  
   
 |||  
 |-|-|  
-|**\/attach:{PID&#124;ProcessName}\[,PID&#124;ProcessName\]...**|Collecte des données à partir des processus spécifiés.<br /><br /> Utilisez le Gestionnaire des tâches pour afficher l'ID de processus \(PID\) et traiter des noms des applications en cours de exécution.|  
-|**\/file:{ReportName}**|Optionnel.  Spécifie le fichier de sortie \(remplace un fichier existant\).<br /><br /> Utilisez uniquement avec \/package ou \/attach.|  
-|**\/pause**|Collecte de données de pause.|  
-|**\/resume**|Collecte de données de synthèse.|  
-|**\/stop**|Arrête la collecte des données et les processus cibles.|  
-|**\/detach**|Arrête la collecte des données, mais poursuivre l'exécution des processus cibles.|  
-|**\/status**|Afficher l'état du Générateur de profils.|  
+|**/launch:{Executable}**|Starts and begins profiling the specified executable file.|  
+|**/args:{ExecutableArguments}**|Specifies command line arguments to pass the **/launch** target.|  
+|**/console**|Runs the **/launch** target in a new command window.|  
   
-## Voir aussi  
- [Profilage d'applications Windows 8 et Windows Server 2012](../profiling/performance-tools-on-windows-8-and-windows-server-2012-applications.md)   
- [Profilage à partir de la ligne de commande](../profiling/using-the-profiling-tools-from-the-command-line.md)
+##  <a name="BKMK_All_applications"></a> All applications  
+ These option apply to any Windows 8 or Windows Server 2012 application.  
+  
+|||  
+|-|-|  
+|**/attach:{PID&#124;ProcessName}[,PID&#124;ProcessName]...**|Collects data from the specified processes.<br /><br /> Use Task Manager to view the process id (PID) and process names of running apps.|  
+|**/file:{ReportName}**|Optional. Specifies output file (overwrites existing file).<br /><br /> Use only with /package or /attach.|  
+|**/pause**|Pause data collection.|  
+|**/resume**|Resume data collection.|  
+|**/stop**|Stop data collection and terminate target processes.|  
+|**/detach**|Stop data collection, but let target processes continue to run.|  
+|**/status**|Show profiler status.|  
+  
+## <a name="see-also"></a>See Also  
+ [Performance Tools on Windows 8 and Windows Server 2012 applications](../profiling/performance-tools-on-windows-8-and-windows-server-2012-applications.md)   
+ [Profiling from the Command-Line](../profiling/using-the-profiling-tools-from-the-command-line.md)

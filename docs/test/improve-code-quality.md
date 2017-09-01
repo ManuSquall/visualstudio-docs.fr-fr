@@ -30,10 +30,10 @@ translation.priority.ht:
 - zh-cn
 - zh-tw
 ms.translationtype: Human Translation
-ms.sourcegitcommit: 47057e9611b824c17077b9127f8d2f8b192d6eb8
-ms.openlocfilehash: fbc3a182d2c3dbceaa17685f649ea73a3e73ed85
+ms.sourcegitcommit: 11a9cee75f912c5fb31cf4a031644abe9c63d744
+ms.openlocfilehash: db500747061b436db2a0897e5b43a1cae4a3acae
 ms.contentlocale: fr-fr
-ms.lasthandoff: 05/13/2017
+ms.lasthandoff: 06/03/2017
 
 ---
 # <a name="improve-code-quality"></a>Améliorer la qualité du code
@@ -54,8 +54,8 @@ Qu'est-ce que la qualité du code ? Pour que le code que vous créez soit de qu
 |[Mesures de la complexité et de la facilité de maintenance du code managé](../code-quality/measuring-complexity-and-maintainability-of-managed-code.md)|La métrique du code est un jeu de mesures de logiciel qui fournit aux développeurs plus de détails sur le code qu'ils développent. La métrique inclut un index de maintenabilité des fonctions et des classes, la complexité cyclomatique des fonctions, la profondeur d'héritage des classes et la quantité de couplage entre les classes.|  
   
 ## <a name="related-scenarios"></a>Scénarios connexes  
- [Adoption de Visual Studio et Team Foundation Server pour Application Lifecycle Management](assetId:///7ae9182f-4762-4bd3-b238-39ce987932e5)  
- Si Visual Studio Team Foundation ne vous est pas familier, vous pouvez apprendre à l’utiliser dans un environnement de développement en équipe pour améliorer la productivité et réduire les risques associés au développement d’applications.  
+ [Vue d’ensemble de DevOps pour Team Services et TFS](https://www.visualstudio.com/docs/devops-alm-overview)  
+ Si Visual Studio Team Foundation et Visual Studio Team Services ne vous sont pas familiers, vous pouvez apprendre à les utiliser dans un environnement de développement en équipe pour améliorer la productivité et réduire les risques associés au développement d’applications.  
   
  [Analyse et modélisation de l’architecture](../modeling/analyze-and-model-your-architecture.md)  
  Vous pouvez utiliser [!INCLUDE[vsPreExt](../test/includes/vspreext_md.md)] afin de faire face aux difficultés et à la complexité de la conception de logiciel. [!INCLUDE[vsPreShort](../test/includes/vspreshort_md.md)] vous permet de modéliser visuellement votre application, telle qu'elle existe actuellement et comme vous souhaitez qu'elle existe ultérieurement. Vous pouvez créer et tenir à jour des diagrammes pour vous aider à visualiser en même temps les modèles logiques de votre application et les modèles physiques ; cela vous permet de modifier, valider et analyser le logiciel « en cours de conception ».  

@@ -1,5 +1,5 @@
 ---
-title: IEnumDebugCustomAttributes::Clone | Documents Microsoft
+title: IEnumDebugCustomAttributes::Clone | Microsoft Docs
 ms.custom: 
 ms.date: 11/04/2016
 ms.reviewer: 
@@ -30,38 +30,39 @@ translation.priority.mt:
 - tr-tr
 - zh-cn
 - zh-tw
-translationtype: Machine Translation
-ms.sourcegitcommit: 5db97d19b1b823388a465bba15d057b30ff0b3ce
-ms.openlocfilehash: 97fe72954a3d1d178f17f5b3a582ee7d7ae4aa55
-ms.lasthandoff: 02/22/2017
+ms.translationtype: MT
+ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
+ms.openlocfilehash: 58aae975ea79bdfa448ab91b55ae3191e072ac05
+ms.contentlocale: fr-fr
+ms.lasthandoff: 08/28/2017
 
 ---
 # <a name="ienumdebugcustomattributesclone"></a>IEnumDebugCustomAttributes::Clone
-Crée un énumérateur qui contient le même état d’énumération que l’énumérateur actuel.  
+Creates an enumerator that contains the same enumeration state as the current enumerator.  
   
-## <a name="syntax"></a>Syntaxe  
+## <a name="syntax"></a>Syntax  
   
-```cpp#  
+```cpp  
 HRESULT Clone (   
    IEnumCustomAttributes** ppEnum  
 );  
 ```  
   
-```c#  
+```csharp  
 int Clone(  
    out IEnumDebugCustomAttributes ppEnum  
 );  
 ```  
   
-#### <a name="parameters"></a>Paramètres  
+#### <a name="parameters"></a>Parameters  
  ppEnum  
- [out] Retourne une copie de cette énumération comme un objet distinct.  
+ [out] Returns a copy of this enumeration as a separate object.  
   
-## <a name="return-value"></a>Valeur de retour  
- En cas de réussite, retourne `S_OK`; sinon, retourne un code d’erreur.  
+## <a name="return-value"></a>Return Value  
+ If successful, returns `S_OK`; otherwise, returns an error code.  
   
-## <a name="remarks"></a>Remarques  
- La copie de l’énumération a le même état que l’original au moment de que l’appel de cette méthode. Toutefois, les États de la copie et l’original sont distincts et peuvent être modifiées individuellement.  
+## <a name="remarks"></a>Remarks  
+ The copy of the enumeration has the same state as the original at the time this method is called. However, the copy's and the original's states are separate and can be changed individually.  
   
-## <a name="see-also"></a>Voir aussi  
+## <a name="see-also"></a>See Also  
  [IEnumDebugCustomAttributes](../../../extensibility/debugger/reference/ienumdebugcustomattributes.md)

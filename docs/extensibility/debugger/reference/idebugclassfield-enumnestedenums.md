@@ -1,53 +1,70 @@
 ---
-title: "IDebugClassField::EnumNestedEnums | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "IDebugClassField::EnumNestedEnums"
-helpviewer_keywords: 
-  - "IDebugClassField::EnumNestedEnums (méthode)"
+title: IDebugClassField::EnumNestedEnums | Microsoft Docs
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology:
+- vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords:
+- IDebugClassField::EnumNestedEnums
+helpviewer_keywords:
+- IDebugClassField::EnumNestedEnums method
 ms.assetid: 90fd0cef-9145-4de6-91d4-6c881df39d6e
 caps.latest.revision: 9
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 9
----
-# IDebugClassField::EnumNestedEnums
-[!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]
+ms.author: gregvanl
+manager: ghogen
+translation.priority.mt:
+- cs-cz
+- de-de
+- es-es
+- fr-fr
+- it-it
+- ja-jp
+- ko-kr
+- pl-pl
+- pt-br
+- ru-ru
+- tr-tr
+- zh-cn
+- zh-tw
+ms.translationtype: MT
+ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
+ms.openlocfilehash: efc8c16c3486e7decc5f3d4009bfcb1175a943db
+ms.contentlocale: fr-fr
+ms.lasthandoff: 08/28/2017
 
-crée un énumérateur pour les énumérateurs imbriqués de cette classe.  
+---
+# <a name="idebugclassfieldenumnestedenums"></a>IDebugClassField::EnumNestedEnums
+Creates an enumerator for the nested enumerators of this class.  
   
-## Syntaxe  
+## <a name="syntax"></a>Syntax  
   
-```cpp#  
-HRESULT EnumNestedEnums(   
-   IEnumDebugFields** ppEnum  
+```cpp  
+HRESULT EnumNestedEnums(   
+   IEnumDebugFields** ppEnum  
 );  
 ```  
   
-```c#  
+```csharp  
 int EnumNestedEnums(  
-   out IEnumDebugFields ppEnum  
+   out IEnumDebugFields ppEnum  
 );  
 ```  
   
-#### Paramètres  
+#### <a name="parameters"></a>Parameters  
  `ppEnum`  
- \[out\]  Retourne un objet d' [IEnumDebugFields](../../../extensibility/debugger/reference/ienumdebugfields.md) représentant la liste d'énumérations imbriquées.  Retourne une valeur NULL s'il n'y a aucune énumération imbriquée.  
+ [out] Returns an [IEnumDebugFields](../../../extensibility/debugger/reference/ienumdebugfields.md) object representing the list of nested enumerations. Returns a null value if there are no nested enumerations.  
   
-## Valeur de retour  
- En cas de réussite, retourne S\_OK ou retourne S\_FALSE s'il n'y a aucun énumérateur imbriqué.  Sinon, retourne un code d'erreur.  
+## <a name="return-value"></a>Return Value  
+ If successful, returns S_OK or returns S_FALSE if there are no nested enumerators. Otherwise, returns an error code.  
   
-## Notes  
- chaque élément de l'énumération est un objet d' [IDebugEnumField](../../../extensibility/debugger/reference/idebugenumfield.md) décrivant une énumération imbriquée.  
+## <a name="remarks"></a>Remarks  
+ Each element of the enumeration is an [IDebugEnumField](../../../extensibility/debugger/reference/idebugenumfield.md) object describing a nested enumeration.  
   
- Une énumération déclarée à l'intérieur d'une classe est considérée comme une énumération imbriquée.  Supposons, par exemple :  
+ An enumeration declared inside a class is considered a nested enumeration. For example, given:  
   
 ```  
 class RootClass {  
@@ -55,9 +72,9 @@ class RootClass {
 };  
 ```  
   
- La méthode d' `EnumNestedEnums` retourne un objet d' [IEnumDebugFields](../../../extensibility/debugger/reference/ienumdebugfields.md) qui contient un objet d' [IDebugEnumField](../../../extensibility/debugger/reference/idebugenumfield.md) qui représente l'énumération d' `NestedEnum` .  
+ The `EnumNestedEnums` method would return an [IEnumDebugFields](../../../extensibility/debugger/reference/ienumdebugfields.md) object that contains one [IDebugEnumField](../../../extensibility/debugger/reference/idebugenumfield.md) object that represents the `NestedEnum` enumeration.  
   
-## Voir aussi  
+## <a name="see-also"></a>See Also  
  [IDebugClassField](../../../extensibility/debugger/reference/idebugclassfield.md)   
  [IEnumDebugFields](../../../extensibility/debugger/reference/ienumdebugfields.md)   
  [IDebugEnumField](../../../extensibility/debugger/reference/idebugenumfield.md)

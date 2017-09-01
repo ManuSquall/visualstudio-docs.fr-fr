@@ -37,8 +37,7 @@ ms.contentlocale: fr-fr
 ms.lasthandoff: 05/30/2017
 
 ---
-# Comment : cibler une version du .NET Framework
-<a id="how-to-target-a-version-of-the-net-framework" class="xliff"></a>
+# <a name="how-to-target-a-version-of-the-net-framework"></a>Comment : cibler une version du .NET Framework
 Ce document explique comment cibler une version de .NET Framework lorsque vous créez un projet et comment modifier la version ciblée dans un projet Visual Basic, Visual C# ou Visual F# existant.  
   
 > [!IMPORTANT]
@@ -56,8 +55,7 @@ Ce document explique comment cibler une version de .NET Framework lorsque vous c
 > [!NOTE]
 >  Dans les éditions Express de Visual Studio, vous devez créer le projet en premier, et vous pouvez modifier la cible, comme indiqué dans [Modification de la version cible](../ide/how-to-target-a-version-of-the-dotnet-framework.md#bkmk_existing) plus loin dans cette rubrique.  
   
-#### Pour cibler une version lorsque vous créez un projet
-<a id="to-target-a-version-when-you-create-a-project" class="xliff"></a>  
+#### <a name="to-target-a-version-when-you-create-a-project"></a>Pour cibler une version lorsque vous créez un projet  
   
 1.  Dans la barre de menus, sélectionnez **Fichier**, **Nouveau**, **Projet**.  
   
@@ -73,8 +71,7 @@ Ce document explique comment cibler une version de .NET Framework lorsque vous c
 ##  <a name="bkmk_existing"></a> Modification de la version cible  
  Vous pouvez modifier la version ciblée de .NET Framework dans un projet Visual Basic, Visual C# ou Visual F# en suivant cette procédure.  
   
-#### Pour modifier la version ciblée
-<a id="to-change-the-targeted-version" class="xliff"></a>  
+#### <a name="to-change-the-targeted-version"></a>Pour modifier la version ciblée  
   
 1.  Dans l’**Explorateur de solutions**, ouvrez le menu contextuel du projet que vous souhaitez modifier, puis choisissez **Propriétés**.  
   
@@ -99,8 +96,7 @@ Ce document explique comment cibler une version de .NET Framework lorsque vous c
     > [!NOTE]
     >  Si votre code contient des références à une autre version du .NET Framework que celui que vous avez ciblé, des messages d'erreur peuvent s'afficher lorsque vous compilez et exécutez le code. Pour résoudre ces erreurs, vous devez modifier les références. Consultez [Dépannage des erreurs de ciblage du .NET Framework](../msbuild/troubleshooting-dotnet-framework-targeting-errors.md).  
   
-## Voir aussi
-<a id="see-also" class="xliff"></a>  
+## <a name="see-also"></a>Voir aussi  
  [Vue d’ensemble du multiciblage Visual Studio](../ide/visual-studio-multi-targeting-overview.md)   
  [.NET Framework Multi-Targeting pour les projets web ASP.NET](http://msdn.microsoft.com/Library/8b8145a9-62f6-4fc4-8a83-47b0487cbe76)   
  [Dépannage des erreurs de ciblage du .NET Framework](../msbuild/troubleshooting-dotnet-framework-targeting-errors.md)   

@@ -1,96 +1,99 @@
 ---
-title: "Comment&#160;: ajouter des contr&#244;les Chart aux feuilles de calcul"
-ms.custom: ""
-ms.date: "02/02/2017"
-ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "office-development"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-dev_langs: 
-  - "VB"
-  - "CSharp"
-helpviewer_keywords: 
-  - "Chart (contrôle) (développement Office dans Visual Studio), ajouter à des feuilles de calcul"
-  - "contrôles (développement Office dans Visual Studio), ajouter à des feuilles de calcul"
+title: 'How to: Add Chart Controls to Worksheets | Microsoft Docs'
+ms.custom: 
+ms.date: 02/02/2017
+ms.prod: visual-studio-dev14
+ms.reviewer: 
+ms.suite: 
+ms.technology:
+- office-development
+ms.tgt_pltfrm: 
+ms.topic: article
+dev_langs:
+- VB
+- CSharp
+helpviewer_keywords:
+- Chart control [Office development in Visual Studio], adding to worksheets
+- controls [Office development in Visual Studio], adding to worksheets
 ms.assetid: f02568e7-5caa-45b4-aa2a-4f73b0565d4e
 caps.latest.revision: 44
-author: "kempb"
-ms.author: "kempb"
-manager: "ghogen"
-caps.handback.revision: 42
+author: kempb
+ms.author: kempb
+manager: ghogen
+ms.translationtype: HT
+ms.sourcegitcommit: eb5c9550fd29b0e98bf63a7240737da4f13f3249
+ms.openlocfilehash: 62810cb2bcb6f03be91f66f3c581fa0798fca3ba
+ms.contentlocale: fr-fr
+ms.lasthandoff: 08/30/2017
+
 ---
-# Comment&#160;: ajouter des contr&#244;les Chart aux feuilles de calcul
-  Vous pouvez ajouter des contrôles <xref:Microsoft.Office.Tools.Excel.Chart> à une feuille de calcul Microsoft Office Excel au moment du design et au moment de l'exécution dans des personnalisations au niveau du document.  Vous pouvez également ajouter des contrôles <xref:Microsoft.Office.Tools.Excel.Chart> au moment de l'exécution dans des compléments VSTO.  
+# <a name="how-to-add-chart-controls-to-worksheets"></a>How to: Add Chart Controls to Worksheets
+  You can add <xref:Microsoft.Office.Tools.Excel.Chart> controls to a Microsoft Office Excel worksheet at design time and at run time in document-level customizations. You can also add <xref:Microsoft.Office.Tools.Excel.Chart> controls at run time in VSTO Add-ins.  
   
  [!INCLUDE[appliesto_xlalldocapp](../vsto/includes/appliesto-xlalldocapp-md.md)]  
   
- Cette rubrique décrit les tâches suivantes :  
+ This topic describes the following tasks:  
   
--   [Ajout de contrôles Chart au moment du design](#designtime)  
+-   [Adding Chart controls at design time](#designtime)  
   
--   [Ajout de contrôles Chart au moment de l'exécution dans un projet au niveau du document](#runtimedoclevel)  
+-   [Adding Chart controls at run time in a document-level project](#runtimedoclevel)  
   
--   [Ajout de contrôles Chart au moment de l'exécution dans un projet de complément VSTO](#runtimeaddin)  
+-   [Adding Chart controls at run time in a VSTO Add-in project](#runtimeaddin)  
   
- Pour plus d'informations sur les contrôles <xref:Microsoft.Office.Tools.Excel.Chart>, consultez [Chart, contrôle](../vsto/chart-control.md).  
+ For more information about <xref:Microsoft.Office.Tools.Excel.Chart> controls, see [Chart Control](../vsto/chart-control.md).  
   
-##  <a name="designtime"></a> Ajout de contrôles Chart au moment du design  
- Vous pouvez ajouter le contrôle <xref:Microsoft.Office.Tools.Excel.Chart> à votre feuille de calcul de la même manière que vous ajouteriez un graphique à partir de l'application.  
+##  <a name="designtime"></a> Adding Chart Controls at Design Time  
+ You can add the <xref:Microsoft.Office.Tools.Excel.Chart> control to your worksheet in the same manner you would add a chart from within the application.  
   
 > [!NOTE]  
->  Le contrôle <xref:Microsoft.Office.Tools.Excel.Chart> n'est pas disponible à partir de la **boîte à outils** ou de la fenêtre **Sources de données**.  
+>  The <xref:Microsoft.Office.Tools.Excel.Chart> control is not available from the **Toolbox** or the **Data Sources** window.  
   
-#### Pour ajouter un contrôle hôte Chart à une feuille de calcul dans Excel  
+#### <a name="to-add-a-chart-host-control-to-a-worksheet-in-excel"></a>To add a Chart host control to a worksheet in Excel  
   
-1.  Sous l'onglet **Insérer**, dans le groupe **Graphiques**, cliquez sur **Colonne**, cliquez sur une catégorie de graphiques, puis cliquez sur le type de graphique souhaité.  
+1.  On the **Insert** tab, in the **Charts** group, click **Column**, click a category of charts, and then click the type of chart you want.  
   
-2.  Dans la boîte de dialogue **Insérer un graphique**, cliquez sur **OK**.  
+2.  In the **Insert Chart** dialog box, click **OK**.  
   
-3.  Sous l'onglet **Création**, dans le groupe **Données**, cliquez sur **Sélectionner des données**.  
+3.  On the **Design** tab, in the **Data** group, click **Select Data**.  
   
-4.  Dans la boîte de dialogue **Sélectionner une source de données**, cliquez dans la zone **Plage de données dugraphique** et effacez toutes les sélections par défaut.  
+4.  In the **Select Data Source** dialog box, click in the **Chart** **data range** box and clear any default selection.  
   
-5.  Dans la feuille **Données pour Graphique**, sélectionnez la plage de cellules qui contient les données du graphique \(cellules **A5** à **D8**\).  
+5.  In the **Data for Chart** sheet, select the range of cells that contains the data for the chart (cells **A5** through **D8**).  
   
-6.  Dans la boîte de dialogue **Sélectionner une source de données**, cliquez sur **OK**.  
+6.  In the **Select Data Source** dialog box, click **OK**.  
   
-##  <a name="runtimedoclevel"></a> Ajout de contrôles Chart au moment de l'exécution dans un projet au niveau du document  
- Vous pouvez ajouter dynamiquement le contrôle <xref:Microsoft.Office.Tools.Excel.Chart> au moment de l'exécution.  Les graphiques créés dynamiquement ne sont pas persistants dans le document en tant que contrôles hôtes lorsque le document est fermé.  Pour plus d'informations, consultez [Ajout de contrôles à des documents Office au moment de l'exécution](../vsto/adding-controls-to-office-documents-at-run-time.md).  
+##  <a name="runtimedoclevel"></a> Adding Chart Controls at Run Time in a Document-Level Project  
+ You can add the <xref:Microsoft.Office.Tools.Excel.Chart> control dynamically at run time. Dynamically created charts are not persisted in the document as host controls when the document is closed. For more information, see [Adding Controls to Office Documents at Run Time](../vsto/adding-controls-to-office-documents-at-run-time.md).  
   
-#### Pour ajouter par programmation un contrôle Chart à une feuille de calcul  
+#### <a name="to-add-a-chart-control-to-a-worksheet-programmatically"></a>To add a Chart control to a worksheet programmatically  
   
-1.  Dans le gestionnaire d'événements <xref:Microsoft.Office.Tools.Excel.Worksheet.Startup> de `Sheet1`, insérez le code suivant pour ajouter le contrôle <xref:Microsoft.Office.Tools.Excel.Chart>  
+1.  In the <xref:Microsoft.Office.Tools.Excel.Worksheet.Startup> event handler of `Sheet1`, insert the following code to add the <xref:Microsoft.Office.Tools.Excel.Chart> control.  
   
-     [!code-csharp[Trin_VstcoreHostControlsExcel#1](../snippets/csharp/VS_Snippets_OfficeSP/Trin_VstcoreHostControlsExcel/CS/Sheet1.cs#1)]
-     [!code-vb[Trin_VstcoreHostControlsExcel#1](../snippets/visualbasic/VS_Snippets_OfficeSP/Trin_VstcoreHostControlsExcel/VB/Sheet1.vb#1)]  
+     [!code-csharp[Trin_VstcoreHostControlsExcel#1](../vsto/codesnippet/CSharp/Trin_VstcoreHostControlsExcelCS/Sheet1.cs#1)]  [!code-vb[Trin_VstcoreHostControlsExcel#1](../vsto/codesnippet/VisualBasic/Trin_VstcoreHostControlsExcelVB/Sheet1.vb#1)]  
   
-##  <a name="runtimeaddin"></a> Ajout de contrôles Chart au moment de l'exécution dans un projet de complément VSTO  
- Vous pouvez ajouter par programmation un contrôle <xref:Microsoft.Office.Tools.Excel.Chart> à une feuille de calcul ouverte dans un projet de complément VSTO.  Pour plus d'informations, consultez [Extension de documents Word et de classeurs Excel dans des compléments VSTO au moment de l'exécution](../vsto/extending-word-documents-and-excel-workbooks-in-vsto-add-ins-at-run-time.md).  
+##  <a name="runtimeaddin"></a> Adding Chart Controls at Run Time in a VSTO Add-in Project  
+ You can add a <xref:Microsoft.Office.Tools.Excel.Chart> control programmatically to any open worksheet in a VSTO Add-in project. For more information, see [Extending Word Documents and Excel Workbooks in VSTO Add-ins at Run Time](../vsto/extending-word-documents-and-excel-workbooks-in-vsto-add-ins-at-run-time.md).  
   
- Les contrôles Chart créés dynamiquement ne sont pas persistants dans la feuille de calcul en tant que contrôles hôtes lorsque la feuille de calcul est fermée.  Pour plus d'informations, consultez [Ajout de contrôles à des documents Office au moment de l'exécution](../vsto/adding-controls-to-office-documents-at-run-time.md).  
+ Dynamically created chart controls are not persisted in the worksheet as host controls when the worksheet is closed. For more information, see [Adding Controls to Office Documents at Run Time](../vsto/adding-controls-to-office-documents-at-run-time.md).  
   
-#### Pour ajouter par programmation un contrôle Chart à une feuille de calcul  
+#### <a name="to-add-a-chart-control-to-a-worksheet-programmatically"></a>To add a Chart control to a worksheet programmatically  
   
-1.  Le code suivant génère un élément hôte de feuille de calcul basé sur la feuille de calcul ouverte, puis ajoute un contrôle <xref:Microsoft.Office.Tools.Excel.Chart>.  
+1.  The following code generates a worksheet host item that is based on the open worksheet, and then adds a <xref:Microsoft.Office.Tools.Excel.Chart> control.  
   
-     [!code-csharp[Trin_Excel_Dynamic_Controls#9](../snippets/csharp/VS_Snippets_OfficeSP/Trin_Excel_Dynamic_Controls/CS/ThisAddIn.cs#9)]
-     [!code-vb[Trin_Excel_Dynamic_Controls#9](../snippets/visualbasic/VS_Snippets_OfficeSP/Trin_Excel_Dynamic_Controls/VB/ThisAddIn.vb#9)]  
+     [!code-csharp[Trin_Excel_Dynamic_Controls#9](../vsto/codesnippet/CSharp/Trin_Excel_Dynamic_Controls/ThisAddIn.cs#9)]  [!code-vb[Trin_Excel_Dynamic_Controls#9](../vsto/codesnippet/VisualBasic/Trin_Excel_Dynamic_Controls/ThisAddIn.vb#9)]  
   
-## Compilation du code  
- Cet exemple exige les éléments suivants :  
+## <a name="compiling-the-code"></a>Compiling the Code  
+ This example has the following requirements:  
   
--   les données à représenter sur le graphique, stockées dans la plage comprenant les cellules A5 à D8 de la feuille de calcul.  
+-   Data to be charted, stored in the range from A5 to D8 in the worksheet.  
   
-## Voir aussi  
- [Extension de documents Word et de classeurs Excel dans des compléments VSTO au moment de l'exécution](../vsto/extending-word-documents-and-excel-workbooks-in-vsto-add-ins-at-run-time.md)   
- [Contrôles sur des documents Office](../vsto/controls-on-office-documents.md)   
- [Chart, contrôle](../vsto/chart-control.md)   
- [Automatisation d'Excel à l'aide d'objets étendus](../vsto/automating-excel-by-using-extended-objects.md)   
- [Vue d'ensemble des éléments hôtes et des contrôles hôtes](../vsto/host-items-and-host-controls-overview.md)   
- [Liaison de données aux contrôles dans les solutions Office](../vsto/binding-data-to-controls-in-office-solutions.md)   
- [Limitations de programmation des éléments hôtes et des contrôles hôtes](../vsto/programmatic-limitations-of-host-items-and-host-controls.md)  
+## <a name="see-also"></a>See Also  
+ [Extending Word Documents and Excel Workbooks in VSTO Add-ins at Run Time](../vsto/extending-word-documents-and-excel-workbooks-in-vsto-add-ins-at-run-time.md)   
+ [Controls on Office Documents](../vsto/controls-on-office-documents.md)   
+ [Chart Control](../vsto/chart-control.md)   
+ [Automating Excel by Using Extended Objects](../vsto/automating-excel-by-using-extended-objects.md)   
+ [Host Items and Host Controls Overview](../vsto/host-items-and-host-controls-overview.md)   
+ [Binding Data to Controls in Office Solutions](../vsto/binding-data-to-controls-in-office-solutions.md)   
+ [Programmatic Limitations of Host Items and Host Controls](../vsto/programmatic-limitations-of-host-items-and-host-controls.md)  
   
   

@@ -1,78 +1,82 @@
 ---
-title: "How to: Define a SharePoint Project Item Type"
-ms.custom: ""
-ms.date: "02/02/2017"
-ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "office-development"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-dev_langs: 
-  - "VB"
-  - "CSharp"
-helpviewer_keywords: 
-  - "SharePoint project items, defining your own types"
-  - "project items [SharePoint development in Visual Studio], defining your own types"
-  - "SharePoint development in Visual Studio, defining new project item types"
+title: 'How to: Define a SharePoint Project Item Type | Microsoft Docs'
+ms.custom: 
+ms.date: 02/02/2017
+ms.prod: visual-studio-dev14
+ms.reviewer: 
+ms.suite: 
+ms.technology:
+- office-development
+ms.tgt_pltfrm: 
+ms.topic: article
+dev_langs:
+- VB
+- CSharp
+helpviewer_keywords:
+- SharePoint project items, defining your own types
+- project items [SharePoint development in Visual Studio], defining your own types
+- SharePoint development in Visual Studio, defining new project item types
 ms.assetid: 18b56e7c-4efb-47a2-abfc-e9018ae38267
 caps.latest.revision: 28
-author: "kempb"
-ms.author: "kempb"
-manager: "ghogen"
-caps.handback.revision: 27
+author: kempb
+ms.author: kempb
+manager: ghogen
+ms.translationtype: HT
+ms.sourcegitcommit: eb5c9550fd29b0e98bf63a7240737da4f13f3249
+ms.openlocfilehash: abe609e822e3b551062207814d3742dcd6576156
+ms.contentlocale: fr-fr
+ms.lasthandoff: 08/30/2017
+
 ---
-# How to: Define a SharePoint Project Item Type
-  Définissez un type d'élément de projet si vous avez l'intention de créer un nouvel élément de projet SharePoint personnalisé.  Pour plus d’informations, consultez [Defining Custom SharePoint Project Item Types](../sharepoint/defining-custom-sharepoint-project-item-types.md).  
+# <a name="how-to-define-a-sharepoint-project-item-type"></a>How to: Define a SharePoint Project Item Type
+  Define a project item type when you want to create a custom SharePoint project item. For more information, see [Defining Custom SharePoint Project Item Types](../sharepoint/defining-custom-sharepoint-project-item-types.md).  
   
-### Pour définir un type d'élément de projet  
+### <a name="to-define-a-project-item-type"></a>To define a project item type  
   
-1.  Créez un projet Bibliothèque de classes.  
+1.  Create a class library project.  
   
-2.  Ajoutez des références aux assemblys suivants :  
+2.  Add references to the following assemblies:  
   
     -   Microsoft.VisualStudio.SharePoint  
   
     -   System.ComponentModel.Composition  
   
-3.  Définissez une classe qui implémente l'interface <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItemTypeProvider>.  
+3.  Create a class that implements the <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItemTypeProvider> interface.  
   
-4.  Ajouter les attributs suivants à la classe :  
+4.  Add the following attributes to the class:  
   
-    -   <xref:System.ComponentModel.Composition.ExportAttribute>.  Cet attribut permet à Visual Studio de découvrir et de charger votre implémentation <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItemTypeProvider>.  Communiquez le type <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItemTypeProvider> au constructeur d'attribut.  
+    -   <xref:System.ComponentModel.Composition.ExportAttribute>. This attribute enables Visual Studio to discover and load your <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItemTypeProvider> implementation. Pass the <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItemTypeProvider> type to the attribute constructor.  
   
-    -   <xref:Microsoft.VisualStudio.SharePoint.SharePointProjectItemTypeAttribute>.  Dans une définition de type d'élément de projet, cet attribut spécifie l'identificateur de chaîne pour le nouvel élément de projet.  Nous vous recommandons de respecter le format *NomSociété*.*NomFonctionnalité* pour vous assurer d'attribuer des noms uniques et cohérents à tous les éléments de projet.  
+    -   <xref:Microsoft.VisualStudio.SharePoint.SharePointProjectItemTypeAttribute>. In a project item type definition, this attribute specifies the string identifier for the new project item. We recommend that you use the format *company name*.*feature name* to help make sure that all project items have a unique name.  
   
-    -   <xref:Microsoft.VisualStudio.SharePoint.SharePointProjectItemIconAttribute>.  Cet attribut désigne l'icône utilisée pour représenter cet élément de projet dans l'**Explorateur de solutions**.  Cet attribut est facultatif ; si vous ne l'appliquez pas à votre classe, Visual Studio affiche une icône par défaut pour votre élément de projet.  Si vous définissez cet attribut, communiquez le nom qualifié complet d'une icône ou d'un fichier bitmap incorporé dans votre assembly.  
+    -   <xref:Microsoft.VisualStudio.SharePoint.SharePointProjectItemIconAttribute>. This attribute specifies the icon to display for this project item in **Solution Explorer**. This attribute is optional; if you do not apply it to your class, Visual Studio displays a default icon for your project item. If you set this attribute, pass the fully qualified name of an icon or bitmap that is embedded in your assembly.  
   
-5.  Dans votre implémentation de la méthode <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItemTypeProvider.InitializeType%2A>, utilisez les membres du paramètre *projectItemTypeDefinition* pour définir le comportement du type d'élément de projet.  Ce paramètre est un objet <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItemTypeDefinition> qui fournit l'accès aux événements définis dans les interfaces <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItemEvents> et <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItemFileEvents>.  Pour accéder à une instance spécifique de votre type d'élément de projet, gérez les événements <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItemEvents> tels que <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItemEvents.ProjectItemAdded> et <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItemEvents.ProjectItemInitialized>.  
+5.  In your implementation of the <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItemTypeProvider.InitializeType%2A> method, use members of the *projectItemTypeDefinition* parameter to define the behavior of the project item type. This parameter is an <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItemTypeDefinition> object that provides access to the events defined in the <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItemEvents> and <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItemFileEvents> interfaces. To access a specific instance of your project item type, handle <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItemEvents> events such as <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItemEvents.ProjectItemAdded> and <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItemEvents.ProjectItemInitialized>.  
   
-## Exemple  
- L'exemple de code suivant montre comment définir un type d'élément de projet simple.  Ce type d'élément de projet écrit un message dans les fenêtres **Sortie** et **Liste d'erreurs** lorsqu'un utilisateur ajoute un élément de projet de ce type à un projet.  
+## <a name="example"></a>Example  
+ The following code example demonstrates how to define a simple project item type. This project item type writes a message to the **Output** window and **Error List** window when a user adds a project item of this type to a project.  
   
- [!code-csharp[SPExtensibility.ProjectSystemExtension.General#2](../snippets/csharp/VS_Snippets_OfficeSP/spextensibility.projectsystemextension.general/cs/extension/projectitemtype.cs#2)]
- [!code-vb[SPExtensibility.ProjectSystemExtension.General#2](../snippets/visualbasic/VS_Snippets_OfficeSP/spextensibility.projectsystemextension.general/vb/extension/projectitemtype.vb#2)]  
+ [!code-vb[SPExtensibility.ProjectSystemExtension.General#2](../sharepoint/codesnippet/VisualBasic/projectsystemexamples/extension/projectitemtype.vb#2)] [!code-csharp[SPExtensibility.ProjectSystemExtension.General#2](../sharepoint/codesnippet/CSharp/projectsystemexamples/extension/projectitemtype.cs#2)]  
   
- Cet exemple utilise le service de projet SharePoint pour écrire le message dans les fenêtres **Sortie** et **Liste d'erreurs**.  Pour plus d’informations, consultez [Using the SharePoint Project Service](../sharepoint/using-the-sharepoint-project-service.md).  
+ This example uses the SharePoint project service to write the message to the **Output** window and **Error List** window. For more information, see [Using the SharePoint Project Service](../sharepoint/using-the-sharepoint-project-service.md).  
   
-## Compilation du code  
- Cet exemple nécessite des références aux assemblys suivants :  
+## <a name="compiling-the-code"></a>Compiling the Code  
+ This example requires references to the following assemblies:  
   
 -   Microsoft.VisualStudio.SharePoint  
   
 -   System.ComponentModel.Composition  
   
-## Déploiement de l'élément de projet  
- Pour donner à d'autres développeurs la possibilité d'utiliser votre élément de projet, créez un modèle de projet ou un modèle d'élément de projet.  Pour plus d’informations, consultez [Creating Item Templates and Project Templates for SharePoint Project Items](../sharepoint/creating-item-templates-and-project-templates-for-sharepoint-project-items.md).  
+## <a name="deploying-the-project-item"></a>Deploying the Project Item  
+ To enable other developers to use your project item, create a project template or a project item template. For more information, see [Creating Item Templates and Project Templates for SharePoint Project Items](../sharepoint/creating-item-templates-and-project-templates-for-sharepoint-project-items.md).  
   
- Pour déployer l'élément de projet, créez un package d'extension [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] \(VSIX\) pour l'assembly, le modèle et tous les autres fichiers que vous voulez distribuer avec l'élément de projet.  Pour plus d’informations, consultez [Deploying Extensions for the SharePoint Tools in Visual Studio](../sharepoint/deploying-extensions-for-the-sharepoint-tools-in-visual-studio.md).  
+ To deploy the project item, create a [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] extension (VSIX) package for the assembly, the template, and any other files that you want to distribute with the project item. For more information, see [Deploying Extensions for the SharePoint Tools in Visual Studio](../sharepoint/deploying-extensions-for-the-sharepoint-tools-in-visual-studio.md).  
   
-## Voir aussi  
+## <a name="see-also"></a>See Also  
  [Defining Custom SharePoint Project Item Types](../sharepoint/defining-custom-sharepoint-project-item-types.md)   
  [Creating Item Templates and Project Templates for SharePoint Project Items](../sharepoint/creating-item-templates-and-project-templates-for-sharepoint-project-items.md)   
  [Walkthrough: Creating a Custom Action Project Item with an Item Template, Part 1](../sharepoint/walkthrough-creating-a-custom-action-project-item-with-an-item-template-part-1.md)   
- [Procédure pas à pas : création d'un élément de projet Colonne de site avec un modèle de projet, première partie](../sharepoint/walkthrough-creating-a-site-column-project-item-with-a-project-template-part-1.md)   
+ [Walkthrough: Creating a Site Column Project Item with a Project Template, Part 1](../sharepoint/walkthrough-creating-a-site-column-project-item-with-a-project-template-part-1.md)   
  [How to: Add a Property to a Custom SharePoint Project Item Type](../sharepoint/how-to-add-a-property-to-a-custom-sharepoint-project-item-type.md)   
  [How to: Add a Shortcut Menu Item to a Custom SharePoint Project Item Type](../sharepoint/how-to-add-a-shortcut-menu-item-to-a-custom-sharepoint-project-item-type.md)  
   

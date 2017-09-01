@@ -1,57 +1,75 @@
 ---
-title: "CA1721&#160;: Les noms des propri&#233;t&#233;s ne doivent pas &#234;tre identiques &#224; ceux des m&#233;thodes Get | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-devops-test"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "CA1721"
-  - "PropertyNamesShouldNotMatchGetMethods"
-helpviewer_keywords: 
-  - "CA1721"
-  - "PropertyNamesShouldNotMatchGetMethods"
+title: 'CA1721: Property names should not match get methods | Microsoft Docs'
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology:
+- vs-devops-test
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords:
+- CA1721
+- PropertyNamesShouldNotMatchGetMethods
+helpviewer_keywords:
+- CA1721
+- PropertyNamesShouldNotMatchGetMethods
 ms.assetid: 45a0e853-1f06-4688-af1b-cc634409e295
 caps.latest.revision: 17
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
-caps.handback.revision: 17
----
-# CA1721&#160;: Les noms des propri&#233;t&#233;s ne doivent pas &#234;tre identiques &#224; ceux des m&#233;thodes Get
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
+author: stevehoag
+ms.author: shoag
+manager: wpickett
+translation.priority.ht:
+- de-de
+- es-es
+- fr-fr
+- it-it
+- ja-jp
+- ko-kr
+- ru-ru
+- zh-cn
+- zh-tw
+translation.priority.mt:
+- cs-cz
+- pl-pl
+- pt-br
+- tr-tr
+ms.translationtype: HT
+ms.sourcegitcommit: eb5c9550fd29b0e98bf63a7240737da4f13f3249
+ms.openlocfilehash: 7020896493b641f1b2aa4c77912636554441b3fe
+ms.contentlocale: fr-fr
+ms.lasthandoff: 08/30/2017
 
+---
+# <a name="ca1721-property-names-should-not-match-get-methods"></a>CA1721: Property names should not match get methods
 |||  
 |-|-|  
 |TypeName|PropertyNamesShouldNotMatchGetMethods|  
 |CheckId|CA1721|  
-|Catégorie|Microsoft.Naming|  
-|Modification avec rupture|Oui|  
+|Category|Microsoft.Naming|  
+|Breaking Change|Breaking|  
   
-## Cause  
- Le nom d'un membre public ou protégé commence par 'Get'. Sinon, il correspond au nom d'une propriété publique ou protégée.  Par exemple, un type qui contient une méthode nommée 'GetColor' et une propriété nommée 'Color' enfreint cette règle.  
+## <a name="cause"></a>Cause  
+ The name of a public or protected member starts with 'Get' and otherwise matches the name of a public or protected property. For example, a type that contains a method that is named 'GetColor' and a property that is named 'Color' violates this rule.  
   
-## Description de la règle  
- Les méthodes et propriétés Get doivent porter des noms distinguant clairement leur fonction.  
+## <a name="rule-description"></a>Rule Description  
+ Get methods and properties should have names that clearly distinguish their function.  
   
- Les conventions d'affectation des noms confèrent un aspect commun aux bibliothèques qui ciblent le Common Language Runtime.  Elles réduisent le temps nécessaire pour apprendre une nouvelle bibliothèque de logiciels et confirment au client que la bibliothèque a été développée par une personne compétente en matière de développement de code managé.  
+ Naming conventions provide a common look for libraries that target the common language runtime. This reduces the time that is required to learn a new software library, and increases customer confidence that the library was developed by someone who has expertise in developing managed code.  
   
-## Comment corriger les violations  
- Modifiez le nom afin qu'il ne corresponde pas au nom d'une méthode ayant 'Get' pour préfixe.  
+## <a name="how-to-fix-violations"></a>How to Fix Violations  
+ Change the name so that it does not match the name of a method that is prefixed with 'Get'.  
   
-## Quand supprimer les avertissements  
- Ne supprimez aucun avertissement de cette règle.  
+## <a name="when-to-suppress-warnings"></a>When to Suppress Warnings  
+ Do not suppress a warning from this rule.  
   
 > [!NOTE]
->  Cet avertissement peut être exclu si la méthode Get est causée par l'implémentation de l'interface IExtenderProvider.  
+>  This warning may be excluded if the Get method is caused by implementing IExtenderProvider interface.  
   
-## Exemple  
- L'exemple suivant contient une méthode et une propriété qui enfreignent cette règle.  
+## <a name="example"></a>Example  
+ The following example contains a method and property that violate this rule.  
   
- [!CODE [FxCop.Naming.GetMethod#1](../CodeSnippet/VS_Snippets_CodeAnalysis/FxCop.Naming.GetMethod#1)]  
+ [!code-csharp[FxCop.Naming.GetMethod#1](../code-quality/codesnippet/CSharp/ca1721-property-names-should-not-match-get-methods_1.cs)] [!code-vb[FxCop.Naming.GetMethod#1](../code-quality/codesnippet/VisualBasic/ca1721-property-names-should-not-match-get-methods_1.vb)]  
   
-## Règles connexes  
- [CA1024 : Utiliser les propriétés lorsque cela est approprié](../code-quality/ca1024-use-properties-where-appropriate.md)
+## <a name="related-rules"></a>Related Rules  
+ [CA1024: Use properties where appropriate](../code-quality/ca1024-use-properties-where-appropriate.md)

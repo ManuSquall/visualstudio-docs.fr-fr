@@ -1,188 +1,195 @@
 ---
-title: "Proc&#233;dure pas &#224; pas&#160;: cr&#233;ation d&#39;un contr&#244;le utilisateur Windows Forms prenant en charge la liaison de donn&#233;es simple | Microsoft Docs"
-ms.custom: ""
-ms.date: "12/15/2016"
-ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-dev_langs: 
-  - "VB"
-  - "CSharp"
-  - "C++"
-  - "aspx"
-helpviewer_keywords: 
-  - "contrôles personnalisés (Visual Studio), Sources de données (fenêtre)"
-  - "Sources de données (fenêtre), contrôles"
+title: Create a user control that supports simple data binding | Microsoft Docs
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.tgt_pltfrm: 
+ms.topic: article
+dev_langs:
+- VB
+- CSharp
+helpviewer_keywords:
+- custom controls [Visual Studio], Data Sources Window
+- Data Sources Window, controls
 ms.assetid: b1488366-6dfb-454e-9751-f42fd3f3ddfb
 caps.latest.revision: 14
-caps.handback.revision: 11
-author: "mikeblome"
-ms.author: "mblome"
-manager: "ghogen"
+author: mikeblome
+ms.author: mblome
+manager: ghogen
+translation.priority.ht:
+- de-de
+- es-es
+- fr-fr
+- it-it
+- ja-jp
+- ko-kr
+- ru-ru
+- zh-cn
+- zh-tw
+translation.priority.mt:
+- cs-cz
+- pl-pl
+- pt-br
+- tr-tr
+ms.translationtype: HT
+ms.sourcegitcommit: eb5c9550fd29b0e98bf63a7240737da4f13f3249
+ms.openlocfilehash: 6883dc4f4494fef4f53da354b8e4621b90184f45
+ms.contentlocale: fr-fr
+ms.lasthandoff: 08/30/2017
+
 ---
-# Proc&#233;dure pas &#224; pas&#160;: cr&#233;ation d&#39;un contr&#244;le utilisateur Windows Forms prenant en charge la liaison de donn&#233;es simple
-Pour présenter des données dans des formulaires d'applications Windows, vous pouvez choisir des contrôles existants dans la **Boîte à outils** ou créer des contrôles personnalisés si votre application requiert des fonctionnalités qui ne sont pas disponibles dans les contrôles standard.  Cette procédure pas à pas vous indique comment créer un contrôle qui implémente l'objet <xref:System.ComponentModel.DefaultBindingPropertyAttribute>.  Les contrôles qui implémentent <xref:System.ComponentModel.DefaultBindingPropertyAttribute> peuvent contenir une propriété pouvant être liée aux données.  Ce type de contrôles est similaire à <xref:System.Windows.Forms.TextBox> ou <xref:System.Windows.Forms.CheckBox>.  
+# <a name="create-a-windows-forms-user-control-that-supports-simple-data-binding"></a>Create a Windows Forms user control that supports simple data binding
+When displaying data on forms in Windows applications, you can choose existing controls from the **Toolbox**, or you can author custom controls if your application requires functionality that is not available in the standard controls. This walkthrough shows how to create a control that implements the <xref:System.ComponentModel.DefaultBindingPropertyAttribute>. Controls that implement the <xref:System.ComponentModel.DefaultBindingPropertyAttribute> can contain one property that can be bound to data. Such controls are similar to a <xref:System.Windows.Forms.TextBox> or <xref:System.Windows.Forms.CheckBox>.  
   
- Pour plus d'informations sur la création de contrôles, consultez [Développement de contrôles Windows Forms au moment du design](../Topic/Developing%20Windows%20Forms%20Controls%20at%20Design%20Time.md).  
+ For more information on control authoring, see [Developing Windows Forms Controls at Design Time](/dotnet/framework/winforms/controls/developing-windows-forms-controls-at-design-time).  
   
- Quand vous créez des contrôles utilisables dans des scénarios de liaison de données, vous devez implémenter l'un des attributs Databinding suivants :  
+ When authoring controls for use in data-binding scenarios, you should implement one of the following data-binding attributes:  
   
-|Utilisation de l'attribut Databinding|  
-|-------------------------------------------|  
-|Implémentez <xref:System.ComponentModel.DefaultBindingPropertyAttribute> sur des contrôles simples, comme <xref:System.Windows.Forms.TextBox>, qui affichent une seule colonne \(ou propriété\) de données.  \(Ce processus est décrit dans cette page de procédure pas à pas.\)|  
-|Implémentez <xref:System.ComponentModel.ComplexBindingPropertiesAttribute> sur des contrôles, comme <xref:System.Windows.Forms.DataGridView>, qui affichent des listes \(ou tables\) de données.  Pour plus d'informations, consultez [Procédure pas à pas : création d'un contrôle utilisateur Windows Forms prenant en charge la liaison de données complexe](../data-tools/create-a-windows-forms-user-control-that-supports-complex-data-binding.md).|  
-|Implémentez l'objet <xref:System.ComponentModel.LookupBindingPropertiesAttribute> sur des contrôles, comme <xref:System.Windows.Forms.ComboBox>, qui affichent des listes \(ou tables\) de données, mais doivent également présenter une seule colonne ou propriété.  Pour plus d'informations, consultez [Procédure pas à pas : création d'un contrôle utilisateur Windows Forms prenant en charge la liaison de données de recherche](../data-tools/create-a-windows-forms-user-control-that-supports-lookup-data-binding.md).|  
+|Data-binding attribute usage|  
+|-----------------------------------|  
+|Implement the <xref:System.ComponentModel.DefaultBindingPropertyAttribute> on simple controls, like a <xref:System.Windows.Forms.TextBox>, that display a single column (or property) of data. (This process is described in this walkthrough page.)|  
+|Implement the <xref:System.ComponentModel.ComplexBindingPropertiesAttribute> on controls, like a <xref:System.Windows.Forms.DataGridView>, that display lists (or tables) of data. For more information, see [Create a Windows Forms user control that supports complex data binding](../data-tools/create-a-windows-forms-user-control-that-supports-complex-data-binding.md).|  
+|Implement the <xref:System.ComponentModel.LookupBindingPropertiesAttribute> on controls, like a <xref:System.Windows.Forms.ComboBox>, that display lists (or tables) of data but also need to present a single column or property. For more information, see [Create a Windows Forms user control that supports lookup data binding](../data-tools/create-a-windows-forms-user-control-that-supports-lookup-data-binding.md).|  
   
- Cette procédure pas à pas crée un contrôle simple qui affiche les données d'une seule colonne dans une table.  Cet exemple utilise la colonne `Phone` de la table `Customers` de l'exemple de base de données Northwind.  Le contrôle utilisateur simple affiche les numéros de téléphone des clients dans un format de numéro de téléphone standard à l'aide d'un <xref:System.Windows.Forms.MaskedTextBox> et en définissant le masque sur un numéro de téléphone.  
+ This walkthrough creates a simple control that displays data from a single column in a table. This example uses the `Phone` column of the `Customers` table from the Northwind sample database. The simple user control will display customers' phone numbers in a standard phone-number format, by using a <xref:System.Windows.Forms.MaskedTextBox> and setting the mask to a phone number.  
   
- Pendant cette procédure pas à pas, vous allez apprendre à :  
+ During this walkthrough, you will learn how to:  
   
--   Créer une **application Windows**.  
+-   Create a new **Windows Application**.  
   
--   Ajouter un nouveau **Contrôle utilisateur** à votre projet.  
+-   Add a new **User Control** to your project.  
   
--   Concevoir visuellement le contrôle utilisateur.  
+-   Visually design the user control.  
   
--   Implémenter l'attribut `DefaultBindingProperty`.  
+-   Implement the `DefaultBindingProperty` attribute.  
   
--   Créer un dataset à l'aide de l'[Configuration de source de données \(Assistant\)](../data-tools/media/data-source-configuration-wizard.png).  
+-   Create a dataset with the **Data Source Configuration** wizard.  
   
--   Définir la colonne **Phone** dans la fenêtre **Sources de données** pour qu'elle utilise le nouveau contrôle.  
+-   Set the **Phone** column in the **Data Sources** window to use the new control.  
   
--   Créer un formulaire pour afficher des données dans le nouveau contrôle.  
+-   Create a form to display data in the new control.  
   
-## Composants requis  
- Pour exécuter cette procédure pas à pas, vous avez besoin des éléments suivants :  
+## <a name="prerequisites"></a>Prerequisites  
+ In order to complete this walkthrough, you will need:  
   
--   avoir accès à l'exemple de base de données Northwind.  Pour plus d'informations, consultez [Comment : installer des exemples de bases de données](../data-tools/how-to-install-sample-databases.md).  
+-   Access to the Northwind sample database. For more information, see [How to: Install Sample Databases](../data-tools/installing-database-systems-tools-and-samples.md).  
   
-## Création d'une application Windows  
- La première étape consiste à créer une **application Windows**.  
+## <a name="create-a-windows-application"></a>Create a Windows Application  
+ The first step is to create a **Windows Application**.  
   
-#### Pour créer un projet Windows  
+#### <a name="to-create-the-new-windows-project"></a>To create the new Windows project  
   
-1.  Dans Visual Studio, dans le menu **Fichier**, créez un **Projet**.  
+1.  In Visual Studio, from the **File** menu, create a new **Project**.  
   
-2.  Attribuez le nom **SimpleControlWalkthrough** au projet.  
+2.  Name the project **SimpleControlWalkthrough**.  
   
-3.  Sélectionnez **Application Windows** et cliquez sur **OK**.  Pour plus d'informations, consultez [Applications clientes](../Topic/Developing%20Client%20Applications%20with%20the%20.NET%20Framework.md).  
+3.  Select **Windows Application** and click **OK**. For more information, see [Client Applications](/dotnet/framework/develop-client-apps).  
   
-     Le projet **SimpleControlWalkthrough** est créé et ajouté à l'**Explorateur de solutions**.  
+     The **SimpleControlWalkthrough** project is created, and added to **Solution Explorer**.  
   
-## Ajout d'un contrôle utilisateur au projet  
- Cette procédure pas à pas crée un contrôle simple pouvant être lié aux données à partir d'un **Contrôle utilisateur**, vous devez donc ajouter un élément **Contrôle utilisateur** au projet **SimpleControlWalkthrough**.  
+## <a name="add-a-user-control-to-the-project"></a>Add a user control to the project  
+ This walkthrough creates a simple data-bindable control from a **User Control**, so add a **User Control** item to the **SimpleControlWalkthrough** project.  
   
-#### Pour ajouter un contrôle utilisateur au projet  
+#### <a name="to-add-a-user-control-to-the-project"></a>To add a user control to the project  
   
-1.  Dans le menu **Projet**, choisissez **Ajouter un contrôle utilisateur**.  
+1.  From the **Project** menu, choose **Add User Control**.  
   
-2.  Tapez `PhoneNumberBox` dans la zone Nom, puis cliquez sur **Ajouter**.  
+2.  Type `PhoneNumberBox` in the Name area, and click **Add**.  
   
-     Le contrôle **PhoneNumberBox** est ajouté à l'**Explorateur de solutions** et s'ouvre dans le concepteur.  
+     The **PhoneNumberBox** control is added to **Solution Explorer**, and opens in the designer.  
   
-## Conception du contrôle PhoneNumberBox  
- Cette procédure pas à pas s'appuie sur le <xref:System.Windows.Forms.MaskedTextBox> existant pour créer le contrôle `PhoneNumberBox`.  
+## <a name="design-the-phonenumberbox-control"></a>Design the PhoneNumberBox control  
+ This walkthrough expands upon the existing <xref:System.Windows.Forms.MaskedTextBox> to create the `PhoneNumberBox` control.  
   
-#### Pour concevoir le contrôle PhoneNumberBox  
+#### <a name="to-design-the-phonenumberbox-control"></a>To design the PhoneNumberBox control  
   
-1.  Faites glisser un <xref:System.Windows.Forms.MaskedTextBox> depuis la **Boîte à outils** vers l'aire de conception du contrôle utilisateur.  
+1.  Drag a <xref:System.Windows.Forms.MaskedTextBox> from the **Toolbox** onto the user control's design surface.  
   
-2.  Sélectionnez la balise active du <xref:System.Windows.Forms.MaskedTextBox> que vous venez de faire glisser et choisissez **Définir le masque**.  
+2.  Select the smart tag on the <xref:System.Windows.Forms.MaskedTextBox> you just dragged, and choose **Set Mask**.  
   
-3.  Sélectionnez **Numéro de téléphone** dans la boîte de dialogue **Masque de saisie** et cliquez sur **OK** pour définir le masque.  
+3.  Select **Phone number** in the **Input Mask** dialog box, and click **OK** to set the mask.  
   
-## Ajout de l'attribut Databinding requis  
- Pour des contrôles simples prenant en charge la liaison de données, implémentez l'attribut <xref:System.ComponentModel.DefaultBindingPropertyAttribute>.  
+## <a name="add-the-required-data-binding-attribute"></a>Add the required data-binding attribute  
+ For simple controls that support databinding, implement the <xref:System.ComponentModel.DefaultBindingPropertyAttribute>.  
   
-#### Pour implémenter l'attribut DefaultBindingProperty  
+#### <a name="to-implement-the-defaultbindingproperty-attribute"></a>To implement the DefaultBindingProperty attribute  
   
-1.  Basculez le contrôle `PhoneNumberBox` sur le mode Code.  \(Dans le menu **Affichage**, choisissez **Code**.\)  
+1.  Switch the `PhoneNumberBox` control to code view. (On the **View** menu, choose **Code**.)  
   
-2.  Remplacez le code de `PhoneNumberBox` par le code suivant :  
+2.  Replace the code in the `PhoneNumberBox` with the following:  
   
-     [!code-cs[VbRaddataDisplaying#3](../data-tools/codesnippet/CSharp/create-a-windows-forms-user-control-that-supports-simple-data-binding_1.cs)]
-     [!code-vb[VbRaddataDisplaying#3](../data-tools/codesnippet/VisualBasic/create-a-windows-forms-user-control-that-supports-simple-data-binding_1.vb)]  
+     [!code-csharp[VbRaddataDisplaying#3](../data-tools/codesnippet/CSharp/create-a-windows-forms-user-control-that-supports-simple-data-binding_1.cs)]  [!code-vb[VbRaddataDisplaying#3](../data-tools/codesnippet/VisualBasic/create-a-windows-forms-user-control-that-supports-simple-data-binding_1.vb)]  
   
-3.  Dans le menu **Générer**, cliquez sur **Générer la solution**.  
+3.  From the **Build** menu, choose **Build Solution**.  
   
-## Création d'une source de données à partir de votre base de données  
- Cette étape utilise l'**Assistant Configuration de source de données** pour créer une source de données basée sur la table `Customers` de l'exemple de base de données Northwind.  Vous devez avoir accès à l'exemple de base de données Northwind pour créer la connexion.  Pour plus d'informations sur la configuration de l'exemple de base de données Northwind, consultez [Comment : installer des exemples de bases de données](../data-tools/how-to-install-sample-databases.md).  
+## <a name="create-a-data-source-from-your-database"></a>Create a data source from your database  
+ This step uses the **Data Source Configuration**wizard to create a data source based on the `Customers` table in the Northwind sample database. You must have access to the Northwind sample database to create the connection. For information on setting up the Northwind sample database, see [How to: Install Sample Databases](../data-tools/installing-database-systems-tools-and-samples.md).  
   
-#### Pour créer la source de données  
+#### <a name="to-create-the-data-source"></a>To create the data source  
   
-1.  Dans le menu **Données**, cliquez sur **Afficher les sources de données**.  
+1.  On the **Data** menu, click **Show Data Sources**.  
   
-2.  Dans la fenêtre **Sources de données**, sélectionnez **Ajouter une nouvelle source de données** pour démarrer l'**Assistant Configuration de source de données**.  
+2.  In the **Data Sources** window, select **Add New Data Source** to start the **Data Source Configuration** wizard.  
   
-3.  Sélectionnez **Base de données** dans la page **Choisir un type de source de données**, puis cliquez sur **Suivant**.  
+3.  On the **Choose a Data Source Type** page, select **Database**, and then click **Next**.  
   
-4.  Dans la page **Choisir votre connexion de données**, effectuez l'une des opérations suivantes :  
+4.  On the **Choose your Data Connection** page, do one of the following:  
   
-    -   Si une connexion de données à l'exemple de base de données Northwind est disponible dans la liste déroulante, sélectionnez\-la.  
+    -   If a data connection to the Northwind sample database is available in the drop-down list, select it.  
   
-         Ou  
+    -   Select **New Connection** to launch the **Add/Modify Connection** dialog box.  
   
-    -   Sélectionnez **Nouvelle connexion** pour afficher la boîte de dialogue **Ajouter\/Modifier la connexion**.  
+5.  If your database requires a password, select the option to include sensitive data, and then click **Next**.  
   
-5.  Si votre base de données requiert un mot de passe, sélectionnez l'option pour inclure les données sensibles, puis cliquez sur **Suivant**.  
+6.  On the **Save connection string to the Application Configuration file** page, click **Next**.  
   
-6.  Cliquez sur **Suivant** dans la page **Enregistrer la chaîne de connexion dans le fichier de configuration de l'application**.  
+7.  On the **Choose your Database Objects** page, expand the **Tables** node.  
   
-7.  Développez le nœud **Tables** dans la page **Choisir vos objets de base de données**.  
+8.  Select the `Customers` table, and then click **Finish**.  
   
-8.  Sélectionnez la table `Customers`, puis cliquez sur **Terminer**.  
+     The **NorthwindDataSet** is added to your project, and the `Customers` table appears in the **Data Sources** window.  
   
-     **NorthwindDataSet** est ajouté à votre projet et la table `Customers` apparaît dans la fenêtre **Sources de données**.  
+## <a name="set-the-phone-column-to-use-the-phonenumberbox-control"></a>Set the phone column to use the PhoneNumberBox control  
+ Within the **Data Sources** window, you can set the control to be created prior to dragging items onto your form.  
   
-## Définition de la colonne Phone pour qu'elle utilise le contrôle PhoneNumberBox  
- Dans la fenêtre **Sources de données**, vous pouvez définir le contrôle à créer avant de faire glisser des éléments vers votre formulaire.  
+#### <a name="to-set-the-phone-column-to-bind-to-the-phonenumberbox-control"></a>To set the phone column to bind to the PhoneNumberBox control  
   
-#### Pour définir la colonne Phone pour qu'elle soit liée au contrôle PhoneNumberBox  
+1.  Open **Form1** in the designer.  
   
-1.  Ouvrez **Form1** dans le concepteur.  
+2.  Expand the **Customers** node in the **Data Sources** window.  
   
-2.  Développez le nœud **Customers** dans la fenêtre **Sources de données**.  
+3.  Click the drop-down arrow on the **Customers** node, and choose **Details** from the control list.  
   
-3.  Cliquez sur la flèche déroulante du nœud **Customers** et choisissez **Détails** dans la liste de contrôles.  
+4.  Click the drop-down arrow on the **Phone** column, and choose **Customize**.  
   
-4.  Cliquez sur la flèche déroulante de la colonne **Phone** et choisissez **Personnaliser**.  
+5.  Select the **PhoneNumberBox** from the list of **Associated Controls** in the **Data UI Customization Options** dialog box.  
   
-5.  Sélectionnez **PhoneNumberBox** dans la liste des **Contrôles associés** de la boîte de dialogue **Options de personnalisation de l'interface utilisateur du formulaire de données**.  
+6.  Click the drop-down arrow on the **Phone** column, and choose **PhoneNumberBox**.  
   
-6.  Cliquez sur la flèche déroulante de la colonne **Phone** et choisissez **PhoneNumberBox**.  
+## <a name="add-controls-to-the-form"></a>Add controls to the form  
+ You can create the data-bound controls by dragging items from the **Data Sources** window onto the form.  
   
-## Ajout de contrôles au formulaire  
- Pour créer des contrôles liés aux données, vous pouvez faire glisser des éléments depuis la fenêtre **Sources de données** vers le formulaire.  
+#### <a name="to-create-data-bound-controls-on-the-form"></a>To create data-bound controls on the form  
   
-#### Pour créer des contrôlés liés aux données dans le formulaire  
+-   Drag the main **Customers** node from the **Data Sources** window onto the form, and verify that the `PhoneNumberBox` control is used to display the data in the `Phone` column.  
   
--   Faites glisser le nœud **Customers** principal depuis la fenêtre **Sources de données** vers le formulaire et vérifiez que le contrôle `PhoneNumberBox` est utilisé pour afficher les données dans la colonne `Phone`.  
+     Data-bound controls with descriptive labels appear on the form, along with a tool strip (<xref:System.Windows.Forms.BindingNavigator>) for navigating records. A [NorthwindDataSet](../data-tools/dataset-tools-in-visual-studio.md), CustomersTableAdapter, <xref:System.Windows.Forms.BindingSource>, and <xref:System.Windows.Forms.BindingNavigator> appear in the component tray.  
   
-     Les contrôles liés aux données assortis d'étiquettes descriptives apparaissent dans le formulaire, ainsi qu'une barre d'outils \(<xref:System.Windows.Forms.BindingNavigator>\) pour parcourir les enregistrements.  [NorthwindDataSet](../data-tools/dataset-tools-in-visual-studio.md), [CustomersTableAdapter](../data-tools/tableadapter-overview.md), <xref:System.Windows.Forms.BindingSource> et <xref:System.Windows.Forms.BindingNavigator> s'affichent dans la barre d'état des composants.  
+## <a name="run-the-application"></a>Run the application  
   
-## Exécution de l'application  
+#### <a name="to-run-the-application"></a>To run the application  
   
-#### Pour exécuter l'application  
+-   Press F5 to run the application.  
   
--   Appuyez sur F5 pour exécuter l'application.  
+## <a name="next-steps"></a>Next Steps  
+ Depending on your application requirements, there are several steps you may want to perform after creating a control that supports data binding. Some typical next steps include:  
   
-## Étapes suivantes  
- Selon les spécifications de votre application, vous pouvez exécuter différentes étapes après la création d'un contrôle prenant en charge la liaison de données.  Les étapes ultérieures sont habituellement celles\-ci :  
+-   Placing your custom controls in a control library so you can reuse them in other applications.  
   
--   Positionnement de vos contrôles personnalisés dans une bibliothèque de contrôles pour pouvoir les réutiliser dans d'autres applications.  
+-   Creating controls that support more complex data-binding scenarios. For more information, see [Create a Windows Forms user control that supports complex data binding](../data-tools/create-a-windows-forms-user-control-that-supports-complex-data-binding.md) and [Create a Windows Forms user control that supports lookup data binding](../data-tools/create-a-windows-forms-user-control-that-supports-lookup-data-binding.md).  
   
--   Création de contrôles prenant en charge des scénarios de liaison de données plus complexes.  Pour plus d’informations, consultez [Procédure pas à pas : création d'un contrôle utilisateur Windows Forms prenant en charge la liaison de données complexe](../data-tools/create-a-windows-forms-user-control-that-supports-complex-data-binding.md) et [Procédure pas à pas : création d'un contrôle utilisateur Windows Forms prenant en charge la liaison de données de recherche](../data-tools/create-a-windows-forms-user-control-that-supports-lookup-data-binding.md).  
-  
-## Voir aussi  
- [Définir le contrôle à créer lors d’une opération de glisser\-déplacer à partir de la fenêtre Sources de données](../data-tools/set-the-control-to-be-created-when-dragging-from-the-data-sources-window.md)   
- [Liaison de contrôles Windows Forms à des données dans Visual Studio](../data-tools/bind-windows-forms-controls-to-data-in-visual-studio.md)   
- [Vue d'ensemble d'applications de données dans Visual Studio](../data-tools/overview-of-data-applications-in-visual-studio.md)   
- [Connexion aux données dans Visual Studio](../data-tools/connecting-to-data-in-visual-studio.md)   
- [Préparation de votre application pour recevoir des données](../Topic/Preparing%20Your%20Application%20to%20Receive%20Data.md)   
- [Extraction de données dans votre application](../data-tools/fetching-data-into-your-application.md)   
- [Liaison de contrôles à des données dans Visual Studio](../data-tools/bind-controls-to-data-in-visual-studio.md)   
- [Modification des données dans votre application](../data-tools/editing-data-in-your-application.md)   
- [Validation des données](../Topic/Validating%20Data.md)   
- [Enregistrement des données](../data-tools/saving-data.md)
+## <a name="see-also"></a>See Also  
+ [Bind Windows Forms controls to data in Visual Studio](../data-tools/bind-windows-forms-controls-to-data-in-visual-studio.md)   
+ [Set the control to be created when dragging from the Data Sources window](../data-tools/set-the-control-to-be-created-when-dragging-from-the-data-sources-window.md)
+

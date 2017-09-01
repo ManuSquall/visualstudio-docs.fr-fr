@@ -1,48 +1,65 @@
 ---
-title: "Enregistrement des donn&#233;es | Microsoft Docs"
-ms.custom: ""
-ms.date: "12/14/2016"
-ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "DataRow.RowState"
-  - "DataSet.GetChanges"
-dev_langs: 
-  - "VB"
-  - "CSharp"
-  - "C++"
-  - "aspx"
-helpviewer_keywords: 
-  - "données (Visual Studio), enregistrer"
-  - "données (Visual Studio), mettre à jour"
-  - "bases de données, mettre à jour"
-  - "DBDirect (méthodes)"
-  - "enregistrer les données"
-  - "TableAdapter (méthodes DBDirect)"
-  - "TableAdapter.Update (méthode)"
-  - "mise à jour de données"
-  - "mettre à jour les bases de données"
+title: Saving Data | Microsoft Docs
+ms.custom: 
+ms.date: 10/19/2016
+ms.reviewer: 
+ms.suite: 
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords:
+- DataRow.RowState
+- DataSet.GetChanges
+helpviewer_keywords:
+- DBDirect methods
+- updating data
+- data [Visual Studio], saving
+- TableAdapter DBDirect methods
+- databases, updating
+- TableAdapter.Update method
+- data [Visual Studio], updating
+- saving data
+- updating databases
 ms.assetid: 21d2b115-62e4-4ac9-a873-dcbb535b8af8
 caps.latest.revision: 13
-caps.handback.revision: 13
-author: "mikeblome"
-ms.author: "mblome"
-manager: "ghogen"
+author: mikeblome
+ms.author: mblome
+manager: ghogen
 robots: noindex,nofollow
+translation.priority.ht:
+- cs-cz
+- de-de
+- es-es
+- fr-fr
+- it-it
+- ja-jp
+- ko-kr
+- pl-pl
+- pt-br
+- ru-ru
+- tr-tr
+- zh-cn
+- zh-tw
+ms.translationtype: HT
+ms.sourcegitcommit: 21a413a3e2d17d77fd83d5109587a96f323a0511
+ms.openlocfilehash: 07e2cb8fd1c808461cd6725a5c06e9ea67cd934f
+ms.contentlocale: fr-fr
+ms.lasthandoff: 08/30/2017
+
 ---
-# Enregistrement des donn&#233;es
-L'enregistrement des données est le processus consistant à rendre persistantes des données modifiées dans un modèle de données d'une application en les consignant à nouveau dans le magasin de données d'origine, en général une base de données relationnelle telle que SQL Server.  
+# <a name="saving-data"></a>Saving Data
+Saving data is the process of persisting changed data in an application's data model back to the original data store, typically a relational database such as SQL Server.  
   
- La mise à jour d'une source de données au moyen d'un modèle de données s'effectue généralement en deux étapes.  La première étape consiste à mettre à jour le modèle de données avec les nouvelles informations \(nouveaux enregistrements, enregistrements modifiés ou supprimés\).  La deuxième étape consiste à enregistrer les modifications apportées à votre modèle de données dans la base de données.  
+ Updating a data source by means of a data model is typically a two-step process. The first step is to update the data model with new information — new records, changed records, or deleted records. The second step is to save the changes in your data model back to the database.  
   
- Les rubriques suivantes décrivent les concepts et les tâches liés à l'enregistrement de données.  
+ The following topics describe the concepts and tasks associated with saving data.  
   
-## Rubriques connexes  
- [Enregistrement de données dans des groupes de données](../data-tools/save-data-back-to-the-database.md)  
- Présente la façon dont les modifications sont effectuées dans un groupe de données et la façon dont le groupe de données effectue le suivi des informations relatives à ces modifications afin d'enregistrer ces dernières dans une base de données.  
+## <a name="related-topics"></a>Related Topics  
+[Save data back to the database](../data-tools/save-data-back-to-the-database.md)  
+ Provides an overview of how changes are made in a dataset and how the dataset tracks information about changes in order to save those changes to a database.  
   
- [Enregistrement d'Entity Data](../data-tools/saving-entity-data.md)  
- Explique comment enregistrer des modifications dans [ADO.NET Entity Framework](../Topic/ADO.NET%20Entity%20Framework.md) et les applications des [WCF Data Services 4.5](../Topic/WCF%20Data%20Services%204.5.md).
+[How to: Add, Modify, and Delete Entities (WCF Data Services)](/dotnet/framework/data/wcf/how-to-add-modify-and-delete-entities-wcf-data-services)  
+Shows how to create, update, and delete entity data in a data service.  
+  
+[How to: Execute Data Service Queries (WCF Data Services)](/dotnet/framework/data/wcf/how-to-execute-data-service-queries-wcf-data-services)  
+Shows how to query a data service from a data service application.  
+

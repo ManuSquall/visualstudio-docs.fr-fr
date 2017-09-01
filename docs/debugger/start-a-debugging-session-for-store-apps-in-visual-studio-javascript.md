@@ -1,264 +1,282 @@
 ---
-title: "D&#233;marrer une session de d&#233;bogage dans Visual&#160;Studio (JavaScript) pour des applications du Windows&#160;Store | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-debug"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "vs.debug.installedapppackagelauncher"
-  - "vs.debug.error.wwahost_scriptdebuggingdisabled"
-dev_langs: 
-  - "FSharp"
-  - "VB"
-  - "CSharp"
-  - "C++"
+title: Start a debugging session for Store Apps in Visual Studio (JavaScript) | Microsoft Docs
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology:
+- vs-ide-debug
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords:
+- vs.debug.installedapppackagelauncher
+- vs.debug.error.wwahost_scriptdebuggingdisabled
+dev_langs:
+- CSharp
+- VB
+- FSharp
+- C++
 ms.assetid: fb91203f-2cf4-44d3-8ed9-93bc5aaa50b8
 caps.latest.revision: 24
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 24
----
-# D&#233;marrer une session de d&#233;bogage dans Visual&#160;Studio (JavaScript) pour des applications du Windows&#160;Store
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+translation.priority.ht:
+- de-de
+- es-es
+- fr-fr
+- it-it
+- ja-jp
+- ko-kr
+- pt-br
+- ru-ru
+- zh-cn
+- zh-tw
+translation.priority.mt:
+- cs-cz
+- pl-pl
+- tr-tr
+ms.translationtype: HT
+ms.sourcegitcommit: 9e6c28d42bec272c6fd6107b4baf0109ff29197e
+ms.openlocfilehash: 5a1e75fb305a98ee46f76c0403774535278b53e2
+ms.contentlocale: fr-fr
+ms.lasthandoff: 08/22/2017
 
-![S'applique à Windows et Windows Phone](~/debugger/media/windows_and_phone_content.png "windows\_and\_phone\_content")  
+---
+# <a name="start-a-debugging-session-for-store-apps-in-visual-studio-javascript"></a>Start a debugging session for Store Apps in Visual Studio (JavaScript)
+![Applies to Windows and Windows Phone](../debugger/media/windows_and_phone_content.png "windows_and_phone_content")  
   
- Cette rubrique explique comment démarrer une session de débogage pour les applications du Windows Store écrites en JavaScript et HTML5. Vous pouvez démarrer le débogage avec une seule séquence de touches ou configurer la session de débogage pour des scénarios spécifiques, puis choisir de quelle façon démarrer l'application.  
+ This topic describes how to start a debugging session for Windows Store apps written in JavaScript and HTML5. You can start debugging with a single keystroke, or you can configure the debugging session for specific scenarios and then choose the way to start the app.  
   
 > [!NOTE]
->  Pour les applications écrites en XAML et Visual C\#, Visual C\+\+ ou Visual Basic, consultez [Démarrer une session de débogage \(VB, C\#, C\+\+ et XAML\)](../debugger/start-a-debugging-session-for-a-store-app-in-visual-studio-vb-csharp-cpp-and-xaml.md)  
+>  For apps written in XAML and Visual C#, Visual C++, or Visual Basic, see [Start a debug session (VB, C#, C++ and XAML)](../debugger/start-a-debugging-session-for-a-store-app-in-visual-studio-vb-csharp-cpp-and-xaml.md)  
   
-##  <a name="BKMK_In_this_topic"></a> Dans cette rubrique  
- [Dans cette rubrique](#BKMK_In_this_topic)  
+##  <a name="BKMK_In_this_topic"></a> In this topic  
+ [In this topic](#BKMK_In_this_topic)  
   
- [La méthode simple pour démarrer le débogage](#BKMK_The_easy_way_to_start_debugging)  
+ [The easy way to start debugging](#BKMK_The_easy_way_to_start_debugging)  
   
- [Configurer la session de débogage](#BKMK_Configure_the_debugging_session)  
+ [Configure the debugging session](#BKMK_Configure_the_debugging_session)  
   
--   [Ouvrir la page des propriétés de débogage du projet](#BKMK_Open_the_debugging_property_page_for_the_project)  
+-   [Open the debugging property page for the project](#BKMK_Open_the_debugging_property_page_for_the_project)  
   
--   [Choisir les options de configuration de build](#BKMK_Choose_the_build_configuration_options)  
+-   [Choose the build configuration options](#BKMK_Choose_the_build_configuration_options)  
   
--   [Sélectionner la cible de déploiement](#BKMK_Choose_the_deployment_target)  
+-   [Choose the deployment target](#BKMK_Choose_the_deployment_target)  
   
--   [Choisir le débogueur à utiliser](#BKMK_Choose_the_debugger_to_use)  
+-   [Choose the debugger to use](#BKMK_Choose_the_debugger_to_use)  
   
--   [(Facultatif) Retarder le démarrage de l'application dans la session de débogage](#BKMK__Optional__Delay_starting_app_in_the_debug_session)  
+-   [(Optional) Delay starting the app in the debug session](#BKMK__Optional__Delay_starting_app_in_the_debug_session)  
   
--   [Désactiver les bouclages de réseau (facultatif)](#BKMK__Optional__Disable_network_loopbacks)  
+-   [(Optional) Disable network loopbacks](#BKMK__Optional__Disable_network_loopbacks)  
   
- [Démarrer la session de débogage](#BKMK_Start_the_debugging_session)  
+ [Start the debugging session](#BKMK_Start_the_debugging_session)  
   
--   [Démarrer le débogage (F5)](#BKMK_Start_debugging__F5_)  
+-   [Start debugging (F5)](#BKMK_Start_debugging__F5_)  
   
--   [Démarrer le débogage (F5), mais différer le démarrage de l'application](#BKMK_Start_debugging__F5__but_delay_the_app_start)  
+-   [Start debugging (F5) but delay the app start](#BKMK_Start_debugging__F5__but_delay_the_app_start)  
   
- [Démarrer une application installée dans le débogueur](#BKMK_Start_an_installed_app_in_the_debugger)  
+ [Start an installed app in the debugger](#BKMK_Start_an_installed_app_in_the_debugger)  
   
- [Attacher le débogueur à une application en cours d'exécution](#BKMK_Attach_the_debugger_to_a_running_app_)  
+ [Attach the debugger to a running app](#BKMK_Attach_the_debugger_to_a_running_app_)  
   
--   [Configurer l'application pour l'exécuter en mode débogage](#BKMK_Set_the_app_to_run_in_debug_mode)  
+-   [Set the app to run in debug mode](#BKMK_Set_the_app_to_run_in_debug_mode)  
   
--   [Attacher le débogueur](#BKMK_Attach_the_debugger)  
+-   [Attach the debugger](#BKMK_Attach_the_debugger)  
   
-##  <a name="BKMK_The_easy_way_to_start_debugging"></a> La méthode simple pour démarrer le débogage  
- ![S'applique uniquement à Windows](~/debugger/media/windows_only_content.png "windows\_only\_content")  
+##  <a name="BKMK_The_easy_way_to_start_debugging"></a> The easy way to start debugging  
+ ![Applies to Windows only](../debugger/media/windows_only_content.png "windows_only_content")  
   
-1.  Ouvrez la solution d'application dans Visual Studio.  
+1.  Open the app solution in Visual Studio.  
   
-2.  Si la solution contient des projets pour les applications du Windows Store et du Windows Phone Store, assurez\-vous que le projet à déboguer est le projet de démarrage. Dans l'Explorateur de solutions, sélectionnez le projet et choisissez **Définir comme projet de démarrage** dans le menu contextuel.  
+2.  If the solution contains projects for both Windows Store and Windows Store Phone apps, make sure that the project you want to debug is the start-up project. In Solution Explore, select the project and then choose **Set as StartUp Project** from the context menu.  
   
-3.  Appuyez sur F5.  
+3.  Press F5.  
   
- ![S'applique uniquement à Windows Phone](~/debugger/media/phone_only_content.png "phone\_only\_content")  
+ ![Applies to Windows Phone only](../debugger/media/phone_only_content.png "phone_only_content")  
   
- Visual Studio génère et démarre l'application avec le débogueur attaché. L'exécution se poursuit jusqu'à ce qu'un point d'arrêt soit atteint, que vous suspendiez manuellement l'exécution, qu'une exception non gérée se produise ou que l'application se termine. Pour plus d'informations, consultez [Démarrage rapide : déboguer du code HTML et CSS](../debugger/quickstart-debug-html-and-css.md).  
+ Visual Studio builds and starts the app with the debugger attached. Execution continues until a breakpoint is reached, you manually suspend execution, an unhandled exception occurs, or the app ends. For more information, see [Quickstart: Debug HTML and CSS](../debugger/quickstart-debug-html-and-css.md).  
   
-##  <a name="BKMK_Configure_the_debugging_session"></a> Configurer la session de débogage  
- Comme le script n'est pas compilé, les paramètres de plateforme et de configuration de build ne s'appliquent pas. Si vous déboguez un composant C\+\+ ou un composant managé, affectez la valeur **Déboguer** à **Configuration** et sélectionnez votre plateforme cible dans la boîte de dialogue **Configuration**.  
+##  <a name="BKMK_Configure_the_debugging_session"></a> Configure the debugging session  
+ Because script is not compiled, the build configuration and platform settings don't apply. If you are debugging a C++ or managed component, set the **Configuration** to **Debug** and choose your target platform from the **Configuration** dialog.  
   
-###  <a name="BKMK_Open_the_debugging_property_page_for_the_project"></a> Ouvrir la page des propriétés de débogage du projet  
+###  <a name="BKMK_Open_the_debugging_property_page_for_the_project"></a> Open the debugging property page for the project  
   
-1.  Dans l'Explorateur de solutions, sélectionnez le projet. Dans le menu contextuel, choisissez **Propriétés**.  
+1.  In Solution Explorer, select the project. On the shortcut menu, choose **Properties**.  
   
-2.  Développez le nœud **Propriétés de configuration**, puis sélectionnez **Débogage**.  
+2.  Expand the **Configuration Properties**  node and then choose **Debugging**.  
   
-###  <a name="BKMK_Choose_the_build_configuration_options"></a> Choisir les options de configuration de build  
+###  <a name="BKMK_Choose_the_build_configuration_options"></a> Choose the build configuration options  
   
-1.  Dans la liste **Configuration**, choisissez **Déboguer** ou **\(Actif\) Déboguer**.  
+1.  From the **Configuration** list, choose **Debug** or **(Active) Debug**.  
   
-2.  Dans la liste **Plateforme**, sélectionnez la plateforme cible pour laquelle générer. Dans la plupart des cas, le meilleur choix est **Any CPU**.  
+2.  From the **Platform** list choose the target platform to build for. In most cases, **Any CPU** is the best choice.  
   
-###  <a name="BKMK_Choose_the_deployment_target"></a> Sélectionner la cible de déploiement  
- Vous pouvez déployer et déboguer une application sur l'ordinateur Visual Studio, dans le simulateur Visual Studio sur l'ordinateur local ou sur un appareil distant. Vous choisissez la cible dans la liste **Débogueur à lancer** de la page de propriétés **Débogage** du projet.  
+###  <a name="BKMK_Choose_the_deployment_target"></a> Choose the deployment target  
+ You can deploy and debug an app on the Visual Studio machine, in the Visual Studio simulator on the local machine, or on a remote machine. You choose the target from the **Debugger to launch** list on the **Debugging** property page for the project.  
   
- ![S'applique uniquement à Windows](~/debugger/media/windows_only_content.png "windows\_only\_content")  
+ ![Applies to Windows only](../debugger/media/windows_only_content.png "windows_only_content")  
   
- Pour une application du Windows Store, choisissez l'une des options suivantes dans la liste **Appareil cible** :  
+ For a Windows Store app, choose one of these options from the **Target device** list:  
   
 |||  
 |-|-|  
-|**Ordinateur local**|Déboguez l'application dans la session active sur votre ordinateur local. Consultez [Exécuter des applications du Windows Store sur un ordinateur local](../debugger/run-windows-store-apps-on-the-local-machine.md).|  
-|**Simulateur**|Déboguez l'application dans le simulateur Visual Studio pour les applications [!INCLUDE[win8_appname_long](../debugger/includes/win8_appname_long_md.md)]. Le simulateur est une fenêtre du Bureau qui permet de déboguer les fonctionnalités de l'appareil, comme les mouvements tactiles et la rotation de l'appareil, qui ne sont pas disponibles sur l'ordinateur local. Consultez [Exécuter des applications du Windows Store dans le simulateur](../debugger/run-windows-store-apps-in-the-simulator.md).|  
-|**Ordinateur distant**|Déboguez l'application sur un appareil connecté à l'ordinateur local sur un intranet ou directement connecté via un câble Ethernet. Pour déboguer à distance, les outils de contrôle à distance Visual Studio doivent être installés et en cours d'exécution sur l'appareil distant. Consultez [Exécuter des applications du Windows Store sur un ordinateur distant](../debugger/run-windows-store-apps-on-a-remote-machine.md).|  
+|**Local Machine**|Debug the app in the current session on your local machine. See [Run Windows Store apps on the local machine](../debugger/run-windows-store-apps-on-the-local-machine.md).|  
+|**Simulator**|Debug the app in the Visual Studio simulator for [!INCLUDE[win8_appname_long](../debugger/includes/win8_appname_long_md.md)] apps. The simulator is a Desktop window that enables you to debug device functionality—such as touch gestures and device rotation—that are not available on the local machine. See [Run Windows Store apps in the simulator](../debugger/run-windows-store-apps-in-the-simulator.md).|  
+|**Remote Machine**|Debug the app on a device that is connected to the local machine over an intranet or directly connected by using an Ethernet cable. To debug remotely, the Visual Studio Remote Tools must be installed and running on the remote device. See [Run Windows Store apps on a remote machine](../debugger/run-windows-store-apps-on-a-remote-machine.md).|  
   
- Si vous choisissez **Ordinateur distant**, spécifiez le nom ou l'adresse IP de l'ordinateur distant de l'une des manières suivantes :  
+ If you choose **Remote Machine**, specify the name or IP address of the remote machine in one of these ways:  
   
--   Entrez le nom ou l'adresse IP de l'ordinateur distant dans la zone **Nom de l'ordinateur**.  
+-   Enter the name or IP address of the remote machine in the **Machine Name** box.  
   
--   Choisissez la flèche Bas dans la zone **Nom de l'ordinateur**, puis sélectionnez **\<Rechercher...\>**. Choisissez ensuite l'ordinateur distant dans la boîte de dialogue **Sélectionner une connexion du débogueur distant**.  
+-   Choose the down arrow in the **Machine Name** box and choose **\<Locate...>**. Then choose the remote machine from **Select Remote Debugger Connection** dialog box.  
   
-     ![Sélectionner la connexion au Remote Debugger](~/debugger/media/vsrun_pro_selectremotedebuggerdlg.png "VSRUN\_PRO\_SelectRemoteDebuggerDlg")  
+     ![Select Remote Debugger Connection](../debugger/media/vsrun_pro_selectremotedebuggerdlg.png "VSRUN_PRO_SelectRemoteDebuggerDlg")  
   
     > [!NOTE]
-    >  La boîte de dialogue Sélectionner une connexion du débogueur distant affiche les ordinateurs situés sur le sous\-réseau local et les ordinateurs locaux qui sont directement connectés à l'ordinateur Visual Studio via un câble Ethernet. Pour spécifier un autre ordinateur, entrez le nom dans la zone **Nom de l'ordinateur**.  
+    >  The Select Remote Debugger Connection dialog box displays machines that are on the local sub-net and machines that are directly connected to the Visual Studio machine by an Ethernet cable. To specify another machine, enter the name in the **Machine Name** box.  
   
- ![S'applique uniquement à Windows Phone](~/debugger/media/phone_only_content.png "phone\_only\_content")  
+ ![Applies to Windows Phone only](../debugger/media/phone_only_content.png "phone_only_content")  
   
- Pour une application du Windows Phone Store, sélectionnez **Appareil** ou l'un des émulateurs de la liste **Appareil cible**.  
+ For a Windows Store Phone app, choose **Device** or one of the emulators from the **Target device** list.  
   
-###  <a name="BKMK_Choose_the_debugger_to_use"></a> Choisir le débogueur à utiliser  
- Par défaut, le débogueur s'attache au code JavaScript de votre application. Vous pouvez choisir de déboguer le code natif C\+\+ et le code managé des composants de votre application à la place du code JavaScript. Spécifiez le code à déboguer dans la liste **Type de débogueur** de la page de propriétés **Débogage** du projet d'application.  
+###  <a name="BKMK_Choose_the_debugger_to_use"></a> Choose the debugger to use  
+ By default, the debugger attaches to the JavaScript code in your app. You can choose to debug the native C++ and managed code of components of your app instead of the JavaScript code. You specify the code to debug in the **Debugger Type** list on the **Debugging** property page of the app project.  
   
- Choisissez l'un de ces débogueurs dans la liste **Type de débogueur** :  
+ Choose one of these debuggers from the **Debugger Type** list:  
   
 |||  
 |-|-|  
-|**Script uniquement**|Déboguez le code JavaScript dans votre application. Le code managé et le code natif sont ignorés.|  
-|**Natif uniquement**|Déboguez le code natif C\/C\+\+ dans votre application. Le code managé et le code JavaScript sont ignorés.|  
-|**Code natif avec script**|Déboguez le code natif C\+\+ et le code JavaScript dans votre application.|  
-|**Managé uniquement**|Déboguez le code managé dans votre application. Le code JavaScript et le code natif C\/C\+\+ sont ignorés.|  
-|**Mixte \(natif et managé\)**|Déboguez le code natif et managé C\/C\+\+ dans votre application. Le code JavaScript est ignoré.|  
+|**Script Only**|Debug JavaScript code in your app. Managed code and native code are ignored.|  
+|**Native Only**|Debug native C/C++ code in your app. Managed code and JavaScript code are ignored.|  
+|**Native with Script**|Debug native C++ code and JavaScript code in your app.|  
+|**Managed Only**|Debug managed code in your app. JavaScript code and native C/C++ code are ignored.|  
+|**Mixed (Managed and Native)**|Debug native C/C++ code and managed code in your app. JavaScript code is ignored.|  
   
-###  <a name="BKMK__Optional__Delay_starting_app_in_the_debug_session"></a> \(Facultatif\) Retarder le démarrage de l'application dans la session de débogage  
- Par défaut, Visual Studio démarre immédiatement l'application lorsque vous démarrez le débogage. Vous pouvez également démarrer une session de débogage et retarder le démarrage de votre application. L'application est lancée dans le débogueur quand elle est elle\-même lancée depuis le menu Démarrer ou par un contrat d'activation, ou qu'elle est démarrée au moyen d'une autre procédure ou méthode. Vous pouvez aussi utiliser le démarrage différé pour déboguer les événements en arrière\-plan de votre application dont vous voulez qu'ils se produisent alors que l'application n'est pas en cours d'exécution.  
+###  <a name="BKMK__Optional__Delay_starting_app_in_the_debug_session"></a> (Optional) Delay starting the app in the debug session  
+ By default, Visual Studio immediately starts the app when you start debugging. You can also start a debug session but delay the start of your app. The app is launched in the debugger when it is launched from the Start menu or by an activation contract, or when it is started by another process or method. You can also use delayed start to debug background events in your app that you want to occur when the app is not running.  
   
- Vous spécifiez si le lancement de votre application doit être différé dans la liste **Lancer l'application** de la page de propriétés **Débogage** du projet de l'application. Choisissez l'une des options suivantes :  
+ You specify whether to delay the launch of your app in the **Launch Application** list on the **Debugging** property page of the app project. Choose one of these options:  
   
--   Choisissez **Non** pour différer le lancement de votre application.  
+-   Choose **No** to delay the launch of your app.  
   
--   Choisissez **Oui** pour lancer l'application immédiatement.  
+-   Choose **Yes** to launch the app immediately.  
   
-###  <a name="BKMK__Optional__Disable_network_loopbacks"></a> Désactiver les bouclages de réseau \(facultatif\)  
- ![S'applique uniquement à Windows](~/debugger/media/windows_only_content.png "windows\_only\_content")  
+###  <a name="BKMK__Optional__Disable_network_loopbacks"></a> (Optional) Disable network loopbacks  
+ ![Applies to Windows only](../debugger/media/windows_only_content.png "windows_only_content")  
   
- Pour des raisons de sécurité, une application du Windows Store installée en mode standard n'est pas autorisée à effectuer des appels réseau vers l'appareil sur lequel elle est installée. Par défaut, le déploiement Visual Studio crée une exemption à cette règle pour l'application déployée. Cette exemption vous permet de tester les procédures de communication sur un seul ordinateur. Avant de soumettre votre application au Windows Store, vous devez la tester sans l'exemption.  
+ For security reasons, a Windows Store app that is installed in the standard manner is not allowed to make network calls to the device it is installed on. By default, Visual Studio deployment creates an exemption from this rule for the deployed app. This exemption allows you to test communication procedures on a single machine. Before you submit your app to the Windows Store, you should test your app without the exemption.  
   
- Pour supprimer l'exemption de bouclage de réseau, choisissez **Non** dans la liste **Autoriser le bouclage de réseau** de la page de propriétés **Débogage**.  
+ To remove the network loopback exemption, choose **No** from the **Allow Network Loopback** list on the **Debugging** property page.  
   
-##  <a name="BKMK_Start_the_debugging_session"></a> Démarrer la session de débogage  
+##  <a name="BKMK_Start_the_debugging_session"></a> Start the debugging session  
   
-###  <a name="BKMK_Start_debugging__F5_"></a> Démarrer le débogage \(F5\)  
- Quand vous choisissez **Démarrer le débogage** \(clavier : **F5**\) dans le menu Déboguer, Visual Studio lance l'application avec le débogueur attaché. L'exécution se poursuit jusqu'à ce qu'un point d'arrêt soit atteint, que vous suspendiez manuellement l'exécution, qu'une exception non gérée se produise ou que l'application se termine.  
+###  <a name="BKMK_Start_debugging__F5_"></a> Start debugging (F5)  
+ When you choose **Start Debugging** on the **Debug** menu (Keyboard: F5), Visual Studio launches the app with the debugger attached. Execution continues until a breakpoint is reached, you manually suspend execution, an unhandled exception occurs, or the app ends.  
   
-###  <a name="BKMK_Start_debugging__F5__but_delay_the_app_start"></a> Démarrer le débogage \(F5\), mais différer le démarrage de l'application  
- Vous pouvez configurer l'application pour qu'elle s'exécute en mode débogage, mais puisse être démarrée par une autre méthode que le débogueur. Vous pouvez par exemple déboguer le lancement de votre application depuis le menu Démarrer ou déboguer un processus en arrière\-plan dans l'application sans la démarrer. Pour retarder le démarrage de l'application, procédez comme suit :  
+###  <a name="BKMK_Start_debugging__F5__but_delay_the_app_start"></a> Start debugging (F5) but delay the app start  
+ You can set the app to run in debug mode, but let it be started by a method other than the debugger. For example, you might want to debug the launch of your app from the Start menu, or to debug a background process in the app without starting the app.To delay the app start, do this:  
   
-1.  Dans la page **Déboguer** des propriétés de projet de l'application, choisissez **Non** dans la liste **Lancer l'application**.  
+1.  On the **Debug** page of the app project properties, choose **No** from the **Launch Application** list.  
   
-2.  Choisissez **Démarrer le débogage** dans le menu **Déboguer** \(clavier : F5\).  
+2.  Choose **Start Debugging** on the **Debug** menu (Keyboard: F5).  
   
-3.  Démarrez votre application à partir du menu Démarrer, avec un contrat d'exécution ou en suivant une autre procédure.  
+3.  Start your app from the Start menu, an execution contract, or by another procedure.  
   
- L'application démarre en mode débogage. L'exécution se poursuit jusqu'à ce qu'un point d'arrêt soit atteint, que vous suspendiez manuellement l'exécution, qu'une exception non gérée se produise ou que l'application se termine.  
+ The app starts in debug mode. Execution continues until a breakpoint is reached, you manually suspend execution, an unhandled exception occurs, or the app ends.  
   
- Pour plus d'informations sur le débogage des tâches en arrière\-plan, consultez [Déclencher des événements de suspension, de reprise et d'arrière\-plan pour Windows Store](../debugger/how-to-trigger-suspend-resume-and-background-events-for-windows-store-apps-in-visual-studio.md).  
+ . For more information about debugging background tasks, see [Trigger suspend, resume, and background events for Windows Store)](../debugger/how-to-trigger-suspend-resume-and-background-events-for-windows-store-apps-in-visual-studio.md).  
   
-##  <a name="BKMK_Start_an_installed_app_in_the_debugger"></a> Démarrer une application installée dans le débogueur  
- Quand vous lancez le débogage en appuyant sur la touche F5, Visual Studio génère et déploie l'application, la configure pour s'exécuter en mode débogage, puis la démarre. Pour démarrer une application déjà installée sur un périphérique, utilisez la boîte de dialogue Déboguer le package d'application déjà installé. Cette procédure est utile lorsque vous devez déboguer une application installée depuis Windows Store, ou lorsque vous disposez des fichiers source de l'application, mais pas de projet Visual Studio pour cette dernière. Par exemple, vous pouvez avoir un système de génération personnalisée qui n'utilise pas les projets ou les solutions Visual Studio.  
+##  <a name="BKMK_Start_an_installed_app_in_the_debugger"></a> Start an installed app in the debugger  
+ When you start debugging by using F5, Visual Studio builds and deploys the app, sets the app to run in debug mode, and then starts it. To start an app that is already installed on a device, use the Debug Installed App Package dialog box. This procedure is useful when you need to debug an app that was installed from the Windows store, or when you have the source files for the app, but you do not have a Visual Studio project for the app. For example, you might have a custom build system that does not use Visual Studio projects or solutions.  
   
- L'application peut être installée sur l'appareil local ou sur un appareil distant. Vous pouvez démarrer l'application immédiatement, ou bien la configurer pour s'exécuter dans le débogueur au démarrage de ce dernier par un autre processus ou une autre méthode, depuis le menu Démarrer ou par un contrat d'activation, par exemple. Vous pouvez également configurer l'application pour s'exécuter en mode débogage lorsque vous souhaitez déboguer un processus en arrière\-plan sans démarrer l'application. Pour plus d'informations, consultez [Déclencher des événements de suspension, de reprise et d'arrière\-plan pour Windows Store](../debugger/how-to-trigger-suspend-resume-and-background-events-for-windows-store-apps-in-visual-studio.md).  
+ The app can be installed on the local device, or it can be on a remote device.  You can start the app immediately, or you can set it to run in the debugger when it is started by another process or method, such as from the Start menu or by an activation contract, You can also set the app to run in debug mode when you want to debug a background process without starting the app. For more information, see [Trigger suspend, resume, and background events for Windows Store)](../debugger/how-to-trigger-suspend-resume-and-background-events-for-windows-store-apps-in-visual-studio.md).  
   
- Pour configurer une application installée pour s'exécuter en mode débogage, procédez comme suit :  
+ To set an installed app to run in debug mode, do this:  
   
 > [!NOTE]
->  L'application ne doit pas être en cours d'exécution quand vous lancez cette procédure.  
+>  The app must not be running when you start this procedure.  
   
-1.  Dans le menu **Débogage**, choisissez **Déboguer le package d'application installé**.  
+1.  On the **Debug** menu, choose **Debug Installed App Package**.  
   
-2.  Choisissez l'une des options suivantes dans la liste :  
+2.  Choose one of the following options from the list:  
   
     |||  
     |-|-|  
-    |**Ordinateur local**|Déboguez l'application dans la session active sur votre ordinateur local. Consultez [Exécuter des applications du Windows Store sur un ordinateur local](../debugger/run-windows-store-apps-on-the-local-machine.md).|  
-    |**Simulateur**|Déboguez l'application dans le simulateur Visual Studio pour les applications [!INCLUDE[win8_appname_long](../debugger/includes/win8_appname_long_md.md)]. Le simulateur est une fenêtre du Bureau qui permet de déboguer les fonctionnalités du périphérique, comme les mouvements tactiles et la rotation du périphérique, qui ne sont pas disponibles sur l'ordinateur local. Consultez [Exécuter des applications du Windows Store dans le simulateur](../debugger/run-windows-store-apps-in-the-simulator.md).|  
-    |**Ordinateur distant**|Déboguez l'application sur un appareil connecté à l'ordinateur local sur un intranet ou directement connecté via un câble Ethernet. Pour déboguer à distance, les outils de contrôle à distance Visual Studio doivent être installés et en cours d'exécution sur le périphérique distant. Consultez [Exécuter des applications du Windows Store sur un ordinateur distant](../debugger/run-windows-store-apps-on-a-remote-machine.md).|  
+    |**Local Machine**|Debug the app in the current session on your local machine. See [Run Windows Store apps on the local machine](../debugger/run-windows-store-apps-on-the-local-machine.md).|  
+    |**Simulator**|Debug the app in the Visual Studio simulator for [!INCLUDE[win8_appname_long](../debugger/includes/win8_appname_long_md.md)] apps. The simulator is a Desktop window that enables you to debug device functionality—such as touch gestures and device rotation—that are not available on the local machine. See [Run Windows Store apps in the simulator](../debugger/run-windows-store-apps-in-the-simulator.md).|  
+    |**Remote Machine**|Debug the app on a device that is connected to the local machine over an intranet or directly connected by using an Ethernet cable. To debug remotely, the Visual Studio Remote Tools must be installed and running on the remote device. See [Run Windows Store apps on a remote machine](../debugger/run-windows-store-apps-on-a-remote-machine.md).|  
   
-3.  Choisissez l'application dans la liste **Packages d'application installés**.  
+3.  Choose the app from the **Installed App Packages** list.  
   
-4.  Choisissez le moteur de débogage à utiliser dans la liste **Déboguer ce type de code**.  
+4.  Choose the debug engine to use from the **Debug this code type** list.  
   
-5.  \(Facultatif\). Choisissez **Ne pas lancer, mais déboguer mon code au démarrage** pour déboguer l'application lorsqu'elle est lancée à l'aide d'une autre méthode ou pour déboguer un processus en arrière\-plan.  
+5.  (Optional). Choose **Do not launch, but debug my code when it starts** to debug the app when it is started by some other method, or to debug a background process.  
   
- Quand vous cliquez sur **Démarrer**, l'application démarre ou est configurée pour s'exécuter en mode débogage.  
+ When you click **Start**, the app is launched or is set to run in debug mode.  
   
-##  <a name="BKMK_Attach_the_debugger_to_a_running_app_"></a> Attacher le débogueur à une application en cours d'exécution  
- Pour attacher le débogueur à une application [!INCLUDE[win8_appname_long](../debugger/includes/win8_appname_long_md.md)], vous devez utiliser Debuggable Package Manager pour configurer l'application à exécuter en mode débogage. Debuggable Package Manager est installé avec les outils de contrôle à distance Visual Studio.  
+##  <a name="BKMK_Attach_the_debugger_to_a_running_app_"></a> Attach the debugger to a running app  
+ To attach the debugger to a [!INCLUDE[win8_appname_long](../debugger/includes/win8_appname_long_md.md)] app, you must use the Debuggable Package Manager to set the app to run in debug mode. The Debuggable Package Manager is installed with the Visual Studio Remote Tools.  
   
- Attacher le débogueur à une application est utile lorsque vous devez déboguer une application déjà installée, telle qu'une application qui a été installée à partir du Windows Store. L'attachement est requis lorsque vous possédez les fichiers sources de l'application, mais que vous n'avez pas de projet Visual Studio pour l'application. Par exemple, vous pouvez avoir un système de génération personnalisée qui n'utilise pas les projets ou les solutions Visual Studio.  
+ Attaching the debugger to an app is useful when you need to debug an already-installed app, such as an app that was installed from the Windows store. Attaching is required when you have the source files for the app, but you do not have a Visual Studio project for the app. For example, you might have a custom build system that does not use Visual Studio projects or solutions.  
   
- Pour attacher à une application  
+ To attach to an app:  
   
-1.  Configurez l'application pour l'exécuter en mode débogage Vous devez effectuer cette opération quand l'application n'est pas en cours d'exécution.  
+1.  Set the app to run in debug mode. This must be done when the app is not running.  
   
-2.  Démarrez l'application. Vous pouvez démarrer l'application à partir du menu Démarrer, d'un contrat d'exécution ou de toute autre méthode.  
+2.  Start the app. You can start the app from the Start menu, an execution contract, or some other method.  
   
-3.  Attachez le débogueur à l'application en cours d'exécution.  
+3.  Attach the debugger to the running app.  
   
-###  <a name="BKMK_Set_the_app_to_run_in_debug_mode"></a> Configurer l'application pour l'exécuter en mode débogage  
+###  <a name="BKMK_Set_the_app_to_run_in_debug_mode"></a> Set the app to run in debug mode  
   
-1.  Installez les outils de contrôle à distance Visual Studio sur l'appareil où l'application est installée. Consultez [Installation des outils de contrôle à distance](http://msdn.microsoft.com/library/windows/apps/hh441469.aspx#BKMK_Installing_the_Remote_Tools).  
+1.  Install the Visual Studio Remote Tools on the device where the app is installed. See [Installing the remote tools](http://msdn.microsoft.com/library/windows/apps/hh441469.aspx#BKMK_Installing_the_Remote_Tools).  
   
-2.  Dans le menu Démarrer, recherchez `Debuggable Package Manager`, puis démarrez\-le.  
+2.  On the Start menu, search for `Debuggable Package Manager` and then start it.  
   
-     Une fenêtre PowerShell correctement configurée pour l'applet de commande AppxDebug s'affiche.  
+     A PowerShell window properly configured for the AppxDebug cmdlet appears.  
   
-3.  Pour activer le débogage d'une application, vous devez spécifier l'identificateur PackageFullName de l'application. Pour afficher une liste de toutes les applications avec PackageFullName, tapez `Get-AppxPackage` à l'invite PowerShell.  
+3.  To enable debugging of an app, you must specify the PackageFullName identifier of the app. To view a list all apps that includes the PackageFullName, type `Get-AppxPackage` at the PowerShell prompt.  
   
-4.  À l'invite PowerShell, entrez `Enable-AppxDebug` *PackageFullName*, où *PackageFullName* est l'identificateur PackageFullName de l'application.  
+4.  At the PowerShell prompt, enter `Enable-AppxDebug` *PackageFullName* where *PackageFullName* is the PackageFullName identifier of the app.  
   
-###  <a name="BKMK_Attach_the_debugger"></a> Attacher le débogueur  
+###  <a name="BKMK_Attach_the_debugger"></a> Attach the debugger  
   
 > [!TIP]
->  Les applications JavaScript s'exécutent dans une instance du processus wwahost.exe. Si d'autres applications JavaScript sont en cours d'exécution pendant l'attachement à l'application, vous devez connaître l'identifiant de processus \(PID\) numérique du processus wwahost.exe dans lequel l'application s'exécute.  
+>  JavaScript apps run in an instance of the wwahost.exe process. If other JavaScript apps are running when you attach to the app, you will need to know the numeric process id (PID) of the wwahost.exe that the app is running in.  
 >   
->  La solution la plus simple pour gérer cette situation consiste à fermer toutes les autres applications JavaScript. Sinon, vous pouvez ouvrir le Gestionnaire de tâches Windows avant de démarrer l'application et de noter les identifiants des processus wwahost.exe. Quand vous spécifiez le processus à attacher dans la boîte de dialogue **Processus disponibles**, le processus wwahost.exe de l'application a un identifiant différent de ceux que vous avez déjà notés.  
+>  The easiest way to deal with this situation is to close all of the other JavaScript apps. Otherwise, you can open Windows Task Manager before you start the app and note the ids of the wwahost.exe processes. When you specify the process to attach to in the **Available Processes**  dialog box, the wwahost.exe of the app will have an id that is different than the ones that you have noted.  
   
- Pour attacher le débogueur  
+ To attach the debugger:  
   
-1.  Dans le menu **Déboguer**, choisissez **Attacher au processus**.  
+1.  On the **Debug** menu, choose **Attach to Process**.  
   
-     La boîte de dialogue **Attacher au processus** s'affiche.  
+     The **Attach to Process** dialog box appears.  
   
-2.  Pour attacher une application à un appareil distant, spécifiez l'appareil distant dans la zone **Qualificateur**. Vous pouvez effectuer les tâches suivantes :  
+2.  To attach to an app on a remote device, specify the remote device in the **Qualifier** box. You can:  
   
-    -   entrer le nom dans la zone **Qualificateur** ;  
+    -   Enter the name in the **Qualifier** box.  
   
-    -   cliquer sur la flèche Bas dans la zone **Qualificateur**, puis choisir l'appareil dans une liste d'appareils que vous avez attachés précédemment ;  
+    -   Choose the down-arrow in the **Qualifier** box and choose the device from a list of devices that you have attached to before.  
   
-    -   choisir **Rechercher** pour sélectionner l'appareil dans une liste d'appareils sur votre sous\-réseau local.  
+    -   Choose **Find** to choose the device from a list of devices on your local subnet.  
   
-3.  Spécifiez le type de code que vous souhaitez déboguer dans la zone **Attacher à**.  
+3.  Specify the type of code that you want to debug in the **Attach to** box.  
   
-     Choisissez **Sélectionner**, puis effectuez l'une des opérations suivantes :  
+     Choose **Select** and then do one of the following:  
   
-    -   Choisissez **Déterminer automatiquement le type de code à déboguer**.  
+    -   Choose **Automatically determine the type of code to debug**.  
   
-    -   Choisissez **Déboguer ces types de codes**, puis sélectionnez un ou plusieurs types dans la liste.  
+    -   Choose **Debug these code types** and then choose one or more types from the list.  
   
-4.  Dans la liste **Processus disponibles**, choisissez le processus **wwahost.exe** approprié. Utilisez la colonne **Titre** pour identifier votre application.  
+4.  In the **Available Processes**  list, choose the appropriate **wwahost.exe** process. Use the **Title** column to identify your app.  
   
-5.  Choisissez **Attacher**.  
+5.  Choose **Attach**.  
   
- Visual Studio attache le débogueur au processus. L'exécution se poursuit jusqu'à ce qu'un point d'arrêt soit atteint, que vous suspendiez manuellement l'exécution, qu'une exception non gérée se produise ou que l'application se termine.  
+ Visual Studio attaches the debugger to the process. Execution continues until a breakpoint is reached, you manually suspend execution, an unhandled exception occurs, or the app ends.  
   
-## Voir aussi  
- [Contrôler l'exécution dans une session de débogage \(JavaScript\)](../debugger/control-execution-of-a-store-app-in-a-visual-studio-debug-session-for-windows-store-apps-javascript.md)   
- [Démarrage rapide : déboguer du code HTML et CSS](../debugger/quickstart-debug-html-and-css.md)   
- [Déclencher des événements de suspension, de reprise et d'arrière\-plan pour Windows Store](../debugger/how-to-trigger-suspend-resume-and-background-events-for-windows-store-apps-in-visual-studio.md)   
- [Déboguer des applications dans Visual Studio](../debugger/debug-store-apps-in-visual-studio.md)
+## <a name="see-also"></a>See Also  
+ [Control execution in a debug session (JavaScript)](../debugger/control-execution-of-a-store-app-in-a-visual-studio-debug-session-for-windows-store-apps-javascript.md)   
+ [Quickstart: Debug HTML and CSS](../debugger/quickstart-debug-html-and-css.md)   
+ [Trigger suspend, resume, and background events for Windows Store)](../debugger/how-to-trigger-suspend-resume-and-background-events-for-windows-store-apps-in-visual-studio.md)   
+ [Debug apps in Visual Studio](../debugger/debug-store-apps-in-visual-studio.md)

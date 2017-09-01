@@ -1,54 +1,71 @@
 ---
-title: "IDebugThread2::Resume | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "IDebugThread2::Resume"
-helpviewer_keywords: 
-  - "IDebugThread2::Resume"
+title: IDebugThread2::Resume | Microsoft Docs
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology:
+- vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords:
+- IDebugThread2::Resume
+helpviewer_keywords:
+- IDebugThread2::Resume
 ms.assetid: 36aad682-b0b9-40a2-b3fc-f0e61d41cdbc
 caps.latest.revision: 10
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 10
----
-# IDebugThread2::Resume
-[!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]
+ms.author: gregvanl
+manager: ghogen
+translation.priority.mt:
+- cs-cz
+- de-de
+- es-es
+- fr-fr
+- it-it
+- ja-jp
+- ko-kr
+- pl-pl
+- pt-br
+- ru-ru
+- tr-tr
+- zh-cn
+- zh-tw
+ms.translationtype: MT
+ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
+ms.openlocfilehash: 20f4c7ecbcd724ad10c54eea2046407db443bd24
+ms.contentlocale: fr-fr
+ms.lasthandoff: 08/28/2017
 
-Reprend l'exécution d'un thread.  
+---
+# <a name="idebugthread2resume"></a>IDebugThread2::Resume
+Resumes execution of a thread.  
   
-## Syntaxe  
+## <a name="syntax"></a>Syntax  
   
-```cpp#  
-HRESULT Resume (   
-   DWORD *pdwSuspendCount  
+```cpp  
+HRESULT Resume (   
+   DWORD *pdwSuspendCount  
 );  
 ```  
   
-```c#  
-int Resume (   
-   out uint pdwSuspendCount  
+```csharp  
+int Resume (   
+   out uint pdwSuspendCount  
 );  
 ```  
   
-#### Paramètres  
+#### <a name="parameters"></a>Parameters  
  `pdwSuspendCount`  
- \[out\]  Retourne le compteur de suspension après l'opération de réexécuter.  
+ [out] Returns the suspend count after the resume operation.  
   
-## Valeur de retour  
- En cas de réussite, retourne `S_OK`; sinon, retourne un code d'erreur.  
+## <a name="return-value"></a>Return Value  
+ If successful, returns `S_OK`; otherwise, returns an error code.  
   
-## Notes  
- Chaque appel à cette méthode décrémente le compteur de suspension jusqu'à ce qu'il atteigne 0 lorsque, l'exécution se poursuivre réellement.  Ce compteur de suspension s'affiche dans la fenêtre de débogage de **Threads** .  
+## <a name="remarks"></a>Remarks  
+ Each call to this method decrements the suspend count until it reaches 0 at which time, execution is actually resumed. This suspend count is displayed in the **Threads** debug window.  
   
- Pour chaque appel à cette méthode, il doit exister un appel précédent à la méthode de [Interrompre](../Topic/IDebugThread2::Suspend.md) .  le compteur de suspension détermine combien de fois la méthode d' `IDebugThread2::Suspend` a été appelées jusqu'à présent.  
+ For each call to this method, there must be a previous call to the [Suspend](../../../extensibility/debugger/reference/idebugthread2-suspend.md) method. The suspend count determines how many times the `IDebugThread2::Suspend` method has been called so far.  
   
-## Voir aussi  
+## <a name="see-also"></a>See Also  
  [IDebugThread2](../../../extensibility/debugger/reference/idebugthread2.md)   
- [Interrompre](../Topic/IDebugThread2::Suspend.md)
+ [Suspend](../../../extensibility/debugger/reference/idebugthread2-suspend.md)

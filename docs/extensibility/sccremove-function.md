@@ -1,80 +1,97 @@
 ---
-title: "SccRemove (fonction) | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "SccRemove"
-helpviewer_keywords: 
-  - "SccRemove (fonction)"
+title: SccRemove Function | Microsoft Docs
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology:
+- vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords:
+- SccRemove
+helpviewer_keywords:
+- SccRemove function
 ms.assetid: 20830fdc-c0e9-4a5f-bf60-33f28874442f
 caps.latest.revision: 13
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 13
----
-# SccRemove (fonction)
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
+ms.author: gregvanl
+manager: ghogen
+translation.priority.mt:
+- cs-cz
+- de-de
+- es-es
+- fr-fr
+- it-it
+- ja-jp
+- ko-kr
+- pl-pl
+- pt-br
+- ru-ru
+- tr-tr
+- zh-cn
+- zh-tw
+ms.translationtype: MT
+ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
+ms.openlocfilehash: 02a6aedc192bed7dbe0947ceae1ea55d9f50e3ed
+ms.contentlocale: fr-fr
+ms.lasthandoff: 08/28/2017
 
-Cette fonction supprime les fichiers du système de contrôle source.  
+---
+# <a name="sccremove-function"></a>SccRemove Function
+This function deletes files from the source control system.  
   
-## Syntaxe  
+## <a name="syntax"></a>Syntax  
   
-```cpp#  
+```cpp  
 SCCRTN SccRemove(  
-   LPVOID    pvContext,  
-   HWND      hWnd,  
-   LONG      nFiles,  
-   LPCSTR*   lpFileNames,  
-   LPCSTR    lpComment,  
-   LONG      fOptions,  
-   LPCMDOPTS pvOptions  
+   LPVOID    pvContext,  
+   HWND      hWnd,  
+   LONG      nFiles,  
+   LPCSTR*   lpFileNames,  
+   LPCSTR    lpComment,  
+   LONG      fOptions,  
+   LPCMDOPTS pvOptions  
 );  
 ```  
   
-#### Paramètres  
+#### <a name="parameters"></a>Parameters  
  pvContext  
- \[in\] La structure de contexte du plug\-in de contrôle de source.  
+ [in] The source control plug-in context structure.  
   
  hWnd  
- \[in\] Handle vers la fenêtre de l'IDE que le plug\-in de contrôle de code source peut utiliser en tant que parent pour toutes les boîtes de dialogue qu'il fournit.  
+ [in] A handle to the IDE window that the source control plug-in can use as a parent for any dialog boxes that it provides.  
   
  nFiles  
- \[in\] Nombre de fichiers spécifié dans le `lpFileNames` tableau.  
+ [in] Number of files specified in the `lpFileNames` array.  
   
  lpFileNames  
- \[in\] Tableau des noms de chemin d'accès local complet des fichiers à supprimer.  
+ [in] Array of fully qualified local path names of files to be removed.  
   
  lpComment  
- \[in\] Le commentaire à appliquer à chaque fichier en cours de suppression.  
+ [in] The comment to be applied to each file being removed.  
   
- Options  
- \[in\] Indicateurs de commande \(non utilisés\).  
+ fOptions  
+ [in] Command flags (unused).  
   
  pvOptions  
- \[in\] Options spécifiques au plug\-in de contrôle source.  
+ [in] Source control plug-in-specific options.  
   
-## Valeur de retour  
- L'implémentation de plug\-in de contrôle de source de cette fonction est censée renvoyer une des valeurs suivantes :  
+## <a name="return-value"></a>Return Value  
+ The source control plug-in implementation of this function is expected to return one of the following values:  
   
-|Valeur|Description|  
-|------------|-----------------|  
-|SCC\_OK|Suppression a réussi.|  
-|SCC\_E\_FILENOTCONTROLLED|Le fichier sélectionné n'est pas sous contrôle de code source.|  
-|SCC\_E\_OPNOTSUPPORTED|Le système de contrôle de code source ne prend pas en charge cette opération.|  
-|SCC\_E\_ISCHECKEDOUT|Impossible de supprimer un fichier, car un utilisateur a extrait.|  
-|SCC\_E\_ACCESSFAILURE|Impossible d'accéder au système de contrôle source, probablement en raison de problèmes réseau ou de contention.|  
-|SCC\_E\_NOTAUTHORIZED|L'utilisateur n'est pas autorisé à effectuer cette opération.|  
-|SCC\_E\_NONSPECIFICERROR|Erreur non spécifique ; fichier n'a pas été supprimé.|  
-|SCC\_I\_OPERATIONCANCELED|L'opération a été annulée avant la fin.|  
+|Value|Description|  
+|-----------|-----------------|  
+|SCC_OK|Removal was successful.|  
+|SCC_E_FILENOTCONTROLLED|The selected file is not under source control.|  
+|SCC_E_OPNOTSUPPORTED|The source control system does not support this operation.|  
+|SCC_E_ISCHECKEDOUT|Cannot remove a file because a user currently has it checked out.|  
+|SCC_E_ACCESSFAILURE|There was a problem accessing the source control system, probably due to network or contention issues.|  
+|SCC_E_NOTAUTHORIZED|The user is not allowed to perform this operation.|  
+|SCC_E_NONSPECIFICERROR|Nonspecific failure; file was not removed.|  
+|SCC_I_OPERATIONCANCELED|The operation was cancelled before completion.|  
   
-## Notes  
- Cette fonction supprime les fichiers du système de contrôle de code source, mais ne les supprime pas de disque dur local de l'utilisateur.  
+## <a name="remarks"></a>Remarks  
+ This function removes the files from the source control system but does not delete them from the user's local hard drive.  
   
-## Voir aussi  
- [Fonctions d'API de plug\-in de contrôle de source](../extensibility/source-control-plug-in-api-functions.md)
+## <a name="see-also"></a>See Also  
+ [Source Control Plug-in API Functions](../extensibility/source-control-plug-in-api-functions.md)

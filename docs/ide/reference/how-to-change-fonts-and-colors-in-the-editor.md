@@ -40,8 +40,7 @@ ms.contentlocale: fr-fr
 ms.lasthandoff: 05/24/2017
 
 ---
-# Guide pratique pour modifier les polices et les couleurs utilisées dans l’éditeur
-<a id="how-to-change-fonts-and-colors-in-the-editor" class="xliff"></a>
+# <a name="how-to-change-fonts-and-colors-in-the-editor"></a>Guide pratique pour modifier les polices et les couleurs utilisées dans l’éditeur
 Vous pouvez modifier le type de police par défaut, ajuster la taille de police et modifier les couleurs de premier plan et d’arrière-plan pour divers **éléments affichés** sous forme de texte dans l’éditeur de code. Lors de la modification des paramètres de police, gardez à l’esprit les informations suivantes :  
   
 -   Les paramètres **Police** et **Taille** s’appliquent à l’ensemble des éléments de texte dans tous les éditeurs [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)].  
@@ -53,8 +52,7 @@ Vous pouvez modifier le type de police par défaut, ajuster la taille de police 
 > [!NOTE]
 >  Les boîtes de dialogue et les commandes de menu qui s’affichent peuvent être différentes de celles décrites dans l’**aide**, en fonction de vos paramètres actifs ou de l’édition utilisée. Pour modifier vos paramètres, choisissez **Importation et exportation de paramètres** dans le menu **Outils** . Pour plus d’informations, consultez [Personnaliser l’IDE Visual Studio](../../ide/personalizing-the-visual-studio-ide.md).  
   
-### Pour modifier le type, la taille et les couleurs de police par défaut
-<a id="to-change-the-default-font-face-size-and-colors" class="xliff"></a>  
+### <a name="to-change-the-default-font-face-size-and-colors"></a>Pour modifier le type, la taille et les couleurs de police par défaut  
   
 1.  Sélectionnez **Options** dans le menu **Outils**, puis, dans le dossier **Environnement**, sélectionnez **Polices et couleurs**.  
   
@@ -71,8 +69,7 @@ Vous pouvez modifier le type de police par défaut, ajuster la taille de police 
   
 5.  Cliquez sur **OK**.  
   
-## Voir aussi
-<a id="see-also" class="xliff"></a>  
+## <a name="see-also"></a>Voir aussi  
  [Personnalisation de l’éditeur](../../ide/customizing-the-editor.md)   
  [Boîte de dialogue Options de l’éditeur de texte](../../ide/reference/text-editor-options-dialog-box.md)   
  [Écriture de code](../../ide/writing-code-in-the-code-and-text-editor.md)   

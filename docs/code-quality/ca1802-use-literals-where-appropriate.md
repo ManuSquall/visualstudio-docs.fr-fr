@@ -1,53 +1,71 @@
 ---
-title: "CA1802&#160;: Utilisez des litt&#233;raux lorsque n&#233;cessaire | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-devops-test"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "UseLiteralsWhereAppropriate"
-  - "CA1802"
-helpviewer_keywords: 
-  - "UseLiteralsWhereAppropriate"
-  - "CA1802"
+title: 'CA1802: Use Literals Where Appropriate | Microsoft Docs'
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology:
+- vs-devops-test
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords:
+- UseLiteralsWhereAppropriate
+- CA1802
+helpviewer_keywords:
+- UseLiteralsWhereAppropriate
+- CA1802
 ms.assetid: 2515e4cd-9e61-486d-b067-58ba1a743ce4
 caps.latest.revision: 17
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
-caps.handback.revision: 17
----
-# CA1802&#160;: Utilisez des litt&#233;raux lorsque n&#233;cessaire
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
+author: stevehoag
+ms.author: shoag
+manager: wpickett
+translation.priority.ht:
+- de-de
+- es-es
+- fr-fr
+- it-it
+- ja-jp
+- ko-kr
+- ru-ru
+- zh-cn
+- zh-tw
+translation.priority.mt:
+- cs-cz
+- pl-pl
+- pt-br
+- tr-tr
+ms.translationtype: HT
+ms.sourcegitcommit: eb5c9550fd29b0e98bf63a7240737da4f13f3249
+ms.openlocfilehash: 542d38ffef6008d3bd9605466f23f0cc35014c3e
+ms.contentlocale: fr-fr
+ms.lasthandoff: 08/30/2017
 
+---
+# <a name="ca1802-use-literals-where-appropriate"></a>CA1802: Use Literals Where Appropriate
 |||  
 |-|-|  
 |TypeName|UseLiteralsWhereAppropriate|  
 |CheckId|CA1802|  
-|Catégorie|Microsoft.Performance|  
-|Modification avec rupture|Modification sans rupture|  
+|Category|Microsoft.Performance|  
+|Breaking Change|Non-breaking|  
   
-## Cause  
- Un champ est déclaré `static` et `readonly` \(`Shared` et `ReadOnly` en [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)]\), et est initialisé avec une valeur qui est calculable à la compilation.  
+## <a name="cause"></a>Cause  
+ A field is declared `static` and `readonly` (`Shared` and `ReadOnly` in [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)]), and is initialized with a value that is computable at compile time.  
   
-## Description de la règle  
- La valeur d'un champ `static` `readonly` est calculée à l'exécution lorsque le constructeur statique du type déclarant est appelé.  Si le champ `static` `readonly` est initialisé lorsqu'il est déclaré et qu'un constructeur statique n'est pas déclaré explicitement, le compilateur émet un constructeur statique pour initialiser le champ.  
+## <a name="rule-description"></a>Rule Description  
+ The value of a `static``readonly` field is computed at runtime when the static constructor for the declaring type is called. If the `static``readonly` field is initialized when it is declared and a static constructor is not declared explicitly, the compiler emits a static constructor to initialize the field.  
   
- La valeur d'un champ `const` est calculée à la compilation et stockée dans les métadonnées, ce qui améliore les performances d'exécution lorsqu'il est comparé à un champ `static` `readonly`.  
+ The value of a `const` field is computed at compile time and stored in the metadata, which increases runtime performance when it is compared to a `static``readonly` field.  
   
- La valeur assignée au champ ciblé étant calculable à la compilation, remplacez la déclaration par un champ `const` afin que la valeur soit calculée à la compilation plutôt qu'à l'exécution.  
+ Because the value assigned to the targeted field is computable at compile time, change the declaration to a `const` field so that the value is computed at compile time instead of at runtime.  
   
-## Comment corriger les violations  
- Pour corriger une violation de cette règle, remplacez les modificateurs `static` et `readonly` par le modificateur `const`.  
+## <a name="how-to-fix-violations"></a>How to Fix Violations  
+ To fix a violation of this rule, replace the `static` and `readonly` modifiers with the `const` modifier.  
   
-## Quand supprimer les avertissements  
- Il est possible de supprimer sans risque un avertissement de cette règle, voire de désactiver la règle, si les performances ne sont pas un problème.  
+## <a name="when-to-suppress-warnings"></a>When to Suppress Warnings  
+ It is safe to suppress a warning from this rule, or disable the rule, if performance is not of concern.  
   
-## Exemple  
- L'exemple suivant présente un type, `UseReadOnly`, qui enfreint la règle et un autre, `UseConstant`, qui satisfait la règle.  
+## <a name="example"></a>Example  
+ The following example shows a type, `UseReadOnly`, that violates the rule and a type, `UseConstant`, that satisfies the rule.  
   
- [!CODE [FxCop.Performance.UseLiterals#1](../CodeSnippet/VS_Snippets_CodeAnalysis/FxCop.Performance.UseLiterals#1)]
+ [!code-vb[FxCop.Performance.UseLiterals#1](../code-quality/codesnippet/VisualBasic/ca1802-use-literals-where-appropriate_1.vb)] [!code-csharp[FxCop.Performance.UseLiterals#1](../code-quality/codesnippet/CSharp/ca1802-use-literals-where-appropriate_1.cs)]

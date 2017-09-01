@@ -7,6 +7,7 @@ ms.reviewer:
 ms.suite: 
 ms.technology:
 - devlang-python
+ms.devlang: python
 ms.tgt_pltfrm: 
 ms.topic: article
 ms.assetid: d30fddae-8e2f-4f50-90d3-8ed2cd35c7a6
@@ -14,24 +15,11 @@ caps.latest.revision: 11
 author: kraigb
 ms.author: kraigb
 manager: ghogen
-translation.priority.ht:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
-translationtype: Human Translation
-ms.sourcegitcommit: 7d726441c2d6953bd7b50451bec7fff05d5d71b0
-ms.openlocfilehash: dfc1cc163f44a12984800882d4ac880493c0ed0b
-ms.lasthandoff: 03/10/2017
+ms.translationtype: HT
+ms.sourcegitcommit: c00adbbabf0d3b82acb17f4a269dfc693246bc69
+ms.openlocfilehash: 89de0d11791dbf13b9d4fcfcea8168b443d2777b
+ms.contentlocale: fr-fr
+ms.lasthandoff: 08/01/2017
 
 ---
 
@@ -57,7 +45,7 @@ Vous trouverez la documentation sur [azure-sdk-for-python.readthedocs.org](http:
 
 Le [Kit de développement logiciel (SDK) Azure pour le centre de développement Python](http://azure.microsoft.com/develop/python/) dispose également d’un certain nombre de ressources utiles, y compris d’une série de didacticiels tels que :
 
-  - Création d’applications web avec [Django](https://docs.microsoft.com/azure/service-bus-messaging/service-bus-python-how-to-use-topics-subscriptions) [Flask](https://docs.microsoft.com/azure/app-service-web/web-sites-python-create-deploy-flask-app) et [Bottle](https://docs.microsoft.com/azure/app-service-web/web-sites-python-create-deploy-bottle-app).
+  - Création d’applications web avec [Django](https://docs.microsoft.com/azure/app-service-web/web-sites-python-create-deploy-django-app) [Flask](https://docs.microsoft.com/azure/app-service-web/web-sites-python-create-deploy-flask-app) et [Bottle](https://docs.microsoft.com/azure/app-service-web/web-sites-python-create-deploy-bottle-app).
   - [Stockage d’objets BLOB](https://docs.microsoft.com/azure/storage/storage-python-how-to-use-blob-storage)
   - [Stockage de tables](https://docs.microsoft.com/azure/storage/storage-python-how-to-use-table-storage)
   - [Stockage de file d’attente](https://docs.microsoft.com/azure/storage/storage-python-how-to-use-queue-storage)
@@ -77,4 +65,5 @@ Pour les API publiques dépourvues de documentation, les tests d’unités du [r
 
 Le référentiel Git du Kit de développement logiciel (SDK) se trouve à l’adresse suivante : [https://github.com/Azure/azure-sdk-for-python](https://github.com/Azure/azure-sdk-for-python).
 
-Si vous rencontrez des problèmes ou avez des questions concernant l’utilisation du Kit de développement logiciel (SDK), veuillez [Signaler les problèmes au niveau du référentiel](https://github.com/Azure/azure-sdk-for-python/issues).
+[Signalez les problèmes au niveau du référentiel](https://github.com/Azure/azure-sdk-for-python/issues) si vous rencontrez des problèmes ou avez des questions concernant l’utilisation du Kit SDK.
+

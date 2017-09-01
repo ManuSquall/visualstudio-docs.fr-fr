@@ -1,5 +1,5 @@
 ---
-title: IDebugContainerField::EnumFields | Documents Microsoft
+title: IDebugContainerField::EnumFields | Microsoft Docs
 ms.custom: 
 ms.date: 11/04/2016
 ms.reviewer: 
@@ -30,18 +30,19 @@ translation.priority.mt:
 - tr-tr
 - zh-cn
 - zh-tw
-translationtype: Machine Translation
-ms.sourcegitcommit: 5db97d19b1b823388a465bba15d057b30ff0b3ce
-ms.openlocfilehash: d0b126d5bc2de796cb9d9afc2e5ff9a832c79bab
-ms.lasthandoff: 02/22/2017
+ms.translationtype: MT
+ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
+ms.openlocfilehash: 1244306cbdfa70b0885274df75a7bf51a063bc30
+ms.contentlocale: fr-fr
+ms.lasthandoff: 08/28/2017
 
 ---
 # <a name="idebugcontainerfieldenumfields"></a>IDebugContainerField::EnumFields
-Crée un énumérateur pour les champs du conteneur.  
+Creates an enumerator for the fields of the container.  
   
-## <a name="syntax"></a>Syntaxe  
+## <a name="syntax"></a>Syntax  
   
-```cpp#  
+```cpp  
 HRESULT EnumFields(   
    FIELD_KIND         dwKindFilter,  
    FIELD_MODIFIERS    dwModifiersFilter,  
@@ -51,7 +52,7 @@ HRESULT EnumFields(
 );  
 ```  
   
-```c#  
+```csharp  
 int EnumFields(  
    enum_ FIELD_KIND      dwKindFilter,   
    enum_ FIELD_MODIFIERS dwModifiersFilter,   
@@ -61,29 +62,29 @@ int EnumFields(
 );  
 ```  
   
-#### <a name="parameters"></a>Paramètres  
+#### <a name="parameters"></a>Parameters  
  `dwKindFilter`  
- [in] Une combinaison de [FIELD_KIND](../../../extensibility/debugger/reference/field-kind.md) constantes qui sélectionnent les champs à énumérer. Types de champ peuvent décrire les types de stockage, telles que la classe ou primitive ou spécifiques, tels que local, le paramètre ou le pointeur « this ».  
+ [in] A combination of [FIELD_KIND](../../../extensibility/debugger/reference/field-kind.md) constants that select the fields to be enumerated. Field kinds can describe storage types, such as class or primitive, or specific information, such as local, parameter, or "this" pointer.  
   
  `dwModifiersFilter`  
- [in] Une combinaison de [FIELD_MODIFIERS](../../../extensibility/debugger/reference/field-modifiers.md) constantes qui sélectionnent les champs à énumérer. Modificateurs de champ peuvent être des autorisations d’accès, tel que public ou privé ou des informations de stockage, comme virtuelle, statique ou final.  
+ [in] A combination of [FIELD_MODIFIERS](../../../extensibility/debugger/reference/field-modifiers.md) constants that select the fields to be enumerated. Field modifiers can be access permissions, such as public or private, or storage information, such as virtual, static, or final.  
   
  `pszNameFilter`  
- [in] Le nom du champ à énumérer. Cela peut être une valeur null si tous les champs doivent être retournées.  
+ [in] The name of the field to be enumerated. This can be a null value if all fields are to be returned.  
   
  `nameMatch`  
- [in] Une valeur à partir de la [NAME_MATCH](../../../extensibility/debugger/reference/name-match.md) énumération qui détermine si la recherche respecte la casse ou non.  
+ [in] A value from the [NAME_MATCH](../../../extensibility/debugger/reference/name-match.md) enumeration that controls whether searching is case-sensitive or not.  
   
  `ppEnum`  
- [out] Retourne un [IEnumDebugFields](../../../extensibility/debugger/reference/ienumdebugfields.md) objet représentant la liste des champs. Retourne une valeur null si aucun champ.  
+ [out] Returns an [IEnumDebugFields](../../../extensibility/debugger/reference/ienumdebugfields.md) object representing the list of fields. Returns a null value if there are no fields.  
   
-## <a name="return-value"></a>Valeur de retour  
- En cas de réussite, retourne S_OK ou S_FALSE si aucun champ. Sinon, retourne un code d'erreur.  
+## <a name="return-value"></a>Return Value  
+ If successful, returns S_OK or S_FALSE if there are no fields. Otherwise, returns an error code.  
   
-## <a name="remarks"></a>Remarques  
- Le `dwKindFilter`, `dwModifiersFilter`, et `pszNameFilter` paramètres peuvent être combinés, par exemple, pour sélectionner toutes les méthodes virtuelles publiques nommées « MyMethod ».  
+## <a name="remarks"></a>Remarks  
+ The `dwKindFilter`, `dwModifiersFilter`, and `pszNameFilter` parameters can be combined, for example, to select all public virtual methods named "MyMethod".  
   
-## <a name="see-also"></a>Voir aussi  
+## <a name="see-also"></a>See Also  
  [IDebugContainerField](../../../extensibility/debugger/reference/idebugcontainerfield.md)   
  [IEnumDebugFields](../../../extensibility/debugger/reference/ienumdebugfields.md)   
  [FIELD_KIND](../../../extensibility/debugger/reference/field-kind.md)   

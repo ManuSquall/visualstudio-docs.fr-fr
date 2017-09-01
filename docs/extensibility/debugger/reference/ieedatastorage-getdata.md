@@ -1,5 +1,5 @@
 ---
-title: IEEDataStorage::GetData | Documents Microsoft
+title: IEEDataStorage::GetData | Microsoft Docs
 ms.custom: 
 ms.date: 11/04/2016
 ms.reviewer: 
@@ -30,18 +30,19 @@ translation.priority.mt:
 - tr-tr
 - zh-cn
 - zh-tw
-translationtype: Machine Translation
-ms.sourcegitcommit: 5db97d19b1b823388a465bba15d057b30ff0b3ce
-ms.openlocfilehash: 2e2430a6b2e8ae1a39882611e55499ebdb9bf4d8
-ms.lasthandoff: 02/22/2017
+ms.translationtype: MT
+ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
+ms.openlocfilehash: f9642911606d9bbd72382fa1209484cded9bdf74
+ms.contentlocale: fr-fr
+ms.lasthandoff: 08/28/2017
 
 ---
 # <a name="ieedatastoragegetdata"></a>IEEDataStorage::GetData
-Récupère le nombre spécifié d’octets à partir de l’objet.  
+Retrieves the specified number of bytes from the object.  
   
-## <a name="syntax"></a>Syntaxe  
+## <a name="syntax"></a>Syntax  
   
-```cpp#  
+```cpp  
 HRESULT GetData(  
    ULONG  dataSize,  
    ULONG* sizeGotten,  
@@ -49,7 +50,7 @@ HRESULT GetData(
 );  
 ```  
   
-```c#  
+```csharp  
 int GetData(  
    uint     dataSize,  
    out uint sizeGotten,  
@@ -57,22 +58,22 @@ int GetData(
 );  
 ```  
   
-#### <a name="parameters"></a>Paramètres  
+#### <a name="parameters"></a>Parameters  
  `dataSize`  
- [in] Le nombre d’octets à récupérer (la `data` tableau doit contenir au moins ce nombre d’octets).  
+ [in] The number of bytes to retrieve (the `data` array must hold at least this number of bytes).  
   
  `sizeGotten`  
- [out] Retourne le nombre d’octets réellement récupérées.  
+ [out] Returns the number of bytes actually retrieved.  
   
  `data`  
- [dans, out] Tableau à remplir avec les données demandées.  
+ [in, out] Array to be filled in with the requested data.  
   
-## <a name="return-value"></a>Valeur de retour  
- En cas de réussite, retourne `S_OK`; sinon, retourne un code d’erreur.  
+## <a name="return-value"></a>Return Value  
+ If successful, returns `S_OK`; otherwise, returns an error code.  
   
-## <a name="remarks"></a>Remarques  
- L’utilisation de cette méthode recommandée consiste à récupérer tous les octets de données dans un tableau local, dans la mesure où il n’existe aucun moyen d’ignorer les octets dans le processus de récupération. Dans ce cas, le paramètre `dataSize` doit être la valeur retournée par le [GetSize](../../../extensibility/debugger/reference/ieedatastorage-getsize.md) méthode.  
+## <a name="remarks"></a>Remarks  
+ The recommended use of this method is to retrieve all the data bytes into a local array, since there is no way to skip over bytes in the retrieval process. In this case, the parameter `dataSize` should be the value returned by the [GetSize](../../../extensibility/debugger/reference/ieedatastorage-getsize.md) method.  
   
-## <a name="see-also"></a>Voir aussi  
+## <a name="see-also"></a>See Also  
  [IEEDataStorage](../../../extensibility/debugger/reference/ieedatastorage.md)   
  [GetSize](../../../extensibility/debugger/reference/ieedatastorage-getsize.md)

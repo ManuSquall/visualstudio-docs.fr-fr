@@ -1,60 +1,77 @@
 ---
-title: "IDebugFunctionObject::CreateObjectNoConstructor | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "IDebugFunctionObject::CreateObjectNoConstructor"
-helpviewer_keywords: 
-  - "IDebugFunctionObject::CreateObjectNoConstructor (méthode)"
+title: IDebugFunctionObject::CreateObjectNoConstructor | Microsoft Docs
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology:
+- vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords:
+- IDebugFunctionObject::CreateObjectNoConstructor
+helpviewer_keywords:
+- IDebugFunctionObject::CreateObjectNoConstructor method
 ms.assetid: 4e2bd6d5-f4bd-4c10-a998-3db451c9a0c8
 caps.latest.revision: 9
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 9
----
-# IDebugFunctionObject::CreateObjectNoConstructor
-[!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]
+ms.author: gregvanl
+manager: ghogen
+translation.priority.mt:
+- cs-cz
+- de-de
+- es-es
+- fr-fr
+- it-it
+- ja-jp
+- ko-kr
+- pl-pl
+- pt-br
+- ru-ru
+- tr-tr
+- zh-cn
+- zh-tw
+ms.translationtype: MT
+ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
+ms.openlocfilehash: 7e739ec710320cf6c0cfa9a6e75ef4626652d5dd
+ms.contentlocale: fr-fr
+ms.lasthandoff: 08/28/2017
 
-crée un objet sans le constructeur.  
+---
+# <a name="idebugfunctionobjectcreateobjectnoconstructor"></a>IDebugFunctionObject::CreateObjectNoConstructor
+Creates an object with no constructor.  
   
-## Syntaxe  
+## <a name="syntax"></a>Syntax  
   
-```cpp#  
-HRESULT CreateObjectNoConstructor(   
-   IDebugField*   pClassObject,  
-   IDebugObject** ppObject  
+```cpp  
+HRESULT CreateObjectNoConstructor(   
+   IDebugField*   pClassObject,  
+   IDebugObject** ppObject  
 );  
 ```  
   
-```c#  
+```csharp  
 int CreateObjectNoConstructor(  
-   IDebugField      pClassField,   
-   out IDebugObject ppObject  
+   IDebugField      pClassField,   
+   out IDebugObject ppObject  
 );  
 ```  
   
-#### Paramètres  
+#### <a name="parameters"></a>Parameters  
  `pClassObject`  
- \[in\]  Un objet d' [IDebugField](../../../extensibility/debugger/reference/idebugfield.md) qui représente le type de l'objet à créer.  
+ [in] An [IDebugField](../../../extensibility/debugger/reference/idebugfield.md) object representing the type of the object to be created.  
   
  `ppObject`  
- \[out\]  Retourne [IDebugObject](../../../extensibility/debugger/reference/idebugobject.md) représentant l'objet nouvellement créé.  
+ [out] Returns an [IDebugObject](../../../extensibility/debugger/reference/idebugobject.md) representing the newly created object.  
   
-## Valeur de retour  
- En cas de réussite, retourne S\_OK ; sinon, retourne un code d'erreur.  
+## <a name="return-value"></a>Return Value  
+ If successful, returns S_OK; otherwise, returns an error code.  
   
-## Notes  
- Appelez cette méthode pour créer un objet qui représente une instance d'une structure ou d'un type complexe \(qui ne requiert pas de constructeur\) qui est un paramètre de la fonction qui est représentée par l'interface d' [IDebugFunctionObject](../../../extensibility/debugger/reference/idebugfunctionobject.md) .  
+## <a name="remarks"></a>Remarks  
+ Call this method to create an object that represents an instance of a structure or complex type (that does not require a constructor) that is a parameter to the function which is represented by the [IDebugFunctionObject](../../../extensibility/debugger/reference/idebugfunctionobject.md) interface.  
   
- si le paramètre d'objet requiert un constructeur, appelez la méthode d' [CreateObject](../../../extensibility/debugger/reference/idebugfunctionobject-createobject.md) .  
+ If the object parameter requires a constructor, call the [CreateObject](../../../extensibility/debugger/reference/idebugfunctionobject-createobject.md) method.  
   
-## Voir aussi  
+## <a name="see-also"></a>See Also  
  [IDebugField](../../../extensibility/debugger/reference/idebugfield.md)   
  [IDebugFunctionObject](../../../extensibility/debugger/reference/idebugfunctionobject.md)   
  [CreateObject](../../../extensibility/debugger/reference/idebugfunctionobject-createobject.md)

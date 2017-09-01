@@ -1,7 +1,7 @@
 ---
 title: "Options, Éditeur de texte, C/C++, Expérimental │ Microsoft Docs"
 ms.custom: 
-ms.date: 11/04/2016
+ms.date: 08/02/2017
 ms.reviewer: 
 ms.suite: 
 ms.tgt_pltfrm: 
@@ -30,11 +30,11 @@ translation.priority.mt:
 - pl-pl
 - pt-br
 - tr-tr
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 5ea9179ad37514ffad4876177b05150eecc22def
-ms.openlocfilehash: 77c4408fcd93a776468cf5fb23b3807a2b8d594d
+ms.translationtype: HT
+ms.sourcegitcommit: 8a544bd1e1242bb6fabe00f7842ac33ed9d9d444
+ms.openlocfilehash: 1677db7d5af93db8a378d598332e6a6d52f09bdd
 ms.contentlocale: fr-fr
-ms.lasthandoff: 05/24/2017
+ms.lasthandoff: 08/14/2017
 
 ---
 # <a name="options-text-editor-cc-experimental"></a>Options, Éditeur de texte, C/C++, Expérimental
@@ -50,7 +50,8 @@ En modifiant ces options, vous pouvez changer le comportement lié à IntelliSen
 ## <a name="enable-predictive-intellisense"></a>Activer la fonctionnalité IntelliSense prédictive
 La fonctionnalité IntelliSense prédictive limite le nombre de résultats affichés dans la liste déroulante IntelliSense afin que vous ne voyiez que les résultats qui sont pertinents dans le contexte. Par exemple, si vous tapez <code>int x =</code> et appelez la liste déroulante IntelliSense, vous voyez uniquement des entiers ou des fonctions qui retournent des entiers. La fonctionnalité IntelliSense prédictive est désactivée par défaut.
 
-## <a name="enable-faster-project-load"></a>Activer le chargement accéléré du projet
+## <a name="enable-faster-project-load"></a>Activer le chargement accéléré du projet 
+**Visual Studio 2017 versions 15.3 et ultérieures** : cette fonctionnalité est désormais appelée **Activer la mise en cache du projet** et a été déplacée dans la page de propriétés [Paramètres de projet VC ++](vcpp-project-settings-projects-and-solutions-options-dialog-box.md).
 Cette option permet à Visual Studio de mettre en cache des données de projet pour que, lors de la prochaine ouverture du projet, il puisse charger ces données mises en cache au lieu de les recalculer à partir des fichiers projet. L’utilisation de données mises en cache peut accélérer considérablement la vitesse de chargement du projet.  
 
 ## <a name="additional-features-in-the-visual-studio-gallery"></a>Autres fonctionnalités dans la galerie Visual Studio

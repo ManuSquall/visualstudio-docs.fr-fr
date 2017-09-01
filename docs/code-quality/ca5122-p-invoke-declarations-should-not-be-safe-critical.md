@@ -1,34 +1,51 @@
 ---
-title: "CA5122 : les d&#233;clarations P/Invoke ne doivent pas &#234;tre s&#233;curis&#233;es | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-devops-test"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+title: CA5122 P-Invoke declarations should not be safe critical | Microsoft Docs
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology:
+- vs-devops-test
+ms.tgt_pltfrm: 
+ms.topic: article
 ms.assetid: f2581a6d-2a0e-40c1-b600-f5dc70909200
 caps.latest.revision: 4
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
-caps.handback.revision: 4
----
-# CA5122 : les d&#233;clarations P/Invoke ne doivent pas &#234;tre s&#233;curis&#233;es
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
+author: stevehoag
+ms.author: shoag
+manager: wpickett
+translation.priority.ht:
+- cs-cz
+- de-de
+- es-es
+- fr-fr
+- it-it
+- ja-jp
+- ko-kr
+- pl-pl
+- pt-br
+- ru-ru
+- tr-tr
+- zh-cn
+- zh-tw
+ms.translationtype: HT
+ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
+ms.openlocfilehash: a180aaeb955660ce0eb8d9e317ae8babc598a8a5
+ms.contentlocale: fr-fr
+ms.lasthandoff: 08/28/2017
 
+---
+# <a name="ca5122-pinvoke-declarations-should-not-be-safe-critical"></a>CA5122 P/Invoke declarations should not be safe critical
 |||  
 |-|-|  
 |TypeName|PInvokesShouldNotBeSafeCriticalFxCopRule|  
 |CheckId|CA5122|  
-|Catégorie|Microsoft.Security|  
-|Modification avec rupture|Rupture|  
+|Category|Microsoft.Security|  
+|Breaking Change|Breaking|  
   
-## Cause  
- Une déclaration P\/Invoke a été marquée avec <xref:System.Security.SecuritySafeCriticalAttribute>:  
+## <a name="cause"></a>Cause  
+ A P/Invoke declaration has been marked with a <xref:System.Security.SecuritySafeCriticalAttribute>:  
   
-```c#  
+```csharp  
 [assembly: AllowPartiallyTrustedCallers]  
   
 // ...  
@@ -36,26 +53,26 @@ public class C
 {  
     [SecuritySafeCritical]  
     [DllImport("kernel32.dll")]  
-    public static extern bool Beep(int frequency, int duration); // CA5122 – safe critical p/invoke  
+    public static extern bool Beep(int frequency, int duration); // CA5122 - safe critical p/invoke  
    }  
   
 ```  
   
- Dans cet exemple, `C.Beep(...)` a été marqué comme méthode critique sécurisée.  
+ In this example, `C.Beep(...)` has been marked as a security safe critical method.  
   
-## Description de la règle  
- Les méthodes sont marquées SecuritySafeCritical lorsqu'elles effectuent une opération relative à la sécurité, mais elle peuvent également être utilisées en toute sécurité par du code transparent.  L'une des règles fondamentales de la transparence de la sécurité est que le code transparent peut ne jamais appeler directement le code natif via un P\/Invoke.  Par conséquent, marquer une méthode P\/Invoke comme critique sécurisé ne permet pas au code transparent de l'appeler et s'avère trompeur pour l'analyse de sécurité.  
+## <a name="rule-description"></a>Rule Description  
+ Methods are marked as SecuritySafeCritical when they perform a security sensitive operation, but are also safe to be used by transparent code. One of the fundamental rules of the security transparency model is that transparent code may never directly call native code through a P/Invoke. Therefore, marking a P/Invoke as security safe critical will not enable transparent code to call it, and is misleading for security analysis.  
   
-## Comment corriger les violations  
- Pour rendre un P\/Invoke accessible au code transparent, vous devez lui exposer une méthode de wrapper critique sécurisée :  
+## <a name="how-to-fix-violations"></a>How to Fix Violations  
+ To make a P/Invoke available to transparent code, expose a security safe critical wrapper method for it:  
   
-```c#  
+```csharp  
 [assembly: AllowPartiallyTrustedCallers  
   
 class C  
 {  
    [SecurityCritical]  
-   [DllImport(“kernel32.dll”, EntryPoint=”Beep”)]  
+   [DllImport("kernel32.dll", EntryPoint="Beep")]  
    private static extern bool BeepPinvoke(int frequency, int duration); // Security Critical P/Invoke  
   
    [SecuritySafeCritical]  
@@ -67,5 +84,5 @@ class C
   
 ```  
   
-## Quand supprimer les avertissements  
- Ne supprimez aucun avertissement de cette règle.
+## <a name="when-to-suppress-warnings"></a>When to Suppress Warnings  
+ Do not suppress a warning from this rule.

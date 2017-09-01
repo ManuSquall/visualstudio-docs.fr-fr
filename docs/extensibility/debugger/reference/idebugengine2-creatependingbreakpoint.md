@@ -1,63 +1,80 @@
 ---
-title: "IDebugEngine2::CreatePendingBreakpoint | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "IDebugEngine2::CreatePendingBreakpoint"
-helpviewer_keywords: 
-  - "IDebugEngine2::CreatePendingBreakpoint"
+title: IDebugEngine2::CreatePendingBreakpoint | Microsoft Docs
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology:
+- vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords:
+- IDebugEngine2::CreatePendingBreakpoint
+helpviewer_keywords:
+- IDebugEngine2::CreatePendingBreakpoint
 ms.assetid: 92e85b90-a931-48d9-89a7-a6edcb83ae5a
 caps.latest.revision: 10
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 10
----
-# IDebugEngine2::CreatePendingBreakpoint
-[!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]
+ms.author: gregvanl
+manager: ghogen
+translation.priority.mt:
+- cs-cz
+- de-de
+- es-es
+- fr-fr
+- it-it
+- ja-jp
+- ko-kr
+- pl-pl
+- pt-br
+- ru-ru
+- tr-tr
+- zh-cn
+- zh-tw
+ms.translationtype: MT
+ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
+ms.openlocfilehash: 26a44b7c1449e767bca10793bd4602ea472a8a48
+ms.contentlocale: fr-fr
+ms.lasthandoff: 08/28/2017
 
-crée un point d'arrêt en attente dans le moteur de débogage \(DE\).  
+---
+# <a name="idebugengine2creatependingbreakpoint"></a>IDebugEngine2::CreatePendingBreakpoint
+Creates a pending breakpoint in the debug engine (DE).  
   
-## Syntaxe  
+## <a name="syntax"></a>Syntax  
   
-```cpp#  
-HRESULT CreatePendingBreakpoint(   
-   IDebugBreakpointRequest2*  pBPRequest,  
-   IDebugPendingBreakpoint2** ppPendingBP  
+```cpp  
+HRESULT CreatePendingBreakpoint(   
+   IDebugBreakpointRequest2*  pBPRequest,  
+   IDebugPendingBreakpoint2** ppPendingBP  
 );  
 ```  
   
-```c#  
-int CreatePendingBreakpoint(   
-   IDebugBreakpointRequest2     pBPRequest,  
-   out IDebugPendingBreakpoint2 ppPendingBP  
+```csharp  
+int CreatePendingBreakpoint(   
+   IDebugBreakpointRequest2     pBPRequest,  
+   out IDebugPendingBreakpoint2 ppPendingBP  
 );  
 ```  
   
-#### Paramètres  
+#### <a name="parameters"></a>Parameters  
  `pBPRequest`  
- \[in\]  Un objet d' [IDebugBreakpointRequest2](../../../extensibility/debugger/reference/idebugbreakpointrequest2.md) qui décrit le point d'arrêt en attente à créer.  
+ [in] An [IDebugBreakpointRequest2](../../../extensibility/debugger/reference/idebugbreakpointrequest2.md) object that describes the pending breakpoint to create.  
   
  `ppPendingBP`  
- \[out\]  Retourne un objet d' [IDebugPendingBreakpoint2](../../../extensibility/debugger/reference/idebugpendingbreakpoint2.md) qui représente le point d'arrêt en attente.  
+ [out] Returns an [IDebugPendingBreakpoint2](../../../extensibility/debugger/reference/idebugpendingbreakpoint2.md) object that represents the pending breakpoint.  
   
-## Valeur de retour  
- En cas de réussite, retourne `S_OK`; sinon, retourne un code d'erreur.  Retourne généralement `E_FAIL` si le paramètre d' `pBPRequest` ne correspond pas à un langage pris en charge par le De la définition du paramètre d' `pBPRequest` est valide ou incomplet.  
+## <a name="return-value"></a>Return Value  
+ If successful, returns `S_OK`; otherwise, returns an error code. Typically returns `E_FAIL` if the `pBPRequest` parameter does not match any language supported by the DE of if the `pBPRequest` parameter is invalid or incomplete.  
   
-## Notes  
- Un point d'arrêt en attente est une collection de toutes les informations nécessaires pour lier un point d'arrêt au code.  Le point d'arrêt en attente retourné par cette méthode n'est pas lié au code jusqu'à ce que la méthode d' [Lier](../../../extensibility/debugger/reference/idebugpendingbreakpoint2-bind.md) soit appelée.  
+## <a name="remarks"></a>Remarks  
+ A pending breakpoint is essentially a collection of all the information needed to bind a breakpoint to code. The pending breakpoint returned from this method is not bound to code until the [Bind](../../../extensibility/debugger/reference/idebugpendingbreakpoint2-bind.md) method is called.  
   
- Pour chaque point d'arrêt en attente des ensembles d'utilisateur, le gestionnaire de débogage de \(SDM\) session appelle cette méthode dans chaque DE attaché.  Ils appartiennent au De à vérifier que le point d'arrêt est valide pour les programmes s'exécutant dans le DE.  
+ For each pending breakpoint the user sets, the session debug manager (SDM) calls this method in each attached DE. It is up to the DE to verify that the breakpoint is valid for programs running in that DE.  
   
- Lorsque l'utilisateur définit un point d'arrêt sur une ligne de code, le du est libre pour lier le point d'arrêt à la ligne la plus proche le document qui correspond à ce code.  Cela permet à l'utilisateur place un point d'arrêt sur la première ligne d'une instruction sur plusieurs lignes, mais les liens sur la dernière ligne \(où tout le code est attribué dans les informations de débogage\).  
+ When the user sets a breakpoint on a line of code, the DE is free to bind the breakpoint to the closest line in the document that corresponds to this code. This makes it possible for the user to set a breakpoint on the first line of a multi-line statement, but bind it on the last line (where all the code is attributed in the debug information).  
   
-## Exemple  
- L'exemple suivant indique comment appliquer cette méthode d'un objet simple d' `CProgram` .  L'implémentation Du D ' `IDebugEngine2::CreatePendingBreakpoint` pourrait ensuite transférer tous les appels à cette implémentation de la méthode dans chaque programme.  
+## <a name="example"></a>Example  
+ The following example shows how to implement this method for a simple `CProgram` object. The DE's implementation of the `IDebugEngine2::CreatePendingBreakpoint` could then forward all calls to this implementation of the method in each program.  
   
 ```  
 HRESULT CProgram::CreatePendingBreakpoint(IDebugBreakpointRequest2* pBPRequest, IDebugPendingBreakpoint2** ppPendingBP)     
@@ -71,8 +88,8 @@ HRESULT CProgram::CreatePendingBreakpoint(IDebugBreakpointRequest2* pBPRequest, 
 }    
 ```  
   
-## Voir aussi  
+## <a name="see-also"></a>See Also  
  [IDebugEngine2](../../../extensibility/debugger/reference/idebugengine2.md)   
- [Lier](../../../extensibility/debugger/reference/idebugpendingbreakpoint2-bind.md)   
+ [Bind](../../../extensibility/debugger/reference/idebugpendingbreakpoint2-bind.md)   
  [IDebugBreakpointRequest2](../../../extensibility/debugger/reference/idebugbreakpointrequest2.md)   
  [IDebugPendingBreakpoint2](../../../extensibility/debugger/reference/idebugpendingbreakpoint2.md)

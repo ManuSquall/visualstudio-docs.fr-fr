@@ -1,58 +1,62 @@
 ---
-title: "How to: Add a Shortcut Menu Item to SharePoint Projects"
-ms.custom: ""
-ms.date: "02/02/2017"
-ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "office-development"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-dev_langs: 
-  - "VB"
-  - "CSharp"
-helpviewer_keywords: 
-  - "projects [SharePoint development in Visual Studio], extending"
-  - "SharePoint development in Visual Studio, extending projects"
-  - "SharePoint projects, extending"
+title: 'How to: Add a Shortcut Menu Item to SharePoint Projects | Microsoft Docs'
+ms.custom: 
+ms.date: 02/02/2017
+ms.prod: visual-studio-dev14
+ms.reviewer: 
+ms.suite: 
+ms.technology:
+- office-development
+ms.tgt_pltfrm: 
+ms.topic: article
+dev_langs:
+- VB
+- CSharp
+helpviewer_keywords:
+- projects [SharePoint development in Visual Studio], extending
+- SharePoint development in Visual Studio, extending projects
+- SharePoint projects, extending
 ms.assetid: bb251fe9-f1bf-4ddd-9359-4b7f78fbd50f
 caps.latest.revision: 9
-author: "kempb"
-ms.author: "kempb"
-manager: "ghogen"
-caps.handback.revision: 8
+author: kempb
+ms.author: kempb
+manager: ghogen
+ms.translationtype: HT
+ms.sourcegitcommit: eb5c9550fd29b0e98bf63a7240737da4f13f3249
+ms.openlocfilehash: 687474b2e3a32957c54a2e9a8c34c7546804a867
+ms.contentlocale: fr-fr
+ms.lasthandoff: 08/30/2017
+
 ---
-# How to: Add a Shortcut Menu Item to SharePoint Projects
-  Vous pouvez ajouter un élément de menu contextuel à tout projet SharePoint.  L'élément de menu apparaît lorsqu'un utilisateur clique avec le bouton droit sur un nœud de projet dans l'**Explorateur de solutions**.  
+# <a name="how-to-add-a-shortcut-menu-item-to-sharepoint-projects"></a>How to: Add a Shortcut Menu Item to SharePoint Projects
+  You can add a shortcut menu item to any SharePoint project. The menu item appears when a user right-clicks a project node in **Solution Explorer**.  
   
- Les étapes suivantes supposent que vous avez déjà créé une extension de projet.  Pour plus d'informations, consultez [How to: Create a SharePoint Project Extension](../sharepoint/how-to-create-a-sharepoint-project-extension.md).  
+ The following steps assume that you have already created a project extension. For more information, see [How to: Create a SharePoint Project Extension](../sharepoint/how-to-create-a-sharepoint-project-extension.md).  
   
-### Pour ajouter un élément de menu contextuel à des projets SharePoint  
+### <a name="to-add-a-shortcut-menu-item-to-sharepoint-projects"></a>To add a shortcut menu item to SharePoint projects  
   
-1.  Dans la méthode <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectExtension.Initialize%2A> de votre implémentation <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectExtension>, gérez l'événement <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectEvents.ProjectMenuItemsRequested> du paramètre *projectService*.  
+1.  In the <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectExtension.Initialize%2A> method of your <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectExtension> implementation, handle the <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectEvents.ProjectMenuItemsRequested> event of the *projectService* parameter.  
   
-2.  Dans votre gestionnaire d'événements pour l'événement <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectEvents.ProjectMenuItemsRequested>, ajoutez un nouvel objet <xref:Microsoft.VisualStudio.SharePoint.IMenuItem> à la collection <xref:Microsoft.VisualStudio.SharePoint.SharePointProjectMenuItemsRequestedEventArgs.ActionMenuItems%2A> ou <xref:Microsoft.VisualStudio.SharePoint.SharePointProjectMenuItemsRequestedEventArgs.AddMenuItems%2A> du paramètre d'arguments d'événement.  
+2.  In your event handler for the <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectEvents.ProjectMenuItemsRequested> event, add a new <xref:Microsoft.VisualStudio.SharePoint.IMenuItem> object to the <xref:Microsoft.VisualStudio.SharePoint.SharePointProjectMenuItemsRequestedEventArgs.ActionMenuItems%2A> or <xref:Microsoft.VisualStudio.SharePoint.SharePointProjectMenuItemsRequestedEventArgs.AddMenuItems%2A> collection of the event arguments parameter.  
   
-3.  Dans le gestionnaire d'événements <xref:Microsoft.VisualStudio.SharePoint.IMenuItem.Click> pour le nouvel objet <xref:Microsoft.VisualStudio.SharePoint.IMenuItem>, effectuez les tâches que vous voulez exécuter lorsqu'un utilisateur clique sur votre élément de menu contextuel.  
+3.  In the <xref:Microsoft.VisualStudio.SharePoint.IMenuItem.Click> event handler for the new <xref:Microsoft.VisualStudio.SharePoint.IMenuItem> object, perform the tasks you want to execute when a user clicks your shortcut menu item.  
   
-## Exemple  
- L'exemple de code suivant montre comment ajouter un élément de menu contextuel aux nœuds de projet SharePoint dans l'**Explorateur de solutions**.  Lorsque l'utilisateur clique avec le bouton droit sur un nœud de projet, puis clique sur l'élément de menu **Écrire le message dans la fenêtre Sortie**, Visual Studio affiche un message dans la fenêtre **Sortie**.  Cet exemple utilise le service de projet SharePoint pour afficher le message.  Pour plus d'informations, consultez [Using the SharePoint Project Service](../sharepoint/using-the-sharepoint-project-service.md).  
+## <a name="example"></a>Example  
+ The following code example demonstrates how to add a shortcut menu item to SharePoint project nodes in **Solution Explorer**. When the user right-clicks a project node and clicks the **Write Message to Output Window** menu item, Visual Studio displays a message in the **Output** window. This example uses the SharePoint project service to display the message. For more information, see [Using the SharePoint Project Service](../sharepoint/using-the-sharepoint-project-service.md).  
   
- [!code-csharp[SPExtensibility.ProjectExtension.Menu#1](../snippets/csharp/VS_Snippets_OfficeSP/spextensibility.projectextension.menu/cs/extension/projectitemextensionmenu.cs#1)]
- [!code-vb[SPExtensibility.ProjectExtension.Menu#1](../snippets/visualbasic/VS_Snippets_OfficeSP/spextensibility.projectextension.menu/vb/extension/projectitemextensionmenu.vb#1)]  
+ [!code-csharp[SPExtensibility.ProjectExtension.Menu#1](../sharepoint/codesnippet/CSharp/projectmenu/extension/projectitemextensionmenu.cs#1)] [!code-vb[SPExtensibility.ProjectExtension.Menu#1](../sharepoint/codesnippet/VisualBasic/projectmenu/extension/projectitemextensionmenu.vb#1)]  
   
-## Compilation du code  
- Cet exemple requiert un projet de bibliothèque de classes avec des références aux assemblys suivants :  
+## <a name="compiling-the-code"></a>Compiling the Code  
+ This example requires a class library project with references to the following assemblies:  
   
 -   Microsoft.VisualStudio.SharePoint  
   
 -   System.ComponentModel.Composition  
   
-## Déploiement de l'extension  
- Pour déployer l'extension, créez un package d'extension [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] \(VSIX\) pour l'assembly et tous les autres fichiers que vous voulez distribuer avec l'extension.  Pour plus d'informations, consultez [Deploying Extensions for the SharePoint Tools in Visual Studio](../sharepoint/deploying-extensions-for-the-sharepoint-tools-in-visual-studio.md).  
+## <a name="deploying-the-extension"></a>Deploying the Extension  
+ To deploy the extension, create a [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] extension (VSIX) package for the assembly and any other files that you want to distribute with the extension. For more information, see [Deploying Extensions for the SharePoint Tools in Visual Studio](../sharepoint/deploying-extensions-for-the-sharepoint-tools-in-visual-studio.md).  
   
-## Voir aussi  
+## <a name="see-also"></a>See Also  
  [Extending SharePoint Projects](../sharepoint/extending-sharepoint-projects.md)   
  [How to: Create a SharePoint Project Extension](../sharepoint/how-to-create-a-sharepoint-project-extension.md)   
  [How to: Add a Property to SharePoint Projects](../sharepoint/how-to-add-a-property-to-sharepoint-projects.md)  

@@ -1,42 +1,58 @@
 ---
-title: "CA2216&#160;: Les types pouvant &#234;tre supprim&#233;s doivent d&#233;clarer un finaliseur | Microsoft Docs"
-ms.custom: ""
-ms.date: "12/14/2016"
-ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-devops-test"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "DisposableTypesShouldDeclareFinalizer"
-  - "CA2216"
-helpviewer_keywords: 
-  - "CA2216"
-  - "DisposableTypesShouldDeclareFinalizer"
+title: 'CA2216: Disposable types should declare finalizer | Microsoft Docs'
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology:
+- vs-devops-test
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords:
+- DisposableTypesShouldDeclareFinalizer
+- CA2216
+helpviewer_keywords:
+- CA2216
+- DisposableTypesShouldDeclareFinalizer
 ms.assetid: 0cabcc5e-b526-452b-8c2a-0cbe3b93c0ef
 caps.latest.revision: 14
-caps.handback.revision: 14
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
----
-# CA2216&#160;: Les types pouvant &#234;tre supprim&#233;s doivent d&#233;clarer un finaliseur
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
+author: stevehoag
+ms.author: shoag
+manager: wpickett
+translation.priority.ht:
+- cs-cz
+- de-de
+- es-es
+- fr-fr
+- it-it
+- ja-jp
+- ko-kr
+- pl-pl
+- pt-br
+- ru-ru
+- tr-tr
+- zh-cn
+- zh-tw
+ms.translationtype: HT
+ms.sourcegitcommit: eb5c9550fd29b0e98bf63a7240737da4f13f3249
+ms.openlocfilehash: 34689736c4fe492c9826ac844b011f84edeb6b24
+ms.contentlocale: fr-fr
+ms.lasthandoff: 08/30/2017
 
+---
+# <a name="ca2216-disposable-types-should-declare-finalizer"></a>CA2216: Disposable types should declare finalizer
 |||  
 |-|-|  
 |TypeName|DisposableTypesShouldDeclareFinalizer|  
 |CheckId|CA2216|  
-|Catégorie|Microsoft.Usage|  
-|Modification avec rupture|Modification sans rupture|  
+|Category|Microsoft.Usage|  
+|Breaking Change|Non Breaking|  
   
-## Cause  
- Un type qui implémente <xref:System.IDisposable?displayProperty=fullName> et présente des champs qui laissent entendre l'utilisation de ressources non managées, n'implémente pas de finaliseur conforme à la description de <xref:System.Object.Finalize%2A?displayProperty=fullName>.  
+## <a name="cause"></a>Cause  
+ A type that implements <xref:System.IDisposable?displayProperty=fullName>, and has fields that suggest the use of unmanaged resources, does not implement a finalizer as described by <xref:System.Object.Finalize%2A?displayProperty=fullName>.  
   
-## Description de la règle  
- Une violation de cette règle est rapportée si le type supprimable contient des champs des types suivants :  
+## <a name="rule-description"></a>Rule Description  
+ A violation of this rule is reported if the disposable type contains fields of the following types:  
   
 -   <xref:System.IntPtr?displayProperty=fullName>  
   
@@ -44,28 +60,28 @@ manager: "wpickett"
   
 -   <xref:System.Runtime.InteropServices.HandleRef?displayProperty=fullName>  
   
-## Comment corriger les violations  
- Pour corriger une violation de cette règle, implémentez un finaliseur qui appelle votre méthode <xref:System.IDisposable.Dispose%2A>.  
+## <a name="how-to-fix-violations"></a>How to Fix Violations  
+ To fix a violation of this rule, implement a finalizer that calls your <xref:System.IDisposable.Dispose%2A> method.  
   
-## Quand supprimer les avertissements  
- ll est possible de supprimer sans risque un avertissement de cette règle si le type n'implémente pas <xref:System.IDisposable> en vue de libérer des ressources non managées.  
+## <a name="when-to-suppress-warnings"></a>When to Suppress Warnings  
+ It is safe to suppress a warning from this rule if the type does not implement <xref:System.IDisposable> for the purpose of releasing unmanaged resources.  
   
-## Exemple  
- L'exemple suivant affiche un type qui ne respecte pas cette règle.  
+## <a name="example"></a>Example  
+ The following example shows a type that violates this rule.  
   
- [!code-cs[FxCop.Usage.DisposeNoFinalize#1](../code-quality/codesnippet/CSharp/ca2216-disposable-types-should-declare-finalizer_1.cs)]  
+ [!code-csharp[FxCop.Usage.DisposeNoFinalize#1](../code-quality/codesnippet/CSharp/ca2216-disposable-types-should-declare-finalizer_1.cs)]  
   
-## Règles connexes  
- [CA2115 : Appelez GC.KeepAlive lorsque vous utilisez des ressources natives](../Topic/CA2115:%20Call%20GC.KeepAlive%20when%20using%20native%20resources.md)  
+## <a name="related-rules"></a>Related Rules  
+ [CA2115: Call GC.KeepAlive when using native resources](../code-quality/ca2115-call-gc-keepalive-when-using-native-resources.md)  
   
- [CA1816 : Appeler GC.SuppressFinalize correctement](../code-quality/ca1816-call-gc-suppressfinalize-correctly.md)  
+ [CA1816: Call GC.SuppressFinalize correctly](../code-quality/ca1816-call-gc-suppressfinalize-correctly.md)  
   
- [CA1049 : Les types qui possèdent des ressources natives doivent être supprimables](../code-quality/ca1049-types-that-own-native-resources-should-be-disposable.md)  
+ [CA1049: Types that own native resources should be disposable](../code-quality/ca1049-types-that-own-native-resources-should-be-disposable.md)  
   
-## Voir aussi  
+## <a name="see-also"></a>See Also  
  <xref:System.IDisposable?displayProperty=fullName>   
  <xref:System.IntPtr?displayProperty=fullName>   
  <xref:System.Runtime.InteropServices.HandleRef?displayProperty=fullName>   
  <xref:System.UIntPtr?displayProperty=fullName>   
  <xref:System.Object.Finalize%2A?displayProperty=fullName>   
- [Modèle de suppression](../Topic/Dispose%20Pattern.md)
+ [Dispose Pattern](/dotnet/standard/design-guidelines/dispose-pattern)

@@ -1,5 +1,5 @@
 ---
-title: Fonction de SccIsMultiCheckoutEnabled | Documents Microsoft
+title: SccIsMultiCheckoutEnabled Function | Microsoft Docs
 ms.custom: 
 ms.date: 11/04/2016
 ms.reviewer: 
@@ -30,41 +30,42 @@ translation.priority.mt:
 - tr-tr
 - zh-cn
 - zh-tw
-translationtype: Machine Translation
-ms.sourcegitcommit: 5db97d19b1b823388a465bba15d057b30ff0b3ce
-ms.openlocfilehash: 3d767767f3e2d8d3b67971dceda49c8309c549bb
-ms.lasthandoff: 02/22/2017
+ms.translationtype: MT
+ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
+ms.openlocfilehash: a8c1a00aa923374b7833e83edde4a0d7b5b4b9b6
+ms.contentlocale: fr-fr
+ms.lasthandoff: 08/28/2017
 
 ---
-# <a name="sccismulticheckoutenabled-function"></a>SccIsMultiCheckoutEnabled (fonction)
-Cette fonction vérifie si le plug-in de contrôle de code source autorise les extractions multiples sur un fichier.  
+# <a name="sccismulticheckoutenabled-function"></a>SccIsMultiCheckoutEnabled Function
+This function checks whether the source control plug-in allows multiple checkouts on a file.  
   
-## <a name="syntax"></a>Syntaxe  
+## <a name="syntax"></a>Syntax  
   
-```cpp#  
+```cpp  
 SCCRTN SccIsMultiCheckoutEnabled(  
    LPVOID pContext,  
    LPBOOL pbMultiCheckout  
 );  
 ```  
   
-#### <a name="parameters"></a>Paramètres  
+#### <a name="parameters"></a>Parameters  
  pContext  
- [in] La structure de contexte du plug-in de contrôle de source.  
+ [in] The source control plug-in context structure.  
   
  pbMultiCheckout  
- [out] Spécifie si les extractions multiples sont activées pour ce projet (différente de zéro signifie que les extractions multiples sont pris en charge).  
+ [out] Specifies whether multiple checkouts are enabled for this project (nonzero means that multiple checkouts are supported).  
   
-## <a name="return-value"></a>Valeur de retour  
- L’implémentation de plug-in de contrôle de source de cette fonction est censée renvoyer une des valeurs suivantes :  
+## <a name="return-value"></a>Return Value  
+ The source control plug-in implementation of this function is expected to return one of the following values:  
   
-|Valeur|Description|  
+|Value|Description|  
 |-----------|-----------------|  
-|SCC_OK|La vérification a réussi.|  
-|SCC_E_NONSPECIFICERROR<br /><br /> SCC_E_UNKNOWNERROR|Erreur non spécifique.|  
+|SCC_OK|The check was successful.|  
+|SCC_E_NONSPECIFICERROR<br /><br /> SCC_E_UNKNOWNERROR|Nonspecific failure.|  
   
-## <a name="remarks"></a>Remarques  
- L’IDE effectue deux vérifications pour déterminer si les fichiers peuvent être extraits simultanément par plusieurs utilisateurs. Tout d’abord, le système de contrôle de code source doit prendre en charge les extractions multiples. Le plug-in de contrôle de code source peut spécifier cette fonctionnalité lors de l’initialisation en spécifiant le `SCC_CAP_MULTICHECKOUT`. Ensuite, une deuxième vérification, l’IDE appelle cette fonction pour déterminer si le projet actuel prend en charge les extractions multiples. Si les extractions multiples sont pris en charge pour le projet sélectionné, la plug-in renvoie un succès de code et définit `pbMultiCheckout` à zéro (`TRUE`) ou `FALSE`.  
+## <a name="remarks"></a>Remarks  
+ The IDE makes two checks to determine if files can be checked out simultaneously by more than one user. First, the source control system must support multiple checkouts. The source control plug-in can specify this capability during initialization by specifying the `SCC_CAP_MULTICHECKOUT`. Thereafter, as a second check, the IDE calls this function to determine whether or not the current project supports multiple checkouts. If multiple checkouts are supported for the selected project, the plug-in returns a success code and sets `pbMultiCheckout` to nonzero (`TRUE`) or `FALSE`.  
   
-## <a name="see-also"></a>Voir aussi  
- [Fonctions d’API de plug-in de contrôle de source](../extensibility/source-control-plug-in-api-functions.md)
+## <a name="see-also"></a>See Also  
+ [Source Control Plug-in API Functions](../extensibility/source-control-plug-in-api-functions.md)

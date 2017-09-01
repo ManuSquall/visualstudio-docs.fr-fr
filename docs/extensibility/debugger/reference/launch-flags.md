@@ -1,5 +1,5 @@
 ---
-title: LAUNCH_FLAGS | Documents Microsoft
+title: LAUNCH_FLAGS | Microsoft Docs
 ms.custom: 
 ms.date: 11/04/2016
 ms.reviewer: 
@@ -30,18 +30,19 @@ translation.priority.mt:
 - tr-tr
 - zh-cn
 - zh-tw
-translationtype: Machine Translation
-ms.sourcegitcommit: 5db97d19b1b823388a465bba15d057b30ff0b3ce
-ms.openlocfilehash: b516d251b9e8aed436c14deeaf6dba411a7c97e5
-ms.lasthandoff: 02/22/2017
+ms.translationtype: MT
+ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
+ms.openlocfilehash: 2f838e559d4c33a7bb807d5b0360a51ea7ff0d74
+ms.contentlocale: fr-fr
+ms.lasthandoff: 08/28/2017
 
 ---
 # <a name="launchflags"></a>LAUNCH_FLAGS
-Spécifie les indicateurs de lancement du débogage.  
+Specifies the debug launch flags.  
   
-## <a name="syntax"></a>Syntaxe  
+## <a name="syntax"></a>Syntax  
   
-```cpp#  
+```cpp  
 enum enum_LAUNCH_FLAGS {   
    LAUNCH_DEBUG      = 0x0000,  
    LAUNCH_NODEBUG    = 0x0001,  
@@ -51,7 +52,7 @@ enum enum_LAUNCH_FLAGS {
 typedef DWORD LAUNCH_FLAGS;  
 ```  
   
-```c#  
+```csharp  
 public enum enum_LAUNCH_FLAGS {   
    LAUNCH_DEBUG      = 0x0000,  
    LAUNCH_NODEBUG    = 0x0001,  
@@ -60,31 +61,31 @@ public enum enum_LAUNCH_FLAGS {
 };  
 ```  
   
-## <a name="members"></a>Membres  
+## <a name="members"></a>Members  
  LAUNCH_DEBUG  
- Lance le processus de débogage.  
+ Launches the process for debugging.  
   
  LAUNCH_NODEBUG  
- Lance le processus sans le déboguer.  
+ Launches the process without debugging it.  
   
  LAUNCH_ENABLE_ENC  
- DÉCONSEILLÉ, N’UTILISEZ PAS.  
+ DEPRECATED, DO NOT USE.  
   
  LAUNCH_MERGE_ENV  
- Lance le processus et fusionne l’environnement avec l’hôte de lancement.  
+ Launches the process and merges the environment with the launching host.  
   
-## <a name="remarks"></a>Remarques  
- Ces valeurs sont passées en tant qu’argument à la [LaunchSuspended](../../../extensibility/debugger/reference/idebugenginelaunch2-launchsuspended.md) (méthode).  
+## <a name="remarks"></a>Remarks  
+ These values are passed as an argument to the [LaunchSuspended](../../../extensibility/debugger/reference/idebugenginelaunch2-launchsuspended.md) method.  
   
- Ces indicateurs peuvent être combinées avec une opération de bits `OR`.  
+ These flags may be combined with a bitwise `OR`.  
   
-## <a name="requirements"></a>Spécifications  
- En-tête : msdbg.h  
+## <a name="requirements"></a>Requirements  
+ Header: msdbg.h  
   
- Namespace : Microsoft.VisualStudio.Debugger.Interop  
+ Namespace: Microsoft.VisualStudio.Debugger.Interop  
   
- Assembly : Microsoft.VisualStudio.Debugger.Interop.dll  
+ Assembly: Microsoft.VisualStudio.Debugger.Interop.dll  
   
-## <a name="see-also"></a>Voir aussi  
- [Énumérations](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)   
+## <a name="see-also"></a>See Also  
+ [Enumerations](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)   
  [LaunchSuspended](../../../extensibility/debugger/reference/idebugenginelaunch2-launchsuspended.md)

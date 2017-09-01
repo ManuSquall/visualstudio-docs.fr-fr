@@ -1,55 +1,58 @@
 ---
-title: "Comment&#160;: ajouter des commentaires &#224; du texte dans des documents par programmation"
-ms.custom: ""
-ms.date: "02/02/2017"
-ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "office-development"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-dev_langs: 
-  - "VB"
-  - "CSharp"
-helpviewer_keywords: 
-  - "commentaires, ajout à des documents"
-  - "documents (développement Office dans Visual Studio), ajout de commentaires"
+title: 'How to: Programmatically Add Comments to Text in Documents | Microsoft Docs'
+ms.custom: 
+ms.date: 02/02/2017
+ms.prod: visual-studio-dev14
+ms.reviewer: 
+ms.suite: 
+ms.technology:
+- office-development
+ms.tgt_pltfrm: 
+ms.topic: article
+dev_langs:
+- VB
+- CSharp
+helpviewer_keywords:
+- comments, adding to documents
+- documents [Office development in Visual Studio], adding comments
 ms.assetid: 4e396e31-01bf-424c-be6b-9a1806bcd572
 caps.latest.revision: 26
-author: "kempb"
-ms.author: "kempb"
-manager: "ghogen"
-caps.handback.revision: 25
+author: kempb
+ms.author: kempb
+manager: ghogen
+ms.translationtype: HT
+ms.sourcegitcommit: eb5c9550fd29b0e98bf63a7240737da4f13f3249
+ms.openlocfilehash: 78896ebbadaf990f9b5a01528d5561d2696a8cfc
+ms.contentlocale: fr-fr
+ms.lasthandoff: 08/30/2017
+
 ---
-# Comment&#160;: ajouter des commentaires &#224; du texte dans des documents par programmation
-  La propriété Comments de la classe Document ajoute un commentaire à une plage de texte dans un document Microsoft Office Word.  
+# <a name="how-to-programmatically-add-comments-to-text-in-documents"></a>How to: Programmatically Add Comments to Text in Documents
+  The Comments property of the Document class adds a comment to a range of text in a Microsoft Office Word document.  
   
  [!INCLUDE[appliesto_wdalldocapp](../vsto/includes/appliesto-wdalldocapp-md.md)]  
   
- L’exemple suivant ajoute un commentaire au premier paragraphe du document.  
+ The following example adds a comment to the first paragraph in the document.  
   
-### Pour ajouter un nouveau commentaire à du texte dans une personnalisation au niveau du document  
+### <a name="to-add-a-new-comment-to-text-in-a-document-level-customization"></a>To add a new comment to text in a document-level customization  
   
-1.  Appelez la méthode <xref:Microsoft.Office.Interop.Word.Comments.Add%2A> de la propriété <xref:Microsoft.Office.Tools.Word.Document.Comments%2A> et spécifiez une plage et le texte du commentaire. Pour utiliser l'exemple de code suivant, exécutez\-le à partir de la classe `ThisDocument` de votre projet.  
+1.  Call the <xref:Microsoft.Office.Interop.Word.Comments.Add%2A> method of the <xref:Microsoft.Office.Tools.Word.Document.Comments%2A> property and supply a range and the comment text. To use the following code example, run it from the `ThisDocument` class in your project.  
   
-     [!code-csharp[Trin_VstcoreWordAutomation#118](../snippets/csharp/VS_Snippets_OfficeSP/Trin_VstcoreWordAutomation/CS/ThisDocument.cs#118)]
-     [!code-vb[Trin_VstcoreWordAutomation#118](../snippets/visualbasic/VS_Snippets_OfficeSP/Trin_VstcoreWordAutomation/VB/ThisDocument.vb#118)]  
+     [!code-vb[Trin_VstcoreWordAutomation#118](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationVB/ThisDocument.vb#118)]  [!code-csharp[Trin_VstcoreWordAutomation#118](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationCS/ThisDocument.cs#118)]  
   
-### Pour ajouter un nouveau commentaire à du texte dans un complément VSTO  
+### <a name="to-add-a-new-comment-to-text-in-an-vsto-add-in"></a>To add a new comment to text in an VSTO Add-in  
   
-1.  Appelez la méthode <xref:Microsoft.Office.Interop.Word.Comments.Add%2A> de la propriété <xref:Microsoft.Office.Interop.Word._Document.Comments%2A> et spécifiez une plage et le texte du commentaire.  
+1.  Call the <xref:Microsoft.Office.Interop.Word.Comments.Add%2A> method of the <xref:Microsoft.Office.Interop.Word._Document.Comments%2A> property and supply a range and the comment text.  
   
-     L’exemple de code suivant ajoute un commentaire au document actif. Pour utiliser cet exemple, exécutez\-le à partir de la classe `ThisAddIn` dans votre projet.  
+     The following code example adds a comment to the active document. To use this example, run it from the `ThisAddIn` class in your project.  
   
-     [!code-csharp[Trin_VstcoreWordAutomationAddIn#118](../snippets/csharp/VS_Snippets_OfficeSP/Trin_VstcoreWordAutomationAddIn/CS/ThisAddIn.cs#118)]
-     [!code-vb[Trin_VstcoreWordAutomationAddIn#118](../snippets/visualbasic/VS_Snippets_OfficeSP/Trin_VstcoreWordAutomationAddIn/VB/ThisAddIn.vb#118)]  
+     [!code-vb[Trin_VstcoreWordAutomationAddIn#118](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationAddIn/ThisAddIn.vb#118)]  [!code-csharp[Trin_VstcoreWordAutomationAddIn#118](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationAddIn/ThisAddIn.cs#118)]  
   
-## Programmation fiable  
- Pour modifier les initiales de l’utilisateur que Word ajoute aux commentaires, utilisez la propriété <xref:Microsoft.Office.Interop.Word._Application.UserInitials%2A>.  
+## <a name="robust-programming"></a>Robust Programming  
+ To change the user initials that Word adds to comments, use the <xref:Microsoft.Office.Interop.Word._Application.UserInitials%2A> property.  
   
-## Voir aussi  
- [Comment : supprimer tous les commentaires des documents par programmation](../vsto/how-to-programmatically-remove-all-comments-from-documents.md)   
- [Élément hôte de document](../vsto/document-host-item.md)  
+## <a name="see-also"></a>See Also  
+ [How to: Programmatically Remove All Comments from Documents](../vsto/how-to-programmatically-remove-all-comments-from-documents.md)   
+ [Document Host Item](../vsto/document-host-item.md)  
   
   

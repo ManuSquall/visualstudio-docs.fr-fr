@@ -1,12 +1,13 @@
 ---
 title: Tests unitaires pour Python dans Visual Studio | Microsoft Docs
 ms.custom: 
-ms.date: 5/8/2017
+ms.date: 7/13/2017
 ms.prod: visual-studio-dev15
 ms.reviewer: 
 ms.suite: 
 ms.technology:
 - devlang-python
+ms.devlang: python
 ms.tgt_pltfrm: 
 ms.topic: article
 ms.assetid: f3ad6523-5a4e-4209-8977-adc2da305df2
@@ -14,43 +15,29 @@ caps.latest.revision: 1
 author: kraigb
 ms.author: kraigb
 manager: ghogen
-translation.priority.ht:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 85576806818a6ed289c2f660f87b5c419016c600
-ms.openlocfilehash: 2597583912c7694495617c53839f41aa13cda871
+ms.translationtype: HT
+ms.sourcegitcommit: e48ebcafaca37505dbcc92bce682d0c6169004e1
+ms.openlocfilehash: b68dc3d2fb7877349fc319ce5ea6e799f80c1dbf
 ms.contentlocale: fr-fr
-ms.lasthandoff: 05/09/2017
+ms.lasthandoff: 07/26/2017
 
 ---
 
 # <a name="setting-up-unit-testing-for-python-code"></a>Configuration des tests unitaires pour le code Python
 
-Les tests unitaires sont des éléments de code qui permettent de tester d’autres unités de code dans une application, généralement des fonctions isolées, des classes, etc. Lorsqu’une application réussit tous ses tests unitaires, vous avez au moins la garantie que ses fonctionnalités secondaires sont correctes.
+Les tests unitaires sont des éléments de code qui permettent de tester d’autres unités de code dans une application, généralement des fonctions isolées, des classes, etc. Quand une application réussit tous ses tests unitaires, vous avez au moins la garantie que ses fonctionnalités secondaires sont correctes.
 
-Python utilise largement les tests unitaires pour valider des scénarios lors de la conception d’un programme. La prise en charge de Python dans Visual Studio inclut la découverte, l’exécution et le débogage de tests unitaires dans le cadre de votre processus de développement, sans qu’il soit nécessaire de les exécuter séparément.
+Python utilise largement les tests unitaires pour valider des scénarios lors de la conception d’un programme. La prise en charge de Python dans Visual Studio inclut la découverte, l’exécution et le débogage de tests unitaires dans le cadre de votre processus de développement, sans qu’il soit nécessaire d’exécuter les tests séparément.
 
 Cette rubrique fournit une brève description des fonctionnalités de tests unitaires contenues dans Visual Studio avec Python. Pour plus d’informations sur les tests unitaires en général, consultez la page [Tests unitaires sur votre code](../test/unit-test-your-code.md).
 
 ## <a name="discovering-and-viewing-tests"></a>Détection et affichage des tests
 
-Par convention, Visual Studio identifie les tests comme des méthodes dont le nom commence par « test ». Pour le voir, procédez comme suit :
+Par convention, Visual Studio identifie les tests comme des méthodes dont le nom commence par `test`. Pour voir ce comportement, effectuez les opérations suivantes :
 
 1. Ouvrez un [projet Python](python-projects.md) chargé dans Visual Studio, cliquez avec le bouton droit sur votre projet, sélectionnez **Ajouter > Nouvel élément...**, puis sélectionnez **Python Unit Test** (Test unitaire Python) et **Ajouter**.
 
-1. Vous obtenez un fichier test1.py contenant du code qui importe le module `unittest` standard, dérive une classe de test à partir de `unittest.TestCase` et appelle `unittest.main()` si vous exécutez le script directement :
+1. Cette action crée un fichier `test1.py` contenant du code qui importe le module `unittest` standard, dérive une classe de test à partir de `unittest.TestCase` et appelle `unittest.main()` si vous exécutez le script directement :
 
   ```python
   import unittest
@@ -67,11 +54,11 @@ Par convention, Visual Studio identifie les tests comme des méthodes dont le no
 
 1. L’Explorateur de tests recherche des tests dans votre projet et les affiche, comme indiqué ci-dessous. Double-cliquez sur un test pour ouvrir son fichier source.
 
-    ![Explorateur de tests indiquant le test_A par défaut](~/python/media/unit-test-A.png)
+    ![Explorateur de tests indiquant le test_A par défaut](media/unit-test-A.png)
 
 1. Lorsque vous ajoutez d’autres tests à votre projet, vous pouvez organiser l’affichage dans l’Explorateur de tests à l’aide du menu Regrouper par de la barre d’outils :
 
-    ![Menu Regrouper par de la barre d’outils de l’Explorateur de tests](~/python/media/unit-test-group-menu.png)
+    ![Menu Regrouper par de la barre d’outils de l’Explorateur de tests](media/unit-test-group-menu.png)
 
 1. Vous pouvez également saisir du texte dans le champ de recherche pour filtrer les tests par nom.
 
@@ -89,27 +76,27 @@ Les tests s’exécutent en arrière-plan et l’Explorateur de tests met à jou
 
 - Les tests réussis sont marqués par une coche verte, accompagnée du temps nécessaire à l’exécution du test :
 
-    ![Réussite de test_A](~/python/media/unit-test-A-pass.png)
+    ![Réussite de test_A](media/unit-test-A-pass.png)
 
 - Les tests ayant échoué sont indiqués par une croix rouge accompagnée d’un lien **Sortie** qui affiche la sortie de la console et la sortie `unittest` de l’exécution du test :
 
-    ![Échec de test_A](~/python/media/unit-test-A-fail.png)
+    ![Échec de test_A](media/unit-test-A-fail.png)
 
-    ![Échec de test_A avec motif](~/python/media/unit-test-A-fail-reason.png)
+    ![Échec de test_A avec motif](media/unit-test-A-fail-reason.png)
 
 ## <a name="debugging-tests"></a>Débogage des tests
 
-Étant donné que les tests unitaires sont des éléments de code, ils sont exposés à des bogues tout comme n’importe quel autre code. Ils doivent parfois être exécutés dans un débogueur, dans lequel vous pouvez définir des points d’arrêt, examiner des variables et parcourir le code. Visual Studio fournit également des outils de diagnostic
+Étant donné que les tests unitaires sont des éléments de code, ils sont exposés à des bogues tout comme n’importe quel autre code et doivent parfois être exécutés dans un débogueur. Dans le débogueur, vous pouvez définir des points d’arrêt, examiner des variables et parcourir le code. Visual Studio fournit également des outils de diagnostic pour les tests unitaires.
 
 Pour démarrer le débogage, définissez un point d’arrêt initial dans votre code, puis cliquez avec le bouton droit sur le test (ou sur une sélection) dans l’Explorateur de tests et sélectionnez **Debug Selected Tests** (Déboguer les tests sélectionnés). Visual Studio démarre le débogueur Python comme il le ferait pour un code d’application.
 
-![Débogage d’un test](~/python/media/unit-test-debugging.png)
+![Débogage d’un test](media/unit-test-debugging.png)
 
 Vous pouvez également utiliser les commandes **Analyser la couverture du code pour les tests sélectionnés** et **Profiler le test**, selon votre version de Visual Studio (voir la [matrice des fonctionnalités](python-in-visual-studio.md#features-matrix)).
 
 ### <a name="known-issues"></a>Problèmes connus
 
-- Lorsque vous démarrez le débogage, Visual Studio semble démarrer et arrêter le débogage, avant de relancer le processus. Il s'agit du comportement attendu.
-- Lorsque vous déboguez plusieurs tests, chacun d’eux est exécuté indépendamment, ce qui interrompt la session de débogage.
+- Quand vous démarrez le débogage, Visual Studio semble démarrer et arrêter le débogage, avant de relancer le processus. Ce comportement est prévu.
+- Quand vous déboguez plusieurs tests, chacun d’eux est exécuté indépendamment, ce qui interrompt la session de débogage.
 - Visual Studio ne parvient pas toujours à démarrer un test lors du débogage. En règle générale, vous pouvez simplement tenter de relancer le débogage du test.
-- Lors du débogage, il est possible de sortir un test dans l’implémentation `unittest`. Normalement, l’étape suivante s’exécutera jusqu’à la fin du programme et arrêtera le débogage.
+- Lors du débogage, il est possible de sortir un test dans l’implémentation `unittest`. Normalement, l’étape suivante s’exécute jusqu’à la fin du programme et arrête le débogage.

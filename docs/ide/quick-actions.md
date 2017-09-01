@@ -37,15 +37,13 @@ ms.contentlocale: fr-fr
 ms.lasthandoff: 05/26/2017
 
 ---
-# Actions rapides
-<a id="quick-actions" class="xliff"></a>
+# <a name="quick-actions"></a>Actions rapides
 
-Les [actions rapides](refactoring-code-generation-quick-actions.md#quick-actions) vous permettent de refactoriser, générer ou modifier facilement le code en une seule action.  Bien qu’il existe de nombreuses actions rapides qui s’appliquent spécifiquement à C# ou Visual Basic, il en existe également d’autres qui s’appliquent à la fois aux projets C# et Visual Basic.  Elles peuvent être appliquées en utilisant l’icône d’ampoule ![Petite icône en forme d’ampoule](~/ide/media/vs2015_lightbulbsmall.png "VS2017_LightBulbSmall") ou en appuyant sur **Ctrl+.** quand votre curseur se trouve sur la ligne de code appropriée.
+Les [actions rapides](refactoring-code-generation-quick-actions.md#quick-actions) vous permettent de refactoriser, générer ou modifier facilement le code en une seule action.  Bien qu’il existe de nombreuses actions rapides qui s’appliquent spécifiquement à C# ou Visual Basic, il en existe également d’autres qui s’appliquent à la fois aux projets C# et Visual Basic.  Elles peuvent être appliquées en utilisant l’icône d’ampoule ![Petite icône en forme d’ampoule](media/vs2015_lightbulbsmall.png "VS2017_LightBulbSmall") ou en appuyant sur **Ctrl+.** quand votre curseur se trouve sur la ligne de code appropriée.
 
 Une ampoule apparaît si votre code est souligné d’une ligne ondulée rouge et qu’une suggestion pour résoudre le problème est disponible dans Visual Studio. Par exemple, si une erreur est signalée par un soulignement rouge ondulé, une ampoule apparaît lorsque des corrections sont disponibles pour cette erreur. Des éditeurs tiers peuvent fournir des diagnostics et des suggestions personnalisés pour n'importe quel langage, par exemple dans le cadre d'un SDK. Dans ce cas, les ampoules Visual Studio s'allument en fonction des règles établies.  
 
-### Pour afficher une ampoule
-<a id="to-see-a-light-bulb" class="xliff"></a>  
+### <a name="to-see-a-light-bulb"></a>Pour afficher une ampoule  
 
 1. Dans de nombreux cas, les ampoules apparaissent spontanément lorsque vous passez la souris au niveau de l’erreur ou dans la marge gauche de l’éditeur lorsque vous déplacez le point d’insertion dans une ligne qui contient une erreur. Si vous remarquez une ligne ondulée rouge, vous pouvez pointer dessus avec la souris pour afficher l'ampoule. Vous pouvez aussi déclencher l'apparition d'une ampoule quand vous utilisez la souris ou le clavier pour vous rendre quelque part sur la ligne où le problème se produit.  
 
@@ -53,18 +51,15 @@ Une ampoule apparaît si votre code est souligné d’une ligne ondulée rouge e
 
    ![Ampoule avec pointage de la souris](../ide/media/vs2015_lightbulb_hover.png "VS2017_LightBulb_Hover")  
 
-### Pour afficher les corrections éventuelles
-<a id="to-see-potential-fixes" class="xliff"></a>  
+### <a name="to-see-potential-fixes"></a>Pour afficher les corrections éventuelles  
 Cliquez sur la flèche bas ou sur le lien Afficher les corrections éventuelles pour afficher une liste d'actions rapides que l'ampoule peut effectuer pour vous.  
 
 ![Ampoule développée](../ide/media/vs2015_lightbulb_hover_expanded.png "VS2017_LightBulb_hover_expanded")
 
-## Actions rapides courantes
-<a id="common-quick-actions" class="xliff"></a>
+## <a name="common-quick-actions"></a>Actions rapides courantes
 Voici quelques-unes des actions rapides courantes qui sont applicables à la fois au code C# et Visual Basic.
 
-### Ajouter les instructions case manquantes/une instruction case par défaut/les deux
-<a id="add-missing-casesdefault-caseboth" class="xliff"></a>
+### <a name="add-missing-casesdefault-caseboth"></a>Ajouter les instructions case manquantes/une instruction case par défaut/les deux
 Quand vous créez une instruction `switch` en C# ou une instruction `Select Case` en Visual Basic, vous pouvez utiliser une action de code pour ajouter automatiquement des éléments case manquants, une instruction case par défaut, ou les deux.  Pour une instruction vide telle que la suivante :
 
 ```CSharp
@@ -126,8 +121,7 @@ Select Case myEnum
 End Select
 ```
 
-### Corriger le type mal orthographié
-<a id="correct-misspelled-type" class="xliff"></a>
+### <a name="correct-misspelled-type"></a>Corriger le type mal orthographié
 Si vous orthographiez involontairement de façon incorrecte un type dans Visual Studio, cette action rapide le corrige automatiquement pour vous.  Ces éléments s’affichent dans le menu Ampoule comme **Change '*misspelled type*' to '*correct type*'** (Remplacer type mal orthographié par type correct).  Exemple :
 
 ```CSharp
@@ -156,8 +150,7 @@ Function MyFunction as Integer
 End Function
 ```
 
-### Supprimer le cast inutile
-<a id="remove-unnecessary-cast" class="xliff"></a>
+### <a name="remove-unnecessary-cast"></a>Supprimer le cast inutile
 Si vous effectuez le cast d’un type en un autre type qui ne nécessite pas un cast, l’élément d’action rapide **Supprimer le cast inutile** supprime le cast de votre code.
 
 ```CSharp
@@ -180,8 +173,7 @@ Dim number as Integer = CType(3, Integer)
 Dim number as Integer = 3
 ```
 
-### Remplacer une méthode par une propriété / Remplacer une propriété par une méthode
-<a id="replace-method-with-property--replace-property-with-method" class="xliff"></a>
+### <a name="replace-method-with-property--replace-property-with-method"></a>Remplacer une méthode par une propriété / Remplacer une propriété par une méthode
 Ces actions rapides convertissent une méthode en une propriété, ou vice versa.  L’exemple ci-dessous illustre le changement d’une méthode en une propriété.  Pour la procédure opposée, inversez simplement les sections *Avant* et *Après*.
 
 ```CSharp
@@ -220,8 +212,7 @@ ReadOnly Property MyValue As Integer
 End Property
 ```
 
-### Rendre la méthode synchrone
-<a id="make-method-synchronous" class="xliff"></a>
+### <a name="make-method-synchronous"></a>Rendre la méthode synchrone
 Lors de l’utilisation du mot clé `async`/`Async` sur une méthode, il est prévu que le mot clé `await`/`Await` sera également utilisé quelque part dans cette méthode.  Toutefois, si ce n’est pas le cas, une action rapide s’affiche pour vous permettre de rendre la méthode synchrone en supprimant le mot clé `async`/`Async` et en modifiant le type de retour.  Utilisez l’option **Rendre la méthode synchrone** dans le menu Actions rapides.
 
 ```CSharp
@@ -254,8 +245,7 @@ Function MyAsyncMethod() As Integer
 End Function
 ```
 
-### Rendre la méthode asynchrone
-<a id="make-method-asynchronous" class="xliff"></a>
+### <a name="make-method-asynchronous"></a>Rendre la méthode asynchrone
 Lors de l’utilisation du mot clé `await`/`Await` dans une méthode, il est prévu que la méthode elle-même soit marquée avec le mot clé `async`/`Async`.  Toutefois, si ce n’est pas le cas, une action rapide s’affiche pour vous permettre de rendre la méthode asynchrone.  Utilisez l’option **Make method/Function asynchronous** (Rendre la méthode/fonction asynchrone) dans le menu Actions rapides.
 
 ```CSharp
@@ -288,12 +278,10 @@ Async Function MyAsyncMethod() As Task(Of Integer)
 End Function
 ```
 
-### Supprimer les Usings inutiles/les importations superflues
-<a id="remove-unnecesary-usingsimports" class="xliff"></a>
+### <a name="remove-unnecesary-usingsimports"></a>Supprimer les Usings inutiles/les importations superflues
 L’action rapide **Supprimer les Usings inutiles/les importations superflues** supprime toutes les instructions `using` et `Import` inutilisées pour le fichier actif.  Quand vous sélectionnez cet élément, les importations d’espaces de noms inutilisées sont immédiatement supprimées.
 
-### Ajouter des instructions using/Import pour les types dans les assemblys de référence, les packages NuGet ou d’autres types de votre solution
-<a id="add-usingsimports-for-types-in-reference-assemblies-nuget-packages-or-other-types-in-your-solution" class="xliff"></a>
+### <a name="add-usingsimports-for-types-in-reference-assemblies-nuget-packages-or-other-types-in-your-solution"></a>Ajouter des instructions using/Import pour les types dans les assemblys de référence, les packages NuGet ou d’autres types de votre solution
 L’utilisation de types situés dans d’autres projets de votre solution permet d’afficher automatiquement l’action rapide, mais vous devez activer les autres à partir de l’onglet **Outils > Options > C#** ou **De base > Avancé** :  
 
 * Suggérer des usings/imports pour les types dans les assemblys de référence
@@ -325,8 +313,7 @@ Imports System.Diagnostics
 Debug.WriteLine("Hello")
 ```
 
-### Convertir en chaîne interpolée
-<a id="convert-to-interpolated-string" class="xliff"></a>
+### <a name="convert-to-interpolated-string"></a>Convertir en chaîne interpolée
 Les [chaînes interpolées](/dotnet/csharp/language-reference/keywords/interpolated-strings) représentent un moyen simple d’exprimer des chaînes avec des variables incorporées, similaire à la méthode **[String.Format](https://msdn.microsoft.com/library/system.string.format.aspx)**.  Cette action rapide reconnaît les chaînes concaténées ou l’utilisation de **String.Format** et met une chaîne interpolée à la place.
 
 ```CSharp
@@ -353,54 +340,46 @@ Dim num as Integer = 3
 Dim s As String = $"My string with {num} in the middle"
 ```
 
-### Supprimer les marqueurs de conflits de fusion
-<a id="remove-merge-conflict-markers" class="xliff"></a>
+### <a name="remove-merge-conflict-markers"></a>Supprimer les marqueurs de conflits de fusion
 Ces actions rapides vous permettent de résoudre les conflits de fusion par une « modification » qui supprime les marqueurs et le code en conflit. (Disponible uniquement dans Visual Studio 2017 [version 15.3, préversion].)
 
-![Refactorisation : résoudre les conflits de fusion](~/ide/media/vside-refactoring-merge-conflicts.png)
+![Refactorisation : résoudre les conflits de fusion](../ide/media/vside-refactoring-merge-conflicts.png)
 
-### Ajouter des contrôles de valeurs Null pour les paramètres
-<a id="add-null-checks-for-parameters" class="xliff"></a>
+### <a name="add-null-checks-for-parameters"></a>Ajouter des contrôles de valeurs Null pour les paramètres
 Cette action rapide vous permet d’ajouter un contrôle dans votre code pour déterminer si un paramètre est Null. (Disponible uniquement dans Visual Studio 2017 [version 15.3, préversion].)
 
-![Refactorisation : ajouter un contrôle de valeur Null](~/ide/media/vside-refactoring-nullcheck.png)
+![Refactorisation : ajouter un contrôle de valeur Null](../ide/media/vside-refactoring-nullcheck.png)
 
-### Améliorations du générateur de constructeur
-<a id="constructor-generator-improvements" class="xliff"></a>
+### <a name="constructor-generator-improvements"></a>Améliorations du générateur de constructeur
 Quand vous créez un constructeur, cette action rapide vous permet de sélectionner les propriétés ou les champs à générer, ou vous pouvez générer le constructeur à partir d’un corps vide. Vous pouvez également l’utiliser pour ajouter des paramètres à un constructeur existant à partir du site d’appel. (Disponible uniquement dans Visual Studio 2017 [version 15.3, préversion].)
 
-![Refactorisation : générer des constructeurs](~/ide/media/vside-refactoring-constructors.png)
+![Refactorisation : générer des constructeurs](../ide/media/vside-refactoring-constructors.png)
 
-### Supprimer les variables inutilisées
-<a id="remove-unused-variables" class="xliff"></a>
+### <a name="remove-unused-variables"></a>Supprimer les variables inutilisées
 Cette action rapide vous permet de supprimer les variables qui ont été déclarées, mais jamais utilisées dans votre code. (Disponible uniquement dans Visual Studio 2017 [version 15.3, préversion].)
 
-![Refactorisation : variables inutilisées](~/ide/media/vside-refactoring-unusedvars.png)
+![Refactorisation : variables inutilisées](../ide/media/vside-refactoring-unusedvars.png)
 
-### Générer des substitutions
-<a id="generate-overrides" class="xliff"></a>
+### <a name="generate-overrides"></a>Générer des substitutions
 Cette action rapide vous permet de créer une substitution à partir d’une ligne vide dans une classe ou structure. La boîte de dialogue **Pick Members** (Choisir les membres) vous permet de choisir les membres à substituer. (Disponible uniquement dans Visual Studio 2017 [version 15.3, préversion].)
 
-![Refactorisation : substitutions](~/ide/media/vside-refactoring-overrides.png)
+![Refactorisation : substitutions](../ide/media/vside-refactoring-overrides.png)
 
-![Refactorisation : boîte de dialogue des substitutions](~/ide/media/vside-refactoring-overrides-dialog.png)
+![Refactorisation : boîte de dialogue des substitutions](../ide/media/vside-refactoring-overrides-dialog.png)
 
-### Changer la base des littéraux numériques
-<a id="change-base-for-numeric-literals" class="xliff"></a>
+### <a name="change-base-for-numeric-literals"></a>Changer la base des littéraux numériques
 Cette action rapide vous permet de convertir un littéral numérique d’un système numérique de base en un autre. Par exemple, vous pouvez convertir un nombre en un format hexadécimal ou binaire. (Disponible uniquement dans Visual Studio 2017 [version 15.3, préversion].)
 
-![Refactorisation : changer la base](~/ide/media/vside-refactoring-changebase1.png)
+![Refactorisation : changer la base](../ide/media/vside-refactoring-changebase1.png)
 
-![Refactorisation : changer la base](~/ide/media/vside-refactoring-changebase2.png)
+![Refactorisation : changer la base](../ide/media/vside-refactoring-changebase2.png)
 
-### Insérer des séparateurs numériques dans les littéraux
-<a id="insert-digit-separators-into-literals" class="xliff"></a>
+### <a name="insert-digit-separators-into-literals"></a>Insérer des séparateurs numériques dans les littéraux
 Cette action rapide vous permet d’ajouter des caractères de séparation aux valeurs littérales. (Disponible uniquement dans Visual Studio 2017 [version 15.3, préversion].)
 
-![Refactorisation : changer les séparateurs numériques](~/ide/media/vside-refactoring-separators.png)
+![Refactorisation : changer les séparateurs numériques](../ide/media/vside-refactoring-separators.png)
 
-### Convertir une construction **if** en **switch**
-<a id="convert-if-construct-to-switch" class="xliff"></a>
+### <a name="convert-if-construct-to-switch"></a>Convertir une construction **if** en **switch**
 Cette action rapide vous permet de convertir une construction **if-then-else** en construction **switch**. (Disponible uniquement dans Visual Studio 2017 [version 15.3, préversion].)
 
 ```CSharp
@@ -450,7 +429,6 @@ Select Case obj
 End Select
 ```
 
-# Voir aussi
-<a id="see-also" class="xliff"></a>
+# <a name="see-also"></a>Voir aussi
 * [Styles de code et actions rapides](code-styles-and-quick-actions.md)
 

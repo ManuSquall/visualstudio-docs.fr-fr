@@ -39,22 +39,19 @@ ms.contentlocale: fr-fr
 ms.lasthandoff: 05/30/2017
 
 ---
-# Cibler une version spécifique du .NET Framework
-<a id="targeting-a-specific-net-framework-version" class="xliff"></a>
+# <a name="targeting-a-specific-net-framework-version"></a>Cibler une version spécifique du .NET Framework
 Dans Visual Studio, vous pouvez spécifier la version ou le profil du .NET Framework que votre projet doit cibler. Pour qu'une application s'exécute sur un autre ordinateur, la version du Framework ciblée par l'application doit être compatible avec la version du Framework qui est installée sur l'ordinateur.  
   
  Cette section contient des rubriques qui décrivent comment cibler des versions spécifiques du [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] dans vos projets.  
   
-## Dans cette section
-<a id="in-this-section" class="xliff"></a>  
+## <a name="in-this-section"></a>Dans cette section  
  [Vue d’ensemble du multiciblage Visual Studio](../ide/visual-studio-multi-targeting-overview.md)  
  Fournit une vue d’ensemble des fonctionnalités de multi-ciblage dans Visual Studio.  
   
  [Guide pratique pour cibler une version du .NET Framework](../ide/how-to-target-a-version-of-the-dotnet-framework.md)  
  Explique comment spécifier un [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] particulier pour votre projet Visual Basic, Visual C# ou Visual F#.  
   
-## Rubriques connexes
-<a id="related-sections" class="xliff"></a>  
+## <a name="related-sections"></a>Rubriques connexes  
  [.NET Framework Multi-Targeting pour les projets web ASP.NET](http://msdn.microsoft.com/Library/8b8145a9-62f6-4fc4-8a83-47b0487cbe76)  
  Explique comment utiliser cette version de Visual Studio pour développer des applications web qui s'exécutent dans des versions antérieures du .NET Framework.  
   

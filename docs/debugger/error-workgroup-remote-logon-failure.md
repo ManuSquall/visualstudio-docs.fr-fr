@@ -1,86 +1,98 @@
 ---
-title: "Erreur&#160;: &#201;chec d&#39;ouverture de session &#224; distance du groupe de travail | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-debug"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "vs.debug.error.workgroup_remote_logon_failure"
-dev_langs: 
-  - "FSharp"
-  - "VB"
-  - "CSharp"
-  - "C++"
-  - "JScript"
-  - "VB"
-  - "CSharp"
-  - "C++"
-helpviewer_keywords: 
-  - "échec d'ouverture de session, débogage distant"
-  - "débogage distant, échec d'ouverture de session"
+title: 'Error: Workgroup Remote Logon Failure | Microsoft Docs'
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology:
+- vs-ide-debug
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords:
+- vs.debug.error.workgroup_remote_logon_failure
+dev_langs:
+- CSharp
+- VB
+- FSharp
+- JScript
+- C++
+helpviewer_keywords:
+- logon failure, remote debugging
+- remote debugging, logon failure
 ms.assetid: 7be2c5bb-40fe-48d6-8cfc-c231fbd3d64e
 caps.latest.revision: 19
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 19
----
-# Erreur&#160;: &#201;chec d&#39;ouverture de session &#224; distance du groupe de travail
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+translation.priority.ht:
+- cs-cz
+- de-de
+- es-es
+- fr-fr
+- it-it
+- ja-jp
+- ko-kr
+- pl-pl
+- pt-br
+- ru-ru
+- tr-tr
+- zh-cn
+- zh-tw
+ms.translationtype: HT
+ms.sourcegitcommit: 9e6c28d42bec272c6fd6107b4baf0109ff29197e
+ms.openlocfilehash: d0ebccfdb523661ba04a103bf6999e9c6546d1c7
+ms.contentlocale: fr-fr
+ms.lasthandoff: 08/22/2017
 
-Cette erreur affiche le message suivant :  
+---
+# <a name="error-workgroup-remote-logon-failure"></a>Error: Workgroup Remote Logon Failure
+This error reads:  
   
- Échec d'ouverture de session : nom d'utilisateur inconnu ou mot de passe incorrect  
+ Logon failure: unknown user name or bad password  
   
  **Cause**  
   
- Cette erreur peut se produire lorsque vous déboguez à partir d'un ordinateur au sein d'un groupe de travail et que vous tentez de vous connecter à un ordinateur distant.  Plusieurs causes sont possibles :  
+ This error can occur when you are debugging from a machine on a workgroup and you try to connect to remote machine. Possible causes include:  
   
--   Il n'existe pas de compte avec le nom et le mot de passe correspondants sur l'ordinateur distant.  
+-   There is no account with the matching name and password on the remote machine.  
   
--   Si l'ordinateur Visual Studio et l'ordinateur distant appartiennent à des groupes de travail, cette erreur peut se produire en raison du paramètre par défaut **Stratégie de sécurité locale** sur l'ordinateur distant.  L'option par défaut du paramètre **Stratégie de sécurité locale** est **Invité seul \- les utilisateurs locaux s'authentifient en tant qu'invités**.  Pour effectuer un débogage sur cette installation, vous devez remplacer le paramètre sur l'ordinateur distant par **Classique \- les utilisateurs locaux s'authentifient eux\-mêmes.**  
+-   If both the Visual Studio computer and the remote machine are on workgroups, this error may occur due to the default **Local Security Policy** setting on the remote machine. The default setting for the **Local Security Policy** setting is **Guest only - local users authenticate as Guest**. To debug on this setup, you must change the setting on the remote machine to **Classic - local users authenticate as themselves**.  
   
 > [!NOTE]
->  Vous devez être administrateur pour exécuter les tâches suivantes.  
+>  You must be an administrator to carry out the following tasks.  
   
-### Pour ouvrir la fenêtre Stratégie de sécurité locale  
+### <a name="to-open-the-local-security-policy-window"></a>To open the Local Security Policy window  
   
-1.  Démarrez le composant logiciel enfichable Microsoft Management Console **secpol.msc**.  Tapez secpol.msc dans la zone de recherche Windows, dans la zone Exécuter de Windows, ou dans une invite de commandes.  
+1.  Start the **secpol.msc** Microsoft Management Console snap-in. Type secpol.msc in Windows search, the Windows Run box, or at a command prompt.  
   
-### Pour ajouter des assignations de droits utilisateur  
+### <a name="to-add-user-rights-assignments"></a>To add user rights assignments  
   
-1.  Ouvrez les Paramètres régionaux  
+1.  Open the **Local Security Policy** window.  
   
-2.  Ouvrez la fenêtre **Stratégie de sécurité locale**.  
+2.  Expand the **Local Policies** folder.  
   
-3.  Développez le dossier **Stratégies locales**.  
+3.  Click **User Rights Assignment**.  
   
-4.  Cliquez sur **Attribution des droits utilisateur**.  
+4.  In the **Policy** column, double-click **Debug programs** to view current local group policy assignments in the **Local Security Policy Setting** dialog box.  
   
-5.  Dans la colonne **Policy**, double\-cliquez sur **Déboguer des programmes** pour afficher les assignations de la stratégie de groupe locale dans la boîte de dialogue **Paramètre de stratégie de sécurité locale**.  
+     ![Local Security Policy User Rights](../debugger/media/dbg_err_localsecuritypolicy_userrightsdebugprograms.png "DBG_ERR_LocalSecurityPolicy_UserRightsDebugPrograms")  
   
-     ![Droits d’utilisateur de stratégie de sécurité locale](../debugger/media/dbg_err_localsecuritypolicy_userrightsdebugprograms.png "DBG\_ERR\_LocalSecurityPolicy\_UserRightsDebugPrograms")  
+5.  To add new users, click the **Add User or Group** button.  
   
-6.  Pour ajouter de nouveaux utilisateurs, cliquez sur le bouton **Ajouter un utilisateur ou un groupe**.  
+### <a name="to-change-the-sharing-and-security-model"></a>To change the Sharing and Security Model  
   
-### Pour modifier le modèle de partage et de sécurité  
+1.  Open the **Local Security Policy** window.  
   
-1.  Ouvrez la fenêtre **Stratégie de sécurité locale**.  
+2.  Expand the **Local Policies** folder.  
   
-2.  Développez le dossier **Stratégies locales**.  
+3.  Click **Security Options**.  
   
-3.  Cliquez sur **Options de sécurité**.  
+4.  In the **Policy** column, double-click **Network access: Sharing and security model for local accounts**.  
   
-4.  Dans la colonne **Stratégie**, double\-cliquez sur **Accès réseau : modèle de partage et de sécurité pour les comptes locaux**.  
+5.  In the **Network access: Sharing and security model for local accounts** dialog box, change the value to **Classic - local users authenticate as themselves** and click the **Apply** button.  
   
-5.  Dans la boîte de dialogue **Accès réseau : modèle de partage et de sécurité pour les comptes locaux**, remplacez la valeur par **Classique \- les utilisateurs locaux s'authentifient eux\-mêmes** et cliquez sur le bouton **Appliquer**.  
+     ![Local Security Policy Security Options](../debugger/media/dbg_err_localsecuritypolicy_securityoptions_networkaccess.png "DBG_ERR_LocalSecurityPolicy_SecurityOptions_NetworkAccess")  
   
-     ![Options de sécurité de stratégie de sécurité locale](../debugger/media/dbg_err_localsecuritypolicy_securityoptions_networkaccess.png "DBG\_ERR\_LocalSecurityPolicy\_SecurityOptions\_NetworkAccess")  
-  
-## Voir aussi  
- [Erreurs de débogage distant et dépannage](../debugger/remote-debugging-errors-and-troubleshooting.md)   
- [Débogage distant](../debugger/remote-debugging.md)
+## <a name="see-also"></a>See Also  
+ [Remote Debugging Errors and Troubleshooting](../debugger/remote-debugging-errors-and-troubleshooting.md)   
+ [Remote Debugging](../debugger/remote-debugging.md)

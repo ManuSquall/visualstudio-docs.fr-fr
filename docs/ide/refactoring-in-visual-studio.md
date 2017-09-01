@@ -35,8 +35,7 @@ ms.contentlocale: fr-fr
 ms.lasthandoff: 05/19/2017
 
 ---
-# Refactorisation dans Visual Studio
-<a id="refactoring-in-visual-studio" class="xliff"></a>
+# <a name="refactoring-in-visual-studio"></a>Refactorisation dans Visual Studio
 La refactorisation est le processus de modification du code pour le rendre plus facile à gérer, à comprendre et à étendre, mais sans changer son comportement. Certaines *refactorisations* courantes incluent les tâches suivantes :  
   
 1.  fractionnement des fonctions longues en fonctions plus petites ;  
@@ -49,24 +48,19 @@ La refactorisation est le processus de modification du code pour le rendre plus 
   
  Étant donné que la logique de refactorisation est étroitement liée à la syntaxe du langage, chaque service de langage dans Visual Studio comporte ses propres fonctionnalités de refactorisation. Pour plus d'informations, consultez les pages suivantes :  
   
-### Refactorisation en C#
-<a id="refactoring-in-c" class="xliff"></a> #
+### <a name="refactoring-in-c"></a>Refactorisation en C# #
  [Refactorisation (C#)](../csharp-ide/refactoring-csharp.md)  
   
-### Refactorisation en Visual Basic
-<a id="refactoring-in-visual-basic" class="xliff"></a>  
+### <a name="refactoring-in-visual-basic"></a>Refactorisation en Visual Basic  
  [Refactorisation (Visual Basic)](../vb-ide/refactoring-vb.md)  
   
-### Refactorisation en C++
-<a id="refactoring-in-c" class="xliff"></a>  
+### <a name="refactoring-in-c"></a>Refactorisation en C++  
  [Écriture et refactorisation du code (C++)](/cpp/ide/writing-and-refactoring-code-cpp)  
   
-### Refactorisation en F#
-<a id="refactoring-in-f" class="xliff"></a> #
+### <a name="refactoring-in-f"></a>Refactorisation en F# #
  La prise en charge de la refactorisation pour F# est fournie dans [Visual F# Power Tools](https://visualstudiogallery.msdn.microsoft.com/136b942e-9f2c-4c0b-8bac-86d774189cff), extension Visual Studio tierce.  
   
-## Voir aussi
-<a id="see-also" class="xliff"></a>  
+## <a name="see-also"></a>Voir aussi  
  [IDE Visual Studio](../ide/visual-studio-ide.md)   
  [Écriture de code dans l’éditeur de code et de texte](../ide/writing-code-in-the-code-and-text-editor.md)  
  [Aperçu des modifications](../ide/preview-changes.md)

@@ -1,46 +1,50 @@
 ---
-title: "Comment&#160;: d&#233;terminer l&#39;&#233;l&#233;ment Outlook actuel par programmation"
-ms.custom: ""
-ms.date: "02/02/2017"
-ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "office-development"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-dev_langs: 
-  - "VB"
-  - "CSharp"
-helpviewer_keywords: 
-  - "messagerie électronique (développement Office dans Visual Studio), élément actuel"
-  - "éléments de messagerie (développement Office dans Visual Studio), actuels"
-  - "Outlook (développement Office dans Visual Studio), élément actuel"
-  - "SelectionChange (événement)"
+title: 'How to: Programmatically Determine the Current Outlook Item | Microsoft Docs'
+ms.custom: 
+ms.date: 02/02/2017
+ms.prod: visual-studio-dev14
+ms.reviewer: 
+ms.suite: 
+ms.technology:
+- office-development
+ms.tgt_pltfrm: 
+ms.topic: article
+dev_langs:
+- VB
+- CSharp
+helpviewer_keywords:
+- mail items [Office development in Visual Studio], current
+- e-mail [Office development in Visual Studio], current item
+- SelectionChange event
+- Outlook [Office development in Visual Studio], current item
 ms.assetid: b4fb5ccd-b297-463e-9208-1fec42482531
 caps.latest.revision: 28
-author: "kempb"
-ms.author: "kempb"
-manager: "ghogen"
-caps.handback.revision: 27
+author: kempb
+ms.author: kempb
+manager: ghogen
+ms.translationtype: HT
+ms.sourcegitcommit: eb5c9550fd29b0e98bf63a7240737da4f13f3249
+ms.openlocfilehash: 3ec47d93f44b08f957edda6abb5644fd38aac15d
+ms.contentlocale: fr-fr
+ms.lasthandoff: 08/30/2017
+
 ---
-# Comment&#160;: d&#233;terminer l&#39;&#233;l&#233;ment Outlook actuel par programmation
-  Cet exemple utilise l'événement Explorer.SelectionChange pour afficher le nom du dossier actif ainsi que différentes informations à propos de l'élément sélectionné.  Le code affiche ensuite l'élément sélectionné.  
+# <a name="how-to-programmatically-determine-the-current-outlook-item"></a>How to: Programmatically Determine the Current Outlook Item
+  This example uses the Explorer.SelectionChange event to display the name of the current folder and some information about the selected item. The code then displays the selected item.  
   
  [!INCLUDE[appliesto_olkallapp](../vsto/includes/appliesto-olkallapp-md.md)]  
   
-## Exemple  
- [!code-csharp[Trin_OL_CurrentItem#1](../snippets/csharp/VS_Snippets_OfficeSP/Trin_OL_CurrentItem/CS/thisaddin.cs#1)]
- [!code-vb[Trin_OL_CurrentItem#1](../snippets/visualbasic/VS_Snippets_OfficeSP/Trin_OL_CurrentItem/VB/thisaddin.vb#1)]  
+## <a name="example"></a>Example  
+ [!code-vb[Trin_OL_CurrentItem#1](../vsto/codesnippet/VisualBasic/Trin_OL_CurrentItem/thisaddin.vb#1)] [!code-csharp[Trin_OL_CurrentItem#1](../vsto/codesnippet/CSharp/Trin_OL_CurrentItem/thisaddin.cs#1)]  
   
-## Compilation du code  
- Cet exemple nécessite :  
+## <a name="compiling-the-code"></a>Compiling the Code  
+ This example requires:  
   
--   Un rendez\-vous, un contact et des éléments de courrier électronique dans Microsoft Office Outlook.  
+-   Appointment, contact, and e-mail items in Microsoft Office Outlook.  
   
-## Voir aussi  
- [Vue d'ensemble du modèle d'objet Outlook](../vsto/outlook-object-model-overview.md)   
- [Comment : récupérer un dossier par nom par programmation](../vsto/how-to-programmatically-retrieve-a-folder-by-name.md)   
- [Comment : rechercher un contact spécifique par programmation](../vsto/how-to-programmatically-search-for-a-specific-contact.md)  
+## <a name="see-also"></a>See Also  
+ [Outlook Object Model Overview](../vsto/outlook-object-model-overview.md)   
+ [How to: Programmatically Retrieve a Folder by Name](../vsto/how-to-programmatically-retrieve-a-folder-by-name.md)   
+ [How to: Programmatically Search for a Specific Contact](../vsto/how-to-programmatically-search-for-a-specific-contact.md)  
   
   

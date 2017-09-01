@@ -1,68 +1,85 @@
 ---
-title: "SccRename (fonction) | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "SccRename"
-helpviewer_keywords: 
-  - "SccRename (fonction)"
+title: SccRename Function | Microsoft Docs
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology:
+- vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords:
+- SccRename
+helpviewer_keywords:
+- SccRename function
 ms.assetid: b467ade6-a1db-4c0b-b60f-7850ec4f79eb
 caps.latest.revision: 12
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 12
----
-# SccRename (fonction)
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
+ms.author: gregvanl
+manager: ghogen
+translation.priority.mt:
+- cs-cz
+- de-de
+- es-es
+- fr-fr
+- it-it
+- ja-jp
+- ko-kr
+- pl-pl
+- pt-br
+- ru-ru
+- tr-tr
+- zh-cn
+- zh-tw
+ms.translationtype: MT
+ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
+ms.openlocfilehash: 58a500fe775bb7837e6132bd918be63fb68b7fe2
+ms.contentlocale: fr-fr
+ms.lasthandoff: 08/28/2017
 
-Cette fonction renomme un fichier dans le système de contrôle de code source.  
+---
+# <a name="sccrename-function"></a>SccRename Function
+This function renames a file in the source control system.  
   
-## Syntaxe  
+## <a name="syntax"></a>Syntax  
   
-```cpp#  
+```cpp  
 SCCRTN SccRename(  
-   LPVOID pvContext,  
-   HWND   hWnd,  
-   LPCSTR lpFileName,  
-   LPCSTR lpNewName  
+   LPVOID pvContext,  
+   HWND   hWnd,  
+   LPCSTR lpFileName,  
+   LPCSTR lpNewName  
 );  
 ```  
   
-#### Paramètres  
+#### <a name="parameters"></a>Parameters  
  pvContext  
- \[in\] La structure de contexte du plug\-in de contrôle de source.  
+ [in] The source control plug-in context structure.  
   
  hWnd  
- \[in\] Handle vers la fenêtre de l'IDE que le plug\-in de contrôle de code source peut utiliser en tant que parent pour toutes les boîtes de dialogue qu'il fournit.  
+ [in] A handle to the IDE window that the source control plug-in can use as a parent for any dialog boxes that it provides.  
   
  lpFileName  
- \[in\] Le nom de fichier complet du fichier qui est renommé.  
+ [in] The fully qualified file name of the file being renamed.  
   
  lpNewName  
- \[in\] Le nouveau nom complet. Si le chemin d'accès est différente, le fichier a été déplacé d'un sous\-répertoire à un autre.  
+ [in] The fully qualified new name. If the directory path is different, then the file has moved from one subdirectory to another.  
   
-## Valeur de retour  
- L'implémentation de plug\-in de contrôle de source de cette fonction est censée renvoyer une des valeurs suivantes :  
+## <a name="return-value"></a>Return Value  
+ The source control plug-in implementation of this function is expected to return one of the following values:  
   
-|Valeur|Description|  
-|------------|-----------------|  
-|SCC\_OK|L'opération de changement de nom s'est terminée correctement.|  
-|SCC\_E\_PROJNOTOPEN|Le projet n'est pas ouvert sous contrôle de code source.|  
-|SCC\_E\_FILENOTCONTROLLED|Le fichier n'est pas sous contrôle de code source.|  
-|SCC\_E\_ACCESSFAILURE|Impossible d'accéder au système de contrôle source, probablement en raison de problèmes réseau ou de contention.|  
-|SCC\_E\_NOTAUTHORIZED|L'utilisateur n'est pas autorisé à effectuer cette opération.|  
-|SCC\_E\_COULDNOTCREATEPROJECT|Le projet ne peut pas créé dans le cadre du processus de changement de nom.|  
-|SCC\_E\_OPNOTPERFORMED|L'opération n'a pas été effectuée.|  
-|SCC\_E\_NONSPECIFICERROR|Une erreur non spécifiée ou générale s'est produite.|  
+|Value|Description|  
+|-----------|-----------------|  
+|SCC_OK|The renaming operation completed successfully.|  
+|SCC_E_PROJNOTOPEN|The project is not open under source control.|  
+|SCC_E_FILENOTCONTROLLED|The file is not under source control.|  
+|SCC_E_ACCESSFAILURE|There was a problem accessing the source control system, probably due to network or contention issues.|  
+|SCC_E_NOTAUTHORIZED|The user is not authorized to complete this operation.|  
+|SCC_E_COULDNOTCREATEPROJECT|The project could not be created as part of the renaming process.|  
+|SCC_E_OPNOTPERFORMED|The operation was not performed.|  
+|SCC_E_NONSPECIFICERROR|An unspecified or general error occurred.|  
   
-## Notes  
- Cette fonction peut être utilisée pour renommer un fichier ou déplacez\-le à partir d'un emplacement à un autre dans le système de contrôle de code source. Le plug\-in de contrôle de code source ne devez pas essayer d'accéder au fichier sur le disque. Il est responsable de l'IDE pour renommer le fichier local.  
+## <a name="remarks"></a>Remarks  
+ This function can be used to rename a file or move it from one location to another in the source control system. The source control plug-in should not attempt to access the file on disk. It is the IDE's responsibility to rename the local file.  
   
-## Voir aussi  
- [Fonctions d'API de plug\-in de contrôle de source](../extensibility/source-control-plug-in-api-functions.md)
+## <a name="see-also"></a>See Also  
+ [Source Control Plug-in API Functions](../extensibility/source-control-plug-in-api-functions.md)

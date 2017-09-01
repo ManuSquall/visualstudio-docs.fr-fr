@@ -1,56 +1,73 @@
 ---
-title: "Une erreur DCOM s&#39;est produite lors de la tentative de contact de l&#39;ordinateur distant. Acc&#232;s refus&#233;. | Microsoft Docs"
-ms.custom: ""
-ms.date: "12/05/2016"
-ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-debug"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "vs.debug.remote.dcom_access_denied"
-dev_langs: 
-  - "FSharp"
-  - "VB"
-  - "CSharp"
-  - "C++"
-  - "JScript"
-helpviewer_keywords: 
-  - "DCOM, erreurs d'accès"
-  - "erreur d'accès au DCOM à distance refusé"
-  - "débogage distant, erreur DCOM"
+title: A DCOM error occurred trying to contact the remote computer. Access is denied. | Microsoft Docs
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology:
+- vs-ide-debug
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords:
+- vs.debug.remote.dcom_access_denied
+dev_langs:
+- CSharp
+- VB
+- FSharp
+- C++
+- JScript
+helpviewer_keywords:
+- remote debugging, DCOM error
+- remote DCOM access denied error
+- DCOM, access errors
 ms.assetid: 9d7dfc1b-9fe0-4f54-9c50-9c0e0f8358c5
 caps.latest.revision: 27
-caps.handback.revision: 27
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
----
-# Une erreur DCOM s&#39;est produite lors de la tentative de contact de l&#39;ordinateur distant. Acc&#232;s refus&#233;.
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+translation.priority.ht:
+- de-de
+- es-es
+- fr-fr
+- it-it
+- ja-jp
+- ko-kr
+- ru-ru
+- zh-cn
+- zh-tw
+translation.priority.mt:
+- cs-cz
+- pl-pl
+- pt-br
+- tr-tr
+ms.translationtype: HT
+ms.sourcegitcommit: 9e6c28d42bec272c6fd6107b4baf0109ff29197e
+ms.openlocfilehash: cc8adff7c0c5d7e1595f59c6571a5670c9f7163f
+ms.contentlocale: fr-fr
+ms.lasthandoff: 08/22/2017
 
-Le débogage distant utilise DCOM pour les communications entre l’ordinateur hôte et l’ordinateur distant dans les situations suivantes :  
+---
+# <a name="a-dcom-error-occurred-trying-to-contact-the-remote-computer-access-is-denied"></a>A DCOM error occurred trying to contact the remote computer. Access is denied.
+Remote debugging uses DCOM to communicate between the local and remote computers in the following situations:  
   
--   Le débogueur est défini sur **Mode de compatibilité natif** ou l’option **Mode de compatibilité managé** est activée dans la page **Outils\/Options\/Débogage**.  
+-   The debugger is set to **Native Compatibility Mode** or **Managed Compatibility Mode** is checked in the **Tools > Options > Debugging** page  
   
--   Vous déboguez du code C\+\+ managé \(C\+\+\/CLI\).  
+-   You are debugging managed C++ (C++/CLI) code.  
   
--   Dans Visual Studio 2013, l’option **Activer Modifier & Continuer natif** est activée dans la page **Outils\/Options\/Débogage**.  
+-   In Visual Studio 2013, when **Enable native Edit and Continue** is checked in the **Tools > Options > Debugging** page  
   
--   Quelques scénarios de débogage tiers  
+-   Some third party debugging scenarios  
   
- Cette erreur se produit lorsque le processus Visual Studio ne peut pas s'authentifier \(ou que les informations d'identification fournies ont été considérées inappropriées\) lors du processus du débogueur distant sur DCOM. Une ou plusieurs des solutions suivantes peuvent résoudre le problème :  
+ This error occurs when the Visual Studio process cannot authenticate itself (or the supplied credentials were deemed insufficient) to the remote debugger process over DCOM. One or more of the following workarounds might resolve the issue:  
   
--   Désactivez **Mode de compatibilité natif** et **Mode de compatibilité managé**.  
+-   Turn off  **Native Compatibility Mode** and **Managed Compatibility Mode**.  
   
--   Dans Visual Studio 2013, désactivez **Activer Modifier & Continuer natif**.  
+-   In Visual Studio 2013, turn off **Enable native Edit and Continue**.  
   
--   Redémarrez les deux ordinateurs.  
+-   Reboot both computers.  
   
--   Si le débogage distant requiert la saisie des informations d'identification, activez l'option pour enregistrer les informations d'identification.  
+-   If remote debugging requires entering credentials, check the option to save the credentials.  
   
-## Voir aussi  
- [Erreurs de débogage distant et dépannage](../debugger/remote-debugging-errors-and-troubleshooting.md)   
- [Débogage distant](../debugger/remote-debugging.md)
+## <a name="see-also"></a>See Also  
+ [Remote Debugging Errors and Troubleshooting](../debugger/remote-debugging-errors-and-troubleshooting.md)   
+ [Remote Debugging](../debugger/remote-debugging.md)

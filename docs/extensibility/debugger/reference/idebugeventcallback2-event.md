@@ -1,85 +1,102 @@
 ---
-title: "IDebugEventCallback2::Event | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "IDebugEventCallback2::Event"
-helpviewer_keywords: 
-  - "IDebugEventCallback2::Event"
+title: IDebugEventCallback2::Event | Microsoft Docs
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology:
+- vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords:
+- IDebugEventCallback2::Event
+helpviewer_keywords:
+- IDebugEventCallback2::Event
 ms.assetid: e5a3345b-d460-4e40-8f5b-3111c56a2ed9
 caps.latest.revision: 10
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 10
----
-# IDebugEventCallback2::Event
-[!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]
+ms.author: gregvanl
+manager: ghogen
+translation.priority.mt:
+- cs-cz
+- de-de
+- es-es
+- fr-fr
+- it-it
+- ja-jp
+- ko-kr
+- pl-pl
+- pt-br
+- ru-ru
+- tr-tr
+- zh-cn
+- zh-tw
+ms.translationtype: MT
+ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
+ms.openlocfilehash: c22bd5b1a07947bc7cca7819adaf7b66334d23a7
+ms.contentlocale: fr-fr
+ms.lasthandoff: 08/28/2017
 
-Envoie des notifications d'événement de débogage.  
+---
+# <a name="idebugeventcallback2event"></a>IDebugEventCallback2::Event
+Sends notification of debug events.  
   
-## Syntaxe  
+## <a name="syntax"></a>Syntax  
   
-```cpp#  
-HRESULT Event(   
-   IDebugEngine2*  pEngine,  
-   IDebugProcess2* pProcess,  
-   IDebugProgram2* pProgram,  
-   IDebugThread2*  pThread,  
-   IDebugEvent2*   pEvent,  
-   REFIID          riidEvent,  
-   DWORD           dwAttrib  
+```cpp  
+HRESULT Event(   
+   IDebugEngine2*  pEngine,  
+   IDebugProcess2* pProcess,  
+   IDebugProgram2* pProgram,  
+   IDebugThread2*  pThread,  
+   IDebugEvent2*   pEvent,  
+   REFIID          riidEvent,  
+   DWORD           dwAttrib  
 );  
 ```  
   
-```c#  
-int Event(   
-   IDebugEngine2  pEngine,  
-   IDebugProcess2 pProcess,  
-   IDebugProgram2 pProgram,  
-   IDebugThread2  pThread,  
-   IDebugEvent2   pEvent,  
-   ref Guid       riidEvent,  
-   uint           dwAttrib  
+```csharp  
+int Event(   
+   IDebugEngine2  pEngine,  
+   IDebugProcess2 pProcess,  
+   IDebugProgram2 pProgram,  
+   IDebugThread2  pThread,  
+   IDebugEvent2   pEvent,  
+   ref Guid       riidEvent,  
+   uint           dwAttrib  
 );  
 ```  
   
-#### Paramètres  
+#### <a name="parameters"></a>Parameters  
  `pEngine`  
- \[in\]  un objet d' [IDebugEngine2](../../../extensibility/debugger/reference/idebugengine2.md) qui représente le moteur de débogage \(DE\) qui envoie cet événement.  Un De est nécessaire pour terminer ce paramètre.  
+ [in] An [IDebugEngine2](../../../extensibility/debugger/reference/idebugengine2.md) object that represents the debug engine (DE) that is sending this event. A DE is required to fill out this parameter.  
   
  `pProcess`  
- \[in\]  un objet d' [IDebugProcess2](../../../extensibility/debugger/reference/idebugprocess2.md) qui représente le processus dans lequel l'événement se produit.  Ce paramètre est rempli par le gestionnaire de débogage de session \(SDM\).  Un De passe toujours une valeur NULL pour ce paramètre.  
+ [in] An [IDebugProcess2](../../../extensibility/debugger/reference/idebugprocess2.md) object that represents the process in which the event occurs. This parameter is filled in by the session debug manager (SDM). A DE always passes a null value for this parameter.  
   
  `pProgram`  
- \[in\]  Un objet d' [IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md) qui représente le programme où cet événement se produit.  pour la plupart des événements, ce paramètre n'est pas une valeur NULL.  
+ [in] An [IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md) object that represents the program in which this event occurs. For most events, this parameter is not a null value.  
   
  `pThread`  
- \[in\]  Un objet d' [IDebugThread2](../../../extensibility/debugger/reference/idebugthread2.md) qui représente le thread dans lequel cet événement se produit.  Pour empêcher les événements, ce paramètre ne peut pas être une valeur NULL à mesure que le frame de pile est obtenu à partir de ce paramètre.  
+ [in] An [IDebugThread2](../../../extensibility/debugger/reference/idebugthread2.md) object that represents the thread in which this event occurs. For stopping events, this parameter cannot be a null value as the stack frame is obtained from this parameter.  
   
  `pEvent`  
- \[in\]  un objet d' [IDebugEvent2](../../../extensibility/debugger/reference/idebugevent2.md) qui représente l'événement de débogage.  
+ [in] An [IDebugEvent2](../../../extensibility/debugger/reference/idebugevent2.md) object that represents the debug event.  
   
  `riidEvent`  
- \[in\]  GUID identifiant qui interface d'événement à obtenir à partir de le paramètre d' `pEvent` .  
+ [in] GUID that identifies which event interface to obtain from the `pEvent` parameter.  
   
  `dwAttrib`  
- \[in\]  Une combinaison des indicateurs d'énumération d' [EVENTATTRIBUTES](../../../extensibility/debugger/reference/eventattributes.md) .  
+ [in] A combination of flags from the [EVENTATTRIBUTES](../../../extensibility/debugger/reference/eventattributes.md) enumeration.  
   
-## Valeur de retour  
- En cas de réussite, retourne `S_OK`; sinon, retourne un code d'erreur.  
+## <a name="return-value"></a>Return Value  
+ If successful, returns `S_OK`; otherwise, returns an error code.  
   
-## Notes  
- En appelant cette méthode, le paramètre d' `dwAttrib` doit correspondre à la valeur retournée par la méthode d' [GetAttributes](../../../extensibility/debugger/reference/idebugevent2-getattributes.md) comme invité l'objet événement est passé dans le paramètre d' `pEvent` .  
+## <a name="remarks"></a>Remarks  
+ When calling this method, the `dwAttrib` parameter must match the value returned from the [GetAttributes](../../../extensibility/debugger/reference/idebugevent2-getattributes.md) method as called on the event object passed in the `pEvent` parameter.  
   
- Tous les événements de débogage sont publiés de façon asynchrone, et ce, qu'un événement lui\-même soit asynchrone ou pas.  Lorsqu'un De appelle cette méthode, la valeur de retour n'indique pas si l'événement a été traité, uniquement si l'événement a été reçu.  En fait, dans la plupart des circonstances, l'événement n'a pas été géré lorsque cette méthode retourne.  
+ All debug events are posted asynchronously, regardless of whether an event itself is asynchronous or not. When a DE calls this method, the return value does not indicate whether the event was processed, only whether the event was received. In fact, under most circumstances, the event has not been processed when this method returns.  
   
-## Voir aussi  
+## <a name="see-also"></a>See Also  
  [IDebugEventCallback2](../../../extensibility/debugger/reference/idebugeventcallback2.md)   
  [IDebugEngine2](../../../extensibility/debugger/reference/idebugengine2.md)   
  [IDebugProcess2](../../../extensibility/debugger/reference/idebugprocess2.md)   

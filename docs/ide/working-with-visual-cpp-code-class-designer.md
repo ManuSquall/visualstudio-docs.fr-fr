@@ -44,8 +44,7 @@ ms.contentlocale: fr-fr
 ms.lasthandoff: 06/23/2017
 
 ---
-# Utilisation du code Visual C++ (Concepteur de classes)
-<a id="working-with-visual-c-code-class-designer" class="xliff"></a>
+# <a name="working-with-visual-c-code-class-designer"></a>Utilisation du code Visual C++ (Concepteur de classes)
 Le Concepteur de classes affiche une aire de conception visuelle appelée *diagramme de classes*, qui fournit une représentation visuelle des éléments de code dans votre projet. Vous pouvez utiliser des diagrammes de classes pour concevoir et visualiser des classes et d'autres types dans un projet.  
 
  Le Concepteur de classes prend en charge les éléments de code C++ suivants :  
@@ -67,21 +66,17 @@ Le Concepteur de classes affiche une aire de conception visuelle appelée *diagr
 > [!NOTE]
 >  Cela est différent du diagramme de classes UML, que vous pouvez créer dans un projet de modélisation. Pour plus d’informations, consultez [Diagrammes de classes UML : indications](../modeling/uml-class-diagrams-reference.md).  
 
-## Résolution des problèmes de résolution de type et d’affichage
-<a id="troubleshooting-type-resolution-and-display-issues" class="xliff"></a>  
+## <a name="troubleshooting-type-resolution-and-display-issues"></a>Résolution des problèmes de résolution de type et d’affichage  
 
-### Emplacement de fichiers sources
-<a id="location-of-source-files" class="xliff"></a>  
+### <a name="location-of-source-files"></a>Emplacement de fichiers sources  
  Le Concepteur de classes n'effectue pas un suivi de l'emplacement des fichiers sources. Par conséquent, si vous modifiez votre structure de projet ou si vous déplacez des fichiers sources dans votre projet, le Concepteur de classes peut perdre la trace du type (surtout le type source d'un typedef, de classes de base ou de types d'associations). Vous pouvez recevoir une erreur telle que **Le Concepteur de classes n’est pas en mesure d’afficher ce type**. Dans ce cas, refaites glisser le code source modifié ou déplacé vers le diagramme de classes pour le réafficher.  
 
-### Problèmes de mise à jour et de performances
-<a id="update-and-performance-issues" class="xliff"></a>  
+### <a name="update-and-performance-issues"></a>Problèmes de mise à jour et de performances  
  Pour les projets Visual C++, la modification dans le fichier source peut prendre 30 à 60 secondes avant d'apparaître dans le diagramme de classes. Ce délai peut entraîner la génération de l’erreur **Aucun type n’a été trouvé dans la sélection** par le Concepteur de classes. Si vous obtenez une telle erreur, cliquez sur **Annuler** dans le message d’erreur et attendez que l’élément de code apparaisse dans l’Affichage de classes. Le Concepteur de classes devrait ensuite être en mesure d'afficher le type.  
 
  En cas d'échec de la mise à jour d'un diagramme de classes suite à la modification du code, il peut s'avérer nécessaire de fermer le diagramme, puis de le rouvrir.  
 
-### Problèmes de résolution de type
-<a id="type-resolution-issues" class="xliff"></a>  
+### <a name="type-resolution-issues"></a>Problèmes de résolution de type  
  Le Concepteur de classes peut ne pas être en mesure de résoudre des types pour les raisons suivantes :  
   
 -   Le type se trouve dans un projet ou un assembly non référencé à partir du projet qui contient le diagramme de classes. Pour corriger cette erreur, ajoutez une référence au projet ou à l'assembly qui contient le type. Pour plus d’informations, consultez [Gestion des références dans un projet](managing-references-in-a-project.md).  
@@ -104,8 +99,7 @@ Le Concepteur de classes affiche une aire de conception visuelle appelée *diagr
   
 -   Assurez-vous que le type se trouve dans la portée correcte afin que le Concepteur de classes puisse le localiser. Vérifiez qu'il ne manque pas une instruction `using`, `imports` ou `#include` au code. Assurez-vous également que vous n'avez pas déplacé le type (ou un type connexe) hors de l'espace de noms dans lequel il a été initialement localisé.  
 
-### Résolution d'autres messages d'erreur
-<a id="troubleshooting-other-error-messages" class="xliff"></a>  
+### <a name="troubleshooting-other-error-messages"></a>Résolution d'autres messages d'erreur  
  Vous pouvez trouver de l'aide sur la résolution des erreurs et des avertissements dans les forums publics Microsoft Developer Network (MSDN). Consultez le [Forum du Concepteur de classes Visual Studio](http://go.microsoft.com/fwlink/?linkid=160754).  
 
 ##  <a name="limitations"></a> Limitations pour les éléments de code C++  
@@ -130,8 +124,7 @@ Le Concepteur de classes affiche une aire de conception visuelle appelée *diagr
 
 -   Le Concepteur de classes ne peut pas afficher les types void ou dérivés d'un type void.  
 
-## Voir aussi
-<a id="see-also" class="xliff"></a>  
+## <a name="see-also"></a>Voir aussi  
  [Conception et affichage des classes et des types](../ide/designing-and-viewing-classes-and-types.md)   
  [Utilisation des classes et d’autres types (Concepteur de classes)](../ide/working-with-classes-and-other-types-class-designer.md)   
  [Utilisation des diagrammes de classes (Concepteur de classes)](../ide/working-with-class-diagrams-class-designer.md)   

@@ -1,5 +1,5 @@
 ---
-title: Notions de base des tests unitaires | Documents Microsoft
+title: Unit Test Basics | Microsoft Docs
 ms.custom: 
 ms.date: 2016-01-07
 ms.reviewer: 
@@ -29,69 +29,69 @@ translation.priority.mt:
 - pl-pl
 - pt-br
 - tr-tr
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 47057e9611b824c17077b9127f8d2f8b192d6eb8
-ms.openlocfilehash: 67f42e3a79d30254d3f5942b3fc9938957d5ff99
+ms.translationtype: HT
+ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
+ms.openlocfilehash: ff2a1dc934083bb237189a1ebdfa25d42612433e
 ms.contentlocale: fr-fr
-ms.lasthandoff: 05/13/2017
+ms.lasthandoff: 08/28/2017
 
 ---
-# <a name="unit-test-basics"></a>Notions de base des tests unitaires
-Vérifiez que votre code fonctionne comme prévu en créant et en exécutant des tests unitaires. Un test unitaire consiste à décomposer les fonctionnalités de votre programme en comportements testables discrets que vous pouvez tester en tant qu’*unités* individuelles. L’explorateur de tests de Visual Studio offre un moyen souple et efficace d’exécuter vos tests unitaires et d’afficher leurs résultats dans Visual Studio. Visual Studio installe les frameworks de tests unitaires Microsoft pour le code managé et le code natif. Utilisez un *framework de tests unitaires* pour créer des tests unitaires, les exécuter et signaler les résultats de ces tests. Réexécutez des tests unitaires quand vous apportez des modifications pour vérifier que votre code fonctionne toujours correctement. Quand vous utilisez Visual Studio Enterprise, vous pouvez exécuter automatiquement des tests après chaque génération.  
+# <a name="unit-test-basics"></a>Unit Test Basics
+Check that your code is working as expected by creating and running unit tests. It's called unit testing because you break down the functionality of your program into discrete testable behaviors that you can test as individual *units*. Visual Studio Test Explorer provides a flexible and efficient way to run your unit tests and view their results in Visual Studio. Visual Studio installs the Microsoft unit testing frameworks for managed and native code. Use a *unit testing framework* to create unit tests, run them, and report the results of these tests. Rerun unit tests when you make changes to test that your code is still working correctly. When you use Visual Studio Enterprise, you can run tests automatically after every build.  
   
- Les tests unitaires ont le plus d’effet sur la qualité du code quand ils font partie intégrante du flux de travail de votre développement logiciel. Dès que vous écrivez une fonction ou un autre bloc de code d’application, créez des tests unitaires pour vérifier le comportement du code en réponse aux cas standard, limite et incorrects des données d’entrée, ainsi que les hypothèses explicites ou implicites du code. Avec le *développement axé sur des tests*, comme vous créez les tests unitaires avant d’écrire le code, vous utilisez les tests unitaires comme documentation de conception et spécifications fonctionnelles.  
+ Unit testing has the greatest effect on the quality of your code when it's an integral part of your software development workflow. As soon as you write a function or other block of application code, create unit tests that verify the behavior of the code in response to standard, boundary, and incorrect cases of input data, and that check any explicit or implicit assumptions made by the code. With *test driven development*, you create the unit tests before you write the code, so you use the unit tests as both design documentation and functional specifications.  
   
- Vous pouvez générer rapidement des projets de test et méthodes de test à partir de votre code, ou créer manuellement les tests quand vous le souhaitez. Quand vous utilisez IntelliTest pour explorer votre code .NET, vous pouvez générer des données de test et une suite de tests unitaires. Pour chaque instruction dans le code, une entrée de test est générée pour exécuter cette instruction. Découvrez comment [générer des tests unitaires pour votre code](http://msdn.microsoft.com/library/dn823749.aspx).  
+ You can quickly generate test projects and test methods from your code, or manually create the tests as you need them. When you use IntelliTest to explore your .NET code, you can generate test data and a suite of unit tests. For every statement in the code, a test input is generated that will execute that statement. Find out how to [generate unit tests for your code](http://msdn.microsoft.com/library/dn823749.aspx).  
   
- L’Explorateur de tests peut également exécuter des frameworks de tests unitaires tiers et open source ayant implémenté les interfaces des composants additionnels de l’Explorateur de tests. Vous pouvez ajouter la plupart de ces frameworks dans le gestionnaire d’extensions de Visual Studio et la galerie Visual Studio. Consultez [Installer des frameworks de tests unitaires tiers](../test/install-third-party-unit-test-frameworks.md).  
+ Test Explorer can also run third-party and open source unit test frameworks that have implemented Test Explorer add-on interfaces. You can add many of these frameworks through the Visual Studio Extension Manager and the Visual Studio gallery. See [Install third-party unit test frameworks](../test/install-third-party-unit-test-frameworks.md)  
   
--   [Démarrages rapides](#BKMK_Quick_starts)  
+-   [Quick starts](#BKMK_Quick_starts)  
   
--   [Exemple de solution MyBank](#BKMK_The_MyBank_Solution_example)  
+-   [The MyBank Solution example](#BKMK_The_MyBank_Solution_example)  
   
--   [Créer des projets de test unitaire et des méthodes de test](#BKMK_Creating_the_unit_test_projects)  
+-   [Create unit test projects and test methods](#BKMK_Creating_the_unit_test_projects)  
   
--   [Écrire vos tests](#BKMK_Writing_your_tests)  
+-   [Write your tests](#BKMK_Writing_your_tests)  
   
--   [Exécuter des tests dans l’explorateur de tests](#BKMK_Running_tests_in_Test_Explorer)  
+-   [Run tests in Test Explorer](#BKMK_Running_tests_in_Test_Explorer)  
   
--   [Exécuter et afficher des tests](#BKMK_Running_and_viewing_tests_from_the_Test_Explorer_toolbar)  
+-   [Run and view tests](#BKMK_Running_and_viewing_tests_from_the_Test_Explorer_toolbar)  
   
-##  <a name="BKMK_Unit_testing_overview"></a> Vue d’ensemble des tests unitaires  
+##  <a name="BKMK_Unit_testing_overview"></a> Unit testing overview  
   
-###  <a name="BKMK_Quick_starts"></a> Démarrages rapides  
- Pour obtenir une introduction aux tests unitaires qui vous conduit directement dans le code, consultez l’une des rubriques suivantes :  
+###  <a name="BKMK_Quick_starts"></a> Quick starts  
+ For an introduction to unit testing that takes you directly into coding, see one of these topics:  
   
--   [Procédure pas à pas : création et exécution de tests unitaires pour le code managé](../test/walkthrough-creating-and-running-unit-tests-for-managed-code.md)  
+-   [Walkthrough: Creating and Running Unit Tests for Managed Code](../test/walkthrough-creating-and-running-unit-tests-for-managed-code.md)  
   
--   [Démarrage rapide : développement piloté par les tests avec l’Explorateur de tests](../test/quick-start-test-driven-development-with-test-explorer.md)  
+-   [Quick Start: Test Driven Development with Test Explorer](../test/quick-start-test-driven-development-with-test-explorer.md)  
   
--   [Tests unitaires de code natif avec l’Explorateur de tests](http://msdn.microsoft.com/en-us/8a09d6d8-3613-49d8-9ffe-11375ac4736c)  
+-   [Unit testing native code with Test Explorer](http://msdn.microsoft.com/en-us/8a09d6d8-3613-49d8-9ffe-11375ac4736c)  
   
-##  <a name="BKMK_The_MyBank_Solution_example"></a> Exemple de solution MyBank  
- Dans cette rubrique, nous utilisons comme exemple le développement d’une application fictive, appelée `MyBank` . Vous n’avez pas besoin du code réel pour suivre les explications fournies dans cette rubrique. Les méthodes de test sont écrites en C# et présentées à l’aide du framework de tests unitaires Microsoft pour le code managé. Cependant, les concepts peuvent être facilement transférés vers d’autres langages et frameworks.  
+##  <a name="BKMK_The_MyBank_Solution_example"></a> The MyBank Solution example  
+ In this topic, we use the development of a fictional application called `MyBank` as an example. You don't need the actual code to follow the explanations in this topic. Test methods are written in C# and presented by using the Microsoft Unit Testing Framework for Managed Code, However, the concepts are easily transferred to other languages and frameworks.  
   
- ![Solution MyBank](../test/media/ute_mybanksolution.png "UTE_MyBankSolution")  
+ ![MyBank Solution](../test/media/ute_mybanksolution.png "UTE_MyBankSolution")  
   
- Notre première tentative de conception de l’application `MyBank` inclut un composant Accounts (Comptes) qui représente un compte individuel et ses transactions avec la banque et un composant Database (Base de données) qui correspond à la fonction d’agrégation et de gestion des comptes individuels.  
+ Our first attempt at a design for the `MyBank` application includes an accounts component that represents an individual account and its transactions with the bank, and a database component that represents the functionality to aggregate and manage the individual accounts.  
   
- Nous créons une solution `MyBank` qui contient deux projets :  
+ We create a `MyBank` solution that contains two projects:  
   
 -   `Accounts`  
   
 -   `BankDb`  
   
- Notre première tentative de conception du projet `Accounts` comporte une classe destinée à détenir les informations de base d’un compte, une interface qui spécifie les fonctionnalités courantes de n’importe quel type de compte, comme le dépôt ou le retrait, et une classe dérivée de l’interface qui représente un compte courant. Nous commençons les projets Accounts (Comptes) en créant les fichiers sources suivants :  
+ Our first attempt at designing the `Accounts` project contain a class to hold basic information about an account, an interface that specifies the common functionality of any type of account, like depositing and withdrawing assets from the account, and a class derived from the interface that represents a checking account. We begin the Accounts projects by creating the following source files:  
   
--   `AccountInfo.cs` définit les informations de base d'un compte.  
+-   `AccountInfo.cs` defines the basic information for an account.  
   
--   `IAccount.cs` définit une interface `IAccount` standard pour un compte, y compris les méthodes pour déposer de l'argent sur un compte ou en retirer, et pour récupérer le solde du compte.  
+-   `IAccount.cs` defines a standard `IAccount` interface for an account, including methods to deposit and withdraw assets from an account and to retrieve the account balance.  
   
--   `CheckingAccount.cs` contient la classe `CheckingAccount` qui implémente l'interface `IAccounts` d'un compte courant.  
+-   `CheckingAccount.cs` contains the `CheckingAccount` class that implements the `IAccounts` interface for a checking account.  
   
- Nous savons par expérience qu’un retrait sur un compte courant doit s’assurer que le montant retiré est inférieur au solde du compte. Aussi, nous remplaçons la méthode `IAccount.Withdaw` de `CheckingAccount` par une méthode qui vérifie cette condition. La méthode peut ressembler à ceci :  
+ We know from experience that one thing a withdrawal from a checking account must do is to make sure that the amount withdrawn is less than the account balance. So we override the `IAccount.Withdaw` method in `CheckingAccount` with a method that checks for this condition. The method might look like this:  
   
-```c#  
+```csharp  
   
 public void Withdraw(double amount)  
 {  
@@ -107,72 +107,72 @@ public void Withdraw(double amount)
   
 ```  
   
- Maintenant que nous avons le code, il est temps de le tester.  
+ Now that we have some code, it's time for testing.  
   
-##  <a name="BKMK_Creating_the_unit_test_projects"></a> Créer des projets de test unitaire et des méthodes de test  
- Il est souvent plus rapide de générer le projet de test unitaire et les stubs de test unitaire à partir de votre code. Vous pouvez également choisir de créer le projet de test unitaire et les tests manuellement selon vos besoins.  
+##  <a name="BKMK_Creating_the_unit_test_projects"></a> Create unit test projects and test methods  
+ It is often quicker to generate the unit test project and unit test stubs from your code. Or you can choose to create the unit test project and tests manually depending on your requirements.  
   
- **Créer un projet de test unitaire et des stubs de test unitaire**  
+ **Generate unit test project and unit test stubs**  
   
-1.  Dans la fenêtre de l’éditeur de code, cliquez avec le bouton droit et choisissez **Créer des tests unitaires** dans le menu contextuel.  
+1.  From the code editor window, right-click and choose **Create Unit Tests** from the context menu.  
   
-     ![À partir de la fenêtre de l’éditeur, affichez le menu contextuel](../test/media/createunittestsrightclick.png "CreateUnitTestsRightClick")  
+     ![From the editor window, view the context menu](../test/media/createunittestsrightclick.png "CreateUnitTestsRightClick")  
   
-2.  Cliquez sur OK pour accepter les valeurs par défaut pour créer vos tests unitaires, ou modifiez les valeurs utilisées pour créer et nommer le projet de test unitaire et les tests unitaires. Vous pouvez sélectionner le code qui est ajouté par défaut aux méthodes de test unitaire.  
+2.  Click OK to accept the defaults to create your unit tests, or change the values used to create and name the unit test project and the unit tests. You can select the code that is added by default to the unit test methods.  
   
-     ![Cliquez avec le bouton droit dans l’éditeur et choisissez Créer des tests unitaires](../test/media/createunittestsdialog.png "CreateUnitTestsDialog")  
+     ![Right&#45;click in editor and choose Create Unit Tests](../test/media/createunittestsdialog.png "CreateUnitTestsDialog")  
   
-3.  Les stubs de test unitaire sont créés dans un nouveau projet de test unitaire pour toutes les méthodes dans la classe.  
+3.  The unit test stubs are created in a new unit test project for all the methods in the class.  
   
-     ![Les tests unitaires sont créés](../test/media/createunittestsstubs.png "CreateUnitTestsStubs")  
+     ![The unit tests are created](../test/media/createunittestsstubs.png "CreateUnitTestsStubs")  
   
-4.  Poursuivez votre lecture pour savoir comment [ajouter du code aux méthodes de test unitaire](#BKMK_Writing_your_tests) et rendre votre test unitaire explicite, et des tests unitaires supplémentaires que vous pouvez ajouter pour tester votre code de manière approfondie.  
+4.  Now jump ahead to learn how to [add code to the unit test methods](#BKMK_Writing_your_tests) to make your unit test meaningful, and any extra unit tests that you might want to add to thoroughly test your code.  
   
- **Créer le projet de test unitaire et les tests unitaires manuellement**  
+ **Create your unit test project and unit tests manually**  
   
- Un projet de test unitaire reflète généralement la structure d’un seul projet de code. Dans l’exemple MyBank, vous ajoutez deux projets de test unitaire nommés `AccountsTests` et `BankDbTests` à la solution `MyBanks` . Les noms des projets de test sont arbitraires, mais l’adoption d’une convention d’affectation de noms standard est une bonne idée.  
+ A unit test project usually mirrors the structure of a single code project. In the MyBank example, you add two unit test projects named `AccountsTests` and `BankDbTests` to the `MyBanks` solution. The test project names are arbitrary, but adopting a standard naming convention is a good idea.  
   
- **Pour ajouter un projet de test unitaire à une solution :**  
+ **To add a unit test project to a solution:**  
   
-1.  Dans le menu **Fichier** , choisissez **Nouveau** , puis **Projet** (Ctrl+Maj+N).  
+1.  On the **File** menu, choose **New** and then choose **Project** (Keyboard Ctrl + Shift + N).  
   
-2.  Dans la boîte de dialogue Nouveau projet, développez le nœud **Installé** , choisissez le langage que vous voulez utiliser pour votre projet de test, puis sélectionnez **Test**.  
+2.  On the New Project dialog box, expand the **Installed** node, choose the language that you want to use for your test project, and then choose **Test**.  
   
-3.  Pour utiliser l’un des frameworks de tests unitaires Microsoft, choisissez **Projet de test unitaire** dans la liste des modèles de projet. Sinon, choisissez le modèle de projet du framework de tests unitaires que vous souhaitez utiliser. Pour tester le projet `Accounts` de notre exemple, vous devez le nommer `AccountsTests`.  
+3.  To use one of the Microsoft unit test frameworks, choose **Unit Test Project** from the list of project templates. Otherwise, choose the project template of the unit test framework that you want to use. To test the `Accounts` project of our example, you would name the project `AccountsTests`.  
   
     > [!WARNING]
-    >  Certains frameworks de tests unitaires tiers et open source ne fournissent pas de modèle de projet Visual Studio. Pour plus d’informations sur la création d’un projet, consultez la documentation relative au framework.  
+    >  Not all third-party and open source unit test frameworks provide a Visual Studio project template. Consult the framework document for information about creating a project.  
   
-4.  Dans votre projet de test unitaire, ajoutez une référence au projet de code testé : le projet Accounts (Comptes) dans notre exemple.  
+4.  In your unit test project, add a reference to the code project under test, in our example to the Accounts project.  
   
-     Pour créer la référence au projet de code :  
+     To create the reference to the code project:  
   
-    1.  Sélectionnez le projet dans l’Explorateur de solutions.  
+    1.  Select the project in Solution Explorer.  
   
-    2.  Dans le menu **Projet** , choisissez **Ajouter une référence**.  
+    2.  On the **Project** menu, choose **Add Reference**.  
   
-    3.  Dans la boîte de dialogue Gestionnaire de références, ouvrez le nœud **Solution** et choisissez **Projets**. Sélectionnez le nom du projet de code et fermez la boîte de dialogue.  
+    3.  On the Reference Manager dialog box, open the **Solution** node and choose **Projects**. Select the code project name and close the dialog box.  
   
- Chaque projet de test unitaire contient les classes qui reflètent les noms des classes du projet de code. Dans notre exemple, le projet `AccountsTests` contient les classes suivantes :  
+ Each unit test project contains classes that mirror the names of the classes in the code project. In our example, the `AccountsTests` project would contain the following classes:  
   
--   la classe `AccountInfoTests` contient les méthodes de test unitaire pour la classe `AccountInfo` du projet `BankAccount` ;  
+-   `AccountInfoTests` class contains the unit test methods for the `AccountInfo` class in the `BankAccount` project  
   
--   la classe `CheckingAccountTests` contient les méthodes de test unitaire pour la classe `CheckingAccount`.  
+-   `CheckingAccountTests` class contains the unit test methods for `CheckingAccount` class.  
   
-##  <a name="BKMK_Writing_your_tests"></a> Écrire vos tests  
- Le framework de tests unitaires que vous utilisez et Visual Studio IntelliSense vous guident lors de l’écriture du code des tests unitaires pour un projet de code. Pour s’exécuter dans l’Explorateur de tests, la plupart des frameworks vous demandent d’ajouter des attributs spécifiques pour identifier les méthodes de test unitaire. Les frameworks fournissent également un moyen, généralement par le biais d’instructions assert ou d’attributs de méthode, pour indiquer si la méthode de test a réussi ou échoué. D’autres attributs identifient les méthodes facultatives d’installation lors de l’initialisation des classes et avant chaque méthode de test, ainsi que les méthodes de démontage qui sont exécutées après chaque méthode de test et avant la destruction de la classe.  
+##  <a name="BKMK_Writing_your_tests"></a> Write your tests  
+ The unit test framework that you use and Visual Studio IntelliSense will guide you through writing the code for your unit tests for a code project. To run in Test Explorer, most frameworks require that you add specific attributes to identify unit test methods. The frameworks also provide a way—usually through assert statements or method attributes—to indicate whether the test method has passed or failed. Other attributes identify optional setup methods that are at class initialization and before each test method and teardown methods that are run after each test method and before the class is destroyed.  
   
- Le modèle AAA (Arrange, Act, Assert) est un moyen couramment utilisé pour écrire les tests unitaires d’une méthode testée.  
+ The AAA (Arrange, Act, Assert) pattern is a common way of writing unit tests for a method under test.  
   
--   La section **Arrange** d’une méthode de test unitaire initialise les objets et définit la valeur des données transmises à la méthode testée.  
+-   The **Arrange** section of a unit test method initializes objects and sets the value of the data that is passed to the method under test.  
   
--   La section **Act** appelle la méthode testée avec les paramètres triés.  
+-   The **Act** section invokes the method under test with the arranged parameters.  
   
--   La section **Assert** vérifie que l’action de la méthode testée se comporte comme prévu.  
+-   The **Assert** section verifies that the action of the method under test behaves as expected.  
   
- Pour tester la méthode `CheckingAccount.Withdraw` de notre exemple, nous pouvons écrire deux tests : l’un qui vérifie le comportement standard de la méthode et l’autre qui vérifie qu’un retrait supérieur au solde échouera. Dans la classe `CheckingAccountTests` , nous ajoutons les méthodes suivantes :  
+ To test the `CheckingAccount.Withdraw` method of our example, we can write two tests: one that verifies the standard behavior of the method, and one that verifies that a withdrawal of more than the balance will fail. In the `CheckingAccountTests` class, we add the following methods:  
   
-```c#  
+```csharp  
 [TestMethod]  
 public void Withdraw_ValidAmount_ChangesBalance()  
 {  
@@ -201,18 +201,18 @@ public void Withdraw_AmountMoreThanBalance_Throws()
   
 ```  
   
- notez que `Withdraw_ValidAmount_ChangesBalance` utilise une instruction `Assert` explicite pour déterminer si la méthode de test réussit ou échoue, tandis que `Withdraw_AmountMoreThanBalance_Throws` utilise l’attribut `ExpectedException` pour déterminer la réussite de la méthode testée. En arrière-plan, un framework de tests unitaires encapsule les méthodes de test dans les instructions try/catch. Dans la plupart des cas, si une exception est interceptée, la méthode de test échoue et l’exception est ignorée. L’attribut `ExpectedException` entraîne la réussite de la méthode de test si l’exception spécifiée est levée.  
+ Note that `Withdraw_ValidAmount_ChangesBalance` uses an explicit `Assert` statement to determine whether the test method passes or fails, while `Withdraw_AmountMoreThanBalance_Throws` uses the `ExpectedException` attribute to determine the success of the test method. Under the covers, a unit test framework wraps test methods in try/catch statements. In most cases, if an exception is caught, the test method fails and the exception is ignored. The `ExpectedException` attribute causes the test method to pass if the specified exception is thrown.  
   
- Pour plus d’informations sur les frameworks de tests unitaires Microsoft, consultez l’une des rubriques suivantes :  
+ For more information about the Microsoft Unit Testing Frameworks, see one of the following topics:  
   
--   [Écriture de tests unitaires pour le .NET Framework à l’aide du framework de tests unitaires Microsoft pour le code managé](../test/writing-unit-tests-for-the-dotnet-framework-with-the-microsoft-unit-test-framework-for-managed-code.md)  
+-   [Writing Unit Tests for the .NET Framework with the Microsoft Unit Test Framework for Managed Code](../test/writing-unit-tests-for-the-dotnet-framework-with-the-microsoft-unit-test-framework-for-managed-code.md)  
   
--   [Écriture de tests unitaires pour C/C++ à l’aide du framework de tests unitaires Microsoft pour C++](../test/writing-unit-tests-for-c-cpp-with-the-microsoft-unit-testing-framework-for-cpp.md)  
+-   [Writing Unit tests for C/C++ with the Microsoft Unit Testing Framework for C++](../test/writing-unit-tests-for-c-cpp-with-the-microsoft-unit-testing-framework-for-cpp.md)  
   
-## <a name="set-timeouts-for-unit-tests"></a>Définir des délais d’attente pour les tests unitaires  
- Pour définir un délai d’attente sur une méthode de test :  
+## <a name="set-timeouts-for-unit-tests"></a>Set timeouts for unit tests  
+ To set a timeout on an individual test method:  
   
-```c#  
+```csharp  
 [TestMethod]  
 [Timeout(2000)]  // Milliseconds  
 public void My_Test()  
@@ -224,9 +224,9 @@ public void My_Test()
   
 ```  
   
- Pour affecter au délai d’attente la valeur maximale autorisée :  
+ To set the timeout to the maximum allowed:  
   
-```c#  
+```csharp  
 [TestMethod]  
 [Timeout(TestTimeout.Infinite)]  // Milliseconds  
 public void My_Test ()  
@@ -234,76 +234,76 @@ public void My_Test ()
 }  
 ```  
   
-##  <a name="BKMK_Running_tests_in_Test_Explorer"></a> Exécuter des tests dans l’explorateur de tests  
- Quand vous générez le projet de test, les tests s’affichent dans l’explorateur de tests. Si l’explorateur de tests n’est pas visible, sélectionnez **Test** dans le menu Visual Studio et choisissez **Fenêtres**, puis **Explorateur de tests**.  
+##  <a name="BKMK_Running_tests_in_Test_Explorer"></a> Run tests in Test Explorer  
+ When you build the test project, the tests appear in Test Explorer. If Test Explorer is not visible, choose **Test** on the Visual Studio menu, choose **Windows**, and then choose **Test Explorer**.  
   
- ![Explorateur de tests unitaires](../ide/media/ute_failedpassednotrunsummary.png "UTE_FailedPassedNotRunSummary")  
+ ![Unit Test Explorer](../ide/media/ute_failedpassednotrunsummary.png "UTE_FailedPassedNotRunSummary")  
   
- Tandis que vous exécutez, écrivez et réexécutez vos tests, par défaut l’explorateur de tests affiche les résultats par groupes : **Échecs de tests**, **Tests réussis**, **Tests ignorés** et **Tests non exécutés**. Vous pouvez choisir un en-tête de groupe pour ouvrir la vue qui affiche tous les tests de ce groupe.  
+ As you run, write, and rerun your tests, the default view of Test Explorer displays the results in groups of **Failed Tests**, **Passed Tests**, **Skipped Tests** and **Not Run Tests**. You can choose a group heading to open the view that displays all them tests in that group.  
   
- Vous pouvez également filtrer les tests de n’importe quelle vue sur le texte de la zone de recherche au niveau global ou en sélectionnant l’un des filtres prédéfinis. Vous pouvez exécuter une sélection des tests à tout moment. Les résultats d’une série de tests sont immédiatement visibles dans la barre réussite/échec en haut de la fenêtre de l’explorateur. Les détails d’un résultat de méthode de test sont affichés quand vous sélectionnez le test.  
+ You can also filter the tests in any view by matching text in the search box at the global level or by selecting one of the pre-defined filters. You can run any selection of the tests at any time. The results of a test run are immediately apparent in the pass/fail bar at the top of the explorer window. Details of a test method result are displayed when you select the test.  
   
-###  <a name="BKMK_Running_and_viewing_tests_from_the_Test_Explorer_toolbar"></a> Exécuter et afficher des tests  
- La barre d’outils de l’explorateur de tests vous permet de découvrir, d’organiser et d’exécuter les tests qui vous intéressent.  
+###  <a name="BKMK_Running_and_viewing_tests_from_the_Test_Explorer_toolbar"></a> Run and view tests  
+ The Test Explorer toolbar helps you discover, organize, and run the tests that you are interested in.  
   
- ![Exécuter des tests à partir de la barre d’outils de l’explorateur de tests](../test/media/ute_toolbar.png "UTE_ToolBar")  
+ ![Run tests from the Test Explorer toolbar](../test/media/ute_toolbar.png "UTE_ToolBar")  
   
- Vous pouvez choisir **Exécuter tout** pour exécuter tous vos tests ou **Exécuter** pour sélectionner un sous-ensemble de tests à exécuter. Après que vous avez exécuté un ensemble de tests, un résumé de la série de tests s’affiche en bas de la fenêtre Explorateur de tests. Sélectionnez un test pour en afficher les détails dans le volet inférieur. Choisissez **Ouvrir un test** dans le menu contextuel (ou F12) pour afficher le code source du test sélectionné.  
+ You can choose **Run All** to run all your tests, or choose **Run** to choose a subset of tests to run. After you run a set of tests, a summary of the test run appears at the bottom of the Test Explorer window. Select a test to view the details of that test in the bottom pane. Choose **Open Test** from the context menu (Keyboard: F12) to display the source code for the selected test.  
   
- Si les tests individuels n’ont aucune dépendance qui les empêche d’être exécutés dans n’importe quel ordre, activez l’exécution parallèle des tests avec le bouton bascule ![UTE&#95;parallelicon&#45;small](../test/media/ute_parallelicon-small.png "UTE_parallelicon-small") dans la barre d’outils. Cela peut réduire sensiblement le temps nécessaire pour exécuter tous les tests.  
+ If individual tests have no dependencies that prevent them from being run in any order, turn on parallel test execution with the ![UTE&#95;parallelicon&#45;small](../test/media/ute_parallelicon-small.png "UTE_parallelicon-small") toggle button on the toolbar. This can noticeably reduce the time taken to run all the tests.  
   
-###  <a name="BKMK_Running_tests_after_every_build"></a> Exécuter des tests après chaque génération  
+###  <a name="BKMK_Running_tests_after_every_build"></a> Run tests after every build  
   
 > [!WARNING]
->  L’exécution de tests unitaires après chaque génération est prise en charge uniquement dans Visual Studio Enterprise.  
+>  Running unit tests after every build is supported only in Visual Studio Enterprise.  
   
 |||  
 |-|-|  
-|![Exécuter après génération](../test/media/ute_runafterbuild_btn.png "UTE_RunAfterBuild_btn")|Pour exécuter vos tests unitaires après chaque génération locale, choisissez **Test** dans le menu standard, puis **Exécuter les tests après la génération** dans la barre d’outils de l’explorateur de tests.|  
+|![Run after build](../test/media/ute_runafterbuild_btn.png "UTE_RunAfterBuild_btn")|To run your unit tests after each local build, choose **Test** on the standard menu, choose **Run Tests After Build** on the Test Explorer toolbar.|  
   
-###  <a name="BKMK_Filtering_and_grouping_the_test_list"></a> Regrouper et filtrer la liste de tests  
- Quand vous avez un grand nombre de tests, vous pouvez entrer une chaîne dans la zone de recherche de l’explorateur de tests pour filtrer la liste sur la chaîne spécifiée. Vous pouvez limiter votre filtre encore plus en choisissant parmi la liste des filtres.  
+###  <a name="BKMK_Filtering_and_grouping_the_test_list"></a> Filter and group the test list  
+ When you have a large number of tests, you can Type in Test Explorer search box to filter the list by the specified string. You can restrict your filter event more by choosing from the filter list.  
   
- ![Rechercher des catégories de filtre](../test/media/ute_searchfilter.png "UTE_SearchFilter")  
+ ![Search filter categories](../test/media/ute_searchfilter.png "UTE_SearchFilter")  
   
 |||  
 |-|-|  
-|![Bouton du groupe d’explorateur de tests](~/test/media/ute_groupby_btn.png "UTE_GroupBy_btn")|Pour regrouper vos tests par catégorie, choisissez le bouton **Grouper par** .|  
+|![Test Explorer group button](../test/media/ute_groupby_btn.png "UTE_GroupBy_btn")|To group your tests by category, choose the **Group By** button.|  
   
- Pour plus d’informations, consultez [Exécuter des tests unitaires avec l’Explorateur de tests](../test/run-unit-tests-with-test-explorer.md).  
+ For more information, see [Run unit tests with Test Explorer](../test/run-unit-tests-with-test-explorer.md)  
   
-## <a name="qa"></a>Questions et réponses  
- **Q : Comment déboguer des tests unitaires ?**  
+## <a name="qa"></a>Q&A  
+ **Q: How do I debug unit tests?**  
   
- **R :** Utilisez l’explorateur de tests pour démarrer une session de débogage de vos tests. L’exécution pas à pas de votre code avec le débogueur Visual Studio vous conduit de manière transparente à des allers et retours entre les tests unitaires et le projet testé. Pour démarrer le débogage :  
+ **A:** Use Test Explorer to start a debugging session for your tests. Stepping through your code with the Visual Studio debugger seamlessly takes you back and forth between the unit tests and the project under test. To start debugging:  
   
-1.  Dans l’éditeur Visual Studio, définissez un point d’arrêt dans une ou plusieurs méthodes de test que vous souhaitez déboguer.  
+1.  In the Visual Studio editor, set a breakpoint in one or more test methods that you want to debug.  
   
     > [!NOTE]
-    >  Comme les méthodes de test peuvent s’exécuter dans n’importe quel ordre, définissez les points d’arrêt dans toutes les méthodes de test que vous souhaitez déboguer.  
+    >  Because test methods can run in any order, set breakpoints in all the test methods that you want to debug.  
   
-2.  Dans l’explorateur de tests, sélectionnez les méthodes de test, puis choisissez **Déboguer les tests sélectionnés** dans le menu contextuel.  
+2.  In Test Explorer, select the test methods and then choose **Debug Selected Tests** from the shortcut menu.  
   
- En savoir plus sur le [débogage des tests unitaires](../debugger/debugging-in-visual-studio.md).  
+ Learn more details about [debugging unit tests](../debugger/debugging-in-visual-studio.md).  
   
- **Q : Si j’utilise le développement axé sur des tests, comment générer du code à partir de mes tests ?**  
+ **Q: If I'm using TDD, how do I generate code from my tests?**  
   
- **R :** Utilisez IntelliSense pour générer des classes et méthodes dans votre code de projet. Écrivez une instruction dans une méthode de test qui appelle la classe ou la méthode que vous souhaitez générer, puis ouvrez le menu IntelliSense dans le cadre de l’appel. Si l’appel concerne un constructeur de la nouvelle classe, choisissez **Générer un nouveau type** dans le menu et suivez l’Assistant pour insérer la classe dans votre projet de code. Si l’appel concerne une méthode, choisissez **Générer une nouvelle méthode** à partir du menu IntelliSense.  
+ **A:** Use IntelliSense to generate classes and methods in your project code. Write a statement in a test method that calls the class or method that you want to generate, then open the IntelliSense menu under the call. If the call is to a constructor of the new class, choose **Generate new type** from the menu and follow the wizard to insert the class in your code project. If the call is to a method, choose **Generate new method** from the IntelliSense menu.  
   
- ![Menu Intellisense de génération de stub de méthode](../test/media/ute_generatemethodstubintellisense.png "UTE_GenerateMethodStubIntellisense")  
+ ![Generate Method Stub Intellisense Menu](../test/media/ute_generatemethodstubintellisense.png "UTE_GenerateMethodStubIntellisense")  
   
- **Q : Puis-je créer des tests unitaires qui utilisent plusieurs groupes de données en entrée pour exécuter le test ?**  
+ **Q: Can I create unit tests that take multiple sets of data as input to run the test?**  
   
- **R :** Oui. Les*méthodes de test pilotées par les données* vous permettent de tester une plage de valeurs avec une méthode de test unitaire unique. Utilisez un attribut `DataSource` pour la méthode de test qui spécifie la source de données et la table contenant les valeurs des variables que vous voulez tester.  Dans le corps de la méthode, vous affectez les valeurs de ligne aux variables à l’aide de l’indexeur `TestContext.DataRow[`*ColumnName*`]` .  
+ **A:** Yes. *Data-driven test methods* let you test a range of values with a single unit test method. Use a `DataSource` attribute for the test method that specifies the data source and table that contains the variable values that you want to test.  In the method body, you assign the row values to variables using the `TestContext.DataRow[`*ColumnName*`]` indexer.  
   
 > [!NOTE]
->  Ces procédures s’appliquent uniquement aux méthodes de test que vous écrivez à l’aide du framework de tests unitaires Microsoft pour le code managé. Si vous utilisez un autre framework, consultez sa documentation pour obtenir des fonctionnalités équivalentes.  
+>  These procedures apply only to test methods that you write by using the Microsoft unit test framework for managed code. If you're using a different framework, consult the framework documentation for equivalent functionality.  
   
- Par exemple, supposons que nous ajoutions une méthode superflue à la classe `CheckingAccount` nommée `AddIntegerHelper`. `AddIntegerHelper` ajoute deux entiers.  
+ For example, assume we add an unnecessary method to the `CheckingAccount` class that is named `AddIntegerHelper`. `AddIntegerHelper` adds two integers.  
   
- Pour créer un test piloté par les données pour la méthode `AddIntegerHelper`, nous créons d'abord une base de données Access intitulée `AccountsTest.accdb` et une table nommée `AddIntegerHelperData`. La table `AddIntegerHelperData` définit les colonnes pour spécifier les premier et deuxième opérandes de l’addition, et une colonne pour spécifier le résultat attendu. Nous remplissons un certain nombre de lignes avec les valeurs appropriées.  
+ To create a data-driven test for the `AddIntegerHelper` method, we first create an Access database named `AccountsTest.accdb` and a table named `AddIntegerHelperData`. The `AddIntegerHelperData` table defines columns to specify the first and second operands of the addition and a column to specify the expected result. We fill a number of rows with appropriate values.  
   
-```c#  
+```csharp  
   
 [DataSource(  
     @"Provider=Microsoft.ACE.OLEDB.12.0;Data Source=C:\Projects\MyBank\TestData\AccountsTest.accdb",   
@@ -322,43 +322,43 @@ public void AddIntegerHelper_DataDrivenValues_AllShouldPass()
   
 ```  
   
- La méthode attribuée s’exécute une fois pour chaque ligne de la table. L’explorateur de tests indique un échec du test de la méthode si l’une des itérations échoue. Le volet Détails des résultats du test de la méthode vous indique le statut réussite/échec pour chaque ligne de données.  
+ The attributed method runs once for each row in the table. Test Explorer reports a test failure for the method if any of the iterations fail. The test results detail pane for the method shows you the pass/fail status method for each row of data.  
   
- En savoir plus sur les [tests unitaires pilotés par les données](../test/how-to-create-a-data-driven-unit-test.md).  
+ Learn more about [data-driven unit tests](../test/how-to-create-a-data-driven-unit-test.md).  
   
- **Q : Puis-je afficher la quantité de code testée par mes tests unitaires ?**  
+ **Q: Can I view how much of my code is tested by my unit tests?**  
   
- **R :** Oui. Vous pouvez déterminer la quantité de code qui est réellement testée par vos tests unitaires à l’aide de l’outil de couverture du code Visual Studio. Les langages natifs et managés ainsi que tous les frameworks de tests unitaires qui peuvent être exécutés par le framework de tests unitaires sont pris en charge.  
+ **A:** Yes. You can determine the amount of your code that is actually being tested by your unit tests by using the Visual Studio code coverage tool. Native and managed languages and all unit test frameworks that can be run by the Unit Test Framework are supported.  
   
- Vous pouvez exécuter la couverture de code sur les tests sélectionnés ou sur tous les tests d’une solution. La fenêtre Résultats de la couverture du code affiche le pourcentage des blocs du code du produit qui ont été testés par ligne, fonction, classe, espace de noms et module.  
+ You can run code coverage on selected tests or on all tests in a solution. The Code Coverage Results window displays the percentage of the blocks of product code that were exercised by line, function, class, namespace and module.  
   
- Pour exécuter la couverture du code pour les méthodes de test dans une solution, choisissez **Tests** dans le menu Visual Studio, puis **Analyser la couverture du code**.  
+ To run code coverage for test methods in a solution, choose **Tests** on the Visual Studio menu and then choose **Analyze code coverage**.  
   
- Les résultats de la couverture apparaissent dans la fenêtre Résultats de la couverture du code.  
+ Coverage results appear in the Code Coverage Results window.  
   
- ![Résultats de la couverture du code](../test/media/ute_codecoverageresults.png "UTE_CodeCoverageResults")  
+ ![Code coverage results](../test/media/ute_codecoverageresults.png "UTE_CodeCoverageResults")  
   
- Découvrez plus en détail la [couverture du code](../test/using-code-coverage-to-determine-how-much-code-is-being-tested.md).  
+ Learn more about [code coverage](../test/using-code-coverage-to-determine-how-much-code-is-being-tested.md) .  
   
- **Q : Comment puis-je tester des méthodes de mon code qui ont des dépendances externes ?**  
+ **Q: How can I test methods in my code that have external dependencies?**  
   
- **R :** Oui. Si vous disposez de Visual Studio Enterprise, Microsoft Fakes peut être utilisé avec les méthodes de test que vous écrivez à l’aide des frameworks de tests unitaires pour le code managé.  
+ **A:** Yes. If you have Visual Studio Enterprise, Microsoft Fakes can be used with test methods that you write by using unit test frameworks for managed code.  
   
- Microsoft Fakes utilise deux approches pour créer des classes de substitution pour les dépendances externes.  
+ Microsoft Fakes uses two approaches to create substitute classes for external dependencies.  
   
-1.  Les*stubs* génèrent des classes de substitution dérivées de l’interface parente de la classe de dépendance cible. Les méthodes stub peuvent être remplacées par des méthodes virtuelles publiques de la classe cible.  
+1.  *Stubs* generate substitute classes derived from the parent interface of the target dependency class. Stub methods can be substituted for public virtual methods of the target class.  
   
-2.  Les*shims* utilisent l’instrumentation du runtime pour rediriger les appels à une méthode cible vers une méthode shim de substitution pour les méthodes non virtuelles.  
+2.  *Shims* use runtime instrumentation to divert calls to a target method to a substitute shim method for non-virtual methods.  
   
- Dans les deux approches, vous utilisez les délégués générés des appels à la méthode de dépendance pour spécifier le comportement souhaité dans la méthode de test.  
+ In both approaches, you use the generated delegates of calls to the dependency method to specify the behavior that you want in the test method.  
   
- En savoir plus sur l’ [isolement des méthodes de test unitaire avec Microsoft Fakes](../test/isolating-code-under-test-with-microsoft-fakes.md).  
+ Learn more about [isolating unit test methods with Microsoft Fakes](../test/isolating-code-under-test-with-microsoft-fakes.md).  
   
- **Q : Puis-je utiliser d’autres frameworks de tests unitaires pour créer des tests unitaires ?**  
+ **Q: Can I use other unit test frameworks to create unit tests?**  
   
- **R :** Oui, suivez ces étapes pour [rechercher et installer d’autres frameworks](../test/install-third-party-unit-test-frameworks.md). Après le redémarrage de Visual Studio, rouvrez votre solution pour créer vos tests unitaires, puis sélectionnez vos frameworks installés ici :  
+ **A:** Yes, follow these steps to [find and install other frameworks](../test/install-third-party-unit-test-frameworks.md). After you restart Visual Studio, reopen your solution to create your unit tests, and then select your installed frameworks here:  
   
- ![Sélectionnez un autre framework de tests unitaires installée](../test/media/createunittestsdialogextensions.png "CreateUnitTestsDialogExtensions")  
+ ![Select other installed unit test framework](../test/media/createunittestsdialogextensions.png "CreateUnitTestsDialogExtensions")  
   
- Vos stubs de test unitaire seront créés à l’aide du framework sélectionné.
+ Your unit test stubs will be created using the selected framework.
 

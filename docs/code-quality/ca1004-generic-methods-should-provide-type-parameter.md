@@ -1,68 +1,84 @@
 ---
-title: "CA1004&#160;: Les m&#233;thodes g&#233;n&#233;riques doivent fournir un param&#232;tre de type | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-devops-test"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "CA1004"
-  - "GenericMethodsShouldProvideTypeParameter"
-helpviewer_keywords: 
-  - "CA1004"
-  - "GenericMethodsShouldProvideTypeParameter"
+title: 'CA1004: Generic methods should provide type parameter | Microsoft Docs'
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology:
+- vs-devops-test
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords:
+- CA1004
+- GenericMethodsShouldProvideTypeParameter
+helpviewer_keywords:
+- GenericMethodsShouldProvideTypeParameter
+- CA1004
 ms.assetid: 38755f6a-fb45-4bf2-932e-0354ad826499
 caps.latest.revision: 17
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
-caps.handback.revision: 17
----
-# CA1004&#160;: Les m&#233;thodes g&#233;n&#233;riques doivent fournir un param&#232;tre de type
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
+author: stevehoag
+ms.author: shoag
+manager: wpickett
+translation.priority.ht:
+- cs-cz
+- de-de
+- es-es
+- fr-fr
+- it-it
+- ja-jp
+- ko-kr
+- pl-pl
+- pt-br
+- ru-ru
+- tr-tr
+- zh-cn
+- zh-tw
+ms.translationtype: HT
+ms.sourcegitcommit: eb5c9550fd29b0e98bf63a7240737da4f13f3249
+ms.openlocfilehash: 2b613bdd3f98b142f2e8f9fd4fe2a99560dee4bb
+ms.contentlocale: fr-fr
+ms.lasthandoff: 08/30/2017
 
+---
+# <a name="ca1004-generic-methods-should-provide-type-parameter"></a>CA1004: Generic methods should provide type parameter
 |||  
 |-|-|  
 |TypeName|GenericMethodsShouldProvideTypeParameter|  
 |CheckId|CA1004|  
-|Catégorie|Microsoft.CSharp|  
-|Modification avec rupture|Oui|  
+|Category|Microsoft.Design|  
+|Breaking Change|Breaking|  
   
-## Cause  
- La signature de paramètre d'une méthode générique visible de l'extérieur ne contient pas de types correspondant à tous les paramètres de type de la méthode.  
+## <a name="cause"></a>Cause  
+ The parameter signature of an externally visible generic method does not contain types that correspond to all the type parameters of the method.  
   
-## Description de la règle  
- L'inférence désigne la manière dont l'argument de type d'une méthode générique est déterminé par le type d'argument passé à la méthode, au lieu d'utiliser la spécification explicite de l'argument de type.  Pour activer l'inférence, la signature de paramètre d'une méthode générique doit contenir un paramètre du même type que le paramètre de type de la méthode.  Dans ce cas, il n'est pas nécessaire de spécifier l'argument de type.  Lorsque vous utilisez l'inférence pour tous les paramètres de type, la syntaxe d'appel aux méthodes d'instance génériques et non génériques est identique.  Cela simplifie l'utilisation des méthodes génériques.  
+## <a name="rule-description"></a>Rule Description  
+ Inference is how the type argument of a generic method is determined by the type of argument that is passed to the method, instead of by the explicit specification of the type argument. To enable inference, the parameter signature of a generic method must include a parameter that is of the same type as the type parameter for the method. In this case, the type argument does not have to be specified. When you use inference for all type parameters, the syntax for calling generic and nongeneric instance methods is identical. This simplifies the usability of generic methods.  
   
-## Comment corriger les violations  
- Pour corriger une violation de cette règle, modifiez le design afin que la signature de paramètre contienne un type identique pour chacun des paramètres de type de la méthode.  
+## <a name="how-to-fix-violations"></a>How to Fix Violations  
+ To fix a violation of this rule, change the design so that the parameter signature contains the same type for each type parameter of the method.  
   
-## Quand supprimer les avertissements  
- Ne supprimez aucun avertissement de cette règle.  La fourniture de génériques dans une syntaxe facile à comprendre et à utiliser réduit le délai d'apprentissage nécessaire et augmente le taux d'adoption de nouvelles bibliothèques.  
+## <a name="when-to-suppress-warnings"></a>When to Suppress Warnings  
+ Do not suppress a warning from this rule. Providing generics in a syntax that is easy to understand and use reduces the time that is required to learn and increases the adoption rate of new libraries.  
   
-## Exemple  
- L'exemple suivant illustre la syntaxe d'appel à deux méthodes génériques.  L'argument de type pour `InferredTypeArgument` est déduit, et l'argument de type pour `NotInferredTypeArgument` doit être spécifié explicitement.  
+## <a name="example"></a>Example  
+ The following example shows the syntax for calling two generic methods. The type argument for `InferredTypeArgument` is inferred, and the type argument for `NotInferredTypeArgument` must be explicitly specified.  
   
- [!code-vb[FxCop.Design.Inference#1](../code-quality/codesnippet/VisualBasic/ca1004-generic-methods-should-provide-type-parameter_1.vb)]
- [!code-cs[FxCop.Design.Inference#1](../code-quality/codesnippet/CSharp/ca1004-generic-methods-should-provide-type-parameter_1.cs)]  
+ [!code-vb[FxCop.Design.Inference#1](../code-quality/codesnippet/VisualBasic/ca1004-generic-methods-should-provide-type-parameter_1.vb)] [!code-csharp[FxCop.Design.Inference#1](../code-quality/codesnippet/CSharp/ca1004-generic-methods-should-provide-type-parameter_1.cs)]  
   
-## Règles connexes  
- [CA1005 : Éviter les paramètres excessifs sur les types génériques](../code-quality/ca1005-avoid-excessive-parameters-on-generic-types.md)  
+## <a name="related-rules"></a>Related Rules  
+ [CA1005: Avoid excessive parameters on generic types](../code-quality/ca1005-avoid-excessive-parameters-on-generic-types.md)  
   
- [CA1010 : Les collections doivent implémenter une interface générique](../code-quality/ca1010-collections-should-implement-generic-interface.md)  
+ [CA1010: Collections should implement generic interface](../code-quality/ca1010-collections-should-implement-generic-interface.md)  
   
- [CA1000 : Ne pas déclarer de membres statiques sur les types génériques](../code-quality/ca1000-do-not-declare-static-members-on-generic-types.md)  
+ [CA1000: Do not declare static members on generic types](../code-quality/ca1000-do-not-declare-static-members-on-generic-types.md)  
   
- [CA1002 : Ne pas exposer de listes génériques](../Topic/CA1002:%20Do%20not%20expose%20generic%20lists.md)  
+ [CA1002: Do not expose generic lists](../code-quality/ca1002-do-not-expose-generic-lists.md)  
   
- [CA1006 : Ne pas imbriquer les types génériques dans les signatures de membre](../code-quality/ca1006-do-not-nest-generic-types-in-member-signatures.md)  
+ [CA1006: Do not nest generic types in member signatures](../code-quality/ca1006-do-not-nest-generic-types-in-member-signatures.md)  
   
- [CA1003 : Utiliser les instances du gestionnaire d'événements génériques](../Topic/CA1003:%20Use%20generic%20event%20handler%20instances.md)  
+ [CA1003: Use generic event handler instances](../code-quality/ca1003-use-generic-event-handler-instances.md)  
   
- [CA1007 : Utiliser des classes génériques lorsque cela est approprié](../code-quality/ca1007-use-generics-where-appropriate.md)  
+ [CA1007: Use generics where appropriate](../code-quality/ca1007-use-generics-where-appropriate.md)  
   
-## Voir aussi  
- [Génériques](/dotnet/csharp/programming-guide/generics/index)
+## <a name="see-also"></a>See Also  
+ [Generics](/dotnet/csharp/programming-guide/generics/index)

@@ -27,24 +27,24 @@ translation.priority.mt:
 - pl-pl
 - pt-br
 - tr-tr
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 47057e9611b824c17077b9127f8d2f8b192d6eb8
-ms.openlocfilehash: 1600207e0c504f4b4dcbf620e92bcc06e14ec035
+ms.translationtype: HT
+ms.sourcegitcommit: c00adbbabf0d3b82acb17f4a269dfc693246bc69
+ms.openlocfilehash: 4401606f97452de235b8a2d406451e5481518006
 ms.contentlocale: fr-fr
-ms.lasthandoff: 05/13/2017
+ms.lasthandoff: 08/01/2017
 
 ---
 # <a name="configure-unit-tests-by-using-a-runsettings-file"></a>Configurer des tests unitaires à l'aide d'un fichier .runsettings
-Les tests unitaires dans Visual Studio peuvent être configurés à l’aide d’un fichier *.runsettings. (Le nom du fichier n’a pas d’importance, à condition que l’extension soit « .runsettings ».) Par exemple, vous pouvez modifier le .NET Framework sur lequel les tests sont exécutés, le répertoire dans lequel les résultats des tests sont remis et les données collectées pendant une série de tests.  
+Les tests unitaires dans Visual Studio peuvent être configurés à l’aide d’un fichier \*.runsettings. (Le nom du fichier n’a pas d’importance, à condition que l’extension soit « .runsettings ».) Par exemple, vous pouvez modifier le .NET Framework sur lequel les tests sont exécutés, le répertoire dans lequel les résultats des tests sont remis et les données collectées pendant une série de tests.  
   
- Si vous ne voulez pas appliquer de configuration spéciale, vous n’avez pas besoin d’un fichier *.runsettings. L’utilisation la plus fréquente consiste à personnaliser la [couverture du code](../test/customizing-code-coverage-analysis.md).  
+ Si vous ne voulez pas appliquer de configuration spéciale, vous n’avez pas besoin d’un fichier \*.runsettings. L’utilisation la plus fréquente consiste à personnaliser la [couverture du code](../test/customizing-code-coverage-analysis.md).  
   
 > [!NOTE]
 >  **.runsettings et .testsettings**  
 >   
->  Il existe deux types de fichiers pour configurer des tests. Les fichiers *.runsettings sont utilisés pour les tests unitaires. Les fichiers \*.testsettings sont utilisés pour les [tests d’environnement lab](/devops-test-docs/test/specifying-test-settings-for-visual-studio-tests), les tests de charge et de performance web, ainsi que la personnalisation de certains types d’adaptateur de données de diagnostic tels qu’IntelliTrace et les adaptateurs de journaux des événements.  
+>  Il existe deux types de fichiers pour configurer des tests. Les fichiers \*.runsettings sont utilisés pour les tests unitaires. Les fichiers \*.testsettings sont utilisés pour les [tests d’environnement lab](/devops-test-docs/test/specifying-test-settings-for-visual-studio-tests), les tests de charge et de performance web, ainsi que la personnalisation de certains types d’adaptateur de données de diagnostic tels qu’IntelliTrace et les adaptateurs de journaux des événements.  
 >   
->  Dans les éditions précédentes de Visual Studio jusqu’à la version 2010, vous pouvez aussi personnaliser les tests unitaires à l’aide de fichiers *.testsettings. Cela est toujours possible, mais les tests s’exécutent plus lentement que si vous utilisez les configurations équivalentes dans un fichier \*.runsettings.  
+>  Dans les éditions précédentes de Visual Studio jusqu’à la version 2010, vous pouvez aussi personnaliser les tests unitaires à l’aide de fichiers \*.testsettings. Cela est toujours possible, mais les tests s’exécutent plus lentement que si vous utilisez les configurations équivalentes dans un fichier \*.runsettings.  
   
 ## <a name="customizing-tests-with-a-runsettings-file"></a>Personnalisation des tests avec un fichier .runsettings  
   
@@ -61,7 +61,7 @@ Les tests unitaires dans Visual Studio peuvent être configurés à l’aide d�
  ![Activation d’un fichier de paramètres d’exécution](../test/media/runsettings-1.png "RunSettings-1")  
   
 ##  <a name="example"></a> Copier cet exemple de fichier .runsettings  
- Voici un fichier *.runsettings classique. Chaque élément du fichier est facultatif, car chaque valeur est définie par défaut.  
+ Voici un fichier \*.runsettings classique. Chaque élément du fichier est facultatif, car chaque valeur est définie par défaut.  
   
 ```xml  
 <?xml version="1.0" encoding="utf-8"?>  

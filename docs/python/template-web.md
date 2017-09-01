@@ -1,12 +1,13 @@
 ---
 title: "Modèle de projet web pour Python dans Visual Studio | Microsoft Docs"
 ms.custom: 
-ms.date: 5/8/2017
+ms.date: 7/13/2017
 ms.prod: visual-studio-dev15
 ms.reviewer: 
 ms.suite: 
 ms.technology:
 - devlang-python
+ms.devlang: python
 ms.tgt_pltfrm: 
 ms.topic: article
 ms.assetid: 401e7725-8be5-4e67-862c-bf0690a529e3
@@ -14,45 +15,31 @@ caps.latest.revision: 11
 author: kraigb
 ms.author: kraigb
 manager: ghogen
-translation.priority.ht:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 85576806818a6ed289c2f660f87b5c419016c600
-ms.openlocfilehash: 20edb7a53adf400fba94556e659b4215a0060c1b
+ms.translationtype: HT
+ms.sourcegitcommit: 6d25db4639f2c8391c1e32542701ea359f560178
+ms.openlocfilehash: e46dd1012d220015b1840c0c50332dbe45e43a1e
 ms.contentlocale: fr-fr
-ms.lasthandoff: 05/09/2017
+ms.lasthandoff: 07/18/2017
 
 ---
 
 # <a name="python-web-project-templates"></a>Modèles de projet Web Python
 
-La prise en charge de Python dans Visual Studio permet le développement de projets web dans des infrastructures telles que Bottle, Django et Flask. Ceci inclut des modèles de projet et un lanceur de débogage qui peuvent être configurés pour gérer différentes infrastructures. En revanche, Visual Studio n’intègre pas les infrastructures proprement dites. Vous devrez installer ces dernières séparément en cliquant avec le bouton droit sur le projet et en sélectionnant **Python > Install/upgrade framework** (Installer/mettre à niveau une infrastructure).
+Python dans Visual Studio prend en charge le développement de projets web dans des frameworks telles que Bottle, Django et Flask, via des modèles de projet et un lanceur de débogage qui peuvent être configurés pour gérer différents frameworks. En revanche, Visual Studio n’intègre pas les frameworks proprement dits. Vous devrez installer ces dernières séparément en cliquant avec le bouton droit sur le projet et en sélectionnant **Python > Install/upgrade framework** (Installer/mettre à niveau un framework).
 
-Chaque modèle (accessible par le biais des commandes **Fichier > Nouveau > Projet...**) lance un serveur web avec un port local sélectionné de manière aléatoire, ouvre votre navigateur par défaut lors du débogage et autorise une publication directe sur [Microsoft Azure](http://www.azure.com). Des modèles sont fournis pour Bottle, Flask et Django, et vous pouvez utiliser le modèle générique « Projet Web » pour d’autres infrastructures telles que Pyramid.
+Chaque modèle (accessible par le biais des commandes **Fichier > Nouveau > Projet...**) lance un serveur web avec un port local sélectionné de manière aléatoire, ouvre votre navigateur par défaut lors du débogage et autorise une publication directe sur [Microsoft Azure](http://www.azure.com). Des modèles sont fournis pour Bottle, Flask et Django, et vous pouvez utiliser le modèle générique « Projet web » pour d’autres frameworks tels que Pyramid.
 
-![Nouveaux modèles de projet Web](~/python/media/template-web-new-project.png)
+![Nouveaux modèles de projet web](media/template-web-new-project.png)
 
 Les modèles Bottle, Flask et Django intègrent tous un site de démarrage avec plusieurs pages et fichiers statiques. Ce code est suffisant pour exécuter et déboguer le serveur localement (ce qui nécessite l’obtention de certains paramètres auprès de l’environnement) et pour effectuer un déploiement sur Microsoft Azure (exigeant la fourniture d’un objet [d’application WSGI](http://www.python.org/dev/peps/pep-3333/)).
 
-Lorsque vous créerez un projet à partir d’un modèle propre à l’infrastructure, une boîte de dialogue s’affichera pour vous aider à installer les packages nécessaires à l’aide de pip. Nous vous recommandons également d’utiliser un [environnement virtuel](python-environments.md#virtual-environments) pour les projets Web afin que les dépendances appropriées soient incluses lorsque vous publiez votre site web :
+Quand vous créez un projet à partir d’un modèle propre au framework, une boîte de dialogue s’affiche pour vous permettre d’installer les packages nécessaires à l’aide de pip. Nous vous recommandons également d’utiliser un [environnement virtuel](python-environments.md#virtual-environments) pour les projets Web afin que les dépendances appropriées soient incluses lorsque vous publiez votre site web :
 
-![Boîte de dialogue installant les packages nécessaires pour un modèle de projet](~/python/media/template-web-requirements-txt-wizard.png)
+![Boîte de dialogue installant les packages nécessaires pour un modèle de projet](media/template-web-requirements-txt-wizard.png)
 
-Lors du déploiement sur Microsoft Azure App Service, vous devrez sélectionner une version de Python comme [extension de site](https://aka.ms/PythonOnAppService) et installer manuellement les packages. En outre, étant donné qu’Azure App Service n’installe **pas** automatiquement les packages à partir d’un fichier `requirements.txt` en cas de déploiement à partir de Visual Studio, suivez les instructions de configuration fournies sur la page [aka.ms/PythonOnAppService](https://aka.ms/PythonOnAppService).
+Lors du déploiement sur Microsoft Azure App Service, sélectionnez une version de Python comme [extension de site](https://aka.ms/PythonOnAppService) et installez manuellement les packages. En outre, étant donné qu’Azure App Service n’installe **pas** automatiquement les packages à partir d’un fichier `requirements.txt` en cas de déploiement à partir de Visual Studio, suivez les instructions de configuration fournies sur la page [aka.ms/PythonOnAppService](https://aka.ms/PythonOnAppService).
 
-En revanche, Microsoft Azure Cloud Service prend en charge le fichier `requirements.txt`. Pour plus d’informations, consultez l’article [Projets Azure Cloud Service](template-azure-cloud-service.md).
+Microsoft Azure Cloud Service *prend* en charge le fichier `requirements.txt`. Pour plus d’informations, consultez l’article [Projets Azure Cloud Service](template-azure-cloud-service.md).
 
 Pour découvrir une présentation des projets Web Python, visionnez la vidéo [Getting Started with PTVS, Part 6: Web sites](https://youtu.be/FJx5mutt1uk?list=PLReL099Y5nRdLgGAdrb_YeTdEnd23s6Ff) (Prise en main de PTVS, Partie 6 : Sites web) (youtube.com, 3 mn 10 s).
 
@@ -62,19 +49,19 @@ Pour découvrir une présentation des projets Web Python, visionnez la vidéo [G
 
 Quand un projet web est démarré à des fins de débogage, Visual Studio démarre le serveur web localement et ouvre votre navigateur par défaut au niveau de cette adresse et de ce port. Pour spécifier des options supplémentaires, cliquez avec le bouton droit sur le projet, sélectionnez **Propriétés**, puis sélectionnez l’onglet **Web Launcher** (Lanceur web) :
 
-  ![Propriétés du lanceur web pour le modèle web générique](~/python/media/template-web-launcher-properties.png)
+  ![Propriétés du lanceur web pour le modèle web générique](media/template-web-launcher-properties.png)
 
 Dans le groupe **Débogage** :
 
-- **Chemins de recherche**, **Arguments de script**, **Interpreter Arguments** (Arguments d’interpréteur) et **Interpreter Path** (Chemin d’interpréteur) : ces valeurs sont identiques à celles du [débogage standard](debugging.md).
-- **URL de lancement** : spécifie l’URL qui s’ouvrira dans votre navigateur. Ce champ est défini sur `localhost` par défaut.
-- **Numéro de port** : port à utiliser si aucun n’est spécifié dans l’URL (Visual Studio sélectionne automatiquement un port par défaut). Ceci vous permet de remplacer la valeur par défaut de la variable d’environnement `SERVER_PORT`, qui est utilisée par les modèles pour configurer le port écouté par le serveur de débogage local.
+- **Chemins de recherche**, **Arguments de script**, **Arguments de l’interpréteur** et **Chemin de l’interpréteur** : ces options sont identiques à celles du [débogage standard](debugging.md)
+- **URL de lancement** : spécifie l’URL qui est ouverte dans votre navigateur. Ce champ est défini sur `localhost` par défaut.
+- **Numéro de port** : port à utiliser si aucun n’est spécifié dans l’URL (Visual Studio sélectionne automatiquement un port par défaut). Ce paramètre vous permet de remplacer la valeur par défaut de la variable d’environnement `SERVER_PORT`, qui est utilisée par les modèles pour configurer le port écouté par le serveur de débogage local.
 
-Les propriétés des groupes **Run Server Command** (Commande du serveur d’exécution) et **Debug Server Command** (Commande du serveur de débogage) (ce dernier apparaissant sous le contenu présenté par l’image) déterminent la façon dont le serveur web est lancé. Étant donné que de nombreuses infrastructures nécessitent l’utilisation d’un script à l’extérieur du projet actuel, il est possible de configurer le script à cet emplacement et de transmettre le nom du module de démarrage sous la forme d’un paramètre.
+Les propriétés des groupes **Run Server Command** (Commande du serveur d’exécution) et **Debug Server Command** (Commande du serveur de débogage) (ce dernier apparaissant sous le contenu présenté par l’image) déterminent la façon dont le serveur web est lancé. Étant donné que de nombreux frameworks nécessitent l’utilisation d’un script à l’extérieur du projet actuel, il est possible de configurer le script à cet emplacement et de transmettre le nom du module de démarrage sous la forme d’un paramètre.
 
 - **Commande** : il peut s’agir d’un script Python (fichier `*.py`), d’un nom de module (par exemple, `python.exe -m module_name`) ou d’une simple ligne de code (telle que `python.exe -c "code"`). La valeur indiquée dans la zone déroulante indique lequel de ces types est souhaité.
 - **Arguments** : ces derniers sont transmis sur la ligne de commande derrière la commande.
-- **Environnement** : liste de paires `NAME=VALUE` séparées par un saut de ligne spécifiant les variables d’environnement. Ces paires sont définies après toutes les propriétés susceptibles de modifier l’environnement, telles que le numéro de port et les chemins de recherche, et peuvent donc remplacer ces valeurs.
+- **Environnement** : liste de paires `NAME=VALUE` séparées par un saut de ligne spécifiant les variables d’environnement. Ces variables sont définies après toutes les propriétés susceptibles de modifier l’environnement, telles que le numéro de port et les chemins de recherche, et peuvent donc remplacer ces valeurs.
 
 Toute propriété de projet ou variable d’environnement peut être spécifiée avec la syntaxe MSBuild, par exemple : `$(StartupFile) --port $(SERVER_PORT)`.
 `$(StartupFile)` est le chemin d’accès relatif au fichier de démarrage, et `{StartupModule}` est le nom importable du fichier de démarrage. `$(SERVER_HOST)` et `$(SERVER_PORT)` sont des variables d’environnement normales qui sont définies par les propriétés **URL de lancement** et **Numéro de port**, soit automatiquement, soit par la propriété **Environnement**.
@@ -99,7 +86,7 @@ L’option `--reload` n’est pas recommandée en cas d’utilisation de Visual 
 
 ### <a name="sample-pyramid-configuration"></a>Exemple de configuration Pyramid
 
-Pour l’instant, la méthode de création recommandée pour les applications Pyramid consiste à utiliser l’outil en ligne de commande `pcreate`. Une fois qu’une application a été créée, elle peut être importée à l’aide du modèle [From Existing Python Code](python-projects.md#creating-a-project-from-existing-files) (À partir d’un code Python existant). Ensuite, sélectionnez la personnalisation **Generic Web Project** (Projet Web générique) pour configurer les options. Ces paramètres reposent sur l’hypothèse que Pyramid est installé dans un environnement virtuel à l’emplacement `..\env`.
+Pour l’instant, la méthode de création recommandée pour les applications Pyramid consiste à utiliser l’outil en ligne de commande `pcreate`. Une fois qu’une application a été créée, elle peut être importée à l’aide du modèle [From Existing Python Code](python-projects.md#creating-a-project-from-existing-files) (À partir d’un code Python existant). Après cela, sélectionnez la personnalisation **Projet web générique** pour configurer les options. Ces paramètres reposent sur l’hypothèse que Pyramid est installé dans un environnement virtuel à l’emplacement `..\env`.
 
 - Groupe **Débogage** :
     - **Port du serveur** : 6543 (ou tout port configuré dans les fichiers .ini)
@@ -118,23 +105,23 @@ Pour l’instant, la méthode de création recommandée pour les applications Py
 
 ### <a name="other-configurations"></a>Autres configurations
 
-Si vous disposez de paramètres pour une autre infrastructure que vous souhaitez partager, ou si vous souhaitez demander des paramètres pour une autre infrastructure, signalez le [problème sur GitHub](https://github.com/Microsoft/PTVS/issues).
+Si vous disposez de paramètres pour un autre framework que vous souhaitez partager, ou si vous souhaitez demander des paramètres pour un autre framework, signalez le [problème sur GitHub](https://github.com/Microsoft/PTVS/issues).
 
 ## <a name="publishing-to-azure-app-service"></a>Publication sur Azure App Service
 
 Vous disposez de deux méthodes principales pour effectuer une publication sur Azure App Service. La première consiste à utiliser le déploiement à partir du contrôle de code source de la même façon que pour d’autres langages, comme décrit dans la [documentation Azure](http://azure.microsoft.com/en-us/documentation/articles/web-sites-publish-source-control/). Pour effectuer une publication directement à partir de Visual Studio, cliquez avec le bouton droit sur le projet, puis sélectionnez **Publier** :
 
-![Commande Publier du menu contextuel d’un projet](~/python/media/template-web-publish-command.png)
+![Commande Publier du menu contextuel d’un projet](media/template-web-publish-command.png)
 
 Une fois que vous avez sélectionné la commande, un Assistant vous guide tout au long de la création d’un site web ou de l’importation de paramètres de publication, de l’aperçu des fichiers modifiés et de la publication sur un serveur distant.
 
-Lorsque vous créerez un site sur App Service, vous devrez installer Python et tous les packages dont dépend votre site. Vous pouvez commencer par publier votre site, mais il ne s’exécutera qu’une fois que vous aurez configuré Python.
+Quand vous créez un site sur App Service, vous devez installer Python et tous les packages dont dépend votre site. Vous pouvez commencer par publier votre site, mais il ne s’exécutera qu’une fois que vous aurez configuré Python.
 
-Pour installer Python sur App Service, nous vous recommandons d’utiliser les [extensions de site](http://www.siteextensions.net/packages?q=Tags%3A%22python%22) (siteextensions.net). Il s’agit de copies des [versions officielles](https://www.python.org) de Python, optimisées et repackagées pour Azure App Service.
+Pour installer Python sur App Service, nous vous recommandons d’utiliser les [extensions de site](http://www.siteextensions.net/packages?q=Tags%3A%22python%22) (siteextensions.net). Ces extensions sont des copies des [versions officielles](https://www.python.org) de Python, optimisées et repackagées pour Azure App Service.
 
-Vous pouvez déployer une extension de site par le biais du [Portail Azure](https://portal.azure.com/) en utilisant le panneau **Outils de développement > Extensions** pour votre App Service, en sélectionnant **Ajouter**, puis en faisant défiler la liste afin de rechercher les extensions pour Python :
+Une extension de site peut être déployée via le [portail Azure](https://portal.azure.com/). Sélectionnez le panneau **Outils de développement > Extensions** pour App Service, sélectionnez **Ajouter** et faites défiler la liste pour rechercher les éléments pour Python :
 
-![Ajout d’une extension de site sur le Portail Azure](~/python/media/template-web-site-extensions.png)
+![Ajout d’une extension de site sur le Portail Azure](media/template-web-site-extensions.png)
 
 Si vous utilisez des modèles de déploiement JSON, vous pouvez spécifier l’extension de site en tant que ressource de votre site :
 
@@ -171,24 +158,24 @@ c:\Python35\python.exe -m pip install -r D:\home\site\wwwroot\requirements.txt
 c:\Python27\python.exe -m pip install -r D:\home\site\wwwroot\requirements.txt
 ```
 
-Une fois déployé sur Azure App Service, votre site s’exécutera derrière Microsoft IIS. Pour permettre à votre site de fonctionner avec IIS, vous devrez ajouter au moins un fichier `web.config`. Vous disposez de modèles pour certaines cibles de déploiement courantes, auxquels vous pouvez accéder en cliquant avec le bouton droit sur le projet et en sélectionnant « Ajouter > Nouvel élément... » (voir la boîte de dialogue ci-dessous), et que vous pouvez aisément modifier pour d’autres utilisations. Pour plus d’informations sur les paramètres de configuration disponibles, consultez l’article [IIS Configuration Reference](https://www.iis.net/configreference) (Référence de configuration IIS).
+Une fois déployé sur Azure App Service, votre site s’exécute derrière Microsoft IIS. Pour permettre à votre site de fonctionner avec IIS, vous devez ajouter au moins un fichier `web.config`. Vous disposez de modèles pour certaines cibles de déploiement courantes, auxquels vous pouvez accéder en cliquant avec le bouton droit sur le projet et en sélectionnant **Ajouter > Nouvel élément...** (voir la boîte de dialogue ci-dessous), et ces configurations peuvent être aisément modifiées pour d’autres utilisations. Pour plus d’informations sur les paramètres de configuration disponibles, consultez [Référence de configuration IIS](https://www.iis.net/configreference).
 
-![Modèles d’élément Azure](~/python/media/template-web-azure-items.png)
+![Modèles d’élément Azure](media/template-web-azure-items.png)
 
 Les éléments disponibles sont les suivants :
 
 - web.config Azure (FastCGI) : ajoute un fichier `web.config` pour les cas dans lesquels votre application fournit un objet [WSGI](https://wsgi.readthedocs.io/en/latest/) pour gérer les connexions entrantes.
 - web.config Azure (HttpPlatformHandler) : ajoute un fichier `web.config` pour les cas dans lesquels votre application écoute un socket pour les connexions entrantes.
-- web.config des fichiers statiques Azure : lorsque vous disposez de l’un des fichiers `web.config` ci-dessus, ajoutez-le à un sous-répertoire pour qu’il ne soit pas traité par votre application.
+- web.config des fichiers statiques Azure : quand vous disposez de l’un des fichiers `web.config` ci-dessus, ajoutez-le à un sous-répertoire pour qu’il ne soit pas traité par votre application.
 - web.config de débogage à distance Azure : ajoute les fichiers nécessaires pour le débogage à distance sur WebSockets.
 - Fichiers de support de rôle Web : contient les scripts de déploiement par défaut pour les rôles Web Cloud Service.
 - Fichiers de support de rôle de travail : contient les scripts de déploiement et de lancement par défaut pour les rôles de travail Cloud Service.
 
-Si vous ajoutez le modèle `web.config` de débogage à votre projet et que vous prévoyez d’utiliser le débogage à distance Python, vous devrez publier le site dans la configuration « Débogage ». Ce paramètre est distinct de la configuration de la solution active actuelle et est toujours défini par défaut sur la valeur « Version finale ». Pour modifier cette valeur, ouvrez l’onglet **Paramètres** et utilisez la zone de liste modifiable **Configuration** dans l’Assistant Publication (pour plus d’informations sur la création et le déploiement sur Azure Web Apps, consultez la [documentation Azure](https://azure.microsoft.com/develop/python/)) :
+Si vous ajoutez le modèle `web.config` de débogage à votre projet et que vous prévoyez d’utiliser le débogage à distance Python, vous devez publier le site dans la configuration « Debug ». Ce paramètre est distinct de la configuration de la solution active actuelle et est toujours défini par défaut sur la valeur « Release ». Pour modifier cette valeur, ouvrez l’onglet **Paramètres** et utilisez la zone de liste modifiable **Configuration** dans l’Assistant Publication (pour plus d’informations sur la création et le déploiement sur Azure Web Apps, consultez la [documentation Azure](https://azure.microsoft.com/develop/python/)) :
 
-![Modification de la configuration de publication](~/python/media/template-web-publish-config.png)
+![Modification de la configuration de publication](media/template-web-publish-config.png)
 
-La commande **Convertir en projet Microsoft Azure Cloud Service** (image ci-dessous) ajoutera un projet Cloud Service à votre solution. Ce projet comprend les paramètres de déploiement et la configuration pour les machines virtuelles et les services à utiliser. Vous devez utiliser la commande **Publier** sur le projet cloud à déployer dans Cloud Service ; la commande **Publier** sur le projet Python effectuera toujours le déploiement dans Sites Web. Pour plus d’informations, consultez l’article [Projets Azure Cloud Service](template-azure-cloud-service.md).
+La commande **Convertir en projet Microsoft Azure Cloud Service** (image ci-dessous) ajoute un projet Cloud Service à votre solution. Ce projet comprend les paramètres de déploiement et la configuration pour les machines virtuelles et les services à utiliser. Utilisez la commande **Publier** sur le projet cloud à déployer sur Cloud Service ; la commande **Publier** sur le projet Python effectue toujours le déploiement sur Sites web. Pour plus d’informations, consultez l’article [Projets Azure Cloud Service](template-azure-cloud-service.md).
 
-![Commande Convertir en projet Microsoft Azure Cloud Service](~/python/media/template-web-convert-menu.png)
+![Commande Convertir en projet Microsoft Azure Cloud Service](media/template-web-convert-menu.png)
 

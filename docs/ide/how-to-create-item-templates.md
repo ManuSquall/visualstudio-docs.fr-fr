@@ -32,11 +32,11 @@ translation.priority.ht:
 - tr-tr
 - zh-cn
 - zh-tw
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 9713f09b7379b14b9362e3853a910948935c501e
-ms.openlocfilehash: 3524c21503d0432d509c607ea157f3fe675b443d
+ms.translationtype: HT
+ms.sourcegitcommit: c00adbbabf0d3b82acb17f4a269dfc693246bc69
+ms.openlocfilehash: 60732a1fbe7379b43d2856a62d5cd459165dd9a3
 ms.contentlocale: fr-fr
-ms.lasthandoff: 05/31/2017
+ms.lasthandoff: 08/01/2017
 
 ---
 # <a name="how-to-create-item-templates"></a>Guide pratique pour créer des modèles d’élément
@@ -58,7 +58,7 @@ Les étapes de la [première procédure](../ide/how-to-create-item-templates.md#
 
 3.  Modifiez le fichier de code pour indiquer où le remplacement de paramètres doit avoir lieu. Pour plus d’informations, consultez [Guide pratique pour substituer des paramètres dans un modèle](../ide/how-to-substitute-parameters-in-a-template.md).  
 
-4.  Dans le menu **Fichier**, cliquez sur **Exporter le modèle**.  
+4.  Dans le menu **Projet**, cliquez sur **Exporter le modèle**.  
 
 5.  Cliquez sur **Modèle d’élément**, sélectionnez le projet qui contient l’élément et cliquez sur **Suivant**.  
 
@@ -166,7 +166,7 @@ Les étapes de la [première procédure](../ide/how-to-create-item-templates.md#
 
 2.  Modifiez l'élément de projet jusqu'à ce qu'il soit prêt à être enregistré en tant que modèle.  
 
-3.  Selon le cas, modifiez le fichier de code pour indiquer où le remplacement de paramètres doit avoir lieu. Pour plus d'informations sur le remplacement de paramètres, consultez Comment : substituer des paramètres dans un modèle.  
+3.  Selon le cas, modifiez le fichier de code pour indiquer où le remplacement de paramètres doit avoir lieu. Pour plus d’informations sur le remplacement de paramètres, consultez [Comment : substituer des paramètres dans un modèle](../ide/how-to-substitute-parameters-in-a-template.md).
 
 4.  Créez un fichier XML et enregistrez-le à l'aide de l'extension de nom de fichier .vstemplate, dans le même répertoire que votre nouveau modèle d'élément.  
 

@@ -34,10 +34,10 @@ translation.priority.mt:
 - pt-br
 - tr-tr
 ms.translationtype: Human Translation
-ms.sourcegitcommit: 47057e9611b824c17077b9127f8d2f8b192d6eb8
-ms.openlocfilehash: baf1e18c56587b071aaa25fd522e3aa1b27a0b30
+ms.sourcegitcommit: 669bc5894727c207691a7e37937f432d98fee8b1
+ms.openlocfilehash: caa4a551c437a6d0479ff1a6fdd5526c6837721a
 ms.contentlocale: fr-fr
-ms.lasthandoff: 05/13/2017
+ms.lasthandoff: 06/30/2017
 
 ---
 # <a name="memory-usage-without-the-debugger"></a>Utilisation de la mémoire sans le débogueur
@@ -98,10 +98,10 @@ Vous pouvez utiliser l’outil **Utilisation de la mémoire** sans débogage pou
   
 |||  
 |-|-|  
-|![Étape 1](~/profiling/media/procguid_1.png "ProcGuid_1")|Le texte du lien indique le nombre total d'octets dans la mémoire au moment où l'instantané a été pris.<br /><br /> Choisissez ce lien pour afficher un rapport détaillé de l'instantané, trié selon la taille totale des instances du type.|  
-|![Étape 2](~/profiling/media/procguid_2.png "ProcGuid_2")|Le texte du lien indique le nombre total d'objets dans la mémoire au moment où l'instantané a été pris.<br /><br /> Choisissez ce lien pour afficher un rapport détaillé de l'instantané, trié selon le nombre total d'instances des types.|  
-|![Étape 3](~/profiling/media/procguid_3.png "ProcGuid_3")|Le texte du lien indique la différence entre la taille totale des objets dans la mémoire au moment de l'instantané et la taille totale de l'instantané précédent.<br /><br /> Le texte du lien est un nombre positif quand la taille de la mémoire de cet instantané est supérieure à celle du précédent, et un nombre négatif quand la taille est inférieure. Le texte du lien **Planning de référence** indique que cet instantané est le premier de la session de diagnostic. **Aucune différence** indique que la différence est nulle.<br /><br /> Choisissez ce lien pour afficher un rapport différentiel des instantanés, trié selon la différence de taille totale des instances des types.|  
-|![Étape 4](~/profiling/media/procguid_4.png "ProcGuid_4")|Le texte du lien indique la différence entre le nombre total d'objets mémoire dans cet instantané et le nombre d'objets de l'instantané précédent.<br /><br /> Choisissez ce lien pour afficher un rapport différentiel des instantanés, trié selon le nombre total d'instances des types.|  
+|![Étape 1](../profiling/media/procguid_1.png "ProcGuid_1")|Le texte du lien indique le nombre total d'octets dans la mémoire au moment où l'instantané a été pris.<br /><br /> Choisissez ce lien pour afficher un rapport détaillé de l'instantané, trié selon la taille totale des instances du type.|  
+|![Étape 2](../profiling/media/procguid_2.png "ProcGuid_2")|Le texte du lien indique le nombre total d'objets dans la mémoire au moment où l'instantané a été pris.<br /><br /> Choisissez ce lien pour afficher un rapport détaillé de l'instantané, trié selon le nombre total d'instances des types.|  
+|![Étape 3](../profiling/media/procguid_3.png "ProcGuid_3")|Le texte du lien indique la différence entre la taille totale des objets dans la mémoire au moment de l'instantané et la taille totale de l'instantané précédent.<br /><br /> Le texte du lien est un nombre positif quand la taille de la mémoire de cet instantané est supérieure à celle du précédent, et un nombre négatif quand la taille est inférieure. Le texte du lien **Planning de référence** indique que cet instantané est le premier de la session de diagnostic. **Aucune différence** indique que la différence est nulle.<br /><br /> Choisissez ce lien pour afficher un rapport différentiel des instantanés, trié selon la différence de taille totale des instances des types.|  
+|![Étape 4](../profiling/media/procguid_4.png "ProcGuid_4")|Le texte du lien indique la différence entre le nombre total d'objets mémoire dans cet instantané et le nombre d'objets de l'instantané précédent.<br /><br /> Choisissez ce lien pour afficher un rapport différentiel des instantanés, trié selon le nombre total d'instances des types.|  
   
 ##  <a name="BKMK_Snapshot_reports"></a> Rapports d’instantané  
  ![Rapport d’instantané d’utilisation de la mémoire](../profiling/media/memuse_snapshotreport_all.png "MEMUSE_SnapshotReport_All")  
@@ -220,7 +220,5 @@ Vous pouvez utiliser l’outil **Utilisation de la mémoire** sans débogage pou
 |**Taille inclusive (octets)**|Taille des objets dans l'instantané principal, y compris la taille des objets contenus dans les objets.|  
   
 ## <a name="see-also"></a>Voir aussi  
- [Mémoire JavaScript](../profiling/javascript-memory.md)
- [Outils de profilage](../profiling/profiling-tools.md)
- [Meilleures pratiques pour les performances des applications du Windows Store en C++, C# et Visual Basic](http://msdn.microsoft.com/library/windows/apps/hh750313.aspx)   
+ [Mémoire JavaScript](../profiling/javascript-memory.md) [Profilage dans Visual Studio](../profiling/index.md) [Visite guidée des fonctionnalités de profilage](../profiling/profiling-feature-tour.md) [Bonnes pratiques pour les performances des applications du Windows Store en C++, C# et Visual Basic](http://msdn.microsoft.com/library/windows/apps/hh750313.aspx)   
  [Diagnostic des problèmes de mémoire avec le nouvel outil Utilisation de la mémoire de Visual Studio](http://go.microsoft.com/fwlink/p/?LinkId=394706)

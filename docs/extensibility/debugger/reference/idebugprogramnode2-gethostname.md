@@ -1,58 +1,75 @@
 ---
-title: "IDebugProgramNode2::GetHostName | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "IDebugProgramNode2::GetHostName"
-helpviewer_keywords: 
-  - "IDebugProgramNode2::GetHostName"
+title: IDebugProgramNode2::GetHostName | Microsoft Docs
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology:
+- vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords:
+- IDebugProgramNode2::GetHostName
+helpviewer_keywords:
+- IDebugProgramNode2::GetHostName
 ms.assetid: 16aad1ff-ad34-4394-a2e4-5621374a7729
 caps.latest.revision: 12
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 12
----
-# IDebugProgramNode2::GetHostName
-[!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]
+ms.author: gregvanl
+manager: ghogen
+translation.priority.mt:
+- cs-cz
+- de-de
+- es-es
+- fr-fr
+- it-it
+- ja-jp
+- ko-kr
+- pl-pl
+- pt-br
+- ru-ru
+- tr-tr
+- zh-cn
+- zh-tw
+ms.translationtype: MT
+ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
+ms.openlocfilehash: d7c3f299fe0879444a5c820c7cc9a777375688ac
+ms.contentlocale: fr-fr
+ms.lasthandoff: 08/28/2017
 
-Obtient le nom de l'hébergement de processus du programme.  
+---
+# <a name="idebugprogramnode2gethostname"></a>IDebugProgramNode2::GetHostName
+Gets the name of the process hosting the program.  
   
-## Syntaxe  
+## <a name="syntax"></a>Syntax  
   
-```cpp#  
-HRESULT GetHostName (   
-   GETHOSTNAME_TYPE dwHostNameType,  
-   BSTR*            pbstrHostName  
+```cpp  
+HRESULT GetHostName (   
+   GETHOSTNAME_TYPE dwHostNameType,  
+   BSTR*            pbstrHostName  
 );  
 ```  
   
-```c#  
-int GetHostName (   
-   enum_GETHOSTNAME_TYPE dwHostNameType,  
-   out string            pbstrHostName  
+```csharp  
+int GetHostName (   
+   enum_GETHOSTNAME_TYPE dwHostNameType,  
+   out string            pbstrHostName  
 );  
 ```  
   
-#### Paramètres  
+#### <a name="parameters"></a>Parameters  
  `dwHostNameType`  
- \[in\]  Une valeur de l'énumération de [GETHOSTNAME\_TYPE](../../../extensibility/debugger/reference/gethostname-type.md) qui spécifie le type de nom à retourner.  
+ [in] A value from the [GETHOSTNAME_TYPE](../../../extensibility/debugger/reference/gethostname-type.md) enumeration that specifies the type of name to return.  
   
  `pbstrHostName`  
- \[out\]  Retourne le nom du processus d'hébergement.  
+ [out] Returns the name of the hosting process.  
   
-## Valeur de retour  
- En cas de réussite, retourne `S_OK`; sinon, retourne un code d'erreur.  
+## <a name="return-value"></a>Return Value  
+ If successful, returns `S_OK`; otherwise, returns an error code.  
   
-## Exemple  
- L'exemple suivant indique comment appliquer cette méthode d'un objet simple d' `CProgram` qui expose l'interface d' [IDebugProgramNode2](../../../extensibility/debugger/reference/idebugprogramnode2.md) .  Cet exemple ignore le paramètre d' `dwHostNameType` et retourne uniquement le nom du programme comme extraits du nom de base du chemin d'accès de fichier du module.  
+## <a name="example"></a>Example  
+ The following example shows how to implement this method for a simple `CProgram` object that exposes the [IDebugProgramNode2](../../../extensibility/debugger/reference/idebugprogramnode2.md) interface. This example ignores the `dwHostNameType` parameter and returns only the name of the program as taken from the base name of the module's file path.  
   
-```cpp#  
+```cpp  
 HRESULT CProgram::GetHostName(DWORD dwHostNameType, BSTR* pbstrHostName) {    
    // Check for valid argument.    
    if (pbstrHostName)    
@@ -94,7 +111,7 @@ HRESULT CProgram::GetHostName(DWORD dwHostNameType, BSTR* pbstrHostName) {
 }    
 ```  
   
-## Voir aussi  
+## <a name="see-also"></a>See Also  
  [IDebugProgramNode2](../../../extensibility/debugger/reference/idebugprogramnode2.md)   
- [GETHOSTNAME\_TYPE](../../../extensibility/debugger/reference/gethostname-type.md)   
+ [GETHOSTNAME_TYPE](../../../extensibility/debugger/reference/gethostname-type.md)   
  [IDebugProgramNode2](../../../extensibility/debugger/reference/idebugprogramnode2.md)

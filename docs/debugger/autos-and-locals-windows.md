@@ -1,117 +1,159 @@
 ---
-title: "Fen&#234;tres Variables locales et Automatique | Microsoft Docs"
-ms.custom: ""
-ms.date: "12/05/2016"
-ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-debug"
-ms.tgt_pltfrm: ""
-ms.topic: "hero-article"
-f1_keywords: 
-  - "vs.debug.autos"
-  - "vs.debug.locals"
-dev_langs: 
-  - "FSharp"
-  - "VB"
-  - "CSharp"
-  - "C++"
-  - "JScript"
-helpviewer_keywords: 
-  - "débogueur, fenêtres de variables"
-  - "débogage [Visual Studio], fenêtres de variables"
+title: Inspect Variables in the Autos and Locals Windows | Microsoft Docs
+ms.custom: H1Hack27Feb2017
+ms.date: 04/17/2017
+ms.reviewer: 
+ms.suite: 
+ms.technology:
+- vs-ide-debug
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords:
+- vs.debug.autos
+- vs.debug.locals
+helpviewer_keywords:
+- debugger, variable windows
+- debugging [Visual Studio], variable windows
 ms.assetid: bb6291e1-596d-4af0-9f22-5fd713d6b84b
 caps.latest.revision: 24
-caps.handback.revision: 24
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
----
-# Fen&#234;tres Variables locales et Automatique
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+translation.priority.ht:
+- de-de
+- es-es
+- fr-fr
+- it-it
+- ja-jp
+- ko-kr
+- ru-ru
+- zh-cn
+- zh-tw
+translation.priority.mt:
+- cs-cz
+- pl-pl
+- pt-br
+- tr-tr
+ms.translationtype: HT
+ms.sourcegitcommit: 3cd705d703b3d745c502290422e29b3c6da39ee5
+ms.openlocfilehash: f681301201a4f39e0ad83c6724e0b38d82653b84
+ms.contentlocale: fr-fr
+ms.lasthandoff: 08/22/2017
 
-La fenêtre **Automatique** \(lors du débogage, **CTRL\+ALT\+V, A**, ou **Déboguer\/Fenêtres\/Automatique**\) et la fenêtre **Variables locales** \(lors du débogage, **CTRL\+ALT\+V, L**, ou **Déboguer\/Fenêtres\/Variables locales**\) s’avèrent particulièrement utiles quand vous voulez voir les valeurs de variables pendant le débogage. La fenêtre **Variables locales** affiche les variables définies dans la portée locale, qui est généralement la fonction ou méthode en cours d’exécution. La fenêtre **Automatique** affiche les variables utilisées autour de la ligne actuelle \(l’emplacement où le débogueur est arrêté\). Les variables affichées sont différentes selon les langages. Consultez Quelles variables s’affichent dans la fenêtre Automatique ? ci\-dessous.  
+---
+# <a name="inspect-variables-in-the-autos-and-locals-windows-in-visual-studio"></a>Inspect Variables in the Autos and Locals Windows in Visual Studio
+The **Autos** window (while debugging, **CTRL+ALT+V, A**, or **Debug > Windows > Autos**) and the **Locals** window (while debugging, **CTRL+ALT+V, L**, or **Debug > Windows > Locals**) are quite useful when you want to see variable values while you are debugging. The **Locals** window displays variables that are defined in the local  scope, which is generally the function or method that is currently being executed. The **Autos** window displays variables used around the current line (the place where the debugger is stopped). Exactly which variables display in this window is different in different languages. See [What variables appear in the Autos Window?](#bkmk_whatvariables) below.  
   
- Si vous avez besoin de plus d’informations sur le débogage de base, consultez [Prise en main du débogueur](../debugger/getting-started-with-the-debugger.md).  
+If you need more information about basic debugging, see [Getting Started with the Debugger](../debugger/getting-started-with-the-debugger.md).  
   
-## Examen des objets dans les fenêtres Automatique et Variables locales  
- Les tableaux et les objets sont affichés dans les fenêtres Automatique et Variables locales en tant que contrôles d’arborescence. Cliquez sur la flèche située à gauche du nom de variable pour développer la vue et afficher les champs et propriétés. Voici un exemple d’un objet [FileStream](../Topic/FileStream%20Class.md) dans la fenêtre **Variables locales** :  
+## <a name="looking-at-objects-in-the-autos-and-locals-windows"></a>Looking at objects in the Autos and Locals windows  
+Arrays and objects are displayed in the Autos and Locals windows as tree controls. Click on the arrow to the left of the variable name to expand the view to show fields and properties. Here is an example of a [FileStream](http://msdn.microsoft.com/Library/a8737776-e545-4867-91ed-51c7f031fa19) object in the **Locals** window:  
   
- ![Locals&#45;FileStream](../debugger/media/locals-filestream.png "Locals\-FileStream")  
+![Locals&#45;FileStream](../debugger/media/locals-filestream.png "Locals-FileStream")  
   
-## Quelles variables s’affichent dans la fenêtre Automatique ?  
- Vous pouvez utiliser la fenêtre **Automatique** dans le code C\#, Visual Basic et C\+\+. La fenêtre **Automatique** ne prend pas en charge JavaScript ni F\#.  
+## <a name="bkmk_whatvariables"></a> What variables appear in the Autos window?  
+ You can use the **Autos** window in C#, Visual Basic, and C++ code. The **Autos** window does not support JavaScript or F#.  
   
- En C\# et Visual Basic, la fenêtre **Automatique** affiche n’importe quelle variable utilisée sur la ligne actuelle ou précédente. Par exemple, si vous déclarez quatre variables et les définissez comme suit :  
+ In C# and Visual Basic, the **Autos** window displays any  variable used on the current or preceding line. For example, if you declare four variables and set them as follows:
+
+```CSharp
+    public static void Main()
+    {
+       int a, b, c, d;
+       a = 1;
+       b = 2;
+       c = 3;
+       d = 4;
+    }
+```
+
+ If you set a breakpoint on the line `c = 3`; and run the debugger, when execution stops the **Autos** window will look like this:  
+
+ ![Autos&#45;CSharp](../debugger/media/autos-csharp.png "Autos-CSharp")  
+
+ Note that the value of `c` is 0, because the line `c = 3` has not yet been executed.  
+
+ In C++ the **Autos** window displays the variables used at least three lines before the current line (the line at which execution is stopped). If you declare six variables:
+
+```C++
+    void main() {
+        int a, b, c, d, e, f;
+        a = 1;
+        b = 2;
+        c = 3;
+        d = 4;
+        e = 5;
+        f = 6;
+    }
+```
+
+ If you set a breakpoint on the line `e = 5;` and run the debugger, when execution stops the **Autos** window will look like this:  
   
-```c#  
-public static void Main() { int a, b, c, d; a = 1; b = 2; c = 3; d = 4; }  
-```  
+ ![Autos&#45;Cplus](../debugger/media/autos-cplus.png "Autos-Cplus")  
   
- Si vous définissez un point d’arrêt sur la ligne `c = 3` et exécutez le débogueur, la fenêtre **Automatique** doit ressembler à ceci quand l’exécution s’arrête :  
+ Note that the variable e is uninitialized because the code on the line `e = 5;` has not yet been executed.  
   
- ![Autos&#45;CSharp](../debugger/media/autos-csharp.png "Autos\-CSharp")  
+ You can also see the return values of functions and methods in certain circumstances. See [View return values of method calls](#bkmk_returnValue) below.  
   
- Notez que la valeur de `c` est 0, car la ligne `c = 3` n’a pas encore été exécutée.  
+##  <a name="bkmk_returnValue"></a> View return values of method calls  
+ In .NET and C++ code you can examine return values when you step over or out of a method call. This functionality is useful when the result of a method call is not stored in a local variable, for example when a method is used as a parameter or as a return value of another    method.  
   
- En C\+\+, la fenêtre **Automatique** affiche les variables utilisées au moins trois lignes avant la ligne actuelle \(la ligne à laquelle l’exécution est arrêtée\). Si vous déclarez six variables :  
+ The following C# code adds the return values of two functions:  
+
+```CSharp
+static void Main(string[] args)  
+{  
+    int a, b, c, d;  
+    a = 1;  
+    b = 2;  
+    c = 3;  
+    d = 4;  
+    int x = sumVars(a, b) + subtractVars(c, d);  
+}  
   
-```cpp  
-void main() { int a, b, c, d, e, f; a = 1; b = 2; c = 3; d = 4; e = 5; f = 6; }  
-```  
+private static int sumVars(int i, int j)  
+{  
+    return i + j;  
+}  
   
- Si vous définissez un point d’arrêt sur la ligne `e = 5;` et exécutez le débogueur, la fenêtre **Automatique** doit ressembler à ceci quand l’exécution s’arrête :  
+private static int subtractVars(int i, int j)  
+{  
+    return j - i;  
+}  
+```
+
+ Set a breakpoint on the `int x = sumVars(a, b) + subtractVars(c, d);` line.  
   
- ![Autos&#45;Cplus](../debugger/media/autos-cplus.png "Autos\-Cplus")  
-  
- Notez que la variable e n’est pas initialisée, car le code de la ligne  `e = 5;` n’a pas encore été exécuté.  
-  
- Vous pouvez également voir les valeurs de retour des fonctions et des méthodes dans certaines circonstances. Consultez [Afficher les valeurs de retour d’appels de méthode](#bkmk_returnValue) ci\-dessous.  
-  
-##  <a name="bkmk_returnValue"></a> Afficher les valeurs de retour d’appels de méthode  
- Dans le code .NET et C\+\+, vous pouvez examiner les valeurs de retour quand vous effectuez un pas à pas principal ou sortant dans un appel de méthode. Cette fonctionnalité est utile quand le résultat d’un appel de méthode n’est pas stocké dans une variable locale, par exemple quand une méthode est utilisée comme paramètre ou valeur de retour d’une autre méthode.  
-  
- Le code C\# suivant ajoute les valeurs de retour de deux fonctions :  
-  
-```c#  
-static void Main(string[] args) { int a, b, c, d; a = 1; b = 2; c = 3; d = 4; int x = sumVars(a, b) + subtractVars(c, d); } private static int sumVars(int i, int j) { return i + j; } private static int subtractVars(int i, int j) { return j - i; }  
-  
-```  
-  
- Définissez un point d’arrêt sur la ligne int `x = sumVars(a, b) + subtractVars(c, d);` .  
-  
- Démarrez le débogage et, quand l’exécution s’arrête au premier point d’arrêt, appuyez sur **F10 \(Pas à pas principal\)**. Vous devez voir les éléments suivants dans la fenêtre **Automatique** :  
+ Start debugging, and when execution breaks at the first breakpoint, press **F10 (Step Over)**. You should see the following in the **Autos** window:  
   
  ![AutosReturnValueCSharp2](../debugger/media/autosreturnvaluecsharp2.png "AutosReturnValueCSharp2")  
   
-## Pourquoi les valeurs de variables s’affichent\-elles parfois en rouge dans les fenêtres Variables locales et Automatique ?  
- Vous pouvez remarquer que la valeur d’une variable est parfois en rouge dans les fenêtres **Variables locales** et **Automatique**. Il s’agit de valeurs de variables qui ont été modifiées depuis la dernière évaluation. Le changement peut provenir d’une session de débogage précédente, ou refléter la modification de la valeur dans la fenêtre.  
+## <a name="why-are-variable-values-sometimes-red-in-locals-and-autos-windows"></a>Why are variable values sometimes red in Locals and Autos windows?  
+You may notice that the value of a variable is sometimes red in the **Locals** and **Autos** windows. These are variable values that have been changed since the last evaluation. The change could be from a previous debugging session, or because the value was changed in the window.  
   
-## Modification du format numérique d’une fenêtre de variable  
- Le format numérique par défaut est décimal, mais vous pouvez le remplacer par le format hexadécimal. Cliquez avec le bouton droit à l’intérieur de la fenêtre **Variables locales** ou **Automatique** et sélectionnez **Affichage hexadécimal**. La modification affecte toutes les fenêtres du débogueur.  
+## <a name="changing-the-numeric-format-of-a-variable-window"></a>Changing the numeric format of a variable window  
+The default numeric format is decimal, but you can change it to hexadecimal. Right-click inside a **Locals** or **Autos** window and select **Hexadecimal Display**. The change affects all debugger windows.  
   
-## Modification d’une valeur dans une fenêtre de variable  
- Vous pouvez modifier les valeurs de la plupart des variables qui apparaissent dans les fenêtres **Automatique**, **Variables locales**, **Espion** et **Espion express**. Pour plus d’informations sur les fenêtres **Espion** et **Espion express**, consultez [Espion et Espion express, fenêtres](../debugger/watch-and-quickwatch-windows.md). Double\-cliquez sur la valeur que vous souhaitez modifier et ajoutez la nouvelle valeur.  
+## <a name="editing-a-value-in-a-variable-window"></a>Editing a value in a Variable window  
+You can edit the values of most variables that appear in the **Autos**, **Locals**, **Watch**, and **QuickWatch** windows. For information about **Watch** and **QuickWatch** windows, see [Watch and QuickWatch Windows](../debugger/watch-and-quickwatch-windows.md). Just double-click the value you want to change and add the new the value.  
   
- Vous pouvez entrer une expression pour une valeur, par exemple `a + b`. Le débogueur accepte la plupart des expressions de langage valides.  
+You can enter an expression for a value, for example `a + b`. The debugger accepts most valid language expressions.  
   
- Dans le code C\+\+ natif, vous devrez peut\-être qualifier le contexte d’un nom de variable. Pour plus d’informations, consultez [Opérateur de contexte \(C\+\+\)](../debugger/context-operator-cpp.md).  
+In native C++ code, you might have to qualify the context of a variable name. For more information, see [Context Operator (C++)](../debugger/context-operator-cpp.md).  
+ 
+However, you should exercise caution when changing values. Here are some possible issues:  
   
- Toutefois, soyez vigilant lorsque vous modifiez des valeurs. Voici quelques problèmes possibles :  
+-   Evaluating some expressions can change the value of a variable or otherwise affect the state of your program. For example, evaluating `var1 = ++var2` changes the value of `var1` and `var2`.  
   
--   Évaluer certaines expressions peut modifier la valeur d’une variable ou affecter d’une manière ou d’une autre l’état de votre programme. Par exemple, l’évaluation de `var1 = ++var2` modifie la valeur de `var1` et `var2`.  
+     Expressions that change data are said to have [side effects](https://en.wikipedia.org/wiki/Side_effect_\(computer_science\)), which can produce unexpected results if you are not aware of them. Make sure you understand the consequences of such a change before you make it.  
   
-     Les expressions qui modifient les données sont réputées pour avoir des [effets secondaires](https://en.wikipedia.org/wiki/Side_effect_\(computer_science\)) qui peuvent produire des résultats inattendus si vous n’êtes pas informé. Assurez\-vous que vous comprenez les conséquences d’une telle modification avant de l’effectuer.  
+-   Editing floating-point values can result in minor inaccuracies because of decimal-to-binary conversion of fractional components. Even a seemingly harmless edit can result in changes to some of the least significant bits in the floating-point variable.  
   
--   Modifier des valeurs à virgule flottante risque d’entraîner quelques légères imprécisions, dues à la conversion en binaire de la partie décimale des composants fractionnaires. Dans la variable à virgule flottante, même une modification apparemment anodine risque d’entraîner des changements de certains bits de poids faible.  
+## <a name="changing-the-window-context"></a>Changing the window context  
+You can use the **Debug Location** toolbar to select the desired function, thread, or process, which changes the context for the variable windows. Set a breakpoint and start debugging. (If you do not see this toolbar, you can enable it by clicking in an empty part of the toolbar area. You should see a list of toolbars; select **Debug Location**). When the breakpoint is hit, execution stops and you can see the Debug Location toolbar, which is the bottom row of the following illustration.
   
-## Barre d’outils Emplacement de débogage  
- Vous pouvez utiliser la barre d’outils **Emplacement de débogage** pour sélectionner la fonction, le thread ou le processus souhaité. Définissez un point d’arrêt et démarrez le débogage. \(Si vous ne voyez pas cette barre d’outils, vous pouvez l’activer en cliquant dans une partie vide de la zone de la barre d’outils. Vous devez voir une liste de barres d’outils ; sélectionnez **Emplacement de débogage**\). Lorsque le point d’arrêt est atteint, l’exécution s’arrête et vous pouvez voir la barre d’outils Emplacement de débogage, qui est la ligne inférieure de l’image suivante :  
+![DebugLocationToolbar](../debugger/media/debuglocationtoolbar.png "DebugLocationToolbar")   
   
- ![DebugLocationToolbar](~/debugger/media/debuglocationtoolbar.png "DebugLocationToolbar")  
-  
- Vous pouvez également remplacer le contexte par différents appels de fonction, threads ou processus en double\-cliquant sur l’élément dans la fenêtre **Pile des appels**, **Threads** ou **Processus**.  
-  
-## Voir aussi  
- [Fenêtres du débogueur](../debugger/debugger-windows.md)
+## <a name="see-also"></a>See Also  
+ [Debugger Windows](../debugger/debugger-windows.md)
+

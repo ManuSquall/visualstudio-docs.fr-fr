@@ -28,10 +28,11 @@ translation.priority.mt:
 - pl-pl
 - pt-br
 - tr-tr
-translationtype: Human Translation
-ms.sourcegitcommit: 65bceca75b87aaf187926ebbed1a54ce4f0e8eec
-ms.openlocfilehash: db7c9121beea3b6a27a435680dfe01cbc8cba8b6
-ms.lasthandoff: 02/22/2017
+ms.translationtype: HT
+ms.sourcegitcommit: 8a544bd1e1242bb6fabe00f7842ac33ed9d9d444
+ms.openlocfilehash: b19a309f403daa0a3881ec154aa4cd3f5e4d97dc
+ms.contentlocale: fr-fr
+ms.lasthandoff: 08/14/2017
 
 ---
 # <a name="perftips"></a>Conseils sur les performances
@@ -42,10 +43,10 @@ Les *conseils sur les performances* du débogueur et les **outils de diagnostic*
 ## <a name="perftips"></a>Conseils sur les performances  
  Quand le débogueur arrête l'exécution à un point d'arrêt ou lors de l'exécution pas à pas, le temps qui s'écoule entre l'arrêt et le point d'arrêt précédent apparaît sous la forme d'un conseil dans la fenêtre de l'éditeur. Pour plus d’informations, consultez [PerfTips: Performance Information at-a-glance while Debugging with Visual Studio](http://blogs.msdn.com/b/visualstudioalm/archive/2014/08/18/perftips-performance-information-at-a-glance-while-debugging-with-visual-studio.aspx).  
   
- ![Conseil sur les performances](~/profiling/media/dbgdiag_perf_perftip.png "DBGDIAG_PERF_PerfTip")  
+ ![Conseil sur les performances](../profiling/media/dbgdiag_perf_perftip.png "DBGDIAG_PERF_PerfTip")  
   
 ## <a name="diagnostics-tools-window"></a>Fenêtre Outils de diagnostic  
- Les points d'arrêt et les données de minutage associées sont enregistrés dans la fenêtre Outils de diagnostic.  
+ Les points d’arrêt et les données de minutage associées sont enregistrés dans la fenêtre Outils de diagnostic.  
   
  L’illustration suivante montre la fenêtre Outils de diagnostic de Visual Studio 2015 Update 1 :  
   
@@ -72,3 +73,7 @@ Les *conseils sur les performances* du débogueur et les **outils de diagnostic*
 1.  Dans le menu **Déboguer** , choisissez **Options**.  
   
 2.  Cochez ou décochez **Activer les outils de diagnostic pendant le débogage**.
+
+## <a name="see-also"></a>Voir aussi
+ [Profilage dans Visual Studio](../profiling/index.md) [Visite guidée des fonctionnalités de profilage](../profiling/profiling-feature-tour.md)
+

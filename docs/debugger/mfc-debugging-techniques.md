@@ -1,93 +1,109 @@
 ---
-title: "Techniques de d&#233;bogage&#160;MFC | Microsoft Docs"
-ms.custom: ""
-ms.date: "12/05/2016"
-ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-debug"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "AfxEnableMemoryTracking"
-  - "CMemoryState"
-  - "delayFreeMemDF"
-  - "checkAlwaysMemDF"
-  - "vs.debug.mfc"
-  - "vs.debug.objects.dump"
-  - "vs.debug.memory.dump"
-  - "allocMemDF"
-  - "afxMemDF"
-dev_langs: 
-  - "FSharp"
-  - "VB"
-  - "CSharp"
-  - "C++"
-  - "C++"
-helpviewer_keywords: 
-  - "déboguer (MFC)"
+title: MFC Debugging Techniques | Microsoft Docs
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology:
+- vs-ide-debug
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords:
+- AfxEnableMemoryTracking
+- CMemoryState
+- delayFreeMemDF
+- checkAlwaysMemDF
+- vs.debug.mfc
+- vs.debug.objects.dump
+- vs.debug.memory.dump
+- allocMemDF
+- afxMemDF
+dev_langs:
+- CSharp
+- VB
+- FSharp
+- C++
+helpviewer_keywords:
+- debugging [MFC]
 ms.assetid: b154fc31-5e90-4734-8cbd-58dd9fe1f750
 caps.latest.revision: 20
-caps.handback.revision: 20
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
----
-# Techniques de d&#233;bogage&#160;MFC
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+translation.priority.ht:
+- de-de
+- es-es
+- fr-fr
+- it-it
+- ja-jp
+- ko-kr
+- ru-ru
+- zh-cn
+- zh-tw
+translation.priority.mt:
+- cs-cz
+- pl-pl
+- pt-br
+- tr-tr
+ms.translationtype: HT
+ms.sourcegitcommit: 9e6c28d42bec272c6fd6107b4baf0109ff29197e
+ms.openlocfilehash: 8ead19c84b5a2a522199f70773a7ba99613b6b7f
+ms.contentlocale: fr-fr
+ms.lasthandoff: 08/22/2017
 
-Si vous déboguez un programme MFC, les techniques de débogage suivantes peuvent vous être utiles.  
+---
+# <a name="mfc-debugging-techniques"></a>MFC Debugging Techniques
+If you are debugging an MFC program, these debugging techniques may be useful.  
   
-##  <a name="BKMK_In_this_topic"></a> Dans cette rubrique  
+##  <a name="BKMK_In_this_topic"></a> In this topic  
  [AfxDebugBreak](#BKMK_AfxDebugBreak)  
   
- [Macro TRACE](#BKMK_The_TRACE_macro)  
+ [The TRACE macro](#BKMK_The_TRACE_macro)  
   
- [Détection des fuites de mémoire dans les applications MFC](#BKMK_Memory_leak_detection_in_MFC)  
+ [Detecting memory leaks in MFC](#BKMK_Memory_leak_detection_in_MFC)  
   
--   [Suivi des allocations de mémoire](#BKMK_Tracking_memory_allocations)  
+-   [Tracking memory allocations](#BKMK_Tracking_memory_allocations)  
   
--   [Activation des diagnostics de la mémoire](#BKMK_Enabling_memory_diagnostics)  
+-   [Enabling memory diagnostics](#BKMK_Enabling_memory_diagnostics)  
   
--   [Captures instantanées de la mémoire](#BKMK_Taking_memory_snapshots)  
+-   [Taking memory snapshots](#BKMK_Taking_memory_snapshots)  
   
--   [Affichage des statistiques de la mémoire](#BKMK_Viewing_memory_statistics)  
+-   [Viewing memory statistics](#BKMK_Viewing_memory_statistics)  
   
--   [Création de dumps d'objets](#BKMK_Taking_object_dumps)  
+-   [Taking object dumps](#BKMK_Taking_object_dumps)  
   
-    -   [Interprétation des vidages mémoire](#BKMK_Interpreting_memory_dumps)  
+    -   [Interpreting memory dumps](#BKMK_Interpreting_memory_dumps)  
   
-    -   [Personnalisation des dumps d'objets](#BKMK_Customizing_object_dumps)  
+    -   [Customizing object dumps](#BKMK_Customizing_object_dumps)  
   
-     [Réduction de la taille d'une version Debug MFC](#BKMK_Reducing_the_size_of_an_MFC_Debug_build)  
+     [Reducing the size of an MFC Debug build](#BKMK_Reducing_the_size_of_an_MFC_Debug_build)  
   
-    -   [Génération d'une application MFC avec les informations de débogage pour les modules sélectionnés](#BKMK_Building_an_MFC_app_with_debug_information_for_selected_modules)  
+    -   [Building an MFC app with debug information for selected modules](#BKMK_Building_an_MFC_app_with_debug_information_for_selected_modules)  
   
 ##  <a name="BKMK_AfxDebugBreak"></a> AfxDebugBreak  
- Les MFC fournissent une fonction spéciale, [AfxDebugBreak](../Topic/AfxDebugBreak%20\(MFC\).md), pour encoder de manière irréversible les points d'arrêt dans le code source :  
+ MFC provides a special [AfxDebugBreak](http://msdn.microsoft.com/Library/c4cd79b9-9327-4db5-a9d6-c4004a92aa30) function for hard-coding breakpoints in source code:  
   
 ```  
 AfxDebugBreak( );  
   
 ```  
   
- Sur les plateformes Intel, `AfxDebugBreak` produit le code suivant, qui marque une interruption dans le code source, plutôt que dans le code de noyau :  
+ On Intel platforms, `AfxDebugBreak` produces the following code, which breaks in source code rather than kernel code:  
   
 ```  
 _asm int 3  
 ```  
   
- Sur les autres plateformes, `AfxDebugBreak` appelle simplement `DebugBreak`.  
+ On other platforms, `AfxDebugBreak` merely calls `DebugBreak`.  
   
- Veillez à supprimer les instructions `AfxDebugBreak` lorsque vous créez une version Release ou utilisez `#ifdef _DEBUG` pour les délimiter.  
+ Be sure to remove `AfxDebugBreak` statements when you create a release build or use `#ifdef _DEBUG` to surround them.  
   
- [Dans cette rubrique](#BKMK_In_this_topic)  
+ [In this topic](#BKMK_In_this_topic)  
   
-##  <a name="BKMK_The_TRACE_macro"></a> Macro TRACE  
- Pour afficher les messages de votre programme dans la [fenêtre Sortie](../ide/reference/output-window.md) du débogueur, vous pouvez utiliser la macro [ATLTRACE](../Topic/ATLTRACE%20\(ATL\).md) ou la macro MFC [TRACE](../Topic/TRACE.md). De même que les [assertions](../debugger/c-cpp-assertions.md), les macros trace sont actives uniquement dans la version Debug de votre programme et disparaissent après la compilation dans la version Release.  
+##  <a name="BKMK_The_TRACE_macro"></a> The TRACE macro  
+ To display messages from your program in the debugger [Output window](../ide/reference/output-window.md), you can use the [ATLTRACE](http://msdn.microsoft.com/Library/c796baa5-e2b9-4814-a27d-d800590b102e) macro or the MFC [TRACE](http://msdn.microsoft.com/Library/7b6f42d8-b55a-4bba-ab04-c46251778e6f) macro. Like [assertions](../debugger/c-cpp-assertions.md), the trace macros are active only in the Debug version of your program and disappear when compiled in the Release version.  
   
- Les exemples suivants présentent certaines utilisations possibles de la macro **TRACE**. À l'instar de `printf`, la macro **TRACE** peut gérer un certain nombre d'arguments.  
+ The following examples show some of the ways you can use the **TRACE** macro. Like `printf`, the **TRACE** macro can handle a number of arguments.  
   
 ```  
 int x = 1;  
@@ -102,7 +118,7 @@ TRACE( "x = %d and y = %d\n", x, y );
 TRACE( "x = %d and y = %x and z = %f\n", x, y, z );  
 ```  
   
- La macro TRACE gère correctement les paramètres char\* et wchar\_t\*. Les exemples suivants illustrent l'utilisation de la macro TRACE avec différents types de paramètres de chaînes.  
+ The TRACE macro appropriately handles both char* and wchar_t\* parameters. The following examples demonstrate the use of the TRACE macro together with different types of string parameters.  
   
 ```  
 TRACE( "This is a test of the TRACE macro that uses an ANSI string: %s %d\n", "The number is:", 2);  
@@ -113,62 +129,62 @@ TRACE( _T("This is a test of the TRACE macro that uses a TCHAR string: %s %d\n")
   
 ```  
   
- Pour plus d'informations sur la macro **TRACE**, consultez [Services de diagnostic](/visual-cpp/mfc/reference/diagnostic-services).  
+ For more information on the **TRACE** macro, see [Diagnostic Services](/cpp/mfc/reference/diagnostic-services).  
   
- [Dans cette rubrique](#BKMK_In_this_topic)  
+ [In this topic](#BKMK_In_this_topic)  
   
-##  <a name="BKMK_Memory_leak_detection_in_MFC"></a> Détection des fuites de mémoire dans les applications MFC  
- Les MFC fournissent des classes et des fonctions pour détecter la mémoire qui est allouée, mais jamais désallouée.  
+##  <a name="BKMK_Memory_leak_detection_in_MFC"></a> Detecting memory leaks in MFC  
+ MFC provides classes and functions for detecting memory that is allocated but never deallocated.  
   
-###  <a name="BKMK_Tracking_memory_allocations"></a> Suivi des allocations de mémoire  
- Dans les MFC, vous pouvez utiliser la macro [DEBUG\_NEW](../Topic/DEBUG_NEW.md) à la place de l'opérateur **new** pour faciliter la localisation des fuites de mémoire. Dans la version Debug de votre programme, `DEBUG_NEW` assure le suivi du nom du fichier et du numéro de ligne pour chaque objet alloué. Lorsque vous compilez une version Release de votre programme, `DEBUG_NEW` est traduit en une opération **new** simple sans les informations de nom de fichier et de numéro de ligne. Ainsi, la vitesse n'est pas pénalisée dans la version Release de votre programme.  
+###  <a name="BKMK_Tracking_memory_allocations"></a> Tracking memory allocations  
+ In MFC, you can use the macro [DEBUG_NEW](http://msdn.microsoft.com/Library/9b379344-4093-4bec-a3eb-e0d8a63ada9d) in place of the **new** operator to help locate memory leaks. In the Debug version of your program, `DEBUG_NEW` keeps track of the file name and line number for each object that it allocates. When you compile a Release version of your program, `DEBUG_NEW` resolves to a simple **new** operation without the file name and line number information. Thus, you pay no speed penalty in the Release version of your program.  
   
- Si vous voulez éviter de réécrire le programme entier pour utiliser `DEBUG_NEW` à la place de **new**, vous pouvez définir la macro suivante dans vos fichiers sources :  
+ If you do not want to rewrite your entire program to use `DEBUG_NEW` in place of **new**, you can define this macro in your source files:  
   
 ```  
 #define new DEBUG_NEW  
 ```  
   
- Lorsque vous faites un [dump d'objets](#BKMK_Taking_object_dumps), chaque objet alloué avec `DEBUG_NEW` affiche le fichier et le numéro de ligne où il a été alloué, ce qui vous permet de localiser l'origine des fuites de mémoire.  
+ When you do an [object dump](#BKMK_Taking_object_dumps), each object allocated with `DEBUG_NEW` will show the file and line number where it was allocated, allowing you to pinpoint the sources of memory leaks.  
   
- La version Debug de l'infrastructure MFC utilise automatiquement `DEBUG_NEW`, contrairement à votre code. Si vous voulez bénéficier de `DEBUG_NEW`, vous devez utiliser `DEBUG_NEW` explicitement ou **\#define new** comme indiqué plus haut.  
+ The Debug version of the MFC framework uses `DEBUG_NEW` automatically, but your code does not. If you want the benefits of `DEBUG_NEW`, you must use `DEBUG_NEW` explicitly or **#define new** as shown above.  
   
- [Dans cette rubrique](#BKMK_In_this_topic)  
+ [In this topic](#BKMK_In_this_topic)  
   
-###  <a name="BKMK_Enabling_memory_diagnostics"></a> Activation des diagnostics de la mémoire  
- Avant d'utiliser les fonctions de diagnostic de la mémoire, vous devez activer le traçage de diagnostic.  
+###  <a name="BKMK_Enabling_memory_diagnostics"></a> Enabling memory diagnostics  
+ Before you can use the memory diagnostics facilities, you must enable diagnostic tracing.  
   
- **Pour activer ou désactiver les diagnostics de la mémoire**  
+ **To enable or disable memory diagnostics**  
   
--   Appelez la fonction globale [AfxEnableMemoryTracking](../Topic/AfxEnableMemoryTracking.md) pour activer ou désactiver l'allocateur de mémoire de diagnostic. Étant donné que les diagnostics de la mémoire se trouvent par défaut dans la bibliothèque de débogage, vous utiliserez normalement cette fonction pour les désactiver provisoirement, ce qui vous permettra d'augmenter la vitesse d'exécution du programme et de réduire la sortie des diagnostics.  
+-   Call the global function [AfxEnableMemoryTracking](http://msdn.microsoft.com/Library/0a40e0c4-855d-46e2-9577-a8f2346f47db) to enable or disable the diagnostic memory allocator. Because memory diagnostics are on by default in the debug library, you will typically use this function to temporarily turn them off, which increases program execution speed and reduces diagnostic output.  
   
- **Pour sélectionner des fonctionnalités de diagnostic de la mémoire spécifiques avec afxMemDF**  
+ **To select specific memory diagnostic features with afxMemDF**  
   
--   Si vous voulez contrôler plus précisément les fonctionnalités de diagnostic de la mémoire, vous pouvez les activer et les désactiver individuellement, de façon sélective, en définissant la valeur de la variable globale MFC [afxMemDF](../Topic/afxMemDF.md). Cette variable peut prendre les valeurs suivantes, comme spécifié par le type énuméré **afxMemDF** :  
+-   If you want more precise control over the memory diagnostic features, you can selectively turn individual memory diagnostic features on and off by setting the value of the MFC global variable [afxMemDF](http://msdn.microsoft.com/Library/cf117501-5446-4fce-81b3-f7194bc95086). This variable can have the following values as specified by the enumerated type **afxMemDF**.  
   
-    |Valeur|Description|  
-    |------------|-----------------|  
-    |**allocMemDF**|Activer l'allocateur de mémoire de diagnostic \(par défaut\).|  
-    |**delayFreeMemDF**|Différer la libération de la mémoire lors des appels à `delete` ou `free` jusqu'à ce que le programme s'arrête. Votre programme allouera alors la quantité maximale de mémoire possible.|  
-    |**checkAlwaysMemDF**|Appeler [AfxCheckMemory](../Topic/AfxCheckMemory.md) chaque fois que la mémoire est allouée ou libérée.|  
+    |Value|Description|  
+    |-----------|-----------------|  
+    |**allocMemDF**|Turn on diagnostic memory allocator (default).|  
+    |**delayFreeMemDF**|Delay freeing memory when calling `delete` or `free` until program exits. This will cause your program to allocate the maximum possible amount of memory.|  
+    |**checkAlwaysMemDF**|Call [AfxCheckMemory](http://msdn.microsoft.com/Library/4644da71-7d14-41dc-adc0-ee9558fd7a28) every time memory is allocated or freed.|  
   
-     Vous pouvez combiner ces valeurs en effectuant une opération OR logique, comme indiqué ci\-après :  
+     These values can be used in combination by performing a logical-OR operation, as shown here:  
   
-    ```cpp  
+    ```C++  
     afxMemDF = allocMemDF | delayFreeMemDF | checkAlwaysMemDF;  
     ```  
   
- [Dans cette rubrique](#BKMK_In_this_topic)  
+ [In this topic](#BKMK_In_this_topic)  
   
-###  <a name="BKMK_Taking_memory_snapshots"></a> Captures instantanées de la mémoire  
+###  <a name="BKMK_Taking_memory_snapshots"></a> Taking memory snapshots  
   
-1.  Créez un objet [CMemoryState](http://msdn.microsoft.com/fr-fr/8fade6e9-c6fb-4b2a-8565-184a912d26d2) et appelez la fonction membre [CMemoryState::Checkpoint](../Topic/CMemoryState::Checkpoint.md). Le premier instantané de la mémoire est alors créé.  
+1.  Create a [CMemoryState](http://msdn.microsoft.com/en-us/8fade6e9-c6fb-4b2a-8565-184a912d26d2) object and call the [CMemoryState::Checkpoint](/cpp/mfc/reference/cmemorystate-structure.md#cmemorystate__Checkpoint) member function. This creates the first memory snapshot.  
   
-2.  Une fois que le programme a effectué ses opérations d'allocation et de libération de mémoire, créez un autre objet `CMemoryState` et appelez `Checkpoint` pour cet objet. Vous obtenez ainsi un deuxième instantané de l'utilisation de la mémoire.  
+2.  After your program performs its memory allocation and deallocation operations, create another `CMemoryState` object and call `Checkpoint` for that object. This gets a second snapshot of memory usage.  
   
-3.  Créez un troisième objet `CMemoryState` et appelez sa fonction membre [CMemoryState::Difference](../Topic/CMemoryState::Difference.md) en fournissant les deux précédents objets `CMemoryState` comme arguments. S'il existe une différence entre les deux états de la mémoire, la fonction `Difference` retourne une valeur autre que zéro. Cela indique que certains blocs de mémoire n'ont pas été libérés.  
+3.  Create a third `CMemoryState` object and call its [CMemoryState::Difference](/cpp/mfc/reference/cmemorystate-structure.md#cmemorystate__Difference) member function, supplying as arguments the two previous `CMemoryState` objects. If there is a difference between the two memory states, the `Difference` function returns a nonzero value. This indicates that some memory blocks have not been deallocated.  
   
-     L'exemple suivant présente l'aspect du code :  
+     This example shows what the code looks like:  
   
     ```  
     // Declare the variables needed  
@@ -191,16 +207,16 @@ TRACE( _T("This is a test of the TRACE macro that uses a TCHAR string: %s %d\n")
     #endif  
     ```  
   
-     Notez que les instructions de vérification de la mémoire sont placées entre des blocs `#ifdef`[\_DEBUG](/visual-cpp/c-runtime-library/debug)\/ **\#endif** : elles ne sont donc compilées que dans les versions Debug de votre programme.  
+     Notice that the memory-checking statements are bracketed by **#ifdef _DEBUG / #endif** blocks so that they are compiled only in Debug versions of your program.  
   
-     Maintenant que vous connaissez l’existence d’une fuite de mémoire, vous pouvez utiliser une autre fonction membre, [CMemoryState::DumpStatistics](../Topic/CMemoryState::DumpStatistics.md), qui vous aidera à la localiser.  
+     Now that you know a memory leak exists, you can use another member function, [CMemoryState::DumpStatistics](/cpp/mfc/reference/cmemorystate-structure.md#cmemorystate__DumpStatistics) that will help you locate it.  
   
- [Dans cette rubrique](#BKMK_In_this_topic)  
+ [In this topic](#BKMK_In_this_topic)  
   
-###  <a name="BKMK_Viewing_memory_statistics"></a> Affichage des statistiques de la mémoire  
- La fonction [CMemoryState::Difference](../Topic/CMemoryState::Difference.md) examine deux objets d’état de mémoire et détecte les objets qui n’ont pas été libérés du tas entre les états de début et de fin. Une fois que vous avez effectué des instantanés de la mémoire et que vous les avez comparés à l’aide de `CMemoryState::Difference`, vous pouvez appeler [CMemoryState::DumpStatistics](../Topic/CMemoryState::DumpStatistics.md) pour obtenir des informations sur les objets qui n’ont pas été libérés.  
+###  <a name="BKMK_Viewing_memory_statistics"></a> Viewing memory statistics  
+ The [CMemoryState::Difference](/cpp/mfc/reference/cmemorystate-structure.md#cmemorystate__Difference) function looks at two memory-state objects and detects any objects not deallocated from the heap between the beginning and end states. After you have taken memory snapshots and compared them using `CMemoryState::Difference`, you can call [CMemoryState::DumpStatistics](/cpp/mfc/reference/cmemorystate-structure.md#cmemorystate__DumpStatistics) to get information about the objects that have not been deallocated.  
   
- Prenons l'exemple suivant :  
+ Consider the following example:  
   
 ```  
 if( diffMemState.Difference( oldMemState, newMemState ) )  
@@ -210,7 +226,7 @@ if( diffMemState.Difference( oldMemState, newMemState ) )
 }  
 ```  
   
- Un exemple de dump de cet exemple aura l'aspect suivant :  
+ A sample dump from the example looks like this:  
   
 ```  
 0 bytes in 0 Free Blocks  
@@ -220,28 +236,28 @@ Largest number used: 67 bytes
 Total allocations: 67 bytes  
 ```  
   
- Les blocs libres sont des blocs dont la fin d'allocation est différée si `afxMemDF` a la valeur `delayFreeMemDF`.  
+ Free blocks are blocks whose deallocation is delayed if `afxMemDF` was set to `delayFreeMemDF`.  
   
- Les blocs Object ordinaires, affichés sur la deuxième ligne, restent alloués sur le tas.  
+ Ordinary object blocks, shown on the second line, remain allocated on the heap.  
   
- Les blocs non objet incluent les tableaux et les structures alloués avec `new`. Dans le cas présent, quatre blocs non objet ont été alloués sur le tas, mais pas libérés.  
+ Non-object blocks include arrays and structures allocated with `new`. In this case, four non-object blocks were allocated on the heap but not deallocated.  
   
- `Largest number used` donne la mémoire maximale utilisée par le programme à un moment quelconque.  
+ `Largest number used` gives the maximum memory used by the program at any time.  
   
- `Total allocations` donne la quantité totale de mémoire utilisée par le programme.  
+ `Total allocations` gives the total amount of memory used by the program.  
   
- [Dans cette rubrique](#BKMK_In_this_topic)  
+ [In this topic](#BKMK_In_this_topic)  
   
-###  <a name="BKMK_Taking_object_dumps"></a> Création de dumps d'objets  
- Dans un programme MFC, vous pouvez utiliser [CMemoryState::DumpAllObjectsSince](../Topic/CMemoryState::DumpAllObjectsSince.md) pour faire un dump contenant la description de tous les objets sur le tas qui n’ont pas été libérés.`DumpAllObjectsSince` permet de faire un dump de tous les objets alloués depuis le dernier [CMemoryState::Checkpoint](../Topic/CMemoryState::Checkpoint.md). Si aucun appel à `Checkpoint` n'a eu lieu, `DumpAllObjectsSince` fait un dump de tous les objets et non\-objets actuellement en mémoire.  
-  
-> [!NOTE]
->  Avant de pouvoir utiliser le dump d'objets MFC, vous devez [activer le traçage de diagnostic](../debugger/mfc-debugging-techniques.md#BKMK_Enabling_Memory_Diagnostics).  
+###  <a name="BKMK_Taking_object_dumps"></a> Taking object dumps  
+ In an MFC program, you can use [CMemoryState::DumpAllObjectsSince](/cpp/mfc/reference/cmemorystate-structure.md#cmemorystate__DumpAllObjectsSince) to dump a description of all objects on the heap that have not been deallocated. `DumpAllObjectsSince` dumps all objects allocated since the last [CMemoryState::Checkpoint](/cpp/mfc/reference/cmemorystate-structure.md#cmemorystate__Checkpoint). If no `Checkpoint` call has taken place, `DumpAllObjectsSince` dumps all objects and nonobjects currently in memory.  
   
 > [!NOTE]
->  MFC fait automatiquement un dump de tous les objets qui ont été perdus lorsque votre programme s'arrête ; il est donc inutile de créer du code pour faire un dump des objets en ce point.  
+>  Before you can use MFC object dumping, you must [enable diagnostic tracing](#BKMK_Enabling_Memory_Diagnostics).  
   
- Le code suivant recherche une fuite de mémoire en comparant deux états de mémoire et fait un dump de tous les objets si une fuite est détectée.  
+> [!NOTE]
+>  MFC automatically dumps all leaked objects when your program exits, so you do not need to create code to dump objects at that point.  
+  
+ The following code tests for a memory leak by comparing two memory states and dumps all objects if a leak is detected.  
   
 ```  
 if( diffMemState.Difference( oldMemState, newMemState ) )  
@@ -251,7 +267,7 @@ if( diffMemState.Difference( oldMemState, newMemState ) )
 }  
 ```  
   
- Le contenu du dump a l'aspect suivant :  
+ The contents of the dump look like this:  
   
 ```  
 Dumping objects ->  
@@ -268,18 +284,18 @@ Phone #: 581-0215
 {1} strcore.cpp(80) : non-object block at $00A7516E, 25 bytes long  
 ```  
   
- Les valeurs numériques entre parenthèses au début de la plupart des lignes spécifient l'ordre dans lequel les objets ont été alloués. Le dernier objet alloué, auquel correspond le numéro le plus élevé, apparaît en au début du dump.  
+ The numbers in braces at the beginning of most lines specify the order in which the objects were allocated. The most recently allocated object has the highest number and appears at the top of the dump.  
   
- Pour obtenir la quantité d'informations maximale d'un dump d'objets, vous pouvez remplacer la fonction membre `Dump` de n'importe quel objet dérivé de `CObject` pour personnaliser le dump d'objets.  
+ To get the maximum amount of information out of an object dump, you can override the `Dump` member function of any `CObject`-derived object to customize the object dump.  
   
- Vous avez la possibilité de définir un point d'arrêt sur une allocation de mémoire particulière en affectant à la variable globale `_afxBreakAlloc` la valeur numérique affichée entre parenthèses. Si vous réexécutez le programme, le débogueur arrêtera l'exécution lorsque cette allocation aura lieu. Vous pourrez alors examiner la pile des appels pour savoir comment votre programme est parvenu jusqu'à ce point.  
+ You can set a breakpoint on a particular memory allocation by setting the global variable `_afxBreakAlloc` to the number shown in the braces. If you rerun the program the debugger will break execution when that allocation takes place. You can then look at the call stack to see how your program got to that point.  
   
- La bibliothèque Runtime C possède une fonction similaire, [\_CrtSetBreakAlloc](/visual-cpp/c-runtime-library/reference/crtsetbreakalloc), que vous pouvez utiliser pour les allocations Runtime C.  
+ The C run-time library has a similar function, [_CrtSetBreakAlloc](/cpp/c-runtime-library/reference/crtsetbreakalloc), that you can use for C run-time allocations.  
   
- [Dans cette rubrique](#BKMK_In_this_topic)  
+ [In this topic](#BKMK_In_this_topic)  
   
-####  <a name="BKMK_Interpreting_memory_dumps"></a> Interprétation des vidages mémoire  
- Examinons ce dump d'objets plus en détail :  
+####  <a name="BKMK_Interpreting_memory_dumps"></a> Interpreting memory dumps  
+ Look at this object dump in more detail:  
   
 ```  
 {5} strcore.cpp(80) : non-object block at $00A7521A, 9 bytes long  
@@ -294,7 +310,7 @@ Phone #: 581-0215
 {1} strcore.cpp(80) : non-object block at $00A7516E, 25 bytes long  
 ```  
   
- Le programme qui a généré ce dump n'avait que deux allocations explicites : une sur la pile, l'autre sur le tas :  
+ The program that generated this dump had only two explicit allocations—one on the stack and one on the heap:  
   
 ```  
 // Do your memory allocations and deallocations.  
@@ -303,15 +319,15 @@ CString s("This is a frame variable");
 CPerson* p = new CPerson( "Smith", "Alan", "581-0215" );  
 ```  
   
- Le constructeur `CPerson` prend trois arguments qui correspondent à des pointeurs vers `char`, utilisés pour initialiser les variables membres `CString`. Dans le dump mémoire, vous pouvez voir l'objet `CPerson` avec trois blocs non\-objets \(3, 4 et 5\). Ces derniers contiennent les caractères pour les variables membres `CString` et ne seront pas supprimés lorsque le destructeur d'objet `CPerson` sera appelé.  
+ The `CPerson` constructor takes three arguments that are pointers to `char`, which are used to initialize `CString` member variables. In the memory dump, you can see the `CPerson` object along with three nonobject blocks (3, 4, and 5). These hold the characters for the `CString` member variables and will not be deleted when the `CPerson` object destructor is invoked.  
   
- Le bloc numéro 2 est l'objet `CPerson` lui\-même.`$51A4` représente l'adresse du bloc, laquelle est suivie du contenu de l'objet, qui a été sorti par `CPerson`::`Dump` lorsque ce dernier a été appelé par [DumpAllObjectsSince](../Topic/CMemoryState::DumpAllObjectsSince.md).  
+ Block number 2 is the `CPerson` object itself. `$51A4` represents the address of the block and is followed by the contents of the object, which were output by `CPerson`::`Dump` when called by [DumpAllObjectsSince](/cpp/mfc/reference/cmemorystate-structure.md#cmemorystate__DumpAllObjectsSince).  
   
- Vous pouvez deviner que le bloc numéro 1 est associé à la variable frame `CString` en raison de son numéro de séquence et de sa taille, qui correspond au nombre de caractères dans la `CString` variable. Les variables allouées sur le frame sont automatiquement désallouées lorsque le frame est hors de portée.  
+ You can guess that block number 1 is associated with the `CString` frame variable because of its sequence number and size, which matches the number of characters in the frame `CString` variable. Variables allocated on the frame are automatically deallocated when the frame goes out of scope.  
   
- **Variables frame**  
+ **Frame Variables**  
   
- En général, vous n'avez pas à vous soucier des objets de tas associés à des variables frame, car ils sont automatiquement désalloués lorsque celles\-ci sont hors de portée. Afin d'éviter tout encombrement dans les dumps des diagnostics de la mémoire, vous devez positionner vos appels à `Checkpoint` de telle sorte qu'ils se trouvent hors de la portée des variables frame. Par exemple, placez des parenthèses de portée autour du code d'allocation, comme indiqué ci\-après :  
+ In general, you should not worry about heap objects associated with frame variables because they are automatically deallocated when the frame variables go out of scope. To avoid clutter in your memory diagnostic dumps, you should position your calls to `Checkpoint` so that they are outside the scope of frame variables. For example, place scope brackets around the previous allocation code, as shown here:  
   
 ```  
 oldMemState.Checkpoint();  
@@ -324,7 +340,7 @@ oldMemState.Checkpoint();
 newMemState.Checkpoint();  
 ```  
   
- Une fois la portée mise entre parenthèses, le dump mémoire, pour cet exemple, se présente de la façon suivante :  
+ With the scope brackets in place, the memory dump for this example is as follows:  
   
 ```  
 Dumping objects ->  
@@ -339,15 +355,15 @@ First Name: Alan
 Phone #: 581-0215  
 ```  
   
- **Allocations non\-objets**  
+ **Nonobject Allocations**  
   
- Comme vous pouvez le remarquer, certaines allocations sont des objets \(tels que `CPerson`\), tandis que d’autres sont des allocations non\-objets. Les « allocations non\-objets » sont des allocations pour des objets qui ne dérivent pas de `CObject` ou des allocations de types C primitifs, tels que `char`, `int` ou **long**. Si la classe dérivée **CObject \-** alloue de l'espace supplémentaire \(pour les mémoires tampons internes, par exemple\), ces objets afficheront à la fois des allocations objets et non\-objets.  
+ Notice that some allocations are objects (such as `CPerson`) and some are nonobject allocations. "Nonobject allocations" are allocations for objects not derived from `CObject` or allocations of primitive C types such as `char`, `int`, or `long`. If the **CObject-**derived class allocates additional space, such as for internal buffers, those objects will show both object and nonobject allocations.  
   
- **Prévention des fuites de mémoire**  
+ **Preventing Memory Leaks**  
   
- Notez que, dans le code ci\-dessus, le bloc de mémoire associé à la variable frame `CString` a été désalloué automatiquement et n'apparaît pas comme une fuite de mémoire. La désallocation automatique associée aux règles de portée se charge de la plupart des fuites de mémoire associées aux variables frame.  
+ Notice in the code above that the memory block associated with the `CString` frame variable has been deallocated automatically and does not show up as a memory leak. The automatic deallocation associated with scoping rules takes care of most memory leaks associated with frame variables.  
   
- Dans le cas des objets alloués sur le tas, cependant, vous devez supprimer l'objet de façon explicite pour éviter une fuite de mémoire. Pour nettoyer la dernière fuite de mémoire dans l'exemple précédent, supprimez l'objet `CPerson` alloué sur le tas, comme indiqué ci\-après :  
+ For objects allocated on the heap, however, you must explicitly delete the object to prevent a memory leak. To clean up the last memory leak in the previous example, delete the `CPerson` object allocated on the heap, as follows:  
   
 ```  
 {  
@@ -359,16 +375,16 @@ Phone #: 581-0215
 }  
 ```  
   
- [Dans cette rubrique](#BKMK_In_this_topic)  
+ [In this topic](#BKMK_In_this_topic)  
   
-####  <a name="BKMK_Customizing_object_dumps"></a> Personnalisation des dumps d'objets  
- Lorsque vous dérivez une classe de [CObject](/visual-cpp/mfc/reference/cobject-class), vous pouvez substituer la fonction membre `Dump` pour fournir des informations supplémentaires lorsque vous utilisez [DumpAllObjectsSince](../Topic/CMemoryState::DumpAllObjectsSince.md) pour faire un dump des objets dans la [fenêtre Sortie](../ide/reference/output-window.md).  
+####  <a name="BKMK_Customizing_object_dumps"></a> Customizing object dumps  
+ When you derive a class from [CObject](/cpp/mfc/reference/cobject-class), you can override the `Dump` member function to provide additional information when you use [DumpAllObjectsSince](/cpp/mfc/reference/cmemorystate-structure.md#cmemorystate__DumpAllObjectsSince) to dump objects to the [Output window](../ide/reference/output-window.md).  
   
- La fonction `Dump` écrit une représentation textuelle des variables de membre de l'objet dans un contexte de dump \([CDumpContext](/visual-cpp/mfc/reference/cdumpcontext-class)\). Le contexte de dump est similaire à un flux d'E\/S. Vous pouvez utiliser l'opérateur d'insertion \(**\<\<**\) pour envoyer des données à un `CDumpContext`.  
+ The `Dump` function writes a textual representation of the object's member variables to a dump context ([CDumpContext](/cpp/mfc/reference/cdumpcontext-class)). The dump context is similar to an I/O stream. You can use the append operator (**<<**) to send data to a `CDumpContext`.  
   
- Lorsque vous substituez la fonction `Dump`, vous devez d'abord appeler la version classe de base de la fonction `Dump` pour faire un dump du contenu de l'objet de classe de base. Sortez ensuite une description texte et une valeur pour chaque variable de membre de votre classe dérivée.  
+ When you override the `Dump` function, you should first call the base class version of `Dump` to dump the contents of the base class object. Then output a textual description and value for each member variable of your derived class.  
   
- La déclaration de la fonction `Dump` se présente de la façon suivante :  
+ The declaration of the `Dump` function looks like this:  
   
 ```  
 class CPerson : public CObject  
@@ -384,9 +400,9 @@ public:
 };  
 ```  
   
- Dans la mesure où le dump d'objets n'a de sens que dans le cadre du débogage de votre programme, la déclaration de la fonction `Dump` est mise entre parenthèses avec un bloc **\#ifdef \_DEBUG \/ \#endif**.  
+ Because object dumping only makes sense when you are debugging your program, the declaration of the `Dump` function is bracketed with an **#ifdef _DEBUG / #endif** block.  
   
- Dans l'exemple suivant, la fonction `Dump` appelle d'abord la fonction `Dump` pour sa classe de base. Elle écrit ensuite une brève description de chaque variable de membre avec la valeur du membre dans le flux du diagnostic.  
+ In the following example, the `Dump` function first calls the `Dump` function for its base class. It then writes a short description of each member variable along with the member's value to the diagnostic stream.  
   
 ```  
 #ifdef _DEBUG  
@@ -402,7 +418,7 @@ void CPerson::Dump( CDumpContext& dc ) const
 #endif  
 ```  
   
- Vous devez fournir un argument `CDumpContext` pour spécifier la destination de la sortie du dump. La version Debug des MFC fournit un objet `CDumpContext` prédéfini, nommé `afxDump`, qui envoie la sortie au débogueur.  
+ You must supply a `CDumpContext` argument to specify where the dump output will go. The Debug version of MFC supplies a predefined `CDumpContext` object named `afxDump` that sends output to the debugger.  
   
 ```  
 CPerson* pMyPerson = new CPerson;  
@@ -414,77 +430,77 @@ pMyPerson->Dump( afxDump );
 #endif  
 ```  
   
- [Dans cette rubrique](#BKMK_In_this_topic)  
+ [In this topic](#BKMK_In_this_topic)  
   
-##  <a name="BKMK_Reducing_the_size_of_an_MFC_Debug_build"></a> Réduction de la taille d'une version Debug MFC  
- Les informations de débogage pour une application MFC importante peuvent occuper beaucoup d'espace disque. Vous pouvez utiliser une de ces procédures pour réduire la taille :  
+##  <a name="BKMK_Reducing_the_size_of_an_MFC_Debug_build"></a> Reducing the size of an MFC Debug build  
+ The debug information for a large MFC application can take up a lot of disk space. You can use one of these procedures to reduce the size:  
   
-1.  Régénérez les bibliothèques MFC avec l’option [\/Z7, \/Zi, \/ZI \(Format des informations de débogage\)](/visual-cpp/build/reference/z7-zi-zi-debug-information-format), plutôt qu’avec **\/Z7**. Ces options génèrent un seul fichier de base de données de programme \(PDB\), qui contient les informations de débogage pour la bibliothèque entière, ce qui permet de réduire la redondance et d'économiser de l'espace.  
+1.  Rebuild the MFC libraries using the [/Z7, /Zi, /ZI (Debug Information Format)](/cpp/build/reference/z7-zi-zi-debug-information-format) option, instead of **/Z7**. These options build a single program database (PDB) file that contains debug information for the entire library, reducing redundancy and saving space.  
   
-2.  Régénérez les bibliothèques MFC sans informations de débogage \(aucune option [\/Z7, \/Zi, \/ZI \(Format des informations de débogage\)](/visual-cpp/build/reference/z7-zi-zi-debug-information-format)\). Dans ce cas, l'absence d'informations de débogage vous empêchera d'utiliser la plupart des fonctions de débogage dans le code des bibliothèques MFC, mais étant donné que celles\-ci sont déjà déboguées minutieusement, cela n'est pas forcément un problème.  
+2.  Rebuild the MFC libraries without debug information (no [/Z7, /Zi, /ZI (Debug Information Format)](/cpp/build/reference/z7-zi-zi-debug-information-format) option). In this case, the lack of debug information will prevent you from using most debugger facilities within the MFC library code, but because the MFC libraries are already thoroughly debugged, this may not be a problem.  
   
-3.  Générez votre propre application avec les informations de débogage uniquement pour les modules sélectionnés comme décrit ci\-dessous.  
+3.  Build your own application with debug information for selected modules only as described below.  
   
- [Dans cette rubrique](#BKMK_In_this_topic)  
+ [In this topic](#BKMK_In_this_topic)  
   
-###  <a name="BKMK_Building_an_MFC_app_with_debug_information_for_selected_modules"></a> Génération d'une application MFC avec les informations de débogage pour les modules sélectionnés  
- La génération de modules sélectionnés avec les bibliothèques de débogage MFC vous permet d'utiliser le pas à pas et les autres fonctions de débogage dans ces modules. Cette procédure utilise à la fois le mode Debug et le mode Release du makefile de Visual C\+\+, d'où la nécessité des modifications décrites ci\-après \(et d'une régénération totale lorsqu'une version Release complète est requise\).  
+###  <a name="BKMK_Building_an_MFC_app_with_debug_information_for_selected_modules"></a> Building an MFC app with debug information for selected modules  
+ Building selected modules with the MFC debug libraries enables you to use stepping and the other debug facilities in those modules. This procedure makes use of both the Debug and Release modes of the Visual C++ makefile, thus necessitating the changes described in the following steps (and also making a "rebuild all" necessary when a full Release build is required).  
   
-1.  Dans l'Explorateur de solutions, sélectionnez le projet.  
+1.  In Solution Explorer, select the project.  
   
-2.  Dans le menu **Affichage**, sélectionnez **Pages de propriétés**.  
+2.  From the **View** menu, select **Property Pages**.  
   
-3.  Vous commencerez par créer une nouvelle configuration de projet.  
+3.  First, you will create a new project configuration.  
   
-    1.  Dans la boîte de dialogue **Pages de propriétés de \<Projet\>**, cliquez sur le bouton **Gestionnaire de configurations**.  
+    1.  In the **\<Project> Property Pages** dialog box, click the **Configuration Manager** button.  
   
-    2.  Dans la [boîte de dialogue Gestionnaire de configurations](http://msdn.microsoft.com/fr-fr/fa182dca-282e-4ae5-bf37-e155344ca18b), localisez votre projet à l'intérieur de la grille. Dans la colonne **Configuration**, sélectionnez **\<Nouveau...\>**.  
+    2.  In the [Configuration Manager dialog box](http://msdn.microsoft.com/en-us/fa182dca-282e-4ae5-bf37-e155344ca18b), locate your project in the grid. In the **Configuration** column, select **\<New...>**.  
   
-    3.  Dans la [boîte de dialogue Nouvelle configuration de projet](http://msdn.microsoft.com/fr-fr/cca616dc-05a6-4fe3-bdc1-40c72a66f2be), tapez un nom pour votre nouvelle configuration \(par exemple, « Débogage partiel »\) dans la zone **Nom de la configuration de projet**.  
+    3.  In the [New Project Configuration dialog box](http://msdn.microsoft.com/en-us/cca616dc-05a6-4fe3-bdc1-40c72a66f2be), type a name for your new configuration, such as "Partial Debug", in the **Project Configuration Name** box.  
   
-    4.  Dans la liste **Copier les paramètres à partir de**, cliquez sur **Release**.  
+    4.  In the **Copy Settings from** list, choose **Release**.  
   
-    5.  Cliquez sur **OK** pour fermer la boîte de dialogue **Nouvelle configuration de projet**.  
+    5.  Click **OK** to close the **New Project Configuration**dialog box.  
   
-    6.  Fermez la boîte de dialogue **Gestionnaire de configurations**.  
+    6.  Close the **Configuration Manager** dialog box.  
   
-4.  Vous définirez ensuite les options pour l'ensemble du projet.  
+4.  Now, you will set options for the entire project.  
   
-    1.  Dans la boîte de dialogue **Pages de propriétés**, sous le dossier **Propriétés de configuration**, sélectionnez la catégorie **Général**.  
+    1.  In the **Property Pages** dialog box, under the **Configuration Properties** folder, select the **General** category.  
   
-    2.  Dans la grille des paramètres du projet, développez **Paramètres par défaut du projet** \(si nécessaire\).  
+    2.  In the project settings grid, expand **Project Defaults** (if necessary).  
   
-    3.  Sous **Paramètres par défaut du projet**, recherchez **Utilisation des MFC**. Le paramètre en cours apparaît dans la colonne de droite de la grille. Cliquez sur le paramètre en cours et remplacez\-le par **Utiliser les MFC dans une bibliothèque statique**.  
+    3.  Under **Project Defaults**, find **Use of MFC**. The current setting appears in the right column of the grid. Click on the current setting and change it to **Use MFC in a Static Library**.  
   
-    4.  Dans le volet gauche de la boîte de dialogue **Pages de propriétés**, ouvrez le dossier **C\/C\+\+** et sélectionnez **Préprocesseur**. Dans la grille des propriétés, recherchez **Définitions de préprocesseur** et remplacez « NDEBUG » par « \_DEBUG ».  
+    4.  In the left pane of the **Properties Pages** dialog box, open the **C/C++** folder and select **Preprocessor**. In the properties grid, find **Preprocessor Definitions** and replace "NDEBUG" with "_DEBUG".  
   
-    5.  Dans le volet gauche de la boîte de dialogue **Pages de propriétés**, ouvrez le dossier **Éditeur de liens** et sélectionnez **Entrée** Category. Dans la grille des propriétés, recherchez **Dépendances supplémentaires**. Dans le paramètre **Dépendances supplémentaires**, tapez « NAFXCWD.LIB » et « LIBCMT ».  
+    5.  In the left pane of the **Properties Pages** dialog box, open the **Linker** folder and select the **Input** Category. In the properties grid, find **Additional Dependencies**. In the **Additional Dependencies** setting, type "NAFXCWD.LIB" and "LIBCMT."  
   
-    6.  Cliquez sur **OK** pour enregistrer les nouvelles options de génération et fermer la boîte de dialogue **Pages de propriétés**.  
+    6.  Click **OK** to save the new build options and close the **Property Pages** dialog box.  
   
-5.  Dans le menu **Générer**, cliquez sur **Régénérer**. Cela permet de supprimer les informations de débogage de vos modules, sans affecter la bibliothèque MFC.  
+5.  From the **Build** menu, select **Rebuild**. This removes all debug information from your modules but does not affect the MFC library.  
   
-6.  Vous devez à présent ajouter de nouveau les informations de débogage aux modules sélectionnés dans votre application. N'oubliez pas que vous ne pouvez définir des points d'arrêt et exécuter d'autres fonctions de débogage que dans les modules compilés avec les informations de débogage. Pour chaque fichier projet dans lequel vous voulez inclure les informations de débogage, procédez de la façon suivante :  
+6.  Now you must add debug information back to selected modules in your application. Remember that you can set breakpoints and perform other debugger functions only in modules you have compiled with debug information. For each project file in which you want to include debug information, carry out the following steps:  
   
-    1.  Dans l'Explorateur de solutions, ouvrez le dossier **Fichiers sources** situé sous votre projet.  
+    1.  In Solution Explorer, open the **Source Files** folder located under your project.  
   
-    2.  Sélectionnez le fichier pour lequel vous voulez définir les informations de débogage.  
+    2.  Select the file you want to set debug information for.  
   
-    3.  Dans le menu **Affichage**, sélectionnez **Pages de propriétés**.  
+    3.  From the **View** menu, select **Property Pages**.  
   
-    4.  Dans la boîte de dialogue **Pages de propriétés**, sous le dossier **Configuration Settings**, ouvrez le dossier **C\/C\+\+**, puis sélectionnez la catégorie **Général**.  
+    4.  In the **Property Pages** dialog box, under the **Configuration Settings** folder, open the **C/C++** folder then select the **General** category.  
   
-    5.  Dans la grille des propriétés, recherchez **Format des informations de débogage.**  
+    5.  In the properties grid, find **Debug Information Format.**  
   
-    6.  Cliquez sur les paramètres de **Format des informations de débogage** et sélectionnez l'option voulue \(généralement **\/ZI**\) pour les informations de débogage.  
+    6.  Click the **Debug Information Format** settings and select the desired option (usually **/ZI**) for debug information.  
   
-    7.  Si vous utilisez une application générée par un Assistant Application ou que vous possédez des en\-têtes précompilés, vous devez désactiver ou recompiler ces derniers avant de compiler les autres modules. Sinon, vous recevrez l'avertissement C4650 et le message d'erreur C2855. Vous pouvez désactiver les en\-têtes précompilés en modifiant le paramètre **Création\/Utilisation d'un en\-tête précompilé** dans la boîte de dialogue **Propriétés de \<Projet\>** \(dossier **Propriétés de configuration**, sous\-dossier **C\/C\+\+**, catégorie **En\-têtes précompilés**\).  
+    7.  If you are using an application wizard-generated application or have precompiled headers, you have to turn off the precompiled headers or recompile them before compiling the other modules. Otherwise, you will receive warning C4650 and error message C2855. You can turn off precompiled headers by changing the **Create/Use Precompiled Headers** setting in the **\<Project> Properties** dialog box (**Configuration Properties** folder, **C/C++** subfolder, **Precompiled Headers** category).  
   
-7.  Dans le menu **Générer**, cliquez sur **Générer** pour régénérer les fichiers projet  qui sont obsolètes.  
+7.  From the **Build** menu, select **Build** to rebuild project files that are out of date.  
   
- Au lieu d'utiliser la technique décrite dans cette rubrique, vous pouvez définir des options individuelles pour chaque fichier en recourant à un makefile externe. Dans ce cas, pour lier avec les bibliothèques de débogage MFC, vous devez avoir défini l'indicateur [\_DEBUG](/visual-cpp/c-runtime-library/debug) pour chaque module. Si vous voulez utiliser des bibliothèques MFC en version Release, vous devez définir NDEBUG. Pour plus d'informations sur l'écriture de makefiles externes, consultez la [Référence NMAKE](/visual-cpp/build/running-nmake).  
+ As an alternative to the technique described in this topic, you can use an external makefile to define individual options for each file. In that case, to link with the MFC debug libraries, you must define the [_DEBUG](/cpp/c-runtime-library/debug) flag for each module. If you want to use MFC release libraries, you must define NDEBUG. For more information on writing external makefiles, see the [NMAKE Reference](/cpp/build/running-nmake).  
   
- [Dans cette rubrique](#BKMK_In_this_topic)  
+ [In this topic](#BKMK_In_this_topic)  
   
-## Voir aussi  
- [Débogage Visual C\+\+](../debugger/debugging-native-code.md)
+## <a name="see-also"></a>See Also  
+ [Debugging Visual C++](../debugger/debugging-native-code.md)

@@ -1,52 +1,69 @@
 ---
-title: "IDebugSymbolProviderDirect::GetAppIDFromAddress | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-helpviewer_keywords: 
-  - "IDebugSymbolProviderDirect::GetAppIDFromAddress"
-  - "GetAppIDFromAddress"
+title: IDebugSymbolProviderDirect::GetAppIDFromAddress | Microsoft Docs
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology:
+- vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+helpviewer_keywords:
+- IDebugSymbolProviderDirect::GetAppIDFromAddress
+- GetAppIDFromAddress
 ms.assetid: d76a0f36-79c4-4c58-9db3-880b00d11610
 caps.latest.revision: 8
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 8
----
-# IDebugSymbolProviderDirect::GetAppIDFromAddress
-[!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]
+ms.author: gregvanl
+manager: ghogen
+translation.priority.mt:
+- cs-cz
+- de-de
+- es-es
+- fr-fr
+- it-it
+- ja-jp
+- ko-kr
+- pl-pl
+- pt-br
+- ru-ru
+- tr-tr
+- zh-cn
+- zh-tw
+ms.translationtype: MT
+ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
+ms.openlocfilehash: eb7c63a06b08a92afbba0571748a25245f5dd45f
+ms.contentlocale: fr-fr
+ms.lasthandoff: 08/28/2017
 
-Extrait l'identificateur du domaine d'application donné l'adresse de débogage.  
+---
+# <a name="idebugsymbolproviderdirectgetappidfromaddress"></a>IDebugSymbolProviderDirect::GetAppIDFromAddress
+Retrieves the application domain identifier given the debug address.  
   
-## Syntaxe  
+## <a name="syntax"></a>Syntax  
   
-```cpp#  
+```cpp  
 HRESULT GetAppIDFromAddress(  
-   IDebugAddress* pAddress,  
-   DWORD*         pAppID  
+   IDebugAddress* pAddress,  
+   DWORD*         pAppID  
 );  
 ```  
   
-```c#  
+```csharp  
 int GetAppIDFromAddress(  
-   IDebugAddress pAddress,  
-   out uint      pAppID  
+   IDebugAddress pAddress,  
+   out uint      pAppID  
 );  
 ```  
   
-#### Paramètres  
+#### <a name="parameters"></a>Parameters  
  `pAddress`  
- \[in\]  adresse de débogage qui est représentée par l'interface d' [IDebugAddress](../../../extensibility/debugger/reference/idebugaddress.md) .  
+ [in] Debug address that is represented by the [IDebugAddress](../../../extensibility/debugger/reference/idebugaddress.md) interface.  
   
  `pAppID`  
- \[out\]  identificateur du domaine d'application.  
+ [out] Identifier of the application domain.  
   
-## Valeur de retour  
- En cas de réussite, retourne `S_OK`; sinon, retourne un code d'erreur.  
+## <a name="return-value"></a>Return Value  
+ If successful, returns `S_OK`; otherwise, returns an error code.  
   
-## Voir aussi  
+## <a name="see-also"></a>See Also  
  [IDebugSymbolProviderDirect](../../../extensibility/debugger/reference/idebugsymbolproviderdirect.md)

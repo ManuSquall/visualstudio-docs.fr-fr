@@ -1,5 +1,5 @@
 ---
-title: IDebugObject::IsNullReference | Documents Microsoft
+title: IDebugObject::IsNullReference | Microsoft Docs
 ms.custom: 
 ms.date: 11/04/2016
 ms.reviewer: 
@@ -30,38 +30,39 @@ translation.priority.mt:
 - tr-tr
 - zh-cn
 - zh-tw
-translationtype: Machine Translation
-ms.sourcegitcommit: 5db97d19b1b823388a465bba15d057b30ff0b3ce
-ms.openlocfilehash: 8dc2376af276a99dd63bbc4d4ffd89825acc1762
-ms.lasthandoff: 02/22/2017
+ms.translationtype: MT
+ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
+ms.openlocfilehash: dee4f1909ec5f6e66c7f828b5552ff424b4d9edc
+ms.contentlocale: fr-fr
+ms.lasthandoff: 08/28/2017
 
 ---
 # <a name="idebugobjectisnullreference"></a>IDebugObject::IsNullReference
-Teste si cet objet est une référence null.  
+Tests whether this object is a null reference.  
   
-## <a name="syntax"></a>Syntaxe  
+## <a name="syntax"></a>Syntax  
   
-```cpp#  
+```cpp  
 HRESULT IsNullReference(   
    BOOL* pfIsNull  
 );  
 ```  
   
-```c#  
+```csharp  
 int IsNullReference(  
    out int pfIsNull  
 );  
 ```  
   
-#### <a name="parameters"></a>Paramètres  
+#### <a name="parameters"></a>Parameters  
  `pfIsNull`  
- [out] Renvoie une valeur non zéro (`TRUE`) si cet objet est une référence null ; sinon, retourne zéro (`FALSE`).  
+ [out] Returns non-zero (`TRUE`) if this object is a null reference; otherwise, returns zero (`FALSE`).  
   
-## <a name="return-value"></a>Valeur de retour  
- En cas de réussite, retourne S_OK ; Sinon, retourne un code d’erreur.  
+## <a name="return-value"></a>Return Value  
+ If successful, returns S_OK; otherwise, returns an error code.  
   
-## <a name="remarks"></a>Notes  
- Une référence null signifie un objet vide ou qui n’a pas été affecté à un objet.  
+## <a name="remarks"></a>Remarks  
+ A null reference means an empty object or an object that has not been assigned to.  
   
-## <a name="see-also"></a>Voir aussi  
+## <a name="see-also"></a>See Also  
  [IDebugObject](../../../extensibility/debugger/reference/idebugobject.md)

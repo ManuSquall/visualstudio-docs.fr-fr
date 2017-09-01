@@ -1,67 +1,68 @@
 ---
-title: "Comment&#160;: afficher des documents en mode Aper&#231;u avant impression par programmation"
-ms.custom: ""
-ms.date: "02/02/2017"
-ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "office-development"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-dev_langs: 
-  - "VB"
-  - "CSharp"
-helpviewer_keywords: 
-  - "Word (développement Office dans Visual Studio), affichage des documents en mode Aperçu avant impression"
-  - "documents (développement Office dans Visual Studio), affichage en mode Aperçu avant impression"
+title: 'How to: Programmatically Display Documents in Print Preview | Microsoft Docs'
+ms.custom: 
+ms.date: 02/02/2017
+ms.prod: visual-studio-dev14
+ms.reviewer: 
+ms.suite: 
+ms.technology:
+- office-development
+ms.tgt_pltfrm: 
+ms.topic: article
+dev_langs:
+- VB
+- CSharp
+helpviewer_keywords:
+- Word [Office development in Visual Studio], displaying documents in print preview
+- documents [Office development in Visual Studio], displaying in print preview
 ms.assetid: 96c7faea-9c5c-42b4-a009-08894a6d15c9
 caps.latest.revision: 39
-author: "kempb"
-ms.author: "kempb"
-manager: "ghogen"
-caps.handback.revision: 38
+author: kempb
+ms.author: kempb
+manager: ghogen
+ms.translationtype: HT
+ms.sourcegitcommit: eb5c9550fd29b0e98bf63a7240737da4f13f3249
+ms.openlocfilehash: 0fe14cd11a3b2b9a94a0e39f60d1ddc9b4bfe0b0
+ms.contentlocale: fr-fr
+ms.lasthandoff: 08/30/2017
+
 ---
-# Comment&#160;: afficher des documents en mode Aper&#231;u avant impression par programmation
-  Si votre solution génère un rapport, vous pouvez afficher ce dernier pour l’utilisateur en mode Aperçu avant impression.  
+# <a name="how-to-programmatically-display-documents-in-print-preview"></a>How to: Programmatically Display Documents in Print Preview
+  If your solution generates a report, you might want to display the report to the user in Print Preview mode.  
   
  [!INCLUDE[appliesto_wdalldocapp](../vsto/includes/appliesto-wdalldocapp-md.md)]  
   
-## Procédures pour les personnalisations au niveau du document  
+## <a name="procedures-for-document-level-customizations"></a>Procedures for Document-Level Customizations  
   
-#### Pour afficher un document en mode Aperçu avant impression en appelant la méthode PrintPreview  
+#### <a name="to-display-a-document-in-print-preview-by-calling-the-printpreview-method"></a>To display a document in Print Preview by calling the PrintPreview method  
   
-1.  Appelez la méthode <xref:Microsoft.Office.Tools.Word.Document.PrintPreview%2A> de la classe <xref:Microsoft.Office.Tools.Word.Document>. Pour utiliser cet exemple de code, exécutez\-le à partir de la classe `ThisDocument` de votre projet.  
+1.  Call the <xref:Microsoft.Office.Tools.Word.Document.PrintPreview%2A> method of the <xref:Microsoft.Office.Tools.Word.Document> class. To use this code example, run it from the `ThisDocument` class in your project.  
   
-     [!code-csharp[Trin_VstcoreWordAutomation#13](../snippets/csharp/VS_Snippets_OfficeSP/Trin_VstcoreWordAutomation/CS/ThisDocument.cs#13)]
-     [!code-vb[Trin_VstcoreWordAutomation#13](../snippets/visualbasic/VS_Snippets_OfficeSP/Trin_VstcoreWordAutomation/VB/ThisDocument.vb#13)]  
+     [!code-vb[Trin_VstcoreWordAutomation#13](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationVB/ThisDocument.vb#13)]  [!code-csharp[Trin_VstcoreWordAutomation#13](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationCS/ThisDocument.cs#13)]  
   
-#### Pour afficher un document en mode Aperçu avant impression en définissant la propriété PrintPreview  
+#### <a name="to-display-a-document-in-print-preview-by-setting-the-printpreview-property"></a>To display a document in Print Preview by setting the PrintPreview property  
   
-1.  Affectez la valeur <xref:Microsoft.Office.Interop.Word._Application.PrintPreview%2A> à la propriété <xref:Microsoft.Office.Interop.Word.Application> de l'objet **true**.  
+1.  Set the <xref:Microsoft.Office.Interop.Word._Application.PrintPreview%2A> property of the <xref:Microsoft.Office.Interop.Word.Application> object to **true**.  
   
-     [!code-csharp[Trin_VstcoreWordAutomation#14](../snippets/csharp/VS_Snippets_OfficeSP/Trin_VstcoreWordAutomation/CS/ThisDocument.cs#14)]
-     [!code-vb[Trin_VstcoreWordAutomation#14](../snippets/visualbasic/VS_Snippets_OfficeSP/Trin_VstcoreWordAutomation/VB/ThisDocument.vb#14)]  
+     [!code-vb[Trin_VstcoreWordAutomation#14](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationVB/ThisDocument.vb#14)]  [!code-csharp[Trin_VstcoreWordAutomation#14](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationCS/ThisDocument.cs#14)]  
   
-## Procédures pour les compléments VSTO  
+## <a name="procedures-for-vsto-add-ins"></a>Procedures for VSTO Add-ins  
   
-#### Pour afficher un document en mode Aperçu avant impression en appelant la méthode PrintPreview  
+#### <a name="to-display-a-document-in-print-preview-by-calling-the-printpreview-method"></a>To display a document in Print Preview by calling the PrintPreview method  
   
-1.  Appelez la méthode <xref:Microsoft.Office.Interop.Word._Document.PrintPreview%2A> du <xref:Microsoft.Office.Interop.Word.Document> dont vous souhaitez afficher l’aperçu. Pour utiliser cet exemple de code, exécutez\-le à partir de la classe `ThisAddIn` de votre projet.  
+1.  Call the <xref:Microsoft.Office.Interop.Word._Document.PrintPreview%2A> method of the <xref:Microsoft.Office.Interop.Word.Document> that you want to preview. To use this code example, run it from the `ThisAddIn` class in your project.  
   
-     [!code-csharp[Trin_VstcoreWordAutomationAddIn#13](../snippets/csharp/VS_Snippets_OfficeSP/Trin_VstcoreWordAutomationAddIn/CS/ThisAddIn.cs#13)]
-     [!code-vb[Trin_VstcoreWordAutomationAddIn#13](../snippets/visualbasic/VS_Snippets_OfficeSP/Trin_VstcoreWordAutomationAddIn/VB/ThisAddIn.vb#13)]  
+     [!code-vb[Trin_VstcoreWordAutomationAddIn#13](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationAddIn/ThisAddIn.vb#13)]  [!code-csharp[Trin_VstcoreWordAutomationAddIn#13](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationAddIn/ThisAddIn.cs#13)]  
   
-#### Pour afficher un document en mode Aperçu avant impression en définissant la propriété PrintPreview  
+#### <a name="to-display-a-document-in-print-preview-by-setting-the-printpreview-property"></a>To display a document in Print Preview by setting the PrintPreview property  
   
-1.  Affectez la valeur <xref:Microsoft.Office.Interop.Word._Application.PrintPreview%2A> à la propriété <xref:Microsoft.Office.Interop.Word.Application> de l'objet **true**.  
+1.  Set the <xref:Microsoft.Office.Interop.Word._Application.PrintPreview%2A> property of the <xref:Microsoft.Office.Interop.Word.Application> object to **true**.  
   
-     [!code-csharp[Trin_VstcoreWordAutomation#14](../snippets/csharp/VS_Snippets_OfficeSP/Trin_VstcoreWordAutomation/CS/ThisDocument.cs#14)]
-     [!code-vb[Trin_VstcoreWordAutomation#14](../snippets/visualbasic/VS_Snippets_OfficeSP/Trin_VstcoreWordAutomation/VB/ThisDocument.vb#14)]  
+     [!code-vb[Trin_VstcoreWordAutomation#14](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationVB/ThisDocument.vb#14)]  [!code-csharp[Trin_VstcoreWordAutomation#14](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationCS/ThisDocument.cs#14)]  
   
-## Voir aussi  
- [Comment : imprimer des documents par programmation](../vsto/how-to-programmatically-print-documents.md)   
- [Comment : ouvrir des documents existants par programmation](../vsto/how-to-programmatically-open-existing-documents.md)   
- [Comment : créer des documents par programmation](../vsto/how-to-programmatically-create-new-documents.md)  
+## <a name="see-also"></a>See Also  
+ [How to: Programmatically Print Documents](../vsto/how-to-programmatically-print-documents.md)   
+ [How to: Programmatically Open Existing Documents](../vsto/how-to-programmatically-open-existing-documents.md)   
+ [How to: Programmatically Create New Documents](../vsto/how-to-programmatically-create-new-documents.md)  
   
   

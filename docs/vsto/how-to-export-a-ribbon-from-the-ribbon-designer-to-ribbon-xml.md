@@ -1,76 +1,80 @@
 ---
-title: "Comment&#160;: exporter un ruban &#224; partir du Concepteur de ruban vers l&#39;&#233;l&#233;ment XML Ribbon"
-ms.custom: ""
-ms.date: "02/02/2017"
-ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "office-development"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-dev_langs: 
-  - "VB"
-  - "CSharp"
-helpviewer_keywords: 
-  - "ruban personnalisé, XML"
-  - "personnaliser le ruban, XML"
-  - "exporter un ruban"
-  - "ruban (développement Office dans Visual Studio), exporter"
-  - "ruban (développement Office dans Visual Studio), XML"
-  - "Concepteur de ruban (développement Office dans Visual Studio)"
-  - "XML (développement Office dans Visual Studio), ruban"
+title: 'How to: Export a Ribbon from the Ribbon Designer to Ribbon XML | Microsoft Docs'
+ms.custom: 
+ms.date: 02/02/2017
+ms.prod: visual-studio-dev14
+ms.reviewer: 
+ms.suite: 
+ms.technology:
+- office-development
+ms.tgt_pltfrm: 
+ms.topic: article
+dev_langs:
+- VB
+- CSharp
+helpviewer_keywords:
+- custom Ribbon, XML
+- customizing the Ribbon, XML
+- Ribbon [Office development in Visual Studio], XML
+- Ribbon [Office development in Visual Studio], exporting
+- XML [Office development in Visual Studio], Ribbon
+- Ribbon Designer [Office development in Visual Studio]
+- exporting Ribbon
 ms.assetid: 96e0e9ed-4392-4f45-ac33-b6f7c22ea321
 caps.latest.revision: 37
-author: "kempb"
-ms.author: "kempb"
-manager: "ghogen"
-caps.handback.revision: 33
+author: kempb
+ms.author: kempb
+manager: ghogen
+ms.translationtype: HT
+ms.sourcegitcommit: eb5c9550fd29b0e98bf63a7240737da4f13f3249
+ms.openlocfilehash: cf3b9b66e0626328bccac92ab473dee33326b0f2
+ms.contentlocale: fr-fr
+ms.lasthandoff: 08/30/2017
+
 ---
-# Comment&#160;: exporter un ruban &#224; partir du Concepteur de ruban vers l&#39;&#233;l&#233;ment XML Ribbon
-  L'élément **Ruban \(Concepteur visuel\)** ne prend pas en charge tous les types possibles de personnalisations du ruban.  Pour effectuer une personnalisation avancée du ruban, vous pouvez exporter le ruban du concepteur vers l'élément XML Ribbon et modifier directement le XML.  
+# <a name="how-to-export-a-ribbon-from-the-ribbon-designer-to-ribbon-xml"></a>How to: Export a Ribbon from the Ribbon Designer to Ribbon XML
+  The **Ribbon (Visual Designer)** item does not support all possible types of Ribbon customization. To customize the Ribbon in advanced ways, you can export the Ribbon from the designer to Ribbon XML and edit the XML directly.  
   
 > [!NOTE]  
->  Toutes les valeurs de propriété n'apparaissent pas dans le fichier XML du ruban.  Pour plus d’informations, consultez [Vue d'ensemble du ruban](../vsto/ribbon-overview.md).  
+>  Not all property values appear in the Ribbon XML file. For more information, see [Ribbon Overview](../vsto/ribbon-overview.md).  
   
  [!INCLUDE[appliesto_ribbon](../vsto/includes/appliesto-ribbon-md.md)]  
   
-### Pour exporter un ruban à partir du Concepteur de ruban vers l'élément XML Ribbon  
+### <a name="to-export-a-ribbon-from-the-ribbon-designer-to-ribbon-xml"></a>To export a Ribbon from the Ribbon Designer to Ribbon XML  
   
-1.  Dans l'**Explorateur de solutions**, cliquez avec le bouton droit sur le fichier de code du ruban, puis cliquez sur **Concepteur de vues**.  
+1.  Right-click the Ribbon code file in **Solution Explorer**, and then click **View Designer**.  
   
-2.  Cliquez avec le bouton droit sur le Concepteur de ruban, puis cliquez sur **Exporter le ruban au format XML**.  
+2.  Right-click the Ribbon Designer, and then click **Export Ribbon to XML**.  
   
-     Visual Studio ajoute un fichier XML de ruban et un fichier de code XML de ruban à votre projet.  
+     Visual Studio adds a Ribbon XML file and a Ribbon XML code file to your project.  
   
-3.  Dans la classe de code du ruban, recherchez les commentaires commençant par `TODO:.`  
+3.  In the Ribbon code class, locate the comments that start with `TODO:`.  
   
-4.  Copiez le bloc de code de ces commentaires vers la classe **ThisAddin**, **ThisWorkbook**ou **ThisDocument**, selon le type de solution que vous développez.  
+4.  Copy the code block in these comments to the **ThisAddin**, **ThisWorkbook**, or **ThisDocument** class, depending on which type of solution you are developing.  
   
-     Ce code permet à l'application Microsoft Office de détecter et de charger votre ruban personnalisé.  Pour plus d’informations, consultez [Élément XML Ribbon](../vsto/ribbon-xml.md).  
+     This code enables the Microsoft Office application to discover and load your custom Ribbon. For more information, see [Ribbon XML](../vsto/ribbon-xml.md).  
   
-5.  Dans la classe **ThisAddin**, **ThisWorkbook**ou **ThisDocument**, supprimez les marques de commentaire du bloc de code.  
+5.  In the **ThisAddin**, **ThisWorkbook**, or **ThisDocument** class, uncomment the code block.  
   
-     Une fois que vous avez supprimé les marques de commentaire du code, il doit ressembler à l'exemple suivant.  Dans cet exemple, la classe du ruban est appelée `MyRibbon`.  
+     After you uncomment the code, it should resemble the following example. In this example, the Ribbon class is called `MyRibbon`.  
   
-     [!code-csharp[Trin_Ribbon_Custom_Tab_XML#1](../snippets/csharp/VS_Snippets_OfficeSP/Trin_Ribbon_Custom_Tab_XML/CS/ThisAddIn.cs#1)]
-     [!code-vb[Trin_Ribbon_Custom_Tab_XML#1](../snippets/visualbasic/VS_Snippets_OfficeSP/Trin_Ribbon_Custom_Tab_XML/VB/ThisAddIn.vb#1)]  
+     [!code-csharp[Trin_Ribbon_Custom_Tab_XML#1](../vsto/codesnippet/CSharp/Trin_Ribbon_Custom_Tab_XML_O12/ThisAddIn.cs#1)]  [!code-vb[Trin_Ribbon_Custom_Tab_XML#1](../vsto/codesnippet/VisualBasic/Trin_Ribbon_Custom_Tab_XML_O12/ThisAddIn.vb#1)]  
   
-6.  Basculez sur le fichier de code XML du ruban et recherchez la région `Ribbon Callbacks`.  
+6.  Switch to the Ribbon XML code file and find the `Ribbon Callbacks` region.  
   
-     Elle permet d'écrire des méthodes de rappel pour gérer des actions de l'utilisateur, telles qu'un clic sur un bouton.  
+     This is where you write callback methods to handle user actions, such as clicking a button.  
   
-7.  Créez une méthode de rappel pour chaque gestionnaire d'événements que vous avez écrit dans le code du Concepteur de ruban.  
+7.  Create a callback method for each event handler that you wrote in the Ribbon Designer code.  
   
-8.  Déplacez l'ensemble de votre code de gestionnaire d'événements vers les méthodes de rappel et modifiez le code pour utiliser le modèle de programmation d'extensibilité du ruban \(RibbonX\).  
+8.  Move all your event handler code from the event handlers to the callback methods, and modify the code to work with the Ribbon extensibility (RibbonX) programming model.  
   
-     Pour plus d'informations sur l'écriture de méthodes de rappel et l'utilisation du modèle de programmation RibbonX, consultez [Élément XML Ribbon](../vsto/ribbon-xml.md).  
+     For information about writing callback methods and using the RibbonX programming model, see [Ribbon XML](../vsto/ribbon-xml.md).  
   
-## Voir aussi  
- [Vue d'ensemble du ruban](../vsto/ribbon-overview.md)   
- [Concepteur de ruban](../vsto/ribbon-designer.md)   
- [Élément XML Ribbon](../vsto/ribbon-xml.md)   
- [Procédure pas à pas : création d'un onglet personnalisé à l'aide du Concepteur de ruban](../vsto/walkthrough-creating-a-custom-tab-by-using-the-ribbon-designer.md)   
- [Procédure pas à pas : création d'un onglet personnalisé à l'aide d'un élément XML Ribbon](../vsto/walkthrough-creating-a-custom-tab-by-using-ribbon-xml.md)  
+## <a name="see-also"></a>See Also  
+ [Ribbon Overview](../vsto/ribbon-overview.md)   
+ [Ribbon Designer](../vsto/ribbon-designer.md)   
+ [Ribbon XML](../vsto/ribbon-xml.md)   
+ [Walkthrough: Creating a Custom Tab by Using the Ribbon Designer](../vsto/walkthrough-creating-a-custom-tab-by-using-the-ribbon-designer.md)   
+ [Walkthrough: Creating a Custom Tab by Using Ribbon XML](../vsto/walkthrough-creating-a-custom-tab-by-using-ribbon-xml.md)  
   
   

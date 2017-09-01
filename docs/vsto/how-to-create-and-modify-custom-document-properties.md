@@ -1,49 +1,53 @@
 ---
-title: "Comment&#160;: cr&#233;er et modifier des propri&#233;t&#233;s de document personnalis&#233;es"
-ms.custom: ""
-ms.date: "02/02/2017"
-ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "office-development"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-dev_langs: 
-  - "VB"
-  - "CSharp"
-helpviewer_keywords: 
-  - "propriétés de documents personnalisés"
-  - "documents (développement Office dans Visual Studio), propriétés"
-  - "propriétés de document (développement Office dans Visual Studio)"
+title: 'How to: Create and Modify Custom Document Properties | Microsoft Docs'
+ms.custom: 
+ms.date: 02/02/2017
+ms.prod: visual-studio-dev14
+ms.reviewer: 
+ms.suite: 
+ms.technology:
+- office-development
+ms.tgt_pltfrm: 
+ms.topic: article
+dev_langs:
+- VB
+- CSharp
+helpviewer_keywords:
+- custom document properties
+- documents [Office development in Visual Studio], properties
+- document properties [Office development in Visual Studio]
 ms.assetid: 99d9dfaf-891f-4f3b-a580-67362afdaf34
 caps.latest.revision: 47
-author: "kempb"
-ms.author: "kempb"
-manager: "ghogen"
-caps.handback.revision: 46
+author: kempb
+ms.author: kempb
+manager: ghogen
+ms.translationtype: HT
+ms.sourcegitcommit: eb5c9550fd29b0e98bf63a7240737da4f13f3249
+ms.openlocfilehash: 3bf28426b348e5ac9f91021d0b74e2f60e7204b9
+ms.contentlocale: fr-fr
+ms.lasthandoff: 08/30/2017
+
 ---
-# Comment&#160;: cr&#233;er et modifier des propri&#233;t&#233;s de document personnalis&#233;es
-  Les applications Microsoft Office répertoriées ci\-dessus fournissent des propriétés intégrées qui sont stockées avec les documents. En outre, vous pouvez créer et modifier des propriétés de document personnalisées si vous souhaitez stocker des informations supplémentaires avec le document.  
+# <a name="how-to-create-and-modify-custom-document-properties"></a>How to: Create and Modify Custom Document Properties
+  The Microsoft Office applications listed above provide built-in properties that are stored with documents. In addition, you can create and modify custom document properties if there is additional information you want to store with the document.  
   
  [!INCLUDE[appliesto_docprops](../vsto/includes/appliesto-docprops-md.md)]  
   
- Utilisez la propriété CustomDocumentProperties d'un document pour utiliser des propriétés personnalisées. Par exemple, dans un projet au niveau du document pour Microsoft Office Excel, utilisez la propriété <xref:Microsoft.Office.Tools.Excel.Workbook.CustomDocumentProperties%2A> de la classe `ThisWorkbook`. Dans un projet de complément VSTO pour Excel, utilisez la propriété <xref:Microsoft.Office.Interop.Excel._Workbook.CustomDocumentProperties%2A> d'un objet <xref:Microsoft.Office.Interop.Excel.Workbook>. Ces propriétés retournent un objet <xref:Microsoft.Office.Core.DocumentProperties>, qui est une collection d'objets <xref:Microsoft.Office.Core.DocumentProperty>. Vous pouvez utiliser la propriété `Item` de la collection pour récupérer une propriété particulière, par nom ou par index dans la collection.  
+ Use the CustomDocumentProperties property of a document to work with custom properties. For example, in a document-level project for Microsoft Office Excel, use the <xref:Microsoft.Office.Tools.Excel.Workbook.CustomDocumentProperties%2A> property of the `ThisWorkbook` class. In a VSTO Add-in project for Excel, use the <xref:Microsoft.Office.Interop.Excel._Workbook.CustomDocumentProperties%2A> property of a <xref:Microsoft.Office.Interop.Excel.Workbook> object. These properties return a <xref:Microsoft.Office.Core.DocumentProperties> object, which is a collection of <xref:Microsoft.Office.Core.DocumentProperty> objects. You can use the `Item` property of the collection to retrieve a particular property, either by name or by index within the collection.  
   
- L'exemple suivant illustre l'ajout d'une propriété personnalisée dans une personnalisation au niveau du document pour Excel et l'affectation d'une valeur à cette propriété.  
+ The following example demonstrates how to add a custom property in a document-level customization for Excel and assign it a value.  
   
- ![lien vers la vidéo](~/data-tools/media/playvideo.gif "lien vers la vidéo") Pour visionner la vidéo de démonstration associée, consultez [omment : accéder aux propriétés de document personnalisées et les manipuler dans Microsoft Word](http://go.microsoft.com/fwlink/?LinkId=136772).  
+ ![link to video](../vsto/media/playvideo.gif "link to video") For a related video demonstration, see [How Do I: Access and Manipulate Custom Document Properties in Microsoft Word?](http://go.microsoft.com/fwlink/?LinkId=136772).  
   
-## Exemple  
- [!code-csharp[Trin_VstcoreProgramming#6](../snippets/csharp/VS_Snippets_OfficeSP/Trin_VstcoreProgramming/CS/ThisWorkbook.cs#6)]
- [!code-vb[Trin_VstcoreProgramming#6](../snippets/visualbasic/VS_Snippets_OfficeSP/Trin_VstcoreProgramming/VB/ThisWorkbook.vb#6)]  
+## <a name="example"></a>Example  
+ [!code-vb[Trin_VstcoreProgramming#6](../vsto/codesnippet/VisualBasic/Trin_VstcoreProgrammingExcelVB/ThisWorkbook.vb#6)] [!code-csharp[Trin_VstcoreProgramming#6](../vsto/codesnippet/CSharp/Trin_VstcoreProgrammingExcelCS/ThisWorkbook.cs#6)]  
   
-## Programmation fiable  
- Toute tentative d'accès à la propriété `Value` pour des propriétés non définies lève une exception.  
+## <a name="robust-programming"></a>Robust Programming  
+ Attempting to access the `Value` property for undefined properties raises an exception.  
   
-## Voir aussi  
- [Programmation de compléments VSTO](../vsto/programming-vsto-add-ins.md)   
- [Programmation de personnalisations au niveau du document](../vsto/programming-document-level-customizations.md)   
- [Comment : lire des propriétés de document et en écrire](../vsto/how-to-read-from-and-write-to-document-properties.md)  
+## <a name="see-also"></a>See Also  
+ [Programming VSTO Add-Ins](../vsto/programming-vsto-add-ins.md)   
+ [Programming Document-Level Customizations](../vsto/programming-document-level-customizations.md)   
+ [How to: Read from and Write to Document Properties](../vsto/how-to-read-from-and-write-to-document-properties.md)  
   
   

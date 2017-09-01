@@ -1,106 +1,109 @@
 ---
-title: "Proc&#233;dure pas &#224; pas&#160;: cr&#233;ation d&#39;une page d&#39;application SharePoint"
-ms.custom: ""
-ms.date: "02/02/2017"
-ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "office-development"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-dev_langs: 
-  - "VB"
-  - "CSharp"
-  - "VB"
-  - "CSharp"
-helpviewer_keywords: 
-  - "pages d’application (développement SharePoint dans Visual Studio), développement"
-  - "pages d’application (développement SharePoint dans Visual Studio), création"
+title: 'Walkthrough: Creating a SharePoint Application Page | Microsoft Docs'
+ms.custom: 
+ms.date: 02/02/2017
+ms.prod: visual-studio-dev14
+ms.reviewer: 
+ms.suite: 
+ms.technology:
+- office-development
+ms.tgt_pltfrm: 
+ms.topic: article
+dev_langs:
+- VB
+- CSharp
+- VB
+- CSharp
+helpviewer_keywords:
+- application pages [SharePoint development in Visual Studio], developing
+- application pages [SharePoint development in Visual Studio], creating
 ms.assetid: 5b6dd941-5c59-4a89-89d0-8e973a00ae9e
 caps.latest.revision: 42
-author: "kempb"
-ms.author: "kempb"
-manager: "ghogen"
-caps.handback.revision: 41
+author: kempb
+ms.author: kempb
+manager: ghogen
+ms.translationtype: HT
+ms.sourcegitcommit: eb5c9550fd29b0e98bf63a7240737da4f13f3249
+ms.openlocfilehash: 7f3be03c1c3dd5c782c53d116c9a080d11f7d4b9
+ms.contentlocale: fr-fr
+ms.lasthandoff: 08/30/2017
+
 ---
-# Proc&#233;dure pas &#224; pas&#160;: cr&#233;ation d&#39;une page d&#39;application SharePoint
-  Une page d'application désigne une forme spécifique de page ASP.NET.  Les pages d'application comportent du contenu qui est fusionné avec une page maître SharePoint.  Pour plus d'informations, consultez [Création de pages d'application pour SharePoint](../sharepoint/creating-application-pages-for-sharepoint.md).  
+# <a name="walkthrough-creating-a-sharepoint-application-page"></a>Walkthrough: Creating a SharePoint Application Page
+  An application page is a specialized form of an ASP.NET page. Application pages contain content that's merged with a SharePoint master page. For more information, see [Creating Application Pages for SharePoint](../sharepoint/creating-application-pages-for-sharepoint.md).  
   
- Cette procédure pas à pas vous indique comment créer une page d'application et la déboguer à l'aide d'un site SharePoint local.  Cette page affiche tous les éléments que chaque utilisateur a créés ou modifiés dans tous les sites de la batterie de serveurs.  
+ This walkthrough shows you how to create an application page and then debug it by using a local SharePoint site. This page shows all items that each user has created or modified in all sites on the server farm.  
   
- Cette procédure pas à pas décrit les tâches suivantes :  
+ This walkthrough illustrates the following tasks:  
   
--   Création d'un projet SharePoint  
+-   Creating a SharePoint project.  
   
--   Ajout d'une page d'application au projet SharePoint  
+-   Adding an application page to the SharePoint project.  
   
--   Ajout de contrôles ASP.NET à la page d'application  
+-   Adding ASP.NET controls to the application page.  
   
--   Ajout de code\-behind aux contrôles ASP.NET  
+-   Adding code behind the ASP.NET controls.  
   
--   Test de la page d'application  
+-   Testing the application page.  
   
 > [!NOTE]  
->  Il est possible que pour certains des éléments de l'interface utilisateur de Visual Studio, votre ordinateur affiche des noms ou des emplacements différents de ceux indiqués dans les instructions suivantes.  Ces éléments dépendent de l'édition de Visual Studio dont vous disposez et des paramètres que vous utilisez.  Pour plus d'informations, consultez [Customizing Development Settings in Visual Studio](http://msdn.microsoft.com/fr-fr/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
+>  Your computer might show different names or locations for some of the Visual Studio user interface elements in the following instructions. The Visual Studio edition that you have and the settings that you use determine these elements. For more information, see [Personalize the Visual Studio IDE](../ide/personalizing-the-visual-studio-ide.md).  
   
-## Composants requis  
- Pour exécuter cette procédure pas à pas, vous devez disposer des composants suivants :  
+## <a name="prerequisites"></a>Prerequisites  
+ You need the following components to complete this walkthrough:  
   
--   Éditions prises en charge de Windows et SharePoint.  Pour plus d'informations, consultez [Configuration requise pour développer des solutions SharePoint](../sharepoint/requirements-for-developing-sharepoint-solutions.md).  
+-   Supported editions of Windows and SharePoint. For more information, see [Requirements for Developing SharePoint Solutions](../sharepoint/requirements-for-developing-sharepoint-solutions.md).  
   
--   [!INCLUDE[vsPro](../sharepoint/includes/vspro-md.md)] ou une édition de Visual Studio Ultimate ou Visual Studio Premium.  
+-   [!INCLUDE[vsPro](../sharepoint/includes/vspro-md.md)] or an edition of Visual Studio Ultimate or Visual Studio Premium.  
   
-## Création d'un projet SharePoint  
- Commencez par créer un **Projet SharePoint vide**.  Vous ajouterez ensuite un élément **Page Application** à ce projet.  
+## <a name="creating-a-sharepoint-project"></a>Creating a SharePoint Project  
+ First, create an **Empty SharePoint Project**. Later, you will add an **Application Page** item to this project.  
   
-#### Pour créer un projet SharePoint  
+#### <a name="to-create-a-sharepoint-project"></a>To create a SharePoint Project  
   
-1.  Démarrez [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)].  
+1.  Start [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)].  
   
-2.  Ouvrez la boîte de dialogue **Nouveau projet**, développez le nœud **Office\/SharePoint** sous le langage que vous souhaitez utiliser, puis choisissez le nœud **Solutions SharePoint**.  
+2.  Open the **New Project** dialog box, expand the **Office/SharePoint** node under the language that you want to use, and then choose the **SharePoint Solutions** node.  
   
-3.  Dans le volet **Modèles Visual Studio installés**, choisissez le modèle **SharePoint 2010 \- Projet vide**.  Nommez le projet MySharePointProject, puis cliquez sur **OK**.  
+3.  In the **Visual Studio Installed Templates** pane, choose the **SharePoint 2010 - Empty Project** template. Name the project **MySharePointProject**, and then choose the **OK** button.  
   
-     L'**Assistant Personnalisation de SharePoint** s'affiche.  Cet Assistant vous permet de sélectionner le site à utiliser pour déboguer le projet et le niveau de confiance de la solution.  
+     The **SharePoint Customization Wizard** appears. This wizard enables you to select the site that you will use to debug the project and the trust level of the solution.  
   
-4.  Sélectionnez la case d'option **Déployer en tant que solution de batterie**, puis choisissez le bouton **Terminer** pour accepter le site SharePoint local par défaut.  
+4.  Choose the **Deploy as a farm solution** option button, and then choose the **Finish** button to accept the default local SharePoint site.  
   
-## Création d'une page d'application  
- Pour créer une page d'application, ajoutez un élément **Page Application** au projet.  
+## <a name="creating-an-application-page"></a>Creating an Application Page  
+ To create an application page, add an **Application Page** item to the project.  
   
-#### Pour créer une page d'application  
+#### <a name="to-create-an-application-page"></a>To create an application page  
   
-1.  Dans l'**Explorateur de solutions**, sélectionnez le projet **MySharePointProject**.  
+1.  In **Solution Explorer**, choose the **MySharePointProject** project.  
   
-2.  Dans la barre de menus, choisissez **Projet**, **Ajouter un nouvel élément**.  
+2.  On the menu bar, choose **Project**, **Add New Item**.  
   
-3.  Dans la boîte de dialogue **Ajouter un nouvel élément**, choisissez le modèle **Page Application \(solution de batterie uniquement\)**.  
+3.  In the **Add New Item** dialog box, choose the **Application Page (Farm Solution Only** template.  
   
-4.  Nommez la page SearchItems, puis choisissez le bouton **Ajouter**.  
+4.  Name the page **SearchItems**, and then choose the **Add** button.  
   
-     Le concepteur Visual Web Developer affiche la page d'application en mode **Source**  ; vous pouvez ainsi consulter les éléments HTML de la page.  Le concepteur affiche le balisage de plusieurs contrôles <xref:System.Web.UI.WebControls.Content>.  Chaque contrôle est mappé à un contrôle <xref:System.Web.UI.WebControls.ContentPlaceHolder> qui est défini dans la page d'application maître par défaut.  
+     The Visual Web Developer designer displays the application page in **Source** view where you can see the page's HTML elements. The designer displays the markup for several <xref:System.Web.UI.WebControls.Content> controls. Each control maps to a <xref:System.Web.UI.WebControls.ContentPlaceHolder> control that is defined in the default application master page.  
   
-## Conception de la disposition de la page d'application  
- L'élément Page Application vous permet d'utiliser un concepteur pour ajouter des contrôles ASP.NET à la page d'application.  Ce concepteur est le même que celui utilisé dans Visual Web Developer.  Ajoutez une étiquette, une liste Case d'option et une table sur le concepteur en mode **Source**, puis définissez les propriétés comme lorsque vous concevez une page ASP.NET standard.  
+## <a name="designing-the-layout-of-the-application-page"></a>Designing the Layout of the Application Page  
+ The Application Page item enables you to use a designer to add ASP.NET controls to the application page. This designer is the same designer used in Visual Web Developer. Add a label, a radio button list, and a table to the **Source** view of the designer, and then set properties just as you would when you design any standard ASP.NET page.  
   
- Pour plus d'informations sur l'utilisation du concepteur dans Visual Web Developer, consultez [Visual Studio Web Development Content Map](http://msdn.microsoft.com/fr-fr/9c31f93b-c8fb-4599-9b14-6194ec8c7539).  
+#### <a name="to-design-the-layout-of-the-application-page"></a>To design the layout of the application page  
   
-#### Pour concevoir la disposition de la page d'application  
+1.  On the menu bar, choose **View**, **Toolbox**.  
   
-1.  Dans la barre de menus, choisissez **Affichage**, **Boîte à outils**.  
+2.  In the Standard node of the **Toolbox**, perform one of the following steps:  
   
-2.  Dans le nœud standard de la **Boîte à outils**, effectuez l'une des opérations suivantes :  
+    -   Open the shortcut menu for the **Label** item, choose **Copy**, open the shortcut menu for the line under the **PlaceHolderMain** content control in the designer, and then choose **Paste**.  
   
-    -   Ouvrez le menu contextuel de l'élément **Étiquette**, choisissez **Copier**, ouvrez le menu contextuel de la ligne située sous le contrôle de contenu **PlaceHolderMain** dans le concepteur, puis choisissez **Coller**.  
+    -   Drag the **Label** item from the **Toolbox** onto the body of the **PlaceHolderMain** content control.  
   
-    -   Faites glisser l'élément **Étiquette** de la **Boîte à outils** sur le corps du contrôle de contenu **PlaceHolderMain**.  
+3.  Repeat the previous step to add a **DropDownList** item and a **Table** item to the **PlaceHolderMain** content control.  
   
-3.  Répétez l'étape précédente afin d'ajouter un élément **DropDownList** et un élément **Table** au contrôle de contenu **PlaceHolderMain**.  
+4.  On the designer, change the value of the `Text` attribute of the label control to **Show All Items**.  
   
-4.  Dans le concepteur, affectez la valeur Afficher tous les éléments à l'attribut `Text` du contrôle d'étiquette.  
-  
-5.  Dans le concepteur, remplacez l'élément `<asp:DropDownList>` par le code XML suivant.  
+5.  On the designer, replace the `<asp:DropDownList>` element with the following XML.  
   
     ```  
     <asp:DropDownList ID="DropDownList1" runat="server" AutoPostBack="true"  
@@ -110,65 +113,61 @@ caps.handback.revision: 41
     </asp:DropDownList>  
     ```  
   
-## Gestion des événements de contrôles dans la page  
- Vous pouvez gérer les contrôles dans une page d'application de la même manière que vous le feriez dans une page ASP.NET.  Dans cette procédure, vous allez générer l'événement `SelectedIndexChanged` dans la liste déroulante.  
+## <a name="handling-the-events-of-controls-on-the-page"></a>Handling the Events of Controls on the Page  
+ Handle controls in an application page just as you would any ASP.NET page. In this procedure, you will handle the `SelectedIndexChanged` event of the drop-down list.  
   
-#### Pour gérer les événements de contrôles dans la page  
+#### <a name="to-handle-the-events-of-controls-on-the-page"></a>To handle the events of controls on the page  
   
-1.  Dans le menu **Affichage**, choisissez **Code**.  
+1.  On the **View** menu, choose **Code**.  
   
-     Le fichier de code de la page d'application s'ouvre dans l'éditeur de code.  
+     The application page code file opens in the Code Editor.  
   
-2.  Ajoutez la méthode suivante à la classe `SearchItems`.  Ce code gère l'événement <xref:System.Web.UI.WebControls.ListControl.SelectedIndexChanged> du <xref:System.Web.UI.WebControls.DropDownList> en appelant une méthode que vous créerez plus loin dans cette procédure.  
+2.  Add the following method to the `SearchItems` class. This code handles the <xref:System.Web.UI.WebControls.ListControl.SelectedIndexChanged> event of the <xref:System.Web.UI.WebControls.DropDownList> by calling a method that you will create later in this walkthrough.  
   
-     [!code-csharp[SP_ApplicationPage#5](../snippets/csharp/VS_Snippets_OfficeSP/sp_applicationpage/cs/layouts/sp_applicationpage/SearchItems.aspx.cs#5)]
-     [!code-vb[SP_ApplicationPage#5](../snippets/visualbasic/VS_Snippets_OfficeSP/sp_applicationpage/vb/layouts/sp_applicationpage/SearchItems.aspx.vb#5)]  
+     [!code-vb[SP_ApplicationPage#5](../sharepoint/codesnippet/VisualBasic/sp_applicationpage/layouts/sp_applicationpage/SearchItems.aspx.vb#5)]  [!code-csharp[SP_ApplicationPage#5](../sharepoint/codesnippet/CSharp/sp_applicationpage/layouts/sp_applicationpage/SearchItems.aspx.cs#5)]  
   
-3.  Ajoutez les instructions suivantes au début du fichier de code de la page d'application.  
+3.  Add the following statements to the top of the application page code file.  
   
-     [!code-csharp[SP_ApplicationPage#1](../snippets/csharp/VS_Snippets_OfficeSP/sp_applicationpage/cs/layouts/sp_applicationpage/SearchItems.aspx.cs#1)]
-     [!code-vb[SP_ApplicationPage#1](../snippets/visualbasic/VS_Snippets_OfficeSP/sp_applicationpage/vb/layouts/sp_applicationpage/SearchItems.aspx.vb#1)]  
+     [!code-vb[SP_ApplicationPage#1](../sharepoint/codesnippet/VisualBasic/sp_applicationpage/layouts/sp_applicationpage/SearchItems.aspx.vb#1)]  [!code-csharp[SP_ApplicationPage#1](../sharepoint/codesnippet/CSharp/sp_applicationpage/layouts/sp_applicationpage/SearchItems.aspx.cs#1)]  
   
-4.  Ajoutez la méthode suivante à la classe `SearchItems`.  Cette méthode itère au sein de l'ensemble des sites de la batterie de serveurs et recherche les éléments créés ou modifiés par l'utilisateur actuel.  
+4.  Add the following method to the `SearchItems` class. This method iterates through all sites on the server farm and searches for items created or modified by the current user.  
   
-     [!code-csharp[SP_ApplicationPage#2](../snippets/csharp/VS_Snippets_OfficeSP/sp_applicationpage/cs/layouts/sp_applicationpage/SearchItems.aspx.cs#2)]
-     [!code-vb[SP_ApplicationPage#2](../snippets/visualbasic/VS_Snippets_OfficeSP/sp_applicationpage/vb/layouts/sp_applicationpage/SearchItems.aspx.vb#2)]  
+     [!code-vb[SP_ApplicationPage#2](../sharepoint/codesnippet/VisualBasic/sp_applicationpage/layouts/sp_applicationpage/SearchItems.aspx.vb#2)]  [!code-csharp[SP_ApplicationPage#2](../sharepoint/codesnippet/CSharp/sp_applicationpage/layouts/sp_applicationpage/SearchItems.aspx.cs#2)]  
   
-5.  Ajoutez la méthode suivante à la classe `SearchItems`.  Cette méthode affiche les éléments créés ou modifiés par l'utilisateur actuel dans la table.  
+5.  Add the following method to the `SearchItems` class. This method displays items created or modified by the current user in the table.  
   
-     [!code-csharp[SP_ApplicationPage#3](../snippets/csharp/VS_Snippets_OfficeSP/sp_applicationpage/cs/layouts/sp_applicationpage/SearchItems.aspx.cs#3)]
-     [!code-vb[SP_ApplicationPage#3](../snippets/visualbasic/VS_Snippets_OfficeSP/sp_applicationpage/vb/layouts/sp_applicationpage/SearchItems.aspx.vb#3)]  
+     [!code-vb[SP_ApplicationPage#3](../sharepoint/codesnippet/VisualBasic/sp_applicationpage/layouts/sp_applicationpage/SearchItems.aspx.vb#3)]  [!code-csharp[SP_ApplicationPage#3](../sharepoint/codesnippet/CSharp/sp_applicationpage/layouts/sp_applicationpage/SearchItems.aspx.cs#3)]  
   
-## Test de la page d'application  
- Lorsque vous exécutez le projet, le site SharePoint s'ouvre et la page d'application s'affiche.  
+## <a name="testing-the-application-page"></a>Testing the Application Page  
+ When you run the project, the SharePoint site opens and the application page appears.  
   
-#### Pour tester la page d'application  
+#### <a name="to-test-the-application-page"></a>To test the application page  
   
-1.  Dans l'**Explorateur de solutions**, ouvrez le menu contextuel de la page d'application, puis choisissez **Définir comme élément de démarrage**.  
+1.  In **Solution Explorer**, open the shortcut menu for the application page, and then choose **Set as Startup Item**.  
   
-2.  Sélectionnez la touche F5.  
+2.  Choose the F5 key.  
   
-     Le site SharePoint s'ouvre.  
+     The SharePoint site opens.  
   
-3.  Dans la page d'application, cliquez sur l'option **Modifiés par moi**.  
+3.  On the application page, choose the **Modified by me** option.  
   
-     La page d'application s'actualise et affiche tous les éléments que vous avez modifiés dans l'ensemble des sites de la batterie de serveurs.  
+     The application page refreshes and displays all items that you've modified in all sites on the server farm.  
   
-4.  Dans la page d'application, choisissez **Que j'ai créés** dans la liste.  
+4.  On the application page, choose **Created by me** in the list.  
   
-     La page d'application s'actualise et affiche tous les éléments que vous avez créés dans l'ensemble des sites de la batterie de serveurs.  
+     The application page refreshes and displays all items that you have created in all sites on the server farm.  
   
-## Étapes suivantes  
- Pour plus d'informations au sujet des pages d'application SharePoint, consultez [Création de pages d'application pour SharePoint](../sharepoint/creating-application-pages-for-sharepoint.md).  
+## <a name="next-steps"></a>Next Steps  
+ For more information about SharePoint application pages, see [Creating Application Pages for SharePoint](../sharepoint/creating-application-pages-for-sharepoint.md).  
   
- Pour savoir comment concevoir le contenu d'une page SharePoint à l'aide de Visual Web Designer, consultez les rubriques suivantes :  
+ You can learn more about how to design SharePoint page content by using the Visual Web Designer from these topics:  
   
--   [Création de composants WebPart pour SharePoint](../sharepoint/creating-web-parts-for-sharepoint.md).  
+-   [Creating Web Parts for SharePoint](../sharepoint/creating-web-parts-for-sharepoint.md).  
   
--   [Création de contrôles réutilisables pour les composants WebPart ou les pages d'application](../sharepoint/creating-reusable-controls-for-web-parts-or-application-pages.md).  
+-   [Creating Reusable Controls for Web Parts or Application Pages](../sharepoint/creating-reusable-controls-for-web-parts-or-application-pages.md).  
   
-## Voir aussi  
- [Comment : créer une page d'application](../sharepoint/how-to-create-an-application-page.md)   
- [Type de page de dispositions d'application](http://go.microsoft.com/fwlink/?LinkID=169274)  
+## <a name="see-also"></a>See Also  
+ [How to: Create an Application Page](../sharepoint/how-to-create-an-application-page.md)   
+ [Application _layouts Page Type](http://go.microsoft.com/fwlink/?LinkID=169274)  
   
   

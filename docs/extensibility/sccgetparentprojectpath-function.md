@@ -1,99 +1,116 @@
 ---
-title: "SccGetParentProjectPath (fonction) | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "SccGetParentProjectPath"
-helpviewer_keywords: 
-  - "SccGetParentProjectPath (fonction)"
+title: SccGetParentProjectPath Function | Microsoft Docs
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology:
+- vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords:
+- SccGetParentProjectPath
+helpviewer_keywords:
+- SccGetParentProjectPath function
 ms.assetid: 62a71579-36b3-48b9-a1c8-04ab100efa08
 caps.latest.revision: 17
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 17
----
-# SccGetParentProjectPath (fonction)
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
+ms.author: gregvanl
+manager: ghogen
+translation.priority.mt:
+- cs-cz
+- de-de
+- es-es
+- fr-fr
+- it-it
+- ja-jp
+- ko-kr
+- pl-pl
+- pt-br
+- ru-ru
+- tr-tr
+- zh-cn
+- zh-tw
+ms.translationtype: MT
+ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
+ms.openlocfilehash: 1f19c1787e16d8d8b0c7b5e52703f6f0d0660300
+ms.contentlocale: fr-fr
+ms.lasthandoff: 08/28/2017
 
-Cette fonction détermine le chemin d'accès du projet parent d'un projet spécifié. Cette fonction est appelée lorsque l'utilisateur ajoute un projet Visual Studio pour le contrôle de code source.  
+---
+# <a name="sccgetparentprojectpath-function"></a>SccGetParentProjectPath Function
+This function determines the parent project path of a specified project. This function is called when the user is adding a Visual Studio project to source control.  
   
-## Syntaxe  
+## <a name="syntax"></a>Syntax  
   
-```cpp#  
+```cpp  
 SCCRTN SccGetParentProjectPath(  
-   LPVOID pContext,  
-   HWND   hWnd,  
-   LPSTR  lpUser,  
-   LPCSTR lpProjPath,  
-   LPSTR  lpAuxProjPath,  
-   LPSTR  lpParentProjPath  
+   LPVOID pContext,  
+   HWND   hWnd,  
+   LPSTR  lpUser,  
+   LPCSTR lpProjPath,  
+   LPSTR  lpAuxProjPath,  
+   LPSTR  lpParentProjPath  
 );  
 ```  
   
-#### Paramètres  
+#### <a name="parameters"></a>Parameters  
  pContext  
- \[in\] Le pointeur de contexte plug\-in de contrôle de code source.  
+ [in] The source control plug-in context pointer.  
   
  hWnd  
- \[in\] Handle vers la fenêtre de l'IDE que le plug\-in de contrôle de code source peut utiliser en tant que parent pour toutes les boîtes de dialogue qu'il fournit.  
+ [in] A handle to the IDE window that the source control plug-in can use as a parent for any dialog boxes that it provides.  
   
  lpUser  
- \[dans, out\] Le nom d'utilisateur \(jusqu'à SCC\_USER\_SIZE, y compris le terminateur NULL\).  
+ [in, out] The user name (up to SCC_USER_SIZE, including the NULL terminator).  
   
  lpProjPath  
- \[in\] Chaîne qui identifie le chemin d'accès de projet \(jusqu'à SCC\_PRJPATH\_SIZE, y compris le terminateur NULL\).  
+ [in] String identifying the project path (up to SCC_PRJPATH_SIZE, including the NULL terminator).  
   
  lpAuxProjPath  
- \[dans, out\] Chaîne auxiliaire qui identifie le projet \(jusqu'à SCC\_PRJPATH\_SIZE, y compris le terminateur NULL\).  
+ [in, out] Auxiliary string identifying the project (up to SCC_PRJPATH_SIZE, including the NULL terminator).  
   
  lpParentProjPath  
- \[dans, out\] Chaîne de sortie qui identifie le chemin d'accès du projet parent \(jusqu'à SCC\_PRJPATH\_SIZE, y compris le terminateur NULL\).  
+ [in, out] Output string identifying the parent project path (up to SCC_PRJPATH_SIZE, including the NULL terminator).  
   
-## Valeur de retour  
- L'implémentation de plug\-in de contrôle de source de cette fonction est censée renvoyer une des valeurs suivantes :  
+## <a name="return-value"></a>Return Value  
+ The source control plug-in implementation of this function is expected to return one of the following values:  
   
-|Valeur|Description|  
-|------------|-----------------|  
-|SCC\_OK|Chemin d'accès du projet parent a été obtenue avec succès.|  
-|SCC\_E\_INITIALIZEFAILED|Projet n'a pas pu être initialisé.|  
-|SCC\_E\_INVALIDUSER|L'utilisateur n'a pas pu se connecter le plug\-in de contrôle de code source.|  
-|SCC\_E\_UNKNOWNPROJECT|Projet est inconnu pour le plug\-in de contrôle de code source.|  
-|SCC\_E\_INVALIDFILEPATH|Chemin d'accès de fichier non valide ou inutilisable.|  
-|SCC\_E\_NOTAUTHORIZED|L'utilisateur n'est pas autorisé à effectuer cette opération.|  
-|SCC\_E\_ACCESSFAILURE|Impossible d'accéder au système de contrôle source, probablement en raison de problèmes réseau ou de contention. Une nouvelle tentative est recommandée.|  
-|SCC\_E\_PROJSYNTAXERR|Syntaxe de projet non valide.|  
-|SCC\_E\_CONNECTIONFAILURE|Problème de connexion du magasin.|  
-|SCC\_E\_NONSPECIFICERROR<br /><br /> SCC\_E\_UNKNOWNERROR|Erreur non spécifique.|  
+|Value|Description|  
+|-----------|-----------------|  
+|SCC_OK|Parent project path was successfully obtained.|  
+|SCC_E_INITIALIZEFAILED|Project could not be initialized.|  
+|SCC_E_INVALIDUSER|The user could not log in to the source control plug-in.|  
+|SCC_E_UNKNOWNPROJECT|Project is unknown to the source control plug-in.|  
+|SCC_E_INVALIDFILEPATH|Invalid or unusable file path.|  
+|SCC_E_NOTAUTHORIZED|The user is not allowed to perform this operation.|  
+|SCC_E_ACCESSFAILURE|There was a problem accessing the source control system, probably due to network or contention issues. A retry is recommended.|  
+|SCC_E_PROJSYNTAXERR|Invalid project syntax.|  
+|SCC_E_CONNECTIONFAILURE|Store connection problem.|  
+|SCC_E_NONSPECIFICERROR<br /><br /> SCC_E_UNKNOWNERROR|Nonspecific failure.|  
   
-## Notes  
- Cette fonction retourne un code de réussite ou l'échec et, en cas de réussite, remplit la variable `lpParentProjPath` avec le chemin d'accès complet de projet au projet spécifié.  
+## <a name="remarks"></a>Remarks  
+ This function returns a success or failure code and, if successful, fills the variable `lpParentProjPath` with the full project path to the specified project.  
   
- Cette fonction retourne le parent de chemin d'accès de projet d'un projet existant. Pour le projet racine, la fonction retourne le chemin d'accès de projet qui a été passé \(autrement dit, le même projet chemin racine\). Notez qu'un chemin d'accès de projet est une chaîne qui est uniquement explicite pour le plug\-in de contrôle de code source.  
+ This function returns the parent project path of an existing project. For the root project, the function returns the project path that was passed in (that is, the same root project path). Note that a project path is a string that is meaningful only to the source control plug-in.  
   
- L'IDE est prête à accepter les modifications apportées à la `lpUser` et `lpAuxProjPath` ainsi les paramètres. L'IDE est conserver ces chaînes et les passer à la [SccOpenProject](../extensibility/sccopenproject-function.md) lorsque l'utilisateur ouvre ce projet à l'avenir. Ces chaînes permettent par conséquent, pour le plug\-in pour les informations de suivi nécessaires à associer à un projet de contrôle de code source.  
+ The IDE is prepared to accept changes to the `lpUser` and `lpAuxProjPath` parameters as well. The IDE will persist these strings and pass them to the [SccOpenProject](../extensibility/sccopenproject-function.md) when the user opens this project in the future. These strings, therefore, provide a way for the source control plug-in to track information it needs to associate with a project.  
   
- Cette fonction est similaire à la [SccGetProjPath](../extensibility/sccgetprojpath-function.md), sauf qu'il ne demande pas l'utilisateur de sélectionner un projet. Il crée également jamais un projet mais fonctionne uniquement avec un projet existant.  
+ This function is similar to the [SccGetProjPath](../extensibility/sccgetprojpath-function.md), except that it does not prompt the user to select a project. It also never creates a new project but works only with an existing project.  
   
- Lorsque `SccGetParentProjectPath` est appelée, `lpProjPath` et `lpAuxProjPath` ne sera pas vide et correspond à un projet valide. Ces chaînes sont généralement reçus par l'IDE à partir d'un appel précédent à la `SccGetProjPath` \(fonction\).  
+ When `SccGetParentProjectPath` is called, `lpProjPath` and `lpAuxProjPath` will not be empty and will correspond to a valid project. These strings are usually received by the IDE from a previous call to the `SccGetProjPath` function.  
   
- Le `lpUser` argument est le nom d'utilisateur. L'IDE passe dans le même nom d'utilisateur qui il a précédemment reçu à partir de la `SccGetProjPath` \(fonction\) et le plug\-in de contrôle de code source doivent utiliser le nom par défaut. Si l'utilisateur dispose déjà d'une connexion ouverte avec le plug\-in, le plug\-in doit essayer d'éliminer les invites pour vous assurer que la fonction s'exécute en mode silencieux. Toutefois, si la connexion échoue, le plug\-in doit inviter l'utilisateur pour un compte de connexion et, lorsqu'il reçoit une connexion valide, passez le nom du nouveau `lpUser`. Étant donné que le plug\-in peut modifier cette chaîne, l'IDE sera toujours allouer un tampon de taille \(`SCC_USER_LEN`\+ 1\). Si la chaîne est modifiée, la nouvelle chaîne doit être un nom de connexion valide \(au moins aussi valide en tant que l'ancienne chaîne\).  
+ The `lpUser` argument is the user name. The IDE will pass in the same user name that it had previously received from the `SccGetProjPath` function, and the source control plug-in should use the name as a default. If the user already has an open connection with the plug-in, then the plug-in should try to eliminate any prompts to make sure the function works silently. However, if the login fails, the plug-in should prompt the user for a login and, when it receives a valid login, pass the name back in `lpUser`. Because the plug-in may change this string, the IDE will always allocate a buffer of size (`SCC_USER_LEN`+1). If the string is changed, the new string must be a valid login name (at least as valid as the old string).  
   
-## Notes techniques de SccCreateSubProject et SccGetParentProjectPath  
- Ajout de solutions et projets au contrôle de code source a été simplifié dans Visual Studio afin de réduire le nombre de fois où qu'un utilisateur est invité à sélectionner les emplacements dans le système de contrôle de code source. Ces modifications sont activées par Visual Studio si un plug\-in de contrôle de code source prend en charge deux nouvelles fonctions, le [SccCreateSubProject](../extensibility/scccreatesubproject-function.md) et le `SccGetParentProjectPath` \(fonction\). Toutefois, l'entrée de Registre suivante peut servir à désactiver ces modifications et rétablir le comportement précédent de Visual Studio \(Source contrôle plug\-in API Version 1.1\) :  
+## <a name="technical-notes-for-scccreatesubproject-and-sccgetparentprojectpath"></a>Technical Notes for SccCreateSubProject and SccGetParentProjectPath  
+ Adding solutions and projects to source control has been simplified in Visual Studio to minimize the number of times a user is prompted to select locations in the source control system. These changes are activated by Visual Studio if a source control plug-in supports both of the new functions, the [SccCreateSubProject](../extensibility/scccreatesubproject-function.md) and the `SccGetParentProjectPath` function. However, the following registry entry can be used to disable these changes and revert to the previous Visual Studio (Source Control Plug-in API Version 1.1) behavior:  
   
- \[HKEY\_CURRENT\_USER\\Software\\Microsoft\\VisualStudio\\8.0\\SourceControl\] « DoNotCreateSolutionRootFolderInSourceControl » \= DWORD: 00000001  
+ [HKEY_CURRENT_USER\Software\Microsoft\VisualStudio\8.0\SourceControl] "DoNotCreateSolutionRootFolderInSourceControl"=dword:00000001  
   
- Si cette entrée de Registre n'existe pas ou a la valeur DWORD: 00000000, Visual Studio tente d'utiliser les nouvelles fonctions, `SccCreateSubProject`et`SccGetParentProjectPath`.  
+ If this registry entry does not exist or is set to dword:00000000, Visual Studio attempts to use the new functions, `SccCreateSubProject`and`SccGetParentProjectPath`.  
   
- Si l'entrée de Registre est définie à DWORD: 00000001, Visual Studio n'essaie pas d'utiliser ces nouvelles fonctions et les opérations d'ajout au contrôle de code source fonctionnent comme dans les versions antérieures de Visual Studio.  
+ If the registry entry is set to dword:00000001, Visual Studio does not attempt to use these new functions, and the operations of adding to source control work as they did in prior versions of Visual Studio.  
   
-## Voir aussi  
- [Fonctions d'API de plug\-in de contrôle de source](../extensibility/source-control-plug-in-api-functions.md)   
+## <a name="see-also"></a>See Also  
+ [Source Control Plug-in API Functions](../extensibility/source-control-plug-in-api-functions.md)   
  [SccCreateSubProject](../extensibility/scccreatesubproject-function.md)   
  [SccGetProjPath](../extensibility/sccgetprojpath-function.md)

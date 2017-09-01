@@ -1,53 +1,70 @@
 ---
-title: "IDebugClassField::EnumNestedClasses | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "IDebugClassField::EnumNestedClasses"
-helpviewer_keywords: 
-  - "IDebugClassField::EnumNestedClasses (méthode)"
+title: IDebugClassField::EnumNestedClasses | Microsoft Docs
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology:
+- vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords:
+- IDebugClassField::EnumNestedClasses
+helpviewer_keywords:
+- IDebugClassField::EnumNestedClasses method
 ms.assetid: 2ba5ef0c-395e-4006-9e3c-9b06e1d711d0
 caps.latest.revision: 9
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 9
----
-# IDebugClassField::EnumNestedClasses
-[!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]
+ms.author: gregvanl
+manager: ghogen
+translation.priority.mt:
+- cs-cz
+- de-de
+- es-es
+- fr-fr
+- it-it
+- ja-jp
+- ko-kr
+- pl-pl
+- pt-br
+- ru-ru
+- tr-tr
+- zh-cn
+- zh-tw
+ms.translationtype: MT
+ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
+ms.openlocfilehash: 756d6783a7990d5ad06ed86dc243cc2c08646f7e
+ms.contentlocale: fr-fr
+ms.lasthandoff: 08/28/2017
 
-crée un énumérateur pour les classes imbriquées dans cette classe.  
+---
+# <a name="idebugclassfieldenumnestedclasses"></a>IDebugClassField::EnumNestedClasses
+Creates an enumerator for the classes nested in this class.  
   
-## Syntaxe  
+## <a name="syntax"></a>Syntax  
   
-```cpp#  
-HRESULT EnumNestedClasses(   
-   IEnumDebugFields** ppEnum  
+```cpp  
+HRESULT EnumNestedClasses(   
+   IEnumDebugFields** ppEnum  
 );  
 ```  
   
-```c#  
+```csharp  
 int EnumNestedClasses(  
-   out IEnumDebugFields ppEnum  
+   out IEnumDebugFields ppEnum  
 );  
 ```  
   
-#### Paramètres  
+#### <a name="parameters"></a>Parameters  
  `ppEnum`  
- \[out\]  Retourne un objet d' [IEnumDebugFields](../../../extensibility/debugger/reference/ienumdebugfields.md) représentant la liste des classes imbriquées.  Retourne une valeur NULL s'il n'y a aucune classe imbriquée.  
+ [out] Returns an [IEnumDebugFields](../../../extensibility/debugger/reference/ienumdebugfields.md) object representing the list of nested classes. Returns a null value if there are no nested classes.  
   
-## Valeur de retour  
- En cas de réussite, retourne S\_OK ou retourne S\_FALSE s'il n'y a aucune classe imbriquée.  Sinon, retourne un code d'erreur.  
+## <a name="return-value"></a>Return Value  
+ If successful, returns S_OK or returns S_FALSE if there are no nested classes. Otherwise, returns an error code.  
   
-## Notes  
- chaque élément de l'énumération est un objet d' [IDebugClassField](../../../extensibility/debugger/reference/idebugclassfield.md) décrivant une classe imbriquée.  
+## <a name="remarks"></a>Remarks  
+ Each element of the enumeration is an [IDebugClassField](../../../extensibility/debugger/reference/idebugclassfield.md) object describing a nested class.  
   
- Une classe imbriquée est une classe définie à l'intérieur d'une autre classe.  Par exemple :  
+ A nested class is a class defined inside another class. For example:  
   
 ```  
 class RootClass {  
@@ -55,8 +72,8 @@ class RootClass {
 };  
 ```  
   
- L'énumération d' [IEnumDebugFields](../../../extensibility/debugger/reference/ienumdebugfields.md) correspondrait un objet qui représente la classe d' `NestedClass` .  
+ The [IEnumDebugFields](../../../extensibility/debugger/reference/ienumdebugfields.md) enumeration would contain one object representing the `NestedClass` class.  
   
-## Voir aussi  
+## <a name="see-also"></a>See Also  
  [IDebugClassField](../../../extensibility/debugger/reference/idebugclassfield.md)   
  [IEnumDebugFields](../../../extensibility/debugger/reference/ienumdebugfields.md)

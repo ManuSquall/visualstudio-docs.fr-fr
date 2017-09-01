@@ -1,5 +1,5 @@
 ---
-title: IEnumDebugAddresses::Next | Documents Microsoft
+title: IEnumDebugAddresses::Next | Microsoft Docs
 ms.custom: 
 ms.date: 11/04/2016
 ms.reviewer: 
@@ -30,18 +30,19 @@ translation.priority.mt:
 - tr-tr
 - zh-cn
 - zh-tw
-translationtype: Machine Translation
-ms.sourcegitcommit: 5db97d19b1b823388a465bba15d057b30ff0b3ce
-ms.openlocfilehash: bd67e57bcea0822f6c8dbcf57e58f5b4a268647a
-ms.lasthandoff: 02/22/2017
+ms.translationtype: MT
+ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
+ms.openlocfilehash: 7b380859a6020c81a9d2cbb81095f49c8c385405
+ms.contentlocale: fr-fr
+ms.lasthandoff: 08/28/2017
 
 ---
 # <a name="ienumdebugaddressesnext"></a>IEnumDebugAddresses::Next
-Cette méthode retourne l’ensemble suivant d’éléments de l’énumération.  
+This method returns the next set of elements from the enumeration.  
   
-## <a name="syntax"></a>Syntaxe  
+## <a name="syntax"></a>Syntax  
   
-```cpp#  
+```cpp  
 HRESULT Next(  
    ULONG           celt,  
    IDebugAddress** rgelt,  
@@ -49,7 +50,7 @@ HRESULT Next(
 );  
 ```  
   
-```c#  
+```csharp  
 int Next(  
    uint            celt,  
    IDebugAddress[] rgelt,  
@@ -57,19 +58,19 @@ int Next(
 );  
 ```  
   
-#### <a name="parameters"></a>Paramètres  
+#### <a name="parameters"></a>Parameters  
  `celt`  
- [in] Le nombre d’éléments à récupérer. Spécifie également la taille maximale de le `rgelt` tableau.  
+ [in] The number of elements to retrieve. Also specifies the maximum size of the `rgelt` array.  
   
  `rgelt`  
- [dans, out] Tableau de [IDebugAddress](../../../extensibility/debugger/reference/idebugaddress.md) éléments doit être renseigné.  
+ [in, out] Array of [IDebugAddress](../../../extensibility/debugger/reference/idebugaddress.md) elements to be filled in.  
   
  `pceltFetched`  
- [out] Retourne le nombre d’éléments réellement retournés dans `rgelt`.  
+ [out] Returns the number of elements actually returned in `rgelt`.  
   
-## <a name="return-value"></a>Valeur de retour  
- En cas de réussite, retourne `S_OK`. Retourne `S_FALSE` si inférieur au nombre demandé d’éléments peut être retournés ; sinon, retourne un code d’erreur.  
+## <a name="return-value"></a>Return Value  
+ If successful, returns `S_OK`. Returns `S_FALSE` if fewer than the requested number of elements could be returned; otherwise, returns an error code.  
   
-## <a name="see-also"></a>Voir aussi  
+## <a name="see-also"></a>See Also  
  [IEnumDebugAddresses](../../../extensibility/debugger/reference/ienumdebugaddresses.md)   
  [IDebugAddress](../../../extensibility/debugger/reference/idebugaddress.md)

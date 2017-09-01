@@ -1,5 +1,5 @@
 ---
-title: IEnumDebugPortSuppliers2::Next | Documents Microsoft
+title: IEnumDebugPortSuppliers2::Next | Microsoft Docs
 ms.custom: 
 ms.date: 11/04/2016
 ms.reviewer: 
@@ -30,18 +30,19 @@ translation.priority.mt:
 - tr-tr
 - zh-cn
 - zh-tw
-translationtype: Machine Translation
-ms.sourcegitcommit: 5db97d19b1b823388a465bba15d057b30ff0b3ce
-ms.openlocfilehash: a26ebec1e1656e8f2090ac5e3f060759e1802436
-ms.lasthandoff: 02/22/2017
+ms.translationtype: MT
+ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
+ms.openlocfilehash: 9fada85b88e9057eaa9585365444c13d0dd4bcc3
+ms.contentlocale: fr-fr
+ms.lasthandoff: 08/28/2017
 
 ---
 # <a name="ienumdebugportsuppliers2next"></a>IEnumDebugPortSuppliers2::Next
-Retourne l’ensemble suivant d’éléments de l’énumération.  
+Returns the next set of elements from the enumeration.  
   
-## <a name="syntax"></a>Syntaxe  
+## <a name="syntax"></a>Syntax  
   
-```cpp#  
+```cpp  
 HRESULT Next(  
    ULONG                 celt,  
    IDebugPortSupplier2** rgelt,  
@@ -49,7 +50,7 @@ HRESULT Next(
 );  
 ```  
   
-```c#  
+```csharp  
 int Next(  
    uint                  celt,  
    IDebugPortSupplier2[] rgelt,  
@@ -57,19 +58,19 @@ int Next(
 );  
 ```  
   
-#### <a name="parameters"></a>Paramètres  
+#### <a name="parameters"></a>Parameters  
  `celt`  
- [in] Le nombre d’éléments à récupérer. Spécifie également la taille maximale de le `rgelt` tableau.  
+ [in] The number of elements to retrieve. Also specifies the maximum size of the `rgelt` array.  
   
  `rgelt`  
- [dans, out] Tableau de [IDebugPortSupplier2](../../../extensibility/debugger/reference/idebugportsupplier2.md) éléments doit être renseigné.  
+ [in, out] Array of [IDebugPortSupplier2](../../../extensibility/debugger/reference/idebugportsupplier2.md) elements to be filled in.  
   
  `pceltFetched`  
- [out] Retourne le nombre d’éléments réellement retournés dans `rgelt`.  
+ [out] Returns the number of elements actually returned in `rgelt`.  
   
-## <a name="return-value"></a>Valeur de retour  
- En cas de réussite, retourne `S_OK`. Retourne `S_FALSE` si inférieur au nombre demandé d’éléments peut être retournés ; sinon, retourne un code d’erreur.  
+## <a name="return-value"></a>Return Value  
+ If successful, returns `S_OK`. Returns `S_FALSE` if fewer than the requested number of elements could be returned; otherwise, returns an error code.  
   
-## <a name="see-also"></a>Voir aussi  
+## <a name="see-also"></a>See Also  
  [IEnumDebugPortSuppliers2](../../../extensibility/debugger/reference/ienumdebugportsuppliers2.md)   
  [IDebugPortSupplier2](../../../extensibility/debugger/reference/idebugportsupplier2.md)

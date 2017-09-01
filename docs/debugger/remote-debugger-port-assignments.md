@@ -1,61 +1,81 @@
 ---
-title: "Affectations de port du d&#233;bogueur distant | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-debug"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+title: Remote Debugger Port Assignments | Microsoft Docs
+ms.custom: H1Hack27Feb2017
+ms.date: 05/18/2017
+ms.reviewer: 
+ms.suite: 
+ms.technology:
+- vs-ide-debug
+ms.tgt_pltfrm: 
+ms.topic: article
 ms.assetid: 238bb4ec-bb00-4c2b-986e-18ac278f3959
 caps.latest.revision: 5
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 5
----
-# Affectations de port du d&#233;bogueur distant
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+translation.priority.ht:
+- de-de
+- es-es
+- fr-fr
+- it-it
+- ja-jp
+- ko-kr
+- ru-ru
+- zh-cn
+- zh-tw
+translation.priority.mt:
+- cs-cz
+- pl-pl
+- pt-br
+- tr-tr
+ms.translationtype: HT
+ms.sourcegitcommit: 9e6c28d42bec272c6fd6107b4baf0109ff29197e
+ms.openlocfilehash: 1208ccaea240a05795659348e55c5497c75b195d
+ms.contentlocale: fr-fr
+ms.lasthandoff: 08/22/2017
 
-Le débogueur distant de Visual Studio peut s’exécuter comme une application ou un service en arrière\-plan. Quand il est exécuté comme une application, il utilise un port qui est affecté par défaut comme suit :  
+---
+# <a name="remote-debugger-port-assignments"></a>Remote Debugger Port Assignments
+The Visual Studio Remote Debugger can run as an application or as a background service. When it runs as an application, it uses a port that is assigned by default as follows:  
+
+-   Visual Studio 2017: 4022
+
+-   Visual Studio 2015: 4020  
   
--   Visual Studio 2015 : 4020  
+-   Visual Studio 2013: 4018  
   
--   Visual Studio 2013 : 4018  
+-   Visual Studio 2012: 4016  
   
--   Visual Studio 2012 : 4016  
+ In other words, the number of the port assigned to the remote debugger is incremented by 2 for each release. You can set a different port number of you like. We will explain how to set port numbers in a later section.  
   
- En d’autres termes, le numéro de port attribué au débogueur distant est incrémenté de 2 pour chaque version. Vous pouvez définir un numéro de port différent si vous le souhaitez. Nous expliquerons comment définir des numéros de port dans une section ultérieure.  
+## <a name="the-remote-debugger-port-on-32-bit-operating-systems"></a>The Remote Debugger Port on 32-bit Operating Systems  
+ TCP 4022 (in Visual Studio 2017) is the main port, and is required for all scenarios. You can configure this from either the command line or the remote debugger window.  
   
-## Port du débogueur distant sur les systèmes d’exploitation 32 bits  
- Le port TCP 4020 \(dans Visual Studio 2015\) est le port principal, qui est requis pour tous les scénarios. Vous pouvez le configurer à partir de la ligne de commande ou de la fenêtre du débogueur distant.  
+ In the remote debugger window, click **Tools > Options**, and set the TCP/IP port number.  
   
- Dans la fenêtre du débogueur distant, cliquez sur **Outils\/Options**, puis définissez le numéro de port TCP\/IP.  
+ On the command line, start the remote debugger with the **/port** switch: **msvsmon /port \<port number>**.  
   
- Sur la ligne de commande, démarrez le débogueur distant avec le commutateur **\/port** : **msvsmon \/port \<numéro\_de\_port\>**.  
+ You can find all the remote debugger command line switches in the remote debugging help (press **F1** or click **Help > Usage** in the remote debugger window).  
   
- Tous les commutateurs de ligne de commande du débogueur distant sont disponibles dans l’aide du débogage distant \(appuyez sur **F1** ou cliquez sur **Aide\/Utilisation** dans la fenêtre du débogueur distant\).  
+## <a name="the-remote-debugger-port-on-64-bit-operating-systems"></a>The Remote Debugger Port on 64-bit Operating Systems  
+ When the 64-bit version of the remote debugger is started, it uses the 4022 port by default.  If you debug a 32-bit process, the 64-bit version of the remote debugger starts a 32-bit version of the remote debugger on port 4023. If you run the 32-bit remote debugger, it uses 4022, and 4023 is not used.  
   
-## Port du débogueur distant sur les systèmes d’exploitation 64 bits  
- Quand la version 64 bits du débogueur distant démarre, elle utilise le port 4020 par défaut.  Si vous déboguez un processus 32 bits, la version 64 bits du débogueur distant démarre une version 32 bits du débogueur distant sur le port 4021. Si vous exécutez le débogueur distant 32 bits, il utilise le port 4020 et 4021 n’est pas utilisé.  
+ This port is configurable from the command line: **Msvsmon /wow64port \<port number>**.  
   
- Ce port est configurable à partir de la ligne de commande : **Msvsmon \/wow64port \<numéro\_de\_port\>**.  
+## <a name="the-discovery-port"></a>The Discovery Port  
+ UDP 3702 is used for finding running instances of the remote debugger on the network (for example, the **Find** dialog in the **Attach to Process** dialog). It is used only for discovering a machine running the remote debugger, so it is  optional if you have some other way of knowing the machine name or IP address of the target computer. This is a standard port for discovery, so the port number cannot be configured.  
   
-## Port de détection  
- UDP 3702 est utilisé pour rechercher des instances en cours d’exécution du débogueur distant sur le réseau \(par exemple, la boîte de dialogue **Rechercher** dans la boîte de dialogue **Attacher au processus**\). Il est utilisé uniquement pour la découverte d’un ordinateur exécutant le débogueur distant ; il est facultatif si vous disposez d’une autre façon de connaître le nom ou l’adresse IP de l’ordinateur cible. Comme il s’agit d’un port standard pour la détection, le numéro de port ne peut pas être configuré.  
+ If you do not want to enable discovery, you can start msvsmon from the command line with discovery disabled:  **Msvsmon /nodiscovery**.  
   
- Si vous ne souhaitez pas activer la détection, vous pouvez démarrer msvsmon à partir de la ligne de commande avec la détection désactivée : **Msvsmon \/nodiscovery**.  
-  
-## Port du débogueur distant sur Azure  
- Les ports suivants sont utilisés par le débogueur distant sur Azure. Les ports sur le service cloud sont mappés aux ports sur la machine virtuelle individuelle. Tous les ports sont TCP.  
+## <a name="remote-debugger-ports-on-azure"></a>Remote Debugger Ports on Azure  
+ The following ports are used by the remote debugger on Azure. The ports on the cloud service are mapped to the ports on the individual VM. All ports are TCP.  
   
 ||||  
 |-|-|-|  
-|**Connexion**|**Port sur le service cloud**|**Port sur la machine virtuelle**|  
+|**Connection**|**Port on Cloud Service**|**Port on VM**|  
 |Microsoft.WindowsAzure.Plugins.RemoteDebugger.Connector|30400|30398|  
 |Microsoft.WindowsAzure.Plugins.RemoteDebugger.Forwarder|31400|31398|  
 |Microsoft.WindowsAzure.Plugins.RemoteDebugger.FileUpload|32400|32398|  
   
-## Voir aussi  
- [Débogage distant](../debugger/remote-debugging.md)
+## <a name="see-also"></a>See Also  
+ [Remote Debugging](../debugger/remote-debugging.md)

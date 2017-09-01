@@ -1,5 +1,5 @@
 ---
-title: IDebugDocumentPositionOffset2::GetRange | Documents Microsoft
+title: IDebugDocumentPositionOffset2::GetRange | Microsoft Docs
 ms.custom: 
 ms.date: 11/04/2016
 ms.reviewer: 
@@ -28,51 +28,52 @@ translation.priority.mt:
 - tr-tr
 - zh-cn
 - zh-tw
-translationtype: Machine Translation
-ms.sourcegitcommit: 5db97d19b1b823388a465bba15d057b30ff0b3ce
-ms.openlocfilehash: d14c212a3cb4499996ba6cf4d73d0b2fca73f7bc
-ms.lasthandoff: 02/22/2017
+ms.translationtype: MT
+ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
+ms.openlocfilehash: 501acf49bec28092c7a41fee83f6dfd9fe9d11c9
+ms.contentlocale: fr-fr
+ms.lasthandoff: 08/28/2017
 
 ---
 # <a name="idebugdocumentpositionoffset2getrange"></a>IDebugDocumentPositionOffset2::GetRange
-Récupère la plage pour la position actuelle du document.  
+Retrieves the range for the current document position.  
   
-## <a name="syntax"></a>Syntaxe  
+## <a name="syntax"></a>Syntax  
   
-```cpp#  
+```cpp  
 HRESULT GetRange(  
    DWORD* pdwBegOffset,  
    DWORD* pdwEndOffset  
 );  
 ```  
   
-```c#  
+```csharp  
 public int GetRange(  
    ref uint pdwBegOffset,  
    ref uint pdwEndOffset  
 );  
 ```  
   
-#### <a name="parameters"></a>Paramètres  
+#### <a name="parameters"></a>Parameters  
  `pdwBegOffset`  
- [dans, out] Décalage de la position de début de la plage. Définissez ce paramètre sur une valeur null si cette information n’est pas nécessaire.  
+ [in, out] Offset for the start position of the range. Set this parameter to a null value if this information is not needed.  
   
  `pdwEndOffset`  
- [dans, out] Décalage de la position de fin de la plage. Définissez ce paramètre sur une valeur null si cette information n’est pas nécessaire.  
+ [in, out] Offset for the end position of the range. Set this parameter to a null value if this information is not needed.  
   
-## <a name="return-value"></a>Valeur de retour  
- En cas de réussite, retourne `S_OK`; sinon, retourne un code d’erreur.  
+## <a name="return-value"></a>Return Value  
+ If successful, returns `S_OK`; otherwise, returns an error code.  
   
-## <a name="remarks"></a>Remarques  
- La plage spécifiée dans une position de document pour un point d’arrêt d’emplacement est utilisée par le moteur de débogage (DE) pour rechercher directement une instruction qui apporte réellement le code. Considérons par exemple le code suivant :  
+## <a name="remarks"></a>Remarks  
+ The range specified in a document position for a location breakpoint is used by the debug engine (DE) to search ahead for a statement that actually contributes code. For example, consider the following code:  
   
 ```  
 Line 5: // comment  
 Line 6: x = 1;  
 ```  
   
- La ligne 5 ne contribue aucun code pour le programme débogué. Si le débogueur qui définit le point d’arrêt à la ligne 5 veut le DE pour une recherche à un certain montant de la première ligne contenant le code, le débogueur spécifiez une plage qui comprend des lignes supplémentaires finale où un point d’arrêt peut-être être placé correctement. Le DE serait ensuite rechercher vers le bas sur ces lignes jusqu'à ce qu’il trouve une ligne qui peut accepter un point d’arrêt.  
+ Line 5 contributes no code to the program being debugged. If the debugger that sets the breakpoint on line 5 wants the DE to search forward a certain amount for the first line that contributes code, the debugger would specify a range that includes additional candidate lines where a breakpoint might be correctly placed. The DE would then search forward through those lines until it found a line that could accept a breakpoint.  
   
-## <a name="see-also"></a>Voir aussi  
+## <a name="see-also"></a>See Also  
  [IDebugDocumentPositionOffset2](../../../extensibility/debugger/reference/idebugdocumentpositionoffset2.md)   
  [GetRange](../../../extensibility/debugger/reference/idebugdocumentposition2-getrange.md)

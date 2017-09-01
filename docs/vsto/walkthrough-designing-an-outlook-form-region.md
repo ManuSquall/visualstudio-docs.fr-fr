@@ -1,185 +1,188 @@
 ---
-title: "Proc&#233;dure pas &#224; pas&#160;: conception d&#39;une zone de formulaire Outlook"
-ms.custom: ""
-ms.date: "02/02/2017"
-ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "office-development"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-dev_langs: 
-  - "VB"
-  - "CSharp"
-helpviewer_keywords: 
-  - "zones de formulaire (développement Office dans Visual Studio), créer"
+title: 'Walkthrough: Designing an Outlook Form Region | Microsoft Docs'
+ms.custom: 
+ms.date: 02/02/2017
+ms.prod: visual-studio-dev14
+ms.reviewer: 
+ms.suite: 
+ms.technology:
+- office-development
+ms.tgt_pltfrm: 
+ms.topic: article
+dev_langs:
+- VB
+- CSharp
+helpviewer_keywords:
+- form regions [Office development in Visual Studio], creating
 ms.assetid: b033fc06-cdeb-4d7f-804b-86d15bfa022a
 caps.latest.revision: 41
-author: "kempb"
-ms.author: "kempb"
-manager: "ghogen"
-caps.handback.revision: 40
+author: kempb
+ms.author: kempb
+manager: ghogen
+ms.translationtype: HT
+ms.sourcegitcommit: eb5c9550fd29b0e98bf63a7240737da4f13f3249
+ms.openlocfilehash: e75921b287578f25ed0c112e859129941f21c0f7
+ms.contentlocale: fr-fr
+ms.lasthandoff: 08/30/2017
+
 ---
-# Proc&#233;dure pas &#224; pas&#160;: conception d&#39;une zone de formulaire Outlook
-  Les zones de formulaire personnalisées étendent les formulaires Microsoft Office Outlook standard et personnalisés.  Dans cette procédure pas à pas, vous allez concevoir une zone de formulaire personnalisée qui s'affiche comme une nouvelle page dans la fenêtre Inspecteur d'un élément de contact.  Cette zone de formulaire affiche une carte de toutes les adresses répertoriées pour le contact, en envoyant les informations d'adresse au site web Windows Live Local Search.  Pour obtenir des informations sur les zones de formulaire, consultez [Création de zones de formulaire Outlook](../vsto/creating-outlook-form-regions.md).  
+# <a name="walkthrough-designing-an-outlook-form-region"></a>Walkthrough: Designing an Outlook Form Region
+  Custom form regions extend standard or custom Microsoft Office Outlook forms. In this walkthrough, you will design a custom form region that appears as a new page in the Inspector window of a contact item. This form region displays a map of each address that is listed for the contact, by sending the address information to the Windows Live Local Search Web site. For information about form regions, see [Creating Outlook Form Regions](../vsto/creating-outlook-form-regions.md).  
   
  [!INCLUDE[appliesto_olkallapp](../vsto/includes/appliesto-olkallapp-md.md)]  
   
- Cette procédure pas à pas décrit les tâches suivantes :  
+ This walkthrough illustrates the following tasks:  
   
--   Création d'un projet de complément VSTO Outlook  
+-   Creating a new Outlook VSTO Add-in project.  
   
--   Ajout d'une zone de formulaire au projet de complément VSTO  
+-   Adding a form region to the VSTO Add-in project.  
   
--   Conception de la disposition de la zone de formulaire  
+-   Designing the layout of the form region.  
   
--   Personnalisation du comportement de la zone de formulaire  
+-   Customizing the behavior of the form region.  
   
--   Test de la zone de formulaire Outlook  
+-   Testing the Outlook form region.  
   
 > [!NOTE]  
->  Il est possible que pour certains des éléments de l'interface utilisateur de Visual Studio, votre ordinateur affiche des noms ou des emplacements différents de ceux indiqués dans les instructions suivantes.  L'édition de Visual Studio dont vous disposez et les paramètres que vous utilisez déterminent ces éléments.  Pour plus d'informations, consultez [Customizing Development Settings in Visual Studio](http://msdn.microsoft.com/fr-fr/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
+>  Your computer might show different names or locations for some of the Visual Studio user interface elements in the following instructions. The Visual Studio edition that you have and the settings that you use determine these elements. For more information, see [Personalize the Visual Studio IDE](../ide/personalizing-the-visual-studio-ide.md).  
   
-## Composants requis  
- Pour exécuter cette procédure pas à pas, vous devez disposer des composants suivants :  
+## <a name="prerequisites"></a>Prerequisites  
+ You need the following components to complete this walkthrough:  
   
 -   [!INCLUDE[vsto_vsprereq](../vsto/includes/vsto-vsprereq-md.md)]  
   
--   [!INCLUDE[Outlook_15_short](../vsto/includes/outlook-15-short-md.md)] ou [!INCLUDE[Outlook_14_short](../vsto/includes/outlook-14-short-md.md)].  
+-   [!INCLUDE[Outlook_15_short](../vsto/includes/outlook-15-short-md.md)] or [!INCLUDE[Outlook_14_short](../vsto/includes/outlook-14-short-md.md)].  
   
- ![lien vers la vidéo](~/data-tools/media/playvideo.gif "lien vers la vidéo") Pour visionner la version vidéo de cette rubrique, consultez [Vidéo : conception d'une zone de formulaire Outlook](http://go.microsoft.com/fwlink/?LinkId=140824).  
+ ![link to video](../vsto/media/playvideo.gif "link to video") For a video version of this topic, see [Video How to: Designing an Outlook Form Region](http://go.microsoft.com/fwlink/?LinkID=140824).  
   
-## Création d'un projet de complément VSTO Outlook  
- Commencez par créer un projet de complément VSTO de base.  
+## <a name="creating-a-new-outlook-vsto-add-in-project"></a>Creating a New Outlook VSTO Add-in Project  
+ First create a basic VSTO Add-in project.  
   
-#### Pour créer un projet de complément VSTO Outlook  
+#### <a name="to-create-a-new-outlook-vsto-add-in-project"></a>To create a new Outlook VSTO Add-in project  
   
-1.  Dans [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)], créez un projet de complément VSTO Outlook et nommez\-le MapItAddIn.  
+1.  In [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)], create an Outlook VSTO Add-in project with the name **MapItAddIn**.  
   
-2.  Dans la boîte de dialogue **Nouveau projet**, sélectionnez **Créer le répertoire pour la solution**.  
+2.  In the **New Project** dialog box, select **Create directory for solution**.  
   
-3.  Enregistrez le projet dans un répertoire quelconque.  
+3.  Save the project to any directory.  
   
-     Pour plus d'informations, consultez [Comment : créer des projets Office dans Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md).  
+     For more information, see [How to: Create Office Projects in Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md).  
   
-## Ajout d'une zone de formulaire au projet de complément VSTO Outlook  
- Une solution de complément VSTO Outlook peut contenir un ou plusieurs éléments de zone de formulaire Outlook.  Ajoutez un élément de zone de formulaire à votre projet à l'aide de l'Assistant **Nouvelle zone de formulaire Outlook**.  
+## <a name="adding-a-form-region-to-the-outlook-vsto-add-in-project"></a>Adding a Form Region to the Outlook VSTO Add-in Project  
+ An Outlook VSTO Add-in solution can contain one or more Outlook form region items. Add a form region item to your project by using the **New Outlook Form Region** wizard.  
   
-#### Pour ajouter une zone de formulaire au projet de complément VSTO Outlook  
+#### <a name="to-add-a-form-region-to-the-outlook-vsto-add-in-project"></a>To add a form region to the Outlook VSTO Add-in project  
   
-1.  Dans l'**Explorateur de solutions**, sélectionnez le projet **MapItAddIn**.  
+1.  In **Solution Explorer**, select the **MapItAddIn** project.  
   
-2.  Dans le menu **Projet**, cliquez sur **Ajouter un nouvel élément**.  
+2.  On the **Project** menu, click **Add New Item**.  
   
-3.  Dans la boîte de dialogue **Ajouter un nouvel élément**, sélectionnez **Zone de formulaire Outlook**, nommez le fichier MapIt, puis cliquez sur **Ajouter**.  
+3.  In the **Add New Item** dialog box, select **Outlook Form Region**, name the file **MapIt**, and then click **Add**.  
   
-     L'Assistant **Nouvellezone de formulaire Outlook** démarre.  
+     The **NewOutlook Form Region** wizard starts.  
   
-4.  Dans la page **Sélectionnez la méthode de création de la zone de formulaire**, cliquez sur **Créer une nouvelle zone de formulaire**, puis cliquez sur **Suivant**.  
+4.  On the **Select how you want to create the form region** page, click **Design a new form region**, and then click **Next**.  
   
-5.  Dans la page **Sélectionnez le type de zone de formulaire que vous souhaitez créer**, cliquez sur **Séparer**, puis sur **Suivant**.  
+5.  On the **Select the type of form region you want to create** page, click **Separate**, and then click **Next**.  
   
-     Une zone de formulaire *distincte* ajoute une nouvelle page à un formulaire Outlook.  Pour plus d'informations sur les types de zone de formulaire, consultez [Création de zones de formulaire Outlook](../vsto/creating-outlook-form-regions.md).  
+     A *separate* form region adds a new page to an Outlook form. For more information about form region types, see [Creating Outlook Form Regions](../vsto/creating-outlook-form-regions.md).  
   
-6.  Dans la page **Fournissez un texte descriptif et sélectionnez vos préférences d'affichage**, tapez **Carte** dans la zone **Nom**.  
+6.  On the **Supply descriptive text and select your display preferences** page, type **Map It** in the **Name** box.  
   
-     Ce nom apparaît sur le ruban de la fenêtre Inspecteur lorsque l'élément de contact est ouvert.  
+     This name appears on the Ribbon of the Inspector window when the contact item is open.  
   
-7.  Sélectionnez **Inspecteurs qui sont en mode composition** et **Inspecteurs qui sont en mode lecture**, puis cliquez sur **Suivant**.  
+7.  Select **Inspectors that are in compose mode** and **Inspectors that are in read mode**, and then click **Next**.  
   
-8.  Dans la page **Identifiez les classes de message qui afficheront cette zone de formulaire**, désélectionnez **Message**, sélectionnez **Contact**, puis cliquez sur **Terminer**.  
+8.  On the **Identify the message classes that will display this form region** page, clear **Mail Message**, select **Contact**, and then click **Finish**.  
   
-     Un fichier MapIt.cs ou MapIt.vb est ajouté à votre projet.  
+     A MapIt.cs or MapIt.vb file is added to your project.  
   
-## Conception de la disposition de la zone de formulaire  
- Développez visuellement des zones de formulaire en utilisant le *Concepteur de zones de formulaire*.  Vous pouvez faire glisser des contrôles managés vers l'aire du Concepteur de zones de formulaire.  Utilisez le concepteur et la fenêtre **Propriétés** pour ajuster la disposition et l'apparence des contrôles.  
+## <a name="designing-the-layout-of-the-form-region"></a>Designing the Layout of the Form Region  
+ Develop form regions visually by using the *form region designer*. You can drag managed controls to the form region designer surface. Use the designer and the **Properties** window to adjust control layout and appearance.  
   
-#### Pour concevoir la disposition de la zone de formulaire  
+#### <a name="to-design-the-layout-of-the-form-region"></a>To design the layout of the form region  
   
-1.  Dans l'**Explorateur de solutions**, développez le projet **MapItAddIn**, puis double\-cliquez sur MapIt.cs ou MapIt.vb pour ouvrir le Concepteur de zones de formulaire.  
+1.  In **Solution Explorer**, expand the **MapItAddIn** project, and then double-click MapIt.cs or MapIt.vb to open the Form Region Designer.  
   
-2.  Cliquez avec le bouton droit sur le concepteur et cliquez sur **Propriétés**.  
+2.  Right-click the designer, and then click **Properties**.  
   
-3.  Dans la fenêtre **Propriétés**, définissez **Taille** sur 664, 469.  
+3.  In the **Properties** window, set **Size** to **664, 469**.  
   
-     Cela garantit que la zone de formulaire sera suffisamment grande pour afficher une carte.  
+     This ensures that the form region will be large enough to display a map.  
   
-4.  Dans le menu **Affichage**, cliquez sur **Boîte à outils**.  
+4.  On the **View** menu, click **Toolbox**.  
   
-5.  Sous l'onglet **Contrôles communs** de la **Boîte à outils**, ajoutez un **WebBrowser** à la zone de formulaire.  
+5.  From the **Common Controls** tab of the **Toolbox**, add a **WebBrowser** to the form region.  
   
-     Le **WebBrowser** affiche une carte de toutes les adresses répertoriées pour le contact.  
+     The **WebBrowser** will display a map of each address that is listed for the contact.  
   
-## Personnalisation du comportement de la zone de formulaire  
- Ajoutez du code aux gestionnaires d'événements de zone de formulaire pour personnaliser la façon dont une zone de formulaire se comporte au moment de l'exécution.  Pour cette zone de formulaire, le code examine les propriétés d'un élément Outlook et détermine s'il faut afficher la zone de formulaire Carte.  S'il affiche la zone de formulaire, le code accède à Windows Live Local Search et charge une carte de toutes les adresses répertoriées dans l'élément de contact Outlook.  
+## <a name="customizing-the-behavior-of-the-form-region"></a>Customizing the Behavior of the Form Region  
+ Add code to form region event handlers to customize the way a form region behaves at run time. For this form region, the code examines the properties of an Outlook item and determines whether to display the Map It form region. If it displays the form region, the code navigates to Windows Live Local Search and loads a map of each address listed in the Outlook contact item.  
   
-#### Pour personnaliser le comportement de la zone de formulaire  
+#### <a name="to-customize-the-behavior-of-the-form-region"></a>To customize the behavior of the form region  
   
-1.  Dans l'**Explorateur de solutions**, cliquez avec le bouton droit sur MapIt.cs ou sur MapIt.vb, puis cliquez sur **Afficher le code**.  
+1.  In **Solution Explorer**, right click MapIt.cs or MapIt.vb, and then click **View Code**.  
   
-     MapIt.cs ou MapIt.vb s'ouvre dans l'éditeur de code.  
+     MapIt.cs or MapIt.vb opens in the Code Editor.  
   
-2.  Développez la zone de code **Fabrique de zones de formulaire**.  
+2.  Expand the **Form Region Factory** code region.  
   
-     La classe de fabrique de zones de formulaire `MapItFactory` est exposée.  
+     The form region factory class named `MapItFactory` is exposed.  
   
-3.  Ajoutez le code ci\-après au gestionnaire d'événements `MapItFactory_FormRegionInitializing`.  Ce gestionnaire d'événements est appelé quand l'utilisateur ouvre un élément de contact.  Le code suivant détermine si l'élément de contact contient une adresse.  Si l'élément de contact ne contient pas d'adresse, ce code affecte à la propriété <xref:System.ComponentModel.CancelEventArgs.Cancel%2A> de la classe <xref:Microsoft.Office.Tools.Outlook.FormRegionInitializingEventArgs> la valeur **true** et la zone de formulaire n'est pas affichée.  Sinon, le complément VSTO déclenche l'événement <xref:Microsoft.Office.Tools.Outlook.FormRegionControl.FormRegionShowing> et affiche la zone de formulaire.  
+3.  Add the following code to the `MapItFactory_FormRegionInitializing` event handler. This event handler is called when the user opens a contact item. The following code determines whether the contact item contains an address. If the contact item does not contain an address, this code sets the <xref:System.ComponentModel.CancelEventArgs.Cancel%2A> property of the <xref:Microsoft.Office.Tools.Outlook.FormRegionInitializingEventArgs> class to **true** and the form region is not displayed. Otherwise, the VSTO Add-in raises the <xref:Microsoft.Office.Tools.Outlook.FormRegionControl.FormRegionShowing> event and displays the form region.  
   
-     [!code-csharp[Trin_Outlook_FR_Separate#1](../snippets/csharp/VS_Snippets_OfficeSP/Trin_Outlook_FR_Separate/CS/MapIt.cs#1)]
-     [!code-vb[Trin_Outlook_FR_Separate#1](../snippets/visualbasic/VS_Snippets_OfficeSP/Trin_Outlook_FR_Separate/VB/MapIt.vb#1)]  
+     [!code-csharp[Trin_Outlook_FR_Separate#1](../vsto/codesnippet/CSharp/Trin_Outlook_FR_Separate_O12/MapIt.cs#1)]  [!code-vb[Trin_Outlook_FR_Separate#1](../vsto/codesnippet/VisualBasic/Trin_Outlook_FR_Separate_O12/MapIt.vb#1)]  
   
-4.  Ajoutez le code ci\-après au gestionnaire d'événements <xref:Microsoft.Office.Tools.Outlook.FormRegionControl.FormRegionShowing>.  Ce code exécute les tâches suivantes :  
+4.  Add the following code to the <xref:Microsoft.Office.Tools.Outlook.FormRegionControl.FormRegionShowing> event handler. This code performs the following tasks:  
   
-    -   Concatène chaque adresse figurant dans l'élément de contact et crée une chaîne d'URL.  
+    -   Concatenates each address in the contact item and creates a URL string.  
   
-    -   Appelle la méthode <xref:System.Windows.Forms.WebBrowser.Navigate%2A> de l'objet <xref:System.Windows.Forms.WebBrowser> et passe la chaîne d'URL en tant que paramètre.  
+    -   Calls the <xref:System.Windows.Forms.WebBrowser.Navigate%2A> method of the <xref:System.Windows.Forms.WebBrowser> object and passes the URL string as a parameter.  
   
-     Le site web Local Search apparaît dans la zone de formulaire Carte et présente chaque adresse dans la zone temporaire.  
+     The Local Search Web site appears in the Map It form region and presents each address in the scratch pad.  
   
-     [!code-csharp[Trin_Outlook_FR_Separate#2](../snippets/csharp/VS_Snippets_OfficeSP/Trin_Outlook_FR_Separate/CS/MapIt.cs#2)]
-     [!code-vb[Trin_Outlook_FR_Separate#2](../snippets/visualbasic/VS_Snippets_OfficeSP/Trin_Outlook_FR_Separate/VB/MapIt.vb#2)]  
+     [!code-csharp[Trin_Outlook_FR_Separate#2](../vsto/codesnippet/CSharp/Trin_Outlook_FR_Separate_O12/MapIt.cs#2)] [!code-vb[Trin_Outlook_FR_Separate#2](../vsto/codesnippet/VisualBasic/Trin_Outlook_FR_Separate_O12/MapIt.vb#2)]  
   
-## Test de la zone de formulaire Outlook  
- Quand vous exécutez le projet, Visual Studio ouvre Outlook.  Ouvrez un élément de contact pour afficher la zone de formulaire Carte.  La zone de formulaire Carte s'affiche en tant que page dans le formulaire de tout élément de contact contenant une adresse.  
+## <a name="testing-the-outlook-form-region"></a>Testing the Outlook Form Region  
+ When you run the project, Visual Studio opens Outlook. Open a contact item to view the Map It form region. The Map It form region appears as a page in the form of any contact item that contains an address.  
   
-#### Pour tester la zone de formulaire Carte  
+#### <a name="to-test-the-map-it-form-region"></a>To test the Map It form region  
   
-1.  Appuyez sur F5 pour exécuter le projet.  
+1.  Press F5 to run the project.  
   
-     Outlook s'ouvre.  
+     Outlook opens.  
   
-2.  Dans Outlook, sous l'onglet **Accueil**, cliquez sur **Nouveaux éléments**, puis sur **Contact**.  
+2.  In Outlook, on the **Home** tab, click **New Items**, and then click **Contact**.  
   
-3.  Dans le formulaire du contact, tapez **Sabine Royant** comme nom de contact, puis spécifiez les trois adresses suivantes.  
+3.  In the contact form, type **Ann Beebe** as the contact name, and then specify the following three addresses.  
   
-    |Type d'adresse|Adresse|  
-    |--------------------|-------------|  
-    |**Bureau**|45, rue principale  69005 Lyon|  
-    |**Accueil**|123, rue Duguesclin  69005 Lyon|  
-    |**Autre**|345, rue de la République  75008 Paris|  
+    |Address Type|Address|  
+    |------------------|-------------|  
+    |**Business**|**4567 Main St. Buffalo, NY**|  
+    |**Home**|**1234 North St. Buffalo, NY**|  
+    |**Other**|**3456 Main St. Seattle, WA**|  
   
-4.  Enregistrez et fermez l'élément de contact.  
+4.  Save and close the contact item.  
   
-5.  Rouvrez l'élément de contact **Sabine Royant**.  
+5.  Re-open the **Ann Beebe** contact item.  
   
-6.  Dans le groupe **Afficher** du ruban de l'élément, cliquez sur **Carte** pour ouvrir la zone de formulaire Carte.  
+6.  In the **Show** group of the item's Ribbon, click **Map It** to open the Map It form region.  
   
-     La zone de formulaire Carte apparaît et affiche le site web Local Search.  Les adresses **Bureau**, **Domicile** et **Autre** apparaissent dans la zone temporaire.  Dans la zone temporaire, sélectionnez une adresse que vous souhaitez cartographier.  
+     The Map It form region appears, and displays the Local Search Web site. The **Business**, **Home**, and **Other** addresses appear in the scratch pad. In the scratch pad, select an address that you want to map.  
   
-## Étapes suivantes  
- Pour plus d'informations sur la personnalisation de l'interface utilisateur d'une application Outlook, consultez les rubriques suivantes :  
+## <a name="next-steps"></a>Next Steps  
+ You can learn more about how to customize the UI of an Outlook application from these topics:  
   
--   Pour en savoir plus sur la personnalisation du ruban d'un élément Outlook, consultez [Personnalisation d'un ruban pour Outlook](../vsto/customizing-a-ribbon-for-outlook.md).  
+-   To learn about how to customize the Ribbon of an Outlook item, see [Customizing a Ribbon for Outlook](../vsto/customizing-a-ribbon-for-outlook.md).  
   
-## Voir aussi  
- [Accès à une zone de formulaire au moment de l'exécution](../vsto/accessing-a-form-region-at-run-time.md)   
- [Création de zones de formulaire Outlook](../vsto/creating-outlook-form-regions.md)   
- [Directives pour la création de zones de formulaire Outlook](../vsto/guidelines-for-creating-outlook-form-regions.md)   
- [Procédure pas à pas : importation d'une zone de formulaire conçue dans Outlook](../vsto/walkthrough-importing-a-form-region-that-is-designed-in-outlook.md)   
- [Comment : ajouter une zone de formulaire à un projet de complément Outlook](../vsto/how-to-add-a-form-region-to-an-outlook-add-in-project.md)   
- [Association d'une zone de formulaire à une classe de message Outlook](../vsto/associating-a-form-region-with-an-outlook-message-class.md)   
- [Actions personnalisées dans les zones de formulaire Outlook](../vsto/custom-actions-in-outlook-form-regions.md)   
- [Comment : empêcher Outlook d'afficher une zone de formulaire](../vsto/how-to-prevent-outlook-from-displaying-a-form-region.md)  
+## <a name="see-also"></a>See Also  
+ [Accessing a Form Region at Run Time](../vsto/accessing-a-form-region-at-run-time.md)   
+ [Creating Outlook Form Regions](../vsto/creating-outlook-form-regions.md)   
+ [Guidelines for Creating Outlook Form Regions](../vsto/guidelines-for-creating-outlook-form-regions.md)   
+ [Walkthrough: Importing a Form Region That Is Designed in Outlook](../vsto/walkthrough-importing-a-form-region-that-is-designed-in-outlook.md)   
+ [How to: Add a Form Region to an Outlook Add-in Project](../vsto/how-to-add-a-form-region-to-an-outlook-add-in-project.md)   
+ [Associating a Form Region with an Outlook Message Class](../vsto/associating-a-form-region-with-an-outlook-message-class.md)   
+ [Custom Actions in Outlook Form Regions](../vsto/custom-actions-in-outlook-form-regions.md)   
+ [How to: Prevent Outlook from Displaying a Form Region](../vsto/how-to-prevent-outlook-from-displaying-a-form-region.md)  
   
   

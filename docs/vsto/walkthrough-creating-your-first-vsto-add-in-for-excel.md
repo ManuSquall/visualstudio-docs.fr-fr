@@ -1,145 +1,149 @@
 ---
-title: "Proc&#233;dure pas &#224; pas&#160;: cr&#233;ation de votre premier compl&#233;ment VSTO pour Excel"
-ms.custom: ""
-ms.date: "02/02/2017"
-ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "office-development"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-dev_langs: 
-  - "VB"
-  - "CSharp"
-helpviewer_keywords: 
-  - "compléments de niveau application (développement Office dans Visual Studio), création de votre premier projet"
-  - "Développement Office dans Visual Studio, création de votre premier projet"
-  - "compléments (développement Office dans Visual Studio), création de votre premier projet"
-  - "Excel (développement Office dans Visual Studio), création de votre premier projet"
+title: 'Walkthrough: Creating Your First VSTO Add-in for Excel | Microsoft Docs'
+ms.custom: 
+ms.date: 02/02/2017
+ms.prod: visual-studio-dev14
+ms.reviewer: 
+ms.suite: 
+ms.technology:
+- office-development
+ms.tgt_pltfrm: 
+ms.topic: article
+dev_langs:
+- VB
+- CSharp
+helpviewer_keywords:
+- application-level add-ins [Office development in Visual Studio], creating your first project
+- Office development in Visual Studio, creating your first project
+- add-ins [Office development in Visual Studio], creating your first project
+- Excel [Office development in Visual Studio], creating your first project
 ms.assetid: a855e2be-3ecf-4112-a7f5-ec0f7fad3b5f
 caps.latest.revision: 33
-author: "kempb"
-ms.author: "kempb"
-manager: "ghogen"
-caps.handback.revision: 32
+author: kempb
+ms.author: kempb
+manager: ghogen
+ms.translationtype: HT
+ms.sourcegitcommit: eb5c9550fd29b0e98bf63a7240737da4f13f3249
+ms.openlocfilehash: 298cc2730bd6656df7628454600710fd21fa4ecd
+ms.contentlocale: fr-fr
+ms.lasthandoff: 08/30/2017
+
 ---
-# Proc&#233;dure pas &#224; pas&#160;: cr&#233;ation de votre premier compl&#233;ment VSTO pour Excel
-  Cette procédure pas à pas d'introduction vous indique comment créer un complément de niveau application pour Microsoft Office Excel. Les fonctionnalités que vous créez dans ce type de solution sont accessibles à l'application, quels que soient les classeurs ouverts.  
+# <a name="walkthrough-creating-your-first-vsto-add-in-for-excel"></a>Walkthrough: Creating Your First VSTO Add-in for Excel
+  This introductory walkthrough shows you how to create an application-level Add-in for Microsoft Office Excel. The features that you create in this kind of solution are available to the application itself, regardless of which workbooks are open.  
   
  [!INCLUDE[appliesto_xlallapp](../vsto/includes/appliesto-xlallapp-md.md)]  
   
- Cette procédure pas à pas décrit les tâches suivantes :  
+ This walkthrough illustrates the following tasks:  
   
--   Création d'un projet de complément VSTO Excel pour Excel  
+-   Creating an Excel VSTO Add-in project for Excel.  
   
--   Écriture de code qui utilise le modèle objet d'Excel pour ajouter du texte à un classeur quand il est enregistré.  
+-   Writing code that uses the object model of Excel to add text to a workbook when it is saved.  
   
--   Génération et exécution du projet pour le tester  
+-   Building and running the project to test it.  
   
--   Nettoyage du projet terminé, pour que le complément VSTO ne s'exécute plus automatiquement sur votre ordinateur de développement.  
+-   Cleaning up the completed project so that the VSTO Add-in no longer runs automatically on your development computer.  
   
  [!INCLUDE[note_settings_general](../sharepoint/includes/note-settings-general-md.md)]  
   
-## Composants requis  
- Pour exécuter cette procédure pas à pas, vous devez disposer des composants suivants :  
+## <a name="prerequisites"></a>Prerequisites  
+ You need the following components to complete this walkthrough:  
   
 -   [!INCLUDE[vsto_vsprereq](../vsto/includes/vsto-vsprereq-md.md)]  
   
--   [!INCLUDE[Excel_15_short](../vsto/includes/excel-15-short-md.md)] ou [!INCLUDE[Excel_14_short](../vsto/includes/excel-14-short-md.md)].  
+-   [!INCLUDE[Excel_15_short](../vsto/includes/excel-15-short-md.md)] or [!INCLUDE[Excel_14_short](../vsto/includes/excel-14-short-md.md)].  
   
-## Création du projet  
+## <a name="creating-the-project"></a>Creating the Project  
   
-#### Pour créer un projet de complément VSTO Excel dans Visual Studio  
+#### <a name="to-create-a-new-excel-vsto-add-in-project-in-visual-studio"></a>To create a new Excel VSTO Add-in project in Visual Studio  
   
-1.  Démarrez [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)].  
+1.  Start [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)].  
   
-2.  Dans le menu **Fichier**, pointez sur **Nouveau**, puis cliquez sur **Projet**.  
+2.  On the **File** menu, point to **New**, and then click **Project**.  
   
-3.  Dans le volet Modèles, développez **Visual C\#** ou **Visual Basic**, puis développez **Office\/SharePoint**.  
+3.  In the templates pane, expand **Visual C#** or **Visual Basic**, and then expand **Office/SharePoint**.  
   
-4.  Sous le nœud développé **Office\/SharePoint**, sélectionnez le nœud **Compléments Office**.  
+4.  Under the expanded **Office/SharePoint** node, select the **Office Add-ins** node.  
   
-5.  Dans la liste des modèles de projet, sélectionnez **Complément Excel 2010** ou **Complément Excel 2013**.  
+5.  In the list of project templates, select **Excel 2010 Add-in** or **Excel 2013 Add-in**.  
   
-6.  Dans la zone **Nom**, tapez **FirstExcelAddIn**.  
+6.  In the **Name** box, type **FirstExcelAddIn**.  
   
-7.  Cliquez sur **OK**.  
+7.  Click **OK**.  
   
-     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] crée le projet **FirstExcelAddIn** et ouvre le fichier de code ThisAddIn dans l'éditeur.  
+     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] creates the **FirstExcelAddIn** project and opens the ThisAddIn code file in the editor.  
   
-## Écriture de code pour ajouter du texte au classeur enregistré  
- L'étape suivante consiste à ajouter du code au fichier de code ThisAddIn. Le nouveau code utilise le modèle objet d'Excel pour insérer du texte réutilisable dans la première ligne de la feuille de calcul active. La feuille de calcul active est celle qui est ouverte quand l'utilisateur enregistre le classeur. Par défaut, le fichier de code ThisAddIn contient le code généré suivant :  
+## <a name="writing-code-to-add-text-to-the-saved-workbook"></a>Writing Code to Add Text to the Saved Workbook  
+ Next, add code to the ThisAddIn code file. The new code uses the object model of Excel to insert boilerplate text in the first row of the active worksheet. The active worksheet is the worksheet that is open when the user saves the workbook. By default, the ThisAddIn code file contains the following generated code:  
   
--   Une définition partielle de la classe `ThisAddIn`. Cette classe fournit un point d'entrée pour votre code et offre un accès au modèle objet d'Excel. Pour plus d'informations, consultez [Programmation de compléments VSTO](../vsto/programming-vsto-add-ins.md). Le reste de la classe `ThisAddIn` est défini dans un fichier de code masqué que vous ne devez pas modifier.  
+-   A partial definition of the `ThisAddIn` class. This class provides an entry point for your code and provides access to the object model of Excel. For more information, see [Programming VSTO Add-Ins](../vsto/programming-vsto-add-ins.md). The remainder of the `ThisAddIn` class is defined in a hidden code file that you should not modify.  
   
--   Les gestionnaires d'événements `ThisAddIn_Startup` et `ThisAddIn_Shutdown`. Ces gestionnaires d'événements sont appelés quand Excel charge et décharge votre complément VSTO. Utilisez ces gestionnaires d'événements pour initialiser votre complément VSTO quand il est chargé et pour nettoyer les ressources utilisées par votre complément quand il est déchargé. Pour plus d'informations, consultez [Événements dans les projets Office](../vsto/events-in-office-projects.md).  
+-   The `ThisAddIn_Startup` and `ThisAddIn_Shutdown` event handlers. These event handlers are called when Excel loads and unloads your VSTO Add-in. Use these event handlers to initialize your VSTO Add-in when it is loaded, and to clean up resources used by your Add-in when it is unloaded. For more information, see [Events in Office Projects](../vsto/events-in-office-projects.md).  
   
-#### Pour ajouter une ligne de texte au classeur enregistré  
+#### <a name="to-add-a-line-of-text-to-the-saved-workbook"></a>To add a line of text to the saved workbook  
   
-1.  Dans le fichier de code ThisAddIn, ajoutez le code suivant à la classe `ThisAddIn`. Le nouveau code définit un gestionnaire d'événements pour l'événement <xref:Microsoft.Office.Interop.Excel.AppEvents_Event.WorkbookBeforeSave> qui est déclenché quand un classeur est enregistré.  
+1.  In the ThisAddIn code file, add the following code to the `ThisAddIn` class. The new code defines an event handler for the <xref:Microsoft.Office.Interop.Excel.AppEvents_Event.WorkbookBeforeSave> event, which is raised when a workbook is saved.  
   
-     Quand l'utilisateur enregistre un classeur, le gestionnaire d'événements ajoute le nouveau texte au début de la feuille de calcul active.  
+     When the user saves a workbook, the event handler adds new text at the start of the active worksheet.  
   
-     [!code-csharp[Trin_ExcelAddInTutorial#1](../snippets/csharp/VS_Snippets_OfficeSP/Trin_ExcelAddInTutorial/CS/ThisAddIn.cs#1)]
-     [!code-vb[Trin_ExcelAddInTutorial#1](../snippets/visualbasic/VS_Snippets_OfficeSP/Trin_ExcelAddInTutorial/VB/ThisAddIn.vb#1)]  
+     [!code-vb[Trin_ExcelAddInTutorial#1](../vsto/codesnippet/VisualBasic/Trin_ExcelAddInTutorial/ThisAddIn.vb#1)]  [!code-csharp[Trin_ExcelAddInTutorial#1](../vsto/codesnippet/CSharp/Trin_ExcelAddInTutorial/ThisAddIn.cs#1)]  
   
-2.  Si vous utilisez C\#, ajoutez le code requis suivant au gestionnaire d'événements `ThisAddIn_Startup`. Ce code permet de connecter le gestionnaire d'événements `Application_WorkbookBeforeSave` à l'événement <xref:Microsoft.Office.Interop.Excel.AppEvents_Event.WorkbookBeforeSave>.  
+2.  If you are using C#, add the following required code to the `ThisAddIn_Startup` event handler. This code is used to connect the `Application_WorkbookBeforeSave` event handler with the <xref:Microsoft.Office.Interop.Excel.AppEvents_Event.WorkbookBeforeSave> event.  
   
-     [!code-csharp[Trin_ExcelAddInTutorial#2](../snippets/csharp/VS_Snippets_OfficeSP/Trin_ExcelAddInTutorial/CS/ThisAddIn.cs#2)]  
+     [!code-csharp[Trin_ExcelAddInTutorial#2](../vsto/codesnippet/CSharp/Trin_ExcelAddInTutorial/ThisAddIn.cs#2)]  
   
- Pour modifier le classeur quand il est enregistré, les exemples de code précédents utilisent les objets suivants :  
+ To modify the workbook when it is saved, the previous code examples use the following objects:  
   
--   Le champ `Application` de la classe `ThisAddIn`. Le champ `Application` retourne un objet <xref:Microsoft.Office.Interop.Excel.Application> qui représente l'instance actuelle d'Excel.  
+-   The `Application` field of the `ThisAddIn` class. The `Application` field returns a <xref:Microsoft.Office.Interop.Excel.Application> object, which represents the current instance of Excel.  
   
--   Le paramètre `Wb` du gestionnaire d'événements pour l'événement <xref:Microsoft.Office.Interop.Excel.AppEvents_Event.WorkbookBeforeSave>. Le paramètre `Wb` est un objet <xref:Microsoft.Office.Interop.Excel.Workbook> qui représente le classeur enregistré. Pour plus d'informations, consultez [Vue d'ensemble du modèle objet Excel](../vsto/excel-object-model-overview.md).  
+-   The `Wb` parameter of the event handler for the <xref:Microsoft.Office.Interop.Excel.AppEvents_Event.WorkbookBeforeSave> event. The `Wb` parameter is a <xref:Microsoft.Office.Interop.Excel.Workbook> object, which represents the saved workbook. For more information, see [Excel Object Model Overview](../vsto/excel-object-model-overview.md).  
   
-## Test du projet  
+## <a name="testing-the-project"></a>Testing the Project  
   
-#### Pour tester le projet  
+#### <a name="to-test-the-project"></a>To test the project  
   
-1.  Appuyez sur **F5** pour générer et exécuter votre projet.  
+1.  Press **F5** to build and run your project.  
   
-     Quand vous générez le projet, le code est compilé dans un assembly qui est inclus dans le dossier de sortie de la génération du projet. Visual Studio crée également un jeu d'entrées de Registre qui permet à Excel de détecter et de charger le complément VSTO, et il configure les paramètres de sécurité de l'ordinateur de développement pour permettre au complément VSTO de s'exécuter. Pour plus d'informations, consultez [Génération de solutions Office](../vsto/building-office-solutions.md).  
+     When you build the project, the code is compiled into an assembly that is included in the build output folder for the project. Visual Studio also creates a set of registry entries that enable Excel to discover and load the VSTO Add-in, and it configures the security settings on the development computer to enable the VSTO Add-in to run. For more information, see [Building Office Solutions](../vsto/building-office-solutions.md).  
   
-2.  Dans Excel, enregistrez le classeur.  
+2.  In Excel, save the workbook.  
   
-3.  Vérifiez que le texte suivant est ajouté au classeur.  
+3.  Verify that the following text is added to the workbook.  
   
-     **Ce texte a été ajouté via le code.**  
+     **This text was added by using code.**  
   
-4.  Fermez Excel.  
+4.  Close Excel.  
   
-## Nettoyage du projet  
- Une fois que vous avez terminé de développer un projet, supprimez l'assembly du complément VSTO, les entrées de Registre et les paramètres de sécurité de votre ordinateur de développement. Sinon, le complément VSTO s'exécute chaque fois que vous ouvrez Excel sur votre ordinateur de développement.  
+## <a name="cleaning-up-the-project"></a>Cleaning up the Project  
+ When you finish developing a project, remove the VSTO Add-in assembly, registry entries, and security settings from your development computer. Otherwise, the VSTO Add-in will continue to run every time that you open Excel on your development computer.  
   
-#### Pour nettoyer le projet terminé sur votre ordinateur de développement  
+#### <a name="to-clean-up-the-completed-project-on-your-development-computer"></a>To clean up the completed project on your development computer  
   
-1.  Dans Visual Studio, dans le menu **Générer**, cliquez sur **Nettoyer la solution**.  
+1.  In Visual Studio, on the **Build** menu, click **Clean Solution**.  
   
-## Étapes suivantes  
- Maintenant que vous avez créé un complément VSTO de base pour Excel, vous pouvez perfectionner votre connaissance du développement des compléments VSTO en consultant les rubriques suivantes :  
+## <a name="next-steps"></a>Next Steps  
+ Now that you have created a basic VSTO Add-in for Excel, you can learn more about how to develop VSTO Add-ins from these topics:  
   
--   Tâches de programmation générales que vous pouvez effectuer dans les compléments VSTO : [Programmation de compléments VSTO](../vsto/programming-vsto-add-ins.md).  
+-   General programming tasks that you can perform in VSTO Add-ins: [Programming VSTO Add-Ins](../vsto/programming-vsto-add-ins.md).  
   
--   Tâches de programmation propres aux compléments VSTO Excel : [Solutions Excel](../vsto/excel-solutions.md).  
+-   Programming tasks that are specific to Excel VSTO Add-ins: [Excel Solutions](../vsto/excel-solutions.md).  
   
--   Utilisation du modèle objet d’Excel : [Vue d'ensemble du modèle objet Excel](../vsto/excel-object-model-overview.md).  
+-   Using the object model of Excel: [Excel Object Model Overview](../vsto/excel-object-model-overview.md).  
   
--   Personnalisation de l’interface utilisateur d’Excel en ajoutant un onglet personnalisé au ruban ou en créant votre propre volet des tâches personnalisé : [Personnalisation de l'interface utilisateur Office](../vsto/office-ui-customization.md).  
+-   Customizing the user interface (UI) of Excel, for example, by adding a custom tab to the Ribbon or creating your own custom task pane: [Office UI Customization](../vsto/office-ui-customization.md).  
   
--   Génération et débogage des compléments VSTO pour Excel : [Génération de solutions Office](../vsto/building-office-solutions.md).  
+-   Building and debugging VSTO Add-ins for Excel: [Building Office Solutions](../vsto/building-office-solutions.md).  
   
--   Déploiement des compléments VSTO pour Excel : [Déploiement d'une solution Office](../vsto/deploying-an-office-solution.md).  
+-   Deploying VSTO Add-ins for Excel: [Deploying an Office Solution](../vsto/deploying-an-office-solution.md).  
   
-## Voir aussi  
- [Vue d'ensemble du développement des solutions Office &#40;VSTO&#41;](../vsto/office-solutions-development-overview-vsto.md)   
- [Solutions Excel](../vsto/excel-solutions.md)   
- [Programmation de compléments VSTO](../vsto/programming-vsto-add-ins.md)   
- [Vue d'ensemble du modèle objet Excel](../vsto/excel-object-model-overview.md)   
- [Personnalisation de l'interface utilisateur Office](../vsto/office-ui-customization.md)   
- [Génération de solutions Office](../vsto/building-office-solutions.md)   
- [Déploiement d'une solution Office](../vsto/deploying-an-office-solution.md)   
- [Vue d'ensemble des modèles de projet Office](../vsto/office-project-templates-overview.md)  
+## <a name="see-also"></a>See Also  
+ [Office Solutions Development Overview &#40;VSTO&#41;](../vsto/office-solutions-development-overview-vsto.md)   
+ [Excel Solutions](../vsto/excel-solutions.md)   
+ [Programming VSTO Add-Ins](../vsto/programming-vsto-add-ins.md)   
+ [Excel Object Model Overview](../vsto/excel-object-model-overview.md)   
+ [Office UI Customization](../vsto/office-ui-customization.md)   
+ [Building Office Solutions](../vsto/building-office-solutions.md)   
+ [Deploying an Office Solution](../vsto/deploying-an-office-solution.md)   
+ [Office Project Templates Overview](../vsto/office-project-templates-overview.md)  
   
   

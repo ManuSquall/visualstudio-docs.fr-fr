@@ -1,59 +1,76 @@
 ---
-title: "IDebugPendingBreakpoint2::Enable | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "IDebugPendingBreakpoint2::Enable"
-helpviewer_keywords: 
-  - "IDebugPendingBreakpoint2::Enable (méthode)"
-  - "Enable (méthode)"
+title: IDebugPendingBreakpoint2::Enable | Microsoft Docs
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology:
+- vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords:
+- IDebugPendingBreakpoint2::Enable
+helpviewer_keywords:
+- IDebugPendingBreakpoint2::Enable method
+- Enable method
 ms.assetid: 09e32d05-464b-40a6-a41d-76f2759cf2cd
 caps.latest.revision: 10
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 10
----
-# IDebugPendingBreakpoint2::Enable
-[!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]
+ms.author: gregvanl
+manager: ghogen
+translation.priority.mt:
+- cs-cz
+- de-de
+- es-es
+- fr-fr
+- it-it
+- ja-jp
+- ko-kr
+- pl-pl
+- pt-br
+- ru-ru
+- tr-tr
+- zh-cn
+- zh-tw
+ms.translationtype: MT
+ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
+ms.openlocfilehash: 5cab200b842de2d63596dfa311acb18236c50782
+ms.contentlocale: fr-fr
+ms.lasthandoff: 08/28/2017
 
-bascule l'état actif du point d'arrêt en attente.  
+---
+# <a name="idebugpendingbreakpoint2enable"></a>IDebugPendingBreakpoint2::Enable
+Toggles the enabled state of the pending breakpoint.  
   
-## Syntaxe  
+## <a name="syntax"></a>Syntax  
   
-```cpp#  
-HRESULT Enable(   
-   BOOL fEnable  
+```cpp  
+HRESULT Enable(   
+   BOOL fEnable  
 );  
 ```  
   
-```c#  
-int Enable(   
-   int fEnable  
+```csharp  
+int Enable(   
+   int fEnable  
 );  
 ```  
   
-#### Paramètres  
+#### <a name="parameters"></a>Parameters  
  `fEnable`  
- \[in\]  Affectez une valeur différente de zéro \(`TRUE`\) pour permettre à un point d'arrêt en attente, ou à zéro \(`FALSE`\) pour désactiver.  
+ [in] Set to nonzero (`TRUE`) to enable a pending breakpoint, or to zero (`FALSE`) to disable.  
   
-## Valeur de retour  
- En cas de réussite, retourne `S_OK`; sinon, retourne un code d'erreur.  Retourne `E_BP_DELETED` si le point d'arrêt a été supprimé.  
+## <a name="return-value"></a>Return Value  
+ If successful, returns `S_OK`; otherwise, returns an error code. Returns `E_BP_DELETED` if the breakpoint has been deleted.  
   
-## Notes  
- Lorsqu'un point d'arrêt en attente est activé ou désactivé, tous les points d'arrêt liés de lui sont définis au même état.  
+## <a name="remarks"></a>Remarks  
+ When a pending breakpoint is enabled or disabled, all breakpoints bound from it are set to the same state.  
   
- Appeler cette méthode autant de fois que nécessaire, même si le point d'arrêt est déjà activé ou désactivé.  
+ This method may be called as many times as necessary, even if the breakpoint is already enabled or disabled.  
   
-## Exemple  
- L'exemple suivant indique comment appliquer cette méthode d'un objet simple d' `CPendingBreakpoint` qui expose l'interface d' [IDebugPendingBreakpoint2](../../../extensibility/debugger/reference/idebugpendingbreakpoint2.md) .  
+## <a name="example"></a>Example  
+ The following example shows how to implement this method for a simple `CPendingBreakpoint` object that exposes the [IDebugPendingBreakpoint2](../../../extensibility/debugger/reference/idebugpendingbreakpoint2.md) interface.  
   
-```cpp#  
+```cpp  
 HRESULT CPendingBreakpoint::Enable(BOOL fEnable)    
 {    
    HRESULT hr;    
@@ -83,5 +100,5 @@ HRESULT CPendingBreakpoint::Enable(BOOL fEnable)
 }    
 ```  
   
-## Voir aussi  
+## <a name="see-also"></a>See Also  
  [IDebugPendingBreakpoint2](../../../extensibility/debugger/reference/idebugpendingbreakpoint2.md)

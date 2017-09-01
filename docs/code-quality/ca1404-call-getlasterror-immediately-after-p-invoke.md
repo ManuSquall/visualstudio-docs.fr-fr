@@ -1,43 +1,61 @@
 ---
-title: "CA1404&#160;: Appeler GetLastError imm&#233;diatement apr&#232;s P/Invoke | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-devops-test"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "CallGetLastErrorImmediatelyAfterPInvoke"
-  - "CA1404"
-helpviewer_keywords: 
-  - "CallGetLastErrorImmediatelyAfterPInvoke"
-  - "CA1404"
+title: 'CA1404: Call GetLastError immediately after P-Invoke | Microsoft Docs'
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology:
+- vs-devops-test
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords:
+- CallGetLastErrorImmediatelyAfterPInvoke
+- CA1404
+helpviewer_keywords:
+- CallGetLastErrorImmediatelyAfterPInvoke
+- CA1404
 ms.assetid: 52ae9eff-50f9-4b2f-8039-ca7e49fba88e
 caps.latest.revision: 18
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
-caps.handback.revision: 18
----
-# CA1404&#160;: Appeler GetLastError imm&#233;diatement apr&#232;s P/Invoke
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
+author: stevehoag
+ms.author: shoag
+manager: wpickett
+translation.priority.ht:
+- de-de
+- es-es
+- fr-fr
+- it-it
+- ja-jp
+- ko-kr
+- ru-ru
+- zh-cn
+- zh-tw
+translation.priority.mt:
+- cs-cz
+- pl-pl
+- pt-br
+- tr-tr
+ms.translationtype: HT
+ms.sourcegitcommit: eb5c9550fd29b0e98bf63a7240737da4f13f3249
+ms.openlocfilehash: fce2ed84760d5cc9daa3e84118251ea5ba934e6a
+ms.contentlocale: fr-fr
+ms.lasthandoff: 08/30/2017
 
+---
+# <a name="ca1404-call-getlasterror-immediately-after-pinvoke"></a>CA1404: Call GetLastError immediately after P/Invoke
 |||  
 |-|-|  
 |TypeName|CallGetLastErrorImmediatelyAfterPInvoke|  
 |CheckId|CA1404|  
-|Catégorie|Microsoft.Interoperability|  
-|Modification avec rupture|Modification sans rupture|  
+|Category|Microsoft.Interoperability|  
+|Breaking Change|Non-breaking|  
   
-## Cause  
- La méthode <xref:System.Runtime.InteropServices.Marshal.GetLastWin32Error%2A?displayProperty=fullName> ou la fonction `GetLastError` équivalente est appelée, et l'appel immédiatement avant ne constitue pas une méthode d'appel de code non managé.  
+## <a name="cause"></a>Cause  
+ A call is made to the <xref:System.Runtime.InteropServices.Marshal.GetLastWin32Error%2A?displayProperty=fullName> method or the equivalent Win32 `GetLastError` function, and the call that comes immediately before is not to a platform invoke method.  
   
-## Description de la règle  
- Une méthode d'appel de code non managé accède à un code non managé et est définie à l'aide du mot clé `Declare` en [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] ou de l'attribut <xref:System.Runtime.InteropServices.DllImportAttribute?displayProperty=fullName>.  En général, en cas de défaillance, les fonctions non managées appellent la fonction de Win32 `SetLastError` pour définir un code d'erreur associé à la défaillance.  L'appelant de la fonction qui a échoué appelle la fonction Win32 `GetLastError` pour récupérer le code d'erreur et déterminer la cause de la défaillance.  Le code d'erreur est conservé "par thread" et remplacé par l'appel suivant à `SetLastError`.  À la suite d'une méthode d'appel de code non managé qui a échoué, le code managé peut récupérer le code d'erreur en appelant la méthode <xref:System.Runtime.InteropServices.Marshal.GetLastWin32Error%2A>.  Sachant que le code d'erreur peut être remplacé par des appels internes émanant d'autres méthodes de la bibliothèque de classes managée, la méthode `GetLastError` ou <xref:System.Runtime.InteropServices.Marshal.GetLastWin32Error%2A> doit être appelée immédiatement après l'appel de la méthode d'appel de code non managé.  
+## <a name="rule-description"></a>Rule Description  
+ A platform invoke method accesses unmanaged code and is defined by using the `Declare` keyword in [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] or the <xref:System.Runtime.InteropServices.DllImportAttribute?displayProperty=fullName> attribute. Generally, upon failure, unmanaged functions call the Win32 `SetLastError` function to set an error code that is associated with the failure. The caller of the failed function calls the Win32 `GetLastError` function to retrieve the error code and determine the cause of the failure. The error code is maintained on a per-thread basis and is overwritten by the next call to `SetLastError`. After a call to a failed platform invoke method, managed code can retrieve the error code by calling the <xref:System.Runtime.InteropServices.Marshal.GetLastWin32Error%2A> method. Because the error code can be overwritten by internal calls from other managed class library methods, the `GetLastError` or <xref:System.Runtime.InteropServices.Marshal.GetLastWin32Error%2A> method should be called immediately after the platform invoke method call.  
   
- La règle ignore les appels aux membres managés suivants lorsqu'ils se produisent entre l'appel à la méthode d'appel de code non managé et l'appel à <xref:System.Runtime.InteropServices.Marshal.GetLastWin32Error%2A>.  Ces membres ne modifient pas le code d'erreur et sont utiles pour déterminer la réussite de certains appels de méthode d'appel de code non managé.  
+ The rule ignores calls to the following managed members when they occur between the call to the platform invoke method and the call to <xref:System.Runtime.InteropServices.Marshal.GetLastWin32Error%2A>. These members do not change the error code and are useful for determining the success of some platform invoke method calls.  
   
 -   <xref:System.IntPtr.Zero?displayProperty=fullName>  
   
@@ -47,25 +65,24 @@ caps.handback.revision: 18
   
 -   <xref:System.Runtime.InteropServices.SafeHandle.IsInvalid%2A?displayProperty=fullName>  
   
-## Comment corriger les violations  
- Pour corriger une violation de cette règle, redirigez l'appel vers <xref:System.Runtime.InteropServices.Marshal.GetLastWin32Error%2A> afin qu'il suive immédiatement l'appel à la méthode d'appel de code non managé.  
+## <a name="how-to-fix-violations"></a>How to Fix Violations  
+ To fix a violation of this rule, move the call to <xref:System.Runtime.InteropServices.Marshal.GetLastWin32Error%2A> so that it immediately follows the call to the platform invoke method.  
   
-## Quand supprimer les avertissements  
- Il est possible de supprimer sans risque un avertissement de cette règle si le code exécuté entre l'appel à la méthode d'appel de code non managé et l'appel à la méthode <xref:System.Runtime.InteropServices.Marshal.GetLastWin32Error%2A> ne peut pas explicitement ou implicitement provoquer la modification du code d'erreur.  
+## <a name="when-to-suppress-warnings"></a>When to Suppress Warnings  
+ It is safe to suppress a warning from this rule if the code between the platform invoke method call and the <xref:System.Runtime.InteropServices.Marshal.GetLastWin32Error%2A> method call cannot explicitly or implicitly cause the error code to change.  
   
-## Exemple  
- L'exemple suivant présente une méthode qui viole la règle et une autre qui satisfait à la règle.  
+## <a name="example"></a>Example  
+ The following example shows a method that violates the rule and a method that satisfies the rule.  
   
- [!code-vb[FxCop.Interoperability.LastErrorPInvoke#1](../code-quality/codesnippet/VisualBasic/ca1404-call-getlasterror-immediately-after-p-invoke_1.vb)]
- [!code-cs[FxCop.Interoperability.LastErrorPInvoke#1](../code-quality/codesnippet/CSharp/ca1404-call-getlasterror-immediately-after-p-invoke_1.cs)]  
+ [!code-vb[FxCop.Interoperability.LastErrorPInvoke#1](../code-quality/codesnippet/VisualBasic/ca1404-call-getlasterror-immediately-after-p-invoke_1.vb)] [!code-csharp[FxCop.Interoperability.LastErrorPInvoke#1](../code-quality/codesnippet/CSharp/ca1404-call-getlasterror-immediately-after-p-invoke_1.cs)]  
   
-## Règles connexes  
- [CA1060 : Déplacer les P\/Invoke vers une classe NativeMethods](../code-quality/ca1060-move-p-invokes-to-nativemethods-class.md)  
+## <a name="related-rules"></a>Related Rules  
+ [CA1060: Move P/Invokes to NativeMethods class](../code-quality/ca1060-move-p-invokes-to-nativemethods-class.md)  
   
- [CA1400 : Des points d'entrée P\/Invoke doivent exister](../Topic/CA1400:%20P-Invoke%20entry%20points%20should%20exist.md)  
+ [CA1400: P/Invoke entry points should exist](../code-quality/ca1400-p-invoke-entry-points-should-exist.md)  
   
- [CA1401 : Les P\/Invoke ne doivent pas être visibles](../Topic/CA1401:%20P-Invokes%20should%20not%20be%20visible.md)  
+ [CA1401: P/Invokes should not be visible](../code-quality/ca1401-p-invokes-should-not-be-visible.md)  
   
- [CA2101 : Spécifiez le marshaling pour les arguments de chaîne P\/Invoke](../code-quality/ca2101-specify-marshaling-for-p-invoke-string-arguments.md)  
+ [CA2101: Specify marshaling for P/Invoke string arguments](../code-quality/ca2101-specify-marshaling-for-p-invoke-string-arguments.md)  
   
- [CA2205 : Utilisez des équivalents managés de l'API Win32](../code-quality/ca2205-use-managed-equivalents-of-win32-api.md)
+ [CA2205: Use managed equivalents of Win32 API](../code-quality/ca2205-use-managed-equivalents-of-win32-api.md)

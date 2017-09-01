@@ -40,8 +40,7 @@ ms.contentlocale: fr-fr
 ms.lasthandoff: 05/30/2017
 
 ---
-# Insertion de commentaires dans le code XML
-<a id="supplying-xml-code-comments" class="xliff"></a>
+# <a name="supplying-xml-code-comments"></a>Insertion de commentaires dans le code XML
 Vous pouvez insérer des commentaires dans les fichiers de code source IntelliSense. Quand vous ajoutez le commutateur /doc à la ligne de commande du compilateur Visual Basic, C# ou C++, un fichier .xml est généré pour servir de base à la documentation IntelliSense.  
   
  Pour plus d’informations sur la documentation du code Visual Basic, consultez [Guide pratique pour créer une documentation XML](/dotnet/visual-basic/programming-guide/program-structure/how-to-create-xml-documentation).  
@@ -50,6 +49,5 @@ Vous pouvez insérer des commentaires dans les fichiers de code source IntelliSe
   
  Pour plus d’informations sur la documentation du code C++, consultez [Commentaires](/cpp/cpp/comments-cpp) et [Documentation XML](/cpp/ide/xml-documentation-visual-cpp).  
   
-## Voir aussi
-<a id="see-also" class="xliff"></a>  
+## <a name="see-also"></a>Voir aussi  
  [Utilisation de la fonctionnalité IntelliSense](../ide/using-intellisense.md)

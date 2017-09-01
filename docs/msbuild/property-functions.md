@@ -1,5 +1,5 @@
 ---
-title: "Fonctions de propriétés | Microsoft Docs"
+title: Property Functions | Microsoft Docs
 ms.custom: 
 ms.date: 02/21/2017
 ms.reviewer: 
@@ -29,49 +29,50 @@ translation.priority.ht:
 - tr-tr
 - zh-cn
 - zh-tw
-translationtype: Human Translation
-ms.sourcegitcommit: 203e1e27cc892e96b103fc6cb22a73672a8e16af
-ms.openlocfilehash: f351952a256679ec2d6c9dc2daa5288ca7214ad0
-ms.lasthandoff: 03/01/2017
+ms.translationtype: HT
+ms.sourcegitcommit: 9e6c28d42bec272c6fd6107b4baf0109ff29197e
+ms.openlocfilehash: 03b4eba806256f0bc6a37c6639a3a9cc44abd3ae
+ms.contentlocale: fr-fr
+ms.lasthandoff: 08/22/2017
 
 ---
-# <a name="property-functions"></a>Fonctions de propriétés
-Dans les versions 4 et 4.5 de .NET Framework, des fonctions de propriété peuvent être utilisées pour évaluer des scripts MSBuild. Les fonctions de propriété peuvent utilisées partout où figurent des propriétés. Au contraire des tâches, les fonctions de propriété peuvent être utilisées en dehors des cibles et elles sont évaluées avant l'exécution des cibles.  
+# <a name="property-functions"></a>Property Functions
+In the .NET Framework versions 4 and 4.5, property functions can be used to evaluate MSBuild scripts. Property functions can be used wherever properties appear. Unlike tasks, property functions can be used outside of targets, and are evaluated before any target runs.  
 
- Sans utiliser de tâches MSBuild, vous pouvez lire l'heure système, comparer des chaînes, établir des correspondances avec des expressions régulières et effectuer d'autres actions dans votre script de génération. MSBuild tente de convertir les chaînes en nombres et les nombres en chaînes, et d'effectuer les autres conversions nécessaires.  
+ Without using MSBuild tasks, you can read the system time, compare strings, match regular expressions, and perform other actions in your build script. MSBuild will try to convert string to number and number to string, and make other conversions as required.  
 
-## <a name="property-function-syntax"></a>Syntaxe des fonctions de propriété  
- Il y a trois sortes de fonctions de propriété. Chaque fonction a une syntaxe différente :  
+## <a name="property-function-syntax"></a>Property Function Syntax  
+ These are three kinds of property functions; each function has a different syntax:  
 
--   Fonctions de propriété (d'instance) de chaîne  
+-   String (instance) property functions  
 
--   Fonctions de propriété statique  
+-   Static property functions  
 
--   Fonctions de propriété MSBuild  
+-   MSBuild property functions  
 
-### <a name="string-property-functions"></a>Fonctions de propriété de type chaîne  
- Toutes les valeurs de propriété de build sont simplement des valeurs de chaîne. Vous pouvez utiliser des méthodes (d'instance) de chaîne pour effectuer des opérations sur toutes les valeurs de propriété. Par exemple, vous pouvez extraire le nom du lecteur (les trois premiers caractères) d'une propriété de build qui représente un chemin d'accès complet à l'aide de ce code :  
+### <a name="string-property-functions"></a>String Property Functions  
+ All build property values are just string values. You can use string (instance) methods to operate on any property value. For example, you can extract the drive name (the first three characters) from a build property that represents a full path by using this code:  
 
  `$(ProjectOutputFolder.Substring(0,3))`  
 
-### <a name="static-property-functions"></a>Fonctions de propriété statique  
- Dans votre script de génération, vous pouvez accéder aux propriétés et aux méthodes statiques de nombreuses classes système. Pour obtenir la valeur d’une propriété statique, utilisez la syntaxe suivante, où *Class* est le nom de la classe système et *Property* le nom de la propriété.  
+### <a name="static-property-functions"></a>Static Property Functions  
+ In your build script, you can access the static properties and methods of many system classes. To get the value of a static property, use the following syntax, where *Class* is the name of the system class and *Property* is the name of the property.  
 
  `$([Class]::Property)`  
 
- Par exemple, vous pouvez utiliser le code suivant pour définir une propriété de build avec la date et l'heure actuelles.  
+ For example, you can use the following code to set a build property to the current date and time.  
 
  `<Today>$([System.DateTime]::Now)</Today>`  
 
- Pour appeler une méthode statique, utilisez la syntaxe suivante, où *Class* est le nom de la classe système, *Method* le nom de la méthode et *(Parameters)* la liste des paramètres de la méthode :  
+ To call a static method, use the following syntax, where *Class* is the name of the system class, *Method* is the name of the method, and *(Parameters)* is the parameter list for the method:  
 
  `$([Class]::Method(Parameters))`  
 
- Par exemple, pour définir une propriété de build avec un nouveau GUID, vous pouvez utiliser ce script :  
+ For example, to set a build property to a new GUID, you can use this script:  
 
  `<NewGuid>$([System.Guid]::NewGuid())</NewGuid>`  
 
- Dans les fonctions de propriété statique, vous pouvez utiliser toutes les méthodes ou propriétés statiques de ces classes système :  
+ In static property functions, you can use any static method or property of these system classes:  
 
 -   System.Byte  
 
@@ -99,6 +100,10 @@ Dans les versions 4 et 4.5 de .NET Framework, des fonctions de propriété peu
 
 -   System.Math  
 
+-   System.Runtime.InteropServices.OSPlatform
+
+-   System.Runtime.InteropServices.RuntimeInformation
+
 -   System.UInt16  
 
 -   System.UInt32  
@@ -119,7 +124,7 @@ Dans les versions 4 et 4.5 de .NET Framework, des fonctions de propriété peu
 
 -   Microsoft.Build.Utilities.ToolLocationHelper  
 
- Vous pouvez également utiliser les méthodes et propriétés statiques suivantes :  
+ In addition, you can use the following static methods and properties:  
 
 -   System.Environment::CommandLine  
 
@@ -155,104 +160,113 @@ Dans les versions 4 et 4.5 de .NET Framework, des fonctions de propriété peu
 
 -   System.IO.File::ReadAllText  
 
-### <a name="calling-instance-methods-on-static-properties"></a>Appel de méthodes d'instance sur des propriétés statiques  
- Si vous accédez à une propriété statique qui retourne une instance d'un objet, vous pouvez appeler les méthodes d'instance de cet objet. Pour appeler une méthode d’instance, utilisez la syntaxe suivante, où *Class* est le nom de la classe système, *Property* le nom de la propriété, *Method* le nom de la méthode et *(Parameters)* la liste des paramètres de la méthode :  
+### <a name="calling-instance-methods-on-static-properties"></a>Calling Instance Methods on Static Properties  
+ If you access a static property that returns an object instance, you can invoke the instance methods of that object. To invoke an instance method, use the following syntax, where *Class* is the name of the system class, *Property* is the name of the property, *Method* is the name of the method, and *(Parameters)* is the parameter list for the method:  
 
  `$([Class]::Property.Method(Parameters))`  
 
- Le nom de la classe doit être complet avec l'espace de noms.  
+ The name of the class must be fully qualified with the namespace.  
 
- Par exemple, vous pouvez utiliser le code suivant pour définir une propriété de build avec la date du jour.  
+ For example, you can use the following code to set a build property to the current date today.  
 
  `<Today>$([System.DateTime]::Now.ToString("yyyy.MM.dd"))</Today>`  
 
-### <a name="msbuild-property-functions"></a>Fonctions de propriété MSBuild  
- Vous pouvez accéder à plusieurs méthodes statiques dans votre build, qui prennent en charge des fonctions liées à l'arithmétique, à la logique au niveau du bit et aux caractères d'échappement. Vous accédez à ces méthodes en utilisant la syntaxe suivante, où *Method* est le nom de la méthode et *Parameters* la liste des paramètres de la méthode.  
+### <a name="msbuild-property-functions"></a>MSBuild Property Functions  
+ Several static methods in your build can be accessed to provide arithmetic, bitwise logical, and escape character support. You access these methods by using the following syntax, where *Method* is the name of the method and *Parameters* is the parameter list for the method.  
 
  `$([MSBuild]::Method(Parameters))`  
 
- Par exemple, pour ajouter en même temps deux propriétés qui ont des valeurs numériques, utilisez le code suivant.  
+ For example, to add together two properties that have numeric values, use the following code.  
 
  `$([MSBuild]::Add($(NumberOne), $(NumberTwo))`  
 
- Voici une liste de fonctions de propriété MSBuild :  
+ Here is a list of MSBuild property functions:  
 
-|Signature de la fonction|Description|  
+|Function Signature|Description|  
 |------------------------|-----------------|  
-|double Add(double a, double b)|Additionne deux doubles.|  
-|long Add(long a, long b)|Additionne deux longs.|  
-|double Subtract(double a, double b)|Fait une soustraction entre deux doubles.|  
-|long Subtract(long a, long b)|Fait une soustraction entre deux longs.|  
-|double Multiply(double a, double b)|Fait une multiplication de deux doubles.|  
-|long Multiply(long a, long b)|Fait une multiplication de deux longs.|  
-|double Divide(double a, double b)|Fait une division de deux doubles.|  
-|long Divide(long a, long b)|Fait une division de deux longs.|  
-|double Modulo(double a, double b)|Calcule le modulo de deux doubles.|  
-|long Modulo(long a, long b)|Calcule le modulo de deux longs.|  
-|chaîne Escape(chaîne sans caractère d'échappement)|Place un caractère d'échappement devant la chaîne selon les règles d'échappement de MSBuild.|  
-|chaîne Unescape(chaîne avec caractère d'échappement)|Enlève le caractère d'échappement de la chaîne selon les règles d'échappement de MSBuild.|  
-|entier BitwiseOr(entier premier, entier second)|Effectue un `OR` au niveau du bit sur le premier et le second entier (premier | second).|  
-|entier BitwiseAnd(entier premier, entier second)|Effectue un `AND` au niveau du bit sur le premier et le second entier (premier & second).|  
-|entier BitwiseXor(entier premier, entier second)|Effectue un `XOR` au niveau du bit sur le premier et le second entier (premier ^ second).|  
-|entier BitwiseNot(entier premier)|Effectue un `NOT` au niveau du bit (~premier).|  
+|double Add(double a, double b)|Add two doubles.|  
+|long Add(long a, long b)|Add two longs.|  
+|double Subtract(double a, double b)|Subtract two doubles.|  
+|long Subtract(long a, long b)|Subtract two longs.|  
+|double Multiply(double a, double b)|Multiply two doubles.|  
+|long Multiply(long a, long b)|Multiply two longs.|  
+|double Divide(double a, double b)|Divide two doubles.|  
+|long Divide(long a, long b)|Divide two longs.|  
+|double Modulo(double a, double b)|Modulo two doubles.|  
+|long Modulo(long a, long b)|Modulo two longs.|  
+|string Escape(string unescaped)|Escape the string according to MSBuild escaping rules.|  
+|string Unescape(string escaped)|Unescape the string according to MSBuild escaping rules.|  
+|int BitwiseOr(int first, int second)|Perform a bitwise `OR` on the first and second (first &#124; second).|  
+|int BitwiseAnd(int first, int second)|Perform a bitwise `AND` on the first and second (first & second).|  
+|int BitwiseXor(int first, int second)|Perform a bitwise `XOR` on the first and second (first ^ second).|  
+|int BitwiseNot(int first)|Perform a bitwise `NOT` (~first).|  
+|bool IsOsPlatform(string platformString)|Specify whether the current OS platform is `platformString`. `platformString` must be a member of <xref:System.Runtime.InteropServices.OSPlatform>.|
+|bool IsOSUnixLike|True if current OS is a Unix system.|
+|string NormalizePath(params string[] path)|Gets the canonicalized full path of the provided path and ensures it contains the correct directory separator characters for the current operating system.|
+|string NormalizeDirectory(params string[] path)|Gets the canonicalized full path of the provided directory and ensures it contains the correct directory separator characters for the current operating system while ensuring it has a trailing slash.|
+|string EnsureTrailingSlash(string path)|If the given path doesn't have a trailing slash then add one. If the path is an empty string, does not modify it.|
+|string GetPathOfFileAbove(string file, string startingDirectory)|Searches for a file based on the current build file's location, or based on `startingDirectory`, if specified.|
+|GetDirectoryNameOfFileAbove(string startingDirectory, string fileName)|Locate a file in either the directory specified or a location in the directory structure above that directory.|
+|string MakeRelative(string basePath, string path)|Makes `path` relative to `basePath`. `basePath` must be an absolute directory. If `path` cannot be made relative, it is returned verbatim. Similar to `Uri.MakeRelativeUri`.|
+|string ValueOrDefault(string conditionValue, string defaultValue)|Return the string in parameter 'defaultValue' only if parameter 'conditionValue' is empty, else, return the value conditionValue.|
 
-##  <a name="nested-property-functions"></a>Fonctions de propriété imbriquées  
- Vous pouvez combiner des fonctions de propriété pour former des fonctions plus complexes, comme dans l'exemple suivant.  
+##  <a name="nested-property-functions"></a>Nested Property Functions  
+ You can combine property functions to form more complex functions, as the following example shows.  
 
  `$([MSBuild]::BitwiseAnd(32, $([System.IO.File]::GetAttributes(tempFile))))`  
 
- Cet exemple retourne le bit <xref:System.IO.FileAttributes>`Archive` (32 ou 0) du fichier spécifié par le chemin d’accès `tempFile`. Notez que les valeurs des données énumérées ne peuvent pas apparaître par leur nom dans les fonctions de propriété. La valeur numérique (32) doit être utilisée à la place.  
+ This example returns the value of the <xref:System.IO.FileAttributes>`Archive` bit (32 or 0) of the file given by the path `tempFile`. Notice that enumerated data values cannot appear by name within property functions. The numeric value (32) must be used instead.  
 
- Des métadonnées peuvent également apparaître dans des fonctions de propriété imbriquées. Pour plus d’informations, consultez l’article [Batching (Traitement par lot MSBuild)](../msbuild/msbuild-batching.md).  
+ Metadata may also appear in nested property functions. For more information, see [Batching](../msbuild/msbuild-batching.md).  
 
-##  <a name="msbuild-doestaskhostexist"></a>Fonction MSBuild DoesTaskHostExist  
- La fonction de propriété `DoesTaskHostExist` de MSBuild retourne une valeur indiquant si un hôte de tâche est actuellement installé pour les valeurs de runtime et d'architecture spécifiées.  
+##  <a name="msbuild-doestaskhostexist"></a>MSBuild DoesTaskHostExist  
+ The `DoesTaskHostExist` property function in MSBuild returns whether a task host is currently installed for the specified runtime and architecture values.  
 
- La syntaxe de cette fonction de propriété est la suivante :  
+ This property function has the following syntax:  
 
 ```  
 $[MSBuild]::DoesTaskHostExist(string theRuntime, string theArchitecture)  
 ```  
 
 ##  <a name="msbuild-ensuretrailingslash"></a>MSBuild EnsureTrailingSlash  
- La fonction de propriété `EnsureTrailingSlash` dans MSBuild ajoute une barre oblique de fin s’il n’en existe pas déjà une.  
+ The `EnsureTrailingSlash` property function in MSBuild adds a trailing slash if one doesn't already exist.  
 
- La syntaxe de cette fonction de propriété est la suivante :  
+ This property function has the following syntax:  
 
 ```  
 $([MSBuild]::EnsureTrailingSlash('$(PathProperty)')  
 ```  
 
-##  <a name="msbuild-getdirectorynameoffileabove"></a>Fonction MSBuild GetDirectoryNameOfFileAbove  
- La fonction de propriété MSBuild `GetDirectoryNameOfFileAbove` recherche un fichier dans les répertoires situés sous le répertoire actif du chemin d'accès.  
+##  <a name="msbuild-getdirectorynameoffileabove"></a>MSBuild GetDirectoryNameOfFileAbove  
+ The MSBuild `GetDirectoryNameOfFileAbove` property function looks for a file in the directories above the current directory in the path.  
 
- La syntaxe de cette fonction de propriété est la suivante :  
+ This property function has the following syntax:  
 
 ```  
 $[MSBuild]::GetDirectoryNameOfFileAbove(string ThePath, string TheFile)  
 ```  
 
- Le code suivant est un exemple de cette syntaxe.  
+ The following code is an example of this syntax.  
 
 ```xml  
 <Import Project="$([MSBuild]::GetDirectoryNameOfFileAbove($(MSBuildThisFileDirectory), EnlistmentInfo.props))\EnlistmentInfo.props" Condition=" '$([MSBuild]::GetDirectoryNameOfFileAbove($(MSBuildThisFileDirectory), EnlistmentInfo.props))' != '' " />  
 ```  
 
 ##  <a name="msbuild-getpathoffileabove"></a>MSBuild GetPathOfFileAbove  
- La fonction de propriété `GetPathOfFileAbove` dans MSBuild retourne le chemin du fichier qui précède immédiatement celui indiqué. Sur le plan fonctionnel, elle revient à appeler
+ The `GetPathOfFileAbove` property function in MSBuild returns the path of the file immediately preceding this one. It is functionally equivalent to calling
 
  ```<Import Project="$([MSBuild]::GetDirectoryNameOfFileAbove($(MSBuildThisFileDirectory), dir.props))\dir.props" />```
 
- La syntaxe de cette fonction de propriété est la suivante :  
+ This property function has the following syntax:  
 
 ```  
 $([MSBuild]::GetPathOfFileAbove(dir.props)  
 ```  
 
-##  <a name="msbuild-getregistryvalue"></a>Fonction MSBuild GetRegistryValue  
- La propriété de fonction MSBuild `GetRegistryValue` retourne la valeur d'une clé de Registre. Cette fonction prend deux arguments, le nom de la clé et le nom de la valeur, et retourne la valeur qui se trouve dans le Registre. Si vous ne spécifiez pas un nom de valeur, la valeur par défaut est retournée.  
+##  <a name="msbuild-getregistryvalue"></a>MSBuild GetRegistryValue  
+ The MSBuild `GetRegistryValue` property function returns the value of a registry key. This function takes two arguments, the key name and the value name, and returns the value from the registry. If you don't specify a value name, the default value is returned.  
 
- Les exemples suivants montrent comment cette fonction est utilisée :  
+ The following examples show how this function is used:  
 
 ```  
 $([MSBuild]::GetRegistryValue(`HKEY_CURRENT_USER\Software\Microsoft\VisualStudio\10.0\Debugger`, ``))                                  // default value  
@@ -261,41 +275,41 @@ $([MSBuild]::GetRegistryValue(`HKEY_LOCAL_MACHINE\SOFTWARE\(SampleName)`, `(Samp
 
 ```  
 
-##  <a name="msbuild-getregistryvaluefromview"></a>Fonction MSBuild GetRegistryValueFromView  
- La fonction de propriété MSBuild `GetRegistryValueFromView` extrait des données du Registre système en fonction de la clé de Registre, de la valeur et d'une ou plusieurs vues ordonnées du Registre. La clé et la valeur sont recherchées dans chaque vue du Registre dans l'ordre, jusqu'à ce qu'elles soient trouvées.  
+##  <a name="msbuild-getregistryvaluefromview"></a>MSBuild GetRegistryValueFromView  
+ The MSBuild `GetRegistryValueFromView` property function gets system registry data given the registry key, value, and one or more ordered registry views. The key and value are searched in each registry view in order until they are found.  
 
- Le syntaxe de cette fonction de propriété est :  
+ The syntax for this property function is:  
 
- [MSBuild\]::GetRegistryValueFromView(chaîne nom_clé, chaîne nom_valeur, objet valeur_par_défaut, paramètres objet[] vues)  
+ [MSBuild\]::GetRegistryValueFromView(string keyName, string valueName, object defaultValue, params object[] views)  
 
- Le système d'exploitation Windows 64 bits gère une clé de Registre HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node qui présente une vue de Registre HKEY_LOCAL_MACHINE\SOFTWARE pour les applications 32 bits.  
+ The Windows 64-bit operating system maintains a HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node registry key that presents a HKEY_LOCAL_MACHINE\SOFTWARE registry view for 32-bit applications.  
 
- Par défaut, une application 32 bits s'exécutant sur WOW64 accède à la vue de Registre 32 bits et une application 64 bits accède à la vue de Registre 64 bits.  
+ By default, a 32-bit application running on WOW64 accesses the 32-bit registry view and a 64-bit application accesses the 64-bit registry view.  
 
- Les vues de Registre suivantes sont disponibles :  
+ The following registry views are available:  
 
-|Vue de Registre|Définition|  
+|Registry View|Definition|  
 |-------------------|----------------|  
-|RegistryView.Registry32|Vue de Registre pour les applications 32 bits.|  
-|RegistryView.Registry64|Vue de Registre pour les applications 64 bits.|  
-|RegistryView.Default|La vue de Registre qui correspond au processus sur lequel l'application s'exécute.|  
+|RegistryView.Registry32|The 32-bit application registry view.|  
+|RegistryView.Registry64|The 64-bit application registry view.|  
+|RegistryView.Default|The registry view that matches the process that the application is running on.|  
 
- Voici un exemple.  
+ The following is an example.  
 
  `$([MSBuild]::GetRegistryValueFromView('HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Microsoft SDKs\Silverlight\v3.0\ReferenceAssemblies', 'SLRuntimeInstallPath', null, RegistryView.Registry64, RegistryView.Registry32))`  
 
- extrait les données de SLRuntimeInstallPath de la clé ReferenceAssemblies, en recherchant d'abord dans la vue de Registre 64 bits puis dans la vue de Registre 32 bits.  
+ gets the SLRuntimeInstallPath data of the ReferenceAssemblies key, looking first in the 64-bit registry view and then in the 32-bit registry view.  
 
-##  <a name="msbuild-makerelative"></a>Fonction MSBuild MakeRelative  
- La fonction de propriété MSBuild `MakeRelative` retourne le chemin d'accès relatif du second chemin par rapport au premier chemin. Chaque chemin peut être un fichier ou un dossier.  
+##  <a name="msbuild-makerelative"></a>MSBuild MakeRelative  
+ The MSBuild `MakeRelative` property function returns the relative path of the second path relative to first path. Each path can be a file or folder.  
 
- La syntaxe de cette fonction de propriété est la suivante :  
+ This property function has the following syntax:  
 
 ```  
 $[MSBuild]::MakeRelative($(FileOrFolderPath1), $(FileOrFolderPath2))  
 ```  
 
- Le code suivant est un exemple de cette syntaxe.  
+ The following code is an example of this syntax.  
 
 ```xml  
 <PropertyGroup>  
@@ -315,10 +329,10 @@ Output:
 -->  
 ```  
 
-##  <a name="msbuild-valueordefault"></a>Fonction MSBuild ValueOrDefault  
- La fonction de propriété MSBuild `ValueOrDefault` retourne le premier argument, sauf s'il est null ou vide. Si le premier argument est null ou vide, la fonction retourne le second argument.  
+##  <a name="msbuild-valueordefault"></a>MSBuild ValueOrDefault  
+ The MSBuild `ValueOrDefault` property function returns the first argument, unless it's null or empty. If the first argument is null or empty, the function returns the second argument.  
 
- L'exemple suivant montre comment cette fonction est utilisée.  
+ The following example shows how this function is used.  
 
 ```xml  
 <Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">  
@@ -341,7 +355,7 @@ Output:
 -->  
 ```
 
-## <a name="see-also"></a>Voir aussi
-[Propriétés MSBuild](../msbuild/msbuild-properties.md)   
-[MSBuild Overview (Vue d’ensemble de MSBuild)](../msbuild/msbuild.md)
+## <a name="see-also"></a>See Also
+[MSBuild Properties](../msbuild/msbuild-properties.md)   
+[MSBuild Overview](../msbuild/msbuild.md)
 

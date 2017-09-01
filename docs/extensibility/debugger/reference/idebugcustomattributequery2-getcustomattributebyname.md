@@ -1,5 +1,5 @@
 ---
-title: IDebugCustomAttributeQuery2::GetCustomAttributeByName | Documents Microsoft
+title: IDebugCustomAttributeQuery2::GetCustomAttributeByName | Microsoft Docs
 ms.custom: 
 ms.date: 11/04/2016
 ms.reviewer: 
@@ -30,18 +30,19 @@ translation.priority.mt:
 - tr-tr
 - zh-cn
 - zh-tw
-translationtype: Machine Translation
-ms.sourcegitcommit: 5db97d19b1b823388a465bba15d057b30ff0b3ce
-ms.openlocfilehash: bc1b59d4f13029a765f11dfd4fe3dbe12778d00c
-ms.lasthandoff: 02/22/2017
+ms.translationtype: MT
+ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
+ms.openlocfilehash: 4d3b06a21b70934863403289fc549815ed515883
+ms.contentlocale: fr-fr
+ms.lasthandoff: 08/28/2017
 
 ---
 # <a name="idebugcustomattributequery2getcustomattributebyname"></a>IDebugCustomAttributeQuery2::GetCustomAttributeByName
-Obtient les octets d’attributs personnalisés étant donnés le nom de l’attribut personnalisé.  
+Obtains the custom attributes bytes given the name of the custom attribute.  
   
-## <a name="syntax"></a>Syntaxe  
+## <a name="syntax"></a>Syntax  
   
-```cpp#  
+```cpp  
 HRESULT GetCustomAttributeByName(   
    LPCOLESTR pszCustomAttributeName,  
    BYTE*     ppBlob,  
@@ -49,7 +50,7 @@ HRESULT GetCustomAttributeByName(
 );  
 ```  
   
-```c#  
+```csharp  
 int GetCustomAttributeByName(  
    [In] string        pszCustomAttributeName,   
    [In, Out] byte[]   ppBlob,   
@@ -57,26 +58,26 @@ int GetCustomAttributeByName(
 );  
 ```  
   
-#### <a name="parameters"></a>Paramètres  
+#### <a name="parameters"></a>Parameters  
  `pszCustomAttributeName`  
- [in] Chaîne contenant le nom de l’attribut personnalisé à rechercher.  
+ [in] A string containing the name of the custom attribute to look for.  
   
  `ppBlob`  
- [dans, out] Tableau qui contient les octets de l’attribut personnalisé.  
+ [in, out] An array that is filled in with the custom attribute bytes.  
   
  `pdwLen`  
- [dans, out] Spécifie le nombre maximal d’octets à renvoyer dans le `ppBlob` du tableau et retourne le nombre d’octets effectivement écrits dans le tableau.  
+ [in, out] Specifies the maximum number of bytes to return in the `ppBlob` array and returns the number of bytes actually written to the array.  
   
-## <a name="return-value"></a>Valeur de retour  
- En cas de réussite, retourne S_OK ou S_FALSE si l’attribut personnalisé n’existe pas. Sinon, retourne un code d'erreur.  
+## <a name="return-value"></a>Return Value  
+ If successful, returns S_OK or returns S_FALSE if the custom attribute does not exist. Otherwise, returns an error code.  
   
-## <a name="remarks"></a>Notes  
- Définir le `ppBlob` paramètre une valeur null pour retourner le nombre d’attributs octets disponibles. Allouez un tableau, puis passer ce tableau dans pour la `ppBlob` paramètre.  
+## <a name="remarks"></a>Remarks  
+ Set the `ppBlob` parameter to a null value to return the number of attributes bytes available. Then allocate an array and pass that array in for the `ppBlob` parameter.  
   
- Les octets d’attribut représentent les données brutes de l’attribut personnalisé.  
+ The attribute bytes represent the raw data of the custom attribute.  
   
- Si le `ppBlob` et `pdwLen` paramètres sont définis sur une valeur null, cette méthode peut être utilisée pour déterminer s’il existe simplement l’attribut personnalisé. Une alternative plus simple, cependant, consiste à appeler le [IsCustomAttributeDefined](../../../extensibility/debugger/reference/idebugcustomattributequery2-iscustomattributedefined.md) (méthode).  
+ If the `ppBlob` and `pdwLen` parameters are set to a null value, this method can be used to determine if the custom attribute merely exists. An easier alternative, however, is to call the [IsCustomAttributeDefined](../../../extensibility/debugger/reference/idebugcustomattributequery2-iscustomattributedefined.md) method.  
   
-## <a name="see-also"></a>Voir aussi  
+## <a name="see-also"></a>See Also  
  [IDebugCustomAttributeQuery2](../../../extensibility/debugger/reference/idebugcustomattributequery2.md)   
  [IsCustomAttributeDefined](../../../extensibility/debugger/reference/idebugcustomattributequery2-iscustomattributedefined.md)

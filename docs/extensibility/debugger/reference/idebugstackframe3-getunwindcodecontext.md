@@ -1,52 +1,69 @@
 ---
-title: "IDebugStackFrame3::GetUnwindCodeContext | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "IDebugStackFrame3::GetUnwindCodeContext"
-helpviewer_keywords: 
-  - "IDebugStackFrame3::GetUnwindCodeContext (méthode)"
+title: IDebugStackFrame3::GetUnwindCodeContext | Microsoft Docs
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology:
+- vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords:
+- IDebugStackFrame3::GetUnwindCodeContext
+helpviewer_keywords:
+- IDebugStackFrame3::GetUnwindCodeContext method
 ms.assetid: b25f7e7d-2b24-48e4-93b3-829e61d73ebf
 caps.latest.revision: 6
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 6
----
-# IDebugStackFrame3::GetUnwindCodeContext
-[!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]
+ms.author: gregvanl
+manager: ghogen
+translation.priority.mt:
+- cs-cz
+- de-de
+- es-es
+- fr-fr
+- it-it
+- ja-jp
+- ko-kr
+- pl-pl
+- pt-br
+- ru-ru
+- tr-tr
+- zh-cn
+- zh-tw
+ms.translationtype: MT
+ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
+ms.openlocfilehash: 76ec36e4a4b09a7de5b7c627edbd5a540eb6b4b7
+ms.contentlocale: fr-fr
+ms.lasthandoff: 08/28/2017
 
-Retourne le contexte de code représentant un emplacement si une opération de déroulement de pile s'est produite.  
+---
+# <a name="idebugstackframe3getunwindcodecontext"></a>IDebugStackFrame3::GetUnwindCodeContext
+Returns the code context representing a location if a stack unwind operation occurred.  
   
-## Syntaxe  
+## <a name="syntax"></a>Syntax  
   
-```cpp#  
+```cpp  
 HRESULT GetUnwindCodeContext(  
-   IDebugCodeContext2 **ppCodeContext  
+   IDebugCodeContext2 **ppCodeContext  
 );  
 ```  
   
-```c#  
+```csharp  
 int GetUnwindCodeContext(  
-   out IDebugCodeContext2 ppCodeContext  
+   out IDebugCodeContext2 ppCodeContext  
 );  
 ```  
   
-#### Paramètres  
+#### <a name="parameters"></a>Parameters  
  `ppCodeContext`  
- \[out\]  Retourne un objet d' [IDebugCodeContext2](../../../extensibility/debugger/reference/idebugcodecontext2.md) qui représente l'emplacement de contexte de code si le déroulement de pile s'est produite.  
+ [out] Returns an [IDebugCodeContext2](../../../extensibility/debugger/reference/idebugcodecontext2.md) object that represents the code context location if a stack unwind occurred.  
   
-## Valeur de retour  
- En cas de réussite, retourne `S_OK`; sinon, retourne un code d'erreur.  
+## <a name="return-value"></a>Return Value  
+ If successful, returns `S_OK`; otherwise, returns an error code.  
   
-## Notes  
- Bien que cette méthode peut retourner un contexte de code pour l'emplacement après qu'un déroulement de pile, il ne signifie pas nécessairement le déroulement de pile peut réellement se produire dans le frame de pile actuel.  
+## <a name="remarks"></a>Remarks  
+ Even though this method might return a code context for the location after a stack unwind, it does not necessarily mean the stack unwind can actually occur in the current stack frame.  
   
-## Voir aussi  
+## <a name="see-also"></a>See Also  
  [IDebugStackFrame3](../../../extensibility/debugger/reference/idebugstackframe3.md)   
  [IDebugCodeContext2](../../../extensibility/debugger/reference/idebugcodecontext2.md)

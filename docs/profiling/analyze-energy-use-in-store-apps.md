@@ -34,10 +34,10 @@ translation.priority.mt:
 - pt-br
 - tr-tr
 ms.translationtype: Human Translation
-ms.sourcegitcommit: 47057e9611b824c17077b9127f8d2f8b192d6eb8
-ms.openlocfilehash: 28a8636db753eb71a90cb89f921f58b97aabdc59
+ms.sourcegitcommit: 669bc5894727c207691a7e37937f432d98fee8b1
+ms.openlocfilehash: 3a78a0d9afc766d316957b27d70269518f2d9d33
 ms.contentlocale: fr-fr
-ms.lasthandoff: 05/13/2017
+ms.lasthandoff: 06/30/2017
 
 ---
 # <a name="analyze-energy-use-in-store-apps"></a>Analyser l'utilisation de l'énergie dans les applications du Windows Store
@@ -66,7 +66,7 @@ Le profileur **Consommation d'énergie** de Visual Studio vous aide à analyser 
 ##  <a name="BKMK_Identify_scenarios_with_user_marks"></a> Identifier des scénarios avec des marques utilisateur  
  Vous pouvez ajouter des *marques utilisateur* à vos données de profilage pour vous aider à identifier des zones dans la chronologie.  
   
- ![Marques utilisateur dans la chronologie](~/profiling/media/profilers_usermarktimeline.png "PROFILERS_UserMarkTimeline")  
+ ![Marques utilisateur dans la chronologie](../profiling/media/profilers_usermarktimeline.png "PROFILERS_UserMarkTimeline")  
   
  La marque apparaît sous la forme d'un triangle orange dans la chronologie lorsque la méthode est exécutée. Le message et l'heure sont affichés sous la forme d'une info-bulle lorsque vous pointez sur la marque. Si plusieurs marques utilisateur sont proches, les marques sont fusionnées et les données de l'info-bulle sont rassemblées. Vous pouvez effectuer un zoom avant sur la chronologie pour dissocier les marques.  
   
@@ -77,7 +77,7 @@ Le profileur **Consommation d'énergie** de Visual Studio vous aide à analyser 
  Lors de l'exécution de la méthode, une marque utilisateur est ajoutée aux données de profilage accompagnées d'un message.  
   
 > [!NOTE]
->  -   Windows.Foundation.Diagnostics LoggingChannel implémente l’interface [Windows.Foundation.IClosable](http://msdn.microsoft.com/library/windows/apps/windows.foundation.iclosable.aspx) interface (projetée comme [System.IDisposable](http://msdn.microsoft.com/library/System.IDisposable.aspx) en C# et Visual Basic). Pour éviter la fuite de ressources du système d’exploitation, appelez [LoggingChannel.Close](http://msdn.microsoft.com/library/windows/apps/windows.foundation.diagnostics.loggingchannel.close.aspx) ([Windows.Foundation.Diagnostics.LoggingChannel.Dispose](https://msdn.microsoft.com/en-us/library/windows/apps/windows.foundation.diagnostics.loggingchannel.dispose.aspx) en C# et Visual Basic) quand vous avez terminé d’utiliser un canal d’enregistrement.  
+>  -   Windows.Foundation.Diagnostics LoggingChannel implémente l’interface [Windows.Foundation.IClosable](/uwp/api/windows.foundation.iclosable) interface (projetée comme [System.IDisposable](/dotnet/api/system.idisposable) en C# et Visual Basic). Pour éviter la fuite de ressources du système d’exploitation, appelez [LoggingChannel.Close](/uwp/api/Windows.Foundation.Diagnostics.LoggingChannel) ([Windows.Foundation.Diagnostics.LoggingChannel.Dispose](/uwp/api/Windows.Foundation.Diagnostics.LoggingChannel) en C# et Visual Basic) quand vous avez terminé d’utiliser un canal d’enregistrement.  
 > -   Chaque canal d'enregistrement ouvert doit avoir un nom unique. La tentative de création d'un canal d'enregistrement avec un nom identique comme un canal non supprimé entraîne une exception.  
   
  Consultez la page [LoggingSession Sample](http://code.msdn.microsoft.com/windowsapps/LoggingSession-Sample-ccd52336) concernant un exemple du Kit de développement logiciel (SDK) Windows.  
@@ -117,7 +117,7 @@ if (performance && performance.mark) {
   
 4.  Pour arrêter le profilage, rebasculez vers Visual Studio (Alt + Tab) et cliquez sur **Arrêter la collecte** sur la page du hub de diagnostic.  
   
-     ![Arrêter la collecte de données](~/profiling/media/xamlprof_stopcollection.png "XAMLProf_StopCollection")  
+     ![Arrêter la collecte de données](../profiling/media/xamlprof_stopcollection.png "XAMLProf_StopCollection")  
   
      Visual Studio analyse les données collectées et affiche les résultats.  
   
@@ -141,12 +141,12 @@ if (performance && performance.mark) {
   
 |||  
 |-|-|  
-|![Étape 1](~/profiling/media/procguid_1.png "ProcGuid_1")|Le fichier de rapport est nommé Report*AAAAMMJJ-HHMM*.diagsession. Vous pouvez modifier le nom du rapport si vous décidez de l'enregistrer.|  
-|![Étape 2](~/profiling/media/procguid_2.png "ProcGuid_2")|La chronologie indique la durée de la session de profilage, les événements d'activation du cycle de vie de l'application et les marques utilisateur.|  
-|![Étape 3](~/profiling/media/procguid_3.png "ProcGuid_3")|Vous pouvez limiter le rapport à une partie de la chronologie en faisant glisser les barres bleues pour sélectionner une zone de la chronologie.|  
-|![Étape 4](~/profiling/media/procguid_4.png "ProcGuid_4")|Le graphique **Consommation d'énergie** est un graphique à courbes qui affiche la modification de la puissance de sortie provoquée par une ressource de l'appareil pendant une session de profilage. Le profileur Consommation d'énergie suit l'énergie utilisée par le processeur, l'activité réseau et l'écran.|  
-|![Étape 5](~/profiling/media/procguid_6.png "ProcGuid_6")|Le graphique **Ressources (activées/désactivées)**  fournit des détails sur les coûts d'énergie de réseau. La barre **Réseau** représente la durée d'ouverture de la connexion réseau. La barre enfant **Transfert de données** est la durée pendant laquelle l'application a reçu ou envoyé des données via le réseau.|  
-|![Étape 6](~/profiling/media/procguid_6a.png "ProcGuid_6a")|Le **Résumé de la consommation d'énergie** montre le montant proportionnel de l'énergie totale utilisée dans la chronologie sélectionnée par le processeur, l'activité réseau et l'écran.|  
+|![Étape 1](../profiling/media/procguid_1.png "ProcGuid_1")|Le fichier de rapport est nommé Report*AAAAMMJJ-HHMM*.diagsession. Vous pouvez modifier le nom du rapport si vous décidez de l'enregistrer.|  
+|![Étape 2](../profiling/media/procguid_2.png "ProcGuid_2")|La chronologie indique la durée de la session de profilage, les événements d'activation du cycle de vie de l'application et les marques utilisateur.|  
+|![Étape 3](../profiling/media/procguid_3.png "ProcGuid_3")|Vous pouvez limiter le rapport à une partie de la chronologie en faisant glisser les barres bleues pour sélectionner une zone de la chronologie.|  
+|![Étape 4](../profiling/media/procguid_4.png "ProcGuid_4")|Le graphique **Consommation d'énergie** est un graphique à courbes qui affiche la modification de la puissance de sortie provoquée par une ressource de l'appareil pendant une session de profilage. Le profileur Consommation d'énergie suit l'énergie utilisée par le processeur, l'activité réseau et l'écran.|  
+|![Étape 5](../profiling/media/procguid_6.png "ProcGuid_6")|Le graphique **Ressources (activées/désactivées)**  fournit des détails sur les coûts d'énergie de réseau. La barre **Réseau** représente la durée d'ouverture de la connexion réseau. La barre enfant **Transfert de données** est la durée pendant laquelle l'application a reçu ou envoyé des données via le réseau.|  
+|![Étape 6](../profiling/media/procguid_6a.png "ProcGuid_6a")|Le **Résumé de la consommation d'énergie** montre le montant proportionnel de l'énergie totale utilisée dans la chronologie sélectionnée par le processeur, l'activité réseau et l'écran.|  
   
  **Pour analyser les données de profil d'énergie**  
   
@@ -170,3 +170,6 @@ if (performance && performance.mark) {
      Le simulateur de Visual Studio pour les applications Windows Store vous permet de simuler les propriétés de connexion de données des API d'informations réseau. Consultez [Run Windows Store apps in the simulator](../debugger/run-windows-store-apps-in-the-simulator.md).  
   
 -   Les outils **Minutage de fonction JavaScript** et **Utilisation de l'UC** peuvent vous aider à réduire la charge processeur quand elle est due à des fonctions inefficaces. Voir [Analyser l’utilisation de l’UC](../profiling/analyze-cpu-usage-in-a-windows-universal-app.md).
+
+## <a name="see-also"></a>Voir aussi
+ [Profilage dans Visual Studio](../profiling/index.md) [Visite guidée des fonctionnalités de profilage](../profiling/profiling-feature-tour.md)

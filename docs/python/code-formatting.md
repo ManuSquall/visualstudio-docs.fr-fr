@@ -1,12 +1,13 @@
 ---
 title: Mise en forme de code Python dans Visual Studio | Microsoft Docs
 ms.custom: 
-ms.date: 4/10/2017
+ms.date: 7/12/2017
 ms.prod: visual-studio-dev15
 ms.reviewer: 
 ms.suite: 
 ms.technology:
 - devlang-python
+ms.devlang: python
 ms.tgt_pltfrm: 
 ms.topic: article
 ms.assetid: 3d0f1631-360b-45d4-a0cb-01c3c10d25f2
@@ -14,25 +15,11 @@ caps.latest.revision: 1
 author: kraigb
 ms.author: kraigb
 manager: ghogen
-translation.priority.ht:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 85576806818a6ed289c2f660f87b5c419016c600
-ms.openlocfilehash: a14bc7e8c9194fff3a1bec2739c9e9c2480e905b
+ms.translationtype: HT
+ms.sourcegitcommit: 6d25db4639f2c8391c1e32542701ea359f560178
+ms.openlocfilehash: 9d04c52a595014d06b38205913e3eb1cdd264019
 ms.contentlocale: fr-fr
-ms.lasthandoff: 05/09/2017
+ms.lasthandoff: 07/18/2017
 
 ---
 
@@ -43,9 +30,9 @@ Dans Visual Studio, vous pouvez rapidement remettre en forme le code selon les o
 - Pour mettre en forme une sélection : sélectionnez **Modifier > Avancé > Mettre la sélection en forme** ou appuyez sur Ctrl+E,F.
 - Pour mettre en forme la totalité du fichier : sélectionnez **Modifier > Avancé > Mettre le document en forme** ou appuyez sur Ctrl+E,D.
 
-Les options sont définies par le biais de la commande **Outils > Options > Éditeur de texte > Python > Mise en forme** et de ses sous-onglets, et correspondent par défaut à un sur-ensemble du [guide de style PEP 8](http://www.python.org/dev/peps/pep-0008/). L’onglet **Général** détermine les cas dans lesquels la mise en forme est appliquée ; les trois autres sous-onglets sont décrits dans les sections suivantes.
+Les options sont définies par le biais de la commande **Outils > Options > Éditeur de texte > Python > Mise en forme** et de ses onglets imbriqués, et correspondent par défaut à un sur-ensemble du [guide de style PEP 8](http://www.python.org/dev/peps/pep-0008/). L’onglet **Général** détermine les cas dans lesquels la mise en forme est appliquée ; les paramètres des trois autres onglets sont décrits dans cette rubrique.
 
-[La prise en charge de Python dans Visual Studio](installation.md) ajoute également la commande [Redisposer le paragraphe de commentaires](#fill-comment-paragraph-command) au menu **Modifier > Avancé**, comme décrit ci-dessous.
+La [prise en charge de Python dans Visual Studio](installation.md) ajoute également la commande [Remplir le paragraphe de commentaire](#fill-comment-paragraph-command) utile au menu **Modifier > Avancé**, comme décrit ci-dessous.
 
 ## <a name="spacing"></a>Espacement
 
@@ -55,7 +42,7 @@ L’onglet **Espacement** contrôle l’emplacement d’insertion ou de suppress
 - Désactivé : supprime tout espacement.
 - Indéterminé : conserve la mise en forme d’origine.
 
-Les tableaux ci-après fournissent des exemples des différentes options.
+Les tableaux ci-après fournissent des exemples des différentes options :
 
 | Option des définitions de classe | Activé | Effacé |
 | --- | --- | --- | 
@@ -99,7 +86,7 @@ Les tableaux ci-après fournissent des exemples des différentes options.
 
 ## <a name="statements"></a>Instructions
 
-L’onglet **Instructions** contrôle la réécriture automatique de différentes instructions sous une forme plus proche du langage Python.
+Les options **Instructions** contrôlent la réécriture automatique de différentes instructions sous une forme plus proche du langage Python.
 
 | Option | Avant la mise en forme | Après la mise en forme |
 | --- | --- | --- |
@@ -110,7 +97,7 @@ L’onglet **Instructions** contrôle la réécriture automatique de différente
 
 ## <a name="wrapping"></a>Retour à la ligne
 
-L’onglet **Retour à la ligne** vous permet de définir l’option **Largeur maximale du commentaire**, définie par défaut sur la valeur 80. De cette façon, si l’option **Renvoyer à la ligne les commentaires trop longs** est définie, Visual Studio remet en forme les commentaires pour qu’ils ne dépassent pas cette largeur.
+L’onglet **Retour à la ligne** vous permet de définir l’option **Largeur maximale du commentaire** (la valeur par défaut est 80). Si l’option **Renvoyer à la ligne les commentaires trop longs** est définie, Visual Studio remet en forme les commentaires pour qu’ils ne dépassent pas cette largeur maximale.
 
 ```python
 # Wrapped to 40 columns
@@ -127,7 +114,7 @@ L’onglet **Retour à la ligne** vous permet de définir l’option **Largeur m
 
 ## <a name="fill-comment-paragraph-command"></a>Commande Fill Comment Paragraph (Redisposer le paragraphe de commentaires)
 
-La commande **Modifier > Avancé > Fill Comment Paragraph (Redisposer le paragraphe de commentaires)** (Ctrl+E,Ctrl+P) redispose automatiquement et remet en forme le texte des commentaires en combinant les lignes courtes et en scindant les lignes longues.
+La commande **Modifier > Avancé > Remplir le paragraphe de commentaire** (Ctrl+E, P) redispose et remet en forme le texte des commentaires en combinant les lignes courtes et en scindant les lignes longues.
 
 Exemple :
 

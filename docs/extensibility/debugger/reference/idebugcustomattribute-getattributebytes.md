@@ -1,58 +1,75 @@
 ---
-title: "IDebugCustomAttribute::GetAttributeBytes | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "IDebugCustomAttribute::GetAttributeBytes"
-helpviewer_keywords: 
-  - "IDebugCustomAttribute::GetAttributeBytes"
+title: IDebugCustomAttribute::GetAttributeBytes | Microsoft Docs
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology:
+- vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords:
+- IDebugCustomAttribute::GetAttributeBytes
+helpviewer_keywords:
+- IDebugCustomAttribute::GetAttributeBytes
 ms.assetid: cf34583b-6530-4dcc-89f8-eb27e4e8d594
 caps.latest.revision: 9
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 9
----
-# IDebugCustomAttribute::GetAttributeBytes
-[!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]
+ms.author: gregvanl
+manager: ghogen
+translation.priority.mt:
+- cs-cz
+- de-de
+- es-es
+- fr-fr
+- it-it
+- ja-jp
+- ko-kr
+- pl-pl
+- pt-br
+- ru-ru
+- tr-tr
+- zh-cn
+- zh-tw
+ms.translationtype: MT
+ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
+ms.openlocfilehash: 0b153e2ee1f5e01f8016de8c45fc2ba45c431cbd
+ms.contentlocale: fr-fr
+ms.lasthandoff: 08/28/2017
 
-Obtient les informations d'attribut comme un blob des octets.  
+---
+# <a name="idebugcustomattributegetattributebytes"></a>IDebugCustomAttribute::GetAttributeBytes
+Gets the attribute information as a blob of bytes.  
   
-## Syntaxe  
+## <a name="syntax"></a>Syntax  
   
-```cpp#  
-HRESULT GetAttributeBytes(   
-   BYTE*  ppBlob,  
-   DWORD* pdwLen  
+```cpp  
+HRESULT GetAttributeBytes(   
+   BYTE*  ppBlob,  
+   DWORD* pdwLen  
 );  
 ```  
   
-```c#  
+```csharp  
 int GetAttributeBytes(  
-   ref byte[] ppBlob,   
-   ref uint   pdwLen  
+   ref byte[] ppBlob,   
+   ref uint   pdwLen  
 );  
 ```  
   
-#### Paramètres  
+#### <a name="parameters"></a>Parameters  
  `ppBlob`  
- \[in, out\]  Un tableau qui est terminée avec les octets d'attribut.  
+ [in, out] An array that is filled in with the attribute bytes.  
   
  `pdwLen`  
- \[in, out\]  Spécifie le nombre maximal d'octets pour revenir dans le tableau d' `ppBlob` et retourne le nombre d'octets réellement écrits dans le tableau.  
+ [in, out] Specifies the maximum number of bytes to return in the `ppBlob` array and returns the number of bytes actually written to the array.  
   
-## Valeur de retour  
- En cas de réussite, retourne S\_OK ; sinon, retourne un code d'erreur.  
+## <a name="return-value"></a>Return Value  
+ If successful, returns S_OK; otherwise, returns an error code.  
   
-## Notes  
- Définissez le paramètre d' `ppBlob` à une valeur NULL pour retourner le nombre d'octets des attributs disponibles.  Ensuite allouez un tableau et passez ce tableau dans pour le paramètre d' `ppBlob` .  
+## <a name="remarks"></a>Remarks  
+ Set the `ppBlob` parameter to a null value to return the number of attributes bytes available. Then allocate an array and pass that array in for the `ppBlob` parameter.  
   
- Les octets d'attribut représentent les données brutes de cet attribut.  
+ The attribute bytes represent the raw data of the custom attribute.  
   
-## Voir aussi  
+## <a name="see-also"></a>See Also  
  [IDebugCustomAttribute](../../../extensibility/debugger/reference/idebugcustomattribute.md)

@@ -1,59 +1,76 @@
 ---
-title: "IEnumDebugBoundBreakpoints2::Next | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "IEnumDebugBoundBreakpoints2::Next"
-helpviewer_keywords: 
-  - "IEnumDebugBoundBreakpoints2::Next"
+title: IEnumDebugBoundBreakpoints2::Next | Microsoft Docs
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology:
+- vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords:
+- IEnumDebugBoundBreakpoints2::Next
+helpviewer_keywords:
+- IEnumDebugBoundBreakpoints2::Next
 ms.assetid: cb3a249f-2282-4bdc-b6d8-a4ee4bfb8365
 caps.latest.revision: 13
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 13
----
-# IEnumDebugBoundBreakpoints2::Next
-[!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]
+ms.author: gregvanl
+manager: ghogen
+translation.priority.mt:
+- cs-cz
+- de-de
+- es-es
+- fr-fr
+- it-it
+- ja-jp
+- ko-kr
+- pl-pl
+- pt-br
+- ru-ru
+- tr-tr
+- zh-cn
+- zh-tw
+ms.translationtype: MT
+ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
+ms.openlocfilehash: af0f123d5c5f6bd00e7dcc27fff857982ee99ca4
+ms.contentlocale: fr-fr
+ms.lasthandoff: 08/28/2017
 
-Retourne l'ensemble suivant d'éléments de l'énumération.  
+---
+# <a name="ienumdebugboundbreakpoints2next"></a>IEnumDebugBoundBreakpoints2::Next
+Returns the next set of elements from the enumeration.  
   
-## Syntaxe  
+## <a name="syntax"></a>Syntax  
   
-```cpp#  
+```cpp  
 HRESULT Next(  
-   ULONG                    celt,  
-   IDebugBoundBreakpoint2** rgelt,  
-   ULONG*                   pceltFetched  
+   ULONG                    celt,  
+   IDebugBoundBreakpoint2** rgelt,  
+   ULONG*                   pceltFetched  
 );  
 ```  
   
-```c#  
+```csharp  
 int Next(  
-   uint                     celt,  
-   IDebugBoundBreakpoint2[] rgelt,  
-   ref uint                 pceltFetched  
+   uint                     celt,  
+   IDebugBoundBreakpoint2[] rgelt,  
+   ref uint                 pceltFetched  
 );  
 ```  
   
-#### Paramètres  
+#### <a name="parameters"></a>Parameters  
  `celt`  
- \[in\]  Nombre d'éléments à récupérer.  Spécifie également la taille maximale du tableau d' `rgelt` .  
+ [in] The number of elements to retrieve. Also specifies the maximum size of the `rgelt` array.  
   
  `rgelt`  
- \[in, out\]  Tableau d'éléments d' [IDebugBoundBreakpoint2](../../../extensibility/debugger/reference/idebugboundbreakpoint2.md) à accomplir.  
+ [in, out] Array of [IDebugBoundBreakpoint2](../../../extensibility/debugger/reference/idebugboundbreakpoint2.md) elements to be filled in.  
   
  `pceltFetched`  
- \[out\]  Retourne le nombre d'éléments réellement retournés dans `rgelt`.  
+ [out] Returns the number of elements actually returned in `rgelt`.  
   
-## Valeur de retour  
- En cas de réussite, retourne `S_OK`.  Retourne `S_FALSE` si inférieur au nombre demandé d'éléments peuvent être retournés ; sinon, retourne un code d'erreur.  
+## <a name="return-value"></a>Return Value  
+ If successful, returns `S_OK`. Returns `S_FALSE` if fewer than the requested number of elements could be returned; otherwise, returns an error code.  
   
-## Voir aussi  
+## <a name="see-also"></a>See Also  
  [IEnumDebugBoundBreakpoints2](../../../extensibility/debugger/reference/ienumdebugboundbreakpoints2.md)   
  [IDebugBoundBreakpoint2](../../../extensibility/debugger/reference/idebugboundbreakpoint2.md)

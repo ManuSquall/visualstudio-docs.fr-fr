@@ -1,5 +1,5 @@
 ---
-title: "Élément Item (MSBuild) | Microsoft Docs"
+title: "Item, élément (MSBuild) | Microsoft Docs"
 ms.custom: 
 ms.date: 03/13/2017
 ms.reviewer: 
@@ -35,10 +35,11 @@ translation.priority.ht:
 - tr-tr
 - zh-cn
 - zh-tw
-translationtype: Human Translation
-ms.sourcegitcommit: 203e1e27cc892e96b103fc6cb22a73672a8e16af
-ms.openlocfilehash: 927d80ec00ee69ca6aa59f257826307bcd3fe513
-ms.lasthandoff: 03/01/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: 8ce85525f6af336682f6f8547c2f6c13dde73c8c
+ms.openlocfilehash: 2430531e4ddb3a5ef40cd773327311fa7b85ce48
+ms.contentlocale: fr-fr
+ms.lasthandoff: 06/23/2017
 
 ---
 # <a name="item-element-msbuild"></a>Item, élément (MSBuild)
@@ -95,7 +96,7 @@ Par exemple, pour spécifier une liste de packages NuGet, vous utiliseriez norma
 |`KeepDuplicates`|Attribut facultatif.<br /><br /> Spécifie si un élément doit être ajouté au groupe cible s'il s'agit d'une copie exacte d'un élément existant. Si les éléments source et cible ont les mêmes valeurs `Include` mais des métadonnées différentes, l'élément est ajouté même si `KeepDuplicates` est défini sur `false`. Pour plus d’informations, consultez l’article [Éléments MSBuild](../msbuild/msbuild-items.md).<br /><br /> Cet attribut n'est valide que s'il est spécifié pour un élément d'un `ItemGroup` présent dans un `Target`.|  
 |`KeepMetadata`|Attribut facultatif.<br /><br /> Métadonnées des éléments sources à ajouter aux éléments cibles. Seules les métadonnées dont les noms sont spécifiés dans la liste délimitée par des points-virgules sont transférées depuis un élément source vers un élément cible. Pour plus d’informations, consultez l’article [Éléments MSBuild](../msbuild/msbuild-items.md).<br /><br /> Cet attribut n'est valide que s'il est spécifié pour un élément d'un `ItemGroup` présent dans un `Target`.|  
 |`RemoveMetadata`|Attribut facultatif.<br /><br /> Métadonnées des éléments sources à ne pas transférer aux éléments cibles. Toutes les métadonnées sont transférées depuis un élément source vers un élément cible, à l'exception des métadonnées dont le nom figure dans la liste de noms délimitée par des points-virgules. Pour plus d’informations, consultez l’article [Éléments MSBuild](../msbuild/msbuild-items.md).<br /><br /> Cet attribut n'est valide que s'il est spécifié pour un élément d'un `ItemGroup` présent dans un `Target`.|  
-|`Update`|Attribut facultatif. (Disponible uniquement pour les projets .NET Core dans Visual Studio versions 2017 ou ultérieures).<br /><br /> Vous permet de modifier les métadonnées d’un fichier qui a été inclus à l’aide d’un glob.<br /><br />  Cet attribut n’est valide que s’il est spécifié pour un élément d’un `ItemGroup` qui n’est pas présent dans un `Target`.|  
+|`Update`|Attribut facultatif. (Disponible uniquement pour les projets .NET Core dans Visual Studio versions 2017 ou ultérieures).<br /><br /> Vous permet de modifier les métadonnées d’un fichier qui a été inclus à l’aide d’un glob.<br /><br />  Cet attribut est valide seulement s’il est spécifié pour un élément d’un `ItemGroup` qui n’est pas présent dans un `Target`.|  
 
 ### <a name="child-elements"></a>Éléments enfants  
 
@@ -112,7 +113,7 @@ Par exemple, pour spécifier une liste de packages NuGet, vous utiliseriez norma
 ## <a name="remarks"></a>Notes  
  Les éléments `Item` définissent les entrées du système de génération et sont regroupés en collections d'éléments, selon leur nom de collection défini par l'utilisateur. Ces collections d’éléments peuvent être utilisées comme paramètres des [tâches](../msbuild/msbuild-tasks.md), lesquelles utilisent les éléments d’une collection pour exécuter les étapes du processus de génération. Pour plus d’informations, consultez l’article [Éléments MSBuild](../msbuild/msbuild-items.md).  
 
- La notation `@(`*monType*`)` permet de développer une collection d’éléments de type *monType* en une liste de chaînes séparées par des points-virgules, et de la transmettre à un paramètre. Si le paramètre est de type `string`, la valeur du paramètre correspond à la liste des éléments séparés par des points-virgules. Si le paramètre est un tableau de chaînes (`string[]`), chaque élément est inséré dans le tableau selon l'emplacement des points-virgules. Si le paramètre de tâche est de type <xref:Microsoft.Build.Framework.ITaskItem>`[]`, la valeur correspond au contenu de la collection d’éléments et à toutes les métadonnées associées. Pour délimiter chaque élément à l’aide d’un caractère autre que le point-virgule, utilisez la syntaxe `@(`*monType*`, '`*séparateur*`')`.  
+ La notation `@(`*monType*`)` permet de développer une collection d’éléments de type *monType* en une liste de chaînes séparées par des points-virgules, et de la transmettre à un paramètre. Si le paramètre est de type `string`, la valeur du paramètre correspond à la liste des éléments séparés par des points-virgules. Si le paramètre est un tableau de chaînes (`string[]`), chaque élément est inséré dans le tableau selon l'emplacement des points-virgules. Si le paramètre de tâche est de type <xref:Microsoft.Build.Framework.ITaskItem>`[]`, la valeur correspond au contenu de la collection d'éléments et à toutes les métadonnées associées. Pour délimiter chaque élément à l’aide d’un caractère autre que le point-virgule, utilisez la syntaxe `@(`*monType*`, '`*séparateur*`')`.  
 
  Le moteur [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] peut évaluer les caractères génériques tels que `*` et `?`, ainsi que les caractères génériques récursifs comme `/**/*.cs`. Pour plus d’informations, consultez l’article [Éléments MSBuild](../msbuild/msbuild-items.md).  
 

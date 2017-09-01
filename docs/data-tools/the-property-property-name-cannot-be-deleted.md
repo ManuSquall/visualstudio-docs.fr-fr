@@ -1,34 +1,53 @@
 ---
-title: "Impossible de supprimer la propri&#233;t&#233; &lt;nom de la propri&#233;t&#233;&gt; | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+title: The property &lt;property name&gt; cannot be deleted | Microsoft Docs
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.tgt_pltfrm: 
+ms.topic: article
 ms.assetid: 55873f74-7834-4ec1-8815-eeeb65618d87
 caps.latest.revision: 2
-author: "mikeblome"
-ms.author: "mblome"
-manager: "ghogen"
-caps.handback.revision: 2
+author: mikeblome
+ms.author: mblome
+manager: ghogen
+translation.priority.ht:
+- cs-cz
+- de-de
+- es-es
+- fr-fr
+- it-it
+- ja-jp
+- ko-kr
+- pl-pl
+- pt-br
+- ru-ru
+- tr-tr
+- zh-cn
+- zh-tw
+ms.translationtype: HT
+ms.sourcegitcommit: 9e6c28d42bec272c6fd6107b4baf0109ff29197e
+ms.openlocfilehash: feae56294e98e67634cad7afa24ba22ad155412d
+ms.contentlocale: fr-fr
+ms.lasthandoff: 08/22/2017
+
 ---
-# Impossible de supprimer la propri&#233;t&#233; &lt;nom de la propri&#233;t&#233;&gt;
-La propriété \<nom de la propriété\>ne peut pas être supprimée parce qu'elle est définie en tant que propriété de discriminateur pour l'héritage entre \<nom de la classe\> et \<nom de la classe\>  
+# <a name="the-property-ltproperty-namegt-cannot-be-deleted"></a>The property &lt;property name&gt; cannot be deleted
+The property \<property name> cannot be deleted because it is set as the **Discriminator Property** for the inheritance between \<class name> and \<class name>  
   
- La propriété sélectionnée est définie comme **Propriété de discriminateur** pour l'héritage entre les classes indiquées dans le message d'erreur.Les propriétés ne peuvent pas être supprimées si elles participent à la configuration d'héritage entre des classes de données.  
+ The selected property is set as the **Discriminator Property** for the inheritance between the classes indicated in the error message. Properties cannot be deleted if they are participating in the inheritance configuration between data classes.  
   
- Affectez à **Propriété de discriminateur** une propriété différente de la classe de données pour permettre la suppression de la propriété désirée.  
+ Set the **Discriminator Property** to a different property of the data class to enable successful deletion of the desired property.  
   
-### Pour corriger cette erreur  
+### <a name="to-correct-this-error"></a>To correct this error  
   
-1.  Dans le Concepteur O\/R, sélectionnez la ligne d'héritage qui connecte les classes de données indiquées dans le message d'erreur.  
+1.  In the O/R Designer, select the inheritance line that connects the data classes indicated in the error message.  
   
-2.  Affectez à **Propriété de discriminateur**  une propriété différente.  
+2.  Set the **Discriminator** Property to a different property.  
   
-3.  Essayez une nouvelle fois de supprimer la propriété.  
+3.  Try to delete the property again.  
   
-## Voir aussi  
- [Procédure : configurer l'héritage à l'aide du Concepteur O\/R](../data-tools/how-to-configure-inheritance-by-using-the-o-r-designer.md)   
- [Héritage de classes de données \(Concepteur O\/R\)](../data-tools/data-class-inheritance-o-r-designer.md)   
- [Procédure pas à pas : création de classes LINQ to SQL à l'aide de l'héritage à table unique \(Concepteur O\/R\)](../data-tools/walkthrough-creating-linq-to-sql-classes-by-using-single-table-inheritance-o-r-designer.md)
+## <a name="see-also"></a>See Also  
+ [How to: Configure inheritance by using the O/R Designer](../data-tools/how-to-configure-inheritance-by-using-the-o-r-designer.md)   
+ [Data class inheritance (O/R Designer)](../data-tools/data-class-inheritance-o-r-designer.md)   
+ [Walkthrough: Creating LINQ to SQL Classes by Using Single-Table Inheritance (O/R Designer)](../data-tools/walkthrough-creating-linq-to-sql-classes-by-using-single-table-inheritance-o-r-designer.md)

@@ -1,33 +1,50 @@
 ---
-title: "Modification du texte d’une commande de Menu | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-helpviewer_keywords: 
-  - "menus, modification du texte"
-  - "texte, menus"
-  - "commandes, modification du texte"
+title: Changing the Text of a Menu Command | Microsoft Docs
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology:
+- vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+helpviewer_keywords:
+- menus, changing text
+- text, menus
+- commands, changing text
 ms.assetid: 5cb676a0-c6e2-47e5-bd2b-133dc8842e46
 caps.latest.revision: 25
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 25
----
-# Modification du texte d’une commande de Menu
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
+ms.author: gregvanl
+manager: ghogen
+translation.priority.mt:
+- cs-cz
+- de-de
+- es-es
+- fr-fr
+- it-it
+- ja-jp
+- ko-kr
+- pl-pl
+- pt-br
+- ru-ru
+- tr-tr
+- zh-cn
+- zh-tw
+ms.translationtype: MT
+ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
+ms.openlocfilehash: 5cff9c7a8f834478e9ba414491c193c7a485c936
+ms.contentlocale: fr-fr
+ms.lasthandoff: 08/28/2017
 
-Les étapes suivantes montrent comment modifier l’étiquette de texte d’une commande de menu à l’aide de la <xref:System.ComponentModel.Design.IMenuCommandService> service.  
+---
+# <a name="changing-the-text-of-a-menu-command"></a>Changing the Text of a Menu Command
+The following steps show how to change the text label of a menu command by using the <xref:System.ComponentModel.Design.IMenuCommandService> service.  
   
-## Modification d’une étiquette de commande de menu avec le IMenuCommandService  
+## <a name="changing-a-menu-command-label-with-the-imenucommandservice"></a>Changing a menu command label with the IMenuCommandService  
   
-1.  Créez un projet VSIX nommé `MenuText` avec une commande de menu nommée **ChangeMenuText**. Pour plus d'informations, consultez [Création d'une Extension avec une commande de Menu](../extensibility/creating-an-extension-with-a-menu-command.md).  
+1.  Create a VSIX project named `MenuText` with a menu command named **ChangeMenuText**. For more information, see [Creating an Extension with a Menu Command](../extensibility/creating-an-extension-with-a-menu-command.md).  
   
-2.  Dans le fichier .vstc, ajoutez le `TextChanges` indicateur à votre commande de menu, comme indiqué dans l’exemple suivant.  
+2.  In the .vstc file, add the `TextChanges` flag to your menu command, as shown in the following example.  
   
     ```xml  
     <Button guid="guidChangeMenuTextPackageCmdSet" id="ChangeMenuTextId" priority="0x0100" type="Button">  
@@ -40,26 +57,26 @@ Les étapes suivantes montrent comment modifier l’étiquette de texte d’une 
     </Button>  
     ```  
   
-3.  Dans le fichier ChangeMenuText.cs, créez un gestionnaire d’événements qui sera appelé avant que la commande de menu s’affiche.  
+3.  In the ChangeMenuText.cs file, create an event handler that will be called before the menu command is displayed.  
   
-    ```c#  
+    ```csharp  
     private void OnBeforeQueryStatus(object sender, EventArgs e)  
     {  
         var myCommand = sender as OleMenuCommand;  
         if (null != myCommand)  
         {  
             myCommand.Text = "New Text";  
-                    }  
+        }  
     }  
     ```  
   
-     Vous pouvez également modifier l’état de la commande de menu dans cette méthode en modifiant le <xref:System.ComponentModel.Design.MenuCommand.Visible%2A>, <xref:System.ComponentModel.Design.MenuCommand.Checked%2A>, et <xref:System.ComponentModel.Design.MenuCommand.Enabled%2A> propriétés sur le <xref:Microsoft.VisualStudio.Shell.OleMenuCommand> objet.  
+     You can also update the status of the menu command in this method by changing the <xref:System.ComponentModel.Design.MenuCommand.Visible%2A>, <xref:System.ComponentModel.Design.MenuCommand.Checked%2A>, and <xref:System.ComponentModel.Design.MenuCommand.Enabled%2A> properties on the <xref:Microsoft.VisualStudio.Shell.OleMenuCommand> object.  
   
-4.  Dans le constructeur ChangeMenuText, remplacez le code d’origine de l’initialisation et le placement de commande avec le code qui crée un <xref:Microsoft.VisualStudio.Shell.OleMenuCommand> \(plutôt que `MenuCommand`\) qui représente la commande de menu, ajoute le <xref:Microsoft.VisualStudio.Shell.OleMenuCommand.BeforeQueryStatus> Gestionnaire d’événements et donne le menu de commande au service de commande de menu.  
+4.  In the ChangeMenuText constructor, replace the original command initialization and placement code with code that creates a <xref:Microsoft.VisualStudio.Shell.OleMenuCommand> (rather than a `MenuCommand`) that represents the menu command, adds the <xref:Microsoft.VisualStudio.Shell.OleMenuCommand.BeforeQueryStatus> event handler, and gives the menu command to the menu command service.  
   
-     Voici ce qui doit ressembler à :  
+     Here is what it should look like:  
   
-    ```c#  
+    ```csharp  
     private ChangeMenuText(Package package)  
     {  
         if (package == null)  
@@ -82,8 +99,9 @@ Les étapes suivantes montrent comment modifier l’étiquette de texte d’une 
     }  
     ```  
   
-5.  Générez le projet et commencez le débogage. L’instance expérimentale de Visual Studio s’affiche.  
+5.  Build the project and start debugging. The experimental instance of Visual Studio appears.  
   
-6.  Sur le **outils** menu, vous devez voir une commande nommée **ChangeMenuText appeler**.  
+6.  On the **Tools** menu you should see a command named **Invoke ChangeMenuText**.  
   
-7.  Cliquez sur la commande. Vous devez voir la boîte de message annonce que MenuItemCallback a été appelé. Lorsque vous fermez la boîte de message, vous devez voir que le nom de la commande dans le menu Outils est désormais **nouveau texte**.
+7.  Click the command. You should see the message box announcing that MenuItemCallback has been called. When you dismiss the message box, you should see that the name of the command on the Tools menu is now **New Text**.
+

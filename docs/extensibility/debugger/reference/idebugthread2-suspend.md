@@ -1,5 +1,5 @@
 ---
-title: IDebugThread2::Suspend | Documents Microsoft
+title: IDebugThread2::Suspend | Microsoft Docs
 ms.custom: 
 ms.date: 11/04/2016
 ms.reviewer: 
@@ -30,41 +30,42 @@ translation.priority.mt:
 - tr-tr
 - zh-cn
 - zh-tw
-translationtype: Machine Translation
-ms.sourcegitcommit: 5db97d19b1b823388a465bba15d057b30ff0b3ce
-ms.openlocfilehash: aa00d0029120abad26a7f4fdcd15f828a0284f2f
-ms.lasthandoff: 02/22/2017
+ms.translationtype: MT
+ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
+ms.openlocfilehash: 3926456c8b625102dfc5df4d8818f3cacc3a2ce3
+ms.contentlocale: fr-fr
+ms.lasthandoff: 08/28/2017
 
 ---
 # <a name="idebugthread2suspend"></a>IDebugThread2::Suspend
-Interrompt un thread.  
+Suspends a thread.  
   
-## <a name="syntax"></a>Syntaxe  
+## <a name="syntax"></a>Syntax  
   
-```cpp#  
+```cpp  
 HRESULT Suspend (   
    DWORD *pdwSuspendCount  
 );  
 ```  
   
-```c#  
+```csharp  
 HRESULT Suspend (   
    out uint pdwSuspendCount  
 );  
 ```  
   
-#### <a name="parameters"></a>Paramètres  
+#### <a name="parameters"></a>Parameters  
  `pdwSuspendCount`  
- [out] Retourne le compteur de suspension après l’opération de suspension.  
+ [out] Returns the suspend count after the suspend operation.  
   
-## <a name="return-value"></a>Valeur de retour  
- En cas de réussite, retourne `S_OK`; sinon, retourne un code d’erreur.  
+## <a name="return-value"></a>Return Value  
+ If successful, returns `S_OK`; otherwise, returns an error code.  
   
-## <a name="remarks"></a>Notes  
- Chaque appel à cette méthode incrémente le compteur de suspension supérieure à 0. Ce compteur de suspension est affiché dans le **Threads** fenêtre de débogage.  
+## <a name="remarks"></a>Remarks  
+ Each call to this method increments the suspend count above 0. This suspend count is displayed in the **Threads** debug window.  
   
- Pour chaque appel à cette méthode, il doit y avoir un appel ultérieur à la [reprise](../../../extensibility/debugger/reference/idebugthread2-resume.md) méthode.  
+ For each call to this method, there must be a later call to the [Resume](../../../extensibility/debugger/reference/idebugthread2-resume.md) method.  
   
-## <a name="see-also"></a>Voir aussi  
+## <a name="see-also"></a>See Also  
  [IDebugThread2](../../../extensibility/debugger/reference/idebugthread2.md)   
- [Reprise](../../../extensibility/debugger/reference/idebugthread2-resume.md)
+ [Resume](../../../extensibility/debugger/reference/idebugthread2-resume.md)

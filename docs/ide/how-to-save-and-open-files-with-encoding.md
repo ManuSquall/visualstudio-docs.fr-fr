@@ -39,12 +39,10 @@ ms.contentlocale: fr-fr
 ms.lasthandoff: 05/30/2017
 
 ---
-# Comment : enregistrer et ouvrir des fichiers avec encodage
-<a id="how-to-save-and-open-files-with-encoding" class="xliff"></a>
+# <a name="how-to-save-and-open-files-with-encoding"></a>Comment : enregistrer et ouvrir des fichiers avec encodage
 Vous pouvez enregistrer des fichiers avec encodage de caractères spécifiques pour prendre en charge des langues bidirectionnelles. Vous pouvez également spécifier un codage à l’ouverture d’un fichier, afin que Visual Studio affiche le fichier correctement.  
   
-### Pour enregistrer un fichier avec encodage
-<a id="to-save-a-file-with-encoding" class="xliff"></a>  
+### <a name="to-save-a-file-with-encoding"></a>Pour enregistrer un fichier avec encodage  
   
 1.  Dans le menu **Fichier**, choisissez **Enregistrer le fichier sous**, puis cliquez sur le bouton déroulant à côté du bouton **Enregistrer**.  
   
@@ -58,8 +56,7 @@ Vous pouvez enregistrer des fichiers avec encodage de caractères spécifiques p
   
      Si vous souhaitez utiliser un fichier qui est codé de manière spécifique, vous pouvez indiquer à Visual Studio d’utiliser cet encodage à l’ouverture du fichier. La méthode que vous utilisez varie selon que le fichier fait ou non partie de votre projet.  
   
-### Pour ouvrir un fichier encodé qui fait partie d’un projet
-<a id="to-open-an-encoded-file-that-is-part-of-a-project" class="xliff"></a>  
+### <a name="to-open-an-encoded-file-that-is-part-of-a-project"></a>Pour ouvrir un fichier encodé qui fait partie d’un projet  
   
 1.  Dans l’**Explorateur de solutions**, cliquez avec le bouton droit sur le fichier et choisissez **Ouvrir avec**.  
   
@@ -69,8 +66,7 @@ Vous pouvez enregistrer des fichiers avec encodage de caractères spécifiques p
   
 3.  Dans la boîte de dialogue **Encodage**, sélectionnez le codage que l’éditeur doit utiliser.  
   
-### Pour ouvrir un fichier encodé qui ne fait pas partie d’un projet
-<a id="to-open-an-encoded-file-that-is-not-part-of-a-project" class="xliff"></a>  
+### <a name="to-open-an-encoded-file-that-is-not-part-of-a-project"></a>Pour ouvrir un fichier encodé qui ne fait pas partie d’un projet  
   
 1.  Dans le menu **Fichier**, pointez sur **Ouvrir**, choisissez **Fichier** ou **Fichier à partir du web**, puis sélectionnez le fichier à ouvrir.  
   
@@ -78,7 +74,6 @@ Vous pouvez enregistrer des fichiers avec encodage de caractères spécifiques p
   
 3.  Suivez les étapes 2 et 3 de la procédure précédente.  
   
-## Voir aussi
-<a id="see-also" class="xliff"></a>  
+## <a name="see-also"></a>Voir aussi  
  [Encodage et globalisation des applications Windows Forms](/dotnet/framework/winforms/advanced/encoding-and-windows-forms-globalization)   
  [Globalisation et localisation d’applications](../ide/globalizing-and-localizing-applications.md)

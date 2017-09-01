@@ -1,7 +1,7 @@
 ---
-title: "Créer une installation réseau de Visual Studio | Microsoft Docs"
-description: "{{ESPACE RÉSERVÉ}}"
-ms.date: 05/05/2017
+title: Create a network-based installation of Visual Studio | Microsoft Docs
+description: '{{PLACEHOLDER}}'
+ms.date: 08/29/2017
 ms.reviewer: 
 ms.suite: 
 ms.technology:
@@ -15,129 +15,146 @@ ms.assetid: 4CABFD20-962E-482C-8A76-E4012052F701
 author: timsneath
 ms.author: tims
 manager: ghogen
-translation.priority.ht:
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- ru-ru
-- zh-cn
-- zh-tw
-translation.priority.mt:
-- cs-cz
-- pl-pl
-- pt-br
-- tr-tr
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 85576806818a6ed289c2f660f87b5c419016c600
-ms.openlocfilehash: c8c48a92ba4ba75e87d947364919688032842265
+ms.translationtype: HT
+ms.sourcegitcommit: 21a413a3e2d17d77fd83d5109587a96f323a0511
+ms.openlocfilehash: 54b0b6541764d95bacc8590bdb85c98e2f7681ca
 ms.contentlocale: fr-fr
-ms.lasthandoff: 05/09/2017
+ms.lasthandoff: 08/30/2017
 
 ---
 
-# <a name="create-a-network-installation-of-visual-studio-2017"></a>Créer une installation réseau de Visual Studio 2017
+# <a name="create-a-network-installation-of-visual-studio-2017"></a>Create a network installation of Visual Studio 2017
 
-En général, un administrateur d’entreprise crée un point d’installation réseau pour le déploiement sur les stations de travail clientes. Nous avons conçu Visual Studio 2017 pour vous permettre de mettre en cache les fichiers de l’installation initiale, ainsi que toutes les mises à jour de produit dans un dossier unique (opération parfois appelée _création d’une disposition_), de sorte que les stations de travail clientes peuvent utiliser le même emplacement réseau pour gérer leur installation, même si elles n’ont pas encore effectué la mise à jour de maintenance la plus récente.
+Commonly, an enterprise administrator creates a network install point for deployment to client workstations. We've designed Visual Studio 2017 to enable you to cache the files for the initial installation along with all product updates to a single folder. (This process is also referred to as _creating a layout_.) We've done this so that client workstations can use the same network location to manage their installation even if they haven't yet updated to the latest servicing update.
 
 > [!NOTE]
-> Si vous utilisez plusieurs éditions de Visual Studio dans votre entreprise (par exemple, Visual Studio Professional et Visual Studio Enterprise), vous devez créer un partage d’installation réseau distinct pour chaque édition.
+> If you have multiple editions of Visual Studio in use within your enterprise (for example, both Visual Studio Professional and Visual Studio Enterprise), you must create a separate network install share for each edition.
 
-## <a name="download-the-visual-studio-bootstrapper"></a>Télécharger le programme d’amorçage de Visual Studio
-**Téléchargez** l’édition de Visual Studio souhaitée. Veillez à cliquer sur **Enregistrer**, puis cliquez sur **Ouvrir le dossier**.
+## <a name="download-the-visual-studio-bootstrapper"></a>Download the Visual Studio bootstrapper
+**Download** the edition of Visual Studio you want. Make sure to click **Save**, and then click **Open folder**.
 
-L’exécutable de votre programme d’installation&mdash;ou pour être plus précis, un fichier de programme d’amorçage&mdash; correspond à l’une des valeurs suivantes.
+Your setup executable&mdash;or to be more specific, a bootstrapper file&mdash;should match one of the following.
 
-|Édition | Téléchargement|
+|Edition | Download|
 |-------------|-----------------------|
 |Visual Studio Enterprise | [**vs_enterprise.exe**](https://aka.ms/vs/15/release/vs_enterprise.exe) |
 |Visual Studio Professional | [**vs_professional.exe**](https://aka.ms/vs/15/release/vs_professional.exe) |
-|Communauté Visual Studio | [**vs_community.exe**](https://aka.ms/vs/15/release/vs_community.exe) |
+|Visual Studio Community | [**vs_community.exe**](https://aka.ms/vs/15/release/vs_community.exe) |
 
-Les autres programmes d’amorçage pris en charge incluent [vs_buildtools.exe](https://aka.ms/vs/15/release/vs_buildtools.exe), [vs_feedbackclient.exe](https://aka.ms/vs/15/release/vs_feedbackclient.exe), [vs_teamexplorer.exe](https://aka.ms/vs/15/release/vs_teamexplorer.exe), [vs_testagent.exe](https://aka.ms/vs/15/release/vs_testagent.exe), [vs_testcontroller.exe](https://aka.ms/vs/15/release/vs_testcontroller.exe)et [vs_testprofessional.exe](https://aka.ms/vs/15/release/vs_testprofessional.exe).
+Other supported bootstrappers include [vs_buildtools.exe](https://aka.ms/vs/15/release/vs_buildtools.exe), [vs_feedbackclient.exe](https://aka.ms/vs/15/release/vs_feedbackclient.exe), [vs_teamexplorer.exe](https://aka.ms/vs/15/release/vs_teamexplorer.exe), [vs_testagent.exe](https://aka.ms/vs/15/release/vs_testagent.exe), [vs_testcontroller.exe](https://aka.ms/vs/15/release/vs_testcontroller.exe), and [vs_testprofessional.exe](https://aka.ms/vs/15/release/vs_testprofessional.exe).
 
-## <a name="create-an-offline-installation-folder"></a>Créer un dossier d’installation hors connexion
-Pour créer une installation hors connexion avec toutes les langues et toutes les fonctionnalités, utilisez une des commandes des exemples suivants.
+## <a name="create-an-offline-installation-folder"></a>Create an offline installation folder
+To create an offline installation with all languages and all features, use one of the commands from the following examples:
 
-Assurez-vous que vous exécutez la commande à partir de votre répertoire de téléchargement. En règle générale, il s’agit du répertoire `C:\Users\<username>\Downloads` sur un ordinateur exécutant Windows 10.
+(Make sure that you run the command from your Download directory. Typically, that's `C:\Users\<username>\Downloads` on a computer running Windows 10).
 
-- Pour Visual Studio Enterprise, exécutez :
+- For Visual Studio Enterprise, run:
   ```
   vs_enterprise.exe --layout c:\vs2017offline
   ```
-- Pour Visual Studio Professional, exécutez :
+
+- For Visual Studio Professional, run:
   ```
   vs_professional.exe --layout c:\vs2017offline
-  ```
-- Pour Visual Studio Community, exécutez :
+    ```
+    
+- For Visual Studio Community, run:
   ```
   vs_community.exe --layout c:\vs2017offline
   ```
 
-## <a name="modify-the-responsejson-file"></a>Modifier le fichier response.json
-Vous pouvez modifier response.json pour définir les valeurs par défaut qui seront utilisées lors de l’exécution du programme d’installation.  Par exemple, vous pouvez configurer le fichier `response.json` pour sélectionner un ensemble spécifique de charges de travail sélectionnées automatiquement.
-Pour plus d’informations, consultez [Automatiser l’installation de Visual Studio avec un fichier réponse](automated-installation-with-response-file.md).
+> [!IMPORTANT]
+> A complete Visual Studio 2017 layout requires at least 20 GB of disk space and can take some time to download.  See the [Customizing the network layout](#customizing-the-network-layout) section for details on how to create a layout with only the components you want to install.
 
-## <a name="copy-the-layout-to-a-network-share"></a>Copier la disposition sur un partage réseau
+## <a name="modify-the-responsejson-file"></a>Modify the response.json file
+You can modify the response.json to set default values that are used when setup is run.  For example, you can configure the `response.json` file to select a specific set of workloads selected automatically.
+See [Automate Visual Studio installation with a response file](automated-installation-with-response-file.md) for details.
 
-Hébergez la disposition sur un partage réseau afin de pouvoir l’exécuter à partir d’autres ordinateurs.
-* Exemple :<br>
+## <a name="copy-the-layout-to-a-network-share"></a>Copy the layout to a network share
+
+Host the layout on a network share so it can be run from other machines.
+* Example:<br>
 ```xcopy /e c:\vs2017offline \\server\products\VS2017```
-    
-## <a name="customizing-the-network-layout"></a>Personnalisation de la disposition réseau
-Plusieurs options vous permettent de personnaliser votre disposition réseau. Vous pouvez créer une disposition partielle qui contient uniquement un ensemble spécifique de [paramètres régionaux de langue](use-command-line-parameters-to-install-visual-studio.md#list-of-language-locales), [charges de travail, composants et leurs dépendances recommandées ou facultatives](workload-and-component-ids.md). Cela peut être utile si vous savez que vous allez uniquement déployer un sous-ensemble des charges de travail sur les stations de travail clientes. Les paramètres de ligne de commande courants permettant de personnaliser la disposition incluent :
 
- - ```--add``` pour spécifier les [ID de charge de travail ou de composant](workload-and-component-ids.md).  Si `--add` est utilisé, seuls les composants et les charges de travail spécifiés avec `--add` sont téléchargés.  Si `--add` n’est pas utilisé, l’ensemble des charges de travail et composants est téléchargé.
- - ```--includeRecommended``` pour inclure tous les composants recommandés pour les ID de charge de travail spécifiés
- - ```--includeOptional``` pour inclure tous les composants recommandés et facultatifs pour les ID de charge de travail spécifiés.
- - ```--lang``` pour spécifier les [paramètres régionaux de langue](use-command-line-parameters-to-install-visual-studio.md#list-of-language-locales).
- 
-Voici quelques exemples montrant comment créer une disposition partielle personnalisée.
+## <a name="customizing-the-network-layout"></a>Customizing the network layout
+There are several options you can use to customize your network layout. You can create a partial layout that only contains a specific set of [language locales](use-command-line-parameters-to-install-visual-studio.md#list-of-language-locales), [workloads, components, and their recommended or optional dependencies](workload-and-component-ids.md). This might be useful if you know that you are going to deploy only a subset of workloads to client workstations. Typical command-line parameters for customizing the layout include:
 
- - Pour télécharger tous composants et les charges de travail dans une langue, exécutez : <br>```vs_enterprise.exe --layout C:\vs2017offline --lang en-US```
- - Pour télécharger tous composants et les charges de travail de plusieurs langues, exécutez : <br>```vs_enterprise.exe --layout C:\vs2017offline --lang en-US de-DE ja-JP```
- - Pour télécharger une charge de travail pour toutes les langues, exécutez : <br> ```vs_enterprise.exe --layout C:\vs2017offline --add Microsoft.VisualStudio.Workload.Azure --includeRecommended```
- - Pour télécharger deux charges de travail et un composant facultatif dans trois langues, exécutez : <br>```vs_enterprise.exe --layout C:\vs2017offline --add Microsoft.VisualStudio.Workload.Azure --add Microsoft.VisualStudio.Workload.ManagedDesktop --add Component.GitHub.VisualStudio --includeRecommended --lang en-US de-DE ja-JP ```
- - Pour télécharger deux charges de travail et tous leurs composants recommandés, exécutez : <br>```vs_enterprise.exe --layout C:\vs2017offline --add Microsoft.VisualStudio.Workload.Azure --add Microsoft.VisualStudio.Workload.ManagedDesktop --add Component.GitHub.VisualStudio --includeRecommended ```
- - Pour télécharger deux charges de travail et tous leurs composants recommandés et facultatifs, exécutez : <br>```vs_enterprise.exe --layout C:\vs2017offline --add Microsoft.VisualStudio.Workload.Azure --add Microsoft.VisualStudio.Workload.ManagedDesktop --add Component.GitHub.VisualStudio --includeOptional ```
+ * ```--add``` to specify [workload or component IDs](workload-and-component-ids.md).  If `--add` is used, only those workloads and components specified with `--add` are downloaded.  If `--add` is not used, all workload and components are downloaded.
+ * ```--includeRecommended``` to include all the recommended  components for the specified workload IDs
+ * ```--includeOptional``` to include all the recommended and optional components for the specified workload IDs.
+ * ```--lang``` to specify [language locales](use-command-line-parameters-to-install-visual-studio.md#list-of-language-locales).
+
+Here are a few examples of how to create a custom partial layout.
+
+ * To download all workloads and components for only one language, run: <br>```vs_enterprise.exe --layout C:\vs2017offline --lang en-US```
+ * To download all workloads and components for multiple languages, run: <br>```vs_enterprise.exe --layout C:\vs2017offline --lang en-US de-DE ja-JP```
+ * To download one workload for all languages, run <br> ```vs_enterprise.exe --layout C:\vs2017offline --add Microsoft.VisualStudio.Workload.Azure --includeRecommended```
+ * To download two workloads and one optional component for three languages, run: <br>```vs_enterprise.exe --layout C:\vs2017offline --add Microsoft.VisualStudio.Workload.Azure --add Microsoft.VisualStudio.Workload.ManagedDesktop --add Component.GitHub.VisualStudio --includeRecommended --lang en-US de-DE ja-JP ```
+ * To download two workloads and all of their recommended components, run: <br>```vs_enterprise.exe --layout C:\vs2017offline --add Microsoft.VisualStudio.Workload.Azure --add Microsoft.VisualStudio.Workload.ManagedDesktop --add Component.GitHub.VisualStudio --includeRecommended ```
+ * To download two workloads and all of their recommended and optional components, run: <br>```vs_enterprise.exe --layout C:\vs2017offline --add Microsoft.VisualStudio.Workload.Azure --add Microsoft.VisualStudio.Workload.ManagedDesktop --add Component.GitHub.VisualStudio --includeOptional ```
+
+### <a name="new-in-153"></a>New in 15.3
+When you run a layout command, the options that you specify are saved (such as the workloads and languages). Subsequent layout commands will include all of the previous options.  Here is an example of a layout with one workload for English only:
+
+```
+vs_enterprise.exe --layout c:\VS2017Layout --add Microsoft.VisualStudio.Workload.ManagedDesktop --lang en-US
+```
+When you want to update that layout to a newer version, you don't have to specify any additional command line parameters. The previous settings are saved and used by any subsequent layout commands in this layout folder.  The following command will update the existing partial layout.  
+
+```
+vs_enterprise.exe --layout c:\VS2017Layout  
+```
+
+When you want to add an additional workload, here's an example of how to do so. In this case, we'll add the Azure workload and a localized language.  Now, both Managed Desktop and Azure are included in this layout.  The language resources for English and German are include for all these workloads. The layout is updated to the latest available version.
+
+```
+vs_enterprise.exe --layout c:\VS2017Layout --add Microsoft.VisualStudio.Workload.Azure --lang de-DE
+```
+
+If you want to update an existing layout to a full layout, use the --all option, as shown in the following example.
+
+```
+vs_enterprise.exe --layout c:\VS2017Layout --all  
+```
 
 
-## <a name="deploying-from-a-network-installation"></a>Déploiement à partir d’une installation réseau
-Les administrateurs peuvent déployer Visual Studio sur les stations de travail clientes dans le cadre d’un script d’installation. Les utilisateurs qui disposent de droits d’administrateur peuvent aussi exécuter le programme d’installation directement à partir du partage pour installer Visual Studio sur leur ordinateur.
+## <a name="deploying-from-a-network-installation"></a>Deploying from a network installation
+Administrators can deploy Visual Studio onto client workstations as part of an installation script. Or, users who have administrator rights can run setup directly from the share to install Visual Studio on their machine.
 
-- Les utilisateurs peuvent procéder à l’installation en exécutant : <br>```\\server\products\VS2017\vs_enterprise.exe```
-- Les administrateurs peuvent procéder à l’installation en mode sans assistance en exécutant : <br>```\\server\products\VS2017\vs_enterprise.exe --quiet --wait --norestart```
+- Users can install by running: <br>```\\server\products\VS2017\vs_enterprise.exe```
+- Administrators can install in an unattended mode by running: <br>```\\server\products\VS2017\vs_enterprise.exe --quiet --wait --norestart```
 
 > [!TIP]
-> Quand elle est exécutée dans le cadre d’un fichier de commandes, l’option `--wait` garantit que le processus `vs_enterprise.exe` attend que l’installation soit terminée avant de retourner un code de sortie. Cela est utile quand un administrateur d’entreprise souhaite effectuer des actions supplémentaires sur l’installation terminée (par exemple, [appliquer une clé de produit à une installation réussie](automatically-apply-product-keys-when-deploying-visual-studio.md)), et qu’il est nécessaire d’attendre la fin de l’installation pour gérer le code de retour de cette installation.  Si vous n’utilisez pas `--wait`, le processus vs_enterprise.exe se termine avant que l’installation ne soit terminée et ne retourne pas un code de sortie précis qui représente l’état de l’installation.
+> When executed as part of a batch file, the `--wait` option ensures that the `vs_enterprise.exe` process waits until the installation is complete before it returns an exit code. This is useful if an enterprise administrator wants to perform further actions on a completed installation (for example, to [apply a product key to a successful installation](automatically-apply-product-keys-when-deploying-visual-studio.md)) but must wait for the installation to finish to handle the return code from that installation.  If you do not use `--wait`, the `vs_enterprise.exe` process exits before the installation is complete and returns an inaccurate exit code that doesn't represent the state of the install operation.
 
-### <a name="error-codes"></a>Codes d’erreur
-Si vous avez utilisé le paramètre `--wait`, en fonction du résultat de l’opération, la variable d’environnement `%ERRORLEVEL%` a l’une des valeurs suivantes :
+When you install from a layout, the content that is installed is acquired from the layout.  However, if something that is selected to be installed is missing in the layout, it will be acquired from the Internet.  If you want to prevent Visual Studio setup from downloading any content that is missing in your layout, use the `--noWeb` option.  If `--noWeb` is used and the layout is missing any content selected to be installed, setup fails.  
 
-  | **Valeur** | **Résultat** |
+### <a name="error-codes"></a>Error codes
+If you used the `--wait` parameter, then depending on the result of the operation, the `%ERRORLEVEL%` environment variable is set to one of the following values:
+
+  | **Value** | **Result** |
   | --------- | ---------- |
-  | 0 | Opération effectuée avec succès |
-  | 3010 | Opération effectuée avec succès, mais l’installation nécessite un redémarrage avant de pouvoir être utilisée |
-  | Autre | Une condition d’échec s’est produite - Pour plus d’informations, consultez les journaux |
+  | 0 | Operation completed successfully |
+  | 3010 | Operation completed successfully, but install requires reboot before it can be used |
+  | Other | Failure condition occurred - check the logs for more information |
 
-## <a name="updating-a-network-install-layout"></a>Mise à jour d’une disposition d’installation réseau
-Quand les mises à jour de produit deviennent disponibles, vous pouvez [mettre à jour la disposition d’installation réseau](update-a-network-installation-of-visual-studio.md) pour intégrer les packages mis à jour.
+## <a name="updating-a-network-install-layout"></a>Updating a network install layout
+As product updates become available, you might want to [update the network install layout](update-a-network-installation-of-visual-studio.md) to incorporate updated packages.
 
-## <a name="how-to-create-a-layout-for-a-previous-visual-studio-2017-release"></a>Comment créer une disposition pour une version antérieure de Visual Studio 2017
-**Remarque** : Les programmes d’amorçage de VS 2017 disponibles sur http://www.visualstudio.com téléchargent et installent la dernière version de Visual Studio 2017 disponible chaque fois qu’ils sont exécutés. Si vous téléchargez un programme d’amorçage de Visual Studio aujourd’hui et l’exécutez pendant 6 mois à partir de maintenant, il installe la version de Visual Studio 2017 disponible à ce moment-là. Si vous créez une disposition, l’installation de Visual Studio à partir de cette disposition installe la version spécifique de VS qui existe dans la disposition. Même si une version plus récente peut exister en ligne, vous obtenez la version de Visual Studio qui se trouve dans la disposition.
+## <a name="how-to-create-a-layout-for-a-previous-visual-studio-2017-release"></a>How to create a layout for a previous Visual Studio 2017 release
+> [!NOTE]
+> The Visual Studio 2017 bootstrappers that are available on [VisualStudio.com](http://www.visualstudio.com) download and install the latest Visual Studio 2017 release available whenever they are run. If you download a Visual Studio bootstrapper today and run it six months from now, it installs the Visual Studio 2017 release that is available at that later time. If you create a layout, installing Visual Studio from that layout installs the specific version of Visual Studio that exists in the layout. Even though a newer version might exist online, you get the version of Visual Studio that is in the layout.
 
-Si vous devez créer une disposition pour une ancienne version de Visual Studio 2017, vous pouvez accéder à https://my.visualstudio.com pour télécharger des versions « définitives » des programmes d’amorçage de Visual Studio 2017 pour les versions prises en charge, ce qui vous permet de créer une disposition d’installation réseau pour cette ancienne version. 
+If you need to create a layout for an older version of Visual Studio 2017, you can go to https://my.visualstudio.com to download "fixed" versions of the Visual Studio 2017 bootstrappers for supported versions, which allows you to create a network install layout for that older version.
 
-### <a name="how-to-get-support-for-your-offline-installer"></a>Comment obtenir de l’assistance pour votre programme d’installation hors connexion
-Si vous rencontrez un problème avec votre installation hors connexion, nous voulons le savoir. Le meilleur moyen de nous en faire part est d’utiliser l’outil [Signaler un problème](../ide/how-to-report-a-problem-with-visual-studio-2017.md). Lorsque vous utilisez cet outil, vous pouvez nous envoyer la télémétrie et des journaux, dont nous avons besoin pour nous aider à diagnostiquer et à résoudre le problème.
+### <a name="how-to-get-support-for-your-offline-installer"></a>How to get support for your offline installer
+If you experience a problem with your offline installation, we want to know about it. The best way to tell us is by using the [Report a Problem](../ide/how-to-report-a-problem-with-visual-studio-2017.md) tool. When you use this tool, you can send us the telemetry and logs we need to help us diagnose and fix the problem.
 
-D’autres options de support sont également à votre disposition. Pour en obtenir la liste, consultez notre page [Nous contacter](../ide/how-to-report-a-problem-with-visual-studio-2017.md).
+We have other support options available, too. For a list, see our [Talk to us](../ide/how-to-report-a-problem-with-visual-studio-2017.md) page.
 
-## <a name="see-also"></a>Voir aussi
-* [Installer Visual Studio](install-visual-studio.md)
-* [Guide de l’administrateur Visual Studio](visual-studio-administrator-guide.md)
-* [Utiliser les paramètres de ligne de commande pour installer Visual Studio](use-command-line-parameters-to-install-visual-studio.md)
-* [ID de charge de travail et de composant Visual Studio](workload-and-component-ids.md)
+## <a name="see-also"></a>See also
+* [Install Visual Studio](install-visual-studio.md)
+* [Visual Studio administrator guide](visual-studio-administrator-guide.md)
+* [Use command-line parameters to install Visual Studio](use-command-line-parameters-to-install-visual-studio.md)
+* [Visual Studio workload and component IDs](workload-and-component-ids.md)
 

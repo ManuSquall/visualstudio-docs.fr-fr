@@ -1,7 +1,7 @@
 ---
 title: "Création d’une interface utilisateur à l’aide du concepteur XAML dans Visual Studio | Microsoft Docs"
 ms.custom: 
-ms.date: 11/04/2016
+ms.date: 7/17/2017
 ms.reviewer: 
 ms.suite: 
 ms.technology:
@@ -18,32 +18,17 @@ caps.latest.revision: 29
 author: kempb
 ms.author: kempb
 manager: ghogen
-translation.priority.ht:
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- ru-ru
-- zh-cn
-- zh-tw
-translation.priority.mt:
-- cs-cz
-- pl-pl
-- pt-br
-- tr-tr
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 47057e9611b824c17077b9127f8d2f8b192d6eb8
-ms.openlocfilehash: 0b6b302637113be1fb2700100124cf4079c06298
+ms.translationtype: HT
+ms.sourcegitcommit: 6d25db4639f2c8391c1e32542701ea359f560178
+ms.openlocfilehash: 0122714fa0c932a1fba849226e1200795ff20cfa
 ms.contentlocale: fr-fr
-ms.lasthandoff: 05/13/2017
+ms.lasthandoff: 07/18/2017
 
 ---
 # <a name="creating-a-ui-by-using-xaml-designer-in-visual-studio"></a>Création d'une interface utilisateur à l'aide du concepteur XAML dans Visual Studio
-Le concepteur XAML dans Visual Studio fournit une interface visuelle pour vous aider à concevoir des applications du Windows Store, Windows Phone, WPF et Silverlight basées sur XAML. Vous pouvez créer des interfaces utilisateur pour vos applications en faisant glisser des contrôles à partir de la **boîte à outils** et en définissant des propriétés dans la fenêtre **Propriétés** . Vous pouvez également modifier le XAML directement en mode XAML.  
+Le concepteur XAML dans Visual Studio fournit une interface visuelle pour vous aider à concevoir des applications web et Windows basées sur XAML. Vous pouvez créer des interfaces utilisateur pour vos applications en faisant glisser des contrôles à partir de la **boîte à outils** et en définissant des propriétés dans la fenêtre **Propriétés** . Vous pouvez également modifier le XAML directement en mode XAML.  
   
- Pour plus d’informations sur les tâches de conception XAML avancées telles que les animations et les comportements, consultez [Creating a UI by using Blend for Visual Studio](../designers/creating-a-ui-by-using-blend-for-visual-studio.md).  
+ Pour plus d’informations sur les tâches de conception XAML avancées telles que les animations et les comportements, consultez [Creating a UI by using Blend for Visual Studio](../designers/creating-a-ui-by-using-blend-for-visual-studio.md). Consultez également [Conception XAML dans Visual Studio et Blend pour Visual Studio](../designers/designing-xaml-in-visual-studio.md) pour afficher une comparaison des outils.
   
 ## <a name="xaml-designer-workspace"></a>Espace de travail du concepteur XML  
  L'espace de travail du concepteur XML se compose de plusieurs éléments d'interface graphique. Ceux-ci incluent la planche graphique, l'Éditeur XAML, la fenêtre Périphérique, la fenêtre Structure du document et la fenêtre Propriétés. Pour ouvrir le concepteur XAML, cliquez avec le bouton droit sur un fichier XAML dans l' **Explorateur de solutions** et choisissez **Concepteur de vues**.  
@@ -61,7 +46,7 @@ Le concepteur XAML dans Visual Studio fournit une interface visuelle pour vous a
  Les lignes d'alignement sont des *limites d'alignement* qui apparaissent sous forme de lignes en pointillés rouges quand les bords des contrôles sont alignés ou que les lignes de base de texte sont alignées. Les limites d'alignement n'apparaissent que si l' **alignement sur les lignes d'alignement** est activé.  
   
  **Quadrillage de grille**  
-Les quadrillages `Grid` permettent de gérer les lignes et les colonnes dans un panneau [Grid](http://msdn.microsoft.com/library/windows/apps/windows.ui.xaml.controls.grid.aspx) . Vous pouvez créer et supprimer des lignes et des colonnes, ainsi qu'ajuster leurs largeurs et hauteurs relatives. Le quadrillage de grille vertical, qui apparaît à gauche de la planche graphique, est utilisé pour les lignes, et la ligne horizontale, qui apparaît en haut, est utilisée pour les colonnes.  
+ Les quadrillages`Grid` permettent de gérer les lignes et les colonnes dans un panneau [Grid](http://msdn.microsoft.com/library/windows/apps/windows.ui.xaml.controls.grid.aspx) . Vous pouvez créer et supprimer des lignes et des colonnes, ainsi qu'ajuster leurs largeurs et hauteurs relatives. Le quadrillage de grille vertical, qui apparaît à gauche de la planche graphique, est utilisé pour les lignes, et la ligne horizontale, qui apparaît en haut, est utilisée pour les colonnes.  
   
  **Ornements de grille**  
  Un ornement `Grid` apparaît comme un triangle doté d'une ligne verticale ou horizontale qui lui est associée sur le quadrillage de `Grid` . Quand vous faites glisser un ornement `Grid` , les largeurs ou hauteurs des lignes ou colonnes adjacentes se mettent à jour au fur et à mesure que vous déplacez la souris.  
@@ -82,7 +67,7 @@ Les quadrillages `Grid` permettent de gérer les lignes et les colonnes dans un 
   
  En mode Création, des commandes supplémentaires de la planche graphique sont disponibles dans la partie inférieure gauche de la zone de l'écran, comme indiqué ci-après :  
   
- ![Commandes du mode Création](~/designers/media/xaml_editor_design_controls.png "xaml_editor_design_controls")  
+ ![Commandes du mode Création](../designers/media/xaml_editor_design_controls.png "xaml_editor_design_controls")  
   
  Les commandes suivantes sont disponibles dans cette barre d'outils :  
   
@@ -109,7 +94,7 @@ Les quadrillages `Grid` permettent de gérer les lignes et les colonnes dans un 
  Le zoom de balisage vous permet de dimensionner le mode XAML. Vous pouvez effectuer un zoom de 20 % à 400 %.  
   
 ## <a name="device-window"></a>Fenêtre Périphérique  
- La fenêtre Périphérique du concepteur XAML vous permet de faire des simulations à l'aide de différentes options de vues, d'écrans et d'affichage pour votre projet Windows Store ou Windows Phone. La fenêtre Périphérique est disponible dans le menu **Design** quand vous travaillez dans le concepteur XAML. Voici à quoi elle ressemble :  
+ La fenêtre Appareil du concepteur XAML vous permet de faire des simulations à l’aide de plusieurs vues, écrans et options d’affichage pour votre projet au moment du design. La fenêtre Périphérique est disponible dans le menu **Design** quand vous travaillez dans le concepteur XAML. Voici à quoi elle ressemble :  
   
  ![Fenêtre Appareil](../designers/media/xaml_editor_device_panel.png "xaml_editor_device_panel")  
   

@@ -1,123 +1,140 @@
 ---
-title: "DISASSEMBLY_STREAM_FIELDS | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "DISASSEMBLY_STREAM_FIELDS"
-helpviewer_keywords: 
-  - "Énumération de DISASSEMBLY_STREAM_FIELDS"
+title: DISASSEMBLY_STREAM_FIELDS | Microsoft Docs
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology:
+- vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords:
+- DISASSEMBLY_STREAM_FIELDS
+helpviewer_keywords:
+- DISASSEMBLY_STREAM_FIELDS enumeration
 ms.assetid: cfc9b4de-c756-4844-bea7-d9f186a51d1b
 caps.latest.revision: 11
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 11
----
-# DISASSEMBLY_STREAM_FIELDS
-[!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]
+ms.author: gregvanl
+manager: ghogen
+translation.priority.mt:
+- cs-cz
+- de-de
+- es-es
+- fr-fr
+- it-it
+- ja-jp
+- ko-kr
+- pl-pl
+- pt-br
+- ru-ru
+- tr-tr
+- zh-cn
+- zh-tw
+ms.translationtype: MT
+ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
+ms.openlocfilehash: c1681a66953db211dba3f9cc93235b15083a73a4
+ms.contentlocale: fr-fr
+ms.lasthandoff: 08/28/2017
 
-Spécifie les informations à récupérer concernant un champ de code machine.  
+---
+# <a name="disassemblystreamfields"></a>DISASSEMBLY_STREAM_FIELDS
+Specifies what information to retrieve about a disassembly field.  
   
-## Syntaxe  
+## <a name="syntax"></a>Syntax  
   
-```cpp#  
-enum enum_DISASSEMBLY_STREAM_FIELDS {   
-   DSF_ADDRESS          = 0x00000001,  
-   DSF_ADDRESSOFFSET    = 0x00000002,  
-   DSF_CODEBYTES        = 0x00000004,  
-   DSF_OPCODE           = 0x00000008,  
-   DSF_OPERANDS         = 0x00000010,  
-   DSF_SYMBOL           = 0x00000020,  
-   DSF_CODELOCATIONID   = 0x00000040,  
-   DSF_POSITION         = 0x00000080,  
-   DSF_DOCUMENTURL      = 0x00000100,  
-   DSF_BYTEOFFSET       = 0x00000200,  
-   DSF_FLAGS            = 0x00000400,  
-   DSF_OPERANDS_SYMBOLS = 0x00010000,  
-   DSF_ALL              = 0x000107ff  
+```cpp  
+enum enum_DISASSEMBLY_STREAM_FIELDS {   
+   DSF_ADDRESS          = 0x00000001,  
+   DSF_ADDRESSOFFSET    = 0x00000002,  
+   DSF_CODEBYTES        = 0x00000004,  
+   DSF_OPCODE           = 0x00000008,  
+   DSF_OPERANDS         = 0x00000010,  
+   DSF_SYMBOL           = 0x00000020,  
+   DSF_CODELOCATIONID   = 0x00000040,  
+   DSF_POSITION         = 0x00000080,  
+   DSF_DOCUMENTURL      = 0x00000100,  
+   DSF_BYTEOFFSET       = 0x00000200,  
+   DSF_FLAGS            = 0x00000400,  
+   DSF_OPERANDS_SYMBOLS = 0x00010000,  
+   DSF_ALL              = 0x000107ff  
 };  
 typedef DWORD DISASSEMBLY_STREAM_FIELDS;  
 ```  
   
-```c#  
-public enum enum_DISASSEMBLY_STREAM_FIELDS {   
-   DSF_ADDRESS          = 0x00000001,  
-   DSF_ADDRESSOFFSET    = 0x00000002,  
-   DSF_CODEBYTES        = 0x00000004,  
-   DSF_OPCODE           = 0x00000008,  
-   DSF_OPERANDS         = 0x00000010,  
-   DSF_SYMBOL           = 0x00000020,  
-   DSF_CODELOCATIONID   = 0x00000040,  
-   DSF_POSITION         = 0x00000080,  
-   DSF_DOCUMENTURL      = 0x00000100,  
-   DSF_BYTEOFFSET       = 0x00000200,  
-   DSF_FLAGS            = 0x00000400,  
-   DSF_OPERANDS_SYMBOLS = 0x00010000,  
-   DSF_ALL              = 0x000107ff  
+```csharp  
+public enum enum_DISASSEMBLY_STREAM_FIELDS {   
+   DSF_ADDRESS          = 0x00000001,  
+   DSF_ADDRESSOFFSET    = 0x00000002,  
+   DSF_CODEBYTES        = 0x00000004,  
+   DSF_OPCODE           = 0x00000008,  
+   DSF_OPERANDS         = 0x00000010,  
+   DSF_SYMBOL           = 0x00000020,  
+   DSF_CODELOCATIONID   = 0x00000040,  
+   DSF_POSITION         = 0x00000080,  
+   DSF_DOCUMENTURL      = 0x00000100,  
+   DSF_BYTEOFFSET       = 0x00000200,  
+   DSF_FLAGS            = 0x00000400,  
+   DSF_OPERANDS_SYMBOLS = 0x00010000,  
+   DSF_ALL              = 0x000107ff  
 };  
 ```  
   
-## Membres  
- DSF\_ADDRESS  
- Initialisez\/utilisez le champ d' `bstrAddress` .  
+## <a name="members"></a>Members  
+ DSF_ADDRESS  
+ Initialize/use the `bstrAddress` field.  
   
- DSF\_ADDRESSOFFSET  
- Initialisez\/utilisez le champ d' `bstrAddressOffset` .  
+ DSF_ADDRESSOFFSET  
+ Initialize/use the `bstrAddressOffset` field.  
   
- DSF\_CODEBYTES  
- Initialisez\/utilisez le champ d' `bstrCodeBytes` .  
+ DSF_CODEBYTES  
+ Initialize/use the `bstrCodeBytes` field.  
   
- DSF\_OPCODE  
- Initialisez\/utilisez le champ d' `bstrOpCode` .  
+ DSF_OPCODE  
+ Initialize/use the `bstrOpCode` field.  
   
- DSF\_OPERANDS  
- Initialisez\/utilisez le champ d' `bstrOperands` .  
+ DSF_OPERANDS  
+ Initialize/use the `bstrOperands` field.  
   
- DSF\_SYMBOL  
- Initialisez\/utilisez le champ d' `bstrSymbol` .  
+ DSF_SYMBOL  
+ Initialize/use the `bstrSymbol` field.  
   
- DSF\_CODELOCATIONID  
- Initialisez\/utilisez le champ d' `uCodeLocationId` .  
+ DSF_CODELOCATIONID  
+ Initialize/use the `uCodeLocationId` field.  
   
- DSF\_POSITION  
- Initialisez\/utilisez les champs d' `posBeg` et d' `posEnd` .  
+ DSF_POSITION  
+ Initialize/use the `posBeg` and `posEnd` fields.  
   
- DSF\_DOCUMENTURL  
- Initialisez\/utilisez le champ d' `bstrDocumentUrl` .  
+ DSF_DOCUMENTURL  
+ Initialize/use the `bstrDocumentUrl` field.  
   
- DSF\_BYTEOFFSET  
- Initialisez\/utilisez le champ d' `dwByteOffset` .  
+ DSF_BYTEOFFSET  
+ Initialize/use the `dwByteOffset` field.  
   
- DSF\_FLAGS  
- Initialisez\/utilisez le champ d' `dwFlags` \([DISASSEMBLY\_FLAGS](../../../extensibility/debugger/reference/disassembly-flags.md)\).  
+ DSF_FLAGS  
+ Initialize/use the `dwFlags` ([DISASSEMBLY_FLAGS](../../../extensibility/debugger/reference/disassembly-flags.md)) field.  
   
- DSF\_OPERANDS\_SYMBOLS  
- Incluez les noms de symboles dans le domaine de `bstrOperands` .  
+ DSF_OPERANDS_SYMBOLS  
+ Include symbol names in the `bstrOperands` field.  
   
- DSF\_ALL  
- Spécifie les champs pour le flux du code machine.  
+ DSF_ALL  
+ Specifies all fields for the disassembly stream.  
   
-## Notes  
- Passé comme un paramètre à la méthode de [Lecture](../../../extensibility/debugger/reference/idebugdisassemblystream2-read.md) indiquer que des champs de la structure de [DisassemblyData](../../../extensibility/debugger/reference/disassemblydata.md) doivent être initialisé.  
+## <a name="remarks"></a>Remarks  
+ Passed as a parameter to the [Read](../../../extensibility/debugger/reference/idebugdisassemblystream2-read.md) method to indicate which fields of the [DisassemblyData](../../../extensibility/debugger/reference/disassemblydata.md) structure are to be initialized.  
   
- Utilisé pour le membre d' `dwFields` de la structure d' `DisassemblyData` pour indiquer les champs sont utilisés et valide lorsque la structure est retournée.  
+ Used for the `dwFields` member of the `DisassemblyData` structure to indicate which fields are used and valid when the structure is returned.  
   
- Ces valeurs peuvent être combinées avec `OR`de bits.  
+ These values may be combined with a bitwise `OR`.  
   
-## Configuration requise  
- en\-tête : msdbg.h  
+## <a name="requirements"></a>Requirements  
+ Header: msdbg.h  
   
- l'espace de noms : Microsoft.VisualStudio.Debugger.Interop  
+ Namespace: Microsoft.VisualStudio.Debugger.Interop  
   
- Assembly : Microsoft.VisualStudio.Debugger.Interop.dll  
+ Assembly: Microsoft.VisualStudio.Debugger.Interop.dll  
   
-## Voir aussi  
- [Énumérations](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)   
+## <a name="see-also"></a>See Also  
+ [Enumerations](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)   
  [DisassemblyData](../../../extensibility/debugger/reference/disassemblydata.md)   
- [Lecture](../../../extensibility/debugger/reference/idebugdisassemblystream2-read.md)   
- [DISASSEMBLY\_FLAGS](../../../extensibility/debugger/reference/disassembly-flags.md)
+ [Read](../../../extensibility/debugger/reference/idebugdisassemblystream2-read.md)   
+ [DISASSEMBLY_FLAGS](../../../extensibility/debugger/reference/disassembly-flags.md)

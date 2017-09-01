@@ -1,51 +1,68 @@
 ---
-title: "IDebugObject2::GetICorDebugValue | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "IDebugObject2::GetICorDebugValue"
-helpviewer_keywords: 
-  - "IDebugObject2::GetICorDebugValue (méthode)"
+title: IDebugObject2::GetICorDebugValue | Microsoft Docs
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology:
+- vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords:
+- IDebugObject2::GetICorDebugValue
+helpviewer_keywords:
+- IDebugObject2::GetICorDebugValue method
 ms.assetid: bcd4355d-3fbe-483f-bb23-a44348323c6a
 caps.latest.revision: 11
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 11
----
-# IDebugObject2::GetICorDebugValue
-[!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]
+ms.author: gregvanl
+manager: ghogen
+translation.priority.mt:
+- cs-cz
+- de-de
+- es-es
+- fr-fr
+- it-it
+- ja-jp
+- ko-kr
+- pl-pl
+- pt-br
+- ru-ru
+- tr-tr
+- zh-cn
+- zh-tw
+ms.translationtype: MT
+ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
+ms.openlocfilehash: 477ce5c18672e8324667e28754810e66101e7b0c
+ms.contentlocale: fr-fr
+ms.lasthandoff: 08/28/2017
 
-Obtient un objet de code managé représentant la valeur associée à cet objet.  
+---
+# <a name="idebugobject2geticordebugvalue"></a>IDebugObject2::GetICorDebugValue
+Gets a managed code object representing the value associated with this object.  
   
-## Syntaxe  
+## <a name="syntax"></a>Syntax  
   
 ```cpp  
-HRESULT GetICorDebugValue(  
-   IUnknown** ppUnk  
+HRESULT GetICorDebugValue(  
+   IUnknown** ppUnk  
 );  
 ```  
   
-```c#  
-int GetICorDebugValue(  
-   out object ppUnk  
+```csharp  
+int GetICorDebugValue(  
+   out object ppUnk  
 );  
 ```  
   
-#### Paramètres  
+#### <a name="parameters"></a>Parameters  
  `ppUnk`  
- \[out\]  interface d' `IUnknown` qui représente le ce alias.  Cette interface peut être interrogé pour l'interface d' `ICorDebugValue` .  
+ [out] `IUnknown` interface that represents this alias. This interface can be queried for the `ICorDebugValue` interface.  
   
-## Valeur de retour  
- En cas de réussite, retourne S\_OK ; sinon, retourne un code d'erreur.  
+## <a name="return-value"></a>Return Value  
+ If successful, returns S_OK; otherwise, returns an error code.  
   
-## Notes  
- L'objet d' `ICorDebugValue` est une interface du common langage runtime qui représente une valeur.  
+## <a name="remarks"></a>Remarks  
+ The `ICorDebugValue` object is a Common Language Runtime interface that represents a value.  
   
-## Voir aussi  
+## <a name="see-also"></a>See Also  
  [IDebugObject2](../../../extensibility/debugger/reference/idebugobject2.md)

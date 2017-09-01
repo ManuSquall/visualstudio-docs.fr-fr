@@ -1,89 +1,106 @@
 ---
-title: "Modifications de code prises en charge (C#) | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-debug"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-dev_langs: 
-  - "FSharp"
-  - "VB"
-  - "CSharp"
-  - "C++"
-helpviewer_keywords: 
-  - "Modifier & Continuer (C#), modifications de code prises en charge"
+title: Supported Code Changes (C#) | Microsoft Docs
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology:
+- vs-ide-debug
+ms.tgt_pltfrm: 
+ms.topic: article
+dev_langs:
+- CSharp
+- VB
+- FSharp
+- C++
+helpviewer_keywords:
+- Edit and Continue [C#], supported code changes
 ms.assetid: c7a48ea9-5a7f-4328-a9d7-f0e76fac399d
 caps.latest.revision: 27
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 27
----
-# Modifications de code prises en charge (C#)
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+translation.priority.ht:
+- cs-cz
+- de-de
+- es-es
+- fr-fr
+- it-it
+- ja-jp
+- ko-kr
+- pl-pl
+- pt-br
+- ru-ru
+- tr-tr
+- zh-cn
+- zh-tw
+ms.translationtype: HT
+ms.sourcegitcommit: 9e6c28d42bec272c6fd6107b4baf0109ff29197e
+ms.openlocfilehash: 6c870acd2a1a2339e66ef8e960657a44036057aa
+ms.contentlocale: fr-fr
+ms.lasthandoff: 08/22/2017
 
-Modifier & Continuer gère la plupart des types de modifications du code dans le corps des méthodes.  Toutefois, la plupart des modifications en dehors du corps des méthodes et quelques autres à l'intérieur ne peuvent pas s'appliquer pendant le débogage.  Pour appliquer ces modifications non prises en charge, vous devez arrêter le débogage et redémarrer avec une version nouvelle du code.  
+---
+# <a name="supported-code-changes-c"></a>Supported Code Changes (C#)
+Edit and Continue handles most types of code changes within method bodies. Most changes outside method bodies, and a few changes within method bodies, cannot be applied during debugging, however. To apply those unsupported changes, you must stop debugging and restart with a fresh version of the code.  
   
- Les modifications suivantes ne peuvent pas être appliquées à du code C\# pendant une session de débogage :  
+ The following changes cannot be applied to C# code during a debugging session:  
   
--   Modifications à l'instruction en cours ou à toute autre instruction active.  
+-   Changes to the current statement or any other active statement.  
   
-     Les instructions actives incluent toutes les instructions, dans les fonctions figurant dans la pile des appels, qui ont été appelées pour parvenir à l'instruction en cours.  
+     Active statements include any statements, in functions on the call stack, that were called to get to the current statement.  
   
-     L'instruction en cours est marquée par un arrière\-plan jaune dans la fenêtre source.  D'autres instructions actives sont marquées par un arrière\-plan grisé et sont en lecture seule.  Ces couleurs par défaut peuvent être modifiées dans la boîte de dialogue **Options**.  
+     The current statement is marked by a yellow background in the source window. Other active statements are marked by a shaded background and are read-only. These default colors can be changed in the **Options** dialog box.  
   
--   Modification de la signature d'un type.  
+-   Changing the signature of a type.  
   
--   Ajout d'une méthode anonyme qui capture une variable qui n'a pas été capturée auparavant.  
+-   Adding an anonymous method that captures a variable that hasn't been captured before.  
   
--   Ajout, suppression ou modification d'attributs.  
+-   Adding, removing, or changing attributes.  
   
--   Ajout, suppression ou modification de directives `using`.  
+-   Adding, removing, or changing `using` directives.  
   
--   Ajout d'un `foreach`, d'un `using` ou d'un `lock` autour de l'instruction active.  
+-   Adding a `foreach`, `using`, or `lock` around the active statement.  
   
-## Code unsafe  
- Les modifications apportées à du code unsafe présentent les mêmes restrictions que celles qui portent sur du code sécurisé, avec une restriction supplémentaire : Modifier & Continuer ne prend pas en charge les modifications de code unsafe dans une méthode qui contient l'opérateur `stackalloc`.  
+## <a name="unsafe-code"></a>Unsafe Code  
+ Changes to unsafe code have the same limitations as changes to safe code, with one additional restriction: Edit and Continue does not support changes to unsafe code that exits within a method that contains the `stackalloc` operator.  
   
-## Exceptions  
- Modifier & Continuer prend en charge les modifications apportées aux blocs `catch` et `finally`, à l'exception de l'ajout d'un bloc `catch` ou `finally` autour de l'instruction active, qui n'est pas autorisé.  
+## <a name="exceptions"></a>Exceptions  
+ Edit and Continue supports changes to `catch` and `finally` blocks, except that adding a `catch` or `finally` block around the active statement is not allowed.  
   
-## Scénarios non pris en charge  
- Modifier & Continuer n'est pas disponible dans les scénarios de débogage suivants :  
+## <a name="unsupported-scenarios"></a>Unsupported Scenarios  
+ Edit and Continue is not available in the following debugging scenarios:  
   
--   Débogage du code LINQ dans certaines circonstances.  Pour plus d'informations, consultez [Débogage LINQ](../debugger/debugging-linq.md).  
+-   Debugging LINQ code in certain circumstances. For more information, see [Debugging LINQ](../debugger/debugging-linq.md).  
   
-    -   Capture d'une variable qui n'a pas été capturée auparavant.  
+    -   Capturing a variable that hasn't been captured before.  
   
-    -   Modification du type de l'expression de requête \(par exemple, select a \=\> select new { A \= a };\)  
+    -   Changing the type of query expression. (e.g., select a => select new { A = a };)  
   
-    -   Suppression d'un `where` qui contient une instruction active.  
+    -   Removing a `where` that contains an active statement.  
   
-    -   Suppression d'un `let` qui contient une instruction active.  
+    -   Removing a `let` that contains an active statement.  
   
-    -   Suppression d'un `join` qui contient une instruction active.  
+    -   Removing a `join` that contains an active statement.  
   
-    -   Suppression d'un `orderby` qui contient une instruction active.  
+    -   Removing an `orderby` that contains an active statement.  
   
--   Débogage en mode mixte \(natif\/managé\).  
+-   Mixed-mode (native/managed) debugging.  
   
--   Débogage SQL.  
+-   SQL debugging.  
   
--   Débogage d'un dump  Dr. Watson.  
+-   Debugging a Dr. Watson dump.  
   
--   Modification de code après une exception non gérée, lorsque l'option « **Dérouler la pile des appels sur les exceptions non gérées** » n'est pas sélectionnée.  
+-   Editing code after an unhandled exception, when the "**Unwind the call stack on unhandled exceptions**" option is not selected.  
   
--   Débogage d'une application runtime incorporée.  
+-   Debugging an embedded runtime application.  
   
--   Débogage d'une application avec **Attacher à** au lieu d'exécuter l'application en sélectionnant **Démarrer** dans le menu **Déboguer**.  
+-   Debugging an application that has **Attach to** instead of running the application by choosing **Start** from the **Debug** menu.  
   
--   Débogage de code optimisé.  
+-   Debugging optimized code.  
   
--   Débogage d'une version ancienne de votre code après l'échec de génération d'une nouvelle version en raison d'erreurs de build.  
+-   Debugging an old version of your code after a new version failed to build because of build errors.  
   
-## Voir aussi  
- [Modifier & Continuer \(Visual C\#\)](../debugger/edit-and-continue-visual-csharp.md)   
- [Comment : utiliser Modifier & Continuer \(C\#\)](../debugger/how-to-use-edit-and-continue-csharp.md)
+## <a name="see-also"></a>See Also  
+ [Edit and Continue (Visual C#)](../debugger/edit-and-continue-visual-csharp.md)   
+ [How to: Use Edit and Continue (C#)](../debugger/how-to-use-edit-and-continue-csharp.md)

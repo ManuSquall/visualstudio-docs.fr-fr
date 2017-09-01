@@ -1,187 +1,270 @@
 ---
-title: "Espion et Espion express, fen&#234;tres | Microsoft Docs"
-ms.custom: ""
-ms.date: "12/05/2016"
-ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-debug"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "vs.debug.watch"
-dev_langs: 
-  - "FSharp"
-  - "VB"
-  - "CSharp"
-  - "C++"
-  - "JScript"
-helpviewer_keywords: 
-  - "déboguer [Visual Studio], fenêtre Espion"
-  - "expressions [débogueur], évaluer"
-  - "variables [débogueur], évaluer"
-  - "évaluation d’expression"
-  - "registres, évaluer"
-  - "déboguer [Visual Studio], évaluation d’expression"
+title: Set a Watch on Variables in Visual Studio | Microsoft Docs
+ms.custom: H1Hack27Feb2017
+ms.date: 04/04/2017
+ms.reviewer: 
+ms.suite: 
+ms.technology:
+- vs-ide-debug
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords:
+- vs.debug.watch
+helpviewer_keywords:
+- debugging [Visual Studio], Watch window
+- expressions [debugger], evaluating
+- variables [debugger], evaluating
+- expression evaluation
+- registers, evaluating
+- debugging [Visual Studio], expression evaluation
 ms.assetid: d5c18377-2a0e-4819-a645-407e24ccc58c
 caps.latest.revision: 45
-caps.handback.revision: 44
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
----
-# Espion et Espion express, fen&#234;tres
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+translation.priority.ht:
+- de-de
+- es-es
+- fr-fr
+- it-it
+- ja-jp
+- ko-kr
+- ru-ru
+- zh-cn
+- zh-tw
+translation.priority.mt:
+- cs-cz
+- pl-pl
+- pt-br
+- tr-tr
+ms.translationtype: HT
+ms.sourcegitcommit: 3cd705d703b3d745c502290422e29b3c6da39ee5
+ms.openlocfilehash: f3f89adacaa42fe708027bd8576ee2b8522eee1a
+ms.contentlocale: fr-fr
+ms.lasthandoff: 08/22/2017
 
-Vous pouvez utiliser les fenêtres **Espion** \(**Déboguer\/Fenêtres\/Espion\/Espion \(1, 2, 3, 4\)**\) et **Espion express** \(**Déboguer\/Espion express**\) pour observer les variables et les expressions durant une session de débogage. La fenêtre **Espion** permet d’afficher plusieurs variables, à la différence de la fenêtre  **Espion express**, qui n’en affiche qu’une à la fois.  
+---
+# <a name="set-a-watch-on-variables-using-the-watch-and-quickwatch-windows-in-visual-studio"></a>Set a Watch on Variables using the Watch and QuickWatch Windows in Visual Studio
+While you are debugging, you can use the **Watch** (**Debug > Windows > Watch > Watch (1, 2, 3, 4)**) and **QuickWatch** (right-click on variable / **Debug > QuickWatch**) windows to watch variables and expressions.  The difference is that the **Watch** window can display several variables, while the **QuickWatch** window displays a single variable at a time.
+
+The windows are only available during a debugging session. 
   
-## Observation d’une variable dans la fenêtre Espion express  
- Vous pouvez utiliser la fenêtre **Espion express** pour observer une variable déterminée. Par exemple, si vous avez le code suivant :  
+## <a name="observing-a-single-variable-with-quickwatch"></a>Observing a single variable with QuickWatch  
+ You can use the **QuickWatch** window to observe a single variable. For example, if you have the following code:  
   
-```c#  
-static void Main(string[] args) { int a, b; a = 1; b = 2; for (int i = 0; i < 10; i++) { a = a + b; } }  
+```CSharp
+static void Main(string[] args)  
+{  
+    int a, b;  
+    a = 1;  
+    b = 2;  
+    for (int i = 0; i < 10; i++)  
+    {  
+        a = a + b;  
+    }   
+}  
 ```  
   
- Vous pouvez observer la variable a dans la fenêtre Espion express de la façon suivante :  
+ You can observe the a variable in the QuickWatch window as follows:  
   
-1.  Définissez un point d’arrêt sur la ligne `a = a + b;`.  
+1.  Set a breakpoint on the `a = a + b;` line.  
   
-2.  Démarrez le débogage. L’exécution s’interrompt au point d’arrêt.  
+2.  Start debugging. Execution stops at the breakpoint.  
   
-3.  Ouvrez la fenêtre **Espion express** \(cliquez avec le bouton droit sur a, puis choisissez **Déboguer\/Espion express** ou **Maj\+F9**\). Vous pouvez ouvrir la fenêtre et ajouter la variable a à la fenêtre **Expression**, puis cliquer sur **Réévaluer**. La variable a s’affiche alors dans la fenêtre **Valeurs** avec une valeur égale à 2.  
+3.  Open the **QuickWatch** window (right-click on a, then choose **QuickWatch**, or **SHIFT+F9**).
+
+    You should see the a variable in the **Values** window, with a value of 1.
+
+    ![QuickWatch Expression](../debugger/media/watchexpression.png "QuickWatchExpression")  
+
+    If you want to evaluate an expression using the variable, add an expression such as `a + b` to the **Expression** window and click **Reevaluate**. 
   
-4.  La fenêtre **Espion express** étant une boîte de dialogue modale, vous ne pouvez pas poursuivre le débogage tant qu’elle est ouverte. Vous pouvez ajouter la variable à la fenêtre **Espion** en cliquant sur **Ajouter un espion**.  
+4.  Add the variable to the **Watch** window from **QuickWatch** by clicking **Add Watch**. 
+
+    > [!NOTE]
+    > The **QuickWatch** window is a modal dialog window, so you can't continue debugging as long as it is open.  
   
-5.  Fermez la fenêtre **Espion express**. Dès lors, vous pouvez poursuivre le débogage pendant que vous observez la valeur dans la fenêtre **Espion**.  
+5.  Close the **QuickWatch** window. Now you can continue debugging while you observe the value in the **Watch** window.  
   
-## Observation de variables dans la fenêtre Espion  
- Vous pouvez observer plusieurs variables dans la fenêtre **Espion**. Par exemple, si vous avez le code suivant :  
+## <a name="observing-variables-with-the-watch-window"></a>Observing variables with the Watch window  
+ You can observe multiple variables with the **Watch** window. For example, if you have the following code:  
   
-```c#  
-static void Main(string[] args) { int a, b, c; a = 1; b = 2; c = 0; for (int i = 0; i < 10; i++) { a++; b *= 2; c = a + b; } }  
-  
-```  
-  
- Ajoutez les valeurs des trois variables à la fenêtre Espion de la façon suivante :  
-  
-1.  Définissez un point d’arrêt sur la ligne `c = a + b;`.  
-  
-2.  Démarrez le débogage \(**F5**\) L’exécution s’interrompt au point d’arrêt.  
-  
-3.  Ouvrez la fenêtre Espion \(**Déboguer\/Fenêtres\/Espion\/Espion 1** ou **Ctrl\+Alt\+W, 1**\).  
-  
-4.  Ajoutez la variable `a` à la première ligne, la variable `b` à la deuxième ligne et la variable `c` à la troisième ligne.  
-  
-5.  Poursuivez le débogage.  
-  
- Vous constatez normalement que les valeurs des variables changent à mesure que vous itérez au sein de la boucle `for`.  
-  
- Si vous programmez en code natif, vous devrez peut\-être parfois qualifier le contexte d’un nom de variable ou d’une expression contenant un nom de variable. Le contexte est la fonction, le fichier source et le module où se trouve une variable. Dans ce cas, vous pouvez utiliser la syntaxe d’opérateur de contexte. Pour plus d’informations, consultez Expressions en C\+\+.  
-  
-## Observation d’expressions dans la fenêtre Espion  
- Maintenant, essayons d’utiliser une expression. Vous pouvez ajouter n’importe quelle expression valide reconnue par le débogueur.  
-  
- Par exemple, si vous avez le code présenté dans la section précédente, vous pouvez obtenir la moyenne des trois valeurs comme ceci :  
-  
- ![WatchExpression](~/debugger/media/watchexpression.png "WatchExpression")  
-  
- En général, les règles d’évaluation des expressions dans la fenêtre **Espion** sont les mêmes que dans votre langage de codage. Si votre expression contient une erreur de syntaxe, vous pouvez vous attendre à voir la même erreur de compilateur dans l’éditeur de code. Voici un exemple :  
-  
- ![WatchExpressionError](~/debugger/media/watchexpressionerror.png "WatchExpressionError")  
-  
-##  <a name="bkmk_refreshWatch"></a> Actualisation des valeurs obsolètes dans la fenêtre Espion  
- Dans certaines circonstances, une icône d’actualisation \(cercle avec deux flèches ou cercle avec deux lignes ondulées\) peut apparaître pendant l’évaluation d’une expression dans la fenêtre **Espion**.  Par exemple, si vous avez désactivé l’évaluation de propriété \(**Outils\/Options\/Débogage\/Activer l’évaluation de la propriété et d’autres appels de fonction implicite**\) et que vous avez le code suivant :  
-  
-```c#  
-static void Main(string[] args) { List<string> list = new List<string>(); list.Add("hello"); list.Add("goodbye"); }  
+```C++  
+int main()
+{
+    int a, b, c;
+    a = 1;
+    b = 2;
+    c = 0;
+
+    for (int i = 0; i < 10; i++)
+    {
+        a++;
+        b *= 2;
+        c = a + b;
+    }
+
+    return 0;
+}
   
 ```  
   
- Si vous définissez un espion dans la propriété `Count` de la liste, voici ce que vous devriez voir :  
+ Add the values of the three variables to the Watch window as follows:  
+  
+1.  Set a breakpoint on the `c = a + b;` line.  
+  
+2.  Start debugging (**F5**). Execution stops at the breakpoint.  
+  
+3.  Open the Watch window (**Debug > Windows > Watch > Watch 1**, or **CTRL+ALT+W, 1**).  
+  
+4.  Add the `a` variable to the first row, the `b` variable to the second row, and the `c` variable to the third row.
+
+    You can add variables by clicking an empty row and typing the variable name.
+  
+5.  Continue debugging (press **F11** to advance the debugger).  
+  
+ You should see the variable values changing as you iterate through the `for` loop.  
+  
+ If you are programming in native code, you may sometimes need to qualify the context of a variable name or an expression containing a variable name. The context is the function, source file, and module where a variable is located. If you have to do this, you can use the context operator syntax. For more information, see [Context Operator (C++)](../debugger/context-operator-cpp.md).  
+  
+## <a name="observing-expressions-with-the-watch-window"></a>Observing expressions with the Watch window  
+ Now let's try using an expression instead. You can add any valid expression recognized by the debugger.  
+  
+ For example, if you have the code listed in the preceding section, you can get the average of the three values like this:  
+  
+ ![Watch Expression](../debugger/media/watchexpression.png "WatchExpression")  
+  
+ In general, the rules for evaluating expressions in the **Watch** window are the same as the rules for evaluating expressions in your coding language. If your expression has a syntax error, you can expect the same compiler error that you would see in the code editor. Here's an example:  
+  
+ ![Watch Expression Error](../debugger/media/watchexpressionerror.png "WatchExpressionError")  
+  
+##  <a name="bkmk_refreshWatch"></a> Refreshing Watch values that are out of date  
+ In certain circumstances you might see a refresh icon (a circular arrow) when an expression is evaluated in the **Watch** window.  For example, if you have property evaluation turned off (**Tools > Options > Debugging > Enable property evaluation and other implicit function calls**), and you have the following code:  
+  
+```CSharp  
+static void Main(string[] args)  
+{  
+    List<string> list = new List<string>();  
+    list.Add("hello");  
+    list.Add("goodbye");  
+}  
+  
+```  
+  
+ If you set a watch on the `Count` property of the list, you should see something like the following:  
   
  ![RefreshWatch](../debugger/media/refreshwatch.png "RefreshWatch")  
   
- Cela indique la présence d’une erreur ou d’une valeur obsolète. Vous pouvez généralement actualiser la valeur en cliquant sur l’icône, mais dans certains cas, vous préférerez ne pas l’actualiser. Vous devez d’abord savoir pourquoi la valeur n’a pas été évaluée.  
+ This indicates an error or a value that is out of date. You can generally refresh the value by clicking on the icon, but in some cases you might prefer not to refresh it. First you need to know why the value was not evaluated.  
   
- Si vous pointez sur l’icône, une info\-bulle vous donne des indications sur ce qui a empêché l’évaluation de l’expression. Si les flèches en cercle s’affichent, c’est que l’expression n’a pas été évaluée pour l’une des raisons suivantes :  
+ If you point to the icon, a tooltip provides information about why the expression was not evaluated.  If the circling arrows appear, the expression was not evaluated for one of the following reasons:  
   
--   •	Une erreur s’est produite alors que l’expression était en cours d’évaluation. Par exemple, un dépassement de délai a pu se produire ou une variable était peut\-être hors de portée.  
+-   An error occurred as the expression was being evaluated. For example, a time-out might have occurred, or a variable might have been out of scope.  
   
--   •	L’expression contient un appel de fonction susceptible de produire un effet secondaire dans l’application \(consultez [Effets secondaires et expressions](#bkmk_sideEffects)\).  
+-   The expression contains a function call which could trigger a side effect in the application (see [Side Effects and Expressions](#bkmk_sideEffects)).  
   
--   L’évaluation automatique des propriétés et des appels de fonctions implicites par le débogueur est désactivée \(**Outils\/Options\/Débogage\/Activer l’évaluation de la propriété et d’autres appels de fonction implicite**\), d’où l’impossibilité d’évaluer automatiquement l’expression.  
+-   Automatic evaluation of properties and implicit functions calls by the debugger is turned off (**Tools > Options > Debugging > Enable property evaluation and other implicit function calls**), and then the expression cannot be automatically evaluated.  
   
- Pour actualiser la valeur, cliquez sur l’icône d’actualisation ou appuyez sur la barre d’espace. Le débogueur essaie de réévaluer l’expression. Si l’icône d’actualisation est apparue parce que l’évaluation automatique des propriétés et les effets secondaires implicites étaient désactivés, l’expression peut être évaluée.  
+ To refresh the value, click the refresh icon or press the spacebar. The debugger will try to reevaluate the expression. If the refresh icon appeared because automatic evaluation of properties and other implicit function calls was turned off, the expression can be evaluated.  
   
- Si vous voyez une icône représentant un cercle avec deux lignes ondulées qui s’apparentent à des fils, c’est que l’expression n’a pas été évaluée en raison d’une possible dépendance inter\-threads. En d’autres termes, l’évaluation du code nécessite l’exécution temporaire d’autres threads dans votre application. Quand vous êtes en mode arrêt, tous les threads de votre application sont généralement arrêtés. Permettre à d’autres threads de s’exécuter temporairement peut avoir des effets inattendus sur l’état de votre programme et pousse le débogueur à ignorer certains événements tels que les points d’arrêt et les exceptions levées sur ces threads.  
+ If you see an icon that is a circle with two wavy lines that resemble threads, the expression was not evaluated because of a potential cross-thread dependency. In other words, evaluating the code requires other threads in your application to run temporarily. When you are in break mode, all threads in your application are typically stopped. Allowing other threads to run temporarily can have unexpected effects on the state of your program and causes the debugger to ignore events such as breakpoints and exceptions thrown on those threads.  
   
-##  <a name="bkmk_sideEffects"></a> Effets secondaires et expressions  
- Évaluer certaines expressions peut modifier la valeur d’une variable ou affecter d’une manière ou d’une autre l’état de votre programme. Par exemple, l’évaluation de l’expression suivante modifie la valeur de `var1` :  
+##  <a name="bkmk_sideEffects"></a> Side Effects and Expressions  
+ Evaluating some expressions can change the value of a variable or otherwise affect the state of your program. For example, evaluating the following expression changes the value of `var1`:  
   
 ```  
 var1 = var2  
 ```  
   
- C’est ce que l’on appelle un [effet secondaire](https://en.wikipedia.org/wiki/Side_effect_\(computer_science\)). Les effets secondaires peuvent rendre le débogage plus difficile en altérant le fonctionnement de votre programme.  
+ This is called  a [side effect](https://en.wikipedia.org/wiki/Side_effect_\(computer_science\)). Side effects can make debugging more difficult by changing the way your program operates.  
   
- Une expression connue pour avoir des effets secondaires n’est évaluée qu’une seule fois, au moment où vous l’entrez. Les évaluations suivantes sont désactivées. Vous pouvez substituer manuellement ce comportement en cliquant sur l’icône de mise à jour qui s’affiche à côté de la valeur.  
+ An expression that is known to have side effects is  evaluated only once, when you first enter it. Subsequent evaluations are disabled. You can manually override this behavior by clicking the update icon that appears next to the value.  
   
- Une façon d’éviter tous les effets secondaires est de désactiver l’évaluation de fonction automatique \(**Outils\/Options\/Débogage\/Activer l'évaluation de la propriété et d’autres appels de fonction implicite**\).  
+ One way to avoid all side effects is to turn off automatic function evaluation (**Tools > Options > Debugging > Enable property evaluation and other implicit function calls**).  
   
- Quand l’évaluation des propriétés ou des appels de fonctions implicites est désactivée, vous pouvez forcer l’évaluation en utilisant le modificateur de format **ac** \(pour C\# uniquement\). Consultez [Spécificateurs de format en C\#](../debugger/format-specifiers-in-csharp.md).  
+ When evaluation of properties or implicit function calls is turned off, you can force evaluation by using the **ac** format modifier (for C# only). See [Format Specifiers in C#](../debugger/format-specifiers-in-csharp.md).  
   
-## Utilisation d’ID d’objet dans la fenêtre Espion \(C\# et Visual Basic\)  
- Vous pouvez parfois être amené à observer le comportement d’un objet spécifique. Par exemple, vous pouvez souhaiter suivre un objet référencé par une variable locale devenue hors de portée. En C\# et Visual Basic, vous pouvez créer des ID d’objet pour des instances spécifiques de types de références et les utiliser dans la fenêtre Espion et dans les conditions de point d’arrêt. L’ID d’objet est généré par les services de débogage du Common Language Runtime \(CLR\) et associé à l’objet.  
+## <a name="bkmk_objectIds"></a> Using Object IDs in the Watch window (C# and Visual Basic)  
+ There are times when you want to observe the behavior of a specific object; for example, you might want to track an object referred to by a local variable after that variable has gone out of scope. In C# and Visual Basic, you can create object IDs for specific instances of reference types and use them in the Watch window and in breakpoint conditions. The object ID is generated by the common language runtime (CLR) debugging services and associated with the object.  
   
 > [!NOTE]
->  Les ID d’objet créent des références faibles et n’empêchent pas l’objet de subir une récupération de mémoire. Leur validité ne vaut que pour la session de débogage active.  
+>  Object IDs create weak references, and do not prevent the object from being garbage collected. They are valid only for the current debugging session.  
   
- Dans le code suivant, une méthode crée une personne \(`Person`\) en utilisant une variable locale, mais vous voulez déterminer le nom de `Person` dans une autre méthode :  
+ In the following code one method creates a `Person` using a local variable, but you want to find out what the `Person`'s name is in a different method:  
   
-```c#  
-class Person { public Person(string name) { Name = name; } public string Name { get; set; } } public class Program { List<Person> _people = new List<Person>(); public static void Main(string[] args) { MakePerson(); DoSomething(); } private static void MakePerson() { var p = new Person("Bob"); _people.Add(p); } private static void DoSomething() { // more processing Console.WriteLine("done"); } }  
+```CSharp  
+class Person  
+{  
+    public Person(string name)  
+    {  
+        Name = name;  
+    }  
+    public string Name { get; set; }  
+}  
+  
+public class Program  
+{  
+    List<Person> _people = new List<Person>();  
+    public static void Main(string[] args)  
+    {  
+        MakePerson();  
+        DoSomething();  
+    }  
+  
+    private static void MakePerson()  
+    {  
+        var p = new Person("Bob");  
+        _people.Add(p);  
+    }  
+  
+    private static void DoSomething()  
+    {  
+        // more processing  
+         Console.WriteLine("done");  
+    }  
+}  
   
 ```  
   
- Vous pouvez ajouter une référence à cet objet `Person` dans la fenêtre **Espion** comme ceci :  
+ You can add a reference to that `Person` object in the **Watch** window as follows:  
   
-1.  Définissez un point d’arrêt dans le code quelque temps après que l’objet a été créé.  
+1.  Set a breakpoint in the code some time after the object has been created.  
   
-2.  Démarrez le débogage et quand l’exécution s’interrompt au point d’arrêt, recherchez la variable dans la fenêtre **Variables locales**, cliquez dessus avec le bouton droit, puis sélectionnez **Générer ID de l’objet**.  
+2.  Start debugging, and when execution stops in the breakpoint, find the variable in the **Locals** window, right-click it, and select **Make Object ID**.  
   
-3.  Le symbole **$** et un nombre s’affichent alors dans la fenêtre **Variables locales**. Il s’agit de l’ID d’objet.  
+3.  You should see a **$** plus a number in the **Locals** window. This is the object ID.  
   
-4.  Ajoutez l’ID d’objet à la fenêtre Espion.  
+4.  Add the object ID to the Watch window.  
   
-5.  Définissez un point d’arrêt là où vous voulez observer le comportement de l’objet.  Dans le code ci\-dessus, ce serait dans la méthode `DoSomething()`.  
+5.  Set a breakpoint where you want to observe the object's behavior.  In the code above, that would be in the `DoSomething()` method.  
   
-6.  Poursuivez le débogage et quand l’exécution s’arrête dans la méthode `DoSomething()`, la fenêtre **Espion** affiche l’objet `Person`.  
+6.  Continue debugging, and when execution stops in the `DoSomething()` method, the **Watch** window displays the `Person` object.  
   
 > [!NOTE]
->  Si vous voulez afficher les propriétés de l’objet, telles que `Person.Name` dans l’exemple ci\-dessus, vous devez avoir activé l’évaluation de propriété.  
+>  If you want to see the object's properties, such as `Person.Name` in the example above, you must have enabled property evaluation .  
   
-## Utilisation de registres dans la fenêtre Espion \(C\+\+ uniquement\)  
- Si vous déboguez du code natif, vous pouvez ajouter des noms de registres, ainsi que des noms de variables en utilisant  **$\<nom du registre\>** ou **@\<nom du registre\>**.  Pour plus d’informations, consultez [Pseudo\-variables](../debugger/pseudovariables.md).  
+## <a name="using-registers-in-the-watch-window-c-only"></a>Using registers in the Watch window (C++ only)  
+ If you are debugging native code, you can add register names as well as variable names using **$\<register name>** or **@\<register name>**.  For more information, see [Pseudovariables](../debugger/pseudovariables.md).  
   
-## Affichage dynamique et fenêtre Espion  
- Certains langages de script \(par exemple, JavaScript ou Python\) utilisent le [typage canard](https://en.wikipedia.org/wiki/Duck_typing) ou dynamique, et les langages .NET \(version 4.0 et ultérieures\) prennent en charge les objets difficiles à observer dans les fenêtres de débogage normales, car certaines de leurs propriétés ou méthodes d’exécution peuvent ne pas s’afficher.  
+## <a name="dynamic-view-and-the-watch-window"></a>Dynamic View and the Watch window  
+ Some scripting languages (e.g. JavaScript or Python) use dynamic or [duck typing](https://en.wikipedia.org/wiki/Duck_typing), and .NET languages (in version 4.0 and later) support objects that are difficult to observe using the normal debugging windows, because they may have runtime properties and methods that cannot be displayed.  
   
- Quand la fenêtre Espion affiche un objet créé à partir d’un type qui implémente l’[IDynamicMetaObjectProvider Interface](../Topic/IDynamicMetaObjectProvider%20Interface.md), le débogueur ajoute un nœud **Affichage dynamique**  spécial à l’affichage **Automatique**. Ce nœud affiche les membres dynamiques de l’objet dynamique, mais n’autorise pas la modification des valeurs des membres.  
+ When the Watch window displays a or an object created from a type that implements the [IDynamicMetaObjectProvider Interface](https://docs.microsoft.com/en-us/dotnet/api/system.dynamic.idynamicmetaobjectprovider?view=netframework-4.7), the debugger adds a special **Dynamic View**  node to the **Autos** display. This node shows the dynamic members of the dynamic object but does not allow editing of the member values.  
   
- Si vous cliquez avec le bouton droit sur l’un des enfants d’un **Affichage dynamique** et que vous choisissez **Ajouter un espion**, le débogueur insère une nouvelle variable espion qui effectue le transtypage d’un objet vers un objet dynamique. En d’autres termes, **object Name** devient \(**\(dynamic\)object\).Name**.  
+ If you right-click any child of a **Dynamic View** and choose **Add Watch**, the debugger inserts a new watch variable that casts an object to a dynamic object. In other words, **object Name** becomes (**(dynamic)object).Name**.  
   
- L’évaluation des membres d’un **Affichage dynamique** peut avoir des effets secondaires. Pour plus d’informations sur ces effets secondaires, consultez [Effets secondaires et expressions](#bkmk_sideEffects). Pour C\#, le débogueur ne réévalue pas automatiquement les valeurs présentées dans l’**Affichage dynamique** quand vous passez à une nouvelle ligne de code. Pour Visual Basic, les expressions ajoutées via l’**Affichage dynamique** sont automatiquement actualisées.  
+ Evaluating the members of a **Dynamic View** can have side effects. For an explanation of what side effects are, see [Side Effects and Expressions](#bkmk_sideEffects). For C#, the debugger does not automatically reevaluate the values shown in the **Dynamic View** when you step to a new line of code. For Visual Basic, expressions added through the **Dynamic View** are automatically refreshed.  
   
- Pour obtenir des instructions sur l’actualisation des valeurs de l’Affichage dynamique, consultez [Actualisation des valeurs obsolètes dans la fenêtre Espion](#bkmk_refreshWatch).  
+ For instructions about how to refresh the Dynamic View values, see [Refreshing Watch values that are out of date](#bkmk_refreshWatch).  
   
- Si vous voulez afficher uniquement l’**Affichage dynamique** pour un objet, vous pouvez utiliser le spécificateur de format **dynamic** :  
+ If you want to display only the **Dynamic View** for an object, you can use the **dynamic** format specifier:  
   
--   C\# : **ObjectName, dynamic**  
+-   C#: **ObjectName, dynamic**  
   
 -   Visual Basic:: **$dynamic, ObjectName**  
   
- Par ailleurs, l’**Affichage dynamique** améliore l’expérience de débogage pour les objets COM. Quand le débogueur rencontre un objet COM encapsulé dans **System.\_\_ComObject**, il ajoute un nœud **Affichage dynamique** pour l’objet.  
+ The **Dynamic View** also enhances the debugging experience for COM objects. When the debugger encounters a COM object wrapped in **System.__ComObject**, it adds a **Dynamic View** node for the object.  
   
-## Voir aussi  
- [Fenêtres du débogueur](../debugger/debugger-windows.md)
+## <a name="see-also"></a>See Also  
+ [Debugger Windows](../debugger/debugger-windows.md)
+

@@ -1,12 +1,13 @@
 ---
 title: "Version actuelle des Outils R pour Visual Studio | Microsoft Docs"
 ms.custom: 
-ms.date: 5/8/2017
+ms.date: 7/25/2017
 ms.prod: visual-studio-dev15
 ms.reviewer: 
 ms.suite: 
 ms.technology:
 - devlang-r
+ms.devlang: r
 ms.tgt_pltfrm: 
 ms.topic: article
 ms.assetid: ae5fca3b-ce82-4b81-8625-75454e4099b0
@@ -14,38 +15,26 @@ caps.latest.revision: 1
 author: kraigb
 ms.author: kraigb
 manager: ghogen
-translation.priority.ht:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 7a873df77756e5a957d327049566c8e0db1f3a8a
-ms.openlocfilehash: f6730aa618ef42adebe596614ba024e9b0a31948
+ms.translationtype: HT
+ms.sourcegitcommit: e48ebcafaca37505dbcc92bce682d0c6169004e1
+ms.openlocfilehash: 3f762f9f42577745f8e22280af010f34c82de3a8
 ms.contentlocale: fr-fr
-ms.lasthandoff: 05/12/2017
+ms.lasthandoff: 07/26/2017
 
 ---
 
 # <a name="rtvs-current-version"></a>Version actuelle de RTVS
 
-La dernière version des Outils R pour Visual Studio (RTVS) est **1.0.30321.1407** (recommandée).
+Depuis la dernière mise à jour de cette page, la version la plus récente des outils R pour Visual Studio (RTVS) était **1.0.30623.0940**. Votre version peut varier selon votre version de Visual Studio et si vous utilisez un canal de préversions.
 
-C’est la version Release 1.0 de RTVS disponible à partir de [aka.ms/rtvs-current](https://aka.ms/rtvs-current).
+Vous pouvez vérifier la version en accédant à **Aide > À propos de** dans Visual Studio et en faisant défiler vers le bas jusqu’à l’entrée **Outils R pour Visual Studio** : 
 
-Vous pouvez vérifier la version en accédant à **Aide > À propos de** dans Visual Studio et en faisant défiler vers le bas jusqu’à l’entrée **Outils R pour Visual Studio** :
+![Vérification de la version de RTVS dans Visual Studio (VS2017)](media/current-version.png)
 
-![Vérification de la version de RTVS dans Visual Studio (VS2017)](~/rtvs/media/current-version.png)
+Pour mettre à jour votre version de RTVS dans Visual Studio 2017, ouvrez le programme d’installation de Visual Studio et sélectionnez le bouton **Update** (Mettre à jour).
+
+Pour Visual Studio 2015, le programme d’installation le plus récent est disponible à partir de [aka.ms/rtvs-current](https://aka.ms/rtvs-current) (téléchargement direct).
 
 Consultez [Installation](installation.md) pour connaître les spécifications de Windows et Visual Studio.
 
-Pour les mises à jour de Microsoft R Open et Microsoft R Server, consultez : [Produits Microsoft R.](http://aka.ms/rtvs-msft-r)
+Pour connaître les mises à jour de Microsoft R Open et Microsoft R Server, consultez : [Produits Microsoft R.](http://aka.ms/rtvs-msft-r)

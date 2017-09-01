@@ -1,12 +1,13 @@
 ---
 title: "Modèle de projet de service cloud Azure pour Python | Microsoft Docs"
 ms.custom: 
-ms.date: 4/10/2017
+ms.date: 7/13/2017
 ms.prod: visual-studio-dev15
 ms.reviewer: 
 ms.suite: 
 ms.technology:
 - devlang-python
+ms.devlang: python
 ms.tgt_pltfrm: 
 ms.topic: article
 ms.assetid: a2ce82ee-8c73-419a-bbd2-4c3513fd394d
@@ -14,24 +15,11 @@ caps.latest.revision: 11
 author: kraigb
 ms.author: kraigb
 manager: ghogen
-translation.priority.ht:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
-translationtype: Human Translation
-ms.sourcegitcommit: 9328c347d548a03a536cea16bd5851817c03d5a2
-ms.openlocfilehash: 5dd1c40c925327c9494e3a334cdf348692a4981d
-ms.lasthandoff: 04/10/2017
+ms.translationtype: HT
+ms.sourcegitcommit: 6d25db4639f2c8391c1e32542701ea359f560178
+ms.openlocfilehash: b90240dbb25e45827cbe8cd728dfcff23b1a8884
+ms.contentlocale: fr-fr
+ms.lasthandoff: 07/18/2017
 
 ---
 
@@ -46,23 +34,23 @@ Cette rubrique contient des détails sur le modèle de projet et les autres pris
 ## <a name="create-a-project"></a>Créer un projet
 
 1. Installez le [SDK Azure .NET pour Visual Studio](https://www.visualstudio.com/vs/azure-tools/) nécessaire pour utiliser le modèle Service cloud.
-1. Dans Visual Studio, sélectionnez **Fichier > Nouveau > Projet...**, puis recherchez « Azure Python » et sélectionnez **Service cloud Azure** dans la liste :
+1. Dans Visual Studio, sélectionnez **Fichier > Nouveau > Projet...** , puis recherchez « Azure Python » et sélectionnez **Service cloud Azure** dans la liste :
 
-    ![Modèle de projet cloud Azure pour Python](~/python/media/template-azure-cloud-project.png)
+    ![Modèle de projet cloud Azure pour Python](media/template-azure-cloud-project.png)
 
 1. Sélectionnez un ou plusieurs rôles à inclure. Les projets cloud peuvent combiner des rôles écrits dans différents langages, ce qui signifie que vous pouvez facilement écrire chaque partie de votre application dans le langage le plus approprié. Pour ajouter de nouveaux rôles au projet après avoir renseigné cette boîte de dialogue, cliquez sur **Rôles** dans l’Explorateur de solutions et sélectionnez l’un des éléments sous **Ajouter**.
 
-    ![Ajout de rôles dans le modèle de projet cloud Azure](~/python/media/template-azure-cloud-service-project-wizard.png)
+    ![Ajout de rôles dans le modèle de projet cloud Azure](media/template-azure-cloud-service-project-wizard.png)
 
 1. Une fois les projets de rôles individuels créés, vous êtes invité à installer les packages Python supplémentaires, tels que les frameworks Django, Bottle ou Flask si vous avez sélectionné un rôle qui utilise l’un d’eux.
 
-1. Après avoir ajouté un nouveau rôle à votre projet, vous obtenez des instructions de configuration. Celles-ci ne sont généralement pas nécessaires, mais elles peuvent être utiles pour personnaliser vos futurs projets. Notez que lors de l’ajout simultané de plusieurs rôles, seules les instructions correspondant au dernier rôle resteront ouvertes. Vous trouverez toutefois les instructions et les conseils de dépannage pour les autres rôles dans leurs fichiers `readme.mht` respectifs, qui se trouvent soit à la racine du rôle soit dans le dossier `bin`.
+1. Après avoir ajouté un nouveau rôle à votre projet, des instructions de configuration s’affichent. Les modifications de configuration ne sont généralement pas nécessaires, mais peuvent être utiles pour personnaliser vos futurs projets. Notez que, lors de l’ajout simultané de plusieurs rôles, seules les instructions correspondant au dernier rôle restent ouvertes. Vous trouverez toutefois les instructions et les conseils de dépannage pour les autres rôles dans leurs fichiers `readme.mht` respectifs, qui se trouvent soit à la racine du rôle soit dans le dossier `bin`.
 
-1. Le dossier `bin` d’un projet contient également un ou deux scripts PowerShell servant à configurer la machine virtuelle à distance, notamment l’installation de Python, tous les fichiers [requirements.txt](#dependencies) de votre projet ainsi que la configuration d’IIS, le cas échéant. Vous pouvez modifier ces fichiers comme vous le souhaitez pour votre déploiement, bien que vous puissiez gérer les options les plus courantes par d’autres moyens (voir [Configuration du déploiement des rôles](#configuring-role-deployment) ci-dessous). Nous vous déconseillons de supprimer ces fichiers, car un ancien script de configuration sera utilisé s’ils ne sont pas disponibles.
+1. Le dossier `bin` d’un projet contient également un ou deux scripts PowerShell servant à configurer la machine virtuelle à distance, notamment l’installation de Python, tous les fichiers [requirements.txt](#dependencies) de votre projet ainsi que la configuration d’IIS, le cas échéant. Vous pouvez modifier ces fichiers comme vous le souhaitez pour votre déploiement, bien que vous puissiez gérer les options les plus courantes par d’autres moyens (voir [Configuration du déploiement des rôles](#configuring-role-deployment) ci-dessous). Nous vous déconseillons de supprimer ces fichiers, car un ancien script de configuration est utilisé s’ils ne sont pas disponibles.
 
-    ![Fichiers de prise en charge des rôles de travail](~/python/media/template-azure-cloud-service-worker-role-support-files.png)
+    ![Fichiers de prise en charge des rôles de travail](media/template-azure-cloud-service-worker-role-support-files.png)
 
-    Pour ajouter ces scripts de configuration à un nouveau projet, cliquez avec le bouton droit sur le projet, sélectionnez **Ajouter > Nouvel élément...**, puis sélectionnez **Web Role Support Files** (Fichiers de prise en charge des rôles web) ou **Worker Role Support Files** (Fichiers de prise en charge des rôles de travail).
+    Pour ajouter ces scripts de configuration à un nouveau projet, cliquez avec le bouton droit sur le projet, sélectionnez **Ajouter > Nouvel élément...**, puis sélectionnez **Fichiers de support de rôle web** ou **Fichiers de support de rôle de travail**.
    
 
 ## <a name="configuring-role-deployment"></a>Configuration du déploiement des rôles
@@ -72,11 +60,11 @@ Les scripts PowerShell contenus dans le dossier `bin` d’un projet de rôle con
 - `ConfigureCloudService.ps1` est utilisé pour les rôles web et de travail, généralement afin d’installer et configurer les dépendances et de définir la version de Python.
 - `LaunchWorker.ps1` est utilisé uniquement pour les rôles de travail afin de modifier le comportement au démarrage, d’ajouter des arguments de ligne de commande ou d’ajouter des variables d’environnement.
 
-Les deux fichiers contiennent des instructions de personnalisation. Vous pouvez également installer votre propre version de Python en ajoutant une autre tâche au fichier `ServiceDefinition.csdef` du projet de service cloud principal, en affectant la variable `PYTHON` au chemin `python.exe` (ou équivalent) qui est installé. Une fois `PYTHON` défini, Python ne sera pas installé à partir de NuGet.
+Les deux fichiers contiennent des instructions de personnalisation. Vous pouvez également installer votre propre version de Python en ajoutant une autre tâche au fichier `ServiceDefinition.csdef` du projet de service cloud principal, en affectant la variable `PYTHON` au chemin `python.exe` (ou équivalent) qui est installé. Quand `PYTHON` est défini, Python n’est pas installé à partir de NuGet.
 
 Une configuration supplémentaire peut être obtenue comme suit :
 
-1. Installez les packages à l’aide de `pip` en mettant à jour le fichier `requirements.txt` dans le répertoire racine de votre projet. Le script `ConfigureCloudService.ps1` installe ce fichier sur le déploiement.
+1. Installez les packages à l’aide de `pip` en mettant à jour le fichier `requirements.txt` dans le répertoire racine de votre projet. Le script `ConfigureCloudService.ps1` installe ce fichier lors du déploiement.
 1. Définissez les variables d’environnement en modifiant votre fichier `web.config` (rôles web) ou la section `Runtime` de votre fichier `ServiceDefinition.csdef` (rôles de travail).
 1. Spécifiez le script et les arguments à utiliser pour un rôle de travail en modifiant la ligne de commande dans la section `Runtime/EntryPoint` de votre fichier `ServiceDefinitions.csdef`.
 1. Définissez le script de gestionnaire principal correspondant à un rôle web à l’aide du fichier `web.config`.
@@ -96,18 +84,18 @@ Pour ouvrir l’Assistant **Publication**, sélectionnez le projet de rôle dans
 
 Le processus de publication implique deux phases. Tout d’abord, Visual Studio crée un package unique contenant tous les rôles de votre service cloud. Ce package correspond à ce qui est déployé sur Azure, qui initialise une ou plusieurs machines virtuelles pour chaque rôle et déploie la source.
 
-À mesure que chaque machine virtuelle s’active, il exécute le script `ConfigureCloudService.ps1` et installe les dépendances. Ce script par défaut installe une version récente de Python à partir de [nuget](https://www.nuget.org/packages?q=Tags%3A%22python%22+Authors%3A%22Python+Software+Foundation%22) et tous les packages spécifiés dans un fichier `requirements.txt`. 
+À mesure que chaque machine virtuelle s’active, il exécute le script `ConfigureCloudService.ps1` et installe les dépendances. Ce script par défaut installe une version récente de Python à partir de [NuGet](https://www.nuget.org/packages?q=Tags%3A%22python%22+Authors%3A%22Python+Software+Foundation%22) et tous les packages spécifiés dans un fichier `requirements.txt`. 
 
 Pour finir, les rôles de travail exécutent `LaunchWorker.ps1`, qui démarre l’exécution de votre script Python ; les rôles web initialisent IIS et commencent à gérer les demandes web.
 
 
 ## <a name="dependencies"></a>Dépendances
 
-Pour le service cloud, le script `ConfigureCloudService.ps1` utilise `pip` pour installer un jeu de dépendances Python. Celles-ci doivent être spécifiées dans un fichier nommé `requirements.txt` (personnalisable en modifiant `ConfigureCloudService.ps1`). Le fichier est exécuté avec `pip install -r requirements.txt` dans le cadre de l’initialisation.
+Pour le service cloud, le script `ConfigureCloudService.ps1` utilise `pip` pour installer un jeu de dépendances Python. Les dépendances doivent être spécifiées dans un fichier nommé `requirements.txt` (personnalisable en modifiant `ConfigureCloudService.ps1`). Le fichier est exécuté avec `pip install -r requirements.txt` dans le cadre de l’initialisation.
 
 Notez que les instances Service cloud n’incluent aucun compilateur C, ce qui signifie que toutes les bibliothèques avec des extensions C doivent fournir des binaires précompilés.
 
-pip et ses dépendances, ainsi que les packages contenus dans le fichier `requirements.txt`, sont téléchargés automatiquement et peuvent être assimilés à l’utilisation de bande passante facturable. Consultez la page [Managing required packages](python-environments.md#managing-required-packages) (Gestion des packages requis) pour plus d’informations sur la gestion des fichiers `requirements.txt`.
+pip et ses dépendances, ainsi que les packages contenus dans le fichier `requirements.txt`, sont téléchargés automatiquement et peuvent être assimilés à l’utilisation de bande passante facturable. Consultez [Gestion des packages requis](python-environments.md#managing-required-packages) pour plus d’informations sur la gestion des fichiers `requirements.txt`.
 
 ## <a name="troubleshooting"></a>Résolution des problèmes
 

@@ -1,5 +1,5 @@
 ---
-title: "Numéros de version de l’assembly principal et des assemblys satellites localisés | Microsoft Docs"
+title: Version Numbers for Main and Localized Satellite Assemblies | Microsoft Docs
 ms.custom: 
 ms.date: 11/04/2016
 ms.reviewer: 
@@ -33,35 +33,35 @@ translation.priority.ht:
 - tr-tr
 - zh-cn
 - zh-tw
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 3d32d11a430227800cb3ed53831a9565eb6adeb3
-ms.openlocfilehash: 555205ade620de3ad46f0fab34d50b85cbed5e40
+ms.translationtype: HT
+ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
+ms.openlocfilehash: 19ca788264cd3e1075353f5986c365bcf2a57f67
 ms.contentlocale: fr-fr
-ms.lasthandoff: 05/30/2017
+ms.lasthandoff: 08/28/2017
 
 ---
-# <a name="version-numbers-for-main-and-localized-satellite-assemblies"></a>Numéros de version de l'assembly principal et des assemblys satellites localisés
-La classe <xref:System.Resources.SatelliteContractVersionAttribute> fournit la prise en charge de la gestion de version pour un assembly principal qui utilise des ressources localisées via le Gestionnaire des ressources. L’application d’un <xref:System.Resources.SatelliteContractVersionAttribute> à l’assembly principal d’une application permet de mettre à jour et de redéployer cet assembly, sans mettre à jour ses assemblys satellites. Par exemple, vous pouvez utiliser la classe <xref:System.Resources.SatelliteContractVersionAttribute> avec un Service Pack qui n’introduit pas de nouvelles ressources sans régénérer et redéployer vos assemblys satellites. Pour que vos ressources localisées soient disponibles, la version de contrat satellite de votre assembly principal doit correspondre à la classe <xref:System.Reflection.AssemblyVersionAttribute> de vos assemblys satellites. Vous devez spécifier un numéro de version exact dans la classe <xref:System.Resources.SatelliteContractVersionAttribute> ; les caractères génériques tels que « * » ne sont pas autorisés. Pour plus d’informations, consultez [Récupération de ressources](/dotnet/framework/resources/retrieving-resources-in-desktop-apps).  
+# <a name="version-numbers-for-main-and-localized-satellite-assemblies"></a>Version Numbers for Main and Localized Satellite Assemblies
+The <xref:System.Resources.SatelliteContractVersionAttribute> class provides versioning support for a main assembly that uses localized resources by means of the resource manager. Applying the <xref:System.Resources.SatelliteContractVersionAttribute> to an application's main assembly allows you to update and re-deploy the assembly without updating its satellite assemblies. For example, you can use the <xref:System.Resources.SatelliteContractVersionAttribute> class with a service pack that doesn't introduce new resources without rebuilding and redeploying your satellite assemblies. For your localized resources to be available, the satellite contract version of your main assembly must match the <xref:System.Reflection.AssemblyVersionAttribute> class of your satellite assemblies. You must specify an exact version number in the <xref:System.Resources.SatelliteContractVersionAttribute>; wildcard characters such as "*" are not allowed. For more information, see [Retrieving Resources](/dotnet/framework/resources/retrieving-resources-in-desktop-apps).  
   
-## <a name="updating-assemblies"></a>Mise à jour des assemblys  
- La classe <xref:System.Resources.SatelliteContractVersionAttribute> permet de mettre à jour un assembly principal sans avoir à mettre à jour les assemblys satellites, et vice versa. Lorsque l’assembly principal est mis à jour, son numéro de version est modifié. Si vous souhaitez continuer à utiliser les assemblys satellites existants, modifiez le numéro de version de l’assembly principal, mais conservez le numéro de version de contrat satellite. Par exemple, dans votre première version, la version de l’assembly principal peut être 1.0.0.0. Dans ce cas, la version de contrat satellite et la version d’assembly de l’assembly satellite seront également 1.0.0.0. Si vous devez mettre à jour votre assembly principal pour un Service Pack, vous pouvez remplacer la version d’assembly par 1.0.0.1, tout en conservant la valeur 1.0.0.0 pour la version de contrat satellite et la version d’assembly du satellite.  
+## <a name="updating-assemblies"></a>Updating Assemblies  
+ The <xref:System.Resources.SatelliteContractVersionAttribute> class allows you to update a main assembly without having to update your satellite assembly, or vice versa. When the main assembly is updated, its assembly version number is changed. If you want to continue using the existing satellite assemblies, change the main assembly's version number but leave the satellite contract version number the same. For example, in your first release your main assembly version may be 1.0.0.0. The satellite contract version and the assembly version of the satellite assembly will also be 1.0.0.0. If you need to update your main assembly for a service pack, you can change the assembly version to 1.0.0.1, while keeping the satellite contract version and the satellite's assembly version as 1.0.0.0.  
   
- Si vous devez mettre à jour un assembly satellite, mais pas votre assembly principal, modifiez le <xref:System.Reflection.AssemblyVersionAttribute> de l’assembly satellite. En même temps que votre assembly satellite, vous devez livrer un assembly de stratégie indiquant que votre nouvel assembly satellite est compatible avec votre ancien assembly satellite. Pour plus d’informations, consultez [Méthode de localisation des assemblys par le runtime](/dotnet/framework/deployment/how-the-runtime-locates-assemblies).  
+ If you need to update a satellite assembly but not your main assembly, you change the <xref:System.Reflection.AssemblyVersionAttribute> of the satellite assembly. Along with your satellite assembly, you will have to ship a policy assembly that states that your new satellite assembly is compatible with your old satellite assembly. For more information on policies, see [How the Runtime Locates Assemblies](/dotnet/framework/deployment/how-the-runtime-locates-assemblies).  
   
- Le code suivant montre la définition d’une version de contrat satellite. Le code peut être placé dans un script de build, ou dans le fichier AssemblyInfo.vb ou AssemblyInfo.cs.  
+ The following code shows how to set the satellite contract version. The code can be placed in either a build script or in the AssemblyInfo.vb or AssemblyInfo.cs file.  
   
-```vb#  
+```vb  
 <Assembly: SatelliteContractVersionAttribute("4.3.2.1")>  
   
 ```  
   
-```c#  
+```csharp  
 [assembly: SatelliteContractVersionAttribute("4.3.2.1")]  
 ```  
   
-## <a name="see-also"></a>Voir aussi  
- [Méthode de localisation des assemblys par le runtime](/dotnet/framework/deployment/how-the-runtime-locates-assemblies)   
- [Définition des attributs d’assembly](/dotnet/framework/app-domains/set-assembly-attributes)   
- [Sécurité et assemblys satellites localisés](../ide/security-and-localized-satellite-assemblies.md)   
- [Localisation d’applications](../ide/localizing-applications.md)   
- [Globalisation et localisation d’applications](../ide/globalizing-and-localizing-applications.md)
+## <a name="see-also"></a>See Also  
+ [How the Runtime Locates Assemblies](/dotnet/framework/deployment/how-the-runtime-locates-assemblies)   
+ [Setting Assembly Attributes](/dotnet/framework/app-domains/set-assembly-attributes)   
+ [Security and Localized Satellite Assemblies](../ide/security-and-localized-satellite-assemblies.md)   
+ [Localizing Applications](../ide/localizing-applications.md)   
+ [Globalizing and Localizing Applications](../ide/globalizing-and-localizing-applications.md)

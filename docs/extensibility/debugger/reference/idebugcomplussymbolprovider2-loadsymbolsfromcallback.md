@@ -1,5 +1,5 @@
 ---
-title: IDebugComPlusSymbolProvider2::LoadSymbolsFromCallback | Documents Microsoft
+title: IDebugComPlusSymbolProvider2::LoadSymbolsFromCallback | Microsoft Docs
 ms.custom: 
 ms.date: 11/04/2016
 ms.reviewer: 
@@ -29,18 +29,19 @@ translation.priority.mt:
 - tr-tr
 - zh-cn
 - zh-tw
-translationtype: Machine Translation
-ms.sourcegitcommit: 5db97d19b1b823388a465bba15d057b30ff0b3ce
-ms.openlocfilehash: b0af89a6cef23a9fc8753cd82e3d022aec58083b
-ms.lasthandoff: 02/22/2017
+ms.translationtype: MT
+ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
+ms.openlocfilehash: 5c6e016d3c3bbd11bf57974dc0afe0c8df8f5d21
+ms.contentlocale: fr-fr
+ms.lasthandoff: 08/28/2017
 
 ---
 # <a name="idebugcomplussymbolprovider2loadsymbolsfromcallback"></a>IDebugComPlusSymbolProvider2::LoadSymbolsFromCallback
-Charge les symboles à l’aide de la méthode de rappel spécifiée de débogage.  
+Loads debug symbols using the specified callback method.  
   
-## <a name="syntax"></a>Syntaxe  
+## <a name="syntax"></a>Syntax  
   
-```cpp#  
+```cpp  
 HRESULT LoadSymbolsFromCallback(  
    ULONG32   ulAppDomainID,  
    GUID      guidModule,  
@@ -52,7 +53,7 @@ HRESULT LoadSymbolsFromCallback(
 );  
 ```  
   
-```c#  
+```csharp  
 int LoadSymbolsFromCallback(  
    uint   ulAppDomainID,  
    Guid   guidModule,  
@@ -64,35 +65,35 @@ int LoadSymbolsFromCallback(
 );  
 ```  
   
-#### <a name="parameters"></a>Paramètres  
+#### <a name="parameters"></a>Parameters  
  `ulAppDomainID`  
- [in] Identificateur du domaine d’application.  
+ [in] Identifier of the application domain.  
   
  `guidModule`  
- [in] Identificateur unique du module.  
+ [in] Unique identifier of the module.  
   
  `pUnkMetadataImport`  
- [in] Objet qui contient les métadonnées de symbole.  
+ [in] Object that contains the symbol metadata.  
   
  `pUnkCorDebugModule`  
- [in] Objet qui implémente le [ICorDebugModule (Interface)](ICorDebugModule%20Interface.xml).  
+ [in] Object that implements the [ICorDebugModule Interface](/dotnet/framework/unmanaged-api/debugging/icordebugmodule-interface).  
   
  `bstrModuleName`  
- [in] Nom du module.  
+ [in] Name of the module.  
   
  `bstrSymSearchPath`  
- [in] Chemin d’accès pour rechercher le fichier de symboles.  
+ [in] Path to search for the symbol file.  
   
  `pCallback`  
- [in] Objet qui représente la méthode de rappel.  
+ [in] Object that represents the callback method.  
   
-## <a name="return-value"></a>Valeur de retour  
- En cas de réussite, retourne `S_OK`; sinon, retourne un code d’erreur.  
+## <a name="return-value"></a>Return Value  
+ If successful, returns `S_OK`; otherwise, returns an error code.  
   
-## <a name="example"></a>Exemple  
- L’exemple suivant montre comment implémenter cette méthode pour un **CDebugSymbolProvider** objet qui expose les [IDebugComPlusSymbolProvider2](../../../extensibility/debugger/reference/idebugcomplussymbolprovider2.md) interface.  
+## <a name="example"></a>Example  
+ The following example shows how to implement this method for a **CDebugSymbolProvider** object that exposes the [IDebugComPlusSymbolProvider2](../../../extensibility/debugger/reference/idebugcomplussymbolprovider2.md) interface.  
   
-```cpp#  
+```cpp  
 HRESULT CDebugSymbolProvider::LoadSymbolsFromCallback(  
     ULONG32 ulAppDomainID,  
     GUID guidModule,  
@@ -183,5 +184,5 @@ Error:
 }  
 ```  
   
-## <a name="see-also"></a>Voir aussi  
+## <a name="see-also"></a>See Also  
  [IDebugComPlusSymbolProvider2](../../../extensibility/debugger/reference/idebugcomplussymbolprovider2.md)

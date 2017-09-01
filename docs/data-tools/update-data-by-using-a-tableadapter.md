@@ -1,90 +1,70 @@
 ---
-title: "Comment&#160;: mettre &#224; jour les donn&#233;es &#224; l&#39;aide d&#39;un TableAdapter | Microsoft Docs"
-ms.custom: ""
-ms.date: "12/14/2016"
-ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-dev_langs: 
-  - "VB"
-  - "CSharp"
-  - "C++"
-  - "aspx"
-helpviewer_keywords: 
-  - "données (Visual Studio), enregistrer"
-  - "données (Visual Studio), TableAdapters"
-  - "données (Visual Studio), mettre à jour"
-  - "enregistrer les données"
-  - "TableAdapters, mise à jour de données"
-  - "mise à jour de données, TableAdapters"
+title: Update data by using a TableAdapter | Microsoft Docs
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.tgt_pltfrm: 
+ms.topic: article
+dev_langs:
+- VB
+- CSharp
+helpviewer_keywords:
+- data [Visual Studio], saving
+- data [Visual Studio], TableAdapters
+- updating data, TableAdapters
+- TableAdapters, updating data
+- data [Visual Studio], updating
+- saving data
 ms.assetid: 5e32e10e-9bac-4969-9bdd-b8f6919d3516
 caps.latest.revision: 15
-caps.handback.revision: 11
-author: "mikeblome"
-ms.author: "mblome"
-manager: "ghogen"
+author: mikeblome
+ms.author: mblome
+manager: ghogen
+translation.priority.ht:
+- de-de
+- es-es
+- fr-fr
+- it-it
+- ja-jp
+- ko-kr
+- ru-ru
+- zh-cn
+- zh-tw
+translation.priority.mt:
+- cs-cz
+- pl-pl
+- pt-br
+- tr-tr
+ms.translationtype: HT
+ms.sourcegitcommit: eb5c9550fd29b0e98bf63a7240737da4f13f3249
+ms.openlocfilehash: 130c127cb0787e3f13f90adfef72de072300fcf3
+ms.contentlocale: fr-fr
+ms.lasthandoff: 08/30/2017
+
 ---
-# Comment&#160;: mettre &#224; jour les donn&#233;es &#224; l&#39;aide d&#39;un TableAdapter
-Lorsque les données contenues dans votre groupe de données ont été modifiées et validées, vous souhaiterez probablement renvoyer les données mises à jour vers une base de données.  Pour envoyer les données modifiées à une base de données, vous appelez la méthode `Update` d'un [TableAdapter](../data-tools/tableadapter-overview.md).  La méthode `Update` de l'adaptateur met à jour une table de données unique et exécute la commande correcte \(INSERT, UPDATE ou DELETE\) en fonction du <xref:System.Data.DataRow.RowState%2A> de chaque ligne de données contenue dans la table.  Lorsque vous enregistrez des données dans des tables connexes, Visual Studio fournit un composant TableAdapterManager qui aide à effectuer des enregistrements dans l'ordre approprié selon les contraintes de clé étrangère définies dans la base de données.  Pour plus d'informations, consultez [Vue d'ensemble de la mise à jour hiérarchique](../Topic/Hierarchical%20Update%20Overview.md).  
+# <a name="update-data-by-using-a-tableadapter"></a>Update data by using a TableAdapter
+After the data in your dataset has been modified and validated, you can send the updated data back to a database by calling the `Update` method of a [TableAdapter](../data-tools/create-and-configure-tableadapters.md). The `Update` method updates a single data table and runs the correct command (INSERT, UPDATE, or DELETE) based on the <xref:System.Data.DataRow.RowState%2A> of each data row in the table. When a dataset has related tables, Visual Studio generates a TableAdapterManager class that you  use to do the updates. The TableAdapterManager class ensures that updates are made in the correct order based on the foreign-key constraints that are defined in the database. When you use data-bound controls, the databinding architecture creates a member variable of the TableAdapterManager class called tableAdapterManager. 
   
 > [!NOTE]
->  Étant donné que la tentative de mise à jour d'une source de données avec le contenu d'un groupe de données peut entraîner des erreurs, il est conseillé de placer le code qui appelle la méthode `Update` de l'adaptateur dans un bloc `try`\/`catch`.  
+>  When you try to update a data source with the contents of a dataset, you can get errors.To avoid errors, we recommend that you put the code that calls the adapter's `Update` method inside a `try`/`catch` block.  
   
- La procédure exacte de mise à jour d'une source de données varie en fonction des besoins de votre entreprise, mais votre application doit comprendre les étapes suivantes :  
+ The exact procedure for updating a data source can vary depending on business needs, but  includes the following steps:  
   
-1.  Appelez la méthode `Update` de l'adaptateur dans un bloc `try`\/`catch`.  
+1.  Call the adapter's `Update` method in a `try`/`catch` block.  
   
-2.  Si une exception est interceptée, rechercher la ligne de données ayant provoqué l'erreur.  Pour plus d'informations, consultez [Comment : trouver des lignes contenant des erreurs](../Topic/How%20to:%20Locate%20Rows%20that%20Have%20Errors.md).  
+2.  If an exception is caught, locate the data row that caused the error. 
   
-3.  Résolvez le problème dans la ligne de données \(par programmation si possible ou en affichant la ligne non valide pour que l'utilisateur la modifie\), puis retentez la mise à jour \(<xref:System.Data.DataRow.HasErrors%2A>, <xref:System.Data.DataTable.GetErrors%2A>\).  
+3.  Reconcile the problem in the data row (programmatically if you can, or by presenting the invalid row to the user for modification), and then try the update again (<xref:System.Data.DataRow.HasErrors%2A>, <xref:System.Data.DataTable.GetErrors%2A>).  
   
-## Enregistrement des données dans une base de données  
- Appelez la méthode `Update` d'un TableAdapter en passant le nom de la table de données contenant les valeurs à écrire dans la base de données.  
+## <a name="save-data-to-a-database"></a>Save data to a database  
+ Call the `Update` method of a TableAdapter. Pass the name of the data table that contains the values to be written to the database.  
   
-#### Pour mettre à jour une base de données avec un groupe de données à l'aide d'un TableAdapter  
+#### <a name="to-update-a-database-by-using-a-tableadapter"></a>To update a database by using a TableAdapter  
   
--   Insérez la méthode `Update` de l'adaptateur dans un bloc `try`\/`catch`.  L'exemple suivant illustre une tentative de mise à jour depuis un bloc `try`\/`catch` avec le contenu de la table `Customers` dans `NorthwindDataSet`.  
+-   Enclose the TableAdapter's`Update` method in a `try`/`catch` block. The following example shows how to  update  the contents of the `Customers` table in `NorthwindDataSet` from within a `try`/`catch` block .  
   
-     [!code-cs[VbRaddataSaving#9](../data-tools/codesnippet/CSharp/update-data-by-using-a-tableadapter_1.cs)]
-     [!code-vb[VbRaddataSaving#9](../data-tools/codesnippet/VisualBasic/update-data-by-using-a-tableadapter_1.vb)]  
+     [!code-csharp[VbRaddataSaving#9](../data-tools/codesnippet/CSharp/update-data-by-using-a-tableadapter_1.cs)]  [!code-vb[VbRaddataSaving#9](../data-tools/codesnippet/VisualBasic/update-data-by-using-a-tableadapter_1.vb)]  
   
-## Mise à jour de deux tables connexes dans un groupe de données avec un TableAdapter  
- Lors de la mise à jour de tables connexes dans un groupe de données, il est important de respecter l'ordre afin de réduire les risques de non respect des contraintes d'intégrité référentielle.  L'ordre d'exécution des commandes respectera également les indices du <xref:System.Data.DataRowCollection> contenu dans le groupe de données.  Pour éviter le déclenchement d'erreurs d'intégrité des données, il est recommandé de mettre à jour la base de données en respectant la séquence suivante :  
-  
-1.  Table enfant : suppression des enregistrements.  
-  
-2.  Table parente : insertion, mise à jour et suppression des enregistrements.  
-  
-3.  Table enfant : insertion et mise à jour des enregistrements.  
-  
-    > [!NOTE]
-    >  Si vous mettez à jour plusieurs tables connexes, vous devez inclure toute la logique de mise à jour dans une transaction.  Une transaction est un processus qui garantit que toutes les modifications connexes apportées à une base de données sont appliquées avec succès avant de valider toute modification.  Pour plus d'informations, consultez [Transactions et concurrence](../Topic/Transactions%20and%20Concurrency.md).  
-  
-#### Pour mettre à jour deux tables connexes à l'aide d'un TableAdapter  
-  
-1.  Créez trois tables de données temporaires qui contiendront les différents enregistrements.  
-  
-2.  Appelez la méthode `Update` pour chaque sous\-ensemble de lignes à partir d'un bloc `try`\/`catch`.  Si des erreurs de mise à jour se produisent, vous devez vous débrancher et les résoudre.  
-  
-3.  Validez les modifications apportées à la base de données.  
-  
-4.  Éliminez les tables de données temporaires pour libérer les ressources.  
-  
-     L'exemple suivant montre comment mettre à jour une source de données à l'aide d'un groupe de données contenant des tables connexes.  
-  
-     [!code-vb[VbRaddataSaving#27](../data-tools/codesnippet/VisualBasic/update-data-by-using-a-tableadapter_2.vb)]
-     [!code-cs[VbRaddataSaving#27](../data-tools/codesnippet/CSharp/update-data-by-using-a-tableadapter_2.cs)]  
-  
-## Voir aussi  
- [Vue d'ensemble de TableAdapter](../data-tools/tableadapter-overview.md)   
- [Procédures pas à pas relatives aux données](../Topic/Data%20Walkthroughs.md)   
- [Liaison de contrôles Windows Forms à des données dans Visual Studio](../data-tools/bind-windows-forms-controls-to-data-in-visual-studio.md)   
- [Connexion aux données dans Visual Studio](../data-tools/connecting-to-data-in-visual-studio.md)   
- [Préparation de votre application pour recevoir des données](../Topic/Preparing%20Your%20Application%20to%20Receive%20Data.md)   
- [Extraction de données dans votre application](../data-tools/fetching-data-into-your-application.md)   
- [Liaison de contrôles à des données dans Visual Studio](../data-tools/bind-controls-to-data-in-visual-studio.md)   
- [Modification des données dans votre application](../data-tools/editing-data-in-your-application.md)   
- [Validation des données](../Topic/Validating%20Data.md)   
- [Enregistrement des données](../data-tools/saving-data.md)
+## <a name="see-also"></a>See Also  
+ [Save data back to the database](../data-tools/save-data-back-to-the-database.md)

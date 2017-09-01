@@ -1,29 +1,35 @@
 ---
-title: "Accessibilit&#233; pour les personnes handicap&#233;es | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-general"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-helpviewer_keywords: 
-  - "accessibilité (Visual Studio)"
-  - "navigation (Visual Studio), accessibilité"
-  - "aides à la navigation (Visual Studio)"
+title: Accessibility for People with Disabilities | Microsoft Docs
+ms.custom: 
+ms.date: 08/22/2017
+ms.reviewer: 
+ms.suite: 
+ms.technology:
+- vs-ide-general
+ms.tgt_pltfrm: 
+ms.topic: article
+helpviewer_keywords:
+- navigation [Visual Studio], accessibility
+- navigation aids [Visual Studio]
+- accessibility [Visual Studio]
 ms.assetid: 6bbcfc31-edbe-4143-a703-fde023efbb62
-caps.latest.revision: 12
-author: "kempb"
-ms.author: "kempb"
-manager: "ghogen"
-caps.handback.revision: 12
----
-# Accessibilit&#233; pour les personnes handicap&#233;es
-[!INCLUDE[vs2017banner](../../code-quality/includes/vs2017banner.md)]
+author: kempb
+ms.author: tglee
+manager: ghogen
+ms.translationtype: HT
+ms.sourcegitcommit: 17defdd0b96ec1c3273fc6b845af844b031a4a17
+ms.openlocfilehash: f032b58bd5829aece1b69fd8a970dc5c92db494c
+ms.contentlocale: fr-fr
+ms.lasthandoff: 08/23/2017
 
-Microsoft s'engage à rendre ses produits et services plus faciles à utiliser pour tout le monde.  Les rubriques suivantes fournissent des informations sur les fonctionnalités, produits, et services qui rendent Microsoft [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] plus accessible aux personnes handicapées.  
-  
--   [Fonctionnalités d'accessibilité de Visual Studio](../../ide/reference/accessibility-features-of-visual-studio.md)  
-  
--   [Fonctionnalités d'accessibilité de la Visionneuse d'aide](../../ide/accessibility-features-of-the-help-viewer.md)
+---
+# <a name="accessibility-for-people-with-disabilities"></a>Accessibility for People with Disabilities
+> [!TIP]
+> To learn more about recent accessibility updates, see the [Accessibility improvements in Visual Studio 2017 version 15.3](https://blogs.msdn.microsoft.com/visualstudio/2017/08/14/accessibility-improvements-in-visual-studio-2017-version-15-3/) blog post.
+
+Microsoft is committed to making its products and services easier for everyone to use. The following topics provide information about the features, products, and services that make Microsoft [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] more accessible for people with disabilities.  
+
+-   [Accessibility Features of Visual Studio](../../ide/reference/accessibility-features-of-visual-studio.md)  
+
+-   [Accessibility Features of the Help Viewer](../../ide/accessibility-features-of-the-help-viewer.md)
+

@@ -1,5 +1,5 @@
 ---
-title: BP_RESOLUTION_INFO | Documents Microsoft
+title: BP_RESOLUTION_INFO | Microsoft Docs
 ms.custom: 
 ms.date: 11/04/2016
 ms.reviewer: 
@@ -30,18 +30,19 @@ translation.priority.mt:
 - tr-tr
 - zh-cn
 - zh-tw
-translationtype: Machine Translation
-ms.sourcegitcommit: 5db97d19b1b823388a465bba15d057b30ff0b3ce
-ms.openlocfilehash: 13b3138a376a711bbbac2a7b3080ef45593086b6
-ms.lasthandoff: 02/22/2017
+ms.translationtype: MT
+ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
+ms.openlocfilehash: 88d18b6262724e21602b87365d262c9422140abe
+ms.contentlocale: fr-fr
+ms.lasthandoff: 08/28/2017
 
 ---
 # <a name="bpresolutioninfo"></a>BP_RESOLUTION_INFO
-Décrit les informations de point d’arrêt lié pour un point d’arrêt de code ou un point d’arrêt.  
+Describes the bound breakpoint information for either a code breakpoint or a data breakpoint.  
   
-## <a name="syntax"></a>Syntaxe  
+## <a name="syntax"></a>Syntax  
   
-```cpp#  
+```cpp  
 typedef struct _BP_RESOLUTION_INFO {   
    BPRESI_FIELDS          dwFields;  
    BP_RESOLUTION_LOCATION bpResLocation;  
@@ -50,7 +51,7 @@ typedef struct _BP_RESOLUTION_INFO {
 } BP_RESOLUTION_INFO;  
 ```  
   
-```c#  
+```csharp  
 public struct BP_RESOLUTION_INFO {   
    public uint                   dwFields;  
    public BP_RESOLUTION_LOCATION bpResLocation;  
@@ -59,31 +60,31 @@ public struct BP_RESOLUTION_INFO {
 };  
 ```  
   
-## <a name="members"></a>Membres  
+## <a name="members"></a>Members  
  `dwFields`  
- Un ensemble d’indicateurs à partir de la [BPRESI_FIELDS](../../../extensibility/debugger/reference/bpresi-fields.md) énumérations qui spécifie quels champs sont remplies.  
+ A collection of flags from the [BPRESI_FIELDS](../../../extensibility/debugger/reference/bpresi-fields.md) enumerations that specifies which fields are filled out.  
   
  `bpResLocation`  
- Le [BP_RESOLUTION_LOCATION](../../../extensibility/debugger/reference/bp-resolution-location.md) structure qui spécifie l’emplacement du point d’arrêt dans le code ou de données.  
+ The [BP_RESOLUTION_LOCATION](../../../extensibility/debugger/reference/bp-resolution-location.md) structure that specifies the location of the breakpoint in code or data.  
   
  `pProgram`  
- Le [IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md) objet qui représente l’application dans laquelle l’erreur de point d’arrêt s’est produite.  
+ The [IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md) object that represents the application in which the breakpoint error occurred.  
   
  `pThread`  
- Le [IDebugThread2](../../../extensibility/debugger/reference/idebugthread2.md) objet qui représente le thread dans lequel l’application qui contient l’erreur de point d’arrêt est en cours d’exécution.  
+ The [IDebugThread2](../../../extensibility/debugger/reference/idebugthread2.md) object that represents the thread in which the application that contains the breakpoint error is running.  
   
-## <a name="remarks"></a>Remarques  
- Cette structure est retournée par [GetResolutionInfo](../../../extensibility/debugger/reference/idebugbreakpointresolution2-getresolutioninfo.md).  
+## <a name="remarks"></a>Remarks  
+ This structure is returned by [GetResolutionInfo](../../../extensibility/debugger/reference/idebugbreakpointresolution2-getresolutioninfo.md).  
   
-## <a name="requirements"></a>Spécifications  
- En-tête : msdbg.h  
+## <a name="requirements"></a>Requirements  
+ Header: msdbg.h  
   
- Namespace : Microsoft.VisualStudio.Debugger.Interop  
+ Namespace: Microsoft.VisualStudio.Debugger.Interop  
   
- Assembly : Microsoft.VisualStudio.Debugger.Interop.dll  
+ Assembly: Microsoft.VisualStudio.Debugger.Interop.dll  
   
-## <a name="see-also"></a>Voir aussi  
- [Structures et Unions](../../../extensibility/debugger/reference/structures-and-unions.md)   
+## <a name="see-also"></a>See Also  
+ [Structures and Unions](../../../extensibility/debugger/reference/structures-and-unions.md)   
  [GetResolutionInfo](../../../extensibility/debugger/reference/idebugbreakpointresolution2-getresolutioninfo.md)   
  [BPRESI_FIELDS](../../../extensibility/debugger/reference/bpresi-fields.md)   
  [BP_RESOLUTION_LOCATION](../../../extensibility/debugger/reference/bp-resolution-location.md)   

@@ -1,5 +1,5 @@
 ---
-title: IDebugProperty3::GetCustomViewerCount | Documents Microsoft
+title: IDebugProperty3::GetCustomViewerCount | Microsoft Docs
 ms.custom: 
 ms.date: 11/04/2016
 ms.reviewer: 
@@ -30,16 +30,17 @@ translation.priority.mt:
 - tr-tr
 - zh-cn
 - zh-tw
-translationtype: Machine Translation
-ms.sourcegitcommit: 5db97d19b1b823388a465bba15d057b30ff0b3ce
-ms.openlocfilehash: 63d1f0b76a271d1196af50d969d5421799c495a6
-ms.lasthandoff: 02/22/2017
+ms.translationtype: MT
+ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
+ms.openlocfilehash: 0f12ca75de3c06be7d3c362cc1dc91c16932c8a2
+ms.contentlocale: fr-fr
+ms.lasthandoff: 08/28/2017
 
 ---
 # <a name="idebugproperty3getcustomviewercount"></a>IDebugProperty3::GetCustomViewerCount
-Obtient le nombre de visionneuses personnalisées qui peuvent être disponibles pour cette propriété.  
+Gets the number of custom viewers that might be available for this property.  
   
-## <a name="syntax"></a>Syntaxe  
+## <a name="syntax"></a>Syntax  
   
 ```cpp  
 HRESULT GetCustomViewerCount(  
@@ -47,28 +48,28 @@ HRESULT GetCustomViewerCount(
 );  
 ```  
   
-```c#  
+```csharp  
 int GetCustomViewerCount(  
    out uint pcelt  
 );  
 ```  
   
-#### <a name="parameters"></a>Paramètres  
+#### <a name="parameters"></a>Parameters  
  `pcelt`  
- [out] Le nombre de visionneuses personnalisées disponibles pour cette propriété.  
+ [out] The number of custom viewers available for this property.  
   
-## <a name="return-value"></a>Valeur de retour  
- En cas de réussite, retourne `S_OK`; sinon, retourne un code d’erreur.  
+## <a name="return-value"></a>Return Value  
+ If successful, returns `S_OK`; otherwise, returns an error code.  
   
-## <a name="remarks"></a>Notes  
- Pour prendre en charge les visualiseurs de type, cette méthode transfère l’appel à la [GetCustomViewerCount](../../../extensibility/debugger/reference/ieevisualizerservice-getcustomviewercount.md) (méthode). Si l’évaluateur d’expression prend également en charge les visionneuses personnalisées pour ce type de propriété, cette méthode ajoute le nombre de visionneuses personnalisées à la valeur retournée.  
+## <a name="remarks"></a>Remarks  
+ In order to support type visualizers, this method forwards the call to the [GetCustomViewerCount](../../../extensibility/debugger/reference/ieevisualizerservice-getcustomviewercount.md) method. If the expression evaluator also supports custom viewers for this property's type, this method adds the number of custom viewers to the returned value.  
   
- Pour plus d’informations sur les différences entre les visualiseurs de type et les visionneuses personnalisées, consultez [visualiseur de Type et de la visionneuse personnalisée](../../../extensibility/debugger/type-visualizer-and-custom-viewer.md).  
+ For detailed information about the differences between type visualizers and custom viewers, see [Type Visualizer and Custom Viewer](../../../extensibility/debugger/type-visualizer-and-custom-viewer.md).  
   
-## <a name="example"></a>Exemple  
- L’exemple suivant montre comment implémenter cette méthode pour un **CProperty** objet qui expose les [IDebugProperty3](../../../extensibility/debugger/reference/idebugproperty3.md) interface.  
+## <a name="example"></a>Example  
+ The following example shows how to implement this method for a **CProperty** object that exposes the [IDebugProperty3](../../../extensibility/debugger/reference/idebugproperty3.md) interface.  
   
-```cpp#  
+```cpp  
 STDMETHODIMP CProperty::GetCustomViewerCount(ULONG* pcelt)  
 {  
     if (pcelt == NULL)  
@@ -87,7 +88,7 @@ STDMETHODIMP CProperty::GetCustomViewerCount(ULONG* pcelt)
 }  
 ```  
   
-## <a name="see-also"></a>Voir aussi  
+## <a name="see-also"></a>See Also  
  [IDebugProperty3](../../../extensibility/debugger/reference/idebugproperty3.md)   
  [GetCustomViewerCount](../../../extensibility/debugger/reference/ieevisualizerservice-getcustomviewercount.md)   
- [Visualiseur de type et de la visionneuse personnalisée](../../../extensibility/debugger/type-visualizer-and-custom-viewer.md)
+ [Type Visualizer and Custom Viewer](../../../extensibility/debugger/type-visualizer-and-custom-viewer.md)

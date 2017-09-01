@@ -1,63 +1,79 @@
 ---
-title: "CA2122 : N&#39;exposez pas indirectement des m&#233;thodes avec des demandes de liaison | Microsoft Docs"
-ms.custom: ""
-ms.date: "12/15/2016"
-ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-devops-test"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "CA2122"
-  - "DoNotIndirectlyExposeMethodsWithLinkDemands"
-helpviewer_keywords: 
-  - "CA2122"
-  - "DoNotIndirectlyExposeMethodsWithLinkDemands"
+title: 'CA2122: Do not indirectly expose methods with link demands | Microsoft Docs'
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology:
+- vs-devops-test
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords:
+- CA2122
+- DoNotIndirectlyExposeMethodsWithLinkDemands
+helpviewer_keywords:
+- DoNotIndirectlyExposeMethodsWithLinkDemands
+- CA2122
 ms.assetid: 3eda58e7-c6ec-41c3-8112-ae0841109c6a
 caps.latest.revision: 17
-caps.handback.revision: 17
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
----
-# CA2122 : N&#39;exposez pas indirectement des m&#233;thodes avec des demandes de liaison
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
+author: stevehoag
+ms.author: shoag
+manager: wpickett
+translation.priority.ht:
+- cs-cz
+- de-de
+- es-es
+- fr-fr
+- it-it
+- ja-jp
+- ko-kr
+- pl-pl
+- pt-br
+- ru-ru
+- tr-tr
+- zh-cn
+- zh-tw
+ms.translationtype: HT
+ms.sourcegitcommit: eb5c9550fd29b0e98bf63a7240737da4f13f3249
+ms.openlocfilehash: 9996d217691c9a21701c1f6f36e7ced8f605efe0
+ms.contentlocale: fr-fr
+ms.lasthandoff: 08/30/2017
 
+---
+# <a name="ca2122-do-not-indirectly-expose-methods-with-link-demands"></a>CA2122: Do not indirectly expose methods with link demands
 |||  
 |-|-|  
 |TypeName|DoNotIndirectlyExposeMethodsWithLinkDemands|  
 |CheckId|CA2122|  
-|Catégorie|Microsoft.Security|  
-|Modification avec rupture|Modification sans rupture|  
+|Category|Microsoft.Security|  
+|Breaking Change|Non Breaking|  
   
-## Cause  
- Un membre public ou protégé présente un [Demandes de liaison](../Topic/Link%20Demands.md) et est appelé par un membre qui ne procède à aucune vérification de la sécurité.  
+## <a name="cause"></a>Cause  
+ A public or protected member has a [Link Demands](/dotnet/framework/misc/link-demands) and is called by a member that does not perform any security checks.  
   
-## Description de la règle  
- Une demande de liaison vérifie uniquement les autorisations de l'appelant immédiat.  Si un membre `X` n'effectue aucune des demandes de sécurité de ses appelants, et appelle un code protégé par une demande de liaison, un appelant dépourvu de l'autorisation nécessaire peut utiliser `X` pour accéder au membre protégé.  
+## <a name="rule-description"></a>Rule Description  
+ A link demand checks the permissions of the immediate caller only. If a member `X` makes no security demands of its callers, and calls code protected by a link demand, a caller without the necessary permission can use `X` to access the protected member.  
   
-## Comment corriger les violations  
- Ajoutez une [Données et modélisation](../Topic/Data%20and%20Modeling%20in%20the%20.NET%20Framework.md) de sécurité ou une demande de liaison au membre afin qu'il ne fournisse plus d'accès non sécurisé au membre protégé par demande de liaison.  
+## <a name="how-to-fix-violations"></a>How to Fix Violations  
+ Add a security [Data and Modeling](/dotnet/framework/data/index) or link demand to the member so that it no longer provides unsecured access to the link demand-protected member.  
   
-## Quand supprimer les avertissements  
- Pour supprimer sans risque un avertissement de cette règle, vous devez vous assurer que votre code ne donne aux appelants aucun accès à des opérations ou des ressources susceptibles d'être utilisées de façon néfaste.  
+## <a name="when-to-suppress-warnings"></a>When to Suppress Warnings  
+ To safely suppress a warning from this rule, you must make sure that your code does not grant its callers access to operations or resources that can be used in a destructive manner.  
   
-## Exemple  
- Les exemples suivants présentent une bibliothèque qui viole la règle, et une application qui montre la faiblesse de la bibliothèque.  La bibliothèque exemple fournit deux méthodes qui, ensemble, violent la règle.  La méthode `EnvironmentSetting` est sécurisée par une demande de liaison pour un accès illimité aux variables d'environnement.  La méthode `DomainInformation` n'effectue aucune des demandes de sécurité de ses appelants avant d'appeler `EnvironmentSetting`.  
+## <a name="example"></a>Example  
+ The following examples show a library that violates the rule, and an application that demonstrates the library's weakness. The sample library provides two methods that together violate the rule. The `EnvironmentSetting` method is secured by a link demand for unrestricted access to environment variables. The `DomainInformation` method makes no security demands of its callers before it calls `EnvironmentSetting`.  
   
- [!code-cs[FxCop.Security.UnsecuredDoNotCall#1](../code-quality/codesnippet/CSharp/ca2122-do-not-indirectly-expose-methods-with-link-demands_1.cs)]  
+ [!code-csharp[FxCop.Security.UnsecuredDoNotCall#1](../code-quality/codesnippet/CSharp/ca2122-do-not-indirectly-expose-methods-with-link-demands_1.cs)]  
   
-## Exemple  
- L'application suivante appelle le membre de bibliothèque non sécurisé.  
+## <a name="example"></a>Example  
+ The following application calls the unsecured library member.  
   
- [!code-cs[FxCop.Security.TestUnsecuredDoNot1#1](../code-quality/codesnippet/CSharp/ca2122-do-not-indirectly-expose-methods-with-link-demands_2.cs)]  
+ [!code-csharp[FxCop.Security.TestUnsecuredDoNot1#1](../code-quality/codesnippet/CSharp/ca2122-do-not-indirectly-expose-methods-with-link-demands_2.cs)]  
   
- Cet exemple génère la sortie suivante.  
+ This example produces the following output.  
   
-  **Valeur de membre sans garantie : seattle.corp.contoso.com**   
-## Voir aussi  
- [Instructions de codage sécurisé](../Topic/Secure%20Coding%20Guidelines.md)   
- [Demandes de liaison](../Topic/Link%20Demands.md)   
- [Données et modélisation](../Topic/Data%20and%20Modeling%20in%20the%20.NET%20Framework.md)
+ **Value from unsecured member: seattle.corp.contoso.com**   
+## <a name="see-also"></a>See Also  
+ [Secure Coding Guidelines](/dotnet/standard/security/secure-coding-guidelines)   
+ [Link Demands](/dotnet/framework/misc/link-demands)   
+ [Data and Modeling](/dotnet/framework/data/index)
