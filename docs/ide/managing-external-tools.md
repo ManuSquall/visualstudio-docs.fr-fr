@@ -82,12 +82,10 @@ ms.contentlocale: fr-fr
 ms.lasthandoff: 05/24/2017
 
 ---
-# Gérer les outils externes
-<a id="manage-external-tools" class="xliff"></a>
+# <a name="manage-external-tools"></a>Gérer les outils externes
 Vous pouvez appeler des outils externes depuis Visual Studio en utilisant le menu **Outils**. Certains outils par défaut sont disponibles dans le menu **Outils**, mais vous pouvez ajouter vos propres exécutables.  
 
-## Outils disponibles dans le menu Outils de Visual Studio
-<a id="tools-available-on-the-visual-studio-tools-menu" class="xliff"></a>
+## <a name="tools-available-on-the-visual-studio-tools-menu"></a>Outils disponibles dans le menu Outils de Visual Studio
  Le menu **Outils** contient plusieurs commandes prédéfinies comme :
 
 *  **Extensions et mises à jour** pour [gérer les extensions Visual Studio](finding-and-using-visual-studio-extensions.md)
@@ -96,8 +94,7 @@ Vous pouvez appeler des outils externes depuis Visual Studio en utilisant le men
 *  **Personnaliser...** pour [personnaliser les menus et les barres d’outils](how-to-customize-menus-and-toolbars-in-visual-studio.md)
 *  **Options...** pour [définir différentes options de l’IDE Visual Studio et d’autres outils](reference/options-dialog-box-visual-studio.md)
 
-## Ajouter de nouveaux outils au menu Outils
-<a id="add-new-tools-to-the-tools-menu" class="xliff"></a> 
+## <a name="add-new-tools-to-the-tools-menu"></a>Ajouter de nouveaux outils au menu Outils 
  Vous pouvez ajouter un outil externe au menu **Outils**. Ouvrez la boîte de dialogue **Outils externes...**, cliquez sur **Ajouter** puis entrez les informations. Par exemple, l'entrée suivante peut provoquer l'ouverture de l'Explorateur Windows dans le répertoire du fichier qui est actuellement ouvert dans Visual Studio :  
   
 1.  Titre : *Ouvrir l’emplacement du fichier*
@@ -130,7 +127,6 @@ Vous pouvez appeler des outils externes depuis Visual Studio en utilisant le men
 |Répertoire de la solution|$(SolutionDir)|Répertoire de la solution active (lecteur + chemin d'accès).|  
 |Nom du fichier solution|$(SolutionFileName)|Nom de fichier de la solution active (lecteur + chemin d’accès + nom de fichier).|  
 
-## Voir aussi
-<a id="see-also" class="xliff"></a>  
+## <a name="see-also"></a>Voir aussi  
  [Outils de génération C/C++](/cpp/build/reference/c-cpp-build-tools)
 

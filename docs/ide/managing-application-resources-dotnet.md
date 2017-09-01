@@ -48,16 +48,14 @@ ms.contentlocale: fr-fr
 ms.lasthandoff: 05/30/2017
 
 ---
-# Gestion des ressources d'une application (.NET)
-<a id="managing-application-resources-net" class="xliff"></a>
+# <a name="managing-application-resources-net"></a>Gestion des ressources d'une application (.NET)
 Les fichiers de ressources sont des fichiers qui font partie d’une application, mais qui ne sont pas compilés, par exemple, des fichiers icône ou des fichiers audio. Comme ces fichiers ne font pas partie du processus de compilation, vous pouvez les modifier sans avoir à recompiler vos fichiers binaires. Si vous envisagez de localiser votre application, vous devez utiliser des fichiers de ressources pour toutes les chaînes et autres ressources qui doivent être modifiées quand vous localisez votre application.  
   
  Pour plus d’informations sur les ressources des applications de bureau .NET, consultez [Ressources dans des applications de bureau](/dotnet/framework/resources/index). Pour plus d’informations sur les ressources des applications de bureau C++, consultez [Working with Resource Files](/cpp/windows/working-with-resource-files).  
   
  Les applications du Windows Store utilisent un autre modèle de ressources que celui des applications de bureau. Pour plus d’informations sur les ressources des applications du Windows Store, consultez [Définition des ressources d’applications](https://msdn.microsoft.com/en-us/library/windows/apps/hh465228.aspx) sur le site web du le centre de développement Windows.  
   
-## Utilisation de ressources
-<a id="working-with-resources" class="xliff"></a>  
+## <a name="working-with-resources"></a>Utilisation de ressources  
  Dans un projet de code managé, ouvrez la fenêtre des propriétés du projet (cliquez avec le bouton droit sur le nœud de projet dans l’ **Explorateur de solutions** et sélectionnez **Propriétés**ou tapez **propriétés de projet** dans la fenêtre **Lancement rapide** , ou tapez Alt+ENTRÉE dans la fenêtre de l’ **Explorateur de solutions** ). Sélectionnez l’onglet **Ressources** . Vous pouvez ajouter un fichier .resx si votre projet n’en contient pas déjà un, ajouter et supprimer différents types de ressources, et modifier des ressources existantes.  
   
  Pour en savoir plus sur l’utilisation des ressources dans les projets C++, consultez [Guide pratique pour créer une ressource](/cpp/windows/how-to-create-a-resource).

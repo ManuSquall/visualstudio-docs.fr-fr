@@ -43,12 +43,10 @@ ms.contentlocale: fr-fr
 ms.lasthandoff: 06/23/2017
 
 ---
-# Comment : créer et supprimer les dépendances d'un projet
-<a id="how-to-create-and-remove-project-dependencies" class="xliff"></a>
+# <a name="how-to-create-and-remove-project-dependencies"></a>Comment : créer et supprimer les dépendances d'un projet
 Quand vous générez une solution qui contient plusieurs projets, vous pouvez être amené à générer d’abord certains projets pour générer le code utilisé par les autres projets. Quand un projet utilise un code exécutable généré par un autre projet, le projet qui génère le code une dépendance du projet qui utilise le code. Vous pouvez définir ces relations de dépendance dans la boîte de dialogue **Dépendances du projet**.  
 
-### Pour assigner des dépendances à des projets
-<a id="to-assign-dependencies-to-projects" class="xliff"></a>  
+### <a name="to-assign-dependencies-to-projects"></a>Pour assigner des dépendances à des projets  
 
 1.  Dans l'Explorateur de solutions, sélectionnez un projet.  
 
@@ -65,8 +63,7 @@ Quand vous générez une solution qui contient plusieurs projets, vous pouvez ê
 
  Votre solution doit comporter plusieurs projets pour que vous puissiez créer des dépendances du projet.  
 
-### Pour supprimer des dépendances de projets
-<a id="to-remove-dependencies-from-projects" class="xliff"></a>  
+### <a name="to-remove-dependencies-from-projects"></a>Pour supprimer des dépendances de projets  
 
 1.  Dans l'Explorateur de solutions, sélectionnez un projet.  
 
@@ -81,8 +78,7 @@ Quand vous générez une solution qui contient plusieurs projets, vous pouvez ê
 
 4.  Dans le champ **Dépend de**, décochez la case en regard de tout autre projet qui n’est plus une dépendance de ce projet.  
 
-## Voir aussi
-<a id="see-also" class="xliff"></a>  
+## <a name="see-also"></a>Voir aussi  
  [Génération et nettoyage de solutions et de projets dans Visual Studio](../ide/building-and-cleaning-projects-and-solutions-in-visual-studio.md)   
  [Compilation et génération](../ide/compiling-and-building-in-visual-studio.md)   
  [Présentation des configurations de build](../ide/understanding-build-configurations.md)   

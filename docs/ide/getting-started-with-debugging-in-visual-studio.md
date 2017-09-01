@@ -47,15 +47,15 @@ Visual Studio intègre un ensemble puissant d’outils de génération et de dé
 
  La configuration de build par défaut est **Debug**.  
 
- ![Bouton de version Debug Visual Studio](~/ide/media/vs_ide_gs_debug_build_type1.PNG "Vs_ide_gs_debug_build_type1")  
+ ![Bouton de version Debug Visual Studio](../ide/media/vs_ide_gs_debug_build_type1.PNG "Vs_ide_gs_debug_build_type1")  
 
  Vous pouvez également cibler une plateforme de génération spécifique, telle que **x86** (processeurs Intel 32 bits), **x64** (processeurs Intel 64 bits) et **ARM** (processeurs ARM uniquement pris en charge pour certains types d’applications). La valeur par défaut est **x86** pour les projets managés et natifs. Pour modifier cette valeur, cliquez sur la liste déroulante Plateforme de génération, puis sélectionnez une autre plateforme ou **Gestionnaire de configurations...**  
 
- ![Fenêtre Gestionnaire de fichiers de configuration Visual Studio](~/ide/media/vs_ide_gs_debug_build_cf_mgr.PNG "Vs_ide_gs_debug_build_cf_mgr")  
+ ![Fenêtre Gestionnaire de fichiers de configuration Visual Studio](../ide/media/vs_ide_gs_debug_build_cf_mgr.PNG "Vs_ide_gs_debug_build_cf_mgr")  
 
  Vous pouvez spécifier une configuration de build ciblée à l’aide du **Gestionnaire de configurations**. Pour cela, lancez-le, cliquez sur la liste déroulante **Configuration** ou **UC**, puis sélectionnez **Nouveau...** pour créer une build ou une plateforme.  
 
- ![Fenêtre Gestionnaire de configurations Visual Studio](~/ide/media/vs_ide_gs_debug_build_cf_mgr_2.PNG "Vs_ide_gs_debug_build_cf_mgr_2")  
+ ![Fenêtre Gestionnaire de configurations Visual Studio](../ide/media/vs_ide_gs_debug_build_cf_mgr_2.PNG "Vs_ide_gs_debug_build_cf_mgr_2")  
 
  Pour commencer, utilisez simplement **Debug** comme configuration de build et **x86** comme plateforme. Une fois le codage et le débogage terminés, passez à la configuration **Release** et ciblez une plateforme spécifique. (Les anciennes versions de Visual Studio proposent une plateforme par défaut **AnyCPU** pour les projets de code .Net.)  
 
@@ -64,7 +64,7 @@ Visual Studio intègre un ensemble puissant d’outils de génération et de dé
 ### <a name="building-your-code"></a>Génération de code  
  Une fois votre build configurée, il est temps de passer à la génération de votre projet. Le moyen le plus simple consiste à appuyer sur F7, mais vous pouvez aussi démarrer la build en sélectionnant **Générer->Générer la solution** dans le menu principal.  
 
- ![Sélection du menu de génération du projet Visual Studio](~/ide/media/vs_ide_gs_debug_build_menu_item.png "Vs_ide_gs_debug_build_menu_item")  
+ ![Sélection du menu de génération du projet Visual Studio](../ide/media/vs_ide_gs_debug_build_menu_item.png "Vs_ide_gs_debug_build_menu_item")  
 
  Vous pouvez observer le processus de génération dans la fenêtre d’état **Sortie** située dans la partie inférieure de l’interface utilisateur de Visual Studio. Les erreurs, avertissements et opérations de génération sont affichés ici. En cas d'erreurs (ou si vous recevez des avertissements au-delà d'un niveau configuré), votre build échoue. Vous pouvez cliquer sur une erreur ou sur un avertissement pour accéder à la ligne à l'origine du problème. Régénérez votre projet. Pour cela, appuyez sur **F7** (pour recompiler uniquement les fichiers avec des erreurs) ou sur **Ctrl+Alt+F7** (pour une nouvelle régénération complète).  
 
@@ -72,33 +72,33 @@ Visual Studio intègre un ensemble puissant d’outils de génération et de dé
 
  En cas de réussite, des résultats semblable à ceux-ci apparaissent dans la fenêtre **Sortie**.  
 
- ![Sortie de génération réussie Visual Studio](~/ide/media/vs_ide_gs_debug_success_build.PNG "vs_ide_gs_debug_success_build")  
+ ![Sortie de génération réussie Visual Studio](../ide/media/vs_ide_gs_debug_success_build.PNG "vs_ide_gs_debug_success_build")  
 
 ### <a name="reviewing-the-error-list"></a>Revue de la liste d’erreurs  
  À moins que vous n’ayez apporté aucune modification au code précédemment compilé avec succès, une erreur s’est probablement produite. Si vous codez depuis peu, il y en a peut-être beaucoup. Si certains erreurs sont évidentes, comme une simple erreur de syntaxe ou un nom de variable incorrect, d'autres sont parfois plus ardues à comprendre. Et ce n'est pas le code obscur associé à celles-ci qui va davatange vous aider. Pour obtenir une vue plus conviviale des problèmes, accédez à la partie inférieure de la fenêtre **Sortie** de la build, puis cliquez sur l’onglet **Liste d’erreurs**. Vous disposez non seulement d'une vue mieux organisée des erreurs et des avertissements liés à votre projet, mais aussi d'options supplémentaires.  
 
- ![Liste d’erreurs et sortie de Visual Studio](~/ide/media/vs_ide_gs_debug_bad_build_error_list.PNG "Vs_ide_gs_debug_bad_build_error_list")  
+ ![Liste d’erreurs et sortie de Visual Studio](../ide/media/vs_ide_gs_debug_bad_build_error_list.PNG "Vs_ide_gs_debug_bad_build_error_list")  
 
  Cliquez sur la ligne d’erreur dans la fenêtre **Liste d’erreurs** pour accéder directement à la ligne à l’origine de l’erreur. (Vous pouvez aussi activer les numéros de ligne en cliquant dans la barre **Lancement rapide** située dans l’angle supérieur droit, en tapant « numéros de ligne » dans celle-ci, puis en appuyant sur Entrée. C’est le moyen le plus rapide d’arriver à l’entrée de la fenêtre **Options** qui vous permet d’activer les numéros de ligne. En vous familiarisant avec la barre **Lancement rapide**, vous économiserez un grand nombre de clics dans l’interface utilisateur !)  
 
- ![Éditeur Visual Studio avec des numéros de ligne](~/ide/media/vs_ide_gs_debug_line_numbers.png "Vs_ide_gs_debug_line_numbers")  
+ ![Éditeur Visual Studio avec des numéros de ligne](../ide/media/vs_ide_gs_debug_line_numbers.png "Vs_ide_gs_debug_line_numbers")  
 
- ![Option des numéros de ligne Visual Studio](~/ide/media/vs_ide_gs_debug_options_line_numbers.png "Vs_ide_gs_debug_options_line_numbers")  
+ ![Option des numéros de ligne Visual Studio](../ide/media/vs_ide_gs_debug_options_line_numbers.png "Vs_ide_gs_debug_options_line_numbers")  
 
  Utilisez Ctrl+G pour accéder rapidement au numéro de ligne où l’erreur s’est produite.  
 
  L’erreur est identifiée par un trait de soulignement rouge ondulé. Pointez dessus pour obtenir plus d'informations. Apportez la correction nécessaire pour faire disparaître ce trait. Notez toutefois que vous risquez d'introduire une nouvelle erreur. (Cela s’appelle une « régression ».)  
 
- ![Pointage d’erreur Visual Studio](~/ide/media/vs_ide_gs_debug_error_hover1.png "Vs_ide_gs_debug_error_hover1")  
+ ![Pointage d’erreur Visual Studio](../ide/media/vs_ide_gs_debug_error_hover1.png "Vs_ide_gs_debug_error_hover1")  
 
  Passez en revue la liste d'erreurs et corrigez toutes les erreurs dans votre code.  
 
- ![Fenêtre d’erreurs de débogage Visual Studio](~/ide/media/vs_ide_gs_debug_error_list.PNG "Vs_ide_gs_debug_error_list")  
+ ![Fenêtre d’erreurs de débogage Visual Studio](../ide/media/vs_ide_gs_debug_error_list.PNG "Vs_ide_gs_debug_error_list")  
 
 ### <a name="reviewing-errors-in-detail"></a>Revue des erreurs en détail  
  De nombreuses erreurs, exprimées selon les termes du compilateur, peuvent vous paraître incompréhensibles. Dans ces cas-là, vous avez besoin d'informations supplémentaires. La fenêtre **Liste d’erreurs** vous permet de lancer une recherche automatique dans Bing pour obtenir plus d’informations sur l’erreur (ou l’avertissement). Pour cela, cliquez avec le bouton droit sur la ligne d’entrée correspondante, puis sélectionnez **Afficher l’aide sur l’erreur** dans le menu contextuel.  
 
- ![Recherche Bing de liste d’erreurs Visual Studio](~/ide/media/vs_ide_gs_debug_error_list_error_help.png "Vs_ide_gs_debug_error_list_error_help")  
+ ![Recherche Bing de liste d’erreurs Visual Studio](../ide/media/vs_ide_gs_debug_error_list_error_help.png "Vs_ide_gs_debug_error_list_error_help")  
 
  Cette opération lance un onglet dans Visual Studio qui présente les résultats d’une recherche Bing portant sur le code et le texte de l’erreur. Les résultats provenant de sources diverses sur Internet, certains peuvent s'avérer inutiles.  
 
@@ -109,28 +109,28 @@ Visual Studio intègre un ensemble puissant d’outils de génération et de dé
 
  Appuyez sur Alt+F11 (ou sélectionnez **Analyze->Exécuter l’analyse du code sur la solution** dans le menu supérieur) pour démarrer l’analyse statique du code. Si vous avez beaucoup de code, cette opération peut prendre du temps.  
 
- ![Élément de menu Analyse du code dans Visual Studio](~/ide/media/vs_ide_gs_debug_run_code_analysis.png "Vs_ide_gs_debug_run_code_analysis")  
+ ![Élément de menu Analyse du code dans Visual Studio](../ide/media/vs_ide_gs_debug_run_code_analysis.png "Vs_ide_gs_debug_run_code_analysis")  
 
  Les nouveaux avertissements et ceux mis à jour sont recensés sous l’onglet **Liste d’erreurs** dans la partie inférieure de l’IDE. Cliquez sur les avertissements pour y accéder.  
 
- ![Liste d’erreurs Visual Studio avec des avertissements](~/ide/media/vs_ide_gs_debug_code_analysis_warning_error_list.PNG "vs_ide_gs_debug_code_analysis_warning_error_list")  
+ ![Liste d’erreurs Visual Studio avec des avertissements](../ide/media/vs_ide_gs_debug_code_analysis_warning_error_list.PNG "vs_ide_gs_debug_code_analysis_warning_error_list")  
 
  Les avertissements sont identifiés par un trait de soulignement jaune-vert ondulé (s'il est de couleur rouge, il désigne une erreur). Vous pouvez pointer sur ce trait pour afficher plus de détails ou cliquer dessus avec le bouton droit pour accéder à un menu contextuel proposant de l'aide sur les corrections ou les options de refactorisation.  
 
- ![Pointage de l’avertissement dans Analyse du code de Visual Studio](~/ide/media/vs_ide_gs_debug_code_analysis_warning_hover.png "vs_ide_gs_debug_code_analysis_warning_hover")  
+ ![Pointage de l’avertissement dans Analyse du code de Visual Studio](../ide/media/vs_ide_gs_debug_code_analysis_warning_hover.png "vs_ide_gs_debug_code_analysis_warning_hover")  
 
 ### <a name="using-light-bulbs-to-fix-or-refactor-code"></a>Utilisation des ampoules pour corriger ou refactoriser du code  
  Les ampoules sont une nouvelle fonctionnalité de Visual Studio qui vous permettent de refactoriser le code en mode inline. Grâce aux ampoules, vous pouvez facilement et rapidement résoudre les avertissements courants. Pour y accéder, cliquez sur le trait de soulignement ondulé d’un avertissement (ou appuyez sur Ctrl+. tout en pointant sur le trait de soulignement ondulé), puis sélectionnez **Actions rapide**.  
 
- ![Options rapides d’ampoule dans Visual Studio](~/ide/media/vs_ide_gs_debug_light_bulb1.png "Vs_ide_gs_debug_light_bulb1")  
+ ![Options rapides d’ampoule dans Visual Studio](../ide/media/vs_ide_gs_debug_light_bulb1.png "Vs_ide_gs_debug_light_bulb1")  
 
  La liste des corrections ou des refactorisations que vous pouvez appliquer à cette ligne de code s'affiche.  
 
- ![Aperçu d’ampoule dans Visual Studio](~/ide/media/vs_ide_gs_debug_light_bulb_preview_changes.PNG "Vs_ide_gs_debug_light_bulb_preview_changes")  
+ ![Aperçu d’ampoule dans Visual Studio](../ide/media/vs_ide_gs_debug_light_bulb_preview_changes.PNG "Vs_ide_gs_debug_light_bulb_preview_changes")  
 
  Vous pouvez utiliser les ampoules chaque fois que les analyseurs de code déterminent que votre code peut être corrigé, refactorisé ou amélioré. Cliquez sur n’importe quelle ligne de code, cliquez avec le bouton droit pour ouvrir le menu contextuel , puis sélectionnez **Options rapide** (ou, pour aller plus vite, appuyez sur Ctrl+.). Si des options de refactorisation ou d’amélioration sont disponibles, elles sont affichées ; dans le cas contraire, le message `No quick options available here` apparaît dans le cadre de l’angle inférieur gauche de l’IDE.  
 
- ![Texte « aucune option » d’ampoule Visual Studio](~/ide/media/vs_ide_gs_debug_light_bulb_no_options.PNG "Vs_ide_gs_debug_light_bulb_no_options")  
+ ![Texte « aucune option » d’ampoule Visual Studio](../ide/media/vs_ide_gs_debug_light_bulb_no_options.PNG "Vs_ide_gs_debug_light_bulb_no_options")  
 
  Si vous êtes plus expérimenté, vous pouvez utiliser les touches de direction et Ctrl+. pour vérifier rapidement les opportunités de refactorisation des options rapides et nettoyer votre code.  
 
@@ -139,15 +139,15 @@ Visual Studio intègre un ensemble puissant d’outils de génération et de dé
 ### <a name="debugging-your-running-code"></a>Débogage de votre code en cours d'exécution  
  Après avoir généré votre code et procédé à quelques tâches de nettoyage, exécutez-le en appuyant sur F5 ou en sélectionnant **Déboguer->Démarrer le débogage**. Votre application démarre dans un environnement de débogage dans lequel vous pouvez observer son comportement en détail. Pendant l’exécution de votre application, l’IDE de Visual Studio subit des modifications. Ainsi, la fenêtre **Sortie** est remplacée par deux nouvelles fenêtres (dans la configuration des fenêtres par défaut) : une fenêtre avec les onglets **Automatique/Variables locales/Modules/Espion** et une autre avec les onglets **Pile des appels/Points d’arrêt/Paramètres d’exception/Sortie**. Ces fenêtres à onglets vous permettent d’inspecter et d’évaluer les variables, threads, piles d’appels et autres comportements de votre application à mesure qu’elle s’exécute.  
 
- ![Fenêtres Automatique et Pile des appels de Visual Studio](~/ide/media/vs_ide_gs_debug_autos_and_call_stack.PNG "Vs_ide_gs_debug_autos_and_call_stack")  
+ ![Fenêtres Automatique et Pile des appels de Visual Studio](../ide/media/vs_ide_gs_debug_autos_and_call_stack.PNG "Vs_ide_gs_debug_autos_and_call_stack")  
 
  Essayez différentes actions avec votre application et observez les changements qui se produisent. Si quelque chose vous semble anormale, interrompez l’application en appuyant sur Ctrl + Alt + Attn (ou cliquez sur le bouton **Pause**).  
 
- ![Bouton Interrompre tout Visual Studio](~/ide/media/vs_ide_gs_debug_break_all_button.png "vs_ide_gs_debug_break_all_button")  
+ ![Bouton Interrompre tout Visual Studio](../ide/media/vs_ide_gs_debug_break_all_button.png "vs_ide_gs_debug_break_all_button")  
 
  Appuyez sur F5 pour continuer l’exécution de l’application (ou cliquez sur le bouton **Continuer**).  
 
- ![Bouton de poursuite du débogage Visual Studio](~/ide/media/vs_ide_gs_debug_continue_button.png "Vs_ide_gs_debug_continue_button")  
+ ![Bouton de poursuite du débogage Visual Studio](../ide/media/vs_ide_gs_debug_continue_button.png "Vs_ide_gs_debug_continue_button")  
 
  Vous pouvez arrêter votre application en appuyant sur Maj + F5 ou en cliquant sur le bouton **Arrêter**. Vous pouvez aussi simplement fermer la fenêtre principale de l’application (ou la boîte de dialogue de la ligne de commande).  
 
@@ -158,7 +158,7 @@ Visual Studio intègre un ensemble puissant d’outils de génération et de dé
 
  Pour définir un point d’arrêt, cliquez à l’extrémité de la marge de la ligne où vous souhaitez arrêter le code, ou sélectionnez la ligne de code et appuyez sur F9. Quand vous exécutez votre code, celui-ci s'arrête avant d'exécuter les instructions contenues dans cette ligne de code.  
 
- ![Point d’arrêt Visual Studio](~/ide/media/vs_ide_gs_debug_breakpoint1.png "Vs_ide_gs_debug_breakpoint1")  
+ ![Point d’arrêt Visual Studio](../ide/media/vs_ide_gs_debug_breakpoint1.png "Vs_ide_gs_debug_breakpoint1")  
 
  Quand le code s'arrête, la ligne de code indiquée n'est pas encore exécutée. À ce stade, vous pouvez exécuter les instructions de la ligne de code indiquée par le point d'arrêt et inspecter les valeurs modifiées. C’est ce qui s’appelle « effectuer un pas à pas détaillé » dans le code. Si le code indiqué est un appel de méthode, vous pouvez effectuer un pas à pas détaillé en appuyant sur F11. Vous pouvez également « effectuer un pas à pas principal » dans la ligne de code en appuyant sur F10. Pour plus d’informations sur l’exécution pas à pas du code, consultez [Naviguer dans le code avec le débogueur](../debugger/navigating-through-code-with-the-debugger.md).  
 
@@ -179,24 +179,24 @@ Visual Studio intègre un ensemble puissant d’outils de génération et de dé
 
  Pour définir un point d’arrêt conditionnel et interrompre votre code quand une variable est définie avec une valeur donnée ou qu’elle dépasse d’un certain seuil, cliquez dans la marge pour définir un point d’arrêt, puis sélectionnez la « roue dentée » dans le menu sensitif qui s’affiche.  
 
- ![Paramètres de point d’arrêt Visual Studio](~/ide/media/vs_ide_gs_debug_breakpoint_settings.png "Vs_ide_gs_debug_breakpoint_settings")  
+ ![Paramètres de point d’arrêt Visual Studio](../ide/media/vs_ide_gs_debug_breakpoint_settings.png "Vs_ide_gs_debug_breakpoint_settings")  
 
  Dans la boîte de dialogue qui s'affiche, semblable à celle-ci, vous pouvez définir des conditions spécifiques au déclenchement de l'arrêt.  
 
- ![Point d’arrêt conditionnel Visual Studio](~/ide/media/vs_ide_gs_debug_breakpoint_conditional.PNG "Vs_ide_gs_debug_breakpoint_conditional")  
+ ![Point d’arrêt conditionnel Visual Studio](../ide/media/vs_ide_gs_debug_breakpoint_conditional.PNG "Vs_ide_gs_debug_breakpoint_conditional")  
 
  Pour plus d’informations sur la façon de déclarer les expressions utilisées pour évaluer des points d’arrêt conditionnels, visionnez la vidéo [Breakpoint Configuration Experience in Visual Studio (Expérience de configuration des points d’arrêt dans Visual Studio)](http://channel9.msdn.com/Events/Visual-Studio/Connect-event-2014/711) sur Channel9.  
 
 ### <a name="inspecting-your-code-at-run-time"></a>Inspection du code au moment de l'exécution  
  Quand votre code en cours d'exécution arrive à un point d'arrêt et qu'il s'arrête, vous pouvez inspecter les variables et les piles des appels pour déterminer ce qui se passe. Les valeurs sont-elles comprises dans les plages attendues ? Les appels sont-ils effectués dans le bon ordre ?  
 
- ![Inspection de valeur d’exécution dans Visual Studio](~/ide/media/vs_ide_gs_debug_inspect_value.PNG "vs_ide_gs_debug_inspect_value")  
+ ![Inspection de valeur d’exécution dans Visual Studio](../ide/media/vs_ide_gs_debug_inspect_value.PNG "vs_ide_gs_debug_inspect_value")  
 
  Pointez sur une variable pour afficher la ou les valeurs et références qu'elle contient actuellement. Si vous remarquez une valeur à laquelle vous ne vous attendiez pas, vous avez probablement un bogue dans les lignes de code précédentes ou d’appel. Déplacez les points d'arrêt vers le haut ou ajoutez des conditions aux points d'arrêt existants pour affiner votre recherche.  
 
  Par ailleurs, Visual Studio affiche la fenêtre Outils de diagnostic. Celle-ci vous permet d’observer l’utilisation de l’UC et de la mémoire de votre application au fil du temps. Inspectez ces valeurs pour identifier toute hausse inattendue de l'utilisation de l'UC ou de l'allocation de la mémoire. Utilisez-les conjointement avec la fenêtre **Espion** et les points d’arrêt pour déterminer le problème à l’origine d’une utilisation élevée inattendue ou de la non-libération de ressources.  
 
- ![Fenêtre Outils de diagnostic de Visual Studio](~/ide/media/vs_ide_gs_debug_diagnostic_tools.PNG "Vs_ide_gs_debug_diagnostic_tools")  
+ ![Fenêtre Outils de diagnostic de Visual Studio](../ide/media/vs_ide_gs_debug_diagnostic_tools.PNG "Vs_ide_gs_debug_diagnostic_tools")  
 
 ### <a name="running-unit-tests"></a>Exécution de tests unitaires  
  Les tests unitaires sont des programmes qui vérifient les chemins de code dans votre application ou service. Visual Studio installe les infrastructures de tests unitaires Microsoft pour le code managé et le code natif. Utilisez une infrastructure de test unitaire pour créer des tests unitaires, les exécuter et signaler les résultats de ces tests. Réexécutez des tests unitaires quand vous apportez des modifications pour vérifier que votre code fonctionne toujours correctement. Quand vous utilisez Visual Studio Enterprise Edition, vous pouvez exécuter automatiquement des tests après chaque génération.  

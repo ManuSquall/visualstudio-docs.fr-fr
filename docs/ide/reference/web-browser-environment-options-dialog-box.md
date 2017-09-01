@@ -49,8 +49,7 @@ ms.contentlocale: fr-fr
 ms.lasthandoff: 05/24/2017
 
 ---
-# Navigateur web, Environnement, boîte de dialogue Options | Microsoft Docs
-<a id="web-browser-environment-options-dialog-box" class="xliff"></a>
+# <a name="web-browser-environment-options-dialog-box"></a>Navigateur web, Environnement, boîte de dialogue Options | Microsoft Docs
 Définit les options à la fois pour le navigateur web interne et pour Internet Explorer. Pour accéder à cette boîte de dialogue, cliquez sur **Options** dans le menu **Outils**, développez le dossier **Environnement**, puis sélectionnez **Navigateur web**.  
   
 > [!NOTE]
@@ -80,8 +79,7 @@ Définit les options à la fois pour le navigateur web interne et pour Internet 
 > [!NOTE]
 >  Pour remplacer le navigateur web interne de Visual Studio, qui est une version d’Internet Explorer, par un autre navigateur web externe, utilisez la boîte de dialogue Naviguer avec.  
   
-## Voir aussi
-<a id="see-also" class="xliff"></a>  
+## <a name="see-also"></a>Voir aussi  
  [Environnement, boîte de dialogue Options](../../ide/reference/environment-options-dialog-box.md)   
  [Général, Environnement, boîte de dialogue Options](../../ide/reference/general-environment-options-dialog-box.md)   
  [Concepteur HTML](http://msdn.microsoft.com/Library/640043cc-3657-4677-a091-bc315e636477)

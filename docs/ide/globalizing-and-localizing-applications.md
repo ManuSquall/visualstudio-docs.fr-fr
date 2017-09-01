@@ -41,14 +41,12 @@ ms.contentlocale: fr-fr
 ms.lasthandoff: 05/30/2017
 
 ---
-# Globalisation et localisation d'applications
-<a id="globalizing-and-localizing-applications" class="xliff"></a>
+# <a name="globalizing-and-localizing-applications"></a>Globalisation et localisation d'applications
 Si vous prévoyez de distribuer votre application à un public international, vous devez garder plusieurs choses à l’esprit pendant les phases de conception et de développement. Même si tels ne sont pas vos plans, un petit effort en amont peut simplifier considérablement les choses si vous êtes amené à faire évoluer votre application. Grâce au développement managé avec Visual Studio et aux services intégrés au [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)], vous pouvez facilement développer une application donnée qui peut s’adapter à différents paramètres régionaux.  
   
  Visual Studio a été conçu dès le début pour faciliter le développement à destination d’un public international, en tirant parti des services intégrés au [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)]. Les pages suivantes vous aideront à vous familiariser avec les fonctionnalités d’internationalisation intégrées à Visual Studio.  
   
-## Dans cette section
-<a id="in-this-section" class="xliff"></a>  
+## <a name="in-this-section"></a>Dans cette section  
  [Introduction aux applications internationales basées sur le .NET Framework](../ide/introduction-to-international-applications-based-on-the-dotnet-framework.md)  
  Présente les concepts relatifs au développement de logiciels pour un marché international à l’aide de Visual Studio et du [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)].  
   
@@ -58,8 +56,7 @@ Si vous prévoyez de distribuer votre application à un public international, vo
  [Globalisation d’applications](../ide/globalizing-applications.md)  
  Fournit des liens vers des pages sur la création d’applications qui prennent en charge plusieurs cultures.  
   
-## Rubriques connexes
-<a id="related-sections" class="xliff"></a>  
+## <a name="related-sections"></a>Rubriques connexes  
  [Globalisation de votre application (applications du Windows Store en JavaScript et HTML)](http://go.microsoft.com/fwlink/?LinkId=258266)  
  Contient des rubriques de procédures et des instructions permettant de globaliser et de localiser votre application [!INCLUDE[win8_appname_long](../debugger/includes/win8_appname_long_md.md)] générée à l’aide de JavaScript et HTML.  
   

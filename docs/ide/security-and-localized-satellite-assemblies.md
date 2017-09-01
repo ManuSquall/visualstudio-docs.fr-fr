@@ -43,14 +43,12 @@ ms.contentlocale: fr-fr
 ms.lasthandoff: 05/30/2017
 
 ---
-# Sécurité et assemblys satellites localisés
-<a id="security-and-localized-satellite-assemblies" class="xliff"></a>
+# <a name="security-and-localized-satellite-assemblies"></a>Sécurité et assemblys satellites localisés
 Si votre assembly principal utilise des noms forts, les assemblys satellites doivent être signés avec la même clé privée que l’assembly principal. Si la paire de clés publique/privée ne correspond pas entre les assemblys principal et satellites, vos ressources ne sont pas chargées. Pour plus d’informations sur la signature des assemblys, consultez [Comment : signer un assembly avec un nom fort](/dotnet/framework/app-domains/how-to-sign-an-assembly-with-a-strong-name).  
   
  En règle générale, il peut s’avérer nécessaire que le groupe de signature de votre organisation ou une organisation de signature externe signe avec la clé privée. En effet, en raison de la nature sensible de la clé privée, l’accès est souvent limité à quelques personnes. Vous pouvez utiliser la signature différée pendant le développement. Pour plus d’informations, consultez [Temporisation de signature d’un assembly](/dotnet/framework/app-domains/delay-sign-assembly).  
   
-## Voir aussi
-<a id="see-also" class="xliff"></a>  
+## <a name="see-also"></a>Voir aussi  
  [Aspects de la sécurité des assemblys](/dotnet/framework/app-domains/assembly-security-considerations)   
  [Concepts fondamentaux sur la sécurité](/dotnet/standard/security/key-security-concepts)   
  [Introduction aux applications internationales basées sur le .NET Framework](../ide/introduction-to-international-applications-based-on-the-dotnet-framework.md)   

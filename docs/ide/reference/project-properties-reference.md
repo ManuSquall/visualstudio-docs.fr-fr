@@ -37,12 +37,10 @@ ms.contentlocale: fr-fr
 ms.lasthandoff: 05/24/2017
 
 ---
-# Référence de propriétés de projet
-<a id="project-properties-reference" class="xliff"></a>
+# <a name="project-properties-reference"></a>Référence de propriétés de projet
 Découvrez-en plus sur la façon de configurer et personnaliser les propriétés de projet.  
   
-## Pages de propriétés de projet
-<a id="project-properties-pages" class="xliff"></a>  
+## <a name="project-properties-pages"></a>Pages de propriétés de projet  
   
 |Titre|Description|  
 |-----------|-----------------|  
@@ -62,6 +60,5 @@ Découvrez-en plus sur la façon de configurer et personnaliser les propriétés
 |||  
 |||  
   
-## Voir aussi
-<a id="see-also" class="xliff"></a>  
+## <a name="see-also"></a>Voir aussi  
  [Projets et solutions](../../ide/solutions-and-projects-in-visual-studio.md)

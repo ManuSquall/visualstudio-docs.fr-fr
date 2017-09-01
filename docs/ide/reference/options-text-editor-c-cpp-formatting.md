@@ -41,8 +41,7 @@ ms.contentlocale: fr-fr
 ms.lasthandoff: 05/24/2017
 
 ---
-# Options, Éditeur de texte, C/C++, Mise en forme
-<a id="options-text-editor-cc-formatting" class="xliff"></a>
+# <a name="options-text-editor-cc-formatting"></a>Options, Éditeur de texte, C/C++, Mise en forme
 Vous permet de modifier le comportement par défaut de l'Éditeur de code lorsque vous programmez en C ou C++.  
   
  Pour accéder à cette page, dans la boîte de dialogue **Options**, dans le volet gauche, développez **Éditeur de texte**, développez **C/C++**, puis cliquez sur **Mise en forme**.  
@@ -50,13 +49,11 @@ Vous permet de modifier le comportement par défaut de l'Éditeur de code lorsqu
 > [!NOTE]
 >  Il est possible que pour certains des éléments de l’interface utilisateur de Visual Studio, votre ordinateur affiche des noms ou des emplacements différents de ceux indiqués dans les instructions suivantes. L'édition de Visual Studio dont vous disposez et les paramètres que vous utilisez déterminent ces éléments. Pour plus d’informations, consultez [Personnaliser l’IDE Visual Studio](../../ide/personalizing-the-visual-studio-ide.md).  
   
-## Options C/C++
-<a id="cc-options" class="xliff"></a>  
+## <a name="cc-options"></a>Options C/C++  
  **Activer les info-bulles Info express automatique**  
  Cette case à cocher permet d’activer ou de désactiver la fonctionnalité IntelliSense Info express.  
   
-## Code inactif
-<a id="inactive-code" class="xliff"></a>  
+## <a name="inactive-code"></a>Code inactif  
  **Afficher les blocs de code inactifs**  
  Le code qui est inactif en raison de déclarations `#ifdef` est colorisé différemment pour vous aider à l'identifier.  
   
@@ -66,24 +63,21 @@ Vous permet de modifier le comportement par défaut de l'Éditeur de code lorsqu
  **Pourcentage d’opacité du code inactif**  
  Le degré d'opacité des blocs de code inactifs peut être personnalisé.  
   
-## Indentation
-<a id="indentation" class="xliff"></a>  
+## <a name="indentation"></a>Indentation  
  **Mettre en retrait les accolades**  
  Vous pouvez configurer la manière dont les accolades sont alignées lorsque vous appuyez sur ENTRÉE après avoir commencé un bloc de code, tel qu'une fonction ou une boucle `for`. Les accolades peuvent être alignées avec le premier caractère du bloc de code ou mises en retrait.  
   
  **Retrait automatique sur les onglets**  
  Vous pouvez configurer ce qui arrive sur la ligne de code actuelle lorsque vous appuyez sur la touche de tabulation. La ligne est mise en retrait ou un onglet est inséré.  
   
-## Divers
-<a id="miscellaneous" class="xliff"></a>  
+## <a name="miscellaneous"></a>Divers  
  **Énumérer les commentaires dans la fenêtre Liste des tâches**  
  L'éditeur peut rechercher des mots prédéfinis dans les commentaires de fichiers sources ouverts. Il crée une entrée dans la fenêtre **Liste des tâches** pour tous les mots clés qu’il trouve.  
   
  **Surligner les jetons correspondants**  
  Lorsque le curseur se trouve à côté d'une accolade, l'éditeur peut mettre en surbrillance l'accolade correspondante afin que vous puissiez consulter le code contenu plus facilement.  
   
-## Mode Plan
-<a id="outlining" class="xliff"></a>  
+## <a name="outlining"></a>Mode Plan  
  **Passer en mode Plan à l’ouverture des fichiers**  
  Lorsque vous ouvrez un fichier dans l’éditeur de texte, vous pouvez activer la fonctionnalité mode Plan. Pour plus d’informations, voir [Mode Plan](../../ide/outlining.md). Lorsque cette option est sélectionnée, la fonctionnalité mode Plan est activée à l’ouverture d’un fichier.  
   
@@ -99,7 +93,6 @@ Vous permet de modifier le comportement par défaut de l'Éditeur de code lorsqu
   
 -   [while, instruction (C++)](/cpp/cpp/while-statement-cpp)  
   
-## Voir aussi
-<a id="see-also" class="xliff"></a>  
+## <a name="see-also"></a>Voir aussi  
  [Général, Environnement, boîte de dialogue Options](../../ide/reference/general-environment-options-dialog-box.md)   
  [Utilisation de la fonctionnalité IntelliSense](../../ide/using-intellisense.md)

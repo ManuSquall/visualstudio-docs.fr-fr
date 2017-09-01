@@ -40,19 +40,16 @@ ms.contentlocale: fr-fr
 ms.lasthandoff: 05/24/2017
 
 ---
-# Guide pratique pour afficher les numéros de ligne dans l’Éditeur
-<a id="how-to-display-line-numbers-in-the-editor" class="xliff"></a>
+# <a name="how-to-display-line-numbers-in-the-editor"></a>Guide pratique pour afficher les numéros de ligne dans l’Éditeur
 Vous pouvez afficher ou masquer la numérotation des lignes dans votre code.  
   
 > [!NOTE]
 >  En fonction de vos paramètres actifs, les boîtes de dialogue et les commandes de menu qui s'affichent peuvent être différentes de celles décrites ici. Pour modifier vos paramètres, ouvrez **Outils / Importation et exportation de paramètres**. Pour plus d’informations, consultez [Personnaliser l’IDE Visual Studio](../../ide/personalizing-the-visual-studio-ide.md).  
   
-## Afficher les numéros de ligne dans le code
-<a id="display-line-numbers-in-code" class="xliff"></a>  
+## <a name="display-line-numbers-in-code"></a>Afficher les numéros de ligne dans le code  
  Les numéros de ligne ne s'ajoutent pas à votre code ; ils ne sont là qu'à titre de référence. Si vous voulez imprimer les numéros de ligne, dans la boîte de dialogue **Imprimer**, cochez la case **Inclure les numéros de ligne**.  
   
-#### Pour afficher les numéros de ligne dans le code
-<a id="to-display-line-numbers-in-code" class="xliff"></a>  
+#### <a name="to-display-line-numbers-in-code"></a>Pour afficher les numéros de ligne dans le code  
   
 1.  Dans la barre de menus, sélectionnez **Outils**, **Options**. Développez le nœud **Éditeur de texte**, puis sélectionnez le nœud du langage que vous utilisez ou **Tous les langages** pour activer les numéros de ligne dans tous les langages. Vous pouvez également taper le **numéro de ligne** dans la zone **Lancement rapide**.  
   
@@ -61,8 +58,7 @@ Vous pouvez afficher ou masquer la numérotation des lignes dans votre code.
 > [!NOTE]
 >  Selon votre langage ou vos paramètres, vous devez peut-être cocher la case **Afficher tous les paramètres** dans la boîte de dialogue **Options** pour afficher le sous-nœud **Tous les langages**.  
   
-## Voir aussi
-<a id="see-also" class="xliff"></a>  
+## <a name="see-also"></a>Voir aussi  
  [Personnalisation de l’éditeur](../../ide/customizing-the-editor.md)   
  [Boîte de dialogue Options de l’éditeur de texte](../../ide/reference/text-editor-options-dialog-box.md)   
  [Écriture de code](../../ide/writing-code-in-the-code-and-text-editor.md)

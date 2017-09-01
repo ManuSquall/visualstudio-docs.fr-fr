@@ -43,14 +43,12 @@ ms.contentlocale: fr-fr
 ms.lasthandoff: 05/26/2017
 
 ---
-# Prerequisites Dialog Box
-<a id="prerequisites-dialog-box" class="xliff"></a>
+# <a name="prerequisites-dialog-box"></a>Prerequisites Dialog Box
 Cette boîte de dialogue spécifie quels composants requis sont installés, comment ils sont installés et l'ordre dans lequel les packages sont installés.  
   
  Pour accéder à cette boîte de dialogue, sélectionnez un nœud de projet dans l’**Explorateur de solutions**, puis cliquez sur **Propriétés** dans le menu **Projet**. Lorsque le **Concepteur de projets** apparaît, cliquez sur l'onglet **Publier** . Dans la page **Publier**, cliquez sur le bouton **Composants requis**. Pour les projets d’installation, dans le menu **Projet**, cliquez sur **Propriétés**. Quand la boîte de dialogue **Pages de propriétés** apparaît, cliquez sur **Composants requis**.  
   
-## Liste UIElement
-<a id="uielement-list" class="xliff"></a>  
+## <a name="uielement-list"></a>Liste UIElement  
   
 |Élément|Description|  
 |-------------|-----------------|  
@@ -61,8 +59,7 @@ Cette boîte de dialogue spécifie quels composants requis sont installés, comm
 |**Télécharger les composants requis à partir de l’emplacement de mon application**|Fait en sorte que les composants requis soient installés à partir du même emplacement que l'application. Copie tous les packages de composants requis à l'emplacement de publication. Pour que cette option fonctionne, les packages de composants requis doivent être sur l'ordinateur de développement.|  
 |**Télécharger les composants requis depuis l’emplacement suivant**|Fait en sorte que les composants requis soient installés à partir de l'emplacement que vous sélectionnez. Vous pouvez utiliser le bouton **Parcourir** pour sélectionner un emplacement.|  
   
-## Informations sur les composants requis
-<a id="prerequisites-information" class="xliff"></a>  
+## <a name="prerequisites-information"></a>Informations sur les composants requis  
  Les composants requis qui apparaissent dans la boîte de dialogue **Composants requis** peuvent différer de ceux de la liste suivante. Les packages de prérequis répertoriés dans la **boîte de dialogue Composants requis** sont définis automatiquement la première fois que vous ouvrez la boîte de dialogue. Si vous modifiez ultérieurement le framework cible du projet, vous devrez sélectionner manuellement les composants requis pour qu'ils correspondent au nouveau framework cible.  
   
 |Élément|Description|  
@@ -85,8 +82,7 @@ Cette boîte de dialogue spécifie quels composants requis sont installés, comm
 |**Windows Installer 3.1**|Ce package installe la version 3.1 du redistribuable Microsoft Windows Installer, qui permet l'installation de projets d'installation Windows Installer. Il est préinstallé sur Windows Server 2003 avec SP1 et versions ultérieures.<br /><br /> Cet élément est sélectionné par défaut.|  
 |**Windows Installer 4.5**|Ce package installe la version 4.5 du redistribuable Microsoft Windows Installer, qui permet l’installation de projets d’installation Windows Installer.|  
   
-## Voir aussi
-<a id="see-also" class="xliff"></a>  
+## <a name="see-also"></a>Voir aussi  
  [Page Publier, Concepteur de projets](../../ide/reference/publish-page-project-designer.md)   
  [Prérequis pour le déploiement d’applications](../../deployment/application-deployment-prerequisites.md)   
  [Redistribution du .NET Framework](http://msdn.microsoft.com/en-us/a18d0456-fd89-493e-97f4-756505bfe287)   
