@@ -31,10 +31,10 @@ translation.priority.ht:
 - zh-cn
 - zh-tw
 ms.translationtype: HT
-ms.sourcegitcommit: cc949cae43fe524771f43fe7e9261de3b4325649
-ms.openlocfilehash: 8b8a7587687579e074d1b9ea1c9ae52a5f857fce
+ms.sourcegitcommit: 0387b9a656f97d9354f95f121cad8422e93a69bc
+ms.openlocfilehash: e48edfa02f059444539e0a3d8514366f94a1a1f1
 ms.contentlocale: fr-fr
-ms.lasthandoff: 08/15/2017
+ms.lasthandoff: 08/18/2017
 
 ---
 # <a name="synchronize-your-settings-in-visual-studio"></a>Synchroniser vos paramètres dans Visual Studio
@@ -82,7 +82,7 @@ Dans Visual Studio 15.3 et ultérieur, nous avons arrêté de partager certains
 **REMARQUE :** Pour utiliser les nouveaux paramètres propres à l’installation, vous devez procéder à une nouvelle installation. Si vous effectuez une mise à niveau d’une installation existante de Visual Studio 2017 vers la dernière mise à jour, elle utilise l’emplacement partagé existant. Si vous disposez actuellement d’installations côte à côte de Visual Studio 2017 et que vous décidez d’effectuer la mise à niveau en utilisant le nouvel emplacement du fichier de paramètres propres à l’installation, effectuez les étapes suivantes :
 
 1. Après la mise à niveau, utilisez l’Assistant Importation/Exportation de paramètres pour exporter tous les paramètres existants vers un emplacement en dehors du dossier `%localappdata%\Microsoft\VisualStudio\15.0_xxxxxxxx`.
-2. Ouvrez l’**invite de commandes développeur pour VS 2017** de l’installation de Visual Studio mise à niveau et exécutez "run devenv resetuserdata" à partir de celle-ci.
+2. Ouvrez l’**invite de commandes développeur pour VS 2017** de l’installation de Visual Studio mise à niveau et exécutez `devenv /resetuserdata` à partir de celle-ci.
 3. Lancez Visual Studio et importez les paramètres enregistrés du fichier de paramètres exportés.
 
 ## <a name="see-also"></a>Voir aussi
