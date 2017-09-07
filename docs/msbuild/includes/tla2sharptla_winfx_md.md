@@ -19,4 +19,4 @@ ms.openlocfilehash: 0821dd4bff10bcd55a19ce3e3b41fc37b6502eab
 ms.contentlocale: fr-fr
 
 ---
-.NET Framework
+.NET Framework

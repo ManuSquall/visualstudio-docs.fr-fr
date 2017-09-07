@@ -1,5 +1,5 @@
 ---
-title: CONSTRUCTOR_ENUM | Microsoft Docs
+title: CONSTRUCTOR_ENUM | Documents Microsoft
 ms.custom: 
 ms.date: 11/04/2016
 ms.reviewer: 
@@ -34,13 +34,13 @@ ms.translationtype: MT
 ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
 ms.openlocfilehash: 22447cd6eadf1e4c094815112218bbd64877e9a3
 ms.contentlocale: fr-fr
-ms.lasthandoff: 08/28/2017
+ms.lasthandoff: 09/06/2017
 
 ---
 # <a name="constructorenum"></a>CONSTRUCTOR_ENUM
-Selects different types of constructors.  
+Sélectionne les différents types de constructeurs.  
   
-## <a name="syntax"></a>Syntax  
+## <a name="syntax"></a>Syntaxe  
   
 ```cpp  
 typedef enum ConstructorMatchOptions {   
@@ -58,26 +58,26 @@ public enum ConstructorMatchOptions {
 };  
 ```  
   
-## <a name="members"></a>Members  
+## <a name="members"></a>Membres  
  crAll  
- Selects all constructors.  
+ Sélectionne tous les constructeurs.  
   
  crNonStatic  
- Selects non-static constructors.  
+ Sélectionne les constructeurs non statique.  
   
  crStatic  
- Selects static constructors.  
+ Sélectionne les constructeurs statiques.  
   
-## <a name="remarks"></a>Remarks  
- Passed as an argument to the [EnumConstructors](../../../extensibility/debugger/reference/idebugclassfield-enumconstructors.md) method.  
+## <a name="remarks"></a>Remarques  
+ Est passé comme argument à la [EnumConstructors](../../../extensibility/debugger/reference/idebugclassfield-enumconstructors.md) (méthode).  
   
-## <a name="requirements"></a>Requirements  
- Header: sh.h  
+## <a name="requirements"></a>Spécifications  
+ En-tête : sh.h  
   
- Namespace: Microsoft.VisualStudio.Debugger.Interop  
+ Namespace : Microsoft.VisualStudio.Debugger.Interop  
   
- Assembly: Microsoft.VisualStudio.Debugger.Interop.dll  
+ Assembly : Microsoft.VisualStudio.Debugger.Interop.dll  
   
-## <a name="see-also"></a>See Also  
- [Enumerations](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)   
+## <a name="see-also"></a>Voir aussi  
+ [Énumérations](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)   
  [GetReason](../../../extensibility/debugger/reference/idebugcanstopevent2-getreason.md)

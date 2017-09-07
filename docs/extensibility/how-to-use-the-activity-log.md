@@ -1,5 +1,5 @@
 ---
-title: 'How to: Use the Activity Log | Microsoft Docs'
+title: "Comment : utiliser le journal d’activité | Documents Microsoft"
 ms.custom: 
 ms.date: 11/04/2016
 ms.reviewer: 
@@ -33,18 +33,18 @@ ms.translationtype: MT
 ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
 ms.openlocfilehash: a1ddf51d02d9e20f6806f8bc202f8a08166876d6
 ms.contentlocale: fr-fr
-ms.lasthandoff: 08/28/2017
+ms.lasthandoff: 09/06/2017
 
 ---
-# <a name="how-to-use-the-activity-log"></a>How to: Use the Activity Log
-VSPackages can write messages to the activity log. This feature is especially useful for debugging VSPackages in retail environments.  
+# <a name="how-to-use-the-activity-log"></a>Comment : utiliser le journal d’activité
+Les VSPackages peuvent écrire des messages dans le journal d’activité. Cette fonctionnalité est particulièrement utile pour déboguer les VSPackages dans les environnements de vente au détail.  
   
 > [!TIP]
->  The activity log is always turned on. Visual Studio keeps a rolling buffer of the last one hundred entries as well as the first ten entries, which have general configuration information.  
+>  Le journal d’activité est toujours activé. Visual Studio conserve un tampon propagée de celui dernières entrées, ainsi que les entrées de dix premières, qui présentent des informations de configuration générale.  
   
-### <a name="to-write-an-entry-to-the-activity-log"></a>To write an entry to the activity log  
+### <a name="to-write-an-entry-to-the-activity-log"></a>Pour écrire une entrée dans le journal d’activité  
   
-1.  Insert this code in the <xref:Microsoft.VisualStudio.Shell.Package.Initialize%2A> method or in any other method except the VSPackage constructor:  
+1.  Insérez ce code dans la <xref:Microsoft.VisualStudio.Shell.Package.Initialize%2A> méthode ou dans toute autre méthode sauf dans le constructeur de VSPackage :  
   
     ```csharp  
     IVsActivityLog log = GetService(typeof(SVsActivityLog)) as IVsActivityLog;  
@@ -56,28 +56,28 @@ VSPackages can write messages to the activity log. This feature is especially us
         "Called for: {0}", this.ToString()));  
     ```  
   
-     This code gets the <xref:Microsoft.VisualStudio.Shell.Interop.SVsActivityLog> service and casts it to an <xref:Microsoft.VisualStudio.Shell.Interop.IVsActivityLog> interface. <xref:Microsoft.VisualStudio.Shell.Interop.IVsActivityLog.LogEntry%2A> writes an informational entry into the activity log using the current cultural context.  
+     Ce code obtient le <xref:Microsoft.VisualStudio.Shell.Interop.SVsActivityLog> de service et le caste vers une <xref:Microsoft.VisualStudio.Shell.Interop.IVsActivityLog> interface. <xref:Microsoft.VisualStudio.Shell.Interop.IVsActivityLog.LogEntry%2A>écrit une entrée d’information dans le journal des activités en utilisant le contexte de la culture actuels.  
   
-2.  When the VSPackage is loaded (usually when a command is invoked or a window is opened), the text is written to the activity log.  
+2.  Lorsque le VSPackage est chargé (généralement lorsqu’une commande est appelée ou une fenêtre est ouverte), le texte est écrit dans le journal d’activité.  
   
-### <a name="to-examine-the-activity-log"></a>To examine the activity log  
+### <a name="to-examine-the-activity-log"></a>Examinez le journal d’activité  
   
-1.  Find the activity log in the subfolder for  Visual Studio data: *%AppData%*\Microsoft\VisualStudio\15.0\ActivityLog.XML..  
+1.  Rechercher le journal d’activité dans le sous-dossier de données de Visual Studio : *%AppData%*\Microsoft\VisualStudio\15.0\ActivityLog.XML...  
   
-2.  Open the activity log with any text editor. Here is a typical entry:  
+2.  Ouvrez le journal d’activité avec n’importe quel éditeur de texte. Voici une entrée de type :  
   
     ```  
     Called for: Company.MyApp.MyAppPackage ...  
     ```  
   
-## <a name="robust-programming"></a>Robust Programming  
- Because the activity log is a service, the activity log is unavailable in the VSPackage constructor.  
+## <a name="robust-programming"></a>Programmation fiable  
+ Étant donné que le journal d’activité est un service, le journal d’activité n’est pas disponible dans le constructeur du VSPackage.  
   
- You should obtain the activity log just before writing to it. Do not cache or save the activity log for future use.  
+ Vous devez obtenir le journal d’activité juste avant l’écriture dans celle-ci. Ne pas mettre en cache ou enregistrer le journal d’activité pour une utilisation ultérieure.  
   
-## <a name="see-also"></a>See Also  
+## <a name="see-also"></a>Voir aussi  
  <xref:Microsoft.VisualStudio.Shell.Interop.IVsActivityLog>   
  <xref:Microsoft.VisualStudio.Shell.Interop.__ACTIVITYLOG_ENTRYTYPE>   
- [Troubleshooting VSPackages](../extensibility/troubleshooting-vspackages.md)   
+ [Dépanner les packages VS](../extensibility/troubleshooting-vspackages.md)   
  [VSPackages](../extensibility/internals/vspackages.md)
 

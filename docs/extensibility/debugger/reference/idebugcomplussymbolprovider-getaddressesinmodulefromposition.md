@@ -1,5 +1,5 @@
 ---
-title: IDebugComPlusSymbolProvider::GetAddressesInModuleFromPosition | Microsoft Docs
+title: IDebugComPlusSymbolProvider::GetAddressesInModuleFromPosition | Documents Microsoft
 ms.custom: 
 ms.date: 11/04/2016
 ms.reviewer: 
@@ -33,13 +33,13 @@ ms.translationtype: MT
 ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
 ms.openlocfilehash: 8f7e77903d98943b1f1d0d5b879656c67b1ac223
 ms.contentlocale: fr-fr
-ms.lasthandoff: 08/28/2017
+ms.lasthandoff: 09/06/2017
 
 ---
 # <a name="idebugcomplussymbolprovidergetaddressesinmodulefromposition"></a>IDebugComPlusSymbolProvider::GetAddressesInModuleFromPosition
-Maps a document position in the specified module to an array of debug addresses.  
+Mappe une position de document dans le module spécifié dans un tableau d’adresses de débogage.  
   
-## <a name="syntax"></a>Syntax  
+## <a name="syntax"></a>Syntaxe  
   
 ```  
 [C++]  
@@ -65,30 +65,30 @@ int GetAddressesInModuleFromPosition(
 );  
 ```  
   
-#### <a name="parameters"></a>Parameters  
+#### <a name="parameters"></a>Paramètres  
  `ulAppDomainID`  
- [in] Application domain identifier.  
+ [in] Identificateur du domaine d’application.  
   
  `guidModule`  
- [in] Unique identifier of the module.  
+ [in] Identificateur unique du module.  
   
  `pDocPos`  
- [in] The document position.  
+ [in] La position du document.  
   
  `fStatmentOnly`  
- [in] If `TRUE`, limits the debug addresses to a single statement.  
+ [in] Si `TRUE`, limite les adresses de débogage à une seule instruction.  
   
  `ppEnumBegAddresses`  
- [out] Returns an enumerator for the starting debug addresses that are associated with this statement or line.  
+ [out] Retourne un énumérateur pour les adresses de débogage de début qui sont associés à cette instruction ou d’une ligne.  
   
  `ppEnumEndAddresses`  
- [out] Returns an enumerator for the ending debug addresses that are associated with this statement or line.  
+ [out] Retourne un énumérateur pour les adresses de débogage fin qui sont associés à cette instruction ou d’une ligne.  
   
-## <a name="return-value"></a>Return Value  
- If successful, returns `S_OK`; otherwise, returns an error code.  
+## <a name="return-value"></a>Valeur de retour  
+ En cas de réussite, retourne `S_OK`; sinon, retourne un code d’erreur.  
   
-## <a name="example"></a>Example  
- The following example shows how to implement this method for a **CDebugSymbolProvider** object that exposes the [IDebugComPlusSymbolProvider](../../../extensibility/debugger/reference/idebugcomplussymbolprovider.md) interface.  
+## <a name="example"></a>Exemple  
+ L’exemple suivant montre comment implémenter cette méthode pour un **CDebugSymbolProvider** objet qui expose la [IDebugComPlusSymbolProvider](../../../extensibility/debugger/reference/idebugcomplussymbolprovider.md) interface.  
   
 ```cpp  
 HRESULT CDebugSymbolProvider::GetAddressesInModuleFromPosition(  
@@ -239,5 +239,5 @@ Error:
 }  
 ```  
   
-## <a name="see-also"></a>See Also  
+## <a name="see-also"></a>Voir aussi  
  [IDebugComPlusSymbolProvider](../../../extensibility/debugger/reference/idebugcomplussymbolprovider.md)

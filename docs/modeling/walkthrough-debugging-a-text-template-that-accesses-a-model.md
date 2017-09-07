@@ -1,5 +1,5 @@
 ---
-title: 'Walkthrough: Debugging a Text Template that Accesses a Model | Microsoft Docs'
+title: "Procédure pas à pas : Débogage d’un modèle de texte qui accède à un modèle | Documents Microsoft"
 ms.custom: 
 ms.date: 11/04/2016
 ms.reviewer: 
@@ -15,50 +15,50 @@ ms.translationtype: MT
 ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
 ms.openlocfilehash: 2943b49571077ac1cab87db5ecc4d0f82390273e
 ms.contentlocale: fr-fr
-ms.lasthandoff: 08/28/2017
+ms.lasthandoff: 09/06/2017
 
 ---
-# <a name="walkthrough-debugging-a-text-template-that-accesses-a-model"></a>Walkthrough: Debugging a Text Template that Accesses a Model
-When you modify or add text templates in a domain-specific language solution, you may get errors when the engine transforms the template to source code or when it compiles the generated code. The following walkthrough demonstrates some of the things you can do to debug a text template.  
+# <a name="walkthrough-debugging-a-text-template-that-accesses-a-model"></a>Procédure pas à pas : débogage d'un modèle de texte accédant à un modèle
+Lorsque vous modifiez ou ajoutez des modèles de texte dans une solution de langage spécifique à un domaine, vous obtiendrez des erreurs lorsque le moteur transforme le modèle de code source, ou lors de la compilation du code généré. La procédure suivante présente quelques-unes des choses que vous pouvez faire pour déboguer un modèle de texte.  
   
 > [!NOTE]
->  For more information about text templates in general, see [Code Generation and T4 Text Templates](../modeling/code-generation-and-t4-text-templates.md). For more information about debugging text templates, see [Walkthrough: Debugging a Text Template](http://msdn.microsoft.com/Library/5c3fd3b7-c110-4e86-a22f-d5756be6b94f).  
+>  Pour plus d’informations sur le texte modèles en général, consultez [génération de Code et les modèles de texte T4](../modeling/code-generation-and-t4-text-templates.md). Pour plus d’informations sur le débogage des modèles de texte, consultez [procédure pas à pas : débogage d’un modèle de texte](http://msdn.microsoft.com/Library/5c3fd3b7-c110-4e86-a22f-d5756be6b94f).  
   
-## <a name="creating-a-domain-specific-language-solution"></a>Creating a Domain-Specific Language Solution  
- In this procedure, you create a domain-specific language solution that has the following characteristics:  
+## <a name="creating-a-domain-specific-language-solution"></a>Création d’une Solution de langage spécifique à un domaine  
+ Dans cette procédure, vous créez une solution de langage spécifique à un domaine qui a les caractéristiques suivantes :  
   
--   Name: DebuggingTestLanguage  
+-   Nom : DebuggingTestLanguage  
   
--   Solution template: Minimal Language  
+-   Modèle de solution : langue minimale  
   
--   File extension: .ddd  
+-   Extension de fichier : .ddd  
   
--   Company name: Fabrikam  
+-   Nom de la société : Fabrikam  
   
- For more information about creating a domain-specific language solution, see [How to: Create a Domain-Specific Language Solution](../modeling/how-to-create-a-domain-specific-language-solution.md).  
+ Pour plus d’informations sur la création d’une solution de langage spécifique à un domaine, consultez [Comment : créer une Solution de langage spécifique à un domaine](../modeling/how-to-create-a-domain-specific-language-solution.md).  
   
-## <a name="creating-a-text-template"></a>Creating a text template  
- Add a text template to your solution.  
+## <a name="creating-a-text-template"></a>Création d’un modèle de texte  
+ Ajouter un modèle de texte à votre solution.  
   
-#### <a name="to-create-a-text-template"></a>To create a text template  
+#### <a name="to-create-a-text-template"></a>Pour créer un modèle de texte  
   
-1.  Build the solution and start running it in the debugger. (On the **Build** menu, click **Rebuild Solution**, and then on the **Debug** menu, click **Start Debugging**.) A new instance of Visual Studio opens the Debugging project.  
+1.  Générez la solution et commencer à l’exécuter dans le débogueur. (Sur le **générer** menu, cliquez sur **régénérer la Solution**, puis, dans le **déboguer** menu, cliquez sur **démarrer le débogage**.) Une nouvelle instance de Visual Studio ouvre le projet de débogage.  
   
-2.  Add a text file named `DebugTest.tt` to the Debugging project.  
+2.  Ajoutez un fichier texte nommé `DebugTest.tt` au projet de débogage.  
   
-3.  Make sure that the **Custom Tool** property of DebugTest.tt is set to `TextTemplatingFileGenerator`.  
+3.  Assurez-vous que le **un outil personnalisé** de DebugTest.tt est définie sur `TextTemplatingFileGenerator`.  
   
-## <a name="debugging-directives-that-access-a-model-from-a-text-template"></a>Debugging directives that access a model from a text template  
- Before you can access a model from the statements and expressions in a text template, you must first call a generated directive processor. Calling the generated directive processor makes the classes in your model available to the text template code as properties. For more information, see [Accessing Models from Text Templates](../modeling/accessing-models-from-text-templates.md).  
+## <a name="debugging-directives-that-access-a-model-from-a-text-template"></a>Débogage des directives qui accèdent à un modèle à partir d’un modèle de texte  
+ Avant de pouvoir accéder à un modèle à partir des instructions et expressions dans un modèle de texte, vous devez d’abord appeler un processeur de directive généré. Appeler le processeur de directive généré rend les classes dans votre modèle disponible au code du modèle de texte en tant que propriétés. Pour plus d’informations, consultez [l’accès à des modèles à partir de modèles de texte](../modeling/accessing-models-from-text-templates.md).  
   
- In the following procedures, you will debug an incorrect directive name and an incorrect property name.  
+ Dans les procédures suivantes, vous allez déboguer un nom de directive incorrect et un nom de propriété incorrecte.  
   
-#### <a name="to-debug-an-incorrect-directive-name"></a>To debug an incorrect directive name  
+#### <a name="to-debug-an-incorrect-directive-name"></a>Pour déboguer un nom de directive incorrect  
   
-1.  Replace the code in DebugTest.tt with the following code:  
+1.  Remplacez le code dans le fichier DebugTest.tt par le code suivant :  
   
     > [!NOTE]
-    >  The code contains an error. You are introducing the error in order to debug it.  
+    >  Le code contient une erreur. Vous introduisez l’erreur afin de déboguer.  
   
     ```csharp  
     <#@ template language="C#" inherits="Microsoft.VisualStudio.TextTemplating.VSHost.ModelingTextTransformation"#>  
@@ -91,19 +91,19 @@ When you modify or add text templates in a domain-specific language solution, yo
     #>  
     ```  
   
-2.  In **Solution Explorer**, right-click DebugTest.tt, and then click **Run Custom Tool**.  
+2.  Dans **l’Explorateur de solutions**, DebugTest.tt d’avec le bouton droit, puis cliquez sur **exécuter un outil personnalisé**.  
   
-     The **Error List** window displays this error:  
+     Le **liste d’erreurs** affiche cette erreur :  
   
-     **The processor named 'DebuggingTestLanguageDirectiveProcessor' does not support the directive named 'modelRoot'. The transformation will not be run.**  
+     **Le processeur nommé 'DebuggingTestLanguageDirectiveProcessor' ne prend pas en charge la directive nommée 'modelRoot'. La transformation ne sera pas exécutée.**  
   
-     In this case, the directive call contains an incorrect directive name. You have specified `modelRoot` as the directive name, but the correct directive name is `DebuggingTestLanguage`.  
+     Dans ce cas, l’appel de directive contient un nom de directive incorrect. Vous avez spécifié `modelRoot` comme le nom de la directive, mais le nom de directive correct est `DebuggingTestLanguage`.  
   
-3.  Double-click the error in the **Error List** window to jump to the code.  
+3.  Double-cliquez sur l’erreur dans le **liste d’erreurs** fenêtre pour accéder au code.  
   
-4.  To correct the code, change the directive name to `DebuggingTestLanguage`.  
+4.  Pour corriger le code, remplacez le nom de la directive par `DebuggingTestLanguage`.  
   
-     The change is highlighted.  
+     La modification est mis en surbrillance.  
   
     ```csharp  
     <#@ DebuggingTestLanguage processor="DebuggingTestLanguageDirectiveProcessor" requires="fileName='Sample.ddd'" provides="ExampleModel=ExampleModel" #>  
@@ -113,16 +113,16 @@ When you modify or add text templates in a domain-specific language solution, yo
     <#@ DebuggingTestLanguage processor="DebuggingTestLanguageDirectiveProcessor" requires="fileName='Sample.ddd'" provides="ExampleModel=ExampleModel" #>  
     ```  
   
-5.  In **Solution Explorer**, right-click DebugTest.tt, and then click **Run Custom Tool**.  
+5.  Dans **l’Explorateur de solutions**, DebugTest.tt d’avec le bouton droit, puis cliquez sur **exécuter un outil personnalisé**.  
   
-     Now the system transforms the text template and generates the corresponding output file. You will not see any errors in the **Error List** window.  
+     Maintenant, le système transforme le modèle de texte et génère le fichier de sortie correspondant. Vous ne verrez pas les erreurs dans le **liste d’erreurs** fenêtre.  
   
-#### <a name="to-debug-an-incorrect-property-name"></a>To debug an incorrect property name  
+#### <a name="to-debug-an-incorrect-property-name"></a>Pour déboguer un nom de propriété incorrecte  
   
-1.  Replace the code in DebugTest.tt with the following code:  
+1.  Remplacez le code dans le fichier DebugTest.tt par le code suivant :  
   
     > [!NOTE]
-    >  The code contains an error. You are introducing the error in order to debug it.  
+    >  Le code contient une erreur. Vous introduisez l’erreur afin de déboguer.  
   
     ```csharp  
     <#@ template language="C#" inherits="Microsoft.VisualStudio.TextTemplating.VSHost.ModelingTextTransformation"#>  
@@ -155,29 +155,29 @@ When you modify or add text templates in a domain-specific language solution, yo
     #>  
     ```  
   
-2.  In the **Solution Explorer**, right-click DebugTest.tt, and then click **Run Custom Tool**.  
+2.  Dans le **l’Explorateur de solutions**, DebugTest.tt d’avec le bouton droit, puis cliquez sur **exécuter un outil personnalisé**.  
   
-     The **Error List** window appears and displays one of these errors:  
+     Le **liste d’erreurs** fenêtre apparaît et affiche l’un de ces erreurs :  
   
      (C#)  
   
-     **Compiling transformation: Microsoft.VisualStudio.TextTemplating\<GUID>. GeneratedTextTransformation' does not contain a definition for 'ExampleModel'**  
+     **La compilation de transformation : Microsoft.VisualStudio.TextTemplating\<GUID >. GeneratedTextTransformation' ne contient pas de définition pour 'ExampleModel'**  
   
      (Visual Basic)  
   
-     **Compiling transformation: 'ExampleModel' is not a member of 'Microsoft.VisualStudio.TextTemplating\<GUID>.GeneratedTextTransformation'.**  
+     **La compilation de transformation : 'ExampleModel' n’est pas un membre de ' Microsoft.VisualStudio.TextTemplating\<GUID >. GeneratedTextTransformation'.**  
   
-     In this case, the text template code contains an incorrect property name. You have specified `ExampleModel` as the property name, but the correct property name is `LibraryModel`. You can find the correct property name in the provides parameter, as shown in the following code:  
+     Dans ce cas, le code de modèle de texte contient un nom de propriété incorrecte. Vous avez spécifié `ExampleModel` comme nom de la propriété, mais la propriété correcte est nom `LibraryModel`. Vous pouvez rechercher le nom de propriété correct dans l’offre de paramètre, comme indiqué dans le code suivant :  
   
     ```  
     <#@ DebuggingTestLanguage processor="DebuggingTestLanguageDirectiveProcessor" requires="fileName='Sample.ddd'" provides="ExampleModel=LibraryModel" #>  
     ```  
   
-3.  Double-click the error in the Error List window to jump to the code.  
+3.  Double-cliquez sur l’erreur dans la fenêtre liste d’erreurs pour accéder au code.  
   
-4.  To correct the code, change the property name to `LibraryModel` in the text template code.  
+4.  Pour corriger le code, remplacez le nom de propriété par `LibraryModel` dans le code de modèle de texte.  
   
-     The changes are highlighted.  
+     Les modifications sont mises en surbrillance.  
   
     ```csharp  
     <#@ template language="C#" inherits="Microsoft.VisualStudio.TextTemplating.VSHost.ModelingTextTransformation"#>  
@@ -210,6 +210,6 @@ When you modify or add text templates in a domain-specific language solution, yo
     #>  
     ```  
   
-5.  In **Solution Explorer**, right-click DebugTest.tt, and then click **Run Custom Tool**.  
+5.  Dans **l’Explorateur de solutions**, DebugTest.tt d’avec le bouton droit, puis cliquez sur **exécuter un outil personnalisé**.  
   
-     Now the system transforms the text template and generates the corresponding output file. You will not see any errors in the **Error List** window.
+     Maintenant, le système transforme le modèle de texte et génère le fichier de sortie correspondant. Vous ne verrez pas les erreurs dans le **liste d’erreurs** fenêtre.
