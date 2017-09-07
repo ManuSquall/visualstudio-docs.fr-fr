@@ -1,60 +1,79 @@
 ---
-title: "Proc&#233;dure&#160;: configurer l&#39;h&#233;ritage &#224; l&#39;aide du Concepteur O/R | Microsoft Docs"
-ms.custom: ""
-ms.date: "12/14/2016"
-ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+title: 'How to: Configure inheritance by using the O-R Designer | Microsoft Docs'
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.tgt_pltfrm: 
+ms.topic: article
 ms.assetid: e594af12-e777-434a-bc08-7dd2dac84cdc
 caps.latest.revision: 4
-caps.handback.revision: 2
-author: "mikeblome"
-ms.author: "mblome"
-manager: "ghogen"
+author: gewarren
+ms.author: gewarren
+manager: ghogen
+translation.priority.ht:
+- de-de
+- es-es
+- fr-fr
+- it-it
+- ja-jp
+- ko-kr
+- ru-ru
+- zh-cn
+- zh-tw
+translation.priority.mt:
+- cs-cz
+- pl-pl
+- pt-br
+- tr-tr
+ms.translationtype: HT
+ms.sourcegitcommit: 33a857c2d8585e2e8da9bcd9158190366a3b6830
+ms.openlocfilehash: e3186eeb2d54f8c2518e645524dd915e90bfe20e
+ms.contentlocale: fr-fr
+ms.lasthandoff: 09/07/2017
+
 ---
-# Proc&#233;dure&#160;: configurer l&#39;h&#233;ritage &#224; l&#39;aide du Concepteur O/R
-Le [!INCLUDE[vs_ordesigner_long](../data-tools/includes/vs_ordesigner_long_md.md)] \([!INCLUDE[vs_ordesigner_short](../data-tools/includes/vs_ordesigner_short_md.md)]\) prend en charge le concept d'héritage à table unique tel qu'il est souvent implémenté dans les systèmes relationnels. L'héritage à table unique fait appel à une seule table de base de données qui contient des champs pour les informations parent et enfant.Avec les données relationnelles, une colonne de discriminateur contient la valeur qui détermine à quelle classe tout enregistrement appartient.  
+# <a name="how-to-configure-inheritance-by-using-the-or-designer"></a>How to: Configure inheritance by using the O/R Designer
+The [!INCLUDE[vs_ordesigner_long](../data-tools/includes/vs_ordesigner_long_md.md)] ([!INCLUDE[vs_ordesigner_short](../data-tools/includes/vs_ordesigner_short_md.md)]) supports the concept of single-table inheritance as it is often implemented in relational systems. In single-table inheritance, there is a single database table that contains fields for both parent information and child information. With relational data, a discriminator column contains the value that determines which class any record belongs to.  
   
- Prenons par exemple une table Persons qui contient tous les employées d'une société.Certaines personnes sont des employés et d'autres des responsables.La table Persons contient une colonne nommée `EmployeeType` qui a une valeur de 1 pour les responsables et une valeur de 2 pour les employés ; c'est la colonne de discriminateur.Dans ce scénario, vous pouvez créer une sous\-classe d'employés et remplir la classe avec uniquement des enregistrements ayant une valeur `EmployeeType` de 2.Vous pouvez également supprimer les colonnes qui ne s'appliquent à aucune de ces classes.  
+ For example, consider a Persons table that contains everyone employed by a company. Some people are employees and some people are managers. The Persons table contains a column named `EmployeeType` that has a value of 1 for managers and a value of 2 for employees; this is the discriminator column. In this scenario, you can create a subclass of employees and populate the class with only records that have an `EmployeeType` value of 2. You can also remove columns that do not apply from each of the classes.  
   
- La création d'un modèle objet qui utilise l'héritage \(et correspond aux données relationnelles\) peut prêter à confusion.La procédure suivante esquisse les étapes requises pour configurer l'héritage avec le Concepteur O\/R.Suivre les étapes génériques sans faire référence à une table existante et aux colonnes risque d'être difficile, c'est pourquoi une procédure pas à pas utilisant des données vous est proposée.Pour plus d'informations sur la configuration d'un héritage à l'aide du [!INCLUDE[vs_ordesigner_short](../data-tools/includes/vs_ordesigner_short_md.md)], consultez [Procédure pas à pas : création de classes LINQ to SQL à l'aide de l'héritage à table unique \(Concepteur O\/R\)](../data-tools/walkthrough-creating-linq-to-sql-classes-by-using-single-table-inheritance-o-r-designer.md).  
+ Creating an object model that uses inheritance (and corresponds to relational data) can be somewhat confusing. The following procedure outlines the steps required for configuring inheritance with the O/R Designer. Following generic steps without referring to an existing table and columns might be difficult, so a walkthrough that uses data has been provided. For detailed step-by-step directions for configuring inheritance by using the [!INCLUDE[vs_ordesigner_short](../data-tools/includes/vs_ordesigner_short_md.md)], see [Walkthrough: Creating LINQ to SQL Classes by Using Single-Table Inheritance (O/R Designer)](../data-tools/walkthrough-creating-linq-to-sql-classes-by-using-single-table-inheritance-o-r-designer.md).  
   
-### Pour créer des classes de données héritées  
+### <a name="to-create-inherited-data-classes"></a>To create inherited data classes  
   
-1.  Ouvrez le [!INCLUDE[vs_ordesigner_short](../data-tools/includes/vs_ordesigner_short_md.md)] en ajoutant un élément **Classes LINQ to SQL** à un projet Visual Basic ou C\# existant.  
+1.  Open the [!INCLUDE[vs_ordesigner_short](../data-tools/includes/vs_ordesigner_short_md.md)] by adding a **LINQ to SQL Classes** item to an existing Visual Basic or C# project.  
   
-2.  Faites glisser la table à utiliser comme classe de base vers le [!INCLUDE[vs_ordesigner_short](../data-tools/includes/vs_ordesigner_short_md.md)].  
+2.  Drag the table you want to use as the base class onto the [!INCLUDE[vs_ordesigner_short](../data-tools/includes/vs_ordesigner_short_md.md)].  
   
-3.  Faites glisser une deuxième copie de la table vers le [!INCLUDE[vs_ordesigner_short](../data-tools/includes/vs_ordesigner_short_md.md)] et renommez\-la.C'est la classe dérivée, ou sous\-classe.  
+3.  Drag a second copy of the table onto the [!INCLUDE[vs_ordesigner_short](../data-tools/includes/vs_ordesigner_short_md.md)] and rename it. This is the derived class, or subclass.  
   
-4.  Cliquez sur **Héritage** sous l'onglet **Concepteur Objet\/Relationnel** de la **Boîte à outils**, puis cliquez sur la sous\-classe \(la table que vous avez renommée\) et connectez\-la à la classe de base.  
-  
-    > [!NOTE]
-    >  Cliquez sur l'élément **Héritage** dans la **Boîte à outils** et relâchez le bouton de la souris, cliquez sur la seconde copie de la classe que vous avez créée à l'étape 3, puis cliquez sur la première classe que vous avez créée à l'étape 2.La flèche sur la ligne d'héritage pointe sur la première classe.  
-  
-5.  Dans chaque classe, supprimez toutes les propriétés d'objet que vous ne souhaitez pas voir apparaître et qui ne sont pas utilisées pour des associations.Vous recevrez un message d'erreur si vous tentez de supprimer des propriétés d'objet utilisées pour des associations : [Impossible de supprimer la propriété \<nom de la propriété\> car elle participe à l'association \<nom de l'association\>](../data-tools/the-property-property-name-cannot-be-deleted-because-it-is-participating-in-the-association-association-name.md).  
+4.  Click **Inheritance** in the **Object Relational Designer** tab of the **Toolbox**, and then click the subclass (the table you renamed) and connect it to the base class.  
   
     > [!NOTE]
-    >  Comme une classe dérivée hérite des propriétés définies dans sa classe de base, les mêmes colonnes ne peuvent pas être définies dans chaque classe.\(Les colonnes sont implémentées sous forme de propriétés.\) Vous pouvez activer la création de colonnes dans la classe dérivée en définissant le Modificateur d'héritage sur la propriété dans la classe de base.Pour plus d'informations, consultez [NOT IN BUILD: Overriding Properties and Methods](http://msdn.microsoft.com/fr-fr/2167e8f5-1225-4b13-9ebd-02591ba90213).  
+    >  Click the **Inheritance** item in the **Toolbox** and release the mouse button, click the second copy of the class you created in step 3, and then click the first class you created in step 2. The arrow on the inheritance line will point to the first class.  
   
-6.  Sélectionnez la ligne d'héritage dans le [!INCLUDE[vs_ordesigner_short](../data-tools/includes/vs_ordesigner_short_md.md)].  
+5.  In each class, delete any object properties that you do not want to appear and that are not used for associations. You will receive an error if you attempt to delete object properties used for associations: [The property \<property name> cannot be deleted because it is participating in the association \<association name>](../data-tools/the-property-property-name-cannot-be-deleted-because-it-is-participating-in-the-association-association-name.md).  
   
-7.  Dans la fenêtre **Propriétés**, affectez à **Propriété du discriminateur** le nom de colonne utilisée pour distinguer les enregistrements dans vos classes.  
+    > [!NOTE]
+    >  Because a derived class inherits the properties defined in its base class, the same columns cannot be defined in each class. (Columns are implemented as properties.) You can enable the creation of columns in the derived class by setting the Inheritance Modifier on the property in the base class. For more information, see [NOT IN BUILD: Overriding Properties and Methods](http://msdn.microsoft.com/en-us/2167e8f5-1225-4b13-9ebd-02591ba90213).  
   
-8.  Affectez à la propriété **Valeur de discriminateur de classe dérivée** la valeur dans la base de données qui désigne l'enregistrement comme type hérité.\(Il s'agit de la valeur stockée dans la colonne de discriminateur et qui est utilisée pour désigner la classe héritée.\)  
+6.  Select the inheritance line in the [!INCLUDE[vs_ordesigner_short](../data-tools/includes/vs_ordesigner_short_md.md)].  
   
-9. Affectez à la propriété **Valeur de discriminateur de classe de base** la valeur qui désigne l'enregistrement comme type de base.\(Il s'agit de la valeur stockée dans la colonne de discriminateur et qui est utilisée pour désigner la classe de base.\)  
+7.  In the **Properties** window, set the **Discriminator Property** to the column name that is used to distinguish the records in your classes.  
   
-10. En option, vous pouvez également affecter à la propriété **Valeur d'héritage par défaut** la désignation d'un type dans une hiérarchie d'héritage utilisée lors du chargement des lignes ne correspondant à aucun code d'héritage défini.En d'autres termes, si une valeur dans la colonne de discriminateur d'un enregistrement ne correspond pas à la valeur de la propriété **Valeur de discriminateur de classe dérivée** ou **Valeur de discriminateur de classe de base**, l'enregistrement se charge selon le type désigné comme **Valeur d'héritage par défaut**.  
+8.  Set the **Derived Class Discriminator Value** property to the value in the database that designates the record as the inherited type. (This is the value that is stored in the discriminator column and that is used to designate the inherited class.)  
   
-## Voir aussi  
- [Vue d'ensemble du Concepteur O\/R](../Topic/LINQ%20to%20SQL%20Tools%20in%20Visual%20Studio1.md)   
- [Procédure pas à pas : création de classes LINQ to SQL \(Concepteur O\/R\)](../Topic/Walkthrough:%20Creating%20LINQ%20to%20SQL%20Classes%20\(O-R%20Designer\).md)   
- [PAVE What's New for Data Application Development in Visual Studio 2012](http://msdn.microsoft.com/fr-fr/3d50d68f-5f44-4915-842f-6d42fce793f1)   
- [Accès aux données dans Visual Studio](../data-tools/accessing-data-in-visual-studio.md)   
- [LINQ à SQL](../Topic/LINQ%20to%20SQL.md)   
- [Procédure pas à pas : création de classes LINQ to SQL à l'aide de l'héritage à table unique \(Concepteur O\/R\)](../data-tools/walkthrough-creating-linq-to-sql-classes-by-using-single-table-inheritance-o-r-designer.md)   
- [NOT IN BUILD: Inheritance in Visual Basic](http://msdn.microsoft.com/fr-fr/e5e6e240-ed31-4657-820c-079b7c79313c)   
- [Héritage](/dotnet/csharp/programming-guide/classes-and-structs/inheritance)
+9. Set the **Base Class Discriminator Value** property to the value that designates the record as a base type. (This is the value that is stored in the discriminator column and that is used to designate the base class.)  
+  
+10. Optionally, you can also set the **Inheritance Default** property to designate a type in an inheritance hierarchy that is used when loading rows that do not match any defined inheritance code. In other words, if a record has a value in its discriminator column that does not match the value in either the **Derived Class Discriminator Value** or **Base Class Discriminator Value** properties, the record will load into the type designated as the **Inheritance Default**.  
+  
+## <a name="see-also"></a>See Also  
+ [LINQ to SQL Tools in Visual Studio](../data-tools/linq-to-sql-tools-in-visual-studio2.md)   
+ [Walkthrough: Creating LINQ to SQL Classes (O-R Designer)](how-to-create-linq-to-sql-classes-mapped-to-tables-and-views-o-r-designer.md)   
+ [PAVE What's New for Data Application Development in Visual Studio 2012](http://msdn.microsoft.com/en-us/3d50d68f-5f44-4915-842f-6d42fce793f1)   
+ [Accessing data in Visual Studio](../data-tools/accessing-data-in-visual-studio.md)   
+ [LINQ to SQL](/dotnet/framework/data/adonet/sql/linq/index)   
+ [Walkthrough: Creating LINQ to SQL Classes by Using Single-Table Inheritance (O/R Designer)](../data-tools/walkthrough-creating-linq-to-sql-classes-by-using-single-table-inheritance-o-r-designer.md)   
+ [NOT IN BUILD: Inheritance in Visual Basic](http://msdn.microsoft.com/en-us/e5e6e240-ed31-4657-820c-079b7c79313c)   
+ [Inheritance](/dotnet/csharp/programming-guide/classes-and-structs/inheritance)
