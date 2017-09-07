@@ -21,8 +21,8 @@ helpviewer_keywords:
 - updating datasets, validating data
 ms.assetid: 79500596-1e4d-478e-a991-a636fd73a622
 caps.latest.revision: 24
-author: mikeblome
-ms.author: mblome
+author: gewarren
+ms.author: gewarren
 manager: ghogen
 translation.priority.ht:
 - de-de
@@ -40,10 +40,10 @@ translation.priority.mt:
 - pt-br
 - tr-tr
 ms.translationtype: HT
-ms.sourcegitcommit: ae39fe6c1a740f29793141b7a3ac4aa285e42ec3
-ms.openlocfilehash: 63bb0c381ab0314b42d9a6a8a695a5ce3ff76388
+ms.sourcegitcommit: 33a857c2d8585e2e8da9bcd9158190366a3b6830
+ms.openlocfilehash: d07ef7ad47fe27de8760a9ab4c7af7be26df9848
 ms.contentlocale: fr-fr
-ms.lasthandoff: 09/06/2017
+ms.lasthandoff: 09/07/2017
 
 ---
 # <a name="validate-data-in-datasets"></a>Validate data in datasets

@@ -1,11 +1,11 @@
 ---
 layout: LandingPage
 title: Scripts
-ms.translationtype: Human Translation
+ms.translationtype: HT
 ms.sourcegitcommit: 77e7ce26df70e41e2328442454fe78c7a663f1f3
 ms.openlocfilehash: 7a3352e08f0e8912939c305de483fe8efd15bd75
 ms.contentlocale: fr-fr
-ms.lasthandoff: 08/11/2017
+ms.lasthandoff: 09/06/2017
 
 ---
 # <a name="scripting-technologies"></a>Technologies de script

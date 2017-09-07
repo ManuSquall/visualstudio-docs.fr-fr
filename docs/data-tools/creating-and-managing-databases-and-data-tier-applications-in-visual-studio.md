@@ -1,36 +1,59 @@
 ---
-title: "Creating and Managing Databases and Data-tier Applications in Visual Studio | Microsoft Docs"
-ms.custom: ""
-ms.date: "12/15/2016"
-ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-helpviewer_keywords: 
-  - "managing change, databases"
-  - "database features of Visual Studio, managing change"
-  - "databases, managing change"
-  - "managing change, database servers"
+title: Creating and managing databases and data-tier applications | Microsoft Docs
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.tgt_pltfrm: 
+ms.topic: article
+helpviewer_keywords:
+- managing change, databases
+- database features of Visual Studio, managing change
+- databases, managing change
+- managing change, database servers
 ms.assetid: 40b51f5a-d52c-44ac-8f84-037a0917af33
 caps.latest.revision: 37
-caps.handback.revision: 35
-author: "mikeblome"
-ms.author: "mblome"
-manager: "ghogen"
+author: gewarren
+ms.author: gewarren
+manager: ghogen
+translation.priority.ht:
+- de-de
+- es-es
+- fr-fr
+- it-it
+- ja-jp
+- ko-kr
+- ru-ru
+- zh-cn
+- zh-tw
+translation.priority.mt:
+- cs-cz
+- pl-pl
+- pt-br
+- tr-tr
+ms.translationtype: HT
+ms.sourcegitcommit: 33a857c2d8585e2e8da9bcd9158190366a3b6830
+ms.openlocfilehash: 096d514ba8b6f15a539e533c26b24a5cd0692999
+ms.contentlocale: fr-fr
+ms.lasthandoff: 09/07/2017
+
 ---
-# Creating and Managing Databases and Data-tier Applications in Visual Studio
+# <a name="creating-and-managing-databases-and-data-tier-applications-in-visual-studio"></a>Creating and managing databases and data-tier applications in Visual Studio
 > [!IMPORTANT]
->  Les projets de base de données inclus dans les versions antérieures d' [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] sont maintenant disponibles dans les outils d' [!INCLUDE[sql_Denali_long](../data-tools/includes/sql_denali_long_md.md)] .  Pour plus d'informations, consultez [Outils de développement de SQL Server](http://go.microsoft.com/fwlink/?LinkId=228126).  
+>  The database projects that were included in earlier versions of [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] are now provided in [!INCLUDE[sql_Denali_long](../data-tools/includes/sql_denali_long_md.md)] tools. For more information, see [SQL Server Developer Tools](http://go.microsoft.com/fwlink/?LinkId=228126).  
   
- Vous pouvez utiliser des projets de base de données pour créer et mettre à jour des bases de données et des applications de couche Données \(DAC\).  Les projets de base de données et d'applications de couche Données vous permettent d'appliquer les techniques de contrôle de version et de gestion de projet au développement de bases de données, de la même façon que vous les appliquez à du code managé ou du code natif.  Vous pouvez aider votre équipe de développement à gérer les modifications apportées aux bases de données et aux serveurs de base de données en créant un *projet d'application de couche Données*, un *projet de base de données* ou un *projet serveur*, et en le mettant sous contrôle de version.  Les membres de votre équipe peuvent alors extraire les fichiers à créer puis générer, et tester les modifications dans un *environnement de développement isolé* \(ou sandbox\), avant de les partager avec les autres membres de l'équipe.  Pour garantir la qualité du code, votre équipe peut tester toutes les modifications d'une version de base de données dans un environnement intermédiaire avant de déployer ces modifications en production.  
+ You can use database projects to create new databases, new data-tier applications (DACs), and to update existing databases and data-tier applications. Both database projects and DAC projects enable you to apply version control and project management techniques to your database development efforts in much the same way that you apply those techniques to managed or native code. You can help your development team manage changes to databases and database servers by creating a *DAC project*, *database project*, or a *server project* and putting it under version control. Members of your team can then check out files to make, build, and test changes in an *isolated development environment*, or sandbox, before sharing them with the team. To help ensure code quality, your team can finish and test all changes for a particular release of the database in a staging environment before you deploy the changes into production.  
   
- Pour une liste des fonctionnalités de base de données qui sont prises en charge par les applications de couche Données, consultez [Fonctionnalités prises en charge dans les applications de couche Données](http://go.microsoft.com/fwlink/?LinkId=164239) sur le site Web Microsoft.  Si vous utilisez des fonctionnalités de votre base de données qui ne sont pas prises en charge par les applications de couche Données, vous devez utiliser un projet de base de données pour gérer les modifications apportées à votre base de données.  
+ For a list of the database features that are supported by Data-tier Applications, see [Features Supported in Data-tier Applications](http://go.microsoft.com/fwlink/?LinkId=164239) on the Microsoft web site. If you use features in your database that are not supported by Data-tier Applications, you should instead use a database project to manage changes to your database.  
   
-## Tâches courantes de niveau supérieur  
+## <a name="common-high-level-tasks"></a>Common High-Level Tasks  
   
-|Tâches de niveau supérieur|Contenu de support|  
-|--------------------------------|------------------------|  
-|**Démarrer le développement d'une application de couche Données :** une application de couche Données est un nouveau concept introduit par [!INCLUDE[sskatmai_r2](../data-tools/includes/sskatmai_r2_md.md)]. Elle contient la définition d'une base de données [!INCLUDE[ssNoVersion](../data-tools/includes/ssnoversion_md.md)] et des objets d'instance de support utilisés par un client\-serveur ou une application à 3 niveaux.  Une application de couche Données comprend des objets de base de données, tels que des tables et des vues, ainsi que des entités d'instance telles que des connexions.  Vous pouvez utiliser [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] pour créer un projet d'application de couche Données, générer un fichier de package d'application de couche Données et envoyer ce fichier de package à un administrateur de base de données pour un déploiement sur une instance du moteur de base de données [!INCLUDE[ssNoVersion](../data-tools/includes/ssnoversion_md.md)].|-   [Création et gestion d'applications de la couche Données](http://go.microsoft.com/fwlink/?LinkId=160741) \(site Web Microsoft\)<br />-   [SQL Server Management Studio](http://go.microsoft.com/fwlink/?LinkId=227328)|  
-|**Exécuter un développement de base de données itératif :** si vous êtes développeur ou testeur, vous devez extraire certaines parties du projet, puis les mettre à jour dans un environnement de développement isolé.  En utilisant ce type d'environnement, vous pouvez tester vos modifications sans affecter les autres membres de l'équipe.  Une fois les modifications terminées, mettez de nouveau les fichiers sous contrôle de version, où les autres membres de l'équipe pourront récupérer vos modifications, les générer et les déployer sur un serveur de test.|-   [requête et éditeurs de texte \(SQL Server Management Studio\)](http://go.microsoft.com/fwlink/?LinkId=227327) \(Site Web Microsoft\)<br />-   [Débogueur Transact\-SQL](http://go.microsoft.com/fwlink/?LinkId=227324) \(Site Web Microsoft\)|  
-|**Créer des prototypes, vérifier des résultats de tests et modifier des scripts et des objets de base de données :** vous pouvez utiliser l'éditeur [!INCLUDE[tsql](../data-tools/includes/tsql_md.md)] pour exécuter l'une de ces tâches courantes.|-   [requête et éditeurs de texte \(SQL Server Management Studio\)](http://go.microsoft.com/fwlink/?LinkId=227327) \(Site Web Microsoft\)|
+|High-Level Task|Supporting Content|  
+|----------------------|------------------------|  
+|**Start development of a data-tier application:** A DAC is a new concept introduced with [!INCLUDE[sskatmai_r2](../data-tools/includes/sskatmai_r2_md.md)] that contains the definition for a [!INCLUDE[ssNoVersion](../data-tools/includes/ssnoversion_md.md)] database and the supporting instance objects that are used by a client-server or 3-tier application. A DAC includes database objects, such as tables and views, together with instance entities such as logins. You can use [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] to create a DAC project, build a DAC package file, and send that DAC package file to a database administrator for deployment onto an instance of the [!INCLUDE[ssNoVersion](../data-tools/includes/ssnoversion_md.md)] database engine.|-   [Creating and Managing Data-tier Applications](http://go.microsoft.com/fwlink/?LinkId=160741) (Microsoft web site)<br />-   [SQL Server Management Studio](http://go.microsoft.com/fwlink/?LinkId=227328)|  
+|**Performing iterative database development:** If you are a developer or a tester, you check out parts of the project and then update them in an isolated development environment. By using this type of environment, you can test  your changes without affecting other members of the team. After the changes are complete, you check the files back into version control, where other team members can obtain your changes and build and deploy them to a test server.|-   [Query and Text Editors (SQL Server Management Studio)](http://go.microsoft.com/fwlink/?LinkId=227327) (Microsoft web site)<br />-   [Transact-SQL Debugger](http://go.microsoft.com/fwlink/?LinkId=227324) (Microsoft web site)|  
+|**Prototyping, verifying test results, and modifying database scripts and objects:** You can use the [!INCLUDE[tsql](../data-tools/includes/tsql_md.md)] editor to perform any one of these common tasks.|-   [Query and Text Editors (SQL Server Management Studio)](http://go.microsoft.com/fwlink/?LinkId=227327) (Microsoft web site)|  
+  
+## <a name="see-also"></a>See Also  
+ [Visual Studio data tools for .NET](../data-tools/visual-studio-data-tools-for-dotnet.md)
+
