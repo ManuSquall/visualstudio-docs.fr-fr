@@ -1,37 +1,56 @@
 ---
-title: "Vous avez s&#233;lectionn&#233; un objet de base de donn&#233;es dans un fournisseur de base de donn&#233;es non pris en charge | Microsoft Docs"
-ms.custom: ""
-ms.date: "12/14/2016"
-ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+title: You have selected a database object from an unsupported database provider | Microsoft Docs
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.tgt_pltfrm: 
+ms.topic: article
 ms.assetid: c0f1298e-31aa-471e-ae19-1bafffd2ae40
 caps.latest.revision: 3
-caps.handback.revision: 1
-author: "mikeblome"
-ms.author: "mblome"
-manager: "ghogen"
+author: gewarren
+ms.author: gewarren
+manager: ghogen
+translation.priority.ht:
+- de-de
+- es-es
+- fr-fr
+- it-it
+- ja-jp
+- ko-kr
+- ru-ru
+- zh-cn
+- zh-tw
+translation.priority.mt:
+- cs-cz
+- pl-pl
+- pt-br
+- tr-tr
+ms.translationtype: HT
+ms.sourcegitcommit: 33a857c2d8585e2e8da9bcd9158190366a3b6830
+ms.openlocfilehash: 80fa49a711987b4f5c8f7542a5eeb8771de77f2c
+ms.contentlocale: fr-fr
+ms.lasthandoff: 09/07/2017
+
 ---
-# Vous avez s&#233;lectionn&#233; un objet de base de donn&#233;es dans un fournisseur de base de donn&#233;es non pris en charge
-Le [!INCLUDE[vs_ordesigner_long](../data-tools/includes/vs_ordesigner_long_md.md)] \([!INCLUDE[vs_ordesigner_short](../data-tools/includes/vs_ordesigner_short_md.md)]\) prend uniquement en charge le fournisseur de données .NET Framework pour SQL Server \(<xref:System.Data.SqlClient>\).Bien que vous puissiez cliquer sur **OK** et continuer d'utiliser des objets de fournisseurs de base de données non pris en charge, vous risquez de rencontrer des comportements inattendus au moment de l'exécution.  
+# <a name="you-have-selected-a-database-object-from-an-unsupported-database-provider"></a>You have selected a database object from an unsupported database provider
+The [!INCLUDE[vs_ordesigner_long](../data-tools/includes/vs_ordesigner_long_md.md)] ([!INCLUDE[vs_ordesigner_short](../data-tools/includes/vs_ordesigner_short_md.md)]) supports only the .NET Framework Data Provider for SQL Server (<xref:System.Data.SqlClient>). Although you can click **OK** and continue to work with objects from unsupported database providers, you may experience unexpected behavior at run time.  
   
 > [!NOTE]
->  Seules les connexions de données qui utilisent le fournisseur de données .NET Framework pour SQL Server sont prises en charge.  
+>  Only data connections that use the .NET Framework Data Provider for SQL Server are supported.  
   
-### Pour corriger cette erreur  
+### <a name="to-correct-this-error"></a>To correct this error  
   
--   Cliquez sur **OK** pour continuer de concevoir les classes d'entité qui mappent à la connexion utilisée par le fournisseur de bases de données non pris en charge.Vous risquez de rencontrer des comportements inattendus en utilisant des fournisseurs de base de données non pris en charge.  
+-   Click **OK** to continue designing the entity classes that map to the connection that uses the unsupported database provider. You might experience unexpected behavior when you use unsupported database providers.  
   
-     \- ou \-  
+     -or-  
   
--   Cliquez sur **Annuler**.  
+-   Click **Cancel**.  
   
-     L'action est arrêtée.Créez ou utilisez une connexion de données qui utilise le fournisseur .NET Framework pour SQL Server.  
+     The action is stopped. Create or use a data connection that uses the .NET Framework Provider for SQL Server.  
   
-## Voir aussi  
- [Concepteur Objet\/Relationnel \(Concepteur O\/R\)](../data-tools/linq-to-sql-tools-in-visual-studio2.md)   
- [LINQ à SQL](../Topic/LINQ%20to%20SQL.md)   
- [Fournisseurs de données .NET Framework](../Topic/.NET%20Framework%20Data%20Providers.md)   
- [Connexion aux données dans Visual Studio](../data-tools/connecting-to-data-in-visual-studio.md)
+## <a name="see-also"></a>See Also  
+ [LINQ to SQL Tools in Visual Studio](../data-tools/linq-to-sql-tools-in-visual-studio2.md)   
+ [LINQ to SQL](/dotnet/framework/data/adonet/sql/linq/index)   
+ [.NET Framework Data Providers](/dotnet/framework/data/adonet/data-providers)   
+ [Accessing data in Visual Studio](../data-tools/accessing-data-in-visual-studio.md)

@@ -1,39 +1,57 @@
 ---
-title: "La cha&#238;ne de connexion contient des informations d&#39;identification avec un mot de passe en texte clair et n&#39;utilise pas la s&#233;curit&#233; int&#233;gr&#233;e | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/24/2016"
-ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+title: The connection string contains credentials with a clear text password and is not using integrated security | Microsoft Docs
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.tgt_pltfrm: 
+ms.topic: article
 ms.assetid: 501d85af-92e0-4471-b280-8a59c0688575
 caps.latest.revision: 3
-caps.handback.revision: 1
-author: "mikeblome"
-ms.author: "mblome"
-manager: "ghogen"
+author: gewarren
+ms.author: gewarren
+manager: ghogen
+translation.priority.ht:
+- de-de
+- es-es
+- fr-fr
+- it-it
+- ja-jp
+- ko-kr
+- ru-ru
+- zh-cn
+- zh-tw
+translation.priority.mt:
+- cs-cz
+- pl-pl
+- pt-br
+- tr-tr
+ms.translationtype: HT
+ms.sourcegitcommit: 33a857c2d8585e2e8da9bcd9158190366a3b6830
+ms.openlocfilehash: f4981240d341aa1f2b8c0753b95d1f34e69cb031
+ms.contentlocale: fr-fr
+ms.lasthandoff: 09/07/2017
+
 ---
-# La cha&#238;ne de connexion contient des informations d&#39;identification avec un mot de passe en texte clair et n&#39;utilise pas la s&#233;curit&#233; int&#233;gr&#233;e
-Voulez\-vous enregistrer la chaîne de connexion dans le fichier DBML actuel et les fichiers de configuration de l'application avec ces informations confidentielles ?Cliquez sur Non pour enregistrer la chaîne de connexion sans les informations confidentielles.  
+# <a name="the-connection-string-contains-credentials-with-a-clear-text-password-and-is-not-using-integrated-security"></a>The connection string contains credentials with a clear text password and is not using integrated security
+Do you want to save the connection string to the current DBML file and application configuration files with this sensitive information?  Click No to save the connection string without the sensitive information.  
   
- Lorsque vous travaillez avec des connexions de données qui incluent des informations confidentielles \(mots de passe inclus dans la chaîne de connexion\), vous pouvez enregistrer la chaîne de connexion dans le fichier DBML et le fichier de configuration de l'application du projet, avec ou sans les informations confidentielles.  
+ When working with data connections that include sensitive information (passwords that are included in the connection string), you are given the option of saving the connection string into a project's DBML file and application configuration file with or without the sensitive information.  
   
 > [!WARNING]
->  Si vous affectez explicitement à la propriété **Paramètres de l'application** des propriétés de **connexion** la valeur **False**, le mot de passe sera ajouté au fichier DBML.  
+>  Explicitly setting the **Connection** properties **Application Settings** property to **False** will add the password to the DBML file.  
   
-### Pour enregistrer la chaîne de connexion avec les informations confidentielles dans les paramètres d'application du projet  
+### <a name="to-save-the-connection-string-with-the-sensitive-information-in-the-projects-application-settings"></a>To save the connection string with the sensitive information in the project's application settings  
   
--   Cliquez sur **Oui**.  
+-   Click **Yes**.  
   
-     La chaîne de connexion est stockée en tant que paramètre d'application.La chaîne de connexion intègre les informations sensibles dans le texte brut.Le fichier DBML ne contient pas les informations sensibles.  
+     The connection string is stored as an application setting. The connection string includes the sensitive information in plain text. The DBML file does not contain the sensitive information.  
   
-### Pour enregistrer la chaîne de connexion sans les informations confidentielles dans les paramètres d'application du projet  
+### <a name="to-save-the-connection-string-without-the-sensitive-information-in-the-projects-application-settings"></a>To save the connection string without the sensitive information in the project's application settings  
   
--   Cliquez sur **Non**.  
+-   Click **No**.  
   
-     La chaîne de connexion est stockée en tant que paramètre d'application, mais le mot de passe n'est pas inclus.  
+     The connection string is stored as an application setting, but the password is not included.  
   
-## Voir aussi  
- [Concepteur Objet\/Relationnel \(Concepteur O\/R\)](../data-tools/linq-to-sql-tools-in-visual-studio2.md)   
- [Connexion aux données dans Visual Studio](../data-tools/connecting-to-data-in-visual-studio.md)
+## <a name="see-also"></a>See Also  
+ [LINQ to SQL Tools in Visual Studio](../data-tools/linq-to-sql-tools-in-visual-studio2.md)

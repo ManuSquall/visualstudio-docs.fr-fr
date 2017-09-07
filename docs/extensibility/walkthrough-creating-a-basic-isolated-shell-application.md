@@ -34,13 +34,13 @@ ms.translationtype: MT
 ms.sourcegitcommit: 47057e9611b824c17077b9127f8d2f8b192d6eb8
 ms.openlocfilehash: e007e366847ac42d3916b16cbde190e8fd755821
 ms.contentlocale: fr-fr
-ms.lasthandoff: 08/17/2017
+ms.lasthandoff: 09/06/2017
 
 ---
 # <a name="walkthrough-creating-a-basic-isolated-shell-application"></a>Procédure pas à pas : Création d’une Application de base de Shell isolé
 Cette procédure pas à pas montre comment créer une solution de shell isolé, personnaliser la fenêtre outil à propos d’et créer un programme d’installation qui installe le shell isolé.  
   
-## <a name="prerequisites"></a>Prérequis  
+## <a name="prerequisites"></a>Conditions préalables  
  Pour suivre cette procédure pas à pas, vous devez installer le Kit de développement logiciel (SDK) Visual Studio. Pour plus d’informations, consultez [Visual Studio SDK](../extensibility/visual-studio-sdk.md). Pour déployer le shell isolé, vous devez également utiliser le Package redistribuable Visual Studio Shell (isolé).  
   
 ## <a name="creating-an-isolated-shell-solution"></a>Création d’une Solution de Shell isolé  

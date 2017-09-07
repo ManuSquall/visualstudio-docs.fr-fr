@@ -108,11 +108,11 @@ Visual C# IntelliSense est disponible quand vous écrivez du code dans l’édi
   
  Pour lancer l'opération Ajouter using, positionnez le curseur sur une référence de type qui ne peut pas être résolue. Par exemple, quand vous créez une application console, puis ajoutez `XmlTextReader` au corps de la méthode `Main`, une balise active apparaît sous le caractère le plus à droite de `XmlTextReader`, car il s’agit d’une référence de type qui ne peut pas être résolue.  
   
- ![Image de l’ajout d’une balise active](~/ide/media/addusesmart.gif "AddUseSmart")  
+ ![Image de l’ajout d’une balise active](../ide/media/addusesmart.gif "AddUseSmart")  
   
  Vous pouvez alors appeler l’opération Ajouter using en la sélectionnant dans le sous-menu **Résoudre** du menu **IntelliSense** ou dans le menu contextuel, ou en l’appelant via la balise active. L’étiquette active est visible uniquement quand le curseur est positionné sur le type indépendant ou à côté de lui.  
   
- ![Image agrandie de la balise active Ajouter using](~/ide/media/addusesmartexp.gif "AddUseSmartExp")  
+ ![Image agrandie de la balise active Ajouter using](../ide/media/addusesmartexp.gif "AddUseSmartExp")  
   
 ### <a name="organize-usings"></a>Organiser les instructions Using  
  Les options **Organiser les instructions Using** trient et suppriment les déclarations `using` et `extern` sans modifier le comportement du code source. Au fil du temps, les fichiers sources peuvent devenir trop importants et difficiles à lire à cause de directives `using` inutiles et désorganisées. Les options **Organiser les instructions Using** compactent le code source en supprimant les directives `using` inutilisées et améliorent la lisibilité en triant les directives.  
@@ -161,11 +161,11 @@ Visual C# IntelliSense est disponible quand vous écrivez du code dans l’édi
   
  Quand vous tapez l'opérateur `+=` après un champ d'événement dans un fichier .cs, IntelliSense vous invite à appuyer sur la touche Tab. Une nouvelle instance d'un délégué pointant vers la méthode qui gère l'événement est alors insérée.  
   
- ![Bouton de raccordement automatique](~/ide/media/vxautohookup.gif "vxAutoHookUp")  
+ ![Bouton de raccordement automatique](../ide/media/vxautohookup.gif "vxAutoHookUp")  
   
  Si vous appuyez sur la touche Tab, IntelliSense complète automatiquement l'instruction pour vous et affiche la référence du gestionnaire d'événements sous forme de texte sélectionné dans l'éditeur de code. Pour terminer la connexion d'événements automatique, IntelliSense vous invite à appuyer de nouveau sur la touche Tab pour créer un stub vide pour le gestionnaire d'événements.  
   
- ![Générer un gestionnaire d’événements](~/ide/media/vxgenerateeventhandler.gif "vxGenerateEventHandler")  
+ ![Générer un gestionnaire d’événements](../ide/media/vxgenerateeventhandler.gif "vxGenerateEventHandler")  
   
 > [!NOTE]
 >  Si un nouveau délégué créé par IntelliSense fait référence à un gestionnaire d'événements existant, IntelliSense communique cette information dans l'info-bulle. Vous pouvez ensuite modifier cette référence, dans la mesure où le texte est déjà sélectionné dans l'éditeur de code. Sinon, la connexion d'événements automatique se termine à ce stade.  

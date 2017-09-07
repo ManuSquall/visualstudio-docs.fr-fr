@@ -1,5 +1,5 @@
 ---
-title: Navigating and Updating a Model in Program Code | Microsoft Docs
+title: "Navigation et la mise à jour d’un modèle dans le Code de programmation | Documents Microsoft"
 ms.custom: 
 ms.date: 11/04/2016
 ms.reviewer: 
@@ -31,67 +31,67 @@ ms.translationtype: MT
 ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
 ms.openlocfilehash: 40f3a1d56019a8bcab4a11ffaf3aa7d37b02d262
 ms.contentlocale: fr-fr
-ms.lasthandoff: 08/28/2017
+ms.lasthandoff: 09/06/2017
 
 ---
-# <a name="navigating-and-updating-a-model-in-program-code"></a>Navigating and Updating a Model in Program Code
-You can write code to create and delete model elements, set their properties, and create and delete links between elements. All changes must be made within a transaction. If the elements are viewed on a diagram, the diagram will be "fixed up" automatically at the end of the transaction.  
+# <a name="navigating-and-updating-a-model-in-program-code"></a>Navigation et mise à jour d'un modèle dans le code de programme
+Vous pouvez écrire du code pour créer et supprimer des éléments de modèle, définir leurs propriétés, créer et supprimer les liens entre des éléments. Toutes les modifications doivent être effectuées dans une transaction. Si les éléments peuvent être affichés sur un diagramme, le diagramme doit être « corrigé « automatiquement à la fin de la transaction.  
   
-## <a name="in-this-topic"></a>In this Topic  
- [An Example DSL Definition](#example)  
+## <a name="in-this-topic"></a>Dans cette rubrique  
+ [Un exemple de définition DSL](#example)  
   
- [Navigating the Model](#navigation)  
+ [Navigation dans le modèle](#navigation)  
   
- [Accessing Class Information](#metadata)  
+ [L’accès aux informations de classe](#metadata)  
   
- [Perform Changes inside a Transaction](#transaction)  
+ [Effectuer des modifications à l’intérieur d’une Transaction](#transaction)  
   
- [Creating Model Elements](#elements)  
+ [Création d’éléments de modèle](#elements)  
   
- [Creating Relationship Links](#links)  
+ [Création de liens de relation](#links)  
   
- [Deleting Elements](#deleteelements)  
+ [Suppression d’éléments](#deleteelements)  
   
- [Deleting Relationship Links](#deletelinks)  
+ [Suppression de liens de relation](#deletelinks)  
   
- [Reordering the Links of a Relationship](#reorder)  
+ [Réorganiser les liens d’une relation](#reorder)  
   
- [Locks](#locks)  
+ [Verrous](#locks)  
   
- [Copy and Paste](#copy)  
+ [Copier et coller](#copy)  
   
- [Navigating and Updating Diagrams](#diagrams)  
+ [Navigation et la mise à jour des diagrammes](#diagrams)  
   
- [Navigating between Shapes and Elements](#views)  
+ [Navigation entre les formes et des éléments](#views)  
   
- [Properties of Shapes and Connectors](#shapeProperties)  
+ [Propriétés des formes et des connecteurs](#shapeProperties)  
   
- [DocView and DocData](#docdata)  
+ [DocView et DocData](#docdata)  
   
-##  <a name="example"></a> An Example DSL Definition  
- This is the main part of DslDefinition.dsl for the examples in this topic:  
+##  <a name="example"></a>Un exemple de définition DSL  
+ Il s’agit de la partie principale de DslDefinition.dsl pour les exemples de cette rubrique :  
   
- ![DSL Definition diagram &#45; family tree model](../modeling/media/familyt_person.png "FamilyT_Person")  
+ ![Diagramme de définition DSL &#45; modèle d’arbre généalogique](../modeling/media/familyt_person.png "FamilyT_Person")  
   
- This model is an instance of this DSL:  
+ Ce modèle est une instance de cette DSL :  
   
- ![Tudor Family Tree Model](../modeling/media/tudor_familytreemodel.png "Tudor_FamilyTreeModel")  
+ ![Modèle d’arbre généalogique Tudor](../modeling/media/tudor_familytreemodel.png "Tudor_FamilyTreeModel")  
   
-### <a name="references-and-namespaces"></a>References and Namespaces  
- To run the code in this topic, you should reference:  
+### <a name="references-and-namespaces"></a>Références et les espaces de noms  
+ Pour exécuter le code dans cette rubrique, vous devez référencer :  
   
  `Microsoft.VisualStudio.Modeling.Sdk.11.0.dll`  
   
- Your code will use this namespace:  
+ Votre code utilise cet espace de noms :  
   
  `using Microsoft.VisualStudio.Modeling;`  
   
- In addition, if you are writing the code in a different project from the one in which your DSL is defined, you should import the assembly that is built by the Dsl project.  
+ En outre, si vous écrivez le code dans un projet différent de celui dans lequel votre DSL est défini, vous devez importer l’assembly qui est généré par le projet de Dsl.  
   
-##  <a name="navigation"></a> Navigating the Model  
+##  <a name="navigation"></a>Navigation dans le modèle  
   
-### <a name="properties"></a>Properties  
- Domain properties that you define in the DSL definition become properties that you can access in program code:  
+### <a name="properties"></a>Propriétés  
+ Propriétés du domaine que vous définissez dans la définition DSL deviennent les propriétés auxquelles vous pouvez accéder dans le code de programme :  
   
  `Person henry = ...;`  
   
@@ -99,28 +99,28 @@ You can write code to create and delete model elements, set their properties, an
   
  `if (henry.Name.EndsWith("VIII")) ...`  
   
- If you want to set a property, you must do so inside a [transaction](#transaction):  
+ Si vous souhaitez définir une propriété, vous devez le faire à l’intérieur d’un [transaction](#transaction):  
   
  `henry.Name = "Henry VIII";`  
   
- If in the DSL definition, a property's **Kind** is **Calculated**, you cannot set it. For more information, see [Calculated and Custom Storage Properties](../modeling/calculated-and-custom-storage-properties.md).  
+ En cas de la définition DSL, une propriété **type** est **calculé**, vous ne pouvez pas la définir. Pour plus d’informations, consultez [calculé et les propriétés de stockage personnalisé](../modeling/calculated-and-custom-storage-properties.md).  
   
-### <a name="relationships"></a>Relationships  
- Domain relationships that you define in the DSL definition become pairs of properties, one on the class at each end of the relationship. The names of the properties appear in the DslDefinition diagram as labels on the roles at each side of the relationship. Depending on the multiplicity of the role, the type of the property is either the class at the other end of the relationship, or a collection of that class.  
+### <a name="relationships"></a>Relations  
+ Relations de domaine que vous définissez dans la définition DSL deviennent des paires de propriétés, l’autre sur la classe à chaque extrémité de la relation. Les noms des propriétés s’affichent dans le diagramme de DslDefinition sous forme d’étiquettes sur les rôles au niveau de chaque côté de la relation. En fonction de la multiplicité du rôle, le type de la propriété est la classe à l’autre extrémité de la relation, soit une collection de cette classe.  
   
  `foreach (Person child in henry.Children) { ... }`  
   
  `FamilyTreeModel ftree = henry.FamilyTreeModel;`  
   
- The properties at opposite ends of a relationship are always reciprocal. When a link is created or deleted, the role properties on both elements are updated. The following expression (which uses the extensions of `System.Linq`) is always true for the ParentsHaveChildren relationship in the example:  
+ Les propriétés à deux extrémités d’une relation sont toujours réciproque. Lorsqu’un lien est créé ou supprimé, les propriétés de rôle sur les deux éléments sont mis à jour. L’expression suivante (qui utilise les extensions de `System.Linq`) est toujours true pour la relation ParentsHaveChildren dans l’exemple :  
   
  `(Person p) => p.Children.All(child => child.Parents.Contains(p))`  
   
  `&& p.Parents.All(parent => parent.Children.Contains(p));`  
   
- **ElementLinks**. A relationship is also represented by a model element called a *link*, which is an instance of the domain relationship type. A link always has one source element and one target element. The source element and the target element can be the same.  
+ **ElementLinks**. Une relation est également représentée par un élément de modèle appelé un *lien*, qui est une instance du type de relation de domaine. Un lien a toujours l’élément d’une source et l’élément d’une cible. L’élément source et l’élément cible peuvent être le même.  
   
- You can access a link and its properties:  
+ Vous pouvez accéder à un lien et ses propriétés :  
   
  `ParentsHaveChildren link = ParentsHaveChildren.GetLink(henry, edward);`  
   
@@ -128,35 +128,35 @@ You can write code to create and delete model elements, set their properties, an
   
  `link == null || link.Parent == henry && link.Child == edward`  
   
- By default, no more than one instance of a relationship is allowed to link any pair of model elements. But if in the DSL definition, the `Allow Duplicates` flag is true for the relationship, then there might be more than one link, and you must use `GetLinks`:  
+ Par défaut, pas plus d’une instance d’une relation est autorisée à lier n’importe quelle paire d’éléments de modèle. Mais si, dans la définition DSL, le `Allow Duplicates` indicateur a la valeur true pour la relation, puis il peut y avoir plusieurs liaisons, et vous devez utiliser `GetLinks`:  
   
  `foreach (ParentsHaveChildren link in ParentsHaveChildren.GetLinks(henry, edward)) { ... }`  
   
- There are also other methods for accessing links. For example:  
+ Il existe également d’autres méthodes pour accéder à des liens. Exemple :  
   
  `foreach (ParentsHaveChildren link in     ParentsHaveChildren.GetLinksToChildren(henry)) { ... }`  
   
- **Hidden roles.** If in the DSL definition, **Is Property Generated** is **false** for a particular role, then no property is generated that corresponds to that role. However, you can still access the links and traverse the links using the methods of the relationship:  
+ **Rôles masqués.** Si, dans la définition DSL, **est la propriété générée** est **false** pour un rôle particulier, puis aucune propriété n’est générée qui correspond à ce rôle. Toutefois, vous pouvez toujours accéder aux liens et parcourir les liens à l’aide des méthodes de la relation :  
   
  `foreach (Person p in ParentsHaveChildren.GetChildren(henry)) { ... }`  
   
- The most frequently used example is the <xref:Microsoft.VisualStudio.Modeling.Diagrams.PresentationViewsSubject> relationship, which links a model element to the shape that displays it on a diagram:  
+ L’exemple le plus fréquemment utilisée est le <xref:Microsoft.VisualStudio.Modeling.Diagrams.PresentationViewsSubject> relation, un élément de modèle est liée à la forme qui l’affiche dans un diagramme :  
   
  `PresentationViewsSubject.GetPresentation(henry)[0] as PersonShape`  
   
-### <a name="the-element-directory"></a>The Element Directory  
- You can access all the elements in the store using the element directory:  
+### <a name="the-element-directory"></a>Le répertoire de l’élément  
+ Vous pouvez accéder à tous les éléments dans le magasin à l’aide de l’annuaire de l’élément :  
   
  `store.ElementDirectory.AllElements`  
   
- There are also methods for finding elements, such as the following:  
+ Il existe également des méthodes pour la recherche d’éléments, tels que les éléments suivants :  
   
  `store.ElementDirectory.FindElements(Person.DomainClassId);`  
   
  `store.ElementDirectory.GetElement(elementId);`  
   
-##  <a name="metadata"></a> Accessing Class Information  
- You can get information about the classes, relationships, and other aspects of the DSL definition. For example:  
+##  <a name="metadata"></a>L’accès aux informations de classe  
+ Vous pouvez obtenir plus d’informations sur les classes, les relations et les autres aspects de la définition DSL. Exemple :  
   
  `DomainClassInfo personClass = henry.GetDomainClass();`  
   
@@ -170,16 +170,16 @@ You can write code to create and delete model elements, set their properties, an
   
  `DomainRoleInfo sourceRole = relationship.DomainRole[0];`  
   
- The ancestor classes of model elements are as follows:  
+ Les classes de l’ancêtre d’éléments de modèle sont les suivantes :  
   
--   ModelElement - all elements and relationships are ModelElements  
+-   ModelElement - tous les éléments et les relations sont ModelElements  
   
--   ElementLink - all relationships are ElementLinks  
+-   ElementLink - toutes les relations sont ElementLinks  
   
-##  <a name="transaction"></a> Perform Changes inside a Transaction  
- Whenever your program code changes anything in the Store, it must do so inside a transaction. This applies to all model elements, relationships, shapes, diagrams, and their properties. For more information, see <xref:Microsoft.VisualStudio.Modeling.Transaction>.  
+##  <a name="transaction"></a>Effectuer des modifications à l’intérieur d’une Transaction  
+ Chaque fois que votre code de programme change rien dans le magasin, il doit le faire à l’intérieur d’une transaction. Cela s’applique à tous les éléments de modèle, des relations, des formes, des diagrammes et leurs propriétés. Pour plus d'informations, consultez <xref:Microsoft.VisualStudio.Modeling.Transaction>.  
   
- The most convenient method of managing a transaction is with a `using` statement enclosed in a `try...catch` statement:  
+ La méthode la plus commode de gérer une transaction est un `using` instruction entre dans un `try...catch` instruction :  
   
 ```  
 Store store; ...  
@@ -205,12 +205,12 @@ catch (Exception ex)
 }  
 ```  
   
- You can make any number of changes inside one transaction. You can open new transactions inside an active transaction.  
+ Vous pouvez effectuer n’importe quel nombre de modifications à l’intérieur d’une transaction. Vous pouvez ouvrir les nouvelles transactions à l’intérieur d’une transaction active.  
   
- To make your changes permanent, you should `Commit` the transaction before it is disposed. If an exception occurs that is not caught inside the transaction, the Store will be reset to its state before the changes.  
+ Pour conserver vos modifications, vous devez `Commit` la transaction avant sa suppression. Si une exception se produit qui n’est pas interceptée à l’intérieur de la transaction, le magasin réinitialisera à son état avant les modifications.  
   
-##  <a name="elements"></a> Creating Model Elements  
- This example adds an element to an existing model:  
+##  <a name="elements"></a>Création d’éléments de modèle  
+ Cet exemple ajoute un élément à un modèle existant :  
   
 ```  
 FamilyTreeModel familyTree = ...; // The root of the model.         
@@ -230,97 +230,97 @@ using (Transaction t =
 }  
 ```  
   
- This example illustrates these essential points about creating an element:  
+ Cet exemple illustre ces points essentiels sur la création d’un élément :  
   
--   Create the new element in a specific partition of the Store. For model elements and relationships, but not shapes, this is usually the default partition.  
+-   Créer le nouvel élément dans une partition spécifique de la banque. Pour les éléments de modèle et des relations, mais pas les formes, il s’agit généralement de la partition par défaut.  
   
--   Make it the target of an embedding relationship. In the DslDefinition of this example, each Person must be the target of embedding relationship FamilyTreeHasPeople. To achieve this, we can either set the FamilyTreeModel role property of the Person object, or add the Person to the People role property of the FamilyTreeModel object.  
+-   Rendre la cible d’une relation d’incorporation. Dans la DslDefinition de cet exemple, chaque personne doit être la cible de relation FamilyTreeHasPeople d’incorporation. Pour ce faire, nous pouvons définir la propriété du rôle FamilyTreeModel de l’objet de la personne, ou ajoutez cette personne à la propriété du rôle de personnes de l’objet FamilyTreeModel.  
   
--   Set the properties of a new element, particularly the property for which `IsName` is true in the DslDefinition. This flag marks the property that serves to identify the element uniquely within its owner. In this case, the Name property has that flag.  
+-   Définir les propriétés d’un nouvel élément, en particulier la propriété pour laquelle `IsName` a la valeur true dans la DslDefinition. Cet indicateur marque la propriété qui sert à identifier l’élément de façon unique au sein de son propriétaire. Dans ce cas, la propriété de nom a cet indicateur.  
   
--   The DSL definition of this DSL must have been loaded into the Store. If you are writing an extension such as a menu command, this will typically be already true. In other cases, you can explicitly load the model into the Store, or use <xref:Microsoft.VisualStudio.Modeling.Integration.ModelBus> to load it. For more information, see [How to: Open a Model from File in Program Code](../modeling/how-to-open-a-model-from-file-in-program-code.md).  
+-   La définition DSL de cette DSL doit avoir été chargée dans le magasin. Si vous écrivez une extension comme une commande de menu, cela sera généralement déjà être true. Dans d’autres cas, vous pouvez explicitement charger le modèle dans le magasin, ou utiliser <xref:Microsoft.VisualStudio.Modeling.Integration.ModelBus> à le charger. Pour plus d’informations, consultez [Comment : ouvrir un modèle à partir du fichier de Code de programme](../modeling/how-to-open-a-model-from-file-in-program-code.md).  
   
- When you create an element in this way, a shape is automatically created (if the DSL has a diagram). It appears in an automatically assigned location, with default shape, color, and other features. If you want to control where and how the associated shape appears, see [Creating an Element and its Shape](#merge).  
+ Lorsque vous créez un élément de cette façon, une forme est automatiquement créée (si la DSL comporte un diagramme). Il s’affiche dans un emplacement automatiquement affecté, avec la forme par défaut, la couleur et autres fonctionnalités. Si vous voulez contrôler comment et où la forme associée, consultez [création d’un élément et sa forme](#merge).  
   
-##  <a name="links"></a> Creating Relationship Links  
- There are two relationships defined in the example DSL definition. Each relationship defines a *role property* on the class at each end of the relationship.  
+##  <a name="links"></a>Création de liens de relation  
+ Il existe deux relations définies dans l’exemple de définition DSL. Chaque relation définit une *propriété role* sur la classe à chaque extrémité de la relation.  
   
- There are three ways in which you can create an instance of a relationship. Each of these three methods has the same effect:  
+ Il existe trois façons dans laquelle vous pouvez créer une instance d’une relation. Chacune de ces trois méthodes a le même effet :  
   
--   Set the property of the source role player. For example:  
+-   Définissez la propriété de l’acteur de rôle source. Exemple :  
   
     -   `familyTree.People.Add(edward);`  
   
     -   `edward.Parents.Add(henry);`  
   
--   Set the property of the target role player. For example:  
+-   Définissez la propriété de l’acteur de rôle cible. Exemple :  
   
     -   `edward.familyTreeModel = familyTree;`  
   
-         The multiplicity of this role is `1..1`, so we assign the value.  
+         La multiplicité de ce rôle est `1..1`, donc nous affectons la valeur.  
   
     -   `henry.Children.Add(edward);`  
   
-         The multiplicity of this role is `0..*`, so we add to the collection.  
+         La multiplicité de ce rôle est `0..*`, donc nous ajouter à la collection.  
   
--   Construct an instance of the relationship explicitly. For example:  
+-   Construire une instance de la relation de façon explicite. Exemple :  
   
     -   `FamilyTreeHasPeople edwardLink = new FamilyTreeHasPeople(familyTreeModel, edward);`  
   
     -   `ParentsHaveChildren edwardHenryLink = new ParentsHaveChildren(henry, edward);`  
   
- The last method is useful if you want to set properties on the relationship itself.  
+ La dernière méthode est utile si vous souhaitez définir des propriétés sur la relation elle-même.  
   
- When you create an element in this way, a connector on the diagram is automatically created, but it has a default shape, color, and other features. To control how the associated connector is created, see [Creating an Element and its Shape](#merge).  
+ Lorsque vous créez un élément de cette façon, un connecteur sur le diagramme est automatiquement créé, mais il a une forme par défaut, la couleur et autres fonctionnalités. Pour contrôler la façon dont le connecteur associé est créé, consultez [création d’un élément et sa forme](#merge).  
   
-##  <a name="deleteelements"></a> Deleting Elements  
- Delete an element by calling `Delete()`:  
+##  <a name="deleteelements"></a>Suppression d’éléments  
+ Supprimer un élément en appelant `Delete()`:  
   
  `henry.Delete();`  
   
- This operation will also delete:  
+ Cette opération supprimera également :  
   
--   Relationship links to and from the element. For example, `edward.Parents` will no longer contain `henry`.  
+-   Relation des liens vers et à partir de l’élément. Par exemple, `edward.Parents` ne contient plus de `henry`.  
   
--   Elements at roles for which the `PropagatesDelete` flag is true. For example, the shape that displays the element will be deleted.  
+-   Éléments sur les rôles pour lesquels le `PropagatesDelete` indicateur a la valeur true. Par exemple, la forme qui affiche l’élément sera supprimée.  
   
- By default, every embedding relationship has `PropagatesDelete` true at the target role. Deleting `henry` does not delete the `familyTree`, but `familyTree.Delete()` would delete all the `Persons`. For more information, see [Customizing Deletion Behavior](../modeling/customizing-deletion-behavior.md).  
+ Par défaut, chaque relation incorporation a `PropagatesDelete` true au niveau du rôle cible. Suppression `henry` ne supprime pas le `familyTree`, mais `familyTree.Delete()` supprime tous les `Persons`. Pour plus d’informations, consultez [comportement de suppression de personnalisation](../modeling/customizing-deletion-behavior.md).  
   
- By default, `PropagatesDelete` is not true for the roles of reference relationships.  
+ Par défaut, `PropagatesDelete` n’est pas vrai pour les rôles de relations de référence.  
   
- You can cause the deletion rules to omit specific propagations when you delete an object. This is useful if you are substituting one element for another. You supply the GUID of one or more roles for which deletion should not be propagated. The GUID can be obtained from the relationship class:  
+ Vous pouvez provoquer les règles de suppression omettre propagations spécifiques lorsque vous supprimez un objet. Cela est utile si vous remplacez un élément d’un autre. Vous fournissez le GUID d’un ou plusieurs rôles pour lesquels la suppression ne doit pas être propagée. Le GUID peut être obtenu à partir de la classe de relation :  
   
  `henry.Delete(ParentsHaveChildren.SourceDomainRoleId);`  
   
- (This particular example would have no effect, because `PropagatesDelete` is `false` for the roles of the `ParentsHaveChildren` relationship.)  
+ (Cet exemple particulier n’a aucun effet, car `PropagatesDelete` est `false` pour les rôles de la `ParentsHaveChildren` relation.)  
   
- In some cases, deletion is prevented by the existence of a lock, either on the element or on an element that would be deleted by propagation. You can use `element.CanDelete()` to check whether the element can be deleted.  
+ Dans certains cas, la suppression est interdite par l’existence d’un verrou, sur l’élément ou sur un élément qui serait supprimé par propagation. Vous pouvez utiliser `element.CanDelete()` pour vérifier si l’élément peut être supprimé.  
   
-##  <a name="deletelinks"></a> Deleting Relationship Links  
- You can delete a relationship link by removing an element from a role property:  
+##  <a name="deletelinks"></a>Suppression de liens de relation  
+ Vous pouvez supprimer un lien de relation en supprimant un élément d’une propriété de rôle :  
   
  `henry.Children.Remove(edward); // or:`  
   
  `edward.Parents.Remove(henry);  // or:`  
   
- You can also delete the link explicitly:  
+ Vous pouvez également supprimer le lien explicitement :  
   
  `edwardHenryLink.Delete();`  
   
- These three methods all have the same effect. You only need to use one of them.  
+ Ces trois méthodes ont toutes le même effet. Vous devez uniquement utiliser un d’eux.  
   
- If the role has 0..1 or 1..1 multiplicity, you can set it to `null`, or to another value:  
+ Si le rôle a une multiplicité de valeur 0.. 1 ou 1.. 1, vous pouvez le définir sur `null`, ou à une autre valeur :  
   
- `edward.FamilyTreeModel = null;` // or:  
+ `edward.FamilyTreeModel = null;`ou :  
   
  `edward.FamilyTreeModel = anotherFamilyTree;`  
   
-##  <a name="reorder"></a> Re-ordering the Links of a Relationship  
- The links of a particular relationship that are sourced or targeted at a particular model element have a specific sequence. They appear in the order in which they were added. For example, this statement will always yield the children in the same order:  
+##  <a name="reorder"></a>Réorganisation sur les liens d’une relation  
+ Les liens d’une relation particulière provenant ou ciblée sur un élément de modèle particulier ont un ordre spécifique. Ils apparaissent dans l’ordre dans lequel ils ont été ajoutés. Par exemple, cette instruction donne toujours les enfants dans le même ordre :  
   
  `foreach (Person child in henry.Children) ...`  
   
- You can change the order of the links:  
+ Vous pouvez modifier l’ordre des liens :  
   
  `ParentsHaveChildren link = GetLink(henry,edward);`  
   
@@ -332,13 +332,13 @@ using (Transaction t =
   
  `link.MoveBefore(role, nextLink);`  
   
-##  <a name="locks"></a> Locks  
- Your changes might be prevented by a lock. Locks can be set on individual elements, on partitions, and on the store. If any of these levels has a lock that prevents the kind of change that you want to make, an exception might be thrown when you attempt it. You can discover whether locks are set by using element.GetLocks(), which is an extension method that is defined in the namespace <xref:Microsoft.VisualStudio.Modeling.Immutability>.  
+##  <a name="locks"></a>Verrous  
+ Un verrou peuvent empêcher vos modifications. Verrous peuvent être définies sur le magasin pour des éléments individuels et sur les partitions. Si l’une de ces niveaux possède un verrou qui empêche le type de modification que vous souhaitez effectuer, une exception peut être levée lorsque vous essayez de vous. Vous pouvez découvrir si les verrous sont définis à l’aide d’élément. GetLocks(), qui est une méthode d’extension qui est définie dans l’espace de noms <xref:Microsoft.VisualStudio.Modeling.Immutability>.  
   
- For more information, see [Defining a Locking Policy to Create Read-Only Segments](../modeling/defining-a-locking-policy-to-create-read-only-segments.md).  
+ Pour plus d’informations, consultez [définition d’une stratégie de verrouillage pour créer des Segments en lecture seule](../modeling/defining-a-locking-policy-to-create-read-only-segments.md).  
   
-##  <a name="copy"></a> Copy and Paste  
- You can copy elements or groups of elements to an <xref:System.Windows.Forms.IDataObject>:  
+##  <a name="copy"></a>Copier et coller  
+ Vous pouvez copier des éléments ou des groupes d’éléments à un <xref:System.Windows.Forms.IDataObject>:  
   
 ```  
 Person person = personShape.ModelElement as Person;  
@@ -348,9 +348,9 @@ personShape.Diagram.ElementOperations
       .Copy(data, person.Children.ToList<ModelElement>());  
 ```  
   
- The elements are stored as a serialized Element Group.  
+ Les éléments sont stockés en tant qu’un groupe d’éléments sérialisés.  
   
- You can merge elements from an IDataObject into a model:  
+ Vous pouvez fusionner les éléments d’une interface IDataObject dans un modèle :  
   
 ```  
 using (Transaction t = targetDiagram.Store.  
@@ -360,32 +360,32 @@ using (Transaction t = targetDiagram.Store.
 }  
 ```  
   
- `Merge ()` can accept either a `PresentationElement` or a `ModelElement`. If you give it a `PresentationElement`, you can also specify a position on the target diagram as a third parameter.  
+ `Merge ()`peut accepter soit un `PresentationElement` ou `ModelElement`. Si vous lui donnez un `PresentationElement`, vous pouvez également spécifier une position sur le schéma cible en tant que troisième paramètre.  
   
-##  <a name="diagrams"></a> Navigating and updating diagrams  
- In a DSL, the domain model element, which represents a concept such as Person or Song, is separate from the shape element, which represents what you see on the diagram. The domain model element stores the important properties and relationships of the concepts. The shape element stores the size, position and color of the object's view on the diagram, and the layout of its component parts.  
+##  <a name="diagrams"></a>Navigation et la mise à jour des diagrammes  
+ Dans une DSL, l’élément de modèle de domaine, qui représente un concept telles que la personne ou une chanson, est distincte de l’élément de forme, qui représente ce que vous voyez sur le diagramme. L’élément de modèle de domaine stocke les propriétés importantes et les relations des concepts. L’élément forme stocke la taille, la position et la couleur de la vue de l’objet sur le diagramme et la disposition de ses composants.  
   
-### <a name="presentation-elements"></a>Presentation Elements  
- ![Class diagram of base shape and element types](../modeling/media/dslshapesandelements.png "DSLshapesAndElements")  
+### <a name="presentation-elements"></a>Éléments de présentation  
+ ![Diagramme de classes des types de forme et élément de base](../modeling/media/dslshapesandelements.png "DSLshapesAndElements")  
   
- In your DSL Definition, each element that you specify creates a class that is derived from one of the following standard classes.  
+ Dans votre définition DSL, chaque élément que vous spécifiez crée une classe qui est dérivée d’une des classes standards suivantes.  
   
-|Kind of element|Base class|  
+|Type d’élément|Classe de base|  
 |---------------------|----------------|  
-|Domain class|<xref:Microsoft.VisualStudio.Modeling.ModelElement>|  
-|Domain relationship|<xref:Microsoft.VisualStudio.Modeling.ElementLink>|  
-|Shape|<xref:Microsoft.VisualStudio.Modeling.Diagrams.NodeShape>|  
-|Connector|<xref:Microsoft.VisualStudio.Modeling.Diagrams.BinaryLinkShape>|  
-|Diagram|<xref:Microsoft.VisualStudio.Modeling.Diagrams.Diagram>|  
+|Classe de domaine|<xref:Microsoft.VisualStudio.Modeling.ModelElement>|  
+|Relation de domaine|<xref:Microsoft.VisualStudio.Modeling.ElementLink>|  
+|Forme|<xref:Microsoft.VisualStudio.Modeling.Diagrams.NodeShape>|  
+|Connecteur|<xref:Microsoft.VisualStudio.Modeling.Diagrams.BinaryLinkShape>|  
+|Diagramme|<xref:Microsoft.VisualStudio.Modeling.Diagrams.Diagram>|  
   
- An element on a diagram usually represents a model element. Typically (but not always), a <xref:Microsoft.VisualStudio.Modeling.Diagrams.NodeShape> represents a domain class instance, and a <xref:Microsoft.VisualStudio.Modeling.Diagrams.BinaryLinkShape> represents a domain relationship instance. The <xref:Microsoft.VisualStudio.Modeling.Diagrams.PresentationViewsSubject> relationship links a node or link shape to the model element that it represents.  
+ Un élément sur un diagramme représente généralement un élément de modèle. En général (mais pas toujours), un <xref:Microsoft.VisualStudio.Modeling.Diagrams.NodeShape> représente une instance de classe de domaine et un <xref:Microsoft.VisualStudio.Modeling.Diagrams.BinaryLinkShape> représente une instance de relation de domaine. Le <xref:Microsoft.VisualStudio.Modeling.Diagrams.PresentationViewsSubject> relation lie une forme de nœud ou un lien vers l’élément de modèle qu’il représente.  
   
- Every node or link shape belongs to one diagram. A binary link shape connects two node shapes.  
+ Chaque forme de nœud ou un lien appartient à un diagramme. Une forme de lien binaire connecte deux formes de nœud.  
   
- Shapes can have child shapes in two sets. A shape in the `NestedChildShapes` set is confined to the bounding box of its parent. A shape in the `RelativeChildShapes` list can appear outside or partly outside the bounds of the parent - for example a label or a port. A diagram has no `RelativeChildShapes` and no `Parent`.  
+ Formes peuvent avoir des formes enfants dans les deux jeux. Une forme dans le `NestedChildShapes` jeu se limite à la zone englobante de son parent. Une forme dans le `RelativeChildShapes` liste peut apparaître en dehors ou partiellement en dehors des limites du parent - par exemple une étiquette ou un port. Un diagramme n’a aucun `RelativeChildShapes` et aucun `Parent`.  
   
-###  <a name="views"></a> Navigating between shapes and elements  
- Domain model elements and shape elements are related by the <xref:Microsoft.VisualStudio.Modeling.Diagrams.PresentationViewsSubject> relationship.  
+###  <a name="views"></a>Navigation entre les formes et des éléments  
+ Les éléments de modèle de domaine et des éléments de forme sont liées par le <xref:Microsoft.VisualStudio.Modeling.Diagrams.PresentationViewsSubject> relation.  
   
 ```csharp  
 // using Microsoft.VisualStudio.Modeling;  
@@ -397,7 +397,7 @@ PersonShape henryShape =
     .FirstOrDefault() as PersonShape;  
 ```  
   
- The same relationship links relationships to connectors on the diagram:  
+ La même relation lie des relations aux connecteurs du diagramme :  
   
 ```  
 Descendants link = Descendants.GetLink(henry, edward);  
@@ -407,7 +407,7 @@ DescendantConnector dc =
 // dc.FromShape == henryShape && dc.ToShape == edwardShape  
 ```  
   
- This relationship also links the root of the model to the diagram:  
+ Cette relation lie également la racine du modèle vers le diagramme :  
   
 ```  
 FamilyTreeDiagram diagram =   
@@ -415,28 +415,28 @@ FamilyTreeDiagram diagram =
       .FirstOrDefault() as FamilyTreeDiagram;  
 ```  
   
- To get the model element represented by a shape, use:  
+ Pour obtenir l’élément de modèle représenté par une forme, utilisez :  
   
  `henryShape.ModelElement as Person`  
   
  `diagram.ModelElement as FamilyTreeModel`  
   
-### <a name="navigating-around-the-diagram"></a>Navigating around the Diagram  
- In general it is not advisable to navigate between shapes and connectors on the diagram. It is better to navigate the relationships in the model, moving between the shapes and connectors only when it is necessary to work on the appearance of the diagram. These methods link connectors to the shapes at each end:  
+### <a name="navigating-around-the-diagram"></a>Naviguer dans le diagramme  
+ En règle générale, il n’est pas conseillé pour naviguer entre les formes et connecteurs du diagramme. Il est préférable de parcourir les relations dans le modèle, le déplacement entre les formes et connecteurs uniquement lorsqu’il est nécessaire travailler sur l’apparence du diagramme. Ces méthodes lier des connecteurs vers les formes à chaque extrémité :  
   
  `personShape.FromRoleLinkShapes, personShape.ToRoleLinkShapes`  
   
  `connector.FromShape, connector.ToShape`  
   
- Many shapes are composites; they are made up of a parent shape and one or more layers of children. Shapes that are positioned relative to another shape are said to be its *children*. When the parent shape moves, the children move with it.  
+ De nombreuses formes sont composites ; elles sont constituées d’une forme parent et une ou plusieurs couches d’enfants. Les formes sont positionnés par rapport à une autre forme sont dits son *enfants*. Lorsque la forme parent se déplace, les enfants se déplacent avec lui.  
   
- *Relative children* can appear outside the bounding box of the parent shape. *Nested* children appear strictly inside the bounds of the parent.  
+ *Les enfants relatifs* peut apparaître en dehors de la zone englobante de la forme parente. *Imbriqué* enfants apparaissent uniquement dans les limites du parent.  
   
- To obtain the top set of shapes on a diagram, use:  
+ Pour obtenir le jeu du haut des formes sur un diagramme, utilisez :  
   
  `Diagram.NestedChildShapes`  
   
- The ancestor classes of shapes and connectors are:  
+ Les classes de l’ancêtre de formes et connecteurs sont :  
   
  <xref:Microsoft.VisualStudio.Modeling.ModelElement>  
   
@@ -456,31 +456,31 @@ FamilyTreeDiagram diagram =
   
  --------- *YourConnector*  
   
-###  <a name="shapeProperties"></a> Properties of Shapes and Connectors  
- In most cases, it is not necessary to make explicit changes to shapes. When you have changed the model elements, the "fix up" rules update the shapes and connectors. For more information, see [Responding to and Propagating Changes](../modeling/responding-to-and-propagating-changes.md).  
+###  <a name="shapeProperties"></a>Propriétés des formes et des connecteurs  
+ Dans la plupart des cas, il n’est pas nécessaire apporter des modifications explicites aux formes. Lorsque vous avez modifié les éléments de modèle, les règles de « correction du » mettre à jour les formes et connecteurs. Pour plus d’informations, consultez [réponse aux et propager les modifications](../modeling/responding-to-and-propagating-changes.md).  
   
- However, it is useful to make some explicit changes to shapes in properties that are independent of the model elements. For example, you could change these properties:  
+ Toutefois, il est utile apporter des modifications explicites aux formes dans les propriétés qui sont indépendantes des éléments de modèle. Par exemple, vous pouvez modifier ces propriétés :  
   
--   <xref:Microsoft.VisualStudio.Modeling.Diagrams.NodeShape.Size%2A> - determines the height and width of the shape.  
+-   <xref:Microsoft.VisualStudio.Modeling.Diagrams.NodeShape.Size%2A>-Détermine la hauteur et la largeur de la forme.  
   
--   <xref:Microsoft.VisualStudio.Modeling.Diagrams.NodeShape.Location%2A> - position relative to the parent shape or diagram  
+-   <xref:Microsoft.VisualStudio.Modeling.Diagrams.NodeShape.Location%2A>-position par rapport à la forme parente ou le schéma  
   
--   <xref:Microsoft.VisualStudio.Modeling.Diagrams.ShapeElement.StyleSet%2A> - the set of pens and brushes used for drawing the shape or connector  
+-   <xref:Microsoft.VisualStudio.Modeling.Diagrams.ShapeElement.StyleSet%2A>-l’ensemble des stylets et pinceaux utilisé pour dessiner la forme ou un connecteur  
   
--   <xref:Microsoft.VisualStudio.Modeling.Diagrams.ShapeElement.Hide%2A> - makes the shape invisible  
+-   <xref:Microsoft.VisualStudio.Modeling.Diagrams.ShapeElement.Hide%2A>-rend la forme invisible  
   
--   <xref:Microsoft.VisualStudio.Modeling.Diagrams.ShapeElement.Show%2A> - makes the shape visible after a `Hide()`  
+-   <xref:Microsoft.VisualStudio.Modeling.Diagrams.ShapeElement.Show%2A>-Affiche la forme après une`Hide()`  
   
-###  <a name="merge"></a> Creating an Element and its Shape  
- When you create an element and link it into the tree of embedding relationships, a shape is automatically created and associated with it. This is done by the "fixup" rules that execute at the end of the transaction. However, the shape will appear in an automatically-assigned location, and its shape, color and other features will have default values. To control how the shape is created, you can use the merge function. You must first add the elements you want to add into an ElementGroup, and then merge the group into the diagram.  
+###  <a name="merge"></a>Création d’un élément et sa forme  
+ Lorsque vous créez un élément et la relier dans l’arborescence de l’incorporation des relations, une forme est automatiquement créée et associée. Cela est effectué par les règles de « correction » qui s’exécutent à la fin de la transaction. Toutefois, la forme apparaît dans un emplacement affecté automatiquement et sa forme, de couleur et d’autres fonctionnalités auront des valeurs par défaut. Pour contrôler la façon dont la forme est créée, vous pouvez utiliser la fonction de fusion. Vous devez d’abord ajouter les éléments que vous souhaitez ajouter dans un ElementGroup et puis de fusionner le groupe dans le diagramme.  
   
- This method:  
+ Cette méthode :  
   
--   Sets the name, if you have assigned a property as the element name.  
+-   Définit le nom, si vous avez attribué une propriété en tant que nom de l’élément.  
   
--   Observes any Element Merge Directives that you specified in the DSL Definition.  
+-   Observe toutes les Directives fusionner l’élément que vous avez spécifié dans la définition DSL.  
   
- This example creates a shape at the mouse position, when the user double-clicks the diagram. In the DSL Definition for this sample, the `FillColor` property of `ExampleShape` has been exposed.  
+ Cet exemple crée une forme à la position de la souris, lorsque l’utilisateur double-clique sur le diagramme. Dans la définition DSL pour cet exemple, le `FillColor` propriété du `ExampleShape` a été exposé.  
   
 ```  
   
@@ -517,24 +517,24 @@ partial class MyDiagram
   
 ```  
   
- If you provide more than one shape, set their relative positions using the `AbsoluteBounds`.  
+ Si vous fournissez plusieurs formes, définir leurs positions relatives à l’aide de la `AbsoluteBounds`.  
   
- You can also set the color and other exposed properties of connectors using this method.  
+ Vous pouvez également définir la couleur et autres propriétés exposées des connecteurs à l’aide de cette méthode.  
   
-### <a name="use-transactions"></a>Use Transactions  
- Shapes, connectors and diagrams are subtypes of <xref:Microsoft.VisualStudio.Modeling.ModelElement> and live in the Store. You must therefore make changes to them only inside a transaction. For more information, see [How to: Use Transactions to Update the Model](../modeling/how-to-use-transactions-to-update-the-model.md).  
+### <a name="use-transactions"></a>Utiliser des Transactions  
+ Formes, les connecteurs et les diagrammes sont des sous-types de <xref:Microsoft.VisualStudio.Modeling.ModelElement> et actives dans le magasin. Vous devez donc modifier leur uniquement à l’intérieur d’une transaction. Pour plus d’informations, consultez [Comment : utiliser les Transactions pour mettre à jour le modèle](../modeling/how-to-use-transactions-to-update-the-model.md).  
   
-##  <a name="docdata"></a> Document View and Document Data  
- ![Class diagram of standard diagram types](../modeling/media/dsldiagramsanddocs.png "DSLDiagramsandDocs")  
+##  <a name="docdata"></a>Affichage du document et les données du Document  
+ ![Diagramme de classes des types de diagramme standard](../modeling/media/dsldiagramsanddocs.png "DSLDiagramsandDocs")  
   
-## <a name="store-partitions"></a>Store Partitions  
- When a model is loaded, the accompanying diagram is loaded at the same time. Typically, the model is loaded into Store.DefaultPartition, and the diagram content is loaded into another Partition. Usually, the content of each partition is loaded and saved to a separate file.  
+## <a name="store-partitions"></a>Stocker les Partitions  
+ Lorsqu’un modèle est chargé, le diagramme qui l’accompagne est chargé en même temps. En règle générale, le modèle est chargé dans Store.DefaultPartition, et le contenu de schéma est chargé dans une autre Partition. En règle générale, le contenu de chaque partition est chargé et enregistré dans un fichier séparé.  
   
-## <a name="see-also"></a>See Also  
+## <a name="see-also"></a>Voir aussi  
  <xref:Microsoft.VisualStudio.Modeling.ModelElement>   
- [Validation in a Domain-Specific Language](../modeling/validation-in-a-domain-specific-language.md)   
- [Generating Code from a Domain-Specific Language](../modeling/generating-code-from-a-domain-specific-language.md)   
- [How to: Use Transactions to Update the Model](../modeling/how-to-use-transactions-to-update-the-model.md)   
- [Integrating Models by using Visual Studio Modelbus](../modeling/integrating-models-by-using-visual-studio-modelbus.md)   
- [Responding to and Propagating Changes](../modeling/responding-to-and-propagating-changes.md)
+ [Validation dans un langage spécifique à un domaine](../modeling/validation-in-a-domain-specific-language.md)   
+ [Génération de Code à partir d’un langage spécifique à un domaine](../modeling/generating-code-from-a-domain-specific-language.md)   
+ [Comment : utiliser des Transactions pour mettre à jour le modèle](../modeling/how-to-use-transactions-to-update-the-model.md)   
+ [Intégration de modèles à l’aide de Visual Studio Modelbus](../modeling/integrating-models-by-using-visual-studio-modelbus.md)   
+ [Propagation et réponse aux modifications](../modeling/responding-to-and-propagating-changes.md)
 

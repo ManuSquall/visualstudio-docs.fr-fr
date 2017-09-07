@@ -1,29 +1,48 @@
 ---
-title: "Impossible de modifier le concepteur en cours de d&#233;bogage | Microsoft Docs"
-ms.custom: ""
-ms.date: "12/14/2016"
-ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+title: The designer cannot be modified while debugging | Microsoft Docs
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.tgt_pltfrm: 
+ms.topic: article
 ms.assetid: 487dafe4-d57c-4be1-9e3a-bb0a8699b2fa
 caps.latest.revision: 3
-caps.handback.revision: 1
-author: "mikeblome"
-ms.author: "mblome"
-manager: "ghogen"
+author: gewarren
+ms.author: gewarren
+manager: ghogen
+translation.priority.ht:
+- de-de
+- es-es
+- fr-fr
+- it-it
+- ja-jp
+- ko-kr
+- ru-ru
+- zh-cn
+- zh-tw
+translation.priority.mt:
+- cs-cz
+- pl-pl
+- pt-br
+- tr-tr
+ms.translationtype: HT
+ms.sourcegitcommit: 33a857c2d8585e2e8da9bcd9158190366a3b6830
+ms.openlocfilehash: f108a7917558e182a784ca933a615c9c64476e5b
+ms.contentlocale: fr-fr
+ms.lasthandoff: 09/07/2017
+
 ---
-# Impossible de modifier le concepteur en cours de d&#233;bogage
-Ce message apparaît lors d'une tentative de modification des éléments dans le Concepteur O\/R alors que l'application s'exécute en mode de débogage.Lorsque l'application s'exécute en mode de débogage, le Concepteur O\/R est accessible en lecture seule.  
+# <a name="the-designer-cannot-be-modified-while-debugging"></a>The designer cannot be modified while debugging
+This message appears when an attempt is made to modify items on the O/R Designer when the application is running in debug mode. When the application is running in debug mode, the O/R Designer is read-only.  
   
-### Pour corriger cette erreur  
+### <a name="to-correct-this-error"></a>To correct this error  
   
--   Cliquez sur **Arrêter le débogage** dans le menu **Déboguer**.  
+-   Click **Stop Debugging** on the **Debug** menu.  
   
-     L'application cesse de déboguer et les éléments du Concepteur O\/R peuvent être modifiés.  
+     The application stops debugging, and items in the O/R Designer can be modified.  
   
-## Voir aussi  
- [Vue d'ensemble du Concepteur O\/R](../Topic/LINQ%20to%20SQL%20Tools%20in%20Visual%20Studio1.md)   
- [Procédure pas à pas : création de classes LINQ to SQL \(Concepteur O\/R\)](../Topic/Walkthrough:%20Creating%20LINQ%20to%20SQL%20Classes%20\(O-R%20Designer\).md)   
- [LINQ à SQL](../Topic/LINQ%20to%20SQL.md)
+## <a name="see-also"></a>See Also  
+ [LINQ to SQL Tools in Visual Studio](../data-tools/linq-to-sql-tools-in-visual-studio2.md)   
+ [Walkthrough: Creating LINQ to SQL Classes (O-R Designer)](how-to-create-linq-to-sql-classes-mapped-to-tables-and-views-o-r-designer.md)   
+ [LINQ to SQL](/dotnet/framework/data/adonet/sql/linq/index)

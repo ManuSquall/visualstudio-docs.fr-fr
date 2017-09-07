@@ -1,34 +1,53 @@
 ---
-title: "Avertissement. Vous avez effectu&#233; certaines modifications dans la bo&#238;te de dialogue Configurer le comportement mais elles n&#39;ont pas &#233;t&#233; appliqu&#233;es. | Microsoft Docs"
-ms.custom: ""
-ms.date: "12/14/2016"
-ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+title: Warning. Changes have been made to the Configure Behavior dialog box that have not been applied | Microsoft Docs
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.tgt_pltfrm: 
+ms.topic: article
 ms.assetid: ce5822dd-4f10-4c86-b707-7766837be216
 caps.latest.revision: 3
-caps.handback.revision: 1
-author: "mikeblome"
-ms.author: "mblome"
-manager: "ghogen"
+author: gewarren
+ms.author: gewarren
+manager: ghogen
+translation.priority.ht:
+- de-de
+- es-es
+- fr-fr
+- it-it
+- ja-jp
+- ko-kr
+- ru-ru
+- zh-cn
+- zh-tw
+translation.priority.mt:
+- cs-cz
+- pl-pl
+- pt-br
+- tr-tr
+ms.translationtype: HT
+ms.sourcegitcommit: 33a857c2d8585e2e8da9bcd9158190366a3b6830
+ms.openlocfilehash: e9ba86170bf9e35258da7c39a8e5f1a980da774d
+ms.contentlocale: fr-fr
+ms.lasthandoff: 09/07/2017
+
 ---
-# Avertissement. Vous avez effectu&#233; certaines modifications dans la bo&#238;te de dialogue Configurer le comportement mais elles n&#39;ont pas &#233;t&#233; appliqu&#233;es.
-Avertissement.Vous avez effectué certaines modifications dans la boîte de dialogue Configurer le comportement mais elles n'ont pas été appliquées.Souhaitez\-vous appliquer vos modifications ?  
+# <a name="warning-changes-have-been-made-to-the-configure-behavior-dialog-box-that-have-not-been-applied"></a>Warning. Changes have been made to the Configure Behavior dialog box that have not been applied
+Warning. Changes have been made to the Configure Behavior dialog box that have not been applied. Do you want to apply your changes?  
   
- La boîte de dialogue **Configurer le comportement** vous permet de configurer les comportements d'insertion, de mise à jour et de suppression pour toutes les classes disponibles.Ce message apparaît lorsque vous sélectionnez une nouvelle combinaison de **Classe** et de **Comportement** et que la modification précédente n'a pas encore été appliquée.  
+ The **Configure Behavior** dialog box enables you to configure Insert, Update, and Delete behavior for all classes available. This message appears when you select a new **Class** and **Behavior** combination and the previous change has not yet been applied.  
   
-### Pour appliquer la modification et continuer  
+### <a name="to-apply-the-change-and-continue"></a>To apply the change and continue  
   
--   Cliquez sur **Oui** pour appliquer la modification à la **Classe** et au **Comportement** sélectionnés.  
+-   Click **Yes** to apply the change to the selected **Class** and **Behavior**.  
   
-### Pour annuler le changement précédent et continuer  
+### <a name="to-cancel-the-previous-change-and-continue"></a>To cancel the previous change and continue  
   
--   Cliquez sur **Non** pour annuler la modification de la **Classe** et du **Comportement** sélectionnés.  
+-   Click **No** to cancel the change to the selected **Class** and **Behavior**.  
   
-## Voir aussi  
- [Concepteur Objet\/Relationnel \(Concepteur O\/R\)](../data-tools/linq-to-sql-tools-in-visual-studio2.md)   
- [Procédure : assigner des procédures stockées pour effectuer des mises à jour, des insertions et des suppressions \(Concepteur O\/R\)](../data-tools/how-to-assign-stored-procedures-to-perform-updates-inserts-and-deletes-o-r-designer.md)   
- [Procédure pas à pas : création de classes LINQ to SQL \(Concepteur O\/R\)](../Topic/Walkthrough:%20Creating%20LINQ%20to%20SQL%20Classes%20\(O-R%20Designer\).md)   
- [LINQ à SQL](../Topic/LINQ%20to%20SQL.md)
+## <a name="see-also"></a>See Also  
+ [LINQ to SQL Tools in Visual Studio](../data-tools/linq-to-sql-tools-in-visual-studio2.md)   
+ [How to: Assign stored procedures to perform updates, inserts, and deletes (O/R Designer)](../data-tools/how-to-assign-stored-procedures-to-perform-updates-inserts-and-deletes-o-r-designer.md)   
+ [Walkthrough: Creating LINQ to SQL Classes (O-R Designer)](how-to-create-linq-to-sql-classes-mapped-to-tables-and-views-o-r-designer.md)   
+ [LINQ to SQL](/dotnet/framework/data/adonet/sql/linq/index)

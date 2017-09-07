@@ -1,36 +1,55 @@
 ---
-title: "Impossible de supprimer la propri&#233;t&#233; &lt;nom de la propri&#233;t&#233;&gt; car elle participe &#224; l&#39;association &lt;nom de l&#39;association&gt; | Microsoft Docs"
-ms.custom: ""
-ms.date: "12/14/2016"
-ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+title: The property &lt;property name&gt; cannot be deleted because it is participating in the association &lt;association name&gt; | Microsoft Docs
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.tgt_pltfrm: 
+ms.topic: article
 ms.assetid: 389873cc-92dd-48da-bfca-0f6c8e0ae3c2
 caps.latest.revision: 3
-caps.handback.revision: 1
-author: "mikeblome"
-ms.author: "mblome"
-manager: "ghogen"
+author: gewarren
+ms.author: gewarren
+manager: ghogen
+translation.priority.ht:
+- de-de
+- es-es
+- fr-fr
+- it-it
+- ja-jp
+- ko-kr
+- ru-ru
+- zh-cn
+- zh-tw
+translation.priority.mt:
+- cs-cz
+- pl-pl
+- pt-br
+- tr-tr
+ms.translationtype: HT
+ms.sourcegitcommit: 33a857c2d8585e2e8da9bcd9158190366a3b6830
+ms.openlocfilehash: ba52151c1d92a648a3392507721a164b669071ea
+ms.contentlocale: fr-fr
+ms.lasthandoff: 09/07/2017
+
 ---
-# Impossible de supprimer la propri&#233;t&#233; &lt;nom de la propri&#233;t&#233;&gt; car elle participe &#224; l&#39;association &lt;nom de l&#39;association&gt;
-La propriété sélectionnée est définie comme **Propriété d'association** pour l'association de classes indiquée dans le message d'erreur.Les propriétés ne peuvent pas être supprimées si elles participent à une association entre des classes de données.  
+# <a name="the-property-ltproperty-namegt-cannot-be-deleted-because-it-is-participating-in-the-association-ltassociation-namegt"></a>The property &lt;property name&gt; cannot be deleted because it is participating in the association &lt;association name&gt;
+The selected property is set as the **Association Property** for the association between the classes indicated in the error message. Properties cannot be deleted if they are participating in an association between data classes.  
   
- Affectez à **Propriété d'association** une propriété différente de la classe de données pour permettre la suppression de la propriété désirée.  
+ Set the **Association Property** to a different property of the data class to enable successful deletion of the desired property.  
   
-### Pour corriger cette erreur  
+### <a name="to-correct-this-error"></a>To correct this error  
   
-1.  Dans le Concepteur O\/R, sélectionnez la ligne d'association qui connecte les classes de données indiquées dans le message d'erreur.  
+1.  Select the association line on the O/R Designer that connects the data classes indicated in the error message.  
   
-2.  Double\-cliquez sur la ligne pour ouvrir la boîte de dialogue **Éditeur d'associations**.  
+2.  Double-click the line to open the **Association Editor** dialog box.  
   
-3.  Supprimez la propriété des **Propriétés d'association**.  
+3.  Remove the property from the **Association Properties**.  
   
-4.  Essayez une nouvelle fois de supprimer la propriété.  
+4.  Try to delete the property again.  
   
-## Voir aussi  
- [Vue d'ensemble du Concepteur O\/R](../Topic/LINQ%20to%20SQL%20Tools%20in%20Visual%20Studio1.md)   
- [Procédure : créer une association \(relation\) entre des classes LINQ to SQL \(Concepteur O\/R\)](../data-tools/how-to-create-an-association-relationship-between-linq-to-sql-classes-o-r-designer.md)   
- [Procédure pas à pas : création de classes LINQ to SQL \(Concepteur O\/R\)](../Topic/Walkthrough:%20Creating%20LINQ%20to%20SQL%20Classes%20\(O-R%20Designer\).md)   
- [LINQ à SQL](../Topic/LINQ%20to%20SQL.md)
+## <a name="see-also"></a>See Also  
+ [LINQ to SQL Tools in Visual Studio](../data-tools/linq-to-sql-tools-in-visual-studio2.md)   
+ [How to: Create an association (relationship) between LINQ to SQL classes (O/R Designer)](../data-tools/how-to-create-an-association-relationship-between-linq-to-sql-classes-o-r-designer.md)   
+ [Walkthrough: Creating LINQ to SQL Classes (O-R Designer)](how-to-create-linq-to-sql-classes-mapped-to-tables-and-views-o-r-designer.md)   
+ [LINQ to SQL](/dotnet/framework/data/adonet/sql/linq/index)

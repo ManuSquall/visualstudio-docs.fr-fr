@@ -1,5 +1,5 @@
 ---
-title: SccCheckin Function | Microsoft Docs
+title: Fonction de SccCheckin | Documents Microsoft
 ms.custom: 
 ms.date: 11/04/2016
 ms.reviewer: 
@@ -34,13 +34,13 @@ ms.translationtype: MT
 ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
 ms.openlocfilehash: b082ca831c17dcab3fbc95f8dd547da23a1f8982
 ms.contentlocale: fr-fr
-ms.lasthandoff: 08/28/2017
+ms.lasthandoff: 09/06/2017
 
 ---
-# <a name="scccheckin-function"></a>SccCheckin Function
-This function checks in previously checked-out files to the source control system, storing the changes and creating a new version. This function is called with a count and an array of names of the files to be checked in.  
+# <a name="scccheckin-function"></a>SccCheckin (fonction)
+Cette fonction vérifie dans les fichiers extraits précédemment pour le système de contrôle de code source, stocke les modifications et la création d’une nouvelle version. Cette fonction est appelée avec un nombre et un tableau de noms de fichiers à archiver.  
   
-## <a name="syntax"></a>Syntax  
+## <a name="syntax"></a>Syntaxe  
   
 ```cpp  
 SCCRTN SccCheckin (  
@@ -54,50 +54,50 @@ SCCRTN SccCheckin (
 );  
 ```  
   
-#### <a name="parameters"></a>Parameters  
+#### <a name="parameters"></a>Paramètres  
  pvContext  
- [in] The source control plug-in context structure.  
+ [in] La structure de contexte plug-in de contrôle de code source.  
   
  hWnd  
- [in] A handle to the IDE window that the SCC plug-in can use as a parent for any dialog boxes that it provides.  
+ [in] Un handle de fenêtre IDE qui permet l’analyse de plug-in en tant que parent pour toutes les boîtes de dialogue qu’il fournit.  
   
  nFiles  
- [in] Number of files selected to be checked in.  
+ [in] Nombre de fichiers sélectionnés à être archivé.  
   
  lpFileNames  
- [in] Array of fully qualified local path names of files to be checked in.  
+ [in] Tableau des noms de chemin qualifié complet des fichiers à archiver.  
   
  lpComment  
- [in] Comment to be applied to each of the selected files being checked in. This is `NULL` if the source control plug-in should prompt for a comment.  
+ [in] Commentaire à appliquer à chaque fichier sélectionné en cours d’archivage. Il s’agit de `NULL` si le plug-in de contrôle de code source doit inviter à entrer un commentaire.  
   
  fOptions  
- [in] Command flags, either 0 or `SCC_KEEP_CHECKEDOUT`.  
+ [in] Indicateurs de commande, soit 0 ou `SCC_KEEP_CHECKEDOUT`.  
   
  pvOptions  
- [in] SCC plug-in-specific options.  
+ [in] Options spécifiques au plug-in de contrôle de code source.  
   
-## <a name="return-value"></a>Return Value  
- The source control plug-in implementation of this function is expected to return one of the following values:  
+## <a name="return-value"></a>Valeur de retour  
+ L’implémentation de plug-in de contrôle de source de cette fonction est censée retourner l’une des valeurs suivantes :  
   
-|Value|Description|  
+|Valeur|Description|  
 |-----------|-----------------|  
-|SCC_OK|Files was successfully checked in.|  
-|SCC_E_FILENOTCONTROLLED|The selected file is not under source code control.|  
-|SCC_E_ACCESSFAILURE|There was a problem accessing the source control system, probably due to network or contention issues. A retry is recommended.|  
-|SCC_E_NONSPECIFICERROR|Nonspecific failure. File was not checked in.|  
-|SCC_E_NOTCHECKEDOUT|The user has not checked out the file, so cannot check it in.|  
-|SCC_E_CHECKINCONFLICT|Checkin could not be performed because:<br /><br /> -   Another user has checked in ahead and `bAutoReconcile` was false.<br /><br /> -or-<br /><br /> -   The auto-merge cannot be done (for example, when files are binary).|  
-|SCC_E_VERIFYMERGE|File has been auto-merged but has not been checked in pending user verification.|  
-|SCC_E_FIXMERGE|File has been auto-merged but has not been checked in due to a merge conflict that must be manually resolved.|  
-|SCC_E_NOTAUTHORIZED|The user is not allowed to perform this operation.|  
-|SCC_I_OPERATIONCANCELED|Operation was cancelled before completion.|  
-|SCC_I_RELOADFILE|A file or project needs to be reloaded.|  
-|SCC_E_FILENOTEXIST|Local file was not found.|  
+|SCC_OK|Fichiers a réussi.|  
+|SCC_E_FILENOTCONTROLLED|Le fichier sélectionné n’est pas sous contrôle de code source.|  
+|SCC_E_ACCESSFAILURE|Impossible d’accéder au système de contrôle source, probablement en raison de problèmes réseau ou de contention. Une nouvelle tentative est recommandée.|  
+|SCC_E_NONSPECIFICERROR|Erreur non spécifique. Fichier n’a pas été activé.|  
+|SCC_E_NOTCHECKEDOUT|L’utilisateur n’a pas extrait le fichier ne peut pas archiver.|  
+|SCC_E_CHECKINCONFLICT|Archivage n’a pas pu être effectuée car :<br /><br /> -Un autre utilisateur a archivé avance et `bAutoReconcile` a la valeur false.<br /><br /> ou<br /><br /> -La fusion automatique ne peut pas être effectuée (par exemple, lorsque les fichiers sont binaires).|  
+|SCC_E_VERIFYMERGE|Fichier a été fusionnée automatiquement, mais n’a pas été vérifiée en attente de vérification de l’utilisateur.|  
+|SCC_E_FIXMERGE|Fichier a été fusionnée automatiquement, mais n’a pas été archivé en raison d’un conflit de fusion qui doit être résolu manuellement.|  
+|SCC_E_NOTAUTHORIZED|L’utilisateur n’est pas autorisé à effectuer cette opération.|  
+|SCC_I_OPERATIONCANCELED|Opération a été annulée avant la fin.|  
+|SCC_I_RELOADFILE|Un fichier ou un projet doit être rechargé.|  
+|SCC_E_FILENOTEXIST|Impossible de trouver le fichier local.|  
   
-## <a name="remarks"></a>Remarks  
- The comment applies to all files being checked in. The comment argument can be a `null` string, in which case the source control plug-in can prompt the user for a comment string for each file.  
+## <a name="remarks"></a>Remarques  
+ Le commentaire s’applique à tous les fichiers en cours d’archivage. L’argument de commentaire peut être un `null` de chaîne, auquel cas le plug-in de contrôle de code source peut demander à l’utilisateur pour une chaîne de commentaire pour chaque fichier.  
   
- The `fOptions` argument can be given a value of the `SCC_KEEP_CHECKEDOUT` flag to indicate the user's intent to check the file in and check it out again.  
+ Le `fOptions` argument peut être donné à une valeur de la `SCC_KEEP_CHECKEDOUT` indicateur pour indiquer l’intention de l’utilisateur à archiver le fichier et l’extraire à nouveau.  
   
-## <a name="see-also"></a>See Also  
- [Source Control Plug-in API Functions](../extensibility/source-control-plug-in-api-functions.md)
+## <a name="see-also"></a>Voir aussi  
+ [Fonctions d’API du plug-in de contrôle de code source](../extensibility/source-control-plug-in-api-functions.md)
