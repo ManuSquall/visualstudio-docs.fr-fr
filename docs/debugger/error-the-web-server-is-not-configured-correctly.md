@@ -1,39 +1,56 @@
 ---
-title: "Erreur&#160;: le serveur Web n&#39;est pas configur&#233; correctement | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-debug"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "vs.debug.remote.projnotconfigured"
-dev_langs: 
-  - "FSharp"
-  - "VB"
-  - "CSharp"
-  - "C++"
-helpviewer_keywords: 
-  - "débogueur, erreurs d'applications Web"
+title: 'Error: The web server is not configured correctly | Microsoft Docs'
+ms.custom: 
+ms.date: 06/08/2017
+ms.reviewer: 
+ms.suite: 
+ms.technology:
+- vs-ide-debug
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords:
+- vs.debug.remote.projnotconfigured
+dev_langs:
+- CSharp
+- VB
+- FSharp
+- C++
+helpviewer_keywords:
+- debugger, Web application errors
 ms.assetid: 875ba87f-c372-4126-8fe3-e33931cf26c0
 caps.latest.revision: 22
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 22
----
-# Erreur&#160;: le serveur Web n&#39;est pas configur&#233; correctement
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+translation.priority.ht:
+- de-de
+- es-es
+- fr-fr
+- it-it
+- ja-jp
+- ko-kr
+- ru-ru
+- zh-cn
+- zh-tw
+translation.priority.mt:
+- cs-cz
+- pl-pl
+- pt-br
+- tr-tr
+ms.translationtype: HT
+ms.sourcegitcommit: 1d4298d60886d8fe8b402b59b1838a4171532ab1
+ms.openlocfilehash: e98410b3b60f2f7259adf7de930ec32fb72fb376
+ms.contentlocale: fr-fr
+ms.lasthandoff: 09/07/2017
 
-Cette erreur peut avoir plusieurs causes :  
+---
+# <a name="error-the-web-server-is-not-configured-correctly"></a>Error: The web server is not configured correctly
+Possible causes of this error include:  
   
--   Une tentative de débogage d’une application Web .NET qui a été copiée sur un ordinateur différent, renommée manuellement ou déplacée.  
+-   Trying to debug a .NET Web application that was copied to a different machine, manually renamed, or moved.  
   
--   Insuffisance des connexions IIS. Pour plus d’informations sur le déploiement d’un site web vers IIS, consultez [Créer un site web](http://www.iis.net/learn/get-started/getting-started-with-iis/create-a-web-site).  
+-   Not having enough IIS connections. For more information about deploying a web site to IIS, see [IIS 8.0 Using ASP.NET 3.5 and ASP.NET 4.5](https://docs.microsoft.com/en-us/iis/get-started/whats-new-in-iis-8/iis-80-using-aspnet-35-and-aspnet-45) and, for ASP.NET Core, see [Host on Windows with IIS](https://docs.asp.net/en/latest/publishing/iis.html).  
   
--   Si vous essayez de déboguer une application ASP.NET, consultez soit [Publication dans IIS](https://docs.asp.net/en/latest/publishing/iis.html) pour obtenir des instructions sur le déploiement vers un ordinateur distant exécutant IIS 8 ou version ultérieure, soit [Débogage distant ASP.NET sur un ordinateur distant IIS 7.5](../debugger/remote-debugging-aspnet-on-a-remote-iis-7-5-computer.md) pour obtenir des instructions sur le déploiement vers un ordinateur distant exécutant IIS 7.5.  
-  
-## Voir aussi  
- [Débogage d'applications Web : erreurs et dépannage](../debugger/debugging-web-applications-errors-and-troubleshooting.md)
+## <a name="see-also"></a>See Also  
+ [Remote Debugging ASP.NET on a Remote IIS Computer](../debugger/remote-debugging-aspnet-on-a-remote-iis-7-5-computer.md)   
+ [Debugging Web Applications: Errors and Troubleshooting](../debugger/debugging-web-applications-errors-and-troubleshooting.md)

@@ -1,43 +1,61 @@
 ---
-title: "Mises en route de Visual Basic et Visual C# | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-general"
-ms.tgt_pltfrm: ""
-ms.topic: "get-started-article"
-helpviewer_keywords: 
-  - "didacticiel C#"
-  - "découvrir C#"
-  - "découvrir VB"
-  - "découvrir Visual Basic"
-  - "didacticiel VB"
-  - "didacticiel de base Visual"
+title: Getting Started with Visual C# and Visual Basic using Visual Studio | Microsoft Docs
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology:
+- vs-ide-general
+ms.tgt_pltfrm: 
+ms.topic: get-started-article
+helpviewer_keywords:
+- C# tutorial
+- Visual Basic tutorial
+- learn VB
+- VB tutorial
+- learn C#
+- learn Visual Basic
 ms.assetid: d57bb19f-58d6-48cc-96cb-ab1c540a25d0
 caps.latest.revision: 13
-author: "kempb"
-ms.author: "kempb"
-manager: "ghogen"
-caps.handback.revision: 13
----
-# Mises en route de Visual Basic et Visual C# #
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
+author: kempb
+ms.author: kempb
+manager: ghogen
+translation.priority.ht:
+- cs-cz
+- de-de
+- es-es
+- fr-fr
+- it-it
+- ja-jp
+- ko-kr
+- pl-pl
+- pt-br
+- ru-ru
+- tr-tr
+- zh-cn
+- zh-tw
+ms.translationtype: HT
+ms.sourcegitcommit: 3ce2d22a82f81db35575275a99d193066068e127
+ms.openlocfilehash: 562e94fb9881bc1844b78466d52611fc51a90a27
+ms.contentlocale: fr-fr
+ms.lasthandoff: 09/07/2017
 
-Si vous débutez en Visual C\# ou en Microsoft Visual Basic, les didacticiels sont un bon point de départ.  L'Aide de Mise en route comprend une suite de leçons qui vous initient à Visual C\# et à Visual Basic.  Amusez\-vous et écrivez une grande application logicielle.  
+---
+# <a name="getting-started-with-visual-c-and-visual-basic-using-visual-studio"></a>Getting Started with Visual C# and Visual Basic using Visual Studio
+Whether you are new to Visual C# or Microsoft Visual Basic, this is the place to start. Getting Started Help is a series of sequential lessons that introduces you to Visual C# and Visual Basic. Have fun, and write some great software.  
   
- Pour en savoir plus sur Visual C\+\+, consultez [Ressources Visual C\+\+](http://msdn.microsoft.com/vstudio/hh386302.aspx).  
+ To learn about Visual C++, see [Visual C++ resources](http://msdn.microsoft.com/vstudio/hh386302.aspx).  
   
-## Dans cette section  
- [Procédure pas à pas : création d'une application simple](../ide/walkthrough-create-a-simple-application-with-visual-csharp-or-visual-basic.md)  
- Identifiez les fenêtres de base dans l'IDE de Visual Studio, optimisez l'expérience de développement en configurant un paramètre, puis créez un programme simple.  
+## <a name="in-this-section"></a>In This Section  
+ [Walkthrough: Create a Simple Application](../ide/walkthrough-create-a-simple-application-with-visual-csharp-or-visual-basic.md)  
+ Identify the basic windows in the Visual Studio IDE, optimize your development experience by configuring a setting, and then build a simple program.  
   
- [Didacticiel 1 : créer une visionneuse d'images](../ide/tutorial-1-create-a-picture-viewer.md)  
- Générez un programme qui charge une image à partir d'un fichier et l'affiche dans une fenêtre.  Apprenez à faire glisser des contrôles \(par exemple, des boutons et des zones d'image\) sur votre formulaire, définissez leurs propriétés et utilisez des conteneurs pour redimensionner facilement le formulaire.  Écrivez vos premières lignes de code.  
+ [Tutorial 1: Create a Picture Viewer](../ide/tutorial-1-create-a-picture-viewer.md)  
+ Build a program that loads a picture from a file and displays it in a window. Learn how to drag controls like buttons and picture boxes on your form, set their properties, and use containers to smoothly resize the form. Get started writing code.  
   
- [Didacticiel 2 : créer un questionnaire mathématique chronométré](../ide/tutorial-2-create-a-timed-math-quiz.md)  
- Générez un questionnaire de mathématiques chronométré, où le joueur doit résoudre quatre problèmes arithmétiques aléatoires dans le temps imparti.  Apprenez à générer des nombres aléatoires grâce à la classe `Random`, à déclencher des événements en utilisant un contrôle `Timer`, à contrôler un flux de programme à l'aide d'instructions `if else` et à effectuer des opérations arithmétiques de base.  
+ [Tutorial 2: Create a Timed Math Quiz](../ide/tutorial-2-create-a-timed-math-quiz.md)  
+ Build a timed math quiz game, where the player must answer four random arithmetic problems within a specified time. Learn how to generate random numbers using the `Random` class, trigger events using a `Timer` control, control program flow using `if else` statements, and perform basic arithmetic operations.  
   
- [Didacticiel 3 : créer un jeu de combinaisons](../ide/tutorial-3-create-a-matching-game.md)  
- Générez un jeu de combinaisons dans lequel le joueur doit associer des paires d'icônes masquées.  Apprenez à contenir des objets à l'aide d'un objet `List`, à utiliser une boucle `foreach`, à suivre l'état d'un formulaire à l'aide de variables de référence, à générer un gestionnaire d'événements que vous pouvez utiliser avec plusieurs objets et à ne déclencher une minuterie qu'une seule fois au démarrage.
+ [Tutorial 3: Create a Matching Game](../ide/tutorial-3-create-a-matching-game.md)  
+ Build a matching game, where the player must match pairs of hidden icons. Learn how to hold objects using a `List` object, use a `foreach` loop, keep track of a form's state using reference variables, build an event handler that you can use with multiple objects, and make a timer fire exactly once when started.
+
