@@ -1,5 +1,5 @@
 ---
-title: Custom Native ETW Heap Events | Microsoft Docs
+title: "Événements de tas ETW natifs personnalisés | Microsoft Docs"
 ms.custom: 
 ms.date: 02/24/2017
 ms.reviewer: 
@@ -33,17 +33,17 @@ ms.translationtype: HT
 ms.sourcegitcommit: 7c87490f8e4ad01df8761ebb2afee0b2d3744fe2
 ms.openlocfilehash: f2a659347823fee4b933463011c0b69c07fa937f
 ms.contentlocale: fr-fr
-ms.lasthandoff: 08/31/2017
+ms.lasthandoff: 09/06/2017
 
 ---
 
-# <a name="custom-native-etw-heap-events"></a>Custom Native ETW Heap Events
+# <a name="custom-native-etw-heap-events"></a>Événements de tas ETW natifs personnalisés
 
-Visual Studio contains a variety of [profiling and diagnostic tools](https://docs.microsoft.com/en-us/visualstudio/profiling/profiling-tools), including a native memory profiler.  This profiler hooks [ETW events](/windows-hardware/drivers/devtest/event-tracing-for-windows--etw-) from the heap provider and provides analysis of how memory is being allocated and used.  By default, this tool can only analyze allocations made from the standard Windows heap, and any allocations outside this native heap would not be displayed.
+Visual Studio contient de nombreux [outils de profilage et de diagnostic](https://docs.microsoft.com/en-us/visualstudio/profiling/profiling-tools), y compris un profileur de mémoire native.  Ce profileur raccorde les [événements ETW](/windows-hardware/drivers/devtest/event-tracing-for-windows--etw-) à partir du fournisseur de tas et fournit une analyse indiquant comment la mémoire est allouée et utilisée.  Par défaut, cet outil peut uniquement analyser les allocations effectuées à partir du tas Windows standard, et aucune allocation en dehors de ce tas natif n’est affichée.
 
-There are many cases in which you may want to use your own custom heap and avoid the allocation overhead from the standard heap.  For instance, you could use [VirtualAlloc](https://msdn.microsoft.com/library/windows/desktop/aa366887(v=vs.85).aspx) to allocate a large amount of memory at the start of the app or game, and then manage your own blocks within that list.  In this scenario, the memory profiler tool would only see that initial allocation, and not your custom management done inside the memory chunk.  However, using the Custom Native Heap ETW Provider, you can let the tool know about any allocations you are making outside the standard heap.
+Il existe de nombreux cas dans lesquels vous souhaiterez utiliser votre propre tas personnalisé et éviter la surcharge d’allocation liée au tas standard.  Par exemple, vous pouvez utiliser [VirtualAlloc](https://msdn.microsoft.com/library/windows/desktop/aa366887(v=vs.85).aspx) pour allouer une grande quantité de mémoire au démarrage de l’application ou du jeu, puis gérer vos propres blocs dans cette liste.  Dans ce scénario, le profileur de mémoire voit uniquement cette allocation initiale, et pas la gestion personnalisée effectuée à l’intérieur du bloc de mémoire.  Toutefois, à l’aide du fournisseur ETW de tas natif personnalisé, vous pouvez laisser l’outil connaître toutes les allocations que vous effectuez en dehors du tas standard.
 
-For example, in a project like the following where `MemoryPool` is a custom heap, you would only see a single allocation on the Windows heap:
+Par exemple, dans un projet comme le suivant où `MemoryPool` est un tas personnalisé, vous voyez une seule allocation sur le tas Windows :
 
 ```cpp
 class Foo
@@ -65,117 +65,117 @@ Foo* pFoo2 = (Foo*)mPool.allocate();
 Foo* pFoo3 = (Foo*)mPool.allocate();
 ```
 
-A snapshot from the [Memory Usage](https://docs.microsoft.com/en-us/visualstudio/profiling/memory-usage) tool without custom heap tracking would show just the single 8192 byte allocation, and none of the custom allocations being made by the pool:
+Un instantané effectué à partir de l’outil [Utilisation de la mémoire](https://docs.microsoft.com/en-us/visualstudio/profiling/memory-usage) sans suivi des tas personnalisés montrerait uniquement l’allocation de 8 192 octets, sans mention des allocations personnalisées effectuées par le pool :
 
-![Windows Heap allocation](media/heap-example-windows-heap.png)
+![Allocation des tas Windows](media/heap-example-windows-heap.png)
 
-By performing the following steps, we can use this same tool to track memory usgae in our custom heap.
+En procédant aux étapes suivantes, nous pouvons utiliser ce même outil pour effectuer le suivi de l’utilisation de la mémoire dans notre tas personnalisé.
 
-## <a name="how-to-use"></a>How to Use
+## <a name="how-to-use"></a>Utilisation
 
-This library can be easily used in C and C++.
+Cette bibliothèque peut facilement être utilisée en C et C++.
 
-1. Include the header for the custom heap ETW provider:
+1. Incluez l’en-tête pour le fournisseur ETW de tas personnalisé :
 
    ```cpp
    #include <VSCustomNativeHeapEtwProvider.h>
    ```
 
-1. Add the `__declspec(allocator)` decorator to any function in your custom heap manager that returns a pointer to newly allocated heap memory.  This decorator allows the tool to correctly identify the type of the memory being returned.  For example:
+1. Ajoutez l’élément décoratif `__declspec(allocator)` à toute fonction dans votre gestionnaire de tas personnalisé qui retourne un pointeur vers la mémoire de tas nouvellement allouée.  Cet élément décoratif permet à l’outil d’identifier le type de la mémoire retournée.  Exemple :
 
    ```cpp
    __declspec(allocator) void *MyMalloc(size_t size);
    ```
    
    > [!NOTE]
-   > This decorator will tell the compiler that this function is a call to an allocator.  Each call to the function will output the address of the callsite, the size of the call instruction, and the typeId of the new object to a new `S_HEAPALLOCSITE` symbol.  When a callstack is allocated, Windows will emit an ETW event with this information.  The memory profiler tool walks the callstack looking for a return address matching an `S_HEAPALLOCSITE` symbol, and the typeId information in the symbol is used to display the runtime type of the allocation.
+   > Cet élément décoratif indique au compilateur que cette fonction est un appel à un allocateur.  Chaque appel à la fonction génère l’adresse du site d’appel, la taille de l’instruction d’appel et l’ID de type du nouvel objet dans un nouveau symbole `S_HEAPALLOCSITE`.  Quand une pile d’appels est allouée, Windows émet un événement ETW avec ces informations.  Le profileur de mémoire recherche, dans la pile d’appels, une adresse de retour correspondant à un symbole `S_HEAPALLOCSITE`, et les informations d’ID de type dans le symbole servent à afficher le type de runtime de l’allocation.
    >
-   > In short, this means a call that looks like `(B*)(A*)MyMalloc(sizeof(B))` will show up in the tool as being of type `B`, not `void` or `A`.
+   > En résumé, cela signifie qu’un appel qui ressemble à `(B*)(A*)MyMalloc(sizeof(B))` s’affiche dans l’outil comme étant de type `B`, et non `void` ou `A`.
 
-1. For C++, create the `VSHeapTracker::CHeapTracker` object, providing a name for the heap, which will show up in the profiling tool:
+1. Si vous utilisez C++, créez l’objet `VSHeapTracker::CHeapTracker`, en fournissant un nom pour le tas, qui s’affichera dans l’outil de profilage :
 
    ```cpp
    auto pHeapTracker = std::make_unique<VSHeapTracker::CHeapTracker>("MyCustomHeap");
    ```
 
-   If you are using C, use the `OpenHeapTracker` function instead.  This function will return a handle that you will use when calling other tracking functions:
+   Dans le cas de C, utilisez la fonction `OpenHeapTracker` à la place.  Cette fonction retourne un handle qui permet d’appeler d’autres fonctions de suivi :
   
    ```C
    VSHeapTrackerHandle hHeapTracker = OpenHeapTracker("MyHeap");
    ```
 
-1. When allocating memory using your custom function, call the `AllocateEvent` (C++) or `VSHeapTrackerAllocateEvent` (C) method, passing in the pointer to the memory and its size, to track the allocation:
+1. Quand vous allouez de la mémoire à l’aide de votre fonction personnalisée, appelez la méthode `AllocateEvent` (C++) ou `VSHeapTrackerAllocateEvent` (C), en passant le pointeur désignant la mémoire et sa taille, pour effectuer le suivi de l’allocation :
 
    ```cpp
    pHeapTracker->AllocateEvent(memPtr, size);
    ```
 
-   or
+   ou
 
    ```C
    VSHeapTrackerAllocateEvent(hHeapTracker, memPtr, size);
    ```
 
    > [!IMPORTANT]
-   > Don't forget to tag your custom allocator function with the `__declspec(allocator)` decorator described earlier.
+   > N’oubliez pas de baliser votre fonction d’allocateur personnalisée avec l’élément décoratif `__declspec(allocator)` décrit plus haut.
 
-1. When deallocating memory using your custom function, call the `DeallocateEvent` (C++) or `VSHeapTracerDeallocateEvent` (C) function, passing in the pointer to the memory, to track the deallocation:
+1. Quand vous désallouez de la mémoire à l’aide de votre fonction personnalisée, appelez la fonction `DeallocateEvent` (C++) ou `VSHeapTracerDeallocateEvent` (C), en passant le pointeur désignant la mémoire, pour effectuer le suivi de la désallocation :
 
    ```cpp
    pHeapTracker->DeallocateEvent(memPtr);
    ```
 
-   or:
+   ou :
 
    ```C
    VSHeapTrackerDeallocateEvent(hHeapTracker, memPtr);
    ```
 
-1. When reallocating memory using your custom function, call the `ReallocateEvent` (C++) or `VSHeapReallocateEvent` (C) method, passing in a pointer to the new memory, the size of the allocation, and a pointer to the old memory:
+1. Quand vous réallouez de la mémoire à l’aide de votre fonction personnalisée, appelez la méthode `ReallocateEvent` (C++) ou `VSHeapReallocateEvent` (C), en passant un pointeur désignant la nouvelle mémoire, la taille de l’allocation et un pointeur désignant l’ancienne mémoire :
 
    ```cpp
    pHeapTracker->ReallocateEvent(memPtrNew, size, memPtrOld);
    ```
 
-   or:
+   ou :
 
    ```C
    VSHeapTrackerReallocateEvent(hHeapTracker, memPtrNew, size, memPtrOld);
    ```
 
-1. Finally, to close and clean up the custom heap tracker in C++, use the `CHeapTracker` destructor, either manually or via standard scoping rules, or the `CloseHeapTracker` function in C:
+1. Enfin, pour fermer et nettoyer le dispositif de suivi du tas personnalisé en C++, utilisez le destructeur `CHeapTracker`, manuellement ou par le biais de règles de portée standard, ou la fonction `CloseHeapTracker` dans C :
 
    ```cpp
    delete pHeapTracker;
    ```
 
-   or:
+   ou :
 
    ```C
    CloseHeapTracker(hHeapTracker);
    ```
 
-## <a name="tracking-memory-usage"></a>Tracking Memory Usage
-With these calls in place, your custom heap usage can now be tracked using the standard **Memory Usage** tool in Visual Studio.  For more information on how to use this tool, please see the [Memory Usage](https://docs.microsoft.com/en-us/visualstudio/profiling/memory-usage) documentation. Ensure you have enabled heap profiling with snapshots, otherwise you will not see your custom heap usage displayed. 
+## <a name="tracking-memory-usage"></a>Suivi de l’utilisation de la mémoire
+Une fois ces appels en place, vous pouvez effectuer le suivi de l’utilisation du tas personnalisé à l’aide de l’outil **Utilisation de la mémoire** standard disponible dans Visual Studio.  Pour plus d’informations sur l’utilisation de cet outil, consultez la documentation [Memory Usage](https://docs.microsoft.com/en-us/visualstudio/profiling/memory-usage) (Utilisation de la mémoire). Vous devez activer le profilage du tas avec des instantanés pour que l’utilisation du tas personnalisé s’affiche. 
 
-![Enable Heap Profiling](media/heap-enable-heap.png)
+![Activer le profilage du tas](media/heap-enable-heap.png)
 
-To view your custom heap tracking, use the **Heap** dropdown located at the upper-right corner of the **Snapshot** window to change the view from *NT Heap* to your own heap as named previously.
+Pour afficher le suivi de votre tas personnalisé, dans le coin supérieur droit de la fenêtre **Instantané**, ouvrez le menu déroulant **Tas**, puis, à la place de *Tas NT*, choisissez votre propre tas, tel que vous l’avez nommé.
 
-![Heap Selection](media/heap-example-custom-heap.png)
+![Sélection du tas](media/heap-example-custom-heap.png)
 
-Using the code example above, with `MemoryPool` creating a `VSHeapTracker::CHeapTracker` object, and our own `allocate` method now calling the `AllocateEvent` method, you can now see the result of that custom allocation, showing 3 instances totaling 24 bytes, all of type `Foo`.
+À l’aide de l’exemple de code ci-dessus, avec `MemoryPool` créant un objet `VSHeapTracker::CHeapTracker` et notre propre méthode `allocate` appelant maintenant la méthode `AllocateEvent`, vous pouvez maintenant voir le résultat de cette allocation personnalisée, qui affiche 3 instances pour un total de 24 octets, toutes de type `Foo`.
 
-The default *NT Heap* heap looks the same as earlier, with the addition of our `CHeapTracker` object.
+Le tas *Tas NT* par défaut a le même aspect qu’auparavant, à ceci près que notre objet `CHeapTracker` lui a été ajouté.
 
-![NT Heap with Tracker](media/heap-example-windows-heap.png)
+![Tas NT avec dispositif de suivi](media/heap-example-windows-heap.png)
 
-As with the standard Windows heap, you can also use this tool to compare snapshots and look for leaks and corruption in your custom heap, which is described in the main [Memory Usage](https://docs.microsoft.com/en-us/visualstudio/profiling/memory-usage) documentation.
+Comme avec le tas Windows standard, vous pouvez également utiliser cet outil pour comparer des instantanés et rechercher des fuites et des défaillances dans votre tas personnalisé, comme le décrit la documentation principale [Memory Usage](https://docs.microsoft.com/en-us/visualstudio/profiling/memory-usage) (Utilisation de la mémoire).
 
 > [!TIP]
-> Visual Studio also contains a **Memory Usage** tool in the **Performance Profiling** toolset, which is enabled from the **Debug > Performance Profiler** menu option, or the **Alt+F2** keyboard combination.  This feature does not include heap tracking and will not display your custom heap as described here.  Only the **Diagnostic Tools** window, which can be enabled with the **Debug > Windows > Show Diagnostic Tools** menu, or the **Ctrl+Alt+F2** keyboard combination, contains this functionality.
+> Visual Studio contient également un outil **Utilisation de la mémoire** dans l’ensemble d’outils de **profilage des performances**, que vous pouvez activer à l’aide de l’option de menu **Déboguer > Profileur de performances** ou de la combinaison de touches **Alt+F2**.  Cette fonctionnalité n’inclut pas le suivi de tas et n’affiche pas votre tas personnalisé comme décrit ici.  Cette fonctionnalité est uniquement disponible dans la fenêtre **Outils de diagnostic**, que vous pouvez activer avec le menu **Déboguer > Fenêtres > Afficher les outils de diagnostic** ou la combinaison de touches **Ctrl+Alt+F2**.
 
-## <a name="see-also"></a>See Also
-* [Profiling Tools](https://docs.microsoft.com/en-us/visualstudio/profiling/profiling-tools)
-* [Memory Usage](https://docs.microsoft.com/en-us/visualstudio/profiling/memory-usage)
+## <a name="see-also"></a>Voir aussi
+* [Outils de profilage](https://docs.microsoft.com/en-us/visualstudio/profiling/profiling-tools)
+* [Utilisation de la mémoire](https://docs.microsoft.com/en-us/visualstudio/profiling/memory-usage)
 
