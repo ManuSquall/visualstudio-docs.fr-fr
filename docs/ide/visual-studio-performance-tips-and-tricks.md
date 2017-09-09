@@ -1,5 +1,5 @@
 ---
-title: Visual Studio Performance Tips and Tricks | Microsoft Docs
+title: "Conseils et astuces pour améliorer les performances de Visual Studio | Microsoft Docs"
 ms.date: 08/31/2017
 ms.reviewer: 
 ms.suite: 
@@ -33,123 +33,123 @@ ms.translationtype: HT
 ms.sourcegitcommit: 4306111cd49a5299bfa5d4e5e22b212bc7799fe2
 ms.openlocfilehash: fbaa543564506a99d3ed6833ec4d1f692fae43f7
 ms.contentlocale: fr-fr
-ms.lasthandoff: 09/02/2017
+ms.lasthandoff: 09/06/2017
 
 ---
-# <a name="visual-studio-performance-tips-and-tricks"></a>Visual Studio Performance Tips and Tricks
+# <a name="visual-studio-performance-tips-and-tricks"></a>Conseils et astuces pour améliorer les performances de Visual Studio
 
-Visual Studio performance recommendations are intended for low memory situations, which may occur in rare cases. In these situations, you can optimize certain Visual Studio features that you may not be using. The following tips are not intended as general recommendations.
+Les recommandations pour améliorer les performances de Visual Studio concernent les cas où la mémoire est insuffisante, ce qui se produit rarement. Dans ces situations, vous pouvez optimiser certaines fonctionnalités de Visual Studio que vous n’utilisez peut-être pas. Les conseils suivants ne sont pas à interpréter comme des recommandations générales.
 
 > [!NOTE]
-> If you’re having difficulty using the product because of memory issues, let us know through the feedback tool.
+> Si vous rencontrez des difficultés à utiliser le produit en raison de problèmes de mémoire, faites-le nous savoir à travers l’outil de commentaires.
 
-## <a name="optimize-your-environment"></a>Optimize your environment
+## <a name="optimize-your-environment"></a>Optimiser votre environnement
 
-- **Use a 64bit OS**
+- **Utiliser un système d’exploitation 64 bits**
 
-    If you upgrade your system from a 32-bit version of Windows to a 64-bit version, you expand the amount of virtual memory available to Visual Studio from 2 GB to 4 GB. This enables Visual Studio to handle significantly larger workloads even though it is 32-bit process.
+    Si vous mettez à niveau votre système d’une version 32 bits de Windows vers une version 64 bits, vous passez de 2 Go à 4 Go la quantité de mémoire virtuelle disponible pour Visual Studio. Cela permet à Visual Studio de gérer des charges de travail beaucoup plus importantes, même avec un processus 32 bits.
 
-    For more information, see [Memory limits](https://msdn.microsoft.com/en-us/library/windows/desktop/aa366778(v=vs.85).aspx#memory_limits) and [Using /LARGEADDRESSAWARE on 64-bit Windows](https://blogs.msdn.microsoft.com/oldnewthing/20050601-24/?p=35483/).
+    Pour plus d’informations, consultez la page sur les [limites de mémoire](https://msdn.microsoft.com/en-us/library/windows/desktop/aa366778(v=vs.85).aspx#memory_limits) et l’[utilisation de /LARGEADDRESSAWARE sur Windows 64 bits](https://blogs.msdn.microsoft.com/oldnewthing/20050601-24/?p=35483/).
 
-## <a name="configure-solution-and-projects"></a>Configure solution and projects
+## <a name="configure-solution-and-projects"></a>Configurer des solutions et des projets
 
-If you have a very large solution with many projects, you may benefit by making the following optimizations:
+Si votre solution est très volumineuse et contient de nombreux projets, vous pouvez apporter les optimisations suivantes :
 
-- **Enable Lightweight Solution Load**
+- **Activer le chargement de solution allégé**
 
-    Using **Lightweight Solution Load** may improve memory and CPU performance by deferring the load of some projects within your solution. You can also enable this feature per-solution. This option is off by default.
+    L’utilisation du **chargement de solution allégé** peut améliorer la mémoire et les performances du processeur en différant la charge de certains projets dans votre solution. Vous pouvez également activer cette fonctionnalité par solution. Cette option est désactivée par défaut.
 
-    To enable **Lightweight Solution Load**, choose **Tools > Options > Projects and Solutions > Lightweight Solution Load**.
+    Pour activer le **Chargement de solution allégé**, choisissez **Outils > Options > Projets et solutions > Chargement de solution allégé**.
 
-    Some IDE features are not enabled in this mode. To determine whether this choice may help, see [Shorter solution load time](https://blogs.msdn.microsoft.com/visualstudio/2016/10/11/shorter-solution-load-time-in-visual-studio-15/) and [Optimize solution loading](../ide/optimize-solution-loading-in-visual-studio).
+    Certaines fonctionnalités de l’IDE ne sont pas activées dans ce mode. Pour déterminer si ce choix peut être utile, consultez [Raccourcir la durée de chargement des solutions](https://blogs.msdn.microsoft.com/visualstudio/2016/10/11/shorter-solution-load-time-in-visual-studio-15/) et [Optimiser le chargement de la solution](../ide/optimize-solution-loading-in-visual-studio).
 
-- **Unload Projects**
+- **Déchargement de projets**
 
-    You can manually unload rarely used individual projects from Solution Explorer using the right-click context menu.
+    Vous pouvez manuellement décharger les projets individuels rarement utilisés à partir de l’Explorateur de solutions à l’aide du menu contextuel.
 
-- **Refactor the solution**
+- **Refactoriser la solution**
 
-    You can split your solution into several smaller solution files with commonly used projects. This refactoring should significantly reduce memory usage for your workflow. Smaller solutions also load faster.
+    Vous pouvez fractionner votre solution en plusieurs petits fichiers solution dans les projets couramment utilisés. Cette refactorisation doit réduire considérablement l’utilisation de mémoire pour votre flux de travail. Les solutions plus petites se chargent également plus vite.
 
-## <a name="configure-debugging-options"></a>Configure debugging options
-If you are typically running low on memory during debugging sessions, you can optimize performance by making one or more configuration changes.
+## <a name="configure-debugging-options"></a>Configurer les options de débogage
+En règle générale, si vous manquez de mémoire pendant le débogage des sessions, vous pouvez optimiser les performances en modifiant un peu la configuration.
 
-- **Enable Just My Code**
+- **Activer Uniquement mon code**
 
-    The simplest optimization is to enable the **Just My Code** feature, which only loads symbols for your project. Enabling this feature can result in a significant memory saving for debugging managed applications (.NET). This option is already enabled by default in some project types.
+    L’optimisation la plus simple consiste à activer la fonctionnalité **Uniquement mon code**, qui charge uniquement des symboles pour votre projet. L’activation de cette fonctionnalité peut contribuer à économiser considérablement la mémoire pour le débogage des applications managées (.NET). Cette option est déjà activée par défaut dans certains types de projets.
 
-    To enable **Just My Code**, choose **Tools > Options > Debugging > General**, and then select **Enable Just My Code**.
+    Pour activer **Uniquement mon code**, choisissez **Outils > Options > Débogage > Général**, puis sélectionnez **Activer Uniquement mon code**.
 
-- **Specify symbols to load**
+- **Spécifier les symboles à charger**
 
-    For native debugging, loading symbol files (.pdb) is expensive in terms of memory resources. You can configure your debugger symbol settings to conserve memory. Typically, you configure the solution to only load modules from your project.
+    Pour le débogage natif, le chargement des fichiers de symboles (.pdb) consomme beaucoup de mémoire. Vous pouvez configurer les paramètres de symboles de votre débogueur pour économiser la mémoire. En règle générale, vous configurez la solution pour charger uniquement les modules de votre projet.
 
-    To specify symbol loading, choose **Tools > Options > Debugging > Symbols**.
+    Pour spécifier le chargement des symboles, choisissez **Outils > Options > Débogage > Symboles**.
 
-    Set the options to **Only specified modules** instead of **All modules** and then specify which modules you care to load. While debugging, you can also right-click specific modules in the **Modules** window to explicitly include a module in the symbol load. (To open the window while debugging, choose **Debug > Windows > Modules**.)
+    Définissez les options sur **Uniquement les modules spécifiés** au lieu de **Tous les modules**, puis spécifiez les modules que vous voulez charger. Pendant le débogage, vous pouvez également cliquer avec le bouton droit sur des modules spécifiques dans la fenêtre **Modules** pour inclure explicitement un module dans le chargement de symboles. (Pour ouvrir la fenêtre pendant le débogage, choisissez **Déboguer > Fenêtres > Modules**.)
 
-    For more information, see [Understanding symbol files](https://blogs.msdn.microsoft.com/visualstudioalm/2015/01/05/understanding-symbol-files-and-visual-studios-symbol-settings/).
+    Pour plus d'informations, consultez [Présentation des fichiers de symboles](https://blogs.msdn.microsoft.com/visualstudioalm/2015/01/05/understanding-symbol-files-and-visual-studios-symbol-settings/).
 
-- **Disable Diagnostic Tools**
+- **Désactiver les outils de diagnostic**
 
-    It is recommended that you disable CPU profiling after use. This feature can consume large amounts of resources. Once CPU profiling is enabled, this state is persisted across subsequent debug sessions, so it’s worth explicitly turning it off when done. You may save some resources by disabling the diagnostic tools while debugging if you do not need the provided features.
+    Nous vous recommandons de désactiver le profilage de l’UC après utilisation. Cette fonctionnalité peut consommer de grandes quantités de ressources. Une fois que le profilage de l’UC est activé, cet état est conservé dans les sessions de débogage suivantes, il est donc recommandé de le désactiver explicitement une fois terminé. Vous pouvez économiser des ressources en désactivant les outils de diagnostic pendant le débogage si vous n’avez pas besoin des fonctionnalités fournies.
 
-    To disable the Diagnostic Tools, start a debugging session, choose **Tools > Options > Enable Diagnostic Tools**, and deselect the option.
+    Pour désactiver les outils de diagnostic, démarrez une session de débogage, choisissez **Outils > Options > Activer les outils de diagnostic** et décochez l’option.
 
-    For more information, see [Profiling Tools](https://docs.microsoft.com/en-us/visualstudio/profiling/profiling-tools).
+    Pour plus d’informations, consultez [Outils de profilage](https://docs.microsoft.com/en-us/visualstudio/profiling/profiling-tools).
 
-## <a name="disable-tools-and-extensions"></a>Disable tools and extensions
-Some tools or extensions may to turned off to improve performance.
+## <a name="disable-tools-and-extensions"></a>Désactiver des outils et des extensions
+Certains outils ou extensions peuvent être désactivés pour améliorer les performances.
 
 > [!TIP]
-> You can often isolate performance issues by turning off extensions one at a time and rechecking performance.
+> Vous pouvez souvent isoler les problèmes de performances en désactivant une par une les extensions et en revérifiant les performances.
 
-### <a name="managed-language-services-roslyn"></a>Managed Language Services (Roslyn)
+### <a name="managed-language-services-roslyn"></a>Services de langage gérés (Roslyn)
 
-For information about Roslyn performance considerations, see [Performance considerations for large solutions] (https://github.com/dotnet/roslyn/wiki/Performance-considerations-for-large-solutions).
+Pour plus d’informations sur les performances Roslyn, consultez [Performance considerations for large solutions] (https://github.com/dotnet/roslyn/wiki/Performance-considerations-for-large-solutions).
 
-- **Disable Full Solution Analysis**
+- **Désactiver l’analyse complète de la solution**
 
-    Visual Studio performs analysis on your entire solution in order to provide a rich experience about errors before invoking a build. This feature is useful to identify errors as soon as possible. However, for very large solutions, this feature can consume significant memory resources. If you’re experiencing memory pressure or similar issues, you can disable this experience to free up these resources. By default, this option is enabled for Visual Basic and disabled for C#.
+    Visual Studio analyse l’ensemble de votre solution afin d’offrir une expérience complète sur les erreurs avant d’appeler une génération. Cette fonctionnalité est utile pour identifier les erreurs dès que possible. Toutefois, pour les solutions très volumineuses, cette fonctionnalité peut consommer des ressources de mémoire considérables. Si vous rencontrez des problèmes de mémoire ou du même type, vous pouvez désactiver cette expérience pour libérer ces ressources. Par défaut, cette option est activée pour Visual Basic et désactivée pour C#.
 
-    To disable **Full Solution Analysis**, choose **Tools > Options > Text Editor > <Visual Basic or C#>**. Then choose **Advanced** and deselect **Enable full solution analysis**.
+    Pour désactiver **Analyse complète de la solution**, choisissez **Outils > Options > Éditeur de texte > <Visual Basic ou C#>**. Ensuite, choisissez **Avancé** et décochez **Activer l’analyse complète de la solution**.
 
-- **Disable CodeLens**
+- **Désactiver CodeLens**
 
-    Visual Studio performs a **Find All References** task on each method as it is displayed. CodeLens provides features such as the inline display of the number of references. The work is performed in a separate process (for example, ServiceHub.RoslynCodeAnalysisService32). In very large solutions or on resource constrained systems, this feature can have significant impact on performance even though it is run at a low priority. If you’re experiencing high CPU in this process, or memory issues (for example, when loading a large solution on a 4-GB machine), you can try disabling this feature to free up resources.
+    Visual Studio effectue une tâche **Rechercher toutes les références** sur chaque méthode qui s’affiche. CodeLens fournit des fonctionnalités comme l’affichage en ligne du nombre de références. Le travail est exécuté dans un processus séparé (par exemple, ServiceHub.RoslynCodeAnalysisService32). Dans les solutions très volumineuses ou sur des systèmes limités en ressources, cette fonctionnalité peut avoir un impact significatif sur les performances, même si elle est exécutée avec une priorité basse. Si ce processus utilise une grande partie de l’UC ou que vous rencontrez des problèmes de mémoire (par exemple, quand vous chargez une solution volumineuse sur un ordinateur de 4 Go), vous pouvez essayer de désactiver cette fonctionnalité pour libérer des ressources.
 
-    To disable CodeLens, choose **Tools > Options > Text Editor > All Languages > CodeLens**, and deselect the feature.
+    Pour désactiver CodeLens, choisissez **Outils > Options > Éditeur de texte > Tous les langages > CodeLens** et décochez la fonctionnalité.
 
-    This feature is available in Visual Studio Professional and Visual Studio Enterprise.
+    Cette fonctionnalité est disponible dans Visual Studio Enterprise et Visual Studio Professional.
 
-### <a name="other-tools-and-extensions"></a>Other tools and extensions
+### <a name="other-tools-and-extensions"></a>Autres outils et extensions
 
-- **Disable Extensions**
+- **Désactiver des extensions**
 
-    Extensions are additional software components added to Visual Studio that provide new functionality or extend existing functionality. Extensions can often be a source of memory resource issues. If you’re experiencing memory resource problems, try disabling extensions one at a time to see how it impacts the scenario or workflow.
+    Les extensions sont des composants logiciels supplémentaires ajoutés à Visual Studio qui fournissent de nouvelles fonctionnalités ou étendent les fonctionnalités existantes. Les extensions peuvent souvent être une source de problèmes de ressources mémoire. Si vous rencontrez des problèmes de ressources mémoire, essayez de désactiver les extensions une par une pour connaître leur impact sur le scénario ou le flux de travail.
 
-    To disable extensions, go to **Tools | Extensions and Updates**, and disable a particular extension.
+    Pour désactiver des extensions, accédez à **Outils | Extensions et mises à jour** et désactiver une extension en particulier.
 
-- **Disable XAML Designer**
+- **Désactiver le concepteur XAML**
 
-    The XAML designer is enabled by default, but only consumes resources if you open a .XAML file. If you work with XAML files but do not wish to use the designer functionality, disable this feature to free up some memory.
+    Le concepteur XAML est activé par défaut, mais consomme des ressources uniquement si vous ouvrez un fichier .XAML. Si vous utilisez des fichiers XAML, mais ne voulez pas utiliser les fonctionnalités du concepteur, désactivez cette fonctionnalité pour libérer de la mémoire.
 
-    To disable XAML Designer, go to **Tools > Options > XAML Designer > Enable XAML Designer**, and deselect the option.
+    Pour désactiver le concepteur XAML, accédez à **Outils > Options > Concepteur XAML > Activer le concepteur XAML** et décochez l’option.
 
-- **Remove workloads**
+- **Supprimer des charges de travail**
 
-    You can use the Visual Studio Installer to remove workloads that are no longer used. This action can streamline the startup and runtime cost by skipping packages and assemblies that aren’t needed anymore.
+    Vous pouvez utiliser Visual Studio Installer pour supprimer des charges de travail qui ne sont plus utilisées. Cette action permet de rationaliser le coût du démarrage et de l’exécution en ignorant les packages et les assemblys qui ne sont plus nécessaires.
 
-## <a name="force-a-garbage-collection"></a>Force a garbage collection
+## <a name="force-a-garbage-collection"></a>Forcer une opération de garbage collection
 
-The CLR uses a garbage collection memory management system. In this system, sometimes memory is used by objects that are no longer needed. This state is temporary; the garbage collector will release this memory based on its performance and resource usage heuristics. You can force the CLR to collect any unused memory by using a hotkey in Visual Studio. If there is a significant amount of garbage waiting for collection and you force a garbage collection, you should see the memory usage of the devenv.exe process drop in Task Manager. It’s rarely necessary to use this method. However, after an expensive operation has completed (such as a full build, debug session, or a solution open event), it can help you determine how much memory is really being used by the process. Because Visual Studio is mixed (managed & native), it’s occasionally possible for the native allocator and the garbage collector to compete for limited memory resources. Under conditions of high memory usage, it may help to force the garbage collector to run.
+Le CLR utilise un système de gestion de mémoire garbage collection. Dans ce système, la mémoire est parfois utilisée par des objets qui ne sont plus nécessaires. Cet état est temporaire. Le récupérateur de mémoire libère cette mémoire en fonction de ses méthodes heuristiques en matière d’utilisation des ressources et de performances. Vous pouvez obliger le CLR à collecter la mémoire inutilisée à l’aide d’un raccourci clavier dans Visual Studio. Si une quantité importante de mémoire est en attente de collecte et que vous forcez une opération de garbage collection, vous devez voir chuter l’utilisation de la mémoire par le processus devenv.exe dans le Gestionnaire des tâches. Cette méthode est rarement nécessaire. Toutefois, quand une opération ayant consommé beaucoup de ressources se termine (par exemple, une génération complète, une session de débogage ou un événement d’ouverture de solution), elle peut vous aider à déterminer la quantité de mémoire qui est réellement utilisée par le processus. Parce que Visual Studio est mixte (à la fois managé et natif), il est parfois possible que l’allocateur natif et le récupérateur de mémoire entrent en concurrence pour utiliser des ressources mémoire limitées. Dans les situations d’utilisation importante de la mémoire, il peut être utile de forcer l’exécution du récupérateur de mémoire.
 
-To force a garbage collection, use the hotkey: **Ctrl+Alt+Shift+F12**, **Ctrl+Alt+Shift+F12** (press it twice).
+Pour forcer une opération de garbage collection, utilisez la touche de raccourci : **Ctrl + Alt + Maj + F12**, **Ctrl + Alt + Maj + F12** (appuyez dessus deux fois).
 
-If forcing garbage collection reliably makes your scenario work, file a report through the Visual Studio feedback tool as this behavior is likely to be a bug.
+Si le forçage de l’opération de garbage collection permet à votre scénario de fonctionner de manière fiable, envoyez un rapport à travers l’outil de commentaires de Visual Studio, car ce comportement est susceptible d’être un bogue.
 
-For a detailed description of the CLR garbage collector, see [Fundamental of Garbage Collection](https://msdn.microsoft.com/en-us/library/ee787088(v=vs.110).aspx).
+Pour obtenir une description détaillée du récupérateur de mémoire CLR, consultez [Fundamental of Garbage Collection](https://msdn.microsoft.com/en-us/library/ee787088(v=vs.110).aspx) (Concepts fondamentaux de l’opération de garbage collection).
 
-## <a name="see-also"></a>See Also  
- [Visual Studio IDE](../ide/index.md)
+## <a name="see-also"></a>Voir aussi  
+ [IDE Visual Studio](../ide/index.md)
 

@@ -1,5 +1,5 @@
 ---
-title: 'Step 7: Keep Pairs Visible | Microsoft Docs'
+title: "Étape 7 : garder les paires visibles | Microsoft Docs"
 ms.custom: 
 ms.date: 11/04/2016
 ms.reviewer: 
@@ -31,23 +31,23 @@ ms.translationtype: HT
 ms.sourcegitcommit: eb5c9550fd29b0e98bf63a7240737da4f13f3249
 ms.openlocfilehash: 15990f447ba3e368b19d93317eadbde7b126326a
 ms.contentlocale: fr-fr
-ms.lasthandoff: 08/30/2017
+ms.lasthandoff: 09/06/2017
 
 ---
-# <a name="step-7-keep-pairs-visible"></a>Step 7: Keep Pairs Visible
-The game works well, as long as the player only chooses pairs of icons that don't match. But consider what should happen when the player chooses a matching pair. Instead of making the icons disappear by turning on the timer (using the `Start()` method), the game should reset itself so that it's no longer keeping track of any labels using the `firstClicked` and `secondClicked` reference variables, without resetting the colors for the two labels that were chosen.  
+# <a name="step-7-keep-pairs-visible"></a>Étape 7 : garder les paires visibles
+Le jeu fonctionne correctement tant que le joueur se contente de choisir des paires d'icônes qui ne correspondent pas. Voyons ce qui doit se produire lorsque le joueur choisit une paire d'icônes identiques. Au lieu de faire disparaître les icônes en activant le minuteur (à l'aide de la méthode `Start()`), le jeu doit se réinitialiser pour arrêter le suivi de tous les contrôles Label à l'aide des variables de référence `firstClicked` et `secondClicked`, sans réinitialiser les couleurs des deux contrôles Label choisis.  
   
-### <a name="to-keep-pairs-visible"></a>To keep pairs visible  
+### <a name="to-keep-pairs-visible"></a>Pour garder des paires visibles  
   
-1.  Add the following `if` statement to the `label_Click()` event handler method, near the end of the code just above the statement where you start the timer. Take a close look at the code while adding it to the program. Consider how the code works.  
+1.  Ajoutez l'instruction `if` suivante à la méthode de gestionnaire d'événements `label_Click()`, vers la fin du code, juste au-dessus de l'instruction où vous démarrez le minuteur. Examinez attentivement le code lorsque vous l'ajoutez au programme. Analysez son fonctionnement.  
   
      [!code-csharp[VbExpressTutorial4Step7#9](../ide/codesnippet/CSharp/step-7-keep-pairs-visible_1.cs)]  [!code-vb[VbExpressTutorial4Step7#9](../ide/codesnippet/VisualBasic/step-7-keep-pairs-visible_1.vb)]  
   
-     The first line of the `if` statement you just added checks whether the icon in the first label that the player chooses is the same as the icon in the second label. If the icons are identical, the program executes the three statements between the curly braces in C# or the three statements within the `if` statement in Visual Basic. The first two statements reset the `firstClicked` and `secondClicked` reference variables so that they no longer keep track of any of the labels. (You may recognize those two statements from the timer's Tick event handler.) The third statement is a `return` statement, which tells the program to skip the rest of the statements in the method without executing them.  
+     La première ligne de l'instruction `if` que vous venez d'ajouter vérifie si l'icône du premier contrôle Label choisi par le joueur est la même que l'icône du deuxième contrôle Label. Si les icônes sont identiques, le programme exécute les trois instructions entre les accolades en C# ou les trois instructions dans l'instruction `if` en Visual Basic. Les deux premières instructions réinitialisent les variables de référence `firstClicked` et `secondClicked` pour arrêter le suivi des différents contrôles Label. (Vous pouvez identifier ces deux instructions dans le gestionnaire d'événements Tick de la minuterie.) La troisième instruction est une instruction `return`, qui indique au programme d'ignorer le reste des instructions dans la méthode et de ne pas les exécuter.  
   
-     If programming in Visual C#, you may have noticed that some of the code uses a single equal sign (`=`), while other statements use two equal signs (`==`). Consider why `=` is used in some places but `==` is used in other places.  
+     Si vous programmez en Visual C#, vous aurez éventuellement remarqué qu'une partie du code utilise un seul signe égal (`=`), alors que d'autres instructions en utilisent deux (`==`). Examinez pourquoi `=` est utilisé dans certains cas et `==` dans d'autres.  
   
-     This is a good example that shows the difference. Take a careful look at the code between the parentheses in the `if` statement.  
+     Cet exemple montre bien la différence entre les deux cas. Examinez attentivement le code entre parenthèses dans l'instruction `if`.  
   
     ```vb  
     firstClicked.Text = secondClicked.Text  
@@ -57,7 +57,7 @@ The game works well, as long as the player only chooses pairs of icons that don'
     firstClicked.Text == secondClicked.Text  
     ```  
   
-     Then look closely at the first statement in the block of code after the `if` statement.  
+     Analysez ensuite attentivement la première instruction dans le bloc de code après l'instruction `if`.  
   
     ```vb  
     firstClicked = Nothing  
@@ -67,15 +67,15 @@ The game works well, as long as the player only chooses pairs of icons that don'
     firstClicked = null;  
     ```  
   
-     The first of those two statements checks whether two icons are the same. Because two values are being compared, the Visual C# program uses the `==` equality operator. The second statement actually changes the value (called *assignment*), setting the `firstClicked` reference variable equal to `null` to reset it. That's why it uses the `=` assignment operator instead. Visual C# uses `=` to set values, and `==` to compare them. Visual Basic uses `=` for both variable assignment and comparison.  
+     La première de ces deux instructions vérifie si deux icônes sont identiques. Étant donné que deux valeurs sont comparées, le programme Visual C# utilise l'opérateur d'égalité `==`. En fait, la deuxième instruction modifie la valeur (appelée *assignation*) en affectant la valeur `null` à la variable de référence `firstClicked` pour la réinitialiser. C'est la raison pour laquelle elle utilise plutôt l'opérateur d'assignation `=`. Visual C# utilise `=` pour définir des valeurs et `==` pour les comparer. Le langage Visual Basic utilise `=` pour l'affectation et la comparaison des variables.  
   
-2.  Save and run the program, and then start choosing icons on the form. If you choose a pair that doesn't match, the timer's Tick event triggers, and both icons disappear. If you choose a matching pair, the new `if` statement executes, and the return statement causes the method to skip the code that starts the timer, so the icons stay visible, as shown in the following picture.  
+2.  Enregistrez et exécutez le programme, puis commencez à choisir des icônes sur le formulaire. Si vous choisissez une paire qui ne correspond pas, l'événement Tick du minuteur se déclenche et les deux icônes disparaissent. Si vous choisissez une paire d'icônes identiques, la nouvelle instruction `if` s'exécute et l'instruction return indique à la méthode d'ignorer le code qui démarre le minuteur. De cette façon, les icônes restent visibles, comme le montre la figure ci-dessous.  
   
-     ![Game that you create in this tutorial](../ide/media/express_finishedgame.png "Express_FinishedGame")  
-Matching game with visible icon pairs  
+     ![Jeu créé dans ce didacticiel](../ide/media/express_finishedgame.png "Express_FinishedGame")  
+Jeu de combinaisons avec des paires d'icônes visibles  
   
-### <a name="to-continue-or-review"></a>To continue or review  
+### <a name="to-continue-or-review"></a>Pour continuer ou examiner  
   
--   To go to the next tutorial step, see [Step 8: Add a Method to Verify Whether the Player Won](../ide/step-8-add-a-method-to-verify-whether-the-player-won.md).  
+-   Pour passer à l’étape suivante du didacticiel, consultez [Étape 8 : ajouter une méthode pour vérifier si le joueur a gagné](../ide/step-8-add-a-method-to-verify-whether-the-player-won.md).  
   
--   To return to the previous tutorial step, see [Step 6: Add a Timer](../ide/step-6-add-a-timer.md).
+-   Pour revenir à l’étape précédente du didacticiel, consultez [Étape 6 : ajouter une minuterie](../ide/step-6-add-a-timer.md).
