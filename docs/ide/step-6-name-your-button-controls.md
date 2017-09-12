@@ -53,7 +53,7 @@ Votre formulaire ne contient qu’un seul PictureBox. Lorsque vous l’avez ajou
 Fenêtre Propriétés avec nom closeButton  
   
     > [!NOTE]
-    >  If you try changing the name of your button to **closeButton**, with a space between the words close and Button, the IDE displays an error message: "Property value is not valid." Les espaces (et quelques autres caractères) ne sont pas autorisés dans les noms de contrôle.  
+    >  Si vous essayez de modifier le nom de votre bouton en **closeButton** (autrement dit avec un espace entre les mots close et Button), l'IDE affiche un message d'erreur : « Valeur de propriété non valide ». Les espaces (et quelques autres caractères) ne sont pas autorisés dans les noms de contrôle.  
   
 2.  Renommez les trois autres boutons en **backgroundButton**, **clearButton**et **showButton**. Vous pouvez vérifier les noms en sélectionnant la liste déroulante du sélecteur de contrôles dans la fenêtre **Propriétés** . Les nouveaux noms de boutons apparaissent.  
   
