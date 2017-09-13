@@ -1,5 +1,5 @@
 ---
-title: "Convertir, boîte de dialogue | Microsoft Docs"
+title: Convert Dialog Box | Microsoft Docs
 ms.custom: 
 ms.date: 11/04/2016
 ms.reviewer: 
@@ -34,28 +34,26 @@ translation.priority.mt:
 - pl-pl
 - pt-br
 - tr-tr
-ms.translationtype: Human Translation
-ms.sourcegitcommit: dac3cb1d7767c2ff76ac25f6a486ad30a8d54831
-ms.openlocfilehash: 81c20ad8c10ba3bfb3d83b1d72926dad1a2be29b
+ms.translationtype: HT
+ms.sourcegitcommit: cca2a707627c36221a654cf8a06730383492f371
+ms.openlocfilehash: 284db93d7f1b60474a94212bb64ff469fc42aa50
 ms.contentlocale: fr-fr
-ms.lasthandoff: 03/03/2017
+ms.lasthandoff: 09/13/2017
 
 ---
-# <a name="convert-dialog-box"></a>Convertir, boîte de dialogue
-La boîte de dialogue **Convertir** vous permet de sélectionner un outil de conversion pour créer un projet à partir d’un ancien projet, par exemple créer un projet [!INCLUDE[vbprvblong](../../ide/reference/includes/vbprvblong_md.md)] à partir d’un projet Visual Basic 6. Vous pouvez également utiliser le [convertisseur de projet Visual Studio](http://go.microsoft.com/fwlink/?LinkID=246465), disponible sur le site web CodePlex, pour mettre à niveau des projets créés dans des versions précédentes de Visual Studio.  
+# <a name="convert-dialog-box"></a>Convert Dialog Box
+The **Convert** dialog box allows you to select a conversion tool to create a new project from an old one, such as creating a [!INCLUDE[vbprvblong](../../ide/reference/includes/vbprvblong_md.md)] project from a Visual Basic 6 project. You can also use the [Visual Studio Project Converter](https://github.com/ssvaidya/VSProjectConverter) to upgrade projects created in previous versions of Visual Studio.   
   
- [!INCLUDE[note_settings_general](../../data-tools/includes/note_settings_general_md.md)]  
+## <a name="opening-the-convert-dialog-box"></a>Opening the Convert Dialog Box  
   
-## <a name="opening-the-convert-dialog-box"></a>Ouverture de la boîte de dialogue Convertir  
+#### <a name="to-access-the-convert-dialog-box"></a>To access the Convert dialog box  
   
-#### <a name="to-access-the-convert-dialog-box"></a>Pour accéder à la boîte de dialogue Convertir  
+1.  On the menu bar, choose **File**, **Open**, **Convert**.  
   
-1.  Dans la barre de menus, choisissez **Fichier**, **Ouvrir**, **Convertir**.  
+     You will see a list of the code-conversion tools that are currently available.  
   
-     Vous verrez une liste des outils de conversion de code disponibles actuellement.  
+2.  Select the tool that is appropriate for your application.  
   
-2.  Sélectionnez l’outil adapté à votre application.  
-  
-## <a name="see-also"></a>Voir aussi  
- [NOTINBUILD - Guide pratique pour mettre à niveau un projet à partir de Visual Basic 6.0](http://msdn.microsoft.com/en-us/c0421e57-5bba-422e-934d-ec42ab9f2af9)   
- [Portage, migration et mise à niveau des projets Visual Studio](../../porting/port-migrate-and-upgrade-visual-studio-projects.md)
+## <a name="see-also"></a>See Also  
+ [NOTINBUILD - How to: Upgrade a Project from Visual Basic 6.0](http://msdn.microsoft.com/en-us/c0421e57-5bba-422e-934d-ec42ab9f2af9)   
+ [Porting, Migrating, and Upgrading Visual Studio Projects](../../porting/port-migrate-and-upgrade-visual-studio-projects.md)
