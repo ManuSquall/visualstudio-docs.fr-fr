@@ -33,10 +33,10 @@ translation.priority.mt:
 - pt-br
 - tr-tr
 ms.translationtype: HT
-ms.sourcegitcommit: 33a857c2d8585e2e8da9bcd9158190366a3b6830
-ms.openlocfilehash: a88479f28087106f9195c7e5b21802e702ffc3ec
+ms.sourcegitcommit: cca2a707627c36221a654cf8a06730383492f371
+ms.openlocfilehash: a16cf197f58c6306b5042357d880f3ace530cadc
 ms.contentlocale: fr-fr
-ms.lasthandoff: 09/07/2017
+ms.lasthandoff: 09/13/2017
 
 ---
 # <a name="create-a-windows-form-to-search-data"></a>Create a Windows Form to search data
@@ -67,16 +67,18 @@ A common application scenario is to display selected data on a form. For example
   
 -   Access to the Northwind sample database.  
   
-## <a name="create-the-windows-application"></a>Create the Windows Application  
- The first step is to create a **Windows Application**. Assigning a name to the project is optional at this step, but you'll give it a name here because you'll save it later.  
+## <a name="create-the-windows-forms-application"></a>Create the Windows Forms Application  
+ The first step is to create a **Windows Forms Application**. Assigning a name to the project is optional at this step, but you'll give it a name here because you'll save the project later.  
   
-#### <a name="to-create-the-new-windows-application-project"></a>To create the new Windows Application project  
+#### <a name="to-create-the-new-windows-forms-application-project"></a>To create the new Windows Forms Application project  
   
-1.  From the **File** menu, create a new project.  
+1. In Visual Studio, on the **File** menu, select **New**, **Project...**.  
   
-2.  Name the project `WindowsSearchForm`.  
-  
-3.  Select **Windows Application** and click **OK**.  
+2. Expand either **Visual C#** or **Visual Basic** in the left-hand pane, then select **Windows Classic Desktop**.  
+
+3. In the middle pane, select the **Windows Forms App** project type.  
+
+4. Name the project **WindowsSearchForm**, and then choose **OK**. 
   
      The **WindowsSearchForm** project is created and added to **Solution Explorer**.  
   
@@ -131,11 +133,12 @@ A common application scenario is to display selected data on a form. For example
   
      The query should be similar to the following:  
   
-     `SELECT CustomerID, CompanyName, ContactName, ContactTitle, Address, City, Region, PostalCode, Country, Phone, Fax`  
-  
-     `FROM Customers`  
-  
-     `WHERE City = @City`  
+     ```sql
+     SELECT CustomerID, CompanyName, ContactName, ContactTitle,  
+          Address, City, Region, PostalCode, Country, Phone, Fax  
+     FROM Customers
+     WHERE City = @City  
+     ```
   
     > [!NOTE]
     >  Access and OLE DB data sources use the question mark ('?') to denote parameters, so the WHERE clause would look like this: `WHERE City = ?`.  

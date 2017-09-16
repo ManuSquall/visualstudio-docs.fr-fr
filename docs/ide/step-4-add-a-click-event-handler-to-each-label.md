@@ -1,5 +1,5 @@
 ---
-title: 'Step 4: Add a Click Event Handler to Each Label | Microsoft Docs'
+title: "Étape 4 : ajouter un gestionnaire d’événements Click à chaque contrôle Label | Microsoft Docs"
 ms.custom: 
 ms.date: 11/04/2016
 ms.reviewer: 
@@ -31,49 +31,49 @@ ms.translationtype: HT
 ms.sourcegitcommit: eb5c9550fd29b0e98bf63a7240737da4f13f3249
 ms.openlocfilehash: b7a7fc66913ff7cc4afc952f2f797781a6f90819
 ms.contentlocale: fr-fr
-ms.lasthandoff: 08/30/2017
+ms.lasthandoff: 09/06/2017
 
 ---
-# <a name="step-4-add-a-click-event-handler-to-each-label"></a>Step 4: Add a Click Event Handler to Each Label
-The matching game works as follows:  
+# <a name="step-4-add-a-click-event-handler-to-each-label"></a>Étape 4 : ajouter un gestionnaire d'événements Click à chaque contrôle Label
+Le jeu de combinaisons fonctionne comme suit :  
   
-1.  When a player chooses one of the squares with a hidden icon, the program shows the icon to the player by changing the icon color to black.  
+1.  Lorsqu'un joueur choisit l'une des cases avec une icône masquée, le programme révèle l'icône en lui conférant une couleur noire.  
   
-2.  Then the player chooses another hidden icon.  
+2.  Le joueur choisit ensuite une autre icône masquée.  
   
-3.  If the icons match, they stay visible. If not, both icons are hidden again.  
+3.  Si les deux icônes sélectionnées sont identiques, elles restent visibles. Dans le cas contraire, elles sont à nouveau masquées.  
   
- To get your program to work that way, you add a Click event handler that changes the color of the label that is chosen.  
+ Pour que votre programme suive ces principes, vous devez ajouter un gestionnaire d'événements Click qui modifiera la couleur du contrôle Label choisi.  
   
-### <a name="to-add-a-click-event-handler-to-each-label"></a>To add a Click event handler to each label  
+### <a name="to-add-a-click-event-handler-to-each-label"></a>Pour ajouter un gestionnaire d'événements Click à chaque contrôle Label  
   
-1.  Open the form in the Windows Forms Designer. In Solution Explorer, choose Form1.cs or Form1.vb. On the menu bar, choose **View**, **Designer**.  
+1.  Ouvrez le formulaire dans le Concepteur Windows Forms. Dans l'Explorateur de solutions, choisissez Form1.cs ou Form1.vb. Dans la barre de menus, choisissez **Affichage**, **Concepteur**.  
   
-2.  Choose the first label control to select it. Then, hold down the CTRL key while you choose each of the other labels to select them. Be sure that every label is selected.  
+2.  Choisissez le premier contrôle Label pour le sélectionner. Ensuite, maintenez la touche Ctrl enfoncée tout en choisissant d'autres contrôles Label pour les sélectionner. Assurez-vous que chaque contrôle Label est sélectionné.  
   
-3.  Choose the **Events** button on the tool bar in the **Properties** window to view the **Events** page in the **Properties** window. Scroll down to the **Click** event, and enter **label_Click** in the box, as shown in the following picture.  
+3.  Choisissez le bouton **Événements** dans la barre d’outils de la fenêtre **Propriétés** pour afficher la page **Événements** dans la fenêtre **Propriétés**. Faites défiler l’écran vers le bas jusqu’à l’événement **Click**, puis entrez **label_Click** dans la zone, comme indiqué à la figure suivante.  
   
-     ![Properties window showing Click event](../ide/media/express_labelclick.png "Express_labelClick")  
-Properties window showing Click event  
+     ![Fenêtre Propriétés affichant l'événement Click](../ide/media/express_labelclick.png "Express_labelClick")  
+Fenêtre Propriétés affichant l'événement Click  
   
-4.  Choose the ENTER key. The IDE adds a Click event handler called `label_Click()` to the code, and hooks it to each of the labels on the form.  
+4.  Appuyez sur Entrée. L'IDE ajoute un gestionnaire d'événements Click appelé `label_Click()` au code et le raccorde à chacun des contrôles Label sur le formulaire.  
   
-5.  Fill in the rest of the code, as follows:  
+5.  Remplissez le reste du code, comme suit :  
   
      [!code-csharp[VbExpressTutorial4Step2_3_4#4](../ide/codesnippet/CSharp/step-4-add-a-click-event-handler-to-each-label_1.cs)]  [!code-vb[VbExpressTutorial4Step2_3_4#4](../ide/codesnippet/VisualBasic/step-4-add-a-click-event-handler-to-each-label_1.vb)]  
   
     > [!NOTE]
-    >  If you copy and paste the `label_Click()` code block rather than entering the code manually, be sure to replace the existing `label_Click()` code. Otherwise, you'll end up with a duplicate code block.  
+    >  Si vous effectuez un copier-coller du bloc de code `label_Click()` au lieu d'écrire le code manuellement, veillez à remplacer le code `label_Click()` existant. Sinon, vous obtiendrez au final un bloc de code en double.  
   
     > [!NOTE]
-    >  You may recognize `object sender` at the top of the event handler as the same one used in the [Tutorial 2: Create a Timed Math Quiz](../ide/tutorial-2-create-a-timed-math-quiz.md) tutorial. Because you hooked up different label control Click event to a single event handler method, the same method is called no matter which label the user chooses. The event handler method needs to know which label was chosen, so it uses the name **sender** to identify the label control. The first line of the method tells the program that it's not just a generic object, but specifically a label control, and that it uses the name **clickedLabel** to access the label's properties and methods.  
+    >  Vous pouvez reconnaître `object sender` en haut du gestionnaire d’événements comme étant le même que celui utilisé dans le [Didacticiel 2 : créer un questionnaire mathématique chronométré](../ide/tutorial-2-create-a-timed-math-quiz.md). Comme vous avez raccordé plusieurs événements Click de contrôle Label à une seule méthode de gestionnaire d'événements, la même méthode est appelée quel que soit le contrôle Label choisi par l'utilisateur. La méthode de gestionnaire d’événements doit savoir quel contrôle Label a été choisi. Elle utilise donc le nom **sender** pour identifier le contrôle Label. La première ligne de la méthode indique au programme qu’il ne s’agit pas uniquement d’un objet générique, mais plus précisément d’un contrôle Label, et qu’il utilise le nom **clickedLabel** pour accéder aux propriétés et méthodes du contrôle Label.  
   
-     This method first checks whether **clickedLabel** was successfully converted (cast) from an object to a label control. If unsuccessful, it has a value of `null` (C#) or `Nothing` (Visual Basic), and you don't want to execute the remainder of the code in the method. Next, the method checks the chosen label's text color by using the label's **ForeColor** property. If the label's text color is black, then that means the icon's already been chosen and the method is done. (That's what the `return` statement does: It tells the program to stop executing the method.) Otherwise, the icon hasn't been chosen, so the program changes the label's text color to black.  
+     Cette méthode vérifie d’abord si un objet **clickedLabel** a été correctement converti (cast) en contrôle Label. Dans le cas contraire, il a une valeur `null` (C#) ou `Nothing` (Visual Basic), et vous ne voudrez pas exécuter le reste du code dans la méthode. Ensuite, la méthode vérifie la couleur de texte du contrôle Label choisi en utilisant la propriété **ForeColor** de ce dernier. Si la couleur du texte du contrôle Label est noire, cela signifie que l'icône a déjà été choisie et la méthode est terminée. (C'est le rôle de l'instruction `return` : elle indique au programme d'arrêter l'exécution de la méthode.) Dans le cas contraire, l'icône n'a pas été choisie et le programme modifie la couleur du texte du contrôle Label pour la rendre noire.  
   
-6.  On the menu bar, choose **File**, **Save All** to save your progress, and then, on the menu bar, choose **Debug**, **Start Debugging** to run your program. You should see an empty form with a blue background. Choose any of the cells in the form, and one of the icons should become visible. Continue choosing different places in the form. As you choose the icons, they should appear.  
+6.  Dans la barre de menus, choisissez **Fichier**, **Enregistrer tout** pour enregistrer votre progression, puis, dans la barre de menus, choisissez **Déboguer**, **Démarrer le débogage** pour exécuter votre programme. Un formulaire vierge doit s'afficher avec un arrière-plan bleu. Choisissez l'une des cellules du formulaire et l'une des icônes doit apparaître. Continuez à choisir des emplacements différents dans le formulaire. Chaque fois que vous choisissez une icône, elle doit s'afficher.  
   
-### <a name="to-continue-or-review"></a>To continue or review  
+### <a name="to-continue-or-review"></a>Pour continuer ou examiner  
   
--   To go to the next tutorial step, see [Step 5: Add Label References](../ide/step-5-add-label-references.md).  
+-   Pour passer à l’étape suivante du didacticiel, consultez [Étape 5 : ajouter des références de contrôles Label](../ide/step-5-add-label-references.md).  
   
--   To return to the previous tutorial step, see [Step 3: Assign a Random Icon to Each Label](../ide/step-3-assign-a-random-icon-to-each-label.md).
+-   Pour revenir à l’étape précédente du didacticiel, consultez [Étape 3 : affecter une icône aléatoire à chaque contrôle Label](../ide/step-3-assign-a-random-icon-to-each-label.md).

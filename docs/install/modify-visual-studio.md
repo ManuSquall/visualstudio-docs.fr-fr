@@ -1,6 +1,6 @@
 ---
-title: "Modifier Visual Studio 2017 │ Microsoft Docs"
-description: "Découvrez comment modifier Visual Studio, étape par étape."
+title: Modify Visual Studio 2017 | Microsoft Docs
+description: Learn how to modify Visual Studio, step-by-step.
 ms.custom: H1Hack27Feb2017
 ms.date: 04/06/2017
 ms.reviewer: 
@@ -19,51 +19,51 @@ author: TerryGLee
 ms.author: tglee
 manager: ghogen
 ms.translationtype: HT
-ms.sourcegitcommit: 89f86a5935ad283ef5c0e29ea2db0ae22cf603a8
-ms.openlocfilehash: 3899b139066dddf0b39acaabe2874e0a7d9ad3d3
+ms.sourcegitcommit: cca2a707627c36221a654cf8a06730383492f371
+ms.openlocfilehash: a63ddb23b0cc5b7e9a7978da90f0e3f5a3b70892
 ms.contentlocale: fr-fr
-ms.lasthandoff: 08/07/2017
+ms.lasthandoff: 09/13/2017
 
 ---
-# <a name="modify-visual-studio-2017-by-adding-or-removing-workloads-and-components"></a>Modifier Visual Studio 2017 en ajoutant ou supprimant des charges de travail et des composants
-Non seulement nous avons simplifié la personnalisation de Visual Studio en fonction des tâches que vous avez à accomplir, mais nous en avons aussi simplifié la personnalisation. Vous n’avez plus besoin d’utiliser le Panneau de configuration ; à la place, démarrez le nouveau Visual Studio Installer et apportez les modifications souhaitées.
+# <a name="modify-visual-studio-2017-by-adding-or-removing-workloads-and-components"></a>Modify Visual Studio 2017 by adding or removing workloads and components
+Not only have we made is easier for you to personalize Visual Studio to match the tasks you want to accomplish, we've also made it easier to customize Visual Studio, too. No more looking in Control Panel to do so; instead, start the new Visual Studio Installer and make the changes you want.
 
-Voici comment procéder.  
+Here's how.  
 
-## <a name="modify-workloads"></a>Modifier les charges de travail  
- Les charges de travail contiennent les fonctionnalités dont vous avez besoin pour le langage de programmation ou la plateforme que vous utilisez. Utilisez les charges de travail pour modifier Visual Studio pour qu’il prenne en charge le travail à effectuer, au moment où vous voulez l’effectuer.  
+## <a name="modify-workloads"></a>Modify workloads  
+ Workloads contain the features you need for the programming language or platform that you are using. Use workloads to modify Visual Studio so that it supports the work you want to do, when you want to do it.  
 
-1.  Recherchez le programme d’installation de Visual Studio sur votre ordinateur.  
+1.  Find the Visual Studio Installer on your computer.  
 
-     Par exemple, sur un ordinateur exécutant la Mise à jour anniversaire Windows 10, sélectionnez **Démarrer**, puis faites défiler jusqu’à la lettre **V** pour l’afficher comme **Visual Studio Installer**.  
+     For example, on a computer running Windows 10 Anniversary Update, select **Start**, and then scroll to the letter **V**, where it's listed as **Visual Studio Installer**.  
 
-     ![Programme d’installation de Visual Studio](media/vs2017-locate-the-visual-studio-installer.PNG "Localiser le programme d’installation de Microsoft Visual Studio")
+     ![Visual Studio Installer](media/vs2017-locate-the-visual-studio-installer.PNG "Locate the Microsoft Visual Studio Installer")
 
      >[!NOTE]
-     Sur certains ordinateurs, le programme d’installation de Visual Studio peut être répertorié sous la lettre **« M »** comme **Microsoft, programme d’installation de Visual Studio**.<br/><br/> Ou bien, vous pouvez trouver Visual Studio Installer à l’emplacement suivant :`C:\Program Files (x86)\Microsoft Visual Studio\Installer\vs_installer.exe`
+     On some computers, the Visual Studio Installer might be listed under the letter **"M"** as the **Microsoft Visual Studio Installer**.<br/><br/> Alternatively, you can find the Visual Studio Installer in the following location: `C:\Program Files (x86)\Microsoft Visual Studio\Installer\vs_installer.exe`
 
-2.  Cliquez ou appuyez pour démarrer le programme d’installation, puis cliquez sur **Modifier**.  
+2.  Click or tap to start the installer, and then select **Modify**.  
 
-     ![Lancer ou modifier Visual Studio](media/vs2017-modify.PNG "Modifier Visual Studio 2017")  
+     ![Launch or modify Visual Studio](media/vs2017-modify.PNG "Modify Visual Studio 2017")  
 
-3.  Dans l’écran **Charges de travail**, sélectionnez ou désélectionnez les charges de travail que vous voulez installer ou désinstaller.  
+3.  From the **Workloads** screen, select or deselect the workloads that you want to install or uninstall.  
 
-    ![Boîte de dialogue d’installation de Visual Studio 2017](media/vs2017-modify-workloads.PNG "Choisir une charge de travail dans Visual Studio 2017")
+    ![Visual Studio 2017 Setup Dialog](media/vs2017-modify-workloads.PNG "Choose a workload in Visual Studio 2017")
 
-4. Cliquez ou appuyez à nouveau sur **Modifier**.  
+4. Click or tap **Modify** again.  
 
-5. Une fois les nouveaux composants et charges de travail installés, cliquez sur **Lancer**.
+5. After the new workloads and components are installed, click **Launch**.
 
-## <a name="modify-individual-components"></a>Modifier des composants individuels
+## <a name="modify-individual-components"></a>Modify individual components
 
-Si vous ne voulez pas utiliser la fonctionnalité pratique Charges de travail pour personnaliser votre installation de Visual Studio, choisissez l’option **Composants individuels** dans le programme d’installation de Visual Studio, sélectionnez les composants que vous voulez, puis suivez les invites.  
+If you don't want to use the handy Workloads feature to customize your Visual Studio installation, choose the **Individual Components** option from the Visual Studio Installer, select what you want, and then follow the prompts.  
 
-## <a name="get-support"></a>Obtenir de l’aide
-Parfois, des problèmes peuvent se produire. Si votre installation de Visual Studio échoue, consultez la page [Résolution des problèmes d’installation et de mise à niveau de Visual Studio 2017](troubleshooting-installation-issues.md) pour obtenir des conseils de dépannage.
+## <a name="get-support"></a>Get support
+Sometimes, things can go wrong. If your Visual Studio installation fails, see the [Troubleshooting Visual Studio 2017 installation and upgrade issues](troubleshooting-installation-issues.md) page for troubleshooting tips.
 
-## <a name="see-also"></a>Voir aussi  
-* [Installer Visual Studio 2017](https://go.microsoft.com/fwlink/?linkid=833223)
-* [Mettre à jour Visual Studio](update-visual-studio.md)
-* [Désinstaller Visual Studio 2017](uninstall-visual-studio.md)
-* [Guide pratique pour signaler un problème avec Visual Studio 2017](../ide/how-to-report-a-problem-with-visual-studio-2017.md)
+## <a name="see-also"></a>See also
+* [Install Visual Studio 2017](install-visual-studio.md)
+* [Update Visual Studio 2017](update-visual-studio.md)
+* [Uninstall Visual Studio 2017](uninstall-visual-studio.md)
+* [How to Report a Problem with Visual Studio 2017](../ide/how-to-report-a-problem-with-visual-studio-2017.md)
 
