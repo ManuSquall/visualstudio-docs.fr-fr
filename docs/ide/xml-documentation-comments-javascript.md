@@ -40,7 +40,7 @@ En JavaScript, vous pouvez créer de la documentation pour votre code en incluan
   
 -   [\<returns\>](../ide/returns-javascript.md)  
   
--   [\<signature\>](../Topic/%3Csignature%3E%20\(JavaScript\).md)  
+-   [\<signature\>](../ide/signature-javascript.md)  
   
 -   [\<summary\>](../ide/summary-javascript.md)  
   
