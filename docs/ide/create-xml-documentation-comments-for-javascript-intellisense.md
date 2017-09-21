@@ -87,7 +87,7 @@ manager: "ghogen"
   
 ### Pour créer des commentaires de documentation XML pour une fonction surchargée  
   
-1.  Dans la fonction, ajoutez un [\<signature\>](../Topic/%3Csignature%3E%20\(JavaScript\).md) élément pour chaque surcharge.  Dans ces éléments, ajouter d'autres éléments, tels que `<summary>`, `<param>`, et `<returns>`, qui précède chaque élément avec trois barres transversales \(\/ \/ \/\).  
+1.  Dans la fonction, ajoutez un [\<signature\>](../ide/signature-javascript.md) élément pour chaque surcharge.  Dans ces éléments, ajouter d'autres éléments, tels que `<summary>`, `<param>`, et `<returns>`, qui précède chaque élément avec trois barres transversales \(\/ \/ \/\).  
   
      L'exemple suivant montre une fonction JavaScript surchargée.  Dans cet exemple, les surcharges diffèrent par type de paramètre.  
   
