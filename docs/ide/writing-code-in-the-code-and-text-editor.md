@@ -221,7 +221,7 @@ Vous pouvez aussi changer rapidement le filtre de recherche en choisissant des b
 
 Si vous utilisez la [casse mixte](https://en.wikipedia.org/wiki/Camel_case) dans votre code, vous pouvez trouver plus rapidement des éléments de code en entrant uniquement les lettres majuscules de leur nom. Par exemple, si votre code dispose d’un type appelé `CredentialViewModel`, vous pouvez affiner la recherche en choisissant le filtre Type ("t"), puis en entrant simplement les lettres majuscules du nom (`CVM`) dans la boîte de dialogue Atteindre.
 
-![Fenêtre Naviguer vers - recherche en lettres capitales](../ide/media/vside_capitalsearch.png)
+![Fenêtre Naviguer vers - recherche en lettres majuscules](../ide/media/vside_capitalsearch.png)
 
 Cette fonctionnalité peut être particulièrement utile si votre code contient des noms longs.
 
