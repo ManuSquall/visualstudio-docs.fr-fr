@@ -1,5 +1,5 @@
 ---
-title: IDebugObject2::IsEncOutdated | Microsoft Docs
+title: IDebugObject2::IsEncOutdated | Documents Microsoft
 ms.custom: 
 ms.date: 11/04/2016
 ms.reviewer: 
@@ -31,16 +31,16 @@ translation.priority.mt:
 - zh-cn
 - zh-tw
 ms.translationtype: MT
-ms.sourcegitcommit: ff8ecec19f8cab04ac2190f9a4a995766f1750bf
-ms.openlocfilehash: a8e5919493db3dc9e2cb0931f16d0f7cd23b4d24
+ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
+ms.openlocfilehash: 7161f3e608390e5a513faf86b2e0b7ed2459deed
 ms.contentlocale: fr-fr
-ms.lasthandoff: 08/23/2017
+ms.lasthandoff: 09/19/2017
 
 ---
 # <a name="idebugobject2isencoutdated"></a>IDebugObject2::IsEncOutdated
-This method determines whether the Edit and Continue status of this object or of the parent container is out of date. A custom expression evaluator does not implement this method and always returns `E_NOTIMPL`.  
+Cette méthode détermine si l’état de modifier & Continuer de cet objet ou du conteneur parent est obsolète. Un évaluateur d’expression personnalisée n’implémente pas cette méthode et retourne toujours `E_NOTIMPL`.  
   
-## <a name="syntax"></a>Syntax  
+## <a name="syntax"></a>Syntaxe  
   
 ```cpp  
 HRESULT IsEncOutdated(  
@@ -48,21 +48,21 @@ HRESULT IsEncOutdated(
 );  
 ```  
   
-```cs  
+```csharp  
 int IsEncOutdated(  
    out int pfEncOutdated  
 );  
 ```  
   
-#### <a name="parameters"></a>Parameters  
+#### <a name="parameters"></a>Paramètres  
  `pfEncOutdated`  
- [out] Nonzero (`TRUE`) if the Edit and Continue state is out of date, zero (`FALSE`) if it is not.  
+ [out] Différent de zéro (`TRUE`) si l’état de modifier & Continuer est périmé, zéro (`FALSE`) si elle n’est pas.  
   
-## <a name="return-value"></a>Return Value  
- If successful, returns `S_OK`; otherwise, returns an error code.  
+## <a name="return-value"></a>Valeur de retour  
+ En cas de réussite, retourne `S_OK`; sinon, retourne un code d’erreur.  
   
 > [!NOTE]
->  A custom expression evaluator should always return `E_NOTIMPL`.  
+>  Un évaluateur d’expression personnalisées doit toujours retourner `E_NOTIMPL`.  
   
-## <a name="see-also"></a>See Also  
+## <a name="see-also"></a>Voir aussi  
  [IDebugObject2](../../../extensibility/debugger/reference/idebugobject2.md)

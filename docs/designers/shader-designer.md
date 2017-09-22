@@ -5,7 +5,7 @@ ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
 ms.technology:
-- vs-ide-general
+- vs-ide-designers
 ms.tgt_pltfrm: 
 ms.topic: article
 f1_keywords:
@@ -13,8 +13,8 @@ f1_keywords:
 - vs.graphics.shaderdesigner
 ms.assetid: 5db09a16-b82c-4ba3-8ec9-630cdc109397
 caps.latest.revision: 32
-author: BrianPeek
-ms.author: brpeek
+author: gewarren
+ms.author: gewarren
 manager: ghogen
 translation.priority.ht:
 - de-de
@@ -79,7 +79,7 @@ Ce document décrit l’utilisation du concepteur de nuanceur [!INCLUDE[vsprvs](
   
  Barre d’outils **Mode du concepteur de nuanceur** :  
   
- ![Barre d’outils modale du concepteur de nuanceur.](~/designers/media/digit-dsd-modal-toolbar.png "Digit-DSD-Modal-Toolbar")  
+ ![Barre d’outils modale du concepteur de nuanceur.](../designers/media/digit-dsd-modal-toolbar.png "Digit-DSD-Modal-Toolbar")  
   
  Ce tableau décrit les éléments de la barre d’outils **Mode du concepteur de nuanceur**, répertoriés suivant l’ordre de leur affichage, de gauche à droite.  
   

@@ -1,5 +1,5 @@
 ---
-title: IDebugPort2::GetPortRequest | Microsoft Docs
+title: IDebugPort2::GetPortRequest | Documents Microsoft
 ms.custom: 
 ms.date: 11/04/2016
 ms.reviewer: 
@@ -34,13 +34,13 @@ ms.translationtype: MT
 ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
 ms.openlocfilehash: 58968a42b433ab87f556ff2dfbeb899fdcf3a681
 ms.contentlocale: fr-fr
-ms.lasthandoff: 08/28/2017
+ms.lasthandoff: 09/19/2017
 
 ---
 # <a name="idebugport2getportrequest"></a>IDebugPort2::GetPortRequest
-Gets the description of a port that was previously used to create the port (if available).  
+Obtient la description d’un port qui a été précédemment utilisé pour créer le port (si disponible).  
   
-## <a name="syntax"></a>Syntax  
+## <a name="syntax"></a>Syntaxe  
   
 ```cpp  
 HRESULT GetPortRequest(   
@@ -54,14 +54,14 @@ int GetPortRequest(
 );  
 ```  
   
-#### <a name="parameters"></a>Parameters  
+#### <a name="parameters"></a>Paramètres  
  `ppRequest`  
- [out] Returns an [IDebugPortRequest2](../../../extensibility/debugger/reference/idebugportrequest2.md) object representing the request that was used to create the port.  
+ [out] Retourne un [IDebugPortRequest2](../../../extensibility/debugger/reference/idebugportrequest2.md) objet qui représente la demande qui a été utilisée pour créer le port.  
   
-## <a name="return-value"></a>Return Value  
- If successful, returns `S_OK`; otherwise, returns an error code.  Returns `E_PORT_NO_REQUEST` if a port was not created using an [IDebugPortRequest2](../../../extensibility/debugger/reference/idebugportrequest2.md) port request.  
+## <a name="return-value"></a>Valeur de retour  
+ En cas de réussite, retourne `S_OK`; sinon, retourne un code d’erreur.  Retourne `E_PORT_NO_REQUEST` si un port n'a pas été créé à l’aide un [IDebugPortRequest2](../../../extensibility/debugger/reference/idebugportrequest2.md) requête sur le port.  
   
-## <a name="see-also"></a>See Also  
+## <a name="see-also"></a>Voir aussi  
  [IDebugPort2](../../../extensibility/debugger/reference/idebugport2.md)   
  [IDebugPortRequest2](../../../extensibility/debugger/reference/idebugportrequest2.md)   
- [AddPort](../../../extensibility/debugger/reference/idebugportsupplier2-addport.md)
+ [Ajouter un port](../../../extensibility/debugger/reference/idebugportsupplier2-addport.md)

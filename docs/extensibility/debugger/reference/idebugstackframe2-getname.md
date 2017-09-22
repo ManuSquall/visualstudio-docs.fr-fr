@@ -1,5 +1,5 @@
 ---
-title: IDebugStackFrame2::GetName | Microsoft Docs
+title: IDebugStackFrame2::GetName | Documents Microsoft
 ms.custom: 
 ms.date: 11/04/2016
 ms.reviewer: 
@@ -31,38 +31,38 @@ translation.priority.mt:
 - zh-cn
 - zh-tw
 ms.translationtype: MT
-ms.sourcegitcommit: ff8ecec19f8cab04ac2190f9a4a995766f1750bf
-ms.openlocfilehash: efd0c15d84924fc1416023576671b6917c1067e8
+ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
+ms.openlocfilehash: e1d2f407fcb6dc4ab9d26a8cd47804310c2b8e4f
 ms.contentlocale: fr-fr
-ms.lasthandoff: 08/23/2017
+ms.lasthandoff: 09/19/2017
 
 ---
 # <a name="idebugstackframe2getname"></a>IDebugStackFrame2::GetName
-Gets the name of the stack frame.  
+Obtient le nom du frame de pile.  
   
-## <a name="syntax"></a>Syntax  
+## <a name="syntax"></a>Syntaxe  
   
-```cpp#  
+```cpp  
 HRESULT GetName (   
    BSTR* pbstrName  
 );  
 ```  
   
-```cs  
+```csharp  
 int GetName (   
    out string pbstrName  
 );  
 ```  
   
-#### <a name="parameters"></a>Parameters  
+#### <a name="parameters"></a>Paramètres  
  `pbstrName`  
- [out] Returns the name of the stack frame.  
+ [out] Retourne le nom du frame de pile.  
   
-## <a name="return-value"></a>Return Value  
- If successful, returns `S_OK`; otherwise, returns an error code.  
+## <a name="return-value"></a>Valeur de retour  
+ En cas de réussite, retourne `S_OK`; sinon, retourne un code d’erreur.  
   
-## <a name="remarks"></a>Remarks  
- The name of a stack frame is typically the name of the method being executed.  
+## <a name="remarks"></a>Remarques  
+ Le nom d’un frame de pile est généralement le nom de la méthode en cours d’exécution.  
   
-## <a name="see-also"></a>See Also  
+## <a name="see-also"></a>Voir aussi  
  [IDebugStackFrame2](../../../extensibility/debugger/reference/idebugstackframe2.md)

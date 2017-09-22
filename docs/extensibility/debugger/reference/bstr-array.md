@@ -1,5 +1,5 @@
 ---
-title: BSTR_ARRAY | Microsoft Docs
+title: BSTR_ARRAY | Documents Microsoft
 ms.custom: 
 ms.date: 11/04/2016
 ms.reviewer: 
@@ -34,13 +34,13 @@ ms.translationtype: MT
 ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
 ms.openlocfilehash: 0e1d2b2228085505971102494522cdf9085d4a67
 ms.contentlocale: fr-fr
-ms.lasthandoff: 08/28/2017
+ms.lasthandoff: 09/19/2017
 
 ---
 # <a name="bstrarray"></a>BSTR_ARRAY
-A structure that describes an array of strings.  
+Une structure qui décrit un tableau de chaînes.  
   
-## <a name="syntax"></a>Syntax  
+## <a name="syntax"></a>Syntaxe  
   
 ```cpp  
 typedef struct tagBSTR_ARRAY {  
@@ -56,25 +56,25 @@ struct BSTR_ARRAY {
 }  
 ```  
   
-## <a name="terms"></a>Terms  
+## <a name="terms"></a>Termes  
  dwCount  
- Number of strings in `Members` array.  
+ Nombre de chaînes dans `Members` tableau.  
   
- Members  
- Array of strings.  
+ Membres  
+ Tableau de chaînes.  
   
-## <a name="remarks"></a>Remarks  
- This structure is returned from the [EnumPersistedPorts](../../../extensibility/debugger/reference/idebugportsupplier3-enumpersistedports.md) method.  
+## <a name="remarks"></a>Remarques  
+ Cette structure est retournée à partir de la [EnumPersistedPorts](../../../extensibility/debugger/reference/idebugportsupplier3-enumpersistedports.md) (méthode).  
   
- [C++ only] Each individual string must be freed using `SysFreeString`, and the `Members` array must be freed with `CoTaskMemFree`.  
+ (C++ uniquement) Chaque chaîne individuelle doit être libérée à l’aide de `SysFreeString`et le `Members` tableau doit être libéré avec `CoTaskMemFree`.  
   
-## <a name="requirements"></a>Requirements  
- Header: msdbg.h  
+## <a name="requirements"></a>Spécifications  
+ En-tête : msdbg.h  
   
- Namespace: Microsoft.VisualStudio.Debugger.Interop  
+ Namespace : Microsoft.VisualStudio.Debugger.Interop  
   
- Assembly: Microsoft.VisualStudio.Debugger.Interop.dll  
+ Assembly : Microsoft.VisualStudio.Debugger.Interop.dll  
   
-## <a name="see-also"></a>See Also  
- [Structures and Unions](../../../extensibility/debugger/reference/structures-and-unions.md)   
+## <a name="see-also"></a>Voir aussi  
+ [Structures et Unions](../../../extensibility/debugger/reference/structures-and-unions.md)   
  [EnumPersistedPorts](../../../extensibility/debugger/reference/idebugportsupplier3-enumpersistedports.md)

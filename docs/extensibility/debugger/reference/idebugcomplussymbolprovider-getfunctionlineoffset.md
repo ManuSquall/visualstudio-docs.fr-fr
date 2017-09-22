@@ -1,5 +1,5 @@
 ---
-title: IDebugComPlusSymbolProvider::GetFunctionLineOffset | Microsoft Docs
+title: IDebugComPlusSymbolProvider::GetFunctionLineOffset | Documents Microsoft
 ms.custom: 
 ms.date: 11/04/2016
 ms.reviewer: 
@@ -30,18 +30,18 @@ translation.priority.mt:
 - zh-cn
 - zh-tw
 ms.translationtype: MT
-ms.sourcegitcommit: ff8ecec19f8cab04ac2190f9a4a995766f1750bf
-ms.openlocfilehash: f945049a66898d8e384ccf7b4f03d0e0c7dae1de
+ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
+ms.openlocfilehash: 2d4e59ff8cad8099a0cd6e80d7a4232a5dff7c66
 ms.contentlocale: fr-fr
-ms.lasthandoff: 08/23/2017
+ms.lasthandoff: 09/19/2017
 
 ---
 # <a name="idebugcomplussymbolprovidergetfunctionlineoffset"></a>IDebugComPlusSymbolProvider::GetFunctionLineOffset
-Retrieves the address within a function that represents the given line offset.  
+Récupère l’adresse d’une fonction qui représente le décalage de la ligne donnée.  
   
-## <a name="syntax"></a>Syntax  
+## <a name="syntax"></a>Syntaxe  
   
-```cpp#  
+```cpp  
 HRESULT GetFunctionLineOffset(  
    IDebugAddress*  pAddress,   
    DWORD           dwLine,   
@@ -49,7 +49,7 @@ HRESULT GetFunctionLineOffset(
 );  
 ```  
   
-```cs  
+```csharp  
 int GetFunctionLineOffset(  
    IDebugAddress     pAddress,   
    uint              dwLine,   
@@ -57,23 +57,23 @@ int GetFunctionLineOffset(
 );  
 ```  
   
-#### <a name="parameters"></a>Parameters  
+#### <a name="parameters"></a>Paramètres  
  `pAddress`  
- [in] Address that represents function.  
+ [in] Adresse qui représente la fonction.  
   
  `dwLine`  
- [in] Line offset from beginning of function.  
+ [in] Ligne de décalage entre le début de la fonction.  
   
  `ppNewAddress`  
- [out] New address that represents line offset from beginning of function.  
+ [out] Nouvelle adresse qui représente le décalage entre le début de la fonction de ligne.  
   
-## <a name="return-value"></a>Return Value  
- If successful, returns `S_OK`; otherwise, returns an error code.  
+## <a name="return-value"></a>Valeur de retour  
+ En cas de réussite, retourne `S_OK`; sinon, retourne un code d’erreur.  
   
-## <a name="example"></a>Example  
- The following example shows how to implement this method for a **CDebugSymbolProvider** object that exposes the [IDebugComPlusSymbolProvider](../../../extensibility/debugger/reference/idebugcomplussymbolprovider.md) interface.  
+## <a name="example"></a>Exemple  
+ L’exemple suivant montre comment implémenter cette méthode pour un **CDebugSymbolProvider** objet qui expose la [IDebugComPlusSymbolProvider](../../../extensibility/debugger/reference/idebugcomplussymbolprovider.md) interface.  
   
-```cpp#  
+```cpp  
 HRESULT CDebugSymbolProvider::GetFunctionLineOffset(  
     IDebugAddress *pAddress,  
     DWORD dwLine,  
@@ -118,5 +118,5 @@ Error:
 }  
 ```  
   
-## <a name="see-also"></a>See Also  
+## <a name="see-also"></a>Voir aussi  
  [IDebugComPlusSymbolProvider](../../../extensibility/debugger/reference/idebugcomplussymbolprovider.md)

@@ -1,5 +1,5 @@
 ---
-title: IDebugProcessSecurity::GetUserName | Microsoft Docs
+title: IDebugProcessSecurity::GetUserName | Documents Microsoft
 ms.custom: 
 ms.date: 11/04/2016
 ms.reviewer: 
@@ -32,13 +32,13 @@ ms.translationtype: MT
 ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
 ms.openlocfilehash: 081f073ba59021ca56dd084bd2cef0fde6c5c32e
 ms.contentlocale: fr-fr
-ms.lasthandoff: 08/28/2017
+ms.lasthandoff: 09/19/2017
 
 ---
 # <a name="idebugprocesssecuritygetusername"></a>IDebugProcessSecurity::GetUserName
-Gets the user name from the port supplier.  
+Obtient le nom d’utilisateur du fournisseur de port.  
   
-## <a name="syntax"></a>Syntax  
+## <a name="syntax"></a>Syntaxe  
   
 ```cpp  
 HRESULT GetUserName(  
@@ -52,15 +52,15 @@ int GetUserName (
 );  
 ```  
   
-#### <a name="parameters"></a>Parameters  
+#### <a name="parameters"></a>Paramètres  
  `pbstrUserName`  
- [out] A string containing the user name.  
+ [out] Chaîne contenant le nom d’utilisateur.  
   
-## <a name="return-value"></a>Return Value  
- If the method succeeds, it returns `S_OK`. Otherwise it returns an error code.  
+## <a name="return-value"></a>Valeur de retour  
+ Si la méthode réussit, elle retourne `S_OK`. Sinon, elle retourne un code d’erreur.  
   
-## <a name="remarks"></a>Remarks  
- `GetUserName` returns the user name that is displayed in the **User Name** column of the **Attach to Process** dialog box. To view the **Attach to Process** dialog box, click **Attach to Process** on the **Tools** menu in the [!INCLUDE[vsprvs](../../../code-quality/includes/vsprvs_md.md)] integrated development environment (IDE).  
+## <a name="remarks"></a>Remarques  
+ `GetUserName`Retourne le nom d’utilisateur qui s’affiche dans le **nom d’utilisateur** colonne de la **attacher au processus** boîte de dialogue. Pour afficher le **attacher au processus** boîte de dialogue, cliquez sur **attacher au processus** sur la **outils** menu dans le [!INCLUDE[vsprvs](../../../code-quality/includes/vsprvs_md.md)] l’environnement de développement intégré (IDE).  
   
-## <a name="see-also"></a>See Also  
+## <a name="see-also"></a>Voir aussi  
  [IDebugProcessSecurity](../../../extensibility/debugger/reference/idebugprocesssecurity.md)

@@ -1,5 +1,5 @@
 ---
-title: IDebugObject2::GetField | Microsoft Docs
+title: IDebugObject2::GetField | Documents Microsoft
 ms.custom: 
 ms.date: 11/04/2016
 ms.reviewer: 
@@ -31,16 +31,16 @@ translation.priority.mt:
 - zh-cn
 - zh-tw
 ms.translationtype: MT
-ms.sourcegitcommit: ff8ecec19f8cab04ac2190f9a4a995766f1750bf
-ms.openlocfilehash: b50a5165a037890abf2d098b8bbfd6bfe86d46f3
+ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
+ms.openlocfilehash: bd870e8068763ee992e2b510d8d834beff03fece
 ms.contentlocale: fr-fr
-ms.lasthandoff: 08/23/2017
+ms.lasthandoff: 09/19/2017
 
 ---
 # <a name="idebugobject2getfield"></a>IDebugObject2::GetField
-Gets the type of this object.  
+Obtient le type de cet objet.  
   
-## <a name="syntax"></a>Syntax  
+## <a name="syntax"></a>Syntaxe  
   
 ```cpp  
 HRESULT GetField(  
@@ -48,22 +48,22 @@ HRESULT GetField(
 );  
 ```  
   
-```cs  
+```csharp  
 int GetField(  
    out IDebugField ppField  
 );  
 ```  
   
-#### <a name="parameters"></a>Parameters  
+#### <a name="parameters"></a>Paramètres  
  `ppField`  
- [out] Returns an [IDebugField](../../../extensibility/debugger/reference/idebugfield.md) object if not a null value.  
+ [out] Retourne un [IDebugField](../../../extensibility/debugger/reference/idebugfield.md) objet si ce n’est pas une valeur null.  
   
-## <a name="return-value"></a>Return Value  
- If successful, returns S_OK; otherwise, returns an error code.  
+## <a name="return-value"></a>Valeur de retour  
+ En cas de réussite, retourne S_OK ; Sinon, retourne un code d’erreur.  
   
-## <a name="remarks"></a>Remarks  
- A field describes the type of the object.  
+## <a name="remarks"></a>Remarques  
+ Un champ décrit le type de l’objet.  
   
-## <a name="see-also"></a>See Also  
+## <a name="see-also"></a>Voir aussi  
  [IDebugObject2](../../../extensibility/debugger/reference/idebugobject2.md)   
  [IDebugField](../../../extensibility/debugger/reference/idebugfield.md)

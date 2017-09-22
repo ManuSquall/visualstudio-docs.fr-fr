@@ -1,5 +1,5 @@
 ---
-title: IDebugPendingBreakpoint2::Delete | Microsoft Docs
+title: IDebugPendingBreakpoint2::Delete | Documents Microsoft
 ms.custom: 
 ms.date: 11/04/2016
 ms.reviewer: 
@@ -32,34 +32,34 @@ translation.priority.mt:
 - zh-cn
 - zh-tw
 ms.translationtype: MT
-ms.sourcegitcommit: ff8ecec19f8cab04ac2190f9a4a995766f1750bf
-ms.openlocfilehash: c9ac9199af1448ec5d83d43f9c06a1c54f9ea5f8
+ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
+ms.openlocfilehash: 14f767b209a84dfe730b9738794706d4186fabb6
 ms.contentlocale: fr-fr
-ms.lasthandoff: 08/23/2017
+ms.lasthandoff: 09/19/2017
 
 ---
 # <a name="idebugpendingbreakpoint2delete"></a>IDebugPendingBreakpoint2::Delete
-Deletes this pending breakpoint and all breakpoints bound from it.  
+Supprime ce point d’arrêt en attente et tous les points d’arrêt liés à partir de celui-ci.  
   
-## <a name="syntax"></a>Syntax  
+## <a name="syntax"></a>Syntaxe  
   
-```cpp#  
+```cpp  
 HRESULT Delete(   
    void   
 );  
 ```  
   
-```cs  
+```csharp  
 int Delete();  
 ```  
   
-## <a name="return-value"></a>Return Value  
- If successful, returns `S_OK`; otherwise, returns an error code. Returns `E_BP_DELETED` if the breakpoint has been deleted.  
+## <a name="return-value"></a>Valeur de retour  
+ En cas de réussite, retourne `S_OK`; sinon, retourne un code d’erreur. Retourne `E_BP_DELETED` si le point d’arrêt a été supprimé.  
   
-## <a name="example"></a>Example  
- The following example shows how to implement this method for a simple `CPendingBreakpoint` object that implements the [IDebugPendingBreakpoint2](../../../extensibility/debugger/reference/idebugpendingbreakpoint2.md) interface.  
+## <a name="example"></a>Exemple  
+ L’exemple suivant montre comment implémenter cette méthode pour une simple `CPendingBreakpoint` objet qui implémente le [IDebugPendingBreakpoint2](../../../extensibility/debugger/reference/idebugpendingbreakpoint2.md) interface.  
   
-```cpp#  
+```cpp  
 HRESULT CPendingBreakpoint::Delete(void)    
 {    
    HRESULT hr;    
@@ -99,5 +99,5 @@ HRESULT CPendingBreakpoint::Delete(void)
 }    
 ```  
   
-## <a name="see-also"></a>See Also  
+## <a name="see-also"></a>Voir aussi  
  [IDebugPendingBreakpoint2](../../../extensibility/debugger/reference/idebugpendingbreakpoint2.md)

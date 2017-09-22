@@ -5,7 +5,7 @@ ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
 ms.technology:
-- vs-ide-general
+- vs-ide-designers
 ms.tgt_pltfrm: 
 ms.topic: article
 f1_keywords:
@@ -13,8 +13,8 @@ f1_keywords:
 - vs.graphics.imageeditor
 ms.assetid: fc71d502-c548-4863-8afc-12a1d3ec90d4
 caps.latest.revision: 45
-author: BrianPeek
-ms.author: brpeek
+author: gewarren
+ms.author: gewarren
 manager: ghogen
 ms.translationtype: Human Translation
 ms.sourcegitcommit: 5db97d19b1b823388a465bba15d057b30ff0b3ce
@@ -96,7 +96,7 @@ Ce document décrit comment utiliser l’éditeur d’images de [!INCLUDE[vsprvs
   
  Voici la barre d’outils **Mode de l’éditeur d’images** :  
   
- ![Barre d’outils modale de l’éditeur d’images.](~/designers/media/digit-tre-modal-toolbar.png "Digit-TRE-Modal-Toolbar")  
+ ![Barre d’outils modale de l’éditeur d’images.](../designers/media/digit-tre-modal-toolbar.png "Digit-TRE-Modal-Toolbar")  
   
  Ce tableau décrit les éléments de la barre d’outils **Mode de l’éditeur d’images**, répertoriés dans l’ordre où ils figurent, de gauche à droite.  
   
@@ -120,7 +120,7 @@ Ce document décrit comment utiliser l’éditeur d’images de [!INCLUDE[vsprvs
   
  Voici la barre d’outils **Éditeur d’images**.  
   
- ![Barre d’outils Éditeur d’images](~/designers/media/digit-tre-toolbar.png "Digit-TRE-Toolbar")  
+ ![Barre d’outils Éditeur d’images](../designers/media/digit-tre-toolbar.png "Digit-TRE-Toolbar")  
   
  Le tableau suivant décrit les éléments de la barre d’outils **Éditeur d’images**, répertoriés dans l’ordre où ils figurent, de haut en bas.  
   

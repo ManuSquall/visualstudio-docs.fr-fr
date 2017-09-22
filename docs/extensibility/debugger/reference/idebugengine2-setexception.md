@@ -1,5 +1,5 @@
 ---
-title: IDebugEngine2::SetException | Microsoft Docs
+title: IDebugEngine2::SetException | Documents Microsoft
 ms.custom: 
 ms.date: 11/04/2016
 ms.reviewer: 
@@ -34,13 +34,13 @@ ms.translationtype: MT
 ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
 ms.openlocfilehash: 2d7d1631c1b5179d51a80b2094766c4ed053ac36
 ms.contentlocale: fr-fr
-ms.lasthandoff: 08/28/2017
+ms.lasthandoff: 09/19/2017
 
 ---
 # <a name="idebugengine2setexception"></a>IDebugEngine2::SetException
-Specifies how the debug engine (DE) should handle a given exception.  
+Spécifie la façon dont le moteur de débogage (DE) doit gérer une exception donnée.  
   
-## <a name="syntax"></a>Syntax  
+## <a name="syntax"></a>Syntaxe  
   
 ```cpp  
 HRESULT SetException(   
@@ -54,16 +54,16 @@ int SetException(
 );  
 ```  
   
-#### <a name="parameters"></a>Parameters  
+#### <a name="parameters"></a>Paramètres  
  `pException`  
- [in] An [EXCEPTION_INFO](../../../extensibility/debugger/reference/exception-info.md) structure that describes the exception and how to debug it.  
+ [in] Un [EXCEPTION_INFO](../../../extensibility/debugger/reference/exception-info.md) structure qui décrit l’exception et comment la déboguer.  
   
-## <a name="return-value"></a>Return Value  
- If successful, returns `S_OK`; otherwise, returns an error code.  
+## <a name="return-value"></a>Valeur de retour  
+ En cas de réussite, retourne `S_OK`; sinon, retourne un code d’erreur.  
   
-## <a name="remarks"></a>Remarks  
- A DE could be instructed to stop the program generating an exception at first chance, second chance, or not at all.  
+## <a name="remarks"></a>Remarques  
+ Un DE pourrait invité à arrêter le programme de génération d’une exception à la première occasion, de deuxième chance, ou pas du tout.  
   
-## <a name="see-also"></a>See Also  
+## <a name="see-also"></a>Voir aussi  
  [IDebugEngine2](../../../extensibility/debugger/reference/idebugengine2.md)   
  [EXCEPTION_INFO](../../../extensibility/debugger/reference/exception-info.md)

@@ -1,5 +1,5 @@
 ---
-title: IEnumDebugBoundBreakpoints2::Skip | Microsoft Docs
+title: IEnumDebugBoundBreakpoints2::Skip | Documents Microsoft
 ms.custom: 
 ms.date: 11/04/2016
 ms.reviewer: 
@@ -31,38 +31,38 @@ translation.priority.mt:
 - zh-cn
 - zh-tw
 ms.translationtype: MT
-ms.sourcegitcommit: ff8ecec19f8cab04ac2190f9a4a995766f1750bf
-ms.openlocfilehash: 3b06154ffca2db717a1cf90eb2846001c6b04498
+ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
+ms.openlocfilehash: e2d689bb2a9d083edc317fd352e9244e35b44062
 ms.contentlocale: fr-fr
-ms.lasthandoff: 08/23/2017
+ms.lasthandoff: 09/19/2017
 
 ---
 # <a name="ienumdebugboundbreakpoints2skip"></a>IEnumDebugBoundBreakpoints2::Skip
-Skips over the specified number of elements.  
+Ignore le nombre spécifié d’éléments.  
   
-## <a name="syntax"></a>Syntax  
+## <a name="syntax"></a>Syntaxe  
   
-```cpp#  
+```cpp  
 HRESULT Skip(  
    ULONG celt  
 );  
 ```  
   
-```cs  
+```csharp  
 int Skip(  
    uint celt  
 );  
 ```  
   
-#### <a name="parameters"></a>Parameters  
+#### <a name="parameters"></a>Paramètres  
  `celt`  
- [in] Number of elements to skip.  
+ [in] Nombre d’éléments à ignorer.  
   
-## <a name="return-value"></a>Return Value  
- If successful, returns `S_OK`. Returns `S_FALSE` if `celt` is greater than the number of remaining elements; otherwise, returns an error code.  
+## <a name="return-value"></a>Valeur de retour  
+ En cas de réussite, retourne `S_OK`. Retourne `S_FALSE` si `celt` est supérieur au nombre d’éléments restants ; sinon, retourne un code d’erreur.  
   
-## <a name="remarks"></a>Remarks  
- If `celt` specifies a value greater than the number of remaining elements, the enumeration is set to the end and `S_FALSE` is returned.  
+## <a name="remarks"></a>Remarques  
+ Si `celt` spécifie une valeur supérieure au nombre d’éléments restants, l’énumération est définie à la fin et `S_FALSE` est retourné.  
   
-## <a name="see-also"></a>See Also  
+## <a name="see-also"></a>Voir aussi  
  [IEnumDebugBoundBreakpoints2](../../../extensibility/debugger/reference/ienumdebugboundbreakpoints2.md)

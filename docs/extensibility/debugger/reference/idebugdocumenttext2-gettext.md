@@ -1,5 +1,5 @@
 ---
-title: IDebugDocumentText2::GetText | Microsoft Docs
+title: IDebugDocumentText2::GetText | Documents Microsoft
 ms.custom: 
 ms.date: 11/04/2016
 ms.reviewer: 
@@ -34,13 +34,13 @@ ms.translationtype: MT
 ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
 ms.openlocfilehash: a7e950fbf8667ee85f992ab8406dfdd9d7442555
 ms.contentlocale: fr-fr
-ms.lasthandoff: 08/28/2017
+ms.lasthandoff: 09/19/2017
 
 ---
 # <a name="idebugdocumenttext2gettext"></a>IDebugDocumentText2::GetText
-Retrieves the text from the specified position in the document.  
+Récupère le texte de la position spécifiée dans le document.  
   
-## <a name="syntax"></a>Syntax  
+## <a name="syntax"></a>Syntaxe  
   
 ```cpp  
 HRESULT GetText(   
@@ -60,24 +60,24 @@ int GetText(
 );  
 ```  
   
-#### <a name="parameters"></a>Parameters  
+#### <a name="parameters"></a>Paramètres  
  `pos`  
- [in] A [TEXT_POSITION](../../../extensibility/debugger/reference/text-position.md) structure that indicates the location of the text to be retrieved.  
+ [in] A [TEXT_POSITION](../../../extensibility/debugger/reference/text-position.md) structure qui indique l’emplacement du texte doit être récupéré.  
   
  `cMaxChars`  
- [in] The maximum number of characters of the text to be retrieved.  
+ [in] Le nombre maximal de caractères du texte doit être récupéré.  
   
  `pText`  
- [in, out] A pointer to a buffer that is to be filled in with the desired text. This buffer must be able to contain at least `cMaxChars` number of wide characters.  
+ [dans, out] Pointeur vers une mémoire tampon qui doit être remplie avec le texte souhaité. Cette mémoire tampon doit être en mesure de contenir au moins `cMaxChars` nombre de caractères larges.  
   
  `pcNumChars`  
- [out] Returns the number of characters actually retrieved.  
+ [out] Retourne le nombre de caractères réellement récupérées.  
   
-## <a name="return-value"></a>Return Value  
- If successful, returns `S_OK`; otherwise, returns an error code.  
+## <a name="return-value"></a>Valeur de retour  
+ En cas de réussite, retourne `S_OK`; sinon, retourne un code d’erreur.  
   
-## <a name="example"></a>Example  
- This example shows how this method can be called from C#.  
+## <a name="example"></a>Exemple  
+ Cet exemple montre comment cette méthode peut être appelée à partir de c#.  
   
 ```csharp  
 using System.Runtime.Interop.Services;  
@@ -115,6 +115,6 @@ namespace Mynamespace
 }  
 ```  
   
-## <a name="see-also"></a>See Also  
+## <a name="see-also"></a>Voir aussi  
  [IDebugDocumentText2](../../../extensibility/debugger/reference/idebugdocumenttext2.md)   
  [TEXT_POSITION](../../../extensibility/debugger/reference/text-position.md)

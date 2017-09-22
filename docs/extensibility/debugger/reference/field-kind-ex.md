@@ -1,5 +1,5 @@
 ---
-title: FIELD_KIND_EX | Microsoft Docs
+title: FIELD_KIND_EX | Documents Microsoft
 ms.custom: 
 ms.date: 11/04/2016
 ms.reviewer: 
@@ -29,18 +29,18 @@ translation.priority.mt:
 - zh-cn
 - zh-tw
 ms.translationtype: MT
-ms.sourcegitcommit: ff8ecec19f8cab04ac2190f9a4a995766f1750bf
-ms.openlocfilehash: db3f837d76ea4e0d0de0c54ae7e9151fc5ab55b6
+ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
+ms.openlocfilehash: 2f3e2f6ee39523250f3d3588ed21c21c9a146295
 ms.contentlocale: fr-fr
-ms.lasthandoff: 08/23/2017
+ms.lasthandoff: 09/19/2017
 
 ---
 # <a name="fieldkindex"></a>FIELD_KIND_EX
-Enumerates additional kinds of fields that an [IDebugField](../../../extensibility/debugger/reference/idebugfield.md) object can contain. This enumeration extends the [FIELD_KIND](../../../extensibility/debugger/reference/field-kind.md) enumeration.  
+Énumère les types de champs supplémentaires qui une [IDebugField](../../../extensibility/debugger/reference/idebugfield.md) objet peut contenir. Cette énumération étend la [FIELD_KIND](../../../extensibility/debugger/reference/field-kind.md) énumération.  
   
-## <a name="syntax"></a>Syntax  
+## <a name="syntax"></a>Syntaxe  
   
-```cpp#  
+```cpp  
 enum enum_FIELD_KIND_EX  
 {  
    FIELD_KIND_EX_NONE = 0,  
@@ -50,7 +50,7 @@ enum enum_FIELD_KIND_EX
 typedef DWORD FIELD_KIND_EX;  
 ```  
   
-```cs  
+```csharp  
 public enum enum_FIELD_KIND_EX  
 {  
    FIELD_KIND_EX_NONE = 0,  
@@ -59,23 +59,23 @@ public enum enum_FIELD_KIND_EX
 };  
 ```  
   
-## <a name="members"></a>Members  
+## <a name="members"></a>Membres  
  FIELD_KIND_EX_NONE  
- Field does not contain an extended type.  
+ Champ ne contient pas un type étendu.  
   
  FIELD_TYPE_EX_METHODVAR  
- Field contains a method variable.  
+ Champ contient une variable de méthode.  
   
  FIELD_TYPE_EX_CLASSVAR  
- Field contains a class variable.  
+ Champ contient une variable de classe.  
   
-## <a name="requirements"></a>Requirements  
- Header: Sh.h  
+## <a name="requirements"></a>Spécifications  
+ En-tête : Sh.h  
   
- Namespace: Microsoft.VisualStudio.Debugger.Interop  
+ Namespace : Microsoft.VisualStudio.Debugger.Interop  
   
- Assembly: Microsoft.VisualStudio.Debugger.Interop.dll  
+ Assembly : Microsoft.VisualStudio.Debugger.Interop.dll  
   
-## <a name="see-also"></a>See Also  
- [Enumerations](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)   
+## <a name="see-also"></a>Voir aussi  
+ [Énumérations](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)   
  [GetExtendedKind](../../../extensibility/debugger/reference/idebugextendedfield-getextendedkind.md)

@@ -1,5 +1,5 @@
 ---
-title: IDebugPendingBreakpoint2::SetCondition | Microsoft Docs
+title: IDebugPendingBreakpoint2::SetCondition | Documents Microsoft
 ms.custom: 
 ms.date: 11/04/2016
 ms.reviewer: 
@@ -32,39 +32,39 @@ translation.priority.mt:
 - zh-cn
 - zh-tw
 ms.translationtype: MT
-ms.sourcegitcommit: ff8ecec19f8cab04ac2190f9a4a995766f1750bf
-ms.openlocfilehash: 54347da59033c5902a4c8b106a7eb6df3a78cc52
+ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
+ms.openlocfilehash: e418fc46dc04e4271954782ba7fe9cb8e2e652c7
 ms.contentlocale: fr-fr
-ms.lasthandoff: 08/23/2017
+ms.lasthandoff: 09/19/2017
 
 ---
 # <a name="idebugpendingbreakpoint2setcondition"></a>IDebugPendingBreakpoint2::SetCondition
-Sets or changes the condition associated with the pending breakpoint.  
+Définit ou modifie la condition associée au point d’arrêt en attente.  
   
-## <a name="syntax"></a>Syntax  
+## <a name="syntax"></a>Syntaxe  
   
-```cpp#  
+```cpp  
 HRESULT SetCondition(   
    BP_CONDITION bpCondition  
 );  
 ```  
   
-```cs  
+```csharp  
 int SetCondition(   
    BP_CONDITION bpCondition  
 );  
 ```  
   
-#### <a name="parameters"></a>Parameters  
+#### <a name="parameters"></a>Paramètres  
  `bpCondition`  
- [in] A [BP_CONDITION](../../../extensibility/debugger/reference/bp-condition.md) structure that specifies the condition to set.  
+ [in] A [BP_CONDITION](../../../extensibility/debugger/reference/bp-condition.md) structure qui spécifie la condition à définir.  
   
-## <a name="return-value"></a>Return Value  
- If successful, returns `S_OK`; otherwise, returns an error code.  
+## <a name="return-value"></a>Valeur de retour  
+ En cas de réussite, retourne `S_OK`; sinon, retourne un code d’erreur.  
   
-## <a name="remarks"></a>Remarks  
- Any condition that was previously associated with the pending breakpoint is lost. All breakpoints bound from this pending breakpoint are called to set their condition to the value specified in the `bpCondition` parameter.  
+## <a name="remarks"></a>Remarques  
+ Toute condition qui a été précédemment associée avec le point d’arrêt en attente est perdue. Tous les points d’arrêt liés à partir de ce point d’arrêt dans l’attente sont appelées pour définir leur état à la valeur spécifiée dans le `bpCondition` paramètre.  
   
-## <a name="see-also"></a>See Also  
+## <a name="see-also"></a>Voir aussi  
  [IDebugPendingBreakpoint2](../../../extensibility/debugger/reference/idebugpendingbreakpoint2.md)   
  [BP_CONDITION](../../../extensibility/debugger/reference/bp-condition.md)

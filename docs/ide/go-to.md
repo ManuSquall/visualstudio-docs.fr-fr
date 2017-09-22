@@ -9,8 +9,8 @@ ms.technology:
 ms.tgt_pltfrm: 
 ms.topic: article
 ms.assetid: 509b2107-23d1-4fb3-987f-ab99ef45b72e
-author: BrianPeek
-ms.author: brpeek
+author: gewarren
+ms.author: gewarren
 manager: ghogen
 translation.priority.ht:
 - cs-cz
@@ -26,9 +26,10 @@ translation.priority.ht:
 - tr-tr
 - zh-cn
 - zh-tw
-translationtype: Human Translation
+ms.translationtype: Human Translation
 ms.sourcegitcommit: 3b812629bf0f655f39c35a56eb1b3ca9113303a6
 ms.openlocfilehash: 8bf6d49b21d128d15f5312fb230d4a8e7a8195af
+ms.contentlocale: fr-fr
 ms.lasthandoff: 03/01/2017
 
 ---
@@ -48,35 +49,35 @@ Cette fonctionnalité existe dans Visual Studio 2017 et ultérieur.  Elle vous p
 
 Par défaut, une petite fenêtre s’affiche en haut à droite de votre IDE.
 
-![Atteindre tout](~/ide/media/gotoall.png)
+![Atteindre tout](media/gotoall.png)
 
 À ce stade, il existe plusieurs façons de procéder :
 * Entrez du texte sans préfixe pour rechercher à l’aide des [icônes de filtre](#filtered-searches) sélectionnés sous la zone de texte.
 * Entrez un [préfixe](#filtered-searches) suivi du texte à rechercher.
 * Entrez un point d’interrogation (?) pour obtenir une aide supplémentaire.
-  ![Aide sur Accéder à tout](~/ide/media/gotoall_help.png)
+  ![Aide sur Accéder à tout](media/gotoall_help.png)
 
 ### <a name="filtered-searches"></a>Recherches filtrées
 Pour affiner votre recherche à un type spécifique, vous pouvez utiliser un préfixe lors de la saisie, ou utiliser les icônes sous la fenêtre de recherche, comme indiqué ci-dessous.
 
 Préfixe | Icône | Raccourci | Description
 :----: | ---- | -------- | ---
-#      | ![Icône de symbole](~/ide/media/gotoall_symbolicon.png) | Ctrl+1, Ctrl+S | Rechercher des symboles correspondants
-f      | ![Icône de fichier](~/ide/media/gotoall_fileicon.png)     | Ctrl+1, Ctrl+F | Rechercher des noms de fichiers correspondants
-m      | ![Icône Membre](~/ide/media/gotoall_membericon.png) | Ctrl+1, Ctrl+M | Rechercher des membres correspondants
-t      | ![Icône de type](~/ide/media/gotoall_typeicon.png)     | Ctrl+1, Ctrl+T | Rechercher des types correspondants
-:      | ![Icône de ligne](~/ide/media/gotoall_lineicon.png)     | Ctrl+G         | Atteindre le numéro de ligne entré
+#      | ![Icône de symbole](media/gotoall_symbolicon.png) | Ctrl+1, Ctrl+S | Rechercher des symboles correspondants
+f      | ![Icône de fichier](media/gotoall_fileicon.png)     | Ctrl+1, Ctrl+F | Rechercher des noms de fichiers correspondants
+m      | ![Icône Membre](media/gotoall_membericon.png) | Ctrl+1, Ctrl+M | Rechercher des membres correspondants
+t      | ![Icône de type](media/gotoall_typeicon.png)     | Ctrl+1, Ctrl+T | Rechercher des types correspondants
+:      | ![Icône de ligne](media/gotoall_lineicon.png)     | Ctrl+G         | Atteindre le numéro de ligne entré
 
 ### <a name="search-locations"></a>Emplacements de recherche
 Pour affiner votre recherche à des emplacements spécifiques, utilisez les deux icônes de documents.
 
 Icône | Description
 ---- | ---
-![Document actif](~/ide/media/gotoall_currentdocument.png) | Rechercher dans le document actif uniquement
-![Documents externes](~/ide/media/gotoall_external.png) | Rechercher dans des documents externes en plus de ceux qui se trouvent dans le projet ou la solution
+![Document actif](media/gotoall_currentdocument.png) | Rechercher dans le document actif uniquement
+![Documents externes](media/gotoall_external.png) | Rechercher dans des documents externes en plus de ceux qui se trouvent dans le projet ou la solution
 
 ### <a name="settings"></a>Paramètres
-Un clic sur l’icône d’engrenage ![Icône d’engrenage](~/ide/media/gotoall_gear.png) dans l’angle inférieur droit vous permet de modifier le fonctionnement de cette fonctionnalité.
+Un clic sur l’icône d’engrenage ![Icône d’engrenage](media/gotoall_gear.png) dans l’angle inférieur droit vous permet de modifier le fonctionnement de cette fonctionnalité.
 
 Paramètre | Description
 ------- | ---

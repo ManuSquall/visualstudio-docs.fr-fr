@@ -1,5 +1,5 @@
 ---
-title: IDebugPortEx2::CanTerminateProcess | Microsoft Docs
+title: IDebugPortEx2::CanTerminateProcess | Documents Microsoft
 ms.custom: 
 ms.date: 11/04/2016
 ms.reviewer: 
@@ -31,36 +31,36 @@ translation.priority.mt:
 - zh-cn
 - zh-tw
 ms.translationtype: MT
-ms.sourcegitcommit: ff8ecec19f8cab04ac2190f9a4a995766f1750bf
-ms.openlocfilehash: 8d1f2772d2aed5876a4cf725d0460d227688e04d
+ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
+ms.openlocfilehash: 4d10bf81e1da7d7170ac5f4fa9baa2221c1cd459
 ms.contentlocale: fr-fr
-ms.lasthandoff: 08/23/2017
+ms.lasthandoff: 09/19/2017
 
 ---
 # <a name="idebugportex2canterminateprocess"></a>IDebugPortEx2::CanTerminateProcess
-Determines whether a process can be terminated.  
+Détermine si un processus peut être arrêté.  
   
-## <a name="syntax"></a>Syntax  
+## <a name="syntax"></a>Syntaxe  
   
-```cpp#  
+```cpp  
 HRESULT CanTerminateProcess(   
    IDebugProcess2* pPortProcess  
 );  
 ```  
   
-```cs  
+```csharp  
 HRESULT CanTerminateProcess(   
    IDebugProcess2 pPortProcess  
 );  
 ```  
   
-#### <a name="parameters"></a>Parameters  
+#### <a name="parameters"></a>Paramètres  
  `pPortProcess`  
- [in] An [IDebugProcess2](../../../extensibility/debugger/reference/idebugprocess2.md) object representing the process to be terminated.  
+ [in] Un [IDebugProcess2](../../../extensibility/debugger/reference/idebugprocess2.md) objet représentant le processus à interrompre.  
   
-## <a name="return-value"></a>Return Value  
- Returns `S_OK` if the process can be terminated; otherwise, returns `S_FALSE`.  
+## <a name="return-value"></a>Valeur de retour  
+ Retourne `S_OK` si le processus peut être arrêté ; sinon, retourne `S_FALSE`.  
   
-## <a name="see-also"></a>See Also  
+## <a name="see-also"></a>Voir aussi  
  [IDebugPortEx2](../../../extensibility/debugger/reference/idebugportex2.md)   
  [IDebugProcess2](../../../extensibility/debugger/reference/idebugprocess2.md)

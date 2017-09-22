@@ -28,8 +28,8 @@ helpviewer_keywords:
 - code
 ms.assetid: cb53bb9b-5b76-4759-b9b8-7bf32298bcbb
 caps.latest.revision: 44
-author: kempb
-ms.author: kempb
+author: gewarren
+ms.author: gewarren
 manager: ghogen
 translation.priority.ht:
 - de-de
@@ -46,9 +46,10 @@ translation.priority.mt:
 - pl-pl
 - pt-br
 - tr-tr
-translationtype: Human Translation
+ms.translationtype: Human Translation
 ms.sourcegitcommit: a42f5a30375192c89c9984e40ba0104da98d7253
 ms.openlocfilehash: 3a8be04b4d2c927dc296753420ff736b993343c9
+ms.contentlocale: fr-fr
 ms.lasthandoff: 03/07/2017
 
 ---
@@ -73,7 +74,7 @@ L’exemple suivant montre comment cloner un référentiel GitHub, puis ouvrir s
 1. Accédez au référentiel que vous souhaitez cloner.
 1. Sur la page du référentiel GitHub, cliquez sur le bouton **Clone or Download** (Cloner ou télécharger), puis choisissez le bouton **Copier dans le Presse-papiers** pour copier l’URL sécurisée pour le site GitHub.
 
-  ![Bouton de clonage GitHub](~/ide/media/VSIDE_Code_Clone.png)
+  ![Bouton de clonage GitHub](./media/VSIDE_Code_Clone.png)
 
     > [!NOTE]
     >  Tandis que vous avez également la possibilité d’ouvrir le projet sur votre bureau ou de télécharger un fichier .zip du projet, cet exemple montre comment cloner le référentiel à l’aide de la méthode de l’URL sécurisée.
@@ -81,12 +82,12 @@ L’exemple suivant montre comment cloner un référentiel GitHub, puis ouvrir s
 1. Dans Visual Studio, cliquez sur l’onglet **Team Explorer** onglet pour ouvrir Team Explorer.
 1. Dans Team Explorer, sous la section relative aux **référentiels Git locaux** , choisissez la commande **Cloner**, puis collez l’URL de la page GitHub dans la zone de texte.
 
-  ![Cloner le projet](~/ide/media/VSIDE_Code_Clone2.png)
+  ![Cloner le projet](./media/VSIDE_Code_Clone2.png)
 
 1. Cliquez sur le bouton **Cloner** pour cloner les fichiers du projet dans un référentiel Git local. Ceci peut prendre plusieurs minutes, selon la taille du référentiel.
 1. Une fois que le référentiel cloné sur votre système, dans Team Explorer, choisissez la commande **Ouvrir** dans le menu contextuel (clic droit) du projet qui vient d’être cloné.
 
-  ![Projet cloné](~/ide/media/VSIDE_Code_Clone3.png)
+  ![Projet cloné](./media/VSIDE_Code_Clone3.png)
 
 1. Choisissez la commande **Présenter l’affichage des dossiers** pour afficher les fichiers dans l’Explorateur de solutions
 
@@ -94,7 +95,7 @@ L’exemple suivant montre comment cloner un référentiel GitHub, puis ouvrir s
 
   Vous pouvez parcourir les dossiers et fichiers dans le projet cloné et afficher et rechercher le code dans l’éditeur de code Visual Studio, avec la colorisation de syntaxe et d’autres fonctionnalités.
 
-    ![Recherche de code de projet cloné](~/ide/media/VSIDE_Code_Clone4.png)
+    ![Recherche de code de projet cloné](./media/VSIDE_Code_Clone4.png)
 
 
 ## <a name="debug-your-code"></a>Déboguer votre code
@@ -102,7 +103,7 @@ Vous pouvez déboguer votre code dans Visual Studio. Pour déboguer certains lan
 
 La zone de liste déroulante en regard du bouton Démarrer de la barre d’outils répertorie tous les éléments de démarrage détectés par Visual Studio, ainsi que les éléments que vous choisissez spécifiquement dans un dossier.
 
-![Bouton Exécuter](~/ide/media/VSIDE_Code_Run_Button.png)
+![Bouton Exécuter](./media/VSIDE_Code_Run_Button.png)
 
 Visual Studio reconnaît automatiquement les projets, toutefois les scripts (tels que Python et JavaScript) doivent être explicitement sélectionnés par vous-même comme élément de démarrage avant qu’ils ne s’affichent dans la liste.
 En outre, plusieurs configurations de build de certains éléments de démarrage, tels que MSBuild et CMake, peuvent s’afficher dans la liste déroulante du bouton Exécuter.
@@ -138,11 +139,11 @@ Vous pouvez également créer des tâches de génération arbitraires qui peuven
 
 1. Dans l’Explorateur de solutions, choisissez le fichier ou le dossier du projet dans lequel vous souhaitez placer la tâche et dans le menu contextuel du fichier ou du dossier (clic droit), choisissez **Configurer les tâches**.
 
-  ![Configurer les tâches](~/ide/media/VSIDE_Code_Config_Task.png)
+  ![Configurer les tâches](./media/VSIDE_Code_Config_Task.png)
 
   Choisissez **Configurer les tâches** pour ouvrir un fichier appelé tasks.vs.json. Ce fichier est créé s’il n’existe pas. Ce fichier contient les tâches de génération du fichier ou dossier sélectionné.
 
-  ![Fichier Tasks.vs.json](~/ide/media/VSIDE_Code_Tasks_JSON.png)
+  ![Fichier Tasks.vs.json](./media/VSIDE_Code_Tasks_JSON.png)
 
 1. Ajouter la tâche de génération suivante à tasks.vs.json. Pour cet exemple, nous allons ajouter une tâche simple appelée « Répertorier les sorties » qui répertorie les fichiers et sous-dossiers du dossier sélectionné dans la fenêtre Sortie. La nouvelle tâche doit être ajoutée dans le tableau « tâches » existant.
 
@@ -159,12 +160,12 @@ Vous pouvez également créer des tâches de génération arbitraires qui peuven
   ```
   La tâche de génération complète doit ressembler à ceci.
 
-  ![Tâche de génération arbitraire](~/ide/media/VSIDE_Code_Tasks_ArbTask.png)
+  ![Tâche de génération arbitraire](./media/VSIDE_Code_Tasks_ArbTask.png)
 
 1. Enregistrez le projet.
 1. Ouvrez le menu contextuel du dossier sélectionné. La nouvelle tâche de génération arbitraire doit figurer au bas du menu contextuel.
 
-  ![Commande de tâche de génération arbitraire](~/ide/media/VSIDE_Code_Tasks_ArbTask2.png)
+  ![Commande de tâche de génération arbitraire](./media/VSIDE_Code_Tasks_ArbTask2.png)
 
 1. Choisissez la nouvelle commande **Répertorier les sorties**pour exécuter la tâche.
 
@@ -174,7 +175,7 @@ Dans cette procédure, nous allons ajouter deux tâches de génération personna
 
 1. Dans l’Explorateur de solutions, choisissez un fichier du projet que vous souhaitez désigner ultérieurement comme élément de démarrage. Dans le menu contextuel (clic droit) du fichier, choisissez **Configurer les tâches**.
 
-  ![Commande de tâche de génération personnalisée](~/ide/media/VSIDE_Code_Tasks_CustTask1.png)
+  ![Commande de tâche de génération personnalisée](./media/VSIDE_Code_Tasks_CustTask1.png)
 
 1. Ajoutez les tâches de génération suivantes à tasks.vs.json. Pour cet exemple, nous allons ajouter deux tâches : une appelée « makefile-build » qui utilise la commande nMake pour générer le projet et une autre appelée makefile-clean qui appelle la commande nMake avec l’argument « propre ». Ces tâches doivent être ajoutées au tableau « tâches » existant. Notez qu’il s’agit uniquement d’exemples de tâches de génération. Pour qu’elles fonctionnent réellement, vous devez disposer de la charge de travail qui contient [nNake](https://docs.microsoft.com/en-us/cpp/build/nmake-reference) installé sur votre système.)
 
@@ -199,12 +200,12 @@ Dans cette procédure, nous allons ajouter deux tâches de génération personna
   ```
   La tâche de génération personnalisée vcomplète doit ressembler à ceci.
 
-  ![Outil de génération personnalisée](~/ide/media/VSIDE_Code_Tasks_CustTask2.png)
+  ![Outil de génération personnalisée](./media/VSIDE_Code_Tasks_CustTask2.png)
 
 1. Enregistrez le projet.
 1. Ouvrez le menu contextuel du fichier sélectionné. Les nouvelles tâches de génération personnalisées doivent apparaître au milieu du menu contextuel.
 
-  ![Commande de tâche de génération personnalisée](~/ide/media/VSIDE_Code_Tasks_CustTask3.png)
+  ![Commande de tâche de génération personnalisée](./media/VSIDE_Code_Tasks_CustTask3.png)
 
   > [!NOTE]
   > Les commandes apparaissent sous la commande **Configurer les tâches** en raison de leurs paramètres `contextType` ; « générer » et « nettoyer » sont des commandes de génération, de sorte qu’elles apparaissent dans la section génération au milieu du menu contextuel.
@@ -213,11 +214,11 @@ Dans cette procédure, nous allons ajouter deux tâches de génération personna
 
 1. Dans le menu contextuel du fichier, choisissez **Définir comme élément de démarrage**.
 
-  ![Commande de tâche de génération personnalisée](~/ide/media/VSIDE_Code_Tasks_CustTask4.png)
+  ![Commande de tâche de génération personnalisée](./media/VSIDE_Code_Tasks_CustTask4.png)
 
 1. Dans la barre d’outils, choisissez la flèche déroulante en regard du bouton Démarrer. L’élément de démarrage apparaît maintenant sous forme d’option.
 
-  ![Commande de tâche de génération personnalisée](~/ide/media/VSIDE_Code_Tasks_CustTask5.png)
+  ![Commande de tâche de génération personnalisée](./media/VSIDE_Code_Tasks_CustTask5.png)
 
 Vous pouvez maintenant cliquer sur le bouton Démarrer ou appuyer sur la touche F5 pour exécuter le code base. Vous pouvez modifier et déboguer votre code de base dans Visual Studio même si Visual Studio ne reconnaît pas les outils de génération du code base. La sortie de la tâche de génération s’affiche dans la fenêtre **Sortie** et les erreurs de génération apparaissent dans la **liste d’erreurs**. Le fichier de la tâche de génération tasks.vs.json associe la boucle de développement interne de Visual Studio aux outils de génération personnalisée utilisés par le code de base.
 
@@ -237,7 +238,7 @@ La spécification de l’emplacement de sortie indique à Visual Studio où trou
 
 Par défaut, le fichier tasks.vs.json se trouve dans un dossier masqué appelé `.vs`. Pour afficher les fichiers masqués dans Visual Studio, cliquez sur le bouton **Afficher tous les fichiers** de la barre d’outils de l’Explorateur de solutions.
 
-![Commande de tâche de génération arbitraire](~/ide/media/VSIDE_Code_Tasks_FileLocation.png)
+![Commande de tâche de génération arbitraire](./media/VSIDE_Code_Tasks_FileLocation.png)
 
 Le fichier tasks.vs.json est masqué car la plupart des utilisateurs ne souhaitent généralement pas le vérifier dans le contrôle de code source. Toutefois, si vous souhaitez être en mesure de le vérifier dans le contrôle de code source, faites glisser le fichier à la racine de votre projet où il sera visible.
 

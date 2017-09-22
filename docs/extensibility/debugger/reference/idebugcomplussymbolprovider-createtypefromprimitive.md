@@ -1,25 +1,42 @@
 ---
-title: "IDebugComPlusSymbolProvider::CreateTypeFromPrimitive | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-helpviewer_keywords: 
-  - "IDebugComPlusSymbolProvider::CreateTypeFromPrimitive"
-  - "CreateTypeFromPrimitive"
+title: IDebugComPlusSymbolProvider::CreateTypeFromPrimitive | Documents Microsoft
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology:
+- vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+helpviewer_keywords:
+- IDebugComPlusSymbolProvider::CreateTypeFromPrimitive
+- CreateTypeFromPrimitive
 ms.assetid: 37213cc2-a038-42ea-9b28-3ae40d4cfe69
 caps.latest.revision: 13
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 13
----
-# IDebugComPlusSymbolProvider::CreateTypeFromPrimitive
-[!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]
+ms.author: gregvanl
+manager: ghogen
+translation.priority.mt:
+- cs-cz
+- de-de
+- es-es
+- fr-fr
+- it-it
+- ja-jp
+- ko-kr
+- pl-pl
+- pt-br
+- ru-ru
+- tr-tr
+- zh-cn
+- zh-tw
+ms.translationtype: MT
+ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
+ms.openlocfilehash: d067ac586be6439b6ec4f3c018d5bc9d9f9e94fa
+ms.contentlocale: fr-fr
+ms.lasthandoff: 09/19/2017
 
+---
+# <a name="idebugcomplussymbolprovidercreatetypefromprimitive"></a>IDebugComPlusSymbolProvider::CreateTypeFromPrimitive
 Crée un type à partir du type primitif spécifié.  
   
 ## <a name="syntax"></a>Syntaxe  
@@ -44,21 +61,21 @@ int CreateTypeFromPrimitive(
   
 #### <a name="parameters"></a>Paramètres  
  `dwPrimType`  
- [in] Valeur de la [CorElementType, énumération](CorElementType%20Enumeration.xml) qui représente le type primitif.  
+ [in] Valeur à partir de la [CorElementType, énumération](/dotnet/framework/unmanaged-api/metadata/corelementtype-enumeration) qui représente le type primitif.  
   
  `pAddress`  
- [in] Un type d’objet représenté par une [IDebugAddress](../../../extensibility/debugger/reference/idebugaddress.md) interface.  
+ [in] Un type d’objet est représenté par un [IDebugAddress](../../../extensibility/debugger/reference/idebugaddress.md) interface.  
   
  `ppType`  
- [in] Retourne un [IDebugField](../../../extensibility/debugger/reference/idebugfield.md) qui décrit le type d’objet.  
+ [in] Retourne un [IDebugField](../../../extensibility/debugger/reference/idebugfield.md) objet qui décrit le type.  
   
 ## <a name="return-value"></a>Valeur de retour  
- En cas de réussite, retourne `S_OK`; Sinon, retourne un code d’erreur.  
+ En cas de réussite, retourne `S_OK`; sinon, retourne un code d’erreur.  
   
 ## <a name="example"></a>Exemple  
- L’exemple suivant montre comment implémenter cette méthode pour un **CDebugSymbolProvider** objet qui expose les [IDebugComPlusSymbolProvider](../../../extensibility/debugger/reference/idebugcomplussymbolprovider.md) interface.  
+ L’exemple suivant montre comment implémenter cette méthode pour un **CDebugSymbolProvider** objet qui expose la [IDebugComPlusSymbolProvider](../../../extensibility/debugger/reference/idebugcomplussymbolprovider.md) interface.  
   
-```cpp#  
+```cpp  
 HRESULT CDebugSymbolProvider::CreateTypeFromPrimitive(  
     DWORD dwPrimType,  
     IDebugAddress* pAddress,  
