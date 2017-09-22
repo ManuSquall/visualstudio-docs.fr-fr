@@ -2,7 +2,6 @@
 title: "Développement mobile multiplateforme dans Visual Studio | Microsoft Docs"
 ms.custom: 
 ms.date: 12/06/2016
-ms.prod: visual-studio-dev15
 ms.reviewer: 
 ms.suite: 
 ms.technology:
@@ -58,7 +57,7 @@ Vous pouvez créer des applications pour des appareils Android, iOS et Windows �
 -   [Créer un jeu multiplateforme pour Android, iOS et Windows à l’aide de Visual Studio Tools pour Unity](#Unity)
 
 ##  <a name="NET"></a> Générer une application pour Android, iOS et Windows (.NET Framework)
- ![Appareils](~/cross-platform/media/homedevices.png "HomeDevices")
+ ![Appareils](../cross-platform/media/homedevices.png "HomeDevices")
 
  Avec Xamarin, vous pouvez cibler Windows, iOS et Android dans la même solution, partager du code et même l’interface utilisateur.
 
@@ -89,7 +88,7 @@ Vous pouvez créer des applications pour des appareils Android, iOS et Windows �
 ####  <a name="ShareHTML"></a> Partager du code entre des appareils Android, iOS et Windows
  Si vous n’utilisez pas Xamarin.Forms et que vous choisissez de concevoir pour chaque plateforme individuellement, vous pouvez partager la plus grande partie du code autre que celui de l’interface utilisateur entre les projets des différentes plateformes (iOS, Android et Windows). Cela inclut la logique métier, l'intégration du cloud, l'accès aux bases de données ou tout autre code qui cible le .NET Framework. Le seul code que vous ne pouvez pas partager est le code qui cible une plateforme spécifique.
 
- ![Partager du code entre les interfaces utilisateur Android, iOS et Windows](~/cross-platform/media/sharecode.png "ShareCode")
+ ![Partager du code entre les interfaces utilisateur Android, iOS et Windows](../cross-platform/media/sharecode.png "ShareCode")
 
  Vous pouvez partager votre code en utilisant un projet partagé, un projet de bibliothèque de classes portables ou les deux. Vous trouverez peut-être qu'une partie du code est mieux placé dans un projet partagé, et que d'autres parties ont davantage de sens placées dans un projet de bibliothèque de classes portables.
 
@@ -98,7 +97,7 @@ Vous pouvez créer des applications pour des appareils Android, iOS et Windows �
 |Décidez si vous voulez partager votre code à l'aide de projets partagés, de projets de bibliothèque de classes portables ou les deux.<br /><br /> [Partage de code entre plateformes](http://blogs.msdn.com/b/dotnet/archive/2014/04/21/sharing-code-across-platforms.aspx) (blog de .NET Framework)<br /><br /> [Sharing Code Options](http://developer.xamarin.com/guides/cross-platform/application_fundamentals/building_cross_platform_applications/sharing_code_options/) (Xamarin)<br /><br /> [Options de partage de code avec .NET Framework](http://msdn.microsoft.com/library/dn720832.aspx) (MSDN Library)|
 
 ###  <a name="WindowsHTML"></a> Cibler les appareils Windows 10
- ![Appareils Windows](~/cross-platform/media/windowsdevices.png "WindowsDevices")
+ ![Appareils Windows](../cross-platform/media/windowsdevices.png "WindowsDevices")
 
  Si vous voulez créer une application unique qui cible la totalité des appareils Windows 10, créez une application Windows universelle. Vous allez concevoir l’application à l’aide d’un seul projet, et vos pages s’afficheront correctement, quel que soit l’appareil utilisé pour les visualiser.
 
@@ -114,7 +113,7 @@ Vous pouvez créer des applications pour des appareils Android, iOS et Windows �
 |[Migrer des applications vers la plateforme Windows universelle (UWP)](https://msdn.microsoft.com/en-us/library/mt148501.aspx)|
 
 ##  <a name="HTML"></a> Générer une application pour Android, iOS et Windows (HTML/JavaScript)
- ![Appareils](~/cross-platform/media/homedevices.png "HomeDevices")
+ ![Appareils](../cross-platform/media/homedevices.png "HomeDevices")
 
  Si vous êtes un développeur web et que vous connaissez bien les langages HTML et JavaScript, vous pouvez cibler Windows, Android et iOS en utilisant Visual Studio Tools pour Apache Cordova. Ces applications peuvent cibler les trois plateformes et vous pouvez les créer en utilisant les compétences et les processus qui vous sont les plus familiers.
 
@@ -122,7 +121,7 @@ Vous pouvez créer des applications pour des appareils Android, iOS et Windows �
 
  Étant donné que ces API sont multiplateformes, vous pouvez partager la plus grande partie de ce que vous écrivez entre les trois plateformes. Ceci permet de réduire les coûts de développement et de maintenance. En outre, il est inutile de tout reprendre à zéro. Si vous avez créé d’autres types d’applications web, vous pouvez partager ces fichiers avec votre application Cordova sans avoir à les modifier ou à les reconcevoir d’une quelconque façon.
 
- ![Multi&#45;Device Hybrid Apps](~/cross-platform/media/multidevicehybridapps.png "MultiDeviceHybridApps")
+ ![Multi&#45;Device Hybrid Apps](../cross-platform/media/multidevicehybridapps.png "MultiDeviceHybridApps")
 
  Pour commencer, installez Visual Studio 2015 et choisissez la fonctionnalité **HTML/JavaScript (Apache Cordova)** au cours de l'installation. Si vous utilisez Visual Studio 2013, installez l’extension Visual Studio Tools pour Apache Cordova. Dans tous les cas, cette extension installe automatiquement l’ensemble des logiciels tiers nécessaires pour générer votre application multiplateforme.
 
@@ -139,13 +138,13 @@ Vous pouvez créer des applications pour des appareils Android, iOS et Windows �
 |[En savoir plus sur l’émulateur Visual Studio pour Android](http://www.visualstudio.com/explore/msft-android-emulator-vs) (VisualStudio.com)|
 
 ##  <a name="CPP"></a> Générer une application pour Android et Windows (C++)
- ![Utiliser C&#43;&#43; pour générer des applications pour Android, iOS, et Windows](~/cross-platform/media/cross_plat_cpp_intro_image.png "Cross_Plat_CPP_Intro_Image")
+ ![Utiliser C&#43;&#43; pour générer des applications pour Android, iOS, et Windows](../cross-platform/media/cross_plat_cpp_intro_image.png "Cross_Plat_CPP_Intro_Image")
 
  Commencez par installer Visual Studio 2015 et les outils Visual C++ pour le développement mobile multiplateforme. Vous pouvez ensuite générer une application d’activité native pour Android ou une application qui cible Windows. Les modèles C++ qui ciblent iOS ne sont pas encore disponibles. Vous pouvez cibler Android et Windows dans la même solution si vous le souhaitez, puis partager le code entre eux à l’aide d’une bibliothèque partagée statique ou dynamique multiplateforme.
 
  Si vous devez générer une application pour Android qui nécessite toute sorte de manipulations graphiques avancées (par exemple un jeu), vous pouvez le faire en C++. Commencez par le projet **Application Activité native (Android)** . Ce projet offre une prise en charge complète de la chaîne d'outils Clang.
 
- ![Modèle de projet d’activité native](~/cross-platform/media/cross-plat_cpp_native.png "Cross-Plat_CPP_Native")
+ ![Modèle de projet d’activité native](../cross-platform/media/cross-plat_cpp_native.png "Cross-Plat_CPP_Native")
 
  Quand vous êtes prêt à exécuter et découvrir votre application, vous pouvez utiliser l’émulateur Visual Studio pour Android. Il est rapide, fiable, et facile à utiliser et à configurer.
 
@@ -153,7 +152,7 @@ Vous pouvez créer des applications pour des appareils Android, iOS et Windows �
 
  Vous pouvez partager du code C++ entre Android et Windows en créant une bibliothèque partagée statique ou dynamique.
 
- ![Bibliothèques partagées statiques et dynamiques](~/cross-platform/media/cross_plat_cpp_libraries.png "Cross_Plat_CPP_Libraries")
+ ![Bibliothèques partagées statiques et dynamiques](../cross-platform/media/cross_plat_cpp_libraries.png "Cross_Plat_CPP_Libraries")
 
  Vous pouvez utiliser cette bibliothèque dans un projet Windows ou Android, tel que ceux décrits précédemment dans cette section. Vous pouvez également l'utiliser dans une application que vous créez à l'aide de Xamarin, Java ou n'importe quel langage qui vous permet d'appeler des fonctions dans une DLL non managée.
 
@@ -173,7 +172,7 @@ Vous pouvez créer des applications pour des appareils Android, iOS et Windows �
 ##  <a name="Unity"></a> Créer un jeu multiplateforme pour Android, iOS et Windows à l’aide de Visual Studio Tools pour Unity
  Visual Studio Tools pour Unity est une extension gratuite de Visual Studio qui intègre l’édition de code performante de Visual Studio, la productivité et les outils de débogage avec *Unity*, un moteur de jeu/moteur graphique multiplateforme très répandu, qui est aussi un environnement de développement pour les applications immersives qui ciblent Windows, iOS, Android et d’autres plateformes, notamment le web.
 
- ![Environnement de développement VSTU](~/cross-platform/media/vstu_overview.png "VSTU_Overview")
+ ![Environnement de développement VSTU](../cross-platform/media/vstu_overview.png "VSTU_Overview")
 
  Avec Visual Studio Tools for Unity (VSTU), vous pouvez utiliser Visual Studio pour écrire des scripts d'éditeur et de jeu en C#, puis utiliser son débogueur performant pour rechercher et corriger les erreurs. La dernière version de VSTU prend en charge Unity 5 et inclut la coloration de syntaxe pour le langage du nuanceur ShaderLab d'Unity, une meilleure synchronisation avec Unity, un débogage plus avancé et une génération de code améliorée pour l'Assistant MonoBehavior. VSTU apporte également vos fichiers de projet Unity et vos messages de console, et offre la possibilité de démarrer votre jeu dans Visual Studio, afin de perdre moins de temps à aller et venir de l'éditeur Unity en cours d'écriture.
 

@@ -2,7 +2,6 @@
 title: Mesure des performances de code Python dans Visual Studio | Microsoft Docs
 ms.custom: 
 ms.date: 7/13/2017
-ms.prod: visual-studio-dev15
 ms.reviewer: 
 ms.suite: 
 ms.technology:

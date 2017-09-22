@@ -2,7 +2,6 @@
 title: "Espaces de travail dans les Outils R pour Visual Studio | Microsoft Docs"
 ms.custom: 
 ms.date: 6/30/2017
-ms.prod: visual-studio-dev15
 ms.reviewer: 
 ms.suite: 
 ms.technology:
