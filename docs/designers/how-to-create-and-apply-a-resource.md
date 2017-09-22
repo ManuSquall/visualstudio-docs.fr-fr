@@ -5,7 +5,7 @@ ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
 ms.technology:
-- vs-ide-general
+- vs-ide-designers
 ms.tgt_pltfrm: 
 ms.topic: article
 f1_keywords:
@@ -13,8 +13,8 @@ f1_keywords:
 - VS.XamlDesigner.EditResource
 ms.assetid: 3ff4006d-659d-4073-9a41-06ff85e6cfdf
 caps.latest.revision: 13
-author: kempb
-ms.author: kempb
+author: gewarren
+ms.author: gewarren
 manager: ghogen
 translation.priority.ht:
 - cs-cz
@@ -50,7 +50,7 @@ Les styles et les modèles des éléments du concepteur XAML sont stockés dans 
   
      La boîte de dialogue appropriée pour la création d'une ressource s'affiche. Cette boîte de dialogue apparaît quand vous créez une ressource à partir d'un pinceau :  
   
-     ![Boîte de dialogue Créer une ressource](~/designers/media/xaml_create_resource.png "xaml_create_resource")  
+     ![Boîte de dialogue Créer une ressource](../designers/media/xaml_create_resource.png "xaml_create_resource")  
   
 3.  Dans la zone **Nom (Clé)**, entrez un nom de clé. C'est le nom que vous pouvez utiliser pour que d'autres éléments fassent référence à la ressource.  
   

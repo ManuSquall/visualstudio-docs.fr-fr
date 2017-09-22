@@ -1,5 +1,5 @@
 ---
-title: IPropertyProxyEESide::GetManagedViewerCreationData | Microsoft Docs
+title: IPropertyProxyEESide::GetManagedViewerCreationData | Documents Microsoft
 ms.custom: 
 ms.date: 11/04/2016
 ms.reviewer: 
@@ -31,18 +31,18 @@ translation.priority.mt:
 - zh-cn
 - zh-tw
 ms.translationtype: MT
-ms.sourcegitcommit: ff8ecec19f8cab04ac2190f9a4a995766f1750bf
-ms.openlocfilehash: d148300beff79e8684929e5857565786a8352c1d
+ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
+ms.openlocfilehash: a20a02b948bb1ee15011f99fe7071ae6af7df6b5
 ms.contentlocale: fr-fr
-ms.lasthandoff: 08/23/2017
+ms.lasthandoff: 09/19/2017
 
 ---
 # <a name="ipropertyproxyeesidegetmanagedviewercreationdata"></a>IPropertyProxyEESide::GetManagedViewerCreationData
-Retrieves information about the viewer for this property type in order to instantiate that viewer.  
+Récupère les informations sur la visionneuse pour ce type de propriété afin d’instancier ce visualiseur.  
   
-## <a name="syntax"></a>Syntax  
+## <a name="syntax"></a>Syntaxe  
   
-```cpp#  
+```cpp  
 HRESULT GetManagedViewerCreationData(  
    BSTR*                  assemName,  
    IEEDataStorage**       assemBytes,  
@@ -53,7 +53,7 @@ HRESULT GetManagedViewerCreationData(
 );  
 ```  
   
-```cs  
+```csharp  
 int GetManagedViewerCreationData(  
    out string                     assemName,  
    out IEEDataStorage             assemBytes,  
@@ -64,32 +64,32 @@ int GetManagedViewerCreationData(
 );  
 ```  
   
-#### <a name="parameters"></a>Parameters  
+#### <a name="parameters"></a>Paramètres  
  `assemName`  
- [out] Returns the name of the assembly holding this object.  
+ [out] Retourne le nom de l’assembly contenant cet objet.  
   
  `assemBytes`  
- [out] Returns an [IEEDataStorage](../../../extensibility/debugger/reference/ieedatastorage.md) object containing the assembly bytes of this object (this is a null value if no bytes are available).  
+ [out] Retourne un [IEEDataStorage](../../../extensibility/debugger/reference/ieedatastorage.md) objet contenant les octets de l’assembly de cet objet (Ceci est une valeur null si aucun octet n’est disponible).  
   
  `assemPdb`  
- [out] Returns an `IEEDataStorage` object containing the symbol store information for this object (this is a null value if no symbol store is available).  
+ [out] Retourne un `IEEDataStorage` objet contenant le symbole de stocker les informations de cet objet (Ceci est une valeur null si aucun magasin de symboles n’est disponible).  
   
  `className`  
- [out] Returns the class name containing this object.  
+ [out] Retourne le nom de la classe qui contient cet objet.  
   
  `alr`  
- [out] Returns a value from the [ASSEMBLYLOCRESOLUTION](../../../extensibility/debugger/reference/assemblylocresolution.md) enumeration indicating the location of the assembly.  
+ [out] Retourne une valeur de la [ASSEMBLYLOCRESOLUTION](../../../extensibility/debugger/reference/assemblylocresolution.md) énumération indiquant l’emplacement de l’assembly.  
   
  `replacementOk`  
- [out] Returns nonzero (`TRUE`) if this object's value can be changed; zero (`FALSE`) if the object is read-only.  
+ [out] Retourne zéro (`TRUE`) si la valeur de cet objet peut être modifiée ; zéro (`FALSE`) si l’objet est en lecture seule.  
   
-## <a name="return-value"></a>Return Value  
- If successful, returns `S_OK`; otherwise, returns an error code.  
+## <a name="return-value"></a>Valeur de retour  
+ En cas de réussite, retourne `S_OK`; sinon, retourne un code d’erreur.  
   
-## <a name="remarks"></a>Remarks  
- This method is used by type visualizers to instantiate a managed viewer.  
+## <a name="remarks"></a>Remarques  
+ Cette méthode est utilisée par les visualiseurs de type pour instancier une visionneuse managée.  
   
-## <a name="see-also"></a>See Also  
+## <a name="see-also"></a>Voir aussi  
  [IPropertyProxyEESide](../../../extensibility/debugger/reference/ipropertyproxyeeside.md)   
  [ASSEMBLYLOCRESOLUTION](../../../extensibility/debugger/reference/assemblylocresolution.md)   
  [IEEDataStorage](../../../extensibility/debugger/reference/ieedatastorage.md)

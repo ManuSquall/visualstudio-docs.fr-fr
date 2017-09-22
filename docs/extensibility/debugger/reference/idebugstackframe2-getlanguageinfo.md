@@ -1,5 +1,5 @@
 ---
-title: IDebugStackFrame2::GetLanguageInfo | Microsoft Docs
+title: IDebugStackFrame2::GetLanguageInfo | Documents Microsoft
 ms.custom: 
 ms.date: 11/04/2016
 ms.reviewer: 
@@ -34,13 +34,13 @@ ms.translationtype: MT
 ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
 ms.openlocfilehash: 460979d28bfc9244726ea3345c8a435de87a6c29
 ms.contentlocale: fr-fr
-ms.lasthandoff: 08/28/2017
+ms.lasthandoff: 09/19/2017
 
 ---
 # <a name="idebugstackframe2getlanguageinfo"></a>IDebugStackFrame2::GetLanguageInfo
-Gets the language associated with this stack frame.  
+Obtient le langage associé à ce frame de pile.  
   
-## <a name="syntax"></a>Syntax  
+## <a name="syntax"></a>Syntaxe  
   
 ```cpp  
 HRESULT GetLanguageInfo (   
@@ -56,12 +56,12 @@ int GetLanguageInfo (
 );  
 ```  
   
-#### <a name="parameters"></a>Parameters  
+#### <a name="parameters"></a>Paramètres  
  `pbstrLanguage`  
- [out] Returns the name of the language that implements the method associated with this stack frame.  
+ [out] Retourne le nom de la langue qui implémente la méthode associée à ce frame de pile.  
   
  `pguidLanguage`  
- [out] Returns the `GUID` of the language. For the [!INCLUDE[vsprvs](../../../code-quality/includes/vsprvs_md.md)] languages, for example, the following can be returned:  
+ [out] Retourne le `GUID` du langage. Pour les [!INCLUDE[vsprvs](../../../code-quality/includes/vsprvs_md.md)] langues, par exemple, les éléments suivants peuvent être retournées :  
   
 -   `guidVBScriptLang`  
   
@@ -75,8 +75,8 @@ int GetLanguageInfo (
   
 -   `guidScriptLang`  
   
-## <a name="return-value"></a>Return Value  
- If successful, returns `S_OK`; otherwise, returns an error code.  
+## <a name="return-value"></a>Valeur de retour  
+ En cas de réussite, retourne `S_OK`; sinon, retourne un code d’erreur.  
   
-## <a name="see-also"></a>See Also  
+## <a name="see-also"></a>Voir aussi  
  [IDebugStackFrame2](../../../extensibility/debugger/reference/idebugstackframe2.md)

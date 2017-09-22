@@ -1,5 +1,5 @@
 ---
-title: DUMPTYPE | Microsoft Docs
+title: DUMPTYPE | Documents Microsoft
 ms.custom: 
 ms.date: 11/04/2016
 ms.reviewer: 
@@ -31,18 +31,18 @@ translation.priority.mt:
 - zh-cn
 - zh-tw
 ms.translationtype: MT
-ms.sourcegitcommit: ff8ecec19f8cab04ac2190f9a4a995766f1750bf
-ms.openlocfilehash: be7c7b4fe24187dd515dbfcfe3ce59ee453ecaee
+ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
+ms.openlocfilehash: abc5a749caedabffcd06be93cef1a36a8e9ae3ed
 ms.contentlocale: fr-fr
-ms.lasthandoff: 08/23/2017
+ms.lasthandoff: 09/19/2017
 
 ---
 # <a name="dumptype"></a>DUMPTYPE
-Specifies how much of a program's state (such as running threads, stack frames, and current instruction address) to dump.  
+Spécifie la quantité d’état d’un programme (par exemple, les threads en cours d’exécution, les frames de pile et adresse d’instruction en cours) pour faire un dump.  
   
-## <a name="syntax"></a>Syntax  
+## <a name="syntax"></a>Syntaxe  
   
-```cpp#  
+```cpp  
 enum enum_DUMPTYPE {   
    DUMP_MINIDUMP = 0,  
    DUMP_FULLDUMP = 1  
@@ -50,30 +50,30 @@ enum enum_DUMPTYPE {
 typedef DWORD DUMPTYPE;  
 ```  
   
-```cs  
+```csharp  
 public enum enum_DUMPTYPE {   
    DUMP_MINIDUMP = 0,  
    DUMP_FULLDUMP = 1  
 };  
 ```  
   
-## <a name="members"></a>Members  
+## <a name="members"></a>Membres  
  DUMP_MINIDUMP  
- Specifies a small, compact dump.  
+ Spécifie un fichier de vidage de petite taille, compact.  
   
  DUMP_FULLDUMP  
- Specifies a large, complete dump.  
+ Spécifie un vidage volumineux, terminé.  
   
-## <a name="remarks"></a>Remarks  
- Passed as an argument to the [WriteDump](../../../extensibility/debugger/reference/idebugprogram2-writedump.md) method.  
+## <a name="remarks"></a>Remarques  
+ Est passé comme argument à la [WriteDump](../../../extensibility/debugger/reference/idebugprogram2-writedump.md) (méthode).  
   
-## <a name="requirements"></a>Requirements  
- Header: msdbg.h  
+## <a name="requirements"></a>Spécifications  
+ En-tête : msdbg.h  
   
- Namespace: Microsoft.VisualStudio.Debugger.Interop  
+ Namespace : Microsoft.VisualStudio.Debugger.Interop  
   
- Assembly: Microsoft.VisualStudio.Debugger.Interop.dll  
+ Assembly : Microsoft.VisualStudio.Debugger.Interop.dll  
   
-## <a name="see-also"></a>See Also  
- [Enumerations](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)   
+## <a name="see-also"></a>Voir aussi  
+ [Énumérations](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)   
  [WriteDump](../../../extensibility/debugger/reference/idebugprogram2-writedump.md)

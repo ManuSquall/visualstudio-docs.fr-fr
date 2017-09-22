@@ -1,5 +1,5 @@
 ---
-title: IDebugBreakpointUnboundEvent2::GetReason | Microsoft Docs
+title: IDebugBreakpointUnboundEvent2::GetReason | Documents Microsoft
 ms.custom: 
 ms.date: 11/04/2016
 ms.reviewer: 
@@ -34,13 +34,13 @@ ms.translationtype: MT
 ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
 ms.openlocfilehash: 73fdb52435b4aa727b19786c99774f455bca579d
 ms.contentlocale: fr-fr
-ms.lasthandoff: 08/28/2017
+ms.lasthandoff: 09/19/2017
 
 ---
 # <a name="idebugbreakpointunboundevent2getreason"></a>IDebugBreakpointUnboundEvent2::GetReason
-Gets the reason the breakpoint was unbound.  
+Obtient la raison pour laquelle que le point d’arrêt a été séparé.  
   
-## <a name="syntax"></a>Syntax  
+## <a name="syntax"></a>Syntaxe  
   
 ```cpp  
 HRESULT GetReason(   
@@ -54,18 +54,18 @@ int GetReason(
 );  
 ```  
   
-#### <a name="parameters"></a>Parameters  
+#### <a name="parameters"></a>Paramètres  
  `pdwUnboundReason`  
- [out] Returns a value from the [BP_UNBOUND_REASON](../../../extensibility/debugger/reference/bp-unbound-reason.md) enumeration specifying the reason the breakpoint was unbound.  
+ [out] Retourne une valeur de la [BP_UNBOUND_REASON](../../../extensibility/debugger/reference/bp-unbound-reason.md) énumération spécifiant la raison pour laquelle le point d’arrêt a été séparé.  
   
-## <a name="return-value"></a>Return Value  
- If successful, returns `S_OK`; otherwise, returns an error code.  
+## <a name="return-value"></a>Valeur de retour  
+ En cas de réussite, retourne `S_OK`; sinon, retourne un code d’erreur.  
   
-## <a name="remarks"></a>Remarks  
- Reasons include a breakpoint being rebound to a different location after an edit-and-continue operation, or a determination that a breakpoint was bound in error.  
+## <a name="remarks"></a>Remarques  
+ Les raisons incluent un point d’arrêt est reliée à un autre emplacement après une opération modifier et continuer, ou déterminer qu’un point d’arrêt a été liée par erreur.  
   
-## <a name="example"></a>Example  
- The following example shows how to implement this method for a **CBreakpointUnboundDebugEventBase** object that exposes the [IDebugBreakpointUnboundEvent2](../../../extensibility/debugger/reference/idebugbreakpointunboundevent2.md) interface.  
+## <a name="example"></a>Exemple  
+ L’exemple suivant montre comment implémenter cette méthode pour un **CBreakpointUnboundDebugEventBase** objet qui expose la [IDebugBreakpointUnboundEvent2](../../../extensibility/debugger/reference/idebugbreakpointunboundevent2.md) interface.  
   
 ```cpp  
 STDMETHODIMP CBreakpointUnboundDebugEventBase::GetReason(  
@@ -86,5 +86,5 @@ STDMETHODIMP CBreakpointUnboundDebugEventBase::GetReason(
 }  
 ```  
   
-## <a name="see-also"></a>See Also  
+## <a name="see-also"></a>Voir aussi  
  [IDebugBreakpointUnboundEvent2](../../../extensibility/debugger/reference/idebugbreakpointunboundevent2.md)

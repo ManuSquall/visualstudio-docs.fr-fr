@@ -14,8 +14,8 @@ helpviewer_keywords:
 - InstallVSTemplates switch
 ms.assetid: 1fb466f6-7955-4535-a840-d93eb8aaa492
 caps.latest.revision: 12
-author: kempb
-ms.author: kempb
+author: gewarren
+ms.author: gewarren
 manager: ghogen
 translation.priority.ht:
 - de-de
@@ -32,9 +32,10 @@ translation.priority.mt:
 - pl-pl
 - pt-br
 - tr-tr
-translationtype: Human Translation
+ms.translationtype: Human Translation
 ms.sourcegitcommit: 5db97d19b1b823388a465bba15d057b30ff0b3ce
 ms.openlocfilehash: 071f7289bf74bace559777e57f6f4ee79266e4ef
+ms.contentlocale: fr-fr
 ms.lasthandoff: 02/22/2017
 
 ---

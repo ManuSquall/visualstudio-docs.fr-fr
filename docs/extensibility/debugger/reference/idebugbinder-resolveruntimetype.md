@@ -1,5 +1,5 @@
 ---
-title: IDebugBinder::ResolveRuntimeType | Microsoft Docs
+title: IDebugBinder::ResolveRuntimeType | Documents Microsoft
 ms.custom: 
 ms.date: 11/04/2016
 ms.reviewer: 
@@ -34,13 +34,13 @@ ms.translationtype: MT
 ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
 ms.openlocfilehash: be2bbd889fa38645d8c3cd4438786a09819b71f1
 ms.contentlocale: fr-fr
-ms.lasthandoff: 08/28/2017
+ms.lasthandoff: 09/19/2017
 
 ---
 # <a name="idebugbinderresolveruntimetype"></a>IDebugBinder::ResolveRuntimeType
-This method determines the run-time type of an object.  
+Cette méthode détermine le type au moment de l’exécution d’un objet.  
   
-## <a name="syntax"></a>Syntax  
+## <a name="syntax"></a>Syntaxe  
   
 ```cpp  
 HRESULT ResolveRuntimeType(   
@@ -56,20 +56,20 @@ int ResolveRuntimeType(
 );  
 ```  
   
-#### <a name="parameters"></a>Parameters  
+#### <a name="parameters"></a>Paramètres  
  `pObject`  
- [in] The [IDebugObject](../../../extensibility/debugger/reference/idebugobject.md) to be resolved.  
+ [in] Le [IDebugObject](../../../extensibility/debugger/reference/idebugobject.md) à résoudre.  
   
  `ppResolved`  
- [out] Returns the type of the object as an [IDebugField](../../../extensibility/debugger/reference/idebugfield.md).  
+ [out] Retourne le type de l’objet en un [IDebugField](../../../extensibility/debugger/reference/idebugfield.md).  
   
-## <a name="return-value"></a>Return Value  
- If successful, returns `S_OK`; otherwise, returns an error code.  
+## <a name="return-value"></a>Valeur de retour  
+ En cas de réussite, retourne `S_OK`; sinon, retourne un code d’erreur.  
   
-## <a name="remarks"></a>Remarks  
- The run-time type of an object is not always known at compile time. For example, using polymorphism, an argument can be passed to a function as its base class, such as a button class. The actual argument might be a derived class, such as a radio button class.  
+## <a name="remarks"></a>Remarques  
+ Le type au moment de l’exécution d’un objet n’est pas toujours connu au moment de la compilation. Par exemple, l’utilisation du polymorphisme, un argument peut être transmis à une fonction en tant que sa classe de base, tel qu’une classe de bouton. L’argument réel peut être une classe dérivée, tel qu’une classe de bouton radio.  
   
-## <a name="see-also"></a>See Also  
+## <a name="see-also"></a>Voir aussi  
  [IDebugBinder](../../../extensibility/debugger/reference/idebugbinder.md)   
  [IDebugObject](../../../extensibility/debugger/reference/idebugobject.md)   
  [IDebugField](../../../extensibility/debugger/reference/idebugfield.md)

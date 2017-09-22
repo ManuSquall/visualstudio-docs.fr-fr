@@ -1,5 +1,5 @@
 ---
-title: IDebugSymbolProviderDirect::GetMethodFromAddress | Microsoft Docs
+title: IDebugSymbolProviderDirect::GetMethodFromAddress | Documents Microsoft
 ms.custom: 
 ms.date: 11/04/2016
 ms.reviewer: 
@@ -33,13 +33,13 @@ ms.translationtype: MT
 ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
 ms.openlocfilehash: a2979c305bd8db9700f55e799de26fe4ce1422d6
 ms.contentlocale: fr-fr
-ms.lasthandoff: 08/28/2017
+ms.lasthandoff: 09/19/2017
 
 ---
 # <a name="idebugsymbolproviderdirectgetmethodfromaddress"></a>IDebugSymbolProviderDirect::GetMethodFromAddress
-Retrieves information about the method at the specified debug address.  
+Récupère les informations sur la méthode à l’adresse de débogage spécifiés.  
   
-## <a name="syntax"></a>Syntax  
+## <a name="syntax"></a>Syntaxe  
   
 ```cpp  
 HRESULT GetMethodFromAddress(  
@@ -65,30 +65,30 @@ int GetMethodFromAddress(
 );  
 ```  
   
-#### <a name="parameters"></a>Parameters  
+#### <a name="parameters"></a>Paramètres  
  `pAddress`  
- [in] Debug address that is represented by the [IDebugAddress](../../../extensibility/debugger/reference/idebugaddress.md) interface.  
+ [in] Débogage d’adresse qui est représenté par le [IDebugAddress](../../../extensibility/debugger/reference/idebugaddress.md) interface.  
   
  `pGuid`  
- [out] Unique identifier of the module.  
+ [out] Identificateur unique du module.  
   
  `pAppID`  
- [out] Identifier of the application domain.  
+ [out] Identificateur du domaine d’application.  
   
  `pTokenClass`  
- [out] Token that represents the containing class.  
+ [out] Jeton qui représente la classe conteneur.  
   
  `pTokenMethod`  
- [out] Token that represents the module.  
+ [out] Jeton qui représente le module.  
   
  `pdwOffset`  
- [out] An offset in bytes from the start of the `pAddress` parameter.  
+ [out] Un offset en octets à partir du début de la `pAddress` paramètre.  
   
  `pdwVersion`  
- [out] Version number of the method.  
+ [out] Numéro de version de la méthode.  
   
-## <a name="return-value"></a>Return Value  
- If successful, returns `S_OK`; otherwise, returns an error code.  
+## <a name="return-value"></a>Valeur de retour  
+ En cas de réussite, retourne `S_OK`; sinon, retourne un code d’erreur.  
   
-## <a name="see-also"></a>See Also  
+## <a name="see-also"></a>Voir aussi  
  [IDebugSymbolProviderDirect](../../../extensibility/debugger/reference/idebugsymbolproviderdirect.md)

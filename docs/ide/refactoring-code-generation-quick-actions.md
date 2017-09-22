@@ -9,8 +9,8 @@ ms.technology:
 ms.tgt_pltfrm: 
 ms.topic: article
 ms.assetid: fc929a81-b20c-4802-92a7-388fd15aec3c
-author: BrianPeek
-ms.author: brpeek
+author: gewarren
+ms.author: gewarren
 manager: ghogen
 translation.priority.ht:
 - cs-cz
@@ -26,9 +26,10 @@ translation.priority.ht:
 - tr-tr
 - zh-cn
 - zh-tw
-translationtype: Human Translation
+ms.translationtype: Human Translation
 ms.sourcegitcommit: 46846db26bee30841e6cb35913d533b512d01ba0
 ms.openlocfilehash: 59ed01aa24468dd7b08a10389f91580321fe9b82
+ms.contentlocale: fr-fr
 ms.lasthandoff: 03/27/2017
 
 ---
@@ -51,7 +52,7 @@ Visual Studio peut générer des parties du code source à votre place, ce qui v
 
 <a name="#quick-actions"></a>
 ## <a name="quick-actions"></a>Actions rapides
-Les actions rapides vous permettent de refactoriser, générer ou modifier facilement le code en une seule action.  Elles peuvent être appliquées en utilisant l’icône d’ampoule ![Petite icône en forme d’ampoule](~/ide/media/vs2015_lightbulbsmall.png "VS2017_LightBulbSmall") ou en appuyant sur **Ctrl+.** quand votre curseur se trouve sur la ligne de code appropriée.
+Les actions rapides vous permettent de refactoriser, générer ou modifier facilement le code en une seule action.  Elles peuvent être appliquées en utilisant l’icône d’ampoule ![Petite icône en forme d’ampoule](media/vs2015_lightbulbsmall.png "VS2017_LightBulbSmall") ou en appuyant sur **Ctrl+.** quand votre curseur se trouve sur la ligne de code appropriée.
 
 * [Actions rapides](quick-actions.md)
 * [Styles de code et actions rapides](code-styles-and-quick-actions.md)

@@ -1,5 +1,5 @@
 ---
-title: IDebugPointerObject3::GetPointerAddress | Microsoft Docs
+title: IDebugPointerObject3::GetPointerAddress | Documents Microsoft
 ms.custom: 
 ms.date: 11/04/2016
 ms.reviewer: 
@@ -30,35 +30,35 @@ translation.priority.mt:
 - zh-cn
 - zh-tw
 ms.translationtype: MT
-ms.sourcegitcommit: ff8ecec19f8cab04ac2190f9a4a995766f1750bf
-ms.openlocfilehash: 99b28dce628b76fe3b53ef6c647d62efde0b9d88
+ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
+ms.openlocfilehash: cb6fdae347ec93901bdc11c1ed076da573dd5065
 ms.contentlocale: fr-fr
-ms.lasthandoff: 08/23/2017
+ms.lasthandoff: 09/19/2017
 
 ---
 # <a name="idebugpointerobject3getpointeraddress"></a>IDebugPointerObject3::GetPointerAddress
-Retrieves the address of the pointer.  
+Récupère l’adresse du pointeur.  
   
-## <a name="syntax"></a>Syntax  
+## <a name="syntax"></a>Syntaxe  
   
-```cpp#  
+```cpp  
 HRESULT GetPointerAddress (  
    UINT64* puAddress  
 );  
 ```  
   
-```cs  
+```csharp  
 int GetPointerAddress (  
    out ulong puAddress  
 );  
 ```  
   
-#### <a name="parameters"></a>Parameters  
+#### <a name="parameters"></a>Paramètres  
  `puAddress`  
- [out] Returns the address of the pointer.  
+ [out] Retourne l’adresse du pointeur.  
   
-## <a name="return-value"></a>Return Value  
- If successful, returns `S_OK`; otherwise, returns an error code.  
+## <a name="return-value"></a>Valeur de retour  
+ En cas de réussite, retourne `S_OK`; sinon, retourne un code d’erreur.  
   
-## <a name="see-also"></a>See Also  
+## <a name="see-also"></a>Voir aussi  
  [IDebugPointerObject3](../../../extensibility/debugger/reference/idebugpointerobject3.md)

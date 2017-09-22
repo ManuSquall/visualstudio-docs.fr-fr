@@ -1,5 +1,5 @@
 ---
-title: IDebugProgram2::GetDisassemblyStream | Microsoft Docs
+title: IDebugProgram2::GetDisassemblyStream | Documents Microsoft
 ms.custom: 
 ms.date: 11/04/2016
 ms.reviewer: 
@@ -34,13 +34,13 @@ ms.translationtype: MT
 ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
 ms.openlocfilehash: 50655e8d565fe08c4ea918d69f5eeb8780d43c55
 ms.contentlocale: fr-fr
-ms.lasthandoff: 08/28/2017
+ms.lasthandoff: 09/19/2017
 
 ---
 # <a name="idebugprogram2getdisassemblystream"></a>IDebugProgram2::GetDisassemblyStream
-Gets the disassembly stream for this program or a part of this program.  
+Obtient le flux de code machine pour ce programme ou une partie de ce programme.  
   
-## <a name="syntax"></a>Syntax  
+## <a name="syntax"></a>Syntaxe  
   
 ```cpp  
 HRESULT GetDisassemblyStream(   
@@ -58,23 +58,23 @@ int GetDisassemblyStream(
 );  
 ```  
   
-#### <a name="parameters"></a>Parameters  
+#### <a name="parameters"></a>Paramètres  
  `dwScope`  
- [in] Specifies a value from the [DISASSEMBLY_STREAM_SCOPE](../../../extensibility/debugger/reference/disassembly-stream-scope.md) enumeration that defines the scope of the disassembly stream.  
+ [in] Spécifie une valeur à partir de la [DISASSEMBLY_STREAM_SCOPE](../../../extensibility/debugger/reference/disassembly-stream-scope.md) énumération qui définit l’étendue du flux de code machine.  
   
  `pCodeContext`  
- [in] An [IDebugCodeContext2](../../../extensibility/debugger/reference/idebugcodecontext2.md) object that represents the position of where to start the disassembly stream.  
+ [in] Un [IDebugCodeContext2](../../../extensibility/debugger/reference/idebugcodecontext2.md) objet qui représente la position de l’emplacement de démarrer le flux de code machine.  
   
  `ppDisassemblyStream`  
- [out] Returns an [IDebugDisassemblyStream2](../../../extensibility/debugger/reference/idebugdisassemblystream2.md) object that represents the disassembly stream.  
+ [out] Retourne un [IDebugDisassemblyStream2](../../../extensibility/debugger/reference/idebugdisassemblystream2.md) objet qui représente le flux de code machine.  
   
-## <a name="return-value"></a>Return Value  
- If successful, returns `S_OK`; otherwise, returns an error code. Returns `E_DISASM_NOTSUPPORTED` if disassembly is not supported for this particular architecture.  
+## <a name="return-value"></a>Valeur de retour  
+ En cas de réussite, retourne `S_OK`; sinon, retourne un code d’erreur. Retourne `E_DISASM_NOTSUPPORTED` si le code machine n’est pas prise en charge pour cette architecture particulière.  
   
-## <a name="remarks"></a>Remarks  
- If the `dwScopes` parameter has the `DSS_HUGE` flag of the [DISASSEMBLY_STREAM_SCOPE](../../../extensibility/debugger/reference/disassembly-stream-scope.md) enumeration set, then the disassembly is expected to return a large number of disassembly instructions, for example, for an entire file or module. If the `DSS_HUGE` flag is not set, then the disassembly is expected to be confined to a small region, typically that of a single function.  
+## <a name="remarks"></a>Remarques  
+ Si le `dwScopes` le paramètre a la `DSS_HUGE` indicateur de la [DISASSEMBLY_STREAM_SCOPE](../../../extensibility/debugger/reference/disassembly-stream-scope.md) énumération définie, puis le code machine est supposé retourner un grand nombre d’instructions de code machine, par exemple, pour un fichier entier ou le module. Si le `DSS_HUGE` indicateur n’est pas défini, puis le code machine est censé être limitées à une petite région, celui d’une fonction unique.  
   
-## <a name="see-also"></a>See Also  
+## <a name="see-also"></a>Voir aussi  
  [IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md)   
  [DISASSEMBLY_STREAM_SCOPE](../../../extensibility/debugger/reference/disassembly-stream-scope.md)   
  [IDebugCodeContext2](../../../extensibility/debugger/reference/idebugcodecontext2.md)   

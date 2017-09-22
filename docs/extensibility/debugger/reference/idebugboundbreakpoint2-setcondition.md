@@ -1,5 +1,5 @@
 ---
-title: IDebugBoundBreakpoint2::SetCondition | Microsoft Docs
+title: IDebugBoundBreakpoint2::SetCondition | Documents Microsoft
 ms.custom: 
 ms.date: 11/04/2016
 ms.reviewer: 
@@ -35,13 +35,13 @@ ms.translationtype: MT
 ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
 ms.openlocfilehash: 2b4e7fa667bfd5c0956233588210bc87e55d02bd
 ms.contentlocale: fr-fr
-ms.lasthandoff: 08/28/2017
+ms.lasthandoff: 09/19/2017
 
 ---
 # <a name="idebugboundbreakpoint2setcondition"></a>IDebugBoundBreakpoint2::SetCondition
-Sets or changes the condition associated with this bound breakpoint.  
+Définit ou modifie la condition associée à ce point d’arrêt lié.  
   
-## <a name="syntax"></a>Syntax  
+## <a name="syntax"></a>Syntaxe  
   
 ```cpp  
 HRESULT SetCondition(   
@@ -55,17 +55,17 @@ int SetCondition(
 );  
 ```  
   
-#### <a name="parameters"></a>Parameters  
+#### <a name="parameters"></a>Paramètres  
  `bpCondition`  
- [in] A value from the [BP_CONDITION](../../../extensibility/debugger/reference/bp-condition.md) enumeration that describes the condition.  
+ [in] Une valeur à partir de la [BP_CONDITION](../../../extensibility/debugger/reference/bp-condition.md) énumération qui décrit la condition.  
   
-## <a name="return-value"></a>Return Value  
- If successful, returns `S_OK`; otherwise, returns an error code. Returns `E_BP_DELETED` if the state of the bound breakpoint object is set to `BPS_DELETED` (part of the [BP_STATE](../../../extensibility/debugger/reference/bp-state.md) enumeration).  
+## <a name="return-value"></a>Valeur de retour  
+ En cas de réussite, retourne `S_OK`; sinon, retourne un code d’erreur. Retourne `E_BP_DELETED` si l’état de l’objet de point d’arrêt lié est défini `BPS_DELETED` (dans le cadre de la [BP_STATE](../../../extensibility/debugger/reference/bp-state.md) énumération).  
   
-## <a name="remarks"></a>Remarks  
- Any condition that was previously associated with this breakpoint is lost.  
+## <a name="remarks"></a>Remarques  
+ Toute condition qui a été précédemment associée à ce point d’arrêt est perdue.  
   
-## <a name="see-also"></a>See Also  
+## <a name="see-also"></a>Voir aussi  
  [IDebugBoundBreakpoint2](../../../extensibility/debugger/reference/idebugboundbreakpoint2.md)   
  [BP_CONDITION](../../../extensibility/debugger/reference/bp-condition.md)   
  [BP_STATE](../../../extensibility/debugger/reference/bp-state.md)

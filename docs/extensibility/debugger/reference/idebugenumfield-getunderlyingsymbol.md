@@ -1,5 +1,5 @@
 ---
-title: IDebugEnumField::GetUnderlyingSymbol | Microsoft Docs
+title: IDebugEnumField::GetUnderlyingSymbol | Documents Microsoft
 ms.custom: 
 ms.date: 11/04/2016
 ms.reviewer: 
@@ -31,40 +31,40 @@ translation.priority.mt:
 - zh-cn
 - zh-tw
 ms.translationtype: MT
-ms.sourcegitcommit: ff8ecec19f8cab04ac2190f9a4a995766f1750bf
-ms.openlocfilehash: 1e4bd73a6fc1b81bbb1ce645cff653c7cabe3b24
+ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
+ms.openlocfilehash: c996887392231e631080ff7ed2c7395c85110af1
 ms.contentlocale: fr-fr
-ms.lasthandoff: 08/23/2017
+ms.lasthandoff: 09/19/2017
 
 ---
 # <a name="idebugenumfieldgetunderlyingsymbol"></a>IDebugEnumField::GetUnderlyingSymbol
-This method returns an [IDebugField](../../../extensibility/debugger/reference/idebugfield.md) that represents the name of the enumeration.  
+Cette méthode retourne un [IDebugField](../../../extensibility/debugger/reference/idebugfield.md) qui représente le nom de l’énumération.  
   
-## <a name="syntax"></a>Syntax  
+## <a name="syntax"></a>Syntaxe  
   
-```cpp#  
+```cpp  
 HRESULT GetUnderlyingSymbol(  
    IDebugField** ppField  
 );  
 ```  
   
-```cs  
+```csharp  
 int GetUnderlyingSymbol(  
    out IDebugField ppField  
 );  
 ```  
   
-#### <a name="parameters"></a>Parameters  
+#### <a name="parameters"></a>Paramètres  
  `ppField`  
- [out] Returns the [IDebugField](../../../extensibility/debugger/reference/idebugfield.md) describing the name of this enumeration.  
+ [out] Retourne le [IDebugField](../../../extensibility/debugger/reference/idebugfield.md) qui décrit le nom de cette énumération.  
   
-## <a name="return-value"></a>Return Value  
- If successful, returns `S_OK`; otherwise, returns an error code.  
+## <a name="return-value"></a>Valeur de retour  
+ En cas de réussite, retourne `S_OK`; sinon, retourne un code d’erreur.  
   
-## <a name="remarks"></a>Remarks  
- The name of the enumeration also contains the type of the enumeration, which is bound to a memory location by using [Bind](../../../extensibility/debugger/reference/idebugbinder-bind.md).  
+## <a name="remarks"></a>Remarques  
+ Le nom de l’énumération contient également le type de l’énumération, qui est lié à un emplacement de mémoire à l’aide de [lier](../../../extensibility/debugger/reference/idebugbinder-bind.md).  
   
-## <a name="see-also"></a>See Also  
+## <a name="see-also"></a>Voir aussi  
  [IDebugEnumField](../../../extensibility/debugger/reference/idebugenumfield.md)   
  [IDebugField](../../../extensibility/debugger/reference/idebugfield.md)   
- [Bind](../../../extensibility/debugger/reference/idebugbinder-bind.md)
+ [Lier](../../../extensibility/debugger/reference/idebugbinder-bind.md)

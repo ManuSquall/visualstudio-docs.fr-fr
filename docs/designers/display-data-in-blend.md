@@ -5,13 +5,13 @@ ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
 ms.technology:
-- vs-ide-general
+- vs-ide-designers
 ms.tgt_pltfrm: 
 ms.topic: article
 ms.assetid: 87d31b6c-4607-4121-bb7d-cfc80390ab93
 caps.latest.revision: 12
-author: kempb
-ms.author: kempb
+author: gewarren
+ms.author: gewarren
 manager: ghogen
 translation.priority.ht:
 - de-de
@@ -53,29 +53,29 @@ Vous pouvez afficher des exemples de données dans votre concepteur à mesure qu
   
  Définissez la structure de vos données dans le panneau **Données** et liez-la aux éléments d'interface utilisateur d'une page.  
   
- ![](~/designers/media/496d7ebc-fe46-42f6-95a8-57b0e5be5d49.png "496d7ebc-fe46-42f6-95a8-57b0e5be5d49")  
+ ![](../designers/media/496d7ebc-fe46-42f6-95a8-57b0e5be5d49.png "496d7ebc-fe46-42f6-95a8-57b0e5be5d49")  
   
- Si vous voulez que vos exemples de données apparaissent dans vos pages au moment où vous exécutez l'application, choisissez **Options de source de données** ![](~/designers/media/ae1fd260-4f84-420d-b196-45fde357d81d.png "ae1fd260-4f84-420d-b196-45fde357d81d"), puis **Activer lorsque l'application est exécutée**.  
+ Si vous voulez que vos exemples de données apparaissent dans vos pages au moment où vous exécutez l'application, choisissez **Options de source de données** ![](../designers/media/ae1fd260-4f84-420d-b196-45fde357d81d.png "ae1fd260-4f84-420d-b196-45fde357d81d"), puis **Activer lorsque l'application est exécutée**.  
   
- ![](~/designers/media/05d5356d-91bb-4e6b-b3f7-29b76852c4b3.png "05d5356d-91bb-4e6b-b3f7-29b76852c4b3")  
+ ![](../designers/media/05d5356d-91bb-4e6b-b3f7-29b76852c4b3.png "05d5356d-91bb-4e6b-b3f7-29b76852c4b3")  
   
- **Regardez une courte vidéo :** ![Configurer les fonctionnalités installées](~/designers/media/bldadminconsoleinitialconfigicon.PNG "BldAdminConsoleInitialConfigIcon") [Create sample data from scratch (Créer entièrement des exemples de données)](http://www.bing.com/videos/search?q=blend%20data&qs=n&form=QBVR&pq=blend%20data&sc=8-7&sp=-1&sk=#view=detail&mid=F8F2449A76956D480FD2F8F2449A76956D480FD2).  
+ **Regardez une courte vidéo :** ![Configurer les fonctionnalités installées](../designers/media/bldadminconsoleinitialconfigicon.PNG "BldAdminConsoleInitialConfigIcon") [Create sample data from scratch (Créer entièrement des exemples de données)](http://www.bing.com/videos/search?q=blend%20data&qs=n&form=QBVR&pq=blend%20data&sc=8-7&sp=-1&sk=#view=detail&mid=F8F2449A76956D480FD2F8F2449A76956D480FD2).  
   
- **Regardez une courte vidéo :** ![Configurer les fonctionnalités installées](~/designers/media/bldadminconsoleinitialconfigicon.PNG "BldAdminConsoleInitialConfigIcon") [Mixing up some data binding with Blend (Mélange d’opérations de liaison de données avec Blend)](https://www.youtube.com/watch?v=LSwPB6CAvjg).  
+ **Regardez une courte vidéo :** ![Configurer les fonctionnalités installées](../designers/media/bldadminconsoleinitialconfigicon.PNG "BldAdminConsoleInitialConfigIcon") [Mixing up some data binding with Blend (Mélange d’opérations de liaison de données avec Blend)](https://www.youtube.com/watch?v=LSwPB6CAvjg).  
   
 ##  <a name="Existing"></a> Générer des exemples de données à partir d'une classe  
  Si vous avez déjà créé des classes qui décrivent la structure de vos données, vous pouvez générer des exemples de données à partir de celles-ci.  
   
  Pour générer les exemples de données à partir d’une classe, ouvrez un document XAML, puis, dans le volet **Données** , cliquez sur le bouton **Créer des exemples de données**![](../designers/media/30540d76-7256-43ce-b5d9-4b2edf3d339f.png "30540d76-7256-43ce-b5d9-4b2edf3d339f") , puis cliquez sur **Créer un exemple de données à partir de la classe**.  
   
- **Regardez une courte vidéo :** ![Configurer les fonctionnalités installées](~/designers/media/bldadminconsoleinitialconfigicon.PNG "BldAdminConsoleInitialConfigIcon") [Create sample data from a class (Créer des exemples de données à partir d’une classe)](http://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=video&cd=1&cad=rja&uact=8&ved=0CB0QtwIwAA&url=http%3A%2F%2Fchannel9.msdn.com%2FShows%2FInside%2BWindows%2BPhone%2FIWP54--Windows-Phone-Data-Binding-and-the-Magic-of-XAML&ei=F1oHVNryM4ysogSJ2oDYDw&usg=AFQjCNEYvw1WA1rdF7bfpj5RwMLUs7RCVg).  
+ **Regardez une courte vidéo :** ![Configurer les fonctionnalités installées](../designers/media/bldadminconsoleinitialconfigicon.PNG "BldAdminConsoleInitialConfigIcon") [Create sample data from a class (Créer des exemples de données à partir d’une classe)](http://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=video&cd=1&cad=rja&uact=8&ved=0CB0QtwIwAA&url=http%3A%2F%2Fchannel9.msdn.com%2FShows%2FInside%2BWindows%2BPhone%2FIWP54--Windows-Phone-Data-Binding-and-the-Magic-of-XAML&ei=F1oHVNryM4ysogSJ2oDYDw&usg=AFQjCNEYvw1WA1rdF7bfpj5RwMLUs7RCVg).  
   
- **Regardez une courte vidéo :** ![Configurer les fonctionnalités installées](~/designers/media/bldadminconsoleinitialconfigicon.PNG "BldAdminConsoleInitialConfigIcon") [Mixing up some data binding with Blend (Mélange d’opérations de liaison de données avec Blend)](https://www.youtube.com/watch?v=LSwPB6CAvjg).  
+ **Regardez une courte vidéo :** ![Configurer les fonctionnalités installées](../designers/media/bldadminconsoleinitialconfigicon.PNG "BldAdminConsoleInitialConfigIcon") [Mixing up some data binding with Blend (Mélange d’opérations de liaison de données avec Blend)](https://www.youtube.com/watch?v=LSwPB6CAvjg).  
   
 ##  <a name="LiveWPF"></a> Afficher des données en direct dans une application WPF  
- **Regardez une courte vidéo :** ![Configurer les fonctionnalités installées](~/designers/media/bldadminconsoleinitialconfigicon.PNG "BldAdminConsoleInitialConfigIcon") [Create an object data source (Créer une source de données d’objet)](http://www.bing.com/videos/watch/video/using-an-objectdatasource-in-expression-blend/qmavx0xg).  
+ **Regardez une courte vidéo :** ![Configurer les fonctionnalités installées](../designers/media/bldadminconsoleinitialconfigicon.PNG "BldAdminConsoleInitialConfigIcon") [Create an object data source (Créer une source de données d’objet)](http://www.bing.com/videos/watch/video/using-an-objectdatasource-in-expression-blend/qmavx0xg).  
   
- **Regardez une courte vidéo :** ![Configurer les fonctionnalités installées](~/designers/media/bldadminconsoleinitialconfigicon.PNG "BldAdminConsoleInitialConfigIcon") [Create an XML data source (Créer une source de données XML)](https://www.youtube.com/watch?v=RjQueappjqk&feature=youtube_gdata).  
+ **Regardez une courte vidéo :** ![Configurer les fonctionnalités installées](../designers/media/bldadminconsoleinitialconfigicon.PNG "BldAdminConsoleInitialConfigIcon") [Create an XML data source (Créer une source de données XML)](https://www.youtube.com/watch?v=RjQueappjqk&feature=youtube_gdata).  
   
 ##  <a name="LiveStore"></a> Afficher des données en direct dans une application Windows Store ou Windows Phone  
  Consultez [Utilisation de données et de fichiers (XAML)](http://msdn.microsoft.com/library/windows/apps/xaml/br229562.aspx).  

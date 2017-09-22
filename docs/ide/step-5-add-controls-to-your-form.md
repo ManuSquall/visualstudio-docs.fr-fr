@@ -5,13 +5,13 @@ ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
 ms.technology:
-- vs-ide-general
+- vs-acquisition
 ms.tgt_pltfrm: 
 ms.topic: article
 ms.assetid: dc2746f4-0b5c-4674-9ef7-f40f94150f52
 caps.latest.revision: 20
-author: kempb
-ms.author: kempb
+author: TerryGLee
+ms.author: tglee
 manager: ghogen
 translation.priority.ht:
 - de-de
@@ -28,16 +28,17 @@ translation.priority.mt:
 - pl-pl
 - pt-br
 - tr-tr
-translationtype: Human Translation
+ms.translationtype: Human Translation
 ms.sourcegitcommit: 5db97d19b1b823388a465bba15d057b30ff0b3ce
 ms.openlocfilehash: 07048d1ab89599609d7ece1e69056e6dd1dd7eea
+ms.contentlocale: fr-fr
 ms.lasthandoff: 02/22/2017
 
 ---
 # <a name="step-5-add-controls-to-your-form"></a>Étape 5 : ajouter des contrôles à votre formulaire
 Lors de cette étape, vous ajoutez des contrôles à votre formulaire (notamment des contrôles `PictureBox` et `CheckBox`). Vous ajoutez ensuite des boutons à votre formulaire.  
   
- ![lien vers la vidéo](~/data-tools/media/playvideo.gif "PlayVideo")Pour obtenir une version vidéo de cette rubrique, consultez [Didacticiel 1 : Créer une visionneuse d’images en Visual Basic – Vidéo 2](http://go.microsoft.com/fwlink/?LinkId=205211) ou [Didacticiel 1 : Créer une visionneuse d’images en C# – Vidéo 2](http://go.microsoft.com/fwlink/?LinkId=205200). Ces vidéos utilisent une version antérieure de Visual Studio et présentent donc de légères différences quant à certaines commandes de menu et autres éléments d’interface utilisateur. Toutefois, les concepts et les procédures fonctionnent de façon similaire dans la version actuelle de Visual Studio.  
+ ![lien vers la vidéo](../data-tools/media/playvideo.gif "PlayVideo")Pour obtenir une version vidéo de cette rubrique, consultez [Didacticiel 1 : Créer une visionneuse d’images en Visual Basic – Vidéo 2](http://go.microsoft.com/fwlink/?LinkId=205211) ou [Didacticiel 1 : Créer une visionneuse d’images en C# – Vidéo 2](http://go.microsoft.com/fwlink/?LinkId=205200). Ces vidéos utilisent une version antérieure de Visual Studio et présentent donc de légères différences quant à certaines commandes de menu et autres éléments d’interface utilisateur. Toutefois, les concepts et les procédures fonctionnent de façon similaire dans la version actuelle de Visual Studio.  
   
 ### <a name="to-add-controls-to-your-form"></a>Pour ajouter des contrôles à votre formulaire  
   
@@ -49,7 +50,7 @@ Lors de cette étape, vous ajoutez des contrôles à votre formulaire (notamment
   
 4.  Choisissez le nouveau contrôle PictureBox pour le sélectionner, puis choisissez le triangle noir sur le nouveau contrôle PictureBox pour afficher sa liste de tâches, comme l’illustre l’image suivante.  
   
-     ![Tâches PictureBox](~/ide/media/express_pictureboxtasks.png "Express_PictureBoxTasks")  
+     ![Tâches PictureBox](../ide/media/express_pictureboxtasks.png "Express_PictureBoxTasks")  
 Tâches PictureBox  
   
     > [!NOTE]
@@ -64,7 +65,7 @@ Tâches PictureBox
   
 7.  Choisissez le contrôle TableLayoutPanel dans le formulaire, puis ajoutez un contrôle **CheckBox** au formulaire. Double-cliquez sur l’élément **CheckBox** dans la boîte à outils pour ajouter un nouveau contrôle CheckBox dans la cellule libre suivante de votre tableau. Étant donné qu'un contrôle PictureBox occupe les deux premières cellules du contrôle TableLayoutPanel, le contrôle CheckBox est ajouté à la cellule inférieure gauche. Choisissez la propriété **Text** et tapez le mot **Stretch**, illustré sur l’image suivante.  
   
-     ![Contrôle TextBox avec propriété Stretch](~/ide/media/express_pictureviewercheckbox.png "Express_PictureViewerCheckbox")  
+     ![Contrôle TextBox avec propriété Stretch](../ide/media/express_pictureviewercheckbox.png "Express_PictureViewerCheckbox")  
 Contrôle TextBox avec propriété Stretch  
   
 8.  Choisissez le contrôle TableLayoutPanel dans le formulaire, puis accédez au groupe **Conteneurs** dans la boîte à outils (où vous avez obtenu votre contrôle TableLayoutPanel) et double-cliquez sur l’élément **FlowLayoutPanel** pour ajouter un nouveau contrôle à la dernière cellule du contrôle PictureBox (en bas à droite). Ancrez ensuite l’élément FlowLayoutPanel dans le contrôle TableLayoutPanel (en sélectionnant **Ancrer dans le conteneur parent** dans la liste des tâches avec triangle noir du contrôle FlowLayoutPanel, ou en affectant à la propriété **Dock** du contrôle FlowLayoutPanel la valeur **Fill**).  
@@ -90,7 +91,7 @@ Contrôle TextBox avec propriété Stretch
   
 5.  Choisissez le bouton **Fermer** pour le sélectionner. Maintenez la touche Ctrl enfoncée et choisissez les trois autres boutons de façon à les sélectionner tous. Quand tous les boutons sont sélectionnés, ouvrez la fenêtre **Propriétés** et faites défiler jusqu’à la propriété **AutoSize**. Cette propriété indique au bouton qu'il doit se redimensionner automatiquement pour s'ajuster à l'ensemble de son texte. Affectez-lui la valeur **true**. Vos boutons doivent maintenant avoir des dimensions correctes et se trouver dans le bon ordre. (Si les quatre boutons sont sélectionnés, vous pouvez modifier les quatre propriétés **AutoSize** en même temps.) L'image suivante montre les quatre boutons.  
   
-     ![Visionneuse d’images avec quatre boutons](~/ide/media/express_autosize.png "Express_AutoSize")  
+     ![Visionneuse d’images avec quatre boutons](../ide/media/express_autosize.png "Express_AutoSize")  
 Visionneuse d'images avec quatre boutons  
   
 6.  Maintenant, exécutez à nouveau votre programme pour examiner la nouvelle présentation de votre formulaire. La sélection des boutons et de la case à cocher n'a pour l'instant pas d'effet, mais cela n'est que provisoire.  

@@ -1,5 +1,5 @@
 ---
-title: IDebugComPlusSymbolProvider::IsHiddenCode | Microsoft Docs
+title: IDebugComPlusSymbolProvider::IsHiddenCode | Documents Microsoft
 ms.custom: 
 ms.date: 11/04/2016
 ms.reviewer: 
@@ -29,40 +29,40 @@ translation.priority.mt:
 - zh-cn
 - zh-tw
 ms.translationtype: MT
-ms.sourcegitcommit: ff8ecec19f8cab04ac2190f9a4a995766f1750bf
-ms.openlocfilehash: 4042c946a646a3d2f00dfb28742800e32ce578e3
+ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
+ms.openlocfilehash: d6c2d387bae6760ff5187d4b69f2b9c2ec80c1c3
 ms.contentlocale: fr-fr
-ms.lasthandoff: 08/23/2017
+ms.lasthandoff: 09/19/2017
 
 ---
 # <a name="idebugcomplussymbolproviderishiddencode"></a>IDebugComPlusSymbolProvider::IsHiddenCode
-Determines if the code at the specified debugger address is hidden.  
+Détermine si le code à l’adresse de débogueur spécifié est masqué.  
   
-## <a name="syntax"></a>Syntax  
+## <a name="syntax"></a>Syntaxe  
   
-```cpp#  
+```cpp  
 HRESULT IsHiddenCode(  
    IDebugAddress* pAddress  
 );  
 ```  
   
-```cs  
+```csharp  
 int IsHiddenCode(  
    IDebugAddress pAddress  
 );  
 ```  
   
-#### <a name="parameters"></a>Parameters  
+#### <a name="parameters"></a>Paramètres  
  `pAddress`  
- [in] The debug address that is represented by an [IDebugAddress](../../../extensibility/debugger/reference/idebugaddress.md) interface.  
+ [in] L’adresse de débogage qui est représenté par un [IDebugAddress](../../../extensibility/debugger/reference/idebugaddress.md) interface.  
   
-## <a name="return-value"></a>Return Value  
- If the code is hidden, returns `S_OK`; otherwise, returns `S_FALSE`.  
+## <a name="return-value"></a>Valeur de retour  
+ Si le code est masqué, retourne `S_OK`; sinon, retourne `S_FALSE`.  
   
-## <a name="example"></a>Example  
- The following example shows how to implement this method for a **CDebugSymbolProvider** object that exposes the [IDebugComPlusSymbolProvider](../../../extensibility/debugger/reference/idebugcomplussymbolprovider.md) interface.  
+## <a name="example"></a>Exemple  
+ L’exemple suivant montre comment implémenter cette méthode pour un **CDebugSymbolProvider** objet qui expose la [IDebugComPlusSymbolProvider](../../../extensibility/debugger/reference/idebugcomplussymbolprovider.md) interface.  
   
-```cpp#  
+```cpp  
 HRESULT CDebugSymbolProvider::IsHiddenCode(  
     IDebugAddress* pAddress  
 )  
@@ -107,5 +107,5 @@ Error:
 }  
 ```  
   
-## <a name="see-also"></a>See Also  
+## <a name="see-also"></a>Voir aussi  
  [IDebugComPlusSymbolProvider](../../../extensibility/debugger/reference/idebugcomplussymbolprovider.md)

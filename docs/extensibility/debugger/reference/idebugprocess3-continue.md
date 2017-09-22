@@ -1,5 +1,5 @@
 ---
-title: IDebugProcess3::Continue | Microsoft Docs
+title: IDebugProcess3::Continue | Documents Microsoft
 ms.custom: 
 ms.date: 11/04/2016
 ms.reviewer: 
@@ -34,16 +34,16 @@ ms.translationtype: MT
 ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
 ms.openlocfilehash: c112a29d6b936b53aef5be5366f4066a66265e4f
 ms.contentlocale: fr-fr
-ms.lasthandoff: 08/28/2017
+ms.lasthandoff: 09/19/2017
 
 ---
 # <a name="idebugprocess3continue"></a>IDebugProcess3::Continue
-Continues running this process from a stopped state. Any previous execution state (such as a step) is preserved, and the process starts executing again.  
+Continue l’exécution de ce processus à partir d’un état arrêté. N’importe quel état de l’exécution précédente (par exemple, une étape) est conservé, et le processus commence à s’exécuter à nouveau.  
   
 > [!NOTE]
->  This method should be used instead of [Continue](../../../extensibility/debugger/reference/idebugprogram2-continue.md).  
+>  Cette méthode doit être utilisée à la place de [continuer](../../../extensibility/debugger/reference/idebugprogram2-continue.md).  
   
-## <a name="syntax"></a>Syntax  
+## <a name="syntax"></a>Syntaxe  
   
 ```cpp  
 HRESULT Continue(  
@@ -57,19 +57,19 @@ int Continue(
 );  
 ```  
   
-#### <a name="parameters"></a>Parameters  
+#### <a name="parameters"></a>Paramètres  
  `pThread`  
- [in] An [IDebugThread2](../../../extensibility/debugger/reference/idebugthread2.md) object representing the thread to be continued.  
+ [in] Un [IDebugThread2](../../../extensibility/debugger/reference/idebugthread2.md) objet qui représente le thread peut être poursuivie.  
   
-## <a name="return-value"></a>Return Value  
- If successful, returns `S_OK`; otherwise, returns error code.  
+## <a name="return-value"></a>Valeur de retour  
+ En cas de réussite, retourne `S_OK`; sinon, retourne le code d’erreur.  
   
-## <a name="remarks"></a>Remarks  
- This method is called on this process regardless of how many processes are being debugged, or which process generated the stopping event. The implementation must retain the previous execution state (such as a step) and continue execution as though it had never stopped before completing its prior execution. That is, if a thread in this process was doing a step-over operation and was stopped because some other process stopped, and then `Continue` was called, the specified thread must complete the original step-over operation.  
+## <a name="remarks"></a>Remarques  
+ Cette méthode est appelée sur ce processus, quelle que soit le nombre de processus est en cours de débogage, ou le processus qui a généré l’événement de l’arrêt. L’implémentation doit conserver l’état de l’exécution précédente (par exemple, une étape) et poursuivre l’exécution comme s’il n’a jamais cessé avant la fin de sa précédente exécution. Autrement dit, si un thread dans ce processus en cours d’exécution une opération de pas à pas principal, a été arrêté car un autre processus s’est arrêté, puis `Continue` a été appelée, le texte spécifié thread doit terminer l’opération de pas à pas principal d’origine.  
   
- **Warning** Do not send a stopping event or an immediate (synchronous) event to [Event](../../../extensibility/debugger/reference/idebugeventcallback2-event.md) while handling this call; otherwise the debugger may hang.  
+ **Avertissement** ne pas envoyer un événement d’arrêt ou un événement (synchrone) immédiat [événement](../../../extensibility/debugger/reference/idebugeventcallback2-event.md) lors du traitement de cet appel ; sinon, le débogueur peut se bloquer.  
   
-## <a name="see-also"></a>See Also  
+## <a name="see-also"></a>Voir aussi  
  [IDebugProcess3](../../../extensibility/debugger/reference/idebugprocess3.md)   
  [IDebugThread2](../../../extensibility/debugger/reference/idebugthread2.md)   
  [Event](../../../extensibility/debugger/reference/idebugeventcallback2-event.md)

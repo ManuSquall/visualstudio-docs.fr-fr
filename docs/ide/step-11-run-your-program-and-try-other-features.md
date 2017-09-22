@@ -5,13 +5,13 @@ ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
 ms.technology:
-- vs-ide-general
+- vs-acquisition
 ms.tgt_pltfrm: 
 ms.topic: article
 ms.assetid: 656614d0-4fe7-4a67-8edc-c10919377d09
 caps.latest.revision: 12
-author: kempb
-ms.author: kempb
+author: TerryGLee
+ms.author: tglee
 manager: ghogen
 translation.priority.ht:
 - de-de
@@ -28,9 +28,10 @@ translation.priority.mt:
 - pl-pl
 - pt-br
 - tr-tr
-translationtype: Human Translation
+ms.translationtype: Human Translation
 ms.sourcegitcommit: 5658ecf52637a38bc3c2a5ad9e85b2edebf7d445
 ms.openlocfilehash: 019d72fece70586013455bbe74f09b990c9fac80
+ms.contentlocale: fr-fr
 ms.lasthandoff: 02/22/2017
 
 ---
@@ -39,7 +40,7 @@ Votre programme est terminé et prêt à fonctionner. Vous pouvez l'exécuter et
   
  Pour télécharger une version complète de l’exemple, consultez la rubrique [Exemple complet de visionneuse d’images du didacticiel](http://code.msdn.microsoft.com/Complete-Picture-Viewer-7d91d3a8).  
   
- ![lien vers la vidéo](~/data-tools/media/playvideo.gif "PlayVideo")Pour obtenir une version vidéo de cette rubrique, consultez [Didacticiel 1 : Créer une visionneuse d’images en Visual Basic – Vidéo 5](http://go.microsoft.com/fwlink/?LinkId=205216) ou [Didacticiel 1 : Créer une visionneuse d’images en C# – Vidéo 5](http://go.microsoft.com/fwlink/?LinkId=205206). Ces vidéos utilisent une version antérieure de Visual Studio et présentent donc de légères différences quant à certaines commandes de menu et autres éléments d’interface utilisateur. Toutefois, les concepts et les procédures fonctionnent de façon similaire dans la version actuelle de Visual Studio.  
+ ![lien vers la vidéo](../data-tools/media/playvideo.gif "PlayVideo")Pour obtenir une version vidéo de cette rubrique, consultez [Didacticiel 1 : Créer une visionneuse d’images en Visual Basic – Vidéo 5](http://go.microsoft.com/fwlink/?LinkId=205216) ou [Didacticiel 1 : Créer une visionneuse d’images en C# – Vidéo 5](http://go.microsoft.com/fwlink/?LinkId=205206). Ces vidéos utilisent une version antérieure de Visual Studio et présentent donc de légères différences quant à certaines commandes de menu et autres éléments d’interface utilisateur. Toutefois, les concepts et les procédures fonctionnent de façon similaire dans la version actuelle de Visual Studio.  
   
 ### <a name="to-run-your-program-and-set-the-background-color"></a>Pour exécuter votre programme et définir la couleur d'arrière-plan.  
   
@@ -47,7 +48,7 @@ Votre programme est terminé et prêt à fonctionner. Vous pouvez l'exécuter et
   
 2.  Avant d’ouvrir une image, choisissez le bouton **Définir la couleur d’arrière-plan**. La boîte de dialogue **Couleur** s’ouvre.  
   
-     ![Couleur, boîte de dialogue](~/ide/media/express_colordialog.png "Express_ColorDialog")  
+     ![Couleur, boîte de dialogue](../ide/media/express_colordialog.png "Express_ColorDialog")  
 Couleur, boîte de dialogue  
   
 3.  Choisissez une couleur pour définir la couleur d'arrière-plan du contrôle PictureBox. Examinez attentivement la méthode `backgroundButton_Click()` pour comprendre son fonctionnement.  

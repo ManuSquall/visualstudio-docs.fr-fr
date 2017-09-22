@@ -1,5 +1,5 @@
 ---
-title: IEnumDebugProcesses2::Next | Microsoft Docs
+title: IEnumDebugProcesses2::Next | Documents Microsoft
 ms.custom: 
 ms.date: 11/04/2016
 ms.reviewer: 
@@ -31,18 +31,18 @@ translation.priority.mt:
 - zh-cn
 - zh-tw
 ms.translationtype: MT
-ms.sourcegitcommit: ff8ecec19f8cab04ac2190f9a4a995766f1750bf
-ms.openlocfilehash: d7d3d9032c3380bbc180f3b4f0de49dd208cb056
+ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
+ms.openlocfilehash: 0b22114c8254490c15ab330b33447687c6228d13
 ms.contentlocale: fr-fr
-ms.lasthandoff: 08/23/2017
+ms.lasthandoff: 09/19/2017
 
 ---
 # <a name="ienumdebugprocesses2next"></a>IEnumDebugProcesses2::Next
-Returns the next set of elements from the enumeration.  
+Retourne l’ensemble suivant d’éléments de l’énumération.  
   
-## <a name="syntax"></a>Syntax  
+## <a name="syntax"></a>Syntaxe  
   
-```cpp#  
+```cpp  
 HRESULT Next(  
    ULONG            celt,  
    IDebugProcess2** rgelt,  
@@ -50,7 +50,7 @@ HRESULT Next(
 );  
 ```  
   
-```cs  
+```csharp  
 int Next(  
    uint             celt,  
    IDebugProcess2[] rgelt,  
@@ -58,19 +58,19 @@ int Next(
 );  
 ```  
   
-#### <a name="parameters"></a>Parameters  
+#### <a name="parameters"></a>Paramètres  
  `celt`  
- [in] The number of elements to retrieve. Also specifies the maximum size of the `rgelt` array.  
+ [in] Le nombre d’éléments à récupérer. Spécifie également la taille maximale de la `rgelt` tableau.  
   
  `rgelt`  
- [in, out] Array of [IDebugProcess2](../../../extensibility/debugger/reference/idebugprocess2.md) elements to be filled in.  
+ [dans, out] Tableau de [IDebugProcess2](../../../extensibility/debugger/reference/idebugprocess2.md) éléments doit être renseigné.  
   
  `pceltFetched`  
- [out] Returns the number of elements actually returned in `rgelt`.  
+ [out] Retourne le nombre d’éléments réellement retournés dans `rgelt`.  
   
-## <a name="return-value"></a>Return Value  
- If successful, returns `S_OK`. Returns `S_FALSE` if fewer than the requested number of elements could be returned; otherwise, returns an error code.  
+## <a name="return-value"></a>Valeur de retour  
+ En cas de réussite, retourne `S_OK`. Retourne `S_FALSE` si inférieur au nombre demandé d’éléments peut être retournés ; sinon, retourne un code d’erreur.  
   
-## <a name="see-also"></a>See Also  
+## <a name="see-also"></a>Voir aussi  
  [IEnumDebugProcesses2](../../../extensibility/debugger/reference/ienumdebugprocesses2.md)   
  [IDebugProcess2](../../../extensibility/debugger/reference/idebugprocess2.md)

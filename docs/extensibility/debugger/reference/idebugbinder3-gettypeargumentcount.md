@@ -1,5 +1,5 @@
 ---
-title: IDebugBinder3::GetTypeArgumentCount | Microsoft Docs
+title: IDebugBinder3::GetTypeArgumentCount | Documents Microsoft
 ms.custom: 
 ms.date: 11/04/2016
 ms.reviewer: 
@@ -31,16 +31,16 @@ translation.priority.mt:
 - zh-cn
 - zh-tw
 ms.translationtype: MT
-ms.sourcegitcommit: ff8ecec19f8cab04ac2190f9a4a995766f1750bf
-ms.openlocfilehash: 1614c312c6aa307bd151cc76acbc843cd092a313
+ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
+ms.openlocfilehash: 9e676597c96441d0a33a190d45d78a5b4129ccfe
 ms.contentlocale: fr-fr
-ms.lasthandoff: 08/23/2017
+ms.lasthandoff: 09/19/2017
 
 ---
 # <a name="idebugbinder3gettypeargumentcount"></a>IDebugBinder3::GetTypeArgumentCount
-This method returns the number of argument types associated with this object.  
+Cette méthode retourne le nombre de types d’arguments associé à cet objet.  
   
-## <a name="syntax"></a>Syntax  
+## <a name="syntax"></a>Syntaxe  
   
 ```cpp  
 HRESULT GetTypeArgumentCount(  
@@ -48,22 +48,22 @@ HRESULT GetTypeArgumentCount(
 );  
 ```  
   
-```cs  
+```csharp  
 int GetTypeArgumentCount(  
    out uint uCount  
 );  
 ```  
   
-#### <a name="parameters"></a>Parameters  
+#### <a name="parameters"></a>Paramètres  
  `uCount`  
- [out] Number of argument types associated with this object.  
+ [out] Nombre de types d’arguments associé à cet objet.  
   
-## <a name="return-value"></a>Return Value  
- If successful, returns `S_OK`; otherwise, returns an error code.  
+## <a name="return-value"></a>Valeur de retour  
+ En cas de réussite, retourne `S_OK`; sinon, retourne un code d’erreur.  
   
-## <a name="remarks"></a>Remarks  
- The value returned by this method can be used to allocate an array for use with the [GetTypeArguments](../../../extensibility/debugger/reference/idebugbinder3-gettypearguments.md) method.  
+## <a name="remarks"></a>Remarques  
+ La valeur retournée par cette méthode peut être utilisée pour allouer un tableau pour une utilisation avec le [GetTypeArguments](../../../extensibility/debugger/reference/idebugbinder3-gettypearguments.md) (méthode).  
   
-## <a name="see-also"></a>See Also  
+## <a name="see-also"></a>Voir aussi  
  [IDebugBinder3](../../../extensibility/debugger/reference/idebugbinder3.md)   
  [GetTypeArguments](../../../extensibility/debugger/reference/idebugbinder3-gettypearguments.md)
