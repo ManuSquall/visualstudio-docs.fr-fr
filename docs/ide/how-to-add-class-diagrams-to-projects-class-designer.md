@@ -37,7 +37,7 @@ ms.contentlocale: fr-fr
 ms.lasthandoff: 07/14/2017
 
 ---
-# <a name="how-to-add-class-diagrams-to-projects-class-designer"></a>How to: Add Class Diagrams to Projects (Class Designer)
+# <a name="how-to-add-class-diagrams-to-projects-class-designer"></a>Guide pratique pour ajouter des diagrammes de classes aux projets (Concepteur de classes)
 Pour concevoir, modifier et refactoriser des classes et d'autres types, ajoutez un diagramme de classes à votre projet Visual C# .NET, Visual Basic .NET ou C++. Pour visualiser différentes parties du code d'un projet, ajoutez plusieurs diagrammes de classes à ce dernier.  
   
  Vous ne pouvez pas créer de diagrammes de classes à partir de projets qui partagent du code dans plusieurs applications. Pour créer des diagrammes de classes UML, consultez [Créer des projets et des diagrammes de modélisation UML](../modeling/create-uml-modeling-projects-and-diagrams.md).  
