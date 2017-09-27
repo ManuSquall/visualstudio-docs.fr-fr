@@ -20,11 +20,11 @@ ms.translationtype: HT
 ms.sourcegitcommit: f23906933add1f4706d8786b2950fb3b5d2e6781
 ms.openlocfilehash: 5c8aaf24a1952847c593d5eb70f7c94208310174
 ms.contentlocale: fr-fr
-ms.lasthandoff: 08/14/2017
+ms.lasthandoff: 09/26/2017
 
 ---
 
-# <a name="how-to-define-settings-in-a-response-file"></a>Comment définir des paramètres dans un fichier réponse
+# <a name="how-to-define-settings-in-a-response-file"></a>Guide pratique pour définir des paramètres dans un fichier réponse
 Les administrateurs qui déploient Visual Studio peuvent spécifier un fichier réponse à l’aide du paramètre `--in`, comme dans l’exemple suivant :
 
 ```

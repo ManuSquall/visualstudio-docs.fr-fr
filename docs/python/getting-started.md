@@ -15,10 +15,10 @@ author: kraigb
 ms.author: kraigb
 manager: ghogen
 ms.translationtype: HT
-ms.sourcegitcommit: 6d25db4639f2c8391c1e32542701ea359f560178
-ms.openlocfilehash: 6dbf4f2bfabbfe5dc780eb4e973c6fae7ca6b1d9
+ms.sourcegitcommit: d0a5b44962b0cfbe549453b1760a38237de7e6ab
+ms.openlocfilehash: 420af3d78a514a7e6b6ded186c204ad8301c4c85
 ms.contentlocale: fr-fr
-ms.lasthandoff: 07/18/2017
+ms.lasthandoff: 09/26/2017
 
 ---
 
@@ -44,7 +44,7 @@ La prise en charge de Python dans Visual Studio comprend un certain nombre de [m
 1. Sélectionnez le modèle « Python Application » (Application Python), spécifiez un dossier pour le projet, puis cliquez sur **OK**. (Si vous souhaitez créer directement un référentiel local pour votre projet, vous devez également sélectionner l’option **Ajouter au contrôle de code source**).
 
     > [!Tip]
-    > Le modèle « From exiting Python Code » (À partir de la sortie du code Python) vous permet de créer rapidement un projet Visual Studio à partir d’un dossier qui contient déjà le code Python, sans avoir à créer un projet vide et à y importer du code existant.
+    > Le modèle « From Existing Python Code » (À partir du code Python existant) vous permet de créer rapidement un projet Visual Studio à partir d’un dossier qui contient déjà le code Python, sans avoir à créer un projet vide et à y importer du code existant.
 
 1. Après quelques instants, le projet s’ouvre dans la fenêtre Explorateur de solutions de Visual Studio. Vous pouvez ici parcourir les fichiers et les dossiers de votre projet, ainsi que gérer vos environnements.
 

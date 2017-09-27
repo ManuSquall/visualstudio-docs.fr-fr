@@ -33,7 +33,7 @@ ms.translationtype: MT
 ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
 ms.openlocfilehash: ef5f86cb3b41af6cc9e7432cdbfb7365471320b8
 ms.contentlocale: fr-fr
-ms.lasthandoff: 09/06/2017
+ms.lasthandoff: 09/26/2017
 
 ---
 # <a name="adding-a-tracking-property-to-a-domain-specific-language-definition"></a>Ajout d'une propriété de suivi à une définition de langage spécifique à un domaine
@@ -120,7 +120,7 @@ Cette procédure pas à pas montre comment ajouter une propriété de suivi à u
   
 3.  Pour le **ExampleElement** domaine de classe, ajoutez une propriété de domaine nommée `Namespace`.  
   
-     Dans le **propriétés** fenêtre pour la nouvelle propriété, définissez **est consultable** à **False**et la valeur **type** à **ni CustomStorage** .  
+     Dans le **propriétés** fenêtre pour la nouvelle propriété, définissez **est consultable** à **False**et la valeur **type** à **ni CustomStorage **.  
   
 4.  Pour le **ExampleElement** domaine de classe, ajoutez une propriété de domaine nommée `IsNamespaceTracking`.  
   
@@ -748,7 +748,7 @@ Cette procédure pas à pas montre comment ajouter une propriété de suivi à u
   
 4.  Faites glisser un **ExampleElement** élément à partir de la **boîte à outils** à la surface du diagramme.  
   
-5.  Dans le **propriétés** fenêtre de l’élément, sélectionnez le **élément Namespace** propriété et remplacez la valeur de **DefaultNamespace** à  **OtherNamespace**.  
+5.  Dans le **propriétés** fenêtre de l’élément, sélectionnez le **élément Namespace** propriété et remplacez la valeur de **DefaultNamespace** à ** OtherNamespace**.  
   
      Notez que la valeur de **élément Namespace** est maintenant affichée en gras.  
   
@@ -766,7 +766,7 @@ Cette procédure pas à pas montre comment ajouter une propriété de suivi à u
   
 9. Modification **par défaut de Namespace** pour le diagramme à partir de **DefaultNamespace** à **NewNamespace**.  
   
-     Le **Namespace** des pistes premier élément la **par défaut de Namespace** propriété, alors que le **Namespace** du deuxième élément conserve sa valeur utilisateurmisàjour **OtherNamespace**.  
+     Le **Namespace** des pistes premier élément la **par défaut de Namespace** propriété, alors que le **Namespace** du deuxième élément conserve sa valeur utilisateurmisàjour** OtherNamespace**.  
   
 10. Enregistrez la solution, puis fermez la build expérimentale.  
   

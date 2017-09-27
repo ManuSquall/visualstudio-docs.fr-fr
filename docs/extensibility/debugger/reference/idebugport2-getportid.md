@@ -1,5 +1,5 @@
 ---
-title: IDebugPort2::GetPortId | Microsoft Docs
+title: IDebugPort2::GetPortId | Documents Microsoft
 ms.custom: 
 ms.date: 11/04/2016
 ms.reviewer: 
@@ -34,13 +34,13 @@ ms.translationtype: MT
 ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
 ms.openlocfilehash: b6195c0bcafc0e02881ef7d8b727cb91c4461265
 ms.contentlocale: fr-fr
-ms.lasthandoff: 08/28/2017
+ms.lasthandoff: 09/26/2017
 
 ---
 # <a name="idebugport2getportid"></a>IDebugPort2::GetPortId
-Gets the port identifier.  
+Obtient l’identificateur du port.  
   
-## <a name="syntax"></a>Syntax  
+## <a name="syntax"></a>Syntaxe  
   
 ```cpp  
 HRESULT GetPortId(   
@@ -54,12 +54,12 @@ int GetPortId(
 );  
 ```  
   
-#### <a name="parameters"></a>Parameters  
+#### <a name="parameters"></a>Paramètres  
  `pguidPort`  
- [out] Returns the GUID that identifies the port.  
+ [out] Retourne le GUID qui identifie le port.  
   
-## <a name="return-value"></a>Return Value  
- If successful, returns `S_OK`; otherwise, returns an error code.  
+## <a name="return-value"></a>Valeur de retour  
+ En cas de réussite, retourne `S_OK`; sinon, retourne un code d’erreur.  
   
-## <a name="see-also"></a>See Also  
+## <a name="see-also"></a>Voir aussi  
  [IDebugPort2](../../../extensibility/debugger/reference/idebugport2.md)

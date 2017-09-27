@@ -34,11 +34,11 @@ ms.translationtype: HT
 ms.sourcegitcommit: 8a544bd1e1242bb6fabe00f7842ac33ed9d9d444
 ms.openlocfilehash: a48867456cd6ac60c5fc6ca53fcadbc4ad787711
 ms.contentlocale: fr-fr
-ms.lasthandoff: 08/14/2017
+ms.lasthandoff: 09/26/2017
 
 ---
-# <a name="msbuild-best-practices"></a>Bonnes pratiques pour MSBuild
-Nous vous recommandons les bonnes pratiques suivantes pour l'écriture de scripts MSBuild :  
+# <a name="msbuild-best-practices"></a>Meilleures pratiques pour MSBuild
+Nous vous recommandons les meilleures pratiques suivantes pour l'écriture de scripts MSBuild :  
   
 -   Les valeurs de propriété par défaut sont mieux gérées en utilisant l'attribut `Condition` plutôt qu'en déclarant une propriété dont la valeur par défaut peut être substituée sur la ligne de commande. Par exemple, utilisez  
   
