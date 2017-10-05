@@ -19,7 +19,7 @@ ms.translationtype: HT
 ms.sourcegitcommit: f23906933add1f4706d8786b2950fb3b5d2e6781
 ms.openlocfilehash: 7267b279a94094eb58fe51edd1ad36cd8967c711
 ms.contentlocale: fr-fr
-ms.lasthandoff: 08/14/2017
+ms.lasthandoff: 09/26/2017
 
 ---
 # <a name="control-updates-to-network-based-visual-studio-deployments"></a>Contrôler les mises à jour applicables aux déploiements de Visual Studio à partir du réseau

@@ -3,7 +3,6 @@ title: "Guide de l’administrateur Visual Studio │ Microsoft Docs"
 description: "En savoir plus sur le déploiement de Visual Studio dans un environnement d’entreprise."
 ms.custom: 
 ms.date: 05/15/2017
-ms.prod: visual-studio-dev15
 ms.reviewer: 
 ms.suite: 
 ms.technology:

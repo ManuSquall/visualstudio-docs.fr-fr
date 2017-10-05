@@ -35,7 +35,7 @@ ms.translationtype: MT
 ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
 ms.openlocfilehash: 2b4e7fa667bfd5c0956233588210bc87e55d02bd
 ms.contentlocale: fr-fr
-ms.lasthandoff: 09/19/2017
+ms.lasthandoff: 09/26/2017
 
 ---
 # <a name="idebugboundbreakpoint2setcondition"></a>IDebugBoundBreakpoint2::SetCondition

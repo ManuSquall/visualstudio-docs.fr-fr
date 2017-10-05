@@ -34,7 +34,7 @@ ms.translationtype: MT
 ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
 ms.openlocfilehash: ed511fa58ca0d98d38ed2ab1ed3bc24bed642170
 ms.contentlocale: fr-fr
-ms.lasthandoff: 09/06/2017
+ms.lasthandoff: 09/26/2017
 
 ---
 # <a name="adding-user-control-to-the-start-page"></a>Ajout du contrôle utilisateur à la Page de démarrage
@@ -190,7 +190,7 @@ Cette procédure pas à pas montre comment ajouter une référence DLL à une Pa
   
 ## <a name="testing-a-manually-created-custom-start-page"></a>Test d’une Page de démarrage personnalisée créée manuellement  
   
-1.  Copie de votre fichier XAML et les fichiers texte ou balisage des fichiers, à la **%USERPROFILE%\My Documents\Visual Studio 2015\StartPages\\**  dossier.  
+1.  Copie de votre fichier XAML et les fichiers texte ou balisage des fichiers, à la **%USERPROFILE%\My Documents\Visual Studio 2015\StartPages\\ ** dossier.  
   
 2.  Si votre page de démarrage fait référence à des contrôles ou les types dans les assemblys qui ne sont pas installés par Visual Studio, copiez les assemblys et les coller dans *dossier d’installation de Visual Studio***\Common7\IDE\ PrivateAssemblies\\**.  
   

@@ -34,7 +34,7 @@ ms.translationtype: MT
 ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
 ms.openlocfilehash: 5e0162d17fc81b1304213d0259863f35523a833f
 ms.contentlocale: fr-fr
-ms.lasthandoff: 09/19/2017
+ms.lasthandoff: 09/26/2017
 
 ---
 # <a name="idebugprogramnodeattach2onattach"></a>IDebugProgramNodeAttach2::OnAttach

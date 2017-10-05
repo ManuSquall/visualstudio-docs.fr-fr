@@ -2,7 +2,6 @@
 title: R Markdown avec les Outils R pour Visual Studio | Microsoft Docs
 ms.custom: 
 ms.date: 6/29/2017
-ms.prod: visual-studio-dev15
 ms.reviewer: 
 ms.suite: 
 ms.technology:

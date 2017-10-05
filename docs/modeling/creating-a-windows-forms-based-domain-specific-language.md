@@ -15,7 +15,7 @@ ms.translationtype: MT
 ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
 ms.openlocfilehash: 17652a19df04d016db54429ab7bc7d407768df87
 ms.contentlocale: fr-fr
-ms.lasthandoff: 09/06/2017
+ms.lasthandoff: 09/26/2017
 
 ---
 # <a name="creating-a-windows-forms-based-domain-specific-language"></a>Création d'un langage spécifique à un domaine basé sur Windows Forms

@@ -15,8 +15,8 @@ translation.priority.ht:
 - zh-tw
 ms.translationtype: HT
 ms.sourcegitcommit: 5db97d19b1b823388a465bba15d057b30ff0b3ce
-ms.openlocfilehash: 893ce4d5b8441ddadeafd61579d05f51d96b5eff
+ms.openlocfilehash: fa8443ce0c6ac3c1ccaaeb17ef670786d2e6bbc6
 ms.contentlocale: fr-fr
 
 ---
-ClickOnce
+Windows Vista

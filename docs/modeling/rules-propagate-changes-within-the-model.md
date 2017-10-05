@@ -32,7 +32,7 @@ ms.translationtype: MT
 ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
 ms.openlocfilehash: cbdf006fecb00139eda95cf3e9f2726430888ce7
 ms.contentlocale: fr-fr
-ms.lasthandoff: 09/19/2017
+ms.lasthandoff: 09/26/2017
 
 ---
 # <a name="rules-propagate-changes-within-the-model"></a>Propagation de modifications dans le modèle par des règles

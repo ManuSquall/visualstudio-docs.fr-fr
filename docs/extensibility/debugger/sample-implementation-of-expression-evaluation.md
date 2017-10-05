@@ -34,7 +34,7 @@ ms.translationtype: MT
 ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
 ms.openlocfilehash: ca872421d20d1d1a85cb2c5db621de28adee356d
 ms.contentlocale: fr-fr
-ms.lasthandoff: 09/19/2017
+ms.lasthandoff: 09/26/2017
 
 ---
 # <a name="sample-implementation-of-expression-evaluation"></a>Exemple d’implémentation de l’évaluation d’Expression

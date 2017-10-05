@@ -15,7 +15,7 @@ ms.translationtype: MT
 ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
 ms.openlocfilehash: ae3a0d952b8ff88f2df4d297509d01d1a6731d56
 ms.contentlocale: fr-fr
-ms.lasthandoff: 09/06/2017
+ms.lasthandoff: 09/26/2017
 
 ---
 # <a name="updating-shapes-and-connectors-to-reflect-the-model"></a>Mise à jour des formes et des connecteurs pour refléter le modèle

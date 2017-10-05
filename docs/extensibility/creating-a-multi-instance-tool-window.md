@@ -33,7 +33,7 @@ ms.translationtype: MT
 ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
 ms.openlocfilehash: bed04fe13e7232b2c227072ab91e6a56db0c6963
 ms.contentlocale: fr-fr
-ms.lasthandoff: 09/19/2017
+ms.lasthandoff: 09/26/2017
 
 ---
 # <a name="creating-a-multi-instance-tool-window"></a>Création d’une fenêtre d’outil à instances multiples
