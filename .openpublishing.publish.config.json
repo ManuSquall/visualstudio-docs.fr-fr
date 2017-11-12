@@ -16,6 +16,21 @@
       "template_folder": "_themes"
     },
     {
+      "docset_name": "mac",
+      "build_source_folder": "mac",
+      "build_output_subfolder": "mac",
+      "locale": "fr-fr",
+      "monikers": [],
+      "open_to_public_contributors": false,
+      "type_mapping": {
+        "Conceptual": "Content",
+        "ManagedReference": "Content",
+        "RestApi": "Content"
+      },
+      "build_entry_point": "docs",
+      "template_folder": "_themes"
+    },
+    {
       "docset_name": "scripting-docs",
       "build_source_folder": "scripting-docs",
       "build_output_subfolder": "scripting-docs",
@@ -31,9 +46,24 @@
       "template_folder": "_themes"
     },
     {
-      "docset_name": "mac",
-      "build_source_folder": "mac",
-      "build_output_subfolder": "mac",
+      "docset_name": "subscriptions",
+      "build_source_folder": "subscriptions",
+      "build_output_subfolder": "subscriptions",
+      "locale": "fr-fr",
+      "monikers": [],
+      "open_to_public_contributors": false,
+      "type_mapping": {
+        "Conceptual": "Content",
+        "ManagedReference": "Content",
+        "RestApi": "Content"
+      },
+      "build_entry_point": "docs",
+      "template_folder": "_themes"
+    },
+    {
+      "docset_name": "vsdata",
+      "build_source_folder": "vsdata",
+      "build_output_subfolder": "vsdata",
       "locale": "fr-fr",
       "monikers": [],
       "open_to_public_contributors": false,
@@ -46,11 +76,10 @@
       "template_folder": "_themes"
     }
   ],
-  "notification_subscribers": [
-    "CnE_Content_Brno@moravia.com",
-    "CnE_UE_Bugfixing_ENG@moravia.com"
+  "notification_subscribers": [],
+  "branches_to_filter": [
+    "live"
   ],
-  "branches_to_filter": ["live"],
   "git_repository_url_open_to_public_contributors": "https://github.com/MicrosoftDocs/visualstudio-docs.fr-fr",
   "git_repository_branch_open_to_public_contributors": "live",
   "continue_with_document_error": true,
@@ -65,13 +94,9 @@
       "branch_mapping": {}
     },
     {
-      "path_to_root": "_repo.en-us",
-      "url": "https://github.com/MicrosoftDocs/visualstudio-docs-pr",
-      "branch": "live",
-      "branch_mapping": {
-        "live": "live",
-        "master": "master"
-      }
+      "path_to_root": "_themes.pdf",
+      "url": "https://github.com/Microsoft/templates.docs.msft.pdf",
+      "branch": "master"
     },
     {
       "path_to_root": "dotnet-xref",
@@ -81,10 +106,24 @@
         "live": "live",
         "master": "master"
       }
+    },
+    {
+      "path_to_root": "_repo.en-us",
+      "url": "https://github.com/MicrosoftDocs/visualstudio-docs-pr",
+      "branch": "live",
+      "branch_mapping": {
+        "live": "live",
+        "master": "master"
+      }
     }
   ],
   "branch_target_mapping": {},
   "need_generate_pdf_url_template": false,
+  "Targets": {
+    "Pdf": {
+      "template_folder": "_themes.pdf"
+    }
+  },
   "need_generate_pdf": false,
   "need_generate_intellisense": false
 }
