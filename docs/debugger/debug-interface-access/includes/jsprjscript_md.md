@@ -13,10 +13,10 @@ translation.priority.ht:
 - tr-tr
 - zh-cn
 - zh-tw
-ms.openlocfilehash: 2728faddd71485f3636eeefb6b86bb1f6be90fdd
+ms.openlocfilehash: 48fb0065961d358725c6862910111f035e2fc527
 ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 10/27/2017
 ---
-Kit de développement logiciel Visual Studio
+JScript
