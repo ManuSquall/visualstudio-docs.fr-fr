@@ -13,10 +13,10 @@ translation.priority.ht:
 - tr-tr
 - zh-cn
 - zh-tw
-ms.openlocfilehash: 5bf44eef144b58bf64b073b2ae3c10d92a1d6028
+ms.openlocfilehash: 3eeb7999b5e2933f8fbe7d738ea4292da75fcbe2
 ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 10/27/2017
 ---
-SQL Server
+Visual Studio Application Lifecycle Management

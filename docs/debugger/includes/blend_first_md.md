@@ -13,10 +13,10 @@ translation.priority.ht:
 - tr-tr
 - zh-cn
 - zh-tw
-ms.openlocfilehash: 5bf44eef144b58bf64b073b2ae3c10d92a1d6028
+ms.openlocfilehash: 6fe4be22c9424d22b6dd42c92c3df194c23f91c9
 ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 10/27/2017
 ---
-SQL Server
+Blend pour Visual Studio
