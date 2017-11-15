@@ -1,59 +1,58 @@
 ---
-title: "Mode Appelant/Appel&#233; - donn&#233;es d&#39;&#233;chantillonnage de m&#233;moire .NET du profileur | Microsoft Docs"
-ms.custom: ""
-ms.date: "12/05/2016"
-ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-debug"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-helpviewer_keywords: 
-  - "mode Appelant/Appelé"
+title: "Vue Appelant/Appelé - Données d’échantillonnage de mémoire .NET | Microsoft Docs"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-debug
+ms.tgt_pltfrm: 
+ms.topic: article
+helpviewer_keywords: Caller/Callee view
 ms.assetid: 36f5b4de-5686-4f40-9e72-f4aee27d833c
-caps.latest.revision: 12
-caps.handback.revision: 12
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
+caps.latest.revision: "12"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: a7e3d7541075642d3aaa417874aa51f7f3f7faa7
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: HT
+ms.contentlocale: fr-FR
+ms.lasthandoff: 10/31/2017
 ---
-# Mode Appelant/Appel&#233; - donn&#233;es d&#39;&#233;chantillonnage de m&#233;moire .NET du profileur
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
-
-Le mode Appelant\/Appelé affiche les informations de profilage de la mémoire .NET d'une fonction sélectionnée et ses fonctions parents et enfants.  Le mode Appelant\/Appelé contient trois grilles.  
+# <a name="callercallee-view---net-memory-sampling-data"></a>Vue Appelant/Appelé - Données d’échantillonnage de mémoire .NET
+La vue Appelant/Appelé affiche des données de profilage de mémoire .NET pour la fonction sélectionnée, ainsi que pour ses fonctions parents et enfants. La vue Appelant/Appelé comprend trois grilles.  
   
- La **Fonction active** s'affiche dans la grille centrale et contient les informations de profilage de mémoire sur la fonction sélectionnée.  Les valeurs comprennent tous les appels échantillonnés à la fonction.  
+ La grille centrale intitulée **Fonction active** contient les informations de profilage de mémoire associées à la fonction sélectionnée. Ces valeurs incluent tous les appels échantillonnés émis vers la fonction.  
   
- **Fonctions qui ont appelé la fonction active** est affiché dans la grille supérieure et indique la quantité de valeur de la fonction sélectionnée \(active\) générée par les appels de la fonction d'appelant \(parent\).  
+ La grille supérieure intitulée **Fonctions qui ont appelé la fonction active** indique la valeur de la fonction sélectionnée (active) qui a été générée par les appels de la fonction d’appelant (parent).  
   
- **Fonctions qui ont été appelées par la fonction active** est affiché dans la grille inférieure et indique les données de profilage de mémoire des fonctions d'appelé \(enfant\) de la fonction sélectionnée lorsque la fonction enfant a été appelée par la fonction active.  
+ La grille inférieure intitulée **Fonctions qui ont été appelées par la fonction active** contient les données de profilage de mémoire pour les fonctions d’appelé (enfants) de la fonction sélectionnée lorsque la fonction enfant a été appelée par la fonction active.  
   
- Double\-cliquez sur une ligne de fonction appelant ou appelé pour transformer cette ligne en fonction active.  
+ Double-cliquez sur la ligne d’une fonction d’appelant ou d’appelé pour en faire la fonction active.  
   
 |Colonne|Description|  
-|-------------|-----------------|  
-|**ID de processus**|ID du processus \(PID\) de l'exécution du profilage.|  
+|------------|-----------------|  
+|**ID du processus**|ID du processus (PID) de l'exécution du profilage.|  
 |**Nom du processus**|Nom du processus.|  
-|**Nom de module**|Nom du module qui contient la fonction.|  
-|**Chemin de module**|Chemin d'accès du module qui contient la fonction.|  
-|**Source File**|Fichier source qui contient la définition de cette fonction.|  
+|**Nom du module**|Nom du module qui contient la fonction.|  
+|**Chemin de module**|Chemin d’accès du module qui contient la fonction.|  
+|**Fichier source**|Fichier source contenant la définition pour cette fonction.|  
 |**Nom de la fonction**|Nom complet de la fonction.|  
 |**Numéro de ligne de fonction**|Numéro de ligne du début de cette fonction dans le fichier source.|  
 |**Adresse de la fonction**|Adresse de la fonction.|  
-|**Type**|Contexte de la fonction :<br /><br /> **0** \- la fonction active<br /><br /> **1** \- une fonction qui appelle la fonction active<br /><br /> **2** \- une fonction qui est appelée par la fonction active<br /><br /> Uniquement dans les rapports en ligne de commande de [VSPerfReport](../profiling/vsperfreport.md).|  
-|**Niveau**|Profondeur de la fonction dans l'arborescence des appels.  Uniquement dans les rapports en ligne de commande de [VSPerfReport](../profiling/vsperfreport.md).|  
-|**Allocations inclusives**|-   Pour la fonction active, nombre d'objets alloués par la fonction dans l'exécution du profilage.  Ce nombre inclut les objets créés dans les fonctions d'appelé.<br />-   Pour une fonction d'appelant, nombre d'allocations inclusives de la fonction active générées par les appels de cette fonction.<br />-   Pour une fonction d'appelé, nombre d'objets alloués par les instances de cette fonction appelés par la fonction active.  Le nombre inclut les allocations faites par les fonctions appelées par la fonction d'appelé.|  
-|**Allocations inclusives %**|Pourcentage de tous les objets créés dans l'exécution du profilage qui correspondaient à des allocations inclusives de cette fonction.|  
-|**Allocations exclusives**|-   Pour la fonction active, nombre d'objets créés lorsque la fonction exécutait du code du corps de la fonction, c'est\-à\-dire lorsque la fonction se situait en haut de la pile des appels.  Ce nombre ne comprend pas les objets créés dans les fonctions appelées par la fonction.<br />-   Pour une fonction d'appelant, nombre d'allocations exclusives de la fonction active générées par les appels de cette fonction.<br />-   Pour une fonction d'appelé, nombre d'objets créés par les instances de cette fonction appelés par la fonction active.  Le nombre ne comprend pas les objets créés par les fonctions appelées par la fonction d'appelé.|  
-|**Allocations exclusives %**|Pourcentage de tous les objets créés dans l'exécution du profilage qui correspondaient à des allocations inclusives de cette fonction.|  
-|**Octets inclusifs**|-   Pour la fonction actuelle, nombre d'octets de mémoire alloués par la fonction dans l'exécution du profilage.  Le nombre comprend la mémoire allouée dans les fonctions appelées par cette fonction.<br />-   Pour une fonction d'appelant, nombre d'octets inclusifs de la fonction active générés par les appels via la fonction d'appelant.<br />-   Pour une fonction d'appelé, nombre d'octets alloués par les instances de cette fonction qui ont été générées par des appels de la fonction active.  Ce nombre comprend les octets alloués par les fonctions appelées par la fonction d'appelé.|  
-|**Octets inclusifs %**|Pourcentage de tous les octets de mémoire alloués dans l'exécution du profilage qui correspondaient à des allocations inclusives de cette fonction.|  
-|**Octets exclusifs**|-   Pour la fonction actuelle, nombre d'octets de mémoire alloués par la fonction dans l'exécution du profilage.  Ce nombre ne comprend pas la mémoire qui a été allouée par les fonctions appelées par la fonction active.<br />-   Pour une fonction d'appelant, nombre d'octets exclusifs de la fonction active générés par les appels de la fonction d'appelant.<br />-   Pour une fonction d'appelé, nombre d'octets alloués par les instances de la fonction qui ont été générées par des appels de la fonction active.  Ce nombre ne comprend pas les octets alloués par les fonctions appelées par la fonction d'appelé.|  
-|**Octets exclusifs %**|Pourcentage de tous les octets de mémoire alloués dans l'exécution du profilage qui correspondaient à des allocations exclusives de cette fonction.|  
+|**Type**|Contexte de la fonction :<br /><br /> **0** : la fonction active.<br /><br /> **1** : fonction qui appelle la fonction active<br /><br /> **2** : fonction qui est appelée par la fonction active<br /><br /> Uniquement dans les rapports en ligne de commande [VSPerfReport](../profiling/vsperfreport.md).|  
+|**Niveau**|Profondeur de la fonction dans l’arborescence des appels. Uniquement dans les rapports en ligne de commande [VSPerfReport](../profiling/vsperfreport.md).|  
+|**Allocations inclusives**|- Pour la fonction active, nombre d’objets alloués par la fonction dans l’exécution du profilage. Ce nombre comprend les objets créés dans les fonctions d’appelé.<br />- Pour une fonction d’appelant, nombre d’allocations inclusives de la fonction active qui ont été générées par les appels émis à partir de cette fonction.<br />- Pour une fonction d’appelé, nombre d’objets alloués par les instances de cette fonction qui ont été appelées par la fonction active. Ce nombre comprend les allocations effectuées par les fonctions qui ont été appelées par la fonction d’appelé.|  
+|**% d’allocations inclusives**|Pourcentage de tous les objets créés lors de l’exécution du profilage qui étaient des allocations inclusives de cette fonction.|  
+|**Allocations exclusives**|- Pour la fonction active, nombre d’objets créés lorsque la fonction exécutait le code du corps de la fonction (autrement dit, lorsque la fonction se trouvait en haut de la pile des appels). Ce nombre n’inclut pas les objets créés dans les fonctions appelées par cette fonction.<br />- Pour une fonction d’appelant, nombre d’allocations exclusives de la fonction active qui ont été générées par les appels émis à partir de cette fonction.<br />- Pour une fonction d’appelé, nombre d’objets créés par les instances de cette fonction qui ont été appelées par la fonction active. Ce nombre n’inclut pas les objets créés par les fonctions appelées par la fonction d’appelé.|  
+|**% d’allocations exclusives**|Pourcentage de tous les objets créés lors de l’exécution du profilage qui étaient des allocations inclusives de cette fonction.|  
+|**Octets inclusifs**|- Pour la fonction active, nombre d’octets de mémoire alloués par la fonction dans l’exécution du profilage. Ce nombre comprend la mémoire allouée dans les fonctions qui ont été appelées par cette fonction.<br />- Pour une fonction d’appelant, nombre d’octets inclusifs de la fonction active qui ont été générés par les appels émis par la fonction d’appelant.<br />- Pour une fonction d’appelé, nombre d’octets alloués par les instances de cette fonction qui ont été générées par les appels émis par la fonction active. Ce nombre comprend les octets alloués par les fonctions qui ont été appelées par la fonction d’appelé.|  
+|**% d’octets inclusifs**|Pourcentage de tous les octets de mémoire alloués lors de l’exécution du profilage qui étaient des allocations inclusives de cette fonction.|  
+|**Octets exclusifs**|- Pour la fonction active, nombre d’octets de mémoire alloués par la fonction dans l’exécution du profilage. Ce nombre n’inclut pas la mémoire allouée par les fonctions qui ont été appelées par la fonction active.<br />- Pour une fonction d’appelant, nombre d’octets exclusifs de la fonction active qui ont été générés par les appels émis par la fonction d’appelant.<br />- Pour une fonction d’appelé, nombre d’octets alloués par les instances de cette fonction qui ont été générées par les appels émis par la fonction active. Ce nombre ne comprend pas les octets alloués par les fonctions qui ont été appelées par la fonction d’appelé.|  
+|**% d’octets exclusifs**|Pourcentage de tous les octets de mémoire alloués lors de l’exécution du profilage qui étaient des allocations exclusives de cette fonction.|  
   
-## Voir aussi  
- [Comment : personnaliser les colonnes de la vue de rapport](../profiling/how-to-customize-report-view-columns.md)   
- [Mode Appelant\/Appelé \- instrumentation](../profiling/caller-callee-view-net-memory-instrumentation-data.md)   
- [Mode Appelant\/Appelé](../profiling/caller-callee-view-sampling-data.md)   
- [Mode Appelant\/Appelé](../profiling/caller-callee-view-instrumentation-data.md)
+## <a name="see-also"></a>Voir aussi  
+ [Guide pratique pour personnaliser les colonnes de la vue de rapport](../profiling/how-to-customize-report-view-columns.md)   
+ [Vue Appelant/Appelé - Données d’instrumentation de la mémoire .NET](../profiling/caller-callee-view-net-memory-instrumentation-data.md)   
+ [Vue Appelant/Appelé - Données d’échantillonnage](../profiling/caller-callee-view-sampling-data.md)   
+ [Vue Appelant/Appelé - Données d’instrumentation](../profiling/caller-callee-view-instrumentation-data.md)

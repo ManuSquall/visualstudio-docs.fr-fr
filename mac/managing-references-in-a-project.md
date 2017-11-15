@@ -5,21 +5,19 @@ ms.author: amburns
 ms.date: 04/14/2017
 ms.topic: article
 ms.assetid: 4AD51385-B0A8-4BA7-B2D4-BF2BD167A142
-ms.translationtype: HT
-ms.sourcegitcommit: e2b7ff9126e1cc38ac2e58d6be339b656a024e7f
 ms.openlocfilehash: 30f6c99c6ac827b7da94fd228a7034e9ce0b0fac
-ms.contentlocale: fr-fr
-ms.lasthandoff: 08/11/2017
-
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.translationtype: HT
+ms.contentlocale: fr-FR
+ms.lasthandoff: 10/27/2017
 ---
-
 # <a name="managing-references-in-a-project"></a>Gestion des références dans un projet
 
 Visual Studio pour Mac fournit trois moyens d’ajouter des références supplémentaires à votre projet :
 
 ![Références de projets](media/projects-and-solutions-image10.png)
 
-Ces références sont :
+Ces équivalents sont :
 
 * Références
 * NuGets (ajouté via le dossier Packages)
@@ -44,4 +42,3 @@ NuGet est le gestionnaire de packages le plus répandu pour le développement .N
 Pour cela, cliquez avec le bouton droit sur le dossier **Package** dans le panneau Solution et sélectionnez Ajouter des Packages.
 
 Vous trouverez plus d’informations sur l’utilisation d’un package NuGet dans la procédure pas à pas [Inclusion d’un package NuGet dans votre projet](~/nuget-walkthrough.md).
-

@@ -5,8 +5,7 @@ ms.date: 01/18/2017
 ms.prod: windows-client-threshold
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- devlang-javascript
+ms.technology: devlang-javascript
 ms.tgt_pltfrm: 
 ms.topic: article
 dev_langs:
@@ -14,16 +13,15 @@ dev_langs:
 - TypeScript
 - DHTML
 ms.assetid: 68ef5b2f-0349-492b-b557-73ff2a2f90cf
-caps.latest.revision: 14
+caps.latest.revision: "14"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.translationtype: HT
-ms.sourcegitcommit: 9713f09b7379b14b9362e3853a910948935c501e
 ms.openlocfilehash: 85c27969609a38b87b15c727e9c8aef89ee77032
-ms.contentlocale: fr-fr
-ms.lasthandoff: 08/11/2017
-
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.translationtype: HT
+ms.contentlocale: fr-FR
+ms.lasthandoff: 10/27/2017
 ---
 # <a name="iterators-and-generators-javascript"></a>Itérateurs et générateurs (JavaScript)
 Un itérateur est un objet qui sert à parcourir un objet conteneur telle qu'une liste. En JavaScript, un objet itérateur n'est pas un objet intégré distinct, mais un objet qui implémente une méthode `next` pour accéder à l'élément suivant dans l'objet conteneur.  
@@ -166,4 +164,3 @@ console.log(si3.next(100).value);
 ```  
   
  D'autres générateurs avancés peuvent appeler la méthode `throw` du générateur. L'erreur semble être levée au point où le générateur est suspendu (avant l'instruction `yield` suivante).
-

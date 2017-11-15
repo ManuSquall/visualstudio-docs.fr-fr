@@ -4,38 +4,22 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-sdk
+ms.technology: vs-ide-sdk
 ms.tgt_pltfrm: 
 ms.topic: article
 helpviewer_keywords:
 - MSBuild, separating items with semicolons
 - MSBuild, formatting item collections
 ms.assetid: 3cae844c-7c6d-4144-82dc-efad10ba458f
-caps.latest.revision: 12
+caps.latest.revision: "12"
 author: kempb
 ms.author: kempb
 manager: ghogen
-translation.priority.ht:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
+ms.openlocfilehash: be7beec070d58f265912f61d37a2d213e50ea0c7
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
 ms.translationtype: HT
-ms.sourcegitcommit: 38c6099f912424d21df2aeea4cfdd0401ba57465
-ms.openlocfilehash: 9366ae0f599f7ae37de40fb1ae556c04f6e73292
-ms.contentlocale: fr-fr
-ms.lasthandoff: 07/14/2017
-
+ms.contentlocale: fr-FR
+ms.lasthandoff: 10/31/2017
 ---
 # <a name="how-to-display-an-item-list-separated-with-commas"></a>Comment : afficher une liste d'éléments séparés par des virgules
 Lorsque vous utilisez des listes d’éléments dans [!INCLUDE[vstecmsbuildengine](../msbuild/includes/vstecmsbuildengine_md.md)] ([!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)]), il est parfois utile d’afficher le contenu de ces listes de manière à faciliter leur lecture. Vous pouvez également avoir une tâche qui accepte une liste d’éléments séparés par une chaîne de séparation particulière. Dans ces deux cas, vous pouvez spécifier une chaîne de séparation pour la liste d’éléments.  

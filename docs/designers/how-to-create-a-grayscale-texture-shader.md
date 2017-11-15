@@ -1,57 +1,58 @@
 ---
-title: "Comment&#160;: cr&#233;er un nuanceur de texture avec nuances de gris | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-general"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+title: "Comment : créer un nuanceur de texture avec nuances de gris | Microsoft Docs"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-designers
+ms.tgt_pltfrm: 
+ms.topic: article
 ms.assetid: 79181d81-44af-445e-9a18-03483dd70260
-caps.latest.revision: 18
-author: "BrianPeek"
-ms.author: "brpeek"
-manager: "ghogen"
-caps.handback.revision: 18
+caps.latest.revision: "18"
+author: gewarren
+ms.author: gewarren
+manager: ghogen
+ms.openlocfilehash: 337bf9a33f781046f0713dbb52a72412229dcd17
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: HT
+ms.contentlocale: fr-FR
+ms.lasthandoff: 10/31/2017
 ---
-# Comment&#160;: cr&#233;er un nuanceur de texture avec nuances de gris
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
-
-Ce document montre comment utiliser le concepteur Shader et le langage DGSL \(Directed Graph Shader Language\) pour créer un nuanceur avec une texture avec nuances de gris.  Ce nuanceur modifie la valeur de couleur RVB de l'exemple de texture, puis l'utilise avec la valeur alpha non modifiée pour définir la couleur finale.  
+# <a name="how-to-create-a-grayscale-texture-shader"></a>Comment : créer un nuanceur de texture avec nuances de gris
+Ce document indique comment utiliser le concepteur de nuanceur et DGSL (Directed Graph Shader Language) pour créer un nuanceur de texture avec nuances de gris. Ce nuanceur modifie la valeur de couleur RVB de l’échantillon de texture, puis l’utilise avec la valeur alpha non modifiée pour définir la couleur finale.  
   
-## Création d'un shader de texture de niveaux de gris  
- Vous pouvez implémenter un nuanceur de texture en nuances de gris en modifiant la valeur de couleur d'un exemple de texture avant de l'écrire dans la couleur finale de sortie.  
+## <a name="creating-a-grayscale-texture-shader"></a>Création d’un nuanceur de texture avec nuances de gris  
+ Vous pouvez implémenter un nuanceur de texture avec nuances de gris en modifiant la valeur de couleur d’un échantillon de texture avant de l’écrire dans la couleur de sortie finale.  
   
- Avant de commencer, assurez\-vous que la fenêtre **Propriétés** et que la **Boîte à outils** sont affichées.  
+ Avant de commencer, assurez-vous que la fenêtre **Propriétés** et la **Boîte à outils** sont affichées.  
   
-#### Pour créer un shader de texture de niveaux de gris  
+#### <a name="to-create-a-grayscale-texture-shader"></a>Pour créer un nuanceur de texture avec nuances de gris  
   
-1.  Créez un shader de texture de base, comme décrit dans [Procédure : créer un nuanceur de texture de base](../designers/how-to-create-a-basic-texture-shader.md).  
+1.  Créez un nuanceur de texture de base, en suivant la description de l’article [Comment : créer un nuanceur de texture de base](../designers/how-to-create-a-basic-texture-shader.md).  
   
-2.  Déconnectez le terminal **RVB** du nœud **Échantillon de texture** du terminal **RVB** du nœud **Couleur finale**.  En mode **Sélectionner**, choisissez le terminal **RVB** du nœud **Échantillon de texture**, puis choisissez **Rompre les liaisons**.  Le nœud ajouté à l'étape suivante bénéficie ainsi d'un espace supplémentaire.  
+2.  Déconnectez le terminal **RVB** du nœud **Échantillon de texture** à partir du terminal **RVB** du nœud **Couleur finale**. En mode **Sélection**, choisissez le terminal **RVB** du nœud **Échantillon de texture**, puis **Rompre les liaisons**. Le nœud ajouté à l'étape suivante bénéficie ainsi d'un espace supplémentaire.  
   
-3.  Ajoutez un nœud **Désaturer** au graphique.  Dans **Boîte à outils**, sous **Filtres**, sélectionnez **Desaturer** et faites glisser cette option sur l'aire de conception.  
+3.  Ajoutez un nœud **Désaturer** au graphique. Dans la **Boîte à outils**, sous **Filtres**, sélectionnez **Désaturer** et déplacez-le vers l’aire de conception.  
   
-4.  Calculer la valeur de nuances de gris en utilisant le nœud **Désaturer**.  En mode **Selectionner**, déplacez le terminal **RVB** du nœud **Echantillon de texture** vers le terminal **RVB** du nœud **Desaturer**.  
+4.  Calculez la valeur de nuances de gris à l’aide du nœud **Désaturer**. En mode **Sélection**, déplacez le terminal **RVB** du nœud **Échantillon de texture** vers le terminal **RVB** du nœud **Désaturer**.  
   
     > [!NOTE]
-    >  Par défaut, le noeud**Désaturer** desaturate entièrement la couleur d'entrée, et applique les niveaux de luminance standard pour la conversion en nuances de gris.  Vous pouvez modifier la façon dont le nœud **Désaturer** fonctionne en modifiant la valeur de la propriété **Luminance**, ou en ne désaturant que partiellement la couleur d'entrée.  Pour désaturer partiellement la couleur d'entrée, fournissez une valeur scalaire dans la plage de \[0,1\) au terminal **Pourcentage** du nœud **Désaturer**.  
+    >  Par défaut, le nœud **Désaturer** désature entièrement la couleur d’entrée et utilise les pondérations de luminance standard pour la conversion des nuances de gris. Vous pouvez modifier le comportement du nœud **Désaturer** en changeant la valeur de la propriété **Luminance** ou en ne désaturant que partiellement la couleur d’entrée. Pour désaturer partiellement la couleur d’entrée, indiquez une valeur scalaire comprise dans la plage [0,1] pour le terminal **Pour cent** du nœud **Désaturer**.  
   
-5.  Connectez la valeur de l'échelle de nuances de gris à la couleur finale.  Déplacez le terminal **Sortie** du nœud **Désaturer** vers le terminal **RVB** du nœud **Couleur finale**.  
+5.  Connectez la valeur de couleur de nuances de gris à la couleur finale. Déplacez le terminal **Sortie** du nœud **Désaturer** vers le terminal **RVB** du nœud **Couleur finale**.  
   
- L'illustration suivante montre le graphique de nuanceur terminé et un aperçu du nuanceur appliqué à un cube.  
+ L’illustration suivante présente le graphique du nuanceur terminé ainsi qu’un aperçu du nuanceur appliqué à un cube.  
   
 > [!NOTE]
->  Dans cette illustration, un plan est utilisé comme forme d'aperçu du shader, et une texture a été spécifiée pour mieux illustrer l'effet du shader.  
+>  Dans cette illustration, un plan est utilisé comme forme d’aperçu, et une texture a été spécifiée pour mettre en évidence l’effet du nuanceur.  
   
- ![Graphique du nuanceur et un aperçu de ses effets](../designers/media/digit-grayscale-effect.png "Digit\-Grayscale\-Effect")  
+ ![Graphique du nuanceur et aperçu de son effet](../designers/media/digit-grayscale-effect.png "Digit-Grayscale-Effect")  
   
- Certaines formes peuvent fournir de meilleurs aperçus pour certains nuanceurs.  Pour plus d'informations sur la prévisualisation des nuanceurs dans le concepteur de nuanceurs, consultez [Concepteur Shader](../designers/shader-designer.md).  
+ Certaines formes peuvent fournir de meilleurs aperçus pour certains nuanceurs. Pour plus d’informations sur l’aperçu des nuanceurs dans le concepteur de nuanceur, consultez l’article [Concepteur de nuanceur](../designers/shader-designer.md).  
   
-## Voir aussi  
+## <a name="see-also"></a>Voir aussi  
  [Comment : appliquer un nuanceur à un modèle 3D](../designers/how-to-apply-a-shader-to-a-3-d-model.md)   
- [Procédure : exporter un nuanceur](../designers/how-to-export-a-shader.md)   
- [Éditeur d'images](../designers/image-editor.md)   
- [Concepteur Shader](../designers/shader-designer.md)   
- [Nœuds du concepteur Shader](../designers/shader-designer-nodes.md)
+ [Comment : exporter un nuanceur](../designers/how-to-export-a-shader.md)   
+ [Éditeur d’images](../designers/image-editor.md)   
+ [Concepteur de nuanceur](../designers/shader-designer.md)   
+ [Nœuds du concepteur de nuanceur](../designers/shader-designer-nodes.md)

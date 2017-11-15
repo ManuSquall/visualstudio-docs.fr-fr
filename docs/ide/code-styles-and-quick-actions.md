@@ -4,8 +4,7 @@ ms.custom:
 ms.date: 03/10/2017
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-general
+ms.technology: vs-ide-general
 ms.tgt_pltfrm: 
 ms.topic: article
 ms.devlang: csharp
@@ -16,28 +15,12 @@ manager: ghogen
 f1_keywords:
 - VS.ToolsOptionsPages.Text_Editor.CSharp.Code_Style.General
 - VS.ToolsOptionsPages.Text_Editor.Basic.Code_Style.General
-translation.priority.ht:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 46846db26bee30841e6cb35913d533b512d01ba0
-ms.openlocfilehash: acc01617fffd7465cee01267482112aac5e352fc
-ms.contentlocale: fr-fr
-ms.lasthandoff: 03/27/2017
-
+ms.openlocfilehash: d42bb9165748b7282aa42f062b545add62ad1c93
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: HT
+ms.contentlocale: fr-FR
+ms.lasthandoff: 10/31/2017
 ---
-
 # <a name="code-styles-and-quick-actions"></a>Styles de code et actions rapides
 Les préférences de styles de code peuvent être définies pour vos projets C# et Visual Basic en ouvrant la fenêtre **Outils > Options**, puis en sélectionnant **Éditeur de texte > C# / De base > Style de code > Général**.  Les options définies dans cette fenêtre sont applicables à l’ordinateur local.  Chaque élément de la liste affiche un aperçu de la préférence sélectionnée, comme indiqué ci-dessous.
 
@@ -47,5 +30,5 @@ Pour chaque élément, vous pouvez définir les options **Préférence** et **Gr
 
 Les paramètres de style de code pour .NET peuvent également être gérés avec un fichier [EditorConfig](editorconfig-code-style-settings-reference.md).  Dans ce cas, les paramètres sélectionnés dans la fenêtre Options sont les paramètres de secours, le fichier EditorConfig étant prioritaire.  Vous pouvez utiliser ce fichier pour appliquer et configurer le style de codage pour l’intégralité de votre référentiel ou équipe.
 
-# <a name="see-also"></a>Voir aussi
+## <a name="see-also"></a>Voir aussi
 * [Actions rapides](quick-actions.md)

@@ -4,39 +4,21 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-general
+ms.technology: vs-ide-general
 ms.tgt_pltfrm: 
 ms.topic: article
-f1_keywords:
-- vs.classdesigner.exportdialog
-helpviewer_keywords:
-- class diagrams, exporting as images
+f1_keywords: vs.classdesigner.exportdialog
+helpviewer_keywords: class diagrams, exporting as images
 ms.assetid: c57055c5-1340-449f-b9d3-ca6f87e2f69a
-caps.latest.revision: 10
+caps.latest.revision: "10"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-translation.priority.ht:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
+ms.openlocfilehash: 39969126d705c304cba499944cdedf3428be7f23
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
 ms.translationtype: HT
-ms.sourcegitcommit: 63aad78bdc7df685ca3a73ec16a9cbc87b78151f
-ms.openlocfilehash: a96949f21cc2550a8b9d4149f8ac86d0eb78f8d6
-ms.contentlocale: fr-fr
-ms.lasthandoff: 07/14/2017
-
+ms.contentlocale: fr-FR
+ms.lasthandoff: 10/31/2017
 ---
 # <a name="how-to-export-class-diagrams-as-images-class-designer"></a>Comment : exporter des diagrammes de classes comme images (Concepteur de classes)
 Pour exporter un diagramme de classes que vous avez créé à partir du code d'un projet, enregistrez le diagramme en tant qu'image. Si vous souhaitez exporter les diagrammes de classes UML à la place, consultez [Exporter des diagrammes en tant qu’images](../modeling/export-diagrams-as-images.md).  

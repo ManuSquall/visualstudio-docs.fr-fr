@@ -4,36 +4,19 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-devops-test
+ms.technology: vs-devops-test
 ms.tgt_pltfrm: 
 ms.topic: article
-helpviewer_keywords:
-- coded UI tests, best practices
+helpviewer_keywords: coded UI tests, best practices
 ms.assetid: d5aef766-a24c-4f1f-ac9b-e5462b6627d4
-caps.latest.revision: 39
+caps.latest.revision: "39"
 ms.author: douge
 manager: douge
-translation.priority.ht:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 5ab78b6b8eaa8156ed2c8a807b1d8a80e75afa84
-ms.openlocfilehash: 444f6bf46c3eac65a2771655616fd67d8ed83b32
-ms.contentlocale: fr-fr
-ms.lasthandoff: 05/19/2017
-
+ms.openlocfilehash: 76727d06b3f7c41436ae2939518986baba4b8e5c
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.translationtype: HT
+ms.contentlocale: fr-FR
+ms.lasthandoff: 10/27/2017
 ---
 # <a name="best-practices-for-coded-ui-tests"></a>Meilleures pratiques pour les tests codés de l'interface utilisateur
 Cette rubrique décrit les pratiques recommandées à suivre pour développer des tests codés de l'interface utilisateur.  
@@ -109,4 +92,3 @@ Playback.PlaybackSettings.WaitForReadyLevel = WaitForReadyLevel.UIThreadOnly;
  [Création de tests codés de l’interface utilisateur](../test/use-ui-automation-to-test-your-code.md#VerifyingCodeUsingCUITCreate)   
  [Test d’une grande application avec plusieurs mappages d’IU](../test/testing-a-large-application-with-multiple-ui-maps.md)   
  [Plateformes et configurations prises en charge pour les tests codés de l’interface utilisateur et les enregistrements des actions](../test/supported-configurations-and-platforms-for-coded-ui-tests-and-action-recordings.md)
-

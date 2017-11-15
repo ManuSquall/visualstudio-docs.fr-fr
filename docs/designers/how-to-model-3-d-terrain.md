@@ -1,73 +1,74 @@
 ---
-title: "Proc&#233;dure&#160;: mod&#233;liser un terrain&#160;3D | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-general"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+title: "Comment : modéliser un terrain 3D | Microsoft Docs"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-designers
+ms.tgt_pltfrm: 
+ms.topic: article
 ms.assetid: f779b1fd-82a9-4a11-8ab7-c1c9caabc883
-caps.latest.revision: 17
-author: "BrianPeek"
-ms.author: "brpeek"
-manager: "ghogen"
-caps.handback.revision: 17
+caps.latest.revision: "17"
+author: gewarren
+ms.author: gewarren
+manager: ghogen
+ms.openlocfilehash: ff68a2c9d7552c474fe8760a471f97a5c0267e8e
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: HT
+ms.contentlocale: fr-FR
+ms.lasthandoff: 10/31/2017
 ---
-# Proc&#233;dure&#160;: mod&#233;liser un terrain&#160;3D
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
-
-Ce document montre comment utiliser l'Editeur de modèles pour créer un modèle de terrain 3\-D.  
+# <a name="how-to-model-3-d-terrain"></a>Procédure : modéliser un terrain 3D
+Ce document montre comment utiliser l’éditeur de modèle pour créer un modèle de terrain 3D.  
   
- Ce document démontre les activités suivantes :  
+ Ce document illustre ces activités :  
   
--   Ajout d'objets à une scène  
+-   Ajout d’objets à une scène  
   
--   Sélectionnez les faces et les points  
+-   Sélection des faces et des points  
   
--   Traduction des selections  
+-   Translation des sélections  
   
--   À l'aide de l'outil **Subdivisez face**  
+-   Utilisation de l’outil **Subdiviser la face**  
   
--   Cadrage d'un objet dans l'aire de conception  
+-   Tramage d’un objet dans l’aire de conception  
   
-## Création d'un modèle terrain 3D  
- Vous pouvez créer un terrain 3D en subdivisant un plan pour créer des faces supplémentaires, puis en manipulant leurs sommets pour créer les fonctionnalités de terrain intéressantes.  
+## <a name="creating-a-3-d-terrain-model"></a>Création d’un modèle de terrain 3D  
+ Vous pouvez créer un terrain 3D en subdivisant un plan pour obtenir des faces supplémentaires, puis en manipulant leurs sommets pour créer des caractéristiques de terrain intéressantes.  
   
- Lorsque vous avez terminé, le modèle doit se présenter de la manière suivante :  
+ Lorsque vous avez terminé, le modèle doit se présenter comme suit :  
   
- ![Scène 3&#45;D illustrant un modèle de terrain](~/designers/media/digit-terrain-model.png "Digit\-Terrain\-Model")  
+ ![Scène 3D illustrant un modèle de terrain](../designers/media/digit-terrain-model.png "Digit-Terrain-Model")  
   
- Avant de commencer, assurez\-vous que la fenêtre **Propriétés** et que la **Boîte à outils** sont affichées.  
+ Avant de commencer, assurez-vous que la fenêtre **Propriétés** et la **Boîte à outils** sont affichées.  
   
-#### Pour créer un modèle de terrain 3D  
+#### <a name="to-create-a-3-d-terrain-model"></a>Pour créer un modèle de terrain 3D  
   
-1.  Créer un modèle 3D à utiliser.  Pour obtenir des informations sur l'ajout d'un modèle à votre projet, consultez la section Mise en route dans [Éditeur de modèle](../designers/model-editor.md).  
+1.  Créez un modèle 3D à utiliser. Pour plus d’informations sur l’ajout d’un modèle à votre projet, consultez la section Getting Started (Prise en main) de l’article [Model Editor (Éditeur de modèle)](../designers/model-editor.md).  
   
-2.  Ajoutez un plan à la scène.  Dans **Boîte à outils**, sous **Formes**, sélectionnez **Plan** et faites glisser cette option sur l'aire de conception.  
+2.  Ajoutez un plan à la scène. Dans la **Boîte à outils**, sous **Formes**, sélectionnez **Plan** et déplacez-le vers l’aire de conception.  
   
     > [!TIP]
-    >  Pour faciliter l'utilisation d'un objet plan, encadrez\-le dans l'aire de conception.  En mode **Selectionner**, sélectionnez l'objet plan, puis dans la barre d'outils de l'Editeur de Modèles, choisissez le bouton**Encadrer Objet**.  
+    >  Pour faciliter l’utilisation de l’objet plan, vous pouvez l’encadrer dans l’aire de conception. En mode **Sélection**, sélectionnez l’objet plan, puis dans la barre d’outils de l’éditeur de modèle, choisissez le bouton **Frame Object (Encadrer l’objet)**.  
   
-3.  Accédez au mode de sélection de face.  Dans la barre d'outils de l'Editeur de modèles, choisissez **Sélectionner face**.  
+3.  Passez en mode de sélection de la face. Dans la barre d’outils de l’éditeur de modèle, choisissez **Sélectionner la face**.  
   
-4.  Subdivisez le plan.  En mode de sélection de face, sélectionnez le plan une fois pour l'activer pour la sélection, puis choisissez\- le de nouveau pour sélectionner uniquement la face.  Dans la barre d'outils de l'Editeur de modèles, choisissez **Subdiviser face**.  Cela ajoute de nouveaux sommets au plan qui le sépare en quatre partitions de meme taille.  
+4.  Subdivisez le plan. En mode de sélection de la face, choisissez le plan une fois pour l’activer pour la sélection, puis choisissez-le à nouveau pour sélectionner uniquement sa face. Dans la barre d’outils de l’éditeur de modèle, choisissez **Subdiviser la face**. De nouveaux sommets sont ajoutés au plan qui le fractionnent en quatre partitions de même taille.  
   
-5.  Créez plus de subdivisions.  Avec les nouvelles faces toujours sélectionnées, choisissez **Subdivisez face** encore deux fois.  Cela crée un total de 64 faces.  En créant plus de sous\-divisions, vous pouvez fournir au terrain encore plus de détails.  
+5.  Créez d’autres subdivisions. Les nouvelles faces étant toujours sélectionnées, choisissez **Subdiviser la face** deux autres fois. Au total, 64 faces sont créées. En créant d’autres subdivisions, vous pouvez donner au terrain encore plus de détails.  
   
-6.  Accédez au mode de sélection Point.  Dans la barre d'outils de l'Editeur de modèles, choisissez **Sélectionner Point**.  
+6.  Passez en mode de sélection du point. Dans la barre d’outils de l’éditeur de modèle, choisissez **Sélectionner le point**.  
   
-7.  Modifiez un point pour créer une fonctionnalité de terrain.  En mode se selection Point, selectionnez un des points et ensuite choisissez l'outil **Traduire** dans la barre d'outils de l'Editeur de Modèles.  Une zone représentant le point apparaît sur l'aire de conception.  Utilisez la flèche verte pour déplacer la zone et pour modifier ainsi la hauteur du point.  Répétez cette étape pour différents points pour créer des fonctionnalités de terrain intéressantes.  
+7.  Modifiez un point pour créer une caractéristique de terrain. En mode de sélection du point, sélectionnez l’un des points, puis, dans la barre d’outils de l’éditeur de modèle, choisissez l’outil **Translater**. Une zone représentant le point s’affiche sur l’aire de conception. Utilisez la flèche verte pour déplacer la zone et ainsi modifier la hauteur du point. Répétez cette étape pour différents points afin de créer des caractéristiques intéressantes de terrain.  
   
     > [!TIP]
-    >  Vous pouvez sélectionner plusieurs points à la fois pour les modifier de façon uniforme.  
+    >  Vous pouvez sélectionner plusieurs points à la fois pour les modifier de manière uniforme.  
   
- Le modèle de terrain est maintenant terminé.  Voici encore le modèle final auquel on a appliqué le shading Phong.  
+ Le modèle de terrain est terminé. Voici à nouveau le modèle final, avec l’ombrage Phong appliqué :  
   
- ![Scène 3&#45;D illustrant un modèle de terrain](~/designers/media/digit-terrain-model.png "Digit\-Terrain\-Model")  
+ ![Scène 3D illustrant un modèle de terrain](../designers/media/digit-terrain-model.png "Digit-Terrain-Model")  
   
- Vous pouvez utiliser ce modèle de terrain pour illustrer l'effet du nuanceur de dégradé qui est décrit dans [Comment : créer un nuanceur de géométrie dégradé](../designers/how-to-create-a-geometry-based-gradient-shader.md).  
+ Vous pouvez utiliser ce modèle de terrain pour montrer l’effet du nuanceur de dégradé décrit dans l’article [Comment : créer un nuanceur de géométrie dégradé](../designers/how-to-create-a-geometry-based-gradient-shader.md).  
   
-## Voir aussi  
+## <a name="see-also"></a>Voir aussi  
  [Éditeur de modèle](../designers/model-editor.md)

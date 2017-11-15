@@ -1,11 +1,10 @@
 ---
 title: "Création d’une interface utilisateur à l’aide du concepteur XAML dans Visual Studio | Microsoft Docs"
 ms.custom: 
-ms.date: 7/17/2017
+ms.date: 07/17/2017
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-designers
+ms.technology: vs-ide-designers
 ms.tgt_pltfrm: 
 ms.topic: article
 f1_keywords:
@@ -14,16 +13,15 @@ f1_keywords:
 - VS.XamlEditor
 - VS.DocumentOutline
 ms.assetid: c54969a7-d75a-4a35-9b37-af7a596a7c24
-caps.latest.revision: 29
+caps.latest.revision: "29"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
+ms.openlocfilehash: 20ffb34c3c9ac1d2842995c53332eb241337b769
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
 ms.translationtype: HT
-ms.sourcegitcommit: 6d25db4639f2c8391c1e32542701ea359f560178
-ms.openlocfilehash: 0122714fa0c932a1fba849226e1200795ff20cfa
-ms.contentlocale: fr-fr
-ms.lasthandoff: 07/18/2017
-
+ms.contentlocale: fr-FR
+ms.lasthandoff: 10/31/2017
 ---
 # <a name="creating-a-ui-by-using-xaml-designer-in-visual-studio"></a>Création d'une interface utilisateur à l'aide du concepteur XAML dans Visual Studio
 Le concepteur XAML dans Visual Studio fournit une interface visuelle pour vous aider à concevoir des applications web et Windows basées sur XAML. Vous pouvez créer des interfaces utilisateur pour vos applications en faisant glisser des contrôles à partir de la **boîte à outils** et en définissant des propriétés dans la fenêtre **Propriétés** . Vous pouvez également modifier le XAML directement en mode XAML.  

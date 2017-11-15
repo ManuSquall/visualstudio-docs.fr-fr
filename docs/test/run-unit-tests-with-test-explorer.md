@@ -4,43 +4,25 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-devops-test
+ms.technology: vs-devops-test
 ms.tgt_pltfrm: 
 ms.topic: article
-f1_keywords:
-- vs.unittesting.testexplorer.overview
+f1_keywords: vs.unittesting.testexplorer.overview
 ms.assetid: 91b167a3-280a-498b-8fc2-f67859a2c64e
-caps.latest.revision: 27
+caps.latest.revision: "27"
 ms.author: douge
 manager: douge
-translation.priority.ht:
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- ru-ru
-- zh-cn
-- zh-tw
-translation.priority.mt:
-- cs-cz
-- pl-pl
-- pt-br
-- tr-tr
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 47057e9611b824c17077b9127f8d2f8b192d6eb8
-ms.openlocfilehash: b6b865f51ca12312ad439d059097c328576dfa4e
-ms.contentlocale: fr-fr
-ms.lasthandoff: 05/13/2017
-
+ms.openlocfilehash: 6ba82358dd7aea8bfd8f3497e5dff87091fbf9d5
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.translationtype: HT
+ms.contentlocale: fr-FR
+ms.lasthandoff: 10/27/2017
 ---
 # <a name="run-unit-tests-with-test-explorer"></a>Exécuter des tests unitaires avec l'Explorateur de tests
 Utilisez l'Explorateur de tests pour exécuter des tests unitaires à partir de Visual Studio ou de projets de tests unitaires tiers, regrouper des tests en catégories, filtrer la liste de tests et créer, enregistrer et exécuter des sélections de tests. Vous pouvez également déboguer des tests et analyser les performances des tests et la couverture du code.  
   
 ##  <a name="BKMK_Contents"></a> Sommaire  
- [Frameworks de tests unitaires et projets de test](#BKMK_Unit_test_frameworks_and_test_projects)  
+ [Infrastructures de tests unitaires et projets de test](#BKMK_Unit_test_frameworks_and_test_projects)  
   
  [Exécuter des tests dans l’explorateur de tests](#BKMK_Run_tests_in_Test_Explorer)  
   
@@ -54,12 +36,12 @@ Utilisez l'Explorateur de tests pour exécuter des tests unitaires à partir de 
   
  [Ressources externes](#BKMK_External_resources)  
   
-##  <a name="BKMK_Unit_test_frameworks_and_test_projects"></a> Frameworks de tests unitaires et projets de test  
- Visual Studio inclut les frameworks de tests unitaires Microsoft pour le code managé comme pour le code natif. Toutefois, l'Explorateur de tests peut également exécuter tout framework de tests unitaires qui a implémenté un adaptateur pour l'Explorateur de tests. Pour plus d’informations sur l’installation des frameworks de tests unitaires tiers, consultez [Installer des frameworks de tests unitaires tiers](../test/install-third-party-unit-test-frameworks.md).  
+##  <a name="BKMK_Unit_test_frameworks_and_test_projects"></a> Infrastructures de tests unitaires et projets de test  
+ Visual Studio inclut les infrastructures de tests unitaires Microsoft pour le code managé comme pour le code natif. Toutefois, l'Explorateur de tests peut également exécuter tout framework de tests unitaires qui a implémenté un adaptateur pour l'Explorateur de tests. Pour plus d’informations sur l’installation des frameworks de tests unitaires tiers, consultez [Installer des frameworks de tests unitaires tiers](../test/install-third-party-unit-test-frameworks.md).  
   
- L'Explorateur de tests peut exécuter des tests à partir de plusieurs projets de test dans une solution et à partir de classes de test qui font partie des projets de code de production. Les projets de test peuvent utiliser différents frameworks de tests unitaires. Quand le code testé est écrit pour le .NET Framework, le projet de test peut être écrit dans n'importe quel langage qui cible également le .NET Framework, quel que soit le langage du code cible. Les projets de code C/C++ natifs doivent être testés à l'aide d'un framework de tests unitaires C++.  
+ L'Explorateur de tests peut exécuter des tests à partir de plusieurs projets de test dans une solution et à partir de classes de test qui font partie des projets de code de production. Les projets de test peuvent utiliser différentes infrastructures de tests unitaires. Quand le code testé est écrit pour le .NET Framework, le projet de test peut être écrit dans n'importe quel langage qui cible également le .NET Framework, quel que soit le langage du code cible. Les projets de code C/C++ natifs doivent être testés à l'aide d'un framework de tests unitaires C++.  
   
- ![Retour au début](~/debugger/media/pcs_backtotop.png "PCS_BackToTop") [Sommaire](#BKMK_Contents)  
+ ![Retour au début](../debugger/media/pcs_backtotop.png "PCS_BackToTop") [Sommaire](#BKMK_Contents)  
   
 ##  <a name="BKMK_Run_tests_in_Test_Explorer"></a> Exécuter des tests dans l’Explorateur de tests  
  [Exécuter des tests](#BKMK_Run_tests) **&#124;** [Exécuter des tests après chaque génération](#BKMK_Run_tests_after_every_build)  
@@ -74,7 +56,7 @@ Utilisez l'Explorateur de tests pour exécuter des tests unitaires à partir de 
   
  ![Exécuter des tests à partir de la barre d’outils de l’explorateur de tests](../test/media/ute_toolbar.png "UTE_ToolBar")  
   
- ![Retour au début](~/debugger/media/pcs_backtotop.png "PCS_BackToTop") [Sommaire](#BKMK_Contents)  
+ ![Retour au début](../debugger/media/pcs_backtotop.png "PCS_BackToTop") [Sommaire](#BKMK_Contents)  
   
 ###  <a name="BKMK_Run_tests"></a> Exécuter les tests  
  Vous pouvez exécuter tous les tests dans la solution, tous les tests dans un groupe, ou un ensemble de tests que vous sélectionnez. Effectuez l’une des opérations suivantes :  
@@ -89,7 +71,7 @@ Utilisez l'Explorateur de tests pour exécuter des tests unitaires à partir de 
   
  La barre Réussite/Échec en haut de la fenêtre Explorateur de tests est animée pendant l'exécution des tests. À la fin de la série de tests, la barre Réussite/Échec devient verte si tous les tests ont réussi ou rouge si un test a échoué.  
   
- ![Retour au début](~/debugger/media/pcs_backtotop.png "PCS_BackToTop") [Sommaire](#BKMK_Contents)  
+ ![Retour au début](../debugger/media/pcs_backtotop.png "PCS_BackToTop") [Sommaire](#BKMK_Contents)  
   
 ###  <a name="BKMK_Run_tests_after_every_build"></a> Exécuter des tests après chaque génération  
   
@@ -100,7 +82,7 @@ Utilisez l'Explorateur de tests pour exécuter des tests unitaires à partir de 
 |-|-|  
 |![Exécuter après génération](../test/media/ute_runafterbuild_btn.png "UTE_RunAfterBuild_btn")|Pour exécuter vos tests unitaires après chaque génération locale, choisissez **Test** dans le menu standard, puis **Exécuter les tests après la génération** dans la barre d'outils de l'Explorateur de tests.|  
   
- ![Retour au début](~/debugger/media/pcs_backtotop.png "PCS_BackToTop") [Sommaire](#BKMK_Contents)  
+ ![Retour au début](../debugger/media/pcs_backtotop.png "PCS_BackToTop") [Sommaire](#BKMK_Contents)  
   
 ##  <a name="BKMK_View_test_results"></a> Afficher les résultats des tests  
  [Afficher les détails du test](#BKMK_View_test_details) **&#124;** [Afficher le code source d’une méthode de test](#BKMK_View_the_source_code_of_a_test_method)  
@@ -110,7 +92,7 @@ Utilisez l'Explorateur de tests pour exécuter des tests unitaires à partir de 
 ###  <a name="BKMK_View_test_details"></a> Afficher les détails du test  
  Pour afficher les détails d'un test individuel, sélectionnez le test.  
   
- ![Détails de l’exécution de tests](~/test/media/ute_testdetails.png "UTE_TestDetails")  
+ ![Détails de l’exécution de tests](../test/media/ute_testdetails.png "UTE_TestDetails")  
   
  Le volet d'informations de test affiche les informations suivantes :  
   
@@ -122,24 +104,24 @@ Utilisez l'Explorateur de tests pour exécuter des tests unitaires à partir de 
   
  Si le test échoue, le volet d'informations affiche également :  
   
--   Le message retourné par le framework de tests unitaires pour le test.  
+-   Le message retourné par l'infrastructure de tests unitaires pour le test.  
   
 -   La trace de la pile au moment de l'échec du test.  
   
- ![Retour au début](~/debugger/media/pcs_backtotop.png "PCS_BackToTop") [Sommaire](#BKMK_Contents)  
+ ![Retour au début](../debugger/media/pcs_backtotop.png "PCS_BackToTop") [Sommaire](#BKMK_Contents)  
   
 ###  <a name="BKMK_View_the_source_code_of_a_test_method"></a> Afficher le code source d’une méthode de test  
  Pour afficher le code source d'une méthode de test dans l'éditeur Visual Studio, sélectionnez le test, puis choisissez **Ouvrir un test** dans le menu contextuel (clavier : F12).  
   
- ![Retour au début](~/debugger/media/pcs_backtotop.png "PCS_BackToTop") [Sommaire](#BKMK_Contents)  
+ ![Retour au début](../debugger/media/pcs_backtotop.png "PCS_BackToTop") [Sommaire](#BKMK_Contents)  
   
 ##  <a name="BKMK_Group_and_filter_the_test_list"></a> Regrouper et filtrer la liste de tests  
  [Regroupement de la liste de tests](#BKMK_Grouping_the_test_list) **&#124;** [Regrouper par caractéristiques](#BKMK_Group_by_traits) **&#124;** [Rechercher et filtrer la liste de tests](#BKMK_Search_and_filter_the_test_list)  
   
- L'Explorateur de tests vous permet de regrouper vos tests en catégories prédéfinies. La plupart des frameworks de tests unitaires qui s'exécutent dans l'Explorateur de tests vous permettent de définir vos propres catégories et paires catégorie/valeur pour regrouper vos tests. Vous pouvez également filtrer la liste de tests en mettant en correspondance les chaînes avec les propriétés de test.  
+ L'Explorateur de tests vous permet de regrouper vos tests en catégories prédéfinies. La plupart des infrastructures de tests unitaires qui s'exécutent dans l'Explorateur de tests vous permettent de définir vos propres catégories et paires catégorie/valeur pour regrouper vos tests. Vous pouvez également filtrer la liste de tests en mettant en correspondance les chaînes avec les propriétés de test.  
   
 ###  <a name="BKMK_Grouping_the_test_list"></a> Regroupement de la liste de tests  
- Pour modifier le mode d’organisation des tests, cliquez sur la flèche vers le bas à côté du bouton **Grouper par** ![Bouton Grouper de l’Explorateur de tests](~/test/media/ute_groupby_btn.png "UTE_GroupBy_btn") et sélectionnez un nouveau critère de regroupement.  
+ Pour modifier le mode d’organisation des tests, cliquez sur la flèche vers le bas à côté du bouton **Grouper par** ![Bouton Grouper de l’Explorateur de tests](../test/media/ute_groupby_btn.png "UTE_GroupBy_btn") et sélectionnez un nouveau critère de regroupement.  
   
  ![Grouper les tests par catégorie dans l’Explorateur de tests](../test/media/ute_groupbycategory.png "UTE_GroupByCategory")  
   
@@ -149,26 +131,26 @@ Utilisez l'Explorateur de tests pour exécuter des tests unitaires à partir de 
 |-----------|-----------------|  
 |**Durée**|Regroupe les tests selon la durée d'exécution : **Rapide**, **Moyenne**et **Lente**.|  
 |**Résultat**|Regroupe les tests selon les résultats de l'exécution : **Échecs de tests**, **Tests ignorés**, **Tests réussis**.|  
-|**Caractéristiques**|Regroupe les tests selon les paires catégorie/valeur que vous définissez. La syntaxe permettant de spécifier les catégories et les valeurs des caractéristiques est définie par le framework de tests unitaires.|  
-|**Project**|Regroupe les tests selon le nom des projets.|  
+|**Caractéristiques**|Regroupe les tests selon les paires catégorie/valeur que vous définissez. La syntaxe permettant de spécifier les catégories et les valeurs des caractéristiques est définie par l'infrastructure de tests unitaires.|  
+|**Projet**|Regroupe les tests selon le nom des projets.|  
   
- ![Retour au début](~/debugger/media/pcs_backtotop.png "PCS_BackToTop") [Sommaire](#BKMK_Contents)  
+ ![Retour au début](../debugger/media/pcs_backtotop.png "PCS_BackToTop") [Sommaire](#BKMK_Contents)  
   
 ###  <a name="BKMK_Group_by_traits"></a> Regrouper par caractéristiques  
- Une caractéristique est habituellement une paire nom/valeur de catégorie, mais elle peut également être une catégorie unique. Des caractéristiques peuvent être assignées aux méthodes identifiées comme une méthode de test par le framework de tests unitaires. Un framework de tests unitaires peut définir des catégories de caractéristiques. Vous pouvez ajouter des valeurs aux catégories de caractéristiques pour définir vos propres paires nom/valeur de catégorie. La syntaxe permettant de spécifier les catégories et les valeurs des caractéristiques est définie par le framework de tests unitaires.  
+ Une caractéristique est habituellement une paire nom/valeur de catégorie, mais elle peut également être une catégorie unique. Des caractéristiques peuvent être assignées aux méthodes identifiées comme une méthode de test par l'infrastructure de tests unitaires. Une infrastructure de tests unitaires peut définir des catégories de caractéristiques. Vous pouvez ajouter des valeurs aux catégories de caractéristiques pour définir vos propres paires nom/valeur de catégorie. La syntaxe permettant de spécifier les catégories et les valeurs des caractéristiques est définie par l'infrastructure de tests unitaires.  
   
- **Caractéristiques dans le framework de tests unitaires Microsoft pour le code managé**  
+ **Caractéristiques dans l'infrastructure de tests unitaires Microsoft pour le code managé**  
   
- Dans le framework de tests unitaires Microsoft pour les applications managées, vous définissez une paire nom/valeur de caractéristique dans un attribut <xref:Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute>. Le framework de tests contient également les caractéristiques prédéfinies suivantes :   
+ Dans l'infrastructure de tests unitaires Microsoft pour les applications managées, vous définissez une paire nom/valeur de caractéristique dans un attribut  <xref:Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute> . L'infrastructure de tests contient également les caractéristiques prédéfinies suivantes :  
   
 |Caractéristique|Description|  
 |-----------|-----------------|  
-|<xref:Microsoft.VisualStudio.TestTools.UnitTesting.OwnerAttribute>|La catégorie Owner est définie par le framework de tests unitaires et nécessite que vous fournissiez une valeur de chaîne du propriétaire.|  
-|<xref:Microsoft.VisualStudio.TestTools.UnitTesting.PriorityAttribute>|La catégorie Priority est définie par le framework de tests unitaires et nécessite que vous fournissiez une valeur entière de la priorité.|  
+|<xref:Microsoft.VisualStudio.TestTools.UnitTesting.OwnerAttribute>|La catégorie Owner est définie par l'infrastructure de tests unitaires et nécessite que vous fournissiez une valeur de chaîne du propriétaire.|  
+|<xref:Microsoft.VisualStudio.TestTools.UnitTesting.PriorityAttribute>|La catégorie Priority est définie par l'infrastructure de tests unitaires et nécessite que vous fournissiez une valeur entière de la priorité.|  
 |<xref:Microsoft.VisualStudio.TestTools.UnitTesting.TestCategoryAttribute>|L'attribut TestCategory vous permet de fournir une catégorie sans valeur. Une catégorie définie par l'attribut TestCategory peut également être la catégorie d'un attribut TestProperty.|  
 |<xref:Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute>|L'attribut TestProperty vous permet de définir la paire catégorie/valeur de caractéristique.|  
   
- **Caractéristiques dans le framework de tests unitaires Microsoft pour C++**  
+ **Caractéristiques dans l'infrastructure de tests unitaires Microsoft pour C++**  
   
  Pour définir une caractéristique, utilisez la macro `TEST_METHOD_ATTRIBUTE` . Par exemple, pour définir une caractéristique nommée `TEST_MY_TRAIT`:  
   
@@ -200,7 +182,7 @@ TEST_METHOD(Method1)
 |`TEST_OWNER(ownerAlias)`|Utilisez la caractéristique Owner prédéfinie pour spécifier un propriétaire de la méthode de test.|  
 |`TEST_PRIORITY(priority)`|Utilisez la caractéristique Priority prédéfinie pour assigner des priorités relatives à vos méthodes de test.|  
   
- ![Retour au début](~/debugger/media/pcs_backtotop.png "PCS_BackToTop") [Sommaire](#BKMK_Contents)  
+ ![Retour au début](../debugger/media/pcs_backtotop.png "PCS_BackToTop") [Sommaire](#BKMK_Contents)  
   
 ###  <a name="BKMK_Search_and_filter_the_test_list"></a> Rechercher et filtrer la liste de tests  
  Vous pouvez utiliser des filtres de l'Explorateur de tests pour limiter les méthodes de test dans les projets que vous affichez et exécutez.  
@@ -222,12 +204,12 @@ TEST_METHOD(Method1)
   
 |Qualificateur|Description|  
 |---------------|-----------------|  
-|**Caractéristique**|Recherche la catégorie et la valeur de caractéristique pour les correspondances. La syntaxe permettant de spécifier les catégories et les valeurs des caractéristiques est définie par le framework de tests unitaires.|  
-|**Project**|Recherche les noms de projet de test pour les correspondances.|  
-|**Message d’erreur**|Recherche les messages d'erreur définis par l'utilisateur retournés par des assertions ayant échoué pour les correspondances.|  
-|**Chemin du fichier**|Recherche le nom de fichier qualifié complet des fichiers sources de test pour les correspondances.|  
+|**Caractéristique**|Recherche la catégorie et la valeur de caractéristique pour les correspondances. La syntaxe permettant de spécifier les catégories et les valeurs des caractéristiques est définie par l'infrastructure de tests unitaires.|  
+|**Projet**|Recherche les noms de projet de test pour les correspondances.|  
+|**Message d'erreur**|Recherche les messages d'erreur définis par l'utilisateur retournés par des assertions ayant échoué pour les correspondances.|  
+|**Chemin d'accès au fichier**|Recherche le nom de fichier qualifié complet des fichiers sources de test pour les correspondances.|  
 |**Nom qualifié complet**|Recherche le nom de fichier qualifié complet des espaces de noms, des classes et des méthodes de test pour les correspondances.|  
-|**Sortie**|Recherche les messages d'erreur définis par l'utilisateur qui sont écrits dans la sortie standard (stdout) ou une erreur standard (stderr). La syntaxe permettant de spécifier les messages de sortie est définie par le framework de tests unitaires.|  
+|**Sortie**|Recherche les messages d'erreur définis par l'utilisateur qui sont écrits dans la sortie standard (stdout) ou une erreur standard (stderr). La syntaxe permettant de spécifier les messages de sortie est définie par l'infrastructure de tests unitaires.|  
 |**Résultat**|Recherche les noms de catégorie de l'Explorateur de tests pour les correspondances : **Échecs de tests**, **Tests ignorés**, **Tests réussis**.|  
   
  Pour exclure un sous-ensemble des résultats d'un filtre, utilisez la syntaxe suivante :  
@@ -244,7 +226,7 @@ FullName:"MyClass" - FullName:"PerfTest"
   
  retourne tous les tests qui incluent « MyClass » dans leur nom sauf ceux qui incluent également « PerfTest » dans leur nom.  
   
- ![Retour au début](~/debugger/media/pcs_backtotop.png "PCS_BackToTop") [Sommaire](#BKMK_Contents)  
+ ![Retour au début](../debugger/media/pcs_backtotop.png "PCS_BackToTop") [Sommaire](#BKMK_Contents)  
   
 ##  <a name="BKMK_Create_custom_playlists"></a> Créer des sélections personnalisées  
  Vous pouvez créer et enregistrer une liste de tests que vous souhaitez exécuter ou visualiser en tant que groupe. Quand vous sélectionnez une sélection, les tests de la liste sont affichés dans l'Explorateur de tests. Vous pouvez ajouter un test à plusieurs sélections, et tous les tests de votre projet sont disponibles quand vous choisissez la sélection par défaut **Tous les tests** .  
@@ -259,7 +241,7 @@ FullName:"MyClass" - FullName:"PerfTest"
   
  Si les tests individuels n’ont aucune dépendance qui les empêche d’être exécutés dans n’importe quel ordre, activez l’exécution parallèle des tests avec le bouton bascule ![UTE&#95;parallelicon&#45;small](../test/media/ute_parallelicon-small.png "UTE_parallelicon-small") dans la barre d’outils. Cela peut réduire sensiblement le temps nécessaire pour exécuter tous les tests.  
   
- ![Retour au début](~/debugger/media/pcs_backtotop.png "PCS_BackToTop") [Sommaire](#BKMK_Contents)  
+ ![Retour au début](../debugger/media/pcs_backtotop.png "PCS_BackToTop") [Sommaire](#BKMK_Contents)  
   
 ##  <a name="BKMK_Debug_and_analyze_unit_tests"></a> Déboguer et analyser des tests unitaires  
  [Déboguer les tests unitaires](#BKMK_Debug_unit_tests) **&#124;** [Diagnostiquer les problèmes de performances de méthode de test](#BKMK_Diagnose_test_method_performance_issues) **&#124;** [Analyser la couverture de code de test unitaire](#BKMK_Analyzeunit_test_code_coverage)  
@@ -276,7 +258,7 @@ FullName:"MyClass" - FullName:"PerfTest"
   
  Pour plus d’informations sur le débogueur, consultez [Débogage dans Visual Studio](../debugger/debugging-in-visual-studio.md).  
   
- ![Retour au début](~/debugger/media/pcs_backtotop.png "PCS_BackToTop") [Sommaire](#BKMK_Contents)  
+ ![Retour au début](../debugger/media/pcs_backtotop.png "PCS_BackToTop") [Sommaire](#BKMK_Contents)  
   
 ###  <a name="BKMK_Diagnose_test_method_performance_issues"></a> Diagnostiquer les problèmes de performances de méthode de test  
  Pour diagnostiquer la raison pour laquelle une méthode de test est beaucoup trop longue, sélectionnez la méthode dans l'Explorateur de tests, puis choisissez Profil dans le menu contextuel. Consultez [Explorateur de performances](../profiling/performance-explorer.md).  
@@ -302,7 +284,7 @@ FullName:"MyClass" - FullName:"PerfTest"
   
  Pour plus d’informations, consultez [Utilisation de la couverture du code pour déterminer la quantité de code testé](../test/using-code-coverage-to-determine-how-much-code-is-being-tested.md).  
   
- ![Retour au début](~/debugger/media/pcs_backtotop.png "PCS_BackToTop") [Sommaire](#BKMK_Contents)  
+ ![Retour au début](../debugger/media/pcs_backtotop.png "PCS_BackToTop") [Sommaire](#BKMK_Contents)  
   
 ##  <a name="BKMK_External_resources"></a> Ressources externes  
   
@@ -312,4 +294,3 @@ FullName:"MyClass" - FullName:"PerfTest"
 ## <a name="see-also"></a>Voir aussi  
  [Tests unitaires sur votre code](../test/unit-test-your-code.md)   
  [Exécuter un test unitaire comme processus 64 bits](../test/run-a-unit-test-as-a-64-bit-process.md)
-

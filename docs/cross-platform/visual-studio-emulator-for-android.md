@@ -4,35 +4,19 @@ ms.custom:
 ms.date: 07/17/2017
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- tgt-pltfrm-cross-plat
+ms.technology: tgt-pltfrm-cross-plat
 ms.tgt_pltfrm: 
 ms.topic: article
 ms.assetid: 80f0104f-a4db-44dd-bd55-37bb67776c62
-caps.latest.revision: 5
+caps.latest.revision: "5"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-translation.priority.ht:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
+ms.openlocfilehash: 7900b976e2533f1bd9a53d1e9e437339c6041a73
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
 ms.translationtype: HT
-ms.sourcegitcommit: fd35d38110fdd82d8748a57701d15dcc1933053e
-ms.openlocfilehash: 9a0dc7e7d771fa13300c8287096e330633461400
-ms.contentlocale: fr-fr
-ms.lasthandoff: 07/25/2017
-
+ms.contentlocale: fr-FR
+ms.lasthandoff: 10/31/2017
 ---
 # <a name="visual-studio-emulator-for-android"></a>Émulateur Visual Studio pour Android
 L'Émulateur Visual Studio pour Android est une application de bureau qui émule un appareil Android. Il fournit un environnement virtualisé dans lequel vous pouvez déboguer et tester des applications Android sans appareil physique. Il fournit également un environnement isolé pour les prototypes de votre application.  

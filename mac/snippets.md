@@ -5,14 +5,12 @@ ms.author: amburns
 ms.date: 04/14/2017
 ms.topic: article
 ms.assetid: 0FE27C0C-A861-4133-A74E-8D0505CF5342
-ms.translationtype: HT
-ms.sourcegitcommit: e2b7ff9126e1cc38ac2e58d6be339b656a024e7f
 ms.openlocfilehash: 1f2ee1d440ad1c7d8cd75ae9194c651f2fc16a41
-ms.contentlocale: fr-fr
-ms.lasthandoff: 08/11/2017
-
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.translationtype: HT
+ms.contentlocale: fr-FR
+ms.lasthandoff: 10/27/2017
 ---
-
 # <a name="code-snippets"></a>Extraits de code 
 
 Les extraits de code, souvent appelés _modèles de code_, sont pratiques pour une programmation efficace, car ils permettent l’insertion et la modification de blocs de code pré-écrits. L’utilisation d’extraits de code peut être particulièrement pratique pour ajouter rapidement des modèles courants, ou même pour apprendre de nouveaux modèles quand, comme développeur, vous n’êtes pas sûr de la syntaxe. Des modèles sont fournis pour C#, F#, HTML, XML, Python et Razor.
@@ -40,4 +38,3 @@ Il existe différentes façons d’ajouter des extraits de code, dont certaines 
 Il existe de nombreux modèles dans différents langages que vous pouvez utiliser et modifier, mais vous pouvez aussi ajouter de nouveaux modèles en accédant à **Visual Studio > Préférences > Éditeur de texte > Extraits de code**:
 
 ![Insérer un nouveau modèle](media/source-editor-image12.png)
-

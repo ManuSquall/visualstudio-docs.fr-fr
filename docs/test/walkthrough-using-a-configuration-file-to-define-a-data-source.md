@@ -4,8 +4,7 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-devops-test
+ms.technology: vs-devops-test
 ms.tgt_pltfrm: 
 ms.topic: article
 helpviewer_keywords:
@@ -13,31 +12,17 @@ helpviewer_keywords:
 - unit tests, walkthrough
 - data sources, defining with configuration files
 ms.assetid: 95fa5214-b12e-4e1f-84e5-cc4c2d86b0d7
-caps.latest.revision: 32
+caps.latest.revision: "32"
 ms.author: douge
 manager: douge
-translation.priority.ht:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
-translationtype: Human Translation
-ms.sourcegitcommit: 5ab78b6b8eaa8156ed2c8a807b1d8a80e75afa84
-ms.openlocfilehash: 212b8bd6e6c6e695bcc7a4486cbcde59e7309446
-ms.lasthandoff: 04/04/2017
-
+ms.openlocfilehash: 3f7ea8032efa4b35603568afd8b17107c293f2e6
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.translationtype: HT
+ms.contentlocale: fr-FR
+ms.lasthandoff: 10/27/2017
 ---
 # <a name="walkthrough-using-a-configuration-file-to-define-a-data-source"></a>Procédure pas à pas : utilisation d'un fichier de configuration pour définir une source de données
-Cette procédure pas à pas illustre comment utiliser une source de données définie dans un fichier app.config pour des tests unitaires. Vous allez apprendre à créer un fichier app.config qui définit une source de données pouvant être utilisée par la classe <xref:Microsoft.VisualStudio.TestTools.UnitTesting.DataSourceAttribute>. Cette procédure pas à pas illustre les tâches suivantes :  
+Cette procédure pas à pas illustre comment utiliser une source de données définie dans un fichier app.config pour des tests unitaires. Vous apprendrez à créer un fichier app.config qui définit une source de données pouvant être utilisée par la classe <xref:Microsoft.VisualStudio.TestTools.UnitTesting.DataSourceAttribute>. Cette procédure pas à pas illustre les tâches suivantes :  
   
 -   Création d'un fichier app.config  
   
@@ -45,11 +30,11 @@ Cette procédure pas à pas illustre comment utiliser une source de données dé
   
 -   Définition de chaînes de connexion  
   
--   Définition des sources de données  
+-   définition des sources de données ;   
   
--   L’accès aux sources de données à l’aide de la classe <xref:Microsoft.VisualStudio.TestTools.UnitTesting.DataSourceAttribute>.  
+-   accès aux sources de données à l'aide de la classe <xref:Microsoft.VisualStudio.TestTools.UnitTesting.DataSourceAttribute>.  
   
-## <a name="prerequisites"></a>Prérequis  
+## <a name="prerequisites"></a>Conditions préalables  
  Pour exécuter cette procédure pas à pas, vous avez besoin des éléments suivants :  
   
 -   Visual Studio Enterprise  
@@ -127,7 +112,7 @@ Cette procédure pas à pas illustre comment utiliser une source de données dé
 ## <a name="define-data-sources"></a>Définir des sources de données  
  La section de sources de données contient quatre attributs utilisés par le moteur de test pour récupérer des données à partir d'une source de données.  
   
--   `name` définit l’identité utilisée par <xref:Microsoft.VisualStudio.TestTools.UnitTesting.DataSourceAttribute> pour spécifier la source de données à utiliser.  
+-   `name` définit l'identité utilisée par <xref:Microsoft.VisualStudio.TestTools.UnitTesting.DataSourceAttribute> pour spécifier la source de données à utiliser.  
   
 -   `connectionString` identifie la chaîne de connexion créée dans la section précédente, Définir des chaînes de connexion.  
   
@@ -288,4 +273,3 @@ Cette procédure pas à pas illustre comment utiliser une source de données dé
  [Création et exécution de tests unitaires pour le code existant](http://msdn.microsoft.com/en-us/e8370b93-085b-41c9-8dec-655bd886f173)   
  [Test de l’application](/devops-test-docs/test/test-apps-early-and-often)   
  [Guide pratique pour créer un test unitaire piloté par des données](../test/how-to-create-a-data-driven-unit-test.md)
-

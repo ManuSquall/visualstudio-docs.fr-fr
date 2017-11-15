@@ -4,41 +4,24 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-general
+ms.technology: vs-ide-general
 ms.tgt_pltfrm: 
 ms.topic: article
 f1_keywords:
 - VS.ToolsOptionsPages.Text_Editor.C\C++.Advanced
 - VS.ToolsOptionsPages.Text_Editor.C%2FC%2B%2B.Advanced
 - VS.ToolsOptionsPages.Text_Editor.C/C++.Advanced
-helpviewer_keywords:
-- Text Editor Options dialog box, advanced
+helpviewer_keywords: Text Editor Options dialog box, advanced
 ms.assetid: 67c82ae5-fddd-49df-baec-8e7498b156f3
-caps.latest.revision: 19
+caps.latest.revision: "19"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-translation.priority.ht:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 5ea9179ad37514ffad4876177b05150eecc22def
-ms.openlocfilehash: aecc19cb20592940ab773322764e5383365b3865
-ms.contentlocale: fr-fr
-ms.lasthandoff: 05/24/2017
-
+ms.openlocfilehash: 6870313900da464bb2e8a9ae7facfea8c87b72d4
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: HT
+ms.contentlocale: fr-FR
+ms.lasthandoff: 10/31/2017
 ---
 # <a name="options-text-editor-cc-advanced"></a>Options, Éditeur de texte, C/C++, Avancé
 En modifiant ces options, vous pouvez changer le comportement lié à IntelliSense et la base de données de navigation quand vous programmez en C ou C++.  
@@ -184,4 +167,3 @@ En modifiant ces options, vous pouvez changer le comportement lié à IntelliSen
   
 ## <a name="see-also"></a>Voir aussi  
  [Définition d’options d’éditeur spécifiques du langage](../../ide/reference/setting-language-specific-editor-options.md)
-

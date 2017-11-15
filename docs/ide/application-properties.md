@@ -4,8 +4,7 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-general
+ms.technology: vs-ide-general
 ms.tgt_pltfrm: 
 ms.topic: article
 helpviewer_keywords:
@@ -13,30 +12,15 @@ helpviewer_keywords:
 - Project Designer, Application page
 - Application page in Project Designer
 ms.assetid: 0ad4926f-636e-41f8-a5b1-faf9d9b0a254
-caps.latest.revision: 20
-author: kempb
-ms.author: kempb
+caps.latest.revision: "20"
+author: gewarren
+ms.author: gewarren
 manager: ghogen
-translation.priority.ht:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 7e372d9d6d935ff40054b8ba3f7684bf5ea9c458
-ms.openlocfilehash: 3274157b4463c902bc14fe077f1b8d2ca022170c
-ms.contentlocale: fr-fr
-ms.lasthandoff: 06/22/2017
-
+ms.openlocfilehash: a4c5753d12f8926653bcc655e403be20910472fd
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: HT
+ms.contentlocale: fr-FR
+ms.lasthandoff: 10/31/2017
 ---
 # <a name="application-properties"></a>Propriétés des applications
 Vous pouvez définir les propriétés générales des applications Visual Basic, C# et F#, telles que le type d’application, l’objet de démarrage et les informations de l’assembly, dans le volet **Application** du **Concepteur de projet**.  

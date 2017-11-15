@@ -4,36 +4,19 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-general
+ms.technology: vs-acquisition
 ms.tgt_pltfrm: 
 ms.topic: article
 ms.assetid: 45a99a5d-c881-4298-b74d-adb481dec5ee
-caps.latest.revision: 18
-author: kempb
-ms.author: kempb
+caps.latest.revision: "18"
+author: TerryGLee
+ms.author: tglee
 manager: ghogen
-translation.priority.ht:
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- ru-ru
-- zh-cn
-- zh-tw
-translation.priority.mt:
-- cs-cz
-- pl-pl
-- pt-br
-- tr-tr
+ms.openlocfilehash: f3cf117116f5da70391f5252e3d1bde4e2416b69
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
 ms.translationtype: HT
-ms.sourcegitcommit: eb5c9550fd29b0e98bf63a7240737da4f13f3249
-ms.openlocfilehash: b5f12c71a894937ad452a31bf53e19e4fbb2d7a2
-ms.contentlocale: fr-fr
-ms.lasthandoff: 09/06/2017
-
+ms.contentlocale: fr-FR
+ms.lasthandoff: 10/31/2017
 ---
 # <a name="step-5-add-enter-event-handlers-for-the-numericupdown-controls"></a>Étape 5 : ajouter des gestionnaires d'événements Enter pour les contrôles NumericUpDown
 Dans la cinquième partie de ce didacticiel, vous allez ajouter des gestionnaires d'événements Enter pour simplifier légèrement la saisie des réponses aux problèmes du questionnaire. Ce code sélectionne et efface la valeur actuelle de chaque contrôle NumericUpDown dès que la personne répondant au questionnaire le choisit et commence à entrer une autre valeur.  
@@ -70,7 +53,8 @@ Propriétés, boîte de dialogue
   
 3.  Dans la méthode du gestionnaire d’événements **answer_Enter**, ajoutez le code suivant.  
   
-     [!code-vb[VbExpressTutorial3Step5_6#11](../ide/codesnippet/VisualBasic/step-5-add-enter-event-handlers-for-the-numericupdown-controls_1.vb)]  [!code-csharp[VbExpressTutorial3Step5_6#11](../ide/codesnippet/CSharp/step-5-add-enter-event-handlers-for-the-numericupdown-controls_1.cs)]  
+     [!code-vb[VbExpressTutorial3Step5_6#11](../ide/codesnippet/VisualBasic/step-5-add-enter-event-handlers-for-the-numericupdown-controls_1.vb)]
+     [!code-csharp[VbExpressTutorial3Step5_6#11](../ide/codesnippet/CSharp/step-5-add-enter-event-handlers-for-the-numericupdown-controls_1.cs)]  
   
      Ce code peut sembler complexe, mais vous le comprendrez si vous l'examinez de manière détaillée. Commencez par analyser le haut de la méthode : `object sender` en C# ou `sender As System.Object` en Visual Basic. Ce paramètre désigne l'objet dont l'événement se déclenche, appelé l'expéditeur. Dans ce cas, l'objet expéditeur est le contrôle NumericUpDown. Ainsi, dans la première ligne de la méthode, vous indiquez que l'expéditeur n'est pas seulement un objet générique, mais plus précisément un contrôle NumericUpDown. (Chaque contrôle NumericUpDown est un objet, mais chaque objet n'est pas un contrôle NumericUpDown.) Le contrôle NumericUpDown est nommé **answerBox** dans cette méthode, car il sera utilisé pour tous les contrôles NumericUpDown du formulaire et pas seulement pour le contrôle NumericUpDown de somme. Comme vous déclarez la variable answerBox dans cette méthode, sa portée s'applique uniquement à cette méthode. En d'autres termes, la variable peut être utilisée uniquement dans cette méthode.  
   

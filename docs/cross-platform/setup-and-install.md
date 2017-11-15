@@ -7,31 +7,15 @@ ms.suite:
 ms.tgt_pltfrm: 
 ms.topic: article
 ms.assetid: 2cfcad00-352c-4161-814c-f5ae32d8ada8
-caps.latest.revision: 16
+caps.latest.revision: "16"
 author: ghogen
 ms.author: ghogen
 manager: ghogen
-translation.priority.ht:
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- ru-ru
-- zh-cn
-- zh-tw
-translation.priority.mt:
-- cs-cz
-- pl-pl
-- pt-br
-- tr-tr
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 47057e9611b824c17077b9127f8d2f8b192d6eb8
-ms.openlocfilehash: d353d8a0a41ad487191b79aa68f26585cf9902b4
-ms.contentlocale: fr-fr
-ms.lasthandoff: 05/13/2017
-
+ms.openlocfilehash: dba101890bd2f27c85e8e6053944d8781fa03ed4
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: HT
+ms.contentlocale: fr-FR
+ms.lasthandoff: 10/31/2017
 ---
 # <a name="setup-and-install"></a>Configurer et installer
 Pour générer des applications natives iOS, Android et Windows à partir d’une base de code C#/.NET commune en utilisant Xamarin, vous avez besoin des éléments suivants :  
@@ -74,13 +58,13 @@ Si vous rencontrez des problèmes d’utilisation de Xamarin après les phases d
   
 2.  Dans le programme d’installation, cliquez sur le bouton **Choix supplémentaires** (icône à trois barres) _à côté de_ **Lancer**, puis choisissez **Modifier** :  
   
-     ![Choisir l’option Modifier dans le programme d’installation de Visual Studio](~/cross-platform/media/cross-plat-xamarin-setup-1a.png "Configuration multiplateforme de Xamarin 1")  
+     ![Choisir l’option Modifier dans le programme d’installation de Visual Studio](../cross-platform/media/cross-plat-xamarin-setup-1a.png "Configuration multiplateforme de Xamarin 1")  
   
 3.  Cochez les cases suivantes :  
   
     1.  **Mobile et jeux > Développement mobile en .NET**. Différents outils Android sont aussi automatiquement sélectionnés sous Kits de développement logiciel (SDK) et outils courants. Cette option permet également de mettre à jour les installations Xamarin existantes.  
   
-         ![Sélectionner l’option Développement mobile sous Jeux et Développement mobile](~/cross-platform/media/cross-plat-xamarin-setup-2a.png "Configuration multiplateforme de Xamarin 2")  
+         ![Sélectionner l’option Développement mobile sous Jeux et Développement mobile](../cross-platform/media/cross-plat-xamarin-setup-2a.png "Configuration multiplateforme de Xamarin 2")  
   
     2. (Facultatif) **Windows > Développement pour la plateforme Windows universelle**. Des options y sont proposées pour l’installation d’images d’émulateurs dont le chargement prend davantage de temps : vous pouvez toujours revenir au programme d’installation de Visual Studio pour les ajouter ultérieurement. 
   

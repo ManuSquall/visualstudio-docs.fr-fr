@@ -4,34 +4,18 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-devops-test
+ms.technology: vs-devops-test
 ms.tgt_pltfrm: 
 ms.topic: article
 ms.assetid: adb6c011-5abd-41d2-8ead-08cd7579bf37
-caps.latest.revision: 12
+caps.latest.revision: "12"
 ms.author: douge
 manager: douge
-translation.priority.ht:
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- ru-ru
-- zh-cn
-- zh-tw
-translation.priority.mt:
-- cs-cz
-- pl-pl
-- pt-br
-- tr-tr
-translationtype: Human Translation
-ms.sourcegitcommit: 5ab78b6b8eaa8156ed2c8a807b1d8a80e75afa84
-ms.openlocfilehash: 0009feca183c184417be7caec5de9f482e4ecf57
-ms.lasthandoff: 04/04/2017
-
+ms.openlocfilehash: d7a899e16d79ba2aae40506eb3cd6739dcdb4397
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.translationtype: HT
+ms.contentlocale: fr-FR
+ms.lasthandoff: 10/27/2017
 ---
 # <a name="how-to-configure-unit-tests-to-target-an-earlier-version-of-the-net-framework"></a>Guide pratique pour configurer des tests unitaires et cibler une version antérieure du .NET Framework
 Quand vous créez un projet de test dans Microsoft Visual Studio, la version la plus récente du .NET Framework est définie en tant que cible, par défaut. De plus, si vous mettez à niveau des projets de test à partir de versions antérieures de Visual Studio, ceux-ci sont mis à niveau pour cibler la version la plus récente du .NET Framework. En modifiant les propriétés du projet, vous pouvez recibler explicitement le projet vers des versions antérieures du .NET Framework.  
@@ -146,4 +130,3 @@ Quand vous créez un projet de test dans Microsoft Visual Studio, la version la 
  [Créer des solutions SharePoint](/office-dev/office-dev/create-sharepoint-solutions)   
  [Génération et débogage de solutions SharePoint](/office-dev/office-dev/building-and-debugging-sharepoint-solutions)   
  [Paramètres avancés du compilateur, boîte de dialogue (Visual Basic)](../ide/reference/advanced-compiler-settings-dialog-box-visual-basic.md)
-

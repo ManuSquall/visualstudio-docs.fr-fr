@@ -4,8 +4,7 @@ ms.custom:
 ms.date: 06/05/2017
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-general
+ms.technology: vs-ide-general
 ms.tgt_pltfrm: 
 ms.topic: article
 helpviewer_keywords:
@@ -15,31 +14,15 @@ helpviewer_keywords:
 - Code Snippet Inserter [C#]
 - Visual C#, default snippets
 ms.assetid: dbea3dd6-e650-4190-b874-c9f097d7de6e
-caps.latest.revision: 33
-author: kempb
-ms.author: kempb
+caps.latest.revision: "33"
+author: gewarren
+ms.author: gewarren
 manager: ghogen
-translation.priority.ht:
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- ru-ru
-- zh-cn
-- zh-tw
-translation.priority.mt:
-- cs-cz
-- pl-pl
-- pt-br
-- tr-tr
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 5f996aff0c247db658f3b9f1fec666792751ae11
-ms.openlocfilehash: 407ef81649de1c62d91d5a79535a8f9c67feb97c
-ms.contentlocale: fr-fr
-ms.lasthandoff: 06/06/2017
-
+ms.openlocfilehash: 72e0e00fb5495946adcd7f47de8cdc2d6e0d32dc
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: HT
+ms.contentlocale: fr-FR
+ms.lasthandoff: 10/31/2017
 ---
 # <a name="visual-c-code-snippets"></a>Extraits de code Visual C#
 Les extraits de code sont des extraits prêts à l’emploi que vous pouvez rapidement insérer dans votre code. Par exemple, l’extrait de code `for` crée une boucle `for` vide. Certains extraits de code sont des extraits « Entourer de ». Il vous permettent de sélectionner des lignes de code, puis de choisir un extrait de code qui incorpore les lignes sélectionnées. Par exemple, quand vous sélectionnez des lignes de code et que vous activez l’extrait de code `for`, cela crée une boucle `for` avec ces lignes de code dans le bloc de boucle. Les extraits de code peuvent accélérer, simplifier et fiabiliser l’écriture de code de programme.  
@@ -97,4 +80,3 @@ Les extraits de code sont des extraits prêts à l’emploi que vous pouvez rapi
  [Extraits de code](../ide/code-snippets.md)   
  [Paramètres de modèle](../ide/template-parameters.md)   
  [Guide pratique pour utiliser des extraits de code Entourer de](../ide/how-to-use-surround-with-code-snippets.md)   
-

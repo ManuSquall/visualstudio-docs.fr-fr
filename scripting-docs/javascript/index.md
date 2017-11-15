@@ -1,12 +1,11 @@
 ---
 layout: LandingPage
-title: JavaScript dans Visual Studio
+title: JavaScript dans Visual Studio | Microsoft Docs
+ms.openlocfilehash: 839a6ec136700c373fa5d29ce50b785c85275057
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
 ms.translationtype: HT
-ms.sourcegitcommit: 03c2a8902e7687be4da40d95f408eda7e4086acb
-ms.openlocfilehash: 36ac77e9c563bd7e0019cffdd302a7ae7d68f663
-ms.contentlocale: fr-fr
-ms.lasthandoff: 09/06/2017
-
+ms.contentlocale: fr-FR
+ms.lasthandoff: 10/31/2017
 ---
 # <a name="javascript-in-visual-studio"></a>JavaScript dans Visual Studio
 

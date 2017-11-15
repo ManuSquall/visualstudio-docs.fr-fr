@@ -4,8 +4,7 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-general
+ms.technology: vs-ide-general
 ms.tgt_pltfrm: 
 ms.topic: article
 helpviewer_keywords:
@@ -14,29 +13,15 @@ helpviewer_keywords:
 - member notation
 - notation, association
 ms.assetid: 65881c5a-d251-4a36-ad0d-73d088436092
-caps.latest.revision: 21
-author: kempb
-ms.author: kempb
+caps.latest.revision: "21"
+author: gewarren
+ms.author: gewarren
 manager: ghogen
-translation.priority.ht:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
-translationtype: Human Translation
-ms.sourcegitcommit: 5db97d19b1b823388a465bba15d057b30ff0b3ce
-ms.openlocfilehash: 30bacff7a117cd1e6bdf7a234652177cbc50b0f2
-ms.lasthandoff: 02/22/2017
-
+ms.openlocfilehash: 6cee0c289c67bb67213e963635334e96101ac690
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: HT
+ms.contentlocale: fr-FR
+ms.lasthandoff: 10/31/2017
 ---
 # <a name="how-to-change-between-member-notation-and-association-notation-class-designer"></a>Comment : changer la notation entre les membres et les associations (Concepteur de classes)
 Dans le Concepteur de classes, vous pouvez modifier la façon dont le diagramme de classes représente une relation d’association entre deux types, en passant de la notation membre à la notation association et vice versa. Les membres affichés sous forme de lignes d’association fournissent souvent une visualisation utile pour comprendre la relation entre les types.  

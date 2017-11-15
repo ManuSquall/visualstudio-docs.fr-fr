@@ -4,8 +4,7 @@ ms.custom:
 ms.date: 06/21/2017
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-general
+ms.technology: vs-ide-general
 ms.tgt_pltfrm: 
 ms.topic: article
 helpviewer_keywords:
@@ -15,30 +14,15 @@ helpviewer_keywords:
 - imported namespaces [Visual Studio]
 - references [Visual Studio], imported namespaces
 ms.assetid: 44cebec3-0ea0-47c2-8406-4edeab6a997e
-caps.latest.revision: 11
+caps.latest.revision: "11"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-translation.priority.ht:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
-ms.translationtype: Human Translation
-ms.sourcegitcommit: d2f4eba36e9069a35cf279ccf1c78f72a51d77a1
-ms.openlocfilehash: f512673808ae3fab2fdcca39b58f77ca5df93e05
-ms.contentlocale: fr-fr
-ms.lasthandoff: 06/23/2017
-
+ms.openlocfilehash: 43947a2e239833459923f6991d4ee54d12876fe3
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: HT
+ms.contentlocale: fr-FR
+ms.lasthandoff: 10/31/2017
 ---
 # <a name="how-to-add-or-remove-imported-namespaces-visual-basic"></a>Guide pratique pour ajouter ou supprimer des espaces de noms importés (Visual Basic)
 L’importation d’un espace de noms vous permet d’utiliser des éléments issus de cet espace de noms dans votre code sans avoir à qualifier complètement l’élément. Par exemple, pour accéder à la méthode `Create` dans la classe `System.Messaging.MessageQueue`, vous pouvez importer l’espace de noms `System.Messaging` et simplement référencer l’élément dont vous avez besoin dans le code sous la forme `MessageQueue.Create`.  
@@ -96,4 +80,3 @@ L’importation d’un espace de noms vous permet d’utiliser des éléments is
 
 ## <a name="see-also"></a>Voir aussi  
  [Gestion des références dans un projet](../ide/managing-references-in-a-project.md)
-

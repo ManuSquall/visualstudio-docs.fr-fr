@@ -4,35 +4,19 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-general
+ms.technology: vs-ide-general
 ms.tgt_pltfrm: 
 ms.topic: article
 ms.assetid: d727efc0-1096-4ede-84b6-31a65da22ac0
-caps.latest.revision: 6
+caps.latest.revision: "6"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-translation.priority.ht:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
+ms.openlocfilehash: d1f725429e1b63be097a4563ab9e26d1f374cc61
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
 ms.translationtype: HT
-ms.sourcegitcommit: 359e1eb5df8f19774d352ace631802367b6dd8c9
-ms.openlocfilehash: 481153e7f3d609c56f313ff5ee9f3f1b511dc5ef
-ms.contentlocale: fr-fr
-ms.lasthandoff: 07/11/2017
-
+ms.contentlocale: fr-FR
+ms.lasthandoff: 10/31/2017
 ---
 # <a name="managing-project-and-solution-properties"></a>Gestion des propriétés des projets et des solutions
 Les projets ont des propriétés qui régissent de nombreux aspects de la compilation, du débogage, du test et du déploiement. Certaines propriétés sont communes à tous les types de projets, et certaines sont particulières à des langages ou des plateformes spécifiques. Vous accédez aux propriétés d’un projet en cliquant avec le bouton droit sur le nœud du projet dans l’Explorateur de solutions et en sélectionnant Propriétés, ou en tapant le nom des propriétés dans la zone de recherche **Lancement rapide** dans la barre de menus.  
@@ -68,4 +52,3 @@ Les projets ont des propriétés qui régissent de nombreux aspects de la compil
   
 ## <a name="see-also"></a>Voir aussi  
  [Solutions et projets dans Visual Studio](../ide/solutions-and-projects-in-visual-studio.md)
-

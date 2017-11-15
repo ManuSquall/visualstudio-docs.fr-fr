@@ -5,14 +5,12 @@ ms.author: amburns
 ms.date: 07/13/2017
 ms.topic: article
 ms.assetid: 6E8B0C90-33D6-4546-8207-CE0787584565
+ms.openlocfilehash: b494128a26691f9916a0fe2380a5f403e61d21d4
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
 ms.translationtype: HT
-ms.sourcegitcommit: e2b7ff9126e1cc38ac2e58d6be339b656a024e7f
-ms.openlocfilehash: 9e7d7314240688c1acbf064a53ba182b92833a60
-ms.contentlocale: fr-fr
-ms.lasthandoff: 08/11/2017
-
+ms.contentlocale: fr-FR
+ms.lasthandoff: 10/27/2017
 ---
-
 # <a name="getting-started-with-aspnet-core"></a>Bien démarrer avec ASP.NET Core
 
  Visual Studio pour Mac facilite le développement du service de votre application avec sa prise en charge pour la plateforme de développement web ASP.NET Core la plus récente. ASP.NET Core s’exécute sur .NET Core, qui est l’évolution la plus récente du .NET Framework et du runtime. Il a été optimisé pour accélérer les performances, conçu pour des tailles d’installation réduites et réinventé pour s’exécuter sur Linux et macOS, ainsi que sur Windows.
@@ -29,7 +27,7 @@ Ouvrez Visual Studio pour Mac. Sur l’écran d’accueil, sélectionnez **Nouve
 
 La boîte de dialogue Nouveau projet s’affiche et vous permet de sélectionner un modèle pour créer votre application.
 
-Il existe un grand nombre de projets qui vous offrent un modèle prédéfini pour commencer à créer votre application ASP.NET Core. Ces projets sont :
+Il existe un grand nombre de projets qui vous offrent un modèle prédéfini pour commencer à créer votre application ASP.NET Core. Ces équivalents sont :
 
 - **.NET Core > Application web vide ASP.NET Core**
 - **.NET Core > Application web ASP.NET Core**
@@ -63,7 +61,7 @@ public static void Main(string[] args)
     host.Run();
 }
 ```
-Une application ASP.NET Core crée un serveur web dans sa méthode main en configurant et en lançant un hôte via une instance de [ `WebHostBuilder` ](https://docs.microsoft.com/en-us/aspnet/core/fundamentals/hosting). Ce générateur fournit des méthodes pour permettre la configuration de l’hôte. Dans le modèle d’application, les configurations suivantes sont utilisées :
+Une application ASP.NET Core crée un serveur web dans sa méthode main en configurant et en lançant un hôte via une instance de [ `WebHostBuilder` ](https://docs.microsoft.com/aspnet/core/fundamentals/hosting). Ce générateur fournit des méthodes pour permettre la configuration de l’hôte. Dans le modèle d’application, les configurations suivantes sont utilisées :
 
  * `UseKestrel` : spécifie que le serveur Kestrel est utilisé par l’application
  * `UseContentRoot(Directory.GetCurrentDirectory())` : utilise le dossier racine du projet web comme racine du contenu de l’application quand l’application est démarrée à partir de ce dossier
@@ -109,7 +107,7 @@ Cette classe Startup doit toujours respecter les règles suivantes :
 
 La méthode `ConfigureServices` définit les services qui seront utilisés par votre application.
 
-La méthode `Configure` vous permet de composer votre pipeline de demandes à l’aide de [middleware](https://docs.microsoft.com/en-us/aspnet/core/fundamentals/middleware). Il s’agit des composants utilisés au sein d’un pipeline d’application ASP.NET pour gérer les demandes et les réponses. Le pipeline HTTP se compose d’un certain nombre de délégués de demande, appelés en séquence. Chaque délégué peut choisir de gérer la demande proprement dite ou de la passer au délégué suivant.
+La méthode `Configure` vous permet de composer votre pipeline de demandes à l’aide de [middleware](https://docs.microsoft.com/aspnet/core/fundamentals/middleware). Il s’agit des composants utilisés au sein d’un pipeline d’application ASP.NET pour gérer les demandes et les réponses. Le pipeline HTTP se compose d’un certain nombre de délégués de demande, appelés en séquence. Chaque délégué peut choisir de gérer la demande proprement dite ou de la passer au délégué suivant.
 
 Vous pouvez configurer des délégués en utilisant les méthodes `Run`, `Map` et `Use` sur `IApplicationBuilder`, mais la méthode `Run` n’appelle jamais le délégué suivant et doit toujours être utilisée à la fin de votre pipeline.
 
@@ -135,7 +133,7 @@ Les applications ASP.NET Core utilisent le modèle de conception MVC (Modèle-Vu
 - **Vue** : affiche l’interface utilisateur de l’application (qui est souvent constituée des données du modèle).
 - **Contrôleur** : classe qui gère les demandes du navigateur et qui répond aux entrées et aux interactions de l’utilisateur.
 
-Pour plus d’informations sur l’utilisation du modèle MVC, consultez le guide [Vue d’ensemble du modèle MVC d’ASP.NET Core](https://docs.microsoft.com/en-us/aspnet/core/mvc/overview).
+Pour plus d’informations sur l’utilisation du modèle MVC, consultez le guide [Vue d’ensemble du modèle MVC d’ASP.NET Core](https://docs.microsoft.com/aspnet/core/mvc/overview).
 
 Pour ajouter un contrôleur, procédez comme suit :
 
@@ -237,4 +235,3 @@ Pour plus d’informations sur les étapes à suivre à partir d’ici, consulte
 - Documentation [ASP.NET Core](https://docs.microsoft.com/aspnet/core/#build-web-ui-and-web-apis-using-aspnet-core-mvc).
 - [Création de services backend pour les applications mobiles natives](https://docs.microsoft.com/aspnet/core/mobile/native-mobile-backend), qui montre comment créer un service REST en utilisant ASP.NET Core pour une application Xamarin.Forms.
 - [Ateliers pratiques ASP.NET Core](https://github.com/Microsoft/vs4mac-labs/tree/master/Web/Getting-Started).
-

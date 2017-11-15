@@ -1,20 +1,18 @@
 ---
-title: Comptes d'utilisateur
+title: Comptes d'utilisateurs
 description: 
 author: asb3993
 ms.author: amburns
 ms.date: 04/14/2017
 ms.topic: article
 ms.assetid: 17AB4F31-4921-4B4E-8D9D-95FB84294521
-ms.translationtype: HT
-ms.sourcegitcommit: e2b7ff9126e1cc38ac2e58d6be339b656a024e7f
 ms.openlocfilehash: 943839be61cba45b430a92ee0eaf833f4a35c9a8
-ms.contentlocale: fr-fr
-ms.lasthandoff: 08/11/2017
-
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.translationtype: HT
+ms.contentlocale: fr-FR
+ms.lasthandoff: 10/27/2017
 ---
-
-# <a name="user-accounts"></a>Comptes d'utilisateur
+# <a name="user-accounts"></a>Comptes d'utilisateurs
 
 Une fois que vous avez téléchargé et installé Visual Studio pour Mac, vous devez vous connecter pour activer votre licence et accéder à l’édition Community, Professional ou Enterprise de Xamarin Studio.
 

@@ -7,44 +7,28 @@ ms.suite:
 ms.tgt_pltfrm: 
 ms.topic: article
 ms.assetid: ac600581-8fc8-49e3-abdf-1569a3483d74
-caps.latest.revision: 5
+caps.latest.revision: "5"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-translation.priority.ht:
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- ru-ru
-- zh-cn
-- zh-tw
-translation.priority.mt:
-- cs-cz
-- pl-pl
-- pt-br
-- tr-tr
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 5db97d19b1b823388a465bba15d057b30ff0b3ce
-ms.openlocfilehash: 138f318b84044a1ed8a92f9b2ee7b47b2211cdb7
-ms.contentlocale: fr-fr
-ms.lasthandoff: 02/22/2017
-
+ms.openlocfilehash: 6bf9220205e35a0c72d3812e1943154c6fedeacd
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: HT
+ms.contentlocale: fr-FR
+ms.lasthandoff: 10/31/2017
 ---
 # <a name="debugging-or-disabling-project-code-in-xaml-designer"></a>Débogage ou désactivation de code de projet dans le concepteur XAML
 Dans bien des cas, les exceptions non gérées dans le concepteur XAML peuvent être provoquées par le code de projet, qui tente d’accéder à des propriétés ou méthodes qui retournent des valeurs différentes ou qui fonctionnent de manière différente quand votre application s’exécute dans le concepteur. Vous pouvez résoudre ces exceptions en déboguant le code du projet dans une autre instance de Visual Studio, voire les éviter temporairement en désactivant le code de projet dans le concepteur.  
   
  Le code de projet est constitué des éléments suivants :  
   
--   Contrôles personnalisés et contrôles utilisateur  
+-   contrôles personnalisés et contrôles utilisateur ;  
   
--   Bibliothèques de classes  
+-   bibliothèques de classes ;  
   
--   Convertisseurs de valeurs  
+-   convertisseurs de valeurs ;  
   
--   Liaisons avec des données au moment de la conception générées à partir du code de projet  
+-   liaisons avec des données au moment de la conception générées à partir du code de projet.  
   
  Quand le code de projet est désactivé, Visual Studio affiche des espaces réservés. Pour une liaison, il peut s’agir du nom de la propriété dans le cas où les données ne sont plus disponibles ou bien un espace réservé pour un contrôle qui n’est plus en cours d’exécution.  
   

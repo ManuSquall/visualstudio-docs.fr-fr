@@ -4,38 +4,22 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-general
+ms.technology: vs-ide-general
 ms.tgt_pltfrm: 
 ms.topic: article
 helpviewer_keywords:
 - Class Designer, partial classes
 - partial classes, Class Designer
 ms.assetid: 6f6b0b30-3996-4569-9200-20482b3adf90
-caps.latest.revision: 10
+caps.latest.revision: "10"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-translation.priority.ht:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
+ms.openlocfilehash: 7ae5781c965c4c80dcb592d8638408b109fd60d7
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
 ms.translationtype: HT
-ms.sourcegitcommit: ea1e787c1d509123a650cf2bd20e5fa8bffd5b4e
-ms.openlocfilehash: 71fc125328c3e4fe56a4241bf48b1a1b84077cde
-ms.contentlocale: fr-fr
-ms.lasthandoff: 09/26/2017
-
+ms.contentlocale: fr-FR
+ms.lasthandoff: 10/31/2017
 ---
 # <a name="how-to-split-a-class-into-partial-classes-class-designer"></a>Comment : fractionner une classe en classes partielles (Concepteur de classes)
 Vous pouvez diviser la déclaration d’une classe ou d’une structure en plusieurs déclarations à l’aide du mot clé `Partial` en Visual Basic ou du mot clé `partial` en Visual C#. Vous pouvez utiliser autant de déclarations partielles que vous le souhaitez, dans autant de fichiers sources que vous le souhaitez ou dans un même fichier source. Toutefois, toutes les déclarations doivent être dans le même assembly et le même espace de noms.  

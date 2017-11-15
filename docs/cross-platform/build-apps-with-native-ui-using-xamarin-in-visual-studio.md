@@ -4,36 +4,19 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- tgt-pltfrm-cross-plat
+ms.technology: tgt-pltfrm-cross-plat
 ms.tgt_pltfrm: 
 ms.topic: article
 ms.assetid: 30f137e6-595d-4ce7-b8f5-415b07c1caa2
-caps.latest.revision: 31
+caps.latest.revision: "31"
 author: ghogen
 ms.author: ghogen
 manager: ghogen
-translation.priority.ht:
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- ru-ru
-- zh-cn
-- zh-tw
-translation.priority.mt:
-- cs-cz
-- pl-pl
-- pt-br
-- tr-tr
+ms.openlocfilehash: 92bd6ea136c30c02e32045692d311afe93b86296
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
 ms.translationtype: HT
-ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
-ms.openlocfilehash: e743915718ae035e8fbe804076552f10f2682dfd
-ms.contentlocale: fr-fr
-ms.lasthandoff: 09/26/2017
-
+ms.contentlocale: fr-FR
+ms.lasthandoff: 10/31/2017
 ---
 # <a name="build-apps-with-native-ui-using-xamarin-in-visual-studio"></a>Générer des applications Xamarin avec une interface utilisateur native dans Visual Studio
 Une fois que vous avez effectué les étapes dans [Configurer et installer](../cross-platform/setup-and-install.md) et [Vérifier votre environnement Xamarin](../cross-platform/verify-your-xamarin-environment.md), cette procédure pas à pas vous montre comment générer une application Xamarin de base (ci-dessous) avec des couches d’IU (interface utilisateur) natives. Avec une IU native, le code partagé réside dans une bibliothèque de classes portable (PCL), et les projets de plateforme individuels contiennent les définitions d’IU.  

@@ -4,33 +4,18 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-devops-test
+ms.technology: vs-devops-test
 ms.tgt_pltfrm: 
 ms.topic: article
 ms.assetid: 2000b214-ae92-4334-b549-aa0eb4f45fe1
-caps.latest.revision: 17
+caps.latest.revision: "17"
 ms.author: douge
 manager: douge
-translation.priority.ht:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
-translationtype: Human Translation
-ms.sourcegitcommit: 5ab78b6b8eaa8156ed2c8a807b1d8a80e75afa84
-ms.openlocfilehash: 834f53c8d75a06de69f1afe682a0a0b1863dfde0
-ms.lasthandoff: 04/04/2017
-
+ms.openlocfilehash: 3e2e14748e27d965762b3245908382b278e6e132
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.translationtype: HT
+ms.contentlocale: fr-FR
+ms.lasthandoff: 10/27/2017
 ---
 # <a name="using-html5-controls-in-coded-ui-tests"></a>Utilisation de contrôles HTML5 dans des tests codés de l'interface utilisateur
 Les tests codés de l'interface utilisateur incluent la prise en charge d'une partie des contrôles HTML5 inclus dans Internet Explorer 9 et Internet Explorer 10.  
@@ -59,7 +44,7 @@ Les tests codés de l'interface utilisateur incluent la prise en charge d'une pa
 ###  <a name="UsingHTML5ControlsCodedUITestsAudio"></a> Contrôle Audio  
  **Contrôle Audio :** les actions sur le contrôle Audio HTML5 sont correctement enregistrées et lues.  
   
- ![Contrôle Audio HTML5](~/test/media/codedui_html5_audio.png "CodedUI_HTML5_Audio")  
+ ![Contrôle Audio HTML5](../test/media/codedui_html5_audio.png "CodedUI_HTML5_Audio")  
   
 |Action|Enregistrement|Code généré|  
 |------------|---------------|--------------------|  
@@ -102,7 +87,7 @@ string Volume
 ###  <a name="UsingHTML5ControlsCodedUITestsVideo"></a> Contrôle Video  
  **Contrôle Video :** les actions sur le contrôle Video HTML5 sont correctement enregistrées et lues.  
   
- ![Contrôle Video HTML5](~/test/media/codedui_html5_video.png "CodedUI_HTML5_Video")  
+ ![Contrôle Video HTML5](../test/media/codedui_html5_video.png "CodedUI_HTML5_Video")  
   
 |Action|Enregistrement|Code généré|  
 |------------|---------------|--------------------|  
@@ -132,7 +117,7 @@ string VideoWidth
 ###  <a name="UsingHTML5ControlsCodedUITestsSlider"></a> Slider  
  **Contrôle Slider :** les actions sur le contrôle Slider HTML5 sont correctement enregistrées et lues.  
   
- ![Contrôle Slider HTML5](~/test/media/codedui_html5_slider.png "CodedUI_HTML5_Slider")  
+ ![Contrôle Slider HTML5](../test/media/codedui_html5_slider.png "CodedUI_HTML5_Slider")  
   
 |Action|Enregistrement|Code généré|  
 |------------|---------------|--------------------|  
@@ -152,7 +137,7 @@ string ValueAsNumber
 ###  <a name="UsingHTML5ControlsCodedUITestsProgressbar"></a> ProgressBar  
  **Contrôle ProgressBar :** ProgressBar est un contrôle sur lequel il n’est pas possible d’interagir. Vous pouvez ajouter des assertions sur les propriétés `Value` et `Max` de ce contrôle.  
   
- ![Contrôle ProgressBar HTML5](~/test/media/codedui_html5_progressbar.png "CodedUI_HTML5_ProgressBar")  
+ ![Contrôle ProgressBar HTML5](../test/media/codedui_html5_progressbar.png "CodedUI_HTML5_ProgressBar")  
   
 ## <a name="see-also"></a>Voir aussi  
  [Éléments HTML](http://go.microsoft.com/fwlink/?LinkID=232441)   
@@ -160,4 +145,3 @@ string ValueAsNumber
  [Création de tests codés de l’interface utilisateur](../test/use-ui-automation-to-test-your-code.md#VerifyingCodeUsingCUITCreate)   
  [Personnalisation de votre test codé de l’interface utilisateur](../test/use-ui-automation-to-test-your-code.md#VerifyingCodeCUITModify)   
  [Plateformes et configurations prises en charge pour les tests codés de l’interface utilisateur et les enregistrements des actions](../test/supported-configurations-and-platforms-for-coded-ui-tests-and-action-recordings.md)
-

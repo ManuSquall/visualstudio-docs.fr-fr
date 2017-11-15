@@ -5,14 +5,12 @@ ms.author: amburns
 ms.date: 04/14/2017
 ms.topic: article
 ms.assetid: 4C1B7952-CD45-4132-AD6B-01CF993D83F8
-ms.translationtype: HT
-ms.sourcegitcommit: e2b7ff9126e1cc38ac2e58d6be339b656a024e7f
 ms.openlocfilehash: a00b4a38c0e1aeaf520ba84278109feb1758f2f0
-ms.contentlocale: fr-fr
-ms.lasthandoff: 08/11/2017
-
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.translationtype: HT
+ms.contentlocale: fr-FR
+ms.lasthandoff: 10/27/2017
 ---
-
 # <a name="editor-themes"></a>Thèmes de l’éditeur
 Les thèmes de l’éditeur peuvent être changés pour un des dix jeux de couleurs fournis par défaut dans Visual Studio pour Mac via les options de menu **Visual Studio > Préférences... > Éditeur de texte > Thèmes de couleurs** :
 
@@ -35,4 +33,3 @@ Une fois que vous avez trouvé ou créé un nouveau thème, et que vous l’avez
 2. Recherchez le thème sur votre machine locale et cliquez sur **Ouvrir**.
 3. Ceci ajoute le thème dans le bas de la liste des thèmes préinstallés. Pour en afficher un aperçu, sélectionnez-le. Ceci met à jour votre éditeur en arrière-plan : ![Aperçu du thème de couleurs](media/source-editor-image21.png)
 4. Pour l’appliquer, cliquez sur le bouton **OK**. 
-

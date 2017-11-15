@@ -6,19 +6,17 @@ ms.author: amburns
 ms.date: 04/14/2017
 ms.topic: article
 ms.assetid: E4B6CB42-9FE2-43B9-93B7-BD4BD50518B1
-ms.translationtype: HT
-ms.sourcegitcommit: e2b7ff9126e1cc38ac2e58d6be339b656a024e7f
 ms.openlocfilehash: 849b52cff3fa85bcfb0b10c43a490d1a5fb40760
-ms.contentlocale: fr-fr
-ms.lasthandoff: 08/11/2017
-
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.translationtype: HT
+ms.contentlocale: fr-FR
+ms.lasthandoff: 10/27/2017
 ---
-
 # <a name="building-and-cleaning-projects-and-solutions"></a>Génération et nettoyage des projets et des solutions
 
 Suivez les étapes décrites dans cette rubrique pour savoir comment générer, regénérer et nettoyer votre solution et votre projet.
 
-## <a name="to-build-rebuild-or-clean-an-entire-solution"></a>Pour générer, regénérer ou nettoyer une solution entière
+## <a name="to-build-rebuild-or-clean-an-entire-solution"></a>Pour générer, régénérer ou nettoyer une solution entière
 
 Pour générer, regénérer ou nettoyer une solution entière :
 
@@ -36,7 +34,7 @@ Pour générer, regénérer ou nettoyer une solution entière :
 
 
 
-## <a name="to-build-or-rebuild-a-single-project"></a>Pour générer ou regénérer un projet unique
+## <a name="to-build-or-rebuild-a-single-project"></a>Pour générer ou régénérer un projet unique
 
 1. Dans le panneau Solution, sélectionnez le projet.
 

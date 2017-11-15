@@ -1,45 +1,12 @@
 ---
-title: "Bien démarrer avec Visual Studio | Microsoft Docs"
-description: "Découvrez comment bien démarrer avec Visual Studio."
-ms.custom: 
-ms.date: 03/02/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: 
-ms.topic: article
-helpviewer_keywords:
-- Visual Studio, getting started
-ms.assetid: 38e90339-1da5-410c-8ba4-437fc556cba7
-caps.latest.revision: 65
-author: kempb
-ms.author: kempb
-manager: ghogen
-translation.priority.ht:
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- ru-ru
-- zh-cn
-- zh-tw
-translation.priority.mt:
-- cs-cz
-- pl-pl
-- pt-br
-- tr-tr
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 47057e9611b824c17077b9127f8d2f8b192d6eb8
-ms.openlocfilehash: 078619c93e18fd25dfbc728d75835f5af58988fe
-ms.contentlocale: fr-fr
-ms.lasthandoff: 05/13/2017
-
+redirect_url: ../ide/visual-studio-ide
+ms.openlocfilehash: a615a3a6da289f265e350d529349f1fb6ba6865f
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.translationtype: HT
+ms.contentlocale: fr-FR
+ms.lasthandoff: 10/27/2017
 ---
 # <a name="get-started-with-visual-studio"></a>Bien démarrer avec Visual Studio
-
 Visual Studio est un outil puissant pour développer vos applications. Si ce n’est déjà fait, téléchargez et installez [Visual Studio](https://www.visualstudio.com/vs/). Regardez la vidéo sur la [mise en route de Visual Studio et la configuration de votre environnement de développement intégré](https://www.youtube.com/watch?v=xLCedknQkN0&list=PLReL099Y5nRfw6VNvzMkv0sabT2crbSpK&index=1) pour plus d’informations sur le téléchargement et la configuration de Visual Studio.
 
 ## <a name="visual-studio-tour"></a>Visite guidée de Visual Studio
@@ -55,7 +22,6 @@ L’éditeur de code permet d’accélérer l’écriture du code grâce à des 
 Certains types de solutions peuvent inclure des fenêtres appelées *formulaires*, comme, par exemple, des formulaires Windows Presentation Foundation (WPF), des formulaires Windows, des formulaires Extensible Application Markup Language (XAML). Dans ces cas-là, vous verrez également un concepteur visuel dans cet espace, qui vous permet de glisser et déposer des contrôles, tels que des boutons et des zones de liste vers le formulaire avec lequel les utilisateurs interagissent lorsqu’ils exécutent votre application.
 
 ### <a name="solution-explorer"></a>Explorateur de solutions
-
 Une fenêtre d’outils appelée **Explorateur de solutions** répertorie tous les fichiers de votre code. L’Explorateur de solutions peut vous aider à organiser votre code en regroupant ses fichiers dans des projets et des solutions. Le projet en gras est appelé *projet de démarrage*. Il s’agit du premier code qui s’exécute quand vous démarrez votre solution. Vous pouvez modifier le projet de démarrage. Pour plus d’informations, regardez la vidéo sur la [mise en route de Visual Studio et les composantes de l’environnement de développement intégré](https://www.youtube.com/watch?v=JHc3_gsCmZg&index=2&list=PLReL099Y5nRfw6VNvzMkv0sabT2crbSpK).
 
 ![Nœuds réduits dans l’Explorateur de solutions](../ide/media/VSIDE_SolutionExplorer2_callouts.png)
@@ -100,7 +66,6 @@ Pour en savoir plus sur l’utilisation de la fenêtre de sortie pour le déboga
 - **Vidéos** - Pour plus d’informations sur les autres fonctionnalités et aspects de Visual Studio, regardez les vidéos sur le [canal de Microsoft Visual Studio](https://www.youtube.com/user/VisualStudio/videos) sur YouTube ou les vidéos Visual Studio sur [Channel 9](https://channel9.msdn.com/Tags/visual+studio) ou sur la [Microsoft Virtual Academy](https://mva.microsoft.com/product-training/visual-studio-courses#!jobf=Developer).
 
 ## <a name="access-cloud-based-resources"></a>Accéder aux ressources cloud
-
 Si vous souhaitez utiliser des ressources cloud dans votre application ou votre jeu, vous pouvez inclure des [services Azure](https://azure.microsoft.com/en-us/services/). Vous pouvez obtenir le kit de développement logiciel SDK Azure pour .NET en installant la charge de travail de **développement Azure** à l’aide du nouveau programme d’installation de Visual Studio. Les packages installés sont au même niveau de fonctionnalité que la version 2.9.5 du kit SDK. Pour cette version de Visual Studio et toutes les versions futures, le kit SDK Azure pour .NET est seulement disponible à partir du programme d’installation de Visual Studio.
 
 Une fois la charge de travail de développement Azure installée, une nouvelle fenêtre d’outils appelée **Cloud Explorer** devient disponible dans Visual Studio. Cloud Explorer vous permet de parcourir et de gérer vos ressources Azure à partir de Visual Studio. Si une opération particulière nécessite le portail Azure, Cloud Explorer fournit des liens vers l’emplacement du portail Azure auquel vous devez accéder.
@@ -118,4 +83,3 @@ Pour obtenir des raccourcis et des conseils et astuces pratiques qui vous permet
 - [C++ Debugging Tips and Tricks (Conseils et astuces pour le débogage C++)](https://channel9.msdn.com/Shows/Visual-Studio-Toolbox/C-Plus-Plus-Debugging-Tips-and-Tricks)
 - [Visual Studio’s most useful (and underused) tips (Conseils les plus utiles relatifs à Visual Studio) [Blog de Scott Hanselman]](https://www.hanselman.com/blog/VisualStudiosMostUsefulAndUnderusedTips.aspx)
 - [Getting Started with Visual Studio - Installing Visual Studio extensions (Bien démarrer avec Visual Studio - Installation des extensions Visual Studio)](https://www.youtube.com/watch?v=MWLLQaknRZY&list=PLReL099Y5nRfw6VNvzMkv0sabT2crbSpK&index=7)
-

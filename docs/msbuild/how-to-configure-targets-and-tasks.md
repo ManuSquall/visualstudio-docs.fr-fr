@@ -4,34 +4,19 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-sdk
+ms.technology: vs-ide-sdk
 ms.tgt_pltfrm: 
 ms.topic: article
 ms.assetid: 92814100-392a-471d-96fd-e26f637d6cc2
-caps.latest.revision: 5
+caps.latest.revision: "5"
 author: kempb
 ms.author: kempb
 manager: ghogen
-translation.priority.ht:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
-translationtype: Human Translation
-ms.sourcegitcommit: ce1142acf4acb0e44e85b7e9ab313136d7ed7727
-ms.openlocfilehash: 0ef80ff90b0182405f72f9413de13b699aed971d
-ms.lasthandoff: 03/28/2017
-
+ms.openlocfilehash: 69669acc9cc0815dc8df0c88172213ad3e3698f9
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: HT
+ms.contentlocale: fr-FR
+ms.lasthandoff: 10/31/2017
 ---
 # <a name="how-to-configure-targets-and-tasks"></a>Guide pratique pour configurer les cibles et les tâches
 Des tâches MSBuild sélectionnées peuvent être définies pour s’exécuter dans l’environnement qu’elles ciblent, quel que soit l’environnement de l’ordinateur de développement. Par exemple, quand vous utilisez un ordinateur 64 bits pour générer une application ciblant une architecture 32 bits, les tâches sélectionnées sont exécutées dans un processus 32 bits.  
@@ -118,7 +103,7 @@ Des tâches MSBuild sélectionnées peuvent être définies pour s’exécuter d
  Contrairement à d’autres paramètres de tâche, `MSBuildRuntime` et `MSBuildArchitecture` ne sont pas visibles pour la tâche elle-même.  Pour écrire une tâche qui tient compte du contexte dans lequel elle s’exécute, vous devez tester le contexte en appelant le .NET Framework ou utiliser les propriétés de la build pour passer les informations de contexte avec d’autres paramètres de la tâche.  
   
 > [!NOTE]
-> Les attributs  `UsingTask` peuvent être définis à partir des propriétés d’ensemble d’outils et d’environnement.  
+>  Les attributs `UsingTask` peuvent être définis à partir des propriétés d’ensemble d’outils et d’environnement.  
   
  Les paramètres `MSBuildRuntime` et `MSBuildArchitecture` représentent le moyen le plus simple de définir le contexte cible, mais également le plus limité en portée.  D’une part, comme ils sont définis sur l’instance de tâche et ne sont pas évalués tant que la tâche n’est pas sur le point d’être exécutée, ils peuvent dériver leur valeur à partir de la portée complète des propriétés disponibles au moment de l’évaluation et au moment de la génération.  D’autre part, ces paramètres s’appliquent uniquement à une instance particulière d’une tâche dans une cible particulière.  
   
@@ -127,4 +112,3 @@ Des tâches MSBuild sélectionnées peuvent être définies pour s’exécuter d
   
 ## <a name="see-also"></a>Voir aussi  
  [Configuration des cibles et des tâches](../msbuild/configuring-targets-and-tasks.md)
-

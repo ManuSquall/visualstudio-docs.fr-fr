@@ -4,35 +4,18 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-devops-test
+ms.technology: vs-devops-test
 ms.tgt_pltfrm: 
 ms.topic: article
 ms.assetid: 5161b533-2127-4172-b473-d4ffc76ff05b
-caps.latest.revision: 15
+caps.latest.revision: "15"
 ms.author: douge
 manager: douge
-translation.priority.ht:
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- ru-ru
-- zh-cn
-- zh-tw
-translation.priority.mt:
-- cs-cz
-- pl-pl
-- pt-br
-- tr-tr
+ms.openlocfilehash: c52ce6556ae8937dd26c1be16cfaf1a4b05b1c74
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
 ms.translationtype: HT
-ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
-ms.openlocfilehash: af65c4f502cd36d00b031784dcda275abec3630a
-ms.contentlocale: fr-fr
-ms.lasthandoff: 09/26/2017
-
+ms.contentlocale: fr-FR
+ms.lasthandoff: 10/27/2017
 ---
 # <a name="quick-start-test-driven-development-with-test-explorer"></a>Démarrage rapide : développement piloté avec l’Explorateur de tests
 Nous vous recommandons de créer des tests unitaires pour que votre code continue à s'exécuter correctement dans de nombreuses étapes incrémentielles de développement. Vous pouvez utiliser plusieurs Infrastructures pour écrire des tests unitaires, y compris ceux développés par des tiers. Certaines infrastructures de tests sont spécialisées pour les tests dans différents langages ou sur différentes plateformes. L'explorateur de tests fournit une interface unique pour les tests unitaires dans l'une de ces infrastructures. Les adaptateurs sont disponibles pour les infrastructures les plus couramment utilisées, et vous pouvez écrire vos propres adaptateurs pour d'autres frameworks.  
@@ -305,4 +288,3 @@ Nous vous recommandons de créer des tests unitaires pour que votre code continu
      Tous les tests réussissent encore.  
   
      ![Explorateur de tests unitaires indiquant 3 tests réussis.](../test/media/unittestexplorerwalkthrough4.png "UnitTestExplorerWalkthrough4")
-

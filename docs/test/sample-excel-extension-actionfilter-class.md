@@ -4,35 +4,18 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-devops-test
+ms.technology: vs-devops-test
 ms.tgt_pltfrm: 
 ms.topic: article
 ms.assetid: c69fe3c7-f797-4e90-b21c-f2cc4dddf152
-caps.latest.revision: 11
+caps.latest.revision: "11"
 ms.author: douge
 manager: douge
-translation.priority.ht:
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- ru-ru
-- zh-cn
-- zh-tw
-translation.priority.mt:
-- cs-cz
-- pl-pl
-- pt-br
-- tr-tr
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 5ab78b6b8eaa8156ed2c8a807b1d8a80e75afa84
-ms.openlocfilehash: dc4805133aef7247e25ac4de123de084d5918304
-ms.contentlocale: fr-fr
-ms.lasthandoff: 05/19/2017
-
+ms.openlocfilehash: 346cb9faddf2bd155c91d9fc72176020ba43197b
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.translationtype: HT
+ms.contentlocale: fr-FR
+ms.lasthandoff: 10/27/2017
 ---
 # <a name="sample-excel-extension-actionfilter-class"></a>Exemple d'extension Excel : classe ActionFilter
 Cette classe interne étend la classe <xref:Microsoft.VisualStudio.TestTools.UITest.Common.UITestActionFilter> et représente un filtre pour les actions de test sur un élément [!INCLUDE[ofprexcel](../test/includes/ofprexcel_md.md)].  
@@ -50,4 +33,3 @@ Cette classe interne étend la classe <xref:Microsoft.VisualStudio.TestTools.UIT
  <xref:Microsoft.VisualStudio.TestTools.UITest.Common.UITestActionFilter>   
  <xref:Microsoft.VisualStudio.TestTools.UITest.Common.IUITestActionStack>   
  [Extension des tests codés de l’interface utilisateur et des enregistrements des actions pour prendre charge Microsoft Excel](../test/extending-coded-ui-tests-and-action-recordings-to-support-microsoft-excel.md)
-

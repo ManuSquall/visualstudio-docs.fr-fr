@@ -4,21 +4,19 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-designers
+ms.technology: vs-ide-designers
 ms.tgt_pltfrm: 
 ms.topic: article
 ms.assetid: 05348afa-f079-4f53-a05b-ecd91d13adab
-caps.latest.revision: 4
+caps.latest.revision: "4"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 47057e9611b824c17077b9127f8d2f8b192d6eb8
-ms.openlocfilehash: b7b38036fafe64a86a132253b2597cd6d59eec6c
-ms.contentlocale: fr-fr
-ms.lasthandoff: 05/13/2017
-
+ms.openlocfilehash: 7b8b5c213a7184eaab0034ede6bc71acda496ba8
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: HT
+ms.contentlocale: fr-FR
+ms.lasthandoff: 10/31/2017
 ---
 # <a name="how-to-export-a-texture-that-has-premultiplied-alpha"></a>Guide pratique pour exporter une texture qui a des valeurs alpha prémultipliées
 Le pipeline de contenus d’image peut générer des textures alpha prémultipliées à partir d’une image source. Ces textures peuvent être plus faciles à utiliser et plus robustes que celles ne contenant pas de valeurs alpha prémultipliées.  

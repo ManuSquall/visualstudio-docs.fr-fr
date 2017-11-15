@@ -4,40 +4,21 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-general
+ms.technology: vs-ide-general
 ms.tgt_pltfrm: 
 ms.topic: article
-f1_keywords:
-- msvse_settingsdesigner.err.nameblank
-helpviewer_keywords:
-- application settings [Visual Studio]
+f1_keywords: msvse_settingsdesigner.err.nameblank
+helpviewer_keywords: application settings [Visual Studio]
 ms.assetid: 35254321-ad14-47d9-b8c6-39ab3203c5d9
-caps.latest.revision: 24
+caps.latest.revision: "24"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-translation.priority.ht:
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- ru-ru
-- zh-cn
-- zh-tw
-translation.priority.mt:
-- cs-cz
-- pl-pl
-- pt-br
-- tr-tr
+ms.openlocfilehash: 924d62f31ae073f3b832507182aa511abc484011
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
 ms.translationtype: HT
-ms.sourcegitcommit: ea1e787c1d509123a650cf2bd20e5fa8bffd5b4e
-ms.openlocfilehash: 09baef8c468ac8a165587ec8c143ad5c184d4a05
-ms.contentlocale: fr-fr
-ms.lasthandoff: 09/26/2017
-
+ms.contentlocale: fr-FR
+ms.lasthandoff: 10/31/2017
 ---
 # <a name="managing-application-settings-net"></a>Gestion des paramètres d'une application (.NET)
 Les paramètres d’application vous permettent de stocker des informations sur l’application de manière dynamique. Les paramètres vous permettent de stocker sur l’ordinateur client des informations qui ne doivent pas être incluses dans le code d’application (par exemple une chaîne de connexion), des préférences utilisateur et d’autres informations nécessaires au moment de l’exécution.  
@@ -112,4 +93,3 @@ Properties.Settings.Default.Save();
   
 ## <a name="see-also"></a>Voir aussi  
  [Accès aux paramètres d’application](/dotnet/visual-basic/developing-apps/programming/app-settings/accessing-application-settings)
-

@@ -4,12 +4,10 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-sdk
+ms.technology: vs-ide-sdk
 ms.tgt_pltfrm: 
 ms.topic: article
-f1_keywords:
-- http://schemas.microsoft.com/developer/msbuild/2003#RegisterAssembly
+f1_keywords: http://schemas.microsoft.com/developer/msbuild/2003#RegisterAssembly
 dev_langs:
 - VB
 - CSharp
@@ -19,36 +17,21 @@ helpviewer_keywords:
 - MSBuild, RegisterAssembly task
 - RegisterAssembly task [MSBuild]
 ms.assetid: ba5f19ac-6764-4d28-9b79-a86de58f8987
-caps.latest.revision: 16
+caps.latest.revision: "16"
 author: kempb
 ms.author: kempb
 manager: ghogen
-translation.priority.ht:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 3d32d11a430227800cb3ed53831a9565eb6adeb3
-ms.openlocfilehash: e1e6b68c59aa10204bd985b9bf8d17e8256936d5
-ms.contentlocale: fr-fr
-ms.lasthandoff: 05/30/2017
-
+ms.openlocfilehash: 20261d3eedaf82e636c2d8fa726a5344167640f2
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: HT
+ms.contentlocale: fr-FR
+ms.lasthandoff: 10/31/2017
 ---
 # <a name="registerassembly-task"></a>RegisterAssembly, tâche
 Lit les métadonnées dans l’assembly spécifié et ajoute les entrées nécessaires au Registre, ce qui permet aux clients COM de créer des classes [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] en toute transparence. Le comportement de cette tâche est similaire, mais pas identique, à celui de [Regasm.exe (outil Assembly Registration Tool)](/dotnet/framework/tools/regasm-exe-assembly-registration-tool).  
   
 ## <a name="parameters"></a>Paramètres  
- Le tableau ci-dessous décrit les paramètres de la tâche `RegisterAssembly`.  
+ Le tableau ci-dessous décrit les paramètres de la tâche `RegisterAssembly` .  
   
 |Paramètre|Description|  
 |---------------|-----------------|  

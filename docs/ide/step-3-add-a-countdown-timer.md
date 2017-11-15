@@ -4,36 +4,19 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-general
+ms.technology: vs-acquisition
 ms.tgt_pltfrm: 
 ms.topic: article
 ms.assetid: 62670a2b-efdc-45c6-9646-9b17eeb33dcb
-caps.latest.revision: 23
-author: kempb
-ms.author: kempb
+caps.latest.revision: "23"
+author: TerryGLee
+ms.author: tglee
 manager: ghogen
-translation.priority.ht:
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- ru-ru
-- zh-cn
-- zh-tw
-translation.priority.mt:
-- cs-cz
-- pl-pl
-- pt-br
-- tr-tr
+ms.openlocfilehash: b2d9a565300dabd4212695d62c01a415d0e11012
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
 ms.translationtype: HT
-ms.sourcegitcommit: eb5c9550fd29b0e98bf63a7240737da4f13f3249
-ms.openlocfilehash: 1719ed1feb1caa38644550322484d2ba519c1be2
-ms.contentlocale: fr-fr
-ms.lasthandoff: 09/06/2017
-
+ms.contentlocale: fr-FR
+ms.lasthandoff: 10/31/2017
 ---
 # <a name="step-3-add-a-countdown-timer"></a>Étape 3 : ajouter un temporisateur
 Dans la troisième partie de ce didacticiel, vous allez ajouter un temporisateur pour suivre le nombre de secondes restantes avant la fin du temps imparti à la personne interrogée.  
@@ -45,7 +28,8 @@ Dans la troisième partie de ce didacticiel, vous allez ajouter un temporisateur
   
 1.  Ajoutez une variable de type entier appelée **timeLeft**, comme vous l’avez fait dans la procédure précédente. Votre code doit ressembler à ce qui suit.  
   
-     [!code-vb[VbExpressTutorial3Step3#5](../ide/codesnippet/VisualBasic/step-3-add-a-countdown-timer_1.vb)]  [!code-csharp[VbExpressTutorial3Step3#5](../ide/codesnippet/CSharp/step-3-add-a-countdown-timer_1.cs)]  
+     [!code-vb[VbExpressTutorial3Step3#5](../ide/codesnippet/VisualBasic/step-3-add-a-countdown-timer_1.vb)]
+     [!code-csharp[VbExpressTutorial3Step3#5](../ide/codesnippet/CSharp/step-3-add-a-countdown-timer_1.cs)]  
   
      À présent, vous avez besoin d'une méthode qui compte réellement les secondes, telles qu'une minuterie, et qui déclenche un événement après la durée que vous spécifiez.  
   
@@ -63,7 +47,8 @@ Dans la troisième partie de ce didacticiel, vous allez ajouter un temporisateur
   
 5.  Ajoutez les instructions suivantes à la nouvelle méthode de gestionnaire d'événements.  
   
-     [!code-vb[VbExpressTutorial3Step3#6](../ide/codesnippet/VisualBasic/step-3-add-a-countdown-timer_2.vb)]  [!code-csharp[VbExpressTutorial3Step3#6](../ide/codesnippet/CSharp/step-3-add-a-countdown-timer_2.cs)]  
+     [!code-vb[VbExpressTutorial3Step3#6](../ide/codesnippet/VisualBasic/step-3-add-a-countdown-timer_2.vb)]
+     [!code-csharp[VbExpressTutorial3Step3#6](../ide/codesnippet/CSharp/step-3-add-a-countdown-timer_2.cs)]  
   
      Suite à ce que vous avez ajouté, la minuterie vérifie à chaque seconde si le temps est écoulé en déterminant si la variable de type entier **timeLeft** est supérieure à 0. Si tel est le cas, cela signifie qu'il reste du temps. Tout d’abord, la minuterie soustrait 1 à timeLeft, puis met à jour la propriété **Text** du contrôle `timeLabel` pour indiquer à la personne qui répond au questionnaire le nombre de secondes restantes.  
   
@@ -99,7 +84,8 @@ Dans la troisième partie de ce didacticiel, vous allez ajouter un temporisateur
   
      Examinez attentivement l'instruction que vous avez ajoutée dans le bloc `else` pour afficher la réponse au problème d'addition.  
   
-     [!code-vb[VbExpressTutorial3Step3#24](../ide/codesnippet/VisualBasic/step-3-add-a-countdown-timer_3.vb)]  [!code-csharp[VbExpressTutorial3Step3#24](../ide/codesnippet/CSharp/step-3-add-a-countdown-timer_3.cs)]  
+     [!code-vb[VbExpressTutorial3Step3#24](../ide/codesnippet/VisualBasic/step-3-add-a-countdown-timer_3.vb)]
+     [!code-csharp[VbExpressTutorial3Step3#24](../ide/codesnippet/CSharp/step-3-add-a-countdown-timer_3.cs)]  
   
      L'instruction `addend1 + addend2` additionne les valeurs des deux variables. La première partie (`sum.Value`) utilise la propriété **Value** du contrôle `NumericUpDown` de somme pour afficher la réponse correcte. Vous utiliserez la même propriété ultérieurement pour vérifier les réponses du questionnaire.  
   
@@ -107,7 +93,8 @@ Dans la troisième partie de ce didacticiel, vous allez ajouter un temporisateur
   
 6.  Ajoutez trois lignes à la fin de la méthode `StartTheQuiz()`, pour que votre code ressemble à celui ci-dessous.  
   
-     [!code-vb[VbExpressTutorial3Step3#7](../ide/codesnippet/VisualBasic/step-3-add-a-countdown-timer_4.vb)]  [!code-csharp[VbExpressTutorial3Step3#7](../ide/codesnippet/CSharp/step-3-add-a-countdown-timer_4.cs)]  
+     [!code-vb[VbExpressTutorial3Step3#7](../ide/codesnippet/VisualBasic/step-3-add-a-countdown-timer_4.vb)]
+     [!code-csharp[VbExpressTutorial3Step3#7](../ide/codesnippet/CSharp/step-3-add-a-countdown-timer_4.cs)]  
   
      À présent, quand votre questionnaire démarre, il affecte la valeur 30 à la variable **timeLeft** et la valeur 30 secondes à la propriété **Text** du contrôle `timeLabel`. Il appelle ensuite la méthode `Start()` du contrôle `Timer` pour démarrer le compte à rebours. (Le questionnaire ne vérifie pas encore la réponse : cette action est effectuée plus tard.)  
   

@@ -4,8 +4,7 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-devops-test
+ms.technology: vs-devops-test
 ms.tgt_pltfrm: 
 ms.topic: article
 f1_keywords:
@@ -16,30 +15,14 @@ helpviewer_keywords:
 - unit tests, data-driven
 - data-driven unit tests
 ms.assetid: a0322bc5-02c8-4f9f-af43-100a60b1bd28
-caps.latest.revision: 33
+caps.latest.revision: "33"
 ms.author: douge
 manager: douge
-translation.priority.ht:
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- ru-ru
-- zh-cn
-- zh-tw
-translation.priority.mt:
-- cs-cz
-- pl-pl
-- pt-br
-- tr-tr
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 5ab78b6b8eaa8156ed2c8a807b1d8a80e75afa84
-ms.openlocfilehash: 2eaf4aa44fdc1bec56bb513af54ea7db72dcf3db
-ms.contentlocale: fr-fr
-ms.lasthandoff: 05/19/2017
-
+ms.openlocfilehash: ec1c20ae334e81724af1b8d4e2b25d755a024bdc
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.translationtype: HT
+ms.contentlocale: fr-FR
+ms.lasthandoff: 10/27/2017
 ---
 # <a name="how-to-create-a-data-driven-unit-test"></a>Comment : créer un test unitaire piloté par des données
 À l’aide du framework de test unitaire Microsoft pour le code managé, vous pouvez configurer une méthode de test unitaire permettant de récupérer les valeurs utilisées dans la méthode de test à partir d’une source de données. La méthode est exécutée successivement pour chaque ligne de la source de données, ce qui permet de tester facilement diverses entrées à l’aide d’une seule méthode.  
@@ -208,4 +191,3 @@ int x = Convert.ToInt32(TestContext.DataRow["FirstNumber"]);
  [Tests unitaires sur votre code](../test/unit-test-your-code.md)   
  [Exécuter des tests unitaires avec l’Explorateur de tests](../test/run-unit-tests-with-test-explorer.md)   
  [Écriture de tests unitaires pour le .NET Framework à l’aide du framework de tests unitaires Microsoft pour le code managé](../test/writing-unit-tests-for-the-dotnet-framework-with-the-microsoft-unit-test-framework-for-managed-code.md)
-

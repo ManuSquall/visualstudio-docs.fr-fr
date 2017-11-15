@@ -4,37 +4,21 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-devops-test
+ms.technology: vs-devops-test
 ms.tgt_pltfrm: 
 ms.topic: article
 helpviewer_keywords:
 - coded UI tests, multiple UI maps
 - coded UI tests, for large applications
 ms.assetid: 6e1ae9ec-e9b1-458a-bd96-0eb15e46f1d5
-caps.latest.revision: 22
+caps.latest.revision: "22"
 ms.author: douge
 manager: douge
-translation.priority.ht:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 5ab78b6b8eaa8156ed2c8a807b1d8a80e75afa84
-ms.openlocfilehash: 846860b7d61d9fbda6ca10793420b66fdab4a01f
-ms.contentlocale: fr-fr
-ms.lasthandoff: 05/19/2017
-
+ms.openlocfilehash: 0be707ec592265c75ce6e0c36954010e496ac91c
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.translationtype: HT
+ms.contentlocale: fr-FR
+ms.lasthandoff: 10/27/2017
 ---
 # <a name="testing-a-large-application-with-multiple-ui-maps"></a>Test d'une grande application avec plusieurs mappages d'IU
 Cette rubrique explique comment utiliser des tests codés de l'interface utilisateur quand vous testez une grande application à l'aide de plusieurs mappages d'interface utilisateur.  
@@ -160,4 +144,3 @@ namespace ContosoProject
  [Utiliser UI Automation pour tester votre code](../test/use-ui-automation-to-test-your-code.md)   
  [Création de tests codés de l’interface utilisateur](../test/use-ui-automation-to-test-your-code.md#VerifyingCodeUsingCUITCreate)   
  [Anatomie d’un test codé de l’interface utilisateur](../test/anatomy-of-a-coded-ui-test.md)
-

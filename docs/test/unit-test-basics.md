@@ -4,37 +4,19 @@ ms.custom:
 ms.date: 2016-01-07
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-devops-test
+ms.technology: vs-devops-test
 ms.tgt_pltfrm: 
 ms.topic: article
-f1_keywords:
-- vs.UnitTest.CreateUnitTest
+f1_keywords: vs.UnitTest.CreateUnitTest
 ms.assetid: a80ba9cd-4575-483c-b957-af7ed8dc7e20
-caps.latest.revision: 27
+caps.latest.revision: "27"
 ms.author: douge
 manager: douge
-translation.priority.ht:
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- ru-ru
-- zh-cn
-- zh-tw
-translation.priority.mt:
-- cs-cz
-- pl-pl
-- pt-br
-- tr-tr
+ms.openlocfilehash: 14e31328aade21e8f181b7c81138c1d1181a394c
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
 ms.translationtype: HT
-ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
-ms.openlocfilehash: ff2a1dc934083bb237189a1ebdfa25d42612433e
-ms.contentlocale: fr-fr
-ms.lasthandoff: 09/26/2017
-
+ms.contentlocale: fr-FR
+ms.lasthandoff: 10/27/2017
 ---
 # <a name="unit-test-basics"></a>Notions de base des tests unitaires
 Vérifiez que votre code fonctionne comme prévu en créant et en exécutant des tests unitaires. Un test unitaire consiste à décomposer les fonctionnalités de votre programme en comportements testables discrets que vous pouvez tester en tant qu’*unités* individuelles. L’explorateur de tests de Visual Studio offre un moyen souple et efficace d’exécuter vos tests unitaires et d’afficher leurs résultats dans Visual Studio. Visual Studio installe les infrastructures de tests unitaires Microsoft pour le code managé et le code natif. Utilisez une *infrastructure de tests unitaires* pour créer des tests unitaires, les exécuter et signaler les résultats de ces tests. Réexécutez des tests unitaires quand vous apportez des modifications pour vérifier que votre code fonctionne toujours correctement. Quand vous utilisez Visual Studio Enterprise, vous pouvez exécuter automatiquement des tests après chaque génération.  
@@ -361,4 +343,3 @@ public void AddIntegerHelper_DataDrivenValues_AllShouldPass()
  ![Sélectionnez un autre framework de tests unitaires installée](../test/media/createunittestsdialogextensions.png "CreateUnitTestsDialogExtensions")  
   
  Vos stubs de test unitaire seront créés à l’aide du framework sélectionné.
-

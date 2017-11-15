@@ -5,8 +5,7 @@ ms.date: 01/18/2017
 ms.prod: windows-client-threshold
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- devlang-javascript
+ms.technology: devlang-javascript
 ms.tgt_pltfrm: 
 ms.topic: article
 dev_langs:
@@ -27,16 +26,15 @@ helpviewer_keywords:
 - custom objects
 - initializing objects, using constructors
 ms.assetid: 58d1baa5-4fe8-4a56-a926-5b11765df704
-caps.latest.revision: 19
+caps.latest.revision: "19"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.translationtype: HT
-ms.sourcegitcommit: 359e1eb5df8f19774d352ace631802367b6dd8c9
 ms.openlocfilehash: 0ba7962179cc2f0fcb972caee692edabee368c7d
-ms.contentlocale: fr-fr
-ms.lasthandoff: 08/11/2017
-
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.translationtype: HT
+ms.contentlocale: fr-FR
+ms.lasthandoff: 10/27/2017
 ---
 # <a name="creating-objects-javascript"></a>Création d'objets (JavaScript)
 En JavaScript, vous pouvez créer vos propres objets de différentes manières. Vous pouvez instancier directement un [objet Object](../javascript/reference/object-object-javascript.md), puis ajouter vos propres propriétés et méthodes. Vous pouvez également utiliser la notation de littéral d’objet pour définir votre objet. Vous pouvez également utiliser une fonction constructeur pour définir un objet. Pour plus d’informations sur l’utilisation des fonctions constructeurs, consultez [Utilisation de constructeurs pour la définition de types](../javascript/advanced/using-constructors-to-define-types.md).  
@@ -162,4 +160,3 @@ const obj = {
     [ 'prop_' + (() => 42)() ]: 42  
 };  
 ```
-

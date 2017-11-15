@@ -4,12 +4,10 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-general
+ms.technology: vs-ide-general
 ms.tgt_pltfrm: 
 ms.topic: article
-f1_keywords:
-- vs.classdesigner.CannotShowBaseType
+f1_keywords: vs.classdesigner.CannotShowBaseType
 helpviewer_keywords:
 - class diagrams
 - types [Visual Studio], visualizing
@@ -17,30 +15,15 @@ helpviewer_keywords:
 - types [Visual Studio], class diagrams
 - relationships, visualizing
 ms.assetid: c4f46d94-9972-42ac-ae63-6ff306369965
-caps.latest.revision: 33
+caps.latest.revision: "33"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-translation.priority.ht:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 5db97d19b1b823388a465bba15d057b30ff0b3ce
-ms.openlocfilehash: e4d056e8e2819c89eec52ebb29747acc49a08654
-ms.contentlocale: fr-fr
-ms.lasthandoff: 02/22/2017
-
+ms.openlocfilehash: 78d7dba3bb799e15b1a609cd5f7bd50e2089195c
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: HT
+ms.contentlocale: fr-FR
+ms.lasthandoff: 10/31/2017
 ---
 # <a name="viewing-types-and-relationships-class-designer"></a>Affichage des types et relations (Concepteur de classes)
 Le Concepteur de classes utilise des diagrammes de classes pour afficher des informations détaillées sur les types, telles que leurs membres constitutifs et les relations qu’ils partagent. La visualisation de ces entités est en fait une vue dynamique du code. Vous pouvez donc modifier les types dans le concepteur, puis visualiser vos modifications dans le code source de l’entité. De même, le diagramme de classes est constamment synchronisé avec les modifications apportées aux entités du code.  

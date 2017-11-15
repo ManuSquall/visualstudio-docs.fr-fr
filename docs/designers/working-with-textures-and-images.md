@@ -4,42 +4,25 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-designers
+ms.technology: vs-ide-designers
 ms.tgt_pltfrm: 
 ms.topic: article
 ms.assetid: b9fbc8fa-66d1-4055-8460-24d8b8fbe43e
-caps.latest.revision: 10
+caps.latest.revision: "10"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-translation.priority.ht:
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- ru-ru
-- zh-cn
-- zh-tw
-translation.priority.mt:
-- cs-cz
-- pl-pl
-- pt-br
-- tr-tr
-ms.translationtype: Human Translation
-ms.sourcegitcommit: ca7c86466fa23fb21a932f26dc24e37c71cf29b4
-ms.openlocfilehash: 2cb4836ae868d56147a82fcefa0c5546bfcf8cad
-ms.contentlocale: fr-fr
-ms.lasthandoff: 04/05/2017
-
+ms.openlocfilehash: 92d133d688ad009dae1b4e518bdd8c749ebc329f
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: HT
+ms.contentlocale: fr-FR
+ms.lasthandoff: 10/31/2017
 ---
 # <a name="working-with-textures-and-images"></a>Utilisation des textures et des images
 Vous pouvez utiliser l’Éditeur d’images de [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] pour créer et modifier des textures et des images. L’Éditeur d’images prend en charge les formats enrichis de textures et d’images, tels que ceux utilisés dans le développement d’applications DirectX.  
   
 > [!NOTE]
->  L’Éditeur d’images ne prend pas en charge les images présentant une couleur faible, comme les icônes ou les curseurs. Pour créer ou modifier ces types d’images, utilisez l’outil [Éditeur d’images pour les icônes](/cpp/windows/image-editor-for-icons).  
+>  L’Éditeur d’images ne prend pas en charge les images présentant une couleur faible, comme les icônes ou les curseurs. Pour créer ou modifier ces types d’images, utilisez l’outil [Image Editor for Icons](/cpp/windows/image-editor-for-icons).  
   
 ## <a name="textures-and-images"></a>Textures et images  
  Les textures et les images, à un niveau de base, sont uniquement des tableaux de données procurant des détails visuels dans les applications graphiques. Le type de détail fourni par une texture ou une image dépend de son utilisation. Par exemple, citons les échantillons de couleur, les valeurs alpha (transparentes), les normales à la surface, ou encore les valeurs de hauteur. Quelle est la principale différence entre une texture et une image ? En fait, une texture est conçue pour être utilisée avec une représentation de forme (généralement un modèle 3D) pour exprimer un objet ou une scène complets, tandis qu’une image est une représentation autonome d’un objet ou d’une scène.  

@@ -4,37 +4,22 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-general
+ms.technology: vs-ide-general
 ms.tgt_pltfrm: 
 ms.topic: article
 helpviewer_keywords:
 - automation [Visual Studio], controlling Tools Options
 - Tools Options settings, Environment node properties
 ms.assetid: 26dca41f-91fc-4ca7-9103-3da402baa1d5
-caps.latest.revision: 18
-author: kempb
-ms.author: kempb
+caps.latest.revision: "18"
+author: gewarren
+ms.author: gewarren
 manager: ghogen
-translation.priority.ht:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
-translationtype: Human Translation
-ms.sourcegitcommit: 5658ecf52637a38bc3c2a5ad9e85b2edebf7d445
-ms.openlocfilehash: ac450b7e414596632d56117813907ee4406ad69d
-ms.lasthandoff: 02/22/2017
-
+ms.openlocfilehash: ae50f2d537836501ec4c9c29e50d86aa3e325661
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: HT
+ms.contentlocale: fr-FR
+ms.lasthandoff: 10/31/2017
 ---
 # <a name="options-page-environment-node-properties"></a>Page Options, Environnement, propriétés de nœud
 Ce document décrit les pages (ou collections de propriétés) associées à la catégorie **Environnement**, `DTE.Properties("Environment", <Property Page>)`, de la boîte de dialogue **Options**. Le titre de chaque sous-section correspond à l’appel utilisé pour accéder à la collection de propriétés, tandis que le tableau dans chaque sous-section répertorie les propriétés de la collection.  
@@ -50,7 +35,7 @@ Ce document décrit les pages (ou collections de propriétés) associées à la 
 |Animations|Get/Set (booléen)|Détermine si l'environnement de développement intégré (IDE) utilise des animations dans la barre d'état.|  
 |AnimationSpeed|Get/Set (Short)||  
 |AutoAdjustExperience|Get/Set (booléen)|Ajuste automatiquement l'expérience visuelle selon les performances du client.|  
-|RichClientExperienceOptions|Get/Set (Enum)|Active l’expérience visuelle améliorée avec des valeurs dans <xref:EnvDTE100.vsRichClientExperienceOptions>.|  
+|RichClientExperienceOptions|Get/Set (Enum)|Active l'expérience visuelle améliorée avec des valeurs dans <xref:EnvDTE100.vsRichClientExperienceOptions>.|  
 |CloseButtonActiveTabOnly|Get/Set (booléen)|Détermine si le bouton **Fermer** est affiché seulement sous l’onglet actif.|  
 |AutohidePinActiveTabOnly|Get/Set (booléen)|Détermine si le bouton **Masquer automatiquement** affecte seulement l’onglet actif.|  
   

@@ -7,14 +7,12 @@ ms.date: 04/14/2017
 ms.topic: article
 ms.technology: vs-ide-debug
 ms.assetid: 527E6BEC-EF15-4002-ACB5-62AE1C16F6B7
-ms.translationtype: HT
-ms.sourcegitcommit: e2b7ff9126e1cc38ac2e58d6be339b656a024e7f
 ms.openlocfilehash: 5f1eda5ccf6f308c626d525bbe7069a84ce3154b
-ms.contentlocale: fr-fr
-ms.lasthandoff: 08/11/2017
-
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.translationtype: HT
+ms.contentlocale: fr-FR
+ms.lasthandoff: 10/27/2017
 ---
-
 # <a name="data-visualizations"></a>Visualisations des données
 
 Visual Studio pour Mac offre la prise en charge de l’interface utilisateur du débogueur, qui permet des visualisations des valeurs d’une variable, d’un champ ou d’une propriété pendant le débogage. Ces visualiseurs de données montrent une version étendue des données et permettent aux développeurs d’inspecter des structures connues, par exemple en affichant la couleur d’un struct.
@@ -46,7 +44,7 @@ Les coordonnées sont tracées sur un plan, avec l’emplacement épinglé au ce
 
 ![Visualisation d’une coordonnée](media/data-visualizations-image13.png)
 
-## <a name="color"></a>Couleur
+## <a name="color"></a>Color
 Ceci affiche les propriétés UIColor, CGColor et Color, en montrant un aperçu de la couleur, les composants RVBA, les valeurs Teinte-Saturation-Luminosité et la valeur hexadécimale de la couleur :
 
 ![Visualisation d’une couleur](media/data-visualizations-image14.png)
@@ -106,4 +104,3 @@ Voici quelques autres types qui ont leur propre visualiseur :
     *   Ceci affiche un lien hypertexte sur lequel vous pouvez cliquer.
 *   **IntPtr**
     *   Ceci affiche une représentation hexadécimale de IntPtr.
-

@@ -4,38 +4,20 @@ ms.custom:
 ms.date: 12/16/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-general
+ms.technology: vs-ide-general
 ms.tgt_pltfrm: 
 ms.topic: article
 ms.assetid: e15c00f6-3e22-49b8-8269-69e4c8be8040
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-f1_keywords:
-- vs.codefix.previewchanges
-translation.priority.ht:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 14e6961d6db557e77687eef17aae9b16f5a4d706
-ms.openlocfilehash: eb49815ed120ee4ff65dfc04764282f1ac6d1ff8
-ms.contentlocale: fr-fr
-ms.lasthandoff: 02/22/2017
-
+f1_keywords: vs.codefix.previewchanges
+ms.openlocfilehash: 52555d0bc112dae41f189fd9f29711da365fd59c
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: HT
+ms.contentlocale: fr-FR
+ms.lasthandoff: 10/31/2017
 ---
-
 # <a name="preview-changes"></a>Aperçu des modifications
 
 Quand vous utilisez différents outils de *Refactorisation* ou *Actions rapides* dans Visual Studio, il est souvent possible d’afficher un aperçu des modifications qui vont être apportées à votre projet avant de les accepter.  Cette opération s’effectue dans la fenêtre **Aperçu des modifications**.  Par exemple, voici une fenêtre **Aperçu des modifications** montrant ce qui sera modifié pendant une refactorisation de changement de nom dans un projet C# :
@@ -50,4 +32,3 @@ Après avoir vérifié les modifications, cliquez sur le bouton **Appliquer** po
 
 ## <a name="see-also"></a>Voir aussi  
 [Refactorisation dans Visual Studio](../ide/refactoring-in-visual-studio.md)
-

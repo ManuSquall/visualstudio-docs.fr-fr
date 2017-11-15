@@ -4,8 +4,7 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-general
+ms.technology: vs-ide-general
 ms.tgt_pltfrm: 
 ms.topic: article
 f1_keywords:
@@ -33,30 +32,15 @@ helpviewer_keywords:
 - warnings, files changed
 - Solution Explorer, displaying files in
 ms.assetid: 4e3ccf1b-cd68-4db6-9470-710c911b47fc
-caps.latest.revision: 21
-author: kempb
-ms.author: kempb
+caps.latest.revision: "21"
+author: gewarren
+ms.author: gewarren
 manager: ghogen
-translation.priority.ht:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 5ea9179ad37514ffad4876177b05150eecc22def
-ms.openlocfilehash: e98661157ec1168c2aa19717c626a82f5e0a1975
-ms.contentlocale: fr-fr
-ms.lasthandoff: 05/24/2017
-
+ms.openlocfilehash: c7d9f7cef6c0dfa35a4a718c0918fbc55409af04
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: HT
+ms.contentlocale: fr-FR
+ms.lasthandoff: 10/31/2017
 ---
 # <a name="documents-environment-options-dialog-box"></a>Documents, Environnement, boîte de dialogue Options
 Utilisez cette page de la boîte de dialogue **Options** pour contrôler l’affichage des documents dans l’environnement de développement intégré (IDE) et pour gérer les modifications externes apportées aux documents et aux fichiers. Vous pouvez accéder à cette boîte de dialogue en cliquant sur **Options** dans le menu **Outils**, puis en sélectionnant **Documents** dans le nœud **Environnement**. Si **Documents** ne figure pas dans la liste, sélectionnez **Afficher tous les paramètres** dans la boîte de dialogue **Options**.  

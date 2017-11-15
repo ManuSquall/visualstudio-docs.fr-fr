@@ -4,24 +4,22 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-designers
+ms.technology: vs-ide-designers
 ms.tgt_pltfrm: 
 ms.topic: article
 f1_keywords:
 - vs.graphics.designer.imageeditor
 - vs.graphics.imageeditor
 ms.assetid: fc71d502-c548-4863-8afc-12a1d3ec90d4
-caps.latest.revision: 45
+caps.latest.revision: "45"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 5db97d19b1b823388a465bba15d057b30ff0b3ce
-ms.openlocfilehash: 0def4c66be3cf1bbd65c9cb0dea5e3366f65aae1
-ms.contentlocale: fr-fr
-ms.lasthandoff: 02/22/2017
-
+ms.openlocfilehash: 8d746d874b7efe18b1bd8dabf15804f1c05b57ca
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: HT
+ms.contentlocale: fr-FR
+ms.lasthandoff: 10/31/2017
 ---
 # <a name="image-editor"></a>Éditeur d’images
 Ce document décrit comment utiliser l’éditeur d’images de [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] pour afficher et modifier des ressources de texture et d’image.  

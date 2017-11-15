@@ -4,38 +4,20 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- tgt-pltfrm-cross-plat
+ms.technology: tgt-pltfrm-cross-plat
 ms.tgt_pltfrm: 
 ms.topic: article
-dev_langs:
-- C++
+dev_langs: C++
 ms.assetid: aaea6b8d-55eb-4427-8185-c050f855c257
-caps.latest.revision: 15
-author: BrianPeek
-ms.author: brpeek
+caps.latest.revision: "15"
+author: corob-msft
+ms.author: corob
 manager: ghogen
-translation.priority.ht:
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- ru-ru
-- zh-cn
-- zh-tw
-translation.priority.mt:
-- cs-cz
-- pl-pl
-- pt-br
-- tr-tr
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 47057e9611b824c17077b9127f8d2f8b192d6eb8
-ms.openlocfilehash: d284309b0243f8d551d06c53d50d5df5de8f3f3c
-ms.contentlocale: fr-fr
-ms.lasthandoff: 05/13/2017
-
+ms.openlocfilehash: b2d86a6025e2ec9c2ba92870939248cf2dffb5b5
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: HT
+ms.contentlocale: fr-FR
+ms.lasthandoff: 10/31/2017
 ---
 # <a name="install-visual-c-for-cross-platform-mobile-development"></a>Installer Visual C++ pour le développement mobile multiplateforme
 [Visual C++ pour le développement mobile multiplateforme](http://go.microsoft.com/fwlink/p/?LinkId=536383) est un composant installable de Visual Studio 2015. Il inclut des modèles Visual Studio multiplateformes et installe les outils multiplateformes ainsi que les Kits de développement logiciel pour une prise en main rapide, sans que vous n’ayez à effectuer les recherches, le téléchargement ni la configuration. Vous pouvez utiliser ces outils dans Visual Studio pour créer, modifier, déboguer et tester facilement des projets multiplateformes. Cette rubrique décrit comment installer les outils et les logiciels tiers requis pour développer des applications multiplateformes à l’aide de Visual Studio. Pour obtenir une vue d’ensemble du composant, consultez [Développement multiplateforme en Visual C++ pour appareils mobiles](http://go.microsoft.com/fwlink/p/?LinkId=536387)  

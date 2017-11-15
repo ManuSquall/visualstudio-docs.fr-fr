@@ -4,34 +4,18 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-devops-test
+ms.technology: vs-devops-test
 ms.tgt_pltfrm: 
 ms.topic: article
 ms.assetid: a859595f-6517-43f2-9d61-c706cb55a388
-caps.latest.revision: 23
+caps.latest.revision: "23"
 ms.author: douge
 manager: douge
-translation.priority.ht:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 47057e9611b824c17077b9127f8d2f8b192d6eb8
-ms.openlocfilehash: 28ce78165492b6f74cdd85ba79eae26e4d68d32c
-ms.contentlocale: fr-fr
-ms.lasthandoff: 05/13/2017
-
+ms.openlocfilehash: 6c8e2cac9d6f2622bacae0b27cecc8f074ea3a15
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.translationtype: HT
+ms.contentlocale: fr-FR
+ms.lasthandoff: 10/27/2017
 ---
 # <a name="using-different-web-browsers-with-coded-ui-tests"></a>Utilisation de différents navigateurs Web avec des tests codés de l'interface utilisateur
 Les tests codés de l'interface utilisateur peuvent automatiser le test des applications web en enregistrant vos tests à l'aide d'Internet Explorer. Vous pouvez ensuite personnaliser votre test et l'utiliser à l'aide d'Internet Explorer ou d'autres types de navigateurs pour ces applications web.  
@@ -117,17 +101,17 @@ Les tests codés de l'interface utilisateur peuvent automatiser le test des appl
  *Que dois-je savoir de plus ?*  
  **Remarques**  
   
--   ![Prérequis](~/test/media/prereq.png "Prérequis") Le navigateur web Apple Safari n’est pas pris en charge.  
+-   ![Prérequis](../test/media/prereq.png "Prérequis") Le navigateur web Apple Safari n’est pas pris en charge.  
   
--   ![Prérequis](~/test/media/prereq.png "Prérequis") L’action de démarrage du navigateur web doit faire partie du test codé de l’interface utilisateur.  
+-   ![Prérequis](../test/media/prereq.png "Prérequis") L’action de démarrage du navigateur web doit faire partie du test codé de l’interface utilisateur.  
   
      Si un navigateur web est déjà ouvert et que vous souhaitez exécuter des étapes sur ce navigateur, la lecture échoue, sauf si vous utilisez Internet Explorer. Il est donc recommandé d'inclure le démarrage de votre navigateur web à vos tests codés de l'interface utilisateur.  
   
--   ![Prérequis](~/test/media/prereq.png "Prérequis") L’automatisation d’actions d’interface utilisateur basées spécifiquement sur un navigateur, par exemple agrandir, réduire et restaurer, n’est pas prise en charge.  
+-   ![Prérequis](../test/media/prereq.png "Prérequis") L’automatisation d’actions d’interface utilisateur basées spécifiquement sur un navigateur, par exemple agrandir, réduire et restaurer, n’est pas prise en charge.  
   
  **Conseils**  
   
--   ![Conseil](~/test/media/tip.png "Conseil") Vous pouvez configurer la sortie pour inclure des captures d’écran dans les journaux codés de l’interface utilisateur. Pour cela, vous devez définir des paramètres de configuration dans le fichier QTAgent32.exe.config. Par défaut, ce fichier est installé à l'endroit suivant :  
+-   ![Conseil](../test/media/tip.png "Conseil") Vous pouvez configurer la sortie pour inclure des captures d’écran dans les journaux codés de l’interface utilisateur. Pour cela, vous devez définir des paramètres de configuration dans le fichier QTAgent32.exe.config. Par défaut, ce fichier est installé à l'endroit suivant :  
   
      **C:\Program Files (x86)\Microsoft Visual Studio 11.0\Common7\IDE**  
   
@@ -160,9 +144,9 @@ Les tests codés de l'interface utilisateur peuvent automatiser le test des appl
  [Test de la livraison continue avec Visual Studio 2012 - Chapitre 5 : Automatisation des tests système](http://go.microsoft.com/fwlink/?LinkID=255196)  
   
 ### <a name="faq"></a>FAQ  
- [FAQ sur les tests codés de l’interface utilisateur - 1](http://go.microsoft.com/fwlink/?LinkID=230576)  
+ [FAQ concernant les tests codés de l’interface utilisateur - 1](http://go.microsoft.com/fwlink/?LinkID=230576)  
   
- [FAQ sur les tests codés de l’interface utilisateur - 2](http://go.microsoft.com/fwlink/?LinkID=230578)  
+ [FAQ concernant les tests codés de l’interface utilisateur - 2](http://go.microsoft.com/fwlink/?LinkID=230578)  
   
 ### <a name="forum"></a>Forum  
  [Visual Studio UI Automation Testing (avec tests codés de l’interface utilisateur)](http://go.microsoft.com/fwlink/?LinkID=224497)  
@@ -171,4 +155,3 @@ Les tests codés de l'interface utilisateur peuvent automatiser le test des appl
  [Utiliser UI Automation pour tester votre code](../test/use-ui-automation-to-test-your-code.md)   
  [Plateformes et configurations prises en charge pour les tests codés de l’interface utilisateur et les enregistrements des actions](../test/supported-configurations-and-platforms-for-coded-ui-tests-and-action-recordings.md)   
  [Analyse des tests codés de l’interface utilisateur à l’aide des journaux de test codé de l’interface utilisateur](../test/analyzing-coded-ui-tests-using-coded-ui-test-logs.md)
-

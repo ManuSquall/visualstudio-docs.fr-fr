@@ -4,38 +4,22 @@ ms.custom:
 ms.date: 02/17/2017
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-general
+ms.technology: vs-ide-general
 ms.tgt_pltfrm: 
 ms.topic: article
 helpviewer_keywords:
 - code access security, coding errors
 - security [.NET Framework], about security
 ms.assetid: 318c34ce-f643-468c-83a1-843196f5d845
-caps.latest.revision: 20
+caps.latest.revision: "20"
 author: kempb
 ms.author: kempb
 manager: ghogen
-translation.priority.ht:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 3d32d11a430227800cb3ed53831a9565eb6adeb3
-ms.openlocfilehash: 7314921a9416184c4bd63312bd5a82cef4102ddd
-ms.contentlocale: fr-fr
-ms.lasthandoff: 05/30/2017
-
+ms.openlocfilehash: 25b0f76c657f4d4df7375b4fc9e418e8806bd51f
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: HT
+ms.contentlocale: fr-FR
+ms.lasthandoff: 10/31/2017
 ---
 # <a name="security-in-visual-studio"></a>Sécurité dans Visual Studio
 Vous devez prendre en compte la sécurité dans tous les aspects du développement de votre application, de la conception jusqu'au déploiement. Commencez par exécuter Visual Studio avec le niveau de sécurité le plus élevé possible. Consultez [Autorisations utilisateur](../ide/user-permissions-and-visual-studio.md).  

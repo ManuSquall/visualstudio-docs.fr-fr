@@ -4,8 +4,7 @@ ms.custom:
 ms.date: 01/23/2017
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-general
+ms.technology: vs-ide-general
 ms.tgt_pltfrm: 
 ms.topic: article
 f1_keywords:
@@ -24,31 +23,15 @@ helpviewer_keywords:
 - debug mode
 - custom layouts
 ms.assetid: 7517ff13-76de-4ecf-9c1b-eb9b7ff4d718
-caps.latest.revision: 27
-author: kempb
-ms.author: kempb
+caps.latest.revision: "27"
+author: gewarren
+ms.author: gewarren
 manager: ghogen
-translation.priority.ht:
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- ru-ru
-- zh-cn
-- zh-tw
-translation.priority.mt:
-- cs-cz
-- pl-pl
-- pt-br
-- tr-tr
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 5ea9179ad37514ffad4876177b05150eecc22def
-ms.openlocfilehash: 8ab795965dc205cd783f469d134d64fb2b5dacf6
-ms.contentlocale: fr-fr
-ms.lasthandoff: 05/24/2017
-
+ms.openlocfilehash: 85881bf35fb89f753eb4110d7b1128b4761a73a3
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: HT
+ms.contentlocale: fr-FR
+ms.lasthandoff: 10/31/2017
 ---
 # <a name="customize-window-layouts-in-visual-studio"></a>Personnalisation des dispositions de fenêtres dans Visual Studio
 Dans Visual Studio, vous pouvez personnaliser la position, la taille et le comportement des fenêtres pour créer des dispositions de fenêtres optimisées pour différents flux de travail de développement. Quand vous personnalisez la disposition, l'IDE mémorise vos paramètres. Ainsi, si vous modifiez l'emplacement d'ancrage de l' **Explorateur de solutions** et que vous fermez Visual Studio, l' **Explorateur de solutions** sera ancré au même emplacement au prochain démarrage, même si vous travaillez sur un autre ordinateur. Vous pouvez également nommer et enregistrer une disposition personnalisée, et basculer d’une disposition à une autre avec une seule commande. Vous pouvez par exemple créer une disposition pour la modification et une autre pour le débogage, et basculer de l’une à l’autre avec la commande de menu **Fenêtre &#124; Appliquer la disposition de fenêtre**.  
@@ -195,4 +178,3 @@ Dans Visual Studio, vous pouvez personnaliser la position, la taille et le compo
 ## <a name="related-topics"></a>Rubriques connexes  
 
 [Guide pratique pour se déplacer dans l’IDE](../ide/how-to-move-around-in-the-visual-studio-ide.md)
-

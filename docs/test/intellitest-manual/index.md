@@ -4,36 +4,19 @@ ms.custom:
 ms.date: 05/02/2017
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-devops-test
+ms.technology: vs-devops-test
 ms.tgt_pltfrm: 
 ms.topic: article
-helpviewer_keywords:
-- IntelliTest Reference Manual, IntelliTest
+helpviewer_keywords: IntelliTest Reference Manual, IntelliTest
 ms.assetid: C5FA1C59-BB82-43B6-BF96-D0D85E033DAE
-caps.latest.revision: 56
+caps.latest.revision: "56"
 ms.author: douge
 manager: douge
-translation.priority.ht:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 45d36934cf1c46902cac566203cddf4a118b7fe4
-ms.openlocfilehash: 1f37379b77701a969cc6667abc0778dbbb95202f
-ms.contentlocale: fr-fr
-ms.lasthandoff: 06/02/2017
-
+ms.openlocfilehash: 300f2a830b2bd22c39798821cfd6cd8e804fb64a
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.translationtype: HT
+ms.contentlocale: fr-FR
+ms.lasthandoff: 10/27/2017
 ---
 # <a name="intellitest-reference-manual"></a>Manuel de référence IntelliTest
 
@@ -46,7 +29,7 @@ ms.lasthandoff: 06/02/2017
     * [Concurrence](introduction.md#concurrency)
     * [Code natif](introduction.md#native-code)
     * [Plateforme](introduction.md#platform)
-    * [Langage](introduction.md#language)
+    * [Langue](introduction.md#language)
     * [Raisonnement symbolique](introduction.md#symbolic-reasoning)
     * [Traces de pile incorrectes](introduction.md#incorrect-stack)
   - [Compléments de lecture](introduction.md#further-reading)<p>&nbsp;</p>
@@ -144,5 +127,4 @@ ms.lasthandoff: 06/02/2017
 
 ## <a name="got-feedback"></a>Vous avez des commentaires ?
 
-Postez vos idées et vos demandes de fonctionnalité sur  **[UserVoice](https://visualstudio.uservoice.com/forums/121579-visual-studio-2015/category/157869-test-tools?query=IntelliTest)**.
-
+Postez vos idées et demandes de fonctionnalités sur **[UserVoice](https://visualstudio.uservoice.com/forums/121579-visual-studio-2015/category/157869-test-tools?query=IntelliTest)**.

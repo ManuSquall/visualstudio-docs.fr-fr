@@ -4,34 +4,18 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-devops-test
+ms.technology: vs-devops-test
 ms.tgt_pltfrm: 
 ms.topic: article
 ms.assetid: 73519dd9-f3d5-49b6-a634-38881b459ea4
-caps.latest.revision: 17
+caps.latest.revision: "17"
 ms.author: douge
 manager: douge
-translation.priority.ht:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
+ms.openlocfilehash: f934ef31d2f348c2784393dbe472a417da0b4cd1
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
 ms.translationtype: HT
-ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
-ms.openlocfilehash: 90351c8d5a492a5642568691893f61a7001861cb
-ms.contentlocale: fr-fr
-ms.lasthandoff: 09/26/2017
-
+ms.contentlocale: fr-FR
+ms.lasthandoff: 10/27/2017
 ---
 # <a name="using-stubs-to-isolate-parts-of-your-application-from-each-other-for-unit-testing"></a>Utilisation de stubs pour isoler des parties de votre application les unes des autres pour des tests unitaires
 Les *types de stub* représentent l’une des deux technologies fournies par le framework Microsoft Fakes pour vous permettre d’isoler facilement un composant que vous testez d’autres composants appelés. Un stub est une petite partie de code qui remplace un autre composant pendant les tests. L'utilisation d'un stub présente l'avantage de retourner des résultats cohérents, ce qui rend le test plus facile à écrire. Vous pouvez également effectuer des tests même si les autres composants ne fonctionnent pas encore.  
@@ -522,4 +506,3 @@ StubBehaviors.Current =
   
 ## <a name="see-also"></a>Voir aussi  
  [Isolation du code testé avec Microsoft Fakes](../test/isolating-code-under-test-with-microsoft-fakes.md)
-

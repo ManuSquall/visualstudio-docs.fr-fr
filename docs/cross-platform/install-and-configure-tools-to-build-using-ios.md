@@ -4,38 +4,20 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- tgt-pltfrm-cross-plat
+ms.technology: tgt-pltfrm-cross-plat
 ms.tgt_pltfrm: 
 ms.topic: article
-dev_langs:
-- C++
+dev_langs: C++
 ms.assetid: d0c311c9-9eb9-42c5-ba07-25604362cd28
-caps.latest.revision: 11
-author: BrianPeek
-ms.author: brpeek
+caps.latest.revision: "11"
+author: corob-msft
+ms.author: corob
 manager: ghogen
-translation.priority.ht:
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- ru-ru
-- zh-cn
-- zh-tw
-translation.priority.mt:
-- cs-cz
-- pl-pl
-- pt-br
-- tr-tr
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 47057e9611b824c17077b9127f8d2f8b192d6eb8
-ms.openlocfilehash: 53224c67d6778ea51e1cf055a0c4c0db34940ada
-ms.contentlocale: fr-fr
-ms.lasthandoff: 05/13/2017
-
+ms.openlocfilehash: 368481d0a38b7b8f721aa18be0ecda7d35a42aba
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: HT
+ms.contentlocale: fr-FR
+ms.lasthandoff: 10/31/2017
 ---
 # <a name="install-and-configure-tools-to-build-using-ios"></a>Installer et configurer des outils de génération en utilisant iOS
 Vous pouvez utiliser Visual C++ pour le développement mobile multiplateforme pour modifier et déboguer du code iOS et ensuite le déployer dans le simulateur iOS ou sur un appareil iOS, mais en raison de restrictions de licences, le code doit être généré et exécuté à distance sur un Mac. Pour générer et exécuter des applications iOS à l’aide de Visual Studio, vous devez installer et configurer l’agent distant, [vcremote](http://go.microsoft.com/fwlink/p/?LinkId=534988), sur votre Mac. L’agent distant gère les demandes de génération de Visual Studio et exécute l’application sur un appareil iOS connecté au Mac ou dans le simulateur iOS sur le Mac.  
@@ -110,7 +92,7 @@ Vous pouvez utiliser Visual C++ pour le développement mobile multiplateforme po
      Pendant l’installation, vcremote est installé et le mode développeur est activé sur votre Mac. [Homebrew](http://brew.sh/) et deux packages npm, vcremote-lib et vcremote-utils, sont aussi installés.  
   
     > [!NOTE]
-    >  Pour installer Homebrew, vous devez disposer d’un accès sudo (administrateur). Si vous avez besoin d’installer vcremote sans sudo, vous pouvez installer Homebrew manuellement à un emplacement usr/local et ajouter son dossier bin à votre chemin. Pour plus d’informations, consultez la [documentation Homebrew](https://github.com/Homebrew/homebrew/wiki/Installation). Pour activer manuellement le mode développeur, entrez cette commande dans l’application Terminal : `DevToolsSecurity -enable`  
+    >  Pour installer Homebrew, vous devez disposer d’un accès sudo (administrateur). Si vous avez besoin d’installer vcremote sans sudo, vous pouvez installer Homebrew manuellement à un emplacement usr/local et ajouter son dossier bin à votre chemin. Pour plus d’informations, consultez la [documentation Homebrew](https://github.com/Homebrew/homebrew/wiki/Installation). Pour activer manuellement le mode développeur, entrez cette commande dans l’application Terminal : `DevToolsSecurity -enable`  
   
  Si vous avez mis à jour Visual Studio vers une nouvelle version, vous devez aussi mettre à jour l’agent distant vers la version actuelle. Pour mettre à jour l’agent distant, répétez la procédure de téléchargement et d’installation de l’agent à distance.  
   
@@ -127,7 +109,7 @@ Vous pouvez utiliser Visual C++ pour le développement mobile multiplateforme po
   
  La première fois que vous démarrez l’agent et à chaque fois que vous créez un certificat client, les informations nécessaires à la configuration de l’agent dans Visual Studio vous sont fournies, notamment le nom d’hôte, le port et le code confidentiel.  
   
- ![Utiliser vcremote pour générer un code PIN sécurisé](~/cross-platform/media/cppmdd_vcremote_generateclientcert.png "CPPMDD_vcremote_generateClientCert")  
+ ![Utiliser vcremote pour générer un code PIN sécurisé](../cross-platform/media/cppmdd_vcremote_generateclientcert.png "CPPMDD_vcremote_generateClientCert")  
   
  Si vous envisagez de configurer l’agent distant dans Visual Studio en utilisant le nom d’hôte, envoyez une requête ping au Mac à partir de Windows en utilisant le nom d’hôte pour vérifier qu’il est accessible. Dans le cas contraire, vous serez peut-être amené à utiliser l’adresse IP à la place.  
   
@@ -177,7 +159,7 @@ Vous pouvez utiliser Visual C++ pour le développement mobile multiplateforme po
   
 7.  Choisissez **Coupler** pour activer le jumelage.  
   
-     ![Configurer la connexion vcremote pour les builds iOS](~/cross-platform/media/cppmdd_options_ios.PNG "CPPMDD_Options_iOS")  
+     ![Configurer la connexion vcremote pour les builds iOS](../cross-platform/media/cppmdd_options_ios.PNG "CPPMDD_Options_iOS")  
   
      Le couplage persiste tant que vous ne changez pas de nom d’hôte ou de port. Si vous changez de nom d’hôte ou de port dans la boîte de dialogue **Options** , pour annuler la modification, choisissez le bouton **Rétablir** pour revenir au couplage précédent.  
   

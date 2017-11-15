@@ -6,14 +6,12 @@ ms.author: amburns
 ms.date: 04/14/2017
 ms.topic: article
 ms.assetid: 61EAAB8F-3C32-4574-924F-CFC616604089
-ms.translationtype: HT
-ms.sourcegitcommit: e2b7ff9126e1cc38ac2e58d6be339b656a024e7f
 ms.openlocfilehash: 46338778813b73dbc87458f90cfe0548bd8ccb8a
-ms.contentlocale: fr-fr
-ms.lasthandoff: 08/11/2017
-
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.translationtype: HT
+ms.contentlocale: fr-FR
+ms.lasthandoff: 10/27/2017
 ---
-
 # <a name="managing-app-resources"></a>Gestion des ressources d’application
 
 Les fichiers de ressources d’application, comme les images, les fichiers texte et les fichiers audio, sont des parties intégrantes de votre application qui ne sont pas compilées avec l’application. Chaque plateforme prise en charge par Visual Studio pour Mac gère ces types de fichiers de façons différentes. Pour plus d’informations sur le traitement des ressources d’application dans Visual Studio pour Mac, reportez-vous aux guides ci-dessous.
@@ -40,6 +38,5 @@ Le code Xamarin.Forms s’exécute sur plusieurs plateformes, chacune ayant son 
 ## <a name="xamarinmac"></a>Xamarin.Mac
 
 * [Utilisation d’images](https://developer.xamarin.com/guides/mac/application_fundamentals/working-with-images/)
-
 
 

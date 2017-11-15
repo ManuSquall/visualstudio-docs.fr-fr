@@ -1,42 +1,43 @@
 ---
-title: "Fonctionnement des valeurs de donn&#233;es de conflit de ressources dans les outils de profilage | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-debug"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-helpviewer_keywords: 
-  - "méthode de profilage d’accès concurrentiel"
-  - "outils de profilage, méthode de concurrence"
+title: "Présentation des valeurs des données de conflit de ressources | Microsoft Docs"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-debug
+ms.tgt_pltfrm: 
+ms.topic: article
+helpviewer_keywords:
+- concurrency profiling method
+- Profiling Tools, concurrency method
 ms.assetid: 071c0f0f-1eba-4dc8-ae87-0810e4086dd0
-caps.latest.revision: 9
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 9
+caps.latest.revision: "9"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: b4e128fa9a557569eb737a2b0a70ce60687d0830
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: HT
+ms.contentlocale: fr-FR
+ms.lasthandoff: 10/31/2017
 ---
-# Fonctionnement des valeurs de donn&#233;es de conflit de ressources dans les outils de profilage
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
-
-Le profilage de conflit de ressources collecte les informations de pile d'appels détaillées chaque fois que des threads concurrents dans une application sont convertis pour attendre l'accès à une ressource partagée.  
+# <a name="understanding-resource-contention-data-values"></a>Fonctionnement des valeurs de données de conflit de ressources
+Le profilage de conflit de ressources collecte les informations détaillées de la pile des appels chaque fois que des threads en concurrence dans une application sont forcés d’attendre pour accéder à une ressource partagée.  
   
- **Conditions requises**  
+ **Requirements**  
   
 -   [!INCLUDE[vsUltLong](../code-quality/includes/vsultlong_md.md)], [!INCLUDE[vsPreLong](../code-quality/includes/vsprelong_md.md)], [!INCLUDE[vsPro](../code-quality/includes/vspro_md.md)]  
   
- Les rapports de conflit de ressources affichent le nombre total de conflits et la durée totale d'attente pour une ressource pour les modules, fonctions, lignes de code source et instructions.  
+ Les rapports de conflit de ressources affichent le nombre total de conflits et le temps total passé en attente d’une ressource pour les modules, les fonctions, les lignes de code source et les instructions où l’attente s’est produite.  
   
--   Les valeurs inclusives affichent le nombre total de conflits \(par conflits de ressources\) qui ont forcé une fonction à attendre et la durée totale d'attente de la fonction.  Les conflits causés par des fonctions enfants appelées par la fonction ne sont pas inclus dans les valeurs inclusives.  
+-   Les valeurs inclusives affichent le nombre total de conflits qui ont forcé une fonction à attendre en raison des conflits de ressources et le temps d’attente total de la fonction.  Les conflits provoqués par des fonctions enfants qui ont été appelées par la fonction sont inclus dans les valeurs de temps inclusives.  
   
--   Les valeurs exclusives affichent uniquement le nombre de conflits qui ont forcé une fonction à attendre et qui ont été provoqués par le code dans le corps de la fonction.  Les conflits provoqués par les fonctions enfants ne sont pas inclus.  La durée exclusive pour la fonction inclut également uniquement les temps d'attente provoqués par les instructions dans le corps de la fonction.  
+-   Les valeurs de temps exclusives montrent seulement le nombre de conflits qui ont forcé une fonction à attendre et qui ont été provoqués par le code du corps de la fonction. Les conflits provoqués par des fonctions enfants ne sont pas inclus. Le temps exclusif pour la fonction inclut seulement les temps d’attente qui ont été provoqués par des instructions du corps de la fonction.  
   
- Les vues de rapport de conflit de ressources incluent également des graphiques de chronologie qui affichent les événements de conflit individuels sur une période donnée et affichent les piles d'appels qui ont créé l'événement particulier.  Pour plus d'informations, consultez l'une des rubriques suivantes :  
+ Les vues du rapport de conflit de ressources incluent également des graphiques chronologiques qui montrent les événements de conflit individuels au fil du temps et affichent les piles d’appels qui ont créé l’événement particulier. Pour plus d'informations, consultez l'une des rubriques suivantes :  
   
 -   [Détails relatifs au thread, vue](../profiling/thread-details-view-contention-data.md)  
   
--   [Vue Informations sur les ressources](../profiling/resource-details-view-contention-data.md)  
+-   [Informations sur les ressources, vue](../profiling/resource-details-view-contention-data.md)  
   
- Pour plus d'informations sur le deuxième mode de profilage d'accès concurrentiel, consultez [Visualiseur concurrence](../profiling/concurrency-visualizer.md).
+ Pour plus d’informations sur le deuxième mode de profilage d’accès concurrentiel, consultez [Visualiseur concurrentiel](../profiling/concurrency-visualizer.md).

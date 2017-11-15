@@ -1,54 +1,55 @@
 ---
-title: "Fichiers divers | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-general"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "VS.newfile"
-  - "VS.OpenWith"
-  - "MiscellaneousFilesProject"
-helpviewer_keywords: 
-  - "solutions, fichier divers"
-  - "builds [Visual Studio], fichiers divers"
-  - "fichiers autonomes"
-  - "Explorateur de solutions, fichier divers"
-  - "Fichiers divers (dossier)"
-  - "fichiers [Visual Studio], hors des conteneurs"
-  - "fichiers [Visual Studio], dossier de fichiers divers"
+title: Fichiers divers | Microsoft Docs
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-general
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords:
+- VS.newfile
+- VS.OpenWith
+- MiscellaneousFilesProject
+helpviewer_keywords:
+- solutions, miscellaneous files
+- builds [Visual Studio], miscellaneous files
+- standalone files
+- Solution Explorer, miscellaneous files
+- Miscellaneous Files folder
+- files [Visual Studio], outside of containers
+- files [Visual Studio], Miscellaneous Files folder
 ms.assetid: 5b96640b-8efe-48a4-8d0a-1ae3f9587e44
-caps.latest.revision: 11
-author: "kempb"
-ms.author: "kempb"
-manager: "ghogen"
-caps.handback.revision: 11
+caps.latest.revision: "11"
+author: gewarren
+ms.author: gewarren
+manager: ghogen
+ms.openlocfilehash: 831d0f60c992324c81cb1366ac28b3e3f1b066ad
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: HT
+ms.contentlocale: fr-FR
+ms.lasthandoff: 10/31/2017
 ---
-# Fichiers divers
-[!INCLUDE[vs2017banner](../../code-quality/includes/vs2017banner.md)]
-
-Il se peut que vous vouliez utiliser les éditeurs de [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] pour travailler sur des fichiers indépendamment d'un projet ou d'une solution.  Lorsqu'une solution est ouverte, vous pouvez ouvrir des fichiers et les modifier sans avoir à les ajouter à une solution ou à un projet.  Les fichiers que vous souhaitez utiliser indépendamment des conteneurs sont appelés fichiers divers.  Il s'agit de fichiers externes aux solutions et aux projets, ne pouvant être inclus dans les générations ou avec une solution sous contrôle de code source.  
+# <a name="miscellaneous-files"></a>Fichiers divers
+Vous pouvez utiliser les éditeurs [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] pour utiliser indépendamment les fichiers d’un projet ou d’une solution. Dans une solution ouverte, vous pouvez ouvrir et modifier des fichiers sans les ajouter à une solution ou un projet. Les fichiers que vous voulez utiliser indépendamment des conteneurs sont appelés fichiers divers. Les fichiers divers sont externes aux solutions et projets, et ne sont pas inclus dans les générations. Ils ne peuvent pas être inclus dans une solution sous contrôle de code source.  
   
- L'ouverture de fichiers indépendamment d'un conteneur est utile pour diverses raisons.  Il se peut que, lors du développement d'une solution composée de plusieurs projets, vous souhaitiez visualiser un dossier qui ne fait pas partie intégrante du développement de la solution.  Les exemples les plus courants sont les instructions ou conseils de développement, les schémas de base de données ou les clips de code.  De même, vous pouvez vouloir créer un fichier autonome.  
+ L’ouverture de fichiers indépendamment d’un conteneur est utile pour diverses raisons. Par exemple, vous voulez afficher un fichier pendant le développement d’une solution basée sur un projet, qui ne fait pas partie du développement de la solution. Il s’agit souvent de remarques ou d’instructions concernant le développement, de schéma de base de données et d’extraits de code. Autre exemple, vous voulez créer un fichier autonome.  
   
- ![Projets de solutions](~/ide/reference/media/projects_solutions_misc.gif "Projects\_Solutions\_Misc")  
+ ![Projets de solutions](../../ide/reference/media/projects_solutions_misc.gif "Projects_Solutions_Misc")  
   
- Pour que l'Explorateur de solutions affiche le dossier Fichiers divers correspondant à ces fichiers, les options appropriées du dossier doivent être activées.  Les options peuvent être définies à partir de la [Documents, Environnement, boîte de dialogue Options](../../ide/reference/documents-environment-options-dialog-box.md).  Quand vous fermez un fichier divers, il n'est pas associé à une solution particulière ou un projet particulier si vous n'avez pas activé l'option correspondante.  
+ L’Explorateur de solutions peut afficher un dossier Fichiers divers si les options du dossier sont activées. Les options peuvent être définies dans [Documents, Environnement, boîte de dialogue Options](../../ide/reference/documents-environment-options-dialog-box.md). Une fois que vous fermez un fichier divers, il n’est associé à aucune solution ou projet particulier, sauf si une option est activée dans ce but.  
   
- Le dossier Fichiers divers représente les fichiers sous forme de liens.  Bien que ce dossier n'appartienne pas à une solution, quand vous en ouvrez une, une partie ou la totalité des fichiers divers qui étaient ouverts lorsque la solution a été fermée pour la dernière fois est rouverte, selon les paramètres définis pour le dossier.  
+ Le dossier Fichiers divers représente les fichiers sous forme de liens. Bien que ce dossier ne fasse pas partie d’une solution, quand vous ouvrez une solution, tout ou partie des fichiers divers qui étaient ouverts lors de la dernière fermeture de la solution sont rouverts, selon les paramètres définis pour le dossier.  
   
 > [!NOTE]
->  Parmi les fichiers qui n'apparaissent pas dans le dossier Fichiers divers, certains ne peuvent pas être modifiés dans l'IDE. C'est le cas des fichiers .zip et des fichiers .doc.  L'IDE ne suivra pas les fichiers qui ne peuvent être modifiés que via un éditeur externe.  
+>  Certains fichiers qui n’apparaissent pas dans le dossier Fichiers divers sont ceux que vous ne pouvez pas modifier dans l’IDE, comme les fichiers .zip et les fichiers .doc. L’IDE n’effectue pas le suivi des fichiers qui ne peuvent être modifiés par un éditeur externe.  
   
-## Commandes disponibles dans l'environnement IDE  
- Les menus, barres d'outils et commandes varient en fonction du format du fichier que vous ouvrez.  Lorsque, par exemple, vous ouvrez un fichier texte, la barre d'outils de l'éditeur de texte s'affiche avec ses commandes.  Si vous ouvrez un schéma XML, la barre d'outils correspondante s'affiche.  Lorsque vous modifiez le schéma XML, les commandes de la barre d'outils de l'éditeur de texte \(ou la barre d'outils elle\-même\) ne sont, quant à elles, pas disponibles.  Le schéma XML constitue la fenêtre active et, en tant que tel, possède le contexte de sélection en cours.  Quand vous passez d'un fichier projet à un fichier divers, toutes les commandes associées au projet disparaissent et seules celles directement associées au fichier divers s'affichent.  
+## <a name="commands-available-in-the-ide"></a>Commandes disponibles dans l’IDE  
+ Les menus, les barres d’outils et les commandes qu’ils contiennent changent selon le format du fichier que vous ouvrez. Quand vous ouvrez un fichier texte, par exemple, la barre d’outils Éditeur de texte apparaît et ses commandes sont disponibles. Si vous ouvrez un fichier de schéma XML, la barre d’outils du schéma XML s’affiche. Quand vous modifiez votre schéma XML, les commandes de la barre d’outils Éditeur de texte (ou la barre d’outils elle-même) ne sont pas disponibles. Le schéma XML est la fenêtre active. De ce fait, il hérite du contexte de sélection actuel. Quand vous passez d’un fichier projet à un fichier divers, toutes les commandes associées au projet disparaissent et seules celles directement associées au fichier divers s’affichent.  
   
-## Options d'affichage des dossiers  
- Vous pouvez définir plusieurs options pour le dossier Fichiers divers de telle sorte que le dossier s'affiche même si vous n'avez ouvert aucun fichier divers.  Le fichier solution ne gère pas en permanence une liste des fichiers divers.  Il utilise une fonctionnalité facultative qui lui permet de se souvenir, pour chaque utilisateur, de la liste des derniers fichiers utilisés.  
+## <a name="folder-display-options"></a>Options d’affichage du dossier  
+ Vous pouvez définir les options d’affichage du dossier divers pour qu’il s’affiche même si vous n’avez pas ouvert de fichier divers. Le fichier solution ne gère pas la liste des fichiers divers de façon permanente. Il utilise une fonctionnalité facultative qui lui permet de se rappeler la liste des fichiers récemment utilisés par l’utilisateur.  
   
-## Voir aussi  
+## <a name="see-also"></a>Voir aussi  
  [Projets et solutions](../../ide/solutions-and-projects-in-visual-studio.md)   
  [Documents, Environnement, boîte de dialogue Options](../../ide/reference/documents-environment-options-dialog-box.md)

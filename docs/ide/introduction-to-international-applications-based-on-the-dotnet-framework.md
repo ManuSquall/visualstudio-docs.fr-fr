@@ -4,8 +4,7 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-general
+ms.technology: vs-ide-general
 ms.tgt_pltfrm: 
 ms.topic: article
 helpviewer_keywords:
@@ -26,30 +25,15 @@ helpviewer_keywords:
 - resource files, fallback processes
 - user interface, culture setting
 ms.assetid: b0788993-e62d-4f68-8235-5f87b1d48525
-caps.latest.revision: 11
-author: kempb
-ms.author: kempb
+caps.latest.revision: "11"
+author: gewarren
+ms.author: gewarren
 manager: ghogen
-translation.priority.ht:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 5658ecf52637a38bc3c2a5ad9e85b2edebf7d445
-ms.openlocfilehash: 5d04af26004b5915fcd373fda154ac79816e475c
-ms.contentlocale: fr-fr
-ms.lasthandoff: 05/19/2017
-
+ms.openlocfilehash: 2bfebe7cfcaff34742db902d50b6de424a6794ca
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: HT
+ms.contentlocale: fr-FR
+ms.lasthandoff: 10/31/2017
 ---
 # <a name="introduction-to-international-applications-based-on-the-net-framework"></a>Introduction aux applications internationales basées sur le .NET Framework
 Dans [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)], il existe deux parties pour la création d’une application mondialisable : la globalisation (processus de conception d’applications pouvant s’adapter à différentes cultures) et la localisation (processus de traduction de ressources pour une culture spécifique). Pour des informations générales sur la conception d’applications à destination d’un public international, consultez [Bonnes pratiques pour développer des applications mondialisables](http://msdn.microsoft.com/Library/f08169c7-aad8-4ec3-9a21-9ebd3b89986c).  

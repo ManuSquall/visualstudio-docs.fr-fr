@@ -103,4 +103,3 @@
 #### [<PackageFiles>, élément (programme d’amorçage)](packagefiles-element-bootstrapper.md)
 #### [<Strings>, élément (programme d’amorçage)](strings-element-bootstrapper.md)
 #### [<Schedules>, élément (programme d’amorçage)](schedules-element-bootstrapper.md)
-## [InstallShield Limited Edition](installshield-limited-edition.md)

@@ -4,12 +4,10 @@ ms.custom:
 ms.date: 03/13/2017
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-sdk
+ms.technology: vs-ide-sdk
 ms.tgt_pltfrm: 
 ms.topic: article
-f1_keywords:
-- http://schemas.microsoft.com/developer/msbuild/2003#PropertyGroup
+f1_keywords: http://schemas.microsoft.com/developer/msbuild/2003#PropertyGroup
 dev_langs:
 - VB
 - CSharp
@@ -19,29 +17,15 @@ helpviewer_keywords:
 - <PropertyGroup> element [MSBuild]
 - PropertyGroup element [MSBuild]
 ms.assetid: ff1e6c68-b9a1-4263-a1ce-dc3b829a64d4
-caps.latest.revision: 21
+caps.latest.revision: "21"
 author: kempb
 ms.author: kempb
 manager: ghogen
-translation.priority.ht:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
-translationtype: Human Translation
-ms.sourcegitcommit: 79460291e91f0659df0a4241e17616e55187a0e2
-ms.openlocfilehash: b16b6ad793fed1e973d366bb8a916253948e3868
-ms.lasthandoff: 02/22/2017
-
+ms.openlocfilehash: 27284df9459210a3ead5f69ba4db8f952ead5028
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: HT
+ms.contentlocale: fr-FR
+ms.lasthandoff: 10/31/2017
 ---
 # <a name="propertygroup-element-msbuild"></a>PropertyGroup, élément (MSBuild)
 Contient un ensemble d’éléments [Property](../msbuild/property-element-msbuild.md) définis par l’utilisateur. Chaque élément `Property` utilisé dans un projet [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] doit être un enfant d’un élément `PropertyGroup`.  
@@ -77,7 +61,7 @@ Contient un ensemble d’éléments [Property](../msbuild/property-element-msbui
 
 |Élément|Description|  
 |-------------|-----------------|  
-|[Project](../msbuild/project-element-msbuild.md)|Élément racine requis d'un fichier projet [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)].|  
+|[Projet](../msbuild/project-element-msbuild.md)|Élément racine requis d'un fichier projet [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)].|  
 
 ## <a name="example"></a>Exemple  
  L’exemple de code suivant montre comment définir des propriétés en fonction d’une condition. Dans cet exemple, si la valeur de la propriété `CompileConfig` est `DEBUG`, les propriétés `Optimization`, `Obfuscate` et `OutputPath` contenues dans l’élément `PropertyGroup` sont définies.  
@@ -93,4 +77,3 @@ Contient un ensemble d’éléments [Property](../msbuild/property-element-msbui
 ## <a name="see-also"></a>Voir aussi  
  [Informations de référence sur le schéma de fichier projet MSBuild](../msbuild/msbuild-project-file-schema-reference.md)  
  [Propriétés MSBuild](../msbuild/msbuild-properties.md)
-
