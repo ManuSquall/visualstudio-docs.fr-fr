@@ -13,9 +13,10 @@ translation.priority.ht:
 - tr-tr
 - zh-cn
 - zh-tw
-translationtype: Human Translation
-ms.sourcegitcommit: 5db97d19b1b823388a465bba15d057b30ff0b3ce
-ms.openlocfilehash: 3848b76bb8947a28c17cadf68cfcb686cba1dc4a
-
+ms.openlocfilehash: 6992232f0e893b887950335056fac4f142b284f1
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: HT
+ms.contentlocale: fr-FR
+ms.lasthandoff: 10/31/2017
 ---
-.NET pour les applications Windows 8.x Store
+.NET pour les applications Windows 8.x

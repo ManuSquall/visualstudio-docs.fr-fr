@@ -11,33 +11,16 @@ f1_keywords:
 - VS.ToolsOptionsPages.Text_Editor.C%2FC%2B%2B.Experimental
 - VS.ToolsOptionsPages.Text_Editor.C\C++.Experimental
 ms.assetid: b9e9dda2-350c-460d-b368-37d6c5342eee
-caps.latest.revision: 10
+caps.latest.revision: "10"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-translation.priority.ht:
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- ru-ru
-- zh-cn
-- zh-tw
-translation.priority.mt:
-- cs-cz
-- pl-pl
-- pt-br
-- tr-tr
-ms.technology:
-- vs-ide-general
+ms.technology: vs-ide-general
+ms.openlocfilehash: d67907a99851e09bf384c96b6ff6b87b4882cd30
+ms.sourcegitcommit: c0422a3d594ea5ae8fc03f1aee684b04f417522e
 ms.translationtype: HT
-ms.sourcegitcommit: ea1e787c1d509123a650cf2bd20e5fa8bffd5b4e
-ms.openlocfilehash: faa37f88995f232f1198d3738ac5fba99d2970bd
-ms.contentlocale: fr-fr
-ms.lasthandoff: 09/26/2017
-
+ms.contentlocale: fr-FR
+ms.lasthandoff: 11/02/2017
 ---
 # <a name="options-text-editor-cc-experimental"></a>Options, Éditeur de texte, C/C++, Expérimental
 En modifiant ces options, vous pouvez changer le comportement lié à IntelliSense et la base de données de navigation quand vous programmez en C ou C++. Ces fonctionnalités sont véritablement expérimentales et peuvent être modifiées ou supprimées de Visual Studio dans une version ultérieure. Cette rubrique décrit les options disponibles dans Visual Studio 2017. Pour Visual Studio 2015, consultez [Options, Éditeur de texte, C/C++, Expérimental](https://msdn.microsoft.com/library/mt591979.aspx) 
@@ -67,9 +50,8 @@ Pour obtenir d’autres fonctionnalités de l’éditeur de texte dans la galeri
   
 -   **Aide MSDN** : rechercher les messages d’erreur sur MSDN  
   
- Vous pouvez soit pointer sur un tilde pour obtenir une ampoule, soit utiliser le raccourci clavier par défaut Ctrl+point [Ctrl+.]. Notez que, pour le raccourci clavier, votre signe d’insertion ne doit pas être positionné sur le jeton ou l’erreur spécifique ; vous pouvez tout simplement vous placer sur la même ligne que l’erreur pour appeler des suggestions pour tout élément sur cette ligne.  
+Vous pouvez soit pointer sur un tilde pour obtenir une ampoule, soit utiliser le raccourci clavier par défaut Ctrl+point [Ctrl+.]. Notez que, pour le raccourci clavier, votre signe d’insertion ne doit pas être positionné sur le jeton ou l’erreur spécifique ; vous pouvez tout simplement vous placer sur la même ligne que l’erreur pour appeler des suggestions pour tout élément sur cette ligne.  
   
 ## <a name="see-also"></a>Voir aussi  
  [Définition d’options d’éditeur spécifiques du langage](../../ide/reference/setting-language-specific-editor-options.md)   
  [Refactorisation en C++ (blog VC)](http://blogs.msdn.com/b/vcblog/archive/2014/11/14/all-about-c-refactoring-in-visual-studio-2015-preview.aspx)
-

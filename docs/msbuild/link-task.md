@@ -4,8 +4,7 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-sdk
+ms.technology: vs-ide-sdk
 ms.tgt_pltfrm: 
 ms.topic: article
 f1_keywords:
@@ -31,30 +30,15 @@ helpviewer_keywords:
 - MSBuild (Visual C++), Link task
 - Link task (MSBuild (Visual C++))
 ms.assetid: 0a61f168-3113-4fa7-83a3-d9142e2a33f8
-caps.latest.revision: 12
+caps.latest.revision: "12"
 author: kempb
 ms.author: kempb
 manager: ghogen
-translation.priority.ht:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
-ms.translationtype: Human Translation
-ms.sourcegitcommit: ca7c86466fa23fb21a932f26dc24e37c71cf29b4
-ms.openlocfilehash: a062b0a929ce812f19bcc6c89594b8f3b2e93b6f
-ms.contentlocale: fr-fr
-ms.lasthandoff: 04/05/2017
-
+ms.openlocfilehash: 48cf258dbe267a6e2c2b020ee6613b4dac05b2eb
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: HT
+ms.contentlocale: fr-FR
+ms.lasthandoff: 10/31/2017
 ---
 # <a name="link-task"></a>Lier la tâche
 Encapsule l’outil Éditeur de liens Visual C++, link.exe. L’outil Éditeur de liens lie des bibliothèques et des fichiers objets COFF (Common Object File Format) pour créer un fichier exécutable (.exe) ou une bibliothèque de liens dynamiques (DLL). Pour plus d’informations, consultez l’article [Options de l’Éditeur de liens](/cpp/build/reference/linker-options).  

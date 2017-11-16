@@ -4,36 +4,19 @@ ms.custom:
 ms.date: 04/07/2017
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- tgt-pltfrm-cross-plat
+ms.technology: tgt-pltfrm-cross-plat
 ms.tgt_pltfrm: 
 ms.topic: get-started-article
 ms.assetid: 66b5b4eb-13b5-4071-98d2-87fafa4598a8
-caps.latest.revision: 10
+caps.latest.revision: "10"
 author: TerryGLee
 ms.author: tglee
 manager: ghogen
-translation.priority.ht:
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- ru-ru
-- zh-cn
-- zh-tw
-translation.priority.mt:
-- cs-cz
-- pl-pl
-- pt-br
-- tr-tr
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 47057e9611b824c17077b9127f8d2f8b192d6eb8
-ms.openlocfilehash: a923d3fa962ee826d86a1c6946ae87a469b728d6
-ms.contentlocale: fr-fr
-ms.lasthandoff: 05/13/2017
-
+ms.openlocfilehash: 03fd3a4cc84852ad922dec417850a0f4a0b1ea1c
+ms.sourcegitcommit: ee42a8771f0248db93fd2e017a22e2506e0f9404
+ms.translationtype: HT
+ms.contentlocale: fr-FR
+ms.lasthandoff: 11/09/2017
 ---
 # <a name="getting-started-with-visual-studio-tools-for-unity"></a>Prise en main de Visual Studio Tools pour Unity
 Dans cette section, vous allez apprendre à installer Visual Studio Tools pour Unity et à configurer votre projet Unity pour qu’il fonctionne avec Visual Studio.  
@@ -57,19 +40,19 @@ Dans cette section, vous allez apprendre à installer Visual Studio Tools pour U
 
 -   Pour Visual Studio Community 2015, Visual Studio Professional 2015 ou Visual Studio Enterprise 2015 :  
 
-     [Télécharger Visual Studio 2015 Tools pour Unity](https://visualstudiogallery.msdn.microsoft.com/8d26236e-4a64-4d64-8486-7df95156aba9)  
+     [Télécharger Visual Studio 2015 Tools pour Unity](https://visualstudiogallery.msdn.microsoft.com/8d26236e-4a64-4d64-8486-7df95156aba9)  
 
 -   Pour Visual Studio Community 2013, Visual Studio Professional 2013 ou Visual Studio Premium 2013 :  
 
-     [Télécharger Visual Studio 2013 Tools pour Unity](https://visualstudiogallery.msdn.microsoft.com/20b80b8c-659b-45ef-96c1-437828fe7cf2)  
+     [Télécharger Visual Studio 2013 Tools pour Unity](https://visualstudiogallery.msdn.microsoft.com/20b80b8c-659b-45ef-96c1-437828fe7cf2)  
 
 -   Pour Visual Studio 2012 Professional ou Visual Studio 2012 Premium :  
 
-     [Télécharger Visual Studio 2012 Tools pour Unity](https://visualstudiogallery.msdn.microsoft.com/7ab11d2a-f413-4ed6-b3de-ff1d05157714)  
+     [Télécharger Visual Studio 2012 Tools pour Unity](https://visualstudiogallery.msdn.microsoft.com/7ab11d2a-f413-4ed6-b3de-ff1d05157714)  
 
 -   Pour Visual Studio 2010 Professional ou Visual Studio 2010 Premium :  
 
-     [Télécharger Visual Studio 2010 Tools pour Unity](https://visualstudiogallery.msdn.microsoft.com/6e536faa-ce73-494a-a746-6a14753015f1)  
+     [Télécharger Visual Studio 2010 Tools pour Unity](https://visualstudiogallery.msdn.microsoft.com/6e536faa-ce73-494a-a746-6a14753015f1)  
 
 > [!NOTE]
 >  Les versions Express de Visual Studio ne prennent pas en charge les extensions telles que Visual Studio Tools pour Unity. Visual Studio Community est une version gratuite de Visual Studio qui prend en charge Visual Studio Tools pour Unity et d’autres extensions. Pour la plupart des utilisateurs, Visual Studio Community est un meilleur choix que la version Express.  
@@ -129,8 +112,8 @@ Dans cette section, vous allez apprendre à installer Visual Studio Tools pour U
  ![Ouvrir votre projet Unity dans Visual Studio.](../cross-platform/media/vstu_configure_open_in_visual_studio.png "vstu_configure_open_in_visual_studio")  
 
 ## <a name="next-steps"></a>Étapes suivantes  
+
  Pour savoir comment manipuler et déboguer votre projet Unity dans Visual Studio, consultez [Utilisation de Visual Studio Tools pour Unity](../cross-platform/using-visual-studio-tools-for-unity.md).  
 
 ## <a name="see-also"></a>Voir aussi  
  [Page d’accueil d’Unity](http://unity3d.com)
-

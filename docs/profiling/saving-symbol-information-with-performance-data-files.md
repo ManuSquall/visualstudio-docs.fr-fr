@@ -4,38 +4,22 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-debug
+ms.technology: vs-ide-debug
 ms.tgt_pltfrm: 
 ms.topic: article
 helpviewer_keywords:
 - packsymbols, in profiling tools reports
 - profiling tools, packsymbols
 ms.assetid: 8b802505-e94d-4ee0-83e4-fdd790a332c1
-caps.latest.revision: 13
+caps.latest.revision: "13"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-translation.priority.ht:
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- ru-ru
-- zh-cn
-- zh-tw
-translation.priority.mt:
-- cs-cz
-- pl-pl
-- pt-br
-- tr-tr
-translationtype: Human Translation
-ms.sourcegitcommit: 5db97d19b1b823388a465bba15d057b30ff0b3ce
-ms.openlocfilehash: 6193453b9cbdaab387c6fff9e883d43dc436c41b
-ms.lasthandoff: 02/22/2017
-
+ms.openlocfilehash: 89913922d4c806e591d6a488f35242444d16ceb0
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: HT
+ms.contentlocale: fr-FR
+ms.lasthandoff: 10/31/2017
 ---
 # <a name="saving-symbol-information-with-performance-data-files"></a>Enregistrement des informations des symboles avec des fichiers de données de performances
 Si vous utilisez l’environnement de développement intégré (IDE) [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] pour analyser les fichiers et que vous envisagez de déplacer votre fichier VSP sur un autre ordinateur, vous devez définir les paramètres de performances du projet à enregistrer ou *sérialiser* les symboles dans le fichier de rapport. Ceci augmente la taille d’un fichier de rapport. La sérialisation des symboles est nécessaire pour deux raisons :  

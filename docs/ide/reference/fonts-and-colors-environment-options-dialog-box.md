@@ -4,8 +4,7 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-general
+ms.technology: vs-ide-general
 ms.tgt_pltfrm: 
 ms.topic: article
 f1_keywords:
@@ -27,30 +26,15 @@ helpviewer_keywords:
 - defaults, colors
 - printers, customizing
 ms.assetid: c767d302-51ed-47a8-a527-c07bce2aa485
-caps.latest.revision: 27
-author: kempb
-ms.author: kempb
+caps.latest.revision: "27"
+author: gewarren
+ms.author: gewarren
 manager: ghogen
-translation.priority.ht:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 5ea9179ad37514ffad4876177b05150eecc22def
-ms.openlocfilehash: 209ddbe4166e7818e5ea3a1a699f6a0f1ee096e0
-ms.contentlocale: fr-fr
-ms.lasthandoff: 05/24/2017
-
+ms.openlocfilehash: ccb924164b4d590f8ed440dfa905c1c040a13924
+ms.sourcegitcommit: c0422a3d594ea5ae8fc03f1aee684b04f417522e
+ms.translationtype: HT
+ms.contentlocale: fr-FR
+ms.lasthandoff: 11/02/2017
 ---
 # <a name="fonts-and-colors-environment-options-dialog-box"></a>Polices et couleurs, Environnement, boîte de dialogue Options
 La page **Polices et couleurs** de la boîte de dialogue **Options** vous permet d’établir un jeu de polices et un modèle de couleurs personnalisés pour divers éléments d’interface utilisateur dans l’environnement de développement intégré (IDE). Vous pouvez accéder à cette boîte de dialogue en cliquant sur **Outils / Options**, puis en sélectionnant **Environnement / Polices et couleurs**. Si cette page n’apparaît pas dans la liste, sélectionnez **Afficher tous les paramètres** dans la boîte de dialogue **Options**.  
@@ -93,17 +77,17 @@ La page **Polices et couleurs** de la boîte de dialogue **Options** vous permet
     > [!NOTE]
     >  Les changements relatifs au texte des éléments de **[Toutes les fenêtres Outil de texte]** ne sont pas appliqués durant la session où vous les apportez. Vous pouvez évaluer ces changements en ouvrant une autre instance de Visual Studio.  
   
- **Utiliser les valeurs par défaut**  
- Réinitialise les valeurs de couleur et de police de l’élément de liste sélectionné dans **Afficher les paramètres de**. Le bouton **Utiliser** s’affiche quand d’autres modèles d’affichage sont disponibles pour la sélection. Par exemple, vous avez le choix entre deux modèles pour l'imprimante.  
+**Utiliser les valeurs par défaut**  
+Réinitialise les valeurs de couleur et de police de l’élément de liste sélectionné dans **Afficher les paramètres de**. Le bouton **Utiliser** s’affiche quand d’autres modèles d’affichage sont disponibles pour la sélection. Par exemple, vous avez le choix entre deux modèles pour l'imprimante.  
   
- **Police (les polices à largeur fixe sont en gras)**  
- Répertorie toutes les polices installées sur votre système. Quand le menu déroulant s’affiche pour la première fois, la police active de l’élément sélectionné dans le champ **Afficher les paramètres de** est mise en surbrillance. Les polices fixes, qui sont plus faciles à aligner dans l'éditeur, s'affichent en gras.  
+**Police (les polices à largeur fixe sont en gras)**  
+Répertorie toutes les polices installées sur votre système. Quand le menu déroulant s’affiche pour la première fois, la police active de l’élément sélectionné dans le champ **Afficher les paramètres de** est mise en surbrillance. Les polices fixes, qui sont plus faciles à aligner dans l'éditeur, s'affichent en gras.  
   
- **Taille**  
- Répertorie les tailles en points disponibles pour la police sélectionnée. Le changement de taille de la police affecte tous les **éléments affichés** de la sélection dans **Afficher les paramètres de**.  
+**Taille**  
+Répertorie les tailles en points disponibles pour la police sélectionnée. Le changement de taille de la police affecte tous les **éléments affichés** de la sélection dans **Afficher les paramètres de**.  
   
- **Éléments affichés**  
- Répertorie les éléments pour lesquels vous pouvez modifier la couleur de premier plan et d'arrière-plan.  
+**Éléments affichés**  
+Répertorie les éléments pour lesquels vous pouvez modifier la couleur de premier plan et d'arrière-plan.  
   
 > [!NOTE]
 >  **Texte brut** est l’élément d’affichage par défaut. Ainsi, les propriétés assignées à **Texte brut** sont remplacées par les propriétés assignées aux autres éléments d’affichage. Par exemple, si vous assignez la couleur bleue à **Texte brut** et la couleur verte à **Identificateur**, tous les identificateurs s’affichent en vert. Dans cet exemple, les propriétés associées à **Identificateur** remplacent les propriétés associées à **Texte brut**.  
@@ -179,7 +163,7 @@ La page **Polices et couleurs** de la boîte de dialogue **Options** vous permet
 |**Marqueur SQL DML**|S'applique à l'éditeur Transact-SQL. Les instructions DML dans cet éditeur sont marquées avec un cadre englobant bleu par défaut.|  
 |**Code périmé**|Code annulé et remplacé en attente d'une mise à jour. Dans certains cas, Modifier & Continuer ne peut pas appliquer immédiatement les modifications du code, mais ce sera le cas plus tard, durant le débogage. Cela se produit si vous modifiez une fonction qui doit appeler la fonction en cours d'exécution, ou si vous ajoutez plus de 64 octets de nouvelles variables à une fonction en attente dans la pile des appels. Dans ce cas, le débogueur affiche la boîte de dialogue "Avertissement : code périmé". Par ailleurs, le code annulé et remplacé continue à s'exécuter jusqu'à ce que la fonction en question s'arrête et soit appelée à nouveau. Modifier & Continuer applique les modifications du code à ce moment-là.|  
 |**String**|Littéraux de chaîne.|  
-|**String (C# @ Verbatim)**|Les littéraux de chaîne en C# sont interprétés textuellement. Par exemple :<br /><br /> @"x"|  
+|**String (C# @ Verbatim)**|Les littéraux de chaîne en C# sont interprétés textuellement. Exemple :<br /><br /> @"x"|  
 |**Erreur de syntaxe**|Erreurs d'analyse.|  
 |**Raccourci de la liste des tâches**|Si le raccourci **Liste des tâches** est ajouté à une ligne, et si la marge des indicateurs est désactivée, la ligne est mise en surbrillance.|  
 |**Point de trace (Désactivé)**|Non utilisé.|  

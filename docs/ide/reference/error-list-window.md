@@ -4,42 +4,25 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-general
+ms.technology: vs-ide-general
 ms.tgt_pltfrm: 
 ms.topic: article
-f1_keywords:
-- VS.ErrorList
+f1_keywords: VS.ErrorList
 helpviewer_keywords:
 - Task List
 - build errors
 - Error List window
 - errors [Visual Studio], Error List window
 ms.assetid: b7f6d45a-733b-4ad8-bc2f-737a37509e56
-caps.latest.revision: 32
+caps.latest.revision: "32"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-translation.priority.ht:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 5ea9179ad37514ffad4876177b05150eecc22def
-ms.openlocfilehash: ee881a2ecb205ad01a1d8be6229947dd748cb2b7
-ms.contentlocale: fr-fr
-ms.lasthandoff: 05/24/2017
-
+ms.openlocfilehash: d332700fc663375c9fab96d86645b5762e77d851
+ms.sourcegitcommit: c0422a3d594ea5ae8fc03f1aee684b04f417522e
+ms.translationtype: HT
+ms.contentlocale: fr-FR
+ms.lasthandoff: 11/02/2017
 ---
 # <a name="error-list-window"></a>Liste d'erreurs, fenêtre
 > [!NOTE]
@@ -59,11 +42,11 @@ ms.lasthandoff: 05/24/2017
   
 -   rechercher des termes spécifiques et limiter la recherche au projet ou au document actif.  
   
- Pour afficher la **Liste d’erreurs**, cliquez sur **Afficher/Liste d’erreurs** ou appuyez sur **CTRL+\\+E**.  
+Pour afficher la **Liste d’erreurs**, cliquez sur **Afficher/Liste d’erreurs** ou appuyez sur **CTRL+\\+E**.  
   
- Vous pouvez choisir les onglets **Erreurs**, **Avertissements** et **Messages** pour afficher les différents niveaux d’informations.  
+Vous pouvez choisir les onglets **Erreurs**, **Avertissements** et **Messages** pour afficher les différents niveaux d’informations.  
   
- Pour trier la liste, cliquez sur n'importe quel en-tête de colonne. Pour trier à nouveau sur une colonne supplémentaire, maintenez la touche Maj enfoncée et cliquez sur un autre en-tête de colonne. Pour sélectionner les colonnes qui doivent être affichées et celles qui doivent être masquées, choisissez **Afficher les colonnes** dans le menu contextuel. Pour modifier l'ordre dans lequel les colonnes sont affichées, faites glisser les en-têtes de votre choix vers la droite ou la gauche.  
+Pour trier la liste, cliquez sur n'importe quel en-tête de colonne. Pour trier à nouveau sur une colonne supplémentaire, maintenez la touche Maj enfoncée et cliquez sur un autre en-tête de colonne. Pour sélectionner les colonnes qui doivent être affichées et celles qui doivent être masquées, choisissez **Afficher les colonnes** dans le menu contextuel. Pour modifier l'ordre dans lequel les colonnes sont affichées, faites glisser les en-têtes de votre choix vers la droite ou la gauche.  
   
 > [!NOTE]
 >  Les boîtes de dialogue et les commandes de menu qui s'affichent peuvent être différentes de celles qui sont décrites ici, en fonction de vos paramètres actifs ou de l'édition utilisée. Pour modifier vos paramètres, cliquez sur **Outils/Importation et exportation de paramètres**. Pour plus d’informations, consultez [Personnaliser l’IDE Visual Studio](../../ide/personalizing-the-visual-studio-ide.md).  
@@ -82,9 +65,9 @@ ms.lasthandoff: 05/24/2017
   
 3.  **Document actif** : afficher les erreurs, les avertissements et les messages du document actuellement sélectionné dans l’**Éditeur** ou dans l’**Explorateur de solutions**.  
   
- Si un filtre est actuellement appliqué aux résultats de la recherche, le nom du filtre apparaît dans la barre de titre **Liste d’erreurs**. Les boutons **Erreurs**, **Avertissements** et **Messages** affichent alors le nombre d’éléments filtrés affichés, ainsi que le nombre total d’éléments ; par exemple, les boutons indiquent x erreurs sur y. Si aucun filtre n’est appliqué, la barre de titre indique uniquement « Liste d’erreurs ».  
+Si un filtre est actuellement appliqué aux résultats de la recherche, le nom du filtre apparaît dans la barre de titre **Liste d’erreurs**. Les boutons **Erreurs**, **Avertissements** et **Messages** affichent alors le nombre d’éléments filtrés affichés, ainsi que le nombre total d’éléments ; par exemple, les boutons indiquent x erreurs sur y. Si aucun filtre n’est appliqué, la barre de titre indique uniquement « Liste d’erreurs ».  
   
- La liste située à droite de la barre d'outils indique si les erreurs doivent être affichées à partir de la build (erreurs résultant d'une opération de build) ou à partir d'IntelliSense (erreurs détectées avant d'exécuter une build), ou les deux.  
+La liste située à droite de la barre d'outils indique si les erreurs doivent être affichées à partir de la build (erreurs résultant d'une opération de build) ou à partir d'IntelliSense (erreurs détectées avant d'exécuter une build), ou les deux.  
   
 ## <a name="search"></a>Rechercher  
  Utilisez la zone de texte **Rechercher dans la liste des erreurs** située à droite de la barre d’outils **Liste d’erreurs** pour rechercher des erreurs spécifiques dans la liste d’erreurs. Vous pouvez rechercher sur toute colonne visible dans la liste et les résultats de la recherche sont toujours triés selon la colonne de tri prioritaire au lieu de la requête ou du filtre appliqué. Si vous choisissez la touche **Échap** tandis que le focus est dans la **Liste d’erreurs**, vous pouvez effacer le terme de recherche et les résultats de la recherche filtrés. Vous pouvez également cliquer sur la croix (**X**) à droite de la zone de texte pour l’effacer.  

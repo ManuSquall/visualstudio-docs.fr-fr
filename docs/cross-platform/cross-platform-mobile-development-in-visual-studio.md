@@ -4,36 +4,19 @@ ms.custom:
 ms.date: 12/06/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- tgt-pltfrm-cross-plat
+ms.technology: tgt-pltfrm-cross-plat
 ms.tgt_pltfrm: 
 ms.topic: article
 ms.assetid: 8202717a-e990-45cf-b092-438651ccb38a
-caps.latest.revision: 64
+caps.latest.revision: "64"
 author: ghogen
 ms.author: ghogen
 manager: ghogen
-translation.priority.ht:
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- ru-ru
-- zh-cn
-- zh-tw
-translation.priority.mt:
-- cs-cz
-- pl-pl
-- pt-br
-- tr-tr
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 47057e9611b824c17077b9127f8d2f8b192d6eb8
-ms.openlocfilehash: f01484e64f8d8c90cd38fbcdcb934ef43cfe3390
-ms.contentlocale: fr-fr
-ms.lasthandoff: 05/13/2017
-
+ms.openlocfilehash: 95aa5c1a5df7200ff3fda3554ea5944767aeb082
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: HT
+ms.contentlocale: fr-FR
+ms.lasthandoff: 10/31/2017
 ---
 # <a name="cross-platform-mobile-development-in-visual-studio"></a>Développement mobile multiplateforme dans Visual Studio
 Vous pouvez créer des applications pour des appareils Android, iOS et Windows à l'aide de Visual Studio.  Quand vous concevez votre application, utilisez les outils de Visual Studio pour ajouter facilement des services connectés, comme Office 365, Azure App Service et Application Insights.

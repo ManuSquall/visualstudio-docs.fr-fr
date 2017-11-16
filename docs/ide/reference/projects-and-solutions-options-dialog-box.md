@@ -1,11 +1,10 @@
 ---
 title: "Projets et solutions, boîte de dialogue Options | Microsoft Docs"
 ms.custom: 
-ms.date: 7/14/2017
+ms.date: 07/14/2017
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-general
+ms.technology: vs-ide-general
 ms.tgt_pltfrm: 
 ms.topic: article
 f1_keywords:
@@ -15,19 +14,17 @@ helpviewer_keywords:
 - Projects and Solutions Options dialog box
 - Options dialog box, Projects and Solutions
 ms.assetid: 2801f24e-a138-488a-ae3c-e1f99a678ac0
-caps.latest.revision: 12
+caps.latest.revision: "12"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
+ms.openlocfilehash: fee3419b6e041983fb3aa77cace5bb02e48e1b9a
+ms.sourcegitcommit: fb751e41929f031d1a9247bc7c8727312539ad35
 ms.translationtype: HT
-ms.sourcegitcommit: 17defdd0b96ec1c3273fc6b845af844b031a4a17
-ms.openlocfilehash: 2778964a6d5e4f478422727b02e15a058868e644
-ms.contentlocale: fr-fr
-ms.lasthandoff: 09/06/2017
-
+ms.contentlocale: fr-FR
+ms.lasthandoff: 11/15/2017
 ---
 # <a name="projects-and-solutions-options-dialog-box"></a>Projets et solutions, boîte de dialogue Options
-
 Définit le comportement [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] des projets et des solutions. Pour accéder à ces options, sélectionnez **Outils > Options**, développez **Projets et solutions** et cliquez sur **Général**.
 
 Définissez les chemins par défaut des dossiers de projet et de modèle dans l’onglet **Emplacements** de la même boîte de dialogue.
@@ -35,15 +32,7 @@ Définissez les chemins par défaut des dossiers de projet et de modèle dans l�
 > [!NOTE]
 >  Les options disponibles dans les boîtes de dialogue, ainsi que les noms et emplacements des commandes de menu que vous voyez, peuvent différer de ce qui est décrit dans l'aide selon vos paramètres actifs ou votre édition. Cette page d’aide concerne les **Paramètres de développement généraux**. Pour afficher ou modifier vos paramètres, choisissez **Importation et exportation de paramètres** dans le menu **Outils**. Pour plus d’informations, consultez [Personnaliser l’IDE Visual Studio](../../ide/personalizing-the-visual-studio-ide.md).  
   
-## <a name="general-tab-options"></a>Options de l’onglet Général  
- 
-**Chargement de solution allégé** : réduit le temps et la mémoire nécessaires au chargement de grandes solutions dans l’IDE. Les solutions conséquentes qui contiennent de nombreux projets C#, Visual Basic ou C++ connaîtront certainement une nette amélioration des performances si vous activez le chargement de solution allégé.
-
-- **Laisser Visual Studio choisir ce qui convient le mieux pour ma solution** : laisse Visual Studio déterminer automatiquement s’il faut appliquer le chargement de solution allégé en fonction des caractéristiques de la solution.
-- **Activé** : applique toujours le chargement de solution allégé lors du chargement de solutions.
-- **Désactivé**:  n’applique jamais le chargement de solution allégé.
-
-Pour plus d’informations, consultez [Optimiser la vitesse de démarrage de Visual Studio](../optimize-visual-studio-startup-time.md#speed_up_solution_load).
+## <a name="general-tab-options"></a>Options de l’onglet Général
 
 **Toujours afficher la liste d’erreurs à la fin de la génération avec erreurs**  
 Ouvre la fenêtre **Liste d’erreurs** à l’achèvement de build, uniquement en cas d’échec de la génération du projet. Les erreurs qui se produisent pendant le processus de génération sont affichées. Lorsque cette option est désactivée, les erreurs persistent, mais la fenêtre ne s'ouvre pas quand la génération est terminée. Cette option est activée par défaut.  
@@ -86,5 +75,5 @@ Spécifie l’emplacement par défaut que la boîte de dialogue **Nouveau projet
 Spécifie l’emplacement par défaut que la boîte de dialogue **Ajouter un nouvel élément** utilise pour créer la liste de **Mes modèles**. Pour plus d’informations, consultez [Guide pratique pour localiser et organiser les modèles](../../ide/how-to-locate-and-organize-project-and-item-templates.md). 
 
 ## <a name="see-also"></a>Voir aussi  
-- [Options (boîte de dialogue), Projets et solutions, Générer et exécuter](../../ide/reference/options-dialog-box-projects-and-solutions-build-and-run.md)
-- - [Options (boîte de dialogue), Projets et solutions, Projets web](../../ide/reference/options-dialog-box-projects-and-solutions-web-projects.md)
+- [Options (boîte de dialogue), Projets et solutions, Générer et exécuter](../../ide/reference/options-dialog-box-projects-and-solutions-build-and-run.md)  
+- [Options (boîte de dialogue), Projets et solutions, Projets web](../../ide/reference/options-dialog-box-projects-and-solutions-web-projects.md)

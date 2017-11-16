@@ -3,38 +3,20 @@ title: "Conseils et astuces pour améliorer les performances de Visual Studio | 
 ms.date: 08/31/2017
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-general
+ms.technology: vs-ide-general
 ms.tgt_pltfrm: 
 ms.topic: article
-helpviewer_keywords:
-- debugger
+helpviewer_keywords: debugger
 ms.assetid: 2fbcb59e-e981-4b40-8b7a-c1140d31ec4b
-caps.latest.revision: 1
+caps.latest.revision: "1"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-translation.priority.ht:
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- ru-ru
-- zh-cn
-- zh-tw
-translation.priority.mt:
-- cs-cz
-- pl-pl
-- pt-br
-- tr-tr
+ms.openlocfilehash: 936d0df8c838227c5d6c99b0f04f1069eae8a277
+ms.sourcegitcommit: fb751e41929f031d1a9247bc7c8727312539ad35
 ms.translationtype: HT
-ms.sourcegitcommit: 4306111cd49a5299bfa5d4e5e22b212bc7799fe2
-ms.openlocfilehash: fbaa543564506a99d3ed6833ec4d1f692fae43f7
-ms.contentlocale: fr-fr
-ms.lasthandoff: 09/06/2017
-
+ms.contentlocale: fr-FR
+ms.lasthandoff: 11/15/2017
 ---
 # <a name="visual-studio-performance-tips-and-tricks"></a>Conseils et astuces pour améliorer les performances de Visual Studio
 
@@ -54,14 +36,6 @@ Les recommandations pour améliorer les performances de Visual Studio concernent
 ## <a name="configure-solution-and-projects"></a>Configurer des solutions et des projets
 
 Si votre solution est très volumineuse et contient de nombreux projets, vous pouvez apporter les optimisations suivantes :
-
-- **Activer le chargement de solution allégé**
-
-    L’utilisation du **chargement de solution allégé** peut améliorer la mémoire et les performances du processeur en différant la charge de certains projets dans votre solution. Vous pouvez également activer cette fonctionnalité par solution. Cette option est désactivée par défaut.
-
-    Pour activer le **Chargement de solution allégé**, choisissez **Outils > Options > Projets et solutions > Chargement de solution allégé**.
-
-    Certaines fonctionnalités de l’IDE ne sont pas activées dans ce mode. Pour déterminer si ce choix peut être utile, consultez [Raccourcir la durée de chargement des solutions](https://blogs.msdn.microsoft.com/visualstudio/2016/10/11/shorter-solution-load-time-in-visual-studio-15/) et [Optimiser le chargement de la solution](../ide/optimize-solution-loading-in-visual-studio).
 
 - **Déchargement de projets**
 
@@ -152,4 +126,3 @@ Pour obtenir une description détaillée du récupérateur de mémoire CLR, cons
 
 ## <a name="see-also"></a>Voir aussi  
  [IDE Visual Studio](../ide/index.md)
-

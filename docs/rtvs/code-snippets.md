@@ -1,27 +1,24 @@
 ---
 title: "Extraits de code avec les Outils R pour Visual Studio | Microsoft Docs"
 ms.custom: 
-ms.date: 6/29/2017
+ms.date: 06/29/2017
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- devlang-r
+ms.technology: devlang-r
 ms.devlang: r
 ms.tgt_pltfrm: 
 ms.topic: article
 ms.assetid: 90bf4f87-e276-40cd-bc17-3dfb47ef1870
-caps.latest.revision: 1
+caps.latest.revision: "1"
 author: kraigb
 ms.author: kraigb
 manager: ghogen
+ms.openlocfilehash: 47cf9ff074884902c94cd146c7a00826088833a3
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
 ms.translationtype: HT
-ms.sourcegitcommit: 712cc780388acc5e373f71d51fc8f1f42adb5bed
-ms.openlocfilehash: 55d7e61f1066de900d6568a848a0aa78e3fd3897
-ms.contentlocale: fr-fr
-ms.lasthandoff: 07/12/2017
-
+ms.contentlocale: fr-FR
+ms.lasthandoff: 10/31/2017
 ---
-
 # <a name="code-snippets"></a>Extraits de code
 
 Les extraits de code dans Visual Studio fournissent des raccourcis pour insérer rapidement des blocs de code de longueur arbitraire, ce qui vous évite de retaper du code similaire plusieurs fois de suite. Les Outils R pour Visual Studio (RTVS) ajoutent des dizaines d’extraits de code R utiles à la collection de Visual Studio.
@@ -68,4 +65,3 @@ Pour créer des extraits de code personnalisés, suivez les instructions de [Pro
 ```
 
 Les fichiers XML de tous les extraits de code sont installés avec RTVS. Le champ **Emplacement** du **Gestionnaire des extraits de code** fournit le chemin. Vous pouvez également les trouver dans le code source RTVS sur GitHub sous [src/Package/Impl/Snippets](https://github.com/Microsoft/RTVS/tree/master/src/Package/Impl/Snippets).
-

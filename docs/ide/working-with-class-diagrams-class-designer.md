@@ -4,8 +4,7 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-general
+ms.technology: vs-ide-general
 ms.tgt_pltfrm: 
 ms.topic: article
 helpviewer_keywords:
@@ -16,30 +15,15 @@ helpviewer_keywords:
 - diagrams, class structure of projects
 - class structure
 ms.assetid: 37908cb7-f77b-4698-a4f9-3c21e5440fee
-caps.latest.revision: 25
+caps.latest.revision: "25"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-translation.priority.ht:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
+ms.openlocfilehash: fa34b3321d4b1b7e8f317d559583fb0bb75d97f9
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
 ms.translationtype: HT
-ms.sourcegitcommit: 63aad78bdc7df685ca3a73ec16a9cbc87b78151f
-ms.openlocfilehash: 23c5b56f5c3382b65ea06cb5e631ac2078cac42d
-ms.contentlocale: fr-fr
-ms.lasthandoff: 07/14/2017
-
+ms.contentlocale: fr-FR
+ms.lasthandoff: 10/31/2017
 ---
 # <a name="working-with-class-diagrams-class-designer"></a>Utilisation des diagrammes de classes (Concepteur de classes)
 Les diagrammes de classes vous aident à comprendre la structure des classes des projets écrits par d'autres personnes (ou que vous avez écrits longtemps auparavant). Vous pouvez les utiliser pour personnaliser, partager et présenter des informations de projet.  
@@ -54,7 +38,7 @@ Les diagrammes de classes vous aident à comprendre la structure des classes des
 >  Le Concepteur de classes n'effectue pas le suivi de l'emplacement de vos fichiers sources. Ainsi, si vous changez la structure de votre projet ou si vous déplacez des fichiers sources du projet, le Concepteur de classes peut perdre la trace du type, en particulier le type source d'un typedef, les classes de base ou les types d'association. Vous pouvez obtenir une erreur telle que celle-ci : **Le Concepteur de classes n’est pas en mesure d’afficher ce type**. Dans ce cas, refaites glisser le code source modifié ou déplacé vers le diagramme de classes pour le réafficher.  
   
 ## <a name="in-this-section"></a>Dans cette section  
- [How to: Add Class Diagrams to Projects (Class Designer)](../ide/how-to-add-class-diagrams-to-projects-class-designer.md)  
+ [Guide pratique pour ajouter des diagrammes de classes aux projets (Concepteur de classes)](../ide/how-to-add-class-diagrams-to-projects-class-designer.md)  
   
  Décrit comment ajouter des diagrammes de classes aux projets.  
   

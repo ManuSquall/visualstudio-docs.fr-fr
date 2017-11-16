@@ -4,39 +4,21 @@ ms.custom:
 ms.date: 03/09/2017
 ms.reviewer: riande
 ms.suite: 
-ms.technology:
-- vs-ide-deployment
+ms.technology: vs-ide-deployment
 ms.tgt_pltfrm: 
 ms.topic: article
-helpviewer_keywords:
-- ASP.NET, web applications, deployment, publishing
+helpviewer_keywords: ASP.NET, web applications, deployment, publishing
 ms.assetid: 3A13F685-531C-457D-A98E-631888011E4B
-caps.latest.revision: 1
+caps.latest.revision: "1"
 author: Mikejo5000
 ms.author: mikejo
 manager: ghogen
-translation.priority.ht:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 5951e9c6b61e1cb868d792a5aee9389235cfef30
-ms.openlocfilehash: 6bc4d5116517402825317611c44d4b594ee79b2a
-ms.contentlocale: fr-fr
-ms.lasthandoff: 03/10/2017
-
+ms.openlocfilehash: 16bc087e6c4a12d3f70e2e71ba644faab9567fee
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: HT
+ms.contentlocale: fr-FR
+ms.lasthandoff: 10/31/2017
 ---
-
 # Quelles options de publication choisir ?
 
 À partir de Visual Studio, les applications web peuvent être publiées directement dans les cibles suivantes :
@@ -121,4 +103,3 @@ Vous pouvez créer autant de profils de déploiement personnalisés dans Visual 
 - Vous utilisez des services cloud sur un autre fournisseur qu’Azure accessible via des URL.
 - Vous voulez effectuer le déploiement à l’aide d’autres informations d’identification que celles que vous utilisez dans Visual Studio ou que celles directement liées à vos comptes Azure.
 - Vous voulez supprimer les fichiers de la cible à chaque déploiement.
-

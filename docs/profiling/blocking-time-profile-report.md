@@ -1,64 +1,63 @@
 ---
-title: "Profil de temps de blocage, rapport | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-debug"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "vs.cv.threads.report.blocking"
-helpviewer_keywords: 
-  - "Visualiseur concurrentiel, rapport de profil de temps de blocage"
+title: Rapport sur les profils de temps de blocage | Microsoft Docs
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-debug
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords: vs.cv.threads.report.blocking
+helpviewer_keywords: Concurrency Visualizer, Blocking Time Profile Report
 ms.assetid: 3bc45af0-3ba6-4fa3-a336-be8e9ae95107
-caps.latest.revision: 16
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 16
+caps.latest.revision: "16"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: 199c33ce94aa1fcb5cffc45570a4425df3dbd720
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: HT
+ms.contentlocale: fr-FR
+ms.lasthandoff: 10/31/2017
 ---
-# Profil de temps de blocage, rapport
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
-
-Les rapports de profils fournissent des données de temps de blocage agrégée pour les piles des appels spécifiques à chaque catégorie de blocage \(par exemple « E\/S » ou « Synchronisation »\).  Le rapport de préemption liste les processes qui ont préempté le processus actuel ensemble avec le nombre d'instances de préemption.  Pour générer le rapport de profil bloquant, l'outil collecte des appels d'API de blocage et les accumule dans une arborescence de piles des appels.  Les données présentées dans ces rapports varient selon la plage horaire actuelle, les threads masqués et les deux filtres suivants qui peuvent être appliqués :  
+# <a name="blocking-time-profile-report"></a>Profil de temps de blocage, rapport
+Les rapports de profil rassemblent des données relatives au temps de blocage pour les piles d’appels qui sont spécifiques à chaque catégorie de blocage (par exemple « E/S » ou « Synchronisation »). Le rapport Anticipation répertorie les processus qui ont anticipé le processus en cours, ainsi que le nombre d’instances d’anticipations. Pour générer le rapport de profil de blocage, l’outil collecte des appels d’API bloquants et les rassemble au sein d’une arborescence de piles d’appels. Les données figurant dans ces rapports varient selon la plage horaire, les threads masqués et les deux filtres suivants qui peuvent être appliqués :  
   
--   Si Uniquement mon code est sélectionné, seules les frames de pile avec du code utilisateur sont présentées, ainsi qu'un niveau en dessous du code utilisateur.  
+-   Si l’option Uniquement mon code est activée, seuls les frames de pile contenant du code utilisateur sont présentés, ainsi que le premier niveau situé sous le code utilisateur.  
   
--   Si la valeur de réduction du bruit est définie, les piles assemblées dont la valeur de fréquence est inférieure à celle spécifiée sont ignorées.  
+-   Si la valeur Réduction du bruit est définie, les piles assemblées dont la fréquence est inférieure à celle spécifiée sont ignorées.  
   
- Développez toute entrée de l'arborescence des appels pour rechercher la ligne de code correspondant au temps de blocage passé.  Pour localiser la ligne source pour une entrée, dans son menu contextuel, choisissez **Afficher la source**.  Pour localiser la ligne de code qui a appelé celui\-ci, dans le menu contextuel, choisissez **Afficher les sites d'appel**.  Si un seul site d'appel existe, la commande se déplace jusqu'à la ligne de code mise en surbrillance pour le site d'appel.  Si plusieurs sites d'appel sont disponibles, la commande ouvre une boîte de dialogue dans laquelle vous pouvez sélectionner une entrée puis choisir le bouton **Atteindre la source** pour localiser le site d'appel mis en surbrillance.  Il s'avère souvent très utile d'afficher le code source du site d'appel comportant le plus d'instances et\/ou le plus de temps.  
+ Développez une entrée de l’arborescence des appels pour rechercher la ligne de code où du temps de blocage a été passé. Pour localiser la ligne de code source d’une entrée, dans le menu contextuel, sélectionnez **Afficher la source**. Pour localiser la ligne de code ayant appelé l’entrée, dans le menu contextuel, sélectionnez **Afficher les sites d’appel**. Si un seul site d’appel est disponible, la commande se connecte à la ligne de code du site d’appel qui est mise en surbrillance. Si plusieurs sites d’appel sont disponibles, la commande ouvre une boîte de dialogue dans laquelle vous pouvez sélectionnez une entrée, puis cliquer sur le bouton **Atteindre la source** pour rechercher le site d’appel mis en surbrillance. Il est souvent très utile d’afficher le code source du site d’appel ayant le plus grand nombre d’instances et/ou la plus longue durée.  
   
-## Colonnes des rapports de temps de blocage  
- Le tableau suivant présente les colonnes de chaque rapport de temps de blocage.  
+## <a name="blocking-time-report-columns"></a>Colonnes du rapport de temps de blocage  
+ Le tableau suivant montre les colonnes de chaque rapport de temps de blocage.  
   
 |Nom de la colonne|Description|  
-|-----------------------|-----------------|  
+|-----------------|-----------------|  
 |Nom|Nom de la fonction pour chaque niveau de la pile des appels.|  
-|Instances|Nombre d'instances de l'appel bloquant pendant la période visible.|  
-|Temps inclusif de blocage|Temps total de blocage passé pour toutes les piles qui atteignent ce niveau de l'arborescence de la pile d'appels.  Le temps inclusif correspond à la somme du temps de blocage exclusif pour cette fonction et du temps de blocage exclusif pour l'ensemble de ses nœuds enfants.|  
-|Temps de blocage exclusif|Temps total de blocage pendant lequel cette fonction est resté au niveau le plus bas de la pile des appels.  Une entrée de pile d'appels unique dont la valeur de temps de blocage exclusif est élevée peut être une fonction intéressante pour le rapport.|  
-|API\/Catégorie d'attente|Indiqué uniquement pour les fonctions situées au niveau le plus bas de la pile des appels.  Lorsque la signature de l'appel bloquant est reconnue, le nom de l'API bloquante est fourni.  Si la signature n'est pas reconnue, les informations qui sont fournies sont celles indiquées par le noyau.|  
-|Détails|Nom qualifié complet de la fonction.  Inclut le nombre de lignes si celui\-ci est disponible.|  
+|Instances|Nombre d’instances de l’appel bloquant pendant la période visible.|  
+|Durée de blocage inclusif|Durée totale de blocage pour toutes les piles qui atteignent ce niveau de l’arborescence de la pile des appels. Le nombre inclusif correspond à la somme du temps de blocage exclusif de cette fonction et de celui de tous ses nœuds enfants.|  
+|Durée de blocage exclusif|Durée totale de blocage au cours de laquelle cette fonction se trouve au niveau le plus bas de la pile des appels. Une entrée de pile d’appels unique dont le temps de blocage exclusif est élevé peut être une fonction intéressante.|  
+|API /Catégorie d’attente|S’affiche uniquement pour les fonctions situées au niveau le plus bas de la pile des appels. Lorsque la signature de l’appel bloquant est reconnue, le nom de l’API bloquante est fourni. Si la signature n’est pas reconnue, les informations indiquées par le noyau sont fournies.|  
+|Détails|Nom complet de la fonction. Peut contenir le nombre de lignes lorsque celui-ci est disponible.|  
   
-### Synchronisation  
- Le rapport Synchronisation affiche les appels responsables du blocage des segments lors de la synchronisation, ainsi que les temps de blocage d'agrégation de chaque pile des appels.  Pour plus d’informations, consultez [Durée de synchronisation](../profiling/synchronization-time.md)  
+### <a name="synchronization"></a>Synchronisation  
+ Le rapport Synchronisation affiche les appels responsables des segments qui se bloquent lors de la synchronisation, ainsi que les durées totales de blocage pour chaque pile des appels. Pour plus d’informations, consultez [Durée de synchronisation](../profiling/synchronization-time.md).  
   
-### Sleep  
- Le rapport Veille affiche les appels responsables de temps de blocage attribué au temps de veille, ainsi que les temps de blocage d'agrégation de chaque pile des appels.  Pour plus d'informations, consultez [Durée de veille](../profiling/sleep-time.md).  
+### <a name="sleep"></a>Sleep  
+ Le rapport Veille affiche les appels responsables du temps de blocage attribué à du temps passé en veille, ainsi que les durées totales de blocage pour chaque pile des appels. Pour plus d’informations, consultez [Durée de veille](../profiling/sleep-time.md).  
   
-### E\/S  
- Le rapport E\/S affiche les appels responsables du blocage des segments sur les E\/S, ainsi que les temps de blocage d'agrégation de chaque pile des appels.  Pour plus d'informations, consultez [Temps d'E\/S \(vue Threads\)](../profiling/i-o-time-threads-view.md).  
+### <a name="io"></a>E/S  
+ Le rapport E/S affiche les appels responsables des segments qui se bloquent lors d’une opération d’E/S, ainsi que les durées totales de blocage pour chaque pile des appels. Pour plus d’informations, consultez [Temps d’E/S (vue Threads)](../profiling/i-o-time-threads-view.md).  
   
-### Gestion de la mémoire  
- Le rapport Gestion de la mémoire affiche les appels responsables du blocage des segments sur les opérations de gestion de la mémoire, ainsi que les temps de blocage d'agrégation de chaque pile des appels.  Pour plus d'informations, consultez [Période de gestion de la mémoire](../profiling/memory-management-time.md).  
+### <a name="memory-management"></a>Gestion de la mémoire  
+ Le rapport Gestion de la mémoire affiche les appels responsables des segments qui se bloquent lors d’une opération de gestion de la mémoire, ainsi que les durées totales de blocage pour chaque pile des appels. Pour plus d’informations, consultez [Période de gestion de la mémoire](../profiling/memory-management-time.md).  
   
-### Préemption  
- Le rapport de préemption liste les processes qui ont préempté le processus actuel ensemble avec le nombre d'instances.  Vous pouvez développer chaque processus pour afficher les threads spécifiques qui ont remplacé des threads dans le processus actuel et afficher une répartition des instances de préemption par thread.  Ce rapport de blocage est moins exploitable que les autres parce que la préemption est généralement imposée sur votre processus par le système d'exploitation, pas par un problème dans votre code.  Pour plus d'informations, consultez [Durée de préemption](../profiling/preemption-time.md).  
+### <a name="preemption"></a>Anticipation  
+ Le rapport Anticipation répertorie les processus qui ont anticipé le processus en cours, ainsi que le nombre d’instances.  Vous pouvez développer chaque processus pour afficher les threads qui ont remplacé ceux du processus en cours, et pour afficher le détail des instances d’anticipation de chaque thread. Ce rapport de blocage est moins exploitable, car l’anticipation est généralement imposée à votre processus par le système d’exploitation, et non par un problème dans votre code. Pour plus d’informations, consultez [Durée de préemption](../profiling/preemption-time.md).  
   
-### Traitement IU  
- Le rapport Traitement IU affiche les appels responsables du blocage des segments sur les blocs de traitement IU, ainsi que les temps de blocage d'agrégation de chaque pile des appels.  Pour plus d'informations, consultez [Temps de traitement UI](../profiling/ui-processing-time.md).  
+### <a name="ui-processing"></a>Traitement de l'interface utilisateur  
+ Le rapport Traitement de l’interface utilisateur affiche les appels responsables des segments qui se bloquent lors d’un blocage d’interface utilisateur, ainsi que les durées totales de blocage pour chaque pile des appels. Pour plus d’informations, consultez [Temps de traitement UI](../profiling/ui-processing-time.md).  
   
-## Voir aussi  
- [vue Threads](../profiling/threads-view-parallel-performance.md)
+## <a name="see-also"></a>Voir aussi  
+ [Vue Threads](../profiling/threads-view-parallel-performance.md)

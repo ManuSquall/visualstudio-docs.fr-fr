@@ -7,19 +7,17 @@ ms.reviewer:
 ms.suite: 
 ms.tgt_pltfrm: 
 ms.topic: article
-helpviewer_keywords:
-- Windows Script Host, implementing hosts
+helpviewer_keywords: Windows Script Host, implementing hosts
 ms.assetid: 9d5f6471-b318-40f3-be01-d9cd0b1cdd47
-caps.latest.revision: 7
+caps.latest.revision: "7"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.translationtype: HT
-ms.sourcegitcommit: 6fbf89668d47d55d1d77a1d7f11765567fc73405
 ms.openlocfilehash: 41fa898c7f0d62cd35cc1cb1c7b35eb2651c8bb6
-ms.contentlocale: fr-fr
-ms.lasthandoff: 08/11/2017
-
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.translationtype: HT
+ms.contentlocale: fr-FR
+ms.lasthandoff: 10/27/2017
 ---
 # <a name="windows-script-hosts"></a>Windows Script Hosts
 Quand vous implémentez un hôte Microsoft Windows Script, vous pouvez raisonnablement supposer qu’un moteur de script appelle uniquement l’interface [IActiveScriptSite](../winscript/reference/iactivescriptsite.md) dans le contexte du thread de base, et ce tant que l’hôte effectue les opérations suivantes :  

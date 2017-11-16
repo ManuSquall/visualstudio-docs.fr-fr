@@ -4,8 +4,7 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-general
+ms.technology: vs-ide-general
 ms.tgt_pltfrm: 
 ms.topic: article
 f1_keywords:
@@ -20,30 +19,15 @@ helpviewer_keywords:
 - outlining options [J#]
 - XML documentation, creating
 ms.assetid: 947f9d9a-b0f3-408d-9866-d82895bcee31
-caps.latest.revision: 22
-author: kempb
-ms.author: kempb
+caps.latest.revision: "22"
+author: gewarren
+ms.author: gewarren
 manager: ghogen
-translation.priority.ht:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 5ea9179ad37514ffad4876177b05150eecc22def
-ms.openlocfilehash: 61a061b6a58b18451fc53c8d53f77889cc1ea253
-ms.contentlocale: fr-fr
-ms.lasthandoff: 05/24/2017
-
+ms.openlocfilehash: 7537b4fc3fec90808c6bdc4a982fe3b7ff37a1d5
+ms.sourcegitcommit: c0422a3d594ea5ae8fc03f1aee684b04f417522e
+ms.translationtype: HT
+ms.contentlocale: fr-FR
+ms.lasthandoff: 11/02/2017
 ---
 # <a name="options-text-editor-c-advanced"></a>Options, Éditeur de texte, C#, Avancé
 Utilisez cette boîte de dialogue pour modifier les paramètres de mise en forme de l’éditeur, la refactorisation de code et les commentaires sur la documentation XML pour Visual C#. Pour accéder à cette boîte de dialogue, dans le menu **Outils**, cliquez sur **Options**, développez le dossier **Éditeur de texte**, développez **C#**, puis cliquez sur **Avancé**.  
@@ -67,13 +51,13 @@ Utilisez cette boîte de dialogue pour modifier les paramètres de mise en forme
   
 -   Les modifications [Modifier & Continuer](../../debugger/edit-and-continue.md) non valides apparaissent en violet.  
   
- Déplacez le pointeur sur le segment de code souligné pour afficher une info-bulle contenant des informations sur l’erreur.  
+Déplacez le pointeur sur le segment de code souligné pour afficher une info-bulle contenant des informations sur l’erreur.  
   
- Afficher les erreurs sémantiques en direct  
- Identifie certaines erreurs de compilation sans compilation explicite, par exemple, la déclaration et l’utilisation d’un type inconnu ou le référencement d’une propriété inconnue.  
+Afficher les erreurs sémantiques en direct  
+Identifie certaines erreurs de compilation sans compilation explicite, par exemple, la déclaration et l’utilisation d’un type inconnu ou le référencement d’une propriété inconnue.  
   
- Surligner les références jusqu’au symbole sous le curseur  
- Quand le curseur est positionné à l’intérieur d’un symbole ou que vous cliquez sur un symbole, toutes les instances de ce symbole dans le fichier de code sont surlignées.  
+Surligner les références jusqu’au symbole sous le curseur  
+Quand le curseur est positionné à l’intérieur d’un symbole ou que vous cliquez sur un symbole, toutes les instances de ce symbole dans le fichier de code sont surlignées.  
   
 ## <a name="refactoring"></a>Refactorisation  
  Vérifier les résultats de la réorganisation  

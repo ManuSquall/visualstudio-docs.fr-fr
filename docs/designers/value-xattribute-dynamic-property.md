@@ -4,38 +4,21 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- devlang-csharp
+ms.technology: vs-ide-designers
 ms.tgt_pltfrm: 
 ms.topic: article
-apiname:
-- XAttribute.Value
+apiname: XAttribute.Value
 apitype: Assembly
 ms.assetid: 019733d2-e050-4120-b537-831cd3fc008e
-caps.latest.revision: 2
-author: kempb
-ms.author: kempb
+caps.latest.revision: "2"
+author: gewarren
+ms.author: gewarren
 manager: ghogen
-translation.priority.ht:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 5db97d19b1b823388a465bba15d057b30ff0b3ce
-ms.openlocfilehash: c013001a52e5b894bcbcdaf9a40309505b39140c
-ms.contentlocale: fr-fr
-ms.lasthandoff: 05/19/2017
-
+ms.openlocfilehash: 7d647e7623820c6621f6605277a695a98454fec5
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: HT
+ms.contentlocale: fr-FR
+ms.lasthandoff: 10/31/2017
 ---
 # <a name="value-xattribute-dynamic-property"></a>Value (propriété dynamique XAttribute)
 Obtient ou définit la valeur de l'attribut XML.  

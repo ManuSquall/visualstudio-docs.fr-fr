@@ -4,12 +4,10 @@ ms.custom:
 ms.date: 03/13/2017
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-sdk
+ms.technology: vs-ide-sdk
 ms.tgt_pltfrm: 
 ms.topic: article
-f1_keywords:
-- http://schemas.microsoft.com/developer/msbuild/2003#Import
+f1_keywords: http://schemas.microsoft.com/developer/msbuild/2003#Import
 dev_langs:
 - VB
 - CSharp
@@ -19,30 +17,15 @@ helpviewer_keywords:
 - Import element [MSBuild]
 - <Import> element [MSBuild]
 ms.assetid: 3bfecaf1-69fd-4008-b651-c9dafd4389d9
-caps.latest.revision: 29
+caps.latest.revision: "29"
 author: kempb
 ms.author: kempb
 manager: ghogen
-translation.priority.ht:
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- ru-ru
-- zh-cn
-- zh-tw
-translation.priority.mt:
-- cs-cz
-- pl-pl
-- pt-br
-- tr-tr
-translationtype: Human Translation
-ms.sourcegitcommit: 0e5a449ef396e7b9fd23a2c018bdc7f8791b7b38
-ms.openlocfilehash: 507b5fc312ca1f3a8c3ab4e24d3c43fddd0398eb
-ms.lasthandoff: 03/13/2017
-
+ms.openlocfilehash: 5709fc2ea456a8cfa45d8ce01e97c0c79d256c38
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: HT
+ms.contentlocale: fr-FR
+ms.lasthandoff: 10/31/2017
 ---
 # <a name="import-element-msbuild"></a>Import, élément (MSBuild)
 Importe le contenu d’un fichier projet dans un autre fichier projet.  
@@ -74,7 +57,7 @@ Importe le contenu d’un fichier projet dans un autre fichier projet.
 
 |Élément|Description|  
 |-------------|-----------------|  
-|[Project](../msbuild/project-element-msbuild.md)|Élément racine requis d'un fichier projet [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)].|  
+|[Projet](../msbuild/project-element-msbuild.md)|Élément racine requis d'un fichier projet [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] .|  
 |[ImportGroup](../msbuild/importgroup-element.md)|Contient une collection d’éléments `Import` regroupés sous une condition facultative.|  
 
 ## <a name="remarks"></a>Remarques  
@@ -91,9 +74,9 @@ Importe le contenu d’un fichier projet dans un autre fichier projet.
  Le schéma d’un projet importé est identique à celui d’un projet standard. Bien que [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] puisse générer un projet importé, cela est peu probable, car un projet importé ne contient généralement pas d’informations sur les propriétés à définir ou sur l’ordre dans lequel exécuter les cibles. Le projet importé dépend du projet dans lequel il est importé pour fournir ces informations.  
 
 > [!NOTE]
->  Bien que les instructions d’importation conditionnelle fonctionnent sur les lignes de commande MSBuilds, elles ne fonctionnent pas avec MSBuild dans l’IDE [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]. Les importations conditionnelles sont évaluées en utilisant les valeurs de configuration et de plateforme définies lors du chargement du projet. Si des modifications apportées par la suite nécessitent une réévaluation des conditions dans le fichier projet, par exemple la modification de la plateforme, [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] réévalue les conditions sur les propriétés et les éléments, mais pas sur les importations. La condition d’importation n’étant pas réévaluée, l’importation est ignorée.  
+>  Bien que les instructions d’importation conditionnelle fonctionnent sur les lignes de commande MSBuilds, elles ne fonctionnent pas avec MSBuild dans l’IDE [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] . Les importations conditionnelles sont évaluées en utilisant les valeurs de configuration et de plateforme définies lors du chargement du projet. Si des modifications apportées par la suite nécessitent une réévaluation des conditions dans le fichier projet, par exemple la modification de la plateforme, [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] réévalue les conditions sur les propriétés et les éléments, mais pas sur les importations. La condition d’importation n’étant pas réévaluée, l’importation est ignorée.  
 >   
->  Pour contourner ce problème, placez les importations conditionnelles dans les fichiers .targets, ou placez le code dans un bloc conditionnel comme un bloc [Choose, élément (MSBuild)](../msbuild/choose-element-msbuild.md) .  
+>  Pour contourner ce problème, placez les importations conditionnelles dans les fichiers .targets, ou placez le code dans un bloc conditionnel comme un bloc [Choose Element (MSBuild)](../msbuild/choose-element-msbuild.md) .  
 
 ## <a name="wildcards"></a>Caractères génériques  
  Dans le .NET Framework 4, MSBuild autorise les caractères génériques dans l’attribut de projet. Quand il existe des caractères génériques, toutes les correspondances trouvées sont triées (à des fins de reproductibilité), puis elles sont importées dans cet ordre comme si celui-ci avait été défini explicitement.  
@@ -133,4 +116,3 @@ Importe le contenu d’un fichier projet dans un autre fichier projet.
 ## <a name="see-also"></a>Voir aussi  
  [Informations de référence sur le schéma de fichier projet MSBuild](../msbuild/msbuild-project-file-schema-reference.md)   
  [Guide pratique pour utiliser la même cible dans plusieurs fichiers projet](../msbuild/how-to-use-the-same-target-in-multiple-project-files.md)
-

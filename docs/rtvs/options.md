@@ -1,11 +1,10 @@
 ---
 title: Options des Outils R dans Visual Studio | Microsoft Docs
 ms.custom: 
-ms.date: 6/29/2017
+ms.date: 06/29/2017
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- devlang-r
+ms.technology: devlang-r
 ms.devlang: r
 ms.tgt_pltfrm: 
 f1_keywords:
@@ -14,18 +13,16 @@ f1_keywords:
 - vs.toolsoptionspages.r_tools.#150
 ms.topic: article
 ms.assetid: 554dc602-ecad-4cd0-8e6f-a60bb8a2328f
-caps.latest.revision: 1
+caps.latest.revision: "1"
 author: kraigb
 ms.author: kraigb
 manager: ghogen
+ms.openlocfilehash: 82e17109ff595ae566ea326dae9237274ee5ad15
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
 ms.translationtype: HT
-ms.sourcegitcommit: 1e017806ca7bf3d23410ba3a2f999dca0b78f240
-ms.openlocfilehash: 5777be7df1256d4fe4d34be41fb10eb546d4a0ac
-ms.contentlocale: fr-fr
-ms.lasthandoff: 09/26/2017
-
+ms.contentlocale: fr-FR
+ms.lasthandoff: 10/31/2017
 ---
-
 # <a name="r-tools-for-visual-studio-options"></a>Options des Outils R dans Visual Studio
  
 Les paramètres sont accessibles par l’intermédiaire du menu **Outils R > Options**, ou par l’intermédiaire d’**Outils > Options** et en faisant défiler la page jusqu’à **Outils R** :
@@ -112,4 +109,3 @@ Ces options contrôlent la façon dont les valeurs sont gérées dans l’[Explo
 | Enregistrer l’espace de travail à la fermeture du projet | `No` | `Yes` active l’enregistrement de l’environnement global dans le fichier `.RData` à la fermeture du projet. |
 | Afficher la boîte de dialogue de confirmation avant de changer d’espace de travail | `Yes` | `No` désactive l’invite de confirmation lors du basculement entre différents espaces de travail. Voir [Basculement entre espaces de travail](workspaces.md#switching-between-workspaces). |
  
-

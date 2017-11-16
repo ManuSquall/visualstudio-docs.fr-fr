@@ -4,36 +4,19 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- tgt-pltfrm-cross-plat
+ms.technology: tgt-pltfrm-cross-plat
 ms.tgt_pltfrm: 
 ms.topic: article
 ms.assetid: f3fb5df4-3aae-40e4-9450-bbe15b0c5af5
-caps.latest.revision: 23
+caps.latest.revision: "23"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-translation.priority.ht:
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- ru-ru
-- zh-cn
-- zh-tw
-translation.priority.mt:
-- cs-cz
-- pl-pl
-- pt-br
-- tr-tr
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 47057e9611b824c17077b9127f8d2f8b192d6eb8
-ms.openlocfilehash: 2b73f62b59c2106cdda090133013603e3dc887c6
-ms.contentlocale: fr-fr
-ms.lasthandoff: 05/13/2017
-
+ms.openlocfilehash: 6794bf2bbf53df5648c595d7a4ec47b30a974359
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: HT
+ms.contentlocale: fr-FR
+ms.lasthandoff: 10/31/2017
 ---
 # <a name="troubleshooting-the-visual-studio-emulator-for-android"></a>Résolution des problèmes liés à l’émulateur Visual Studio pour Android
 Cette rubrique contient des informations pour vous aider à résoudre les problèmes que vous pouvez rencontrer quand vous utilisez l’Émulateur Visual Studio pour Android.  
@@ -211,15 +194,15 @@ Cette rubrique contient des informations pour vous aider à résoudre les probl�
   
      Les produits suivants peuvent nécessiter une mise à niveau pour la compatibilité avec Windows 8 : VirtualBox, Virtual PC 7, VMWare, certains clients VPN, pare-feu logiciels, versions de clients VPN Cisco et autres systèmes de virtualisation. Collaborez avec le développeur du logiciel de virtualisation en question pour l'inciter à mettre à niveau le logiciel pour le rendre compatible avec Windows 8 et Hyper-V.  
   
-     En guise de **solution de contournement**, vous pouvez désactiver tous les pilotes et applications tiers susceptibles d'interférer avec le réseau virtuel utilisé par l'émulateur pour communiquer avec Visual Studio. Ces applications peuvent être :  
+     En guise de **solution de contournement**, vous pouvez désactiver tous les pilotes et applications tiers susceptibles d'interférer avec le réseau virtuel utilisé par l'émulateur pour communiquer avec Visual Studio. Il peut s'agir notamment :  
   
-    -   Des applications antivirus (qui se raccordent à la pile réseau)  
+    -   d'applications antivirus (qui se raccordent à la pile réseau) ;  
   
-    -   Des outils de surveillance réseau  
+    -   d'outils d'analyse de réseau ;  
   
-    -   Des outils de journalisation de réseau  
+    -   d'outils de journalisation de réseau ;  
   
-    -   D’autres logiciels de surveillance système  
+    -   d'autres logiciels d'analyse du système.  
   
      Une autre solution possible, avant de considérer la désinstallation des produits en question (et de demander au développeur du produit de publier une version mise à jour) consiste à effectuer les étapes suivantes.  
   
@@ -227,11 +210,11 @@ Cette rubrique contient des informations pour vous aider à résoudre les probl�
   
     2.  Pour la carte vEthernet (port Ethernet interne - commutateur interne de l'émulateur Windows Phone), choisissez **Propriétés** dans le menu contextuel.  
   
-         ![Adaptateur virtuel utilisé par Hyper&#45;V](~/cross-platform/media/android_emu_virtual_adapter.png "Android_Emu_Virtual_Adapter")  
+         ![Adaptateur virtuel utilisé par Hyper&#45;V](../cross-platform/media/android_emu_virtual_adapter.png "Android_Emu_Virtual_Adapter")  
   
          Les propriétés de la carte sont présentées ici.  
   
-         ![Propriétés de l’adaptateur virtuel](~/cross-platform/media/android_emu_virtual_adapter_properties.png "Android_Emu_Virtual_Adapter_Properties")  
+         ![Propriétés de l’adaptateur virtuel](../cross-platform/media/android_emu_virtual_adapter_properties.png "Android_Emu_Virtual_Adapter_Properties")  
   
     3.  Pour cette carte, les seuls éléments qui doivent être sélectionnés sous **Cette connexion utilise les éléments suivants** sont les suivants :  
   
@@ -259,7 +242,7 @@ Cette rubrique contient des informations pour vous aider à résoudre les probl�
   
     -   Ouvrez Hyper V et accédez au Gestionnaire de commutateur virtuel. Créez un commutateur virtuel nommé « Commutateur interne de l'émulateur Windows Phone » et sélectionnez **Réseau interne**comme type de connexion.  
   
-         ![Gestionnaire de commutateur virtuel](~/cross-platform/media/android_emu_virtual_switch_manager.png "Android_Emu_Virtual_Switch_Manager")  
+         ![Gestionnaire de commutateur virtuel](../cross-platform/media/android_emu_virtual_switch_manager.png "Android_Emu_Virtual_Switch_Manager")  
   
      Maintenant, lancez l'émulateur. Il devrait fonctionner.  
   

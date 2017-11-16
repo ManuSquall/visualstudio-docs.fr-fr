@@ -4,36 +4,19 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-general
+ms.technology: vs-acquisition
 ms.tgt_pltfrm: 
 ms.topic: article
 ms.assetid: 56b3baa3-651e-4ad4-8942-e334c5c57158
-caps.latest.revision: 29
-author: kempb
-ms.author: kempb
+caps.latest.revision: "29"
+author: TerryGLee
+ms.author: tglee
 manager: ghogen
-translation.priority.ht:
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- ru-ru
-- zh-cn
-- zh-tw
-translation.priority.mt:
-- cs-cz
-- pl-pl
-- pt-br
-- tr-tr
+ms.openlocfilehash: bbda1d3a9835d95978f7bfadbfe1b99971f6d367
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
 ms.translationtype: HT
-ms.sourcegitcommit: eb5c9550fd29b0e98bf63a7240737da4f13f3249
-ms.openlocfilehash: 8bd8c04c9a9aba653f587d74b2c6e4fc7ce562f9
-ms.contentlocale: fr-fr
-ms.lasthandoff: 09/06/2017
-
+ms.contentlocale: fr-FR
+ms.lasthandoff: 10/31/2017
 ---
 # <a name="step-6-name-your-button-controls"></a>Étape 6 : affecter un nom à vos contrôles bouton
 Votre formulaire ne contient qu’un seul PictureBox. Lorsque vous l’avez ajouté, l’IDE l’a nommé automatiquement **pictureBox1**. Il n’existe qu’un seul CheckBox, appelé **checkBox1**. Vous écrirez bientôt du code qui fera référence à CheckBox et PictureBox. Étant donné qu’il n’existe qu’un seul de ces deux contrôles, vous comprendrez ce que signifie **pictureBox1** ou **checkBox1** dans votre code.  
@@ -53,7 +36,7 @@ Votre formulaire ne contient qu’un seul PictureBox. Lorsque vous l’avez ajou
 Fenêtre Propriétés avec nom closeButton  
   
     > [!NOTE]
-    >  Si vous essayez de modifier le nom de votre bouton en **closeButton** (autrement dit avec un espace entre les mots close et Button), l'IDE affiche un message d'erreur : « Valeur de propriété non valide ». Les espaces (et quelques autres caractères) ne sont pas autorisés dans les noms de contrôle.  
+    >  If you try changing the name of your button to **closeButton**, with a space between the words close and Button, the IDE displays an error message: "Property value is not valid." Les espaces (et quelques autres caractères) ne sont pas autorisés dans les noms de contrôle.  
   
 2.  Renommez les trois autres boutons en **backgroundButton**, **clearButton**et **showButton**. Vous pouvez vérifier les noms en sélectionnant la liste déroulante du sélecteur de contrôles dans la fenêtre **Propriétés** . Les nouveaux noms de boutons apparaissent.  
   
@@ -64,7 +47,8 @@ Onglet Form1.cs avec code Visual C#
   
 4.  Examinez attentivement cette partie du code. (Sélectionnez l’onglet **VB** ci-dessous si vous utilisez Visual Basic pour consulter la version Visual Basic du code.)  
   
-     [!code-vb[VbExpressTutorial1Step6#1](../ide/codesnippet/VisualBasic/step-6-name-your-button-controls_1.vb)]  [!code-csharp[VbExpressTutorial1Step6#1](../ide/codesnippet/CSharp/step-6-name-your-button-controls_1.cs)]  
+     [!code-vb[VbExpressTutorial1Step6#1](../ide/codesnippet/VisualBasic/step-6-name-your-button-controls_1.vb)]
+     [!code-csharp[VbExpressTutorial1Step6#1](../ide/codesnippet/CSharp/step-6-name-your-button-controls_1.cs)]  
   
      Vous regardez le code intitulé `showButton_Click()`. L’IDE l’a ajouté au code du formulaire lorsque vous avez ouvert le fichier de code du bouton **showButton** . Au moment de la conception, lorsque vous ouvrez le fichier de code d’un contrôle dans un formulaire, le code est généré pour le contrôle s’il n’existe pas déjà. Ce code (connu sous le nom de *méthode*) s’exécute lorsque vous exécutez votre programme et sélectionnez le contrôle (dans ce cas, le bouton **Afficher une image** ).  
   
@@ -80,7 +64,8 @@ Onglet Form1.cs avec code Visual C#
   
      Les éléments suivants montrent le nouveau code qui est affiché dans l’éditeur de code.  
   
-     [!code-vb[VbExpressTutorial1Step6#2](../ide/codesnippet/VisualBasic/step-6-name-your-button-controls_2.vb)]  [!code-csharp[VbExpressTutorial1Step6#2](../ide/codesnippet/CSharp/step-6-name-your-button-controls_2.cs)]  
+     [!code-vb[VbExpressTutorial1Step6#2](../ide/codesnippet/VisualBasic/step-6-name-your-button-controls_2.vb)]
+     [!code-csharp[VbExpressTutorial1Step6#2](../ide/codesnippet/CSharp/step-6-name-your-button-controls_2.cs)]  
   
      Les cinq méthodes que vous avez ajoutées sont appelées *gestionnaires d’événements*, car votre programme les appelle chaque fois qu’un événement se produit (par exemple, lorsqu’un utilisateur sélectionne un bouton ou active une case à cocher).  
   

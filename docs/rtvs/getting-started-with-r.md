@@ -1,27 +1,24 @@
 ---
 title: "Bien démarrer avec Outils R pour Visual Studio | Microsoft Docs"
 ms.custom: 
-ms.date: 6/29/2017
+ms.date: 06/29/2017
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- devlang-r
+ms.technology: devlang-r
 ms.devlang: r
 ms.tgt_pltfrm: 
 ms.topic: get-started-article
 ms.assetid: 39228cf0-8d21-43bb-a2ce-5e5fdc81ec41
-caps.latest.revision: 1
+caps.latest.revision: "1"
 author: kraigb
 ms.author: kraigb
 manager: ghogen
+ms.openlocfilehash: 616b39cdd355e6a795a4b4e2929586ba233ab8da
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
 ms.translationtype: HT
-ms.sourcegitcommit: 712cc780388acc5e373f71d51fc8f1f42adb5bed
-ms.openlocfilehash: b9fb38bf7e21924d7fbece72978e99d298a42b74
-ms.contentlocale: fr-fr
-ms.lasthandoff: 07/12/2017
-
+ms.contentlocale: fr-FR
+ms.lasthandoff: 10/31/2017
 ---
-
 # <a name="getting-started-with-r-tools-for-visual-studio"></a>Bien démarrer avec Outils R pour Visual Studio
 
 Après avoir installé Outils R pour Visual Studio (RTVS) (voir [Installation](installation.md)), vous pouvez rapidement vous faire une idée de ce que ces outils ont à offrir. Les sections suivantes vous proposent une courte visite :
@@ -183,4 +180,3 @@ Dans cette procédure pas à pas, vous avez pu découvrir les bases des projets�
 - [Débogage](debugging.md)
 - [Espaces de travail](workspaces.md)
 - [Visualisation des données](visualizing-data.md)
-

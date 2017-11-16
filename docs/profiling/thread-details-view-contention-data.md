@@ -1,63 +1,62 @@
 ---
-title: "Vue D&#233;tails relatifs au thread - donn&#233;es de conflit du profileur | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-debug"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "vs.performance.view.threaddetails"
-helpviewer_keywords: 
-  - "Détails relatifs au thread (vue)"
+title: "Vue Détails relatifs au thread - Données de conflit | Microsoft Docs"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-debug
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords: vs.performance.view.threaddetails
+helpviewer_keywords: Thread Details view
 ms.assetid: 874c3b1c-88d8-479a-bb35-1291d9aa8e67
-caps.latest.revision: 9
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 9
+caps.latest.revision: "9"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: 669f227b1c5a13aada7573a245f459ba4c6a8a9a
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: HT
+ms.contentlocale: fr-FR
+ms.lasthandoff: 10/31/2017
 ---
-# Vue D&#233;tails relatifs au thread - donn&#233;es de conflit du profileur
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
-
-La vue Détails relatifs au thread présente un graphique de chronologie des événements bloquants dans le thread sélectionné d'une exécution du profilage provoqués par des conflits sur des ressources.  Un événement bloquant se produit lorsque le thread est forcé d'interrompre l'exécution car un autre thread a verrouillé l'accès à une ressource.  
+# <a name="thread-details-view---contention-data"></a>Vue Détails relatifs au thread - Données de conflit
+La vue Détails du Thread présente un graphique chronologique des événements bloquants dans le thread sélectionné d’une exécution du profilage, qui ont été provoqués par des conflits sur les ressources. Un événement de blocage se produit quand le thread est forcé d’interrompre l’exécution, car un autre thread a verrouillé l’accès à une ressource.  
   
- Cette vue représente la chronologie d'exécution du thread sous la forme d'une barre horizontale et les événements bloquants sous la forme d'une barre verticale sur une chronologie horizontale pour le thread.  Lorsque cela est nécessaire, vous pouvez effectuer un zoom sur une section de la chronologie pour afficher les événements individuels.  Pour afficher le chemin d'exécution des fonctions qui ont provoqué l'événement, cliquez sur la barre d'événement.  Les fonctions s'affichent dans la fenêtre Pile des appels.  Lorsque le code source d'une fonction est disponible, cliquez sur le nom de la fonction pour modifier le fichier source dans l'interface de Visual Studio.  
+ Cette vue représente la chronologie de l’exécution du thread sous la forme d’une barre horizontale et les événements de blocage sous la forme de barres verticales sur une chronologie horizontale pour le thread. Quand c’est nécessaire, vous pouvez effectuer un zoom avant sur une section de la chronologie pour voir les événements individuels. Pour afficher le chemin d’exécution des fonctions qui ont provoqué l’événement, cliquez sur la barre de l’événement. Les fonctions apparaissent dans la fenêtre Pile des appels. Quand le code source d’une fonction est disponible, vous pouvez cliquer sur le nom de la fonction pour modifier le fichier source dans l’IDE Visual Studio.  
   
-## Navigation dans la chronologie  
+## <a name="navigating-the-timeline"></a>Navigation dans la chronologie  
   
-#### Pour effectuer un zoom sur un segment de chronologie  
+#### <a name="to-zoom-in-on-a-timeline-segment"></a>Pour faire un zoom sur un segment de la chronologie  
   
 -   Cliquez et faites glisser le pointeur de la souris pour sélectionner une zone de la chronologie.  
   
-     Lorsque vous relâchez la souris, la vue effectue un zoom sur le segment sélectionné.  Vous pouvez répéter ce processus pour zoomer encore davantage.  La case de défilement de la barre de défilement représente la taille relative du segment de temps affiché dans la vue.  
+     Quand vous relâchez la souris, la vue effectue un zoom avant sur le segment de temps sélectionné. Vous pouvez répéter le processus pour obtenir plus détails. La case de défilement sur la barre de défilement chronologique représente la taille relative de l’intervalle de temps qui est affiché dans la vue.  
   
-#### Pour effectuer un zoom arrière sur une chronologie  
+#### <a name="to-zoom-out-on-a-timeline"></a>Pour appliquer un zoom arrière sur une chronologie  
   
 -   Cliquez sur **Zoom arrière** pour revenir au niveau de zoom précédent.  
   
--   Cliquez sur **Réinitialisation du zoom** pour afficher l'intégralité de la chronologie dans la vue.  
+-   Cliquez sur **Réinitialisation du zoom** pour afficher l’intégralité de la chronologie de la vue.  
   
-#### Pour afficher la pile des appels d'un événement  
+#### <a name="to-view-the-call-stack-of-an-event"></a>Pour afficher la pile des appels d’un événement  
   
--   Dans le graphique de chronologie, cliquez sur la barre verticale qui représente l'événement.  
+-   Dans le graphique chronologique, cliquez sur la barre verticale qui représente l’événement.  
   
-#### Pour afficher ou modifier le code source d'une fonction dans la pile des appels  
+#### <a name="to-view-or-edit-the-source-code-of-a-function-in-the-call-stack"></a>Pour afficher ou modifier le code source d’une fonction dans la pile des appels  
   
 -   Dans la fenêtre Pile des appels, cliquez sur le nom de la fonction.  
   
- Le code source de la fonction doit faire partie du projet actuel.  
+ Le code source de la fonction doit faire partie du projet actif.  
   
-#### Pour afficher les événements de conflit d'une ressource dans tous les threads dans l'exécution du profilage  
+#### <a name="to-view-the-contention-events-of-a-resource-in-all-threads-in-the-profiling-run"></a>Pour voir les événements de conflit d’une ressource dans tous les threads de l’exécution du profilage  
   
--   Dans le graphique de chronologie, cliquez sur le nom ou d'ID de la ressource.  
+-   Dans le graphique chronologique, cliquez sur le nom ou l’ID de la ressource.  
   
-     La [Vue Informations sur les ressources](../profiling/resource-details-view-contention-data.md) s'ouvre pour la ressource sélectionnée.  
+     La [vue Informations sur les ressources](../profiling/resource-details-view-contention-data.md) apparaît pour la ressource sélectionnée.  
   
-#### Pour consulter les données de conflit du thread dans la fenêtre Processus  
+#### <a name="to-view-the-thread-contention-data-in-the-processes-window"></a>Pour voir les données de conflit du thread dans la fenêtre Processus  
   
--   Dans le graphique de chronologie, cliquez sur **Total**.  
+-   Dans le graphique chronologique, cliquez sur **Total**.  
   
-     La [Mode Processus](../profiling/process-view-contention-data.md) s'ouvre avec le thread sélectionné.
+     La [vue Processus](../profiling/process-view-contention-data.md) apparaît affiche avec le thread sélectionné.

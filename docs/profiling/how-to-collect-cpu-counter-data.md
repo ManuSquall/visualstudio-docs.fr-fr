@@ -1,71 +1,71 @@
 ---
-title: "Proc&#233;dure&#160;: collecter les donn&#233;es des compteurs UC &#224; l’aide de la m&#233;thode d’instrumentation | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-debug"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "vs.performance.property.cpucounters"
-helpviewer_keywords: 
-  - "outils de profilage, utiliser des compteurs UC portables"
-  - "outils d’analyse des performances, compteurs UC portables"
+title: "Guide pratique pour collecter les données des compteurs UC | Microsoft Docs"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-debug
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords: vs.performance.property.cpucounters
+helpviewer_keywords:
+- profiling tools, using portable CPU counters
+- performance tools, portable CPU counters
 ms.assetid: 102fb6ca-5fbf-4b05-925f-56912ce3f44b
-caps.latest.revision: 21
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 21
+caps.latest.revision: "21"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: 856ffdc2bc2e33dec6e7ff531b9ce5582fc9b3db
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: HT
+ms.contentlocale: fr-FR
+ms.lasthandoff: 10/31/2017
 ---
-# Proc&#233;dure&#160;: collecter les donn&#233;es des compteurs UC &#224; l’aide de la m&#233;thode d’instrumentation
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
-
-Un compteur d'événements UC sert à collecter les données de performance sur le matériel.  Cette rubrique vous indique comment collecter des données de compteur d'événements lorsque vous utilisez la méthode de profilage par instrumentation.  
+# <a name="how-to-collect-cpu-counter-data"></a>Guide pratique pour collecter les données des compteurs UC
+Un compteur d’événements UC sert à collecter des données de performances matérielles. Cette rubrique montre comment collecter des données de compteur d’événements lorsque vous utilisez la méthode de profilage par instrumentation.  
   
- **Configuration requise**  
+ **Requirements**  
   
 -   [!INCLUDE[vsUltLong](../code-quality/includes/vsultlong_md.md)], [!INCLUDE[vsPreLong](../code-quality/includes/vsprelong_md.md)], [!INCLUDE[vsPro](../code-quality/includes/vspro_md.md)]  
   
- Deux types d'événements de compteur UC se produisent :  
+ Il existe deux types d’événements de compteur UC :  
   
--   Événements portables : événements UC pouvant être collectés quelle que soit l'UC spécifique.  
+-   Événements portables : événements UC pouvant être collectés, quel que soit le processeur.  
   
--   Événements de plateforme : événements UC associés à une UC spécifique.  
+-   Événements de plateforme : événements UC associés à un processeur particulier.  
   
- Les événements portables incluent les événements généraux, comme les instructions retirées et les cycles non interrompus, les événements de mémoire tampon UC, les événements de branche et les événements du cache L2.  Les compteurs d'événements de plateforme disponibles sont déterminés par le fabricant du processeur.  
+ Les événements portables sont des événements généraux, tels que des instructions retirées, des cycles hors interruption, des événements de mémoire tampon UC, des événements de branche et des événements du cache L2. Les compteurs d’événements de plateforme disponibles dépendent du fabricant du processeur.  
   
- Les catégories d'événements peuvent être partagées entre les compteurs d'événements portables et de plateforme.  Par exemple, les catégories de données suivantes sont souvent communes aux deux types :  
+ Les catégories d’événements peuvent être partagées entre les compteurs d’événements portables et de plateforme. Par exemple, les catégories de données suivantes sont souvent communes aux deux types :  
   
--   Événements de la mémoire :  
+-   Événements mémoire  
   
--   Événements frontaux.  
+-   Événements frontaux  
   
--   Événements de branche.  
+-   Événements de branche  
   
- Vous pouvez recueillir les données des compteurs de performance de deux manières différentes dans le profileur :  
+ Vous disposez de deux options pour collecter des données de compteur de performances dans le profileur :  
   
--   Collectez les données issues d'un ou plusieurs compteurs lors du profilage par instrumentation.  
+-   Collecter des données à partir d’un ou plusieurs compteurs lors d’un profilage par instrumentation  
   
--   Spécifiez un événement de compteur en tant qu'intervalle d'échantillonnage lors du profilage par échantillonnage.  Pour plus d’informations, consultez [Comment : choisir des événements d’échantillonnage](../Topic/How%20to:%20Choose%20Sampling%20Events.md).  
+-   Spécifier un événement de compteur comme intervalle d’échantillonnage lors d’un profilage par échantillonnage Pour plus d’informations, consultez [Guide pratique pour choisir des événements d’échantillonnage](../profiling/how-to-choose-sampling-events.md).  
   
-### Pour collecter les données des compteurs de performance de l'UC lors du profilage par instrumentation  
+### <a name="to-collect-cpu-performance-counter-data-when-you-profile-by-instrumentation"></a>Pour collecter des données de compteur de performances UC lors d’un profilage par instrumentation  
   
-1.  Dans les **Pages de propriétés** de la session de performance, cliquez sur **Compteurs UC.**  
+1.  Dans les **pages de propriétés** de la session de performance, cliquez sur **Compteurs UC**.  
   
-2.  Activez la case à cocher **Collecter les compteurs UC**.  
+2.  Cochez la case **Collecter les compteurs UC**.  
   
-3.  Développez l'arborescence **Compteurs de performance disponibles** jusqu'à ce que vous trouviez les exemples d'événements à collecter.  
+3.  Développez l’arborescence **Compteurs de performance disponibles** jusqu’à ce que vous trouviez les événements d’échantillons que vous voulez collecter.  
   
-4.  Pour chaque événement à collecter, sélectionnez l'événement, puis cliquez sur le bouton fléché droit pour l'ajouter à la liste **Compteurs sélectionnés**.  
+4.  Pour chaque événement à collecter, sélectionnez l’événement, puis cliquez sur la flèche droite pour l’ajouter à la liste **Compteurs sélectionnés**.  
   
     > [!NOTE]
-    >  L'option **Compteurs de performance disponibles** est activée uniquement si vous activez la case à cocher **Collecter les compteurs UC**.  
+    >  L’option **Compteurs de performance disponibles** n’est activée que si vous cochez la case **Collecter les compteurs UC**.  
   
-## Voir aussi  
+## <a name="see-also"></a>Voir aussi  
  [Configuration de sessions de performance](../profiling/configuring-performance-sessions.md)   
  [Propriétés d’une session de performance](../profiling/performance-session-properties.md)   
  [Compteurs UC et Windows](../profiling/cpu-and-windows-counters.md)   
- [Comment : choisir des événements d’échantillonnage](../Topic/How%20to:%20Choose%20Sampling%20Events.md)
+ [Guide pratique pour choisir des événements d’échantillonnage](../profiling/how-to-choose-sampling-events.md)

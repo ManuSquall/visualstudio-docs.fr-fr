@@ -1,28 +1,24 @@
 ---
 title: "Modification de code avec les Outils R pour Visual Studio | Microsoft Docs"
 ms.custom: 
-ms.date: 6/29/2017
-ms.prod: visual-studio-dev15
+ms.date: 06/29/2017
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- devlang-r
+ms.technology: devlang-r
 ms.devlang: r
 ms.tgt_pltfrm: 
 ms.topic: article
 ms.assetid: a198ccc3-5506-48e7-b3b2-9399661b80d5
-caps.latest.revision: 1
+caps.latest.revision: "1"
 author: kraigb
 ms.author: kraigb
 manager: ghogen
+ms.openlocfilehash: 5c856bb02ca33f999273fd6da782226be5f0f2d2
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
 ms.translationtype: HT
-ms.sourcegitcommit: 712cc780388acc5e373f71d51fc8f1f42adb5bed
-ms.openlocfilehash: 261cced8583b751d74701a8903a10a4584928940
-ms.contentlocale: fr-fr
-ms.lasthandoff: 07/12/2017
-
+ms.contentlocale: fr-FR
+ms.lasthandoff: 10/31/2017
 ---
-
 # <a name="editing-r-code-in-visual-studio"></a>Modification de code R dans Visual Studio
  
 Les Outils R pour Visual Studio (RTVS) personnalisent l’expérience de modification dans Visual Studio spécifiquement pour R, tout en conservant toutes les fonctionnalités et la possibilité d’utiliser des extensions. (Par exemple, si vous préférez les combinaisons de touches VIM, vous pouvez installer la version gratuite de l’[extension VsVim](https://visualstudiogallery.msdn.microsoft.com/59ca71b3-a4a3-46ca-8fe1-0e90e3f79329) à partir de la galerie Visual Studio.)
@@ -150,4 +146,3 @@ Les options de l’onglet **R > Avancé** sont propres à RTVS :
 | Fenêtre interactive | Vérification syntaxique dans la console R | Off | Applique la vérification syntaxique dans la fenêtre interactive. La vérification syntaxique peut ne pas fonctionner correctement avec les instructions multilignes. | 
 | mode Plan | Plan du code | Activé | Crée automatiquement des régions réductibles pour des zones comme les instructions multilignes. | 
 | Vérification syntaxique | Afficher les erreurs de syntaxe | Activé | Active la vérification syntaxique automatique du code. |
-

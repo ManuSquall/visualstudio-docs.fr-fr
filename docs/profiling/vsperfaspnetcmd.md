@@ -4,38 +4,22 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-debug
+ms.technology: vs-ide-debug
 ms.tgt_pltfrm: 
 ms.topic: article
 helpviewer_keywords:
 - profiling tools,VSPerfASPNETCmd
 - VSPerfASPNETCmd
 ms.assetid: f9e9f895-57bb-41e8-8bd1-cdaa738ec220
-caps.latest.revision: 6
+caps.latest.revision: "6"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-translation.priority.ht:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
+ms.openlocfilehash: 424bc775e335c093dfbd89dfd0488a545bed7563
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
 ms.translationtype: HT
-ms.sourcegitcommit: 223750aef8d997c6ae017f49ea0a9522bdba72bc
-ms.openlocfilehash: ab57983a9dec6ce00e9edef4027b2a23f47d2ae1
-ms.contentlocale: fr-fr
-ms.lasthandoff: 08/10/2017
-
+ms.contentlocale: fr-FR
+ms.lasthandoff: 10/31/2017
 ---
 # <a name="vsperfaspnetcmd"></a>VSPerfASPNetCmd
 L’outil en ligne de commande **VSPerfASPNetCmd.exe** vous permet de profiler des sites web ASP.NET sans devoir définir des variables d’environnement ou redémarrer votre ordinateur. Utilisez **VSPerfASPNetCmd.exe** à la place de [VSPerfCmd](../profiling/vsperfcmd.md) quand vous profilez des sites web ASP.NET et que vous n’avez pas besoin des fonctionnalités supplémentaires fournies par **VSPerfCmd**. Pour plus d’informations sur **VSPerfASPNetCmd**, consultez [Profilage de site web rapide avec VSPerfASPNETCmd](../profiling/rapid-web-site-profiling-with-vsperfaspnetcmd.md). **VSPerfASPNetCmd** est l’outil en ligne de commande à privilégier quand vous utilisez le profileur autonome pour profiler un site web ASP.NET.  
@@ -60,4 +44,3 @@ L’outil en ligne de commande **VSPerfASPNetCmd.exe** vous permet de profiler d
 ## <a name="see-also"></a>Voir aussi  
  [Profilage de site web rapide avec VSPerfASPNETCmd](../profiling/rapid-web-site-profiling-with-vsperfaspnetcmd.md)   
  [Profilage d’applications web ASP.NET](../profiling/command-line-profiling-of-aspnet-web-applications.md)
-

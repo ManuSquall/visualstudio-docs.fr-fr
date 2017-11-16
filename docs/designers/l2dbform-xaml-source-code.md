@@ -4,73 +4,57 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- devlang-csharp
+ms.technology: vs-ide-designers
 ms.tgt_pltfrm: 
 ms.topic: article
 ms.assetid: 624e96d4-6d27-4195-8ac2-2f3835f6c57e
-caps.latest.revision: 2
-author: kempb
-ms.author: kempb
+caps.latest.revision: "2"
+author: gewarren
+ms.author: gewarren
 manager: ghogen
-translation.priority.ht:
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- ru-ru
-- zh-cn
-- zh-tw
-translation.priority.mt:
-- cs-cz
-- pl-pl
-- pt-br
-- tr-tr
-translationtype: Human Translation
-ms.sourcegitcommit: 5db97d19b1b823388a465bba15d057b30ff0b3ce
-ms.openlocfilehash: b62eac5ab4b057e26ed4a0a34551655984449cf1
-ms.lasthandoff: 02/22/2017
-
+ms.openlocfilehash: c3ccc6fcfa8471d767356f1e30d1e5f8b0ed15d0
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: HT
+ms.contentlocale: fr-FR
+ms.lasthandoff: 10/31/2017
 ---
 # <a name="l2dbformxaml-source-code"></a>Code source L2DBForm.xaml
-Cette rubrique contient et décrit le fichier source XAML pour l’[exemple de liaison de données WPF à l’aide de LINQ to XML](../designers/wpf-data-binding-using-linq-to-xml-example.md), L2DBForm.xaml.  
+Cette rubrique contient et décrit le fichier source XAML pour [WPF Data Binding Using LINQ to XML Example](../designers/wpf-data-binding-using-linq-to-xml-example.md), L2DBForm.xaml.  
   
 ## <a name="overall-ui-structure"></a>Structure globale d'interface utilisateur  
- Comme c’est généralement le cas pour un projet WPF, ce fichier contient un élément parent, un élément XML <xref:System.Windows.Window> associé à la classe dérivée `L2XDBFrom` dans l’espace de noms `LinqToXmlDataBinding`.  
+ Comme c'est généralement le cas pour un projet WPF, ce fichier contient un élément parent, un élément XML <xref:System.Windows.Window> associé à la classe dérivée `L2XDBFrom` dans l'espace de noms `LinqToXmlDataBinding` .  
   
- La zone cliente est contenue dans un élément <xref:System.Windows.Controls.StackPanel> qui a un arrière-plan bleu clair. Ce volet contient quatre sections d’interface utilisateur <xref:System.Windows.Controls.DockPanel> séparées par des barres <xref:System.Windows.Controls.Separator>. L’objectif de ces sections est décrit dans les **Remarques** de la [rubrique précédente](../designers/walkthrough-linqtoxmldatabinding-example.md).  
+ La zone cliente est contenue dans un objet <xref:System.Windows.Controls.StackPanel> auquel est affecté un arrière-plan bleu clair. Ce volet contient quatre sections d'interface utilisateur <xref:System.Windows.Controls.DockPanel> séparées par des barres <xref:System.Windows.Controls.Separator> . L'objectif de ces sections est décrit dans les **Remarques** de la [rubrique précédente](../designers/walkthrough-linqtoxmldatabinding-example.md).  
   
- Chaque section contient une étiquette qui l'identifie. Dans les deux premières sections, cette étiquette a subi une rotation de 90 degrés via l’utilisation d’un <xref:System.Windows.FrameworkElement.LayoutTransform%2A>. Le reste de la section contient des éléments d'interface utilisateur adaptés à l'objectif de cette section : blocs de texte, zones de texte, boutons, et ainsi de suite. Parfois, un <xref:System.Windows.Controls.StackPanel> enfant est utilisé pour aligner ces contrôles enfants.  
+ Chaque section contient une étiquette qui l'identifie. Dans les deux premières sections, cette étiquette est pivotée de 90 degrés par le biais d'une propriété <xref:System.Windows.FrameworkElement.LayoutTransform%2A>. Le reste de la section contient des éléments d'interface utilisateur adaptés à l'objectif de cette section : blocs de texte, zones de texte, boutons, et ainsi de suite. Parfois, un objet <xref:System.Windows.Controls.StackPanel> enfant est utilisé pour aligner ces contrôles enfants.  
   
 ## <a name="window-resource-section"></a>Section de ressources de fenêtre  
  La balise `<Window.Resources>` d'ouverture sur la ligne 9 indique le début de la section de ressources de fenêtre. Cette section se termine par la balise de fermeture sur la ligne 35.  
   
- La balise `<ObjectDataProvider>`, qui s’étend de la ligne 11 à 25, déclare un <xref:System.Windows.Data.ObjectDataProvider>, nommé `LoadedBooks`, qui utilise un <xref:System.Xml.Linq.XElement> comme source. Ce <xref:System.Xml.Linq.XElement> est initialisé par l’analyse d’un document XML incorporé (un élément `CDATA`). Notez que les espaces blancs sont conservés lors de la déclaration et de l'analyse du document XML incorporé. Cela est dû au fait que le contrôle <xref:System.Windows.Controls.TextBlock>, qui est utilisé pour afficher le code XML brut, n’a aucune capacité de mise en forme XML spéciale.  
+ La balise `<ObjectDataProvider>` , qui s'étend de la ligne 11 à la ligne 25, déclare un objet <xref:System.Windows.Data.ObjectDataProvider>, nommé `LoadedBooks`, qui utilise un objet <xref:System.Xml.Linq.XElement> comme source. Cet objet <xref:System.Xml.Linq.XElement> est initialisé par l'analyse d'un document XML incorporé (un élément `CDATA` ). Notez que les espaces blancs sont conservés lors de la déclaration et de l'analyse du document XML incorporé. Cela est dû au fait que le contrôle <xref:System.Windows.Controls.TextBlock> , qui est utilisé pour afficher le code XML brut, n'a aucune capacité de mise en forme XML spéciale.  
   
- Enfin, un <xref:System.Windows.DataTemplate>nommé `BookTemplate` est défini sur les lignes 28 à 34. Ce modèle sera utilisé pour afficher les entrées dans la section d'interface utilisateur **Book List** . Il utilise les propriétés dynamiques LINQ to XML et de liaison de données pour récupérer l'ID de livre et le nom de livre par le biais des affectations suivantes :  
+ Pour finir, un objet <xref:System.Windows.DataTemplate> nommé `BookTemplate` est défini sur les lignes 28 à 34. Ce modèle sera utilisé pour afficher les entrées dans la section d'interface utilisateur **Book List** . Il utilise les propriétés dynamiques LINQ to XML et de liaison de données pour récupérer l'ID de livre et le nom de livre par le biais des affectations suivantes :  
   
 ```  
 Text="{Binding Path=Attribute[id].Value}"Text="{Binding Path=Value}"  
 ```  
   
 ## <a name="data-binding-code"></a>Code de liaison de données  
- En plus de l’élément <xref:System.Windows.DataTemplate>, la liaison de données est utilisée à plusieurs autres emplacements de ce fichier.  
+ En plus de l'élément <xref:System.Windows.DataTemplate> , la liaison de données est utilisée à d'autres emplacements de ce fichier.  
   
- Dans la balise `<StackPanel>` de début sur la ligne 38, la propriété <xref:System.Windows.FrameworkElement.DataContext%2A> de ce panneau est définie sur le fournisseur de données `LoadedBooks`.  
+ Dans la balise `<StackPanel>` d'ouverture sur la ligne 38, le fournisseur de données <xref:System.Windows.FrameworkElement.DataContext%2A> est affecté à la propriété `LoadedBooks` de ce volet.  
   
 ```  
 DataContext="{Binding Source={StaticResource LoadedBooks}}  
 ```  
   
- Ceci permet (sur la ligne 46) au <xref:System.Windows.Controls.TextBlock> nommé `tbRawXml` d’afficher le code XML brut en effectuant la liaison à la propriété `Xml` de ce fournisseur de données :  
+ Cela permet (sur la ligne 46) à l'objet <xref:System.Windows.Controls.TextBlock> nommé `tbRawXml` d'afficher le code XML brut en effectuant la liaison à la propriété `Xml` de ce fournisseur de données :  
   
 ```  
 Text="{Binding Path=Xml}"   
 ```  
   
- Le <xref:System.Windows.Controls.ListBox> dans la section d’interface utilisateur **Book List**, sur les lignes 58 à 62, définit le modèle pour ses éléments d’affichage sur le `BookTemplate` défini dans la section des ressources de fenêtre :  
+ L'objet <xref:System.Windows.Controls.ListBox> dans la section d'interface utilisateur **Book List** , sur les lignes 58 à 62, définit le modèle pour ses éléments d'affichage au `BookTemplate` défini dans la section de ressources de fenêtre :  
   
 ```  
 ItemTemplate ="{StaticResource BookTemplate}"   
@@ -84,7 +68,7 @@ ItemTemplate ="{StaticResource BookTemplate}"
 </ListBox.ItemsSource>  
 ```  
   
- La troisième section d’interface utilisateur, **Edit Selected Book**, lie d’abord le <xref:System.Windows.FrameworkElement.DataContext%2A> du parent <xref:System.Windows.Controls.StackPanel> à l’élément actuellement sélectionné dans la section d’interface utilisateur **Book List** (ligne 82) :  
+ La troisième section d'interface utilisateur, **Edit Selected Book**, lie d'abord la propriété <xref:System.Windows.FrameworkElement.DataContext%2A> de l'objet <xref:System.Windows.Controls.StackPanel> parent à l'élément actuellement sélectionné dans la section d'interface utilisateur **Book List** (ligne 82) :  
   
 ```  
 DataContext="{Binding ElementName=lbBooks, Path=SelectedItem}"  

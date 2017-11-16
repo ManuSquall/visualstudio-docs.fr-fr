@@ -1,20 +1,19 @@
 ---
-title: "Gestion des propriétés des projets et des solutions"
+title: "Gestion des propriétés des projets et des solutions | Microsoft Docs"
 author: asb3993
 ms.author: amburns
 ms.date: 04/14/2017
 ms.topic: article
 ms.assetid: 75247EB8-323A-4AFD-A451-6703A03D5D1F
+ms.openlocfilehash: 8871ab002a94a9c0bbc0063a25b4dea9cb271142
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
 ms.translationtype: HT
-ms.sourcegitcommit: e2b7ff9126e1cc38ac2e58d6be339b656a024e7f
-ms.openlocfilehash: fefb6c5e67b21907150611b3639cc16c05812e1a
-ms.contentlocale: fr-fr
-ms.lasthandoff: 08/11/2017
-
+ms.contentlocale: fr-FR
+ms.lasthandoff: 10/31/2017
 ---
 # <a name="managing-project-and-solution-properties"></a>Gestion des propriétés des projets et des solutions
 
-## <a name="project-options"></a>Options de projet 
+## <a name="project-options"></a>Options de projet
 
 Les options de projet sont spécifiques à chaque projet, et affectent la façon dont le projet est écrit, généré et exécuté. Ceci contraste avec les préférences de Visual Studio pour Mac, qui définissent des options spécifiques à l’utilisateur, et avec les options des solutions, qui définissent des options pour l’ensemble de la solution. Les options de projet sont stockées dans le fichier projet (.csproj), de façon que les autres développeurs puissent créer et exécuter le projet correctement. Ceci permet à de nombreux développeurs de travailler sur le même document sans compromettre la mise en forme du fichier.
 
@@ -45,4 +44,3 @@ Xamarin.iOS contient des options relatives à la signature des bundles, comme le
 Les options de solution sont similaires aux options de projet, mais elles couvrent les solutions entières. Elles permettent de définir les informations sur l’auteur, les paramètres de génération, les styles de mise en forme du code et la gestion de versions, et d’affecter le projet de démarrage dans la solution.  La boîte de dialogue Options de la solution est accessible à partir de l’élément de menu **Projet > Options de la solution**, à partir de l’élément de menu contextuel **Options** sur la solution dans le panneau Solution, ou en double-cliquant sur la solution dans le panneau Solution :
 
  ![Options de la solution](media/projects-and-solutions-image7.png)
-

@@ -1,49 +1,50 @@
 ---
-title: "DA0503&#160;: jeu de travail moyen, en octets, pour le processus en cours de profilage | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-debug"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "vs.performance.503"
-  - "vs.performance.DA0503"
-  - "vs.performance.rules.DA0503"
+title: "DA0503 : Jeu de travail moyen en octets pour le processus en cours de profilage | Microsoft Docs"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-debug
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords:
+- vs.performance.503
+- vs.performance.DA0503
+- vs.performance.rules.DA0503
 ms.assetid: 9047a494-eaaf-4679-b422-c64e8bde77a4
-caps.latest.revision: 8
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 8
+caps.latest.revision: "8"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: e47af0282eb5731a931be35a6acf16c776204574
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: HT
+ms.contentlocale: fr-FR
+ms.lasthandoff: 10/31/2017
 ---
-# DA0503&#160;: jeu de travail moyen, en octets, pour le processus en cours de profilage
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
-
+# <a name="da0503-average-working-set-in-bytes-for-the-process-being-profiled"></a>DA0503 : Jeu de travail moyen en octets pour le processus en cours de profilage
 |||  
 |-|-|  
-|ID de la règle|DA0503|  
-|Catégorie|Analyse de ressource|  
-|Méthode de profilage|Tous|  
-|Message|Ces informations ont été rassemblées à titre d'information uniquement.  Le compteur Traiter le jeu de travail mesure l'utilisation de la mémoire physique par le processus en cours de profilage.  La valeur signalée correspond à la moyenne pour tous les intervalles de mesure.|  
+|ID de règle|DA0503|  
+|Catégorie|Analyse des ressources|  
+|Méthode de profilage|Tout|  
+|Message|Uniquement à titre d’informations. Le compteur Jeu de travail de processus mesure l’utilisation de la mémoire physique par le processus en cours de profilage. La valeur signalée correspond à la moyenne pour tous les intervalles de mesure.|  
 |Type de règle|Information|  
   
- Lorsque vous profilez en utilisant les méthodes d'échantillonnage, de mémoire. NET ou de conflits de ressources, vous devez collecter au moins 10 échantillons pour déclencher cette règle.  
+ Lorsque vous effectuez un profilage à l’aide de la méthode d’échantillonnage, de mémoire .NET ou de conflit des ressources, vous devez collecter au moins 10 échantillons pour déclencher cette règle.  
   
-## Description de la règle  
- Ce message signale la quantité moyenne de mémoire physique que le processus utilise actuellement en octets \(jeu de travail\).  La plage de travail du processus représente des pages de l'espace d'adressage du processus qui résident actuellement dans la mémoire physique.  
+## <a name="rule-description"></a>Description de la règle  
+ Ce message signale la quantité moyenne de mémoire physique que le processus utilise actuellement, en octets (le jeu de travail). Le jeu de travail du processus comprend les pages de l’espace d’adressage de processus qui résident actuellement dans la mémoire physique.  
   
- La valeur signalée inclut des pages résidantes provenant de segments de mémoire partagée que le processus a référencés.  Les DLL partagées que le processus référence sont incluses dans les segments de mémoire partagée comptés.  La valeur du jeu de travail du processus peut être plus élevée que la quantité de mémoire virtuelle allouée par le processus en raison des segments de mémoire partagée.  
+ La valeur signalée comprend les pages résidant dans les segments de mémoire partagée que le processus a référencées. Les DLL partagées que le processus référence sont incluses dans les segments de mémoire partagée qui sont comptabilisés. La valeur du jeu de travail du processus peut être supérieure à la quantité de mémoire virtuelle que le processus a allouée, en raison des segments de mémoire partagée.  
   
- La valeur signalée est la moyenne de tous les intervalles de mesure dans lesquels le processus profilé était actif.  
+ La valeur signalée correspond à la moyenne de tous les intervalles de mesure pendant lesquels le processus profilé était actif.  
   
- La taille du jeu de travail du processus reflète la quantité de mémoire virtuelle que le processus utilise activement.  Elle est également affectée par la quantité de mémoire physique \(ou RAM\) disponible pour exécuter l'application et le conflit pour cette mémoire physique à partir d'autres processus en cours d'exécution.  Si la mémoire physique est contrainte, la valeur du jeu de travail du processus peut varier considérablement lorsque le système d'exploitation essaie d'équilibrer l'utilisation de la mémoire à travers des processus actifs en ajustant périodiquement les pages relativement inactives à partir des jeux de travail du processus.  
+ La taille du jeu de travail du processus correspond à la mémoire virtuelle que le processus utilise activement. Elle est également affectée par la quantité de mémoire physique (ou RAM) disponible pour exécuter l’application, et par les conflits entre cette mémoire physique et d’autres processus en cours d’exécution. Si la mémoire physique est limitée, la valeur du jeu de travail de processus peut varier considérablement lorsque les systèmes d’exploitation tentent d’équilibrer l’utilisation de la mémoire entre les processus actifs en supprimant périodiquement les pages relativement inactives des jeux de travail de processus.  
   
- Pour plus d'informations sur les plages de travail du processus, consultez [Plage de travail](http://go.microsoft.com/fwlink/?LinkId=177830) dans la documentation de gestion de la mémoire Windows MSDN.  
+ Pour plus d’informations sur les jeux de travail de processus, consultez [Jeu de travail](http://go.microsoft.com/fwlink/?LinkId=177830) dans la documentation MSDN relative à la gestion de la mémoire dans Windows.  
   
-## Comment utiliser des données de règle  
- Utilisez la valeur de règle pour comparer les performances de différentes versions du programme ou pour comprendre les performances de l'application selon des scénarios de profilage différents.  
+## <a name="how-to-use-rule-data"></a>Comment utiliser des données de règle  
+ Utilisez la valeur de la règle pour comparer les performances des différentes versions du programme ou pour comprendre les performances de l’application dans différents scénarios de profilage.  
   
- Double\-cliquez sur le message dans la fenêtre Liste d'erreurs pour naviguer jusqu'à la [vue Marques](../profiling/marks-view.md) des données de profilage.  Recherchez les colonnes **Processus\\Jeu de travail** et **Mémoire\\Pages\/s**.  Comparez les deux colonnes et déterminez s'il existe des phases spécifiques d'exécution du programme qui semblent être associées à une activité d'E\/S de pagination accrue.
+ Double-cliquez sur le message dans la fenêtre Liste d’erreurs pour accéder à la vue [Marques](../profiling/marks-view.md) des données de profilage. Accédez aux colonnes **Processus\Jeu de travail** et **Mémoire\Pages/s**. Comparez les deux colonnes et déterminez si des phases de l’exécution du programme ont connu une augmentation de l’activité d’E/S de pagination.

@@ -4,36 +4,19 @@ ms.custom:
 ms.date: 06/21/2017
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-general
+ms.technology: vs-ide-general
 ms.tgt_pltfrm: 
 ms.topic: article
 ms.assetid: 20489db9-7441-4f8b-97de-c72070d569b1
-caps.latest.revision: 10
-author: kempb
-ms.author: kempb
+caps.latest.revision: "10"
+author: gewarren
+ms.author: gewarren
 manager: ghogen
-translation.priority.ht:
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- ru-ru
-- zh-cn
-- zh-tw
-translation.priority.mt:
-- cs-cz
-- pl-pl
-- pt-br
-- tr-tr
-ms.translationtype: Human Translation
-ms.sourcegitcommit: d2f4eba36e9069a35cf279ccf1c78f72a51d77a1
-ms.openlocfilehash: 27dc4d56a0608ddf031b47775bd9aaef20e24194
-ms.contentlocale: fr-fr
-ms.lasthandoff: 06/23/2017
-
+ms.openlocfilehash: 40172defbd56f31de9aedbb4cc422c10d1a68dfd
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: HT
+ms.contentlocale: fr-FR
+ms.lasthandoff: 10/31/2017
 ---
 # <a name="tips-and-tricks-for-visual-studio"></a>Conseils et astuces pour Visual Studio
 Vous pouvez naviguer dans [!INCLUDE[vs_dev12](../extensibility/includes/vs_dev12_md.md)] plus facilement en utilisant les raccourcis dans cette rubrique. Cette rubrique représente uniquement un sous-ensemble des raccourcis clavier disponibles. Pour obtenir une liste plus complète, consultez [Raccourcis clavier par défaut dans Visual Studio](../ide/default-keyboard-shortcuts-in-visual-studio.md). Pour plus d’informations sur l’optimisation de Visual Studio pour l’accessibilité, consultez [Conseils et astuces d’accessibilité](../ide/reference/accessibility-tips-and-tricks.md).  
@@ -90,19 +73,18 @@ Vous pouvez naviguer dans [!INCLUDE[vs_dev12](../extensibility/includes/vs_dev12
 |-|-|  
 |Mode de suggestion IntelliSense|Ctrl+Alt+Espace (basculement)|  
 |Forcer l'affichage d'IntelliSense|Ctrl+J|  
-|Balises actives|Ctrl+.|  
+|Actions rapides|Ctrl+.|  
 |Sélecteur d'extraits|Ctrl+K, X ou ?, Onglet (VB)|  
 |Entourer de|Ctrl+K,S|  
 |Afficher les informations express|Ctrl+K,I|  
 |Boîte de dialogue Naviguer vers|Ctrl+,|  
-|Atteindre la définition|F12|  
-|Aperçu de définition|Alt+F12|  
-|Atteindre une pile de définitions|Ctrl+Maj+8 (Précédent), Ctrl+Maj+7 (Suivant)|  
 |Parcourir les références en surbrillance|Ctrl+Maj+Haut (Précédent), Ctrl+Maj+Bas (Suivant)|  
 |Éditeur de zoom|Ctrl+Maj+> (Entrée), Ctrl+Maj+< (Sortie)|  
 |Sélection de bloc|Maintenez la touche Alt et faites glisser la souris, Maj+Alt+touches fléchées|  
 |Déplacer la ligne vers le haut ou vers le bas|Alt+Flèche haut/Alt+Flèche bas|  
+|Atteindre la définition|F12|  
 |Aperçu de définition|Alt+F12|  
+|Atteindre une pile de définitions|Ctrl+Maj+8 (Précédent), Ctrl+Maj+7 (Suivant)|  
 |Fermer la fenêtre Aperçu de définition|Échap|  
 |Promouvoir la fenêtre Aperçu de définition dans un onglet de document normal|Ctrl+Alt+Début|  
 |Naviguer entre plusieurs fenêtres d'aperçu de définition|Ctrl+Alt+- et Ctrl+Alt+=|  
@@ -146,4 +128,3 @@ Vous pouvez naviguer dans [!INCLUDE[vs_dev12](../extensibility/includes/vs_dev12
  [Boîte à outils Visual Studio sur Channel 9](http://channel9.msdn.com/Shows/Visual-Studio-Toolbox)   
  [Visual Studio UserVoice](http://visualstudio.uservoice.com/forums/121579-visual-studio)   
  [Bugs Connect Visual Studio](http://connect.microsoft.com/VisualStudio)
-

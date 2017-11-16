@@ -4,8 +4,7 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-sdk
+ms.technology: vs-ide-sdk
 ms.tgt_pltfrm: 
 ms.topic: article
 helpviewer_keywords:
@@ -19,48 +18,33 @@ helpviewer_keywords:
 - MSBuild, in-process compilers
 - MSBuild, design-time target execution
 ms.assetid: 06cd6d7f-8dc1-4e49-8a72-cc9e331d7bca
-caps.latest.revision: 21
+caps.latest.revision: "21"
 author: kempb
 ms.author: kempb
 manager: ghogen
-translation.priority.ht:
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- ru-ru
-- zh-cn
-- zh-tw
-translation.priority.mt:
-- cs-cz
-- pl-pl
-- pt-br
-- tr-tr
-translationtype: Human Translation
-ms.sourcegitcommit: ca7c86466fa23fb21a932f26dc24e37c71cf29b4
-ms.openlocfilehash: 0a5cf4b0d4d6bb3b66814554c349238ab63a4b41
-ms.lasthandoff: 04/05/2017
-
+ms.openlocfilehash: 5aff5914d9b278b206f81abd4f28ce9f4dfa409c
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: HT
+ms.contentlocale: fr-FR
+ms.lasthandoff: 10/31/2017
 ---
 # <a name="visual-studio-integration-msbuild"></a>Intégration de Visual Studio (MSBuild)
-Visual Studio héberge[!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] pour charger et générer des projets managés. Dans la mesure où [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] est responsable du projet, la plupart des projets au format [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] peut être utilisé sans problème dans [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)], même si le projet a été créé par un outil différent et possède un processus de génération personnalisé.  
+Visual Studio héberge [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] pour charger et générer des projets managés. Dans la mesure où [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] est responsable du projet, la plupart des projets au format [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] peut être utilisé sans problème dans [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)], même si le projet a été créé par un outil différent et possède un processus de génération personnalisé.  
   
- Cette rubrique décrit des aspects spécifiques de l'hébergement de [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] dans [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] qui doivent être pris en compte lors de la personnalisation des projets et des fichiers .targets que vous souhaitez charger et générer dans [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]. Vous serez ainsi assuré que les fonctionnalités [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)], telles qu'IntelliSense et le débogage fonctionnent pour votre projet personnalisé.  
+ Cette rubrique décrit des aspects spécifiques de l'hébergement de [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]dans [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] qui doivent être pris en compte lors de la personnalisation des projets et des fichiers .targets que vous souhaitez charger et générer dans [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]. Vous serez ainsi assuré que les fonctionnalités [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] , telles qu'IntelliSense et le débogage fonctionnent pour votre projet personnalisé.  
   
- Pour plus d’informations sur les projets C++, consultez [Fichiers projet](/cpp/ide/project-files).  
+ Pour plus d’informations sur les projets C++, consultez [Project Files](/cpp/ide/project-files).  
   
 ## <a name="project-file-name-extensions"></a>Extensions de nom de fichier projet  
- MSBuild.exe reconnaît n'importe quelle extension de nom de fichier projet correspondant au modèle . *proj. En revanche, [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] reconnaît uniquement un sous-ensemble de ces extensions, lesquelles déterminent le système de projet spécifique au langage qui chargera le projet. [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] ne possède pas de système de projet basé sur [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)], indépendant du langage.  
+ MSBuild.exe reconnaît n'importe quelle extension de nom de fichier projet correspondant au modèle . *proj. En revanche, [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] reconnaît uniquement un sous-ensemble de ces extensions, lesquelles déterminent le système de projet spécifique au langage qui chargera le projet. [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] ne possède pas de système de projet basé sur [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] , indépendant du langage.  
   
- Par exemple, le système de projet [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] charge des fichiers .csproj, mais [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] n'est pas en mesure de charger un fichier .xxproj. Un fichier projet pour les fichiers sources dans un langage arbitraire doit utiliser la même extension que les fichiers projet [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] ou [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] pour être chargé dans [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)].  
+ Par exemple, le système de projet [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] charge des fichiers .csproj, mais [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] n'est pas en mesure de charger un fichier .xxproj. Un fichier projet pour les fichiers sources dans un langage arbitraire doit utiliser la même extension que les fichiers projet [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] ou [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] pour être chargé dans [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)].  
   
 ## <a name="well-known-target-names"></a>Noms de cibles connus  
- Lorsque vous cliquez sur la commande **Générer** dans [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)], la cible par défaut est exécutée dans le projet. Dans de nombreux cas, cette cible est également nommée `Build`. La sélection de la commande **Régénérer** ou **Nettoyer** entraîne une tentative d'exécution d'une cible du même nom dans le projet. Un clic sur **Publier** se traduit par l'exécution d'une cible nommée `PublishOnly` dans le projet.  
+ Lorsque vous cliquez sur la commande **Générer** dans [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] , la cible par défaut est exécutée dans le projet. Dans de nombreux cas, cette cible est également nommée `Build`. La sélection de la commande **Régénérer** ou **Nettoyer** entraîne une tentative d'exécution d'une cible du même nom dans le projet. Un clic sur **Publier** se traduit par l'exécution d'une cible nommée `PublishOnly` dans le projet.  
   
 ## <a name="configurations-and-platforms"></a>Configurations et plateformes  
- Les configurations sont représentées dans les projets [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] par des propriétés regroupées dans un élément `PropertyGroup` qui contient un attribut `Condition`. [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] examine ces conditions pour créer une liste de configurations de projet et de plateformes à afficher. Pour réussir à extraire cette liste, les conditions doivent avoir un format similaire à ce qui suit :  
+ Les configurations sont représentées dans les projets [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] par des propriétés regroupées dans un élément `PropertyGroup` qui contient un attribut `Condition` . [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] examine ces conditions pour créer une liste de configurations de projet et de plateformes à afficher. Pour réussir à extraire cette liste, les conditions doivent avoir un format similaire à ce qui suit :  
   
 ```  
 Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' "  
@@ -68,10 +52,10 @@ Condition=" '$(Configuration)' == 'Release' "
 Condition=" '$(Something)|$(Configuration)|$(SomethingElse)' == 'xxx|Debug|yyy' "  
 ```  
   
- À cette fin, [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] examine les conditions définies sur les éléments `PropertyGroup`, `ItemGroup`, `Import`, de propriétés et item.  
+ À cette fin,[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] examine les conditions définies sur les éléments `PropertyGroup`, `ItemGroup`, `Import`, de propriétés et item.  
   
 ## <a name="additional-build-actions"></a>Actions de génération supplémentaires  
- [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] vous permet de modifier le nom du type d’élément d’un fichier dans un projet avec la propriété **Action de génération** de la fenêtre [Propriétés du fichier](http://msdn.microsoft.com/en-us/013c4aed-08d6-4dce-a124-ca807ca08959). Les noms des types d’éléments `Compile`, `EmbeddedResource`, `Content` et `None` sont toujours listés dans ce menu ainsi que tous les autres noms de types d’éléments figurant déjà dans votre projet. Pour garantir la disponibilité permanente de tous les noms de types d'éléments personnalisés dans ce menu, vous pouvez ajouter les noms à un type d'élément nommé `AvailableItemName`. Par exemple, en ajoutant ce qui suit à votre fichier projet, le type personnalisé `JScript` est ajouté à ce menu pour tous les projets qui l'importent :  
+ [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] vous permet de modifier le nom du type d'élément d'un fichier dans un projet avec la propriété **Action de génération** de la fenêtre [Propriétés du fichier](http://msdn.microsoft.com/en-us/013c4aed-08d6-4dce-a124-ca807ca08959) . Les noms des types d'éléments`Compile`, `EmbeddedResource`, `Content`et `None` sont toujours répertoriés dans ce menu ainsi que tous les autres noms de types d'éléments figurant déjà dans votre projet. Pour garantir la disponibilité permanente de tous les noms de types d'éléments personnalisés dans ce menu, vous pouvez ajouter les noms à un type d'élément nommé `AvailableItemName`. Par exemple, en ajoutant ce qui suit à votre fichier projet, le type personnalisé `JScript` est ajouté à ce menu pour tous les projets qui l'importent :  
   
 ```xml  
 <ItemGroup>  
@@ -90,7 +74,7 @@ Condition=" '$(Something)|$(Configuration)|$(SomethingElse)' == 'xxx|Debug|yyy' 
 -   Le paramètre `UseHostCompilerIfAvailable` de la tâche doit avoir la valeur true.  
   
 ## <a name="design-time-intellisense"></a>IntelliSense au moment du design  
- Pour bénéficier de la prise en charge d'IntelliSense dans [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] avant la génération d'un assembly de sortie, les conditions suivantes doivent être respectées :  
+ Pour bénéficier de la prise en charge d'IntelliSense dans [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] avant la génération d'un assembly de sortie, les conditions suivantes doivent être respectées :  
   
 -   Il doit exister une cible nommée `Compile`.  
   
@@ -112,11 +96,11 @@ Condition=" '$(Something)|$(Configuration)|$(SomethingElse)' == 'xxx|Debug|yyy' 
 <OutputType>WinExe</OutputType>  
 ```  
   
- La valeur de la propriété peut être modifiée dans le **Concepteur de projets** et enregistrée dans le fichier projet. Si valeur non valide est affectée à une telle propriété lors d'une modification manuelle, [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] affiche un avertissement lors du chargement du projet et remplace la valeur non valide par une valeur par défaut.  
+ La valeur de la propriété peut être modifiée dans le **Concepteur de projets** et enregistrée dans le fichier projet. Si valeur non valide est affectée à une telle propriété lors d'une modification manuelle, [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] affiche un avertissement lors du chargement du projet et remplace la valeur non valide par une valeur par défaut.  
   
  [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] reconnaît les valeurs par défaut de certaines propriétés. Ces propriétés ne sont pas rendues persistantes dans le fichier projet sauf si elles possèdent des valeurs non définies par défaut.  
   
- Les propriétés portant des noms arbitraires ne sont pas affichées dans [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]. Pour modifier des propriétés arbitraires dans [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)], vous devez ouvrir le fichier projet dans l'Éditeur XML et les modifier manuellement. Pour plus d’informations, consultez la section [Editing Project Files in Visual Studio](#BKMK_EditingProjects) plus loin dans cette rubrique.  
+ Les propriétés portant des noms arbitraires ne sont pas affichées dans [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]. Pour modifier des propriétés arbitraires dans [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)], vous devez ouvrir le fichier projet dans l'Éditeur XML et les modifier manuellement. Pour plus d’informations, consultez la section [Editing Project Files in Visual Studio](#BKMK_EditingProjects) plus loin dans cette rubrique.  
   
  Les éléments définis dans le projet avec des noms de types d'éléments arbitraires sont affichés par défaut dans l'Explorateur de solutions sous leur nœud de projet. Pour masquer un élément, attribuez la valeur `Visible` aux métadonnées `false`. Par exemple, l'élément suivant participera au processus de génération, mais ne s'affichera pas dans l'Explorateur de solutions.  
   
@@ -138,13 +122,13 @@ Condition=" '$(Something)|$(Configuration)|$(SomethingElse)' == 'xxx|Debug|yyy' 
  Lorsqu'il faut déterminer l'affichage de l'élément dans l'Explorateur de solutions, les expressions conditionnelles associées à des éléments sont toujours ignorées.  
   
 ## <a name="debugging"></a>Débogage  
- Pour rechercher et lancer l'assembly de sortie ainsi qu'attacher le débogueur, [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] a besoin des propriétés `OutputPath`, `AssemblyName` et `OutputType` correctement définies. Il ne sera pas possible d'attacher le débogueur si le processus de génération n'a pas donné lieu à la génération d'un fichier .pdb par le compilateur.  
+ Pour rechercher et lancer l'assembly de sortie ainsi qu'attacher le débogueur, [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] a besoin des propriétés `OutputPath`, `AssemblyName`et `OutputType` correctement définies. Il ne sera pas possible d'attacher le débogueur si le processus de génération n'a pas donné lieu à la génération d'un fichier .pdb par le compilateur.  
   
 ## <a name="design-time-target-execution"></a>Exécution des cibles au moment du design  
- [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] tente d'exécuter des cibles portant certains noms lorsqu'il charge un projet. Il s'agit notamment des cibles `Compile`, `ResolveAssemblyReferences`, `ResolveCOMReferences`, `GetFrameworkPaths` et `CopyRunEnvironmentFiles`. [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] exécute ces cibles afin que le compilateur puisse être initialisé pour fournir IntelliSense, que le débogueur puisse être initialisé et que les références affichées dans l'Explorateur de solutions puissent être résolues. En l'absence de ces cibles, le projet se charge et effectue une génération correcte, mais l'expérience au moment du design dans [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] ne sera pas complètement fonctionnelle.  
+ [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] tente d'exécuter des cibles portant certains noms lorsqu'il charge un projet. Il s'agit notamment des cibles `Compile`, `ResolveAssemblyReferences`, `ResolveCOMReferences`, `GetFrameworkPaths`et `CopyRunEnvironmentFiles`. [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] exécute ces cibles afin que le compilateur puisse être initialisé pour fournir IntelliSense, que le débogueur puisse être initialisé et que les références affichées dans l'Explorateur de solutions puissent être résolues. En l'absence de ces cibles, le projet se charge et effectue une génération correcte, mais l'expérience au moment du design dans [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] ne sera pas complètement fonctionnelle.  
   
-##  <a name="BKMK_EditingProjects"></a> Modification des fichiers projet dans Visual Studio  
- Pour modifier directement un projet [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)], vous pouvez ouvrir le fichier projet dans l'Éditeur XML de Visual Studio.  
+##  <a name="BKMK_EditingProjects"></a> Editing Project Files in Visual Studio  
+ Pour modifier directement un projet [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] , vous pouvez ouvrir le fichier projet dans l'Éditeur XML de Visual Studio.  
   
 #### <a name="to-unload-and-edit-a-project-file-in-visual-studio"></a>Pour décharger et modifier un fichier projet dans Visual Studio  
   
@@ -172,19 +156,19 @@ Condition=" '$(Something)|$(Configuration)|$(SomethingElse)' == 'xxx|Debug|yyy' 
  Plusieurs cibles définies dans Microsoft.Common.targets possèdent des noms se terminant par `OutputGroups` ou `OutputGroupDependencies`. [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] appellent ces cibles pour obtenir des listes spécifiques de sorties de projet. Ainsi, la cible `SatelliteDllsProjectOutputGroup` crée une liste de tous les assemblys satellites créés par une génération. Ces groupes de sorties sont utilisés par des fonctionnalités, telles que la publication, le déploiement et les références entre projets. Les projets qui ne les définissent pas seront chargés et générés dans [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)], mais il se peut que certaines fonctionnalités ne fonctionnent pas correctement.  
   
 ## <a name="reference-resolution"></a>Résolution de référence  
- La résolution des références est le processus consistant à utiliser des éléments de référence stockés dans un fichier projet pour localiser les assemblys actifs. [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] doit déclencher la résolution de références pour afficher les propriétés détaillées de chaque référence dans la fenêtre **Propriétés**. La liste suivante décrit les trois types de références et leur mode de résolution.  
+ La résolution des références est le processus consistant à utiliser des éléments de référence stockés dans un fichier projet pour localiser les assemblys actifs. [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] doit déclencher la résolution de références pour afficher les propriétés détaillées de chaque référence dans la fenêtre **Propriétés** . La liste suivante décrit les trois types de références et leur mode de résolution.  
   
 -   Références d'assembly :  
   
-     Le système de projet appelle une cible avec le nom connu `ResolveAssemblyReferences`. Cette cible doit produire des éléments avec le nom de type d'élément `ReferencePath`. Chacun de ces éléments doit avoir une spécification d'élément (la valeur de l'attribut `Include` d'un élément) qui contient le chemin d'accès complet à la référence. Les éléments doivent avoir toutes les métadonnées des éléments d'entrée passés en plus des nouvelles métadonnées suivantes :  
+     Le système de projet appelle une cible avec le nom connu `ResolveAssemblyReferences`. Cette cible doit produire des éléments avec le nom de type d'élément `ReferencePath`. Chacun de ces éléments doit avoir une spécification d'élément (la valeur de l'attribut `Include` d'un élément) qui contient le chemin d'accès complet à la référence. Les éléments doivent avoir toutes les métadonnées des éléments d'entrée passés en plus des nouvelles métadonnées suivantes :  
   
-    -   `CopyLocal`, indiquant si l'assembly doit être copié dans le dossier de sortie ; la valeur peut être true ou false.  
+    -   `CopyLocal`, indiquant si l'assembly doit être copié dans le dossier de sortie ; la valeur peut être true ou false.  
   
     -   `OriginalItemSpec`, contenant la spécification d'élément d'origine de la référence.  
   
-    -   `ResolvedFrom`, avec la valeur "{TargetFrameworkDirectory}" s'il a été résolu à partir du répertoire [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)].  
+    -   `ResolvedFrom`, avec la valeur "{TargetFrameworkDirectory}" s'il a été résolu à partir du répertoire [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] .  
   
--   Références COM :  
+-   Références COM :  
   
      Le système de projet appelle une cible avec le nom connu `ResolveCOMReferences`. Cette cible doit produire des éléments avec le nom de type d'élément `ComReferenceWrappers`. Chacun de ces éléments doit posséder une spécification d'élément qui contient le chemin d'accès complet à l'assembly d'interopérabilité pour la référence COM. Les éléments doivent avoir toutes les métadonnées des éléments d'entrée passés, en plus de nouvelles métadonnées portant le nom `CopyLocal`, qui indiquent si l'assembly doit être copié dans le dossier de sortie ; la valeur peut être true ou false.  
   

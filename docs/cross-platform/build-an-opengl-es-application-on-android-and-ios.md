@@ -4,40 +4,22 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- tgt-pltfrm-cross-plat
+ms.technology: tgt-pltfrm-cross-plat
 ms.tgt_pltfrm: 
 ms.topic: article
-dev_langs:
-- C++
+dev_langs: C++
 ms.assetid: 76a67886-df57-4a81-accb-2e3c2eaf607b
-caps.latest.revision: 5
-author: BrianPeek
-ms.author: brpeek
+caps.latest.revision: "5"
+author: corob-msft
+ms.author: corob
 manager: ghogen
-translation.priority.ht:
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- ru-ru
-- zh-cn
-- zh-tw
-translation.priority.mt:
-- cs-cz
-- pl-pl
-- pt-br
-- tr-tr
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 47057e9611b824c17077b9127f8d2f8b192d6eb8
-ms.openlocfilehash: 148a64927d78db8ccf473fc0cc74c5a8df953c03
-ms.contentlocale: fr-fr
-ms.lasthandoff: 05/13/2017
-
+ms.openlocfilehash: 80463925da89165a569b1e6317ef8b1b22c77514
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: HT
+ms.contentlocale: fr-FR
+ms.lasthandoff: 10/31/2017
 ---
-# <a name="build-an-opengl-es-application-on-android-and-ios"></a>Build an OpenGL ES Application on Android and iOS
+# <a name="build-an-opengl-es-application-on-android-and-ios"></a>Générer une application OpenGL ES sur Android et iOS
 Quand vous installez l’option Développement multiplateforme en Visual C++ pour appareils mobiles, vous pouvez créer des solutions et des projets Visual Studio pour des applications iOS et Android qui partagent du code commun. Cette rubrique vous guide tout au long d’un modèle de solution qui crée une application iOS simple et une application Android Native Activity. Les applications ont en commun une partie de code C++ qui utilise OpenGL ES pour afficher le même cube pivotant animé sur chaque plateforme. OpenGL ES (OpenGL for Embedded Systems ou GLES) est une API graphique 2D et 3D qui est prise en charge par de nombreux appareils mobiles.  
   
  [Configuration requise](#req)   
@@ -109,7 +91,7 @@ Quand vous installez l’option Développement multiplateforme en Visual C++ pou
   
      Visual Studio démarre l’émulateur qui, après quelques secondes, charge et déploie votre code. Voici comment l’application apparaît dans l’émulateur Visual Studio pour Android.  
   
-     ![Application en cours d’exécution dans l’émulateur Android](~/cross-platform/media/cppmdd_opengles_andemulator.png "CPPMDD_OpenGLES_AndEmulator")  
+     ![Application en cours d’exécution dans l’émulateur Android](../cross-platform/media/cppmdd_opengles_andemulator.png "CPPMDD_OpenGLES_AndEmulator")  
   
      Une fois l’application démarrée, vous pouvez définir des points d’arrêt et utiliser le débogueur pour parcourir le code, examiner les variables locales et observer les valeurs.  
   
@@ -150,7 +132,7 @@ Quand vous installez l’option Développement multiplateforme en Visual C++ pou
   
      Une fois l’application démarrée, vous pouvez définir des points d’arrêt et utiliser le débogueur Visual Studio pour examiner les variables locales, consulter la pile des appels et observer les valeurs.  
   
-     ![Débogueur au point d’arrêt dans une application iOS](~/cross-platform/media/cppmdd_opengles_iosdebug.png "CPPMDD_OpenGLES_iOSDebug")  
+     ![Débogueur au point d’arrêt dans une application iOS](../cross-platform/media/cppmdd_opengles_iosdebug.png "CPPMDD_OpenGLES_iOSDebug")  
   
 5.  Appuyez sur Maj+F5 pour arrêter le débogage.  
   

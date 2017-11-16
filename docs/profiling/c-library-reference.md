@@ -1,31 +1,31 @@
 ---
-title: "Informations de r&#233;f&#233;rence sur la biblioth&#232;que&#160;C | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-debug"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-helpviewer_keywords: 
-  - "Kit de développement logiciel (SDK) du visualiseur concurrentiel, informations de référence sur la bibliothèque C++"
+title: "Informations de référence sur la bibliothèque C | Microsoft Docs"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-debug
+ms.tgt_pltfrm: 
+ms.topic: article
+helpviewer_keywords: Concurrency Visualizer SDK, C Library Reference
 ms.assetid: 46907a60-25e2-470d-a650-ae7349f868fd
-caps.latest.revision: 3
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 3
+caps.latest.revision: "3"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: 9d951c08e3505673242b249c42b846f3d4c88300
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: HT
+ms.contentlocale: fr-FR
+ms.lasthandoff: 10/31/2017
 ---
-# Informations de r&#233;f&#233;rence sur la biblioth&#232;que&#160;C
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
-
-Cette section contient des informations de référence pour le Kit de développement logiciel \(SDK\) du visualiseur d'accès concurrentiel.  
+# <a name="c-library-reference"></a>Informations de référence sur la bibliothèque C
+Cette section contient des informations de référence sur le kit SDK du visualiseur concurrentiel.  
   
 > [!NOTE]
->  La norme du langage C réserve l'utilisation des identificateurs qui commencent par un trait de soulignement \(`_`\) aux implémentations telles que les bibliothèques.  N'utilisez pas de noms commençant par un trait de soulignement dans votre code.  Le comportement des éléments de code dont les noms suivent cette convention n'est pas garanti et est sujet à modification dans les versions ultérieures.  Pour ces raisons, de tels éléments de code sont omis de cette documentation.  
+>  La norme du langage C réserve l’utilisation des identificateurs commençant par un caractère de soulignement (`_`) aux implémentations telles que les bibliothèques. N’utilisez donc pas de noms commençant par un trait de soulignement dans votre code. Le comportement des éléments de code, dont les noms suivent cette convention n'est pas garanti et est susceptible de changer dans les futures mises à jour. Pour ces raisons, ces éléments de code ont été omis de cette documentation.  
   
-## Dans cette section  
+## <a name="in-this-section"></a>Dans cette section  
  [CvCreateDefaultMarkerSeriesOfDefaultProvider, fonction](../profiling/cvcreatedefaultmarkerseriesofdefaultprovider-function.md)  
   
  [CvCreateMarkerSeries, fonction](../profiling/cvcreatemarkerseries-function.md)  

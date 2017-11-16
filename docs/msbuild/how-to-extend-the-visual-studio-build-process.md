@@ -4,8 +4,7 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-sdk
+ms.technology: vs-ide-sdk
 ms.tgt_pltfrm: 
 ms.topic: article
 helpviewer_keywords:
@@ -14,30 +13,15 @@ helpviewer_keywords:
 - MSBuild, extending Visual Studio builds
 - MSBuild, DependsOn properties
 ms.assetid: cb077613-4a59-41b7-96ec-d8516689163c
-caps.latest.revision: 8
+caps.latest.revision: "8"
 author: kempb
 ms.author: kempb
 manager: ghogen
-translation.priority.ht:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
+ms.openlocfilehash: a87b97946e3b0c45b00bdfe00a4da23c266605c7
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
 ms.translationtype: HT
-ms.sourcegitcommit: 38c6099f912424d21df2aeea4cfdd0401ba57465
-ms.openlocfilehash: d639a74f2799750033a968ef00a791bf8612d37e
-ms.contentlocale: fr-fr
-ms.lasthandoff: 07/14/2017
-
+ms.contentlocale: fr-FR
+ms.lasthandoff: 10/31/2017
 ---
 # <a name="how-to-extend-the-visual-studio-build-process"></a>Comment : étendre le processus de génération Visual Studio
 Le processus de génération [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] est défini par une série de fichiers .targets [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] importés dans votre fichier projet. Parmi ces fichiers importés, Microsoft.Common.targets peut être étendu de manière à exécuter des tâches personnalisées à différentes étapes du processus de génération. Cette rubrique décrit deux méthodes que vous pouvez utiliser pour étendre le processus de génération [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] :  

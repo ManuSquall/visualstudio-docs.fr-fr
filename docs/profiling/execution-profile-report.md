@@ -4,39 +4,21 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-debug
+ms.technology: vs-ide-debug
 ms.tgt_pltfrm: 
 ms.topic: article
-f1_keywords:
-- vs.cv.threads.report.execution
-helpviewer_keywords:
-- Concurrency Visualizer, Execution Profile Report
+f1_keywords: vs.cv.threads.report.execution
+helpviewer_keywords: Concurrency Visualizer, Execution Profile Report
 ms.assetid: c8128472-a8ed-46f4-b1c8-a25358d6f2c1
-caps.latest.revision: 9
+caps.latest.revision: "9"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-translation.priority.ht:
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- ru-ru
-- zh-cn
-- zh-tw
-translation.priority.mt:
-- cs-cz
-- pl-pl
-- pt-br
-- tr-tr
-translationtype: Human Translation
-ms.sourcegitcommit: 5db97d19b1b823388a465bba15d057b30ff0b3ce
-ms.openlocfilehash: 36ecfc56c76d1f5c5bf2ce7188d0520a5e63ade7
-ms.lasthandoff: 02/22/2017
-
+ms.openlocfilehash: bdf0605f635fd1cc07e04bcb848bc83f92d2d8c7
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: HT
+ms.contentlocale: fr-FR
+ms.lasthandoff: 10/31/2017
 ---
 # <a name="execution-profile-report"></a>Profil d’exécution, rapport
 Le rapport Profil d’exécution est un profil d’échantillonnage classique. Des échantillons sont créés chaque milliseconde environ pendant des périodes où un thread s’exécute sur un cœur logique, et le visualiseur concurrentiel génère une arborescence des appels typique en assemblant les échantillons de piles accumulés. Les données de ce tableau peuvent être affectées par la plage horaire actuelle et les threads cachés, ainsi que par les filtres qui peuvent être appliqués :  

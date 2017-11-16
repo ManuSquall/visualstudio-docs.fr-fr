@@ -1,27 +1,24 @@
 ---
 title: "IntelliSense pour le code R Visual Studio | Microsoft Docs"
 ms.custom: 
-ms.date: 6/29/2017
+ms.date: 06/29/2017
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- devlang-r
+ms.technology: devlang-r
 ms.devlang: r
 ms.tgt_pltfrm: 
 ms.topic: article
 ms.assetid: d96e3677-e5ec-4e11-82a8-d914a93b1aa9
-caps.latest.revision: 1
+caps.latest.revision: "1"
 author: kraigb
 ms.author: kraigb
 manager: ghogen
+ms.openlocfilehash: 821f92f7a3cf0e5ca1d647890602ec17e580b36b
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
 ms.translationtype: HT
-ms.sourcegitcommit: 712cc780388acc5e373f71d51fc8f1f42adb5bed
-ms.openlocfilehash: 4e96184aa9a7711a7c046eb886049563dd308433
-ms.contentlocale: fr-fr
-ms.lasthandoff: 07/12/2017
-
+ms.contentlocale: fr-FR
+ms.lasthandoff: 10/31/2017
 ---
-
 # <a name="intellisense"></a>IntelliSense
 
 La fonctionnalité IntelliSense de Visual Studio affiche des informations sur les fonctions que vous pouvez appeler, les membres des objets, les arguments de fonction et les [extraits de code](code-snippets.md) directement dans votre champ de vision à mesure que vous écrivez du code. Elle affiche également les saisies semi-automatiques possibles à mesure que vous tapez, et applique la saisie semi-automatique quand vous appuyez sur les touches Tab ou Entrée (consultez les [options de l’éditeur](code-editing.md#editor-options) pour l’onglet **Avancé**). La fonctionnalité IntelliSense est disponible à la fois dans l’éditeur et dans la [fenêtre interactive](interactive-repl.md).
@@ -69,4 +66,3 @@ IntelliSense s’applique également aux variables dans le même fichier et la s
 Quand une ampoule (appelée balise active) apparaît dans la marge, Visual Studio suggère qu’un raccourci est disponible pour une action couramment utilisée. Par exemple, placez le curseur sur une ligne contenant une instruction `library` dans l’éditeur pour afficher une ampoule. Sélectionnez l’ampoule pour afficher les options disponibles :
 
 ![Balises actives pour R dans l’éditeur](media/intellisense-smart-tags.png)
-

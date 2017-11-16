@@ -1,27 +1,24 @@
 ---
 title: Explorateur de variables dans les Outils R pour Visual Studio | Microsoft Docs
 ms.custom: 
-ms.date: 6/30/2017
+ms.date: 06/30/2017
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- devlang-r
+ms.technology: devlang-r
 ms.devlang: r
 ms.tgt_pltfrm: 
 ms.topic: article
 ms.assetid: 6c669434-40d8-4970-92cc-502a98c8b5ab
-caps.latest.revision: 1
+caps.latest.revision: "1"
 author: kraigb
 ms.author: kraigb
 manager: ghogen
+ms.openlocfilehash: 1d86bca24d9e8d4d1bde8d62cd0be25c485b9253
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
 ms.translationtype: HT
-ms.sourcegitcommit: 712cc780388acc5e373f71d51fc8f1f42adb5bed
-ms.openlocfilehash: 92396808161886cf3b15f7e8e0ab23a0a35e26b9
-ms.contentlocale: fr-fr
-ms.lasthandoff: 07/12/2017
-
+ms.contentlocale: fr-FR
+ms.lasthandoff: 10/31/2017
 ---
-
 # <a name="variable-explorer"></a>Explorateur de variables
 
 La fenêtre **Explorateur de variables**, que vous pouvez ouvrir en cliquant sur **Outils R > Fenêtres > Explorateur de variables** (ou Ctrl+8 si vous avez utilisé **Outils R > Paramètres de science des données**), affiche toutes les variables dans une portée donnée dans la session R active. Par exemple, si vous ouvrez l’Explorateur de variables et que vous entrez les lignes suivantes dans la [Fenêtre interactive](interactive-repl.md) :
@@ -82,4 +79,3 @@ Deux commandes de la barre d’outils de l’Explorateur de variables, qui sont 
 Une fois que vous avez identifié le fichier CSV à importer, Visual Studio affiche une boîte de dialogue **Importer le jeu de données**, dans laquelle figurent des options pour contrôler la manière dont ce fichier de données est analysé (autrement dit, quel est le séparateur de champs et comment gérer les guillemets). Vous pouvez également afficher un aperçu de la trame de données importée et du fichier de données d’origine :
 
 ![Boîte de dialogue Importer le jeu de données](media/variable-explorer-import-dataset-dialog.png)
-

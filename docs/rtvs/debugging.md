@@ -1,27 +1,24 @@
 ---
 title: "Débogage avec Outils R pour Visual Studio | Microsoft Docs"
 ms.custom: 
-ms.date: 6/29/2017
+ms.date: 06/29/2017
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- devlang-r
+ms.technology: devlang-r
 ms.devlang: r
 ms.tgt_pltfrm: 
 ms.topic: article
 ms.assetid: cb5fe5f8-03bc-42bf-8346-c845036a9c6c
-caps.latest.revision: 1
+caps.latest.revision: "1"
 author: kraigb
 ms.author: kraigb
 manager: ghogen
+ms.openlocfilehash: 7927e897a63b8b06cda9670701f44bc59296fd01
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
 ms.translationtype: HT
-ms.sourcegitcommit: 712cc780388acc5e373f71d51fc8f1f42adb5bed
-ms.openlocfilehash: e4b8d7fb27407bf8ef4463524e9da66bac591ff4
-ms.contentlocale: fr-fr
-ms.lasthandoff: 07/12/2017
-
+ms.contentlocale: fr-FR
+ms.lasthandoff: 10/31/2017
 ---
-
 # <a name="debugging-r-in-visual-studio"></a>Débogage de R dans Visual Studio
 
 Les outils R pour Visual Studio (RTVS) s’intègrent au système complet de débogage de Visual Studio (consultez [Débogage dans Visual Studio](../debugger/debugging-in-visual-studio.md)). Cette prise en charge comprend la définition de points d’arrêt, l’attachement à des processus en cours d’exécution, l’inspection et la surveillance de variables ainsi que l’inspection de la pile des appels. Cette rubrique explore les aspects du débogage propres à R et à RTVS.
@@ -73,4 +70,3 @@ Le navigateur d’environnement prend en charge plusieurs commandes spéciales 
 | &lt;expr&gt; | évaluer l’expression dans *expr*. |
 
 ![Navigateur d’environnement dans la fenêtre interactive](media/debugger-environment-browser.png)
-

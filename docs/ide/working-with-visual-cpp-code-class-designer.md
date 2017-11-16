@@ -4,12 +4,10 @@ ms.custom:
 ms.date: 06/21/2017
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-general
+ms.technology: vs-ide-general
 ms.tgt_pltfrm: 
 ms.topic: article
-f1_keywords:
-- vs.classdesigner.cpplimitation
+f1_keywords: vs.classdesigner.cpplimitation
 helpviewer_keywords:
 - Visual C++, Class Designer
 - Class Designer, Visual C++ support
@@ -19,30 +17,15 @@ helpviewer_keywords:
 - C++, class diagrams
 - C++, Class Designer
 ms.assetid: f5b40921-2ef7-4de0-b595-45b44c79ffa6
-caps.latest.revision: 23
-author: kempb
-ms.author: kempb
+caps.latest.revision: "23"
+author: gewarren
+ms.author: gewarren
 manager: ghogen
-translation.priority.ht:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
-ms.translationtype: Human Translation
-ms.sourcegitcommit: d2f4eba36e9069a35cf279ccf1c78f72a51d77a1
-ms.openlocfilehash: 0d974e9af7d22c5d02b1313cb2e46c873592f4d3
-ms.contentlocale: fr-fr
-ms.lasthandoff: 06/23/2017
-
+ms.openlocfilehash: ef75c8108b7d86367e69ab7eead8a3a282596560
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: HT
+ms.contentlocale: fr-FR
+ms.lasthandoff: 10/31/2017
 ---
 # <a name="working-with-visual-c-code-class-designer"></a>Utilisation du code Visual C++ (Concepteur de classes)
 Le Concepteur de classes affiche une aire de conception visuelle appelée *diagramme de classes*, qui fournit une représentation visuelle des éléments de code dans votre projet. Vous pouvez utiliser des diagrammes de classes pour concevoir et visualiser des classes et d'autres types dans un projet.  
@@ -134,4 +117,3 @@ Le Concepteur de classes affiche une aire de conception visuelle appelée *diagr
  [Structures de Visual C++ dans le Concepteur de classes](../ide/visual-cpp-structures-in-class-designer.md)   
  [Énumérations de Visual C++ dans le concepteur de classes](../ide/visual-cpp-enumerations-in-class-designer.md)   
  [Typedefs de Visual C++ dans le Concepteur de classes](../ide/visual-cpp-typedefs-in-class-designer.md)
-

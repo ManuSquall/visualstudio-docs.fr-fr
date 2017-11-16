@@ -1,27 +1,24 @@
 ---
 title: "Débogage à distance Azure avec Python dans Visual Studio | Microsoft Docs"
 ms.custom: 
-ms.date: 7/12/2017
+ms.date: 07/12/2017
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- devlang-python
+ms.technology: devlang-python
 ms.devlang: python
 ms.tgt_pltfrm: 
 ms.topic: article
 ms.assetid: d68fdc53-65a1-423c-8964-9815dbb3387e
-caps.latest.revision: 1
+caps.latest.revision: "1"
 author: kraigb
 ms.author: kraigb
 manager: ghogen
+ms.openlocfilehash: 1ce80ecdc38075b048c8ae0a7f5773de965355f5
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
 ms.translationtype: HT
-ms.sourcegitcommit: 6d25db4639f2c8391c1e32542701ea359f560178
-ms.openlocfilehash: a4ddd2d52aa1a1e4437c0d1f7821761700c2a91e
-ms.contentlocale: fr-fr
-ms.lasthandoff: 07/18/2017
-
+ms.contentlocale: fr-FR
+ms.lasthandoff: 10/31/2017
 ---
-
 # <a name="remotely-debugging-python-code-on-azure"></a>Débogage à distance de code Python sur Azure
 
 [Prise en charge de Python dans Visual Studio](installation.md) permet de déboguer à distance le code Python qui s’exécute sur Azure App Service. Contrairement à un débogage à distance simple, l’ordinateur cible dans ce scénario n’est pas directement accessible par le biais de TCP. Visual Studio fournit donc un proxy qui expose le protocole de débogueur sur HTTP. Les projets créés à l’aide du modèle Web configurent automatiquement ce proxy dans le fichier `web.debug.config` généré. Le débogage à distance est également activé lorsque vous publiez une configuration de débogage de votre projet, comme décrit à la section [Publication sur Azure App Service](template-web.md#publishing-to-azure-app-service).
@@ -55,4 +52,3 @@ L’URL dont vous avez désormais besoin se présente sous la forme de la chaîn
 Pour attacher le débogueur, sélectionnez **Débogage > Attacher au processus**, sélectionnez **Python remote debugging (Débogage à distance Python)** dans la zone déroulante **Transport**, entrez l’URL dans la zone de texte **Qualificateur**, puis appuyez sur Entrée. Si Visual Studio parvient à se connecter à App Service, il affiche un seul processus Python dans la liste. Sélectionnez-le, puis sélectionnez **Attacher** pour commencer le débogage :
 
 ![Utilisation de la boîte de dialogue Attacher au processus pour l’attachement à un site web Azure](media/azure-remote-debugging-manual-attach.png)
-

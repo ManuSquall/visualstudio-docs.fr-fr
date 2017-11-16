@@ -4,38 +4,22 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-debug
+ms.technology: vs-ide-debug
 ms.tgt_pltfrm: 
 ms.topic: article
 helpviewer_keywords:
 - performance tools, API
 - Profiler, API
 ms.assetid: a0c3be92-c263-4678-9fb9-bafead3bd5f5
-caps.latest.revision: 15
+caps.latest.revision: "15"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-translation.priority.ht:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
-ms.translationtype: Human Translation
-ms.sourcegitcommit: c9df048a49580f3526b48e29041ef3758722ed27
-ms.openlocfilehash: 142df9fbf327ee8ebc39c3558ef1632a1bd23ae7
-ms.contentlocale: fr-fr
-ms.lasthandoff: 05/03/2017
-
+ms.openlocfilehash: d7dcdbfa22301e6872e5ea39fd910a326f817ce1
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: HT
+ms.contentlocale: fr-FR
+ms.lasthandoff: 10/31/2017
 ---
 # <a name="visual-studio-profiler-api-reference-native"></a>Informations de référence sur les API du profileur Visual Studio (natives)
 Les API du profileur Visual Studio vous permettent de contrôler par programmation la quantité de données collectées et d’insérer des marques d’horodateur et de profil durant le profilage. Pour utiliser des API natives, vous devez inclure le fichier d’en-tête VSPerf.h et ajouter VSPerf.lib dans votre projet.  
@@ -65,4 +49,3 @@ Les API du profileur Visual Studio vous permettent de contrôler par programmati
 ## <a name="see-also"></a>Voir aussi  
  [API des outils de profilage](../profiling/profiling-tools-apis.md)   
  [Procédure pas à pas : utilisation des API du profileur](../profiling/walkthrough-using-profiler-apis.md)
-

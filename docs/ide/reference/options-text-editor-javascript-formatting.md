@@ -4,8 +4,7 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-general
+ms.technology: vs-ide-general
 ms.tgt_pltfrm: 
 ms.topic: article
 f1_keywords:
@@ -13,35 +12,20 @@ f1_keywords:
 - VS.ToolsOptionsPages.Text_Editor.JavaScript.Formatting.General
 - VS.ToolsOptionsPages.Text_Editor.JavaScript.Formatting.New_Lines
 ms.assetid: 28a0aef1-9353-4d94-95a5-54b42e15c0dc
-caps.latest.revision: 6
+caps.latest.revision: "6"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-translation.priority.ht:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 5db97d19b1b823388a465bba15d057b30ff0b3ce
-ms.openlocfilehash: 1791b8ae5877b007772224b359c836e7a0804f5c
-ms.contentlocale: fr-fr
-ms.lasthandoff: 02/22/2017
-
+ms.openlocfilehash: 9255473c3c8cd73a74a6758e698b8942dedce660
+ms.sourcegitcommit: c0422a3d594ea5ae8fc03f1aee684b04f417522e
+ms.translationtype: HT
+ms.contentlocale: fr-FR
+ms.lasthandoff: 11/02/2017
 ---
-# <a name="options-text-editor-javascript-formatting"></a>Options, Text Editor, JavaScript, Formatting
+# <a name="options-text-editor-javascript-formatting"></a>Options, Éditeur de texte, JavaScript, Mise en forme
 Utilisez la page **Mise en forme** de la boîte de dialogue **Options** pour définir les options de mise en forme du code dans l’éditeur de code. Pour accéder à cette page, dans la barre de menus, choisissez **Outils**, **Options**, puis développez **Éditeur de texte**, **JavaScript** et **Mise en forme**.  
   
- [!INCLUDE[note_settings_general](../../data-tools/includes/note_settings_general_md.md)]  
+[!INCLUDE[note_settings_general](../../data-tools/includes/note_settings_general_md.md)]  
   
 ## <a name="automatic-formatting"></a>Mise en forme automatique  
  Ces options déterminent à quel moment la mise en forme se produit dans la vue **Source**.  

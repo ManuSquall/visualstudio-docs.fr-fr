@@ -4,8 +4,7 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-general
+ms.technology: vs-ide-general
 ms.tgt_pltfrm: 
 ms.topic: article
 helpviewer_keywords:
@@ -13,31 +12,17 @@ helpviewer_keywords:
 - run-time errors, warnings
 - warnings, configuring
 ms.assetid: 99cf4781-bd4d-47b4-91b9-217933509f82
-caps.latest.revision: 35
-author: kempb
-ms.author: kempb
+caps.latest.revision: "35"
+author: gewarren
+ms.author: gewarren
 manager: ghogen
-translation.priority.ht:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
-translationtype: Human Translation
-ms.sourcegitcommit: ca7c86466fa23fb21a932f26dc24e37c71cf29b4
-ms.openlocfilehash: 89ce216f1273678adf9b97ff789c7d48f3130d77
-ms.lasthandoff: 04/05/2017
-
+ms.openlocfilehash: 4df81a0d5f6faee7a272abd13ca6e046681b045d
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: HT
+ms.contentlocale: fr-FR
+ms.lasthandoff: 10/31/2017
 ---
-# <a name="configuring-warnings-in-visual-basic"></a>Configuring Warnings in Visual Basic
+# <a name="configuring-warnings-in-visual-basic"></a>Configuration d'avertissements en Visual Basic
 Le compilateur [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] inclut un ensemble d’avertissements concernant le code qui peut provoquer des erreurs d’exécution. Vous pouvez utiliser ces informations pour écrire du code plus clair, plus rapide, de meilleure qualité et avec moins de bogues. Par exemple, le compilateur génère un avertissement si l’utilisateur tente d’appeler un membre d’une variable objet non assignée, de retourner une valeur à partir d’une fonction sans définir la valeur de retour, ou d’exécuter un bloc `Try` contenant des erreurs dans la logique d’interception des exceptions.  
   
  Parfois, le compilateur fournit une logique supplémentaire à la place de l’utilisateur pour que celui-ci puisse se concentrer sur la tâche en cours, plutôt que sur l’anticipation d’éventuelles erreurs. Dans les versions précédentes de [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)], `Option Strict` a été utilisé pour limiter la logique supplémentaire fournie par le [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)]. Vous pouvez choisir de limiter cette logique pour chacun des avertissements.  
@@ -47,7 +32,7 @@ Le compilateur [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] inclut 
 ## <a name="turning-warnings-off-and-on"></a>Activation et désactivation des avertissements  
  Il existe deux façons de configurer les avertissements : vous pouvez utiliser le **Concepteur de projet**, ou vous pouvez utiliser les options **/warnaserror** et **/nowarn** du compilateur.  
   
- L’onglet **Compiler** de la page **Concepteur de projet** permet d’activer et de désactiver les avertissements. Cochez la case **Désactiver tous les avertissements** pour désactiver tous les avertissements. Cochez la case **Considérer tous les avertissements comme des erreurs** pour traiter tous les avertissements comme des erreurs. Vous pouvez attribuer le statut d’erreur à certains avertissements (et inversement) dans le tableau affiché.  
+ L’onglet **Compiler** de la page **Concepteur de projet** permet d’activer et de désactiver les avertissements. Cochez la case **Désactiver tous les avertissements**  pour désactiver tous les avertissements. Cochez la case **Considérer tous les avertissements comme des erreurs** pour traiter tous les avertissements comme des erreurs. Vous pouvez attribuer le statut d’erreur à certains avertissements (et inversement) dans le tableau affiché.  
   
  Si **Option Strict** est **Off**, les avertissements relatifs à **Option Strict** ne peuvent pas être traités indépendamment les uns des autres. Si **Option Strict** est **On**, les avertissements qui lui sont associés sont traités comme des erreurs, quel que soit leur état. Si **Option Strict** est défini sur **Custom** en spécifiant `/optionstrict:custom` dans le compilateur de ligne de commande, les avertissements **Option Strict** peuvent être activés ou désactivés indépendamment les uns des autres.  
   

@@ -1,30 +1,29 @@
 ---
-title: "CvInitProvider, fonction | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-debug"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "cvmarkers/CvInitProvider"
-helpviewer_keywords: 
-  - "CvInitProvider (méthode)"
+title: CvInitProvider, fonction | Microsoft Docs
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-debug
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords: cvmarkers/CvInitProvider
+helpviewer_keywords: CvInitProvider method
 ms.assetid: ba1863ad-e35f-4d34-a2f2-5e68957d1915
-caps.latest.revision: 3
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 3
+caps.latest.revision: "3"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: f0ddb249c825048b5bb98dd5b648902663ccd85a
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: HT
+ms.contentlocale: fr-FR
+ms.lasthandoff: 10/31/2017
 ---
-# CvInitProvider, fonction
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
-
-Initialise le fournisseur de jeton.  Doit être appelé avant tout autre fonction du kit de développement logiciel du visualiseur concurrentiel  
+# <a name="cvinitprovider-function"></a>CvInitProvider, fonction
+Initialise le fournisseur de marqueurs. Doit être appelée avant toute autre fonction du kit SDK du visualiseur concurrentiel.  
   
-## Syntaxe  
+## <a name="syntax"></a>Syntaxe  
   
 ```  
 HRESULT CvInitProvider(  
@@ -33,18 +32,18 @@ HRESULT CvInitProvider(
 );  
 ```  
   
-#### Paramètres  
+#### <a name="parameters"></a>Paramètres  
  `pGuid`  
- GUID du fournisseur.  Ne peut pas être NULL.  
+ GUID du fournisseur. Ne peut pas être Null.  
   
  `ppProvider`  
- Adresse d'une variable de sortie qui stockera le contexte de fournisseur.  Ne peut pas être NULL.  
+ Adresse d’une variable de sortie qui doit stocker le contexte du fournisseur. Ne peut pas être Null.  
   
-## Valeur de retour  
- S\_OK lorsque le fournisseur est correctement initialisé ou un code d'erreur dans le cas d'une erreur.  Utiliser la macros SUCCEEDED\/FAILED pour vérifier la condition d'erreur.  
+## <a name="return-value"></a>Valeur de retour  
+ S_OK lorsque le fournisseur est correctement initialisé, ou code d’erreur en cas d’erreur. Utilisez les macros SUCCEEDED/FAILED pour vérifier la condition d’erreur.  
   
-## Configuration requise  
- **en\-tête :** cvmarkers.h  
+## <a name="requirements"></a>Spécifications  
+ **En-tête** : cvmarkers.h  
   
-## Voir aussi  
- [Référence de bibliothèque C\+\+](../profiling/cpp-library-reference.md)
+## <a name="see-also"></a>Voir aussi  
+ [Informations de référence sur la bibliothèque C++](../profiling/cpp-library-reference.md)

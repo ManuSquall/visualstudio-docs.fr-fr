@@ -1,39 +1,38 @@
 ---
 title: "Graphique d’utilisation du processeur | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-debug"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "vs.cv.cpu.graph"
-helpviewer_keywords: 
-  - "graphique d’utilisation du processeur (visualiseur concurrentiel), graphique d’utilisation du processeur"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-debug
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords: vs.cv.cpu.graph
+helpviewer_keywords: CPU Utilization GraphConcurrency Visualizer, CPU Utilization Graph
 ms.assetid: 5332fd38-622d-47a3-874f-8c2fd7a30f95
-caps.latest.revision: 14
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 14
+caps.latest.revision: "14"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: 852779620ec1d070da5aaabb0b5a9df8dafda359
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: HT
+ms.contentlocale: fr-FR
+ms.lasthandoff: 10/31/2017
 ---
-# Graphique d’utilisation du processeur
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
-
-Le graphique d'utilisation de l'UC indique le niveau d'utilisation dans une application au fil du temps.  L'axe des abscisses représente la durée de la trace et l'axe des ordonnées correspond au nombre de cœurs logiques sur le système.  Le graphique n'indique pas quel cœur spécifique est actif à un moment donné.  Par exemple, si deux cœurs s'exécutent chacun à 50 % de leur capacité pendant une période donnée, cette vue affiche un seul cœur logique en cours d'utilisation.  
+# <a name="cpu-utilization-graph"></a>Graphique d’utilisation du processeur
+Le graphique d’utilisation du processeur affiche le niveau d’utilisation d’une application dans le temps. L’axe des abscisses représente la durée du suivi et l’axe des ordonnées représente le nombre de cœurs logiques sur le système. Le graphique n’affiche pas les cœurs qui sont actifs à un moment donné. Par exemple, si deux cœurs s’exécutent chacun à 50 % de leur capacité pendant une période donnée, cette vue ne montre qu’un seul cœur logique en cours d’utilisation.  
   
-## Couleurs du graphique de l'utilisation de l'UC  
+## <a name="cpu-utilization-graph-colors"></a>Couleurs du graphique d’utilisation du processeur  
   
--   Vert indique l'utilisation des cœurs logiques sur le système par le processus actuel.  
+-   Le vert indique l’utilisation des cœurs logiques du système par le processus en cours.  
   
--   Gris clair indique l'utilisation des cœurs logiques par d'autres processus sur le système.  Un pourcentage élevé de gris clair dans le graphique indique que le système est lourdement chargé par d'autres processus et que votre processus est en passe d'être reporté par ces autres processus.  Pour réduire la consommation de cœurs logiques par d'autres processus, réduisez le nombre de ceux qui s'exécute sur le système.  
+-   Le gris clair indique l’utilisation des cœurs logiques par d’autres processus sur le système. Un pourcentage élevé de gris clair dans le graphique du processeur indique que le système est très chargé par d’autres processus et que votre processus est susceptible d’être anticipé. Pour réduire la consommation des cœurs logiques par d’autres processus, réduisez le nombre des processus qui s’exécutent sur le système.  
   
--   Le gris foncé indique la consommation de cœurs logiques par le processus système.  Vous ne pouvez pas le contrôler directement, mais il est particulièrement utile de savoir quand il se produit car il peut affecter la disponibilité des cœurs logiques de votre processus.  
+-   Le gris foncé indique la consommation des cœurs logiques par le processus système. Vous n’avez pas de contrôle direct sur cette consommation, mais il est utile de savoir quand elle se produit, car elle peut affecter la disponibilité des cœurs logiques pour votre processus.  
   
--   Le blanc indique la disponibilité des cœurs logiques inutilisés sur le système.  Ces cœurs sont disponibles pour votre processus si vous pouvez rechercher plus de possibilités pour le parallélisme.  
+-   Le blanc indique la disponibilité des cœurs logiques inutilisés sur le système. Ces cœurs sont disponibles pour votre processus si vous trouvez davantage d’opportunités de parallélisme.  
   
-## Voir aussi  
- [vue Utilisation](../profiling/utilization-view.md)   
- [Utilisation moyenne de l'UC](../profiling/average-cpu-utilization.md)
+## <a name="see-also"></a>Voir aussi  
+ [Vue Utilisation](../profiling/utilization-view.md)   
+ [Utilisation moyenne de l’UC](../profiling/average-cpu-utilization.md)

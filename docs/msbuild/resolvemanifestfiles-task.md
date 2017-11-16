@@ -4,8 +4,7 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-sdk
+ms.technology: vs-ide-sdk
 ms.tgt_pltfrm: 
 ms.topic: article
 dev_langs:
@@ -17,35 +16,21 @@ helpviewer_keywords:
 - ResolveManifestFiles task [MSBuild]
 - MSBuild, ResolveManifestFiles task
 ms.assetid: e1e14f67-9b69-433f-94d4-a783a68676b2
-caps.latest.revision: 5
+caps.latest.revision: "5"
 author: kempb
 ms.author: kempb
 manager: ghogen
-translation.priority.ht:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
-translationtype: Human Translation
-ms.sourcegitcommit: 5db97d19b1b823388a465bba15d057b30ff0b3ce
-ms.openlocfilehash: f136d6a2ed01e94e2402e0c9b7c381831e99c1e6
-ms.lasthandoff: 02/22/2017
-
+ms.openlocfilehash: 1cb70f44046b6b0e964bb87ba1824518976897ad
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: HT
+ms.contentlocale: fr-FR
+ms.lasthandoff: 10/31/2017
 ---
 # <a name="resolvemanifestfiles-task"></a>ResolveManifestFiles, tâche
 Résout les éléments suivants dans le processus de génération en fichiers pour la génération de manifeste : éléments générés, dépendances, satellites, contenu, symboles de débogage et documentation.  
   
 ## <a name="parameters"></a>Paramètres  
- Le tableau ci-dessous décrit les paramètres de la tâche `ResolveManifestFiles`.  
+ Le tableau ci-dessous décrit les paramètres de la tâche `ResolveManifestFiles` .  
   
 |Paramètre|Description|  
 |---------------|-----------------|  
@@ -65,7 +50,7 @@ Résout les éléments suivants dans le processus de génération en fichiers po
 |`TargetFrameworkVersion`|Paramètre `String` facultatif.<br /><br /> Spécifie la version du .NET Framework cible.|  
   
 ## <a name="remarks"></a>Remarques  
- Outre les paramètres énumérés dans le tableau, cette tâche hérite des paramètres de la classe <xref:Microsoft.Build.Tasks.TaskExtension>, qui elle-même hérite de la classe <xref:Microsoft.Build.Utilities.Task>. Pour obtenir la liste de ces paramètres supplémentaires et de leurs descriptions, consultez l’article [TaskExtension Base Class (Classe de base TaskExtension)](../msbuild/taskextension-base-class.md).  
+ En plus des paramètres répertoriés dans le tableau, cette tâche comprend des paramètres qu’elle hérite de la classe <xref:Microsoft.Build.Tasks.TaskExtension>, qui elle-même hérite de la classe <xref:Microsoft.Build.Utilities.Task>. Pour obtenir la liste de ces paramètres supplémentaires et leurs descriptions, consultez [TaskExtension Base Class](../msbuild/taskextension-base-class.md).  
   
 ## <a name="see-also"></a>Voir aussi  
  [Tâches MSBuild](../msbuild/msbuild-tasks.md)   

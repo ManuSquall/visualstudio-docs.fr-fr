@@ -4,8 +4,7 @@ ms.custom:
 ms.date: 06/28/2017
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-general
+ms.technology: vs-ide-general
 ms.tgt_pltfrm: 
 ms.topic: article
 helpviewer_keywords:
@@ -26,30 +25,15 @@ helpviewer_keywords:
 - IntelliSense extensibility [JavaScript]
 - XML documentation comments [JavaScript]
 ms.assetid: af1a3171-c9d8-45a3-9c96-a763e3b163ef
-caps.latest.revision: 63
+caps.latest.revision: "63"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-translation.priority.ht:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
+ms.openlocfilehash: 694e747f09e38a2dc363057ccdb43ac55f4c61ee
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
 ms.translationtype: HT
-ms.sourcegitcommit: 359e1eb5df8f19774d352ace631802367b6dd8c9
-ms.openlocfilehash: 759ffc281b8c673f5987afc6512b225434b69dec
-ms.contentlocale: fr-fr
-ms.lasthandoff: 07/11/2017
-
+ms.contentlocale: fr-FR
+ms.lasthandoff: 10/31/2017
 ---
 # <a name="javascript-intellisense"></a>IntelliSense JavaScript
 [!include[vs_dev15](../misc/includes/vs_dev15_md.md)] procure une expérience d’édition JavaScript puissante et immédiate. Grâce à un service de langage TypeScript, Visual Studio offre des fonctionnalités IntelliSense plus riches, la prise en charge de fonctionnalités JavaScript modernes et des fonctionnalités de productivité améliorées, parmi lesquelles Atteindre la définition ou la refactorisation.
@@ -150,6 +134,5 @@ Par défaut, le service de langage Salsa tente de détecter les bibliothèques J
 La détection automatique fonctionne pour les dépendances téléchargées à partir de npm (en lisant le fichier `package.json`), Bower (en lisant le fichier `bower.json`) et pour les fichiers libres dans votre projet qui correspondent à une liste regroupant à peu près les 400 bibliothèques JavaScript les plus populaires. Par exemple, si vous avez `jquery-1.10.min.js` dans votre projet, le fichier `jquery.d.ts` est extrait et chargé afin de procurer une meilleure expérience d’édition. Ce fichier `.d.ts` n’a aucun impact sur votre projet. 
 
 Si vous ne souhaitez pas utiliser l’acquisition automatique, désactivez-la en ajoutant un fichier de configuration, comme indiqué ci-dessous. Vous pouvez toujours placer manuellement des fichiers de définition directement dans votre projet.
-
 
 

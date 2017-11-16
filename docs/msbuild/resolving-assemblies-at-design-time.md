@@ -4,36 +4,20 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-sdk
+ms.technology: vs-ide-sdk
 ms.tgt_pltfrm: 
 ms.topic: article
-helpviewer_keywords:
-- msbuild
+helpviewer_keywords: msbuild
 ms.assetid: 20dae076-733e-49c1-a2e9-b336757ae21d
-caps.latest.revision: 8
+caps.latest.revision: "8"
 author: kempb
 ms.author: kempb
 manager: ghogen
-translation.priority.ht:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
-translationtype: Human Translation
-ms.sourcegitcommit: 5db97d19b1b823388a465bba15d057b30ff0b3ce
-ms.openlocfilehash: 68c079405897752b26900d88d8dec7b7560cfb81
-ms.lasthandoff: 02/22/2017
-
+ms.openlocfilehash: 7ce11fb27959f5d468e08f6967b53ac079a2a28e
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: HT
+ms.contentlocale: fr-FR
+ms.lasthandoff: 10/31/2017
 ---
 # <a name="resolving-assemblies-at-design-time"></a>Résolution d'assemblys au moment du design
 Quand vous ajoutez une référence à un assembly par l’intermédiaire de l’onglet .NET de la boîte de dialogue Ajouter une référence, la référence pointe vers un assembly de référence intermédiaire, autrement dit un assembly qui contient toutes les informations de type et de signature, mais qui ne contient pas nécessairement de code. L’onglet .NET répertorie les assemblys de référence qui correspondent aux assemblys runtime du .NET Framework. Il répertorie aussi les assemblys de référence qui correspondent aux assemblys runtime dans les dossiers AssemblyFoldersEx inscrits utilisés par des tiers.  

@@ -4,8 +4,7 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-general
+ms.technology: vs-ide-general
 ms.tgt_pltfrm: 
 ms.topic: article
 helpviewer_keywords:
@@ -19,29 +18,15 @@ helpviewer_keywords:
 - resources [Visual Studio], fallback system
 - resource files, fallback processes
 ms.assetid: dadf8f2c-f74c-44d7-bec0-a1e956d8d38d
-caps.latest.revision: 8
-author: kempb
-ms.author: kempb
+caps.latest.revision: "8"
+author: gewarren
+ms.author: gewarren
 manager: ghogen
-translation.priority.ht:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
-translationtype: Human Translation
-ms.sourcegitcommit: 5658ecf52637a38bc3c2a5ad9e85b2edebf7d445
-ms.openlocfilehash: a8bc841364ce5fd7c2bd9f3e4ff68257bdc35165
-ms.lasthandoff: 02/22/2017
-
+ms.openlocfilehash: 7f52d57d45c0f78a5bd64b16f10c9bb7c2256cd7
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: HT
+ms.contentlocale: fr-FR
+ms.lasthandoff: 10/31/2017
 ---
 # <a name="hierarchical-organization-of-resources-for-localization"></a>Organisation hiérarchique des ressources pour la localisation
 Dans Visual Studio, les ressources localisées (les données comme des chaînes et des images adaptées à chaque culture) sont stockées dans des fichiers distincts et chargées en fonction du paramètre de culture de l’interface utilisateur. Pour comprendre comment les ressources localisées sont chargées, il est utile de les penser selon une organisation hiérarchique.  
@@ -58,11 +43,11 @@ Dans Visual Studio, les ressources localisées (les données comme des chaînes 
   
  Le meilleur moyen de stocker vos ressources consiste à les généraliser autant que possible. Cela signifie stocker les chaînes, les images, etc. localisées dans des fichiers de ressources pour des cultures neutres au lieu de cultures spécifiques, chaque fois que c’est possible. Par exemple, si vous avez des ressources pour la culture Français (Belgique) (« fr-BE ») et que les ressources immédiatement au-dessus sont les ressources de secours en anglais, un problème peut se produire quand une personne utilise votre application sur un système configuré pour la culture Français (Canada). Le système recherche un assembly satellite pour « fr-CA », ne le trouve pas et charge l’assembly principal contenant la ressource de secours, qui est Anglais, au lieu de charger les ressources Français. L’image suivante illustre ce scénario non souhaitable.  
   
- ![Ressources spécifiques uniquement](~/ide/media/vbspecificresourcesonly.gif "vbSpecificResourcesOnly")  
+ ![Ressources spécifiques uniquement](../ide/media/vbspecificresourcesonly.gif "vbSpecificResourcesOnly")  
   
  Si vous suivez la pratique recommandée consistant à placer autant de ressources que possible dans un fichier de ressources neutres pour la culture « fr », l’utilisateur du Français (Canada) ne voit pas les ressources marquées pour la culture « fr-BE », mais par contre voit les chaînes en français. La situation suivante illustre ce scénario préféré.  
   
- ![Graphique NeutralSpecificResources](~/ide/media/vbneutralspecificresources.gif "vbNeutralSpecificResources")  
+ ![Graphique NeutralSpecificResources](../ide/media/vbneutralspecificresources.gif "vbNeutralSpecificResources")  
   
 ## <a name="see-also"></a>Voir aussi  
  [Langues des ressources neutres pour la localisation](../ide/neutral-resources-languages-for-localization.md)   

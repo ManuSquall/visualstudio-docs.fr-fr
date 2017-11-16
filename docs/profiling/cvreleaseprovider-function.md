@@ -1,30 +1,29 @@
 ---
-title: "CvReleaseProvider, fonction | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-debug"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "cvmarkers/CvReleaseProvider"
-helpviewer_keywords: 
-  - "CvReleaseProvider (méthode)"
+title: CvReleaseProvider, fonction | Microsoft Docs
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-debug
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords: cvmarkers/CvReleaseProvider
+helpviewer_keywords: CvReleaseProvider method
 ms.assetid: 8d74379e-295d-452b-bd5f-0769df387d4f
-caps.latest.revision: 3
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 3
+caps.latest.revision: "3"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: 6a6adcdd1be3b14ec4dbb9462ebddd82d9835e4e
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: HT
+ms.contentlocale: fr-FR
+ms.lasthandoff: 10/31/2017
 ---
-# CvReleaseProvider, fonction
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
-
-Libère le fournisseur de jeton.  Libérer le fournisseur de jeton n'affecte pas la série créée précédemment de jeton de ce fournisseur.  La série de jeton doit être version séparée par l'appel de CvReleaseMarkerSeries.  Échec de libérer les causes de fournisseur une fuite de mémoire.  
+# <a name="cvreleaseprovider-function"></a>CvReleaseProvider, fonction
+Libère le fournisseur de marqueurs. La libération du fournisseur de marqueurs n’affecte pas les séries de marqueurs précédemment créées par ce fournisseur. Les séries de marqueurs doivent être libérées séparément par un appel CvReleaseMarkerSeries. Si la libération du fournisseur échoue, une fuite de mémoire se produit.  
   
-## Syntaxe  
+## <a name="syntax"></a>Syntaxe  
   
 ```  
 HRESULT CvReleaseProvider(  
@@ -32,15 +31,15 @@ HRESULT CvReleaseProvider(
 );  
 ```  
   
-#### Paramètres  
+#### <a name="parameters"></a>Paramètres  
  `pProvider`  
- Contexte de fournisseur.  Ne peut pas être NULL.  
+ Contexte du fournisseur. Ne peut pas être Null.  
   
-## Valeur de retour  
- S\_OK lorsque le fournisseur est correctement initialisé ou un code d'erreur dans le cas d'une erreur.  Utiliser la macros SUCCEEDED\/FAILED pour vérifier la condition d'erreur.  
+## <a name="return-value"></a>Valeur de retour  
+ S_OK lorsque le fournisseur est correctement libéré, ou code d’erreur en cas d’erreur. Utilisez les macros SUCCEEDED/FAILED pour vérifier la condition d’erreur.  
   
-## Configuration requise  
- **en\-tête :** cvmarkers.h  
+## <a name="requirements"></a>Spécifications  
+ **En-tête** : cvmarkers.h  
   
-## Voir aussi  
- [Référence de bibliothèque C\+\+](../profiling/cpp-library-reference.md)
+## <a name="see-also"></a>Voir aussi  
+ [Informations de référence sur la bibliothèque C++](../profiling/cpp-library-reference.md)

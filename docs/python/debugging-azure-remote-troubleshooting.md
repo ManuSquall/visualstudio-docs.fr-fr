@@ -1,27 +1,24 @@
 ---
 title: "Résolution des problèmes de débogage à distance Azure pour Python dans Visual Studio | Microsoft Docs"
 ms.custom: 
-ms.date: 7/12/2017
+ms.date: 07/12/2017
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- devlang-python
+ms.technology: devlang-python
 ms.devlang: python
 ms.tgt_pltfrm: 
 ms.topic: article
 ms.assetid: b723b343-dffb-457e-9af7-ee48c1451e30
-caps.latest.revision: 1
+caps.latest.revision: "1"
 author: kraigb
 ms.author: kraigb
 manager: ghogen
+ms.openlocfilehash: 5f8c27eb0c1360e2bd0fcf0593a8438383b6fd69
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
 ms.translationtype: HT
-ms.sourcegitcommit: 6d25db4639f2c8391c1e32542701ea359f560178
-ms.openlocfilehash: de9d74c3a0a8a3f3b66d621884f9c17fe787f856
-ms.contentlocale: fr-fr
-ms.lasthandoff: 07/18/2017
-
+ms.contentlocale: fr-FR
+ms.lasthandoff: 10/31/2017
 ---
-
 # <a name="remote-debugging-troubleshooter-for-python-and-azure"></a>Résolution des problèmes de débogage à distance pour Python et Azure
 
 L’attachement de Visual Studio à un [service Azure App Service pour le débogage à distance](debugging-azure-remote.md) échoue pour l’une des raisons suivantes :
@@ -38,4 +35,3 @@ L’attachement de Visual Studio à un [service Azure App Service pour le débo
 Voir aussi :
 
 - [Débogage à distance Azure pour Python](debugging-azure-remote.md)
-

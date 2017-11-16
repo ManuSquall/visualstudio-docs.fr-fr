@@ -5,37 +5,20 @@ ms.custom:
 ms.date: 11/16/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-general
+ms.technology: vs-ide-general
 ms.tgt_pltfrm: 
 ms.topic: article
 ms.assetid: f0181ee8-9b46-45f7-b86e-316e3de024b9
-caps.latest.revision: 3
+caps.latest.revision: "3"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-translation.priority.ht:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
+ms.openlocfilehash: c4f3001eb630ce2f5a03d8e3f5169d25e413a6c5
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
 ms.translationtype: HT
-ms.sourcegitcommit: ea1e787c1d509123a650cf2bd20e5fa8bffd5b4e
-ms.openlocfilehash: b8ceaa9fe19581f40ac142ce5b4825550e7be3f6
-ms.contentlocale: fr-fr
-ms.lasthandoff: 09/26/2017
-
+ms.contentlocale: fr-FR
+ms.lasthandoff: 10/31/2017
 ---
-
 # <a name="code-generation-in-visual-studio"></a>Génération de code dans Visual Studio
 Visual Studio peut générer des parties du code source à votre place, ce qui vous permet de vous concentrer sur le vrai travail.  Voici quelques fonctionnalités de génération de code courantes :  
 

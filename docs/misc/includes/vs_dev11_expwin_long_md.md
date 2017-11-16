@@ -13,10 +13,10 @@ translation.priority.ht:
 - tr-tr
 - zh-cn
 - zh-tw
-ms.openlocfilehash: 66766610a0ff09933abfb36bce8700ffb17b2cc4
+ms.openlocfilehash: aa19fa7139a35ad423ffc148ca9be174a673d745
 ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 10/27/2017
 ---
-Microsoft Visual Studio Premium
+Visual Studio Express 2012 pour Windows 8

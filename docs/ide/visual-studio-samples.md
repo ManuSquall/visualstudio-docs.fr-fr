@@ -4,49 +4,30 @@ ms.custom:
 ms.date: 11/16/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-general
+ms.technology: vs-acquisition
 ms.tgt_pltfrm: 
 ms.topic: article
-helpviewer_keywords:
-- sample applications [Visual Studio]
+helpviewer_keywords: sample applications [Visual Studio]
 ms.assetid: 3070fa13-46c7-4252-a1c2-857b4a2c9528
-caps.latest.revision: 51
-author: mikeblome
-ms.author: mblome
+caps.latest.revision: "51"
+author: TerryGLee
+ms.author: tglee
 manager: ghogen
-translation.priority.ht:
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- ru-ru
-- zh-cn
-- zh-tw
-translation.priority.mt:
-- cs-cz
-- pl-pl
-- pt-br
-- tr-tr
-translationtype: Human Translation
-ms.sourcegitcommit: 5db97d19b1b823388a465bba15d057b30ff0b3ce
-ms.openlocfilehash: 702a87042fd3ddad3a96c066961494481e9c98c2
-ms.lasthandoff: 02/22/2017
-
+ms.openlocfilehash: a69ac4580d14546211fb65b19e05b6766b07af91
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: HT
+ms.contentlocale: fr-FR
+ms.lasthandoff: 10/31/2017
 ---
 # <a name="visual-studio-samples"></a>Exemples Visual Studio
 Vous trouverez des exemples de code Visual Studio sur le site web [MSDN Code Gallery](http://go.microsoft.com/fwlink/?LinkID=127810) .  
-  
- Vous pouvez utiliser la boîte de dialogue **Nouveau projet** pour rechercher des exemples. (Pour ouvrir la boîte de dialogue, dans la barre de menus, choisissez **Fichier**, **Nouveau**, **Projet**.)  
   
 ## <a name="finding-samples"></a>Recherche d’exemples  
  Voici d’autres emplacements où rechercher des exemples.  
   
 |Domaine|Description|  
 |----------|-----------------|  
-|[Exemples du Centre de développement Windows](http://go.microsoft.com/fwlink/?LinkID=255278)|Montre comment développer des applications du [!INCLUDE[win8_appname_long](../debugger/includes/win8_appname_long_md.md)].|  
+|[Exemples du Centre de développement Windows](http://go.microsoft.com/fwlink/?LinkID=255278)|Montre comment développer des applications [!INCLUDE[win8_appname_long](../debugger/includes/win8_appname_long_md.md)] .|  
 |[Exemples .NET Framework](http://msdn.microsoft.com/en-us/177055f8-4a1f-43e7-aee6-995c196079b1)|Montre différents aspects du [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] en C# et Visual Basic.|  
 |[Exemples C#](http://code.msdn.microsoft.com/site/search?f%5B0%5D.Type=ProgrammingLanguage&f%5B0%5D.Value=C%23&f%5B0%5D.Text=C%23)|Montre comment utiliser différentes fonctionnalités de C#.|  
 |[Exemples Visual Basic](http://code.msdn.microsoft.com/site/search?f%5B0%5D.Type=ProgrammingLanguage&f%5B0%5D.Value=VB&f%5B0%5D.Text=VB.NET)|Montre comment utiliser différentes fonctionnalités de Visual Basic.|  

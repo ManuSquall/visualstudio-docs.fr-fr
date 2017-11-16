@@ -4,34 +4,18 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-devops-test
+ms.technology: vs-devops-test
 ms.tgt_pltfrm: 
 ms.topic: article
 ms.assetid: 5ef1188f-89dc-413d-801d-0efdaf9b0427
-caps.latest.revision: 22
+caps.latest.revision: "22"
 ms.author: douge
 manager: douge
-translation.priority.ht:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
+ms.openlocfilehash: 0d9e28ee58dde41703f2149534f542b08d55b9ec
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
 ms.translationtype: HT
-ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
-ms.openlocfilehash: 00f7cd1d45bca63387acc7f38b39b1cb51b4b2be
-ms.contentlocale: fr-fr
-ms.lasthandoff: 09/26/2017
-
+ms.contentlocale: fr-FR
+ms.lasthandoff: 10/27/2017
 ---
 # <a name="enable-coded-ui-testing-of-your-controls"></a>Activer le test codé de l'interface utilisateur de vos contrôles
 Vous pouvez tester votre contrôle plus facilement si vous implémentez la prise en charge du framework de test codé de l'interface utilisateur. Vous pouvez ajouter des niveaux croissants de prise en charge de manière incrémentielle. Vous pouvez commencer en prenant en charge l'enregistrement et la lecture, ainsi que la validation de propriété. Cette option vous permet d’autoriser le générateur de test codé de l’interface utilisateur à reconnaître les propriétés personnalisées de votre contrôle et de fournir aux classes personnalisées l’accès à ces propriétés à partir du code généré. Vous pouvez également aider à ce que les actions de capture du générateur de test codé de l'interface utilisateur soient plus proches de l'objectif de l'action en cours d'enregistrement.  
@@ -238,4 +222,3 @@ Vous pouvez tester votre contrôle plus facilement si vous implémentez la prise
 ## <a name="see-also"></a>Voir aussi  
  <xref:System.Windows.Forms.AccessibleObject>   
  [Utiliser l’automatisation de l’interface utilisateur pour tester votre code](../test/use-ui-automation-to-test-your-code.md)
-

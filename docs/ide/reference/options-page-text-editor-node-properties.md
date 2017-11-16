@@ -4,37 +4,22 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-general
+ms.technology: vs-ide-general
 ms.tgt_pltfrm: 
 ms.topic: article
 helpviewer_keywords:
 - Tools Options settings, Text Editor node properties
 - automation [Visual Studio], controlling Tools Options
 ms.assetid: 19438302-0677-4f4d-9720-5667e6a22ab2
-caps.latest.revision: 17
-author: kempb
-ms.author: kempb
+caps.latest.revision: "17"
+author: gewarren
+ms.author: gewarren
 manager: ghogen
-translation.priority.ht:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
-translationtype: Human Translation
-ms.sourcegitcommit: 5658ecf52637a38bc3c2a5ad9e85b2edebf7d445
-ms.openlocfilehash: 922e6ae930ee146a0e948a659cb128149e140396
-ms.lasthandoff: 02/22/2017
-
+ms.openlocfilehash: 5a917167b8e81445d0ec47a1dd44cf74f5d87d4f
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: HT
+ms.contentlocale: fr-FR
+ms.lasthandoff: 10/31/2017
 ---
 # <a name="options-page-text-editor-node-properties"></a>Page Options, Éditeur de texte, propriétés de nœud
 Ce document décrit certaines pages (ou collections de propriétés) associées à la catégorie **Éditeur de texte**, `DTE.Properties("TextEditor", <Property Page>)`, de la boîte de dialogue **Options**. Le titre de chaque sous-section correspond à l'appel utilisé pour accéder à la collection `Properties`, et le tableau figurant dans chaque sous-section répertorie les propriétés présentes dans la collection.  
@@ -75,7 +60,7 @@ Ce document décrit certaines pages (ou collections de propriétés) associées 
 |IndentStyle|Get/Set (<xref:EnvDTE.vsIndentStyle>)|Détermine le style de mise en retrait : Par défaut, Smart ou aucun.|  
 |TabSize|Get/Set (Long)|Représente le nombre d'espaces auquel équivaut une tabulation. Échec s'il ne s'agit pas d'un entier compris entre 1 et 60.|  
 |InsertTabs|Get/Set (booléen)|En cas de valeur `True`, des caractères de tabulation sont utilisés pour le retrait.|  
-|IndentSize|Get/Set (Long)|Représente le nombre d'espaces qui équivaut à un niveau de retrait. Échec s'il ne s'agit pas d'une valeur entière comprise entre 1 et 60..|  
+|IndentSize|Get/Set (Long)|Représente le nombre d'espaces qui équivaut à un niveau de retrait. Échec s'il ne s'agit pas d'une valeur entière comprise entre 1 et 60.|  
 |ShowLineNumbers|Get/Set (booléen)|Détermine si l'affichage d'un document de l'éditeur principal affiche des numéros de ligne dans la marge de gauche.|  
 |ShowNavigationBar|Get/Set (booléen)|Détermine si les listes déroulantes et les boutons s'affichent en haut des fenêtres de l'éditeur.|  
 |CutCopyBlankLines|Get/Set (booléen)|Coupe ou copie des lignes vides lorsqu'elles sont sélectionnées.|  

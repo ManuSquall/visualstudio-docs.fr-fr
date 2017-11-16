@@ -4,12 +4,10 @@ ms.custom:
 ms.date: 06/21/2017
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-general
+ms.technology: vs-ide-general
 ms.tgt_pltfrm: 
 ms.topic: article
-f1_keywords:
-- VS.ReferenceManager
+f1_keywords: VS.ReferenceManager
 helpviewer_keywords:
 - Visual C# projects, references
 - references [Visual Studio], adding
@@ -23,30 +21,15 @@ helpviewer_keywords:
 - references [Visual Studio], removing
 - referencing components, assemblies not listed
 ms.assetid: 1aabb520-99b0-46c6-9368-21b4d84793eb
-caps.latest.revision: 45
-author: kempb
-ms.author: kempb
+caps.latest.revision: "45"
+author: gewarren
+ms.author: gewarren
 manager: ghogen
-translation.priority.ht:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
-ms.translationtype: Human Translation
-ms.sourcegitcommit: d2f4eba36e9069a35cf279ccf1c78f72a51d77a1
-ms.openlocfilehash: b2141a16d27725c54b3407e92151e0ed7afd745e
-ms.contentlocale: fr-fr
-ms.lasthandoff: 06/23/2017
-
+ms.openlocfilehash: 3c5e414ab56641171e9d3f5cddf758b6a13a6458
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: HT
+ms.contentlocale: fr-FR
+ms.lasthandoff: 10/31/2017
 ---
 # <a name="how-to-add-or-remove-references-by-using-the-reference-manager"></a>Guide pratique pour ajouter ou supprimer des références à l’aide du gestionnaire de références
 Vous pouvez utiliser la boîte de dialogue **Gestionnaire de références** pour ajouter et gérer des références aux composants développés par vous, par Microsoft ou par une autre société. Si vous développez une application Windows universelle, votre projet référence automatiquement toutes les DLL correctes du kit SDK Windows. Si vous développez une application .NET, votre projet référence automatiquement mscorlib.dll. Certaines API .NET sont exposées dans des composants que vous devez ajouter manuellement. Les références à des composants COM ou à des composants personnalisés doivent être ajoutées manuellement.  
@@ -233,4 +216,3 @@ Vous pouvez utiliser la boîte de dialogue **Gestionnaire de références** pour
 
 ## <a name="see-also"></a>Voir aussi  
  [Gestion des références dans un projet](../ide/managing-references-in-a-project.md)
-

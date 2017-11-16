@@ -1,86 +1,86 @@
 ---
-title: "Comment&#160;: attacher le profileur &#224; une application Web ASP.NET pour collecter des donn&#233;es de concurrence en utilisant la ligne de commande | Microsoft Docs"
-ms.custom: ""
-ms.date: "12/15/2016"
-ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-debug"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+title: "Guide pratique pour attacher le profileur à une application web ASP.NET pour collecter des données concurrentielles en utilisant la ligne de commande | Microsoft Docs"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-debug
+ms.tgt_pltfrm: 
+ms.topic: article
 ms.assetid: 0e215fdd-55f8-43ef-9534-06542eefe223
-caps.latest.revision: 29
-caps.handback.revision: 29
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
+caps.latest.revision: "29"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: 9d43220603f28f34c04b7e4a08821299f4bedb0c
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: HT
+ms.contentlocale: fr-FR
+ms.lasthandoff: 10/31/2017
 ---
-# Comment&#160;: attacher le profileur &#224; une application Web ASP.NET pour collecter des donn&#233;es de concurrence en utilisant la ligne de commande
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
-
-Cette rubrique décrit comment utiliser les outils en ligne de commande des outils de profilage [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] pour attacher le profileur à une application ASP.NET et collecter des données de concurrence de processus et de threads.  
+# <a name="how-to-attach-the-profiler-to-an-aspnet-web-application-to-collect-concurrency-data-by-using-the-command-line"></a>Guide pratique pour attacher le profileur à une application web ASP.NET pour collecter des données concurrentielles en utilisant la ligne de commande
+Cette rubrique explique comment utiliser les outils en ligne de commande des outils de profilage [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] pour attacher le profileur à une application ASP.NET et pour collecter des données de concurrence de processus et de threads.  
   
- Les outils de ligne de commande des outils de profilage se trouvent dans le sous\-répertoire \\Team Tools\\Performance Tools du répertoire d'installation de Visual Studio  Sur les ordinateurs 64 bits, les versions 64 bits et 32 bits de ces outils sont disponibles.  Pour utiliser le profileur à une invite de commandes, vous devez ajouter le chemin d'accès des outils à la variable d'environnement PATH de la fenêtre **Invite de commandes** ou l'ajouter à la commande elle\-même.  Pour plus d'informations, consultez [Spécification du chemin d'accès aux outils en ligne de commande](../profiling/specifying-the-path-to-profiling-tools-command-line-tools.md).  
+ Les outils en ligne de commande des outils de profilage se trouvent dans le sous-répertoire \Team Tools\Performance Tools du répertoire d’installation Visual Studio. Les versions 64 bits et 32 bits des outils sont disponibles sur les ordinateurs 64 bits. Pour utiliser le profileur dans une fenêtre d’invite de commandes, vous devez ajouter le chemin des outils à la variable d’environnement PATH dans la fenêtre d’**invite de commandes**, ou l’ajouter à la commande. Pour plus d’informations, consultez [Spécification du chemin des outils en ligne de commande](../profiling/specifying-the-path-to-profiling-tools-command-line-tools.md).  
   
- Pour collecter des données d'accès concurrentiel, vous attachez le profileur au processus de travail ASP .NET qui héberge votre site Web.  Lorsque le profileur est attaché à l'application, vous pouvez suspendre la collecte de données et la reprendre.  Pour terminer une session de profilage, le profileur ne doit plus être attaché à l'application et le profileur doit être arrêté explicitement.  Dans la plupart des cas, nous vous recommandons de désactiver les variables d'environnement de profilage à la fin d'une session.  
+ Pour collecter des données concurrentielles, attachez le profileur au processus de travail ASP.NET qui héberge votre site web. Lorsque le profileur est attaché à l’application, vous pouvez suspendre et reprendre la collecte de données. Pour que vous puissiez mettre fin à une session de profilage, le profileur ne doit plus être attaché à l’application et doit être arrêté explicitement. Dans la plupart des cas, vous devez supprimer les variables d’environnement de profilage à la fin d’une session.  
   
-## Attachement du profileur  
+## <a name="attaching-the-profiler"></a>Attachement du profileur  
   
-#### Pour attacher le profileur à une application ASP.NET  
+#### <a name="to-attach-the-profiler-to-a-aspnet-application"></a>Pour attacher le profileur à une application ASP.NET  
   
 1.  Démarrez le profileur en tapant la commande suivante :  
   
-     [VSPerfCmd](../profiling/vsperfcmd.md) **\/start:concurrency \/output:**`OutputFile` \[`Options`\]  
+     [VSPerfCmd](../profiling/vsperfcmd.md) **/start:concurrency /output:** `OutputFile` [`Options`]  
   
-    -   L'option [\/start](../profiling/start.md) initialise le profileur afin de collecter des données de conflit de ressources.  
+    -   L’option [/start](../profiling/start.md) initialise le profileur pour collecter des données de conflit de ressources.  
   
-    -   L'option [\/output](../profiling/output.md)**:**`OutputFile`  est requise avec **\/start**.  `OutputFile` spécifie le nom et l'emplacement du fichier de données de profilage \(.vsp\).  
+    -   L’option [/output](../profiling/output.md)**:**`OutputFile` est nécessaire avec **/start**. `OutputFile` spécifie le nom et l’emplacement du fichier de données profilage (.vsp).  
   
-     Vous pouvez utiliser toute option figurant dans le tableau suivant avec l'option **\/start** .  
-  
-    |Option|Description|  
-    |------------|-----------------|  
-    |[\/user](../profiling/user-vsperfcmd.md) **:**\[`Domain\`\]`UserName`|Spécifie le domaine et le nom d'utilisateur facultatifs du compte qui se verra accorder l'accès au profileur.|  
-    |[\/crosssession](../profiling/crosssession.md)|Active le profilage de processus dans d'autres ouvertures de session.|  
-    |[\/wincounter](../profiling/wincounter.md) **:** `WinCounterPath`|Spécifie un compteur de performance Windows à collecter au cours du profilage.|  
-    |[\/automark](../profiling/automark.md) **:** `Interval`|À n'utiliser qu'avec **\/wincounter**.  Spécifie le nombre de millisecondes entre les événements de collecte du compteur de performance Windows.  La valeur par défaut est 500.|  
-    |[\/events](../profiling/events-vsperfcmd.md) **:** `Config`|Spécifie un événement ETW \(Event Tracing for Windows\) à collecter au cours du profilage.  Les événements ETW sont collectés dans un fichier séparé \(.etl\).|  
-  
-2.  Démarrez l'application ASP.NET de la manière classique.  
-  
-3.  Attachez le profileur au processus de travail ASP.NET en tapant la commande suivante :**VSPerfCmd \/attach:**`PID` \[**\/targetclr:**`Version`\]  
-  
-    -   `PID` spécifie l'ID ou le nom du processus de travail ASP.NET.  Vous pouvez afficher les ID de processus de tous les processus en cours d'exécution dans le Gestionnaire des tâches de Windows.  
-  
-    -   [\/targetclr](../profiling/targetclr.md) **:** `Version` spécifie la version du Common Language Runtime \(CLR\) à profiler lorsque plusieurs versions du runtime sont chargées dans une application.  Ce paramètre est optionnel.  
-  
-## Contrôle de la collecte de données  
- Lorsque l'application s'exécute, vous pouvez contrôler la collecte de données en démarrant et en arrêtant l'écriture de données dans le fichier à l'aide des options VSPerfCmd.exe.  En contrôlant la collecte de données, vous pouvez collecter des données pour une partie spécifique de l'exécution du programme, notamment le démarrage ou l'arrêt de l'application.  
-  
-#### Pour démarrer et arrêter la collecte de données  
-  
--   Les paires d'options VSPerfCmd dans la table suivante démarrent et arrêtent la collecte de données.  Spécifiez chaque option sur une ligne de commande séparée.  Vous pouvez activer et désactiver la collecte de données à plusieurs reprises.  
+     Vous pouvez utiliser l’une des options du tableau suivant avec l’option **/start**.  
   
     |Option|Description|  
     |------------|-----------------|  
-    |[\/globalon \/globaloff](../profiling/globalon-and-globaloff.md)|Démarre \(**\/globalon**\) ou arrête \(**\/globaloff**\) la collecte de données pour tous les processus.|  
-    |[\/processon](../profiling/processon-and-processoff.md) **:** `PID`  [processoff](../profiling/processon-and-processoff.md) **:** `PID`|Démarre \(**\/processon**\) ou arrête \(**\/processoff**\) la collecte de données pour le processus spécifié par l'ID de processus \(`PID`\).|  
-    |[\/attach](../profiling/attach.md) **:**{`PID`&#124;`ProcName`} [\/detach](../profiling/detach.md)\[**:**{`PID`&#124;`ProcName`}\]|**\/attach** commence à collecter les données pour le processus spécifié par l'ID de processus \(`PID`\) ou le nom de processus \(*ProcName*\).  **\/detach** arrête la collecte de données pour le processus spécifié ou pour tous les processus si aucun processus n'est spécifié.|  
+    |[/user](../profiling/user-vsperfcmd.md) **:**[`Domain\`]`UserName`|Spécifie les noms de domaine et d’utilisateur facultatifs du compte qui doit obtenir l’accès au profileur.|  
+    |[/crosssession](../profiling/crosssession.md)|Active le profilage des processus dans d’autres sessions ouvertes.|  
+    |[/wincounter](../profiling/wincounter.md) **:** `WinCounterPath`|Spécifie le compteur de performances Windows dont les données doivent être collectées au cours du profilage.|  
+    |[/automark](../profiling/automark.md) **:** `Interval`|À utiliser avec **/wincounter** uniquement. Spécifie le nombre de millisecondes écoulées entre les événements de collecte du compteur de performances Windows. La valeur par défaut est de 500 ms.|  
+    |[/events](../profiling/events-vsperfcmd.md) **:** `Config`|Spécifie l’événement du Suivi d’événements pour Windows (ETW) qui doit être collecté au cours du profilage. Les événements ETW sont collectés dans un fichier séparé (.etl).|  
   
-## Fin de la session de profilage  
- Pour terminer une session de profilage, le profileur ne doit pas collecter des données.  Vous pouvez cesser de collecter des données d'une application profilée avec la méthode de concurrence en redémarrant le processus de travail ASP.NET ou en appelant l'option **VSPerfCmd \/detach**.  Vous appelez alors l'option **VSPerfCmd \/shutdown** pour arrêter le profileur et fermer le fichier de données de profilage.  La commande **VSPerfClrEnv \/globaloff** désactive les variables d'environnement de profilage, mais la configuration du système n'est réinitialisée qu'au redémarrage de l'ordinateur.  
+2.  Démarrez l’application ASP.NET de manière classique.  
   
-#### Pour terminer une session de profilage  
+3.  Attachez le profileur au processus de travail ASP.NET en tapant la commande suivante : **VSPerfCmd /attach:**`PID` [**/targetclr:**`Version`]  
   
-1.  Détachez le profileur de l'application cible en le fermant ou en tapant la commande suivante à une invite de commandes :  
+    -   `PID` spécifie l’ID ou le nom du processus de travail ASP.NET. Vous pouvez afficher les ID de processus de tous les processus en cours d’exécution dans le gestionnaire des tâches de Windows.  
   
-     **VSPerfCmd \/detach**  
+    -   [/targetclr](../profiling/targetclr.md)  **:**  `Version` spécifie la version du common language runtime (CLR) à profiler lorsque plusieurs versions du runtime sont chargées dans une application. Ce paramètre est optionnel.  
   
-2.  Arrêtez le profileur en tapant la commande suivante à une invite de commandes :  
+## <a name="controlling-data-collection"></a>Contrôle de la collecte de données  
+ Pendant l’exécution de l’application, vous pouvez contrôler la collecte des données en démarrant et en arrêtant l’écriture des données dans le fichier à l’aide des options de VSPerfCmd.exe. Le fait de pouvoir contrôler la collecte vous permet de collecter des données pour une phase spécifique de l’exécution du programme, telle que le démarrage ou l’arrêt de l’application.  
   
-     **VSPerfCmd**  [\/shutdown](../profiling/shutdown.md)  
+#### <a name="to-start-and-stop-data-collection"></a>Pour démarrer et arrêter la collecte de données  
   
-## Voir aussi  
+-   Les paires d’options VSPerfCmd du tableau suivant permettent de démarrer et d’arrêter la collecte des données. Spécifiez chaque option sur une ligne de commande distincte. Vous pouvez activer et désactiver la collecte de données à plusieurs reprises.  
+  
+    |Option|Description|  
+    |------------|-----------------|  
+    |[/globalon /globaloff](../profiling/globalon-and-globaloff.md)|Démarre (**/globalon**) ou arrête (**/globaloff**) la collecte des données pour tous les processus.|  
+    |[/processon](../profiling/processon-and-processoff.md) **:** `PID`  [processoff](../profiling/processon-and-processoff.md) **:** `PID`|Démarre (**/processon**) ou arrête (**/processoff**) la collecte des données pour le processus spécifié par l’ID de processus (`PID`).|  
+    |[/attach](../profiling/attach.md) **:**{`PID`&#124;`ProcName`} [/detach](../profiling/detach.md)[**:**{`PID`&#124;`ProcName`}]|**/attach** commence à collecter des données pour le processus spécifié par l’ID de processus (`PID`) ou le nom de processus (*ProcName*). **/detach** arrête la collecte des données pour le processus spécifié ou pour tous les processus, si aucun processus n’est spécifié.|  
+  
+## <a name="ending-the-profiling-session"></a>Fin d’une session de profilage  
+ Pour que vous puissiez mettre fin à une session de profilage, le profileur ne doit pas être en train de collecter des données. Vous pouvez arrêter la collecte des données d’une application profilée avec la méthode d’accès concurrentiel en redémarrant le processus de travail ASP.NET ou en appelant l’option **VSPerfCmd /detach**. Vous devez alors appeler l’option **VSPerfCmd /shutdown** pour désactiver le profileur et fermer le fichier de données de profilage. La commande **VSPerfClrEnv /globaloff** efface les variables d’environnement de profilage. Toutefois, la configuration du système n’est pas réinitialisée tant que l’ordinateur n’a pas été redémarré.  
+  
+#### <a name="to-end-a-profiling-session"></a>Pour terminer une session de profilage  
+  
+1.  Détachez le profileur de l’application cible en fermant l’application ou en tapant la commande suivante à l’invite de commandes :  
+  
+     **VSPerfCmd /detach**  
+  
+2.  Fermez le profileur en tapant ce qui suit à l’invite de commandes :  
+  
+     **VSPerfCmd**  [/shutdown](../profiling/shutdown.md)  
+  
+## <a name="see-also"></a>Voir aussi  
  [Profilage d’applications web ASP.NET](../profiling/command-line-profiling-of-aspnet-web-applications.md)   
- [Profilage de site Web rapide avec VSPerfASPNETCmd](../profiling/rapid-web-site-profiling-with-vsperfaspnetcmd.md)
+ [Profilage de site web rapide avec VSPerfASPNETCmd](../profiling/rapid-web-site-profiling-with-vsperfaspnetcmd.md)

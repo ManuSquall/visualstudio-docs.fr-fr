@@ -4,8 +4,7 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-sdk
+ms.technology: vs-ide-sdk
 ms.tgt_pltfrm: 
 ms.topic: article
 f1_keywords:
@@ -21,31 +20,15 @@ helpviewer_keywords:
 - ResolveAssemblyReference task [MSBuild]
 - MSBuild, ResolveAssemblyReference task
 ms.assetid: 4d56d848-b29b-4dff-86a2-0a96c9e4a170
-caps.latest.revision: 29
+caps.latest.revision: "29"
 author: kempb
 ms.author: kempb
 manager: ghogen
-translation.priority.ht:
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- ru-ru
-- zh-cn
-- zh-tw
-translation.priority.mt:
-- cs-cz
-- pl-pl
-- pt-br
-- tr-tr
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 11a9cee75f912c5fb31cf4a031644abe9c63d744
-ms.openlocfilehash: cf23ae07cbe6fda773405ca4a308487e0c92fec0
-ms.contentlocale: fr-fr
-ms.lasthandoff: 06/03/2017
-
+ms.openlocfilehash: 094e3968b527261125753002d9b6a31c7bd5d244
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: HT
+ms.contentlocale: fr-FR
+ms.lasthandoff: 10/31/2017
 ---
 # <a name="resolveassemblyreference-task"></a>ResolveAssemblyReference, tâche
 Détermine tous les assemblys qui dépendent des assemblys spécifiés. Cela comprend les dépendances de deuxième et `n`ième ordres.  
@@ -126,4 +109,3 @@ Détermine tous les assemblys qui dépendent des assemblys spécifiés. Cela com
 ## <a name="see-also"></a>Voir aussi  
  [Tâches MSBuild](../msbuild/msbuild-tasks.md)   
  [Task Reference (Informations de référence sur les tâches MSBuild)](../msbuild/msbuild-task-reference.md)
-

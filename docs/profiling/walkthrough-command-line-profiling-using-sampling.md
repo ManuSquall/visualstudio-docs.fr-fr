@@ -4,8 +4,7 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-debug
+ms.technology: vs-ide-debug
 ms.tgt_pltfrm: 
 ms.topic: article
 helpviewer_keywords:
@@ -13,30 +12,15 @@ helpviewer_keywords:
 - performance tools, walkthroughs
 - performance tools, command-line tools
 ms.assetid: 1d53972f-6f35-4842-8c74-1b627f18c70a
-caps.latest.revision: 21
+caps.latest.revision: "21"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-translation.priority.ht:
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- ru-ru
-- zh-cn
-- zh-tw
-translation.priority.mt:
-- cs-cz
-- pl-pl
-- pt-br
-- tr-tr
-translationtype: Human Translation
-ms.sourcegitcommit: 5db97d19b1b823388a465bba15d057b30ff0b3ce
-ms.openlocfilehash: d4a5fa12578b0e4dd46ac7556e9d77ae46de50bb
-ms.lasthandoff: 02/22/2017
-
+ms.openlocfilehash: 338b79cfe5dbdb812b385d237523d2a79d8cc965
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: HT
+ms.contentlocale: fr-FR
+ms.lasthandoff: 10/31/2017
 ---
 # <a name="walkthrough-command-line-profiling-using-sampling"></a>Procédure pas à pas : profilage de la ligne de commande à l’aide de l’échantillonnage
 Cette procédure pas à pas montre comment profiler une application à l’aide d’outils en ligne de commande et de l’échantillonnage pour identifier les problèmes de performances.  

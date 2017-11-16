@@ -4,36 +4,19 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-general
+ms.technology: vs-ide-general
 ms.tgt_pltfrm: 
 ms.topic: article
 ms.assetid: 31827b17-f933-413d-b28a-b19f903b64ca
-caps.latest.revision: 5
-author: kempb
-ms.author: kempb
+caps.latest.revision: "5"
+author: gewarren
+ms.author: gewarren
 manager: ghogen
-translation.priority.ht:
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- ru-ru
-- zh-cn
-- zh-tw
-translation.priority.mt:
-- cs-cz
-- pl-pl
-- pt-br
-- tr-tr
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 47057e9611b824c17077b9127f8d2f8b192d6eb8
-ms.openlocfilehash: 0c4c9c5a885b6f71b8531d4b04baecaec7f45949
-ms.contentlocale: fr-fr
-ms.lasthandoff: 05/13/2017
-
+ms.openlocfilehash: 77230702bf8dc582e176e4dd0f17eab3385966c6
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: HT
+ms.contentlocale: fr-FR
+ms.lasthandoff: 10/31/2017
 ---
 # <a name="how-to-suppress-compiler-warnings"></a>Guide pratique pour supprimer des avertissements du compilateur
 Vous pouvez « nettoyer » un journal de génération en spécifiant un ou plusieurs types d’avertissements du compilateur que vous ne souhaitez pas inclure. Par exemple, vous pouvez utiliser cette technique pour passer en revue uniquement certaines des informations générées automatiquement quand vous affectez la valeur Diagnostic, Détaillé ou Normal au niveau de détail du journal de génération. Pour plus d’informations sur le niveau de détail, consultez [Guide pratique pour afficher, enregistrer et configurer des fichiers journaux de génération](../ide/how-to-view-save-and-configure-build-log-files.md).  
@@ -127,4 +110,3 @@ Vous pouvez « nettoyer » un journal de génération en spécifiant un ou plu
  [Procédure pas à pas : génération d’une application](../ide/walkthrough-building-an-application.md)   
  [Guide pratique pour afficher, enregistrer et configurer des fichiers journaux de génération](../ide/how-to-view-save-and-configure-build-log-files.md)   
  [Compilation et génération](../ide/compiling-and-building-in-visual-studio.md)
-

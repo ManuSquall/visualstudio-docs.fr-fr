@@ -4,39 +4,21 @@ ms.custom:
 ms.date: 02/24/2017
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-debug
+ms.technology: vs-ide-debug
 ms.tgt_pltfrm: 
 ms.topic: article
 ms.assetid: 668a6603-5082-4c78-98e6-f3dc871aa55b
-caps.latest.revision: 8
-author: BrianPeek
-ms.author: brpeek
+caps.latest.revision: "8"
+author: mikejo5000
+ms.author: mikejo
 manager: ghogen
-dev_langs:
-- C++
-translation.priority.ht:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
+dev_langs: C++
+ms.openlocfilehash: 10d4ab630132d8ce4191978de669436ca7ba5852
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
 ms.translationtype: HT
-ms.sourcegitcommit: 7c87490f8e4ad01df8761ebb2afee0b2d3744fe2
-ms.openlocfilehash: f2a659347823fee4b933463011c0b69c07fa937f
-ms.contentlocale: fr-fr
-ms.lasthandoff: 09/06/2017
-
+ms.contentlocale: fr-FR
+ms.lasthandoff: 10/31/2017
 ---
-
 # <a name="custom-native-etw-heap-events"></a>Événements de tas ETW natifs personnalisés
 
 Visual Studio contient de nombreux [outils de profilage et de diagnostic](https://docs.microsoft.com/en-us/visualstudio/profiling/profiling-tools), y compris un profileur de mémoire native.  Ce profileur raccorde les [événements ETW](/windows-hardware/drivers/devtest/event-tracing-for-windows--etw-) à partir du fournisseur de tas et fournit une analyse indiquant comment la mémoire est allouée et utilisée.  Par défaut, cet outil peut uniquement analyser les allocations effectuées à partir du tas Windows standard, et aucune allocation en dehors de ce tas natif n’est affichée.
@@ -176,6 +158,5 @@ Comme avec le tas Windows standard, vous pouvez également utiliser cet outil po
 > Visual Studio contient également un outil **Utilisation de la mémoire** dans l’ensemble d’outils de **profilage des performances**, que vous pouvez activer à l’aide de l’option de menu **Déboguer > Profileur de performances** ou de la combinaison de touches **Alt+F2**.  Cette fonctionnalité n’inclut pas le suivi de tas et n’affiche pas votre tas personnalisé comme décrit ici.  Cette fonctionnalité est uniquement disponible dans la fenêtre **Outils de diagnostic**, que vous pouvez activer avec le menu **Déboguer > Fenêtres > Afficher les outils de diagnostic** ou la combinaison de touches **Ctrl+Alt+F2**.
 
 ## <a name="see-also"></a>Voir aussi
-* [Outils de profilage](https://docs.microsoft.com/en-us/visualstudio/profiling/profiling-tools)
-* [Utilisation de la mémoire](https://docs.microsoft.com/en-us/visualstudio/profiling/memory-usage)
-
+[Outils de profilage](https://docs.microsoft.com/en-us/visualstudio/profiling/profiling-tools)  
+[Utilisation de la mémoire](https://docs.microsoft.com/en-us/visualstudio/profiling/memory-usage)

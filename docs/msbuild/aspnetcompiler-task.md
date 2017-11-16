@@ -4,12 +4,10 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-sdk
+ms.technology: vs-ide-sdk
 ms.tgt_pltfrm: 
 ms.topic: article
-f1_keywords:
-- http://schemas.microsoft.com/developer/msbuild/2003#AspNetCompiler
+f1_keywords: http://schemas.microsoft.com/developer/msbuild/2003#AspNetCompiler
 dev_langs:
 - VB
 - CSharp
@@ -19,29 +17,15 @@ helpviewer_keywords:
 - MSBuild, AspNetCompiler task
 - AspNetCompiler task [MSBuild]
 ms.assetid: f811c019-a67b-4d54-82e6-e29549496f6e
-caps.latest.revision: 11
+caps.latest.revision: "11"
 author: kempb
 ms.author: kempb
 manager: ghogen
-translation.priority.ht:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
-translationtype: Human Translation
-ms.sourcegitcommit: 26c3d46033a59f88e70b6afde25a25c1ef5e77e8
-ms.openlocfilehash: 0227d24dda3ca6a94092361f70c7e699c2c79c71
-ms.lasthandoff: 02/22/2017
-
+ms.openlocfilehash: 4cb7e3ab70fb2820ed2ecdb38b5876c5daf956fd
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: HT
+ms.contentlocale: fr-FR
+ms.lasthandoff: 10/31/2017
 ---
 # <a name="aspnetcompiler-task"></a>AspNetCompiler, tâche
 La tâche `AspNetCompiler` inclut dans un wrapper aspnet_compiler.exe, un utilitaire permettant de précompiler des applications [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)].  
@@ -66,8 +50,8 @@ La tâche `AspNetCompiler` inclut dans un wrapper aspnet_compiler.exe, un utilit
 |`Updateable`|Paramètre `Boolean` facultatif.<br /><br /> Si ce paramètre a la valeur `true`, l’application précompilée peut être mise à jour.  La valeur par défaut est `false`. Ce paramètre correspond au commutateur **-u** dans aspnet_compiler.exe.|  
 |`VirtualPath`|Paramètre `String` facultatif.<br /><br /> Chemin virtuel de l’application à compiler. Si `PhysicalPath` est spécifié, le chemin physique est utilisé pour localiser l’application. Sinon, la métabase IIS est utilisée et l’application se trouve théoriquement dans le site par défaut. Ce paramètre correspond au commutateur **-v** dans aspnet_compiler.exe.|  
   
-## <a name="remarks"></a>Notes  
- Outre les paramètres énumérés ci-dessus, cette tâche hérite des paramètres de la classe <xref:Microsoft.Build.Tasks.ToolTaskExtension>, qui hérite elle-même de la classe <xref:Microsoft.Build.Utilities.ToolTask>. Pour obtenir la liste de ces paramètres supplémentaires et de leurs descriptions, consultez l’article [ToolTaskExtension Base Class (Classe de base ToolTaskExtension)](../msbuild/tooltaskextension-base-class.md).  
+## <a name="remarks"></a>Remarques  
+ En plus des paramètres énumérés ci-dessus, cette tâche hérite des paramètres de la classe <xref:Microsoft.Build.Tasks.ToolTaskExtension>, qui elle-même hérite de la classe <xref:Microsoft.Build.Utilities.ToolTask>. Pour obtenir la liste de ces paramètres supplémentaires et de leurs descriptions, consultez l’article [ToolTaskExtension Base Class (Classe de base ToolTaskExtension)](../msbuild/tooltaskextension-base-class.md).  
   
 ## <a name="example"></a>Exemple  
  L’exemple de code suivant utilise la tâche `AspNetCompiler` pour précompiler une application [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)].  
@@ -89,4 +73,3 @@ La tâche `AspNetCompiler` inclut dans un wrapper aspnet_compiler.exe, un utilit
 ## <a name="see-also"></a>Voir aussi  
  [Tâches MSBuild](../msbuild/msbuild-tasks.md)   
  [Task Reference (Informations de référence sur les tâches MSBuild)](../msbuild/msbuild-task-reference.md)
-

@@ -4,8 +4,7 @@ ms.custom:
 ms.date: 05/08/2017
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-general
+ms.technology: vs-ide-general
 ms.tgt_pltfrm: 
 ms.topic: article
 ms.devlang: csharp
@@ -16,12 +15,11 @@ manager: ghogen
 dev_langs:
 - CSharp
 - VB
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 8bf0b097be929b30627e0f1139c6e0b145933ab4
-ms.openlocfilehash: ec2ae70312c7cb5f26630246046cadc7c210e1c2
-ms.contentlocale: fr-fr
-ms.lasthandoff: 05/26/2017
-
+ms.openlocfilehash: 1ba45a0ac183c4f2249461048277eda7cffad1e9
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: HT
+ms.contentlocale: fr-FR
+ms.lasthandoff: 10/31/2017
 ---
 # <a name="quick-actions"></a>Actions rapides
 
@@ -405,6 +403,5 @@ Select Case obj
 End Select
 ```
 
-# <a name="see-also"></a>Voir aussi
+## <a name="see-also"></a>Voir aussi
 * [Styles de code et actions rapides](code-styles-and-quick-actions.md)
-

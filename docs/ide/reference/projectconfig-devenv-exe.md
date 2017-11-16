@@ -4,8 +4,7 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-general
+ms.technology: vs-ide-general
 ms.tgt_pltfrm: 
 ms.topic: article
 helpviewer_keywords:
@@ -21,29 +20,15 @@ helpviewer_keywords:
 - projects [Visual Studio], build configuration
 - projects [Visual Studio], cleaning
 ms.assetid: 6b54ef59-ffed-4f62-a645-1279ede97ebf
-caps.latest.revision: 11
-author: kempb
-ms.author: kempb
+caps.latest.revision: "11"
+author: gewarren
+ms.author: gewarren
 manager: ghogen
-translation.priority.ht:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
-translationtype: Human Translation
-ms.sourcegitcommit: 5db97d19b1b823388a465bba15d057b30ff0b3ce
-ms.openlocfilehash: 02fd2a046b7b4070fa4e1903bd13772c518a7207
-ms.lasthandoff: 02/22/2017
-
+ms.openlocfilehash: 954d2807e510e43e0931070335dce5f92d5c2464
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: HT
+ms.contentlocale: fr-FR
+ms.lasthandoff: 10/31/2017
 ---
 # <a name="projectconfig-devenvexe"></a>/ProjectConfig (devenv.exe)
 Spécifie une configuration de build de projet à appliquer quand vous générez, nettoyez, régénérez ou déployez le projet nommé dans l’argument `/project`.  
@@ -74,7 +59,7 @@ devenv SolutionName {/build|/clean|/rebuild|/deploy} SolnConfigName [/project Pr
  Obligatoire. Chemin complet et nom du fichier solution.  
   
  /project `ProjName`  
- Facultatif. Chemin et nom d’un fichier projet dans la solution. Vous pouvez entrer un chemin relatif allant du dossier `SolutionName` au fichier projet, le nom d’affichage du projet ou le chemin complet et le nom du fichier projet.  
+ Facultatif. Chemin et nom d’un fichier projet dans la solution. Vous pouvez entrer un chemin relatif du dossier `SolutionName` vers le fichier projet, le nom d’affichage du projet ou encore le chemin complet et le nom du fichier projet.  
   
  /projectconfig `ProjConfigName`  
  Facultatif. Nom d’une configuration de build de projet à appliquer au `/project` nommé.  
@@ -88,7 +73,7 @@ devenv SolutionName {/build|/clean|/rebuild|/deploy} SolnConfigName [/project Pr
 -   Vous pouvez afficher des informations récapitulatives sur les builds, y compris sur les erreurs, dans la fenêtre **Commande** ou dans tout fichier journal spécifié avec le commutateur `/out`.  
   
 ## <a name="example"></a>Exemple  
- Cet exemple génère le projet `CSharpConsoleApp`, à l’aide la configuration de build de projet `Debug` au sein de la configuration de solution `Debug` de `MySolution`.  
+ Cet exemple génère le projet `CSharpConsoleApp` en utilisant la configuration de génération de projet `Debug` présente dans la configuration de solution `Debug` de `MySolution`.  
   
 ```  
 devenv "C:\Documents and Settings\someuser\My Documents\Visual Studio\Projects\MySolution\MySolution.sln" /build Debug /project "CSharpWinApp\CSharpWinApp.csproj" /projectconfig Debug   

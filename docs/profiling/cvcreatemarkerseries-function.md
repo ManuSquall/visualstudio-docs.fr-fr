@@ -1,32 +1,33 @@
 ---
-title: "CvCreateMarkerSeries, fonction | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-debug"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "cvmarkers/CvCreateMarkerSeriesA"
-  - "cvmarkers/CvCreateMarkerSeriesW"
-helpviewer_keywords: 
-  - "CvCreateMarkerSeriesA (méthode)"
-  - "CvCreateMarkerSeriesW (méthode)"
+title: CvCreateMarkerSeries, fonction | Microsoft Docs
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-debug
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords:
+- cvmarkers/CvCreateMarkerSeriesA
+- cvmarkers/CvCreateMarkerSeriesW
+helpviewer_keywords:
+- CvCreateMarkerSeriesA method
+- CvCreateMarkerSeriesW method
 ms.assetid: e280530b-137a-43a7-8643-aa514ab86ed7
-caps.latest.revision: 3
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 3
+caps.latest.revision: "3"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: 5eccac7a0b139b830121add61518c23fa055ca23
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: HT
+ms.contentlocale: fr-FR
+ms.lasthandoff: 10/31/2017
 ---
-# CvCreateMarkerSeries, fonction
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
-
-Crée des séries de marqueur pour un fournisseur donné.  
+# <a name="cvcreatemarkerseries-function"></a>CvCreateMarkerSeries, fonction
+Crée des séries de marqueurs pour un fournisseur donné.  
   
-## Syntaxe  
+## <a name="syntax"></a>Syntaxe  
   
 ```  
 _Check_return_ HRESULT CvCreateMarkerSeriesW(  
@@ -40,25 +41,25 @@ _Check_return_ HRESULT CvCreateMarkerSeriesA(
     _Out_ PCV_MARKERSERIES* ppMarkerSeries);  
 ```  
   
-#### Paramètres  
+#### <a name="parameters"></a>Paramètres  
  `pProvider`  
- Objet fournisseur déjà initialisé par CvInitProvider.  Ne peut pas être NULL.  
+ Objet fournisseur précédemment initialisé par CvInitProvider. Ne peut pas être Null.  
   
  `pSeriesName`  
- Nom de série d'un marqueur.  Ne peut pas être NULL mais une chaîne vide est autorisée.  
+ Nom de la série de marqueurs. Ne peut pas être Null, mais une chaîne vide est acceptée.  
   
  `ppMarkerSeries`  
- Adresse d'une variable de sortie qui stockera le contexte du marqueur des séries.  Ne peut pas être NULL.  
+ Adresse d’une variable de sortie qui doit stocker le contexte de la série de marqueurs. Ne peut pas être Null.  
   
-## Valeur de retour  
- S\_OK lorsque la série de marqueur est correctement créée ou un code d'erreur dans le cas où il y a une erreur.  Utiliser la macros SUCCEEDED\/FAILED pour vérifier la condition d'erreur.  
+## <a name="return-value"></a>Valeur de retour  
+ S_OK lorsque la série de marqueurs est correctement créée, ou code d’erreur en cas d’erreur. Utilisez les macros SUCCEEDED/FAILED pour vérifier la condition d’erreur.  
   
-## Configuration requise  
- **en\-tête :** cvmarkers.h  
+## <a name="requirements"></a>Spécifications  
+ **En-tête** : cvmarkers.h  
   
- **Unicode :** CvCreateMarkerSeriesW  
+ **Unicode** : CvCreateMarkerSeriesW  
   
- **ANSI :** CvCreateMarkerSeriesA  
+ **ANSI** : CvCreateMarkerSeriesA  
   
-## Voir aussi  
- [Référence de bibliothèque C\+\+](../profiling/cpp-library-reference.md)
+## <a name="see-also"></a>Voir aussi  
+ [Informations de référence sur la bibliothèque C++](../profiling/cpp-library-reference.md)

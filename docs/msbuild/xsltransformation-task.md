@@ -4,8 +4,7 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-sdk
+ms.technology: vs-ide-sdk
 ms.tgt_pltfrm: 
 ms.topic: article
 dev_langs:
@@ -17,35 +16,21 @@ helpviewer_keywords:
 - MSBuild, XslTransformation task
 - XslTransformation task [MSBuild]
 ms.assetid: 6f3a7d81-3ae3-4703-9a06-870b32b69d80
-caps.latest.revision: 4
+caps.latest.revision: "4"
 author: kempb
 ms.author: kempb
 manager: ghogen
-translation.priority.ht:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
-translationtype: Human Translation
-ms.sourcegitcommit: 5db97d19b1b823388a465bba15d057b30ff0b3ce
-ms.openlocfilehash: d240cca44bf389f97eaa7f4709690c0dc89cacc1
-ms.lasthandoff: 02/22/2017
-
+ms.openlocfilehash: 15f8267b1dadc22e494e51a3e9a7f4e5fff2d042
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: HT
+ms.contentlocale: fr-FR
+ms.lasthandoff: 10/31/2017
 ---
 # <a name="xsltransformation-task"></a>XslTransformation, tâche
 Transforme une entrée XML à l’aide d’une transformation XSLT ou XSLT compilée, et génère la sortie dans un fichier ou un périphérique de sortie.  
   
 ## <a name="parameters"></a>Paramètres  
- Le tableau ci-dessous décrit les paramètres de la tâche `XslTransformation`.  
+ Le tableau ci-dessous décrit les paramètres de la tâche `XslTransformation` .  
   
 |Paramètre|Description|  
 |---------------|-----------------|  
@@ -57,8 +42,8 @@ Transforme une entrée XML à l’aide d’une transformation XSLT ou XSLT compi
 |`XslContent`|Paramètre `String` facultatif.<br /><br /> Spécifie l’entrée XSLT sous forme de chaîne.|  
 |`XslInputPath`|Paramètre <xref:Microsoft.Build.Framework.ITaskItem> facultatif.<br /><br /> Spécifie le fichier d’entrée XSLT.|  
   
-## <a name="remarks"></a>Notes  
- Outre les paramètres énumérés dans le tableau, cette tâche hérite des paramètres de la classe <xref:Microsoft.Build.Tasks.TaskExtension>, qui elle-même hérite de la classe <xref:Microsoft.Build.Utilities.Task>. Pour obtenir la liste de ces paramètres supplémentaires et de leurs descriptions, consultez l’article [TaskExtension Base Class (Classe de base TaskExtension)](../msbuild/taskextension-base-class.md).  
+## <a name="remarks"></a>Remarques  
+ En plus des paramètres répertoriés dans le tableau, cette tâche comprend des paramètres qu’elle hérite de la classe <xref:Microsoft.Build.Tasks.TaskExtension>, qui elle-même hérite de la classe <xref:Microsoft.Build.Utilities.Task>. Pour obtenir la liste de ces paramètres supplémentaires et leurs descriptions, consultez [TaskExtension Base Class](../msbuild/taskextension-base-class.md).  
   
 ## <a name="see-also"></a>Voir aussi  
  [Tâches MSBuild](../msbuild/msbuild-tasks.md)   

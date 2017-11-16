@@ -4,37 +4,20 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-sdk
+ms.technology: vs-ide-sdk
 ms.tgt_pltfrm: 
 ms.topic: article
-helpviewer_keywords:
-- MSBuild, tutorial
+helpviewer_keywords: MSBuild, tutorial
 ms.assetid: b8a8b866-bb07-4abf-b9ec-0b40d281c310
-caps.latest.revision: 32
+caps.latest.revision: "32"
 author: kempb
 ms.author: kempb
 manager: ghogen
-translation.priority.ht:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
+ms.openlocfilehash: 9500cdb26b51d3a91b9565c7ef0353907e9afe7c
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
 ms.translationtype: HT
-ms.sourcegitcommit: 6d25db4639f2c8391c1e32542701ea359f560178
-ms.openlocfilehash: 34c78f4573bc2b11e738c3722cefaa8e294287b5
-ms.contentlocale: fr-fr
-ms.lasthandoff: 07/18/2017
-
+ms.contentlocale: fr-FR
+ms.lasthandoff: 10/31/2017
 ---
 # <a name="walkthrough-using-msbuild"></a>Procédures pas à pas : utilisation de MSBuild
 MSBuild est la plateforme de génération pour Microsoft et Visual Studio. Cette procédure pas à pas vous présente les blocs de construction de MSBuild, et vous indique comment écrire, manipuler et déboguer des projets MSBuild. Vous allez découvrir comment :  
@@ -597,4 +580,3 @@ $(PropertyName)
 ## <a name="see-also"></a>Voir aussi
 [MSBuild Overview (Vue d’ensemble de MSBuild)](../msbuild/msbuild.md)  
  [Informations de référence sur MSBuild](../msbuild/msbuild-reference.md)
-
