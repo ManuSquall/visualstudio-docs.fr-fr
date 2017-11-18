@@ -1,35 +1,37 @@
 ---
-title: "Objet Array ou arguments attendu | Microsoft Docs"
-ms.custom: ""
-ms.date: "01/18/2017"
-ms.prod: "windows-client-threshold"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "javascript"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "VS.WebClient.Help.SCRIPT5028"
-dev_langs: 
-  - "JavaScript"
-  - "TypeScript"
-  - "DHTML"
+title: "Array ou arguments attendu d’objet | Documents Microsoft"
+ms.custom: 
+ms.date: 01/18/2017
+ms.prod: windows-client-threshold
+ms.reviewer: 
+ms.suite: 
+ms.technology: javascript
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords: VS.WebClient.Help.SCRIPT5028
+dev_langs:
+- JavaScript
+- TypeScript
+- DHTML
 ms.assetid: 22b83e2f-8916-46db-8d8c-50c8481b7c90
-caps.latest.revision: 7
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 7
+caps.latest.revision: "7"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: 0bc287026c88687274ad63cc6c1cd03309af8b93
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.translationtype: MT
+ms.contentlocale: fr-FR
+ms.lasthandoff: 10/27/2017
 ---
-# Objet Array ou arguments attendu
-Vous n'avez pas fourni de tableau comme argument.  Cette erreur s'applique uniquement à la méthode **Function.prototype.apply**.  S'il est spécifié, le deuxième argument de cette fonction doit être un objet `Array` ou un objet **Arguments**.  
+# <a name="array-or-arguments-object-expected"></a>Objet Array ou Arguments attendu
+Vous n’avez pas fourni un tableau en tant qu’argument. Cette erreur s’applique à la **Function.prototype.apply** méthode uniquement. Si spécifié, le deuxième argument à cette fonction doit être un `Array` objet ou un **Arguments** objet.  
   
-### Pour corriger cette erreur  
+### <a name="to-correct-this-error"></a>Pour corriger cette erreur  
   
--   Spécifiez un objet `Array` ou **Arguments** comme deuxième argument.  
+-   Spécifiez un `Array` ou **Arguments** objet comme deuxième argument.  
   
-## Voir aussi  
- [Utilisation de tableaux](../../javascript/advanced/using-arrays-javascript.md)   
- [apply, méthode \(Function\)](../../javascript/reference/apply-method-function-javascript.md)   
+## <a name="see-also"></a>Voir aussi  
+ [Utilisation des tableaux](../../javascript/advanced/using-arrays-javascript.md)   
+ [Apply (méthode) (fonction)](../../javascript/reference/apply-method-function-javascript.md)   
  [Fonctions](../../javascript/functions-javascript.md)

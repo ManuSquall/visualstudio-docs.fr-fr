@@ -1,52 +1,35 @@
 ---
-title: Browse and Select a .NET Type Dialog Box (Legacy) | Microsoft Docs
+title: "Rechercher et sélectionner une boîte de dialogue du Type .NET (hérité) | Documents Microsoft"
 ms.custom: 
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
 ms.tgt_pltfrm: 
 ms.topic: reference
-f1_keywords:
-- System.Workflow.ComponentModel.Design.TypeBrowserDialog.UI
-helpviewer_keywords:
-- Browse and Select a .NET Type dialog box
+f1_keywords: System.Workflow.ComponentModel.Design.TypeBrowserDialog.UI
+helpviewer_keywords: Browse and Select a .NET Type dialog box
 ms.assetid: 1e66c9bc-94b2-46e2-bedf-871752e5f917
-caps.latest.revision: 5
+caps.latest.revision: "5"
 author: ErikRe
 ms.author: erikre
 manager: erikre
-translation.priority.ht:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
-ms.translationtype: HT
-ms.sourcegitcommit: 21a413a3e2d17d77fd83d5109587a96f323a0511
-ms.openlocfilehash: c43d85c2eb702cc1a0d34c4e77259f90a9788777
-ms.contentlocale: fr-fr
-ms.lasthandoff: 08/30/2017
-
+ms.openlocfilehash: 2733464db0ab6047af7c47fb8278d7126b41fe6c
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.translationtype: MT
+ms.contentlocale: fr-FR
+ms.lasthandoff: 10/27/2017
 ---
-# <a name="browse-and-select-a-net-type-dialog-box-legacy"></a>Browse and Select a .NET Type Dialog Box (Legacy)
-This topic describes how use the **Browse and Select a .NET Type** dialog box in the legacy [!INCLUDE[wfd1](../workflow-designer/includes/wfd1_md.md)]. Use the legacy [!INCLUDE[wfd2](../workflow-designer/includes/wfd2_md.md)] when you need to target either the [!INCLUDE[netfx35_long](../workflow-designer/includes/netfx35_long_md.md)] or the [!INCLUDE[vstecwinfx](../workflow-designer/includes/vstecwinfx_md.md)].  
+# <a name="browse-and-select-a-net-type-dialog-box-legacy"></a>Rechercher et sélectionner un type .NET, boîte de dialogue (héritée)
+Cette rubrique décrit comment utiliser le **rechercher et sélectionner un Type .NET** boîte de dialogue de l’héritage [!INCLUDE[wfd1](../workflow-designer/includes/wfd1_md.md)]. Utilisez le [!INCLUDE[wfd2](../workflow-designer/includes/wfd2_md.md)] hérité lorsque vous devez cibler le [!INCLUDE[netfx35_long](../workflow-designer/includes/netfx35_long_md.md)] ou le [!INCLUDE[vstecwinfx](../workflow-designer/includes/vstecwinfx_md.md)].  
   
- In the **Properties** window, when you select properties that take a .NET Framework type in a referenced assembly, an ellipsis **[...]** appears at the end of the property's text box. Clicking the **[...]** opens the **Browse and Select a .NET Type** dialog box. In this dialog box, you can pick a type from a tree view of the referenced assemblies. For example, when you are using the Activity Designer, in the **Properties** window, click the **Base Class** ellipsis **[...]** to select another base class for an activity from the Referenced Assemblies tree.  
+ Dans le **propriétés** fenêtre, lorsque vous sélectionnez des propriétés qui acceptent un type .NET Framework dans un assembly référencé, les points de suspension **[...]**  apparaît à la fin de la zone de texte de la propriété. En cliquant sur le **[...]**  ouvre le **rechercher et sélectionner un Type .NET** boîte de dialogue. Dans cette boîte de dialogue, vous pouvez choisir un type dans l’arborescence des assemblys référencés. Par exemple, lorsque vous utilisez le Concepteur d’activités, dans le **propriétés** fenêtre, cliquez sur le **une classe de Base** points de suspension **[...]**  pour sélectionner une autre classe de base pour une activité à partir de l’arborescence des assemblys référencés.  
   
- The following table describes the user interface (UI) elements of the **Browse and Select a .NET Type** dialog box.  
+ Le tableau suivant décrit les éléments d’interface utilisateur utilisateur de la **rechercher et sélectionner un Type .NET** boîte de dialogue.  
   
-|UI Element|Description|  
+|Élément d'interface utilisateur|Description|  
 |----------------|-----------------|  
-|**Type Name:**|The name of the currently selected type.|  
-|**Type**|Left pane displays a tree view of the Referenced Assemblies. Right pane displays the types available for the selection from the Referenced Assembly selected in the left pane.|  
+|**Nom du type :**|Nom du type actuellement sélectionné.|  
+|**Type**|Le volet de gauche affiche l’arborescence des assemblys référencés. Le volet de droite affiche les types disponibles pour l'assembly référencé sélectionné dans le volet de gauche.|  
   
-## <a name="see-also"></a>See Also  
- [Using the Legacy Activity Designer](../workflow-designer/using-the-legacy-activity-designer.md)
+## <a name="see-also"></a>Voir aussi  
+ [Utilisation du concepteur d’activités hérité](../workflow-designer/using-the-legacy-activity-designer.md)

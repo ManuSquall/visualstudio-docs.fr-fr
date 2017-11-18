@@ -1,116 +1,116 @@
 ---
-title: "Personnalisation de l&#39;Explorateur de mod&#232;les | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "vs.dsltools.dsldesigner.explorerbehavior"
-helpviewer_keywords: 
-  - "outils de langage spécifique à un domaine, explorateur de langage spécifique à un domaine"
+title: "Personnalisation de l’Explorateur de modèles | Documents Microsoft"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords: vs.dsltools.dsldesigner.explorerbehavior
+helpviewer_keywords: Domain-Specific Language Tools, Domain-Specific Language Explorer
 ms.assetid: d2926444-9408-41d8-a27e-3fd0c416f9ac
-caps.latest.revision: 20
-author: "alancameronwills"
-ms.author: "awills"
-manager: "douge"
-caps.handback.revision: 20
+caps.latest.revision: "20"
+author: alancameronwills
+ms.author: awills
+manager: douge
+ms.openlocfilehash: 880b10da32e858ce6e532bc5b8e75227a6e999d7
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.translationtype: MT
+ms.contentlocale: fr-FR
+ms.lasthandoff: 10/27/2017
 ---
-# Personnalisation de l&#39;Explorateur de mod&#232;les
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
-
-Vous pouvez modifier l'apparence et le comportement de l'explorateur pour votre concepteur de langage spécifique au domaine comme suit :  
+# <a name="customizing-the-model-explorer"></a>Personnalisation de l'Explorateur de modèles
+Vous pouvez modifier l’apparence et le comportement de l’Explorateur de votre Concepteur de langage spécifique à un domaine comme suit :  
   
--   Modifiez le titre de la fenêtre.  
+-   Modifier le titre de la fenêtre.  
   
--   modifiez l'icône d'onglet.  
+-   Modifier l’icône d’onglet.  
   
--   Modifiez les icônes pour les nœuds.  
+-   Modifier les icônes pour les nœuds.  
   
 -   Masquer les nœuds.  
   
-## Modifier le titre de la fenêtre  
- Pour modifier le titre de la fenêtre de l'explorateur généré, sélectionnez **Comportement de l'explorateur** dans **Explorateur DÉSOLÉ**, puis dans la fenêtre de **Propriétés** , affectez à la propriété de **Title** dans le titre que vous souhaitez.  
+## <a name="changing-the-window-title"></a>Modification du titre de fenêtre  
+ Pour modifier le titre de la fenêtre de l’Explorateur généré, sélectionnez **comportement de l’Explorateur de** dans les **Explorateur DSL**, puis, dans le **propriétés** , configurez le  **Titre** propriété pour le titre de votre choix.  
   
-## modifier l'icône d'Onglet  
- Pour modifier l'icône d'onglet de l'explorateur, utilisez une icône de 16 x 16 pixels dans un fichier .bmp.  Mettez le fichier icône dans \\DslPackage\\Resources\\ folder, and then change the file name to ModelExplorerToolWindowBitmaps .bmp.  Par exemple, vous pouvez modifier le fichier icône de [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] setup.ico au format .bmp\) et le renommer à DSLLanguageName \\DslPackage\\Resources\\ModelExplorerToolWindowBitmaps .bmp.  Le concepteur généré affiche cette icône sous l'onglet de votre explorateur lorsqu'il est ancré avec **Explorateur de solutions**.  
+## <a name="changing-the-tab-icon"></a>Modification de l’icône d’onglet  
+ Pour modifier l’icône de l’onglet de l’Explorateur, utilisent une icône de 16 x 16 pixels dans un fichier .bmp. Placez le fichier d’icône dans le dossier \DslPackage\Resources\, puis modifiez le nom de fichier à **ModelExplorerToolWindowBitmaps.bmp**. Par exemple, vous pouvez modifier le [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] setup.ico icône de fichier au format .bmp et renommez-la **DSLLanguageName\DslPackage\Resources\ModelExplorerToolWindowBitmaps.bmp**. Le concepteur généré affiche cette icône sous l’onglet de l’Explorateur de votre lorsqu’elle est ancrée avec **l’Explorateur de solutions**.  
   
-## Images personnalisées de paramètre sur des nœuds de l'explorateur  
- Vous pouvez personnaliser des nœuds dans votre explorateur à l'aide de les paramètres de nœud de l'explorateur.  La procédure suivante montre comment ajouter une icône à un nœud.  
+## <a name="setting-custom-icons-on-explorer-nodes"></a>Définition d’icônes personnalisées sur les nœuds de l’Explorateur  
+ Vous pouvez personnaliser les nœuds dans l’Explorateur de votre à l’aide des paramètres de nœud de l’Explorateur. La procédure suivante montre comment ajouter une icône à un nœud.  
   
-#### Pour ajouter une icône à un nœud de l'explorateur  
+#### <a name="to-add-an-icon-to-an-explorer-node"></a>Pour ajouter une icône pour un nœud de l’Explorateur  
   
-1.  Créez une solution de [!INCLUDE[dsl](../modeling/includes/dsl_md.md)] à l'aide de le modèle de solution de flux de travail.  
+1.  Créer un [!INCLUDE[dsl](../modeling/includes/dsl_md.md)] solution à l’aide du modèle de solution de flux de tâches.  
   
-2.  Placez un fichier .bmp qui contient une icône de 16 x 16 pixels dans le dossier de **DÉSOLÉ \\Resources** dans la solution.  
+2.  Placez un fichier .bmp qui contient une icône de 16 x 16 pixels dans les **Dsl\Resources** dossier dans la solution.  
   
-3.  Dans **Explorateur DÉSOLÉ**, cliquez avec le bouton droit sur **Comportement de l'explorateur** puis cliquez sur **Ajoutez les nouveaux paramètres de nœud de l'explorateur**.  
+3.  Dans le **Explorateur DSL**, avec le bouton droit **Explorer comportement** puis cliquez sur **ajouter des paramètres de nœud de l’Explorateur de nouveau**.  
   
-     Un nœud d' **ExplorerNodeSettings** s'affiche sous le nœud de **Paramètres personnalisés de nœud** .  
+     Un **ExplorerNodeSettings** nœud apparaît sous la **configuration personnalisée du nœud** nœud.  
   
-4.  Sélectionnez **ExplorerNodeSettings**, puis dans la fenêtre de **Propriétés** , définit **Classe** à **Acteur**.  
+4.  Sélectionnez **ExplorerNodeSettings**, puis, dans le **propriétés** , configurez **classe** à **acteur**.  
   
-5.  Définissez **Icône à afficher** au chemin d'accès du fichier icône.  
+5.  Définissez **icône à afficher** pour le chemin d’accès du fichier icône.  
   
-6.  Transformez tous les modèles, puis générez et exécutez la solution.  
+6.  Transformer tous les modèles, puis créer et exécuter la solution.  
   
-7.  Dans le concepteur généré, ouvrez le diagramme d'exemple.  
+7.  Dans le concepteur généré, ouvrez l’exemple de diagramme.  
   
-     L'explorateur doit afficher trois nœuds d' **Acteur** qui ont votre icône.  
+     L’Explorateur doit afficher trois **acteur** nœuds ayant l’icône.  
   
 > [!NOTE]
->  Si vous avez défini une icône de nœud pour tout élément affiché dans l'explorateur généré, tous les nœuds de l'explorateur affichent l'icône.  Si aucune icône n'a été définie, les nœuds affichent l'icône par défaut.  
+>  Si vous avez défini une icône de nœud pour tout élément qui est affiché dans l’Explorateur généré, tous les nœuds de l’Explorateur affiche l’icône. Si aucune icône n’a été défini, les nœuds affiche l’icône par défaut.  
   
-## La modification du nom affiché sur un nœud de l'explorateur  
- Vous pouvez modifier la façon dont les noms d'éléments de modèle sont affichés dans votre explorateur.  La procédure suivante indique comment afficher le nom de la tâche qui est référencée par un commentaire dans le nœud de commentaire.  
+## <a name="changing-the-name-displayed-on-an-explorer-node"></a>La modification du nom affiché sur un nœud de l’Explorateur  
+ Vous pouvez modifier la façon dont les noms des éléments de modèle sont affichés dans l’Explorateur de votre. La procédure suivante montre comment afficher le nom de la **tâche** qui est référencé par une **commentaire** dans le nœud de commentaire.  
   
-#### pour afficher une propriété  
+#### <a name="to-display-a-property"></a>Pour afficher une propriété  
   
-1.  Ouvrez la solution que vous avez créée dans la procédure antérieure.  
+1.  Ouvrez la solution que vous avez créé dans la procédure précédente.  
   
-2.  Assurez \-vous que le commentaire référence qu'une seule classe de domaine en définissant la multiplicité du rôle du nom de la propriété **Sujets** à 0..1.  Le nom de la propriété doit être **Objet**, et le nom de la relation doit être **CommentReferencesSubject**.  
+2.  Assurez-vous que le **commentaire** fait référence à une classe de domaine unique en définissant la multiplicité du rôle avec le nom de la propriété **sujets** 0.. 1. Le nom de propriété doit devenir **sujet**, et le nom de la relation doit devenir **CommentReferencesSubject**.  
   
-3.  Dans **Explorateur DÉSOLÉ**, cliquez avec le bouton droit sur **Comportement de l'explorateur** puis cliquez sur **Ajoutez les nouveaux paramètres de nœud de l'explorateur**.  
+3.  Dans le **Explorateur DSL**, avec le bouton droit **Explorer comportement** puis cliquez sur **ajouter des paramètres de nœud de l’Explorateur de nouveau**.  
   
-     Un nœud d' **ExplorerNodeSettings** s'affiche sous le nœud de **Paramètres personnalisés de nœud** .  
+     Un **ExplorerNodeSettings** nœud apparaît sous la **configuration personnalisée du nœud** nœud.  
   
-4.  Sélectionnez **ExplorerNodeSettings**, puis dans la fenêtre de **Propriétés** , définit **Classe** à **Commentaire**.  
+4.  Sélectionnez **ExplorerNodeSettings**, puis, dans le **propriétés** , configurez **classe** à **commentaire**.  
   
-5.  Cliquez avec le bouton droit sur le nœud de **Commentaire** , puis cliquez sur **ajoutez le nouveau chemin de propriété**.  
+5.  Cliquez sur le **commentaire** nœud, puis cliquez sur **ajouter un nouveau chemin de propriété**.  
   
      Un nouveau nœud apparaît nommé **propriété affichée**.  
   
-6.  Sélectionnez **propriété affichée**, puis dans la fenêtre de **Propriétés** , cliquez sur le champ de valeur de **Chemin d'accès de la propriété**.  sélectionnez **Commentaire**, puis **CommentReferencesSubject**, puis **élément de flux**.  Le chemin d'accès en résulte doit ressembler à **CommentReferencesSubject.Subject\/\!Objet**.  
+6.  Sélectionnez **propriété affichée**, puis, dans le **propriétés** fenêtre, cliquez sur le champ de valeur de **chemin d’accès à la propriété**. Sélectionnez **commentaire**, puis **CommentReferencesSubject**, puis **élément FlowElement**. Le chemin d’accès qui en résulte doit ressembler à **CommentReferencesSubject.Subject/ ! Objet**.  
   
-7.  Dans le champ valeur de **Property**, sélectionnez **Nom**.  
+7.  Dans le champ de valeur de **propriété**, sélectionnez **nom**.  
   
-8.  Transformez tous les modèles, puis générez et exécutez votre solution.  
+8.  Transformer tous les modèles, puis créer et exécuter votre solution.  
   
-9. Dans le concepteur généré, ouvrez le diagramme d'exemple.  
+9. Dans le concepteur généré, ouvrez l’exemple de diagramme.  
   
-10. Dessinez **connecteur de commentaire** entre l'élément commentaire et l'élément de **Tâche1** sur le diagramme.  
+10. Dessiner un **commentaire connecteur** entre l’élément et la **Task1** élément du diagramme.  
   
-     Le nœud de l'explorateur doit afficher le commentaire comme **Tâche1**.  
+     Le nœud de l’Explorateur doit afficher le commentaire **Task1**.  
   
-## Masquer les nœuds  
- Vous pouvez masquer un nœud dans votre explorateur en ajoutant son chemin d'accès au nœud de **Nœuds masqués** d' **Explorateur DÉSOLÉ**.  La procédure suivante explique comment masquer les nœuds de commentaire.  
+## <a name="hiding-nodes"></a>Le masquage des nœuds  
+ Vous pouvez masquer un nœud dans l’Explorateur de votre en ajoutant son chemin d’accès à la **masqué de nœuds** nœud de la **Explorateur DSL**. La procédure suivante montre comment masquer **commentaire** nœuds.  
   
-#### Pour masquer un nœud de l'explorateur  
+#### <a name="to-hide-an-explorer-node"></a>Pour masquer un nœud de l’Explorateur  
   
-1.  Ouvrez la solution que vous avez créée dans la procédure antérieure.  
+1.  Ouvrez la solution que vous avez créé dans la procédure précédente.  
   
-2.  Dans **Explorateur DÉSOLÉ**, cliquez avec le bouton droit sur **Comportement de l'explorateur** puis cliquez sur **ajoutez le nouveau chemin d'accès de domaine**.  
+2.  Dans le **Explorateur DSL**, avec le bouton droit **Explorer comportement** puis cliquez sur **ajouter un nouveau chemin de domaine**.  
   
-     Un nœud de **chemin d'accès de domaine** apparaît sous **Nœuds masqués**.  
+     A **chemin d’accès du domaine** nœud apparaît sous **masqué des nœuds**.  
   
-3.  Sélectionnez **chemin d'accès de domaine**, puis dans la fenêtre de **Propriétés** , cliquez sur le champ de valeur de **définition de chemin d'accès**.  sélectionnez **organigramme**, puis **FlowGraphHasComments**.  Le chemin d'accès en résulte doit ressembler à **FlowGraphHasComments.Comments**  
+3.  Sélectionnez **chemin d’accès du domaine**, puis, dans le **propriétés** fenêtre, cliquez sur le champ de valeur de **définition du chemin d’accès**. Sélectionnez **FlowGraph**, puis **FlowGraphHasComments**. Le chemin d’accès qui en résulte doit ressembler à **FlowGraphHasComments.Comments**  
   
-4.  Transformez tous les modèles, puis générez et exécutez votre solution.  
+4.  Transformer tous les modèles, puis créer et exécuter votre solution.  
   
-5.  Dans le concepteur généré, ouvrez le diagramme d'exemple.  
+5.  Dans le concepteur généré, ouvrez l’exemple de diagramme.  
   
-     L'explorateur doit afficher uniquement un nœud d' **Acteurs** , et ne doit pas afficher le nœud de **Comments** .  
+     L’Explorateur doit uniquement afficher une **acteurs** nœud et ne doit pas afficher le **commentaires** nœud.  
   
-## Voir aussi  
- [Domain\-Specific Language Tools Glossary](http://msdn.microsoft.com/fr-fr/ca5e84cb-a315-465c-be24-76aa3df276aa)
+## <a name="see-also"></a>Voir aussi  
+ [Glossaire des outils de langage spécifique à un domaine](http://msdn.microsoft.com/en-us/ca5e84cb-a315-465c-be24-76aa3df276aa)

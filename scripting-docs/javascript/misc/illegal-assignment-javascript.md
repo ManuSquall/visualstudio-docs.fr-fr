@@ -1,33 +1,35 @@
 ---
-title: "Assignation non conforme (JavaScript) | Microsoft Docs"
-ms.custom: ""
-ms.date: "01/18/2017"
-ms.prod: "windows-client-threshold"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "javascript"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "VS.WebClient.Help.SCRIPT5008"
-dev_langs: 
-  - "JavaScript"
-  - "TypeScript"
-  - "DHTML"
+title: Assignation non conforme (JavaScript) | Documents Microsoft
+ms.custom: 
+ms.date: 01/18/2017
+ms.prod: windows-client-threshold
+ms.reviewer: 
+ms.suite: 
+ms.technology: javascript
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords: VS.WebClient.Help.SCRIPT5008
+dev_langs:
+- JavaScript
+- TypeScript
+- DHTML
 ms.assetid: abebe518-07d7-42cd-af50-00bfda17da08
-caps.latest.revision: 7
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 7
+caps.latest.revision: "7"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: ed35b2751ff9dfbde62845caaf874cccfbc05805
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.translationtype: MT
+ms.contentlocale: fr-FR
+ms.lasthandoff: 10/27/2017
 ---
-# Assignation non conforme (JavaScript)
-Vous avez tenté d'assigner une valeur à un identificateur en lecture seule.  Or, assigner une valeur à un identificateur en lecture seule est impossible.  Par exemple, héberger des objets définis et les objets COM externes.  
+# <a name="illegal-assignment-javascript"></a>Assignation non conforme (JavaScript)
+Vous avez tenté d’assigner une valeur à un identificateur en lecture seule. Vous ne pouvez pas attribuer une valeur à un identificateur en lecture seule. Par exemple, hôte défini des objets et des objets COM externes.  
   
-### Pour corriger cette erreur  
+### <a name="to-correct-this-error"></a>Pour corriger cette erreur  
   
--   Ne pas assigner des valeurs aux identificateurs en lecture seule.  
+-   N’attribuez pas de valeurs aux identificateurs en lecture seule.  
   
-## Voir aussi  
- [Opérateur d'assignation \(\=\)](../../javascript/reference/assignment-operator-decrement-equal-javascript.md)
+## <a name="see-also"></a>Voir aussi  
+ [Opérateur d'assignation (=)](../../javascript/reference/assignment-operator-decrement-equal-javascript.md)

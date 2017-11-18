@@ -1,61 +1,63 @@
 ---
-title: "Comment : ouvrir un mod&#232;le depuis un fichier dans le code de programme | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+title: "Comment : ouvrir un modèle à partir du fichier de Code de programme | Documents Microsoft"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.tgt_pltfrm: 
+ms.topic: article
 ms.assetid: d7d68697-5418-4263-bdb2-48401924ea71
-caps.latest.revision: 8
-author: "alancameronwills"
-ms.author: "awills"
-manager: "douge"
-caps.handback.revision: 8
+caps.latest.revision: "8"
+author: alancameronwills
+ms.author: awills
+manager: douge
+ms.openlocfilehash: d225f991d7d0160f261c4a7c25c1251564a8b97b
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.translationtype: MT
+ms.contentlocale: fr-FR
+ms.lasthandoff: 10/27/2017
 ---
-# Comment : ouvrir un mod&#232;le depuis un fichier dans le code de programme
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
-
-Vous pouvez ouvrir des modèles DÉSOLÉ dans n'importe quelle application.  
+# <a name="how-to-open-a-model-from-file-in-program-code"></a>Comment : ouvrir un modèle depuis un fichier dans le code de programme
+Vous pouvez ouvrir les modèles DSL dans n’importe quelle application.  
   
- d'une extension de [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] , vous pouvez utiliser ModelBus à cet effet.  ModelBus fournit le mécanisme standard pour référencer un modèle ou des éléments dans un modèle, et pour rechercher le modèle s'il a atteint.  Pour plus d'informations, consultez [Intégration de modèles à l’aide de Visual Studio Modelbus](../modeling/integrating-models-by-using-visual-studio-modelbus.md).  
+ À partir d’un [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] extension, vous pouvez utiliser ModelBus à cet effet. ModelBus fournit un mécanisme standard pour faire référence à un modèle ou éléments dans un modèle et pour la recherche du modèle si elle a été déplacée. Pour plus d’informations, consultez [intégration de modèles à l’aide de Visual Studio Modelbus](../modeling/integrating-models-by-using-visual-studio-modelbus.md).  
   
-## Framework cible  
- définissez **Framework cible** de votre projet d'application à **.NET Framework 4**.  
+## <a name="target-framework"></a>Framework cible  
+ Définir le **framework cible** de votre projet d’application pour **.NET Framework 4**.  
   
-#### Pour définir le framework cible  
+#### <a name="to-set-the-target-framework"></a>Pour définir le framework cible  
   
-1.  Ouvrez le projet de [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] pour l'application dans laquelle vous souhaitez lire un modèle DÉSOLÉ.  
+1.  Ouvrez le [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] projet pour l’application dans laquelle vous souhaitez lire un modèle DSL.  
   
-2.  Dans l'**Explorateur de solutions**, cliquez avec le bouton droit sur le projet, puis cliquez sur **Propriétés**.  
+2.  Dans **l’Explorateur de solutions**, cliquez sur le projet, puis sur **propriétés**.  
   
-3.  Dans la fenêtre des propriétés du projet, sous l'onglet d' **Application** , affectez le champ de **Framework cible** à **.NET Framework 4**.  
+3.  Dans la fenêtre Propriétés du projet, sur le **Application** onglet, définissez la **framework cible** au champ **.NET Framework 4**.  
   
 > [!NOTE]
->  Vous devrez peut\-être faire cela même si vous avez sélectionné **.NET Framework 4** dans la boîte de dialogue de création du projet.  La version cible du. Net Framework ne doit pas être **.NET Framework 4 Client Profile**.  
+>  Vous devrez peut-être procéder de même si vous avez sélectionné **.NET Framework 4** dans la boîte de dialogue de création de projet. Le framework cible ne doit pas être **.NET Framework 4 Client Profile**.  
   
-## Références  
- vous devez ajouter ces références à votre projet d'application de [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] :  
+## <a name="references"></a>Références  
+ Vous devez ajouter ces références à votre [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] projet d’application :  
   
 -   `Microsoft.VisualStudio.Modeling.Sdk.11.0`  
   
-    -   Si vous ne voyez pas cette opération sous l'onglet de **.NET** dans la boîte de dialogue d' **Ajouter des références** , cliquez sur l'onglet de **Parcourir** et naviguez jusqu'à `%Program Files%\Microsoft Visual Studio 2010 SDK\VisualStudioIntegration\Common\Assemblies \`.  
+    -   Si vous ne voyez pas sous le **.NET** onglet dans le **ajouter des références** boîte de dialogue, cliquez sur le **Parcourir** onglet et accédez à `%Program Files%\Microsoft Visual Studio 2010 SDK\VisualStudioIntegration\Common\Assemblies\`.  
   
--   Votre assembly DÉSOLÉ, que vous trouverez dans le dossier Bin votre projet DÉSOLÉ.  son nom est typique du formulaire : *YourCompany*.*YourProject*`. Dsl.dll`.  
+-   Votre assembly DSL, que vous trouverez sous le dossier bin du projet de votre DSL. Son nom est en général sous la forme : *votresociété*. *VotreProjet*`.Dsl.dll`.  
   
-## Classes importantes dans le langage DÉSOLÉ  
- Avant de pouvoir écrire du code qui lit votre DÉSOLÉ, vous devez connaître les noms de quelques\-unes des classes générées par votre DÉSOLÉ.  Dans votre solution DÉSOLÉ, ouvrez le projet de **DÉSOLÉ** et recherchez dans le dossier de **GeneratedCode** .  Ou bien, double\-cliquez sur l'assembly DÉSOLÉ dans votre projet **Références**, ouvrez l'espace de noms DÉSOLÉ dans **Explorateur d'objets**.  
+## <a name="important-classes-in-the-dsl"></a>Classes importantes dans la DSL  
+ Avant de pouvoir écrire le code qui lit votre DSL, vous devez connaître les noms de certaines des classes générées par votre DSL. Dans votre solution DSL, ouvrez le **Dsl** de projet et le consulter dans le **GeneratedCode** dossier. Ou bien, double-cliquez sur l’assembly DSL dans votre projet **références**, ouvrez l’espace de noms DSL **Explorateur d’objets**.  
   
- Ce sont des classes que vous devez identifier :  
+ Ce sont les classes, vous devez identifier :  
   
--   *YourDslRootClass* \- il s'agit du nom de la classe racine de votre `DslDefinition.dsl`.  
+-   *YourDslRootClass* -il s’agit du nom de la classe racine dans votre `DslDefinition.dsl`.  
   
--   *YourDslName* `SerializationHelper` \- cette classe est définie dans `SerializationHelper.cs` dans votre projet DÉSOLÉ.  
+-   *YourDslName* `SerializationHelper` -cette classe est définie dans `SerializationHelper.cs` dans votre projet DSL.  
   
--   *YourDslName* `DomainModel` \- cette classe est définie dans `DomainModel.cs` dans votre projet DÉSOLÉ.  
+-   *YourDslName* `DomainModel` -cette classe est définie dans `DomainModel.cs` dans votre projet DSL.  
   
-## Lire un fichier  
- L'exemple suivant est conçu pour lire un langage spécifique à un domaine dans lequel les classes importantes sont les suivantes :  
+## <a name="reading-from-a-file"></a>La lecture à partir d’un fichier  
+ L’exemple suivant est conçu pour lire une DSL dans lequel les classes importantes sont les suivantes :  
   
 -   FamilyTreeModel  
   
@@ -63,7 +65,7 @@ Vous pouvez ouvrir des modèles DÉSOLÉ dans n'importe quelle application.
   
 -   FamilyTreeDomainModel  
   
- L'autre classe de domaine dans ce langage DÉSOLÉ est personne.  
+ La classe de domaine dans ce DSL est la personne.  
   
 ```  
 using System;  
@@ -101,8 +103,8 @@ namespace StandaloneReadDslConsole
 } } } }  
 ```  
   
-## Enregistrement dans un fichier  
- L'ajout suivant au code précédent modifie le modèle puis l'enregistre dans un fichier.  
+## <a name="saving-to-a-file"></a>Enregistrement dans un fichier  
+ Les configurations suivantes pour le code précédent apporte une modification au modèle et puis l’enregistre dans un fichier.  
   
 ```  
 using (Transaction t =  

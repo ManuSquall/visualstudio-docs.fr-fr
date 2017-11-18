@@ -1,38 +1,41 @@
 ---
-title: "buffer, propri&#233;t&#233; (Uint8ClampedArray) | Microsoft Docs"
-ms.custom: ""
-ms.date: "01/18/2017"
-ms.prod: "windows-client-threshold"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "devlang-javascript"
-ms.tgt_pltfrm: ""
-ms.topic: "language-reference"
-dev_langs: 
-  - "JavaScript"
-  - "TypeScript"
-  - "DHTML"
+title: "Buffer, propriété (Uint8ClampedArray) | Documents Microsoft"
+ms.custom: 
+ms.date: 01/18/2017
+ms.prod: windows-client-threshold
+ms.reviewer: 
+ms.suite: 
+ms.technology: devlang-javascript
+ms.tgt_pltfrm: 
+ms.topic: language-reference
+dev_langs:
+- JavaScript
+- TypeScript
+- DHTML
 ms.assetid: 4b87d767-4246-4cf4-bb1d-241b3516397a
-caps.latest.revision: 5
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 5
+caps.latest.revision: "5"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: a16ee962b3d8dcdbd99eb10b5870f3564ba351d4
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.translationtype: MT
+ms.contentlocale: fr-FR
+ms.lasthandoff: 10/27/2017
 ---
-# buffer, propri&#233;t&#233; (Uint8ClampedArray)
-Lecture seule.  Obtient l'objet [ArrayBuffer](../../javascript/reference/arraybuffer-object.md) référencé par ce tableau.  
+# <a name="buffer-property-uint8clampedarray"></a>buffer, propriété (Uint8ClampedArray)
+Lecture seule. Obtient le [ArrayBuffer](../../javascript/reference/arraybuffer-object.md) qui est référencé par ce tableau.  
   
-## Syntaxe  
+## <a name="syntax"></a>Syntaxe  
   
-```javascript  
+```JavaScript  
 var arrayBuffer = uint8ClampedArray.buffer;  
 ```  
   
-## Exemple  
+## <a name="example"></a>Exemple  
  L'exemple suivant montre comment obtenir le ArrayBuffer du tableau.  
   
-```javascript  
+```JavaScript  
 var req = new XMLHttpRequest();  
     req.open('GET', "http://www.example.com");  
     req.responseType = "arraybuffer";  
@@ -49,9 +52,9 @@ var req = new XMLHttpRequest();
   
 ```  
   
-## Configuration requise  
+## <a name="requirements"></a>Spécifications  
  [!INCLUDE[jsv11_winonly](../../javascript/reference/includes/jsv11-winonly-md.md)]  
   
-## Voir aussi  
- [ArrayBuffer, objet](../../javascript/reference/arraybuffer-object.md)   
- [Uint8ClampedArray, objet](../../javascript/reference/uint8clampedarray-object-javascript.md)
+## <a name="see-also"></a>Voir aussi  
+ [Objet ArrayBuffer](../../javascript/reference/arraybuffer-object.md)   
+ [Objet Uint8ClampedArray](../../javascript/reference/uint8clampedarray-object-javascript.md)

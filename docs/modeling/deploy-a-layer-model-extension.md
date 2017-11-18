@@ -10,29 +10,15 @@ helpviewer_keywords:
 - dependency diagrams, deploying extensions
 - layer models, deploying extensions
 ms.assetid: 00a4675b-d20e-487e-8fd5-be2b1e0ba238
-caps.latest.revision: 27
+caps.latest.revision: "27"
 author: alexhomer1
 ms.author: ahomer
 manager: douge
-translation.priority.ht:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
-translationtype: Machine Translation
-ms.sourcegitcommit: 8f84f22444a5df5b9f4f4af44cd8ee9136403467
-ms.openlocfilehash: 03164fe80a0b8f4dbc321a7e57b7db9e38e405d5
-ms.lasthandoff: 02/22/2017
-
+ms.openlocfilehash: d019e602c5bf198df03a50034c2ed29519d16e53
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.translationtype: MT
+ms.contentlocale: fr-FR
+ms.lasthandoff: 10/27/2017
 ---
 # <a name="deploy-a-layer-model-extension"></a>Déployer une extension de modèle de couche
 D'autres utilisateurs de Visual Studio peuvent installer des extensions de modélisation de couche que vous créez à l'aide de Visual Studio.  
@@ -42,9 +28,9 @@ D'autres utilisateurs de Visual Studio peuvent installer des extensions de modé
   
 #### <a name="to-install-the-extension"></a>Pour installer l'extension  
   
-1.  Dans le projet qui contient **source.vsix.manifest**, ouvrez **bin\\ \* ** dans l’Explorateur de fichiers.  
+1.  Dans le projet qui contient **source.vsix.manifest**, ouvrez **bin\\ \***  dans l’Explorateur de fichiers.  
   
-2.  Copie le ** \*.vsix** fichier sur l’ordinateur sur lequel vous souhaitez installer l’extension.  
+2.  Copie le  **\*.vsix** fichier à l’ordinateur sur lequel vous souhaitez installer l’extension.  
   
 3.  Sur l'ordinateur cible, double-cliquez sur le fichier *.vsix dans l'Explorateur Windows.  
   
@@ -54,7 +40,7 @@ D'autres utilisateurs de Visual Studio peuvent installer des extensions de modé
   
 1.  Dans Visual Studio, sur le **outils** menu, cliquez sur **Extensions et mises à jour**.  
   
-2.  Cliquez sur le nom de l’extension **désinstallation**.  
+2.  Cliquez sur le nom de l’extension, puis **désinstallation**.  
   
 ## <a name="installing-an-extension-on-a-team-foundation-build-server"></a>Installation d'une extension sur un serveur Team Foundation Build  
  En général, Visual Studio n'est pas installé sur les serveurs [!INCLUDE[esprbuild](../misc/includes/esprbuild_md.md)]. Vous ne pouvez donc pas installer l'extension VSIX en double-cliquant dessus. L'installation de [!INCLUDE[esprbuild](../misc/includes/esprbuild_md.md)] inclut certains composants qui autorisent l'exécution d'une extension VSIX, mais vous devez installer l'extension manuellement.  
@@ -78,7 +64,7 @@ D'autres utilisateurs de Visual Studio peuvent installer des extensions de modé
          %LocalAppData%\Microsoft\VisualStudio\\[version] \Extensions\Microsoft  
   
         > [!NOTE]
-        >  %LocalAppData% est généralement *lettre_lecteur*: utilisateurs*nom d’utilisateur*AppDataLocal.  
+        >  %LocalAppData% est généralement *%drivename*: les utilisateurs*nom d’utilisateur*AppDataLocal.  
   
 2.  Développez chaque fichier VSIX dans un dossier au même emplacement :  
   
@@ -89,4 +75,3 @@ D'autres utilisateurs de Visual Studio peuvent installer des extensions de modé
     3.  Supprimez le fichier .zip.  
   
 3.  Redémarrez [!INCLUDE[esprbuild](../misc/includes/esprbuild_md.md)].
-

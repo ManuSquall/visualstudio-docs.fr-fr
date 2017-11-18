@@ -11,30 +11,15 @@ helpviewer_keywords:
 - Domain-Specific Language Tools, walkthroughs
 - walkthroughs [Domain-Specific Language Tools]
 ms.assetid: 4aa47777-de75-4897-a423-a3c4426b4125
-caps.latest.revision: 22
+caps.latest.revision: "22"
 author: alancameronwills
 ms.author: awills
 manager: douge
-translation.priority.mt:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
+ms.openlocfilehash: a126524672b0b827d278d2d76c01d907c9d403a1
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
 ms.translationtype: MT
-ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
-ms.openlocfilehash: ef5f86cb3b41af6cc9e7432cdbfb7365471320b8
-ms.contentlocale: fr-fr
-ms.lasthandoff: 09/26/2017
-
+ms.contentlocale: fr-FR
+ms.lasthandoff: 10/27/2017
 ---
 # <a name="adding-a-tracking-property-to-a-domain-specific-language-definition"></a>Ajout d'une propriété de suivi à une définition de langage spécifique à un domaine
 Cette procédure pas à pas montre comment ajouter une propriété de suivi à un modèle de domaine.  
@@ -120,7 +105,7 @@ Cette procédure pas à pas montre comment ajouter une propriété de suivi à u
   
 3.  Pour le **ExampleElement** domaine de classe, ajoutez une propriété de domaine nommée `Namespace`.  
   
-     Dans le **propriétés** fenêtre pour la nouvelle propriété, définissez **est consultable** à **False**et la valeur **type** à **ni CustomStorage **.  
+     Dans le **propriétés** fenêtre pour la nouvelle propriété, définissez **est consultable** à **False**et la valeur **type** à **ni CustomStorage** .  
   
 4.  Pour le **ExampleElement** domaine de classe, ajoutez une propriété de domaine nommée `IsNamespaceTracking`.  
   
@@ -748,7 +733,7 @@ Cette procédure pas à pas montre comment ajouter une propriété de suivi à u
   
 4.  Faites glisser un **ExampleElement** élément à partir de la **boîte à outils** à la surface du diagramme.  
   
-5.  Dans le **propriétés** fenêtre de l’élément, sélectionnez le **élément Namespace** propriété et remplacez la valeur de **DefaultNamespace** à ** OtherNamespace**.  
+5.  Dans le **propriétés** fenêtre de l’élément, sélectionnez le **élément Namespace** propriété et remplacez la valeur de **DefaultNamespace** à  **OtherNamespace**.  
   
      Notez que la valeur de **élément Namespace** est maintenant affichée en gras.  
   
@@ -766,7 +751,7 @@ Cette procédure pas à pas montre comment ajouter une propriété de suivi à u
   
 9. Modification **par défaut de Namespace** pour le diagramme à partir de **DefaultNamespace** à **NewNamespace**.  
   
-     Le **Namespace** des pistes premier élément la **par défaut de Namespace** propriété, alors que le **Namespace** du deuxième élément conserve sa valeur utilisateurmisàjour** OtherNamespace**.  
+     Le **Namespace** des pistes premier élément la **par défaut de Namespace** propriété, alors que le **Namespace** du deuxième élément conserve sa valeur utilisateurmisàjour **OtherNamespace**.  
   
 10. Enregistrez la solution, puis fermez la build expérimentale.  
   
@@ -778,4 +763,3 @@ Cette procédure pas à pas montre comment ajouter une propriété de suivi à u
  <xref:Microsoft.VisualStudio.Modeling.Design.ElementTypeDescriptor>   
  [Comment définir un langage spécifique à un domaine](../modeling/how-to-define-a-domain-specific-language.md)   
  [Guide pratique pour créer une solution de langage spécifique à un domaine](../modeling/how-to-create-a-domain-specific-language-solution.md)   
-

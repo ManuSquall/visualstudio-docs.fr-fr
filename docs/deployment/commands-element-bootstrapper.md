@@ -1,33 +1,33 @@
 ---
-title: "&lt;Commands&gt;, &#233;l&#233;ment (programme d&#39;amor&#231;age) | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-deployment"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-dev_langs: 
-  - "FSharp"
-  - "VB"
-  - "CSharp"
-  - "C++"
-helpviewer_keywords: 
-  - "<Commands> (élément du programme d'amorçage)"
+title: "&lt;Commandes&gt; élément (programme d’amorçage) | Documents Microsoft"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-deployment
+ms.tgt_pltfrm: 
+ms.topic: article
+dev_langs:
+- FSharp
+- VB
+- CSharp
+- C++
+helpviewer_keywords: <Commands> element [bootstrapper]
 ms.assetid: e61d5787-fe1f-4ebf-b0cf-0d7909be7ffb
-caps.latest.revision: 13
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
-caps.handback.revision: 13
+caps.latest.revision: "13"
+author: stevehoag
+ms.author: shoag
+manager: wpickett
+ms.openlocfilehash: ac8580a1b930d4ad18db9eebb275e4eb67d80c62
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.translationtype: MT
+ms.contentlocale: fr-FR
+ms.lasthandoff: 10/27/2017
 ---
-# &lt;Commands&gt;, &#233;l&#233;ment (programme d&#39;amor&#231;age)
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
-
-L'élément `Commands` implémente les tests décrits par les éléments figurant sous l'élément `InstallChecks` et déclare le package que le programme d'amorçage [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] doit installer en cas d'échec du test.  
+# <a name="ltcommandsgt-element-bootstrapper"></a>&lt;Commandes&gt; élément (programme d’amorçage)
+Le `Commands` élément implémente les tests décrits par les éléments figurant sous le `InstallChecks` élément et déclare le package que le [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] programme d’amorçage doit installer si le test échoue.  
   
-## Syntaxe  
+## <a name="syntax"></a>Syntaxe  
   
 ```  
 <Commands  
@@ -67,68 +67,68 @@ L'élément `Commands` implémente les tests décrits par les éléments figuran
 </Commands>  
 ```  
   
-## Éléments et attributs  
- L'élément `Commands` est obligatoire.  L'élément a l'attribut suivant.  
+## <a name="elements-and-attributes"></a>Éléments et attributs  
+ Le `Commands` élément est requis. L’élément a l’attribut suivant.  
   
 |Attribut|Description|  
-|--------------|-----------------|  
-|`Reboot`|Facultatif.  Détermine si le système doit redémarrer si l'un des packages retourne un code de sortie de redémarrage.  La liste suivante affiche les valeurs valides :<br /><br /> `Defer`.  Le redémarrage est différé à un moment ultérieur.<br /><br /> `Immediate`.  Entraîne un redémarrage immédiat si l'un des packages retourne un code de sortie de redémarrage.<br /><br /> `None`.  Toutes les demandes de redémarrage sont ignorées.<br /><br /> La valeur par défaut est `Immediate`.|  
+|---------------|-----------------|  
+|`Reboot`|Facultatif. Détermine si le système doit redémarrer si aucun des packages retourne un code de sortie de redémarrage. La liste suivante indique les valeurs valides :<br /><br /> `Defer`. Le redémarrage est différé jusqu'à une date ultérieure.<br /><br /> `Immediate`. Entraîne un redémarrage immédiat si un des packages a retourné un code de sortie de redémarrage.<br /><br /> `None`. Fait toutes les demandes de redémarrage doivent être ignorés.<br /><br /> La valeur par défaut est `Immediate`.|  
   
-## Commande  
- L'élément `Command` est un élément enfant de l'élément `Commands`.  Un élément `Commands` peut contenir un ou plusieurs éléments `Command`.  L'élément possède les attributs suivants.  
-  
-|Attribut|Description|  
-|--------------|-----------------|  
-|`PackageFile`|Obligatoire.  Nom du package à installer si une ou plusieurs conditions spécifiées par `InstallConditions` retournent la valeur false.  Le package doit être défini dans le même fichier à l'aide d'un élément `PackageFile`.|  
-|`Arguments`|Facultatif.  Ensemble d'arguments de ligne de commande à passer dans le fichier de package.|  
-|`EstimatedInstallSeconds`|Facultatif.  Temps estimé, en secondes, pour installer le package.  Cette valeur détermine la taille de la barre de progression affichée à l'utilisateur par le programme d'amorçage.  La valeur par défaut est 0 et, dans ce cas, aucune durée estimée n'est spécifiée.|  
-|`EstimatedDiskBytes`|Facultatif.  Volume estimé d'espace disque, en octets, occupé par le package au terme de l'installation.  Cette valeur est utilisée dans les informations d'espace disque requis affichées à l'utilisateur par le programme d'amorçage.  La valeur par défaut est 0, auquel cas le programme d'amorçage n'affiche pas d'espace de disque dur requis.|  
-|`EstimatedTempBytes`|Facultatif.  Volume estimé d'espace disque temporaire, en octets, nécessaire au package.|  
-|`Log`|Facultatif.  Chemin d'accès au fichier journal généré par le package, relatif au répertoire racine du package.|  
-  
-## InstallConditions  
- L'élément `InstallConditions` est un enfant de l'élément `Command`.  Chaque élément `Command` ne peut avoir qu'un seul élément `InstallConditions`.  En l'absence d'un élément `InstallConditions`, le package spécifié par `Condition` s'exécute toujours.  
-  
-## BypassIf  
- L'élément `BypassIf` est un enfant de l'élément `InstallConditions`. Il décrit une condition positive en vertu de laquelle la commande ne doit pas être exécutée.  Chaque élément `InstallConditions` peut contenir zéro, un ou plusieurs éléments `BypassIf`.  
-  
- `BypassIf` possède les attributs suivants.  
+## <a name="command"></a>Commande  
+ L'élément `Command` est un élément enfant de l'élément `Commands`. A `Commands` élément peut avoir un ou plusieurs `Command` éléments. L’élément a les attributs suivants.  
   
 |Attribut|Description|  
-|--------------|-----------------|  
-|`Property`|Obligatoire.  Nom de la propriété à tester.  La propriété doit avoir été définie précédemment par un enfant de l'élément `InstallChecks`.  Pour plus d'informations, consultez [\<InstallChecks\>, élément](../deployment/installchecks-element-bootstrapper.md).|  
-|`Compare`|Obligatoire.  Type de comparaison à exécuter.  La liste suivante affiche les valeurs valides :<br /><br /> `ValueEqualTo`, `ValueNotEqualTo`, `ValueGreaterThan`, `ValueGreaterThanOrEqualTo`, `ValueLessThan`, `ValueLessThanOrEqualTo`, `VersionEqualTo`, `VersionNotEqualTo`, `VersionGreaterThan`, `VersionGreaterThanOrEqualTo`, `VersionLessThan`, `VersionLessThanOrEqualTo`, `ValueExists`, `ValueNotExists`|  
-|`Value`|Obligatoire.  Valeur à comparer à la propriété.|  
-|`Schedule`|Facultatif.  Nom d'une balise `Schedule` qui définit le moment de l'évaluation de cette règle.|  
+|---------------|-----------------|  
+|`PackageFile`|Obligatoire. Nom du package à installer si une ou plusieurs des conditions spécifiées par `InstallConditions` renvoient la valeur false. Le package doit être défini dans le même fichier en utilisant un `PackageFile` élément.|  
+|`Arguments`|Facultatif. Un jeu d’arguments de ligne de commande à passer dans le fichier de package.|  
+|`EstimatedInstallSeconds`|Facultatif. Le temps estimé, en secondes, nécessaire à installer le package. Cette valeur détermine la taille de la barre de progression qu'affiche par le programme d’amorçage pour l’utilisateur. La valeur par défaut est 0, auquel cas, aucune durée estimée est spécifiée.|  
+|`EstimatedDiskBytes`|Facultatif. Estimation de la quantité d’espace disque, en octets, que le package occupera après l’installation est terminée. Cette valeur est utilisée dans l’espace disque nécessaire que le programme d’amorçage affiche à l’utilisateur. La valeur par défaut est 0, dans lequel le programme d’amorçage de cas n’affiche pas tout l’espace disque nécessaire.|  
+|`EstimatedTempBytes`|Facultatif. Estimation de la quantité d’espace disque temporaire, en octets, ce qui nécessite le package.|  
+|`Log`|Facultatif. Le chemin d’accès au fichier journal généré par le package, relatif au répertoire racine du package.|  
   
-## FailIf  
- L'élément `FailIf` est un enfant de l'élément `InstallConditions` et décrit une condition positive sous laquelle l'installation doit s'arrêter.  Chaque élément `InstallConditions` peut contenir zéro, un ou plusieurs éléments `FailIf`.  
+## <a name="installconditions"></a>InstallConditions  
+ Le `InstallConditions` élément est un enfant de le `Command` élément. Chaque `Command` élément peut avoir au plus un `InstallConditions` élément. Si aucun `InstallConditions` élément existe, le package spécifié par `Condition` sera toujours exécuté.  
   
- `FailIf` possède les attributs suivants.  
+## <a name="bypassif"></a>BypassIf  
+ Le `BypassIf` élément est un enfant de le `InstallConditions` élément et décrit une condition positive sous lequel la commande ne doit pas être exécutée. Chaque `InstallConditions` élément peut avoir zéro ou plusieurs `BypassIf` éléments.  
   
-|Attribut|Description|  
-|--------------|-----------------|  
-|`Property`|Obligatoire.  Nom de la propriété à tester.  La propriété doit avoir été définie précédemment par un enfant de l'élément `InstallChecks`.  Pour plus d'informations, consultez [\<InstallChecks\>, élément](../deployment/installchecks-element-bootstrapper.md).|  
-|`Compare`|Obligatoire.  Type de comparaison à exécuter.  La liste suivante affiche les valeurs valides :<br /><br /> `ValueEqualTo`, `ValueNotEqualTo`, `ValueGreaterThan`, `ValueGreaterThanOrEqualTo`, `ValueLessThan`, `ValueLessThanOrEqualTo`, `VersionEqualTo`, `VersionNotEqualTo`, `VersionGreaterThan`, `VersionGreaterThanOrEqualTo`, `VersionLessThan`, `VersionLessThanOrEqualTo`, `ValueExists`, `ValueNotExists`|  
-|`Value`|Obligatoire.  Valeur à comparer à la propriété.|  
-|`String`|Facultatif.  Texte à afficher à l'utilisateur en cas d'échec.|  
-|`Schedule`|Facultatif.  Nom d'une balise `Schedule` qui définit le moment de l'évaluation de cette règle.|  
-  
-## ExitCodes  
- L'élément `ExitCodes` est un enfant de l'élément `Command`.  L'élément `ExitCodes` contient un ou plusieurs éléments `ExitCode` qui déterminent ce que l'installation doit faire en réponse à un code de sortie émanant d'un package.  Il peut y avoir un élément `ExitCode` facultatif sous un élément `Command`.  `ExitCodes` ne possède aucun attribut.  
-  
-## ExitCode  
- L'élément `ExitCode` est un enfant de l'élément `ExitCodes`.  L'élément `ExitCode` détermine ce que l'installation doit faire en réponse à un code de sortie émanant d'un package.  `ExitCode` ne contient pas d'éléments enfants et a les attributs suivants.  
+ `BypassIf`a les attributs suivants.  
   
 |Attribut|Description|  
-|--------------|-----------------|  
-|`Value`|Obligatoire.  Valeur du code de sortie applicable à cet élément `ExitCode`.|  
-|`Result`|Obligatoire.  Réaction de l'installation face à ce code de sortie.  La liste suivante affiche les valeurs valides :<br /><br /> `Success`.  Indique que l'installation du package a réussi.<br /><br /> `SuccessReboot`.  Signale que l'installation du package a réussi et indique au système de redémarrer.<br /><br /> `Fail`.  Signale l'échec du package.<br /><br /> `FailReboot`.  Signale l'échec du package et indique au système de redémarrer.|  
-|`String`|Facultatif.  Valeur à afficher à l'utilisateur en réponse à ce code de sortie.|  
-|`FormatMessageFromSystem`|Facultatif.  Détermine s'il faut utiliser le message d'erreur fourni par le système correspondant au code de sortie ou utiliser la valeur fournie dans `String`.  Les valeurs valides sont `true` pour utiliser l'erreur fournie par le système et `false` pour utiliser la chaîne fournie par `String`.  La valeur par défaut est `false`.  Si cette propriété est `false`, mais que `String` n'est pas défini, l'erreur fournie par le système sera utilisée.|  
+|---------------|-----------------|  
+|`Property`|Obligatoire. Le nom de la propriété à tester. La propriété doit avoir été définie précédemment par un enfant de le `InstallChecks` élément. Pour plus d’informations, consultez [ \<InstallChecks > élément](../deployment/installchecks-element-bootstrapper.md).|  
+|`Compare`|Obligatoire. Le type de comparaison à effectuer. La liste suivante indique les valeurs valides :<br /><br /> `ValueEqualTo`, `ValueNotEqualTo`, `ValueGreaterThan`, `ValueGreaterThanOrEqualTo`, `ValueLessThan`, `ValueLessThanOrEqualTo`, `VersionEqualTo`, `VersionNotEqualTo`, `VersionGreaterThan`, `VersionGreaterThanOrEqualTo`, `VersionLessThan`, `VersionLessThanOrEqualTo`, `ValueExists`, `ValueNotExists`|  
+|`Value`|Obligatoire. La valeur à comparer avec la propriété.|  
+|`Schedule`|Facultatif. Le nom d’un `Schedule` balise qui définit quand cette règle doit être évaluée.|  
   
-## Exemple  
- L'exemple de code suivant définit les commandes permettant d'installer le .NET Framework 2.0.  
+## <a name="failif"></a>FailIf  
+ Le `FailIf` élément est un enfant de le `InstallConditions` élément et décrit une condition positive sous laquelle l’installation doit s’arrêter. Chaque `InstallConditions` élément peut avoir zéro ou plusieurs `FailIf` éléments.  
+  
+ `FailIf`a les attributs suivants.  
+  
+|Attribut|Description|  
+|---------------|-----------------|  
+|`Property`|Obligatoire. Le nom de la propriété à tester. La propriété doit avoir été définie précédemment par un enfant de le `InstallChecks` élément. Pour plus d’informations, consultez [ \<InstallChecks > élément](../deployment/installchecks-element-bootstrapper.md).|  
+|`Compare`|Obligatoire. Le type de comparaison à effectuer. La liste suivante indique les valeurs valides :<br /><br /> `ValueEqualTo`, `ValueNotEqualTo`, `ValueGreaterThan`, `ValueGreaterThanOrEqualTo`, `ValueLessThan`, `ValueLessThanOrEqualTo`, `VersionEqualTo`, `VersionNotEqualTo`, `VersionGreaterThan`, `VersionGreaterThanOrEqualTo`, `VersionLessThan`, `VersionLessThanOrEqualTo`, `ValueExists`, `ValueNotExists`|  
+|`Value`|Obligatoire. La valeur à comparer avec la propriété.|  
+|`String`|Facultatif. Texte à afficher à l’utilisateur en cas d’échec.|  
+|`Schedule`|Facultatif. Le nom d’un `Schedule` balise qui définit quand cette règle doit être évaluée.|  
+  
+## <a name="exitcodes"></a>ExitCodes  
+ Le `ExitCodes` élément est un enfant de le `Command` élément. Le `ExitCodes` élément contient un ou plusieurs `ExitCode` éléments qui déterminent ce que l’installation doit faire en réponse à un code de sortie à partir d’un package. Il peut y avoir une option `ExitCode` élément sous un `Command` élément. `ExitCodes`possède pas d’attributs.  
+  
+## <a name="exitcode"></a>Code de sortie  
+ Le `ExitCode` élément est un enfant de le `ExitCodes` élément. Le `ExitCode` détermine ce que l’installation doit faire en réponse à un code de sortie à partir d’un package. `ExitCode`ne contient aucun élément enfant et possède les attributs suivants.  
+  
+|Attribut|Description|  
+|---------------|-----------------|  
+|`Value`|Obligatoire. La valeur du code de sortie auquel ce `ExitCode` élément s’applique.|  
+|`Result`|Obligatoire. Manière dont l’installation doit réagir à ce code de sortie. La liste suivante indique les valeurs valides :<br /><br /> `Success`. Marque le package a réussi.<br /><br /> `SuccessReboot`. Marque le package a réussi et fait en sorte que le redémarrage du système.<br /><br /> `Fail`. Signale le package a échoué.<br /><br /> `FailReboot`. Marque le package comme ayant échoué et fait en sorte que le redémarrage du système.|  
+|`String`|Facultatif. La valeur à afficher à l’utilisateur en réponse à ce code de sortie.|  
+|`FormatMessageFromSystem`|Facultatif. Détermine s’il faut utiliser le message d’erreur fournie par le système correspondant au code de sortie, ou utiliser la valeur fournie dans `String`. Les valeurs valides sont `true`, ce qui signifie que l’erreur fournie par le système, et `false`, ce qui signifie que la chaîne fournie par `String`. La valeur par défaut est `false`. Si cette propriété est `false`, mais `String` n’est pas défini, l’erreur fournie par le système sera utilisé.|  
+  
+## <a name="example"></a>Exemple  
+ L’exemple de code suivant définit des commandes pour l’installation de .NET Framework 2.0.  
   
 ```  
 <Commands Reboot="Immediate">  
@@ -205,6 +205,6 @@ L'élément `Commands` implémente les tests décrits par les éléments figuran
 </Commands>  
 ```  
   
-## Voir aussi  
- [Référence du schéma de produit et de package](../deployment/product-and-package-schema-reference.md)   
- [\<InstallChecks\>, élément](../deployment/installchecks-element-bootstrapper.md)
+## <a name="see-also"></a>Voir aussi  
+ [Référence du schéma de Package et de produit](../deployment/product-and-package-schema-reference.md)   
+ [\<InstallChecks > élément](../deployment/installchecks-element-bootstrapper.md)

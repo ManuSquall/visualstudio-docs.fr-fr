@@ -1,48 +1,51 @@
 ---
-title: "has, m&#233;thode (Set) (JavaScript) | Microsoft Docs"
-ms.custom: ""
-ms.date: "01/18/2017"
-ms.prod: "windows-client-threshold"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "devlang-javascript"
-ms.tgt_pltfrm: ""
-ms.topic: "language-reference"
-dev_langs: 
-  - "JavaScript"
-  - "TypeScript"
-  - "DHTML"
+title: "has, méthode (Set) (JavaScript) | Documents Microsoft"
+ms.custom: 
+ms.date: 01/18/2017
+ms.prod: windows-client-threshold
+ms.reviewer: 
+ms.suite: 
+ms.technology: devlang-javascript
+ms.tgt_pltfrm: 
+ms.topic: language-reference
+dev_langs:
+- JavaScript
+- TypeScript
+- DHTML
 ms.assetid: fb80f2e0-fc5e-4508-af14-1c3b3b833636
-caps.latest.revision: 5
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 5
+caps.latest.revision: "5"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: c9690e3d091e8ae0f9670fd737a29590524834c9
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.translationtype: MT
+ms.contentlocale: fr-FR
+ms.lasthandoff: 10/27/2017
 ---
-# has, m&#233;thode (Set) (JavaScript)
-Retourne `true` si l'ensemble contient l'élément spécifié.  
+# <a name="has-method-set-javascript"></a>has, méthode (Set) (JavaScript)
+Retourne `true` si le jeu contient l’élément spécifié.  
   
-## Syntaxe  
+## <a name="syntax"></a>Syntaxe  
   
-```javascript  
+```JavaScript  
 setObj.has(value)  
 ```  
   
-#### Paramètres  
+#### <a name="parameters"></a>Paramètres  
  `setObj`  
- Requis.  Objet `Set`.  
+ Obligatoire. Objet `Set`.  
   
  `value`  
- Requis.  Élément à tester.  
+ Obligatoire. Élément à tester.  
   
-## Valeur de propriété\/valeur de retour  
- `true` si l'ensemble contient l'élément spécifié.  
+## <a name="property-valuereturn-value"></a>Valeur de propriété/valeur de retour  
+ `true` si le jeu contient l'élément spécifié.  
   
-## Exemple  
- L'exemple suivant montre comment ajouter des membres à `Set`, puis vérifier si l'ensemble contient un membre spécifique.  
+## <a name="example"></a>Exemple  
+ L'exemple suivant montre comment ajouter des membres à un `Set`, puis vérifier si le jeu contient un membre spécifique.  
   
-```javascript  
+```JavaScript  
 var s = new Set();  
 s.add("Thomas Jefferson");  
 s.add(1776);  
@@ -56,5 +59,5 @@ document.write(s.has("1776"));
   
 ```  
   
-## Configuration requise  
+## <a name="requirements"></a>Spécifications  
  [!INCLUDE[jsv11](../../javascript/reference/includes/jsv11-md.md)]

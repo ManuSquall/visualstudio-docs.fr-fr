@@ -1,33 +1,34 @@
 ---
-title: "encodeURI, fonction (JavaScript) | Microsoft Docs"
-ms.custom: ""
-ms.date: "01/18/2017"
-ms.prod: "windows-client-threshold"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "devlang-javascript"
-ms.tgt_pltfrm: ""
-ms.topic: "language-reference"
-f1_keywords: 
-  - "encodeURI"
-dev_langs: 
-  - "JavaScript"
-  - "TypeScript"
-  - "DHTML"
-helpviewer_keywords: 
-  - "encodeURI (méthode)"
+title: encodeURI, fonction (JavaScript) | Documents Microsoft
+ms.custom: 
+ms.date: 01/18/2017
+ms.prod: windows-client-threshold
+ms.reviewer: 
+ms.suite: 
+ms.technology: devlang-javascript
+ms.tgt_pltfrm: 
+ms.topic: language-reference
+f1_keywords: encodeURI
+dev_langs:
+- JavaScript
+- TypeScript
+- DHTML
+helpviewer_keywords: encodeURI method
 ms.assetid: 17bab5a2-bcd4-46c2-8b52-b2b5a0ed98a3
-caps.latest.revision: 12
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 12
+caps.latest.revision: "12"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: 8cf9bbdf34c0481c889d1176bc32ab0246a333a4
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.translationtype: MT
+ms.contentlocale: fr-FR
+ms.lasthandoff: 10/27/2017
 ---
-# encodeURI, fonction (JavaScript)
-Encode une chaîne de texte de façon à obtenir un identificateur URI \(Uniform Resource Identifier\) valide.  
+# <a name="encodeuri-function-javascript"></a>encodeURI, fonction (JavaScript)
+Encode une chaîne de texte comme une valide ressource identificateur URI (Uniform)  
   
-## Syntaxe  
+## <a name="syntax"></a>Syntaxe  
   
 ```  
   
@@ -37,15 +38,15 @@ URIString
   
 ```  
   
-## Notes  
- L'argument `URIString` requis est une valeur qui représente un URI encodé.  
+## <a name="remarks"></a>Remarques  
+ Requis `URIString` argument est une valeur qui représente un URI codé.  
   
- La fonction `encodeURI` retourne un URI encodé.  Si vous passez le résultat à la méthode `decodeURI`, la chaîne d'origine est retournée.  La fonction `encodeURI` n'encode pas les caractères suivants : « : », « \/ », « ; » et « ? ».  Utilisez la méthode `encodeURIComponent` pour encoder ces caractères.  
+ Le `encodeURI` fonction retourne un URI codé. Si vous passez le résultat à `decodeURI`, la chaîne d’origine est retournée. Le `encodeURI` fonction n’encode pas les caractères suivants : « : », « / », « ; » et « ? ». Utilisez `encodeURIComponent` à la place.  
   
-## Exemple  
- Le code suivant encode, puis décode un URI.  
+## <a name="example"></a>Exemple  
+ Le code suivant encode tout d’abord, puis les décode un URI.  
   
-```javascript  
+```JavaScript  
 var uriEncode = encodeURI ("http://www.Not a URL.com");  
 var uriDecode = decodeURIComponent(uriEncode);  
   
@@ -58,9 +59,9 @@ document.write(uriDecode);
 // http://www.Not a URL.com  
 ```  
   
-## Configuration requise  
+## <a name="requirements"></a>Spécifications  
  [!INCLUDE[jsv55](../../javascript/reference/includes/jsv55-md.md)]  
   
-## Voir aussi  
- [Fonction decodeURI](../../javascript/reference/decodeuri-function-javascript.md)   
- [decodeURIComponent, fonction](../../javascript/reference/decodeuricomponent-function-javascript.md)
+## <a name="see-also"></a>Voir aussi  
+ [decodeURI, fonction](../../javascript/reference/decodeuri-function-javascript.md)   
+ [Fonction decodeURIComponent](../../javascript/reference/decodeuricomponent-function-javascript.md)

@@ -1,49 +1,49 @@
 ---
-title: "How to: Disable URL Activation of ClickOnce Applications | Microsoft Docs"
-ms.custom: ""
-ms.date: "12/15/2016"
-ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-deployment"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-dev_langs: 
-  - "VB"
-  - "CSharp"
-  - "C++"
-helpviewer_keywords: 
-  - "disallowUrlActivation"
-  - "URL activation, ClickOnce applications"
-  - "ClickOnce deployment, URL activation"
+title: "Comment : suspendre l’Activation des URL des Applications ClickOnce | Documents Microsoft"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-deployment
+ms.tgt_pltfrm: 
+ms.topic: article
+dev_langs:
+- VB
+- CSharp
+- C++
+helpviewer_keywords:
+- disallowUrlActivation
+- URL activation, ClickOnce applications
+- ClickOnce deployment, URL activation
 ms.assetid: db31a16b-960f-4264-91d7-c7c40f876068
-caps.latest.revision: 9
-caps.handback.revision: 9
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
+caps.latest.revision: "9"
+author: stevehoag
+ms.author: shoag
+manager: wpickett
+ms.openlocfilehash: 1142a047dc1e3ad74b75cf2d82432e1d2f16c1a6
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.translationtype: MT
+ms.contentlocale: fr-FR
+ms.lasthandoff: 10/27/2017
 ---
-# How to: Disable URL Activation of ClickOnce Applications
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
-
-En règle générale, une application [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] se lance automatiquement immédiatement après son installation à partir d'un serveur web.  Pour des raisons de sécurité, vous pouvez décider de désactiver ce comportement et d'inviter plutôt les utilisateurs à lancer l'application à partir du menu **Démarrer**.  La procédure suivante décrit comment désactiver l'activation d'URL.  
+# <a name="how-to-disable-url-activation-of-clickonce-applications"></a>Comment : suspendre l'activation des URL des applications ClickOnce
+En règle générale, une application [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] se lance automatiquement immédiatement après son installation à partir d'un serveur web. Pour des raisons de sécurité, vous pouvez décider de désactiver ce comportement et inviter les utilisateurs à lancer l’application à partir de la **Démarrer** menu à la place. La procédure suivante décrit comment désactiver l'activation d'URL.  
   
- Cette technique peut être utilisée uniquement pour les applications [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] installées sur l'ordinateur de l'utilisateur à partir d'un serveur web.  Elle ne peut pas être utilisée pour les applications en ligne uniquement, qui peuvent être lancées uniquement à l'aide de leur URL.  Pour plus d'informations sur la différence entre les applications en ligne uniquement et les applications installées, consultez [Choosing a ClickOnce Deployment Strategy](../deployment/choosing-a-clickonce-deployment-strategy.md).  
+ Cette technique peut être utilisée uniquement pour les applications [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] installées sur l'ordinateur de l'utilisateur à partir d'un serveur web. Elle ne peut pas être utilisée pour les applications en ligne uniquement, qui peuvent être lancées uniquement à l'aide de leur URL. Pour plus d’informations sur la différence entre les applications en ligne uniquement et installées, consultez [choix d’une stratégie de déploiement ClickOnce](../deployment/choosing-a-clickonce-deployment-strategy.md).  
   
- Cette procédure utilise l'outil du [!INCLUDE[winsdklong](../deployment/includes/winsdklong_md.md)] MageUI.exe.  Pour plus d'informations sur cet outil, consultez [MageUI.exe \(Manifest Generation and Editing Tool, Graphical Client\)](../Topic/MageUI.exe%20\(Manifest%20Generation%20and%20Editing%20Tool,%20Graphical%20Client\).md).  Vous pouvez également effectuer cette procédure avec [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)].  
+ Cette procédure utilise le [ ! INCLURE[winsdklong](/dotnet/framework/tools/mageui-exe-manifest-generation-and-editing-tool-graphical-client). Vous pouvez également effectuer cette procédure avec [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)].  
   
-## Procédure  
+## <a name="procedure"></a>Procédure  
   
-#### Pour désactiver l'activation d'URL pour votre application  
+#### <a name="to-disable-url-activation-for-your-application"></a>Pour désactiver l'activation d'URL pour votre application  
   
-1.  Ouvrez votre manifeste de déploiement dans MageUI.exe.  Si vous n'en n'avez pas encore créé un, suivez les étapes de la [Walkthrough: Manually Deploying a ClickOnce Application](../deployment/walkthrough-manually-deploying-a-clickonce-application.md).  
+1.  Ouvrez votre manifeste de déploiement dans MageUI.exe. Si vous n’en n'avez pas encore créé un, suivez les étapes de [procédure pas à pas : déploiement manuel d’une Application ClickOnce](../deployment/walkthrough-manually-deploying-a-clickonce-application.md).  
   
-2.  Sélectionnez l'onglet **Options de déploiement**.  
+2.  Sélectionnez le **Options de déploiement** onglet.  
   
-3.  Décochez la case **Exécuter automatiquement l'application après l'installation**.  
+3.  Désactivez le **exécuter automatiquement l’application après l’installation de** case à cocher.  
   
 4.  Enregistrez et signez le manifeste.  
   
-## Voir aussi  
- [Publishing ClickOnce Applications](../deployment/publishing-clickonce-applications.md)
+## <a name="see-also"></a>Voir aussi  
+ [Publication d’applications ClickOnce](../deployment/publishing-clickonce-applications.md)

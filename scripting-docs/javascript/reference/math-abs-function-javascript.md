@@ -1,51 +1,53 @@
 ---
-title: "Math.abs, fonction (JavaScript) | Microsoft Docs"
-ms.custom: ""
-ms.date: "01/18/2017"
-ms.prod: "windows-client-threshold"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "devlang-javascript"
-ms.tgt_pltfrm: ""
-ms.topic: "language-reference"
-f1_keywords: 
-  - "abs"
-dev_langs: 
-  - "JavaScript"
-  - "TypeScript"
-  - "DHTML"
-helpviewer_keywords: 
-  - "valeurs absolues, calcul"
-  - "valeurs absolues"
-  - "expressions numériques"
-  - "abs (méthode)"
+title: Math.Abs, fonction (JavaScript) | Documents Microsoft
+ms.custom: 
+ms.date: 01/18/2017
+ms.prod: windows-client-threshold
+ms.reviewer: 
+ms.suite: 
+ms.technology: devlang-javascript
+ms.tgt_pltfrm: 
+ms.topic: language-reference
+f1_keywords: abs
+dev_langs:
+- JavaScript
+- TypeScript
+- DHTML
+helpviewer_keywords:
+- absolute values, calculating
+- absolute values
+- numeric expressions
+- abs method
 ms.assetid: 9af4b5b8-de77-47bb-bb59-abdde371e4c3
-caps.latest.revision: 18
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 18
+caps.latest.revision: "18"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: 5719905a7de375f1b409378f0579e3d8b25209fc
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.translationtype: MT
+ms.contentlocale: fr-FR
+ms.lasthandoff: 10/27/2017
 ---
-# Math.abs, fonction (JavaScript)
-Retourne la valeur absolue d'un nombre \(sa valeur sans tenir compte du fait qu'il soit positif ou négatif\).  Par exemple, \-5 et 5 ont une valeur absolue identique.  
+# <a name="mathabs-function-javascript"></a>Math.abs, fonction (JavaScript)
+Retourne la valeur absolue d’un nombre (valeur, indépendamment de si elle est positive ou négative). Par exemple, la valeur absolue de -5 est identique à la valeur absolue de 5.  
   
-## Syntaxe  
+## <a name="syntax"></a>Syntaxe  
   
 ```  
 Math.abs(number)  
 ```  
   
-#### Paramètres  
- L'argument `number` requis est une expression numérique pour laquelle la valeur absolue est nécessaire.  
+#### <a name="parameters"></a>Paramètres  
+ Requis `number` argument est une expression numérique pour laquelle la valeur absolue est nécessaire.  
   
-## Valeur de retour  
- Valeur absolue de l'argument `number`.  
+## <a name="return-value"></a>Valeur de retour  
+ La valeur absolue de la `number` argument.  
   
-## Exemple  
- L'exemple ci\-dessous illustre l'utilisation de la fonction `abs` :  
+## <a name="example"></a>Exemple  
+ L'exemple ci-dessous illustre l'utilisation de la fonction `abs`.  
   
-```javascript  
+```JavaScript  
 var s;  
 var v1 = Math.abs(6);  
 var v2 = Math.abs(-6);  
@@ -60,10 +62,10 @@ document.write("Absolute values are different.");
   
 ```  
   
-## Configuration requise  
+## <a name="requirements"></a>Spécifications  
  [!INCLUDE[jsv1](../../javascript/misc/includes/jsv1-md.md)]  
   
- **S'applique à** : [Objet Math](../../javascript/reference/math-object-javascript.md)  
+ **S’applique aux**: [Math (objet)](../../javascript/reference/math-object-javascript.md)  
   
-## Voir aussi  
+## <a name="see-also"></a>Voir aussi  
  [Objet Math](../../javascript/reference/math-object-javascript.md)

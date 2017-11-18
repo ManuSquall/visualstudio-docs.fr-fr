@@ -7,29 +7,15 @@ ms.suite:
 ms.tgt_pltfrm: 
 ms.topic: article
 ms.assetid: 4dc8f572-a09e-4d19-a92d-f1df383e728b
-caps.latest.revision: 7
+caps.latest.revision: "7"
 author: alexhomer1
 ms.author: ahomer
 manager: douge
-translation.priority.ht:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
-translationtype: Machine Translation
-ms.sourcegitcommit: 8f84f22444a5df5b9f4f4af44cd8ee9136403467
-ms.openlocfilehash: 864963f32fe703ada943f7e5202d7ebf6bf21e51
-ms.lasthandoff: 02/22/2017
-
+ms.openlocfilehash: 7dabd752aed4213c03ffd32ed5cc255ea4f2852e
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.translationtype: MT
+ms.contentlocale: fr-FR
+ms.lasthandoff: 10/27/2017
 ---
 # <a name="generate-and-configure-your-app-from-models"></a>Générer et configurer votre application à partir de modèles
 Vous pouvez générer ou configurer certaines parties de votre application à partir d'un modèle.
@@ -52,7 +38,7 @@ Vous pouvez générer ou configurer certaines parties de votre application à pa
  Toutefois, si vous commencez avec une application existante, vous constaterez peut-être que de nombreuses opérations de refactorisation sont nécessaires pour séparer les différents comportements régis par le modèle, pour qu'ils puissent varier indépendamment. Nous vous recommandons d'évaluer cet aspect de l'application lors de l'estimation du coût de votre projet.  
   
 ## <a name="configuring-your-application-from-a-model"></a>Configuration de votre application à partir d'un modèle  
- Si vous souhaitez faire varier le comportement de votre application au moment de l'exécution, vous ne pouvez pas utiliser la génération de code, qui génère le code source avant que l'application soit compilée. Au lieu de cela, vous pouvez concevoir votre application pour lire le modèle et pour modifier son comportement en conséquence. Pour plus d'informations, voir :  
+ Si vous souhaitez faire varier le comportement de votre application au moment de l'exécution, vous ne pouvez pas utiliser la génération de code, qui génère le code source avant que l'application soit compilée. Au lieu de cela, vous pouvez concevoir votre application à lire le modèle et pour modifier son comportement en conséquence. Pour plus d'informations, voir :  
   
 -   [Guide pratique pour ouvrir un modèle depuis un fichier dans le code du programme](../modeling/how-to-open-a-model-from-file-in-program-code.md)  
   
@@ -63,11 +49,11 @@ Vous pouvez générer ou configurer certaines parties de votre application à pa
 ## <a name="developing-a-derived-application"></a>Développement d'une application dérivée  
  Voici quelques consignes générales qui pourront vous être utiles.  
   
--   **Commencez spécifique, puis généralisez.** Écrivez tout d'abord une version spécifique de votre application. Cette version doit fonctionner dans un ensemble de conditions. Une fois satisfait de son bon fonctionnement, vous pouvez faire en sorte que certaines parties dérivent d'un modèle. Étendez progressivement les parties dérivées.  
+-   **Démarrez spécifique, puis généralisez.** Écrivez tout d'abord une version spécifique de votre application. Cette version doit fonctionner dans un ensemble de conditions. Une fois satisfait de son bon fonctionnement, vous pouvez faire en sorte que certaines parties dérivent d'un modèle. Étendez progressivement les parties dérivées.  
   
      Par exemple, concevez un site web qui a un ensemble spécifique de pages web avant de concevoir une application web qui présente des pages définies dans un modèle.  
   
--   **Les aspects variantes du modèle.** Identifiez les aspects qui varieront, soit d'un déploiement à un autre, soit dans le temps à mesure que les impératifs changeront. Il s'agit des aspects qui doivent être dérivés d'un modèle.  
+-   **Les aspects de variante du modèle.** Identifiez les aspects qui varieront, soit d'un déploiement à un autre, soit dans le temps à mesure que les impératifs changeront. Il s'agit des aspects qui doivent être dérivés d'un modèle.  
   
      Par exemple, si l'ensemble de pages web et de liens entre elles change, mais que le style et le format des pages est toujours le même, le modèle doit décrire les liens, mais il n'est pas nécessaire qu'il décrive le format des pages.  
   
@@ -75,7 +61,7 @@ Vous pouvez générer ou configurer certaines parties de votre application à pa
   
      Par exemple, utilisez un modèle pour définir la navigation entre les pages web et un autre modèle pour définir la disposition des pages.
   
--   **Modélisez les spécifications, pas la solution.** Le modèle de conception afin qu’il décrive les besoins des utilisateurs. En revanche, ne concevez pas la notation en fonction des aspects variables de l'implémentation.  
+-   **La spécification, pas la solution de modèle.** Concevoir le modèle afin qu’il décrive les besoins des utilisateurs. En revanche, ne concevez pas la notation en fonction des aspects variables de l'implémentation.  
   
      Par exemple, le modèle de navigation web doit représenter des pages web et des liens hypertexte entre elles. Le modèle de navigation web ne doit pas représenter des fragments de code HTML ou des classes de votre application.  
   

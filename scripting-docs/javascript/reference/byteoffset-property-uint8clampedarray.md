@@ -1,38 +1,41 @@
 ---
-title: "byteOffset, propri&#233;t&#233; (Uint8ClampedArray) | Microsoft Docs"
-ms.custom: ""
-ms.date: "01/18/2017"
-ms.prod: "windows-client-threshold"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "devlang-javascript"
-ms.tgt_pltfrm: ""
-ms.topic: "language-reference"
-dev_langs: 
-  - "JavaScript"
-  - "TypeScript"
-  - "DHTML"
+title: "byteoffset, propriété (Uint8ClampedArray) | Documents Microsoft"
+ms.custom: 
+ms.date: 01/18/2017
+ms.prod: windows-client-threshold
+ms.reviewer: 
+ms.suite: 
+ms.technology: devlang-javascript
+ms.tgt_pltfrm: 
+ms.topic: language-reference
+dev_langs:
+- JavaScript
+- TypeScript
+- DHTML
 ms.assetid: bfc22cf4-00e3-4e2c-8419-032b179aa8da
-caps.latest.revision: 5
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 5
+caps.latest.revision: "5"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: 7997c90f59796f519cdeb4cab3f88965539d460b
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.translationtype: MT
+ms.contentlocale: fr-FR
+ms.lasthandoff: 10/27/2017
 ---
-# byteOffset, propri&#233;t&#233; (Uint8ClampedArray)
-Lecture seule.  Décalage en octets de ce tableau à partir du début de son [ArrayBuffer](../../javascript/reference/arraybuffer-object.md), telle qu'il est défini au moment de la construction.  
+# <a name="byteoffset-property-uint8clampedarray"></a>byteOffset, propriété (Uint8ClampedArray)
+Lecture seule. Le décalage de ce tableau à partir du début de son [ArrayBuffer](../../javascript/reference/arraybuffer-object.md), en octets, comme déterminé au moment de la construction.  
   
-## Syntaxe  
+## <a name="syntax"></a>Syntaxe  
   
-```javascript  
+```JavaScript  
 var arrayOffset = uint8ClampedArray.byteOffset;  
 ```  
   
-## Exemple  
+## <a name="example"></a>Exemple  
  L'exemple suivant montre comment obtenir le décalage du tableau.  
   
-```javascript  
+```JavaScript  
 var req = new XMLHttpRequest();  
     req.open('GET', "http://www.example.com");  
     req.responseType = "arraybuffer";  
@@ -49,9 +52,9 @@ var req = new XMLHttpRequest();
   
 ```  
   
-## Configuration requise  
+## <a name="requirements"></a>Spécifications  
  [!INCLUDE[jsv11_winonly](../../javascript/reference/includes/jsv11-winonly-md.md)]  
   
-## Voir aussi  
- [ArrayBuffer, objet](../../javascript/reference/arraybuffer-object.md)   
- [Uint8ClampedArray, objet](../../javascript/reference/uint8clampedarray-object-javascript.md)
+## <a name="see-also"></a>Voir aussi  
+ [Objet ArrayBuffer](../../javascript/reference/arraybuffer-object.md)   
+ [Objet Uint8ClampedArray](../../javascript/reference/uint8clampedarray-object-javascript.md)

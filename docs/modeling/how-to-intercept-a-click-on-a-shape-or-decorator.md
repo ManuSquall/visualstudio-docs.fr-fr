@@ -6,19 +6,17 @@ ms.reviewer:
 ms.suite: 
 ms.tgt_pltfrm: 
 ms.topic: article
-helpviewer_keywords:
-- Domain-Specific Language, programming domain models
+helpviewer_keywords: Domain-Specific Language, programming domain models
 ms.assetid: e2bc3124-c0c0-4104-9779-a5bf565d7f51
-caps.latest.revision: 21
+caps.latest.revision: "21"
 author: alancameronwills
 ms.author: awills
 manager: douge
-ms.translationtype: MT
-ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
 ms.openlocfilehash: 3eb235ec6c38b4995460308c0ac8b104b76f8492
-ms.contentlocale: fr-fr
-ms.lasthandoff: 09/26/2017
-
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.translationtype: MT
+ms.contentlocale: fr-FR
+ms.lasthandoff: 10/27/2017
 ---
 # <a name="how-to-intercept-a-click-on-a-shape-or-decorator"></a>Comment : intercepter un événement Click sur une forme ou un décorateur
 Les procédures suivantes montrent comment intercepter un clic sur une forme ou un décorateur icône. Vous pouvez intercepter les clics, double-clique sur, fait glisser, et d’autres mouvements et que l’élément de répondre.  

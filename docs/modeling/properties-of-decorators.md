@@ -1,69 +1,70 @@
 ---
-title: "Propri&#233;t&#233;s des d&#233;corateurs | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-helpviewer_keywords: 
-  - "langage spécifique à un domaine, décorateurs"
+title: "Propriétés des éléments décoratifs | Documents Microsoft"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.tgt_pltfrm: 
+ms.topic: article
+helpviewer_keywords: Domain-Specific Language, decorators
 ms.assetid: f6322fe5-dc08-4d32-a6b3-0bd18879136d
-caps.latest.revision: 23
-author: "alancameronwills"
-ms.author: "awills"
-manager: "douge"
-caps.handback.revision: 23
+caps.latest.revision: "23"
+author: alancameronwills
+ms.author: awills
+manager: douge
+ms.openlocfilehash: 23288d1afe9b9c0a181a5d978b1956071b683218
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.translationtype: MT
+ms.contentlocale: fr-FR
+ms.lasthandoff: 10/27/2017
 ---
-# Propri&#233;t&#233;s des d&#233;corateurs
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
-
-Les éléments décoratifs sont des icônes, du texte, ou développent\/chevrons de réduction qui peuvent apparaître sur des formes ou des connecteurs sur le diagramme.  Les tableaux suivants répertorient les propriétés pour les trois genres de décorateur.  Certaines propriétés apparaissent uniquement sur les éléments décoratifs de forme ou uniquement sur les éléments décoratifs de connecteur.  
+# <a name="properties-of-decorators"></a>Propriétés des décorateurs
+Éléments décoratifs sont des icônes, texte ou développer/réduire les chevrons qui peuvent s’afficher sur les formes ou des connecteurs du diagramme. Les tableaux suivants présentent les propriétés pour les trois types de decorator. Certaines propriétés s’affichent uniquement sur les éléments décoratifs de forme ou seulement sur des éléments décoratifs du connecteur.  
   
- Pour plus d'informations, consultez [Comment : définir un langage spécifique à un domaine](../modeling/how-to-define-a-domain-specific-language.md).  Pour plus d'informations sur l'utilisation de ces propriétés, consultez [Personnalisation et extension d'un langage spécifique à un domaine](../modeling/customizing-and-extending-a-domain-specific-language.md).  
+ Pour plus d’informations, consultez [comment définir un langage spécifique à un domaine](../modeling/how-to-define-a-domain-specific-language.md). Pour plus d’informations sur la façon d’utiliser ces propriétés, consultez [personnalisation et l’extension d’un langage spécifique à un domaine](../modeling/customizing-and-extending-a-domain-specific-language.md).  
   
-## Développer\/décorateur de réduction  
+## <a name="expandcollapse-decorator"></a>Développer/réduire le Decorator  
   
 |Propriété|Description|Par défaut|  
-|---------------|-----------------|----------------|  
-|DisplayName|Le nom de décorateur qui s'affiche dans le concepteur généré.|Développez de décorateur de réduction|  
-|Nom|Le nom de décorateur.|ExpandCollapseDecorator|  
-|Remarques|Remarques informelles associées à ce décorateur.|\<aucune\>|  
-|HorizontalOffset|L'offset horizontal, relatif à l'emplacement par défaut de décorateur, dans pouces.  \(Sur les formes uniquement.\)|0|  
-|VerticalOffset|Le décalage vertical, relatif à l'emplacement par défaut de décorateur, dans pouces.  \(Sur les formes uniquement.\)|0|  
-|OffsetFromLine|L'offset du décorateur de la ligne, par rapport à sa position par défaut, dans pouces.  \(Sur les connecteurs uniquement.\)|0|  
-|OffsetFromShape|L'offset du décorateur de la forme, par rapport à sa position par défaut, dans pouces.  \(Sur les connecteurs uniquement.\)|0|  
-|Position|La position par défaut de décorateur.|SourceTop|  
+|--------------|-----------------|-------------|  
+|DisplayName|Le nom de l’élément décoratif qui s’affichera dans le concepteur généré.|Développez Collapse Decorator|  
+|Nom|Le nom de l’élément décoratif.|ExpandCollapseDecorator|  
+|Remarques|Notes informelles qui sont associés à cet élément décoratif.|\<Aucun >|  
+|HorizontalOffset|Le décalage horizontal par rapport à la position par défaut de l’élément décoratif, exprimée en pouces. (Sur les formes uniquement.)|0|  
+|VerticalOffset|Le décalage vertical, par rapport à la position par défaut de l’élément décoratif, exprimée en pouces. (Sur les formes uniquement.)|0|  
+|OffsetFromLine|Le décalage de l’élément décoratif à partir de la ligne, par rapport à sa position par défaut, exprimée en pouces. (Sur les connecteurs uniquement.)|0|  
+|OffsetFromShape|Le décalage de l’élément décoratif de la forme, par rapport à sa position par défaut, exprimée en pouces. (Sur les connecteurs uniquement.)|0|  
+|Position|La position par défaut de l’élément décoratif.|SourceTop|  
   
-## Élément décoratif d'icône  
-  
-|Propriété|Description|Par défaut|  
-|---------------|-----------------|----------------|  
-|DefaultIcon|le chemin d'accès de l'icône ou du fichier image à afficher.|\<aucune\>|  
-|DisplayName|Le nom de décorateur à afficher dans le concepteur généré.|Élément décoratif d'icône|  
-|Nom|Le nom de décorateur.|IconDecorator|  
-|Remarques|Remarques informelles associées au décorateur.|\<aucune\>|  
-|HorizontalOffset|L'offset horizontal, relatif à l'emplacement par défaut de décorateur, dans pouces.  \(Sur les formes uniquement.\)|0|  
-|VerticalOffset|Le décalage vertical, relatif à l'emplacement par défaut de décorateur, dans pouces.  \(Sur les formes uniquement.\)|0|  
-|OffsetFromLine|L'offset du décorateur de la ligne, par rapport à sa position par défaut, dans pouces.  \(Sur les connecteurs uniquement.\)|0|  
-|OffsetFromShape|L'offset du décorateur de la forme, par rapport à sa position par défaut, dans pouces.  \(Sur les connecteurs uniquement.\)|0|  
-|Position|La position par défaut de décorateur.|SourceTop|  
-  
-## TextDecorator  
+## <a name="icon-decorator"></a>Icône Decorator  
   
 |Propriété|Description|Par défaut|  
-|---------------|-----------------|----------------|  
-|DefaultText|le texte par défaut à afficher.|Étiquette|  
-|DisplayName|Le nom de décorateur à afficher dans le concepteur généré.|Étiquette|  
-|FontSize|La taille de la police du texte qui est affiché dans l'élément décoratif.|8|  
-|FontStyle|Le style de police du texte qui est affiché dans l'élément décoratif.|Normale|  
-|Nom|Le nom de décorateur.|Étiquette|  
-|Remarques|Remarques informelles associées au décorateur.|\<aucune\>|  
-|HorizontalOffset|L'offset horizontal, relatif à l'emplacement par défaut de décorateur, dans pouces.  \(Sur les formes uniquement.\)|0|  
-|VerticalOffset|Le décalage vertical, relatif à l'emplacement par défaut de décorateur, dans pouces.  \(Sur les formes uniquement.\)|0|  
-|OffsetFromLine|L'offset du décorateur de la ligne, par rapport à sa position par défaut, dans pouces.  \(Sur les connecteurs uniquement.\)|0|  
-|OffsetFromShape|L'offset du décorateur de la forme, par rapport à sa position par défaut, dans pouces.  \(Sur les connecteurs uniquement.\)|0|  
-|Position|La position par défaut de décorateur.|TargetBottom|  
+|--------------|-----------------|-------------|  
+|DefaultIcon|Le chemin d’accès du fichier icône ou image à afficher.|\<Aucun >|  
+|DisplayName|Le nom de l’élément décoratif à afficher dans le concepteur généré.|Icône Decorator|  
+|Nom|Le nom de l’élément décoratif.|IconDecorator|  
+|Remarques|Notes informelles qui sont associés à l’élément décoratif.|\<Aucun >|  
+|HorizontalOffset|Le décalage horizontal par rapport à la position par défaut de l’élément décoratif, exprimée en pouces. (Sur les formes uniquement.)|0|  
+|VerticalOffset|Le décalage vertical, par rapport à la position par défaut de l’élément décoratif, exprimée en pouces. (Sur les formes uniquement.)|0|  
+|OffsetFromLine|Le décalage de l’élément décoratif à partir de la ligne, par rapport à sa position par défaut, exprimée en pouces. (Sur les connecteurs uniquement.)|0|  
+|OffsetFromShape|Le décalage de l’élément décoratif de la forme, par rapport à sa position par défaut, exprimée en pouces. (Sur les connecteurs uniquement.)|0|  
+|Position|La position par défaut de l’élément décoratif.|SourceTop|  
   
-## Voir aussi  
- [Domain\-Specific Language Tools Glossary](http://msdn.microsoft.com/fr-fr/ca5e84cb-a315-465c-be24-76aa3df276aa)
+## <a name="textdecorator"></a>TextDecorator  
+  
+|Propriété|Description|Par défaut|  
+|--------------|-----------------|-------------|  
+|DefaultText|Le texte par défaut à afficher.|Ajouter des contrôles|  
+|DisplayName|Le nom de l’élément décoratif à afficher dans le concepteur généré.|Ajouter des contrôles|  
+|FontSize|La taille de police pour le texte qui s’affiche dans le decorator.|8|  
+|FontStyle|Le style de police du texte qui s’affiche dans le decorator.|Normale|  
+|Nom|Le nom de l’élément décoratif.|Ajouter des contrôles|  
+|Remarques|Notes informelles qui sont associés à l’élément décoratif.|\<Aucun >|  
+|HorizontalOffset|Le décalage horizontal par rapport à la position par défaut de l’élément décoratif, exprimée en pouces. (Sur les formes uniquement.)|0|  
+|VerticalOffset|Le décalage vertical, par rapport à la position par défaut de l’élément décoratif, exprimée en pouces. (Sur les formes uniquement.)|0|  
+|OffsetFromLine|Le décalage de l’élément décoratif à partir de la ligne, par rapport à sa position par défaut, exprimée en pouces. (Sur les connecteurs uniquement.)|0|  
+|OffsetFromShape|Le décalage de l’élément décoratif de la forme, par rapport à sa position par défaut, exprimée en pouces. (Sur les connecteurs uniquement.)|0|  
+|Position|La position par défaut de l’élément décoratif.|TargetBottom|  
+  
+## <a name="see-also"></a>Voir aussi  
+ [Glossaire des outils de langage spécifique à un domaine](http://msdn.microsoft.com/en-us/ca5e84cb-a315-465c-be24-76aa3df276aa)

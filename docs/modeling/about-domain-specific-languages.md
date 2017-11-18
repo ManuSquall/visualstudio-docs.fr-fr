@@ -1,115 +1,116 @@
 ---
-title: "&#192; propos des langages sp&#233;cifiques &#224; un domaine | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-helpviewer_keywords: 
-  - "langage spécifique à un domaine"
+title: "À propos des langues spécifiques au domaine | Documents Microsoft"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.tgt_pltfrm: 
+ms.topic: article
+helpviewer_keywords: Domain-Specific Language
 ms.assetid: 29e5b6f2-ece4-4f3b-ab08-5f957418702f
-caps.latest.revision: 26
-author: "alancameronwills"
-ms.author: "awills"
-manager: "douge"
-caps.handback.revision: 26
+caps.latest.revision: "26"
+author: alancameronwills
+ms.author: awills
+manager: douge
+ms.openlocfilehash: 3bab0e785dfccddb7d182864a01146fe697b4247
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.translationtype: MT
+ms.contentlocale: fr-FR
+ms.lasthandoff: 10/27/2017
 ---
-# &#192; propos des langages sp&#233;cifiques &#224; un domaine
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
-
-Contrairement à un langage à usage général tel que c\# ou l'UML, un langage spécifique au domaine est conçu \(DSL\) pour exprimer les instructions en espace particulier de problème, le champ ou.  
+# <a name="about-domain-specific-languages"></a>À propos des langages spécifiques à un domaine
+Contrairement à une langue à usage général, tel que c# ou UML, un langage spécifique à un domaine (DSL) est conçu pour exprimer des instructions dans un espace de problème particulier, ou un domaine.  
   
- Langages spécifiques à un domaine connu incluent des expressions régulières et SQL.  Chaque langage DÉSOLÉ est préférable d'un langage à usage général pour décrire des opérations de chaînes de texte ou une base de données, mais beaucoup plus médiocre pour décrire des idées qui sont en dehors de sa propre portée.  Les différentes industries ont également leur propre langages spécifiques à un domaine.  Par exemple, dans l'industrie des télécommunications, les langages de description d'appel sont largement utilisées pour spécifier la séquence des rapports dans un appel téléphonique, et de l'industrie de transports aériens une norme DÉSOLÉ est utilisé pour décrire des réservations de vol.  
+ DSL connus inclure des expressions régulières et SQL. Chaque DSL est préférable à une langue à usage général pour décrire les opérations sur les chaînes de texte ou une base de données, mais bien pire permettant de décrire des idées qui sont en dehors de sa propre étendue. Des branches ont également leurs propres DSL. Par exemple, dans le secteur des télécommunications, appelez description langues sont couramment utilisées pour spécifier la séquence d’états dans un appel téléphonique et dans l’air de secteur du voyage une norme que DSL est utilisé pour décrire les réservations de vol.  
   
- Votre entreprise et le projet traitent également des ensembles spéciaux de concepts qui peuvent être décrits par un langage spécifique à un domaine.  Par exemple, vous pouvez définir un DÉSOLÉ pour une de ces applications :  
+ Votre entreprise et votre projet traitent également jeux spéciaux de concepts qui pourraient être décrits avec DSL. Par exemple, vous pouvez définir une DSL pour l’une de ces applications :  
   
--   Plan des chemins de navigation d'un site Web.  
+-   Plan des chemins d’accès de navigation d’un site Web.  
   
--   Diagrammes de connexion pour les composants électroniques.  
+-   Schémas de câblage pour des composants électroniques.  
   
--   Réseaux des tapis roulants et les appareils de manutention de bagages d'un aéroport.  
+-   Réseaux des tapis roulants et matériel pour un aéroport de manutention de bagages.  
   
- Lorsque vous concevez un langage spécifique à un domaine, vous définissez *une classe de domaine* pour chacun des concepts importants dans le champ, tel qu'une page Web, une lampe, ou un comptoir d'aéroportuaire.  Vous définissez *des relations de domaine* telles que le lien hypertexte, le responsable, ou un tapis roulant pour lier les concepts ensemble.  
+ Lorsque vous concevez une DSL, vous définissez un *classe de domaine* pour chacun des concepts importants dans le domaine, par exemple une page Web, feu ou aéroport archivage du support. Vous définissez *relations de domaine* comme lien hypertexte, câble ou un tapis roulant pour relier les concepts.  
   
- Les utilisateurs de votre DÉSOLÉ créent *des modèles.* Les modèles sont *des instances* du langage spécifique à un domaine.  Par exemple, elles décrivent un site Web particulier, ou la transmission d'un appareil particulier, ou du système de gestion des bagages dans un aéroport particulier.  
+ Créent des utilisateurs de votre DSL *modèles.* Les modèles sont *instances* la DSL. Par exemple, elles décrivent un site Web particulier, ou le câblage d’un périphérique particulier, ou le système dans un aéroport déterminé de manutention de bagages.  
   
- Vos utilisateurs peuvent afficher un modèle comme un diagramme ou comme un formulaire Windows.  Les modèles peuvent également être affichés en tant que XML, c'est\-à\-dire la manière dont elles sont enregistrées.  Lorsque vous définissez un langage spécifique à un domaine, vous définissez la façon dont les instances de chaque classe et relation de domaine apparaissent sur l'écran de l'utilisateur.  Un DÉSOLÉ classique est affiché comme une collection d'icônes ou de rectangles reliés par des flèches.  
+ Vos utilisateurs peuvent afficher un modèle sous la forme d’un diagramme ou un Windows form. Les modèles peuvent également être affichés en tant que XML, qui est la façon dont elles sont stockées. Lorsque vous définissez une DSL, vous définir comment les instances de chaque classe de domaine et chaque relation apparaissent sur l’écran de l’utilisateur. DSL par défaut s’affiche comme une collection d’icônes ou de rectangles reliées par des flèches.  
   
- L'illustration suivante montre un petit modèle dans un domaine \(schématique :  
+ L’illustration suivante montre un modèle petit dans DSL schématique :  
   
- ![Modèle d'arbre généalogique de la famille Tudor](~/modeling/media/tudor_familytreemodel.png "Tudor\_FamilyTreeModel")  
+ ![Modèle d’arbre généalogique Tudor](../modeling/media/tudor_familytreemodel.png "Tudor_FamilyTreeModel")  
   
-## Les opérations réalisables avec langages spécifiques à un domaine  
- Une application classique d'un DÉSOLÉ est de générer du code de programme ou d'autres artefacts.  Lorsque vous définissez votre DÉSOLÉ, vous pouvez définir *des modèles de texte* qui indiquent un modèle du langage DÉSOLÉ et génèrent des fichiers texte.  
+## <a name="what-you-can-do-with-dsls"></a>Ce que vous pouvez faire avec DSL  
+ Une application classique d’une DSL est pour générer du code de programme ou d’autres artefacts. Lorsque vous définissez votre DSL, vous pouvez définir *modèles de texte* qui lire un modèle de la DSL et générer des fichiers texte.  
   
- Par exemple, vous pouvez écrire des modèles qui prennent un plan d'aéroport et génèrent une partie du logiciel pour la gestion des bagages, ainsi que certains documents utilisateur qui décrivent le plan.  
+ Par exemple, vous pouvez écrire des modèles qui prennent un plan d’aéroport et génèrent une partie du logiciel pour les bagages de gestion, ainsi que certains documents utilisateur qui décrivent le plan.  
   
- Lorsque vous avez défini un DÉSOLÉ, vous pouvez la distribuer à d'autres utilisateurs qui pourront l'installer sur leur propre ordinateur.  Les utilisateurs de votre DÉSOLÉ peuvent créer et modifier des modèles dans [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)].  
+ Lorsque vous avez défini une DSL, vous pouvez le distribuer à d’autres utilisateurs qui peuvent l’installer sur leurs propres ordinateurs. Les utilisateurs de votre DSL peuvent créer et modifier des modèles dans [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)].  
   
- Vous pouvez également définir des commandes de menu et d'autres outils que les utilisateurs d'aide modifient le DÉSOLÉ, les contraintes de validation pour vous aider à vous assurer que le langage DÉSOLÉ est utilisé correctement, et les modèles d'élément que les utilisateurs d'aide créent des instances.  Vous pouvez encapsuler un ou plusieurs langages spécifiques à un domaine avec leurs outils et d'autres extensions de [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] comme package intégré.  
+ Vous pouvez également définir des commandes de menu et autres outils permettant aux utilisateurs de modifier la DSL, contraintes de validation pour garantir la DSL est utilisée correctement, et les modèles d’élément permettant aux utilisateurs de créent de nouvelles instances. Vous pouvez encapsuler un ou plusieurs DSL avec leurs outils et d’autres [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] extensions comme un ensemble intégré.  
   
- En général, un langage spécifique au domaine est créé lorsqu'une équipe de développement doit écrire du code semblable pour plusieurs produits.  Par exemple, une société qui se spécialise dans les systèmes de manutention de bagages peut définir une piste DÉSOLÉ de bagages dont ils peuvent générer une partie du code pour chaque installation.  Les avantages du langage DÉSOLÉ sont qu'il peut inclure par leurs clients, le code généré à celui\-ci est fiable, et que le système peut être rapidement mis à jour si les besoins des clients changent.  
+ En règle générale, un langage spécifique à un domaine est créé quand une équipe de développement doit écrire un code similaire à plusieurs produits. Par exemple, une entreprise spécialisée dans les systèmes de manutention de bagages peut définir une DSL de suivi de bagages à partir duquel ils peuvent générer le code pour chaque installation. Les avantages de la DSL sont qu’il puissent être reconnus par leurs clients, que le code généré à partir de celui-ci est fiable, et que le système peut être rapidement mis à jour si l’évolution des besoins des clients.  
   
- [!INCLUDE[dsl](../modeling/includes/dsl_md.md)] vous permet de créer un langage spécifique au domaine qui a votre propre concepteur graphique et votre propre notation de diagramme, puis utiliser du langage pour générer le code source approprié pour chaque projet.  
+ [!INCLUDE[dsl](../modeling/includes/dsl_md.md)]vous permet de créer un langage spécifique à un domaine qui contient votre propre concepteur graphique et la notation de votre propre schéma et ensuite utiliser le langage pour générer le code source approprié pour chaque projet.  
   
-## Développement de domaine  
- le développement de domaine est le processus d'identifier les éléments de vos applications qui peuvent être modelées en utilisant un langage spécifique au domaine, puis de construire le langage et le déployer des développeurs d'applications.  Les développeurs utilisent du langage spécifique au domaine pour construire des modèles qui sont spécifiques à leurs applications, utilisez les modèles pour générer du code source, puis utilisent code source pour développer des applications.  
+## <a name="domain-specific-development"></a>Développement de spécifique à un domaine  
+ Développement de spécifique à un domaine consiste à identifier les parties de vos applications qui peuvent être modélisées en utilisant un langage spécifique à un domaine, puis construction de la langue et à son déploiement sur les développeurs d’applications. Les développeurs d’utilisent le langage spécifique à un domaine pour construire des modèles qui sont spécifiques à leurs applications, utiliser les modèles pour générer le code source, puis utiliser le code source pour développer des applications.  
   
-## Aspects du développement graphique spécifique au domaine  
- Un graphique langage spécifique au domaine doit inclure les fonctionnalités suivantes :  
+## <a name="aspects-of-graphical-domain-specific-development"></a>Aspects du développement de graphique spécifique à un domaine  
+ Un langage spécifique à un domaine graphique doit inclure les fonctionnalités suivantes :  
   
 -   Notation  
   
--   modèle de domaine  
+-   Modèle de domaine  
   
--   génération d'artefact  
+-   Génération de l’artefact  
   
 -   Sérialisation  
   
 -   Intégration à Visual Studio  
   
-### Notation  
- Un langage spécifique au domaine doit avoir un ensemble d'éléments relativement court qui peuvent être facilement définis et étendus pour représenter des éléments de domaine.  Une notation se compose des formes, qui représentent les éléments, et les connecteurs, qui représentent les relations entre les éléments, sur une surface de diagramme graphique.  Dans [!INCLUDE[dsl](../modeling/includes/dsl_md.md)], les formes peuvent être étendues et affinées pour représenter les éléments de votre langage spécifique au domaine.  
+### <a name="notation"></a>Notation  
+ Un langage spécifique à un domaine doit avoir un ensemble relativement peu volumineux d’éléments qui peuvent être définis et étendus pour représenter des constructions spécifiques à un domaine. Une notation se compose de formes, qui représentent les éléments, et de connecteurs, qui représentent les relations entre les éléments, sur une surface du diagramme. Dans [!INCLUDE[dsl](../modeling/includes/dsl_md.md)], les formes peuvent être étendus et optimisés pour représenter les éléments de votre langage spécifique à un domaine.  
   
-### modèle de domaine  
- Un langage spécifique au domaine doit associer l'ensemble d'éléments et de relations dans une syntaxe logique.  il doit également définir si les combinaisons des éléments et des relations sont valides.  Par exemple, les langages de programmation empêchent généralement l'héritage circulaire, dans lequel la classe est dérivée d'une deuxième classe et la deuxième classe est dérivée de première classe.  Les contraintes peuvent également être utilisées pour exprimer la logique métier, par exemple, une personne ne peut pas être un dépendant de.  [!INCLUDE[dsl](../modeling/includes/dsl_md.md)] utilise des contraintes pour exprimer les genres de restrictions que la plupart des langages spécifiques ont besoin.  
+### <a name="domain-model"></a>Modèle de domaine  
+ Un langage spécifique à un domaine doit combiner l’ensemble des éléments et les relations entre eux dans une grammaire cohérente. Il doit également définir si les combinaisons d’éléments et les relations sont valides. Par exemple, les langages de programmation empêchent généralement l’héritage circulaire, dans laquelle une classe est dérivée d’une classe de seconde et la deuxième classe est dérivée de la première classe. Contraintes peuvent également être utilisées pour exprimer la logique métier, par exemple, une personne ne peut pas être un dépendant de lui-même. [!INCLUDE[dsl](../modeling/includes/dsl_md.md)]utilise les contraintes pour exprimer les types de restrictions nécessitant plus des langages spécifiques à un domaine.  
   
-### génération d'artefact  
- L'un des objectifs principaux d'un langage spécifique au domaine est de générer un artefact, par exemple, le code source, un fichier XML, ou tout autre données utilisable.  En général, une modification du modèle signifie une modification de l'artefact.  Vous pouvez utiliser [!INCLUDE[dsl](../modeling/includes/dsl_md.md)] pour générer des artefacts et les régénérer lorsque vous modifiez le modèle.  
+### <a name="artifact-generation"></a>Génération de l’artefact  
+ Un des principaux objectifs d’un langage spécifique à un domaine consiste à générer un artefact, par exemple, code source, un fichier XML ou autres données utilisables. En règle générale, une modification dans le modèle signifie une modification de l’artefact. Vous pouvez utiliser [!INCLUDE[dsl](../modeling/includes/dsl_md.md)] pour générer des artefacts et régénérer les lorsque vous modifiez le modèle.  
   
-### Sérialisation  
- Un langage spécifique au domaine doit être persistant dans une certaine forme qui peut être modifié, enregistré, fermé, puis rechargé.  [!INCLUDE[dsl](../modeling/includes/dsl_md.md)] utilise un format XML qui vous permet de définir et personnaliser la façon dont votre langage spécifique au domaine est sérialisé ou persistant.  
+### <a name="serialization"></a>Sérialisation  
+ Un langage spécifique à un domaine doit être conservé dans une forme qui peut être modifiée, enregistrée, fermée et rechargée. [!INCLUDE[dsl](../modeling/includes/dsl_md.md)]utilise un format XML qui vous permet de définir et personnaliser la façon dont votre langage spécifique à un domaine est sérialisé ou rendues persistantes.  
   
-### Intégration à Visual Studio  
- Étant donné que [!INCLUDE[dsl](../modeling/includes/dsl_md.md)] est hébergé dans [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)], il étend de nombreuses fenêtres et de contrôles de [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] .  Elle vous permet également de personnaliser le comportement des commandes de menu, les éléments de boîte à outils, et d'autres éléments de l'interface utilisateur.  
+### <a name="integration-with-visual-studio"></a>Intégration à Visual Studio  
+ Étant donné que [!INCLUDE[dsl](../modeling/includes/dsl_md.md)] est hébergé dans [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)], il étend un grand nombre [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] windows et des contrôles. Il vous permet également de personnaliser le comportement des commandes de menu, des éléments de boîte à outils et autres éléments de l’interface utilisateur.  
   
- Vous pouvez également créer un adaptateur de modèle de bus pour votre langage spécifique au domaine.  Cet adaptateur vous permet de référencer un modèle et les éléments dans un modèle, et vous permet d'écrire du code qui peut accéder et mettre à jour une instance du langage spécifique à un domaine.  À l'aide de le mécanisme de modèle puissant de bus, vous pouvez écrire des extensions de [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] fonctionnant avec plusieurs modèles.  Vous pouvez également écrire des applications autonomes qui utilisent des modèles.  Pour plus d'informations, consultez [Intégration de modèles à l’aide de Visual Studio Modelbus](../modeling/integrating-models-by-using-visual-studio-modelbus.md).  
+ Vous pouvez également créer un adaptateur de Bus pour votre langage spécifique à un domaine. Cet adaptateur vous permet d’un modèle de référence et des éléments au sein d’un modèle et vous permet de que écrire du code qui peut accéder et mettre à jour une instance de la DSL. À l’aide d’un mécanisme puissant Bus de modèles, vous pouvez écrire [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] extensions qui fonctionnent avec plusieurs modèles. Vous pouvez également écrire des applications autonomes qui fonctionnent avec les modèles. Pour plus d’informations, consultez [intégration de modèles à l’aide de Visual Studio Modelbus](../modeling/integrating-models-by-using-visual-studio-modelbus.md).  
   
-## Avantages du développement de domaine  
- Un langage spécifique au domaine peut fournir les avantages suivants :  
+## <a name="benefits-of-domain-specific-development"></a>Avantages du développement de spécifique à un domaine  
+ Un langage spécifique à un domaine peut fournir les avantages suivants :  
   
--   Contient des éléments qui correspondent exactement l'espace de problème.  
+-   Contient des constructions qui correspondent exactement à l’espace du problème.  
   
-     Contrairement aux langages à usage général, un langage spécifique au domaine se compose des éléments et des relations qui représentent directement la logique de l'espace de problème.  Par exemple, une application de la police d'assurance doit inclure des éléments pour les stratégies et les revendications.  Un langage spécifique au domaine facilite la conception de l'application, et recherche ainsi qu'à des erreurs de logique.  
+     Contrairement aux langages à usage général, un langage spécifique à un domaine se compose des éléments et des relations qui représentent directement la logique de l’espace du problème. Par exemple, une application d’assurance doit inclure les éléments des stratégies et les revendications. Un langage spécifique à un domaine facilite la conception de l’application et de rechercher et de corriger les erreurs de logique.  
   
--   Permet aux non\-développeurs et les personnes qui ne connaissent pas le domaine incluent la conception globale.  
+-   Permet de non-développeurs et les personnes qui ne connaissent pas le domaine comprendre la conception générale.  
   
-     En utilisant un langage graphique de domaine, vous pouvez créer une représentation visuelle du domaine afin que les non\-développeurs puissent facilement comprendre la conception de l'application.  
+     En utilisant un langage spécifique à un domaine graphique, vous pouvez créer une représentation visuelle du domaine afin que non-les développeurs peuvent facilement comprendre la conception de l’application.  
   
--   Le permet de créer un prototype de l'application finale.  
+-   Facilite la création d’un prototype de l’application finale.  
   
-     Les développeurs peuvent utiliser le code que leur modèle se produit pour créer une application de prototype qu'ils peuvent indiquer aux clients.  
+     Les développeurs peuvent utiliser le code qui génère de leur modèle pour créer une application de prototype qu’ils peuvent fournir aux clients.  
   
-## Le processus de développement spécifique au domaine  
- La plupart des équipes de développement de logiciels qui utilisent des langages spécifiques suivez ces étapes pour créer et utiliser leurs modèles :  
+## <a name="the-process-of-domain-specific-development"></a>Le processus de développement de spécifique à un domaine  
+ La plupart des équipes de développement logiciel qui utilisent des langages spécifiques à un domaine suivent ces étapes pour créer et utiliser leurs modèles :  
   
--   L'équipe respecte les parties variables du domaine les éléments qui ne changent jamais.  
+-   L’équipe permet de différencier les parties variables du domaine à partir des éléments qui ne changent jamais.  
   
--   Écrivez du code pour développeurs pour les composants et les points fixes d'extension de congé pour les parties variables.  
+-   Les développeurs d’écrire du code pour les parties fixes et conserver les points d’extension pour les parties variables.  
   
--   Le développeur de logiciels de responsable ou l'architecte crée un langage spécifique au domaine qui incorpore des modèles de design des parties fixes du domaine et l'extension pointe pour les parties variables.  
+-   Le responsable du développement logiciel ou l’architecte crée un langage spécifique à un domaine qui incorpore les modèles de conception des parties du domaine et les points d’extension pour les parties variables fixes.  
   
--   Le développeur de logiciels de responsable ou l'architecte déploie le langage spécifique au domaine aux développeurs d'applications différentes que l'équipe produit.  
+-   Le responsable du développement logiciel ou l’architecte déploie le langage spécifique à un domaine pour les développeurs de diverses applications qui l’équipe de produit.  
   
--   chaque développeur crée un modèle qui s'applique à l'application spécifique.
+-   Chaque développeur crée un modèle qui s’applique à l’application spécifique.

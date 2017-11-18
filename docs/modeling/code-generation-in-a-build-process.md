@@ -10,30 +10,15 @@ helpviewer_keywords:
 - text templates, build tasks
 - text templates, transforming by using msbuild
 ms.assetid: 4da43429-2a11-4d7e-b2e0-9e4af7033b5a
-caps.latest.revision: 28
+caps.latest.revision: "28"
 author: alancameronwills
 ms.author: awills
 manager: douge
-translation.priority.ht:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
+ms.openlocfilehash: 70200da27d102f0ec6b8231a680965e8ee420d44
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
 ms.translationtype: MT
-ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
-ms.openlocfilehash: 6cfdd28afbfb88f83d7931b57adbedfb88bf93bf
-ms.contentlocale: fr-fr
-ms.lasthandoff: 09/26/2017
-
+ms.contentlocale: fr-FR
+ms.lasthandoff: 10/27/2017
 ---
 # <a name="code-generation-in-a-build-process"></a>Génération de code dans un processus de génération
 [La transformation de texte](../modeling/code-generation-and-t4-text-templates.md) peut être appelé dans le cadre de la [processus de génération](http://msdn.microsoft.com/Library/a971b0f9-7c28-479d-a37b-8fd7e27ef692) d’un [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] solution. Il existe des tâches de génération qui sont spécialisées pour la transformation de texte. Les tâches de génération T4 exécutent les modèles de texte au moment du design. En outre, elles compilent les modèles de texte (prétraités) au moment de l'exécution.  
@@ -309,5 +294,4 @@ Dim value = Host.ResolveParameterValue("-", "-", "parameterName")
  [Oleg Sych : Présentation de l’intégration T4:MSBuild](http://www.olegsych.com/2010/04/understanding-t4-msbuild-integration/)
 
 [!INCLUDE[modeling_sdk_info](includes/modeling_sdk_info.md)]
-
 

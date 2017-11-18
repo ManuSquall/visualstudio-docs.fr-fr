@@ -1,58 +1,60 @@
 ---
-title: "escape, fonction (JavaScript) | Microsoft Docs"
-ms.custom: ""
-ms.date: "01/18/2017"
-ms.prod: "windows-client-threshold"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "devlang-javascript"
-ms.tgt_pltfrm: ""
-ms.topic: "language-reference"
-f1_keywords: 
-  - "escape"
-dev_langs: 
-  - "JavaScript"
-  - "TypeScript"
-  - "DHTML"
-helpviewer_keywords: 
-  - "encoder les objets String"
-  - "Escape (méthode)"
-  - "hexadécimal"
-  - "objet String, encoder"
+title: escape, fonction (JavaScript) | Documents Microsoft
+ms.custom: 
+ms.date: 01/18/2017
+ms.prod: windows-client-threshold
+ms.reviewer: 
+ms.suite: 
+ms.technology: devlang-javascript
+ms.tgt_pltfrm: 
+ms.topic: language-reference
+f1_keywords: escape
+dev_langs:
+- JavaScript
+- TypeScript
+- DHTML
+helpviewer_keywords:
+- encoding string objects
+- Escape method
+- hexadecimal
+- String object, encoding
 ms.assetid: caa92bea-ba69-4109-a68a-6e2debda463a
-caps.latest.revision: 11
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 11
+caps.latest.revision: "11"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: b53a447ae6dde917c12a4711d9038136dc4500cf
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.translationtype: MT
+ms.contentlocale: fr-FR
+ms.lasthandoff: 10/27/2017
 ---
-# escape, fonction (JavaScript)
-Encode des chaînes pour en permettre la lecture sur tous les ordinateurs.  Déconseillé.  
+# <a name="escape-function-javascript"></a>escape, fonction (JavaScript)
+Encode les chaînes afin de pouvoir être lus sur tous les ordinateurs. Obsolète.  
   
-## Syntaxe  
+## <a name="syntax"></a>Syntaxe  
   
 ```  
 escape(charString)   
 ```  
   
-## Notes  
- L'argument `charString` requis représente tout objet de la `String` ou un littéral à encoder.  
+## <a name="remarks"></a>Remarques  
+ Requis `charString` correspond à un argument `String` objet ou littéral à encoder.  
   
- La fonction **escape** retourne une valeur de chaîne \(au format Unicode\) reprenant le contenu de `charstring`.  Les espaces, la ponctuation, les caractères accentués et tous les autres caractères non ASCII sont remplacés par un encodage `%`*xx*, dans lequel *xx* équivaut au nombre hexadécimal représentant le caractère en question.  Par exemple, un espace est retourné sous la forme « %20 ».  
+ Le **échappement** fonction retourne une valeur de chaîne (au format Unicode) qui contient le contenu de `charstring`. Tous les espaces, les signes de ponctuation, les caractères accentués et d’autres caractères non ASCII sont remplacées par `%` *xx* encodage, où *xx* est équivalente à la nombre hexadécimal représentant le caractère. Par exemple, un espace est retourné en tant que « %20. »  
   
- Les caractères d'une valeur supérieure à 255 sont stockés selon le format **%u** *xxxx*.  
+ Caractères d’une valeur supérieure à 255 sont stockés à l’aide de la **%u** *xxxx* format.  
   
 > [!NOTE]
->  N'utilisez pas la fonction **escape** pour encoder des URI \(Uniform Resource Identifiers\).  Utilisez plutôt les fonctions `encodeURI` et `encodeURIComponent` à la place.  
+>  Le **échappement** fonction ne doit pas être utilisée pour encoder les identificateurs de ressource uniforme (URI). Utilisez `encodeURI` et `encodeURIComponent` à la place des fonctions.  
   
- **S'applique à** : [Objet Global](../../javascript/reference/global-object-javascript.md)  
+ **S’applique aux**: [objet Global](../../javascript/reference/global-object-javascript.md)  
   
-## Configuration requise  
+## <a name="requirements"></a>Spécifications  
  [!INCLUDE[jsv1](../../javascript/misc/includes/jsv1-md.md)]  
   
-## Voir aussi  
+## <a name="see-also"></a>Voir aussi  
  [Fonction encodeURI](../../javascript/reference/encodeuri-function-javascript.md)   
  [encodeURIComponent, fonction](../../javascript/reference/encodeuricomponent-function-javascript.md)   
- [String, objet](../../javascript/reference/string-object-javascript.md)   
+ [Objet String](../../javascript/reference/string-object-javascript.md)   
  [Fonction unescape](../../javascript/reference/unescape-function-javascript.md)

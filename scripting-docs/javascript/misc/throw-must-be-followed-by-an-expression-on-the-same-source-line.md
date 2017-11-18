@@ -1,43 +1,45 @@
 ---
-title: "&#39;Throw&#39; doit &#234;tre suivi d&#39;une expression sur la m&#234;me ligne source | Microsoft Docs"
-ms.custom: ""
-ms.date: "01/18/2017"
-ms.prod: "windows-client-threshold"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "javascript"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "VS.WebClient.Help.SCRIPT1035"
-dev_langs: 
-  - "JavaScript"
-  - "TypeScript"
-  - "DHTML"
+title: "' Throw ' doit être suivi par une expression sur la même ligne source | Documents Microsoft"
+ms.custom: 
+ms.date: 01/18/2017
+ms.prod: windows-client-threshold
+ms.reviewer: 
+ms.suite: 
+ms.technology: javascript
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords: VS.WebClient.Help.SCRIPT1035
+dev_langs:
+- JavaScript
+- TypeScript
+- DHTML
 ms.assetid: b03b7747-01a1-40c6-af80-a1dd70bc5781
-caps.latest.revision: 8
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 8
+caps.latest.revision: "8"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: 7179a22d2713c9ddc894618bd6921f3f873f2ad8
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.translationtype: MT
+ms.contentlocale: fr-FR
+ms.lasthandoff: 10/27/2017
 ---
-# &#39;Throw&#39; doit &#234;tre suivi d&#39;une expression sur la m&#234;me ligne source
-Le mot clé `throw` n'a pas été suivi par une expression dans la même ligne source.  Une instruction `throw` se compose de deux parties : le mot clé `throw`, suivi de l'expression à lever.  Par exemple :  
+# <a name="throw-must-be-followed-by-an-expression-on-the-same-source-line"></a>'Throw' doit être suivi d'une expression sur la même ligne source
+Vous avez utilisé le `throw` (mot clé), mais n’a ne pas suivi il avec une expression sur la même ligne source. A `throw` instruction se compose de deux parties : le `throw` (mot clé), suivi par l’expression à être levée. Exemple :  
   
-```javascript  
+```JavaScript  
 if (denominator == 0) {  
  throw new DivideByZeroException();  
 }  
 ```  
   
- Vous ne pouvez pas dissocier ces deux composants.  
+ Vous ne pouvez pas diviser ces deux composants.  
   
-### Pour corriger cette erreur  
+### <a name="to-correct-this-error"></a>Pour corriger cette erreur  
   
--   Assurez \-vous que le mot clé `throw` et l'expression à lever figurent sur la même ligne.  
+-   Assurez-vous que le `throw` (mot clé) et l’expression de levée s’affiche sur la même ligne.  
   
-## Voir aussi  
- [Error, objet](../../javascript/reference/error-object-javascript.md)   
- [Instruction throw](../../javascript/reference/throw-statement-javascript.md)   
+## <a name="see-also"></a>Voir aussi  
+ [Objet Error](../../javascript/reference/error-object-javascript.md)   
+ [throw (instruction)](../../javascript/reference/throw-statement-javascript.md)   
  [Instruction try...catch...finally](../../javascript/reference/try-dot-dot-dot-catch-dot-dot-dot-finally-statement-javascript.md)

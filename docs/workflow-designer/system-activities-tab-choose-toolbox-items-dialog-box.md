@@ -1,37 +1,40 @@
 ---
-title: "Onglet System.Activities de la bo&#238;te de dialogue Choisir des &#233;l&#233;ments de bo&#238;te &#224; outils | Microsoft Docs"
-ms.custom: ""
-ms.date: "09/02/2016"
-ms.prod: ".net-framework-4.6"
-ms.reviewer: ""
-ms.suite: ""
-ms.tgt_pltfrm: ""
-ms.topic: "reference"
-f1_keywords: 
-  - "VS.CHOOSEITEMS.SYSTEM.ACTIVITIES_COMPONENTS"
-  - "VS.CHOOSEITEMS.SYSTEM.ACTIVITIES COMPONENTS"
+title: "Onglet System.Activities de la boîte à outils éléments choisir | Documents Microsoft"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.tgt_pltfrm: 
+ms.topic: reference
+f1_keywords:
+- VS.CHOOSEITEMS.SYSTEM.ACTIVITIES_COMPONENTS
+- VS.CHOOSEITEMS.SYSTEM.ACTIVITIES COMPONENTS
 ms.assetid: cef390cd-eeda-42e6-9d2e-18c8325a4f06
-caps.latest.revision: 5
-caps.handback.revision: 5
-author: "ErikRe"
-ms.author: "erikre"
-manager: "erikre"
+caps.latest.revision: "5"
+author: ErikRe
+ms.author: erikre
+manager: erikre
+ms.openlocfilehash: dc005e282e7581aa2af5cba7da3a23040bf9d8b1
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.translationtype: MT
+ms.contentlocale: fr-FR
+ms.lasthandoff: 10/27/2017
 ---
-# Onglet System.Activities de la bo&#238;te de dialogue Choisir des &#233;l&#233;ments de bo&#238;te &#224; outils
-Cet onglet de la boîte de dialogue **Choisir des éléments de boîte à outils** affiche une liste d'activités, de modèles et d'éléments [!INCLUDE[wf](../workflow-designer/includes/wf_md.md)] disponibles.Pour afficher la liste, sélectionnez **Choisir des éléments de boîte à outils** dans le menu **Outils** ou cliquez avec le bouton droit sur la **boîte à outils** et sélectionnez **Choisir les éléments** pour afficher la boîte de dialogue **Choisir des éléments de boîte à outils**, puis sélectionnez l'onglet **System.Activities**.La liste affiche automatiquement les activités de workflow des assemblys System.Activities, System.ServiceModel.Activities et System.Activities.Core.Presentation ; toutefois, seules les activités fournies par le système indiquées et les activités ajoutées via d'autres assemblys affichés dans la **boîte à outils** sont sélectionnées par défaut.Les activités récemment ajoutées sont sélectionnées automatiquement et figurent dans la **boîte à outils** lorsque vous cliquez sur **OK** dans la boîte de dialogue.De plus, ces éléments s'affichent dans la **boîte à outils** sous une nouvelle catégorie qui correspond à l'espace de noms dans lequel réside l'activité\/l'élément\/le modèle.  
+# <a name="systemactivities-tab-choose-toolbox-items-dialog-box"></a>Onglet System.Activities de la boîte de dialogue Choisir des éléments de boîte à outils
+Cet onglet de la **choisir des éléments de boîte à outils** boîte de dialogue affiche une liste de [!INCLUDE[wf](../workflow-designer/includes/wf_md.md)] activités, des modèles et des éléments à votre disposition. Pour afficher la liste, sélectionnez **choisir des éléments de boîte à outils** à partir de la **outils** menu ou en cliquant sur le **boîte à outils** et en sélectionnant **choisir des éléments de**pour afficher les **choisir des éléments de boîte à outils** boîte de dialogue, puis sélectionnez ses **System.Activities** onglet. L’emploi, la liste contient les activités de flux de travail à partir des assemblys System.Activities, System.ServiceModel.Activities et System.Activities.Core.Presentation ; Toutefois, seuls fournie par le système indiquées les activités et les activités ajoutées via d’autres assemblys affichés dans le **boîte à outils** sont cochées par défaut. Récemment ajouté les activités sont sélectionnées automatiquement et s’affichent dans le **boîte à outils** lorsque vous cliquez sur **OK** sur la boîte de dialogue. En outre, ces éléments s’affichent dans le **boîte à outils** sous une nouvelle catégorie qui correspond à l’espace de noms où se trouve l’activité / / modèle d’élément.  
   
 > [!WARNING]
 >  Si vous essayez d'ajouter un assembly qui ne contient pas d'activités de workflow, un boîte de dialogue d'erreur s'affiche pour expliquer que l'assembly ne contient pas d'activités.  
   
- Étant donné que cette boîte de dialogue ne dépend pas du projet, l'onglet **System.Activities** continue de s'afficher dans le type XAML autonome ou dans un type de projet autre qu'un workflow.  
+ Cette boîte de dialogue est indépendant de projet et par conséquent, le **System.Activities** onglet continue de s’afficher dans XAML autonome ou un type de projet de flux de travail non.  
   
- Le filtrage s'effectue sous chaque onglet.Autrement dit, il n'est pas possible d'ajouter des activités de workflow via l'onglet **Composant .NET**.Les activités doivent être ajoutées via l'onglet **System.Activities** lui\-même.  
+ Le filtrage s'effectue sous chaque onglet. Cela signifie qu’il n’est pas possible d’ajouter des activités de workflow via le **composant .NET** onglet. Ils doivent être ajoutés via le **System.Activities** onglet lui-même.  
   
- Vous pouvez désactiver tous les éléments que vous ne souhaitez pas afficher dans la **boîte à outils** en utilisant l'onglet de cette boîte de dialogue, ou bien en sélectionnant l'option **Supprimer** dans le menu contextuel de la **boîte à outils**. Notez que la suppression de la référence à un assembly ne supprime pas l'élément de la **boîte à outils**.  
+ Vous pouvez désactiver tous les éléments que vous ne souhaitez pas voir dans le **boîte à outils** cette boîte de dialogue tab, ou vous pouvez également vous pouvez d’effectuer à l’aide de la **supprimer** option de menu contextuel dans le **boîte à outils** et Annuler faisant référence à un assembly ne supprime pas l’élément à partir de la **boîte à outils**.  
   
- L'instanciation de l'activité, en la faisant glisser vers le concepteur, ajoute automatiquement l'assembly qui contient l'élément à la liste des assemblys référencés.Par ailleurs, si l'activité fait référence à un assembly C, elle n'ajoute pas C à la liste des assemblys référencés.L'assembly C doit se trouver dans le GAC ou le même répertoire que l'activité B.Dans le cas autonome, l'assembly doit figurer dans le GAC ou dans les chemins d'accès d'exploration de Visual Studio.Vous ne pouvez faire glisser l'activité sur l'aire du concepteur de workflow qu'à ce moment\-là.  
+ L’instanciation de l’activité, en la faisant glisser et en la déposant sur le concepteur, ajoute automatiquement l’assembly qui contient l’élément à la liste des assemblys référencés. Par ailleurs, si l'activité fait référence à un assembly C, elle n'ajoute pas C à la liste des assemblys référencés. L’assembly C doit se trouver dans le GAC ou dans le même répertoire que l’activité B. Dans le cas autonome, l’assembly doit se trouver dans le GAC ou les chemins d’accès de sonde de Visual Studio. Vous ne pouvez faire glisser et déposer l’activité sur l’aire du concepteur de workflow qu’à ce moment-là.  
   
- Les paramètres de la **boîte à outils** sont enregistrés par défaut en tant qu'options utilisateur. Par conséquent, lors de sa prochaine ouverture, la **boîte à outils** affichera votre liste personnalisée d'activités de workflow.L'opération présente l'effet secondaire suivant : si vous avez ajouté vos éléments de domaine spécifiques à la **boîte à outils** par le biais de la boîte de dialogue **Choisir des éléments de boîte à outils**, ces éléments continuent de s'afficher lorsque vous utilisez une application console de workflow.Si vous ne souhaitez pas les afficher, supprimez\-les à l'aide du menu contextuel ou désactivez\-les via la boîte de dialogue **Choisir des éléments de boîte à outils** comme indiqué précédemment.  
+ **Boîte à outils** par défaut, les paramètres sont enregistrés en tant qu’options de l’utilisateur, afin que la prochaine fois, lorsque vous ouvrez le **boîte à outils**, il affiche votre liste personnalisée d’activités de flux de travail. Un effet secondaire de ce qui est si vous avez ajouté vos éléments de domaine spécifique à la **boîte à outils** via la **choisir des éléments de boîte à outils** boîte de dialogue, vous cependant continuez de voir ces éléments lorsque vous travaillez un Application Console de workflow ainsi. Si vous ne souhaitez pas les voir, puis supprimez-les à l’aide du menu contextuel ou désactivez-les via la **choisir des éléments de boîte à outils** boîte de dialogue, comme indiqué précédemment.  
   
  Les colonnes dans cette boîte de dialogue contiennent les informations suivantes :  
   
@@ -45,6 +48,6 @@ Cet onglet de la boîte de dialogue **Choisir des éléments de boîte à outils
  Affiche le nom et la version de l'assembly .NET Framework qui contient l'activité.  
   
  Répertoire  
- Affiche l'emplacement de l'assembly .NET Framework qui contient les activités de workflow.L'emplacement par défaut de tous les assemblys est le Global Assembly Cache.  
+ Affiche l'emplacement de l'assembly .NET Framework qui contient les activités de workflow. L'emplacement par défaut de tous les assemblys est le Global Assembly Cache.  
   
- Pour trier la liste des composants, cliquez sur un en\-tête de colonne.
+ Pour trier la liste des composants, cliquez sur un en-tête de colonne.

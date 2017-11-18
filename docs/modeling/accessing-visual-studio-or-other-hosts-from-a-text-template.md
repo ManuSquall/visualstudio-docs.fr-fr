@@ -1,5 +1,5 @@
 ---
-title: Accessing Visual Studio or other Hosts from a Text Template | Microsoft Docs
+title: "L’accès à Visual Studio ou autres hôtes à partir d’un modèle de texte | Documents Microsoft"
 ms.custom: 
 ms.date: 11/04/2016
 ms.reviewer: 
@@ -7,41 +7,26 @@ ms.suite:
 ms.tgt_pltfrm: 
 ms.topic: article
 ms.assetid: a68886da-7416-4785-8145-3796bb382cba
-caps.latest.revision: 5
+caps.latest.revision: "5"
 author: alancameronwills
 ms.author: awills
 manager: douge
-translation.priority.ht:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
+ms.openlocfilehash: 6b75a3b3e57ee72afc11013a1cf7a041b222b204
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
 ms.translationtype: MT
-ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
-ms.openlocfilehash: 767f5fc72efbfcb6fc69fdec023d8572149b1685
-ms.contentlocale: fr-fr
-ms.lasthandoff: 08/28/2017
-
+ms.contentlocale: fr-FR
+ms.lasthandoff: 10/27/2017
 ---
-# <a name="accessing-visual-studio-or-other-hosts-from-a-text-template"></a>Accessing Visual Studio or other Hosts from a Text Template
-In a text template, you can use methods and properties exposed by the host that executes the template, such as [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)].  
+# <a name="accessing-visual-studio-or-other-hosts-from-a-text-template"></a>Accès à Visual Studio ou à d'autres hôtes à partir d'un modèle de texte
+Dans un modèle de texte, vous pouvez utiliser les méthodes et propriétés exposées par l’hôte qui exécute le modèle, telles que [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)].  
   
- This applies to regular text templates, not preprocessed text templates.  
+ Cela s’applique aux modèles de texte standard, les modèles de texte prétraités pas.  
   
-## <a name="obtaining-access-to-the-host"></a>Obtaining access to the host  
- Set `hostspecific="true"` in the `template` directive. This lets you use  `this.Host`, which has type <xref:Microsoft.VisualStudio.TextTemplating.ITextTemplatingEngineHost>. This type has members that you can use, for example, to resolve file names and to log errors.  
+## <a name="obtaining-access-to-the-host"></a>Obtention de l’accès à l’hôte  
+ Définissez `hostspecific="true"` dans la `template` directive. Cela vous permet d’utiliser `this.Host`, qui a le type <xref:Microsoft.VisualStudio.TextTemplating.ITextTemplatingEngineHost>. Ce type possède des membres que vous pouvez utiliser, par exemple, pour résoudre les noms de fichiers et de consigner les erreurs.  
   
-### <a name="resolving-file-names"></a>Resolving File Names  
- To find the full path of a file relative to the text template, use this.Host.ResolvePath().  
+### <a name="resolving-file-names"></a>Résolution des noms de fichiers  
+ Pour rechercher le chemin d’accès complet d’un fichier relatif au modèle de texte, utilisez-le. Host.ResolvePath().  
   
 ```csharp  
 <#@ template hostspecific="true" language="C#" #>  
@@ -56,8 +41,8 @@ Content of myFile is:
   
 ```  
   
-### <a name="displaying-error-messages"></a>Displaying Error Messages  
- This example logs messages when you transform the template. If the host is [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)], they are added to the error window.  
+### <a name="displaying-error-messages"></a>Affichage des Messages d’erreur  
+ Cet exemple enregistre des messages lorsque vous transformez le modèle. Si l’hôte est [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)], ils sont ajoutés à la fenêtre d’erreur.  
   
 ```csharp  
 <#@ template hostspecific="true" language="C#" #>  
@@ -74,12 +59,12 @@ Content of myFile is:
   
 ```  
   
-## <a name="using-the-visual-studio-api"></a>Using the Visual Studio API  
- If you are executing a text template in [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)], you can use `this.Host` to access services provided by [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] and any packages or extensions that are loaded.  
+## <a name="using-the-visual-studio-api"></a>À l’aide de l’API Visual Studio  
+ Si vous exécutez un modèle de texte dans [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)], vous pouvez utiliser `this.Host` pour accéder aux services fournis par [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] et des packages ou les extensions qui sont chargées.  
   
- Set hostspecific="true" and cast `this.Host` to <xref:System.IServiceProvider>.  
+ Définissez hostspecific = « true » et effectuez un cast `this.Host` à <xref:System.IServiceProvider>.  
   
- This example gets the [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] API, <xref:EnvDTE.DTE>, as a service:  
+ Cet exemple obtient le [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] API, <xref:EnvDTE.DTE>, en tant que service :  
   
 ```csharp  
 <#@ template hostspecific="true" language="C#" #>  
@@ -94,5 +79,5 @@ Number of projects in this solution: <#=  dte.Solution.Projects.Count #>
   
 ```  
   
-## <a name="using-hostspecific-with-template-inheritance"></a>Using hostSpecific with template inheritance  
- Specify `hostspecific="trueFromBase"` if you also use the `inherits` attribute, and if you inherit from a template that specifies `hostspecific="true"`. This avoids a compiler warning to the effect that the property `Host` has been declared twice.
+## <a name="using-hostspecific-with-template-inheritance"></a>À l’aide de hostSpecific avec héritage de modèle  
+ Spécifiez `hostspecific="trueFromBase"` si vous utilisez également le `inherits` attribut, et si vous héritez d’un modèle qui spécifie `hostspecific="true"`. Cela permet d’éviter un avertissement du compilateur de l’effet que la propriété `Host` a été déclarée deux fois.

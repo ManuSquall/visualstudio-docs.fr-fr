@@ -1,36 +1,36 @@
 ---
-title: "&lt;Strings&gt;, &#233;l&#233;ment (programme d&#39;amor&#231;age) | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-deployment"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "MSBuild.GenerateBootstrapper.NoStringsForCulture"
-  - "MSBuild.GenerateBootstrapper.ProductCultureNotFound"
-dev_langs: 
-  - "FSharp"
-  - "VB"
-  - "CSharp"
-  - "C++"
-helpviewer_keywords: 
-  - "<Strings> (élément du programme d'amorçage)"
+title: "&lt;Chaînes&gt; élément (programme d’amorçage) | Documents Microsoft"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-deployment
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords:
+- MSBuild.GenerateBootstrapper.NoStringsForCulture
+- MSBuild.GenerateBootstrapper.ProductCultureNotFound
+dev_langs:
+- FSharp
+- VB
+- CSharp
+- C++
+helpviewer_keywords: <Strings> element [bootstrapper]
 ms.assetid: d5ea3613-5fc9-4a11-bef3-46a01178bf60
-caps.latest.revision: 4
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
-caps.handback.revision: 4
+caps.latest.revision: "4"
+author: stevehoag
+ms.author: shoag
+manager: wpickett
+ms.openlocfilehash: 19c4c961dd226ada84fe825643af6d1c7eacc925
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.translationtype: MT
+ms.contentlocale: fr-FR
+ms.lasthandoff: 10/27/2017
 ---
-# &lt;Strings&gt;, &#233;l&#233;ment (programme d&#39;amor&#231;age)
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
-
-Définit des chaînes localisées pour des noms de produits, des noms de packages et des messages d'erreur d'installation.  
+# <a name="ltstringsgt-element-bootstrapper"></a>&lt;Chaînes&gt; élément (programme d’amorçage)
+Définit des chaînes localisées pour les noms de produits, les noms de package et les messages d’erreur d’installation.  
   
-## Syntaxe  
+## <a name="syntax"></a>Syntaxe  
   
 ```  
 <Strings>  
@@ -41,20 +41,20 @@ Définit des chaînes localisées pour des noms de produits, des noms de package
 </Strings>  
 ```  
   
-## Éléments et attributs  
- L'élément `Strings` est un enfant de l'élément `Package`.  Il ne possède aucun attribut.  
+## <a name="elements-and-attributes"></a>Éléments et attributs  
+ Le `Strings` élément est un enfant de le `Package` élément. Il possède pas d’attributs.  
   
-## Chaîne  
- L'élément `String` est un enfant de l'élément `Strings`.  Un élément `Strings` peut contenir un ou plusieurs éléments `String`.  
+## <a name="string"></a>Chaîne  
+ Le `String` élément est un enfant de le `Strings` élément. A `Strings` élément peut avoir un ou plusieurs `String` éléments.  
   
- `String` possède l'attribut suivant.  
+ `String`a l’attribut suivant.  
   
 |Attribut|Description|  
-|--------------|-----------------|  
-|`Name`|Obligatoire.  Nom de la chaîne.|  
+|---------------|-----------------|  
+|`Name`|Obligatoire. Le nom de la chaîne.|  
   
-## Exemple  
- L'exemple de code suivant spécifie toutes les chaînes en anglais pour le programme d'installation du [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)].  
+## <a name="example"></a>Exemple  
+ L’exemple de code suivant spécifie toutes les chaînes en anglais pour le [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] programme d’installation.  
   
 ```  
 <Strings>  
@@ -75,5 +75,5 @@ Définit des chaînes localisées pour des noms de produits, des noms de package
 </Strings>  
 ```  
   
-## Voir aussi  
- [\<Package\>, élément](../deployment/package-element-bootstrapper.md)
+## <a name="see-also"></a>Voir aussi  
+ [\<Package > élément](../deployment/package-element-bootstrapper.md)

@@ -1,62 +1,64 @@
 ---
-title: "concat, m&#233;thode (Array) (JavaScript) | Microsoft Docs"
-ms.custom: ""
-ms.date: "01/18/2017"
-ms.prod: "windows-client-threshold"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "devlang-javascript"
-ms.tgt_pltfrm: ""
-ms.topic: "language-reference"
-f1_keywords: 
-  - "concat"
-dev_langs: 
-  - "JavaScript"
-  - "TypeScript"
-  - "DHTML"
-helpviewer_keywords: 
-  - "concat (méthode) (array)"
-  - "Concat (méthode)"
+title: "concat, méthode (Array) (JavaScript) | Documents Microsoft"
+ms.custom: 
+ms.date: 01/18/2017
+ms.prod: windows-client-threshold
+ms.reviewer: 
+ms.suite: 
+ms.technology: devlang-javascript
+ms.tgt_pltfrm: 
+ms.topic: language-reference
+f1_keywords: concat
+dev_langs:
+- JavaScript
+- TypeScript
+- DHTML
+helpviewer_keywords:
+- concat method (array)
+- Concat method
 ms.assetid: bc2b4a6a-209e-4d59-8c24-59db01d53b1e
-caps.latest.revision: 16
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 16
+caps.latest.revision: "16"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: 19f3a216a36f9ad8c422036476e46b89b6ee488c
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.translationtype: MT
+ms.contentlocale: fr-FR
+ms.lasthandoff: 10/27/2017
 ---
-# concat, m&#233;thode (Array) (JavaScript)
-Regroupe au moins deux tableaux.  
+# <a name="concat-method-array-javascript"></a>concat, méthode (Array) (JavaScript)
+Combine deux ou plusieurs tableaux.  
   
-## Syntaxe  
+## <a name="syntax"></a>Syntaxe  
   
 ```  
   
 array1.concat([item1[, item2[, . . . [, itemN]]]])   
 ```  
   
-## Paramètres  
+## <a name="parameters"></a>Paramètres  
  `array1`  
- Obligatoire.  L'objet `Array` auquel tous les autres tableaux sont concaténés.  
+ Obligatoire. Le `Array` de l’objet pour lequel d’autres tableaux est concaténés.  
   
  `item1,. . ., itemN`  
- Facultatif.  Éléments supplémentaires à ajouter à la fin du tableau `array1`.  
+ Facultatif. Éléments supplémentaires à ajouter à la fin de `array1`.  
   
-## Notes  
- La méthode `concat` retourne un objet `Array` contenant la concaténation du tableau `array1` et de tout autre élément spécifié.  
+## <a name="remarks"></a>Remarques  
+ Le `concat` méthode retourne un `Array` objet contenant la concaténation de `array1` et tous les autres éléments fournis.  
   
- Les éléments à ajouter \(*itemN item1*\) au tableau sont insérés dans l'ordre, en commençant par le premier élément de la liste.  Si l'un des éléments est un tableau, son contenu est ajouté à la fin du tableau `array1`.  Si l'élément n'est pas un tableau, il est ajouté à la fin du tableau en tant qu'élément unique de tableau.  
+ Les éléments à ajouter (*item1 itemN*) dans le tableau sont insérés dans l’ordre, à partir du premier élément dans la liste. Si l’un des éléments est un tableau, son contenu est ajouté à la fin de `array1`. Si l’élément n’est pas un tableau, il est ajouté à la fin du tableau en tant qu’un seul élément du tableau.  
   
- Les éléments des tableaux sources sont copiés dans le nouveau tableau de la manière suivante :  
+ Éléments des tableaux sources sont copiés dans le tableau obtenu comme suit :  
   
--   Si une référence d'objet copiée dans le nouveau tableau provient de l'un des tableaux en cours de concaténation, la référence d'objet continue à pointer vers le même objet.  Tout changement apporté au nouveau tableau est répercuté dans le tableau d'origine et réciproquement.  
+-   Si un objet est copié à partir des concaténation dans le nouveau tableau de tableaux, la référence d’objet continue de pointer vers le même objet. Une modification dans le nouveau tableau ou tableau d’origine entraîne une modification à l’autre.  
   
--   Si un nombre ou une valeur numérique est ajoutée au nouveau tableau, seule la valeur est copiée.  La modification de la valeur dans un tableau n'affecte pas la valeur de l'autre tableau.  
+-   Si une valeur de nombre ou une chaîne est ajoutée dans le nouveau tableau, seule la valeur est copiée. Modification de la valeur dans un tableau n’affecte pas la valeur de l’autre.  
   
-## Exemple  
- L'exemple suivant montre comment utiliser la méthode `concat` quand elle est utilisée avec un tableau :  
+## <a name="example"></a>Exemple  
+ L’exemple suivant montre comment utiliser la `concat` méthode avec un tableau :  
   
-```javascript  
+```JavaScript  
 var a, b, c, d;  
 a = new Array(1,2,3);  
 b = "dog";  
@@ -69,9 +71,9 @@ document.write(d);
   
 ```  
   
-## Configuration requise  
+## <a name="requirements"></a>Spécifications  
  [!INCLUDE[jsv3](../../javascript/reference/includes/jsv3-md.md)]  
   
-## Voir aussi  
- [Méthode concat \(Chaîne\)](../../javascript/reference/concat-method-string-javascript.md)   
- [join, méthode \(Array\)](../../javascript/reference/join-method-array-javascript.md)
+## <a name="see-also"></a>Voir aussi  
+ [concat, méthode (String)](../../javascript/reference/concat-method-string-javascript.md)   
+ [Méthode join (Array)](../../javascript/reference/join-method-array-javascript.md)

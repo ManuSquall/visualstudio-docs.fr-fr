@@ -1,56 +1,57 @@
 ---
-title: "Comment&#160;: personnaliser la page Web par d&#233;faut d’une application ClickOnce | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-deployment"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-dev_langs: 
-  - "VB"
-  - "CSharp"
-  - "C++"
-helpviewer_keywords: 
-  - "Publish.htm, page web"
-  - "déploiement ClickOnce, page web par défaut"
-  - "déployer des applications (ClickOnce), publier"
-  - "publier, ClickOnce"
+title: "Comment : personnaliser la Page Web par défaut pour une Application ClickOnce | Documents Microsoft"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-deployment
+ms.tgt_pltfrm: 
+ms.topic: article
+dev_langs:
+- VB
+- CSharp
+- C++
+helpviewer_keywords:
+- Publish.htm Web page
+- ClickOnce deployment default Web page
+- deploying applications [ClickOnce], publishing
+- publishing, ClickOnce
 ms.assetid: 418de18c-bee9-4f24-9cd9-0252d175070d
-caps.latest.revision: 14
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
-caps.handback.revision: 14
+caps.latest.revision: "14"
+author: stevehoag
+ms.author: shoag
+manager: wpickett
+ms.openlocfilehash: fefafa0f9ea04a62d6ae79bd18834e36a1480f29
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.translationtype: MT
+ms.contentlocale: fr-FR
+ms.lasthandoff: 10/27/2017
 ---
-# Comment&#160;: personnaliser la page Web par d&#233;faut d’une application ClickOnce
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
-
-Lors de la publication d'une application ClickOnce sur le Web, une page Web est générée automatiquement et publiée avec l'application.  La page par défaut contient le nom de l'application et des liens permettant de l'installer, d'installer les composants requis ou d'accéder à l'aide sur MSDN.  
+# <a name="how-to-customize-the-default-web-page-for-a-clickonce-application"></a>Comment : personnaliser la page Web par défaut d’une application ClickOnce
+Lorsque vous publiez une application ClickOnce sur le Web, une page Web est automatiquement générée et publiée avec l’application. La page par défaut contient le nom de l’application et les liens pour installer l’application, installez les composants requis ou accéder à l’aide sur MSDN.  
   
 > [!NOTE]
->  Les liens réellement visibles sur la page dépendent de l'ordinateur sur lequel vous la consultez et des composants requis que vous incluez.  
+>  Les liens réels que vous voyez sur la page dépendent de l’ordinateur sur lequel la page est affichée et que vous incluez de conditions préalables.  
   
- Le nom par défaut de la page Web est Publish.htm ; vous pouvez le modifier dans le **Concepteur de projets**.  Pour plus d’informations, consultez [How to: Specify a Publish Page for a ClickOnce Application](../deployment/how-to-specify-a-publish-page-for-a-clickonce-application.md).  
+ Le nom par défaut pour la page Web est Publish.htm ; Vous pouvez modifier le nom dans la **Concepteur de projet**. Pour plus d’informations, consultez [Comment : spécifier une Page de publication pour une Application ClickOnce](../deployment/how-to-specify-a-publish-page-for-a-clickonce-application.md).  
   
- La page Web Publish.htm est publiée uniquement si une version plus récente est détectée.  
+ La page Publish.htm Web est publiée uniquement si une version plus récente est détectée.  
   
 > [!NOTE]
->  Les modifications que vous apportez à vos paramètres **Publier** n'affectent pas la page Publish.htm, à une exception près : si vous ajoutez ou supprimez des composants requis après la publication initiale, la liste de composants requis ne sera plus exacte.  Vous devrez modifier le texte du lien du composant requis pour refléter les modifications.  
+>  Les modifications que vous apportez à votre **publier** paramètres n’affectent pas la page Publish.htm, à une exception près : Si vous ajoutez ou supprimez des composants requis après la publication initiale, la liste des conditions préalables requises ne seront plus précise. Vous devez modifier le texte du lien requis refléter les modifications.  
   
-### Pour personnaliser la page Web de publication  
+### <a name="to-customize-the-publish-web-page"></a>Pour personnaliser la page Web de publication  
   
-1.  Publiez votre application ClickOnce sur un emplacement Web.  Pour plus d’informations, consultez [How to: Publish a ClickOnce Application using the Publish Wizard](../Topic/How%20to:%20Publish%20a%20ClickOnce%20Application%20using%20the%20Publish%20Wizard.md).  
+1.  Publier votre application ClickOnce à un emplacement Web. Pour plus d’informations, consultez [Comment : publier une Application ClickOnce à l’aide de l’Assistant Publication](../deployment/how-to-publish-a-clickonce-application-using-the-publish-wizard.md).  
   
-2.  Sur le serveur Web, ouvrez le fichier Publish.htm dans le Concepteurs Web Visual ou dans un autre éditeur HTML.  
+2.  Sur le serveur Web, ouvrez le fichier Publish.htm dans le Concepteur Web visuel ou un autre éditeur HTML.  
   
-3.  Personnalisez la page comme vous le souhaitez et enregistrez\-la.  
+3.  Personnaliser la page comme vous le souhaitez et l’enregistrer.  
   
-4.  Optionnel.  Afin d'empêcher Visual Studio de remplacer votre page Web de publication personnalisée, désactivez **Générer automatiquement la page Web de déploiement après chaque publication** dans la boîte de dialogue Options de publication.  
+4.  Facultatif. Pour empêcher Visual Studio de remplacer votre page Web de publication personnalisée, décochez la case **générer automatiquement la page web de déploiement après chaque publication** dans la boîte de dialogue Options de publication.  
   
-## Voir aussi  
- [ClickOnce Security and Deployment](../deployment/clickonce-security-and-deployment.md)   
- [Publishing ClickOnce Applications](../deployment/publishing-clickonce-applications.md)   
- [How to: Install Prerequisites with a ClickOnce Application](../Topic/How%20to:%20Install%20Prerequisites%20with%20a%20ClickOnce%20Application.md)   
- [How to: Specify a Publish Page for a ClickOnce Application](../deployment/how-to-specify-a-publish-page-for-a-clickonce-application.md)
+## <a name="see-also"></a>Voir aussi  
+ [Sécurité et déploiement ClickOnce](../deployment/clickonce-security-and-deployment.md)   
+ [Publication d’applications ClickOnce](../deployment/publishing-clickonce-applications.md)   
+ [Comment : installer les composants requis avec une Application ClickOnce](../deployment/how-to-install-prerequisites-with-a-clickonce-application.md)   
+ [Guide pratique pour spécifier une page de publication pour une application ClickOnce](../deployment/how-to-specify-a-publish-page-for-a-clickonce-application.md)

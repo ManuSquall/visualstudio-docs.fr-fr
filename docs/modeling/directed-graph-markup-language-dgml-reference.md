@@ -1,5 +1,5 @@
 ---
-title: "Dirigé de référence du langage DGML (Graph Markup) | Documents Microsoft"
+title: "Dirigées vers la référence du langage DGML (Graph Markup) | Documents Microsoft"
 ms.custom: 
 ms.date: 11/04/2016
 ms.reviewer: 
@@ -7,39 +7,25 @@ ms.suite:
 ms.tgt_pltfrm: 
 ms.topic: article
 ms.assetid: cc3e4ae7-60fa-4e22-9227-98020b480b73
-caps.latest.revision: 8
+caps.latest.revision: "8"
 author: alexhomer1
 ms.author: ahomer
 manager: douge
-translation.priority.ht:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
-translationtype: Machine Translation
-ms.sourcegitcommit: 5db97d19b1b823388a465bba15d057b30ff0b3ce
-ms.openlocfilehash: c6aadef5b4f8e9ae8682779ccb9cb88d6ca2d3a2
-ms.lasthandoff: 02/22/2017
-
+ms.openlocfilehash: e1ea2e37668806849b88d1fb7d6a15142518c076
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.translationtype: MT
+ms.contentlocale: fr-FR
+ms.lasthandoff: 10/27/2017
 ---
 # <a name="directed-graph-markup-language-dgml-reference"></a>Informations de référence sur le langage DGML (Directed Graph Markup Language)
 Le langage DGML (Directed Graph Markup Language) décrit les informations utilisées pour la visualisation et l'analyse de complexité. Il s'agit du format utilisé pour faire persister des cartes de code dans Visual Studio. Il utilise le langage XML simple pour décrire des graphiques orientés à la fois cycliques et acycliques. Un graphique orienté est un ensemble de nœuds reliés par des liens (ou bords). Les nœuds et les liens peuvent être utilisés pour représenter des structures interconnectées, telles que les éléments d'un projet logiciel.  
   
- Notez que certaines versions de Visual Studio prend en charge uniquement un sous-ensemble de fonctionnalités DGML, consultez [prise en charge de Version pour l’architecture et les outils de modélisation](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport).  
+ Notez que certaines versions de Visual Studio prend en charge uniquement un sous-ensemble des fonctionnalités de langage DGML, consultez [prise en charge de la Version pour l’architecture et les outils de modélisation](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport).  
   
 > [!NOTE]
->  Lorsque vous modifiez un fichier .dgml, IntelliSense vous aide à identifier les attributs qui sont disponibles pour chaque élément, ainsi que leurs valeurs. Pour spécifier la couleur dans un attribut, utilisez le nom des couleurs courantes (« Bleu », par exemple) ou des valeurs hexadécimales ARVB (« #ffa0b1c3 », par exemple). Le langage DGML utilise un sous-ensemble réduit de formats de définition de couleur WPF (Windows Presentation Foundation). Pour plus d’informations, consultez [Colors, classe](http://go.microsoft.com/fwlink/?LinkId=182345).  
+>  Lorsque vous modifiez un fichier .dgml, IntelliSense vous aide à identifier les attributs qui sont disponibles pour chaque élément, ainsi que leurs valeurs. Pour spécifier la couleur dans un attribut, utilisez le nom des couleurs courantes (« Bleu », par exemple) ou des valeurs hexadécimales ARVB (« #ffa0b1c3 », par exemple). Le langage DGML utilise un sous-ensemble réduit de formats de définition de couleur WPF (Windows Presentation Foundation). Pour plus d’informations, consultez [couleurs classe](http://go.microsoft.com/fwlink/?LinkId=182345).  
   
-##  <a name="a-namedgmla-dgml-syntax"></a><a name="DGML"></a>Syntaxe du langage DGML  
+##  <a name="DGML"></a>Syntaxe de langage DGML  
  Le tableau suivant décrit les types d'éléments utilisés en langage DGML :  
   
 -   `<DirectedGraph></DirectedGraph>`  
@@ -52,11 +38,11 @@ Le langage DGML (Directed Graph Markup Language) décrit les informations utilis
   
      `BackgroundImage` : emplacement du fichier image à utiliser en tant qu'arrière-plan de la carte.  
   
-     `GraphDirection` : quand la carte se présente sous forme d'arborescence (`Sugiyama`), disposez les nœuds de sorte que la plupart des liens suivent la direction spécifiée : `TopToBottom`, `BottomToTop`, `LeftToRight` ou `RightToLeft`. Consultez la page [modifier la disposition de la carte](../modeling/browse-and-rearrange-code-maps.md#Selecting).  
+     `GraphDirection` : quand la carte se présente sous forme d'arborescence (`Sugiyama`), disposez les nœuds de sorte que la plupart des liens suivent la direction spécifiée : `TopToBottom`, `BottomToTop`, `LeftToRight` ou `RightToLeft`. Consultez [modifier la disposition de la carte](../modeling/browse-and-rearrange-code-maps.md#Selecting).  
   
-     `Layout` : affectez à la carte les dispositions suivantes : `None`, `Sugiyama` (présentation sous forme d'arborescence), `ForceDirected` (clusters rapides) ou `DependencyMatrix`. Consultez la page [modifier la disposition de la carte](../modeling/browse-and-rearrange-code-maps.md#Selecting).  
+     `Layout` : affectez à la carte les dispositions suivantes : `None`, `Sugiyama` (présentation sous forme d'arborescence), `ForceDirected` (clusters rapides) ou `DependencyMatrix`. Consultez [modifier la disposition de la carte](../modeling/browse-and-rearrange-code-maps.md#Selecting).  
   
-     `NeighborhoodDistance`  : quand la carte se présente sous forme d'arborescence ou de clusters rapides, seuls les nœuds qui possèdent un nombre spécifié de liens (de 1 à 7) éloignés des nœuds sélectionnés s'affichent. Consultez la page [modifier la disposition de la carte](../modeling/browse-and-rearrange-code-maps.md#Selecting).  
+     `NeighborhoodDistance`  : quand la carte se présente sous forme d'arborescence ou de clusters rapides, seuls les nœuds qui possèdent un nombre spécifié de liens (de 1 à 7) éloignés des nœuds sélectionnés s'affichent. Consultez [modifier la disposition de la carte](../modeling/browse-and-rearrange-code-maps.md#Selecting).  
   
      Exemple :  
   
@@ -109,19 +95,19 @@ Le langage DGML (Directed Graph Markup Language) décrit les informations utilis
   
      La liste suivante décrit certains des attributs facultatifs que vous pouvez inclure :  
   
-     `Label`-Nom complet du nœud.  
+     `Label`-Le nom complet du nœud.  
   
-     Attributs Style. Consultez la page [code de personnaliser les cartes en modifiant les fichiers DGML](../modeling/customize-code-maps-by-editing-the-dgml-files.md).  
+     Attributs Style. Consultez [Customize code maps by editing the DGML files](../modeling/customize-code-maps-by-editing-the-dgml-files.md).  
   
      `Category` - Nom d'une catégorie qui identifie les éléments qui partagent cet attribut. Pour plus d'informations, consultez l'élément `<Category/>`.  
   
      `Property` - Nom d'une propriété qui identifie des éléments qui ont la même valeur de propriété. Pour plus d'informations, consultez l'élément `<Property/>`.  
   
-     `Group` - Si le nœud contient d'autres nœuds, affectez à cet attribut la valeur `Expanded` ou `Collapsed` pour respectivement en afficher ou en masquer le contenu. Un élément `<Link/>` doit inclure l'attribut `Category="Contains"` et spécifier le nœud parent en tant que nœud source et le nœud enfant en tant que nœud cible. Consultez la page [groupe d’éléments de code](../modeling/customize-code-maps-by-editing-the-dgml-files.md#OrganizeNodes).  
+     `Group` - Si le nœud contient d'autres nœuds, affectez à cet attribut la valeur `Expanded` ou `Collapsed` pour respectivement en afficher ou en masquer le contenu. Un élément `<Link/>` doit inclure l'attribut `Category="Contains"` et spécifier le nœud parent en tant que nœud source et le nœud enfant en tant que nœud cible. Consultez [groupe d’éléments de code](../modeling/customize-code-maps-by-editing-the-dgml-files.md#OrganizeNodes).  
   
-     `Visibility` - Affectez à cet attribut la valeur `Visible`, `Hidden` ou `Collapsed`. Utilise `System.Windows.Visibility`. Consultez la page [masquer ou afficher les nœuds et les liens](../modeling/browse-and-rearrange-code-maps.md#HidingShowing).  
+     `Visibility` - Affectez à cet attribut la valeur `Visible`, `Hidden` ou `Collapsed`. Utilise `System.Windows.Visibility`. Consultez [masquer ou afficher les nœuds et liens](../modeling/browse-and-rearrange-code-maps.md#HidingShowing).  
   
-     `Reference` - Définissez cet attribut pour le lier à un document ou une URL. Consultez la page [lier des documents ou des URL à des éléments de code et des liens](../modeling/customize-code-maps-by-editing-the-dgml-files.md#AddReferences).  
+     `Reference` - Définissez cet attribut pour le lier à un document ou une URL. Consultez [lier des documents ou des URL à des éléments de code et des liens](../modeling/customize-code-maps-by-editing-the-dgml-files.md#AddReferences).  
   
      Exemple :  
   
@@ -176,7 +162,7 @@ Le langage DGML (Directed Graph Markup Language) décrit les informations utilis
   
      `Label` - Nom complet du lien.  
   
-     Attributs Style. Consultez la page [code de personnaliser les cartes en modifiant les fichiers DGML](../modeling/customize-code-maps-by-editing-the-dgml-files.md).  
+     Attributs Style. Consultez [Customize code maps by editing the DGML files](../modeling/customize-code-maps-by-editing-the-dgml-files.md).  
   
      `Category` - Nom d'une catégorie qui identifie les éléments qui partagent cet attribut. Pour plus d'informations, consultez l'élément `<Category/>`.  
   
@@ -231,9 +217,9 @@ Le langage DGML (Directed Graph Markup Language) décrit les informations utilis
   
      `BasedOn` - Catégorie parente dont le `<Category/>` de l'élément actuel hérite.  
   
-     Dans l'exemple donné pour cet élément, la catégorie `FailedTest` hérite de son attribut `Stroke` à partir de la catégorie `PassedTest`. Consultez « pour créer des catégories hiérarchiques » dans [code de personnaliser les cartes en modifiant les fichiers DGML](../modeling/customize-code-maps-by-editing-the-dgml-files.md).  
+     Dans l'exemple donné pour cet élément, la catégorie `FailedTest` hérite de son attribut `Stroke` à partir de la catégorie `PassedTest`. Consultez « pour créer des catégories hiérarchiques » dans [les cartes de code de personnalisation en modifiant les fichiers DGML](../modeling/customize-code-maps-by-editing-the-dgml-files.md).  
   
-     Les catégories proposent également un comportement de modèle de base qui contrôle l'apparence des nœuds et des liens lorsqu'ils s'affichent sur une carte. Consultez la page [code de personnaliser les cartes en modifiant les fichiers DGML](../modeling/customize-code-maps-by-editing-the-dgml-files.md).  
+     Les catégories proposent également un comportement de modèle de base qui contrôle l'apparence des nœuds et des liens lorsqu'ils s'affichent sur une carte. Consultez [Customize code maps by editing the DGML files](../modeling/customize-code-maps-by-editing-the-dgml-files.md).  
   
      Exemple :  
   
@@ -284,9 +270,9 @@ Le langage DGML (Directed Graph Markup Language) décrit les informations utilis
   
     -   `DataType` - Type de données stockées par la propriété.  
   
-     Si vous souhaitez que la propriété s’affiche dans le **propriétés** fenêtre, utilisez le `Label` pour spécifier le nom d’affichage de la propriété.  
+     Si vous souhaitez que la propriété s’affiche dans le **propriétés** fenêtre, utilisez le `Label` propriété pour spécifier le nom d’affichage de la propriété.  
   
-     Consultez la page [attribuer des catégories aux éléments de code et aux liens](../modeling/customize-code-maps-by-editing-the-dgml-files.md#AssignCategories).  
+     Consultez [attribuer des catégories à des éléments de code et des liens](../modeling/customize-code-maps-by-editing-the-dgml-files.md#AssignCategories).  
   
      Exemple :  
   
@@ -315,7 +301,7 @@ Le langage DGML (Directed Graph Markup Language) décrit les informations utilis
     </DirectedGraph>  
     ```  
   
-###  <a name="a-nameaddaliasa-aliases-for-commonly-used-paths"></a><a name="AddAlias"></a>Alias pour les chemins d’accès fréquemment utilisés  
+###  <a name="AddAlias"></a>Alias pour les chemins d’accès fréquemment utilisés  
  Lorsque vous remplacez des chemins d’accès fréquemment utilisés par des alias, vous réduisez la taille du fichier .dgml, ainsi que la durée nécessaire au téléchargement et à l’enregistrement du fichier. Pour créer un alias, ajoutez une section `<Paths></Paths>` à la fin du fichier .dgml. Dans cette section, ajoutez un élément `<Path/>` pour définir un alias pour le chemin d'accès :  
   
 ```xml  
@@ -324,7 +310,7 @@ Le langage DGML (Directed Graph Markup Language) décrit les informations utilis
 </Paths>  
 ```  
   
- Pour référencer l’alias à partir d’un élément dans le fichier .dgml, mettez le `Id` de la \<chemin d’accès / > élément avec un signe dollar ($) et les parenthèses (()) :  
+ Pour référencer l’alias à partir d’un élément dans le fichier .dgml, mettez le `Id` de la \<chemin d’accès / > élément par un signe dollar ($) et des parenthèses (()) :  
   
 ```xml  
 <Nodes>  
@@ -337,5 +323,5 @@ Le langage DGML (Directed Graph Markup Language) décrit les informations utilis
   
 ## <a name="see-also"></a>Voir aussi  
  [Mapper les dépendances dans vos solutions](../modeling/map-dependencies-across-your-solutions.md)   
- [Utilisez des cartes de code à déboguer vos applications](../modeling/use-code-maps-to-debug-your-applications.md)   
+ [Utiliser des cartes de code pour déboguer vos applications](../modeling/use-code-maps-to-debug-your-applications.md)   
  [Rechercher des problèmes potentiels à l’aide des analyseurs de carte du code](../modeling/find-potential-problems-using-code-map-analyzers.md)

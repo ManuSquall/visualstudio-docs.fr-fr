@@ -1,55 +1,56 @@
 ---
-title: "Propagation et r&#233;ponse aux modifications en attente | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-helpviewer_keywords: 
-  - "langage spécifique à un domaine, événements"
+title: "Répond aux requêtes et de propagation des modifications | Documents Microsoft"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.tgt_pltfrm: 
+ms.topic: article
+helpviewer_keywords: Domain-Specific Language, events
 ms.assetid: fc2e9ac5-7a84-44ed-9945-94e45f89c227
-caps.latest.revision: 24
-author: "alancameronwills"
-ms.author: "awills"
-manager: "douge"
-caps.handback.revision: 24
+caps.latest.revision: "24"
+author: alancameronwills
+ms.author: awills
+manager: douge
+ms.openlocfilehash: 7ea11c018f210b804f4ea6542eb7a7817ae1507c
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.translationtype: MT
+ms.contentlocale: fr-FR
+ms.lasthandoff: 10/27/2017
 ---
-# Propagation et r&#233;ponse aux modifications en attente
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
-
-Lorsqu'un élément est créé, supprimé ou mis à jour, vous pouvez écrire du code qui propage la modification à d'autres parties du modèle, ou à des ressources externes telles que les fichiers, les bases de données, ou d'autres composants.  
+# <a name="responding-to-and-propagating-changes"></a>Propagation et réponse aux modifications en attente
+Lorsqu’un élément est créé, supprimé ou mis à jour, vous pouvez écrire du code qui propage la modification à d’autres parties du modèle, ou à des ressources externes telles que des fichiers, de bases de données ou d’autres composants.  
   
-## Dans cette section  
- comme indication, considérez ces techniques dans l'ordre suivant :  
+## <a name="in-this-section"></a>Dans cette section  
+ En règle générale, examinez ces techniques dans l’ordre suivant :  
   
 |Technique|Scénarios|Pour plus d'informations|  
-|---------------|---------------|------------------------------|  
-|définissez une propriété de domaine calculée.|une propriété de domaine dont la valeur est calculée d'autres propriétés dans le modèle.  par exemple, un prix qui est la somme de prix des éléments associés.|[Propriétés de stockage calculées et personnalisées](../modeling/calculated-and-custom-storage-properties.md)|  
-|définissez une propriété de domaine personnalisée de stockage.|Une propriété de domaine stockée dans d'autres parties du modèle ou de l'extérieur.  Par exemple, vous pouvez analyser une chaîne d'expression en une arborescence dans le modèle.|[Propriétés de stockage calculées et personnalisées](../modeling/calculated-and-custom-storage-properties.md)|  
-|Substituez les gestionnaires de modification par exemple OnValueChanging et OnDeleting|Conservez les différents éléments de la synchronisation, et conserver des valeurs externes synchronisé avec le le modèle.<br /><br /> Contraignez des valeurs aux plages définies.<br /><br /> Appelé juste avant et après la valeur de propriété et d'autres modifications.  vous pouvez terminer la modification en levant une exception.|[Gestionnaire de modification de la valeur de propriété du domaine](../modeling/domain-property-value-change-handlers.md)|  
-|Règles|Vous pouvez définir des règles qui sont mises en file d'attente de l'exécution juste avant la fin d'une transaction pendant laquelle la modification s'est produite.  Elles ne sont pas exécutées sur l'annulation ou la de rétablissement.  Employez\-les pour conserver une partie du magasin dans la synchronisation avec les autres.|[Règles de propagent les modifications dans le modèle](../modeling/rules-propagate-changes-within-the-model.md)|  
-|Événements du magasin|Le magasin de modélisation fournit des notifications d'événements tels que l'ajout ou la suppression d'un élément ou un lien, ou modifier la valeur d'une propriété.  L'événement est exécuté sur une annulation et la de rétablissement.  Utilisez les événements du magasin pour mettre à jour les valeurs qui ne sont pas dans le magasin.|[Propagation de modifications en dehors du modèle par des gestionnaires d'événements](../modeling/event-handlers-propagate-changes-outside-the-model.md)|  
-|événements.NET|les formes ont des gestionnaires d'événements qui répondent aux clics de souris et à d'autres entrées tactiles.  Vous devez vous inscrire à ces événements pour chaque objet.  L'inscription est généralement fait dans une substitution d'InitializeInstanceResources, et doit être effectuée pour chaque élément.<br /><br /> Ces événements se produisent habituellement en dehors d'une transaction.|[Comment : intercepter un événement Click sur une forme ou un décorateur](../Topic/How%20to:%20Intercept%20a%20Click%20on%20a%20Shape%20or%20Decorator.md)|  
-|règles limites|Une règle limites sert de manière spécifique de contraindre les limites d'une forme.|[Définition de l'emplacement et de la taille de la forme par la classe BoundsRules](../modeling/boundsrules-constrain-shape-location-and-size.md)|  
-|règles de sélection|Les règles de sélection limitent spécifiquement ce que l'utilisateur peut sélectionner.|[Comment : accéder à et contraindre la sélection actuelle](../modeling/how-to-access-and-constrain-the-current-selection.md)|  
-|OnAssocatedPropertyChanged|Désignez des rapports d'éléments de modèle à l'aide de les fonctionnalités des formes et les connecteurs tels que l'ombre, les pointes de flèche, la couleur, et les largeurs de ligne et le style.|[Mise à jour des formes et des connecteurs pour refléter le modèle](../modeling/updating-shapes-and-connectors-to-reflect-the-model.md)|  
+|---------------|---------------|--------------------------|  
+|Définir une propriété de domaine calculée.|Une propriété de domaine dont la valeur est calculée à partir d’autres propriétés dans le modèle. Par exemple, un prix qui est la somme des prix des éléments connexes.|[Propriétés de stockage calculées et personnalisées](../modeling/calculated-and-custom-storage-properties.md)|  
+|Définir une propriété de domaine personnalisé stockage.|Une propriété de domaine stockée dans d’autres parties du modèle ou à l’extérieur. Par exemple, vous pouvez analyser une chaîne d’expression dans une arborescence dans le modèle.|[Propriétés de stockage calculées et personnalisées](../modeling/calculated-and-custom-storage-properties.md)|  
+|Substituer les gestionnaires de modification telles que OnValueChanging et OnDeleting|Synchroniser les différents éléments et de synchroniser les valeurs externes avec le modèle.<br /><br /> Limiter les valeurs pour les plages définies.<br /><br /> Appelé juste avant et après la valeur de propriété et d’autres modifications. Vous pouvez mettre fin à la modification en levant une exception.|[Gestionnaires de modification de la valeur de propriété du domaine](../modeling/domain-property-value-change-handlers.md)|  
+|Règles|Vous pouvez définir des règles qui sont en attente de l’exécution juste avant la fin d’une transaction dans laquelle un changement s’est produit. Ils ne sont pas exécutées sur l’annulation ou de restauration par progression. Utilisez-les pour qu’une partie de la banque reste synchronisé avec un autre.|[Propagation de modifications dans le modèle par des règles](../modeling/rules-propagate-changes-within-the-model.md)|  
+|Stocker les événements|Le magasin de modélisation fournit des notifications d’événements tels que l’ajout ou suppression d’un élément ou un lien ou modification de la valeur d’une propriété. L’événement est également exécuté sur Annuler et rétablir. Événements de la banque permet de mettre à jour les valeurs qui ne sont pas dans le magasin.|[Propagation de modifications en dehors du modèle par des gestionnaires d’événements](../modeling/event-handlers-propagate-changes-outside-the-model.md)|  
+|Événements .NET|Les formes ont des gestionnaires d’événements qui répondent aux clics de souris et d’autres manipulations. Vous devez l’inscrire pour ces événements pour chaque objet. L’inscription est généralement le cas dans une substitution de InitializeInstanceResources et doit être effectuée pour chaque élément.<br /><br /> Ces événements se produisent généralement en dehors d’une transaction.|[Guide pratique pour intercepter un événement de clic sur une forme ou un décorateur](../modeling/how-to-intercept-a-click-on-a-shape-or-decorator.md)|  
+|Règles de limites|Une règle de limites est utilisée en particulier pour contraindre les limites d’une forme.|[Emplacement et de la taille de la forme contrainte par BoundsRules](../modeling/boundsrules-constrain-shape-location-and-size.md)|  
+|Règles de sélection|Règles de sélection contraignent spécifiquement à ce que l’utilisateur peut sélectionner.|[Guide pratique pour accéder à et contraindre la sélection actuelle](../modeling/how-to-access-and-constrain-the-current-selection.md)|  
+|OnAssocatedPropertyChanged|Indiquer les États des éléments de modèle à l’aide des fonctionnalités des formes et des connecteurs tels que les clichés instantanés, pointes de flèche, couleur et les largeurs de ligne et le style.|[Mise à jour des formes et des connecteurs pour refléter le modèle](../modeling/updating-shapes-and-connectors-to-reflect-the-model.md)|  
   
-## **Comparer les règles et les événements du magasin**  
- Modifiez les auteurs de la notification, règles, les événements et sont exécutés lorsque des modifications se produisent dans un modèle.  
+## <a name="comparing-rules-and-store-events"></a>**Comparaison des règles et des événements de la banque**  
+ Utilitaires de notification de modification, les règles et les événements sont exécutées lorsque des modifications se produisent dans un modèle.  
   
- Les règles s'appliquent habituellement à la transaction de fin dans laquelle la modification s'est produite, les événements et sont appliqués après que des modifications dans une transaction elles soient.  
+ Les règles sont généralement appliquées à la transaction de fin dans laquelle la modification s’est produite, et les événements sont appliqués après que les modifications dans une transaction sont validées.  
   
- Utilisez les événements du magasin pour synchroniser le modèle avec des objets à l'extérieur de le magasin, et des règles d'assurer la cohérence dans le magasin.  
+ Événements de la banque permet de synchroniser le modèle avec des objets en dehors de la banque et les règles pour maintenir la cohérence dans le magasin.  
   
--   **Création de règles personnalisées** vous créez une règle personnalisée comme une classe dérivée d'une règle abstraite.  Vous devez également notifier l'infrastructure sur la règle personnalisée.  Pour plus d'informations, consultez [Règles de propagent les modifications dans le modèle](../modeling/rules-propagate-changes-within-the-model.md).  
+-   **Création de règles personnalisées** vous créez une règle personnalisée comme une classe dérivée à partir d’une règle abstraite. Vous devez également informer l’infrastructure de la règle personnalisée. Pour plus d’informations, consultez [propager les modifications dans le modèle de règles](../modeling/rules-propagate-changes-within-the-model.md).  
   
--   **Abonnement à des événements** avant de pouvoir vous abonner à un événement, créer un gestionnaire d'événements et un délégué.  Utilisez ensuite la propriété d' <xref:Microsoft.VisualStudio.Modeling.Store.EventManagerDirectory%2A>pour s'abonner à l'événement.  Pour plus d'informations, consultez [Propagation de modifications en dehors du modèle par des gestionnaires d'événements](../modeling/event-handlers-propagate-changes-outside-the-model.md).  
+-   **S’abonner aux événements** avant de vous abonner à un événement, créez un gestionnaire d’événements et d’un délégué. Utilisez ensuite le <xref:Microsoft.VisualStudio.Modeling.Store.EventManagerDirectory%2A>propriété pour vous abonner à l’événement. Pour plus d’informations, consultez [gestionnaires propager les modifications en dehors du modèle d’événement](../modeling/event-handlers-propagate-changes-outside-the-model.md).  
   
--   **Annuler change** lorsque vous annulez une transaction, les événements sont déclenchés, mais les règles ne sont pas appliquées.  si une règle modifie une valeur et vous annulez cette modification, la valeur est réinitialisée à la valeur d'origine pendant l'opération d'annulation.  Lorsqu'un événement est déclenché, vous devez modifier manuellement la valeur dans sa valeur d'origine.  Pour en savoir plus sur les transactons et de la commande undo, consultez [Comment : utiliser des transactions pour mettre à jour le modèle](../modeling/how-to-use-transactions-to-update-the-model.md).  
+-   **Annulation des modifications** lorsque vous annulez une transaction, les événements sont déclenchés, mais les règles ne sont pas appliquées. Si une règle modifie une valeur, vous annulez la modification, la valeur est réinitialisée à la valeur d’origine au cours de l’action d’annulation. Lorsqu’un événement est déclenché, vous devez modifier manuellement la valeur à sa valeur d’origine. Pour en savoir plus sur transactons et d’annulation, consultez [Comment : utiliser les Transactions pour mettre à jour le modèle](../modeling/how-to-use-transactions-to-update-the-model.md).  
   
--   **Passage des arguments d'événement aux règles et** aux événements et aux règles**d'événements** sont passés un paramètre d' `EventArgs` qui contient des informations sur la façon dont le modèle a été modifiée.  
+-   **Passage des Arguments d’événement à des règles et des événements** les deux événements et les règles sont transmises un `EventArgs` de modifier le modèle de paramètre qui contient des informations sur la façon.  
   
-## Voir aussi  
- [Comment : intercepter un événement Click sur une forme ou un décorateur](../Topic/How%20to:%20Intercept%20a%20Click%20on%20a%20Shape%20or%20Decorator.md)   
- [Écrire du Code pour personnaliser un langage spécifique à un domaine](../modeling/writing-code-to-customise-a-domain-specific-language.md)
+## <a name="see-also"></a>Voir aussi  
+ [Comment : intercepter un clic sur une forme ou un élément décoratif](../modeling/how-to-intercept-a-click-on-a-shape-or-decorator.md)   
+ [Écriture de code pour personnaliser un langage spécifique à un domaine](../modeling/writing-code-to-customise-a-domain-specific-language.md)

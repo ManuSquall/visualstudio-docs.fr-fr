@@ -1,33 +1,33 @@
 ---
-title: "&lt;Schedules&gt;, &#233;l&#233;ment (programme d&#39;amor&#231;age) | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-deployment"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-dev_langs: 
-  - "FSharp"
-  - "VB"
-  - "CSharp"
-  - "C++"
-helpviewer_keywords: 
-  - "<Schedules> (élément du programme d'amorçage)"
+title: "&lt;Planifications&gt; élément (programme d’amorçage) | Documents Microsoft"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-deployment
+ms.tgt_pltfrm: 
+ms.topic: article
+dev_langs:
+- FSharp
+- VB
+- CSharp
+- C++
+helpviewer_keywords: <Schedules> element [bootstrapper]
 ms.assetid: 28d094cf-64f5-42b1-bd8a-3697082aab4f
-caps.latest.revision: 5
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
-caps.handback.revision: 5
+caps.latest.revision: "5"
+author: stevehoag
+ms.author: shoag
+manager: wpickett
+ms.openlocfilehash: 104c187d373113e8e5dafe589af3995bef5c8cdc
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.translationtype: MT
+ms.contentlocale: fr-FR
+ms.lasthandoff: 10/27/2017
 ---
-# &lt;Schedules&gt;, &#233;l&#233;ment (programme d&#39;amor&#231;age)
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
-
-L'élément `Schedules` contient des éléments `Schedule` qui définissent les heures spécifiques d'exécution des commandes définies par l'élément `Command`.  
+# <a name="ltschedulesgt-element-bootstrapper"></a>&lt;Planifications&gt; élément (programme d’amorçage)
+Le `Schedules` élément contient `Schedule` éléments qui définissent des heures spécifiques commandes définies par le `Command` élément doit être exécuté.  
   
-## Syntaxe  
+## <a name="syntax"></a>Syntaxe  
   
 ```  
 <Schedules>  
@@ -41,29 +41,29 @@ L'élément `Schedules` contient des éléments `Schedule` qui définissent les 
 </Schedules>  
 ```  
   
-## Éléments et attributs  
- L'élément `Schedules` est un enfant de l'élément `Product`.  Chaque élément `Product` ne peut avoir qu'un seul élément `Schedules`.  L'élément `Schedules` ne contient pas d'attributs.  
+## <a name="elements-and-attributes"></a>Éléments et attributs  
+ Le `Schedules` élément est un enfant de le `Product` élément. Chaque `Product` élément peut avoir au plus un `Schedules` élément. Le `Schedules` élément ne possède pas d’attributs.  
   
-## Schedule  
- L'élément `Schedule` est un enfant de l'élément `Schedules`.  Un élément `Schedules` doit avoir au moins un élément `Schedule`.  
+## <a name="schedule"></a>Planification  
+ Le `Schedule` élément est un enfant de le `Schedules` élément. A `Schedules` l’élément doit avoir au moins un `Schedule` élément.  
   
- `Schedule` possède l'attribut suivant.  
+ `Schedule`a l’attribut suivant.  
   
 |Attribut|Description|  
-|--------------|-----------------|  
-|`Name`|Obligatoire.  Nom de l'élément de planification.  Il correspond à la propriété `ScheduleName` de l'élément `Command`.  Lorsqu'un élément `Command` référence la planification nommée, il n'est exécuté qu'à l'heure indiquée par cet élément `Schedule`.  Les planifications peuvent également être associées aux éléments `FailIf` et `BypassIf` qui limitent l'exécution de ces tests conditionnels à la planification spécifiée.  Pour plus d'informations, consultez [\<Commands\>, élément](../deployment/commands-element-bootstrapper.md).|  
+|---------------|-----------------|  
+|`Name`|Obligatoire. Le nom de l’élément de planification. Cela correspond à la `ScheduleName` propriété de la `Command` élément. Lorsqu’un `Command` fait référence à la planification nommée, il sera exécuté uniquement à l’heure indiquée par cette `Schedule` élément. Les planifications peuvent également être associées le `FailIf` et `BypassIf` éléments qui limitent ces tests conditionnels à l’exécution de la planification spécifiée. Pour plus d’informations, consultez [ \<commandes > élément](../deployment/commands-element-bootstrapper.md).|  
   
- Un élément `Schedule` donné ne peut avoir qu'un seul des enfants suivants.  
+ Une fonction `Schedule` élément peut avoir un seul des enfants suivants.  
   
-## BuildList  
- L'élément `BuildList` indique au programme d'installation d'exécuter une commande immédiatement après le démarrage de l'application d'amorçage.  
+## <a name="buildlist"></a>BuildList  
+ Le `BuildList` élément fait en sorte que le programme d’installation pour exécuter une commande immédiatement après le démarrage de l’application d’amorçage.  
   
-## BeforePackage  
- L'élément `BeforePackage` indique au programme d'installation d'exécuter une commande avant l'installation du package spécifié.  
+## <a name="beforepackage"></a>BeforePackage  
+ Le `BeforePackage` élément fait en sorte que le programme d’installation pour exécuter une commande avant l’installation du package spécifié.  
   
-## AfterPackage  
- L'élément `AfterPackage` indique au programme d'installation d'exécuter une commande après l'installation du package spécifié.  
+## <a name="afterpackage"></a>AfterPackage  
+ Le `AfterPackage` élément fait en sorte que le programme d’installation pour exécuter une commande après avoir installé le package spécifié.  
   
-## Voir aussi  
- [\<Product\>, élément](../deployment/product-element-bootstrapper.md)   
- [Référence du schéma de produit et de package](../deployment/product-and-package-schema-reference.md)
+## <a name="see-also"></a>Voir aussi  
+ [\<Produit > élément](../deployment/product-element-bootstrapper.md)   
+ [Informations de référence sur le schéma de produit et de package](../deployment/product-and-package-schema-reference.md)

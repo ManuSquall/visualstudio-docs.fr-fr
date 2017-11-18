@@ -1,105 +1,106 @@
 ---
-title: "Creating ClickOnce Applications for Others to Deploy | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-deployment"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-dev_langs: 
-  - "VB"
-  - "CSharp"
-  - "C++"
-helpviewer_keywords: 
-  - "preserved branding information"
-  - "useManifestForTrust element"
-  - "customer deployments [ClickOnce]"
-  - "multiple ClickOnce deployment and branding"
-  - "ClickOnce applications, previous .NET Framework versions"
-  - "application manifests [ClickOnce]"
-  - "<useManifestForTrust> element"
-  - "manifests [ClickOnce]"
-  - "trust applications, ClickOnce"
-  - "ClickOnce applications, deployed by others"
-  - "ClickOnce applications, previous .NET Framework"
+title: "Création d’Applications ClickOnce pour les autres pour déployer | Documents Microsoft"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-deployment
+ms.tgt_pltfrm: 
+ms.topic: article
+dev_langs:
+- VB
+- CSharp
+- C++
+helpviewer_keywords:
+- preserved branding information
+- useManifestForTrust element
+- customer deployments [ClickOnce]
+- multiple ClickOnce deployment and branding
+- ClickOnce applications, previous .NET Framework versions
+- application manifests [ClickOnce]
+- <useManifestForTrust> element
+- manifests [ClickOnce]
+- trust applications, ClickOnce
+- ClickOnce applications, deployed by others
+- ClickOnce applications, previous .NET Framework
 ms.assetid: d20766c7-4ef3-45ab-8aa0-3f15b61eccaa
-caps.latest.revision: 10
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
-caps.handback.revision: 10
+caps.latest.revision: "10"
+author: stevehoag
+ms.author: shoag
+manager: wpickett
+ms.openlocfilehash: 0ca5bb824cbe4e37db241aba956f9f6bf91d18cd
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.translationtype: MT
+ms.contentlocale: fr-FR
+ms.lasthandoff: 10/27/2017
 ---
-# Creating ClickOnce Applications for Others to Deploy
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
-
-Les développeurs qui créent des déploiements ClickOnce ne comptent pas tous déployer eux\-mêmes les applications.  Nombre d'entre eux se contentent d'empaqueter leur application à l'aide de ClickOnce puis confient les fichiers à un client, comme une grande entreprise.  Le client est alors responsable de l'hébergement de l'application sur son réseau.  Cette rubrique aborde quelques\-uns des problèmes inhérents à ces déploiements dans les versions du .NET Framework antérieures à la version 3.5.  Elle décrit ensuite une nouvelle solution qui consiste à faire appel à la nouvelle fonctionnalité Utiliser le manifeste d'application pour les informations d'approbation de .NET Framework 3.5.  Enfin, elle présente les stratégies recommandées pour la création de déploiements ClickOnce destinés à des clients qui utilisent encore d'anciennes versions du .NET Framework.  
+# <a name="creating-clickonce-applications-for-others-to-deploy"></a>Création d'applications ClickOnce destinées à être déployées par des tiers
+Envisagez de pas tous les développeurs qui créent des déploiements ClickOnce déployer les applications elles-mêmes. Bon nombre d'entre elles simplement empaqueter leur application à l’aide de ClickOnce et ensuite remettre les fichiers à un client, par exemple une grande entreprise. Le client est alors chargé d’héberger l’application sur son réseau. Cette rubrique décrit certains des problèmes inhérents à ces déploiements dans les versions du .NET Framework antérieures à la version 3.5. Elle décrit ensuite une nouvelle solution fournie dans le .NET Framework 3.5 à l’aide de la nouvelle fonctionnalité « utiliser le manifeste pour approbation ». Enfin, elle présente les stratégies recommandées pour la création de déploiements de ClickOnce pour les clients qui utilisent encore des versions antérieures du .NET Framework.  
   
-## Problèmes associés à la création de déploiements destinés à des clients  
- Plusieurs problèmes se posent lorsque vous projetez de confier un déploiement à un client.  Le premier concerne la signature de code.  Pour être déployés sur un réseau, le manifeste de déploiement et le manifeste d'application d'un déploiement ClickOnce doivent être signés avec un certificat numérique.  La question est de savoir s'il faut utiliser le certificat du développeur ou celui du client lors de la signature des manifestes.  
+## <a name="issues-involved-in-creating-deployments-for-customers"></a>Problèmes liés à la création de déploiements pour les clients  
+ Plusieurs problèmes se produisent lorsque vous envisagez de fournir un déploiement à un client. Le premier concerne la signature de code. Afin d’être déployé sur un réseau, le manifeste de déploiement et manifeste d’application d’un déploiement ClickOnce doivent tous deux être signées avec un certificat numérique. Cela pose la question s’il faut utiliser le certificat du développeur ou celui du client lors de la signature des manifestes.  
   
- Cette question est primordiale dans la mesure où l'identité d'une application ClickOnce est basée sur la signature numérique du manifeste de déploiement.  Si le développeur signe le manifeste de déploiement, des conflits peuvent survenir si le client est une grande société dont plusieurs divisions déploient une version personnalisée de l'application.  
+ La question du certificat à utiliser est critique, comme les identités d’une application ClickOnce sont basée sur la signature numérique du manifeste de déploiement. Si le développeur signe le manifeste de déploiement, il peut provoquer des conflits si le client est une grande entreprise, et plus d’une division de l’entreprise déploie une version personnalisée de l’application.  
   
- Prenons l'exemple de la société Adventure Works qui possède un service financier et un service des ressources humaines.  Ces deux services utilisent une application ClickOnce sous licence de Microsoft Corporation qui génère des rapports à partir de données stockées dans une base de données SQL.  Microsoft fournit à chacun des services une version de l'application qui est personnalisée en fonction de leurs données.  Si les applications sont signées avec le même certificat Authenticode et qu'un utilisateur essaie d'utiliser les deux applications, une erreur est générée, ClickOnce considérant que la deuxième application est identique à la première.  Dans ce cas, des effets secondaires indésirables et imprévisibles risquent de survenir, comme la perte de données stockées localement par l'application.  
+ Par exemple, supposons que Adventure Works a un service financier et service des ressources humaines. Les deux services de licence une application ClickOnce à partir de Microsoft Corporation qui génère des rapports à partir des données stockées dans une base de données SQL. Microsoft fournit à chaque service avec une version de l’application qui est personnalisée pour leurs données. Si les applications sont signées avec le même certificat Authenticode, un utilisateur qui tente d’utiliser les deux applications, une erreur, ClickOnce considérant que la deuxième application est identique à la première. Dans ce cas, le client peut rencontrer des effets inattendus et indésirables qui incluent la perte de toutes les données stockées localement par l’application.  
   
- L'élément `deploymentProvider` du manifeste de déploiement qui indique à ClickOnce où rechercher des mises à jour d'application constitue un autre problème en matière de signature de code.  Cet élément doit être ajouté au manifeste de déploiement avant la signature,  sinon le manifeste de déploiement doit être de nouveau signé.  
+ Un autre problème lié à la signature du code est le `deploymentProvider` élément dans le manifeste de déploiement, ce qui indique à ClickOnce où rechercher des mises à jour de l’application. Cet élément doit être ajouté au manifeste de déploiement avant la signature. Si cet élément est ajouté par la suite, le manifeste de déploiement doit être signé à nouveau.  
   
-### Signature du manifeste de déploiement par le client  
- Pour résoudre le problème posé en cas de multiples déploiements, il est possible de faire signer le manifeste d'application par le développeur et le manifeste de déploiement par le client.  Bien qu'efficace, cette approche introduit d'autres problèmes.  Le certificat Authenticode devant rester protégé, le client ne peut pas simplement remettre le certificat au développeur pour signer le déploiement.  Bien que le Kit de développement .NET Framework SDK propose au client des outils lui permettant de signer lui\-même le manifeste de déploiement, il est possible qu'il ne dispose pas des connaissances techniques suffisantes pour effectuer cette opération ou qu'il souhaite faire appel à une solution moins complexe.  Dans pareils cas, le développeur crée généralement une application, un site Web ou tout autre mécanisme permettant au client de soumettre sa version de l'application à des fins de signature.  
+### <a name="requiring-the-customer-to-sign-the-deployment-manifest"></a>Le client signer le manifeste de déploiement  
+ Une solution à ce problème de déploiements non unique doit avoir le signe de développeur le manifeste d’application et le client signer le manifeste de déploiement. Bien que cette approche fonctionne, il présente d’autres problèmes. Dans la mesure où un certificat Authenticode doit rester protégé, le client ne peut pas simplement remettre le certificat au développeur pour signer le déploiement. Alors que le client peut signer le manifeste de déploiement eux-mêmes à l’aide des outils disponibles gratuitement avec le Kit de développement logiciel .NET Framework, cette opération peut nécessiter des connaissances techniques que le client est en mesure de fournir. Dans ce cas, le développeur crée généralement une application, site Web ou un autre mécanisme par lequel le client peut envoyer leur version de l’application pour la signature.  
   
-### Impact sur la sécurité des applications ClickOnce en cas de signature par le client  
- Même si le développeur et le client acceptent que ce dernier signe le manifeste d'application, d'autres problèmes relatifs à l'identité de l'application se présentent, notamment en termes de déploiement d'applications approuvées.  Consultez [Vue d'ensemble du déploiement d'applications approuvées](../deployment/trusted-application-deployment-overview.md) pour plus d'informations sur cette fonctionnalité. Supposons qu'Adventure Works configure ses ordinateurs clients afin que les applications fournies par Microsoft Corporation soient exécutées avec un niveau de confiance totale.  Si Adventure Works signe le manifeste de déploiement, ClickOnce utilisera la signature de sécurité d'Adventure Work's pour déterminer le niveau de confiance de l'application.  
+### <a name="the-impact-of-customer-signing-on-clickonce-application-security"></a>L’Impact de la signature sur la sécurité de l’Application ClickOnce par le client  
+ Même si le développeur et le client accepte que le client doit signer le manifeste d’application, cela déclenche les autres problèmes qui entourent l’identité de l’application, en particulier quand elle s’applique au déploiement d’applications approuvées. (Pour plus d’informations sur cette fonctionnalité, consultez [Trusted Application Deployment Overview](../deployment/trusted-application-deployment-overview.md).) Supposons qu’Adventure Works souhaite configurer ses ordinateurs clients afin que n’importe quelle application fournie par Microsoft Corporation s’exécute avec une confiance totale. Si Adventure Works signe le manifeste de déploiement, ClickOnce utilisera des signatures de sécurité du travail Adventure pour déterminer le niveau de confiance de l’application.  
   
-## Création de déploiements clients à l'aide du manifeste d'application pour les informations d'approbation  
- Dans .NET Framework 3.5, ClickOnce contient une nouvelle fonctionnalité qui permet aux développeurs et aux clients de signer les manifestes.  Le manifeste d'application ClickOnce prend en charge le nouvel élément `<useManifestForTrust>` qui permet à un développeur d'indiquer que la signature numérique du manifeste d'application doit être utilisée pour prendre des décisions d'approbation.  Le développeur utilise des outils d'empaquetage ClickOnce, tels que Mage.exe, MageUI.exe et Visual Studio, pour intégrer cet élément au manifeste d'application et incorporer son nom Publisher et le nom de l'application dans le manifeste.  
+## <a name="creating-customer-deployments-by-using-application-manifest-for-trust"></a>Création de déploiements clients à l’aide du manifeste d’Application de confiance  
+ ClickOnce dans le .NET Framework 3.5 contient une nouvelle fonctionnalité qui permet aux développeurs et aux clients une nouvelle solution pour le scénario de la façon dont les manifestes doivent être signés. Le manifeste d’application ClickOnce prend en charge un nouvel élément nommé `<useManifestForTrust>` qui permet à un développeur d’indiquer que la signature numérique du manifeste d’application doit être utilisée pour prendre des décisions d’approbation. Le développeur utilise des outils d’empaquetage ClickOnce, tels que Visual Studio, Mage.exe et MageUI.exe, d’inclure cet élément dans le manifeste d’application, ainsi que pour incorporer leur nom de serveur de publication et le nom de l’application dans le manifeste.  
   
- En cas d'utilisation de `<useManifestForTrust>`, le manifeste de déploiement n'a pas besoin d'être signé avec un certificat Authenticode publié par une autorité de certification.  Il peut être signé avec un certificat auto\-signé.  Le client ou le développeur génère un certificat auto\-signé à l'aide des outils standard du Kit de développement .NET Framework SDK avant de l'appliquer au manifeste de déploiement à l'aide des outils de déploiement ClickOnce standard.  Pour plus d'informations, consultez [Makecert.exe \(Certificate Creation Tool\)](../Topic/Makecert.exe%20\(Certificate%20Creation%20Tool\).md).  
+ Lorsque vous utilisez `<useManifestForTrust>`, le manifeste de déploiement n’a pas d’être signé avec un certificat Authenticode émis par une autorité de certification. Au lieu de cela, il peut être signé avec ce que l'on appelle un certificat auto-signé. Un certificat auto-signé est généré par le client ou le développeur à l’aide des outils de développement .NET Framework SDK standard et puis appliqué au manifeste de déploiement en utilisant les outils de déploiement ClickOnce standards. Pour plus d’informations, consultez [MakeCert](https://msdn.microsoft.com/library/windows/desktop/aa386968.aspx).  
   
- L'utilisation d'un certificat auto\-signé pour le manifeste de déploiement présente plusieurs avantages.  Comme le client n'a plus besoin d'obtenir ni de créer son propre certificat Authenticode, `<useManifestForTrust>` simplifie le déploiement pour le client et permet au développeur de conserver son identité de personnalisation sur l'application.  Les déploiements signés sont donc mieux sécurisés et possèdent des identités d'application uniques.  En outre, le conflit qui risque de se produire lors du déploiement de la même application pour plusieurs clients est éliminé.  
+ À l’aide d’un certificat auto-signé pour le manifeste de déploiement présente plusieurs avantages. En éliminant la nécessité pour le client obtenir ou créer son propre certificat Authenticode, `<useManifestForTrust>` simplifie le déploiement pour le client, tout en permettant au développeur de conserver son identité de personnalisation sur l’application. Le résultat est un ensemble de déploiements signés qui sont plus sécurisées et a une identité d’application unique. Cela élimine le conflit potentiel qui peut se produire du déploiement de la même application à plusieurs clients.  
   
- Pour plus d'informations pas à pas sur la création d'un déploiement ClickOnce avec `<useManifestForTrust>`, consultez [Walkthrough: Manually Deploying a ClickOnce Application that Does Not Require Re\-Signing and that Preserves Branding Information](../deployment/walkthrough-manually-deploying-a-clickonce-application-that-does-not-require-re-signing-and-that-preserves-branding-information.md).  
+ Pour obtenir des informations détaillées sur la création d’un déploiement de ClickOnce avec `<useManifestForTrust>` , consultez [procédure pas à pas : déploiement manuel d’une Application ClickOnce qui est non nécessitent nouvelle signature et qui conserve les informations sur le logo](../deployment/walkthrough-manually-deploying-a-clickonce-application-that-does-not-require-re-signing-and-that-preserves-branding-information.md).  
   
-### Fonctionnement du manifeste d'application pour les informations d'approbation pendant l'exécution  
- Pour mieux comprendre comment le manifeste d'application pour les informations d'approbation fonctionne pendant l'exécution, examinons l'exemple suivant.  Une application ClickOnce ciblant .NET Framework 3.5 est créée par Microsoft.  Le manifeste d'application utilise l'élément `<useManifestForTrust>` et est signé par Microsoft.  Adventure Works signe le manifeste de déploiement à l'aide d'un certificat auto\-signé.  Les clients d'Adventure Works sont configurés pour approuver toute application signée par Microsoft.  
+### <a name="how-application-manifest-for-trust-works-at-runtime"></a>Manifeste d’Application de comment pour les travaux d’approbation lors de l’exécution  
+ Pour obtenir une meilleure compréhension du fonctionne d’à l’aide du manifeste d’application de confiance lors de l’exécution, prenons l’exemple suivant. Une application ClickOnce qui cible le .NET Framework 3.5 est créée par Microsoft. Le manifeste d’application utilise le `<useManifestForTrust>` élément et est signé par Microsoft. Adventure Works signe le manifeste de déploiement à l’aide d’un certificat auto-signé. Adventure Works, les clients sont configurés pour approuver toute application signée par Microsoft.  
   
- Lorsqu'un utilisateur clique sur un lien vers le manifeste de déploiement, ClickOnce installe l'application sur l'ordinateur de l'utilisateur.  Les informations de certificat et de déploiement permettent à ClickOnce d'identifier l'application de manière unique sur l'ordinateur client.  Si l'utilisateur essaie à nouveau d'installer la même application à partir d'un emplacement différent, ClickOnce peut utiliser cette identité pour déterminer que l'application existe déjà sur le client.  
+ Lorsqu’un utilisateur clique sur un lien vers le manifeste de déploiement, ClickOnce installe l’application sur l’ordinateur de l’utilisateur. Les informations de certificat et de déploiement identifier identifie de façon unique l’application ClickOnce sur l’ordinateur client. Si l’utilisateur tente d’installer à nouveau de la même application à partir d’un emplacement différent, ClickOnce peut utiliser cette identité pour déterminer que l’application existe déjà sur le client.  
   
- Ensuite, ClickOnce examine le certificat Authenticode utilisé pour signer le manifeste d'application qui détermine le niveau de confiance accordé par ClickOnce.  Comme Adventure Works a configuré ses clients pour approuver toute application signée par Microsoft, un niveau de confiance totale est accordée à cette application ClickOnce.  Pour plus d'informations, consultez [Vue d'ensemble du déploiement d'applications approuvées](../deployment/trusted-application-deployment-overview.md).  
+ Ensuite, ClickOnce examine le certificat Authenticode qui est utilisé pour signer le manifeste d’application, qui détermine le niveau de confiance accordé par ClickOnce. Adventure Works a configuré ses clients pour approuver toute application signée par Microsoft, cette application ClickOnce est de confiance totale. Pour plus d'informations, consultez [Trusted Application Deployment Overview](../deployment/trusted-application-deployment-overview.md).  
   
-## Création de déploiements clients pour les versions antérieures  
- Que se passe\-t\-il si un développeur déploie des applications ClickOnce pour des clients qui utilisent d'anciennes versions du .NET Framework ?  Les sections suivantes résument plusieurs solutions recommandées, ainsi que les avantages et inconvénients de chacune d'elles.  
+## <a name="creating-customer-deployments-for-earlier-versions"></a>Création de déploiements de clients pour les Versions antérieures  
+ Que se passe-t-il si un développeur déploie des applications ClickOnce pour les clients qui utilisent des versions antérieures du .NET Framework ? Les sections suivantes résument plusieurs solutions recommandées, ainsi que les avantages et les inconvénients de chacune.  
   
-### Signature des déploiements au nom du client  
- Le développeur peut mettre au point un mécanisme visant à signer des déploiements au nom du client à l'aide de la clé privée de ce dernier.  Cela évite au développeur de gérer les clés privées ou plusieurs packages de déploiement.  Il lui suffit de fournir le même déploiement à chaque client.  Le client n'a plus qu'à le personnaliser en fonction de son environnement en utilisant le service de signature.  
+### <a name="sign-deployments-on-behalf-of-customer"></a>Signature des déploiements pour le compte client  
+ Une stratégie de déploiement est destiné aux développeurs de créer un mécanisme pour signer des déploiements pour le compte de leurs clients, à l’aide de la clé privée du client. Cela empêche le développeur d’avoir à gérer les clés privées ou plusieurs packages de déploiement. Le développeur fournit simplement le même déploiement à chaque client. Il incombe au client de personnaliser en fonction de leur environnement en utilisant le service de signature.  
   
- L'inconvénient de cette méthode est que son implémentation est longue et coûteuse.  Bien qu'il puisse être créé à l'aide des outils fournis dans le Kit de développement .NET Framework SDK, ce type de service augmente le temps nécessaire au développement du cycle de vie du produit.  
+ L’inconvénient de cette méthode est le temps et les dépenses qui sont requis pour l’implémenter. Alors que ce service peut être généré à l’aide des outils fournis dans le Kit de développement logiciel .NET Framework, il ajoute plus de temps de développement pour le cycle de vie du produit.  
   
- Comme indiqué précédemment dans cette rubrique, l'autre inconvénient est que la version de l'application de chaque client aura la même identité, ce qui peut engendrer des conflits.  Si ce problème se pose, le développeur peut modifier le champ Nom utilisé lors de la génération du manifeste de déploiement pour donner un nom unique à chaque application.  Chaque version de l'application aura alors sa propre identité et les conflits d'identité disparaîtront.  Ce champ correspond à l'argument `-Name` dans Mage.exe et au champ **Nom** de l'onglet **Nom** dans MageUI.exe.  
+ Comme indiqué plus haut dans cette rubrique, un autre inconvénient est que la version de chaque client de l’application aura la même identité d’application, ce qui peut provoquer des conflits. S’il s’agit d’un problème, le développeur peut modifier le champ nom qui est utilisé lors de la génération du manifeste de déploiement pour donner un nom unique à chaque application. Cela créera une identité distincte pour chaque version de l’application et éliminer les conflits d’identité. Ce champ correspond à la `-Name` argument dans Mage.exe et à la **nom** champ sur la **nom** onglet dans MageUI.exe.  
   
- Supposons, par exemple, que le développeur a créé une application nommée Application1.  Au lieu de créer un déploiement unique avec le champ Nom défini sur Application1, le développeur peut créer plusieurs déploiements avec une variation de nom spécifique au client, telle que Application1\-ClientA, Application1\-ClientB, et ainsi de suite.  
+ Par exemple, que le développeur a créé une application nommée Application1. Au lieu de créer un déploiement unique avec le champ de nom défini sur Application1, le développeur peut créer plusieurs déploiements avec une variation spécifiques au client sur ce nom, tel que Application1-ClientA, Application1-ClientB et ainsi de suite.  
   
-### Déploiement à l'aide d'un package d'installation  
- Une deuxième stratégie de déploiement consiste à générer un projet d'installation Microsoft pour effectuer le déploiement initial de l'application ClickOnce.  Ce projet peut être fourni dans les formats suivants : déploiement MSI, fichier exécutable d'installation \(.EXE\)ou fichier CAB \(.cab\) avec un script de commandes par lot.  
+### <a name="deploy-using-a-setup-package"></a>Déployer à l’aide d’un Package d’installation  
+ Une deuxième stratégie de déploiement doit générer un projet Microsoft Setup pour effectuer le déploiement initial de l’application ClickOnce. Cela peut être fourni dans un des formats suivants : déploiement MSI, fichier exécutable d’installation (. (EXE), ou sous la forme d’un fichier CAB (.cab) avec un script de commandes.  
   
- À l'aide de cette technique, le développeur fournit au client un déploiement qui inclut les fichiers d'application, le manifeste d'application et un manifeste de déploiement qui sert de modèle.  Le client exécute le programme d'installation qui l'invite à entrer une URL de déploiement \(serveur ou emplacement de partage de fichiers où les utilisateurs installent l'application ClickOnce\), ainsi qu'un certificat numérique.  L'application d'installation peut également demander au client de spécifier des options de configuration ClickOnce supplémentaires, comme l'intervalle entre vérifications des mises à jour.  Une fois ces informations rassemblées, le programme d'installation génère le vrai manifeste de déploiement, le signe et publie l'application ClickOnce à l'emplacement de serveur désigné.  
+ À l’aide de cette technique, le développeur fournit au client un déploiement qui inclut les fichiers d’application, le manifeste d’application et un manifeste de déploiement qui sert de modèle. Le client exécute le programme d’installation, qui vous invite à entrer une URL de déploiement (serveur ou emplacement à partir duquel les utilisateurs installent l’application ClickOnce de partage de fichiers), ainsi que d’un certificat numérique. L’application d’installation peut également choisir d’inviter à entrer les options de configuration ClickOnce supplémentaires, telles que de l’intervalle de vérification de mise à jour. Une fois que ces informations sont collectées, le programme d’installation serait générer le manifeste de déploiement réel, signer et publier l’application ClickOnce à l’emplacement du serveur désigné.  
   
- Dans cette situation, le client peut signer le manifeste de déploiement de trois façons :  
+ Il existe trois façons que le client peut signer le manifeste de déploiement dans cette situation :  
   
-1.  Il peut utiliser un certificat valide publié par une autorité de certification.  
+1.  Le client peut utiliser un certificat valide émis par une autorité de certification (CA).  
   
-2.  Il peut choisir de signer le manifeste de déploiement avec un certificat auto\-signé.  L'inconvénient de cette approche est que l'application affiche "Éditeur Inconnu" lorsque l'utilisateur est invité à spécifier s'il faut l'installer.  Mais pour les petits clients, cela se traduit par un gain de temps et d'argent, car ils n'ont pas besoin d'acheter un certificat publié par une autorité de certification.  
+2.  Une variante de cette approche, le client peut choisir signer le manifeste de déploiement avec un certificat auto-signé. L’inconvénient de cette approche est qu’elle entraîne l’application afficher les mots « Éditeur inconnu » lorsque l’utilisateur est invité à s’il faut l’installer. Toutefois, l’avantage est que les clients plus petits de devoir dépenser du temps et l’argent nécessaire pour un certificat émis par une autorité de certification.  
   
-3.  Enfin, le développeur peut inclure son propre certificat auto\-signé dans le package d'installation.  Mais des problèmes d'identité d'application peuvent survenir, comme indiqué plus haut dans cette rubrique.  
+3.  Enfin, le développeur peut inclure son propre certificat auto-signé dans le package d’installation. Cet article présente des problèmes potentiels avec l’identité de l’application décrite précédemment dans cette rubrique.  
   
- L'inconvénient avec la méthode du projet de déploiement de l'installation est que la génération d'une application de déploiement personnalisée est longue et coûteuse.  
+ L’inconvénient de la méthode de projet de déploiement d’installation est le temps et les dépenses nécessaires à la génération d’une application de déploiement personnalisée.  
   
-### Génération du manifeste de déploiement par le client  
- La troisième stratégie de déploiement consiste à ne confier au client que les fichiers et le manifeste d'application.  Dans ce scénario, le client doit utiliser le Kit de développement .NET Framework SDK pour générer et signer le manifeste de déploiement.  
+### <a name="have-customer-generate-deployment-manifest"></a>Avoir client générer le manifeste de déploiement  
+ Une stratégie de déploiement tiers est transférer uniquement les fichiers d’application et le manifeste d’application désactivée pour le client. Dans ce scénario, le client est responsable de l’utilisation du SDK .NET Framework pour générer et signer le manifeste de déploiement.  
   
- L'inconvénient de cette méthode est que le client doit installer les outils du Kit de développement .NET Framework SDK et qu'un développeur ou un administrateur système doit les maîtriser parfaitement.  Certains clients peuvent rechercher une solution qui requiert peu ou aucune connaissance technique de leur part.  
+ L’inconvénient de cette méthode est qu’elle requiert le client pour installer les outils de développement .NET Framework SDK et qu’un développeur ou un administrateur système qui est en utilisant les. Certains clients peuvent rechercher une solution nécessitant peu ou aucune connaissance technique de leur part.  
   
-## Voir aussi  
- [Deploying ClickOnce Applications For Testing and Production Servers without Resigning](../deployment/deploying-clickonce-applications-for-testing-and-production-servers-without-resigning.md)   
- [Walkthrough: Manually Deploying a ClickOnce Application](../deployment/walkthrough-manually-deploying-a-clickonce-application.md)   
- [Walkthrough: Manually Deploying a ClickOnce Application that Does Not Require Re\-Signing and that Preserves Branding Information](../deployment/walkthrough-manually-deploying-a-clickonce-application-that-does-not-require-re-signing-and-that-preserves-branding-information.md)
+## <a name="see-also"></a>Voir aussi  
+ [Déploiement d’Applications ClickOnce pour les tests et les serveurs de Production sans nouvelle signature](../deployment/deploying-clickonce-applications-for-testing-and-production-servers-without-resigning.md)   
+ [Procédure pas à pas : déploiement manuel d’une application ClickOnce](../deployment/walkthrough-manually-deploying-a-clickonce-application.md)   
+ [Procédure pas à pas : déploiement manuel d’une application ClickOnce qui ne nécessite pas de nouvelle signature et qui conserve les informations relatives à la personnalisation](../deployment/walkthrough-manually-deploying-a-clickonce-application-that-does-not-require-re-signing-and-that-preserves-branding-information.md)

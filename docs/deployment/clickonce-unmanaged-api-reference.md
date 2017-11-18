@@ -1,85 +1,86 @@
 ---
-title: "ClickOnce Unmanaged API Reference | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-deployment"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-dev_langs: 
-  - "VB"
-  - "CSharp"
-  - "C++"
-helpviewer_keywords: 
-  - "LaunchApplication [ClickOnce unmanaged]"
-  - "ClickOnce, unmanaged APIs"
-  - "CleanOnlineAppCache [ClickOnce unmanaged]"
-  - "CleanOnlineAppCacheW interface [ClickOnce unmanaged]"
-  - "GetDeploymentDataFromManifest [ClickOnce unmanaged]"
+title: "Référence des API non managées ClickOnce | Documents Microsoft"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-deployment
+ms.tgt_pltfrm: 
+ms.topic: article
+dev_langs:
+- VB
+- CSharp
+- C++
+helpviewer_keywords:
+- LaunchApplication [ClickOnce unmanaged]
+- ClickOnce, unmanaged APIs
+- CleanOnlineAppCache [ClickOnce unmanaged]
+- CleanOnlineAppCacheW interface [ClickOnce unmanaged]
+- GetDeploymentDataFromManifest [ClickOnce unmanaged]
 ms.assetid: ec002138-4054-456d-bcc1-79ac2f4a4fd7
-caps.latest.revision: 6
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
-caps.handback.revision: 6
+caps.latest.revision: "6"
+author: stevehoag
+ms.author: shoag
+manager: wpickett
+ms.openlocfilehash: 11e10800ff51abd6f95447d85204a44f8367f551
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.translationtype: MT
+ms.contentlocale: fr-FR
+ms.lasthandoff: 10/27/2017
 ---
-# ClickOnce Unmanaged API Reference
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
-
-API [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] publiques non managées de dfshim.dll.  
+# <a name="clickonce-unmanaged-api-reference"></a>Référence des API non managées ClickOnce
+[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]API publiques non managées de dfshim.dll.  
   
-## CleanOnlineAppCache  
- Nettoie ou désinstalle toutes les applications en ligne du cache de l'application [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)].  
+## <a name="cleanonlineappcache"></a>CleanOnlineAppCache  
+ Nettoie ou désinstalle toutes les applications en ligne à partir de la [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] cache de l’application.  
   
-### Valeur de retour  
- En cas de succès, retourne S\_OK ; sinon, retourne un HRESULT qui représente l'anomalie.  Si une exception managée se produit, la méthode retourne 0x80020009 \(DISP\_E\_EXCEPTION\).  
+### <a name="return-value"></a>Valeur de retour  
+ En cas de réussite, retourne S_OK ; Sinon, retourne un HRESULT qui représente l’échec. Si une exception managée se produit, retourne 0 x 80020009 (DISP_E_EXCEPTION).  
   
-### Remarques  
- L'appel de CleanOnlineAppCache démarrera le service [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)], s'il n'est pas déjà en route.  
+### <a name="remarks"></a>Notes  
+ Appel de CleanOnlineAppCache démarrera le [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] si elle n’est pas déjà en cours d’exécution du service.  
   
-## GetDeploymentDataFromManifest  
- Récupère des informations de déploiement du manifeste et de l'URL d'activation.  
+## <a name="getdeploymentdatafrommanifest"></a>GetDeploymentDataFromManifest  
+ Récupère les informations de déploiement à partir de l’URL du manifeste et l’activation.  
   
-### Paramètres  
+### <a name="parameters"></a>Paramètres  
   
 |Paramètre|Description|Type|  
 |---------------|-----------------|----------|  
-|`pcwzActivationUrl`|Pointeur vers le `ActivationURL`.|LPCWSTR|  
-|`pcwzPathToDeploymentManifest`|Pointeur vers le `PathToDeploymentManifest`.|LPCWSTR|  
-|`pwzApplicationIdentity`|Un pointeur vers une mémoire tampon, destinée à recevoir une chaîne terminée par le caractère NULL spécifiant l'identité retournée complète de l'application.|LPWSTR|  
-|`pdwIdentityBufferLength`|Un pointeur vers un DWORD qui est la longueur de la mémoire tampon `pwzApplicationIdentity`, en WCHAR.  Cela inclut l'espace pour le caractère NULL de fin.|LPDWORD|  
-|`pwzProcessorArchitecture`|Un pointeur vers une mémoire tampon, destinée à recevoir une chaîne terminée par le caractère NULL qui spécifie l'architecture du processeur du déploiement de l'application depuis le manifeste.|LPWSTR|  
-|`pdwArchitectureBufferLength`|Un pointeur vers un DWORD qui est la longueur de la mémoire tampon `pwzProcessorArchitecture`, en WCHAR.|LPDWORD|  
-|`pwzApplicationManifestCodebase`|Un pointeur vers une mémoire tampon destinée à recevoir une chaîne terminée par le caractère NULL qui spécifie le code base du manifeste de l'application, depuis le manifeste.|LPWSTR|  
-|`pdwCodebaseBufferLength`|Un pointeur vers un DWORD qui est la longueur de la mémoire tampon `pwzApplicationManifestCodebase`, en WCHAR.|LPDWORD|  
-|`pwzDeploymentProvider`|Un pointeur vers une mémoire tampon destinée à recevoir une chaîne terminée par le caractère NULL qui spécifie le fournisseur de déploiement du manifeste, s'il est présent.  Dans le cas contraire, une chaîne vide est retournée.|LPWSTR|  
-|`pdwProviderBufferLength`|Un pointeur vers un DWORD qui est la longueur du `pwzProviderBufferLength`.|LPDWORD|  
+|`pcwzActivationUrl`|Un pointeur vers le `ActivationURL`.|LPCWSTR|  
+|`pcwzPathToDeploymentManifest`|Un pointeur vers le `PathToDeploymentManifest`.|LPCWSTR|  
+|`pwzApplicationIdentity`|Pointeur vers une mémoire tampon pour recevoir une chaîne se terminant par NULL qui spécifie l’identité de l’application complète est retourné.|LPWSTR|  
+|`pdwIdentityBufferLength`|Un pointeur vers un DWORD qui est la longueur de la `pwzApplicationIdentity` mémoire tampon, en WCHAR. Cela inclut l’espace pour le caractère NULL de fin.|LPDWORD|  
+|`pwzProcessorArchitecture`|Pointeur vers une mémoire tampon pour recevoir une chaîne se terminant par NULL qui spécifie l’architecture du processeur du déploiement d’application, à partir du manifeste.|LPWSTR|  
+|`pdwArchitectureBufferLength`|Un pointeur vers un DWORD qui est la longueur de la `pwzProcessorArchitecture` mémoire tampon, en WCHAR.|LPDWORD|  
+|`pwzApplicationManifestCodebase`|Pointeur vers une mémoire tampon pour recevoir une chaîne se terminant par NULL qui spécifie le code base du manifeste d’application, à partir du manifeste.|LPWSTR|  
+|`pdwCodebaseBufferLength`|Un pointeur vers un DWORD qui est la longueur de la `pwzApplicationManifestCodebase` mémoire tampon, en WCHAR.|LPDWORD|  
+|`pwzDeploymentProvider`|Un pointeur vers une mémoire tampon pour recevoir une chaîne terminée par le caractère NULL qui spécifie le fournisseur de déploiement à partir du manifeste, le cas échéant. Sinon, une chaîne vide est retournée.|LPWSTR|  
+|`pdwProviderBufferLength`|Un pointeur vers un DWORD qui est la longueur de la `pwzProviderBufferLength`.|LPDWORD|  
   
-### Valeur de retour  
- En cas de succès, retourne S\_OK ; sinon, retourne un HRESULT qui représente l'anomalie.  Retourne HRESULTFROMWIN32 \(ERROR\_INSUFFICIENT\_BUFFER\) si la mémoire tampon est trop petite.  
+### <a name="return-value"></a>Valeur de retour  
+ En cas de réussite, retourne S_OK ; Sinon, retourne un HRESULT qui représente l’échec. Retourne HRESULTFROMWIN32 (ERROR_INSUFFICIENT_BUFFER) si une mémoire tampon est trop petite.  
   
-### Remarques  
- Les pointeurs ne doivent pas avoir la valeur null.  `pcwzActivationUrl` et `pcwzPathToDeploymentManifest` ne doivent pas être vides.  
+### <a name="remarks"></a>Notes  
+ Les pointeurs ne doivent pas être null. `pcwzActivationUrl`et `pcwzPathToDeploymentManifest` ne doit pas être vide.  
   
- C'est la responsabilité de l'appelant de nettoyer l'URL d'activation.  Par exemple, ajouter les caractères d'échappement là où ils sont exigés ou supprimer la chaîne de requête.  
+ Il est responsable de l’appelant pour nettoyer l’URL d’activation. Par exemple, ajout d’échappement des caractères lorsqu’ils sont nécessaires ou la suppression de la chaîne de requête.  
   
- C'est la responsabilité de l'appelant de limiter la longueur d'entrée.  Par exemple, la longueur maximale de l'URL est 2 Ko.  
+ Il est responsable de l’appelant pour limiter la longueur d’entrée. Par exemple, la longueur maximale des URL est 2 Ko.  
   
-## LaunchApplication  
- Lance ou installe une application en utilisant une URL de déploiement.  
+## <a name="launchapplication"></a>LaunchApplication  
+ Lance ou installe une application à l’aide d’une URL de déploiement.  
   
-### Paramètres  
+### <a name="parameters"></a>Paramètres  
   
 |Paramètre|Description|Type|  
 |---------------|-----------------|----------|  
-|`deploymentUrl`|Pointeur vers une chaîne terminée par le caractère NULL qui contient l'URL du manifeste de déploiement.|LPCWSTR|  
-|`data`|Réservé à une utilisation future.  Doit être NULL.|LPVOID|  
-|`flags`|Réservé à une utilisation future.  Doit être 0.|DWORD|  
+|`deploymentUrl`|Pointeur vers une chaîne terminée par le caractère NULL qui contient l’URL du manifeste de déploiement.|LPCWSTR|  
+|`data`|Réservé à un usage ultérieur. Doit être NULL.|LPVOID|  
+|`flags`|Réservé à un usage ultérieur. Doit être 0.|DWORD|  
   
-### Valeur de retour  
- En cas de succès, retourne S\_OK ; sinon, retourne un HRESULT qui représente l'anomalie.  Si une exception managée se produit, la méthode retourne 0x80020009 \(DISP\_E\_EXCEPTION\).  
+### <a name="return-value"></a>Valeur de retour  
+ En cas de réussite, retourne S_OK ; Sinon, retourne un HRESULT qui représente l’échec. Si une exception managée se produit, retourne 0 x 80020009 (DISP_E_EXCEPTION).  
   
-## Voir aussi  
+## <a name="see-also"></a>Voir aussi  
  <xref:System.Deployment.Application.DeploymentServiceCom.CleanOnlineAppCache%2A>

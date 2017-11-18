@@ -1,33 +1,33 @@
 ---
-title: "&lt;PackageFiles&gt;, &#233;l&#233;ment (programme d&#39;amor&#231;age) | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-deployment"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-dev_langs: 
-  - "FSharp"
-  - "VB"
-  - "CSharp"
-  - "C++"
-helpviewer_keywords: 
-  - "<PackageFiles> (élément du programme d'amorçage)"
+title: "&lt;PackageFiles&gt; élément (programme d’amorçage) | Documents Microsoft"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-deployment
+ms.tgt_pltfrm: 
+ms.topic: article
+dev_langs:
+- FSharp
+- VB
+- CSharp
+- C++
+helpviewer_keywords: <PackageFiles> element [bootstrapper]
 ms.assetid: 3ea252d7-18a3-47d8-af83-47feebcfe82b
-caps.latest.revision: 16
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
-caps.handback.revision: 16
+caps.latest.revision: "16"
+author: stevehoag
+ms.author: shoag
+manager: wpickett
+ms.openlocfilehash: a85b06bfc5c82e7d4bd08bef8f768ad2e28a2ab0
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.translationtype: MT
+ms.contentlocale: fr-FR
+ms.lasthandoff: 10/27/2017
 ---
-# &lt;PackageFiles&gt;, &#233;l&#233;ment (programme d&#39;amor&#231;age)
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
-
-L'élément `PackageFiles` contient les éléments `PackageFile` qui définissent les packages d'installation exécutés à la suite de l'élément `Command`.  
+# <a name="ltpackagefilesgt-element-bootstrapper"></a>&lt;PackageFiles&gt; élément (programme d’amorçage)
+Le `PackageFiles` élément contient `PackageFile` éléments qui définissent les packages d’installation exécutées en raison de le `Command` élément.  
   
-## Syntaxe  
+## <a name="syntax"></a>Syntaxe  
   
 ```  
 <PackageFiles  
@@ -43,28 +43,28 @@ L'élément `PackageFiles` contient les éléments `PackageFile` qui définissen
 </PackageFiles>  
 ```  
   
-## Éléments et attributs  
- L'élément `PackageFiles` a l'attribut suivant.  
+## <a name="elements-and-attributes"></a>Éléments et attributs  
+ Le `PackageFiles` élément a l’attribut suivant.  
   
 |Attribut|Description|  
-|--------------|-----------------|  
-|`CopyAllPackageFiles`|Facultatif.  S'il a la valeur `false`, le programme d'installation ne télécharge que les fichiers référencés à partir de l'élément `Command`.  S'il a la valeur `true`, tous les fichiers sont téléchargés.<br /><br /> S'il a la valeur `IfNotHomesite`, le programme d'installation se comporte comme avec la valeur `False` si `ComponentsLocation` a la valeur `HomeSite` ; sinon, il se comporte comme avec la valeur `True`.  Ce paramètre peut permettre aux packages qui sont eux\-mêmes des programmes d'amorçage d'exécuter leur propre comportement dans un scénario HomeSite.<br /><br /> La valeur par défaut est  `true`.|  
+|---------------|-----------------|  
+|`CopyAllPackageFiles`|Facultatif. Si la valeur `false`, le programme d’installation ne télécharge que les fichiers référencés à partir de la `Command` élément. Si la valeur `true`, tous les fichiers seront téléchargés.<br /><br /> Si la valeur `IfNotHomesite`, le programme d’installation se comportera comme si `False` si `ComponentsLocation` a la valeur `HomeSite`et sinon se comportera comme si `True`. Ce paramètre peut être utile pour permettre aux packages qui sont eux-mêmes des programmes d’amorçage exécuter leur propre comportement dans un scénario HomeSite.<br /><br /> La valeur par défaut est `true`.|  
   
-## PackageFile  
- L'élément `PackageFile` est un enfant de l'élément `PackageFiles`.  Un élément `PackageFiles` doit avoir au moins un élément `PackageFile`.  
+## <a name="packagefile"></a>PackageFile  
+ Le `PackageFile` élément est un enfant de le `PackageFiles` élément. A `PackageFiles` l’élément doit avoir au moins un `PackageFile` élément.  
   
- `PackageFile` possède les attributs suivants.  
+ `PackageFile`a les attributs suivants.  
   
 |Attribut|Description|  
-|--------------|-----------------|  
-|`Name`|Obligatoire.  Nom du fichier de package.  Il s'agit du nom que l'élément `Command` référence lorsqu'il définit les conditions d'installation d'un package.  Cette valeur est également utilisée comme clé dans la table `Strings` pour extraire le nom localisé utilisé par des outils tels que [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] pour décrire le package.|  
-|`HomeSite`|Facultatif.  Emplacement du package sur le serveur distant, s'il n'est pas inclus avec le programme d'installation.|  
-|`CopyOnBuild`|Facultatif.  Spécifie si le programme d'amorçage doit copier le fichier de package sur le disque au moment de la génération.  La valeur par défaut est true.|  
-|`PublicKey`|Clé publique chiffrée du signataire de certificat du package.  Obligatoire si `HomeSite` est utilisé ; sinon il est facultatif.|  
-|`Hash`|Facultatif.  Hachage SHA1 du fichier de package.  Il est utilisé pour vérifier l'intégrité du fichier au moment de l'installation.  Si le hachage identique ne peut pas être calculé à partir du fichier de package, le package ne sera pas installé.|  
+|---------------|-----------------|  
+|`Name`|Obligatoire. Le nom du fichier du package. Il s’agit du nom que le `Command` élément référence lorsqu’il définit les conditions d’installation d’un package. Cette valeur est également utilisée comme clé dans le `Strings` table pour extraire le nom localisé d’outils tels que [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] pour décrire le package.|  
+|`HomeSite`|Facultatif. L’emplacement du package sur le serveur distant, si elle n’est pas inclus dans le programme d’installation.|  
+|`CopyOnBuild`|Facultatif. Spécifie si le programme d’amorçage doit copier le fichier de package sur le disque au moment de la génération. La valeur par défaut est true.|  
+|`PublicKey`|La clé publique chiffrée du signataire de certificat du package. Obligatoire si `HomeSite` est utilisée ; sinon, facultatif.|  
+|`Hash`|Facultatif. Un hachage SHA1 du fichier du package. Cela permet de vérifier l’intégrité du fichier au moment de l’installation. Si le hachage identique ne peut pas être calculé à partir du fichier de package, le package ne sera pas installé.|  
   
-## Exemple  
- L'exemple de code suivant définit des packages pour le package redistribuable du [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] et de ses dépendances, telles que Windows Installer.  
+## <a name="example"></a>Exemple  
+ L’exemple de code suivant définit des packages pour le [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] redistributable package et ses dépendances, telles que le programme d’installation de Windows.  
   
 ```  
 <PackageFiles>  
@@ -75,7 +75,7 @@ L'élément `PackageFiles` contient les éléments `PackageFile` qui définissen
 </PackageFiles>  
 ```  
   
-## Voir aussi  
- [\<Product\>, élément](../deployment/product-element-bootstrapper.md)   
- [\<Package\>, élément](../deployment/package-element-bootstrapper.md)   
- [Référence du schéma de produit et de package](../deployment/product-and-package-schema-reference.md)
+## <a name="see-also"></a>Voir aussi  
+ [\<Produit > élément](../deployment/product-element-bootstrapper.md)   
+ [\<Package > élément](../deployment/package-element-bootstrapper.md)   
+ [Informations de référence sur le schéma de produit et de package](../deployment/product-and-package-schema-reference.md)

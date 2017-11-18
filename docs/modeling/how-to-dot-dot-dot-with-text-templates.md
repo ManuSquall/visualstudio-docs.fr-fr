@@ -7,30 +7,15 @@ ms.suite:
 ms.tgt_pltfrm: 
 ms.topic: article
 ms.assetid: d1ac2509-0479-47eb-809c-1f171245d0b6
-caps.latest.revision: 11
+caps.latest.revision: "11"
 author: alancameronwills
 ms.author: awills
 manager: douge
-translation.priority.ht:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
+ms.openlocfilehash: 93b4d129cd09fe3d3b67bfc743286577b1e285dd
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
 ms.translationtype: MT
-ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
-ms.openlocfilehash: 6e6841e77556d9ae8b8ce76bff01537d5f45e855
-ms.contentlocale: fr-fr
-ms.lasthandoff: 09/26/2017
-
+ms.contentlocale: fr-FR
+ms.lasthandoff: 10/27/2017
 ---
 # <a name="how-to--with-text-templates"></a>Comment : écrire avec des modèles de texte
 Modèles de texte dans [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] offrent un moyen utile de générer du texte de n’importe quel type. Vous pouvez utiliser des modèles de texte pour générer du texte au moment de l’exécution en tant que partie de votre application et au moment du design pour générer une partie de votre code de projet. Cette rubrique résume les plus fréquemment posées « Comment... ? » questions.  
@@ -142,4 +127,3 @@ Number of projects in this VS solution:  <#= dte.Solution.Projects.Count #>
 ### <a name="what-is-t4"></a>Qu’est « T4 » ?  
   
 -   Un autre nom pour le [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] fonctionnalités de modèle de texte décrites ici. La version précédente, ce qui n’était pas publiée, est l’abréviation de « Transformation du modèle de texte ».
-

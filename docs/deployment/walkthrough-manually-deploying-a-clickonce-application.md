@@ -1,198 +1,213 @@
 ---
-title: "Walkthrough: Manually Deploying a ClickOnce Application | Microsoft Docs"
-ms.custom: ""
-ms.date: "12/15/2016"
-ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-deployment"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-dev_langs: 
-  - "VB"
-  - "CSharp"
-  - "C++"
-helpviewer_keywords: 
-  - "Mage.exe, manual ClickOnce deployments"
-  - "MageUI.exe, manual ClickOnce deployments"
-  - "deploying applications [ClickOnce], manual ClickOnce deployments"
-  - "ClickOnce deployment, manually"
-  - "ClickOnce deployment, SDK tools"
-  - "manual ClickOnce deployments"
-  - "manifests [ClickOnce]"
+title: "Procédure pas à pas : Déploiement manuel d’une Application ClickOnce | Documents Microsoft"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-deployment
+ms.tgt_pltfrm: 
+ms.topic: article
+dev_langs:
+- VB
+- CSharp
+- C++
+helpviewer_keywords:
+- Mage.exe, manual ClickOnce deployments
+- MageUI.exe, manual ClickOnce deployments
+- deploying applications [ClickOnce], manual ClickOnce deployments
+- ClickOnce deployment, manually
+- ClickOnce deployment, SDK tools
+- manual ClickOnce deployments
+- manifests [ClickOnce]
 ms.assetid: ccee6551-a1b9-4ca2-8845-9c1cf4ac2560
-caps.latest.revision: 49
-caps.handback.revision: 47
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
+caps.latest.revision: "49"
+author: stevehoag
+ms.author: shoag
+manager: wpickett
+ms.openlocfilehash: 10f99d620060245fd7dac4e2420216a23d068a83
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.translationtype: MT
+ms.contentlocale: fr-FR
+ms.lasthandoff: 10/27/2017
 ---
-# Walkthrough: Manually Deploying a ClickOnce Application
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
-
-Si vous ne pouvez pas utiliser Visual Studio pour déployer votre application [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)], ou si vous devez utiliser des fonctionnalités de déploiement avancées telles que le déploiement d'applications approuvées, il est recommandé d'utiliser l'outil en ligne de commande Mage.exe pour créer vos manifestes [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)].  Cette procédure pas à pas décrit comment créer un déploiement [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] complet à l'aide de la version en ligne de commande \(Mage.exe\) ou graphique \(MageUI.exe\) de l'outil Manifest Generation and Editing.  
+# <a name="walkthrough-manually-deploying-a-clickonce-application"></a>Procédure pas à pas : déploiement manuel d'une application ClickOnce
+Si vous ne pouvez pas utiliser Visual Studio pour déployer votre [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] application, ou vous devez utiliser les fonctionnalités de déploiement avancées, comme le déploiement d’applications approuvées, vous devez utiliser l’outil de ligne de commande Mage.exe pour créer votre [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] manifestes. Cette procédure pas à pas explique comment créer un [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] déploiement à l’aide de la version de ligne de commande (Mage.exe) ou graphique (MageUI.exe) de le Manifest Generation and Editing Tool.  
   
-## Composants requis  
- Cette procédure pas à pas requiert des composants et des options que vous devez choisir avant de générer un déploiement.  
+## <a name="prerequisites"></a>Conditions préalables  
+ Cette procédure pas à pas a certaines conditions préalables et les options que vous devez choisir avant de générer un déploiement.  
   
 -   Installez Mage.exe et MageUI.exe.  
   
-     Mage.exe et MageUI.exe font partie du [!INCLUDE[winsdklong](../deployment/includes/winsdklong_md.md)].  Le [!INCLUDE[winsdkshort](../debugger/debug-interface-access/includes/winsdkshort_md.md)] doit être installé ou vous devez utiliser la version du [!INCLUDE[winsdkshort](../debugger/debug-interface-access/includes/winsdkshort_md.md)] incluse avec Visual Studio.  Pour plus d'informations, consultez [Windows SDK](http://go.microsoft.com/fwlink/?LinkId=158044) sur le site MSDN.  
+     Mage.exe et MageUI.exe font partie de la [!INCLUDE[winsdklong](../deployment/includes/winsdklong_md.md)]. Vous devez soit utiliser le [!INCLUDE[winsdkshort](../debugger/debug-interface-access/includes/winsdkshort_md.md)] installé ou la version de le [!INCLUDE[winsdkshort](../debugger/debug-interface-access/includes/winsdkshort_md.md)] fourni avec Visual Studio. Pour plus d’informations, consultez [Kit de développement logiciel Windows](http://go.microsoft.com/fwlink/?LinkId=158044) sur MSDN.  
   
 -   Fournissez une application à déployer.  
   
-     Cette procédure pas à pas suppose que vous avez une application Windows que vous êtes prêt à déployer.  Cette application sera référencée sous le nom AppToDeploy.  
+     Cette procédure pas à pas suppose que vous disposez d’une application Windows que vous êtes prêt à déployer. Cette application sera appelée AppToDeploy.  
   
 -   Déterminez comment le déploiement sera distribué.  
   
-     Les options de distribution sont les suivantes : Web, partage de fichiers ou CD.  Pour plus d'informations, consultez [ClickOnce Security and Deployment](../deployment/clickonce-security-and-deployment.md).  
+     Les options de distribution incluent : Web, partage de fichiers ou CD. Pour plus d'informations, consultez [ClickOnce Security and Deployment](../deployment/clickonce-security-and-deployment.md).  
   
--   Déterminez si l'application requiert un niveau élevé d'approbation.  
+-   Déterminez si l’application requiert un niveau de confiance élevé.  
   
-     Si votre application exige une confiance totale, par exemple, un accès complet au système de l'utilisateur, vous pouvez utiliser l'option `-TrustLevel` de Mage.exe pour la définir.  Si vous souhaitez définir un jeu d'autorisations personnalisé pour votre application, vous pouvez copier la section des autorisations intranet ou Internet d'un autre manifeste, la modifier selon vos besoins et l'ajouter au manifeste d'application à l'aide d'un éditeur de texte ou de MageUI.exe.  Pour plus d'informations, consultez [Vue d'ensemble du déploiement d'applications approuvées](../deployment/trusted-application-deployment-overview.md).  
+     Si votre application requiert une confiance totale, par exemple, un accès complet au système de l’utilisateur, vous pouvez utiliser la `-TrustLevel` option de Mage.exe pour définir cette. Si vous souhaitez définir une autorisation personnalisée pour votre application, vous pouvez copier la section de l’accès Internet ou intranet à partir d’un autre manifeste, modifiez-le selon vos besoins et ajoutez-la au manifeste d’application à l’aide d’un éditeur de texte ou MageUI.exe. Pour plus d'informations, consultez [Trusted Application Deployment Overview](../deployment/trusted-application-deployment-overview.md).  
   
 -   Obtenez un certificat Authenticode.  
   
-     Vous devez signer votre déploiement avec un certificat Authenticode.  Vous pouvez générer un certificat de test à l'aide de Visual Studio, MageUI.exe ou MakeCert.exe et des outils Pvk2Pfx.exe, ou vous pouvez obtenir un certificat d'une autorité de certification.  Si vous choisissez d'utiliser le déploiement d'applications approuvées, vous devez également effectuer une installation unique du certificat sur tous les ordinateurs client.  Pour plus d'informations, consultez [Vue d'ensemble du déploiement d'applications approuvées](../deployment/trusted-application-deployment-overview.md).  
-  
--   Assurez\-vous que l'application n'a pas de manifeste avec les informations de contrôle de compte d'utilisateur.  
-  
-     Vous devez déterminer si votre application contient un manifeste avec des informations de contrôle de compte d'utilisateur \(UAC, User Account Control\), telles qu'un élément `<dependentAssembly>`.  Pour examiner un manifeste d'application, vous pouvez utiliser l'utilitaire Windows Sysinternals [Sigcheck](http://go.microsoft.com/fwlink/?LinkId=158035).  
-  
-     Si votre application contient un manifeste avec des détails de contrôle de compte d'utilisateur, vous le devez régénérer sans les informations UAC.  Pour un projet C\# dans Visual Studio, ouvrez les propriétés du projet et sélectionnez l'onglet Application.  Dans la liste déroulante **Manifeste**, sélectionnez **Créer une application sans fichier manifeste**.  Pour un projet Visual Basic dans Visual Studio, ouvrez les propriétés du projet, sélectionnez l'onglet Application et cliquez sur **Afficher les paramètres UAC**.  Dans le fichier manifeste ouvert, supprimez tous les éléments dans l'élément `<asmv1:assembly>` unique.  
-  
--   Déterminez si l'application requiert certains composants sur l'ordinateur client.  
-  
-     Les applications [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] déployées à partir de Visual Studio peuvent inclure un programme d'amorçage d'installation de composants requis \(setup.exe\) avec votre déploiement.  Cette procédure pas à pas crée deux manifestes requis pour un déploiement [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)].  Vous pouvez créer un programme d'amorçage de composants requis à l'aide de la [GenerateBootstrapper Task](../msbuild/generatebootstrapper-task.md).  
-  
-### Pour déployer une application avec l'outil en ligne de commande Mage.exe  
-  
-1.  Créez un répertoire dans lequel vous stockerez vos fichiers du déploiement [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)].  
-  
-2.  Dans le répertoire de déploiement que vous venez de créer, ajoutez un sous\-répertoire de version.  S'il s'agit du premier déploiement de l'application, nommez ce sous\-répertoire 1.0.0.0.  
+     Vous devez signer votre déploiement avec un certificat Authenticode. Vous pouvez générer un certificat de test à l’aide des outils de Visual Studio, MageUI.exe, ou MakeCert.exe et Pvk2Pfx.exe, ou vous pouvez obtenir un certificat à partir d’une autorité de certificat (CA). Si vous choisissez d’utiliser le déploiement d’applications approuvées, vous devez également effectuer une installation unique du certificat sur tous les ordinateurs clients. Pour plus d'informations, consultez [Trusted Application Deployment Overview](../deployment/trusted-application-deployment-overview.md).  
   
     > [!NOTE]
-    >  La version de votre déploiement peut différer de celle de votre application.  
+    >  Vous pouvez également signer votre déploiement avec un certificat CNG que vous pouvez obtenir à partir d’une autorité de certification.  
   
-3.  Copiez tous vos fichiers d'application dans le sous\-répertoire de version, y compris les fichiers exécutables, les assemblys, les ressources et les fichiers de données.  Si nécessaire, vous pouvez créer des sous\-répertoires supplémentaires contenant d'autres fichiers.  
+-   Assurez-vous que l’application ne dispose pas d’un manifeste avec des informations de compte d’utilisateur.  
   
-4.  Ouvrez le [!INCLUDE[winsdkshort](../debugger/debug-interface-access/includes/winsdkshort_md.md)] ou l'invite de commandes Visual Studio et accédez au sous\-répertoire de version.  
+     Vous devez déterminer si votre application contient un manifeste avec des informations de contrôle de compte d’utilisateur (UAC), comme un `<dependentAssembly>` élément. Pour examiner un manifeste d’application, vous pouvez utiliser le Windows Sysinternals [Sigcheck](http://go.microsoft.com/fwlink/?LinkId=158035) utilitaire.  
   
-5.  Créez le manifeste d'application par un appel à Mage.exe.  L'instruction suivante crée un manifeste d'application pour le code compilé à exécuter sur le processeur Intel x86.  
+     Si votre application contient un manifeste avec des détails du compte d’utilisateur, vous devez ré-le générer sans les informations de compte d’utilisateur. Pour un projet c# dans Visual Studio, ouvrez les propriétés du projet et sélectionnez l’onglet Application. Dans le **manifeste** la liste déroulante, sélectionnez **créer l’application sans manifeste**. Pour un projet Visual Basic dans Visual Studio, ouvrez les propriétés du projet, sélectionnez l’onglet Application, puis cliquez sur **afficher les paramètres UAC**. Dans le fichier manifeste ouvert, supprimez tous les éléments dans le seul `<asmv1:assembly>` élément.  
+  
+-   Déterminez si l’application requiert les composants requis sur l’ordinateur client.  
+  
+     [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]les applications déployées à partir de Visual Studio peuvent inclure un programme d’amorçage de conditions préalables d’installation (setup.exe) avec votre déploiement. Cette procédure pas à pas crée deux manifestes requis pour un [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] déploiement. Vous pouvez créer un programme d’amorçage requis à l’aide de la [GenerateBootstrapper, tâche](../msbuild/generatebootstrapper-task.md).  
+  
+### <a name="to-deploy-an-application-with-the-mageexe-command-line-tool"></a>Pour déployer une application avec l’outil de ligne de commande Mage.exe  
+  
+1.  Créez un répertoire dans lequel vous stockerez vos [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] des fichiers de déploiement.  
+  
+2.  Dans le répertoire de déploiement que vous venez de créer, créez un sous-répertoire de version. S’il s’agit de la première fois que vous déployez l’application, nommez ce sous-répertoire **1.0.0.0**.  
+  
+    > [!NOTE]
+    >  La version de votre déploiement peut être différente de la version de votre application.  
+  
+3.  Copiez tous les fichiers de votre application dans le sous-répertoire de version, y compris les fichiers exécutables, les assemblys, les ressources et les fichiers de données. Si nécessaire, vous pouvez créer des sous-répertoires supplémentaires qui contiennent des fichiers supplémentaires.  
+  
+4.  Ouvrez la [!INCLUDE[winsdkshort](../debugger/debug-interface-access/includes/winsdkshort_md.md)] ou une commande de Visual Studio invite de commandes et accédez au sous-répertoire de version.  
+  
+5.  Créer le manifeste d’application avec un appel à Mage.exe. L’instruction suivante crée un manifeste d’application pour le code compilé pour s’exécuter sur le processeur Intel x86.  
   
     ```  
     mage -New Application -Processor x86 -ToFile AppToDeploy.exe.manifest -name "My App" -Version 1.0.0.0 -FromDirectory .   
     ```  
   
     > [!NOTE]
-    >  Veillez à inclure le point \(.\) après l'option `-FromDirectory`, qui indique le répertoire actif.  Si vous n'incluez pas le point, vous devez spécifier le chemin d'accès de vos fichiers d'application.  
+    >  Veillez à inclure le point (.) après le `-FromDirectory` option, qui indique le répertoire actif. Si vous n’incluez pas le point, vous devez spécifier le chemin d’accès à vos fichiers d’application.  
   
-6.  Signez le manifeste d'application avec votre certificat Authenticode.  Remplacez *mycert.pfx* par le chemin d'accès de votre fichier de certificat.  Remplacez *passwd* par le mot de passe de votre fichier de certificat.  
+6.  Signer le manifeste d’application avec votre certificat Authenticode. Remplacez *mycert.pfx* avec le chemin d’accès à votre fichier de certificat. Remplacez *mot_de_passe* avec le mot de passe pour votre fichier de certificat.  
   
     ```  
     mage -Sign AppToDeploy.exe.manifest -CertFile mycert.pfx -Password passwd  
     ```  
   
-7.  Accédez à la racine du répertoire de déploiement.  
+     Pour signer le manifeste d’application avec un certificat CNG, utilisez la syntaxe suivante. Remplacez *cngCert.pfx* avec le chemin d’accès à votre fichier de certificat.  
   
-8.  Générez le manifeste de déploiement en appelant Mage.exe.  Par défaut, Mage.exe marquera votre déploiement [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] en tant qu'application installée pour pouvoir l'exécuter en ligne et hors connexion.  Pour que l'application soit uniquement accessible lorsque l'utilisateur est en ligne, utilisez l'option `-Install` avec la valeur `false`.  Si vous utilisez la valeur par défaut et si les utilisateurs installent votre application à partir d'un site Web ou d'un partage de fichiers, assurez\-vous que la valeur de l'option `-ProviderUrl` pointe vers l'emplacement du manifeste d'application sur le serveur Web ou le partage.  
+    ```  
+    mage -Sign AppToDeploy.exe.manifest -CertFile cngCert.pfx  
+    ```  
+  
+7.  Passer à la racine du répertoire de déploiement.  
+  
+8.  Générer le manifeste de déploiement avec un appel à Mage.exe. Par défaut, Mage.exe marquera votre [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] déploiement sous la forme d’une application installée, afin qu’elle peut être exécutée à la fois en ligne et hors connexion. Pour rendre l’application disponible uniquement lorsque l’utilisateur est en ligne, utilisez le `-Install` option avec la valeur `false`. Si vous utilisez la valeur par défaut, les utilisateurs installent votre application à partir d’un site Web ou un partage de fichiers, assurez-vous que la valeur de la `-ProviderUrl` manifeste des points d’option à l’emplacement de l’application sur le serveur Web ou le partage.  
   
     ```  
     mage -New Deployment -Processor x86 -Install true -Publisher "My Co." -ProviderUrl "\\myServer\myShare\AppToDeploy.application" -AppManifest 1.0.0.0\AppToDeploy.exe.manifest -ToFile AppToDeploy.application  
     ```  
   
-9. Signez le manifeste de déploiement avec votre certificat Authenticode.  
+9. Signez le manifeste de déploiement avec votre certificat Authenticode ou CNG.  
   
     ```  
     mage -Sign AppToDeploy.application -CertFile mycert.pfx -Password passwd  
     ```  
   
-10. Copiez tous les fichiers du répertoire de déploiement vers la destination ou le média du déploiement.  Il peut s'agir d'un dossier sur un site Web ou un site FTP, d'un partage de fichiers ou d'un CD\-ROM.  
+     ou  
   
-11. Fournissez à vos utilisateurs l'URL, l'UNC ou le média physique requis pour installer votre application.  Si vous fournissez une URL ou un UNC, vous devez communiquer aux utilisateurs le chemin d'accès complet au manifeste de déploiement.  Si, par exemple, AppToDeploy est déployé sur http:\/\/webserver01\/ dans le répertoire AppToDeploy, le chemin d'accès complet de l'URL est http:\/\/webserver01\/AppToDeploy\/AppToDeploy.application.  
+    ```  
+    mage -Sign AppToDeploy.exe.manifest -CertFile cngCert.pfx  
+    ```  
   
-### Pour déployer une application avec l'outil graphique MageUI.exe  
+10. Copiez tous les fichiers dans le répertoire de déploiement à la destination du déploiement ou le média. Cela peut être un dossier sur un site Web ou FTP site, un partage de fichiers ou un CD-ROM.  
   
-1.  Créez un répertoire dans lequel vous stockerez vos fichiers de déploiement [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)].  
+11. Fournir à vos utilisateurs avec l’URL, UNC, ou le support physique requis pour installer votre application. Si vous fournissez une URL ou un chemin UNC, vous devez communiquer aux utilisateurs le chemin d’accès complet au manifeste de déploiement. Par exemple, si AppToDeploy est déployé sur http://webserver01/ dans le répertoire AppToDeploy, le chemin d’accès URL complet serait http://webserver01/AppToDeploy/AppToDeploy.application.  
   
-2.  Dans le répertoire de déploiement que vous venez de créer, ajoutez un sous\-répertoire de version.  S'il s'agit du premier déploiement de l'application, nommez ce sous\-répertoire 1.0.0.0.  
+### <a name="to-deploy-an-application-with-the-mageuiexe-graphical-tool"></a>Pour déployer une application avec l’outil graphique MageUI.exe  
+  
+1.  Créez un répertoire dans lequel vous stockerez vos [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] des fichiers de déploiement.  
+  
+2.  Dans le répertoire de déploiement que vous venez de créer, créez un sous-répertoire de version. S’il s’agit de la première fois que vous déployez l’application, nommez ce sous-répertoire **1.0.0.0**.  
   
     > [!NOTE]
-    >  La version de votre déploiement diffère sans doute de celle de votre application.  
+    >  La version de votre déploiement est probablement différente de la version de votre application.  
   
-3.  Copiez tous vos fichiers d'application dans le sous\-répertoire de version, y compris les fichiers exécutables, les assemblys, les ressources et les fichiers de données.  Si nécessaire, vous pouvez créer des sous\-répertoires supplémentaires contenant d'autres fichiers.  
+3.  Copiez tous les fichiers de votre application dans le sous-répertoire de version, y compris les fichiers exécutables, les assemblys, les ressources et les fichiers de données. Si nécessaire, vous pouvez créer des sous-répertoires supplémentaires qui contiennent des fichiers supplémentaires.  
   
-4.  Lancez l'outil graphique MageUI.exe.  
+4.  Démarrez l’outil graphique MageUI.exe.  
   
     ```  
     MageUI.exe  
     ```  
   
-5.  Créez un nouveau manifeste d'application en sélectionnant **Fichier**, **Nouveau**, puis **Manifeste d'application** dans le menu.  
+5.  Créer un nouveau manifeste d’application en sélectionnant **fichier**, **nouveau**, **manifeste d’Application** à partir du menu.  
   
-6.  Sous l'onglet **Nom** par défaut, tapez le nom et le numéro de version de ce déploiement.  Spécifiez également le **Processeur** pour lequel votre application est générée, tel que x86.  
+6.  Sur la valeur par défaut **nom** , tapez le nom et numéro de version de ce déploiement. Spécifiez également le **processeur** que votre application est générée, par exemple x86.  
   
-7.  Sélectionnez l'onglet **Fichiers** puis cliquez sur le bouton de sélection \(**...**\) en regard de la zone de texte **Répertoire d'application**.  La boîte de dialogue Rechercher un dossier s'affiche.  
+7.  Sélectionnez le **fichiers** onglet et cliquez sur le bouton de sélection (**...** ) situé en regard du **répertoire de l’Application** zone de texte. Une boîte de dialogue Rechercher un dossier s’affiche.  
   
-8.  Sélectionnez le sous\-répertoire de version contenant vos fichiers d'application, puis cliquez sur **OK**.  
+8.  Sélectionnez la version qui contient vos fichiers d’application, puis cliquez sur **OK**.  
   
-9. Si vous envisagez d'effectuer le déploiement à partir des services IIS \(Internet Information Services\), activez la case à cocher **Lors du peuplement, ajouter l'extension .deploy à tous les fichiers qui n'en sont pas dotés**.  
+9. Si vous allez déployer à partir de Internet Information Services (IIS), sélectionnez le **lors du peuplement, ajouter l’extension .deploy à n’importe quel fichier qui ne l’a pas** case à cocher.  
   
-10. Cliquez sur le bouton **Remplir** pour ajouter tous vos fichiers d'application à la liste de fichiers.  Si votre application contient plusieurs fichiers exécutables, marquez le fichier exécutable principal de ce déploiement comme application de démarrage en sélectionnant **Point d'entrée** dans la liste déroulante **Type de fichier**.  \(Si votre application ne contient qu'un seul fichier exécutable, MageUI.exe le marque à votre place.\)  
+10. Cliquez sur le **Populate** pour ajouter tous les fichiers de votre application à la liste des fichiers. Si votre application contient plusieurs fichiers exécutables, marquez le fichier exécutable principal de ce déploiement comme application de démarrage en sélectionnant **Point d’entrée** à partir de la **Type de fichier** liste déroulante. (Si votre application contient un seul fichier exécutable, MageUI.exe le marque pour vous.)  
   
-11. Sélectionnez l'onglet **Autorisations requises** et sélectionnez le niveau de confiance que votre application doit déclarer.  La valeur par défaut est **FullTrust**, qui convient à la plupart des applications.  
+11. Sélectionnez le **autorisations requises** onglet et sélectionnez le niveau de confiance que votre application doit déclarer. La valeur par défaut est **FullTrust**, ce qui convient à la plupart des applications.  
   
-12. Dans le menu, sélectionnez **Fichier**, puis **Enregistrer sous**.  La boîte de dialogue Options de signature s'affiche et vous invite à signer le manifeste de l'application.  
+12. Sélectionnez **fichier**, **Enregistrer sous** à partir du menu. Une boîte de dialogue Options de signature s’affiche vous invitant à signer le manifeste d’application.  
   
-13. Si vous possédez un certificat stocké en tant que fichier dans votre système de fichiers, utilisez l'option **Signer avec le fichier de certificat** et sélectionnez le certificat dans le système de fichiers à l'aide du bouton de sélection \(**...**\).  Tapez ensuite votre mot de passe de certificat.  
-  
-     ou  
-  
-     Si votre certificat est conservé dans un magasin de certificats accessible à partir de votre ordinateur, sélectionnez l'option **Signer avec le certificat stocké**, puis choisissez le certificat dans la liste fournie.  
-  
-14. Cliquez sur **OK** pour signer votre manifeste d'application.  La boîte de dialogue Enregistrer sous s'affiche.  
-  
-15. Dans la boîte de dialogue Enregistrer sous, spécifiez le répertoire de version, puis cliquez sur **Enregistrer**.  
-  
-16. Dans le menu, sélectionnez **Fichier**, **Nouveau**, **Manifeste de déploiement** pour créer votre manifeste de déploiement.  
-  
-17. Sous l'onglet **Nom**, spécifiez un nom et un numéro de version pour ce déploiement \(1.0.0.0 dans cet exemple\).  Spécifiez également le **Processeur** pour lequel votre application est générée, tel que x86.  
-  
-18. Sélectionnez l'onglet **Description** et spécifiez des valeurs pour **Éditeur** et **Produit**.  \(**Produit** est le nom donné à votre application dans le menu Démarrer de Windows lorsque votre application est installée sur un ordinateur client pour une utilisation hors connexion.\)  
-  
-19. Sélectionnez l'onglet **Options de déploiement**, et dans la zone de texte **Emplacement de démarrage**, spécifiez l'emplacement du manifeste de l'application sur le serveur Web ou le partage.  Par exemple, \\\\myServer\\myShare\\AppToDeploy.application.  
-  
-20. Si vous avez ajouté l'extension .deploy lors d'une étape précédente, sélectionnez également **Utiliser l'extension de fichier .deploy** ici.  
-  
-21. Sélectionnez l'onglet **Options de mise à jour** et spécifiez la fréquence de mise à jour souhaitée pour cette application.  Si votre application utilise <xref:System.Deployment.Application.UpdateCheckInfo> pour vérifier elle\-même les mises à jour, désactivez la case à cocher **Cette application doit rechercher des mises à jour**.  
-  
-22. Sélectionnez l'onglet **Référence d'application**, puis cliquez sur le bouton **Sélectionner un manifeste**.  Une boîte de dialogue s'affiche.  
-  
-23. Sélectionnez le manifeste d'application créé précédemment, puis cliquez sur **Ouvrir**.  
-  
-24. Dans le menu, sélectionnez **Fichier**, puis **Enregistrer sous**.  La boîte de dialogue Options de signature s'affiche et vous invite à signer le manifeste de déploiement.  
-  
-25. Si vous possédez un certificat stocké en tant que fichier dans votre système de fichiers, utilisez l'option **Signer avec le fichier de certificat** et sélectionnez le certificat dans le système de fichiers à l'aide du bouton de sélection \(**...**\).  Tapez ensuite votre mot de passe de certificat.  
+13. Si vous possédez un certificat stocké en tant que fichier sur votre système de fichiers, utilisez le **signer avec le fichier de certificat** option et sélectionnez le certificat du système de fichiers en utilisant les points de suspension (**...** ) bouton. Puis tapez votre mot de passe du certificat.  
   
      ou  
   
-     Si votre certificat est conservé dans un magasin de certificats accessible à partir de votre ordinateur, sélectionnez l'option **Signer avec le certificat stocké**, puis choisissez le certificat dans la liste fournie.  
+     Si votre certificat est conservé dans un magasin de certificats accessible à partir de votre ordinateur, sélectionnez le **signer avec le certificat stockée** option et sélectionnez le certificat dans la liste fournie.  
   
-26. Cliquez sur **OK** pour signer votre manifeste de déploiement.  La boîte de dialogue Enregistrer sous s'affiche.  
+14. Cliquez sur **OK** pour signer votre manifeste d’application. La boîte de dialogue Enregistrer sous s’affiche.  
   
-27. Dans la boîte de dialogue **Enregistrer sous**, remontez d'un répertoire jusqu'à la racine de votre déploiement, puis cliquez sur **Enregistrer**.  
+15. Dans la boîte de dialogue Enregistrer sous, indiquez le répertoire de version, puis cliquez sur **enregistrer**.  
   
-28. Copiez tous les fichiers du répertoire de déploiement vers la destination ou le média du déploiement.  Il peut s'agir d'un dossier sur un site Web ou un site FTP, d'un partage de fichiers ou d'un CD\-ROM.  
+16. Sélectionnez **fichier**, **nouveau**, **manifeste de déploiement** dans le menu pour créer votre manifeste de déploiement.  
   
-29. Fournissez à vos utilisateurs l'URL, l'UNC ou le média physique requis pour installer votre application.  Si vous fournissez une URL ou un UNC, vous devez communiquer aux utilisateurs le chemin d'accès complet au manifeste de déploiement.  Si, par exemple, AppToDeploy est déployé sur http:\/\/webserver01\/ dans le répertoire AppToDeploy, le chemin d'accès complet de l'URL est http:\/\/webserver01\/AppToDeploy\/AppToDeploy.application.  
+17. Sur le **nom** onglet, spécifiez un nom et numéro de version pour ce déploiement (**1.0.0.0** dans cet exemple). Spécifiez également le **processeur** que votre application est générée, par exemple x86.  
   
-## Étapes suivantes  
- Lorsque vous déployez une nouvelle version de l'application, créez un nouveau répertoire dont le nom fait référence à la nouvelle version, par exemple 1.0.0.1, et copiez les nouveaux fichiers d'application dans un nouveau répertoire.  Vous devez ensuite exécuter les étapes précédentes pour créer et signer un nouveau manifeste d'application ainsi que mettre à jour et signer le manifeste de déploiement.  Veillez à spécifier la même version récente dans les appels Mage.exe `-New` et `–Update`, car [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] met uniquement à jour les versions les plus récentes, l'entier situé le plus à gauche étant le plus significatif.  Si vous avez utilisé MageUI.exe, vous pouvez mettre à jour le manifeste de déploiement en l'ouvrant, en sélectionnant l'onglet **Référence d'application,** en cliquant sur le bouton **Sélectionner un manifeste** et en sélectionnant ensuite le manifeste d'application mis à jour.  
+18. Sélectionnez le **Description** onglet et spécifier des valeurs pour **Publisher** et **Produc *** t**. (**Produit** est le nom donné à votre application dans le menu Démarrer de Windows lorsque votre application est installée sur un ordinateur client pour une utilisation hors connexion.)  
   
-## Voir aussi  
- [Mage.exe \(outil Manifest Generation and Editing\)](../Topic/Mage.exe%20\(Manifest%20Generation%20and%20Editing%20Tool\).md)   
- [MageUI.exe \(Manifest Generation and Editing Tool, Graphical Client\)](../Topic/MageUI.exe%20\(Manifest%20Generation%20and%20Editing%20Tool,%20Graphical%20Client\).md)   
- [Publishing ClickOnce Applications](../deployment/publishing-clickonce-applications.md)   
- [ClickOnce Deployment Manifest](../deployment/clickonce-deployment-manifest.md)   
- [ClickOnce Application Manifest](../deployment/clickonce-application-manifest.md)
+19. Sélectionnez le **Options de déploiement** onglet et dans le **Start Location** texte, spécifiez l’emplacement du manifeste d’application sur le serveur Web ou le partage. Par exemple, \\\myServer\myShare\AppToDeploy.application.  
+  
+20. Si vous avez ajouté l’extension .deploy à l’étape précédente, vous devez également sélectionner **utiliser l’extension de nom de fichier .deploy** ici.  
+  
+21. Sélectionnez le **mettre à jour les Options** onglet et spécifier la fréquence à laquelle vous souhaitez que cette application pour mettre à jour. Si votre application utilise <xref:System.Deployment.Application.UpdateCheckInfo> pour vérifier les mises à jour lui-même, désactivez le **cette application doit rechercher des mises à jour** case à cocher.  
+  
+22. Sélectionnez le **Application référence** onglet, puis cliquez sur le **sélectionner un manifeste** bouton. Une boîte de dialogue Ouvrir s’affiche.  
+  
+23. Sélectionnez le manifeste d’application que vous avez créé précédemment, puis cliquez **ouvrir**.  
+  
+24. Sélectionnez **fichier**, **Enregistrer sous** à partir du menu. Une boîte de dialogue Options de signature s’affiche vous invitant à signer le manifeste de déploiement.  
+  
+25. Si vous possédez un certificat stocké en tant que fichier sur votre système de fichiers, utilisez le **signer avec le fichier de certificat** option et sélectionnez le certificat du système de fichiers en utilisant les points de suspension (**...** ) bouton. Puis tapez votre mot de passe du certificat.  
+  
+     ou  
+  
+     Si votre certificat est conservé dans un magasin de certificats accessible à partir de votre ordinateur, sélectionnez le **signer avec le certificat stockée** option et sélectionnez le certificat dans la liste fournie.  
+  
+26. Cliquez sur **OK** pour signer votre manifeste de déploiement. La boîte de dialogue Enregistrer sous s’affiche.  
+  
+27. Dans le **enregistrer en tant que** boîte de dialogue, déplacement d’un répertoire à la racine de votre déploiement puis cliquez sur **enregistrer**.  
+  
+28. Copiez tous les fichiers dans le répertoire de déploiement à la destination du déploiement ou le média. Cela peut être un dossier sur un site Web ou FTP site, un partage de fichiers ou un CD-ROM.  
+  
+29. Fournir à vos utilisateurs avec l’URL, UNC, ou le support physique requis pour installer votre application. Si vous fournissez une URL ou un chemin UNC, vous devez donner le chemin d’accès complet du manifeste de déploiement à vos utilisateurs. Par exemple, si AppToDeploy est déployé sur http://webserver01/ dans le répertoire AppToDeploy, le chemin d’accès URL complet serait http://webserver01/AppToDeploy/AppToDeploy.application.  
+  
+## <a name="next-steps"></a>Étapes suivantes  
+ Lorsque vous avez besoin déployer une nouvelle version de l’application, créez un répertoire nommé d’après la nouvelle version, par exemple, 1.0.0.1 copier les fichiers d’application dans le nouveau répertoire. Ensuite, vous devez suivre les étapes précédentes pour créer et signer un manifeste d’application et mettre à jour et signer le manifeste de déploiement. Veillez à spécifier la même version de supérieure dans les deux Mage.exe `-New` et `-Update` des appels, en tant que [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] met à jour uniquement les versions ultérieures, avec l’entier le plus à gauche plus significatif. Si vous avez utilisé MageUI.exe, vous pouvez mettre à jour le manifeste de déploiement en l’ouvrant, en sélectionnant le **Application référence** onglet, en cliquant sur le **sélectionner un manifeste** bouton, puis en sélectionnant la mise à jour manifeste d’application.  
+  
+## <a name="see-also"></a>Voir aussi  
+ [Mage.exe (outil Manifest Generation and Editing)](/dotnet/framework/tools/mage-exe-manifest-generation-and-editing-tool)   
+ [MageUI.exe (outil Manifest Generation and Editing, client graphique)](/dotnet/framework/tools/mageui-exe-manifest-generation-and-editing-tool-graphical-client)   
+ [Publication d’applications ClickOnce](../deployment/publishing-clickonce-applications.md)   
+ [Manifeste de déploiement ClickOnce](../deployment/clickonce-deployment-manifest.md)   
+ [Manifeste d’application ClickOnce](../deployment/clickonce-application-manifest.md)

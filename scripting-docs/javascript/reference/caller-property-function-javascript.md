@@ -1,50 +1,52 @@
 ---
-title: "caller, propri&#233;t&#233; (Function) (JavaScript) | Microsoft Docs"
-ms.custom: ""
-ms.date: "01/18/2017"
-ms.prod: "windows-client-threshold"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "devlang-javascript"
-ms.tgt_pltfrm: ""
-ms.topic: "language-reference"
-f1_keywords: 
-  - "caller"
-dev_langs: 
-  - "JavaScript"
-  - "TypeScript"
-  - "DHTML"
-helpviewer_keywords: 
-  - "caller (propriété)"
-  - "appels de fonction, fonctions exécutées"
+title: "caller, propriété (fonction) (JavaScript) | Documents Microsoft"
+ms.custom: 
+ms.date: 01/18/2017
+ms.prod: windows-client-threshold
+ms.reviewer: 
+ms.suite: 
+ms.technology: devlang-javascript
+ms.tgt_pltfrm: 
+ms.topic: language-reference
+f1_keywords: caller
+dev_langs:
+- JavaScript
+- TypeScript
+- DHTML
+helpviewer_keywords:
+- caller property
+- function calls, functions that are executing
 ms.assetid: ae210853-7160-4102-9cfd-ab489f180ce1
-caps.latest.revision: 12
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 12
+caps.latest.revision: "12"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: 8c6eef1b8304612c2ed16a4cc389bf3b2a28b70f
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.translationtype: MT
+ms.contentlocale: fr-FR
+ms.lasthandoff: 10/27/2017
 ---
-# caller, propri&#233;t&#233; (Function) (JavaScript)
-Obtient la fonction qui a appelé la fonction active.  
+# <a name="caller-property-function-javascript"></a>caller, propriété (Function) (JavaScript)
+Obtient la fonction qui a appelé la fonction actuelle.  
   
-## Syntaxe  
+## <a name="syntax"></a>Syntaxe  
   
 ```  
   
 functionName.caller  
 ```  
   
-## Notes  
- L'objet `functionName` est le nom de toute fonction en cours d'exécution.  
+## <a name="remarks"></a>Remarques  
+ Le `functionName` est le nom de n’importe quel l’exécution de fonction de l’objet.  
   
- La propriété `caller` est définie uniquement pour une fonction en cours d'exécution.  \+Si la fonction est appelée à partir du niveau supérieur d'un programme [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)], la propriété `caller` a la valeur `null`.  
+ Le `caller` propriété est définie pour une fonction uniquement lors de l’exécution de fonction. Si la fonction est appelée à partir du haut niveau d’un [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] programme, `caller` contient `null`.  
   
- Si la propriété `caller` est utilisée dans un contexte de chaîne, le résultat est le même qu'avec `functionName``toString`, c'est\-à\-dire que c'est le texte décompilé de la fonction qui est affiché.  
+ Si le `caller` propriété est utilisée dans un contexte de chaîne, le résultat est le même que `functionName`.`toString`, autrement dit, le texte décompilé de la fonction s’affiche.  
   
- L'exemple suivant illustre l'utilisation de la propriété `caller` :  
+ L'exemple ci-dessous illustre l'utilisation de la propriété `caller` :  
   
-```javascript  
+```JavaScript  
 function CallLevel(){  
    if (CallLevel.caller == null)  
       return("CallLevel was called from the top level.");  
@@ -57,8 +59,8 @@ document.write(CallLevel());
 // Output: CallLevel was called from the top level.  
 ```  
   
-## Configuration requise  
+## <a name="requirements"></a>Spécifications  
  [!INCLUDE[jsv2](../../javascript/reference/includes/jsv2-md.md)]  
   
-## Voir aussi  
- [function, instruction](../../javascript/reference/function-statement-javascript.md)
+## <a name="see-also"></a>Voir aussi  
+ [Instruction function](../../javascript/reference/function-statement-javascript.md)

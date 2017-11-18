@@ -1,43 +1,42 @@
 ---
-title: "IDiaEnumSymbols::Clone | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-debug"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "IDiaEnumSymbols::Clone (méthode)"
+title: IDiaEnumSymbols::Clone | Documents Microsoft
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-debug
+ms.tgt_pltfrm: 
+ms.topic: article
+dev_langs: C++
+helpviewer_keywords: IDiaEnumSymbols::Clone method
 ms.assetid: 5c542025-98cf-4307-901f-b9430f780cf0
-caps.latest.revision: 7
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 7
+caps.latest.revision: "7"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: 9409541a0784479cc466accc9b9184ba5f220196
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: fr-FR
+ms.lasthandoff: 10/31/2017
 ---
-# IDiaEnumSymbols::Clone
-[!INCLUDE[vs2017banner](../../code-quality/includes/vs2017banner.md)]
-
-crée un énumérateur qui contient le même état d'énumération que l'énumérateur actuel.  
+# <a name="idiaenumsymbolsclone"></a>IDiaEnumSymbols::Clone
+Crée un énumérateur qui contient le même état d’énumération que l’énumérateur actuel.  
   
-## Syntaxe  
+## <a name="syntax"></a>Syntaxe  
   
-```cpp#  
-HRESULT Clone (   
-   IDiaEnumSymbols** ppenum  
+```C++  
+HRESULT Clone (   
+   IDiaEnumSymbols** ppenum  
 );  
 ```  
   
-#### Paramètres  
+#### <a name="parameters"></a>Paramètres  
  ppenum  
- \[out\]  Retourne un objet d' [IDiaEnumSymbols](../../debugger/debug-interface-access/idiaenumsymbols.md) qui contient un doublon de l'énumérateur.  Les symboles ne sont pas dupliqués, seul l'énumérateur.  
+ [out] Retourne un [IDiaEnumSymbols](../../debugger/debug-interface-access/idiaenumsymbols.md) objet qui contient une copie de l’énumérateur. Les symboles ne sont pas dupliquées, seulement l’énumérateur.  
   
-## Valeur de retour  
- En cas de réussite, retourne `S_OK`; sinon, retourne un code d'erreur.  
+## <a name="return-value"></a>Valeur de retour  
+ En cas de réussite, retourne `S_OK`; sinon, retourne un code d’erreur.  
   
-## Voir aussi  
+## <a name="see-also"></a>Voir aussi  
  [IDiaEnumSymbols](../../debugger/debug-interface-access/idiaenumsymbols.md)

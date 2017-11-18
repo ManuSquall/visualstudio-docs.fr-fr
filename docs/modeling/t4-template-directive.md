@@ -7,30 +7,15 @@ ms.suite:
 ms.tgt_pltfrm: 
 ms.topic: article
 ms.assetid: 2b0a8e04-6fee-4c6c-b086-e49fc728a3ed
-caps.latest.revision: 10
+caps.latest.revision: "10"
 author: alancameronwills
 ms.author: awills
 manager: douge
-translation.priority.ht:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
+ms.openlocfilehash: 9b48a6d079ebe43f3d1e3c97a9272e8ad05b6735
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
 ms.translationtype: MT
-ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
-ms.openlocfilehash: a93cb843f45efffe2b8ccdb86543baf48736ed90
-ms.contentlocale: fr-fr
-ms.lasthandoff: 09/26/2017
-
+ms.contentlocale: fr-FR
+ms.lasthandoff: 10/27/2017
 ---
 # <a name="t4-template-directive"></a>Directive du modèle T4
 En général, un modèle de texte T4 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] commence par une directive `template`, qui spécifie comment le modèle doit être traité. Il ne doit y avoir qu'une seule directive de modèle dans un modèle de texte et les fichiers qu'il contient.  
@@ -252,4 +237,3 @@ This is the common footer.
  `internal`  
   
  Dans un modèle de texte au moment de l'exécution, vous définissez l'attribut de visibilité de la classe générée. Par défaut, la classe fait partie de l'API publique de votre code, mais en définissant `visibility="internal"`, vous pouvez vous assurer que votre code est en mesure d'utiliser la classe de génération de texte.
-

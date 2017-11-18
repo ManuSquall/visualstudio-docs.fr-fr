@@ -6,33 +6,17 @@ ms.reviewer:
 ms.suite: 
 ms.tgt_pltfrm: 
 ms.topic: article
-helpviewer_keywords:
-- Domain-Specific Language, programming domain models
+helpviewer_keywords: Domain-Specific Language, programming domain models
 ms.assetid: 1427ae91-be8a-4ce7-85df-00038faa2cbb
-caps.latest.revision: 26
+caps.latest.revision: "26"
 author: alancameronwills
 ms.author: awills
 manager: douge
-translation.priority.mt:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
+ms.openlocfilehash: 5c7571cbb4950f91c1b69ae88241c799577f79da
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
 ms.translationtype: MT
-ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
-ms.openlocfilehash: 40f3a1d56019a8bcab4a11ffaf3aa7d37b02d262
-ms.contentlocale: fr-fr
-ms.lasthandoff: 09/26/2017
-
+ms.contentlocale: fr-FR
+ms.lasthandoff: 10/27/2017
 ---
 # <a name="navigating-and-updating-a-model-in-program-code"></a>Navigation et mise à jour d'un modèle dans le code de programme
 Vous pouvez écrire du code pour créer et supprimer des éléments de modèle, définir leurs propriétés, créer et supprimer les liens entre des éléments. Toutes les modifications doivent être effectuées dans une transaction. Si les éléments peuvent être affichés sur un diagramme, le diagramme doit être « corrigé « automatiquement à la fin de la transaction.  
@@ -537,4 +521,3 @@ partial class MyDiagram
  [Comment : utiliser des Transactions pour mettre à jour le modèle](../modeling/how-to-use-transactions-to-update-the-model.md)   
  [Intégration de modèles à l’aide de Visual Studio Modelbus](../modeling/integrating-models-by-using-visual-studio-modelbus.md)   
  [Propagation et réponse aux modifications](../modeling/responding-to-and-propagating-changes.md)
-

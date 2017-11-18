@@ -1,43 +1,28 @@
 ---
-title: "Modélisation du Kit de développement logiciel pour Visual Studio - langages spécifiques au domaine | Documents Microsoft"
+title: "Kit de développement logiciel de modélisation pour Visual Studio - langages spécifiques à un domaine | Documents Microsoft"
 ms.custom: 
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-devops-techdebt
+ms.technology: vs-devops-techdebt
 ms.tgt_pltfrm: 
 ms.topic: article
 helpviewer_keywords:
 - Domain-Specific Language Tools
 - Domain-Specific Language
 ms.assetid: 17a531e2-1964-4a9d-84fd-6fb1b4aee662
-caps.latest.revision: 77
+caps.latest.revision: "77"
 author: alancameronwills
 ms.author: awills
 manager: douge
-translation.priority.mt:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
-translationtype: Machine Translation
-ms.sourcegitcommit: 3d07f82ea737449fee6dfa04a61e195654ba35fa
-ms.openlocfilehash: 86e70eb82260cdced1ee4d74965832fbc7fa56ab
-ms.lasthandoff: 02/22/2017
-
+ms.openlocfilehash: 48cb7e5a274092a3ed82d2e41137633d12c3be01
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.translationtype: MT
+ms.contentlocale: fr-FR
+ms.lasthandoff: 10/27/2017
 ---
 # <a name="modeling-sdk-for-visual-studio---domain-specific-languages"></a>Kit de développement logiciel de modélisation pour Visual Studio - Langages spécifiques à un domaine
-À l’aide du Kit de développement logiciel de modélisation pour [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)], vous pouvez créer des outils de développement puissants basés sur le modèle que vous pouvez intégrer à [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]. De la même manière, vous pouvez créer une ou plusieurs définitions de modèle et la/les intégrer dans un ensemble d'outils.  
+À l’aide du Kit de développement logiciel de modélisation pour [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)], vous pouvez créer des outils de développement puissant basé sur le modèle que vous pouvez intégrer à [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]. De la même manière, vous pouvez créer une ou plusieurs définitions de modèle et la/les intégrer dans un ensemble d'outils.  
   
  La définition d'un modèle créé pour représenter les concepts de votre secteur d'activité est au cœur du MSDK. Vous pouvez encadrer le modèle de divers outils, tels qu'une vue schématique, la capacité à générer du code et autres artefacts, les commandes pour transformer le modèle, et la possibilité d'interagir avec le code et les autres objets dans [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]. Lorsque vous développez le modèle, vous pouvez le combiner avec d'autres modèles et outils et créer un ensemble d'outils puissant centré sur le développement.  
   
@@ -59,7 +44,7 @@ ms.lasthandoff: 02/22/2017
  
  [Billets de blog connexes](https://blogs.msdn.microsoft.com/visualstudioalm/tag/code-index/)
   
- Pour obtenir des conseils sur les techniques avancées et la résolution des problèmes, visitez [forum du langage DSL se modélisation outils d’extensibilité Visual Studio](http://go.microsoft.com/fwlink/?LinkID=186074).  
+ Pour obtenir des conseils sur les techniques avancées et la résolution des problèmes, visitez [forum Visual Studio DSL et d’extensibilité des outils de modélisation](http://go.microsoft.com/fwlink/?LinkID=186074).  
   
 ## <a name="in-this-section"></a>Dans cette section  
  [Bien démarrer avec les langages spécifiques à un domaine](../modeling/getting-started-with-domain-specific-languages.md)  
@@ -93,4 +78,3 @@ ms.lasthandoff: 02/22/2017
  [Guide pratique pour migrer un langage spécifique à un domaine vers une nouvelle version](../modeling/how-to-migrate-a-domain-specific-language-to-a-new-version.md)  
   
  [Informations de référence de l’API pour le SDK de modélisation pour Visual Studio](../modeling/api-reference-for-modeling-sdk-for-visual-studio.md)
-

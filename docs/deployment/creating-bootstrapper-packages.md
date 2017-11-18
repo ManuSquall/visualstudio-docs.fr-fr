@@ -1,43 +1,44 @@
 ---
-title: "Cr&#233;ation de packages de programme d&#39;amor&#231;age | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-deployment"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-dev_langs: 
-  - "FSharp"
-  - "VB"
-  - "CSharp"
-  - "C++"
-helpviewer_keywords: 
-  - "composants requis personnalisés"
-  - "déployer des applications (Visual Studio), composants requis personnalisés"
-  - "déployer des applications (Visual Studio), composants requis"
-  - "composants requis, personnalisé"
-  - "RedistList (fichier)"
-  - "listes redistribuables"
+title: "Création de Packages de programme d’amorçage | Documents Microsoft"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-deployment
+ms.tgt_pltfrm: 
+ms.topic: article
+dev_langs:
+- FSharp
+- VB
+- CSharp
+- C++
+helpviewer_keywords:
+- deploying applications [Visual Studio], prerequisites
+- deploying applications [Visual Studio], custom prerequisites
+- prerequisites, custom
+- RedistList file
+- custom prerequisites
+- redistributables list
 ms.assetid: ba1a785b-693d-446b-bcae-b88cadee73d1
-caps.latest.revision: 45
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
-caps.handback.revision: 45
+caps.latest.revision: "45"
+author: stevehoag
+ms.author: shoag
+manager: wpickett
+ms.openlocfilehash: 8d02aa039299c5f4f31d1fa0f9e0b48b8bbeb351
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.translationtype: MT
+ms.contentlocale: fr-FR
+ms.lasthandoff: 10/27/2017
 ---
-# Cr&#233;ation de packages de programme d&#39;amor&#231;age
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
-
-Le programme d'installation est un programme d'installation générique qui peut être configuré pour détecter et installer les composants redistribuables tels que les fichiers Windows Installer \(msi\) et les programmes exécutables. Le programme d'installation est également appelé programme d'amorçage. Il est programmé via un ensemble de manifestes XML qui spécifient les métadonnées permettant de gérer l'installation du composant.  
+# <a name="creating-bootstrapper-packages"></a>Création de packages de programme d'amorçage
+Le programme d'installation est un programme d'installation générique qui peut être configuré pour détecter et installer les composants redistribuables tels que les fichiers Windows Installer (msi) et les programmes exécutables. Le programme d'installation est également appelé programme d'amorçage. Il est programmé via un ensemble de manifestes XML qui spécifient les métadonnées permettant de gérer l'installation du composant.  
   
  Le programme d'amorçage détecte d'abord si l'un des composants requis est déjà installé. Si des composants requis ne sont pas installés, le programme d'amorçage commence par afficher les contrats de licence. Une fois que l'utilisateur a accepté les contrats de licence, l'installation des composants requis s'exécute. Si tous les composants requis sont détectés, le programme d'amorçage démarre simplement le programme d'installation de l'application.  
   
-## Création de packages personnalisés  
- Vous pouvez générer les manifestes à l'aide de l'Éditeur XML de Visual Studio. Pour plus d’informations, consultez [Comment : créer un manifeste de package](../deployment/how-to-create-a-package-manifest.md) et [Comment : créer un manifeste de produit](../deployment/how-to-create-a-product-manifest.md). Pour accéder à un exemple de création de package de programme d’amorçage, consultez [Procédure pas à pas : création d'un programme d'amorçage personnalisé pour afficher une invite de confidentialité](../deployment/walkthrough-creating-a-custom-bootstrapper-to-show-a-privacy-prompt.md).  
+## <a name="creating-custom-packages"></a>Création de packages personnalisés  
+ Vous pouvez générer les manifestes à l'aide de l'Éditeur XML de Visual Studio. Pour plus d’informations, consultez [How to: Create a Package Manifest](../deployment/how-to-create-a-package-manifest.md) et [How to: Create a Product Manifest](../deployment/how-to-create-a-product-manifest.md). Pour accéder à un exemple de création de package de programme d’amorçage, consultez [Walkthrough: Creating a Custom Bootstrapper to Show a Privacy Prompt](../deployment/walkthrough-creating-a-custom-bootstrapper-to-show-a-privacy-prompt.md).  
   
- Pour créer un package de programme d'amorçage, vous devez fournir le composant redistribuable sous la forme d'un fichier EXE ou MSI au générateur de manifeste de programme d'amorçage. Ce dernier crée ensuite les fichiers suivants :  
+ Pour créer un package de programme d'amorçage, vous devez fournir le composant redistribuable sous la forme d'un fichier EXE ou MSI au générateur de manifeste de programme d'amorçage. Ce dernier crée ensuite les fichiers suivants :  
   
 -   Le manifeste du produit, product.xml, qui contient toutes les métadonnées indépendantes de la langue du package. Il contient les métadonnées communes à toutes les versions localisées du composant redistribuable.  
   
@@ -69,7 +70,7 @@ Le programme d'installation est un programme d'installation générique qui peut
   
  `package.xml`  
   
- Pour finir, copiez les fichiers redistribuables dans l'emplacement correspondant au dossier du programme d'amorçage. Pour plus d'informations, consultez [Comment : créer un package du programme d'amorçage localisé](../deployment/how-to-create-a-localized-bootstrapper-package.md).  
+ Pour finir, copiez les fichiers redistribuables dans l'emplacement correspondant au dossier du programme d'amorçage. Pour plus d'informations, consultez [How to: Create a Localized Bootstrapper Package](../deployment/how-to-create-a-localized-bootstrapper-package.md).  
   
 ```  
 \Program Files\Microsoft Visual Studio 14.0\SDK\Bootstrapper\Packages  
@@ -81,47 +82,50 @@ Le programme d'installation est un programme d'installation générique qui peut
 \Program Files (x86)\Microsoft Visual Studio 14.0\SDK\Bootstrapper\Packages  
 ```  
   
- Vous pouvez également déterminer l'emplacement du dossier de programme d'amorçage à partir de la valeur **Path** de la clé de Registre suivante :  
+ Vous pouvez également déterminer l'emplacement du dossier de programme d'amorçage à partir de la valeur **Path** de la clé de Registre suivante :  
   
 ```  
 HKLM\Software\Microsoft\GenericBootstrapper\11.0  
 ```  
   
- Sur les systèmes 64 bits, utilisez la clé de Registre suivante :  
+ Sur les systèmes 64 bits, utilisez la clé de Registre suivante :  
   
 ```  
 HKLM\Software\Wow6432Node\Microsoft\GenericBootstrapper\11.0  
 ```  
   
- Chaque composant redistribuable apparaît dans son propre sous\-dossier du répertoire packages. Le manifeste du produit et les fichiers redistribuables sont placés dans ce sous\-dossier. Les versions localisées du composant et des manifestes du package sont placées dans des sous\-dossiers nommés en fonction du nom de culture.  
+ Chaque composant redistribuable apparaît dans son propre sous-dossier du répertoire packages. Le manifeste du produit et les fichiers redistribuables sont placés dans ce sous-dossier. Les versions localisées du composant et des manifestes du package sont placées dans des sous-dossiers nommés en fonction du nom de culture.  
   
- Une fois tous ces fichiers copiés dans le dossier de programme d'amorçage, le package de programme d'amorçage apparaît automatiquement dans la boîte de dialogue des composants requis de Visual Studio. Si votre package de programme d'amorçage personnalisé n'apparaît pas, fermez, puis rouvrez la boîte de dialogue Composants requis. Pour plus d'informations, consultez [Composants requis, boîte de dialogue](../ide/reference/prerequisites-dialog-box.md).  
+ Une fois tous ces fichiers copiés dans le dossier de programme d'amorçage, le package de programme d'amorçage apparaît automatiquement dans la boîte de dialogue des composants requis de Visual Studio. Si votre package de programme d'amorçage personnalisé n'apparaît pas, fermez, puis rouvrez la boîte de dialogue Composants requis. Pour plus d'informations, consultez [Prerequisites Dialog Box](../ide/reference/prerequisites-dialog-box.md).  
   
  Le tableau suivant présente les propriétés qui sont automatiquement remplies par le programme d'amorçage.  
   
 |Propriété|Description|  
-|---------------|-----------------|  
+|--------------|-----------------|  
 |ApplicationName|Nom de l'application.|  
-|ProcessorArchitecture|Processeur et bits par mot de la plateforme ciblée par un exécutable. Les valeurs sont notamment les suivantes :<br /><br /> -   Intel<br />-   IA64<br />-   AMD64|  
-|[Version9x](https://msdn.microsoft.com/en-us/library/aa372490\(v=vs.140\).aspx)|Numéro de version des systèmes d'exploitation Microsoft Windows 95, Windows 98 ou Windows ME. La syntaxe de la version est Major.Minor.ServicePack.|  
-|[VersionNT](https://msdn.microsoft.com/en-us/library/aa372495\(v=vs.140\).xaspx)|Numéro de version des systèmes d'exploitation Windows NT, Windows 2000, Windows XP, Windows Vista, Windows Server 2008 ou Windows 7. La syntaxe de la version est Major.Minor.ServicePack.|  
-|[VersionMSI](https://msdn.microsoft.com/en-us/library/aa372493\(v=vs.140\).aspx)|Version de l'assembly Windows Installer \(msi.dll\) exécuté durant l'installation.|  
+|ProcessorArchitecture|Processeur et bits par mot de la plateforme ciblée par un exécutable. Les valeurs sont notamment les suivantes :<br /><br /> -Intel<br />-IA64<br />-AMD64|  
+|[Version9x](https://msdn.microsoft.com/en-us/library/aa372490\(v=vs.140\).aspx)|Numéro de version des systèmes d'exploitation Microsoft Windows 95, Windows 98 ou Windows ME. La syntaxe de la version est Major.Minor.ServicePack.|  
+|[VersionNT](https://msdn.microsoft.com/en-us/library/aa372495\(v=vs.140\).xaspx)|Numéro de version des systèmes d'exploitation Windows NT, Windows 2000, Windows XP, Windows Vista, Windows Server 2008 ou Windows 7. La syntaxe de la version est Major.Minor.ServicePack.|  
+|[VersionMSI](https://msdn.microsoft.com/en-us/library/aa372493\(v=vs.140\).aspx)|Version de l'assembly Windows Installer (msi.dll) exécuté durant l'installation.|  
 |[AdminUser](https://msdn.microsoft.com/en-us/library/aa367545\(v=vs.140\).aspx)|Cette propriété est définie si l'utilisateur dispose de privilèges d'administrateur. Les valeurs sont true ou false.|  
-|InstallMode|Le mode d'installation indique l'emplacement d'installation du composant. Les valeurs sont notamment les suivantes :<br /><br /> -   HomeSite \- Les composants requis sont installés à partir du site web du fournisseur.<br />-   SpecificSite \- Les composants requis sont installés à partir de l'emplacement de votre choix.<br />-   SameSite \- Les composants requis sont installés à partir du même emplacement que celui de l'application.|  
+|InstallMode|Le mode d'installation indique l'emplacement d'installation du composant. Les valeurs sont notamment les suivantes :<br /><br /> Conditions préalables requises - HomeSite - sont installés à partir du site du fournisseur Web.<br />Conditions préalables de - SpecificSite - sont installés à partir de l’emplacement que vous sélectionnez.<br />Conditions préalables de - SameSite - sont installés dans le même emplacement que l’application.|  
   
-## Séparation des composants redistribuables des installations des applications  
- Vous pouvez empêcher le déploiement de vos fichiers redistribuables dans les projets d'installation. Pour ce faire, créez une liste de composants redistribuables dans le dossier RedistList de votre répertoire du .NET Framework :  
+## <a name="separating-redistributables-from-application-installations"></a>Séparation des composants redistribuables des installations des applications  
+ Vous pouvez empêcher le déploiement de vos fichiers redistribuables dans les projets d'installation. Pour ce faire, créez une liste de composants redistribuables dans le dossier RedistList de votre répertoire du .NET Framework :  
   
  `%ProgramFiles%\Microsoft.NET\RedistList`  
   
- La liste de composants redistribuables est un fichier XML que vous devez nommer en respectant le format suivant : *Nom de la société*.*Nom du composant*.RedistList.xml. Ainsi, par exemple, si le composant s'appelle Datawidgets et qu'il a été fait par Acme, utilisez Acme.DataWidgets.RedistList.xml. Voici un exemple de contenu de la liste de composants redistribuables :  
+ La liste de composants redistribuables est un fichier XML que vous devez nommer en respectant le format suivant : *Nom de la société*.*Nom du composant*.RedistList.xml. Ainsi, par exemple, si le composant s'appelle Datawidgets et qu'il a été fait par Acme, utilisez Acme.DataWidgets.RedistList.xml. Voici un exemple de contenu de la liste de composants redistribuables :  
   
 ```  
-<?xml version="1.0" encoding="UTF-8"?> <FileList Redist="Acme.DataWidgets" > <File AssemblyName="Acme.DataGrid" Version="1.0.0.0" PublicKeyToken="b03f5f7f11d50a3a" Culture="neutral" ProcessorArchitecture="MSIL" InGAC="true" /> </FileList>  
+<?xml version="1.0" encoding="UTF-8"?>  
+<FileList Redist="Acme.DataWidgets" >  
+<File AssemblyName="Acme.DataGrid" Version="1.0.0.0" PublicKeyToken="b03f5f7f11d50a3a" Culture="neutral" ProcessorArchitecture="MSIL" InGAC="true" />  
+</FileList>  
 ```  
   
-## Voir aussi  
- [How to: Install Prerequisites with a ClickOnce Application](../Topic/How%20to:%20Install%20Prerequisites%20with%20a%20ClickOnce%20Application.md)   
- [Composants requis, boîte de dialogue](../ide/reference/prerequisites-dialog-box.md)   
- [Référence du schéma de produit et de package](../deployment/product-and-package-schema-reference.md)   
- [Utiliser le programme d’amorçage de Visual Studio 2005 pour démarrer rapidement votre installation](http://go.microsoft.com/fwlink/?LinkId=107537)
+## <a name="see-also"></a>Voir aussi  
+ [Comment : installer les composants requis avec une Application ClickOnce](../deployment/how-to-install-prerequisites-with-a-clickonce-application.md)   
+ [Boîte de dialogue composants requis](../ide/reference/prerequisites-dialog-box.md)   
+ [Référence du schéma de Package et de produit](../deployment/product-and-package-schema-reference.md)   
+ [Utilisez le Visual Studio 2005 du programme d’amorçage pour démarrer rapidement votre Installation](http://go.microsoft.com/fwlink/?LinkId=107537)

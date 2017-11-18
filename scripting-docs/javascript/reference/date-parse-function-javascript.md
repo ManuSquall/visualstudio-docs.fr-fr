@@ -1,58 +1,60 @@
 ---
-title: "Date.parse, fonction (JavaScript) | Microsoft Docs"
-ms.custom: ""
-ms.date: "01/18/2017"
-ms.prod: "windows-client-threshold"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "devlang-javascript"
-ms.tgt_pltfrm: ""
-ms.topic: "language-reference"
-f1_keywords: 
-  - "parse"
-dev_langs: 
-  - "JavaScript"
-  - "TypeScript"
-  - "DHTML"
-helpviewer_keywords: 
-  - "Date.parse (fonction) (JavaScript)"
-  - "parse (fonction) (JavaScript)"
+title: Date.Parse, fonction (JavaScript) | Documents Microsoft
+ms.custom: 
+ms.date: 01/18/2017
+ms.prod: windows-client-threshold
+ms.reviewer: 
+ms.suite: 
+ms.technology: devlang-javascript
+ms.tgt_pltfrm: 
+ms.topic: language-reference
+f1_keywords: parse
+dev_langs:
+- JavaScript
+- TypeScript
+- DHTML
+helpviewer_keywords:
+- parse function [JavaScript]
+- Date.parse function [JavaScript]
 ms.assetid: ed737e50-6398-4462-8779-2af3c03f8325
-caps.latest.revision: 19
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 19
+caps.latest.revision: "19"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: 0a73fda66ef24df17a5213a182c04667fc4dfabf
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.translationtype: MT
+ms.contentlocale: fr-FR
+ms.lasthandoff: 10/27/2017
 ---
-# Date.parse, fonction (JavaScript)
-Analyse une chaîne contenant une date et retourne le nombre de millisecondes entre cette date et le 1er janvier 1970 à minuit.  
+# <a name="dateparse-function-javascript"></a>Date.parse, fonction (JavaScript)
+Analyse une chaîne contenant une date et retourne le nombre de millisecondes écoulées entre la date et le 1er janvier 1970 à minuit.  
   
-## Syntaxe  
+## <a name="syntax"></a>Syntaxe  
   
 ```  
 Date.parse(dateVal)   
 ```  
   
-## Notes  
- L'argument `dateVal` requis est une chaîne contenant une date ou une valeur VT\_DATE extraite d'un objet ActiveX ou d'un autre objet.  Pour plus d'informations sur les chaînes de date que la fonction `Date.parse` peut analyser, consultez [Chaînes de date et heure](../../javascript/date-and-time-strings-javascript.md).  
+## <a name="remarks"></a>Remarques  
+ Requis `dateVal` argument est une chaîne contenant une date ou une valeur VT_DATE récupérée à partir d’un objet ActiveX ou autre objet. Pour plus d’informations sur la date des chaînes qui le `Date.parse` fonction peut analyser. consultez [chaînes de Date et heure](../../javascript/date-and-time-strings-javascript.md).  
   
- La fonction `Date.parse` retourne une valeur entière représentant le nombre de millisecondes écoulées entre le 1er janvier 1970 à minuit et la date fournie dans `dateVal`.  
+ Le `Date.parse` fonction retourne une valeur entière représentant le nombre de millisecondes écoulées entre le 1er janvier 1970 à minuit et la date fournie dans `dateVal`.  
   
-## Exemple  
- L'exemple ci\-dessous illustre l'utilisation de la fonction `Date.parse` :  
+## <a name="example"></a>Exemple  
+ L'exemple ci-dessous illustre l'utilisation de la fonction `Date.parse`.  
   
-```javascript  
+```JavaScript  
 var dateString = "November 1, 1997 10:15 AM";  
 var mSec = Date.parse(dateString);  
 document.write(mSec);  
 // Output: 878404500000  
 ```  
   
-## Exemple  
- L'exemple suivant retourne la différence entre la date fournie et celle du 1\/1\/1970.  
+## <a name="example"></a>Exemple  
+ L’exemple suivant retourne la différence entre la date indiquée et le 1/1/1970.  
   
-```javascript  
+```JavaScript  
 var minMilli = 1000 * 60;  
 var hrMilli = minMilli * 60;  
 var dyMilli = hrMilli * 24;  
@@ -70,8 +72,8 @@ document.write(dateStr);
   
 ```  
   
-## Configuration requise  
+## <a name="requirements"></a>Spécifications  
  [!INCLUDE[jsv1](../../javascript/misc/includes/jsv1-md.md)]  
   
-## Voir aussi  
- [getDate, méthode \(Date\)](../../javascript/reference/getdate-method-date-javascript.md)
+## <a name="see-also"></a>Voir aussi  
+ [Méthode getDate (Date)](../../javascript/reference/getdate-method-date-javascript.md)

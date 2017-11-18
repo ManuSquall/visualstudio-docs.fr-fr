@@ -1,41 +1,43 @@
 ---
-title: "Fonction attendue | Microsoft Docs"
-ms.custom: ""
-ms.date: "01/18/2017"
-ms.prod: "windows-client-threshold"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "javascript"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "VS.WebClient.Help.SCRIPT5002"
-dev_langs: 
-  - "JavaScript"
-  - "TypeScript"
-  - "DHTML"
+title: Fonction attendue | Documents Microsoft
+ms.custom: 
+ms.date: 01/18/2017
+ms.prod: windows-client-threshold
+ms.reviewer: 
+ms.suite: 
+ms.technology: javascript
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords: VS.WebClient.Help.SCRIPT5002
+dev_langs:
+- JavaScript
+- TypeScript
+- DHTML
 ms.assetid: f62ade94-9f6f-4832-9b9b-49a06a385bbe
-caps.latest.revision: 8
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 8
+caps.latest.revision: "8"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: aa2db3e95d4baece288c9f984a7a9cf7a82c9d1d
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.translationtype: MT
+ms.contentlocale: fr-FR
+ms.lasthandoff: 10/27/2017
 ---
-# Fonction attendue
-Vous avez tenté d'appeler l'une des méthodes **Function prototype** sur un objet qui n'était pas un objet `Function`, ou vous avez utilisé un objet dans un contexte d'appel de fonction.  Par exemple, le code suivant génère cette erreur car **example**  n'est pas une fonction.  
+# <a name="function-expected"></a>Fonction attendue
+Soit vous avez tenté d’appeler une de le **prototype de fonction** méthodes sur un objet qui n’est pas un `Function` objet, ou utilisé un objet dans un contexte d’appel de fonction. Par exemple, le code suivant génère cette erreur car **exemple** n’est pas une fonction.  
   
-```javascript  
+```JavaScript  
 var example = new Object();  // Create a new object called "example".  
 var x = example();           // Try and call example as if it were a function.  
 ```  
   
-### Pour corriger cette erreur  
+### <a name="to-correct-this-error"></a>Pour corriger cette erreur  
   
--   Appelez uniquement les méthodes **Function prototype** sur des objets `Function`.  
+-   Appelez uniquement **prototype de fonction** méthodes sur `Function` objets.  
   
--   Assurez\-vous de n'utiliser l'opérateur d'appel de fonction `()` que pour appeler des fonctions.  
+-   Assurez-vous que vous utilisez l’opérateur d’appel de fonction `()` pour appeler des fonctions uniquement.  
   
-## Voir aussi  
- [Objet de function](../../javascript/reference/function-object-javascript.md)   
- [prototype, propriété \(Object\)](../../javascript/reference/prototype-property-object-javascript.md)
+## <a name="see-also"></a>Voir aussi  
+ [Objet de fonction](../../javascript/reference/function-object-javascript.md)   
+ [Propriété prototype (Object)](../../javascript/reference/prototype-property-object-javascript.md)

@@ -1,48 +1,51 @@
 ---
-title: "Concepteur d&#39;activit&#233;s CorrelationScope | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.tgt_pltfrm: ""
-ms.topic: "reference"
-f1_keywords: 
-  - "System.ServiceModel.Activities.CorrelationScope.UI"
+title: "Concepteur d’activités CorrelationScope | Documents Microsoft"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.tgt_pltfrm: 
+ms.topic: reference
+f1_keywords: System.ServiceModel.Activities.CorrelationScope.UI
 ms.assetid: 75f20664-9042-464d-8e2b-148d365a2286
-caps.latest.revision: 6
-author: "ErikRe"
-ms.author: "erikre"
-manager: "erikre"
-caps.handback.revision: 6
+caps.latest.revision: "6"
+author: ErikRe
+ms.author: erikre
+manager: erikre
+ms.openlocfilehash: 3e6e745e470c5e5b5a279f460198729bd9429ccc
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.translationtype: MT
+ms.contentlocale: fr-FR
+ms.lasthandoff: 10/27/2017
 ---
-# Concepteur d&#39;activit&#233;s CorrelationScope
-Le concepteur d'activités **CorrelationScope** permet de créer et configurer une activité <xref:System.ServiceModel.Activities.CorrelationScope> qui fournit une gestion implicite des activités de messagerie enfants à l'aide d'un objet <xref:System.ServiceModel.Activities.CorrelationHandle>.  
+# <a name="correlationscope-activity-designer"></a>Concepteur d'activités CorrelationScope
+Le **CorrelationScope** ActivityDesigner est utilisé pour créer et configurer un <xref:System.ServiceModel.Activities.CorrelationScope> activité qui fournit une gestion implicite des activités de messagerie enfants à l’aide un <xref:System.ServiceModel.Activities.CorrelationHandle> objet.  
   
-## Activité CorrelationScope  
- La propriété <xref:System.ServiceModel.Activities.CorrelationScope.CorrelatesWith%2A> spécifie l'objet <xref:System.ServiceModel.Activities.CorrelationHandle> utilisé pour gérer les activités de messagerie enfants.Les activités <xref:System.ServiceModel.Activities.Send> et <xref:System.ServiceModel.Activities.Receive> contenues dans l'objet <xref:System.ServiceModel.Activities.CorrelationScope.Body%2A> sont configurées pour utiliser la propriété <xref:System.ServiceModel.Activities.CorrelationScope.CorrelatesWith%2A> de l'activité <xref:System.ServiceModel.Activities.CorrelationScope> conteneur pour effectuer la corrélation.  
+## <a name="the-correlationscope-activity"></a>Activité CorrelationScope  
+ La propriété <xref:System.ServiceModel.Activities.CorrelationScope.CorrelatesWith%2A> spécifie l'objet <xref:System.ServiceModel.Activities.CorrelationHandle> utilisé pour gérer les activités de messagerie enfants. Les activités <xref:System.ServiceModel.Activities.Send> et <xref:System.ServiceModel.Activities.Receive> contenues dans l'objet <xref:System.ServiceModel.Activities.CorrelationScope.Body%2A> sont configurées pour utiliser la propriété <xref:System.ServiceModel.Activities.CorrelationScope.CorrelatesWith%2A> de l'activité <xref:System.ServiceModel.Activities.CorrelationScope> conteneur pour effectuer la corrélation.  
   
-### Utilisation du concepteur d'activités CorrelationScope  
- Le concepteur d'activités **CorrelationScope** se trouve dans la catégorie **Messagerie** de la **Boîte à outils**, accessible en cliquant sur l'onglet **Boîte à outils** dans [!INCLUDE[wfd2](../workflow-designer/includes/wfd2_md.md)] \(ou en sélectionnant **Barre d'outils** dans le menu **Affichage**, ou encore en appuyant sur CTRL\+ALT\+X\).  
+### <a name="using-the-correlationscope-activity-designer"></a>Utilisation du concepteur d'activités CorrelationScope  
+ Le **CorrelationScope** Concepteur d’activités peut être trouvé dans le **messagerie** catégorie de la **boîte à outils**, qui est accessible en cliquant sur les **boîte à outils** onglet sur le côté gauche de la [!INCLUDE[wfd2](../workflow-designer/includes/wfd2_md.md)] (ou bien, sélectionnez **barre d’outils** à partir de la **vue** menu ou CTRL + ALT + X.)  
   
- Le concepteur d'activités **CorrelationScope** peut être déplacé de la **Boîte à outils** et déposé dans l'aire de conception [!INCLUDE[wfd2](../workflow-designer/includes/wfd2_md.md)].Cette action crée une activité <xref:System.ServiceModel.Activities.CorrelationScope> avec CorrelationScope comme **DisplayName** par défaut.La propriété <xref:System.Activities.Activity.DisplayName%2A> peut être modifiée dans l'en\-tête du concepteur d'activités **CorrelationScope** ou dans la zone **DisplayName** de la fenêtre **Propriétés**.  
+ Le **CorrelationScope** Concepteur d’activités peut être déplacé de la **boîte à outils** et déposé dans le [!INCLUDE[wfd2](../workflow-designer/includes/wfd2_md.md)] surface. Cette opération crée un <xref:System.ServiceModel.Activities.CorrelationScope> activité avec une valeur par défaut **DisplayName** de CorrelationScope. Le <xref:System.Activities.Activity.DisplayName%2A> peuvent être modifiées dans l’en-tête de la **CorrelationScope** Concepteur d’activités ou dans le **DisplayName** boîte de le **propriétés** fenêtre.  
   
- Pour spécifier l'objet <xref:System.ServiceModel.Activities.CorrelationHandle> utilisé par les activités de messagerie enfants, cliquez sur le bouton de sélection situé en regard du champ **CorrelatesWith** dans la fenêtre **Propriétés** pour afficher la boîte de dialogue **Éditeur d'expressions**.Cette propriété peut également être définie dans l'aire du concepteur d'activités.  
+ Pour spécifier le <xref:System.ServiceModel.Activities.CorrelationHandle> utilisé par les activités de messagerie enfants, cliquez sur le bouton de sélection en regard de la **CorrelatesWith** champ **propriétés** fenêtre pour afficher les **l’éditeur d’Expression**  boîte de dialogue. Cette propriété peut également être définie dans l'aire du concepteur d'activités.  
   
- Les activités dont l'étendue est limitée par la corrélation sont spécifiées en déposant leurs concepteurs de la zone **Body** dans le concepteur **CorrelationScope**.  
+ Les activités étendue est limitées par la corrélation sont spécifiées en déposant leurs concepteurs de la **corps** zone dans le **CorrelationScope** concepteur.  
   
-### Propriétés de CorrelationScope  
- Le tableau suivant présente les propriétés de <xref:System.ServiceModel.Activities.CorrelationScope> et décrit comment elles sont utilisées dans le concepteur.Ces propriétés peuvent être modifiées dans la fenêtre **Propriétés** ou dans l'aire de conception [!INCLUDE[wfd2](../workflow-designer/includes/wfd2_md.md)], et souvent dans les deux.  
+### <a name="the-correlationscope-properties"></a>Propriétés de CorrelationScope  
+ Le tableau suivant présente les propriétés de <xref:System.ServiceModel.Activities.CorrelationScope> et décrit comment elles sont utilisées dans le concepteur. Ces propriétés peuvent être modifiées dans **propriétés** fenêtre ou sur [!INCLUDE[wfd2](../workflow-designer/includes/wfd2_md.md)] aire de conception et souvent à la fois dans le concepteur.  
   
-|Nom de la propriété|Valeur requise|Utilisation|  
-|-------------------------|--------------------|-----------------|  
+|Nom de la propriété|Obligatoire|Utilisation|  
+|-------------------|--------------|-----------|  
 |<xref:System.Activities.Activity.DisplayName%2A>|False|Nom convivial facultatif de l'activité <xref:System.ServiceModel.Activities.InitializeCorrelation>.|  
-|<xref:System.ServiceModel.Activities.CorrelationScope.CorrelatesWith%2A>|False|Spécifie l'objet <xref:System.ServiceModel.Activities.CorrelationHandle> utilisé pour gérer les activités de messagerie enfants.Si vous ne définissez pas cette propriété, <xref:System.ServiceModel.Activities.CorrelationScope> crée automatiquement un objet <xref:System.ServiceModel.Activities.CorrelationHandle> implicite.|  
+|<xref:System.ServiceModel.Activities.CorrelationScope.CorrelatesWith%2A>|False|Spécifie l'objet <xref:System.ServiceModel.Activities.CorrelationHandle> utilisé pour gérer les activités de messagerie enfants. Si vous ne définissez pas cette propriété, <xref:System.ServiceModel.Activities.CorrelationScope> crée automatiquement un objet <xref:System.ServiceModel.Activities.CorrelationHandle> implicite.|  
 |<xref:System.ServiceModel.Activities.CorrelationScope.Body%2A>|False|Spécifie les activités dans l'étendue de la corrélation.|  
   
-## Voir aussi  
+## <a name="see-also"></a>Voir aussi  
  [InitializeCorrelation](../workflow-designer/initializecorrelation-activity-designer.md)   
- [Receive](../workflow-designer/receive-activity-designer.md)   
+ [Réception](../workflow-designer/receive-activity-designer.md)   
  [ReceiveAndSendReply](../workflow-designer/receiveandsendreply-template-designer.md)   
- [Envoyez](../workflow-designer/send-activity-designer.md)   
+ [Envoyer](../workflow-designer/send-activity-designer.md)   
  [SendAndReceiveReply](../workflow-designer/sendandreceivereply-template-designer.md)   
  [TransactedReceiveScope](../workflow-designer/transactedreceivescope-activity-designer.md)

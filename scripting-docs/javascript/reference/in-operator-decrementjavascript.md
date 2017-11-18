@@ -1,56 +1,57 @@
 ---
-title: "in, op&#233;rateur (JavaScript) | Microsoft Docs"
-ms.custom: ""
-ms.date: "01/18/2017"
-ms.prod: "windows-client-threshold"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "devlang-javascript"
-ms.tgt_pltfrm: ""
-ms.topic: "language-reference"
-f1_keywords: 
-  - "in_JavaScriptKeyword"
-dev_langs: 
-  - "JavaScript"
-  - "TypeScript"
-  - "DHTML"
-helpviewer_keywords: 
-  - "in (opérateur)"
+title: "in, opérateur (JavaScript) | Documents Microsoft"
+ms.custom: 
+ms.date: 01/18/2017
+ms.prod: windows-client-threshold
+ms.reviewer: 
+ms.suite: 
+ms.technology: devlang-javascript
+ms.tgt_pltfrm: 
+ms.topic: language-reference
+f1_keywords: in_JavaScriptKeyword
+dev_langs:
+- JavaScript
+- TypeScript
+- DHTML
+helpviewer_keywords: in operator
 ms.assetid: dcd8f901-96b8-4c91-848b-b1ec0ab1c11c
-caps.latest.revision: 17
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 17
+caps.latest.revision: "17"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: eefcd4c53d2e3366a26f0d8dfb099f59038507ae
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.translationtype: MT
+ms.contentlocale: fr-FR
+ms.lasthandoff: 10/27/2017
 ---
-# in, op&#233;rateur (JavaScript)
+# <a name="in-operator-javascript"></a>in, opérateur (JavaScript)
 Vérifie l'existence d'une propriété dans un objet.  
   
-## Syntaxe  
+## <a name="syntax"></a>Syntaxe  
   
 ```  
   
 result = property in object  
 ```  
   
-## Paramètres  
+## <a name="parameters"></a>Paramètres  
  `result`  
- Obligatoire.  Toute variable.  
+ Obligatoire. Toute variable.  
   
  `property`  
- Obligatoire.  Expression retournant une expression de chaîne.  
+ Obligatoire. Une expression qui prend une expression de chaîne.  
   
  `object`  
- Obligatoire.  N'importe quel objet.  
+ Obligatoire. N’importe quel objet.  
   
-## Notes  
- L'opérateur `in` détermine si un objet possède une propriété nommée `property`.  Il détermine également si la propriété fait partie de la chaîne des prototypes de l'objet.  Pour plus d'informations sur les prototypes d'objet, consultez [Prototypes et héritage de prototypes](../../javascript/advanced/prototypes-and-prototype-inheritance.md).  
+## <a name="remarks"></a>Remarques  
+ Le `in` opérateur détermine si un objet possède une propriété nommée `property`. Il détermine également si la propriété fait partie de la chaîne de prototype de l’objet. Pour plus d’informations sur les prototypes d’objets, consultez [Prototypes et héritage de Prototype](../../javascript/advanced/prototypes-and-prototype-inheritance.md).  
   
-## Exemple  
- L'exemple suivant illustre l'utilisation de l'opérateur `in` :  
+## <a name="example"></a>Exemple  
+ L’exemple suivant montre comment utiliser le `in` opérateur :  
   
-```javascript  
+```JavaScript  
 // Create an object that has some properties.  
 var myObject = new Object();  
 myObject.name = "James";  
@@ -65,9 +66,9 @@ else
 // Output: property is present  
 ```  
   
-## Configuration requise  
+## <a name="requirements"></a>Spécifications  
  [!INCLUDE[jsv1](../../javascript/misc/includes/jsv1-md.md)]  
   
-## Voir aussi  
+## <a name="see-also"></a>Voir aussi  
  [Priorité des opérateurs](../../javascript/operator-subtractprecedence-javascript.md)   
- [Résumé des opérateurs \(JavaScript\)](../../javascript/misc/operator-subtractsummary-javascript.md)
+ [Résumé des opérateurs (JavaScript)](../../javascript/misc/operator-subtractsummary-javascript.md)

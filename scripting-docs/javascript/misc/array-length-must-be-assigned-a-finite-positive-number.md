@@ -1,38 +1,40 @@
 ---
-title: "Un nombre positif fini doit &#234;tre assign&#233; &#224; la longueur de tableau | Microsoft Docs"
-ms.custom: ""
-ms.date: "01/18/2017"
-ms.prod: "windows-client-threshold"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "javascript"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "VS.WebClient.Help.SCRIPT5030"
-dev_langs: 
-  - "JavaScript"
-  - "TypeScript"
-  - "DHTML"
+title: "Un nombre positif fini doit être assigné à la longueur de tableau | Documents Microsoft"
+ms.custom: 
+ms.date: 01/18/2017
+ms.prod: windows-client-threshold
+ms.reviewer: 
+ms.suite: 
+ms.technology: javascript
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords: VS.WebClient.Help.SCRIPT5030
+dev_langs:
+- JavaScript
+- TypeScript
+- DHTML
 ms.assetid: c51c66a4-a543-4e95-b18d-2cfbcb3d1fdd
-caps.latest.revision: 9
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 9
+caps.latest.revision: "9"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: 63a9d714173334192028b9096de41968befa85ef
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.translationtype: MT
+ms.contentlocale: fr-FR
+ms.lasthandoff: 10/27/2017
 ---
-# Un nombre positif fini doit &#234;tre assign&#233; &#224; la longueur de tableau
-Lors de la définition de la propriété **length** d'un objet **Array** existant, la longueur du tableau spécifiée n'était pas un nombre positif, ni un zéro.  Cette erreur se produit lorsque vous assignez une valeur à la propriété **length** d'un objet `Array` qui est négatif ou qui n'est pas un nombre \(`NaN`\).  Notez que [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] convertit automatiquement les nombres fractionnaires en entiers.  
+# <a name="array-length-must-be-assigned-a-finite-positive-number"></a>Un entier positif fini doit être assigné la longueur du tableau
+Lors de la définition du **longueur** propriété d’un objet **tableau** objet, que vous avez spécifié une longueur de tableau qui n’est pas un nombre positif ou égal à zéro. Cette erreur se produit lorsque vous affectez une valeur à la **longueur** propriété d’un `Array` objet qui est un nombre négatif ou une valeur non numérique (`NaN`). Notez que [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] convertit automatiquement les nombres décimaux en entiers.  
   
-### Pour corriger cette erreur  
+### <a name="to-correct-this-error"></a>Pour corriger cette erreur  
   
--   Assignez un nombre entier positif à la propriété length.  Il n'existe aucune limite supérieure quant à la taille d'un tableau autre que la valeur entière maximale \(environ 4 milliards\).  L'exemple suivant illustre comment définir correctement la propriété **length** d'un objet **Array** .  
+-   Affecter un nombre entier positif pour la propriété de longueur. Il n’existe aucune limite supérieure pour la taille d’un tableau, autre que la valeur entière maximale (environ 4 milliards). L’exemple suivant illustre la façon correcte de définir la **longueur** propriété d’un **tableau** objet.  
   
-    ```javascript  
+    ```JavaScript  
     var my_array = new Array();  
     my_array.length = 99;  
     ```  
   
-## Voir aussi  
- [Utilisation de tableaux](../../javascript/advanced/using-arrays-javascript.md)
+## <a name="see-also"></a>Voir aussi  
+ [Utilisation des tableaux](../../javascript/advanced/using-arrays-javascript.md)

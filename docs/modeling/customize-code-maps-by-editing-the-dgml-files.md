@@ -20,39 +20,25 @@ helpviewer_keywords:
 - graph documents, grouping nodes
 - dependency graphs, assigning categories and properties
 ms.assetid: a2e141f4-4fd8-4611-b236-6b9e7bc54fc1
-caps.latest.revision: 93
+caps.latest.revision: "93"
 author: alexhomer1
 ms.author: ahomer
 manager: douge
-translation.priority.ht:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
-translationtype: Machine Translation
-ms.sourcegitcommit: fd26c504273cae739ccbeef5e406891def732985
-ms.openlocfilehash: 40444a707b6c7a013429777f2f8b6cb508e2db81
-ms.lasthandoff: 02/22/2017
-
+ms.openlocfilehash: f270966c5c91dab1a492a775faca3da220a98d6c
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.translationtype: MT
+ms.contentlocale: fr-FR
+ms.lasthandoff: 10/27/2017
 ---
-# <a name="customize-code-maps-by-editing-the-dgml-files"></a>Customize code maps by editing the DGML files
-Pour personnaliser une carte de code, vous pouvez modifier le fichier DGML (Directed Graph Markup Language) (.dgml) d'une carte. Par exemple, vous pouvez modifier des éléments pour spécifier des styles personnalisés, affecter des propriétés et des catégories à des éléments de code et des liens, ou lier des documents ou des URL à des éléments de code ou des liens. Pour plus d’informations sur les éléments DGML, consultez [référence de Markup langage DGML (Directed Graph)](../modeling/directed-graph-markup-language-dgml-reference.md).  
+# <a name="customize-code-maps-by-editing-the-dgml-files"></a>Personnaliser des cartes de code en modifiant les fichiers DGML
+Pour personnaliser une carte de code, vous pouvez modifier le fichier DGML (Directed Graph Markup Language) (.dgml) d'une carte. Par exemple, vous pouvez modifier des éléments pour spécifier des styles personnalisés, affecter des propriétés et des catégories à des éléments de code et des liens, ou lier des documents ou des URL à des éléments de code ou des liens. Pour plus d’informations sur les éléments DGML, consultez [référence de balisage langage DGML (Directed Graph)](../modeling/directed-graph-markup-language-dgml-reference.md).  
   
  Modifiez le fichier .dgml de la carte de code dans un éditeur de texte ou un éditeur XML. Si la carte fait partie de votre solution Visual Studio, sélectionnez-le dans **l’Explorateur de solutions**, ouvrez le menu contextuel et choisissez **ouvrir avec**, **éditeur XML (texte)**.  
   
 > [!NOTE]
 >  Pour créer des cartes de code, vous devez avoir Visual Studio Enterprise. Quand vous modifiez une carte de code dans Visual Studio, il nettoie tous les attributs et éléments DGML inutilisés en les supprimant lorsque vous enregistrez le fichier .dgml. Il crée aussi des éléments de code automatiquement quand vous ajoutez manuellement de nouveaux liens. Lorsque vous enregistrez le fichier .dgml, tous les attributs que vous avez ajoutés à un élément peuvent être réorganisés par ordre alphabétique.  
   
-##  <a name="a-nameorganizenodesa-group-code-elements"></a><a name="OrganizeNodes"></a>Regrouper des éléments de code  
+##  <a name="OrganizeNodes"></a>Groupe des éléments de code  
  Vous pouvez ajouter de nouveaux groupes ou convertir des nœuds existants dans un groupe.  
   
 1.  Dans un éditeur XML ou un éditeur de texte, ouvrez le fichier .dgml.  
@@ -91,9 +77,9 @@ Pour personnaliser une carte de code, vous pouvez modifier le fichier DGML (Dire
     </Links>  
     ```  
   
-     Pour plus d’informations sur la `Category` d’attribut, consultez [attribuer des catégories aux éléments de code et aux liens](#AssignCategories).  
+     Pour plus d’informations sur la `Category` d’attribut, consultez [attribuer des catégories à des éléments de code et des liens](#AssignCategories).  
   
-##  <a name="a-namechangegraphstylea-change-the-style-of-the-map"></a><a name="ChangeGraphStyle"></a>Modifier le style de la carte  
+##  <a name="ChangeGraphStyle"></a>Modifier le style de la carte  
  Vous pouvez changer la couleur de l'arrière-plan et de la bordure de la carte en modifiant son fichier .dgml. Pour modifier le style des éléments de code et des liens, consultez [modifier le style des éléments de code et des liens](#Highlight).  
   
 1.  Dans un éditeur XML ou un éditeur de texte, ouvrez le fichier .dgml.  
@@ -121,7 +107,7 @@ Pour personnaliser une carte de code, vous pouvez modifier le fichier DGML (Dire
     </DirectedGraph>  
     ```  
   
-##  <a name="a-namehighlighta-change-the-style-of-code-elements-and-links"></a><a name="Highlight"></a>Modifier le style des éléments de code et des liens  
+##  <a name="Highlight"></a>Modifier le style des éléments de code et des liens  
   
 ###  <a name="CreateCustomStyles"></a>   
  Vous pouvez appliquer des styles personnalisés aux éléments de code suivants :  
@@ -133,7 +119,7 @@ Pour personnaliser une carte de code, vous pouvez modifier le fichier DGML (Dire
 -   groupes d'éléments de code et liens selon certaines conditions.  
   
 > [!TIP]
->  Si vous avez répété des styles sur de nombreux éléments de code ou liens, vous pouvez appliquer une catégorie à ces éléments de code ou à ces liens, puis appliquer un style à cette catégorie. Pour plus d’informations, consultez [attribuer des catégories aux éléments de Code et des liens](#AssignCategories) et [assignation de propriétés aux éléments de Code et des liens](#AssignProperties).  
+>  Si vous avez répété des styles sur de nombreux éléments de code ou liens, vous pouvez appliquer une catégorie à ces éléments de code ou à ces liens, puis appliquer un style à cette catégorie. Pour plus d’informations, consultez [affecter des catégories à des éléments de Code et les liens](#AssignCategories) et [assignation de propriétés aux éléments de Code et des liens](#AssignProperties).  
   
 ##### <a name="to-apply-a-custom-style-to-a-single-code-element"></a>Pour appliquer un style personnalisé à un seul élément de code  
   
@@ -308,7 +294,7 @@ Pour personnaliser une carte de code, vous pouvez modifier le fichier DGML (Dire
   
      <UnaryExpression> ::= "!" <Expression> &#124; "+" <Expression> &#124; "-" <Expression>  
   
-     <Operator>::= "<" |=""></">\<=" | "=" | ">=" | ">" | "!=" | « ou » | « et » | "+" | "*" | "/" | "-"  
+     <Operator>:: = « < » &#124; «\<= » &#124; « = » &#124; « > = » &#124; « > » &#124; « ! = » &#124; « ou » &#124; « et » &#124; « + » &#124; « * » &#124; « / » &#124; "-"  
   
      <MemberBindings> ::= <MemberBindings> &#124; <MemberBinding> "." <MemberBinding>  
   
@@ -322,7 +308,7 @@ Pour personnaliser une carte de code, vous pouvez modifier le fichier DGML (Dire
   
      <Identifier> ::= [^. ]*  
   
-     <Literal>:: = littéral de chaîne unique ou entre guillemets doubles  
+     <Literal>:: = littéral de chaîne simple ou entre guillemets doubles  
   
      <Number>:: = chaîne de chiffres avec virgule décimale facultative  
   
@@ -451,7 +437,7 @@ Pour personnaliser une carte de code, vous pouvez modifier le fichier DGML (Dire
 </DirectedGraph>  
 ```  
   
-##  <a name="a-nameassignpropertiesa-assign-properties-to-code-elements-and-links"></a><a name="AssignProperties"></a>Assigner des propriétés aux éléments de code et des liens  
+##  <a name="AssignProperties"></a>Affecter des propriétés à des liens et des éléments de code  
  Vous pouvez organiser des éléments de code et des liens en leur assignant des propriétés. Par exemple, vous pouvez sélectionner des éléments de code ayant des propriétés spécifiques pour pouvoir les regrouper, modifier leur style ou les masquer.  
   
 #### <a name="to-assign-a-property-to-a-code-element"></a>Pour assigner une propriété à un élément de code  
@@ -496,7 +482,7 @@ Pour personnaliser une carte de code, vous pouvez modifier le fichier DGML (Dire
     </Properties>  
     ```  
   
-##  <a name="a-nameassigncategoriesa-assign-categories-to-code-elements-and-links"></a><a name="AssignCategories"></a>Attribuer des catégories à des éléments de code et des liens  
+##  <a name="AssignCategories"></a>Attribuer des catégories à des éléments de code et des liens  
  Les sections suivantes expliquent comment organiser des éléments de code en leur assignant des catégories et comment créer des catégories hiérarchiques qui vous aident à organiser les éléments de code et ajouter des attributs aux catégories enfants à l'aide de l'héritage.  
   
 #### <a name="to-assign-a-category-to-a-code-element"></a>Pour assigner une catégorie à un élément de code  
@@ -567,7 +553,7 @@ Pour personnaliser une carte de code, vous pouvez modifier le fichier DGML (Dire
   
      Dans cet exemple, l'arrière-plan de `MyFirstNode` est vert car son attribut `Category` hérite de l'attribut `Background` de `MyParentCategory`.  
   
-##  <a name="a-nameaddreferencesa-link-documents-or-urls-to-code-elements-and-links"></a><a name="AddReferences"></a>Lier des documents ou des URL des éléments de code et des liens  
+##  <a name="AddReferences"></a>Lier des documents ou des URL à des éléments de code et des liens  
  Vous pouvez lier des éléments ou des URL à des éléments de code ou à des liens en modifiant le fichier .dgml de la carte et en ajoutant un attribut `Reference` à l'élément `<Node/>` d'un élément de code ou bien l'élément `<Link/>` pour un lien. Vous pouvez ensuite ouvrir et afficher ce contenu à partir de l'élément de code ou du lien. L'attribut `Reference` spécifie le chemin d'accès de ce contenu. Il peut s'agir d'un chemin d'accès relatif par rapport à l'emplacement du fichier .dgml ou d'un chemin d'accès absolu.  
   
 > [!CAUTION]
@@ -577,11 +563,11 @@ Pour personnaliser une carte de code, vous pouvez modifier le fichier DGML (Dire
   
 -   Pour décrire les modifications apportées à une classe, vous pouvez lier l'URL d'un élément de code de travail, d'un document ou d'un autre fichier .dgml à l'élément de code d'une classe.  
   
--   Vous pouvez lier un diagramme de dépendance à un élément de code de groupe qui représente une couche dans l’architecture logique du logiciel.  
+-   Vous pouvez lier un diagramme de dépendances pour un élément de code de groupe qui représente une couche dans l’architecture du logiciel logique.  
   
 -   Pour afficher davantage d'informations sur le composant qui expose une interface, vous pouvez lier un diagramme de composant à l'élément de code de cette interface.  
   
--   Lier un élément de code à un élément de travail Team Foundation Server ou du bogue ou d’autres informations liées à l’élément de code.  
+-   Lier un élément de code à un élément de travail Team Foundation Server ou du bogue ou d’autres informations relatives à l’élément de code.  
   
 #### <a name="to-link-a-document-or-url-to-a-code-element"></a>Pour lier un document ou une URL à un élément de code  
   
@@ -619,7 +605,7 @@ Pour personnaliser une carte de code, vous pouvez modifier le fichier DGML (Dire
   
         2.  Définissez l'attribut `Id` au nom du nouvel attribut de référence.  
   
-        3.  Ajouter la `IsReference` d’attribut et affectez-lui la valeur `True` pour faire apparaître la référence dans l’élément de code **atteindre la référence** menu contextuel.  
+        3.  Ajouter le `IsReference` d’attribut et affectez-lui la valeur `True` pour faire apparaître la référence dans l’élément de code **atteindre la référence** menu contextuel.  
   
         4.  Utilisez le `Label` attribut pour spécifier le texte à afficher sur l’élément de code **atteindre la référence** menu contextuel.  
   
@@ -635,7 +621,7 @@ Pour personnaliser une carte de code, vous pouvez modifier le fichier DGML (Dire
     </Properties>  
     ```  
   
-     Sur la carte, le nom de l'élément de code apparaît souligné. Lorsque vous ouvrez le menu contextuel de l’élément de code ou le lien, vous verrez un **atteindre la référence** menu contextuel qui contient les éléments de code liées de votre choix.  
+     Sur la carte, le nom de l'élément de code apparaît souligné. Lorsque vous ouvrez le menu contextuel de l’élément de code ou le lien, vous verrez un **atteindre la référence** menu contextuel qui contienne les éléments de code liées pour vous permettre de choisir.  
   
 4.  Utilisez l'attribut `ReferenceTemplate` pour spécifier une chaîne commune, telle qu'une URL, qui est utilisée par plusieurs références au lieu de répéter cette chaîne dans la référence.  
   
@@ -656,8 +642,7 @@ Pour personnaliser une carte de code, vous pouvez modifier le fichier DGML (Dire
   
 ## <a name="see-also"></a>Voir aussi  
  [Mapper les dépendances dans vos solutions](../modeling/map-dependencies-across-your-solutions.md)   
- [Utilisez des cartes de code à déboguer vos applications](../modeling/use-code-maps-to-debug-your-applications.md)   
+ [Utiliser des cartes de code pour déboguer vos applications](../modeling/use-code-maps-to-debug-your-applications.md)   
  [Rechercher des problèmes potentiels à l’aide des analyseurs de carte de code](../modeling/find-potential-problems-using-code-map-analyzers.md)   
  [Parcourir et réorganiser des cartes de code](../modeling/browse-and-rearrange-code-maps.md)   
  [Informations de référence sur le langage DGML (Directed Graph Markup Language)](../modeling/directed-graph-markup-language-dgml-reference.md)
-

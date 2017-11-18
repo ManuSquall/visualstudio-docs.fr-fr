@@ -6,38 +6,23 @@ ms.reviewer:
 ms.suite: 
 ms.tgt_pltfrm: 
 ms.topic: article
-helpviewer_keywords:
-- dependency diagrams, adding custom properties
+helpviewer_keywords: dependency diagrams, adding custom properties
 ms.assetid: 52b3ac25-d10b-4507-a1fe-209ccb4d2777
-caps.latest.revision: 21
+caps.latest.revision: "21"
 author: alexhomer1
 ms.author: ahomer
 manager: douge
-translation.priority.ht:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
-translationtype: Machine Translation
-ms.sourcegitcommit: 8f84f22444a5df5b9f4f4af44cd8ee9136403467
-ms.openlocfilehash: 6c7e43c180ac5210d9c29961ed7330b370a99075
-ms.lasthandoff: 02/22/2017
-
+ms.openlocfilehash: 130222ef3a603576f02961979e64b0c8160430af
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.translationtype: MT
+ms.contentlocale: fr-FR
+ms.lasthandoff: 10/27/2017
 ---
 # <a name="add-custom-properties-to-dependency-diagrams"></a>Ajouter des propriétés personnalisées aux diagrammes de dépendance
-Lorsque vous écrivez du code d’extension pour les diagrammes de dépendance, vous pouvez stocker des valeurs avec n’importe quel élément sur un diagramme de dépendances. Les valeurs persisteront lorsque le diagramme est enregistré et rouvert. Vous pouvez également faire apparaître ces propriétés dans le **propriétés** fenêtre afin que les utilisateurs peuvent voir et les modifier. Par exemple, vous pouvez permettre aux utilisateurs de spécifier une expression régulière pour chaque couche, et écrire le code de validation pour vérifier que les noms de classes dans chaque couche sont conformes au modèle spécifié par l’utilisateur.  
+Lorsque vous écrivez le code d’extension pour les diagrammes de dépendance, vous pouvez stocker des valeurs avec n’importe quel élément sur un diagramme de dépendances. Les valeurs persisteront lorsque le diagramme est enregistré et rouvert. Vous pouvez également avoir ces propriétés s’affichent dans le **propriétés** fenêtre afin que les utilisateurs peuvent voir et les modifier. Par exemple, vous pouvez permettre aux utilisateurs de spécifier une expression régulière pour chaque couche, et écrire le code de validation pour vérifier que les noms de classes dans chaque couche sont conformes au modèle spécifié par l’utilisateur.  
   
 ## <a name="properties-not-visible-to-the-user"></a>Propriétés non visibles par l'utilisateur  
- Si vous souhaitez simplement que votre code associe des valeurs à un élément dans un diagramme de dépendances, vous n’avez pas besoin de définir un composant MEF. Il existe un dictionnaire nommé `Properties` dans <xref:Microsoft.VisualStudio.ArchitectureTools.Extensibility.Layer.ILayerElement>.</xref:Microsoft.VisualStudio.ArchitectureTools.Extensibility.Layer.ILayerElement> Ajoutez simplement les valeurs marshalables au dictionnaire d’un élément de couche. Elles seront enregistrées dans le cadre du diagramme de dépendance. Pour plus d’informations, consultez [naviguer et mise à jour de modèles dans le code de programme couche](../modeling/navigate-and-update-layer-models-in-program-code.md).  
+ Si vous souhaitez simplement votre code pour attacher des valeurs à un élément dans un diagramme de dépendances, vous n’avez pas besoin de définir un composant MEF. Il existe un dictionnaire nommé `Properties` dans <xref:Microsoft.VisualStudio.ArchitectureTools.Extensibility.Layer.ILayerElement>. Ajoutez simplement les valeurs marshalables au dictionnaire d’un élément de couche. Elles seront enregistrées en tant que partie du diagramme de dépendance. Pour plus d’informations, consultez [naviguer et mise à jour des modèles dans le code de programme de couche](../modeling/navigate-and-update-layer-models-in-program-code.md).  
   
 ## <a name="properties-that-the-user-can-edit"></a>Propriétés que l'utilisateur peut modifier  
  **Préparation initiale**  
@@ -62,7 +47,7 @@ Lorsque vous écrivez du code d’extension pour les diagrammes de dépendance, 
   
  **Assurez-vous que votre code se trouve dans un projet VSIX**  
   
- Si votre propriété fait partie d’une commande, d’un mouvement ou d’un projet de validation, vous n’avez rien à ajouter. Le code de votre propriété personnalisée doit être défini dans un projet d'extensibilité Visual Studio défini en tant que composant MEF. Pour plus d’informations, consultez [ajouter des commandes et mouvements aux diagrammes de dépendance](../modeling/add-commands-and-gestures-to-layer-diagrams.md) ou [ajouter une validation d’architecture personnalisée aux diagrammes de dépendance](../modeling/add-custom-architecture-validation-to-layer-diagrams.md).  
+ Si votre propriété fait partie d’un projet de validation, de mouvement ou de commande, vous ne devez rien à ajouter. Le code de votre propriété personnalisée doit être défini dans un projet d'extensibilité Visual Studio défini en tant que composant MEF. Pour plus d’informations, consultez [ajouter des commandes et des mouvements aux diagrammes de dépendance](../modeling/add-commands-and-gestures-to-layer-diagrams.md) ou [ajouter la validation d’architecture personnalisée aux diagrammes de dépendance](../modeling/add-custom-architecture-validation-to-layer-diagrams.md).  
   
  **Définir la propriété personnalisée**  
   
@@ -77,7 +62,7 @@ public class MyProperty
 }  
 ```  
   
- Vous pouvez définir des propriétés sur <xref:Microsoft.VisualStudio.ArchitectureTools.Extensibility.Layer.ILayerElement>ou l’une de ses classes dérivées, notamment :</xref:Microsoft.VisualStudio.ArchitectureTools.Extensibility.Layer.ILayerElement>  
+ Vous pouvez définir des propriétés sur <xref:Microsoft.VisualStudio.ArchitectureTools.Extensibility.Layer.ILayerElement> ou l'une de ses classes dérivées, notamment :  
   
 -   `ILayerModel` : le modèle  
   
@@ -176,5 +161,4 @@ namespace MyNamespace
 ```  
   
 ## <a name="see-also"></a>Voir aussi  
- [Étendre des diagrammes de dépendance](../modeling/extend-layer-diagrams.md)
-
+ [Extension des diagrammes de dépendance](../modeling/extend-layer-diagrams.md)

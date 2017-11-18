@@ -1,48 +1,51 @@
 ---
-title: "getUint8, m&#233;thode (DataView) | Microsoft Docs"
-ms.custom: ""
-ms.date: "01/18/2017"
-ms.prod: "windows-client-threshold"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "devlang-javascript"
-ms.tgt_pltfrm: ""
-ms.topic: "language-reference"
-dev_langs: 
-  - "JavaScript"
-  - "TypeScript"
-  - "DHTML"
+title: "getuint8, méthode (DataView) | Documents Microsoft"
+ms.custom: 
+ms.date: 01/18/2017
+ms.prod: windows-client-threshold
+ms.reviewer: 
+ms.suite: 
+ms.technology: devlang-javascript
+ms.tgt_pltfrm: 
+ms.topic: language-reference
+dev_langs:
+- JavaScript
+- TypeScript
+- DHTML
 ms.assetid: 9fbf4be3-4c0b-4963-a7a1-d57f1501b4cf
-caps.latest.revision: 5
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 5
+caps.latest.revision: "5"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: 315baa2ca5abfe006a7f8d524619479d99a11fc9
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.translationtype: MT
+ms.contentlocale: fr-FR
+ms.lasthandoff: 10/27/2017
 ---
-# getUint8, m&#233;thode (DataView)
-Obtient la valeur Uint8 au niveau de l'offset d'octet spécifié à partir du début de la vue.  Il n'existe aucune contrainte d'alignement ; les valeurs multioctets peuvent être extraite à partir de n'importe quel offset.  
+# <a name="getuint8-method-dataview"></a>getUint8, méthode (DataView)
+Obtient la valeur Uint8 à l’offset d’octet spécifié à partir du début de la vue. Il n’existe aucune contrainte d’alignement ; les valeurs sur plusieurs octets peuvent être lues à partir de n’importe quel décalage.  
   
-## Syntaxe  
+## <a name="syntax"></a>Syntaxe  
   
 ```  
 var testInt = dataView.getUint8(byteOffset);   
 ```  
   
-## Paramètres  
+## <a name="parameters"></a>Paramètres  
  `testInt`  
- Obligatoire.  Valeur Uint8 retournée par la méthode.  
+ Obligatoire. La valeur Uint8 qui est retournée à partir de la méthode.  
   
  `byteOffset`  
- Emplacement dans la mémoire tampon auquel la valeur doit être récupérée.  
+ L’emplacement de la mémoire tampon à laquelle la valeur doit être récupérée.  
   
-## Notes  
- Ces méthodes lèvent une exception si elles doivent lire au\-delà de la fin de la vue.  
+## <a name="remarks"></a>Remarques  
+ Ces méthodes déclenchent une exception si elles sont en lecture au-delà de la fin de la vue.  
   
-## Exemple  
- L'exemple suivant montre comment obtenir le premier Uint8 dans le DataView.  
+## <a name="example"></a>Exemple  
+ L’exemple suivant montre comment obtenir le premier Uint8 du DataView.  
   
-```javascript  
+```JavaScript  
 var req = new XMLHttpRequest();  
     req.open('GET', "http://www.example.com");  
     req.responseType = "arraybuffer";  
@@ -58,5 +61,5 @@ var req = new XMLHttpRequest();
   
 ```  
   
-## Configuration requise  
+## <a name="requirements"></a>Spécifications  
  [!INCLUDE[jsv10](../../javascript/reference/includes/jsv10-md.md)]

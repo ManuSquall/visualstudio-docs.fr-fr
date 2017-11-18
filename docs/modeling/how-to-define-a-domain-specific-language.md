@@ -1,5 +1,5 @@
 ---
-title: "Comment définir un langage spécifique au domaine | Documents Microsoft"
+title: "Comment définir un langage spécifique à un domaine | Documents Microsoft"
 ms.custom: 
 ms.date: 11/04/2016
 ms.reviewer: 
@@ -16,31 +16,26 @@ helpviewer_keywords:
 - Domain-Specific Language, relationships
 - Domain-Specific Language, domain properties
 ms.assetid: d1772463-0eb1-40a5-b7c0-9a008bc76760
-caps.latest.revision: 43
+caps.latest.revision: "43"
 author: alancameronwills
 ms.author: awills
 manager: douge
-translation.priority.mt:
-- cs-cz
-- pl-pl
-- pt-br
-- tr-tr
-translationtype: Machine Translation
-ms.sourcegitcommit: 3d07f82ea737449fee6dfa04a61e195654ba35fa
-ms.openlocfilehash: 7c5b6162d39afd665df5dabad7213c96667d4088
-ms.lasthandoff: 02/22/2017
-
+ms.openlocfilehash: 0d2483fb8c3f244f2a5fd51f076d7157711cd34f
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.translationtype: MT
+ms.contentlocale: fr-FR
+ms.lasthandoff: 10/27/2017
 ---
 # <a name="how-to-define-a-domain-specific-language"></a>Comment : définir un langage spécifique à un domaine
 Pour définir un langage spécifique à un domaine (DSL, Domain-Specific Language), vous devez créer une solution [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] à partir d'un modèle. Le composant principal de la solution est le diagramme de définition DSL, qui est stocké dans DslDefinition.dsl. La définition DSL définit les classes et les formes de la solution DSL. Après avoir modifié et ajouté à ces éléments, vous pouvez ajouter du code programme pour personnaliser la solution DSL plus en détail.  
   
- Si vous débutez avec DSL, nous vous recommandons de consulter via la **atelier des outils DSL**, que vous trouverez sur ce site : [création and Modeling SDK](http://go.microsoft.com/fwlink/?LinkID=186128)  
+ Si vous ne connaissez pas DSL, nous vous conseillons de travailler via la **Lab des outils DSL**, que vous pouvez trouver dans ce site : [Visualizaton and Modeling SDK](http://go.microsoft.com/fwlink/?LinkID=186128)  
 
 
 [!INCLUDE[modeling_sdk_info](includes/modeling_sdk_info.md)]
 
   
-##  <a name="a-nametemplatesa-selecting-a-template-solution"></a><a name="templates"></a>Sélection d’une Solution de modèle  
+##  <a name="templates"></a>Sélection d’une Solution de modèle  
  Pour définir une solution DSL, vous devez avoir installé les composants suivants :  
   
 |||  
@@ -57,11 +52,11 @@ Pour définir un langage spécifique à un domaine (DSL, Domain-Specific Languag
   
 #### <a name="to-create-a-dsl-solution"></a>Pour créer une solution DSL  
   
-1.  Créer une solution avec les **Domain-Specific Language** modèle, qui se trouve sous **autres Types de projet/extensibilité** dans les **nouveau projet** boîte de dialogue.  
+1.  Créer une solution avec le **Domain-Specific Language** modèle, qui peut être trouvée sous **autres Types de projets/extensibilité** dans les **nouveau projet** boîte de dialogue.  
   
      ![Boîte de dialogue DSL créer](../modeling/media/create_dsldialog.png "Create_DSLDialog")  
   
-     Lorsque vous cliquez sur **OK**, le **Domain-Specific Language Assistant** s’ouvre et affiche une liste des solutions de modèle DSL.  
+     Lorsque vous cliquez sur **OK**, le **Assistant de langage spécifique à un domaine** s’ouvre et affiche la liste des solutions de modèle DSL.  
   
 2.  Cliquez sur chaque modèle pour afficher une description. Choisissez la solution qui ressemble le plus à ce que vous voulez créer.  
   
@@ -69,15 +64,15 @@ Pour définir un langage spécifique à un domaine (DSL, Domain-Specific Languag
   
      Cliquez sur chaque exemple pour obtenir plus d'informations.  
   
-    -   Sélectionnez **flux de tâches** pour créer une solution DSL avec des couloirs. Les couloirs sont des partitions verticales ou horizontales du diagramme.  
+    -   Sélectionnez **tâche de flux** pour créer une DSL qui a des couloirs. Les couloirs sont des partitions verticales ou horizontales du diagramme.  
   
-    -   Sélectionnez **modèles de composants** pour créer une solution DSL avec des ports. Les ports sont de petites formes sur le bord d'une forme plus grande.  
+    -   Sélectionnez **composant modèles** pour créer une DSL qui possède des ports. Les ports sont de petites formes sur le bord d'une forme plus grande.  
   
-    -   Sélectionnez **des diagrammes de classes** pour définir une solution DSL avec des formes de compartiments. Les formes de compartiments contiennent des listes d'éléments.  
+    -   Sélectionnez **diagrammes de classes** pour définir une DSL qui contient des formes de compartiment. Les formes de compartiments contiennent des listes d'éléments.  
   
-    -   Sélectionnez **langage Minimal** dans d’autres cas, ou si vous avez des doutes.  
+    -   Sélectionnez **langage minimale** dans d’autres cas, ou si vous n’êtes pas sûr.  
   
-    -   Sélectionnez **concepteur WinForm Minimal** ou **Concepteur WPF Minimal** pour créer un langage DSL qui s’affiche sur une aire de Windows Forms ou WPF. Vous devrez écrire du code pour définir l'éditeur. Pour plus d’informations, consultez les rubriques suivantes :  
+    -   Sélectionnez **minimale WinForm concepteur** ou **minimale Concepteur WPF** pour créer une DSL est affichée sur une aire Windows Forms ou WPF. Vous devrez écrire du code pour définir l'éditeur. Pour plus d’informations, consultez les rubriques suivantes :  
   
          [Création d’un langage spécifique à un domaine basé sur Windows Forms](../modeling/creating-a-windows-forms-based-domain-specific-language.md)  
   
@@ -87,7 +82,7 @@ Pour définir un langage spécifique à un domaine (DSL, Domain-Specific Languag
   
     -   Choisissez une extension de nom de fichier qui n'est associée à aucune application sur votre ordinateur ou sur l'ordinateur où vous voulez installer la solution DSL. Par exemple, **docx** et **htm** serait inacceptable fichier extensions de nom.  
   
-    -   L'Assistant vous avertit si l'extension que vous avez entrée est utilisée actuellement comme DSL. Dans ce cas, utilisez une autre extension de nom de fichier. Vous pouvez aussi réinitialiser l'instance expérimentale du Kit SDK Visual Studio pour effacer les anciennes conceptions expérimentales. Cliquez sur **Démarrer**, cliquez sur **tous les programmes**, **Microsoft Visual Studio 2010 SDK**, **outils**, puis **réinitialiser l’instance de Microsoft Visual Studio 2010 expérimentale**.  
+    -   L'Assistant vous avertit si l'extension que vous avez entrée est utilisée actuellement comme DSL. Dans ce cas, utilisez une autre extension de nom de fichier. Vous pouvez aussi réinitialiser l'instance expérimentale du Kit SDK Visual Studio pour effacer les anciennes conceptions expérimentales. Cliquez sur **Démarrer**, cliquez sur **tous les programmes**, **Microsoft Visual Studio 2010 SDK**, **outils**, puis **réinitialiser Microsoft Visual Studio 2010 expérimental instance**.  
   
 4.  Vous pouvez ajuster les paramètres sur les autres pages ou conserver les valeurs par défaut.  
   
@@ -99,7 +94,7 @@ Pour définir un langage spécifique à un domaine (DSL, Domain-Specific Languag
   
  ![concepteur DSL](../modeling/media/dsl_designer.png "dsl_designer")  
   
- Cette solution définit un langage spécifique à un domaine. Pour plus d’informations, consultez [vue d’ensemble de l’Interface utilisateur des outils Domain-Specific Language](../modeling/overview-of-the-domain-specific-language-tools-user-interface.md).  
+ Cette solution définit un langage spécifique à un domaine. Pour plus d’informations, consultez [vue d’ensemble de l’Interface utilisateur des outils langage spécifique à un domaine](../modeling/overview-of-the-domain-specific-language-tools-user-interface.md).  
   
 ### <a name="test-the-solution"></a>Tester la solution  
  Le modèle de solution fournit une solution DSL opérationnelle, que vous pouvez modifier ou utiliser telle quelle.  
@@ -108,7 +103,7 @@ Pour définir un langage spécifique à un domaine (DSL, Domain-Specific Languag
   
  Dans la nouvelle instance de [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)], dans l'Explorateur de solutions, ouvrez l'exemple de fichier. Il s'ouvre sous forme de diagramme, avec une boîte à outils.  
   
- Si vous exécutez une solution que vous avez créé à partir de la **langage Minimal** modèle, votre instance expérimentale [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] ressemblera à l’exemple suivant :  
+ Si vous exécutez une solution que vous avez créé à partir de la **langage minimale** modèle, votre expérimentale [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] ressemblera à l’exemple suivant :  
   
  ![](../modeling/media/dsl_min.png "DSL_min")  
   
@@ -124,15 +119,15 @@ Pour définir un langage spécifique à un domaine (DSL, Domain-Specific Languag
   
  Il est particulièrement utile de conserver les classes suivantes :  
   
--   La classe racine apparaît au niveau de l’angle supérieur gauche du diagramme définition DSL, sous **Classes et relations**. Affectez-lui un nom différent de la solution DSL. Par exemple, DSL nommée **Bibliothèquemusicale** peut avoir une classe racine nommée **musique**.  
+-   La classe racine s’affiche à l’angle supérieur gauche du diagramme de définition DSL, sous **Classes et relations**. Affectez-lui un nom différent de la solution DSL. Par exemple, une DSL nommée **MusicLibrary** peut avoir une classe racine nommée **musique**.  
   
--   La classe de diagramme apparaît en bas à droite du diagramme de définition DSL, dans le **des éléments de diagramme** colonne. Vous devrez peut-être faire défiler la page vers la droite pour la voir. Il est généralement nommé *Votre_solution_dsl***diagramme**.  
+-   La classe de schéma s’affiche en bas à droite du diagramme de définition DSL, dans le **des éléments de diagramme** colonne. Vous devrez peut-être faire défiler la page vers la droite pour la voir. Il est généralement nommé *YourDsl***diagramme**.  
   
--   Si vous avez utilisé le **flux de tâches** modèle et que vous souhaitez créer des diagrammes avec des couloirs, conservez et renommez la classe de domaine Actor et la forme ActorSwimlane.  
+-   Si vous avez utilisé le **tâche de flux** modèle et que vous souhaitez créer des diagrammes avec couloirs, conserver et renommez la classe de domaine acteur et la forme de ActorSwimlane.  
   
  Supprimez ou renommez d'autres classes en fonction de vos exigences.  
   
-##  <a name="a-namepatternsa-patterns-for-defining-a-dsl"></a><a name="patterns"></a>Modèles pour la définition DSL  
+##  <a name="patterns"></a>Modèles de définition DSL  
  Nous vous recommandons de développer une solution DSL en ajoutant ou en ajustant une ou deux fonctionnalités à la fois. Ajoutez une fonctionnalité, exécutez la solution DSL et testez-la, puis ajoutez une ou deux fonctionnalités supplémentaires. Une solution DSL ordinaire peut être constituée des éléments suivants :  
   
 -   Une classe de domaine, la relation d'incorporation qui connecte l'élément au modèle, la forme requise pour afficher les éléments de cette classe sur le diagramme et l'outil d'élément qui permet aux utilisateurs de créer des éléments.  
@@ -146,7 +141,7 @@ Pour définir un langage spécifique à un domaine (DSL, Domain-Specific Languag
  Les sections suivantes expliquent comment construire les types de fonctionnalités DSL les plus utiles. Il existe de nombreux autres modèles avec lesquels vous pouvez construire une solution DSL, mais les modèles suivants sont les plus couramment utilisés.  
   
 > [!NOTE]
->  Après avoir ajouté une fonctionnalité, n’oubliez pas de cliquer sur **transformer tous les modèles** dans la barre d’outils de l’Explorateur de solutions avant de générer et exécuter votre solution DSL.  
+>  Après avoir ajouté une fonctionnalité, n’oubliez pas de cliquer sur **transformer tous les modèles** dans la barre d’outils de l’Explorateur de solutions avant de générer et exécuter votre DSL.  
   
  La figure suivante montre la partie classes et relations de la solution DSL qui est utilisée comme exemple dans cette rubrique.  
   
@@ -159,10 +154,10 @@ Pour définir un langage spécifique à un domaine (DSL, Domain-Specific Languag
 > [!NOTE]
 >  Le terme « modèle » fait référence à une instance de votre solution DSL créée par les utilisateurs. Elle est généralement affichée sous forme de diagramme. Cette rubrique traite du diagramme de définition DSL et des diagrammes de modèles qui apparaissent lors de l'utilisation de votre solution DSL.  
   
-##  <a name="a-nameclassesa-defining-domain-classes"></a><a name="classes"></a>Définition des Classes de domaine  
- Les classes de domaine représentent les concepts de votre solution DSL. Les instances sont *éléments de modèle*. Par exemple, dans un **Bibliothèquemusicale** DSL, vous pouvez avoir des Classes de domaine nommé **Album** et **chanson**.  
+##  <a name="classes"></a>Définition des Classes de domaine  
+ Les classes de domaine représentent les concepts de votre solution DSL. Les instances sont *éléments de modèle*. Par exemple dans un **MusicLibrary** DSL vous pouvez avoir des Classes de domaine nommé **Album** et **chanson**.  
   
- Pour créer une classe de domaine, vous pouvez faire glisser à partir de la **classe de domaine nommé** outil vers le diagramme, puis renommez la classe.  
+ Pour créer une classe de domaine, vous pouvez faire glisser à partir de la **classe de domaine nommé** outil au diagramme, puis renommez la classe.  
   
  Pour plus d’informations, consultez [propriétés des Classes de domaine](../modeling/properties-of-domain-classes.md).  
   
@@ -187,7 +182,7 @@ Pour définir un langage spécifique à un domaine (DSL, Domain-Specific Languag
   
  Dans l'exemple de bibliothèque musicale, les albums sont affichés sous forme de rectangles dans lesquels les titres des morceaux sont énumérés. Ainsi, le parent d'Album est la classe racine Music et le parent de Song est Album.  
   
- Pour créer une classe de domaine et son incorporation en même temps, cliquez sur le **relation d’incorporation** d’outils, puis cliquez sur la classe parente, puis cliquez sur une partie vide du diagramme.  
+ Pour créer une classe de domaine et de son incorporation en même temps, cliquez sur le **l’incorporation de relation** outil, puis cliquez sur la classe parente, puis cliquez sur une partie vide du diagramme.  
   
  Il n'est généralement pas nécessaire d'ajuster le nom de la relation d'incorporation et de ses rôles, car ils effectueront le suivi des noms de classes automatiquement.  
   
@@ -199,23 +194,23 @@ Pour définir un langage spécifique à un domaine (DSL, Domain-Specific Languag
 ### <a name="add-domain-properties-to-each-domain-class"></a>Ajouter des propriétés de domaine à chaque classe de domaine  
  Les propriétés de domaine contiennent des valeurs. En voici quelques exemples : Nom, Titre, Date de publication.  
   
- Cliquez sur **propriétés de domaine** dans la classe, appuyez sur entrée, puis tapez le nom d’une propriété. Le type par défaut d'une propriété de domaine est String. Si vous souhaitez modifier le type, sélectionnez la propriété de domaine et définir le **Type** dans les **propriétés** fenêtre. Si le type que vous souhaitez n’est pas dans la liste déroulante, consultez [ajoutant les Types de propriété](#addTypes).  
+ Cliquez sur **propriétés du domaine** dans la classe, appuyez sur entrée, puis tapez le nom d’une propriété. Le type par défaut d'une propriété de domaine est String. Si vous souhaitez modifier le type, sélectionnez la propriété de domaine et définir le **Type** dans les **propriétés** fenêtre. Si le type que vous souhaitez n’est pas dans la liste déroulante, consultez [ajoutant les Types de propriété](#addTypes).  
   
- **Définissez une propriété de nom de l’élément.** Sélectionnez une propriété de domaine qui peut être utilisée pour identifier les éléments dans l’Explorateur de langage. Par exemple, dans la classe de domaine Morceau, vous pourriez sélectionner la propriété de domaine Titre. Dans le **propriétés** , configurez **nom de l’élément est** à `true`.  
+ **Définir une propriété de nom de l’élément.** Sélectionnez une propriété de domaine qui peut être utilisée pour identifier des éléments dans l’Explorateur de langage. Par exemple, dans la classe de domaine Morceau, vous pourriez sélectionner la propriété de domaine Titre. Dans le **propriétés** , configurez **nom de l’élément est** à `true`.  
   
 ### <a name="create-derived-domain-classes"></a>Créer des classes de domaine dérivées  
  Si vous souhaitez qu'une classe de domaine ait des variantes qui héritent de ses propriétés et relations, créez des classes qui en dérivent. Par exemple, Album peut avoir des classes dérivées WMA et MP3.  
   
- Créez la classe dérivée à l’aide de la **classe de domaine** outil.  
+ Créer la classe dérivée à l’aide de la **classe de domaine** outil.  
   
  Cliquez sur le **héritage** d’outils, cliquez sur la classe dérivée, puis cliquez sur la classe de base.  
   
- Pensez à définir le **modificateur d’héritage** de la classe de base **abstraite**. Si vous pensez que vous pourriez avoir besoin d'instances de la classe de base, créez plutôt une classe dérivée distincte pour elles.  
+ Envisagez d’affecter le **modificateur d’héritage** de la classe de base **abstraite**. Si vous pensez que vous pourriez avoir besoin d'instances de la classe de base, créez plutôt une classe dérivée distincte pour elles.  
   
  Les classes dérivées héritent des propriétés et des rôles de leurs classes de base.  
   
 ### <a name="tidy-the-dsl-definition-diagram"></a>Mettre en ordre le diagramme de définition DSL  
- Quand vous ajoutez des relations, certaines de vos classes apparaissent à plusieurs emplacements. Pour réduire le nombre d’apparitions et élargir le diagramme, cliquez droit sur la classe cible d’une relation, puis cliquez sur **déplacer l’arborescence ici**. Pour obtenir l’effet inverse, la classe cible d’une relation et un clic avec le bouton droit **arborescence fractionnée**. Si ces commandes de menu ne sont pas visibles, assurez-vous que seule la classe de domaine est sélectionnée.  
+ Quand vous ajoutez des relations, certaines de vos classes apparaissent à plusieurs emplacements. Pour réduire le nombre d’apparitions et que le diagramme plus large, avec le bouton droit de la classe cible d’une relation, puis cliquez sur **mettre l’arborescence ici**. Pour obtenir l’effet inverse, la classe cible d’une relation et d’un clic avec le bouton droit **fractionnement arborescence**. Si ces commandes de menu ne sont pas visibles, assurez-vous que seule la classe de domaine est sélectionnée.  
   
  Utilisez Ctrl+Haut et Ctrl+Bas pour déplacer des classes de domaine et des classes de forme.  
   
@@ -223,15 +218,15 @@ Pour définir un langage spécifique à un domaine (DSL, Domain-Specific Languag
   
 ##### <a name="to-test-the-new-domain-classes"></a>Pour tester les nouvelles classes de domaine  
   
-1.  **Cliquez sur Transformer tous les modèles** dans la barre d’outils de l’Explorateur de solutions, pour générer le code concepteur DSL. Vous pouvez automatiser cette étape. Pour plus d’informations, consultez [comment automatiser transformer tous les modèles](http://msdn.microsoft.com/en-us/b63cfe20-fe5e-47cc-9506-59b29bca768a).  
+1.  **Cliquez sur Transformer tous les modèles** dans la barre d’outils de l’Explorateur de solutions, pour générer le code de concepteur DSL. Vous pouvez automatiser cette étape. Pour plus d’informations, consultez [comment automatiser transformer tous les modèles](http://msdn.microsoft.com/en-us/b63cfe20-fe5e-47cc-9506-59b29bca768a).  
   
-2.  **Générez et exécutez la solution DSL.** Appuyez sur F5 ou CTRL + F5 pour exécuter une nouvelle instance de [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] en mode expérimental. Dans l'instance expérimentale de [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)], ouvrez ou créez un fichier ayant l'extension de nom de fichier de votre solution DSL.  
+2.  **Générez et exécutez la DSL.** Appuyez sur F5 ou CTRL + F5 pour exécuter une nouvelle instance de [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] en mode expérimental. Dans l'instance expérimentale de [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)], ouvrez ou créez un fichier ayant l'extension de nom de fichier de votre solution DSL.  
   
-3.  **Ouvrez l’Explorateur.** À la partie du diagramme se trouve la fenêtre Explorateur de langage, qui est généralement nommée *Votre_langage* Explorer. Si cette fenêtre n'est pas visible, elle est peut-être sous un onglet sous l'Explorateur de solutions. Si vous ne trouvez pas, sur le **affichage** menu, pointez sur **autres fenêtres**, puis cliquez sur *Votre_langage***Explorer**.  
+3.  **Ouvrez l’Explorateur.** À la partie du diagramme est la fenêtre d’Explorateur de langage, qui est généralement nommée *YourLanguage* Explorer. Si cette fenêtre n'est pas visible, elle est peut-être sous un onglet sous l'Explorateur de solutions. Si vous ne trouvez pas, sur le **vue** menu, pointez sur **autres fenêtres**, puis cliquez sur *YourLanguage***Explorer**.  
   
      Votre explorateur présente une arborescence du modèle.  
   
-4.  **Créer de nouveaux éléments.** Cliquez sur le nœud racine en haut, puis cliquez sur **nouveau***Votre_classe*.  
+4.  **Créer de nouveaux éléments.** Cliquez sur le noeud racine en haut, puis cliquez sur **nouveau***YourClass*.  
   
      Une nouvelle instance de votre classe apparaît dans votre explorateur de langage.  
   
@@ -241,28 +236,28 @@ Pour définir un langage spécifique à un domaine (DSL, Domain-Specific Languag
   
 7.  **Enregistrez le fichier, fermez-le et rouvrez-le**. Toutes les instances que vous avez créées doivent être visibles dans l'explorateur, une fois que vous avez développé les nœuds.  
   
-##  <a name="a-nameshapesa-defining-shapes-on-the-diagram"></a><a name="shapes"></a>Définition de formes sur le diagramme  
+##  <a name="shapes"></a>Définir des formes sur le diagramme  
  Vous pouvez définir des classes d'éléments qui apparaissent sur un diagramme sous forme de rectangles, d'ellipses ou d'icônes.  
   
 #### <a name="to-define-a-class-of-elements-that-appear-as-shapes-on-a-diagram"></a>Pour définir une classe d'éléments qui apparaissent en tant que formes sur un diagramme  
   
-1.  **Définir et tester une classe de domaine comme décrit dans**[définition des Classes de domaine](#classes) **.  **  
+1.  **Définir et tester une classe de domaine, comme décrit dans**[définition des Classes de domaine](#classes) **.**   
   
     -   Le parent de la classe doit être la classe racine. Autrement dit, il doit y avoir une relation d'incorporation entre la classe racine et la nouvelle classe de domaine.  
   
-    -   Si votre diagramme comporte des couloirs, le parent peut être la classe de domaine qui est mappée à un couloir. Avant de poursuivre cette procédure, consultez [définition DSL avec des couloirs](#swimlanes).  
+    -   Si votre diagramme comporte des couloirs, le parent peut être la classe de domaine qui est mappée à un couloir. Avant de poursuivre cette procédure, consultez [définition DSL qui a des couloirs](#swimlanes).  
   
 2.  **Ajoutez une classe de forme** pour représenter les éléments sur le diagramme de modèle. Faites glisser de l'un des outils suivants sur le diagramme de définition DSL :  
   
-    -   **Forme géométrique** fournit un rectangle ou une ellipse.  
+    -   **Forme de géométrie** fournit un rectangle ou une ellipse.  
   
-    -   **Forme d’image** affiche une image que vous fournissez.  
+    -   **Forme de l’image** affiche une image que vous fournissez.  
   
     -   **Forme de compartiment** est un rectangle qui contient une ou plusieurs listes d’éléments.  
   
      Renommez la classe de forme, qui apparaîtra du côté droit du diagramme de définition DSL sous Formes et connecteurs.  
   
-3.  **Définir une image, si vous avez créé une forme d’image**.  
+3.  **Définir une image, si vous avez créé une forme de l’image**.  
   
     1.  Créez un fichier image de n'importe quelle taille. Les formats BMP, JPEG, GIF et EMF sont pris en charge.  
   
@@ -274,21 +269,21 @@ Pour définir un langage spécifique à un domaine (DSL, Domain-Specific Languag
   
     5.  Dans le **sélectionner une Image** boîte de dialogue, cliquez sur le menu déroulant sous **nom de fichier**, sélectionnez l’image.  
   
-4.  **Ajoutez des décorateurs de texte à la forme, pour afficher les propriétés du domaine.**  
+4.  **Ajouter des éléments décoratifs de texte à la forme, pour afficher les propriétés du domaine.**  
   
      Pour afficher le nom ou le titre de l'élément de modèle, vous aurez probablement besoin d'au moins un décorateur de texte.  
   
-     Cliquez sur l’en-tête de la classe de forme, pointez sur **ajouter**, puis cliquez sur **décorateur de texte**. Définissez le nom de décorateur, puis dans la fenêtre Propriétés, définissez son **Position**.  
+     Cliquez sur l’en-tête de la classe de forme, pointez sur **ajouter**, puis cliquez sur **texte décoratif**. Définissez le nom de l’élément décoratif, dans l’ensemble de la fenêtre Propriétés son **Position**.  
   
-5.  **Connectez chaque forme avec un mappage d’élément de schéma pour la classe de domaine qu’il doit afficher**.  
+5.  **Connectez chaque forme avec un mappage d’élément de diagramme à la classe de domaine, il doit afficher**.  
   
-     Cliquez sur le **mappage d’élément de schéma** d’outils, cliquez sur la classe de domaine, puis sur la classe shape.  
+     Cliquez sur le **diagramme sont mappés** outil, puis cliquez sur la classe de domaine, puis cliquez sur la classe de forme.  
   
-6.  **Mapper les propriétés aux décorateurs de texte.**  
+6.  **Mapper les propriétés pour les éléments décoratifs de texte.**  
   
     1.  Sélectionnez la ligne grise entre la classe de domaine et la forme de classe qui représente le mappage d'élément de diagramme.  
   
-    2.  Dans le **détails DSL** fenêtre, cliquez sur le **mappages de décorateurs** onglet. Si vous ne voyez pas le **détails DSL** fenêtre, dans le **affichage** menu, pointez sur **autres fenêtres** , puis **détails DSL**. Il est souvent nécessaire d'agrandir cette fenêtre vers le haut pour voir tout son contenu.  
+    2.  Dans le **détails DSL** fenêtre, cliquez sur le **Decorator Maps** onglet. Si vous ne voyez pas le **détails DSL** fenêtre, dans le **vue** menu, pointez sur **autres fenêtres** puis cliquez sur **détails DSL**. Il est souvent nécessaire d'agrandir cette fenêtre vers le haut pour voir tout son contenu.  
   
     3.  Sélectionnez le nom d'un décorateur. Sous **afficher la propriété**, sélectionnez le nom d’une propriété de la classe de domaine. Répétez cette opération pour chaque décorateur.  
   
@@ -296,48 +291,48 @@ Pour définir un langage spécifique à un domaine (DSL, Domain-Specific Languag
   
     4.  Vérifiez qu'une coche apparaît à côté de chaque nom de décorateur.  
   
-     ![Fenêtre Détails DSL et des mappages de forme](../modeling/media/dsldetailswindow.png "DslDetailsWindow")  
+     ![Fenêtre de mappages des formes et des détails DSL](../modeling/media/dsldetailswindow.png "DslDetailsWindow")  
   
 7.  **Rendre un élément de boîte à outils pour créer des éléments de la classe de domaine.**  
   
-    1.  Dans **Explorateur DSL**, développez le **éditeur** nœud et tous ses sous-nœuds.  
+    1.  Dans **Explorateur DSL**, développez le **éditeur** nœud et ses sous-nœuds.  
   
-    2.  Cliquez sur le nœud sous **onglets de boîte à outils** qui porte le même nom que votre solution DSL, par exemple Bibliothèquemusicale. Cliquez sur **ajouter un outil d’élément**.  
+    2.  Cliquez sur le nœud sous **onglets de boîte à outils** qui a le même nom que votre DSL, par exemple MusicLibrary. Cliquez sur **Ajouter élément outil**.  
   
         > [!NOTE]
-        >  Si vous cliquez sur le **outils** nœud, vous ne verrez pas **ajouter un outil d’élément**. Cliquez plutôt sur le nœud juste au-dessus.  
+        >  Si vous cliquez sur le **outils** nœud, vous ne verrez pas **ajouter un élément outil**. Cliquez plutôt sur le nœud juste au-dessus.  
   
     3.  Dans la fenêtre Propriétés avec le nouvel outil d’élément sélectionné, définissez **classe** à la classe de domaine que vous avez récemment ajouté.  
   
     4.  Définissez **légende** et **info-bulle**.  
   
-    5.  Définissez **icône Boîte à outils** sur une icône qui apparaît dans la boîte à outils. Vous pouvez la définir sur une nouvelle icône ou sur une icône déjà utilisée pour un autre outil.  
+    5.  Définissez **icône Boîte à outils** sur une icône s’affiche dans la boîte à outils. Vous pouvez la définir sur une nouvelle icône ou sur une icône déjà utilisée pour un autre outil.  
   
          Pour créer une nouvelle icône, ouvrez Dsl\Resources dans **l’Explorateur de solutions**. Copiez et collez l'un des fichiers BMP d'outil d'élément existants. Renommez la copie collée, puis double-cliquez dessus pour la modifier.  
   
-         Revenez au diagramme de définition DSL, sélectionnez l’outil et dans la fenêtre Propriétés, cliquez sur **[...] ** dans **icône Boîte à outils**. Dans le **sélectionner l’image Bitmap** boîte de dialogue, sélectionnez votre. Fichier BMP dans le menu contextuel.  
+         Revenir au schéma de définition DSL, sélectionnez l’outil et dans la fenêtre Propriétés, cliquez sur **[...]**  dans **icône Boîte à outils**. Dans le **sélectionner une Bitmap** boîte de dialogue, sélectionnez votre. Fichier BMP à partir du menu de la liste déroulante.  
   
- Pour plus d’informations, consultez [propriétés des formes géométriques](../modeling/properties-of-geometry-shapes.md) et [propriétés des formes d’images](../modeling/properties-of-image-shapes.md).  
+ Pour plus d’informations, consultez [propriétés des formes de géométrie](../modeling/properties-of-geometry-shapes.md) et [propriétés des formes d’Image](../modeling/properties-of-image-shapes.md).  
   
 #### <a name="to-test-shapes"></a>Pour tester des formes  
   
-1.  **Cliquez sur Transformer tous les modèles** dans la barre d’outils de l’Explorateur de solutions, pour générer le code concepteur DSL.  
+1.  **Cliquez sur Transformer tous les modèles** dans la barre d’outils de l’Explorateur de solutions, pour générer le code de concepteur DSL.  
   
-2.  **Générez et exécutez la solution DSL.** Appuyez sur F5 ou CTRL + F5 pour exécuter une nouvelle instance de [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] en mode expérimental. Dans l'instance expérimentale de [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)], ouvrez ou créez un fichier ayant l'extension de nom de fichier de votre solution DSL.  
+2.  **Générez et exécutez la DSL.** Appuyez sur F5 ou CTRL + F5 pour exécuter une nouvelle instance de [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] en mode expérimental. Dans l'instance expérimentale de [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)], ouvrez ou créez un fichier ayant l'extension de nom de fichier de votre solution DSL.  
   
-3.  **Vérifiez que les outils d’éléments apparaissent dans la boîte à outils.**  
+3.  **Vérifiez que les outils de l’élément apparaissent dans la boîte à outils.**  
   
-4.  **Créer des formes** en faisant glisser un outil vers le diagramme de modèle.  
+4.  **Créer des formes** en faisant glisser à partir d’un outil sur le diagramme de modèle.  
   
-5.  **Vérifiez que chaque décorateur de texte s’affiche,** et qui :  
+5.  **Vérifiez que chaque élément décoratif de texte s’affiche,** et qui :  
   
-    1.  Vous pouvez le modifier, sauf si vous avez défini le **Is UI Read Only** indicateur sur la propriété de domaine.  
+    1.  Vous pouvez le modifier, sauf si vous avez défini le **est l’interface utilisateur en lecture seule** indicateur sur la propriété de domaine.  
   
     2.  quand vous modifiez la propriété dans la fenêtre Propriétés ou dans le décorateur, l'autre vue est mise à jour.  
   
- Après avoir testé une forme, vous souhaiterez peut-être ajuster certaines de ses propriétés et ajouter certaines fonctionnalités avancées. Pour plus d’informations, consultez [personnalisation et extension d’un langage spécifique au domaine](../modeling/customizing-and-extending-a-domain-specific-language.md).  
+ Après avoir testé une forme, vous souhaiterez peut-être ajuster certaines de ses propriétés et ajouter certaines fonctionnalités avancées. Pour plus d’informations, consultez [personnalisation et l’extension d’un langage spécifique à un domaine](../modeling/customizing-and-extending-a-domain-specific-language.md).  
   
-##  <a name="a-namereferencesa-defining-reference-relationships"></a><a name="references"></a>Définition des relations de référence  
+##  <a name="references"></a>Définition des relations de référence  
  Vous pouvez définir une relation de référence entre n'importe quelle classe de domaine source et n'importe quelle classe de domaine cible. Les relations de référence sont généralement affichées sur un diagramme sous forme de connecteurs, qui sont des lignes entre des formes.  
   
  Par exemple, si Albums et Artistes sont affichés en tant que formes sur votre diagramme, vous pourriez définir une relation nommée ArtistesApparusSurAlbums qui relie des Artistes aux Albums sur lesquels ils ont travaillé. Voir l'exemple sur la figure.  
@@ -353,28 +348,28 @@ Pour définir un langage spécifique à un domaine (DSL, Domain-Specific Languag
   
  **Pensez à renommer les rôles**. Par exemple, dans une relation entre Personne et Personne, vous pourriez remplacer les noms par défaut par Parents et Enfants, Responsable et Subordonnés, Enseignant et Élève, et ainsi de suite.  
   
- **Ajustez les multiplicités de chaque rôle**, si nécessaire. Si vous souhaitez que chaque Personne ait au plus un Responsable, affectez la valeur 0..1 à la multiplicité qui apparaît sous l'étiquette Responsable sur le diagramme.  
+ **Ajuster les multiplicités de chaque rôle**, s’il est nécessaire. Si vous souhaitez que chaque Personne ait au plus un Responsable, affectez la valeur 0..1 à la multiplicité qui apparaît sous l'étiquette Responsable sur le diagramme.  
   
- **Ajouter des propriétés de domaine à la relation.** Dans l’illustration, la relation Artist-Album a une propriété de rôle.  
+ **Ajouter des propriétés de domaine à la relation.** Dans l’illustration, la relation artiste Album a une propriété du rôle.  
   
- **Définissez la propriété Autoriser les doublons de la relation,** si plus d’un lien de la même classe peut exister entre la même paire d’éléments de modèle. Par exemple, vous pourriez autoriser un Enseignant à enseigner plusieurs Sujets au même Étudiant.  
+ **Définissez la propriété autorise les doublons de la relation,** si plus d’un lien de la même classe peut exister entre la même paire d’éléments de modèle. Par exemple, vous pourriez autoriser un Enseignant à enseigner plusieurs Sujets au même Étudiant.  
   
- ![Mappages de connecteurs de forme](../modeling/media/music_connector.png "Music_Connector")  
+ ![Mettre en forme les mappages pour les connecteurs](../modeling/media/music_connector.png "Music_Connector")  
   
  Pour plus d’informations, consultez [propriétés des relations de domaine](../modeling/properties-of-domain-relationships.md) et [propriétés des rôles de domaine](../modeling/properties-of-domain-roles.md).  
   
 ### <a name="define-a-connector-to-display-the-relationship"></a>Définir un connecteur pour afficher la relation  
  Un connecteur affiche une ligne entre deux formes sur le diagramme de modèle.  
   
- Faites glisser le **connecteur** outil sur le diagramme de définition DSL.  
+ Faites glisser le **connecteur** outil sur le schéma de définition DSL.  
   
- Ajoutez des décorateurs de texte si vous voulez afficher des étiquettes sur le connecteur. Définissez leurs positions. Pour permettre à l’utilisateur de déplacer un décorateur de texte, définissez son **Is Moveable** propriété.  
+ Ajoutez des décorateurs de texte si vous voulez afficher des étiquettes sur le connecteur. Définissez leurs positions. Pour permettre à l’utilisateur de déplacer un élément décoratif de texte, définissez son **est un mobile** propriété.  
   
- Utilisez le **mappage d’élément de diagramme** outil pour lier le connecteur à la relation de référence.  
+ Utilisez le **diagramme sont mappés** outil pour lier le connecteur à la relation de référence.  
   
- Le mappage d’élément de schéma sélectionné, ouvrez le **détails DSL** fenêtre, puis ouvrez le **mappages de décorateurs** onglet.  
+ Avec le mappage d’élément de schéma sélectionné, ouvrez le **détails DSL** fenêtre, puis ouvrez le **Decorator Maps** onglet.  
   
- Sélectionnez chaque **décorateur** et **afficher la propriété** à la propriété de domaine correct.  
+ Sélectionnez chaque **Decorator** et **afficher la propriété** à la propriété de domaine correct.  
   
  Assurez-vous qu’une coche apparaît en regard de chaque élément dans le **décorateurs** liste.  
   
@@ -387,88 +382,88 @@ Pour définir un langage spécifique à un domaine (DSL, Domain-Specific Languag
   
 -   Définir le **légende** et **info-bulle**.  
   
--   Cliquez sur **Générateur de connexion** et sélectionnez le générateur approprié pour la nouvelle relation.  
+-   Cliquez sur **connexion Générateur** et sélectionnez le générateur approprié pour la nouvelle relation.  
   
 -   Définissez **icône Boîte à outils** sur l’icône que vous souhaitez voir apparaître dans la boîte à outils. Vous pouvez la définir sur une nouvelle icône ou sur une icône déjà utilisée pour un autre outil.  
   
      Pour créer une nouvelle icône, ouvrez Dsl\Resources dans **l’Explorateur de solutions**. Copiez et collez l'un des fichiers BMP d'outil d'élément existants. Renommez la copie collée, puis double-cliquez dessus pour la modifier.  
   
-     Revenez au diagramme de définition DSL, sélectionnez l’outil et dans la fenêtre Propriétés, cliquez sur **[...] ** dans **icône Boîte à outils**. Dans le **sélectionner l’image Bitmap** boîte de dialogue, sélectionnez votre. Fichier BMP dans le menu contextuel.  
+     Revenir au schéma de définition DSL, sélectionnez l’outil et dans la fenêtre Propriétés, cliquez sur **[...]**  dans **icône Boîte à outils**. Dans le **sélectionner une Bitmap** boîte de dialogue, sélectionnez votre. Fichier BMP à partir du menu de la liste déroulante.  
   
 ##### <a name="to-test-a-reference-relationship-and-connector"></a>Pour tester un connecteur et une relation de référence  
   
-1.  **Cliquez sur Transformer tous les modèles** dans la barre d’outils de l’Explorateur de solutions, pour générer le code concepteur DSL.  
+1.  **Cliquez sur Transformer tous les modèles** dans la barre d’outils de l’Explorateur de solutions, pour générer le code de concepteur DSL.  
   
-2.  **Générez et exécutez la solution DSL.** Appuyez sur F5 ou CTRL + F5 pour exécuter une nouvelle instance de [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] en mode expérimental. Dans l'instance expérimentale de [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)], ouvrez ou créez un fichier ayant l'extension de nom de fichier de votre solution DSL.  
+2.  **Générez et exécutez la DSL.** Appuyez sur F5 ou CTRL + F5 pour exécuter une nouvelle instance de [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] en mode expérimental. Dans l'instance expérimentale de [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)], ouvrez ou créez un fichier ayant l'extension de nom de fichier de votre solution DSL.  
   
 3.  **Vérifiez que l’outil de connexion apparaît dans la boîte à outils.**  
   
-4.  **Créer des formes** en faisant glisser un outil vers le diagramme de modèle.  
+4.  **Créer des formes** en faisant glisser à partir d’un outil sur le diagramme de modèle.  
   
 5.  **Créer des connexions** entre les formes. Cliquez sur l'outil de connecteur, cliquez sur une forme, puis sur une autre forme.  
   
-6.  **Vérifiez que vous ne peut pas créer des connexions entre des classes inappropriées.** Par exemple, si votre relation est entre Albums et artistes, vérifiez que vous ne pouvez pas lier artistes à artistes.  
+6.  **Vérifiez que vous ne peut pas créer des connexions entre des classes inappropriés.** Par exemple, si votre relation est établie entre les artistes et les Albums, vérifiez que vous ne pouvez pas lier artistes pour artistes.  
   
 7.  **Vérifiez que les multiplicités sont correctes. Par exemple, vérifiez que personne ne peut pas se connecter à plusieurs gestionnaires.**  
   
-8.  **Vérifiez que chaque décorateur de texte s’affiche,** et qui :  
+8.  **Vérifiez que chaque élément décoratif de texte s’affiche,** et qui :  
   
-    1.  Vous pouvez le modifier, sauf si vous avez défini le **Is UI Read Only** indicateur sur la propriété de domaine.  
+    1.  Vous pouvez le modifier, sauf si vous avez défini le **est l’interface utilisateur en lecture seule** indicateur sur la propriété de domaine.  
   
     2.  quand vous modifiez la propriété dans la fenêtre Propriétés ou dans le décorateur, l'autre vue est mise à jour.  
   
- Après avoir testé un connecteur, vous souhaiterez peut-être ajuster certaines de ses propriétés et ajouter certaines fonctionnalités avancées. Pour plus d’informations, consultez [personnalisation et extension d’un langage spécifique au domaine](../modeling/customizing-and-extending-a-domain-specific-language.md).  
+ Après avoir testé un connecteur, vous souhaiterez peut-être ajuster certaines de ses propriétés et ajouter certaines fonctionnalités avancées. Pour plus d’informations, consultez [personnalisation et l’extension d’un langage spécifique à un domaine](../modeling/customizing-and-extending-a-domain-specific-language.md).  
   
-##  <a name="a-namecompartmentsa-defining-shapes-that-contain-lists-compartment-shapes"></a><a name="compartments"></a>Définition de formes qui contiennent des listes : formes de compartiments  
+##  <a name="compartments"></a>Définition des formes qui contiennent des listes : formes de compartiments  
  Une forme de compartiment contient une ou plusieurs listes d'éléments. Par exemple, dans une solution DSL de bibliothèque musicale, vous pourriez utiliser des formes de compartiments pour représenter des albums. Dans chaque album figure une liste de morceaux.  
   
  ![Forme de compartiment](../modeling/media/compartmentshape.png "CompartmentShape")  
   
  Dans une définition DSL, le moyen le plus simple d'obtenir cet effet consiste à définir une classe de domaine pour le conteneur et une classe de domaine pour chaque liste. La classe de conteneur est mappée à la forme de compartiment.  
   
- ![Mappage de forme](../modeling/media/music_mapcomp.png "Music_MapComp")  
+ ![Carte de formes](../modeling/media/music_mapcomp.png "Music_MapComp")  
   
- Pour plus d’informations, consultez [propriétés des formes de compartiments](../modeling/properties-of-compartment-shapes.md).  
+ Pour plus d’informations, consultez [propriétés des formes de compartiment](../modeling/properties-of-compartment-shapes.md).  
   
 #### <a name="to-define-a-compartment-shape"></a>Pour définir une forme de compartiment  
   
-1.  **Créer la classe de conteneur du domaine**. Cliquez sur le **relation d’incorporation** d’outils, cliquez sur la classe racine du modèle, puis cliquez sur une partie vide du diagramme de définition DSL. Cela crée la classe domaine nommée Album dans la figure de l'exemple.  
+1.  **Créer la classe de conteneur du domaine**. Cliquez sur le **l’incorporation de relation** d’outils, cliquez sur la classe racine du modèle, puis cliquez sur une partie vide du diagramme de définition DSL. Cela crée la classe domaine nommée Album dans la figure de l'exemple.  
   
      En guise d'alternative, au lieu d'incorporer dans la classe racine, vous pouvez incorporer le conteneur dans une classe de domaine mappée à un couloir.  
   
-     Ajouter une propriété de domaine telles que le nom de la classe et définissez son **nom de l’élément est** indicateur dans la fenêtre Propriétés.  
+     Ajouter une propriété de domaine comme nom de la classe et définir son **nom de l’élément est** indicateur dans la fenêtre Propriétés.  
   
-2.  **Créer la classe de domaine liste élément**. Cliquez sur le **relation d’incorporation** d’outils, cliquez sur la classe de conteneur (Album) et puis cliquez sur une partie vide du diagramme. Cela crée la classe domaine nommée Song dans la figure de l'exemple.  
+2.  **Créer la classe de domaine de liste élément**. Cliquez sur le **l’incorporation de relation** d’outils, cliquez sur la classe de conteneur (Album) et puis cliquez sur une partie vide du diagramme. Cela crée la classe domaine nommée Song dans la figure de l'exemple.  
   
-     Ajoutez une propriété de domaine comme titre de la classe et définissez son **nom de l’élément est** indicateur.  
+     Ajouter une propriété de domaine comme titre de la classe et définir son **nom de l’élément est** indicateur.  
   
      Ajoutez d'autres propriétés de domaine.  
   
      Ajoutez une autre classe de domaine d'élément de liste pour chaque liste que vous souhaitez afficher.  
   
-3.  **Pour combiner plusieurs types d’élément dans la liste**, créer des classes qui héritent de la classe de liste. Rendre la classe de liste abstraite en définissant son **modificateur d’héritage**.  
+3.  **Permet de combiner plusieurs types d’élément dans la liste**, créer des classes qui héritent de la classe de liste. Rendre la classe de liste abstraite en définissant son **modificateur d’héritage**.  
   
      Par exemple, si vous souhaitez que la musique classique soit triée par compositeur plutôt que par artiste, vous pourriez créer deux sous-classes de Morceau, Morceau_Classique et Morceau_Non_Classique.  
   
-4.  **Créez la forme de compartiment**. Faites glisser à partir de la **forme de compartiment** outil sur le diagramme de définition DSL.  
+4.  **Créer la forme de compartiment**. Faites glisser à partir de la **forme de compartiment** outil sur le schéma de définition DSL.  
   
      Ajoutez un décorateur de texte et définissez son nom.  
   
      Ajoutez un compartiment et définissez son nom.  
   
-5.  Pour que l’utilisateur de masquer des compartiments de la liste, avec le bouton droit de la classe de forme, pointez sur **ajouter**, puis cliquez sur **développer/réduire le décorateur**. Dans la fenêtre Propriétés, définissez la position du décorateur.  
+5.  Pour masquer les compartiments de liste, avec le bouton droit de la classe de forme de compartiment permettent à l’utilisateur, pointez sur **ajouter**, puis cliquez sur **développer/réduire Decorator**. Dans la fenêtre Propriétés, définissez la position du décorateur.  
   
-6.  Cliquez sur le **mappage d’élément de schéma** d’outils, cliquez sur la classe de conteneur du domaine, puis cliquez sur la forme de compartiment.  
+6.  Cliquez sur le **diagramme sont mappés** d’outils, cliquez sur la classe de conteneur du domaine, puis cliquez sur la forme de compartiment.  
   
 7.  Sélectionnez le lien de mappage d'élément de diagramme entre la classe de domaine et la forme. Dans le **détails DSL** fenêtre :  
   
-    1.  Cliquez sur le **décorateurs** onglet. Cliquez sur le nom du décorateur, puis sélectionnez l’élément approprié sous **propriété d’affichage**. Vérifiez qu'une coche apparaît à côté du nom du décorateur.  
+    1.  Cliquez sur le **décorateurs** onglet. Cliquez sur le nom de l’élément décoratif, puis sélectionnez l’élément approprié sous **propriété d’affichage**. Vérifiez qu'une coche apparaît à côté du nom du décorateur.  
   
-    2.  Cliquez sur le **mappages de compartiments** onglet.  
+    2.  Cliquez sur le **compartiment Maps** onglet.  
   
          Cliquez sur le nom du compartiment.  
   
-         Sous **chemin d’accès du regroupement affichés éléments**, accédez à la classe d’élément de liste (Song). Cliquez sur la flèche déroulante pour utiliser l'outil de navigation.  
+         Sous **chemin de collection d’éléments affichées**, accédez à la classe d’élément de liste (chanson). Cliquez sur la flèche déroulante pour utiliser l'outil de navigation.  
   
          Sous **propriété d’affichage**, sélectionnez la propriété qui doit être affichée dans la liste. Dans l'exemple, il s'agit de Title.  
   
@@ -479,28 +474,28 @@ Pour définir un langage spécifique à un domaine (DSL, Domain-Specific Languag
   
 1.  **Rendre un élément de boîte à outils pour créer des éléments de la classe de domaine.**  
   
-2.  Dans **Explorateur DSL**, développez le **éditeur** nœud et tous ses sous-nœuds.  
+2.  Dans **Explorateur DSL**, développez le **éditeur** nœud et ses sous-nœuds.  
   
-3.  Cliquez sur le nœud sous **onglets de boîte à outils** qui porte le même nom que votre solution DSL, par exemple Bibliothèquemusicale. Cliquez sur **ajouter un outil d’élément**.  
+3.  Cliquez sur le nœud sous **onglets de boîte à outils** qui a le même nom que votre DSL, par exemple MusicLibrary. Cliquez sur **Ajouter élément outil**.  
   
     > [!NOTE]
-    >  Si vous cliquez sur le **outils** nœud, vous ne verrez pas **ajouter un outil d’élément**. Cliquez plutôt sur le nœud juste au-dessus.  
+    >  Si vous cliquez sur le **outils** nœud, vous ne verrez pas **ajouter un élément outil**. Cliquez plutôt sur le nœud juste au-dessus.  
   
 4.  Dans la fenêtre Propriétés avec le nouvel outil d’élément sélectionné, définissez **classe** à la classe de domaine que vous avez récemment ajouté.  
   
 5.  Définissez **légende** et **info-bulle**.  
   
-6.  Définissez **icône Boîte à outils** sur une icône qui apparaît dans la boîte à outils. Vous pouvez la définir sur une nouvelle icône ou sur une icône déjà utilisée pour un autre outil.  
+6.  Définissez **icône Boîte à outils** sur une icône s’affiche dans la boîte à outils. Vous pouvez la définir sur une nouvelle icône ou sur une icône déjà utilisée pour un autre outil.  
   
      Pour créer une nouvelle icône, ouvrez Dsl\Resources dans **l’Explorateur de solutions**. Copiez et collez l'un des fichiers .BMP d'outil d'élément existants. Renommez la copie collée, puis double-cliquez dessus pour la modifier.  
   
-     Revenez au diagramme de définition DSL, sélectionnez l’outil et dans la fenêtre Propriétés, cliquez sur **[...] ** dans **icône Boîte à outils**. Dans le **sélectionner l’image Bitmap** boîte de dialogue, sélectionnez votre fichier BMP dans le menu déroulant.  
+     Revenir au schéma de définition DSL, sélectionnez l’outil et dans la fenêtre Propriétés, cliquez sur **[...]**  dans **icône Boîte à outils**. Dans le **sélectionner une Bitmap** boîte de dialogue, sélectionnez votre fichier BMP à partir du menu de la liste déroulante.  
   
 #### <a name="to-test-a-compartment-shape"></a>Pour tester une forme de compartiment  
   
-1.  **Cliquez sur Transformer tous les modèles** dans la barre d’outils de l’Explorateur de solutions, pour générer le code concepteur DSL.  
+1.  **Cliquez sur Transformer tous les modèles** dans la barre d’outils de l’Explorateur de solutions, pour générer le code de concepteur DSL.  
   
-2.  **Générez et exécutez la solution DSL.** Appuyez sur F5 ou CTRL + F5 pour exécuter une nouvelle instance de [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] en mode expérimental. Dans l'instance expérimentale de [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)], ouvrez ou créez un fichier ayant l'extension de nom de fichier de votre solution DSL.  
+2.  **Générez et exécutez la DSL.** Appuyez sur F5 ou CTRL + F5 pour exécuter une nouvelle instance de [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] en mode expérimental. Dans l'instance expérimentale de [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)], ouvrez ou créez un fichier ayant l'extension de nom de fichier de votre solution DSL.  
   
 3.  **Vérifiez que l’outil s’affiche dans la boîte à outils.**  
   
@@ -518,7 +513,7 @@ Pour définir un langage spécifique à un domaine (DSL, Domain-Specific Languag
   
  ![Explorateur généré de DSL](../modeling/media/music_explorer.png "Music_Explorer")  
   
- Après avoir testé une forme de compartiment, vous souhaiterez peut-être ajuster certaines de ses propriétés et ajouter certaines fonctionnalités avancées. Pour plus d’informations, consultez [personnalisation et extension d’un langage spécifique au domaine](../modeling/customizing-and-extending-a-domain-specific-language.md).  
+ Après avoir testé une forme de compartiment, vous souhaiterez peut-être ajuster certaines de ses propriétés et ajouter certaines fonctionnalités avancées. Pour plus d’informations, consultez [personnalisation et l’extension d’un langage spécifique à un domaine](../modeling/customizing-and-extending-a-domain-specific-language.md).  
   
 ### <a name="displaying-a-reference-link-in-a-compartment"></a>Affichage d'un lien de référence dans un compartiment  
  En général, un élément que vous affichez dans un compartiment est un enfant de l'élément qui représenté par la forme de compartiment. Mais parfois, vous souhaitez afficher un élément qui y est lié avec une relation de référence.  
@@ -533,26 +528,26 @@ Pour définir un langage spécifique à un domaine (DSL, Domain-Specific Languag
   
 ##### <a name="to-display-a-reference-link-in-a-compartment"></a>Pour afficher un lien de référence dans un compartiment  
   
-1.  **Ajoutez un compartiment à la forme de compartiment**. Dans le diagramme de définition DSL, cliquez sur la classe de forme, pointez sur **ajouter**, puis cliquez sur **compartiment**.  
+1.  **Ajouter un compartiment pour la forme de compartiment**. Dans le diagramme de définition DSL, la classe de forme de compartiment avec le bouton droit, pointez sur **ajouter**, puis cliquez sur **compartiment**.  
   
-2.  Définir **chemin d’accès du regroupement affichés éléments** pour accéder au lien, au lieu de son élément cible. Cliquez sur le menu déroulant et utilisez l'arborescence pour sélectionner la relation de référence au lieu de sa cible. Dans l’exemple, la relation est **ArtistAppearedOnAlbums**.  
+2.  Définissez **chemin de collection d’éléments affichées** pour accéder à la liaison, au lieu de son élément cible. Cliquez sur le menu déroulant et utilisez l'arborescence pour sélectionner la relation de référence au lieu de sa cible. Dans l’exemple, la relation est **ArtistAppearedOnAlbums**.  
   
-3.  Définissez **chemin d’accès à la propriété d’affichage** pour accéder à partir du lien à l’élément cible. Dans l’exemple, il s’agit de **artiste**.  
+3.  Définissez **chemin d’accès à la propriété d’affichage** pour accéder à partir du lien vers l’élément cible. Dans l’exemple, il s’agit de **artiste**.  
   
 4.  Définissez **propriété d’affichage** à la propriété appropriée de l’élément cible, par exemple **nom**.  
   
-5.  **Transformer tous les modèles**, générer et exécuter la solution DSL et ouvrir un modèle de test.  
+5.  **Transformer tous les modèles**, générer et exécuter la DSL et ouvrez un modèle de test.  
   
 6.  Dans le diagramme de modèle, créez les classes de forme appropriées, définissez leurs noms, puis créez un lien entre elles. Dans la forme de compartiment, les noms des éléments liés doivent apparaître.  
   
 7.  Sélectionnez le lien ou l'élément dans la forme de compartiment. Le lien et l'élément doivent tous deux apparaître.  
   
-##  <a name="a-nameportsa-defining-ports-on-the-boundary-of-another-shape"></a><a name="ports"></a>Définition des Ports sur la limite d’une autre forme  
+##  <a name="ports"></a>Définition des Ports sur la limite d’une autre forme  
  Un port est une forme qui se trouve à la limite d'une autre forme.  
   
  Les ports peuvent aussi servir à fournir un point de connexion fixe sur une autre forme, sur lequel l'utilisateur peut dessiner des connecteurs. Dans ce cas, vous pouvez rendre la forme de port transparente.  
   
- Pour obtenir un exemple qui utilise les ports, sélectionnez le **diagramme de composant** modèle lorsque vous créez une solution DSL. Cet exemple montre les points principaux à prendre en compte lors de la définition des ports :  
+ Pour voir un exemple qui utilise les ports, sélectionnez le **diagramme de composant** modèle lorsque vous créez une nouvelle solution DSL. Cet exemple montre les points principaux à prendre en compte lors de la définition des ports :  
   
 -   Il existe une classe de domaine qui représente le conteneur des ports, `Component`.  
   
@@ -562,15 +557,15 @@ Pour définir un langage spécifique à un domaine (DSL, Domain-Specific Languag
   
 -   Si vous souhaitez que différents types de ports soient combinés sur le même conteneur, vous pouvez créer des sous-classes de la classe de domaine de port. Dans l'exemple, `InPort` et `OutPort` héritent de `ComponentPort`.  
   
--   La classe de domaine de conteneur peut être mappée à n'importe quel type de forme. Dans l'exemple, il s'agit de `ComponentShape`. Pour plus d’informations, consultez [définition des formes](#shapes).  
+-   La classe de domaine de conteneur peut être mappée à n'importe quel type de forme. Dans l'exemple, il s'agit de `ComponentShape`. Pour plus d’informations, consultez [définissant les formes](#shapes).  
   
 -   Les classes de domaine de port sont mappées à des formes de ports. Vous pouvez soit mapper les classes dérivées à des classes de formes de ports distinctes, soit mapper la classe de base à une classe de forme de port.  
   
- Autres égards, formes port se comportent comme décrit dans [définition des formes](#shapes).  
+ Dans les autres égards, formes port se comportent comme décrit dans [définissant les formes](#shapes).  
   
- Pour plus d’informations, consultez [propriétés des formes de Port](../modeling/properties-of-port-shapes.md).  
+ Pour plus d’informations, consultez [propriétés des formes Port](../modeling/properties-of-port-shapes.md).  
   
-##  <a name="a-nameswimlanesa-defining-a-dsl-that-has-swimlanes"></a><a name="swimlanes"></a>Définition DSL avec des couloirs  
+##  <a name="swimlanes"></a>Définition DSL qui a des couloirs  
  Les couloirs sont des partitions horizontales ou verticales d'un diagramme. Chaque couloir correspond à un élément de modèle. Votre définition DSL nécessite une classe de domaine pour les éléments de couloirs.  
   
  Le meilleur moyen de créer une solution DSL avec des couloirs consiste à créer une solution DSL et à choisir le modèle de solution Flux de tâches. Dans la définition DSL, la classe Acteur est la classe de domaine mappée au couloir. Renommez celle-ci et les autres classes en fonction de votre projet.  
@@ -579,34 +574,34 @@ Pour définir un langage spécifique à un domaine (DSL, Domain-Specific Languag
   
  Pour ajouter une classe qui sera affichée en tant que forme indépendamment des couloirs, créez une relation d'incorporation entre la classe racine et votre nouvelle classe. Les utilisateurs pourront placer ces formes n'importe où sur le diagramme, y compris de chaque côté des limites des couloirs et en dehors des couloirs. Dans le modèle de solution Flux de tâches, Comment est un enfant de la classe racine.  
   
- Pour plus d’informations, consultez [propriétés des couloirs](../modeling/properties-of-swimlanes.md).  
+ Pour plus d’informations, consultez [propriétés de couloirs](../modeling/properties-of-swimlanes.md).  
   
-##  <a name="a-nameaddtypesa-adding-property-types"></a><a name="addTypes"></a>Ajout de Types de propriété  
+##  <a name="addTypes"></a>Ajout de Types de propriété  
   
 ### <a name="domain-enumerations-and-literals"></a>Littéraux et énumérations de domaine  
  Une énumération de domaine est un type avec plusieurs valeurs littérales.  
   
- Pour ajouter une énumération de domaine, cliquez sur la racine du modèle dans le **Explorateur DSL** , puis **ajouter une nouvelle énumération de domaine**. L’élément s’affiche dans le **Explorateur DSL** sous le **Types de domaine** nœud. Cet élément n'apparaît pas sur le diagramme.  
+ Pour ajouter une énumération de domaine, cliquez sur la racine du modèle dans le **Explorateur DSL** puis cliquez sur **ajouter une nouvelle énumération de domaine**. L’élément s’affiche dans le **Explorateur DSL** sous le **Types de domaine** nœud. Cet élément n'apparaît pas sur le diagramme.  
   
- Pour ajouter des littéraux d’énumération pour l’énumération de domaine, cliquez sur l’énumération de domaine dans le **Explorateur DSL** , puis **Ajouter nouveau littéral d’énumération**.  
+ Pour ajouter des littéraux d’énumération à l’énumération de domaine, cliquez sur l’énumération de domaine dans le **Explorateur DSL** puis cliquez sur **ajouter nouvelle énumération littéral**.  
   
- Par défaut, une propriété qui a un type d'énumération ne peut être définie qu'à une seule valeur de l'énumération à la fois. Si vous souhaitez que les utilisateurs et les programmeurs puissent définir n’importe quelle combinaison de valeurs - un « champ de bits - » définir le **IsFlags** propriété de l’énumération.  
+ Par défaut, une propriété qui a un type d'énumération ne peut être définie qu'à une seule valeur de l'énumération à la fois. Si vous souhaitez que les utilisateurs et les programmeurs pour pouvoir définir n’importe quelle combinaison de valeurs - « champ de bits - » définir le **IsFlags** propriété de l’énumération.  
   
 ### <a name="external-types"></a>Types externes  
  Lorsque vous définissez le type d’une propriété de domaine, si vous ne trouvez pas le type souhaité dans le **Type** la liste déroulante, vous pouvez ajouter un type externe. Par exemple, vous pouvez ajouter la **System.Drawing.Color** type dans la liste.  
   
- Pour ajouter un type, avec le bouton droit de la racine du modèle dans l’Explorateur DSL, puis cliquez sur **ajouter un nouveau Type externe**. Dans la fenêtre Propriétés, définissez le nom sur **couleur** et l’espace de noms **System.Drawing**. Ce type apparaît maintenant dans l’Explorateur DSL sous **Types de domaines**. Vous pouvez le choisir chaque fois que vous définissez le type d'une propriété de domaine.  
+ Pour ajouter un type, avec le bouton droit de la racine du modèle dans l’Explorateur de DSL, puis cliquez sur **ajouter un nouveau Type externe**. Dans la fenêtre Propriétés, nommez le **couleur** et l’espace de noms **System.Drawing**. Ce type s’affiche désormais dans l’Explorateur DSL sous **Types de domaine**. Vous pouvez le choisir chaque fois que vous définissez le type d'une propriété de domaine.  
   
-##  <a name="a-namecustoma-customizing-the-dsl"></a><a name="custom"></a>Personnalisation de la solution DSL  
+##  <a name="custom"></a>Personnalisation du DSL  
  À l'aide des techniques décrites dans cette rubrique, vous pouvez rapidement créer une solution DSL avec une notation visuelle, un formulaire XML lisible et les outils de base nécessaires pour générer du code et d'autres artefacts.  
   
  Il existe deux méthodes pour étendre la définition DSL :  
   
 1.  Affinez la solution DSL en utilisant davantage de fonctionnalités de la définition DSL. Par exemple, vous pouvez créer un outil connecteur capable de créer plusieurs types de connecteurs et vous pouvez contrôler les règles selon lesquelles la suppression d'un élément supprime également les éléments associés. Ces techniques nécessitent la plupart du temps la définition de valeurs dans la définition DSL et certaines nécessitent quelques lignes de code de programme.  
   
-     Pour plus d’informations, consultez [personnalisation et extension d’un langage spécifique au domaine](../modeling/customizing-and-extending-a-domain-specific-language.md).  
+     Pour plus d’informations, consultez [personnalisation et l’extension d’un langage spécifique à un domaine](../modeling/customizing-and-extending-a-domain-specific-language.md).  
   
-2.  Étendez vos outils de modélisation à l'aide de code de programme pour obtenir des effets avancés. Par exemple, vous pouvez créer des commandes de menu qui peuvent modifier le modèle et vous pouvez créer des outils qui intègrent plusieurs solutions DSL. Le Kit VMSDK a été conçu spécifiquement pour simplifier l'intégration à vos extensions avec le code généré à partir de la définition DSL.  Pour plus d’informations, consultez [écriture de Code pour personnaliser un langage spécifique au domaine](../modeling/writing-code-to-customise-a-domain-specific-language.md).  
+2.  Étendez vos outils de modélisation à l'aide de code de programme pour obtenir des effets avancés. Par exemple, vous pouvez créer des commandes de menu qui peuvent modifier le modèle et vous pouvez créer des outils qui intègrent plusieurs solutions DSL. Le Kit VMSDK a été conçu spécifiquement pour simplifier l'intégration à vos extensions avec le code généré à partir de la définition DSL.  Pour plus d’informations, consultez [écriture de Code pour personnaliser un langage spécifique à un domaine](../modeling/writing-code-to-customise-a-domain-specific-language.md).  
   
 ### <a name="changing-the-dsl-definition"></a>Modification de la définition DSL  
  Quand vous créez un élément dans une définition DSL, de nombreuses valeurs par défaut sont définies automatiquement. Une fois ces valeurs définies, vous pouvez les modifier. Cela simplifie le développement des solutions DSL tout en permettant d'effectuer de puissantes personnalisations.  
@@ -617,25 +612,24 @@ Pour définir un langage spécifique à un domaine (DSL, Domain-Specific Languag
   
  Voir aussi [Comment : modifier le Namespace d’un langage spécifique à un domaine](../modeling/how-to-change-the-namespace-of-a-domain-specific-language.md).  
   
-##  <a name="a-nametroublea-troubleshooting"></a><a name="trouble"></a>Résolution des problèmes  
- Le tableau suivant mentionne certains des problèmes les plus courants qui peuvent être rencontrés lors de la conception d'une solution DSL, avec quelques suggestions de solution. Obtenir des conseils supplémentaires sont disponibles sur le [Forum d’extension des outils de visualisation](http://go.microsoft.com/fwlink/?LinkId=186074).  
+##  <a name="trouble"></a>Résolution des problèmes  
+ Le tableau suivant mentionne certains des problèmes les plus courants qui peuvent être rencontrés lors de la conception d'une solution DSL, avec quelques suggestions de solution. Obtenir des conseils supplémentaires sont disponibles sur le [Forum extensibilité générale des outils visualisation](http://go.microsoft.com/fwlink/?LinkId=186074).  
   
 |Problème|Suggestion|  
 |-------------|----------------|  
-|Les modifications que j'ai apportées dans le fichier de définition DSL n'ont aucun effet.|Cliquez sur **transformer tous les modèles** dans la barre d’outils au-dessus de l’Explorateur de solutions, puis régénérer la solution.|  
-|Les formes indiquent le nom d'un décorateur au lieu de la valeur de propriété.|Configurez le mappage de décorateur. Sur le diagramme de définition DSL, cliquez sur le mappage d'élément de diagramme, c'est-à-dire la ligne grise entre la classe de domaine et la classe de forme.<br /><br /> Ouvrez la **détails DSL** fenêtre. Si vous ne voyez pas, dans le menu Affichage, pointez sur **autres fenêtres**, puis cliquez sur **détails DSL**.<br /><br /> Cliquez sur le **mappages de décorateurs** onglet. Sélectionnez le nom du décorateur. Vérifiez que la case correspondante est cochée. Sous **afficher la propriété**, sélectionnez le nom d’une propriété de domaine.<br /><br /> Pour plus d’informations, consultez [formes du diagramme](#shapes).|  
+|Les modifications que j'ai apportées dans le fichier de définition DSL n'ont aucun effet.|Cliquez sur **transformer tous les modèles** dans la barre d’outils au-dessus de l’Explorateur de solutions, puis reconstruisez la solution.|  
+|Les formes indiquent le nom d'un décorateur au lieu de la valeur de propriété.|Configurez le mappage de décorateur. Sur le diagramme de définition DSL, cliquez sur le mappage d'élément de diagramme, c'est-à-dire la ligne grise entre la classe de domaine et la classe de forme.<br /><br /> Ouvrez le **détails DSL** fenêtre. Si vous ne voyez pas, dans le menu Affichage, pointez sur **autres fenêtres**, puis cliquez sur **détails DSL**.<br /><br /> Cliquez sur le **Decorator Maps** onglet. Sélectionnez le nom du décorateur. Vérifiez que la case correspondante est cochée. Sous **afficher la propriété**, sélectionnez le nom d’une propriété de domaine.<br /><br /> Pour plus d’informations, consultez [formes du diagramme](#shapes).|  
 |Dans l'Explorateur DSL, je ne parviens pas à ajouter de collection. Par exemple, quand je clique avec le bouton droit sur Outils, il n'y a pas de commande « Ajouter un outil » dans le menu.<br /><br /> Dans l'explorateur de ma solution DSL, je ne parviens pas à ajouter d'élément à une liste.|Cliquez avec le bouton droit sur l'élément au-dessus du nœud concerné. Quand vous souhaitez ajouter un élément à une liste, la commande Ajouter ne se trouve pas dans le nœud de la liste, mais dans son propriétaire.|  
 |J'ai créé une classe de domaine, mais je ne parviens pas à créer d'instances dans l'explorateur de langage.|Chaque classe de domaine, à l'exception de la racine, doit être la cible d'une relation d'incorporation.|  
 |Dans l'explorateur de ma solution DSL, les éléments sont affichés uniquement avec leur nom de type.|Dans la définition DSL, sélectionnez une propriété de domaine de la classe et dans les propriétés de fenêtre, définissez **nom de l’élément est** sur true.|  
-|Ma solution DSL s'ouvre toujours dans l'éditeur XML.|Cela peut être dû à une erreur lors de la lecture du fichier. Toutefois, même après avoir corrigé cette erreur, vous devez réinitialiser de manière explicite l'éditeur pour qu'il soit votre concepteur DSL.<br /><br /> Cliquez sur l’élément de projet, cliquez sur **ouvrir avec** et sélectionnez *Votre_langage***concepteur (par défaut)**.|  
+|Ma solution DSL s'ouvre toujours dans l'éditeur XML.|Cela peut être dû à une erreur lors de la lecture du fichier. Toutefois, même après avoir corrigé cette erreur, vous devez réinitialiser de manière explicite l'éditeur pour qu'il soit votre concepteur DSL.<br /><br /> Cliquez sur l’élément de projet, cliquez sur **ouvrir avec** et sélectionnez *YourLanguage***concepteur (par défaut)**.|  
 |La boîte à outils de ma solution DSL n'apparaît pas après que j'ai modifié les noms des assemblys.|Examiner et mettre à jour **DslPackage\GeneratedCode\Package.tt** pour plus d’informations, consultez [Comment : modifier le Namespace d’un langage spécifique à un domaine](../modeling/how-to-change-the-namespace-of-a-domain-specific-language.md).|  
-|La boîte à outils de ma solution DSL n'apparaît pas, mais je n'ai pas modifié le nom de l'assembly.<br /><br /> Ou une boîte de message apparaît et signale l'échec du chargement d'une extension.|Réinitialisez l'instance expérimentale et regénérez votre solution.<br /><br /> 1.  Dans les fenêtres de menu Démarrer, sous **tous les programmes**, développez [!INCLUDE[vssdk_current_long](../misc/includes/vssdk_current_long_md.md)], puis **outils**, puis cliquez sur **réinitialiser l’Instance expérimentale Microsoft Visual Studio**.<br />2.  Sur le [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] **Build** menu, cliquez sur **régénérer la Solution**.|  
+|La boîte à outils de ma solution DSL n'apparaît pas, mais je n'ai pas modifié le nom de l'assembly.<br /><br /> Ou une boîte de message apparaît et signale l'échec du chargement d'une extension.|Réinitialisez l'instance expérimentale et regénérez votre solution.<br /><br /> 1.  Dans les fenêtres de menu Démarrer, sous **tous les programmes**, développez [!INCLUDE[vssdk_current_long](../misc/includes/vssdk_current_long_md.md)], puis **outils**, puis cliquez sur **réinitialiser l’Instance expérimentale Microsoft Visual Studio**.<br />2.  Sur le [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] **générer** menu, cliquez sur **régénérer la Solution**.|  
   
 ## <a name="see-also"></a>Voir aussi  
- [Mise en route avec les langages spécifiques à un domaine](../modeling/getting-started-with-domain-specific-languages.md)   
+ [Prise en main de langages spécifiques à un domaine](../modeling/getting-started-with-domain-specific-languages.md)   
  [Création d’un langage spécifique à un domaine Windows Forms](../modeling/creating-a-windows-forms-based-domain-specific-language.md)   
  [Création d’un langage spécifique à un domaine basé sur WPF](../modeling/creating-a-wpf-based-domain-specific-language.md)
 
 [!INCLUDE[modeling_sdk_info](includes/modeling_sdk_info.md)]
-
 

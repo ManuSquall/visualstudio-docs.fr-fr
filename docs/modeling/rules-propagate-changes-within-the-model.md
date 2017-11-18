@@ -10,30 +10,15 @@ helpviewer_keywords:
 - Domain-Specific Language, programming domain models
 - Domain-Specific Language, rules
 ms.assetid: 1690a38a-c8f5-4bc6-aab9-015771ec6647
-caps.latest.revision: 30
+caps.latest.revision: "30"
 author: alancameronwills
 ms.author: awills
 manager: douge
-translation.priority.mt:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
+ms.openlocfilehash: 8ec9540fb68ecb09dc592f9b05a56291c2a8c80d
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
 ms.translationtype: MT
-ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
-ms.openlocfilehash: cbdf006fecb00139eda95cf3e9f2726430888ce7
-ms.contentlocale: fr-fr
-ms.lasthandoff: 09/26/2017
-
+ms.contentlocale: fr-FR
+ms.lasthandoff: 10/27/2017
 ---
 # <a name="rules-propagate-changes-within-the-model"></a>Propagation de modifications dans le modèle par des règles
 Vous pouvez créer une règle de magasin pour propager une modification d’un élément à un autre dans Visualization and Modeling SDK (VMSDK). En cas de modification à un élément dans le magasin, les règles sont planifiées pour être exécutée, généralement lorsque la transaction externe est validée. Il existe différents types de règles pour différents types d’événements, tels que l’ajout d’un élément, ou de le supprimer. Vous pouvez attacher des règles à des types spécifiques d’éléments, des formes ou des diagrammes. De nombreuses fonctionnalités intégrées sont définies par des règles : par exemple, règles de vous assurer qu’un diagramme est mis à jour lorsque le modèle change. Vous pouvez personnaliser votre langage spécifique à un domaine en ajoutant vos propres règles.  

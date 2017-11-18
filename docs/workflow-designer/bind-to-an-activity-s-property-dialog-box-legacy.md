@@ -1,56 +1,39 @@
 ---
-title: Bind to an Activity&#39;s Property Dialog Box (Legacy) | Microsoft Docs
+title: "Lier à une activité &#39; boîte de dialogue propriété (hérité) | Documents Microsoft"
 ms.custom: 
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
 ms.tgt_pltfrm: 
 ms.topic: reference
-f1_keywords:
-- System.Workflow.ComponentModel.Design.ActivityBindForm.UI
-helpviewer_keywords:
-- Bind to an Activity's Property dialog box
+f1_keywords: System.Workflow.ComponentModel.Design.ActivityBindForm.UI
+helpviewer_keywords: Bind to an Activity's Property dialog box
 ms.assetid: 19ebb207-e0a9-4642-8f5f-a5e31395c683
-caps.latest.revision: 5
+caps.latest.revision: "5"
 author: ErikRe
 ms.author: erikre
 manager: erikre
-translation.priority.ht:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
-ms.translationtype: HT
-ms.sourcegitcommit: 21a413a3e2d17d77fd83d5109587a96f323a0511
-ms.openlocfilehash: 728d4399735732037ff6b8b903367ddb4a54b0d8
-ms.contentlocale: fr-fr
-ms.lasthandoff: 08/30/2017
-
+ms.openlocfilehash: ffb172b551018ae7352edb7dd9fed44824a794ce
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.translationtype: MT
+ms.contentlocale: fr-FR
+ms.lasthandoff: 10/27/2017
 ---
-# <a name="bind-to-an-activity39s-property-dialog-box-legacy"></a>Bind to an Activity&#39;s Property Dialog Box (Legacy)
-This topic describes how use the **Bind to an Activity's Property** dialog box in the legacy [!INCLUDE[wfd1](../workflow-designer/includes/wfd1_md.md)]. Use the legacy [!INCLUDE[wfd2](../workflow-designer/includes/wfd2_md.md)] when you need to target either the [!INCLUDE[netfx35_long](../workflow-designer/includes/netfx35_long_md.md)] or the [!INCLUDE[vstecwinfx](../workflow-designer/includes/vstecwinfx_md.md)].  
+# <a name="bind-to-an-activity39s-property-dialog-box-legacy"></a>Lier à une activité &#39; boîte de dialogue propriété (hérité)
+Cette rubrique décrit comment utiliser le **lier à la propriété d’une activité** boîte de dialogue de l’héritage [!INCLUDE[wfd1](../workflow-designer/includes/wfd1_md.md)]. Utilisez le [!INCLUDE[wfd2](../workflow-designer/includes/wfd2_md.md)] hérité lorsque vous devez cibler le [!INCLUDE[netfx35_long](../workflow-designer/includes/netfx35_long_md.md)] ou le [!INCLUDE[vstecwinfx](../workflow-designer/includes/vstecwinfx_md.md)].  
   
- An instance type of dependency property can be bound to another activity's public property or event. For more information about activity binding, see [Using Dependency Properties](http://go.microsoft.com/fwlink?LinkID=65007).  
+ Vous pouvez lier un type d'instance de propriété de dépendance à la propriété publique ou à un événement d'une autre activité. Pour plus d’informations sur la liaison d’activité, consultez [à l’aide des propriétés de dépendance](http://go.microsoft.com/fwlink?LinkID=65007).  
   
- You select a property to bind to using the **Bind to an Activity's Property** dialog box. You open this dialog box by clicking the ellipsis **[...]** at the end of the selected property's text box in the **Properties** window, or by clicking the blue exclamation mark icon that appears next to the property name in the property browser.  
+ Vous sélectionnez une propriété à lier à l’aide de la **lier à la propriété d’une activité** boîte de dialogue. Vous ouvrez cette boîte de dialogue en cliquant sur les points de suspension **[...]**  à la fin de la zone de texte de la propriété sélectionnée dans le **propriétés** fenêtre, ou en cliquant sur l’icône de point d’exclamation bleu s’affiche en regard du nom de propriété dans l’Explorateur de propriétés.  
   
- The following table describes the user interface (UI) elements of the **Bind to an Activity's Property** dialog box.  
+ Le tableau suivant décrit les éléments d’interface utilisateur utilisateur de la **lier à la propriété d’une activité** boîte de dialogue.  
   
-|UI Element|Description|  
+|Élément d'interface utilisateur|Description|  
 |----------------|-----------------|  
-|**Bind to an existing member**|Select a member that you want to bind to in the tree view pane. The pane below the tree view displays a message that indicates if the member is a valid type to bind to or not. Click **OK** to bind to the selected valid member.|  
-|**Bind to a new member**|Create a new member field or property to bind to. Enter a **New Member Name**. Choose whether you want to create a dependency property or a public field by selecting **Create Field** or **Create Property**. Click **OK** to create the new member.|  
+|**Lier à un membre existant**|Sélectionnez un membre avec lequel vous souhaitez établir une liaison dans le volet de l’arborescence. Le volet situé au-dessous de l’arborescence affiche un message qui indique si le membre est un type valide pour la liaison. Cliquez sur **OK** à lier à un membre valid sélectionné.|  
+|**Lier à un nouveau membre**|Créez un nouveau membre ou une nouvelle propriété à lier. Entrez un **nom du nouveau membre**. Indiquez si vous voulez créer une propriété de dépendance ou un champ public en sélectionnant **créer un champ** ou **créer une propriété**. Cliquez sur **OK** pour créer le nouveau membre.|  
   
-## <a name="see-also"></a>See Also  
- [Using Activity Properties](http://go.microsoft.com/fwlink?LinkID=65013)   
- [Using Dependency Properties](http://go.microsoft.com/fwlink?LinkID=65007)   
- [Legacy Designer for Windows Workflow Foundation UI Help](../workflow-designer/legacy-designer-for-windows-workflow-foundation-ui-help.md)
+## <a name="see-also"></a>Voir aussi  
+ [À l’aide des propriétés de l’activité](http://go.microsoft.com/fwlink?LinkID=65013)   
+ [À l’aide des propriétés de dépendance](http://go.microsoft.com/fwlink?LinkID=65007)   
+ [Aide de l’interface utilisateur du concepteur hérité pour Windows Workflow Foundation](../workflow-designer/legacy-designer-for-windows-workflow-foundation-ui-help.md)

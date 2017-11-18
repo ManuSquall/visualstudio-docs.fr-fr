@@ -1,44 +1,45 @@
 ---
-title: "&lt;trustInfo&gt;, &#233;l&#233;ment (application ClickOnce) | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-deployment"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "urn:schemas-microsoft-com:asm.v2#IPermission"
-  - "urn:schemas-microsoft-com:asm.v2#PermissionSet"
-  - "urn:schemas-microsoft-com:asm.v2#assemblyRequest"
-  - "urn:schemas-microsoft-com:asm.v2#trustInfo"
-  - "urn:schemas-microsoft-com:asm.v2#defaultAssemblyRequest"
-  - "urn:schemas-microsoft-com:asm.v2#security"
-dev_langs: 
-  - "VB"
-  - "CSharp"
-  - "C++"
-helpviewer_keywords: 
-  - "manifestes [ClickOnce], élément trustInfo"
-  - "<trustInfo>, élément [manifeste d’application ClickOnce]"
+title: "&lt;trustInfo&gt; élément (déploiement ClickOnce) | Documents Microsoft"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-deployment
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords:
+- urn:schemas-microsoft-com:asm.v2#IPermission
+- urn:schemas-microsoft-com:asm.v2#PermissionSet
+- urn:schemas-microsoft-com:asm.v2#assemblyRequest
+- urn:schemas-microsoft-com:asm.v2#trustInfo
+- urn:schemas-microsoft-com:asm.v2#defaultAssemblyRequest
+- urn:schemas-microsoft-com:asm.v2#security
+dev_langs:
+- VB
+- CSharp
+- C++
+helpviewer_keywords:
+- manifests [ClickOnce], trustInfo element
+- <trustInfo> element [ClickOnce application manifest]
 ms.assetid: 8a813a74-e158-4308-be78-565937f6af83
-caps.latest.revision: 16
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
-caps.handback.revision: 16
+caps.latest.revision: "16"
+author: stevehoag
+ms.author: shoag
+manager: wpickett
+ms.openlocfilehash: 645d4252dd13f4e4629d1ab636ad8b85142242c2
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.translationtype: MT
+ms.contentlocale: fr-FR
+ms.lasthandoff: 10/27/2017
 ---
-# &lt;trustInfo&gt;, &#233;l&#233;ment (application ClickOnce)
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
-
+# <a name="lttrustinfogt-element-clickonce-application"></a>&lt;trustInfo&gt; élément (déploiement ClickOnce)
 Décrit les autorisations de sécurité minimales dont doit disposer l’application pour qu’elle s’exécute sur l’ordinateur client.  
   
-## Syntaxe  
+## <a name="syntax"></a>Syntaxe  
   
 ```  
   
-<trustInfo>  
+      <trustInfo>  
    <security>  
       <applicationRequestMinimum>  
          <PermissionSet  
@@ -66,35 +67,34 @@ Décrit les autorisations de sécurité minimales dont doit disposer l’applica
       </requestedPrivileges>  
    </security>  
 </trustInfo>  
-  
 ```  
   
-## Éléments et attributs  
- L’élément `trustInfo` est obligatoire et se trouve dans l’espace de noms `asm.v2`. Il n’a aucun attribut et contient les éléments suivants.  
+## <a name="elements-and-attributes"></a>Éléments et attributs  
+ L’élément `trustInfo` est obligatoire et se trouve dans l’espace de noms `asm.v2` . Il n’a aucun attribut et contient les éléments suivants.  
   
-## security  
- Obligatoire. Cet élément est un enfant de l’élément `trustInfo`. Il contient l’élément `applicationRequestMinimum` et n’a pas d’attributs.  
+## <a name="security"></a>security  
+ Obligatoire. Cet élément est un enfant de l’élément `trustInfo` . Il contient l’élément `applicationRequestMinimum` et n’a pas d’attributs.  
   
-## applicationRequestMinimum  
- Obligatoire. Cet élément est un enfant de l’élément `security` et contient les éléments `PermissionSet`, `assemblyRequest` et `defaultAssemblyRequest`. Cet élément n’a pas d’attributs.  
+## <a name="applicationrequestminimum"></a>applicationRequestMinimum  
+ Obligatoire. Cet élément est un enfant de l’élément `security` et contient les éléments `PermissionSet`, `assemblyRequest`et `defaultAssemblyRequest`. Cet élément n’a pas d’attributs.  
   
-## PermissionSet  
- Obligatoire. Cet élément est un enfant de l’élément `applicationRequestMinimum` et contient l’élément `IPermission`. Cet élément comprend les attributs suivants.  
+## <a name="permissionset"></a>PermissionSet  
+ Obligatoire. Cet élément est un enfant de l’élément `applicationRequestMinimum` et contient l’élément `IPermission` . Cet élément comprend les attributs suivants.  
   
 -   `ID`  
   
-     Obligatoire. Identifie le jeu d’autorisations. Cet attribut peut avoir n’importe quelle valeur. L’ID est référencé dans les attributs `defaultAssemblyRequest` et `assemblyRequest`.  
+     Obligatoire. Identifie le jeu d’autorisations. Cet attribut peut avoir n’importe quelle valeur. L’ID est référencé dans les attributs `defaultAssemblyRequest` et `assemblyRequest` .  
   
 -   `version`  
   
      Obligatoire. Identifie la version de l’autorisation. En général, cette valeur est égale à `1`.  
   
-## IPermission  
- Facultatif. Cet élément est un enfant de l’élément `PermissionSet`. L’élément `IPermission` identifie entièrement une classe d’autorisation dans le [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)]. L’élément `IPermission` comprend les attributs suivants, mais il peut en avoir d’autres qui correspondent aux propriétés de la classe d’autorisation. Pour trouver la syntaxe d’une autorisation spécifique, consultez les exemples figurant dans le fichier Security.config.  
+## <a name="ipermission"></a>IPermission  
+ Facultatif. Cet élément est un enfant de l’élément `PermissionSet` . L’élément `IPermission` identifie entièrement une classe d’autorisation dans le [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)]. L’élément `IPermission` comprend les attributs suivants, mais il peut en avoir d’autres qui correspondent aux propriétés de la classe d’autorisation. Pour trouver la syntaxe d’une autorisation spécifique, consultez les exemples figurant dans le fichier Security.config.  
   
 -   `class`  
   
-     Obligatoire. Identifie la classe d’autorisation par son nom fort. Par exemple, le code suivant identifie le type `FileDialogPermission`.  
+     Obligatoire. Identifie la classe d’autorisation par son nom fort. Par exemple, le code suivant identifie le type `FileDialogPermission` .  
   
      `System.Security.Permissions.FileDialogPermission, mscorlib, Version=1.2.3300.0, Culture=neutral, PublicKeyToken=b77a5c561934e089`  
   
@@ -104,7 +104,7 @@ Décrit les autorisations de sécurité minimales dont doit disposer l’applica
   
 -   `Unrestricted`  
   
-     Obligatoire. Indique si l’application doit se voir accorder cette autorisation sans aucune limite. Si cet attribut a la valeur `true`, l’autorisation est accordée à l’application de manière inconditionnelle. Si cet attribut a la valeur `false`, ou s’il n’est pas défini, des restrictions sont imposées à l’application en fonction d’attributs spécifiques à l’autorisation définis dans la balise `IPermission`. Prenez les autorisations suivantes :  
+     Obligatoire. Indique si l’application doit se voir accorder cette autorisation sans aucune limite. Si cet attribut a la valeur `true`, l’autorisation est accordée à l’application de manière inconditionnelle. Si cet attribut a la valeur `false`, ou s’il n’est pas défini, des restrictions sont imposées à l’application en fonction d’attributs spécifiques à l’autorisation définis dans la balise `IPermission` . Prenez les autorisations suivantes :  
   
     ```  
     <IPermission  
@@ -117,16 +117,16 @@ Décrit les autorisations de sécurité minimales dont doit disposer l’applica
       Unrestricted="true" />  
     ```  
   
-     Dans cet exemple, la déclaration d’<xref:System.Security.Permissions.EnvironmentPermission> indique que l’application peut uniquement lire la variable d’environnement USERNAME, tandis que la déclaration de <xref:System.Security.Permissions.FileDialogPermission> permet à l’application d’utiliser toutes les classes <xref:System.Windows.Forms.FileDialog> sans aucune restriction.  
+     Dans cet exemple, la déclaration d’ <xref:System.Security.Permissions.EnvironmentPermission> indique que l’application peut uniquement lire la variable d’environnement USERNAME, tandis que la déclaration de <xref:System.Security.Permissions.FileDialogPermission> permet à l’application d’utiliser toutes les classes <xref:System.Windows.Forms.FileDialog> sans aucune restriction.  
   
-## defaultAssemblyRequest  
+## <a name="defaultassemblyrequest"></a>defaultAssemblyRequest  
  Facultatif. Identifie le jeu d’autorisations accordé à tous les assemblys. Cet élément est un enfant de l’élément `applicationRequestMinimum` et contient l’attribut suivant.  
   
 -   `permissionSetReference`  
   
-     Obligatoire. Identifie l’ID du jeu d’autorisations qui est l’autorisation par défaut. Le jeu d’autorisations est déclaré dans l’élément `PermissionSet`.  
+     Obligatoire. Identifie l’ID du jeu d’autorisations qui est l’autorisation par défaut. Le jeu d’autorisations est déclaré dans l’élément `PermissionSet` .  
   
-## assemblyRequest  
+## <a name="assemblyrequest"></a>assemblyRequest  
  Facultatif. Identifie les autorisations d’un assembly spécifique. Cet élément est un enfant de l’élément `applicationRequestMinimum` et comprend les attributs suivants.  
   
 -   `Name`  
@@ -135,39 +135,39 @@ Décrit les autorisations de sécurité minimales dont doit disposer l’applica
   
 -   `permissionSetReference`  
   
-     Obligatoire. Identifie l’ID du jeu d’autorisations dont a besoin cet assembly. Le jeu d’autorisations est déclaré dans l’élément `PermissionSet`.  
+     Obligatoire. Identifie l’ID du jeu d’autorisations dont a besoin cet assembly. Le jeu d’autorisations est déclaré dans l’élément `PermissionSet` .  
   
-## requestedPrivileges  
- Facultatif. Cet élément est un enfant de l’élément `security` et contient l’élément `requestedExecutionLevel`. Cet élément n’a pas d’attributs.  
+## <a name="requestedprivileges"></a>requestedPrivileges  
+ Facultatif. Cet élément est un enfant de l’élément `security` et contient l’élément `requestedExecutionLevel` . Cet élément n’a pas d’attributs.  
   
-## requestedExecutionLevel  
+## <a name="requestedexecutionlevel"></a>requestedExecutionLevel  
  Facultatif. Identifie le niveau de sécurité auquel les demandes d’application doivent être exécutées. Cet élément n’a pas d’enfants et comprend les attributs suivants.  
   
 -   `Level`  
   
-     Obligatoire. Indique le niveau de sécurité demandé par l’application. Les valeurs possibles sont :  
+     Obligatoire. Indique le niveau de sécurité demandé par l’application. Les valeurs possibles sont :  
   
-     `asInvoker` : ne demande aucune autorisation supplémentaire. Ce niveau ne nécessite aucune invite d’approbation supplémentaire.  
+     `asInvoker`: ne demande aucune autorisation supplémentaire. Ce niveau ne nécessite aucune invite d’approbation supplémentaire.  
   
-     `highestAvailable` : demande les autorisations les plus élevées pouvant être octroyées au processus parent.  
+     `highestAvailable`: demande les autorisations les plus élevées pouvant être octroyées au processus parent.  
   
-     `requireAdministrator` : demande d’autorisations d’administrateur complètes.  
+     `requireAdministrator`: demande d’autorisations d’administrateur complètes.  
   
-     Les applications [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] sont uniquement installées avec la valeur `asInvoker`. Toute installation effectuée avec une autre valeur se soldera par un échec.  
+     Les applications[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] sont uniquement installées avec la valeur `asInvoker`. Toute installation effectuée avec une autre valeur se soldera par un échec.  
   
 -   `uiAccess`  
   
-     Facultatif. Indique si l’application nécessite l’accès aux éléments protégés de l’interface utilisateur. La valeur peut être `true` ou `false` \(false étant la valeur par défaut\). Seules les applications signées doivent avoir la valeur true.  
+     Facultatif. Indique si l’application nécessite l’accès aux éléments protégés de l’interface utilisateur. La valeur peut être `true` ou `false`(false étant la valeur par défaut). Seules les applications signées doivent avoir la valeur true.  
   
-## Notes  
- Si une application [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] demande davantage d’autorisations que celles accordées par défaut par l’ordinateur client, le Gestionnaire de confiance du common language runtime demande à l’utilisateur s’il souhaite accorder à l’application ce niveau de privilège élevé. S’il refuse, l’application ne fonctionne pas ; s’il accepte, elle s’exécute avec les autorisations demandées.  
+## <a name="remarks"></a>Remarques  
+ Si une application [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] demande davantage d’autorisations que celles accordées par défaut par l’ordinateur client, le Gestionnaire de confiance du common language runtime demande à l’utilisateur s’il souhaite accorder à l’application ce niveau de privilège élevé. S’il refuse, l’application ne fonctionne pas ; s’il accepte, elle s’exécute avec les autorisations demandées.  
   
- Toutes les autorisations demandées à l’aide de `defaultAssemblyRequest` et d’`assemblyRequest` sont accordées sans demander confirmation à l’utilisateur si le manifeste de déploiement dispose d’une licence de confiance valide.  
+ Toutes les autorisations demandées à l’aide de `defaultAssemblyRequest` et d’ `assemblyRequest` sont accordées sans demander confirmation à l’utilisateur si le manifeste de déploiement dispose d’une licence de confiance valide.  
   
- Pour plus d’informations sur l’élévation d’autorisations, consultez [Sécurisation des applications ClickOnce](../deployment/securing-clickonce-applications.md). Pour plus d’informations sur le déploiement de stratégies, consultez [Vue d'ensemble du déploiement d'applications approuvées](../deployment/trusted-application-deployment-overview.md).  
+ Pour plus d’informations sur l’élévation d’autorisations, consultez [sécurisation des Applications ClickOnce](../deployment/securing-clickonce-applications.md). Pour plus d’informations sur le déploiement de stratégies, consultez [Trusted Application Deployment Overview](../deployment/trusted-application-deployment-overview.md).  
   
-## Exemples  
- Les trois exemples de code suivants illustrent les éléments `trustInfo` pour les zones de sécurité nommées par défaut \(Internet, LocalIntranet et FullTrust\). Vous utilisez ces éléments dans le manifeste d’application d’un déploiement [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)].  
+## <a name="examples"></a>Exemples  
+ Les trois exemples de code suivants illustrent les éléments `trustInfo` pour les zones de sécurité nommées par défaut (Internet, LocalIntranet et FullTrust). Vous utilisez ces éléments dans le manifeste d’application d’un déploiement [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] .  
   
  Le premier exemple illustre l’élément `trustInfo` pour les autorisations par défaut disponibles dans la zone de sécurité Internet.  
   
@@ -270,6 +270,6 @@ Décrit les autorisations de sécurité minimales dont doit disposer l’applica
 </trustInfo>  
 ```  
   
-## Voir aussi  
- [Vue d'ensemble du déploiement d'applications approuvées](../deployment/trusted-application-deployment-overview.md)   
- [ClickOnce Application Manifest](../deployment/clickonce-application-manifest.md)
+## <a name="see-also"></a>Voir aussi  
+ [Vue d’ensemble du déploiement d’applications approuvées](../deployment/trusted-application-deployment-overview.md)   
+ [Manifeste d’application ClickOnce](../deployment/clickonce-application-manifest.md)

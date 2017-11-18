@@ -1,54 +1,56 @@
 ---
-title: "concat, m&#233;thode (String) (JavaScript) | Microsoft Docs"
-ms.custom: ""
-ms.date: "01/18/2017"
-ms.prod: "windows-client-threshold"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "devlang-javascript"
-ms.tgt_pltfrm: ""
-ms.topic: "language-reference"
-f1_keywords: 
-  - "concat"
-dev_langs: 
-  - "JavaScript"
-  - "TypeScript"
-  - "DHTML"
-helpviewer_keywords: 
-  - "concat (méthode) (String)"
-  - "Concat (méthode)"
+title: "concat, méthode (String) (JavaScript) | Documents Microsoft"
+ms.custom: 
+ms.date: 01/18/2017
+ms.prod: windows-client-threshold
+ms.reviewer: 
+ms.suite: 
+ms.technology: devlang-javascript
+ms.tgt_pltfrm: 
+ms.topic: language-reference
+f1_keywords: concat
+dev_langs:
+- JavaScript
+- TypeScript
+- DHTML
+helpviewer_keywords:
+- concat method (String)
+- Concat method
 ms.assetid: 5d28ebb2-d534-4179-9297-a4c821ee9f24
-caps.latest.revision: 14
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 14
+caps.latest.revision: "14"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: 1b6419cc6404e06fc780802a30a3b4add8320881
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.translationtype: MT
+ms.contentlocale: fr-FR
+ms.lasthandoff: 10/27/2017
 ---
-# concat, m&#233;thode (String) (JavaScript)
-Retourne une chaîne contenant la concaténation d'au moins deux chaînes.  
+# <a name="concat-method-string-javascript"></a>concat, méthode (String) (JavaScript)
+Retourne une chaîne qui contient la concaténation de deux ou plusieurs chaînes.  
   
-## Syntaxe  
+## <a name="syntax"></a>Syntaxe  
   
 ```  
   
 string1. concat([string2[, string3[, . . . [, stringN]]]])  
 ```  
   
-## Paramètres  
+## <a name="parameters"></a>Paramètres  
  `string1`  
- Obligatoire.  Objet `String` ou littéral de chaîne avec lequel les autres chaînes spécifiées sont concaténées.  
+ Obligatoire. Le `String` objet ou un littéral de chaîne à laquelle toutes les autres spécifié de chaînes sont concaténées.  
   
  `string2,. . ., stringN`  
- Facultatif.  Chaînes à ajouter à la fin de `string1`.  
+ Facultatif. Les chaînes à ajouter à la fin de `string1`.  
   
-## Notes  
- Le résultat de la méthode `concat` équivaut à : `result` \= `string1` \+ `string2` \+ `string3` \+ `stringN`.  La modification d'une valeur dans une chaîne source ou de résultat n'a aucune répercussion sur la valeur contenue dans l'autre chaîne.  Si l'un des arguments ne constitue pas une chaîne, il est converti en chaîne avant d'être concaténé à la chaîne `string1`.  
+## <a name="remarks"></a>Remarques  
+ Le résultat de la `concat` méthode équivaut à : `result`  =  `string1`  +  `string2`  +  `string3`  +  `stringN`. Une modification de valeur de chaîne d’une source ou le résultat n’affecte pas la valeur dans l’autre chaîne. Si un des arguments ne sont pas des chaînes, ils sont tout d’abord convertis en chaînes avant d’être concaténé à `string1`.  
   
-## Exemple  
- L'exemple suivant illustre l'utilisation de la méthode `concat` avec une chaîne :  
+## <a name="example"></a>Exemple  
+ L’exemple suivant illustre l’utilisation de la `concat` méthode avec une chaîne :  
   
-```javascript  
+```JavaScript  
 var str1 = "ABCD"  
 var str2 = "EFGH";  
 var str3 = "1234";  
@@ -59,10 +61,10 @@ document.write(str1.concat(str2, str3, str4));
   
 ```  
   
-## Configuration requise  
+## <a name="requirements"></a>Spécifications  
  [!INCLUDE[jsv3](../../javascript/reference/includes/jsv3-md.md)]  
   
- **S'applique à** : [String, objet](../../javascript/reference/string-object-javascript.md)  
+ **S’applique aux**: [objet chaîne](../../javascript/reference/string-object-javascript.md)  
   
-## Voir aussi  
- [Opérateur d'addition \(\+\)](../../javascript/reference/addition-operator-decrement-javascript.md)
+## <a name="see-also"></a>Voir aussi  
+ [Opérateur d'addition (+)](../../javascript/reference/addition-operator-decrement-javascript.md)

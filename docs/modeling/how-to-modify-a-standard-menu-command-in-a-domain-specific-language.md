@@ -10,24 +10,24 @@ helpviewer_keywords:
 - .vsct files, adding commands to a domain-specific language
 - Domain-Specific Language, adding custom commands
 ms.assetid: 9b9d8314-d0d8-421a-acb9-d7e91e69825c
-caps.latest.revision: 10
+caps.latest.revision: "10"
 author: alancameronwills
 ms.author: awills
 manager: douge
-translationtype: Machine Translation
-ms.sourcegitcommit: eb2ab9d49cdeb1ed71da8ef67841f7796862dc30
-ms.openlocfilehash: 571b30e0be9863b20dc1c8abca87940bb21cc344
-ms.lasthandoff: 02/22/2017
-
+ms.openlocfilehash: 6e5d17a1a84eb71252956e921522e6eebfd67925
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.translationtype: MT
+ms.contentlocale: fr-FR
+ms.lasthandoff: 10/27/2017
 ---
 # <a name="how-to-modify-a-standard-menu-command-in-a-domain-specific-language"></a>Comment : modifier une commande de menu standard dans un langage spécifique à un domaine
-Vous pouvez modifier le comportement de certaines des commandes standard qui sont définies automatiquement dans votre DSL. Par exemple, vous pourriez modifier **couper** pour qu’elle exclut les informations sensibles. Pour cela, vous devez substituer des méthodes dans une classe de jeu de commandes. Ces classes sont définies dans le fichier CommandSet.cs, dans le projet DslPackage et sont dérivés de <xref:Microsoft.VisualStudio.Modeling.Shell.CommandSet>.</xref:Microsoft.VisualStudio.Modeling.Shell.CommandSet>  
+Vous pouvez modifier le comportement de certaines des commandes standard qui sont définies automatiquement dans votre DSL. Par exemple, vous pourriez modifier **couper** afin qu’il exclut les informations sensibles. Pour cela, vous devez substituer des méthodes dans une classe de jeu de commandes. Ces classes sont définies dans le fichier CommandSet.cs, dans le projet DslPackage, et son dérivées de <xref:Microsoft.VisualStudio.Modeling.Shell.CommandSet>.  
   
  En résumé, pour modifier une commande :  
   
-1.  [Découvrez les commandes que vous pouvez modifier](#what).  
+1.  [Découvrez ce que vous pouvez modifier des commandes](#what).  
   
-2.  [Créer une déclaration partielle de la classe de jeu de commandes appropriée](#extend).  
+2.  [Créer une déclaration partielle de la classe de jeu de commande appropriée](#extend).  
   
 3.  [Substituer les méthodes ProcessOnStatus et ProcessOnMenu](#override) pour la commande.  
   
@@ -36,13 +36,13 @@ Vous pouvez modifier le comportement de certaines des commandes standard qui son
 > [!NOTE]
 >  Si vous souhaitez créer vos propres commandes de menu, consultez [Comment : ajouter une commande au Menu contextuel](../modeling/how-to-add-a-command-to-the-shortcut-menu.md).  
   
-##  <a name="a-namewhata-what-commands-can-you-modify"></a><a name="what"></a>Quelles commandes pouvez-vous modifier ?  
+##  <a name="what"></a>Les commandes peuvent modifier ?  
   
 #### <a name="to-discover-what-commands-you-can-modify"></a>Pour découvrir les commandes que vous pouvez modifier  
   
 1.  Dans le `DslPackage` projet, ouvrez `GeneratedCode\CommandSet.cs`. Ce fichier c# se trouve dans l’Explorateur de solutions comme une filiale de `CommandSet.tt`.  
   
-2.  Rechercher des classes dans ce fichier se terminent par «`CommandSet`», par exemple `Language1CommandSet` et `Language1ClipboardCommandSet`.  
+2.  Trouver les classes dans ce fichier se terminent par «`CommandSet`», par exemple `Language1CommandSet` et `Language1ClipboardCommandSet`.  
   
 3.  Dans chaque classe de jeu de commandes, tapez « `override` » suivi d'un espace. IntelliSense affiche une liste des méthodes que vous pouvez substituer. Chaque commande à une paire de méthodes dont le nom commence par « `ProcessOnStatus` » et « `ProcessOnMenu` ».  
   
@@ -53,7 +53,7 @@ Vous pouvez modifier le comportement de certaines des commandes standard qui son
     > [!NOTE]
     >  En temps normal, vous ne devez pas modifier les fichiers qui ont été générés. Toute modification sera perdue lors de la prochaine génération des fichiers.  
   
-##  <a name="a-nameextenda-extend-the-appropriate-command-set-class"></a><a name="extend"></a>Étendre la classe de jeu de commandes appropriée  
+##  <a name="extend"></a>Étendre la commande appropriée set (classe)  
  Créez un fichier qui contient une déclaration partielle de la classe de jeu de commandes.  
   
 #### <a name="to-extend-the-command-set-class"></a>Pour développer la classe de jeu de commandes  
@@ -78,11 +78,11 @@ Vous pouvez modifier le comportement de certaines des commandes standard qui son
   
      **Remarque** si vous avez utilisé le modèle de fichier de classe pour créer le fichier, vous devez corriger l’espace de noms et le nom de classe.  
   
-##  <a name="a-nameoverridea-override-the-command-methods"></a><a name="override"></a>Substituez les méthodes de commande  
- La plupart des commandes ont deux méthodes associées : la méthode avec un nom comme `ProcessOnStatus`... détermine si la commande doit être visible et activé. Elle est appelée chaque fois que l'utilisateur clique avec le bouton droit sur le diagramme et doit être exécutée rapidement et n'apporter aucune modification. `ProcessOnMenu`... est appelée lorsque l’utilisateur clique sur la commande et il doit effectuer la fonction de la commande. Vous souhaiterez peut-être substituer l'une ou l'autre de ces méthodes, ou les deux.  
+##  <a name="override"></a>Substituer les méthodes de commande  
+ La plupart des commandes ont deux méthodes associées : la méthode avec un nom comme `ProcessOnStatus`... détermine si la commande doit être visible et activé. Elle est appelée chaque fois que l'utilisateur clique avec le bouton droit sur le diagramme et doit être exécutée rapidement et n'apporter aucune modification. `ProcessOnMenu`... est appelée lorsque l’utilisateur clique sur la commande et il doit exécuter la fonction de la commande. Vous souhaiterez peut-être substituer l'une ou l'autre de ces méthodes, ou les deux.  
   
 ### <a name="to-change-when-the-command-appears-on-a-menu"></a>Pour modifier quand la commande apparaît dans un menu  
- Substituez la méthode ProcessOnStatus... (méthode). Cette méthode doit définir les propriétés Visible et Activé de son paramètre MenuCommand. En général, la commande examine this.CurrentSelection pour déterminer si elle s'applique aux éléments sélectionnés et peut également examiner leurs propriétés pour déterminer si elle peut être appliquée dans leur état actuel.  
+ Remplacer la ProcessOnStatus... (méthode). Cette méthode doit définir les propriétés Visible et Activé de son paramètre MenuCommand. En général, la commande examine this.CurrentSelection pour déterminer si elle s'applique aux éléments sélectionnés et peut également examiner leurs propriétés pour déterminer si elle peut être appliquée dans leur état actuel.  
   
  D'une manière générale, la propriété Visible doit être déterminée en fonction des éléments sélectionnés. La propriété Activé, qui détermine si la commande apparaît en noir ou en gris dans le menu, doit dépendre de l'état actuel de la sélection.  
   
@@ -113,7 +113,7 @@ protected override void ProcessOnStatusDeleteCommand (MenuCommand command)
  La méthode ProcessOnStatus ne doit pas créer, supprimer ou mettre à jour des éléments dans le magasin.  
   
 ### <a name="to-change-the-behavior-of-the-command"></a>Pour modifier le comportement de la commande  
- Substituez la méthode Processonstatus... (méthode). L'exemple suivant empêche l'utilisateur de supprimer plusieurs éléments à la fois, même à l'aide de la touche Suppr.  
+ Remplacer la ProcessOnMenu... (méthode). L'exemple suivant empêche l'utilisateur de supprimer plusieurs éléments à la fois, même à l'aide de la touche Suppr.  
   
 ```  
 /// <summary>  
@@ -130,7 +130,7 @@ protected override void ProcessOnMenuDeleteCommand()
 }  
 ```  
   
- Si votre code modifie le magasin, par exemple s'il crée, supprime ou met à jour des éléments ou des liens, il doit le faire à l'intérieur d'une transaction. Pour plus d’informations, consultez [comment créer et mettre à jour les éléments de modèle](../modeling/how-to-modify-a-standard-menu-command-in-a-domain-specific-language.md).  
+ Si votre code modifie le magasin, par exemple s'il crée, supprime ou met à jour des éléments ou des liens, il doit le faire à l'intérieur d'une transaction. Pour plus d’informations, consultez [comment créer et mettre à jour des éléments de modèle](../modeling/how-to-modify-a-standard-menu-command-in-a-domain-specific-language.md).  
   
 ### <a name="writing-the-code-of-the-methods"></a>Écriture du code des méthodes  
  Les fragments suivants sont souvent utiles dans ces méthodes :  
@@ -147,15 +147,14 @@ protected override void ProcessOnMenuDeleteCommand()
   
 -   `shape.ModelElement as MyLanguageElement` - élément de modèle représenté par une forme.  
   
- Pour plus d’informations sur la façon de naviguer d’un élément à un élément et sur la création des objets et des liens, consultez [navigation et mise à jour d’un modèle de Code de programme](../modeling/navigating-and-updating-a-model-in-program-code.md).  
+ Pour plus d’informations sur la façon de naviguer d’un élément à l’élément et sur la création des objets et des liens, consultez [navigation et la mise à jour d’un modèle de Code de programme](../modeling/navigating-and-updating-a-model-in-program-code.md).  
   
 ## <a name="see-also"></a>Voir aussi  
- <xref:System.ComponentModel.Design.MenuCommand></xref:System.ComponentModel.Design.MenuCommand>   
- [Écrire du Code pour personnaliser un langage spécifique à un domaine](../modeling/writing-code-to-customise-a-domain-specific-language.md)   
+ <xref:System.ComponentModel.Design.MenuCommand>   
+ [Écriture de Code pour personnaliser un langage spécifique à un domaine](../modeling/writing-code-to-customise-a-domain-specific-language.md)   
  [Comment : ajouter une commande au Menu contextuel](../modeling/how-to-add-a-command-to-the-shortcut-menu.md)   
- [Comment ajouter des éléments d’Interface utilisateur dans les packages VS](../extensibility/internals/how-vspackages-add-user-interface-elements.md)   
- [Table de commandes de Visual Studio (. Fichiers VSCT)](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)   
- [Référence de schéma XML de VSCT](../extensibility/vsct-xml-schema-reference.md)   
- [VMSDK – exemple de diagrammes de Circuit. Personnalisation DSL étendue](http://code.msdn.microsoft.com/Visualization-Modeling-SDK-763778e8)   
+ [Comment les VSPackages ajouter les éléments d’Interface utilisateur](../extensibility/internals/how-vspackages-add-user-interface-elements.md)   
+ [Tableau de commandes de Visual Studio (. Fichiers VSCT)](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)   
+ [Référence du schéma XML de VSCT](../extensibility/vsct-xml-schema-reference.md)   
+ [VMSDK - exemple de diagrammes du Circuit. Personnalisation de l’étendue de DSL](http://code.msdn.microsoft.com/Visualization-Modeling-SDK-763778e8)   
  [Exemple de code : diagrammes de Circuit](http://code.msdn.microsoft.com/Visualization-Modeling-SDK-763778e8)
-

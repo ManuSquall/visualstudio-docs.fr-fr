@@ -1,24 +1,26 @@
 ---
-title: "Proc&#233;dure pas &#224; pas&#160;: g&#233;n&#233;ration de code &#224; l&#39;aide de mod&#232;les de texte | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-helpviewer_keywords: 
-  - "procédures pas à pas (modèles de texte), génération de code d’application"
-  - "procédures pas à pas (modèles de texte)"
+title: "Procédure pas à pas : Génération de Code à l’aide de modèles de texte | Documents Microsoft"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.tgt_pltfrm: 
+ms.topic: article
+helpviewer_keywords:
+- walkthroughs [text templates], generating application code
+- walkthroughs [text templates]
 ms.assetid: 24602ade-baca-425e-a6ce-be09a2c7f7e1
-caps.latest.revision: 11
-author: "alancameronwills"
-ms.author: "awills"
-manager: "douge"
-caps.handback.revision: 11
+caps.latest.revision: "11"
+author: alancameronwills
+ms.author: awills
+manager: douge
+ms.openlocfilehash: b39d142a44a99cc0fde362249d5717ee75c09323
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.translationtype: MT
+ms.contentlocale: fr-FR
+ms.lasthandoff: 10/27/2017
 ---
-# Proc&#233;dure pas &#224; pas&#160;: g&#233;n&#233;ration de code &#224; l&#39;aide de mod&#232;les de texte
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
-
+# <a name="walkthrough-generating-code-by-using-text-templates"></a>Procédure pas à pas : génération de code à l'aide de modèles de texte
 La génération de code vous permet de générer du code de programme qui est fortement typé mais peut être facilement modifié quand le modèle source change. Comparez ceci avec l’autre technique consistant à écrire un programme complètement générique qui accepte un fichier de configuration, qui est plus flexible mais génère du code qui n’est pas aussi facile à lire et à modifier et n’offre pas d’aussi bonnes performances. Cette procédure pas à pas montre les avantages offerts par la génération de code.  
   
 ## <a name="typed-code-for-reading-xml"></a>Code typé pour lire des données XML  
@@ -102,7 +104,7 @@ foreach (XmlNode artist in catalog.SelectNodes("artist"))
   
 4.  Pour cette procédure pas à pas, nommez le fichier `exampleXml.xml`. Définissez le code XML fourni dans la section précédente comme contenu du fichier.  
   
- ..  
+ .  
   
 ### <a name="add-a-test-code-file"></a>Ajouter un fichier de code de test  
  Ajoutez un fichier C# à votre projet et placez-y un exemple du code que vous souhaitez pouvoir écrire. Exemple :  

@@ -1,5 +1,5 @@
 ---
-title: Embedding a Diagram in a Windows Form | Microsoft Docs
+title: "Incorporation d’un diagramme dans un Windows Form | Documents Microsoft"
 ms.custom: 
 ms.date: 11/04/2016
 ms.reviewer: 
@@ -7,47 +7,32 @@ ms.suite:
 ms.tgt_pltfrm: 
 ms.topic: article
 ms.assetid: fa6cd040-7c88-4329-b9c3-2a80b312610f
-caps.latest.revision: 2
+caps.latest.revision: "2"
 author: alancameronwills
 ms.author: awills
 manager: douge
-translation.priority.mt:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
+ms.openlocfilehash: c2f100e88f2c256cc0bc85bc90f92f6d101a862e
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
 ms.translationtype: MT
-ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
-ms.openlocfilehash: 6d74b2c7a41907a9efce77628b30a5d22493eafb
-ms.contentlocale: fr-fr
-ms.lasthandoff: 08/28/2017
-
+ms.contentlocale: fr-FR
+ms.lasthandoff: 10/27/2017
 ---
-# <a name="embedding-a-diagram-in-a-windows-form"></a>Embedding a Diagram in a Windows Form
-You can embed a DSL diagram in a Windows Control, which appears in the [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] window.  
+# <a name="embedding-a-diagram-in-a-windows-form"></a>Incorporation d'un schéma dans un Windows Form
+Vous pouvez incorporer un diagramme DSL dans un contrôle Windows, qui apparaît dans la [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] fenêtre.  
   
-## <a name="embedding-a-diagram"></a>Embedding a Diagram  
+## <a name="embedding-a-diagram"></a>Incorporation d’un diagramme  
   
-#### <a name="to-embed-a-dsl-diagram-in-a-windows-control"></a>To embed a DSL diagram in a Windows Control  
+#### <a name="to-embed-a-dsl-diagram-in-a-windows-control"></a>Pour incorporer un diagramme DSL dans un contrôle Windows  
   
-1.  Add a new **User Control** file to the DslPackage project.  
+1.  Ajouter un nouveau **contrôle utilisateur** fichier au projet DslPackage.  
   
-2.  Add a Panel control to the User Control. This panel will contain the DSL Diagram.  
+2.  Ajouter un contrôle de panneau au contrôle utilisateur. Ce panneau contient le diagramme DSL.  
   
-     Add other controls that you require.  
+     Ajouter d’autres contrôles dont vous avez besoin.  
   
-     Set the Anchor properties of the controls.  
+     Définir les propriétés d’ancrage des contrôles.  
   
-3.  In Solution Explorer, right-click the user control file and click **View Code**. Add this constructor and variable to the code:  
+3.  Dans l’Explorateur de solutions, cliquez sur le fichier de contrôle utilisateur, puis cliquez sur **afficher le Code**. Ajoutez ce constructeur et la variable au code :  
   
     ```csharp  
   
@@ -61,7 +46,7 @@ You can embed a DSL diagram in a Windows Control, which appears in the [!INCLUDE
   
     ```  
   
-4.  Add a new file to the DslPackage project, with the following content:  
+4.  Ajouter un nouveau fichier au projet DslPackage, avec le contenu suivant :  
   
     ```  
     using System.Windows.Forms;  
@@ -85,13 +70,13 @@ You can embed a DSL diagram in a Windows Control, which appears in the [!INCLUDE
   
     ```  
   
-5.  To test the DSL, press F5 and open a sample model file. The diagram appears inside the control. The toolbox and other features work normally.  
+5.  Pour tester la DSL, appuyez sur F5 et ouvrir un exemple de fichier de modèle. Le diagramme s’affiche dans le contrôle. La boîte à outils et autres fonctionnalités fonctionnent normalement.  
   
-#### <a name="updating-the-form-using-store-events"></a>Updating the Form using Store Events  
+#### <a name="updating-the-form-using-store-events"></a>Mise à jour de l’écran à l’aide d’événements de la banque  
   
-1.  In the form designer, add a **ListBox** named `listBox1`. This will display a list of the elements in the model. It will be kept in synchronism with the model using *store events*. For more information, see [Event Handlers Propagate Changes Outside the Model](../modeling/event-handlers-propagate-changes-outside-the-model.md).  
+1.  Dans le Concepteur de formulaire, ajoutez un **ListBox** nommé `listBox1`. Cela affiche une liste des éléments dans le modèle. Il est conservé dans synchronism avec le modèle à l’aide de *stocker les événements*. Pour plus d’informations, consultez [gestionnaires propager les modifications en dehors du modèle d’événement](../modeling/event-handlers-propagate-changes-outside-the-model.md).  
   
-2.  In the custom code file, override further methods to the DocView class:  
+2.  Dans le fichier de code personnalisé, substituez davantage les méthodes à la classe DocView :  
   
     ```  
   
@@ -134,7 +119,7 @@ You can embed a DSL diagram in a Windows Control, which appears in the [!INCLUDE
   
     ```  
   
-3.  In the code behind the user control, insert methods to listen for elements added and removed:  
+3.  Dans le code derrière le contrôle utilisateur, insérer les méthodes pour écouter les éléments ajoutés et supprimés :  
   
     ```  
   
@@ -163,10 +148,10 @@ You can embed a DSL diagram in a Windows Control, which appears in the [!INCLUDE
   
     ```  
   
-4.  To test the DSL, press F5 and in the experimental instance of [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)], open a sample model file.  
+4.  Pour tester la DSL, appuyez sur F5 et dans l’instance expérimentale de [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)], ouvrez un exemple de fichier de modèle.  
   
-     Notice that the list box shows a list of the elements in the model, and that it is correct after any addition or deletion, and after Undo and Redo.  
+     Notez que la zone de liste affiche une liste des éléments dans le modèle, et qu’elle est correcte après l’ajout ou la suppression et après avoir Annuler et rétablir.  
   
-## <a name="see-also"></a>See Also  
- [Navigating and Updating a Model in Program Code](../modeling/navigating-and-updating-a-model-in-program-code.md)   
- [Writing Code to Customise a Domain-Specific Language](../modeling/writing-code-to-customise-a-domain-specific-language.md)
+## <a name="see-also"></a>Voir aussi  
+ [Navigation et la mise à jour d’un modèle de Code de programme](../modeling/navigating-and-updating-a-model-in-program-code.md)   
+ [Écriture de code pour personnaliser un langage spécifique à un domaine](../modeling/writing-code-to-customise-a-domain-specific-language.md)

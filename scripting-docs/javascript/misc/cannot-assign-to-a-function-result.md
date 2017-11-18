@@ -1,49 +1,51 @@
 ---
-title: "Impossible d&#39;assigner &#224; un r&#233;sultat de fonction | Microsoft Docs"
-ms.custom: ""
-ms.date: "01/18/2017"
-ms.prod: "windows-client-threshold"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "javascript"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "VS.WebClient.Help.SCRIPT5003"
-dev_langs: 
-  - "JavaScript"
-  - "TypeScript"
-  - "DHTML"
+title: "Impossible d’assigner à un résultat de fonction | Documents Microsoft"
+ms.custom: 
+ms.date: 01/18/2017
+ms.prod: windows-client-threshold
+ms.reviewer: 
+ms.suite: 
+ms.technology: javascript
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords: VS.WebClient.Help.SCRIPT5003
+dev_langs:
+- JavaScript
+- TypeScript
+- DHTML
 ms.assetid: ee8ffb3a-1451-4cb3-99bf-5e9cf8b77d79
-caps.latest.revision: 9
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 9
+caps.latest.revision: "9"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: f7e7ea718aa97ab7b2eb0924458826cd1eac5672
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.translationtype: MT
+ms.contentlocale: fr-FR
+ms.lasthandoff: 10/27/2017
 ---
-# Impossible d&#39;assigner &#224; un r&#233;sultat de fonction
-Vous avez tenté d'assigner une valeur au résultat d'une fonction.  Le résultat d'une fonction peut être assigné à une variable, mais il ne peut pas être utilisé en tant que variable.  Si vous voulez assigner une nouvelle valeur à la fonction elle\-même, ne mettez pas de parenthèses \(l'opérateur d'appel de fonction\).  L'exemple suivant illustre une situation dans laquelle cette erreur est générée.  
+# <a name="cannot-assign-to-a-function-result"></a>Impossible d'affecter à un résultat de fonction
+Vous avez tenté d’assigner une valeur à un résultat de fonction. Le résultat d’une fonction peut être assigné à une variable, mais il ne peut pas être utilisé en tant que variable. Si vous souhaitez affecter une nouvelle valeur à la fonction elle-même, omettez les parenthèses (l’opérateur d’appel de fonction). L’exemple suivant illustre une situation dans laquelle cette erreur est générée.  
   
 ```  
 myFunction() = 42;  // Attempting to assign the value 42 to the result of the function call.  
 ```  
   
-### Pour corriger cette erreur  
+### <a name="to-correct-this-error"></a>Pour corriger cette erreur  
   
--   *N'assignez pas* la valeur du résultat d'un appel de fonction.  Toutefois, vous pouvez assigner le résultat de l'appel de fonction à une *variable*.  
+-   N’utilisez pas la valeur d’un résultat d’appel de fonction en tant que quelque chose que vous pouvez *affecter à*. Vous pouvez assigner le résultat de l’appel de fonction *à une variable* si.  
   
-    ```javascript  
+    ```JavaScript  
     myVar = myFunction(42);  
     ```  
   
--   Il est également possible d'assigner la fonction elle\-même \(et non sa valeur de retour\) à une variable.  
+-   Ou bien, vous pouvez assigner la fonction elle-même (et pas sa valeur de retour) à une variable.  
   
-    ```javascript  
+    ```JavaScript  
     myFunction = new Function("return 42;");  
     ```  
   
-## Voir aussi  
- [Objet de function](../../javascript/reference/function-object-javascript.md)   
- [Écriture de code JavaScript](../../javascript/writing-javascript-code.md)   
+## <a name="see-also"></a>Voir aussi  
+ [Objet de fonction](../../javascript/reference/function-object-javascript.md)   
+ [Écriture de Code JavaScript](../../javascript/writing-javascript-code.md)   
  [Fonctions](../../javascript/functions-javascript.md)

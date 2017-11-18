@@ -1,55 +1,56 @@
 ---
-title: "Troubleshooting ClickOnce Deployments | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-deployment"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-dev_langs: 
-  - "VB"
-  - "CSharp"
-  - "C++"
-helpviewer_keywords: 
-  - "deploying applications, ClickOnce"
-  - "troubleshooting ClickOnce deployments"
-  - "ClickOnce deployment, troubleshooting"
-  - "Windows applications, ClickOnce deployments"
-  - "deploying applications [ClickOnce], troubleshooting"
+title: "Dépannage des déploiements ClickOnce | Documents Microsoft"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-deployment
+ms.tgt_pltfrm: 
+ms.topic: article
+dev_langs:
+- VB
+- CSharp
+- C++
+helpviewer_keywords:
+- deploying applications, ClickOnce
+- troubleshooting ClickOnce deployments
+- ClickOnce deployment, troubleshooting
+- Windows applications, ClickOnce deployments
+- deploying applications [ClickOnce], troubleshooting
 ms.assetid: 58e90012-f68b-4852-8ae9-58e361cbcc32
-caps.latest.revision: 32
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
-caps.handback.revision: 32
+caps.latest.revision: "32"
+author: stevehoag
+ms.author: shoag
+manager: wpickett
+ms.openlocfilehash: 856358b9864da9cb685619ec1ce94d2c5b4bc4f0
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.translationtype: MT
+ms.contentlocale: fr-FR
+ms.lasthandoff: 10/27/2017
 ---
-# Troubleshooting ClickOnce Deployments
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
-
-Cette rubrique vous aide à diagnostiquer et à résoudre les problèmes les plus couramment rencontrés avec les déploiements [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)].  
+# <a name="troubleshooting-clickonce-deployments"></a>Dépannage des déploiements ClickOnce
+Cette rubrique vous aide à diagnostiquer et résoudre les problèmes les plus courants avec [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] déploiements.  
   
- Dans la plupart des cas, les applications [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] sont téléchargées sur l'ordinateur des utilisateurs et fonctionnent sans problème.  Il peut arriver toutefois que la configuration de l'application ou du serveur Web provoque des problèmes imprévus.  
+ Dans la plupart des cas, un [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] télécharger sur l’ordinateur d’un utilisateur et l’exécution sans problèmes d’application. Il existe certains cas, toutefois, où les problèmes de configuration de serveur ou une application Web peuvent provoquer des problèmes imprévus.  
   
- [How to: Set a Custom Log File Location for ClickOnce Deployment Errors](../deployment/how-to-set-a-custom-log-file-location-for-clickonce-deployment-errors.md)  
- Décrit comment rediriger tous les échecs de l'activation [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] sur un ordinateur vers un fichier journal unique.  
+ [Guide pratique pour définir l’emplacement d’un fichier journal personnalisé pour les erreurs de déploiement ClickOnce](../deployment/how-to-set-a-custom-log-file-location-for-clickonce-deployment-errors.md)  
+ Décrit comment rediriger toutes [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] Échec d’activation sur un ordinateur à un seul fichier journal.  
   
- [How to: Specify Verbose Log Files for ClickOnce Deployments](../deployment/how-to-specify-verbose-log-files-for-clickonce-deployments.md)  
- Explique comment augmenter les informations que [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] consigne dans les fichiers journaux.  
+ [Guide pratique pour spécifier des fichiers journaux détaillés pour les déploiements ClickOnce](../deployment/how-to-specify-verbose-log-files-for-clickonce-deployments.md)  
+ Explique comment augmenter le détail qui [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] écrit dans des fichiers journaux.  
   
- [Server and Client Configuration Issues in ClickOnce Deployments](../deployment/server-and-client-configuration-issues-in-clickonce-deployments.md)  
- Décrit différents problèmes de configuration de votre serveur Web susceptibles de provoquer des difficultés de téléchargement des applications [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)].  
+ [Problèmes de configuration de serveur et de client dans les déploiements ClickOnce](../deployment/server-and-client-configuration-issues-in-clickonce-deployments.md)  
+ Décrit différents problèmes de la configuration de votre serveur Web qui peut provoquer des difficultés de téléchargement [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] applications.  
   
- [Security, Versioning, and Manifest Issues in ClickOnce Deployments](../deployment/security-versioning-and-manifest-issues-in-clickonce-deployments.md)  
- Décrit différents problèmes relatifs aux déploiements [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)].  
+ [Problèmes liés à la sécurité, à la gestion de version et aux manifestes dans les déploiements ClickOnce](../deployment/security-versioning-and-manifest-issues-in-clickonce-deployments.md)  
+ Décrit différents problèmes relatifs aux [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] déploiements.  
   
- [Troubleshooting Specific Errors in ClickOnce Deployments](../deployment/troubleshooting-specific-errors-in-clickonce-deployments.md)  
- Décrit des scénarios spécifiques dans lesquels un déploiement [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] ne peut pas réussir et indique une procédure permettant de résoudre ces problèmes.  
+ [Dépannage d’erreurs spécifiques dans les déploiements ClickOnce](../deployment/troubleshooting-specific-errors-in-clickonce-deployments.md)  
+ Décrit des scénarios spécifiques dans lesquels un [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] déploiement ne peut pas réussir et explique comment les résoudre.  
   
- [Debugging ClickOnce Applications That Use System.Deployment.Application](../deployment/debugging-clickonce-applications-that-use-system-deployment-application.md)  
+ [Débogage des applications ClickOnce qui utilisent System.Deployment.Application](../deployment/debugging-clickonce-applications-that-use-system-deployment-application.md)  
  Décrit une technique pour le débogage des applications ClickOnce qui utilisent System.Deployment.Application.  
   
-## Voir aussi  
- [ClickOnce Deployment Manifest](../deployment/clickonce-deployment-manifest.md)   
- [ClickOnce Application Manifest](../deployment/clickonce-application-manifest.md)
+## <a name="see-also"></a>Voir aussi  
+ [Manifeste de déploiement ClickOnce](../deployment/clickonce-deployment-manifest.md)   
+ [Manifeste d’application ClickOnce](../deployment/clickonce-application-manifest.md)

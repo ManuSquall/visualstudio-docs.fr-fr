@@ -1,54 +1,57 @@
 ---
-title: "Utilisation du Concepteur de Workflow h&#233;rit&#233; | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.tgt_pltfrm: ""
-ms.topic: "reference"
-helpviewer_keywords: 
-  - "Extensions Visual Studio 2005 pour Windows Workflow Foundation, à propos"
+title: "À l’aide du Concepteur de Workflow hérité | Documents Microsoft"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.tgt_pltfrm: 
+ms.topic: reference
+helpviewer_keywords: Visual Studio 2005 Extensions for Windows Workflow Foundation, about
 ms.assetid: 7af53077-afd7-465f-9c1d-b387e9d4f216
-caps.latest.revision: 10
-author: "ErikRe"
-ms.author: "erikre"
-manager: "erikre"
-caps.handback.revision: 10
+caps.latest.revision: "10"
+author: ErikRe
+ms.author: erikre
+manager: erikre
+ms.openlocfilehash: eda078bdfc0eae8861ac4e70b0f1f73a399f994c
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.translationtype: MT
+ms.contentlocale: fr-FR
+ms.lasthandoff: 10/27/2017
 ---
-# Utilisation du Concepteur de Workflow h&#233;rit&#233;
-Le [!INCLUDE[wfd2](../workflow-designer/includes/wfd2_md.md)] hérité fourni par [!INCLUDE[vs2010](../modeling/includes/vs2010_md.md)] peut être utilisé pour cibler le [!INCLUDE[netfx35_long](../workflow-designer/includes/netfx35_long_md.md)] ou le [!INCLUDE[vstecwinfx](../workflow-designer/includes/vstecwinfx_md.md)].  
+# <a name="using-the-legacy-workflow-designer"></a>Utilisation du Concepteur de Workflow hérité
+Le [!INCLUDE[wfd2](../workflow-designer/includes/wfd2_md.md)] hérité fourni par [!INCLUDE[vs2010](../misc/includes/vs2010_md.md)] peut être utilisé pour cibler le [!INCLUDE[netfx35_long](../workflow-designer/includes/netfx35_long_md.md)] ou le [!INCLUDE[vstecwinfx](../workflow-designer/includes/vstecwinfx_md.md)].  
   
- Il est accessible en sélectionnant l'option **.NET Framework 3.0** ou **.NET Framework 3.5** dans la liste déroulante située en haut de la fenêtre **Nouveau projet**.L'option par défaut dans [!INCLUDE[vs2010](../modeling/includes/vs2010_md.md)] est **.NET Framework 4**, laquelle est utilisée pour créer des applications [!INCLUDE[wf](../workflow-designer/includes/wf_md.md)] qui ciblent le [!INCLUDE[netfx40_short](../workflow-designer/includes/netfx40_short_md.md)].  
+ Il est accessible en sélectionnant le le **.NET Framework 3.0** option ou **.NET Framework 3.5** option dans la liste déroulante située en haut de la **nouveau projet** fenêtre. L’option par défaut dans [!INCLUDE[vs2010](../misc/includes/vs2010_md.md)] est **.NET Framework 4** qui sert à créer [!INCLUDE[wf](../workflow-designer/includes/wf_md.md)] les applications qui ciblent le [!INCLUDE[netfx40_short](../workflow-designer/includes/netfx40_short_md.md)].  
   
- Le [!INCLUDE[wfd2](../workflow-designer/includes/wfd2_md.md)] permet de créer graphiquement des applications [!INCLUDE[wf](../workflow-designer/includes/wf_md.md)] grâce à l'interface utilisateur [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] que vous connaissez bien.Les applications [!INCLUDE[wf](../workflow-designer/includes/wf_md.md)] sont composées d'étapes du processus de flux de travail appelées activités.Pour créer un workflow, composez des activités sur l'aire de conception en faisant glisser leurs concepteurs d'activités respectifs de la **boîte à outils** sur l'aire de conception.  
+ Le [!INCLUDE[wfd2](../workflow-designer/includes/wfd2_md.md)] permet de créer graphiquement des applications [!INCLUDE[wf](../workflow-designer/includes/wf_md.md)] grâce à l'interface utilisateur [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] que vous connaissez bien. Les applications [!INCLUDE[wf](../workflow-designer/includes/wf_md.md)] sont composées d'étapes du processus de workflow appelées activités. Pour créer un workflow, composez des activités sur l’aire de conception en faisant glisser leurs concepteurs d’activités respectifs de **boîte à outils** sur l’aire de conception.  
   
  Le tableau suivant répertorie les fonctionnalités clés de [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] pour Windows Workflow Foundation.  
   
 |Fonctionnalité|Description|  
-|--------------------|-----------------|  
-|Activité de glisser\-déplacer|Faites glisser les activités de la **boîte à outils** vers l'aire de conception afin de créer un workflow.|  
-|Explorateur de propriétés|La fenêtre **Propriétés** standard dans [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] permet de configurer les propriétés d'une activité.|  
-|Zoom|L'icône en jumelles **Niveau de zoom** est située au\-dessous de la barre de défilement verticale, à droite de l'aire de conception.Cliquez sur les jumelles et sélectionnez un pourcentage de zoom pour effectuer un zoom avant ou arrière du graphique de workflow.Vous pouvez également utiliser les options de curseur de l'icône de loupe **Panoramique** pour effectuer un zoom avant et arrière.|  
-|Panoramique|L'icône **Panoramique**, qui représente un cercle contenant quatre flèches qui pointent dans quatre directions, est située au\-dessous de la barre de défilement verticale, à droite de l'aire de conception, sous l'icône de zoom \(jumelles\).Si vous cliquez sur l'icône de panoramique, un menu contextuel affiche les options de curseur suivantes :<br /><br /> -   Le curseur de loupe **Zoom avant** permet d'effectuer un zoom avant en cliquant sur l'aire de conception.<br />-   Le curseur de loupe **Zoom arrière** permet d'effectuer un zoom arrière en cliquant sur l'aire de conception.<br />-   Le curseur en forme de main **Outil de navigation** permet de manipuler et de déplacez la vue d'un workflow dans l'aire de conception.<br />-   Le curseur en forme de flèche **Par défaut** permet de revenir au curseur par défaut après avoir utilisé d'autres curseurs.|  
-|Défilement automatique|En cas de workflow de grande taille, vous pouvez placer une activité au delà de l'affichage visible de la zone d'aire de conception.[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] vous permet de faire glisser une activité vers le bord de l'aire de conception, près de l'emplacement où vous souhaitez placer l'activité.La vue de l'aire de conception défile automatiquement dans cette direction.|  
-|Balises actives|Les activités qui ne sont pas configurées complètement ou correctement sont signalées par une icône en forme de point d'exclamation.Vous pouvez cliquer sur l'icône afin d'afficher la liste déroulante des besoins de configuration répertoriés pour cette activité.Vous pouvez ensuite utiliser la fenêtre **Propriétés** pour configurer l'activité de façon appropriée.Une fois que toutes les propriétés sont valides pour l'activité, l'icône de point d'exclamation disparaît.|  
+|-------------|-----------------|  
+|Activité de glisser-déposer|Faites glisser les activités à partir de la **boîte à outils** sur l’aire de conception pour créer un flux de travail.|  
+|Explorateur de propriétés|La norme **propriétés** fenêtre dans [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] est utilisé pour configurer les propriétés d’une activité.|  
+|Zoom|Les jumelles **le niveau de Zoom** située sous la barre de défilement verticale sur le côté droit de l’aire de conception. Cliquez sur les jumelles et sélectionnez un pourcentage de zoom pour effectuer un zoom avant ou arrière du graphique de workflow. Vous pouvez également utiliser le **panoramique** options de curseur icône en forme de loupe pour effectuer un zoom avant et arrière.|  
+|Panoramique|Le **panoramique** , un cercle contenant quatre flèches qui pointent dans quatre directions, est située sous la barre de défilement verticale sur le côté droit de l’aire de conception juste en dessous de l’icône de zoom (jumelles). Si vous cliquez sur l'icône de panoramique, un menu contextuel affiche les options de curseur suivantes :<br /><br /> -La **zoom avant** curseur de loupe vous permet de faire un zoom en cliquant sur l’aire de conception.<br />-La **Zoom arrière** curseur de loupe vous permet d’effectuer un zoom arrière en cliquant sur l’aire de conception.<br />-La **outil de Navigation** main vous permet de « saisissez » et déplacez la vue d’un flux de travail dans l’aire de conception.<br />-La **par défaut** pointeur vous permet de basculer d’autres curseurs vers le pointeur par défaut.|  
+|Défilement automatique|En cas de workflow de grande taille, vous pouvez placer une activité au delà de l'affichage visible de la zone d'aire de conception. [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] vous permet de faire glisser une activité vers le bord de l'aire de conception, près de l'emplacement où vous souhaitez placer l'activité. La vue de l'aire de conception défile automatiquement dans cette direction.|  
+|Balises actives|Les activités qui ne sont pas configurées complètement ou correctement sont signalées par une icône en forme de point d'exclamation. Vous pouvez cliquer sur l’icône afin d’afficher la liste déroulante des besoins de configuration répertoriés pour cette activité. Vous pouvez ensuite utiliser le **propriétés** fenêtre Configurer l’activité de manière appropriée. Une fois que toutes les propriétés sont valides pour l'activité, l'icône de point d'exclamation disparaît.|  
   
-## Dans cette section  
- [Visual Studio pour Windows Workflow \(hérité\)](../workflow-designer/visual-studio-workflow-windows-legacy.md)  
+## <a name="in-this-section"></a>Dans cette section  
+ [Visual Studio pour Windows Workflow (hérité)](../workflow-designer/visual-studio-workflow-windows-legacy.md)  
   
- [Création de projets de workflows hérités](../workflow-designer/creating-legacy-workflow-projects.md)  
+ [Création de projets de flux de travail hérités](../workflow-designer/creating-legacy-workflow-projects.md)  
   
- [Vues de workflow séquentiel \(héritées\)](../workflow-designer/sequential-workflow-views-legacy.md)  
+ [Vues Flux de travail séquentiels (hérité)](../workflow-designer/sequential-workflow-views-legacy.md)  
   
- [Activités de workflow héritées](../workflow-designer/legacy-workflow-activities.md)  
+ [Activités de flux de travail héritées](../workflow-designer/legacy-workflow-activities.md)  
   
- [Utilisation de thèmes dans les workflows \(hérités\)](../workflow-designer/using-themes-in-workflows-legacy.md)  
+ [Utilisation de thèmes dans les flux de travail (hérité)](../workflow-designer/using-themes-in-workflows-legacy.md)  
   
- [Utilisation du Concepteur de Workflow d'ordinateur d'état hérité](../workflow-designer/using-the-legacy-state-machine-workflow-designer.md)  
+ [Utilisation du Concepteur de flux de travail de machine à états hérité](../workflow-designer/using-the-legacy-state-machine-workflow-designer.md)  
   
- [Utilisation du concepteur d'activités hérité](../workflow-designer/using-the-legacy-activity-designer.md)  
+ [Utilisation du concepteur d’activités hérité](../workflow-designer/using-the-legacy-activity-designer.md)  
   
- [Aide de l'interface utilisateur du concepteur hérité pour Windows Workflow Foundation](../workflow-designer/legacy-designer-for-windows-workflow-foundation-ui-help.md)  
+ [Aide de l’interface utilisateur du concepteur hérité pour Windows Workflow Foundation](../workflow-designer/legacy-designer-for-windows-workflow-foundation-ui-help.md)  
   
-## Voir aussi  
- [Développement de workflows](http://go.microsoft.com/fwlink?LinkID=65010)
+## <a name="see-also"></a>Voir aussi  
+ [Développement de flux de travail](http://go.microsoft.com/fwlink?LinkID=65010)

@@ -1,5 +1,5 @@
 ---
-title: Design-Time Code Generation by using T4 Text Templates | Microsoft Docs
+title: "Génération du Code à l’aide de modèles de texte T4 au moment du design | Documents Microsoft"
 ms.custom: 
 ms.date: 11/04/2016
 ms.reviewer: 
@@ -15,100 +15,85 @@ helpviewer_keywords:
 - Text Template project item
 - text templates, generating code for your application
 ms.assetid: 2774b83d-1adb-4c66-a607-746e019b80c0
-caps.latest.revision: 38
+caps.latest.revision: "38"
 author: alancameronwills
 ms.author: awills
 manager: douge
-translation.priority.ht:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
+ms.openlocfilehash: 2444687c420feb1b7e949df349d3e609f1c542d0
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
 ms.translationtype: MT
-ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
-ms.openlocfilehash: 8ff212816453d257829c7c1a802cf8669f0482c0
-ms.contentlocale: fr-fr
-ms.lasthandoff: 08/28/2017
-
+ms.contentlocale: fr-FR
+ms.lasthandoff: 10/27/2017
 ---
-# <a name="design-time-code-generation-by-using-t4-text-templates"></a>Design-Time Code Generation by using T4 Text Templates
-Design-time T4 text templates let you generate program code and other files in your [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] project. Typically, you write the templates so that they vary the code that they generate according to data from a *model*. A model is a file or database that contains key information about your application's requirements.  
+# <a name="design-time-code-generation-by-using-t4-text-templates"></a>Génération de code au moment du design à l’aide de modèles de texte T4
+Les modèles de texte T4 au moment de la conception vous permettent de générer du code de programme et d'autres fichiers dans votre projet [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]. En règle générale, vous écrivez les modèles pour qu’ils varient le code qu’ils génèrent en fonction des données d’une *modèle*. Un modèle est un fichier ou la base de données qui contient des informations clés sur les exigences de votre application.  
   
- For example, you could have a model that defines a workflow, either as a table or a diagram. From the model, you can generate the software that executes the workflow. When your users' requirements change, it is easy to discuss the new workflow with the users. Regenerating the code from the workflow is more reliable than updating the code by hand.  
+ Par exemple, vous pourriez avoir un modèle qui définit un flux de travail sous la forme d'un tableau ou d'un diagramme. À partir du modèle, vous pouvez générer le logiciel qui exécute le flux de travail. Lorsque les exigences de vos utilisateurs changent, il est facile de discuter du nouveau flux de travail avec les utilisateurs. La regénération du code à partir du flux de travail est plus fiable que la mise à jour manuelle du code.  
   
 > [!NOTE]
->  A *model* is a data source that describes a particular aspect of an application. It can be any form, in any kind of file or database. It does not have to be in any particular form, such as a UML model or Domain-Specific Language model. Typical models are in the form of tables or XML files.  
+>  A *modèle* est une source de données qui décrit un aspect particulier d’une application. Il peut assumer n'importe quelle forme, dans n'importe quel genre de fichier ou de base de données. Il n'est pas obligatoire qu'il soit dans un format spécifique, tel qu'un modèle UML ou un modèle de langage spécifique à un domaine. Les modèles les plus courants assument la forme de tableaux ou de fichiers XML.  
   
- You are probably already familiar with code generation. When you define resources in a **.resx** file in your [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] solution, a set of classes and methods is generated automatically. The resources file makes it much easier and more reliable to edit the resources than it would be if you had to edit the classes and methods. With text templates, you can generate code in the same manner from a source of your own design.  
+ Vous connaissez sans doute déjà le concept de génération de code. Lorsque vous définissez des ressources dans un **.resx** de fichiers dans votre [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] solution, un ensemble de classes et méthodes est généré automatiquement. Le fichier de ressources simplifie et rend plus fiable la modification des ressources, par rapport à la modification manuelle des classes et des méthodes. Avec les modèles de texte, vous pouvez générer du code de la même façon à partir d'une source que vous avez conçue vous-même.  
   
- A text template contains a mixture of the text that you want to generate, and program code that generates variable parts of the text. The program code and allows you to repeat or conditionally omit parts of the generated text. The generated text can itself be program code that will form part of your application.  
+ Un modèle de texte contient une combinaison du texte que vous souhaitez générer et du code de programme qui génère des parties variables du texte. Le code de programme vous permet de répéter ou d'omettre de manière conditionnelle des parties du texte généré. Le texte généré peut lui-même être du code de programme qui constituera une partie de votre application.  
   
-## <a name="creating-a-design-time-t4-text-template"></a>Creating a Design-Time T4 Text Template  
+## <a name="creating-a-design-time-t4-text-template"></a>Création d'un modèle de texte T4 au moment de la conception  
   
-#### <a name="to-create-a-design-time-t4-template-in-visual-studio"></a>To create a design-time T4 template in Visual Studio  
+#### <a name="to-create-a-design-time-t4-template-in-visual-studio"></a>Pour créer un modèle T4 au moment du design dans Visual Studio  
   
-1.  Create a [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] project, or open an existing one.  
+1.  Créer un [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] projet ou ouvrez-en une existante.  
   
-     For example, on the **File** menu, choose **New**, **Project**.  
+     Par exemple, sur le **fichier** menu, choisissez **nouveau**, **projet**.  
   
-2.  Add a text template file to your project and give it a name that has the extension **.tt**.  
+2.  Ajouter un fichier de modèle de texte à votre projet et donnez-lui un nom qui a l’extension **.tt**.  
   
-     To do this, in **Solution Explorer**, on the shortcut menu of your project, choose **Add**, **New Item**. In the **Add New Item** dialog box select **Text Template** from the middle pane.  
+     Pour ce faire, dans **l’Explorateur de solutions**, dans le menu contextuel de votre projet, choisissez **ajouter**, **un nouvel élément**. Dans le **ajouter un nouvel élément** boîte de dialogue Sélectionnez **modèle de texte** dans le volet central.  
   
-     Notice that the **Custom Tool** property of the file is **TextTemplatingFileGenerator**.  
+     Notez que la **un outil personnalisé** propriété du fichier est **TextTemplatingFileGenerator**.  
   
-3.  Open the file. It will already contain the following directives:  
+3.  Ouvrez le fichier. Il contient déjà les directives suivantes :  
   
     ```  
     <#@ template hostspecific="false" language="C#" #>  
     <#@ output extension=".txt" #>  
     ```  
   
-     If you added the template to a [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] project, the language attribute will be "`VB`".  
+     Si vous avez ajouté le modèle à un projet [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)], l'attribut de langage est « `VB` ».  
   
-4.  Add some text at the end of the file. For example:  
+4.  Ajoutez du texte à la fin du fichier. Par exemple :  
   
     ```  
     Hello, world!  
     ```  
   
-5.  Save the file.  
+5.  Enregistrez le fichier.  
   
-     You might see a **Security Warning** message box that asks you to confirm that you want to run the template. Click **OK**.  
+     Vous pouvez voir un **avertissement de sécurité** boîte de message qui vous invite à confirmer que vous souhaitez exécuter le modèle. Cliquez sur **OK**.  
   
-6.  In **Solution Explorer**, expand the template file node and you will find a file that has the extension **.txt**. The file contains the text generated from the template.  
+6.  Dans **l’Explorateur de solutions**, développez le nœud de fichier de modèle et vous y trouverez un fichier ayant l’extension **.txt**. Ce fichier contient le texte généré à partir du modèle.  
   
     > [!NOTE]
-    >  If your project is a Visual Basic project, you must click **Show All Files** in order to see the output file.  
+    >  Si votre projet est un projet Visual Basic, vous devez cliquer sur **afficher tous les fichiers** pour afficher le fichier de sortie.  
   
-### <a name="regenerating-the-code"></a>Regenerating the code  
- A template will be executed, generating the subsidiary file, in any of the following cases:  
+### <a name="regenerating-the-code"></a>Regénération du code  
+ Un modèle est exécuté, générant le fichier auxiliaire, dans les cas suivants :  
   
--   Edit the template and then change focus to a different [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] window.  
+-   Modifiez le modèle, puis faites basculer le focus vers une autre fenêtre [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)].  
   
--   Save the template.  
+-   Enregistrez le modèle.  
   
--   Click **Transform All Templates** in the **Build** menu. This will transform all the templates in the [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] solution.  
+-   Cliquez sur **transformer tous les modèles** dans les **générer** menu. Cette action transforme tous les modèles dans la solution [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)].  
   
--   In **Solution Explorer**, on the shortcut menu of any file, choose **Run Custom Tool**. Use this method to transform a selected subset of templates.  
+-   Dans **l’Explorateur de solutions**, dans le menu contextuel de n’importe quel fichier, choisissez **exécuter un outil personnalisé**. Appliquez cette méthode pour transformer un sous-ensemble de modèles sélectionné.  
   
- You can also set up a [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] project so that the templates are executed when the data files that they read have changed. For more information, see [Regenerating the code automatically](#Regenerating).  
+ Vous pouvez aussi configurer un projet [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] pour que les modèles soient exécutés quand les fichiers de données qu'ils lisent ont changé. Pour plus d’informations, consultez [régénération automatique du code](#Regenerating).  
   
-## <a name="generating-variable-text"></a>Generating Variable Text  
- Text templates let you use program code to vary the content of the generated file.  
+## <a name="generating-variable-text"></a>Génération de texte variable  
+ Les modèles de texte vous permettent d'utiliser du code de programme pour varier le contenu du fichier généré.  
   
-#### <a name="to-generate-text-by-using-program-code"></a>To generate text by using program code  
+#### <a name="to-generate-text-by-using-program-code"></a>Pour générer du texte à l'aide de code de programme  
   
-1.  Change the content of the `.tt` file:  
+1.  Modifiez le contenu du fichier `.tt` :  
   
     ```csharp  
     <#@ template hostspecific="false" language="C#" #>  
@@ -135,38 +120,38 @@ Design-time T4 text templates let you generate program code and other files in y
   
     ```  
   
-2.  Save the .tt file, and inspect the generated .txt file again. It lists the squares of the numbers from 0 to 10.  
+2.  Enregistrez le fichier .tt et inspectez de nouveau le fichier .txt généré. Il mentionne les carrés des chiffres de 0 à 10.  
   
- Notice that statements are enclosed within `<#...#>`, and single expressions within `<#=...#>`. For more information, see [Writing a T4 Text Template](../modeling/writing-a-t4-text-template.md).  
+ Notez que les instructions sont placées entre des signes `<#...#>` et les expressions uniques entre des signes `<#=...#>`. Pour plus d’informations, consultez [l’écriture d’un modèle de texte T4](../modeling/writing-a-t4-text-template.md).  
   
- If you write the generating code in [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)], the `template` directive should contain `language="VB"`. `"C#"` is the default.  
+ Si vous écrivez le code généré en [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)], la directive `template` doit contenir `language="VB"`. `"C#"` est la valeur par défaut.  
   
-## <a name="debugging-a-design-time-t4-text-template"></a>Debugging a Design-Time T4 Text Template  
- To debug a text template:  
+## <a name="debugging-a-design-time-t4-text-template"></a>Débogage d'un modèle de texte T4 au moment de la conception  
+ Pour déboguer un modèle de texte  
   
--   Insert `debug="true"` into the `template` directive. For example:  
+-   Insérez `debug="true"` dans la directive `template`. Par exemple :  
   
      `<#@ template debug="true" hostspecific="false" language="C#" #>`  
   
--   Set breakpoints in the template, in the same way that you would for ordinary code.  
+-   Définissez des points d'arrêt dans le modèle comme vous le feriez pour du code ordinaire.  
   
--   Choose **Debug T4 Template** from the shortcut menu of the text template file in Solution Explorer.  
+-   Choisissez **déboguer le modèle T4** dans le menu contextuel du fichier de modèle de texte dans l’Explorateur de solutions.  
   
- The template will run and stop at the breakpoints. You can examine variables and step through the code in the usual way.  
+ Le modèle s'exécute et s'arrête aux points d'arrêt. Vous pouvez examiner les variables et parcourir le code de manière normale.  
   
 > [!TIP]
->  `debug="true"` makes the generated code map more accurately to the text template, by inserting more line numbering directives into the generated code. If you leave it out, breakpoints might stop the run in the wrong state.  
+>  Avec `debug="true"`, le mappage du code généré au modèle de texte est plus précis car davantage de directives de numérotation de lignes sont insérées dans le code généré. Si vous ne le spécifiez pas, les points d'arrêt risquent d'arrêter l'exécution dans l'état incorrect.  
 >   
->  But you can leave the clause in the template directive even when you are not debugging. This causes only a very small drop in performance.  
+>  Mais vous pouvez laisser la clause dans la directive de modèle même quand vous ne déboguez pas. Cela ne provoque qu'une très faible dégradation des performances.  
   
-## <a name="generating-code-or-resources-for-your-solution"></a>Generating Code or Resources for Your Solution  
- You can generate program files that vary, depending on a model. A model is an input such as a database, configuration file, UML model, DSL model, or other source. You usually generate several program files are from the same model. To achieve this, you create a template file for each generated program file, and have all the templates read the same model.  
+## <a name="generating-code-or-resources-for-your-solution"></a>Génération de code ou de ressources pour votre solution  
+ Vous pouvez générer des fichiers programmes qui varient en fonction d'un modèle. Un modèle est une entrée telle qu'une base de données, un fichier de configuration, un modèle UML, un modèle DSL ou autre source. En général, plusieurs fichiers programmes sont générés à partir du même modèle. Pour cela, vous devez créer un fichier de modèle pour chaque fichier programme généré et faire en sorte que tous les modèles lisent le même modèle.  
   
-#### <a name="to-generate-program-code-or-resources"></a>To generate program code or resources  
+#### <a name="to-generate-program-code-or-resources"></a>Pour générer du code de programme ou des ressources  
   
-1.  Change the output directive to generate a file of the appropriate type, such as .cs, .vb, .resx, or .xml.  
+1.  Modifiez la directive de sortie pour générer un fichier du type approprié, tel que .cs, .vb, .resx ou .xml.  
   
-2.  Insert code that will generate the solution code that you require. For example, if you want to generate three integer field declarations in a class:  
+2.  Insérez du code qui générera le code de solution nécessaire. Par exemple, si vous souhaitez générer trois déclarations de champ de nombres entiers dans une classe :  
   
     ```csharp  
   
@@ -199,7 +184,7 @@ Design-time T4 text templates let you generate program code and other files in y
   
     ```  
   
-3.  Save the file and inspect the generated file, which now contains the following code:  
+3.  Enregistrez le fichier est inspectez le fichier généré, qui contient maintenant le code suivant :  
   
     ```  
     class MyGeneratedClass {  
@@ -209,26 +194,26 @@ Design-time T4 text templates let you generate program code and other files in y
     }  
     ```  
   
-### <a name="generating-code-and-generated-text"></a>Generating Code and Generated Text  
- When you generate program code, it is most important to avoid confusing the generating code that executes in your template, and the resulting generated code that becomes part of your solution. The two languages do not have to be the same.  
+### <a name="generating-code-and-generated-text"></a>Génération de code et texte généré  
+ Quand vous générez du code de programme, vous devez éviter toute confusion entre le code de génération qui s'exécute dans votre modèle et le code généré résultant qui devient partie intégrante de votre solution. Il n'est pas obligatoire que les deux langages soient identiques.  
   
- The previous example has two versions. In one version, the generating code is in C#. In the other version, the generating code is Visual Basic. But the text generated by both of them is the same, and it is a C# class.  
+ L'exemple précédent comporte deux versions. Dans une version, le code de génération est en C#. Dans l'autre version, le code de génération est en Visual Basic. Mais le texte généré par ces deux versions est identique et il s'agit d'une classe C#.  
   
- In the same way, you could use a [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] template to generate code in any language. The generated text does not have to be in any particular language, and it does not have to be program code.  
+ De la même manière, vous pourriez utiliser un modèle [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] pour générer du code dans n'importe quel langage. Il n'est pas obligatoire que le texte généré soit dans un langage spécifique et il n'est pas obligatoire que ce soit du code de programme.  
   
-### <a name="structuring-text-templates"></a>Structuring text templates  
- As a matter of good practice, we tend to separate the template code into two parts:  
+### <a name="structuring-text-templates"></a>Structuration des modèles de texte  
+ Une meilleure pratique consiste à séparer le code de modèle en deux parties :  
   
--   A configuration or data-gathering part, which sets values in variables, but does not contain text blocks. In the previous example, this part is the initialization of `properties`.  
+-   Une partie configuration ou collecte de données, qui définit des valeurs dans des variables mais ne contient pas de blocs de texte. Dans l'exemple précédent, cette partie est l'initialisation de `properties`.  
   
-     This is sometimes called the "model" section, because it constructs an in-store model, and typically reads a model file.  
+     On appelle parfois cette section la section « modèle », car elle construit un modèle en magasin et lit généralement un fichier de modèle.  
   
--   The text-generation part (`foreach(...){...}` in the example), which uses the values of the variables.  
+-   La partie génération de texte (`foreach(...){...}` dans l'exemple), qui utilise les valeurs des variables.  
   
- This is not a necessary separation, but it is a style which makes it easier to read the template by reducing the complexity of the part that includes text.  
+ Cette séparation n'est pas obligatoire, mais elle simplifie la lecture du modèle en réduisant la complexité de la partie qui comprend du texte.  
   
-## <a name="reading-files-or-other-sources"></a>Reading files or other sources  
- To access a model file or database, your template code can use assemblies such as System.XML. To gain access to these assemblies, you must insert directives such as these:  
+## <a name="reading-files-or-other-sources"></a>Lecture de fichiers ou d'autres sources  
+ Pour accéder à une base de données ou à un fichier de modèle, votre code de modèle peut utiliser des assemblys tels que System.XML. Pour pouvoir accéder à ces assemblys, vous devez insérer des directives telles que celles-ci :  
   
 ```  
 <#@ assembly name="System.Xml.dll" #>  
@@ -236,9 +221,9 @@ Design-time T4 text templates let you generate program code and other files in y
 <#@ import namespace="System.IO" #>  
 ```  
   
- The `assembly` directive makes the specified assembly available to your template code, in the same manner as the References section of a [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] project. You do not need to include a reference to System.dll, which is referenced automatically. The `import` directive lets you use types without using their fully qualified names, in the same manner as the `using` directive in an ordinary program file.  
+ La directive `assembly` rend l'assembly spécifié accessible à votre code de modèle, de la même manière que la section Références d'un projet [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]. Vous n'êtes pas obligé d'inclure une référence à System.dll, car il est référencé automatiquement. La directive `import` vous permet d'utiliser des types sans utiliser leurs noms qualifiés complets, de la même manière que la directive `using` dans un fichier programme ordinaire.  
   
- For example, after importing **System.IO**, you could write:  
+ Par exemple, après l’importation **System.IO**, vous pouvez écrire :  
   
 ```csharp  
   
@@ -255,15 +240,15 @@ Design-time T4 text templates let you generate program code and other files in y
   
 ```  
   
-### <a name="opening-a-file-with-a-relative-pathname"></a>Opening a file with a relative pathname  
- To load a file from a location relative to the text template, you can use `this.Host.ResolvePath()`. To use this.Host, you must set `hostspecific="true"` in the `template`:  
+### <a name="opening-a-file-with-a-relative-pathname"></a>Ouverture d’un fichier avec un nom de chemin d’accès relatif  
+ Pour charger un fichier à partir d'un emplacement relatif au modèle de texte, vous pouvez utiliser `this.Host.ResolvePath()`. Pour utiliser this.Host, vous devez définir `hostspecific="true"` dans `template` :  
   
 ```  
 <#@ template debug="false" hostspecific="true" language="C#" #>  
   
 ```  
   
- Then you can write, for example:  
+ Ensuite, vous pouvez par exemple écrire :  
   
 ```csharp  
 <# string fileName = this.Host.ResolvePath("filename.txt");  
@@ -286,12 +271,12 @@ Design-time T4 text templates let you generate program code and other files in y
   
 ```  
   
- You can also use `this.Host.TemplateFile`, which identifies the name of the current template file.  
+ Vous pouvez aussi utiliser `this.Host.TemplateFile`, qui identifie le nom du fichier de modèle actuel.  
   
- The type of `this.Host` (in VB, `Me.Host`) is `Microsoft.VisualStudio.TextTemplating.ITextTemplatingEngineHost`.  
+ Le type de `this.Host` (en VB, `Me.Host`) est `Microsoft.VisualStudio.TextTemplating.ITextTemplatingEngineHost`.  
   
-### <a name="getting-data-from-includevsprvscode-qualityincludesvsprvsmdmd"></a>Getting data from [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]  
- To use services provided in [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)], set the `hostSpecific` attribute and load the `EnvDTE` assembly. You can then use IServiceProvider.GetCOMService() to access DTE and other services. For example:  
+### <a name="getting-data-from-includevsprvscode-qualityincludesvsprvsmdmd"></a>Obtention de données à partir de [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]  
+ Pour utiliser des services fournis dans [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)], définissez l'attribut `hostSpecific` et chargez l'assembly `EnvDTE`. Vous pouvez ensuite utiliser IServiceProvider.GetCOMService() pour accéder à DTE et d'autres services. Par exemple :  
   
 ```scr  
 <#@ template hostspecific="true" language="C#" #>  
@@ -307,14 +292,14 @@ Number of projects in this VS solution:  <#= dte.Solution.Projects.Count #>
 ```  
   
 > [!TIP]
->  A text template runs in its own app domain, and services are accessed by marshaling. In this circumstance, GetCOMService() is more reliable than GetService().  
+>  Un modèle de texte s'exécute dans son propre domaine d'application et les services sont accessibles par le marshaling. Dans cette circonstance, GetCOMService() est plus fiable que GetService().  
   
-##  <a name="Regenerating"></a> Regenerating the code automatically  
- Typically, several files in a [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] solution are generated with one input model. Each file is generated from its own template, but the templates all refer to the same model.  
+##  <a name="Regenerating"></a>Régénération automatique du code  
+ En général, plusieurs fichiers d'une solution [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] sont générés avec un seul modèle d'entrée. Chaque fichier est généré à partir de son propre modèle, mais les modèles font tous référence au même modèle.  
   
- If the source model changes, you should re-run all the templates in the solution. To do this manually, choose **Transform All Templates** on the **Build** menu.  
+ Si le modèle source change, vous devez réexécuter tous les modèles de la solution. Pour ce faire manuellement, choisissez **transformer tous les modèles** sur la **générer** menu.  
   
- If you have installed [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] Visualization and Modeling SDK, you can have all the templates transformed automatically whenever you perform a build. To do this, edit your project file (.csproj or .vbproj) in a text editor and add the following lines near the end of the file, after any other `<import>` statements:  
+ Si vous avez installé le Kit de développement logiciel (SDK) de visualisation et de modélisation de [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)], vous pouvez faire en sorte que tous les modèles soient transformés automatiquement chaque fois que vous effectuez une génération. Pour cela, modifiez votre fichier de projet (.csproj or .vbproj) dans un éditeur de texte et ajoutez les lignes suivantes vers la fin du fichier, après toute autre instruction `<import>` :  
 
 
 [!INCLUDE[modeling_sdk_info](includes/modeling_sdk_info.md)]
@@ -328,66 +313,65 @@ Number of projects in this VS solution:  <#= dte.Solution.Projects.Count #>
 </PropertyGroup>  
 ```  
   
- For more information, see [Code Generation in a Build Process](../modeling/code-generation-in-a-build-process.md).  
+ Pour plus d’informations, consultez [génération de Code dans un processus de génération](../modeling/code-generation-in-a-build-process.md).  
   
-## <a name="error-reporting"></a>Error reporting  
- To place error and warning messages in the [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] error window, you can use these methods:  
+## <a name="error-reporting"></a>Signalement des erreurs  
+ Pour placer des messages d'erreur et d'avertissement dans la fenêtre d'erreur de [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)], vous pouvez appliquer les méthodes suivantes :  
   
 ```  
 Error("An error message");  
 Warning("A warning message");  
 ```  
   
-##  <a name="Converting"></a> Converting an existing file to a template  
- A useful feature of templates is that they look very much like the files that they generate, together with some inserted program code. This suggests a useful method of creating a template. First create an ordinary file as a prototype, such as a [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] file, and then gradually introduce generation code that varies the resulting file.  
+##  <a name="Converting"></a>Conversion d’un fichier existant à un modèle  
+ L’une des fonctionnalités utiles des modèles est que leur apparence se rapproche des fichiers qu’ils génèrent, avec en plus du code de programme inséré. Cela nous suggère une méthode utile pour créer un modèle. Tout d’abord créer un fichier ordinaire en tant que prototype, tel qu’un [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] de fichier, puis introduisez graduellement du code de génération qui fait varier le fichier résultant.  
   
-#### <a name="to-convert-an-existing-file-to-a-design-time-template"></a>To convert an existing file to a design-time template  
+#### <a name="to-convert-an-existing-file-to-a-design-time-template"></a>Pour convertir un fichier existant en modèle au moment du design  
   
-1.  To your [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] project, add a file of the type that you want to generate, such as a `.cs`, `.vb`, or `.resx` file.  
+1.  Ajoutez à votre projet [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] un fichier du type que vous souhaitez générer, tel qu'un fichier `.cs`, `.vb` ou `.resx`.  
   
-2.  Test the new file to make sure that it works.  
+2.  Testez le nouveau fichier pour vous assurer qu'il fonctionne.  
   
-3.  In Solution Explorer, change the file name extension to **.tt**.  
+3.  Dans l’Explorateur de solutions, remplacez l’extension de nom de fichier **.tt**.  
   
-4.  Verify the following properties of the **.tt** file:  
+4.  Vérifiez les propriétés suivantes de la **.tt** fichier :  
   
     |||  
     |-|-|  
-    |**Custom Tool =**|**TextTemplatingFileGenerator**|  
-    |**Build Action =**|**None**|  
+    |**Outil personnalisé =**|**TextTemplatingFileGenerator**|  
+    |**Action de génération =**|**Aucun**|  
   
-5.  Insert the following lines at the beginning of the file:  
+5.  Insérez les lignes suivantes au début du fichier :  
   
     ```  
     <#@ template debug="false" hostspecific="false" language="C#" #>  
     <#@ output extension=".cs" #>  
     ```  
   
-     If you want to write the generating code of your template in [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)], set the `language` attribute to `"VB"` instead of `"C#"`.  
+     Si vous souhaitez écrire le code génération de votre modèle en [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)], affectez la valeur `language` au lieu de `"VB"` à l'attribut `"C#"`.  
   
-     Set the `extension` attribute to the file name extension for the type of file that you want to generate, for example `.cs`, `.resx`, or `.xml`.  
+     Définissez l'attribut `extension` sur l'extension de nom de fichier correspondant au type de fichier que vous souhaitez générer, par exemple `.cs`, `.resx` ou `.xml`.  
   
-6.  Save the file.  
+6.  Enregistrez le fichier.  
   
-     A subsidiary file is created, with the specified extension. Its properties are correct for the type of file. For example, the **Build Action** property of a .cs file would be **Compile**.  
+     Un fichier auxiliaire est créé, avec l'extension spécifiée. Ses propriétés sont correctes pour le type de fichier. Par exemple, le **Action de génération** propriété d’un fichier .cs serait **compiler**.  
   
-     Verify that the generated file contains the same content as the original file.  
+     Vérifiez que le contenu du fichier généré est identique à celui du fichier d'origine.  
   
-7.  Identify a part of the file that you want to vary. For example, a part that appears only under certain conditions, or a part that is repeated, or where the specific values vary. Insert generating code. Save the file and verify that the subsidiary file is correctly generated. Repeat this step.  
+7.  Identifiez une partie du fichier que vous souhaitez faire varier. Par exemple, une partie qui apparaît uniquement dans certaines conditions, qui est répétée ou dont les valeurs spécifiques varient. Insérez le code de génération. Enregistrez le fichier et vérifiez que le fichier auxiliaire est généré correctement. Répétez cette étape.  
   
-## <a name="guidelines-for-code-generation"></a>Guidelines for Code Generation  
- Please see [Guidelines for Writing T4 Text Templates](../modeling/guidelines-for-writing-t4-text-templates.md).  
+## <a name="guidelines-for-code-generation"></a>Instructions pour la génération de code  
+ Consultez [des recommandations pour les modèles de texte T4 écrit](../modeling/guidelines-for-writing-t4-text-templates.md).  
   
-## <a name="next-steps"></a>Next steps  
+## <a name="next-steps"></a>Étapes suivantes  
   
-|Next step|Topic|  
+|Étape suivante|Rubrique|  
 |---------------|-----------|  
-|Write and debug a more advanced text template, with code that uses auxiliary functions, included files, and external data.|[Writing a T4 Text Template](../modeling/writing-a-t4-text-template.md)|  
-|Generate documents from templates at run time.|[Run-Time Text Generation with T4 Text Templates](../modeling/run-time-text-generation-with-t4-text-templates.md)|  
-|Run text generation outside [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)].|[Generating Files with the TextTransform Utility](../modeling/generating-files-with-the-texttransform-utility.md)|  
-|Transform your data in the form of a domain-specific language.|[Generating Code from a Domain-Specific Language](../modeling/generating-code-from-a-domain-specific-language.md)|  
-|Write directive processors to transform your own data sources.|[Customizing T4 Text Transformation](../modeling/customizing-t4-text-transformation.md)|  
+|Écrire et déboguer un modèle de texte plus avancé, avec du code qui utilise des fonctions auxiliaires, des fichiers inclus et des données externes.|[Écriture d’un modèle de texte T4](../modeling/writing-a-t4-text-template.md)|  
+|Générer des documents à partir de modèles au moment de l'exécution.|[Génération de texte à l’exécution à l’aide des modèles de texte T4](../modeling/run-time-text-generation-with-t4-text-templates.md)|  
+|Exécuter la génération de texte en dehors de [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)].|[Génération de fichiers avec l’utilitaire TextTransform](../modeling/generating-files-with-the-texttransform-utility.md)|  
+|Transformer vos données sous la forme d’un langage spécifique à un domaine.|[Génération de code à partir d’un langage spécifique à un domaine](../modeling/generating-code-from-a-domain-specific-language.md)|  
+|Écrire des processeurs de directive pour transformer vos propres sources de données.|[Personnalisation d’une transformation de texte T4](../modeling/customizing-t4-text-transformation.md)|  
   
-## <a name="see-also"></a>See Also  
- [Guidelines for Writing T4 Text Templates](../modeling/guidelines-for-writing-t4-text-templates.md)
-
+## <a name="see-also"></a>Voir aussi  
+ [Instructions relatives à l’écriture de modèles de texte T4](../modeling/guidelines-for-writing-t4-text-templates.md)

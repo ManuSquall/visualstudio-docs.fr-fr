@@ -1,35 +1,37 @@
 ---
-title: "description, propri&#233;t&#233; (Error) (JavaScript) | Microsoft Docs"
-ms.custom: ""
-ms.date: "01/18/2017"
-ms.prod: "windows-client-threshold"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "devlang-javascript"
-ms.tgt_pltfrm: ""
-ms.topic: "language-reference"
-f1_keywords: 
-  - "Description"
-dev_langs: 
-  - "JavaScript"
-  - "TypeScript"
-  - "DHTML"
-helpviewer_keywords: 
-  - "Description (propriété)"
-  - "gestion des erreurs, erreur (description)"
-  - "erreurs, description"
+title: "Description, propriété (Error) (JavaScript) | Documents Microsoft"
+ms.custom: 
+ms.date: 01/18/2017
+ms.prod: windows-client-threshold
+ms.reviewer: 
+ms.suite: 
+ms.technology: devlang-javascript
+ms.tgt_pltfrm: 
+ms.topic: language-reference
+f1_keywords: Description
+dev_langs:
+- JavaScript
+- TypeScript
+- DHTML
+helpviewer_keywords:
+- error handling, error description
+- Description property
+- errors, description
 ms.assetid: ea727f1e-2041-4400-965c-67e6d47a1ff0
-caps.latest.revision: 18
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 18
+caps.latest.revision: "18"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: 6135951fdf65698ed48b9bbacdcc55c1aac22d41
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.translationtype: MT
+ms.contentlocale: fr-FR
+ms.lasthandoff: 10/27/2017
 ---
-# description, propri&#233;t&#233; (Error) (JavaScript)
+# <a name="description-property-error-javascript"></a>description, propriété (Error) (JavaScript)
 Retourne ou définit la chaîne descriptive associée à une erreur spécifique.  
   
-## Syntaxe  
+## <a name="syntax"></a>Syntaxe  
   
 ```  
   
@@ -37,22 +39,22 @@ object
 .description [= stringExpression]  
 ```  
   
-## Paramètres  
+## <a name="parameters"></a>Paramètres  
  *object*  
- Obligatoire.  Toute instance d'un objet `Error`.  
+ Obligatoire. N’importe quelle instance d’un `Error` objet.  
   
  `stringExpression`  
- Facultatif.  Expression de chaîne contenant une description de l'erreur.  
+ Facultatif. Une expression de chaîne qui contient une description de l’erreur.  
   
-## Notes  
- La propriété **description** contient la chaîne de message d'erreur associée à une erreur spécifique.  Utilisez la valeur contenue dans cette propriété pour avertir un utilisateur d'une erreur.  
+## <a name="remarks"></a>Remarques  
+ Le **description** propriété contient la chaîne de message d’erreur associée à une erreur spécifique. La valeur contenue dans cette propriété permet d’informer l’utilisateur d’une erreur.  
   
- Les propriétés **description** et **message** offrent les mêmes fonctionnalités ; la propriété **description** assure la compatibilité descendante ; la propriété **message** respecte la norme ECMA.  
+ Le **description** et **message** propriétés fournissent les mêmes fonctionnalités ; le **description** propriété offre une compatibilité descendante ; le  **message** propriété respecte la norme ECMA.  
   
-## Exemple  
- L'exemple suivant illustre l'utilisation de la propriété **description**.  
+## <a name="example"></a>Exemple  
+ L’exemple suivant illustre l’utilisation de la **description** propriété.  
   
-```javascript  
+```JavaScript  
 try  
 {  
 // Cause an error:  
@@ -74,12 +76,12 @@ catch(e)
 }  
 ```  
   
-## Configuration requise  
+## <a name="requirements"></a>Spécifications  
  [!INCLUDE[jsv5](../../javascript/reference/includes/jsv5-md.md)]  
   
- **S'applique à** : [Error, objet](../../javascript/reference/error-object-javascript.md)  
+ **S’applique aux**: [objet Error](../../javascript/reference/error-object-javascript.md)  
   
-## Voir aussi  
- [number, propriété \(Error\)](../../javascript/reference/number-property-error-javascript.md)   
- [message, propriété \(Error\)](../../javascript/reference/message-property-error-javascript.md)   
- [name, propriété \(Error\)](../../javascript/reference/name-property-error-javascript.md)
+## <a name="see-also"></a>Voir aussi  
+ [Number, propriété (Error)](../../javascript/reference/number-property-error-javascript.md)   
+ [message, propriété (Error)](../../javascript/reference/message-property-error-javascript.md)   
+ [Propriété name (Error)](../../javascript/reference/name-property-error-javascript.md)

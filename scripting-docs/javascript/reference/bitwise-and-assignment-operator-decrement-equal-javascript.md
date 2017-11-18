@@ -1,59 +1,61 @@
 ---
-title: "AND, op&#233;rateur d&#39;assignation de bits (&amp;=) (JavaScript) | Microsoft Docs"
-ms.custom: ""
-ms.date: "01/18/2017"
-ms.prod: "windows-client-threshold"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "devlang-javascript"
-ms.tgt_pltfrm: ""
-ms.topic: "language-reference"
-f1_keywords: 
-  - "&="
-dev_langs: 
-  - "JavaScript"
-  - "TypeScript"
-  - "DHTML"
-helpviewer_keywords: 
-  - "&= (opérateur)"
-  - "opérateurs d’assignation, au niveau du bit (JavaScript)"
-  - "AND (opérateur)"
-  - "opérateurs de bits, opérateur AND"
+title: "Opérateur d’assignation AND au niveau du bit (&amp;=) (JavaScript) | Documents Microsoft"
+ms.custom: 
+ms.date: 01/18/2017
+ms.prod: windows-client-threshold
+ms.reviewer: 
+ms.suite: 
+ms.technology: devlang-javascript
+ms.tgt_pltfrm: 
+ms.topic: language-reference
+f1_keywords: '&='
+dev_langs:
+- JavaScript
+- TypeScript
+- DHTML
+helpviewer_keywords:
+- '&= operator'
+- assignment operators, bitwise [JavaScript]
+- AND operator
+- bitwise operators, AND operator
 ms.assetid: e7e2eabb-4fc1-4fdc-9dd8-1e6d715371fa
-caps.latest.revision: 10
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 10
+caps.latest.revision: "10"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: dfd2a77e66296cafc6c8403570f0536e1333e081
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.translationtype: MT
+ms.contentlocale: fr-FR
+ms.lasthandoff: 10/27/2017
 ---
-# AND, op&#233;rateur d&#39;assignation de bits (&amp;=) (JavaScript)
-Définit le résultat de l'opération de bits AND sur la valeur d'une variable et la valeur d'une expression.  La variable et l'expression sont traitées comme un entier 32 bits.  
+# <a name="bitwise-and-assignment-operator-amp-javascript"></a>Opérateur d’assignation AND au niveau du bit (&amp;=) (JavaScript)
+Définit le résultat d’une opération AND au niveau du bit sur la valeur d’une variable et la valeur d’une expression. La variable et l’expression sont traités en tant qu’entiers 32 bits.  
   
-## Syntaxe  
+## <a name="syntax"></a>Syntaxe  
   
 ```  
   
 result &= expression  
 ```  
   
-## Paramètres  
+## <a name="parameters"></a>Paramètres  
  `result`  
  Toute variable.  
   
  `expression`  
  Toute expression.  
   
-## Notes  
- Utiliser cet opérateur revient à spécifier :  
+## <a name="remarks"></a>Remarques  
+ À l’aide de cet opérateur est identique à :  
   
-```javascript  
+```JavaScript  
 result = result & expression  
 ```  
   
- L'opérateur [&, opérateur de bits AND](../../javascript/reference/bitwise-and-operator-decrement-javascript.md) examine la représentation binaire des valeurs `result` et `expression` et effectue une opération de bits AND sur celles\-ci.  Le résultat de cette opération est le suivant :  
+ Le [et opérateur (&)](../../javascript/reference/bitwise-and-operator-decrement-javascript.md) examine la représentation binaire des valeurs de `result` et `expression` et effectue une opération AND au niveau du bit sur ces derniers. La sortie de cette opération se comporte comme suit :  
   
-```javascript  
+```JavaScript  
 // 9 is 00000000000000000000000000001001  
 var expr1 = 9;  
   
@@ -64,15 +66,14 @@ var expr2 = 5;
 expr1 &= expr2;  
   
 document.write(expr1);  
-  
 ```  
   
- Lorsque deux expressions possèdent un 1, le résultat comporte un 1.  Sinon, le résultat comporte un 0.  
+ Lorsque les que deux expressions ont un 1 dans un chiffre, le résultat comporte un 1 dans ce chiffre. Dans le cas contraire, le résultat comporte un 0.  
   
-## Configuration requise  
+## <a name="requirements"></a>Spécifications  
  [!INCLUDE[jsv1](../../javascript/misc/includes/jsv1-md.md)]  
   
-## Voir aussi  
- [&, opérateur de bits AND](../../javascript/reference/bitwise-and-operator-decrement-javascript.md)   
+## <a name="see-also"></a>Voir aussi  
+ [Opérateur de bits AND (&)](../../javascript/reference/bitwise-and-operator-decrement-javascript.md)   
  [Priorité des opérateurs](../../javascript/operator-subtractprecedence-javascript.md)   
- [Résumé des opérateurs \(JavaScript\)](../../javascript/misc/operator-subtractsummary-javascript.md)
+ [Résumé des opérateurs (JavaScript)](../../javascript/misc/operator-subtractsummary-javascript.md)
