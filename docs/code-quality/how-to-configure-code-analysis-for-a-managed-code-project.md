@@ -1,57 +1,57 @@
 ---
-title: "Proc&#233;dure&#160;: configurer l’analyse du code pour un projet de code manag&#233; | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-devops-test"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "vs.codeanalysis.propertypages.csvb"
-helpviewer_keywords: 
-  - "analyse du code, sélectionner des ensembles de règles"
-  - "analyse du code, ensemble de règles"
+title: "Comment : configurer l’analyse du Code pour un projet de Code managé | Documents Microsoft"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-code-analysis
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords: vs.codeanalysis.propertypages.csvb
+helpviewer_keywords:
+- code analysis, selecting rule sets
+- code analysis, rule sets
 ms.assetid: 618f6ff3-db0e-46cb-b08d-dfa35e62c9e7
-caps.latest.revision: 33
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
-caps.handback.revision: 33
+caps.latest.revision: "33"
+author: gewarren
+ms.author: gewarren
+manager: ghogen
+ms.openlocfilehash: d62957a75c844d736a1168010616d5cf2c795bee
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: fr-FR
+ms.lasthandoff: 10/31/2017
 ---
-# Proc&#233;dure&#160;: configurer l’analyse du code pour un projet de code manag&#233;
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
-
-Dans [!INCLUDE[vsUltLong](../code-quality/includes/vsultlong_md.md)], [!INCLUDE[vsPreLong](../code-quality/includes/vsprelong_md.md)] et [!INCLUDE[vsPro](../code-quality/includes/vspro_md.md)], vous pouvez sélectionner dans une liste d'analyse du code *rule sets* pour appliquer à un projet de code managé.  L'ensemble de règles par défaut s'intitule Règles Microsoft minimales recommandées.  Vous pouvez appliquer un autre ensemble de règles à un projet ou à tous les projets dans une solution.  
+# <a name="how-to-configure-code-analysis-for-a-managed-code-project"></a>Procédure : configurer l’analyse du code pour un projet de code managé
+Dans [!INCLUDE[vsUltLong](../code-quality/includes/vsultlong_md.md)], [!INCLUDE[vsPreLong](../code-quality/includes/vsprelong_md.md)] et [!INCLUDE[vsPro](../code-quality/includes/vspro_md.md)], vous pouvez choisir parmi une liste d’analyse du code *ensembles de règles* à appliquer à un projet de code managé. L’ensemble de règles par défaut est de règles Microsoft minimales recommandées. Vous pouvez appliquer un autre ensemble de règles à un projet ou à tous les projets dans une solution.  
   
 > [!NOTE]
->  Pour plus d'informations sur la configuration d'un ensemble de règles pour les applications Web ASP.NET, consultez [Comment : configurer l'analyse du code pour une application Web ASP.NET](../code-quality/how-to-configure-code-analysis-for-an-aspnet-web-application.md).  
+>  Pour plus d’informations sur la configuration d’un ensemble de règles pour les applications Web ASP.NET, consultez [Comment : configurer l’analyse du Code pour une Application Web ASP.NET](../code-quality/how-to-configure-code-analysis-for-an-aspnet-web-application.md).  
   
-### Pour configurer un ensemble de règles pour un projet .NET Framework  
+### <a name="to-configure-a-rule-set-for-a-net-framework-project"></a>Pour configurer un ensemble de règles pour un projet .NET Framework  
   
-1.  Dans l'**Explorateur de solutions**, cliquez sur le projet.  
+1.  Dans **l’Explorateur de solutions**, cliquez sur le projet.  
   
-2.  Dans le menu **Analyser**, cliquez sur **Configurer l'analyse du code pour** *ProjectName*.  
+2.  Sur le **analyser** menu, cliquez sur **configurer l’analyse du Code pour** *nom_projet*.  
   
-3.  Dans les listes **Configuration** et **Plateforme**, cliquez sur la configuration de build et la plateforme cible.  
+3.  Dans le **Configuration** et **plateforme** listes, cliquez sur la build configuration et la plateforme cible.  
   
-4.  Pour exécuter une analyse du code chaque fois que le projet est généré à l'aide de la configuration sélectionnée, activez la case à cocher **Activer l'analyse du code lors de la build \(définit la constante CODE\_ANALYSIS\)**.  Exécutez manuellement l'analyse du code en ouvrant le menu **Analyser** et en cliquant sur **Exécuter l'analyse du code sur** *ProjectName*.  
+4.  Pour exécuter l’analyse du code chaque fois que le projet est généré à l’aide de la configuration sélectionnée, sélectionnez le **activer analyse du Code sur la Build (définit la constante CODE_ANALYSIS)** case à cocher. Vous pouvez également exécuter manuellement l’analyse du code en ouvrant le **analyser** menu et en cliquant sur **exécuter l’analyse du Code sur** *nom_projet*.  
   
-5.  Par défaut, l'analyse du code ne signale pas d'avertissements pour le code généré automatiquement par les outils externes.  Pour consulter les avertissements relatifs au code généré, désactivez la case à cocher **Supprimer les résultats du code généré**.  
+5.  Par défaut, l'analyse du code ne signale pas d'avertissements pour le code généré automatiquement par les outils externes. Pour afficher les avertissements du code généré, désactivez le **supprimer les résultats du code généré** case à cocher.  
   
     > [!NOTE]
-    >  Cette option ne supprime pas les erreurs d'analyse du code et les avertissements du code généré qui apparaissent dans les formulaires et les modèles.  Vous pouvez afficher et maintenir le code source pour un formulaire ou un modèle.  
+    >  Cette option ne supprime pas les erreurs d'analyse du code et les avertissements du code généré qui apparaissent dans les formulaires et les modèles. Vous pouvez afficher et gérer le code source pour un formulaire ou un modèle.  
   
-6.  Dans la liste déroulante **Exécuter cet ensemble de règles**, effectuez l'une des opérations suivantes :  
+6.  Dans le **exécuter cet ensemble de règles** liste, effectuez l’une des opérations suivantes :  
   
-    -   Cliquez sur l'ensemble de règles que vous voulez utiliser.  
+    -   Cliquez sur l’ensemble de règles que vous souhaitez utiliser.  
   
-    -   Cliquez sur **\<Parcourir…\>** pour spécifier un ensemble de règles personnalisé existant qui ne figure pas dans la liste.  
+    -   Cliquez sur  **\<Parcourir... >** pour spécifier une règle personnalisée existante du jeu qui n’est pas dans la liste.  
   
     -   Définissez un ensemble de règles personnalisé.  
   
-         Pour plus d'informations, consultez [Création d'ensembles de règles personnalisés](../code-quality/creating-custom-code-analysis-rule-sets.md).  
+         Pour plus d’informations, consultez [création d’ensembles de règles personnalisés](../code-quality/creating-custom-code-analysis-rule-sets.md).  
   
-## Voir aussi  
+## <a name="see-also"></a>Voir aussi  
  [Procédure pas à pas : configuration et utilisation d’un ensemble de règles personnalisé](../code-quality/walkthrough-configuring-and-using-a-custom-rule-set.md)

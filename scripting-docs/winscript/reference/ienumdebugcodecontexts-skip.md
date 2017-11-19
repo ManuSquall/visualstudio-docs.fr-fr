@@ -1,27 +1,30 @@
 ---
-title: "IEnumDebugCodeContexts::Skip | Microsoft Docs"
-ms.custom: ""
-ms.date: "01/18/2017"
-ms.prod: "windows-script-interfaces"
-ms.reviewer: ""
-ms.suite: ""
-ms.tgt_pltfrm: ""
-ms.topic: "reference"
+title: IEnumDebugCodeContexts::Skip | Documents Microsoft
+ms.custom: 
+ms.date: 01/18/2017
+ms.prod: windows-script-interfaces
+ms.reviewer: 
+ms.suite: 
+ms.tgt_pltfrm: 
+ms.topic: reference
 apiname: IEnumDebugCodeContexts.Skip
 apilocation: jscript.dll
-helpviewer_keywords: 
-  - "IEnumDebugCodeContexts::Skip"
+helpviewer_keywords: IEnumDebugCodeContexts::Skip
 ms.assetid: ba917f57-f7a9-419f-96d6-8f4378b12c57
-caps.latest.revision: 8
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 8
+caps.latest.revision: "8"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: d053fdfe079636755acf125f5a2c02f8690b2a53
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.translationtype: MT
+ms.contentlocale: fr-FR
+ms.lasthandoff: 10/27/2017
 ---
-# IEnumDebugCodeContexts::Skip
-Ignore un nombre spécifié de segments dans une séquence d'énumération.  
+# <a name="ienumdebugcodecontextsskip"></a>IEnumDebugCodeContexts::Skip
+Ignore un nombre spécifié de segments dans une séquence d’énumération.  
   
-## Syntaxe  
+## <a name="syntax"></a>Syntaxe  
   
 ```  
 HRESULT Skip(  
@@ -29,19 +32,19 @@ HRESULT Skip(
 );  
 ```  
   
-#### Paramètres  
+#### <a name="parameters"></a>Paramètres  
  `celt`  
- \[in\]  Nombre de segments de la séquence d'énumération à ignorer.  
+ [in] Nombre de segments dans la séquence d’énumération à ignorer.  
   
-## Valeur de retour  
- La méthode retourne `HRESULT`.  Les valeurs possibles incluent, mais ne sont pas limitées à, celles dans le tableau suivant.  
+## <a name="return-value"></a>Valeur de retour  
+ La méthode retourne `HRESULT`. Les valeurs possibles sont notamment celles figurant dans le tableau suivant.  
   
 |Valeur|Description|  
-|------------|-----------------|  
+|-----------|-----------------|  
 |`S_OK`|La méthode a réussi.|  
   
-## Notes  
- Cette méthode ignore un nombre spécifié de segments dans une séquence d'énumération.  
+## <a name="remarks"></a>Remarques  
+ Cette méthode ignore un nombre spécifié de segments dans une séquence d’énumération.  
   
-## Voir aussi  
- [IEnumDebugCodeContexts, interface](../../winscript/reference/ienumdebugcodecontexts-interface.md)
+## <a name="see-also"></a>Voir aussi  
+ [Interface IEnumDebugCodeContexts](../../winscript/reference/ienumdebugcodecontexts-interface.md)

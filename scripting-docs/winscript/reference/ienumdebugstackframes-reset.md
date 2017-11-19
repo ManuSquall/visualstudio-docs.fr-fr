@@ -1,44 +1,47 @@
 ---
-title: "IEnumDebugStackFrames::Reset | Microsoft Docs"
-ms.custom: ""
-ms.date: "01/18/2017"
-ms.prod: "windows-script-interfaces"
-ms.reviewer: ""
-ms.suite: ""
-ms.tgt_pltfrm: ""
-ms.topic: "reference"
+title: IEnumDebugStackFrames::Reset | Documents Microsoft
+ms.custom: 
+ms.date: 01/18/2017
+ms.prod: windows-script-interfaces
+ms.reviewer: 
+ms.suite: 
+ms.tgt_pltfrm: 
+ms.topic: reference
 apiname: IEnumDebugStackFrames.Reset
 apilocation: jscript.dll
-helpviewer_keywords: 
-  - "IEnumDebugStackFrames::Reset"
+helpviewer_keywords: IEnumDebugStackFrames::Reset
 ms.assetid: 57be2683-5346-4464-bdf5-6fd45b56253a
-caps.latest.revision: 8
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 8
+caps.latest.revision: "8"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: 46ff707795354902c19e9a9c1b425bb960af50bf
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.translationtype: MT
+ms.contentlocale: fr-FR
+ms.lasthandoff: 10/27/2017
 ---
-# IEnumDebugStackFrames::Reset
-Réinitialise une séquence d'énumération.  
+# <a name="ienumdebugstackframesreset"></a>IEnumDebugStackFrames::Reset
+Réinitialise la séquence d’énumération au début.  
   
-## Syntaxe  
+## <a name="syntax"></a>Syntaxe  
   
 ```  
 HRESULT Reset();  
 ```  
   
-#### Paramètres  
- Cette méthode n'accepte pas de paramètres.  
+#### <a name="parameters"></a>Paramètres  
+ Cette méthode ne prend aucun paramètre.  
   
-## Valeur de retour  
- La méthode retourne `HRESULT`.  Les valeurs possibles incluent, mais ne sont pas limitées à, celles dans le tableau suivant.  
+## <a name="return-value"></a>Valeur de retour  
+ La méthode retourne `HRESULT`. Les valeurs possibles sont notamment celles figurant dans le tableau suivant.  
   
 |Valeur|Description|  
-|------------|-----------------|  
+|-----------|-----------------|  
 |`S_OK`|La méthode a réussi.|  
   
-## Notes  
- Cette méthode réinitialise une séquence d'énumération au début.  
+## <a name="remarks"></a>Remarques  
+ Cette méthode réinitialise la séquence d’énumération au début.  
   
-## Voir aussi  
- [IEnumDebugStackFrames, interface](../../winscript/reference/ienumdebugstackframes-interface.md)
+## <a name="see-also"></a>Voir aussi  
+ [Interface IEnumDebugStackFrames](../../winscript/reference/ienumdebugstackframes-interface.md)

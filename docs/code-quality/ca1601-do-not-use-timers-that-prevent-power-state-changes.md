@@ -1,44 +1,45 @@
 ---
-title: "CA1601&#160;: Ne pas utiliser de minuteries qui emp&#234;chent les changements d&#39;&#233;tat de l&#39;alimentation | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-devops-test"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "CA1601"
-  - "DoNotUseTimersThatPreventPowerStateChanges"
-helpviewer_keywords: 
-  - "CA1601"
-  - "DoNotUseTimersThatPreventPowerStateChanges"
+title: "CA1601 : Ne pas utiliser de minuteries qui empêchent les changements d’état d’alimentation | Documents Microsoft"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-code-analysis
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords:
+- CA1601
+- DoNotUseTimersThatPreventPowerStateChanges
+helpviewer_keywords:
+- CA1601
+- DoNotUseTimersThatPreventPowerStateChanges
 ms.assetid: b8028c92-0696-4c54-9773-0028f29bda9a
-caps.latest.revision: 15
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
-caps.handback.revision: 15
+caps.latest.revision: "15"
+author: gewarren
+ms.author: gewarren
+manager: ghogen
+ms.openlocfilehash: 5fc42c15beda68472f4a980fe96b0055b70a01cc
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: fr-FR
+ms.lasthandoff: 10/31/2017
 ---
-# CA1601&#160;: Ne pas utiliser de minuteries qui emp&#234;chent les changements d&#39;&#233;tat de l&#39;alimentation
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
-
+# <a name="ca1601-do-not-use-timers-that-prevent-power-state-changes"></a>CA1601 : Ne pas utiliser de minuteries qui empêchent les changements d'état de l'alimentation
 |||  
 |-|-|  
 |TypeName|DoNotUseTimersThatPreventPowerStateChanges|  
 |CheckId|CA1601|  
 |Catégorie|Microsoft.Mobility|  
-|Modification avec rupture|Oui|  
+|Modification avec rupture|Rupture|  
   
-## Cause  
- Une minuterie a un intervalle défini pour se déclencher plus d'une fois par seconde.  
+## <a name="cause"></a>Cause  
+ Une minuterie a un intervalle défini pour se produire plusieurs fois par seconde.  
   
-## Description de la règle  
- Évitez d'effectuer des interrogations ou d'utiliser des minuteries qui se déclenchent plus d'une fois par seconde.  En effet, toute activité périodique supérieure à cette fréquence occupe le processeur et interfère avec les minuteries d'inactivité qui déclenchent la mise en veille de l'écran et des disques durs pour économiser de l'énergie.  
+## <a name="rule-description"></a>Description de la règle  
+ Des interrogations plus souvent qu’une seule fois par seconde ou utiliser des minuteries qui se produisent plus fréquemment qu’une fois par seconde. En effet, toute activité périodique supérieure à cette fréquence occupe le processeur et interfère avec les minuteries d'inactivité qui déclenchent la mise en veille de l'écran et des disques durs pour économiser de l'énergie.  
   
-## Comment corriger les violations  
- Définissez des intervalles pour la minuterie pour qu'elle se déclenche moins d'une fois par seconde.  
+## <a name="how-to-fix-violations"></a>Comment corriger les violations  
+ Définir les intervalles de minuteur se produire moins d’une fois par seconde.  
   
-## Quand supprimer les avertissements  
- Cette règle doit être supprimée uniquement si le déclenchement de la minuterie plus d'une fois par seconde est requis et si les considérations sur la mobilité peuvent être ignorées sans risque.
+## <a name="when-to-suppress-warnings"></a>Quand supprimer les avertissements  
+ Cette règle doit être supprimée uniquement si le déclenchement de la minuterie plus d’une fois par seconde est requis et considérations relatives à la mobilité peut être ignoré sans risque.

@@ -1,34 +1,35 @@
 ---
-title: "D&#233;boguer un exemple de code HTML, CSS et JavaScript | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-debug"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-dev_langs: 
-  - "FSharp"
-  - "VB"
-  - "CSharp"
-  - "C++"
+title: "Exemple de code HTML, CSS et JavaScript de débogage | Documents Microsoft"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-debug
+ms.tgt_pltfrm: 
+ms.topic: article
+dev_langs:
+- CSharp
+- VB
+- FSharp
+- C++
 ms.assetid: 51893967-98c8-4141-ba40-03646f221760
-caps.latest.revision: 13
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 13
+caps.latest.revision: "13"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: 762caca321cdda941fd295306fdfdf73e03b0aae
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: fr-FR
+ms.lasthandoff: 10/31/2017
 ---
-# D&#233;boguer un exemple de code HTML, CSS et JavaScript
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
-
-![S'applique à Windows et Windows Phone](~/debugger/media/windows_and_phone_content.png "windows\_and\_phone\_content")  
+# <a name="debug-html-css-and-javascript-sample-code"></a>Déboguer un exemple de code HTML, CSS et JavaScript
+![S’applique à Windows et Windows Phone](../debugger/media/windows_and_phone_content.png "windows_and_phone_content")  
   
- Le code dans cette rubrique est l'exemple de fichier pour [Démarrage rapide : déboguer du code HTML et CSS](../debugger/quickstart-debug-html-and-css.md).  Les erreurs présentes par conception dans le guide de démarrage rapide sont résolues dans cette version du code.  
+ Le code dans cette rubrique est de l’exemple de fichier pour [démarrage rapide : déboguer du code HTML et CSS](../debugger/quickstart-debug-html-and-css.md). Les erreurs présentes par conception dans le guide de démarrage rapide sont résolues dans cette version du code.  
   
-## Exemple de code  
- Le code HTML suivant est utilisé dans la balise \<body\> du guide de démarrage rapide.  
+## <a name="sample-code"></a>Exemple de code  
+ Le code HTML suivant est utilisé dans le \<corps > balise dans le démarrage rapide.  
   
 ```html  
 <div id="flipTemplate" data-win-control="WinJS.Binding.Template"  
@@ -52,7 +53,7 @@ caps.handback.revision: 13
 }  
 ```  
   
- L'exemple de code suivant affiche le code JavaScript complet dans default.js.  Les références aux espaces de noms WinJS pour ce code se trouvent dans le fichier default.html du modèle.  
+ L'exemple de code suivant affiche le code JavaScript complet dans default.js. Les références aux espaces de noms WinJS pour ce code se trouvent dans le fichier de modèle default.html.  
   
 ```javascript  
 (function () {  
@@ -103,5 +104,5 @@ caps.handback.revision: 13
 })();  
 ```  
   
-## Voir aussi  
+## <a name="see-also"></a>Voir aussi  
  [Démarrage rapide : déboguer du code HTML et CSS](../debugger/quickstart-debug-html-and-css.md)

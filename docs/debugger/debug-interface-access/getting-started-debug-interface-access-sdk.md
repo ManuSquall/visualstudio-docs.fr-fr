@@ -1,54 +1,54 @@
 ---
-title: "Mise en route (Kit de d&#233;veloppement logiciel de Debug&#160;Interface&#160;Access) | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-debug"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "fichiers .dbg"
-  - "fichiers DBG"
+title: Prise en main (Debug Interface Access SDK) | Documents Microsoft
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-debug
+ms.tgt_pltfrm: 
+ms.topic: article
+dev_langs: C++
+helpviewer_keywords:
+- .dbg files
+- DBG files
 ms.assetid: cb3d040a-2846-40d7-bdbc-8a5beb5dd2f6
-caps.latest.revision: 15
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 15
+caps.latest.revision: "15"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: 938aaf760a2a6305580331945875391e6ad819af
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: fr-FR
+ms.lasthandoff: 10/31/2017
 ---
-# Mise en route (Kit de d&#233;veloppement logiciel de Debug&#160;Interface&#160;Access)
-[!INCLUDE[vs2017banner](../../code-quality/includes/vs2017banner.md)]
-
-L'interface Access \(DIA\) Kit de développement logiciel de débogage vous donne à la documentation d'instruction et un exemple qui indique comment utiliser l'API de diamètre.  Utilisez les interfaces et les méthodes du diamètre Kit de développement logiciel pour développer des applications personnalisées qui ouvrent les fichiers .pdb et de .dbg et trouvent leur contenu pour les symboles, des valeurs, des attributs, des adresses, et d'autres informations de débogage.  Ce Kit de développement logiciel fournit également des tables de référence pour les propriétés associées aux symboles présents dans les applications C\+\+.  
+# <a name="getting-started-debug-interface-access-sdk"></a>Mise en route (Kit de développement logiciel de Debug Interface Access)
+Le Debug Interface Access (DIA) SDK vous fournit les instruction documentation et un exemple qui illustre l’utilisation de l’API de DIA. Utilisez les méthodes et interfaces dans le SDK DIA pour développer des applications personnalisées qui ouvrent les fichiers .pdb et .dbg et de rechercher leur contenu pour les symboles, les valeurs, les attributs, les adresses et les autres informations de débogage. Ce kit fournit également des tables de référence pour les propriétés associées aux symboles dans les applications C++.  
   
- Une meilleure utilisation diamètre le Kit de développement, vous devez être familiarisé avec les éléments suivants :  
+ Pour mieux utiliser la DIA SDK, vous devez connaître les éléments suivants :  
   
--   langage de programmation C\+\+  
+-   Langage de programmation C++  
   
--   Programmation COM  
+-   Programmation COM.  
   
--   Environnement de développement intégré Visual \(IDE\) Studio pour compiler les exemples  
+-   Environnement de développement intégré Visual Studio (IDE) pour compiler les exemples  
   
- Le diamètre Kit de développement logiciel est normalement installé avec Visual Studio et son emplacement par défaut est *\[lecteur\]*\\Program Files\\Microsoft Visual Studio 9.0\\DIA SDK.  Dans le cadre de l'installation, le msdia90.dll, qui implémente le diamètre Kit de développement, est enregistré automatiquement ce que vous devez faire pour utiliser qu'il doit inclure `dia2.h` dans votre programme et lien vers `diaguids.lib`.  
+ Le SDK DIA est normalement installé avec Visual Studio et son emplacement par défaut est *[lecteur]*\Program Files\Microsoft 9.0\DIA de Visual Studio SDK. Dans le cadre de l’installation, le msdia90.dll, qui implémente le DIA SDK, est enregistré automatiquement tout ce dont vous devez faire pour utiliser consiste donc à inclure `dia2.h` dans votre programme et un lien vers `diaguids.lib`.  
   
- en\-tête : include \\ dia2.h  
+ En-tête : include\dia2.h  
   
- bibliothèque : lib \\ diaguids.lib  
+ Bibliothèque : lib\diaguids.lib  
   
- DLL : bin \\ msdia80.dll  
+ DLL : bin\msdia80.dll  
   
- IDL : IDL \(interface definition langage\) \\ dia2.idl  
+ IDL : idl\dia2.idl  
   
-## Dans cette section  
+## <a name="in-this-section"></a>Dans cette section  
  [Vue d’ensemble](../../debugger/debug-interface-access/overview-debug-interface-access-sdk.md)  
- examine l'architecture de base du diamètre.  
+ Passe en revue l’architecture de base de DIA.  
   
  [Interrogation du fichier .Pdb](../../debugger/debug-interface-access/querying-the-dot-pdb-file.md)  
- Fournit des instructions pas \- à \- pas sur la façon d'utiliser l'API de diamètre d'interroger un fichier .pdb.  
+ Fournit des instructions détaillées sur l’utilisation de l’API DIA pour interroger un fichier .pdb.  
   
-## Voir aussi  
- [Kit de développement logiciel de Debug Interface Access](../../debugger/debug-interface-access/debug-interface-access-sdk.md)
+## <a name="see-also"></a>Voir aussi  
+ [SDK Debug Interface Access](../../debugger/debug-interface-access/debug-interface-access-sdk.md)

@@ -1,28 +1,29 @@
 ---
-title: "Ensemble de r&#232;gles des r&#232;gles minimales manag&#233;es pour le code manag&#233; | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-devops-test"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+title: "Définir des règles des règles minimales managées pour le code managé | Documents Microsoft"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-code-analysis
+ms.tgt_pltfrm: 
+ms.topic: article
 ms.assetid: 44a50c54-8dd3-42b2-8387-532a150e5a6c
-caps.latest.revision: 2
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
-caps.handback.revision: 2
+caps.latest.revision: "2"
+author: gewarren
+ms.author: gewarren
+manager: ghogen
+ms.openlocfilehash: ac5ec4db1fe36d7e92c4f9062f8d0c28bae2263e
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: fr-FR
+ms.lasthandoff: 10/31/2017
 ---
-# Ensemble de r&#232;gles des r&#232;gles minimales manag&#233;es pour le code manag&#233;
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
-
-Les Règles Minimales Managées sont focalisées sur les problèmes les plus critiques présents dans votre code, comme les failles de sécurité éventuelles, les arrêts brutaux des applications et autres erreurs de logique ou de conception importantes.  Incluez cet ensemble de règles dans tous les ensembles de règles personnalisés que vous créez pour vos projets.  
+# <a name="managed-minimum-rules-rule-set-for-managed-code"></a>Règles de règles minimales managées défini pour le code managé
+Les règles minimales gérées vous concentrer sur les problèmes les plus critiques dans votre code, notamment les failles de sécurité potentielles, application tombe en panne et d’autres erreurs de logique et de conception importantes. Vous devez inclure cet ensemble de règles dans tout ensemble de règles personnalisé que vous créez pour vos projets.  
   
 |Règle|Description|  
-|-----------|-----------------|  
-|[CA1001](../Topic/CA1001:%20Types%20that%20own%20disposable%20fields%20should%20be%20disposable.md)|Les types qui possèdent des champs supprimables doivent être supprimables|  
-|[CA1821](../code-quality/ca1821-remove-empty-finalizers.md)|Supprimer les finaliseurs vides|  
-|[CA2213](../code-quality/ca2213-disposable-fields-should-be-disposed.md)|Les champs pouvant être supprimés doivent l'être|  
-|[CA2231](../code-quality/ca2231-overload-operator-equals-on-overriding-valuetype-equals.md)|Surcharger l'opérateur égal \(equals\) en surchargeant ValueType.Equals|
+|----------|-----------------|  
+|[CA1001](../code-quality/ca1001-types-that-own-disposable-fields-should-be-disposable.md)|Les types qui possèdent des champs supprimables doivent être supprimables|  
+|[CA1821](../code-quality/ca1821-remove-empty-finalizers.md)|Supprimez les finaliseurs vides|  
+|[CA2213](../code-quality/ca2213-disposable-fields-should-be-disposed.md)|Des champs supprimables doivent être supprimés.|  
+|[CA2231](../code-quality/ca2231-overload-operator-equals-on-overriding-valuetype-equals.md)|Surchargez l’opérateur equals en remplaçant ValueType.Equals|

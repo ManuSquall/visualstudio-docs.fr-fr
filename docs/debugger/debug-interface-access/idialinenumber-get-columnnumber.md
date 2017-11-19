@@ -1,47 +1,46 @@
 ---
-title: "IDiaLineNumber::get_columnNumber | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-debug"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "IDiaLineNumber::get_columnNumber (méthode)"
+title: IDiaLineNumber::get_columnNumber | Documents Microsoft
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-debug
+ms.tgt_pltfrm: 
+ms.topic: article
+dev_langs: C++
+helpviewer_keywords: IDiaLineNumber::get_columnNumber method
 ms.assetid: e317f29a-6525-46a7-8421-33985392f8fd
-caps.latest.revision: 8
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 8
+caps.latest.revision: "8"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: 03673b339336cc5c5cdb32b284cf3c7cc1b38998
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: fr-FR
+ms.lasthandoff: 10/31/2017
 ---
-# IDiaLineNumber::get_columnNumber
-[!INCLUDE[vs2017banner](../../code-quality/includes/vs2017banner.md)]
-
-Récupère le numéro de colonne où l'expression ou l'instruction commence.  
+# <a name="idialinenumbergetcolumnnumber"></a>IDiaLineNumber::get_columnNumber
+Récupère le numéro de colonne où commence l’instruction ou expression.  
   
-## Syntaxe  
+## <a name="syntax"></a>Syntaxe  
   
 ```  
 [C++]  
-HRESULT get_columnNumber (   
-   DWORD* pRetVal  
+HRESULT get_columnNumber (   
+   DWORD* pRetVal  
 );  
 ```  
   
-#### Paramètres  
+#### <a name="parameters"></a>Paramètres  
  `pRetVal`  
- \[out\]  Retourne le numéro de colonne où l'expression ou l'instruction commence.  Si la valeur est nulle, les informations sur les colonnes ne sont pas présents.  
+ [out] Retourne le numéro de colonne où commence l’instruction ou expression. Si la valeur est zéro, les informations de colonne ne sont pas présentes.  
   
-## Valeur de retour  
- En cas de réussite, retourne `S_OK`.  Retourne `S_FALSE` si cette propriété n'est pas prise en charge.  Sinon, retourne un code d'erreur.  
+## <a name="return-value"></a>Valeur de retour  
+ En cas de réussite, retourne `S_OK`. Retourne `S_FALSE` si cette propriété n’est pas pris en charge. Sinon, retourne un code d'erreur.  
   
-## Notes  
- La valeur de la colonne retournée par cette méthode est un décalage d'octet vers la ligne au premier caractère de l'instruction sur la ligne.  
+## <a name="remarks"></a>Remarques  
+ La valeur de la colonne retournée par cette méthode est un offset d’octet dans la ligne vers le premier caractère de l’instruction de la ligne.  
   
-## Voir aussi  
+## <a name="see-also"></a>Voir aussi  
  [IDiaLineNumber](../../debugger/debug-interface-access/idialinenumber.md)

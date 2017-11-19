@@ -1,46 +1,29 @@
 ---
-title: IDebugEngine3::SetSymbolPath | Microsoft Docs
+title: IDebugEngine3::SetSymbolPath | Documents Microsoft
 ms.custom: 
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-sdk
+ms.technology: vs-ide-sdk
 ms.tgt_pltfrm: 
 ms.topic: article
-f1_keywords:
-- IDebugEngine3::SetSymbolPath
-helpviewer_keywords:
-- IDebugEngine3::SetSymbolPath
+f1_keywords: IDebugEngine3::SetSymbolPath
+helpviewer_keywords: IDebugEngine3::SetSymbolPath
 ms.assetid: 47b48f84-8a96-401f-84df-0baa8a96d26e
-caps.latest.revision: 12
+caps.latest.revision: "12"
+author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-translation.priority.mt:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
+ms.openlocfilehash: 77a5f294acf60eebc745cb78042e0ea3431fc998
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
 ms.translationtype: MT
-ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
-ms.openlocfilehash: 63c68eab87ec26d3cf20c66e7a53061e8be79186
-ms.contentlocale: fr-fr
-ms.lasthandoff: 08/28/2017
-
+ms.contentlocale: fr-FR
+ms.lasthandoff: 10/31/2017
 ---
 # <a name="idebugengine3setsymbolpath"></a>IDebugEngine3::SetSymbolPath
-Sets the path or paths that are searched for debugging symbols.  
+Définit le chemin d’accès ou les chemins d’accès qui sont recherchée dans les symboles de débogage.  
   
-## <a name="syntax"></a>Syntax  
+## <a name="syntax"></a>Syntaxe  
   
 ```cpp  
 HRESULT SetSymbolPath (  
@@ -58,28 +41,28 @@ int SetSymbolPath(
 );  
 ```  
   
-#### <a name="parameters"></a>Parameters  
+#### <a name="parameters"></a>Paramètres  
   
-|Parameter|Description|  
+|Paramètre|Description|  
 |---------------|-----------------|  
-|`szSymbolSearchPath`|[in] String containing the symbol search path or paths. See "Remarks" for details. Cannot be null.|  
-|`szSymbolCachePath`|[in] String containing the local path where symbols can be cached. Cannot be null.|  
-|`Flags`|[in] Not used; always set to 0.|  
+|`szSymbolSearchPath`|[in] Chaîne contenant le chemin d’accès de recherche de symboles ou les chemins d’accès. Pour plus d’informations, consultez la section « Notes ». Ne peut pas être null.|  
+|`szSymbolCachePath`|[in] Chaîne contenant le chemin d’accès local où les symboles peuvent être mis en cache. Ne peut pas être null.|  
+|`Flags`|[in] Pas utilisé ; toujours défini à 0.|  
   
-## <a name="return-value"></a>Return Value  
- If successful, returns S_OK; otherwise returns an error code.  
+## <a name="return-value"></a>Valeur de retour  
+ En cas de réussite, retourne S_OK ; Sinon, retourne un code d’erreur.  
   
-## <a name="remarks"></a>Remarks  
- The string `szSymbolSearchPath` is a list of one or more paths, separated by semicolons, to search for symbols. These paths can be a local path, a UNC-style path, or a URL. These paths can also be a mix of different types. If the path is UNC (for example, \\\Symserver\Symbols), then the debug engine should determine if the path is to a symbol server and should be able to load symbols from that server, caching them in the path specified by `szSymbolCachePath`.  
+## <a name="remarks"></a>Remarques  
+ La chaîne `szSymbolSearchPath` est une liste d’un ou plusieurs chemins séparés par des points-virgules, rechercher des symboles. Ces chemins d’accès peuvent être un chemin d’accès local, un chemin d’accès UNC-style ou une URL. Ces chemins d’accès peuvent également être un mélange de types différents. Si le chemin d’accès est UNC (par exemple, \\\Symserver\Symbols), puis le moteur de débogage doit déterminer si le chemin d’accès à un serveur de symboles et doit être en mesure de charger les symboles à partir de ce serveur, la mise en cache dans le chemin d’accès spécifié par `szSymbolCachePath`.  
   
- The symbol path can also contain one or more cache locations. Caches are listed in priority order, with the highest priority cache first, and separated by * symbols. For example:  
+ Le chemin d’accès des symboles peut également contenir un ou plusieurs emplacements du cache. Les caches sont répertoriés par ordre de priorité, avec le cache de priorité le plus élevé en premier et séparés par des * symboles. Exemple :  
   
 ```  
 \\symbols\symbols;\\someotherserver\symbols;c:\symbols\httpsymbols*http://msdl.microsoft.com  
 ```  
   
- The [LoadSymbols](../../../extensibility/debugger/reference/idebugengine3-loadsymbols.md) method performs the actual load of the symbols.  
+ Le [LoadSymbols](../../../extensibility/debugger/reference/idebugengine3-loadsymbols.md) méthode exécute la charge réelle des symboles.  
   
-## <a name="see-also"></a>See Also  
+## <a name="see-also"></a>Voir aussi  
  [LoadSymbols](../../../extensibility/debugger/reference/idebugengine3-loadsymbols.md)   
  [IDebugEngine3](../../../extensibility/debugger/reference/idebugengine3.md)

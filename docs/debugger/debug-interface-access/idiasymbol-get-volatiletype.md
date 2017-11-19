@@ -1,49 +1,48 @@
 ---
-title: "IDiaSymbol::get_volatileType | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-debug"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "IDiaSymbol::get_volatileType (méthode)"
+title: IDiaSymbol::get_volatileType | Documents Microsoft
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-debug
+ms.tgt_pltfrm: 
+ms.topic: article
+dev_langs: C++
+helpviewer_keywords: IDiaSymbol::get_volatileType method
 ms.assetid: 19782a4d-40a8-467b-ab7d-58bc4d812309
-caps.latest.revision: 8
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 8
+caps.latest.revision: "8"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: 25d6a52ed1cfa845670b97c63bf90e9e6e262e5e
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: fr-FR
+ms.lasthandoff: 10/31/2017
 ---
-# IDiaSymbol::get_volatileType
-[!INCLUDE[vs2017banner](../../code-quality/includes/vs2017banner.md)]
-
-Extrait une balise qui indique si le type de données défini par \(UDT\) l'utilisateur est volatile.  
+# <a name="idiasymbolgetvolatiletype"></a>IDiaSymbol::get_volatileType
+Récupère un indicateur qui spécifie si le type de données défini par l’utilisateur (UDT) est volatil.  
   
-## Syntaxe  
+## <a name="syntax"></a>Syntaxe  
   
-```cpp#  
-HRESULT get_volatileType (   
-   BOOL* pRetVal  
+```C++  
+HRESULT get_volatileType (   
+   BOOL* pRetVal  
 );  
 ```  
   
-#### Paramètres  
+#### <a name="parameters"></a>Paramètres  
  `pRetVal`  
- \[out\]  Retourne `TRUE` si le type défini par l'utilisateur est volatile ; sinon, retourne `FALSE`.  
+ [out] Retourne `TRUE` si l’UDT est volatile ; sinon, retourne `FALSE`.  
   
-## Valeur de retour  
- En cas de réussite, retourne `S_OK`; sinon, retourne `S_FALSE` ou un code d'erreur.  
+## <a name="return-value"></a>Valeur de retour  
+ En cas de réussite, retourne `S_OK`; sinon, retourne `S_FALSE` ou un code d’erreur.  
   
 > [!NOTE]
->  Une valeur de retour d' `S_FALSE` signifie que la propriété n'est pas disponible pour le symbole.  
+>  La valeur de retour `S_FALSE` signifie que la propriété n’est pas disponible pour le symbole.  
   
-## Notes  
- En C\+\+, un type défini par l'utilisateur peut être marqué avec le mot clé d' `volatile` , indiquant qu'il ne peut pas en supposant que son contenu existe d'un accès au suivant.  
+## <a name="remarks"></a>Remarques  
+ En C++, un type UDT peut être marqué avec le `volatile` (mot clé), indiquant que son contenu ne peut pas être supposé pour exister d’un accès à la suivante.  
   
-## Voir aussi  
+## <a name="see-also"></a>Voir aussi  
  [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

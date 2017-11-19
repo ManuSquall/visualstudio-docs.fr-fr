@@ -1,47 +1,48 @@
 ---
-title: "CA1720&#160;: Les identificateurs ne doivent pas contenir de noms de types | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-devops-test"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "CA1720"
-  - "IdentifiersShouldNotContainTypeNames"
-helpviewer_keywords: 
-  - "IdentifiersShouldNotContainTypeNames"
-  - "CA1720"
+title: "CA1720 : Les identificateurs ne doivent pas contenir de noms de types | Documents Microsoft"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-code-analysis
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords:
+- CA1720
+- IdentifiersShouldNotContainTypeNames
+helpviewer_keywords:
+- IdentifiersShouldNotContainTypeNames
+- CA1720
 ms.assetid: c95ee48f-f23a-45f0-ac9e-a3c1ecfabdea
-caps.latest.revision: 15
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
-caps.handback.revision: 15
+caps.latest.revision: "15"
+author: gewarren
+ms.author: gewarren
+manager: ghogen
+ms.openlocfilehash: 5418bc8d265c32057911df2d3a15aaddacf1398e
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: fr-FR
+ms.lasthandoff: 10/31/2017
 ---
-# CA1720&#160;: Les identificateurs ne doivent pas contenir de noms de types
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
-
+# <a name="ca1720-identifiers-should-not-contain-type-names"></a>CA1720 : Les identificateurs ne doivent pas contenir de noms de types
 |||  
 |-|-|  
 |TypeName|IdentifiersShouldNotContainTypeNames|  
 |CheckId|CA1720|  
 |Catégorie|Microsoft.Naming|  
-|Modification avec rupture|Oui|  
+|Modification avec rupture|Rupture|  
   
-## Cause  
- Le nom d'un paramètre dans un membre visible de l'extérieur contient un nom de type de données.  
+## <a name="cause"></a>Cause  
+ Le nom d’un paramètre dans un membre extérieurement visible contient un nom de type de données.  
   
  ou  
   
- Le nom d'un membre visible de l'extérieur contient un nom de type de données propre à un langage.  
+ Le nom d’un membre extérieurement visible contient un nom de type de données spécifiques au langage.  
   
-## Description de la règle  
- Les noms de paramètres et de membres sont plus efficaces pour véhiculer leur signification que pour décrire leur type, qui devrait être fourni par les outils de développement.  Pour les noms de membres, si un nom de type de données doit être utilisé, utilisez un nom indépendant des langages au lieu d'un nom propre à un langage.  Par exemple, au lieu du nom de type C\# 'int', utilisez le nom de type de données indépendant du langage, Int32.  
+## <a name="rule-description"></a>Description de la règle  
+ Noms de paramètres et les membres sont mieux utilisés pour communiquer leur signification que to décrire leur type, qui doit être fournie par les outils de développement. Pour les noms de membres, si un nom de type de données doit être utilisé, utilisez un nom indépendant du langage au lieu d’une langue spécifique. Par exemple, au lieu du nom de type c# 'int', utilisez le nom de type de données indépendant du langage, Int32.  
   
- Chaque jeton discret dans le nom du paramètre ou du membre est vérifié par rapport aux noms de types de données suivants propres au langage, sans respecter la casse :  
+ Chaque jeton discret dans le nom du paramètre ou le membre est comparée aux noms de types de données spécifiques au langage suivants, sans respecter la casse :  
   
 -   Bool  
   
@@ -71,19 +72,19 @@ caps.handback.revision: 15
   
 -   Signé  
   
--   Float  
+-   Flottant  
   
 -   Float32  
   
 -   Float64  
   
- En outre, les noms d'un paramètre sont également vérifiés par rapport aux noms de types de données suivants indépendants du langage, sans respecter la casse :  
+ En outre, les noms d’un paramètre sont également vérifiés par rapport aux noms de types de données indépendant du langage suivants, sans respecter la casse :  
   
 -   Objet  
   
--   Obj  
+-   obj  
   
--   Boolean  
+-   Booléen  
   
 -   Char  
   
@@ -109,7 +110,7 @@ caps.handback.revision: 15
   
 -   IntPtr  
   
--   Ptr  
+-   PTR  
   
 -   Pointeur  
   
@@ -127,19 +128,19 @@ caps.handback.revision: 15
   
 -   Guid  
   
-## Comment corriger les violations  
- **En cas de déclenchement sur un paramètre :**  
+## <a name="how-to-fix-violations"></a>Comment corriger les violations  
+ **Si le déclenchement sur un paramètre :**  
   
- Remplacez l'identificateur de type de données dans le nom du paramètre par un terme qui décrit mieux sa signification ou par un terme plus générique, tel que « valeur ».  
+ Remplacez l’identificateur de type de données dans le nom du paramètre par un terme qui décrit mieux sa signification ou par un terme plus générique, tel que 'value'.  
   
- **En cas de déclenchement sur un membre :**  
+ **Si le déclenchement sur un membre :**  
   
- Remplacez l'identificateur de type de données propre au langage dans le nom du membre par un terme qui décrit mieux sa signification, par un équivalent indépendant du langage ou par un terme plus générique, tel que « valeur ».  
+ Remplacez l’identificateur de type de données spécifiques au langage dans le nom du membre par un terme qui décrit mieux sa signification, un équivalent indépendant du langage ou un terme plus générique, tel que 'value'.  
   
-## Quand supprimer les avertissements  
- L'utilisation occasionnelle de noms de paramètres et membres fondés sur un type peut être appropriée.  Cependant, dans le cas d'un nouveau développement, aucun scénario connu n'oblige à supprimer un avertissement de cette règle.  Pour des bibliothèques déjà livrées, vous pouvez être amené à supprimer un avertissement de cette règle.  
+## <a name="when-to-suppress-warnings"></a>Quand supprimer les avertissements  
+ L’utilisation occasionnelle de noms de membre et de paramètre basée sur le type peut être appropriée. Toutefois, pour un nouveau développement, aucun autre scénarios se produisent lorsque vous ne devez supprimer un avertissement de cette règle. Pour les bibliothèques déjà livrées, vous devrez peut-être supprimer un avertissement de cette règle.  
   
-## Règles connexes  
+## <a name="related-rules"></a>Règles associées  
  [CA1709 : La casse des identificateurs doit être correcte](../code-quality/ca1709-identifiers-should-be-cased-correctly.md)  
   
  [CA1708 : Les identificateurs ne doivent pas différer que par leur casse](../code-quality/ca1708-identifiers-should-differ-by-more-than-case.md)  

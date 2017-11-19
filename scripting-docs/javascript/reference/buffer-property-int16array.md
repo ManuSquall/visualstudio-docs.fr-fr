@@ -1,38 +1,41 @@
 ---
-title: "buffer, propri&#233;t&#233; (Int16Array) | Microsoft Docs"
-ms.custom: ""
-ms.date: "01/18/2017"
-ms.prod: "windows-client-threshold"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "devlang-javascript"
-ms.tgt_pltfrm: ""
-ms.topic: "language-reference"
-dev_langs: 
-  - "JavaScript"
-  - "TypeScript"
-  - "DHTML"
+title: "Buffer, propriété (Int16Array) | Documents Microsoft"
+ms.custom: 
+ms.date: 01/18/2017
+ms.prod: windows-client-threshold
+ms.reviewer: 
+ms.suite: 
+ms.technology: devlang-javascript
+ms.tgt_pltfrm: 
+ms.topic: language-reference
+dev_langs:
+- JavaScript
+- TypeScript
+- DHTML
 ms.assetid: 22117ad2-d865-47be-b15e-8181de257672
-caps.latest.revision: 7
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 7
+caps.latest.revision: "7"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: 781af9b285af84acff5f268c6a6de821a48681fb
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.translationtype: MT
+ms.contentlocale: fr-FR
+ms.lasthandoff: 10/27/2017
 ---
-# buffer, propri&#233;t&#233; (Int16Array)
-Lecture seule.  Obtient l'ArrayBuffer référencé par ce tableau.  
+# <a name="buffer-property-int16array"></a>buffer, propriété (Int16Array)
+Lecture seule. Obtient l'objet ArrayBuffer référencé par ce tableau.  
   
-## Syntaxe  
+## <a name="syntax"></a>Syntaxe  
   
-```javascript  
+```JavaScript  
 var arrayBuffer = int16Array.buffer;  
 ```  
   
-## Exemple  
- L'exemple suivant montre comment obtenir l'ArrayBuffer du tableau.  
+## <a name="example"></a>Exemple  
+ L'exemple suivant montre comment obtenir le ArrayBuffer du tableau.  
   
-```javascript  
+```JavaScript  
 var req = new XMLHttpRequest();  
     req.open('GET', "http://www.example.com");  
     req.responseType = "arraybuffer";  
@@ -49,5 +52,5 @@ var req = new XMLHttpRequest();
   
 ```  
   
-## Configuration requise  
+## <a name="requirements"></a>Spécifications  
  [!INCLUDE[jsv10](../../javascript/reference/includes/jsv10-md.md)]

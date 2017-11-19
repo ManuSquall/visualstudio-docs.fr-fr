@@ -1,49 +1,51 @@
 ---
-title: "index, propri&#233;t&#233; (RegExp) (JavaScript) | Microsoft Docs"
-ms.custom: ""
-ms.date: "01/18/2017"
-ms.prod: "windows-client-threshold"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "devlang-javascript"
-ms.tgt_pltfrm: ""
-ms.topic: "language-reference"
-f1_keywords: 
-  - "index"
-dev_langs: 
-  - "JavaScript"
-  - "TypeScript"
-  - "DHTML"
-helpviewer_keywords: 
-  - "Index (propriété)"
-  - "mise en correspondance de chaînes"
+title: "index, propriété (RegExp) (JavaScript) | Documents Microsoft"
+ms.custom: 
+ms.date: 01/18/2017
+ms.prod: windows-client-threshold
+ms.reviewer: 
+ms.suite: 
+ms.technology: devlang-javascript
+ms.tgt_pltfrm: 
+ms.topic: language-reference
+f1_keywords: index
+dev_langs:
+- JavaScript
+- TypeScript
+- DHTML
+helpviewer_keywords:
+- Index property
+- matching strings
 ms.assetid: d8be1ef6-1bf2-43cd-b0b5-567a61eabaad
-caps.latest.revision: 14
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 14
+caps.latest.revision: "14"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: 9c6b11a5caf6e727b4d525b9a2d51eddd4542bc4
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.translationtype: MT
+ms.contentlocale: fr-FR
+ms.lasthandoff: 10/27/2017
 ---
-# index, propri&#233;t&#233; (RegExp) (JavaScript)
-Retourne la position du caractère où commence la première correspondance trouvée dans une chaîne recherchée.  Lecture seule.  
+# <a name="index-property-regexp-javascript"></a>index, propriété (RegExp) (JavaScript)
+Retourne la position de caractère où commence à la première correspondance dans une chaîne recherchée. Lecture seule.  
   
-## Syntaxe  
+## <a name="syntax"></a>Syntaxe  
   
 ```  
   
 RegExp.index   
 ```  
   
-## Notes  
- L'objet associé à cette propriété est toujours l'objet `RegExp` global.  
+## <a name="remarks"></a>Remarques  
+ L’objet associé à cette propriété est toujours global `RegExp` objet.  
   
- La propriété **index** est de base zéro.  La valeur initiale de la propriété **index** est –1.  Sa valeur change chaque fois qu'une correspondance est trouvée.  
+ Le **index** propriété est de base zéro. La valeur initiale de la **index** propriété est -1. Sa valeur change chaque fois qu’une correspondance réussie est établie.  
   
-## Exemple  
- L'exemple ci\-dessous illustre l'utilisation de la propriété **index** :  Cette fonction itère une chaîne recherchée et affiche les valeurs de `lastIndex` et **index** pour chaque mot de la chaîne.  
+## <a name="example"></a>Exemple  
+ L’exemple suivant illustre l’utilisation de la **index** propriété. Cette fonction effectue une itération d’une chaîne de recherche et imprime la **index** et `lastIndex` valeurs pour chaque mot dans la chaîne.  
   
-```javascript  
+```JavaScript  
 function RegExpTest()  
 {  
    var ver = Number(ScriptEngineMajorVersion() + "." + ScriptEngineMinorVersion())  
@@ -70,10 +72,10 @@ function RegExpTest()
 }  
 ```  
   
-## Configuration requise  
+## <a name="requirements"></a>Spécifications  
  [!INCLUDE[jsv3](../../javascript/reference/includes/jsv3-md.md)]  
   
- **S'applique à** : [RegExp, objet](../../javascript/reference/regexp-object-javascript.md)  
+ **S’applique aux**: [RegExp (objet)](../../javascript/reference/regexp-object-javascript.md)  
   
-## Voir aussi  
- [Regular Expression Syntax \(JavaScript\)](http://msdn.microsoft.com/fr-fr/ab0766e1-7037-45ed-aa23-706f58358c0e)
+## <a name="see-also"></a>Voir aussi  
+ [Syntaxe d’Expression régulière (JavaScript)](http://msdn.microsoft.com/en-us/ab0766e1-7037-45ed-aa23-706f58358c0e)

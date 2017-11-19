@@ -1,60 +1,62 @@
 ---
-title: "slice, m&#233;thode (Array) (JavaScript) | Microsoft Docs"
-ms.custom: ""
-ms.date: "01/18/2017"
-ms.prod: "windows-client-threshold"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "devlang-javascript"
-ms.tgt_pltfrm: ""
-ms.topic: "language-reference"
-f1_keywords: 
-  - "slice"
-dev_langs: 
-  - "JavaScript"
-  - "TypeScript"
-  - "DHTML"
-helpviewer_keywords: 
-  - "index de base zéro"
-  - "Array (objet)"
-  - "slice (méthode)"
+title: "slice, méthode (Array) (JavaScript) | Documents Microsoft"
+ms.custom: 
+ms.date: 01/18/2017
+ms.prod: windows-client-threshold
+ms.reviewer: 
+ms.suite: 
+ms.technology: devlang-javascript
+ms.tgt_pltfrm: 
+ms.topic: language-reference
+f1_keywords: slice
+dev_langs:
+- JavaScript
+- TypeScript
+- DHTML
+helpviewer_keywords:
+- zero-based index
+- Array object
+- slice method
 ms.assetid: 3c122219-14de-4126-b091-809659c026d6
-caps.latest.revision: 14
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 14
+caps.latest.revision: "14"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: a61cd331abef9d1a0d979f547f6d6f12222c1eee
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.translationtype: MT
+ms.contentlocale: fr-FR
+ms.lasthandoff: 10/27/2017
 ---
-# slice, m&#233;thode (Array) (JavaScript)
+# <a name="slice-method-array-javascript"></a>slice, méthode (Array) (JavaScript)
 Retourne une section d'un tableau.  
   
-## Syntaxe  
+## <a name="syntax"></a>Syntaxe  
   
 ```  
   
 arrayObj.slice(start, [end])   
 ```  
   
-## Paramètres  
+## <a name="parameters"></a>Paramètres  
  `arrayObj`  
- Obligatoire.  Objet `Array`.  
+ Obligatoire. Objet `Array`.  
   
  `start`  
- Obligatoire.  Début de la partie spécifiée de `arrayObj`.  
+ Obligatoire. Début de la partie spécifiée des `arrayObj`.  
   
  `end`  
- Facultatif.  Fin de la partie spécifiée de `arrayObj`.  
+ Facultatif. La fin de la partie spécifiée des `arrayObj`.  
   
-## Notes  
- La méthode `slice` retourne un objet `Array` contenant la partie spécifiée de `arrayObj`.  
+## <a name="remarks"></a>Remarques  
+ Le `slice` méthode retourne un `Array` objet contenant la partie spécifiée des `arrayObj`.  
   
- La méthode `slice` copie tous les éléments jusqu'à l'élément indiqué par `end`, à l'exclusion de ce dernier.  Si la valeur `start` est négative, la valeur utilisée est `length` \+ `start`, où `length` représente la longueur du tableau.  Si la valeur `end` est négative, la valeur utilisée est `length` \+ `end`, où `length` représente la longueur du tableau.  Si la valeur `end` est omise, l'extraction se poursuit jusqu'à la fin d'`arrayObj`.  Si `end` se produit avant `start`, aucun élément n'est copié dans le nouveau tableau.  
+ Le `slice` méthode copie les, mais sans inclure l’élément indiqué par `end`. Si `start` est négatif, il est traité comme `length`  +  `start`, où `length` est la longueur du tableau. Si `end` est négatif, il est traité comme `length`  +  `end` où `length` est la longueur du tableau. Si `end` est omis, l'extraction continue jusqu'à la fin de `arrayObj`. Si `end` se produit avant `start`, sans les éléments sont copiés dans le nouveau tableau.  
   
-## Exemple  
- Les exemples suivants illustrent l'utilisation de la méthode `slice`.  Dans le premier exemple, tous les éléments de `myArray`, à l'exclusion du dernier, sont copiés dans `newArray`.  Dans le deuxième exemple, seuls les deux derniers éléments de `myArray` sont copiés dans `newArray`.  
+## <a name="example"></a>Exemple  
+ Les exemples suivants montrent comment utiliser la méthode `slice`. Dans le premier exemple, tous les dossiers sauf le dernier élément de `myArray` est copié dans `newArray`. Dans le deuxième exemple, uniquement les deux derniers éléments de `myArray` sont copiés dans `newArray`.  
   
-```javascript  
+```JavaScript  
 var origArray = [3, 5, 7, 9];  
 var newArray = origArray. slice(0, -1);  
 document.write(origArray);  
@@ -68,9 +70,9 @@ document.write(newArray);
   
 ```  
   
-## Configuration requise  
+## <a name="requirements"></a>Spécifications  
  [!INCLUDE[jsv3](../../javascript/reference/includes/jsv3-md.md)]  
   
-## Voir aussi  
- [slice, méthode \(String\)](../../javascript/reference/slice-method-string-javascript.md)   
- [String, objet](../../javascript/reference/string-object-javascript.md)
+## <a name="see-also"></a>Voir aussi  
+ [slice, méthode (String)](../../javascript/reference/slice-method-string-javascript.md)   
+ [Objet String](../../javascript/reference/string-object-javascript.md)

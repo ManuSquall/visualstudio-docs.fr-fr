@@ -1,44 +1,47 @@
 ---
-title: "constructor, propri&#233;t&#233; (Error) | Microsoft Docs"
-ms.custom: ""
-ms.date: "01/18/2017"
-ms.prod: "windows-client-threshold"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "devlang-javascript"
-ms.tgt_pltfrm: ""
-ms.topic: "language-reference"
-dev_langs: 
-  - "JavaScript"
-  - "TypeScript"
-  - "DHTML"
+title: "constructor, propriété (Error) | Documents Microsoft"
+ms.custom: 
+ms.date: 01/18/2017
+ms.prod: windows-client-threshold
+ms.reviewer: 
+ms.suite: 
+ms.technology: devlang-javascript
+ms.tgt_pltfrm: 
+ms.topic: language-reference
+dev_langs:
+- JavaScript
+- TypeScript
+- DHTML
 ms.assetid: 18aea278-2bd5-457b-83a5-d8d8f1226e0c
-caps.latest.revision: 2
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 2
+caps.latest.revision: "2"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: f1ade0ab1ba771b2ff9dfb7051b2983b3da77ed4
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.translationtype: MT
+ms.contentlocale: fr-FR
+ms.lasthandoff: 10/27/2017
 ---
-# constructor, propri&#233;t&#233; (Error)
+# <a name="constructor-property-error"></a>constructor, propriété (Error)
 Spécifie la fonction qui crée une erreur.  
   
-## Syntaxe  
+## <a name="syntax"></a>Syntaxe  
   
 ```  
   
 error.constructor  
 ```  
   
-## Notes  
- Le paramètre `error` requis est le nom d'un objet d'erreur.  
+## <a name="remarks"></a>Remarques  
+ Requis `error` est le nom d’un objet d’erreur.  
   
- La propriété `constructor` est un membre du prototype de chaque objet qui en possède un.  La propriété `constructor` contient une référence à la fonction qui crée les instances d'un objet donné.  
+ La propriété `constructor` est un membre du prototype de chaque objet qui en possède un. La propriété `constructor` contient une référence à la fonction qui crée les instances d'un objet donné.  
   
-## Exemple  
- L'exemple ci\-dessous illustre l'utilisation de la propriété constructor.  
+## <a name="example"></a>Exemple  
+ L’exemple suivant illustre l’utilisation de la propriété de constructeur.  
   
-```javascript  
+```JavaScript  
 var x = new Error("This is an error");  
   
 if (x.constructor == Error)  
@@ -49,5 +52,5 @@ if (x.constructor == Error)
   
 ```  
   
-## Configuration requise  
+## <a name="requirements"></a>Spécifications  
  [!INCLUDE[jsv2](../../javascript/reference/includes/jsv2-md.md)]

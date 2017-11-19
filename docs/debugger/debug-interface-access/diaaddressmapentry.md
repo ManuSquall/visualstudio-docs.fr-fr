@@ -1,61 +1,60 @@
 ---
-title: "DiaAddressMapEntry | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-debug"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "DiaAddressMapEntry (énumération)"
+title: DiaAddressMapEntry | Documents Microsoft
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-debug
+ms.tgt_pltfrm: 
+ms.topic: article
+dev_langs: C++
+helpviewer_keywords: DiaAddressMapEntry enumeration
 ms.assetid: 5d0ae226-981d-4541-a801-fc4993fe663b
-caps.latest.revision: 9
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 9
+caps.latest.revision: "9"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: f1324ea79ec60a61e315253573b9d4aa3ced2695
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: fr-FR
+ms.lasthandoff: 10/31/2017
 ---
-# DiaAddressMapEntry
-[!INCLUDE[vs2017banner](../../code-quality/includes/vs2017banner.md)]
-
-décrit une entrée dans une configuration d'adresse.  
+# <a name="diaaddressmapentry"></a>DiaAddressMapEntry
+Décrit une entrée dans une table d’adresses.  
   
-## Syntaxe  
+## <a name="syntax"></a>Syntaxe  
   
-```cpp#  
-struct DiaAddressMapEntry {   
-   DWORD rva,  
-   DWORD rvaTo  
+```C++  
+struct DiaAddressMapEntry {   
+   DWORD rva,  
+   DWORD rvaTo  
 };  
 ```  
   
-## Éléments  
+## <a name="elements"></a>Éléments  
  `rva`  
- une adresse virtuelle relative \(RVA\) dans l'image A.  
+ Une adresse virtuelle relative (RVA) dans l’image A.  
   
  `rvaTo`  
- Adresse virtuelle relative `rva` est mappée à dans l'image B.  
+ L’adresse virtuelle relative `rva` est mappé dans l’image B.  
   
-## Notes  
- Une configuration d'adresse fournit une interprétation d'une disposition de l'image \(a\) à un autre \(b\).  Un tableau de structures d' `DiaAddressMapEntry` triées par `rva` définit une configuration d'adresse.  
+## <a name="remarks"></a>Remarques  
+ Un mappage d’adresse fournit une traduction à partir de la disposition d’une image (A) à un autre (B). Un tableau de `DiaAddressMapEntry` structures triés par `rva` définit un mappage d’adresse.  
   
- Pour convertir une adresse, `addrA`, dans l'image à une adresse, `addrB`, dans l'image B, effectuez les étapes suivantes :  
+ Pour convertir une adresse, `addrA`, dans l’image A une adresse, `addrB`, dans l’image B, procédez comme suit :  
   
-1.  Recherchez la carte pour l'entrée, `e`, avec plus grand `rva` inférieure ou égale à `addrA`.  
+1.  Rechercher le mappage de l’écriture, `e`, avec le plus grand `rva` inférieure ou égale à `addrA`.  
   
-2.  définissez `delta = addrA – e.rva`.  
+2.  Set `delta = addrA - e.rva`.  
   
-3.  définissez `addrB = e.rvaTo + delta`.  
+3.  Set `addrB = e.rvaTo + delta`.  
   
- Un tableau de structures d' `DiaAddressMapEntry` est passé à la méthode d' [IDiaAddressMap::set\_addressMap](../../debugger/debug-interface-access/idiaaddressmap-set-addressmap.md) .  
+ Un tableau de `DiaAddressMapEntry` structures est passé à la [IDiaAddressMap::set_addressMap](../../debugger/debug-interface-access/idiaaddressmap-set-addressmap.md) (méthode).  
   
-## Configuration requise  
- en\-tête : dia2.h  
+## <a name="requirements"></a>Spécifications  
+ En-tête : dia2.h  
   
-## Voir aussi  
- [Énumérations et structures](../../debugger/debug-interface-access/enumerations-and-structures.md)   
- [IDiaAddressMap::set\_addressMap](../../debugger/debug-interface-access/idiaaddressmap-set-addressmap.md)
+## <a name="see-also"></a>Voir aussi  
+ [Énumérations et Structures](../../debugger/debug-interface-access/enumerations-and-structures.md)   
+ [IDiaAddressMap::set_addressMap](../../debugger/debug-interface-access/idiaaddressmap-set-addressmap.md)

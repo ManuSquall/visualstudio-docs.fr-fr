@@ -1,27 +1,30 @@
 ---
-title: "IActiveScriptAuthor::GetLanguageFlags | Microsoft Docs"
-ms.custom: ""
-ms.date: "01/18/2017"
-ms.prod: "windows-script-interfaces"
-ms.reviewer: ""
-ms.suite: ""
-ms.tgt_pltfrm: ""
-ms.topic: "reference"
+title: IActiveScriptAuthor::GetLanguageFlags | Documents Microsoft
+ms.custom: 
+ms.date: 01/18/2017
+ms.prod: windows-script-interfaces
+ms.reviewer: 
+ms.suite: 
+ms.tgt_pltfrm: 
+ms.topic: reference
 apiname: IActiveScriptAuthor.GetLanguageFlags
 apilocation: scrobj.dll
-helpviewer_keywords: 
-  - "IActiveScriptAuthor::GetLanguageFlags"
+helpviewer_keywords: IActiveScriptAuthor::GetLanguageFlags
 ms.assetid: eb244452-62f7-4a73-b48f-1aa05cbcc32d
-caps.latest.revision: 14
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 14
+caps.latest.revision: "14"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: 6137f1cd77d2f305a9ff9d51ac49c214e4c4237b
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.translationtype: MT
+ms.contentlocale: fr-FR
+ms.lasthandoff: 10/27/2017
 ---
-# IActiveScriptAuthor::GetLanguageFlags
-Retourne les informations de langage.  
+# <a name="iactivescriptauthorgetlanguageflags"></a>IActiveScriptAuthor::GetLanguageFlags
+Retourne des informations de langue.  
   
-## Syntaxe  
+## <a name="syntax"></a>Syntaxe  
   
 ```  
 HRESULT GetLanguageFlags(  
@@ -29,27 +32,27 @@ HRESULT GetLanguageFlags(
 );  
 ```  
   
-#### Paramètres  
+#### <a name="parameters"></a>Paramètres  
  `pgrfasa`  
- \[out\]  Les balises qui contiennent des informations de langage.  Peut être une combinaison des valeurs suivantes :  
+ [out] Les indicateurs qui contiennent des informations de langue. Peut être une combinaison des valeurs suivantes :  
   
 |Constante|Valeur|Description|  
-|---------------|------------|-----------------|  
-|fasaPreferInternalHandler|0x0001|Le langage préfère la création de gestionnaires d'événements de script par le moteur de création de script au lieu de l'application.|  
-|fasaSupportInternalHandler|0x0002|Prend en charge des scripts de gestionnaires d'événements créés par le moteur de création de script.|  
-|fasaCaseSensitive|0x0004|Le langage de script respecte la casse.|  
+|--------------|-----------|-----------------|  
+|fasaPreferInternalHandler|0 x 0001|Le langage préfère la création du Gestionnaire d’événements script par le moteur au lieu de l’application de création de script.|  
+|fasaSupportInternalHandler|0 x 0002|Le langage prend en charge les gestionnaires d’événements de script créées par le moteur de création de script.|  
+|fasaCaseSensitive|0 x 0004|Le langage de script respecte la casse.|  
   
-## Valeur de retour  
- Élément `HRESULT`.  Les valeurs possibles incluent, mais ne sont pas limitées à, celles dans le tableau suivant.  
+## <a name="return-value"></a>Valeur de retour  
+ Élément `HRESULT`. Les valeurs possibles sont notamment celles figurant dans le tableau suivant.  
   
 |Valeur|Description|  
-|------------|-----------------|  
+|-----------|-----------------|  
 |`S_OK`|La méthode a réussi.|  
   
-## Notes  
- Si le moteur de création de script gère des gestionnaires d'événements, votre application doit appeler `CreateChildHandler` d'un objet d' `IScriptEntry` .  Cela crée un objet d' `IScriptScriptlet` qui correspond au gestionnaire d'événements.  Le moteur ajoute également un gestionnaire d'événements à l'entrée de script.  Le gestionnaire d'événements est une fonction vide qui contient les informations spécifiées de signature.  
+## <a name="remarks"></a>Remarques  
+ Si le moteur de création de script gère des gestionnaires d’événements, votre application doit appeler `CreateChildHandler` d’un `IScriptEntry` objet. Cette opération crée un `IScriptScriptlet` objet qui correspond au gestionnaire d’événements. Le moteur ajoute également un gestionnaire d’événements à l’écriture de script. Le Gestionnaire d’événements est une fonction vide qui contient les informations de signature spécifié.  
   
- Si votre application gère des gestionnaires d'événements, elle doit appeler `CreateChildHandler` d'un objet d' `IScriptNode` qui représente un scriptlet de gestionnaire d'événements.  Cela crée un objet d' `IScriptScriptlet` associé au scriptlet de gestionnaire d'événements.  L'application doit également ajouter une fonction vide en tant que gestionnaire d'événements à un nouveau ou existant objet d' `IScriptEntry` .  
+ Si votre application gère des gestionnaires d’événements, il doit appeler `CreateChildHandler` d’un `IScriptNode` objet qui représente un scriptlet de gestionnaire d’événements. Cette opération crée un `IScriptScriptlet` objet qui est associé avec le scriptlet de gestionnaire d’événements. L’application doit également ajouter une fonction vide en tant qu’événement gestionnaire vers une nouvelle ou existante `IScriptEntry` objet.  
   
-## Voir aussi  
- [IActiveScriptAuthor, interface](../../winscript/reference/iactivescriptauthor-interface.md)
+## <a name="see-also"></a>Voir aussi  
+ [Interface IActiveScriptAuthor](../../winscript/reference/iactivescriptauthor-interface.md)

@@ -1,11 +1,10 @@
 ---
-title: 'CA1049: Types that own native resources should be disposable | Microsoft Docs'
+title: "CA1049 : Les Types qui possèdent des ressources natives doivent être supprimables | Documents Microsoft"
 ms.custom: 
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-devops-test
+ms.technology: vs-ide-code-analysis
 ms.tgt_pltfrm: 
 ms.topic: article
 f1_keywords:
@@ -15,68 +14,53 @@ helpviewer_keywords:
 - TypesThatOwnNativeResourcesShouldBeDisposable
 - CA1049
 ms.assetid: 084e587d-0e45-4092-b767-49eed30d6a35
-caps.latest.revision: 17
-author: stevehoag
-ms.author: shoag
-manager: wpickett
-translation.priority.ht:
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- ru-ru
-- zh-cn
-- zh-tw
-translation.priority.mt:
-- cs-cz
-- pl-pl
-- pt-br
-- tr-tr
-ms.translationtype: HT
-ms.sourcegitcommit: eb5c9550fd29b0e98bf63a7240737da4f13f3249
-ms.openlocfilehash: bbc23ac5da56b6de5a1e6bb713eb209e8a63698e
-ms.contentlocale: fr-fr
-ms.lasthandoff: 08/30/2017
-
+caps.latest.revision: "17"
+author: gewarren
+ms.author: gewarren
+manager: ghogen
+ms.openlocfilehash: ebcb3325cfefdfeeb95b30477c4b266a70f40eb0
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: fr-FR
+ms.lasthandoff: 10/31/2017
 ---
-# <a name="ca1049-types-that-own-native-resources-should-be-disposable"></a>CA1049: Types that own native resources should be disposable
+# <a name="ca1049-types-that-own-native-resources-should-be-disposable"></a>CA1049 : Les types qui possèdent des ressources natives doivent être supprimables
 |||  
 |-|-|  
 |TypeName|TypesThatOwnNativeResourcesShouldBeDisposable|  
 |CheckId|CA1049|  
-|Category|Microsoft.Design|  
-|Breaking Change|Non-breaking|  
+|Catégorie|Microsoft.Design|  
+|Modification avec rupture|Sans rupture|  
   
 ## <a name="cause"></a>Cause  
- A type references a <xref:System.IntPtr?displayProperty=fullName> field, a <xref:System.UIntPtr?displayProperty=fullName> field, or a <xref:System.Runtime.InteropServices.HandleRef?displayProperty=fullName> field, but does not implement <xref:System.IDisposable?displayProperty=fullName>.  
+ Un type référence un <xref:System.IntPtr?displayProperty=fullName> champ, un <xref:System.UIntPtr?displayProperty=fullName> champ, ou un <xref:System.Runtime.InteropServices.HandleRef?displayProperty=fullName> champ, mais n’implémente pas <xref:System.IDisposable?displayProperty=fullName>.  
   
-## <a name="rule-description"></a>Rule Description  
- This rule assumes that <xref:System.IntPtr>, <xref:System.UIntPtr>, and <xref:System.Runtime.InteropServices.HandleRef> fields store pointers to unmanaged resources. Types that allocate unmanaged resources should implement <xref:System.IDisposable> to let callers to release those resources on demand and shorten the lifetimes of the objects that hold the resources.  
+## <a name="rule-description"></a>Description de la règle  
+ Cette règle suppose que <xref:System.IntPtr>, <xref:System.UIntPtr>, et <xref:System.Runtime.InteropServices.HandleRef> champs stockent des pointeurs vers des ressources non managées. Les types qui allouent des ressources non managées doivent implémenter <xref:System.IDisposable> pour permettre aux appelants de libérer ces ressources à la demande et de raccourcir les durées de vie des objets qui les détiennent.  
   
- The recommended design pattern to clean up unmanaged resources is to provide both an implicit and an explicit means to free those resources by using the <xref:System.Object.Finalize%2A?displayProperty=fullName> method and the <xref:System.IDisposable.Dispose%2A?displayProperty=fullName> method, respectively. The garbage collector calls the <xref:System.Object.Finalize%2A> method of an object at some indeterminate time after the object is determined to be no longer reachable. After <xref:System.Object.Finalize%2A> is called, an additional garbage collection is required to free the object. The <xref:System.IDisposable.Dispose%2A> method allows the caller to explicitly release resources on demand, earlier than the resources would be released if left to the garbage collector. After it cleans up the unmanaged resources, <xref:System.IDisposable.Dispose%2A> should call the <xref:System.GC.SuppressFinalize%2A?displayProperty=fullName> method to let the garbage collector know that <xref:System.Object.Finalize%2A> no longer has to be called; this eliminates the need for the additional garbage collection and shortens the lifetime of the object.  
+ Le modèle de conception recommandée pour nettoyer les ressources non managées consiste à fournir à la fois implicite et un moyen explicite de libérer ces ressources à l’aide de la <xref:System.Object.Finalize%2A?displayProperty=fullName> (méthode) et le <xref:System.IDisposable.Dispose%2A?displayProperty=fullName> (méthode), respectivement. Le garbage collector appelle la <xref:System.Object.Finalize%2A> méthode d’un objet à un moment indéterminé lorsque l’objet est déterminé comme n’étant plus accessible. Après avoir <xref:System.Object.Finalize%2A> est appelée, un autre le garbage collection est nécessaire pour libérer l’objet. Le <xref:System.IDisposable.Dispose%2A> méthode permet à l’appelant de libérer explicitement les ressources à la demande, avant que les ressources sont libérées si le garbage collector. Après avoir nettoyé les ressources non managées, <xref:System.IDisposable.Dispose%2A> doit appeler le <xref:System.GC.SuppressFinalize%2A?displayProperty=fullName> méthode pour informer le garbage collector qui <xref:System.Object.Finalize%2A> n’a plus à être appelé ; cela élimine la nécessité pour l’opération garbage collection supplémentaire et raccourcit le durée de vie de l’objet.  
   
-## <a name="how-to-fix-violations"></a>How to Fix Violations  
- To fix a violation of this rule, implement <xref:System.IDisposable>.  
+## <a name="how-to-fix-violations"></a>Comment corriger les violations  
+ Pour corriger une violation de cette règle, implémentez <xref:System.IDisposable>.  
   
-## <a name="when-to-suppress-warnings"></a>When to Suppress Warnings  
- It is safe to suppress a warning from this rule if the type does not reference an unmanaged resource. Otherwise, do not suppress a warning from this rule because failure to implement <xref:System.IDisposable> can cause unmanaged resources to become unavailable or underused.  
+## <a name="when-to-suppress-warnings"></a>Quand supprimer les avertissements  
+ Il est possible de supprimer un avertissement de cette règle si le type ne fait pas référence à une ressource non managée. Sinon, ne supprimez aucun avertissement de cette règle, car échec d’implémentation <xref:System.IDisposable> peut entraîner l’indisponibilité ou la sous-utilisation de ressources non managées.  
   
-## <a name="example"></a>Example  
- The following example shows a type that implements <xref:System.IDisposable> to clean up an unmanaged resource.  
+## <a name="example"></a>Exemple  
+ L’exemple suivant montre un type qui implémente <xref:System.IDisposable> pour nettoyer une ressource non managée.  
   
- [!code-csharp[FxCop.Design.UnmanagedResources#1](../code-quality/codesnippet/CSharp/ca1049-types-that-own-native-resources-should-be-disposable_1.cs)] [!code-vb[FxCop.Design.UnmanagedResources#1](../code-quality/codesnippet/VisualBasic/ca1049-types-that-own-native-resources-should-be-disposable_1.vb)]  
+ [!code-csharp[FxCop.Design.UnmanagedResources#1](../code-quality/codesnippet/CSharp/ca1049-types-that-own-native-resources-should-be-disposable_1.cs)]
+ [!code-vb[FxCop.Design.UnmanagedResources#1](../code-quality/codesnippet/VisualBasic/ca1049-types-that-own-native-resources-should-be-disposable_1.vb)]  
   
-## <a name="related-rules"></a>Related Rules  
- [CA2115: Call GC.KeepAlive when using native resources](../code-quality/ca2115-call-gc-keepalive-when-using-native-resources.md)  
+## <a name="related-rules"></a>Règles associées  
+ [CA2115 : Appelez GC.KeepAlive lorsque vous utilisez des ressources natives](../code-quality/ca2115-call-gc-keepalive-when-using-native-resources.md)  
   
- [CA1816: Call GC.SuppressFinalize correctly](../code-quality/ca1816-call-gc-suppressfinalize-correctly.md)  
+ [CA1816 : Appelez GC.SuppressFinalize correctement](../code-quality/ca1816-call-gc-suppressfinalize-correctly.md)  
   
- [CA2216: Disposable types should declare finalizer](../code-quality/ca2216-disposable-types-should-declare-finalizer.md)  
+ [CA2216 : Les types supprimables doivent déclarer un finaliseur](../code-quality/ca2216-disposable-types-should-declare-finalizer.md)  
   
- [CA1001: Types that own disposable fields should be disposable](../code-quality/ca1001-types-that-own-disposable-fields-should-be-disposable.md)  
+ [CA1001 : Les types qui ont des champs supprimables doivent être supprimables](../code-quality/ca1001-types-that-own-disposable-fields-should-be-disposable.md)  
   
-## <a name="see-also"></a>See Also  
- [Cleaning Up Unmanaged Resources](/dotnet/standard/garbage-collection/unmanaged)   
- [Dispose Pattern](/dotnet/standard/design-guidelines/dispose-pattern)
+## <a name="see-also"></a>Voir aussi  
+ [Nettoyage des ressources non managées](/dotnet/standard/garbage-collection/unmanaged)   
+ [Modèle de suppression](/dotnet/standard/design-guidelines/dispose-pattern)

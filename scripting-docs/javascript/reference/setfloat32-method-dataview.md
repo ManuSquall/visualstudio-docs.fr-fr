@@ -1,51 +1,54 @@
 ---
-title: "setFloat32, m&#233;thode (DataView) | Microsoft Docs"
-ms.custom: ""
-ms.date: "01/18/2017"
-ms.prod: "windows-client-threshold"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "devlang-javascript"
-ms.tgt_pltfrm: ""
-ms.topic: "language-reference"
-dev_langs: 
-  - "JavaScript"
-  - "TypeScript"
-  - "DHTML"
+title: "setfloat32, méthode (DataView) | Documents Microsoft"
+ms.custom: 
+ms.date: 01/18/2017
+ms.prod: windows-client-threshold
+ms.reviewer: 
+ms.suite: 
+ms.technology: devlang-javascript
+ms.tgt_pltfrm: 
+ms.topic: language-reference
+dev_langs:
+- JavaScript
+- TypeScript
+- DHTML
 ms.assetid: b3f68048-c817-48d2-bc17-945e3bcc94d7
-caps.latest.revision: 5
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 5
+caps.latest.revision: "5"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: 2a72bf2781bfbae7c7cd301d02ad71ebfbeffa13
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.translationtype: MT
+ms.contentlocale: fr-FR
+ms.lasthandoff: 10/27/2017
 ---
-# setFloat32, m&#233;thode (DataView)
-Définit la valeur Float32 sur l'offset d'octets spécifié à partir du début de la vue.  Il n'existe aucune contrainte d'alignement ; les valeurs multioctets peuvent être définies sur n'importe quel offset.  
+# <a name="setfloat32-method-dataview"></a>setFloat32, méthode (DataView)
+Définit la valeur Float32 à l’offset d’octet spécifié à partir du début de la vue. Il n’existe aucune contrainte d’alignement ; les valeurs sur plusieurs octets peuvent être définies à n’importe quel décalage.  
   
-## Syntaxe  
+## <a name="syntax"></a>Syntaxe  
   
 ```  
 dataView.setFloat32 (byteOffset, value, littleEndian);   
 ```  
   
-## Paramètres  
+## <a name="parameters"></a>Paramètres  
  `byteOffset`  
- Emplacement dans la mémoire tampon auquel la valeur doit être récupérée.  
+ L’emplacement de la mémoire tampon à laquelle la valeur doit être récupérée.  
   
  `value`  
  Valeur à définir.  
   
  `littleEndian`  
- Facultatif.  Si la valeur est False ou Undefined, une valeur avec primauté des octets de poids fort \(big\-endian\) doit être écrite, sinon une valeur avec primauté des octets de poids faible \(little\-endian\) doit être écrite.  
+ Facultatif. Si la valeur est false ou non définie, une valeur big-endian doit être écrits, sinon, une valeur de poids faible doit être écrit.  
   
-## Notes  
- Ces méthodes lèvent une exception si elles doivent écrire au\-delà de la fin de la vue.  
+## <a name="remarks"></a>Remarques  
+ Ces méthodes déclenchent une exception si elles écririez au-delà de la fin de la vue.  
   
-## Exemple  
- L'exemple suivant montre comment définir le premier Float32 dans le DataView.  
+## <a name="example"></a>Exemple  
+ L’exemple suivant montre comment définir la première Float32 du DataView.  
   
-```javascript  
+```JavaScript  
 var req = new XMLHttpRequest();  
     req.open('GET', "http://www.example.com");  
     req.responseType = "arraybuffer";  
@@ -61,5 +64,5 @@ var req = new XMLHttpRequest();
   
 ```  
   
-## Configuration requise  
+## <a name="requirements"></a>Spécifications  
  [!INCLUDE[jsv10](../../javascript/reference/includes/jsv10-md.md)]

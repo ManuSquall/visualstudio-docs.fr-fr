@@ -1,87 +1,89 @@
 ---
-title: "M&#233;thodes de point d&#39;arr&#234;t | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-helpviewer_keywords: 
-  - "méthodes de point d'arrêt de débogage [Debugging SDK],"
-  - "points d'arrêt, méthodes"
+title: "Méthodes de point d’arrêt | Documents Microsoft"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+helpviewer_keywords:
+- debugging [Debugging SDK], breakpoint methods
+- breakpoints, methods
 ms.assetid: a6f77bf0-bf81-443f-8683-5f12075bbe10
-caps.latest.revision: 8
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 8
+caps.latest.revision: "8"
+author: gregvanl
+ms.author: gregvanl
+manager: ghogen
+ms.openlocfilehash: d0d743c98fd9e311f7f118c152e579178b07513d
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: fr-FR
+ms.lasthandoff: 10/31/2017
 ---
-# M&#233;thodes de point d&#39;arr&#234;t
-[!INCLUDE[vs2017banner](../../code-quality/includes/vs2017banner.md)]
-
-Un moteur de \(DE\) débogage doit prendre en charge les paramètres des points d'arrêt.  Prises en charge du débogage Visual Studio les types suivants de points d'arrêt :  
+# <a name="breakpoint-related-methods"></a>Méthodes de point d’arrêt
+Un moteur de débogage (DE) doit prendre en charge la définition de points d’arrêt. Débogage de Visual Studio prend en charge les types de points d’arrêt suivants :  
   
--   Dépendant  
+-   Lié  
   
-     Demandé via l'interface utilisateur et avec succès lié à un emplacement spécifié de code  
+     Demandés via l’interface utilisateur et correctement lié à un emplacement de code spécifié  
   
 -   En attente  
   
-     Demandé via l'interface utilisateur mais pas encore lié aux instructions effectives  
+     Demandés via l’interface utilisateur, mais pas encore lié à réelle des instructions  
   
-## Discussion  
- Par exemple, un point d'arrêt en attente se produit lorsque l'instruction n'est pas encore chargée.  Lorsque le code est chargé, attendant essayez de points d'arrêt à le lier au code à l'emplacement recommandé, c. autrement dit., à l'instruction de saut d'insertion dans le code.  Les événements sont envoyés au gestionnaire de débogage de session \(SDM\) pour indiquer la liaison a réussi ou pour l'annoncer qu'il existait des erreurs de liaison.  
+## <a name="discussion"></a>Discussion  
+ Par exemple, un point d’arrêt en attente se produit lorsque les instructions ne sont pas encore chargées. Lorsque le code est chargé, en attente de points d’arrêt try à lier au code à l’emplacement prescrite, autrement dit, pour insérer des instructions de saut dans le code. Les événements sont envoyés vers le Gestionnaire de session de débogage (SDM) pour indiquer la liaison réussie ou pour avertir qu’il existait des erreurs de liaison.  
   
- un point d'arrêt en attente gère également sa propre liste interne de correspondre des points d'arrêt liés.  Un archivage en attente le point d'arrêt peut provoquer l'insertion de nombreux points d'arrêt dans le code.  Visual Studio le débogage de l'interface utilisateur affiche une arborescence des points d'arrêt en attente et de leurs points d'arrêt liés correspondants.  
+ Un point d’arrêt en attente gère également sa propre liste interne des points d’arrêt lié correspondant. Une attente de point d’arrêt peut provoquer l’insertion d’un grand nombre de points d’arrêt dans le code. Le débogage de l’interface utilisateur Visual Studio affiche une arborescence de commandes d’en attente de points d’arrêt et leurs correspondantes des points d’arrêt liés.  
   
- La création et l'utilisation des points d'arrêt en attente requièrent l'implémentation de la méthode d' [IDebugEngine2 : : CreatePendingBreakpoint](../../extensibility/debugger/reference/idebugengine2-creatependingbreakpoint.md) ainsi que des méthodes suivantes d'interfaces d' [IDebugPendingBreakpoint2](../../extensibility/debugger/reference/idebugpendingbreakpoint2.md) .  
-  
-|Méthode|Description|  
-|-------------|-----------------|  
-|[CanBind](../../extensibility/debugger/reference/idebugpendingbreakpoint2-canbind.md)|Détermine si un spécifié en attente le point d'arrêt peut être lié à un emplacement du code.|  
-|[Bind](../../extensibility/debugger/reference/idebugpendingbreakpoint2-bind.md)|Lie un spécifié en attente le point d'arrêt à un ou plusieurs emplacements de code.|  
-|[GetState](../Topic/IDebugPendingBreakpoint2::GetState.md)|Obtient l'état d'un point d'arrêt en attente.|  
-|[GetBreakpointRequest](../../extensibility/debugger/reference/idebugpendingbreakpoint2-getbreakpointrequest.md)|Obtient la requête de point d'arrêt utilisée pour créer un point d'arrêt en attente.|  
-|[Activer](../../extensibility/debugger/reference/idebugpendingbreakpoint2-enable.md)|bascule l'état actif d'un point d'arrêt en attente.|  
-|[EnumBoundBreakpoints](../../extensibility/debugger/reference/idebugpendingbreakpoint2-enumboundbreakpoints.md)|énumère tous les points d'arrêt liés d'un point d'arrêt en attente.|  
-|[EnumErrorBreakpoints](../Topic/IDebugPendingBreakpoint2::EnumErrorBreakpoints.md)|énumère tous les points d'arrêt d'erreur qui résultent d'un point d'arrêt en attente.|  
-|[Supprimer](../../extensibility/debugger/reference/idebugpendingbreakpoint2-delete.md)|supprime un point d'arrêt en attente et tous points d'arrêt liés de lui.|  
-  
- Pour énumérer les points d'arrêt liés et des points d'arrêt d'erreur, vous devez implémenter toutes les méthodes d' [IEnumDebugBoundBreakpoints2](../../extensibility/debugger/reference/ienumdebugboundbreakpoints2.md) et d' [IEnumDebugErrorBreakpoints2](../../extensibility/debugger/reference/ienumdebugerrorbreakpoints2.md).  
-  
- En attente les points d'arrêt qui les lient à un emplacement de code requièrent l'implémentation des méthodes suivantes pour [IDebugBoundBreakpoint2](../../extensibility/debugger/reference/idebugboundbreakpoint2.md) .  
+ Création et l’utilisation de points d’arrêt dans l’attente requièrent l’implémentation de la [IDebugEngine2::CreatePendingBreakpoint](../../extensibility/debugger/reference/idebugengine2-creatependingbreakpoint.md) (méthode), ainsi que les méthodes suivantes de [IDebugPendingBreakpoint2](../../extensibility/debugger/reference/idebugpendingbreakpoint2.md) interfaces.  
   
 |Méthode|Description|  
-|-------------|-----------------|  
-|[GetPendingBreakpoint](../Topic/IDebugBoundBreakpoint2::GetPendingBreakpoint.md)|obtient le point d'arrêt en attente qui contient un point d'arrêt.|  
-|[GetState](../../extensibility/debugger/reference/idebugboundbreakpoint2-getstate.md)|Obtient l'état d'un point d'arrêt lié.|  
-|[GetBreakpointResolution](../../extensibility/debugger/reference/idebugboundbreakpoint2-getbreakpointresolution.md)|obtient la résolution de point d'arrêt qui décrit un point d'arrêt.|  
-|[Activer](../../extensibility/debugger/reference/idebugboundbreakpoint2-enable.md)|active ou désactive un point d'arrêt.|  
-|[Supprimer](../../extensibility/debugger/reference/idebugboundbreakpoint2-delete.md)|supprime un point d'arrêt lié.|  
+|------------|-----------------|  
+|[CanBind](../../extensibility/debugger/reference/idebugpendingbreakpoint2-canbind.md)|Détermine si un élément spécifié en attente de point d’arrêt peut lier à un emplacement du code.|  
+|[Lier](../../extensibility/debugger/reference/idebugpendingbreakpoint2-bind.md)|Lie un spécifié en attente de point d’arrêt à un ou plusieurs emplacements de code.|  
+|[GetState](../../extensibility/debugger/reference/idebugpendingbreakpoint2-getstate.md)|Obtient l’état d’un point d’arrêt en attente.|  
+|[GetBreakpointRequest](../../extensibility/debugger/reference/idebugpendingbreakpoint2-getbreakpointrequest.md)|Obtient la demande de point d’arrêt permet de créer un point d’arrêt en attente.|  
+|[Activer](../../extensibility/debugger/reference/idebugpendingbreakpoint2-enable.md)|Active ou désactive l’état activé d’un point d’arrêt en attente.|  
+|[EnumBoundBreakpoints](../../extensibility/debugger/reference/idebugpendingbreakpoint2-enumboundbreakpoints.md)|Énumère tous les points d’arrêt liés à partir d’un point d’arrêt en attente.|  
+|[EnumErrorBreakpoints](../../extensibility/debugger/reference/idebugpendingbreakpoint2-enumerrorbreakpoints.md)|Énumère tous les points d’arrêt erreur résultant d’un point d’arrêt en attente.|  
+|[Supprimer](../../extensibility/debugger/reference/idebugpendingbreakpoint2-delete.md)|Supprime un point d’arrêt en attente et tous les points d’arrêt liés à partir de celui-ci.|  
   
- Les informations de résolution et de demande requièrent l'implémentation des méthodes suivantes pour [IDebugBreakpointResolution2](../../extensibility/debugger/reference/idebugbreakpointresolution2.md) .  
+ Pour énumérer les points d’arrêt liés et les points d’arrêt de l’erreur, vous devez implémenter toutes les méthodes de [IEnumDebugBoundBreakpoints2](../../extensibility/debugger/reference/ienumdebugboundbreakpoints2.md) et de [IEnumDebugErrorBreakpoints2](../../extensibility/debugger/reference/ienumdebugerrorbreakpoints2.md).  
   
-|Méthode|Description|  
-|-------------|-----------------|  
-|[GetBreakpointType](../../extensibility/debugger/reference/idebugbreakpointresolution2-getbreakpointtype.md)|obtient le type du point d'arrêt représenté par une résolution.|  
-|[GetResolutionInfo](../../extensibility/debugger/reference/idebugbreakpointresolution2-getresolutioninfo.md)|obtient les informations sur la résolution de point d'arrêt qui décrivent un point d'arrêt.|  
-  
- La résolution des erreurs qui peuvent se produire pendant la liaison requiert l'implémentation des méthodes suivantes pour [IDebugErrorBreakpoint2](../../extensibility/debugger/reference/idebugerrorbreakpoint2.md) .  
+ En attente de points d’arrêt à lier à un code d’emplacement nécessite l’implémentation des opérations suivantes [IDebugBoundBreakpoint2](../../extensibility/debugger/reference/idebugboundbreakpoint2.md) méthodes.  
   
 |Méthode|Description|  
-|-------------|-----------------|  
-|[GetPendingBreakpoint](../../extensibility/debugger/reference/idebugerrorbreakpoint2-getpendingbreakpoint.md)|obtient le point d'arrêt en attente qui contient un point d'arrêt d'erreur.|  
-|[GetBreakpointResolution](../../extensibility/debugger/reference/idebugerrorbreakpoint2-getbreakpointresolution.md)|obtient la résolution d'erreur de point d'arrêt qui décrit un point d'arrêt d'erreur.|  
+|------------|-----------------|  
+|[GetPendingBreakpoint](../../extensibility/debugger/reference/idebugboundbreakpoint2-getpendingbreakpoint.md)|Obtient le point d’arrêt en attente qui contient un point d’arrêt.|  
+|[GetState](../../extensibility/debugger/reference/idebugboundbreakpoint2-getstate.md)|Obtient l’état d’un point d’arrêt lié.|  
+|[GetBreakpointResolution](../../extensibility/debugger/reference/idebugboundbreakpoint2-getbreakpointresolution.md)|Obtient la résolution de point d’arrêt qui décrit un point d’arrêt.|  
+|[Activer](../../extensibility/debugger/reference/idebugboundbreakpoint2-enable.md)|Active ou désactive un point d’arrêt.|  
+|[Supprimer](../../extensibility/debugger/reference/idebugboundbreakpoint2-delete.md)|Supprime un point d’arrêt lié.|  
   
- La résolution des erreurs qui peuvent se produire pendant la liaison requiert également les méthodes suivantes pour [IDebugErrorBreakpointResolution2](../../extensibility/debugger/reference/idebugerrorbreakpointresolution2.md).  
+ Demande d’informations requièrent une implémentation de la commande suivante et la résolution [IDebugBreakpointResolution2](../../extensibility/debugger/reference/idebugbreakpointresolution2.md) méthodes.  
   
 |Méthode|Description|  
-|-------------|-----------------|  
-|[GetBreakpointType](../../extensibility/debugger/reference/idebugerrorbreakpointresolution2-getbreakpointtype.md)|obtient le type d'un point d'arrêt.|  
-|[GetResolutionInfo](../../extensibility/debugger/reference/idebugerrorbreakpointresolution2-getresolutioninfo.md)|obtient les informations sur la résolution d'un point d'arrêt.|  
+|------------|-----------------|  
+|[GetBreakpointType](../../extensibility/debugger/reference/idebugbreakpointresolution2-getbreakpointtype.md)|Obtient le type du point d’arrêt représenté par une résolution.|  
+|[GetResolutionInfo](../../extensibility/debugger/reference/idebugbreakpointresolution2-getresolutioninfo.md)|Obtient les informations de résolution de point d’arrêt qui décrit un point d’arrêt.|  
   
- En affichant le code source à un point d'arrêt vous obligent à implémenter les méthodes d' [IDebugStackFrame2 : : GetDocumentContext](../../extensibility/debugger/reference/idebugstackframe2-getdocumentcontext.md) et\/ou les méthodes d' [IDebugStackFrame2 : : GetCodeContext](../Topic/IDebugStackFrame2::GetCodeContext.md).  
+ Résolution des erreurs qui peuvent se produire lors de la liaison nécessite l’implémentation de ces [IDebugErrorBreakpoint2](../../extensibility/debugger/reference/idebugerrorbreakpoint2.md) méthodes.  
   
-## Voir aussi  
- [Contrôle de l'exécution et l'évaluation de l'état](../../extensibility/debugger/execution-control-and-state-evaluation.md)
+|Méthode|Description|  
+|------------|-----------------|  
+|[GetPendingBreakpoint](../../extensibility/debugger/reference/idebugerrorbreakpoint2-getpendingbreakpoint.md)|Obtient le point d’arrêt en attente qui contient un point d’arrêt de l’erreur.|  
+|[GetBreakpointResolution](../../extensibility/debugger/reference/idebugerrorbreakpoint2-getbreakpointresolution.md)|Obtient la résolution d’erreur de point d’arrêt qui décrit un point d’arrêt de l’erreur.|  
+  
+ Résolution des erreurs qui peuvent se produire lors de la liaison requiert également les méthodes suivantes de [IDebugErrorBreakpointResolution2](../../extensibility/debugger/reference/idebugerrorbreakpointresolution2.md).  
+  
+|Méthode|Description|  
+|------------|-----------------|  
+|[GetBreakpointType](../../extensibility/debugger/reference/idebugerrorbreakpointresolution2-getbreakpointtype.md)|Obtient le type d’un point d’arrêt.|  
+|[GetResolutionInfo](../../extensibility/debugger/reference/idebugerrorbreakpointresolution2-getresolutioninfo.md)|Obtient les informations de résolution d’un point d’arrêt.|  
+  
+ Affichage du code source à un point d’arrêt vous oblige à implémenter les méthodes de [IDebugStackFrame2::GetDocumentContext](../../extensibility/debugger/reference/idebugstackframe2-getdocumentcontext.md) et/ou les méthodes de [IDebugStackFrame2::GetCodeContext](../../extensibility/debugger/reference/idebugstackframe2-getcodecontext.md).  
+  
+## <a name="see-also"></a>Voir aussi  
+ [Contrôle de l’exécution et évaluation de l’état](../../extensibility/debugger/execution-control-and-state-evaluation.md)

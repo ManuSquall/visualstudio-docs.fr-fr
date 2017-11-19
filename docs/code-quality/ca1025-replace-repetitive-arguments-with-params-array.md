@@ -1,11 +1,10 @@
 ---
-title: 'CA1025: Replace repetitive arguments with params array | Microsoft Docs'
+title: "CA1025 : Remplacer les arguments répétitifs par un tableau params | Documents Microsoft"
 ms.custom: 
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-devops-test
+ms.technology: vs-ide-code-analysis
 ms.tgt_pltfrm: 
 ms.topic: article
 f1_keywords:
@@ -15,53 +14,37 @@ helpviewer_keywords:
 - ReplaceRepetitiveArgumentsWithParamsArray
 - CA1025
 ms.assetid: f009b340-dea3-4459-8fe1-2143aa8b5d0b
-caps.latest.revision: 14
-author: stevehoag
-ms.author: shoag
-manager: wpickett
-translation.priority.ht:
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- ru-ru
-- zh-cn
-- zh-tw
-translation.priority.mt:
-- cs-cz
-- pl-pl
-- pt-br
-- tr-tr
-ms.translationtype: HT
-ms.sourcegitcommit: eb5c9550fd29b0e98bf63a7240737da4f13f3249
-ms.openlocfilehash: 149d34bcf1192fa93e6ee5416c8003e965f6fc3f
-ms.contentlocale: fr-fr
-ms.lasthandoff: 08/30/2017
-
+caps.latest.revision: "14"
+author: gewarren
+ms.author: gewarren
+manager: ghogen
+ms.openlocfilehash: 910be06a7d9897f306b6bb2b89ca99b733623faf
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: fr-FR
+ms.lasthandoff: 10/31/2017
 ---
-# <a name="ca1025-replace-repetitive-arguments-with-params-array"></a>CA1025: Replace repetitive arguments with params array
+# <a name="ca1025-replace-repetitive-arguments-with-params-array"></a>CA1025 : Remplacer les arguments répétitifs par un tableau params
 |||  
 |-|-|  
 |TypeName|ReplaceRepetitiveArgumentsWithParamsArray|  
 |CheckId|CA1025|  
-|Category|Microsoft.Design|  
-|Breaking Change|Non-breaking|  
+|Catégorie|Microsoft.Design|  
+|Modification avec rupture|Sans rupture|  
   
 ## <a name="cause"></a>Cause  
- A public or protected method in a public type has more than three parameters, and its last three parameters are the same type.  
+ Une méthode publique ou protégée dans un type public a plus de trois paramètres, et ses trois derniers paramètres sont du même type.  
   
-## <a name="rule-description"></a>Rule Description  
- Use a parameter array instead of repeated arguments when the exact number of arguments is unknown and the variable arguments are the same type, or can be passed as the same type. For example, the <xref:System.Console.WriteLine%2A> method provides a general-purpose overload that uses a parameter array to accept any number of <xref:System.Object> arguments.  
+## <a name="rule-description"></a>Description de la règle  
+ Utilisez un tableau de paramètres au lieu d’arguments répétés lorsque le nombre exact d’arguments est inconnu et les arguments variables sont du même type ou peuvent être passés en tant que le même type. Par exemple, le <xref:System.Console.WriteLine%2A> méthode fournit une surcharge à usage général qui utilise un tableau de paramètres pour accepter un nombre quelconque de <xref:System.Object> arguments.  
   
-## <a name="how-to-fix-violations"></a>How to Fix Violations  
- To fix a violation of this rule, replace the repeated arguments with a parameter array.  
+## <a name="how-to-fix-violations"></a>Comment corriger les violations  
+ Pour corriger une violation de cette règle, remplacez les arguments répétés avec un tableau de paramètres.  
   
-## <a name="when-to-suppress-warnings"></a>When to Suppress Warnings  
- It is always safe to suppress a warning from this rule; however, this design might cause usability issues.  
+## <a name="when-to-suppress-warnings"></a>Quand supprimer les avertissements  
+ Il est toujours possible de supprimer un avertissement de cette règle ; Toutefois, cette conception peut entraîner des problèmes d’utilisation.  
   
-## <a name="example"></a>Example  
- The following example shows a type that violates this rule.  
+## <a name="example"></a>Exemple  
+ L’exemple suivant montre un type qui viole cette règle.  
   
  [!code-csharp[FxCop.Design.RepeatArgs#1](../code-quality/codesnippet/CSharp/ca1025-replace-repetitive-arguments-with-params-array_1.cs)]

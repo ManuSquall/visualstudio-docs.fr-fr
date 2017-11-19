@@ -1,52 +1,51 @@
 ---
-title: "IDiaSymbol::get_lexicalParent | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-debug"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "IDiaSymbol::get_lexicalParent (méthode)"
+title: IDiaSymbol::get_lexicalParent | Documents Microsoft
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-debug
+ms.tgt_pltfrm: 
+ms.topic: article
+dev_langs: C++
+helpviewer_keywords: IDiaSymbol::get_lexicalParent method
 ms.assetid: 4d119965-33a8-474c-9c64-95c5218c389c
-caps.latest.revision: 9
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 9
+caps.latest.revision: "9"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: 0964fd67555166b6b1de0869177fa5c1fd25d754
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: fr-FR
+ms.lasthandoff: 10/31/2017
 ---
-# IDiaSymbol::get_lexicalParent
-[!INCLUDE[vs2017banner](../../code-quality/includes/vs2017banner.md)]
-
-Extrait une référence au parent lexicale du symbole.  
+# <a name="idiasymbolgetlexicalparent"></a>IDiaSymbol::get_lexicalParent
+Récupère une référence au parent lexicale du symbole.  
   
-## Syntaxe  
+## <a name="syntax"></a>Syntaxe  
   
-```cpp#  
-HRESULT get_lexicalParent (   
-   IDiaSymbol** pRetVal  
+```C++  
+HRESULT get_lexicalParent (   
+   IDiaSymbol** pRetVal  
 );  
 ```  
   
-#### Paramètres  
+#### <a name="parameters"></a>Paramètres  
  `pRetVal`  
- \[out\]  Retourne un objet d' [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md) qui représente le parent lexicale du symbole.  
+ [out] Retourne un [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md) objet qui représente le parent lexical du symbole.  
   
-## Valeur de retour  
- En cas de réussite, retourne `S_OK`; sinon, retourne `S_FALSE` ou un code d'erreur.  
+## <a name="return-value"></a>Valeur de retour  
+ En cas de réussite, retourne `S_OK`; sinon, retourne `S_FALSE` ou code d’erreur.  
   
 > [!NOTE]
->  Une valeur de retour d' `S_FALSE` signifie que la propriété n'est pas disponible pour le symbole.  
+>  La valeur de retour `S_FALSE` signifie que la propriété n’est pas disponible pour le symbole.  
   
-## Notes  
- Le parent lexicale d'un symbole est la fonction ou le module englobante.  Par exemple, le parent lexicale d'un paramètre de fonction ou d'une variable locale est la fonction elle\-même pendant que le parent lexicale de la fonction est le module qu'elle est définie dans.  
+## <a name="remarks"></a>Remarques  
+ Le parent lexical d’un symbole est la fonction ou un module englobant. Par exemple, le parent lexical d’un paramètre de fonction ou une variable locale est la fonction elle-même alors que le lexicale parente de la fonction est le module dans qu'est défini.  
   
- Les symboles pouvant apparaître comme des parents lexicales sont documentés dans [Hiérarchie lexicale des types de symboles](../../debugger/debug-interface-access/lexical-hierarchy-of-symbol-types.md).  
+ Les symboles possibles qui peuvent s’afficher comme lexicales parents sont documentées dans [hiérarchie lexicale des Types de symbole](../../debugger/debug-interface-access/lexical-hierarchy-of-symbol-types.md).  
   
-## Voir aussi  
+## <a name="see-also"></a>Voir aussi  
  [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)   
  [Hiérarchie lexicale des types de symboles](../../debugger/debug-interface-access/lexical-hierarchy-of-symbol-types.md)

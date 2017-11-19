@@ -1,59 +1,61 @@
 ---
-title: "Subtraction, op&#233;rateur d&#39;assignation (-=) (JavaScript) | Microsoft Docs"
-ms.custom: ""
-ms.date: "01/18/2017"
-ms.prod: "windows-client-threshold"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "devlang-javascript"
-ms.tgt_pltfrm: ""
-ms.topic: "language-reference"
-f1_keywords: 
-  - "-="
-dev_langs: 
-  - "JavaScript"
-  - "TypeScript"
-  - "DHTML"
-helpviewer_keywords: 
-  - "-= (opérateur) (JavaScript)"
-  - "opérateurs d'assignation, JavaScript"
-  - "subtraction (opérateur d'assignation) (JavaScript)"
+title: "Opérateur d’assignation de soustraction (-) (JavaScript) | Documents Microsoft"
+ms.custom: 
+ms.date: 01/18/2017
+ms.prod: windows-client-threshold
+ms.reviewer: 
+ms.suite: 
+ms.technology: devlang-javascript
+ms.tgt_pltfrm: 
+ms.topic: language-reference
+f1_keywords: -=
+dev_langs:
+- JavaScript
+- TypeScript
+- DHTML
+helpviewer_keywords:
+- subtraction assignment operator [JavaScript]
+- -= operator [JavaScript]
+- assignment operators, JavaScript
 ms.assetid: a03adbd8-75fa-4633-80c5-f7215332a8ef
-caps.latest.revision: 9
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 9
+caps.latest.revision: "9"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: 500e5398e8fba4c10eb24e5ccfc64c10414ce9a2
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.translationtype: MT
+ms.contentlocale: fr-FR
+ms.lasthandoff: 10/27/2017
 ---
-# Subtraction, op&#233;rateur d&#39;assignation (-=) (JavaScript)
+# <a name="subtraction-assignment-operator---javascript"></a>Subtraction, opérateur d'assignation (-=) (JavaScript)
 Soustrait la valeur d'une expression de la valeur d'une variable et assigne le résultat à la variable.  
   
-## Syntaxe  
+## <a name="syntax"></a>Syntaxe  
   
 ```  
   
 result -= expression  
 ```  
   
-## Paramètres  
- *result*  
+## <a name="parameters"></a>Paramètres  
+ *résultat*  
  Toute variable numérique.  
   
  *expression*  
  Toute expression numérique.  
   
-## Notes  
- Utiliser l'opérateur d' `-=` revient exactement à procéder comme suit :  
+## <a name="remarks"></a>Remarques  
+ À l’aide de la `-=` opérateur est exactement le même que la manière suivante :  
   
-```javascript  
-result = result – expression  
+```JavaScript  
+result = result - expression  
 ```  
   
-## Configuration requise  
+## <a name="requirements"></a>Spécifications  
  [!INCLUDE[jsv1](../../javascript/misc/includes/jsv1-md.md)]  
   
-## Voir aussi  
- [\- \(soustraction\), opérateur](../../javascript/reference/subtraction-operator-decrement-javascript.md)   
+## <a name="see-also"></a>Voir aussi  
+ [Opérateur de soustraction (-)](../../javascript/reference/subtraction-operator-decrement-javascript.md)   
  [Priorité des opérateurs](../../javascript/operator-subtractprecedence-javascript.md)   
- [Résumé des opérateurs \(JavaScript\)](../../javascript/misc/operator-subtractsummary-javascript.md)
+ [Résumé des opérateurs (JavaScript)](../../javascript/misc/operator-subtractsummary-javascript.md)

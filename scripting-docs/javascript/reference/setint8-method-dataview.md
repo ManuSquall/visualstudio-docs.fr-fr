@@ -1,48 +1,51 @@
 ---
-title: "setInt8, m&#233;thode (DataView) | Microsoft Docs"
-ms.custom: ""
-ms.date: "01/18/2017"
-ms.prod: "windows-client-threshold"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "devlang-javascript"
-ms.tgt_pltfrm: ""
-ms.topic: "language-reference"
-dev_langs: 
-  - "JavaScript"
-  - "TypeScript"
-  - "DHTML"
+title: "setint8, méthode (DataView) | Documents Microsoft"
+ms.custom: 
+ms.date: 01/18/2017
+ms.prod: windows-client-threshold
+ms.reviewer: 
+ms.suite: 
+ms.technology: devlang-javascript
+ms.tgt_pltfrm: 
+ms.topic: language-reference
+dev_langs:
+- JavaScript
+- TypeScript
+- DHTML
 ms.assetid: 0a0e1450-e0c4-4778-8706-4d332442d882
-caps.latest.revision: 5
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 5
+caps.latest.revision: "5"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: d6f9bd9c4b3bea25686036d199d1a987927172d1
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.translationtype: MT
+ms.contentlocale: fr-FR
+ms.lasthandoff: 10/27/2017
 ---
-# setInt8, m&#233;thode (DataView)
-Stocke une valeur Int8 au niveau de l'offset d'octet spécifié à partir du début de la vue.  
+# <a name="setint8-method-dataview"></a>setInt8, méthode (DataView)
+Stocke une valeur Int8 à l’offset d’octet spécifié à partir du début de la vue.  
   
-## Syntaxe  
+## <a name="syntax"></a>Syntaxe  
   
 ```  
 dataView.setInt8(byteOffset, value);   
 ```  
   
-## Paramètres  
+## <a name="parameters"></a>Paramètres  
  `byteOffset`  
- Emplacement dans la mémoire tampon auquel la valeur doit être définie.  
+ L’emplacement de la mémoire tampon à laquelle la valeur doit être définie.  
   
  `value`  
  Valeur à définir.  
   
-## Notes  
- Ces méthodes lèvent une exception si elles doivent écrire au\-delà de la fin de la vue.  
+## <a name="remarks"></a>Remarques  
+ Ces méthodes déclenchent une exception si elles écririez au-delà de la fin de la vue.  
   
-## Exemple  
- L'exemple suivant montre comment définir le premier Int8 dans le DataView.  
+## <a name="example"></a>Exemple  
+ L’exemple suivant montre comment définir la première Int8 du DataView.  
   
-```javascript  
+```JavaScript  
 var req = new XMLHttpRequest();  
     req.open('GET', "http://www.example.com");  
     req.responseType = "arraybuffer";  
@@ -58,5 +61,5 @@ var req = new XMLHttpRequest();
   
 ```  
   
-## Configuration requise  
+## <a name="requirements"></a>Spécifications  
  [!INCLUDE[jsv10](../../javascript/reference/includes/jsv10-md.md)]

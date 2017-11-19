@@ -1,69 +1,69 @@
 ---
-title: "Comment&#160;: synchroniser des ensembles de r&#232;gles applicables &#224; des projets de code avec la strat&#233;gie d&#39;archivage du projet d&#39;&#233;quipe | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-devops-test"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "vs.codeanalysis.selecttfsruleset"
+title: "Comment : synchroniser des ensembles de règles de projet de Code avec la stratégie d’archivage du projet d’équipe | Documents Microsoft"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-code-analysis
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords: vs.codeanalysis.selecttfsruleset
 ms.assetid: 9b02f934-2db6-41ec-aaff-9c31ceec2f04
-caps.latest.revision: 12
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
-caps.handback.revision: 12
+caps.latest.revision: "12"
+author: gewarren
+ms.author: gewarren
+manager: ghogen
+ms.openlocfilehash: de3a7bfaccec45dc6b7fce1def45a6e6de8e75f2
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: fr-FR
+ms.lasthandoff: 10/31/2017
 ---
-# Comment&#160;: synchroniser des ensembles de r&#232;gles applicables &#224; des projets de code avec la strat&#233;gie d&#39;archivage du projet d&#39;&#233;quipe
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
-
-Vous synchronisez les paramètres d'analyse du code des projets de code avec la stratégie d'archivage du projet d'équipe en spécifiant un ensemble de règles qui contient au moins les règles spécifiées dans l'ensemble de règles de la stratégie d'archivage.  Votre développeur sénior peut vous indiquer le nom et l'emplacement de l'ensemble de règles pour la stratégie d'archivage.  Vous pouvez utiliser l'une des options suivantes pour garantir que l'analyse du code du projet utilise le jeu de règles approprié :  
+# <a name="how-to-synchronize-code-project-rule-sets-with-team-project-check-in-policy"></a>Comment : synchroniser des ensembles de règles applicables à des projets de code avec la stratégie d'archivage du projet d'équipe
+Vous synchronisez les paramètres d’analyse de code pour les projets de code à la stratégie d’archivage du projet d’équipe en spécifiant un ensemble de règles qui contient au moins les règles spécifiées dans l’ensemble de règles pour la stratégie d’archivage. Votre responsable du développement peut informer vous du nom et l’emplacement de l’ensemble de règles pour la stratégie d’archivage. Vous pouvez utiliser une des options suivantes pour vous assurer que l’analyse du code pour le projet utilise le jeu de règles approprié :  
   
--   Si la stratégie d'archivage utilise l'un des ensembles de règles prédéfinis Microsoft, ouvrez la boîte de dialogue des propriétés du projet de code, affichez la page Analyse du code et sélectionnez\-le dans la page Analyse du code des paramètres du projet de code.  Les ensembles de règles standards Microsoft sont installés automatiquement avec Visual Studio ; ils sont en lecture seule et ne doivent pas être modifiés.  Si les ensembles de règles ne sont pas modifiés, la correspondance entre les règles comprises dans la stratégie et les ensembles de règles locaux est garantie.  
+-   Si la stratégie d’archivage utilise un des ensembles de règles intégrés Microsoft, ouvrez la boîte de dialogue Propriétés du projet de code, afficher la page d’analyse du Code et sélectionnez la règle définie sur la page d’analyse du Code des paramètres de projet de code. L’ensembles de règles standard sont installés automatiquement avec Visual Studio de Microsoft sont la valeur en lecture seule et ne doit pas être modifié. Si les ensembles de règles ne sont pas modifiés, les règles de la stratégie et les ensembles de règles locales sont garantis pour correspondre.  
   
--   Si la stratégie d'archivage utilise un ensemble de règles personnalisé, exécutez une opération d'extraction sur le fichier d'ensemble de règles dans le contrôle de version pour créer une copie locale.  Spécifiez ensuite cet emplacement local dans les paramètres d'analyse du code pour le projet de code.  La correspondance des règles est garantie si l'ensemble de règles pour la stratégie d'archivage est à jour.  
+-   Si la stratégie d’archivage utilise un ensemble de règles personnalisé, effectuer une opération get sur le fichier d’ensemble de règles de contrôle de version pour créer une copie locale. Spécifiez ensuite cet emplacement local dans les paramètres d’analyse de code pour le projet de code. Les règles sont garanties à faire correspondre si l’ensemble de règles pour la stratégie d’archivage est à jour.  
   
-     Si vous mappez l'emplacement de contrôle de version à un dossier local qui entretient la même relation avec la racine de projet d'équipe que votre projet de code, l'emplacement de l'ensemble de règles est défini à l'aide d'un chemin d'accès relatif.  Le chemin d'accès relatif garantit que le paramètre de projet de code pour l'analyse du code peut être transmis à d'autres ordinateurs.  
+     Si vous mappez l’emplacement de contrôle de version à un dossier local qui se trouve dans la même relation à la racine du projet d’équipe en tant que votre projet de code, l’emplacement de la règle est défini à l’aide d’un chemin d’accès relatif. Le chemin d’accès relatif garantit que le paramètre de projet pour l’analyse du code peut être déplacé vers d’autres ordinateurs.  
   
--   Personnalisez une copie de l'ensemble de règles pour la stratégie d'archivage d'un projet de code.  Assurez\-vous que le nouvel ensemble de règles contient toutes les règles de la stratégie d'archivage et toute autre règle que vous souhaitez inclure.  Vous devez vous assurer que votre ensemble de règles inclut toutes les règles dans l'ensemble de règles pour la stratégie d'archivage.  
+-   Personnaliser une copie de l’ensemble de règles pour la stratégie d’archivage pour un projet de code. Assurez-vous que le nouvel ensemble de règles contient toutes les règles dans la stratégie d’archivage et les autres règles que vous souhaitez inclure. Il se peut que vous devez vous assurer que votre jeu de règles inclut toutes les règles dans l’ensemble de règles pour la stratégie d’archivage.  
   
-### Pour spécifier un ensemble de règles Microsoft standard  
+### <a name="to-specify-a-microsoft-standard-rule-set"></a>Pour spécifier une règle standard Microsoft ensemble  
   
-1.  Dans l'**Explorateur de solutions**, cliquez avec le bouton droit sur le projet de code, puis cliquez sur **Propriétés**.  
+1.  Dans **l’Explorateur de solutions**, cliquez sur le projet de code, puis cliquez sur **propriétés**.  
   
-2.  Cliquez sur **Analyse du code**.  
+2.  Cliquez sur **l’analyse du Code**.  
   
-3.  Dans la liste **Exécuter cet ensemble de règles**, cliquez sur l'ensemble de règles de la stratégie d'archivage.  
+3.  Dans le **exécuter cet ensemble de règles** , cliquez sur l’ensemble de règles de stratégie d’archivage.  
   
-### Pour spécifier un ensemble de règles de stratégie d'archivage personnalisé  
+### <a name="to-specify-a-custom-check-in-policy-rule-set"></a>Pour spécifier un ensemble de règles de stratégie d’archivage personnalisée  
   
-1.  Si nécessaire, exécutez une opération d'extraction sur le fichier d'ensemble de règles qui spécifie la stratégie d'archivage.  
+1.  Si nécessaire, effectuer une opération get sur le fichier d’ensemble de règles qui spécifie la stratégie d’archivage.  
   
-2.  Dans l'**Explorateur de solutions**, cliquez avec le bouton droit sur le projet de code, puis cliquez sur **Propriétés**.  
+2.  Dans **l’Explorateur de solutions**, cliquez sur le projet de code, puis cliquez sur **propriétés**.  
   
-3.  Cliquez sur **Analyse du code**.  
+3.  Cliquez sur **l’analyse du Code**.  
   
-4.  Dans la liste **Exécuter cet ensemble de règles**, cliquez sur **\<Parcourir...\>**.  
+4.  Dans le **exécuter cet ensemble de règles** , cliquez sur  **\<Parcourir... >**.  
   
-5.  Dans la boîte de dialogue **Ouvrir**, spécifiez le fichier de l'ensemble de règles de la stratégie d'archivage.  
+5.  Dans le **ouvrir** boîte de dialogue, spécifiez le fichier d’ensemble de la règle de stratégie d’archivage.  
   
-### Pour créer un ensemble de règles personnalisé pour un projet de code  
+### <a name="to-create-a-custom-rule-set-for-a-code-project"></a>Pour créer une règle personnalisée définie pour un projet de code  
   
-1.  Suivez l'une des procédures présentées précédemment dans cette rubrique pour sélectionner la stratégie d'archivage du projet d'équipe dans la page Analyse du code de la boîte de dialogue des paramètres du projet.  
+1.  Suivez une des procédures plus haut dans cette rubrique pour sélectionner la stratégie d’archivage du projet d’équipe dans la page de l’analyse du Code de la boîte de dialogue Paramètres du projet.  
   
-2.  Cliquez sur **Ouvrir**.  
+2.  Cliquez sur **ouvrir**.  
   
-3.  Ajoutez ou supprimez des règles à l'aide de l'éditeur d'ensembles de règles.  
+3.  Ajouter ou supprimer des règles à l’aide de l’éditeur d’ensemble de règles.  
   
-     Pour plus d'informations, consultez [Création d'ensembles de règles personnalisés](../code-quality/creating-custom-code-analysis-rule-sets.md).  
+     Pour plus d’informations, consultez [création d’ensembles de règles personnalisés](../code-quality/creating-custom-code-analysis-rule-sets.md).  
   
-4.  Enregistrez l'ensemble de règles modifié dans un fichier .ruleset sur l'ordinateur local ou dans un chemin d'accès UNC.  
+4.  Enregistrer la règle modifiée définie dans un fichier .ruleset sur l’ordinateur local ou sur un chemin d’accès UNC.  
   
-5.  Ouvrez la boîte de dialogue des propriétés du projet de code et affichez la page **Analyse du code**.  
+5.  Ouvrir la boîte de dialogue Propriétés du projet de code et afficher le **l’analyse du Code** page.  
   
-6.  Dans la liste **Exécuter cet ensemble de règles**, cliquez sur **\<Parcourir...\>**.  
+6.  Dans le **exécuter cet ensemble de règles** , cliquez sur  **\<Parcourir... >**.  
   
-7.  Dans la boîte de dialogue **Ouvrir**, spécifiez le fichier de l'ensemble de règles.
+7.  Dans le **ouvrir** boîte de dialogue, spécifiez le fichier d’ensemble de la règle.

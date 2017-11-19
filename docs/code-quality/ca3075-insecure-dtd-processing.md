@@ -1,97 +1,80 @@
 ---
-title: 'CA3075: Insecure DTD Processing | Microsoft Docs'
+title: "CA3075 : Le traitement des DTD non sécurisé | Documents Microsoft"
 ms.custom: 
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-devops-test
+ms.technology: vs-ide-code-analysis
 ms.tgt_pltfrm: 
 ms.topic: article
 ms.assetid: 65798d66-7a30-4359-b064-61a8660c1eed
-caps.latest.revision: 17
+caps.latest.revision: "17"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-translation.priority.ht:
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- ru-ru
-- zh-cn
-- zh-tw
-translation.priority.mt:
-- cs-cz
-- pl-pl
-- pt-br
-- tr-tr
-ms.translationtype: HT
-ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
-ms.openlocfilehash: 7c56479174f6189a17f657af4919416d7b0a6951
-ms.contentlocale: fr-fr
-ms.lasthandoff: 08/28/2017
-
+ms.openlocfilehash: e9660e2dc94cf23269b923c6ba5426a7cc384161
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: fr-FR
+ms.lasthandoff: 10/31/2017
 ---
-# <a name="ca3075-insecure-dtd-processing"></a>CA3075: Insecure DTD Processing
+# <a name="ca3075-insecure-dtd-processing"></a>CA3075 : traitement DTD non sécurisé
 |||  
 |-|-|  
 |TypeName|InsecureDTDProcessing|  
 |CheckId|CA3075|  
-|Category|Microsoft.Security|  
-|Breaking Change|Non Breaking|  
+|Catégorie|Microsoft.Security|  
+|Modification avec rupture|Sans rupture|  
   
 ## <a name="cause"></a>Cause  
- If you use insecure <xref:System.Xml.XmlReaderSettings.DtdProcessing%2A> instances or reference external entity sources, the parser may accept untrusted input and disclose sensitive information to attackers.  
+ Si vous utilisez des instances de <xref:System.Xml.XmlReaderSettings.DtdProcessing%2A> non sécurisées ou référencez des sources d’entités externes, l’analyseur peut accepter une entrée non fiable et divulguer des informations sensibles à des personnes malveillantes.  
   
-## <a name="rule-description"></a>Rule Description  
- A [Document Type Definition (DTD)](https://msdn.microsoft.com/en-us/library/aa468547.aspx) is one of two ways an XML parser can determine the validity of a document, as defined by the  [World Wide Web Consortium (W3C) Extensible Markup Language (XML) 1.0](http://www.w3.org/TR/2008/REC-xml-20081126/). This rule seeks properties and instances where untrusted data is accepted to warn developers about potential [Information Disclosure](/dotnet/framework/wcf/feature-details/information-disclosure) threats, which may lead to [Denial of Service (DoS)](/dotnet/framework/wcf/feature-details/denial-of-service) attacks. This rule triggers when:  
+## <a name="rule-description"></a>Description de la règle  
+ Une [définition de type de document (DTD)](https://msdn.microsoft.com/en-us/library/aa468547.aspx) est l’une des deux façons pour un analyseur XML de déterminer la validité d’un document, comme défini par la recommandation du  [World Wide Web Consortium (W3C) sur le langage XML (Extensible Markup Language) 1.0](http://www.w3.org/TR/2008/REC-xml-20081126/). Cette règle recherche les propriétés et instances où les données non fiables sont acceptées pour informer les développeurs de menaces de [Information Disclosure](/dotnet/framework/wcf/feature-details/information-disclosure) éventuelles, qui peuvent entraîner des attaques [par déni de service](/dotnet/framework/wcf/feature-details/denial-of-service) . Cette règle se déclenche quand :  
   
--   DtdProcessing is enabled on the <xref:System.Xml.XmlReader> instance, which resolves external XML entities using <xref:System.Xml.XmlUrlResolver>.  
+-   DtdProcessing est activé sur l’instance de <xref:System.Xml.XmlReader> , ce qui résout les entités XML externes à l’aide de <xref:System.Xml.XmlUrlResolver>.  
   
--   The <xref:System.Xml.XmlNode.InnerXml%2A> property in the XML is set.  
+-   La propriété <xref:System.Xml.XmlNode.InnerXml%2A> dans le code XML est définie.  
   
--   <xref:System.Xml.XmlReaderSettings.DtdProcessing%2A> property is set  to Parse    .  
+-   <xref:System.Xml.XmlReaderSettings.DtdProcessing%2A>propriété est définie pour l’analyse.  
   
--   Untrusted input is processed using <xref:System.Xml.XmlResolver> instead of <xref:System.Xml.XmlSecureResolver> .  
+-   L’entrée non fiable est traitée avec <xref:System.Xml.XmlResolver> au lieu de <xref:System.Xml.XmlSecureResolver> .  
   
--   The XmlReader.<xref:System.Xml.XmlReader.Create%2A> method is invoked with an insecure <xref:System.Xml.XmlReaderSettings> instance or no instance at all.  
+-   La méthode XmlReader.<xref:System.Xml.XmlReader.Create%2A> est appelée avec une instance de <xref:System.Xml.XmlReaderSettings> non sécurisée ou sans instance.  
   
--   <xref:System.Xml.XmlReader> is created with insecure default settings or values    .  
+-   <xref:System.Xml.XmlReader>est créé avec les valeurs ou les paramètres par défaut non sécurisés.  
   
- In each of these cases, the outcome is the same: the contents from either the file system or network shares from the machine where the XML is processed will be exposed to the attacker, which may then be used as a DoS vector.  
+ Dans chacun de ces cas, le résultat est le même : le contenu du système de fichiers ou des partages réseau de l’ordinateur où le code XML est traité sera exposé à la personne malveillante et peut ensuite être utilisé comme un vecteur d’attaque par déni de service.  
   
-## <a name="how-to-fix-violations"></a>How to Fix Violations  
+## <a name="how-to-fix-violations"></a>Comment corriger les violations  
   
--   Catch and process all XmlTextReader exceptions properly to avoid path information disclosure    .  
+-   Interceptez et traitez toutes les exceptions XmlTextReader correctement pour éviter la divulgation d’informations de chemin d’accès.  
   
--   Use the <xref:System.Xml.XmlSecureResolver> to restrict the resources      that the XmlTextReader can access.  
+-   Utilisez <xref:System.Xml.XmlSecureResolver> pour limiter les ressources auxquelles XmlTextReader peut accéder.  
   
--   Do not allow the <xref:System.Xml.XmlReader> to open any external resources by setting the <xref:System.Xml.XmlResolver> property to **null**.  
+-   Empêchez <xref:System.Xml.XmlReader> d’ouvrir des ressources externes en affectant à la propriété <xref:System.Xml.XmlResolver> la valeur **null**.  
   
--   Ensure that the <xref:System.Data.DataViewManager.DataViewSettingCollectionString%2A> property of <xref:System.Data.DataViewManager> is assigned from a trusted source.  
+-   Vérifiez que la propriété <xref:System.Data.DataViewManager.DataViewSettingCollectionString%2A> de <xref:System.Data.DataViewManager> est affectée depuis une source fiable.  
   
- .NET 3.5 and earlier  
+ .NET 3.5 et versions antérieures  
   
--   Disable DTD processing if you are dealing with untrusted sources by setting the <xref:System.Xml.XmlReaderSettings.ProhibitDtd%2A> property to **true** .  
+-   Désactivez le traitement DTD si vous utilisez des sources non fiables en affectant à la propriété <xref:System.Xml.XmlReaderSettings.ProhibitDtd%2A> la valeur **true** .  
   
--   XmlTextReader class has a full trust inheritance demand. See [Inheritance Demands](http://msdn.microsoft.com/en-us/28b9adbb-8f08-4f10-b856-dbf59eb932d9) for more information    .  
+-   La classe XmlTextReader a une demande d’héritage de confiance totale. Consultez [des demandes d’héritage](http://msdn.microsoft.com/en-us/28b9adbb-8f08-4f10-b856-dbf59eb932d9) pour plus d’informations.  
   
- .NET 4 and later  
+ .NET 4 et versions ultérieures  
   
--   Avoid enabling DtdProcessing if you're dealing with untrusted sources by setting the DtdProcessing  property to [Prohibit or Ignore](https://msdn.microsoft.com/en-us/library/system.xml.dtdprocessing.aspx)  
+-   Évitez d’activer DtdProcessing si vous utilisez des sources non fiables en affectant à la propriété DtdProcessing [Prohibit ou Ignore](https://msdn.microsoft.com/en-us/library/system.xml.dtdprocessing.aspx)  
   
--   Ensure that the Load() method takes an XmlReader instance in all InnerXml cases.  
+-   Vérifiez que la méthode Load() accepte une instance de XmlReader dans tous les cas InnerXml.  
   
 > [!NOTE]
->  This rule might report false positives on some valid XmlSecureResolver instances. We're working on solving this issue by mid 2016.  
+>  Cette règle peut signaler des faux positifs sur certaines instances de XmlSecureResolver valides. Nous travaillons sur la résolution de ce problème pour le milieu de l’année 2016.  
   
-## <a name="when-to-suppress-warnings"></a>When to Suppress Warnings  
- Unless you're sure that the input is known to be from a trusted source, do not suppress a rule from this warning.  
+## <a name="when-to-suppress-warnings"></a>Quand supprimer les avertissements  
+ Sauf si vous êtes sûr que l’entrée provient d’une source fiable, ne supprimez aucune règle de cet avertissement.  
   
-## <a name="pseudo-code-examples"></a>Pseudo-code Examples  
+## <a name="pseudo-code-examples"></a>Exemples de pseudo-code  
   
 ### <a name="violation"></a>Violation  
   

@@ -1,5 +1,5 @@
 ---
-title: Add new connections | Microsoft Docs
+title: Ajouter de nouvelles connexions | Documents Microsoft
 ms.custom: 
 ms.date: 11/04/2016
 ms.reviewer: 
@@ -7,54 +7,49 @@ ms.suite:
 ms.tgt_pltfrm: 
 ms.topic: article
 ms.assetid: 8a93c287-2834-4a83-a590-bdc3fe8d293f
-caps.latest.revision: 14
+caps.latest.revision: "14"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-translation.priority.mt:
-- cs-cz
-- pl-pl
-- pt-br
-- tr-tr
-ms.translationtype: HT
-ms.sourcegitcommit: 33a857c2d8585e2e8da9bcd9158190366a3b6830
-ms.openlocfilehash: d3e451a63680d619581009075cbb047515f88358
-ms.contentlocale: fr-fr
-ms.lasthandoff: 09/07/2017
-
+ms.technology: vs-data-tools
+ms.openlocfilehash: accf99d7a1d230bac64ebd8ebf9c9f1071ad1876
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: fr-FR
+ms.lasthandoff: 10/31/2017
 ---
-# <a name="add-new-connections"></a>Add new connections
-You can test your connection to a database or service, and explore database contents and schemas, by using **Server Explorer**, **Cloud Explorer**, or **SQL Server Object Explorer**. The functionality of these windows overlaps to some extent. The basic differences are:  
+# <a name="add-new-connections"></a>Ajouter de nouvelles connexions
+Vous pouvez tester votre connexion à une base de données ou un service et Explorer le contenu de la base de données et des schémas, à l’aide de **l’Explorateur de serveurs**, **Cloud Explorer**, ou **l’Explorateur d’objets SQL Server**. La fonctionnalité de ces fenêtres se chevauche dans une certaine mesure. Les principales différences sont :  
   
- - Server Explorer  
- Installed by default in Visual Studio. Can be used to test connections and view SQL Server databases, any other databases that have an ADO.NET provider installed, and some Azure services. Also shows low-level objects such as system performance counters, event logs, and message queues. If a data source has no ADO.NET provider, it won't show up here, but you can still use it from Visual Studio by connecting programmatically.  
+ - Explorateur de serveurs  
+ Installé par défaut dans Visual Studio. Peut être utilisé pour tester les connexions et afficher les bases de données SQL Server, toutes les autres bases de données ayant un fournisseur ADO.NET installé et certains services Azure. Montre également les objets de bas niveau tels que les compteurs de performances système, les journaux des événements et les files d’attente. Si une source de données n’a aucun fournisseur ADO.NET, il ne s’afficheront ici, mais vous pouvez toujours l’utiliser à partir de Visual Studio en vous connectant par programme.  
   
  - Cloud Explorer  
- Install this window manually as a Visual Studio extension by selecting **Tools** > **Extensions and Updates** > **Online** > **Visual Studio Gallery**. Provides specialized functionality for exploring and connecting to Azure services.  
+ Cette fenêtre installer manuellement comme une extension Visual Studio en sélectionnant **outils** > **Extensions et mises à jour** > **Online**  >  **Galerie visual Studio**. Fournit des fonctionnalités spécialisées pour l’exploration et la connexion aux services Azure.  
   
- - SQL Server Object Explorer  
- Installed with SQL Server Data Tools and visible under the **View** menu. If you don't see it there, go to **Programs and Features** in Control Panel, find Visual Studio,  and then select **Change** to re-run the installer after selecting  the check box for SQL Server Data Tools. Use **SQL Server Object Explorer** to view SQL databases (if they have an ADO.NET provider), create new databases, modify schemas, create stored procedures, retrieve connection strings, view the data, and more. SQL databases that have no ADO.NET provider installed won't show up here, but you can still connect to them programmatically.  
+ - Explorateur d'objets SQL Server  
+ Installé avec SQL Server Data Tools et visibles sous le **vue** menu. Si vous n’apparaît pas, accédez à **programmes et fonctionnalités** dans le panneau de configuration, recherchez Visual Studio, puis sélectionnez **modification** exécuter à nouveau le programme d’installation après avoir sélectionné la case à cocher pour SQL Server Data Tools. Utilisez **l’Explorateur d’objets SQL Server** à l’affichage des bases de données SQL (s’ils ont un fournisseur ADO.NET), créer de nouvelles bases de données, de modifier des schémas, de créer des procédures stockées, de récupérer les chaînes de connexion, d’afficher les données et bien plus encore. Les bases de données SQL qui aucun fournisseur ADO.NET est installé n’apparaîtront pas ici, mais vous pouvez toujours vous connecter à leur par programme.  
   
-## <a name="add-a-connection-in-server-explorer"></a>Add a connection in Server Explorer  
- To create a connection to the database, click the **Add Connection** icon in **Server Explorer**, or right-click in **Server Explorer** on the **Data Connections** node and select **Add Connection**. From here, you can also connect to a database on another server, a SharePoint service, or an Azure service.  
+## <a name="add-a-connection-in-server-explorer"></a>Ajouter une connexion dans l’Explorateur de serveurs  
+ Pour créer une connexion à la base de données, cliquez sur le **ajouter une connexion** icône dans **l’Explorateur de serveurs**, ou avec le bouton droit dans **l’Explorateur de serveurs** sur la **données Connexions** nœud et sélectionnez **ajouter une connexion**. À ce stade, vous pouvez également vous connecter à une base de données sur un autre serveur, un service SharePoint ou un service Azure.  
   
- ![Server Explorer New Connection icon](../data-tools/media/raddata-server-explorer-new-connection-icon.png "raddata Server Explorer New Connection icon")  
+ ![Icône d’Explorer la nouvelle connexion serveur](../data-tools/media/raddata-server-explorer-new-connection-icon.png "icône de nouvelle connexion de serveur Explorer raddata")  
   
- This brings up the **Add Connection** dialog box. Here, we have entered the name of the SQL Server LocalDB instance.  
+ Ceci fait apparaître la **ajouter une connexion** boîte de dialogue. Ici, nous avons entré le nom de l’instance de base de données SQL Server locale.  
   
- ![Add New Connection](../data-tools/media/raddata-add-new-connection-dialog.png "raddata Add New Connection Dialog")  
+ ![Ajouter une nouvelle connexion](../data-tools/media/raddata-add-new-connection-dialog.png "raddata boîte de dialogue Ajouter nouvelle connexion")  
   
-## <a name="change-the-provider"></a>Change the provider  
- If the data source is not what you want, click the **Change** button to choose a new data source and/or a new ADO.NET data provider. The new provider might ask for your credentials, depending on how you configured it.  
+## <a name="change-the-provider"></a>Modifier le fournisseur  
+ Si la source de données n’est pas ce que vous souhaitez, cliquez sur le **modification** pour choisir une source de données et/ou un nouveau fournisseur de données ADO.NET. Le nouveau fournisseur peut demander vos informations d’identification, en fonction de leur configuration.  
   
- ![Change AD0.NET Data Provider](../data-tools/media/raddata-change-ad0.net-data-provider.png "raddata Change AD0.NET Data Provider")  
+ ![Modifier le fournisseur de données AD0.NET](../data-tools/media/raddata-change-ad0.net-data-provider.png "raddata AD0.NET modification du fournisseur de données")  
   
-## <a name="test-the-connection"></a>Test the connection  
- After you have chosen the data source, click **Test Connection**. If it doesn't succeed, you will need to troubleshoot based on the vendor's documentation.  
+## <a name="test-the-connection"></a>Tester la connexion  
+ Une fois que vous avez choisi la source de données, cliquez sur **tester la connexion**. S’il ne réussit pas, vous devez résoudre les problèmes en fonction de la documentation du fournisseur.  
   
- ![Test Connection](../data-tools/media/raddata-test-connection.png "raddata Test Connection")  
+ ![Tester la connexion](../data-tools/media/raddata-test-connection.png "raddata tester la connexion")  
   
- If the test succeeds, you are ready to create a *data source*, which is a Visual Studio term that really means a *data model* that is based on the underlying database or service.  
+ Si le test réussit, vous êtes prêt à créer un *source de données*, qui est un terme de Visual Studio signifie en réalité un *modèle de données* qui est basé sur la base de données sous-jacente ou le service.  
   
-## <a name="see-also"></a>See Also  
- [Visual Studio data tools for .NET](../data-tools/visual-studio-data-tools-for-dotnet.md)
+## <a name="see-also"></a>Voir aussi  
+ [Outils de données Visual Studio pour .NET](../data-tools/visual-studio-data-tools-for-dotnet.md)

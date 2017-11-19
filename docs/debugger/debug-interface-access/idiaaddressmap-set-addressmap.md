@@ -1,57 +1,56 @@
 ---
-title: "IDiaAddressMap::set_addressMap | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-debug"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "IDiaAddressMap::set_addressMap (méthode)"
+title: IDiaAddressMap::set_addressMap | Documents Microsoft
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-debug
+ms.tgt_pltfrm: 
+ms.topic: article
+dev_langs: C++
+helpviewer_keywords: IDiaAddressMap::set_addressMap method
 ms.assetid: 81e82073-089b-43d5-af39-49d7a4907c7a
-caps.latest.revision: 9
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 9
+caps.latest.revision: "9"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: 49dc861b6c250c83a6c30e2dbd0fb5035671ff28
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: fr-FR
+ms.lasthandoff: 10/31/2017
 ---
-# IDiaAddressMap::set_addressMap
-[!INCLUDE[vs2017banner](../../code-quality/includes/vs2017banner.md)]
-
-Fournit une configuration d'adresse aux traductions de disposition des images de stockage.  
+# <a name="idiaaddressmapsetaddressmap"></a>IDiaAddressMap::set_addressMap
+Fournit un mappage d’adresse pour prendre en charge les traductions de disposition d’image.  
   
-## Syntaxe  
+## <a name="syntax"></a>Syntaxe  
   
-```cpp#  
-HRESULT set_addressMap (   
-   DWORD                     cbData,  
-   struct DiaAddressMapEntry data[],  
-   BOOL                      imagetoSymbols  
+```C++  
+HRESULT set_addressMap (   
+   DWORD                     cbData,  
+   struct DiaAddressMapEntry data[],  
+   BOOL                      imagetoSymbols  
 );  
 ```  
   
-#### Paramètres  
+#### <a name="parameters"></a>Paramètres  
  `cbData`  
- \[in\]  le nombre d'éléments dans le paramètre d' `data` .  
+ [in] Le nombre d’éléments dans le `data` paramètre.  
   
  `data[]`  
- \[in\]  Un tableau de structures de [DiaAddressMapEntry, structure](../../debugger/debug-interface-access/diaaddressmapentry.md) qui définissent le mappage de traduction.  
+ [in] Un tableau de [diaaddressmapentry, Structure](../../debugger/debug-interface-access/diaaddressmapentry.md) structures qui définissent le mappage de conversion.  
   
  `imagetoSymbols`  
- \[in\]  `TRUE` si le paramètre d' `data` définit une carte de la nouvelle disposition des images à la disposition d'origine \(comme indiqué par les symboles de débogage\).  `FALSE` si `data` est une carte à la nouvelle disposition d'image prise de la disposition d'origine.  
+ [in] `TRUE` si le `data` paramètre définit un mappage à partir de la nouvelle disposition de l’image à la disposition d’origine (comme indiqué par les symboles de débogage). `FALSE`Si `data` est un mappage à la nouvelle disposition d’image obtenue à partir de la disposition d’origine.  
   
-## Valeur de retour  
- En cas de réussite, retourne `S_OK`; sinon, retourne un code d'erreur.  
+## <a name="return-value"></a>Valeur de retour  
+ En cas de réussite, retourne `S_OK`; sinon, retourne un code d’erreur.  
   
-## Notes  
- Généralement, le diamètre extrait des cartes de translation d'adresses du fichier de base de données du programme \(.pdb\).  Si ces valeurs sont absentes, la méthode d' [IDiaAddressMap::set\_imageHeaders](../../debugger/debug-interface-access/idiaaddressmap-set-imageheaders.md) est appelée deux fois, avec le jeu de paramètres d' `imagetoSymbols` à `TRUE` et une fois avec le jeu de paramètres d' `imagetoSymbols` à `FALSE`.  Les traductions de configuration d'adresse ne peuvent pas être activées à l'aide de la méthode d' [IDiaAddressMap::put\_addressMapEnabled](../Topic/IDiaAddressMap::put_addressMapEnabled.md) à moins que les deux cartes de traduction soient fournies.  
+## <a name="remarks"></a>Remarques  
+ En général, le DIA extrait les mappages de traduction d’adresse à partir du fichier de base de données (.pdb) de programme. Si ces valeurs sont manquantes, le [IDiaAddressMap::set_imageHeaders](../../debugger/debug-interface-access/idiaaddressmap-set-imageheaders.md) méthode est appelée à deux reprises, une fois avec le `imagetoSymbols` paramètre la valeur `TRUE` et une fois avec le `imagetoSymbols` paramètre la valeur `FALSE`. Mappage de conversion ne peut pas être activée à l’aide de la [IDiaAddressMap::put_addressMapEnabled](../../debugger/debug-interface-access/idiaaddressmap-put-addressmapenabled.md) (méthode), sauf si les deux tables de traduction sont fournis.  
   
-## Voir aussi  
- [DiaAddressMapEntry, structure](../../debugger/debug-interface-access/diaaddressmapentry.md)   
+## <a name="see-also"></a>Voir aussi  
+ [Diaaddressmapentry, Structure](../../debugger/debug-interface-access/diaaddressmapentry.md)   
  [IDiaAddressMap](../../debugger/debug-interface-access/idiaaddressmap.md)   
- [IDiaAddressMap::put\_addressMapEnabled](../Topic/IDiaAddressMap::put_addressMapEnabled.md)   
- [IDiaAddressMap::set\_imageHeaders](../../debugger/debug-interface-access/idiaaddressmap-set-imageheaders.md)
+ [IDiaAddressMap::put_addressMapEnabled](../../debugger/debug-interface-access/idiaaddressmap-put-addressmapenabled.md)   
+ [IDiaAddressMap::set_imageHeaders](../../debugger/debug-interface-access/idiaaddressmap-set-imageheaders.md)

@@ -1,64 +1,66 @@
 ---
-title: "Object.defineProperties, fonction (JavaScript) | Microsoft Docs"
-ms.custom: ""
-ms.date: "01/18/2017"
-ms.prod: "windows-client-threshold"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "devlang-javascript"
-ms.tgt_pltfrm: ""
-ms.topic: "language-reference"
-dev_langs: 
-  - "JavaScript"
-  - "TypeScript"
-  - "DHTML"
-helpviewer_keywords: 
-  - "Object.defineProperties (fonction) (JavaScript)"
+title: Object.defineproperties, fonction (JavaScript) | Documents Microsoft
+ms.custom: 
+ms.date: 01/18/2017
+ms.prod: windows-client-threshold
+ms.reviewer: 
+ms.suite: 
+ms.technology: devlang-javascript
+ms.tgt_pltfrm: 
+ms.topic: language-reference
+dev_langs:
+- JavaScript
+- TypeScript
+- DHTML
+helpviewer_keywords: Object.defineProperties function [JavaScript]
 ms.assetid: 2dae6658-a1c9-495f-bf06-bb3e964e6762
-caps.latest.revision: 24
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 24
+caps.latest.revision: "24"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: 65f4f5817a105283a26c971bd98869d000ca0bc2
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.translationtype: MT
+ms.contentlocale: fr-FR
+ms.lasthandoff: 10/27/2017
 ---
-# Object.defineProperties, fonction (JavaScript)
-Ajoute une ou plusieurs propriétés à un objet et\/ou modifie les attributs des propriétés existantes.  
+# <a name="objectdefineproperties-function-javascript"></a>Object.defineProperties, fonction (JavaScript)
+Ajoute une ou plusieurs propriétés à un objet et/ou modifie les attributs des propriétés existantes.  
   
-## Syntaxe  
+## <a name="syntax"></a>Syntaxe  
   
 ```  
   
 object.defineProperties(object, descriptors)  
 ```  
   
-## Paramètres  
+## <a name="parameters"></a>Paramètres  
  `object`  
- Requis.  Objet sur lequel ajouter ou modifier les propriétés.  Il peut s'agir d'un objet [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] natif ou d'un objet DOM.  
+ Obligatoire. Objet sur lequel ajouter ou modifier les propriétés. Cela peut être natif [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] objet ou un objet DOM.  
   
  `descriptors`  
- Requis.  Objet [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] qui contient un ou plusieurs objets descripteurs.  Chaque objet descripteur décrit une propriété de données ou une propriété Accessor.  
+ Obligatoire. A [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] objet qui contient un ou plusieurs objets de descripteur. Chaque objet de descripteur décrit une propriété de données ou une propriété d’accesseur.  
   
-## Valeur de retour  
- L'objet a été passé à la fonction.  
+## <a name="return-value"></a>Valeur de retour  
+ Objet qui a été passé à la fonction.  
   
-## Notes  
- L'argument `descriptors` est un objet qui contient un ou plusieurs objets descripteurs.  
+## <a name="remarks"></a>Remarques  
+ Le `descriptors` argument est un objet qui contient un ou plusieurs objets de descripteur.  
   
- Une *propriété de données* est une propriété qui peut stocker et récupérer une valeur.  Un descripteur de propriété de données contient un attribut `value`, un attribut `writable` ou les deux.  Pour plus d'informations, consultez [Propriétés des données et propriétés des accesseurs](../../javascript/advanced/data-properties-and-accessor-properties.md).  
+ A *propriété données* est une propriété qui peut stocker et récupérer une valeur. Un descripteur de propriété de données contient un `value` attribut, un `writable` , ou les deux. Pour plus d’informations, consultez [propriétés de données et des propriétés d’accesseur](../../javascript/advanced/data-properties-and-accessor-properties.md).  
   
- Une *propriété Accessor* appelle une fonction fournie par l'utilisateur chaque fois que la valeur de la propriété est définie ou récupérée.  Un descripteur de propriété Accessor contient un attribut `set`, un attribut `get` ou les deux.  
+ Un *propriété d’accesseur* appelle une fonction fournis par l’utilisateur chaque fois que la valeur de propriété est définie ou récupérée. Un descripteur de propriété d’accesseur contient un `set` attribut, un `get` , ou les deux.  
   
- Si l'objet possède déjà une propriété qui porte le nom spécifié, les attributs de propriété sont modifiés.  Pour plus d'informations, consultez [Object.defineProperty, fonction](../../javascript/reference/object-defineproperty-function-javascript.md).  
+ Si l’objet a déjà une propriété qui porte le nom spécifié, les attributs de propriété sont modifiées. Pour plus d’informations, consultez [Object.DefineProperty, fonction](../../javascript/reference/object-defineproperty-function-javascript.md).  
   
- Pour créer un objet et lui ajouter des propriétés, vous pouvez utiliser [Object.create, fonction](../../javascript/reference/object-create-function-javascript.md).  
+ Pour créer un objet et ajouter des propriétés pour le nouvel objet, vous pouvez utiliser la [Object.Create, fonction](../../javascript/reference/object-create-function-javascript.md).  
   
-## Ajout de propriétés  
- Dans l'exemple suivant, la fonction `Object.defineProperties` ajoute une propriété de données et une propriété Accessor à un objet défini par l'utilisateur.  
+## <a name="adding-properties"></a>Ajout de propriétés  
+ Dans l’exemple suivant, la `Object.defineProperties` fonction ajoute une propriété de données et une propriété d’accesseur à un objet défini par l’utilisateur.  
   
- L'exemple utilise un littéral d'objet pour créer l'objet `descriptors` avec les objets descripteurs `newDataProperty` et `newAccessorProperty`.  
+ L’exemple utilise un littéral d’objet pour créer le `descriptors` de l’objet avec la `newDataProperty` et `newAccessorProperty` objets du descripteur.  
   
-```javascript  
+```JavaScript  
 var newLine = "<br />";  
   
 var obj = {};  
@@ -93,9 +95,9 @@ document.write ("newAccessorProperty value: " + obj.newAccessorProperty + newLin
   
 ```  
   
- Comme l'exemple précédent, l'exemple suivant ajoute les propriétés dynamiquement plutôt qu'avec un littéral d'objet.  
+ Comme l’exemple précédent, l’exemple suivant ajoute des propriétés dynamiquement plutôt qu’avec un littéral d’objet.  
   
-```javascript  
+```JavaScript  
   
 var newLine = "<br />";  
   
@@ -137,8 +139,8 @@ document.write ("newAccessorProperty value: " + obj.newAccessorProperty + newLin
   
 ```  
   
-## Modification des propriétés  
- Pour modifier les attributs de propriété pour l'objet, ajoutez le code suivant.  La fonction `Object.defineProperties` modifie l'attribut `writable` de `newDataProperty` et modifie l'attribut `enumerable` de `newAccessorProperty`.  Elle ajoute `anotherDataProperty` à l'objet car ce nom de propriété n'existe pas encore.  
+## <a name="modifying-properties"></a>Modification des propriétés  
+ Pour modifier les attributs de propriété pour l’objet, ajoutez le code suivant. Le `Object.defineProperties` fonction modifie le `writable` attribut de `newDataProperty`et modifie le `enumerable` attribut de `newAccessorProperty`. Il ajoute `anotherDataProperty` à l’objet, car le nom de cette propriété n’existe pas déjà.  
   
 ```  
 Object.defineProperties(obj, {  
@@ -148,12 +150,12 @@ Object.defineProperties(obj, {
 });  
 ```  
   
-## Configuration requise  
- Pris en charge dans Internet Explorer 9 \(mode standard\), Internet Explorer 10 \(mode standard\) et les applications [!INCLUDE[win8_appname_long](../../javascript/includes/win8-appname-long-md.md)].  Pris en charge dans Internet Explorer 8 pour les objets DOM uniquement, non pris en charge dans les autres cas.  
+## <a name="requirements"></a>Spécifications  
+ Prise en charge dans les normes Internet Explorer 9, des normes Internet Explorer 10, et [!INCLUDE[win8_appname_long](../../javascript/includes/win8-appname-long-md.md)] applications. Prise en charge dans Internet Explorer 8 pour les objets DOM uniquement, sinon ne pas pris en charge.  
   
-## Voir aussi  
+## <a name="see-also"></a>Voir aussi  
  [Object.getOwnPropertyDescriptor, fonction](../../javascript/reference/object-getownpropertydescriptor-function-javascript.md)   
- [Object.getOwnPropertyNames, fonction](../../javascript/reference/object-getownpropertynames-function-javascript.md)   
- [Object.defineProperty, fonction](../../javascript/reference/object-defineproperty-function-javascript.md)   
- [Object.create, fonction](../../javascript/reference/object-create-function-javascript.md)   
- [Object, objet](../../javascript/reference/object-object-javascript.md)
+ [Object.getownpropertynames, fonction](../../javascript/reference/object-getownpropertynames-function-javascript.md)   
+ [Object.DefineProperty, fonction](../../javascript/reference/object-defineproperty-function-javascript.md)   
+ [Object.Create, fonction](../../javascript/reference/object-create-function-javascript.md)   
+ [Objet Object](../../javascript/reference/object-object-javascript.md)

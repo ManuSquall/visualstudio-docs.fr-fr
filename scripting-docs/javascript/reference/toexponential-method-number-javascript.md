@@ -1,54 +1,55 @@
 ---
-title: "toExponential, m&#233;thode (Number) (JavaScript) | Microsoft Docs"
-ms.custom: ""
-ms.date: "01/18/2017"
-ms.prod: "windows-client-threshold"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "devlang-javascript"
-ms.tgt_pltfrm: ""
-ms.topic: "language-reference"
-f1_keywords: 
-  - "toExponential"
-dev_langs: 
-  - "JavaScript"
-  - "TypeScript"
-  - "DHTML"
-helpviewer_keywords: 
-  - "toExponential (méthode)"
+title: "toExponential, méthode (Number) (JavaScript) | Documents Microsoft"
+ms.custom: 
+ms.date: 01/18/2017
+ms.prod: windows-client-threshold
+ms.reviewer: 
+ms.suite: 
+ms.technology: devlang-javascript
+ms.tgt_pltfrm: 
+ms.topic: language-reference
+f1_keywords: toExponential
+dev_langs:
+- JavaScript
+- TypeScript
+- DHTML
+helpviewer_keywords: toExponential method
 ms.assetid: 7c4a6d84-3c1f-4cc4-a67d-7753e5d4ed66
-caps.latest.revision: 9
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 9
+caps.latest.revision: "9"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: fff2f2bc0c443fa9308c8d01dcea42a3cec9ff04
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.translationtype: MT
+ms.contentlocale: fr-FR
+ms.lasthandoff: 10/27/2017
 ---
-# toExponential, m&#233;thode (Number) (JavaScript)
+# <a name="toexponential-method-number-javascript"></a>toExponential, méthode (Number) (JavaScript)
 Représente un nombre en notation exponentielle.  
   
-## Syntaxe  
+## <a name="syntax"></a>Syntaxe  
   
 ```  
   
 numObj. toExponential([fractionDigits])  
 ```  
   
-## Paramètres  
+## <a name="parameters"></a>Paramètres  
  `numObj`  
- Obligatoire.  Objet **Number**.  
+ Obligatoire. A **nombre** objet.  
   
  `fractionDigits`  
- Facultatif.  Nombre de chiffres après la virgule.  Il doit être compris entre 0 et 20 inclus.  
+ Facultatif. Le nombre de chiffres après la virgule décimale. Doit être dans la plage 0 - 20, inclus.  
   
-## Valeur de retour  
- Retourne la représentation, sous forme de chaîne, d'un nombre exprimé en notation exponentielle.  La chaîne comporte un chiffre avant la virgule du chiffre et peut contenir le nombre de chiffres indiqué par `fractionDigits` après la virgule.  
+## <a name="return-value"></a>Valeur de retour  
+ Retourne une représentation sous forme de chaîne d’un nombre en notation exponentielle. La chaîne comporte un chiffre avant la virgule décimale et peut contenir `fractionDigits` chiffres après lui.  
   
- Si l'argument `fractionDigits` n'est pas spécifié, la méthode `toExponential` retourne autant de chiffres que nécessaire pour spécifier le nombre de manière unique.  
+ Si `fractionDigits` n’est pas fourni, le `toExponential` méthode retourne autant de chiffres nécessaire de spécifier le nombre de façon unique.  
   
-## Exemple  
+## <a name="example"></a>Exemple  
   
-```javascript  
+```JavaScript  
 var num = new Number(123);  
 var exp = num.toExponential();  
 document.write(exp);  
@@ -61,14 +62,13 @@ document.write(exp);
 // Output:   
 // 1.23e+2  
 // 1.23456e+2  
-  
 ```  
   
-## Configuration requise  
+## <a name="requirements"></a>Spécifications  
  [!INCLUDE[jsv55](../../javascript/reference/includes/jsv55-md.md)]  
   
- **S'applique à** : [Number, objet](../../javascript/reference/number-object-javascript.md)  
+ **S’applique aux**: [numéro d’objet](../../javascript/reference/number-object-javascript.md)  
   
-## Voir aussi  
- [toFixed, méthode \(Number\)](../../javascript/reference/tofixed-method-number-javascript.md)   
- [toPrecision, méthode \(Number\)](../../javascript/reference/toprecision-method-number-javascript.md)
+## <a name="see-also"></a>Voir aussi  
+ [toFixed, méthode (Number)](../../javascript/reference/tofixed-method-number-javascript.md)   
+ [Méthode toPrecision (Number)](../../javascript/reference/toprecision-method-number-javascript.md)

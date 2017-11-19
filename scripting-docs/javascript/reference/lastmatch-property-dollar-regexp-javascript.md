@@ -1,49 +1,51 @@
 ---
-title: "lastMatch, propri&#233;t&#233; ($&amp;) (RegExp) (JavaScript) | Microsoft Docs"
-ms.custom: ""
-ms.date: "01/18/2017"
-ms.prod: "windows-client-threshold"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "devlang-javascript"
-ms.tgt_pltfrm: ""
-ms.topic: "language-reference"
-f1_keywords: 
-  - "$&"
-dev_langs: 
-  - "JavaScript"
-  - "TypeScript"
-  - "DHTML"
-helpviewer_keywords: 
-  - "lastMatch (propriété) ($%)"
-  - "lastMatch (propriété) ($&)"
+title: "lastMatch, propriété ($&amp;) (RegExp) (JavaScript) | Documents Microsoft"
+ms.custom: 
+ms.date: 01/18/2017
+ms.prod: windows-client-threshold
+ms.reviewer: 
+ms.suite: 
+ms.technology: devlang-javascript
+ms.tgt_pltfrm: 
+ms.topic: language-reference
+f1_keywords: $&
+dev_langs:
+- JavaScript
+- TypeScript
+- DHTML
+helpviewer_keywords:
+- lastMatch property ($%)
+- lastMatch property ($&)
 ms.assetid: d223836d-5235-48a5-a926-d20764ad3f14
-caps.latest.revision: 12
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 12
+caps.latest.revision: "12"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: 25991bf5b577d785fc4f7d8c6b2af14b93486000
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.translationtype: MT
+ms.contentlocale: fr-FR
+ms.lasthandoff: 10/27/2017
 ---
-# lastMatch, propri&#233;t&#233; ($&amp;) (RegExp) (JavaScript)
-Retourne les derniers caractères mis en correspondance à partir de critères de recherche d'expression régulière.  Lecture seule.  
+# <a name="lastmatch-property-amp-regexp-javascript"></a>lastMatch, propriété ($&amp;) (RegExp) (JavaScript)
+Retourne les derniers caractères de mise en correspondance d’une recherche d’expression régulière. Lecture seule.  
   
-## Syntaxe  
+## <a name="syntax"></a>Syntaxe  
   
 ```  
   
 RegExp.lastMatch  
 ```  
   
-## Notes  
- L'objet associé à cette propriété est toujours l'objet `RegExp` global.  
+## <a name="remarks"></a>Remarques  
+ L’objet associé à cette propriété est toujours global `RegExp` objet.  
   
- La valeur initiale de la propriété `lastMatch` est une chaîne vide.  La valeur de la propriété `lastMatch` change chaque fois qu'une correspondance est trouvée.  
+ La valeur initiale de la `lastMatch` propriété est une chaîne vide. La valeur de la `lastMatch` propriété change chaque fois qu’une correspondance réussie est établie.  
   
-## Exemple  
- L'exemple suivant illustre l'utilisation de la propriété `lastMatch` :  
+## <a name="example"></a>Exemple  
+ L'exemple ci-dessous illustre l'utilisation de la propriété `lastMatch` :  
   
-```javascript  
+```JavaScript  
 // Create the regular expression pattern.  
 var re = new RegExp("d(b+)(d)","ig");  
 var str = "cdbBdbsbdbdz";  
@@ -65,16 +67,16 @@ s += "lastParen: " + RegExp.lastParen + "<br />";
 document.write(s);  
 ```  
   
-## Configuration requise  
+## <a name="requirements"></a>Spécifications  
  [!INCLUDE[jsv55](../../javascript/reference/includes/jsv55-md.md)]  
   
- **S'applique à** : [RegExp, objet](../../javascript/reference/regexp-object-javascript.md)  
+ **S’applique aux**: [RegExp (objet)](../../javascript/reference/regexp-object-javascript.md)  
   
-## Voir aussi  
- [$1...$9, propriétés \(RegExp\)](../../javascript/reference/dollar-1-dot-dot-dot-dollar-9-properties-regexp-javascript.md)   
- [index, propriété \(RegExp\)](../../javascript/reference/index-property-regexp-javascript.md)   
- [input, propriété \($\_\) \(RegExp\)](../../javascript/reference/input-property-dollar-regexp-javascript.md)   
- [lastIndex, propriété \(RegExp\)](../../javascript/reference/lastindex-property-regexp-javascript.md)   
- [lastParen, propriété \($\+\) \(RegExp\)](../../javascript/reference/lastparen-property-dollar-regexp-javascript.md)   
- [leftContext, propriété \($'\) \(RegExp\)](../../javascript/reference/leftcontext-property-dollar-grave-regexp-javascript.md)   
- [rightContext, propriété \($'\) \(RegExp\)](../../javascript/reference/rightcontext-property-dollar-regexp-javascript.md)
+## <a name="see-also"></a>Voir aussi  
+ [$1... $9, propriétés (RegExp)](../../javascript/reference/dollar-1-dot-dot-dot-dollar-9-properties-regexp-javascript.md)   
+ [index, propriété (RegExp)](../../javascript/reference/index-property-regexp-javascript.md)   
+ [Propriété Input ($_) (RegExp)](../../javascript/reference/input-property-dollar-regexp-javascript.md)   
+ [lastIndex, propriété (RegExp)](../../javascript/reference/lastindex-property-regexp-javascript.md)   
+ [Propriété lastParen ($ +) (RegExp)](../../javascript/reference/lastparen-property-dollar-regexp-javascript.md)   
+ [leftContext, propriété ($') (RegExp)](../../javascript/reference/leftcontext-property-dollar-grave-regexp-javascript.md)   
+ [Propriété rightContext ($') (RegExp)](../../javascript/reference/rightcontext-property-dollar-regexp-javascript.md)

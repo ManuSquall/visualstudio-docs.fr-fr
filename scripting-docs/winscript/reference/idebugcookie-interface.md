@@ -1,30 +1,33 @@
 ---
-title: "IDebugCookie, interface | Microsoft Docs"
-ms.custom: ""
-ms.date: "01/18/2017"
-ms.prod: "windows-script-interfaces"
-ms.reviewer: ""
-ms.suite: ""
-ms.tgt_pltfrm: ""
-ms.topic: "reference"
-helpviewer_keywords: 
-  - "IDebugCookie (interface)"
+title: IDebugCookie (Interface) | Documents Microsoft
+ms.custom: 
+ms.date: 01/18/2017
+ms.prod: windows-script-interfaces
+ms.reviewer: 
+ms.suite: 
+ms.tgt_pltfrm: 
+ms.topic: reference
+helpviewer_keywords: IDebugCookie interface
 ms.assetid: 0dbc75d9-6f33-400f-a5bf-9122cf534082
-caps.latest.revision: 8
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 8
+caps.latest.revision: "8"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: 23f6796c278807951bbc7cfa37bec48e4dd73f4e
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.translationtype: MT
+ms.contentlocale: fr-FR
+ms.lasthandoff: 10/27/2017
 ---
-# IDebugCookie, interface
-Permet le cookie de débogage à définir, pour une utilisation avec l'interface d' `IMachineDebugManagerCookie` .  Pour plus d'informations, consultez [IMachineDebugManagerCookie, interface](../../winscript/reference/imachinedebugmanagercookie-interface.md).  Cette interface est implémentée par Process Debug Manager \(PDM\) et consommée par les débogueurs de script.  
+# <a name="idebugcookie-interface"></a>IDebugCookie, interface
+Permet le cookie de débogage à définir, pour une utilisation avec le `IMachineDebugManagerCookie` interface. Pour plus d’informations, consultez [IMachineDebugManagerCookie (Interface)](../../winscript/reference/imachinedebugmanagercookie-interface.md). Cette interface est implémentée par le Gestionnaire de processus déboguer (PDM) et utilisée par les débogueurs de script.  
   
-## Méthodes  
- Outre les méthodes héritées de `IUnknown`, l'interface `IDebugCookie` expose les méthodes suivantes.  
+## <a name="methods"></a>Méthodes  
+ Outre les méthodes héritées de `IUnknown`, le `IDebugCookie` interface expose les méthodes suivantes.  
   
 |Méthode|Description|  
-|-------------|-----------------|  
-|[IDebugCookie::SetDebugCookie](../../winscript/reference/idebugcookie-setdebugcookie.md)|Définit le cookie d'application de débogage.|  
+|------------|-----------------|  
+|[IDebugCookie::SetDebugCookie](../../winscript/reference/idebugcookie-setdebugcookie.md)|Définit le cookie d’application de débogage.|  
   
-## Voir aussi  
- [IMachineDebugManagerCookie, interface](../../winscript/reference/imachinedebugmanagercookie-interface.md)
+## <a name="see-also"></a>Voir aussi  
+ [Interface IMachineDebugManagerCookie](../../winscript/reference/imachinedebugmanagercookie-interface.md)

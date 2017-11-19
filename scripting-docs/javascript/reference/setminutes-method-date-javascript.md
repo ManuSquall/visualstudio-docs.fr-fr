@@ -1,64 +1,66 @@
 ---
-title: "setMinutes, m&#233;thode (Date) (JavaScript) | Microsoft Docs"
-ms.custom: ""
-ms.date: "01/18/2017"
-ms.prod: "windows-client-threshold"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "devlang-javascript"
-ms.tgt_pltfrm: ""
-ms.topic: "language-reference"
-f1_keywords: 
-  - "setMinutes"
-dev_langs: 
-  - "JavaScript"
-  - "TypeScript"
-  - "DHTML"
-helpviewer_keywords: 
-  - "minutes"
-  - "setMinutes (méthode)"
+title: "setMinutes, méthode (Date) (JavaScript) | Documents Microsoft"
+ms.custom: 
+ms.date: 01/18/2017
+ms.prod: windows-client-threshold
+ms.reviewer: 
+ms.suite: 
+ms.technology: devlang-javascript
+ms.tgt_pltfrm: 
+ms.topic: language-reference
+f1_keywords: setMinutes
+dev_langs:
+- JavaScript
+- TypeScript
+- DHTML
+helpviewer_keywords:
+- minutes
+- setMinutes method
 ms.assetid: 34c959cd-cd29-4cee-8e04-9061cf6d42f3
-caps.latest.revision: 13
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 13
+caps.latest.revision: "13"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: 1ce40cb3ebf769cdd8f668e246e272833780434d
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.translationtype: MT
+ms.contentlocale: fr-FR
+ms.lasthandoff: 10/27/2017
 ---
-# setMinutes, m&#233;thode (Date) (JavaScript)
-Définit les minutes, en heure locale, représentées dans l'objet **Date** .  
+# <a name="setminutes-method-date-javascript"></a>setMinutes, méthode (Date) (JavaScript)
+Définit la valeur des minutes le **Date** en heure locale de l’objet.  
   
-## Syntaxe  
+## <a name="syntax"></a>Syntaxe  
   
 ```  
   
 dateObj.setMinutes(numMinutes[, numSeconds[, numMilli]])   
 ```  
   
-## Paramètres  
+## <a name="parameters"></a>Paramètres  
  `dateObj`  
- Obligatoire.  Tout objet `Date`.  
+ Obligatoire. Tout objet `Date`.  
   
  `numMinutes`  
- Obligatoire.  Valeur numérique égale à celle des minutes.  Doit être fournie si l'un des arguments suivants est utilisé.  
+ Obligatoire. Valeur numérique égale à la valeur des minutes. Doit être fourni si un des arguments suivants est utilisé.  
   
- *numSeconds*  
- Facultatif.  Valeur numérique égale à celle des secondes.  Doit être fourni si l'argument `numMilli` est utilisé.  
+ *numSeconds n'*  
+ Facultatif. Valeur numérique égale à la valeur des secondes. Doit être fournie si le `numMilli` argument est utilisé.  
   
  `numMilli`  
- Facultatif.  Valeur numérique égale à celle des millisecondes.  
+ Facultatif. Valeur numérique égale à la valeur en millisecondes.  
   
-## Notes  
- Toutes les méthodes **set** acceptant des arguments facultatifs utilisent la valeur retournée par les méthodes **get** correspondantes lorsqu'aucun argument facultatif n'est spécifié.  Par exemple, si l'argument *numSeconds* n'est pas spécifié, [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] utilise la valeur retournée par la méthode `getSeconds`.  
+## <a name="remarks"></a>Remarques  
+ Tous les **définir** méthodes acceptant des arguments facultatifs utilisent la valeur retournée par correspondant **obtenir** méthodes, si vous ne spécifiez pas un argument facultatif. Par exemple, si le *numSeconds ne* argument non spécifié, [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] utilise la valeur retournée par le `getSeconds` (méthode).  
   
- Pour définir la valeur des minutes au format UTC \(Universal Coordinated Time\), utilisez la méthode `setUTCMinutes`.  
+ Pour définir la valeur des minutes à l’aide de temps universel coordonné (UTC), utilisez le `setUTCMinutes` (méthode).  
   
- Si la valeur d'un argument est un nombre supérieur à sa plage ou négatif, les autres valeurs stockées sont modifiées en conséquence.  Par exemple, si la date stockée est « 5 Jan 1996 00:00:00 » et que la méthode **setMinutes\(90\)** est appelée, la date est remplacée par « 5 Jan 1996 01:30:00 ». Les nombres négatifs ont un comportement similaire.  
+ Si la valeur d’un argument est supérieure à sa plage ou est un nombre négatif, les autres valeurs stockées sont modifiées en conséquence. Par exemple, si la date stockée est « Jan 5, 1996 00:00:00 » et **setMinutes(90)** est appelée, la date est modifiée en « le 5 janvier 1996 01:30:00. » Les nombres négatifs ont un comportement similaire.  
   
-## Exemple  
+## <a name="example"></a>Exemple  
  L'exemple suivant illustre l'utilisation de la méthode `setMinutes`.  
   
-```javascript  
+```JavaScript  
 function SetMinutesDemo(nmin, nsec){  
    var d, s;                     // Declare variables.  
    d = new Date();               // Create Date object.  
@@ -68,12 +70,12 @@ function SetMinutesDemo(nmin, nsec){
 }  
 ```  
   
-## Configuration requise  
+## <a name="requirements"></a>Spécifications  
  [!INCLUDE[jsv1](../../javascript/misc/includes/jsv1-md.md)]  
   
- **S'applique à** : [Date, objet](../../javascript/reference/date-object-javascript.md)  
+ **S'applique à**: [Date Object](../../javascript/reference/date-object-javascript.md)  
   
-## Voir aussi  
- [getMinutes, méthode \(Date\)](../../javascript/reference/getminutes-method-date-javascript.md)   
- [getUTCMinutes, méthode \(Date\)](../../javascript/reference/getutcminutes-method-date-javascript.md)   
- [setUTCMinutes, méthode \(Date\)](../../javascript/reference/setutcminutes-method-date-javascript.md)
+## <a name="see-also"></a>Voir aussi  
+ [getMinutes, méthode (Date)](../../javascript/reference/getminutes-method-date-javascript.md)   
+ [getUTCMinutes, méthode (Date)](../../javascript/reference/getutcminutes-method-date-javascript.md)   
+ [Méthode setUTCMinutes (Date)](../../javascript/reference/setutcminutes-method-date-javascript.md)

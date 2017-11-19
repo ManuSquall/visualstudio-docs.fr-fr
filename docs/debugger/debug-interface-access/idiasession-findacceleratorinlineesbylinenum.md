@@ -1,59 +1,59 @@
 ---
-title: "IDiaSession::findAcceleratorInlineesByLinenum | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-debug"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-dev_langs: 
-  - "C++"
+title: IDiaSession::findAcceleratorInlineesByLinenum | Documents Microsoft
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-debug
+ms.tgt_pltfrm: 
+ms.topic: article
+dev_langs: C++
 ms.assetid: 386c87aa-f7b2-4d38-9dd6-fffba9ff01f0
-caps.latest.revision: 3
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 3
+caps.latest.revision: "3"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: 8f465a4089d2d0503c953c39e914d1d15ceff0e0
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: fr-FR
+ms.lasthandoff: 10/31/2017
 ---
-# IDiaSession::findAcceleratorInlineesByLinenum
-[!INCLUDE[vs2017banner](../../code-quality/includes/vs2017banner.md)]
-
-Retourne une énumération les symboles pour les frames intégrés qui correspondent à l'emplacement spécifié de la source.  
+# <a name="idiasessionfindacceleratorinlineesbylinenum"></a>IDiaSession::findAcceleratorInlineesByLinenum
+Retourne une énumération de symboles pour les cadres qui correspondent à l’emplacement source spécifié.  
   
-## Syntaxe  
+## <a name="syntax"></a>Syntaxe  
   
-```cpp#  
-HRESULT findAcceleratorInlineeLinesByName (   
-   IDiaSymbol*           parent,  
+```C++  
+HRESULT findAcceleratorInlineeLinesByName (   
+   IDiaSymbol*           parent,  
    IDiaSourceFile*       file,  
    DWORD                 linenum,  
    DWORD                 colnum,  
-   IDiaEnumLineNumbers** ppResult  
+   IDiaEnumLineNumbers** ppResult  
 );  
 ```  
   
-#### Paramètres  
+#### <a name="parameters"></a>Paramètres  
  `parent`  
- \[in\]  `IDiaSymbol` qui correspond à la fonction du stub d'accélérateur qui doit être trouvée.  
+ [in] Un `IDiaSymbol` qui correspond à la fonction stub accélérateur qui doit être recherché.  
   
  `file`  
- \[in\]  `IDiaSourceFile` de l'emplacement source.  
+ [in] Le `IDiaSourceFile` de l’emplacement source.  
   
  `linenum`  
- \[in\]  Le numéro de la ligne de l'emplacement source.  
+ [in] Le numéro de ligne de l’emplacement source.  
   
  `colnum`  
- \[in\]  Le nombre de colonnes de l'emplacement source.  
+ [in] Le numéro de colonne de l’emplacement source.  
   
  `ppResult`  
- \[out\]  Un pointeur vers un pointeur d'interface de `IDiaEnumLineNumbers` qui est initialisé avec le résultat.  
+ [out] Un pointeur vers un `IDiaEnumLineNumbers` pointeur d’interface qui est initialisé avec le résultat.  
   
-## Valeur de retour  
- En cas de réussite, retourne `S_OK` , sinon, retourne un code d'erreur.  
+## <a name="return-value"></a>Valeur de retour  
+ En cas de réussite, retourne `S_OK`; sinon, retourne un code d’erreur.  
   
-## Voir aussi  
+## <a name="see-also"></a>Voir aussi  
  [IDiaSession](../../debugger/debug-interface-access/idiasession.md)   
  [IDiaEnumLineNumbers](../../debugger/debug-interface-access/idiaenumlinenumbers.md)   
  [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

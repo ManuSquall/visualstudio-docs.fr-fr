@@ -1,38 +1,41 @@
 ---
-title: "buffer, propri&#233;t&#233; (DataView) | Microsoft Docs"
-ms.custom: ""
-ms.date: "01/18/2017"
-ms.prod: "windows-client-threshold"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "devlang-javascript"
-ms.tgt_pltfrm: ""
-ms.topic: "language-reference"
-dev_langs: 
-  - "JavaScript"
-  - "TypeScript"
-  - "DHTML"
+title: "Buffer, propriété (DataView) | Documents Microsoft"
+ms.custom: 
+ms.date: 01/18/2017
+ms.prod: windows-client-threshold
+ms.reviewer: 
+ms.suite: 
+ms.technology: devlang-javascript
+ms.tgt_pltfrm: 
+ms.topic: language-reference
+dev_langs:
+- JavaScript
+- TypeScript
+- DHTML
 ms.assetid: b69afc28-586e-4277-8cd6-b9d69a54fb55
-caps.latest.revision: 7
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 7
+caps.latest.revision: "7"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: 83dae7c89ba4ae943d04efc92ca637e0d7447ec4
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.translationtype: MT
+ms.contentlocale: fr-FR
+ms.lasthandoff: 10/27/2017
 ---
-# buffer, propri&#233;t&#233; (DataView)
-Lecture seule.  Obtient l'ArrayBuffer référencé par cette vue.  
+# <a name="buffer-property-dataview"></a>buffer, propriété (DataView)
+Lecture seule. Obtient l’objet ArrayBuffer référencé par cette vue.  
   
-## Syntaxe  
+## <a name="syntax"></a>Syntaxe  
   
-```javascript  
+```JavaScript  
 var arrayBuffer = dataView.buffer;  
 ```  
   
-## Exemple  
- L'exemple suivant montre la façon dont est obtenue la longueur de l'ArrayBuffer sous\-jacente du DataView.  
+## <a name="example"></a>Exemple  
+ L’exemple suivant montre comment obtenir la longueur du ArrayBuffer sous-jacent DataView.  
   
-```javascript  
+```JavaScript  
 var req = new XMLHttpRequest();  
     req.open('GET', "http://www.example.com");  
     req.responseType = "arraybuffer";  
@@ -48,5 +51,5 @@ var req = new XMLHttpRequest();
   
 ```  
   
-## Configuration requise  
+## <a name="requirements"></a>Spécifications  
  [!INCLUDE[jsv10](../../javascript/reference/includes/jsv10-md.md)]

@@ -1,83 +1,81 @@
 ---
-title: "Fonction (Kit de d&#233;veloppement logiciel de Debug&#160;Interface&#160;Access) | Microsoft Docs"
-ms.custom: ""
-ms.date: "12/05/2016"
-ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-debug"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "symbole de fonction"
+title: Fonction (Debug Interface Access SDK) | Documents Microsoft
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-debug
+ms.tgt_pltfrm: 
+ms.topic: article
+dev_langs: C++
+helpviewer_keywords: Function symbol
 ms.assetid: 458dc91c-b78b-4427-84f4-615d89e26760
-caps.latest.revision: 22
-caps.handback.revision: 22
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
+caps.latest.revision: "22"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: 39d3871fcfbd3702e2ad198f2061be41dc51ac18
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: fr-FR
+ms.lasthandoff: 10/31/2017
 ---
-# Fonction (Kit de d&#233;veloppement logiciel de Debug&#160;Interface&#160;Access)
-[!INCLUDE[vs2017banner](../../code-quality/includes/vs2017banner.md)]
-
-chaque fonction est identifiée par un symbole d' `SymTagFunction` .  
+# <a name="function-debug-interface-access-sdk"></a>Fonction (Kit de développement logiciel de Debug Interface Access)
+Chaque fonction est identifiée par un `SymTagFunction` symbole.  
   
-## Propriétés  
- Le tableau suivant indique les propriétés qui sont valides pour ce type de symbole.  
+## <a name="properties"></a>Propriétés  
+ Le tableau suivant présente les propriétés qui sont valides pour ce type de symbole.  
   
 |Propriété|`Data type`|Description|  
-|---------------|-----------------|-----------------|  
-|[IDiaSymbol::get\_access](../../debugger/debug-interface-access/idiasymbol-get-access.md)|`DWORD`|L'une des valeurs de [CV\_access\_e, énumération](../../debugger/debug-interface-access/cv-access-e.md), si la fonction est une fonction membre.|  
-|[IDiaSymbol::get\_addressOffset](../../debugger/debug-interface-access/idiasymbol-get-addressoffset.md)|`DWORD`|Partie décalée d'emplacement ; pour plus d'informations, consultez [LocationType, énumération](../../debugger/debug-interface-access/locationtype.md).|  
-|[IDiaSymbol::get\_addressSection](../../debugger/debug-interface-access/idiasymbol-get-addresssection.md)|`DWORD`|Élément de section d'emplacement ; pour plus d'informations, consultez [LocationType, énumération](../../debugger/debug-interface-access/locationtype.md).|  
-|[IDiaSymbol::get\_classParent](../Topic/IDiaSymbol::get_classParent.md)|`IDiaSymbol*`|symbole pour la classe, si la fonction est une fonction membre.|  
-|[IDiaSymbol::get\_classParentId](../Topic/IDiaSymbol::get_classParentId.md)|`DWORD`|ID du symbole de parent de classe.|  
-|[IDiaSymbol::get\_constType](../../debugger/debug-interface-access/idiasymbol-get-consttype.md)|`BOOL`|`TRUE` si la fonction est marquée comme constante.|  
-|[IDiaSymbol::get\_customCallingConvention](../../debugger/debug-interface-access/idiasymbol-get-customcallingconvention.md)|`BOOL`|`TRUE` si la fonction utilise une convention d'appel personnalisée \(uniquement dans diamètre Kit de développement logiciel V8.0 ou version ultérieure\).|  
-|[IDiaSymbol::get\_farReturn](../../debugger/debug-interface-access/idiasymbol-get-farreturn.md)|`BOOL`|`TRUE` si la fonction effectue loin un de retour \(uniquement dans diamètre Kit de développement logiciel V8.0 ou version ultérieure\).|  
-|[IDiaSymbol::get\_hasAlloca](../Topic/IDiaSymbol::get_hasAlloca.md)|`BOOL`|`TRUE` si la fonction utilise la fonction de mémoire allouée \(uniquement diamètre Kit de développement logiciel V8.0 d'uinnder ou version ultérieure\).|  
-|[IDiaSymbol::get\_hasEH](../../debugger/debug-interface-access/idiasymbol-get-haseh.md)|`BOOL`|`TRUE` si la fonction contient la gestion des exceptions de style C\+\+ \(uniquement dans diamètre Kit de développement logiciel V8.0 ou version ultérieure\).|  
-|[IDiaSymbol::get\_hasEHa](../Topic/IDiaSymbol::get_hasEHa.md)|`BOOL`|`TRUE` si la fonction contient la gestion des exceptions asynchrone \(uniquement dans diamètre Kit de développement logiciel V8.0 ou version ultérieure\).|  
-|[IDiaSymbol::get\_hasInlAsm](../../debugger/debug-interface-access/idiasymbol-get-hasinlasm.md)|`BOOL`|`TRUE` si la fonction contient l'assembly inline \(uniquement dans diamètre Kit de développement logiciel V8.0 ou version ultérieure\).|  
-|[IDiaSymbol::get\_hasLongJump](../../debugger/debug-interface-access/idiasymbol-get-haslongjump.md)|`BOOL`|`TRUE` si la fonction contient un appel de [longjmp](/visual-cpp/c-runtime-library/reference/longjmp) \(uniquement dans diamètre Kit de développement logiciel V8.0 ou version ultérieure\).|  
-|[IDiaSymbol::get\_hasSecurityChecks](../../debugger/debug-interface-access/idiasymbol-get-hassecuritychecks.md)|`BOOL`|`TRUE` si la fonction contient des vérifications de sécurité \(uniquement dans diamètre Kit de développement logiciel V8.0 ou version ultérieure\).|  
-|[IDiaSymbol::get\_hasSEH](../../debugger/debug-interface-access/idiasymbol-get-hasseh.md)|`BOOL`|`TRUE` si la fonction contient la gestion structurée des exceptions de style Win32 \(uniquement dans diamètre Kit de développement logiciel V8.0 ou version ultérieure\).|  
-|[IDiaSymbol::get\_hasSetJump](../../debugger/debug-interface-access/idiasymbol-get-hassetjump.md)|`BOOL`|`TRUE` si la fonction contient un appel de [setjmp](/visual-cpp/c-runtime-library/reference/setjmp) \(uniquement dans diamètre Kit de développement logiciel V8.0 ou version ultérieure\).|  
-|[IDiaSymbol::get\_interruptReturn](../../debugger/debug-interface-access/idiasymbol-get-interruptreturn.md)|`BOOL`|`TRUE` si la fonction a un retour de l'interruption \(uniquement dans diamètre Kit de développement logiciel V8.0 ou version ultérieure\).|  
-|[IDiaSymbol::get\_intro](../../debugger/debug-interface-access/idiasymbol-get-intro.md)|`BOOL`|`TRUE` si une fonction est introduction virtuelle.|  
-|[IDiaSymbol::get\_InlSpec](../../debugger/debug-interface-access/idiasymbol-get-inlspec.md)|`BOOL`|`TRUE` si la fonction était marquée avec un des attributs d' [inline, \_\_inline, \_\_forceinline](../../misc/inline-inline-forceinline.md) .|  
-|[IDiaSymbol::get\_isNaked](../../debugger/debug-interface-access/idiasymbol-get-isnaked.md)|`BOOL`|`TRUE` si la fonction est marquée avec l'attribut de [naked](/visual-cpp/cpp/naked-cpp) \(uniquement dans diamètre Kit de développement logiciel V8.0 ou version ultérieure\).|  
-|[IDiaSymbol::get\_isStatic](../../debugger/debug-interface-access/idiasymbol-get-isstatic.md)|`BOOL`|`TRUE` si la fonction est statique \(uniquement dans diamètre Kit de développement logiciel V8.0 ou version ultérieure\).|  
-|[IDiaSymbol::get\_length](../../debugger/debug-interface-access/idiasymbol-get-length.md)|`ULONGLONG`|Nombre d'octets du code de fonction, à partir de l'emplacement.|  
-|[IDiaSymbol::get\_lexicalParent](../../debugger/debug-interface-access/idiasymbol-get-lexicalparent.md)|`IDiaSymbol*`|Symbole du module englobant.|  
-|[IDiaSymbol::get\_lexicalParentId](../../debugger/debug-interface-access/idiasymbol-get-lexicalparentid.md)|`DWORD`|ID du symbole parent lexicale.|  
-|[IDiaSymbol::get\_locationType](../Topic/IDiaSymbol::get_locationType.md)|`DWORD`|Les fonctions peuvent avoir des emplacements de statiques ou de métadonnées ; pour plus d'informations, consultez [Emplacements des symboles](../../debugger/debug-interface-access/symbol-locations.md).|  
-|[IDiaSymbol::get\_name](../Topic/IDiaSymbol::get_name.md)|`BSTR`|Nom de la fonction.|  
-|[IDiaSymbol::get\_noInline](../../debugger/debug-interface-access/idiasymbol-get-noinline.md)|`BOOL`|`TRUE` si la fonction n'est pas une fonction inline \(uniquement diamètre Kit de développement logiciel V8.0 de n ou version ultérieure\).|  
-|[IDiaSymbol::get\_notReached](../../debugger/debug-interface-access/idiasymbol-get-notreached.md)|`BOOL`|`TRUE` si la fonction n'est pas accessible \(uniquement dans diamètre Kit de développement logiciel V8.0 ou version ultérieure\).|  
-|[IDiaSymbol::get\_noReturn](../../debugger/debug-interface-access/idiasymbol-get-noreturn.md)|`BOOL`|`TRUE` si la fonction ne retourne pas de valeur \(uniquement dans diamètre Kit de développement logiciel V8.0 ou version ultérieure\).|  
-|[IDiaSymbol::get\_noStackOrdering](../Topic/IDiaSymbol::get_noStackOrdering.md)|`BOOL`|`TRUE` si la fonction est compilée avec des contrôles de sécurité de la mémoire tampon mais aucun classement de pile peut être effectuée.|  
-|[IDiaSymbol::get\_optimizedCodeDebugInfo](../../debugger/debug-interface-access/idiasymbol-get-optimizedcodedebuginfo.md)|`BOOL`|`TRUE` si le code contient les informations de débogage pour le code optimisé uniquement dans diamètre Kit de développement logiciel V8.0 ou version ultérieure\).|  
-|[IDiaSymbol::get\_pure](../../debugger/debug-interface-access/idiasymbol-get-pure.md)|`BOOL`|`TRUE` si la fonction est virtuelle pure.|  
-|[IDiaSymbol::get\_relativeVirtualAddress](../../debugger/debug-interface-access/idiasymbol-get-relativevirtualaddress.md)|`DWORD`|position relative de cette fonction dans son module.|  
-|[IDiaSymbol::get\_symIndexId](../../debugger/debug-interface-access/idiasymbol-get-symindexid.md)|`DWORD`|ID d'index de symbole.|  
-|[IDiaSymbol::get\_symTag](../Topic/IDiaSymbol::get_symTag.md)|`DWORD`|Retourne `SymTagFunction` \(une des valeurs de [SymTagEnum, énumération](../../debugger/debug-interface-access/symtagenum.md) \).|  
-|[IDiaSymbol::get\_token](../../debugger/debug-interface-access/idiasymbol-get-token.md)|`DWORD`|jeton de métadonnées pour la fonction.|  
-|[IDiaSymbol::get\_type](../../debugger/debug-interface-access/idiasymbol-get-type.md)|`IDiaSymbol*`|symbole pour la signature de la fonction.|  
-|[IDiaSymbol::get\_typeId](../../debugger/debug-interface-access/idiasymbol-get-typeid.md)|`DWORD`|ID du symbole de type.|  
-|[IDiaSymbol::get\_unalignedType](../../debugger/debug-interface-access/idiasymbol-get-unalignedtype.md)|`BOOL`|`TRUE` si la fonction est non alignée.|  
-|[IDiaSymbol::get\_undecoratedName](../../debugger/debug-interface-access/idiasymbol-get-undecoratedname.md)|`BSTR`|La forme non décorée du nom de la fonction \(uniquement dans diamètre Kit de développement logiciel v8.0 ou version ultérieure\)|  
-|[IDiaSymbol::get\_undecoratedNameEx](../../debugger/debug-interface-access/idiasymbol-get-undecoratednameex.md)|`BSTR`|Partie ou la totalité forme non décorée du nom de la fonction \(uniquement dans diamètre Kit de développement logiciel v8.0 ou version ultérieure\).|  
-|[IDiaSymbol::get\_virtual](../../debugger/debug-interface-access/idiasymbol-get-virtual.md)|`BOOL`|`TRUE` si une fonction virtuelle.|  
-|[IDiaSymbol::get\_virtualAddress](../../debugger/debug-interface-access/idiasymbol-get-virtualaddress.md)|`ULONGLONG`|position de cette fonction dans l'image exécutable.|  
-|[IDiaSymbol::get\_virtualBaseOffset](../../debugger/debug-interface-access/idiasymbol-get-virtualbaseoffset.md)|`DWORD`|si une fonction virtuelle, puis l'offset dans la table de fonctions virtuelles.|  
-|[IDiaSymbol::get\_volatileType](../../debugger/debug-interface-access/idiasymbol-get-volatiletype.md)|`BOOL`|`TRUE` si la fonction est marquée comme volatile.|  
+|--------------|-----------------|-----------------|  
+|[IDiaSymbol::get_access](../../debugger/debug-interface-access/idiasymbol-get-access.md)|`DWORD`|Une des valeurs de la [cv_access_e, énumération](../../debugger/debug-interface-access/cv-access-e.md), si la fonction est une fonction membre.|  
+|[IDiaSymbol::get_addressOffset](../../debugger/debug-interface-access/idiasymbol-get-addressoffset.md)|`DWORD`|Partie du décalage de l’emplacement ; Pour plus d’informations, consultez la [LocationType, énumération](../../debugger/debug-interface-access/locationtype.md).|  
+|[IDiaSymbol::get_addressSection](../../debugger/debug-interface-access/idiasymbol-get-addresssection.md)|`DWORD`|Partie de section d’emplacement ; Pour plus d’informations, consultez la [LocationType, énumération](../../debugger/debug-interface-access/locationtype.md).|  
+|[IDiaSymbol::get_classParent](../../debugger/debug-interface-access/idiasymbol-get-classparent.md)|`IDiaSymbol*`|Symbole de la classe, si la fonction est une fonction membre.|  
+|[IDiaSymbol::get_classParentId](../../debugger/debug-interface-access/idiasymbol-get-classparentid.md)|`DWORD`|ID de symbole classe parent.|  
+|[IDiaSymbol::get_constType](../../debugger/debug-interface-access/idiasymbol-get-consttype.md)|`BOOL`|`TRUE`Si la fonction est marquée en tant que constante.|  
+|[IDiaSymbol::get_customCallingConvention](../../debugger/debug-interface-access/idiasymbol-get-customcallingconvention.md)|`BOOL`|`TRUE`Si la fonction utilise une convention d’appel personnalisée (uniquement dans DIA SDK 8.0 ou version ultérieure).|  
+|[IDiaSymbol::get_farReturn](../../debugger/debug-interface-access/idiasymbol-get-farreturn.md)|`BOOL`|`TRUE`Si la fonction effectue un retour far (uniquement dans DIA SDK 8.0 ou version ultérieure).|  
+|[IDiaSymbol::get_hasAlloca](../../debugger/debug-interface-access/idiasymbol-get-hasalloca.md)|`BOOL`|`TRUE`Si la fonction utilise la fonction de la mémoire allouée (uniquement uinnder DIA SDK 8.0 ou version ultérieure).|  
+|[IDiaSymbol::get_hasEH](../../debugger/debug-interface-access/idiasymbol-get-haseh.md)|`BOOL`|`TRUE`Si la fonction contient un style C++ exceptions (uniquement dans DIA SDK 8.0 ou version ultérieure).|  
+|[IDiaSymbol::get_hasEHa](../../debugger/debug-interface-access/idiasymbol-get-haseha.md)|`BOOL`|`TRUE`Si la fonction contient les exceptions asynchrones (uniquement dans DIA SDK 8.0 ou version ultérieure).|  
+|[IDiaSymbol::get_hasInlAsm](../../debugger/debug-interface-access/idiasymbol-get-hasinlasm.md)|`BOOL`|`TRUE`Si la fonction contient un assembly inline (uniquement dans DIA SDK 8.0 ou version ultérieure).|  
+|[IDiaSymbol::get_hasLongJump](../../debugger/debug-interface-access/idiasymbol-get-haslongjump.md)|`BOOL`|`TRUE`Si la fonction contient un [longjmp](/cpp/c-runtime-library/reference/longjmp) appeler (uniquement dans DIA SDK 8.0 ou version ultérieure).|  
+|[IDiaSymbol::get_hasSecurityChecks](../../debugger/debug-interface-access/idiasymbol-get-hassecuritychecks.md)|`BOOL`|`TRUE`Si la fonction contient des contrôles de sécurité (uniquement dans DIA SDK 8.0 ou version ultérieure).|  
+|[IDiaSymbol::get_hasSEH](../../debugger/debug-interface-access/idiasymbol-get-hasseh.md)|`BOOL`|`TRUE`Si la fonction contient un style Win32 structurée des exceptions (uniquement dans DIA SDK 8.0 ou version ultérieure).|  
+|[IDiaSymbol::get_hasSetJump](../../debugger/debug-interface-access/idiasymbol-get-hassetjump.md)|`BOOL`|`TRUE`Si la fonction contient un [setjmp](/cpp/c-runtime-library/reference/setjmp) appeler (uniquement dans DIA SDK 8.0 ou version ultérieure).|  
+|[IDiaSymbol::get_interruptReturn](../../debugger/debug-interface-access/idiasymbol-get-interruptreturn.md)|`BOOL`|`TRUE`Si la fonction a un retour d’interruption (uniquement dans DIA SDK 8.0 ou version ultérieure).|  
+|[IDiaSymbol::get_intro](../../debugger/debug-interface-access/idiasymbol-get-intro.md)|`BOOL`|`TRUE`Si une fonction est intro virtuel.|  
+|[IDiaSymbol::get_InlSpec](../../debugger/debug-interface-access/idiasymbol-get-inlspec.md)|`BOOL`|`TRUE`Si la fonction a été marquée avec l’un de le [inline, __inline, \__forceinline](/cpp/cpp/inline-functions-cpp.md) attributs.|  
+|[IDiaSymbol::get_isNaked](../../debugger/debug-interface-access/idiasymbol-get-isnaked.md)|`BOOL`|`TRUE`Si la fonction est marquée avec la [naked](/cpp/cpp/naked-cpp) attribut (uniquement dans DIA SDK 8.0 ou version ultérieure).|  
+|[IDiaSymbol::get_isStatic](../../debugger/debug-interface-access/idiasymbol-get-isstatic.md)|`BOOL`|`TRUE`Si la fonction statique (uniquement dans DIA SDK 8.0 ou version ultérieure).|  
+|[IDiaSymbol::get_length](../../debugger/debug-interface-access/idiasymbol-get-length.md)|`ULONGLONG`|Nombre d’octets de code de fonction, en commençant à partir de l’emplacement.|  
+|[IDiaSymbol::get_lexicalParent](../../debugger/debug-interface-access/idiasymbol-get-lexicalparent.md)|`IDiaSymbol*`|Symbole du module englobant.|  
+|[IDiaSymbol::get_lexicalParentId](../../debugger/debug-interface-access/idiasymbol-get-lexicalparentid.md)|`DWORD`|ID de symbole lexicale parente.|  
+|[IDiaSymbol::get_locationType](../../debugger/debug-interface-access/idiasymbol-get-locationtype.md)|`DWORD`|Fonctions peuvent avoir des emplacements statique ou de métadonnées ; Pour plus d’informations, consultez [emplacements de symboles](../../debugger/debug-interface-access/symbol-locations.md).|  
+|[IDiaSymbol::get_name](../../debugger/debug-interface-access/idiasymbol-get-name.md)|`BSTR`|Nom de la fonction.|  
+|[IDiaSymbol::get_noInline](../../debugger/debug-interface-access/idiasymbol-get-noinline.md)|`BOOL`|`TRUE`Si la fonction n’est pas une fonction inline (uniquement n DIA SDK version 8.0 ou version ultérieure).|  
+|[IDiaSymbol::get_notReached](../../debugger/debug-interface-access/idiasymbol-get-notreached.md)|`BOOL`|`TRUE`Si la fonction n’est pas accessible (uniquement dans DIA SDK 8.0 ou version ultérieure).|  
+|[IDiaSymbol::get_noReturn](../../debugger/debug-interface-access/idiasymbol-get-noreturn.md)|`BOOL`|`TRUE`Si la fonction ne retourne pas une valeur (uniquement dans DIA SDK 8.0 ou version ultérieure).|  
+|[IDiaSymbol::get_noStackOrdering](../../debugger/debug-interface-access/idiasymbol-get-nostackordering.md)|`BOOL`|`TRUE`Si la fonction a été compilée avec les vérifications de sécurité de mémoire tampon, mais aucun classement de la pile a pu être effectuée.|  
+|[IDiaSymbol::get_optimizedCodeDebugInfo](../../debugger/debug-interface-access/idiasymbol-get-optimizedcodedebuginfo.md)|`BOOL`|`TRUE`Si le code a des informations de débogage pour le code optimisé (uniquement dans DIA SDK 8.0 ou version ultérieure).|  
+|[IDiaSymbol::get_pure](../../debugger/debug-interface-access/idiasymbol-get-pure.md)|`BOOL`|`TRUE`Si la fonction est purement virtuelle.|  
+|[IDiaSymbol::get_relativeVirtualAddress](../../debugger/debug-interface-access/idiasymbol-get-relativevirtualaddress.md)|`DWORD`|Position relative de cette fonction dans le module.|  
+|[IDiaSymbol::get_symIndexId](../../debugger/debug-interface-access/idiasymbol-get-symindexid.md)|`DWORD`|ID d’index du symbole.|  
+|[IDiaSymbol::get_symTag](../../debugger/debug-interface-access/idiasymbol-get-symtag.md)|`DWORD`|Retourne `SymTagFunction` (parmi les [symtagenum, énumération](../../debugger/debug-interface-access/symtagenum.md) valeurs).|  
+|[IDiaSymbol::get_token](../../debugger/debug-interface-access/idiasymbol-get-token.md)|`DWORD`|Jeton de métadonnées pour la fonction.|  
+|[IDiaSymbol::get_type](../../debugger/debug-interface-access/idiasymbol-get-type.md)|`IDiaSymbol*`|Symbole de la signature de fonction.|  
+|[IDiaSymbol::get_typeId](../../debugger/debug-interface-access/idiasymbol-get-typeid.md)|`DWORD`|ID de symbole du type.|  
+|[IDiaSymbol::get_unalignedType](../../debugger/debug-interface-access/idiasymbol-get-unalignedtype.md)|`BOOL`|`TRUE`Si la fonction n’est pas alignée.|  
+|[IDiaSymbol::get_undecoratedName](../../debugger/debug-interface-access/idiasymbol-get-undecoratedname.md)|`BSTR`|La forme non décorée du nom de fonction (uniquement dans DIA SDK 8.0 ou version ultérieure)|  
+|[IDiaSymbol::get_undecoratedNameEx](../../debugger/debug-interface-access/idiasymbol-get-undecoratednameex.md)|`BSTR`|Tout ou partie de la forme non décorée du nom de fonction (uniquement dans DIA SDK 8.0 ou version ultérieure).|  
+|[IDiaSymbol::get_virtual](../../debugger/debug-interface-access/idiasymbol-get-virtual.md)|`BOOL`|`TRUE`Si une fonction virtuelle.|  
+|[IDiaSymbol::get_virtualAddress](../../debugger/debug-interface-access/idiasymbol-get-virtualaddress.md)|`ULONGLONG`|Position de cette fonction dans l’image exécutable.|  
+|[IDiaSymbol::get_virtualBaseOffset](../../debugger/debug-interface-access/idiasymbol-get-virtualbaseoffset.md)|`DWORD`|Si une fonction virtuelle, puis le décalage dans la table de fonctions virtuelles.|  
+|[IDiaSymbol::get_volatileType](../../debugger/debug-interface-access/idiasymbol-get-volatiletype.md)|`BOOL`|`TRUE`Si la fonction est marquée comme volatile.|  
   
-## Voir aussi  
- [CV\_access\_e, énumération](../../debugger/debug-interface-access/cv-access-e.md)   
- [Hiérarchie lexicale des types de symboles](../../debugger/debug-interface-access/lexical-hierarchy-of-symbol-types.md)   
- [LocationType, énumération](../../debugger/debug-interface-access/locationtype.md)   
+## <a name="see-also"></a>Voir aussi  
+ [CV_access_e (énumération)](../../debugger/debug-interface-access/cv-access-e.md)   
+ [Hiérarchie lexicale des Types de symboles](../../debugger/debug-interface-access/lexical-hierarchy-of-symbol-types.md)   
+ [LocationType (énumération)](../../debugger/debug-interface-access/locationtype.md)   
  [Emplacements des symboles](../../debugger/debug-interface-access/symbol-locations.md)

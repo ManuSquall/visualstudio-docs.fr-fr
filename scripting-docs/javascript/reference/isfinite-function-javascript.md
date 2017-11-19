@@ -1,48 +1,50 @@
 ---
-title: "isFinite, fonction (JavaScript) | Microsoft Docs"
-ms.custom: ""
-ms.date: "01/18/2017"
-ms.prod: "windows-client-threshold"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "devlang-javascript"
-ms.tgt_pltfrm: ""
-ms.topic: "language-reference"
-f1_keywords: 
-  - "isFinite"
-dev_langs: 
-  - "JavaScript"
-  - "TypeScript"
-  - "DHTML"
-helpviewer_keywords: 
-  - "nombres finis"
-  - "isFinite (méthode)"
+title: isFinite, fonction (JavaScript) | Documents Microsoft
+ms.custom: 
+ms.date: 01/18/2017
+ms.prod: windows-client-threshold
+ms.reviewer: 
+ms.suite: 
+ms.technology: devlang-javascript
+ms.tgt_pltfrm: 
+ms.topic: language-reference
+f1_keywords: isFinite
+dev_langs:
+- JavaScript
+- TypeScript
+- DHTML
+helpviewer_keywords:
+- finite numbers
+- isFinite method
 ms.assetid: ea9287d2-892f-496b-86b7-f9196868d5cf
-caps.latest.revision: 11
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 11
+caps.latest.revision: "11"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: ce78afe59190a03fb079841e7691f84c01eebedd
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.translationtype: MT
+ms.contentlocale: fr-FR
+ms.lasthandoff: 10/27/2017
 ---
-# isFinite, fonction (JavaScript)
-Détermine si un nombre fourni est terminé.  
+# <a name="isfinite-function-javascript"></a>isFinite, fonction (JavaScript)
+Détermine si un nombre fourni est fini.  
   
-## Syntaxe  
+## <a name="syntax"></a>Syntaxe  
   
 ```  
 isFinite(number)   
 ```  
   
-## Notes  
- L'argument `number` requis correspond à n'importe quelle valeur numérique.  
+## <a name="remarks"></a>Remarques  
+ Requis `number` argument est une valeur numérique.  
   
- La fonction `isFinite` retourne `true` si `number` n'est pas une valeur `NaN`, un nombre négatif infini ou un nombre positif infini.  Dans ces trois cas, la méthode retourne **false**.  
+ Le `isFinite` fonction renvoie `true` si `number` est n’importe quelle valeur autre que `NaN`, l’infini négatif ou l’infini positif. Dans ces trois cas, elle retourne **false**.  
   
-## Configuration requise  
+## <a name="requirements"></a>Spécifications  
  [!INCLUDE[jsv3](../../javascript/reference/includes/jsv3-md.md)]  
   
- **S'applique à** : [Objet Global](../../javascript/reference/global-object-javascript.md)  
+ **S’applique aux**: [objet Global](../../javascript/reference/global-object-javascript.md)  
   
-## Voir aussi  
+## <a name="see-also"></a>Voir aussi  
  [Fonction isNaN](../../javascript/reference/isnan-function-javascript.md)

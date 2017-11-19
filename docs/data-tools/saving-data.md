@@ -1,5 +1,5 @@
 ---
-title: Saving Data | Microsoft Docs
+title: "L’enregistrement de données | Documents Microsoft"
 ms.custom: 
 ms.date: 10/19/2016
 ms.reviewer: 
@@ -20,46 +20,31 @@ helpviewer_keywords:
 - saving data
 - updating databases
 ms.assetid: 21d2b115-62e4-4ac9-a873-dcbb535b8af8
-caps.latest.revision: 13
+caps.latest.revision: "13"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
 robots: noindex,nofollow
-translation.priority.ht:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
-ms.translationtype: HT
-ms.sourcegitcommit: 33a857c2d8585e2e8da9bcd9158190366a3b6830
-ms.openlocfilehash: be46f7044ca55841ae2fbbfed2e9ea334e263134
-ms.contentlocale: fr-fr
-ms.lasthandoff: 09/07/2017
-
+ms.technology: vs-data-tools
+ms.openlocfilehash: 34ceecce635cb5388bd53ed191c0fc1fa861bc38
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: fr-FR
+ms.lasthandoff: 10/31/2017
 ---
-# <a name="saving-data"></a>Saving Data
-Saving data is the process of persisting changed data in an application's data model back to the original data store, typically a relational database such as SQL Server.  
+# <a name="saving-data"></a>Enregistrement des données
+L’enregistrement de données est le processus consistant à rendre persistantes les données dans le modèle de données d’une application dans le magasin de données d’origine, généralement une base de données relationnel telles que SQL Server.  
   
- Updating a data source by means of a data model is typically a two-step process. The first step is to update the data model with new information — new records, changed records, or deleted records. The second step is to save the changes in your data model back to the database.  
+ Mise à jour d’une source de données au moyen d’un modèle de données est généralement un processus en deux étapes. La première étape consiste à mettre à jour le modèle de données avec de nouvelles informations : nouveaux enregistrements, enregistrements modifiés ou enregistrements supprimés. La deuxième étape consiste à enregistrer les modifications dans votre modèle de données à la base de données.  
   
- The following topics describe the concepts and tasks associated with saving data.  
+ Les rubriques suivantes décrivent les concepts et les tâches associées à l’enregistrement de données.  
   
-## <a name="related-topics"></a>Related Topics  
-[Save data back to the database](../data-tools/save-data-back-to-the-database.md)  
- Provides an overview of how changes are made in a dataset and how the dataset tracks information about changes in order to save those changes to a database.  
+## <a name="related-topics"></a>Rubriques connexes  
+[Enregistrer les données dans la base de données](../data-tools/save-data-back-to-the-database.md)  
+ Fournit une vue d’ensemble de la façon dont les modifications sont apportées dans un jeu de données et comment le jeu de données effectue le suivi des informations sur les modifications pour enregistrer ces modifications sur une base de données.  
   
-[How to: Add, Modify, and Delete Entities (WCF Data Services)](/dotnet/framework/data/wcf/how-to-add-modify-and-delete-entities-wcf-data-services)  
-Shows how to create, update, and delete entity data in a data service.  
+[Comment : ajouter, modifier et supprimer des entités (WCF Data Services)](/dotnet/framework/data/wcf/how-to-add-modify-and-delete-entities-wcf-data-services)  
+Montre comment créer, mettre à jour et supprimer des données d’entité dans un service de données.  
   
-[How to: Execute Data Service Queries (WCF Data Services)](/dotnet/framework/data/wcf/how-to-execute-data-service-queries-wcf-data-services)  
-Shows how to query a data service from a data service application.  
-
+[Comment : exécuter des requêtes de Service de données (WCF Data Services)](/dotnet/framework/data/wcf/how-to-execute-data-service-queries-wcf-data-services)  
+Montre comment interroger un service de données à partir d’une application de service de données.  

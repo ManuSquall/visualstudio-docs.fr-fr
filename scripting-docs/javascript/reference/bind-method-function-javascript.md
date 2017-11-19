@@ -1,60 +1,63 @@
 ---
-title: "bind, m&#233;thode (Function) (JavaScript) | Microsoft Docs"
-ms.custom: ""
-ms.date: "01/18/2017"
-ms.prod: "windows-client-threshold"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "devlang-javascript"
-ms.tgt_pltfrm: ""
-ms.topic: "language-reference"
-dev_langs: 
-  - "JavaScript"
-  - "TypeScript"
-  - "DHTML"
-helpviewer_keywords: 
-  - "arguments (JavaScript), bind (méthode)"
-  - "bind (méthode) (JavaScript)"
-  - "paramètres (JavaScript), bind (méthode)"
-  - "this (mot clé) (JavaScript), bind (méthode)"
+title: "BIND (méthode) (fonction) (JavaScript) | Documents Microsoft"
+ms.custom: 
+ms.date: 01/18/2017
+ms.prod: windows-client-threshold
+ms.reviewer: 
+ms.suite: 
+ms.technology: devlang-javascript
+ms.tgt_pltfrm: 
+ms.topic: language-reference
+dev_langs:
+- JavaScript
+- TypeScript
+- DHTML
+helpviewer_keywords:
+- parameters [JavaScript], bind method
+- arguments [JavaScript], bind method
+- bind method [JavaScript]
+- this keyword [JavaScript], bind method
 ms.assetid: 28946f47-b758-48cf-b508-610a0f2f6e19
-caps.latest.revision: 21
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 21
+caps.latest.revision: "21"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: dd7fc752df9bd41f8625ac2cb484486dfd19558d
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.translationtype: MT
+ms.contentlocale: fr-FR
+ms.lasthandoff: 10/27/2017
 ---
-# bind, m&#233;thode (Function) (JavaScript)
-Pour une fonction donnée, crée une fonction liée qui a le même corps que la fonction d'origine.  Dans la fonction liée, l'objet `this` résout l'objet passé.  La fonction liée a les paramètres initiaux spécifiés.  
+# <a name="bind-method-function-javascript"></a>bind, méthode (Function) (JavaScript)
+Pour une fonction donnée, crée une fonction liée qui a le même corps que la fonction d'origine. Dans la fonction liée, l'objet `this` résout l'objet passé. La fonction liée a les paramètres initiaux spécifiés.  
   
-## Syntaxe  
+## <a name="syntax"></a>Syntaxe  
   
 ```  
   
 function.bind(thisArg[,arg1[,arg2[,argN]]])  
 ```  
   
-#### Paramètres  
+#### <a name="parameters"></a>Paramètres  
  `function`  
- Obligatoire.  Objet de fonction.  
+ Obligatoire. Objet de fonction.  
   
  `thisArg`  
- Obligatoire.  Objet auquel le mot clé `this` peut faire référence dans la nouvelle fonction.  
+ Obligatoire. Objet auquel le mot clé `this` peut faire référence dans la nouvelle fonction.  
   
- `arg1`\[,`arg2`\[,`argN`\]\]\]  
- Facultatif.  Liste des arguments à passer à la nouvelle fonction.  
+ `arg1`[,`arg2`[,`argN`]]]  
+ Facultatif. Liste des arguments à passer à la nouvelle fonction.  
   
-## Valeur de retour  
+## <a name="return-value"></a>Valeur de retour  
  Nouvelle fonction qui est identique à la fonction `function`, à l'exception de l'objet `thisArg` et des arguments initiaux.  
   
-## Exceptions  
+## <a name="exceptions"></a>Exceptions  
  Si le paramètre `function` spécifié n'est pas une fonction, une exception `TypeError` est levée.  
   
-## Exemple  
+## <a name="example"></a>Exemple  
  Le code suivant met en œuvre la méthode `bind`.  
   
-```javascript  
+```JavaScript  
 // Define the original function.  
 var checkNumericRange = function (value) {  
     if (typeof value !== 'number')  
@@ -76,10 +79,10 @@ document.write(result);
 // Output: true  
 ```  
   
-## Exemple  
+## <a name="example"></a>Exemple  
  Dans l'exemple suivant, l'objet `thisArg` est différent de l'objet qui contient la méthode d'origine.  
   
-```javascript  
+```JavaScript  
 // Create an object that contains the original function.  
 var originalObject = {  
     minimum: 50,  
@@ -109,10 +112,10 @@ document.write(result);
 // Output: true  
 ```  
   
-## Exemple  
- Le code suivant illustre l'utilisation des arguments `arg1[,arg2[,argN]]]`.  La fonction liée utilise les paramètres spécifiés dans la méthode `bind` comme premier et deuxième paramètres.  Tous les paramètres spécifiés lorsque la fonction liée est appelée sont utilisés en tant que troisième paramètre, quatrième paramètre, et ainsi de suite.  
+## <a name="example"></a>Exemple  
+ Le code suivant illustre l'utilisation des arguments `arg1[,arg2[,argN]]]`. La fonction liée utilise les paramètres spécifiés dans la méthode `bind` comme premier et deuxième paramètres. Tous les paramètres spécifiés lorsque la fonction liée est appelée sont utilisés en tant que troisième paramètre, quatrième paramètre, et ainsi de suite.  
   
-```javascript  
+```JavaScript  
 // Define the original function with four parameters.  
 var displayArgs = function (val1, val2, val3, val4) {  
     document.write(val1 + " " + val2 + " " + val3 + " " + val4);  
@@ -130,11 +133,11 @@ displayArgs2("b", "c");
 // Output: 12 a b c   
 ```  
   
-## Configuration requise  
+## <a name="requirements"></a>Spécifications  
  [!INCLUDE[jsv9](../../javascript/includes/jsv9-md.md)]  
   
-## Voir aussi  
- [Objet de function](../../javascript/reference/function-object-javascript.md)   
- [filter, méthode \(Array\)](../../javascript/reference/filter-method-array-javascript.md)   
- [Utilisation de la méthode Bind](../../javascript/advanced/using-the-bind-method-javascript.md)   
- [Exemple d'application Hilo JavaScript \(Windows Store\)](http://hilojs.codeplex.com/SourceControl/latest)
+## <a name="see-also"></a>Voir aussi  
+ [Objet de fonction](../../javascript/reference/function-object-javascript.md)   
+ [Filter, méthode (Array)](../../javascript/reference/filter-method-array-javascript.md)   
+ [À l’aide de la méthode bind](../../javascript/advanced/using-the-bind-method-javascript.md)   
+ [Hilo JavaScript exemple d’application (Windows Store)](http://hilojs.codeplex.com/SourceControl/latest)

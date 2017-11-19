@@ -1,45 +1,47 @@
 ---
-title: "Assignation impossible &#224; &#39;this&#39; | Microsoft Docs"
-ms.custom: ""
-ms.date: "01/18/2017"
-ms.prod: "windows-client-threshold"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "javascript"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "VS.WebClient.Help.SCRIPT5000"
-dev_langs: 
-  - "JavaScript"
-  - "TypeScript"
-  - "DHTML"
+title: "Ne peut pas affecter à &#39; cela &#39; | Documents Microsoft"
+ms.custom: 
+ms.date: 01/18/2017
+ms.prod: windows-client-threshold
+ms.reviewer: 
+ms.suite: 
+ms.technology: javascript
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords: VS.WebClient.Help.SCRIPT5000
+dev_langs:
+- JavaScript
+- TypeScript
+- DHTML
 ms.assetid: ba2b0a2b-f0f8-4698-b335-a4ab6c166671
-caps.latest.revision: 7
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 7
+caps.latest.revision: "7"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: c164b9b7d2989076a9dc0ef0bafba6159bc08885
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.translationtype: MT
+ms.contentlocale: fr-FR
+ms.lasthandoff: 10/27/2017
 ---
-# Assignation impossible &#224; &#39;this&#39;
-Vous avez tenté d'assigner une valeur à **this**.  **this** est un mot clé de [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] qui fait référence à l'un ou l'autre des objets suivants :  
+# <a name="cannot-assign-to-39this39"></a>Ne peut pas affecter à &#39; cela &#39;
+Vous avez tenté d’affecter une valeur à **cela**. **Cela** est un [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] mot clé qui fait référence à :  
   
--   l'objet exécutant actuellement une méthode ;  
+-   l’objet d’une méthode, en cours d’exécution  
   
--   l'objet global si aucune méthode n'est en cours \(ou si la méthode n'appartient à aucun autre objet\).  
+-   l’objet global si aucune méthode actuel (ou la méthode n’appartient pas à tout autre objet).  
   
- Une méthode est une fonction [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] appelée via un objet.  Au sein d'une méthode, le mot clé **this** fait référence à l'objet utilisé pour appeler la méthode \(lequel est l'objet créé en appelant le constructeur de classe avec l'opérateur **new**\).  
+ Une méthode est un [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] fonction est appelée via un objet. À l’intérieur d’une méthode, le **cela** (mot clé) est une référence à l’objet de la méthode a été appelée par le biais (ce qui se produit à l’objet créé en appelant le constructeur de classe avec le **nouveau** opérateur).  
   
- Dans une méthode, utilisez **this** pour faire référence à l'objet actif, sans toutefois pouvoir lui assigner une nouvelle valeur.  
+ À l’intérieur d’une méthode, vous pouvez utiliser **cela** pour faire référence à l’objet en cours, mais vous ne pouvez pas affecter une nouvelle valeur à **cela**.  
   
-### Pour corriger cette erreur  
+### <a name="to-correct-this-error"></a>Pour corriger cette erreur  
   
--   Ne tentez pas d'assigner une valeur à **this**.  Pour accéder à une méthode ou à une propriété d'un objet instancié, utilisez l'opérateur point \(.\) \(par exemple, cercle**.**rayon\).  
+-   N’essayez pas d’affecter à **cela**. Pour accéder à une propriété ou méthode d’un objet instancié, utilisez l’opérateur point (par exemple, cercle**.** rayon).  
   
     > [!NOTE]
-    >  Le nom **this** ne peut être donné à une variable créée par l'utilisateur ; il s'agit d'un mot clé réservé de [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)].  
+    >  Impossible de nommer une variable créée par l’utilisateur **cela**; il s’agit d’un [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] mot réservé.  
   
-## Voir aussi  
- [this, instruction](../../javascript/reference/this-statement-javascript.md)   
- [Dépannage de vos scripts](../../javascript/advanced/troubleshooting-your-scripts-javascript.md)
+## <a name="see-also"></a>Voir aussi  
+ [Cette instruction](../../javascript/reference/this-statement-javascript.md)   
+ [Résolution des problèmes liés aux scripts](../../javascript/advanced/troubleshooting-your-scripts-javascript.md)

@@ -1,65 +1,66 @@
 ---
-title: "CA1700&#160;: Ne nommez pas les valeurs enum &#39;Reserved&#39; | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-devops-test"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "CA1700"
-  - "DoNotNameEnumValuesReserved"
-helpviewer_keywords: 
-  - "DoNotNameEnumValuesReserved"
-  - "CA1700"
+title: "CA1700 : Ne nommez pas les valeurs enum &#39; Réservé &#39; | Documents Microsoft"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-code-analysis
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords:
+- CA1700
+- DoNotNameEnumValuesReserved
+helpviewer_keywords:
+- DoNotNameEnumValuesReserved
+- CA1700
 ms.assetid: 7a7e01c3-ae7d-4c82-a646-91b58864a749
-caps.latest.revision: 17
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
-caps.handback.revision: 17
+caps.latest.revision: "17"
+author: gewarren
+ms.author: gewarren
+manager: ghogen
+ms.openlocfilehash: 2acfafaec213f619dbe8c3077ab5cc72bdfde88d
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: fr-FR
+ms.lasthandoff: 10/31/2017
 ---
-# CA1700&#160;: Ne nommez pas les valeurs enum &#39;Reserved&#39;
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
-
+# <a name="ca1700-do-not-name-enum-values-39reserved39"></a>CA1700 : Ne nommez pas les valeurs enum &#39; Réservé &#39;
 |||  
 |-|-|  
 |TypeName|DoNotNameEnumValuesReserved|  
 |CheckId|CA1700|  
 |Catégorie|Microsoft.Naming|  
-|Modification avec rupture|Oui|  
+|Modification avec rupture|Rupture|  
   
-## Cause  
- Le nom d'un membre de l'énumération contient le mot "reserved".  
+## <a name="cause"></a>Cause  
+ Le nom d’un membre d’énumération contient le mot « réservés ».  
   
-## Description de la règle  
- Cette règle suppose qu'un membre de l'énumération dont le nom contient le terme "reserved" n'est pas utilisé actuellement, mais constitue un espace réservé à renommer ou à supprimer dans une version ultérieure.  Renommer ou supprimer un membre constitue une modification avec rupture.  Vous ne devez pas compter sur le fait que les utilisateurs ignorent un membre simplement parce que son nom contient le terme "reserved" ni sur le fait qu'ils lisent ou se conforment à la documentation.  En outre, sachant que les membres réservés apparaissent dans des explorateurs d'objets et des environnements de développement intégré intelligents, ils peuvent provoquer une confusion sur l'identité des membres réellement utilisés.  
+## <a name="rule-description"></a>Description de la règle  
+ Cette règle suppose qu'un membre de l'énumération dont le nom contient le terme "reserved" n'est pas utilisé actuellement, mais constitue un espace réservé à renommer ou à supprimer dans une version ultérieure. Renommer ou supprimer un membre constitue une modification avec rupture. Vous ne devriez pas aux utilisateurs d’ignorer un membre, car son nom contient « réservés », ni compter sur les utilisateurs de lire ou de se conformer à la documentation. En outre, étant donné que les membres réservés apparaissent dans les explorateurs d’objets et des environnements de développement intégré intelligents, ils peuvent provoquer la confusion sur les membres sont réellement utilisés.  
   
- Au lieu d'utiliser un membre réservé, ajoutez un nouveau membre à l'énumération dans la version future.  Dans la plupart des cas, l'ajout du nouveau membre ne constitue pas une modification avec rupture, tant qu'il ne provoque aucune modification des valeurs des membres d'origine.  
+ Au lieu d’utiliser un membre réservé, ajoutez un nouveau membre à l’énumération dans la prochaine version. Dans la plupart des cas l’ajout du nouveau membre n’est pas une modification avec rupture, tant que l’ajout n’entraîne pas les valeurs des membres d’origine à modifier.  
   
- Dans un nombre restreint de cas, l'ajout d'un membre constitue une modification avec rupture et ce même si les membres d'origine conservent leurs valeurs d'origine.  À l'origine, le nouveau membre ne peut pas être retourné depuis les chemins d'accès d'un code existant sans arrêter les appelants qui utilisent une instruction `switch` \(`Select` en [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)]\) sur la valeur de retour qui comprend la liste intégrale des membres et qui lève une exception dans le cas par défaut.  Un problème secondaire tient dans ce qu'un code client peut ne pas gérer la modification de comportement à partir de méthodes de réflexion telles que <xref:System.Enum.IsDefined%2A?displayProperty=fullName>.  Par conséquent, si le nouveau membre doit être retourné à partir des méthodes existantes ou si une incompatibilité d'application connue est due à une utilisation médiocre de la réflexion, la seule solution sans rupture consiste à :  
+ Un nombre limité de cas de l’ajout d’un membre est une modification avec rupture, même si les membres d’origine conservent leurs valeurs d’origine. Principalement, le nouveau membre ne peut pas être retourné à partir de chemins d’accès de code existant sans arrêter les appelants qui utilisent une `switch` (`Select` dans [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)]) instruction sur la valeur de retour qui comprend la liste intégrale des membres et qui lève une exception dans le cas par défaut. Un problème secondaire est que le code client peut ne pas gérer le changement de comportement à partir de méthodes de réflexion telles que <xref:System.Enum.IsDefined%2A?displayProperty=fullName>. En conséquence, si le nouveau membre doit être retourné à partir de méthodes existantes ou une incompatibilité d’application connue se produit en raison de l’utilisation de médiocre de la réflexion, la seule solution sans rupture consiste à :  
   
-1.  Ajouter une nouvelle énumération qui contient les membres d'origine et nouveaux.  
+1.  Ajouter une nouvelle énumération qui contient les membres d’origine et nouveaux.  
   
-2.  Marquez l'énumération d'origine avec l'attribut <xref:System.ObsoleteAttribute?displayProperty=fullName>.  
+2.  Marquez l’énumération d’origine avec le <xref:System.ObsoleteAttribute?displayProperty=fullName> attribut.  
   
- Suivez la même procédure pour tout type ou membre visible de l'extérieur qui expose l'énumération d'origine.  
+ Suivez la même procédure pour les types visibles de l’extérieur ou les membres qui exposent l’énumération d’origine.  
   
-## Comment corriger les violations  
+## <a name="how-to-fix-violations"></a>Comment corriger les violations  
  Pour corriger une violation de cette règle, supprimez ou renommez le membre.  
   
-## Quand supprimer les avertissements  
- Il est possible de supprimer sans risque un avertissement de cette règle pour un membre actuellement utilisé ou dans le cas de bibliothèques précédemment livrées.  
+## <a name="when-to-suppress-warnings"></a>Quand supprimer les avertissements  
+ Il est possible de supprimer un avertissement de cette règle pour un membre qui est actuellement utilisé ou pour les bibliothèques fournies antérieurement.  
   
-## Règles connexes  
- [CA2217 : Ne pas marquer les enums avec FlagsAttribute](../code-quality/ca2217-do-not-mark-enums-with-flagsattribute.md)  
+## <a name="related-rules"></a>Règles associées  
+ [CA2217 : Ne marquez pas les énumérations avec FlagsAttribute](../code-quality/ca2217-do-not-mark-enums-with-flagsattribute.md)  
   
- [CA1712 : N'ajoutez pas le nom de type en guise de préfixe à des valeurs enum](../code-quality/ca1712-do-not-prefix-enum-values-with-type-name.md)  
+ [CA1712 : Ne préfixez pas les valeurs d’énumération avec le nom du type](../code-quality/ca1712-do-not-prefix-enum-values-with-type-name.md)  
   
- [CA1028 : Enum Storage doit être Int32](../code-quality/ca1028-enum-storage-should-be-int32.md)  
+ [CA1028 : Le stockage de l’énumération doit être Int32](../code-quality/ca1028-enum-storage-should-be-int32.md)  
   
- [CA1008 : Les enums doivent avoir la valeur zéro](../code-quality/ca1008-enums-should-have-zero-value.md)  
+ [CA1008 : Les énumérations doivent avoir la valeur zéro](../code-quality/ca1008-enums-should-have-zero-value.md)  
   
- [CA1027 : Marquer les enums avec FlagsAttribute](../code-quality/ca1027-mark-enums-with-flagsattribute.md)
+ [CA1027 : Marquez les énumérations avec FlagsAttribute](../code-quality/ca1027-mark-enums-with-flagsattribute.md)

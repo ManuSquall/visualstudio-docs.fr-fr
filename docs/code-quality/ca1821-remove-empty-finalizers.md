@@ -1,66 +1,48 @@
 ---
-title: 'CA1821: Remove empty finalizers | Microsoft Docs'
+title: "CA1821 : Supprimez les finaliseurs vides | Documents Microsoft"
 ms.custom: 
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-devops-test
+ms.technology: vs-ide-code-analysis
 ms.tgt_pltfrm: 
 ms.topic: article
 f1_keywords:
 - RemoveEmptyFinalizers
 - CA1821
-helpviewer_keywords:
-- CA1821
+helpviewer_keywords: CA1821
 ms.assetid: 3f4855a0-e4a0-46e6-923c-4c3b7074048d
-caps.latest.revision: 13
-author: stevehoag
-ms.author: shoag
-manager: wpickett
-translation.priority.ht:
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- ru-ru
-- zh-cn
-- zh-tw
-translation.priority.mt:
-- cs-cz
-- pl-pl
-- pt-br
-- tr-tr
-ms.translationtype: HT
-ms.sourcegitcommit: eb5c9550fd29b0e98bf63a7240737da4f13f3249
-ms.openlocfilehash: 4ef95f8961e156cdfbe6858b5424296ee1ba4667
-ms.contentlocale: fr-fr
-ms.lasthandoff: 08/30/2017
-
+caps.latest.revision: "13"
+author: gewarren
+ms.author: gewarren
+manager: ghogen
+ms.openlocfilehash: afe1c05ff76a2b4c37296ef6a534e37a5d1229b6
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: fr-FR
+ms.lasthandoff: 10/31/2017
 ---
-# <a name="ca1821-remove-empty-finalizers"></a>CA1821: Remove empty finalizers
+# <a name="ca1821-remove-empty-finalizers"></a>CA1821 : Supprimer les finaliseurs vides
 |||  
 |-|-|  
 |TypeName|RemoveEmptyFinalizers|  
 |CheckId|CA1821|  
-|Category|Microsoft.Performance|  
-|Breaking Change|Non-breaking|  
+|Catégorie|Microsoft.Performance|  
+|Modification avec rupture|Sans rupture|  
   
 ## <a name="cause"></a>Cause  
- A type implements a finalizer that is empty, calls only the base type finalizer, or calls only conditionally emitted methods.  
+ Un type implémente un finaliseur qui est vide, appelle uniquement le finaliseur du type de base ou appelle uniquement émises sous certaines conditions de méthodes.  
   
-## <a name="rule-description"></a>Rule Description  
- Whenever you can, avoid finalizers because of the additional performance overhead that is involved in tracking object lifetime. The garbage collector will run the finalizer before it collects the object. This means that two collections will be required to collect the object. An empty finalizer incurs this added overhead without any benefit.  
+## <a name="rule-description"></a>Description de la règle  
+ Évitez autant que possible d'utiliser des finaliseurs en raison de la surcharge supplémentaire des performances impliquée dans le suivi de la durée de vie de l'objet. Le garbage collector exécutera le finaliseur avant de collecter l’objet. Cela signifie que les deux collections sont requises pour collecter l’objet. Un finaliseur vide entraîne cette charge mémoire supplémentaire sans aucun avantage.  
   
-## <a name="how-to-fix-violations"></a>How to Fix Violations  
- Remove the empty finalizer. If a finalizer is required for debugging, enclose the whole finalizer in `#if DEBUG / #endif` directives.  
+## <a name="how-to-fix-violations"></a>Comment corriger les violations  
+ Supprimez le finaliseur vide. Si un finaliseur est requis pour le débogage, insérez-le entièrement dans `#if DEBUG / #endif` directives.  
   
-## <a name="when-to-suppress-warnings"></a>When to Suppress Warnings  
- Do not suppress a message from this rule. Failure to suppress finalization decreases performance and provides no benefits.  
+## <a name="when-to-suppress-warnings"></a>Quand supprimer les avertissements  
+ Ne supprimez pas un message de cette règle. Échec de supprimer la finalisation diminue les performances et n’apporte aucun avantage.  
   
-## <a name="example"></a>Example  
- The following example shows an empty finalizer that should be removed, a finalizer that should be enclosed in `#if DEBUG / #endif` directives, and a finalizer that uses the `#if DEBUG / #endif` directives correctly.  
+## <a name="example"></a>Exemple  
+ L’exemple suivant montre un finaliseur vide qui doit être supprimé, un finaliseur qui doit être placé dans `#if DEBUG / #endif` directives et un finaliseur qui utilise le `#if DEBUG / #endif` directives correctement.  
   
  [!code-csharp[FxCop.Performance.RemoveEmptyFinalizers#1](../code-quality/codesnippet/CSharp/ca1821-remove-empty-finalizers_1.cs)]

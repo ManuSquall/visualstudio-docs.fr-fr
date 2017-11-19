@@ -1,39 +1,42 @@
 ---
-title: "Comment&#160;: d&#233;finir un nom de thread dans le code natif | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-debug"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-dev_langs: 
-  - "FSharp"
-  - "VB"
-  - "CSharp"
-  - "C++"
-helpviewer_keywords: 
-  - "déboguer (C++), threads"
-  - "déboguer (Visual Studio), threads"
-  - "SetThreadName (fonction)"
-  - "noms de threads"
-  - "threads (Visual Studio), noms"
+title: "Comment : définir un nom de Thread dans le Code natif | Documents Microsoft"
+ms.custom: 
+ms.date: 04/27/2017
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-debug
+ms.tgt_pltfrm: 
+ms.topic: article
+dev_langs:
+- CSharp
+- VB
+- FSharp
+- C++
+helpviewer_keywords:
+- debugging [C++], threads
+- SetThreadName function
+- threading [Visual Studio], names
+- thread names
+- debugging [Visual Studio], threads
 ms.assetid: c85d0968-9f22-4d69-87f4-acca2ae777b8
-caps.latest.revision: 37
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 37
+caps.latest.revision: "37"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: 2ded01065c3971daf630fd743d0ad017e2b3d91c
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: fr-FR
+ms.lasthandoff: 10/31/2017
 ---
-# Comment&#160;: d&#233;finir un nom de thread dans le code natif
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
+# <a name="how-to-set-a-thread-name-in-native-code"></a>Comment : définir un nom de thread dans le code natif
+Il est possible d'attribuer des noms aux threads dans toutes les éditions de Visual Studio. Ces noms sont utiles pour effectuer le suivi des threads dans le **Threads** fenêtre.
 
-Pour définir le nom d'un thread dans votre programme, utilisez la fonction `SetThreadName`, comme le montre l'exemple de code suivant. Notez que le nom de thread est copié vers le thread de sorte que la mémoire du paramètre `threadName` puisse être libérée.  
+Pour définir le nom d'un thread dans votre programme, utilisez la fonction `SetThreadName` , comme le montre l'exemple de code suivant. Notez que le nom de thread est copié vers le thread de sorte que la mémoire du paramètre `threadName` puisse être libérée.  
   
-## Exemple  
+## <a name="example"></a>Exemple  
   
-```cpp  
+```C++  
 //  
 // Usage: SetThreadName ((DWORD)-1, "MainThread");  
 //  
@@ -66,7 +69,7 @@ void SetThreadName(DWORD dwThreadID, const char* threadName) {
   
 ```  
   
-## Voir aussi  
- [Déboguer les applications multithread](../debugger/debug-multithreaded-applications-in-visual-studio.md)   
+## <a name="see-also"></a>Voir aussi  
+ [Débogage d’Applications multithread](../debugger/debug-multithreaded-applications-in-visual-studio.md)   
  [Affichage des données dans le débogueur](../debugger/viewing-data-in-the-debugger.md)   
- [Comment : définir un nom de thread dans le code managé](../debugger/how-to-set-a-thread-name-in-managed-code.md)
+ [Guide pratique pour définir un nom de thread dans le code managé](../debugger/how-to-set-a-thread-name-in-managed-code.md)

@@ -1,67 +1,69 @@
 ---
-title: "setFullYear, m&#233;thode (Date) (JavaScript) | Microsoft Docs"
-ms.custom: ""
-ms.date: "01/18/2017"
-ms.prod: "windows-client-threshold"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "devlang-javascript"
-ms.tgt_pltfrm: ""
-ms.topic: "language-reference"
-f1_keywords: 
-  - "setFullYear"
-dev_langs: 
-  - "JavaScript"
-  - "TypeScript"
-  - "DHTML"
-helpviewer_keywords: 
-  - "Year (méthode)"
-  - "setFullYear (méthode)"
-  - "dates, définition"
+title: "setFullYear, méthode (Date) (JavaScript) | Documents Microsoft"
+ms.custom: 
+ms.date: 01/18/2017
+ms.prod: windows-client-threshold
+ms.reviewer: 
+ms.suite: 
+ms.technology: devlang-javascript
+ms.tgt_pltfrm: 
+ms.topic: language-reference
+f1_keywords: setFullYear
+dev_langs:
+- JavaScript
+- TypeScript
+- DHTML
+helpviewer_keywords:
+- Year method
+- setFullYear method
+- dates, setting
 ms.assetid: 635e4f5a-0210-4c01-8152-b0da4146f6ff
-caps.latest.revision: 16
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 16
+caps.latest.revision: "16"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: 1e5e20a8486d1aefeab9b244c5f1e9d1b1e60c3f
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.translationtype: MT
+ms.contentlocale: fr-FR
+ms.lasthandoff: 10/27/2017
 ---
-# setFullYear, m&#233;thode (Date) (JavaScript)
-Définit l'année de l'objet d' `Date` en heure locale.  
+# <a name="setfullyear-method-date-javascript"></a>setFullYear, méthode (Date) (JavaScript)
+Définit l’année de la `Date` en heure locale de l’objet.  
   
-## Syntaxe  
+## <a name="syntax"></a>Syntaxe  
   
 ```  
   
 dateObj.setFullYear(numYear[, numMonth[, numDate]])   
 ```  
   
-## Paramètres  
+## <a name="parameters"></a>Paramètres  
  `dateObj`  
- Obligatoire.  Tout objet `Date`.  
+ Obligatoire. Tout objet `Date`.  
   
  `numYear`  
- Obligatoire.  Une valeur numérique pendant l'année.  
+ Obligatoire. Une valeur numérique pour l’année.  
   
  `numMonth`  
- Facultatif.  Une valeur numérique de base zéro du mois \(0 à janvier 11, pour décembre\).  Doit être spécifié si `numDate` est spécifié.  
+ Facultatif. Une valeur numérique base zéro pour le mois (0, 11 janvier décembre). Doit être spécifié si `numDate` est spécifié.  
   
  `numDate`  
- Facultatif.  Une valeur numérique égale pour le jour du mois.  
+ Facultatif. Valeur numérique égale pour le jour du mois.  
   
-## Notes  
- Toutes les méthodes **set** acceptant des arguments facultatifs utilisent la valeur retournée par les méthodes **get** correspondantes lorsqu'un argument facultatif n'est pas spécifié.  Par exemple, si l'argument d' `numMonth` est facultative, mais pas spécifié, utilise d' [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] que la valeur a retournées par la méthode de **getMonth** .  
+## <a name="remarks"></a>Remarques  
+ Tous les **définir** méthodes acceptant des arguments facultatifs utilisent la valeur retournée par correspondant **obtenir** méthodes, si vous ne spécifiez pas l’argument facultatif. Par exemple, si le `numMonth` argument est facultatif n’est pas spécifié, [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] utilise la valeur retournée par la **getMonth** (méthode).  
   
- En outre, si la valeur d'un argument est supérieure à sa plage de calendrier ou est négative, les roulettes de date effectuent le suivi ou arrière selon le cas.  
+ En outre, si la valeur d’un argument est supérieure à sa plage de calendrier ou est un nombre négative, la date restaure avancer ou reculer comme il convient.  
   
- Pour définir l'année avec le temps UTC \(UTC\), utilisez la méthode d' `setUTCFullYear` .  
+ Pour définir l’année à l’aide de temps universel coordonné (UTC), utilisez le `setUTCFullYear` (méthode).  
   
- La plage des années charge dans l'objet de date est d'environ 285.616 ans avant et après 1970.  
+ La plage d’années pris en charge dans l’objet date est environ 285 années avant et après 1970.  
   
-## Exemple  
- L'exemple ci\-dessous illustre l'utilisation de la méthode `setFullYear` :  
+## <a name="example"></a>Exemple  
+ L’exemple suivant illustre l’utilisation de la `setFullYear` méthode :  
   
-```javascript  
+```JavaScript  
 var date1 = new Date("1/1/2001");  
 date1.setFullYear(2007);  
   
@@ -75,15 +77,14 @@ document.write (date2.toLocaleString());
 // Output:  
 // Monday, January 01, 2007 12:00:00 AM  
 // Monday, November 03, 2008 12:00:00 AM  
-  
 ```  
   
-## Configuration requise  
+## <a name="requirements"></a>Spécifications  
  [!INCLUDE[jsv3](../../javascript/reference/includes/jsv3-md.md)]  
   
- **Applies To**: [Date, objet](../../javascript/reference/date-object-javascript.md)  
+ **S'applique à**: [Date Object](../../javascript/reference/date-object-javascript.md)  
   
-## Voir aussi  
- [getFullYear, méthode \(Date\)](../../javascript/reference/getfullyear-method-date-javascript.md)   
- [getUTCFullYear, méthode \(Date\)](../../javascript/reference/getutcfullyear-method-date-javascript.md)   
- [setUTCFullYear, méthode \(Date\)](../../javascript/reference/setutcfullyear-method-date-javascript.md)
+## <a name="see-also"></a>Voir aussi  
+ [getFullYear, méthode (Date)](../../javascript/reference/getfullyear-method-date-javascript.md)   
+ [getUTCFullYear, méthode (Date)](../../javascript/reference/getutcfullyear-method-date-javascript.md)   
+ [Méthode setUTCFullYear (Date)](../../javascript/reference/setutcfullyear-method-date-javascript.md)

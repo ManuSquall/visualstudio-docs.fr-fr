@@ -1,46 +1,29 @@
 ---
-title: IDebugSymbolProvider::GetAddressesFromContext | Microsoft Docs
+title: IDebugSymbolProvider::GetAddressesFromContext | Documents Microsoft
 ms.custom: 
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-sdk
+ms.technology: vs-ide-sdk
 ms.tgt_pltfrm: 
 ms.topic: article
-f1_keywords:
-- IDebugSymbolProvider::GetAddressesFromContext
-helpviewer_keywords:
-- IDebugSymbolProvider::GetAddressesFromContext method
+f1_keywords: IDebugSymbolProvider::GetAddressesFromContext
+helpviewer_keywords: IDebugSymbolProvider::GetAddressesFromContext method
 ms.assetid: a3124883-a255-4543-a5ec-e1c7a97beb69
-caps.latest.revision: 11
+caps.latest.revision: "11"
+author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-translation.priority.mt:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
+ms.openlocfilehash: d2499fb1cca7dcbbf278d00c0aac205774d3cb75
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
 ms.translationtype: MT
-ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
-ms.openlocfilehash: 8801fe9d0541d0db127584d3e793e45c19eb6274
-ms.contentlocale: fr-fr
-ms.lasthandoff: 08/28/2017
-
+ms.contentlocale: fr-FR
+ms.lasthandoff: 10/31/2017
 ---
 # <a name="idebugsymbolprovidergetaddressesfromcontext"></a>IDebugSymbolProvider::GetAddressesFromContext
-This method maps a document context into an array of debug addresses.  
+Cette méthode mappe un contexte de document dans un tableau d’adresses de débogage.  
   
-## <a name="syntax"></a>Syntax  
+## <a name="syntax"></a>Syntaxe  
   
 ```cpp  
 HRESULT GetAddressesFromContext(   
@@ -60,28 +43,28 @@ int GetAddressesFromContext(
 );  
 ```  
   
-#### <a name="parameters"></a>Parameters  
+#### <a name="parameters"></a>Paramètres  
  `pDocContext`  
- [in] The document context.  
+ [in] Le contexte de document.  
   
  `fStatmentOnly`  
- [in] If TRUE, limits the debug addresses to a single statement.  
+ [in] Si la valeur est TRUE, limite les adresses de débogage à une seule instruction.  
   
  `ppEnumBegAddresses`  
- [out] Returns an enumerator for the starting debug addresses associated with this statement or line.  
+ [out] Retourne un énumérateur pour les adresses de débogage de début associée à cette instruction ou d’une ligne.  
   
  `ppEnumEndAddresses`  
- [out] Returns an [IEnumDebugAddresses](../../../extensibility/debugger/reference/ienumdebugaddresses.md) enumerator for the ending debug addresses associated with this statement or line.  
+ [out] Retourne un [IEnumDebugAddresses](../../../extensibility/debugger/reference/ienumdebugaddresses.md) énumérateur pour les adresses de débogage fin associée à cette instruction ou d’une ligne.  
   
-## <a name="return-value"></a>Return Value  
- If successful, returns `S_OK`; otherwise, returns an error code.  
+## <a name="return-value"></a>Valeur de retour  
+ En cas de réussite, retourne `S_OK`; sinon, retourne un code d’erreur.  
   
-## <a name="remarks"></a>Remarks  
- A document context typically indicates a range of source lines. This method provides the starting and ending debug addresses associated with these lines. Some languages allow statements that span multiple lines, or lines that contains more than one statement. This method provides a flag to limit the debug addresses to a single statement.  
+## <a name="remarks"></a>Remarques  
+ Un contexte de document indique généralement une plage de lignes de code source. Cette méthode fournit le début et fin des adresses de débogage associées à ces lignes. Certains langages permettent aux instructions qui s’étendent sur plusieurs lignes, ou qui contient plusieurs instructions. Cette méthode fournit un indicateur pour limiter les adresses de débogage à une seule instruction.  
   
- It is possible for a single statement to have multiple debug addresses, as in the case of templates.  
+ Il est possible qu’une seule instruction d’avoir plusieurs adresses de débogage, comme dans le cas de modèles.  
   
-## <a name="see-also"></a>See Also  
+## <a name="see-also"></a>Voir aussi  
  [IDebugSymbolProvider](../../../extensibility/debugger/reference/idebugsymbolprovider.md)   
  [GetAddressesFromPosition](../../../extensibility/debugger/reference/idebugsymbolprovider-getaddressesfromposition.md)   
  [IEnumDebugAddresses](../../../extensibility/debugger/reference/ienumdebugaddresses.md)

@@ -1,65 +1,64 @@
 ---
-title: "IDiaSymbol::get_length | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-debug"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "IDiaSymbol::get_length (méthode)"
+title: IDiaSymbol::get_length | Documents Microsoft
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-debug
+ms.tgt_pltfrm: 
+ms.topic: article
+dev_langs: C++
+helpviewer_keywords: IDiaSymbol::get_length method
 ms.assetid: cc62f028-d195-4fbf-93bc-10b08bef52d2
-caps.latest.revision: 10
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 10
+caps.latest.revision: "10"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: 94cdb52f21a5dd8a6bc41eaf21092013abffdc3e
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: fr-FR
+ms.lasthandoff: 10/31/2017
 ---
-# IDiaSymbol::get_length
-[!INCLUDE[vs2017banner](../../code-quality/includes/vs2017banner.md)]
-
-Récupère le nombre de bits ou d'octets de mémoire utilisés par l'objet représenté par ce symbole.  
+# <a name="idiasymbolgetlength"></a>IDiaSymbol::get_length
+Récupère le nombre de bits ou d’octets de mémoire utilisée par l’objet représenté par ce symbole.  
   
-## Syntaxe  
+## <a name="syntax"></a>Syntaxe  
   
-```cpp#  
-HRESULT get_length (   
-   ULONGLONG* pRetVal  
+```C++  
+HRESULT get_length (   
+   ULONGLONG* pRetVal  
 );  
 ```  
   
-#### Paramètres  
+#### <a name="parameters"></a>Paramètres  
  `pRetVal`  
- \[out\]  Retourne le nombre d'octets ou de bits de la mémoire utilisés par l'objet représenté par ce symbole.  
+ [out] Retourne le nombre d’octets ou bits de mémoire utilisée par l’objet représenté par ce symbole.  
   
-## Valeur de retour  
- En cas de réussite, retourne `S_OK`; sinon, retourne `S_FALSE` ou un code d'erreur.  
+## <a name="return-value"></a>Valeur de retour  
+ En cas de réussite, retourne `S_OK`; sinon, retourne `S_FALSE` ou un code d’erreur.  
   
 > [!NOTE]
->  Une valeur de retour d' `S_FALSE` signifie que la propriété n'est pas disponible pour le symbole.  
+>  La valeur de retour `S_FALSE` signifie que la propriété n’est pas disponible pour le symbole.  
   
-## Notes  
- si [LocationType, énumération](../../debugger/debug-interface-access/locationtype.md) du symbole est `LocIsBitField`, la longueur retournée par cette méthode est dans des bits ; sinon, la longueur est en octets pour tous les autres types d'emplacement.  
+## <a name="remarks"></a>Remarques  
+ Si le [LocationType, énumération](../../debugger/debug-interface-access/locationtype.md) du symbole est `LocIsBitField`, la longueur retournée par cette méthode est en bits ; sinon, la longueur est en octets pour tous les autres types d’emplacement.  
   
-## Exemple  
+## <a name="example"></a>Exemple  
   
-```cpp#  
+```C++  
 IDiaSymbol* pSymbol;  
 ULONGLONG   length;  
 pSymbol->get_length( &length );  
 ```  
   
-## Configuration requise  
+## <a name="requirements"></a>Spécifications  
   
 |Spécification|Description|  
-|-------------------|-----------------|  
-|en\-tête :|dia2.h|  
-|version :|diamètre Kit de développement logiciel v7.0|  
+|-----------------|-----------------|  
+|En-tête :|dia2.h|  
+|Version :|DIA SDK v7.0|  
   
-## Voir aussi  
+## <a name="see-also"></a>Voir aussi  
  [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)   
- [LocationType, énumération](../../debugger/debug-interface-access/locationtype.md)
+ [LocationType (énumération)](../../debugger/debug-interface-access/locationtype.md)

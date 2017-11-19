@@ -1,35 +1,40 @@
 ---
-title: "set, m&#233;thode (Uint8ClampedArray) | Microsoft Docs"
-ms.custom: ""
-ms.date: "01/18/2017"
-ms.prod: "windows-client-threshold"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "devlang-javascript"
-ms.tgt_pltfrm: ""
-ms.topic: "language-reference"
-dev_langs: 
-  - "JavaScript"
-  - "TypeScript"
-  - "DHTML"
+title: "Set, méthode (Uint8ClampedArray) | Documents Microsoft"
+ms.custom: 
+ms.date: 01/18/2017
+ms.prod: windows-client-threshold
+ms.reviewer: 
+ms.suite: 
+ms.technology: devlang-javascript
+ms.tgt_pltfrm: 
+ms.topic: language-reference
+dev_langs:
+- JavaScript
+- TypeScript
+- DHTML
 ms.assetid: 1298443d-5c4c-4329-9ad2-35e213dca157
-caps.latest.revision: 5
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 5
+caps.latest.revision: "5"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: ed7635559e615746c577560f1a9266b26acd959d
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.translationtype: MT
+ms.contentlocale: fr-FR
+ms.lasthandoff: 10/27/2017
 ---
-# set, m&#233;thode (Uint8ClampedArray)
+# <a name="set-method-uint8clampedarray"></a>set, méthode (Uint8ClampedArray)
 Définit une valeur ou un tableau de valeurs.  
   
-## Syntaxe  
+## <a name="syntax"></a>Syntaxe  
   
-```javascript  
-uint8ClampedArray.set(index, value); uint8ClampedArray.set(array, offset);   
+```JavaScript  
+uint8ClampedArray.set(index, value);  
+uint8ClampedArray.set(array, offset);  
+  
 ```  
   
-## Paramètres  
+## <a name="parameters"></a>Paramètres  
  `index`  
  Index de l'emplacement à définir.  
   
@@ -42,15 +47,15 @@ uint8ClampedArray.set(index, value); uint8ClampedArray.set(array, offset);
  `offset`  
  Index dans le tableau en cours au niveau duquel les valeurs doivent être écrites.  
   
-## Notes  
- Si le tableau d'entrée est un tableau typé, les deux tableaux peuvent utiliser le même [ArrayBuffer](../../javascript/reference/arraybuffer-object.md) sous\-jacent.  Dans cette situation, les valeurs sont définies comme si toutes les données étaient d'abord copiées dans une mémoire tampon temporaire qui ne chevauche pas les tableaux, puis les données de la mémoire tampon temporaire étaient copiées dans le tableau actif.  
+## <a name="remarks"></a>Remarques  
+ Si le tableau d’entrée est un tableau typé, les deux tableaux peuvent utiliser le même sous-jacent [ArrayBuffer](../../javascript/reference/arraybuffer-object.md). Dans cette situation, les valeurs sont définies comme si toutes les données étaient d'abord copiées dans une mémoire tampon temporaire qui ne chevauche pas les tableaux, puis les données de la mémoire tampon temporaire étaient copiées dans le tableau actif.  
   
  Si le décalage plus la longueur du tableau donné sont en dehors des limites du tableau typé actif, une exception est levée.  
   
-## Exemple  
+## <a name="example"></a>Exemple  
  L'exemple suivant montre comment définir le premier élément du tableau.  
   
-```javascript  
+```JavaScript  
 var req = new XMLHttpRequest();  
     req.open('GET', "http://www.example.com");  
     req.responseType = "arraybuffer";  
@@ -67,9 +72,9 @@ var req = new XMLHttpRequest();
   
 ```  
   
-## Configuration requise  
+## <a name="requirements"></a>Spécifications  
  [!INCLUDE[jsv11_winonly](../../javascript/reference/includes/jsv11-winonly-md.md)]  
   
-## Voir aussi  
- [ArrayBuffer, objet](../../javascript/reference/arraybuffer-object.md)   
- [Uint8ClampedArray, objet](../../javascript/reference/uint8clampedarray-object-javascript.md)
+## <a name="see-also"></a>Voir aussi  
+ [Objet ArrayBuffer](../../javascript/reference/arraybuffer-object.md)   
+ [Objet Uint8ClampedArray](../../javascript/reference/uint8clampedarray-object-javascript.md)

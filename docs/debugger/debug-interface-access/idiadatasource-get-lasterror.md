@@ -1,50 +1,49 @@
 ---
-title: "IDiaDataSource::get_lastError | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-debug"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "IDiaDataSource::get_lastError (méthode)"
+title: IDiaDataSource::get_lastError | Documents Microsoft
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-debug
+ms.tgt_pltfrm: 
+ms.topic: article
+dev_langs: C++
+helpviewer_keywords: IDiaDataSource::get_lastError method
 ms.assetid: cf08850b-8b75-4e8c-90bd-bd0214756f99
-caps.latest.revision: 8
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 8
+caps.latest.revision: "8"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: 349477bed67450e897ec60a00635fb65442eb1ba
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: fr-FR
+ms.lasthandoff: 10/31/2017
 ---
-# IDiaDataSource::get_lastError
-[!INCLUDE[vs2017banner](../../code-quality/includes/vs2017banner.md)]
-
-Extrait le nom de fichier de la dernière erreur de chargement.  
+# <a name="idiadatasourcegetlasterror"></a>IDiaDataSource::get_lastError
+Récupère le nom de fichier pour la dernière erreur de chargement.  
   
-## Syntaxe  
+## <a name="syntax"></a>Syntaxe  
   
-```cpp#  
+```C++  
 HRESULT get_lastError (  
-   BSTR* pRetVal  
+   BSTR* pRetVal  
 );  
 ```  
   
-#### Paramètres  
+#### <a name="parameters"></a>Paramètres  
  pRetVal  
- \[out\]  Retourne une chaîne contenant le nom de fichier .pdb associé à la dernière erreur de chargement.  
+ [out] Retourne une chaîne qui contient le nom du fichier .pdb associé à la dernière erreur de chargement.  
   
-## Valeur de retour  
- Retourne le dernier code d'erreur provoquée par une opération de chargement.  Retourne `E_INVALIDARG` si le paramètre d' `pRetVal` est `NULL`.  
+## <a name="return-value"></a>Valeur de retour  
+ Retourne le dernier code d’erreur provoqué par une opération de chargement. Retourne `E_INVALIDARG` si le `pRetVal` paramètre est `NULL`.  
   
-## Exemple  
+## <a name="example"></a>Exemple  
   
-```cpp#  
+```C++  
 BSTR    fileName;  
 HRESULT errorCode = pSource->get_lastError( &fileName );  
 ```  
   
-## Voir aussi  
+## <a name="see-also"></a>Voir aussi  
  [IDiaDataSource](../../debugger/debug-interface-access/idiadatasource.md)

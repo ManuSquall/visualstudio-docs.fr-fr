@@ -1,56 +1,57 @@
 ---
-title: "substr, m&#233;thode (String) (JavaScript) | Microsoft Docs"
-ms.custom: ""
-ms.date: "01/18/2017"
-ms.prod: "windows-client-threshold"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "devlang-javascript"
-ms.tgt_pltfrm: ""
-ms.topic: "language-reference"
-f1_keywords: 
-  - "substr"
-dev_langs: 
-  - "JavaScript"
-  - "TypeScript"
-  - "DHTML"
-helpviewer_keywords: 
-  - "substr (méthode)"
+title: "SUBSTR, méthode (String) (JavaScript) | Documents Microsoft"
+ms.custom: 
+ms.date: 01/18/2017
+ms.prod: windows-client-threshold
+ms.reviewer: 
+ms.suite: 
+ms.technology: devlang-javascript
+ms.tgt_pltfrm: 
+ms.topic: language-reference
+f1_keywords: substr
+dev_langs:
+- JavaScript
+- TypeScript
+- DHTML
+helpviewer_keywords: substr method
 ms.assetid: f12541c1-2623-482e-941d-2e22bc3c4a4a
-caps.latest.revision: 15
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 15
+caps.latest.revision: "15"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: 6b002bfefbeb81c534c882fa4a4720c93ccca185
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.translationtype: MT
+ms.contentlocale: fr-FR
+ms.lasthandoff: 10/27/2017
 ---
-# substr, m&#233;thode (String) (JavaScript)
-Obtient une sous\-chaîne débutant à la position spécifiée et ayant la longueur déterminée.  
+# <a name="substr-method-string-javascript"></a>substr, méthode (String) (JavaScript)
+Obtient une sous-chaîne commençant à l’emplacement spécifié et dont la longueur spécifiée.  
   
-## Syntaxe  
+## <a name="syntax"></a>Syntaxe  
   
 ```  
   
 stringvar.substr(start [, length ])   
 ```  
   
-## Paramètres  
+## <a name="parameters"></a>Paramètres  
  `stringvar`  
- Obligatoire.  Littéral de chaîne ou objet `String` dont la sous\-chaîne est récupérée.  
+ Obligatoire. Un littéral de chaîne ou `String` à partir de laquelle la sous-chaîne est extraite de l’objet.  
   
  `start`  
- Obligatoire.  Position de début de la sous\-chaîne désirée.  L'index du premier caractère de la chaîne est zéro.  
+ Obligatoire. Position de départ de la sous-chaîne souhaitée. L’index du premier caractère dans la chaîne est égale à zéro.  
   
  `length`  
- Facultatif.  Nombre de caractères à inclure dans la sous\-chaîne retournée.  
+ Facultatif. Le nombre de caractères à inclure dans la sous-chaîne retournée.  
   
-## Notes  
- Si la valeur `length` est nulle ou négative, une chaîne vide est retournée.  Si elle n'est pas spécifiée, la sous\-chaîne continue jusqu'à la fin de `stringvar`.  
+## <a name="remarks"></a>Remarques  
+ Si `length` est égal à zéro ou négative, une chaîne vide est retournée. Si non spécifié, la sous-chaîne continue jusqu'à la fin de `stringvar`.  
   
-## Exemple  
+## <a name="example"></a>Exemple  
  L'exemple suivant illustre l'utilisation de la méthode `substr`.  
   
-```javascript  
+```JavaScript  
 var s = "The quick brown fox jumps over the lazy dog.";  
 var ss = s.substr(10, 5);    
 document.write("[" + ss + "] <br>");  
@@ -67,10 +68,10 @@ document.write("[" + ss + "] <br>");
 // []  
 ```  
   
-## Configuration requise  
+## <a name="requirements"></a>Spécifications  
  [!INCLUDE[jsv3](../../javascript/reference/includes/jsv3-md.md)]  
   
- **S'applique à** : [String, objet](../../javascript/reference/string-object-javascript.md)  
+ **S’applique aux**: [objet chaîne](../../javascript/reference/string-object-javascript.md)  
   
-## Voir aussi  
- [substring, méthode \(String\)](../../javascript/reference/substring-method-string-javascript.md)
+## <a name="see-also"></a>Voir aussi  
+ [Méthode substring (String)](../../javascript/reference/substring-method-string-javascript.md)

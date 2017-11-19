@@ -1,44 +1,43 @@
 ---
-title: "IDiaEnumSegments::get_Count | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-debug"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "IDiaEnumSegments::get_Count (méthode)"
+title: IDiaEnumSegments::get_Count | Documents Microsoft
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-debug
+ms.tgt_pltfrm: 
+ms.topic: article
+dev_langs: C++
+helpviewer_keywords: IDiaEnumSegments::get_Count method
 ms.assetid: c62a0fda-17b8-4cf6-b321-6014ce581096
-caps.latest.revision: 7
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 7
+caps.latest.revision: "7"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: 235635178b42577da8d0051eb6efb6094830d7f9
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: fr-FR
+ms.lasthandoff: 10/31/2017
 ---
-# IDiaEnumSegments::get_Count
-[!INCLUDE[vs2017banner](../../code-quality/includes/vs2017banner.md)]
-
+# <a name="idiaenumsegmentsgetcount"></a>IDiaEnumSegments::get_Count
 Récupère le nombre de segments.  
   
-## Syntaxe  
+## <a name="syntax"></a>Syntaxe  
   
-```cpp#  
-HRESULT get_Count (   
-   LONG* pRetVal  
+```C++  
+HRESULT get_Count (   
+   LONG* pRetVal  
 );  
 ```  
   
-#### Paramètres  
+#### <a name="parameters"></a>Paramètres  
  pRetVal  
- \[out, retval\]  Retourne le nombre de segments.  
+ [out, retval] Retourne le nombre de segments.  
   
-## Valeur de retour  
- En cas de réussite, retourne `S_OK`; sinon, retourne un code d'erreur.  
+## <a name="return-value"></a>Valeur de retour  
+ En cas de réussite, retourne `S_OK`; sinon, retourne un code d’erreur.  
   
-## Voir aussi  
+## <a name="see-also"></a>Voir aussi  
  [IDiaEnumSegments](../../debugger/debug-interface-access/idiaenumsegments.md)   
- [IDiaEnumSegments::Item](../Topic/IDiaEnumSegments::Item.md)
+ [IDiaEnumSegments::Item](../../debugger/debug-interface-access/idiaenumsegments-item.md)

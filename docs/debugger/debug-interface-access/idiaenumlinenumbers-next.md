@@ -1,53 +1,52 @@
 ---
-title: "IDiaEnumLineNumbers::Next | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-debug"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "IDiaEnumLineNumbers::Next (méthode)"
+title: IDiaEnumLineNumbers::Next | Documents Microsoft
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-debug
+ms.tgt_pltfrm: 
+ms.topic: article
+dev_langs: C++
+helpviewer_keywords: IDiaEnumLineNumbers::Next method
 ms.assetid: 363d5b40-1316-4ab8-836f-63637f619e0a
-caps.latest.revision: 7
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 7
+caps.latest.revision: "7"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: 627a6e2dd0e319cbcdccfa5824d9c379faa0d049
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: fr-FR
+ms.lasthandoff: 10/31/2017
 ---
-# IDiaEnumLineNumbers::Next
-[!INCLUDE[vs2017banner](../../code-quality/includes/vs2017banner.md)]
-
-Récupère un nombre spécifié de numéros de ligne dans la séquence d'énumération.  
+# <a name="idiaenumlinenumbersnext"></a>IDiaEnumLineNumbers::Next
+Récupère un nombre spécifié de numéros de ligne dans la séquence d’énumération.  
   
-## Syntaxe  
+## <a name="syntax"></a>Syntaxe  
   
-```cpp#  
-HRESULT Next (   
-   ULONG            celt,  
-   IDiaLineNumber** rgelt,  
-   ULONG*           pceltFetched  
+```C++  
+HRESULT Next (   
+   ULONG            celt,  
+   IDiaLineNumber** rgelt,  
+   ULONG*           pceltFetched  
 );  
 ```  
   
-#### Paramètres  
+#### <a name="parameters"></a>Paramètres  
  celt  
- \[in\]  Le nombre de numéros de ligne dans l'énumérateur à récupérer.  
+ [in] Le nombre de numéros de ligne dans l’énumérateur doit être récupéré.  
   
  rgelt  
- \[out\]  Retourne un tableau d'objets d' [IDiaLineNumber](../../debugger/debug-interface-access/idialinenumber.md) qui représentent les numéros de ligne souhaités.  
+ [out] Retourne un tableau de [IDiaLineNumber](../../debugger/debug-interface-access/idialinenumber.md) les objets qui représentent les numéros de ligne de votre choix.  
   
  pceltFetched  
- \[out\]  Retourne le nombre de numéros de ligne dans l'énumérateur extrait.  
+ [out] Retourne le nombre de numéros de ligne dans l’énumérateur d’extraction.  
   
-## Valeur de retour  
- En cas de réussite, retourne `S_OK`.  Retourne `S_FALSE` s'il n'y a plus de numéros de ligne.  Sinon, retourne un code d'erreur.  
+## <a name="return-value"></a>Valeur de retour  
+ En cas de réussite, retourne `S_OK`. Retourne `S_FALSE` s’il n’y aucun numéro de ligne plus. Sinon, retourne un code d'erreur.  
   
-## Voir aussi  
+## <a name="see-also"></a>Voir aussi  
  [IDiaEnumLineNumbers](../../debugger/debug-interface-access/idiaenumlinenumbers.md)   
  [IDiaLineNumber](../../debugger/debug-interface-access/idialinenumber.md)   
  [IDiaSession::findLinesByLinenum](../../debugger/debug-interface-access/idiasession-findlinesbylinenum.md)

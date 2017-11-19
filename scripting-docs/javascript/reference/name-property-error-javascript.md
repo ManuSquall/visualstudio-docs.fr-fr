@@ -1,34 +1,36 @@
 ---
-title: "name, propri&#233;t&#233; (Error) (JavaScript) | Microsoft Docs"
-ms.custom: ""
-ms.date: "01/18/2017"
-ms.prod: "windows-client-threshold"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "devlang-javascript"
-ms.tgt_pltfrm: ""
-ms.topic: "language-reference"
-f1_keywords: 
-  - "name"
-dev_langs: 
-  - "JavaScript"
-  - "TypeScript"
-  - "DHTML"
-helpviewer_keywords: 
-  - "Nom de la propriété"
-  - "name (propriété), nom de l'erreur"
+title: "Name, propriété (Error) (JavaScript) | Documents Microsoft"
+ms.custom: 
+ms.date: 01/18/2017
+ms.prod: windows-client-threshold
+ms.reviewer: 
+ms.suite: 
+ms.technology: devlang-javascript
+ms.tgt_pltfrm: 
+ms.topic: language-reference
+f1_keywords: name
+dev_langs:
+- JavaScript
+- TypeScript
+- DHTML
+helpviewer_keywords:
+- Name property
+- name property, error name
 ms.assetid: 94df2d6b-f1a1-4931-a956-0a930cb87f76
-caps.latest.revision: 15
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 15
+caps.latest.revision: "15"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: 1a12157b4c467499fab23f7c4cb1be91e9ac5440
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.translationtype: MT
+ms.contentlocale: fr-FR
+ms.lasthandoff: 10/27/2017
 ---
-# name, propri&#233;t&#233; (Error) (JavaScript)
-Retourne le nom d'une erreur.  
+# <a name="name-property-error-javascript"></a>name, propriété (Error) (JavaScript)
+Retourne le nom d’une erreur.  
   
-## Syntaxe  
+## <a name="syntax"></a>Syntaxe  
   
 ```  
   
@@ -37,27 +39,27 @@ name
   
 ```  
   
-## Paramètres  
+## <a name="parameters"></a>Paramètres  
  `errorObj`  
- Obligatoire.  Instance d'un objet `Error`.  
+ Obligatoire. Instance de `Error` objet.  
   
-## Notes  
- La propriété **name** retourne le nom ou le type d'exception d'une erreur.  Lorsqu'une erreur d'exécution se produit, la propriété name se voit attribuer l'un des types d'exceptions natives suivants :  
+## <a name="remarks"></a>Remarques  
+ Le **nom** propriété retourne le type de nom ou une exception d’une erreur. Lorsqu’une erreur d’exécution se produit, la propriété name est définie à un des types d’exception native suivants :  
   
 |Type d'exception|Signification|  
-|----------------------|-------------------|  
-|ConversionError|Cette erreur se produit à chaque tentative de conversion d'un objet en un élément dans lequel il ne peut être converti.|  
-|RangeError|Cette erreur se produit lorsqu'une fonction est spécifiée avec un argument qui dépasse sa plage autorisée.  Elle se produit, par exemple, si vous tentez de construire un objet `Array` avec une longueur définie par une valeur autre qu'un entier positif.|  
-|ReferenceError|Cette erreur se produit lorsqu'une référence non valide est détectée.  Elle se produit, par exemple, lorsque la référence attendue a la valeur `null`.|  
-|RegExpError|Cette erreur se produit en présence d'une erreur de compilation avec une expression régulière.  Cependant, une fois que l'expression régulière est compilée, l'erreur ne peut plus se produire.  C'est le cas, par exemple, lorsqu'une expression régulière est déclarée avec un modèle comportant une syntaxe non valide, ou avec des indicateurs autres que **i**, **g** ou **m**, ou si le même indicateur est défini plusieurs fois.|  
-|SyntaxError|Cette erreur se produit lorsque le texte source est analysé et que sa syntaxe est incorrecte.  C'est le cas, par exemple, si la fonction `eval` est appelée à l'aide d'un argument de programmation non valide.|  
-|TypeError|Cette erreur se produit lorsque le type réel d'opérande ne correspond pas au type attendu.  C'est le cas, par exemple, lors d'un appel de fonction effectué sur un élément qui n'est pas un objet ou qui ne prend pas en charge l'appel.|  
-|URIError|Cette erreur se produit lorsqu'un URI non conforme est détecté.  Elle se produit, par exemple, lorsqu'un caractère non conforme est trouvé dans une chaîne en cours d'encodage ou de décodage.|  
+|--------------------|-------------|  
+|ConversionError|Cette erreur se produit chaque fois qu’une tentative de convertir un objet en quelque chose à laquelle il ne peut pas être converti.|  
+|RangeError|Cette erreur se produit lorsqu’une fonction est fournie avec un argument qui a dépassé la plage autorisée. Par exemple, cette erreur se produit si vous tentez de construire un `Array` objet dont la longueur n’est pas un entier positif valide.|  
+|ReferenceError|Cette erreur se produit lorsqu’une référence non valide a été détectée. Cette erreur se produit, par exemple, si une référence attendue est `null`.|  
+|RegExpError|Cette erreur se produit lorsqu’une erreur de compilation se produit dans une expression régulière. Une fois que l’expression régulière est compilée, toutefois, cette erreur ne peut pas se produire. Cet exemple se produit, par exemple, lorsqu’une expression régulière est déclarée avec un modèle qui a une syntaxe non valide, des indicateurs autre que **i**, **g**, ou **m**, ou si elle contient le même indicateur plusieurs fois.|  
+|SyntaxError|Cette erreur se produit lorsque le texte source est analysé et le texte source qui ne respecte pas la syntaxe correcte. Cette erreur se produit, par exemple, si la `eval` est appelée avec un argument qui n’est pas du texte de programme valide.|  
+|TypeError|Cette erreur se produit chaque fois que le type réel d’un opérande ne correspond pas au type attendu. Un exemple de lorsque cette erreur se produit est un appel de fonction sur un élément qui n’est pas un objet ou ne prend pas en charge l’appel.|  
+|URIError|Cette erreur se produit lorsqu’un non conforme URI Uniform Resource Indicator () est détecté. Par exemple, il s’agit d’erreur se produit quand un caractère non conforme est trouvé dans une chaîne en cours à encoder ou à décoder.|  
   
-## Exemple  
- L'exemple suivant provoque la levée d'une exception TypeError et l'affichage du message d'erreur et le nom de celle\-ci.  
+## <a name="example"></a>Exemple  
+ L’exemple suivant provoque la levée d’une exception TypeError et affiche le nom de l’erreur et son message.  
   
-```javascript  
+```JavaScript  
 try  
 {  
     var x = y;  
@@ -73,21 +75,21 @@ catch(e)
 }  
 ```  
   
-## Exemple  
- Le résultat généré par ce code est le suivant.  
+## <a name="example"></a>Exemple  
+ La sortie de ce code est comme suit.  
   
-```javascript  
+```JavaScript  
 Error Message: 'y' is undefined  
 Error Code: 5009  
 Error Name: TypeError  
 ```  
   
-## Configuration requise  
+## <a name="requirements"></a>Spécifications  
  [!INCLUDE[jsv55](../../javascript/reference/includes/jsv55-md.md)]  
   
- **S'applique à** : [Error, objet](../../javascript/reference/error-object-javascript.md)  
+ **S’applique aux**: [objet Error](../../javascript/reference/error-object-javascript.md)  
   
-## Voir aussi  
- [description, propriété \(Error\)](../../javascript/reference/description-property-error-javascript.md)   
- [message, propriété \(Error\)](../../javascript/reference/message-property-error-javascript.md)   
- [number, propriété \(Error\)](../../javascript/reference/number-property-error-javascript.md)
+## <a name="see-also"></a>Voir aussi  
+ [Description, propriété (Error)](../../javascript/reference/description-property-error-javascript.md)   
+ [message, propriété (Error)](../../javascript/reference/message-property-error-javascript.md)   
+ [Propriété number (Error)](../../javascript/reference/number-property-error-javascript.md)

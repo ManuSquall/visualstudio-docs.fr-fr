@@ -1,62 +1,65 @@
 ---
-title: "lastIndexOf, m&#233;thode (Array) (JavaScript) | Microsoft Docs"
-ms.custom: ""
-ms.date: "01/18/2017"
-ms.prod: "windows-client-threshold"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "devlang-javascript"
-ms.tgt_pltfrm: ""
-ms.topic: "language-reference"
-dev_langs: 
-  - "JavaScript"
-  - "TypeScript"
-  - "DHTML"
-helpviewer_keywords: 
-  - "tableaux (JavaScript), lastIndexOf (méthode)"
-  - "lastIndexOf (méthode) (JavaScript)"
+title: "lastIndexOf, méthode (Array) (JavaScript) | Documents Microsoft"
+ms.custom: 
+ms.date: 01/18/2017
+ms.prod: windows-client-threshold
+ms.reviewer: 
+ms.suite: 
+ms.technology: devlang-javascript
+ms.tgt_pltfrm: 
+ms.topic: language-reference
+dev_langs:
+- JavaScript
+- TypeScript
+- DHTML
+helpviewer_keywords:
+- arrays [JavaScript], lastIndexOf method
+- lastIndexOf method [JavaScript]
 ms.assetid: 04f5145d-007e-498f-b06f-11ab384c2968
-caps.latest.revision: 10
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 10
+caps.latest.revision: "10"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: 12d2a0fca7a7cd82543a83ea19aca49d3cbb93b6
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.translationtype: MT
+ms.contentlocale: fr-FR
+ms.lasthandoff: 10/27/2017
 ---
-# lastIndexOf, m&#233;thode (Array) (JavaScript)
+# <a name="lastindexof-method-array-javascript"></a>lastIndexOf, méthode (Array) (JavaScript)
 Retourne l'index de la dernière occurrence d'une valeur spécifiée dans un tableau.  
   
-## Syntaxe  
+## <a name="syntax"></a>Syntaxe  
   
 ```  
   
 array1.lastIndexOf(searchElement[, fromIndex])  
 ```  
   
-#### Paramètres  
+#### <a name="parameters"></a>Paramètres  
   
 |Paramètre|Définition|  
 |---------------|----------------|  
-|`array1`|Obligatoire.  Objet tableau à rechercher.|  
-|`searchElement`|Obligatoire.  Valeur à trouver dans `array1`.|  
-|`fromIndex`|Facultatif.  Index de tableau au niveau duquel commencer la recherche.  Si `fromIndex` est omis, la recherche démarre au niveau du dernier index du tableau.|  
+|`array1`|Obligatoire. L’objet tableau à rechercher.|  
+|`searchElement`|Obligatoire. La valeur à rechercher dans `array1`.|  
+|`fromIndex`|Facultatif. L’index de tableau à partir duquel commencer la recherche. Si `fromIndex` est omis, la recherche commence au dernier index dans le tableau.|  
   
-## Valeur de retour  
- Index de la dernière occurrence de `searchElement` dans le tableau, ou \-1 si `searchElement` est introuvable.  
+## <a name="return-value"></a>Valeur de retour  
+ L’index de la dernière occurrence de `searchElement` dans le tableau, ou -1 si `searchElement` est introuvable.  
   
-## Notes  
- La méthode `lastIndexOf` recherche une valeur spécifiée dans un tableau.  La méthode retourne l'index de la première occurrence, ou \-1 si la valeur spécifiée est introuvable.  
+## <a name="remarks"></a>Remarques  
+ Le `lastIndexOf` méthode recherche dans un tableau une valeur spécifiée. La méthode retourne l’index de la première occurrence, ou -1 si la valeur spécifiée est introuvable.  
   
- La recherche est effectuée dans l'ordre d'indexation décroissant \(en commençant par le dernier membre\).  Pour effectuer la recherche dans l'ordre croissant, utilisez [indexOf, méthode \(Array\)](../../javascript/reference/indexof-method-array-javascript.md).  
+ La recherche s’effectue dans l’ordre d’index décroissant (le dernier membre tout d’abord). Pour rechercher dans l’ordre croissant, utilisez le [IndexOf, méthode (Array)](../../javascript/reference/indexof-method-array-javascript.md).  
   
- Les éléments du tableau sont comparés à la valeur `searchElement` pour déterminer leur égalité stricte, tout comme la comparaison effectuée par l'opérateur `===`.  Pour plus d'informations, consultez [Opérateurs de comparaison](../../javascript/reference/comparison-operators-javascript.md).  
+ Les éléments du tableau sont comparées à la `searchElement` valeur d’identité, similaire à la comparaison effectuée par le `===` opérateur. Pour plus d’informations, consultez [opérateurs de comparaison](../../javascript/reference/comparison-operators-javascript.md).  
   
- L'argument `fromIndex` facultatif spécifie l'index du tableau au niveau duquel commencer la recherche.  Si `fromIndex` est supérieur ou égal à la longueur du tableau, la recherche porte sur l'intégralité du tableau.  Si `fromIndex` est négatif, la recherche commence à la longueur du tableau plus `fromIndex`.  Si l'index calculé est inférieur à 0, \-1 est retourné.  
+ Le paramètre facultatif `fromIndex` argument spécifie l’index de tableau à partir duquel commencer la recherche. Si `fromIndex` est supérieur ou égal à la longueur du tableau, la totalité du tableau est recherché. Si `fromIndex` est négatif, la recherche commence à la longueur du tableau plue `fromIndex`. Si l’index calculée est inférieur à 0, -1 est retourné.  
   
-## Exemple  
- Les exemples suivants illustrent l'utilisation de la méthode `lastIndexOf`.  
+## <a name="example"></a>Exemple  
+ Les exemples suivants illustrent l’utilisation de la `lastIndexOf` (méthode).  
   
-```javascript  
+```JavaScript  
 // Create an array.  
 var ar = ["ab", "cd", "ef", "ab", "cd"];  
   
@@ -83,10 +86,10 @@ document.write(ar.lastIndexOf("ab", -3) + "<br/>");
   
 ```  
   
-## Configuration requise  
+## <a name="requirements"></a>Spécifications  
  [!INCLUDE[jsv9](../../javascript/includes/jsv9-md.md)]  
   
-## Voir aussi  
- [indexOf, méthode \(Array\)](../../javascript/reference/indexof-method-array-javascript.md)   
+## <a name="see-also"></a>Voir aussi  
+ [Méthode indexOf (tableau)](../../javascript/reference/indexof-method-array-javascript.md)   
  [Objet Array](../../javascript/reference/array-object-javascript.md)   
- [Utilisation de tableaux](../../javascript/advanced/using-arrays-javascript.md)
+ [Utilisation des tableaux](../../javascript/advanced/using-arrays-javascript.md)
