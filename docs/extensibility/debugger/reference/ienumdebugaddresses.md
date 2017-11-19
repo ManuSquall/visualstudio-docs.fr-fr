@@ -1,63 +1,63 @@
 ---
-title: "IEnumDebugAddresses | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "IEnumDebugAddresses"
-helpviewer_keywords: 
-  - "Interface de IEnumDebugAddresses"
+title: IEnumDebugAddresses | Documents Microsoft
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords: IEnumDebugAddresses
+helpviewer_keywords: IEnumDebugAddresses interface
 ms.assetid: 5f6f6751-e6d8-4c5a-8e81-414b6e5d8cc5
-caps.latest.revision: 6
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 6
+caps.latest.revision: "6"
+author: gregvanl
+ms.author: gregvanl
+manager: ghogen
+ms.openlocfilehash: db531c35ea3bbb6176095f19897404d192096e22
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: fr-FR
+ms.lasthandoff: 10/31/2017
 ---
-# IEnumDebugAddresses
-[!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]
-
-cette interface représente une collection d'objets implémentant l'interface d' [IDebugAddress](../../../extensibility/debugger/reference/idebugaddress.md) .  
+# <a name="ienumdebugaddresses"></a>IEnumDebugAddresses
+Cette interface représente une collection d’objets implémentant le [IDebugAddress](../../../extensibility/debugger/reference/idebugaddress.md) interface.  
   
-## Syntaxe  
+## <a name="syntax"></a>Syntaxe  
   
 ```  
 IEnumDebugAdresses : IUnknown  
 ```  
   
-## Remarques à l'intention des implémenteurs  
- cette interface est implémentée par le fournisseur de symbole pour fournir des ensembles d'objets qui implémentent l'interface d' [IDebugAddress](../../../extensibility/debugger/reference/idebugaddress.md) .  Notez que ce n'est pas une énumération standard COM en raison de la présence de la méthode d' [GetCount](../Topic/IEnumDebugAddresses::GetCount.md) .  
+## <a name="notes-for-implementers"></a>Notes pour les implémenteurs  
+ Cette interface est implémentée par le fournisseur de symbole pour fournir des ensembles d’objets qui implémentent la [IDebugAddress](../../../extensibility/debugger/reference/idebugaddress.md) interface. Notez qu’il ne s’agit pas d’une énumération COM standard en raison de la présence de la [GetCount](../../../extensibility/debugger/reference/ienumdebugaddresses-getcount.md) (méthode).  
   
-## Remarques pour les appelants  
- cette interface est retournée par [GetAddressesFromContext](../../../extensibility/debugger/reference/idebugsymbolprovider-getaddressesfromcontext.md) et [GetAddressesFromPosition](../Topic/IDebugSymbolProvider::GetAddressesFromPosition.md).  
+## <a name="notes-for-callers"></a>Remarques pour les appelants  
+ Cette interface est retournée par [GetAddressesFromContext](../../../extensibility/debugger/reference/idebugsymbolprovider-getaddressesfromcontext.md) et [GetAddressesFromPosition](../../../extensibility/debugger/reference/idebugsymbolprovider-getaddressesfromposition.md).  
   
-## méthodes en commande de Vtable  
+## <a name="methods-in-vtable-order"></a>Méthodes dans l’ordre Vtable  
  Cette interface implémente les méthodes suivantes.  
   
 |Méthode|Description|  
-|-------------|-----------------|  
-|[Suivant](../Topic/IEnumDebugAddresses::Next.md)|extrait l'ensemble suivant d'objets d' [IDebugAddress](../../../extensibility/debugger/reference/idebugaddress.md) de l'énumération.|  
-|[Ignorer](../Topic/IEnumDebugAddresses::Skip.md)|Ignore un nombre spécifié d'entrées.|  
-|[Réinitialiser](../../../extensibility/debugger/reference/ienumdebugaddresses-reset.md)|réinitialise l'énumération à la première entrée.|  
-|[Clone](../../../extensibility/debugger/reference/ienumdebugaddresses-clone.md)|extrait une copie de l'énumération actuelle.|  
-|[GetCount](../Topic/IEnumDebugAddresses::GetCount.md)|Récupère le nombre d'entrées de l'énumération.|  
+|------------|-----------------|  
+|[Next](../../../extensibility/debugger/reference/ienumdebugaddresses-next.md)|Récupère l’ensemble suivant de [IDebugAddress](../../../extensibility/debugger/reference/idebugaddress.md) objets à partir de l’énumération.|  
+|[Skip](../../../extensibility/debugger/reference/ienumdebugaddresses-skip.md)|Ignore un nombre spécifié d’entrées.|  
+|[Réinitialiser](../../../extensibility/debugger/reference/ienumdebugaddresses-reset.md)|Réinitialise l’énumération à la première entrée.|  
+|[Clone](../../../extensibility/debugger/reference/ienumdebugaddresses-clone.md)|Récupère une copie de l’énumération actuelle.|  
+|[GetCount](../../../extensibility/debugger/reference/ienumdebugaddresses-getcount.md)|Récupère le nombre d’entrées dans l’énumération.|  
   
-## Notes  
- Cette interface est généralement utilisée par le moteur de débogage pour déterminer l'adresse appropriée pour donner à l'évaluateur d'expression.  
+## <a name="remarks"></a>Remarques  
+ Cette interface est généralement utilisée par le moteur de débogage pour aider à déterminer l’adresse adéquate afin de donner à l’évaluateur d’expression.  
   
-## Configuration requise  
- en\-tête : sh.h  
+## <a name="requirements"></a>Spécifications  
+ En-tête : sh.h  
   
- l'espace de noms : Microsoft.VisualStudio.Debugger.Interop  
+ Namespace : Microsoft.VisualStudio.Debugger.Interop  
   
- Assembly : Microsoft.VisualStudio.Debugger.Interop.dll  
+ Assembly : Microsoft.VisualStudio.Debugger.Interop.dll  
   
-## Voir aussi  
+## <a name="see-also"></a>Voir aussi  
  [Interfaces de fournisseur de symboles](../../../extensibility/debugger/reference/symbol-provider-interfaces.md)   
  [IDebugAddress](../../../extensibility/debugger/reference/idebugaddress.md)   
  [GetAddressesFromContext](../../../extensibility/debugger/reference/idebugsymbolprovider-getaddressesfromcontext.md)   
- [GetAddressesFromPosition](../Topic/IDebugSymbolProvider::GetAddressesFromPosition.md)
+ [GetAddressesFromPosition](../../../extensibility/debugger/reference/idebugsymbolprovider-getaddressesfromposition.md)

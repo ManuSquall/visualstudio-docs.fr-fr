@@ -1,44 +1,28 @@
 ---
-title: IDebugSettingsCallback2::GetMetricGuid | Microsoft Docs
+title: IDebugSettingsCallback2::GetMetricGuid | Documents Microsoft
 ms.custom: 
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-sdk
+ms.technology: vs-ide-sdk
 ms.tgt_pltfrm: 
 ms.topic: article
-helpviewer_keywords:
-- IDebugSettingsCallback2::GetMetricGuid
+helpviewer_keywords: IDebugSettingsCallback2::GetMetricGuid
 ms.assetid: 91092763-3362-4857-adf0-231bc1254206
-caps.latest.revision: 8
+caps.latest.revision: "8"
+author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-translation.priority.mt:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
+ms.openlocfilehash: d43bb839b1c8c4be3d9c56a20d6e9e17eb79cd1b
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
 ms.translationtype: MT
-ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
-ms.openlocfilehash: d1423bc575cc70703a6c1e99fde8d8776055519f
-ms.contentlocale: fr-fr
-ms.lasthandoff: 08/28/2017
-
+ms.contentlocale: fr-FR
+ms.lasthandoff: 10/31/2017
 ---
 # <a name="idebugsettingscallback2getmetricguid"></a>IDebugSettingsCallback2::GetMetricGuid
-Retrieves the unique identifier of a metric given its name.  
+Récupère l’identificateur unique d’une fonction de son nom de métrique.  
   
-## <a name="syntax"></a>Syntax  
+## <a name="syntax"></a>Syntaxe  
   
 ```cpp  
 HRESULT GetMetricGuid(  
@@ -58,21 +42,21 @@ private int GetMetricGuid(
 );  
 ```  
   
-#### <a name="parameters"></a>Parameters  
+#### <a name="parameters"></a>Paramètres  
  `pszType`  
- [in] Type of the metric.  
+ [in] Type de la mesure.  
   
  `guidSection`  
- [in] Unique identifier of the section.  
+ [in] Identificateur unique de la section.  
   
  `pszMetric`  
- [in] Name of the metric.  
+ [in] Nom de la mesure.  
   
  `pguidValue`  
- [out] Returns the unique identifier of the metric.  
+ [out] Retourne l’identificateur unique de la mesure.  
   
-## <a name="return-value"></a>Return Value  
- If successful, returns `S_OK`; otherwise, returns an error code.  
+## <a name="return-value"></a>Valeur de retour  
+ En cas de réussite, retourne `S_OK`; sinon, retourne un code d’erreur.  
   
-## <a name="see-also"></a>See Also  
+## <a name="see-also"></a>Voir aussi  
  [IDebugSettingsCallback2](../../../extensibility/debugger/reference/idebugsettingscallback2.md)

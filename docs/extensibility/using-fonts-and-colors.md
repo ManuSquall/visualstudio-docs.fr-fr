@@ -1,76 +1,78 @@
 ---
-title: "Utilisation de polices et couleurs | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-helpviewer_keywords: 
-  - "polices, contrôler dans l'IDE"
-  - "IDE, contrôler la couleur du texte et des polices"
-  - "Page de propriétés de polices et couleurs"
-  - "contrôle de la police et la couleur (Visual Studio SDK)"
-  - "texte, IDE"
+title: "À l’aide des polices et couleurs | Documents Microsoft"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+helpviewer_keywords:
+- fonts, controlling in IDE
+- IDE, controlling text color and fonts
+- Fonts and Colors property page
+- font and color control [Visual Studio SDK]
+- text, IDE
 ms.assetid: d1a9b99f-fbdc-45ed-920a-e08c3d931ac9
-caps.latest.revision: 27
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 27
+caps.latest.revision: "27"
+author: gregvanl
+ms.author: gregvanl
+manager: ghogen
+ms.openlocfilehash: 0ce64c7cac36319d1e55efb0ddf2216dc218805c
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: fr-FR
+ms.lasthandoff: 10/31/2017
 ---
-# Utilisation de polices et couleurs
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
-
-[!INCLUDE[vsipsdk](../extensibility/includes/vsipsdk_md.md)] fournit la prise en charge d'utiliser des polices et les couleurs du texte.  
+# <a name="using-fonts-and-colors"></a>À l’aide des polices et couleurs
+Le [!INCLUDE[vsipsdk](../extensibility/includes/vsipsdk_md.md)] fournit la prise en charge pour l’utilisation des polices et couleurs pour afficher le texte.  
   
-## Dans cette section  
- [Vue d'ensemble de la couleur et de police](../extensibility/font-and-color-overview.md)  
- Décrit la police et les paramètres de couleur de texte dans l'environnement de développement intégré \(IDE\) de \(IDE\) [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] .  Introduit également les concepts des catégories et des éléments d'affichage, et explique comment les VSPackages et l'éditeur principal utilisent des attributs de texte.  
+## <a name="in-this-section"></a>Dans cette section  
+ [Vue d’ensemble de la couleur et de police](../extensibility/font-and-color-overview.md)  
+ Décrit les paramètres de police et la couleur du texte dans le [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] l’environnement de développement intégré (IDE). Également présente les concepts de catégories et les éléments d’affichage et décrit comment les VSPackages et l’éditeur principal utilisent les attributs de texte.  
   
  [Mise en route de la police et les informations de couleur de colorisation de texte](../extensibility/getting-font-and-color-information-for-text-colorization.md)  
- Fournit des règles sur l'implémentation de la colorisation de texte dans les VSPackages qui gèrent **Catégories** autre qu' **Éditeur de texte**.  
+ Fournit des instructions pour l’implémentation de colorisation de texte dans les VSPackages gérer **catégories** autre que **éditeur de texte**.  
   
- [L'accès à stockée paramètres de police et couleur](../extensibility/accessing-stored-font-and-color-settings.md)  
- Explique comment la police actuelle et des paramètres de couleurs peuvent être enregistrés, récupérés, et appliqués.  
+ [L’accès à la police stockée et les paramètres de couleur](../extensibility/accessing-stored-font-and-color-settings.md)  
+ Explique comment actuel de police et de couleur paramètres peuvent être stockées, extraites et appliquées.  
   
- [L'implémentation des catégories personnalisées et afficher les éléments](../extensibility/implementing-custom-categories-and-display-items.md)  
- Décrit les étapes de base par lesquelles une fenêtre peut la créer et utilise son propre d' **Éléments affichés** et de **Catégories** pour prendre en charge l'affichage de texte.  
+ [Implémentation des catégories personnalisées et des éléments d’affichage](../extensibility/implementing-custom-categories-and-display-items.md)  
+ Décrit les étapes de base par lequel une fenêtre peut créer et utiliser son propre de **afficher les éléments** et **catégories** pour prendre en charge d’affichage du texte.  
   
- Cette approche requiert un VSPackage pour implémenter l'interface d' <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorDefaultsProvider> et les interfaces connexes.  
+ Cette approche nécessite un VSPackage implémenter le <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorDefaultsProvider> interface et des interfaces associées.  
   
  [Comment : accéder aux polices intégrées et jeu de couleurs](../extensibility/how-to-access-the-built-in-fonts-and-color-scheme.md)  
- Explique comment définir et inscrire une catégorie à l'aide de les polices prédéfinies et les couleurs, et initialise l'utilisation de polices fournies par le système et de couleurs.  
+ Explique comment définir et enregistrer une catégorie à l’aide de couleurs et polices intégrées et lancer l’utilisation de couleurs et polices fournies par le système.  
   
-## Référence  
+## <a name="reference"></a>Référence  
  <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorDefaultsProvider>  
- fournit une instance d' `IVsFontAndColorDefaults` ou de l'interface d' <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorGroup> qui correspond à un point particulier répertorié dans la liste d' **Afficher les paramètres de** dans la page de **Polices et couleurs** de la boîte de dialogue d' **Options** .  
+ Fournit une instance de la `IVsFontAndColorDefaults` ou le <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorGroup> interface qui correspond à un élément particulier répertorié dans le **afficher les paramètres de** liste dans le **polices et couleurs** page de la **Options** boîte de dialogue.  
   
  <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorDefaults>  
- Permet à un VSPackage pour prendre en charge la page de l'IDE **Polices et couleurs** en définissant les polices par défaut et de couleurs pour une fenêtre ou l'interface utilisateur.  
+ Permet à un VSPackage prendre en charge de l’IDE **polices et couleurs** page en définissant des polices par défaut et les couleurs d’une fenêtre ou un composant d’interface utilisateur.  
   
  <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorGroup>  
- Fournit un mécanisme par lequel un VSPackage qui contribue la police et prise en charge des couleurs peut spécifier un groupe d'éléments d'affichage \- une superbe\-catégorie qui représente l'union de deux catégories ou plus.  
+ Fournit un mécanisme par lequel un VSPackage qui fournit la prise en charge de police et couleur peut spécifier un groupe d’élément d’affichage - super une catégorie qui représente l’union de deux ou plusieurs catégories.  
   
  <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorStorage>  
- Permet à un VSPackage pour récupérer la police et aux données, ou le sauvegarde au Registre.  
+ Permet à un VSPackage récupérer les données de police et la couleur, ou l’enregistrer dans le Registre.  
   
  <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorEvents>  
- Informe VSPackages qui utilisent la police et des informations sur la couleur relatives aux modifications de police et les paramètres de couleurs.  
+ Notifie les VSPackages qui utilisent la police et la couleur des informations sur les modifications dans les paramètres de police et couleur.  
   
  <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorUtilities>  
- Fournit des outils pour utiliser les données d'entrée et de sortie qui est utilisée par les méthodes de mécanisme de [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]**Police et couleurs** .  
+ Fournit des outils permettant de travailler avec les données d’entrée et de sortie qui sont utilisées par les méthodes de la [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] **police et couleur** mécanisme.  
   
  <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorCacheManager>  
- Contrôle la mise en cache de police et les paramètres de couleurs.  
+ Contrôle la mise en cache des paramètres de police et couleur.  
   
-## Rubriques connexes  
- [Développement d'un Service de langage](../extensibility/internals/developing-a-legacy-language-service.md)  
- Explique comment VSPackages peut utiliser des services linguistiques de personnaliser l'éditeur de [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] .  
+## <a name="related-sections"></a>Rubriques connexes  
+ [Développement d’un service de langage hérité](../extensibility/internals/developing-a-legacy-language-service.md)  
+ Explique comment les VSPackages peuvent utiliser les services de langage pour personnaliser le [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] éditeur.  
   
  [Couleurs de syntaxe dans les éditeurs personnalisés](../extensibility/syntax-coloring-in-custom-editors.md)  
- Aperçoit de comprendre comment l'éditeur de [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] utilise des services de langage pour implémenter la coloration de syntaxe.  
+ Explique comment la [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] éditeur utilise les services de langage pour implémenter la coloration de syntaxe.  
   
- [Extension des autres parties de Visual Studio](../extensibility/extending-other-parts-of-visual-studio.md)  
- Explique comment utiliser les services de [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] pour créer des éléments d'interface utilisateur qui correspondent au reste de [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)].
+ [Extension d’autres parties de Visual Studio](../extensibility/extending-other-parts-of-visual-studio.md)  
+ Explique comment utiliser [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] services pour créer des éléments d’interface utilisateur qui correspondent au reste de [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)].

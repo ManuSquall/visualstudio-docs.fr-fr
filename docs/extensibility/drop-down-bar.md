@@ -1,53 +1,54 @@
 ---
-title: "Barre d&#233;roulante | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-helpviewer_keywords: 
-  - "hérité de Visual Studio SDK, éditeurs - liste déroulante de la barre"
+title: "Barre déroulante | Documents Microsoft"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+helpviewer_keywords: editors [Visual Studio SDK], legacy - drop-down bar
 ms.assetid: 4bb621bd-72f5-43d5-916f-9f66617da049
-caps.latest.revision: 12
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 12
+caps.latest.revision: "12"
+author: gregvanl
+ms.author: gregvanl
+manager: ghogen
+ms.openlocfilehash: 2f5da476bb9b54b536cb296112d578574822e410
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: fr-FR
+ms.lasthandoff: 10/31/2017
 ---
-# Barre d&#233;roulante
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
-
-la barre déroulante est fournie en haut de la fenêtre de code et contient deux listes déroulantes.  
+# <a name="drop-down-bar"></a>Barre déroulante
+La barre déroulante est fournie en haut de la fenêtre de code et contient deux listes déroulantes.  
   
-## interfaces déroulantes de barre  
- Dans [!INCLUDE[vcprvc](../debugger/includes/vcprvc_md.md)], par exemple, la barre déroulante contient des listes pour les fonctions membres d'éléments de [!INCLUDE[vcprvc](../debugger/includes/vcprvc_md.md)] et d'éléments de [!INCLUDE[vcprvc](../debugger/includes/vcprvc_md.md)] , comme indiqué dans l'image suivante.  
+## <a name="drop-down-bar-interfaces"></a>Interfaces de la barre déroulante  
+ Dans [!INCLUDE[vcprvc](../code-quality/includes/vcprvc_md.md)], par exemple, la barre de la liste déroulante contient les listes de [!INCLUDE[vcprvc](../code-quality/includes/vcprvc_md.md)] éléments et [!INCLUDE[vcprvc](../code-quality/includes/vcprvc_md.md)] les fonctions membres des éléments, comme indiqué dans l’image suivante.  
   
- ![Barres déroulantes](~/extensibility/media/vsdropdown_bar.gif "vsDropdown\_bar")  
-barre déroulante  
+ ![Déplacer &#45; vers le bas de barres](../extensibility/media/vsdropdown_bar.gif "vsDropdown_bar")  
+Barre déroulante  
   
- En implémentant une barre déroulante, il existe quatre interfaces d'importance primaire :  
+ Lorsque vous implémentez une barre de liste déroulante, il existe quatre interfaces de première importance :  
   
 -   <xref:Microsoft.VisualStudio.TextManager.Interop.IVsDropdownBarClient>  
   
-     implémentez cette interface pour insérer le contenu de la barre déroulante.  Chaque combinaison déroulante peut contenir du texte brut ou le texte de fantaisie \(gras, soulignement, ou en italique\), peut avoir la couleur de la police de texte de la fenêtre ou grisée la couleur de la police, et peut éventuellement fournir une petite bitmap en regard de l'élément déroulant.  semblable à l'interface d' <xref:Microsoft.VisualStudio.TextManager.Interop.IVsCompletionSet> , images bitmap sont fournis dans les listes d'images.  chaque combinaison déroulante peut avoir une liste d'images différente ; toutefois, chaque liste d'images doit contenir des images de la même hauteur.  En outre, à l'aide de la méthode d' <xref:Microsoft.VisualStudio.TextManager.Interop.IVsDropdownBarClient.GetComboTipText%2A> , vous pouvez fournir une info\-bulle pour chaque combinaison.  
+     Implémentez cette interface pour insérer le contenu de la barre de menu déroulant. Chaque combinaison de liste déroulante peut contenir du texte brut ou texte fantaisiste (gras, souligné ou italique), peut avoir coloration de la police de texte fenêtre ou de couleurs de police grisé et peut éventuellement fournir une petite image bitmap en regard de l’élément de liste déroulante. Similaire à la <xref:Microsoft.VisualStudio.TextManager.Interop.IVsCompletionSet> interface, les images bitmap sont fournies dans les listes d’images. Chaque combinaison de liste déroulante peut avoir une liste d’images différents ; Toutefois, chaque liste d’images doit contenir des images de la même hauteur. En outre, à l’aide de la <xref:Microsoft.VisualStudio.TextManager.Interop.IVsDropdownBarClient.GetComboTipText%2A> (méthode), vous pouvez fournir une info-bulle pour chaque combinaison.  
   
 -   <xref:Microsoft.VisualStudio.TextManager.Interop.IVsDropdownBarManager>  
   
-     Appelez cette interface à créer ou destroy la barre déroulante pour une fenêtre de code.  Cette interface peut également être utilisée pour déterminer si une barre déroulante est déjà attachée à une fenêtre de code en appelant la méthode d' <xref:Microsoft.VisualStudio.TextManager.Interop.IVsDropdownBarManager.GetDropdownBar%2A> .  appel <xref:System.Runtime.InteropServices.Marshal.QueryInterface%2A> pour <xref:Microsoft.VisualStudio.TextManager.Interop.IVsDropdownBarManager> d' <xref:Microsoft.VisualStudio.TextManager.Interop.IVsCodeWindow>.  
+     Appelez cette interface pour créer ou détruire la barre déroulante pour une fenêtre de code. Cette interface peut également être utilisée pour déterminer si une barre de liste déroulante est déjà attachée à une fenêtre de code en appelant le <xref:Microsoft.VisualStudio.TextManager.Interop.IVsDropdownBarManager.GetDropdownBar%2A> (méthode). Appelez <xref:System.Runtime.InteropServices.Marshal.QueryInterface%2A> pour <xref:Microsoft.VisualStudio.TextManager.Interop.IVsDropdownBarManager> de <xref:Microsoft.VisualStudio.TextManager.Interop.IVsCodeWindow>.  
   
 -   <xref:Microsoft.VisualStudio.TextManager.Interop.IVsDropdownBar>  
   
-     appelez cette interface pour communiquer directement avec la barre déroulante.  Vous pouvez utiliser cette interface pour forcer l'actualisation du contenu déroulant de barre ou pour modifier la sélection dans l'une des zones de liste.  
+     Appelez cette interface pour communiquer directement avec la barre de menu déroulant. Vous pouvez utiliser cette interface pour forcer une actualisation de la liste déroulante de la barre contenu ou pour modifier la sélection de l’une des zones de liste.  
   
 -   <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextManagerEvents>  
   
-     Si vous avez enregistré `ShowDropdownBarOption` dans votre clé de Registre de service de langage, votre gestionnaire de fenêtre de code doit surveiller cet événement pour synchroniser avec les préférences de l'utilisateur sur si la barre déroulante doit s'afficher.  Si vous n'enregistrez pas cette option dans votre clé de service de langage, l'option pour afficher ou masquer la barre déroulante est désactivée dans le menu d' **Options** .  
+     Si vous avez enregistré le `ShowDropdownBarOption` votre clé de Registre de service de langage, puis votre gestionnaire de fenêtrage code doit surveiller cet événement pour effectuer une synchronisation avec les préférences de l’utilisateur concernant indique si la barre de menu déroulant doit être affichée. Si vous n’inscrivez pas cette option dans votre clé de service de langage, alors que l’option pour afficher ou masquer la barre déroulante est désactivée sur le **Options** menu.  
   
-## Attacher une barre déroulante à une fenêtre de code  
- Pour attacher une barre déroulante dans la fenêtre de code lorsqu'elle est créée, un service de langage doit se joindre à la barre déroulante lorsque la méthode d' <xref:Microsoft.VisualStudio.TextManager.Interop.IVsCodeWindowManager.AddAdornments%2A> est appelée.  Si un appel à la méthode d' <xref:Microsoft.VisualStudio.TextManager.Interop.IVsDropdownBarManager.GetDropdownBar%2A> indique qu'une barre déroulante n'existe pas déjà, puis appelez l' <xref:Microsoft.VisualStudio.TextManager.Interop.IVsDropdownBarManager.AddDropdownBar%2A>.  Pour accéder à l'interface d' <xref:Microsoft.VisualStudio.TextManager.Interop.IVsDropdownBarManager> , l'appel <xref:System.Runtime.InteropServices.Marshal.QueryInterface%2A> du pointeur d' <xref:Microsoft.VisualStudio.TextManager.Interop.IVsCodeWindow> retournées à vous lorsque votre implémentation d' <xref:Microsoft.VisualStudio.TextManager.Interop.IVsCodeWindowManager> a été jointe.  
+## <a name="attaching-a-drop-down-bar-to-a-code-window"></a>Attachement d’une barre de menu déroulant à une fenêtre de Code  
+ Pour attacher une barre de liste déroulante dans la fenêtre de code lors de sa création, un service de langage doit être attaché à la liste déroulante barre lorsque la <xref:Microsoft.VisualStudio.TextManager.Interop.IVsCodeWindowManager.AddAdornments%2A> méthode est appelée. Si un appel à la <xref:Microsoft.VisualStudio.TextManager.Interop.IVsDropdownBarManager.GetDropdownBar%2A> méthode indique qu’une barre de menu déroulant n’existe pas déjà, puis appeler <xref:Microsoft.VisualStudio.TextManager.Interop.IVsDropdownBarManager.AddDropdownBar%2A>. Pour accéder à la <xref:Microsoft.VisualStudio.TextManager.Interop.IVsDropdownBarManager> l’interface, appelez <xref:System.Runtime.InteropServices.Marshal.QueryInterface%2A> à partir de la <xref:Microsoft.VisualStudio.TextManager.Interop.IVsCodeWindow> pointeur retourné lorsque votre <xref:Microsoft.VisualStudio.TextManager.Interop.IVsCodeWindowManager> implémentation a été joint.  
   
-## Voir aussi  
+## <a name="see-also"></a>Voir aussi  
  [Personnalisation des fenêtres de Code à l’aide de l’API héritée](../extensibility/customizing-code-windows-by-using-the-legacy-api.md)   
- [Prise en charge de la barre de Navigation dans un Service de langage hérité](../extensibility/internals/support-for-the-navigation-bar-in-a-legacy-language-service.md)
+ [Prise en charge de la barre de navigation dans un service de langage hérité](../extensibility/internals/support-for-the-navigation-bar-in-a-legacy-language-service.md)

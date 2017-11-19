@@ -1,47 +1,31 @@
 ---
-title: IntelliSenseHostFlags | Microsoft Docs
+title: IntelliSenseHostFlags | Documents Microsoft
 ms.custom: 
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-sdk
+ms.technology: vs-ide-sdk
 ms.tgt_pltfrm: 
 ms.topic: article
-f1_keywords:
-- IntellisenseHostFlags
+f1_keywords: IntellisenseHostFlags
 helpviewer_keywords:
 - IntelliSense, IntellisenseHostFlags enumeration
 - IntellisenseHostFlags enumeration
 ms.assetid: 0930640b-eb84-48ef-a8f7-d4268f55c99c
-caps.latest.revision: 6
+caps.latest.revision: "6"
+author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-translation.priority.mt:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
+ms.openlocfilehash: d8e00768e544dbd6bb37a4de70e0f730fe967a70
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
 ms.translationtype: MT
-ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
-ms.openlocfilehash: 7d8b5a5a7b35d4fd23b5c81607f2bc9486aefc2a
-ms.contentlocale: fr-fr
-ms.lasthandoff: 08/28/2017
-
+ms.contentlocale: fr-FR
+ms.lasthandoff: 10/31/2017
 ---
 # <a name="intellisensehostflags"></a>IntelliSenseHostFlags
-Specifies IntelliSense host flags.  
+Spécifie des indicateurs d’hôte IntelliSense.  
   
-## <a name="syntax"></a>Syntax  
+## <a name="syntax"></a>Syntaxe  
   
 ```cpp  
 enum IntellisenseHostFlags  
@@ -54,18 +38,18 @@ enum IntellisenseHostFlags
 };  
 ```  
   
-#### <a name="parameters"></a>Parameters  
+#### <a name="parameters"></a>Paramètres  
   
-|Members|Description|  
+|Membres|Description|  
 |-------------|-----------------|  
-|`IHF_READONLYCONTEXT`|Context buffer is read-only.|  
-|`IHF_NOSEPARATESUBJECT`|No subject text. Context buffer contains IntelliSense-target (implies `!IHF_READONLYCONTEXT`).|  
-|`IHF_SINGLELINESUBJECT`|Subject text is not multi-line-capable.|  
-|`IHF_FORCECOMMITTOCONTEXT`|Same as `CanCommitIntoReadOnlyBuffer`.|  
-|`IHF_OVERTYPE`|Editing (in subject or context) should be done in overtype mode.|  
+|`IHF_READONLYCONTEXT`|Mémoire tampon de contexte est en lecture seule.|  
+|`IHF_NOSEPARATESUBJECT`|Aucun texte de l’objet. Mémoire tampon de contexte contient IntelliSense-cible (implique `!IHF_READONLYCONTEXT`).|  
+|`IHF_SINGLELINESUBJECT`|Texte de l’objet n’est pas multi-ligne prenant en charge.|  
+|`IHF_FORCECOMMITTOCONTEXT`|Comme pour `CanCommitIntoReadOnlyBuffer`.|  
+|`IHF_OVERTYPE`|Modification (dans l’objet ou le contexte) doit être effectuée en mode Refrappe.|  
   
-## <a name="requirements"></a>Requirements  
+## <a name="requirements"></a>Spécifications  
  SingleFileeditor.idl  
   
-## <a name="see-also"></a>See Also  
+## <a name="see-also"></a>Voir aussi  
  <xref:Microsoft.VisualStudio.TextManager.Interop>

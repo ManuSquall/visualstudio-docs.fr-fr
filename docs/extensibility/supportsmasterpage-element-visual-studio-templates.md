@@ -1,62 +1,67 @@
 ---
-title: "SupportsMasterPage, &#233;l&#233;ment (mod&#232;les Visual&#160;Studio) | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-general"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "http://schemas.microsoft.com/developer/vstemplate/2005#SupportsMasterPage"
-helpviewer_keywords: 
-  - "<SupportsMasterPage> (élément de modèles Visual Studio)"
-  - "SupportsMasterPage (élément de modèles Visual Studio)"
+title: "SupportsMasterPage, élément (modèles Visual Studio) | Documents Microsoft"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-general
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords: http://schemas.microsoft.com/developer/vstemplate/2005#SupportsMasterPage
+helpviewer_keywords:
+- <SupportsMasterPage> element [Visual Studio Templates]
+- SupportsMasterPage element [Visual Studio Templates]
 ms.assetid: ce877a6a-9bba-4fd9-92fb-0a8dfec9e75b
-caps.latest.revision: 9
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 9
+caps.latest.revision: "9"
+author: gregvanl
+ms.author: gregvanl
+manager: ghogen
+ms.openlocfilehash: 6fe7edc9bcfe7df774c49afb2543170472d042aa
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: fr-FR
+ms.lasthandoff: 10/31/2017
 ---
-# SupportsMasterPage, &#233;l&#233;ment (mod&#232;les Visual&#160;Studio)
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
-
-Spécifie si la case à cocher **Sélectionner la page maître** est activée dans la boîte de dialogue **Ajouter un nouvel élément**.  
+# <a name="supportsmasterpage-element-visual-studio-templates"></a>SupportsMasterPage, élément (modèles Visual Studio)
+Spécifie si la le **sélectionner la Page maître** case à cocher est activée sur le **ajouter un nouvel élément** boîte de dialogue.  
   
-## Syntaxe  
+ \<VSTemplate >  
+ \<TemplateData >  
+ \<SupportsMasterPage >  
+  
+## <a name="syntax"></a>Syntaxe  
   
 ```  
 <SupportsMasterPage> true/false </SupportsMasterPage>  
 ```  
   
-## Attributs et éléments  
+## <a name="attributes-and-elements"></a>Attributs et éléments  
  Les sections suivantes décrivent des attributs, des éléments enfants et des éléments parents.  
   
-### Attributs  
+### <a name="attributes"></a>Attributs  
  Aucun  
   
-### Éléments enfants  
- Aucun  
+### <a name="child-elements"></a>Éléments enfants  
+ Aucun.  
   
-### Éléments parents  
+### <a name="parent-elements"></a>Éléments parents  
   
 |Élément|Description|  
 |-------------|-----------------|  
-|[TemplateData](../extensibility/templatedata-element-visual-studio-templates.md)|Spécifie des données qui classent le modèle dans une catégorie et définit la façon dont il s'affiche dans la boîte de dialogue **Nouveau projet** ou **Nouvel élément**.|  
+|[TemplateData](../extensibility/templatedata-element-visual-studio-templates.md)|Spécifie les données qui définit la catégorie du modèle et comment il s’affiche dans le **nouveau projet** ou **un nouvel élément** boîte de dialogue.|  
   
-## Valeur texte  
+## <a name="text-value"></a>Valeur texte  
  Une valeur texte est requise.  
   
- Le texte doit avoir la valeur `true` ou `false`, qui indique si la case à cocher **Sélectionner la page maître** est activée dans la boîte de dialogue **Ajouter un nouvel élément**.  
+ Le texte doit être `true` ou `false`, qui indique si Oui ou non le **sélectionner la Page maître** case à cocher est activée sur le **ajouter un nouvel élément** boîte de dialogue.  
   
-## Notes  
- `SupportsMasterPage` est un élément facultatif.  La valeur par défaut est `false`.  
+## <a name="remarks"></a>Remarques  
+ `SupportsMasterPage` est un élément facultatif. La valeur par défaut est `false`.  
   
- L'élément `SupportsMasterPage` n'est disponible que pour les modèles d'élément Web.  
+ Le `SupportsMasterPage` élément est uniquement disponible pour les modèles d’élément Web.  
   
-## Exemple  
- L'exemple suivant illustre les métadonnées d'un projet Web incluant la prise en charge d'une page maître.  
+## <a name="example"></a>Exemple  
+ L’exemple suivant illustre les métadonnées d’un projet Web qui inclut la prise en charge pour une page maître.  
   
 ```  
 <VSTemplate Version="3.0.0" Type="Project"  
@@ -80,6 +85,6 @@ Spécifie si la case à cocher **Sélectionner la page maître** est activée da
 </VSTemplate>  
 ```  
   
-## Voir aussi  
- [Référence du schéma de modèle Visual Studio](../extensibility/visual-studio-template-schema-reference.md)   
- [Création de modèles de projets et d'éléments personnalisés](../ide/creating-project-and-item-templates.md)
+## <a name="see-also"></a>Voir aussi  
+ [Référence du schéma de modèle Visual Studio](../extensibility/visual-studio-template-schema-reference.md)   
+ [Création de modèles de projet et d’élément](../ide/creating-project-and-item-templates.md)

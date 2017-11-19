@@ -1,46 +1,29 @@
 ---
-title: IDebugProcessEx2::AddImplicitProgramNodes | Microsoft Docs
+title: IDebugProcessEx2::AddImplicitProgramNodes | Documents Microsoft
 ms.custom: 
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-sdk
+ms.technology: vs-ide-sdk
 ms.tgt_pltfrm: 
 ms.topic: article
-f1_keywords:
-- IDebugProcessEx2::AddImplicitProgramNodes
-helpviewer_keywords:
-- IDebugProcessEx2::AddImplicitProgramNodes method
+f1_keywords: IDebugProcessEx2::AddImplicitProgramNodes
+helpviewer_keywords: IDebugProcessEx2::AddImplicitProgramNodes method
 ms.assetid: 8b491b00-f9e7-45b3-9115-fe58c3464289
-caps.latest.revision: 10
+caps.latest.revision: "10"
+author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-translation.priority.mt:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
+ms.openlocfilehash: 799ac5ee39322579ab60901ffe2abb2f2a683138
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
 ms.translationtype: MT
-ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
-ms.openlocfilehash: b248f3077a21e0e1f8dfc989971454a8e5c06aa7
-ms.contentlocale: fr-fr
-ms.lasthandoff: 08/28/2017
-
+ms.contentlocale: fr-FR
+ms.lasthandoff: 10/31/2017
 ---
 # <a name="idebugprocessex2addimplicitprogramnodes"></a>IDebugProcessEx2::AddImplicitProgramNodes
-This method adds a program node for each debug engine (DE) specified.  
+Cette méthode ajoute un nœud de programme pour chaque moteur de débogage (DE) spécifié.  
   
-## <a name="syntax"></a>Syntax  
+## <a name="syntax"></a>Syntaxe  
   
 ```cpp  
 HRESULT AddImplicitProgramNodes(  
@@ -58,22 +41,22 @@ int AddImplicitProgramNodes(
 );  
 ```  
   
-#### <a name="parameters"></a>Parameters  
+#### <a name="parameters"></a>Paramètres  
  `guidLaunchingEngine`  
- [in] The `GUID` of a DE that is to be used to launch programs (and is assumed to add its own program nodes).  
+ [in] Le `GUID` d’un type de données DE qui doit être utilisé pour lancer des programmes (et est supposé pour ajouter des nœuds de son propre programme).  
   
  `rgguidSpecificEngines`  
- [in] Array of `GUID`s of DEs for which program nodes will be added.  
+ [in] Tableau de `GUID`s DEs nœuds seront ajoutés pour le programme.  
   
  `celtSpecificEngines`  
- [in] The number of `GUID`s in the `rgguidSpecificEngines` array.  
+ [in] Le nombre de `GUID`s dans le `rgguidSpecificEngines` tableau.  
   
-## <a name="return-value"></a>Return Value  
- If successful, returns `S_OK`; otherwise, returns an error code.  
+## <a name="return-value"></a>Valeur de retour  
+ En cas de réussite, retourne `S_OK`; sinon, retourne un code d’erreur.  
   
-## <a name="remarks"></a>Remarks  
- [Program Nodes](../../../extensibility/debugger/program-nodes.md) will be added for each DE listed in `rgguidSpecificEngines`—excluding the launching engine (as given in `guidLaunchingEngine`), which is assumed to add its own program node when it launches a program.  
+## <a name="remarks"></a>Remarques  
+ [Programmer des nœuds](../../../extensibility/debugger/program-nodes.md) sera ajouté pour chaque DE répertoriées dans `rgguidSpecificEngines`: à l’exception du moteur de lancement (selon les indications dans `guidLaunchingEngine`), qui est censé pour ajouter son propre nœud de programme dans le lancement d’un programme.  
   
-## <a name="see-also"></a>See Also  
+## <a name="see-also"></a>Voir aussi  
  [IDebugProgramEx2](../../../extensibility/debugger/reference/idebugprogramex2.md)   
- [Program Nodes](../../../extensibility/debugger/program-nodes.md)
+ [Nœuds de programme](../../../extensibility/debugger/program-nodes.md)

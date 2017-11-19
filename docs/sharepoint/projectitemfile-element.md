@@ -1,30 +1,31 @@
 ---
-title: "ProjectItemFile Element"
-ms.custom: ""
-ms.date: "02/02/2017"
-ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "office-development"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-dev_langs: 
-  - "VB"
-  - "CSharp"
-helpviewer_keywords: 
-  - "ProjectItemFile element"
+title: "ProjectItemFile (élément) | Documents Microsoft"
+ms.custom: 
+ms.date: 02/02/2017
+ms.reviewer: 
+ms.suite: 
+ms.technology: office-development
+ms.tgt_pltfrm: 
+ms.topic: article
+dev_langs:
+- VB
+- CSharp
+helpviewer_keywords: ProjectItemFile element
 ms.assetid: 68d44d31-625a-4f02-b998-463ac0ffb2ef
-caps.latest.revision: 10
-author: "kempb"
-ms.author: "kempb"
-manager: "ghogen"
-caps.handback.revision: 9
+caps.latest.revision: "10"
+author: gewarren
+ms.author: gewarren
+manager: ghogen
+ms.openlocfilehash: 023d2f64dc3f05d518add1cd4bf6c3415f435985
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: fr-FR
+ms.lasthandoff: 10/31/2017
 ---
-# ProjectItemFile Element
-  Représente un fichier SharePoint, tel que le fichier d'élément de fonctionnalité, à inclure avec l'élément de projet lors de son déploiement sur SharePoint.  
+# <a name="projectitemfile-element"></a>ProjectItemFile, élément
+  Représente un fichier de SharePoint, comme fichier d’élément de fonctionnalité, à inclure avec l’élément de projet lorsqu’il est déployé dans SharePoint.  
   
-## Syntaxe  
+## <a name="syntax"></a>Syntaxe  
   
 ```  
 <ProjectItemFile Source = "Name of the file"  
@@ -32,42 +33,42 @@ caps.handback.revision: 9
     Type = "Type of deployment for the file" />  
 ```  
   
-## Type  
+## <a name="type"></a>Type  
  **ProjectItemFileType**  
   
-## Attributs et éléments  
+## <a name="attributes-and-elements"></a>Attributs et éléments  
  Les sections suivantes décrivent des attributs, des éléments enfants et des éléments parents.  
   
-### Attributs  
+### <a name="attributes"></a>Attributs  
   
 |Attribut|Description|  
-|--------------|-----------------|  
-|**Source**|Attribut **xs:string** requis.<br /><br /> Nom du fichier à déployer avec l'élément de projet.|  
-|**Target**|Attribut **xs:string** facultatif.<br /><br /> Chemin d'accès où le fichier sera déployé dans SharePoint, par rapport au dossier racine de déploiement.  Le dossier racine de déploiement est déterminé par le type de déploiement spécifié par l'attribut **Type**.  Si l'attribut **Target** n'est pas spécifié, le fichier sera déployé dans un dossier avec le nom spécifié dans l'attribut **Source**.<br /><br /> Pour plus d'informations, consultez les descriptions pour les propriétés **Deployment PathDeployment Root** d'éléments de projet SharePoint dans [Developing SharePoint Solutions](../sharepoint/developing-sharepoint-solutions.md).|  
-|**Type**|Attribut **xs:string** requis.<br /><br /> Le type de déploiement pour le fichier.  Pour plus d'informations sur les valeurs possibles, consultez la description pour la propriété **Deployment Type** d'éléments de projet SharePoint dans [Developing SharePoint Solutions](../sharepoint/developing-sharepoint-solutions.md).|  
+|---------------|-----------------|  
+|**Source**|Requis **xs : String** attribut.<br /><br /> Le nom du fichier à déployer avec l’élément de projet.|  
+|**Target**|Facultatif **xs : String** attribut.<br /><br /> Le chemin d’accès où le fichier sera déployé dans SharePoint, relatif au dossier racine de déploiement. Dossier racine de déploiement est déterminé par le type de déploiement spécifié par le **Type** attribut. Si le **cible** attribut n’est pas spécifié, le fichier sera déployé dans un dossier portant le nom spécifié dans le **Source** attribut.<br /><br /> Pour plus d’informations, consultez les descriptions pour le **le chemin de déploiement** et **racine du déploiement** propriétés de SharePoint dans les éléments de projet [développement de Solutions SharePoint](../sharepoint/developing-sharepoint-solutions.md).|  
+|**Type**|Requis **xs : String** attribut.<br /><br /> Le type de déploiement pour le fichier. Pour plus d’informations sur les valeurs possibles, consultez la description de la **Type de déploiement** propriété des éléments de projet SharePoint dans [développement de Solutions SharePoint](../sharepoint/developing-sharepoint-solutions.md).|  
   
-### Éléments enfants  
- Aucun  
+### <a name="child-elements"></a>Éléments enfants  
+ Aucun.  
   
-### Éléments parents  
+### <a name="parent-elements"></a>Éléments parents  
   
 |Élément|Description|  
 |-------------|-----------------|  
-|[Fichiers](../sharepoint/files-element.md)|Spécifie les fichiers à inclure avec l'élément de projet SharePoint lorsque ce dernier est déployé vers SharePoint.|  
+|[Fichiers](../sharepoint/files-element.md)|Spécifie les fichiers à inclure avec l’élément de projet SharePoint lorsqu’elle est déployée vers SharePoint.|  
   
-## Notes  
- Les fichiers SharePoint généralement référencés dans les éléments **ProjectItemFile** incluent des fichiers d'éléments de fonctionnalité \(Elements.xml\), des fichiers de schéma associés aux définitions de listes \(Schema.xml\) et des fichiers de définition associés aux WebParts \(.webpart\).  
+## <a name="remarks"></a>Remarques  
+ Les fichiers SharePoint généralement référencés dans **ProjectItemFile** éléments incluent des fichiers d’éléments de fonctionnalité (Elements.xml), des fichiers de schéma pour les définitions de listes (Schema.xml) et des fichiers de définition de composant WebPart des composants WebPart (.webpart).  
   
-## Informations sur les éléments  
+## <a name="element-information"></a>Informations sur les éléments  
   
 |||  
 |-|-|  
-|**Espace de noms**|http:\/\/schemas.microsoft.com\/VisualStudio\/2010\/SharePointTools\/SharePointProjectItemModel|  
-|**Nom du schéma**|Schéma d'élément de projet SharePoint|  
+|**Namespace**|http://schemas.Microsoft.com/VisualStudio/2010/SharePointTools/SharePointProjectItemModel|  
+|**Nom du schéma**|Schéma d’élément de projet SharePoint|  
 |**Fichier de validation**|ProjectItemModelSchema.xsd|  
-|**Peut être vide**|Non|  
+|**Peut être vide.**|Non|  
   
-## Voir aussi  
- [SharePoint Project Item Schema Reference](../sharepoint/sharepoint-project-item-schema-reference.md)  
+## <a name="see-also"></a>Voir aussi  
+ [Informations de référence sur le schéma d’élément de projet SharePoint](../sharepoint/sharepoint-project-item-schema-reference.md)  
   
   

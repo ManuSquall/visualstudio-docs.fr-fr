@@ -1,58 +1,57 @@
 ---
-title: "Outils personnalis&#233;s | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-helpviewer_keywords: 
-  - "VSPackages, des outils personnalisés"
-  - "outils (Visual Studio), personnalisés"
-  - "outils personnalisés"
+title: "Des outils personnalisés | Documents Microsoft"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+helpviewer_keywords:
+- VSPackages, custom tools
+- tools [Visual Studio], custom
+- custom tools
 ms.assetid: d669f154-9b23-48b6-b9f6-7419c8dd61a6
-caps.latest.revision: 21
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 21
+caps.latest.revision: "21"
+author: gregvanl
+ms.author: gregvanl
+manager: ghogen
+ms.openlocfilehash: 7c198065c72f1e6eaa0722de562abe6079f88aa1
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: fr-FR
+ms.lasthandoff: 10/31/2017
 ---
-# Outils personnalis&#233;s
-[!INCLUDE[vs2017banner](../../code-quality/includes/vs2017banner.md)]
-
-*Les outils personnalisés* vous permettent d'associer un outil avec un élément dans un projet et exécuter cet outil chaque fois que le fichier est enregistré.  Certains outils personnalisés, parfois appelés *générateurs de fichier unique*, sont souvent utilisés pour implémenter les traducteurs qui génèrent du code des données et vice versa.  Par exemple, les générateurs de fichier unique créent [!INCLUDE[csprcs](../../data-tools/includes/csprcs_md.md)] et le code source de[!INCLUDE[vbprvb](../../code-quality/includes/vbprvb_md.md)] hors de les fichiers .settings et .resx.  Code source généré fournit un accès fortement typé aux données dans les fichiers .settings et .resx.  les types de projet de [!INCLUDE[csprcs](../../data-tools/includes/csprcs_md.md)] et de[!INCLUDE[vbprvb](../../code-quality/includes/vbprvb_md.md)] prennent en charge les outils personnalisés ; les types de projet de [!INCLUDE[vcprvc](../../debugger/includes/vcprvc_md.md)] ne stocke pas.  Vos propres types de projets peuvent également prendre en charge les outils personnalisés.  
+# <a name="custom-tools"></a>Outils personnalisés
+*Des outils personnalisés* vous permettent d’associer un outil avec un élément dans un projet et d’exécuter cet outil chaque fois que le fichier est enregistré. Certains des outils personnalisés, parfois appelée *générateurs de fichier unique*, sont fréquemment utilisées pour implémenter les convertisseurs qui génèrent du code à partir des données et vice versa. Par exemple, créent des générateurs de fichier unique [!INCLUDE[csprcs](../../data-tools/includes/csprcs_md.md)] et [!INCLUDE[vbprvb](../../code-quality/includes/vbprvb_md.md)] source code les fichiers .settings et .resx. Le code source généré fournit un accès fortement typé aux données dans les fichiers .settings et .resx. Le [!INCLUDE[csprcs](../../data-tools/includes/csprcs_md.md)] et [!INCLUDE[vbprvb](../../code-quality/includes/vbprvb_md.md)] des types de projet prend en charge des outils personnalisés ; [!INCLUDE[vcprvc](../../code-quality/includes/vcprvc_md.md)] types de projets ne sont pas. Vos propres types de projet peuvent prendre également en charge des outils personnalisés.  
   
- Les outils personnalisés sont des composants inscrits qui implémentent l'interface d' `IVsSingleFileGenerator` .  
+ Les outils personnalisés sont des composants qui implémentent la `IVsSingleFileGenerator` interface.  
   
- Les outils personnalisés sont associés à un objet d'interface d' `ProjectItem` , et sont comme les concepteurs et les éditeurs.  Un outil personnalisé prend le fichier représenté par `ProjectItem` comme entrée et écrit un fichier dont le nom de fichier est fourni par la méthode d' `DefaultExtension` .  
+ Des outils personnalisés sont associés un `ProjectItem` objet d’interface et sont similaires aux concepteurs et éditeurs. Un outil personnalisé prend le fichier représenté par un `ProjectItem` en entrée et écrit un nouveau fichier dont le nom est fourni par le `DefaultExtension` (méthode).  
   
-## Dans cette section  
- [L'implémentation de générateurs de fichier unique](../../extensibility/internals/implementing-single-file-generators.md)  
- Décrit comment utiliser l'interface d' <xref:Microsoft.VisualStudio.Shell.Interop.IVsSingleFileGenerator> pour implémenter un outil personnalisé.  
+## <a name="in-this-section"></a>Dans cette section  
+ [Implémentation de générateurs de fichier unique](../../extensibility/internals/implementing-single-file-generators.md)  
+ Décrit comment utiliser le <xref:Microsoft.VisualStudio.Shell.Interop.IVsSingleFileGenerator> interface à implémenter un outil personnalisé.  
   
- [Détermination de l’espace de noms par défaut d’un projet](../../misc/determining-the-default-namespace-of-a-project.md)  
- Décrit comment déterminer l'espace de noms approprié en fonction de le langage utilisé.  
+ [Inscription de générateurs de fichier unique](../../extensibility/internals/registering-single-file-generators.md)  
+ Fournit des descriptions pour les entrées de Registre pour un outil personnalisé.  
   
- [Enregistrement de générateurs de fichier unique](../../extensibility/internals/registering-single-file-generators.md)  
- fournit des descriptions pour toutes les entrées du Registre pour un outil personnalisé.  
+ [Exposition des types aux concepteurs visuels](../../extensibility/internals/exposing-types-to-visual-designers.md)  
+ Explique comment les systèmes de projet prennent en charge pour les concepteurs visuels pour les classes d’accès généré et les types dans les fichiers temporaires fichier exécutable portable (PE).  
   
- [Exposer des Types pour les concepteurs visuels](../../extensibility/internals/exposing-types-to-visual-designers.md)  
- Explique comment les systèmes de projet prennent en charge les concepteurs visuels aux classes et aux types générés par accès au sein de les fichiers exécutables portables temporaires \(PE\).  
+ [Conservation de la propriété d’un élément de projet](../../extensibility/persisting-the-property-of-a-project-item.md)  
+ Montre comment conserver une propriété d’élément de projet, telles que l’auteur d’un fichier source, dans le fichier projet.  
   
- [Conserver la propriété d'un élément de projet](../../extensibility/persisting-the-property-of-a-project-item.md)  
- Indique comment rendre une propriété d'élément de projet, telle que l'auteur d'un fichier source, dans le fichier projet.  
-  
-## Référence  
+## <a name="reference"></a>Référence  
  <xref:Microsoft.VisualStudio.Shell.Interop.IVsSingleFileGenerator>  
- Fournit des détails concernant <xref:Microsoft.VisualStudio.Shell.Interop.IVsSingleFileGenerator>, qui convertit un fichier d'entrée unique dans un fichier de sortie unique qui peut être compilé ou ajouté à un projet.  
+ Fournit des détails sur la <xref:Microsoft.VisualStudio.Shell.Interop.IVsSingleFileGenerator>, qui transforme un fichier d’entrée unique en un seul fichier de sortie qui peut être compilé ou ajouté à un projet.  
   
  <xref:EnvDTE.ProjectItem>  
- Explique l'interface d' `ProjectItem` , qui représente un élément d'un projet.  
+ Explique la `ProjectItem` interface qui représente un élément dans un projet.  
   
  <xref:Microsoft.VisualStudio.Shell.Interop.IVsSingleFileGenerator.DefaultExtension%2A>  
- Fournit des détails sur la méthode d' `DefaultExtension` , qui récupère l'extension de nom de fichier fourni sur le nom du fichier de sortie.  
+ Fournit des détails sur la `DefaultExtension` méthode qui Récupère l’extension de nom de fichier pour le nom de fichier de sortie.  
   
-## Rubriques connexes  
- [Étendre des projets](../../extensibility/extending-projects.md)  
- décrit comment utiliser des projets et des solutions de [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] d'organiser des fichiers et des fichiers de ressources de code, et comment implémenter le contrôle de code source.
+## <a name="related-sections"></a>Rubriques connexes  
+ [Extension des projets](../../extensibility/extending-projects.md)  
+ Décrit comment utiliser [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] projets et solutions possibles pour organiser les fichiers de code et les fichiers de ressources et comment implémenter le contrôle de code source.

@@ -1,46 +1,29 @@
 ---
-title: IDebugSymbolProvider::GetLanguage | Microsoft Docs
+title: IDebugSymbolProvider::GetLanguage | Documents Microsoft
 ms.custom: 
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-sdk
+ms.technology: vs-ide-sdk
 ms.tgt_pltfrm: 
 ms.topic: article
-f1_keywords:
-- IDebugSymbolProvider::GetLanguage
-helpviewer_keywords:
-- IDebugSymbolProvider::GetLanguage method
+f1_keywords: IDebugSymbolProvider::GetLanguage
+helpviewer_keywords: IDebugSymbolProvider::GetLanguage method
 ms.assetid: e4142183-3d8b-418f-907f-4ee4c753d8ce
-caps.latest.revision: 11
+caps.latest.revision: "11"
+author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-translation.priority.mt:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
+ms.openlocfilehash: b327207f9082cc5df6e20a178798e98daddc67f3
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
 ms.translationtype: MT
-ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
-ms.openlocfilehash: ac300d90d6cd6841cdcc7213a5a6004a29b5a6f6
-ms.contentlocale: fr-fr
-ms.lasthandoff: 08/28/2017
-
+ms.contentlocale: fr-FR
+ms.lasthandoff: 10/31/2017
 ---
 # <a name="idebugsymbolprovidergetlanguage"></a>IDebugSymbolProvider::GetLanguage
-This method gets the language that was used to compile the code at the debug address.  
+Cette méthode obtient la langue qui a été utilisée pour compiler le code à l’adresse de débogage.  
   
-## <a name="syntax"></a>Syntax  
+## <a name="syntax"></a>Syntaxe  
   
 ```cpp  
 HRESULT GetLanguage(   
@@ -58,22 +41,22 @@ int GetLanguage(
 );  
 ```  
   
-#### <a name="parameters"></a>Parameters  
+#### <a name="parameters"></a>Paramètres  
  `pAddress`  
- [in] An address object represented by an [IDebugAddress](../../../extensibility/debugger/reference/idebugaddress.md) interface.  
+ [in] Un type d’objet est représenté par un [IDebugAddress](../../../extensibility/debugger/reference/idebugaddress.md) interface.  
   
  `pguidLanguage`  
- [out] Returns a `GUID` that specifies the language.  
+ [out] Retourne un `GUID` qui spécifie la langue.  
   
  `pguidLanguageVendor`  
- [out] Returns a `GUID` that specifies the language vendor.  
+ [out] Retourne un `GUID` qui spécifie le fournisseur de langage.  
   
-## <a name="return-value"></a>Return Value  
- If successful, returns `S_OK`; otherwise, returns an error code.  
+## <a name="return-value"></a>Valeur de retour  
+ En cas de réussite, retourne `S_OK`; sinon, retourne un code d’erreur.  
   
-## <a name="remarks"></a>Remarks  
- The debug engine calls this method to obtain the information it needs to select the correct expression evaluator.  
+## <a name="remarks"></a>Remarques  
+ Le moteur de débogage appelle cette méthode pour obtenir les informations nécessaires sélectionner l’évaluateur d’expression correcte.  
   
-## <a name="see-also"></a>See Also  
+## <a name="see-also"></a>Voir aussi  
  [IDebugSymbolProvider](../../../extensibility/debugger/reference/idebugsymbolprovider.md)   
  [IDebugAddress](../../../extensibility/debugger/reference/idebugaddress.md)

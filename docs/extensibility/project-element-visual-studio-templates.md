@@ -4,39 +4,23 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-general
+ms.technology: vs-ide-general
 ms.tgt_pltfrm: 
 ms.topic: article
-f1_keywords:
-- http://schemas.microsoft.com/developer/vstemplate/2005#Project
+f1_keywords: http://schemas.microsoft.com/developer/vstemplate/2005#Project
 helpviewer_keywords:
 - Project element [Visual Studio Templates]
 - <Project> element [Visual Studio Templates]
 ms.assetid: 1da15ea6-26e2-462b-a03e-584ef4996579
-caps.latest.revision: 16
+caps.latest.revision: "16"
+author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-translation.priority.ht:
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- ru-ru
-- zh-cn
-- zh-tw
-translation.priority.mt:
-- cs-cz
-- pl-pl
-- pt-br
-- tr-tr
-translationtype: Machine Translation
-ms.sourcegitcommit: 5db97d19b1b823388a465bba15d057b30ff0b3ce
-ms.openlocfilehash: f2995f6486ebb8d3e305c70c03fb543fab04b67a
-ms.lasthandoff: 02/22/2017
-
+ms.openlocfilehash: 6b4a60bdd81d2e6428d0fdafa6547227a496f862
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: fr-FR
+ms.lasthandoff: 10/31/2017
 ---
 # <a name="project-element-visual-studio-templates"></a>Project, élément (modèles Visual Studio)
 Spécifie les fichiers ou répertoires à ajouter au projet.  
@@ -65,9 +49,9 @@ Spécifie les fichiers ou répertoires à ajouter au projet.
 |Attribut|Description|  
 |---------------|-----------------|  
 |`File`|Attribut requis.<br /><br /> Spécifie le nom du fichier projet dans le fichier .zip du modèle.|  
-|`ReplaceParameters`|Attribut facultatif.<br /><br /> Valeur booléenne qui spécifie si le fichier de projet contient des valeurs de paramètre doivent être remplacées lorsqu’un projet est créé à partir du modèle. La valeur par défaut est `false`.|  
+|`ReplaceParameters`|Attribut facultatif.<br /><br /> Valeur booléenne qui spécifie si le fichier projet comporte des valeurs de paramètre qui doivent être remplacés lorsqu’un projet est créé à partir du modèle. La valeur par défaut est `false`.|  
 |`TargetFileName`|Attribut facultatif.<br /><br /> Spécifie le nom du fichier projet lorsqu’un projet est créé à partir du modèle.|  
-|`IgnoreProjectParameter`|Attribut facultatif.<br /><br /> Spécifie si le projet doit être ajouté à la solution actuelle. Si la valeur de paramètre personnalisé, « $*myCustomParameter*$» existe dans le fichier de remplacement de paramètre, le projet est créé, mais pas ajouté en tant que partie de la solution actuellement ouverte.|  
+|`IgnoreProjectParameter`|Attribut facultatif.<br /><br /> Spécifie si le projet doit être ajouté à la solution actuelle. Si la valeur de paramètre personnalisé, « $*myCustomParameter*$» existe dans le fichier de remplacement de paramètre, le projet est créé mais pas ajouté en tant que partie de la solution actuellement ouverte.|  
   
 ### <a name="child-elements"></a>Éléments enfants  
   
@@ -82,14 +66,14 @@ Spécifie les fichiers ou répertoires à ajouter au projet.
 |-------------|-----------------|  
 |[TemplateContent](../extensibility/templatecontent-element-visual-studio-templates.md)|Élément requis.|  
   
-## <a name="remarks"></a>Notes  
+## <a name="remarks"></a>Remarques  
  `Project` est un élément enfant facultatif de `TemplateContent`.  
   
- Le `Project` élément est utilisée pour spécifier si un projet et par conséquent, est uniquement valide dans les modèles de projet.  
+ Le `Project` élément est utilisé pour spécifier un projet et par conséquent, est uniquement valide dans les modèles de projet.  
   
- `Project`les éléments peuvent avoir [dossier](../extensibility/folder-element-visual-studio-project-templates.md) éléments enfants ou [ProjectItem](../extensibility/projectitem-element-visual-studio-project-templates.md) éléments enfants, mais pas un mélange des deux `Folder` et `ProjectItem` les éléments enfants.  
+ `Project`les éléments peuvent avoir [dossier](../extensibility/folder-element-visual-studio-project-templates.md) éléments enfants ou [ProjectItem](../extensibility/projectitem-element-visual-studio-project-templates.md) éléments enfants, mais pas une combinaison des deux `Folder` et `ProjectItem` les éléments enfants.  
   
- [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]renomme automatiquement le nom du fichier projet basé sur le nom entré par l’utilisateur dans le **nouveau projet** boîte de dialogue. Utilisez le `TargetFileName` si vous souhaitez fournir un autre nom de fichier pour les fichiers de projet créés avec le modèle d’attribut.  
+ [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]renomme automatiquement le nom du fichier projet en fonction du nom entré par l’utilisateur dans le **nouveau projet** boîte de dialogue. Utilisez le `TargetFileName` si vous souhaitez fournir un autre nom de fichier pour les fichiers projet créés avec le modèle d’attribut.  
   
 ## <a name="example"></a>Exemple  
  L’exemple suivant affiche les métadonnées d’un modèle de projet pour un [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] application.  
@@ -119,7 +103,7 @@ Spécifie les fichiers ou répertoires à ajouter au projet.
 ```  
   
 ## <a name="see-also"></a>Voir aussi  
- [Référence de schéma de modèle Visual Studio](../extensibility/visual-studio-template-schema-reference.md)   
- [Création de projet et modèles d’élément](../ide/creating-project-and-item-templates.md)   
+ [Référence du schéma de modèle Visual Studio](../extensibility/visual-studio-template-schema-reference.md)   
+ [Création de modèles de projet et d’élément](../ide/creating-project-and-item-templates.md)   
  [ProjectItem, élément (modèles de projet Visual Studio)](../extensibility/projectitem-element-visual-studio-project-templates.md)   
- [Folder, élément (modèles de projet Visual Studio)](../extensibility/folder-element-visual-studio-project-templates.md)
+ [Élément Folder (modèles de projet Visual Studio)](../extensibility/folder-element-visual-studio-project-templates.md)

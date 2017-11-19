@@ -1,60 +1,60 @@
 ---
-title: "Parcours des connexions SharePoint &#224; l&#39;aide de l&#39;Explorateur de serveurs"
-ms.custom: ""
-ms.date: "02/02/2017"
-ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "office-development"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "VS.SharePointTools.SharePointExplorer.SharePointConnection"
-dev_langs: 
-  - "VB"
-  - "CSharp"
-  - "VB"
-  - "CSharp"
-helpviewer_keywords: 
-  - "Connexions SharePoint (développement SharePoint dans Visual Studio)"
-  - "développement SharePoint dans Visual Studio, parcourir des sites SharePoint"
-  - "développement SharePoint dans Visual Studio, Connexions SharePoint"
+title: "Parcours des connexions SharePoint à l’aide de l’Explorateur de serveurs | Documents Microsoft"
+ms.custom: 
+ms.date: 02/02/2017
+ms.reviewer: 
+ms.suite: 
+ms.technology: office-development
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords: VS.SharePointTools.SharePointExplorer.SharePointConnection
+dev_langs:
+- VB
+- CSharp
+- VB
+- CSharp
+helpviewer_keywords:
+- SharePoint development in Visual Studio, browsing SharePoint sites
+- SharePoint development in Visual Studio, SharePoint Connections
+- SharePoint Connections [SharePoint development in Visual Studio]
 ms.assetid: b3b1d97b-e990-414c-8ba5-3fd1b463fbef
-caps.latest.revision: 20
-author: "kempb"
-ms.author: "kempb"
-manager: "ghogen"
-caps.handback.revision: 19
+caps.latest.revision: "20"
+author: gewarren
+ms.author: gewarren
+manager: ghogen
+ms.openlocfilehash: 9b8f75dd12e0684edd4260e796540523a2c7d08d
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: fr-FR
+ms.lasthandoff: 10/31/2017
 ---
-# Parcours des connexions SharePoint &#224; l&#39;aide de l&#39;Explorateur de serveurs
-  Vous pouvez maintenant rechercher les connexions SharePoint locale dans **Explorateur de serveurs**.  En utilisant cette technique, vous pouvez ainsi passer en revue les différents composants d'un site SharePoint résidant sur votre système.  Les composants d'un site SharePoint \(tels que les définitions de listes et les types de contenu\) sont présentés dans un nœud appelé **Connexions SharePoint** dans l'arborescence de la fenêtre **Explorateur de serveurs**.  Pour afficher l'**Explorateur de serveurs**, dans la barre de menu, cliquez sur **Affichage** dans le menu **Explorateur de serveurs**..  Les commandes de menu contextuel dans l'arborescence permettent non seulement d'afficher les composants du site SharePoint, mais aussi de supprimer des éléments, de connaître leurs propriétés ou d'actualiser l'arborescence.  
+# <a name="browsing-sharepoint-connections-using-server-explorer"></a>Parcours des connexions SharePoint à l'aide de l'Explorateur de serveurs
+  Vous pouvez maintenant rechercher des connexions SharePoint locales dans **l’Explorateur de serveurs**. À l’aide de cette technique, vous pouvez naviguer dans les composants d’un site SharePoint sur votre système. Les composants de site SharePoint, tels que les définitions de listes et types de contenu, s’affichent dans un nœud nommé **connexions SharePoint** dans l’arborescence de **l’Explorateur de serveurs**. Pour afficher les **l’Explorateur de serveurs**, dans la barre de menus, choisissez **vue**, **l’Explorateur de serveurs**. En plus d’afficher les composants du site SharePoint, vous pouvez supprimer des éléments, afficher leurs propriétés ou actualiser l’arborescence à l’aide des commandes dans le menu contextuel.  
   
 > [!IMPORTANT]  
->  Pour parcourir un site SharePoint, vous devez être administrateur de la collection de sites SharePoint et vous devez exécuter Visual Studio en tant qu'administrateur local.  Dans le cas contraire, le site s'affiche dans l' **Explorateur de serveurs**, mais vous ne pouvez pas développer son nœud.  Pour vérifier si vous êtes administrateur de la collection de sites, ouvrez le site dans un navigateur Web, ouvrez le menu **Actions de site**, choisissez **Autorisations de site**, puis, dans la page **Autorisations : Team Site**, choisissez la commande **Administrateur de collection de sites** du groupe **Gérer** sur le ruban.  Si vous êtes effectivement un administrateur de collection de sites, votre nom doit figurer dans la zone de texte.  Si la commande **Administrateur de collection de sites** n'apparaît pas dans le groupe de gestion sur le ruban, vous n'êtes pas administrateur de collection de sites, et vous devez obtenir les autorisations appropriées par l'administrateur du site.  
+>  Pour parcourir un site SharePoint, vous devez être un administrateur de la collection de sites SharePoint, et vous devez exécuter Visual Studio en tant qu’administrateur de l’ordinateur local. Sinon, le site s’affiche dans **l’Explorateur de serveurs**, mais vous ne pouvez pas développer son nœud. Pour vérifier si vous êtes un administrateur de la collection de sites, ouvrez le site dans un navigateur web, ouvrez le **Actions du Site** menu, choisissez **autorisations sur le Site**, puis, dans le **autorisations : équipe Site** page, choisissez la **administrateurs de Collection de sites** commande à partir de la **gérer** groupe sur le ruban. Votre nom apparaîtra dans la zone de texte si vous êtes un administrateur de collection de sites. Si le **administrateurs de Collection de sites** commande n’apparaît pas dans le groupe de gestion sur le ruban, vous n’êtes pas administrateur de la collection de sites, et vous devez obtenir les autorisations appropriées à partir de l’administrateur du site.  
   
-## Nœuds de l'Explorateur de serveurs  
- Chaque composant d'un site SharePoint est représenté par un nœud dans l'arborescence **Explorateur de serveurs** sous **Connexions SharePoint**.  Les sites SharePoint par défaut incluent, par exemple, un type de contenu appelé Discussion qui représente un type de discussion  affiché dans la page **Discussions** du site SharePoint.  Le type de contenu Discussion est composé de plusieurs champs.  Pour examiner ces champs dans l'**Explorateur SharePoint**, développez le nœud **Types de contenus**, puis le nœud **Discussion**.  Plusieurs nœuds de champ \(Corps, Objet de la discussion et Titre\) y figurent.  
+## <a name="server-explorer-nodes"></a>Nœuds de l’Explorateur de serveurs  
+ Chaque composant d’un site SharePoint est représenté par un nœud dans le **l’Explorateur de serveurs** arborescence sous **connexions SharePoint**. Par exemple, les sites SharePoint par défaut incluent un type de contenu appelé Discussion qui représente un type de discussion qui affiche dans le **Discussions** page du site SharePoint. Le type de contenu Discussion contient plusieurs champs. Pour afficher ces champs dans **l’Explorateur de serveurs**, développez le **types de contenus** nœud, puis le **Discussion** nœud. Y figurent plusieurs nœuds de champ, tels que le titre, l’objet de la Discussion et corps.  
   
-## Commandes du menu contextuel des nœuds  
- Chaque nœud possède un menu contextuel que vous pouvez accéder en cliquant avec le bouton droit sur le nœud ou en appuyant sur les touches Shift\+F10.  Ces menus contextuels peuvent être composés des commandes de nœud suivantes :  
+## <a name="node-shortcut-menu-commands"></a>Commandes de Menu contextuel de nœud  
+ Chaque nœud possède un menu contextuel auxquels vous accédez en double-cliquant sur le nœud ou en sélectionnant et en appuyant sur les touches MAJ + F10. Commandes de nœud peuvent inclure les éléments suivants :  
   
 |Nom de la commande|Description|  
-|------------------------|-----------------|  
-|Actualiser|Met à jour l'arborescence afin de refléter les modifications intervenues depuis le dernier affichage du nœud.|  
-|Supprimer|Supprime le nœud sélectionné dans l'arborescence. **Note:**  Elle s'applique uniquement aux connexions SharePoint répertoriées sous le nœud **Connexions SharePoint**.|  
-|Propriétés|Affiche les propriétés relatives au nœud sélectionné dans la fenêtre **Propriétés**.  Il faut savoir d'une part que ces propriétés sont en lecture seule et d'autre part, que les nœuds ne sont pas tous associés à des propriétés.|  
-|Ajouter une connexion|Permet de spécifier le site SharePoint que vous avez l'intention de parcourir.  Disponible sur le nœud **Connexions SharePoint** et les nœuds de sous\-site.|  
-|Afficher dans le navigateur|Affiche la liste sélectionnée dans le navigateur Web.  Cette commande est disponible sur certaines listes sous le nœud **Listes** contenu dans **Listes et bibliothèques**.|  
+|------------------|-----------------|  
+|Actualiser|Met à jour la vue d’arborescence pour refléter les modifications qui se sont produites depuis la dernière fois que le nœud a été affiché.|  
+|Supprimer|Supprime le nœud sélectionné dans l’arborescence. **Remarque :** cette commande est activée uniquement sur des connexions SharePoint répertoriées sous le **connexions SharePoint** nœud.|  
+|Propriétés|Affiche les propriétés disponibles pour le nœud sélectionné dans le **propriétés** fenêtre. Les propriétés sont en lecture seule, et pas chaque nœud possède des propriétés est associé.|  
+|Ajouter une connexion|Vous permet de spécifier un site SharePoint que vous souhaitez parcourir. Disponible sur le **connexions SharePoint** nœud et les nœuds de site secondaire.|  
+|Afficher dans le navigateur|Affiche la liste sélectionnée dans le navigateur Web. Cette commande est disponible sur certaines listes sous la **répertorie** nœud qui est contenue dans **listes et bibliothèques**.|  
   
-## Rubriques connexes  
+## <a name="related-topics"></a>Rubriques connexes  
   
 |Titre|Description|  
 |-----------|-----------------|  
-|[Comment : ajouter ou supprimer des connexions SharePoint](../sharepoint/how-to-add-or-remove-sharepoint-connections.md)|Décrit les différentes étapes à effectuer pour ajouter un nouveau site SharePoint au nœud **Connexions SharePoint** dans l'**Explorateur de serveurs**.|  
+|[Guide pratique pour ajouter ou supprimer des connexions SharePoint](../sharepoint/how-to-add-or-remove-sharepoint-connections.md)|Décrit les étapes requises pour ajouter un nouveau site SharePoint pour le **connexions SharePoint** nœud **l’Explorateur de serveurs**.|  
   
-## Voir aussi  
- [Server Explorer](http://msdn.microsoft.com/library/4ea29b3b-bbb2-45e4-9082-eaf635c41c4d)   
- [Developing SharePoint Solutions](../sharepoint/developing-sharepoint-solutions.md)  
+## <a name="see-also"></a>Voir aussi  
+ [Développement de solutions SharePoint](../sharepoint/developing-sharepoint-solutions.md)  
   
   

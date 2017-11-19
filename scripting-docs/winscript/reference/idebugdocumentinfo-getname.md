@@ -1,27 +1,30 @@
 ---
-title: "IDebugDocumentInfo::GetName | Microsoft Docs"
-ms.custom: ""
-ms.date: "01/18/2017"
-ms.prod: "windows-script-interfaces"
-ms.reviewer: ""
-ms.suite: ""
-ms.tgt_pltfrm: ""
-ms.topic: "reference"
+title: IDebugDocumentInfo::GetName | Documents Microsoft
+ms.custom: 
+ms.date: 01/18/2017
+ms.prod: windows-script-interfaces
+ms.reviewer: 
+ms.suite: 
+ms.tgt_pltfrm: 
+ms.topic: reference
 apiname: IDebugDocumentInfo.GetName
 apilocation: pdm.dll
-helpviewer_keywords: 
-  - "IDebugDocumentInfo::GetName"
+helpviewer_keywords: IDebugDocumentInfo::GetName
 ms.assetid: c25d73da-99b6-4c9f-82af-182b4853f81c
-caps.latest.revision: 8
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 8
+caps.latest.revision: "8"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: da369c328c2f92915c60b1c50517938bf76d5202
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.translationtype: MT
+ms.contentlocale: fr-FR
+ms.lasthandoff: 10/27/2017
 ---
-# IDebugDocumentInfo::GetName
-Retourne le nom spécifié de document.  
+# <a name="idebugdocumentinfogetname"></a>IDebugDocumentInfo::GetName
+Retourne le nom de document spécifié.  
   
-## Syntaxe  
+## <a name="syntax"></a>Syntaxe  
   
 ```  
 HRESULT GetName(  
@@ -30,24 +33,24 @@ HRESULT GetName(
 );  
 ```  
   
-#### Paramètres  
+#### <a name="parameters"></a>Paramètres  
  `dnt`  
- \[in\]  le type de nom de document à retourner.  
+ [in] Le type de nom du document à retourner.  
   
  `pbstrName`  
- \[out\]  chaîne contenant le nom.  
+ [out] Chaîne contenant le nom.  
   
-## Valeur de retour  
- La méthode retourne `HRESULT`.  Les valeurs possibles incluent, mais ne sont pas limitées à, celles dans le tableau suivant.  
+## <a name="return-value"></a>Valeur de retour  
+ La méthode retourne `HRESULT`. Les valeurs possibles sont notamment celles figurant dans le tableau suivant.  
   
 |Valeur|Description|  
-|------------|-----------------|  
+|-----------|-----------------|  
 |`S_OK`|La méthode a réussi.|  
-|`E_FAIL`|Le nom spécifié de document n'est pas connu.|  
+|`E_FAIL`|Le nom de document spécifié n’est pas connu.|  
   
-## Notes  
- Cette méthode retourne le nom spécifié de document.  
+## <a name="remarks"></a>Remarques  
+ Cette méthode retourne le nom de document spécifié.  
   
-## Voir aussi  
- [IDebugDocumentInfo, interface](../../winscript/reference/idebugdocumentinfo-interface.md)   
- [DOCUMENTNAMETYPE, énumération](../../winscript/reference/documentnametype-enumeration.md)
+## <a name="see-also"></a>Voir aussi  
+ [IDebugDocumentInfo (Interface)](../../winscript/reference/idebugdocumentinfo-interface.md)   
+ [Énumération DOCUMENTNAMETYPE](../../winscript/reference/documentnametype-enumeration.md)

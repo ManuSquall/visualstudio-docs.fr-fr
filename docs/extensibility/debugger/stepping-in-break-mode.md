@@ -1,33 +1,35 @@
 ---
-title: "Ex&#233;cution pas &#224; pas en Mode arr&#234;t | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-helpviewer_keywords: 
-  - "en mode arrêt, exécuter pas à pas"
-  - "exécution pas à pas, en mode arrêt"
-  - "débogage (débogage SDK), pas à pas en mode arrêt"
+title: "Exécution pas à pas en Mode arrêt | Documents Microsoft"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+helpviewer_keywords:
+- break mode, stepping
+- stepping, in break mode
+- debugging [Debugging SDK], stepping in break mode
 ms.assetid: b08dc8ee-6c63-4462-a097-6f525cfbb35a
-caps.latest.revision: 7
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 7
+caps.latest.revision: "7"
+author: gregvanl
+ms.author: gregvanl
+manager: ghogen
+ms.openlocfilehash: 011de9ce3e4e1445354f907dcf56a0f4ecbef6bc
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: fr-FR
+ms.lasthandoff: 10/31/2017
 ---
-# Ex&#233;cution pas &#224; pas en Mode arr&#234;t
-[!INCLUDE[vs2017banner](../../code-quality/includes/vs2017banner.md)]
-
-Les éléments suivants décrivent le processus qui se produit lorsque le débogueur est en mode arrêt et doit exécuter le code pas \- :  
+# <a name="stepping-in-break-mode"></a>Exécution pas à pas en Mode arrêt
+La liste suivante décrit le processus qui se produit lorsque le débogueur est en mode arrêt et doive parcourir le code :  
   
-## Processus de progression  
+## <a name="stepping-process"></a>Procédure pas à pas  
   
-1.  appel [IDebugProgram2 : : étape](../../extensibility/debugger/reference/idebugprogram2-step.md) avec des arguments de [STEPKIND](../../extensibility/debugger/reference/stepkind.md) et de [STEPUNIT](../../extensibility/debugger/reference/stepunit.md) pour exécuter une étape.  
+1.  Appelez [IDebugProgram2::Step](../../extensibility/debugger/reference/idebugprogram2-step.md) avec [STEPKIND](../../extensibility/debugger/reference/stepkind.md) et [STEPUNIT](../../extensibility/debugger/reference/stepunit.md) arguments d’exécuter une étape.  
   
-2.  Lorsque l'étape est terminée, envoyez [IDebugStepCompleteEvent2](../../extensibility/debugger/reference/idebugstepcompleteevent2.md) en tant qu'événement arrêtant.  
+2.  Lorsque l’étape est terminée, envoyer un [IDebugStepCompleteEvent2](../../extensibility/debugger/reference/idebugstepcompleteevent2.md) comme un événement d’arrêt.  
   
-## Voir aussi  
- [Appeler les événements de débogueur](../../extensibility/debugger/calling-debugger-events.md)
+## <a name="see-also"></a>Voir aussi  
+ [Événements d’appel du débogueur](../../extensibility/debugger/calling-debugger-events.md)

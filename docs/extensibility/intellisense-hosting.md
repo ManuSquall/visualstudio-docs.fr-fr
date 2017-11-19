@@ -1,52 +1,53 @@
 ---
-title: "H&#233;bergement d&#39;IntelliSense | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-helpviewer_keywords: 
-  - "éditeurs (Visual Studio SDK), hérités - IntelliSense d'hébergement"
+title: "IntelliSense hébergement | Documents Microsoft"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+helpviewer_keywords: editors [Visual Studio SDK], legacy - IntelliSense hosting
 ms.assetid: 20c61f8a-d32d-47e2-9c67-bf721e2cbead
-caps.latest.revision: 17
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 17
+caps.latest.revision: "17"
+author: gregvanl
+ms.author: gregvanl
+manager: ghogen
+ms.openlocfilehash: 850e4b2ef6d455bb141827fa125c4c7c6860b652
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: fr-FR
+ms.lasthandoff: 10/31/2017
 ---
-# H&#233;bergement d&#39;IntelliSense
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
-
-Visual Studio active héberger Intellisense.  L'hébergement d'IntellSense vous permet de fournir Intellisense pour le code qui n'est pas hébergé par l'éditeur de texte Visual Studio.  
+# <a name="intellisense-hosting"></a>Hébergement d’IntelliSense
+Visual Studio permet à IntelliSense d’hébergement. IntellSense hébergement vous permet de vous fournissez IntelliSense pour le code qui n’est pas hébergé par l’éditeur de texte Visual Studio.  
   
-## Intellisense qui héberge l'utilisation  
- Dans Visual Studio, tout code qui a accès à un jeu de saisies semi\-automatiques et dans une mémoire tampon de texte peut obtenir des fenêtres d'Intellisense n'importe où dans l'interface \(UI\) utilisateur.  Certains scénarios d'exemple de procédure sont saisie semi\-automatique dans la fenêtre d' **Espion** ou dans le champ de la condition d'une fenêtre de propriétés.  
+## <a name="intellisense-hosting-usage"></a>Utilisation d’hébergement IntelliSense  
+ Dans Visual Studio, tout code qui a accès à un ensemble de saisie semi-automatique et d’une mémoire tampon de texte peut procurer IntelliSense depuis n’importe où dans l’interface utilisateur (IU). Des exemples de scénarios de ce sont de saisie semi-automatique dans le **espion** fenêtre ou dans le champ de la condition d’une fenêtre de propriétés du point d’arrêt.  
   
-### interfaces d'implémentation  
+### <a name="implementation-interfaces"></a>Interfaces d’implémentation  
   
-#### IVsIntellisenseHost  
- Tout composant de l'interface utilisateur qui héberge des fenêtres indépendantes Intellisense doit prendre en charge l'interface d' <xref:Microsoft.VisualStudio.TextManager.Interop.IVsIntellisenseHost> .  Le principal affichage de texte par défaut de l'éditeur inclut une implémentation magasin d'interface d' <xref:Microsoft.VisualStudio.TextManager.Interop.IVsIntellisenseHost> pour conserver les fonctionnalités actuelles Intellisense.  Pour la plupart, les méthodes d'interface d' <xref:Microsoft.VisualStudio.TextManager.Interop.IVsIntellisenseHost> représentent un sous\-ensemble de ce qui est implémenté dans l'interface d' <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView> .  Le sous\-ensemble inclut la gestion d'Intellisense interface utilisateur, la manipulation du signe insertion et de sélection, et la fonctionnalité simple de remplacement de texte.  En outre, l'interface d' <xref:Microsoft.VisualStudio.TextManager.Interop.IVsIntellisenseHost> active Intellisense séparé « rubrique » et « contexte » afin qu'Intellisense puisse être fourni pour les rubriques qui n'existent pas directement dans la mémoire tampon de texte qui est utilisée pour le contexte.  
+#### <a name="ivsintellisensehost"></a>IVsIntellisenseHost  
+ Tout composant d’interface utilisateur qui héberge les fenêtres publicitaires IntelliSense doit prendre en charge la <xref:Microsoft.VisualStudio.TextManager.Interop.IVsIntellisenseHost> interface. L’affichage de texte de l’éditeur principal par défaut inclut une action <xref:Microsoft.VisualStudio.TextManager.Interop.IVsIntellisenseHost> implémentation pour conserver les fonctionnalités IntelliSense en cours de l’interface. Dans la plupart des cas, les méthodes de la <xref:Microsoft.VisualStudio.TextManager.Interop.IVsIntellisenseHost> interface représentent un sous-ensemble de ce qui est implémenté sur le <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView> interface. Ce sous-ensemble inclut IntelliSense UI gestion, du point d’insertion et manipulation de sélection et les fonctionnalités de remplacement de texte simple. En outre, le <xref:Microsoft.VisualStudio.TextManager.Interop.IVsIntellisenseHost> interface permet distinct IntelliSense « subject » et « contexte » afin qu’IntelliSense peut être fournie pour les objets qui n’existent pas directement dans la mémoire tampon de texte qui est utilisé pour le contexte.  
   
-#### IVsIntellisenseHost.GetHostFlags  
- Un fournisseur d'interface d' <xref:Microsoft.VisualStudio.TextManager.Interop.IVsIntellisenseHost> doit implémenter la méthode d' <xref:Microsoft.VisualStudio.TextManager.Interop.IVsIntellisenseHost.GetHostFlags%2A> pour permettre à un client de déterminer le type d'Intellisense comporte prend en charge hôte.  
+#### <a name="ivsintellisensehostgethostflags"></a>IVsIntellisenseHost.GetHostFlags  
+ Un <xref:Microsoft.VisualStudio.TextManager.Interop.IVsIntellisenseHost> fournisseur d’interface doit implémenter la <xref:Microsoft.VisualStudio.TextManager.Interop.IVsIntellisenseHost.GetHostFlags%2A> méthode pour permettre à un client déterminer quel type d’IntelliSense propose l’hôte prend en charge.  
   
- les balises d'hôte, définies dans [IntelliSenseHostFlags](../extensibility/intellisensehostflags.md), sont résumées ci\-dessous.  
+ Les indicateurs de l’hôte, définis dans [IntelliSenseHostFlags](../extensibility/intellisensehostflags.md), sont résumées ci-dessous.  
   
-|Balise d'hôte Intellisense|Description|  
-|--------------------------------|-----------------|  
-|IHF\_READONLYCONTEXT|Définition de cet indicateur signifie que la mémoire tampon de contexte est en lecture seule et la modification se produit uniquement dans le texte soumis.|  
-|IHF\_NOSEPERATESUBJECT|Définition de cet indicateur signifie qu'il n'existe aucun rubrique séparée Intellisense.  La rubrique existe dans la mémoire tampon de contexte, tel que dans le système traditionnel d' <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView> Intellisense.|  
-|IHF\_SINGLELINESUBJECT|Définition de cet indicateur signifie que la rubrique n'est pas capable multiligne, par exemple dans une modification de ligne unique dans la fenêtre d' **Espion** .|  
-|IHF\_FORCECOMMITTOCONTEXT|Si elle est définie et la mémoire tampon de contexte sera mise à jour, l'hôte active l'indicateur de lecture seule dans la mémoire tampon de contexte à ignorer et des modifications pour continuer.|  
-|IHF\_OVERTYPE|Changer \(dans la rubrique ou le contexte\) doit être effectuée dans refrappent mode.|  
+|Indicateur de l’hôte d’IntelliSense|Description|  
+|----------------------------|-----------------|  
+|IHF_READONLYCONTEXT|Choix de cette indicateur signifie que la mémoire tampon de contexte est en lecture seule et de modification se produit uniquement dans le texte de l’objet.|  
+|IHF_NOSEPERATESUBJECT|Choix cet indicateur signifie que, il n’est pas d’objet IntelliSense distinct. L’objet existe dans la mémoire tampon de contexte, telles que traditionnel <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView> système IntelliSense.|  
+|IHF_SINGLELINESUBJECT|Choix de cette indicateur signifie que l’objet n’est pas multiligne capable, par exemple, dans une seule ligne d’édition dans le **espion** fenêtre.|  
+|IHF_FORCECOMMITTOCONTEXT|Si cet indicateur est défini et que la mémoire tampon de contexte doit être mis à jour, l’hôte Active l’indicateur en lecture seule sur la mémoire tampon de contexte doivent être ignorés et les modifications pour continuer.|  
+|IHF_OVERTYPE|Modification (dans l’objet ou le contexte) doit être effectuée en mode Refrappe.|  
   
-#### IVsIntellisenseHost.BeforeCompletorCommit et IVsIntellisenseHost.AfterCompletorCommit  
- Ces méthodes de rappel sont appelées par la fenêtre d'achèvement avant et après que le texte soit validé, pour activer le prétraitement et le post\-traitement.  
+#### <a name="ivsintellisensehostbeforecompletorcommit-and-ivsintellisensehostaftercompletorcommit"></a>IVsIntellisenseHost.BeforeCompletorCommit et IVsIntellisenseHost.AfterCompletorCommit  
+ Ces méthodes de rappel sont appelées par la fenêtre de saisie semi-automatique avant et après que le texte est validé, pour activer le pré-traitement et post-traitement.  
   
-#### IVsIntellisenseCompletor  
- L'interface d' <xref:Microsoft.VisualStudio.TextManager.Interop.IVsIntellisenseCompletor> est une version Co\-creatable de la fenêtre standard d'achèvement qui est utilisée par l'environnement de développement intégré \(IDE\) \(IDE\).  Toute interface d' <xref:Microsoft.VisualStudio.TextManager.Interop.IVsIntellisenseHost> peut rapidement implémenter Intellisense à l'aide de cette interface de completor.  
+#### <a name="ivsintellisensecompletor"></a>IVsIntellisenseCompletor  
+ Le <xref:Microsoft.VisualStudio.TextManager.Interop.IVsIntellisenseCompletor> interface est une version peut être créée conjointement de la fenêtre de saisie semi-automatique standard qui est utilisée par l’environnement de développement intégré (IDE). N’importe quel <xref:Microsoft.VisualStudio.TextManager.Interop.IVsIntellisenseHost> interface peut implémenter rapidement IntelliSense à l’aide de cette interface completor.  
   
-## Voir aussi  
+## <a name="see-also"></a>Voir aussi  
  <xref:Microsoft.VisualStudio.TextManager.Interop>

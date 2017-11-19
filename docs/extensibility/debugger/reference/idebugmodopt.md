@@ -1,45 +1,46 @@
 ---
-title: "IDebugModOpt | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-helpviewer_keywords: 
-  - "Interface de IDebugModOpt"
+title: IDebugModOpt | Documents Microsoft
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+helpviewer_keywords: IDebugModOpt interface
 ms.assetid: ebd525e3-d140-4071-9d8c-41871de4125e
-caps.latest.revision: 6
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 6
+caps.latest.revision: "6"
+author: gregvanl
+ms.author: gregvanl
+manager: ghogen
+ms.openlocfilehash: fa4416bbb2a4b37ba986bb0d57b32dfa5aa319cf
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: fr-FR
+ms.lasthandoff: 10/31/2017
 ---
-# IDebugModOpt
-[!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]
-
-représente un modificateur facultatif de débogage.  
+# <a name="idebugmodopt"></a>IDebugModOpt
+Représente un modificateur facultatif de débogage.  
   
-## Syntaxe  
+## <a name="syntax"></a>Syntaxe  
   
 ```  
 IDebugModOpt : IUnknown  
 ```  
   
-## Remarques pour les appelants  
- Obtenu à partir d'un objet d' [IDebugField](../../../extensibility/debugger/reference/idebugfield.md) qui représente une classe ou une méthode.  
+## <a name="notes-for-callers"></a>Remarques pour les appelants  
+ Obtenu à partir d’un [IDebugField](../../../extensibility/debugger/reference/idebugfield.md) objet qui représente une classe ou méthode.  
   
-## Méthodes  
- Cette interface implémente la méthode suivante :  
+## <a name="methods"></a>Méthodes  
+ Cette interface implémente la méthode suivante :  
   
 |Méthode|Description|  
-|-------------|-----------------|  
-|[GetModOpts](../../../extensibility/debugger/reference/idebugmodopt-getmodopts.md)|Extrait une liste des modificateurs facultatifs.|  
+|------------|-----------------|  
+|[GetModOpts](../../../extensibility/debugger/reference/idebugmodopt-getmodopts.md)|Récupère une liste de modificateur facultatif.|  
   
-## Configuration requise  
- en\-tête : Sh.h  
+## <a name="requirements"></a>Spécifications  
+ En-tête : Sh.h  
   
- l'espace de noms : Microsoft.VisualStudio.Debugger.Interop  
+ Namespace : Microsoft.VisualStudio.Debugger.Interop  
   
- Assembly : Microsoft.VisualStudio.Debugger.Interop.dll
+ Assembly : Microsoft.VisualStudio.Debugger.Interop.dll

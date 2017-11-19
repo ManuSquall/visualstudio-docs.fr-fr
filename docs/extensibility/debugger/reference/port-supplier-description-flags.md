@@ -1,44 +1,28 @@
 ---
-title: PORT_SUPPLIER_DESCRIPTION_FLAGS | Microsoft Docs
+title: PORT_SUPPLIER_DESCRIPTION_FLAGS | Documents Microsoft
 ms.custom: 
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-sdk
+ms.technology: vs-ide-sdk
 ms.tgt_pltfrm: 
 ms.topic: article
-helpviewer_keywords:
-- PORT_SUPPLIER_DESCRIPTION_FLAGS enumeration
+helpviewer_keywords: PORT_SUPPLIER_DESCRIPTION_FLAGS enumeration
 ms.assetid: 5acee0ee-3a20-41c9-a7dc-0dadae6a5ba5
-caps.latest.revision: 7
+caps.latest.revision: "7"
+author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-translation.priority.mt:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
+ms.openlocfilehash: f0fe828d4f1aaa537cdccbb8dd353383cebb9df0
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
 ms.translationtype: MT
-ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
-ms.openlocfilehash: 05130a66c268dfe9e36304c3ab3a71918564ea89
-ms.contentlocale: fr-fr
-ms.lasthandoff: 08/28/2017
-
+ms.contentlocale: fr-FR
+ms.lasthandoff: 10/31/2017
 ---
 # <a name="portsupplierdescriptionflags"></a>PORT_SUPPLIER_DESCRIPTION_FLAGS
-Defines the metadata that can be retrieved about a port supplier.  
+Définit les métadonnées qui peuvent être récupérée sur un fournisseur de port.  
   
-## <a name="syntax"></a>Syntax  
+## <a name="syntax"></a>Syntaxe  
   
 ```cpp  
 enum enum_PORT_SUPPLIER_DESCRIPTION_FLAGS  
@@ -55,20 +39,20 @@ public enum enum_PORT_SUPPLIER_DESCRIPTION_FLAGS
 };  
 ```  
   
-## <a name="terms"></a>Terms  
+## <a name="terms"></a>Termes  
  PSDFLAG_SHOW_WARNING_ICON  
- If selected, the warning icon will be displayed in the UI.  
+ Si sélectionné, l’icône d’avertissement s’affichera dans l’interface utilisateur.  
   
-## <a name="remarks"></a>Remarks  
- This enumeration is returned by the [GetDescription](../../../extensibility/debugger/reference/idebugportsupplierdescription2-getdescription.md) method.  
+## <a name="remarks"></a>Remarques  
+ Cette énumération est retournée par la [GetDescription](../../../extensibility/debugger/reference/idebugportsupplierdescription2-getdescription.md) (méthode).  
   
-## <a name="requirements"></a>Requirements  
- Header: Msdbg.h  
+## <a name="requirements"></a>Spécifications  
+ En-tête : Msdbg.h  
   
- Namespace: Microsoft.VisualStudio.Debugger.Interop  
+ Namespace : Microsoft.VisualStudio.Debugger.Interop  
   
- Assembly: Microsoft.VisualStudio.Debugger.Interop.dll  
+ Assembly : Microsoft.VisualStudio.Debugger.Interop.dll  
   
-## <a name="see-also"></a>See Also  
- [Enumerations](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)   
+## <a name="see-also"></a>Voir aussi  
+ [Énumérations](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)   
  [GetDescription](../../../extensibility/debugger/reference/idebugportsupplierdescription2-getdescription.md)

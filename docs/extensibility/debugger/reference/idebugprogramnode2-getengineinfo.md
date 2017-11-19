@@ -1,46 +1,29 @@
 ---
-title: IDebugProgramNode2::GetEngineInfo | Microsoft Docs
+title: IDebugProgramNode2::GetEngineInfo | Documents Microsoft
 ms.custom: 
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-sdk
+ms.technology: vs-ide-sdk
 ms.tgt_pltfrm: 
 ms.topic: article
-f1_keywords:
-- IDebugProgramNode2::GetEngineInfo
-helpviewer_keywords:
-- IDebugProgramNode2::GetEngineInfo
+f1_keywords: IDebugProgramNode2::GetEngineInfo
+helpviewer_keywords: IDebugProgramNode2::GetEngineInfo
 ms.assetid: 664e7fe5-9100-4b7d-9dc5-e5a4dd0d0451
-caps.latest.revision: 13
+caps.latest.revision: "13"
+author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-translation.priority.mt:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
+ms.openlocfilehash: 5519da3e6db7422f3b8aacca3a41a45fdff06923
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
 ms.translationtype: MT
-ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
-ms.openlocfilehash: 116495c3d5fd7a3b06d8d83fd82e23584645c5a0
-ms.contentlocale: fr-fr
-ms.lasthandoff: 08/28/2017
-
+ms.contentlocale: fr-FR
+ms.lasthandoff: 10/31/2017
 ---
 # <a name="idebugprogramnode2getengineinfo"></a>IDebugProgramNode2::GetEngineInfo
-Gets the name and identifier of the debug engine (DE) running a program.  
+Obtient le nom et l’identificateur du moteur de débogage (DE) un programme en cours d’exécution.  
   
-## <a name="syntax"></a>Syntax  
+## <a name="syntax"></a>Syntaxe  
   
 ```cpp  
 HRESULT GetEngineInfo (   
@@ -56,15 +39,15 @@ int GetEngineInfo(
 );  
 ```  
   
-#### <a name="parameters"></a>Parameters  
+#### <a name="parameters"></a>Paramètres  
  `pbstrEngine`  
- [out] Returns the name of the DE running the program (C++-specific: this can be a null pointer indicating that the caller is not interested in the name of the engine).  
+ [out] Retourne le nom de la DE l’exécution du programme (spécifique à C++ : cela peut être un pointeur null, indiquant que l’appelant n’est pas intéressés par le nom du moteur).  
   
  `pguidEngine`  
- [out] Returns the globally unique identifier of the DE running the program (C++-specific: this can be a null pointer indicating that the caller is not interested in the GUID of the engine).  
+ [out] Retourne l’identificateur global unique de la DE l’exécution du programme (spécifique à C++ : cela peut être un pointeur null, indiquant que l’appelant n’est pas intéressé par le GUID du moteur).  
   
-## <a name="return-value"></a>Return Value  
- If successful, returns `S_OK`; otherwise, returns an error code.  
+## <a name="return-value"></a>Valeur de retour  
+ En cas de réussite, retourne `S_OK`; sinon, retourne un code d’erreur.  
   
-## <a name="see-also"></a>See Also  
+## <a name="see-also"></a>Voir aussi  
  [IDebugProgramNode2](../../../extensibility/debugger/reference/idebugprogramnode2.md)

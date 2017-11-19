@@ -1,74 +1,58 @@
 ---
-title: 'Walkthrough: Using a Shortcut Key with an Editor Extension | Microsoft Docs'
+title: "Procédure pas à pas : Utilisation une touche de raccourci avec une Extension de l’éditeur | Documents Microsoft"
 ms.custom: 
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-sdk
+ms.technology: vs-ide-sdk
 ms.tgt_pltfrm: 
 ms.topic: article
-helpviewer_keywords:
-- editors [Visual Studio SDK], new - link keystrokes to commands
+helpviewer_keywords: editors [Visual Studio SDK], new - link keystrokes to commands
 ms.assetid: cf6cc6c6-5a65-4f90-8f14-663decf74672
-caps.latest.revision: 32
+caps.latest.revision: "32"
+author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-translation.priority.mt:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
+ms.openlocfilehash: 8066ac52076afd9c0f8cb697ca51327188c9c216
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
 ms.translationtype: MT
-ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
-ms.openlocfilehash: af4e580195d4867aebe6579bb4a4de15eaee1a8b
-ms.contentlocale: fr-fr
-ms.lasthandoff: 08/28/2017
-
+ms.contentlocale: fr-FR
+ms.lasthandoff: 10/31/2017
 ---
-# <a name="walkthrough-using-a-shortcut-key-with-an-editor-extension"></a>Walkthrough: Using a Shortcut Key with an Editor Extension
-You can respond to shortcut keys in your editor extension. The following walkthrough shows how to add a view adornment to a text view by using a shortcut key. This walkthrough is based on the viewport adornment editor template, and it allows you to add the adornment by using the + character.  
+# <a name="walkthrough-using-a-shortcut-key-with-an-editor-extension"></a>Procédure pas à pas : Utilisation une touche de raccourci avec une Extension de l’éditeur
+Vous pouvez répondre aux touches de raccourci dans votre extension de l’éditeur. La procédure suivante montre comment ajouter un ornement de la vue à une vue de texte à l’aide d’une touche de raccourci. Cette procédure pas à pas est basée sur le modèle de l’éditeur d’ornement de la fenêtre d’affichage, et il vous permet d’ajouter l’ornement à l’aide du caractère « + ».  
   
-## <a name="prerequisites"></a>Prerequisites  
- Starting in Visual Studio 2015, you do not install the Visual Studio SDK from the download center. It is included as an optional feature in Visual Studio setup. You can also install the VS SDK later on. For more information, see [Installing the Visual Studio SDK](../extensibility/installing-the-visual-studio-sdk.md).  
+## <a name="prerequisites"></a>Conditions préalables  
+ À partir de Visual Studio 2015, vous n’installez pas le Kit de développement logiciel Visual Studio à partir du centre de téléchargement. Il est inclus comme une fonctionnalité facultative dans le programme d’installation de Visual Studio. Vous pouvez également installer le kit SDK VS ultérieurement. Pour plus d’informations, consultez [l’installation de Visual Studio SDK](../extensibility/installing-the-visual-studio-sdk.md).  
   
-## <a name="creating-a-managed-extensibility-framework-mef-project"></a>Creating a Managed Extensibility Framework (MEF) Project  
+## <a name="creating-a-managed-extensibility-framework-mef-project"></a>Création d’un projet Managed Extensibility Framework (MEF)  
   
-1.  Create a C# VSIX project. (In the **New Project** dialog, select **Visual C# / Extensibility**, then **VSIX Project**.) Name the solution `KeyBindingTest`.  
+1.  Créez un projet VSIX c#. (Dans le **nouveau projet** boîte de dialogue, sélectionnez **Visual c# / extensibilité**, puis **projet VSIX**.) Nommez la solution `KeyBindingTest`.  
   
-2.  Add an Editor Text Adornment item template to the project and name it `KeyBindingTest`. For more information, see [Creating an Extension with an Editor Item Template](../extensibility/creating-an-extension-with-an-editor-item-template.md).  
+2.  Ajouter un modèle d’élément ornement de texte de l’éditeur au projet et nommez-le `KeyBindingTest`. Pour plus d’informations, consultez [création d’une Extension avec un éditeur de modèle d’élément](../extensibility/creating-an-extension-with-an-editor-item-template.md).  
   
-3.  Add the following references and set **CopyLocal** to `false`:  
+3.  Ajoutez les références suivantes et définissez **CopyLocal** à `false`:  
   
      Microsoft.VisualStudio.Editor  
   
-     Microsoft.VisualStudio.OLE.Interop  
+     Assemblys Microsoft.VisualStudio.OLE.Interop  
   
      Microsoft.VisualStudio.Shell.14.0  
   
      Microsoft.VisualStudio.TextManager.Interop  
   
- In the KeyBindingTest class file, change the class name to PurpleCornerBox. Use the light bulb that appears in the left margin to make the other appropriate changes. Inside the constructor, change the name of the adornment layer from **KeyBindingTest** to **PurpleCornerBox**:  
+ Dans le fichier de classe KeyBindingTest, modifiez le nom de classe pour PurpleCornerBox. Utilisez l’ampoule qui s’affiche dans la marge de gauche pour effectuer les autres modifications appropriées. Dans le constructeur, modifier le nom de la couche d’ornement de **KeyBindingTest** à **PurpleCornerBox**:  
   
 ```csharp  
 this.layer = view.GetAdornmentLayer("PurpleCornerBox");  
 ```  
   
-## <a name="defining-the-command-filter"></a>Defining the Command Filter  
- The command filter is an implementation of <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget>, which handles the command by instantiating the adornment.  
+## <a name="defining-the-command-filter"></a>Définir le filtre de commande  
+ Le filtre de commande est une implémentation de <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget>, qui gère la commande en instanciant l’ornement.  
   
-1.  Add a class file and name it `KeyBindingCommandFilter`.  
+1.  Ajoutez un fichier de classe et nommez-le `KeyBindingCommandFilter`.  
   
-2.  Add the following using statements.  
+2.  Ajoutez les instructions using suivantes.  
   
     ```csharp  
     using System;  
@@ -79,13 +63,13 @@ this.layer = view.GetAdornmentLayer("PurpleCornerBox");
   
     ```  
   
-3.  The class named KeyBindingCommandFilter should inherit from <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget>.  
+3.  Doit hériter de la classe nommée KeyBindingCommandFilter <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget>.  
   
     ```csharp  
     internal class KeyBindingCommandFilter : IOleCommandTarget  
     ```  
   
-4.  Add private fields for the text view, the next command in the command chain, and a flag to represent whether the command filter has already been added.  
+4.  Ajouter des champs privés pour l’affichage de texte, la commande suivante dans la chaîne de commande et d’un indicateur pour représenter si le filtre de commande a déjà été ajouté.  
   
     ```csharp  
     private IWpfTextView m_textView;  
@@ -94,7 +78,7 @@ this.layer = view.GetAdornmentLayer("PurpleCornerBox");
     internal bool m_adorned;  
     ```  
   
-5.  Add a constructor that sets the text view.  
+5.  Ajoutez un constructeur qui définit l’affichage de texte.  
   
     ```csharp  
     public KeyBindingCommandFilter(IWpfTextView textView)  
@@ -104,7 +88,7 @@ this.layer = view.GetAdornmentLayer("PurpleCornerBox");
     }  
     ```  
   
-6.  Implement the `QueryStatus()` method as follows.  
+6.  Implémentez la `QueryStatus()` méthode comme suit.  
   
     ```vb  
     int IOleCommandTarget.QueryStatus(ref Guid pguidCmdGroup, uint cCmds, OLECMD[] prgCmds, IntPtr pCmdText)  
@@ -113,7 +97,7 @@ this.layer = view.GetAdornmentLayer("PurpleCornerBox");
     }  
     ```  
   
-7.  Implement the `Exec()` method so that it adds a purple box to the view if a + character is typed.  
+7.  Implémentez la `Exec()` méthode afin qu’il ajoute une zone violette à la vue si un + caractère est tapé.  
   
     ```csharp  
     int IOleCommandTarget.Exec(ref Guid pguidCmdGroup, uint nCmdID, uint nCmdexecopt, IntPtr pvaIn, IntPtr pvaOut)  
@@ -137,10 +121,10 @@ this.layer = view.GetAdornmentLayer("PurpleCornerBox");
   
     ```  
   
-## <a name="adding-the-command-filter"></a>Adding the Command Filter  
- The adornment provider must add a command filter to the text view. In this example, the provider implements <xref:Microsoft.VisualStudio.Editor.IVsTextViewCreationListener> to listen to text view creation events. This adornment provider also exports the adornment layer, which defines the Z-order of the adornment.  
+## <a name="adding-the-command-filter"></a>Ajout du filtre de commande  
+ Le fournisseur d’ornement doit ajouter un filtre de commande à l’affichage de texte. Dans cet exemple, le fournisseur implémente <xref:Microsoft.VisualStudio.Editor.IVsTextViewCreationListener> pour écouter les événements de création de vue de texte. Ce fournisseur d’ornement exporte également la couche d’ornement, qui définit l’ordre de plan de l’ornement.  
   
-1.  In the KeyBindingTestTextViewCreationListener file, add the following using statements:  
+1.  Dans le fichier KeyBindingTestTextViewCreationListener, ajoutez le code suivant à l’aide des instructions :  
   
     ```csharp  
     using System;  
@@ -155,7 +139,7 @@ this.layer = view.GetAdornmentLayer("PurpleCornerBox");
   
     ```  
   
-2.  In the adornment layer definition, change the name of the AdornmentLayer from **KeyBindingTest** to **PurpleCornerBox**.  
+2.  Dans la définition de la couche d’ornement, modifier le nom de la AdornmentLayer de **KeyBindingTest** à **PurpleCornerBox**.  
   
     ```csharp  
     [Export(typeof(AdornmentLayerDefinition))]  
@@ -164,7 +148,7 @@ this.layer = view.GetAdornmentLayer("PurpleCornerBox");
     public AdornmentLayerDefinition editorAdornmentLayer;  
     ```  
   
-3.  To get the text view adapter, you must import the <xref:Microsoft.VisualStudio.Editor.IVsEditorAdaptersFactoryService>.  
+3.  Pour obtenir de l’adaptateur de vue de texte, vous devez importer le <xref:Microsoft.VisualStudio.Editor.IVsEditorAdaptersFactoryService>.  
   
     ```csharp  
     [Import(typeof(IVsEditorAdaptersFactoryService))]  
@@ -172,7 +156,7 @@ this.layer = view.GetAdornmentLayer("PurpleCornerBox");
   
     ```  
   
-4.  Change the <xref:Microsoft.VisualStudio.Text.Editor.IWpfTextViewCreationListener.TextViewCreated%2A> method so that it adds the `KeyBindingCommandFilter`.  
+4.  Modifier la <xref:Microsoft.VisualStudio.Text.Editor.IWpfTextViewCreationListener.TextViewCreated%2A> méthode afin qu’il ajoute le `KeyBindingCommandFilter`.  
   
     ```csharp  
     public void TextViewCreated(IWpfTextView textView)  
@@ -181,7 +165,7 @@ this.layer = view.GetAdornmentLayer("PurpleCornerBox");
     }  
     ```  
   
-5.  The `AddCommandFilter` handler gets the text view adapter and adds the command filter.  
+5.  Le `AddCommandFilter` gestionnaire obtient l’adaptateur de vue de texte et ajoute le filtre de commande.  
   
     ```csharp  
     void AddCommandFilter(IWpfTextView textView, KeyBindingCommandFilter commandFilter)  
@@ -205,10 +189,10 @@ this.layer = view.GetAdornmentLayer("PurpleCornerBox");
     }  
     ```  
   
-## <a name="making-the-adornment-appear-on-every-line"></a>Making the Adornment Appear on Every Line  
- The original adornment appeared on every character 'a' in a text file. Now that we have changed the code to add the adornment in response to the '+' character, it adds the adornment only on the line where the '+' is typed. We can change the adornment code so that the adornment once more appears on every 'a'.  
+## <a name="making-the-adornment-appear-on-every-line"></a>Rendre l’ornement apparaissent sur chaque ligne.  
+ L’ornement d’origine figurait sur tous les caractères « a » dans un fichier texte. Maintenant que nous avons modifié le code pour ajouter l’ornement en réponse au caractère « + », il ajoute l’ornement uniquement sur la ligne où le « + » est tapée. Nous pouvons modifier le code d’ornement afin qu’une fois de plus l’ornement apparaisse sur chaque « a ».  
   
- In the KeyBindingTest.cs file, change the CreateVisuals() method to iterate through all the lines in the view to decorate the 'a' character.  
+ Dans le fichier KeyBindingTest.cs, modifier la méthode CreateVisuals() pour parcourir toutes les lignes dans la vue pour décorer le caractère « a ».  
   
 ```csharp  
 private void CreateVisuals(ITextViewLine line)  
@@ -252,10 +236,10 @@ private void CreateVisuals(ITextViewLine line)
 }  
 ```  
   
-## <a name="building-and-testing-the-code"></a>Building and Testing the Code  
+## <a name="building-and-testing-the-code"></a>Création et test du code  
   
-1.  Build the KeyBindingTest solution and run it in the experimental instance.  
+1.  Générez la solution KeyBindingTest et l’exécuter dans l’instance expérimentale.  
   
-2.  Create or open a text file. Type some words containing the character 'a', and then type + anywhere in the text view.  
+2.  Créez ou ouvrez un fichier texte. Tapez des mots contenant le caractère « a », puis tapez + n’importe où dans l’affichage de texte.  
   
-     A purple square should appear on every 'a' character in the file.
+     Un carré violet doit apparaître sur chaque caractère « a » dans le fichier.

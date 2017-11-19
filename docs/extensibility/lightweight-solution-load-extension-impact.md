@@ -1,101 +1,77 @@
 ---
-title: "Charge une Solution légère (LSL) | Documents Microsoft"
-ms.custom: 
-ms.date: 01/17/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
-helpviewer_keywords:
-- VSPackages, lightweight solution load
-- VSPackages, fast solution load
-ms.assetid: 0a71d91e-dc71-4d6b-bbfe-9e4ecd9e5fd1
-caps.latest.revision: 1
-ms.author: gregvanl
-manager: ghogen
-translation.priority.mt:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
-translationtype: Machine Translation
-ms.sourcegitcommit: 221f4911981deec0330f76a82c0cc8a1b968e56e
-ms.openlocfilehash: 28957abccc03001546038da10cf4ff7bbe21f63e
-ms.lasthandoff: 02/22/2017
-
+redirect_url: /visualstudio/extensibility/what-s-new-in-the-visual-studio-2017-sdk/
+ms.openlocfilehash: 5706797ed88dce5b2f481b17d99e9501b960ddca
+ms.sourcegitcommit: fb751e41929f031d1a9247bc7c8727312539ad35
+ms.translationtype: MT
+ms.contentlocale: fr-FR
+ms.lasthandoff: 11/15/2017
 ---
-# <a name="lightweight-solution-load-lsl"></a>Charge une Solution légère (LSL)
+titre : « chargement de Solution légère (LSL) | Ms.custom de documents Microsoft » : » « ms.date : « 17/01/2017 » ms.reviewer : » « ms.suite : » « ms.technology : 
+  - « vs-ide sdk » ms.tgt_pltfrm : » « ms.topic : « de l’article « helpviewer_keywords : 
+  - « Charger les VSPackages, solution légère »
+  - « VSPackages, rapide la charge de la solution » de ms.assetid : 0a71d91e-dc71-4d6b-bbfe-9e4ecd9e5fd1 caps.latest.revision : 1 auteur : « gregvanl » ms.author : le gestionnaire « gregvanl » : ghogen
+---
+# <a name="lightweight-solution-load-lsl"></a>Solution légère charge (LSL)
 
 ## <a name="background-information-on-lsl"></a>Obtenir des informations générales sur LSL
 
-Charge de Solution légère est une nouvelle fonctionnalité de 2017 VS qui réduit considérablement le temps de charge Solution, ce qui vous permet d’être productifs plus rapidement. Lorsque LSL est activée, Visual Studio entièrement ne chargera pas les projets jusqu'à ce que vous commencerez à les utiliser.
+Chargement de Solution légère est une nouvelle fonctionnalité de 2017 VS qui réduit considérablement le temps de chargement de solutions, ce qui vous permet d’être plus productifs rapidement. Lorsque LSL est activée, Visual Studio entièrement ne chargera pas les projets jusqu'à ce que vous commencerez à les utiliser.
 
-LSL affecte les extensions Visual Studio. Dont les fonctions dépendent d’un projet à charger les extensions ne peuvent pas fonctionne ou mal fonctionner sans suivant les instructions détaillées dans ce document.
+LSL peut affecter les extensions Visual Studio. Dont les fonctions dépendent d’un projet à charger les extensions ne peuvent pas de travail ou de mal fonctionner sans suivant les instructions détaillées dans ce document.
 
 Pour plus d’informations sur LSL, utilisez les liens suivants :
 
-* [Solution légère charge Blog](https://blogs.msdn.microsoft.com/visualstudio/2016/10/11/shorter-solution-load-time-in-visual-studio-15)
-* Questions ? Contactez-nous[lslsupport@microsoft.com](mailto:lslsupport@microsoft.com)
+* [Blog de charge de Solution légère](https://blogs.msdn.microsoft.com/visualstudio/2016/10/11/shorter-solution-load-time-in-visual-studio-15)
+* Questions ? Nous contacter[lslsupport@microsoft.com](mailto:lslsupport@microsoft.com)
 
-## <a name="enable-the-setting-to-load-projects-in-deferred-mode"></a>Activer le paramètre pour charger des projets en mode « différé »
+## <a name="enable-the-setting-to-load-projects-in-deferred-mode"></a>Activer le paramètre de charger ces projets en mode « différé »
 
 1. Fermez toute solution actuellement ouverte.
-2. Accédez à **outils** > **Option** > **projets et Solutions** > **général** page Paramètres.
-3. Vérifier la **charge de solution légère** case pour activer le paramètre.
+2. Accédez à **outils** > **Option** > **projets et Solutions** > **général** paramètres page.
+3. Vérifiez le **charge de la solution légère** case pour activer le paramètre.
 
 Lorsqu’une solution est ouverte avec le paramètre ci-dessus est activé, l’IDE affiche une vue régulière des projets, mais les projets ne sont pas chargés.
 
-## <a name="differences-between-deferred-load-and-regular-load-of-projects"></a>Différences entre le chargement différé et charge régulière des projets
+## <a name="differences-between-deferred-load-and-regular-load-of-projects"></a>Différences entre le chargement différé et la charge régulière des projets
 
-Avec une charge Lightweight solutions, projets ne sont pas chargés lors de l’ouverture d’une solution. Ces « projets différées », une hiérarchie de stub est créée. L’Explorateur de solutions présente la vue attendue des icônes et des noms de projets, il n’existe aucune indication de l’interface utilisateur certains ou tous les projets sont en « mode différé ».
+Avec une charge légère Solution, les projets ne sont pas chargés lors de l’ouverture d’une solution. Pour ces « projets différées », une hiérarchie de stub est créée. L’Explorateur de solutions affiche affichage attendu avec des icônes et les noms des projets, il n’existe aucune indication de l’interface utilisateur que certains ou tous les projets sont en « mode différé ».
 
-Avec LSL activé, les extensions ne sont plus attendus que les projets nécessaires sont déjà entièrement chargés lorsqu’une opération est déclenchée. Les appelants doivent vérifier s’ils ont une dépendance sur les projets chargés. Si une extension nécessite des informations d’un projet différée, l’extension procédez comme suit :
+Avec LSL activée, les extensions ne sont plus attendus que les projets nécessaires sont déjà entièrement chargés lorsqu’une opération est déclenchée. Les appelants doivent vérifier s’ils ont une dépendance sur les projets chargés. Si une extension requiert des informations à partir d’un projet différée, l’extension comme suit :
 
-1. Charger les projets que nécessaire.
-2. Utilisez la nouvelle **API de l’espace de travail** pour obtenir des informations à partir d’un projet différé sans le charger.
+1. Charger l’ou les projets que nécessaire.
+2. Utilisez la nouvelle **API de l’espace de travail** pour obtenir des informations à partir d’un projet différé sans son chargement.
 
-La nouvelle **API de l’espace de travail** autoriser les extensions obtenir des informations, telles que le projet propriétaire d’un fichier source et tous les fichiers sources d’un projet spécifié, à partir d’un projet différé. Dans certains cas, qu’un ensemble limité de projets doivent être chargés. L’option de droite est un compromis entre la fréquence des opérations, de facilité d’autres approches et l’expérience utilisateur globale.
+La nouvelle **API de l’espace de travail** autoriser les extensions obtenir plus d’informations, telles que le projet propriétaire d’un fichier source et tous les fichiers sources pour un projet spécifié, à partir d’un projet différé. Dans certains cas, seul un jeu limité de projets doivent être chargés. L’option de droite est un compromis entre la fréquence des opérations, de facilité d’autres approches et l’expérience utilisateur globale.
 
-Tous les projets et charge de solution liées toujours les événements sont déclenchés dans le mode LSL. Cela permet aux composants d’obtenir le comportement attendu à partir de Visual Studio et ils se comportent de la même manière que lorsque les projets sont chargés. Le chargement du projet associé le travail effectué au cours de la solution ouverte est considérablement réduit si.
+Tous les projets et chargement solution liées toujours les événements sont déclenchés dans le mode LSL. Ainsi, les composants pour obtenir le comportement attendu à partir de Visual Studio et ils se comportent de la même manière que lorsque les projets sont chargés. Le chargement du projet liées le travail effectué au cours de la solution ouverte est considérablement réduit si.
 
 ## <a name="ui-requirements-and-changes"></a>Modifications et les spécifications de l’interface utilisateur
 
-L’interface utilisateur doit traiter des projets chargés et différées comme égale. Cela signifie que toute action qui peut être effectuée sur un projet chargé doit être applicable aux projets différées, à quelques exceptions près. Pour des fonctions d’aide pour cela, il existe de modifications des API de la plateforme existant, ainsi que l’introduction de nouvelles API.
+L’interface utilisateur doit traiter des projets chargés et différées comme égale. Cela signifie que toute action qui peut être effectuée sur un projet chargé doit être applicable aux projets différées, à quelques exceptions près. Pour des fonctions d’aide pour cela, des modifications à certaines API de la plateforme existant, ainsi que l’introduction de nouvelles API.
 
-### <a name="expectations-for-ui"></a>Prévisions en termes de l’interface utilisateur
+### <a name="expectations-for-ui"></a>Attentes en matière de l’interface utilisateur
 
-1. Fonctionnalités doivent afficher qu'aucun visual ne différences selon si les projets sont chargés ou différées.
-2. Toute liste ou énumération sur les projets chargés de la solution doit inclure des projets différées.
-3. Aucune action disponible pour un projet chargé doit être disponible pour un projet différé.
+1. Fonctionnalités doivent afficher qu'aucun élément visuel des différences selon si les projets sont chargées ou différées.
+2. Toute liste ou une énumération sur des projets chargés de la solution doit inclure des projets différées.
+3. Toute action disponible par rapport à un projet chargé doit être disponible pour un projet différé.
 4. Fonctionnalités doit demande de chargement des projets uniquement lorsque :
-  * Il existe une interaction directe de l’utilisateur avec une fonctionnalité. Ne chargez pas préemptive projets.
-  * Un mouvement de « Voir plus de résultats » est effectué par l’utilisateur. Voir ci-dessous pour cette règle de l’interface utilisateur.
-  * Uniquement le projet entièrement chargé peut être utilisé pour satisfaire l’action. Utilisez LSL et API de projet ouvertes autant que possible et envoyer la demande de fonctionnalité demande lorsque la fonctionnalité est manquante.
+  * Interaction directe de l’utilisateur avec une fonctionnalité est. Ne chargez pas projets de manière préemptive.
+  * Un mouvement de « Consultez plus les résultats » est effectué par l’utilisateur. Voir ci-dessous pour cette règle de l’interface utilisateur.
+  * Uniquement le projet entièrement chargé peut être utilisé pour répondre à l’action. Utilisez LSL et ouvrez API de projet chaque fois que possible et envoyer la demande de fonctionnalité demande lorsque la fonctionnalité est absente.
 
-### <a name="changes-in-platform-apis-to-help-drive-ui"></a>Modifications dans les API qui permettent l’interface utilisateur de la plate-forme
+### <a name="changes-in-platform-apis-to-help-drive-ui"></a>Modifications dans les API qui permettent l’interface utilisateur de la plateforme
 
-1. Nouvelles API est fournies pour demander la solution si elle a été ouverte en mode Lightweight Solution charge et combien de projets est dans cet état.
+1. Nouvelles API est fournies pour demander la solution si elle a été ouverte en mode de chargement de Solution légère et combien de projets se trouvent dans un état différé.
 2. Nouvel événement est fourni pour lorsque tous les projets différées sont chargés dans la solution.
-3. Nouvelles API est fournies pour demander un projet si elle est différée.
+3. Nouvelles API est fournies pour demander à un projet si elle est différée.
 4. API existantes est mises à jour pour inclure des projets différées lors de la demande pour les projets chargés.
-5. API existantes est mises à jour express la solution est entièrement chargée une fois la solution ouverte.
+5. API existantes est mises à jour pour express la solution est entièrement chargée une fois la solution ouverte.
 
-### <a name="how-to-add-see-more-results-for-a-feature"></a>Comment ajouter « Voir plus de résultats » pour une fonctionnalité.
+### <a name="how-to-add-see-more-results-for-a-feature"></a>Comment ajouter « Consultez plus les résultats » pour une fonctionnalité.
 
-Les fonctions qui effectuent une requête sur le contenu des projets doivent évaluer l’impact de projets différées. Dans certaines situations, fonctionnalités obtenir les résultats de leur requête LSL et API de l’espace de travail pour un projet différé. Dans d’autres cas, les limites d’une fonctionnalité requièrent des projets à charger. Ces deux situations doivent fournir un nouveau mouvement « Voir plus de résultats » qui permet aux utilisateurs de charger entièrement les projets et envoyer une nouvelle requête. Cette opération Active les fonctionnalités afin de donner une meilleure approximation lorsqu’il existe des projets différées tout en donnant à l’utilisateur un moyen d’obtenir le résultat idéal lorsque les projets sont effectivement chargées.
+Les fonctions qui effectuent une requête sur le contenu des projets doivent considérer l’impact des projets différées. Dans certaines situations, fonctionnalités peuvent obtenir les résultats de leur requête LSL et API de l’espace de travail pour un projet différé. Dans d’autres cas, les limitations d’une fonctionnalité requièrent des projets à charger. Ces deux situations doivent fournir un mouvement « Voir des résultats plus » nouvelle qui permet aux utilisateurs de chargement complet des projets et la nouvelle requête. Cette opération Active les fonctionnalités afin de donner une meilleure approximation lorsqu’il existe des projets différées en donnant à l’utilisateur un moyen d’obtenir le résultat idéal lorsque les projets sont réellement chargés.
 
-L’algorithme général des fonctionnalités doit être :
+L’algorithme général pour les fonctionnalités doit être :
 
 ### <a name="when-the-query-is-performed-over-a-single-project"></a>Lorsque la requête est exécutée sur un seul projet
 
@@ -134,7 +110,7 @@ public void OnClick_SeeMoreResults()
 }
 ```
 
-### <a name="when-the-query-is-performed-over-the-whole-solution"></a>Lorsque la requête est exécutée sur l’ensemble de la Solution
+### <a name="when-the-query-is-performed-over-the-whole-solution"></a>Lorsque la requête est exécutée sur la Solution dans son intégralité
 
 ```csharp
 // Requires Microsoft.VisualStudio.Shell.Interop.15.0.DesignTime.dll
@@ -150,7 +126,7 @@ public void Query()
     var solution = // the solution
     object deferredCount = 0;
     int hr = ((IVsSolution)solution).GetProperty((int)__VSPROPID7.VSPROPID_DeferredProjectCount, out deferredCount);
-    if (ErrorHandler.Succeeded(hr) && ((uint)deferredCount > 0))
+    if (ErrorHandler.Succeeded(hr) && ((int)deferredCount > 0))
     {
         ShowSeeMoreResults();
     }
@@ -179,36 +155,36 @@ public void OnClick_SeeMoreResults()
 
 IVsSolution7.IsSolutionLoadDeferred (out bool différée)
 
-Retourne la valeur true si la solution en cours a été chargée en mode différé. Notez que si la solution a été initialement chargée en mode différé, même si tous les projets différées sont finalement chargé dans la session actuelle (suite à des mouvements de l’utilisateur explicite ou forcée par les opérations), cette propriété retourne toujours true.
+Retourne la valeur true si la solution en cours a été chargée en mode différé. Notez que si la solution a été chargée initialement en mode différé, même si tous les projets différées sont finalement chargé dans la session actuelle (en raison des mouvements de l’utilisateur explicite ou forcée par les opérations), cette propriété retourne toujours true.
 
 __VSPROPID7. VSPROPID_DeferredProjectCount
 
-Retourne le nombre de projets actuellement en mode différé. Cette propriété a la valeur dans la plage [0, VSPROPID_ProjectCount].
+Retourne le nombre de projets actuellement en mode différé. Cette propriété a une valeur dans la plage [0, VSPROPID_ProjectCount].
 
 __VSHPROPID9. VSHPROPID_IsDeferred
 
-Retourne true si la hiérarchie d’un projet est en état de chargement différé.
+Retourne la valeur true si une hiérarchie de projet est en état de chargement différé.
 
 __VSENUMPROJFLAGS3 avec les valeurs EPF_DEFERRED et EPF_NOTDEFERRED
 
-Ces indicateurs peuvent être passés à [IVsSolution.GetProjectEnum()](https://msdn.microsoft.com/en-us/library/microsoft.visualstudio.shell.interop.ivssolution.getprojectenum.aspx) d’itérer sur les projets différées et non différée.
+Ces indicateurs peuvent être passés à [IVsSolution.GetProjectEnum()](https://msdn.microsoft.com/en-us/library/microsoft.visualstudio.shell.interop.ivssolution.getprojectenum.aspx) pour itérer au sein des projets différées et non différé.
 
 ### <a name="new-events"></a>Nouveaux événements
 
 IVsSolutionEvents7.OnAfterLoadAllDeferredProjects()
 
-Cet événement est déclenché une fois que tous les projets différées ont été chargés. À ce stade, VSPROPID_DeferredProjectCount est égal à 0. Notez que cet événement n’est pas déclenché dans le cadre de la charge de la solution et ne peut pas être déclenché à tout dans une session. Il est déclenché uniquement si tous les projets différées sont chargés.
+Cet événement est déclenché une fois que tous les projets différées ont été chargés. À ce stade, VSPROPID_DeferredProjectCount est égal à 0. Notez que cet événement n’est pas déclenché dans le cadre de la charge de la solution et ne peut pas être déclenché du tout dans une session. Il est déclenché uniquement si tous les projets différées sont chargés.
 
-### <a name="changes-to-existing-api"></a>Modifications apportées aux API existante
+### <a name="changes-to-existing-api"></a>Modifications apportées aux API existantes
 
-* En passant [__VSENUMPROJFLAGS](https://msdn.microsoft.com/en-us/library/microsoft.visualstudio.shell.interop.__vsenumprojflags.aspx). EPF_LOADEDINSOLUTION à [IVsSolution.GetProjectEnum()](https://msdn.microsoft.com/en-us/library/microsoft.visualstudio.shell.interop.ivssolution.getprojectenum.aspx) retourne différée des projets.
-* En passant [__VSENUMPROJFLAGS](https://msdn.microsoft.com/en-us/library/microsoft.visualstudio.shell.interop.__vsenumprojflags.aspx). EPF_UNLOADEDINSOLUTION ne retourne pas de projets différées.
-* [KnownUIContexts.SolutionExistsAndFullyLoadedContext](https://msdn.microsoft.com/en-us/library/microsoft.visualstudio.shell.knownuicontexts.solutionexistsandfullyloadedcontext.aspx) est défini sur true sur la solution ouverte. Projets différés sont traités comme charger de manière à ce contexte a beaucoup antérieure dans le mode non LSL.
-* [__VSPROPID](https://msdn.microsoft.com/en-us/library/microsoft.visualstudio.shell.interop.__vspropid.aspx). VSPROPID_ProjectCount renvoie la somme des projets chargés et différés.
+* Passage [__VSENUMPROJFLAGS](https://msdn.microsoft.com/en-us/library/microsoft.visualstudio.shell.interop.__vsenumprojflags.aspx). EPF_LOADEDINSOLUTION à [IVsSolution.GetProjectEnum()](https://msdn.microsoft.com/en-us/library/microsoft.visualstudio.shell.interop.ivssolution.getprojectenum.aspx) retourne différée des projets.
+* Passage [__VSENUMPROJFLAGS](https://msdn.microsoft.com/en-us/library/microsoft.visualstudio.shell.interop.__vsenumprojflags.aspx). EPF_UNLOADEDINSOLUTION ne retourne pas les projets différées.
+* [KnownUIContexts.SolutionExistsAndFullyLoadedContext](https://msdn.microsoft.com/en-us/library/microsoft.visualstudio.shell.knownuicontexts.solutionexistsandfullyloadedcontext.aspx) est défini sur true sur la solution ouverte. Projets différés sont traités comme des charger de manière à ce contexte a la valeur très tôt dans le mode non-LSL.
+* [__VSPROPID](https://msdn.microsoft.com/en-us/library/microsoft.visualstudio.shell.interop.__vspropid.aspx). VSPROPID_ProjectCount retourne la somme des projets chargés et différées.
 
 ## <a name="helpful-code-snippets"></a>Extraits de code utiles
 
-### <a name="check-if-a-solution-was-opened-in-deferred-load-mode"></a>Vérifiez si une solution a été ouvert en mode de chargement différé
+### <a name="check-if-a-solution-was-opened-in-deferred-load-mode"></a>Vérifier si une solution a été ouvert en mode de chargement différé
 
 ```csharp
 /// <summary>
@@ -231,11 +207,11 @@ Cet événement est déclenché une fois que tous les projets différées ont é
 /// </summary>
 /// <param name="projectsToLoad">A set of deferred and/or loaded projects to ensure are loaded.</param>
 /// <returns>True if the project is deferred. False if it is any other state, such as loaded, unloaded, or virtual.</returns>
-/// <remarks>Requires Microsoft.VisualStudio.Shell.15.0.dll</remarks>
+/// <remarks>Requires Microsoft.VisualStudio.Shell.Interop.15.0.DesignTime.dll</remarks>
 public static bool IsInDeferredState(IVsHierarchy vsHierarchy)
 {
     object deferred;
-    int hr = vsHierarchy.GetProperty((int)VSConstants.VSITEMID.Root, (uint)__VSHPROPID9.VSHPROPID_IsDeferred, out deferred);
+    int hr = vsHierarchy.GetProperty((uint)VSConstants.VSITEMID.Root, (int)__VSHPROPID9.VSHPROPID_IsDeferred, out deferred);
 
     if (ErrorHandler.Succeeded(hr))
     {
@@ -345,9 +321,9 @@ public static bool SolutionHasDeferredProjects()
 
 ### <a name="how-to-get-detailed-info-on-a-lsl-solution"></a>Comment obtenir des informations détaillées sur une solution LSL
 
-Nouvelles API de l’espace de travail sont exposées via IVsSolutionWorkspaceService pour récupérer des informations détaillées sur une solution.
+Nouvelles API de l’espace de travail sont exposés via IVsSolutionWorkspaceService pour récupérer des informations détaillées sur une solution.
 
-Ces API peuvent être utilisées pour obtenir l’espace de travail en cours, la solution active, les informations de ligne de commande gérés, mais aussi le service d’indexation pour l’espace de travail. Ces API peuvent exploiter davantage le service d’indexation pour obtenir des données détaillées, par exemple, tous les fichiers source dans un projet, le projet propriétaire d’un fichier source, tous les projets contenus dans la solution actuelle, toutes les références P2P dans un projet.
+Ces API peuvent être utilisées pour obtenir de l’espace de travail en cours, la solution active, les informations de ligne de commande managé, ainsi que le service d’indexation pour l’espace de travail. Ces API peut exploiter davantage le service d’indexation pour obtenir des données détaillées, par exemple, tous les fichiers sources dans un projet, le projet propriétaire d’un fichier source, tous les projets contenus dans la solution actuelle, toutes les références P2P dans un projet.
 
 Les extraits de code suivants illustrent l’utilisation de l’API de l’espace de travail.
 
@@ -366,9 +342,9 @@ public DeferredProjectWorkspaceService(SVsServiceProvider serviceProvider)
 }
 ```
 
->**Remarque :** les extraits de code suivants supposent _solutionWorkspaceService est déjà tardivement initialisé.
+>**Remarque :** les extraits de code suivants supposent _solutionWorkspaceService est initialisé déjà tardivement.
 
-### <a name="get-managed-command-line-info-for-deferred-projects-for-active-solution-configuration"></a>Obtenir les informations de ligne de commande managée pour projets différées pour la configuration de solution active
+### <a name="get-managed-command-line-info-for-deferred-projects-for-active-solution-configuration"></a>Obtenir les informations de managé de ligne de commande pour les projets différées pour la configuration de solution active
 
 ```csharp
 /// <summary>
@@ -387,7 +363,7 @@ public async Task<IReadOnlyDictionary<string, ManagedCommandLineInfo>> GetManage
 }
 ```
 
-### <a name="get-the-active-solution-file-in-lsl"></a>Obtenez le fichier de solution active dans LSL
+### <a name="get-the-active-solution-file-in-lsl"></a>Obtenir le fichier de solution active dans LSL
 
 ```csharp
 /// <summary>
@@ -417,7 +393,7 @@ public async Task<IEnumerable<string>> GetOwningProjectAsync(string filePath)
 }
 ```
 
-### <a name="get-all-source-files-from-a-project"></a>Obtenir tous les fichiers sources d’un projet
+### <a name="get-all-source-files-from-a-project"></a>Obtenir tous les fichiers sources à partir d’un projet
 
 ```csharp
 /// <summary>
@@ -472,23 +448,22 @@ public async Task<IEnumerable<string>> GetProjectsInSolutionAsync(string solutio
 
 ## <a name="troubleshooting"></a>Résolution des problèmes
 
-En raison de la nature de LSL, il est intentionnel que les utilisateurs ne peuvent pas afficher une différence entre les projets chargés et différés. Cela peut compliquer le développement des fonctionnalités et test.
+En raison de la nature de LSL, il est intentionnel que les utilisateurs ne peuvent pas voir une différence entre les projets chargés et différées. Cela peut compliquer fonctionnalité développement et test.
 
-Vous pouvez activer les indicateurs visual dans l’interface utilisateur pour les projets différées en procédant comme suit :
+Vous pouvez activer les indications visuelles dans l’interface utilisateur pour les projets différées en procédant comme suit :
 
 1. Fermez Visual Studio.
 2. Regedit.exe
 3. Sélectionnez HKLM
 4. Fichier > charger la ruche
 5. `%localappdata%\microsoft\visualstudio\15.0_<instance ID>\privateregistry.bin`
-6. Entrez « VisualStudio » comme nom de clé
+6. Entrez « VisualStudio » sous la forme d’un nom de clé
 7. Définissez `HKLM\VisualStudio\Software\Microsoft\VisualStudio\15.0_<instanceID>\FeatureFlags\Solution\Loading\Deferred\Hint\Value=1` (DWORD)
 8. Sélectionnez HKLM\VisualStudio
 9. Fichier > décharger la ruche
 10. Démarrez Visual Studio
 
-Pour toute autre question, veuillez contacter [ lslsupport@microsoft.com ](mailto:lslsupport@microsoft.com).
-
+Pour d’autres questions, veuillez contacter [ lslsupport@microsoft.com ](mailto:lslsupport@microsoft.com).
 
 
 

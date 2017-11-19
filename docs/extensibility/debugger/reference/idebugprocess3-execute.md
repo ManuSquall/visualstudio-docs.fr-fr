@@ -1,49 +1,32 @@
 ---
-title: IDebugProcess3::Execute | Microsoft Docs
+title: IDebugProcess3::Execute | Documents Microsoft
 ms.custom: 
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-sdk
+ms.technology: vs-ide-sdk
 ms.tgt_pltfrm: 
 ms.topic: article
-f1_keywords:
-- IDebugProcess3::Execute
-helpviewer_keywords:
-- IDebugProcess3::Execute
+f1_keywords: IDebugProcess3::Execute
+helpviewer_keywords: IDebugProcess3::Execute
 ms.assetid: d831cd81-d7bf-4172-8517-aa699867791f
-caps.latest.revision: 10
+caps.latest.revision: "10"
+author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-translation.priority.mt:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
+ms.openlocfilehash: 96b18bdb8aa0097071369a01013772dc3bd0d5bd
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
 ms.translationtype: MT
-ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
-ms.openlocfilehash: f1b377b1e4fa46d488851f7c63a27900272feb04
-ms.contentlocale: fr-fr
-ms.lasthandoff: 08/28/2017
-
+ms.contentlocale: fr-FR
+ms.lasthandoff: 10/31/2017
 ---
 # <a name="idebugprocess3execute"></a>IDebugProcess3::Execute
-Continues running this process from a stopped state. Any previous execution state (such as a step) is cleared and the process starts executing again.  
+Continue l’exécution de ce processus à partir d’un état arrêté. N’importe quel état précédent de l’exécution (par exemple, une étape) est désactivée et que le processus commence à s’exécuter à nouveau.  
   
 > [!NOTE]
->  This method should be used instead of [Execute](../../../extensibility/debugger/reference/idebugprogram2-execute.md).  
+>  Cette méthode doit être utilisée à la place de [Execute](../../../extensibility/debugger/reference/idebugprogram2-execute.md).  
   
-## <a name="syntax"></a>Syntax  
+## <a name="syntax"></a>Syntaxe  
   
 ```cpp  
 HRESULT Execute(  
@@ -57,21 +40,21 @@ int Execute(
 );  
 ```  
   
-#### <a name="parameters"></a>Parameters  
+#### <a name="parameters"></a>Paramètres  
  `pThread`  
- [in] An [IDebugThread2](../../../extensibility/debugger/reference/idebugthread2.md) object representing the thread to execute.  
+ [in] Un [IDebugThread2](../../../extensibility/debugger/reference/idebugthread2.md) objet qui représente le thread à exécuter.  
   
-## <a name="return-value"></a>Return Value  
- If successful, returns `S_OK`; otherwise, returns error code.  
+## <a name="return-value"></a>Valeur de retour  
+ En cas de réussite, retourne `S_OK`; sinon, retourne le code d’erreur.  
   
-## <a name="remarks"></a>Remarks  
- When the user starts execution from a stopped state in some other process's thread, this method is called on this process. This method is also called when the user selects the **Start** command from the **Debug** menu in the IDE. The implementation of this method may be as simple as calling the [Resume](../../../extensibility/debugger/reference/idebugthread2-resume.md) method on the current thread in the process.  
+## <a name="remarks"></a>Remarques  
+ Lorsque l’utilisateur commence l’exécution à partir d’un état d’arrêt dans les threads d’un autre processus, cette méthode est appelée sur ce processus. Cette méthode est également appelée lorsque l’utilisateur sélectionne le **Démarrer** commande à partir de la **déboguer** menu dans l’IDE. L’implémentation de cette méthode peut être aussi simple que d’appeler le [reprise](../../../extensibility/debugger/reference/idebugthread2-resume.md) méthode sur le thread actuel dans le processus.  
   
 > [!WARNING]
->  Do not send a stopping event or an immediate (synchronous) event to [Event](../../../extensibility/debugger/reference/idebugeventcallback2-event.md) while handling this call; otherwise the debugger may hang.  
+>  Ne pas envoyer un événement d’arrêt ou un événement (synchrone) immédiat [événement](../../../extensibility/debugger/reference/idebugeventcallback2-event.md) lors du traitement de cet appel ; sinon, le débogueur peut se bloquer.  
   
-## <a name="see-also"></a>See Also  
+## <a name="see-also"></a>Voir aussi  
  [IDebugProcess3](../../../extensibility/debugger/reference/idebugprocess3.md)   
  [IDebugThread2](../../../extensibility/debugger/reference/idebugthread2.md)   
- [Resume](../../../extensibility/debugger/reference/idebugthread2-resume.md)   
+ [Reprise](../../../extensibility/debugger/reference/idebugthread2-resume.md)   
  [Event](../../../extensibility/debugger/reference/idebugeventcallback2-event.md)

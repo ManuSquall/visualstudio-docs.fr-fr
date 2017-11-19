@@ -1,46 +1,29 @@
 ---
-title: IDebugDocumentPosition2::GetFileName | Microsoft Docs
+title: IDebugDocumentPosition2::GetFileName | Documents Microsoft
 ms.custom: 
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-sdk
+ms.technology: vs-ide-sdk
 ms.tgt_pltfrm: 
 ms.topic: article
-f1_keywords:
-- IDebugDocumentPosition2::GetFileName
-helpviewer_keywords:
-- IDebugDocumentPosition2::GetFileName
+f1_keywords: IDebugDocumentPosition2::GetFileName
+helpviewer_keywords: IDebugDocumentPosition2::GetFileName
 ms.assetid: d713635e-088f-465b-b26d-00ac971c9e86
-caps.latest.revision: 10
+caps.latest.revision: "10"
+author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-translation.priority.mt:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
+ms.openlocfilehash: 24ac47f6af78a3e2c5a3d77d63f930d7b7396a2a
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
 ms.translationtype: MT
-ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
-ms.openlocfilehash: c6b4aa6ced94961f928efc0fed59a8db06a33609
-ms.contentlocale: fr-fr
-ms.lasthandoff: 08/28/2017
-
+ms.contentlocale: fr-FR
+ms.lasthandoff: 10/31/2017
 ---
 # <a name="idebugdocumentposition2getfilename"></a>IDebugDocumentPosition2::GetFileName
-Gets the file name of the source file that contains the document position.  
+Obtient le nom de fichier du fichier source qui contient la position du document.  
   
-## <a name="syntax"></a>Syntax  
+## <a name="syntax"></a>Syntaxe  
   
 ```cpp  
 HRESULT GetFileName(   
@@ -54,15 +37,15 @@ int GetFileName(
 );  
 ```  
   
-#### <a name="parameters"></a>Parameters  
+#### <a name="parameters"></a>Paramètres  
  `pbstrFileName`  
- [out] Returns the file name of the source file.  
+ [out] Retourne le nom de fichier du fichier source.  
   
-## <a name="return-value"></a>Return Value  
- If successful, returns `S_OK`; otherwise, returns an error code.  
+## <a name="return-value"></a>Valeur de retour  
+ En cas de réussite, retourne `S_OK`; sinon, retourne un code d’erreur.  
   
-## <a name="remarks"></a>Remarks  
- A source file may not always have a file name (the source file may not exist on disk, for example).  
+## <a name="remarks"></a>Remarques  
+ Un fichier source ne dispose pas toujours un nom de fichier (le fichier source n’existe pas sur le disque, par exemple).  
   
-## <a name="see-also"></a>See Also  
+## <a name="see-also"></a>Voir aussi  
  [IDebugDocumentPosition2](../../../extensibility/debugger/reference/idebugdocumentposition2.md)

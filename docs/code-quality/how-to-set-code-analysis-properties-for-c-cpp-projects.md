@@ -1,57 +1,57 @@
 ---
-title: "Comment&#160;: d&#233;finir les propri&#233;t&#233;s d&#39;analyse du code pour les projets C/C++ | Microsoft Docs"
-ms.custom: ""
-ms.date: "12/05/2016"
-ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-devops-test"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "vs.codeanalysis.propertypages.native"
-  - "VC.Project.VCCLCompilerTool.EnablePrefast"
-  - "VC.Project.VCFxCopTool.EnablePREfast"
-  - "VC.Project.VCFxCopTool.IgnoreGeneratedCode"
-helpviewer_keywords: 
-  - "analyse du code C/C++ (propriétés)"
-  - "propriétés de l'analyse du code"
-  - "propriétés, analyse du code C/C++"
-  - "propriétés, analyse du code"
+title: "Comment : définir les propriétés d’analyse de Code pour les projets C/C++ | Documents Microsoft"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-code-analysis
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords:
+- vs.codeanalysis.propertypages.native
+- VC.Project.VCCLCompilerTool.EnablePrefast
+- VC.Project.VCFxCopTool.EnablePREfast
+- VC.Project.VCFxCopTool.IgnoreGeneratedCode
+helpviewer_keywords:
+- properties, C/C++ Code Analysis
+- properties, Code Analysis
+- code analysis properties
+- C/C++ code analysis properties
 ms.assetid: 7af52097-6d44-4785-9b9f-43b7a7d447d7
-caps.latest.revision: 17
-caps.handback.revision: 17
-author: "corob-msft"
-ms.author: "corob"
-manager: "ghogen"
+caps.latest.revision: "17"
+author: mikeblome
+ms.author: mblome
+manager: ghogen
+ms.openlocfilehash: b2ad22eccb561bf58ee845d58268620aad778a20
+ms.sourcegitcommit: fb751e41929f031d1a9247bc7c8727312539ad35
+ms.translationtype: MT
+ms.contentlocale: fr-FR
+ms.lasthandoff: 11/15/2017
 ---
-# Comment&#160;: d&#233;finir les propri&#233;t&#233;s d&#39;analyse du code pour les projets C/C++
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
-
-Vous pouvez configurer les règles utilisées par l'outil d'analyse du code pour analyser le code dans chaque configuration de votre projet.  De plus, vous pouvez donner l'ordre à l'analyse du code de supprimer les avertissements d'un code généré et ajouté à votre projet par un outil tiers.  
+# <a name="how-to-set-code-analysis-properties-for-cc-projects"></a>Comment : définir les propriétés d'analyse du code pour les projets C/C++
+Vous pouvez configurer les règles utilisées par l’outil d’analyse du code pour analyser le code dans chaque configuration de votre projet. En outre, vous pouvez diriger l’analyse du code pour supprimer les avertissements du code qui a été généré et ajouté à votre projet par un outil tiers.  
   
-## Page de propriétés Analyse du code  
- La page de propriétés **Analyse du code** contient tous les paramètres de configuration de l'analyse du code pour un projet.  Pour ouvrir la page de propriétés Analyse du code d'un projet dans l'**Explorateur de solutions**, cliquez avec le bouton droit sur le projet et cliquez sur **Propriétés**.  Ensuite, développez **Propriétés de configuration** et sélectionnez l'onglet **Analyse du code**.  
+## <a name="code-analysis-property-page"></a>Page de propriété d’analyse du code  
+ Le **l’analyse du Code** page de propriétés contient tous les paramètres de configuration de l’analyse du code pour un projet. Pour ouvrir la page propriété analyse du code pour un projet dans **l’Explorateur de solutions**, cliquez sur le projet, puis sur **propriétés**. Développez ensuite **propriétés de Configuration** et sélectionnez le **l’analyse du Code** onglet.  
   
-## Plateforme et configuration de projet  
- Les listes **Configuration** et **Plateforme** vous permettent d'appliquer différents paramètres d'analyse du code à différentes combinaisons de plateforme et de configuration de projet.  Par exemple, vous pouvez donner l'ordre à l'analyse du code d'appliquer un ensemble de règles à votre projet pour les versions  Debug et un ensemble différent pour les versions Release.  
+## <a name="project-configuration-and-platform"></a>Plateforme et Configuration de projet  
+ Le **Configuration** liste et **plateforme** liste vous permet d’appliquer les paramètres d’analyse de code différentes à des combinaisons de configuration et la plateforme de projet différent. Par exemple, vous pouvez diriger les versions de l’analyse du code pour appliquer un ensemble de règles à votre projet pour le débogage et un ensemble différent de version les versions.  
   
-## Activation de l'analyse du code  
- Vous pouvez choisir d'activer l'analyse du code pour votre projet en sélectionnant  **Activer l'analyse du code pour la génération C\/C\+\+**.  À l'aide de la liste **Configuration**, vous pouvez, par exemple, décider de désactiver l'analyse du code pour les versions Debug et de l'activer pour les versions Release.  
+## <a name="enabling-code-analysis"></a>L’activation de l’analyse du Code  
+ Vous pouvez décider s’il faut activer l’analyse du code pour votre projet en sélectionnant **activer Code Analysis pour C/C++ sur la Build**. En association avec le **Configuration** la liste, vous pouvez, par exemple, décider de désactiver l’analyse du Code pour les versions debug et activer pour cette version de génération.  
   
- Si votre projet contient du code managé, vous pouvez choisir d'activer ou de désactiver l'analyse du code en sélectionnant **Activer l'analyse du code lors de la build**.  
+ Si votre projet contient du code managé, vous pouvez décider s’il faut activer ou désactiver l’analyse du Code en sélectionnant **activer l’analyse du Code sur la Build**.  
   
- L'analyse du code est conçue pour vous aider à améliorer la qualité de votre code et à éviter les pièges courants.  Par conséquent, considérez attentivement s'il convient ou non de la désactiver.  De manière générale, il vaut mieux désactiver les ensembles de règles ou les règles particulières que vous ne souhaitez pas appliquer à votre projet.  
+ Analyse du code est conçue pour vous aider à améliorer la qualité de votre code et éviter les pièges courants. Par conséquent, réfléchissez bien avant de s’il faut désactiver l’analyse du code. Il est généralement préférable de désactiver les ensembles de règles ou des règles individuelles que vous ne voulez pas appliquées à votre projet.  
   
-## Code généré  
- Les développeurs utilisent souvent des outils afin de développer rapidement des applications.  Ces outils génèrent également un code qui est ajouté au projet.  Il est recommandé de consulter les violations de règle que l'analyse du code découvre dans le code généré.  Toutefois, il ne vous est peut\-être pas utile de les consulter si vous ne souhaitez pas maintenir le code.  
+## <a name="generated-code"></a>Code généré  
+ Les développeurs utilisent fréquemment des outils pour développer rapidement des applications. Ces outils peuvent générer le code qui est ajouté au projet. Vous pouvez souhaiter consulter les violations de règle que l’analyse du code découvre dans le code généré. Toutefois, vous pouvez les voir si vous ne souhaitez pas mettre à jour le code.  
   
- La case à cocher **Supprimer les résultats du code généré** sur la page de propriétés **Générales** vous permet de choisir si vous souhaitez ou non consulter les avertissements d'analyse du code managé qui est généré par un outil tiers.  
+ Le **supprimer les résultats du Code généré** case à cocher sur la **général** page de propriétés vous permet d’indiquer si vous souhaitez afficher les avertissements d’analyse du code managé qui est généré par un outil tiers .  
   
-## Ensembles de règles  
- Si votre projet contient du code managé, vous pouvez sélectionner les règles à appliquer dans une analyse du code en choisissant un ensemble de règles dans la liste **Exécuter cet ensemble de règles**.  
+## <a name="rule-sets"></a>Ensembles de règles  
+ Si votre projet contient du code managé, vous pouvez sélectionner les règles à appliquer dans une analyse du code en sélectionnant un ensemble de règles la **exécuter cet ensemble de règles** liste.  
   
-## Voir aussi  
- [Analyse de la qualité d’un code managé](../code-quality/analyzing-managed-code-quality-by-using-code-analysis.md)   
- [Analyse de code pour les avertissements C\/C\+\+](../code-quality/code-analysis-for-c-cpp-warnings.md)
+## <a name="see-also"></a>Voir aussi  
+ [Analyse de la qualité du Code managé](../code-quality/analyzing-managed-code-quality-by-using-code-analysis.md)   
+ [Avertissements liés à l’analyse de code C/C++](../code-quality/code-analysis-for-c-cpp-warnings.md)

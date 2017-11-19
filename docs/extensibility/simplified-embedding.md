@@ -1,41 +1,42 @@
 ---
-title: "Simplifi&#233; l&#39;incorporation | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-helpviewer_keywords: 
-  - "éditeurs personnalisés de Visual Studio SDK, - simple permet d'afficher l'incorporation"
+title: "Simplifié incorporation | Documents Microsoft"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+helpviewer_keywords: editors [Visual Studio SDK], custom - simple view embedding
 ms.assetid: f1292478-a57d-48ec-8c9e-88a23f04ffe5
-caps.latest.revision: 16
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 16
+caps.latest.revision: "16"
+author: gregvanl
+ms.author: gregvanl
+manager: ghogen
+ms.openlocfilehash: d4315a55b74d938576572b0630f5dca553643a24
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: fr-FR
+ms.lasthandoff: 10/31/2017
 ---
-# Simplifi&#233; l&#39;incorporation
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
-
-L'incorporation simplifiée est activée dans un éditeur lorsque son objet de vue du document \(autrement dit, est lancé à un enfant de\) [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]qui est apparenté, et l'interface d' <xref:Microsoft.VisualStudio.Shell.Interop.IVsWindowPane> est implémentée pour gérer ses commandes de fenêtre.  Simplifié incorporer des éditeurs ne peut pas héberger les contrôles activés.  Les objets utilisés pour créer un éditeur avec l'incorporation simplifiée sont présentés dans l'illustration suivante.  
+# <a name="simplified-embedding"></a>Simplifié incorporation
+Incorporation simplifiée est activée dans un éditeur lorsque son objet de vue de document est apparenté à (autrement dit, un enfant de) [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]et le <xref:Microsoft.VisualStudio.Shell.Interop.IVsWindowPane> interface est implémentée pour gérer ses commandes de fenêtre. Éditeurs incorporation simplifiés ne peut héberger des contrôles actifs. Les objets utilisés pour créer un éditeur avec incorporation simplifié sont affichés dans l’illustration suivante.  
   
- ![Graphique simplifié de l'éditeur d'incorporation](~/extensibility/media/vssimplifiedembeddingeditor.gif "vsSimplifiedEmbeddingEditor")  
-éditeur avec l'incorporation simplifiée  
+ ![Graphique de l’éditeur d’incorporation simplifié](../extensibility/media/vssimplifiedembeddingeditor.gif "vsSimplifiedEmbeddingEditor")  
+Éditeur d’incorporation simplifié  
   
 > [!NOTE]
->  Les objets dans cette illustration, seul l'objet d' `CYourEditorFactory` est requis pour créer un éditeur basé sur des fichiers standard.  Si vous créez un éditeur personnalisé, vous n'êtes pas tenus d'implémenter <xref:Microsoft.VisualStudio.Shell.Interop.IVsPersistDocData2>, car votre éditeur aura vraisemblablement son propre mécanisme privé de persistance.  Pour les éditeurs non personnalisés, toutefois, vous devez le faire.  
+>  Des objets dans cette illustration, uniquement le `CYourEditorFactory` objet est requis pour créer un éditeur de fichier standard. Si vous créez un éditeur personnalisé, vous ne devez pas implémenter <xref:Microsoft.VisualStudio.Shell.Interop.IVsPersistDocData2>, car votre éditeur possède probablement son propre mécanisme privé de persistance. Pour les éditeurs non-custom, toutefois, vous devez le faire.  
   
- toutes les interfaces implémentées pour créer un éditeur avec l'incorporation simplifiée sont contenues dans l'objet d' `CYourEditorDocument` .  Toutefois, pour prendre en charge plusieurs affichages des données du document, fractionner les interfaces sur les données distinctes et des objets de vue comme indiqué dans le tableau suivant.  
+ Toutes les interfaces implémentées pour créer un éditeur avec incorporation simplifié sont contenus dans le `CYourEditorDocument` objet. Toutefois, pour prendre en charge plusieurs vues de données de document, diviser les interfaces sur des objets distincts de données et la vue comme indiqué dans le tableau suivant.  
   
-|Interface|emplacement d'interface|Utilisation|  
-|---------------|-----------------------------|-----------------|  
+|Interface|Emplacement de l’interface|Utilisation|  
+|---------------|---------------------------|---------|  
 |<xref:Microsoft.VisualStudio.Shell.Interop.IVsWindowPane>|Vue|Fournit la connexion à la fenêtre parente.|  
 |<xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget>|Vue|Gère les commandes.|  
-|<xref:Microsoft.VisualStudio.Shell.Interop.IVsStatusbarUser>|Vue|Active les mises à jour de barre d'état.|  
-|<xref:Microsoft.VisualStudio.Shell.Interop.IVsToolboxUser>|Vue|Permet aux éléments de **boîte à outils** .|  
+|<xref:Microsoft.VisualStudio.Shell.Interop.IVsStatusbarUser>|Vue|Permet la mise à jour de la barre d’état.|  
+|<xref:Microsoft.VisualStudio.Shell.Interop.IVsToolboxUser>|Vue|Permet de **boîte à outils** éléments.|  
 |<xref:Microsoft.VisualStudio.Shell.Interop.IVsFileChangeEvents>|Données|Envoie des notifications lorsque le fichier change.|  
-|<xref:Microsoft.VisualStudio.Shell.Interop.IPersistFileFormat>|Données|Active la enregistrer sous fonctionnalités d'un type de fichier.|  
-|<xref:Microsoft.VisualStudio.Shell.Interop.IVsPersistDocData2>|Données|active la persistance pour le document.|  
-|<xref:Microsoft.VisualStudio.Shell.Interop.IVsDocDataFileChangeControl>|Données|Autorise la suppression des événements de modification du fichier, tels que le déclenchement de rechargement.|
+|<xref:Microsoft.VisualStudio.Shell.Interop.IPersistFileFormat>|Données|Active la fonctionnalité Enregistrer en tant que pour un type de fichier.|  
+|<xref:Microsoft.VisualStudio.Shell.Interop.IVsPersistDocData2>|Données|Active la persistance pour le document.|  
+|<xref:Microsoft.VisualStudio.Shell.Interop.IVsDocDataFileChangeControl>|Données|Permet la suppression des événements de changement de fichier, telles que le rechargement de déclenchement.|

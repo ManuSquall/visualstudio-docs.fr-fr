@@ -1,46 +1,29 @@
 ---
-title: IDebugProgramProvider2::WatchForProviderEvents | Microsoft Docs
+title: IDebugProgramProvider2::WatchForProviderEvents | Documents Microsoft
 ms.custom: 
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-sdk
+ms.technology: vs-ide-sdk
 ms.tgt_pltfrm: 
 ms.topic: article
-f1_keywords:
-- IDebugProgramProvider2::WatchForProviderEvents
-helpviewer_keywords:
-- IDebugProgramProvider2::WatchForProviderEvents
+f1_keywords: IDebugProgramProvider2::WatchForProviderEvents
+helpviewer_keywords: IDebugProgramProvider2::WatchForProviderEvents
 ms.assetid: 2eb93653-b5fb-45b6-b136-56008c5d25ef
-caps.latest.revision: 14
+caps.latest.revision: "14"
+author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-translation.priority.mt:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
+ms.openlocfilehash: 25dd140a13856d5fd20288d8740cfcb331f52cd6
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
 ms.translationtype: MT
-ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
-ms.openlocfilehash: 7d5d7c7ff2856be896a1281c297dc8b707a2917f
-ms.contentlocale: fr-fr
-ms.lasthandoff: 08/28/2017
-
+ms.contentlocale: fr-FR
+ms.lasthandoff: 10/31/2017
 ---
 # <a name="idebugprogramprovider2watchforproviderevents"></a>IDebugProgramProvider2::WatchForProviderEvents
-Allows the process to be notified of port events.  
+Permet au processus de notification des événements de port.  
   
-## <a name="syntax"></a>Syntax  
+## <a name="syntax"></a>Syntaxe  
   
 ```cpp  
 HRESULT WatchForProviderEvents(  
@@ -64,40 +47,40 @@ int WatchForProviderEvents(
 );  
 ```  
   
-#### <a name="parameters"></a>Parameters  
+#### <a name="parameters"></a>Paramètres  
  `Flags`  
- [in] A combination of flags from the [PROVIDER_FLAGS](../../../extensibility/debugger/reference/provider-flags.md) enumeration. The following flags are typical for this call:  
+ [in] Une combinaison d’indicateurs à partir de la [PROVIDER_FLAGS](../../../extensibility/debugger/reference/provider-flags.md) énumération. Les indicateurs suivants sont classiques pour cet appel :  
   
-|Flag|Description|  
+|Indicateur|Description|  
 |----------|-----------------|  
-|`PFLAG_REMOTE_PORT`|Caller is running on remote machine.|  
-|`PFLAG_DEBUGGEE`|Caller is currently being debugged (additional information about marshalling is returned for each node).|  
-|`PFLAG_ATTACHED_TO_DEBUGGEE`|Caller was attached to but not launched by the debugger.|  
-|`PFLAG_REASON_WATCH`|Caller wants to watch for events. If this flag is not set. then the callback event is removed and the caller no longer receives notifications.|  
+|`PFLAG_REMOTE_PORT`|L’appelant est en cours d’exécution sur l’ordinateur distant.|  
+|`PFLAG_DEBUGGEE`|L’appelant est en cours de débogage (informations supplémentaires sur le marshaling sont retournées pour chaque nœud).|  
+|`PFLAG_ATTACHED_TO_DEBUGGEE`|L’appelant a été attaché à mais pas lancé par le débogueur.|  
+|`PFLAG_REASON_WATCH`|L’appelant souhaite surveiller les événements. Si cet indicateur n’est pas défini. Ensuite, l’événement de rappel est supprimé et l’appelant ne reçoit plus les notifications.|  
   
  `pPort`  
- [in] The port the calling process is running on.  
+ [in] Le port, le processus appelant s’exécute sur.  
   
  `processId`  
- [in] An [AD_PROCESS_ID](../../../extensibility/debugger/reference/ad-process-id.md) structure holding the ID of the process that contains the program in question.  
+ [in] Un [AD_PROCESS_ID](../../../extensibility/debugger/reference/ad-process-id.md) structure qui contient l’ID du processus qui contient le programme en question.  
   
  `EngineFilter`  
- [in] An array of GUIDs of debug engines associated with the process.  
+ [in] Un tableau des GUID des moteurs de débogage associés au processus.  
   
  `guidLaunchingEngine`  
- [in] GUID of the debug engine that launched this process (if any).  
+ [in] GUID du moteur de débogage qui a lancé ce processus (le cas échéant).  
   
  `pEventCallback`  
- [in] An [IDebugPortNotify2](../../../extensibility/debugger/reference/idebugportnotify2.md) object that receives the event notifications.  
+ [in] Un [IDebugPortNotify2](../../../extensibility/debugger/reference/idebugportnotify2.md) objet qui reçoit les notifications d’événements.  
   
-## <a name="return-value"></a>Return Value  
- If successful, returns `S_OK`; otherwise, returns an error code.  
+## <a name="return-value"></a>Valeur de retour  
+ En cas de réussite, retourne `S_OK`; sinon, retourne un code d’erreur.  
   
-## <a name="remarks"></a>Remarks  
- When a caller wants to remove an event handler that was established with a previous call to this method, the caller passes the same parameters as it did the first time but leaves off the `PFLAG_REASON_WATCH` flag.  
+## <a name="remarks"></a>Remarques  
+ Lorsque l’appelant veut supprimer un gestionnaire d’événements qui a été établi avec un appel précédent à cette méthode, l’appelant transmet les mêmes paramètres, comme il le faisait la première fois, mais laisse hors tension le `PFLAG_REASON_WATCH` indicateur.  
   
-## <a name="example"></a>Example  
- The following example shows how to implement this method for a **CDebugEngine** object that exposes the [IDebugProgramProvider2](../../../extensibility/debugger/reference/idebugprogramprovider2.md) interface.  
+## <a name="example"></a>Exemple  
+ L’exemple suivant montre comment implémenter cette méthode pour un **CDebugEngine** objet qui expose la [IDebugProgramProvider2](../../../extensibility/debugger/reference/idebugprogramprovider2.md) interface.  
   
 ```cpp  
 STDMETHODIMP CDebugEngine::WatchForProviderEvents(  
@@ -225,7 +208,7 @@ STDMETHODIMP CDebugEngine::WatchForProviderEvents(
 }  
 ```  
   
-## <a name="see-also"></a>See Also  
+## <a name="see-also"></a>Voir aussi  
  [IDebugProgramProvider2](../../../extensibility/debugger/reference/idebugprogramprovider2.md)   
  [PROVIDER_FLAGS](../../../extensibility/debugger/reference/provider-flags.md)   
  [AD_PROCESS_ID](../../../extensibility/debugger/reference/ad-process-id.md)   

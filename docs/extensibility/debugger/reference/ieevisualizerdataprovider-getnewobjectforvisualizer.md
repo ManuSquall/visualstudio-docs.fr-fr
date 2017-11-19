@@ -1,46 +1,29 @@
 ---
-title: IEEVisualizerDataProvider::GetNewObjectForVisualizer | Microsoft Docs
+title: IEEVisualizerDataProvider::GetNewObjectForVisualizer | Documents Microsoft
 ms.custom: 
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-sdk
+ms.technology: vs-ide-sdk
 ms.tgt_pltfrm: 
 ms.topic: article
-f1_keywords:
-- IEEVisualizerDataProvider::GetNewObjectForVisualizer
-helpviewer_keywords:
-- IEEVisualizerDataProvider::GetNewObjectForVisualizer method
+f1_keywords: IEEVisualizerDataProvider::GetNewObjectForVisualizer
+helpviewer_keywords: IEEVisualizerDataProvider::GetNewObjectForVisualizer method
 ms.assetid: a898d549-4898-4fde-aad1-e8bb89129652
-caps.latest.revision: 11
+caps.latest.revision: "11"
+author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-translation.priority.mt:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
+ms.openlocfilehash: 81bed6a59e9405c69f0c829f46f71b82c9988086
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
 ms.translationtype: MT
-ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
-ms.openlocfilehash: 61b7c52f7c4fbaac5037ebcb3b8b3130b0a3be91
-ms.contentlocale: fr-fr
-ms.lasthandoff: 08/28/2017
-
+ms.contentlocale: fr-FR
+ms.lasthandoff: 10/31/2017
 ---
 # <a name="ieevisualizerdataprovidergetnewobjectforvisualizer"></a>IEEVisualizerDataProvider::GetNewObjectForVisualizer
-This method gets a new object for the visualizer. This method will always create a new object from the existing object.  
+Cette méthode obtient un nouvel objet pour le visualiseur. Cette méthode crée toujours un nouvel objet à partir de l’objet existant.  
   
-## <a name="syntax"></a>Syntax  
+## <a name="syntax"></a>Syntaxe  
   
 ```cpp  
 HRESULT GetNewObjectForVisualizer(  
@@ -54,16 +37,16 @@ int GetNewObjectForVisualizer(
 );  
 ```  
   
-#### <a name="parameters"></a>Parameters  
+#### <a name="parameters"></a>Paramètres  
  `ppObject`  
- [out] The new object.  
+ [out] Le nouvel objet.  
   
-## <a name="return-value"></a>Return Value  
- If successful, returns `S_OK`; otherwise, returns an error code.  
+## <a name="return-value"></a>Valeur de retour  
+ En cas de réussite, retourne `S_OK`; sinon, retourne un code d’erreur.  
   
-## <a name="remarks"></a>Remarks  
- `This method` re-evaluates the object it currently represents and returns the result as a new object. The existing object will be updated as a result of the evaluation.  
+## <a name="remarks"></a>Remarques  
+ `This method`nouvelle évaluation de l’objet actuellement représente et retourne le résultat sous la forme d’un nouvel objet. L’objet existant mettra à jour à la suite de l’évaluation.  
   
-## <a name="see-also"></a>See Also  
+## <a name="see-also"></a>Voir aussi  
  [IEEVisualizerDataProvider](../../../extensibility/debugger/reference/ieevisualizerdataprovider.md)   
  [IDebugObject](../../../extensibility/debugger/reference/idebugobject.md)

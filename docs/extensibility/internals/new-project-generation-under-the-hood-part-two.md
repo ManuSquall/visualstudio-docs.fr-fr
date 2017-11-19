@@ -4,37 +4,22 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-sdk
+ms.technology: vs-ide-sdk
 ms.tgt_pltfrm: 
 ms.topic: article
 helpviewer_keywords:
 - projects [Visual Studio], new project dialog
 - projects [Visual Studio], new project generation
 ms.assetid: 73ce91d8-0ab1-4a1f-bf12-4d3c49c01e13
-caps.latest.revision: 14
+caps.latest.revision: "14"
+author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-translation.priority.mt:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
-ms.translationtype: Machine Translation
-ms.sourcegitcommit: 5581224b17a7b42f65b69f741f984a144d78fc26
-ms.openlocfilehash: 859eeac9c2fd322dcf231e9c70fe83b92b099111
-ms.contentlocale: fr-fr
-ms.lasthandoff: 04/04/2017
-
+ms.openlocfilehash: f7dc04752b034f666dfcb1d72b500f2c12f54fba
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: fr-FR
+ms.lasthandoff: 10/31/2017
 ---
 # <a name="new-project-generation-under-the-hood-part-two"></a>Nouvelle génération de projet : Dans les coulisses, deuxième partie
 Dans [nouvelle génération de projet : sous le capot, partie un](../../extensibility/internals/new-project-generation-under-the-hood-part-one.md) nous avons vu comment la **nouveau projet** boîte de dialogue zone est remplie. Supposons que vous avez sélectionné un **Application Windows Visual c#**, remplis le **nom** et **emplacement** zones de texte et cliqué sur OK.  
@@ -148,7 +133,7 @@ namespace Simple
 ### <a name="designers-and-references"></a>Concepteurs et des références  
  Vous pouvez voir dans l’Explorateur de solutions que le dossier Propriétés est présent et contient les fichiers attendus. Mais qu’en est-il de projet de référence et des dépendances de fichier du concepteur, tels que Resources.Designer.cs à Resources.resx et Form1.Designer.cs à Form1.cs ?  Elles sont configurées dans le fichier Simple.csproj lorsqu’il est généré.  
   
- Voici le \<ItemGroup > de Simple.csproj qui crée les références de projet :  
+ Voici le \<ItemGroup > à partir de Simple.csproj qui crée les références de projet :  
   
 ```  
 <ItemGroup>  

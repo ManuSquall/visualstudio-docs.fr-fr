@@ -1,11 +1,10 @@
 ---
-title: Getting Local Values | Microsoft Docs
+title: Obtention des valeurs locales | Documents Microsoft
 ms.custom: 
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-sdk
+ms.technology: vs-ide-sdk
 ms.tgt_pltfrm: 
 ms.topic: article
 helpviewer_keywords:
@@ -13,48 +12,34 @@ helpviewer_keywords:
 - debugging [Debugging SDK], local values
 - expression evaluation, getting local values
 ms.assetid: a10b0764-65ac-476f-bf42-b4a9c38e20de
-caps.latest.revision: 13
+caps.latest.revision: "13"
+author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-translation.priority.mt:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
+ms.openlocfilehash: c94da91d5b91696ac02de778035a581a3f28c1d4
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
 ms.translationtype: MT
-ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
-ms.openlocfilehash: c2cb3c1ac5b4d120fa6464983f191e03f496dbec
-ms.contentlocale: fr-fr
-ms.lasthandoff: 08/28/2017
-
+ms.contentlocale: fr-FR
+ms.lasthandoff: 10/31/2017
 ---
-# <a name="getting-local-values"></a>Getting Local Values
+# <a name="getting-local-values"></a>Obtention des valeurs locales
 > [!IMPORTANT]
->  In Visual Studio 2015, this way of implementing expression evaluators is deprecated. For information about implementing CLR expression evaluators, please see [CLR Expression Evaluators](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/CLR-Expression-Evaluators) and [Managed Expression Evaluator Sample](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/Managed-Expression-Evaluator-Sample).  
+>  Dans Visual Studio 2015, ce moyen d’implémenter des évaluateurs d’expression est déconseillée. Pour plus d’informations sur l’implémentation des évaluateurs d’expression CLR, consultez [évaluateurs d’Expression CLR](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/CLR-Expression-Evaluators) et [exemple d’évaluateur d’Expression managé](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/Managed-Expression-Evaluator-Sample).  
   
- To obtain the value of a local, Visual Studio calls [GetPropertyInfo](../../extensibility/debugger/reference/idebugproperty2-getpropertyinfo.md) for that local. In this implementation, the class `CFieldProperty` implements the IDebugProperty2 interface for each local.  
+ Pour obtenir la valeur des variables locales, Visual Studio appelle [GetPropertyInfo](../../extensibility/debugger/reference/idebugproperty2-getpropertyinfo.md) pour cette variable locale. Dans cette implémentation, la classe `CFieldProperty` implémente l’interface IDebugProperty2 pour chaque local.  
   
- This implementation of `IDebugProperty2::GetPropertyInfo` performs the following tasks:  
+ Cette implémentation de `IDebugProperty2::GetPropertyInfo` effectue les tâches suivantes :  
   
-1.  Obtains the local's name, property, and attributes from the [FIELD_INFO](../../extensibility/debugger/reference/field-info.md) structure filled in when the class was instantiated and initialized.  
+1.  Obtient le nom de l’ordinateur local, propriété et des attributs de la [FIELD_INFO](../../extensibility/debugger/reference/field-info.md) structure renseigné lorsque la classe a été instanciée et initialisée.  
   
-2.  Obtains the local's type from the [IDebugField](../../extensibility/debugger/reference/idebugfield.md) object.  
+2.  Obtient le type de l’ordinateur local à partir de la [IDebugField](../../extensibility/debugger/reference/idebugfield.md) objet.  
   
-3.  Obtains the local's value from the `IDebugField` object. This field is bound to the memory location of the local using the [IDebugBinder](../../extensibility/debugger/reference/idebugbinder.md) object and the value is obtained from the resulting [IDebugObject](../../extensibility/debugger/reference/idebugobject.md) object.  
+3.  Obtient la valeur de l’ordinateur local à partir de la `IDebugField` objet. Ce champ est lié à l’emplacement de mémoire du local en utilisant le [IDebugBinder](../../extensibility/debugger/reference/idebugbinder.md) objet et la valeur est extraite résultant [IDebugObject](../../extensibility/debugger/reference/idebugobject.md) objet.  
   
-4.  Returns all requested properties in a [DEBUG_PROPERTY_INFO](../../extensibility/debugger/reference/debug-property-info.md) structure.  
+4.  Retourne les propriétés de tous les demandé dans un [DEBUG_PROPERTY_INFO](../../extensibility/debugger/reference/debug-property-info.md) structure.  
   
-## <a name="managed-code"></a>Managed Code  
- This example shows an implementation of `IDebugProperty2::GetPropertyInfo` for a method's local in managed code. It also shows a helper function, `Field.GetType`, that is used to get the field's type. `Field.GetValue` is shown in [Evaluating Locals](../../extensibility/debugger/evaluating-locals.md). The helper function `Field.MapModifiersToAttributes` (not shown) simply converts a field's [FIELD_MODIFIERS](../../extensibility/debugger/reference/field-modifiers.md) flags to [DBG_ATTRIB_FLAGS](../../extensibility/debugger/reference/dbg-attrib-flags.md) values.  
+## <a name="managed-code"></a>Code managé  
+ Cet exemple illustre une implémentation de `IDebugProperty2::GetPropertyInfo` pour une méthode locale dans le code managé. Il montre également une fonction d’assistance, `Field.GetType`, qui est utilisée pour obtenir le type du champ. `Field.GetValue`figure dans [variables locales de l’évaluation](../../extensibility/debugger/evaluating-locals.md). La fonction d’assistance `Field.MapModifiersToAttributes` (non affiché) simplement convertit un champ [FIELD_MODIFIERS](../../extensibility/debugger/reference/field-modifiers.md) indicateurs à [DBG_ATTRIB_FLAGS](../../extensibility/debugger/reference/dbg-attrib-flags.md) valeurs.  
   
 ```csharp  
 namespace EEMC  
@@ -193,8 +178,8 @@ namespace EEMC
 }  
 ```  
   
-## <a name="unmanaged-code"></a>Unmanaged Code  
- This example shows an implementation of `IDebugProperty2::GetPropertyInfo` for a method's local in unmanaged code. It also shows two helper functions, `FieldGetType` and `FieldGetValue` that are used to get the field's type and value, respectively. Note that `VARIANT`s are used for the field's value and type as a `VARIANT` can handle a wide variety of value types. In this implementation, `FieldGetValue` returns an [IDebugField](../../extensibility/debugger/reference/idebugfield.md) object that is later converted to a value in a call to `FieldGetPrimitiveValue` (which is shown in [Evaluating Locals](../../extensibility/debugger/evaluating-locals.md)).  
+## <a name="unmanaged-code"></a>Code non managé  
+ Cet exemple illustre une implémentation de `IDebugProperty2::GetPropertyInfo` pour une méthode de locale en code non managé. Il montre également deux fonctions d’assistance, `FieldGetType` et `FieldGetValue` qui permettent d’obtenir le type du champ et la valeur, respectivement. Notez que `VARIANT`s sont utilisés pour la valeur du champ et type comme un `VARIANT` peut gérer un large éventail de types de valeur. Dans cette implémentation, `FieldGetValue` retourne un [IDebugField](../../extensibility/debugger/reference/idebugfield.md) objet ultérieure converti en une valeur dans un appel à `FieldGetPrimitiveValue` (ce qui est indiqué dans [variables locales de l’évaluation](../../extensibility/debugger/evaluating-locals.md)).  
   
 ```cpp  
 STDMETHODIMP CFieldProperty::GetPropertyInfo(   
@@ -456,7 +441,7 @@ HRESULT FieldGetValue( in IDebugField* pfield, out VARIANT* pvarValue )
 }  
 ```  
   
-## <a name="see-also"></a>See Also  
- [Sample Implementation of Locals](../../extensibility/debugger/sample-implementation-of-locals.md)   
- [Getting Local Properties](../../extensibility/debugger/getting-local-properties.md)   
- [Evaluation Context](../../extensibility/debugger/evaluation-context.md)
+## <a name="see-also"></a>Voir aussi  
+ [Exemple d’implémentation des variables locales](../../extensibility/debugger/sample-implementation-of-locals.md)   
+ [Obtention des propriétés locales](../../extensibility/debugger/getting-local-properties.md)   
+ [Contexte d’évaluation](../../extensibility/debugger/evaluation-context.md)

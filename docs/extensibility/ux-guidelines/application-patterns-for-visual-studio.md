@@ -4,34 +4,19 @@ ms.custom:
 ms.date: 04/26/2017
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-sdk
+ms.technology: vs-ide-sdk
 ms.tgt_pltfrm: 
 ms.topic: article
 ms.assetid: 8ed68602-4e28-46fe-b39f-f41979b308a2
-caps.latest.revision: 7
+caps.latest.revision: "7"
+author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-translation.priority.mt:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
-ms.translationtype: Machine Translation
-ms.sourcegitcommit: 9524ecc3cadef58821fba857de8e82e59eea9b43
-ms.openlocfilehash: 7c2612cb537a6f3197cf9f99a0dc11981dfc73e1
-ms.contentlocale: fr-fr
-ms.lasthandoff: 05/04/2017
-
+ms.openlocfilehash: 0fad2e8d63b0005addab20756501d18fe872b4c3
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: fr-FR
+ms.lasthandoff: 10/31/2017
 ---
 # <a name="application-patterns-for-visual-studio"></a>Modèles d’application pour Visual Studio
 ##  <a name="BKMK_WindowInteractions"></a>Interactions de la fenêtre  
@@ -50,7 +35,7 @@ Envisagez avec précaution sur le type conteneur. Common considérations sur le 
   
 ||Fenêtre de document|Fenêtre outil|Boîte de dialogue non modal|  
 |-|---------------------|-----------------|---------------------|  
-| **Position** | Toujours placé dans le document et ne pas ancrer des bords de l’IDE. Il peut être » retiré » afin qu’il flotte séparément à partir de l’interpréteur de commandes principal. | Généralement ancrés bords de l’IDE, mais peut être personnalisé de flottement, masquées automatiquement (unpinned), ou ancré également dans le document.|Grande fenêtre flottante distinct à partir de l’IDE. |  
+| **Position** | Toujours placé dans le document et ne pas ancrer des bords de l’IDE. Il peut être » retiré » afin qu’il flotte séparément à partir de l’interpréteur de commandes principal. | Généralement ancrés autour des bords de l’IDE, mais peut être personnalisé de flottement, masquées automatiquement (unpinned), ou ancré également dans le document.|Grande fenêtre flottante distinct à partir de l’IDE. |  
 | **Valider le modèle** | *Validation différée*<br /><br /> Pour enregistrer les données dans un document, l’utilisateur doit émettre le **fichier &gt; enregistrer**, **enregistrer en tant que**, ou **Enregistrer tout** commande. Une fenêtre de document a le concept des données qu’il contient « modifications », puis validé à un de l’entité commandes. Lors de la fermeture d’une fenêtre de document, tout le contenu est enregistré sur le disque soit perdu. | *Validation immédiate*<br /><br /> Il n’existe aucun enregistrement modèle. Pour les fenêtres d’outil inspecteur qui aident à la modification d’un fichier, le fichier doit être ouvert dans l’éditeur ou concepteur actif, et l’éditeur ou le Concepteur de propriétaire de l’enregistrement. | *Validation ultérieure ou immédiate*<br /><br /> Le plus souvent, une grande boîte de dialogue non modale requiert une action de validation des modifications et permet une opération « Cancel », ce qui annule les modifications apportées dans la session de la boîte de dialogue.  Celle-ci distingue une boîte de dialogue non modale à partir d’une fenêtre outil dans la mesure où les fenêtres Outil ont toujours un modèle de validation immédiate. |  
 | **Visibilité** | *Ouverture/de création (fichier) et fermer*<br /><br /> Ouverture d’une fenêtre de document est effectuée à l’ouverture d’un document existant ou à l’aide d’un modèle pour créer un nouveau document. Il existe aucune « ouvrir \<spécifique de l’éditeur > » commande. | *Masquer et afficher*<br /><br /> Windows de l’outil à instance unique peuvent être masqués ou affichés. Contenu et les États dans la fenêtre outil persistent si dans la vue ou masqué. Les fenêtres Outil à instances multiples peuvent être fermés ainsi que masqués. Lorsqu’une fenêtre d’outil à instances multiples est fermée, le contenu et l’état dans la fenêtre outil est ignoré. | *Lancé à partir d’une commande*<br /><br /> Les boîtes de dialogue sont lancées à partir d’une commande de tâche. |  
 | **Instances** | *Instances multiples*<br /><br /> Plusieurs éditeurs peuvent être ouvertes en même temps et modification de fichiers différent, alors que certains éditeurs permettent également le même fichier ouvert dans plusieurs éditeurs (à l’aide de la **fenêtre &gt; nouvelle fenêtre** commande).<br /><br /> Un éditeur unique peut modifier un ou plusieurs fichiers en même temps (Concepteur de projet). | *Instance unique ou multiniveau*<br /><br /> Contenu change pour refléter le contexte (comme dans l’Explorateur de propriétés) ou de type push de focus/contexte d’autres fenêtres (liste des tâches, l’Explorateur de solutions).<br /><br /> Les fenêtres Outil à instance unique et plusieurs instances doivent être associés à la fenêtre de document actif sauf s’il existe une bonne raison de pas à. | *Instance unique* |  
@@ -88,16 +73,16 @@ Fenêtres Outil Visual Studio ont des états différents, dont certains sont act
   
 -   **Document à onglets** fenêtres Outil peuvent être ancrées dans le document bien. Cela est utile pour les fenêtres d’outil volumineux, tels que l’Explorateur d’objets, qui a besoin de davantage de place que permet d’ancrage pour les bords du cadre.  
   
-![États de la fenêtre outil dans Visual Studio](~/extensibility/ux-guidelines/media/0702-01_toolwindowstates.png "0702-01_ToolWindowStates")<br />États de la fenêtre Outil dans Visual Studio
+![Outil d’états de la fenêtre dans Visual Studio](../../extensibility/ux-guidelines/media/0702-01_toolwindowstates.png "0702-01_ToolWindowStates")<br />États de la fenêtre Outil dans Visual Studio
   
 #### <a name="single-instance-and-multi-instance"></a>Instance unique et à plusieurs instances  
 Fenêtres Outil sont à instance unique ou à plusieurs instances. Certaines fenêtres Outil à instance unique peuvent être associées à la fenêtre de document actif, tandis que les fenêtres d’outil à instances multiples ne peuvent pas. Les fenêtres Outil multi-instance répondent à la **fenêtre &gt; nouvelle fenêtre** commande en créant une nouvelle instance de la fenêtre. L’image suivante illustre une fenêtre outil de l’activation de la commande nouvelle fenêtre lorsqu’une instance de la fenêtre est active :  
   
-![Fenêtre outil activant la commande « Nouvelle fenêtre » lorsqu’une instance de la fenêtre est active](~/extensibility/ux-guidelines/media/0702-02_toolwindowenablingcommand.png "0702-02_ToolWindowEnablingCommand")<br />Fenêtre outil activant la commande « Nouvelle fenêtre » lorsqu’une instance de la fenêtre est active  
+![Fenêtre outil activant la commande « Nouvelle fenêtre » lorsqu’une instance de la fenêtre est active](../../extensibility/ux-guidelines/media/0702-02_toolwindowenablingcommand.png "0702-02_ToolWindowEnablingCommand")<br />Fenêtre outil activant la commande « Nouvelle fenêtre » lorsqu’une instance de la fenêtre est active  
   
 Windows de l’outil à instance unique peuvent être masqués ou affichés, alors que les fenêtres d’outil à instances multiples peuvent être fermés ainsi que masqués. Toutes les fenêtres Outil peuvent être ancrées, liée par onglets, flottante ou défini comme une fenêtre d’enfant d’Interface multidocument (MDI) (semblable à une fenêtre de document). Toutes les fenêtres Outil doivent répondre aux commandes de gestion de fenêtre appropriée dans le menu Fenêtre :  
   
-![Commandes de gestion de fenêtre dans le menu de la fenêtre Visual Studio](~/extensibility/ux-guidelines/media/0702-03_windowmanagementcontrols.png "0702-03_WindowManagementControls")<br />Commandes de gestion de fenêtre dans le menu de la fenêtre Visual Studio
+![Commandes de gestion de fenêtre dans le menu de la fenêtre Visual Studio](../../extensibility/ux-guidelines/media/0702-03_windowmanagementcontrols.png "0702-03_WindowManagementControls")<br />Commandes de gestion de fenêtre dans le menu de la fenêtre Visual Studio
   
 #### <a name="document-specific-tool-windows"></a>Fenêtres de document spécifique  
 Certaines fenêtres Outil sont conçus pour modifier selon un type de document donné. Ces fenêtres continuellement mise à jour pour refléter les fonctionnalités sont applicables à la fenêtre de document actif dans l’IDE.  
@@ -144,7 +129,7 @@ Fenêtres d’outils de liste sont l’Explorateur de solutions et de la fenêtr
 | Fenêtre outil | Fonction | 
 | --- | --- | 
 | Boîte à outils | La fenêtre outil est utilisée pour stocker les éléments qui sont supprimés sur les surfaces de conception, en fournissant une source de glissement cohérente pour tous les concepteurs. |
-| Page de démarrage | Portail de l’utilisateur pour Visual Studio, avec un accès aux flux d’informations pour les développeurs, l’aide de Visual Studio et projets récents. Utilisateurs peuvent également créer des pages de démarrage personnalisées en copiant le fichier StartPage.xaml à partir de la « Common7\IDE\StartPages\" répertoire des fichiers de programme dans le dossier StartPages dans le répertoire documents de Visual Studio, puis modifier le code XAML manuellement ou ouvrez-le dans Visual Studio ou un autre éditeur de code Visual Studio. | 
+| Page de démarrage | Portail de l’utilisateur pour Visual Studio, avec un accès aux flux d’informations pour les développeurs, l’aide de Visual Studio et projets récents. Utilisateurs peuvent également créer des pages de démarrage personnalisées en copiant le fichier StartPage.xaml à partir de la « Common7\IDE\StartPages\" répertoire des fichiers de programme Visual Studio dans le dossier StartPages dans Visual Studio documents active, puis soit en modifiant le code XAML à la main ou ouvrez-le dans Visual Studio ou un autre éditeur de code. | 
 
 **Fenêtres du débogueur**
 | Fenêtre outil | Fonction | 
@@ -158,7 +143,7 @@ Fenêtres d’outils de liste sont l’Explorateur de solutions et de la fenêtr
 | Documents ||  
 | Pile des appels ||  
 | Variables locales ||  
-| Espions ||  
+| Observations ||  
 | Code Machine ||  
 | Registres ||  
 | Threads ||  
@@ -184,7 +169,7 @@ Modification de documents nécessite une expérience utilisateur cohérente. Pou
   
 -   Double-clic sur un document dans l’Explorateur de solutions doit effectuer la même action que **ouvrir**.  
   
--   Si plus d’un éditeur peut être utilisé sur un type de document, l’utilisateur doit être en mesure de remplacer ou de réinitialiser l’action par défaut sur un type de document donné à l’aide de la **ouvrir avec** boîte de dialogue en cliquant sur le fichier et en sélectionnant **ouvrir avec** dans le menu contextuel.  
+-   Si plus d’un éditeur peut être utilisé sur un type de document, l’utilisateur doit être en mesure de remplacer ou de réinitialiser l’action par défaut sur un type de document donné à l’aide de la **ouvrir avec** boîte de dialogue en cliquant sur le fichier et en sélectionnant **ouvert Avec** dans le menu contextuel.  
   
 -   Ne créez pas également un Assistant dans un document.  
   
@@ -330,7 +315,7 @@ Prendre en compte les différences entre ces types de base de boîtes de dialogu
 ####  <a name="BKMK_SimpleDialogs"></a>Boîtes de dialogue simples  
 Une boîte de dialogue simple est une présentation des contrôles dans une seule fenêtre modale. Cette présentation peut inclure les variantes des modèles de contrôle complexe, par exemple un sélecteur de champ. Pour les boîtes de dialogue simples, suivez la disposition générale standard, ainsi que toute mise en page spécifique requises pour les regroupements de contrôle complexe.
   
-![> créer une clé de nom fort est un exemple de boîte de dialogue simple dans Visual Studio.](~/extensibility/ux-guidelines/media/0704-01_createstrongnamekey.png "0704-01_CreateStrongNameKey")<br />Créer une clé de nom fort est un exemple de boîte de dialogue simple dans Visual Studio.
+![> créer une clé de nom fort est un exemple de boîte de dialogue simple dans Visual Studio. ] (../../extensibility/ux-guidelines/media/0704-01_createstrongnamekey.png "0704-01_CreateStrongNameKey")<br />Créer une clé de nom fort est un exemple de boîte de dialogue simple dans Visual Studio.
   
 ####  <a name="BKMK_LayeredDialogs"></a>Boîtes de dialogue en couche  
 Les boîtes de dialogue superposées incluent les onglets, les tableaux de bord et les arbres incorporés. Ils sont utilisés pour optimiser immobilier lorsqu’il existe plusieurs groupes de contrôles proposés dans un seul élément de l’interface utilisateur. Les regroupements sont superposées afin que l’utilisateur peut choisir le regroupement pour afficher à tout moment.  
@@ -339,7 +324,7 @@ Dans le cas le plus simple, le mécanisme de basculer entre les regroupements es
   
 Le **outils &gt; Options** boîte de dialogue est un exemple de boîte de dialogue en couches à l’aide d’une arborescence incorporée :  
   
-![Outils > Options est un exemple d’une boîte de dialogue superposée dans Visual Studio.](~/extensibility/ux-guidelines/media/0704-02_toolsoptions.png "0704-02_ToolsOptions")<br />Outils > Options est un exemple d’une boîte de dialogue superposée dans Visual Studio.
+![Outils > Options est un exemple d’une boîte de dialogue superposée dans Visual Studio. ] (../../extensibility/ux-guidelines/media/0704-02_toolsoptions.png "0704-02_ToolsOptions")<br />Outils > Options est un exemple d’une boîte de dialogue superposée dans Visual Studio.
   
 ####  <a name="BKMK_Wizards"></a>Assistants  
 Assistants sont utiles pour diriger l’utilisateur via une séquence logique d’étapes dans la réalisation d’une tâche. Une série de choix sont proposés dans les panneaux séquentielles, et l’utilisateur doit continuer à chaque étape avant de passer à la suivante. Une fois que les valeurs par défaut suffisantes sont disponibles, le **Terminer** bouton est activé.  
@@ -359,7 +344,7 @@ Pour obtenir une conception optimale et les fonctionnalités avec vos boîtes de
   
 Pour connaître les instructions spécifiques à la disposition, consultez [disposition pour Visual Studio](../../extensibility/ux-guidelines/layout-for-visual-studio.md).  
   
-#### <a name="size"></a>Size  
+#### <a name="size"></a>Taille  
 Les boîtes de dialogue doivent tenir dans une résolution d’écran de 1024 x 768 minimale et la taille de la boîte de dialogue initiale ne doit pas dépasser 900 x 700 pixels. Les boîtes de dialogue peuvent être redimensionnables, mais il n’est pas obligatoire.  
   
 Il existe deux recommandations pour les boîtes de dialogue redimensionnables :  
@@ -373,7 +358,7 @@ Les boîtes de dialogue doivent apparaître centrés dans l’IDE au premier lan
 
 Pour les boîtes de dialogue redimensionnables, la taille doit être persistante sur lancements ultérieurs. Pour les boîtes de dialogue modales redimensionnables, la position ne doit être persistants. Leur affichage centrée dans l’IDE empêche la possibilité de la boîte de dialogue qui apparaissent dans une position imprévisible ou inutilisable lors de la configuration de l’affichage de l’utilisateur a changé. 
 
-Des boîtes de dialogue non modales qui peuvent être repositionnés, position de l’utilisateur doit être conservée sur lance suivantes, comme la boîte de dialogue peut-être être utilisé en tant que partie intégrante d’un flux de travail plus grande.  
+Des boîtes de dialogue non modales qui peuvent être repositionnés, position de l’utilisateur doit être conservée sur lance suivantes, comme la boîte de dialogue peut-être être utilisé en tant que partie intégrante d’un flux de travail plus volumineux.  
   
 Lorsque les boîtes de dialogue doivent générer d’autres boîtes de dialogue, la boîte de dialogue au premier plan doit mettre en cascade vers la droite et vers le bas à partir du parent de sorte qu’il évidente à l’utilisateur que vous leur avez accédé à un nouvel emplacement.  
   
@@ -395,12 +380,12 @@ Lorsque les utilisateurs ont besoin effectuer les deux activités à la fois, co
   
 -   Boutons d’aide dans la barre de titre ont été déconseillées. N’ajoutez pas les boîtes de dialogue Nouveau. Lorsqu’ils n’existent pas, ils doivent lancer une rubrique d’aide sur le plan conceptuel correspondant à la tâche.  
   
- ![Spécifications des indications pour les barres de titre dans les boîtes de dialogue Visual Studio](~/extensibility/ux-guidelines/media/0704-03_titlebarspecs.png "0704-03_TitleBarSpecs")<br />Spécifications des indications pour les barres de titre dans les boîtes de dialogue Visual Studio
+ ![Spécifications des indications pour les barres de titre dans les boîtes de dialogue Visual Studio](../../extensibility/ux-guidelines/media/0704-03_titlebarspecs.png "0704-03_TitleBarSpecs")<br />Spécifications des indications pour les barres de titre dans les boîtes de dialogue Visual Studio
   
 #### <a name="control-buttons"></a>Boutons de commande  
 En général, **OK**, **Annuler**, et **aide** boutons doivent être organisés horizontalement dans le coin inférieur droit de la boîte de dialogue. L’autre pile verticale est autorisée si une boîte de dialogue a plusieurs autres boutons au bas de la boîte de dialogue présente visual toute confusion avec les boutons du contrôle.  
   
-![Configurations acceptables pour les boutons de contrôle dans les boîtes de dialogue Visual Studio](~/extensibility/ux-guidelines/media/0704-04_controlbuttonconfig.png "0704-04_ControlButtonConfig")<br />Configurations acceptables pour les boutons de contrôle dans les boîtes de dialogue Visual Studio
+![Configurations acceptables pour les boutons de contrôle dans les boîtes de dialogue Visual Studio](../../extensibility/ux-guidelines/media/0704-04_controlbuttonconfig.png "0704-04_ControlButtonConfig")<br />Configurations acceptables pour les boutons de contrôle dans les boîtes de dialogue Visual Studio
   
 La boîte de dialogue doit inclure un bouton de contrôle par défaut. Pour déterminer la meilleure commande à utiliser en tant que la valeur par défaut, choisissez parmi les options suivantes (répertoriées par ordre de priorité) :  
   
@@ -437,7 +422,7 @@ Présente des avantages et inconvénients des différentes méthodes de superpos
 | Mécanisme de commutation | Avantages et utilisation appropriée | Utilisation inappropriée et inconvénients |  
 | --- | --- | --- |  
 | Contrôle Tab | Regrouper logiquement les pages de boîte de dialogue connexes<br /><br />Utile pour moins de cinq (ou le nombre d’onglets qui tiennent dans une ligne dans la boîte de dialogue) pages de contrôles connexes dans la boîte de dialogue<br /><br />Onglet étiquettes doivent être courtes : un ou deux mots qui peuvent d’identifier facilement le contenu<br /><br />Un style de boîte de dialogue système commun<br /><br />Exemple : **Explorateur de fichiers &gt; propriétés d’un élément** | Des étiquettes descriptives courts peut être difficile<br /><br />En règle générale n’évolue pas au-delà de cinq onglets dans une boîte de dialogue<br /><br />Inapproprié si vous avez trop d’onglets pour une ligne (utilisez une technique de remplacement de superposition)<br /><br />Non extensible |  
-| Navigation avec barre latérale | Dispositif de commutation simple qui peut contenir plusieurs catégories à onglets<br /><br />Liste plate de catégories (sans hiérarchie)<br /><br />Extensible<br /><br />Exemple : **personnaliser... &gt; Ajouter (commande)** | Pas d’une utilisation optimale de l’espace horizontal s’il existe moins de trois groupes<br /><br />Tâche peut-être être mieux adapté à une liste déroulante. |  
+| Navigation avec barre latérale | Dispositif de commutation simple qui peut contenir plusieurs catégories à onglets<br /><br />Liste plate de catégories (sans hiérarchie)<br /><br />Extensible<br /><br />Exemple : **personnaliser... &gt;Ajouter des commandes** | Pas d’une utilisation optimale de l’espace horizontal s’il existe moins de trois groupes<br /><br />Tâche peut-être être mieux adapté à une liste déroulante. |  
 | Contrôle Tree | Permet de catégories illimités<br /><br />Permet de regroupement et/ou de la hiérarchie de catégories<br /><br />Extensible<br /><br />Exemple : **outils &gt; Options** | Hiérarchies fortement imbriquées peuvent entraîner un défilement horizontal excessive<br /><br />Visual Studio propose une overabundance de vues d’arborescence |  
 | Assistant | Grâce à la fin de la tâche guider l’utilisateur à travers les étapes séquentielles, tâche : l’Assistant représente une tâche de niveau supérieur et les panneaux individuels représentent des sous-tâches nécessaires pour accomplir la tâche globale<br /><br />Utile lors de la tâche dépasse les limites de l’interface utilisateur, comme lorsque l’utilisateur aurait autrement utiliser plusieurs éditeurs et fenêtres pour terminer la tâche<br /><br />Utile lors de la tâche nécessite la création de branche<br /><br />Utile lors de la tâche contient des dépendances entre les étapes<br /><br />Utile quand plusieurs tâches similaires avec la branche d’un arbre de décision peuvent être présentées dans une boîte de dialogue pour réduire le nombre de différentes boîtes de dialogue similaire | Inapproprié pour toute tâche qui ne nécessite pas un workflow séquentiel<br /><br />Les utilisateurs peuvent devenir submergé et par un Assistant avec trop d’étapes<br /><br />Assistants sont limitée, par nature, l’espace d’écran |  
   
@@ -446,7 +431,7 @@ Couloirs et tableaux de bord est les boîtes de dialogue ou les panneaux qui fon
   
 Vous pouvez également une interface utilisateur qui offre toutes les fonctionnalités disponibles dans une collection unique plutôt que la fonctionnalité moins courants dans des emplacements distincts de refactorisation est simplement un tableau de bord.  
   
-![Concept de couloir pour exposer une interface utilisateur supplémentaire dans Outlook](~/extensibility/ux-guidelines/media/0704-08_hallway.png "0704-08_Hallway")<br />Concept de couloir pour exposer une interface utilisateur supplémentaire dans Outlook
+![Concept de couloir pour exposer une interface utilisateur supplémentaire dans Outlook](../../extensibility/ux-guidelines/media/0704-08_hallway.png "0704-08_Hallway")<br />Concept de couloir pour exposer une interface utilisateur supplémentaire dans Outlook
   
 ##### <a name="adaptive-ui"></a>Interface utilisateur adaptative  
 Affichage ou masquage de l’interface utilisateur basée sur l’utilisation ou non signalé expérience d’un utilisateur est une autre façon de présenter l’interface utilisateur tout en masquant les autres parties. Cela n’est pas recommandée dans Visual Studio, comme les algorithmes pour le choix du moment afficher ou masquer l’interface utilisateur peuvent être difficile, et les règles ne sera toujours incorrect pour un jeu de cas.  
@@ -475,7 +460,7 @@ Projets doivent également conserver des modèles d’interaction cohérent pour
 -   Opérations de glisser-déplacer  
   
 ### <a name="drag-and-drop-interaction-model"></a>Modèle d’interaction de glisser-déplacer  
-Projets classer généralement eux-mêmes en tant que la base de référence (en mesure de conserver uniquement les références aux éléments de projet dans le stockage), (en mesure de conserver les éléments de projet uniquement physiquement stockées dans une hiérarchie de projet), basée sur les active ou mixte (capable de conserver des références ou des éléments physiques). L’IDE gère tous les trois types de projets simultanément dans le **l’Explorateur de solutions**.  
+Projets classer généralement eux-mêmes en tant que la base de référence (en mesure de conserver uniquement les références aux éléments de projet dans le stockage), (en mesure de conserver les éléments de projet uniquement physiquement stockées dans une hiérarchie de projet), basée sur les active ou mixte (capable de conserver des références éléments matériels ou physiques). L’IDE gère tous les trois types de projets simultanément dans le **l’Explorateur de solutions**.  
   
 À partir d’un point de vue de glisser-déplacer, les caractéristiques suivantes doivent s’appliquer à chaque type de projet dans le **l’Explorateur de solutions**:  
   
@@ -499,7 +484,7 @@ Toutes les opérations de glisser-déplacer sont cohérent entre les combinaison
   
 Il est également trompeur de se font passer pour autoriser une opération de copie entre ces types de projets, car le projet de base de référence cible ne doit pas faire une copie indépendante de l’élément source. De même, Ctrl + Maj en faisant glisser vers un projet basé sur le répertoire de la cible ne doit pas être autorisé, car un projet basé sur le répertoire ne peut pas conserver des références. Dans les cas où l’opération de glisser-déplacer n’est pas pris en charge, l’IDE doit interdire la suppression et afficher le curseur ne (indiqué dans le tableau de pointeur ci-dessous) pour l’utilisateur.  
   
-Pour implémenter correctement un comportement de glisser-déplacer, le projet source de l’opération glisser doit communiquer sa nature vers le projet cible. (Par exemple, s’il référence - ou basée sur Active ?) Cette information est indiquée par le format de Presse-papiers offertes par la source. En tant que la source de glissement (ou opération de copie du Presse-papiers) un projet doit offrir `CF_VSREFPROJECTITEMS` ou `CF_VSSTGPROJECTITEMS` respectivement, selon si le projet est basé sur le répertoire ou référence. Les deux de ces formats ont le même contenu de données, ce qui est similaire aux fenêtres `CF_HDROP` mettre en forme, sauf que les listes de chaînes, au lieu d’être des noms de fichiers, sont un double -`NULL` arrêté la liste des `Projref` chaînes (tel que retourné par `IVsSolution::GetProjrefOfItem` ou `::GetProjrefOfProject` selon le cas).  
+Pour implémenter correctement un comportement de glisser-déplacer, le projet source de l’opération glisser doit communiquer sa nature vers le projet cible. (Par exemple, s’il référence - ou basée sur Active ?) Cette information est indiquée par le format de Presse-papiers offertes par la source. En tant que la source de glissement (ou opération de copie du Presse-papiers) un projet doit offrir `CF_VSREFPROJECTITEMS` ou `CF_VSSTGPROJECTITEMS` respectivement, selon si le projet est basé sur le répertoire ou référence. Les deux de ces formats ont le même contenu de données, ce qui est similaire aux fenêtres `CF_HDROP` mettre en forme, sauf que les listes de chaînes, au lieu d’être des noms de fichiers, sont un double -`NULL` arrêté la liste des `Projref` chaînes (tel que retourné par `IVsSolution::GetProjrefOfItem`ou `::GetProjrefOfProject` selon le cas).  
   
 En tant que cible de dépôt (ou opération de collage dans le Presse-papiers), un projet doit accepter tous les deux `CF_VSREFPROJECTITEMS` et `CF_VSSTGPROJECTITEMS`, même si la gestion exacte de l’opération de glisser-déposer varie selon la nature du projet cible et le projet source. Le projet source déclare la nature, si elle offre `CF_VSREFPROJECTITEMS` ou `CF_VSSTGPROJECTITEMS`. La cible de la liste déroulante comprend ses propres nature et par conséquent possède suffisamment d’informations pour prendre des décisions en tant que si un déplacement, la copie, ou lien doit être effectué. L’utilisateur modifie également l’opération de glisser-déplacer doit être effectuée en appuyant sur les Ctrl, MAJ, ou les touches Ctrl et MAJ. Il est important pour la cible de dépôt pour correctement indiquer quelle opération sera effectuée à l’avance dans son `DragEnter` et `DragOver` méthodes. Le **l’Explorateur de solutions** détermine automatiquement si le projet source et la cible sont le même projet.  
   
@@ -509,12 +494,12 @@ L’utilisateur doit toujours être en mesure de déterminer l’effet d’une o
   
 | Pointeur de la souris | Commande | Description |  
 | :---: | --- | --- |  
-| ![« Aucun dépôt » icône de souris](~/extensibility/ux-guidelines/media/0706-01_mousenodrop.png "0706-01_MouseNoDrop") | Aucune suppression | Élément ne peut pas être déposé à l’emplacement spécifié. |  
-| ![Icône de souris « copier »](~/extensibility/ux-guidelines/media/0706-02_mousecopy.png "0706-02_MouseCopy") | Copier | Élément sera copié vers l’emplacement cible. |  
-| ![Icône de souris « déplacer »](~/extensibility/ux-guidelines/media/0706-03_mousemove.png "0706-03_MouseMove") | Déplacement | Élément sera déplacé vers l’emplacement cible. |  
-| ![Icône de souris « ajouter une référence »](~/extensibility/ux-guidelines/media/0706-04_mouseaddref.png "0706-04_MouseAddRef") | Ajouter une référence | Une référence à l’élément sélectionné sera ajoutée à l’emplacement cible. |
+| ![« Aucun dépôt » icône de souris](../../extensibility/ux-guidelines/media/0706-01_mousenodrop.png "0706-01_MouseNoDrop") | Aucune suppression | Élément ne peut pas être déposé à l’emplacement spécifié. |  
+| ![Icône de souris « copier »](../../extensibility/ux-guidelines/media/0706-02_mousecopy.png "0706-02_MouseCopy") | Copier | Élément sera copié vers l’emplacement cible. |  
+| ![Icône de souris « déplacer »](../../extensibility/ux-guidelines/media/0706-03_mousemove.png "0706-03_MouseMove") | Déplacement | Élément sera déplacé vers l’emplacement cible. |  
+| ![Icône de souris « ajouter une référence »](../../extensibility/ux-guidelines/media/0706-04_mouseaddref.png "0706-04_MouseAddRef") | Ajouter une référence | Une référence à l’élément sélectionné sera ajoutée à l’emplacement cible. |
 
-#### <a name="reference-based-projects"></a>Projets basés sur une référence  
+#### <a name="reference-based-projects"></a>projets basés sur une référence  
  Le tableau suivant récapitule les opérations de glisser-déplacer (ainsi que de couper/copier/coller) qui doivent être effectuées en fonction de la nature de l’élément et le modificateur clés source enfoncé pour les projets de cible basée sur référencé :  
   
 | Modificateur | Catégorie | Élément source : lien de référence / | Élément source : élément ou le fichier physique du système (`CF_HDROP`) |  
@@ -617,7 +602,7 @@ Un autre problème à connaître est la gestion des opérations de déplacement 
   
 1.  Si l’éditeur ouvrir/le concepteur n’a pas les modifications non enregistrées, la fenêtre d’éditeur/concepteur doit être fermée en mode silencieux.  
   
-2.  Si l’éditeur ouvrir/le concepteur n’a pas les modifications non enregistrées, la source de l’opération glisser doit attendre de la liste déroulante pour se produire puis demandez à l’utilisateur d’enregistrer les modifications non validées dans les documents ouverts avant de fermer la fenêtre avec un message semblable au suivant :  
+2.  Si l’éditeur ouvrir/le concepteur n’a pas les modifications non enregistrées, la source de l’opération glisser doit attendre pour la liste déroulante pour se produire puis demandez à l’utilisateur d’enregistrer les modifications non validées dans les documents ouverts avant de fermer la fenêtre avec un message semblable au suivant :  
   
     ```  
     ==========================================================   

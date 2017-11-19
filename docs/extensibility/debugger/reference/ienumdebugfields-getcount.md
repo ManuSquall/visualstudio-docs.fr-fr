@@ -1,46 +1,29 @@
 ---
-title: IEnumDebugFields::GetCount | Microsoft Docs
+title: IEnumDebugFields::GetCount | Documents Microsoft
 ms.custom: 
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-sdk
+ms.technology: vs-ide-sdk
 ms.tgt_pltfrm: 
 ms.topic: article
-f1_keywords:
-- IEnumDebugFields::GetCount
-helpviewer_keywords:
-- IEnumDebugFields::GetCount method
+f1_keywords: IEnumDebugFields::GetCount
+helpviewer_keywords: IEnumDebugFields::GetCount method
 ms.assetid: 3f471b40-4db3-49f7-b504-58b2476eef74
-caps.latest.revision: 7
+caps.latest.revision: "7"
+author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-translation.priority.mt:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
+ms.openlocfilehash: 0dbbafda528d88f84f9796037faa6587e8789fcc
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
 ms.translationtype: MT
-ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
-ms.openlocfilehash: ce93932b56d13afc7ea5bb5c3b16cd42a1219470
-ms.contentlocale: fr-fr
-ms.lasthandoff: 08/28/2017
-
+ms.contentlocale: fr-FR
+ms.lasthandoff: 10/31/2017
 ---
 # <a name="ienumdebugfieldsgetcount"></a>IEnumDebugFields::GetCount
-This method returns the number of elements in the enumeration.  
+Cette méthode retourne le nombre d’éléments dans l’énumération.  
   
-## <a name="syntax"></a>Syntax  
+## <a name="syntax"></a>Syntaxe  
   
 ```cpp  
 HRESULT GetCount(  
@@ -54,15 +37,15 @@ int GetCount(
 );  
 ```  
   
-#### <a name="parameters"></a>Parameters  
+#### <a name="parameters"></a>Paramètres  
  `pcelt`  
- [out] Returns the number of elements in the enumeration.  
+ [out] Retourne le nombre d’éléments dans l’énumération.  
   
-## <a name="return-value"></a>Return Value  
- If successful, returns `S_OK`; otherwise, returns an error code.  
+## <a name="return-value"></a>Valeur de retour  
+ En cas de réussite, retourne `S_OK`; sinon, retourne un code d’erreur.  
   
-## <a name="remarks"></a>Remarks  
- This method is not part of the customary COM enumeration interface which specifies that only Next, Clone, Skip, and Reset need to be implemented.  
+## <a name="remarks"></a>Remarques  
+ Cette méthode n’est pas partie de l’interface d’énumération COM habituel qui spécifie que le suivant, Clone, Skip et réinitialiser uniquement besoin d’être implémentée.  
   
-## <a name="see-also"></a>See Also  
+## <a name="see-also"></a>Voir aussi  
  [IEnumDebugFields](../../../extensibility/debugger/reference/ienumdebugfields.md)

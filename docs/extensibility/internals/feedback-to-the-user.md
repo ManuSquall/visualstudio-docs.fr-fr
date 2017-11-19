@@ -1,64 +1,66 @@
 ---
-title: "Vos commentaires &#224; l&#39;utilisateur | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-helpviewer_keywords: 
-  - "commentaires de modèle utilisateur"
-  - "environnement, contexte"
-  - "IDE, contexte"
-  - "IDE, les commentaires des utilisateurs"
+title: "Vos commentaires à l’utilisateur | Documents Microsoft"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+helpviewer_keywords:
+- user model feedback
+- environment, context
+- IDE, context
+- IDE, user feedback
 ms.assetid: 2d472a24-3813-4f5f-9783-b491ad8a71ad
-caps.latest.revision: 8
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 8
+caps.latest.revision: "8"
+author: gregvanl
+ms.author: gregvanl
+manager: ghogen
+ms.openlocfilehash: ffc6ecc620f57f0cc1e4dd8baf02f1bd1b17d53b
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: fr-FR
+ms.lasthandoff: 10/31/2017
 ---
-# Vos commentaires &#224; l&#39;utilisateur
-[!INCLUDE[vs2017banner](../../code-quality/includes/vs2017banner.md)]
-
-Dans l'IDE de [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] \(IDE\), la rétroaction visuelle concernant la fonctionnalité disponible est basée sur la sélection actuelle de l'utilisateur et le contexte global de sélection.  Le tableau suivant répertorie les fonctionnalités disponibles dans différents contextes de sélection.  
+# <a name="feedback-to-the-user"></a>Vos commentaires à l’utilisateur
+Dans la [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] environnement de développement intégré (IDE), retour visuel concernant des fonctionnalités disponibles sont basée sur la sélection actuelle et le contexte de sélection globale de l’utilisateur. Le tableau suivant répertorie les fonctionnalités qui sont disponibles dans les contextes de sélection différente.  
   
-|contexte de sélection|Fonctionnalités disponibles|  
-|---------------------------|---------------------------------|  
+|Contexte de sélection|Fonctionnalités disponibles|  
+|-----------------------|-----------------------------|  
 |IDE|Global|  
-|ensemble actuel de produit|détail de produit|  
-|hiérarchie active|Détail de type de la hiérarchie|  
-|Élément actif de la hiérarchie|Détail de type d'élément de la hiérarchie|  
-|document actif|détail de type de document|  
-|fenêtre le plus élevé \(MDI\) d'interface multidocument|détail de type de fenêtre|  
-|contexte actuel de sélection|détail de contexte de sélection|  
+|Ensemble de produit actuel|Spécifique au produit|  
+|Hiérarchie Active|Hiérarchie spécifique au type|  
+|Élément de la hiérarchie Active|Hiérarchie spécifiques au type d’élément|  
+|Document actif|Spécifique au type document|  
+|Fenêtre de premier plan interface multidocument (MDI)|Fenêtre spécifique au type|  
+|Contexte de sélection en cours|Contexte de sélection spécifique|  
   
- Si vous ne surface les utilisateurs tirent de fonctionnalité et fournissez continuellement la sélection cohérente et commentaires de contexte d'environnement, vous réduisez la complexité de l'IDE.  Les règles suivantes s'appliquent lorsqu'une fenêtre est ouverte dans l'IDE :  
+ Si vous exposer uniquement les fonctionnalités utilisateurs avez besoin et offrir une sélection cohérente et les commentaires de contexte d’environnement, vous réduisez la complexité dans l’IDE. Les règles suivantes s’appliquent à chaque fois qu’une fenêtre s’ouvre dans l’IDE :  
   
--   Si la fenêtre change son contexte de sélection, les commentaires de sélection est clairement indiquée dans la fenêtre, et la fenêtre d'Aide dynamique, si est affichée, est mise à jour pour refléter le contexte actuel.  
+-   Si la fenêtre change son contexte de sélection, les commentaires de sélection sont clairement indiquée dans la fenêtre et la fenêtre Aide dynamique, si indiqué, est mis à jour pour refléter le contexte actuel.  
   
--   Si la fenêtre change de contexte global de sélection, tous les menus de spécifique au contexte, la fenêtre active de hiérarchie, et la barre de titre d'application sont mis à jour pour refléter le contexte actuel.  
+-   Si la fenêtre change le contexte de sélection globale, tous les menus spécifiques au contexte, la fenêtre de la hiérarchie active et la barre de titre d’application sont mises à jour pour refléter le contexte actuel.  
   
--   La fenêtre doit apprêter des propriétés pour la sélection actuelle dans la fenêtre de **Propriétés** et éventuellement, si affichée, la boîte de dialogue **Pages de propriétés** .  
+-   La fenêtre doit exposer des propriétés pour la sélection actuelle dans le **propriétés** fenêtre et, éventuellement, si indiqué, le **Pages de propriétés** boîte de dialogue.  
   
--   Si la fenêtre ne considère pas les propriétés ou ne modifie pas le contexte global de sélection, les commentaires de sélection ne doit pas rester dans la fenêtre lorsque ce n'est plus la fenêtre active dans l'IDE.  
+-   Si la fenêtre ne pas exposer les propriétés ou modifier le contexte de sélection global, des commentaires de sélection doivent rester pas dans la fenêtre lorsqu’il n’est plus la fenêtre active dans l’IDE.  
   
--   Toutes les fenêtres Outil de document\-détail doivent continuellement refléter le document actif.  
+-   Toutes les fenêtres Outil de document spécifique doivent refléter continuellement le document actif.  
   
--   Les menus, les barres d'outils et la barre de titre d'application doivent refléter la fenêtre le plus \(MDI\) élevé de client d'interface multidocument.  
+-   Menus, barres d’outils et la barre de titre d’application doivent refléter la fenêtre du client au premier plan interface multidocument (MDI).  
   
- Par exemple, le mode HTML d'un formulaire web au sein d'un projet d'application Web Visual Basic est ouvert et l'utilisateur sélectionne une balise d' `<td>` , la est tenu de la manière suivante :  
+ Par exemple, lorsque la vue HTML d’un formulaire Web à l’intérieur d’un projet d’Application Web de Visual Basic est ouvert et que l’utilisateur sélectionne un `<td>` balise, des commentaires sont fournis dans la manière suivante :  
   
--   La sélection est indiquée dans la fenêtre active et répercutées dans la fenêtre de **Propriétés** .  
+-   La sélection est indiquée dans la fenêtre active et reflétée dans le **propriétés** fenêtre.  
   
--   le document\-détail **boîte à outils** est mis à jour pour refléter le document actif.  
+-   Spécifique au document **boîte à outils** est mis à jour le document actif.  
   
--   la barre d'outils d' **Éditeur** et le menu de **Tableau** sont affichés et les mises à jour de barre de titre pour refléter la fenêtre de formulaire web.  
+-   Le **éditeur** barre d’outils et **Table** menu sont affichées et mises à jour de la barre de titre afin de refléter la fenêtre du formulaire Web.  
   
--   La fenêtre active de hiérarchie, qui est généralement **Explorateur de solutions**, et sa mise à jour de barre de titre pour refléter le contexte actuel et les commandes de menu contextuelles de **Projet** s'appliquent à présent au projet d'application Web actif.  
+-   La fenêtre de la hiérarchie active, qui est généralement **l’Explorateur de solutions**et sa mise à jour de barre de titre afin de refléter le contexte actuel et la liste contextuelle **projet** commandes de menu appliqueront maintenant vers le site Web actif Projet d’application.  
   
-## Voir aussi  
+## <a name="see-also"></a>Voir aussi  
  [Sélection et la devise dans l’IDE](../../extensibility/internals/selection-and-currency-in-the-ide.md)   
  [Objets de contexte de sélection](../../extensibility/internals/selection-context-objects.md)   
- [Hiérarchies et la sélection](../../extensibility/internals/hierarchies-and-selection.md)
+ [Hiérarchies et sélection](../../extensibility/internals/hierarchies-and-selection.md)

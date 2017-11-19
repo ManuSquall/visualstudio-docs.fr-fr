@@ -1,34 +1,35 @@
 ---
-title: "Packages VS | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-helpviewer_keywords: 
-  - "Packages VS"
+title: Les VSPackages | Documents Microsoft
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+helpviewer_keywords: VSPackages
 ms.assetid: cad0893a-9c5f-45b7-952a-e2294f83e324
-caps.latest.revision: 45
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 45
+caps.latest.revision: "45"
+author: gregvanl
+ms.author: gregvanl
+manager: ghogen
+ms.openlocfilehash: 7ccd78a87f4c3d2d7ef178c939a22afb24e42d75
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: fr-FR
+ms.lasthandoff: 10/31/2017
 ---
-# Packages VS
-[!INCLUDE[vs2017banner](../../code-quality/includes/vs2017banner.md)]
-
-Les VSPackages sont des modules logiciels qui étendent le [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] l'environnement de développement intégré \(IDE\) en fournissant des éléments d'interface utilisateur, les services, les projets, les éditeurs et les concepteurs.  
+# <a name="vspackages"></a>VSPackages
+Les VSPackages sont des modules logiciels étendant les [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] l’environnement de développement intégré (IDE) en fournissant des éléments d’interface utilisateur, des services, des projets, des éditeurs et concepteurs.  
   
-## Dans cette section  
- [Spécifiant l’emplacement du fichier de package VS à l’interpréteur de commandes de Visual Studio](../../extensibility/internals/specifying-vspackage-file-location-to-the-vs-shell.md)  
- Explique comment spécifier l'emplacement de package VS à l'interpréteur de commandes de Visual Studio.  
+## <a name="in-this-section"></a>Dans cette section  
+ [Spécification de l’emplacement du fichier VSPackage au shell Visual Studio](../../extensibility/internals/specifying-vspackage-file-location-to-the-vs-shell.md)  
+ Explique comment spécifier l’emplacement de VSPackage à l’interpréteur de commandes de Visual Studio.  
   
- [Ressources dans les packages VS](../../extensibility/internals/resources-in-vspackages.md)  
+ [Ressources dans VSPackages](../../extensibility/internals/resources-in-vspackages.md)  
  Explique comment gérer les ressources dans les VSPackages.  
   
- [Meilleures pratiques pour la sécurité dans les packages VS](../../extensibility/internals/best-practices-for-security-in-vspackages.md)  
- Vous aide à créer des produits plus sécurisées grâce à la compréhension des vulnérabilités de sécurité.  
+ [Meilleures pratiques pour la sécurité dans VSPackages](../../extensibility/internals/best-practices-for-security-in-vspackages.md)  
+ Vous aide à créer des produits plus sécurisées en comprenant des failles de sécurité.  
   
-## Rubriques connexes
+## <a name="related-sections"></a>Rubriques connexes

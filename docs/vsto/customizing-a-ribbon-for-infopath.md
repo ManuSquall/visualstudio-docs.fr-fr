@@ -1,12 +1,10 @@
 ---
-title: Customizing a Ribbon for InfoPath | Microsoft Docs
+title: "Personnalisation d’un ruban pour InfoPath | Documents Microsoft"
 ms.custom: 
 ms.date: 02/02/2017
-ms.prod: visual-studio-dev14
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- office-development
+ms.technology: office-development
 ms.tgt_pltfrm: 
 ms.topic: article
 dev_langs:
@@ -16,61 +14,61 @@ helpviewer_keywords:
 - InfoPath [Office development in Visual Studio], Ribbon
 - Ribbon [Office development in Visual Studio], InfoPath
 ms.assetid: 498c6457-679a-46f2-939f-c0597a17b7ec
-caps.latest.revision: 19
-author: kempb
-ms.author: kempb
+caps.latest.revision: "19"
+author: gewarren
+ms.author: gewarren
 manager: ghogen
-ms.translationtype: HT
-ms.sourcegitcommit: eb5c9550fd29b0e98bf63a7240737da4f13f3249
-ms.openlocfilehash: befccdbf740c8ff166cb9d57e1998b07a1c24619
-ms.contentlocale: fr-fr
-ms.lasthandoff: 08/30/2017
-
+ms.openlocfilehash: c3f4612b3e8dc272b0f51bae80d66d8afe97938e
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: fr-FR
+ms.lasthandoff: 10/31/2017
 ---
-# <a name="customizing-a-ribbon-for-infopath"></a>Customizing a Ribbon for InfoPath
-  When you customize the Ribbon in Microsoft Office InfoPath, you must consider where your custom Ribbon will appear in the application. [!INCLUDE[InfoPath_14_short](../vsto/includes/infopath-14-short-md.md)] can display the Ribbon in the following three types of InfoPath application windows:  
+# <a name="customizing-a-ribbon-for-infopath"></a>Personnalisation d'un ruban pour InfoPath
+  Quand vous personnalisez le ruban dans Microsoft Office InfoPath, vous devez prendre en compte l'emplacement où votre ruban personnalisé apparaîtra dans l'application. [!INCLUDE[InfoPath_14_short](../vsto/includes/infopath-14-short-md.md)] peut afficher le ruban dans les trois types suivants de fenêtres d'application InfoPath :  
   
--   Windows that display a form template that is opened in design mode.  
+-   Fenêtres qui affichent un modèle de formulaire ouvert en mode Création.  
   
--   Windows that display a form that is based on a form template.  
+-   Fenêtres qui affichent un formulaire basé sur un modèle de formulaire.  
   
--   The Print Preview window.  
+-   Fenêtre Aperçu avant impression.  
   
- **Applies to:** The information in this topic applies to VSTO Add-in projects for InfoPath 2010. For more information, see [Features Available by Office Application and Project Type](../vsto/features-available-by-office-application-and-project-type.md).  
+ **S’applique à :** les informations contenues dans cette rubrique s’appliquent aux projets de compléments VSTO pour InfoPath 2010. Pour plus d'informations, consultez [Features Available by Office Application and Project Type](../vsto/features-available-by-office-application-and-project-type.md).  
   
- Users and designers open a form template in design mode to modify the appearance and layout of the template. Users open forms that are based in a form template to add content.  
+ Les utilisateurs et les concepteurs ouvrent un modèle de formulaire en mode Création pour modifier l'apparence et la disposition du modèle. Les utilisateurs ouvrent des formulaires basés sur un modèle de formulaire pour ajouter du contenu.  
   
- The Print Preview window enables designers and users to preview the pages of a form or form template before they print them.  
+ La fenêtre Aperçu avant impression permet aux concepteurs et aux utilisateurs d'afficher un aperçu des pages d'un formulaire ou d'un modèle de formulaire avant de les imprimer.  
   
 > [!NOTE]  
->  The **AddIns** tab does not appear in the Print Preview window. If you want a custom tab to appear in the Print Preview window, make sure that the **OfficeId** property of the tab is not set to **TabAddIns**.  
+>  L'onglet **Compléments** n'apparaît pas dans la fenêtre Aperçu avant impression. Si vous souhaitez qu'un onglet personnalisé apparaisse dans la fenêtre Aperçu avant impression, assurez-vous que la propriété **OfficeId** de l'onglet n'a pas la valeur **TabAddIns**.  
   
- You must specify the Ribbon type of each window in which you want your Ribbon to appear.  
+ Vous devez spécifier le type de ruban de chaque fenêtre dans laquelle vous souhaitez que votre ruban apparaisse.  
   
-## <a name="specifying-the-ribbon-type-in-the-ribbon-designer"></a>Specifying the Ribbon Type in the Ribbon Designer  
- If you are using the **Ribbon (Visual Designer)** item, click the **RibbonType** property of the Ribbon in the **Properties** window, and then select any of the Ribbon ID's described in the following table.  
+## <a name="specifying-the-ribbon-type-in-the-ribbon-designer"></a>Spécification du type de ruban dans le concepteur de ruban  
+ Si vous utilisez l'élément **Ruban (Concepteur visuel)** , cliquez sur la propriété **RibbonType** du ruban dans la fenêtre **Propriétés** , puis sélectionnez l'un des ID de ruban répertoriés dans le tableau ci-dessous.  
   
-|Ribbon ID|Window in which the Ribbon will appear when you run the project|  
+|ID de ruban|Fenêtre dans laquelle le ruban s'affichera quand vous exécuterez le projet|  
 |---------------|---------------------------------------------------------------------|  
-|**Microsoft.InfoPath.Designer**|Windows that display a form template that is opened in design mode.|  
-|**Microsoft.InfoPath.Editor**|Windows that display a form that is based on a form template.|  
-|**Microsoft.InfoPath.PrintPreview**|The Print Preview window.|  
+|**Microsoft.InfoPath.Designer**|Fenêtres qui affichent un modèle de formulaire ouvert en mode Création.|  
+|**Microsoft.InfoPath.Editor**|Fenêtres qui affichent un formulaire basé sur un modèle de formulaire.|  
+|**Microsoft.InfoPath.PrintPreview**|Fenêtre Aperçu avant impression.|  
   
- You can add more than one Ribbon to a project. If more than one Ribbon share a Ribbon ID, override the CreateRibbonExtensibilityObject method in the `ThisAddin` class of your project to specify which Ribbon to display at run time. For more information, see [Ribbon Overview](../vsto/ribbon-overview.md).  
+ Vous pouvez ajouter plusieurs rubans à un projet. Si plusieurs rubans partagent un ID de ruban, substituez la méthode CreateRibbonExtensibilityObject dans la `ThisAddin` classe de votre projet pour spécifier le ruban à afficher au moment de l’exécution. Pour plus d’informations, consultez [vue d’ensemble du ruban](../vsto/ribbon-overview.md).  
   
-## <a name="specifying-the-ribbon-type-by-using-ribbon-xml"></a>Specifying the Ribbon Type by Using Ribbon XML  
- If you are using the **Ribbon (XML)** item, check the value of the *ribbonID* parameter in the <xref:Microsoft.Office.Core.IRibbonExtensibility.GetCustomUI%2A> method and return the appropriate Ribbon.  
+## <a name="specifying-the-ribbon-type-by-using-ribbon-xml"></a>Spécification du type de ruban à l'aide du code XML du ruban  
+ Si vous utilisez l'élément **Ruban (XML)** , vérifiez la valeur du paramètre *ribbonID* dans la méthode <xref:Microsoft.Office.Core.IRibbonExtensibility.GetCustomUI%2A> et retournez le ruban approprié.  
   
- The <xref:Microsoft.Office.Core.IRibbonExtensibility.GetCustomUI%2A> method is automatically generated by Visual Studio in the Ribbon code file. The *ribbonID* parameter is a string that identifies the type of InfoPath window that is opening.  
+ La méthode <xref:Microsoft.Office.Core.IRibbonExtensibility.GetCustomUI%2A> est automatiquement générée par Visual Studio dans le fichier de code du ruban. Le paramètre *ribbonID* est une chaîne qui identifie le type de fenêtre InfoPath qui s'ouvre.  
   
- The following code example demonstrates how to display a custom Ribbon only in a window that displays a form template in design mode. The Ribbon to display is specified in the `GetResourceText()` method, which is generated in the Ribbon class. For more information about the Ribbon class, see [Ribbon XML](../vsto/ribbon-xml.md).  
+ L'exemple de code suivant montre comment afficher un ruban personnalisé uniquement dans une fenêtre qui affiche un modèle de formulaire en mode Création. Le ruban à afficher est spécifié dans la méthode `GetResourceText()` , générée dans la classe du ruban. Pour plus d’informations sur la classe du ruban, consultez [Ribbon XML](../vsto/ribbon-xml.md).  
   
- [!code-csharp[Trin_RibbonInfoPathBasic#1](../vsto/codesnippet/CSharp/myinfopathproject/ribbon.cs#1)] [!code-vb[Trin_RibbonInfoPathBasic#1](../vsto/codesnippet/VisualBasic/myinfopathproject/ribbon.vb#1)]  
+ [!code-csharp[Trin_RibbonInfoPathBasic#1](../vsto/codesnippet/CSharp/myinfopathproject/ribbon.cs#1)]
+ [!code-vb[Trin_RibbonInfoPathBasic#1](../vsto/codesnippet/VisualBasic/myinfopathproject/ribbon.vb#1)]  
   
-## <a name="see-also"></a>See Also  
+## <a name="see-also"></a>Voir aussi  
  [Accessing the Ribbon at Run Time](../vsto/accessing-the-ribbon-at-run-time.md)   
- [Ribbon Overview](../vsto/ribbon-overview.md)   
- [Ribbon Designer](../vsto/ribbon-designer.md)   
- [Ribbon XML](../vsto/ribbon-xml.md)  
+ [Vue d’ensemble du ruban](../vsto/ribbon-overview.md)   
+ [Concepteur de ruban](../vsto/ribbon-designer.md)   
+ [Élément XML Ribbon](../vsto/ribbon-xml.md)  
   
   

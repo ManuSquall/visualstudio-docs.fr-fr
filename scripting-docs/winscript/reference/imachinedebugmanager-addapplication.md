@@ -1,27 +1,30 @@
 ---
-title: "IMachineDebugManager::AddApplication | Microsoft Docs"
-ms.custom: ""
-ms.date: "01/18/2017"
-ms.prod: "windows-script-interfaces"
-ms.reviewer: ""
-ms.suite: ""
-ms.tgt_pltfrm: ""
-ms.topic: "reference"
+title: IMachineDebugManager::AddApplication | Documents Microsoft
+ms.custom: 
+ms.date: 01/18/2017
+ms.prod: windows-script-interfaces
+ms.reviewer: 
+ms.suite: 
+ms.tgt_pltfrm: 
+ms.topic: reference
 apiname: IMachineDebugManager.AddApplication
 apilocation: scrobj.dll
-helpviewer_keywords: 
-  - "IMachineDebugManager::AddApplication"
+helpviewer_keywords: IMachineDebugManager::AddApplication
 ms.assetid: 7cd591b6-718c-4e77-acb7-a6dd147ddf57
-caps.latest.revision: 8
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 8
+caps.latest.revision: "8"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: 77c31084ccc24a6bace18f009eb8372a4f68a428
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.translationtype: MT
+ms.contentlocale: fr-FR
+ms.lasthandoff: 10/27/2017
 ---
-# IMachineDebugManager::AddApplication
-Ajoute une application à la liste d'application active.  
+# <a name="imachinedebugmanageraddapplication"></a>IMachineDebugManager::AddApplication
+Ajoute une application en cours d’exécution la liste des applications.  
   
-## Syntaxe  
+## <a name="syntax"></a>Syntaxe  
   
 ```  
 HRESULT AddApplication(  
@@ -30,24 +33,24 @@ HRESULT AddApplication(
 );  
 ```  
   
-#### Paramètres  
+#### <a name="parameters"></a>Paramètres  
  `pda`  
- \[in\]  application à la liste d'application active.  
+ [in] Application à l’exécution liste des applications.  
   
  `pdwAppCookie`  
- \[out\]  Un cookie utilisé pour supprimer l'application de l'ordinateur de débogage le gestionnaire.  
+ [out] Un cookie est utilisé pour supprimer l’application à partir du Gestionnaire de débogage d’ordinateur.  
   
-## Valeur de retour  
- La méthode retourne `HRESULT`.  Les valeurs possibles incluent, mais ne sont pas limitées à, celles dans le tableau suivant.  
+## <a name="return-value"></a>Valeur de retour  
+ La méthode retourne `HRESULT`. Les valeurs possibles sont notamment celles figurant dans le tableau suivant.  
   
 |Valeur|Description|  
-|------------|-----------------|  
+|-----------|-----------------|  
 |`S_OK`|La méthode a réussi.|  
   
-## Notes  
- Cette méthode est appelée par le processus de débogage le gestionnaire chaque fois qu' `IProcessDebugManager::AddApplication` est appelé.  
+## <a name="remarks"></a>Remarques  
+ Cette méthode est appelée par le Gestionnaire de processus de débogage chaque fois que `IProcessDebugManager::AddApplication` est appelée.  
   
-## Voir aussi  
- [IMachineDebugManager, interface](../../winscript/reference/imachinedebugmanager-interface.md)   
+## <a name="see-also"></a>Voir aussi  
+ [IMachineDebugManager (Interface)](../../winscript/reference/imachinedebugmanager-interface.md)   
  [IMachineDebugManager::RemoveApplication](../../winscript/reference/imachinedebugmanager-removeapplication.md)   
  [IProcessDebugManager::AddApplication](../../winscript/reference/iprocessdebugmanager-addapplication.md)

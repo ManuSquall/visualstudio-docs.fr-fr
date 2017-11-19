@@ -1,50 +1,52 @@
 ---
-title: "Comment&#160;: fournir la prise en charge du texte masqu&#233; dans un Service de langage h&#233;rit&#233; | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-helpviewer_keywords: 
-  - "texte, masqué prenant en charge"
-  - "éditeurs (Visual Studio SDK), masqués texte"
-  - "services de langage, l’implémentation des zones de texte masqué"
+title: "Comment : prendre en charge le texte masqué dans un Service de langage hérité | Documents Microsoft"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+helpviewer_keywords:
+- hidden text, supporting
+- editors [Visual Studio SDK], hidden text
+- language services, implementing hidden text regions
 ms.assetid: 1c1dce9f-bbe2-4fc3-a736-5f78a237f4cc
-caps.latest.revision: 21
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 21
+caps.latest.revision: "21"
+author: gregvanl
+ms.author: gregvanl
+manager: ghogen
+ms.openlocfilehash: f7aab5978d2fc5f7bee82b097ed61a9603d7e198
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: fr-FR
+ms.lasthandoff: 10/31/2017
 ---
-# Comment&#160;: fournir la prise en charge du texte masqu&#233; dans un Service de langage h&#233;rit&#233;
-[!INCLUDE[vs2017banner](../../code-quality/includes/vs2017banner.md)]
-
-Vous pouvez créer des zones de texte masqué en plus de les régions en mode Plan.  Les zones de texte masqué peuvent être client\-contrôlées ou contrôlées par l'éditeur et sont utilisées pour masquer une zone de texte complètement.  l'éditeur affiche une zone masquée comme lignes horizontales.  Un exemple de cette opération est en mode script uniquement dans l'éditeur HTML.  
+# <a name="how-to-provide-hidden-text-support-in-a-legacy-language-service"></a>Comment : prendre en charge le texte masqué dans un Service de langage hérité
+Vous pouvez créer des zones de texte masqué en plus des régions en mode plan. Zones de texte masqué peuvent être contrôlé par le client ou contrôlés par l’éditeur et sont utilisés pour masquer une zone de texte complètement. L’éditeur affiche une zone masquée comme des lignes horizontales. Ceci est le mode Script uniquement dans l’éditeur HTML.  
   
-## Procédure  
+## <a name="procedure"></a>Procédure  
   
-#### pour implémenter une zone de texte masqué  
+#### <a name="to-implement-a-hidden-text-region"></a>Pour implémenter une zone de texte masqué  
   
-1.  appel `QueryService` pour <xref:Microsoft.VisualStudio.TextManager.Interop.SVsTextManager>.  
+1.  Appelez `QueryService` pour <xref:Microsoft.VisualStudio.TextManager.Interop.SVsTextManager>.  
   
-     Retourne un pointeur vers <xref:Microsoft.VisualStudio.TextManager.Interop.IVsHiddenTextManager>.  
+     Cela retourne un pointeur vers <xref:Microsoft.VisualStudio.TextManager.Interop.IVsHiddenTextManager>.  
   
-2.  Appelez l' <xref:Microsoft.VisualStudio.TextManager.Interop.IVsHiddenTextManager.GetHiddenTextSession%2A>, en passant un pointeur d'une mémoire tampon de texte donnée.  Cela détermine si une session de texte masqué existe déjà pour la mémoire tampon.  
+2.  Appelez <xref:Microsoft.VisualStudio.TextManager.Interop.IVsHiddenTextManager.GetHiddenTextSession%2A>, en passant un pointeur de mémoire tampon de texte donné. Ce paramètre détermine si une texte masqué session existe déjà pour la mémoire tampon.  
   
-3.  Le cas échéant, vous n'avez pas besoin de créer un et un pointeur vers l'objet existant d' <xref:Microsoft.VisualStudio.TextManager.Interop.IVsHiddenTextSession> est retourné.  Utilisez ce pointeur pour énumérer et créer des zones de texte masqué.  Sinon, <xref:Microsoft.VisualStudio.TextManager.Interop.IVsHiddenTextManager.CreateHiddenTextSession%2A> d'appel pour créer une session de texte masqué pour la mémoire tampon.  
+3.  S’il en existe déjà, puis que vous n’avez pas besoin de créer un et un pointeur à l’objet de <xref:Microsoft.VisualStudio.TextManager.Interop.IVsHiddenTextSession> est retourné. Utilisez ce pointeur pour énumérer et créer des zones de texte masqué. Sinon, appelez <xref:Microsoft.VisualStudio.TextManager.Interop.IVsHiddenTextManager.CreateHiddenTextSession%2A> pour créer une session de texte masqué pour la mémoire tampon.  
   
-     Un pointeur vers l'objet d' <xref:Microsoft.VisualStudio.TextManager.Interop.IVsHiddenTextSession> est retourné.  
+     Un pointeur vers le <xref:Microsoft.VisualStudio.TextManager.Interop.IVsHiddenTextSession> est retourné.  
   
     > [!NOTE]
-    >  Lorsque vous appelez `CreateHiddenTextSession`, vous pouvez spécifier un client de texte masqué \(autrement dit, <xref:Microsoft.VisualStudio.TextManager.Interop.IVsHiddenTextClient>\).  Le client de texte masqué vous avertit lorsque le texte masqué ou le mode Plan est développé ou réduit par l'utilisateur.  
+    >  Lorsque vous appelez `CreateHiddenTextSession`, vous pouvez spécifier un client de texte masqué (autrement dit, <xref:Microsoft.VisualStudio.TextManager.Interop.IVsHiddenTextClient>). Le client de texte masqué vous avertit lorsque le texte masqué ou le mode plan est développé ou réduit par l’utilisateur.  
   
-4.  appelez l' <xref:Microsoft.VisualStudio.TextManager.Interop.IVsHiddenTextSession.AddHiddenRegions%2A> pour ajouter une ou plusieurs nouvelles régions en mode Plan à la fois, en spécifiant les informations suivantes dans le paramètre d' `reHidReg` \(<xref:Microsoft.VisualStudio.TextManager.Interop.NewHiddenRegion>\) :  
+4.  Appelez <xref:Microsoft.VisualStudio.TextManager.Interop.IVsHiddenTextSession.AddHiddenRegions%2A> d’ajouter un ou plusieurs nouvelles montrer les régions à la fois, en spécifiant les informations suivantes dans le `reHidReg` (<xref:Microsoft.VisualStudio.TextManager.Interop.NewHiddenRegion>) paramètre :  
   
-    1.  spécifiez une valeur d' `hrtConcealed` dans le membre d' `iType` de la structure d' <xref:Microsoft.VisualStudio.TextManager.Interop.NewHiddenRegion> pour indiquer que vous créez une zone masquée, plutôt qu'une région en mode Plan.  
+    1.  Spécifiez la valeur `hrtConcealed` dans les `iType` membre de la <xref:Microsoft.VisualStudio.TextManager.Interop.NewHiddenRegion> structure pour indiquer que vous créez une zone masquée, plutôt que d’une région en mode plan.  
   
         > [!NOTE]
-        >  Une fois cachées les régions sont masquées, les affiche les lignes d'éditeur automatiquement autour de les zones masquées pour indiquer leur présence.  
+        >  Lorsque les régions masquées sont masquées, l’éditeur affiche automatiquement les lignes dans les zones masquées pour indiquer leur présence.  
   
-    2.  Spécifiez si la région est client\-contrôlée ou contrôlée par l'éditeur dans les membres d' `dwBehavior` de la structure d' <xref:Microsoft.VisualStudio.TextManager.Interop.NewHiddenRegion> .  Votre implémentation intelligente de mode Plan peut contenir une combinaison des régions client\-contrôlées d'éditeur et d'ensemble et de texte masqué.
+    2.  Spécifiez si la région est contrôlé par le client ou dépendant de l’éditeur dans le `dwBehavior` membres de le <xref:Microsoft.VisualStudio.TextManager.Interop.NewHiddenRegion> structure. Votre implémentation de mode plan intelligente peut contenir une combinaison de plan de l’éditeur - et contrôlé par le client et les zones de texte masqué.

@@ -1,46 +1,29 @@
 ---
-title: IDebugProperty3::GetStringCharLength | Microsoft Docs
+title: IDebugProperty3::GetStringCharLength | Documents Microsoft
 ms.custom: 
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-sdk
+ms.technology: vs-ide-sdk
 ms.tgt_pltfrm: 
 ms.topic: article
-f1_keywords:
-- IDebugProperty3::GetStringCharLength
-helpviewer_keywords:
-- IDebugProperty3::GetStringCharLength
+f1_keywords: IDebugProperty3::GetStringCharLength
+helpviewer_keywords: IDebugProperty3::GetStringCharLength
 ms.assetid: 89a8676b-6da9-4358-91c2-039bf33f99e4
-caps.latest.revision: 9
+caps.latest.revision: "9"
+author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-translation.priority.mt:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
+ms.openlocfilehash: 139cb6deac5afc3f4b174673d623c56d3929071a
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
 ms.translationtype: MT
-ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
-ms.openlocfilehash: 42ec3950a8f654c3664276fe3b45b91118ad311f
-ms.contentlocale: fr-fr
-ms.lasthandoff: 08/28/2017
-
+ms.contentlocale: fr-FR
+ms.lasthandoff: 10/31/2017
 ---
 # <a name="idebugproperty3getstringcharlength"></a>IDebugProperty3::GetStringCharLength
-Returns the number of characters in the associated property's string.  
+Retourne le nombre de caractères dans la chaîne de la propriété associée.  
   
-## <a name="syntax"></a>Syntax  
+## <a name="syntax"></a>Syntaxe  
   
 ```cpp  
 HRESULT GetStringCharLength(  
@@ -54,20 +37,20 @@ int GetStringCharLength(
 );  
 ```  
   
-#### <a name="parameters"></a>Parameters  
+#### <a name="parameters"></a>Paramètres  
   
-|Parameter|Description|  
+|Paramètre|Description|  
 |---------------|-----------------|  
-|`pLen`|[out] Returns the number of characters in the property's string.|  
+|`pLen`|[out] Retourne le nombre de caractères dans la chaîne de propriété.|  
   
-## <a name="return-value"></a>Return Value  
- If successful, returns `S_OK`; otherwise returns error code.  
+## <a name="return-value"></a>Valeur de retour  
+ En cas de réussite, retourne `S_OK`; sinon retourne le code d’erreur.  
   
-## <a name="remarks"></a>Remarks  
- Typically, this method is used as a prelude to allocating a buffer for a call to the [GetStringChars](../../../extensibility/debugger/reference/idebugproperty3-getstringchars.md) method.  
+## <a name="remarks"></a>Remarques  
+ En règle générale, cette méthode est utilisée comme une étape préliminaire à allouer une mémoire tampon pour un appel à la [GetStringChars](../../../extensibility/debugger/reference/idebugproperty3-getstringchars.md) (méthode).  
   
-## <a name="example"></a>Example  
- The following example shows how to implement this method for a **CProperty** object that exposes the [IDebugProperty3](../../../extensibility/debugger/reference/idebugproperty3.md) interface.  
+## <a name="example"></a>Exemple  
+ L’exemple suivant montre comment implémenter cette méthode pour un **CProperty** objet qui expose la [IDebugProperty3](../../../extensibility/debugger/reference/idebugproperty3.md) interface.  
   
 ```cpp  
 STDMETHODIMP CProperty::GetStringCharLength(ULONG *pLen)  
@@ -109,6 +92,6 @@ STDMETHODIMP CProperty::GetStringCharLength(ULONG *pLen)
 }  
 ```  
   
-## <a name="see-also"></a>See Also  
+## <a name="see-also"></a>Voir aussi  
  [GetStringChars](../../../extensibility/debugger/reference/idebugproperty3-getstringchars.md)   
  [IDebugProperty3](../../../extensibility/debugger/reference/idebugproperty3.md)

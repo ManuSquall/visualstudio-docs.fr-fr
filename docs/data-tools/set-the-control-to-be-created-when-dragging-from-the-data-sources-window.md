@@ -1,5 +1,5 @@
 ---
-title: Set the control to be created when dragging from the Data Sources window | Microsoft Docs
+title: "Définir le contrôle à créer lors du déplacement de la fenêtre Sources de données | Documents Microsoft"
 ms.custom: 
 ms.date: 11/04/2016
 ms.reviewer: 
@@ -12,74 +12,59 @@ helpviewer_keywords:
 - data [Visual Studio], displaying on Windows Forms
 - data [Visual Studio], Data Sources window
 ms.assetid: 20597ff8-0c98-43ec-8fb1-05376804ba48
-caps.latest.revision: 31
+caps.latest.revision: "31"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-translation.priority.ht:
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- ru-ru
-- zh-cn
-- zh-tw
-translation.priority.mt:
-- cs-cz
-- pl-pl
-- pt-br
-- tr-tr
-ms.translationtype: HT
-ms.sourcegitcommit: 33a857c2d8585e2e8da9bcd9158190366a3b6830
-ms.openlocfilehash: 6adda6d75385f28f9f8f1f0701f9b3d8cbcb9395
-ms.contentlocale: fr-fr
-ms.lasthandoff: 09/07/2017
-
+ms.technology: vs-data-tools
+ms.openlocfilehash: 12b8c166873802e3c0e6a8d4e73ff1b686229222
+ms.sourcegitcommit: ee42a8771f0248db93fd2e017a22e2506e0f9404
+ms.translationtype: MT
+ms.contentlocale: fr-FR
+ms.lasthandoff: 11/09/2017
 ---
-# <a name="set-the-control-to-be-created-when-dragging-from-the-data-sources-window"></a>Set the control to be created when dragging from the Data Sources window
-You can create data-bound controls by dragging items from the **Data Sources** window onto the WPF designer or Windows Forms designer. Each item in the **Data Sources** window has a default control that is created when you drag it to the designer. However, you can choose to create a different control.  
+# <a name="set-the-control-to-be-created-when-dragging-from-the-data-sources-window"></a>Définir le contrôle à créer lors d’une opération de glisser-déplacer à partir de la fenêtre Sources de données
+Vous pouvez créer des contrôles liés aux données en faisant glisser des éléments depuis la **des Sources de données** fenêtre vers le Concepteur WPF ou le Concepteur Windows Forms. Chaque élément dans le **des Sources de données** fenêtre possède un contrôle par défaut qui est créé lorsque vous faites glisser vers le concepteur. Toutefois, vous pouvez choisir de créer un autre contrôle.  
   
-## <a name="set-the-controls-to-be-created-for-data-tables-or-objects"></a>Set the controls to be created for data tables or objects  
- Before you drag items that represent data tables or objects from the **Data Sources** window, you can choose to display all the data in one control, or to display each column or property in a separate control.  
+## <a name="set-the-controls-to-be-created-for-data-tables-or-objects"></a>Définir les contrôles à créer pour les tables de données ou des objets  
+Avant de faire glisser des éléments qui représentent des tables de données ou des objets à partir de la **des Sources de données** fenêtre, vous pouvez choisir d’afficher toutes les données dans un contrôle, ou pour afficher chaque colonne ou propriété dans un contrôle distinct.  
   
- In this context, the term *object* refers to a custom business object, an entity (in an Entity Data Model), or an object returned by a service.  
+Dans ce contexte, le terme *objet* fait référence à un objet métier personnalisé, une entité (dans un Entity Data Model) ou un objet retourné par un service.  
   
-#### <a name="to-set-the-controls-to-be-created-for-data-tables-or-objects"></a>To set the controls to be created for data tables or objects  
+### <a name="to-set-the-controls-to-be-created-for-data-tables-or-objects"></a>Pour définir les contrôles à créer pour les tables de données ou des objets  
   
-1.  Make sure that the WPF designer or the Windows Forms designer is open.  
+1.  Assurez-vous que le Concepteur WPF ou le Concepteur Windows Forms est ouvert.  
   
-2.  In the **Data Sources** window, select the item that represents the data table or object you want to set.  
+2.  Dans le **des Sources de données** fenêtre, sélectionnez l’élément qui représente la table de données ou de l’objet à définir.  
   
-3.  Click the drop-down menu for the item, and then click one of the following items in the menu:  
+3.  Cliquez sur le menu déroulant pour l’élément, puis cliquez sur un des éléments suivants dans le menu :  
   
-    -   To display each data field in a separate control, click **Details**. When you drag the data item to the designer, this action will create a different data-bound control for each column or property of the parent data table or object, along with labels for each control.  
+    -   Pour afficher chaque champ de données dans un contrôle distinct, cliquez sur **détails**. Lorsque vous faites glisser l’élément de données vers le concepteur, cette action créera un contrôle lié aux données différent pour chaque colonne ou propriété de l’objet, ainsi que des étiquettes pour chaque contrôle ou de table de données parente.  
   
-    -   To display all of the data in a single control, select a different control in the list, such as **DataGrid** or **List** in a WPF application, or **DataGridView** in a Windows Forms application.  
+    -   Pour afficher toutes les données dans un seul contrôle, sélectionnez un autre contrôle dans la liste, telle que **DataGrid** ou **liste** dans une application WPF, ou **DataGridView** dans Windows Forms application.  
   
-     The list of available controls depends on which designer you have open, which version of the .NET Framework your project targets, and whether you have added custom controls that support data binding to the **Toolbox**. If the control you want to create is in the list of available controls, you can add the control to the list. For more information, see [Add custom controls to the Data Sources window](../data-tools/add-custom-controls-to-the-data-sources-window.md).  
+    La liste des contrôles disponibles dépend du concepteur que vous avez ouvert, la version du .NET Framework que votre projet cible, et si vous avez ajouté personnalisé de contrôles cette prise en charge de liaison de données à la **boîte à outils**. Si le contrôle que vous souhaitez créer n’est pas dans la liste des contrôles disponibles, vous pouvez ajouter le contrôle à la liste. Pour plus d’informations, consultez [ajouter des contrôles personnalisés à la fenêtre Sources de données](../data-tools/add-custom-controls-to-the-data-sources-window.md).  
   
-     To learn how to create a custom Windows Forms control that can be added to the list of controls for data tables or objects in the **Data Sources** window, see [Create a Windows Forms user control that supports complex data binding](../data-tools/create-a-windows-forms-user-control-that-supports-complex-data-binding.md).  
+    Pour savoir comment créer un contrôle Windows Forms personnalisé qui peut être ajouté à la liste de contrôles pour les tables de données ou des objets dans le **des Sources de données** fenêtre, consultez [créer un contrôle utilisateur Windows Forms qui prend en charge des données complexes liaison](../data-tools/create-a-windows-forms-user-control-that-supports-complex-data-binding.md).  
   
-## <a name="set-the-controls-to-be-created-for-data-columns-or-properties"></a>Set the controls to be created for data columns or properties  
- Before you drag an item that represents a column or a property of an object from the **Data Sources** window to the designer, you can set the control to be created.  
+## <a name="set-the-controls-to-be-created-for-data-columns-or-properties"></a>Définir les contrôles à créer pour les colonnes de données ou des propriétés  
+Avant de faire glisser un élément qui représente une colonne ou une propriété d’un objet à partir de la **des Sources de données** fenêtre vers le concepteur, vous pouvez définir le contrôle à créer.  
   
-#### <a name="to-set-the-controls-to-be-created-for-columns-or-properties"></a>To set the controls to be created for columns or properties  
+#### <a name="to-set-the-controls-to-be-created-for-columns-or-properties"></a>Pour définir les contrôles à créer pour des colonnes ou des propriétés  
   
-1.  Make sure that the WPF designer or the Windows Forms designer is open.  
+1.  Assurez-vous que le Concepteur WPF ou le Concepteur Windows Forms est ouvert.  
   
-2.  In the **Data Sources** window, expand the desired table or object to display its columns or properties.  
+2.  Dans le **des Sources de données** fenêtre, développez la table souhaitée, ou pour afficher ses colonnes ou les propriétés de l’objet.  
   
-3.  Select each column or property for which you want to set the control to be created.  
+3.  Sélectionnez chaque colonne ou la propriété pour laquelle vous souhaitez définir le contrôle à créer.  
   
-4.  Click the drop-down menu for the column or property, and then select the control you want to create when the item is dragged to the designer.  
+4.  Cliquez sur le menu déroulant de la colonne ou la propriété, puis sélectionnez le contrôle à créer lorsque vous faites glisser l’élément vers le concepteur.  
   
-     The list of available controls depends on which designer you have open, which version of the .NET Framework your project targets, and which custom controls that support data binding you have added to the **Toolbox**. If the control you want to create is in the list of available controls, you can add the control to the list. For more information, see [Add custom controls to the Data Sources window](../data-tools/add-custom-controls-to-the-data-sources-window.md).  
+     La liste des contrôles disponibles dépend du concepteur que vous avez ouvert, la version du .NET Framework que votre projet cible, et des contrôles personnalisés qui prennent en charge de liaisons de données ont ajoutés à la **boîte à outils**. Si le contrôle que vous souhaitez créer est dans la liste des contrôles disponibles, vous pouvez ajouter le contrôle à la liste. Pour plus d’informations, consultez [ajouter des contrôles personnalisés à la fenêtre Sources de données](../data-tools/add-custom-controls-to-the-data-sources-window.md).  
   
-     To learn how to create a custom control that can be added to the list of controls for data columns or properties in the **Data Sources** window, see [Create a Windows Forms user control that supports simple data binding](../data-tools/create-a-windows-forms-user-control-that-supports-simple-data-binding.md).  
+     Pour savoir comment créer un contrôle personnalisé qui peut être ajouté à la liste de contrôles pour les colonnes de données ou les propriétés dans le **des Sources de données** fenêtre, consultez [créer un contrôle utilisateur Windows Forms qui prend en charge la liaison de données simple](../data-tools/create-a-windows-forms-user-control-that-supports-simple-data-binding.md).  
   
-     If you don't want to create a control for the column or property, select **None** in the drop-down menu. This is useful if you want to drag the parent table or object to the designer, but you do not want to include the specific column or property.  
+     Si vous ne souhaitez pas créer un contrôle pour la colonne ou propriété, sélectionnez **aucun** dans le menu déroulant. Cela est utile si vous souhaitez faire glisser la table parent ou l’objet vers le concepteur, mais vous ne souhaitez pas inclure la colonne ou propriété particulière.  
   
-## <a name="see-also"></a>See Also  
- [Bind controls to data in Visual Studio](../data-tools/bind-controls-to-data-in-visual-studio.md)
+## <a name="see-also"></a>Voir aussi
+[Lier des contrôles à des données dans Visual Studio](../data-tools/bind-controls-to-data-in-visual-studio.md)

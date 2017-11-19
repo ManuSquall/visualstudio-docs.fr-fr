@@ -1,59 +1,60 @@
 ---
-title: "Comment : ouvrir des &#233;diteurs pour les Documents ouverts | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-helpviewer_keywords: 
-  - "éditeurs (Visual Studio SDK), ouvrir des documents ouverts"
+title: "Comment : ouvrir les éditeurs pour les Documents ouverts | Documents Microsoft"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+helpviewer_keywords: editors [Visual Studio SDK], opening for open documents
 ms.assetid: 1a0fa49c-efa4-4dcc-bdc0-299b7052acdc
-caps.latest.revision: 13
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 13
+caps.latest.revision: "13"
+author: gregvanl
+ms.author: gregvanl
+manager: ghogen
+ms.openlocfilehash: dfd145281a467a23cd01d73ff04721d68580254e
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: fr-FR
+ms.lasthandoff: 10/31/2017
 ---
-# Comment : ouvrir des &#233;diteurs pour les Documents ouverts
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
-
-Avant qu'un projet ouvre une fenêtre de document, d'abord le fichier doit déterminer si le fichier est déjà ouvert dans la fenêtre de document pour un autre éditeur.  Le fichier peut être ouvert dans un éditeur spécifique au projet, ou l'un des éditeurs standard enregistrés avec [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)].  
+# <a name="how-to-open-editors-for-open-documents"></a>Comment : ouvrir les éditeurs pour les Documents ouverts
+Avant qu’un projet s’ouvre une fenêtre de document, le projet devez d’abord déterminer si le fichier est déjà ouvert dans la fenêtre de document pour un autre éditeur. Le fichier peut être soit ouvert dans un éditeur spécifique au projet, ou un éditeur standard inscrit auprès de [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)].  
   
-## Ouvrir un éditeur spécifique au projet  
- Utilisez la procédure suivante pour ouvrir un éditeur spécifique aux projets pour un fichier déjà ouvert.  
+## <a name="opening-a-project-specific-editor"></a>Ouverture d’un éditeur spécifique au projet  
+ Utilisez la procédure suivante pour ouvrir un éditeur spécifique au projet pour un fichier qui est déjà ouvert.  
   
-#### Pour ouvrir un éditeur spécifique aux projets pour un fichier ouvert  
+#### <a name="to-open-a-project-specific-editor-for-an-open-file"></a>Pour ouvrir un éditeur spécifique au projet pour un fichier ouvert  
   
 1.  Appelez la méthode <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShellOpenDocument.IsDocumentOpen%2A>.  
   
-     Cet appel retourne des pointeurs vers la hiérarchie du document, à l'élément de hiérarchie, et au frame de fenêtre, le cas échéant.  
+     Cet appel retourne des pointeurs vers la hiérarchie du document, élément de hiérarchie et le frame de fenêtre, le cas échéant.  
   
-2.  Si le document est ouvert, le projet doit vérifier si un seul objet de données du document existe, ou si un objet de vue du document est également présent.  
+2.  Si le document est ouvert, le projet doit vérifier si seul un objet de données de document existe, ou si un objet de vue de document est également présent.  
   
-    -   Si un objet de vue du document existe, et cette vue est pour une hiérarchie ou un élément différente de la hiérarchie, le projet utilise le pointeur au frame de fenêtre de la vue pour reblanchir la fenêtre existante.  
+    -   Si un objet de vue de document existe et que cette vue est pour une autre hiérarchie ou un élément de la hiérarchie, le projet utilise le pointeur vers le frame de fenêtre de la vue à resurface la fenêtre existante.  
   
-    -   Si un objet de vue du document existe, et cette vue est pour la même hiérarchie et élément de hiérarchie, le projet peut ouvrir une deuxième vue s'il peut être attaché à l'objet de données sous\-jacent de document.  Sinon, le projet doit utiliser le pointeur au frame de fenêtre de la vue pour reblanchir la fenêtre existante.  
+    -   Si un objet de vue de document existe et que cette vue est pour la même hiérarchie et d’un élément de la hiérarchie, le projet peut ouvrir une seconde vue si elle peut ajouter à l’objet de données de document sous-jacent. Dans le cas contraire, le projet doit utiliser le pointeur vers le frame de fenêtre de la vue à resurface la fenêtre existante.  
   
-    -   Si seul l'objet de données du document existe, le projet doit déterminer s'il peut utiliser l'objet de données du document pour sa vue.  Si l'objet de données du document est compatible, exécutez les étapes décrites dans [Ouvrir un éditeur spécifique au projet](../extensibility/how-to-open-project-specific-editors.md).  
+    -   Si seul l’objet de données de document existe, le projet doit déterminer s’il peut utiliser l’objet de données de document pour son affichage. Si l’objet de données de document est compatible, terminé les étapes décrites dans [ouverture d’un éditeur spécifique au projet](../extensibility/how-to-open-project-specific-editors.md).  
   
-     Si l'objet de données du document n'est pas compatible, une erreur doit être affichée à l'utilisateur qui indique que le fichier est en cours de utilisation.  Cette erreur ne doit être affichées dans les cas transitional, par exemple lorsqu'un fichier est compilé en même temps l'utilisateur essaie d'ouvrir le fichier à l'aide d'un éditeur autre que l'éditeur de texte principal de [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] .  Le principal éditeur de texte peut partager l'objet de données du document avec le compilateur.  
+     Si l’objet de données de document n’est pas compatible, une erreur doit être affichée à l’utilisateur qui indique que le fichier est actuellement en cours d’utilisation. Cette erreur doit s’afficher que dans les cas temporaires, tels que lors de la compilation d’un fichier à la fois l’utilisateur tente d’ouvrir le fichier à l’aide d’un éditeur autre que le [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] éditeur de texte principal. L’éditeur de texte principal peut partager objet de données de document avec le compilateur.  
   
-3.  Si le document n'est pas ouvert car il n'existe aucun objet de données du document ou objet de vue du document, exécutez les étapes dans [Ouvrir un éditeur spécifique au projet](../extensibility/how-to-open-project-specific-editors.md).  
+3.  Si le document n’est pas ouvert, car il n’existe aucun objet de données de document ou d’un objet de vue de document, effectuez les étapes de [ouverture d’un éditeur spécifique au projet](../extensibility/how-to-open-project-specific-editors.md).  
   
-## ouvrir un éditeur standard  
- Utilisez la procédure suivante pour ouvrir un éditeur standard pour un fichier déjà ouvert.  
+## <a name="opening-a-standard-editor"></a>Ouvrir un éditeur Standard  
+ Utilisez la procédure suivante pour ouvrir un éditeur standard d’un fichier qui est déjà ouvrir.  
   
-#### pour ouvrir un éditeur standard pour un fichier ouvert  
+#### <a name="to-open-a-standard-editor-for-an-open-file"></a>Pour ouvrir un éditeur standard d’un fichier ouvert  
   
 1.  Appelez <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShellOpenDocument.OpenStandardEditor%2A>.  
   
-     cette méthode vérifie d'abord que le document n'est pas déjà ouvert par <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShellOpenDocument.IsDocumentOpen%2A>appelant.  Si le document est déjà ouvert, la fenêtre de l'éditeur est reblanchie.  
+     Cette méthode vérifie d’abord que le document n’est pas déjà ouvert en appelant <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShellOpenDocument.IsDocumentOpen%2A>. Si le document est déjà ouvert, sa fenêtre de l’éditeur est remontée.  
   
-2.  Si le document n'est pas ouvert, puis remplissez les étapes de [Comment : ouvrir les éditeurs Standard](../extensibility/how-to-open-standard-editors.md).  
+2.  Si le document n’est pas ouvert, puis effectuez les étapes de [Comment : ouvrir les éditeurs Standard](../extensibility/how-to-open-standard-editors.md).  
   
-## Voir aussi  
+## <a name="see-also"></a>Voir aussi  
  [Ouvrir et enregistrer des éléments de projet](../extensibility/internals/opening-and-saving-project-items.md)   
- [Comment : ouvrir les éditeurs spécifiques au projet](../extensibility/how-to-open-project-specific-editors.md)   
- [Comment : ouvrir les éditeurs Standard](../extensibility/how-to-open-standard-editors.md)
+ [Comment : ouvrir les éditeurs spécifiques au projet](../extensibility/how-to-open-project-specific-editors.md)   
+ [Guide pratique pour ouvrir des éditeurs standard](../extensibility/how-to-open-standard-editors.md)

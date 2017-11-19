@@ -1,44 +1,28 @@
 ---
-title: IDebugSettingsCallback2::GetEEMetricFile | Microsoft Docs
+title: IDebugSettingsCallback2::GetEEMetricFile | Documents Microsoft
 ms.custom: 
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-sdk
+ms.technology: vs-ide-sdk
 ms.tgt_pltfrm: 
 ms.topic: article
-helpviewer_keywords:
-- IDebugSettingsCallback2::GetEEMetricFile
+helpviewer_keywords: IDebugSettingsCallback2::GetEEMetricFile
 ms.assetid: 3a0bf9e5-bbd2-4d15-840d-8244732787fc
-caps.latest.revision: 8
+caps.latest.revision: "8"
+author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-translation.priority.mt:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
+ms.openlocfilehash: bee70cc78ab87d6277445cf3edd0f0bf786c97f2
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
 ms.translationtype: MT
-ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
-ms.openlocfilehash: 3e2d0ec99c2bb4e166b949a082aea6928ee5023d
-ms.contentlocale: fr-fr
-ms.lasthandoff: 08/28/2017
-
+ms.contentlocale: fr-FR
+ms.lasthandoff: 10/31/2017
 ---
 # <a name="idebugsettingscallback2geteemetricfile"></a>IDebugSettingsCallback2::GetEEMetricFile
-Retrieves the expression evaluator metric file given the name or the metric.  
+Récupère le fichier de métrique évaluateur expression étant donné le nom ou la mesure.  
   
-## <a name="syntax"></a>Syntax  
+## <a name="syntax"></a>Syntaxe  
   
 ```cpp  
 HRESULT GetEEMetricFile(  
@@ -58,21 +42,21 @@ private int GetEEMetricFile(
 );  
 ```  
   
-#### <a name="parameters"></a>Parameters  
+#### <a name="parameters"></a>Paramètres  
  `guidLang`  
- [in] Unique identifier of the programming language.  
+ [in] Identificateur unique du langage de programmation.  
   
  `guidVendor`  
- [in] Unique identifier of the vendor.  
+ [in] Identificateur unique du fournisseur.  
   
  `pszMetric`  
- [in] Name of the metric.  
+ [in] Nom de la mesure.  
   
  `pbstrValue`  
- [out] Returns the contents of the metric file as a string.  
+ [out] Retourne le contenu du fichier métrique sous forme de chaîne.  
   
-## <a name="return-value"></a>Return Value  
- If successful, returns `S_OK`; otherwise, returns an error code.  
+## <a name="return-value"></a>Valeur de retour  
+ En cas de réussite, retourne `S_OK`; sinon, retourne un code d’erreur.  
   
-## <a name="see-also"></a>See Also  
+## <a name="see-also"></a>Voir aussi  
  [IDebugSettingsCallback2](../../../extensibility/debugger/reference/idebugsettingscallback2.md)

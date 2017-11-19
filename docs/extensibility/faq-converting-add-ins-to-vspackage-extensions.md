@@ -4,34 +4,19 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-sdk
+ms.technology: vs-ide-sdk
 ms.tgt_pltfrm: 
 ms.topic: article
 ms.assetid: 3a01d333-6e31-423f-ae06-5091a4fcb7a9
-caps.latest.revision: 22
+caps.latest.revision: "22"
+author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-translation.priority.mt:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
+ms.openlocfilehash: 7ef1e10f0f19d7134b00d6dd3d37f7e7e6a1ede5
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
 ms.translationtype: MT
-ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
-ms.openlocfilehash: 8db7d203b599c11ce8fea07ed3647771c879a256
-ms.contentlocale: fr-fr
-ms.lasthandoff: 09/26/2017
-
+ms.contentlocale: fr-FR
+ms.lasthandoff: 10/31/2017
 ---
 # <a name="faq-converting-add-ins-to-vspackage-extensions"></a>FAQ : conversion de compléments en extensions VSPackage
 Les compléments sont désormais déconseillés. Pour effectuer une nouvelle extension de Visual Studio, vous devez créer une extension VSIX. Voici les réponses aux questions fréquemment posées sur la façon de convertir un complément Visual Studio pour une extension VSIX.  
@@ -83,7 +68,7 @@ Les compléments sont désormais déconseillés. Pour effectuer une nouvelle ext
   
 1.  Créez un VSPackage comportant une commande de menu. (Pour plus d’informations, consultez [avec une commande de Menu pour créer une Extension](../extensibility/creating-an-extension-with-a-menu-command.md).)  
   
-2.  Ouvrez le fichier contenant la définition du VSPackage. (Dans un projet c#, il a * \<votre nom de projet >*Package.cs.)  
+2.  Ouvrez le fichier contenant la définition du VSPackage. (Dans un projet c#, il a  *\<votre nom de projet >*Package.cs.)  
   
 3.  Ajoutez les instructions `using` suivantes au fichier :  
   
@@ -145,7 +130,7 @@ Les compléments sont désormais déconseillés. Pour effectuer une nouvelle ext
   
 #### <a name="to-get-the-dte-object-from-a-vspackage"></a>Pour obtenir l'objet DTE d'un VSPackage  
   
-1.  Dans un projet VSIX, avec un modèle d’élément de Package Visual Studio, recherchez le * \<nom du projet >*Package.cs fichier. Il s'agit de la classe dérivée de <xref:Microsoft.VisualStudio.Shell.Package> ; elle peut vous permettre d'interagir avec Visual Studio. Dans ce cas, vous utilisez sa méthode <xref:Microsoft.VisualStudio.Shell.Package.GetService%2A> pour obtenir l'objet <xref:EnvDTE80.DTE2>.  
+1.  Dans un projet VSIX, avec un modèle d’élément de Package Visual Studio, recherchez le  *\<nom du projet >*Package.cs fichier. Il s'agit de la classe dérivée de <xref:Microsoft.VisualStudio.Shell.Package> ; elle peut vous permettre d'interagir avec Visual Studio. Dans ce cas, vous utilisez sa méthode <xref:Microsoft.VisualStudio.Shell.Package.GetService%2A> pour obtenir l'objet <xref:EnvDTE80.DTE2>.  
   
 2.  Ajoutez ces instructions `using` :  
   
@@ -177,7 +162,7 @@ Les compléments sont désormais déconseillés. Pour effectuer une nouvelle ext
   
 1.  Créer un VSPackage qui dispose d’une commande de menu, comme dans le [comment commencer à développer les extensions VSIX ?](../extensibility/faq-converting-add-ins-to-vspackage-extensions.md#BKMK_StartDeveloping) section.  
   
-2.  Ouvrez le fichier contenant la définition du VSPackage. (Dans un projet c#, il a * \<votre nom de projet >*Package.cs.)  
+2.  Ouvrez le fichier contenant la définition du VSPackage. (Dans un projet c#, il a  *\<votre nom de projet >*Package.cs.)  
   
 3.  Ajoutez ces instructions `using` :  
   
@@ -225,7 +210,7 @@ Les compléments sont désormais déconseillés. Pour effectuer une nouvelle ext
   
 1.  Créer un VSPackage qui dispose d’une commande de menu, comme dans le [comment commencer à développer les extensions VSIX ?](../extensibility/faq-converting-add-ins-to-vspackage-extensions.md#BKMK_StartDeveloping) section.  
   
-2.  Ouvrez le fichier contenant la définition du VSPackage. (Dans un projet c#, il a * \<votre nom de projet >*Package.cs.)  
+2.  Ouvrez le fichier contenant la définition du VSPackage. (Dans un projet c#, il a  *\<votre nom de projet >*Package.cs.)  
   
 3.  Ajoutez ces instructions `using` :  
   

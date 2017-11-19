@@ -1,46 +1,29 @@
 ---
-title: IDebugProperty2::SetValueAsReference | Microsoft Docs
+title: IDebugProperty2::SetValueAsReference | Documents Microsoft
 ms.custom: 
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-sdk
+ms.technology: vs-ide-sdk
 ms.tgt_pltfrm: 
 ms.topic: article
-f1_keywords:
-- IDebugProperty2::SetValueAsReference
-helpviewer_keywords:
-- IDebugProperty2::SetValueAsReference method
+f1_keywords: IDebugProperty2::SetValueAsReference
+helpviewer_keywords: IDebugProperty2::SetValueAsReference method
 ms.assetid: 341b1b89-4ab8-4e1c-abe2-fb955df5c6b0
-caps.latest.revision: 9
+caps.latest.revision: "9"
+author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-translation.priority.mt:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
+ms.openlocfilehash: d27a087c67401e90e8a3f4629c27d1255d0ade75
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
 ms.translationtype: MT
-ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
-ms.openlocfilehash: 58cc520d773d65cc3eba0588c2b8763079019018
-ms.contentlocale: fr-fr
-ms.lasthandoff: 08/28/2017
-
+ms.contentlocale: fr-FR
+ms.lasthandoff: 10/31/2017
 ---
 # <a name="idebugproperty2setvalueasreference"></a>IDebugProperty2::SetValueAsReference
-Sets the value of this property to the value of the given reference.  
+Définit la valeur de cette propriété à la valeur de la référence donnée.  
   
-## <a name="syntax"></a>Syntax  
+## <a name="syntax"></a>Syntaxe  
   
 ```cpp  
 HRESULT SetValueAsReference(  
@@ -60,29 +43,29 @@ int SetValueAsReference(
 );  
 ```  
   
-#### <a name="parameters"></a>Parameters  
+#### <a name="parameters"></a>Paramètres  
  `rgpArgs`  
- [in] An array of arguments to pass to the managed code property setter. If the property setter does not take arguments or if this [IDebugProperty2](../../../extensibility/debugger/reference/idebugproperty2.md) object does not refer to such a property setter, `rgpArgs` should be a null value. This parameter is typically a null value.  
+ [in] Tableau d’arguments à passer à l’accesseur Set de propriété du code managé. Si l’accesseur Set de propriété ne prend pas d’arguments, ou si cette [IDebugProperty2](../../../extensibility/debugger/reference/idebugproperty2.md) objet ne fait pas référence à cet un accesseur Set de propriété, `rgpArgs` doit être une valeur null. Ce paramètre est généralement une valeur null.  
   
  `dwArgCount`  
- [in] The number of arguments in the `rgpArgs` array.  
+ [in] Le nombre d’arguments dans le `rgpArgs` tableau.  
   
  `pValue`  
- [in] A reference, in the form of an [IDebugReference2](../../../extensibility/debugger/reference/idebugreference2.md) object, to the value to use to set this property.  
+ [in] Une référence, sous la forme d’un [IDebugReference2](../../../extensibility/debugger/reference/idebugreference2.md) objet, à la valeur à utiliser pour définir cette propriété.  
   
  `dwTimeout`  
- [in] How long to take to set the value, in milliseconds. A typical value is `INFINITE`. This affects the length of time that any possible evaluation can take.  
+ [in] Combien de temps à suivre pour définir la valeur, en millisecondes. Une valeur par défaut est `INFINITE`. Cela affecte la durée de toute évaluation possible peut prendre.  
   
-## <a name="return-value"></a>Return Value  
- If successful, returns `S_OK`; otherwise returns an error code, typically one of the following:  
+## <a name="return-value"></a>Valeur de retour  
+ En cas de réussite, retourne `S_OK`; sinon, retourne une erreur de code, généralement une des opérations suivantes :  
   
-|Error|Description|  
+|Erreur|Description|  
 |-----------|-----------------|  
-|`E_SETVALUEASREFERENCE_NOTSUPPORTED`|Setting the value from a reference is not supported.|  
-|`E_SETVALUE_VALUE_CANNOT_BE_SET`|The value cannot be set, as this property refers to a method.|  
-|`E_SETVALUE_VALUE_IS_READONLY`|The value is read-only and cannot be set.|  
-|`E_NOTIMPL`|The method is not implemented.|  
+|`E_SETVALUEASREFERENCE_NOTSUPPORTED`|Définition de la valeur d’une référence n’est pas pris en charge.|  
+|`E_SETVALUE_VALUE_CANNOT_BE_SET`|Impossible de définir la valeur que cette propriété fait référence à une méthode.|  
+|`E_SETVALUE_VALUE_IS_READONLY`|La valeur est en lecture seule et ne peut pas être définie.|  
+|`E_NOTIMPL`|La méthode n’est pas implémentée.|  
   
-## <a name="see-also"></a>See Also  
+## <a name="see-also"></a>Voir aussi  
  [IDebugProperty2](../../../extensibility/debugger/reference/idebugproperty2.md)   
  [IDebugReference2](../../../extensibility/debugger/reference/idebugreference2.md)

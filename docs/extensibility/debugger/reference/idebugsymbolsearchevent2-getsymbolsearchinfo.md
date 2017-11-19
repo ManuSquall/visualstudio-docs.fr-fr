@@ -1,46 +1,29 @@
 ---
-title: IDebugSymbolSearchEvent2::GetSymbolSearchInfo | Microsoft Docs
+title: IDebugSymbolSearchEvent2::GetSymbolSearchInfo | Documents Microsoft
 ms.custom: 
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-sdk
+ms.technology: vs-ide-sdk
 ms.tgt_pltfrm: 
 ms.topic: article
-f1_keywords:
-- IDebugSymbolSearchEvent2::GetSymbolSearchInfo
-helpviewer_keywords:
-- IDebugSymbolSearchEvent2::GetSymbolSearchInfo
+f1_keywords: IDebugSymbolSearchEvent2::GetSymbolSearchInfo
+helpviewer_keywords: IDebugSymbolSearchEvent2::GetSymbolSearchInfo
 ms.assetid: ae9eb72b-f2aa-43b8-87ca-da19d2e78d17
-caps.latest.revision: 8
+caps.latest.revision: "8"
+author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-translation.priority.mt:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
+ms.openlocfilehash: bdf3b80a49641a13d9c17673376d70cfdee103cc
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
 ms.translationtype: MT
-ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
-ms.openlocfilehash: 923693683194b452881a562e5957ccc036deda45
-ms.contentlocale: fr-fr
-ms.lasthandoff: 08/28/2017
-
+ms.contentlocale: fr-FR
+ms.lasthandoff: 10/31/2017
 ---
 # <a name="idebugsymbolsearchevent2getsymbolsearchinfo"></a>IDebugSymbolSearchEvent2::GetSymbolSearchInfo
-Called by an event handler to retrieve results about a symbol load process.  
+Appelée par un gestionnaire d’événements pour récupérer les résultats sur un processus de chargement de symboles.  
   
-## <a name="syntax"></a>Syntax  
+## <a name="syntax"></a>Syntaxe  
   
 ```cpp  
 HRESULT GetSymbolSearchInfo(  
@@ -59,26 +42,26 @@ int GetSymbolSearchInfo(
   
 ```  
   
-#### <a name="parameters"></a>Parameters  
+#### <a name="parameters"></a>Paramètres  
  `pModule`  
- [out] An IDebugModule3 object representing the module for which the symbols were loaded.  
+ [out] Objet IDebugModule3 représentant le module pour lequel les symboles ont été chargés.  
   
  `pbstrDebugMessage`  
- [in, out] Returns a string containing any error messages from the module. If there is no error, then this string will just contain the module's name but it is never empty.  
+ [dans, out] Retourne une chaîne qui contient des messages d’erreur à partir du module. S’il n’existe aucune erreur, cette chaîne contient uniquement le nom de module, mais il n’est jamais vide.  
   
 > [!NOTE]
->  [C++] `pbstrDebugMessage` cannot be `NULL` and must be freed with `SysFreeString`.  
+>  (C++) `pbstrDebugMessage` ne peut pas être `NULL` et doit être libérée avec `SysFreeString`.  
   
  `pdwModuleInfoFlags`  
- [out] A combination of flags from the [MODULE_INFO_FLAGS](../../../extensibility/debugger/reference/module-info-flags.md) enumeration indicating whether any symbols were loaded.  
+ [out] Une combinaison d’indicateurs à partir de la [MODULE_INFO_FLAGS](../../../extensibility/debugger/reference/module-info-flags.md) énumération qui indique si tous les symboles ont été chargés.  
   
-## <a name="return-value"></a>Return Value  
- If successful, returns `S_OK`; otherwise returns an error code.  
+## <a name="return-value"></a>Valeur de retour  
+ En cas de réussite, retourne `S_OK`; sinon, retourne un code d’erreur.  
   
-## <a name="remarks"></a>Remarks  
- When a handler receives the [IDebugSymbolSearchEvent2](../../../extensibility/debugger/reference/idebugsymbolsearchevent2.md) event after an attempt is made to load debugging symbols for a module, the handler can call thismethod to determine the results of that load.  
+## <a name="remarks"></a>Remarques  
+ Lorsqu’un gestionnaire reçoit le [IDebugSymbolSearchEvent2](../../../extensibility/debugger/reference/idebugsymbolsearchevent2.md) événement après une tentative est effectuée pour charger les symboles de débogage pour un module, le gestionnaire peut appeler cette méthode pour déterminer les résultats de cette charge.  
   
-## <a name="see-also"></a>See Also  
+## <a name="see-also"></a>Voir aussi  
  [IDebugModule3](../../../extensibility/debugger/reference/idebugmodule3.md)   
  [MODULE_INFO_FLAGS](../../../extensibility/debugger/reference/module-info-flags.md)   
  [IDebugSymbolSearchEvent2](../../../extensibility/debugger/reference/idebugsymbolsearchevent2.md)

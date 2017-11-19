@@ -1,29 +1,33 @@
 ---
-title: "Name, &#233;l&#233;ment (mod&#232;les Visual&#160;Studio) | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-general"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "http://schemas.microsoft.com/developer/vstemplate/2005#Name"
-helpviewer_keywords: 
-  - "Name (élément de modèles de projet Visual Studio)"
+title: "Nom d’élément (modèles Visual Studio) | Documents Microsoft"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-general
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords: http://schemas.microsoft.com/developer/vstemplate/2005#Name
+helpviewer_keywords: Name element [Visual Studio project templates]
 ms.assetid: 48788dbf-7da0-4443-8061-aab966fc22c8
-caps.latest.revision: 17
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 17
+caps.latest.revision: "17"
+author: gregvanl
+ms.author: gregvanl
+manager: ghogen
+ms.openlocfilehash: 919244051df838861816279513f14e8e98f3e34f
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: fr-FR
+ms.lasthandoff: 10/31/2017
 ---
-# Name, &#233;l&#233;ment (mod&#232;les Visual&#160;Studio)
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
-
-Spécifie le nom du modèle tel qu'il apparaît dans la boîte de dialogue **Nouveau projet** ou **Ajouter un nouvel élément**.  
+# <a name="name-element-visual-studio-templates"></a>Name, élément (modèles Visual Studio)
+Spécifie le nom du modèle tel qu’il apparaît dans le **nouveau projet** ou **ajouter un nouvel élément** boîte de dialogue.  
   
-## Syntaxe  
+ \<VSTemplate >  
+ \<TemplateData >  
+ \<Nom >  
+  
+## <a name="syntax"></a>Syntaxe  
   
 ```  
 <Name> Template Name </Name>  
@@ -33,35 +37,35 @@ Spécifie le nom du modèle tel qu'il apparaît dans la boîte de dialogue **Nou
 <Name Package="{PackageID}" ID="ResourceID" />  
 ```  
   
-## Attributs et éléments  
+## <a name="attributes-and-elements"></a>Attributs et éléments  
  Les sections suivantes décrivent des attributs, des éléments enfants et des éléments parents.  
   
-### Attributs  
+### <a name="attributes"></a>Attributs  
   
 |Attribut|Description|  
-|--------------|-----------------|  
-|`Package`|Attribut facultatif, pour les scénarios complexes.<br /><br /> GUID qui spécifie l'ID du package Visual Studio.|  
-|`ID`|Attribut facultatif, pour les scénarios complexes.<br /><br /> Spécifie l'ID de ressource Visual Studio.|  
+|---------------|-----------------|  
+|`Package`|Attribut facultatif, pour les scénarios complexes.<br /><br /> ID un GUID qui spécifie le package Visual Studio d'.|  
+|`ID`|Attribut facultatif, pour les scénarios complexes.<br /><br /> Spécifie l’ID de ressource de Visual Studio.|  
   
-### Éléments enfants  
- Aucun  
+### <a name="child-elements"></a>Éléments enfants  
+ Aucun.  
   
-### Éléments parents  
+### <a name="parent-elements"></a>Éléments parents  
   
 |Élément|Description|  
 |-------------|-----------------|  
-|[TemplateData](../extensibility/templatedata-element-visual-studio-templates.md)|Élément requis.<br /><br /> Classe le modèle dans une catégorie et définit la façon dont il s'affiche dans la boîte de dialogue **Nouveau projet** ou **Ajouter un nouvel élément**.|  
+|[TemplateData](../extensibility/templatedata-element-visual-studio-templates.md)|Élément requis.<br /><br /> Définit la catégorie du modèle et comment il s’affiche dans la boîte de dialogue **Nouveau projet** ou **Ajouter un nouvel élément** .|  
   
-## Valeur texte  
- Une valeur texte est requise, sauf en cas d'utilisation des attributs `Package` et `ID`.  
+## <a name="text-value"></a>Valeur texte  
+ Une valeur texte est requise à moins que le `Package` et `ID` les attributs sont utilisés.  
   
  Le texte fournit le nom du modèle.  
   
-## Notes  
- L'élément `Name` est un enfant obligatoire de l'élément `TemplateData`.  
+## <a name="remarks"></a>Remarques  
+ `Name` est un élément enfant obligatoire de `TemplateData`.  
   
-## Exemple  
- L'exemple suivant affiche les métadonnées d'un modèle de projet pour une application [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)].  
+## <a name="example"></a>Exemple  
+ L’exemple suivant affiche les métadonnées d’un modèle de projet pour un [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] application.  
   
 ```  
 <VSTemplate Type="Project" Version="3.0.0"  
@@ -87,6 +91,6 @@ Spécifie le nom du modèle tel qu'il apparaît dans la boîte de dialogue **Nou
 </VSTemplate>  
 ```  
   
-## Voir aussi  
- [Référence du schéma de modèle Visual Studio](../extensibility/visual-studio-template-schema-reference.md)   
- [Création de modèles de projets et d'éléments personnalisés](../ide/creating-project-and-item-templates.md)
+## <a name="see-also"></a>Voir aussi  
+ [Référence du schéma de modèle Visual Studio](../extensibility/visual-studio-template-schema-reference.md)   
+ [Création de modèles de projet et d’élément](../ide/creating-project-and-item-templates.md)

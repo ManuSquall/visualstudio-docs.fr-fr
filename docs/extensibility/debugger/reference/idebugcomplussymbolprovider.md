@@ -1,66 +1,67 @@
 ---
-title: "IDebugComPlusSymbolProvider | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-helpviewer_keywords: 
-  - "Interface de IDebugComPlusSymbolProvider"
+title: IDebugComPlusSymbolProvider | Documents Microsoft
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+helpviewer_keywords: IDebugComPlusSymbolProvider interface
 ms.assetid: 5b98e908-fd15-49a6-9010-933c9b948085
-caps.latest.revision: 9
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 9
+caps.latest.revision: "9"
+author: gregvanl
+ms.author: gregvanl
+manager: ghogen
+ms.openlocfilehash: 182e74a4f82c392ec34137730502b0b62bf60292
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: fr-FR
+ms.lasthandoff: 10/31/2017
 ---
-# IDebugComPlusSymbolProvider
-[!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]
-
-Représente un fournisseur de symbole COM\+ avec les méthodes qui sont spécifiques au code managé.  
+# <a name="idebugcomplussymbolprovider"></a>IDebugComPlusSymbolProvider
+Représente un fournisseur de symbole COM + avec des méthodes qui sont spécifiques au code managé.  
   
-## Syntaxe  
+## <a name="syntax"></a>Syntaxe  
   
 ```  
 IDebugComPlusSymbolProvider : IDebugSymbolProvider  
 ```  
   
-## Remarques à l'intention des implémenteurs  
- Bien qu'il n'y a pas de séparation entre les interfaces qui sont utiles à un évaluateur d' \(EE\)expression et ceux qui sont destinées à être utilisées par un \(DE\) moteur de débogage, les méthodes suivantes se probablement interest DE developers uniquement : AreSymbolsLoaded, GetAddressesInModuleFromPosition, GetEntryPoint, GetFunctionLineOffset, GetLocalVariableLayout, IsFunctionStale, LoadSymbols, LoadSymbolsFromStream, ReplaceSymbols, UnloadSymbols, et UpdateSymbols.  
+## <a name="notes-for-implementers"></a>Notes pour les implémenteurs  
+ Bien qu’il n’existe pas de séparation entre les interfaces qui sont utiles pour l’évaluateur d’expression (EE) et ceux qui sont destinés à être utilisés par un moteur de débogage (DE), les méthodes suivantes vous intéressent probablement aux développeurs DE uniquement : AreSymbolsLoaded, GetAddressesInModuleFromPosition, GetEntryPoint, GetFunctionLineOffset, GetLocalVariableLayout, IsFunctionStale, LoadSymbols, LoadSymbolsFromStream, ReplaceSymbols, UnloadSymbols et UpdateSymbols.  
   
-## Méthodes  
- En plus de les méthodes sur l'interface d' [IDebugSymbolProvider](../../../extensibility/debugger/reference/idebugsymbolprovider.md) , cette interface implémente les méthodes suivantes :  
+## <a name="methods"></a>Méthodes  
+ Outre les méthodes sur le [IDebugSymbolProvider](../../../extensibility/debugger/reference/idebugsymbolprovider.md) interface, cette interface implémente les méthodes suivantes :  
   
 |Méthode|Description|  
-|-------------|-----------------|  
-|[AreSymbolsLoaded](../Topic/IDebugComPlusSymbolProvider::AreSymbolsLoaded.md)|Détermine si les symboles de débogage sont chargés pour le module spécifié donné l'identificateur du domaine d'application.|  
-|[CreateTypeFromPrimitive](../../../extensibility/debugger/reference/idebugcomplussymbolprovider-createtypefromprimitive.md)|crée un type du type primitif spécifié.|  
-|[GetAddressesInModuleFromPosition](../Topic/IDebugComPlusSymbolProvider::GetAddressesInModuleFromPosition.md)|Mappe une position de document dans le module spécifié à un tableau d'adresses de débogage.|  
-|[GetArrayTypeFromAddress](../../../extensibility/debugger/reference/idebugcomplussymbolprovider-getarraytypefromaddress.md)|Extrait les informations de type à propos de le tableau spécifié données son adresse de débogage.|  
-|[GetAssemblyName](../../../extensibility/debugger/reference/idebugcomplussymbolprovider-getassemblyname.md)|Extrait le nom de l'assembly avec son module et domaine d'application.|  
-|[GetAttributedClassesForLanguage](../Topic/IDebugComPlusSymbolProvider::GetAttributedClassesForLanguage.md)|Récupère les classes avec l'attribut spécifié qui sont implémentées dans le langage de programmation donné.|  
-|[GetAttributedClassesinModule](../../../extensibility/debugger/reference/idebugcomplussymbolprovider-getattributedclassesinmodule.md)|Récupère les classes avec l'attribut spécifié dans un module donné.|  
-|[GetEntryPoint](../../../extensibility/debugger/reference/idebugcomplussymbolprovider-getentrypoint.md)|Récupère le point d'entrée de l'application.|  
-|[GetFunctionLineOffset](../../../extensibility/debugger/reference/idebugcomplussymbolprovider-getfunctionlineoffset.md)|Récupère l'adresse d'une fonction qui représente le décalage donné de ligne.|  
-|[GetLocalVariablelayout](../../../extensibility/debugger/reference/idebugcomplussymbolprovider-getlocalvariablelayout.md)|Extrait la disposition des variables locales pour un ensemble de méthodes.|  
-|[GetNameFromToken](../../../extensibility/debugger/reference/idebugcomplussymbolprovider-getnamefromtoken.md)|Retourne le nom associé au jeton spécifié avec son objet de métadonnées.|  
-|[GetSymAttribute](../../../extensibility/debugger/reference/idebugcomplussymbolprovider-getsymattribute.md)|Récupère les symboles de débogage avec l'attribut parent donné pour le module spécifié.|  
-|[GetSymUnmanagedReader](../../../extensibility/debugger/reference/idebugcomplussymbolprovider-getsymunmanagedreader.md)|Récupère le lecteur de symboles à utiliser par du code non managé.|  
-|[GetTypeFromAddress](../../../extensibility/debugger/reference/idebugcomplussymbolprovider-gettypefromaddress.md)|extrait au symbole un type donné son adresse de débogage.|  
-|[IsFunctionDeleted](../../../extensibility/debugger/reference/idebugcomplussymbolprovider-isfunctiondeleted.md)|détermine si la fonction à l'adresse spécifiée de débogage est supprimée.|  
-|[IsFunctionStale](../../../extensibility/debugger/reference/idebugcomplussymbolprovider-isfunctionstale.md)|Détermine si la fonction à l'adresse spécifiée de débogage est considérée comme périmées.|  
-|[IsHiddenCode](../../../extensibility/debugger/reference/idebugcomplussymbolprovider-ishiddencode.md)|Détermine si le code à l'adresse spécifiée de débogueur est masqué.|  
-|[LoadSymbols](../../../extensibility/debugger/reference/idebugcomplussymbolprovider-loadsymbols.md)|Charge les symboles spécifiés de débogage en mémoire.|  
-|[LoadSymbolsFromStream](../../../extensibility/debugger/reference/idebugcomplussymbolprovider-loadsymbolsfromstream.md)|symboles de débogage de charges donnés le flux de données.|  
-|[ReplaceSymbols](../../../extensibility/debugger/reference/idebugcomplussymbolprovider-replacesymbols.md)|Remplace les symboles en cours de débogage avec ceux du flux de données spécifié.|  
-|[UnloadSymbols](../../../extensibility/debugger/reference/idebugcomplussymbolprovider-unloadsymbols.md)|décharge les symboles de débogage pour le module spécifié de la mémoire.|  
-|[UpdateSymbols](../../../extensibility/debugger/reference/idebugcomplussymbolprovider-updatesymbols.md)|Met à jour les symboles de débogage dans la mémoire avec celles le flux de données spécifié.|  
+|------------|-----------------|  
+|[AreSymbolsLoaded](../../../extensibility/debugger/reference/idebugcomplussymbolprovider-aresymbolsloaded.md)|Détermine si les symboles de débogage sont chargées pour le module spécifié, étant donné l’identificateur de domaine d’application.|  
+|[CreateTypeFromPrimitive](../../../extensibility/debugger/reference/idebugcomplussymbolprovider-createtypefromprimitive.md)|Crée un type à partir du type primitif spécifié.|  
+|[GetAddressesInModuleFromPosition](../../../extensibility/debugger/reference/idebugcomplussymbolprovider-getaddressesinmodulefromposition.md)|Mappe une position de document dans le module spécifié dans un tableau d’adresses de débogage.|  
+|[GetArrayTypeFromAddress](../../../extensibility/debugger/reference/idebugcomplussymbolprovider-getarraytypefromaddress.md)|Récupère les informations sur le tableau spécifié, étant donné son adresse de débogage de type.|  
+|[GetAssemblyName](../../../extensibility/debugger/reference/idebugcomplussymbolprovider-getassemblyname.md)|Récupère le nom de l’assembly en fonction de son domaine d’application et de module.|  
+|[GetAttributedClassesForLanguage](../../../extensibility/debugger/reference/idebugcomplussymbolprovider-getattributedclassesforlanguage.md)|Récupère les classes avec l’attribut spécifié qui sont implémentées dans le langage de programmation donné.|  
+|[GetAttributedClassesinModule](../../../extensibility/debugger/reference/idebugcomplussymbolprovider-getattributedclassesinmodule.md)|Récupère les classes avec l’attribut spécifié dans un module donné.|  
+|[GetEntryPoint](../../../extensibility/debugger/reference/idebugcomplussymbolprovider-getentrypoint.md)|Récupère le point d’entrée de l’application.|  
+|[GetFunctionLineOffset](../../../extensibility/debugger/reference/idebugcomplussymbolprovider-getfunctionlineoffset.md)|Récupère l’adresse d’une fonction qui représente le décalage de la ligne donnée.|  
+|[GetLocalVariablelayout](../../../extensibility/debugger/reference/idebugcomplussymbolprovider-getlocalvariablelayout.md)|Récupère la structure des variables locales pour un ensemble de méthodes.|  
+|[GetNameFromToken](../../../extensibility/debugger/reference/idebugcomplussymbolprovider-getnamefromtoken.md)|Retourne le nom associé au jeton spécifié son objet de métadonnées spécifié.|  
+|[GetSymAttribute](../../../extensibility/debugger/reference/idebugcomplussymbolprovider-getsymattribute.md)|Récupère les symboles de débogage avec l’attribut parent donné pour le module spécifié.|  
+|[GetSymUnmanagedReader](../../../extensibility/debugger/reference/idebugcomplussymbolprovider-getsymunmanagedreader.md)|Récupère le lecteur de symboles pour être utilisé par du code non managé.|  
+|[GetTypeFromAddress](../../../extensibility/debugger/reference/idebugcomplussymbolprovider-gettypefromaddress.md)|Extrait vers un type de symbole donné son adresse de débogage.|  
+|[IsFunctionDeleted](../../../extensibility/debugger/reference/idebugcomplussymbolprovider-isfunctiondeleted.md)|Détermine si la fonction à l’adresse de débogage spécifié est supprimée.|  
+|[IsFunctionStale](../../../extensibility/debugger/reference/idebugcomplussymbolprovider-isfunctionstale.md)|Détermine si la fonction à l’adresse de débogage spécifiés est considérée comme obsolète.|  
+|[IsHiddenCode](../../../extensibility/debugger/reference/idebugcomplussymbolprovider-ishiddencode.md)|Détermine si le code à l’adresse de débogueur spécifié est masqué.|  
+|[LoadSymbols](../../../extensibility/debugger/reference/idebugcomplussymbolprovider-loadsymbols.md)|Charge les symboles de débogage spécifiés dans la mémoire.|  
+|[LoadSymbolsFromStream](../../../extensibility/debugger/reference/idebugcomplussymbolprovider-loadsymbolsfromstream.md)|Étant donnés le flux de données de symboles de débogage de charge.|  
+|[ReplaceSymbols](../../../extensibility/debugger/reference/idebugcomplussymbolprovider-replacesymbols.md)|Remplace les symboles de débogage actuelle avec ceux présents dans le flux de données spécifié.|  
+|[UnloadSymbols](../../../extensibility/debugger/reference/idebugcomplussymbolprovider-unloadsymbols.md)|Décharge les symboles de débogage pour le module spécifié de la mémoire.|  
+|[UpdateSymbols](../../../extensibility/debugger/reference/idebugcomplussymbolprovider-updatesymbols.md)|Met à jour les symboles de débogage dans la mémoire avec celles du flux de données spécifié.|  
   
-## Configuration requise  
- en\-tête : Sh.h  
+## <a name="requirements"></a>Spécifications  
+ En-tête : Sh.h  
   
- l'espace de noms : Microsoft.VisualStudio.Debugger.Interop  
+ Namespace : Microsoft.VisualStudio.Debugger.Interop  
   
- Assembly : Microsoft.VisualStudio.Debugger.Interop.dll
+ Assembly : Microsoft.VisualStudio.Debugger.Interop.dll

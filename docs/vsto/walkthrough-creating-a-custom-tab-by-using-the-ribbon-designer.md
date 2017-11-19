@@ -1,12 +1,10 @@
 ---
-title: 'Walkthrough: Creating a Custom Tab by Using the Ribbon Designer | Microsoft Docs'
+title: "Procédure pas à pas : Création d’un onglet personnalisé à l’aide du Concepteur de ruban | Documents Microsoft"
 ms.custom: 
 ms.date: 02/02/2017
-ms.prod: visual-studio-dev14
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- office-development
+ms.technology: office-development
 ms.tgt_pltfrm: 
 ms.topic: article
 dev_langs:
@@ -20,157 +18,159 @@ helpviewer_keywords:
 - custom Ribbon, tabs
 - Custom tab [Office development in Visual Studio]
 ms.assetid: 312865e6-950f-46ab-88de-fe7eb8036bfe
-caps.latest.revision: 68
-author: kempb
-ms.author: kempb
+caps.latest.revision: "68"
+author: gewarren
+ms.author: gewarren
 manager: ghogen
-ms.translationtype: HT
-ms.sourcegitcommit: eb5c9550fd29b0e98bf63a7240737da4f13f3249
-ms.openlocfilehash: f3de58256e8c533b7cd092d056c785c7ad6b60b6
-ms.contentlocale: fr-fr
-ms.lasthandoff: 08/30/2017
-
+ms.openlocfilehash: 811e4eff77780bda2b348c26bb220a29d5fd1731
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: fr-FR
+ms.lasthandoff: 10/31/2017
 ---
-# <a name="walkthrough-creating-a-custom-tab-by-using-the-ribbon-designer"></a>Walkthrough: Creating a Custom Tab by Using the Ribbon Designer
-  By using the Ribbon Designer, you can create a custom tab and then add and position controls on it.  
+# <a name="walkthrough-creating-a-custom-tab-by-using-the-ribbon-designer"></a>Procédure pas à pas : création d'un onglet personnalisé à l'aide du Concepteur de ruban
+  Le Concepteur de ruban vous permet de créer un onglet personnalisé puis d'ajouter et de positionner des contrôles dessus.  
   
  [!INCLUDE[appliesto_xlalldoc](../vsto/includes/appliesto-xlalldoc-md.md)]  
   
- This walkthrough illustrates the following tasks:  
+ Cette procédure pas à pas décrit les tâches suivantes :  
   
--   [Creating Actions Panes](#BKMK_CreateActionsPanes).  
+-   [Création de volets Actions](#BKMK_CreateActionsPanes).  
   
--   [Creating a Custom Tab](#BKMK_CreateCustomTab).  
+-   [Création d’un onglet personnalisé](#BKMK_CreateCustomTab).  
   
--   [Hiding and Showing Actions Panes by Using Buttons on the Custom Tab](#BKMK_HideShowActionsPane).  
+-   [Masquage et affichage de volets Actions à l’aide des boutons sur l’onglet personnalisé](#BKMK_HideShowActionsPane).  
   
 > [!NOTE]  
->  Your computer might show different names or locations for some of the Visual Studio user interface elements in the following instructions. The Visual Studio edition that you have and the settings that you use determine these elements. For more information, see [Personalize the Visual Studio IDE](../ide/personalizing-the-visual-studio-ide.md).  
+>  Il est possible que pour certains des éléments de l’interface utilisateur de Visual Studio, votre ordinateur affiche des noms ou des emplacements différents de ceux indiqués dans les instructions suivantes. L'édition de Visual Studio dont vous disposez et les paramètres que vous utilisez déterminent ces éléments. Pour plus d’informations, consultez [Personnaliser l’IDE Visual Studio](../ide/personalizing-the-visual-studio-ide.md).  
   
-## <a name="prerequisites"></a>Prerequisites  
- You need the following components to complete this walkthrough:  
+## <a name="prerequisites"></a>Conditions préalables  
+ Pour exécuter cette procédure pas à pas, vous devez disposer des composants suivants :  
   
 -   [!INCLUDE[vsto_vsprereq](../vsto/includes/vsto-vsprereq-md.md)]  
   
 -   Microsoft Excel  
   
-## <a name="creating-an-excel-workbook-project"></a>Creating an Excel Workbook Project  
- The steps for using the Ribbon Designer are almost identical for all Office applications. This example uses an Excel workbook.  
+## <a name="creating-an-excel-workbook-project"></a>Création d'un projet de classeur Excel  
+ Les étapes pour utiliser le Concepteur de ruban sont presque identiques pour toutes les applications Office. Cet exemple utilise un classeur Excel.  
   
-#### <a name="to-create-an-excel-workbook-project"></a>To create an Excel workbook project  
+#### <a name="to-create-an-excel-workbook-project"></a>Pour créer un projet de classeur Excel  
   
--   Create an Excel workbook project with the name **MyExcelRibbon**. For more information, see [How to: Create Office Projects in Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md).  
+-   Créer un projet de classeur Excel portant le nom **MyExcelRibbon**. Pour plus d'informations, consultez [How to: Create Office Projects in Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md).  
   
-     Visual Studio opens the new workbook in the designer and adds the **MyExcelRibbon** project to **Solution Explorer**.  
+     Visual Studio ouvre le nouveau classeur dans le concepteur et ajoute le **MyExcelRibbon** projet **l’Explorateur de solutions**.  
   
-##  <a name="BKMK_CreateActionsPanes"></a> Creating Actions Panes  
- Add two custom actions panes to the project. You will later add buttons that show and hide these actions panes to the custom tab.  
+##  <a name="BKMK_CreateActionsPanes"></a>Création de volets Actions  
+ Ajoutez deux volets Actions personnalisés au projet. Vous ajouterez ultérieurement à l'onglet personnalisé des boutons qui affichent et masquent ces volets Actions.  
   
-#### <a name="to-create-actions-panes"></a>To create actions panes  
+#### <a name="to-create-actions-panes"></a>Pour créer des volets Actions  
   
-1.  On the **Project** menu, choose **Add New Item**.  
+1.  Dans le menu **Projet** , choisissez **Ajouter un nouvel élément**.  
   
-2.  In the **Add New Item** dialog box, select **ActionsPaneControl**, and then choose **Add**.  
+2.  Dans le **ajouter un nouvel élément** boîte de dialogue, sélectionnez **ActionsPaneControl**, puis choisissez **ajouter**.  
   
-     The **ActionsPaneControl1.cs** or **ActionsPaneControl1.vb** file opens in the designer.  
+     Le **ActionsPaneControl1.cs** ou **ActionsPaneControl1.vb** fichier s’ouvre dans le concepteur.  
   
-3.  From the **Common Controls** tab of the **Toolbox**, add a label to the designer surface.  
+3.  À partir de la **contrôles communs** onglet de la **boîte à outils**, ajouter une étiquette à l’aire du concepteur.  
   
-4.  In the **Properties** window, set the **Text** property of label1 to **Actions Pane 1**.  
+4.  Dans le **propriétés** , configurez la **texte** propriété de Label1 la valeur **volet Actions 1**.  
   
-5.  Repeat steps 1 through 5 to create a second actions pane and label. Set the **Text** property of the second label to **Actions Pane 2**.  
+5.  Répétez les étapes 1 à 5 pour créer un deuxième volet Actions et une deuxième étiquette. Définir le **texte** propriété du contrôle label deuxième **volet Actions 2**.  
   
-##  <a name="BKMK_CreateCustomTab"></a> Creating a Custom Tab  
- One of the Office application design guidelines is that users should always have control of the Office application UI. To add this capability for the actions panes, you can add buttons that show and hide each actions pane from a custom tab on the ribbon. To create a custom tab, add a **Ribbon (Visual Designer)** item to the project. The designer helps you add and position controls, set control properties, and handle control events.  
+##  <a name="BKMK_CreateCustomTab"></a>Création d’un onglet personnalisé  
+ L'une des règles de conception d'une application Office stipule que les utilisateurs doivent toujours avoir le contrôle de l'interface utilisateur de l'application Office. Pour ajouter cette fonction pour les volets Actions, vous pouvez ajouter des boutons qui affichent et masquent chaque volet Actions à partir d'un onglet personnalisé sur le ruban. Pour créer un onglet personnalisé, ajoutez un **ruban (Concepteur visuel)** élément au projet. Le concepteur vous permet d'ajouter et de position des contrôles, de définir les propriétés des contrôles et de gérer les événements de contrôle.  
   
-#### <a name="to-create-a-custom-tab"></a>To create a custom tab  
+#### <a name="to-create-a-custom-tab"></a>Pour créer un onglet personnalisé  
   
-1.  On the **Project** menu, choose **Add New Item**.  
+1.  Dans le menu **Projet** , choisissez **Ajouter un nouvel élément**.  
   
-2.  In the **Add New Item** dialog box, select **Ribbon (Visual Designer)**.  
+2.  Dans la boîte de dialogue **Ajouter un nouvel élément** , sélectionnez **Ruban (Concepteur visuel)**.  
   
-3.  Change the name of the new ribbon to **MyRibbon**, and choose **Add**.  
+3.  Modifier le nom du nouveau ruban par **MyRibbon**, puis choisissez **ajouter**.  
   
-     The **MyRibbon.cs** or **MyRibbon.vb** file opens in the Ribbon Designer and displays a default tab and group.  
+     Le fichier **MyRibbon.cs** ou **MyRibbon.vb** s'ouvre dans le Concepteur de ruban et affiche un onglet et un groupe par défaut.  
   
-4.  In the Ribbon Designer, choose the default tab.  
+4.  Dans le Concepteur de ruban, choisissez l'onglet par défaut.  
   
-5.  In the **Properties** window, expand the **ControlId** property, and then set the **ControlIdType** property to **Custom**.  
+5.  Dans le **propriétés** fenêtre, développez le **ControlId** propriété et définissez la **ControlIdType** propriété **personnalisé**.  
   
-6.  Set the **Label** property to **My Custom Tab**.  
+6.  Définir le **étiquette** propriété **Mon onglet personnalisé**.  
   
-7.  In the Ribbon Designer, choose **group1**.  
+7.  Dans le Concepteur de ruban, choisissez **group1**.  
   
-8.  In the **Properties** window, set **Label** to **Actions Pane Manager**.  
+8.  Dans le **propriétés** , configurez **étiquette** à **Gestionnaire de volets Actions**.  
   
-9. From the **Office Ribbon Controls** tab of the **Toolbox**, drag a button onto **group1**.  
+9. À partir de la **contrôles de ruban Office** onglet de la **boîte à outils**, faites glisser un bouton sur **group1**.  
   
-10. Select **button1**.  
+10. Sélectionnez **button1**.  
   
-11. In the **Properties** window, set **Label** to **Show Actions Pane 1**.  
+11. Dans le **propriétés** , configurez **étiquette** à **Afficher volet Actions 1**.  
   
-12. Add a second button to **group1**, and set the **Label** property to **Show Actions Pane 2**.  
+12. Ajoutez un deuxième bouton à **group1**et définissez la **étiquette** propriété **Afficher volet Actions 2**.  
   
-13. From the **Office Ribbon Controls** tab of the **Toolbox**, drag a **ToggleButton** control onto **group1**.  
+13. À partir de la **contrôles de ruban Office** onglet de la **boîte à outils**, faites glisser un **ToggleButton** contrôler sur **group1**.  
   
-14. Set the **Label** property to **Hide Actions Pane**.  
+14. Définir le **étiquette** propriété **masquer le volet Actions**.  
   
-##  <a name="BKMK_HideShowActionsPane"></a> Hiding and Showing Actions Panes by Using Buttons on the Custom Tab  
- The last step is to add code that responds to the user. Add event handlers for the <xref:Microsoft.Office.Tools.Ribbon.RibbonButton.Click> events of the two buttons and the <xref:Microsoft.Office.Tools.Ribbon.RibbonToggleButton.Click> event of the toggle button. Add code to these event handlers to enable hiding and showing the actions panes.  
+##  <a name="BKMK_HideShowActionsPane"></a>Masquage et affichage de volets Actions à l’aide des boutons sur l’onglet personnalisé  
+ La dernière étape consiste à ajouter le code qui répond à l'utilisateur. Ajoutez les gestionnaires d'événements pour les événements <xref:Microsoft.Office.Tools.Ribbon.RibbonButton.Click> des deux boutons et l'événement <xref:Microsoft.Office.Tools.Ribbon.RibbonToggleButton.Click> du bouton bascule. Ajoutez le code aux gestionnaires d'événements pour permettre de masquer et d'afficher les volets Actions.  
   
-#### <a name="to-hide-and-show-actions-panes-by-using-buttons-in-the-custom-tab"></a>To hide and show actions panes by using buttons in the custom tab  
+#### <a name="to-hide-and-show-actions-panes-by-using-buttons-in-the-custom-tab"></a>Pour masquer et afficher des volets Actions à l'aide de boutons dans l'onglet personnalisé  
   
-1.  In **Solution Explorer**, open the shortcut menu for MyRibbon.cs or MyRibbon.vb, and then choose **View Code**.  
+1.  Dans **l’Explorateur de solutions**, ouvrez le menu contextuel de MyRibbon.cs ou MyRibbon.vb, puis choisissez **afficher le Code**.  
   
-2.  Add the following code to the top of the `MyRibbon` class. This code creates two actions pane objects.  
+2.  Ajoutez le code suivant en haut de la classe `MyRibbon`. Ce code crée deux objets du volet Actions.  
   
-     [!code-csharp[Trin_Ribbon_Custom_Tab#1](../vsto/codesnippet/CSharp/Trin_Ribbon_Custom_Tab/MyRibbon.cs#1)]  [!code-vb[Trin_Ribbon_Custom_Tab#1](../vsto/codesnippet/VisualBasic/Trin_Ribbon_Custom_Tab/MyRibbon.vb#1)]  
+     [!code-csharp[Trin_Ribbon_Custom_Tab#1](../vsto/codesnippet/CSharp/Trin_Ribbon_Custom_Tab/MyRibbon.cs#1)]
+     [!code-vb[Trin_Ribbon_Custom_Tab#1](../vsto/codesnippet/VisualBasic/Trin_Ribbon_Custom_Tab/MyRibbon.vb#1)]  
   
-3.  Replace the `MyRibbon_Load` method with the following code. This code adds the actions pane objects to the <xref:Microsoft.Office.Tools.ActionsPane.Controls%2A> collection and hides the objects from view. The Visual C# code also attaches delegates to several ribbon control events.  
+3.  Remplacez la méthode `MyRibbon_Load` par le code suivant. Ce code ajoute les objets du volet Actions à la collection <xref:Microsoft.Office.Tools.ActionsPane.Controls%2A> et masque les objets. Le code Visual C# attache également les délégués à plusieurs événements de contrôle du ruban.  
   
-     [!code-csharp[Trin_Ribbon_Custom_Tab#2](../vsto/codesnippet/CSharp/Trin_Ribbon_Custom_Tab/MyRibbon.cs#2)]  [!code-vb[Trin_Ribbon_Custom_Tab#2](../vsto/codesnippet/VisualBasic/Trin_Ribbon_Custom_Tab/MyRibbon.vb#2)]  
+     [!code-csharp[Trin_Ribbon_Custom_Tab#2](../vsto/codesnippet/CSharp/Trin_Ribbon_Custom_Tab/MyRibbon.cs#2)]
+     [!code-vb[Trin_Ribbon_Custom_Tab#2](../vsto/codesnippet/VisualBasic/Trin_Ribbon_Custom_Tab/MyRibbon.vb#2)]  
   
-4.  Add the following three event handler methods to the `MyRibbon` class. These methods handle the <xref:Microsoft.Office.Tools.Ribbon.RibbonButton.Click> events of the two buttons and the <xref:Microsoft.Office.Tools.Ribbon.RibbonToggleButton.Click> event of the toggle button. The event handlers for button1 and button2 show alternate actions panes. The event handler for toggleButton1 shows and hides the active actions pane.  
+4.  Ajoutez les trois méthodes de gestionnaire d'événements suivantes à la classe `MyRibbon`. Ces méthodes gèrent les événements <xref:Microsoft.Office.Tools.Ribbon.RibbonButton.Click> des deux boutons et l'événement <xref:Microsoft.Office.Tools.Ribbon.RibbonToggleButton.Click> du bouton bascule. Les gestionnaires d'événements pour button1 et button2 affichent d'autres volets Actions. Le gestionnaire d'événements pour toggleButton1 affiche et masque le volet Actions actif.  
   
-     [!code-csharp[Trin_Ribbon_Custom_Tab#3](../vsto/codesnippet/CSharp/Trin_Ribbon_Custom_Tab/MyRibbon.cs#3)]  [!code-vb[Trin_Ribbon_Custom_Tab#3](../vsto/codesnippet/VisualBasic/Trin_Ribbon_Custom_Tab/MyRibbon.vb#3)]  
+     [!code-csharp[Trin_Ribbon_Custom_Tab#3](../vsto/codesnippet/CSharp/Trin_Ribbon_Custom_Tab/MyRibbon.cs#3)]
+     [!code-vb[Trin_Ribbon_Custom_Tab#3](../vsto/codesnippet/VisualBasic/Trin_Ribbon_Custom_Tab/MyRibbon.vb#3)]  
   
-## <a name="testing-the-custom-tab"></a>Testing the Custom Tab  
- When you run the project, Excel starts, and the **My Custom Tab** tab appears on the ribbon. Choose the buttons on **My Custom Tab** to show and hide the actions panes.  
+## <a name="testing-the-custom-tab"></a>Test de l'onglet personnalisé  
+ Lorsque vous exécutez le projet, Excel démarre et le **Mon onglet personnalisé** onglet apparaît sur le ruban. Sélectionnez les boutons de **Mon onglet personnalisé** pour afficher et masquer les volets actions.  
   
-#### <a name="to-test-the-custom-tab"></a>To test the custom tab  
+#### <a name="to-test-the-custom-tab"></a>Pour tester l'onglet personnalisé  
   
-1.  Press F5 to run your project.  
+1.  Appuyez sur F5 pour exécuter votre projet.  
   
-2.  Choose the **My Custom Tab** tab.  
+2.  Choisissez le **Mon onglet personnalisé** onglet.  
   
-3.  In the **Custom Actions Pane Manager** group, choose **Show Actions Pane 1**.  
+3.  Dans le **Gestionnaire de volets Actions personnalisées** groupe, choisissez **Afficher volet Actions 1**.  
   
-     The actions pane appears and displays the label **Actions Pane 1**.  
+     Le volet actions apparaît et affiche l’étiquette **volet Actions 1**.  
   
-4.  Choose **Show Actions Pane 2**.  
+4.  Choisissez **Afficher volet Actions 2**.  
   
-     The actions pane appears and displays the label **Actions Pane 2**.  
+     Le volet actions apparaît et affiche l’étiquette **volet Actions 2**.  
   
-5.  Choose **Hide Actions Pane**.  
+5.  Choisissez **Masquer volet Actions**.  
   
-     The actions panes are no longer visible.  
+     Les volets Actions ne sont plus visibles.  
   
-## <a name="next-steps"></a>Next Steps  
- You can learn more about how to customize the Office UI from these topics:  
+## <a name="next-steps"></a>Étapes suivantes  
+ Pour plus d'informations sur la personnalisation de l'interface utilisateur d'Office, consultez les rubriques suivantes :  
   
--   Add context-based UI to any document-level customization. For more information, see [Actions Pane Overview](../vsto/actions-pane-overview.md).  
+-   Ajouter une interface utilisateur contextuelle à une personnalisation au niveau du document. Pour plus d'informations, consultez [Actions Pane Overview](../vsto/actions-pane-overview.md).  
   
--   Extend a standard or custom Microsoft Office Outlook form. For more information, see [Walkthrough: Designing an Outlook Form Region](../vsto/walkthrough-designing-an-outlook-form-region.md).  
+-   Étendre un formulaire Microsoft Office standard ou personnalisé. Pour plus d’informations, consultez [procédure pas à pas : conception d’une zone de formulaire Outlook](../vsto/walkthrough-designing-an-outlook-form-region.md).  
   
-## <a name="see-also"></a>See Also  
+## <a name="see-also"></a>Voir aussi  
  [Accessing the Ribbon at Run Time](../vsto/accessing-the-ribbon-at-run-time.md)   
- [Ribbon Overview](../vsto/ribbon-overview.md)   
- [Ribbon Designer](../vsto/ribbon-designer.md)   
- [Customizing a Ribbon for Outlook](../vsto/customizing-a-ribbon-for-outlook.md)   
- [How to: Get Started Customizing the Ribbon](../vsto/how-to-get-started-customizing-the-ribbon.md)   
- [How to: Change the Position of a Tab on the Ribbon](../vsto/how-to-change-the-position-of-a-tab-on-the-ribbon.md)   
- [How to: Customize a Built-in Tab](../vsto/how-to-customize-a-built-in-tab.md)   
- [How to: Add Controls to the Backstage View](../vsto/how-to-add-controls-to-the-backstage-view.md)   
- [Ribbon Object Model Overview](../vsto/ribbon-object-model-overview.md)  
+ [Vue d’ensemble du ruban](../vsto/ribbon-overview.md)   
+ [Concepteur de ruban](../vsto/ribbon-designer.md)   
+ [Personnalisation d’un ruban pour Outlook](../vsto/customizing-a-ribbon-for-outlook.md)   
+ [Comment : démarrer avec la personnalisation du ruban](../vsto/how-to-get-started-customizing-the-ribbon.md)   
+ [Comment : modifier la Position d’un onglet du ruban](../vsto/how-to-change-the-position-of-a-tab-on-the-ribbon.md)   
+ [Comment : personnaliser un onglet intégré](../vsto/how-to-customize-a-built-in-tab.md)   
+ [Comment : ajouter des contrôles au mode Backstage](../vsto/how-to-add-controls-to-the-backstage-view.md)   
+ [Vue d’ensemble du modèle objet de ruban](../vsto/ribbon-object-model-overview.md)  
   
   

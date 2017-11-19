@@ -1,12 +1,10 @@
 ---
-title: 'How to: Programmatically Display a String in a Worksheet Cell | Microsoft Docs'
+title: "Comment : afficher par programme une chaîne dans une cellule de feuille de calcul | Documents Microsoft"
 ms.custom: 
 ms.date: 02/02/2017
-ms.prod: visual-studio-dev14
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- office-development
+ms.technology: office-development
 ms.tgt_pltfrm: 
 ms.topic: article
 dev_langs:
@@ -16,45 +14,46 @@ helpviewer_keywords:
 - text [Office development in Visual Studio], adding to worksheets
 - worksheets, displaying text in cells
 ms.assetid: b19870ad-e132-49fd-994e-0a91710fa4c9
-caps.latest.revision: 45
-author: kempb
-ms.author: kempb
+caps.latest.revision: "45"
+author: gewarren
+ms.author: gewarren
 manager: ghogen
-ms.translationtype: HT
-ms.sourcegitcommit: eb5c9550fd29b0e98bf63a7240737da4f13f3249
-ms.openlocfilehash: 4667c2fe28cf927b6192cd1011a4570838425d7b
-ms.contentlocale: fr-fr
-ms.lasthandoff: 08/30/2017
-
+ms.openlocfilehash: 3e297a2f6c1752053557dd7bcea5adab1c2184aa
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: fr-FR
+ms.lasthandoff: 10/31/2017
 ---
-# <a name="how-to-programmatically-display-a-string-in-a-worksheet-cell"></a>How to: Programmatically Display a String in a Worksheet Cell
-  This example demonstrates how to display text in a cell programmatically. To display text in cell, use either a <xref:Microsoft.Office.Tools.Excel.NamedRange> control or a native Excel range object.  
+# <a name="how-to-programmatically-display-a-string-in-a-worksheet-cell"></a>Comment : afficher une chaîne dans une cellule de feuille de calcul par programmation
+  Cet exemple montre comment afficher le texte dans une cellule par programme. Pour afficher le texte dans la cellule, utilisez un <xref:Microsoft.Office.Tools.Excel.NamedRange> contrôle ou un objet de plage Excel natif.  
   
  [!INCLUDE[appliesto_xlalldocapp](../vsto/includes/appliesto-xlalldocapp-md.md)]  
   
-## <a name="using-a-namedrange-control"></a>Using a NamedRange Control  
- This example uses a <xref:Microsoft.Office.Tools.Excel.NamedRange> control named `message`. The control must be added to a document-level customization at design time. The following code must be placed in a sheet class, not in the `ThisWorkbook` class.  
+## <a name="using-a-namedrange-control"></a>À l’aide d’un contrôle NamedRange  
+ Cet exemple utilise un <xref:Microsoft.Office.Tools.Excel.NamedRange> contrôle nommé `message`. Le contrôle doit être ajouté à une personnalisation au niveau du document au moment du design. Le code suivant doit être placé dans une classe sheet et non pas dans le `ThisWorkbook` classe.  
   
-#### <a name="to-display-text-in-a-namedrange-control"></a>To display text in a NamedRange control  
+#### <a name="to-display-text-in-a-namedrange-control"></a>Pour afficher le texte dans un contrôle NamedRange  
   
-1.  Set the value of the <xref:Microsoft.Office.Tools.Excel.NamedRange> control to **Hello World**.  
+1.  Définir la valeur de la <xref:Microsoft.Office.Tools.Excel.NamedRange> le contrôle à **Hello World**.  
   
-     [!code-csharp[Trin_VstcoreExcelAutomation#68](../vsto/codesnippet/CSharp/Trin_VstcoreExcelAutomationCS/Sheet1.cs#68)]  [!code-vb[Trin_VstcoreExcelAutomation#68](../vsto/codesnippet/VisualBasic/Trin_VstcoreExcelAutomation/Sheet1.vb#68)]  
+     [!code-csharp[Trin_VstcoreExcelAutomation#68](../vsto/codesnippet/CSharp/Trin_VstcoreExcelAutomationCS/Sheet1.cs#68)]
+     [!code-vb[Trin_VstcoreExcelAutomation#68](../vsto/codesnippet/VisualBasic/Trin_VstcoreExcelAutomation/Sheet1.vb#68)]  
   
-## <a name="using-a-native-excel-range"></a>Using a Native Excel Range  
- The following code creates a new range programmatically and then assigns a value to it.  
+## <a name="using-a-native-excel-range"></a>À l’aide d’une plage Excel Native  
+ Le code suivant crée une nouvelle plage par programme et puis assigne une valeur à celle-ci.  
   
-#### <a name="to-display-text-in-an-excel-range"></a>To display text in an Excel range  
+#### <a name="to-display-text-in-an-excel-range"></a>Pour afficher le texte dans une plage Excel  
   
-1.  Retrieve the range at cell **A1** on `Sheet1` and set the value to **Hello World**.  
+1.  Récupérez la plage à la cellule **A1** sur `Sheet1` et définissez la valeur sur **Hello World**.  
   
-     [!code-csharp[Trin_VstcoreExcelAutomation#69](../vsto/codesnippet/CSharp/Trin_VstcoreExcelAutomationCS/Sheet1.cs#69)]  [!code-vb[Trin_VstcoreExcelAutomation#69](../vsto/codesnippet/VisualBasic/Trin_VstcoreExcelAutomation/Sheet1.vb#69)]  
+     [!code-csharp[Trin_VstcoreExcelAutomation#69](../vsto/codesnippet/CSharp/Trin_VstcoreExcelAutomationCS/Sheet1.cs#69)]
+     [!code-vb[Trin_VstcoreExcelAutomation#69](../vsto/codesnippet/VisualBasic/Trin_VstcoreExcelAutomation/Sheet1.vb#69)]  
   
-## <a name="see-also"></a>See Also  
- [Walkthrough: Collecting Data Using a Windows Form](../vsto/walkthrough-collecting-data-using-a-windows-form.md)   
- [Troubleshooting Office Solutions](../vsto/troubleshooting-office-solutions.md)   
- [NamedRange Control](../vsto/namedrange-control.md)   
- [Global Access to Objects in Office Projects](../vsto/global-access-to-objects-in-office-projects.md)   
- [Optional Parameters in Office Solutions](../vsto/optional-parameters-in-office-solutions.md)  
+## <a name="see-also"></a>Voir aussi  
+ [Procédure pas à pas : Collecte de données à l’aide d’un Windows Form](../vsto/walkthrough-collecting-data-using-a-windows-form.md)   
+ [Dépannage des Solutions Office](../vsto/troubleshooting-office-solutions.md)   
+ [NamedRange (contrôle)](../vsto/namedrange-control.md)   
+ [Accès global aux objets dans les projets Office](../vsto/global-access-to-objects-in-office-projects.md)   
+ [Paramètres optionnels dans les solutions Office](../vsto/optional-parameters-in-office-solutions.md)  
   
   

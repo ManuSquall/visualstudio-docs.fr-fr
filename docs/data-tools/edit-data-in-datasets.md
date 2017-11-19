@@ -1,5 +1,5 @@
 ---
-title: Edit data in datasets | Microsoft Docs
+title: "Modifier des données dans les jeux de données | Documents Microsoft"
 ms.custom: 
 ms.date: 11/04/2016
 ms.reviewer: 
@@ -13,107 +13,102 @@ helpviewer_keywords:
 - datasets [Visual Basic], editing data
 - data [Visual Studio], editing in datasets
 ms.assetid: 50d5c580-fbf7-408f-be70-e63ac4f4d0eb
-caps.latest.revision: 15
+caps.latest.revision: "15"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-translation.priority.ht:
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- ru-ru
-- zh-cn
-- zh-tw
-translation.priority.mt:
-- cs-cz
-- pl-pl
-- pt-br
-- tr-tr
-ms.translationtype: HT
-ms.sourcegitcommit: 33a857c2d8585e2e8da9bcd9158190366a3b6830
-ms.openlocfilehash: 8bda09d2c5b2be557a46e0a5df38965976b854cd
-ms.contentlocale: fr-fr
-ms.lasthandoff: 09/07/2017
-
+ms.technology: vs-data-tools
+ms.openlocfilehash: bc42474ff9cb4762b43463e5e0929f11d58ad7d0
+ms.sourcegitcommit: ee42a8771f0248db93fd2e017a22e2506e0f9404
+ms.translationtype: MT
+ms.contentlocale: fr-FR
+ms.lasthandoff: 11/09/2017
 ---
-# <a name="edit-data-in-datasets"></a>Edit data in datasets
-You edit data in data tables much like you edit the data in a table in any database. The process can include inserting, updating, and deleting records in the table. In a data-bound form, you can specify which fields are user-editable. In those cases, the data-binding infrastructure handles all the change tracking so that the changes can be sent back to the database later. If you programmatically make edits to data, and you intend to send those changes back to the database, you must use the objects and methods that do the change tracking for you.  
+# <a name="edit-data-in-datasets"></a>Modifier des données dans les jeux de données
+Pour modifier les données dans les tables de données de la même manière que vous modifiez les données dans une table dans une base de données. Le processus peut inclure insertion, mise à jour et suppression d’enregistrements dans la table. Dans un formulaire lié aux données, vous pouvez spécifier quels champs sont modifiables par l’utilisateur. Dans ce cas, l’infrastructure de liaison de données gère tout le suivi des modifications afin que les modifications puissent être envoyées à la base de données ultérieurement. Si les modifications apportées par programme aux données et que vous avez l’intention de renvoyer ces modifications à la base de données, vous devez utiliser les objets et les méthodes qui effectuent le suivi des modifications pour vous.  
   
- In addition to changing the actual data, you can also query a <xref:System.Data.DataTable> to return specific rows of data. For example, you might query for individual rows, specific versions of rows (original and proposed),  rows that have changed, or rows that have errors.  
+En plus de modifier les données réelles, vous pouvez également interroger un <xref:System.Data.DataTable> pour retourner des lignes de données. Par exemple, vous pourrez interroger pour les lignes individuelles, des versions spécifiques de lignes (d’origine et proposés), les lignes qui ont été modifiées ou les lignes qui contiennent des erreurs.  
   
-## <a name="to-edit-rows-in-a-dataset"></a>To edit rows in a dataset  
- To edit an existing row in a <xref:System.Data.DataTable>, you need to locate the <xref:System.Data.DataRow> you want to edit, and then assign the updated values to the desired columns.  
+## <a name="to-edit-rows-in-a-dataset"></a>Pour modifier des lignes dans un jeu de données  
+Pour modifier une ligne existante dans un <xref:System.Data.DataTable>, vous devez rechercher la <xref:System.Data.DataRow> vous souhaitez modifier, puis assigner les valeurs mises à jour pour les colonnes de votre choix.  
   
- If you don't know the index of the row you want to edit, use the `FindBy` method to search by the primary key:  
+Si vous ne connaissez pas l’index de la ligne que vous souhaitez modifier, utilisez la `FindBy` méthode pour effectuer une recherche par la clé primaire :  
   
- [!code-csharp[VbRaddataEditing#3](../data-tools/codesnippet/CSharp/edit-data-in-datasets_1.cs)] [!code-vb[VbRaddataEditing#3](../data-tools/codesnippet/VisualBasic/edit-data-in-datasets_1.vb)]  
+[!code-csharp[VbRaddataEditing#3](../data-tools/codesnippet/CSharp/edit-data-in-datasets_1.cs)]
+[!code-vb[VbRaddataEditing#3](../data-tools/codesnippet/VisualBasic/edit-data-in-datasets_1.vb)]  
   
- If you know the row index, you can access and edits rows as follows:  
+Si vous connaissez l’index de ligne, vous pouvez accéder à et modifie les lignes comme suit :  
   
- [!code-csharp[VbRaddataEditing#5](../data-tools/codesnippet/CSharp/edit-data-in-datasets_2.cs)] [!code-vb[VbRaddataEditing#5](../data-tools/codesnippet/VisualBasic/edit-data-in-datasets_2.vb)]  
+[!code-csharp[VbRaddataEditing#5](../data-tools/codesnippet/CSharp/edit-data-in-datasets_2.cs)]
+[!code-vb[VbRaddataEditing#5](../data-tools/codesnippet/VisualBasic/edit-data-in-datasets_2.vb)]  
   
-## <a name="to-insert-new-rows-into-a-dataset"></a>To insert new rows into a dataset  
- Applications that use data-bound controls typically add new records through the **Add New** button on a [BindingNavigator Control](/dotnet/framework/winforms/controls/bindingnavigator-control-windows-forms).  
+## <a name="to-insert-new-rows-into-a-dataset"></a>Pour insérer de nouvelles lignes dans un jeu de données  
+Les applications qui utilisent généralement des contrôles liés aux données ajoutent de nouveaux enregistrements via le **nouveau** bouton sur un [contrôle BindingNavigator](/dotnet/framework/winforms/controls/bindingnavigator-control-windows-forms).  
   
- To manually add new records to a dataset, create a new data row by calling the method on the DataTable. Then add the row to the <xref:System.Data.DataRow> collection (<xref:System.Data.DataTable.Rows%2A>) of the <xref:System.Data.DataTable>:  
+Pour ajouter manuellement des enregistrements à un jeu de données, créez une nouvelle ligne de données en appelant la méthode sur la table de données. Puis ajoutez la ligne à la <xref:System.Data.DataRow> collection (<xref:System.Data.DataTable.Rows%2A>) de la <xref:System.Data.DataTable>:  
   
- [!code-csharp[VbRaddataEditing#1](../data-tools/codesnippet/CSharp/edit-data-in-datasets_3.cs)] [!code-vb[VbRaddataEditing#1](../data-tools/codesnippet/VisualBasic/edit-data-in-datasets_3.vb)]  
+[!code-csharp[VbRaddataEditing#1](../data-tools/codesnippet/CSharp/edit-data-in-datasets_3.cs)]
+[!code-vb[VbRaddataEditing#1](../data-tools/codesnippet/VisualBasic/edit-data-in-datasets_3.vb)]  
   
- In order to retain the information that the dataset needs to send updates to the data source, use the <xref:System.Data.DataRow.Delete%2A> method to remove rows in a data table. For example, if your application uses a TableAdapter (or <xref:System.Data.Common.DataAdapter>), the TableAdapter's `Update` method deletes rows in the database that have a <xref:System.Data.DataRow.RowState%2A> of <xref:System.Data.DataRowState.Deleted>.  
+Pour conserver les informations que le jeu de données a besoin envoyer des mises à jour à la source de données, utilisez la <xref:System.Data.DataRow.Delete%2A> méthode pour supprimer des lignes dans une table de données. Par exemple, si votre application utilise un TableAdapter (ou <xref:System.Data.Common.DataAdapter>), du TableAdapter `Update` méthode supprime des lignes dans la base de données qui ont un <xref:System.Data.DataRow.RowState%2A> de <xref:System.Data.DataRowState.Deleted>.  
   
- If your application does not need to send updates back to a data source, then it's possible to remove records by directly accessing the data row collection (<xref:System.Data.DataRowCollection.Remove%2A>).  
+Si votre application n’a pas besoin de renvoyer les mises à jour à une source de données, il est possible de supprimer des enregistrements en accédant directement à la collection de lignes de données (<xref:System.Data.DataRowCollection.Remove%2A>).  
   
-#### <a name="to-delete-records-from-a-data-table"></a>To delete records from a data table  
+#### <a name="to-delete-records-from-a-data-table"></a>Pour supprimer des enregistrements à partir d’une table de données  
   
--   Call the <xref:System.Data.DataRow.Delete%2A> method of a <xref:System.Data.DataRow>.  
+-   Appelez le <xref:System.Data.DataRow.Delete%2A> méthode d’un <xref:System.Data.DataRow>.  
   
-     This method doesn't physically remove the record. Instead, it marks the record for deletion.  
+     Cette méthode ne supprime pas physiquement l’enregistrement. Au lieu de cela, il marque l’enregistrement pour la suppression.  
   
     > [!NOTE]
-    >  If you get the count property of a <xref:System.Data.DataRowCollection>, the resulting count includes records that have been marked for deletion. To get an accurate count of records that aren't marked for deletion, you can loop through the collection looking at the <xref:System.Data.DataRow.RowState%2A> property of each record. (Records marked for deletion have a <xref:System.Data.DataRow.RowState%2A> of <xref:System.Data.DataRowState.Deleted>.) Alternatively, you can create a data view of a dataset that filters based on row state and get the count property from there.  
+    >  Si vous obtenez la propriété count d’une <xref:System.Data.DataRowCollection>, le résultat inclut les enregistrements qui ont été marqués pour suppression. Pour obtenir un décompte précis des enregistrements qui ne sont pas marqués pour suppression, vous pouvez parcourir la collection et rechercher la <xref:System.Data.DataRow.RowState%2A> propriété de chaque enregistrement. (Les enregistrements marqués pour suppression possèdent un <xref:System.Data.DataRow.RowState%2A> de <xref:System.Data.DataRowState.Deleted>.) Vous pouvez également créer une vue de données d’un dataset filtres basés sur l’état de ligne et obtenir la propriété count à partir de là.  
   
-     The following example shows how to call the <xref:System.Data.DataRow.Delete%2A> method to mark the first row in the `Customers` table as deleted:  
+L’exemple suivant montre comment appeler le <xref:System.Data.DataRow.Delete%2A> méthode pour marquer la première ligne dans le `Customers` comme étant supprimées de la table :  
   
-     [!code-csharp[VbRaddataEditing#8](../data-tools/codesnippet/CSharp/edit-data-in-datasets_4.cs)]  [!code-vb[VbRaddataEditing#8](../data-tools/codesnippet/VisualBasic/edit-data-in-datasets_4.vb)]  
+[!code-csharp[VbRaddataEditing#8](../data-tools/codesnippet/CSharp/edit-data-in-datasets_4.cs)]
+[!code-vb[VbRaddataEditing#8](../data-tools/codesnippet/VisualBasic/edit-data-in-datasets_4.vb)]  
   
-## <a name="determine-if-there-are-changed-rows"></a>Determine if there are changed rows  
- When changes are made to records in a dataset, information about those changes is stored until you commit them. You commit the changes  when you call the `AcceptChanges` method of a dataset or data table, or when you call the `Update` method of a TableAdapter or data adapter.  
+## <a name="determine-if-there-are-changed-rows"></a>Déterminer s’il existe des lignes modifiées  
+Lorsque des modifications sont apportées aux enregistrements dans un jeu de données, les informations sur ces modifications sont stockées jusqu'à ce que vous les validez. Vous validez les modifications lorsque vous appelez le `AcceptChanges` (méthode) d’une table de données ou du jeu de données, ou lorsque vous appelez le `Update` méthode d’un adaptateur de données ou du TableAdapter.  
   
- Changes are tracked two ways in each data row:  
+Modifications sont suivies de deux façons dans chaque ligne de données :  
   
--   Each data row contains information related to its <xref:System.Data.DataRow.RowState%2A> (for example, <xref:System.Data.DataRowState.Added>, <xref:System.Data.DataRowState.Modified>, <xref:System.Data.DataRowState.Deleted>, or <xref:System.Data.DataRowState.Unchanged>).  
+-   Chaque ligne de données contient des informations relatives à ses <xref:System.Data.DataRow.RowState%2A> (par exemple, <xref:System.Data.DataRowState.Added>, <xref:System.Data.DataRowState.Modified>, <xref:System.Data.DataRowState.Deleted>, ou <xref:System.Data.DataRowState.Unchanged>).  
   
--   Each changed data row contains multiple versions of that row (<xref:System.Data.DataRowVersion>), the original version (before changes) and the current version (after changes). During the period when a change is pending (the time when you can respond to the <xref:System.Data.DataTable.RowChanging> event), a third version — the proposed version— is available as well. 
+-   Chaque ligne de données modifiée contient plusieurs versions de cette ligne (<xref:System.Data.DataRowVersion>), la version d’origine (avant modification) et la version actuelle (après modification). Pendant la période où la modification est en attente (le temps lorsque vous pouvez répondre à la <xref:System.Data.DataTable.RowChanging> événement), une troisième version, la version proposée — est également disponible. 
   
- The <xref:System.Data.DataSet.HasChanges%2A> method of a dataset returns `true` if changes have been made in the dataset. After determining that changed rows exist, you can call the `GetChanges` method of a <xref:System.Data.DataSet> or <xref:System.Data.DataTable> to return a set of changed rows.   
+Le <xref:System.Data.DataSet.HasChanges%2A> retourne de la méthode d’un dataset `true` si les modifications ont été apportées dans le jeu de données. Après avoir déterminé qu’il existe des lignes modifiées, vous pouvez appeler la `GetChanges` méthode d’un <xref:System.Data.DataSet> ou <xref:System.Data.DataTable> pour renvoyer un ensemble de lignes modifiées.   
   
-#### <a name="to-determine-if-changes-have-been-made-to-any-rows"></a>To determine if changes have been made to any rows  
+#### <a name="to-determine-if-changes-have-been-made-to-any-rows"></a>Pour déterminer si des modifications ont été apportées à des lignes  
   
--   Call the <xref:System.Data.DataSet.HasChanges%2A> method of a dataset to check for changed rows.  
+-   Appelez le <xref:System.Data.DataSet.HasChanges%2A> méthode d’un dataset pour rechercher les lignes modifiées.  
   
-     The following example shows how to check the return value from the <xref:System.Data.DataSet.HasChanges%2A> method to detect whether there are any changed rows in a dataset named `NorthwindDataset1`:  
+L’exemple suivant montre comment vérifier la valeur de retour à partir de la <xref:System.Data.DataSet.HasChanges%2A> méthode pour détecter s’il existe des lignes modifiées dans un dataset nommé `NorthwindDataset1`:  
   
-     [!code-csharp[VbRaddataEditing#12](../data-tools/codesnippet/CSharp/edit-data-in-datasets_5.cs)]  [!code-vb[VbRaddataEditing#12](../data-tools/codesnippet/VisualBasic/edit-data-in-datasets_5.vb)]  
+[!code-csharp[VbRaddataEditing#12](../data-tools/codesnippet/CSharp/edit-data-in-datasets_5.cs)]
+[!code-vb[VbRaddataEditing#12](../data-tools/codesnippet/VisualBasic/edit-data-in-datasets_5.vb)]  
   
-## <a name="determine-the-type-of-changes"></a>Determine the type of changes  
- You can also check to see what type of changes were made in a dataset by passing a value from the <xref:System.Data.DataRowState> enumeration to the <xref:System.Data.DataSet.HasChanges%2A> method.  
+## <a name="determine-the-type-of-changes"></a>Déterminer le type de modifications  
+Vous pouvez également vérifier pour savoir quel type de modifications ont été apportées dans un jeu de données en passant une valeur à partir de la <xref:System.Data.DataRowState> énumération à la <xref:System.Data.DataSet.HasChanges%2A> (méthode).  
   
-#### <a name="to-determine-what-type-of-changes-have-been-made-to-a-row"></a>To determine what type of changes have been made to a row  
+#### <a name="to-determine-what-type-of-changes-have-been-made-to-a-row"></a>Pour déterminer le type de modifications ont été apportées à une ligne  
   
--   Pass a <xref:System.Data.DataRowState> value to the <xref:System.Data.DataSet.HasChanges%2A> method.  
+-   Passez un <xref:System.Data.DataRowState> valeur le <xref:System.Data.DataSet.HasChanges%2A> (méthode).  
   
-     The following example shows how to check a dataset named `NorthwindDataset1` to determine if any new rows have been added to it:  
+L’exemple suivant montre comment vérifier un dataset nommé `NorthwindDataset1` pour déterminer si toutes les nouvelles lignes ont été ajoutés à celui-ci :  
   
-     [!code-csharp[VbRaddataEditing#13](../data-tools/codesnippet/CSharp/edit-data-in-datasets_6.cs)]  [!code-vb[VbRaddataEditing#13](../data-tools/codesnippet/VisualBasic/edit-data-in-datasets_6.vb)]  
+[!code-csharp[VbRaddataEditing#13](../data-tools/codesnippet/CSharp/edit-data-in-datasets_6.cs)]
+[!code-vb[VbRaddataEditing#13](../data-tools/codesnippet/VisualBasic/edit-data-in-datasets_6.vb)]  
   
-## <a name="to-locate-rows-that-have-errors"></a>To locate rows that have errors  
- When working with individual columns and rows of data, you might encounter errors. You can check the `HasErrors` property to determine if errors exist in a <xref:System.Data.DataSet>, <xref:System.Data.DataTable>, or <xref:System.Data.DataRow>.  
+## <a name="to-locate-rows-that-have-errors"></a>Pour rechercher des lignes qui contiennent des erreurs  
+Lorsque vous travaillez avec des colonnes et lignes de données, vous pouvez rencontrer des erreurs. Vous pouvez vérifier le `HasErrors` propriété pour déterminer si des erreurs existent dans un <xref:System.Data.DataSet>, <xref:System.Data.DataTable>, ou <xref:System.Data.DataRow>.  
   
-1.  Check the `HasErrors` property to see if there are any errors in the dataset.  
+1.  Vérifiez le `HasErrors` propriété pour voir s’il existe des erreurs dans le jeu de données.  
   
-2.  If the `HasErrors` property is `true`, iterate through the collections of tables, and then the through the rows, to find the row with the error.  
-  
-     [!code-csharp[VbRaddataEditing#23](../data-tools/codesnippet/CSharp/edit-data-in-datasets_7.cs)]  [!code-vb[VbRaddataEditing#23](../data-tools/codesnippet/VisualBasic/edit-data-in-datasets_7.vb)]
+2.  Si le `HasErrors` propriété est `true`, une itération au sein des collections de tables, puis le dans les lignes, pour rechercher la ligne avec l’erreur.  
+
+[!code-csharp[VbRaddataEditing#23](../data-tools/codesnippet/CSharp/edit-data-in-datasets_7.cs)]
+[!code-vb[VbRaddataEditing#23](../data-tools/codesnippet/VisualBasic/edit-data-in-datasets_7.vb)]
+
+## <a name="see-also"></a>Voir aussi
+[Outils de dataset dans Visual Studio](../data-tools/dataset-tools-in-visual-studio.md)

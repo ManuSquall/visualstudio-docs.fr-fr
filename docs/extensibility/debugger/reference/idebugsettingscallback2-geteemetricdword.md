@@ -1,44 +1,28 @@
 ---
-title: IDebugSettingsCallback2::GetEEMetricDword | Microsoft Docs
+title: IDebugSettingsCallback2::GetEEMetricDword | Documents Microsoft
 ms.custom: 
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-sdk
+ms.technology: vs-ide-sdk
 ms.tgt_pltfrm: 
 ms.topic: article
-helpviewer_keywords:
-- IDebugSettingsCallback2::GetEEMetricDword
+helpviewer_keywords: IDebugSettingsCallback2::GetEEMetricDword
 ms.assetid: c5f8f417-0ef0-4fd0-a779-b0a8ead4effe
-caps.latest.revision: 9
+caps.latest.revision: "9"
+author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-translation.priority.mt:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
+ms.openlocfilehash: 256809fac0de110fe9e136c1718b4f4cdec800fc
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
 ms.translationtype: MT
-ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
-ms.openlocfilehash: 5571f418bd8e70f8c924e36e89ee3ec4d0f45d88
-ms.contentlocale: fr-fr
-ms.lasthandoff: 08/28/2017
-
+ms.contentlocale: fr-FR
+ms.lasthandoff: 10/31/2017
 ---
 # <a name="idebugsettingscallback2geteemetricdword"></a>IDebugSettingsCallback2::GetEEMetricDword
-Retrieves a value that corresponds to the specified metric of the expression evaluator.  
+Récupère une valeur qui correspond à la valeur spécifiée de l’évaluateur d’expression.  
   
-## <a name="syntax"></a>Syntax  
+## <a name="syntax"></a>Syntaxe  
   
 ```cpp  
 HRESULT GetEEMetricDword(  
@@ -58,21 +42,21 @@ private int GetEEMetricDword(
 );  
 ```  
   
-#### <a name="parameters"></a>Parameters  
+#### <a name="parameters"></a>Paramètres  
  `guidLang`  
- [in] Unique identifier of the programming language.  
+ [in] Identificateur unique du langage de programmation.  
   
  `guidVendor`  
- [in] Unique identifier of the vendor.  
+ [in] Identificateur unique du fournisseur.  
   
  `pszMetric`  
- [in] Name of the metric.  
+ [in] Nom de la mesure.  
   
  `pdwValue`  
- [out] Returns the value that corresponds to the metric string.  
+ [out] Retourne la valeur qui correspond à la chaîne de métrique.  
   
-## <a name="return-value"></a>Return Value  
- If successful, returns `S_OK`; otherwise, returns an error code.  
+## <a name="return-value"></a>Valeur de retour  
+ En cas de réussite, retourne `S_OK`; sinon, retourne un code d’erreur.  
   
-## <a name="see-also"></a>See Also  
+## <a name="see-also"></a>Voir aussi  
  [IDebugSettingsCallback2](../../../extensibility/debugger/reference/idebugsettingscallback2.md)

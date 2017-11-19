@@ -1,37 +1,38 @@
 ---
-title: "Gr&#226;ce &#224; l&#39;automatisation pour le Code | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-helpviewer_keywords: 
-  - "Objet CodeModel"
+title: "Grâce à l’automatisation pour le Code | Documents Microsoft"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+helpviewer_keywords: CodeModel object
 ms.assetid: 21cb3e63-f25c-404b-bc1d-a32ad0fdd4d5
-caps.latest.revision: 13
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 13
+caps.latest.revision: "13"
+author: gregvanl
+ms.author: gregvanl
+manager: ghogen
+ms.openlocfilehash: aa1c2fa5d0da738057e59cdac007c499a834bc0a
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: fr-FR
+ms.lasthandoff: 10/31/2017
 ---
-# Gr&#226;ce &#224; l&#39;automatisation pour le Code
-[!INCLUDE[vs2017banner](../../code-quality/includes/vs2017banner.md)]
-
-Création d'un modèle Automation pour votre code n'est pas obligatoire.  L'environnement Kit de développement logiciel ne fournit pas un exemple pour ce faire.  Pour l'aperçu des modèles de code, consultez l'objet d' <xref:EnvDTE.CodeModel> .  
+# <a name="providing-automation-for-code"></a>Grâce à l’automatisation pour le Code
+Création d’un modèle automation pour votre code n’est pas nécessaire. Le SDK de l’environnement ne fournit pas d’un échantillon pour ce faire. Pour consulter les modèles de code, consultez la <xref:EnvDTE.CodeModel> objet.  
   
- pour implémenter un modèle de code, vous devez implémenter toutes les interfaces qui sont déterminées par votre structure de données interne.  les objets doivent être dérivés de la classe d' `IDispatch`.  
+ Pour implémenter un modèle de code, vous devez implémenter des interfaces qui sont déterminées par votre structure de données interne. Les objets doivent être dérivés de la `IDispatch` classe.  
   
- Les objets que vous étendez, <xref:EnvDTE.CodeModel> et <xref:EnvDTE.FileCodeModel>, sont disponibles à partir de l'objet d' <xref:EnvDTE.Project> , et se présentent comme suit :  
+ Les objets que vous étendez, <xref:EnvDTE.CodeModel> et <xref:EnvDTE.FileCodeModel>, sont disponibles à partir de la <xref:EnvDTE.Project> de l’objet et l’aspect suivant :  
   
  <xref:EnvDTE.Project.CodeModel%2A>  
   
  <xref:EnvDTE.ProjectItem.FileCodeModel%2A>  
   
- Vous pouvez choisir d'implémenter uniquement `CodeModel` ou d'une interface `FileCodeModel` dans l'objet que vous obtenez de vos objets d' `Project` et d' <xref:EnvDTE.ProjectItem> .  Fournissez toutes les fonctionnalités de cette interface appropriée pour votre système de projet.  
+ Vous pouvez choisir de mettre en œuvre uniquement le `CodeModel` ou `FileCodeModel` interface dans l’objet que vous retournez à partir de votre `Project` et <xref:EnvDTE.ProjectItem> objets. Fournir toutes les fonctionnalités à partir de cette interface est appropriée pour votre système de projet.  
   
- Si vous souhaitez ajouter des fonctionnalités, telles que les méthodes ou les propriétés, qui sont pas disponibles d' `CodeModel` les interfaces et standard d' `FileCodeModel` , créez votre propre interface qui hérite du standard.  Assurez \-vous de le documenter avec votre système de projet afin que les utilisateurs finaux sauront à rechercher.  Vous retournez l'interface standard, mais l'utilisateur peut appeler la méthode d' `QueryInterface` ou caster à l'interface si elle est réputée pour exister.  
+ Si vous souhaitez ajouter des fonctionnalités, telles que les méthodes ou propriétés, qui ne sont pas disponibles à partir de la norme `CodeModel` et `FileCodeModel` interfaces, créez votre propre interface qui hérite de la norme. Veillez à documenter avec votre système de projet afin que les utilisateurs finaux seront sachent à rechercher. Retour de l’interface standard, mais l’utilisateur peut appeler le `QueryInterface` méthode ou cast à votre interface s’il existe.  
   
-## Voir aussi  
- [Vue d’ensemble du modèle Automation](../../extensibility/internals/automation-model-overview.md)
+## <a name="see-also"></a>Voir aussi  
+ [Modèle d’automatisation](../../extensibility/internals/automation-model-overview.md)

@@ -1,48 +1,50 @@
 ---
-title: "Utilisation des &#233;l&#233;ments du calendrier"
-ms.custom: ""
-ms.date: "02/02/2017"
-ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "office-development"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-dev_langs: 
-  - "VB"
-  - "CSharp"
-helpviewer_keywords: 
-  - "Outlook (développement Office dans Visual Studio), rendez-vous"
-  - "calendriers Outlook (développement Office dans Visual Studio)"
-  - "éléments de calendrier (développement Office dans Visual Studio)"
-  - "Outlook (développement Office dans Visual Studio), éléments de calendrier"
-  - "éléments de messagerie (développement Office dans Visual Studio), calendriers"
-  - "calendriers (développement Office dans Visual Studio), à propos des calendriers dans Outlook"
-  - "courrier électronique (développement Office dans Visual Studio), calendriers"
+title: "Utilisation des éléments de calendrier | Documents Microsoft"
+ms.custom: 
+ms.date: 02/02/2017
+ms.reviewer: 
+ms.suite: 
+ms.technology: office-development
+ms.tgt_pltfrm: 
+ms.topic: article
+dev_langs:
+- VB
+- CSharp
+helpviewer_keywords:
+- Outlook [Office development in Visual Studio], appointments
+- Outlook calendars [Office development in Visual Studio]
+- calendar items [Office development in Visual Studio]
+- Outlook [Office development in Visual Studio], calendar items
+- mail items [Office development in Visual Studio], calendars
+- calendars [Office development in Visual Studio], about calendars in Outlook
+- e-mail [Office development in Visual Studio], calendars
 ms.assetid: 8adf9a13-5bd9-4053-91fe-b8d5f8534e21
-caps.latest.revision: 8
-author: "kempb"
-ms.author: "kempb"
-manager: "ghogen"
-caps.handback.revision: 8
+caps.latest.revision: "8"
+author: gewarren
+ms.author: gewarren
+manager: ghogen
+ms.openlocfilehash: cc1cacd824e6dda08dbee555b80cdff9a1e0356d
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: fr-FR
+ms.lasthandoff: 10/31/2017
 ---
-# Utilisation des &#233;l&#233;ments du calendrier
+# <a name="working-with-calendar-items"></a>Utilisation des éléments du calendrier
   La classe <xref:Microsoft.Office.Interop.Outlook.AppointmentItem> contient les méthodes et les propriétés utilisées pour effectuer des tâches avec des éléments de calendrier.  
   
 |Tâche|Procédure|  
-|-----------|---------------|  
-|Créer un rendez\-vous et ajouter des destinataires.|[Comment : créer des rendez-vous par programmation](../vsto/how-to-programmatically-create-appointments.md)|  
-|Supprimer une instance d’un rendez\-vous périodique.|[Comment : supprimer des rendez-vous par programmation](../vsto/how-to-programmatically-delete-appointments.md)|  
-|Créer un dossier Calendrier et ajouter un élément de rendez\-vous.|[Comment : créer un calendrier personnalisé par programmation](../vsto/how-to-programmatically-create-a-custom-calendar.md)|  
-|Créer une demande de réunion et l’envoyer.|[Comment : créer une demande de réunion par programmation](../vsto/how-to-programmatically-create-a-meeting-request.md)|  
+|----------|---------------|  
+|Créer un rendez-vous et ajouter des destinataires.|[Guide pratique pour créer des rendez-vous par programmation](../vsto/how-to-programmatically-create-appointments.md)|  
+|Supprimer une instance d’un rendez-vous périodique.|[Guide pratique pour supprimer des rendez-vous par programmation](../vsto/how-to-programmatically-delete-appointments.md)|  
+|Créer un dossier Calendrier et ajouter un élément de rendez-vous.|[Guide pratique pour créer un calendrier personnalisé par programmation](../vsto/how-to-programmatically-create-a-custom-calendar.md)|  
+|Créer une demande de réunion et l’envoyer.|[Guide pratique pour créer une demande de réunion par programmation](../vsto/how-to-programmatically-create-a-meeting-request.md)|  
   
- Pour plus d’informations sur les tâches Outlook et le modèle objet Outlook, consultez [Vue d'ensemble du modèle d'objet Outlook](../vsto/outlook-object-model-overview.md).  
+ Pour plus d’informations sur les tâches Outlook et le modèle objet Outlook, consultez [Outlook Object Model Overview](../vsto/outlook-object-model-overview.md).  
   
-## Voir aussi  
- [Utilisation des éléments de contact](../vsto/working-with-contact-items.md)   
+## <a name="see-also"></a>Voir aussi  
+ [Utilisation des éléments de Contact](../vsto/working-with-contact-items.md)   
  [Utilisation des dossiers](../vsto/working-with-folders.md)   
- [Utilisation d'éléments de messagerie](../vsto/working-with-mail-items.md)   
+ [Utilisation des éléments de messagerie](../vsto/working-with-mail-items.md)   
  [Solutions Outlook](../vsto/outlook-solutions.md)  
   
   

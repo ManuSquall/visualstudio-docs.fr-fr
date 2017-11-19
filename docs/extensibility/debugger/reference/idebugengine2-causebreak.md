@@ -1,46 +1,29 @@
 ---
-title: IDebugEngine2::CauseBreak | Microsoft Docs
+title: IDebugEngine2::CauseBreak | Documents Microsoft
 ms.custom: 
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-sdk
+ms.technology: vs-ide-sdk
 ms.tgt_pltfrm: 
 ms.topic: article
-f1_keywords:
-- IDebugEngine2::CauseBreak
-helpviewer_keywords:
-- IDebugEngine2::CauseBreak
+f1_keywords: IDebugEngine2::CauseBreak
+helpviewer_keywords: IDebugEngine2::CauseBreak
 ms.assetid: 17fe4698-b04e-4798-8412-80e0da60c387
-caps.latest.revision: 8
+caps.latest.revision: "8"
+author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-translation.priority.mt:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
+ms.openlocfilehash: eeb8c262d6e1abc88e40f027d921ae2d4ae12cf2
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
 ms.translationtype: MT
-ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
-ms.openlocfilehash: 9f9026984b37d273b455229c09f52b4fd5fb8416
-ms.contentlocale: fr-fr
-ms.lasthandoff: 08/28/2017
-
+ms.contentlocale: fr-FR
+ms.lasthandoff: 10/31/2017
 ---
 # <a name="idebugengine2causebreak"></a>IDebugEngine2::CauseBreak
-Requests that all programs being debugged by this debug engine (DE) to stop execution the next time one of their threads attempts to run.  
+Les demandes que tous les programmes en cours de débogage par ce moteur de débogage (DE) pour arrêter l’exécution de la prochaine fois qu’un de leurs threads tente de s’exécuter.  
   
-## <a name="syntax"></a>Syntax  
+## <a name="syntax"></a>Syntaxe  
   
 ```cpp  
 HRESULT CauseBreak(   
@@ -52,12 +35,12 @@ HRESULT CauseBreak(
 int CauseBreak();  
 ```  
   
-## <a name="return-value"></a>Return Value  
- If successful, returns `S_OK`; otherwise, returns an error code.  
+## <a name="return-value"></a>Valeur de retour  
+ En cas de réussite, retourne `S_OK`; sinon, retourne un code d’erreur.  
   
-## <a name="remarks"></a>Remarks  
- This method is asynchronous: an [IDebugBreakEvent2](../../../extensibility/debugger/reference/idebugbreakevent2.md) event is sent when the program next attempts to execute after this method is called.  
+## <a name="remarks"></a>Remarques  
+ Cette méthode est asynchrone : un [IDebugBreakEvent2](../../../extensibility/debugger/reference/idebugbreakevent2.md) événement est envoyé lorsque le programme tente ensuite d’exécuter une fois que cette méthode est appelée.  
   
-## <a name="see-also"></a>See Also  
+## <a name="see-also"></a>Voir aussi  
  [CauseBreak](../../../extensibility/debugger/reference/idebugprogram2-causebreak.md)   
  [IDebugEngine2](../../../extensibility/debugger/reference/idebugengine2.md)

@@ -4,8 +4,7 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-sdk
+ms.technology: vs-ide-sdk
 ms.tgt_pltfrm: 
 ms.topic: article
 helpviewer_keywords:
@@ -13,29 +12,15 @@ helpviewer_keywords:
 - vsz files
 - wizards, files
 ms.assetid: 72e1d0f3-eef1-455e-b803-96827f030f50
-caps.latest.revision: 9
+caps.latest.revision: "9"
+author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-translation.priority.mt:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
-ms.translationtype: Machine Translation
-ms.sourcegitcommit: ca7c86466fa23fb21a932f26dc24e37c71cf29b4
-ms.openlocfilehash: 3b1ee351d5fbe66a5d74c07c0a7e5a60661d7fcb
-ms.contentlocale: fr-fr
-ms.lasthandoff: 04/05/2017
-
+ms.openlocfilehash: d7f4abe6240f799ed6db71fcf04a40774facaf6b
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: fr-FR
+ms.lasthandoff: 10/31/2017
 ---
 # <a name="wizard-vsz-file"></a>Assistant (. Fichier vsz)
 L’environnement de développement intégré (IDE) utilise des fichiers .vsz pour lancer les Assistants. Ces fichiers .vsz contiennent des informations que l’IDE utilise pour déterminer quel Assistant à appeler et les informations à passer à l’Assistant.  
@@ -61,7 +46,7 @@ Param="WIZARDUI = FALSE"
   
  Les paramètres permettent au fichier .vsz de passer des paramètres personnalisés supplémentaires à l’Assistant. Chaque valeur est passée comme un élément de chaîne dans un tableau de variantes de l’Assistant. Pour plus d’informations, consultez [personnalisé paramètres](../../extensibility/internals/custom-parameters.md). Pour plus d’informations sur l’utilisation d’un fichier .vsz dans le développement d’Assistants personnalisés, consultez [. Fichier vsz (contrôle de projet)](/cpp/ide/dot-vsz-file-project-control)  
   
- Pour ajouter un ID de paramètres régionaux par défaut dans votre fichier .vsz, spécifiez `FALLBACK_LCID`= xxxx, où xxxx est l’ID de paramètres régionaux, par exemple, 1033 pour l’anglais. Lorsque `FALLBACK_LCID` paramètre est défini, l’Assistant utilise l’ID de paramètres régionaux de base fournie si l’ID actuel est introuvable.  
+ Pour ajouter un ID de paramètres régionaux par défaut dans votre fichier .vsz, spécifiez `FALLBACK_LCID`= xxxx, où xxxx est l’ID de paramètres régionaux, par exemple, 1033 pour l’anglais. Lorsque `FALLBACK_LCID` est défini, l’Assistant utilise l’ID de paramètres régionaux de base fournie si l’ID actuel est introuvable.  
   
 ## <a name="see-also"></a>Voir aussi  
  [Paramètres personnalisés](../../extensibility/internals/custom-parameters.md)   

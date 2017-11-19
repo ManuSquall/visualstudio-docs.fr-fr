@@ -1,44 +1,47 @@
 ---
-title: "IEnumDebugApplicationNodes::Reset | Microsoft Docs"
-ms.custom: ""
-ms.date: "01/18/2017"
-ms.prod: "windows-script-interfaces"
-ms.reviewer: ""
-ms.suite: ""
-ms.tgt_pltfrm: ""
-ms.topic: "reference"
+title: IEnumDebugApplicationNodes::Reset | Documents Microsoft
+ms.custom: 
+ms.date: 01/18/2017
+ms.prod: windows-script-interfaces
+ms.reviewer: 
+ms.suite: 
+ms.tgt_pltfrm: 
+ms.topic: reference
 apiname: IEnumDebugApplicationNodes.Reset
 apilocation: pdm.dll
-helpviewer_keywords: 
-  - "IEnumDebugApplicationNodes::Reset"
+helpviewer_keywords: IEnumDebugApplicationNodes::Reset
 ms.assetid: 56ecdafe-ff11-461a-92e1-93254a49f1a1
-caps.latest.revision: 8
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 8
+caps.latest.revision: "8"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: 9b237117a942beb3564d8b5012231aca1df1c4ad
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.translationtype: MT
+ms.contentlocale: fr-FR
+ms.lasthandoff: 10/27/2017
 ---
-# IEnumDebugApplicationNodes::Reset
-Réinitialise une séquence d'énumération.  
+# <a name="ienumdebugapplicationnodesreset"></a>IEnumDebugApplicationNodes::Reset
+Réinitialise la séquence d’énumération au début.  
   
-## Syntaxe  
+## <a name="syntax"></a>Syntaxe  
   
 ```  
 HRESULT Reset();  
 ```  
   
-#### Paramètres  
- Cette méthode n'accepte pas de paramètres.  
+#### <a name="parameters"></a>Paramètres  
+ Cette méthode ne prend aucun paramètre.  
   
-## Valeur de retour  
- La méthode retourne `HRESULT`.  Les valeurs possibles incluent, mais ne sont pas limitées à, celles dans le tableau suivant.  
+## <a name="return-value"></a>Valeur de retour  
+ La méthode retourne `HRESULT`. Les valeurs possibles sont notamment celles figurant dans le tableau suivant.  
   
 |Valeur|Description|  
-|------------|-----------------|  
+|-----------|-----------------|  
 |`S_OK`|La méthode a réussi.|  
   
-## Notes  
- Cette méthode réinitialise une séquence d'énumération au début.  
+## <a name="remarks"></a>Remarques  
+ Cette méthode réinitialise la séquence d’énumération au début.  
   
-## Voir aussi  
- [IEnumDebugApplicationNodes, interface](../../winscript/reference/ienumdebugapplicationnodes-interface.md)
+## <a name="see-also"></a>Voir aussi  
+ [Interface IEnumDebugApplicationNodes](../../winscript/reference/ienumdebugapplicationnodes-interface.md)

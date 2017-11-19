@@ -1,49 +1,50 @@
 ---
-title: "Table de commandes de Visual Studio (. Fichiers VSCT) | Microsoft Docs"
-ms.custom: ""
-ms.date: "12/15/2016"
-ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-helpviewer_keywords: 
-  - "Les fichiers VSCT, vue d'ensemble"
-  - "Fichiers de Visual Studio commande table configuration (VSCT), vue d'ensemble"
+title: Tableau de commandes de Visual Studio (. Fichiers VSCT) | Documents Microsoft
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+helpviewer_keywords:
+- VSCT files, overview
+- Visual Studio command table configuration files (VSCT), overview
 ms.assetid: 1313adb4-add4-4e74-90e2-f4be522f5259
-caps.latest.revision: 22
-caps.handback.revision: 22
-ms.author: "gregvanl"
-manager: "ghogen"
+caps.latest.revision: "22"
+author: gregvanl
+ms.author: gregvanl
+manager: ghogen
+ms.openlocfilehash: ace754b9d6ddb220b3647b281011d3763810987c
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: fr-FR
+ms.lasthandoff: 10/31/2017
 ---
-# Table de commandes de Visual Studio (. Fichiers VSCT)
-[!INCLUDE[vs2017banner](../../code-quality/includes/vs2017banner.md)]
-
-Un fichier de configuration de table de commande est un fichier texte qui décrit l'ensemble des commandes qui contient un VSPackage. Le [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] commande compilateur de table \(VSCT\) compile des fichiers de configuration XML \(fichiers .vsct\) en fichiers de sortie \(.cto\) de table commande binaire. Les fichiers résultants .cto sont les mêmes que ceux qui sont créés à l'aide du compilateur de table \(CTC\) commande pour compiler des fichiers de configuration .ctc. Toutefois, les fichiers .vsct basé sur XML présente certains avantages, notamment un éditeur XML et le XML IntelliSense.  
+# <a name="visual-studio-command-table-vsct-files"></a>Tableau de commandes de Visual Studio (. Fichiers VSCT)
+Un fichier de configuration de table de commande est un fichier texte qui décrit l’ensemble des commandes contenant un VSPackage. Le [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] commande compilateur de table (VSTC) compile des fichiers de configuration XML (fichiers .vsct) en fichiers de sortie (.cto) de table de commande binary. Les fichiers .cto résultants sont les mêmes que celles qui sont créées en utilisant le compilateur de table (CTC) de commande pour compiler des fichiers de configuration .ctc. Toutefois, les fichiers .vsct de basé sur XML a certains avantages, notamment un éditeur XML et le XML IntelliSense.  
   
- Pour en savoir plus sur la syntaxe et la sémantique des fichiers .vsct, consultez [Conception de Table de commande XML \(. Fichiers VSCT\)](../../extensibility/internals/designing-xml-command-table-dot-vsct-files.md)  
+ Pour en savoir plus sur la syntaxe et la sémantique des fichiers .vsct, consultez [conception d’une Table de commande XML (. Fichiers VSCT)](../../extensibility/internals/designing-xml-command-table-dot-vsct-files.md)  
   
-## Dans cette section  
- [Conception de Table de commande XML \(. Fichiers VSCT\)](../../extensibility/internals/designing-xml-command-table-dot-vsct-files.md)  
+## <a name="in-this-section"></a>Dans cette section  
+ [Conception de fichiers XML Command Table (.Vsct)](../../extensibility/internals/designing-xml-command-table-dot-vsct-files.md)  
  Explique comment concevoir des fichiers .vsct.  
   
- [Comment : créer un. Fichier VSCT](../../extensibility/internals/how-to-create-a-dot-vsct-file.md)  
- Compare les méthodes de création d'un fichier .vsct. Décrit le processus de création manuelle d'un nouveau fichier .vsct.  
+ [Guide pratique pour créer un fichier .Vsct](../../extensibility/internals/how-to-create-a-dot-vsct-file.md)  
+ Compare les méthodes de création d’un fichier .vsct. Décrit le processus de création manuelle d’un nouveau fichier .vsct.  
   
-## Rubriques connexes  
- [Référence de schéma XML de VSCT](../../extensibility/vsct-xml-schema-reference.md)  
+## <a name="related-sections"></a>Rubriques connexes  
+ [Schéma de référence XML VSCT](../../extensibility/vsct-xml-schema-reference.md)  
  Fournit des détails sur chaque section du fichier de configuration XML de table de commande.  
   
- [Command Table Configuration \(.Ctc\) Files](http://msdn.microsoft.com/fr-fr/3413dda1-f372-4669-bcf0-c64d3463842c)  
- Présente une vue d'ensemble du format de fichier .ctc déconseillées.  
+ [Configuration de la Table de commandes (. Fichiers CTC)](http://msdn.microsoft.com/en-us/3413dda1-f372-4669-bcf0-c64d3463842c)  
+ Présente une vue d’ensemble du format de fichier .ctc déconseillées.  
   
- [Comment ajouter des éléments d'Interface utilisateur dans les packages VS](../../extensibility/internals/how-vspackages-add-user-interface-elements.md)  
+ [Comment VSPackages ajoute des éléments de l’interface utilisateur](../../extensibility/internals/how-vspackages-add-user-interface-elements.md)  
  Décrit la spécification de format de table de commande.  
   
- [Ressources dans les packages VS](../../extensibility/internals/resources-in-vspackages.md)  
- Décrit comment utiliser les ressources managées et non managées dans les VSPackages gérés.  
+ [Ressources dans VSPackages](../../extensibility/internals/resources-in-vspackages.md)  
+ Décrit comment utiliser les ressources non managées et non managées dans les VSPackages gérés.  
   
- [Commandes, Menus et barres d'outils](../../extensibility/internals/commands-menus-and-toolbars.md)  
- Explique comment créer une interface utilisateur qui comprend les menus, barres d'outils et les zones de liste déroulante de commande.
+ [Commandes, menus et barres d’outils](../../extensibility/internals/commands-menus-and-toolbars.md)  
+ Explique comment créer une interface utilisateur comprenant des menus, des barres d’outils et des listes déroulantes de commandes.

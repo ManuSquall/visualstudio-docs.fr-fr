@@ -1,69 +1,68 @@
 ---
-title: "Comment&#160;: ajouter et supprimer des fonctionnalit&#233;s et des &#233;l&#233;ments dans un package &#224; l&#39;aide du Concepteur de packages | Microsoft Docs"
-ms.custom: ""
-ms.date: "02/02/2017"
-ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "office-development"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "VS.SharePointTools.RAD.PackageDesignerDesign"
-dev_langs: 
-  - "VB"
-  - "CSharp"
-  - "VB"
-  - "CSharp"
-helpviewer_keywords: 
-  - "développement SharePoint dans Visual Studio, packages"
+title: "Comment : ajouter et supprimer des fonctionnalités et des éléments dans un Package à l’aide du Concepteur de packages | Documents Microsoft"
+ms.custom: 
+ms.date: 02/02/2017
+ms.reviewer: 
+ms.suite: 
+ms.technology: office-development
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords: VS.SharePointTools.RAD.PackageDesignerDesign
+dev_langs:
+- VB
+- CSharp
+- VB
+- CSharp
+helpviewer_keywords: SharePoint development in Visual Studio, packages
 ms.assetid: 7dfa2c5d-3ac7-4573-abac-12a5e16efd1d
-caps.latest.revision: 22
-author: "kempb"
-ms.author: "kempb"
-manager: "ghogen"
-caps.handback.revision: 21
+caps.latest.revision: "22"
+author: gewarren
+ms.author: gewarren
+manager: ghogen
+ms.openlocfilehash: 9da26de3b5a3a71927e7518ff126a7186c01d7e5
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: fr-FR
+ms.lasthandoff: 10/31/2017
 ---
-# Comment&#160;: ajouter et supprimer des fonctionnalit&#233;s et des &#233;l&#233;ments dans un package &#224; l&#39;aide du Concepteur de packages
-  Lorsque vous créez une solution SharePoint, Visual Studio ajoute les fonctionnalités SharePoint par défaut au package dans la solution.  Avant de procéder au déploiement final, vous êtes libre d'ajouter et de supprimer des éléments de projet SharePoint et d'apporter des modifications au package SharePoint.  
+# <a name="how-to-add-and-remove-features-and-items-to-a-package-by-using-the-package-designer"></a>Comment : ajouter et supprimer des fonctionnalités et des éléments dans un package à l’aide du Concepteur de packages
+  Lorsque vous créez une solution SharePoint, Visual Studio ajoute les fonctionnalités de SharePoint par défaut pour le package dans la solution. Avant son déploiement final, vous pouvez ajouter et supprimer des éléments de projet SharePoint et des fonctionnalités pour modifier le package SharePoint.  
   
- Vous pouvez également vous servir de l'Explorateur de package pour ajouter et supprimer des éléments de projet SharePoint.  Il est possible, en outre, d'afficher et de modifier la hiérarchie des éléments de projet et des fonctionnalités SharePoint intégrés au package \(.wsp\).  Pour plus d'informations, consultez [Comment : ajouter et supprimer des fonctionnalités et des éléments dans un package à l'aide de l'Explorateur de package](../sharepoint/how-to-add-and-remove-features-and-items-to-a-package-by-using-the-packaging-explorer.md).  
+ Vous pouvez également utiliser l’Explorateur de package pour ajouter et supprimer des éléments de projet SharePoint. Vous pouvez également afficher et modifier la hiérarchie des éléments de projet SharePoint et des fonctionnalités qui sont placées dans le package (.wsp). Pour plus d’informations, consultez [Comment : ajouter et supprimer des fonctionnalités et des éléments dans un Package à l’aide de l’Explorateur de package](../sharepoint/how-to-add-and-remove-features-and-items-to-a-package-by-using-the-packaging-explorer.md).  
   
-## Ajout de fonctionnalités à un package SharePoint  
- Profitez du Concepteur de packages pour ajouter des fonctionnalités à un package SharePoint.  
+## <a name="adding-features-to-a-sharepoint-package"></a>Ajout de fonctionnalités à un Package SharePoint  
+ Vous pouvez utiliser le Concepteur de packages pour ajouter des fonctionnalités à un package SharePoint.  
   
-#### Pour ajouter des fonctionnalités SharePoint à l'aide du Concepteur de packages  
+#### <a name="to-add-sharepoint-features-with-the-package-designer"></a>Pour ajouter des fonctionnalités SharePoint avec le Concepteur de packages  
   
-1.  Ouvrez le **Concepteur de packages**.  
+1.  Ouvrez le **concepteur du Package**.  
   
-     Pour plus d'informations, consultez [Comment : personnaliser un package de solution SharePoint](../sharepoint/how-to-customize-a-sharepoint-solution-package.md).  
+     Pour plus d’informations, consultez [Comment : personnaliser un Package de Solution SharePoint](../sharepoint/how-to-customize-a-sharepoint-solution-package.md).  
   
-2.  Ajoutez une ou plusieurs fonctionnalités SharePoint en effectuant une ou plusieurs étapes suivantes :  
+2.  Ajoutez une ou plusieurs fonctionnalités SharePoint en effectuant une ou plusieurs des étapes suivantes :  
   
-    1.  Double\-cliquez sur chaque élément de la liste **Éléments de la solution** à ajouter.  
+    1.  Double-cliquez sur chaque élément dans le **éléments dans la Solution** liste que vous souhaitez ajouter.  
   
-    2.  Choisissez un élément à ajouter, puis cliquez sur le bouton **Ajouter** \(\>\).  
+    2.  Choisir un élément que vous souhaitez ajouter, puis choisissez le **ajouter** bouton (>).  
   
-    3.  Cliquez sur le bouton **Ajouter tout** \(\>\>\) pour ajouter tous les éléments.  
+    3.  Choisissez le **ajouter tout** bouton (>>) pour ajouter tous les éléments à la fois.  
   
-     Il suffit, par exemple, de double\-cliquer sur un élément dans la liste **Éléments dans la solution** pour l'ajouter dans la liste **Éléments dans le package**.  
+     Par exemple, vous pouvez double-cliquer sur un élément dans le **éléments dans la Solution** liste pour l’ajouter à la **éléments dans le Package** liste.  
   
-     Les éléments de projet et les fonctionnalités SharePoint s'affichent dans la liste **Éléments dans le package**.  
+     Les éléments de projet SharePoint et les fonctionnalités apparaissent dans le **éléments dans le Package** liste.  
   
-## Suppression de fonctionnalités d'un package SharePoint  
- Vous pouvez également vous servir du Concepteur de packages pour retirer des fonctionnalités d'un package SharePoint.  
+## <a name="removing-features-from-a-sharepoint-package"></a>Suppression de fonctionnalités d’un Package SharePoint  
+ Vous pouvez utiliser le Concepteur de packages pour supprimer des fonctionnalités à un package SharePoint.  
   
-#### Pour supprimer des fonctionnalités SharePoint à l'aide du Concepteur de packages  
+#### <a name="to-remove-sharepoint-features-with-the-package-designer"></a>Pour supprimer des fonctionnalités SharePoint avec le Concepteur de packages  
   
-1.  Dans la liste **Éléments du package**, sélectionnez l'élément que vous souhaitez supprimer, puis cliquez sur le bouton **Supprimer** \(\<\), ou cliquez sur le bouton **Supprimer tout** \(\<\<\) pour supprimer tous les éléments.  
+1.  Dans le **éléments dans le Package** , sélectionnez un élément que vous souhaitez supprimer, puis choisissez le **supprimer** (<) ou pour choisir le **supprimer tous les** bouton (<<) à supprimer tous les éléments.  
   
-     Les éléments SharePoint s'affichent dans la liste **Éléments dans la solution**.  
+     Les éléments SharePoint s’affichent dans le **éléments dans la Solution** liste.  
   
-## Voir aussi  
- [Création de packages de solution SharePoint](../sharepoint/creating-sharepoint-solution-packages.md)   
- [Comment : personnaliser un package de solution SharePoint](../sharepoint/how-to-customize-a-sharepoint-solution-package.md)   
- [NOT IN BUILD: How to: Modify Package Properties](http://msdn.microsoft.com/fr-fr/372089ce-cda9-4c21-beb2-f964990b96ee)   
- [How to: Create a Package](http://msdn.microsoft.com/fr-fr/b24be45c-e91d-49bb-afb0-7b265404214b)  
+## <a name="see-also"></a>Voir aussi  
+ [Création de Packages de Solution SharePoint](../sharepoint/creating-sharepoint-solution-packages.md)   
+ [Guide pratique pour personnaliser un package de solution SharePoint](../sharepoint/how-to-customize-a-sharepoint-solution-package.md)  
+ [Comment : créer un Package](http://msdn.microsoft.com/en-us/b24be45c-e91d-49bb-afb0-7b265404214b)  
   
   

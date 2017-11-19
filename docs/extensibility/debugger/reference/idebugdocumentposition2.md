@@ -1,58 +1,58 @@
 ---
-title: "IDebugDocumentPosition2 | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "IDebugDocumentPosition2"
-helpviewer_keywords: 
-  - "Interface de IDebugDocumentPosition2"
+title: IDebugDocumentPosition2 | Documents Microsoft
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords: IDebugDocumentPosition2
+helpviewer_keywords: IDebugDocumentPosition2 interface
 ms.assetid: 0e838ced-12bb-4efc-b811-2b7c034b77b0
-caps.latest.revision: 13
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 13
+caps.latest.revision: "13"
+author: gregvanl
+ms.author: gregvanl
+manager: ghogen
+ms.openlocfilehash: c73b7ebb1611b6688dbbe5703d5f84ac4c05b3b6
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: fr-FR
+ms.lasthandoff: 10/31/2017
 ---
-# IDebugDocumentPosition2
-[!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]
-
-cette interface représente une position abstraite dans un fichier source.  
+# <a name="idebugdocumentposition2"></a>IDebugDocumentPosition2
+Cette interface représente une position abstraite dans un fichier source.  
   
-## Syntaxe  
+## <a name="syntax"></a>Syntaxe  
   
 ```  
 IDebugDocumentPosition2 : IUnknown  
 ```  
   
-## Remarques à l'intention des implémenteurs  
- Visual Studio implémente généralement cette interface.  Un moteur \(DE\) de débogage implémente également cette interface s'il doit fournir son propre code source \(comme lorsque le De implémente l'interface d' [IDebugDocument2](../../../extensibility/debugger/reference/idebugdocument2.md) \).  
+## <a name="notes-for-implementers"></a>Notes pour les implémenteurs  
+ En général, Visual Studio implémente cette interface. Un moteur de débogage (DE) est également implémenter cette interface si elle doit fournir son propre code source (comme lorsque le D’implémente la [IDebugDocument2](../../../extensibility/debugger/reference/idebugdocument2.md) interface).  
   
-## Remarques pour les appelants  
- Cette interface est passée comme argument à [EnumCodeContexts](../../../extensibility/debugger/reference/idebugprogram2-enumcodecontexts.md).  Il est également fourni dans le cadre d'une union de [BP\_LOCATION](../../../extensibility/debugger/reference/bp-location.md) plus précisément, une structure de [BP\_LOCATION\_CODE\_FILE\_LINE](../../../extensibility/debugger/reference/bp-location-code-file-line.md) \) qui est ensuite une partie de la structure de [BP\_REQUEST\_INFO](../../../extensibility/debugger/reference/bp-request-info.md) , qui est utilisée en créant un point d'arrêt en attente.  
+## <a name="notes-for-callers"></a>Remarques pour les appelants  
+ Cette interface est passée comme argument à [EnumCodeContexts](../../../extensibility/debugger/reference/idebugprogram2-enumcodecontexts.md). Il est également fourni dans le cadre d’un [BP_LOCATION](../../../extensibility/debugger/reference/bp-location.md) union (plus précisément, un [BP_LOCATION_CODE_FILE_LINE](../../../extensibility/debugger/reference/bp-location-code-file-line.md) structure) qui est à son tour partie du [BP_REQUEST_INFO](../../../extensibility/debugger/reference/bp-request-info.md) structure, qui est utilisée pour la création d’un point d’arrêt en attente.  
   
-## méthodes en commande de Vtable  
- Le tableau suivant répertorie les méthodes d' `IDebugDocumentPosition2`.  
+## <a name="methods-in-vtable-order"></a>Méthodes dans l'ordre Vtable  
+ Le tableau suivant présente les méthodes de `IDebugDocumentPosition2`.  
   
 |Méthode|Description|  
-|-------------|-----------------|  
-|[GetFileName](../../../extensibility/debugger/reference/idebugdocumentposition2-getfilename.md)|Obtient le nom du fichier source contenant la position de document.|  
-|[GetDocument](../../../extensibility/debugger/reference/idebugdocumentposition2-getdocument.md)|obtient le document contenant.|  
-|[IsPositionInDocument](../../../extensibility/debugger/reference/idebugdocumentposition2-ispositionindocument.md)|détermine si cette position est contenue dans le document donné.|  
-|[GetRange](../../../extensibility/debugger/reference/idebugdocumentposition2-getrange.md)|obtient la plage pour cette position de document.|  
+|------------|-----------------|  
+|[GetFileName](../../../extensibility/debugger/reference/idebugdocumentposition2-getfilename.md)|Obtient le nom de fichier du fichier source qui contient la position de ce document.|  
+|[GetDocument](../../../extensibility/debugger/reference/idebugdocumentposition2-getdocument.md)|Obtient le document conteneur.|  
+|[IsPositionInDocument](../../../extensibility/debugger/reference/idebugdocumentposition2-ispositionindocument.md)|Détermine si cette position est contenue dans le document donné.|  
+|[GetRange](../../../extensibility/debugger/reference/idebugdocumentposition2-getrange.md)|Obtient la plage pour la position de ce document.|  
   
-## Configuration requise  
- en\-tête : msdbg.h  
+## <a name="requirements"></a>Spécifications  
+ En-tête : msdbg.h  
   
- l'espace de noms : Microsoft.VisualStudio.Debugger.Interop  
+ Namespace : Microsoft.VisualStudio.Debugger.Interop  
   
- Assembly : Microsoft.VisualStudio.Debugger.Interop.dll  
+ Assembly : Microsoft.VisualStudio.Debugger.Interop.dll  
   
-## Voir aussi  
+## <a name="see-also"></a>Voir aussi  
  [EnumCodeContexts](../../../extensibility/debugger/reference/idebugprogram2-enumcodecontexts.md)   
  [IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md)   
- [BP\_LOCATION\_CODE\_FILE\_LINE](../../../extensibility/debugger/reference/bp-location-code-file-line.md)
+ [BP_LOCATION_CODE_FILE_LINE](../../../extensibility/debugger/reference/bp-location-code-file-line.md)

@@ -1,123 +1,125 @@
 ---
-title: "Comment&#160;: marquer des contr&#244;les comme &#233;tant des contr&#244;les s&#233;curis&#233;s"
-ms.custom: ""
-ms.date: "02/02/2017"
-ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "office-development"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-dev_langs: 
-  - "VB"
-  - "CSharp"
-  - "VB"
-  - "CSharp"
-helpviewer_keywords: 
-  - "contrôles sécurisés (développement SharePoint dans Visual Studio)"
-  - "développement SharePoint dans Visual Studio, outils d'empaquetage avancés"
-  - "développement SharePoint dans Visual Studio, contrôles sécurisés"
+title: "Comment : marquer des contrôles comme des contrôles sécurisés | Documents Microsoft"
+ms.custom: 
+ms.date: 02/02/2017
+ms.reviewer: 
+ms.suite: 
+ms.technology: office-development
+ms.tgt_pltfrm: 
+ms.topic: article
+dev_langs:
+- VB
+- CSharp
+- VB
+- CSharp
+helpviewer_keywords:
+- SharePoint development in Visual Studio, safe controls
+- SharePoint development in Visual Studio, advanced packaging tools
+- safe controls [SharePoint development in Visual Studio]
 ms.assetid: 813727d5-6750-407c-a23e-c38dd611e78c
-caps.latest.revision: 16
-author: "kempb"
-ms.author: "kempb"
-manager: "ghogen"
-caps.handback.revision: 15
+caps.latest.revision: "16"
+author: gewarren
+ms.author: gewarren
+manager: ghogen
+ms.openlocfilehash: e9f12b8944d9174ca885e90b92c8e3a0d0b83215
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: fr-FR
+ms.lasthandoff: 10/31/2017
 ---
-# Comment&#160;: marquer des contr&#244;les comme &#233;tant des contr&#244;les s&#233;curis&#233;s
-  Pour des raisons de sécurité, SharePoint différencie les contrôles Web protégés contre l'injection de script des contrôles Web qui ne le sont pas.  Les contrôles protégés, ou *contrôles sécurisés*, sont accessibles par les utilisateurs non fiables.  Vous pouvez marquer des contrôles comme sécurisés dans la propriété Entrées de contrôle sécurisé d'un élément de projet SharePoint ou dans le **Concepteur de packages** lorsque vous ajoutez un assembly au package.  Pour plus d'informations, consultez  
+# <a name="how-to-mark-controls-as-safe-controls"></a>Comment : marquer des contrôles comme étant des contrôles sécurisés
+  Pour la sécurité, SharePoint différencie les contrôles Web qui sont protégés contre l’injection de script et des contrôles Web qui ne sont pas. Protégé par des contrôles, ou *contrôles sécurisés*, soit accessible aux utilisateurs non autorisés. Vous pouvez marquer des contrôles comme sécurisés dans la propriété entrées de contrôle sécurisé d’un élément de projet SharePoint ou dans le **Concepteur de packages** lorsque vous ajoutez un assembly au package. Pour plus d'informations, consultez  
   
- [modification des paramètres du fichier Web.config](http://go.microsoft.com/fwlink/?LinkId=178965) et [Enregistrement d'un assembly du composant WebPart en tant que contrôle sécurisé](http://go.microsoft.com/fwlink/?LinkId=171013)  
+ [Modification des paramètres du fichier Web.config](http://go.microsoft.com/fwlink/?LinkId=178965) et [l’inscription d’un Assembly de composant WebPart en tant que](http://go.microsoft.com/fwlink/?LinkId=171013).  
   
 > [!IMPORTANT]  
->  Ces procédures sont fournies à des fins d'illustration.  Ne marquez les contrôles comme sécurisés que si vous êtes certain qu'ils le sont.  
+>  Ces procédures sont à titre d’illustration. Marquer des contrôles sécurisés uniquement si vous êtes certain qu’ils sont sécurisés.  
   
-## Marquage de contrôles comme sécurisés dans la propriété Entrées de contrôle sécurisé  
+## <a name="marking-safe-controls-in-the-safe-control-entries-property"></a>Le marquage des contrôles sécurisés dans la propriété entrées de contrôle sécurisé  
   
-#### Pour marquer des contrôles comme sécurisés ou potentiellement dangereux dans la propriété Entrées de contrôle sécurisé  
+#### <a name="to-mark-controls-as-safe-or-unsafe-in-the-safe-control-entries-property"></a>Pour marquer des contrôles comme sécurisés ou potentiellement dangereux dans la propriété entrées de contrôle sécurisé  
   
-1.  Créez une solution SharePoint avec un projet Composant Visual Web Part.  
+1.  Créez une solution SharePoint avec un projet de composant Visual Web Part.  
   
-2.  Ajoutez deux contrôles au WebPart : une zone de texte et un bouton.  Conservez les valeurs par défaut des noms, à savoir TextBox1 et Button1, respectivement.  
+2.  Ajoutez deux contrôles au composant WebPart : une zone de texte et un bouton. Conservez les noms de leurs valeurs par défaut, TextBox1 et Button1, respectivement.  
   
-3.  Ajoutez deux entrées à la propriété **Entrées de contrôle sécurisé** du composant WebPart.  Pour ce faire, cliquez sur le bouton de sélection \(![Bouton de sélection du concepteur ASP.NET mobile](~/sharepoint/media/mwellipsis.gif "Bouton de sélection du concepteur ASP.NET mobile")\) en regard de la propriété **Entrées de contrôle sécurisé** dans la fenêtre **Propriétés**.  
+3.  Ajouter deux entrées pour le WebPart **entrées de contrôle sécurisé** propriété. Pour ce faire, choisissez le bouton de sélection (![ellipse de concepteur ASP.NET Mobile](../sharepoint/media/mwellipsis.gif "ellipse de concepteur ASP.NET Mobile")) situé en regard du **entrées de contrôle sécurisé** propriété dans le  **Propriétés** fenêtre.  
   
-     La boîte de dialogue **Entrées de contrôle sécurisé** apparaît.  
+     Le **entrées de contrôle sécurisé** boîte de dialogue s’affiche.  
   
-4.  Dans la boîte de dialogue **Entrées de contrôle sécurisé**, cliquez deux fois sur le bouton **Ajouter** pour ajouter deux entrées de contrôle sécurisé au volet **Membres** : une pour le bouton et l'autre pour la zone de texte.  
+4.  Dans le **entrées de contrôle sécurisé** boîte de dialogue, choisissez le **ajouter** bouton à deux reprises pour ajouter deux entrées de contrôle sécurisé à le **membres** volet : un pour le bouton et un pour la zone de texte.  
   
-5.  Cliquez sur la première entrée de contrôle sécurisé et remplacez la valeur de sa propriété **Sécurisé** par **False**, celle de sa propriété **Nom de type** par **Button1** et celle de sa propriété **Protégé contre les scripts** par **False**.  
+5.  Choisissez la première entrée de contrôle sécurisé, puis remplacez la valeur de sa **Safe** propriété **False**, ses **nom de Type** propriété **Button1**et son **protégé contre les scripts** propriété **False**.  
   
-     Cette étape identifie le contrôle bouton comme un contrôle potentiellement dangereux.  
+     Cette étape identifie le contrôle de bouton comme un contrôle non fiable.  
   
-6.  Cliquez sur la deuxième entrée de contrôle sécurisé dans la liste.  Conservez les valeurs de ses propriétés **Sécurisé** la valeur **True**. Affectez à sa propriété **Nom de type** la valeur**TextBox1** et à sa propriété **Protégé contre les scripts** la valeur **True**.  
+6.  Dans la liste, choisissez la deuxième entrée de contrôle sécurisé. Laissez la valeur de son **Safe** propriété en tant que **True** et définir son **nom de Type** propriété **TextBox1** et son **-Safe Par rapport à Script** propriété **True**.  
   
-     Le contrôle de zone de texte est maintenant marqué comme un contrôle qui est sécurisé contre l'injection de script.  
+     Le contrôle de zone de texte est désormais marqué comme un contrôle qui est protégé contre l’injection de script.  
   
-7.  Sélectionnez le bouton **OK** pour fermer la boîte de dialogue.  
+7.  Choisissez le bouton **OK** pour fermer la boîte de dialogue.  
   
-## Marquage de contrôles comme sécurisés dans le Concepteur de packages  
+## <a name="marking-safe-controls-in-the-package-designer"></a>Le marquage des contrôles sécurisés dans le Concepteur de packages  
   
-#### Pour marquer des contrôles comme sécurisés ou potentiellement dangereux dans le Concepteur de packages  
+#### <a name="to-mark-controls-as-safe-or-unsafe-in-the-package-designer"></a>Pour marquer des contrôles comme safe ou unsafe dans le Concepteur de packages  
   
-1.  Créez une solution SharePoint avec un projet Composant Visual Web Part.  
+1.  Créez une solution SharePoint avec un projet de composant Visual Web Part.  
   
-2.  Ajoutez deux contrôles au WebPart : une zone de texte et un bouton.  Conservez les valeurs par défaut des noms, à savoir TextBox1 et Button1, respectivement.  
+2.  Ajoutez deux contrôles au composant WebPart : une zone de texte et un bouton. Conservez les noms de leurs valeurs par défaut, TextBox1 et Button1, respectivement.  
   
-     Prenez note de l'espace de noms du contrôle, car il est utilisé ultérieurement.  
+     Prenez note de l’espace de noms du contrôle, car elle est utilisée ultérieurement.  
   
-3.  Dans la barre de menu, choisissez **Générer**, **Générer la solution** pour générer le projet.  
+3.  Dans la barre de menus, choisissez **générer**, **générer la Solution** pour générer le projet.  
   
-4.  Créez une autre solution SharePoint.  
+4.  Créer une autre solution de SharePoint.  
   
-5.  Dans l'**Explorateur de solutions**, ouvrez le menu contextuel du fichier Package.Package, puis choisissez **Ouvrir** pour ouvrir le **Concepteur de packages**.  
+5.  Dans **l’Explorateur de solutions**, ouvrez le menu contextuel pour le fichier de package, puis choisissez **ouvrir** pour ouvrir le **Concepteur de packages**.  
   
-6.  Dans le **Concepteur de packages**, cliquez sur l'onglet **Avancé**.  
+6.  Dans le **Concepteur de packages**, choisissez le **avancé** onglet.  
   
-7.  Sous **Assemblys supplémentaires**, cliquez sur le bouton **Ajouter** puis sélectionnez **Ajouter un assembly existant** dans la liste.  
+7.  Sous **des assemblys supplémentaires**, choisissez le **ajouter** bouton, puis choisissez **ajouter un Assembly existant** dans la liste.  
   
-8.  Dans la boîte de dialogue **Ajouter un assembly existant**, cliquez sur le bouton de sélection \(![Bouton de sélection du concepteur ASP.NET mobile](~/sharepoint/media/mwellipsis.gif "Bouton de sélection du concepteur ASP.NET mobile")\) en regard de **Chemin d'accès source**.  
+8.  Dans le **ajouter un Assembly existant** boîte de dialogue, choisissez le bouton de sélection (![ellipse de concepteur ASP.NET Mobile](../sharepoint/media/mwellipsis.gif "ellipse de concepteur ASP.NET Mobile")) situé en regard  **Chemin d’accès source**.  
   
-9. Choisissez l'assembly de la solution SharePoint que vous avez créée à l'étape 1, puis cliquez sur le bouton **Ouvrir**.  
+9. Choisissez l’assembly à partir de la solution SharePoint que vous avez créé à l’étape 1, puis le **ouvrir** bouton.  
   
-10. Dans cet exemple, conservez la valeur GlobalAssemblyCache pour l'option **Cible de déploiement**.  
+10. Pour cet exemple, laissez le **cible de déploiement** option GlobalAssemblyCache.  
   
-     Cette étape provoque le déploiement de l'assembly dans le Global Assembly Cache \(GAC\) du système.  Si vous souhaitez que l'assembly se déploie dans le dossier \(Bin\) de l'application Web, sélectionnez à la place cette option.  Pour plus d'informations, consultez [Composants webpart de déploiement dans la base de SharePoint](http://go.microsoft.com/fwlink/?LinkId=177509).  
+     Cette étape, l’assembly à déployer dans le Global Assembly Cache (GAC) du système. Si vous souhaitez que l’assembly à déployer dans le dossier d’application (emplacement) de Web, sélectionnez cette option à la place. Pour plus d’informations, consultez [déploiement de composants WebPart dans SharePoint Foundation](http://go.microsoft.com/fwlink/?LinkId=177509).  
   
-11. Dans la zone **Contrôle sécurisés**, cliquez sur le bouton **Cliquez ici pour ajouter un nouvel élément**.  
+11. Dans le **contrôles sécurisés** , choisissez le **cliquez ici pour ajouter un nouvel élément** bouton.  
   
-12. Entrez les valeurs pour les propriétés à partir du tableau suivant.  
+12. Entrez les valeurs pour les propriétés dans le tableau suivant.  
   
     |Nom de la propriété|Valeur|  
-    |-------------------------|------------|  
-    |Espace de noms|Espace de noms qualifié complet pour le contrôle, tel que **BdcModelProject1.VisualWebPart1**.|  
+    |-------------------|-----------|  
+    |Espace de noms|L’espace de noms qualifié complet pour le contrôle, tel que **BdcModelProject1.VisualWebPart1**.|  
     |Nom de type|Button1|  
-    |Nom de l'assembly|Nom d'assembly fort, tel que Microsoft.Office.SharePoint.ClientExtensions, Version\=14.0.0.0, Culture\=neutral, PublicKeyToken\=71e9bce111e9429c.|  
-    |Sécurisé|Désactivez la case à cocher **Sécurisé**.|  
-    |Protégé contre les scripts|N'activez pas la case à cocher **Protégé contre les scripts**.|  
+    |Nom de l'assembly|Nom d’un assembly à fort, tel que : Microsoft.Office.SharePoint.ClientExtensions, Version = 14.0.0.0, Culture = neutral, PublicKeyToken = 71e9bce111e9429c.|  
+    |Safe|Désactivez le **Safe** case à cocher.|  
+    |Protégé contre les scripts|Laissez le **protégé contre les scripts** case à cocher.|  
   
     > [!NOTE]  
-    >  La valeur **Assembly Name** pour les assemblys ajoutés via l'onglet **Avancé** du **Concepteur de packages** ne peut pas être un jeton ; il doit s'agir d'un assembly avec un nom fort.  Pour plus d'informations, consultez [Création et utilisation d'assemblys avec nom fort](http://go.microsoft.com/fwlink/?LinkId=177513).  
+    >  Le **nom de l’Assembly** valeur pour les assemblys ajoutés via la **avancé** onglet de la **Concepteur de packages** ne peut pas un jeton, il doit être un assembly à nom fort. Pour plus d’informations, consultez [Création et utilisation d’assemblys avec nom fort](http://go.microsoft.com/fwlink/?LinkId=177513).  
   
-13. Choisissez la touche TAB pour créer une entrée de contrôle sécurisé.  
+13. Choisissez la touche Tab pour créer une autre entrée de contrôle sécurisé.  
   
-14. Cliquez de nouveau sur le bouton **Cliquez ici pour ajouter une nouvelle clause**.  
+14. Choisissez le **cliquez ici pour ajouter un nouvel élément** bouton Nouveau.  
   
-15. Entrez les valeurs pour les propriétés à partir du tableau suivant.  
+15. Entrez les valeurs pour les propriétés dans le tableau suivant.  
   
     |Nom de la propriété|Valeur|  
-    |-------------------------|------------|  
-    |Espace de noms|Espace de noms qualifié complet pour le contrôle, tel que **BdcModelProject1.VisualWebPart1**.|  
+    |-------------------|-----------|  
+    |Espace de noms|L’espace de noms qualifié complet pour le contrôle, tel que **BdcModelProject1.VisualWebPart1**.|  
     |Nom de type|TextBox1|  
-    |Nom de l'assembly|Nom d'assembly fort, tel que Microsoft.Office.SharePoint.ClientExtensions, Version\=14.0.0.0, Culture\=neutral, PublicKeyToken\=71e9bce111e9429c.|  
-    |Sécurisé|Activez la case à cocher **Sécurisé**.|  
-    |Protégé contre les scripts|Activez la case à cocher **Protégé contre les scripts**.|  
+    |Nom de l'assembly|Nom d’un assembly à fort, tel que : Microsoft.Office.SharePoint.ClientExtensions, Version = 14.0.0.0, Culture = neutral, PublicKeyToken = 71e9bce111e9429c.|  
+    |Safe|Sélectionnez le **Safe** case à cocher.|  
+    |Protégé contre les scripts|Sélectionnez le **protégé contre les scripts** case à cocher.|  
   
-16. Choisissez la touche TAB, puis cliquez sur le bouton **OK** pour fermer la boîte de dialogue.  
+16. Choisissez la touche Tab, puis le **OK** pour fermer la boîte de dialogue.  
   
-## Voir aussi  
- [Fourniture d'informations de création de packages et de déploiement dans des éléments de projet](../sharepoint/providing-packaging-and-deployment-information-in-project-items.md)   
+## <a name="see-also"></a>Voir aussi  
+ [En fournissant l’empaquetage et du déploiement dans les éléments de projet](../sharepoint/providing-packaging-and-deployment-information-in-project-items.md)   
  [Empaquetage et déploiement de solutions SharePoint](../sharepoint/packaging-and-deploying-sharepoint-solutions.md)  
   
   

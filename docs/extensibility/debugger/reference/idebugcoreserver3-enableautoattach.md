@@ -1,46 +1,29 @@
 ---
-title: IDebugCoreServer3::EnableAutoAttach | Microsoft Docs
+title: IDebugCoreServer3::EnableAutoAttach | Documents Microsoft
 ms.custom: 
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-sdk
+ms.technology: vs-ide-sdk
 ms.tgt_pltfrm: 
 ms.topic: article
-f1_keywords:
-- IDebugCoreServer3::EnableAutoAttach
-helpviewer_keywords:
-- IDebugCoreServer3::EnableAutoAttach
+f1_keywords: IDebugCoreServer3::EnableAutoAttach
+helpviewer_keywords: IDebugCoreServer3::EnableAutoAttach
 ms.assetid: 06aa633b-263b-4e08-8844-9a52d5120b94
-caps.latest.revision: 9
+caps.latest.revision: "9"
+author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-translation.priority.mt:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
+ms.openlocfilehash: 23c7faed077b8af442d81593808f9360995ba246
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
 ms.translationtype: MT
-ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
-ms.openlocfilehash: 0d8bd772e752134a41de1edbb2888703c3ebf42d
-ms.contentlocale: fr-fr
-ms.lasthandoff: 08/28/2017
-
+ms.contentlocale: fr-FR
+ms.lasthandoff: 10/31/2017
 ---
 # <a name="idebugcoreserver3enableautoattach"></a>IDebugCoreServer3::EnableAutoAttach
-Enables automatic attaching for the specified debug engines.  
+Permet l’attachement automatique pour les moteurs de débogage spécifiés.  
   
-## <a name="syntax"></a>Syntax  
+## <a name="syntax"></a>Syntaxe  
   
 ```cpp  
 HRESULT EnableAutoAttach(  
@@ -60,24 +43,24 @@ int EnableAutoAttach(
 );  
 ```  
   
-#### <a name="parameters"></a>Parameters  
+#### <a name="parameters"></a>Paramètres  
  `rgguidSpecificEngines`  
- [in] Array of GUIDs for each debug engine to mark as auto-attaching.  
+ [in] Tableau de GUID pour chaque moteur de débogage à marquer comme l’attachement automatique.  
   
  `celtSpecificEngines`  
- [in] The number of engines specified in `rgguidSpecificEngines`.  
+ [in] Le nombre de moteurs spécifié dans `rgguidSpecificEngines`.  
   
  `pszStartPageUrl`  
- [in] The starting URL to use when auto-attaching.  
+ [in] URL de démarrage à utiliser lors de l’attachement d’automatique.  
   
  `pbstrSessionID`  
- [out] ID of the session that was auto-attached.  
+ [out] ID de la session qui a été attaché automatiquement.  
   
-## <a name="return-value"></a>Return Value  
- If successful, returns `S_OK`; otherwise returns error code. One error code is `E_AUTO_ATTACH_NOT_REGISTERED`, which indicates that the auto-attach class factory has not been registered.  
+## <a name="return-value"></a>Valeur de retour  
+ En cas de réussite, retourne `S_OK`; sinon retourne le code d’erreur. Un code d’erreur est `E_AUTO_ATTACH_NOT_REGISTERED`, ce qui signifie que la fabrique de classe auto-attach n’a pas été inscrit.  
   
-## <a name="remarks"></a>Remarks  
- When a program associated with the specified URL is started, the specified debug engines are automatically started and attached.  
+## <a name="remarks"></a>Remarques  
+ Lorsqu’un programme associé à l’URL spécifiée est démarré, les moteurs de débogage spécifiés sont automatiquement démarrés et attachés.  
   
-## <a name="see-also"></a>See Also  
+## <a name="see-also"></a>Voir aussi  
  [IDebugCoreServer3](../../../extensibility/debugger/reference/idebugcoreserver3.md)

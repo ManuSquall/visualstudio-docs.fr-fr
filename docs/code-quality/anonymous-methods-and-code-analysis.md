@@ -1,11 +1,10 @@
 ---
-title: Anonymous Methods and Code Analysis | Microsoft Docs
+title: "Méthodes anonymes et analyse du Code | Documents Microsoft"
 ms.custom: 
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-devops-test
+ms.technology: vs-ide-code-analysis
 ms.tgt_pltfrm: 
 ms.topic: article
 helpviewer_keywords:
@@ -13,40 +12,25 @@ helpviewer_keywords:
 - code analysis, anonymous methods
 - anonymous methods, code analysis
 ms.assetid: bf0a1a9b-b954-4d46-9c0b-cee65330ad00
-caps.latest.revision: 19
+caps.latest.revision: "19"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-translation.priority.ht:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
-ms.translationtype: HT
-ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
-ms.openlocfilehash: 85a6bd427cf3bc5cada6bbec20b2b919e2a02d62
-ms.contentlocale: fr-fr
-ms.lasthandoff: 08/28/2017
-
+ms.openlocfilehash: 8ebf550ca92cbefbed684e2b11e0b20b62661133
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: fr-FR
+ms.lasthandoff: 10/31/2017
 ---
-# <a name="anonymous-methods-and-code-analysis"></a>Anonymous Methods and Code Analysis
-An *anonymous method* is a method that has no name. Anonymous methods are most frequently used to pass a code block as a delegate parameter.  
+# <a name="anonymous-methods-and-code-analysis"></a>Méthodes anonymes et analyse du code
+Un *méthode anonyme* est une méthode qui n’a aucun nom. Méthodes anonymes sont fréquemment utilisés pour passer un bloc de code comme un paramètre de délégué.  
   
- This topic explains how Code Analysis handles warnings and metrics that are associated with anonymous methods.  
+ Cette rubrique explique comment l’analyse du Code gère les avertissements et les mesures qui sont associés aux méthodes anonymes.  
   
-## <a name="anonymous-methods-declared-in-a-member"></a>Anonymous Methods Declared In a Member  
- Warnings and metrics for an anonymous method that is declared in a member, such as a method or accessor, are associated with the member that declares the method. They are not associated with the member that calls the method.  
+## <a name="anonymous-methods-declared-in-a-member"></a>Méthodes anonymes déclarées dans un membre  
+ Avertissements et la métrique d’une méthode anonyme qui est déclarée dans un membre, tel qu’une méthode ou un accesseur, est associés au membre qui déclare la méthode. Ils ne sont pas associées au membre qui appelle la méthode.  
   
- For example, in the following class, any warnings that are found in the declaration of **anonymousMethod** should be raised against **Method1** and not **Method2**.  
+ Par exemple, dans la classe suivante, les avertissements qui se trouvent dans la déclaration de **anonymousMethod** doit être déclenché sur **Method1** et non **méthode2**.  
   
 ```vb  
   
@@ -82,10 +66,10 @@ class Class
 }  
 ```  
   
-## <a name="inline-anonymous-methods"></a>Inline Anonymous Methods  
- Warnings and metrics for an anonymous method that is declared as an inline assignment to a field are associated with the constructor. If the field is declared as `static` (`Shared` in [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)]), the warnings and metrics are associated with the class constructor; otherwise, they are associated with the instance constructor.  
+## <a name="inline-anonymous-methods"></a>Méthodes anonymes inline  
+ Avertissements et la métrique d’une méthode anonyme qui est déclarée comme une assignation inline à un champ est associés au constructeur. Si le champ est déclaré en tant que `static` (`Shared` dans [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)]), les avertissements et les métriques sont associés au constructeur de classe ; sinon, ils sont associés au constructeur d’instance.  
   
- For example, in the following class, any warnings that are found in the declaration of **anonymousMethod1** will be raised against the implicitly generated default constructor of **Class**. Whereas, those found in **anonymousMethod2** will be applied against the implicitly generated class constructor.  
+ Par exemple, dans la classe suivante, les avertissements qui se trouvent dans la déclaration de **anonymousMethod1** sera déclenché concernant le constructeur par défaut généré implicitement **classe**. Tandis que ceux trouvés dans **anonymousMethod2** seront appliqués au constructeur de classe généré implicitement.  
   
 ```vb  
   
@@ -122,9 +106,9 @@ class Class
 }  
 ```  
   
- A class could contain an inline anonymous method that assigns a value to a field that has multiple constructors. In this case, warnings and metrics are associated with all the constructors unless that constructor chains to another constructor in the same class.  
+ Une classe peut contenir une méthode anonyme inline qui assigne une valeur à un champ qui possède plusieurs constructeurs. Dans ce cas, les avertissements et la métrique est associés à tous les constructeurs, sauf si ce constructeur est lié à un autre constructeur de la même classe.  
   
- For example, in the following class, any warnings that are found in the declaration of **anonymousMethod** should be raised against **Class(int)** and **Class(string)** but not against **Class()**.  
+ Par exemple, dans la classe suivante, les avertissements qui se trouvent dans la déclaration de **anonymousMethod** doit être déclenché sur **Class (int)** et **Class (String)** mais pas contre **Class()**.  
   
 ```vb  
   
@@ -164,9 +148,9 @@ class Class
 }  
 ```  
   
- Although this might seem unexpected, this occurs because the compiler outputs a unique method for every constructor that does not chain to another constructor. Because of this behavior, any violation that occurs in **anonymousMethod** must be suppressed separately. This also means that if a new constructor is introduced, warnings that were previously suppressed against **Class(int)** and **Class(string)** must also be suppressed against the new constructor.  
+ Bien que cela peut paraître inattendu, cela se produit, car le compilateur génère une méthode unique pour chaque constructeur qui ne s’enchaîne pas à un autre constructeur. En raison de ce comportement, toute violation qui se produit dans **anonymousMethod** doit être supprimée séparément. Cela signifie également que si un nouveau constructeur est introduit, les avertissements qui ont été précédemment supprimés sur **Class (int)** et **Class (String)** doit également être supprimée sur le nouveau constructeur.  
   
- You can work around this issue in one of two ways. You could declare **anonymousMethod** in a common constructor that all constructors chain. Or you could declare it in an initialization method that is called by all constructors.  
+ Vous pouvez contourner ce problème dans un des deux façons. Vous pouvez déclarer **anonymousMethod** dans un constructeur commun qui chaîne de tous les constructeurs. Ou vous pouvez la déclarer dans une méthode d’initialisation qui est appelée par tous les constructeurs.  
   
-## <a name="see-also"></a>See Also  
- [Analyzing Managed Code Quality](../code-quality/analyzing-managed-code-quality-by-using-code-analysis.md)
+## <a name="see-also"></a>Voir aussi  
+ [Analyse de la qualité d’un code managé](../code-quality/analyzing-managed-code-quality-by-using-code-analysis.md)

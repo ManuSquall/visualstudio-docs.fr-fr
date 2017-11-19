@@ -1,51 +1,53 @@
 ---
-title: "Classe TaskScheduler - membres internes | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-helpviewer_keywords: 
-  - "Classe TaskScheduler [moteurs de débogage .NET Framework]"
-  - "moteurs de débogage, classe TaskScheduler (.NET Framework)"
+title: Classe TaskScheduler - membres internes | Documents Microsoft
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+helpviewer_keywords:
+- TaskScheduler class [.NET Framework debug engines]
+- debug engines, TaskScheduler class [.NET Framework]
 ms.assetid: 87f1c969-0217-4464-8907-7609c1bf61d3
-caps.latest.revision: 10
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 10
+caps.latest.revision: "10"
+author: gregvanl
+ms.author: gregvanl
+manager: ghogen
+ms.openlocfilehash: 862d537585e3599a7069f1a30d1dc652a49e699c
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: fr-FR
+ms.lasthandoff: 10/31/2017
 ---
-# Classe TaskScheduler - membres internes
-[!INCLUDE[vs2017banner](../../code-quality/includes/vs2017banner.md)]
-
+# <a name="taskscheduler-class---internal-members"></a>Classe TaskScheduler - membres internes
 Cette rubrique décrit les membres internes de la <xref:System.Threading.Tasks.TaskScheduler?displayProperty=fullName> classe qui vous aident à implémenter un débogueur personnalisé. Pour obtenir des informations générales sur cette classe, consultez la <xref:System.Threading.Tasks.TaskScheduler> rubrique de référence.  
   
- **Namespace :** <xref:System.Threading.Tasks?displayProperty=fullName>  
+ **Namespace :**<xref:System.Threading.Tasks?displayProperty=fullName>  
   
- **Assembly :** mscorlib \(dans mscorlib.dll\)  
+ **Assembly :** mscorlib (dans mscorlib.dll)  
   
- Étant donné que vous ne pouvez pas accéder à ces membres internes du .NET Framework, la syntaxe suivante est fournie en commun Intermediate Language \(CIL\).  
+ Étant donné que vous ne pouvez pas accéder à ces membres internes du .NET Framework, la syntaxe suivante est fournie en commun Intermediate Language (CIL).  
   
-## Syntaxe  
+## <a name="syntax"></a>Syntaxe  
   
 ```  
 .class public abstract auto ansi beforefieldinit System.Threading.Tasks.TaskScheduler  
        extends System.Object  
 ```  
   
-## Membres  
+## <a name="members"></a>Membres  
   
-### Méthodes  
+### <a name="methods"></a>Méthodes  
   
 |Nom|Description|  
-|---------|-----------------|  
+|----------|-----------------|  
 |[GetScheduledTasksForDebugger](../../extensibility/debugger/getscheduledtasksfordebugger-method.md)|Récupère un tableau de toutes les tâches planifiées.|  
 |[GetTaskSchedulersForDebugger](../../extensibility/debugger/gettaskschedulersfordebugger-method.md)|Récupère un tableau de tous les <xref:System.Threading.Tasks.TaskScheduler> les objets qui sont actuellement actives.|  
   
-## Notes  
+## <a name="remarks"></a>Remarques  
   
-## Voir aussi  
+## <a name="see-also"></a>Voir aussi  
  <xref:System.Threading.Tasks.TaskScheduler?displayProperty=fullName>   
- [Internes de Parallel Extensions pour .NET Framework](../../extensibility/debugger/parallel-extension-internals-for-the-dotnet-framework.md)
+ [Valeurs internes d’extension parallèle pour .NET Framework](../../extensibility/debugger/parallel-extension-internals-for-the-dotnet-framework.md)

@@ -1,46 +1,29 @@
 ---
-title: IDebugCustomAttributeQuery2::EnumCustomAttributes | Microsoft Docs
+title: IDebugCustomAttributeQuery2::EnumCustomAttributes | Documents Microsoft
 ms.custom: 
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-sdk
+ms.technology: vs-ide-sdk
 ms.tgt_pltfrm: 
 ms.topic: article
-f1_keywords:
-- IDebugCustomAttributeQuery2::EnumCustomAttributes
-helpviewer_keywords:
-- IDebugCustomAttributeQuery2::EnumCustomAttributes
+f1_keywords: IDebugCustomAttributeQuery2::EnumCustomAttributes
+helpviewer_keywords: IDebugCustomAttributeQuery2::EnumCustomAttributes
 ms.assetid: 94bfce74-aa3d-45f0-8e04-5715faf85217
-caps.latest.revision: 9
+caps.latest.revision: "9"
+author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-translation.priority.mt:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
+ms.openlocfilehash: 47b643c8f08de60bb873f3daf69ee93e0816d31f
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
 ms.translationtype: MT
-ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
-ms.openlocfilehash: 4d142f6f39a524ca8f1c29f031a6a9f03d3b6341
-ms.contentlocale: fr-fr
-ms.lasthandoff: 08/28/2017
-
+ms.contentlocale: fr-FR
+ms.lasthandoff: 10/31/2017
 ---
 # <a name="idebugcustomattributequery2enumcustomattributes"></a>IDebugCustomAttributeQuery2::EnumCustomAttributes
-Gets an enumerator for all custom attributes attached to this field.  
+Obtient un énumérateur pour tous les attributs personnalisés attachés à ce champ.  
   
-## <a name="syntax"></a>Syntax  
+## <a name="syntax"></a>Syntaxe  
   
 ```cpp  
 HRESULT EnumCustomAttributes(   
@@ -54,16 +37,16 @@ int EnumCustomAttributes(
 );  
 ```  
   
-#### <a name="parameters"></a>Parameters  
+#### <a name="parameters"></a>Paramètres  
  `ppEnum`  
- [out] Returns an [IEnumDebugCustomAttributes](../../../extensibility/debugger/reference/ienumdebugcustomattributes.md) object representing the list of custom attributes; otherwise, returns a null value if there are no custom attributes.  
+ [out] Retourne un [IEnumDebugCustomAttributes](../../../extensibility/debugger/reference/ienumdebugcustomattributes.md) l’objet représentant la liste des attributs personnalisés ; sinon, retourne une valeur null s’il en existe pas d’attributs personnalisés.  
   
-## <a name="return-value"></a>Return Value  
- If successful, returns S_OK or S_FALSE if there are no custom attributes on this field. Otherwise, returns an error code;  
+## <a name="return-value"></a>Valeur de retour  
+ En cas de réussite, retourne S_OK ou S_FALSE si il n’y pas d’attributs personnalisés sur ce champ. Sinon, retourne un code d’erreur ;  
   
-## <a name="remarks"></a>Remarks  
- A field can have multiple custom attributes.  
+## <a name="remarks"></a>Remarques  
+ Un champ peut avoir plusieurs attributs personnalisés.  
   
-## <a name="see-also"></a>See Also  
+## <a name="see-also"></a>Voir aussi  
  [IDebugCustomAttributeQuery2](../../../extensibility/debugger/reference/idebugcustomattributequery2.md)   
  [IEnumDebugCustomAttributes](../../../extensibility/debugger/reference/ienumdebugcustomattributes.md)

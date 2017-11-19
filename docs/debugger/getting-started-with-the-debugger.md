@@ -1,306 +1,288 @@
 ---
-title: Get started with the debugger | Microsoft Docs
+title: "Prise en main du débogueur | Documents Microsoft"
 ms.custom: H1HackMay2017
 ms.date: 05/18/2017
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-debug
+ms.technology: vs-ide-debug
 ms.tgt_pltfrm: 
 ms.topic: get-started-article
-helpviewer_keywords:
-- debugger
+helpviewer_keywords: debugger
 ms.assetid: 62734c0d-a75a-4576-8f73-0e97c19280e1
-caps.latest.revision: 1
+caps.latest.revision: "1"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-translation.priority.ht:
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- ru-ru
-- zh-cn
-- zh-tw
-translation.priority.mt:
-- cs-cz
-- pl-pl
-- pt-br
-- tr-tr
-ms.translationtype: HT
-ms.sourcegitcommit: 7c87490f8e4ad01df8761ebb2afee0b2d3744fe2
-ms.openlocfilehash: 09eb8904a2ec442d02f31bf8793d6a105d04ac6a
-ms.contentlocale: fr-fr
-ms.lasthandoff: 08/31/2017
-
+ms.openlocfilehash: 0f6bcc75341297ad20d66514c92f92513ef44d2f
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: fr-FR
+ms.lasthandoff: 10/31/2017
 ---
-# <a name="get-started-with-the-visual-studio-debugger"></a>Get started with the Visual Studio debugger
+# <a name="get-started-with-the-visual-studio-debugger"></a>Prise en main du débogueur Visual Studio
 
-This topic introduces the features of the Visual Studio debugger in a step-by-step walkthrough. If you want a higher-level view of the debugger features, see [Debugger Feature Tour](../debugger/debugger-feature-tour.md).
+Cette rubrique présente les fonctionnalités du débogueur Visual Studio dans une procédure pas à pas. Si vous souhaitez une vue de niveau supérieur des fonctionnalités du débogueur, consultez [présentation des fonctionnalités de débogueur](../debugger/debugger-feature-tour.md).
 
-You can either read along to see the features of the debugger or you can download the complete sample used in the feature tour and follow the steps yourself. To download the sample and follow along, go to [Photo Viewer Demo](https://code.msdn.microsoft.com/windowsdesktop/WPF-Photo-Viewer-Demo-be75662a).
+Vous pouvez lire le long pour voir les fonctionnalités du débogueur, ou vous pouvez télécharger l’exemple complet utilisé dans la visite guidée des fonctionnalités et suivez les étapes vous-même. Pour télécharger l’exemple et suivre la procédure, accédez à [démo Photo de la visionneuse](https://code.msdn.microsoft.com/windowsdesktop/WPF-Photo-Viewer-Demo-be75662a).
 
 |         |         |
 |---------|---------|
-| ![Watch a video](../install/media/video-icon.png "WatchVideo") | [Watch a video](#video) on debugging that shows similar steps. |
+| ![Regarder une vidéo](../install/media/video-icon.png "WatchVideo") | [Regardez une vidéo](#video) sur le débogage, qui affiche des étapes similaires. |
 
-Although the demo app is C#, the features are applicable to C++, Visual Basic, JavaScript, and other languages supported by Visual Studio (except where noted).
+Bien que l’application de démonstration est c#, les fonctionnalités sont applicables à C++, Visual Basic, JavaScript et autres langues prises en charge par Visual Studio (sauf mention contraire).
 
-## <a name="start-the-debugger"></a>Start the debugger!
+## <a name="start-the-debugger"></a>Démarrez le débogueur !
 
-1. To follow along these steps in Visual Studio, download the sample [on this page](https://code.msdn.microsoft.com/windowsdesktop/WPF-Photo-Viewer-Demo-be75662a).
+1. Pour suivre ces étapes dans Visual Studio, téléchargez l’exemple [sur cette page](https://code.msdn.microsoft.com/windowsdesktop/WPF-Photo-Viewer-Demo-be75662a).
 
     > [!IMPORTANT]
-    > You need to install Visual Studio with the .NET Desktop Development workload to run the app we're using in the demo.
+    > Vous devez installer Visual Studio avec la charge de travail de développement de bureau .NET pour exécuter l’application que nous utilisons dans la démonstration.
 
-2. Unzip the project.
+2. Décompressez le projet.
 
-3. Open Visual Studio and select the **File > Open** menu command, then choose **Project/Solution**, and then open the folder where you downloaded the project.
+3. Ouvrez Visual Studio et sélectionnez le **fichier > Ouvrir** menu de commande, puis choisissez **projet/Solution**, puis ouvrez le dossier où vous avez téléchargé le projet.
 
-     ![Open the sample project](../debugger/media/dbg-tour-open-project.png "Open Project")
+     ![Ouvrez l’exemple de projet](../debugger/media/dbg-tour-open-project.png "ouvrir un projet")
 
-3. Open the WPF Photo Viewer Demo > C# folder, choose the photoapp.sln file, and select **Open**.
+3. Ouvrez la démonstration de visionneuse de photos WPF > dossier c#, choisissez le fichier photoapp.sln, puis sélectionnez **ouvrir**.
 
-     The project opens in Visual Studio. Solution Explorer in the right pane shows you all the project files.
+     Le projet s’ouvre dans Visual Studio. L’Explorateur de solutions dans le volet droit affiche tous les fichiers projet.
 
-    ![Solution Explorer files](../debugger/media/dbg-tour-solution-explorer.png "Solution Explorer")
+    ![Fichiers de l’Explorateur de solutions](../debugger/media/dbg-tour-solution-explorer.png "l’Explorateur de solutions")
 
-4. Press F5 (**Debug > Start Debugging** or the **Start Debugging** button ![Start Debugging](../debugger/media/dbg-tour-start-debugging.png "Start Debugging") in the Debug Toolbar).
+4. Appuyez sur F5 (**Déboguer > Démarrer le débogage** ou **démarrer le débogage** bouton ![démarrer le débogage](../debugger/media/dbg-tour-start-debugging.png "démarrer le débogage") dans la barre d’outils Déboguer).
 
-     ![Photo Viewer app](../debugger/media/dbg-tour-wpf-app.png "Photo Viewer App")
+     ![Application de visionneuse photo](../debugger/media/dbg-tour-wpf-app.png "Photo application de visionneuse")
 
-     F5 starts the app with the debugger attached to the app process, but right now we haven't added any breakpoints or done anything special to examine the code. So the app just loads and you see the photo images.
+     F5 démarre l’application avec le débogueur attaché au processus de l’application, mais à droite, maintenant nous n’avons pas ajouté les points d’arrêt ou fait rien de spécial pour examiner le code. Par conséquent, l’application charge simplement et que les images photo.
 
-     In this tour, we'll take a closer look at this app using the debugger and get a look at the debugger features.
+     Dans cette visite guidée, nous intéresser plus près à cette application à l’aide du débogueur et obtenir un aperçu du débogueur de fonctionnalités.
 
-5. Stop the debugger by pressing the red stop ![Stop Debugging](../debugger/media/dbg-tour-stop-debugging.png "Stop Debugging") button.
+5. Arrêtez le débogueur en appuyant sur le taquet rouge ![arrêter le débogage](../debugger/media/dbg-tour-stop-debugging.png "arrêter le débogage") bouton.
 
-## <a name="set-a-breakpoint-and-start-the-debugger"></a>Set a breakpoint and start the debugger
+## <a name="set-a-breakpoint-and-start-the-debugger"></a>Définir un point d’arrêt et démarrage du débogueur
 
-To debug, you need to start your app with the debugger attached to the app process.
+Pour déboguer, vous devez démarrer votre application avec le débogueur attaché au processus de l’application.
 
-1. In the `MainWindow` constructor of MainWindow.xaml.cs, set a breakpoint by clicking the left margin of the first line of code.
+1. Dans la `MainWindow` constructeur de MainWindow.xaml.cs, définir un point d’arrêt en cliquant sur la marge de gauche de la première ligne de code.
 
-     ![Set a breakpoint](../debugger/media/dbg-tour-set-a-breakpoint.gif "SetABreakPoint")
+     ![Définir un point d’arrêt](../debugger/media/dbg-tour-set-a-breakpoint.gif "SetABreakPoint")
 
-6. Press F5 or the **Start Debugging** button, the app starts, and the debugger runs to the line of code where you set the breakpoint.
+6. Appuyez sur F5 ou **démarrer le débogage** bouton, l’application démarre, et le débogueur exécute jusqu'à la ligne de code où vous avez défini le point d’arrêt.
 
-    The yellow arrow represents the statement on which the debugger paused, which also suspends app execution at the same point (this statement has not yet executed).
+    La flèche jaune représente l’instruction sur laquelle le débogueur a suspendu, également suspend l’exécution d’application sur le même point (cette instruction n’a pas encore exécuté).
 
-    F5 continues running the app to the next breakpoint. (If the app is not yet running, F5 starts the debugger and stops at the first breakpoint.)
+    F5 continue l’exécution de l’application pour le point d’arrêt suivant. (Si l’application n’est pas encore en cours d’exécution, appuyez sur F5 démarre le débogueur et s’arrête au premier point d’arrêt.)
 
-    Breakpoints are a useful feature when you know the line of code or the section of code that you want to examine in detail.
+    Points d’arrêt sont une fonctionnalité utile lorsque vous savez que la ligne de code ou de la section de code que vous souhaitez examiner en détail.
 
-## <a name="restart-your-app-quickly"></a>Restart your app quickly
+## <a name="restart-your-app-quickly"></a>Redémarrez votre application rapidement
 
-1. Click the **Restart** ![Restart App](../debugger/media/dbg-tour-restart.png "RestartApp") button in the Debug Toolbar (Ctrl + Shift +F5).
+1. Cliquez sur le **redémarrer** ![redémarrer l’application](../debugger/media/dbg-tour-restart.png "RestartApp") bouton dans la barre d’outils de débogage (Ctrl + Maj + F5).
 
-    When you press **Restart**, it saves time versus stopping the app and restarting the debugger. The debugger pauses at the first breakpoint that is hit by executing code.
+    Lorsque vous appuyez sur **redémarrer**, il fait gagner du temps par rapport à l’arrêt de l’application et de redémarrer le débogueur. Le débogueur s’arrête sur le premier point d’arrêt est atteint par l’exécution de code.
 
-    The debugger stops again at the breakpoint you set, in the `MainWindow` constructor.
+    Le débogueur s’arrête à nouveau sur le point d’arrêt que vous avez défini dans le `MainWindow` constructeur.
 
-## <a name="navigate-code-in-the-debugger-using-step-commands"></a>Navigate code in the debugger using step commands
+## <a name="navigate-code-in-the-debugger-using-step-commands"></a>Parcourir le code dans le débogueur à l’aide des commandes d’étape
 
-Mostly, we use the keyboard shortcuts here, because it's a good way to get fast at executing your app in the debugger (equivalent commands such as menu commands are shown in parentheses).
+Essentiellement, nous utilisons ici, des raccourcis clavier, car il s’agit d’un bon moyen pour obtenir rapidement à l’exécution de votre application dans le débogueur (commandes équivalentes telles que le menu commandes sont indiqués entre parenthèses).
 
-1. Press F11 (**Debug > Step Into**) twice to advance the execution of the app to the `InitializeComponent()` function.
+1. Appuyez sur F11 (**Déboguer > pas à pas détaillé**) à deux reprises pour avancer l’exécution de l’application vers le `InitializeComponent()` (fonction).
 
-     ![Use F11 to Step Into code](../debugger/media/dbg-tour-f11.png "F11 Step Into")
+     ![Utilisez la touche F11 pour le code pas à pas détaillé](../debugger/media/dbg-tour-f11.png "F11 pas à pas détaillé")
 
-     F11 is the **Step Into** command and advances the app execution one statement at a time. F11 is a good way to examine the execution flow in the most detail. (To move faster through code, we show you some other options also.) By default, the debugger skips over non-user code (if you want more details, see [Just My Code](../debugger/just-my-code.md)).
+     F11 est la **pas à pas détaillé** commande et avance l’instruction de l’exécution une application à la fois. F11 est une bonne solution pour examiner le flux d’exécution dans le détail la plupart des. (Pour déplacer plus rapidement dans le code, nous vous indiquons d’autres options également.) Par défaut, le débogueur ignore code non-utilisateur (si vous souhaitez plus d’informations, consultez [uniquement mon Code](../debugger/just-my-code.md)).
 
      >[!NOTE]
-     > In managed code, you will see a dialog box asking if you want to be notified when you automatically step over properties and operators (default behavior). If you want to change the setting later, disable **Step over properties and operators** setting in the **Tools > Options** menu under **Debugging**.
+     > Dans le code managé, vous verrez une boîte de dialogue vous demandant si vous souhaitez être averti lorsque vous effectuez pas automatiquement dans les propriétés et les opérateurs (comportement par défaut). Si vous souhaitez modifier le paramètre de désactiver une version ultérieure, **étape dans les propriétés et les opérateurs** définition dans le **Outils > Options** menu sous **débogage**.
 
-2. Press F10 (**Debug > Step Over**) a few times until the debugger stops on the first line of code in the `OnApplicationStartup` event handler.
+2. Appuyez sur F10 (**Déboguer > pas à pas principal**) plusieurs fois jusqu'à ce que le débogueur s’arrête sur la première ligne de code dans le `OnApplicationStartup` Gestionnaire d’événements.
 
-     ![Use F10 to Step Over code](../debugger/media/dbg-tour-f10-step-over.png "F10 Step Over")
+     ![Utiliser la touche F10 pour le code pas à pas principal](../debugger/media/dbg-tour-f10-step-over.png "F10 pas à pas principal")
 
-     F10 advances the debugger without stepping into functions or methods in your app code (the code still executes). By pressing F10 on the `InitializeComponent` method call (instead of F11), we skipped over the implementation code for `InitializeComponent` (which maybe we're not interested in right now).
+     F10 avance le débogueur sans entrer dans les fonctions ou méthodes dans votre code d’application (le code s’exécute toujours). En appuyant sur F10 le `InitializeComponent` appel de méthode (au lieu de F11), nous avons ignoré sur le code d’implémentation `InitializeComponent` (qui nous ne mettons pas intéressés par dès maintenant par exemple).
 
-## <a name="step-into-a-property"></a>Step into a property
+## <a name="step-into-a-property"></a>Pas à pas détaillé d’une propriété
 
-1. With the debugger paused on this line of code:
+1. Avec le débogueur en pause sur cette ligne de code :
 
     ````
     mainWindow.Photos.Path = Environment.CurrentDirectory + "\\images";
     ````
 
-    Right-click on the line of code and choose **Step Into Specific**, then **SDKSamples.ImageSample.PhotoCollection.Path.set**
+    Avec le bouton droit sur la ligne de code et choisissez **détaillé spécifique**, puis **SDKSamples.ImageSample.PhotoCollection.Path.set**
 
-     ![Use the Step into Specific feature](../debugger/media/dbg-tour-step-into-specific.png "Step Into Specific")
+     ![Utilisez l’étape dans la fonctionnalité spécifique](../debugger/media/dbg-tour-step-into-specific.png "détaillé spécifique")
 
-    As mentioned earlier, by default the debugger skips over managed properties and fields, but the **Step Into Specific** command allows you to override this behavior. For now, we want to look what happens when the `Path.set` property setter runs. **Step Into Specific** gets us to the `Path.set` code here.
+    Comme mentionné précédemment, par défaut, le débogueur ignore les propriétés gérées et des champs, mais la **détaillé spécifique** commande vous permet de substituer ce comportement. Pour l’instant, nous souhaitons rechercher que se passe-t-il lorsque le `Path.set` s’exécute la méthode setter de propriété. **Détaillé spécifique** obtient nous le `Path.set` code ici.
 
-     ![result of Step into Specific](../debugger/media/dbg-tour-step-into-specific-2.png "Step Into Specific")
+     ![résultat de pas à pas détaillé spécifique](../debugger/media/dbg-tour-step-into-specific-2.png "détaillé spécifique")
 
-     The `Update` method in this code looks like it could be interesting, so lets use the debugger to examine that code up close.
+     Le `Update` méthode dans ce code semble il pourrait être intéressant, ce vous permet d’utiliser le débogueur pour examiner ce code près.
 
-5. Hover over the `Update` method until the green **Run to Click** button ![Run to Click](../debugger/media/dbg-tour-run-to-click.png "RunToClick") appears on the left.
+5. Placez le curseur sur le `Update` méthode jusqu'à ce que le vert **exécuter. Cliquez ensuite sur** bouton ![exécuter. Cliquez ensuite sur](../debugger/media/dbg-tour-run-to-click.png "RunToClick") apparaît à gauche.
 
-     ![Use the Run to Click feature](../debugger/media/dbg-tour-run-to-click-2.png "Run to Click")
+     ![Utilisez l’exécuter. Cliquez ensuite sur fonctionnalité](../debugger/media/dbg-tour-run-to-click-2.png "exécuter à, cliquez sur")
 
     >  [!NOTE] 
-    > The **Run to Click** button is new in [!include[vs_dev15](../misc/includes/vs_dev15_md.md)]. If you don't see the green arrow button, use F11 in this example instead to advance the debugger.
+    > Le **exécuter. Cliquez ensuite sur** bouton est une nouveauté de [!include[vs_dev15](../misc/includes/vs_dev15_md.md)]. Si vous ne voyez pas le bouton de flèche verte, utilisez F11 dans cet exemple à la place d’avancer le débogueur.
 
-6. Click the **Run to Click** button ![Run to Click](../debugger/media/dbg-tour-run-to-click.png "RunToClick").
+6. Cliquez sur le **exécuter. Cliquez ensuite sur** bouton ![exécuter. Cliquez ensuite sur](../debugger/media/dbg-tour-run-to-click.png "RunToClick").
 
-    Using this button is similar to setting a temporary breakpoint. **Run to Click** is handy for getting around quickly within a visible region of app code (you can click in any open file).
+    L’utilisation de ce bouton est similaire à la définition d’un point d’arrêt temporaire. **Cliquez sur exécuter** est pratique pour se déplacer rapidement au sein de la région visible du code d’application (vous pouvez cliquer dans un fichier ouvert).
 
-    The debugger advances to the `Update` method implementation.
+    Le débogueur passe à la `Update` implémentation de méthode.
 
-7. Press F11 to step into the `Update` method.
+7. Appuyez sur F11 pour avancer dans le `Update` (méthode).
 
-     ![Result of stepping into the Update method](../debugger/media/dbg-tour-update-method.png "Step Into Update Method")
+     ![Résultat de l’exécution pas à pas dans la méthode de mise à jour](../debugger/media/dbg-tour-update-method.png "étape dans la méthode de mise à jour")
 
-    Here, we find some more code that looks interesting; the app is getting all *.jpg files residing in a particular directory, and then creating a Photo object for each file. This code gives us a good opportunity to start inspecting your app state (variables) with the debugger.
+    Ici, nous trouver encore du code qui vous intéresse ; l’application obtient tous les fichiers *.jpg résidant dans un répertoire particulier, puis en créant un objet Photo pour chaque fichier. Ce code produit une bonne opportunité de commencer à examiner l’état de votre application (variables) avec le débogueur.
 
-    Features that allow you to inspect variables are one of the most useful features of the debugger, and there are different ways to do it. Often, when you try to debug an issue, you are attempting to find out whether variables are storing the values that you expect them to have at a particular time.
+    Les fonctionnalités qui vous permettent d’inspecter des variables sont une des fonctionnalités plus utiles du débogueur, et il existe différentes manières de procéder. Souvent, lorsque vous essayez de déboguer un problème, vous essayez de savoir si les variables stockent les valeurs que vous attendez à leur attribuer à un moment donné.
 
-## <a name="inspect-variables-with-data-tips"></a>Inspect variables with data tips
+## <a name="inspect-variables-with-data-tips"></a>Inspecter des variables avec info-bulles
 
-1. To pause the debugger on the `Add` method call, hover over the `Add` method call and click the **Run to Click** button ![Run to Click](../debugger/media/dbg-tour-run-to-click.png "RunToClick").
+1. Pour suspendre le débogueur sur la `Add` appel de méthode, placez votre curseur sur la `Add` méthode appeler et cliquez sur le **exécuter. Cliquez ensuite sur** bouton ![exécuter. Cliquez ensuite sur](../debugger/media/dbg-tour-run-to-click.png "RunToClick").
 
-2. Now, hover over the File object (`f`) and you see its default property value, the file name `market 031.jpg`.
+2. Maintenant, placez le curseur sur l’objet de fichier (`f`) et que sa valeur de propriété par défaut, le nom de fichier `market 031.jpg`.
 
-     ![View a data tip](../debugger/media/dbg-tour-data-tips.gif "View a Data Tip")
+     ![Afficher une info-bulle](../debugger/media/dbg-tour-data-tips.gif "afficher une info-bulle")
 
-3. Expand the object to see all its properties, such as the `FullPath` property.
+3. Développez l’objet pour afficher ses propriétés, telles que le `FullPath` propriété.
 
-    Often, when debugging, you want a quick way to check property values on objects, and the data tips are a good way to do it.
+    Souvent, lors du débogage, vous souhaitez un moyen rapide de vérifier les valeurs de propriétés des objets et les conseils de données sont un bon moyen de le faire.
 
     > [!TIP]
-    > In most supported languages, you can edit code in the middle of a debugger session if you find something you want to change. For more info, see [Edit and Continue](../debugger/edit-and-continue.md). To use that feature in this app, however, we would first need to update the app's version of the .NET Framework.
+    > Dans les langues prises en charge de plus, vous pouvez modifier le code au milieu d’une session du débogueur si vous trouvez quelque chose que vous souhaitez modifier. Pour plus d’informations, consultez [Modifier & Continuer](../debugger/edit-and-continue.md). Pour utiliser cette fonctionnalité dans cette application, toutefois, nous avons tout d’abord doit mettre à jour la version de l’application du .NET Framework.
 
-## <a name="inspect-variables-with-the-autos-and-locals-windows"></a>Inspect variables with the Autos and Locals windows
+## <a name="inspect-variables-with-the-autos-and-locals-windows"></a>Inspecter des variables avec les fenêtres automatique et variables locales
 
-1. Look at the **Autos** window at the bottom of the code editor.
+1. Examinez le **automatique** fenêtre au bas de l’éditeur de code.
 
-     ![Inspect variables in the Autos Window](../debugger/media/dbg-tour-autos-window.png "Autos Window")
+     ![Inspecter des variables dans la fenêtre automatique](../debugger/media/dbg-tour-autos-window.png "automatique (fenêtre)")
 
-    In the **Autos** window, you see variables and their current value. The **Autos** window shows all variables used on the current line or the preceding line (In C++, the window shows variables in the preceding three lines of code. Check documentation for language-specific behavior).
+    Dans le **automatique** fenêtre, vous voyez des variables et leur valeur actuelle. Le **automatique** fenêtre affiche toutes les variables utilisées dans la ligne actuelle ou de la ligne précédente (en C++, la fenêtre affiche les variables dans les trois lignes de code précédents. Consultez la documentation pour le comportement spécifique au langage).
 
     > [!NOTE]
-    > In JavaScript, the **Locals** window is supported but not the **Autos** window.
+    > Dans JavaScript, le **variables locales** fenêtre est pris en charge mais pas les **automatique** fenêtre.
 
-2. Next, look at the **Locals** window.
+2. Ensuite, examinez le **variables locales** fenêtre.
 
-    The **Locals** window shows you the variables that are in the current scope.
+    Le **variables locales** fenêtre affiche les variables qui sont dans la portée actuelle.
 
-    ![Inspect variables in the Locals Window](../debugger/media/dbg-tour-locals-window.png "Locals Window")
+    ![Inspecter des variables dans la fenêtre variables locales](../debugger/media/dbg-tour-locals-window.png "fenêtre variables locales")
 
-    Currently, the `this` object and the File object (`f`) are in the current scope. For more info, see [Inspect Variables in the Autos and Locals Windows](../debugger/autos-and-locals-windows.md).
+    Actuellement, le `this` objet et l’objet de fichier (`f`) se trouvent dans la portée actuelle. Pour plus d’informations, consultez [inspecter des Variables dans les fenêtres variables locales et automatique](../debugger/autos-and-locals-windows.md).
 
-## <a name="set-a-watch"></a>Set a watch
+## <a name="set-a-watch"></a>Définissez un espion
 
-1. In the main code editor window, right-click the File object (`f`) and choose **Add Watch**.
+1. Dans la fenêtre d’éditeur de code principal, cliquez sur l’objet de fichier (`f`) et choisissez **ajouter un espion**.
 
-    You can use a **Watch** window to specify a variable (or an expression) that you want to keep an eye on.
+    Vous pouvez utiliser un **espion** fenêtre pour spécifier une variable (ou une expression) que vous souhaitez garder un œil sur.
 
-    Now, you have a watch set on the `File` object, and you can see its value change as you move through the debugger. Unlike the other variable windows, the **Watch** window always shows the variables that you are watching (they're grayed out when out of scope).
+    Vous avez maintenant un espion à définir sur le `File` objet et vous pouvez voir sa valeur changent à mesure que vous parcourez le débogueur. Contrairement à d’autres fenêtres de variables, le **espion** fenêtre affiche toujours les variables que vous surveillez (elles sont grisées lorsque hors de portée).
 
-2. On the `Add` method, click the green ![Run to Click](../debugger/media/dbg-tour-run-to-click.png "RunToClick") button again (or press F11 a few times) to advance through the `foreach` loop.
+2. Sur le `Add` (méthode), cliquez sur le vert ![exécuter. Cliquez ensuite sur](../debugger/media/dbg-tour-run-to-click.png "RunToClick") bouton Nouveau (ou appuyez sur F11 à plusieurs fois) pour faire défiler le `foreach` boucle.
 
-    ![Set a watch on a variable](../debugger/media/dbg-tour-watch-window.png "Watch Window")
+    ![Définissez un espion dans une variable](../debugger/media/dbg-tour-watch-window.png "fenêtre Espion")
 
-    You might also see the first picture get added to the main window of the running sample app, but this happens on a different app thread, so images may not be visible yet.
+    Vous pouvez également voir la première image sont ajoutés à la fenêtre principale de l’exécution exemple d’application, mais cela se produit sur un thread d’application différents, les images peut ne pas être visibles encore.
 
-    For more info, see [Set a Watch using the Watch and QuickWatch Windows](../debugger/watch-and-quickwatch-windows.md)
+    Pour plus d’informations, consultez [définissez un espion à l’aide de l’espion et Espion express, fenêtres](../debugger/watch-and-quickwatch-windows.md)
 
-## <a name="examine-the-call-stack"></a>Examine the call stack
+## <a name="examine-the-call-stack"></a>Examiner la pile des appels
 
-1. Click the **Call Stack** window, which is by default open in the lower right pane.
+1. Cliquez sur le **pile des appels** fenêtre, qui est par défaut ouvert dans le volet inférieur droit.
 
-     ![Examine the call stack](../debugger/media/dbg-tour-call-stack.png "ExamineCallStack")
+     ![Examiner la pile des appels](../debugger/media/dbg-tour-call-stack.png "ExamineCallStack")
 
-    The **Call Stack** window shows the order in which methods and functions are getting called. The top line shows the current function (the `Update` method in the tour app). The second line shows that `Update` was called from the `Path.set` property, and so on.
+    Le **pile des appels** fenêtre indique l’ordre dans lequel les méthodes et les fonctions sont mise en route appelées. La première ligne affiche la fonction en cours (la `Update` méthode dans l’application de la visite guidée). La deuxième ligne montre que `Update` a été appelée à partir de la `Path.set` propriété et ainsi de suite.
 
     >  [!NOTE]
-    > The **Call Stack** window is similar to the Debug perspective in some IDEs like Eclipse.
+    > Le **pile des appels** fenêtre est identique à la perspective de débogage dans certains environnements IDE comme Eclipse.
 
-    The call stack is a good way to examine and understand the execution flow of an app.
+    La pile des appels est un bon moyen d’examiner et de comprendre le flux d’exécution d’une application.
 
-    You can double-click a line of code to go look at that source code and that also changes the current scope being inspected by the debugger. This action does not advance the debugger.
+    Vous pouvez double-cliquer sur une ligne de code pour accéder à examiner le code source et qui change également l’étendue actuelle en cours d’inspection par le débogueur. Cette action n’avance pas le débogueur.
 
-    You can also use right-click menus from the **Call Stack** window to do other things. For example, you can insert breakpoints into specified functions, advance the debugger using **Run to Cursor**, and go examine source code. For more information, see [How to: Examine the Call Stack](../debugger/how-to-use-the-call-stack-window.md).
+    Vous pouvez également utiliser les menus contextuels à partir de la **pile des appels** fenêtre pour effectuer d’autres opérations. Par exemple, vous pouvez insérer des points d’arrêt dans les fonctions spécifiées, le débogueur à l’aide d’avance **exécuter jusqu’au curseur**et accédez à examiner le code source. Pour plus d’informations, consultez [Comment : examiner la pile des appels](../debugger/how-to-use-the-call-stack-window.md).
 
-## <a name="change-the-execution-flow"></a>Change the execution flow
+## <a name="change-the-execution-flow"></a>Modifier le flux d’exécution
 
-1. With the debugger paused on the `Add` method call, use the mouse to grab the yellow arrow (the execution pointer) on the left and move the yellow arrow up one line to the `foreach` loop.
+1. Avec le débogueur en mode pause sur le `Add` appel de méthode, utilisez la souris de saisir la flèche jaune (le pointeur d’exécution) sur la gauche et déplacer la flèche jaune une ligne à la `foreach` boucle.
 
-     ![Move the execution pointer](../debugger/media/dbg-tour-move-the-execution-pointer.gif "Move the Execution Pointer")
+     ![Déplacez le pointeur d’exécution](../debugger/media/dbg-tour-move-the-execution-pointer.gif "déplacer le pointeur d’exécution")
 
-    By changing the execution flow, you can do things like test different code execution paths or rerun code without restarting the debugger.
+    En modifiant le flux d’exécution, vous pouvez effectuer diverses tâches telles que les chemins d’exécution de code différent de test ou réexécutez le code sans redémarrer le débogueur.
 
-2. Now, press F5.
+2. Maintenant, appuyez sur F5.
 
-    You can see the images added to the app window. Because you are rerunning code in the `foreach` loop, some of the images have been added twice!
+    Vous pouvez voir les images ajoutées à la fenêtre de l’application. Étant donné que vous exécutez à nouveau le code dans le `foreach` boucle, certaines images ont été ajoutées à deux reprises.
     
     > [!WARNING]
-    > Often you need to be careful with this feature, and you see a warning in the tooltip. You may see other warnings, too. Moving the pointer cannot revert your application to an earlier app state.
+    > Fréquence à laquelle vous devez être prudent avec cette fonctionnalité, et un avertissement s’affiche dans l’info-bulle. Vous pouvez voir les autres avertissements, trop. Déplacer le pointeur ne peut pas rétablir votre application à un état antérieur de l’application.
 
-## <a name="run-to-cursor"></a>Run to cursor
+## <a name="run-to-cursor"></a>Exécuter jusqu'au curseur
 
-1. Choose the **Stop Debugging** red button ![Stop Debugging](../debugger/media/dbg-tour-stop-debugging.png "Stop Debugging") or Shift + F5.
+1. Choisissez le **arrêter le débogage** bouton rouge ![arrêter le débogage](../debugger/media/dbg-tour-stop-debugging.png "arrêter le débogage") ou MAJ + F5.
 
-2. In the `Update` method, right-click the `Add` method call and choose **Run to Cursor**. This command starts debugging and sets a temporary breakpoint on the current line of code.
+2. Dans le `Update` (méthode), avec le bouton droit le `Add` appel de méthode et choisissez **exécuter jusqu’au curseur**. Cette commande démarre le débogage et définit un point d’arrêt temporaire sur la ligne de code active.
 
-     ![Use the Run to Cursor feature](../debugger/media/dbg-tour-run-to-cursor.png "Run to Cursor")
+     ![Utilisez l’exécution de la fonctionnalité de curseur](../debugger/media/dbg-tour-run-to-cursor.png "exécuter jusqu’au curseur")
 
-    You should be paused on the breakpoint in `MainWindow` (since that is the first breakpoint.
+    Vous devez être suspendue sur le point d’arrêt dans `MainWindow` (puisque c’est le premier point d’arrêt.
 
-3. Press F5 to advance to the `Add` method where you selected **Run to Cursor**.
+3. Appuyez sur F5 pour passer à la `Add` méthode où vous avez sélectionné **exécuter jusqu’au curseur**.
 
-    This command is useful when you are editing code and want to quickly set a temporary breakpoint and start the debugger.
+    Cette commande est utile lorsque vous modifiez du code et que vous souhaitez définir un point d’arrêt temporaire rapidement et de démarrer le débogueur.
 
-## <a name="step-out"></a>Step out
+## <a name="step-out"></a>Pas à pas sortant
 
-Let's say that you are done examining the `Update` method in Data.cs, and you want to get out of the function but stay in the debugger. You can do this using the **Step Out** command.
+Supposons que vous avez terminé examinant le `Update` méthode dans Data.cs et que vous souhaitez tirer parti de la fonction, mais restent dans le débogueur. Ce faire, vous pouvez utiliser la **pas à pas sortant** commande.
 
-1. Press Shift + F11 (or **Debug > Step Out**).
+1. Appuyez sur MAJ + F11 (ou **Déboguer > pas à pas sortant**).
 
-     This command resumes app execution (and advances the debugger) until the current function returns.
+     Cette commande reprend l’exécution d’application (et avance le débogueur) jusqu’au retour de la fonction actuelle.
 
-     You should be back in the `Update` method call in Data.cs.
+     Vous devez être dans le `Update` appel de méthode dans Data.cs.
 
-2. Press Shift + F11 again, and the debugger goes up the call stack back to the `OnApplicationStartup` event handler.
+2. Appuyez sur MAJ + F11 à nouveau et que le débogueur passe la pile des appels pour revenir le `OnApplicationStartup` Gestionnaire d’événements.
 
-3. Press F5 to continue.
+3. Appuyez sur F5 pour continuer.
 
-## <a name="examine-an-exception"></a>Examine an exception
+## <a name="examine-an-exception"></a>Examiner une exception
 
-1. In the running app window, delete the text in the **Path** input box and select the **Change** button.
+1. Dans la fenêtre de l’application en cours d’exécution, supprimez le texte dans le **chemin d’accès** zone d’entrée, puis sélectionnez le **modification** bouton.
 
-     ![Cause an exception to be thrown](../debugger/media/dbg-tour-cause-an-exception.png "Cause an Exception")
+     ![Une exception levée](../debugger/media/dbg-tour-cause-an-exception.png "générer une Exception.")
 
-     The app throws an exception, and the debugger takes you to the line of code that threw the exception.
+     L’application lève une exception, et le débogueur vous amène à la ligne de code qui a levé l’exception.
      
-     ![Exception Helper](../debugger/media/dbg-tour-exception-helper.png "Exception Helper")
+     ![Assistance d’exception](../debugger/media/dbg-tour-exception-helper.png "assistance d’Exception")
 
-     Here, the **Exception Helper** shows you a `System.ArgumentException` and an error message that says that the path is not a legal form. So, we know the error occurred on a method or function argument.
+     Ici, le **assistance d’Exception** vous montre une `System.ArgumentException` et un message d’erreur indiquant que le chemin d’accès n’est pas une forme conforme. Par conséquent, nous savons que l’erreur s’est produite sur un argument de méthode ou fonction.
 
-     In this example, the `DirectoryInfo` call gave the error on the empty string stored in the `value` variable. (Hover over `value` to see the empty string.)
+     Dans cet exemple, le `DirectoryInfo` appel a renvoyé l’erreur sur la chaîne vide, stockée dans le `value` variable. (Placez le curseur sur `value` pour afficher la chaîne vide.)
 
-     The Exception Helper is a great feature that can help you debug errors. You can also do things like view error details and add a watch from the Exception Helper. Or, if needed, you can change conditions for throwing the particular exception.
+     L’application d’assistance de l’Exception est une fonctionnalité intéressante qui peut vous aider à déboguer les erreurs. Vous pouvez également effectuer les opérations vue Détails de l’erreur et ajouter un espion à partir de l’application d’assistance de l’Exception. Ou, si nécessaire, vous pouvez modifier les conditions pour lever l’exception particulière.
 
     >  [!NOTE] 
-    > The Exception Helper replaces the Exception Assistant in [!include[vs_dev15](../misc/includes/vs_dev15_md.md)].
+    > L’application d’assistance de l’Exception remplace l’Assistant Exception dans [!include[vs_dev15](../misc/includes/vs_dev15_md.md)].
 
-2. Expand the **Exception Settings** node to see more options on how to handle this exception type, but you don't need to change anything for this tour!
+2. Développez le **paramètres d’Exception** nœud pour afficher davantage d’options sur la façon de gérer ce type d’exception, mais vous n’avez pas besoin de modifications dans cette visite guidée !
 
-3. Press F5 to continue the app.
+3. Appuyez sur F5 pour poursuivre l’application.
 
-To learn more about the features of the debugger, see [Debugger Tips and Tricks](../debugger/debugger-tips-and-tricks.md).
+Pour en savoir plus sur les fonctionnalités du débogueur, consultez [débogueur trucs et astuces](../debugger/debugger-tips-and-tricks.md).
 
-## <a name="video"></a> Watch a video on debugging
+## <a name="video"></a>Regardez une vidéo sur le débogage
 
 <div style="padding-top: 56.25%; position: relative; width: 100%;">
 <iframe style="position: absolute;top: 0;left: 0;right: 0;bottom: 0;" width="100%" height="100%" src="https://mva.microsoft.com/en-US/training-courses-embed/getting-started-with-visual-studio-2017-17798/Debugger-Feature-tour-of-Visual-studio-2017-sqwiwLD6D_1111787171" frameborder="0" allowfullscreen></iframe>
 </div>
 
-## <a name="see-also"></a>See Also  
- [Debugging in Visual Studio](../debugger/index.md) [Debugger Feature Tour](../debugger/debugger-feature-tour.md)
-
+## <a name="see-also"></a>Voir aussi  
+ [Débogage dans Visual Studio](../debugger/index.md)  
+ [Visite guidée des fonctionnalités du débogueur](../debugger/debugger-feature-tour.md)

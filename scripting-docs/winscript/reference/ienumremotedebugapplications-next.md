@@ -1,27 +1,30 @@
 ---
-title: "IEnumRemoteDebugApplications::Next | Microsoft Docs"
-ms.custom: ""
-ms.date: "01/18/2017"
-ms.prod: "windows-script-interfaces"
-ms.reviewer: ""
-ms.suite: ""
-ms.tgt_pltfrm: ""
-ms.topic: "reference"
+title: IEnumRemoteDebugApplications::Next | Documents Microsoft
+ms.custom: 
+ms.date: 01/18/2017
+ms.prod: windows-script-interfaces
+ms.reviewer: 
+ms.suite: 
+ms.tgt_pltfrm: 
+ms.topic: reference
 apiname: IEnumRemoteDebugApplications.Next
 apilocation: scrobj.dll
-helpviewer_keywords: 
-  - "IEnumRemoteDebugApplications::Next"
+helpviewer_keywords: IEnumRemoteDebugApplications::Next
 ms.assetid: 33f6c620-6dd3-4057-b982-b88a7a1f02b4
-caps.latest.revision: 8
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 8
+caps.latest.revision: "8"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: 13853bd0a35a9bce1217241b5675a22de386b7dd
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.translationtype: MT
+ms.contentlocale: fr-FR
+ms.lasthandoff: 10/27/2017
 ---
-# IEnumRemoteDebugApplications::Next
-La méthode d' `Next` récupère un nombre spécifié de segments de la séquence d'énumération.  
+# <a name="ienumremotedebugapplicationsnext"></a>IEnumRemoteDebugApplications::Next
+Le `Next` méthode récupère un nombre spécifié de segments dans la séquence d’énumération.  
   
-## Syntaxe  
+## <a name="syntax"></a>Syntaxe  
   
 ```  
 HRESULT Next(  
@@ -31,25 +34,25 @@ HRESULT Next(
 );  
 ```  
   
-#### Paramètres  
+#### <a name="parameters"></a>Paramètres  
  `celt`  
- \[in\]  Le nombre de segments à récupérer.  
+ [in] Le nombre de segments à récupérer.  
   
  `ppda`  
- \[out\]  Retourne un tableau d'interfaces d' `IRemoteDebugApplication` qui représente les segments sont récupérés.  
+ [out] Retourne un tableau de `IRemoteDebugApplication` les interfaces qui représente les segments en cours de récupération.  
   
  `pceltFetched`  
- \[out\]  le nombre réel de segments extraits par l'énumérateur.  
+ [out] Le nombre réel de segments lues par l’énumérateur.  
   
-## Valeur de retour  
- La méthode retourne `HRESULT`.  Les valeurs possibles incluent, mais ne sont pas limitées à, celles dans le tableau suivant.  
+## <a name="return-value"></a>Valeur de retour  
+ La méthode retourne `HRESULT`. Les valeurs possibles sont notamment celles figurant dans le tableau suivant.  
   
 |Valeur|Description|  
-|------------|-----------------|  
+|-----------|-----------------|  
 |`S_OK`|La méthode a réussi.|  
   
-## Notes  
- Cette méthode extrait un nombre spécifié de segments de la séquence d'énumération.  
+## <a name="remarks"></a>Remarques  
+ Cette méthode récupère un nombre spécifié de segments dans la séquence d’énumération.  
   
-## Voir aussi  
- [IEnumRemoteDebugApplications, interface](../../winscript/reference/ienumremotedebugapplications-interface.md)
+## <a name="see-also"></a>Voir aussi  
+ [Interface IEnumRemoteDebugApplications](../../winscript/reference/ienumremotedebugapplications-interface.md)

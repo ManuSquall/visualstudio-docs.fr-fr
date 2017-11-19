@@ -1,46 +1,29 @@
 ---
-title: IDebugCoreServer3::CreateInstanceInServer | Microsoft Docs
+title: IDebugCoreServer3::CreateInstanceInServer | Documents Microsoft
 ms.custom: 
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-sdk
+ms.technology: vs-ide-sdk
 ms.tgt_pltfrm: 
 ms.topic: article
-f1_keywords:
-- IDebugCoreServer3::CreateInstanceInServer
-helpviewer_keywords:
-- IDebugCoreServer3::CreateInstanceInServer
+f1_keywords: IDebugCoreServer3::CreateInstanceInServer
+helpviewer_keywords: IDebugCoreServer3::CreateInstanceInServer
 ms.assetid: 76f36bae-f6ab-413c-a8a9-8808bfeba05b
-caps.latest.revision: 9
+caps.latest.revision: "9"
+author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-translation.priority.mt:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
+ms.openlocfilehash: a89657949938526fa8e53689ea04015253b52520
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
 ms.translationtype: MT
-ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
-ms.openlocfilehash: 9014642bc352ccec00787e8daefc938f0bd3a251
-ms.contentlocale: fr-fr
-ms.lasthandoff: 08/28/2017
-
+ms.contentlocale: fr-FR
+ms.lasthandoff: 10/31/2017
 ---
 # <a name="idebugcoreserver3createinstanceinserver"></a>IDebugCoreServer3::CreateInstanceInServer
-Creates an instance of a debug engine on the server.  
+Crée une instance d’un moteur de débogage sur le serveur.  
   
-## <a name="syntax"></a>Syntax  
+## <a name="syntax"></a>Syntaxe  
   
 ```cpp  
 HRESULT CreateInstanceInServer(  
@@ -62,25 +45,25 @@ int CreateInstanceInServer(
 );  
 ```  
   
-#### <a name="parameters"></a>Parameters  
+#### <a name="parameters"></a>Paramètres  
  `szDll`  
- [in] Path to the dll that implements the CLSID specified in the `clsidObject` parameter. If this is `NULL`, then COM's `CoCreateInstance` function is called.  
+ [in] Chemin d’accès à la dll qui implémente le CLSID spécifié dans le `clsidObject` paramètre. S’il s’agit `NULL`, puis COM `CoCreateInstance` est appelée.  
   
  `wLangId`  
- [in] Locale of the debug engine. This can be 0 if the [SetLocale](../../../extensibility/debugger/reference/idebugengine2-setlocale.md) method should not be called.  
+ [in] Paramètres régionaux du moteur de débogage. Cela peut être 0 si la [SetLocale](../../../extensibility/debugger/reference/idebugengine2-setlocale.md) méthode ne doit pas être appelée.  
   
  `clsidObject`  
- [in] CLSID of the debug engine to create.  
+ [in] CLSID du moteur de débogage à créer.  
   
  `riid`  
- [in] Interface ID of the specific interface to retrieve from the class object.  
+ [in] ID de l’interface spécifique pour récupérer à partir de l’objet de classe.  
   
  `ppvObject`  
- [out] `IUnknown` interface from the instantiated object. Cast or marshal this object to the desired interface.  
+ [out] `IUnknown` interface à partir de l’objet instancié. Effectuez un cast ou marshaler cet objet à l’interface souhaitée.  
   
-## <a name="return-value"></a>Return Value  
- If successful, returns `S_OK`; otherwise, returns an error code.  
+## <a name="return-value"></a>Valeur de retour  
+ En cas de réussite, retourne `S_OK`; sinon, retourne un code d’erreur.  
   
-## <a name="see-also"></a>See Also  
+## <a name="see-also"></a>Voir aussi  
  [IDebugCoreServer3](../../../extensibility/debugger/reference/idebugcoreserver3.md)   
  [SetLocale](../../../extensibility/debugger/reference/idebugengine2-setlocale.md)

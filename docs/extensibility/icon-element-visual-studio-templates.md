@@ -1,29 +1,33 @@
 ---
-title: "Icon, &#233;l&#233;ment (mod&#232;les Visual&#160;Studio) | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-general"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "http://schemas.microsoft.com/developer/vstemplate/2005#Icon"
-helpviewer_keywords: 
-  - "Icon (élément de modèles de projet Visual Studio)"
+title: "Icon, élément (modèles Visual Studio) | Documents Microsoft"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-general
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords: http://schemas.microsoft.com/developer/vstemplate/2005#Icon
+helpviewer_keywords: Icon element [Visual Studio project templates]
 ms.assetid: ec01d903-f4c2-4ca2-9cbc-e939ec84016c
-caps.latest.revision: 14
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 14
+caps.latest.revision: "14"
+author: gregvanl
+ms.author: gregvanl
+manager: ghogen
+ms.openlocfilehash: 00dd81c93e089a840c99efbd6165f005aff88b57
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: fr-FR
+ms.lasthandoff: 10/31/2017
 ---
-# Icon, &#233;l&#233;ment (mod&#232;les Visual&#160;Studio)
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
-
-Spécifie le chemin d'accès et le nom du fichier image qui servira d'icône et qui apparaîtra dans la boîte de dialogue **Nouveau projet** ou **Ajouter un nouvel élément** du modèle.  
+# <a name="icon-element-visual-studio-templates"></a>Icon, élément (modèles Visual Studio)
+Spécifie le chemin d’accès et le nom de fichier du fichier image qui sert d’icône qui s’affiche, que ce soit le **nouveau projet** ou le **ajouter un nouvel élément** boîte de dialogue, pour le modèle.  
   
-## Syntaxe  
+ \<VSTemplate >  
+ \<TemplateData >  
+ \<Icône >  
+  
+## <a name="syntax"></a>Syntaxe  
   
 ```  
 <Icon>  
@@ -35,35 +39,35 @@ Spécifie le chemin d'accès et le nom du fichier image qui servira d'icône et 
 <Icon Package="{PackageID}" ID="ResourceID" />  
 ```  
   
-## Attributs et éléments  
+## <a name="attributes-and-elements"></a>Attributs et éléments  
  Les sections suivantes décrivent des attributs, des éléments enfants et des éléments parents.  
   
-### Attributs  
+### <a name="attributes"></a>Attributs  
   
 |Attribut|Description|  
-|--------------|-----------------|  
-|`Package`|Attribut facultatif, pour les scénarios complexes.<br /><br /> GUID qui spécifie l'ID du package Visual Studio.|  
-|`ID`|Attribut facultatif, pour les scénarios complexes.<br /><br /> Spécifie l'ID de ressource Visual Studio.|  
+|---------------|-----------------|  
+|`Package`|Attribut facultatif, pour les scénarios complexes.<br /><br /> ID un GUID qui spécifie le package Visual Studio d'.|  
+|`ID`|Attribut facultatif, pour les scénarios complexes.<br /><br /> Spécifie l’ID de ressource de Visual Studio.|  
   
-### Éléments enfants  
- Aucun  
+### <a name="child-elements"></a>Éléments enfants  
+ Aucun.  
   
-### Éléments parents  
+### <a name="parent-elements"></a>Éléments parents  
   
 |Élément|Description|  
 |-------------|-----------------|  
-|[TemplateData](../extensibility/templatedata-element-visual-studio-templates.md)|Élément requis.<br /><br /> Classe le modèle dans une catégorie et définit la façon dont il s'affiche dans la boîte de dialogue **Nouveau projet** ou **Ajouter un nouvel élément**.|  
+|[TemplateData](../extensibility/templatedata-element-visual-studio-templates.md)|Élément requis.<br /><br /> Définit la catégorie du modèle et comment il s’affiche dans la boîte de dialogue **Nouveau projet** ou **Ajouter un nouvel élément** .|  
   
-## Valeur texte  
- Une valeur texte est requise, sauf en cas d'utilisation des attributs `Package` et `ID`.  
+## <a name="text-value"></a>Valeur texte  
+ Une valeur texte est requise à moins que le `Package` et `ID` les attributs sont utilisés.  
   
- Le texte fournit le chemin d'accès et le nom du fichier associé à l'icône de modèle qui apparaîtra dans la boîte de dialogue **Nouveau projet**.  
+ Le texte fournit le chemin d’accès et le nom de l’icône de modèle qui apparaîtra dans le **nouveau projet** boîte de dialogue.  
   
-## Notes  
- L'élément `Icon` est un enfant obligatoire de l'élément `TemplateData`.  
+## <a name="remarks"></a>Remarques  
+ `Icon` est un élément enfant obligatoire de `TemplateData`.  
   
-## Exemple  
- L'exemple suivant affiche les métadonnées d'un modèle de projet pour une application [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)].  
+## <a name="example"></a>Exemple  
+ L’exemple suivant affiche les métadonnées d’un modèle de projet pour un [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] application.  
   
 ```  
 <VSTemplate Type="Project" Version="3.0.0"  
@@ -89,6 +93,6 @@ Spécifie le chemin d'accès et le nom du fichier image qui servira d'icône et 
 </VSTemplate>  
 ```  
   
-## Voir aussi  
- [Référence du schéma de modèle Visual Studio](../extensibility/visual-studio-template-schema-reference.md)   
- [Création de modèles de projets et d'éléments personnalisés](../ide/creating-project-and-item-templates.md)
+## <a name="see-also"></a>Voir aussi  
+ [Référence du schéma de modèle Visual Studio](../extensibility/visual-studio-template-schema-reference.md)   
+ [Création de modèles de projet et d’élément](../ide/creating-project-and-item-templates.md)

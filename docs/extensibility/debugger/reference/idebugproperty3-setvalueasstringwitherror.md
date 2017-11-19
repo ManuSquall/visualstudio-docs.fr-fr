@@ -1,46 +1,29 @@
 ---
-title: IDebugProperty3::SetValueAsStringWithError | Microsoft Docs
+title: IDebugProperty3::SetValueAsStringWithError | Documents Microsoft
 ms.custom: 
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-sdk
+ms.technology: vs-ide-sdk
 ms.tgt_pltfrm: 
 ms.topic: article
-f1_keywords:
-- IDebugProperty3::SetValueAsStringWithError
-helpviewer_keywords:
-- IDebugProperty3::SetValueAsStringWithError
+f1_keywords: IDebugProperty3::SetValueAsStringWithError
+helpviewer_keywords: IDebugProperty3::SetValueAsStringWithError
 ms.assetid: b378368f-4a45-4b2f-8e3d-3bff7a18ab17
-caps.latest.revision: 11
+caps.latest.revision: "11"
+author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-translation.priority.mt:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
+ms.openlocfilehash: d713d4d29b0e7a0e51f998efe460ae75a8dbd0b6
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
 ms.translationtype: MT
-ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
-ms.openlocfilehash: cec26257ab5c283c82846ff477b3e929e40194f1
-ms.contentlocale: fr-fr
-ms.lasthandoff: 08/28/2017
-
+ms.contentlocale: fr-FR
+ms.lasthandoff: 10/31/2017
 ---
 # <a name="idebugproperty3setvalueasstringwitherror"></a>IDebugProperty3::SetValueAsStringWithError
-Sets the value of this property and returns an error message, if necessary.  
+Définit la valeur de cette propriété et retourne un message d’erreur, si nécessaire.  
   
-## <a name="syntax"></a>Syntax  
+## <a name="syntax"></a>Syntaxe  
   
 ```cpp  
 HRESULT SetValueAsStringWithError(  
@@ -60,27 +43,27 @@ int SetValueAsStringWithError(
 );  
 ```  
   
-#### <a name="parameters"></a>Parameters  
+#### <a name="parameters"></a>Paramètres  
  `pszValue`  
- [in] Value to set.  
+ [in] Valeur à définir.  
   
  `dwRadix`  
- [in] The radix of the value being set.  
+ [in] La base de la valeur définie.  
   
  `dwTimeout`  
- [in] The length of time to wait for the value to be set (`INFINITE` means wait forever).  
+ [in] La longueur du délai d’attente pour la valeur à définir (`INFINITE` attente infinie).  
   
  `errorString`  
- [out] If there was an error setting the value, this holds the reason for the failure.  
+ [out] S’il existe une erreur de définition de la valeur, il conserve la raison de l’échec.  
   
-## <a name="return-value"></a>Return Value  
- If successful, returns `S_OK`; otherwise, returns an error code.  
+## <a name="return-value"></a>Valeur de retour  
+ En cas de réussite, retourne `S_OK`; sinon, retourne un code d’erreur.  
   
-## <a name="remarks"></a>Remarks  
- The incoming value could be an expression to be evaluated.  
+## <a name="remarks"></a>Remarques  
+ La valeur entrante peut être une expression à évaluer.  
   
-## <a name="example"></a>Example  
- The following example shows how to implement this method for a **CProperty** object that exposes the [IDebugProperty3](../../../extensibility/debugger/reference/idebugproperty3.md) interface.  
+## <a name="example"></a>Exemple  
+ L’exemple suivant montre comment implémenter cette méthode pour un **CProperty** objet qui expose la [IDebugProperty3](../../../extensibility/debugger/reference/idebugproperty3.md) interface.  
   
 ```cpp  
 HRESULT CProperty::SetValueAsStringWithError(   
@@ -184,5 +167,5 @@ HRESULT CProperty::SetValueAsStringWithError(
 }  
 ```  
   
-## <a name="see-also"></a>See Also  
+## <a name="see-also"></a>Voir aussi  
  [IDebugProperty3](../../../extensibility/debugger/reference/idebugproperty3.md)

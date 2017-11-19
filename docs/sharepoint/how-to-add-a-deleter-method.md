@@ -1,12 +1,10 @@
 ---
-title: 'How to: Add a Deleter Method | Microsoft Docs'
+title: "Comment : ajouter une méthode de suppression | Documents Microsoft"
 ms.custom: 
 ms.date: 02/02/2017
-ms.prod: visual-studio-dev14
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- office-development
+ms.technology: office-development
 ms.tgt_pltfrm: 
 ms.topic: article
 dev_langs:
@@ -24,64 +22,64 @@ helpviewer_keywords:
 - Business Data Connectivity service [SharePoint development in Visual Studio], deleting data
 - Business Data Connectivity service [SharePoint development in Visual Studio], removing data
 ms.assetid: 3362eaf4-5dc7-4450-9009-b296308ae61f
-caps.latest.revision: 21
-author: kempb
-ms.author: kempb
+caps.latest.revision: "21"
+author: gewarren
+ms.author: gewarren
 manager: ghogen
-ms.translationtype: HT
-ms.sourcegitcommit: eb5c9550fd29b0e98bf63a7240737da4f13f3249
-ms.openlocfilehash: c4c224bf69149628d17d833a1f1e7cb312f93a31
-ms.contentlocale: fr-fr
-ms.lasthandoff: 08/30/2017
-
+ms.openlocfilehash: 8c1e6f76c1c425ce31b518e9c4cb3db4d6280e84
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: fr-FR
+ms.lasthandoff: 10/31/2017
 ---
-# <a name="how-to-add-a-deleter-method"></a>How to: Add a Deleter Method
-  You can enable an end user to delete a data record from an external list on a SharePoint site by adding a *Deleter* method to the model. For more information, see [Designing a Business Data Connectivity Model](../sharepoint/designing-a-business-data-connectivity-model.md).  
+# <a name="how-to-add-a-deleter-method"></a>Comment : ajouter une méthode de suppression
+  Vous pouvez activer un utilisateur final de supprimer un enregistrement de données à partir d’une liste externe sur un site SharePoint en ajoutant une *SUPPRESSEUR* méthode au modèle. Pour plus d’informations, consultez [vous concevez un modèle de connectivité de données métiers](../sharepoint/designing-a-business-data-connectivity-model.md).  
   
-### <a name="to-create-a-deleter-method"></a>To create a Deleter method  
+### <a name="to-create-a-deleter-method"></a>Pour créer une méthode de suppression  
   
-1.  On the BDC designer, choose an entity.  
+1.  Dans le concepteur BDC, choisissez une entité.  
   
-2.  On the menu bar, choose **View**, **Other Windows**, **BDC Method Details**.  
+2.  Dans la barre de menus, choisissez **vue**, **autres fenêtres**, **détails de méthode BDC**.  
   
-     The **BDC Method Details** window opens. For more information about this window, see [BDC Model Design Tools Overview](../sharepoint/bdc-model-design-tools-overview.md).  
+     Le **détails de méthode BDC** fenêtre s’ouvre. Pour plus d’informations sur cette fenêtre, consultez [vue d’ensemble des outils de conception modèle BDC](../sharepoint/bdc-model-design-tools-overview.md).  
   
-3.  In the **Add a Method** list, choose **Create a Deleter Method**.  
+3.  Dans le **ajouter une méthode** , choisissez **créer une méthode de suppression**.  
   
-     Visual Studio adds the following elements to the model. These elements appear in the **BDC Method Details** window.  
+     Visual Studio ajoute les éléments suivants au modèle. Ces éléments apparaissent dans le **détails de méthode BDC** fenêtre.  
   
-    -   A method named **Delete**.  
+    -   Une méthode nommée **supprimer**.  
   
-    -   An input parameter for the method.  
+    -   Un paramètre d’entrée pour la méthode.  
   
-    -   A type descriptor for the parameter.  
+    -   Un descripteur de type pour le paramètre.  
   
-    -   A method instance for the method.  
+    -   Une instance de méthode pour la méthode.  
   
-     For more information, see [Designing a Business Data Connectivity Model](../sharepoint/designing-a-business-data-connectivity-model.md).  
+     Pour plus d’informations, consultez [vous concevez un modèle de connectivité de données métiers](../sharepoint/designing-a-business-data-connectivity-model.md).  
   
-4.  In **Solution Explorer**, open the shortcut menu of the service code file that was generated for the entity, and then choose **View Code**.  
+4.  Dans **l’Explorateur de solutions**, ouvrez le menu contextuel du service fichier de code qui a été généré pour l’entité, puis choisissez **afficher le Code**.  
   
-     The entity service code file opens in the Code Editor. For more information about the entity service code file, see [Creating a Business Data Connectivity Model](../sharepoint/creating-a-business-data-connectivity-model.md).  
+     Le fichier de code de service entité s’ouvre dans l’éditeur de Code. Pour plus d’informations sur le fichier de code de service entité, consultez [création d’un modèle de connectivité de données métiers](../sharepoint/creating-a-business-data-connectivity-model.md).  
   
-5.  Add code to the Deleter method to delete a record. The following example deletes a line item from a sales order by using the AdventureWorks sample database for SQL Server.  
-  
-    > [!NOTE]  
-    >  The method in this example uses two input parameters.  
+5.  Ajoutez le code à la méthode de suppression pour supprimer un enregistrement. L’exemple suivant supprime un élément de ligne à partir d’une commande client à l’aide de la base de données AdventureWorks pour SQL Server.  
   
     > [!NOTE]  
-    >  Replace the value of the `ServerName` field with the name of your server.  
+    >  La méthode dans cet exemple utilise deux paramètres d’entrée.  
   
-     [!code-csharp[SP_BDC#6](../sharepoint/codesnippet/CSharp/SP_BDC/bdcmodel1/salesorderdetailservice.cs#6)]  [!code-vb[SP_BDC#6](../sharepoint/codesnippet/VisualBasic/sp_bdc/bdcmodel1/salesorderdetailservice.vb#6)]  
+    > [!NOTE]  
+    >  Remplacez la valeur de la `ServerName` champ avec le nom de votre serveur.  
   
-## <a name="see-also"></a>See Also  
- [Designing a Business Data Connectivity Model](../sharepoint/designing-a-business-data-connectivity-model.md)   
- [How to: Add a Finder Method](../sharepoint/how-to-add-a-finder-method.md)   
- [How to: Add a Specific Finder Method](../sharepoint/how-to-add-a-specific-finder-method.md)   
- [How to: Add a Creator Method](../sharepoint/how-to-add-a-creator-method.md)   
- [How to: Add an Updater Method](../sharepoint/how-to-add-an-updater-method.md)   
- [BDC Model Design Tools Overview](../sharepoint/bdc-model-design-tools-overview.md)   
- [How to: Add a Parameter to a Method](../sharepoint/how-to-add-a-parameter-to-a-method.md)   
- [How to: Define a Method Instance](../sharepoint/how-to-define-a-method-instance.md)  
+     [!code-csharp[SP_BDC#6](../sharepoint/codesnippet/CSharp/SP_BDC/bdcmodel1/salesorderdetailservice.cs#6)]
+     [!code-vb[SP_BDC#6](../sharepoint/codesnippet/VisualBasic/sp_bdc/bdcmodel1/salesorderdetailservice.vb#6)]  
+  
+## <a name="see-also"></a>Voir aussi  
+ [Conception d’un modèle de connectivité de données métiers](../sharepoint/designing-a-business-data-connectivity-model.md)   
+ [Comment : ajouter une méthode de recherche](../sharepoint/how-to-add-a-finder-method.md)   
+ [Comment : ajouter une méthode de recherche spécifique](../sharepoint/how-to-add-a-specific-finder-method.md)   
+ [Comment : ajouter une méthode de création](../sharepoint/how-to-add-a-creator-method.md)   
+ [Comment : ajouter une méthode de mise à jour](../sharepoint/how-to-add-an-updater-method.md)   
+ [Présentation des outils de conception modèle BDC](../sharepoint/bdc-model-design-tools-overview.md)   
+ [Comment : ajouter un paramètre à une méthode](../sharepoint/how-to-add-a-parameter-to-a-method.md)   
+ [Guide pratique pour définir une instance de méthode](../sharepoint/how-to-define-a-method-instance.md)  
   
   

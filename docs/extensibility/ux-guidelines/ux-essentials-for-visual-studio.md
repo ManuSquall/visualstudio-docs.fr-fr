@@ -4,34 +4,19 @@ ms.custom:
 ms.date: 04/26/2017
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-sdk
+ms.technology: vs-ide-sdk
 ms.tgt_pltfrm: 
 ms.topic: article
 ms.assetid: a793cf7a-f230-43ce-88d0-fa5d6f1aa9c7
-caps.latest.revision: 7
+caps.latest.revision: "7"
+author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-translation.priority.mt:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
-ms.translationtype: Machine Translation
-ms.sourcegitcommit: 9524ecc3cadef58821fba857de8e82e59eea9b43
-ms.openlocfilehash: 19db4e41ef35ddbec4f43823d4bf66bb148a854f
-ms.contentlocale: fr-fr
-ms.lasthandoff: 05/04/2017
-
+ms.openlocfilehash: 368540b909536523515ea610e509b22600628f81
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: fr-FR
+ms.lasthandoff: 10/31/2017
 ---
 # <a name="ux-essentials-for-visual-studio"></a>Essentials expérience utilisateur pour Visual Studio
 ## <a name="best-practices"></a>meilleures pratiques recommandées.  
@@ -99,7 +84,7 @@ ms.lasthandoff: 05/04/2017
   
  Dans ce cas, il existe un problème supplémentaire, car l’icône utilisée pour l’alerte contient un «&times;» icône, l’icône de suppression commun ne peut pas être utilisée en regard. Par conséquent, l’interface utilisateur utilise un bouton Supprimer, un contrôle plus maladroites.  
   
- ![Placement de l’interface utilisateur dans un état d’erreur par défaut est un anti-modèle de Visual Studio.](~/extensibility/ux-guidelines/media/manifestdesignererrordeclarationsanti-pattern.png "ManifestDesignererrordeclarationsanti-pattern")<br />Placement de l’interface utilisateur dans un état d’erreur par défaut est un anti-modèle de Visual Studio.
+ ![Placement de l’interface utilisateur dans un état d’erreur par défaut est un anti-modèle de Visual Studio. ] (../../extensibility/ux-guidelines/media/manifestdesignererrordeclarationsanti-pattern.png "ManifestDesignererrordeclarationsanti-modèle")<br />Placement de l’interface utilisateur dans un état d’erreur par défaut est un anti-modèle de Visual Studio.
   
 #### <a name="alternatives"></a>Alternatives  
  Une meilleure solution à ce problème serait la suivante :  
@@ -122,7 +107,7 @@ ms.lasthandoff: 05/04/2017
 Forcer l’utilisateur à lire le texte explicatif avant de faire disparaître de l’interface utilisateur est un anti-modèle dans Visual Studio. Liens vidéos correctement conçus doivent afficher une info-bulle avec des informations supplémentaires sur pointage et en cliquant sur le «&times;» doit fermer le message sans avoir besoin de davantage d’interaction.
 
 
- ![Explicatif texte anti &#45; modèle &#45; incorrect](~/extensibility/ux-guidelines/media/incorrectuseofmultipleclicks.png "Incorrectuseofmultipleclicks")<br />Modèle de lien vidéo incorrect
+ ![Explicatif texte anti &#45; modèle &#45; incorrect](../../extensibility/ux-guidelines/media/incorrectuseofmultipleclicks.png "Incorrectuseofmultipleclicks")<br />Modèle de lien vidéo incorrect
   
 #### <a name="result"></a>Résultat  
  Au lieu d’un bouton Fermer simple (un seul clic), l’utilisateur est obligé d’utiliser deux clics pour simplement fermer l’interface utilisateur en place pour tous les liens vidéos s’affichent.  
@@ -130,20 +115,20 @@ Forcer l’utilisateur à lire le texte explicatif avant de faire disparaître d
 #### <a name="alternatives"></a>Alternatives  
  La conception correcte pour cette situation serait suive le modèle commun pour Internet Explorer, Office et Visual Studio : pointage, l’utilisateur peut voir la description de l’info-bulle et d’un seul clic masque l’interface utilisateur.  
   
- ![Explicatif texte anti &#45; modèle &#45; corriger](~/extensibility/ux-guidelines/media/explanatorytextanti-pattern-correct.png "Explanatorytextanti-pattern-correct")<br />Modèle de lien vidéo correct
+ ![Explicatif texte anti &#45; modèle &#45; correct](../../extensibility/ux-guidelines/media/explanatorytextanti-pattern-correct.png "Explanatorytextanti-modèle corriger")<br />Modèle de lien vidéo correct
   
 ### <a name="using-command-bars-for-settings"></a>À l’aide des barres de commandes pour les paramètres  
  **Figure A** représente cette anti-modèle : placement d’un paramètre en dessous d’un bouton de commande qui s’applique au plus que la commande. Dans ce croquis, il existe des commandes autres que de démarrer le débogage, comme les afficher dans le navigateur, démarrer sans débogage et pas à pas détaillé, qui respecte le paramètre sélectionné.  
 
-  ![Figure r : anti-modèle barre de commandes](~/extensibility/ux-guidelines/media/commandbaranti-pattern-figurea.png "Commandbaranti-pattern-FigureA")<br />Figure r : anti-modèle barre de commandes
+  ![Figure A: anti-modèle de barre de commandes](../../extensibility/ux-guidelines/media/commandbaranti-pattern-figurea.png "Commandbaranti-modèle-FigureA")<br />Figure r : anti-modèle barre de commandes
   
  Indésirable légèrement meilleur, mais il existe néanmoins, pour placer des paramètres de ce type dans les barres d’outils, comme indiqué dans **Figure B**. Alors que les boutons partagés occupent moins de place et sont par conséquent d’une amélioration sur les zones déroulantes, ces deux conceptions utilisent toujours une barre d’outils pour promouvoir un élément qui n’est pas vraiment une commande.  
  
- ![Figure b : meilleur, mais toujours un anti-modèle de barre de commandes](~/extensibility/ux-guidelines/media/commandbaranti-pattern-figureb.png "Commandbaranti-pattern-FigureB")<br />Figure b : meilleur, mais toujours un anti-modèle de barre de commandes
+ ![Figure b : favorable, mais toujours un anti-modèle de barre de commandes](../../extensibility/ux-guidelines/media/commandbaranti-pattern-figureb.png "Commandbaranti-modèle-FigureB")<br />Figure b : meilleur, mais toujours un anti-modèle de barre de commandes
  
   Dans l’approche correcte illustré **Figure C**, le paramètre est lié à une série de commandes. Il n’existe aucun paramètre global défini et nous allons simplement passer quatre commandes. Il s’agit du seul cas dans lequel les commandes dans la barre d’outils sont acceptables. 
 
- ![Utilisez figure C: correcte du modèle de barre de commandes Visual Studio](~/extensibility/ux-guidelines/media/commandbaranti-pattern-figurec.png "Commandbaranti-pattern-FigureC")<br />Utilisez figure C: correcte du modèle de barre de commandes Visual Studio
+ ![Figure C: corriger l’utilisation du modèle de barre de commandes de Visual Studio](../../extensibility/ux-guidelines/media/commandbaranti-pattern-figurec.png "Commandbaranti-modèle-FigureC")<br />Utilisez figure C: correcte du modèle de barre de commandes Visual Studio
    
 ### <a name="control-anti-patterns"></a>Anti-modèles de contrôle  
  Anti-modèles de certains sont utilisation simplement incorrecte ou une présentation d’un contrôle ou d’un groupe de contrôles.  
@@ -152,15 +137,15 @@ Forcer l’utilisateur à lire le texte explicatif avant de faire disparaître d
  Souligner le texte doit être utilisé uniquement pour les liens hypertexte.  
   
  **Incorrect :**    
- ![Texte souligné qui n’est pas un lien hypertexte est un modèle de protection de Visual Studio.](~/extensibility/ux-guidelines/media/0102-g_grouplabelincorrect.png "0102-g_GroupLabelIncorrect")<br />Texte souligné qui n’est pas un lien hypertexte est un modèle de protection de Visual Studio.
+ ![Texte souligné qui n’est pas un lien hypertexte est un modèle de protection de Visual Studio. ] (../../extensibility/ux-guidelines/media/0102-g_grouplabelincorrect.png "g_GroupLabelIncorrect-0102")<br />Texte souligné qui n’est pas un lien hypertexte est un modèle de protection de Visual Studio.
   
  **Bonne :**   
- ![Style correct, non-un lien hypertexte s’affiche sans ornement dans la police d’environnement.](~/extensibility/ux-guidelines/media/0102-h_grouplabelcorrect.png "0102-h_GroupLabelCorrect")<br />Style correct, non-un lien hypertexte s’affiche sans ornement dans la police d’environnement.
+ ![Style correct, non-un lien hypertexte s’affiche sans ornement dans la police d’environnement. ] (../../extensibility/ux-guidelines/media/0102-h_grouplabelcorrect.png "h_GroupLabelCorrect-0102")<br />Style correct, non-un lien hypertexte s’affiche sans ornement dans la police d’environnement.
   
 #### <a name="clicking-on-a-check-box-results-in-a-pop-up-dialog"></a>En cliquant sur une case à cocher des résultats dans une boîte de dialogue contextuelle  
  Cliquer sur la case à cocher « Activer le Bureau à distance pour tous les rôles » dans l’Assistant « Publier une Application Windows Azure » immédiatement pour afficher une boîte de dialogue contextuelle, anti-modèle de Visual Studio. En outre, le champ de case à cocher ne remplit pas avec une case à cocher après avoir été sélectionné, un autre anti-modèle interaction.  
   
- ![Afficher une boîte de dialogue une fois en cliquant sur une case à cocher anti-modèle de Visual Studio.](~/extensibility/ux-guidelines/media/0102-i_checkboxpopup.png "0102-i_CheckboxPopup")<br />Afficher une boîte de dialogue une fois en cliquant sur une case à cocher anti-modèle de Visual Studio.
+ ![Afficher une boîte de dialogue une fois en cliquant sur une case à cocher anti-modèle de Visual Studio. ] (../../extensibility/ux-guidelines/media/0102-i_checkboxpopup.png "i_CheckboxPopup-0102")<br />Afficher une boîte de dialogue une fois en cliquant sur une case à cocher anti-modèle de Visual Studio.
   
 ### <a name="hyperlink-anti-patterns"></a>Anti-modèles de lien hypertexte  
  L’exemple suivant contient deux anti-modèles.  
@@ -169,7 +154,7 @@ Forcer l’utilisateur à lire le texte explicatif avant de faire disparaître d
   
 2.  « En savoir plus » n’est pas le texte approprié pour un lien vers une rubrique conceptuelle. L’utilisateur vise ne pas à en savoir plus, qu'il est de comprendre les conséquences de leur choix.  
   
- ![En ignorant le service de couleur et à l’aide de « En savoir plus » pour les liens hypertexte sont anti-modèles de Visual Studio.](~/extensibility/ux-guidelines/media/0102-j_hyperlinkincorrect.png "0102-j_HyperlinkIncorrect")<br />En ignorant le service de couleur et à l’aide de « En savoir plus » pour les liens hypertexte sont anti-modèles de Visual Studio.  
+ ![En ignorant le service de couleur et à l’aide de « En savoir plus » pour les liens hypertexte sont anti-modèles de Visual Studio. ] (../../extensibility/ux-guidelines/media/0102-j_hyperlinkincorrect.png "j_HyperlinkIncorrect-0102")<br />En ignorant le service de couleur et à l’aide de « En savoir plus » pour les liens hypertexte sont anti-modèles de Visual Studio.  
   
  **Une meilleure solution :** poser la question de l’utilisateur aurait poser en cliquant sur le lien.  
   

@@ -1,12 +1,10 @@
 ---
-title: 'Walkthrough: Creating a Custom Tab by Using Ribbon XML | Microsoft Docs'
+title: "Procédure pas à pas : Création d’un onglet personnalisé à l’aide du ruban XML | Documents Microsoft"
 ms.custom: 
 ms.date: 02/02/2017
-ms.prod: visual-studio-dev14
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- office-development
+ms.technology: office-development
 ms.tgt_pltfrm: 
 ms.topic: article
 dev_langs:
@@ -20,78 +18,78 @@ helpviewer_keywords:
 - Ribbon [Office development in Visual Studio], customizing
 - Custom tab [Office development in Visual Studio]
 ms.assetid: f6391a01-df1a-4a0f-bfbb-a9526c73b2b3
-caps.latest.revision: 35
-author: kempb
-ms.author: kempb
+caps.latest.revision: "35"
+author: gewarren
+ms.author: gewarren
 manager: ghogen
-ms.translationtype: HT
-ms.sourcegitcommit: eb5c9550fd29b0e98bf63a7240737da4f13f3249
-ms.openlocfilehash: c244548c3c890e449d785473fed9b55935163a9e
-ms.contentlocale: fr-fr
-ms.lasthandoff: 08/30/2017
-
+ms.openlocfilehash: fbb628ffc8f52de34aa67ad5888b7110d1bc7da2
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: fr-FR
+ms.lasthandoff: 10/31/2017
 ---
-# <a name="walkthrough-creating-a-custom-tab-by-using-ribbon-xml"></a>Walkthrough: Creating a Custom Tab by Using Ribbon XML
-  This walkthrough demonstrates how to create a custom Ribbon tab by using the **Ribbon (XML)** item.  
+# <a name="walkthrough-creating-a-custom-tab-by-using-ribbon-xml"></a>Procédure pas à pas : création d'un onglet personnalisé à l'aide d'un élément XML Ribbon
+  Cette procédure pas à pas montre comment créer un onglet de ruban personnalisé à l’aide de la **ruban (XML)** élément.  
   
  [!INCLUDE[appliesto_ribbon](../vsto/includes/appliesto-ribbon-md.md)]  
   
- This walkthrough illustrates the following tasks:  
+ Cette procédure pas à pas décrit les tâches suivantes :  
   
--   Adding buttons to the **Add-Ins** tab. The **Add-Ins** tab is the default tab that is defined in the Ribbon XML file.  
+-   Ajout de boutons à la **compléments** onglet. Le **compléments** onglet par défaut qui est défini dans le fichier XML du ruban.  
   
--   Automating Microsoft Office Word by using the buttons on the **Add-Ins** tab.  
+-   Automatisation de Microsoft Office Word en utilisant les boutons sur le **compléments** onglet.  
   
 > [!NOTE]  
->  Your computer might show different names or locations for some of the Visual Studio user interface elements in the following instructions. The Visual Studio edition that you have and the settings that you use determine these elements. For more information, see [Personalize the Visual Studio IDE](../ide/personalizing-the-visual-studio-ide.md).  
+>  Il est possible que pour certains des éléments de l’interface utilisateur de Visual Studio, votre ordinateur affiche des noms ou des emplacements différents de ceux indiqués dans les instructions suivantes. L'édition de Visual Studio dont vous disposez et les paramètres que vous utilisez déterminent ces éléments. Pour plus d’informations, consultez [Personnaliser l’IDE Visual Studio](../ide/personalizing-the-visual-studio-ide.md).  
   
-## <a name="prerequisites"></a>Prerequisites  
- You need the following components to complete this walkthrough:  
+## <a name="prerequisites"></a>Conditions préalables  
+ Pour exécuter cette procédure pas à pas, vous devez disposer des composants suivants :  
   
 -   [!INCLUDE[vsto_vsprereq](../vsto/includes/vsto-vsprereq-md.md)]  
   
 -   Microsoft Word.  
   
-## <a name="creating-the-project"></a>Creating the Project  
- The first step is to create a Word VSTO Add-in project. You will later customize the **Add-Ins** tab of this document.  
+## <a name="creating-the-project"></a>Création du projet  
+ La première étape consiste à créer un projet de complément VSTO Word. Vous personnaliserez ultérieurement le **compléments** onglet de ce document.  
   
-#### <a name="to-create-a-new-project"></a>To create a new project  
+#### <a name="to-create-a-new-project"></a>Pour créer un projet  
   
-1.  Create a **Word Add-in** project with the name **MyRibbonAddIn**.  
+1.  Créer un **complément Word** projet portant le nom **MyRibbonAddIn**.  
   
-     For more information, see [How to: Create Office Projects in Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md).  
+     Pour plus d'informations, consultez [How to: Create Office Projects in Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md).  
   
-     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] opens the **ThisAddIn.cs** or **ThisAddIn.vb** code file and adds the **MyRibbonAddIn** project to **Solution Explorer**.  
+     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]Ouvre le **ThisAddIn.cs** ou **ThisAddIn.vb** fichier de code et l’ajoute le **MyRibbonAddIn** projet **l’Explorateur de solutions**.  
   
-## <a name="creating-the-vsto-add-ins-tab"></a>Creating the VSTO Add-ins Tab  
- To create the **Add-Ins** tab, add a **Ribbon (XML)** item to your project. Later in this walkthrough, you will add some buttons to this tab.  
+## <a name="creating-the-vsto-add-ins-tab"></a>Création de l’onglet Compléments VSTO  
+ Pour créer le **compléments** onglet, ajoutez un **ruban (XML)** élément à votre projet. À une étape ultérieure de cette procédure pas à pas, vous ajouterez des boutons à cet onglet.  
   
-#### <a name="to-create-the-add-ins-tab"></a>To create the Add-Ins tab  
+#### <a name="to-create-the-add-ins-tab"></a>Pour créer l'onglet Compléments  
   
-1.  On the **Project** menu, click **Add New Item**.  
+1.  Dans le menu **Projet** , cliquez sur **Ajouter un nouvel élément**.  
   
-2.  In the **Add New Item** dialog box, select **Ribbon (XML)**.  
+2.  Dans le **ajouter un nouvel élément** boîte de dialogue, sélectionnez **ruban (XML)**.  
   
-3.  Change the name of the new Ribbon to **MyRibbon**, and click **Add**.  
+3.  Remplacez le nom du nouveau ruban par **MyRibbon**, puis cliquez sur **Ajouter**.  
   
-     The **MyRibbon.cs** or **MyRibbon.vb** file opens in the designer. An XML file that is named **MyRibbon.xml** is also added to your project.  
+     Le **MyRibbon.cs** ou **MyRibbon.vb** fichier s’ouvre dans le concepteur. Un fichier XML nommé **MyRibbon.xml** est également ajouté à votre projet.  
   
-4.  In **Solution Explorer**, right-click **ThisAddin.cs** or **ThisAddin.vb**, and then click **View Code**.  
+4.  Dans **l’Explorateur de solutions**, avec le bouton droit **ThisAddin.cs** ou **ThisAddin.vb**, puis cliquez sur **afficher le Code**.  
   
-5.  Add the following code to the **ThisAddin** class. This code overrides the CreateRibbonExtensibilityObject method and returns the Ribbon XML class to the Office application.  
+5.  Ajoutez le code suivant à la classe **ThisAddin** . Ce code substitue la méthode CreateRibbonExtensibilityObject et retourne la classe Ribbon XML à l’application Office.  
   
-     [!code-csharp[Trin_Ribbon_Custom_Tab_XML#1](../vsto/codesnippet/CSharp/Trin_Ribbon_Custom_Tab_XML_O12/ThisAddIn.cs#1)]  [!code-vb[Trin_Ribbon_Custom_Tab_XML#1](../vsto/codesnippet/VisualBasic/Trin_Ribbon_Custom_Tab_XML_O12/ThisAddIn.vb#1)]  
+     [!code-csharp[Trin_Ribbon_Custom_Tab_XML#1](../vsto/codesnippet/CSharp/Trin_Ribbon_Custom_Tab_XML_O12/ThisAddIn.cs#1)]
+     [!code-vb[Trin_Ribbon_Custom_Tab_XML#1](../vsto/codesnippet/VisualBasic/Trin_Ribbon_Custom_Tab_XML_O12/ThisAddIn.vb#1)]  
   
-6.  In **Solution Explorer**, right-click the **MyRibbonAddIn** project and then click **Build**. Verify that the project builds without errors.  
+6.  Dans **l’Explorateur de solutions**, avec le bouton droit le **MyRibbonAddIn** de projet, puis cliquez sur **Build**. Vérifiez que le projet se génère sans erreur.  
   
-## <a name="adding-buttons-to-the-add-ins-tab"></a>Adding Buttons to the Add-Ins Tab  
- The goal for this VSTO Add-in is to give users a way to add boilerplate text and a specific table to the active document. To provide the user interface, add two buttons to the **Add-Ins** tab by modifying the Ribbon XML file. Later in this walkthrough, you will define callback methods for the buttons. For more information about the Ribbon XML file, see [Ribbon XML](../vsto/ribbon-xml.md).  
+## <a name="adding-buttons-to-the-add-ins-tab"></a>Ajout de boutons à l'onglet Compléments  
+ L’objectif de ce complément VSTO est de permettre aux utilisateurs d’ajouter du texte réutilisable et un tableau spécifique au document actif. Pour fournir l’interface utilisateur, ajoutez deux boutons à la **compléments** onglet en modifiant le fichier XML du ruban. À une étape ultérieure de cette procédure pas à pas, vous définirez des méthodes de rappel pour les boutons. Pour plus d’informations sur le fichier XML du ruban, consultez [ruban XML](../vsto/ribbon-xml.md).  
   
-#### <a name="to-add-buttons-to-the-add-ins-tab"></a>To add buttons to the Add-Ins tab  
+#### <a name="to-add-buttons-to-the-add-ins-tab"></a>Pour ajouter des boutons à l'onglet Compléments  
   
-1.  In **Solution Explorer**, right-click **MyRibbon.xml** and then click **Open**.  
+1.  Dans **l’Explorateur de solutions**, avec le bouton droit **MyRibbon.xml** puis cliquez sur **ouvrir**.  
   
-2.  Replace the contents of the **tab** element with the following XML. This XML changes the label of the default control group to **Content**, and it adds two new buttons with the labels **Insert Text** and **Insert Table**.  
+2.  Remplacez le contenu de la **onglet** élément avec le code XML suivant. Ce code XML remplace l’étiquette du groupe de contrôle par défaut à **contenu**, et ajoute deux nouveaux boutons avec les étiquettes **Insert Text** et **insérer un tableau**.  
   
     ```  
     <tab idMso="TabAddIns">  
@@ -106,60 +104,63 @@ ms.lasthandoff: 08/30/2017
     </tab>  
     ```  
   
-## <a name="automating-the-document-by-using-the-buttons"></a>Automating the Document by Using the Buttons  
- You must add `onAction` callback methods for the **Insert Text** and **Insert Table** buttons to perform actions when the user clicks them. For more information about callback methods for Ribbon controls, see [Ribbon XML](../vsto/ribbon-xml.md).  
+## <a name="automating-the-document-by-using-the-buttons"></a>Automatisation du document à l'aide des boutons  
+ Vous devez ajouter `onAction` méthodes de rappel pour le **Insert Text** et **insérer un tableau** boutons permettant d’effectuer des actions lorsque l’utilisateur clique dessus. Pour plus d’informations sur les méthodes de rappel pour les contrôles de ruban, consultez [ruban XML](../vsto/ribbon-xml.md).  
   
-#### <a name="to-add-callback-methods-for-the-buttons"></a>To add callback methods for the buttons  
+#### <a name="to-add-callback-methods-for-the-buttons"></a>Pour ajouter des méthodes de rappel pour les boutons  
   
-1.  In **Solution Explorer**, right-click **MyRibbon.cs** or **MyRibbon.vb**, and then click **Open**.  
+1.  Dans **l’Explorateur de solutions**, avec le bouton droit **MyRibbon.cs** ou **MyRibbon.vb**, puis cliquez sur **ouvrir**.  
   
-2.  Add the following code to the top of the **MyRibbon.cs** or **MyRibbon.vb** file. This code creates an alias for the <xref:Microsoft.Office.Interop.Word> namespace.  
+2.  Ajoutez le code suivant en haut de la **MyRibbon.cs** ou **MyRibbon.vb** fichier. Ce code crée un alias pour l'espace de noms <xref:Microsoft.Office.Interop.Word>.  
   
-     [!code-csharp[Trin_RibbonButtons#1](../vsto/codesnippet/CSharp/Trin_RibbonButtons/MyRibbon.cs#1)]  [!code-vb[Trin_RibbonButtons#1](../vsto/codesnippet/VisualBasic/Trin_RibbonButtons/MyRibbon.vb#1)]  
+     [!code-csharp[Trin_RibbonButtons#1](../vsto/codesnippet/CSharp/Trin_RibbonButtons/MyRibbon.cs#1)]
+     [!code-vb[Trin_RibbonButtons#1](../vsto/codesnippet/VisualBasic/Trin_RibbonButtons/MyRibbon.vb#1)]  
   
-3.  Add the following method to the `MyRibbon` class. This is a callback method for the **Insert Text** button that adds a string to the active document at the current location of the cursor.  
+3.  Ajoutez la méthode suivante à la classe `MyRibbon`. Il s’agit d’une méthode de rappel pour le **insérer du texte** bouton qui ajoute une chaîne au document actif à l’emplacement actuel du curseur.  
   
-     [!code-csharp[Trin_Ribbon_Custom_Tab_XML#2](../vsto/codesnippet/CSharp/Trin_Ribbon_Custom_Tab_XML_O12/MyRibbon.cs#2)]  [!code-vb[Trin_Ribbon_Custom_Tab_XML#2](../vsto/codesnippet/VisualBasic/Trin_Ribbon_Custom_Tab_XML_O12/MyRibbon.vb#2)]  
+     [!code-csharp[Trin_Ribbon_Custom_Tab_XML#2](../vsto/codesnippet/CSharp/Trin_Ribbon_Custom_Tab_XML_O12/MyRibbon.cs#2)]
+     [!code-vb[Trin_Ribbon_Custom_Tab_XML#2](../vsto/codesnippet/VisualBasic/Trin_Ribbon_Custom_Tab_XML_O12/MyRibbon.vb#2)]  
   
-4.  Add the following method to the `MyRibbon` class. This is a callback method for the **Insert Table** button that adds a table to the active document at the current location of the cursor.  
+4.  Ajoutez la méthode suivante à la classe `MyRibbon`. Il s’agit d’une méthode de rappel pour le **insérer un tableau** bouton qui ajoute un tableau au document actif à l’emplacement actuel du curseur.  
   
-     [!code-csharp[Trin_Ribbon_Custom_Tab_XML#3](../vsto/codesnippet/CSharp/Trin_Ribbon_Custom_Tab_XML_O12/MyRibbon.cs#3)]  [!code-vb[Trin_Ribbon_Custom_Tab_XML#3](../vsto/codesnippet/VisualBasic/Trin_Ribbon_Custom_Tab_XML_O12/MyRibbon.vb#3)]  
+     [!code-csharp[Trin_Ribbon_Custom_Tab_XML#3](../vsto/codesnippet/CSharp/Trin_Ribbon_Custom_Tab_XML_O12/MyRibbon.cs#3)]
+     [!code-vb[Trin_Ribbon_Custom_Tab_XML#3](../vsto/codesnippet/VisualBasic/Trin_Ribbon_Custom_Tab_XML_O12/MyRibbon.vb#3)]  
   
-## <a name="testing-the-vsto-add-in"></a>Testing the VSTO Add-In  
- When you run the project, Word opens and the tab named **Add-Ins** appears on the Ribbon. Click the **Insert Text** and **Insert Table** buttons on the **Add-Ins** tab to test the code.  
+## <a name="testing-the-vsto-add-in"></a>Test du complément VSTO  
+ Lorsque vous exécutez le projet, Word s’ouvre et l’onglet nommé **compléments** apparaît sur le ruban. Cliquez sur le **Insert Text** et **insérer un tableau** des boutons de la **compléments** onglet pour tester le code.  
   
-#### <a name="to-test-your-vsto-add-in"></a>To test your VSTO Add-in  
+#### <a name="to-test-your-vsto-add-in"></a>Pour tester votre complément VSTO  
   
-1.  Press F5 to run your project.  
+1.  Appuyez sur F5 pour exécuter votre projet.  
   
-2.  Confirm that the **Add-Ins** tab is visible on the Ribbon.  
+2.  Vérifiez que le **compléments** onglet est visible sur le ruban.  
   
-3.  Click the **Add-Ins** tab.  
+3.  Cliquez sur l'onglet **Compléments** .  
   
-4.  Confirm that the **Content** group is visible on the Ribbon.  
+4.  Vérifiez que le **contenu** groupe est visible sur le ruban.  
   
-5.  Click the **Insert Text** button in the **Content** group.  
+5.  Cliquez sur le **Insert Text** situé dans le **contenu** groupe.  
   
-     A string is added to the document at the current location of the cursor.  
+     Une chaîne est ajoutée au document à l'emplacement actuel du curseur.  
   
-6.  Click the **Insert Table** button in the **Content** group.  
+6.  Cliquez sur le **insérer un tableau** situé dans le **contenu** groupe.  
   
-     A table is added to the document at the current location of the cursor.  
+     Un tableau est ajouté au document à l'emplacement actuel du curseur.  
   
-## <a name="next-steps"></a>Next Steps  
- You can learn more about how to customize the Office UI from these topics:  
+## <a name="next-steps"></a>Étapes suivantes  
+ Pour plus d'informations sur la personnalisation de l'interface utilisateur d'Office, consultez les rubriques suivantes :  
   
--   Customize the Ribbon of a different Office application. For more information about the applications that support customizing the Ribbon, see [Ribbon Overview](../vsto/ribbon-overview.md).  
+-   Personnaliser le ruban d'une autre application Office. Pour plus d’informations sur les applications qui prennent en charge la personnalisation du ruban, consultez [vue d’ensemble du ruban](../vsto/ribbon-overview.md).  
   
--   Customize the Ribbon of an Office application by using the Ribbon Designer. For more information, see [Ribbon Designer](../vsto/ribbon-designer.md).  
+-   Personnaliser le ruban d'une application Office à l'aide du Concepteur de ruban. Pour plus d'informations, consultez [Ribbon Designer](../vsto/ribbon-designer.md).  
   
--   Create a custom actions pane. For more information, see [Actions Pane Overview](../vsto/actions-pane-overview.md).  
+-   Créer un volet Actions personnalisé. Pour plus d'informations, consultez [Actions Pane Overview](../vsto/actions-pane-overview.md).  
   
--   Customize the UI of Microsoft Office Outlook by using Outlook Form Regions. For more information, see [Walkthrough: Designing an Outlook Form Region](../vsto/walkthrough-designing-an-outlook-form-region.md).  
+-   Personnaliser l'interface utilisateur de Microsoft Office Outlook à l'aide de zones de formulaire Outlook. Pour plus d’informations, consultez [procédure pas à pas : conception d’une zone de formulaire Outlook](../vsto/walkthrough-designing-an-outlook-form-region.md).  
   
-## <a name="see-also"></a>See Also  
- [Ribbon Overview](../vsto/ribbon-overview.md)   
- [Ribbon XML](../vsto/ribbon-xml.md)   
- [Walkthrough: Creating a Custom Tab by Using the Ribbon Designer](../vsto/walkthrough-creating-a-custom-tab-by-using-the-ribbon-designer.md)  
+## <a name="see-also"></a>Voir aussi  
+ [Vue d’ensemble du ruban](../vsto/ribbon-overview.md)   
+ [Élément XML Ribbon](../vsto/ribbon-xml.md)   
+ [Procédure pas à pas : création d’un onglet personnalisé à l’aide du Concepteur de ruban](../vsto/walkthrough-creating-a-custom-tab-by-using-the-ribbon-designer.md)  
   
   

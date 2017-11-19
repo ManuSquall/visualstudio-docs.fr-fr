@@ -1,44 +1,28 @@
 ---
-title: IDebugBreakpointChecksumRequest2::IsChecksumEnabled | Microsoft Docs
+title: IDebugBreakpointChecksumRequest2::IsChecksumEnabled | Documents Microsoft
 ms.custom: 
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-sdk
+ms.technology: vs-ide-sdk
 ms.tgt_pltfrm: 
 ms.topic: article
-helpviewer_keywords:
-- IDebugBreakpointChecksumRequest2::IsChecksumEnabled
+helpviewer_keywords: IDebugBreakpointChecksumRequest2::IsChecksumEnabled
 ms.assetid: 8b1853b5-745c-4cd6-88a9-ce0673971bb0
-caps.latest.revision: 9
+caps.latest.revision: "9"
+author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-translation.priority.mt:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
+ms.openlocfilehash: 7386ab585ac054e40e08ff2e4cf5f5d84fe8ab30
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
 ms.translationtype: MT
-ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
-ms.openlocfilehash: dc6c7f0ac42581b319c2e36854ce259221c030fc
-ms.contentlocale: fr-fr
-ms.lasthandoff: 08/28/2017
-
+ms.contentlocale: fr-FR
+ms.lasthandoff: 10/31/2017
 ---
 # <a name="idebugbreakpointchecksumrequest2ischecksumenabled"></a>IDebugBreakpointChecksumRequest2::IsChecksumEnabled
-Determines whether the checksum is enabled for this document.  
+Détermine si la somme de contrôle est activé pour ce document.  
   
-## <a name="syntax"></a>Syntax  
+## <a name="syntax"></a>Syntaxe  
   
 ```cpp  
 HRESULT IsChecksumEnabled(   
@@ -52,12 +36,12 @@ public int IsChecksumEnabled(
 );  
 ```  
   
-#### <a name="parameters"></a>Parameters  
+#### <a name="parameters"></a>Paramètres  
  `pfChecksumEnabled`  
- [out] Returns TRUE if the checksum is enabled; otherwise, returns FALSE.  
+ [out] Retourne la valeur TRUE si la somme de contrôle est activé ; Sinon, retourne FALSE.  
   
-## <a name="return-value"></a>Return Value  
- If successful, returns `S_OK`; otherwise, returns an error code.  
+## <a name="return-value"></a>Valeur de retour  
+ En cas de réussite, retourne `S_OK`; sinon, retourne un code d’erreur.  
   
-## <a name="see-also"></a>See Also  
+## <a name="see-also"></a>Voir aussi  
  [IDebugBreakpointChecksumRequest2](../../../extensibility/debugger/reference/idebugbreakpointchecksumrequest2.md)

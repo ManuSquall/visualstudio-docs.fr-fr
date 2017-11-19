@@ -1,46 +1,29 @@
 ---
-title: IDebugClassField::GetDefaultIndexer | Microsoft Docs
+title: IDebugClassField::GetDefaultIndexer | Documents Microsoft
 ms.custom: 
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-sdk
+ms.technology: vs-ide-sdk
 ms.tgt_pltfrm: 
 ms.topic: article
-f1_keywords:
-- IDebugClassField::GetDefaultIndexer
-helpviewer_keywords:
-- IDebugClassField::GetDefaultIndexer method
+f1_keywords: IDebugClassField::GetDefaultIndexer
+helpviewer_keywords: IDebugClassField::GetDefaultIndexer method
 ms.assetid: 47ce4f45-3816-4b40-909c-5032d0692d75
-caps.latest.revision: 10
+caps.latest.revision: "10"
+author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-translation.priority.mt:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
+ms.openlocfilehash: d30388b170f4a7de672fbdda11ccead83acce32c
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
 ms.translationtype: MT
-ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
-ms.openlocfilehash: 7fe0008e38175254d9ac0eb4146d31d9866d9c69
-ms.contentlocale: fr-fr
-ms.lasthandoff: 08/28/2017
-
+ms.contentlocale: fr-FR
+ms.lasthandoff: 10/31/2017
 ---
 # <a name="idebugclassfieldgetdefaultindexer"></a>IDebugClassField::GetDefaultIndexer
-Gets the name of the default indexer.  
+Obtient le nom de l’indexeur par défaut.  
   
-## <a name="syntax"></a>Syntax  
+## <a name="syntax"></a>Syntaxe  
   
 ```cpp  
 HRESULT GetDefaultIndexer(   
@@ -54,15 +37,15 @@ int GetDefaultIndexer(
 );  
 ```  
   
-#### <a name="parameters"></a>Parameters  
+#### <a name="parameters"></a>Paramètres  
  `pbstrIndexer`  
- [out] Returns a string containing the name of the default indexer.  
+ [out] Retourne une chaîne contenant le nom de l’indexeur par défaut.  
   
-## <a name="return-value"></a>Return Value  
- If successful, returns S_OK or returns S_FALSE if there is no default indexer. Otherwise, returns an error code.  
+## <a name="return-value"></a>Valeur de retour  
+ En cas de réussite, retourne S_OK ou retourne S_FALSE, s’il n’existe aucun indexeur par défaut. Sinon, retourne un code d'erreur.  
   
-## <a name="remarks"></a>Remarks  
- The default indexer of a class is the property that is marked as the `Default` property for array accesses. This is specific to [!INCLUDE[vbprvb](../../../code-quality/includes/vbprvb_md.md)]. Here is an example of a default indexer declared in [!INCLUDE[vbprvb](../../../code-quality/includes/vbprvb_md.md)] and how it is used.  
+## <a name="remarks"></a>Remarques  
+ L’indexeur par défaut d’une classe est la propriété qui est marquée comme étant le `Default` propriété pour l’accès aux tableaux. Ceci est spécifique à [!INCLUDE[vbprvb](../../../code-quality/includes/vbprvb_md.md)]. Voici un exemple d’un indexeur par défaut déclaré dans [!INCLUDE[vbprvb](../../../code-quality/includes/vbprvb_md.md)] et comment il est utilisé.  
   
 ```vb  
 Imports System.Collections;  
@@ -94,5 +77,5 @@ Function GetItem(Index as Integer) as Integer
 End Function  
 ```  
   
-## <a name="see-also"></a>See Also  
+## <a name="see-also"></a>Voir aussi  
  [IDebugClassField](../../../extensibility/debugger/reference/idebugclassfield.md)

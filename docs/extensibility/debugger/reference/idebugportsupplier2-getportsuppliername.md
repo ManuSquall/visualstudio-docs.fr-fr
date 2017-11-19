@@ -1,46 +1,29 @@
 ---
-title: IDebugPortSupplier2::GetPortSupplierName | Microsoft Docs
+title: IDebugPortSupplier2::GetPortSupplierName | Documents Microsoft
 ms.custom: 
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-sdk
+ms.technology: vs-ide-sdk
 ms.tgt_pltfrm: 
 ms.topic: article
-f1_keywords:
-- IDebugPortSupplier2::GetPortSupplierName
-helpviewer_keywords:
-- IDebugPortSupplier2::GetPortSupplierName
+f1_keywords: IDebugPortSupplier2::GetPortSupplierName
+helpviewer_keywords: IDebugPortSupplier2::GetPortSupplierName
 ms.assetid: e4c368ab-640d-4b5b-9f74-810dc9364d8f
-caps.latest.revision: 10
+caps.latest.revision: "10"
+author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-translation.priority.mt:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
+ms.openlocfilehash: 085437520d1c96043efcb80d097aeaedbb4af4ca
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
 ms.translationtype: MT
-ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
-ms.openlocfilehash: 8510de3817c7290e7a4ec47446e8f3f3ebbd1769
-ms.contentlocale: fr-fr
-ms.lasthandoff: 08/28/2017
-
+ms.contentlocale: fr-FR
+ms.lasthandoff: 10/31/2017
 ---
 # <a name="idebugportsupplier2getportsuppliername"></a>IDebugPortSupplier2::GetPortSupplierName
-Gets the port supplier name.  
+Obtient le nom de fournisseur de port.  
   
-## <a name="syntax"></a>Syntax  
+## <a name="syntax"></a>Syntaxe  
   
 ```cpp  
 HRESULT GetPortSupplierName(   
@@ -54,12 +37,12 @@ int GetPortSupplierName(
 );  
 ```  
   
-#### <a name="parameters"></a>Parameters  
+#### <a name="parameters"></a>Paramètres  
  `pbstrName`  
- [out] Returns the name of the port supplier.  
+ [out] Retourne le nom du fournisseur de port.  
   
-## <a name="return-value"></a>Return Value  
- If successful, returns `S_OK`; otherwise, returns an error code.  
+## <a name="return-value"></a>Valeur de retour  
+ En cas de réussite, retourne `S_OK`; sinon, retourne un code d’erreur.  
   
-## <a name="see-also"></a>See Also  
+## <a name="see-also"></a>Voir aussi  
  [IDebugPortSupplier2](../../../extensibility/debugger/reference/idebugportsupplier2.md)

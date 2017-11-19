@@ -1,87 +1,89 @@
 ---
-title: "Proc&#233;dure pas &#224; pas&#160;: cr&#233;ation d&#39;une colonne de site, d&#39;un type de contenu et d&#39;une liste pour SharePoint"
-ms.custom: ""
-ms.date: "02/02/2017"
-ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "office-development"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "VS.SharePointTools.ListDesigner.GeneralMessageHelp"
-  - "Microsoft.VisualStudio.SharePoint.Designers.ListDesigner.ViewModels.ListViewModel.SortingAndGrouping"
-  - "VS.SharePointTools.ListDesigner.SortingGrouping"
-dev_langs: 
-  - "VB"
-  - "CSharp"
-  - "VB"
-  - "CSharp"
-helpviewer_keywords: 
-  - "développement SharePoint dans Visual Studio, types de contenu"
-  - "développement SharePoint dans Visual Studio, champs"
-  - "développement SharePoint dans Visual Studio, définitions de listes"
-  - "développement SharePoint dans Visual Studio, instances de listes"
+title: "Procédure pas à pas : Créer une colonne de Site, le Type de contenu et la liste pour SharePoint | Documents Microsoft"
+ms.custom: 
+ms.date: 02/02/2017
+ms.reviewer: 
+ms.suite: 
+ms.technology: office-development
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords:
+- VS.SharePointTools.ListDesigner.GeneralMessageHelp
+- Microsoft.VisualStudio.SharePoint.Designers.ListDesigner.ViewModels.ListViewModel.SortingAndGrouping
+- VS.SharePointTools.ListDesigner.SortingGrouping
+dev_langs:
+- VB
+- CSharp
+- VB
+- CSharp
+helpviewer_keywords:
+- SharePoint development in Visual Studio, list definitions
+- SharePoint development in Visual Studio, list instances
+- SharePoint development in Visual Studio, fields
+- SharePoint development in Visual Studio, content types
 ms.assetid: caebacc2-616c-4373-8e21-edc7979338e7
-caps.latest.revision: 54
-author: "kempb"
-ms.author: "kempb"
-manager: "ghogen"
-caps.handback.revision: 53
+caps.latest.revision: "54"
+author: gewarren
+ms.author: gewarren
+manager: ghogen
+ms.openlocfilehash: d6007dee14f89f875c66009f048b47579e97028b
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: fr-FR
+ms.lasthandoff: 10/31/2017
 ---
-# Proc&#233;dure pas &#224; pas&#160;: cr&#233;ation d&#39;une colonne de site, d&#39;un type de contenu et d&#39;une liste pour SharePoint
-  Les procédures suivantes montrent comment créer des colonnes de site SharePoint personnalisées—ou *champ*— de la même manière qu'un type de contenu utilisant les colonnes de site.  Il montre également comment créer une liste qui utilise le nouveau type de contenu.  
+# <a name="walkthrough-create-a-site-column-content-type-and-list-for-sharepoint"></a>Procédure pas à pas : création d'une colonne de site, d'un type de contenu et d'une liste pour SharePoint
+  Les procédures suivantes montrent comment créer des colonnes de site SharePoint personnalisées, ou *champs*, ainsi que d’un type de contenu qui utilise les colonnes de site. Il montre également comment créer une liste qui utilise le type de contenu.  
   
  Cette procédure pas à pas comprend les tâches suivantes :  
   
--   [Créer des colonnes personnalisées de site](#BKMK_CreatingCustSiteCols).  
+-   [Création de colonnes de Site personnalisé](#BKMK_CreatingCustSiteCols).  
   
--   [Création d'un type de contenu personnalisé](#BKMK_CreateCustContType).  
+-   [Création d’un Type de contenu personnalisé](#BKMK_CreateCustContType).  
   
--   [Créer une liste](#BKMK_CreateList).  
+-   [Création d’une liste](#BKMK_CreateList).  
   
--   [Créer une liste](#BKMK_CreateList).  
+-   [Création d’une liste](#BKMK_CreateList).  
   
--   [Test de l'application](#BKMK_TestApp).  
+-   [Test de l’Application](#BKMK_TestApp).  
   
  [!INCLUDE[note_settings_general](../sharepoint/includes/note-settings-general-md.md)]  
   
-## Composants requis  
- Pour exécuter cette procédure pas à pas, vous devez disposer des composants suivants :  
+## <a name="prerequisites"></a>Conditions préalables  
+ Pour exécuter cette procédure pas à pas, vous devez disposer des composants suivants :  
   
--   Éditions prises en charge de Windows et SharePoint.  Pour plus d'informations, consultez [Configuration requise pour développer des solutions SharePoint](../sharepoint/requirements-for-developing-sharepoint-solutions.md).  
+-   Éditions prises en charge de Windows et SharePoint. Pour plus d’informations, consultez [configuration requise pour le développement de Solutions SharePoint](../sharepoint/requirements-for-developing-sharepoint-solutions.md).  
   
--   Visual Studio.  
+-   Visual Studio.  
   
-##  <a name="BKMK_CreatingCustSiteCols"></a> Créer des colonnes personnalisées de site  
- Cet exemple crée une liste de gestion des patients dans un hôpital.  D'abord, vous devez créer un projet dans SharePoint [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] et lui ajouter des colonnes de site, comme suit.  
+##  <a name="BKMK_CreatingCustSiteCols"></a>Création de colonnes de Site personnalisé  
+ Cet exemple crée une liste de gestion des patients dans un hôpital. Tout d’abord, vous devez créer un projet SharePoint dans [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] et ajouter des colonnes de site, comme suit.  
   
-#### Pour créer le projet  
+#### <a name="to-create-the-project"></a>Pour créer le projet  
   
-1.  Dans le menu [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] **Fichier**, cliquez sur **Nouveau**, **Projet**.  
+1.  Sur le [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] **fichier** menu, choisissez **nouveau**, **projet**.  
   
-2.  Dans la boîte de dialogue **Nouveau projet**, sous **Visual Basic** ou **Visual C\#**, développez le noeud **SharePoint**, puis cliquez sur **2010**.  
+2.  Dans le **nouveau projet** boîte de dialogue, sous **Visual C#** ou **Visual Basic**, développez le **SharePoint** nœud, puis choisissez **2010**.  
   
-3.  Dans le volet **Modèles**, cliquez sur **Projet SharePoint 2010** , remplacez le nom du projet par Clinic, puis cliquez sur **OK**.  
+3.  Dans le **modèles** volet, choisissez **projet SharePoint 2010**, modifier le nom du projet pour **Clinic**, puis choisissez le **OK** bouton.  
   
-     Le modèle de projet SharePoint 2010 est un projet vide utilisé dans cet exemple pour contenir des colonnes de site et autres éléments de projet qui sont ajoutées ultérieurement.  
+     Le modèle de projet SharePoint 2010 est un projet vide qui est utilisé dans cet exemple pour contenir les colonnes de site et d’autres éléments de projet qui sont ajoutées plus tard.  
   
-4.  Dans la page **Spécifier le site et le niveau de sécurité pour le débogage**, entrez l'URL du site local SharePoint auquel vous souhaitez ajouter le nouvel élément de champ personnalisé ou utilisez l'emplacement par défaut \(`http://<`*SystemName*`>/)`.\).  
+4.  Sur le **spécifier le niveau de site et de sécurité pour le débogage** page, entrez l’URL du site SharePoint local auquel vous souhaitez ajouter le nouvel élément de champ personnalisé ou utilisez l’emplacement par défaut (`http://<`*Nom_système* `>/)`.  
   
-5.  Dans la section **Quel est le niveau de confiance de cette solution SharePoint ?**, utilisez la valeur par défaut de **Déployer en tant que solution bac à sable \(sandbox\)**.  
+5.  Dans le **quel est le niveau de confiance de cette solution SharePoint ?** section, utilisez la valeur par défaut **déployer comme une solution bac à sable**.  
   
-     Pour plus d'informations sur les solutions bac à sable \(sandbox\) et les solutions de batterie, consultez [Considérations sur les solutions bac à sable &#40;sandbox&#41;](../sharepoint/sandboxed-solution-considerations.md).  
+     Pour plus d’informations sur le bac à sable et les solutions de batterie, consultez [considérations sur les solutions bac à sable](../sharepoint/sandboxed-solution-considerations.md).  
   
-6.  Choisissez le bouton **Terminer**.  Le projet doit maintenant apparaître dans **Explorateur de solutions**.  
+6.  Choisissez le **Terminer** bouton. Le projet doit maintenant être affiché dans **l’Explorateur de solutions**.  
   
-#### Pour ajouter des colonnes de site  
+#### <a name="to-add-site-columns"></a>Pour ajouter des colonnes de site  
   
-1.  Ajoutez une colonne de sites.  Pour cela, dans l'**Explorateur de solutions**, ouvrez le menu contextuel de **Clinic**, puis choisissez **Ajouter**, **Nouvel élément**.  
+1.  Ajouter une nouvelle colonne de site. Pour ce faire, dans **l’Explorateur de solutions**, ouvrez le menu contextuel pour **Clinic**, puis choisissez **ajouter**, **un nouvel élément**.  
   
-2.  Dans la boîte de dialogue **Ajouter un nouvel élément**, choisissez le champ **Colonne de site**, remplacez le nom par Patient Name puis choisissez le bouton **Ajouter**.  
+2.  Dans le **ajouter un nouvel élément** boîte de dialogue, choisissez **colonne de Site**, remplacez le nom par **nom du Patient**, puis choisissez le **ajouter** bouton.  
   
-3.  Dans le fichier à Elements.xml de la colonne de site, laissez le paramètre **Type** définit comme **Texte**, puis remplacez le paramètre **Groupe** par Colonnes de site Clinic.  Lorsque vous avez terminé, le fichier Elements.xml de la colonne du site doit ressembler à l'exemple suivant.  
+3.  Dans le fichier Elements.xml de la colonne de site, laissez le **Type** définition en tant que **texte**et modifier le **groupe** à **cours pratique des colonnes de Site**. Lorsque vous avez terminé, le fichier Elements.xml de la colonne de site doit ressembler à l’exemple suivant.  
   
     ```  
     <Field  
@@ -94,142 +96,142 @@ caps.handback.revision: 53
     </Field>  
     ```  
   
-4.  À l'aide de la procédure, ajoutez deux ou plusieurs colonnes de site au projet : Patient ID \(Type \= "Integer"\) and Doctor Name \(Type \= "Text"\).  Définissez la valeur de groupe de colonnes du site Clinic.  
+4.  À l’aide de la même procédure, ajoutez deux colonnes de site supplémentaires au projet : **ID du Patient** (Type = « Integer ») et **nom médecin** (Type = « Text »). Valeur leur groupe **cours pratique des colonnes de Site**.  
   
-##  <a name="BKMK_CreateCustContType"></a> Création d'un type de contenu personnalisé  
- Ensuite, créez un type de contenu basé sur le type de contenu Contacts qui contient les colonnes du site que vous avez créées dans la procédure précédente.  En basant un type de contenu sur un type de contenu existant, vous pouvez gagner du temps car le type de contenu de base fournit plusieurs colonnes de site à utiliser dans le nouveau type de contenu.  
+##  <a name="BKMK_CreateCustContType"></a>Création d’un Type de contenu personnalisé  
+ Ensuite, créez un type de contenu, en fonction du type de contenu de Contacts, qui inclut les colonnes de site que vous avez créé dans la procédure précédente. À partir d’un type de contenu sur un type de contenu existant, vous pouvez gagner du temps, car le type de contenu de base fournit plusieurs colonnes de site à utiliser dans le nouveau type de contenu.  
   
-#### Pour créer un type de contenu personnalisé  
+#### <a name="to-create-a-custom-content-type"></a>Pour créer un type de contenu personnalisé  
   
-1.  Ajoutez un type de contenu au projet.  Pour cela, dans l'**Explorateur de solutions**, choisissez le nœud du projet.  
+1.  Ajouter un type de contenu au projet. Pour ce faire, dans **l’Explorateur de solutions**, choisissez le nœud du projet  
   
-2.  Dans la barre de menus, choisissez **Projet**, **Ajouter un nouvel élément**.  
+2.  Dans la barre de menus, choisissez **projet**, **ajouter un nouvel élément**.  
   
-3.  Sous **Visual C\#** ou **Visual Basic**, développez le nœud **SharePoint**, puis cliquez sur le noeud **2010**.  
+3.  Sous **Visual C#** ou **Visual Basic**, développez le **SharePoint** nœud, puis choisissez le **2010** nœud.  
   
-4.  Dans le volet **Modèles**, sélectionnez le modèle **Type de contenu**, remplacez le nom par Patient Info, puis cliquez sur le bouton **Ajouter**.  
+4.  Dans le **modèles** volet, choisissez le **Type de contenu** modèle, remplacez le nom par **Patient Info**, puis choisissez le **ajouter** bouton.  
   
-     L'**Assistant Personnalisation de SharePoint** s'affiche.  
+     Le **Assistant Personnalisation de SharePoint** s’ouvre.  
   
-5.  Dans la liste **De quel type de contenu de base ce type de contenu devrait hérité**, choisissez **Contact** comme type de contenu sur lequel le nouveau type de contenu doit être basé, puis choisir le bouton **Terminer**.  
+5.  Dans le **le type de contenu de base ce type de contenu doit hériter de** , choisissez **Contact** comme type de contenu sur lequel baser le nouveau type de contenu, puis choisissez le **Terminer**bouton.  
   
-     Cette opération permet l'accès à d'autres colonnes de site utile dans type de contenu de contact, en plus des colonnes de site que vous avez défini précédemment.  
+     Cela vous permet d’accéder à d’autres colonnes de site peuvent se révéler utiles dans le type de contenu de Contact, en plus des colonnes de site que vous avez défini précédemment.  
   
-6.  Une fois que le concepteur des types de contenu s'affiche, dans l'onglet **Colonnes**, ajoutez les trois colonnes de site que vous avez défini précédemment : **Patient Name**, **Patient ID**, et **Doctor Name**.  Pour ajouter les colonnes, choisissez la première zone de liste de la liste des colonnes de site sous **Display Name**, puis cliquez sur chaque colonne du site de la liste un par un.  
+6.  Après le Type de contenu concepteur s’affiche, dans le **colonnes** onglet, ajoutez les trois colonnes que vous avez défini précédemment de site : **nom du Patient**, **ID du Patient**et **Nom médecin**. Pour ajouter ces colonnes, choisissez la zone de liste dans la liste de colonnes de site sous **nom d’affichage**, puis choisissez la colonne de chaque site dans la liste une à la fois.  
   
     > [!TIP]  
-    >  Pour choisir les colonnes de site plus rapidement, filtrez la liste en entrant les premières lettres du nom de la colonne.  
+    >  Pour choisir les colonnes de site plus rapidement, filtrez la liste en tapant les premières lettres du nom de la colonne.  
   
-7.  En plus des trois colonnes de site personnalisées, ajoutez la colonne du site **Commentaires** de la liste des colonnes de site.  
+7.  Outre les trois colonnes de site personnalisé, ajoutez le **commentaires** colonne de site à partir de la liste de colonnes de site.  
   
-8.  Activez la case à cocher **Requis** pour des colonnes de site **Patient Name** et **Patient ID** pour y apporter des champs obligatoires.  
+8.  Sélectionnez le **requis** case à cocher pour le **nom du Patient** et **ID du Patient** des colonnes de site pour les rendre les champs obligatoires.  
   
-9. Sous l'onglet **Type de contenu**, vérifiez que le nom du type de contenu est **Patient Info**, puis modifiez la description pour la fiche Patient Information.  
+9. Sur le **Content Type** onglet, vérifiez que le nom de type de contenu est **données patient**, puis modifiez la description pour **fiche d’informations sur les patients**.  
   
-10. Modifiez **Nom de groupe** aux types de contenu Clinic, et laissez les autres paramètres à leurs valeurs par défaut.  
+10. Modification **nom de groupe** à **les Types de contenu Clinic**et conservez les autres paramètres à leurs valeurs par défaut.  
   
-11. Dans la barre de menus, cliquez sur **Fichier**, **Enregistrer tout**, puis fermez le concepteur des types de contenu.  
+11. Dans la barre de menus, choisissez **fichier**, **Enregistrer tout**, puis fermez le Concepteur de Type de contenu.  
   
-##  <a name="BKMK_CreateList"></a> Créer une liste  
- Maintenant, créez une liste qui utilise les nouvelles colonnes des types de contenu et de site.  
+##  <a name="BKMK_CreateList"></a>Création d’une liste  
+ À présent, créez une liste qui utilise les nouvelles colonnes type de contenu de site.  
   
-#### Pour créer une liste  
+#### <a name="to-create-a-list"></a>Pour créer une liste  
   
-1.  Ajoutez une liste au projet.  Pour cela, dans l'**Explorateur de solutions**, choisissez le nœud du projet.  
+1.  Ajouter une liste au projet. Pour ce faire, dans **l’Explorateur de solutions**, choisissez le nœud du projet.  
   
-2.  Dans la barre de menus, choisissez **Projet**, **Ajouter un nouvel élément**.  
+2.  Dans la barre de menus, choisissez **projet**, **ajouter un nouvel élément**.  
   
-3.  Sous **Visual C\#** ou **Visual Basic**, développez le nœud **SharePoint**, puis cliquez sur le noeud **2010**.  
+3.  Sous **Visual C#** ou **Visual Basic**, développez le **SharePoint** nœud, puis choisissez le **2010** nœud.  
   
-4.  Dans le volet **Modèles**, sélectionnez le modèle **Liste**, remplacez le nom par Patients, puis cliquez sur le bouton **Ajouter**.  
+4.  Dans le **modèles** volet, choisissez la **liste** modèle, remplacez le nom par **Patients**, puis choisissez le **ajouter** bouton.  
   
-5.  Laissez **Personnaliser la liste sur** défini comme **Défaut \(Vide\)**, puis cliquez sur le bouton **Terminer**.  
+5.  Laissez le **personnaliser la liste en fonction de** définition en tant que **par défaut (vide)**, puis choisissez le **Terminer** bouton.  
   
-6.  Dans le concepteur de liste, sélectionnez le bouton **Types de contenu** pour afficher la boîte de dialogue **Paramètres de type de contenu**.  
+6.  Dans le Concepteur de la liste, choisissez la **Types de contenu** bouton pour afficher la **des paramètres de Type de contenu** boîte de dialogue.  
   
-7.  Choisissez la nouvelle ligne, choisissez le type de contenu **Patient Info** dans la liste des types de contenu, puis cliquez sur le bouton **OK**.  
+7.  Cliquez sur la nouvelle ligne, choisissez le **données patient** type dans la liste des types de contenu de contenu, puis choisissez le **OK** bouton.  
   
-     Cette opération ajoute toutes les colonnes de site à partir du type de contenu **Patient Info** de la liste.  
+     Cette opération ajoute toutes les colonnes de site à partir de la **données patient** type dans la liste de contenu.  
   
-8.  Supprimez toutes les colonnes du site dans la liste sauf ce qui suit :  
+8.  Supprimer toutes les colonnes de site dans la liste à l’exception des opérations suivantes :  
   
-    -   Patient ID  
+    -   Identification de patient  
   
-    -   Patient Name  
+    -   Nom du patient  
   
-    -   Home Phone  
+    -   Téléphone personnel  
   
-    -   E\-Mail  
+    -   Courrier électronique  
   
-    -   Doctor Name  
+    -   Nom médecin  
   
     -   Commentaires  
   
-9. Sous **Nom de la colonne**, choisissez une ligne vide, ajoutez une colonne spéciale de liste, et nommez\-la Hopital.  Laissez le type de données comme **Une seule ligne de texte**.  
+9. Sous **nom complet de la colonne**, choisissez une ligne vide, ajoutez une colonne de liste personnalisée et nommez-le **hôpital**. Conserver son type de données en tant que **ligne unique de texte**.  
   
-     La colonne de la liste s'applique uniquement à cette liste.  Lorsque vous ajoutez une colonne spéciale de liste vers une liste, un nouveau type de contenu de liste, notamment les colonnes ajoutées dans la liste, est créé et configuré en tant que la liste par défaut.  
+     La colonne de liste personnalisée s’applique uniquement à cette liste. Lorsque vous ajoutez une colonne de liste personnalisée à une liste, un nouvelle liste type de contenu, y compris toutes les colonnes ajoutées à la liste, est créé et défini en tant que la liste par défaut.  
   
     > [!TIP]  
-    >  Si vous choisissez une colonne dans la liste des colonnes de site, une colonne existante du site est utilisée.  Toutefois, si vous entrez une valeur de colonne sans choisir une colonne dans la liste, une colonne de la liste personnalisée est créée, même si une colonne du même nom existe déjà dans la liste.  
+    >  Si vous choisissez une colonne dans la liste des colonnes de site, une colonne de site existante est utilisée. Toutefois, si vous entrez une valeur de nom de colonne sans choisir des colonnes dans la liste, une colonne de liste personnalisée est créée, même si une colonne portant le même nom existe déjà dans la liste.  
   
-     Éventuellement, plutôt que définir le type de données pour la colonne de la liste personnalisée à **Une seule ligne de texte**, vous pouvez à la place définir le type de données de cette colonne pour rechercher, et les valeurs sont récupérées d'une table ou d'une autre liste.  Pour plus d'informations sur les colonnes de recherche, consultez [Liste de relations dans SharePoint 2010](http://go.microsoft.com/fwlink/?LinkId=224994) et [Relations et recherches de liste](http://go.microsoft.com/fwlink/?LinkID=224995).  
+     Si vous le souhaitez, au lieu de la définition du type de données de la colonne de liste personnalisée pour **ligne unique de texte**, vous pouvez définir à la place de type de données pour cette colonne pour la recherche et ses valeurs sont extrait à partir d’une table ou une autre liste. Pour plus d’informations sur les colonnes de recherche, consultez [des relations de liste dans SharePoint 2010](http://go.microsoft.com/fwlink/?LinkId=224994) et [recherches et des relations de liste](http://go.microsoft.com/fwlink/?LinkID=224995).  
   
-10. A côté des zones **Patient ID** et de **Patient Name**, activez la case à cocher **Requis**.  
+10. À côté du **ID du Patient** et **nom du Patient** zones, sélectionnez le **requis** case à cocher.  
   
-11. Sous l'onglet **Vues**, choisissez une ligne vide pour créer une vue.  Entrez les informations du patient.  
+11. Sur le **vues** onglet, cliquez sur une ligne vide pour créer une vue. Entrez **les détails des patients**.  
   
-     Sous l'onglet **Vues**, vous pouvez spécifier les colonnes que vous souhaitez afficher dans la liste SharePoint.  
+     Sur le **vues** onglet, vous pouvez spécifier les colonnes que vous souhaitez voir apparaître dans la liste SharePoint.  
   
-12. Sélectionnez la ligne **Informations du patient**, puis cliquez sur le bouton **Par défaut**.  
+12. Choisissez le nouveau **Patient détails** de ligne, puis choisissez le **définie comme valeur par défaut** bouton.  
   
-     La vue est maintenant la vue par défaut pour la liste.  
+     La nouvelle vue est désormais la vue par défaut pour la liste.  
   
-13. Ajoutez les colonnes suivantes à la liste **Colonnes sélectionnées** dans l'ordre suivant :  
+13. Ajoutez les colonnes suivantes à la **colonnes sélectionnées** liste dans l’ordre suivant :  
   
-    -   Patient ID  
+    -   Identification de patient  
   
-    -   Patient Name  
+    -   Nom du patient  
   
-    -   Home Phone  
+    -   Téléphone personnel  
   
-    -   E\-Mail  
+    -   Courrier électronique  
   
-    -   Doctor Name  
+    -   Nom médecin  
   
     -   Hôpital  
   
     -   Commentaires  
   
-14. Dans la liste **Propriétés**, choisissez la propriété **Tri et regroupement**, puis sélectionnez le bouton ![Icône du bouton de sélection (...)](~/sharepoint/media/ellipsisicon.gif "Icône du bouton de sélection (...)") pour afficher la boîte de dialogue **Tri et regroupement**.  
+14. Dans le **propriétés** , choisissez le **tri et regroupement** propriété, puis choisissez le bouton de sélection ![icône des points de suspension](../sharepoint/media/ellipsisicon.gif "icône de points de suspension")pour afficher les **tri et regroupement** boîte de dialogue.  
   
-15. Dans la liste **Nom de la colonne**, choisissez **Nom du patient**, assurez\-vous que la colonne **Tri** est définie sur **Croissant**, puis cliquez sur le bouton **OK**.  
+15. Dans le **nom de la colonne** , choisissez **nom du Patient**, vous assurer que le **tri** colonne a la valeur **croissant**, puis choisissez le  **OK** bouton.  
   
-##  <a name="BKMK_TestApp"></a> Test de l'application  
- Maintenant que les colonnes, le type de contenu, ainsi que la liste personnalisé de site sont prêts, déployez\-le dans SharePoint, puis exécutez l'application pour le tester.  
+##  <a name="BKMK_TestApp"></a>Test de l’Application  
+ Maintenant que les colonnes de site personnalisées, le type de contenu et la liste prêts, les déployer sur SharePoint et exécuter l’application à tester.  
   
-#### Pour tester l'application  
+#### <a name="to-test-the-application"></a>Pour tester l'application  
   
 1.  Dans la barre de menus, sélectionnez **Fichier**, **Enregistrer tout**.  
   
 2.  Appuyez sur la touche F5 pour exécuter l'application.  
   
-     L'application est compilée, et ses fonctionnalités sont déployées sur SharePoint puis activées.  
+     L’application est compilée, et ensuite ses fonctionnalités sont déployées sur SharePoint et activées.  
   
-3.  Dans la barre de navigation rapide, sélectionnez le lien **Patients** pour afficher la liste des **Patients**.  
+3.  Dans la barre de Navigation rapide, choisissez le **Patients** lien pour afficher le **Patients** liste.  
   
-     Les noms de colonne dans la liste doivent correspondre à ceux que vous avez entrés dans l'onglet **Vues** dans [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)].  
+     Les noms de colonnes dans la liste doivent correspondre à ceux que vous avez entrés dans le **vues** onglet [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)].  
   
-4.  Sélectionnez le lien **Ajouter un nouvel élément** pour créer une fiche d'informations patiente.  
+4.  Choisissez le **ajouter un nouvel élément** lien pour créer une carte d’informations sur les patients.  
   
-5.  Entrez les informations dans les champs, puis cliquez sur le bouton **Enregistrer**.  
+5.  Entrez les informations dans les champs, puis choisissez le **enregistrer** bouton.  
   
-     La nouvelle entrée est affichée dans la liste.  
+     Le nouvel enregistrement apparaît dans la liste.  
   
-## Voir aussi  
- [Création de colonnes de sites, de types de contenu et de listes pour SharePoint](../sharepoint/creating-site-columns-content-types-and-lists-for-sharepoint.md)   
- [Developing SharePoint Solutions](../sharepoint/developing-sharepoint-solutions.md)   
- [Comment : Créer un type de champ personnalisé](http://go.microsoft.com/fwlink/?LinkId=192079)   
+## <a name="see-also"></a>Voir aussi  
+ [Création de colonnes de Site, les Types de contenu et listes pour SharePoint](../sharepoint/creating-site-columns-content-types-and-lists-for-sharepoint.md)   
+ [Développement de Solutions SharePoint](../sharepoint/developing-sharepoint-solutions.md)   
+ [Comment : créer un Type de champ personnalisé](http://go.microsoft.com/fwlink/?LinkId=192079)   
  [Types de contenu](http://go.microsoft.com/fwlink/?LinkId=192080)   
- [Columns](http://go.microsoft.com/fwlink/?LinkId=192081)  
+ [Colonnes](http://go.microsoft.com/fwlink/?LinkId=192081)  
   
   

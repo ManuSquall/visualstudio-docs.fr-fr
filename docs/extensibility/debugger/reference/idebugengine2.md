@@ -1,66 +1,66 @@
 ---
-title: "IDebugEngine2 | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "IDebugEngine2"
-helpviewer_keywords: 
-  - "Interface de IDebugEngine2"
+title: IDebugEngine2 | Documents Microsoft
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords: IDebugEngine2
+helpviewer_keywords: IDebugEngine2 interface
 ms.assetid: 1f0e9ac0-6dfb-461a-976c-888d82144cdb
-caps.latest.revision: 15
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 15
+caps.latest.revision: "15"
+author: gregvanl
+ms.author: gregvanl
+manager: ghogen
+ms.openlocfilehash: f684a29eea526f7725e8a876f53453512f65dadc
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: fr-FR
+ms.lasthandoff: 10/31/2017
 ---
-# IDebugEngine2
-[!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]
-
-cette interface représente un moteur de débogage \(DE\).  Il est utilisé pour gérer différents aspects d'une session de débogage, de créer des points d'arrêt à définir et à désactiver des exceptions.  
+# <a name="idebugengine2"></a>IDebugEngine2
+Cette interface représente un moteur de débogage (DE). Il est utilisé pour gérer différents aspects d’une session de débogage à partir de la création de points d’arrêt pour sélectionner et désélectionner des exceptions.  
   
-## Syntaxe  
+## <a name="syntax"></a>Syntaxe  
   
 ```  
 IDebugEngine2 : IUnknown  
 ```  
   
-## Remarques à l'intention des implémenteurs  
- Cette interface est implémentée par un personnalisé De pour gérer le débogage des programmes.  cette interface doit être implémentée par le De.  
+## <a name="notes-for-implementers"></a>Notes pour les implémenteurs  
+ Cette interface est implémentée par un DE personnalisée pour gérer le débogage des programmes. Cette interface doit être implémentée par le DE.  
   
-## Remarques pour les appelants  
- Cette interface est appelée par le gestionnaire de débogage de session \(SDM\) pour gérer la session de débogage, y compris la gestion des exceptions, créer des points d'arrêt, et la réponse aux événements synchrones envoyés par le De.  
+## <a name="notes-for-callers"></a>Remarques pour les appelants  
+ Cette interface est appelée par le Gestionnaire de session de débogage (SDM) pour gérer la session de débogage, y compris la gestion des exceptions, création de points d’arrêt et la réponse à des événements synchrones envoyés par le DE.  
   
-## méthodes en commande de Vtable  
- Le tableau suivant répertorie les méthodes d' `IDebugEngine2`.  
+## <a name="methods-in-vtable-order"></a>Méthodes dans l'ordre Vtable  
+ Le tableau suivant présente les méthodes de `IDebugEngine2`.  
   
 |Méthode|Description|  
-|-------------|-----------------|  
-|[EnumPrograms](../../../extensibility/debugger/reference/idebugengine2-enumprograms.md)|crée un énumérateur pour tous les programmes débogué par un De.|  
-|[Attach](../../../extensibility/debugger/reference/idebugengine2-attach.md)|joint un De à un programme.|  
-|[CreatePendingBreakpoint](../../../extensibility/debugger/reference/idebugengine2-creatependingbreakpoint.md)|Crée un point d'arrêt en attente du.|  
-|[SetException](../../../extensibility/debugger/reference/idebugengine2-setexception.md)|Spécifie comment le De doit gérer une exception donnée.|  
-|[RemoveSetException](../../../extensibility/debugger/reference/idebugengine2-removesetexception.md)|Supprime l'exception spécifié elle n'est plus gérée par le moteur de débogage.|  
-|[RemoveAllSetExceptions](../Topic/IDebugEngine2::RemoveAllSetExceptions.md)|Supprime la liste d'exceptions que l'IDE a définies pour une architecture ou d'un langage à l'exécution particulière.|  
-|[GetEngineID](../../../extensibility/debugger/reference/idebugengine2-getengineid.md)|Obtient le GUID du De.|  
-|[DestroyProgram](../../../extensibility/debugger/reference/idebugengine2-destroyprogram.md)|Signale à que le programme spécifié a été atypiquement terminé et que le De doit nettoyer toutes les références au programme et envoyer un programme destroy l'événement.|  
-|[ContinueFromSynchronousEvent](../Topic/IDebugEngine2::ContinueFromSynchronousEvent.md)|Appelé par le SDM pour indiquer qu'un événement synchrone de débogage, précédemment envoyés par le De au SDM, était accepté et traité.|  
-|[SetLocale](../../../extensibility/debugger/reference/idebugengine2-setlocale.md)|définit les paramètres régionaux du De.|  
-|[SetRegistryRoot](../../../extensibility/debugger/reference/idebugengine2-setregistryroot.md)|Définit la racine de Registre actuellement utilisé par le De.|  
-|[SetMetric](../../../extensibility/debugger/reference/idebugengine2-setmetric.md)|définit un métrique.|  
-|[CauseBreak](../../../extensibility/debugger/reference/idebugengine2-causebreak.md)|Les demandes que tous les programmes débogué par ce De arrêtent l'exécution la prochaine fois un de leurs thread essaie de s'exécuter.|  
+|------------|-----------------|  
+|[EnumPrograms](../../../extensibility/debugger/reference/idebugengine2-enumprograms.md)|Crée un énumérateur pour tous les programmes en cours de débogage par un DE.|  
+|[Attacher](../../../extensibility/debugger/reference/idebugengine2-attach.md)|Attache un DE à un programme.|  
+|[CreatePendingBreakpoint](../../../extensibility/debugger/reference/idebugengine2-creatependingbreakpoint.md)|Crée un point d’arrêt en attente dans le DE.|  
+|[SetException](../../../extensibility/debugger/reference/idebugengine2-setexception.md)|Spécifie la façon dont le DE doit gérer une exception donnée.|  
+|[RemoveSetException](../../../extensibility/debugger/reference/idebugengine2-removesetexception.md)|Supprime l’exception spécifiée afin qu’il n’est n’est plus géré par le moteur de débogage.|  
+|[RemoveAllSetExceptions](../../../extensibility/debugger/reference/idebugengine2-removeallsetexceptions.md)|Supprime la liste des exceptions, que l’IDE a définie pour un langage ou une architecture d’exécution particulière.|  
+|[GetEngineID](../../../extensibility/debugger/reference/idebugengine2-getengineid.md)|Obtient le GUID de la DE.|  
+|[DestroyProgram](../../../extensibility/debugger/reference/idebugengine2-destroyprogram.md)|Informe un DE que le programme spécifié a été arrêté anormalement et que le doit nettoyer toutes les références au programme et envoyer un programme détruire l’événement.|  
+|[ContinueFromSynchronousEvent](../../../extensibility/debugger/reference/idebugengine2-continuefromsynchronousevent.md)|Appelé par le SDM pour indiquer qu’un événement de débogage synchrone précédemment envoyé par le DE pour le SDM, a été reçu et traité.|  
+|[SetLocale](../../../extensibility/debugger/reference/idebugengine2-setlocale.md)|Définit les paramètres régionaux de la DE.|  
+|[SetRegistryRoot](../../../extensibility/debugger/reference/idebugengine2-setregistryroot.md)|Définit la racine de Registre actuellement en cours d’utilisation par le DE.|  
+|[SetMetric](../../../extensibility/debugger/reference/idebugengine2-setmetric.md)|Définit une mesure.|  
+|[CauseBreak](../../../extensibility/debugger/reference/idebugengine2-causebreak.md)|Demande que tous les programmes en cours de débogage par cette DE s’arrêter l’exécution de la prochaine fois qu’un de leurs threads tente de s’exécuter.|  
   
-## Configuration requise  
- en\-tête : Msdbg.h  
+## <a name="requirements"></a>Spécifications  
+ En-tête : Msdbg.h  
   
- l'espace de noms : Microsoft.VisualStudio.Debugger.Interop  
+ Namespace : Microsoft.VisualStudio.Debugger.Interop  
   
- Assembly : Microsoft.VisualStudio.Debugger.Interop.dll  
+ Assembly : Microsoft.VisualStudio.Debugger.Interop.dll  
   
-## Voir aussi  
+## <a name="see-also"></a>Voir aussi  
  [Événement](../../../extensibility/debugger/reference/idebugeventcallback2-event.md)   
  [GetEngine](../../../extensibility/debugger/reference/idebugenginecreateevent2-getengine.md)

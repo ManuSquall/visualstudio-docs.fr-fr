@@ -1,89 +1,90 @@
 ---
-title: "Comment&#160;: ajouter et supprimer des dossiers mapp&#233;s"
-ms.custom: ""
-ms.date: "02/02/2017"
-ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "office-development"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "VS.SharePointTools.Project.MappedFolder"
-dev_langs: 
-  - "VB"
-  - "CSharp"
-  - "VB"
-  - "CSharp"
-helpviewer_keywords: 
-  - "dossiers mappés (développement SharePoint dans Visual Studio)"
-  - "développement SharePoint dans Visual Studio, dossiers mappés"
+title: "Comment : ajouter et supprimer des dossiers mappés | Documents Microsoft"
+ms.custom: 
+ms.date: 02/02/2017
+ms.reviewer: 
+ms.suite: 
+ms.technology: office-development
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords: VS.SharePointTools.Project.MappedFolder
+dev_langs:
+- VB
+- CSharp
+- VB
+- CSharp
+helpviewer_keywords:
+- SharePoint development in Visual Studio, mapped folders
+- mapped folders [SharePoint development in Visual Studio]
 ms.assetid: 115c8b00-7d4c-4fbe-b42c-e82dca944504
-caps.latest.revision: 23
-author: "kempb"
-ms.author: "kempb"
-manager: "ghogen"
-caps.handback.revision: 22
+caps.latest.revision: "23"
+author: gewarren
+ms.author: gewarren
+manager: ghogen
+ms.openlocfilehash: 7e54c4f4d95e5f8c23e6768ba3ebd09ef663fee1
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: fr-FR
+ms.lasthandoff: 10/31/2017
 ---
-# Comment&#160;: ajouter et supprimer des dossiers mapp&#233;s
-  Certains dossiers fréquemment employés dans SharePoint, tel que les dossiers Images et Dispositions, sont profondément imbriqués dans la hiérarchie des fichiers.  Il peut être intéressant, par conséquent, de mapper ces dossiers dans un projet SharePoint afin d'y accéder plus facilement.  Les dossiers mappés sont des dossiers du projet SharePoint qui correspondent à l'emplacement physique des fichiers dans le répertoire d'installation de SharePoint Server.  
+# <a name="how-to-add-and-remove-mapped-folders"></a>Comment : ajouter et supprimer des dossiers mappés
+  Certains dossiers fréquemment employés dans SharePoint, tels que les Images et dispositions, sont profondément imbriqué dans la hiérarchie des fichiers. Vous pouvez mapper ces dossiers dans un projet SharePoint pour y accéder plus facilement. Dossiers mappés sont des dossiers du projet SharePoint qui correspondent à l’emplacement physique des fichiers dans l’installation de SharePoint Server.  
   
- Lorsque vous déployez une application SharePoint, le contenu du dossier mappé et de tous ses sous\-dossiers est copié par le package de solution \(.wsp\) sur le serveur qui exécute SharePoint à l'emplacement spécifié dans l'arborescence de dossiers SharePoint.  Cet emplacement est déterminé par la propriété **Deployment Location** configurée pour le dossier mappé.  Tous les sous\-dossiers du dossier mappé sont relatifs à la propriété **Deployment Location** du dossier mappé.  C'est la propriété **Deployment Location** qui détermine le lieu de déploiement des éléments, et non le nom du dossier mappé.  
+ Lorsque vous déployez une application SharePoint, le contenu du dossier mappé et tous ses sous-dossiers sont copiées par le package de solution (.wsp) sur le serveur qui exécute SharePoint à l’emplacement spécifié dans l’arborescence des dossiers SharePoint. Cet emplacement est déterminé par le **emplacement de déploiement** propriété est définie pour le dossier mappé. Tous les sous-dossiers du dossier mappé sont relatifs **emplacement de déploiement** du dossier mappé. Notez que la **emplacement de déploiement** propriété, pas le nom du dossier mappé, détermine où les éléments sont déployés.  
   
- Ajoutez des dossiers mappés à un projet à l'aide des commandes proposées dans la barre d'outils ou dans le menu contextuel du projet.  Utilisez les commandes **Ajoutez le dossier mappé « images » SharePoint** et **Ajoutez le dossier « dispositions » SharePoint** pour ajouter ces dossiers mappé qui sont utilisés le plus souvent.  Mappez l'un des autres dossiers disponibles SharePoint à votre projet à l'aide **Ajouter un dossier mappé SharePoint** dans le menu contextuel puis en spécifiant les dossiers dans la boîte de dialogue **Ajouter un dossier mappé SharePoint**.  
+ Vous pouvez ajouter des dossiers mappés à un projet à l’aide des commandes sur la barre de menus ou le menu contextuel pour le projet. Vous pouvez utiliser la **un dossier mappé SharePoint d’ajouter des « Images »** et **SharePoint ajouter « Dispositions » dossier** commandes permettant d’ajouter ceux mappés dossiers les plus souvent utilisés. Vous pouvez mapper les autres dossiers SharePoint disponibles à votre projet à l’aide de la **ajouter un dossier mappé SharePoint** de commande dans le menu contextuel, puis en spécifiant les dossiers dans le **ajouter un dossier mappé SharePoint** boîte de dialogue.  
   
-## Ajout de dossiers mappés à un projet  
- La procédure suivante décrit comment ajouter deux dossiers mappés à un projet de partie web visuel.  Pour démarrrer, vous créez un projet de partie web visuel.  
+## <a name="adding-mapped-folders-to-a-project"></a>Ajout de dossiers mappés à un projet  
+ La procédure suivante décrit comment ajouter les deux dossiers mappés à un projet de composant WebPart visual. Pour commencer, vous créez un projet de composant WebPart visual.  
   
-#### Pour ajouter des dossiers mappés à un projet  
+#### <a name="to-add-mapped-folders-to-a-project"></a>Pour ajouter des dossiers mappés à un projet  
   
 1.  Dans la barre de menus, sélectionnez **Fichier**, **Nouveau**, **Projet**.  
   
-2.  Dans la boîte de dialogue **Nouveau projet**, développez sous le noeud **Visual C\#** ou **Visual Basic**, développez le noeud **Office\/SharePoint**, puis choisissez le noeud **Solutions SharePoint**.  
+2.  Dans le **nouveau projet** boîte de dialogue zone, développez le le **Visual Basic** ou **Visual C#** nœud, développez le **Office/SharePoint** nœud, puis Choisissez le **Solutions SharePoint** nœud.  
   
-3.  Dans la liste des modèles de projet, sélectionnez le modèle **Les parties visuelles web de SharePoint 2013**.  
+3.  Dans la liste des modèles de projet, choisissez la **2013 Visual WebPart SharePoint** modèle.  
   
-4.  Dans la zone de texte **Nom**, entrez TestProject1, puis choisissez le bouton **OK**.  
+4.  Dans le **nom** , entrez **TestProject1**, puis choisissez le **OK** bouton.  
   
-5.  Dans l'**Assistant Personnalisation de SharePoint**, cliquez sur le bouton **Terminer** pour conserver les paramètres par défaut.  
+5.  Dans le **Assistant Personnalisation de SharePoint**, choisissez le **Terminer** bouton pour conserver les paramètres par défaut.  
   
-6.  Dans l'**Explorateur de solutions**, choisissez le nœud du projet, dans la barre de menus, choisissez **Project**, **Add SharePoint “Images” Mapped Folder**.  
+6.  Dans **l’Explorateur de solutions**, choisissez le nœud du projet, puis, dans la barre de menus, choisissez **projet**, **un dossier mappé SharePoint d’ajouter des « Images »**.  
   
-     Un dossier nommé **Images** apparaît dans votre projet et contient un sous\-dossier nommé TestProject1.  Ce dossier mappé contiendra les images des parties web visuelles du projet.  
+     Un dossier nommé **Images** s’affiche dans votre projet et contient un sous-dossier nommé TestProject1. Ce dossier contiendra des images pour le projet de composant WebPart visual.  
   
-7.  Dans l'**Explorateur de solutions**, choisissez le nœud du projet, sur la barre de menu, choisissez **Project**, **Add SharePoint Mapped Folder** pour afficher la boîte de dialogue **Project**, **Add SharePoint Mapped FolderAjouter un dossier mappé SharePoint**.  
+7.  Dans **l’Explorateur de solutions**, choisissez le nœud du projet, puis, dans la barre de menus, choisissez **projet**, **ajouter un dossier mappé SharePoint** pour afficher le **ajouter Dossier mappé SharePoint** boîte de dialogue.  
   
-8.  Dans l'arborescence des dossiers disponibles pour le mappage, sélectionnez le dossier **Ressources**, puis cliquez sur le bouton **OK**.  
+8.  Dans l’arborescence des dossiers qui sont disponibles pour le mappage, choisissez le **ressources** dossier, puis choisissez le **OK** bouton.  
   
-     Un dossier nommé **Ressources** apparâit dans votre projet.  Ce dossier peut stocker des éléments tels que des fichiers de ressources de type chaîne.  Les sous\-dossiers peuvent être utiles pour organiser le contenu d'un dossier mappé, mais ils ne sont pas créés automatiquement lorsque vous ajoutez un dossier mappé à l'aide de la commande  **Ajouter un Dossier mappé SharePoint**.  Pour ajouter un sous\-dossier, choisissez le dossier **Ressources**, puis, dans la barre de menus, choisissez **Projet**, **Nouveau dossier**.  
+     Un dossier nommé **ressources** s’affiche dans votre projet. Ce dossier peut stocker des éléments tels que les fichiers de ressources de chaîne. Sous-dossiers peuvent être utiles pour organiser le contenu d’un dossier mappé, mais ils ne sont pas automatiquement créés lorsque vous ajoutez un dossier mappé à l’aide de la **ajouter un dossier mappé SharePoint** commande. Pour ajouter un sous-dossier, choisissez le **ressources** dossier, puis, dans la barre de menus, choisissez **projet**, **nouveau dossier**.  
   
-## Modification de l'emplacement de déploiement d'un dossier mappé  
- Par défaut, les dossiers mappés sont ajoutés à un emplacement spécifique relatif au tracé d'installation racine de SharePoint que le jeton {SharePointRoot} symbolise.  Il est possible, cependant, de changer cet emplacement en redéfinissant la propriété **Deployment location** du dossier mappé.  Chaque dossier mappé a sa propre propriété **Deployment location**.  
+## <a name="changing-the-deployment-location-of-a-mapped-folder"></a>Modification de l’emplacement de déploiement d’un dossier mappé  
+ Par défaut, les dossiers mappés sont ajoutés à des emplacements spécifiques par rapport à la racine installation chemin d’accès SharePoint, qui identifie le jeton {SharePointRoot}. Toutefois, vous pouvez modifier cet emplacement en modifiant le **emplacement de déploiement** propriété du dossier mappé. Chaque dossier mappé a sa propre **emplacement de déploiement** propriété.  
   
-#### Pour changer l'emplacement de déploiement d'un dossier mappé  
-  
-1.  Dans le projet que vous avez créé précédemment, choisissez un dossier mappé.  
-  
-2.  Dans la fenêtre **Propriétés**, placez le bouton de sélection \(![Bouton de sélection du concepteur ASP.NET mobile](~/sharepoint/media/mwellipsis.gif "Bouton de sélection du concepteur ASP.NET mobile")\) sur la propriété **Deployment location**.  
-  
-3.  Dans la boîte de dialogue **Ajouter un dossier mappé SharePoint**, recherchez le dossier vers lequel le dossier mappé doit renvoyer.  
-  
-4.  Choisissez le noeud, puis choisissez le bouton **OK**.  
-  
-## Modification du nom ou suppression des dossiers mappés  
-  
-#### Pour renommer ou supprimer un dossier mappé  
+#### <a name="to-change-the-deployment-location-of-a-mapped-folder"></a>Pour modifier l’emplacement de déploiement d’un dossier mappé  
   
 1.  Dans le projet que vous avez créé précédemment, choisissez un dossier mappé.  
   
-2.  Pour changer le nom du dossier mappé, ouvrez son menu contextuel, choisissez **Renommer**, tapez le nouveau nom, puis appuyez sur ENTRÉE.  
+2.  Dans le **propriétés** fenêtre, choisissez le bouton de sélection (![ellipse de concepteur ASP.NET Mobile](../sharepoint/media/mwellipsis.gif "ellipse de concepteur ASP.NET Mobile")) bouton sur le **déploiement emplacement** propriété.  
   
-     Vous pouvez alternativement choisir le dossier mappé à renommer, ouvrir la fenêtre **Propriétés**, puis définir la valeur de la propriété **Folder name** avec le nouveau nom.  
+3.  Dans le **ajouter un dossier mappé SharePoint** boîte de dialogue, accédez au dossier auquel vous souhaitez que le dossier mappé au point.  
   
-3.  Pour supprimer un dossier mappé du projet, ouvrez le menu contextuel ,choisissez **Supprimer**, puis cliquez sur **OK** dans la boîte de dialogue pour confirmer la suppression.  
+4.  Choisissez le nœud, puis le **OK** bouton.  
   
-## Voir aussi  
- [Developing SharePoint Solutions](../sharepoint/developing-sharepoint-solutions.md)  
+## <a name="renaming-or-removing-mapped-folders"></a>Renommer ou supprimer des dossiers mappés  
+  
+#### <a name="to-rename-or-remove-a-mapped-folder"></a>Pour renommer ou supprimer un dossier mappé  
+  
+1.  Dans le projet que vous avez créé précédemment, choisissez un dossier mappé.  
+  
+2.  Pour renommer le dossier mappé, ouvrez le menu contextuel, choisissez **renommer**, entrez le nouveau nom, puis appuyez sur ENTRÉE.  
+  
+     En guise d’alternative, vous pouvez choisir le dossier mappé que vous souhaitez renommer, ouvrez le **propriétés** fenêtre, puis définissez la valeur de la **nom du dossier** le nouveau nom de propriété.  
+  
+3.  Pour supprimer un dossier mappé à partir du projet, ouvrez le menu contextuel, choisissez **supprimer**, puis choisissez le **OK** bouton dans la boîte de dialogue Confirmer la suppression.  
+  
+## <a name="see-also"></a>Voir aussi  
+ [Développement de solutions SharePoint](../sharepoint/developing-sharepoint-solutions.md)  
   
   

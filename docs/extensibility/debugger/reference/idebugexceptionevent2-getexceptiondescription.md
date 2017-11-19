@@ -1,46 +1,29 @@
 ---
-title: IDebugExceptionEvent2::GetExceptionDescription | Microsoft Docs
+title: IDebugExceptionEvent2::GetExceptionDescription | Documents Microsoft
 ms.custom: 
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-sdk
+ms.technology: vs-ide-sdk
 ms.tgt_pltfrm: 
 ms.topic: article
-f1_keywords:
-- IDebugExceptionEvent2::GetExceptionDescription
-helpviewer_keywords:
-- IDebugExceptionEvent2::GetExceptionDescription
+f1_keywords: IDebugExceptionEvent2::GetExceptionDescription
+helpviewer_keywords: IDebugExceptionEvent2::GetExceptionDescription
 ms.assetid: d07d458f-5729-47e4-9b77-1bd59c61a75a
-caps.latest.revision: 10
+caps.latest.revision: "10"
+author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-translation.priority.mt:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
+ms.openlocfilehash: 46a6028917cd94e1105f96a230b870bf396864cf
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
 ms.translationtype: MT
-ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
-ms.openlocfilehash: c7279e8aef6d903e2836a3f6025f550eb89e1bab
-ms.contentlocale: fr-fr
-ms.lasthandoff: 08/28/2017
-
+ms.contentlocale: fr-FR
+ms.lasthandoff: 10/31/2017
 ---
 # <a name="idebugexceptionevent2getexceptiondescription"></a>IDebugExceptionEvent2::GetExceptionDescription
-Gets a displayable description of the exception.  
+Obtient la description de l’exception peut être affichée.  
   
-## <a name="syntax"></a>Syntax  
+## <a name="syntax"></a>Syntaxe  
   
 ```cpp  
 HRESULT GetExceptionDescription(   
@@ -54,15 +37,15 @@ int GetExceptionDescription(
 );  
 ```  
   
-#### <a name="parameters"></a>Parameters  
+#### <a name="parameters"></a>Paramètres  
  `pbstrDescription`  
- [out] Returns a displayable description of the exception.  
+ [out] Retourne la description de l’exception peut être affichée.  
   
-## <a name="return-value"></a>Return Value  
- If successful, returns `S_OK`; otherwise, returns an error code.  
+## <a name="return-value"></a>Valeur de retour  
+ En cas de réussite, retourne `S_OK`; sinon, retourne un code d’erreur.  
   
-## <a name="remarks"></a>Remarks  
- The string returned from this method is typically the name of the exception and is shown in the **Output** window when the exception occurs.  
+## <a name="remarks"></a>Remarques  
+ La chaîne retournée par cette méthode est généralement le nom de l’exception et est indiquée dans le **sortie** fenêtre lorsque l’exception se produit.  
   
-## <a name="see-also"></a>See Also  
+## <a name="see-also"></a>Voir aussi  
  [IDebugExceptionEvent2](../../../extensibility/debugger/reference/idebugexceptionevent2.md)

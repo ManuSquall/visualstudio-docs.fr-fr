@@ -1,68 +1,68 @@
 ---
-title: "IEnumDebugBoundBreakpoints2 | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "IEnumDebugBoundBreakpoints2"
-helpviewer_keywords: 
-  - "IEnumDebugBoundBreakpoints2"
+title: IEnumDebugBoundBreakpoints2 | Documents Microsoft
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords: IEnumDebugBoundBreakpoints2
+helpviewer_keywords: IEnumDebugBoundBreakpoints2
 ms.assetid: ea03e7e1-28d6-40b7-8097-bbb61d3b7caa
-caps.latest.revision: 11
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 11
+caps.latest.revision: "11"
+author: gregvanl
+ms.author: gregvanl
+manager: ghogen
+ms.openlocfilehash: e7e5f158a39974fca4a631617a0a26b38c5c6a12
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: fr-FR
+ms.lasthandoff: 10/31/2017
 ---
-# IEnumDebugBoundBreakpoints2
-[!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]
-
-Cette interface énumère les points d'arrêt liés associés à un point d'arrêt en attente ou un événement lié de point d'arrêt.  
+# <a name="ienumdebugboundbreakpoints2"></a>IEnumDebugBoundBreakpoints2
+Cette interface énumère les points d’arrêt liés associés à un point d’arrêt en attente ou de point d’arrêt lié l’événement.  
   
-## Syntaxe  
+## <a name="syntax"></a>Syntaxe  
   
 ```  
 IEnumDebugBoundBreakpoints2 : IUnknown  
 ```  
   
-## Remarques à l'intention des implémenteurs  
- Le moteur de \(DE\) débogage implémente cette interface dans le cadre de son prise en charge des points d'arrêt.  Cette interface doit être implémentée si les points d'arrêt sont pris en charge.  
+## <a name="notes-for-implementers"></a>Notes pour les implémenteurs  
+ Le moteur de débogage (DE) implémente cette interface dans le cadre de sa prise en charge des points d’arrêt. Cette interface doit être implémentée si les points d’arrêt sont pris en charge.  
   
-## Remarques pour les appelants  
- appels de Visual Studio :  
+## <a name="notes-for-callers"></a>Remarques pour les appelants  
+ Visual Studio appelle :  
   
--   [EnumBreakpoints](../../../extensibility/debugger/reference/idebugbreakpointevent2-enumbreakpoints.md) pour obtenir cette interface représentant une liste de tous les points d'arrêt qui sont déclenchés.  
+-   [EnumBreakpoints](../../../extensibility/debugger/reference/idebugbreakpointevent2-enumbreakpoints.md) pour obtenir cette interface qui représente une liste de tous les points d’arrêt qui ont été déclenchées.  
   
--   [EnumBoundBreakpoints](../../../extensibility/debugger/reference/idebugbreakpointboundevent2-enumboundbreakpoints.md) pour obtenir cette interface représentant une liste de tous les points d'arrêt qui ont été liés.  
+-   [EnumBoundBreakpoints](../../../extensibility/debugger/reference/idebugbreakpointboundevent2-enumboundbreakpoints.md) pour obtenir cette interface qui représente une liste de tous les points d’arrêt qui ont été liés.  
   
--   [EnumBoundBreakpoints](../../../extensibility/debugger/reference/idebugpendingbreakpoint2-enumboundbreakpoints.md) pour obtenir cette interface représentant une liste de tous les points d'arrêt les lie à ce point d'arrêt en attente.  
+-   [EnumBoundBreakpoints](../../../extensibility/debugger/reference/idebugpendingbreakpoint2-enumboundbreakpoints.md) pour obtenir cette interface qui représente une liste de tous les points d’arrêt liés à ce point d’arrêt en attente.  
   
-## méthodes en commande de Vtable  
- Le tableau suivant répertorie les méthodes d' `IEnumDebugBoundBreakpoints2`.  
+## <a name="methods-in-vtable-order"></a>Méthodes dans l'ordre Vtable  
+ Le tableau suivant présente les méthodes de `IEnumDebugBoundBreakpoints2`.  
   
 |Méthode|Description|  
-|-------------|-----------------|  
-|[Suivant](../../../extensibility/debugger/reference/ienumdebugboundbreakpoints2-next.md)|Récupère un nombre spécifié de points d'arrêt liés dans une séquence d'énumération.|  
-|[Ignorer](../../../extensibility/debugger/reference/ienumdebugboundbreakpoints2-skip.md)|Ignore un nombre spécifié de points d'arrêt liés dans une séquence d'énumération.|  
-|[Réinitialiser](../../../extensibility/debugger/reference/ienumdebugboundbreakpoints2-reset.md)|réinitialise une séquence d'énumération au début.|  
-|[Clone](../../../extensibility/debugger/reference/ienumdebugboundbreakpoints2-clone.md)|crée un énumérateur qui contient le même état d'énumération que l'énumérateur actuel.|  
-|[GetCount](../../../extensibility/debugger/reference/ienumdebugboundbreakpoints2-getcount.md)|obtient le nombre de points d'arrêt liés dans un énumérateur.|  
+|------------|-----------------|  
+|[Next](../../../extensibility/debugger/reference/ienumdebugboundbreakpoints2-next.md)|Récupère un nombre spécifié de points d’arrêt liés dans une séquence d’énumération.|  
+|[Skip](../../../extensibility/debugger/reference/ienumdebugboundbreakpoints2-skip.md)|Ignore un nombre spécifié de points d’arrêt liés dans une séquence d’énumération.|  
+|[Réinitialiser](../../../extensibility/debugger/reference/ienumdebugboundbreakpoints2-reset.md)|Réinitialise la séquence d’énumération au début.|  
+|[Clone](../../../extensibility/debugger/reference/ienumdebugboundbreakpoints2-clone.md)|Crée un énumérateur qui contient le même état d’énumération que l’énumérateur actuel.|  
+|[GetCount](../../../extensibility/debugger/reference/ienumdebugboundbreakpoints2-getcount.md)|Obtient le nombre de points d’arrêt liés dans un énumérateur.|  
   
-## Notes  
- Visual Studio utilise des points d'arrêt liés représentés par cette interface pour mettre à jour l'affichage des points d'arrêt dans l'IDE.  
+## <a name="remarks"></a>Remarques  
+ Visual Studio utilise les points d’arrêt liés représentés par cette interface pour mettre à jour l’affichage des points d’arrêt dans l’IDE.  
   
-## Configuration requise  
- en\-tête : msdbg.h  
+## <a name="requirements"></a>Spécifications  
+ En-tête : msdbg.h  
   
- l'espace de noms : Microsoft.VisualStudio.Debugger.Interop  
+ Namespace : Microsoft.VisualStudio.Debugger.Interop  
   
- Assembly : Microsoft.VisualStudio.Debugger.Interop.dll  
+ Assembly : Microsoft.VisualStudio.Debugger.Interop.dll  
   
-## Voir aussi  
+## <a name="see-also"></a>Voir aussi  
  [Interfaces de base](../../../extensibility/debugger/reference/core-interfaces.md)   
  [EnumBoundBreakpoints](../../../extensibility/debugger/reference/idebugbreakpointboundevent2-enumboundbreakpoints.md)   
  [EnumBoundBreakpoints](../../../extensibility/debugger/reference/idebugpendingbreakpoint2-enumboundbreakpoints.md)   

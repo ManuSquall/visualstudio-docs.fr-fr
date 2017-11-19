@@ -1,64 +1,64 @@
 ---
-title: "IEnumDebugCodeContexts2 | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "IEnumDebugCodeContexts2"
-helpviewer_keywords: 
-  - "IEnumDebugCodeContexts2"
+title: IEnumDebugCodeContexts2 | Documents Microsoft
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords: IEnumDebugCodeContexts2
+helpviewer_keywords: IEnumDebugCodeContexts2
 ms.assetid: 72915146-215f-4c99-a034-131b2b474e0e
-caps.latest.revision: 13
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 13
+caps.latest.revision: "13"
+author: gregvanl
+ms.author: gregvanl
+manager: ghogen
+ms.openlocfilehash: 9d0d54e9a3987ab8b2493d9e999955febd73ac4a
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: fr-FR
+ms.lasthandoff: 10/31/2017
 ---
-# IEnumDebugCodeContexts2
-[!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]
-
-Cette interface énumère les contextes de code associés à la session de débogage, ou avec un programme ou un document spécifique.  
+# <a name="ienumdebugcodecontexts2"></a>IEnumDebugCodeContexts2
+Cette interface énumère les contextes de code associé liés la session de débogage, ou à un document ou un programme particulier.  
   
-## Syntaxe  
+## <a name="syntax"></a>Syntaxe  
   
 ```  
 IEnumDebugCodeContexts2 : IUnknown  
 ```  
   
-## Remarques à l'intention des implémenteurs  
- Le moteur \(DE\) de débogage implémente cette interface pour représenter une liste des contextes de code pour un emplacement de texte particulier dans un programme, ou une liste des contextes de code pour un contexte de document spécifique.  
+## <a name="notes-for-implementers"></a>Notes pour les implémenteurs  
+ Le moteur de débogage (DE) implémente cette interface pour représenter une liste de contextes de code pour une position de texte spécifique dans un programme, ou une liste de contextes de code pour un contexte de document particulier.  
   
-## Remarques pour les appelants  
- Appelez [EnumCodeContexts](../../../extensibility/debugger/reference/idebugprogram2-enumcodecontexts.md) pour obtenir cette interface représentant une liste des contextes de code pour un emplacement de texte spécifique dans le document source d'un programme.  
+## <a name="notes-for-callers"></a>Remarques pour les appelants  
+ Appelez [EnumCodeContexts](../../../extensibility/debugger/reference/idebugprogram2-enumcodecontexts.md) pour obtenir cette interface qui représente une liste de contextes de code pour une position d’un texte spécifique dans le document d’origine d’un programme.  
   
- appelez [EnumCodeContexts](../../../extensibility/debugger/reference/idebugdocumentcontext2-enumcodecontexts.md) pour obtenir cette interface représentant une liste de tous les contextes de code dans un document source particulier.  
+ Appelez [EnumCodeContexts](../../../extensibility/debugger/reference/idebugdocumentcontext2-enumcodecontexts.md) pour obtenir cette interface qui représente une liste de tous les contextes de code dans un document source particulier.  
   
-## méthodes en commande de Vtable  
- Le tableau suivant répertorie les méthodes d' `IEnumDebugCodeContexts2`.  
+## <a name="methods-in-vtable-order"></a>Méthodes dans l'ordre Vtable  
+ Le tableau suivant présente les méthodes de `IEnumDebugCodeContexts2`.  
   
 |Méthode|Description|  
-|-------------|-----------------|  
-|[Suivant](../../../extensibility/debugger/reference/ienumdebugcodecontexts2-next.md)|Récupère un nombre spécifié de contextes de code dans une séquence d'énumération.|  
-|[Ignorer](../../../extensibility/debugger/reference/ienumdebugcodecontexts2-skip.md)|Ignore un nombre spécifié de contextes de code dans une séquence d'énumération.|  
-|[Réinitialiser](../../../extensibility/debugger/reference/ienumdebugcodecontexts2-reset.md)|réinitialise une séquence d'énumération au début.|  
-|[Clone](../../../extensibility/debugger/reference/ienumdebugcodecontexts2-clone.md)|crée un énumérateur qui contient le même état d'énumération que l'énumérateur actuel.|  
-|[GetCount](../../../extensibility/debugger/reference/ienumdebugcodecontexts2-getcount.md)|obtient le nombre de contextes de code dans un énumérateur.|  
+|------------|-----------------|  
+|[Next](../../../extensibility/debugger/reference/ienumdebugcodecontexts2-next.md)|Récupère un nombre spécifié de contextes de code dans une séquence d’énumération.|  
+|[Skip](../../../extensibility/debugger/reference/ienumdebugcodecontexts2-skip.md)|Ignore un nombre spécifié de contextes de code dans une séquence d’énumération.|  
+|[Réinitialiser](../../../extensibility/debugger/reference/ienumdebugcodecontexts2-reset.md)|Réinitialise la séquence d’énumération au début.|  
+|[Clone](../../../extensibility/debugger/reference/ienumdebugcodecontexts2-clone.md)|Crée un énumérateur qui contient le même état d’énumération que l’énumérateur actuel.|  
+|[GetCount](../../../extensibility/debugger/reference/ienumdebugcodecontexts2-getcount.md)|Obtient le nombre de contextes de code dans un énumérateur.|  
   
-## Notes  
- Visual Studio appelle [EnumCodeContexts](../../../extensibility/debugger/reference/idebugprogram2-enumcodecontexts.md) pour remplir la liste des contextes de code que l'utilisateur peut choisir de en définissant l'instruction suivante ou en affichant le code machine d'un fichier source.  Plusieurs contextes de code peuvent se produire, par exemple, lorsqu'il existe plusieurs instances de modèle C\/C\+\+ \+\+\-style.  
+## <a name="remarks"></a>Remarques  
+ Appels de Visual Studio [EnumCodeContexts](../../../extensibility/debugger/reference/idebugprogram2-enumcodecontexts.md) pour remplir une liste de contextes de code de l’utilisateur peut choisir à partir de laquelle définir l’instruction suivante ou en affichant le code machine pour un fichier source. Plusieurs contextes de code peuvent se produire, par exemple, lorsqu’il y a plusieurs instances d’un modèle de style C++.  
   
-## Configuration requise  
- en\-tête : msdbg.h  
+## <a name="requirements"></a>Spécifications  
+ En-tête : msdbg.h  
   
- l'espace de noms : Microsoft.VisualStudio.Debugger.Interop  
+ Namespace : Microsoft.VisualStudio.Debugger.Interop  
   
- Assembly : Microsoft.VisualStudio.Debugger.Interop.dll  
+ Assembly : Microsoft.VisualStudio.Debugger.Interop.dll  
   
-## Voir aussi  
+## <a name="see-also"></a>Voir aussi  
  [Interfaces de base](../../../extensibility/debugger/reference/core-interfaces.md)   
  [EnumCodeContexts](../../../extensibility/debugger/reference/idebugprogram2-enumcodecontexts.md)   
  [EnumCodeContexts](../../../extensibility/debugger/reference/idebugdocumentcontext2-enumcodecontexts.md)

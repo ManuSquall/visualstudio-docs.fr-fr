@@ -1,46 +1,29 @@
 ---
-title: STEPUNIT | Microsoft Docs
+title: STEPUNIT | Documents Microsoft
 ms.custom: 
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-sdk
+ms.technology: vs-ide-sdk
 ms.tgt_pltfrm: 
 ms.topic: article
-f1_keywords:
-- STEPUNIT
-helpviewer_keywords:
-- STEPUNIT enumeration
+f1_keywords: STEPUNIT
+helpviewer_keywords: STEPUNIT enumeration
 ms.assetid: cb8441f2-f744-4e73-acfe-ae8542df9649
-caps.latest.revision: 8
+caps.latest.revision: "8"
+author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-translation.priority.mt:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
+ms.openlocfilehash: e0f4dab5124e3f7d6924c5f02f552832e8b0fd36
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
 ms.translationtype: MT
-ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
-ms.openlocfilehash: dfa4ba22c8d56de8948c86fb6133f30e938564d8
-ms.contentlocale: fr-fr
-ms.lasthandoff: 08/28/2017
-
+ms.contentlocale: fr-FR
+ms.lasthandoff: 10/31/2017
 ---
 # <a name="stepunit"></a>STEPUNIT
-Specifies the step unit for stepping.  
+Spécifie l’unité d’étape pour l’exécution pas à pas.  
   
-## <a name="syntax"></a>Syntax  
+## <a name="syntax"></a>Syntaxe  
   
 ```cpp  
 enum enum_STEPUNIT {   
@@ -59,26 +42,26 @@ enum enum_STEPUNIT {
 };  
 ```  
   
-## <a name="members"></a>Members  
+## <a name="members"></a>Membres  
  STEP_STATEMENT  
- Steps by statement.  
+ Étapes de l’instruction.  
   
  STEP_LINE  
- Steps by line.  
+ Opérations en ligne.  
   
  STEP_INSTRUCTION  
- Steps by instruction.  
+ Étapes de l’instruction.  
   
-## <a name="remarks"></a>Remarks  
- Passed as an argument to the [Step](../../../extensibility/debugger/reference/idebugprocess3-step.md) method.  
+## <a name="remarks"></a>Remarques  
+ Est passé comme argument à la [étape](../../../extensibility/debugger/reference/idebugprocess3-step.md) (méthode).  
   
-## <a name="requirements"></a>Requirements  
- Header: msdbg.h  
+## <a name="requirements"></a>Spécifications  
+ En-tête : msdbg.h  
   
- Namespace: Microsoft.VisualStudio.Debugger.Interop  
+ Namespace : Microsoft.VisualStudio.Debugger.Interop  
   
- Assembly: Microsoft.VisualStudio.Debugger.Interop.dll  
+ Assembly : Microsoft.VisualStudio.Debugger.Interop.dll  
   
-## <a name="see-also"></a>See Also  
- [Enumerations](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)   
+## <a name="see-also"></a>Voir aussi  
+ [Énumérations](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)   
  [Step](../../../extensibility/debugger/reference/idebugprocess3-step.md)

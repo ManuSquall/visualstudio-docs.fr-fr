@@ -4,41 +4,25 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-devops-techdebt
+ms.technology: vs-devops-techdebt
 ms.tgt_pltfrm: 
 ms.topic: get-started-article
-helpviewer_keywords:
-- UML, using models
+helpviewer_keywords: UML, using models
 ms.assetid: a33ac8fc-4ba0-4850-b71b-014dc8674e54
-caps.latest.revision: 29
+caps.latest.revision: "29"
 author: alexhomer1
 ms.author: ahomer
 manager: douge
-translation.priority.ht:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
-translationtype: Machine Translation
-ms.sourcegitcommit: 3d07f82ea737449fee6dfa04a61e195654ba35fa
-ms.openlocfilehash: 080f77253c886550dad4a10ae46409e5ac2c9506
-ms.lasthandoff: 02/22/2017
-
+ms.openlocfilehash: c9871a767ae8e2a9c77edecda19c986c4ee85f26
+ms.sourcegitcommit: ec1c7e7e3349d2f3a4dc027e7cfca840c029367d
+ms.translationtype: MT
+ms.contentlocale: fr-FR
+ms.lasthandoff: 11/07/2017
 ---
 # <a name="use-models-in-your-development-process"></a>Utiliser des modèles dans votre processus de développement
-Dans Visual Studio, vous pouvez utiliser un modèle pour vous aider à comprendre et à modifier un système, une application ou un composant. Un modèle peut vous aider à visualiser le monde dans lequel votre système fonctionne, à clarifier les besoins des utilisateurs, à définir l'architecture de votre système, à analyser le code et à vous assurer qu'il répond aux impératifs. Consultez la page [vidéo Channel 9 : améliorer l’architecture via la modélisation](http://go.microsoft.com/fwlink/?LinkID=252078).  
+Dans Visual Studio, vous pouvez utiliser un modèle pour vous aider à comprendre et à modifier un système, une application ou un composant. Un modèle peut vous aider à visualiser le monde dans lequel votre système fonctionne, à clarifier les besoins des utilisateurs, à définir l'architecture de votre système, à analyser le code et à vous assurer qu'il répond aux impératifs. Consultez [vidéo Channel 9 : améliorer l’architecture grâce à la modélisation](http://go.microsoft.com/fwlink/?LinkID=252078).  
   
- Pour connaître les versions de Visual Studio prennent en charge chaque type de modèle, consultez [prise en charge de Version pour l’architecture et les outils de modélisation](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport).  
+ Pour connaître les versions de Visual Studio qui prennent en charge chaque type de modèle, consultez [Version support for architecture and modeling tools](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport).  
   
 ## <a name="how-to-use-models"></a>Utilisation des modèles  
  Les modèles peuvent vous aider de plusieurs façons :  
@@ -47,7 +31,7 @@ Dans Visual Studio, vous pouvez utiliser un modèle pour vous aider à comprendr
   
 -   L'utilisation de modèles peut vous aider à exposer des incohérences dans les spécifications.  
   
--   Communiquer avec des modèles vous permet de communiquer des concepts importants avec moins d'ambiguïté qu'avec un langage naturel. Pour plus d’informations, consultez [modèle d’architecture de votre application](../modeling/model-your-app-s-architecture.md).  
+-   Communiquer avec des modèles vous permet de communiquer des concepts importants avec moins d'ambiguïté qu'avec un langage naturel. Pour plus d’informations, consultez [modéliser l’architecture de votre application](../modeling/model-your-app-s-architecture.md).  
   
 -   Vous pouvez parfois utiliser des modèles pour générer du code ou d'autres artefacts tels que des schémas de bases de données ou des documents. Par exemple, les composants de modélisation de [!INCLUDE[vsUltShort](../code-quality/includes/vsultshort_md.md)] sont générés à partir d'un modèle.  Pour plus d’informations, consultez [générer et configurer votre application à partir de modèles](../modeling/generate-and-configure-your-app-from-models.md).  
   
@@ -67,7 +51,7 @@ Dans Visual Studio, vous pouvez utiliser un modèle pour vous aider à comprendr
   
  Voici d'autres aspects de spécification qui sont couramment utilisés avec les modèles. Selon l'échelle et le style de votre projet, vous pourriez utiliser plusieurs de ces aspects ou aucun d'entre eux :  
   
--   Récits utilisateur. Un récit utilisateur est une courte description, discutée avec les utilisateurs et les autres parties prenantes, d'un aspect du comportement du système qui sera livré lors de l'une des itérations du projet. Un récit utilisateur typique commence par « Le client sera en mesure de... ». Un récit utilisateur peut présenter un groupe de cas d'usage ou définir des extensions de cas d'usage qui ont été développées précédemment. La définition ou l'extension des cas d'usage aide à clarifier le récit utilisateur.  
+-   Récits utilisateur. Un récit utilisateur est une courte description, discutée avec les utilisateurs et les autres parties prenantes, d'un aspect du comportement du système qui sera livré lors de l'une des itérations du projet. Un récit utilisateur classique commence « le client sera en mesure de... » Un récit utilisateur peut présenter un groupe de cas d'usage ou définir des extensions de cas d'usage qui ont été développées précédemment. La définition ou l'extension des cas d'usage aide à clarifier le récit utilisateur.  
   
 -   Demandes de modification. Une demande de modification dans un projet plus formel est très similaire à un récit utilisateur dans un projet agile. L'approche agile traite toutes les spécifications comme des modifications de ce qui a été développé lors des itérations précédentes.  
   
@@ -108,7 +92,7 @@ Dans Visual Studio, vous pouvez utiliser un modèle pour vous aider à comprendr
 -   Les parties prenantes non-techniques n'auront généralement aucun problème pour comprendre les diagrammes UML, avec quelques conseils de votre part.  
   
 #### <a name="link-model-to-work-items"></a>Lier le modèle à des éléments de travail  
- Après l'atelier de spécifications, élaborez les détails du modèle d'impératifs et liez le modèle à des tâches de développement. Vous pouvez pour cela lier des éléments de travail dans [!INCLUDE[esprfound](../code-quality/includes/esprfound_md.md)] à des éléments du modèle. Pour savoir comment procéder, consultez [lier des éléments de modèle et les éléments de travail](../modeling/link-model-elements-and-work-items.md).  
+ Après l'atelier de spécifications, élaborez les détails du modèle d'impératifs et liez le modèle à des tâches de développement. Vous pouvez pour cela lier des éléments de travail dans [!INCLUDE[esprfound](../code-quality/includes/esprfound_md.md)] à des éléments du modèle.
   
  Vous pouvez lier n'importe quel élément à des éléments de travail, mais les éléments les plus utiles sont les suivants :  
   
@@ -127,33 +111,32 @@ Dans Visual Studio, vous pouvez utiliser un modèle pour vous aider à comprendr
 ## <a name="levels-of-abstraction"></a>Niveaux d'abstraction  
  Les modèles ont une plage d'abstraction par rapport au logiciel. Les modèles les plus concrets représentent directement le code de programme et les modèles les plus abstraits représentent des concepts métier qui peuvent être représentés ou non dans le code.  
   
- Vous pouvez visualiser un modèle via plusieurs genres de diagrammes. Pour plus d’informations sur les modèles et de diagrammes, consultez [création de modèles pour votre application](../modeling/create-models-for-your-app.md).  
+ Vous pouvez visualiser un modèle via plusieurs genres de diagrammes. Pour plus d’informations sur les modèles et des diagrammes, consultez [créer des modèles pour votre application](../modeling/create-models-for-your-app.md).  
   
  Différents genres de diagrammes sont utiles pour décrire la conception à différents niveaux d'abstraction. La plupart des types de diagrammes sont utiles à plusieurs niveaux. Le tableau ci-dessous montre comment chaque type de diagramme peut être utilisé.  
   
 |Niveau de conception|Types de diagrammes|  
 |------------------|-------------------|  
 |Processus d'entreprise<br /><br /> Comprendre le contexte dans lequel votre système sera utilisé vous aide à comprendre les besoins des utilisateurs.|-Diagrammes de classes conceptuels décrivent les concepts d’entreprise utilisés dans le processus d’entreprise.|  
-|Besoins des utilisateurs<br /><br /> Définition de ce que votre système doit apporter aux utilisateurs.|-Les règles d’entreprise et qualité de service peuvent être décrits dans des documents distincts.|  
-|Conception de haut niveau<br /><br /> Structure globale du système : composants principaux et comment ils s'imbriquent les uns aux autres.|-Diagrammes de dépendance décrivent comment le système est structuré en parties interdépendantes. Vous pouvez valider le code de programme par rapport aux diagrammes de dépendance pour vous assurer qu’il adhère à l’architecture.|  
-|Analyse du code<br /><br /> Diagrammes peuvent être générés à partir du code.|-Diagrammes de dépendance affichent les dépendances entre les classes. Code mis à jour peut être validée par rapport à un diagramme de dépendances.<br />-Diagrammes de classes affichent les classes dans le code.|  
+|Besoins des utilisateurs<br /><br /> Définition de ce que votre système doit apporter aux utilisateurs.|-Les règles d’entreprise et de qualité de service peuvent être décrits dans des documents distincts.|  
+|Conception de haut niveau<br /><br /> Structure globale du système : composants principaux et comment ils s'imbriquent les uns aux autres.|-Diagrammes de dépendance décrivent la façon dont le système est structuré en parties interdépendantes. Vous pouvez valider le code de programme par rapport aux diagrammes de dépendance pour vous assurer qu’il respecte l’architecture.|  
+|Analyse du code<br /><br /> Diagrammes peuvent être générés à partir du code.|-Diagrammes de dépendance affichent les dépendances entre les classes. Code de mise à jour peut être validée par rapport à un diagramme de dépendances.<br />-Diagrammes de classes affichent les classes dans le code.|  
   
 ## <a name="external-resources"></a>Ressources externes  
   
 |**Catégorie**|**Liens**|  
 |------------------|---------------|  
-|**Vidéos**|![lien vers la vidéo](~/data-tools/media/playvideo.gif "PlayVideo") [MSDN vidéos : comment créer et utiliser les modèles UML et des diagrammes (Visual Studio 2010 Ultimate)](http://go.microsoft.com/fwlink/?LinkId=214460)<br /><br /> ![lien vers la vidéo](~/data-tools/media/playvideo.gif "PlayVideo") [Channel 9 : UML with Visual Studio 2010](http://go.microsoft.com/fwlink/?LinkID=201106)<br /><br /> ![lien vers la vidéo](~/data-tools/media/playvideo.gif "PlayVideo") [série MSDN Comment faire : outils UML et extensibilité (Visual Studio 2010 Ultimate)](http://go.microsoft.com/fwlink/?LinkID=214467)|  
-|**Forums**|-   [Visual Studio Visualization s’outils de modélisation](http://go.microsoft.com/fwlink/?LinkId=184720)<br />-   [Visual Studio Visualization se Modeling SDK (outils DSL)](http://go.microsoft.com/fwlink/?LinkId=184721)|  
-|**Blogs**|[Visual Studio ALM + Blog Team Foundation Server](http://go.microsoft.com/fwlink/?LinkID=201340)|  
-|**Articles techniques**|[Centre d’Architecture MSDN](http://go.microsoft.com/fwlink/?LinkId=201343)<br /><br /> [Guide des outils d’architecture Visual Studio](../modeling/visual-studio-architecture-tooling-guidance.md)|  
+|**Vidéos**|![lien vers la vidéo](../data-tools/media/playvideo.gif "PlayVideo") [MSDN vidéos de procédure : comment créer et utiliser les modèles UML et des schémas (Visual Studio 2010 Ultimate)](http://go.microsoft.com/fwlink/?LinkId=214460)<br /><br /> ![lien vers la vidéo](../data-tools/media/playvideo.gif "PlayVideo") [Channel 9 : UML avec Visual Studio 2010](http://go.microsoft.com/fwlink/?LinkID=201106)<br /><br /> ![lien vers la vidéo](../data-tools/media/playvideo.gif "PlayVideo") [série MSDN Comment faire : outils UML et extensibilité (Visual Studio 2010 Ultimate)](http://go.microsoft.com/fwlink/?LinkID=214467)|  
+|**Forums**|-   [Outils de visualisation et de modélisation Visual Studio](http://go.microsoft.com/fwlink/?LinkId=184720)<br />-   [Kit de développement logiciel (SDK) Visual Studio Visualization and Modeling (outils DSL)](http://go.microsoft.com/fwlink/?LinkId=184721)|  
+|**Blogs**|[Blog Visual Studio ALM + Team Foundation Server](http://go.microsoft.com/fwlink/?LinkID=201340)|  
+|**Articles et journaux techniques**|[Centre d’architecture MSDN](http://go.microsoft.com/fwlink/?LinkId=201343)<br /><br /> [Guide des outils d’architecture Visual Studio](../modeling/visual-studio-architecture-tooling-guidance.md)|  
   
 ## <a name="see-also"></a>Voir aussi  
- [Utiliser des modèles dans le développement Agile](http://msdn.microsoft.com/en-us/592ac27c-3d3e-454a-9c38-b76658ed137f)   
+ [Utiliser les modèles de développement Agile](http://msdn.microsoft.com/en-us/592ac27c-3d3e-454a-9c38-b76658ed137f)   
  [Créer des modèles pour votre application](../modeling/create-models-for-your-app.md)   
- [Modèle des besoins des utilisateurs](../modeling/model-user-requirements.md)   
+ [Modéliser les besoins des utilisateurs](../modeling/model-user-requirements.md)   
  [Modèle d’architecture de votre application](../modeling/model-your-app-s-architecture.md)   
  [Développer des tests à partir d’un modèle](../modeling/develop-tests-from-a-model.md)   
  [Structurer votre solution de modélisation](../modeling/structure-your-modeling-solution.md)
 
 [!INCLUDE[modeling_sdk_info](includes/modeling_sdk_info.md)]
-

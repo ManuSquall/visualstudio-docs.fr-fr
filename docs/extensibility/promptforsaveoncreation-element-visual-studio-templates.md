@@ -4,40 +4,24 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-general
+ms.technology: vs-ide-general
 ms.tgt_pltfrm: 
 ms.topic: article
-f1_keywords:
-- http://schemas.microsoft.com/developer/vstemplate/2005#PromptForSaveOnCreation
-helpviewer_keywords:
-- PromptForSaveOnCreation element [Visual Studio project templates]
+f1_keywords: http://schemas.microsoft.com/developer/vstemplate/2005#PromptForSaveOnCreation
+helpviewer_keywords: PromptForSaveOnCreation element [Visual Studio project templates]
 ms.assetid: 75174674-0c3c-4b57-b2fd-6ea8e817b67d
-caps.latest.revision: 18
+caps.latest.revision: "18"
+author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-translation.priority.ht:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
-translationtype: Machine Translation
-ms.sourcegitcommit: 5db97d19b1b823388a465bba15d057b30ff0b3ce
-ms.openlocfilehash: 6d39ad8e236ef2b9ea9fbf29fbe0d11d08e5643c
-ms.lasthandoff: 02/22/2017
-
+ms.openlocfilehash: 8ce7e73801b34542bcf1c6be35d950b1fabdc7c3
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: fr-FR
+ms.lasthandoff: 10/31/2017
 ---
 # <a name="promptforsaveoncreation-element-visual-studio-templates"></a>PromptForSaveOnCreation, élément (modèles Visual Studio)
-Spécifie si l’utilisateur est invité à un projet à l’emplacement par l’intermédiaire d’enregistrement du **nouveau projet** boîte de dialogue lors de la création d’un projet. Si cet élément est défini sur `true`, puis l’utilisateur est invité à enregistrer emplacement ; si `false`, alors il n’est pas invité. (Autrement dit, un projet temporaire est créé.)  
+Spécifie si l’utilisateur est invité à entrer un projet à l’emplacement par le biais d’enregistrement du **nouveau projet** boîte de dialogue lors de la création d’un projet. Si cet élément est défini sur `true`, puis l’utilisateur est invité à enregistrer emplacement ; si `false`, puis ils ne sont pas invités. (Autrement dit, un projet temporaire est créé.)  
   
  \<VSTemplate >  
  \<TemplateData >  
@@ -67,15 +51,15 @@ Spécifie si l’utilisateur est invité à un projet à l’emplacement par l�
 ## <a name="text-value"></a>Valeur texte  
  Une valeur texte est requise.  
   
- Le texte doit être `true` ou `false`, `true` indiquant que l’utilisateur sera invité pour enregistrer emplacement lors de la création d’un nouveau projet.  
+ Le texte doit être `true` ou `false`, `true` indiquant que l’utilisateur sera invité pour un enregistrement emplacement lors de la création d’un nouveau projet.  
   
-## <a name="remarks"></a>Notes  
+## <a name="remarks"></a>Remarques  
  `PromptForSaveOnCreation` est un élément facultatif. La valeur par défaut est `false`.  
   
- Projets temporaires sont des projets que vous pouvez créer et modifier sans enregistrer le contenu de ce projet sur le disque. Pour plus d’informations, consultez [projets temporaires Plume](http://msdn.microsoft.com/en-us/9cf1944c-7045-44cc-8701-7b0eb4099f2b).  
+ Projets temporaires sont des projets que vous pouvez créer et modifier sans enregistrer le contenu de ce projet sur le disque. Pour plus d’informations, consultez [NIB des projets temporaires](http://msdn.microsoft.com/en-us/9cf1944c-7045-44cc-8701-7b0eb4099f2b).  
   
 ## <a name="example"></a>Exemple  
- L’exemple suivant définit la valeur de `PromptForSaveOnCreation` égale à `false`, qui spécifie que le projet doit être créé comme un projet temporaire.  
+ L’exemple suivant définit la valeur de `PromptForSaveOnCreation` égale à `false`, ce qui indique que le projet doit être créé comme un projet temporaire sera.  
   
 ```  
 <VSTemplate Type="Project" Version="3.0.0"  
@@ -103,5 +87,5 @@ Spécifie si l’utilisateur est invité à un projet à l’emplacement par l�
 ```  
   
 ## <a name="see-also"></a>Voir aussi  
- [Référence de schéma de modèle Visual Studio](../extensibility/visual-studio-template-schema-reference.md)   
+ [Référence du schéma de modèle Visual Studio](../extensibility/visual-studio-template-schema-reference.md)   
  [Création de modèles de projet et d’élément](../ide/creating-project-and-item-templates.md)

@@ -1,27 +1,30 @@
 ---
-title: "IDispatchEx::InvokeEx | Microsoft Docs"
-ms.custom: ""
-ms.date: "01/18/2017"
-ms.prod: "windows-script-interfaces"
-ms.reviewer: ""
-ms.suite: ""
-ms.tgt_pltfrm: ""
-ms.topic: "reference"
+title: IDispatchEx::InvokeEx | Documents Microsoft
+ms.custom: 
+ms.date: 01/18/2017
+ms.prod: windows-script-interfaces
+ms.reviewer: 
+ms.suite: 
+ms.tgt_pltfrm: 
+ms.topic: reference
 apiname: IDispatchEx.InvokeEx
 apilocation: scrobj.dll
-helpviewer_keywords: 
-  - "InvokeEx (méthode)"
+helpviewer_keywords: InvokeEx method
 ms.assetid: d90783e6-4b89-4423-8a56-a9c8b4b2c813
-caps.latest.revision: 10
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 10
+caps.latest.revision: "10"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: 6302228b110e2b0a6296190079bf60b3d92980bd
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.translationtype: MT
+ms.contentlocale: fr-FR
+ms.lasthandoff: 10/27/2017
 ---
-# IDispatchEx::InvokeEx
-Permet d'accéder aux propriétés et aux méthodes exposées par un objet d' `IDispatchEx` .  
+# <a name="idispatchexinvokeex"></a>IDispatchEx::InvokeEx
+Fournit l’accès aux propriétés et méthodes exposées par un `IDispatchEx` objet.  
   
-## Syntaxe  
+## <a name="syntax"></a>Syntaxe  
   
 ```  
 HRESULT InvokeEx(  
@@ -35,84 +38,84 @@ HRESULT InvokeEx(
 );  
 ```  
   
-#### Paramètres  
+#### <a name="parameters"></a>Paramètres  
  `id`  
- Identifie le membre.  Utilise `GetDispID` ou `GetNextDispID` d'obtenir l'identificateur de dispatch.  
+ Identifie le membre. Utilise `GetDispID` ou `GetNextDispID` pour obtenir l’identificateur de dispatch.  
   
  `lcid`  
- Contexte des paramètres régionaux dans lequel interpréter les arguments.  `lcid` est passé à `InvokeEx` pour permettre à l'objet pour interpréter ses arguments spécifiques aux paramètres régionaux.  
+ Contexte des paramètres régionaux dans lequel interpréter les arguments. Le `lcid` est passé à `InvokeEx` pour permettre à l’objet interpréter les arguments spécifiques aux paramètres régionaux.  
   
  `wFlags`  
- Les valeurs autorisée pour `wFlags` sont :  
+ Les valeurs autorisées pour `wFlags` sont :  
   
- DISPATCH\_PROPERTYGET &#124; DISPATCH\_METHOD &#124; DISPATCH\_PROPERTYPUT &#124; DISPATCH\_PROPERTYPUTREF &#124; DISPATCH\_CONSTRUCT  
+ DISPATCH_PROPERTYGET &#124; DISPATCH_METHOD &#124; DISPATCH_PROPERTYPUT &#124; DISPATCH_PROPERTYPUTREF &#124; DISPATCH_CONSTRUCT  
   
- Balises décrivant le contexte de l'appel d' `InvokeEx` :  
+ Indicateurs décrivant le contexte de la `InvokeEx` appeler :  
   
 |Valeur|Signification|  
-|------------|-------------------|  
-|DISPATCH\_METHOD|Le membre est appelé comme méthode.  Si une propriété porte le même nom, cela et la balise de DISPATCH\_PROPERTYGET peut être définie \(défini par `IDispatch`\).|  
-|DISPATCH\_PROPERTYGET|Le membre est extrait en tant que propriété ou membre \(définie par `IDispatch`\).|  
-|DISPATCH\_PROPERTYPUT|Le membre est modifié comme une propriété ou membre \(définie par `IDispatch`\).|  
-|DISPATCH\_PROPERTYPUTREF|Le membre est modifié par une assignation de référence plutôt qu'une assignation des valeurs.  Cette balise est valide uniquement lorsque la propriété accepte une référence à un objet \(défini par `IDispatch`\).|  
-|DISPATCH\_CONSTRUCT|Le membre est utilisé comme constructeur.  \(Il s'agit d'une nouvelle valeur définie par `IDispatchEx`\).  Les valeurs autorisée pour `wFlags` sont :<br /><br /> DISPATCH\_PROPERTYGET DISPATCH\_METHOD DISPATCH\_PROPERTYPUT DISPATCH\_PROPERTYPUTREF DISPATCH\_CONSTRUCT|  
+|-----------|-------------|  
+|DISPATCH_METHOD|Le membre est appelé comme une méthode. Si une propriété a le même nom, cela et l’indicateur DISPATCH_PROPERTYGET peut être défini (défini par `IDispatch`).|  
+|DISPATCH_PROPERTYGET|Le membre est récupéré sous la forme d’un propriété ou membre de données (définies par `IDispatch`).|  
+|DISPATCH_PROPERTYPUT|Le membre est modifié en tant que propriété ou donnée membre (définie par `IDispatch`).|  
+|DISPATCH_PROPERTYPUTREF|Le membre est modifié par une assignation de référence plutôt que par une attribution de valeur. Cet indicateur n’est valide uniquement lorsque la propriété accepte une référence à un objet (défini par `IDispatch`).|  
+|DISPATCH_CONSTRUCT|Le membre est utilisé en tant que constructeur. (Il s’agit d’une nouvelle valeur définie par `IDispatchEx`). Les valeurs autorisées pour `wFlags` sont :<br /><br /> DISPATCH_PROPERTYGET DISPATCH_METHOD DISPATCH_PROPERTYPUT DISPATCH_PROPERTYPUTREF DISPATCH_CONSTRUCT|  
   
  `pdp`  
- Pointeur vers une structure qui contient un tableau d'arguments, un tableau d'arguments DISPID pour les arguments nommés et le nombre d'éléments de chaque tableau.  Consultez la documentation d' `IDispatch` pour une description complète de la structure de DISPPARAMS.  
+ Pointeur vers une structure qui contient un tableau d’arguments, un tableau d’arguments DISPID pour les arguments nommés et le nombre d’éléments de chaque tableau. Consultez le `IDispatch` documentation pour obtenir une description complète de la structure DISPPARAMS.  
   
  `pVarRes`  
- Pointeur vers l'emplacement où le résultat doit être stocké ou null si l'appelant n'attend pas de résultats.  Cet argument est ignoré si DISPATCH\_PROPERTYPUT ou DISPATCH\_PROPERTYPUTREF est spécifié.  
+ Pointeur vers l’emplacement où le résultat doit être stockée ou Null si l’appelant s’attend à aucun résultat. Cet argument est ignoré si DISPATCH_PROPERTYPUT ou DISPATCH_PROPERTYPUTREF est spécifié.  
   
  `pei`  
- Pointeur vers une structure qui contient les informations sur les exceptions.  Cette structure doit être remplie si `DISP_E_EXCEPTION` est retourné.  Peut être null.  Consultez la documentation d' `IDispatch` pour une description complète de la structure d' `EXCEPINFO` .  
+ Pointeur vers une structure qui contient les informations sur les exceptions. Cette structure doit être remplie lorsque `DISP_E_EXCEPTION` est retourné. Peut être Null. Consultez le `IDispatch` documentation pour obtenir une description complète de la `EXCEPINFO` structure.  
   
  `pspCaller`  
- Pointeur vers un objet fournisseur de services fournis par l'appelant, qui permet à l'objet pour obtenir des services de l'appelant.  Peut être null.  
+ Pointeur vers un objet de fournisseur de service fourni par l’appelant, qui permet à l’objet obtenir des services à partir de l’appelant. Peut être Null.  
   
- `IDispatchEx::InvokeEx` fournit toutes les fonctionnalités qu' `IDispatch::Invoke` et ajoute des extensions :  
+ `IDispatchEx::InvokeEx`fournit les mêmes fonctionnalités que `IDispatch::Invoke` et ajoute quelques extensions :  
   
 |||  
 |-|-|  
-|DISPATCH\_CONSTRUCT|Indique que l'élément est utilisé comme constructeur.|  
-|`pspCaller`|`pspCaller` autorise l'accès d'objet des services fournis par l'appelant.  Les services spécifiques peuvent être gérés par l'appelant elle\-même ou être délégués aux appelants davantage en haut de la chaîne d'appels.  Par exemple, si un moteur de script dans un navigateur effectue un appel d' `InvokeEx` à un objet externe, l'objet peut suivre la chaîne d' `pspCaller` pour obtenir des services du moteur de script ou du navigateur.  \(Notez que la chaîne d'appels n'est pas identique à la chaîne \(également appelé création de la chaîne de conteneur ou une chaîne de site.  La chaîne de création peut être disponible via un autre mécanisme tel qu' `IObjectWithSite`.\)|  
-|Pointeur d'`this`|Lorsque DISPATCH\_METHOD est placé dans `wFlags`, il peut y avoir « un paramètre nommé » de «  » cette valeur.  Le DISPID sera DISPID\_THIS et il doit être le premier paramètre nommé.|  
+|DISPATCH_CONSTRUCT|Indique que l’élément est utilisé en tant que constructeur.|  
+|`pspCaller`|Le `pspCaller` permet à l’objet d’accéder aux services fournis par l’appelant. Services spécifiques peuvent être gérées par l’appelant lui-même ou déléguées aux appelants plus haut de la chaîne d’appel. Par exemple, si un moteur de script à l’intérieur d’un navigateur rend une `InvokeEx` appel à un objet externe, l’objet peut suivre le `pspCaller` chaîne pour obtenir des services à partir du moteur de script ou d’un navigateur. (Notez que la chaîne d’appel n’est pas identique à la chaîne de la création, également appelée la chaîne de conteneur ou la chaîne de site. La chaîne de création peut-être être disponible via d’autres mécanismes tels que `IObjectWithSite`.)|  
+|Pointeur `this`|Lorsque DISPATCH_METHOD a la valeur `wFlags`, il peut y avoir un paramètre « nommé » pour la valeur de « THI ». Le DISPID sera DISPID_THIS, et il doit être le premier paramètre nommé.|  
   
- Le paramètre non utilisé d' `riid` dans `IDispatch::Invoke` a été supprimé.  
+ Non `riid` paramètre `IDispatch::Invoke` a été supprimé.  
   
- Le paramètre d' `puArgArr` dans `IDispatch::Invoke` a été supprimé.  
+ Le `puArgArr` paramètre `IDispatch::Invoke` a été supprimé.  
   
- Consultez la documentation d' `IDispatch::Invoke` pour les exemples suivants :  
+ Consultez le `IDispatch::Invoke` documentation pour les exemples suivants :  
   
- « Appelant une méthode sans argument »  
+ « Appel d’une méthode sans arguments »  
   
  « Obtention et définition des propriétés »  
   
  « Passage de paramètres »  
   
- « A des propriétés indexées »  
+ « Propriétés indexées »  
   
- « En levant des exceptions pendant appelez »  
+ « Le déclenchement d’exceptions pendant Invoke »  
   
- « Retournant des erreurs »  
+ « Retour d’erreur »  
   
-## Valeur de retour  
- Retourne une des valeurs suivantes :  
+## <a name="return-value"></a>Valeur de retour  
+ Retourne l’une des valeurs suivantes :  
   
 |||  
 |-|-|  
-|`S_OK`|Succès.|  
-|DISP\_E\_BADPARAMCOUNT|Le nombre d'éléments fournis à DISPPARAMS est différent du nombre d'arguments acceptés par la méthode ou la propriété.|  
-|DISP\_E\_BADVARTYPE|L'un des arguments dans `rgvarg` n'est pas un type variant valide.|  
-|DISP\_E\_EXCEPTION|L'application doit lever une exception.  Dans ce cas, la structure passée dans `pei` doit être complétée.|  
-|DISP\_E\_MEMBERNOTFOUND|Le membre demandé n'existe pas, ou l'appel à `InvokeEx` a tenté de définir la valeur d'une propriété en lecture seule.|  
-|DISP\_E\_NONAMEDARGS|Cette implémentation d' `IDispatch` ne prend pas d'arguments nommés.|  
-|DISP\_E\_OVERFLOW|L'un des arguments dans `rgvarg` n'a pas pu être converti en type spécifié.|  
-|DISP\_E\_PARAMNOTFOUND|Un Dispid du paramètre ne correspond pas à un paramètre dans la méthode.|  
-|DISP\_E\_TYPEMISMATCH|Un ou plusieurs arguments n'ont pas pu être convertis.|  
-|DISP\_E\_UNKNOWNLCID|Le membre appelé interprète les arguments de chaîne en fonction de le LCID, et LCID n'est pas reconnu.  Si le LCID n'est pas nécessaire pour interpréter les arguments, cette erreur ne doit pas être retournée.|  
-|DISP\_E\_PARAMNOTOPTIONAL|Un paramètre obligatoire a été omis.|  
+|`S_OK`|Opération réussie.|  
+|DISP_E_BADPARAMCOUNT|Le nombre d’éléments fournie pour DISPPARAMS est différent du nombre d’arguments acceptés par la méthode ou propriété.|  
+|DISP_E_BADVARTYPE|Un des arguments de `rgvarg` n’est pas un type variant valide.|  
+|DISP_E_EXCEPTION|L’application doit lever une exception. Dans ce cas, la structure passée dans `pei` doit être renseigné.|  
+|DISP_E_MEMBERNOTFOUND|Le membre demandé n’existe pas, ou l’appel à `InvokeEx` a tenté de définir la valeur d’une propriété en lecture seule.|  
+|DISP_E_NONAMEDARGS|Cette implémentation de `IDispatch` ne prend pas en charge les arguments nommés.|  
+|DISP_E_OVERFLOW|Un des arguments de `rgvarg` n’a pas pu être converti vers le type spécifié.|  
+|DISP_E_PARAMNOTFOUND|Un des paramètres DISPID ne correspond pas à un paramètre de la méthode.|  
+|DISP_E_TYPEMISMATCH|Un ou plusieurs des arguments n’a pas pu être converti.|  
+|DISP_E_UNKNOWNLCID|Le membre appelé interprète les arguments de chaîne en fonction de l’identificateur LCID, et l’identificateur LCID n’est pas reconnu. Si l’identificateur LCID n’est pas nécessaire pour interpréter les arguments, cette erreur ne doit pas être retournée.|  
+|DISP_E_PARAMNOTOPTIONAL|Un paramètre obligatoire a été omis.|  
   
-## Exemple  
+## <a name="example"></a>Exemple  
   
 ```  
 VARIANT var;  
@@ -130,7 +133,7 @@ VARIANT var;
    }  
 ```  
   
-## Voir aussi  
- [IDispatchEx, interface](../../winscript/reference/idispatchex-interface.md)   
+## <a name="see-also"></a>Voir aussi  
+ [IDispatchEx (Interface)](../../winscript/reference/idispatchex-interface.md)   
  [IDispatchEx::GetDispID](../../winscript/reference/idispatchex-getdispid.md)   
  [IDispatchEx::GetNextDispID](../../winscript/reference/idispatchex-getnextdispid.md)

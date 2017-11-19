@@ -4,34 +4,19 @@ ms.custom:
 ms.date: 04/26/2017
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-sdk
+ms.technology: vs-ide-sdk
 ms.tgt_pltfrm: 
 ms.topic: article
 ms.assetid: 3e893949-6398-42f1-9eab-a8d8c2b7f02d
-caps.latest.revision: 7
+caps.latest.revision: "7"
+author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-translation.priority.mt:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
-ms.translationtype: Machine Translation
-ms.sourcegitcommit: 9524ecc3cadef58821fba857de8e82e59eea9b43
-ms.openlocfilehash: 185fc30458fed4303eb0cf6d59b5e6784840f89e
-ms.contentlocale: fr-fr
-ms.lasthandoff: 05/04/2017
-
+ms.openlocfilehash: 3e06a3e89b69b2b69a97c4deb2d68d98913f6e03
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: fr-FR
+ms.lasthandoff: 10/31/2017
 ---
 # <a name="common-control-patterns-for-visual-studio"></a>Modèles de contrôle courants pour Visual Studio
 ##  <a name="BKMK_CommonControls"></a>Contrôles communs  
@@ -88,9 +73,9 @@ La première chose à prendre en compte lorsque les styles de contrôles est que
   
 -   Champs d’entrée doivent être dimensionnées en fonction du contenu, ne pas à la largeur de la fenêtre dans lequel elles sont affichées, ni à arbitrairement correspond à la longueur d’un champ long, comme un chemin d’accès. Longueur peut être une indication à l’utilisateur de limitations concernant le nombre de caractères est autorisé dans le champ.  
   
-     ![Longueur de champ d’entrée incorrect : il est peu probable que le nom doit être ce long.](../../extensibility/ux-guidelines/media/0707-01_incorrectinputfieldcontrol.png "0707-01_IncorrectInputFieldControl")<br />Longueur de champ d’entrée incorrect : il est peu probable que le nom doit être ce long.
+     ![Longueur de champ d’entrée incorrect : il est peu probable que le nom doit être ce long. ] (../../extensibility/ux-guidelines/media/0707-01_incorrectinputfieldcontrol.png "0707-01_IncorrectInputFieldControl")<br />Longueur de champ d’entrée incorrect : il est peu probable que le nom doit être ce long.
   
-     ![Corriger la longueur de champ d’entrée : le champ d’entrée est une largeur raisonnable pour le contenu attendu.](../../extensibility/ux-guidelines/media/0707-02_correctinputfieldcontrol.png "0707-02_CorrectInputFieldControl")<br />Corriger la longueur de champ d’entrée : le champ d’entrée est une largeur raisonnable pour le contenu attendu.
+     ![Corriger la longueur de champ d’entrée : le champ d’entrée est une largeur raisonnable pour le contenu attendu. ] (../../extensibility/ux-guidelines/media/0707-02_correctinputfieldcontrol.png "0707-02_CorrectInputFieldControl")<br />Corriger la longueur de champ d’entrée : le champ d’entrée est une largeur raisonnable pour le contenu attendu.
   
 ###  <a name="BKMK_ComboBoxesAndDropDowns"></a>Zones de liste déroulante et les listes déroulantes  
 Pour le comportement de l’interaction typique, suivez les [des recommandations de bureau Windows pour les listes déroulantes et les zones de liste déroulante](https://msdn.microsoft.com/en-us/library/windows/desktop/dn742404\(v=vs.85\).aspx).  
@@ -104,9 +89,9 @@ Pour le comportement de l’interaction typique, suivez les [des recommandations
 #### <a name="layout"></a>Disposition  
 Zones de liste déroulante et les zones déroulantes doivent être dimensionnées en fonction du contenu, ne pas à la largeur de la fenêtre dans lequel elles sont affichées, ni à arbitrairement correspond à la longueur d’un champ long, comme un chemin d’accès.  
   
-![Incorrecte : la largeur de la liste déroulante est trop longue pour le contenu qui sera affiché.](~/extensibility/ux-guidelines/media/0707-03_incorrectdropdownlayout.png "0707-03_IncorrectDropDownLayout")<br />Incorrecte : la largeur de la liste déroulante est trop longue pour le contenu qui sera affiché.
+![Incorrecte : la largeur de la liste déroulante est trop longue pour le contenu qui sera affiché. ] (../../extensibility/ux-guidelines/media/0707-03_incorrectdropdownlayout.png "0707-03_IncorrectDropDownLayout")<br />Incorrecte : la largeur de la liste déroulante est trop longue pour le contenu qui sera affiché.
   
-![Correct : la liste déroulante est dimensionnée pour permettre la croissance de traduction, mais pas inutilement long.](../../extensibility/ux-guidelines/media/0707-04_correctdropdownlayout.png "0707-04_CorrectDropDownLayout")<br />Correct : la liste déroulante est dimensionnée pour permettre la croissance de traduction, mais pas inutilement long. 
+![Correct : la liste déroulante est dimensionnée pour permettre la croissance de traduction, mais pas inutilement long. ] (../../extensibility/ux-guidelines/media/0707-04_correctdropdownlayout.png "0707-04_CorrectDropDownLayout")<br />Correct : la liste déroulante est dimensionnée pour permettre la croissance de traduction, mais pas inutilement long. 
   
 ###  <a name="BKMK_CheckBoxes"></a>Cases à cocher  
 Pour le comportement de l’interaction typique, suivez les [des recommandations de bureau Windows pour les cases à cocher](https://msdn.microsoft.com/en-us/library/windows/desktop/dn742401\(v=vs.85\).aspx).  
@@ -123,9 +108,9 @@ Pour le comportement de l’interaction typique, suivez les [des recommandations
   
 -   Aligner les cases à cocher avec la ligne de base de la première ligne de texte.  
   
-     ![Incorrecte : la case à cocher est centré sur le texte.](../../extensibility/ux-guidelines/media/0707-05_incorrectcheckboxalign.png "0707-05_IncorrectCheckBoxAlign")<br />Incorrecte : la case à cocher est centré sur le texte.
+     ![Incorrecte : la case à cocher est centré sur le texte. ] (../../extensibility/ux-guidelines/media/0707-05_incorrectcheckboxalign.png "0707-05_IncorrectCheckBoxAlign")<br />Incorrecte : la case à cocher est centré sur le texte.
   
-     ![Correct : la case à cocher est aligné avec la première ligne du texte.](../../extensibility/ux-guidelines/media/0707-06_correctcheckboxalign.png "0707-06_CorrectCheckBoxAlign")<br />Correct : la case à cocher est aligné avec la première ligne du texte.
+     ![Correct : la case à cocher est aligné avec la première ligne du texte. ] (../../extensibility/ux-guidelines/media/0707-06_correctcheckboxalign.png "0707-06_CorrectCheckBoxAlign")<br />Correct : la case à cocher est aligné avec la première ligne du texte.
   
 ###  <a name="BKMK_RadioButtons"></a>Cases d’option  
 Pour le comportement de l’interaction typique, suivez les [des recommandations de bureau Windows pour les cases d’option](https://msdn.microsoft.com/en-us/library/windows/desktop/dn742436\(v=vs.85\).aspx).  
@@ -160,11 +145,11 @@ Il existe deux manières d’afficher les informations de texte statique.
 
 Texte statique peut être sur son propre dans une boîte de dialogue sans toute relation contenant-contenu lorsqu’il n’existe aucun conflit de regroupement. Décider si les lignes supplémentaires d’une zone sont réellement nécessaires. Un exemple est l’affichage d’un chemin d’accès de répertoire sous une section créée par une ligne de groupe, comme indiqué ci-dessous :  
 
-![Informations de texte statique dans les contrôles de texte](~/extensibility/ux-guidelines/media/DisplayingStaticText.png "DisplayingStaticText.png")<br />Informations de texte statique dans les contrôles de texte
+![Les informations de texte statique dans les contrôles de texte](../../extensibility/ux-guidelines/media/DisplayingStaticText.png "DisplayingStaticText.png")<br />Informations de texte statique dans les contrôles de texte
 
-Dans une boîte de dialogue lorsque d’autres zones groupées existent et relation contenant-contenu de l’information peut vous aider à une meilleure lisibilité, et lorsque une section peut être masquée ou affichée (comme dans le **fenêtre Propriétés** volet description) ou vous souhaitez être cohérent avec l’interface utilisateur similaire, placez le texte statique dans une zone. Cette zone de groupe doit être une seule règle et de couleur avec la `ButtonShadow`:
+Dans une boîte de dialogue lorsque d’autres zones groupées existent et relation contenant-contenu de l’information peut vous aider à une meilleure lisibilité, et lorsque une section peut être masquée ou affichée (comme dans le **fenêtre Propriétés** volet description) ou vous souhaitez être cohérent avec l’interface utilisateur similaires, Placez le texte statique dans une zone. Cette zone de groupe doit être une seule règle et de couleur avec la `ButtonShadow`:
 
-![Texte statique dans la fenêtre Propriétés](~/extensibility/ux-guidelines/media/PropertiesWindow.png "PropertiesWindow.png")<br />Texte statique dans la fenêtre Propriétés
+![Texte statique dans la fenêtre Propriétés](../../extensibility/ux-guidelines/media/PropertiesWindow.png "PropertiesWindow.png")<br />Texte statique dans la fenêtre Propriétés
 
 ### <a name="read-only-text-box"></a>Zone de texte en lecture seule
 
@@ -172,7 +157,7 @@ Cela permet à l’utilisateur à sélectionner le texte dans le champ, mais pas
 
 Une zone de texte peut devenir active (modifiable) lorsqu’un utilisateur modifie un contrôle associé, tel que vérification/si vous décochez une case à cocher ou en sélectionnant/en désactivant une case d’option. Par exemple, dans le **outils &gt; Options** page illustré ci-dessous, le **Page d’accueil** zone de texte devient active lorsque le **par défaut** case à cocher est désactivée.
 
-![Zone de texte en lecture seule, affichant les états inactif et actif](~/extensibility/ux-guidelines/media/ReadOnlyTextBox.png "ReadOnlyTextBox.png")<br />Zone de texte en lecture seule, affichant les états inactif et actif
+![Zone de texte en lecture seule, affichant les états inactif et actif](../../extensibility/ux-guidelines/media/ReadOnlyTextBox.png "ReadOnlyTextBox.png")<br />Zone de texte en lecture seule, affichant les états inactif et actif
 
 ### <a name="using-text-in-dialogs"></a>Utilisation de texte dans les boîtes de dialogue
 
@@ -219,7 +204,7 @@ Boîtes de dialogue de tirent parti de recommandations de filigrane légèrement
 
 -   Les filigranes peuvent être centrés ou aligné à gauche. Appliquer des règles de conception standard lors de la prise de décisions alignement. Impossible de sélectionner le filigrane sur l’arrière-plan.
 
-![Exemple de texte de filigrane](~/extensibility/ux-guidelines/media/WatermarkTextExample.gif)<br />Exemple de texte de filigrane
+![Exemple de texte de filigrane](../../extensibility/ux-guidelines/media/WatermarkTextExample.gif)<br />Exemple de texte de filigrane
 
 ### <a name="context-specific-dynamic-text"></a>Texte (dynamique) de spécifique au contexte
 
@@ -255,14 +240,14 @@ Quand utiliser les boutons de commande :
   
 -   Navigation vers une autre fenêtre, un document ou page web  
   
--   Situations qui nécessitent une étiquette de plus de temps ou d’une phrase pour décrire l’objectif de l’action  
+-   Situations qui nécessitent une étiquette plus longue ou une phrase pour décrire l’objectif de l’action  
   
 -   Espaces étroits où un bouton serait surcharger l’interface utilisateur, à condition que l’action n’est pas destructeur ou irréversible  
   
 -   Minimise les commandes secondaires dans les situations où il existe de nombreuses commandes  
   
 #### <a name="examples"></a>Exemples  
-![Commandes liens utilisés dans la barre d’informations suivant un message d’état](../../extensibility/ux-guidelines/media/070703-01_commandlinkinfobar.png "070703-01_CommandLinkInfobar")<br />Commandes liens utilisés dans la barre d’informations suivant un message d’état
+![Liens utilisés dans la barre d’informations suivant un message d’état de la commande](../../extensibility/ux-guidelines/media/070703-01_commandlinkinfobar.png "070703-01_CommandLinkInfobar")<br />Commandes liens utilisés dans la barre d’informations suivant un message d’état
   
 ![Liens utilisés dans la fenêtre contextuelle CodeLens](../../extensibility/ux-guidelines/media/070703-02_linksincodelens.png "070703-02_LinksInCodeLens")<br />Liens utilisés dans la fenêtre contextuelle CodeLens
   
@@ -279,7 +264,7 @@ Suivez les instructions de l’écriture de [UI texte et la terminologie](../../
 La plupart des boutons dans Visual Studio apparaît dans les boîtes de dialogue utilitaire et ne doit pas être appelé. Ils doivent refléter l’apparence standard des boutons comme stipulé par le système d’exploitation.  
   
 ##### <a name="themed"></a>À thème  
-Dans certains cas, boutons peuvent être utilisées dans l’interface utilisateur stylisé et doivent être un style correctement ces boutons. Consultez [boîtes de dialogue](../../extensibility/ux-guidelines/application-patterns-for-visual-studio.md#BKMK_Dialogs) pour plus d’informations sur les contrôles à thème.  
+Dans certains cas, boutons peuvent être utilisées dans l’interface utilisateur de style et doivent être un style correctement ces boutons. Consultez [boîtes de dialogue](../../extensibility/ux-guidelines/application-patterns-for-visual-studio.md#BKMK_Dialogs) pour plus d’informations sur les contrôles à thème.  
   
 ### <a name="special-buttons"></a>Boutons spéciaux  
   
@@ -319,9 +304,9 @@ Certains boutons doivent toujours utiliser une image de graphique et n’incluez
 | Fonction | Bouton |  
 | --- | --- |  
 | Ajouter | ![Graphique bouton « Ajouter »](../../extensibility/ux-guidelines/media/070703-08_buttonadd.png "070703-08_ButtonAdd") |
-| Remove | ![Graphique bouton « Supprimer »](~/extensibility/ux-guidelines/media/070703-09_buttonremove.png "070703-09_ButtonRemove") |
-| Ajouter tout | ![Bouton graphique « Ajouter tout »](../../extensibility/ux-guidelines/media/070703-10_buttonaddall.png "070703-10_ButtonAddAll") |
-| Supprimer tout | ![Bouton graphique « Supprimer tout »](../../extensibility/ux-guidelines/media/070703-11_buttonremoveall.png "070703-11_ButtonRemoveAll") |
+| Remove | ![Graphique bouton « Supprimer »](../../extensibility/ux-guidelines/media/070703-09_buttonremove.png "070703-09_ButtonRemove") |
+| Ajoutez tous les | ![Bouton graphique « Ajouter tout »](../../extensibility/ux-guidelines/media/070703-10_buttonaddall.png "070703-10_ButtonAddAll") |
+| Supprimer tous les | ![Bouton graphique « Supprimer tout »](../../extensibility/ux-guidelines/media/070703-11_buttonremoveall.png "070703-11_ButtonRemoveAll") |
 | Monter | ![Bouton graphique « Monter »](../../extensibility/ux-guidelines/media/070703-12_buttonmoveup.png "070703-12_ButtonMoveUp") |
 | Descendre | ![Bouton graphique « Descendre »](../../extensibility/ux-guidelines/media/070703-13_buttonmovedown.png "070703-13_ButtonMoveDown") |
 | Supprimer | ![Graphique bouton « Supprimer »](../../extensibility/ux-guidelines/media/070703-14_buttondelete.png "070703-14_ButtonDelete") |
@@ -361,9 +346,9 @@ Contrôles d’arborescence doivent être conforme à la conception du contrôle
 #### <a name="selection"></a>Sélection  
 Lorsqu’un nœud est sélectionné dans l’arborescence, la mise en surbrillance doit développer sur toute la largeur du contrôle arborescence. Cela permet aux utilisateurs à identifier clairement les éléments qu’ils ont sélectionné. Couleurs de la sélection doivent refléter le thème de Visual Studio en cours.  
   
-![Correct : mise en surbrillance du nœud sélectionné correspond à toute la largeur du contrôle arborescence.](../../extensibility/ux-guidelines/media/070705-1_treeviewcorrect.png "070705-1_TreeViewCorrect")<br />Correct : mise en surbrillance du nœud sélectionné correspond à toute la largeur du contrôle arborescence.
+![Correct : mise en surbrillance du nœud sélectionné correspond à toute la largeur du contrôle arborescence. ] (../../extensibility/ux-guidelines/media/070705-1_treeviewcorrect.png "070705-1_TreeViewCorrect")<br />Correct : mise en surbrillance du nœud sélectionné correspond à toute la largeur du contrôle arborescence.
   
-![Incorrecte : mise en surbrillance du nœud sélectionné ne tient pas toute la largeur du contrôle arborescence.](../../extensibility/ux-guidelines/media/070705-3_treeviewincorrect2.png "070705-3_TreeViewIncorrect2")<br />Incorrecte : mise en surbrillance du nœud sélectionné ne tient pas toute la largeur du contrôle arborescence.
+![Incorrecte : mise en surbrillance du nœud sélectionné ne tient pas toute la largeur du contrôle arborescence. ] (../../extensibility/ux-guidelines/media/070705-3_treeviewincorrect2.png "070705-3_TreeViewIncorrect2")<br />Incorrecte : mise en surbrillance du nœud sélectionné ne tient pas toute la largeur du contrôle arborescence.
   
 #### <a name="icons"></a>Icônes  
 Icônes doivent uniquement être utilisées dans les contrôles d’arborescence si ils permettent d’identifier visuellement les différences entre les éléments. En règle générale, les icônes doivent être utilisées uniquement dans les listes hétérogènes dans lesquels les icônes comportent des informations afin de différencier les types d’éléments. Dans une liste homogène à l’aide des icônes peut souvent être considérée comme bruit et doit être évitée. Dans ce cas, l’icône de groupe (parent) peut transmettre le type d’éléments qu’il contient. L’exception à cette règle est si l’icône est dynamique et est utilisé pour indiquer l’état.  
@@ -371,14 +356,14 @@ Icônes doivent uniquement être utilisées dans les contrôles d’arborescence
 #### <a name="scroll-bars"></a>Barres de défilement  
 Barres de défilement doivent toujours être masquées si le contenu tient dans le contrôle arborescence. Il est acceptable pour les barres de défilement à masqué, transparent ou semi-transparent dans une fenêtre de défilement et s’affichent lorsque la fenêtre de l’arborescence a le focus ou lors de pointage de l’arborescence afficher lui-même.  
   
-![Les barres de défilement verticale et horizontale sont affichent, car le contenu a dépassé les limites du contrôle arborescence.](../../extensibility/ux-guidelines/media/070705-4_scrollbars.png "070705-4_Scrollbars")<br />Les barres de défilement verticale et horizontale sont affichent, car le contenu a dépassé les limites du contrôle arborescence.
+![Les barres de défilement verticale et horizontale sont affichent, car le contenu a dépassé les limites du contrôle arborescence. ] (../../extensibility/ux-guidelines/media/070705-4_scrollbars.png "070705-4_Scrollbars")<br />Les barres de défilement verticale et horizontale sont affichent, car le contenu a dépassé les limites du contrôle arborescence.
   
 ###  <a name="BKMK_TreeViewInteractions"></a>Interactions de vue d’arborescence  
   
 #### <a name="context-menus"></a>Menus contextuels  
 Un nœud d’arborescence peut révéler des options de sous-menu dans un menu contextuel. En règle générale, cela se produit lorsqu’un utilisateur a cliqué un élément ou enfoncée la touche de Menu sur un clavier Windows avec l’élément sélectionné. Il est important que le nœud Obtient le focus et est sélectionné. Cela aide l’utilisateur à identifier l’élément auquel appartient le sous-menu.  
   
-![L’élément qui a le focus de gains de menu contextuel pour informer l’utilisateur génèrent des élément qui a été sélectionné.](../../extensibility/ux-guidelines/media/070705-5_contextmenu.png "070705-5_ContextMenu")<br />L’élément qui a le focus de gains de menu contextuel pour informer l’utilisateur génèrent des élément qui a été sélectionné.
+![L’élément qui a le focus de gains de menu contextuel pour informer l’utilisateur génèrent des élément qui a été sélectionné. ] (../../extensibility/ux-guidelines/media/070705-5_contextmenu.png "070705-5_ContextMenu")<br />L’élément qui a le focus de gains de menu contextuel pour informer l’utilisateur génèrent des élément qui a été sélectionné.
   
 #### <a name="keyboard"></a>Clavier  
 L’arborescence doit fournir la possibilité de sélectionner les éléments et développer/réduire les nœuds à l’aide du clavier. Cela garantit que la navigation répond aux critères d’accessibilité.  
@@ -401,7 +386,7 @@ Un contrôle Grid est un contrôle complexe qui contient une arborescence dans u
   
 -   **Flèche droite :** développer un nœud. Une fois que le nœud est développé, il doit continuer accédant à la colonne le plus proche sur la droite. Navigation doit s’arrêter à la fin de la ligne.  
   
--   **Onglet :** permet d’accéder à la cellule le plus proche sur la droite.  À la fin de la ligne, la navigation se poursuit à la ligne suivante.  
+-   **Onglet :** permet d’accéder à la cellule la plus proche sur la droite.  À la fin de la ligne, la navigation se poursuit à la ligne suivante.  
   
 -   **Maj + Tab :** permet d’accéder à la cellule la plus proche sur la gauche.  Au début de la ligne, la navigation se poursuit à la cellule la plus à droite de la ligne précédente.  
   

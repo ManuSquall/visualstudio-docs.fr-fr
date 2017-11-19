@@ -1,27 +1,30 @@
 ---
-title: "IDebugExpressionContext::GetLanguageInfo | Microsoft Docs"
-ms.custom: ""
-ms.date: "01/18/2017"
-ms.prod: "windows-script-interfaces"
-ms.reviewer: ""
-ms.suite: ""
-ms.tgt_pltfrm: ""
-ms.topic: "reference"
+title: IDebugExpressionContext::GetLanguageInfo | Documents Microsoft
+ms.custom: 
+ms.date: 01/18/2017
+ms.prod: windows-script-interfaces
+ms.reviewer: 
+ms.suite: 
+ms.tgt_pltfrm: 
+ms.topic: reference
 apiname: IDebugExpressionContext.GetLanguageInfo
 apilocation: jscript.dll
-helpviewer_keywords: 
-  - "IDebugExpressionContext::GetLanguageInfo"
+helpviewer_keywords: IDebugExpressionContext::GetLanguageInfo
 ms.assetid: 35e25662-0b2a-4c3f-bce4-f01726bc04a8
-caps.latest.revision: 8
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 8
+caps.latest.revision: "8"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: 68c22d5dfcd16fb3d8f1dc3750bbfb23c4821176
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.translationtype: MT
+ms.contentlocale: fr-FR
+ms.lasthandoff: 10/27/2017
 ---
-# IDebugExpressionContext::GetLanguageInfo
-Retourne un nom et un GUID pour le langage qui possède ce contexte.  
+# <a name="idebugexpressioncontextgetlanguageinfo"></a>IDebugExpressionContext::GetLanguageInfo
+Retourne un nom et un GUID pour la langue qui possède ce contexte.  
   
-## Syntaxe  
+## <a name="syntax"></a>Syntaxe  
   
 ```  
 HRESULT GetLanguageInfo(  
@@ -30,22 +33,22 @@ HRESULT GetLanguageInfo(
 );  
 ```  
   
-#### Paramètres  
+#### <a name="parameters"></a>Paramètres  
  `pbstrLanguageName`  
- \[out\]  le nom du langage.  
+ [out] Le nom de la langue.  
   
  `pLanguageID`  
- \[out\]  ID unique du langage.  
+ [out] Id unique pour la langue.  
   
-## Valeur de retour  
- La méthode retourne `HRESULT`.  Les valeurs possibles incluent, mais ne sont pas limitées à, celles dans le tableau suivant.  
+## <a name="return-value"></a>Valeur de retour  
+ La méthode retourne `HRESULT`. Les valeurs possibles sont notamment celles figurant dans le tableau suivant.  
   
 |Valeur|Description|  
-|------------|-----------------|  
+|-----------|-----------------|  
 |`S_OK`|La méthode a réussi.|  
   
-## Notes  
- Cette méthode retourne un nom et un GUID pour le langage qui possède ce contexte.  
+## <a name="remarks"></a>Remarques  
+ Cette méthode retourne un nom et un GUID pour la langue qui possède ce contexte.  
   
-## Voir aussi  
- [IDebugExpressionContext, interface](../../winscript/reference/idebugexpressioncontext-interface.md)
+## <a name="see-also"></a>Voir aussi  
+ [Interface IDebugExpressionContext](../../winscript/reference/idebugexpressioncontext-interface.md)

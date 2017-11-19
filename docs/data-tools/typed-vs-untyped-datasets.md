@@ -1,5 +1,5 @@
 ---
-title: Typed vs. untyped datasets | Microsoft Docs
+title: "Typées et les datasets non typés | Documents Microsoft"
 ms.custom: 
 ms.date: 11/04/2016
 ms.reviewer: 
@@ -10,38 +10,38 @@ dev_langs:
 - VB
 - CSharp
 ms.assetid: c83ba0bb-5425-4d47-8891-6b4dbf937701
-caps.latest.revision: 5
+caps.latest.revision: "5"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-translation.priority.mt:
-- cs-cz
-- pl-pl
-- pt-br
-- tr-tr
-ms.translationtype: HT
-ms.sourcegitcommit: 33a857c2d8585e2e8da9bcd9158190366a3b6830
-ms.openlocfilehash: d2cf6d06d6f36423933b04872fc17da38b0ccd86
-ms.contentlocale: fr-fr
-ms.lasthandoff: 09/07/2017
-
+ms.technology: vs-data-tools
+ms.openlocfilehash: 8fda7a1663a8aa9ccbf1f89f2a3b05d74b0a2316
+ms.sourcegitcommit: ee42a8771f0248db93fd2e017a22e2506e0f9404
+ms.translationtype: MT
+ms.contentlocale: fr-FR
+ms.lasthandoff: 11/09/2017
 ---
-# <a name="typed-vs-untyped-datasets"></a>Typed vs. untyped datasets
-A typed dataset is a dataset that is first derived from the base <xref:System.Data.DataSet> class and then uses information from the **Dataset Designer**, which is stored in an .xsd file, to generate a new, strongly typed dataset class. Information from the schema (tables, columns, and so on) is generated and compiled into this new dataset class as a set of first-class objects and properties. Because a typed dataset inherits from the base <xref:System.Data.DataSet> class, the typed class assumes all of the functionality of the <xref:System.Data.DataSet> class and can be used with methods that take an instance of a <xref:System.Data.DataSet> class as a parameter.  
+# <a name="typed-vs-untyped-datasets"></a>Typées et les datasets non typés
+Un dataset typé est un jeu de données qui est tout d’abord dérivé de la base de <xref:System.Data.DataSet> de classe, puis utilise les informations à partir de la **Concepteur de Dataset**, qui est stockée dans un fichier .xsd, pour générer un nouveau fortement typée dataset (classe). Pour plus d’informations à partir du schéma (tables, colonnes et ainsi de suite) sont générés et compilés dans ce nouveau type de jeu de données comme un ensemble de propriétés et des objets de première classe. Car un dataset typé hérite de la base de <xref:System.Data.DataSet> (classe), la classe typée reprend toutes les fonctionnalités de la <xref:System.Data.DataSet> classe et peut être utilisé avec des méthodes qui prennent une instance d’un <xref:System.Data.DataSet> classe en tant que paramètre.  
   
- An untyped dataset, in contrast, has no corresponding built-in schema. As in a typed dataset, an untyped dataset contains tables, columns, and so on—but those are exposed only as collections. (However, after you manually create the tables and other data elements in an untyped dataset, you can export the dataset's structure as a schema by using the dataset's <xref:System.Data.DataSet.WriteXmlSchema%2A> method.)  
+ Un dataset non typé, n’a, en revanche, aucun schéma intégré équivalent. Comme dans un dataset typé, il contient des tables, colonnes et ainsi de suite, mais ceux-ci sont exposés comme des collections. (Toutefois, après avoir créé manuellement les tables et autres éléments de données dans un dataset non typé, vous pouvez exporter la structure du dataset en tant que schéma à l’aide du jeu de données <xref:System.Data.DataSet.WriteXmlSchema%2A> méthode.)  
   
-## <a name="contrasting-data-access-in-typed-and-untyped-datasets"></a>Contrasting data access in typed and untyped datasets  
- The class for a typed dataset has an object model in which its properties take on the actual names of the tables and columns. For example, if you are working with a typed dataset, you can reference a column by using code such as the following:  
+## <a name="contrasting-data-access-in-typed-and-untyped-datasets"></a>Accès aux données dans les datasets typés et non de contraste  
+ La classe d’un dataset typé possède un modèle d’objet dans lequel ses propriétés prennent les noms réels des tables et des colonnes. Par exemple, si vous travaillez avec un dataset typé, vous pouvez référencer une colonne à l’aide de code semblable au suivant :  
   
- [!code-csharp[VbRaddataDatasets#4](../data-tools/codesnippet/CSharp/typed-vs-untyped-datasets_1.cs)] [!code-vb[VbRaddataDatasets#4](../data-tools/codesnippet/VisualBasic/typed-vs-untyped-datasets_1.vb)]  
+ [!code-csharp[VbRaddataDatasets#4](../data-tools/codesnippet/CSharp/typed-vs-untyped-datasets_1.cs)]
+ [!code-vb[VbRaddataDatasets#4](../data-tools/codesnippet/VisualBasic/typed-vs-untyped-datasets_1.vb)]  
   
- In contrast, if you are working with an untyped dataset, the equivalent code is:  
+ En revanche, si vous travaillez avec un dataset non typé, le code équivalent est :  
   
- [!code-csharp[VbRaddataDatasets#5](../data-tools/codesnippet/CSharp/typed-vs-untyped-datasets_2.cs)] [!code-vb[VbRaddataDatasets#5](../data-tools/codesnippet/VisualBasic/typed-vs-untyped-datasets_2.vb)]  
+ [!code-csharp[VbRaddataDatasets#5](../data-tools/codesnippet/CSharp/typed-vs-untyped-datasets_2.cs)]
+ [!code-vb[VbRaddataDatasets#5](../data-tools/codesnippet/VisualBasic/typed-vs-untyped-datasets_2.vb)]  
   
- Typed access is not only easier to read, but also fully supported by IntelliSense in the [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] **Code Editor**. In addition to being easier to work with, the syntax for the typed dataset provides type checking at compile time, greatly reducing the possibility of errors in assigning values to dataset members. If you change the name of a column in your <xref:System.Data.DataSet> class and then compile your application, you receive a build error. By double-clicking the build error in the **Task List**, you can go directly to the line or lines of code that reference the old column name. Access to tables and columns in a typed dataset is also slightly faster at runtime because access is determined at compile time, not through collections at runtime.  
+ Accès typé est non seulement plus facile à lire, mais il est également entièrement pris en charge par IntelliSense dans le [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] **éditeur de Code**. En plus d’être plus facile à manipuler, la syntaxe pour le dataset typé fournit une vérification de type au moment de la compilation, ce qui réduit considérablement le risque d’erreurs en assignant des valeurs aux membres du jeu de données. Si vous modifiez le nom d’une colonne dans votre <xref:System.Data.DataSet> classe et puis le compiler votre application, vous recevez une erreur de build. En double-cliquant sur l’erreur de build dans le **liste des tâches**, vous pouvez accéder directement à l’ou les lignes de code qui font référence à l’ancien nom de colonne. Accès aux tables et colonnes dans un typé dataset est légèrement plus rapide lors de l’exécution, car l’accès est déterminé au moment de la compilation, pas par le biais de regroupements lors de l’exécution.  
   
- Even though typed datasets have many advantages, an untyped dataset is useful in a variety of circumstances. The most obvious scenario is when no schema is available for the dataset. This might occur, for example, if your application is interacting with a component that returns a dataset, but you do not know in advance what its structure is. Similarly, there are times when you are working with data that does not have a static, predictable structure. In that case, it is impractical to use a typed dataset, because you would have to regenerate the typed dataset class with each change in the data structure.  
+ Bien que les datasets typés présentent de nombreux avantages, un dataset non typé est utile dans diverses circonstances. La situation la plus évidente est lorsque aucun schéma n’est disponible pour le jeu de données. Cela peut se produire, par exemple, si votre application interagit avec un composant qui retourne un jeu de données, mais vous ne connaissez pas à l’avance quelle est sa structure. De même, il existe des heures lorsque vous travaillez avec des données qui ne dispose pas d’une structure statique et prévisible. Dans ce cas, il est peu pratique d’utiliser un dataset typé, car vous devez régénérer la classe dataset typée pour chaque modification de la structure de données.  
   
- More generally, there are many times when you might create a dataset dynamically without having a schema available. In that case, the dataset is simply a convenient structure in which you can keep information, as long as the data can be represented in a relational way. At the same time, you can take advantage of the dataset's capabilities, such as the ability to serialize the information to pass to another process, or to write out an XML file.
+ En règle générale, il existe plusieurs fois lorsque vous pouvez créer un jeu de données dynamique sans disposer d’un schéma. Dans ce cas, le jeu de données est simplement une structure pratique dans laquelle vous pouvez conserver les informations, tant que les données peuvent être représentées de manière relationnelle. En même temps, vous pouvez tirer parti des fonctionnalités du jeu de données, telles que la capacité à sérialiser les informations à transmettre à un autre processus ou d’écrire un fichier XML.
+
+## <a name="see-also"></a>Voir aussi
+[Outils de jeu de données](../data-tools/dataset-tools-in-visual-studio.md)

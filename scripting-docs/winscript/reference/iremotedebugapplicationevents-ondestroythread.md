@@ -1,27 +1,30 @@
 ---
-title: "IRemoteDebugApplicationEvents::OnDestroyThread | Microsoft Docs"
-ms.custom: ""
-ms.date: "01/18/2017"
-ms.prod: "windows-script-interfaces"
-ms.reviewer: ""
-ms.suite: ""
-ms.tgt_pltfrm: ""
-ms.topic: "reference"
+title: IRemoteDebugApplicationEvents::OnDestroyThread | Documents Microsoft
+ms.custom: 
+ms.date: 01/18/2017
+ms.prod: windows-script-interfaces
+ms.reviewer: 
+ms.suite: 
+ms.tgt_pltfrm: 
+ms.topic: reference
 apiname: IRemoteDebugApplicationEvents.OnDestroyThread
 apilocation: jscript.dll
-helpviewer_keywords: 
-  - "IRemoteDebugApplicationEvents::OnDestroyThread"
+helpviewer_keywords: IRemoteDebugApplicationEvents::OnDestroyThread
 ms.assetid: 7c716ccc-7b82-41b2-9a16-d0366999dee8
-caps.latest.revision: 8
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 8
+caps.latest.revision: "8"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: af2d671a6c93cde39c2e3e644243d666e1cd5d46
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.translationtype: MT
+ms.contentlocale: fr-FR
+ms.lasthandoff: 10/27/2017
 ---
-# IRemoteDebugApplicationEvents::OnDestroyThread
-Gère un événement de thread détruit.  
+# <a name="iremotedebugapplicationeventsondestroythread"></a>IRemoteDebugApplicationEvents::OnDestroyThread
+Gère un événement de destruction de threads.  
   
-## Syntaxe  
+## <a name="syntax"></a>Syntaxe  
   
 ```  
 HRESULT OnDestroyThread(  
@@ -29,19 +32,19 @@ HRESULT OnDestroyThread(
 );  
 ```  
   
-#### Paramètres  
+#### <a name="parameters"></a>Paramètres  
  `prdat`  
- \[in\]  Le thread qui a perdu.  
+ [in] Le thread qui a été détruit.  
   
-## Valeur de retour  
- La méthode retourne `HRESULT`.  Les valeurs possibles incluent, mais ne sont pas limitées à, celles dans le tableau suivant.  
+## <a name="return-value"></a>Valeur de retour  
+ La méthode retourne `HRESULT`. Les valeurs possibles sont notamment celles figurant dans le tableau suivant.  
   
 |Valeur|Description|  
-|------------|-----------------|  
+|-----------|-----------------|  
 |`S_OK`|La méthode a réussi.|  
   
-## Notes  
- Cette méthode gère l'événement de thread détruit.  
+## <a name="remarks"></a>Remarques  
+ Cette méthode gère l’événement de destruction de threads.  
   
-## Voir aussi  
- [IRemoteDebugApplicationEvents, interface](../../winscript/reference/iremotedebugapplicationevents-interface.md)
+## <a name="see-also"></a>Voir aussi  
+ [Interface IRemoteDebugApplicationEvents](../../winscript/reference/iremotedebugapplicationevents-interface.md)

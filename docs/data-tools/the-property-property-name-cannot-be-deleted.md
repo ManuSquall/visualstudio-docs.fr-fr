@@ -1,5 +1,5 @@
 ---
-title: The property &lt;property name&gt; cannot be deleted | Microsoft Docs
+title: "La propriété &lt;nom de la propriété&gt; ne peut pas être supprimé | Documents Microsoft"
 ms.custom: 
 ms.date: 11/04/2016
 ms.reviewer: 
@@ -7,47 +7,32 @@ ms.suite:
 ms.tgt_pltfrm: 
 ms.topic: article
 ms.assetid: 55873f74-7834-4ec1-8815-eeeb65618d87
-caps.latest.revision: 2
+caps.latest.revision: "2"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-translation.priority.ht:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
-ms.translationtype: HT
-ms.sourcegitcommit: 33a857c2d8585e2e8da9bcd9158190366a3b6830
-ms.openlocfilehash: 589add99c52db517c729d7c91f41869249cc59f3
-ms.contentlocale: fr-fr
-ms.lasthandoff: 09/07/2017
-
+ms.technology: vs-data-tools
+ms.openlocfilehash: b3a896e64e048a5104bca84b726c730d4d9d524a
+ms.sourcegitcommit: ee42a8771f0248db93fd2e017a22e2506e0f9404
+ms.translationtype: MT
+ms.contentlocale: fr-FR
+ms.lasthandoff: 11/09/2017
 ---
-# <a name="the-property-ltproperty-namegt-cannot-be-deleted"></a>The property &lt;property name&gt; cannot be deleted
-The property \<property name> cannot be deleted because it is set as the **Discriminator Property** for the inheritance between \<class name> and \<class name>  
+# <a name="the-property-ltproperty-namegt-cannot-be-deleted"></a>La propriété &lt;nom de la propriété&gt; ne peut pas être supprimé.
+La propriété \<nom de la propriété > ne peut pas être supprimé, car il est défini comme le **propriété de discriminateur** pour l’héritage entre \<nom de la classe > et \<nom de la classe >  
   
- The selected property is set as the **Discriminator Property** for the inheritance between the classes indicated in the error message. Properties cannot be deleted if they are participating in the inheritance configuration between data classes.  
+ La propriété sélectionnée est définie comme la **propriété de discriminateur** pour l’héritage entre les classes indiquée dans le message d’erreur. Les propriétés ne peuvent pas être supprimées si elles participent à la configuration d'héritage entre des classes de données.  
   
- Set the **Discriminator Property** to a different property of the data class to enable successful deletion of the desired property.  
+ Définir le **propriété de discriminateur** à une autre propriété de la classe de données pour permettre la suppression de la propriété désirée.  
   
-### <a name="to-correct-this-error"></a>To correct this error  
+### <a name="to-correct-this-error"></a>Pour corriger cette erreur  
   
-1.  In the O/R Designer, select the inheritance line that connects the data classes indicated in the error message.  
+1.  Dans le Concepteur O/R, sélectionnez la ligne d'héritage qui connecte les classes de données indiquées dans le message d'erreur.  
   
-2.  Set the **Discriminator** Property to a different property.  
+2.  Définir le **discriminateur** propriété à une autre propriété.  
   
-3.  Try to delete the property again.  
+3.  Essayez une nouvelle fois de supprimer la propriété.  
   
-## <a name="see-also"></a>See Also  
- [How to: Configure inheritance by using the O/R Designer](../data-tools/how-to-configure-inheritance-by-using-the-o-r-designer.md)   
- [Data class inheritance (O/R Designer)](../data-tools/data-class-inheritance-o-r-designer.md)   
- [Walkthrough: Creating LINQ to SQL Classes by Using Single-Table Inheritance (O/R Designer)](../data-tools/walkthrough-creating-linq-to-sql-classes-by-using-single-table-inheritance-o-r-designer.md)
+## <a name="see-also"></a>Voir aussi
+[Messages du Concepteur O/R](../data-tools/o-r-designer-messages.md)  
+[LINQ to SQL des outils dans Visual Studio](../data-tools/linq-to-sql-tools-in-visual-studio2.md)

@@ -1,192 +1,133 @@
 ---
-title: Debug live Azure Applications (ASP.NET) | Microsoft Docs
-ms.date: 07/26/2017
+title: "Déboguer des applications ASP.NET Azure live - Visual Studio | Documents Microsoft"
+ms.date: 11/13/2017
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-debug
+ms.technology: vs-ide-debug
 ms.tgt_pltfrm: 
 ms.topic: article
-helpviewer_keywords:
-- debugger
+helpviewer_keywords: debugger
 ms.assetid: adb22512-4d4d-40e5-9564-1af421b7087e
-caps.latest.revision: 1
+caps.latest.revision: "1"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-translation.priority.ht:
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- ru-ru
-- zh-cn
-- zh-tw
-translation.priority.mt:
-- cs-cz
-- pl-pl
-- pt-br
-- tr-tr
-ms.translationtype: HT
-ms.sourcegitcommit: 21a413a3e2d17d77fd83d5109587a96f323a0511
-ms.openlocfilehash: 65a9abd386e014f46532f74d3da88b75f2472b41
-ms.contentlocale: fr-fr
-ms.lasthandoff: 08/30/2017
-
+ms.openlocfilehash: 71facc3515bf90d378b19242bb804ce825131b4e
+ms.sourcegitcommit: 2c7f48ad6073a81fa927568793633f26cc1f0b15
+ms.translationtype: MT
+ms.contentlocale: fr-FR
+ms.lasthandoff: 11/17/2017
 ---
-# <a name="debug-live-aspnet-apps-running-in-azure-app-service"></a>Debug live ASP.NET apps running in Azure App Service
+# <a name="debug-live-aspnet-azure-apps-using-the-snapshot-debugger"></a>Déboguer des applications ASP.NET Azure en direct à l’aide du débogueur de l’instantané
 
-The Snapshot Debugger takes a snapshot of your in-production apps when code that you are interested in executes. To instruct the debugger to take a snapshot, you set snappoints and logpoints in your code. The debugger lets you see exactly what went wrong, without impacting traffic of your production application. The Snapshot Debugger can help you dramatically reduce the time it takes to resolve issues that occur in production environments.
+Le débogueur d’instantané prend un instantané de vos applications de production lors de l’exécution de code qui vous intéressez. Pour indiquer au débogueur de prendre un instantané, vous définissez snappoints et logpoints dans votre code. Le débogueur vous permet de voir exactement ce qui s’est produite, sans affecter le trafic de votre application de production. Le débogueur de l’instantané peut vous aider à réduire considérablement le temps que nécessaire pour résoudre les problèmes qui se produisent dans les environnements de production.
 
-Snapshot collection is available for the following web apps running in Azure App Service:
+Snappoints et logpoints sont semblables aux points d’arrêt. Contrairement aux points d’arrêt, snappoints n’empêchent pas l’application lorsqu’il est atteint. En règle générale, la capture instantanée à un snappoint prend 10 à 20 millisecondes. 
 
-- ASP.NET applications running on .NET Framework 4.6.1 or later.
-- ASP.NET Core applications running on .NET Core 2.0 or later on Windows.
+Collection d’instantané est disponible pour les applications web suivantes en cours d’exécution dans Azure App Service :
 
-Additionally, the Snapshot Debugger is only available for **Visual Studio Enterprise**. 
+- Les applications ASP.NET exécutées sur .NET Framework 4.6.1 ou version ultérieure.
+- Applications ASP.NET Core en cours d’exécution sur .NET Core 2.0 ou version ultérieure sur Windows.
 
-> [!NOTE]
-> With some additional configuration, Application Insights can automatically capture snapshots when your app hits an exception. For more information, see [Debug snapshots on exceptions in .NET apps](/azure/application-insights/app-insights-snapshot-debugger). Application Insights supports Service Fabric apps in addition to Azure App Service.
+En outre, le débogueur de l’instantané est uniquement disponible pour Visual Studio 2017 Enterprise version 15,5 ou une version ultérieure. 
 
-## <a name="start-the-snapshot-debugger"></a>Start the Snapshot Debugger
+## <a name="start-the-snapshot-debugger"></a>Démarrez le débogueur de l’instantané
 
-1. Install the [Visual Studio Enterprise 15.4 Preview](https://www.visualstudio.com/en-us/news/releasenotes/vs2017-preview-relnotes) or later.
+1. Installer le [Visual Studio Enterprise 15.5 Preview](https://www.visualstudio.com/en-us/news/releasenotes/vs2017-preview-relnotes) ou version ultérieure. Si vous mettez à jour à partir d’une version préliminaire de Visual Studio 2017 précédente, exécutez le programme d’installation Visual Studio et vérifiez le composant de débogueur de l’instantané dans la charge de travail de développement ASP.NET et web.
 
-2. Install the [Snapshot Debugger extension](http://aka.ms/snapshotdebuggervsix) for Visual Studio. This extension will enable you to set snappoints and logpoints against apps running in Azure App Services.
+2. Ouvrez le projet pour le débogage de l’instantané. 
 
-3. Open the project you would like to snapshot debug. 
+    > [!IMPORTANT] 
+    > Dans l’ordre de débogage de l’instantané, vous devez ouvrir le **même version de code source** qui est publié dans votre Service d’applications Azure. 
 
-    > [!NOTE] 
-    > In order to snapshot debug, you need to open the **same version of source code** that is published to your Azure Azure App Service. 
+3. Dans l’Explorateur de Cloud (sélectionnez **vue > Cloud Explorer**), cliquez avec le bouton droit sur votre projet est déployé sur le Service d’applications Azure et sélectionnez **attacher le débogueur instantané** pour démarrer le débogueur de l’instantané.
 
-4. In the Cloud Explorer, right click the Azure App Service your project is deployed to and select **Attach Snapshot Debugger** to start the Snapshot Debugger.
+   ![Lancer le débogueur de l’instantané](../debugger/media/snapshot-launch.png "lancer le débogueur de l’instantané")
 
-    ![Launch the snapshot debugger](../debugger/media/snapshot-launch.png "Launch the snapshot debugger")
+    La première fois que vous sélectionnez **attacher le débogueur instantané**, vous êtes invité à installer le débogueur de l’instantané sur votre Service d’applications Azure. Cette installation nécessite un redémarrage de votre Service d’applications Azure. 
 
-    > [!NOTE] 
-    > The first time you select **Attach Snapshot Debugger**, you will be prompted to install the Snapshot Debugger on your Azure App Service. This installation requires a restart of your Azure App Service. 
+   Visual Studio est présent dans l’instantané de mode de débogage.
 
-   Visual Studio is now in snapshot debugging mode.
+   ![Débogage en mode de capture instantanée](../debugger/media/snapshot-message.png "mode débogage d’instantané")
 
-    ![Snapshot debugging mode](../debugger/media/snapshot-message.png "Snapshot debugging mode")
+   Le **Modules** fenêtre vous indique que tous les modules ont chargés pour le Service d’application Azure (choisissez **déboguer / Windows / Modules** pour ouvrir cette fenêtre).
 
-   The **Modules** window shows you when all the modules have loaded for the Azure App Service (choose **Debug / Windows / Modules** to open this window).
+   ![Vérifiez la fenêtre Modules](../debugger/media/snapshot-modules.png "vérifier la fenêtre Modules")
 
-    ![Check the Modules window](../debugger/media/snapshot-modules.png "Check the Modules window")
+## <a name="set-a-snappoint"></a>Définir un snappoint
 
-## <a name="set-a-snappoint"></a>Set a snappoint
+1. Dans l’éditeur de code, cliquez sur la marge gauche en regard d’une ligne de code qui que vous intéressez définir un snappoint. Assurez-vous que c’est le code qui s’exécute.
 
-1. In the code editor, click the left gutter next to a line of code you are interested in to set a snappoint (make sure it is code that you know will execute).
+   ![Définir un snappoint](../debugger/media/snapshot-set-snappoint.png "définir un snappoint")
 
-    ![Set a snappoint](../debugger/media/snapshot-set-snappoint.png "Set a snappoint")
+2. Cliquez sur **démarrer la collecte** pour activer la snappoint.  
 
-    > [!NOTE]
-    > Unlike breakpoints, snappoints do not halt the application when hit. Typically, capturing a snapshot at a snappoint takes 10-20 milliseconds. 
-
-2. Click **Start Collection** to turn on the snappoint.  
-
-    ![Turn on the snappoint](../debugger/media/snapshot-start-collection.png "Turn on the snappoint")
+   ![Activer la snappoint](../debugger/media/snapshot-start-collection.png "activer le snappoint")
 
     > [!TIP]
-    > You cannot step when viewing a snapshot, but you can place multiple snappoints in your code to follow execution at different lines of code. If you have multiple snappoints in your code, the Snapshot Debugger ensures that the corresponding snapshots are from the same end user session, even if there are multiple users hitting your app.
+    > Vous ne pouvez pas passer lors de l’affichage d’un instantané, mais vous pouvez placer plusieurs snappoints dans votre code pour suivre l’exécution à différentes lignes de code. Si vous avez plusieurs snappoints dans votre code, le débogueur de l’instantané garantit que les instantanés correspondantes sont de la même session de l’utilisateur final, même s’il existe plusieurs utilisateurs en appuyant sur votre application.
 
-## <a name="take-a-snapshot"></a>Take a snapshot
+## <a name="take-a-snapshot"></a>Prendre un instantané
 
-When a snappoint is turned on, it will capture a snapshot whenever the line of code where the snappoint is placed is executed. This execution can be caused by a real request on your server. To force your snappoint to hit, you can also go to the browser view of your web site and take any actions required that will cause your snappoint to be hit.
+Lorsqu’un snappoint est allumé, il capture un instantané chaque fois que la ligne de code où se trouve le snappoint est exécutée. Cette exécution peut être due à une demande réelle sur votre serveur. Pour forcer votre snappoint atteint, vous pouvez également accéder à la vue du navigateur de votre site web et le prenez que toutes les actions requises qui provoquent votre snappoint soit atteint.
 
-## <a name="inspect-snapshot-data"></a>Inspect snapshot data
+## <a name="inspect-snapshot-data"></a>Inspecter les données d’instantané
 
-1. When the snappoint is hit, a snapshot appears in the Diagnostic Tools window (choose **Debug / Windows / Show Diagnostic Tools** to open this window).
+1. Lorsque le snappoint est atteint, une capture instantanée s’affiche dans la fenêtre Outils de Diagnostic. Choisissez **déboguer / Windows / afficher les outils de Diagnostic** pour ouvrir cette fenêtre.
 
-    ![Open a snappoint](../debugger/media/snapshot-diagsession-window.png "Open a snappoint")
+   ![Ouvrir un snappoint](../debugger/media/snapshot-diagsession-window.png "ouvrir une snappoint")
 
-2. Double-click the snappoint to open the snapshot in the code editor.
+1. Double-cliquez sur le snappoint pour ouvrir l’instantané dans l’éditeur de code.
 
-    ![Inspect snapshot data](../debugger/media/snapshot-inspect-data.png "Inspect snapshot data")
+   ![Inspecter les données d’instantané](../debugger/media/snapshot-inspect-data.png "inspecter les données d’instantané")
 
-    From this view, you can hover over variables to view DataTips, use the **Locals**, **Watches**, and **Call Stack** windows, and also evaluate expressions.
+   Dans cette vue, vous pouvez pointer sur les variables pour afficher les DataTips, utilisez le **variables locales**, **observe**, et **pile des appels** windows et également évaluer des expressions.
 
-    > [!NOTE]
-    > The website itself is still live and end users are not impacted.
+    Le site Web lui-même est toujours en direct et les utilisateurs finaux ne soient pas affectés. Un seul instantané est capturé par snappoint par défaut : après un instantané capture le snappoint désactive. Si vous souhaitez capturer un autre instantané à le snappoint, vous pouvez activer le snappoint précédent en cliquant sur **mise à jour de Collection**.
 
-Only one snapshot is captured per snappoint by default: after a snapshot is captured the snappoint turns off. If you want to capture another snapshot at the snappoint, you can turn the snappoint back on by clicking **Update Collection**. 
+Vous pouvez également ajouter plusieurs snappoints à votre application et sous tension avec la **mise à jour de Collection** bouton.
 
-You can also add more snappoints to your app and turn them on with the **Update Collection** button. 
+**Besoin d’aide ?** Consultez le [problèmes connus et dépannage](../debugger/debug-live-azure-apps-troubleshooting.md) et [FAQ pour le débogage de l’instantané](../debugger/debug-live-azure-apps-faq.md) pages.
 
-## <a name="set-a-conditional-snappoint"></a>Set a conditional snappoint
+## <a name="set-a-conditional-snappoint"></a>Définir un snappoint conditionnelle
 
-If it is difficult to recreate a particular state in your app, consider whether the use of a conditional snappoint can help. You can use conditional snappoints to avoid taking a snapshot until the app enters a desired state (such as a state in which a variable has a particular value you're interested in). You can set conditions using expressions, filters, or hit counts.
+S’il est difficile de recréer un état particulier dans votre application, considérez que l’utilisation d’un snappoint conditionnel peut aider à. Vous pouvez utiliser snappoints conditionnelle pour éviter de créer un instantané jusqu'à ce que l’application passe à l’état souhaité, telles que lorsqu’une variable a une valeur particulière vous intéressent. Vous pouvez définir des conditions à l’aide d’expressions, filtres, ou nombre d’accès.
 
-#### <a name="to-create-a-conditional-snappoint"></a>To create a conditional snappoint
+#### <a name="to-create-a-conditional-snappoint"></a>Pour créer un snappoint conditionnelle
 
-1. Right-click a snappoint icon (the hollow ball) and choose **Settings**.
+1. Cliquez sur une icône de snappoint (la balle creuse) et choisissez **paramètres**.
 
-    ![tbd](../debugger/media/snapshot-snappoint-settings.png "t b d")
+   ![Choisissez les paramètres](../debugger/media/snapshot-snappoint-settings.png "choisir des paramètres")
 
-2. In the snappoint settings window, type an expression.
+1. Dans la fenêtre de paramètres snappoint, tapez une expression.
 
-    ![tbd](../debugger/media/snapshot-snappoint-conditions.png "t b d")
+   ![Tapez une expression](../debugger/media/snapshot-snappoint-conditions.png "une expression de Type")
 
-    In the preceding illustration, the snapshot will only be taken for the snappoint when `visitor.FirstName == "Dan"`.
+   Dans l’illustration précédente, l’instantané est uniquement effectuée pour le snappoint lorsque `visitor.FirstName == "Dan"`.
 
-## <a name="set-a-logpoint"></a>Set a logpoint
+## <a name="set-a-logpoint"></a>Définir un logpoint
 
-In addition to taking a snapshot when a snappoint is hit, you can also configure a snappoint to log a message (that is, create a logpoint). You can set logpoints without having to redploy your app. Logpoints are virtually executed and cause no impact or side effects to your running application.
+En plus d’une capture instantanée lorsqu’un snappoint est atteint, vous pouvez également configurer un snappoint pour enregistrer un message (autrement dit, créer un logpoint). Vous pouvez définir logpoints sans avoir à redéployer votre application. Logpoints sont exécutées virtuellement et ne provoquer aucun impact ou les effets secondaires à votre application en cours d’exécution.
 
-#### <a name="to-create-a-logpoint"></a>To create a logpoint
+#### <a name="to-create-a-logpoint"></a>Pour créer un logpoint
 
-.1. Right-click a snappoint icon (the blue hexagon) and choose **Settings**.
+1. Cliquez sur une icône de snappoint (l’Hexagone bleu) et choisissez **paramètres**.
 
-2. In the snappoint settings window, select **Actions**.
+1. Dans la fenêtre Paramètres snappoint, sélectionnez **Actions**.
 
-    ![Create a logpoint](../debugger/media/snapshot-logpoint.png "Create a logpoint")
+    ![Créer un logpoint](../debugger/media/snapshot-logpoint.png "créer un logpoint")
 
-3. In the Message field, you can enter the new log message you want to log. You can also evaluate variables in your log message by placing them inside curly braces.
+1. Dans le champ de Message, vous pouvez entrer le nouveau message du journal à enregistrer. Vous pouvez également évaluer des variables dans votre message du journal en les plaçant à l’intérieur des accolades.
 
-    If you choose **Send to Output Window**, when the logpoint is hit, the message will appear in the Diagnostic Tools window.
+    Si vous choisissez **envoyer à la fenêtre sortie**, lorsque le logpoint est atteint, le message s’affiche dans la fenêtre Outils de Diagnostic.
 
-    ![Logpoint data in the .diagsession window](../debugger/media/snapshot-logpoint-output.png "Logpoint data in the .diagsession window")
+    ![Logpoint des données dans la fenêtre .diagsession](../debugger/media/snapshot-logpoint-output.png "Logpoint des données dans la fenêtre .diagsession")
 
-    If you choose **Send to application log**, when the logpoint is hit, the message will appear anywhere that you can see messages from `System.Diagnostics.Trace` (or `ILogger` in .NET Core), such as [App Insights](/azure/application-insights/app-insights-asp-net-trace-logs).
+    Si vous choisissez **envoyer au journal des applications**, lorsque le logpoint est atteint, le message s’affiche partout où que vous pouvez voir des messages à partir de `System.Diagnostics.Trace` (ou `ILogger` dans .NET Core), tel que [application Insights](/azure/application-insights/app-insights-asp-net-trace-logs).
 
-## <a name="frequently-asked-questions"></a>Frequently Asked Questions
+## <a name="next-steps"></a>Étapes suivantes
 
-#### <a name="what-is-the-performance-cost-of-taking-a-snapshot"></a>What is the performance cost of taking a snapshot? 
-When the Snapshot Debugger captures a snapshot of your app, it is forking the app's process and suspending the forked copy. When you debug a snapshot, you are debugging against the forked copy of the process. This process takes only 10-20 milliseconds but does not copy the full heap of the app; instead, it copies only the page table and sets pages to copy on write. If some of your app's objects on the heap change, their respective pages are then copied. Each snapshot therefore has a very small in-memory cost (on the order of hundreds of kilobytes for most apps). 
-
-#### <a name="what-happens-if-i-have-a-scaled-out-azure-app-service-multiple-instances-of-my-app"></a>What happens if I have a scaled-out Azure App Service (multiple instances of my app)?
-When you have multiple instances of your app, snappoints get applied to every single instance. Only the first snappoint to hit with the condtions specified will create a snapshot. If you have multiple snappoints, subsequent snapshots will come from the same instance that created the first snapshot. Logpoints sent to the output window will only show messages from one instance, while logpoints sent to application logs will send messages from every instance. 
-
-#### <a name="how-does-the-snapshot-debugger-load-symbols"></a>How does the Snapshot Debugger load symbols?
-The Snapshot Debugger requires you to have the correct symbols corresponding to your application either locally or deployed to your Azure App Service (embedded PDBs are currently not supported). The Snapshot Debugger will automatically download symbols from your Azure App Service. As of Visual Studio 2017 (version 15.2), deploying to Azure App Service will also deploy your app's symbols.
-
-#### <a name="does-the-snapshot-debugger-work-against-release-builds-of-my-application"></a>Does the Snapshot Debugger work against release builds of my application?
-Yes - the Snapshot Debugger is intended to work against release builds. When a snappoint is placed in a function, we temporarily recompile that function back to a debug version and making it debuggable. When you stop the Snapshot Debugger, the functions are returned to their release build. 
-
-#### <a name="can-logpoints-cause-side-effects-in-my-production-application"></a>Can logpoints cause side effects in my production application?
-No - any log messages you add to your app are evaluated virtually. They cannot cause any side effects in your application. However, some native properties may not be accessible with logpoints. 
-
-#### <a name="does-the-snapshot-debugger-work-if-my-server-is-under-load"></a>Does the Snapshot Debugger work if my server is under load?
-Yes, snapshot debugging can work for servers under load. The Snapshot Debugger will throttle and not capture snapshots in situations where there is a low amount of free memory on your server.
-
-#### <a name="how-do-i-uninstall-the-snapshot-debugger"></a>How do I uninstall the Snapshot Debugger?
-You can uninstall the Snapshot Debugger from Visual Studio by uninstalling it from **Tools / Extension and Updates**. Uninstalling the Snapshot Debugger site extension from your App Service currently must be done manually. You can uninstall the Snapshot Debuggger site extension on your App Service with the following steps:
-1. Navigate to your App Service's Kudu site (ie yourappservice.**scm**.azurewebsites.net and navigate to the **Debug console**.
-2. Navigate to D:/home/SiteExtensions/Microsoft.VisualStudio.SnapshotDebugger.AzureAppServices.Standalone and delete the applicationHost.xdt.
-3. Navigate to the **Process explorer** in Kudu and kill all w3wp.exe processes (note that this will restart your site).
-4. Navigate to the **Debug console** and delete the Microsoft.VisualStudio.SnapshotDebugger.AzureAppServices.Standalone folder from D:/home/SiteExtensions and D:/home/site/siteextensions.
-
-## <a name="known-issues"></a>Known Issues
-
-* Roslyn IL Optimizations are not fully supported in ASP.NET Core projects. For some ASP.NET Core projects, you may not be able to see some variables or use some variables in conditional statements. 
-* Special variables, ie *$FUNCTION* or *$CALLER*, cannot be evaluated in conditional statements or logpoints for ASP.NET Core projects.
-* Snapshot Debugging does not work on App Services which have [Local Caching](https://docs.microsoft.com/en-us/azure/app-service/app-service-local-cache) turned on.
-* Snapshot Debugging against [deployment slots](https://docs.microsoft.com/en-us/azure/app-service-web/web-sites-staged-publishing) is not currently supported.
-* Snapshot Debugging with multiple Visual Studio clients against the same App Service is not currently supported.
-
-
-## <a name="see-also"></a>See Also  
- [Debug Azure apps](../debugger/debug-azure-apps.md)
-
+- Pour savoir comment examiner les variables lors de l’affichage d’un instantané, consultez [visite guidée des fonctionnalités Debbuger](../debugger/debugger-feature-tour.md).
+- Afficher le [FAQ pour le débogage de l’instantané](../debugger/debug-live-azure-apps-faq.md).
+- Vue [dépannage des conseils et des problèmes connus pour le débogage de l’instantané](../debugger/debug-live-azure-apps-troubleshooting.md).
+- Si vous souhaitez afficher des instantanés de l’Application Insights lorsque votre application rencontre une exception, vous pouvez le faire. Pour plus d’informations, consultez [déboguer des instantanés sur les exceptions dans les applications .NET](/azure/application-insights/app-insights-snapshot-debugger). Application Insights prend en charge les applications de Service Fabric en plus du Service d’applications Azure.

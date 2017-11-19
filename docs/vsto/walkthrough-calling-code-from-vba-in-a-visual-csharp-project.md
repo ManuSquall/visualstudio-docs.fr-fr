@@ -1,12 +1,10 @@
 ---
-title: 'Walkthrough: Calling Code from VBA in a Visual C# Project | Microsoft Docs'
+title: "Procédure pas à pas : Appel de Code à partir de VBA dans un projet Visual C# | Documents Microsoft"
 ms.custom: 
 ms.date: 02/02/2017
-ms.prod: visual-studio-dev14
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- office-development
+ms.technology: office-development
 ms.tgt_pltfrm: 
 ms.topic: article
 dev_langs:
@@ -22,215 +20,214 @@ helpviewer_keywords:
 - calling code from VBA
 - document-level customizations [Office development in Visual Studio], calling code
 ms.assetid: 9a5741f1-8260-4964-afa1-c69b68d1cfdf
-caps.latest.revision: 38
-author: kempb
-ms.author: kempb
+caps.latest.revision: "38"
+author: gewarren
+ms.author: gewarren
 manager: ghogen
-ms.translationtype: HT
-ms.sourcegitcommit: eb5c9550fd29b0e98bf63a7240737da4f13f3249
-ms.openlocfilehash: fda5cdcfd4aaa03da13e2a5707ade232ec05c4b7
-ms.contentlocale: fr-fr
-ms.lasthandoff: 08/30/2017
-
+ms.openlocfilehash: 5d75076bc811cc94a62f7b737116984a08295961
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: fr-FR
+ms.lasthandoff: 10/31/2017
 ---
-# <a name="walkthrough-calling-code-from-vba-in-a-visual-c-project"></a>Walkthrough: Calling Code from VBA in a Visual C# Project
-  This walkthrough demonstrates how to call a method in a document-level customization for Microsoft Office Excel from Visual Basic for Applications (VBA) code in the workbook. The procedure involves three basic steps: add a method to the `Sheet1` host item class, expose the method to VBA code in the workbook, and then call the method from VBA code in the workbook.  
+# <a name="walkthrough-calling-code-from-vba-in-a-visual-c-project"></a>Procédure pas à pas : appel de code à partir de VBA dans un projet Visual C#
+  Cette procédure pas à pas montre comment appeler une méthode dans une personnalisation au niveau du document pour Microsoft Office Excel à partir du code VBA (Visual Basic pour Applications) du classeur. Cette procédure comporte trois étapes de base : l'ajout d'une méthode dans la classe d'élément hôte `Sheet1` , l'exposition de la méthode au code VBA dans le classeur, puis l'appel de la méthode à partir du code VBA dans le classeur.  
   
  [!INCLUDE[appliesto_alldoc](../vsto/includes/appliesto-alldoc-md.md)]  
   
- Although this walkthrough uses Excel specifically, the concepts demonstrated by the walkthrough are also applicable to document-level projects for Word.  
+ Bien que cette procédure pas à pas utilise spécifiquement Excel, les concepts présentés ici s'appliquent également aux projets de niveau document pour Word.  
   
- This walkthrough illustrates the following tasks:  
+ Cette procédure pas à pas décrit les tâches suivantes :  
   
--   Creating a workbook that contains VBA code.  
+-   Création d'un classeur contenant du code VBA  
   
--   Trusting the location of the workbook by using the Trust Center in Excel.  
+-   Approbation de l'emplacement du classeur à l'aide du Centre de gestion de la confidentialité dans Excel  
   
--   Adding a method to the `Sheet1` host item class.  
+-   Ajout d'une méthode à la classe d'élément hôte `Sheet1`  
   
--   Extracting an interface for the `Sheet1` host item class.  
+-   Extraction d'une interface pour la classe d'élément hôte `Sheet1`  
   
--   Exposing the method to VBA code.  
+-   Exposition de la méthode au code VBA  
   
--   Calling the method from VBA code.  
+-   Appel de la méthode à partir du code VBA  
   
 > [!NOTE]  
->  Your computer might show different names or locations for some of the Visual Studio user interface elements in the following instructions. The Visual Studio edition that you have and the settings that you use determine these elements. For more information, see [Personalize the Visual Studio IDE](../ide/personalizing-the-visual-studio-ide.md).  
+>  Il est possible que pour certains des éléments de l'interface utilisateur de Visual Studio, votre ordinateur affiche des noms ou des emplacements différents de ceux indiqués dans les instructions suivantes. L'édition de Visual Studio dont vous disposez et les paramètres que vous utilisez déterminent ces éléments. Pour plus d’informations, consultez [Personnaliser l’IDE Visual Studio](../ide/personalizing-the-visual-studio-ide.md).  
   
-## <a name="prerequisites"></a>Prerequisites  
- You need the following components to complete this walkthrough:  
+## <a name="prerequisites"></a>Conditions préalables  
+ Pour exécuter cette procédure pas à pas, vous devez disposer des composants suivants :  
   
 -   [!INCLUDE[vsto_vsprereq](../vsto/includes/vsto-vsprereq-md.md)]  
   
 -   Microsoft Excel  
   
-## <a name="creating-a-workbook-that-contains-vba-code"></a>Creating a Workbook That Contains VBA Code  
- The first step is to create a macro-enabled workbook that contains a simple VBA macro. Before you can expose code in a customization to VBA, the workbook must already contain VBA code. Otherwise, Visual Studio cannot modify the VBA project to enable VBA code to call into the customization assembly.  
+## <a name="creating-a-workbook-that-contains-vba-code"></a>Création d'un classeur contenant du code VBA  
+ La première étape consiste à créer un classeur prenant en charge les macros et contenant une macro VBA simple. Avant d'exposer le code d'une personnalisation à VBA, le classeur doit déjà contenir du code VBA. Dans le cas contraire, Visual Studio ne peut pas modifier le projet VBA pour permettre au code VBA d'appeler l'assembly de personnalisation.  
   
- If you already have a workbook that contains VBA code that you want to use, you can skip this step.  
+ Si vous disposez déjà d'un classeur contenant du code VBA que vous souhaitez utiliser, vous pouvez ignorer cette étape.  
   
-#### <a name="to-create-a-workbook-that-contains-vba-code"></a>To create a workbook that contains VBA code  
+#### <a name="to-create-a-workbook-that-contains-vba-code"></a>Pour créer un classeur contenant du code VBA  
   
-1.  Start Excel.  
+1.  Démarrez Excel.  
   
-2.  Save the active document as an **Excel Macro-Enabled Workbook (\*.xlsm)** with the name **WorkbookWithVBA**. Save it to a convenient location, such as the desktop.  
+2.  Enregistrez le document actif en tant qu’un **classeur Excel (\*.xlsm)** portant le nom **ClasseurAvecVBA**. dans un emplacement approprié, tel que le Bureau.  
   
-3.  On the Ribbon, click the **Developer** tab.  
+3.  Dans le ruban, cliquez sur l'onglet **Développeur** .  
   
     > [!NOTE]  
-    >  If the **Developer** tab is not visible, you must first show it. For more information, see [How to: Show the Developer Tab on the Ribbon](../vsto/how-to-show-the-developer-tab-on-the-ribbon.md).  
+    >  Si l'onglet **Développeur** n'est pas visible, vous devez tout d'abord l'afficher. Pour plus d'informations, consultez [How to: Show the Developer Tab on the Ribbon](../vsto/how-to-show-the-developer-tab-on-the-ribbon.md).  
   
-4.  In the **Code** group, click **Visual Basic**.  
+4.  Dans le groupe **Code** , cliquez sur **Visual Basic**.  
   
-     The Visual Basic Editor opens.  
+     Visual Basic Editor s'ouvre.  
   
-5.  In the **Project** window, double-click **ThisWorkbook**.  
+5.  Dans la fenêtre **Projet** , double-cliquez sur **ThisWorkbook**.  
   
-     The code file for the `ThisWorkbook` object opens.  
+     Le fichier de code de l'objet `ThisWorkbook` s'ouvre.  
   
-6.  Add the following VBA code to the code file. This code defines a simple function that does nothing. The only purpose of this function is to ensure that a VBA project exists in the workbook. This is required for later steps in this walkthrough.  
+6.  Ajoutez le code VBA suivant au fichier de code. Ce code définit une fonction simple qui ne fait rien. Le seul objectif de cette fonction consiste à s'assurer qu'un projet VBA existe dans le classeur. Cela est nécessaire pour les étapes ultérieures de cette procédure.  
   
     ```  
     Sub EmptySub()  
     End Sub  
     ```  
   
-7.  Save the document and exit Excel.  
+7.  Enregistrez le document et quittez Excel.  
   
-## <a name="creating-the-project"></a>Creating the Project  
- Now you can create a document-level project for Excel that uses the macro-enabled workbook you created earlier.  
+## <a name="creating-the-project"></a>Création du projet  
+ Vous pouvez maintenant créer un projet au niveau du document pour Excel qui utilise le classeur prenant en charge les macros que vous avez créé précédemment.  
   
-#### <a name="to-create-a-new-project"></a>To create a new project  
+#### <a name="to-create-a-new-project"></a>Pour créer un projet  
   
-1.  Start [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)].  
+1.  Démarrez [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)].  
   
-2.  On the **File** menu, point to **New**, and then click **Project**.  
+2.  Dans le menu **Fichier** , pointez sur **Nouveau**, puis cliquez sur **Projet**.  
   
-3.  In the templates pane, expand **Visual C#**, and then expand **Office/SharePoint**.  
+3.  Dans le volet Modèles, développez **Visual C#**puis **Office/SharePoint**.  
   
-4.  Select the **Office Add-ins** node.  
+4.  Sélectionnez le nœud **Compléments Office** .  
   
-5.  In the list of project templates, select the **Excel 2010 Workbook** or **Excel 2013 Workbook** project.  
+5.  Dans la liste des modèles de projet, sélectionnez le projet **Classeur Excel 2010** ou **Classeur Excel 2013** .  
   
-6.  In the **Name** box, type **CallingCodeFromVBA**.  
+6.  Dans la zone **Nom** , tapez **AppelCodeDeVBA**.  
   
-7.  Click **OK**.  
+7.  Cliquez sur **OK**.  
   
-     The **Visual Studio Tools for Office Project Wizard** opens.  
+     L' **Assistant Projet Visual Studio Tools pour Office** s'ouvre.  
   
-8.  Select **Copy an existing document**, and, in the **Full path of the existing document** box, specify the location of the **WorkbookWithVBA** workbook that you created earlier. If you are using your own macro-enabled workbook, specify the location of that workbook instead.  
+8.  Sélectionnez **Copier un document existant**, puis, dans la zone **Chemin d'accès complet du document existant** , spécifiez l'emplacement du classeur **ClasseurAvecVBA** que vous avez créé précédemment. Si vous utilisez votre propre classeur prenant en charge les macros, spécifiez l'emplacement de ce classeur à la place.  
   
-9. Click **Finish**.  
+9. Cliquez sur **Terminer**.  
   
-     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] opens the **WorkbookWithVBA** workbook in the designer and adds the **CallingCodeFromVBA** project to **Solution Explorer**.  
+     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] ouvre le classeur **ClasseurAvecVBA** dans le concepteur et ajoute le projet **AppelCodeDeVBA** dans l' **Explorateur de solutions**.  
   
-## <a name="trusting-the-location-of-the-workbook"></a>Trusting the Location of the Workbook  
- Before you can expose code in your solution to VBA code in the workbook, you must trust VBA in the workbook to run. There are several ways to do this. In this walkthrough, you will accomplish this task by trusting the location of the workbook in the **Trust Center** in Excel.  
+## <a name="trusting-the-location-of-the-workbook"></a>Approbation de l'emplacement du classeur  
+ Avant d'exposer le code dans votre solution au code VBA dans le classeur, vous devez approuver VBA dans le classeur à exécuter. Plusieurs méthodes sont possibles. Dans le cas présent, vous allez effectuer cette tâche en approuvant l'emplacement du classeur dans le **Centre de gestion de la confidentialité** d'Excel.  
   
-#### <a name="to-trust-the-location-of-the-workbook"></a>To trust the location of the workbook  
+#### <a name="to-trust-the-location-of-the-workbook"></a>Pour approuver l'emplacement du classeur  
   
-1.  Start Excel.  
+1.  Démarrez Excel.  
   
-2.  Click the **File** tab.  
+2.  Cliquez sur l'onglet **Fichier** .  
   
-3.  Click the **Excel Options** button.  
+3.  Cliquez sur le bouton **Options Excel** .  
   
-4.  In the categories pane, click **Trust Center**.  
+4.  Dans le volet des catégories, cliquez sur **Centre de gestion de la confidentialité**.  
   
-5.  In the details pane, click **Trust Center Settings**.  
+5.  Dans le volet d'informations, cliquez sur **Paramètres du Centre de gestion de la confidentialité**.  
   
-6.  In the categories pane, click **Trusted Locations**.  
+6.  Dans le volet des catégories, cliquez sur **Emplacements approuvés**.  
   
-7.  In the details pane, click **Add new location**.  
+7.  Dans le volet d'informations, cliquez sur **Ajouter un nouvel emplacement**.  
   
-8.  In the **Microsoft Office Trusted Location** dialog box, browse to the folder that contains the **CallingCodeFromVBA** project.  
+8.  Dans la boîte de dialogue **Emplacement approuvé de Microsoft Office** , accédez au dossier qui contient le projet **AppelCodeDeVBA** .  
   
-9. Select **Subfolders of this location are also trusted**.  
+9. Sélectionnez **Les sous-dossiers de cet emplacement sont également approuvés**.  
   
-10. In the **Microsoft Office Trusted Location** dialog box, click **OK**.  
+10. Dans la boîte de dialogue **Emplacement approuvé de Microsoft Office** , cliquez sur **OK**.  
   
-11. In the **Trust Center** dialog box, click **OK**.  
+11. Dans la boîte de dialogue **Centre de gestion de la confidentialité** , cliquez sur **OK**.  
   
-12. In the **Excel Options** dialog box, click **OK**.  
+12. Dans la boîte de dialogue **Options Excel** , cliquez sur **OK**.  
   
-13. Exit **Excel**.  
+13. Quittez **Excel**.  
   
-## <a name="adding-a-method-to-the-sheet1-class"></a>Adding a Method to the Sheet1 Class  
- Now that the VBA project is set up, add a public method to the `Sheet1` host item class that you can call from VBA code.  
+## <a name="adding-a-method-to-the-sheet1-class"></a>Ajout d'une méthode à la classe Sheet1  
+ Maintenant que le projet VBA est configuré, ajoutez une méthode publique à la classe d'élément hôte `Sheet1` que vous pouvez appeler à partir du code VBA.  
   
-#### <a name="to-add-a-method-to-the-sheet1-class"></a>To add a method to the Sheet1 class  
+#### <a name="to-add-a-method-to-the-sheet1-class"></a>Pour ajouter une méthode à la classe Sheet1  
   
-1.  In **Solution Explorer**, right-click **Sheet1.cs**, and then click **View Code**.  
+1.  Dans l' **Explorateur de solutions**, cliquez avec le bouton droit sur **Sheet1.cs**, puis cliquez sur **Afficher le code**.  
   
-     The **Sheet1.cs** file opens in the Code Editor.  
+     Le fichier **Sheet1.cs** s'ouvre dans l'éditeur de code.  
   
-2.  Add the following code to the `Sheet1` class. The `CreateVstoNamedRange` method creates a new <xref:Microsoft.Office.Tools.Excel.NamedRange> object at the specified range. This method also creates an event handler for the <xref:Microsoft.Office.Tools.Excel.NamedRange.Selected> event of the <xref:Microsoft.Office.Tools.Excel.NamedRange>. Later in this walkthrough, you will call the `CreateVstoNamedRange` method from VBA code in the document.  
+2.  Ajoutez le code suivant à la classe `Sheet1` . La méthode `CreateVstoNamedRange` crée un nouvel objet <xref:Microsoft.Office.Tools.Excel.NamedRange> au niveau de la plage spécifiée. Cette méthode crée également un gestionnaire d'événements pour l'événement <xref:Microsoft.Office.Tools.Excel.NamedRange.Selected> de <xref:Microsoft.Office.Tools.Excel.NamedRange>. Ultérieurement dans cette procédure, vous appellerez la méthode `CreateVstoNamedRange` à partir du code VBA figurant dans le document.  
   
      [!code-csharp[Trin_CallingCSCustomizationFromVBA#2](../vsto/codesnippet/CSharp/CallingCodeFromVBA/Sheet1.cs#2)]  
   
-3.  Add the following method to the `Sheet1` class. This method overrides the <xref:Microsoft.Office.Tools.Excel.Worksheet.GetAutomationObject%2A> method to return the current instance of the `Sheet1` class.  
+3.  Ajoutez la méthode suivante à la classe `Sheet1` . Cette méthode remplace la méthode <xref:Microsoft.Office.Tools.Excel.Worksheet.GetAutomationObject%2A> pour retourner l'instance actuelle de la classe `Sheet1` .  
   
      [!code-csharp[Trin_CallingCSCustomizationFromVBA#3](../vsto/codesnippet/CSharp/CallingCodeFromVBA/Sheet1.cs#3)]  
   
-4.  Apply the following attributes before the first line of the `Sheet1` class declaration. These attributes make the class visible to COM, but without generating a class interface.  
+4.  Appliquez les attributs suivants avant la première ligne de la déclaration de la classe `Sheet1` . Ces attributs rendent la classe visible pour COM, mais ne génèrent pas d'interface de classe.  
   
      [!code-csharp[Trin_CallingCSCustomizationFromVBA#1](../vsto/codesnippet/CSharp/CallingCodeFromVBA/Sheet1.cs#1)]  
   
-## <a name="extracting-an-interface-for-the-sheet1-class"></a>Extracting an Interface for the Sheet1 Class  
- Before you can expose the `CreateVstoNamedRange` method to VBA code, you must create a public interface that defines this method, and you must expose this interface to COM.  
+## <a name="extracting-an-interface-for-the-sheet1-class"></a>Extraction d'une interface pour la classe Sheet1  
+ Avant d'exposer la méthode `CreateVstoNamedRange` au code VBA, vous devez créer une interface publique qui définit cette méthode et l'exposer à COM.  
   
-#### <a name="to-extract-an-interface-for-the-sheet1-class"></a>To extract an interface for the Sheet1 class  
+#### <a name="to-extract-an-interface-for-the-sheet1-class"></a>Pour extraire une interface pour la classe Sheet1  
   
-1.  In the **Sheet1.cs** code file, click anywhere in the `Sheet1` class.  
+1.  Dans le fichier de code **Sheet1.cs** , cliquez n'importe où dans la classe `Sheet1` .  
   
-2.  On the **Refactor** menu, click **Extract Interface**.  
+2.  Dans le menu **Refactoriser** , cliquez sur **Extraire l'interface**.  
   
-3.  In the **Extract Interface** dialog box, in the **Select public members to form interface** box, click the entry for the `CreateVstoNamedRange` method.  
+3.  Dans la boîte de dialogue **Extraire l'interface** , dans la zone **Sélectionner des membres publics pour former l'interface** , cliquez sur l'entrée correspondant à la méthode `CreateVstoNamedRange` .  
   
-4.  Click **OK**.  
+4.  Cliquez sur **OK**.  
   
-     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] generates a new interface named `ISheet1`, and it modifies the definition of the `Sheet1` class so that it implements the `ISheet1` interface. [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] also opens the **ISheet1.cs** file in the Code Editor.  
+     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] génère une nouvelle interface nommée `ISheet1`et modifie la définition de la classe `Sheet1` afin d'implémenter l'interface `ISheet1` . [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] ouvre également le fichier **ISheet1.cs** dans l'éditeur de code.  
   
-5.  In the **ISheet1.cs** file, replace the `ISheet1` interface declaration with the following code. This code makes the `ISheet1` interface public, and it applies the <xref:System.Runtime.InteropServices.ComVisibleAttribute> attribute to make the interface visible to COM.  
+5.  Dans le fichier **ISheet1.cs** , remplacez la déclaration de l'interface `ISheet1` par le code suivant. Ce code rend publique l'interface `ISheet1` et applique l'attribut <xref:System.Runtime.InteropServices.ComVisibleAttribute> pour rendre l'interface visible par COM.  
   
      [!code-csharp[Trin_CallingCSCustomizationFromVBA#4](../vsto/codesnippet/CSharp/CallingCodeFromVBA/ISheet1.cs#4)]  
   
-6.  Build the project.  
+6.  Générez le projet.  
   
-## <a name="exposing-the-method-to-vba-code"></a>Exposing the Method to VBA Code  
- To expose the `CreateVstoNamedRange` method to VBA code in the workbook, set the **ReferenceAssemblyFromVbaProject** property for the `Sheet1` host item to **True**.  
+## <a name="exposing-the-method-to-vba-code"></a>Exposition de la méthode au code VBA  
+ Pour exposer la méthode `CreateVstoNamedRange` au code VBA dans le classeur, affectez la valeur **True** à la propriété `Sheet1` ReferenceAssemblyFromVbaProject **pour l'élément hôte**.  
   
-#### <a name="to-expose-the-method-to-vba-code"></a>To expose the method to VBA code  
+#### <a name="to-expose-the-method-to-vba-code"></a>Pour exposer la méthode au code VBA  
   
-1.  In **Solution Explorer**, double-click **Sheet1.cs**.  
+1.  Dans l' **Explorateur de solutions**, double-cliquez sur **Sheet1.cs**.  
   
-     The **WorkbookWithVBA** file opens in the designer, with Sheet1 visible.  
+     Le fichier **ClasseurAvecVBA** s'ouvre dans le concepteur et Sheet1 est visible.  
   
-2.  In the **Properties** window, select the **ReferenceAssemblyFromVbaProject** property, and change the value to **True**.  
+2.  Dans la fenêtre **Propriétés** , sélectionnez la propriété **ReferenceAssemblyFromVbaProject** et remplacez sa valeur par **True**.  
   
-3.  Click **OK** in the message that is displayed.  
+3.  Cliquez sur **OK** dans le message qui s'affiche.  
   
-4.  Build the project.  
+4.  Générez le projet.  
   
-## <a name="calling-the-method-from-vba-code"></a>Calling the Method from VBA Code  
- You can now call the `CreateVstoNamedRange` method from VBA code in the workbook.  
+## <a name="calling-the-method-from-vba-code"></a>Appel de la méthode à partir du code VBA  
+ Vous pouvez maintenant appeler la méthode `CreateVstoNamedRange` à partir du code VBA figurant dans le classeur.  
   
 > [!NOTE]  
->  In this walkthrough, you will add VBA code to the workbook while debugging the project. The VBA code you add to this document will be overwritten the next time that you build the project, because Visual Studio replaces the document in the build output folder with a copy of the document from the main project folder. If you want to save the VBA code, you can copy it into the document in the project folder. For more information, see [Combining VBA and Document-Level Customizations](../vsto/combining-vba-and-document-level-customizations.md).  
+>  Dans cette procédure pas à pas, vous allez ajouter du code VBA au classeur lors du débogage du projet. Le code VBA que vous ajoutez à ce document sera remplacé la prochaine fois que vous générerez le projet, car Visual Studio remplace le document dans le dossier de sortie de génération par une copie du document provenant du dossier principal du projet. Si vous souhaitez enregistrer le code VBA, vous pouvez le copier dans le document, dans le dossier du projet. Pour plus d'informations, consultez [Combining VBA and Document-Level Customizations](../vsto/combining-vba-and-document-level-customizations.md).  
   
-#### <a name="to-call-the-method-from-vba-code"></a>To call the method from VBA code  
+#### <a name="to-call-the-method-from-vba-code"></a>Pour appeler la méthode à partir du code VBA  
   
-1.  Press F5 to run your project.  
+1.  Appuyez sur F5 pour exécuter votre projet.  
   
-2.  On the **Developer** tab, in the **Code** group, click **Visual Basic**.  
+2.  Sous l'onglet **Développeur** , dans le groupe **Code** , cliquez sur **Visual Basic**.  
   
-     The Visual Basic Editor opens.  
+     Visual Basic Editor s'ouvre.  
   
-3.  On the **Insert** menu, click **Module**.  
+3.  Dans le menu **Insérer** , cliquez sur **Module**.  
   
-4.  Add the following code to the new module.  
+4.  Ajoutez le code ci-dessous au nouveau module.  
   
-     This code calls the `CreateTable` method in the customization assembly. The macro accesses this method by using the global `GetManagedClass` method to access the `Sheet1` host item class that you exposed to VBA code. The `GetManagedClass` method was automatically generated when you set the **ReferenceAssemblyFromVbaProject** property earlier in this walkthrough.  
+     Ce code appelle la méthode `CreateTable` dans l'assembly de personnalisation. La macro accède à cette méthode en utilisant la méthode `GetManagedClass` globale pour accéder à la classe d'élément hôte `Sheet1` que vous avez exposée au code VBA. La méthode `GetManagedClass` a été générée automatiquement quand vous avez défini la propriété **ReferenceAssemblyFromVbaProject** , précédemment dans cette procédure pas à pas.  
   
     ```  
     Sub CallVSTOMethod()  
@@ -240,23 +237,23 @@ ms.lasthandoff: 08/30/2017
     End Sub  
     ```  
   
-5.  Press F5.  
+5.  Appuyez sur F5.  
   
-6.  In the open workbook, click cell **A1** on **Sheet1**. Verify that the message box appears.  
+6.  Dans le classeur ouvert, cliquez sur la cellule **A1** dans **Feuil1**. Vérifiez que la boîte de message s'affiche.  
   
-7.  Exit Excel without saving your changes.  
+7.  Quittez Excel sans enregistrer vos modifications.  
   
-## <a name="next-steps"></a>Next Steps  
- You can learn more about calling code in Office solutions from VBA in these topics:  
+## <a name="next-steps"></a>Étapes suivantes  
+ Pour en savoir plus sur l'appel de code dans les solutions Office à partir de VBA, consultez les rubriques suivantes :  
   
--   Call code in a host item in a Visual Basic customization from VBA. This process is different from the Visual C# process. For more information, see [Walkthrough: Calling Code from VBA in a Visual Basic Project](../vsto/walkthrough-calling-code-from-vba-in-a-visual-basic-project.md).  
+-   Appeler du code dans un élément hôte dans une personnalisation Visual Basic à partir de VBA. Ce processus est différent du processus Visual C#. Pour plus d’informations, consultez [procédure pas à pas : appel de Code à partir de VBA dans un projet Visual Basic](../vsto/walkthrough-calling-code-from-vba-in-a-visual-basic-project.md).  
   
--   Call code in a VSTO Add-in from VBA. For more information, see [Walkthrough: Calling Code in a VSTO Add-in from VBA](../vsto/walkthrough-calling-code-in-a-vsto-add-in-from-vba.md).  
+-   Appeler du code dans un complément VSTO à partir de VBA. Pour plus d’informations, consultez [procédure pas à pas : appel de Code dans un complément VSTO à partir de VBA](../vsto/walkthrough-calling-code-in-a-vsto-add-in-from-vba.md).  
   
-## <a name="see-also"></a>See Also  
+## <a name="see-also"></a>Voir aussi  
  [Combining VBA and Document-Level Customizations](../vsto/combining-vba-and-document-level-customizations.md)   
- [Programming Document-Level Customizations](../vsto/programming-document-level-customizations.md)   
+ [Programmation des personnalisations au niveau du Document](../vsto/programming-document-level-customizations.md)   
  [How to: Expose Code to VBA in a Visual Basic Project](../vsto/how-to-expose-code-to-vba-in-a-visual-basic-project.md)   
- [How to: Expose Code to VBA in a Visual C&#35; Project](../vsto/how-to-expose-code-to-vba-in-a-visual-csharp-project.md)   
- [Walkthrough: Calling Code from VBA in a Visual Basic Project](../vsto/walkthrough-calling-code-from-vba-in-a-visual-basic-project.md)  
+ [Comment : exposer du Code à VBA dans un Visual C &#35; Projet](../vsto/how-to-expose-code-to-vba-in-a-visual-csharp-project.md)   
+ [Procédure pas à pas : appel de code à partir de VBA dans un projet Visual Basic](../vsto/walkthrough-calling-code-from-vba-in-a-visual-basic-project.md)  
   

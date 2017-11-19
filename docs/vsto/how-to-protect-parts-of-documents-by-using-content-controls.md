@@ -1,12 +1,10 @@
 ---
-title: 'How to: Protect Parts of Documents by Using Content Controls | Microsoft Docs'
+title: "Comment : protéger des parties de Documents à l’aide de contrôles de contenu | Documents Microsoft"
 ms.custom: 
 ms.date: 02/02/2017
-ms.prod: visual-studio-dev14
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- office-development
+ms.technology: office-development
 ms.tgt_pltfrm: 
 ms.topic: article
 dev_langs:
@@ -21,94 +19,97 @@ helpviewer_keywords:
 - Word [Office development in Visual Studio], restricted permissions
 - GroupContentControl
 ms.assetid: 50d7286a-7746-446f-8eef-06ceeadc94d0
-caps.latest.revision: 28
-author: kempb
-ms.author: kempb
+caps.latest.revision: "28"
+author: gewarren
+ms.author: gewarren
 manager: ghogen
-ms.translationtype: HT
-ms.sourcegitcommit: eb5c9550fd29b0e98bf63a7240737da4f13f3249
-ms.openlocfilehash: e12f7b04a28ddfe5bd8a312d08a82e290bb0a9ce
-ms.contentlocale: fr-fr
-ms.lasthandoff: 08/30/2017
-
+ms.openlocfilehash: bf53de6bb247ecb0cf3195310e84c0be548eb717
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: fr-FR
+ms.lasthandoff: 10/31/2017
 ---
-# <a name="how-to-protect-parts-of-documents-by-using-content-controls"></a>How to: Protect Parts of Documents by Using Content Controls
-  When you protect part of a document, you prevent users from changing or deleting the content in that part of the document. There are several ways you can protect parts of a Microsoft Office Word document by using content controls:  
+# <a name="how-to-protect-parts-of-documents-by-using-content-controls"></a>Comment : protéger des parties de documents à l'aide de contrôles de contenu
+  Quand vous protégez une partie d'un document, vous empêchez les utilisateurs de modifier ou de supprimer le contenu dans cette partie du document. Il existe plusieurs manières de protéger des parties d'un document Microsoft Office Word à l'aide de contrôles de contenu :  
   
--   You can protect a content control.  
+-   Vous pouvez protéger un contrôle de contenu.  
   
--   You can protect a part of a document that is not in a content control.  
+-   Vous pouvez protéger une partie d'un document qui ne se trouve pas dans un contrôle de contenu.  
   
  [!INCLUDE[appliesto_wdalldocapp](../vsto/includes/appliesto-wdalldocapp-md.md)]  
   
-##  <a name="EditDeleteControl"></a> Protecting a Content Control  
- You can prevent users from editing or deleting a content control by setting properties of the control in a document-level project at design time or at run time.  
+##  <a name="EditDeleteControl"></a>Protéger un contrôle de contenu  
+ Vous pouvez empêcher les utilisateurs de modifier ou supprimer un contrôle de contenu en définissant les propriétés du contrôle dans un projet au niveau du document, au moment du design ou au moment de l'exécution.  
   
- You can also protect content controls that you add to a document at run time by using a VSTO Add-in project. For more information, see [How to: Add Content Controls to Word Documents](../vsto/how-to-add-content-controls-to-word-documents.md).  
+ Vous pouvez également protéger les contrôles de contenu que vous ajoutez à un document au moment de l’exécution à l’aide d’un projet de complément VSTO. Pour plus d’informations, consultez [Comment : ajouter des contrôles de contenu à des Documents Word](../vsto/how-to-add-content-controls-to-word-documents.md).  
   
-#### <a name="to-protect-a-content-control-at-design-time"></a>To protect a content control at design time  
+#### <a name="to-protect-a-content-control-at-design-time"></a>Pour protéger un contrôle de contenu au moment du design  
   
-1.  In the document that is hosted in the [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] designer, select the content control that you want to protect.  
+1.  Dans le document hébergé dans le concepteur [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)], sélectionnez le contrôle de contenu à protéger.  
   
-2.  In the **Properties** window, set one or both of the following properties:  
+2.  Dans le **propriétés** fenêtre, définissez une ou les deux des propriétés suivantes :  
   
-    -   To prevent users from editing the control, set **LockContents** to **True**.  
+    -   Pour empêcher les utilisateurs de modifier le contrôle, définissez **LockContents** à **True**.  
   
-    -   To prevent users from deleting the control, set **LockContentControl** to **True**.  
+    -   Pour empêcher les utilisateurs de supprimer le contrôle, définissez **LockContentControl** à **True**.  
   
-3.  Click **OK**.  
+3.  Cliquez sur **OK**.  
   
-#### <a name="to-protect-a-content-control-at-run-time"></a>To protect a content control at run time  
+#### <a name="to-protect-a-content-control-at-run-time"></a>Pour protéger un contrôle de contenu au moment de l'exécution  
   
-1.  Set the `LockContents` property of the content control to **true** to prevent users from editing the control, and set the `LockContentControl` property to **true** to prevent users from deleting the control.  
+1.  Définir le `LockContents` propriété du contrôle de contenu à **true** pour empêcher les utilisateurs de modifier le contrôle et définir le `LockContentControl` propriété **true** pour empêcher les utilisateurs de supprimer le contrôle.  
   
-     The following code example demonstrates using the <xref:Microsoft.Office.Tools.Word.RichTextContentControl.LockContents%2A> and <xref:Microsoft.Office.Tools.Word.RichTextContentControl.LockContentControl%2A> properties of two different <xref:Microsoft.Office.Tools.Word.RichTextContentControl> objects in a document-level project. To run this code, add the code to the `ThisDocument` class in your project, and call the `AddProtectedContentControls` method from the `ThisDocument_Startup` event handler.  
+     L'exemple de code suivant illustre l'utilisation des propriétés <xref:Microsoft.Office.Tools.Word.RichTextContentControl.LockContents%2A> et <xref:Microsoft.Office.Tools.Word.RichTextContentControl.LockContentControl%2A> de deux objets <xref:Microsoft.Office.Tools.Word.RichTextContentControl> distincts dans un projet au niveau du document. Pour exécuter ce code, ajoutez-le à la classe `ThisDocument` dans votre projet, puis appelez la méthode `AddProtectedContentControls` à partir du gestionnaire d'événements `ThisDocument_Startup`.  
   
-     [!code-csharp[Trin_ContentControlHowToProtect#2](../vsto/codesnippet/CSharp/Trin_ContentControlHowToProtect/ThisDocument.cs#2)]  [!code-vb[Trin_ContentControlHowToProtect#2](../vsto/codesnippet/VisualBasic/Trin_ContentControlHowToProtect/ThisDocument.vb#2)]  
+     [!code-csharp[Trin_ContentControlHowToProtect#2](../vsto/codesnippet/CSharp/Trin_ContentControlHowToProtect/ThisDocument.cs#2)]
+     [!code-vb[Trin_ContentControlHowToProtect#2](../vsto/codesnippet/VisualBasic/Trin_ContentControlHowToProtect/ThisDocument.vb#2)]  
   
-     The following code example demonstrates using the <xref:Microsoft.Office.Tools.Word.RichTextContentControl.LockContents%2A> and <xref:Microsoft.Office.Tools.Word.RichTextContentControl.LockContentControl%2A> properties of two different <xref:Microsoft.Office.Tools.Word.RichTextContentControl> objects in a VSTO Add-in project. To run this code, add the code to the `ThisAddIn` class in your project, and call the `AddProtectedContentControls` method from the `ThisAddIn_Startup` event handler.  
+     L'exemple de code suivant illustre l'utilisation des propriétés <xref:Microsoft.Office.Tools.Word.RichTextContentControl.LockContents%2A> et <xref:Microsoft.Office.Tools.Word.RichTextContentControl.LockContentControl%2A> de deux objets <xref:Microsoft.Office.Tools.Word.RichTextContentControl> distincts dans un projet de complément VSTO. Pour exécuter ce code, ajoutez-le à la classe `ThisAddIn` dans votre projet, puis appelez la méthode `AddProtectedContentControls` à partir du gestionnaire d'événements `ThisAddIn_Startup`.  
   
-     [!code-vb[Trin_WordAddInDynamicControls#14](../vsto/codesnippet/VisualBasic/trin_wordaddindynamiccontrols/ThisAddIn.vb#14)]  [!code-csharp[Trin_WordAddInDynamicControls#14](../vsto/codesnippet/CSharp/Trin_WordAddInDynamicControls/ThisAddIn.cs#14)]  
+     [!code-vb[Trin_WordAddInDynamicControls#14](../vsto/codesnippet/VisualBasic/trin_wordaddindynamiccontrols/ThisAddIn.vb#14)]
+     [!code-csharp[Trin_WordAddInDynamicControls#14](../vsto/codesnippet/CSharp/Trin_WordAddInDynamicControls/ThisAddIn.cs#14)]  
   
-## <a name="protecting-a-part-of-a-document-that-is-not-in-a-content-control"></a>Protecting a Part of a Document That Is Not in a Content Control  
- You can prevent users from changing an area of a document by putting the area in a <xref:Microsoft.Office.Tools.Word.GroupContentControl>. This is useful in the following scenarios:  
+## <a name="protecting-a-part-of-a-document-that-is-not-in-a-content-control"></a>Protection d'une partie d'un document qui ne se trouve pas dans un contrôle de contenu  
+ Vous pouvez empêcher les utilisateurs de modifier une zone d'un document en la plaçant dans <xref:Microsoft.Office.Tools.Word.GroupContentControl>. Cela s'avère utile dans les scénarios suivant :  
   
--   You want to protect an area that does not contain content controls.  
+-   Vous souhaitez protéger une zone qui ne contient pas de contrôles de contenu.  
   
--   You want to protect an area that already contains content controls, but the text or other items that you want to protect are not in the content controls.  
+-   Vous souhaitez protéger une zone qui contient déjà des contrôles de contenu, mais le texte ou les autres éléments que vous souhaitez protéger ne se trouvent pas dans les contrôles de contenu.  
   
 > [!NOTE]  
->  If you create a <xref:Microsoft.Office.Tools.Word.GroupContentControl> that contains embedded content controls, the embedded content controls are not automatically protected. To prevent users from editing an embedded content control, use the **LockContents** property of the control.  
+>  Si vous créez un <xref:Microsoft.Office.Tools.Word.GroupContentControl> qui contient des contrôles de contenu incorporés, ces contrôles ne sont pas protégés automatiquement. Pour empêcher les utilisateurs de modifier un contrôle de contenu incorporé, utilisez la **LockContents** propriété du contrôle.  
   
-#### <a name="to-protect-an-area-of-a-document-at-design-time"></a>To protect an area of a document at design time  
+#### <a name="to-protect-an-area-of-a-document-at-design-time"></a>Pour protéger une zone d'un document au moment du design  
   
-1.  In the document that is hosted in the [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] designer, select the area that you want to protect.  
+1.  Dans le document hébergé dans le concepteur [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)], sélectionnez la zone à protéger.  
   
-2.  On the Ribbon, click the **Developer** tab.  
+2.  Dans le ruban, cliquez sur l'onglet **Développeur** .  
   
     > [!NOTE]  
-    >  If the **Developer** tab is not visible, you must first show it. For more information, see [How to: Show the Developer Tab on the Ribbon](../vsto/how-to-show-the-developer-tab-on-the-ribbon.md).  
+    >  Si l'onglet **Développeur** n'est pas visible, vous devez tout d'abord l'afficher. Pour plus d'informations, consultez [How to: Show the Developer Tab on the Ribbon](../vsto/how-to-show-the-developer-tab-on-the-ribbon.md).  
   
-3.  In the **Controls** group, click the **Group** drop-down button, and then click **Group**.  
+3.  Dans le **contrôles** , cliquez sur le **groupe** bouton de liste déroulante, puis cliquez sur **groupe**.  
   
-     A <xref:Microsoft.Office.Tools.Word.GroupContentControl> that contains the protected region is automatically generated in the `ThisDocument` class in your project. A border that represents the group control is visible at design time, but there is no visible border at run time.  
+     Un <xref:Microsoft.Office.Tools.Word.GroupContentControl> qui contient la zone protégée est généré automatiquement dans la classe `ThisDocument` de votre projet. Une bordure qui représente le contrôle de groupe est visible au moment du design. Toutefois, aucune bordure n'est visible au moment de l'exécution.  
   
-#### <a name="to-protect-an-area-of-a-document-at-run-time"></a>To protect an area of a document at run time  
+#### <a name="to-protect-an-area-of-a-document-at-run-time"></a>Pour protéger une zone d'un document au moment de l'exécution  
   
-1.  Programmatically select the area that you want to protect, and then call the <xref:Microsoft.Office.Tools.Word.ControlCollection.AddGroupContentControl%2A> method to create a <xref:Microsoft.Office.Tools.Word.GroupContentControl>.  
+1.  Sélectionnez par programmation la zone à protéger, puis appelez la méthode <xref:Microsoft.Office.Tools.Word.ControlCollection.AddGroupContentControl%2A> pour créer <xref:Microsoft.Office.Tools.Word.GroupContentControl>.  
   
-     The following code example for a document-level project adds text to the first paragraph in the document, selects the first paragraph, and then instantiates a <xref:Microsoft.Office.Tools.Word.GroupContentControl>. To run this code, add the code to the `ThisDocument` class in your project, and call the `ProtectFirstParagraph` method from the `ThisDocument_Startup` event handler.  
+     L'exemple de code suivant pour un projet au niveau du document ajoute du texte au premier paragraphe du document, sélectionne le premier paragraphe, puis instancie <xref:Microsoft.Office.Tools.Word.GroupContentControl>. Pour exécuter ce code, ajoutez-le à la classe `ThisDocument` dans votre projet, puis appelez la méthode `ProtectFirstParagraph` à partir du gestionnaire d'événements `ThisDocument_Startup`.  
   
-     [!code-csharp[Trin_ContentControlHowToProtect#1](../vsto/codesnippet/CSharp/Trin_ContentControlHowToProtect/ThisDocument.cs#1)]  [!code-vb[Trin_ContentControlHowToProtect#1](../vsto/codesnippet/VisualBasic/Trin_ContentControlHowToProtect/ThisDocument.vb#1)]  
+     [!code-csharp[Trin_ContentControlHowToProtect#1](../vsto/codesnippet/CSharp/Trin_ContentControlHowToProtect/ThisDocument.cs#1)]
+     [!code-vb[Trin_ContentControlHowToProtect#1](../vsto/codesnippet/VisualBasic/Trin_ContentControlHowToProtect/ThisDocument.vb#1)]  
   
-     The following code example for a VSTO Add-in project adds text to the first paragraph in the active document, selects the first paragraph, and then instantiates a <xref:Microsoft.Office.Tools.Word.GroupContentControl>. To run this code, add the code to the `ThisAddIn` class in your project, and call the `ProtectFirstParagraph` method from the `ThisAddIn_Startup` event handler.  
+     L'exemple de code suivant pour un projet de complément VSTO ajoute du texte au premier paragraphe du document actif, sélectionne le premier paragraphe, puis instancie <xref:Microsoft.Office.Tools.Word.GroupContentControl>. Pour exécuter ce code, ajoutez-le à la classe `ThisAddIn` dans votre projet, puis appelez la méthode `ProtectFirstParagraph` à partir du gestionnaire d'événements `ThisAddIn_Startup`.  
   
-     [!code-vb[Trin_WordAddInDynamicControls#15](../vsto/codesnippet/VisualBasic/trin_wordaddindynamiccontrols/ThisAddIn.vb#15)]  [!code-csharp[Trin_WordAddInDynamicControls#15](../vsto/codesnippet/CSharp/Trin_WordAddInDynamicControls/ThisAddIn.cs#15)]  
+     [!code-vb[Trin_WordAddInDynamicControls#15](../vsto/codesnippet/VisualBasic/trin_wordaddindynamiccontrols/ThisAddIn.vb#15)]
+     [!code-csharp[Trin_WordAddInDynamicControls#15](../vsto/codesnippet/CSharp/Trin_WordAddInDynamicControls/ThisAddIn.cs#15)]  
   
-## <a name="see-also"></a>See Also  
- [Automating Word by Using Extended Objects](../vsto/automating-word-by-using-extended-objects.md)   
- [Content Controls](../vsto/content-controls.md)   
- [How to: Add Content Controls to Word Documents](../vsto/how-to-add-content-controls-to-word-documents.md)   
+## <a name="see-also"></a>Voir aussi  
+ [Automatisation de Word à l’aide d’objets étendus](../vsto/automating-word-by-using-extended-objects.md)   
+ [Contrôles de contenu](../vsto/content-controls.md)   
+ [Comment : ajouter des contrôles de contenu à des Documents Word](../vsto/how-to-add-content-controls-to-word-documents.md)   
  [Host Items and Host Controls Overview](../vsto/host-items-and-host-controls-overview.md)   
  [Programmatic Limitations of Host Items and Host Controls](../vsto/programmatic-limitations-of-host-items-and-host-controls.md)   
  [Adding Controls to Office Documents at Run Time](../vsto/adding-controls-to-office-documents-at-run-time.md)  

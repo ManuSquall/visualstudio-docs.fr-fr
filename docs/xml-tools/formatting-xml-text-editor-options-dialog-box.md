@@ -1,37 +1,38 @@
 ---
-title: "Mise en forme, XML, &#201;diteur de texte, bo&#238;te de dialogue Options | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-general"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+title: "Mise en forme, XML, éditeur de texte, boîte de dialogue Options | Documents Microsoft"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-general
+ms.tgt_pltfrm: 
+ms.topic: article
 ms.assetid: bb539b3a-027c-4b2f-906e-403e0e22ba8d
-caps.latest.revision: 2
-author: "kempb"
-ms.author: "kempb"
-manager: "ghogen"
-caps.handback.revision: 2
+caps.latest.revision: "2"
+author: gewarren
+ms.author: gewarren
+manager: ghogen
+ms.openlocfilehash: c6b6a0cbfc0a82bbc827b0a994426ef7e87ced91
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: fr-FR
+ms.lasthandoff: 10/31/2017
 ---
-# Mise en forme, XML, &#201;diteur de texte, bo&#238;te de dialogue Options
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
-
-Cette boîte de dialogue permet de spécifier les paramètres de mise en forme de l'éditeur XML.Vous pouvez accéder à la boîte de dialogue **Options** à partir du menu **Outils**.  
+# <a name="formatting-xml-text-editor-options-dialog-box"></a>Mise en forme, XML, Éditeur de texte, boîte de dialogue Options
+Cette boîte de dialogue permet de spécifier les paramètres de mise en forme de l'éditeur XML. Vous pouvez accéder à la **Options** boîte de dialogue à partir de la **outils** menu.  
   
 > [!NOTE]
->  Ces paramètres ne sont disponibles que lorsque vous sélectionnez le dossier **Éditeur de texte**, le dossier **XML**, puis l'option **Mise en forme** dans la boîte de dialogue **Options**.  
+>  Ces paramètres sont disponibles lorsque vous sélectionnez le **éditeur de texte** dossier, le **XML** dossier, puis le **mise en forme** option à partir de la **Options** boîte de dialogue.  
   
-## Attributs  
- **Conserve la mise en forme manuelle des attributs**  
- Les attributs ne sont pas remis en forme.Il s'agit de la valeur par défaut.  
+## <a name="attributes"></a>Attributs  
+ **Conserver la mise en forme manuelle des attributs**  
+ Les attributs ne sont pas remis en forme. Il s'agit de la valeur par défaut.  
   
 > [!NOTE]
 >  Si les attributs figurent sur plusieurs lignes, l'éditeur met en retrait chaque ligne d'attributs au niveau d'indentation de l'élément parent.  
   
- **Aligne chaque attribut sur une ligne séparée**  
- À partir du deuxième attribut, aligne les attributs verticalement au niveau d'indentation du premier attribut.Le texte XML qui suivant illustre la façon dont les attributs sont alignés.  
+ **Aligner les attributs chacun sur leur propre ligne.**  
+ À partir du deuxième attribut, aligne les attributs verticalement au niveau d'indentation du premier attribut. Le texte XML qui suivant illustre la façon dont les attributs sont alignés.  
   
 ```  
 <item id = "123-A"  
@@ -40,18 +41,18 @@ Cette boîte de dialogue permet de spécifier les paramètres de mise en forme d
 </item>  
 ```  
   
-## Remise en forme automatique  
- **En collant le contenu du Presse\-papiers**  
- Remet en forme le texte XML collé à partir du Presse\-papiers.  
+## <a name="auto-reformat"></a>Remise en forme automatique  
+ **Lors du collage à partir du Presse-papiers**  
+ Remet en forme le texte XML collé à partir du Presse-papiers.  
   
- **Après la balise de fin**  
- Remet l'élément en forme après la balise de fin.  
+ **À la fin de la balise de fin**  
+ Remet l’élément en forme après l’étiquette de fin.  
   
-## Contenu mixte  
+## <a name="mixed-content"></a>Contenu mixte  
  **Conserve le contenu mixte par défaut**  
- Détermine si l'éditeur remet en forme un contenu mixte.Par défaut, l'éditeur tente de remettre en forme le contenu mixte, sauf lorsque celui\-ci se trouve dans une portée `xml:space="preserve"`.  
+ Détermine si l'éditeur remet en forme un contenu mixte. Par défaut, l'éditeur tente de remettre en forme le contenu mixte, sauf lorsque celui-ci se trouve dans une portée `xml:space="preserve"`.  
   
- Si un élément contient un mélange de texte et de balises, ce contenu est considéré comme mixte.Voici un exemple d'élément avec un contenu mixte.  
+ Si un élément contient un mélange de texte et de balises, ce contenu est considéré comme mixte. Voici un exemple d'élément avec un contenu mixte.  
   
 ```  
 <dir>c:\data\AlphaProject\  
@@ -60,6 +61,6 @@ Cette boîte de dialogue permet de spécifier les paramètres de mise en forme d
 </dir>  
 ```  
   
-## Voir aussi  
+## <a name="see-also"></a>Voir aussi  
  [Propriétés des documents XML, fenêtre Propriétés](../xml-tools/xml-document-properties-properties-window.md)   
- [Composants de l'éditeur XML](../xml-tools/xml-editor-components.md)
+ [Composants de l’éditeur XML](../xml-tools/xml-editor-components.md)

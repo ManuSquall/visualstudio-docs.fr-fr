@@ -1,46 +1,29 @@
 ---
-title: IDebugProgramEngines2::EnumPossibleEngines | Microsoft Docs
+title: IDebugProgramEngines2::EnumPossibleEngines | Documents Microsoft
 ms.custom: 
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-sdk
+ms.technology: vs-ide-sdk
 ms.tgt_pltfrm: 
 ms.topic: article
-f1_keywords:
-- IDebugProgramEngines2::EnumPossibleEngines
-helpviewer_keywords:
-- IDebugProgramEngines2::EnumPossibleEngines
+f1_keywords: IDebugProgramEngines2::EnumPossibleEngines
+helpviewer_keywords: IDebugProgramEngines2::EnumPossibleEngines
 ms.assetid: 993d70a4-f6a5-4e47-a603-0b162b9fde00
-caps.latest.revision: 10
+caps.latest.revision: "10"
+author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-translation.priority.mt:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
+ms.openlocfilehash: d1cf3eead4b268dbbca5ad4333adcc647522b051
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
 ms.translationtype: MT
-ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
-ms.openlocfilehash: 64431c8adeeb56c17546f4aa6c16f517734f8941
-ms.contentlocale: fr-fr
-ms.lasthandoff: 08/28/2017
-
+ms.contentlocale: fr-FR
+ms.lasthandoff: 10/31/2017
 ---
 # <a name="idebugprogramengines2enumpossibleengines"></a>IDebugProgramEngines2::EnumPossibleEngines
-Returns the GUIDs for all the possible debug engines (DE) that can debug this program.  
+Retourne les GUID de tous les moteurs de débogage possible (DE) qui peuvent déboguer ce programme.  
   
-## <a name="syntax"></a>Syntax  
+## <a name="syntax"></a>Syntaxe  
   
 ```cpp  
 HRESULT EnumPossibleEngines(   
@@ -58,21 +41,21 @@ int EnumPossibleEngines(
 );  
 ```  
   
-#### <a name="parameters"></a>Parameters  
+#### <a name="parameters"></a>Paramètres  
  `celtBuffer`  
- [in] The number of DE GUIDs to return. This also specifies the maximum size of the `rgguidEngines` array.  
+ [in] Le nombre de GUID DE à retourner. Il spécifie également la taille maximale de la `rgguidEngines` tableau.  
   
  `rgguidEngines`  
- [in, out] An array of DE GUIDs to be filled in.  
+ [dans, out] Un tableau de GUID DE doit être renseigné.  
   
  `pceltEngines`  
- [out] Returns the actual number of DE GUIDs that are returned.  
+ [out] Retourne le nombre réel de GUID DE qui sont retournées.  
   
-## <a name="return-value"></a>Return Value  
- If successful, returns `S_OK`; otherwise, returns an error code. Returns [C++] `HRESULT_FROM_WIN32(ERROR_INSUFFICIENT_BUFFER)` or [C#] 0x8007007A if the buffer is not large enough.  
+## <a name="return-value"></a>Valeur de retour  
+ En cas de réussite, retourne `S_OK`; sinon, retourne un code d’erreur. Retourne (C++) `HRESULT_FROM_WIN32(ERROR_INSUFFICIENT_BUFFER)` ou [c#] 0x8007007A si la mémoire tampon n’est pas assez grande.  
   
-## <a name="remarks"></a>Remarks  
- In order to determine how many engines there are, call this method once with the `celtBuffer` parameter set to 0 and the `rgguidEngines` parameter set to a null value. This returns `HRESULT_FROM_WIN32(ERROR_INSUFFICIENT_BUFFER)` (0x8007007A for C#), and the `pceltEngines` parameter returns the necessary size of the buffer.  
+## <a name="remarks"></a>Remarques  
+ Afin de déterminer le nombre de moteurs est, appelez cette méthode une fois avec le `celtBuffer` paramètre la valeur 0 et le `rgguidEngines` paramètre défini sur une valeur null. Cela retourne `HRESULT_FROM_WIN32(ERROR_INSUFFICIENT_BUFFER)` (0x8007007A pour c#) et le `pceltEngines` paramètre retourne la taille nécessaire de la mémoire tampon.  
   
-## <a name="see-also"></a>See Also  
+## <a name="see-also"></a>Voir aussi  
  [IDebugProgramEngines2](../../../extensibility/debugger/reference/idebugprogramengines2.md)

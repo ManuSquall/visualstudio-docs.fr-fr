@@ -1,46 +1,29 @@
 ---
-title: IDebugField::GetTypeInfo | Microsoft Docs
+title: IDebugField::GetTypeInfo | Documents Microsoft
 ms.custom: 
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-sdk
+ms.technology: vs-ide-sdk
 ms.tgt_pltfrm: 
 ms.topic: article
-f1_keywords:
-- IDebugField::GetTypeInfo
-helpviewer_keywords:
-- IDebugField::GetTypeInfo method
+f1_keywords: IDebugField::GetTypeInfo
+helpviewer_keywords: IDebugField::GetTypeInfo method
 ms.assetid: bb5acfa3-04c3-4088-be84-9ff8926cd16f
-caps.latest.revision: 11
+caps.latest.revision: "11"
+author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-translation.priority.mt:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
+ms.openlocfilehash: 11b04ce148fbfe8129f62c21da0a0b015ed6e8f3
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
 ms.translationtype: MT
-ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
-ms.openlocfilehash: 2baaecd28bfee7534624b77a053efe0a91f10eb1
-ms.contentlocale: fr-fr
-ms.lasthandoff: 08/28/2017
-
+ms.contentlocale: fr-FR
+ms.lasthandoff: 10/31/2017
 ---
 # <a name="idebugfieldgettypeinfo"></a>IDebugField::GetTypeInfo
-This method gets type-independent information about the symbol or type.  
+Cette méthode obtient indépendante du type d’informations sur le symbole ou d’un type.  
   
-## <a name="syntax"></a>Syntax  
+## <a name="syntax"></a>Syntaxe  
   
 ```cpp  
 HRESULT GetTypeInfo(   
@@ -54,17 +37,17 @@ int GetTypeInfo(
 );  
 ```  
   
-#### <a name="parameters"></a>Parameters  
+#### <a name="parameters"></a>Paramètres  
  `pTypeInfo`  
- [out] Returns type information in the supplied [TYPE_INFO](../../../extensibility/debugger/reference/type-info.md) structure.  
+ [out] Retourne de type d’informations dans le [TYPE_INFO](../../../extensibility/debugger/reference/type-info.md) structure.  
   
-## <a name="return-value"></a>Return Value  
- If successful, returns `S_OK`; otherwise, returns an error code.  
+## <a name="return-value"></a>Valeur de retour  
+ En cas de réussite, retourne `S_OK`; sinon, retourne un code d’erreur.  
   
-## <a name="remarks"></a>Remarks  
- Type-independent information would include, for example, the AppDomain, the module, and the class that contains the symbol.  
+## <a name="remarks"></a>Remarques  
+ Les informations de type indépendant inclut, par exemple, le domaine d’application, le module et la classe qui contient le symbole.  
   
-## <a name="see-also"></a>See Also  
+## <a name="see-also"></a>Voir aussi  
  [GetType](../../../extensibility/debugger/reference/idebugfield-gettype.md)   
  [IDebugField](../../../extensibility/debugger/reference/idebugfield.md)   
  [TYPE_INFO](../../../extensibility/debugger/reference/type-info.md)

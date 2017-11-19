@@ -1,46 +1,29 @@
 ---
-title: IDebugField::GetExtendedInfo | Microsoft Docs
+title: IDebugField::GetExtendedInfo | Documents Microsoft
 ms.custom: 
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-sdk
+ms.technology: vs-ide-sdk
 ms.tgt_pltfrm: 
 ms.topic: article
-f1_keywords:
-- IDebugField::GetExtendedInfo
-helpviewer_keywords:
-- IDebugField::GetExtendedInfo method
+f1_keywords: IDebugField::GetExtendedInfo
+helpviewer_keywords: IDebugField::GetExtendedInfo method
 ms.assetid: 46c0dd4d-4fd5-4efd-a908-71e4248e8e8d
-caps.latest.revision: 13
+caps.latest.revision: "13"
+author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-translation.priority.mt:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
+ms.openlocfilehash: a5b52c5634b4b34edf11ddb8a56317cc237063bf
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
 ms.translationtype: MT
-ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
-ms.openlocfilehash: 3610a9e61d6140fee11a6db4a30060fa02207981
-ms.contentlocale: fr-fr
-ms.lasthandoff: 08/28/2017
-
+ms.contentlocale: fr-FR
+ms.lasthandoff: 10/31/2017
 ---
 # <a name="idebugfieldgetextendedinfo"></a>IDebugField::GetExtendedInfo
-This method gets extended information about a field.  
+Cette méthode obtient des informations étendue sur un champ.  
   
-## <a name="syntax"></a>Syntax  
+## <a name="syntax"></a>Syntaxe  
   
 ```cpp  
 HRESULT GetExtendedInfo(   
@@ -58,26 +41,26 @@ int GetExtendedInfo(
 );  
 ```  
   
-#### <a name="parameters"></a>Parameters  
+#### <a name="parameters"></a>Paramètres  
  `guidExtendedInfo`  
- [in] Selects the information to be returned. Valid values are:  
+ [in] Sélectionne les informations à retourner. Les valeurs valides sont les suivantes :  
   
-|Value|Description|  
+|Valeur|Description|  
 |-----------|-----------------|  
-|`guidConstantValue`|The value as a sequence of bytes.|  
-|`guidConstantType`|The type as a type signature.|  
+|`guidConstantValue`|La valeur comme une séquence d’octets.|  
+|`guidConstantType`|Le type en tant qu’une signature de type.|  
   
  `prgBuffer`  
- [out] Returns the extended information.  
+ [out] Retourne les informations étendues.  
   
  `pdwLen`  
- [in, out] Returns the size of the extended information, in bytes.  
+ [dans, out] Retourne la taille des informations étendues, en octets.  
   
-## <a name="return-value"></a>Return Value  
- If successful, returns `S_OK`; otherwise, returns an error code.  
+## <a name="return-value"></a>Valeur de retour  
+ En cas de réussite, retourne `S_OK`; sinon, retourne un code d’erreur.  
   
-## <a name="remarks"></a>Remarks  
- Currently, this method returns only the type or value of a constant. The caller must free the buffer returned in `prgBuffer` by calling COM's `CoTaskMemFree` function (C++) or <xref:System.Runtime.InteropServices.Marshal.FreeCoTaskMem%2A> (C#).  
+## <a name="remarks"></a>Remarques  
+ Actuellement, cette méthode retourne uniquement le type ou la valeur d’une constante. L’appelant doit libérer la mémoire tampon retournée dans `prgBuffer` par un appel de COM `CoTaskMemFree` (fonction) (C++) ou <xref:System.Runtime.InteropServices.Marshal.FreeCoTaskMem%2A> (c#).  
   
-## <a name="see-also"></a>See Also  
+## <a name="see-also"></a>Voir aussi  
  [IDebugField](../../../extensibility/debugger/reference/idebugfield.md)

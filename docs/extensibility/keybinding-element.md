@@ -1,71 +1,78 @@
 ---
-title: "&#201;l&#233;ment de KeyBinding | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-helpviewer_keywords: 
-  - "Éléments du schéma XML de VSCT, thèmes"
-  - "KeyBinding, élément (schéma XML de VSCT)"
+title: "Élément de la combinaison de touches | Documents Microsoft"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+helpviewer_keywords:
+- VSCT XML schema elements, KeyBindings
+- KeyBinding element (VSCT XML schema)
 ms.assetid: e55a1098-15df-42a9-9f87-e3a99cf437dd
-caps.latest.revision: 12
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 12
+caps.latest.revision: "12"
+author: gregvanl
+ms.author: gregvanl
+manager: ghogen
+ms.openlocfilehash: 2f620d895defbeeb3317f4a977db454a14ce3adc
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: fr-FR
+ms.lasthandoff: 10/31/2017
 ---
-# &#201;l&#233;ment de KeyBinding
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
-
-L'élément KeyBinding indique les raccourcis clavier des commandes.  
+# <a name="keybinding-element"></a>Élément de la combinaison de touches
+L’élément de la combinaison de touches Spécifie les raccourcis clavier pour les commandes.  
   
- Commandes peuvent avoir un ou deux combinaisons de touches associées. Un exemple d'une liaison de clé unique est CTRL \+ S pour le **Enregistrer** commande. Les combinaisons de touches doubles nécessitent deux combinaisons de touches successives pour déclencher une commande. Un exemple d'une liaison de clé double est CTRL \+ K,CTRL \+ K pour définir un signet.  
+ Commandes peuvent avoir un ou deux combinaisons de touches qui s’y rapportent. Un exemple d’une liaison de clé unique est CTRL + S pour le **enregistrer** commande. Combinaisons de touches doubles nécessitent deux combinaisons de touches successives pour déclencher une commande. Un exemple d’une liaison de clé double est CTRL + K, CTRL + K pour définir un signet.  
   
-## Syntaxe  
+## <a name="syntax"></a>Syntaxe  
   
 ```  
 <Keybinding guid="MyGuid" id="MyId" Editor="MyEditor" key1="B" key2="x" mod1="Control" mod2="Alt" />  
 ```  
   
-## Attributs et éléments  
+## <a name="attributes-and-elements"></a>Attributs et éléments  
  Les sections suivantes décrivent des attributs, des éléments enfants et des éléments parents.  
   
-### Attributs  
+### <a name="attributes"></a>Attributs  
   
 |Attribut|Description|  
-|--------------|-----------------|  
+|---------------|-----------------|  
 |GUID|Obligatoire.|  
 |ID|Obligatoire.|  
-|éditeur|Obligatoire. L'éditeur de GUID indique le contexte d'édition pour lequel ce raccourci clavier est actif. La valeur de la portée globale de liaison est « guidVSStd97 ».|  
-|Key1|Obligatoire. Les valeurs valides incluent tous les caractères alphanumériques peut être tapée, ainsi que les valeurs hexadécimales à deux chiffres précédés par 0 x et VK\_constants.|  
-|MOD1|Facultatif. N'importe quelle combinaison de touches CTRL, ALT et MAJ séparés par un espace.|  
-|Key2|Facultatif. Les valeurs valides incluent tous les caractères alphanumériques peut être tapée, ainsi que les valeurs hexadécimales à deux chiffres précédés par 0 x et VK\_constants.|  
-|MOD2|Facultatif. N'importe quelle combinaison de touches CTRL, ALT et MAJ séparés par un espace.|  
+|éditeur|Obligatoire. Le GUID de l’éditeur indique le contexte d’édition pour lequel ce raccourci clavier est actif. La valeur de la portée globale de liaison est « guidVSStd97 ».|  
+|key1|Obligatoire. Les valeurs valides sont peut être tapées tous les caractères alphanumériques, ainsi que les valeurs hexadécimales à deux chiffres précédés par 0 x et [VK_constants](https://msdn.microsoft.com/en-us/library/windows/desktop/dd375731.aspx).|  
+|MOD1|Facultatif. N’importe quelle combinaison de touches CTRL, ALT et MAJ séparés par un espace.|  
+|key2|Facultatif. Les valeurs valides sont peut être tapées tous les caractères alphanumériques, ainsi que les valeurs hexadécimales à deux chiffres précédés par 0 x et [VK_constants](https://msdn.microsoft.com/en-us/library/windows/desktop/dd375731.aspx).|  
+|MOD2|Facultatif. N’importe quelle combinaison de touches CTRL, ALT et MAJ séparés par un espace.|  
 |émulateur|Facultatif.|  
-|Condition|Facultatif. Consultez [Attributs conditionnels](../extensibility/vsct-xml-schema-conditional-attributes.md).|  
+|Condition|Facultatif. Consultez [attributs conditionnels](../extensibility/vsct-xml-schema-conditional-attributes.md).|  
   
-### Éléments enfants  
+### <a name="child-elements"></a>Éléments enfants  
   
 |Élément|Description|  
 |-------------|-----------------|  
 |Parent||  
 |Annotation||  
   
-### Éléments parents  
+### <a name="parent-elements"></a>Éléments parents  
   
 |Élément|Description|  
 |-------------|-----------------|  
-|[Élément de thèmes](../extensibility/keybindings-element.md)|Regroupe les éléments KeyBinding et autres regroupements de thèmes.|  
+|[Élément KeyBindings](../extensibility/keybindings-element.md)|Regroupe les éléments de combinaison de touches et autres regroupements de combinaisons de touches.|  
   
-## Exemple  
+## <a name="example"></a>Exemple  
   
 ```  
-<KeyBindings> <KeyBinding guid="guidWidgetPackage" id="cmdidUpdateWidget" editor="guidWidgetEditor" key1="VK_F5"/> <KeyBinding guid="guidWidgetPackage" id="cmdidRunWidget" editor="guidWidgetEditor" key1="VK_F5" mod1="Control"/> </KeyBindings>  
+<KeyBindings>  
+  <KeyBinding guid="guidWidgetPackage" id="cmdidUpdateWidget"   
+    editor="guidWidgetEditor" key1="VK_F5"/>  
+  <KeyBinding guid="guidWidgetPackage" id="cmdidRunWidget"   
+    editor="guidWidgetEditor" key1="VK_F5" mod1="Control"/>  
+</KeyBindings>  
 ```  
   
-## Voir aussi  
- [Élément de thèmes](../extensibility/keybindings-element.md)   
- [Table de commandes de Visual Studio \(. Fichiers VSCT\)](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)
+## <a name="see-also"></a>Voir aussi  
+ [Élément de combinaisons de touches](../extensibility/keybindings-element.md)   
+ [Fichiers Visual Studio Command Table (.Vsct)](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)

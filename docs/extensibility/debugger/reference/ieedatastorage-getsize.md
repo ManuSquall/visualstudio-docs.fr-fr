@@ -1,46 +1,29 @@
 ---
-title: IEEDataStorage::GetSize | Microsoft Docs
+title: IEEDataStorage::GetSize | Documents Microsoft
 ms.custom: 
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-sdk
+ms.technology: vs-ide-sdk
 ms.tgt_pltfrm: 
 ms.topic: article
-f1_keywords:
-- IEEDataStorage::GetSize
-helpviewer_keywords:
-- IEEDataStorage::GetSize
+f1_keywords: IEEDataStorage::GetSize
+helpviewer_keywords: IEEDataStorage::GetSize
 ms.assetid: 33d232c4-1239-4abc-922b-e1bc5b908169
-caps.latest.revision: 11
+caps.latest.revision: "11"
+author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-translation.priority.mt:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
+ms.openlocfilehash: dd0ec398877a581109f864411ede684147e86ebd
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
 ms.translationtype: MT
-ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
-ms.openlocfilehash: 44d3e81a06a05ae330044d8466aaad1a53faf8cc
-ms.contentlocale: fr-fr
-ms.lasthandoff: 08/28/2017
-
+ms.contentlocale: fr-FR
+ms.lasthandoff: 10/31/2017
 ---
 # <a name="ieedatastoragegetsize"></a>IEEDataStorage::GetSize
-Returns the number of bytes contained in this object.  
+Retourne le nombre d’octets contenus dans cet objet.  
   
-## <a name="syntax"></a>Syntax  
+## <a name="syntax"></a>Syntaxe  
   
 ```cpp  
 HRESULT GetSize(  
@@ -54,16 +37,16 @@ int GetSize(
 );  
 ```  
   
-#### <a name="parameters"></a>Parameters  
+#### <a name="parameters"></a>Paramètres  
  `size`  
- [out] The number of bytes contained in this object.  
+ [out] Le nombre d’octets contenus dans cet objet.  
   
-## <a name="return-value"></a>Return Value  
- If successful, returns `S_OK`; otherwise, returns an error code.  
+## <a name="return-value"></a>Valeur de retour  
+ En cas de réussite, retourne `S_OK`; sinon, retourne un code d’erreur.  
   
-## <a name="remarks"></a>Remarks  
- Use the [GetData](../../../extensibility/debugger/reference/ieedatastorage-getdata.md) method to retrieve the actual data bytes.  
+## <a name="remarks"></a>Remarques  
+ Utilisez le [GetData](../../../extensibility/debugger/reference/ieedatastorage-getdata.md) pour récupérer les octets de données réelles.  
   
-## <a name="see-also"></a>See Also  
+## <a name="see-also"></a>Voir aussi  
  [IEEDataStorage](../../../extensibility/debugger/reference/ieedatastorage.md)   
  [GetData](../../../extensibility/debugger/reference/ieedatastorage-getdata.md)

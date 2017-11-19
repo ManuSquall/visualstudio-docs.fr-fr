@@ -1,46 +1,29 @@
 ---
-title: INTERCEPT_EXCEPTION_ACTION | Microsoft Docs
+title: INTERCEPT_EXCEPTION_ACTION | Documents Microsoft
 ms.custom: 
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-sdk
+ms.technology: vs-ide-sdk
 ms.tgt_pltfrm: 
 ms.topic: article
-f1_keywords:
-- INTERCEPT_EXCEPTION_ACTION
-helpviewer_keywords:
-- INTERCEPT_EXCEPTION_ACTION enumeration
+f1_keywords: INTERCEPT_EXCEPTION_ACTION
+helpviewer_keywords: INTERCEPT_EXCEPTION_ACTION enumeration
 ms.assetid: e647f1eb-2932-4447-8c78-3b0d706fb972
-caps.latest.revision: 9
+caps.latest.revision: "9"
+author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-translation.priority.mt:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
+ms.openlocfilehash: a6804e4991c8707e619c96d6945d120b2fb37ffb
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
 ms.translationtype: MT
-ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
-ms.openlocfilehash: 71aa2ad915e78d695f9f714a6d4c9b6cd1ae4cfb
-ms.contentlocale: fr-fr
-ms.lasthandoff: 08/28/2017
-
+ms.contentlocale: fr-FR
+ms.lasthandoff: 10/31/2017
 ---
 # <a name="interceptexceptionaction"></a>INTERCEPT_EXCEPTION_ACTION
-Specifies what actions to take when intercepting exceptions.  
+Spécifie les actions à effectuer lors de l’interception des exceptions.  
   
-## <a name="syntax"></a>Syntax  
+## <a name="syntax"></a>Syntaxe  
   
 ```cpp  
 enum enum_INTERCEPT_EXCEPTION_ACTION  
@@ -57,20 +40,20 @@ public enum enum_INTERCEPT_EXCEPTION_ACTION
 }  
 ```  
   
-#### <a name="parameters"></a>Parameters  
+#### <a name="parameters"></a>Paramètres  
  IEA_INTERCEPT  
- Enables intercepting the current exception. This is the only value supported at present and must be specified.  
+ Permet d’intercepter l’exception actuelle. Ceci est la seule valeur prise en charge à l’heure actuelle et doit être spécifié.  
   
-## <a name="remarks"></a>Remarks  
- These values are passed into the [InterceptCurrentException](../../../extensibility/debugger/reference/idebugstackframe3-interceptcurrentexception.md) method.  
+## <a name="remarks"></a>Remarques  
+ Ces valeurs sont passées dans le [InterceptCurrentException](../../../extensibility/debugger/reference/idebugstackframe3-interceptcurrentexception.md) (méthode).  
   
-## <a name="requirements"></a>Requirements  
- Header: msdbg.h  
+## <a name="requirements"></a>Spécifications  
+ En-tête : msdbg.h  
   
- Namespace: Microsoft.VisualStudio.Debugger.Interop  
+ Namespace : Microsoft.VisualStudio.Debugger.Interop  
   
- Assembly: Microsoft.VisualStudio.Debugger.Interop.dll  
+ Assembly : Microsoft.VisualStudio.Debugger.Interop.dll  
   
-## <a name="see-also"></a>See Also  
- [Enumerations](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)   
+## <a name="see-also"></a>Voir aussi  
+ [Énumérations](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)   
  [InterceptCurrentException](../../../extensibility/debugger/reference/idebugstackframe3-interceptcurrentexception.md)
