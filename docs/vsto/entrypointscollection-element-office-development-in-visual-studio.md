@@ -1,32 +1,34 @@
 ---
-title: "&lt;entryPoint&gt;, &#233;l&#233;ment (d&#233;veloppement Office dans Visual Studio)"
-ms.custom: ""
-ms.date: "02/02/2017"
-ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "office-development"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-dev_langs: 
-  - "VB"
-  - "CSharp"
-helpviewer_keywords: 
-  - "<EntryPointsCollection>, élément"
-  - "manifestes d’application (développement Office dans Visual Studio), élément <entryPointsCollection>"
-  - "entryPointsCollection, élément"
+title: "&lt;entryPointsCollection&gt; élément (développement Office dans Visual Studio) | Documents Microsoft"
+ms.custom: 
+ms.date: 02/02/2017
+ms.reviewer: 
+ms.suite: 
+ms.technology: office-development
+ms.tgt_pltfrm: 
+ms.topic: article
+dev_langs:
+- VB
+- CSharp
+helpviewer_keywords:
+- <entryPointsCollection> element
+- application manifests [Office development in Visual Studio], <entryPointsCollection> element
+- entryPointsCollection element
 ms.assetid: da386d67-e45f-467c-a9ba-9b8451b520eb
-caps.latest.revision: 18
-author: "kempb"
-ms.author: "kempb"
-manager: "ghogen"
-caps.handback.revision: 14
+caps.latest.revision: "18"
+author: gewarren
+ms.author: gewarren
+manager: ghogen
+ms.openlocfilehash: 3c8bdc3930e09dce6607df10f9d8db004f9a3f2a
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: fr-FR
+ms.lasthandoff: 10/31/2017
 ---
-# &lt;entryPoint&gt;, &#233;l&#233;ment (d&#233;veloppement Office dans Visual Studio)
-  L’élément `entryPointsCollection` de l’espace de noms `vstav3`  contient tous les éléments `entryPoints` associés aux solutions Office.  
+# <a name="ltentrypointscollectiongt-element-office-development-in-visual-studio"></a>&lt;entryPointsCollection&gt; élément (développement Office dans Visual Studio)
+  L’élément `entryPointsCollection` de l’espace de noms `vstav3` contient tous les éléments `entryPoints` associés aux solutions Office.  
   
-## Syntaxe  
+## <a name="syntax"></a>Syntaxe  
   
 ```  
 <entryPointsCollection>  
@@ -41,52 +43,145 @@ caps.handback.revision: 14
 </entryPointsCollection>  
 ```  
   
-## Éléments et attributs  
- L’élément `entryPointsCollection` est obligatoire et se trouve dans l’espace de noms `vstav3`. Les éléments enfants doivent aussi se trouver dans cet espace de noms. Un seul élément `entryPointsCollection` est défini dans un manifeste d’application.  
+## <a name="elements-and-attributes"></a>Éléments et attributs  
+ L’élément `entryPointsCollection` est obligatoire et se trouve dans l’espace de noms `vstav3` . Les éléments enfants doivent aussi se trouver dans cet espace de noms. Un seul élément `entryPointsCollection` est défini dans un manifeste d’application.  
   
  L’élément `entryPointsCollection` ne comporte pas d’attributs.  
   
  `entryPointsCollection` comporte les éléments suivants.  
   
-### entryPoints  
- Obligatoire. Le rôle de l’élément `entryPoints` dans l’espace de noms `vstav3`  est défini dans [Élément &#60;entryPoint&#62; &#40;développement Office dans Visual Studio&#41;](../vsto/entrypoints-element-office-development-in-visual-studio.md).  
+### <a name="entrypoints"></a>entryPoints  
+ Obligatoire. Le rôle de la `entryPoints` élément dans le `vstav3` espace de noms est défini dans [&#60; entryPoints &#62; Élément &#40; développement Office dans Visual Studio &#41; ](../vsto/entrypoints-element-office-development-in-visual-studio.md).  
   
-## Exemple de personnalisation au niveau du document  
+## <a name="document-level-customization-example"></a>Exemple de personnalisation au niveau du document  
   
-### Description  
- L’exemple de code suivant illustre l’élément `entryPointsCollection` d’un manifeste d’application pour une solution au niveau du document déployée à l’aide de [!INCLUDE[ndptecclick](../vsto/includes/ndptecclick-md.md)]. Cet exemple de code fait partie d’un exemple plus complet fourni dans [Manifestes d'application pour les solutions Office](../vsto/application-manifests-for-office-solutions.md).  
+### <a name="description"></a>Description  
+ L’exemple de code suivant illustre l’élément `entryPointsCollection` d’un manifeste d’application pour une solution au niveau du document déployée à l’aide de [!INCLUDE[ndptecclick](../vsto/includes/ndptecclick-md.md)]. Cet exemple de code fait partie d’un exemple plus complet fourni dans [Application Manifests for Office Solutions](../vsto/application-manifests-for-office-solutions.md).  
   
-### Code  
-  
-```  
-<vstav3:entryPointsCollection> <vstav3:entryPoints> <vstav3:entryPoint class="ContosoExcelWorkbook.ThisWorkbook"> <assemblyIdentity name="ContosoExcelWorkbook" version="1.0.0.0" language="neutral" processorArchitecture="msil" /> </vstav3:entryPoint> <vstav3:entryPoint class="ContosoExcelWorkbook.Sheet1"> <assemblyIdentity name="ContosoExcelWorkbook" version="1.0.0.0" language="neutral" processorArchitecture="msil" /> </vstav3:entryPoint> <vstav3:entryPoint class="ContosoExcelWorkbook.Sheet2"> <assemblyIdentity name="ContosoExcelWorkbook" version="1.0.0.0" language="neutral" processorArchitecture="msil" /> </vstav3:entryPoint> <vstav3:entryPoint class="ContosoExcelWorkbook.Sheet3"> <assemblyIdentity name="ContosoExcelWorkbook" version="1.0.0.0" language="neutral" processorArchitecture="msil" /> </vstav3:entryPoint> </vstav3:entryPoints> </vstav3:entryPointsCollection>  
-```  
-  
-## Exemple de complément VSTO  
-  
-### Description  
- L’exemple de code suivant illustre l’élément `entryPointsCollection` d’un manifeste d’application pour une solution au niveau du document déployée à l’aide de [!INCLUDE[ndptecclick](../vsto/includes/ndptecclick-md.md)]. Cet exemple de code fait partie d’un exemple plus complet fourni dans [Manifestes d'application pour les solutions Office](../vsto/application-manifests-for-office-solutions.md).  
-  
-### Code  
+### <a name="code"></a>Code  
   
 ```  
-<vstav3:entryPointsCollection> <vstav3:entryPoints> <vstav3:entryPoint class="ContosoOutlookAddIn.ThisAddIn"> <assemblyIdentity name="ContosoOutlookAddIn" version="1.0.0.0" language="neutral" processorArchitecture="msil" /> </vstav3:entryPoint> </vstav3:entryPoints> </vstav3:entryPointsCollection>  
+<vstav3:entryPointsCollection>  
+    <vstav3:entryPoints>  
+      <vstav3:entryPoint   
+        class="ContosoExcelWorkbook.ThisWorkbook">  
+        <assemblyIdentity   
+          name="ContosoExcelWorkbook"   
+          version="1.0.0.0"   
+          language="neutral"   
+          processorArchitecture="msil" />  
+      </vstav3:entryPoint>  
+      <vstav3:entryPoint   
+        class="ContosoExcelWorkbook.Sheet1">  
+        <assemblyIdentity   
+          name="ContosoExcelWorkbook"   
+          version="1.0.0.0"   
+          language="neutral"   
+          processorArchitecture="msil" />  
+      </vstav3:entryPoint>  
+      <vstav3:entryPoint   
+        class="ContosoExcelWorkbook.Sheet2">  
+        <assemblyIdentity   
+          name="ContosoExcelWorkbook"   
+          version="1.0.0.0"   
+          language="neutral"   
+          processorArchitecture="msil" />  
+      </vstav3:entryPoint>  
+      <vstav3:entryPoint   
+        class="ContosoExcelWorkbook.Sheet3">  
+        <assemblyIdentity   
+          name="ContosoExcelWorkbook"   
+          version="1.0.0.0"   
+          language="neutral"   
+          processorArchitecture="msil" />  
+      </vstav3:entryPoint>  
+    </vstav3:entryPoints>  
+  </vstav3:entryPointsCollection>  
 ```  
   
-## Exemple de déploiement de plusieurs projets  
+## <a name="vsto-add-in-example"></a>Exemple de complément VSTO  
   
-### Description  
- L’exemple de code suivant illustre un élément `entryPointsCollection` de manifeste d’application pour le déploiement de plusieurs projets contenant deux solutions Office. Cet exemple de code fait partie d’un exemple plus complet fourni dans [Manifestes d'application pour les solutions Office](../vsto/application-manifests-for-office-solutions.md).  
+### <a name="description"></a>Description  
+ L’exemple de code suivant illustre l’élément `entryPointsCollection` d’un manifeste d’application pour une solution au niveau du document déployée à l’aide de [!INCLUDE[ndptecclick](../vsto/includes/ndptecclick-md.md)]. Cet exemple de code fait partie d’un exemple plus complet fourni dans [Application Manifests for Office Solutions](../vsto/application-manifests-for-office-solutions.md).  
   
-### Code  
+### <a name="code"></a>Code  
   
 ```  
-<vstav3:entryPointsCollection> <vstav3:entryPoints id="ContosoExcel"> <vstav3:entryPoint class="ContosoExcelWorkbook.ThisWorkbook"> <assemblyIdentity name="ContosoExcelWorkbook" version="1.0.0.0" language="neutral" processorArchitecture="msil" /> </vstav3:entryPoint> <vstav3:entryPoint class="ContosoExcelWorkbook.Sheet1"> <assemblyIdentity name="ContosoExcelWorkbook" version="1.0.0.0" language="neutral" processorArchitecture="msil" /> </vstav3:entryPoint> <vstav3:entryPoint class="ContosoExcelWorkbook.Sheet2"> <assemblyIdentity name="ContosoExcelWorkbook" version="1.0.0.0" language="neutral" processorArchitecture="msil" /> </vstav3:entryPoint> <vstav3:entryPoint class="ContosoExcelWorkbook.Sheet3"> <assemblyIdentity name="ContosoExcelWorkbook" version="1.0.0.0" language="neutral" processorArchitecture="msil" /> </vstav3:entryPoint> </vstav3:entryPoints> <vstav3:entryPoints id="ContosoOutlook"> <vstav3:entryPoint class="ContosoOutlookAddIn.ThisAddIn"> <assemblyIdentity name="ContosoOutlookAddIn" version="1.0.0.0" language="neutral" processorArchitecture="msil" /> </vstav3:entryPoint> </vstav3:entryPoints> </vstav3:entryPointsCollection>  
+<vstav3:entryPointsCollection>  
+    <vstav3:entryPoints>  
+      <vstav3:entryPoint   
+        class="ContosoOutlookAddIn.ThisAddIn">  
+        <assemblyIdentity   
+          name="ContosoOutlookAddIn"   
+          version="1.0.0.0"   
+          language="neutral"   
+          processorArchitecture="msil" />  
+      </vstav3:entryPoint>  
+    </vstav3:entryPoints>  
+  </vstav3:entryPointsCollection>  
 ```  
   
-## Voir aussi  
- [Manifestes d'application pour les solutions Office](../vsto/application-manifests-for-office-solutions.md)   
- [Manifestes de déploiement pour les solutions Office](../vsto/deployment-manifests-for-office-solutions.md)   
- [ClickOnce Application Manifest](../deployment/clickonce-application-manifest.md)  
+## <a name="multi-project-deployment-example"></a>Exemple de déploiement de plusieurs projets  
+  
+### <a name="description"></a>Description  
+ L’exemple de code suivant illustre un élément `entryPointsCollection` de manifeste d’application pour le déploiement de plusieurs projets contenant deux solutions Office. Cet exemple de code fait partie d’un exemple plus complet fourni dans [Application Manifests for Office Solutions](../vsto/application-manifests-for-office-solutions.md).  
+  
+### <a name="code"></a>Code  
+  
+```  
+<vstav3:entryPointsCollection>  
+      <vstav3:entryPoints   
+        id="ContosoExcel">  
+        <vstav3:entryPoint   
+          class="ContosoExcelWorkbook.ThisWorkbook">  
+          <assemblyIdentity   
+            name="ContosoExcelWorkbook"   
+            version="1.0.0.0"   
+            language="neutral"   
+            processorArchitecture="msil" />  
+        </vstav3:entryPoint>  
+        <vstav3:entryPoint   
+          class="ContosoExcelWorkbook.Sheet1">  
+          <assemblyIdentity   
+            name="ContosoExcelWorkbook"   
+            version="1.0.0.0"   
+            language="neutral"   
+            processorArchitecture="msil" />  
+        </vstav3:entryPoint>  
+        <vstav3:entryPoint   
+          class="ContosoExcelWorkbook.Sheet2">  
+          <assemblyIdentity   
+            name="ContosoExcelWorkbook"   
+            version="1.0.0.0"   
+            language="neutral"   
+            processorArchitecture="msil" />  
+        </vstav3:entryPoint>  
+        <vstav3:entryPoint   
+          class="ContosoExcelWorkbook.Sheet3">  
+          <assemblyIdentity   
+            name="ContosoExcelWorkbook"   
+            version="1.0.0.0"   
+            language="neutral"   
+            processorArchitecture="msil" />  
+        </vstav3:entryPoint>  
+      </vstav3:entryPoints>  
+      <vstav3:entryPoints   
+        id="ContosoOutlook">  
+        <vstav3:entryPoint   
+          class="ContosoOutlookAddIn.ThisAddIn">  
+          <assemblyIdentity   
+            name="ContosoOutlookAddIn"   
+            version="1.0.0.0"   
+            language="neutral"   
+            processorArchitecture="msil" />  
+        </vstav3:entryPoint>  
+      </vstav3:entryPoints>  
+    </vstav3:entryPointsCollection>  
+```  
+  
+## <a name="see-also"></a>Voir aussi  
+ [Application Manifests for Office Solutions](../vsto/application-manifests-for-office-solutions.md)   
+ [Manifestes de déploiement pour les Solutions Office](../vsto/deployment-manifests-for-office-solutions.md)   
+ [Manifeste d’application ClickOnce](/visualstudio/deployment/clickonce-application-manifest)  
   
   

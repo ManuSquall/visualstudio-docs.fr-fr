@@ -1,32 +1,34 @@
 ---
-title: "Suppression d&#39;un point d&#39;arr&#234;t | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-helpviewer_keywords: 
-  - "points d'arrêt, suppression"
-  - "débogage (débogage SDK), la suppression des points d'arrêt"
+title: "Suppression d’un point d’arrêt | Documents Microsoft"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+helpviewer_keywords:
+- breakpoints, deleting
+- debugging [Debugging SDK], deleting breakpoints
 ms.assetid: 75a046cc-d20a-4c79-ad2d-1f18426ac5d0
-caps.latest.revision: 7
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 7
+caps.latest.revision: "7"
+author: gregvanl
+ms.author: gregvanl
+manager: ghogen
+ms.openlocfilehash: 2789fd46942a9b54ca3d6efb082a6b21511969ca
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: fr-FR
+ms.lasthandoff: 10/31/2017
 ---
-# Suppression d&#39;un point d&#39;arr&#234;t
-[!INCLUDE[vs2017banner](../../code-quality/includes/vs2017banner.md)]
-
-Les éléments suivants décrivent le processus en supprimant un point d'arrêt en attente :  
+# <a name="deleting-a-breakpoint"></a>Suppression d’un point d’arrêt
+La section suivante décrit le processus lors de la suppression d’un point d’arrêt en attente :  
   
-## Processus de suppression  
- le gestionnaire de débogage de session \(SDM\) appelle la méthode d' [IDebugPendingBreakpoint2 : : suppression](../../extensibility/debugger/reference/idebugpendingbreakpoint2-delete.md) pour supprimer le point d'arrêt en attente et tous points d'arrêt liés liés de lui.  
+## <a name="deletion-process"></a>Processus de suppression  
+ Le Gestionnaire de session de débogage (SDM) appelle le [IDebugPendingBreakpoint2::Delete](../../extensibility/debugger/reference/idebugpendingbreakpoint2-delete.md) méthode pour supprimer le point d’arrêt en attente et les points d’arrêt liés liée à partir de celui-ci.  
   
 > [!NOTE]
->  un point d'arrêt lié unique peut également être supprimé par un appel à [IDebugBoundBreakpoint2 : : suppression](../../extensibility/debugger/reference/idebugboundbreakpoint2-delete.md).  
+>  Un seul point d’arrêt lié peut également être supprimée par un appel à [IDebugBoundBreakpoint2::Delete](../../extensibility/debugger/reference/idebugboundbreakpoint2-delete.md).  
   
-## Voir aussi  
- [Appeler les événements de débogueur](../../extensibility/debugger/calling-debugger-events.md)
+## <a name="see-also"></a>Voir aussi  
+ [Événements d’appel du débogueur](../../extensibility/debugger/calling-debugger-events.md)

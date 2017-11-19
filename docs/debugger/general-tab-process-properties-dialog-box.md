@@ -1,36 +1,36 @@
 ---
-title: "Onglet G&#233;n&#233;ral de la bo&#238;te de dialogue Propri&#233;t&#233;s du processus | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-debug"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-helpviewer_keywords: 
-  - "propriétés du processus pour Windows NT"
+title: "Onglet Général de traiter la boîte de dialogue Propriétés | Documents Microsoft"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-debug
+ms.tgt_pltfrm: 
+ms.topic: article
+helpviewer_keywords: Process properties for Windows NT
 ms.assetid: 86f4d61d-a594-4aac-8960-c5279b4a10fd
-caps.latest.revision: 4
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 4
+caps.latest.revision: "4"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: c9548b35d893fa08458c6254776c8949cc83c510
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: fr-FR
+ms.lasthandoff: 10/31/2017
 ---
-# Onglet G&#233;n&#233;ral de la bo&#238;te de dialogue Propri&#233;t&#233;s du processus
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
-
-Utilisez l'onglet **Général** pour obtenir des informations supplémentaires sur un processus spécifique.  Pour afficher la [boîte de dialogue Propriétés du processus](../debugger/process-properties-dialog-box.md), déplacez le focus sur une fenêtre [Vue Processus](../debugger/processes-view.md).  Sélectionnez n'importe quel nœud de processus dans l'arborescence, puis sélectionnez **Propriétés** dans le menu **Affichage**.  
+# <a name="general-tab-process-properties-dialog-box"></a>Onglet Général de la boîte de dialogue Propriétés du processus
+Utilisez le **général** onglet pour en savoir plus sur un processus spécifique. Pour afficher le [la boîte de dialogue Propriétés du processus](../debugger/process-properties-dialog-box.md), déplacer le focus à un [vue processus](../debugger/processes-view.md) fenêtre. Sélectionnez n’importe quel nœud de processus dans l’arborescence, puis choisissez **propriétés** à partir de la **vue** menu.  
   
- Les paramètres suivants sont disponibles sous l'onglet **Général** :  
+ Les paramètres suivants sont disponibles sur le **général** onglet :  
   
-|Entry|Description|  
+|Entrée|Description|  
 |-----------|-----------------|  
-|**Nom de module**|Nom du module.|  
-|**ID de processus**|ID unique de ce processus.  Les numéros d'ID de processus sont réutilisés. Ainsi, ils identifient un processus uniquement pour la durée de vie de ce processus.  Le type d'objet Process est créé lorsqu'un programme est exécuté.  Tous les threads d'un processus partagent le même espace d'adressage et ont accès aux mêmes données.|  
-|**Priorité de base**|Priorité de base actuelle de ce processus.  Les threads d'un processus peuvent élever et abaisser leur propre priorité de base par rapport à la priorité de base du processus.|  
-|**Threads**|Nombre de threads actifs dans ce processus.|  
-|**Temps CPU**|Temps processeur total consacré à ce processus et à ses threads.  Équivaut à Temps utilisateur \+ Temps privilégié.|  
-|**Temps utilisateur**|Temps cumulé consacré par les threads de ce processus à l'exécution du code en mode utilisateur dans des threads non inactifs.  Les applications s'exécutent en mode utilisateur, à l'instar des sous\-systèmes comme le Gestionnaire de fenêtrage et le moteur graphique.|  
-|**Temps privilégié**|Durée totale \(en secondes\) d'exécution de ce processus en mode privilégié dans des threads non inactifs.  La couche Service, les routines exécutives et le noyau s'exécutent en mode privilégié.  Les pilotes de la plupart des périphériques autres que les cartes graphiques et les imprimantes s'exécutent également en mode privilégié.  Certaines tâches exécutées par Windows pour votre application peuvent apparaître dans d'autres processus sous\-système en plus du temps privilégié.|  
-|**Temps écoulé**|Durée totale d'exécution de ce processus.|
+|**Nom du module**|Nom du module.|  
+|**ID du processus**|ID unique de ce processus. Les numéros d’ID de processus sont réutilisés ils identifient un processus uniquement pour la durée de vie de ce processus. Le type d’objet Process est créé lorsqu’un programme est exécuté. Tous les threads dans un processus partagent le même espace d’adressage et ont accès aux mêmes données.|  
+|**Priorité de Base**|La priorité de base actuelle de ce processus. Threads d’un processus peuvent augmenter et réduire leur propre priorité de base par rapport à la priorité de base du processus.|  
+|**Threads**|Le nombre de threads actuellement actifs dans ce processus.|  
+|**Temps processeur**|Temps processeur total passé sur ce processus et ses threads. Égal à temps utilisateur + temps privilégié.|  
+|**Temps utilisateur**|Le temps total que les threads de ce processus ont passé à exécuter du code en Mode utilisateur dans des threads non inactifs. Applications s’exécutent en Mode utilisateur, tout comme les sous-systèmes tels que le Gestionnaire de fenêtrage et le moteur graphique.|  
+|**Temps privilégié**|Le temps total écoulé ce processus a été démarré en Mode privilégié dans des threads non inactifs. La couche de service, les routines Executive et le noyau s’exécutent en Mode privilégié. Pilotes de périphérique pour la plupart des périphériques autres que les cartes graphiques et les imprimantes s’exécutent également en Mode privilégié. Certaines tâches exécutées par Windows pour votre application peuvent apparaître dans d’autres processus de sous-système en plus du temps privilégié.|  
+|**Temps écoulé**|Le temps total écoulé que ce processus a été exécuté.|

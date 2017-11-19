@@ -1,52 +1,51 @@
 ---
-title: "IDiaSymbol::get_targetVirtualAddress | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-debug"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "IDiaSymbol::get_targetVirtualAddress (méthode)"
+title: IDiaSymbol::get_targetVirtualAddress | Documents Microsoft
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-debug
+ms.tgt_pltfrm: 
+ms.topic: article
+dev_langs: C++
+helpviewer_keywords: IDiaSymbol::get_targetVirtualAddress method
 ms.assetid: a0a5ce72-95f8-443e-bb4b-8c21194faad0
-caps.latest.revision: 10
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 10
+caps.latest.revision: "10"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: 47808005cc2cd6e7e7577218936f029a8770623b
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: fr-FR
+ms.lasthandoff: 10/31/2017
 ---
-# IDiaSymbol::get_targetVirtualAddress
-[!INCLUDE[vs2017banner](../../code-quality/includes/vs2017banner.md)]
-
-Récupère l'adresse virtuelle \(VA\) d'une cible de conversion de code.  
+# <a name="idiasymbolgettargetvirtualaddress"></a>IDiaSymbol::get_targetVirtualAddress
+Récupère l’adresse virtuelle (VA) d’une cible de la conversion de code.  
   
-## Syntaxe  
+## <a name="syntax"></a>Syntaxe  
   
-```cpp#  
-HRESULT get_targetVirtualAddress (   
-   ULONGLONG* pRetVal  
+```C++  
+HRESULT get_targetVirtualAddress (   
+   ULONGLONG* pRetVal  
 );  
 ```  
   
-#### Paramètres  
+#### <a name="parameters"></a>Paramètres  
  `pRetVal`  
- \[out\]  Retourne le VA d'une cible de conversion de code.  
+ [out] Retourne l’évaluation d’une cible de la conversion de code.  
   
-## Valeur de retour  
- En cas de réussite, retourne `S_OK`; sinon, retourne `S_FALSE` ou un code d'erreur.  
+## <a name="return-value"></a>Valeur de retour  
+ En cas de réussite, retourne `S_OK`; sinon, retourne `S_FALSE` ou un code d’erreur.  
   
 > [!NOTE]
->  Une valeur de retour d' `S_FALSE` signifie que la propriété n'est pas disponible pour le symbole.  
+>  La valeur de retour `S_FALSE` signifie que la propriété n’est pas disponible pour le symbole.  
   
-## Notes  
- Cette propriété est valide uniquement si le symbole comme valeur de [SymTagEnum, énumération](../../debugger/debug-interface-access/symtagenum.md) d' `SymTagThunk`.  
+## <a name="remarks"></a>Remarques  
+ Cette propriété est valide uniquement si le symbole en tant qu’un [SymTagEnum (énumération)](../../debugger/debug-interface-access/symtagenum.md) valeur `SymTagThunk`.  
   
- Une « conversion de code » est un peu de code qui convertit entre une espace adresse d'adresse mémoire 32 bits \(également appelée l'espace d'adressage en deux dimensions\) et un espace d'adressage 16 bits \(appelé un espace d'adressage segmenté\).  
+ Une conversion de « code » est un fragment de code qui effectue la conversion entre un espace d’adressage de mémoire de 32 bits (également appelé espace d’adresse) et un espace d’adressage de 16 bits (appelé un espace d’adressage segmentés).  
   
-## Voir aussi  
+## <a name="see-also"></a>Voir aussi  
  [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)   
- [SymTagEnum, énumération](../../debugger/debug-interface-access/symtagenum.md)
+ [SymTagEnum (énumération)](../../debugger/debug-interface-access/symtagenum.md)

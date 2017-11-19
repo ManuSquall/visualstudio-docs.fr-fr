@@ -1,11 +1,10 @@
 ---
-title: 'Error: Unable to Start Debugging on the Web Server | Microsoft Docs'
+title: "Erreur : Impossible de démarrer le débogage sur le serveur Web | Documents Microsoft"
 ms.custom: 
 ms.date: 05/23/2017
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-debug
+ms.technology: vs-ide-debug
 ms.tgt_pltfrm: 
 ms.topic: article
 f1_keywords:
@@ -28,147 +27,139 @@ helpviewer_keywords:
 - debugging ASP.NET Web applications, unable to start debugging error
 - remote debugging, errors
 ms.assetid: f62e378a-3a99-4f78-9d97-8bb63a4da181
-caps.latest.revision: 29
+caps.latest.revision: "29"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-translation.priority.ht:
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- ru-ru
-- zh-cn
-- zh-tw
-translation.priority.mt:
-- cs-cz
-- pl-pl
-- pt-br
-- tr-tr
-ms.translationtype: HT
-ms.sourcegitcommit: 4306111cd49a5299bfa5d4e5e22b212bc7799fe2
-ms.openlocfilehash: f01993a0cc926dd26aadd0455a992d2c75ea171a
-ms.contentlocale: fr-fr
-ms.lasthandoff: 09/02/2017
-
+ms.openlocfilehash: 5332933bf1452ca730b5c49716e10f49851fd749
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: fr-FR
+ms.lasthandoff: 10/31/2017
 ---
-# <a name="error-unable-to-start-debugging-on-the-web-server"></a>Error: Unable to Start Debugging on the Web Server
+# <a name="error-unable-to-start-debugging-on-the-web-server"></a>Erreur : impossible de démarrer le débogage sur le serveur web
 
-When you try to debug an ASP.NET application running on a Web server, you may get this error message: `Unable to start debugging on the Web server`.
+Lorsque vous essayez de déboguer une application ASP.NET exécutée sur un serveur Web, vous risquez d’obtenir ce message d’erreur : `Unable to start debugging on the Web server`.
 
-Often, this error occurs because an error or configuration change has occurred that requires an update to your Application Pools, an IIS reset, or both.
+Souvent, cette erreur se produit, car une modification de configuration ou d’erreur s’est produite et nécessite une mise à jour vos Pools d’applications, une réinitialisation d’IIS ou les deux. Vous pouvez réinitialiser IIS en ouvrant une invite de commandes avec élévation de privilèges et en tapant `iisreset`. 
 
-## <a name="specificerrors"></a>What is the detailed error message?
+## <a name="specificerrors"></a>Qu’est le message d’erreur détaillé ?
 
-The `Unable to start debugging on the Web server` message is generic. Usually, a more specific message is included in the error string and that may help you identify the cause of the problem or search for a more exact fix. Here are a few of the more common error messages that are appended to the main error message:
+Le `Unable to start debugging on the Web server` message est générique. En règle générale, un message plus spécifique est inclus dans la chaîne d’erreur et qui peuvent vous aider à identifier la cause du problème ou de recherche pour une solution plus exacte. Voici quelques exemples de messages d’erreur les plus courants sont ajoutées au message d’erreur principal :
 
-- [IIS does not list a website that matches the launch url](#IIS_list)
-- [The web server is not configured correctly](#web_server_config)
-- [Unable to connect to the webserver](#unable_to_connect)
-- [The web server did not respond in a timely manner](#web_server_timeout)
-- [The microsoft visual studio remote debugging monitor(msvsmon.exe) does not appear to be running on the remote computer](#msvsmon)
-- [Could not start ASP.NET debugging](#aspnet)
-- [The debugger cannot connect to the remote computer](#cannot_connect)
-- [See help for common configuration errors. Running the webpage outside of the debugger may provide further information.](#see_help)
+- [IIS ne répertorie pas un site Web qui correspond le lancement url](#IISlist)
+- [Le serveur web n’est pas configuré correctement](#web_server_config)
+- [Impossible de se connecter au serveur Web](#unabletoconnect)
+- [Le serveur web n’a pas répondu en temps voulu](#webservertimeout)
+- [Microsoft visual studio monitor(msvsmon.exe) du débogage distant ne semble pas être en cours d’exécution sur l’ordinateur distant](#msvsmon)
+- [Le serveur distant a retourné une erreur](#server_error)
+- [Impossible de démarrer le débogage d’ASP.NET](#aspnet)
+- [Le débogueur ne peut pas se connecter à l’ordinateur distant](#cannot_connect)
+- [Consultez l’aide pour les erreurs de configuration courantes. Exécution de la page Web en dehors du débogueur peut fournir davantage d’informations.](#see_help)
 
-## <a name="IIS_list"></a> IIS does not list a website that matches the launch url
+## <a name="IISlist"></a>IIS ne répertorie pas un site Web qui correspond le lancement url
 
-- Restart Visual Studio as an Administrator and retry debugging. (Some ASP.NET debugging scenarios require elevated privileges.)
+- Redémarrez Visual Studio en tant qu’administrateur et recommencez le débogage. (Certains scénarios de débogage ASP.NET nécessitent des privilèges élevés.)
 
-    You can configure Visual Studio to always run as an Administrator by right-clicking the Visual Studio shortcut icon, choosing **Properties > Advanced**, and then choosing to always run as an Administrator.
+    Vous pouvez configurer Visual Studio exécute toujours en tant qu’administrateur en cliquant sur l’icône de raccourci de Visual Studio en choisissant **Propriétés > Avancé**, puis en choisissant soit toujours exécuté en tant qu’administrateur.
 
-## <a name="web_server_config"></a> The web server is not configured correctly
+## <a name="web_server_config"></a>Le serveur web n’est pas configuré correctement
 
-- See [Error: The web server is not configured correctly](../debugger/error-the-web-server-is-not-configured-correctly.md).
+- Consultez [erreur : le serveur web n’est pas configuré correctement](../debugger/error-the-web-server-is-not-configured-correctly.md).
 
-## <a name="unable_to_connect"></a> Unable to connect to the webserver
+## <a name="unabletoconnect"></a>Impossible de se connecter au serveur Web
 
-- Are you running Visual Studio and the Web server on the same machine and debugging using **F5** (instead of **Attach to Process**)? Open your project properties and make sure that the project is configured to connect to the correct Web server and launch URL. (Open **Properties > Web > Servers** or **Properties > Debug** depending on your project type.)
+- Vous êtes en cours d’exécution Visual Studio et le serveur Web sur le même ordinateur et le débogage à l’aide de **F5** (au lieu de **attacher au processus**) ? Ouvrez les propriétés de votre projet et assurez-vous que le projet est configuré pour se connecter au serveur Web approprié et l’URL de lancement. (Ouvrez **Propriétés > Web > serveurs** ou **Propriétés > déboguer** en fonction de votre type de projet. Ouvrez un projet Web Forms **Pages de propriétés > Options de démarrage > serveur**.)
 
-- If the Web server is remote, restart your Application Pool and then reset IIS. For more information, see [Check your IIS Configuration](#vxtbshttpservererrorsthingstocheck).
+- Sinon, redémarrez votre Pool d’applications et réinitialisez IIS. Pour plus d’informations, consultez [Vérifiez votre Configuration IIS](#vxtbshttpservererrorsthingstocheck).
 
-## <a name="web_server_timeout"></a> The web server did not respond in a timely manner
+## <a name="webservertimeout"></a>Le serveur web n’a pas répondu en temps voulu
 
-- Reset IIS and retry debugging. Multiple debugger instances may be attached to the IIS process; a reset terminates them. For more information, see [Check your IIS Configuration](#vxtbshttpservererrorsthingstocheck).
+- Réinitialiser IIS et recommencez le débogage. Plusieurs instances du débogueur peuvent être attachés au processus IIS ; une réinitialisation y mette fin. Pour plus d’informations, consultez [Vérifiez votre Configuration IIS](#vxtbshttpservererrorsthingstocheck).
 
-## <a name="msvsmon"></a> The microsoft visual studio remote debugging monitor(msvsmon.exe) does not appear to be running on the remote computer
+## <a name="msvsmon"></a>Microsoft visual studio monitor(msvsmon.exe) du débogage distant ne semble pas être en cours d’exécution sur l’ordinateur distant
 
-- If you are debugging on a remote machine, make sure you have [installed and are running the remote debugger](../debugger/remote-debugging.md). If the message mentions a firewall, make sure the [correct ports in the firewall](../debugger/remote-debugger-port-assignments.md) are open, especially if you are using a third party firewall.
-- If you are using a HOSTS file, make sure it is configured correctly. For example, if debugging using **F5** (instead of **Attach to Process**), the HOSTS file needs to include the same project URL as in your project properties, **Properties > Web > Servers** or **Properties > Debug**, depending on your project type.
+- Si vous effectuez un débogage sur un ordinateur distant, assurez-vous que vous disposez [installés et exécutent le débogueur distant](../debugger/remote-debugging.md). Si le message mentionne un pare-feu, vérifiez que le [corriger des ports dans le pare-feu](../debugger/remote-debugger-port-assignments.md) sont ouverts, surtout si vous utilisez un pare-feu tiers.
+- Si vous utilisez un fichier d’hôtes, assurez-vous qu’il est configuré correctement. Par exemple, si le débogage à l’aide **F5** (au lieu de **attacher au processus**), les ordinateurs hôtes doit inclure la même URL de projet, comme dans les propriétés de votre projet, de fichiers **Propriétés > Web > serveurs**  ou **Propriétés > débogage**, en fonction de votre type de projet.
 
-## <a name="aspnet"></a> Could not start ASP.NET debugging
+## <a name="server_error"></a>Le serveur distant a retourné une erreur
 
-- Restart the Application Pool and reset IIS. For more information, see [Check your IIS Configuration](#vxtbshttpservererrorsthingstocheck).
-- If you are doing URL rewrites, test a basic web.config with no URL rewrites. See the **Note** about the URL Rewrite Module in [Check your IIS Configuration](#vxtbshttpservererrorsthingstocheck).
+Vérifiez le code d’erreur est renvoyé dans le message pour aider à identifier la cause du problème. Voici quelques codes d’erreur courants.
+- (403) interdit. Vérifiez que vous vous connectez pour le type de serveur correct et l’URL (dans **Propriétés > Web > serveurs** ou **Propriétés > débogage**, en fonction de votre type de projet). Vérifiez également que web.config du serveur inclut `debug=true` dans l’élément de compilation. Si ces paramètres sont déjà correctes, vérifiez que votre dossier d’Application Web dispose des autorisations de dossier approprié. Pour plus d’informations, consultez [Vérifiez votre Configuration IIS](#vxtbshttpservererrorsthingstocheck).
+- Serveur (503) non disponible. Le Pool d’applications peut avoir arrêté en raison d’une modification de l’erreur ou la configuration. Redémarrez le Pool d’applications.
+- (404) introuvable. Assurez-vous que le Pool d’applications est configuré pour la version correcte d’ASP.NET.
 
-## <a name="cannot_connect"></a> The debugger cannot connect to the remote computer
+## <a name="aspnet"></a>Impossible de démarrer le débogage d’ASP.NET
 
-When debugging locally, this error may occur because Visual Studio is a 32-bit application, so it uses the 64-bit version of the remote debugger to debug 64-bit applications. Open your project properties and make sure that the project is configured to connect to the correct Web server and launch URL. (Open **Properties > Web > Servers** or **Properties > Debug** depending on your project type.)
+- Redémarrez le Pool d’applications et réinitialiser IIS. Pour plus d’informations, consultez [Vérifiez votre Configuration IIS](#vxtbshttpservererrorsthingstocheck).
+- Si vous effectuez des URL réécrit, un fichier web.config de base avec aucune réécritures URL de test. Consultez le **Remarque** sur l’URL de réécrire le Module dans [Vérifiez votre Configuration IIS](#vxtbshttpservererrorsthingstocheck).
 
-Also, if you are using a HOSTS file, make sure it is configured correctly. For example, if debugging using **F5** (instead of **Attach to Process**), the HOSTS file needs to include the same project URL as in your project properties, **Properties > Web > Servers** or **Properties > Debug**, depending on your project type.
+## <a name="cannot_connect"></a>Le débogueur ne peut pas se connecter à l’ordinateur distant
 
-## <a name="see_help"></a> See help for common configuration errors. Running the webpage outside of the debugger may provide further information.
+Si vous effectuez un débogage localement, cette erreur peut se produire, car Visual Studio est une application 32 bits, de sorte qu’elle utilise la version 64 bits du débogueur distant pour déboguer des applications 64 bits. Ouvrez les propriétés de votre projet et assurez-vous que le projet est configuré pour se connecter au serveur Web et URL correcte. (Ouvrez **Propriétés > Web > serveurs** ou **Propriétés > déboguer** en fonction de votre type de projet.)
 
-- Are you running Visual Studio and the Web server on the same machine? Open your project properties and make sure that the project is configured to connect to the correct Web server and launch URL. (Open **Properties > Web > Servers** or **Properties > Debug** depending on your project type.)
+En outre, si vous utilisez un fichier d’hôtes, assurez-vous qu’il est configuré correctement. Par exemple, les ordinateurs hôtes du fichier doit inclure la même URL de projet, comme dans les propriétés de votre projet, **Propriétés > Web > serveurs** ou **Propriétés > débogage**, en fonction de votre type de projet.
 
-- If that does not work or you are debugging remotely, follow steps in [Check your IIS Configuration](#vxtbshttpservererrorsthingstocheck).
+## <a name="see_help"></a>Consultez l’aide pour les erreurs de configuration courantes. Exécution de la page Web en dehors du débogueur peut fournir davantage d’informations.
 
-##  <a name="vxtbshttpservererrorsthingstocheck"></a> Check your IIS configuration
+- Vous exécutez Visual Studio et le serveur Web sur le même ordinateur ? Ouvrez les propriétés de votre projet et assurez-vous que le projet est configuré pour se connecter au serveur Web approprié et l’URL de lancement. (Ouvrez **Propriétés > Web > serveurs** ou **Propriétés > déboguer** en fonction de votre type de projet.)
 
-After taking steps detailed here to resolve the issue, and before trying again to debug, you may also need to reset IIS. You can do that by opening an Administrator command prompt and typing `iisreset`, or you can perform a reset in IIS Manager. 
+- Si cela ne fonctionne pas ou si vous déboguez à distance, suivez les étapes de [Vérifiez votre Configuration IIS](#vxtbshttpservererrorsthingstocheck).
 
-* Stop and restart your IIS Application Pools, then retry. 
+##  <a name="vxtbshttpservererrorsthingstocheck"></a>Vérifiez votre configuration d’IIS
 
-    The Application Pool may have stopped as a result of an error. Or, another configuration change that you made may require that you stop and restart your Application Pool.
+Après avoir suivi les étapes décrites ici pour résoudre le problème et avant de réessayer déboguer, vous devez également réinitialiser IIS. C’est également en ouvrant une invite de commandes avec élévation de privilèges et en tapant `iisreset`. 
+
+* Arrêter et redémarrer vos Pools d’applications IIS, puis réessayez. 
+
+    Le Pool d’applications peut avoir arrêté suite à une erreur. Ou bien, une autre modification de configuration que vous avez apportées peut-être nécessiter que vous arrêtez et redémarrez le Pool d’applications.
     
     > [!NOTE]
-    > If the Application Pool keeps stopping, you may need to uninstall the URL Rewrite Module from the Control Panel. You can reinstall it using the Web Platform Installer (WPI). This issue may occur after a significant system upgrade.
+    > Si le Pool d’applications conserve l’arrêt, vous devrez désinstaller le Module de réécriture d’URL à partir du panneau. Vous pouvez réinstaller à l’aide de Web Platform Installer (WebPI). Ce problème peut se produire après une mise à niveau du système significatives.
 
-* Check your Application Pool configuration, correct it if needed, and then retry.
+* Vérifiez votre configuration de Pool d’applications, corrigez-le si nécessaire, puis réessayez.
 
-    If you have recently installed ASP.NET, the Application Pool may be configured for the wrong version of ASP.NET. Fix the issue and restart the Application Pool.
+    Le Pool d’applications peut être configuré pour une version d’ASP.NET qui ne correspond pas à votre projet Visual Studio. Mettre à jour la version d’ASP.NET dans le Pool d’applications et le redémarrer. Pour plus d’informations, consultez [IIS 8.0 à l’aide de ASP.NET 3.5 et ASP.NET 4.5](https://docs.microsoft.com/en-us/iis/get-started/whats-new-in-iis-8/iis-80-using-aspnet-35-and-aspnet-45).
 
-    Also, if password credentials have changed, you may need to update them in your Application Pool or Web site.  In the Application Pool, update credentials in **Advanced Settings > Process Model > Identity**. For the Web site, update credentials in **Basic Settings > Connect as...**. Restart your Application Pool.
+    En outre, si les informations d’identification de mot de passe ont été modifiés, vous devrez peut-être mettre à jour dans votre Pool d’applications ou le site Web.  Dans le Pool d’applications, mettre à jour les informations d’identification dans **paramètres avancés > modèle de processus > identité**. Pour le site Web, mettre à jour les informations d’identification dans **les paramètres de base > se connecter en tant que...** . Redémarrez votre Pool d’applications.
     
-* Check that your Web Application folder has the right permissions.
+* Vérifiez que votre dossier d’Application Web possède les autorisations appropriées.
 
-    Make sure that you give IIS_IUSRS, IUSR, or the specific user associated with the Application Pool read and execute rights for the Web Application folder. Fix the issue and restart your Application Pool.
+    Assurez-vous que vous donnez à IIS_IUSRS, IUSR ou l’utilisateur spécifique associé à la lecture du Pool d’applications et droits d’exécution pour le dossier d’Application Web. Corrigez le problème et redémarrez le Pool d’applications.
 
-* Make sure that the correct version of ASP.NET is installed on IIS.
+* Assurez-vous que la version correcte d’ASP.NET est installée sur IIS.
 
-    Mismatched versions of ASP.NET on IIS and in your Visual Studio project may cause this issue. You may need to set the framework version in web.config. To install ASP.NET on IIS, use the [Web Platform Installer (WebPI)](https://www.microsoft.com/web/downloads/platform.aspx). Also, see [Host on Windows with IIS](https://docs.asp.net/en/latest/publishing/iis.html).
+    Versions incompatibles de ASP.NET sur IIS et dans votre projet Visual Studio peuvent provoquer ce problème. Vous devrez peut-être définir la version du framework dans le fichier web.config. Pour installer ASP.NET sur IIS, utilisez le [Web Platform Installer (WebPI)](https://www.microsoft.com/web/downloads/platform.aspx). Consultez également [IIS 8.0 à l’aide de ASP.NET 3.5 et ASP.NET 4.5](https://docs.microsoft.com/en-us/iis/get-started/whats-new-in-iis-8/iis-80-using-aspnet-35-and-aspnet-45) ou, pour ASP.NET Core, [hôte sous Windows avec IIS](https://docs.asp.net/en/latest/publishing/iis.html).
   
-* Resolve authentication errors if you are using only the IP address
+* Résoudre les erreurs d’authentification si vous utilisez uniquement l’adresse IP
 
-     By default, IP addresses are assumed to be part of the Internet, and NTLM authentication is not done over the Internet. If your web site is configured in IIS to require authentication, this authentication fails. To correct this problem, you can specify the name of the remote computer instead of the IP address.
+     Par défaut, les adresses IP sont supposées faire partie d'Internet et l'authentification NTLM ne s'effectue pas via Internet. Si votre site web est configuré dans IIS pour exiger une authentification, cette authentification échoue. Pour corriger ce problème, vous pouvez spécifier le nom de l’ordinateur distant au lieu de l’adresse IP.
      
-## <a name="other-causes"></a>Other causes
+## <a name="other-causes"></a>Les autres causes
 
-If the IIS configuration is not causing the issue, try these steps:
+Si la configuration d’IIS ne pose pas de problème, essayez les étapes suivantes :
 
-- Restart Visual Studio with Administrator privileges and try again.
+- Redémarrez Visual Studio avec des privilèges d’administrateur, puis réessayez.
 
-    Some ASP.NET debugging scenarios such as using Web Deploy require elevated privileges for Visual Studio.
+    Certains scénarios de débogage ASP.NET telles que l’utilisation de Web Deploy requièrent des privilèges élevés pour Visual Studio.
     
-- If multiple instances of Visual Studio are running, reopen your project in one instance of Visual Studio (with Administrator privileges), and try again.
+- Si vous exécutent plusieurs instances de Visual Studio, rouvrez votre projet dans une instance de Visual Studio (avec des privilèges d’administrateur), puis réessayez.
 
-- If you are using a HOSTS file with local addresses, try using the loopback address instead of the machine's IP address.
+- Si vous utilisez un fichier d’hôtes avec les adresses locales, essayez d’utiliser l’adresse de bouclage au lieu de l’adresse IP de l’ordinateur.
 
-    If you are not using local addresses, make sure your HOSTS file includes the same project URL as in your project properties, **Properties > Web > Servers** or **Properties > Debug**, depending on your project type.
+    Si vous n’utilisez pas les adresses locales, assurez-vous que votre fichier HOSTS inclut la même URL de projet, comme dans les propriétés de votre projet, **Propriétés > Web > serveurs** ou **Propriétés > débogage**, en fonction de votre type de projet.
 
-## <a name="more-troubleshooting-steps"></a>More troubleshooting steps
+## <a name="more-troubleshooting-steps"></a>Étapes de dépannage supplémentaires
 
-* Bring up the localhost page in the browser on the server.
+* Afficher la page localhost dans le navigateur sur le serveur.
 
-     If IIS is not installed correctly, you should get errors when you type `http://localhost` in a browser.
+     Si IIS n’est pas installé correctement, vous devez obtenir des erreurs quand vous tapez `http://localhost` dans un navigateur.
      
-     For more information on deploying to IIS, see [Host on Windows with IIS](https://docs.asp.net/en/latest/publishing/iis.html).
+     Pour plus d’informations sur le déploiement sur IIS, consultez [IIS 8.0 à l’aide de ASP.NET 3.5 et ASP.NET 4.5](https://docs.microsoft.com/en-us/iis/get-started/whats-new-in-iis-8/iis-80-using-aspnet-35-and-aspnet-45) et, pour ASP.NET Core, [hôte sous Windows avec IIS](https://docs.asp.net/en/latest/publishing/iis.html).
 
-* Create a basic ASP.NET application on the server (or use a basic web.config file).
+* Créer une application ASP.NET de base sur le serveur (ou utilisez un fichier web.config de base).
 
-    If you can't get your app to work with the debugger, try creating a basic ASP.NET application locally on the server, and try to debug the basic app. (You might want to use the default ASP.NET MVC template.) If you can debug a basic app, that may help you identify what's different between the two configurations. Look for differences in settings in the web.config file, such as URL rewrite rules.
+    Si vous ne peut pas obtenir votre application pour travailler avec le débogueur, essayez de créer une application ASP.NET de base localement sur le serveur et essayez de déboguer l’application de base. (Il pourrez que vous souhaitez utiliser le modèle ASP.NET MVC par défaut.) Si vous pouvez déboguer une application de base, qui peut vous aider à identifier quelle est la différence entre les deux configurations. Rechercher les différences dans les paramètres dans le fichier web.config, telles que les règles de réécriture d’URL.
 
-## <a name="see-also"></a>See Also  
- [Debugging Web Applications: Errors and Troubleshooting](../debugger/debugging-web-applications-errors-and-troubleshooting.md)
+## <a name="see-also"></a>Voir aussi  
+ [Débogage d’applications web : erreurs et dépannage](../debugger/debugging-web-applications-errors-and-troubleshooting.md)

@@ -1,90 +1,91 @@
 ---
-title: "Comment&#160;: afficher les informations de trace WPF | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-debug"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-dev_langs: 
-  - "FSharp"
-  - "VB"
-  - "CSharp"
-  - "C++"
-helpviewer_keywords: 
-  - "débogage, WPF"
-  - "WPF, débogage"
+title: "Comment : afficher des informations de Trace WPF | Documents Microsoft"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-debug
+ms.tgt_pltfrm: 
+ms.topic: article
+dev_langs:
+- CSharp
+- VB
+- FSharp
+- C++
+helpviewer_keywords:
+- WPF, debugging
+- debugging, WPF
 ms.assetid: be3c6859-06e1-459e-9fd0-46375b5f55ef
-caps.latest.revision: 13
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 13
+caps.latest.revision: "13"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: fe00aff9834d612702c61f06a1d0c924852c9462
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: fr-FR
+ms.lasthandoff: 10/31/2017
 ---
-# Comment&#160;: afficher les informations de trace WPF
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
-
-[!INCLUDE[vs_current_short](../code-quality/includes/vs_current_short_md.md)] peut recevoir des informations de trace de débogage envoyées par des applications WPF et afficher ces informations dans la fenêtre **Sortie**.  Pour afficher les informations de trace de débogage, le traçage WPF doit être activé.  
+# <a name="how-to-display-wpf-trace-information"></a>Comment : afficher les informations de trace WPF
+[!INCLUDE[vs_current_short](../code-quality/includes/vs_current_short_md.md)]peut recevoir des informations de trace de débogage à partir d’applications WPF et afficher ces informations dans le **sortie** fenêtre. Pour afficher les informations de trace de débogage, le traçage WPF doit être activé.  
   
- Vous pouvez activer le traçage WPF dans votre fichier App.Config ou par programmation en utilisant la classe <xref:System.Diagnostics.PresentationTraceSources>.  Mais la fenêtre **Options** reste le moyen le plus simple d'activer le traçage WPF.  Le traçage WPF pour les applications Web n'est pas pris en charge.  
+ Vous pouvez activer le traçage WPF dans votre fichier App.Config ou par programmation en utilisant la classe <xref:System.Diagnostics.PresentationTraceSources>. Un moyen plus simple pour activer le traçage WPF est à l’aide de la **Options** fenêtre. Le traçage WPF pour les applications Web n'est pas pris en charge.  
   
-### Pour activer ou personnaliser les informations de trace WPF  
+### <a name="to-enable-or-customize-wpf-trace-information"></a>Pour activer ou personnaliser les informations de trace WPF  
   
 1.  Dans le menu **Outils**, sélectionnez **Options**.  
   
-2.  Dans la boîte de dialogue **Options**, ouvrez le nœud **Débogage** dans la zone située à gauche.  
+2.  Dans le **Options** boîte de dialogue, dans la zone de gauche, ouvrez le **débogage** nœud.  
   
-3.  Sous **Débogage**, cliquez sur **Fenêtre Sortie**.  
+3.  Sous **débogage**, cliquez sur **fenêtre sortie**.  
   
-4.  Sous **Paramètres généraux de sortie**, sélectionnez **Toute sortie du débogage**.  
+4.  Sous **paramètres généraux de sortie**, sélectionnez **toute sortie du débogage**.  
   
-5.  Dans la zone à droite, recherchez **Paramètres de trace WPF**.  
+5.  Dans la zone de droite, recherchez **paramètres de Trace WPF**.  
   
-6.  Ouvrez le nœud **Paramètres de trace WPF**.  
+6.  Ouvrez le **paramètres de Trace WPF** nœud.  
   
-7.  Sous **Paramètres de trace WPF**, cliquez sur la catégorie de paramètres que vous voulez activer \(par exemple, **Liaison de données**\).  
+7.  Sous **paramètres de Trace WPF**, cliquez sur la catégorie de paramètres que vous souhaitez activer (par exemple, **une liaison de données**).  
   
-     Un contrôle de liste déroulante s'affiche dans la colonne Paramètres en regard de **Liaison de données** ou de la catégorie sur laquelle vous avez cliqué.  
+     Un contrôle de liste déroulante apparaît dans la colonne paramètres en regard **une liaison de données** ou de la catégorie que vous avez cliqué.  
   
-8.  Cliquez sur la liste déroulante et sélectionnez le type d'informations de trace que vous voulez afficher : **Tous**, **Critique**, **Erreur**, **Avertissement**, **Informations**, **Commentaires** ou **Activité**.  
+8.  Cliquez sur la liste déroulante et sélectionnez le type d’informations de trace que vous souhaitez voir : **tous les**, **critique**, **erreur**, **avertissement**,  **Informations**, **Verbose**, ou **ActivityTracing**.  
   
-     **Critique** permet de tracer uniquement les événements Critique.  
+     **Critique** Active le traçage des événements critiques uniquement.  
   
-     **Erreur** permet de tracer les événements Critique et Erreur.  
+     **Erreur** Active le traçage des événements critiques et d’erreur.  
   
-     **Avertissement** permet de tracer les événements Critique, Erreur et Avertissement.  
+     **Avertissement** permet de tracer critique, erreur et d’événements d’avertissement.  
   
-     **Informations** permet de tracer les événements Critique, Erreur, Avertissement et Informations.  
+     **Informations** Active le traçage d’événements critique, erreur, avertissement et informations.  
   
-     **Commentaires** permet de tracer les événements Critique, Erreur, Avertissement, Informations et Commentaires.  
+     **Verbose** Active le traçage d’événements critique, erreur, avertissement, informations et commentaires.  
   
-     **Activité** permet de tracer les événements Arrêter, Démarrer, Interrompre, Transférer et Reprendre.  
+     **Suivi d’activités** Active le traçage d’événements arrêter, Démarrer, suspendre, transfert et reprendre.  
   
      Pour plus d'informations sur la signification de ces niveaux d'informations de trace, consultez <xref:System.Diagnostics.SourceLevels>.  
   
 9. Cliquez sur **OK**.  
   
-### Pour désactiver les informations de trace WPF  
+### <a name="to-disable-wpf-trace-information"></a>Pour désactiver les informations de trace WPF  
   
 1.  Dans le menu **Outils**, sélectionnez **Options**.  
   
-2.  Dans la boîte de dialogue **Options**, ouvrez le nœud **Débogage** dans la zone située à gauche.  
+2.  Dans le **Options** boîte de dialogue, dans la zone de gauche, ouvrez le **débogage** nœud.  
   
-3.  Sous **Débogage**, cliquez sur **Fenêtre Sortie**.  
+3.  Sous **débogage**, cliquez sur **fenêtre sortie**.  
   
-4.  Dans la zone à droite, recherchez **Paramètres de trace WPF**.  
+4.  Dans la zone de droite, recherchez **paramètres de Trace WPF**.  
   
-5.  Ouvrez le nœud **Paramètres de trace WPF**.  
+5.  Ouvrez le **paramètres de Trace WPF** nœud.  
   
-6.  Sous **Paramètres de trace WPF**, cliquez sur la catégorie de paramètres que vous voulez activer \(par exemple, **Liaison de données**\).  
+6.  Sous **paramètres de Trace WPF**, cliquez sur la catégorie de paramètres que vous souhaitez activer (par exemple, **une liaison de données**).  
   
-     Un contrôle de liste déroulante s'affiche dans la colonne Paramètres en regard de **Liaison de données** ou de la catégorie sur laquelle vous avez cliqué.  
+     Un contrôle de liste déroulante apparaît dans la colonne paramètres en regard **une liaison de données** ou de la catégorie que vous avez cliqué.  
   
-7.  Cliquez sur la liste déroulante et sélectionnez **Inactif**.  
+7.  Cliquez sur la liste déroulante et sélectionnez **hors**.  
   
 8.  Cliquez sur **OK**.  
   
-## Voir aussi  
- [Débogage WPF](../debugger/debugging-wpf.md)
+## <a name="see-also"></a>Voir aussi  
+ [Débogage de WPF](../debugger/debugging-wpf.md)

@@ -1,34 +1,38 @@
 ---
-title: "IEnumJsStackFrames::Reset, m&#233;thode | Microsoft Docs"
-ms.custom: ""
-ms.date: "01/18/2017"
-ms.prod: "windows-script-interfaces"
-ms.reviewer: ""
-ms.suite: ""
-ms.tgt_pltfrm: ""
-ms.topic: "reference"
+title: "Ienumjsstackframes::Reset, méthode | Documents Microsoft"
+ms.custom: 
+ms.date: 01/18/2017
+ms.prod: windows-script-interfaces
+ms.reviewer: 
+ms.suite: 
+ms.tgt_pltfrm: 
+ms.topic: reference
 apiname: IEnumJsStackFrames.Reset
 apilocation: jscript9diag.dll
 ms.assetid: 5ad700f8-6043-4ff7-88c8-bbfbb934868b
-caps.latest.revision: 5
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 5
+caps.latest.revision: "5"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: 130db93a9ecedba039c8e422b2cba8aec2b5a6d2
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.translationtype: MT
+ms.contentlocale: fr-FR
+ms.lasthandoff: 10/27/2017
 ---
-# IEnumJsStackFrames::Reset, m&#233;thode
+# <a name="ienumjsstackframesreset-method"></a>IEnumJsStackFrames::Reset, méthode
 Réinitialise le frame de pile à la position avant le premier élément.  
   
-## Syntaxe  
+## <a name="syntax"></a>Syntaxe  
   
 ```  
 HRESULT Reset(void);  
 ```  
   
-## Valeur de retour  
+## <a name="return-value"></a>Valeur de retour  
   
-## Configuration requise  
- **En\-tête :** jscript9diag.h  
+## <a name="requirements"></a>Spécifications  
+ **En-tête :** jscript9diag.h  
   
-## Voir aussi  
- [IEnumJsStackFrames, interface](../../winscript/reference/ienumjsstackframes-interface.md)
+## <a name="see-also"></a>Voir aussi  
+ [Interface IEnumJsStackFrames](../../winscript/reference/ienumjsstackframes-interface.md)

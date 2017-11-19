@@ -1,46 +1,29 @@
 ---
-title: BP_UNBOUND_REASON | Microsoft Docs
+title: BP_UNBOUND_REASON | Documents Microsoft
 ms.custom: 
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-sdk
+ms.technology: vs-ide-sdk
 ms.tgt_pltfrm: 
 ms.topic: article
-f1_keywords:
-- BP_UNBOUND_REASON
-helpviewer_keywords:
-- BP_UNBOUND_REASON enumeration
+f1_keywords: BP_UNBOUND_REASON
+helpviewer_keywords: BP_UNBOUND_REASON enumeration
 ms.assetid: 939b6f9c-113b-471d-9f30-b03871af6285
-caps.latest.revision: 10
+caps.latest.revision: "10"
+author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-translation.priority.mt:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
+ms.openlocfilehash: dfa3ab5ee6d38da45bd69cf4a9e49a86035d1252
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
 ms.translationtype: MT
-ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
-ms.openlocfilehash: 198db90bd7be89217419742d44ec5bf065073120
-ms.contentlocale: fr-fr
-ms.lasthandoff: 08/28/2017
-
+ms.contentlocale: fr-FR
+ms.lasthandoff: 10/31/2017
 ---
 # <a name="bpunboundreason"></a>BP_UNBOUND_REASON
-Gives the reason a breakpoint was unbound.  
+Donne la raison pour laquelle qu'un point d’arrêt a été séparé.  
   
-## <a name="syntax"></a>Syntax  
+## <a name="syntax"></a>Syntaxe  
   
 ```cpp  
 enum enum_BP_UNBOUND_REASON {   
@@ -61,29 +44,29 @@ public enum enum_BP_UNBOUND_REASON {
 };  
 ```  
   
-## <a name="members"></a>Members  
+## <a name="members"></a>Membres  
  BPUR_UNKNOWN  
- The reason is unknown.  
+ La raison est inconnue.  
   
  BPUR_CODE_UNLOADED  
- The code that contains the breakpoint has been unloaded.  
+ Le code qui contient le point d’arrêt a été déchargé.  
   
  BPUR_BREAKPOINT_REBIND  
- The breakpoint has been rebound to a different location. This can happen after Edit and Continue operations when the breakpoint moves, or when the breakpoint is bound to a file with a path that is no longer valid.  
+ Le point d’arrêt a été reliée à un autre emplacement. Cela peut se produire après la modification et poursuivre vos opérations lorsque le point d’arrêt se déplace, ou lorsque le point d’arrêt est lié à un fichier avec un chemin d’accès qui n’est plus valide.  
   
  BPUR_ BREAKPOINT_ERROR  
- The breakpoint is determined to be in error after it is bound. This happens to managed breakpoints whose conditions are no longer valid.  
+ Le point d’arrêt est déterminé comme étant dans l’erreur après que qu’il est lié. Cela se produit au point d’arrêt managé dont les conditions ne sont plus valides.  
   
-## <a name="remarks"></a>Remarks  
- Returned by the [GetReason](../../../extensibility/debugger/reference/idebugbreakpointunboundevent2-getreason.md) method.  
+## <a name="remarks"></a>Remarques  
+ Retourné par la [GetReason](../../../extensibility/debugger/reference/idebugbreakpointunboundevent2-getreason.md) (méthode).  
   
-## <a name="requirements"></a>Requirements  
- Header: msdbg.h  
+## <a name="requirements"></a>Spécifications  
+ En-tête : msdbg.h  
   
- Namespace: Microsoft.VisualStudio.Debugger.Interop  
+ Namespace : Microsoft.VisualStudio.Debugger.Interop  
   
- Assembly: Microsoft.VisualStudio.Debugger.Interop.dll  
+ Assembly : Microsoft.VisualStudio.Debugger.Interop.dll  
   
-## <a name="see-also"></a>See Also  
- [Enumerations](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)   
+## <a name="see-also"></a>Voir aussi  
+ [Énumérations](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)   
  [GetReason](../../../extensibility/debugger/reference/idebugbreakpointunboundevent2-getreason.md)

@@ -1,27 +1,30 @@
 ---
-title: "IActiveScriptStats::GetStat | Microsoft Docs"
-ms.custom: ""
-ms.date: "01/18/2017"
-ms.prod: "windows-script-interfaces"
-ms.reviewer: ""
-ms.suite: ""
-ms.tgt_pltfrm: ""
-ms.topic: "reference"
+title: IActiveScriptStats::GetStat | Documents Microsoft
+ms.custom: 
+ms.date: 01/18/2017
+ms.prod: windows-script-interfaces
+ms.reviewer: 
+ms.suite: 
+ms.tgt_pltfrm: 
+ms.topic: reference
 apiname: IActiveScriptStats.GetStat
 apilocation: scrobj.dll
-helpviewer_keywords: 
-  - "IActiveScriptStats::GetStat"
+helpviewer_keywords: IActiveScriptStats::GetStat
 ms.assetid: 31fd15b3-0713-4b55-b4f7-bfd7ea198493
-caps.latest.revision: 8
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 8
+caps.latest.revision: "8"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: 35e791661de6d360f747f8d823ad073c2eb81115
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.translationtype: MT
+ms.contentlocale: fr-FR
+ms.lasthandoff: 10/27/2017
 ---
-# IActiveScriptStats::GetStat
-Retourne un des statistiques standard de script.  
+# <a name="iactivescriptstatsgetstat"></a>IActiveScriptStats::GetStat
+Retourne l’une des statistiques de script standard.  
   
-## Syntaxe  
+## <a name="syntax"></a>Syntaxe  
   
 ```  
 HRESULT GetStat(  
@@ -31,30 +34,30 @@ HRESULT GetStat(
 );  
 ```  
   
-#### Paramètres  
+#### <a name="parameters"></a>Paramètres  
  `stid`  
- \[in\]  Spécifie les informations statistiques à retourner.  Doit avoir la valeur :  
+ [in] Spécifie les statistiques à retourner. La valeur doit être :  
   
 |Constante|Valeur|Description|  
-|---------------|------------|-----------------|  
-|SCRIPTSTAT\_STATEMENT\_COUNT|1|Retourne le nombre d'instructions exécutées comme le script démarré ou les statistiques ont été réinitialisé.|  
+|--------------|-----------|-----------------|  
+|SCRIPTSTAT_STATEMENT_COUNT|1|Retourne le nombre d’instructions exécutées depuis le script démarré ou que les statistiques ont été réinitialisées.|  
   
  `pluHi`  
- \[out\]  Les bits de grande 32 d'un entier non signé 64 bits représentant la statistique.  
+ [out] 32 bits de poids fort d’un entier non signé 64 bits représentant la statistique.  
   
  `pluLo`  
- \[out\]  les bits du bas 32 d'un entier non signé 64 bits représentant la statistique.  
+ [out] 32 bits de poids faibles d’un entier non signé 64 bits représentant la statistique.  
   
-## Valeur de retour  
- La méthode retourne `HRESULT`.  Les valeurs possibles incluent, mais ne sont pas limitées aux valeurs dans le tableau suivant.  
+## <a name="return-value"></a>Valeur de retour  
+ La méthode retourne `HRESULT`. Les valeurs possibles incluent, mais ne sont pas limités aux valeurs dans le tableau suivant.  
   
 |Valeur|Description|  
-|------------|-----------------|  
+|-----------|-----------------|  
 |`S_OK`|La méthode a réussi.|  
   
-## Notes  
- Cette méthode retourne une des statistiques standard de script.  
+## <a name="remarks"></a>Remarques  
+ Cette méthode retourne l’une des statistiques de script standard.  
   
-## Voir aussi  
+## <a name="see-also"></a>Voir aussi  
  [IActiveScriptStats::GetStatEx](../../winscript/reference/iactivescriptstats-getstatex.md)   
- [IActiveScriptStats, interface](../../winscript/reference/iactivescriptstats-interface.md)
+ [Interface IActiveScriptStats](../../winscript/reference/iactivescriptstats-interface.md)

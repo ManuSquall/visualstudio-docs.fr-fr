@@ -1,27 +1,30 @@
 ---
-title: "IDebugDocumentText::GetContextOfPosition | Microsoft Docs"
-ms.custom: ""
-ms.date: "01/18/2017"
-ms.prod: "windows-script-interfaces"
-ms.reviewer: ""
-ms.suite: ""
-ms.tgt_pltfrm: ""
-ms.topic: "reference"
+title: IDebugDocumentText::GetContextOfPosition | Documents Microsoft
+ms.custom: 
+ms.date: 01/18/2017
+ms.prod: windows-script-interfaces
+ms.reviewer: 
+ms.suite: 
+ms.tgt_pltfrm: 
+ms.topic: reference
 apiname: IDebugDocumentText.GetContextOfPosition
 apilocation: pdm.dll
-helpviewer_keywords: 
-  - "IDebugDocumentText::GetContextOfPosition"
+helpviewer_keywords: IDebugDocumentText::GetContextOfPosition
 ms.assetid: 86560853-d9b1-499a-a1b5-ea06aa1f1f5c
-caps.latest.revision: 8
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 8
+caps.latest.revision: "8"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: f1be8bb6d350a2ca68912622396af52f1625985a
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.translationtype: MT
+ms.contentlocale: fr-FR
+ms.lasthandoff: 10/27/2017
 ---
-# IDebugDocumentText::GetContextOfPosition
-Crée un objet de contexte de document qui correspond à la plage fourni de la position du caractère.  
+# <a name="idebugdocumenttextgetcontextofposition"></a>IDebugDocumentText::GetContextOfPosition
+Crée un objet de contexte de document correspondant à la plage de position de caractère fourni.  
   
-## Syntaxe  
+## <a name="syntax"></a>Syntaxe  
   
 ```  
 HRESULT GetContextOfPosition(  
@@ -31,25 +34,25 @@ HRESULT GetContextOfPosition(
 );  
 ```  
   
-#### Paramètres  
+#### <a name="parameters"></a>Paramètres  
  `cCharacterPosition`  
- \[in\]  Position de départ de la plage de la position du caractère.  
+ [in] Emplacement de la plage de position de caractère de début.  
   
  `cNumChars`  
- \[in\]  Nombre de caractères de la plage.  
+ [in] Nombre de caractères dans la plage.  
   
  `ppsc`  
- \[out\]  L'objet de contexte de document qui correspond à la plage spécifiée de la position du caractère.  
+ [out] L’objet de contexte de document correspondant à la plage de position de caractère spécifiée.  
   
-## Valeur de retour  
- La méthode retourne `HRESULT`.  Les valeurs possibles incluent, mais ne sont pas limitées à, celles dans le tableau suivant.  
+## <a name="return-value"></a>Valeur de retour  
+ La méthode retourne `HRESULT`. Les valeurs possibles sont notamment celles figurant dans le tableau suivant.  
   
 |Valeur|Description|  
-|------------|-----------------|  
+|-----------|-----------------|  
 |`S_OK`|La méthode a réussi.|  
   
-## Notes  
- Cette méthode crée un objet de contexte de document qui correspond à la plage fourni de la position du caractère.  
+## <a name="remarks"></a>Remarques  
+ Cette méthode crée un objet de contexte de document correspondant à la plage de position de caractère fourni.  
   
-## Voir aussi  
- [IDebugDocumentText, interface](../../winscript/reference/idebugdocumenttext-interface.md)
+## <a name="see-also"></a>Voir aussi  
+ [Interface IDebugDocumentText](../../winscript/reference/idebugdocumenttext-interface.md)

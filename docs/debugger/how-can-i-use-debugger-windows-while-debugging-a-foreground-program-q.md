@@ -1,44 +1,42 @@
 ---
-title: "Comment puis-je utiliser les fen&#234;tres du d&#233;bogueur pendant le d&#233;bogage d&#39;un programme d&#39;avant-plan&#160;? | Microsoft Docs"
-ms.custom: ""
-ms.date: "12/05/2016"
-ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-debug"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "vs.debug.background"
-dev_langs: 
-  - "FSharp"
-  - "VB"
-  - "CSharp"
-  - "C++"
-  - "C++"
-helpviewer_keywords: 
-  - "déboguer (Visual Studio), programmes d'avant-plan"
-  - "déboguer (Visual Studio), en observant les programmes d'avant-plan"
-  - "focus, déboguer en observant les programmes d'avant-plan"
-  - "débogage de programmes d'avant-plan"
-  - "débogage distant, déboguer les programmes d'avant-plan"
+title: "Comment puis-je utiliser les fenêtres du débogueur pendant le débogage d'un programme d'avant-plan ? | Microsoft Docs"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-debug
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords: vs.debug.background
+dev_langs:
+- CSharp
+- VB
+- FSharp
+- C++
+helpviewer_keywords:
+- foreground program debugging
+- remote debugging, debugging foreground programs
+- debugging [Visual Studio], while observing foreground programs
+- focus, debugging while observing foreground programs
+- debugging [Visual Studio], foreground programs
 ms.assetid: 9e67a308-1c81-42ab-966b-7fc3c1d2bf7a
-caps.latest.revision: 16
-caps.handback.revision: 16
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
+caps.latest.revision: "16"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: 08f6b369da587ecb0b4bc9e991bbdcce36235fa8
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: fr-FR
+ms.lasthandoff: 10/31/2017
 ---
-# Comment puis-je utiliser les fen&#234;tres du d&#233;bogueur pendant le d&#233;bogage d&#39;un programme d&#39;avant-plan&#160;?
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
-
-## Description du problème  
- J'essaie de corriger un problème de peinture de l'écran.  Pour observer ce problème, je dois conserver mon programme au premier plan. Autrement dit, je n'ai pas accès aux fenêtres de débogage.  Que puis\-je faire ?  
+# <a name="how-can-i-use-debugger-windows-while-debugging-a-foreground-program"></a>Comment puis-je utiliser les fenêtres du débogueur pendant le débogage d'un programme d'avant-plan ?
+## <a name="problem-description"></a>Description du problème  
+ J'essaie de corriger un problème de peinture de l'écran. Pour observer ce problème, je dois conserver mon programme au premier plan. Autrement dit, je n'ai pas accès aux fenêtres de débogage. Que puis-je faire ?  
   
-## Solution  
- Si vous disposez d'un autre ordinateur, vous pouvez recourir au débogage distant.  Dans une installation comportant deux ordinateurs, vous pouvez observer la peinture de l'écran sur l'ordinateur distant, tout en utilisant le débogueur sur l'hôte.  Pour plus d'informations sur le débogage distant, consultez [Configuration du débogage distant](../Topic/Set%20Up%20the%20Remote%20Tools%20on%20the%20Device.md).  
+## <a name="solution"></a>Solution  
+ Si vous disposez d'un autre ordinateur, vous pouvez recourir au débogage distant. Dans une installation comportant deux ordinateurs, vous pouvez observer la peinture de l'écran sur l'ordinateur distant, tout en utilisant le débogueur sur l'hôte. Pour plus d’informations sur le débogage distant, consultez [débogage distant](../debugger/remote-debugging.md).  
   
-## Voir aussi  
- [Forum Aux Questions sur le débogage du code natif](../debugger/debugging-native-code-faqs.md)   
+## <a name="see-also"></a>Voir aussi  
+ [Foire aux questions de débogage du Code natif](../debugger/debugging-native-code-faqs.md)   
  [Débogage du code natif](../debugger/debugging-native-code.md)

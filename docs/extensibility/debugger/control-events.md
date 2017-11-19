@@ -1,42 +1,43 @@
 ---
-title: "&#201;v&#233;nements de contr&#244;le | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-helpviewer_keywords: 
-  - "débogage [Debugging SDK], événements"
+title: "Événements de contrôle | Documents Microsoft"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+helpviewer_keywords: debugging [Debugging SDK], events
 ms.assetid: 0fc63484-5fb6-4887-9ea4-1905b459ca9d
-caps.latest.revision: 7
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 7
+caps.latest.revision: "7"
+author: gregvanl
+ms.author: gregvanl
+manager: ghogen
+ms.openlocfilehash: 3220e3c6ef1a20b8a434fbfab13b419beb331032
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: fr-FR
+ms.lasthandoff: 10/31/2017
 ---
-# &#201;v&#233;nements de contr&#244;le
-[!INCLUDE[vs2017banner](../../code-quality/includes/vs2017banner.md)]
-
-Vous devez envoyer des événements pendant l'exécution contrôlée de votre programme.  Tous les événements sont envoyés à l'aide de l'interface d' [IDebugEvent2](../../extensibility/debugger/reference/idebugevent2.md) et ont des attributs qui requièrent que vous pour implémenter la méthode d' [IDebugEvent2 : : GetAttributes](../../extensibility/debugger/reference/idebugevent2-getattributes.md) .  
+# <a name="control-events"></a>Événements de contrôle
+Vous devez envoyer des événements pendant l’exécution contrôlée de votre programme. Tous les événements sont envoyés à l’aide de la [IDebugEvent2](../../extensibility/debugger/reference/idebugevent2.md) interfaces et avoir des attributs qui requièrent une vous permet d’implémenter le [IDebugEvent2::GetAttributes](../../extensibility/debugger/reference/idebugevent2-getattributes.md) (méthode).  
   
-## méthodes supplémentaires  
- Certains événements requièrent l'implémentation des méthodes supplémentaires, comme suit :  
+## <a name="additional-methods"></a>Méthodes supplémentaires  
+ Certains événements nécessitent l’implémentation des méthodes supplémentaires, comme suit :  
   
--   Envoyer l'interface d' [IDebugEngineCreateEvent2](../../extensibility/debugger/reference/idebugenginecreateevent2.md) lorsque le moteur de \(DE\) débogage est initialisé vous obligent à implémenter la méthode d' [IDebugEngineCreateEvent2 : : GetEngine](../../extensibility/debugger/reference/idebugenginecreateevent2-getengine.md) .  
+-   Envoi de la [IDebugEngineCreateEvent2](../../extensibility/debugger/reference/idebugenginecreateevent2.md) interface lorsque le moteur de débogage (DE) est initialisé, vous devez implémenter la [IDebugEngineCreateEvent2::GetEngine](../../extensibility/debugger/reference/idebugenginecreateevent2-getengine.md) (méthode).  
   
--   Le contrôle d'exécution requiert l'implémentation des événements de ce type de contrôle que les interfaces d' [IDebugBreakEvent2](../../extensibility/debugger/reference/idebugbreakevent2.md) et d'[IDebugStepCompleteEvent2](../../extensibility/debugger/reference/idebugstepcompleteevent2.md) .  **IDebugBreakEvent2** est obligatoire uniquement pour les sauts asynchrones.  
+-   Contrôle de l’exécution nécessite l’implémentation des événements de contrôle tels que les [IDebugBreakEvent2](../../extensibility/debugger/reference/idebugbreakevent2.md) et[IDebugStepCompleteEvent2](../../extensibility/debugger/reference/idebugstepcompleteevent2.md) interfaces. **IDebugBreakEvent2** est requis uniquement pour les sauts asynchrones.  
   
--   La progression dans les fonctions requiert l'implémentation de l'interface d' [IDebugStepCompleteEvent2](../../extensibility/debugger/reference/idebugstepcompleteevent2.md) et de ses méthodes.  
+-   Pas à pas détaillé dans les fonctions nécessite l’implémentation de la [IDebugStepCompleteEvent2](../../extensibility/debugger/reference/idebugstepcompleteevent2.md) interface et ses méthodes.  
   
- Les événements dérivant des points d'arrêt requièrent l'implémentation des interfaces d' [IDebugBreakpointErrorEvent2](../../extensibility/debugger/reference/idebugbreakpointerrorevent2.md), d' [IDebugBreakpointEvent2](../../extensibility/debugger/reference/idebugbreakpointevent2.md), et d' [IDebugBreakpointBoundEvent2](../../extensibility/debugger/reference/idebugbreakpointboundevent2.md) , ainsi que des méthodes d' [IDebugBreakpointBoundEvent2 : : GetPendingBreakpoint](../../extensibility/debugger/reference/idebugbreakpointboundevent2-getpendingbreakpoint.md) et d' [EnumBoundBreakpoints](../../extensibility/debugger/reference/idebugbreakpointboundevent2-enumboundbreakpoints.md) .  
+ Dérivation à partir de points d’arrêt des événements requièrent l’implémentation de la [IDebugBreakpointErrorEvent2](../../extensibility/debugger/reference/idebugbreakpointerrorevent2.md), [IDebugBreakpointEvent2](../../extensibility/debugger/reference/idebugbreakpointevent2.md), et [IDebugBreakpointBoundEvent2](../../extensibility/debugger/reference/idebugbreakpointboundevent2.md) interfaces, ainsi que le [IDebugBreakpointBoundEvent2::GetPendingBreakpoint](../../extensibility/debugger/reference/idebugbreakpointboundevent2-getpendingbreakpoint.md) et [EnumBoundBreakpoints](../../extensibility/debugger/reference/idebugbreakpointboundevent2-enumboundbreakpoints.md) méthodes.  
   
- L'évaluation d'une expression asynchrone vous obligent à appliquer l'interface d' [IDebugExpressionEvaluationCompleteEvent2](../../extensibility/debugger/reference/idebugexpressionevaluationcompleteevent2.md) et ses méthodes d' [IDebugExpressionEvaluationCompleteEvent2 : : GetExpression](../../extensibility/debugger/reference/idebugexpressionevaluationcompleteevent2-getexpression.md)[et GetResult](../../extensibility/debugger/reference/idebugexpressionevaluationcompleteevent2-getresult.md) .  
+ Évaluation de l’expression asynchrone, vous devez implémenter la [IDebugExpressionEvaluationCompleteEvent2](../../extensibility/debugger/reference/idebugexpressionevaluationcompleteevent2.md) interface et son [IDebugExpressionEvaluationCompleteEvent2::GetExpression](../../extensibility/debugger/reference/idebugexpressionevaluationcompleteevent2-getexpression.md) [et GetResult](../../extensibility/debugger/reference/idebugexpressionevaluationcompleteevent2-getresult.md) méthodes.  
   
- Les événements synchrones requièrent l'implémentation de la méthode d' [IDebugEngine2 : : ContinueFromSynchronousEvent](../Topic/IDebugEngine2::ContinueFromSynchronousEvent.md) .  
+ Événements synchrones nécessitent la mise en œuvre le [IDebugEngine2::ContinueFromSynchronousEvent](../../extensibility/debugger/reference/idebugengine2-continuefromsynchronousevent.md) (méthode).  
   
- Pour que votre moteur a écrit la sortie de style de la chaîne, vous devez implémenter la méthode d' [IDebugOutputStringEvent2 : : GetString](../Topic/IDebugOutputStringEvent2::GetString.md) .  
+ Pour votre moteur écrire la sortie de chaîne-style, vous devez implémenter la [IDebugOutputStringEvent2::GetString](../../extensibility/debugger/reference/idebugoutputstringevent2-getstring.md) (méthode).  
   
-## Voir aussi  
- [Contrôle de l'exécution et l'évaluation de l'état](../../extensibility/debugger/execution-control-and-state-evaluation.md)
+## <a name="see-also"></a>Voir aussi  
+ [Contrôle de l’exécution et évaluation de l’état](../../extensibility/debugger/execution-control-and-state-evaluation.md)

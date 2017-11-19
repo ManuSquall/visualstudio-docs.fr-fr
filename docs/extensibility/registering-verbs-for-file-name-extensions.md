@@ -1,30 +1,31 @@
 ---
-title: "Inscription des verbes pour les Extensions de nom de fichier | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-helpviewer_keywords: 
-  - "verbes, l’inscription"
+title: "L’inscription des verbes aux Extensions de nom de fichier | Documents Microsoft"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+helpviewer_keywords: verbs, registering
 ms.assetid: 81a58e40-7cd0-4ef4-a475-c4e1e84d6e06
-caps.latest.revision: 16
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 16
+caps.latest.revision: "16"
+author: gregvanl
+ms.author: gregvanl
+manager: ghogen
+ms.openlocfilehash: 8f430486c613e6281404110d4441d2a3d2100534
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: fr-FR
+ms.lasthandoff: 10/31/2017
 ---
-# Inscription des verbes pour les Extensions de nom de fichier
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
-
-L’association d’une extension de nom de fichier avec une application possède généralement une action par défaut qui se produit lorsqu’un utilisateur double\-clique sur un fichier. Cette action est liée à un verbe, par exemple ouvrir, qui correspond à l’action de préférence.  
+# <a name="registering-verbs-for-file-name-extensions"></a>L’inscription des verbes aux Extensions de nom de fichier
+L’association d’une extension de nom de fichier avec une application a généralement une action par défaut qui se produit lorsqu’un utilisateur double-clique sur un fichier. Cette action est liée à un verbe, par exemple ouvrir, qui correspond à l’action de préférence.  
   
- Vous pouvez enregistrer des verbes qui sont associées à un identificateur programmatique \(ProgID\) pour une extension à l’aide de la clé de Shell située à HKEY\_CLASSES\_ROOT\\*progid*\\shell. Pour plus d’informations, consultez [des Types de fichiers](http://msdn.microsoft.com/library/windows/desktop/cc144148\(v=vs.85\).aspx).  
+ Vous pouvez inscrire les verbes qui sont associés à un identificateur programmatique (ProgID) d’une extension à l’aide de la clé de l’interpréteur de commandes située à HKEY_CLASSES_ROOT\\*progid*\shell. Pour plus d’informations, consultez [Types de fichiers](http://msdn.microsoft.com/library/windows/desktop/cc144148\(v=vs.85\).aspx).  
   
-## L’inscription des verbes Standard  
- Le système d’exploitation reconnaît les actions standard suivantes :  
+## <a name="registering-standard-verbs"></a>L’inscription des verbes Standard  
+ Le système d’exploitation reconnaît les verbes standards suivants :  
   
 -   Ouvrir  
   
@@ -34,9 +35,9 @@ L’association d’une extension de nom de fichier avec une application possèd
   
 -   Imprimer  
   
--   Préversion  
+-   Preview  
   
- Si possible, inscrivez un verbe standard. Le choix le plus courant est le verbe Open. Utilisez le verbe de modification uniquement s’il existe une différence entre l’ouverture du fichier et la modification du fichier. Par exemple, ouvrir un fichier .htm affiche dans le navigateur, tandis que la modification d’un fichier .htm démarre un éditeur HTML. Les verbes standards sont localisés avec le paramètres régionaux du système.  
+ Chaque fois que possible, inscrivez un verbe standard. Le choix le plus courant est le verbe Open. Utilisez le verbe de modification uniquement s’il existe une différence entre l’ouverture du fichier et la modification du fichier. Par exemple, ouverture d’un fichier .htm affiche dans le navigateur, tandis que la modification d’un fichier .htm démarre un éditeur HTML. Les verbes standards sont localisés avec les paramètres régionaux du système d’exploitation.  
   
 > [!NOTE]
 >  Lorsque vous inscrivez des verbes standard, ne définissez pas la valeur par défaut pour ouvrir la clé. La valeur par défaut contient la chaîne d’affichage dans le menu. Le système d’exploitation fournit cette chaîne des verbes standard.  
@@ -106,12 +107,11 @@ L’association d’une extension de nom de fichier avec une application possèd
 @="system"  
 ```  
   
-## Définition de l’action par défaut  
- Le verbe par défaut est l’action qui est exécutée lorsqu’un utilisateur double\-clique sur un fichier dans l’Explorateur Windows. Le verbe par défaut est le verbe spécifié comme valeur par défaut pour le HKEY\_CLASSES\_ROOT\\*progid*\\Shell clé. Si aucune valeur n’est spécifiée, le verbe par défaut est la première action spécifiée dans le HKEY\_CLASSES\_ROOT\\*progid*\\Shell liste de clés.  
+## <a name="setting-the-default-verb"></a>Définition de l’action par défaut  
+ Le verbe par défaut est l’action qui est exécutée lorsqu’un utilisateur double-clique sur un fichier dans l’Explorateur Windows. Le verbe par défaut est le verbe spécifié en tant que la valeur par défaut pour le HKEY_CLASSES_ROOT\\*progid*\Shell clé. Si aucune valeur n’est spécifiée, le verbe par défaut est la première action spécifiée dans le HKEY_CLASSES_ROOT\\*progid*\Shell liste de clés.  
   
 > [!NOTE]
->  Si vous envisagez de modifier l’action par défaut d’une extension dans un déploiement côte à côte, considérez l’impact sur l’installation et la suppression. Lors de l’installation, la valeur par défaut d’origine est remplacée.  
+>  Si vous envisagez de modifier l’action par défaut pour une extension dans un déploiement côte à côte, envisagez l’impact sur l’installation et la suppression. Lors de l’installation, la valeur par défaut d’origine est remplacée.  
   
-## Voir aussi  
- [Creating a File Association](_win32_file_associations)   
- [La gestion des Associations de fichiers de côte à côte](../extensibility/managing-side-by-side-file-associations.md)
+## <a name="see-also"></a>Voir aussi  
+ [Gestion des associations de fichiers côte à côte](../extensibility/managing-side-by-side-file-associations.md)

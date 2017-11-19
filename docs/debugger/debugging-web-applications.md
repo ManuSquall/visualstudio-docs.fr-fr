@@ -1,60 +1,47 @@
 ---
-title: "D&#233;bogage d&#39;applications Web | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-debug"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-dev_langs: 
-  - "FSharp"
-  - "VB"
-  - "CSharp"
-  - "C++"
-helpviewer_keywords: 
-  - "débogage ASP.NET, services Web"
-  - "pages Web ASP.NET, débogage"
-  - "déboguer (ASP.NET), à propos du débogage d'applications Web ASP.NET"
-  - "déboguer les applications Web ASP.NET, à propos du débogage d'applications Web ASP.NET"
+title: "Déboguer les Applications Web | Documents Microsoft"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-debug
+ms.tgt_pltfrm: 
+ms.topic: article
+dev_langs:
+- CSharp
+- VB
+- FSharp
+- C++
+helpviewer_keywords:
+- debugging ASP.NET Web applications, about debugging ASP.NET Web applications
+- ASP.NET debugging, Web services
+- debugging [ASP.NET], about debugging ASP.NET Web applications
+- ASP.NET Web pages, debugging
 ms.assetid: a096a90d-6d0d-4752-9fb5-417635ccab3e
-caps.latest.revision: 24
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 24
+caps.latest.revision: "24"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: 7e635a47553cdb0eef1b690e64323ca20188b476
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: fr-FR
+ms.lasthandoff: 10/31/2017
 ---
-# D&#233;bogage d&#39;applications Web
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
-
+# <a name="debugging-web-applications"></a>Débogage d'applications Web
 Cette section décrit comment déboguer plusieurs types d'applications Web.  
   
-## Dans cette section  
- [Comment : déboguer des applications Web](../debugger/how-to-debug-web-applications.md)  
- Décrit comment déboguer un projet [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] encore en développement.  
-  
- [Débogage d'applications Web déployées](../debugger/debugging-deployed-web-applications.md)  
- Explique comment déboguer une application Web [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] déjà déployée.  
-  
+## <a name="in-this-section"></a>Dans cette section   
  [Débogage de scripts côté client](../debugger/client-side-script-debugging.md)  
  Décrit les scripts de test et les scripts côté client dans les pages [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)].  
   
- [Procédure pas à pas : débogage d'un formulaire Web](../debugger/walkthrough-debugging-a-web-form.md)  
- Explique comment déboguer une application Web [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)].  
-  
- [Comment : déboguer des exceptions ASP.NET](../debugger/how-to-debug-aspnet-exceptions.md)  
- Explique comment gérer les exceptions qui se produisent lors du débogage d'applications [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)].  
-  
-## Rubriques connexes  
- [Préparation d'un débogage ASP.NET](../debugger/preparing-to-debug-aspnet.md)  
+## <a name="related-sections"></a>Rubriques connexes  
+ [Débogage d’applications ASP.NET](../debugger/how-to-enable-debugging-for-aspnet-applications.md)  
  Décrit les étapes nécessaires pour activer le débogage d'applications [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)].  
   
- [Débogage d'applications Web déployées](../debugger/debugging-deployed-web-applications.md)  
- Explique comment déboguer une application Web [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] déjà déployée.  
-  
-## Voir aussi  
- [Débogage d'applications et de scripts Web](../debugger/debugging-web-applications-and-script.md)   
- [Paramètres et préparation du débogage](../debugger/debugger-settings-and-preparation.md)   
+## <a name="see-also"></a>Voir aussi  
+ [Débogage d’applications et de scripts web](../debugger/debugging-web-applications-and-script.md)   
+ [Paramètres et préparation du débogueur](../debugger/debugger-settings-and-preparation.md)   
  [Principes de base du débogueur](../debugger/debugger-basics.md)   
- [Débogage dans Visual Studio](../debugger/debugging-in-visual-studio.md)
+ [Débogage dans Visual Studio](../debugger/index.md)  
+ [Visite guidée des fonctionnalités du débogueur](../debugger/debugger-feature-tour.md)

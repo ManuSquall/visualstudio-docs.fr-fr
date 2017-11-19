@@ -1,46 +1,29 @@
 ---
-title: IDebugBinder3::GetTypeArguments | Microsoft Docs
+title: IDebugBinder3::GetTypeArguments | Documents Microsoft
 ms.custom: 
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-sdk
+ms.technology: vs-ide-sdk
 ms.tgt_pltfrm: 
 ms.topic: article
-f1_keywords:
-- IDebugBinder3::GetTypeArguments
-helpviewer_keywords:
-- IDebugBinder3::GetTypeArguments method
+f1_keywords: IDebugBinder3::GetTypeArguments
+helpviewer_keywords: IDebugBinder3::GetTypeArguments method
 ms.assetid: fa0c37a7-327f-463e-9a9d-bb3f534584cb
-caps.latest.revision: 7
+caps.latest.revision: "7"
+author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-translation.priority.mt:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
+ms.openlocfilehash: 7aff11599f00ad417915c4cb4f4e6ad907b5660d
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
 ms.translationtype: MT
-ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
-ms.openlocfilehash: 0abbea4c880f3cec8969a4ece484d5b333bc8638
-ms.contentlocale: fr-fr
-ms.lasthandoff: 08/28/2017
-
+ms.contentlocale: fr-FR
+ms.lasthandoff: 10/31/2017
 ---
 # <a name="idebugbinder3gettypearguments"></a>IDebugBinder3::GetTypeArguments
-This method retrieves a list of argument types associated with this object.  
+Cette méthode récupère une liste de types d’arguments associé à cet objet.  
   
-## <a name="syntax"></a>Syntax  
+## <a name="syntax"></a>Syntaxe  
   
 ```cpp  
 HRESULT GetTypeArguments(  
@@ -60,25 +43,25 @@ int GetTypeArguments(
 );  
 ```  
   
-#### <a name="parameters"></a>Parameters  
+#### <a name="parameters"></a>Paramètres  
  `skip`  
- [in]Number of fields to skip before getting argument types.  
+ [in] Nombre de champs à ignorer avant d’obtenir les types d’arguments.  
   
  `count`  
- [in] The number of argument fields to return (also specifies the size of the `ppFields` array).  
+ [in] Le nombre de champs argument à retourner (spécifie également la taille de la `ppFields` tableau).  
   
  `ppFields`  
- [in, out] An array of fields that will be filled in on return of this method.  
+ [dans, out] Tableau des champs qui seront remplies au retour de cette méthode.  
   
  `pFetched`  
- [out] \(optional) The number of argument type fields actually returned.  
+ [out] \(facultatif) Le nombre d’arguments de type champs retournés.  
   
-## <a name="return-value"></a>Return Value  
- If successful, returns `S_OK`; otherwise, returns an error code.  
+## <a name="return-value"></a>Valeur de retour  
+ En cas de réussite, retourne `S_OK`; sinon, retourne un code d’erreur.  
   
-## <a name="remarks"></a>Remarks  
- The number of argument types can be obtained beforehand with [GetTypeArgumentCount](../../../extensibility/debugger/reference/idebugbinder3-gettypeargumentcount.md).  
+## <a name="remarks"></a>Remarques  
+ Le nombre de types d’arguments peut être obtenu au préalable avec [GetTypeArgumentCount](../../../extensibility/debugger/reference/idebugbinder3-gettypeargumentcount.md).  
   
-## <a name="see-also"></a>See Also  
+## <a name="see-also"></a>Voir aussi  
  [IDebugBinder3](../../../extensibility/debugger/reference/idebugbinder3.md)   
  [GetTypeArgumentCount](../../../extensibility/debugger/reference/idebugbinder3-gettypeargumentcount.md)

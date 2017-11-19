@@ -1,46 +1,47 @@
 ---
-title: "Attachement directement &#224; un programme | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-helpviewer_keywords: 
-  - "moteurs de débogage, attacher aux programmes"
+title: "Attachement directement à un programme | Documents Microsoft"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+helpviewer_keywords: debug engines, attaching to programs
 ms.assetid: ad2b7db8-821c-440c-ba07-c55c6a395e0f
-caps.latest.revision: 10
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 10
+caps.latest.revision: "10"
+author: gregvanl
+ms.author: gregvanl
+manager: ghogen
+ms.openlocfilehash: 8818a57d50595b3c40fa45875a1dfe23d34fb369
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: fr-FR
+ms.lasthandoff: 10/31/2017
 ---
-# Attachement directement &#224; un programme
-[!INCLUDE[vs2017banner](../../code-quality/includes/vs2017banner.md)]
-
-Les utilisateurs qui souhaitent aux programmes de débogage dans un processus en cours en général suivent ce processus :  
+# <a name="attaching-directly-to-a-program"></a>Attachement directement à un programme
+Les utilisateurs qui souhaitent déboguer des programmes dans un processus qui est déjà en cours d’exécution en général, procédez comme suit :  
   
-1.  Dans l'IDE de, choisissez la commande de **processus de débogage** le menu pour **Outils** .  
+1.  Dans l’IDE, choisissez le **déboguer les processus** commande à partir de la **outils** menu.  
   
-     La boîte de dialogue **Processus** s'affiche.  
+     Le **processus** boîte de dialogue s’affiche.  
   
-2.  choisissez un processus et cliquez sur le bouton d' **Attacher** .  
+2.  Choisir un processus et cliquez sur le **attacher** bouton.  
   
-     La boîte de dialogue d' **Attacher au processus** s'affiche, répertoriant tous les moteurs \(DEs\) de débogage installés sur l'ordinateur.  
+     Le **attacher au processus** boîte de dialogue apparaît, répertoriant tous les moteurs de débogage (DEs) installés sur l’ordinateur.  
   
-3.  Spécifiez le à utiliser pour déboguer le processus sélectionné, puis cliquez sur **OK**.  
+3.  Spécifiez à utiliser pour déboguer le processus sélectionné, puis cliquez sur la norme DEs **OK**.  
   
- Le package de débogage démarre une session de débogage et passe la liste DES lui.  La session de débogage passe ensuite cette liste, avec une fonction de rappel, au processus sélectionné, et demande ensuite au processus pour énumérer ses programmes en cours de exécution.  
+ Le package de débogage démarre une session de débogage et lui transmet la liste de DEs. La session de débogage à son tour transmet cette liste, ainsi que d’une fonction de rappel pour le processus sélectionné et vous demande le processus à énumérer ses programmes en cours d’exécution.  
   
- Par programme, en réponse à la demande de l'utilisateur, le package de débogage instancie le gestionnaire de débogage de \(SDM\) session et passe la liste DES sélectionné à celui\-ci.  avec la liste, le package de débogage passe le SDM une interface d' [IDebugEventCallback2](../../extensibility/debugger/reference/idebugeventcallback2.md) .  Le package de débogage passe la liste de les au processus sélectionné en appelant [IDebugProcess2 : : Attachement](../../extensibility/debugger/reference/idebugprocess2-attach.md).  Le SDM appelle ensuite [IDebugProcess2 : : EnumPrograms](../../extensibility/debugger/reference/idebugprocess2-enumprograms.md) sur le port pour énumérer les programmes s'exécutant dans le processus.  
+ Par programme, en réponse à la demande de l’utilisateur, le package de débogage instancie le Gestionnaire de session de débogage (SDM) et lui transmet la liste de DEs sélectionné. En même temps que la liste, le package de débogage transmet le SDM un [IDebugEventCallback2](../../extensibility/debugger/reference/idebugeventcallback2.md) interface. Le package de débogage transmet la liste de pour le processus sélectionné en appelant [IDebugProcess2::Attach](../../extensibility/debugger/reference/idebugprocess2-attach.md). Le SDM appelle ensuite [IDebugProcess2::EnumPrograms](../../extensibility/debugger/reference/idebugprocess2-enumprograms.md) sur le port pour énumérer les programmes en cours d’exécution dans le processus.  
   
- À partir de là, chaque moteur de débogage est attaché à un programme exactement comme indiqué dans [Attachement après un lancement](../../extensibility/debugger/attaching-after-a-launch.md), avec deux exceptions.  
+ À ce stade, chaque moteur de débogage est attaché à un programme exactement comme indiqué dans [attachement après un lancement](../../extensibility/debugger/attaching-after-a-launch.md), avec deux exceptions.  
   
- Pour des raisons d'efficacité, le DES qui sont implémentées pour partager un espace d'adressage avec le SDM lui sont regroupés afin que chaque De dispose d'un jeu de programmes se joindra valeur.  Dans ce cas, [IDebugProcess2](../../extensibility/debugger/reference/idebugprocess2.md) appelle [IDebugEngine2 : : Attachement](../../extensibility/debugger/reference/idebugengine2-attach.md) et le passe un tableau de programmes à l'attachement à.  
+ Pour plus d’efficacité, DEs, qui sont implémentés pour partager un espace d’adressage avec le SDM sont regroupés afin que chaque DE possède un ensemble de programmes, elle s’attache. Dans ce cas, [IDebugProcess2](../../extensibility/debugger/reference/idebugprocess2.md) appelle [IDebugEngine2::Attach](../../extensibility/debugger/reference/idebugengine2-attach.md) et lui passe un tableau des programmes à attacher à.  
   
- La deuxième exception est que les événements de démarrage envoyés par l'un De l'attachement à un programme qui s'exécute déjà n'incluent pas généralement un événement de point d'entrée.  
+ La seconde exception est que les événements de démarrage envoyés par un DE s’attacher à un programme qui est déjà en cours d’exécution n’incluent pas généralement l’événement de point d’entrée.  
   
-## Voir aussi  
- [L'envoi d'événements de démarrage après le lancement d'un](../../extensibility/debugger/sending-startup-events-after-a-launch.md)   
+## <a name="see-also"></a>Voir aussi  
+ [Envoi d’événements de démarrage après un lancement](../../extensibility/debugger/sending-startup-events-after-a-launch.md)   
  [Tâches de débogage](../../extensibility/debugger/debugging-tasks.md)

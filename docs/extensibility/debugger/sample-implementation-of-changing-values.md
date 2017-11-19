@@ -1,428 +1,430 @@
 ---
-title: "Exemple d’impl&#233;mentation de la modification des valeurs | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-helpviewer_keywords: 
-  - "évaluation de l’expression valeurs locales"
-  - "évaluation de l’expression [Debugging SDK], le débogage"
+title: "Exemple d’implémentation de la modification de valeurs | Documents Microsoft"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+helpviewer_keywords:
+- expression evaluation, local values
+- debugging [Debugging SDK], expression evaluation
 ms.assetid: ee2d955b-12ca-4f27-89aa-c2d0e768b6b6
-caps.latest.revision: 11
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 11
+caps.latest.revision: "11"
+author: gregvanl
+ms.author: gregvanl
+manager: ghogen
+ms.openlocfilehash: f3b5fb298d6efdc68553b1585ae290d9414b87a9
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: fr-FR
+ms.lasthandoff: 10/31/2017
 ---
-# Exemple d’impl&#233;mentation de la modification des valeurs
-[!INCLUDE[vs2017banner](../../code-quality/includes/vs2017banner.md)]
-
+# <a name="sample-implementation-of-changing-values"></a>Exemple d’implémentation de la modification des valeurs
 > [!IMPORTANT]
->  Dans Visual Studio 2015, ce moyen d’implémenter des évaluateurs d’expression est déconseillée. Pour plus d’informations sur l’implémentation des évaluateurs d’expression CLR, consultez [évaluateurs d’Expression CLR](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/CLR-Expression-Evaluators) et [exemple d’évaluateur d’Expression gérés](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/Managed-Expression-Evaluator-Sample).  
+>  Dans Visual Studio 2015, ce moyen d’implémenter des évaluateurs d’expression est déconseillée. Pour plus d’informations sur l’implémentation des évaluateurs d’expression CLR, consultez [évaluateurs d’Expression CLR](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/CLR-Expression-Evaluators) et [exemple d’évaluateur d’Expression managé](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/Managed-Expression-Evaluator-Sample).  
   
- Chaque local affiché dans le **variables locales** fenêtre a une [IDebugProperty2](../../extensibility/debugger/reference/idebugproperty2.md) objet associé. Cela `IDebugProperty2` objet contient le nom de l’ordinateur local, valeur et type. Lorsqu’un utilisateur modifie la valeur d’une variable locale, Visual Studio appelle [SetValueAsString](../../extensibility/debugger/reference/idebugproperty2-setvalueasstring.md) pour mettre à jour la valeur de la variable locale dans la mémoire. Dans cet exemple, l’ordinateur local est représenté par la `CFieldProperty` classe qui implémente le `IDebugProperty2` interface.  
+ Chaque local affiché dans le **variables locales** fenêtre a une [IDebugProperty2](../../extensibility/debugger/reference/idebugproperty2.md) objet associé. Cela `IDebugProperty2` objet contient le nom de l’ordinateur local, valeur et type. Lorsqu’un utilisateur modifie la valeur des variables locales, Visual Studio appelle [SetValueAsString](../../extensibility/debugger/reference/idebugproperty2-setvalueasstring.md) pour mettre à jour la valeur de la variable locale dans la mémoire. Dans cet exemple, l’ordinateur local est représenté par le `CFieldProperty` classe qui implémente le `IDebugProperty2` interface.  
   
 > [!NOTE]
->  Pour **Espion** et **Espion express** expressions, la valeur en cours de modification est représentée par la `CValueProperty` classe dans l’exemple MyCEE. Toutefois, l’implémentation de `IDebugProperty2::SetValueAsString` est identique à celui présenté ici.  
+>  Pour **espion** et **Espion express** expressions, la valeur en cours de modification est représentée par la `CValueProperty` classe dans l’exemple MyCEE. Toutefois, l’implémentation de `IDebugProperty2::SetValueAsString` est identique à celui illustré ici.  
   
  Cette implémentation de `IDebugProperty2::SetValueAsString` effectue les tâches suivantes :  
   
 1.  Évalue l’expression pour produire une valeur.  
   
-2.  Lie au [IDebugField](../../extensibility/debugger/reference/idebugfield.md) de l’objet à son emplacement de mémoire et de produire un [IDebugObject](../../extensibility/debugger/reference/idebugobject.md) objet.  
+2.  Lie associé [IDebugField](../../extensibility/debugger/reference/idebugfield.md) de l’objet vers son emplacement de mémoire et de produire un [IDebugObject](../../extensibility/debugger/reference/idebugobject.md) objet.  
   
 3.  Convertit la valeur en une série d’octets.  
   
-4.  Appels [SetValue](../Topic/IDebugObject::SetValue.md) pour stocker les octets dans la mémoire.  
+4.  Appels [SetValue](../../extensibility/debugger/reference/idebugobject-setvalue.md) pour stocker les octets dans la mémoire.  
   
-## Code managé  
+## <a name="managed-code"></a>Code managé  
  Il s’agit d’une implémentation de `IDebugProperty2::SetValueAsString` dans le code managé.  
   
 ```  
 [C#]  
 namespace EEMC  
 {  
-    public class CFieldProperty : IDebugProperty2  
-    {  
-        public HRESULT SetValueAsString(  
-            string pszValue,  
-            uint   dwRadix,  
-            uint   dwTimeout)  
-        {  
-            HRESULT hr = COM.E_NOTIMPL;  
-            uint flags = (uint)enum_PARSEFLAGS.PARSE_EXPRESSION;  
-            CParsedExpression parsedExpression =  
-                new CParsedExpression(flags, dwRadix, pszValue);  
-            IDebugProperty2 value;  
-            parsedExpression.EvaluateSync(flags,  
-                                          dwTimeout,  
-                                          null,  
-                                          null,  
-                                          null,  
-                                          "string",  
-                                          out value);  
-            if (value != null)  
-            {  
-                DEBUG_PROPERTY_INFO[] dpi = new DEBUG_PROPERTY_INFO[1];  
-                hr = value.GetPropertyInfo(  
-                    (uint)enum_DEBUGPROP_INFO_FLAGS.DEBUGPROP_INFO_VALUE,  
-                    dwRadix,  
-                    dwTimeout,  
-                    null,  
-                    0,  
-                    dpi);  
-                if (hr == COM.S_OK)  
-                {  
-                    hr = Field.SetValue(binder,  
-                                        field,  
-                                        dpi[0].bstrValue);  
-                }  
-            }  
-            return hr;  
-        }  
-    }  
+    public class CFieldProperty : IDebugProperty2  
+    {  
+        public HRESULT SetValueAsString(  
+            string pszValue,  
+            uint   dwRadix,  
+            uint   dwTimeout)  
+        {  
+            HRESULT hr = COM.E_NOTIMPL;  
+            uint flags = (uint)enum_PARSEFLAGS.PARSE_EXPRESSION;  
+            CParsedExpression parsedExpression =  
+                new CParsedExpression(flags, dwRadix, pszValue);  
+            IDebugProperty2 value;  
+            parsedExpression.EvaluateSync(flags,  
+                                          dwTimeout,  
+                                          null,  
+                                          null,  
+                                          null,  
+                                          "string",  
+                                          out value);  
+            if (value != null)  
+            {  
+                DEBUG_PROPERTY_INFO[] dpi = new DEBUG_PROPERTY_INFO[1];  
+                hr = value.GetPropertyInfo(  
+                    (uint)enum_DEBUGPROP_INFO_FLAGS.DEBUGPROP_INFO_VALUE,  
+                    dwRadix,  
+                    dwTimeout,  
+                    null,  
+                    0,  
+                    dpi);  
+                if (hr == COM.S_OK)  
+                {  
+                    hr = Field.SetValue(binder,  
+                                        field,  
+                                        dpi[0].bstrValue);  
+                }  
+            }  
+            return hr;  
+        }  
+    }  
   
 //----------------------------------------------------------------------------  
   
-    internal class Field  
-    {  
-        internal static HRESULT SetValue(  
-            IDebugBinder binder,  
-            IDebugField  field,  
-            string       bstrValue)  
-        {  
-            HRESULT hr = COM.E_FAIL;  
-            uint fieldSize = 0;  
-            Type fieldType = GetType(field, out fieldSize);  
-            if (fieldType != null)  
-            {  
-                FIELD_INFO[] fi = new FIELD_INFO[1];  
-                hr = field.GetInfo((uint)enum_FIELD_INFO_FIELDS.FIF_MODIFIERS, fi);  
-                if (hr != COM.S_OK ||  
-                   (fi[0].dwModifiers & (uint)enum_FIELD_MODIFIERS.FIELD_MOD_CONSTANT) != 0)  
-                {  
-                    // Couldn't get field info or field is constant and can't be changed.  
-                    return COM.E_FAIL;  
-                }  
-                IDebugObject valueObject;  
-                IntPtr pBuffer = new IntPtr();  
-                int bufferSize = 0;  
-                binder.Bind(null, field, out valueObject);  
-                if (valueObject != null)  
-                {  
-                    if (fieldType == typeof(sbyte))  
-                    {  
-                        sbyte value = Convert.ToSByte(bstrValue);  
-                        bufferSize = 1;  
-                        pBuffer = Marshal.AllocCoTaskMem(bufferSize);  
-                        Marshal.StructureToPtr(value, pBuffer, false);  
-                    }  
+    internal class Field  
+    {  
+        internal static HRESULT SetValue(  
+            IDebugBinder binder,  
+            IDebugField  field,  
+            string       bstrValue)  
+        {  
+            HRESULT hr = COM.E_FAIL;  
+            uint fieldSize = 0;  
+            Type fieldType = GetType(field, out fieldSize);  
+            if (fieldType != null)  
+            {  
+                FIELD_INFO[] fi = new FIELD_INFO[1];  
+                hr = field.GetInfo((uint)enum_FIELD_INFO_FIELDS.FIF_MODIFIERS, fi);  
+                if (hr != COM.S_OK ||  
+                   (fi[0].dwModifiers & (uint)enum_FIELD_MODIFIERS.FIELD_MOD_CONSTANT) != 0)  
+                {  
+                    // Couldn't get field info or field is constant and can't be changed.  
+                    return COM.E_FAIL;  
+                }  
+                IDebugObject valueObject;  
+                IntPtr pBuffer = new IntPtr();  
+                int bufferSize = 0;  
+                binder.Bind(null, field, out valueObject);  
+                if (valueObject != null)  
+                {  
+                    if (fieldType == typeof(sbyte))  
+                    {  
+                        sbyte value = Convert.ToSByte(bstrValue);  
+                        bufferSize = 1;  
+                        pBuffer = Marshal.AllocCoTaskMem(bufferSize);  
+                        Marshal.StructureToPtr(value, pBuffer, false);  
+                    }  
   
-                    if (fieldType == typeof(short))  
-                    {  
-                        System.Int16 value = Convert.ToInt16(bstrValue);  
-                        bufferSize = 2;  
-                        pBuffer = Marshal.AllocCoTaskMem(bufferSize);  
-                        Marshal.StructureToPtr(value, pBuffer, false);  
-                    }  
+                    if (fieldType == typeof(short))  
+                    {  
+                        System.Int16 value = Convert.ToInt16(bstrValue);  
+                        bufferSize = 2;  
+                        pBuffer = Marshal.AllocCoTaskMem(bufferSize);  
+                        Marshal.StructureToPtr(value, pBuffer, false);  
+                    }  
   
-                    if (fieldType == typeof(int))  
-                    {  
-                        System.Int32 value = Convert.ToInt32(bstrValue);  
-                        bufferSize = 4;  
-                        pBuffer = Marshal.AllocCoTaskMem(bufferSize);  
-                        Marshal.StructureToPtr(value, pBuffer, false);  
-                    }  
+                    if (fieldType == typeof(int))  
+                    {  
+                        System.Int32 value = Convert.ToInt32(bstrValue);  
+                        bufferSize = 4;  
+                        pBuffer = Marshal.AllocCoTaskMem(bufferSize);  
+                        Marshal.StructureToPtr(value, pBuffer, false);  
+                    }  
   
-                    if (fieldType == typeof(long))  
-                    {  
-                        System.Int64 value = Convert.ToInt64(bstrValue);  
-                        bufferSize = 8;  
-                        pBuffer = Marshal.AllocCoTaskMem(bufferSize);  
-                        Marshal.StructureToPtr(value, pBuffer, false);  
-                    }  
+                    if (fieldType == typeof(long))  
+                    {  
+                        System.Int64 value = Convert.ToInt64(bstrValue);  
+                        bufferSize = 8;  
+                        pBuffer = Marshal.AllocCoTaskMem(bufferSize);  
+                        Marshal.StructureToPtr(value, pBuffer, false);  
+                    }  
   
-                    if (fieldType == typeof(byte))  
-                    {  
-                        byte value = Convert.ToByte(bstrValue);  
-                        bufferSize = 1;  
-                        pBuffer = Marshal.AllocCoTaskMem(bufferSize);  
-                        Marshal.StructureToPtr(value, pBuffer, false);  
-                    }  
+                    if (fieldType == typeof(byte))  
+                    {  
+                        byte value = Convert.ToByte(bstrValue);  
+                        bufferSize = 1;  
+                        pBuffer = Marshal.AllocCoTaskMem(bufferSize);  
+                        Marshal.StructureToPtr(value, pBuffer, false);  
+                    }  
   
-                    if (fieldType == typeof(char))  
-                    {  
-                        char value = Convert.ToChar(bstrValue);  
-                        bufferSize = 1;  
-                        pBuffer = Marshal.AllocCoTaskMem(bufferSize);  
-                        Marshal.StructureToPtr(value, pBuffer, false);  
-                    }  
+                    if (fieldType == typeof(char))  
+                    {  
+                        char value = Convert.ToChar(bstrValue);  
+                        bufferSize = 1;  
+                        pBuffer = Marshal.AllocCoTaskMem(bufferSize);  
+                        Marshal.StructureToPtr(value, pBuffer, false);  
+                    }  
   
-                    if (fieldType == typeof(bool))  
-                    {  
-                        bool value = Convert.ToBoolean(bstrValue);  
-                        bufferSize = 1;  
-                        pBuffer = Marshal.AllocCoTaskMem(bufferSize);  
-                        Marshal.StructureToPtr(value, pBuffer, false);  
-                    }  
+                    if (fieldType == typeof(bool))  
+                    {  
+                        bool value = Convert.ToBoolean(bstrValue);  
+                        bufferSize = 1;  
+                        pBuffer = Marshal.AllocCoTaskMem(bufferSize);  
+                        Marshal.StructureToPtr(value, pBuffer, false);  
+                    }  
   
-                    if (fieldType == typeof(uint))  
-                    {  
-                        System.UInt32 value = Convert.ToUInt32(bstrValue);  
-                        bufferSize = 4;  
-                        pBuffer = Marshal.AllocCoTaskMem(bufferSize);  
-                        Marshal.StructureToPtr(value, pBuffer, false);  
-                    }  
+                    if (fieldType == typeof(uint))  
+                    {  
+                        System.UInt32 value = Convert.ToUInt32(bstrValue);  
+                        bufferSize = 4;  
+                        pBuffer = Marshal.AllocCoTaskMem(bufferSize);  
+                        Marshal.StructureToPtr(value, pBuffer, false);  
+                    }  
   
-                   if (fieldType == typeof(ulong))  
-                   {  
-                        System.UInt64 value = Convert.ToUInt64(bstrValue);  
-                        bufferSize = 8;  
-                        pBuffer = Marshal.AllocCoTaskMem(bufferSize);  
-                        Marshal.StructureToPtr(value, pBuffer, false);  
-                   }  
+                   if (fieldType == typeof(ulong))  
+                   {  
+                        System.UInt64 value = Convert.ToUInt64(bstrValue);  
+                        bufferSize = 8;  
+                        pBuffer = Marshal.AllocCoTaskMem(bufferSize);  
+                        Marshal.StructureToPtr(value, pBuffer, false);  
+                   }  
   
-                   if (fieldType == typeof(float))  
-                   {  
-                        float value = Convert.ToSingle(bstrValue);  
-                        bufferSize = sizeof(float);  
-                        pBuffer = Marshal.AllocCoTaskMem(bufferSize);  
-                        Marshal.StructureToPtr(value, pBuffer, false);  
-                   }  
+                   if (fieldType == typeof(float))  
+                   {  
+                        float value = Convert.ToSingle(bstrValue);  
+                        bufferSize = sizeof(float);  
+                        pBuffer = Marshal.AllocCoTaskMem(bufferSize);  
+                        Marshal.StructureToPtr(value, pBuffer, false);  
+                   }  
   
-                   if (fieldType == typeof(double))  
-                   {  
-                        double value = Convert.ToDouble(bstrValue);  
-                        bufferSize = sizeof(double);  
-                        pBuffer = Marshal.AllocCoTaskMem(bufferSize);  
-                        Marshal.StructureToPtr(value, pBuffer, false);  
-                   }  
+                   if (fieldType == typeof(double))  
+                   {  
+                        double value = Convert.ToDouble(bstrValue);  
+                        bufferSize = sizeof(double);  
+                        pBuffer = Marshal.AllocCoTaskMem(bufferSize);  
+                        Marshal.StructureToPtr(value, pBuffer, false);  
+                   }  
   
-                   if (fieldType == typeof(string))  
-                   {  
-                        bufferSize = bstrValue.Length;  
-                        pBuffer = Marshal.StringToCoTaskMemAuto(bstrValue);  
-                   }  
-                   if (bufferSize != 0)  
-                   {  
-                        byte[] byteBuffer = new byte[bufferSize];  
-                        for (int i = 0; i < bufferSize; i++)  
-                        {  
-                            byteBuffer[i] = Marshal.ReadByte(pBuffer,i);  
-                        }  
-                        Marshal.FreeCoTaskMem(pBuffer);  
-                        hr = valueObject.SetValue(byteBuffer, (uint)bufferSize);  
-                    }  
-                }  
-            }  
-            return hr;  
-        }  
-    }  
+                   if (fieldType == typeof(string))  
+                   {  
+                        bufferSize = bstrValue.Length;  
+                        pBuffer = Marshal.StringToCoTaskMemAuto(bstrValue);  
+                   }  
+                   if (bufferSize != 0)  
+                   {  
+                        byte[] byteBuffer = new byte[bufferSize];  
+                        for (int i = 0; i < bufferSize; i++)  
+                        {  
+                            byteBuffer[i] = Marshal.ReadByte(pBuffer,i);  
+                        }  
+                        Marshal.FreeCoTaskMem(pBuffer);  
+                        hr = valueObject.SetValue(byteBuffer, (uint)bufferSize);  
+                    }  
+                }  
+            }  
+            return hr;  
+        }  
+    }  
 }  
 ```  
   
-## Code non managé  
- Il s’agit d’une implémentation de `IDebugProperty2::SetValueAsString` dans le code managé. La fonction d’assistance `FieldCoerceValueType` \(non indiqué\) force un `VARIANT` à un type spécifique et en fait que la valeur est un des types `FieldSetValue` peut gérer.  
+## <a name="unmanaged-code"></a>Code non managé  
+ Il s’agit d’une implémentation de `IDebugProperty2::SetValueAsString` dans le code managé. La fonction d’assistance `FieldCoerceValueType` (non affichée) force une `VARIANT` à un type spécifique et en fait que la valeur est un des types `FieldSetValue` peut gérer.  
   
 ```  
 [C++]  
 STDMETHODIMP CFieldProperty::SetValueAsString(   
-        in LPCOLESTR pszValueStr,  
-        in DWORD     radix,  
-        in DWORD     timeout  
-        )  
+        in LPCOLESTR pszValueStr,  
+        in DWORD     radix,  
+        in DWORD     timeout  
+        )  
 {  
-    HRESULT hr;  
+    HRESULT hr;  
   
-    //evaluate the value  
-    VARIANT value;  
-    hr = Evaluate( m_provider,  
-                   m_address,  
-                   m_binder,  
-                   pszValueStr,  
-                   NULL,  
-                   &value );  
-    if (FAILED(hr))  
-        return hr;  
-    if (hr == S_FALSE)  
-        return E_FAIL;   //parse failed  
+    //evaluate the value  
+    VARIANT value;  
+    hr = Evaluate( m_provider,  
+                   m_address,  
+                   m_binder,  
+                   pszValueStr,  
+                   NULL,  
+                   &value );  
+    if (FAILED(hr))  
+        return hr;  
+    if (hr == S_FALSE)  
+        return E_FAIL;   //parse failed  
   
-    //copy the bits  
-    hr = FieldSetValue( m_binder, m_field, value );  
+    //copy the bits  
+    hr = FieldSetValue( m_binder, m_field, value );  
   
-    return hr;  
+    return hr;  
 }  
   
 //----------------------------------------------------------------------------  
   
 HRESULT FieldSetValue(  
-        in IDebugBinder* pbinder,  
-        in IDebugField*  pfield,  
-        in VARIANT&      rawValue )  
+        in IDebugBinder* pbinder,  
+        in IDebugField*  pfield,  
+        in VARIANT&      rawValue )  
 {  
-    if (pfield == NULL)  
-        return E_INVALIDARG;  
+    if (pfield == NULL)  
+        return E_INVALIDARG;  
   
-    if (pbinder == NULL)  
-        return E_INVALIDARG;  
+    if (pbinder == NULL)  
+        return E_INVALIDARG;  
   
-    HRESULT       hr      = S_OK;  
-    IDebugObject* pobject = NULL;  
-    VARIANT       value;  
-    VariantInit(&value);  
+    HRESULT       hr      = S_OK;  
+    IDebugObject* pobject = NULL;  
+    VARIANT       value;  
+    VariantInit(&value);  
   
-    //check the type  
-    hr = FieldCoerceValueType( pbinder, pfield, rawValue, &value );  
-    if (FAILED(hr))  
-        goto fail;  
-    if (hr == S_FALSE)  
-    {  
-        VariantClear(value);  
-        return E_FAIL;  
-    }  
+    //check the type  
+    hr = FieldCoerceValueType( pbinder, pfield, rawValue, &value );  
+    if (FAILED(hr))  
+        goto fail;  
+    if (hr == S_FALSE)  
+    {  
+        VariantClear(value);  
+        return E_FAIL;  
+    }  
   
-    //get the object  
-    hr = pbinder->Bind( NULL, pfield, &pobject );  
-    if (FAILED(hr))  
-    {  
-        pobject->Release();  
-        VariantClear(value);  
-        return hr;  
-    }  
+    //get the object  
+    hr = pbinder->Bind( NULL, pfield, &pobject );  
+    if (FAILED(hr))  
+    {  
+        pobject->Release();  
+        VariantClear(value);  
+        return hr;  
+    }  
   
-    //set the value  
-    switch (value.vt)  
-    {  
-        case VT_BSTR:  
-        {  
-            if (value.bstrVal == NULL)  
-            {  
-                LPOLESTR pszEmptyStr = OLE("");  
-                hr = pobject->SetValue( reinterpret_cast<BYTE*>(pszEmptyStr),  
-                     sizeof(OLECHAR) );  
-            }  
-            else  
-                hr = pobject->SetValue( reinterpret_cast<BYTE*>(value.bstrVal),  
-                    (SysStringLen(value.bstrVal)+1) * sizeof(wchar_t));  
-        }  
+    //set the value  
+    switch (value.vt)  
+    {  
+        case VT_BSTR:  
+        {  
+            if (value.bstrVal == NULL)  
+            {  
+                LPOLESTR pszEmptyStr = OLE("");  
+                hr = pobject->SetValue( reinterpret_cast<BYTE*>(pszEmptyStr),  
+                     sizeof(OLECHAR) );  
+            }  
+            else  
+                hr = pobject->SetValue( reinterpret_cast<BYTE*>(value.bstrVal),  
+                    (SysStringLen(value.bstrVal)+1) * sizeof(wchar_t));  
+        }  
   
-        case VT_BOOL:  
-        case VT_I1:  
-        case VT_UI1:  
-            hr = pobject->SetValue( reinterpret_cast<BYTE*>(&(value.byref)), 1 );  
-            break;  
+        case VT_BOOL:  
+        case VT_I1:  
+        case VT_UI1:  
+            hr = pobject->SetValue( reinterpret_cast<BYTE*>(&(value.byref)), 1 );  
+            break;  
   
-        case VT_I2:  
-        case VT_UI2:  
-            hr = pobject->SetValue( reinterpret_cast<BYTE*>(&(value.byref)), 2 );  
-            break;  
+        case VT_I2:  
+        case VT_UI2:  
+            hr = pobject->SetValue( reinterpret_cast<BYTE*>(&(value.byref)), 2 );  
+            break;  
   
-        case VT_I4:  
-        case VT_UI4:  
-        case VT_R4:  
-            hr = pobject->SetValue( reinterpret_cast<BYTE*>(&(value.byref)), 4 );  
-            break;  
+        case VT_I4:  
+        case VT_UI4:  
+        case VT_R4:  
+            hr = pobject->SetValue( reinterpret_cast<BYTE*>(&(value.byref)), 4 );  
+            break;  
   
-        case VT_I8:  
-        case VT_UI8:  
-        case VT_R8:  
-            hr = pobject->SetValue( reinterpret_cast<BYTE*>(&(value.byref)), 8 );  
-            break;  
+        case VT_I8:  
+        case VT_UI8:  
+        case VT_R8:  
+            hr = pobject->SetValue( reinterpret_cast<BYTE*>(&(value.byref)), 8 );  
+            break;  
   
-        case VT_VOID:  
-        case VT_EMPTY:  
-            hr = E_FAIL;  
-            break;  
+        case VT_VOID:  
+        case VT_EMPTY:  
+            hr = E_FAIL;  
+            break;  
   
-        case VT_UNKNOWN:  
-        {  
-            //this is also a field (structured type)  
-            if (value.punkVal == NULL)  
-            {  
-                pobject->Release();  
-                VariantClear(value);  
-                return E_FAIL;  
-            };  
+        case VT_UNKNOWN:  
+        {  
+            //this is also a field (structured type)  
+            if (value.punkVal == NULL)  
+            {  
+                pobject->Release();  
+                VariantClear(value);  
+                return E_FAIL;  
+            };  
   
-            IDebugField* valueField;  
-            hr = value.punkVal->QueryInterface( IID_IDebugField,  
-                reinterpret_cast<void**>(&valueField) );  
-            if (FAILED(hr))  
-            {  
-                pobject->Release();  
-                VariantClear(value);  
-                return hr;  
-            };  
+            IDebugField* valueField;  
+            hr = value.punkVal->QueryInterface( IID_IDebugField,  
+                reinterpret_cast<void**>(&valueField) );  
+            if (FAILED(hr))  
+            {  
+                pobject->Release();  
+                VariantClear(value);  
+                return hr;  
+            };  
   
-            //for MyC we simply copy the bits  
-            IDebugObject* valueObject;  
-            hr = pbinder->Bind( NULL, valueField, &valueObject );  
-            valueField->Release();  
-            if (FAILED(hr))  
-            {  
-                pobject->Release();  
-                VariantClear(value);  
-                return hr;  
-            };  
+            //for MyC we simply copy the bits  
+            IDebugObject* valueObject;  
+            hr = pbinder->Bind( NULL, valueField, &valueObject );  
+            valueField->Release();  
+            if (FAILED(hr))  
+            {  
+                pobject->Release();  
+                VariantClear(value);  
+                return hr;  
+            };  
   
-            BYTE* pvalueBits;  
-            UINT  valueSize;  
-            hr = valueObject->GetSize( &valueSize );  
-            if (FAILED(hr))  
-            {  
-                valueObject->Release();  
-                pobject->Release();  
-                VariantClear(value);  
-                return hr;  
-            };  
+            BYTE* pvalueBits;  
+            UINT  valueSize;  
+            hr = valueObject->GetSize( &valueSize );  
+            if (FAILED(hr))  
+            {  
+                valueObject->Release();  
+                pobject->Release();  
+                VariantClear(value);  
+                return hr;  
+            };  
   
-            pvalueBits = NALLOC(BYTE,valueSize+1);  
-            if (!pvalueBits)  
-            {  
-                valueObject->Release();  
-                pobject->Release();  
-                VariantClear(value);  
-                return E_OUTOFMEMORY;  
-            };  
+            pvalueBits = NALLOC(BYTE,valueSize+1);  
+            if (!pvalueBits)  
+            {  
+                valueObject->Release();  
+                pobject->Release();  
+                VariantClear(value);  
+                return E_OUTOFMEMORY;  
+            };  
   
-            hr = valueObject->GetValue( pvalueBits, valueSize );  
-            valueObject->Release();  
-            if (FAILED(hr))  
-            {  
-                free(pvalueBits);  
-                pobject->Release();  
-                VariantClear(value);  
-                return hr;  
-            }  
+            hr = valueObject->GetValue( pvalueBits, valueSize );  
+            valueObject->Release();  
+            if (FAILED(hr))  
+            {  
+                free(pvalueBits);  
+                pobject->Release();  
+                VariantClear(value);  
+                return hr;  
+            }  
   
-            hr = pobject->SetValue( pvalueBits, valueSize );  
-            free(pvalueBits);  
-            if (FAILED(hr))  
-            {  
-                pobject->Release();  
-                VariantClear(value);  
-                return hr;  
-            }  
+            hr = pobject->SetValue( pvalueBits, valueSize );  
+            free(pvalueBits);  
+            if (FAILED(hr))  
+            {  
+                pobject->Release();  
+                VariantClear(value);  
+                return hr;  
+            }  
   
-            break;  
-        }  
+            break;  
+        }  
   
-        default:  
-            //not a primitive type  
-            hr = E_FAIL;  
-            break;  
-    }  
+        default:  
+            //not a primitive type  
+            hr = E_FAIL;  
+            break;  
+    }  
   
-    VariantClear( &value );  
-    pobject->Release();  
-    return hr;  
+    VariantClear( &value );  
+    pobject->Release();  
+    return hr;  
 }  
   
 ```  
   
-## Voir aussi  
+## <a name="see-also"></a>Voir aussi  
  [Modification de la valeur des variables locales](../../extensibility/debugger/changing-the-value-of-a-local.md)   
  [Contexte d’évaluation](../../extensibility/debugger/evaluation-context.md)

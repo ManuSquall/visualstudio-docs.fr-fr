@@ -1,35 +1,35 @@
 ---
-title: "Commandes du menu Affichage | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-debug"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-helpviewer_keywords: 
-  - "commandes du menu Affichage"
+title: Afficher les commandes de Menu | Documents Microsoft
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-debug
+ms.tgt_pltfrm: 
+ms.topic: article
+helpviewer_keywords: View menu commands
 ms.assetid: 86a66cce-3436-4532-bc3e-3b0662c8b198
-caps.latest.revision: 3
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 3
+caps.latest.revision: "3"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: 7eba9358efbbf5321b485bffa5c4b77f94d7abde
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: fr-FR
+ms.lasthandoff: 10/31/2017
 ---
-# Commandes du menu Affichage
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
-
-Le menu **Affichage** fournit des commandes permettant de contrôler l'interface utilisateur de Spy\+\+.  
+# <a name="view-menu-commands"></a>commandes du menu Affichage
+Le **vue** menu fournit des commandes de contrôle Spy ++ interface utilisateur.  
   
  **Police**  
- Ouvre la boîte de dialogue **Police**, dans laquelle vous pouvez sélectionner une police à utiliser dans la vue Spy\+\+ actuelle.  
+ Ouvre le **police** boîte de dialogue, dans laquelle vous pouvez sélectionner une police à utiliser dans la vue Spy ++ actuelle.  
   
- **Barre d'outils**  
- Masque ou affiche la barre d'outils.  
+ **Barre d’outils**  
+ Masque ou affiche la barre d’outils.  
   
- **Status Bar**  
- Masque ou affiche la barre d'état.  
+ **Barre d’état**  
+ Masque ou affiche la barre d’état.  
   
  **Propriétés**  
- Ouvre la boîte de dialogue **Propriétés** de la vue active.
+ Ouvre le **propriétés** boîte de dialogue de la vue active.

@@ -1,59 +1,58 @@
 ---
-title: "IDiaSourceFile::get_checksum | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-debug"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "IDiaSourceFile::get_checksum (méthode)"
+title: IDiaSourceFile::get_checksum | Documents Microsoft
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-debug
+ms.tgt_pltfrm: 
+ms.topic: article
+dev_langs: C++
+helpviewer_keywords: IDiaSourceFile::get_checksum method
 ms.assetid: aad63a7e-4e22-44e4-8a5b-81b5174ced1e
-caps.latest.revision: 9
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 9
+caps.latest.revision: "9"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: c2bcfbc701f6f4799a51d09fac4c4eb184e6f5d7
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: fr-FR
+ms.lasthandoff: 10/31/2017
 ---
-# IDiaSourceFile::get_checksum
-[!INCLUDE[vs2017banner](../../code-quality/includes/vs2017banner.md)]
-
-Récupère les octets de checksum.  
+# <a name="idiasourcefilegetchecksum"></a>IDiaSourceFile::get_checksum
+Récupère les octets de la somme de contrôle.  
   
-## Syntaxe  
+## <a name="syntax"></a>Syntaxe  
   
-```cpp#  
-HRESULT get_checksum (   
-   DWORD  cbData,  
-   DWORD* pcbData,  
-   BYTE   data[]  
+```C++  
+HRESULT get_checksum (   
+   DWORD  cbData,  
+   DWORD* pcbData,  
+   BYTE   data[]  
 );  
 ```  
   
-#### Paramètres  
+#### <a name="parameters"></a>Paramètres  
  `cbData`  
- \[in\]  taille de la mémoire tampon de données, en octets.  
+ [in] Taille de la mémoire tampon de données, en octets.  
   
  `pcbData`  
- \[out\]  Retourne le nombre d'octets de checksum.  Ce paramètre ne peut pas être `NULL`.  
+ [out] Retourne le nombre d’octets de la somme de contrôle. Ce paramètre ne peut pas être `NULL`.  
   
  `data`  
- \[in, out\]  Une mémoire tampon qui est remplie avec les octets de checksum.  Si ce paramètre est `NULL`, alors `pcbData` retourne le nombre d'octets requis.  
+ [dans, out] Une mémoire tampon est remplie avec les octets de la somme de contrôle. Si ce paramètre est `NULL`, puis `pcbData` retourne le nombre d’octets requis.  
   
-## Valeur de retour  
- En cas de réussite, retourne `S_OK`; sinon, retourne un code d'erreur.  
+## <a name="return-value"></a>Valeur de retour  
+ En cas de réussite, retourne `S_OK`; sinon, retourne un code d’erreur.  
   
-## Notes  
- Pour déterminer le type d'algorithme de checksum utilisé pour générer des octets de checksum, appelez la méthode d' [IDiaSourceFile::get\_checksumType](../../debugger/debug-interface-access/idiasourcefile-get-checksumtype.md) .  
+## <a name="remarks"></a>Remarques  
+ Pour déterminer le type d’algorithme de somme de contrôle qui a été utilisé pour générer les octets de la somme de contrôle, appelez le [IDiaSourceFile::get_checksumType](../../debugger/debug-interface-access/idiasourcefile-get-checksumtype.md) (méthode).  
   
- Le checksum est habituellement générée de l'image du fichier source afin de les modifications apportées au fichier source sont répercutées dans les modifications des octets de checksum.  Si les octets de checksum ne correspondent pas à un checksum générée de l'image chargée du fichier, le fichier doit être considéré comme endommagé ou falsifié.  
+ La somme de contrôle est généralement générée à partir de l’image du fichier source pour les modifications dans le fichier source sont reflétées dans les modifications effectuées dans les octets de la somme de contrôle. Si les octets de la somme de contrôle ne correspondent pas généré à partir de l’image chargée du fichier, puis le fichier doit être considérée comme une somme de contrôle endommagés ou falsifiés.  
   
- Les checksums classiques ne sont jamais supérieures à une taille de 32 octets mais ne supposent pas qui est la taille maximale d'un checksum.  Définissez le paramètre d' `data` à `NULL` pour obtenir le nombre d'octets requis pour récupérer le checksum.  Ensuite allouez une mémoire tampon de la taille appropriée et appelez cette méthode une fois de plus avec la nouvelle mémoire tampon.  
+ Les sommes de contrôle standards ne sont jamais plus de 32 octets de taille mais ne supposent pas qui est la taille maximale d’une somme de contrôle. Définir le `data` paramètre `NULL` pour obtenir le nombre d’octets requis pour récupérer la somme de contrôle. Allouer une mémoire tampon de la taille appropriée, puis appelez cette méthode une fois de plus, avec la nouvelle mémoire tampon.  
   
-## Voir aussi  
+## <a name="see-also"></a>Voir aussi  
  [IDiaSourceFile](../../debugger/debug-interface-access/idiasourcefile.md)   
- [IDiaSourceFile::get\_checksumType](../../debugger/debug-interface-access/idiasourcefile-get-checksumtype.md)
+ [IDiaSourceFile::get_checksumType](../../debugger/debug-interface-access/idiasourcefile-get-checksumtype.md)

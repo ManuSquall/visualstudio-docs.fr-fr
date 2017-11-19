@@ -1,46 +1,29 @@
 ---
-title: IDebugCustomAttributeQuery2::IsCustomAttributeDefined | Microsoft Docs
+title: IDebugCustomAttributeQuery2::IsCustomAttributeDefined | Documents Microsoft
 ms.custom: 
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-sdk
+ms.technology: vs-ide-sdk
 ms.tgt_pltfrm: 
 ms.topic: article
-f1_keywords:
-- IDebugCustomAttributeQuery2::IsCustomAttributeDefined
-helpviewer_keywords:
-- IDebugCustomAttributeQuery2::IsCustomAttributeDefined
+f1_keywords: IDebugCustomAttributeQuery2::IsCustomAttributeDefined
+helpviewer_keywords: IDebugCustomAttributeQuery2::IsCustomAttributeDefined
 ms.assetid: 5c07cc52-6d2d-42df-9d76-9f1f769641db
-caps.latest.revision: 10
+caps.latest.revision: "10"
+author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-translation.priority.mt:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
+ms.openlocfilehash: 2f1311beccfb36364bb8039f75bbe2955cbc9fca
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
 ms.translationtype: MT
-ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
-ms.openlocfilehash: 4ba562b125d9a619957c460a32ce00b8c2698e30
-ms.contentlocale: fr-fr
-ms.lasthandoff: 08/28/2017
-
+ms.contentlocale: fr-FR
+ms.lasthandoff: 10/31/2017
 ---
 # <a name="idebugcustomattributequery2iscustomattributedefined"></a>IDebugCustomAttributeQuery2::IsCustomAttributeDefined
-Determines whether a custom attribute exists by name.  
+Détermine si un attribut personnalisé existe par nom.  
   
-## <a name="syntax"></a>Syntax  
+## <a name="syntax"></a>Syntaxe  
   
 ```cpp  
 HRESULT IsCustomAttributeDefined(   
@@ -54,15 +37,15 @@ int IsCustomAttributeDefined(
 );  
 ```  
   
-#### <a name="parameters"></a>Parameters  
+#### <a name="parameters"></a>Paramètres  
  `pszCustomAttributeName`  
- [in] A string containing the name of the custom attribute to find.  
+ [in] Chaîne contenant le nom de l’attribut personnalisé à rechercher.  
   
-## <a name="return-value"></a>Return Value  
- Returns S_OK if the custom attribute is defined on this field, otherwise returns S_FALSE.  
+## <a name="return-value"></a>Valeur de retour  
+ Retourne que S_OK si l’attribut personnalisé est défini sur ce champ, sinon retourne S_FALSE.  
   
-## <a name="remarks"></a>Remarks  
- To obtain the attribute bytes associated with the custom attribute, call the [GetCustomAttributeByName](../../../extensibility/debugger/reference/idebugcustomattributequery2-getcustomattributebyname.md) method.  
+## <a name="remarks"></a>Remarques  
+ Pour obtenir les octets de l’attribut associés à l’attribut personnalisé, appelez le [GetCustomAttributeByName](../../../extensibility/debugger/reference/idebugcustomattributequery2-getcustomattributebyname.md) (méthode).  
   
-## <a name="see-also"></a>See Also  
+## <a name="see-also"></a>Voir aussi  
  [IDebugCustomAttributeQuery2](../../../extensibility/debugger/reference/idebugcustomattributequery2.md)

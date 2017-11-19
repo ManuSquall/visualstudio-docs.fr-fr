@@ -1,35 +1,36 @@
 ---
-title: "Position du document | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-helpviewer_keywords: 
-  - "débogage [Debugging SDK], contextes"
+title: Emplacement de document | Documents Microsoft
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+helpviewer_keywords: debugging [Debugging SDK], contexts
 ms.assetid: b59d739c-7572-427f-a70d-4e5df63d02c1
-caps.latest.revision: 10
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 10
+caps.latest.revision: "10"
+author: gregvanl
+ms.author: gregvanl
+manager: ghogen
+ms.openlocfilehash: 4132742177eac126a6aa67f915c16c2ff4e8c93c
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: fr-FR
+ms.lasthandoff: 10/31/2017
 ---
-# Position du document
-[!INCLUDE[vs2017banner](../../code-quality/includes/vs2017banner.md)]
-
-Dans [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] débogage, **une position de document**:  
+# <a name="document-position"></a>Position du document
+Dans [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] débogage, un **document position**:  
   
--   Fournit une abstraction d'une position dans un fichier source comme connu à l'IDE.  Pour la plupart des langages du jour, une position de document peut être considérée comme emplacement dans un fichier source.  
+-   Fournit une abstraction d’une position dans un fichier source connues de l’IDE. Pour la plupart des langages aujourd'hui, une position de document peut être considérée comme une position dans un fichier source.  
   
--   décrit une position dans un document source à un moteur de débogage.  
+-   Décrit une position dans un document source pour un moteur de débogage.  
   
--   est implémenté par une interface d' [IDebugDocumentPosition2](../../extensibility/debugger/reference/idebugdocumentposition2.md) .  
+-   Est implémentée par un [IDebugDocumentPosition2](../../extensibility/debugger/reference/idebugdocumentposition2.md) interface.  
   
-## Voir aussi  
+## <a name="see-also"></a>Voir aussi  
  [Contexte de code](../../extensibility/debugger/code-context.md)   
  [Contexte de document](../../extensibility/debugger/document-context.md)   
- [Fournisseur de symboles](../../extensibility/debugger/symbol-provider.md)   
+ [Fournisseur de symbole](../../extensibility/debugger/symbol-provider.md)   
  [Interfaces de fournisseur de symboles](../../extensibility/debugger/reference/symbol-provider-interfaces.md)   
- [Contextes de débogueur](../../extensibility/debugger/debugger-contexts.md)
+ [Contextes du débogueur](../../extensibility/debugger/debugger-contexts.md)

@@ -1,51 +1,51 @@
 ---
-title: "Search Tools for Spy++ Views | Microsoft Docs"
-ms.custom: ""
-ms.date: "12/05/2016"
-ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-debug"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-helpviewer_keywords: 
-  - "searching, Spy++"
-  - "Spy++, searching"
+title: Outils de recherche pour les vues Spy ++ | Documents Microsoft
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-debug
+ms.tgt_pltfrm: 
+ms.topic: article
+helpviewer_keywords:
+- searching, Spy++
+- Spy++, searching
 ms.assetid: db0c32cf-8e50-4e1b-9a9f-4c07fd6a2163
-caps.latest.revision: 4
-caps.handback.revision: 4
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
+caps.latest.revision: "4"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: 4fe030aef4ba755b9a147bcc1430d2e6046c9dbf
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: fr-FR
+ms.lasthandoff: 10/31/2017
 ---
-# Search Tools for Spy++ Views
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
-
-Utilisez ces boîtes de dialogue pour spécifier les données qu'une fenêtre Vues Spy\+\+ doit afficher :  
+# <a name="search-tools-for-spy-views"></a>Outils de recherche pour les vues Spy++
+Utilisez ces boîtes de dialogue pour spécifier les données d’une fenêtre Vues Spy ++ affiche :  
   
-## Dans cette section  
- [Boîte de dialogue Rechercher une fenêtre](../debugger/find-window-dialog-box.md)  
- Utilisé pour afficher les propriétés ou les messages d'une fenêtre spécifique.  
+## <a name="in-this-section"></a>Dans cette section  
+ [Rechercher une fenêtre, boîte de dialogue](../debugger/find-window-dialog-box.md)  
+ Permet d’afficher les propriétés ou les messages à partir d’une fenêtre spécifique.  
   
- [Boîte de dialogue Recherche d'une fenêtre](../debugger/window-search-dialog-box.md)  
- Utilisé pour rechercher le nœud pour une fenêtre spécifique dans la vue Fenêtres  
+ [Boîte de dialogue Recherche d’une fenêtre](../debugger/window-search-dialog-box.md)  
+ Utilisé pour rechercher le nœud d’une fenêtre spécifique dans la vue fenêtres.  
   
- [Boîte de dialogue Recherche d'un message](../debugger/message-search-dialog-box.md)  
- Utilisé pour rechercher le nœud d'un message spécifique dans la vue Messages.  
+ [Recherche d’un message, boîte de dialogue](../debugger/message-search-dialog-box.md)  
+ Utilisé pour rechercher le nœud pour un message spécifique dans la vue messages.  
   
- [Boîte de dialogue Recherche d'un processus](../debugger/process-search-dialog-box.md)  
- Utilisé pour rechercher le nœud d'un processus spécifique dans la vue Processus.  
+ [Recherche d’un processus, boîte de dialogue](../debugger/process-search-dialog-box.md)  
+ Utilisé pour rechercher le nœud d’un processus spécifique dans la vue processus.  
   
- [Boîte de dialogue Recherche d'un thread](../debugger/thread-search-dialog-box.md)  
- Utilisé pour rechercher le nœud pour un thread spécifique dans la vue Threads.  
+ [Recherche d’un thread, boîte de dialogue](../debugger/thread-search-dialog-box.md)  
+ Utilisé pour rechercher le nœud d’un thread spécifique dans la vue Threads.  
   
-## Rubriques connexes  
- [Vues Spy\+\+](../debugger/spy-increment-views.md)  
- Explique les arborescences Spy\+\+ des fenêtres, messages, processus et threads.  
+## <a name="related-sections"></a>Rubriques connexes  
+ [Vues Spy++](../debugger/spy-increment-views.md)  
+ Explique les arborescences Spy ++ de windows, les messages, les processus et les threads.  
   
- [Utilisation de Spy\+\+](../debugger/using-spy-increment.md)  
- Présente l'outil Spy\+\+ et explique comment l'utiliser.  
+ [Utilisation de Spy++](../debugger/using-spy-increment.md)  
+ Présente l’outil Spy ++ et explique comment elle peut être utilisée.  
   
- [Référence de Spy\+\+](../debugger/spy-increment-reference.md)  
- Inclut des sections décrivant les menus et les boîtes de dialogue de Spy\+\+.
+ [Informations de référence sur Spy++](../debugger/spy-increment-reference.md)  
+ Inclut des sections décrivant chaque Spy ++ menu et boîte de dialogue.

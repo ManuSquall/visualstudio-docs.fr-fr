@@ -1,42 +1,41 @@
 ---
-title: "Balises Symbols et Symbol | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-debug"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "symboles (DIA SDK)"
+title: Balises Symbols et Symbol | Documents Microsoft
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-debug
+ms.tgt_pltfrm: 
+ms.topic: article
+dev_langs: C++
+helpviewer_keywords: symbols [DIA SDK]
 ms.assetid: 2ee3a262-cda6-48bf-b799-a37edde6c8b8
-caps.latest.revision: 8
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 8
+caps.latest.revision: "8"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: 347ea483fda44d43d73b147a41a55f0945e515e9
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: fr-FR
+ms.lasthandoff: 10/31/2017
 ---
-# Balises Symbols et Symbol
-[!INCLUDE[vs2017banner](../../code-quality/includes/vs2017banner.md)]
-
-Les informations de débogage concernant un programme compilé sont stockées dans le fichier de base de données du programme \(.pdb\) comme symboles qui sont accessibles à l'aide de les API d'Accès Kit de \(DIA\) développement logiciel d'interface de débogage.  Tous les symboles auront [IDiaSymbol::get\_symTag](../Topic/IDiaSymbol::get_symTag.md) et une propriété de [IDiaSymbol::get\_symIndexId](../../debugger/debug-interface-access/idiasymbol-get-symindexid.md) .  La propriété d' `symTag` indique le type de symbole défini par l'énumération de [SymTagEnum, énumération](../../debugger/debug-interface-access/symtagenum.md) .  la propriété d' `symIndexId` est une valeur d' `DWORD` qui contient l'identificateur unique pour chaque instance d'un symbole.  
+# <a name="symbols-and-symbol-tags"></a>Balises Symbols et Symbol
+Les informations de débogage sur un programme compilé sont stockées dans le fichier de base de données (.pdb) du programme en tant que symboles qui sont accessibles à l’aide de l’API du Kit de développement logiciel Debug Interface Access (DIA). Tous les symboles ont un [IDiaSymbol::get_symTag](../../debugger/debug-interface-access/idiasymbol-get-symtag.md) et un [IDiaSymbol::get_symIndexId](../../debugger/debug-interface-access/idiasymbol-get-symindexid.md) propriété. Le `symTag` propriété indique le type de symbole, tel que défini par le [symtagenum, énumération](../../debugger/debug-interface-access/symtagenum.md) énumération. Le `symIndexId` propriété est un `DWORD` valeur qui contient l’identificateur unique pour chaque instance d’un symbole.  
   
- Les symboles ont également des propriétés qui peuvent spécifier des informations supplémentaires sur le symbole ainsi que des références à d'autres symboles, le plus souvent [IDiaSymbol::get\_lexicalParent](../../debugger/debug-interface-access/idiasymbol-get-lexicalparent.md) ou [IDiaSymbol::get\_classParent](../Topic/IDiaSymbol::get_classParent.md).  Lorsque vous interrogez une propriété qui contient une référence, la référence est retournée comme un objet d' [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md) .  De telles propriétés sont toujours couplées avec une autre propriété par le même nom mais suffixées avec « identificateur », par exemple, un [IDiaSymbol::get\_lexicalParentId](../../debugger/debug-interface-access/idiasymbol-get-lexicalparentid.md) et un [IDiaSymbol::get\_classParentId](../Topic/IDiaSymbol::get_classParentId.md).  Les tables dans le plan de [Emplacements des symboles](../../debugger/debug-interface-access/symbol-locations.md), de [Hiérarchie lexicale des types de symboles](../../debugger/debug-interface-access/lexical-hierarchy-of-symbol-types.md), et de [Hiérarchie de classes des types de symboles](../../debugger/debug-interface-access/class-hierarchy-of-symbol-types.md) les propriétés pour chacun des différents genres de symboles.  Ces propriétés peuvent avoir des informations importantes sur les scénarios ou des références à d'autres symboles.  Étant donné que les propriétés d' `*Id` sont les identificateurs ordinaux simplement numériques de leurs propriétés connexes, elles sont omises d'autres de discussions.  Ils sont référencés uniquement lorsque cela est nécessaire pour pouvoir clarification de paramètre.  
+ Symboles ont également des propriétés qui peuvent spécifier des informations supplémentaires sur le symbole, ainsi que les références à d’autres symboles, plus souvent un [IDiaSymbol::get_lexicalParent](../../debugger/debug-interface-access/idiasymbol-get-lexicalparent.md) ou [IDiaSymbol::get_classParent](../../debugger/debug-interface-access/idiasymbol-get-classparent.md). Lorsque vous interrogez une propriété qui contient une référence, la référence est retournée comme un [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md) objet. Ces propriétés sont toujours associées à une autre propriété portant le même nom mais avec le suffixe avec « Id », par exemple, [IDiaSymbol::get_lexicalParentId](../../debugger/debug-interface-access/idiasymbol-get-lexicalparentid.md) et [IDiaSymbol::get_classParentId](../../debugger/debug-interface-access/idiasymbol-get-classparentid.md). Les tables de [emplacements de symboles](../../debugger/debug-interface-access/symbol-locations.md), [hiérarchie lexicale des Types de symbole](../../debugger/debug-interface-access/lexical-hierarchy-of-symbol-types.md), et [hiérarchie de classe de Types de symboles](../../debugger/debug-interface-access/class-hierarchy-of-symbol-types.md) montrer les propriétés pour chacun des différents types de symboles. Ces propriétés peuvent avoir des informations pertinentes sur l’ou les références à d’autres symboles. Étant donné que le `*Id` propriétés sont des identificateurs d’ordinales simplement numériques de leurs propriétés associées, ils sont omis d’autres discussions. Ils sont désignés lorsque cela est nécessaire pour clarification de paramètre.  
   
- Lors d'une tentative d'accès à la propriété, si aucune erreur ne se produit et la propriété de symbole a été assignée à une valeur, la méthode de « get » de la propriété retourne `S_OK`.  Une valeur de retour d' `S_FALSE` indique que la propriété n'est pas valide pour le symbole actuel.  
+ Lorsque vous tentez d’accéder à la propriété, si aucune erreur ne se produit et une valeur a été attribuée à la propriété de symbole, de la propriété « get » retourne de la méthode `S_OK`. La valeur de retour `S_FALSE` indique que la propriété n’est pas valide pour le symbole actuel.  
   
-## Dans cette section  
+## <a name="in-this-section"></a>Dans cette section  
  [Emplacements des symboles](../../debugger/debug-interface-access/symbol-locations.md)  
- décrit les différents genres d'emplacements qu'un symbole peut avoir.  
+ Décrit les différents types d’emplacements, qu'un symbole peut avoir.  
   
  [Hiérarchie lexicale des types de symboles](../../debugger/debug-interface-access/lexical-hierarchy-of-symbol-types.md)  
- Décrit les types de symboles qui forment des hiérarchies lexicales telles que les fichiers, les modules, les fonctions et.  
+ Décrit les types de symboles qui forment les hiérarchies lexicales telles que les fichiers, les modules et fonctions.  
   
  [Hiérarchie de classes des types de symboles](../../debugger/debug-interface-access/class-hierarchy-of-symbol-types.md)  
- Décrit les types de symboles qui correspondent à des éléments de langage tels que les classes, les tableaux, les types de retour de fonction.  
+ Décrit les types de symboles qui correspondent aux différents éléments de langage, telles que les types de retour de fonction, les tableaux et les classes.  
   
-## Voir aussi  
- [Kit de développement logiciel de Debug Interface Access](../../debugger/debug-interface-access/debug-interface-access-sdk.md)
+## <a name="see-also"></a>Voir aussi  
+ [SDK Debug Interface Access](../../debugger/debug-interface-access/debug-interface-access-sdk.md)

@@ -1,44 +1,45 @@
 ---
-title: "Programming Concepts and Features for SharePoint Tools Extensions"
-ms.custom: ""
-ms.date: "02/02/2017"
-ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "office-development"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-dev_langs: 
-  - "VB"
-  - "CSharp"
-helpviewer_keywords: 
-  - "SharePoint development in Visual Studio, extensibility features"
+title: "Concepts et fonctionnalités de programmation pour les Extensions d’outils SharePoint | Documents Microsoft"
+ms.custom: 
+ms.date: 02/02/2017
+ms.reviewer: 
+ms.suite: 
+ms.technology: office-development
+ms.tgt_pltfrm: 
+ms.topic: article
+dev_langs:
+- VB
+- CSharp
+helpviewer_keywords: SharePoint development in Visual Studio, extensibility features
 ms.assetid: 5179e544-f678-422e-a532-1e2d55004b60
-caps.latest.revision: 11
-author: "kempb"
-ms.author: "kempb"
-manager: "ghogen"
-caps.handback.revision: 11
+caps.latest.revision: "11"
+author: gewarren
+ms.author: gewarren
+manager: ghogen
+ms.openlocfilehash: f6d6f3ae5608d8092fbeb065867ae04db4e04c95
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: fr-FR
+ms.lasthandoff: 10/31/2017
 ---
-# Programming Concepts and Features for SharePoint Tools Extensions
-  Il existe plusieurs concepts de programmation et fonctionnalités importantes associés aux outils SharePoint dans Visual Studio.  Ces concepts et fonctionnalités jouent un rôle important dans la plupart des extensions d'outils SharePoint.  
+# <a name="programming-concepts-and-features-for-sharepoint-tools-extensions"></a>Concepts et fonctionnalités de programmation des extensions d’outils SharePoint
+  Il existe plusieurs concepts de programmation importants et les fonctionnalités associées aux outils SharePoint dans Visual Studio. Ces concepts et fonctionnalités jouent un rôle important dans la plupart des extensions des outils SharePoint.  
   
-## Dans cette section  
- [Calling into the SharePoint Object Models](../sharepoint/calling-into-the-sharepoint-object-models.md)  
- Compare l'utilisation des modèles d'objet client et serveur SharePoint à partir des extensions d'outils SharePoint, et indique comment créer des *commandes SharePoint* pour appeler le modèle d'objet serveur SharePoint.  
+## <a name="in-this-section"></a>Dans cette section  
+ [Appel des modèles d’objet SharePoint](../sharepoint/calling-into-the-sharepoint-object-models.md)  
+ Compare l’utilisation du client SharePoint et modèles d’objet serveur SharePoint à partir des extensions d’outils SharePoint et fournit des informations sur la façon dont vous pouvez créer *commandes SharePoint* pour appeler le modèle d’objet serveur SharePoint.  
   
- [Using the SharePoint Project Service](../sharepoint/using-the-sharepoint-project-service.md)  
- Décrit les fonctionnalités que le service de projet SharePoint fournit aux extensions d'outils SharePoint et explique comment récupérer le service dans différents genres d'extensions.  
+ [Utilisation du service de projet SharePoint](../sharepoint/using-the-sharepoint-project-service.md)  
+ Décrit les fonctionnalités que le service de projet SharePoint fournit aux extensions d’outils SharePoint et fournit des instructions pour l’extraction du service dans différents genres d’extensions.  
   
- [Associating Custom Data with SharePoint Tools Extensions](../sharepoint/associating-custom-data-with-sharepoint-tools-extensions.md)  
- Décrit la manière d'associer des données personnalisées à certains types d'objets dans les extensions d'outils SharePoint.  
+ [Association de données personnalisées à des extensions d’outils SharePoint](../sharepoint/associating-custom-data-with-sharepoint-tools-extensions.md)  
+ Décrit comment associer des données personnalisées à certains types d’objets dans les extensions d’outils SharePoint.  
   
-## Voir aussi  
- [Extending the SharePoint Tools in Visual Studio](../sharepoint/extending-the-sharepoint-tools-in-visual-studio.md)   
- [Extending the SharePoint Project System](../sharepoint/extending-the-sharepoint-project-system.md)   
- [Extending the SharePoint Connections Node in Server Explorer](../sharepoint/extending-the-sharepoint-connections-node-in-server-explorer.md)   
- [Debugging Extensions for the SharePoint Tools in Visual Studio](../sharepoint/debugging-extensions-for-the-sharepoint-tools-in-visual-studio.md)   
- [Deploying Extensions for the SharePoint Tools in Visual Studio](../sharepoint/deploying-extensions-for-the-sharepoint-tools-in-visual-studio.md)  
+## <a name="see-also"></a>Voir aussi  
+ [Extension des outils SharePoint dans Visual Studio](../sharepoint/extending-the-sharepoint-tools-in-visual-studio.md)   
+ [Extension du système de projet SharePoint](../sharepoint/extending-the-sharepoint-project-system.md)   
+ [Extension du nœud Connexions SharePoint dans l’Explorateur de serveurs](../sharepoint/extending-the-sharepoint-connections-node-in-server-explorer.md)   
+ [Déboguer des Extensions pour les outils SharePoint dans Visual Studio](../sharepoint/debugging-extensions-for-the-sharepoint-tools-in-visual-studio.md)   
+ [Déploiement d’extensions pour les outils SharePoint dans Visual Studio](../sharepoint/deploying-extensions-for-the-sharepoint-tools-in-visual-studio.md)  
   
   

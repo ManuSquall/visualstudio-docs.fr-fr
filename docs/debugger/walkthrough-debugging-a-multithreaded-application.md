@@ -1,259 +1,169 @@
 ---
-title: "Proc&#233;dure pas &#224; pas&#160;: d&#233;bogage d&#39;une application multithread | Microsoft Docs"
-ms.custom: ""
-ms.date: "12/16/2016"
-ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-debug"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-dev_langs: 
-  - "FSharp"
-  - "VB"
-  - "CSharp"
-  - "C++"
-helpviewer_keywords: 
-  - "débogage multithread, procédure pas à pas"
-  - "procédures pas à pas, débogage multithread"
+title: "Afficher les Threads dans le débogueur | Documents Microsoft"
+ms.custom: 
+ms.date: 04/25/2017
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-debug
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords: vs.debug.threads
+dev_langs:
+- CSharp
+- VB
+- FSharp
+- C++
+helpviewer_keywords:
+- threading [Visual Studio], debugging
+- Thread.Name property
+- debugger, Threads window
+- SetThreadName function
+- Threads window
+- '@TIB'
+- debugging [Visual Studio], threads
 ms.assetid: 590ffd57-0556-43d8-8962-ee27e5b2b7d7
-caps.latest.revision: 38
-caps.handback.revision: 38
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
+caps.latest.revision: "44"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: 64d9eccdf57388428bfcd7ba5e43f75087bcf0bf
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: fr-FR
+ms.lasthandoff: 10/31/2017
 ---
-# Proc&#233;dure pas &#224; pas&#160;: d&#233;bogage d&#39;une application multithread
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
+# <a name="view-threads-in-the-debugger-in-visual-studio-using-the-threads-window"></a>Afficher les Threads dans le débogueur dans Visual Studio à l’aide de la fenêtre Threads
+Dans le **Threads** fenêtre, vous pouvez examiner et manipuler les threads de l’application que vous déboguez. Pour obtenir des instructions sur l’utilisation de la **Threads** fenêtre, consultez [procédure pas à pas : déboguer à l’aide de la fenêtre Threads](../debugger/how-to-use-the-threads-window.md).
+  
+ Le **Threads** fenêtre contient un tableau où chaque ligne représente un thread dans votre application. Par défaut, ce tableau répertorie tous les threads de votre application, mais vous pouvez filtrer la liste de façon à afficher uniquement les threads qui vous intéressent. Chaque colonne contient un type d'informations différent. Vous pouvez également masquer certaines colonnes. Si vous affichez toutes les colonnes, les informations suivantes s'affichent, de gauche à droite :  
+  
+-   La colonne d'indicateur, où vous pouvez marquer un thread auquel vous souhaitez apporter une attention spéciale. Pour plus d’informations sur la façon de signaler un thread, consultez [Comment : indicateur et les Threads sans indicateur](../debugger/how-to-flag-and-unflag-threads.md).  
+  
+-   Colonne de thread active, dans laquelle une flèche jaune indique que le thread actuel (un contour de flèche indique le contexte du débogueur actuel d’un thread non actuel).
+  
+-   Le **ID** colonne, qui contient le numéro d’identification pour chaque thread.  
+  
+-   Le **ID managé** colonne, qui contient les numéros d’identification managés des threads managés.  
+  
+-   Le **catégorie** colonne, qui classe les threads en tant que threads d’interface utilisateur, gestionnaires d’appel de procédure distante ou threads de travail. Une catégorie spéciale identifie le thread principal de l'application.  
+  
+-   Le **nom** colonne qui identifie chaque thread par son nom, le cas échéant, ou en tant que \<sans nom >.  
+  
+-   Le **emplacement** colonne, qui indique où le thread est en cours d’exécution. Vous pouvez développer cet emplacement de façon à afficher l’ensemble de la pile des appels du thread.  
+  
+-   Le **priorité** colonne, qui contient la priorité ou précédence que le système a assignée à chaque thread.  
+  
+-   Le **masque d’affinité** colonne, qui est une colonne avancée (généralement masquée). Cette colonne indique le masque d'affinité de processeur pour chaque thread. Dans un système multiprocesseurs, le masque d'affinité détermine les processeurs sur lesquels un thread peut s'exécuter.  
+  
+-   Le **compteur suspendu** (généralement masquée), de la colonne qui contient le compteur suspendu et est généralement masquée. Ce compteur détermine si un thread peut s'exécuter. Pour obtenir une explication sur le compteur suspendu, consultez « Gel et libération des threads » plus loin dans cette rubrique.  
+  
+-   Le **nom de processus** (généralement masquée), de la colonne qui contient le processus auquel chaque thread appartient. Cette colonne peut être utile lorsque vous déboguez plusieurs processus.  
+  
+### <a name="to-display-the-threads-window-in-break-mode-or-run-mode"></a>Pour afficher la fenêtre Threads en mode arrêt ou en mode exécution  
+  
+-   Pendant le débogage, sélectionnez le **déboguer** menu, pointez sur **Windows**, puis cliquez sur **Threads**.  
+  
+### <a name="to-display-or-hide-a-column"></a>Pour afficher ou masquer une colonne  
+  
+-   Dans la barre d’outils en haut de la **Threads** fenêtre, cliquez sur **colonnes**, puis activez ou désactivez le nom de la colonne que vous souhaitez afficher ou masquer.    
 
-[!INCLUDE[vs_dev11_long](../data-tools/includes/vs_dev11_long_md.md)] dispose d'une fenêtre **Threads** améliorée et d'autres améliorations de l'interface utilisateur facilitant le débogage d'applications multithread.  Cette procédure pas à pas ne prend que quelques minutes. Elle permet de se familiariser avec la nouvelle interface de débogage des applications multithread.  
+## <a name="display-flagged-threads"></a>Afficher les Threads avec indicateur  
+ Vous pouvez signaler un thread auquel vous souhaitez accorder une attention particulière en le marquant avec une icône dans le **Threads** fenêtre. Pour plus d’informations, consultez [Comment : indicateur et les Threads sans indicateur](../debugger/how-to-flag-and-unflag-threads.md). Dans le **Threads** fenêtre, vous pouvez choisir d’afficher tous les threads ou uniquement les threads avec indicateur.  
   
- Pour commencer cette procédure pas à pas, vous avez besoin d'un projet d'application multithread.  Pour créer ce projet, procédez comme suit.  
+#### <a name="to-display-only-flagged-threads"></a>Pour afficher seulement les threads avec indicateur  
   
-#### Pour créer le projet de procédure pas à pas  
+-   Choisissez le **afficher les Threads avec indicateur uniquement** bouton en haut de la **Threads** fenêtre. (Si elle est grisée, vous devez signaler tout d’abord des certains threads.) 
+
+## <a name="freeze-and-thaw-threads"></a>Figer et libérer les Threads  
+ Lorsque vous gelez un thread, le système ne démarre pas son exécution même si les ressources sont disponibles.  
   
-1.  Dans le menu **Fichier**, sélectionnez **Nouveau**, puis cliquez sur **Projet**.  
+ En code natif, vous pouvez suspendre ou reprendre des threads en appelant les fonctions Windows `SuspendThread` et `ResumeThread` ou les fonctions MFC [CWinThread::SuspendThread](/cpp/mfc/reference/CWinThread-class.md#cwinthread__suspendthread) et [CWinThread::ResumeThread](/cpp/mfc/reference/CWinThread-class.md#cwinthread__resumethread). Si vous appelez `SuspendThread` ou `ResumeThread`, vous modifiez le *compteur suspendu*, qui s’affiche dans le **Threads** fenêtre. Toutefois, si vous gelez ou libérez un thread natif, vous ne changez pas le compteur suspendu. En code natif, un thread ne peut pas s'exécuter sauf s'il est libéré et que son compteur suspendu est égal à zéro.  
   
-     La boîte de dialogue **Nouveau projet** s'affiche.  
+ En code managé, le gel ou la libération d'un thread modifie le compteur suspendu. En code managé, un thread gelé possède un compteur suspendu de 1. En code natif, un thread gelé possède un compteur suspendu de 0, à moins qu'il ait été interrompu par un appel `SuspendThread`.  
   
-2.  Dans la zone **Types de projets**, cliquez sur le langage de votre choix : **Visual Basic**, **Visual C\#** ou **Visual C\+\+**.  
+> [!NOTE]
+>  Lors du débogage d'un appel entre code natif et code managé, le code managé s'exécute dans le même thread physique que le code natif qui l'a appelé. Si vous suspendez ou figez le thread natif, le code managé sera également figé.  
   
-3.  Dans la zone **Modèles**, sélectionnez **Application console** ou **Application console CLR**.  
+#### <a name="to-freeze-or-thaw-execution-of-a-thread"></a>Pour geler ou libérer l'exécution d'un thread  
   
-4.  Dans la zone **Nom**, entrez le nom MyThreadWalkthroughApp.  
+-   Dans la barre d’outils en haut de la **Threads** fenêtre, cliquez sur **figer les Threads** ou **libérer les Threads**.  
   
-5.  Cliquez sur **OK**.  
+     Cette action affecte uniquement les threads sélectionnés dans le **Threads** fenêtre. 
+
+### <a name="switch-to-another-thread"></a>Basculer vers un autre thread 
+
+Une flèche jaune indique le thread actuel (et l’emplacement du pointeur d’exécution). Une flèche verte avec extrémité recourbée indique un thread non actuel possède le contexte du débogueur.
+
+#### <a name="to-switch-to-another-thread"></a>Pour basculer vers un autre thread  
   
-     Un nouveau projet console s'affiche.  Lorsque le projet a été créé, un fichier source s'affiche.  En fonction du langage choisi, le fichier source peut être nommé Module1.vb, Program.cs ou MyThreadWalkthroughApp.cpp  
+-   Effectuez l'une des étapes suivantes :  
   
-6.  Supprimez le code qui apparaît dans le fichier source et remplacez\-le par l'exemple de code de la section "Création d'un Thread" dans la rubrique [Creating Threads and Passing Data at Start Time](../Topic/Creating%20Threads%20and%20Passing%20Data%20at%20Start%20Time.md).  
+    -   Double-cliquez sur un thread.  
   
-7.  Dans le menu **Fichier**, cliquez sur **Enregistrer tout**.  
+    -   Cliquez sur un thread, sur **basculer vers Thread**.
+
+## <a name="group-and-sort-threads"></a>Les Threads de tri et de groupe  
+ Lorsque vous regroupez des threads, un titre s'affiche dans le tableau pour chaque groupe. Ce titre contient une description du groupe, telle que « Thread de travail » ou « Threads sans indicateur », ainsi qu'un contrôle d'arborescence. Les threads membres de chaque groupe apparaissent sous le titre approprié. Si vous souhaitez masquer les threads membres d'un groupe, vous pouvez utiliser le contrôle d'arborescence pour réduire ce groupe.  
   
-#### Pour démarrer la procédure pas à pas  
+ Étant donné que le regroupement est prioritaire sur le tri, vous pouvez grouper des threads par catégorie, par exemple, puis les trier par ID dans chaque catégorie.  
   
--   Dans la fenêtre source, recherchez le code suivant :  
+#### <a name="to-sort-threads"></a>Pour trier des threads  
   
-    ```vb  
-    Thread.Sleep(3000)   
-    Console.WriteLine(  
-    ```  
+1.  Dans la barre d’outils en haut de la **Threads** fenêtre, cliquez sur le bouton en haut de n’importe quelle colonne.  
   
-```c#  
-Thread.Sleep(3000);  
-Console.WriteLine();  
-```  
+     Les threads sont alors triés en fonction des valeurs de la colonne choisie.  
   
-```cpp  
-Thread::Sleep(3000);  
-Console.WriteLine();  
-```  
+2.  Si vous souhaitez inverser l'ordre de tri, cliquez de nouveau sur le bouton.  
   
-#### Pour démarrer le débogage  
+     Les threads qui figuraient au début de la liste s'affichent maintenant à la fin.  
   
-1.  Cliquez avec le bouton droit sur l'instruction `Console.WriteLine`, pointez sur **Point d'arrêt**, puis cliquez sur **Insérer un point d'arrêt**.  
+#### <a name="to-group-threads"></a>Pour regrouper des threads  
   
-     Une bille rouge apparaît au niveau de la reliure située sur le côté gauche de la fenêtre source.  Cette bille indique qu'un point d'arrêt est désormais défini à cet emplacement.  
+-   Dans le **Threads** barre d’outils, cliquez sur le **regrouper par** liste, puis cliquez sur les critères que vous souhaitez regrouper des threads.  
   
-2.  Dans le menu **Déboguer**, cliquez sur **Démarrer le débogage**.  
+#### <a name="to-sort-threads-within-groups"></a>Pour trier des threads au sein de groupes  
   
-     Le débogage démarre, votre application console se lance puis s'interrompt au point d'arrêt.  
+1.  Dans la barre d’outils en haut de la **Threads** fenêtre, cliquez sur le **regrouper par** liste, puis cliquez sur les critères que vous souhaitez regrouper des threads.  
   
-3.  Si, à ce stade, la fenêtre d'application console a le focus, cliquez dans la fenêtre [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] pour retourner le focus à [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)].  
+2.  Dans le **Threads** fenêtre, cliquez sur le bouton en haut de n’importe quelle colonne.  
   
-4.  Dans la fenêtre source, localisez la ligne qui contient le code suivant :  
+     Les threads sont alors triés en fonction des valeurs de la colonne choisie.  
   
-    ```vb  
-    Thread.Sleep(5000)   
-    ```  
+#### <a name="to-expand-or-collapse-all-groups"></a>Pour développer ou réduire tous les groupes  
   
-```c#  
-Thread.Sleep(3000);  
-```  
+-   Dans la barre d’outils en haut de la **Threads** fenêtre, cliquez sur **développer les groupes** ou **réduire les groupes**.  
   
-```cpp  
-Thread::Sleep(3000);  
-```  
+## <a name="search-for-specific-threads"></a>Rechercher des Threads spécifiques  
+ Dans [!INCLUDE[vs_dev11_long](../data-tools/includes/vs_dev11_long_md.md)], vous pouvez rechercher des threads qui correspondent à une chaîne spécifiée. Lorsque vous recherchez des threads dans le **Threads** , la fenêtre affiche tous les threads qui correspondent à la chaîne de recherche dans n’importe quelle colonne. Ces informations incluent l’emplacement de thread qui s’affiche en haut de la pile des appels dans le **emplacement** colonne. Par défaut, toutefois, la pile des appels n’est pas examinée.  
   
-#### Pour découvrir le marqueur de thread  
+#### <a name="to-search-for-specific-threads"></a>Pour rechercher des threads spécifiques  
   
-1.  Cliquez avec le bouton droit dans la fenêtre **Threads**, puis cliquez sur **Afficher les threads dans la source**.  
+-   Dans la barre d’outils en haut de la **Threads** fenêtre, accédez à la **recherche** boîte et soit :  
   
-2.  Examinez la reliure située sur le côté gauche de la fenêtre.  Une icône ressemblant à un maillage s'affiche sur cette ligne.  Un des threads est rouge et l'autre est bleu.  Le marqueur de thread indique qu'un thread est interrompu à cet emplacement.  Le thread s'interrompt peut\-être à cet emplacement.  
+    -   Tapez une chaîne recherchée et appuyez sur ENTRÉE.  
   
-3.  Placez le pointeur sur le marqueur de thread.  Un DataTip apparaît.  Le DataTip vous indique le nom et le numéro d'ID de thread de chaque thread interrompu.  Dans ce cas, il n'existe qu'un seul thread dont le nom est probablement `<noname>`.  
+         \- ou -  
   
-4.  Cliquez avec le bouton droit sur le marqueur de thread.  Notez les choix dans le menu contextuel.  
+    -   Cliquez sur la liste déroulante en regard du **recherche** zone, puis sélectionnez une chaîne de recherche d’une recherche précédente.  
   
- Cette icône est un *marqueur de thread* :  
+-   (Facultatif) Pour inclure la pile des appels dans votre recherche, sélectionnez **rechercher la pile des appels**.   
   
- ![Marqueur de thread](../debugger/media/threadmarker.png "ThreadMarker")  
+## <a name="display-thread-call-stacks-and-switching-between-frames"></a>Afficher les piles d’appel de Thread et commutation entre les Frames  
+Dans un programme multithread, chaque thread possède sa propre pile d'appel. Le **Threads** fenêtre offre un moyen pratique pour afficher ces piles.
+
+> [!TIP]
+> Pour obtenir une représentation visuelle de la pile des appels pour chaque thread, utilisez la [piles parallèles](../debugger/get-started-debugging-multithreaded-apps.md) fenêtre.
   
-## Ajout et suppression d'indicateur de threads  
- Dans [!INCLUDE[vs_orcas_long](../debugger/includes/vs_orcas_long_md.md)], vous pouvez indiquer les threads auxquels vous souhaitez accorder une attention particulière.  Le signalement des threads vous permet de suivre les threads importants et d'ignorer ceux de moindre importance.  
+#### <a name="to-view-the-call-stack-of-a-thread"></a>Pour afficher la pile d'appel d'un thread  
   
-#### Pour ajouter des indicateurs de thread  
+-   Dans le **emplacement** colonne, cliquez sur le triangle inversé en regard de l’emplacement de thread.  
   
-1.  Dans le menu **Affichage**, pointez sur **Barres d'outils**.  
+     L’emplacement se développe pour indiquer la pile des appels du thread.  
   
-     Assurez\-vous que la barre d'outils **Emplacement de débogage** est sélectionnée.  
+#### <a name="to-view-or-collapse-the-call-stacks-of-all-threads"></a>Pour afficher ou réduire les piles d‘appels de tous les threads  
   
-2.  Allez à la barre d'outils **Emplacement de débogage**, puis cliquez sur la liste **Thread**.  
+-   Dans la barre d’outils en haut de la **Threads** fenêtre, cliquez sur **développer la pile des appels** ou **réduire la pile des appels**.  
   
-    > [!NOTE]
-    >  Cette barre d'outils se compose de trois listes principales : **Processus**, **Thread** et **Frame de pile**.  
-  
-3.  Notez le nombre de threads qui s'affichent dans la liste.  
-  
-4.  Revenez à la fenêtre source, puis cliquez de nouveau avec le bouton droit sur le marqueur de **Thread**.  
-  
-5.  Dans le menu contextuel, pointez sur **Signaler l'indicateur**, puis cliquez sur le nom et le numéro d'ID du thread.  
-  
-6.  Revenez à la barre d'outils **Emplacement de débogage**, puis cliquez de nouveau sur la liste **Thread**.  
-  
-     Seul le thread avec indicateur s'affiche désormais dans la liste.  Le bouton indicateur situé à droite de la liste **Thread**.  L'icône d'indicateur du bouton était grisée.  Il est désormais rouge clair.  
-  
-7.  Placez le pointeur sur l'icône de l'indicateur.  
-  
-     Un menu contextuel s'affiche.  Ce menu contextuel vous indique le mode de la liste **Thread** dans **Afficher uniquement les threads avec indicateur**.  
-  
-8.  Cliquez sur le bouton indicateur pour revenir au mode **Afficher tous les threads**.  
-  
-9. Cliquez de nouveau sur la liste **Thread** et vérifiez que vous pouvez visualiser de nouveau tous les threads.  
-  
-10. Cliquez sur le bouton indicateur pour revenir au mode **Afficher uniquement les threads avec indicateur**.  
-  
-11. Dans le menu **Déboguer**, pointez sur **Fenêtres**, puis cliquez sur **Threads**.  
-  
-     La fenêtre **Threads** s'affiche.  Un thread possède une icône d'indicateur apparente qui lui est associée.  
-  
-12. Dans la fenêtre source, cliquez de nouveau avec le bouton droit sur le marqueur de thread.  
-  
-     Notez les choix disponibles dans le menu contextuel.  Au lieu de **Signaler l'indicateur**, vous visualisez maintenant **Supprimer l'indicateur**.  Ne cliquez pas sur **Supprimer l'indicateur**.  
-  
-13. Accédez à la procédure suivante relative à la suppression des threads.  
-  
-#### Pour supprimer l'indicateur de threads  
-  
-1.  Dans la fenêtre **Threads**, cliquez avec le bouton droit sur la ligne correspondante au thread avec indicateur.  
-  
-     Un menu contextuel s'affiche.  Il contient les options **Supprimer l'indicateur** et **Supprimer tous les indicateurs**.  
-  
-2.  Pour supprimer l'indicateur de thread, cliquez sur **Supprimer l'indicateur**.  
-  
-3.  Cliquez sur l'icône d'indicateur rouge.  
-  
-4.  Consultez de nouveau la barre d'outils **Emplacement de débogage**.  Le bouton indicateur est de nouveau grisé.  Vous avez supprimé l'indicateur du seul thread avec indicateur.  Comme il n'y a plus aucun thread avec indicateur, la barre d'outils est revenue en mode **Afficher tous les threads**.  Cliquez sur la liste **Thread** et vérifiez que vous pouvez visualiser tous les threads.  
-  
-5.  Revenez à la fenêtre **Threads** et examinez les colonnes d'informations.  
-  
-     Dans la partie supérieure de chaque colonne, le nom de la majorité des boutons permet d'identifier la colonne.  Cependant, la première colonne de gauche ne comporte aucun titre.  Elle contient une icône qui correspond au contour d'un indicateur.  Notez que le contour est identique pour chaque ligne de la liste de thread.  Le contour indique que le thread est sans indicateur.  
-  
-6.  Cliquez sur le contour des indicateurs du second et du troisième threads en partant de la fin de la liste.  
-  
-     Les contours vides deviennent des icônes d'indicateur unies rouge.  
-  
-7.  Cliquez sur le bouton en haut de la colonne d'indicateurs.  
-  
-     L'ordre de la liste de threads a été modifié lorsque vous avez cliqué sur le bouton.  La liste de threads est maintenant triée et les threads avec indicateur sont situés en haut de la liste.  
-  
-8.  Cliquez de nouveau sur le bouton en haut de la colonne d'indicateurs.  
-  
-     L'ordre de tri a encore changé.  
-  
-## En savoir plus sur la fenêtre Threads  
-  
-#### Pour en savoir plus sur la fenêtre Threads  
-  
-1.  Dans la fenêtre **Threads**, examinez la troisième colonne en partant de la gauche.  Le bouton en haut de cette colonne indique l'**ID**.  
-  
-2.  Cliquez sur **ID**.  
-  
-     La liste de threads est maintenant triée par numéro d'ID de thread.  
-  
-3.  Cliquez avec le bouton droit sur un thread de la liste.  Dans le menu contextuel, cliquez sur **Affichage hexadécimal**.  
-  
-     Le format des numéros d'ID de thread se modifie.  
-  
-4.  Placez le pointeur de la souris sur un thread de la liste.  
-  
-     Un DataTip s'affiche peu après.  Il représente une pile des appels partielle du thread.  
-  
-5.  Examinez la quatrième colonne en partant de la gauche, appelée **Catégorie**.  Les threads sont classés dans des catégories.  
-  
-     Le premier thread créé dans un processus correspond au thread principal.  Localisez\-le dans la liste de threads.  
-  
-6.  Cliquez avec le bouton droit sur le thread principal, puis sur **Basculer vers le Thread**.  
-  
-     Une boîte de dialogue d'avertissement s'affiche.  Elle vous indique que [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] ne peut pas afficher le code source du thread principal.  
-  
-     Cliquez sur **OK**.  
-  
-7.  Examinez la fenêtre **Pile des appels** ainsi que la barre d'outils **Emplacement de débogage**.  
-  
-     Le contenu de la fenêtre **Pile des appels** a été modifié.  
-  
-## Basculement du Thread actif  
-  
-#### Pour basculer les threads  
-  
-1.  Dans la fenêtre **Threads**, examinez la deuxième colonne en partant de la gauche.  Le bouton en haut de cette colonne ne comporte aucun texte ou icône.  Cette colonne correspond à la colonne **Thread actif**.  
-  
-2.  Examinez la colonne **Thread actif** et notez qu'un thread comporte une flèche jaune.  Il s'agit de l'*indicateur de thread actif*.  
-  
-3.  Notez le numéro d'ID du thread dans lequel se trouve l'indicateur de thread actif.  Vous allez déplacer l'indicateur de thread actif vers un autre thread, mais vous devrez le remettre à sa place lorsque vous aurez fini.  
-  
-4.  Cliquez avec le bouton droit sur un autre thread puis sur **Basculer vers le Thread**.  
-  
-5.  Observez la fenêtre **Pile des appels** dans la fenêtre source.  Le contenu a été modifié.  
-  
-6.  Examinez la barre d'outils **Emplacement de débogage**.  Le thread actif a également été modifié.  
-  
-7.  Accédez à la barre d'outils **Emplacement de débogage**.  Cliquez sur la zone **Thread**, puis sélectionnez un thread différent dans la liste déroulante.  
-  
-8.  Observez la fenêtre **Threads**.  L'indicateur de thread actif a également été modifié.  
-  
-9. Dans la fenêtre source, cliquez avec le bouton droit sur un marqueur de thread.  Dans le menu contextuel, pointez sur **Basculer vers**, puis cliquez sur le nom et le numéro d'ID d'un thread.  
-  
-     Trois manières de modifier le thread actif vous ont été présentées : à l'aide de la fenêtre **Threads**, de la zone **Thread** dans la barre d'outils **Emplacement de débogage** et à l'aide de l'indicateur de thread dans la fenêtre source.  
-  
-     L'indicateur de thread vous permet de basculer uniquement vers les threads interrompus à cet emplacement précis.  La fenêtre **Threads** et la barre d'outils **Emplacement de débogage** vous permettent de basculer vers tous les threads.  
-  
-## Gel et libération de l'exécution de thread  
-  
-#### Pour figer et dégeler les threads  
-  
-1.  Dans la fenêtre **Threads**, cliquez avec le bouton droit sur un thread, puis sur **Figer**.  
-  
-2.  Observez la colonne de threads actifs.  Les deux barres verticales y sont maintenant affichées.  Ces barres bleues indiquent que le thread est figé.  
-  
-3.  Observez la colonne **Suspendre**.  Le compteur de suspension du thread est désormais à 1.  
-  
-4.  Cliquez avec le bouton droit sur le thread figé, puis sur **Libérer**.  
-  
-     La colonne de threads actifs ainsi que la colonne **Suspendre** ont été modifiées.  
-  
-## Voir aussi  
- [Déboguer les applications multithread](../debugger/debug-multithreaded-applications-in-visual-studio.md)   
- [Comment : basculer vers un autre thread pendant un débogage](../debugger/how-to-switch-to-another-thread-while-debugging.md)
+## <a name="see-also"></a>Voir aussi  
+ [Débogage d’Applications multithread](../debugger/debug-multithreaded-applications-in-visual-studio.md)   
+ [Commencer à déboguer une application multithread](../debugger/get-started-debugging-multithreaded-apps.md)
