@@ -1,1 +1,1 @@
-Internet Explorer \(antérieur à Internet Explorer 6\)
+Internet Explorer (antérieur à Internet Explorer 6)

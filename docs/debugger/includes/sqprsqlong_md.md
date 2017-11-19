@@ -13,10 +13,10 @@ translation.priority.ht:
 - tr-tr
 - zh-cn
 - zh-tw
-ms.openlocfilehash: f91e7a0cfe7d75c6bb58eceed02eb209828f67e6
+ms.openlocfilehash: 36e827c0a4eda91081da349e7832ed19369963ee
 ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 10/27/2017
 ---
-LINQ to DataSet
+SQL Server 2005

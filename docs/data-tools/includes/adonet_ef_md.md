@@ -13,10 +13,10 @@ translation.priority.ht:
 - tr-tr
 - zh-cn
 - zh-tw
-ms.openlocfilehash: f91e7a0cfe7d75c6bb58eceed02eb209828f67e6
+ms.openlocfilehash: beea89316d09ecbbb6b74fd384f79b5fc77307ff
 ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 10/27/2017
 ---
-LINQ to DataSet
+Entity Framework

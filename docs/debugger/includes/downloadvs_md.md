@@ -13,10 +13,10 @@ translation.priority.ht:
 - tr-tr
 - zh-cn
 - zh-tw
-ms.openlocfilehash: f91e7a0cfe7d75c6bb58eceed02eb209828f67e6
+ms.openlocfilehash: 0e254e1f34feffcb900f60ed96e54a234ca16fe6
 ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 10/27/2017
 ---
-LINQ to DataSet
+[Télécharger Visual Studio Community](https://www.visualstudio.com/vs/#downloadvs) ou [comparer les éditions de Visual Studio](https://www.visualstudio.com/vs/compare/)
