@@ -21,7 +21,7 @@
       "build_output_subfolder": "mac",
       "locale": "fr-fr",
       "monikers": [],
-      "open_to_public_contributors": false,
+      "open_to_public_contributors": true,
       "type_mapping": {
         "Conceptual": "Content",
         "ManagedReference": "Content",
@@ -36,7 +36,7 @@
       "build_output_subfolder": "scripting-docs",
       "locale": "fr-fr",
       "monikers": [],
-      "open_to_public_contributors": false,
+      "open_to_public_contributors": true,
       "type_mapping": {
         "Conceptual": "Content",
         "ManagedReference": "Content",
@@ -51,7 +51,7 @@
       "build_output_subfolder": "subscriptions",
       "locale": "fr-fr",
       "monikers": [],
-      "open_to_public_contributors": false,
+      "open_to_public_contributors": true,
       "type_mapping": {
         "Conceptual": "Content",
         "ManagedReference": "Content",
@@ -66,7 +66,7 @@
       "build_output_subfolder": "vsdata",
       "locale": "fr-fr",
       "monikers": [],
-      "open_to_public_contributors": false,
+      "open_to_public_contributors": true,
       "type_mapping": {
         "Conceptual": "Content",
         "ManagedReference": "Content",
@@ -85,7 +85,9 @@
   "continue_with_document_error": true,
   "skip_source_output_uploading": false,
   "need_preview_pull_request": true,
-  "contribution_branch_mappings": {},
+	"contribution_branch_mappings": {
+		       "live-sxs": "live"
+  },
   "dependent_repositories": [
     {
       "path_to_root": "_themes",
