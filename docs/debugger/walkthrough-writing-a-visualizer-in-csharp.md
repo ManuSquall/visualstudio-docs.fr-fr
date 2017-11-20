@@ -1,94 +1,99 @@
 ---
-title: "Proc&#233;dure pas &#224; pas&#160;: &#233;criture d&#39;un visualiseur en C# | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-debug"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-dev_langs: 
-  - "FSharp"
-  - "VB"
-  - "CSharp"
-  - "C++"
-helpviewer_keywords: 
-  - "visualiseurs, écrire"
-  - "procédures pas à pas (Visual Studio), visualiseurs"
+title: "Procédure pas à pas : Écriture d’un visualiseur en c# | Documents Microsoft"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-debug
+ms.tgt_pltfrm: 
+ms.topic: article
+dev_langs:
+- CSharp
+- VB
+- FSharp
+- C++
+helpviewer_keywords:
+- visualizers, writing
+- walkthroughs [Visual Studio], visualizers
 ms.assetid: 53467461-8e0f-45ee-9bc4-374bbaeaf00f
-caps.latest.revision: 33
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 33
+caps.latest.revision: "33"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: fd63f183d42111cfb8381b5fee86debbca6cd04e
+ms.sourcegitcommit: 26419ab0cccdc30d279c32d6a841758cfa903806
+ms.translationtype: MT
+ms.contentlocale: fr-FR
+ms.lasthandoff: 11/11/2017
 ---
-# Proc&#233;dure pas &#224; pas&#160;: &#233;criture d&#39;un visualiseur en C# #
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
-
-Cette procédure pas à pas montre comment écrire un visualiseur simple en C\#.  Le visualiseur que permet de créer cette procédure pas à pas affiche le contenu d'une chaîne à l'aide d'un message Windows Forms.  Ce visualiseur de chaîne simple n'est pas très utile, mais il affiche les étapes élémentaires à suivre pour créer des visualiseurs plus utiles à d'autres types de données.  
+# <a name="walkthrough-writing-a-visualizer-in-c"></a>Procédure pas à pas : écriture d'un visualiseur en C# #
+Cette procédure pas à pas montre comment écrire un visualiseur simple à l’aide de c#. Le visualiseur que vous allez créer dans cette procédure pas à pas affiche le contenu d’une chaîne à l’aide d’une boîte de message Windows forms. Ce visualiseur de chaîne simple n’est pas particulièrement utile en soi, mais il illustre les étapes de base que vous devez suivre pour créer des visualiseurs plus utiles pour d’autres types de données.  
   
 > [!NOTE]
->  Les boîtes de dialogue et les commandes de menu qui s'affichent peuvent être différentes de celles qui sont décrites dans l'aide, en fonction de vos paramètres actifs ou de l'édition utilisée.  Pour modifier vos paramètres, dans le menu **Outils**, cliquez sur **Importation et exportation de paramètres**.  Pour plus d'informations, consultez [Customizing Development Settings in Visual Studio](http://msdn.microsoft.com/fr-fr/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
+>  Selon vos paramètres actifs ou votre édition, les boîtes de dialogue et les commandes de menu affichées peuvent différer de celles qui sont décrites dans l'aide. Pour modifier vos paramètres, accédez à la **outils** menu et choisissez **importation et exportation de paramètres**. Pour plus d’informations, consultez [Personnaliser l’IDE Visual Studio](../ide/personalizing-the-visual-studio-ide.md).  
   
- Le code du visualiseur doit être placé dans une DLL, laquelle sera lue par le débogueur.  Par conséquent, la première étape consiste à créer un projet Bibliothèque de classes pour la DLL.  
+ Le code du visualiseur doit être placé dans une DLL, qui sera lue par le débogueur. Par conséquent, la première étape consiste à créer un projet de bibliothèque de classes pour la DLL.  
+
+## <a name="create-a-visualizer-manually"></a>Créer manuellement un visualiseur
+
+Effectuez les tâches suivantes pour créer un visualiseur.
   
-#### Pour créer un projet Bibliothèque de classes  
+#### <a name="to-create-a-class-library-project"></a>Pour créer un projet Bibliothèque de classes  
   
-1.  Dans le menu **Fichier**, choisissez **Nouveau**, puis sur **Nouveau projet**.  
+1.  Sur le **fichier** menu, choisissez **Nouveau > projet**.  
   
-2.  Dans la boîte de dialogue **Nouveau projet**, sous **Type de projet**, sélectionnez **Visual C\#**.  
+2.  Dans le **nouveau projet** boîte de dialogue **Visual C#**, sélectionnez **.NET Standard**.  
   
-3.  Dans la zone **Modèles**, choisissez **Bibliothèque de classes**.  
+3.  Dans le volet central, sélectionnez **bibliothèque de classes**.  
   
-4.  Dans la zone **Nom**, tapez un nom approprié pour la bibliothèque de classes, par exemple MyFirstVisualizer.  
+4.  Dans le **nom** , tapez un nom approprié pour la bibliothèque de classes, par exemple MyFirstVisualizer.  
   
 5.  Cliquez sur **OK**.  
   
- Une fois que vous avez créé la bibliothèque de classes, vous devez ajouter une référence à Microsoft.VisualStudio.DebuggerVisualizers.DLL afin de pouvoir utiliser les classes qui y sont définies.  Toutefois, avant d'ajouter la référence, vous devez renommer certaines classes afin qu'elles aient des noms explicites.  
+ Après avoir créé la bibliothèque de classes, vous devez ajouter une référence à Microsoft.VisualStudio.DebuggerVisualizers.DLL afin que vous puissiez utiliser les classes définies il. Avant d’ajouter la référence, toutefois, vous devez renommer certaines classes afin qu’ils aient des noms explicites.  
   
-#### Pour renommer Class1.cs et ajouter Microsoft.VisualStudio.DebuggerVisualizers  
+#### <a name="to-rename-class1cs-and-add-microsoftvisualstudiodebuggervisualizers"></a>Le nom Class1.cs et ajouter Microsoft.VisualStudio.DebuggerVisualizers  
   
-1.  Dans l'**Explorateur de solutions**, cliquez avec le bouton droit sur Class1.cs et sélectionnez **Renommer** dans le menu contextuel.  
+1.  Dans **l’Explorateur de solutions**, avec le bouton droit Class1.cs et choisissez **renommer** dans le menu contextuel.  
   
-2.  Remplacez le nom Class1.cs par un nom explicite, par exemple DebuggerSide.cs.  
+2.  Modifiez le nom Class1.cs par un nom significatif, tel que DebuggerSide.cs.  
   
     > [!NOTE]
-    >  [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] remplace automatiquement le nom de la déclaration de classe par DebuggerSide.cs, le nouveau nom du fichier.  
+    >  [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]modifie automatiquement la déclaration de classe par DebuggerSide.cs, le nouveau nom de fichier.  
   
-3.  Dans l'**Explorateur de solutions**, cliquez avec le bouton droit sur **Références**, puis sélectionnez **Ajouter une référence** dans le menu contextuel.  
+3.  Dans **l’Explorateur de solutions**, avec le bouton droit **références** et choisissez **ajouter une référence** dans le menu contextuel.  
   
-4.  Dans la boîte de dialogue **Ajouter une référence**, sous l'onglet **.NET**, cliquez sur Microsoft.VisualStudio.DebuggerVisualizers.DLL.  
+4.  Dans le **ajouter une référence** boîte de dialogue le **.NET** onglet, cliquez sur Microsoft.VisualStudio.DebuggerVisualizers.DLL.  
   
 5.  Cliquez sur **OK**.  
   
-6.  Dans DebuggerSide.cs, ajoutez l'instruction suivante aux instructions `using` :  
+6.  Dans DebuggerSide.cs, ajoutez l'instruction suivante aux instructions `using` :  
   
     ```  
     using Microsoft.VisualStudio.DebuggerVisualizers;  
     ```  
   
- Vous êtes désormais prêt à créer du code côté débogueur.  Il s'agit du code qui s'exécute dans le débogueur pour afficher les informations que vous souhaitez consulter.  En premier lieu, vous devez modifier la déclaration de l'objet `DebuggerSide` afin qu'il hérite de la classe de base `DialogDebuggerVisualizer`.  
+ Vous êtes maintenant prêt à créer du code côté débogueur. Il s'agit du code qui s'exécute dans le débogueur pour afficher les informations que vous souhaitez consulter. Vous devez tout d’abord, modifiez la déclaration de la `DebuggerSide` objet qui hérite de la classe de base `DialogDebuggerVisualizer`.  
   
-#### Pour hériter de DialogDebuggerVisualizer  
+#### <a name="to-inherit-from-dialogdebuggervisualizer"></a>Pour hériter de DialogDebuggerVisualizer  
   
-1.  Dans DebuggerSide.cs, allez à la ligne de code suivante :  
+1.  Dans DebuggerSide.cs, accédez à la ligne de code suivante :  
   
     ```  
     public class DebuggerSide  
     ```  
   
-2.  Modifiez le code en :  
+2.  Modifiez le code pour :  
   
     ```  
     public class DebuggerSide : DialogDebuggerVisualizer  
     ```  
   
- `DialogDebuggerVisualizer` a une méthode abstraite \(`Show`\) que vous devez substituer.  
+ `DialogDebuggerVisualizer`a une méthode abstraite (`Show`) que vous devez substituer.  
   
-#### Pour substituer la méthode DialogDebuggerVisualizer.Show  
+#### <a name="to-override-the-dialogdebuggervisualizershow-method"></a>Pour substituer la méthode DialogDebuggerVisualizer.Show  
   
--   Dans `public class DebuggerSide`, ajoutez la **méthode** suivante :  
+-   Dans `public class DebuggerSide`, ajoutez le code suivant **méthode :**  
   
     ```  
     override protected void Show(IDialogVisualizerService windowService, IVisualizerObjectProvider objectProvider)  
@@ -96,25 +101,25 @@ Cette procédure pas à pas montre comment écrire un visualiseur simple en C\#
     }  
     ```  
   
- La méthode `Show` contient le code qui crée en fait la boîte de dialogue du visualiseur \(ou une autre interface utilisateur\) et qui affiche les informations passées du débogueur au visualiseur.  Vous devez ajouter le code qui crée la boîte de dialogue et affiche les informations.  Cette procédure pas à pas vous montre comment y parvenir à l'aide d'un message Windows Forms.  Vous devez d'abord ajouter une référence et une instruction `using` pour System.Windows.Forms.  
+ Le `Show` méthode contient le code qui crée la boîte de dialogue visualiseur ou une autre interface utilisateur et affiche les informations passées à partir du débogueur au visualiseur. Vous devez ajouter le code qui crée la boîte de dialogue et affiche les informations. Dans cette procédure pas à pas, vous effectuerez les opérations à l’aide d’une boîte de message Windows forms. Tout d’abord, vous devez ajouter une référence et `using` instruction pour System.Windows.Forms.  
   
-#### Pour ajouter System.Windows.Forms  
+#### <a name="to-add-systemwindowsforms"></a>Pour ajouter System.Windows.Forms  
   
-1.  Dans l'**Explorateur de solutions**, cliquez avec le bouton droit sur **Références**, puis sélectionnez **Ajouter une référence** dans le menu contextuel.  
+1.  Dans **l’Explorateur de solutions**, avec le bouton droit **références** et choisissez **ajouter une référence** dans le menu contextuel.  
   
-2.  Dans la boîte de dialogue **Ajouter une référence**, sous l'onglet **.NET**, cliquez sur System.Windows.Forms.DLL.  
+2.  Dans le **ajouter une référence** boîte de dialogue le **.NET** onglet, cliquez sur System.Windows.Forms.DLL.  
   
 3.  Cliquez sur **OK**.  
   
-4.  Dans DebuggerSide.cs, ajoutez l'instruction suivante aux instructions `using` :  
+4.  Dans DebuggerSide.cs, ajoutez l'instruction suivante aux instructions `using` :  
   
     ```  
     using System.Windows.Forms;  
     ```  
   
- Puis, vous ajoutez du code pour créer et afficher l'interface utilisateur du visualiseur.  Comme il s'agit de votre premier visualiseur, nous simplifierons l'interface utilisateur simple et utiliserons un message.  
+ Maintenant, vous allez ajouter du code pour créer et afficher l’interface utilisateur de votre visualiseur. Comme il s’agit de votre premier visualiseur, nous conserve l’interface utilisateur simple et utiliser une boîte de Message.  
   
-#### Pour afficher la sortie du visualiseur dans une boîte de dialogue  
+#### <a name="to-show-the-visualizer-output-in-a-dialog-box"></a>Pour afficher la sortie du visualiseur dans une boîte de dialogue  
   
 1.  Dans la méthode `Show`, ajoutez la ligne de code suivante :  
   
@@ -122,15 +127,15 @@ Cette procédure pas à pas montre comment écrire un visualiseur simple en C\#
     MessageBox.Show(objectProvider.GetObject().ToString());  
     ```  
   
-     Cet exemple de code n'inclut pas la gestion des erreurs.  Vous devez inclure la gestion des erreurs dans un véritable visualiseur ou tout autre type d'application.  
+     Cet exemple de code n'inclut pas la gestion des erreurs. Vous devez inclure la gestion des erreurs dans un véritable visualiseur ou tout autre type d’application.  
   
-2.  Dans le menu **Générer**, cliquez sur **Générer MyFirstVisualizer**.  Le projet doit se générer avec succès.  Corrigez toutes les erreurs de build avant de continuer.  
+2.  Sur le **générer** menu, choisissez **Build MyFirstVisualizer**. Le projet doit se générer avec succès. Corrigez toutes les erreurs de build avant de continuer.  
   
- C'est la fin du code côté débogueur.  Il existe toutefois une étape supplémentaire : ajouter l'attribut qui indique côté programme débogué la collection de classes qui compose le visualiseur.  
+ C’est la fin du code côté débogueur. Il existe une étape supplémentaire l’attribut qui indique côté programme débogué la collection de classes qui compose le visualiseur.  
   
-#### Pour ajouter le code côté débogué  
+#### <a name="to-add-the-debuggee-side-code"></a>Pour ajouter le code côté programme débogué  
   
-1.  Ajoutez le code d'attribut suivant à DebuggerSide.cs, après les instructions `using`, mais avant `namespace MyFirstVisualizer` :  
+1.  Ajoutez le code d’attribut suivant à DebuggerSide.cs, après le `using` instructions mais avant que `namespace MyFirstVisualizer`:  
   
     ```  
     [assembly:System.Diagnostics.DebuggerVisualizer(  
@@ -140,11 +145,11 @@ Cette procédure pas à pas montre comment écrire un visualiseur simple en C\#
     Description  = "My First Visualizer")]  
     ```  
   
-2.  Dans le menu **Générer**, cliquez sur **Générer MyFirstVisualizer**.  Le projet doit se générer avec succès.  Corrigez toutes les erreurs de build avant de continuer.  
+2.  Sur le **générer** menu, choisissez **Build MyFirstVisualizer**. Le projet doit se générer avec succès. Corrigez toutes les erreurs de build avant de continuer.  
   
- À ce stade, votre premier visualiseur est terminé.  Si vous avez suivi les étapes correctement, vous devez être en mesure de générer le visualiseur et de l'installer dans [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)].  Toutefois, avant d'installer un visualiseur dans [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)], vous devez le tester pour vous assurer qu'il s'exécute correctement.  À présent, vous devez créer un atelier de test pour exécuter le visualiseur sans l'installer dans [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)].  
+ À ce stade, votre premier visualiseur est terminé. Si vous avez suivi les étapes correctement, vous devez être en mesure de générer le visualiseur et de l'installer dans [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]. Toutefois, avant d'installer un visualiseur dans [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)], vous devez le tester pour vous assurer qu'il s'exécute correctement. À présent, vous devez créer un atelier de test pour exécuter le visualiseur sans l'installer dans [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)].  
   
-#### Pour ajouter une méthode de test permettant d'afficher le visualiseur  
+#### <a name="to-add-a-test-method-to-show-the-visualizer"></a>Pour ajouter une méthode de Test pour afficher le visualiseur  
   
 1.  Ajoutez la méthode suivante à la classe `public DebuggerSide`:  
   
@@ -156,47 +161,47 @@ Cette procédure pas à pas montre comment écrire un visualiseur simple en C\#
     }  
     ```  
   
-2.  Dans le menu **Générer**, cliquez sur **Générer MyFirstVisualizer**.  Le projet doit se générer avec succès.  Corrigez toutes les erreurs de build avant de continuer.  
+2.  Sur le **générer** menu, choisissez **Build MyFirstVisualizer**. Le projet doit se générer avec succès. Corrigez toutes les erreurs de build avant de continuer.  
   
- Ensuite, vous devez créer un projet exécutable pour appeler la DLL du visualiseur.  Pour simplifier, nous utiliserons un projet d'application console.  
+ Ensuite, vous devez créer un projet exécutable pour appeler la DLL du visualiseur. Par souci de simplicité, nous allons utiliser un projet d’Application Console.  
   
-#### Pour ajouter un projet d'application console à la solution  
+#### <a name="to-add-a-console-application-project-to-the-solution"></a>Pour ajouter un projet d'application console à la solution  
   
-1.  Dans le menu **Fichier**, cliquez sur **Ajouter**, puis sur **Nouveau projet**.  
+1.  Sur le **fichier** menu, choisissez **ajouter** puis cliquez sur **nouveau projet**.  
   
-2.  Dans la boîte de dialogue **Ajouter un nouveau projet**, dans le volet **Modèles**, choisissez **Application console**.  
+2.  Dans le **ajouter un nouveau projet** boîte de dialogue le **modèles** , choisissez **Application Console**.  
   
-3.  Dans la zone **Nom**, tapez un nom significatif pour l'application console, par exemple `MyTestConsole`.  
+3.  Dans le **nom** , tapez un nom explicite pour l’application console, tel que `MyTestConsole`.  
   
 4.  Cliquez sur **OK**.  
   
  Puis, vous devez ajouter les références nécessaires afin que MyTestConsole puisse appeler MyFirstVisualizer.  
   
-#### Pour ajouter les références nécessaires à MyTestConsole  
+#### <a name="to-add-necessary-references-to-mytestconsole"></a>Pour ajouter les références nécessaires à MyTestConsole  
   
-1.  Dans l'**Explorateur de solutions**, cliquez avec le bouton droit sur **MyTestConsole**, puis sélectionnez **Ajouter une référence** dans le menu contextuel.  
+1.  Dans **l’Explorateur de solutions**, avec le bouton droit **MyTestConsole** et choisissez **ajouter une référence** dans le menu contextuel.  
   
-2.  Dans la boîte de dialogue **Ajouter une référence**, sous l'onglet **.NET**, cliquez sur Microsoft.VisualStudio.DebuggerVisualizers.DLL.  
+2.  Dans le **ajouter une référence** boîte de dialogue, **.NET** onglet, cliquez sur Microsoft.VisualStudio.DebuggerVisualizers.DLL.  
   
 3.  Cliquez sur **OK**.  
   
-4.  Cliquez avec le bouton droit sur **MyTestConsole** et choisissez à nouveau **Ajouter une référence**.  
+4.  Avec le bouton droit **MyTestConsole** et choisissez **ajouter une référence** à nouveau.  
   
-5.  Dans la boîte de dialogue **Ajouter une référence**, cliquez sur l'onglet **Projets**, puis sur MyFirstVisualizer.  
+5.  Dans le **ajouter une référence** boîte de dialogue, cliquez sur le **projets** onglet, puis sur MyFirstVisualizer.  
   
 6.  Cliquez sur **OK**.  
   
  Puis, vous ajoutez le code pour terminer l'atelier de test.  
   
-#### Pour ajouter le code à MyTestConsole  
+#### <a name="to-add-code-to-mytestconsole"></a>Pour ajouter le code à MyTestConsole  
   
-1.  Dans l'**Explorateur de solutions**, cliquez avec le bouton droit sur Program.cs et sélectionnez **Renommer** dans le menu contextuel.  
+1.  Dans **l’Explorateur de solutions**, Program.cs d’avec le bouton droit et choisissez **renommer** dans le menu contextuel.  
   
-2.  Remplacez le nom Program.cs par un nom plus explicite, par exemple TestConsole.cs.  
+2.  Modifier le nom de Program.cs un nom plus significatif, tel que TestConsole.cs.  
   
-     **Remarque** [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] modifie automatiquement la déclaration de classe dans TestConsole.cs pour qu'elle corresponde au nouveau nom de fichier.  
+     **Remarque** [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] modifie automatiquement la déclaration de classe dans TestConsole.cs pour le nouveau nom de fichier.  
   
-3.  Dans TestConsole.cs, ajoutez le code suivant aux instructions `using` :  
+3.  Dans TestConsole.cs, ajoutez le code suivant à la `using` instructions :  
   
     ```  
     using MyFirstVisualizer;  
@@ -209,54 +214,54 @@ Cette procédure pas à pas montre comment écrire un visualiseur simple en C\#
     DebuggerSide.TestShowVisualizer(myString);  
     ```  
   
- Vous êtes désormais prêt à tester votre premier visualiseur.  
+ Maintenant, vous êtes prêt à tester votre premier visualiseur.  
   
-#### Pour tester le visualiseur  
+#### <a name="to-test-the-visualizer"></a>Pour tester le visualiseur  
   
-1.  Dans l'**Explorateur de solutions**, cliquez avec le bouton droit sur **MyTestConsole**, puis sélectionnez **Définir comme projet de démarrage** dans le menu contextuel.  
+1.  Dans **l’Explorateur de solutions**, avec le bouton droit **MyTestConsole** et choisissez **définir comme projet de démarrage** dans le menu contextuel.  
   
-2.  Dans le menu **Déboguer**, choisissez **Démarrer**.  
+2.  Sur le **déboguer** menu, choisissez **Démarrer**.  
   
-     L'application console démarre et le visualiseur apparaît et affiche la chaîne "Hello, World".  
+     L’application console démarre et le visualiseur apparaît et affiche la chaîne « Hello, World ».  
   
- Félicitations \!  Vous venez de générer et de tester votre premier visualiseur.  
+ Félicitations ! Vous venez de générer et de tester votre premier visualiseur.  
   
- Pour utiliser votre visualiseur dans [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] au lieu de simplement l'appeler de l'atelier de test, vous devez l'installer.  Pour plus d'informations, consultez [Comment : installer un visualiseur](../debugger/how-to-install-a-visualizer.md).  
+ Pour utiliser votre visualiseur dans [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] au lieu de simplement l'appeler de l'atelier de test, vous devez l'installer. Pour plus d’informations, consultez [Comment : installer un visualiseur](../debugger/how-to-install-a-visualizer.md).  
   
-## Utilisation du modèle d'élément du visualiseur  
- Jusqu'à présent, cette procédure pas à pas vous a indiqué comment créer manuellement un visualiseur.  Elle a été exécutée comme un exercice d'apprentissage.  Maintenant que vous savez comment fonctionne un visualiseur simple, apprenez à en créer plus facilement à l'aide du modèle d'élément du visualiseur.  
+## <a name="create-a-visualizer-using-the-visualizer-item-template"></a>Créez un visualiseur en utilisant le modèle d’élément de visualiseur  
+ Jusqu'à présent, cette procédure pas à pas vous a montré comment créer manuellement un visualiseur. Ces actions étaient exécutées comme un exercice d’apprentissage. Maintenant que vous connaissez le fonctionne d’un visualiseur simple, il existe un moyen plus simple pour en créer un : à l’aide du modèle d’élément visualiseur.  
   
- D'abord, vous devez créer un projet Bibliothèque de classes.  
+ Tout d’abord, vous devez créer un nouveau projet de bibliothèque de classes.  
   
-#### Pour créer un nouveau projet de bibliothèque de classes  
+#### <a name="to-create-a-new-class-library"></a>Pour créer une nouvelle bibliothèque de classes  
   
-1.  Dans le menu **Fichier**, cliquez sur **Ajouter**, puis sur **Nouveau projet**.  
+1.  Sur le **fichier** menu, choisissez **Nouveau > projet**.  
   
-2.  Dans la boîte de dialogue **Ajouter un nouveau projet**, sous **Type de projet**, sélectionnez **Visual C\#**.  
+2.  Dans le **nouveau projet** boîte de dialogue **Visual C#**, sélectionnez **.NET Standard**.  
   
-3.  Dans la zone **Modèles**, choisissez **Bibliothèque de classes**.  
+3.  Dans le volet central, sélectionnez **bibliothèque de classes**.   
   
-4.  Dans la zone **Nom**, tapez un nom approprié pour la bibliothèque de classes, par exemple MySecondVisualizer.  
+4.  Dans le **nom** , tapez un nom approprié pour la bibliothèque de classes, telles que MySecondVisualizer.  
   
 5.  Cliquez sur **OK**.  
   
- Maintenant, vous pouvez lui ajouter un élément de visualiseur :  
+ Maintenant, vous pouvez ajouter un élément de visualiseur à celui-ci :  
   
-#### Pour ajouter un élément de visualiseur  
+#### <a name="to-add-a-visualizer-item"></a>Pour ajouter un élément de visualiseur  
   
-1.  Dans l'**Explorateur de solutions**, cliquez avec le bouton droit sur MySecondVisualizer.  
+1.  Dans **l’Explorateur de solutions**, avec le bouton droit MySecondVisualizer.  
   
-2.  Dans le menu contextuel, sélectionnez **Ajouter**, puis cliquez sur **Nouvel élément**.  
+2.  Dans le menu contextuel, choisissez **ajouter** puis cliquez sur **un nouvel élément**.  
   
-3.  Dans la boîte de dialogue **Ajouter un nouvel élément**, sous **Modèles**, **Modèles Visual Studio installés**, sélectionnez **Visualiseur du débogueur**.  
+3.  Dans le **ajouter un nouvel élément** boîte de dialogue **éléments Visual c#**, sélectionnez **visualiseur du débogueur**.  
   
-4.  Dans la zone **Nom**, tapez un nom approprié, par exemple SecondVisualizer.cs.  
+4.  Dans le **nom** , tapez un nom approprié, tel que SecondVisualizer.cs.  
   
 5.  Cliquez sur **Ajouter**.  
   
- Et c'est tout \!  Consultez le fichier SecondVisualizer.cs et examinez le code que le modèle a ajouté pour vous.  Faites des essais avec le code.  Maintenant que vous connaissez les principes de base, vous allez pouvoir créer par vous\-même des visualiseurs plus complexes et plus utiles.  
+ Qui est tout à ce dernier. Examinez le fichier SecondVisualizer.cs et afficher le code que le modèle est ajouté à votre place. Continuez et faire des essais avec le code. Maintenant que vous connaissez les principes de base, vous êtes prêt à créer des visualiseurs plus complexes et utiles de votre choix.  
   
-## Voir aussi  
- [Architecture d'un visualiseur](../debugger/visualizer-architecture.md)   
+## <a name="see-also"></a>Voir aussi  
+ [Architecture du visualiseur](../debugger/visualizer-architecture.md)   
  [Comment : installer un visualiseur](../debugger/how-to-install-a-visualizer.md)   
- [Visualiseurs](../debugger/create-custom-visualizers-of-data.md)
+ [Créer des visualiseurs personnalisés](../debugger/create-custom-visualizers-of-data.md)

@@ -1,46 +1,29 @@
 ---
-title: IDebugBinder::Bind | Microsoft Docs
+title: IDebugBinder::Bind | Documents Microsoft
 ms.custom: 
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-sdk
+ms.technology: vs-ide-sdk
 ms.tgt_pltfrm: 
 ms.topic: article
-f1_keywords:
-- IDebugBinder::Bind
-helpviewer_keywords:
-- IDebugBinder::Bind method
+f1_keywords: IDebugBinder::Bind
+helpviewer_keywords: IDebugBinder::Bind method
 ms.assetid: 15a11ad7-0fcc-4e80-ae34-8a7dd7bae3c3
-caps.latest.revision: 12
+caps.latest.revision: "12"
+author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-translation.priority.mt:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
+ms.openlocfilehash: db8465a0f1eefe94482020acc8788da84f05b424
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
 ms.translationtype: MT
-ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
-ms.openlocfilehash: 98eee69282ce74b6870404b86159e40007354b9d
-ms.contentlocale: fr-fr
-ms.lasthandoff: 08/28/2017
-
+ms.contentlocale: fr-FR
+ms.lasthandoff: 10/31/2017
 ---
 # <a name="idebugbinderbind"></a>IDebugBinder::Bind
-This method gets the memory context or object that contains the symbol's current value.  
+Cette méthode obtient le contexte de la mémoire ou l’objet qui contient la valeur actuelle du symbole.  
   
-## <a name="syntax"></a>Syntax  
+## <a name="syntax"></a>Syntaxe  
   
 ```cpp  
 HRESULT Bind(   
@@ -58,20 +41,20 @@ int Bind(
 );  
 ```  
   
-#### <a name="parameters"></a>Parameters  
+#### <a name="parameters"></a>Paramètres  
  `pContainer`  
- [in] The [IDebugObject](../../../extensibility/debugger/reference/idebugobject.md) that contains the child referenced by `pField`.  
+ [in] Le [IDebugObject](../../../extensibility/debugger/reference/idebugobject.md) qui contient l’enfant référencé par `pField`.  
   
  `pField`  
- [in] The [IDebugField](../../../extensibility/debugger/reference/idebugfield.md) that represents the symbol.  
+ [in] Le [IDebugField](../../../extensibility/debugger/reference/idebugfield.md) qui représente le symbole.  
   
  `ppObject`  
- [out] Returns the `IDebugObject` that represents the instance of the symbol.  
+ [out] Retourne le `IDebugObject` qui représente l’instance du symbole.  
   
-## <a name="return-value"></a>Return Value  
- If successful, returns `S_OK`; otherwise, returns an error code.  
+## <a name="return-value"></a>Valeur de retour  
+ En cas de réussite, retourne `S_OK`; sinon, retourne un code d’erreur.  
   
-## <a name="see-also"></a>See Also  
+## <a name="see-also"></a>Voir aussi  
  [IDebugBinder](../../../extensibility/debugger/reference/idebugbinder.md)   
  [IDebugObject](../../../extensibility/debugger/reference/idebugobject.md)   
  [IDebugField](../../../extensibility/debugger/reference/idebugfield.md)

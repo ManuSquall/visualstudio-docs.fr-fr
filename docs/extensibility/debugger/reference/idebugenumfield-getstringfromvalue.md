@@ -1,46 +1,29 @@
 ---
-title: IDebugEnumField::GetStringFromValue | Microsoft Docs
+title: IDebugEnumField::GetStringFromValue | Documents Microsoft
 ms.custom: 
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-sdk
+ms.technology: vs-ide-sdk
 ms.tgt_pltfrm: 
 ms.topic: article
-f1_keywords:
-- IDebugEnumField::GetStringFromValue
-helpviewer_keywords:
-- IDebugEnumField::GetStringFromValue method
+f1_keywords: IDebugEnumField::GetStringFromValue
+helpviewer_keywords: IDebugEnumField::GetStringFromValue method
 ms.assetid: 5f95fd0c-fdce-497f-9f54-2ad8749494e9
-caps.latest.revision: 5
+caps.latest.revision: "5"
+author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-translation.priority.mt:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
+ms.openlocfilehash: ed010734ec09af01c4a7abe6f8ceab0a93fdb482
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
 ms.translationtype: MT
-ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
-ms.openlocfilehash: c721a1ee298eba5e948b42c29d9746e61122008b
-ms.contentlocale: fr-fr
-ms.lasthandoff: 08/28/2017
-
+ms.contentlocale: fr-FR
+ms.lasthandoff: 10/31/2017
 ---
 # <a name="idebugenumfieldgetstringfromvalue"></a>IDebugEnumField::GetStringFromValue
-This method obtains the name of the enumeration constant given its value.  
+Cette méthode obtient le nom de la constante d’énumération sa valeur.  
   
-## <a name="syntax"></a>Syntax  
+## <a name="syntax"></a>Syntaxe  
   
 ```cpp  
 HRESULT GetStringFromValue(  
@@ -56,18 +39,18 @@ int GetStringFromValue(
 );  
 ```  
   
-#### <a name="parameters"></a>Parameters  
+#### <a name="parameters"></a>Paramètres  
  `value`  
- [in] The value for which to get the name of the enumeration constant.  
+ [in] La valeur pour laquelle obtenir le nom de l’énumération constant.  
   
  `pbstrValue`  
- [out] Returns the name of the enumeration constant.  
+ [out] Retourne le nom de la constante d’énumération.  
   
-## <a name="return-value"></a>Return Value  
- If successful, returns `S_OK`; otherwise, returns `S_FALSE` if the value has no associated name, or returns an error code.  
+## <a name="return-value"></a>Valeur de retour  
+ En cas de réussite, retourne `S_OK`; sinon, retourne `S_FALSE` si la valeur n’a aucun nom associé, ou retourne un code d’erreur.  
   
-## <a name="remarks"></a>Remarks  
- If there is more than one name associated with the same value, the first name defined in the enumeration will be returned.  
+## <a name="remarks"></a>Remarques  
+ S’il existe plusieurs noms associé à la même valeur, le premier nom défini dans l’énumération s’affichera.  
   
-## <a name="see-also"></a>See Also  
+## <a name="see-also"></a>Voir aussi  
  [IDebugEnumField](../../../extensibility/debugger/reference/idebugenumfield.md)

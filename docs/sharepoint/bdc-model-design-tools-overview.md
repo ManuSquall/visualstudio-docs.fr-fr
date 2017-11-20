@@ -1,83 +1,85 @@
 ---
-title: "Vue d&#39;ensemble des outils de conception du mod&#232;le BDC"
-ms.custom: ""
-ms.date: "02/02/2017"
-ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "office-development"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "VS.SharePointTools.BDC.Method_Details"
-  - "VS.SharePointTools.BDC.Explorer"
-  - "VS.SharePointTools.BDC.Diagram"
-dev_langs: 
-  - "VB"
-  - "CSharp"
-  - "VB"
-  - "CSharp"
-helpviewer_keywords: 
-  - "BDC (développement SharePoint dans Visual Studio), explorateur BDC"
-  - "BDC (développement SharePoint dans Visual Studio), concepteur"
-  - "BDC (développement SharePoint dans Visual Studio), détails de méthode"
-  - "BDC (développement SharePoint dans Visual Studio), Visual Tools"
-  - "service de connectivité de données métiers (développement SharePoint dans Visual Studio), explorateur BDC"
-  - "service de connectivité de données métiers (développement SharePoint dans Visual Studio), concepteur"
-  - "service de connectivité de données métiers (développement SharePoint dans Visual Studio), détails de méthode"
-  - "service de connectivité de données métiers (développement SharePoint dans Visual Studio), Visual Tools"
+title: "Vue d’ensemble des outils de conception du modèle BDC | Documents Microsoft"
+ms.custom: 
+ms.date: 02/02/2017
+ms.reviewer: 
+ms.suite: 
+ms.technology: office-development
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords:
+- VS.SharePointTools.BDC.Method_Details
+- VS.SharePointTools.BDC.Explorer
+- VS.SharePointTools.BDC.Diagram
+dev_langs:
+- VB
+- CSharp
+- VB
+- CSharp
+helpviewer_keywords:
+- BDC [SharePoint development in Visual Studio], visual tools
+- Business Data Connectivity service [SharePoint development in Visual Studio], visual tools
+- Business Data Connectivity service [SharePoint development in Visual Studio], BDC Explorer
+- BDC [SharePoint development in Visual Studio], method details
+- Business Data Connectivity service [SharePoint development in Visual Studio], designer
+- Business Data Connectivity service [SharePoint development in Visual Studio], method details
+- BDC [SharePoint development in Visual Studio], BDC Explorer
+- BDC [SharePoint development in Visual Studio], designer
 ms.assetid: dbd7b746-9e93-4ed4-a546-4a6f17a4725f
-caps.latest.revision: 16
-author: "kempb"
-ms.author: "kempb"
-manager: "ghogen"
-caps.handback.revision: 15
+caps.latest.revision: "16"
+author: gewarren
+ms.author: gewarren
+manager: ghogen
+ms.openlocfilehash: eaf6871f7ad9316ba2dbdaa8fa29b4810b1d6a3d
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: fr-FR
+ms.lasthandoff: 10/31/2017
 ---
-# Vue d&#39;ensemble des outils de conception du mod&#232;le BDC
-  Vous pouvez concevoir un modèle de connectivité de données métiers \(BDC, Business Data Connectivity\) à l'aide du concepteur BDC, de la fenêtre **Détails de méthode BDC** et de l'**Explorateur BDC**.  
+# <a name="bdc-model-design-tools-overview"></a>Vue d'ensemble des outils de conception du modèle BDC
+  Vous pouvez concevoir un modèle de connectivité de données métiers (BDC) en utilisant le concepteur BDC, le **détails de méthode BDC** fenêtre et la **Explorateur BDC**.  
   
- L'**Explorateur BDC** vous permet de parcourir le modèle, de rechercher le modèle et de définir des descripteurs de type.  
+ Le **Explorateur BDC** vous permet de parcourir le modèle, de rechercher le modèle et de définir les descripteurs de type.  
   
-## Concepteur BDC  
- Le concepteur BDC vous permet de définir les entités de votre modèle et de réorganiser visuellement leurs relations les unes avec les autres.  Vous pouvez utiliser le concepteur BDC pour effectuer les tâches suivantes :  
+## <a name="bdc-designer"></a>Concepteur BDC  
+ Le concepteur BDC permet de définir les entités de votre modèle et de réorganiser visuellement leurs relations entre eux. Le concepteur BDC permet d’effectuer les tâches suivantes :  
   
--   ajouter des entités au modèle ;  
+-   Ajouter des entités du modèle.  
   
--   supprimer des entités du modèle ;  
+-   Supprimer des entités du modèle.  
   
--   définir des relations entre les entités.  
+-   Définir des relations entre des entités.  
   
- Pour ouvrir le BDC Designer, double\-cliquez sur le fichier de modèle de votre projet, ou ouvrez le menu contextuel du fichier de modèle et choisissez **Ouvrir**.  Ajoutez une entité au modèle en faisant glisser ou en copiant une **Entité** de la **Boîte à outils** sur le concepteur.  Pour créer une association entre deux entités, cliquez sur la contrôle**Association** dans la **Boîte à outils**, puis cliquez sur la première entité et sur la deuxième entité.  
+ Pour ouvrir le concepteur BDC, double-cliquez sur le fichier de modèle dans votre projet, ou ouvrez le menu contextuel pour le fichier de modèle, puis **ouvrir**. Ajouter une entité au modèle en faisant glisser ou en copiant un **entité** à partir de la **boîte à outils** sur le concepteur. Pour créer une association entre deux entités, choisissez le **Association** contrôler dans le **boîte à outils**, choisissez la première entité, puis la deuxième entité.  
   
-## Fenêtre Détails de méthode BDC  
- Utilisez la fenêtre **Détails de méthode BDC** pour définir les paramètres, les instances et les descripteurs de filtre d'une méthode.  
+## <a name="bdc-method-details-window"></a>Fenêtre Détails de méthode BDC  
+ Utilisez le **détails de méthode BDC** fenêtre pour définir les paramètres, des instances et les descripteurs de filtre d’une méthode.  
   
- Vous pouvez générer rapidement des méthodes de recherche, de recherche spécifique, de création, de mise à jour et de suppression dans la fenêtre **Détails de méthode BDC**.  Lorsque vous générez ces méthodes, Visual Studio ajoute des métadonnées, telles que des paramètres, des instances et des descripteurs de type, à la méthode.  Vous pouvez modifier ces métadonnées de manière à les adapter à votre scénario spécifique.  
+ Vous pouvez générer rapidement des méthodes de recherche, recherche spécifique, créateur, mise à jour et suppression dans le **détails de méthode BDC** fenêtre. Lorsque vous générez ces méthodes, Visual Studio ajoute des métadonnées, telles que les paramètres, les instances et les descripteurs de type, à la méthode. Vous pouvez modifier ces métadonnées pour satisfaire votre scénario spécifique.  
   
- Pour ouvrir la fenêtre **Détails de méthode BDC**, dans la barre de menu cliquez sur **Affichage**, puis sur **Autres fenêtres** et sur **Détails de méthode BDC**.  
+ Pour ouvrir la **détails de méthode BDC** fenêtre, dans la barre de menus, choisissez **vue**, **autres fenêtres**, **détails de méthode BDC**.  
   
- Pour afficher les méthodes dans la fenêtre **Détails de méthode BDC**, sélectionnez l'entité dans le concepteur BDC.  Les méthodes de l'entité sélectionnée s'affichent dans la fenêtre **Détails de méthode BDC**.  Si vous ne sélectionnez pas d'entité dans le concepteur BDC, la fenêtre **Détails de méthode BDC** n'affiche aucune information.  
+ Pour afficher les méthodes dans les **détails de méthode BDC** fenêtre, sélectionnez l’entité dans le concepteur BDC. Les méthodes de l’entité sélectionnée s’affichent dans le **détails de méthode BDC** fenêtre. Si vous ne choisissez pas une entité dans le concepteur BDC, le **détails de méthode BDC** fenêtre n’affiche aucune information.  
   
- Développez ou réduisez des nœuds dans la fenêtre **Détails de méthode BDC** pour définir des paramètres, des instances et des descripteurs de filtre.  Vous pouvez utiliser l'**Explorateur BDC** pour définir des descripteurs de type.  
+ Développer ou réduire des nœuds dans le **détails de méthode BDC** fenêtre pour définir des paramètres, des instances et les descripteurs de filtre. Utilisez le **Explorateur BDC** pour définir des descripteurs de type.  
   
-## Explorateur BDC  
- L'**Explorateur BDC** affiche les éléments qui composent le modèle.  Pour ouvrir l'**Explorateur BDC**, dans la barre de menus, cliquez sur **Affichage**, **Autres fenêtres**, **Explorateur BDC**.  Pour parcourir le modèle, développez des nœuds dans l'**Explorateur BDC**.  Chaque nœud représente un élément dans le code XML du fichier de modèle.  
+## <a name="bdc-explorer"></a>explorateur BDC  
+ Le **Explorateur BDC** affiche les éléments qui composent le modèle. Pour ouvrir la **Explorateur BDC**, dans la barre de menus, choisissez **vue**, **autres fenêtres**, **Explorateur BDC**. Pour parcourir le modèle, développez les nœuds de la **Explorateur BDC**. Chaque nœud représente un élément dans le code XML du fichier de modèle.  
   
- Lorsque vous sélectionnez des nœuds dans l'**Explorateur BDC**, les propriétés de chaque noeud choisi s'affichent dans la fenêtre **Propriétés**.  Ces propriétés correspondent pour la plupart aux attributs qui se trouvent dans le fichier de modèle.  Vous pouvez rechercher le modèle à l'aide de la zone de recherche située en haut de l'**Explorateur BDC**.  
-  
-> [!NOTE]  
->  L'**Explorateur BDC** n'affiche pas les identificateurs, les propriétés personnalisées, les chaînes localisées, les groupes d'association, les actions, les descripteurs de filtre, les listes de contrôle d'action ni les valeurs de paramètre par défaut.  
-  
-### Définition de descripteurs de type  
- Vous pouvez utiliser l'**Explorateur BDC** pour définir des descripteurs de type.  L'Explorateur BDC vous permet de définir un descripteur de type, puis de le réutiliser ailleurs dans votre modèle.  Pour ce faire, copiez un descripteur de type et collez\-le dans tout autre paramètre ou descripteur de type.  
+ Lorsque vous choisissez les nœuds dans le **Explorateur BDC**, les propriétés de chaque nœud que vous choisissez s’affichent dans le **propriétés** fenêtre. La plupart de ces propriétés correspondent aux attributs dans le fichier de modèle. Vous pouvez rechercher le modèle à l’aide de la zone de recherche en haut de la **Explorateur BDC**.  
   
 > [!NOTE]  
->  Les modifications apportées à un descripteur de type d'origine n'affectent pas les copies de ce descripteur de type.  
+>  Le **Explorateur BDC** n’affiche pas les identificateurs, propriétés personnalisées, les chaînes localisées, groupes d’association, les actions, les descripteurs de filtre, listes de contrôle d’action et les valeurs de paramètre par défaut.  
   
- Pour plus d'informations, consultez [How to: Define the Type Descriptor of a Parameter](../sharepoint/how-to-define-the-type-descriptor-of-a-parameter.md).  
+### <a name="defining-type-descriptors"></a>Définition des descripteurs de Type  
+ Utilisez le **Explorateur BDC** pour définir des descripteurs de type. L’Explorateur BDC vous permet de définir un descripteur de type une seule fois, puis réutiliser ce descripteur de type ailleurs dans votre modèle. Pour ce faire, copiez un descripteur de type et collez-le dans tout autre paramètre ou descripteur de type.  
   
-## Voir aussi  
+> [!NOTE]  
+>  Modifications apportées à un descripteur de type d’origine n’affectent pas les copies de ce descripteur de type.  
+  
+ Pour plus d’informations, consultez [Comment : définir le descripteur de Type d’un paramètre](../sharepoint/how-to-define-the-type-descriptor-of-a-parameter.md).  
+  
+## <a name="see-also"></a>Voir aussi  
  [Comment : créer un modèle BDC](../sharepoint/how-to-create-a-bdc-model.md)   
  [Comment : ajouter une entité à un modèle](../sharepoint/how-to-add-an-entity-to-a-model.md)   
  [Comment : ajouter une méthode de recherche](../sharepoint/how-to-add-a-finder-method.md)   
@@ -85,10 +87,10 @@ caps.handback.revision: 15
  [Comment : ajouter une méthode de création](../sharepoint/how-to-add-a-creator-method.md)   
  [Comment : ajouter une méthode de suppression](../sharepoint/how-to-add-a-deleter-method.md)   
  [Comment : ajouter une méthode de mise à jour](../sharepoint/how-to-add-an-updater-method.md)   
- [Création d'une association entre des entités](../sharepoint/creating-an-association-between-entities.md)   
- [Procédure pas à pas : création d'une liste externe dans SharePoint à l'aide de données métiers](../sharepoint/walkthrough-creating-an-external-list-in-sharepoint-by-using-business-data.md)   
+ [Création d’une Association entre des entités](../sharepoint/creating-an-association-between-entities.md)   
+ [Procédure pas à pas : Création d’une liste externe dans SharePoint à l’aide des données d’entreprise](../sharepoint/walkthrough-creating-an-external-list-in-sharepoint-by-using-business-data.md)   
  [Intégration de données métiers dans SharePoint](../sharepoint/integrating-business-data-into-sharepoint.md)   
- [Création d'un modèle de connectivité de données métiers](../sharepoint/creating-a-business-data-connectivity-model.md)   
- [Conception d'un modèle de connectivité de données métiers](../sharepoint/designing-a-business-data-connectivity-model.md)  
+ [Création d’un modèle de connectivité de données métiers](../sharepoint/creating-a-business-data-connectivity-model.md)   
+ [Conception d’un modèle de connectivité de données métiers](../sharepoint/designing-a-business-data-connectivity-model.md)  
   
   

@@ -1,28 +1,30 @@
 ---
-title: "SetWefProcessId, m&#233;thode"
-ms.custom: ""
-ms.date: "02/02/2017"
-ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "office-development"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-dev_langs: 
-  - "VB"
-  - "CSharp"
+title: "Setwefprocessid, méthode | Documents Microsoft"
+ms.custom: 
+ms.date: 02/02/2017
+ms.reviewer: 
+ms.suite: 
+ms.technology: office-development
+ms.tgt_pltfrm: 
+ms.topic: article
+dev_langs:
+- VB
+- CSharp
 ms.assetid: 404eec23-a67e-4f5b-b27d-86651f08be03
-caps.latest.revision: 8
-author: "kempb"
-ms.author: "kempb"
-manager: "ghogen"
-caps.handback.revision: 7
+caps.latest.revision: "8"
+author: gewarren
+ms.author: gewarren
+manager: ghogen
+ms.openlocfilehash: 0821c799a4d6385997704724c00a2aff4669eb17
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: fr-FR
+ms.lasthandoff: 10/31/2017
 ---
-# SetWefProcessId, m&#233;thode
-  Fournit l'identificateur de processus qui exécute le contenu de l'infrastructure \(WEF\) d'extensions de site Web.  
+# <a name="setwefprocessid-method"></a>SetWefProcessId, méthode
+  Fournit l’identificateur de processus qui s’exécutera le contenu Web Extensions Framework (WEF).  
   
-## Syntaxe  
+## <a name="syntax"></a>Syntaxe  
   
 ```  
 HRESULT SetWefProcessId(  
@@ -30,18 +32,18 @@ HRESULT SetWefProcessId(
 );  
 ```  
   
-#### Paramètres  
+#### <a name="parameters"></a>Paramètres  
   
 |Paramètre|Description|  
 |---------------|-----------------|  
-|*dwProcessId*|l'identificateur de processus qui sera utilisé pour exécuter le contenu de WEF.|  
+|*dwProcessId*|L’identificateur de processus qui servira à exécuter le contenu WEF.|  
   
-## Valeur de retour  
- Valeur HRESULT indiquant si la méthode s'est terminée correctement.  
+## <a name="return-value"></a>Valeur de retour  
+ Valeur HRESULT qui indique si la méthode a réussi.  
   
-## Notes  
- Cette méthode doit être appelée une fois le processus de contenu de WEF créé mais avant tout contenu de WEF s'exécute.  
+## <a name="remarks"></a>Remarques  
+ Cette méthode doit être appelée une fois le processus de contenu WEF est créé, mais avant l’exécution de n’importe quel contenu WEF.  
   
- Si vous souhaitez l'environnement de développement pour attacher un débogueur au processus de contenu de WEF, l'environnement doit effectuer cette opération dans votre implémentation de cette méthode.  
+ Si vous souhaitez que l’environnement de développement pour attacher un débogueur au processus contenu WEF, l’environnement doit effectuer cette opération dans votre implémentation de cette méthode.  
   
   

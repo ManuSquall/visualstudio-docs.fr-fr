@@ -1,46 +1,29 @@
 ---
-title: IDebugCoreServer3::DisableAutoAttach | Microsoft Docs
+title: IDebugCoreServer3::DisableAutoAttach | Documents Microsoft
 ms.custom: 
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-sdk
+ms.technology: vs-ide-sdk
 ms.tgt_pltfrm: 
 ms.topic: article
-f1_keywords:
-- IDebugCoreServer3::DisableAutoAttach
-helpviewer_keywords:
-- IDebugCoreServer3::DisableAutoAttach
+f1_keywords: IDebugCoreServer3::DisableAutoAttach
+helpviewer_keywords: IDebugCoreServer3::DisableAutoAttach
 ms.assetid: 9d860a20-c154-4df4-ba15-636e0fcd42bf
-caps.latest.revision: 6
+caps.latest.revision: "6"
+author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-translation.priority.mt:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
+ms.openlocfilehash: b22bbcd3d063c802ba732caed497eab626043687
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
 ms.translationtype: MT
-ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
-ms.openlocfilehash: 8712383536b6c2c159ba6f5d1ef7c59329b127f3
-ms.contentlocale: fr-fr
-ms.lasthandoff: 08/28/2017
-
+ms.contentlocale: fr-FR
+ms.lasthandoff: 10/31/2017
 ---
 # <a name="idebugcoreserver3disableautoattach"></a>IDebugCoreServer3::DisableAutoAttach
-Disables automatic attaching for all debug engines associated with this server.  
+Désactive l’attachement automatique pour tous les moteurs de débogage associés à ce serveur.  
   
-## <a name="syntax"></a>Syntax  
+## <a name="syntax"></a>Syntaxe  
   
 ```cpp  
 HRESULT DisableAutoAttach(  
@@ -52,8 +35,8 @@ HRESULT DisableAutoAttach(
 int DisableAutoAttach();  
 ```  
   
-## <a name="return-value"></a>Return Value  
- If successful, returns `S_OK`; otherwise, returns error code.  
+## <a name="return-value"></a>Valeur de retour  
+ En cas de réussite, retourne `S_OK`; sinon, retourne le code d’erreur.  
   
-## <a name="see-also"></a>See Also  
+## <a name="see-also"></a>Voir aussi  
  [IDebugCoreServer3](../../../extensibility/debugger/reference/idebugcoreserver3.md)

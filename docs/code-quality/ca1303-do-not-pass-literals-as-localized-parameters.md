@@ -1,11 +1,10 @@
 ---
-title: 'CA1303: Do not pass literals as localized parameters | Microsoft Docs'
+title: "CA1303 : Ne pas transmettre des littéraux localisées comme paramètres | Documents Microsoft"
 ms.custom: 
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-devops-test
+ms.technology: vs-ide-code-analysis
 ms.tgt_pltfrm: 
 ms.topic: article
 f1_keywords:
@@ -16,65 +15,52 @@ helpviewer_keywords:
 - DoNotPassLiteralsAsLocalizedParameters
 - CA1303
 ms.assetid: 904d284e-76d0-4b8f-a4df-0094de8d7aac
-caps.latest.revision: 22
-author: stevehoag
-ms.author: shoag
-manager: wpickett
-translation.priority.ht:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
-ms.translationtype: HT
-ms.sourcegitcommit: eb5c9550fd29b0e98bf63a7240737da4f13f3249
-ms.openlocfilehash: 98989e398166e8fc5a5fc0c765b10a11a12d5083
-ms.contentlocale: fr-fr
-ms.lasthandoff: 08/30/2017
-
+caps.latest.revision: "22"
+author: gewarren
+ms.author: gewarren
+manager: ghogen
+ms.openlocfilehash: ce6ed64a6991342b4dc1506b8384f7691cc90b8f
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: fr-FR
+ms.lasthandoff: 10/31/2017
 ---
-# <a name="ca1303-do-not-pass-literals-as-localized-parameters"></a>CA1303: Do not pass literals as localized parameters
+# <a name="ca1303-do-not-pass-literals-as-localized-parameters"></a>CA1303 : Ne pas transmettre des littéraux en tant que paramètres localisés
 |||  
 |-|-|  
 |TypeName|DoNotPassLiteralsAsLocalizedParameters|  
 |CheckId|CA1303|  
-|Category|Microsoft.Globalization|  
-|Breaking Change|Non Breaking|  
+|Catégorie|Microsoft.Globalization|  
+|Modification avec rupture|Sans rupture|  
   
 ## <a name="cause"></a>Cause  
- A method passes a string literal as a parameter to a constructor or method in the [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] class library and that string should be localizable.  
+ Une méthode passe une littéral de chaîne en tant que paramètre à un constructeur ou une méthode dans le [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] bibliothèque de classes et cette chaîne doit être localisable.  
   
- This warning is raised when a literal string is passed as a value to a parameter or property and one or more of the following cases is true:  
+ Cet avertissement est déclenché lorsqu’une chaîne littérale est passée comme valeur pour un paramètre ou une propriété et un ou plusieurs des cas suivants sont vrai :  
   
--   The <xref:System.ComponentModel.LocalizableAttribute> attribute of the parameter or property is set to true.  
+-   Le <xref:System.ComponentModel.LocalizableAttribute> attribut du paramètre ou de propriété est définie sur true.  
   
--   The parameter or property name contains "Text", "Message", or "Caption".  
+-   Le nom de paramètre ou la propriété contient « Texte », « Message » ou « Caption ».  
   
--   The name of the string parameter that is passed to a Console.Write or Console.WriteLine method is either "value" or "format".  
+-   Le nom du paramètre de chaîne qui est passé à une méthode Console.Write ou Console.WriteLine est « value » ou « format ».  
   
-## <a name="rule-description"></a>Rule Description  
- String literals that are embedded in source code are difficult to localize.  
+## <a name="rule-description"></a>Description de la règle  
+ Littéraux de chaîne qui sont incorporés dans le code source sont difficiles à localiser.  
   
-## <a name="how-to-fix-violations"></a>How to Fix Violations  
- To fix a violation of this rule, replace the string literal with a string retrieved through an instance of the <xref:System.Resources.ResourceManager> class.  
+## <a name="how-to-fix-violations"></a>Comment corriger les violations  
+ Pour corriger une violation de cette règle, remplacez le littéral de chaîne par une chaîne récupérée via une instance de la <xref:System.Resources.ResourceManager> classe.  
   
-## <a name="when-to-suppress-warnings"></a>When to Suppress Warnings  
- It is safe to suppress a warning from this rule if the code library will not be localized, or if the string is not exposed to the end user or a developer using the code library.  
+## <a name="when-to-suppress-warnings"></a>Quand supprimer les avertissements  
+ Il est possible de supprimer un avertissement de cette règle si la bibliothèque de code n’est pas localisée, ou si la chaîne n’est pas exposée à l’utilisateur final ou un développeur à l’aide de la bibliothèque de code.  
   
- Users can eliminate noise against methods which should not be passed localized strings by either renaming the parameter or property named, or by marking these items as conditional.  
+ Les utilisateurs peuvent éliminer le bruit sur les méthodes qui ne doivent pas être passées des chaînes localisées, soit en renommant le paramètre ou la propriété nommée, ou en marquant ces éléments comme conditionnels.  
   
-## <a name="example"></a>Example  
- The following example shows a method that throws an exception when either of its two arguments are out of range. For the first argument, the exception constructor is passed a literal string, which violates this rule. For the second argument, the constructor is correctly passed a string retrieved through a <xref:System.Resources.ResourceManager>.  
+## <a name="example"></a>Exemple  
+ L’exemple suivant montre une méthode qui lève une exception lorsqu’un de ses deux arguments sont hors limites. Pour le premier argument, le constructeur de l’exception est passé à une chaîne littérale, ce qui enfreint cette règle. Pour le second argument, le constructeur reçoit correctement une chaîne récupérée via un <xref:System.Resources.ResourceManager>.  
   
- [!code-cpp[FxCop.Globalization.DoNotPassLiterals#1](../code-quality/codesnippet/CPP/ca1303-do-not-pass-literals-as-localized-parameters_1.cpp)] [!code-vb[FxCop.Globalization.DoNotPassLiterals#1](../code-quality/codesnippet/VisualBasic/ca1303-do-not-pass-literals-as-localized-parameters_1.vb)] [!code-csharp[FxCop.Globalization.DoNotPassLiterals#1](../code-quality/codesnippet/CSharp/ca1303-do-not-pass-literals-as-localized-parameters_1.cs)]  
+ [!code-cpp[FxCop.Globalization.DoNotPassLiterals#1](../code-quality/codesnippet/CPP/ca1303-do-not-pass-literals-as-localized-parameters_1.cpp)]
+ [!code-vb[FxCop.Globalization.DoNotPassLiterals#1](../code-quality/codesnippet/VisualBasic/ca1303-do-not-pass-literals-as-localized-parameters_1.vb)]
+ [!code-csharp[FxCop.Globalization.DoNotPassLiterals#1](../code-quality/codesnippet/CSharp/ca1303-do-not-pass-literals-as-localized-parameters_1.cs)]  
   
-## <a name="see-also"></a>See Also  
- [Resources in Desktop Apps](/dotnet/framework/resources/index)
+## <a name="see-also"></a>Voir aussi  
+ [Ressources dans des applications de bureau](/dotnet/framework/resources/index)

@@ -1,44 +1,45 @@
 ---
-title: "&lt;dependency&gt; Element (ClickOnce Application) | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-deployment"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "urn:schemas-microsoft-com:asm.v2#osVersionInfo"
-  - "urn:schemas-microsoft-com:asm.v2#os"
-  - "http://www.w3.org/2000/09/xmldsig#Transform"
-  - "urn:schemas-microsoft-com:asm.v2#dependency"
-  - "http://www.w3.org/2000/09/xmldsig#DigestValue"
-  - "urn:schemas-microsoft-com:asm.v2#assemblyIdentity"
-  - "http://www.w3.org/2000/09/xmldsig#DigestMethod"
-  - "http://www.w3.org/2000/09/xmldsig#Transforms"
-  - "urn:schemas-microsoft-com:asm.v2#hash"
-  - "urn:schemas-microsoft-com:asm.v2#dependentAssembly"
-dev_langs: 
-  - "VB"
-  - "CSharp"
-  - "C++"
-helpviewer_keywords: 
-  - "manifests [ClickOnce], dependency element"
-  - "<dependency> element [ClickOnce application manifest]"
+title: "&lt;dépendance&gt; élément (déploiement ClickOnce) | Documents Microsoft"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-deployment
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords:
+- urn:schemas-microsoft-com:asm.v2#osVersionInfo
+- urn:schemas-microsoft-com:asm.v2#os
+- http://www.w3.org/2000/09/xmldsig#Transform
+- urn:schemas-microsoft-com:asm.v2#dependency
+- http://www.w3.org/2000/09/xmldsig#DigestValue
+- urn:schemas-microsoft-com:asm.v2#assemblyIdentity
+- http://www.w3.org/2000/09/xmldsig#DigestMethod
+- http://www.w3.org/2000/09/xmldsig#Transforms
+- urn:schemas-microsoft-com:asm.v2#hash
+- urn:schemas-microsoft-com:asm.v2#dependentAssembly
+dev_langs:
+- VB
+- CSharp
+- C++
+helpviewer_keywords:
+- manifests [ClickOnce], dependency element
+- <dependency> element [ClickOnce application manifest]
 ms.assetid: 09d6a1e0-60f8-4fbd-843b-8e49ee3115a3
-caps.latest.revision: 34
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
-caps.handback.revision: 34
+caps.latest.revision: "34"
+author: stevehoag
+ms.author: shoag
+manager: wpickett
+ms.openlocfilehash: 7a0604113161fed432219f84ac6c4d8a6a4d7666
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.translationtype: MT
+ms.contentlocale: fr-FR
+ms.lasthandoff: 10/27/2017
 ---
-# &lt;dependency&gt; Element (ClickOnce Application)
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
-
-Identifie une dépendance de plateforme ou d'assembly requise pour l'application.  
+# <a name="ltdependencygt-element-clickonce-application"></a>&lt;dépendance&gt; élément (déploiement ClickOnce)
+Identifie une dépendance de plateforme ou d’assembly qui est requise pour l’application.  
   
-## Syntaxe  
+## <a name="syntax"></a>Syntaxe  
   
 ```  
   
@@ -88,91 +89,91 @@ Identifie une dépendance de plateforme ou d'assembly requise pour l'application
 </dependency>  
 ```  
   
-## Éléments et attributs  
- L'élément `dependency` est obligatoire.  Il peut exister plusieurs instances de `dependency` dans le même manifeste d'application.  
+## <a name="elements-and-attributes"></a>Éléments et attributs  
+ Le `dependency` élément est requis. Il peut y avoir plusieurs instances de `dependency` dans le manifeste d’application.  
   
- L'élément `dependency` ne possède pas d'attribut et contient les éléments enfants suivants.  
+ Le `dependency` élément n’a pas d’attributs et contient les éléments enfants suivants.  
   
-### dependentOS  
- Facultatif.  Contient l'élément `osVersionInfo`.  Les éléments `dependentOS` et `dependentAssembly` s'excluent mutuellement : un élément `dependency` peut posséder l'un ou l'autre, mais pas les deux à la fois.  
+### <a name="dependentos"></a>dependentOS  
+ Facultatif. Contient le `osVersionInfo` élément. Le `dependentOS` et `dependentAssembly` éléments s’excluent mutuellement : un ou l’autre doit exister pour un `dependency` élément, mais pas les deux.  
   
- `dependentOS` prend en charge les attributs suivants.  
-  
-|Attribut|Description|  
-|--------------|-----------------|  
-|`supportUrl`|Facultatif.  Spécifie une URL de support pour la plateforme dépendante.  Cette URL est montrée à l'utilisateur si la plateforme requise existe.|  
-|`description`|Facultatif.  Décrit, dans un format explicite, le système d'exploitation décrit par l'élément `dependentOS`.|  
-  
-### osVersionInfo  
- Obligatoire.  Cet élément est un enfant de l'élément `dependentOS` et contient l'élément `os`.  Cet élément ne possède pas d'attribut.  
-  
-### os  
- Obligatoire.  Cet élément est un enfant de l'élément `osVersionInfo`.  Cet élément possède les attributs suivants.  
+ `dependentOS`prend en charge les attributs suivants.  
   
 |Attribut|Description|  
-|--------------|-----------------|  
-|`majorVersion`|Obligatoire.  Spécifie le numéro de version majeure du système d'exploitation.|  
-|`minorVersion`|Obligatoire.  Spécifie le numéro de version secondaire du système d'exploitation.|  
-|`buildNumber`|Obligatoire.  Spécifie le numéro de build du système d'exploitation.|  
-|`servicePackMajor`|Obligatoire.  Spécifie le numéro principal de Service Pack du système d'exploitation.|  
-|`servicePackMinor`|Facultatif.  Spécifie le numéro secondaire de Service Pack du système d'exploitation.|  
-|`productType`|Facultatif.  Identifie la valeur du type de produit.  Les valeurs valides sont `server`, `workstation` et `domainController`.  Par exemple, cette valeur d'attribut est `workstation` pour Windows 2000 Professionnel.|  
-|`suiteType`|Facultatif.  Identifie une suite de produits disponible sur le système, ou le type de configuration du système.  Les valeurs valides sont `backoffice`, `blade`, `datacenter`, `enterprise`, `home`, `professional`, `smallbusiness`, `smallbusinessRestricted` et `terminal`.  Par exemple, cette valeur d'attribut est `professional` pour Windows 2000 Professionnel.|  
+|---------------|-----------------|  
+|`supportUrl`|Facultatif. Spécifie une URL de prise en charge pour la plateforme dépendante. Cette URL est affichée à l’utilisateur si la plateforme requise est trouvée.|  
+|`description`|Facultatif. Décrit, dans une forme lisible, le système d’exploitation décrit par le `dependentOS` élément.|  
   
-### dependentAssembly  
- Facultatif.  Contient l'élément `assemblyIdentity`.  Les éléments `dependentOS` et `dependentAssembly` s'excluent mutuellement : un élément `dependency` peut posséder l'un ou l'autre, mais pas les deux à la fois.  
+### <a name="osversioninfo"></a>osVersionInfo  
+ Requis. Cet élément est un enfant de l’élément `dependentOS` et contient l’élément `os`. Cet élément n’a pas d’attributs.  
   
- `dependentAssembly` possède les attributs suivants.  
+### <a name="os"></a>système d’exploitation  
+ Requis. Cet élément est un enfant de l’élément `osVersionInfo`. Cet élément comprend les attributs suivants.  
   
 |Attribut|Description|  
-|--------------|-----------------|  
-|`dependencyType`|Obligatoire.  Spécifie le type de dépendance.  Les valeurs valides sont `preprequisite` et `install`.  Un assembly `install` est installé dans le cadre de l'application [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)].  Un assembly `prerequisite` doit être présent dans le Global Assembly Cache \(GAC\) avant l'installation de l'application [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)].|  
-|`allowDelayedBinding`|Obligatoire.  Spécifie si l'assembly peut être chargé par programmation à l'exécution.|  
-|`group`|Facultatif.  Si l'attribut `dependencyType` a la valeur `install`, désigne un groupe nommé d'assemblys qui s'installent uniquement à la demande.  Pour plus d'informations, consultez [Procédure pas à pas : téléchargement d'assemblys à la demande avec l'API du déploiement ClickOnce à l'aide du concepteur](../Topic/Walkthrough:%20Downloading%20Assemblies%20on%20Demand%20with%20the%20ClickOnce%20Deployment%20API%20Using%20the%20Designer.md).<br /><br /> S'il a la valeur `framework` et si l'attribut `dependencyType` a la valeur `prerequisite`, désigne l'assembly faisant partie du .NET Framework.  Le Global Assemby Cache \(GAC\) n'est pas vérifié pour cet assembly lors de l'installation sur [!INCLUDE[net_v40_short](../debugger/includes/net_v40_short_md.md)] et les versions ultérieures.|  
-|`codeBase`|Requis lorsque l'attribut `dependencyType` a la valeur `install`.  Chemin d'accès à l'assembly dépendant.  Il doit s'agir d'un chemin d'accès absolu ou relatif à la base de code du manifeste.  Ce chemin d'accès doit être un URI valide pour que le manifeste d'assembly soit valide.|  
-|`size`|Requis lorsque l'attribut `dependencyType` a la valeur `install`.  Taille de l'assembly dépendant en octets.|  
+|---------------|-----------------|  
+|`majorVersion`|Obligatoire. Spécifie le numéro de version principale du système d’exploitation.|  
+|`minorVersion`|Obligatoire. Spécifie le numéro de version secondaire, le système d’exploitation.|  
+|`buildNumber`|Obligatoire. Spécifie le numéro de build du système d’exploitation.|  
+|`servicePackMajor`|Obligatoire. Spécifie le numéro principal de service pack le système d’exploitation.|  
+|`servicePackMinor`|Facultatif. Spécifie le numéro secondaire de service pack du système d’exploitation.|  
+|`productType`|Facultatif. Identifie la valeur de type de produit. Les valeurs valides sont `server`, `workstation` et `domainController`. Par exemple, pour Windows 2000 Professionnel, cette valeur d’attribut est `workstation`.|  
+|`suiteType`|Facultatif. Identifie une suite de produits disponible sur le système ou le type de configuration du système. Les valeurs valides sont `backoffice`, `blade`, `datacenter`, `enterprise`, `home`, `professional`, `smallbusiness`, `smallbusinessRestricted`, et `terminal`. Par exemple, pour Windows 2000 Professionnel, cette valeur d’attribut est `professional`.|  
   
-### assemblyIdentity  
- Obligatoire.  Cet élément est un enfant de l'élément `dependentAssembly` et possède les attributs suivants.  
+### <a name="dependentassembly"></a>dependentAssembly  
+ Facultatif. Contient le `assemblyIdentity` élément. Le `dependentOS` et `dependentAssembly` éléments s’excluent mutuellement : un ou l’autre doit exister pour un `dependency` élément, mais pas les deux.  
   
-|Attribut|Description|  
-|--------------|-----------------|  
-|`name`|Obligatoire.  Identifie le nom de l'application.|  
-|`version`|Obligatoire.  Spécifie le numéro de version de l'application, au format suivant : `major.minor.build.revision`|  
-|`publicKeyToken`|Facultatif.  Spécifie une chaîne hexadécimale de 16 caractères qui représente les 8 derniers octets de la valeur de hachage `SHA-1` de la clé publique sous laquelle l'application ou l'assembly est signé.  La clé publique utilisée pour la signature du catalogue doit être une clé de 2048 bits ou plus.|  
-|`processorArchitecture`|Facultatif.  Spécifie le processeur.  Les valeurs valides sont `x86` pour Windows 32 bits et `I64` pour Windows 64 bits.|  
-|`language`|Facultatif.  Identifie les codes de la langue de l'assembly, en deux parties \(par exemple, fr\-FR\).|  
-  
-### hash  
- L'élément `hash` est un enfant facultatif de l'élément `assemblyIdentity`.  L'élément `hash` ne contient pas d'attributs.  
-  
- [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] utilise un hachage algorithmique de tous les fichiers dans une application comme vérification de la sécurité, pour garantir qu'aucun des fichiers n'a été modifié après le déploiement.  Si l'élément `hash` n'est pas inclus, cette vérification ne sera pas effectuée. Par conséquent, il n'est pas recommandé d'omettre l'élément `hash`.  
-  
-### dsig:Transforms  
- L'élément `dsig:Transforms` est un enfant requis de l'élément `hash`.  L'élément `dsig:Transforms` ne contient pas d'attributs.  
-  
-### dsig:Transform  
- L'élément `dsig:Transform` est un enfant requis de l'élément `dsig:Transforms`.  L'élément `dsig:Transform` a les attributs suivants.  
+ `dependentAssembly`a les attributs suivants.  
   
 |Attribut|Description|  
-|--------------|-----------------|  
-|`Algorithm`|Algorithme utilisé pour calculer le Digest de ce fichier.  À l'heure actuelle, la seule valeur utilisée par [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] est `urn:schemas-microsoft-com:HashTransforms.Identity`.|  
+|---------------|-----------------|  
+|`dependencyType`|Obligatoire. Spécifie le type de dépendance. Les valeurs valides sont `preprequisite` et `install`. Un `install` assembly est installé dans le cadre de la [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] application. A `prerequisite` assembly doit être présent dans le global assembly cache (GAC) avant le [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] application peut être installée.|  
+|`allowDelayedBinding`|Obligatoire. Spécifie si l’assembly peut être chargé par programmation à l’exécution.|  
+|`group`|Facultatif. Si le `dependencyType` attribut a la valeur `install`, désigne un groupe nommé d’assemblys qui s’installent uniquement à la demande. Pour plus d’informations, consultez [Procédure pas à pas : téléchargement d’assemblys à la demande avec l’API du déploiement ClickOnce à l’aide du concepteur](../deployment/walkthrough-downloading-assemblies-on-demand-with-the-clickonce-deployment-api-using-the-designer.md).<br /><br /> Si la valeur `framework` et `dependencyType` attribut a la valeur `prerequisite`, désigne l’assembly en tant que partie du .NET Framework. Le global assembly cache (GAC) n’est pas activé pour cet assembly lors de l’installation sur [!INCLUDE[net_v40_short](../code-quality/includes/net_v40_short_md.md)] et versions ultérieures.|  
+|`codeBase`|Obligatoire lorsque le `dependencyType` attribut a la valeur `install`. Le chemin d’accès à l’assembly dépendant. Peut être soit un chemin d’accès absolu ou un chemin d’accès relatif au code du manifeste de base. Ce chemin d’accès doit être un URI valide afin que le manifeste d’assembly valide.|  
+|`size`|Obligatoire lorsque le `dependencyType` attribut a la valeur `install`. La taille de l’assembly dépendant, en octets.|  
   
-### dsig:DigestMethod  
- L'élément `dsig:DigestMethod` est un enfant requis de l'élément `hash`.  L'élément `dsig:DigestMethod` a les attributs suivants.  
+### <a name="assemblyidentity"></a>assemblyIdentity  
+ Requis. Cet élément est un enfant de l’élément `dependentAssembly` et comprend les attributs suivants.  
   
 |Attribut|Description|  
-|--------------|-----------------|  
-|`Algorithm`|Algorithme utilisé pour calculer le Digest de ce fichier.  À l'heure actuelle, la seule valeur utilisée par [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] est `http://www.w3.org/2000/09/xmldsig#sha1 #sha1`.|  
+|---------------|-----------------|  
+|`name`|Obligatoire. Identifie le nom de l’application.|  
+|`version`|Obligatoire. Spécifie le numéro de version de l’application dans le format suivant :`major.minor.build.revision`|  
+|`publicKeyToken`|Facultatif. Spécifie une chaîne hexadécimale de 16 caractères qui représente les 8 derniers octets de la `SHA-1` la valeur de la clé publique sous laquelle l’application ou l’assembly est signé de hachage. La clé publique utilisée pour signer le catalogue doit être au moins 2 048 bits.|  
+|`processorArchitecture`|Facultatif. Spécifie le processeur. Les valeurs valides sont `x86` pour Windows 32 bits et `I64` pour Windows 64 bits.|  
+|`language`|Facultatif. Identifie les codes de langue de deux parties, telles que EN-US, de l’assembly.|  
   
-### dsig:DigestValue  
- L'élément `dsig:DigestValue` est un enfant requis de l'élément `hash`.  L'élément `dsig:DigestValue` ne contient pas d'attributs.  Sa valeur texte est le hachage calculé pour le fichier spécifié.  
+### <a name="hash"></a>hash  
+ Le `hash` élément est un enfant facultatif de la `assemblyIdentity` élément. Le `hash` élément ne possède pas d’attributs.  
   
-## Notes  
- Tous les assemblys utilisés par votre application doivent avoir un élément `dependency` correspondant.  Les assemblys dépendants n'incluent pas les assemblys qui doivent être préinstallés dans le Global Assembly Cache en tant qu'assemblys de plateforme.  
+ [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]utilise un hachage algorithmique de tous les fichiers dans une application en tant qu’une vérification de sécurité pour vous assurer qu’aucun des fichiers ont été modifiées après le déploiement. Si le `hash` élément n’est pas inclus, cette vérification ne sera pas effectuée. Par conséquent, l’omission de la `hash` élément n’est pas recommandé.  
   
-## Exemple  
- L'exemple de code suivant illustre les éléments `dependency` dans un manifeste d'application [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)].  Cet exemple de code fait partie d'un exemple plus développé fourni pour la rubrique [ClickOnce Application Manifest](../deployment/clickonce-application-manifest.md).  
+### <a name="dsigtransforms"></a>dsig : TRANSFORMS  
+ Le `dsig:Transforms` élément est un enfant requis de le `hash` élément. Le `dsig:Transforms` élément ne possède pas d’attributs.  
+  
+### <a name="dsigtransform"></a>dsig : Transform  
+ Le `dsig:Transform` élément est un enfant requis de le `dsig:Transforms` élément. Le `dsig:Transform` élément a les attributs suivants.  
+  
+|Attribut|Description|  
+|---------------|-----------------|  
+|`Algorithm`|L’algorithme utilisé pour calculer le digest pour ce fichier. La seule valeur utilisée par [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] est `urn:schemas-microsoft-com:HashTransforms.Identity`.|  
+  
+### <a name="dsigdigestmethod"></a>dsig:DigestMethod  
+ Le `dsig:DigestMethod` élément est un enfant requis de le `hash` élément. Le `dsig:DigestMethod` élément a les attributs suivants.  
+  
+|Attribut|Description|  
+|---------------|-----------------|  
+|`Algorithm`|L’algorithme utilisé pour calculer le digest pour ce fichier. La seule valeur utilisée par [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] est `http://www.w3.org/2000/09/xmldsig#sha1`.|  
+  
+### <a name="dsigdigestvalue"></a>dsig : DigestValue  
+ Le `dsig:DigestValue` élément est un enfant requis de le `hash` élément. Le `dsig:DigestValue` élément ne possède pas d’attributs. Sa valeur texte est le hachage calculé pour le fichier spécifié.  
+  
+## <a name="remarks"></a>Remarques  
+ Tous les assemblys utilisés par votre application doivent correspondre à une `dependency` élément. Assemblys dépendants n’incluent pas les assemblys qui doivent être préinstallés dans le global assembly cache en tant qu’assemblys de plateforme.  
+  
+## <a name="example"></a>Exemple  
+ L’exemple de code suivant illustre `dependency` éléments dans un [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] manifeste d’application. Cet exemple de code fait partie d’un exemple plus complet fourni pour le [manifeste d’Application ClickOnce](../deployment/clickonce-application-manifest.md) rubrique.  
   
 ```  
 <dependency>  
@@ -218,6 +219,6 @@ Identifie une dépendance de plateforme ou d'assembly requise pour l'application
 </dependency>  
 ```  
   
-## Voir aussi  
- [ClickOnce Application Manifest](../deployment/clickonce-application-manifest.md)   
- [\<dependency\> Element](../deployment/dependency-element-clickonce-deployment.md)
+## <a name="see-also"></a>Voir aussi  
+ [Manifeste d’Application ClickOnce](../deployment/clickonce-application-manifest.md)   
+ [\<dépendance > élément](../deployment/dependency-element-clickonce-deployment.md)

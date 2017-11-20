@@ -1,46 +1,29 @@
 ---
-title: IDebugObject2::GetICorDebugValue | Microsoft Docs
+title: IDebugObject2::GetICorDebugValue | Documents Microsoft
 ms.custom: 
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-sdk
+ms.technology: vs-ide-sdk
 ms.tgt_pltfrm: 
 ms.topic: article
-f1_keywords:
-- IDebugObject2::GetICorDebugValue
-helpviewer_keywords:
-- IDebugObject2::GetICorDebugValue method
+f1_keywords: IDebugObject2::GetICorDebugValue
+helpviewer_keywords: IDebugObject2::GetICorDebugValue method
 ms.assetid: bcd4355d-3fbe-483f-bb23-a44348323c6a
-caps.latest.revision: 11
+caps.latest.revision: "11"
+author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-translation.priority.mt:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
+ms.openlocfilehash: 6b1d1c05b6156cb38222eeedb287de4b3fc52b18
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
 ms.translationtype: MT
-ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
-ms.openlocfilehash: 477ce5c18672e8324667e28754810e66101e7b0c
-ms.contentlocale: fr-fr
-ms.lasthandoff: 08/28/2017
-
+ms.contentlocale: fr-FR
+ms.lasthandoff: 10/31/2017
 ---
 # <a name="idebugobject2geticordebugvalue"></a>IDebugObject2::GetICorDebugValue
-Gets a managed code object representing the value associated with this object.  
+Obtient un objet de code managé qui représente la valeur associée à cet objet.  
   
-## <a name="syntax"></a>Syntax  
+## <a name="syntax"></a>Syntaxe  
   
 ```cpp  
 HRESULT GetICorDebugValue(  
@@ -54,15 +37,15 @@ int GetICorDebugValue(
 );  
 ```  
   
-#### <a name="parameters"></a>Parameters  
+#### <a name="parameters"></a>Paramètres  
  `ppUnk`  
- [out] `IUnknown` interface that represents this alias. This interface can be queried for the `ICorDebugValue` interface.  
+ [out] `IUnknown` interface qui représente cet alias. Cette interface peut être interrogée pour la `ICorDebugValue` interface.  
   
-## <a name="return-value"></a>Return Value  
- If successful, returns S_OK; otherwise, returns an error code.  
+## <a name="return-value"></a>Valeur de retour  
+ En cas de réussite, retourne S_OK ; Sinon, retourne un code d’erreur.  
   
-## <a name="remarks"></a>Remarks  
- The `ICorDebugValue` object is a Common Language Runtime interface that represents a value.  
+## <a name="remarks"></a>Remarques  
+ Le `ICorDebugValue` objet est une interface de Common Language Runtime qui représente une valeur.  
   
-## <a name="see-also"></a>See Also  
+## <a name="see-also"></a>Voir aussi  
  [IDebugObject2](../../../extensibility/debugger/reference/idebugobject2.md)

@@ -1,74 +1,73 @@
 ---
-title: "IDiaSectionContrib | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-debug"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "IDiaSectionContrib (interface)"
+title: IDiaSectionContrib | Documents Microsoft
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-debug
+ms.tgt_pltfrm: 
+ms.topic: article
+dev_langs: C++
+helpviewer_keywords: IDiaSectionContrib interface
 ms.assetid: 371d40f6-ca0e-4d7e-9210-64d3768996c6
-caps.latest.revision: 14
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 14
+caps.latest.revision: "14"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: f7effcc96286fc548b42c810789d1cb902bb3c18
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: fr-FR
+ms.lasthandoff: 10/31/2017
 ---
-# IDiaSectionContrib
-[!INCLUDE[vs2017banner](../../code-quality/includes/vs2017banner.md)]
-
-Récupère les données qui décrit une contribution de section, c. autrement dit., un bloc de mémoire contigu fourni à l'image selon un module \(compiland\).  
+# <a name="idiasectioncontrib"></a>IDiaSectionContrib
+Récupère des données décrivant une contribution de la section, autrement dit, un bloc contigu de mémoire a contribué à l’image par un module (compiland).  
   
-## Syntaxe  
+## <a name="syntax"></a>Syntaxe  
   
 ```  
-IDiaSectionContrib : IUnknown  
+IDiaSectionContrib : IUnknown  
 ```  
   
-## méthodes en commande de Vtable  
- Le tableau suivant répertorie les méthodes d' `IDiaSectionContrib`.  
+## <a name="methods-in-vtable-order"></a>Méthodes dans l'ordre Vtable  
+ Le tableau suivant présente les méthodes de `IDiaSectionContrib`.  
   
 |Méthode|Description|  
-|-------------|-----------------|  
-|[IDiaSectionContrib::get\_compiland](../../debugger/debug-interface-access/idiasectioncontrib-get-compiland.md)|Extrait une référence au symbole de module qui a fourni cette section.|  
-|[IDiaSectionContrib::get\_addressSection](../../debugger/debug-interface-access/idiasectioncontrib-get-addresssection.md)|Extrait la partie de la section de l'adresse de la contribution.|  
-|[IDiaSectionContrib::get\_addressOffset](../../debugger/debug-interface-access/idiasectioncontrib-get-addressoffset.md)|Extrait la partie d'offset de l'adresse de la contribution.|  
-|[IDiaSectionContrib::get\_relativeVirtualAddress](../Topic/IDiaSectionContrib::get_relativeVirtualAddress.md)|Récupère l'adresse virtuelle relative de l'image \(RVA\) de la contribution.|  
-|[IDiaSectionContrib::get\_virtualAddress](../../debugger/debug-interface-access/idiasectioncontrib-get-virtualaddress.md)|Récupère l'adresse \(VA\) virtuelle de la contribution.|  
-|[IDiaSectionContrib::get\_length](../../debugger/debug-interface-access/idiasectioncontrib-get-length.md)|Récupère le nombre d'octets dans une section.|  
-|[IDiaSectionContrib::get\_notPaged](../../debugger/debug-interface-access/idiasectioncontrib-get-notpaged.md)|extrait une balise qui indique si la section ne peut pas être mémoire insuffisante paginé.|  
-|[IDiaSectionContrib::get\_nopad](../../debugger/debug-interface-access/idiasectioncontrib-get-nopad.md)|Extrait une balise qui indique si la section ne doit pas être effectuée à la limite suivante de mémoire.|  
-|[IDiaSectionContrib::get\_code](../Topic/IDiaSectionContrib::get_code.md)|Extrait une balise qui indique si la section contient le code exécutable.|  
-|[IDiaSectionContrib::get\_code16bit](../../debugger/debug-interface-access/idiasectioncontrib-get-code16bit.md)|Extrait une balise qui indique si la section contient le code 16 bits.|  
-|[IDiaSectionContrib::get\_initializedData](../../debugger/debug-interface-access/idiasectioncontrib-get-initializeddata.md)|extrait une balise qui indique si la section contient des données initialisées.|  
-|[IDiaSectionContrib::get\_uninitializedData](../Topic/IDiaSectionContrib::get_uninitializedData.md)|extrait une balise qui indique si la section contient des données non initialisées.|  
-|[IDiaSectionContrib::get\_informational](../../debugger/debug-interface-access/idiasectioncontrib-get-informational.md)|Extrait une balise indiquant si une section contient les commentaires ou les informations similaires.|  
-|[IDiaSectionContrib::get\_remove](../../debugger/debug-interface-access/idiasectioncontrib-get-remove.md)|Extrait une balise qui indique si la section est supprimée pour que ce soit effectué à une partie de l'image en mémoire.|  
-|[IDiaSectionContrib::get\_comdat](../../debugger/debug-interface-access/idiasectioncontrib-get-comdat.md)|Extrait une balise qui indique si la section est un enregistrement COMDAT.|  
-|[IDiaSectionContrib::get\_discardable](../../debugger/debug-interface-access/idiasectioncontrib-get-discardable.md)|extrait une balise qui indique si la section peut être ignorée.|  
-|[IDiaSectionContrib::get\_notCached](../../debugger/debug-interface-access/idiasectioncontrib-get-notcached.md)|extrait une balise qui indique si la section ne peut pas être mise en cache.|  
-|[IDiaSectionContrib::get\_share](../../debugger/debug-interface-access/idiasectioncontrib-get-share.md)|extrait une balise qui indique si la section peut être partagée dans la mémoire.|  
-|[IDiaSectionContrib::get\_execute](../../debugger/debug-interface-access/idiasectioncontrib-get-execute.md)|Extrait une balise qui indique si la section est exécutable comme du code.|  
-|[IDiaSectionContrib::get\_read](../../debugger/debug-interface-access/idiasectioncontrib-get-read.md)|Extrait une balise qui indique si la section peuvent être lues.|  
-|[IDiaSectionContrib::get\_write](../../debugger/debug-interface-access/idiasectioncontrib-get-write.md)|extrait une balise qui indique si la section peut être écrite.|  
-|[IDiaSectionContrib::get\_dataCrc](../../debugger/debug-interface-access/idiasectioncontrib-get-datacrc.md)|Récupère le contrôle de \(CRC\) redondance cyclique des données dans la section.|  
-|[IDiaSectionContrib::get\_relocationsCrc](../../debugger/debug-interface-access/idiasectioncontrib-get-relocationscrc.md)|Extrait CRC des informations de réadressage de la section.|  
-|[IDiaLineNumber::get\_compilandId](../../debugger/debug-interface-access/idialinenumber-get-compilandid.md)|Extrait l'identificateur de module \(compiland\) de la section.|  
+|------------|-----------------|  
+|[IDiaSectionContrib::get_compiland](../../debugger/debug-interface-access/idiasectioncontrib-get-compiland.md)|Récupère une référence au symbole de compiland qui a contribué à cette section.|  
+|[IDiaSectionContrib::get_addressSection](../../debugger/debug-interface-access/idiasectioncontrib-get-addresssection.md)|Extrait la partie de la section de l’adresse de la contribution.|  
+|[IDiaSectionContrib::get_addressOffset](../../debugger/debug-interface-access/idiasectioncontrib-get-addressoffset.md)|Récupère la partie décalage d’adresse de la contribution.|  
+|[IDiaSectionContrib::get_relativeVirtualAddress](../../debugger/debug-interface-access/idiasectioncontrib-get-relativevirtualaddress.md)|Récupère l’image adresse virtuelle relative (RVA) de la contribution.|  
+|[IDiaSectionContrib::get_virtualAddress](../../debugger/debug-interface-access/idiasectioncontrib-get-virtualaddress.md)|Récupère l’adresse virtuelle (VA) de la contribution.|  
+|[IDiaSectionContrib::get_length](../../debugger/debug-interface-access/idiasectioncontrib-get-length.md)|Récupère le nombre d’octets dans une section.|  
+|[IDiaSectionContrib::get_notPaged](../../debugger/debug-interface-access/idiasectioncontrib-get-notpaged.md)|Récupère un indicateur qui indique si la section ne peut pas être paginée en dehors de la mémoire.|  
+|[IDiaSectionContrib::get_nopad](../../debugger/debug-interface-access/idiasectioncontrib-get-nopad.md)|Récupère un indicateur qui signale si la section ne doit pas être complétée à la limite de mémoire suivante.|  
+|[IDiaSectionContrib::get_code](../../debugger/debug-interface-access/idiasectioncontrib-get-code.md)|Récupère un indicateur qui indique si la section contient du code exécutable.|  
+|[IDiaSectionContrib::get_code16bit](../../debugger/debug-interface-access/idiasectioncontrib-get-code16bit.md)|Récupère un indicateur qui indique si la section contient le code 16 bits.|  
+|[IDiaSectionContrib::get_initializedData](../../debugger/debug-interface-access/idiasectioncontrib-get-initializeddata.md)|Récupère un indicateur qui indique si la section contient des données initialisées.|  
+|[IDiaSectionContrib::get_uninitializedData](../../debugger/debug-interface-access/idiasectioncontrib-get-uninitializeddata.md)|Récupère un indicateur qui indique si la section contient des données non initialisées.|  
+|[IDiaSectionContrib::get_informational](../../debugger/debug-interface-access/idiasectioncontrib-get-informational.md)|Récupère un indicateur qui indique si une section contient des commentaires ou des informations similaires.|  
+|[IDiaSectionContrib::get_remove](../../debugger/debug-interface-access/idiasectioncontrib-get-remove.md)|Récupère un indicateur qui indique si la section est supprimée avant qu’il est mis à la partie de l’image en mémoire.|  
+|[IDiaSectionContrib::get_comdat](../../debugger/debug-interface-access/idiasectioncontrib-get-comdat.md)|Récupère un indicateur qui indique si la section est un enregistrement COMDAT.|  
+|[IDiaSectionContrib::get_discardable](../../debugger/debug-interface-access/idiasectioncontrib-get-discardable.md)|Récupère un indicateur qui indique si la section peut être ignorée.|  
+|[IDiaSectionContrib::get_notCached](../../debugger/debug-interface-access/idiasectioncontrib-get-notcached.md)|Récupère un indicateur qui indique si la section ne peut pas être mis en cache.|  
+|[IDiaSectionContrib::get_share](../../debugger/debug-interface-access/idiasectioncontrib-get-share.md)|Récupère un indicateur qui indique si la section peut être partagée dans la mémoire.|  
+|[IDiaSectionContrib::get_execute](../../debugger/debug-interface-access/idiasectioncontrib-get-execute.md)|Récupère un indicateur qui indique si la section est exécutable en tant que code.|  
+|[IDiaSectionContrib::get_read](../../debugger/debug-interface-access/idiasectioncontrib-get-read.md)|Récupère un indicateur qui indique si la section peut être lue.|  
+|[IDiaSectionContrib::get_write](../../debugger/debug-interface-access/idiasectioncontrib-get-write.md)|Récupère un indicateur qui indique si la section peut être écrit.|  
+|[IDiaSectionContrib::get_dataCrc](../../debugger/debug-interface-access/idiasectioncontrib-get-datacrc.md)|Récupère le contrôle de redondance cyclique (CRC) des données dans la section.|  
+|[IDiaSectionContrib::get_relocationsCrc](../../debugger/debug-interface-access/idiasectioncontrib-get-relocationscrc.md)|Récupère le CRC des informations de réadressage de la section.|  
+|[IDiaLineNumber::get_compilandId](../../debugger/debug-interface-access/idialinenumber-get-compilandid.md)|Récupère l’identificateur de compiland pour la section.|  
   
-## Notes  
+## <a name="remarks"></a>Remarques  
   
-## Remarques pour les appelants  
- cette interface est obtenue en appelant les méthodes d' [IDiaEnumSectionContribs::Item](../../debugger/debug-interface-access/idiaenumsectioncontribs-item.md) et d' [IDiaEnumSectionContribs::Next](../Topic/IDiaEnumSectionContribs::Next.md) .  Consultez l'interface d' [IDiaEnumSectionContribs](../../debugger/debug-interface-access/idiaenumsectioncontribs.md) pour obtenir un exemple d'obtenir `IDiaSectionContrib` pour relier.  
+## <a name="notes-for-callers"></a>Remarques pour les appelants  
+ Cette interface est obtenue en appelant le [IDiaEnumSectionContribs::Item](../../debugger/debug-interface-access/idiaenumsectioncontribs-item.md) et [IDiaEnumSectionContribs::Next](../../debugger/debug-interface-access/idiaenumsectioncontribs-next.md) méthodes. Consultez le [IDiaEnumSectionContribs](../../debugger/debug-interface-access/idiaenumsectioncontribs.md) interface pour obtenir un exemple d’obtention de la `IDiaSectionContrib` interface.  
   
-## Exemple  
- Cette fonction illustre l'adresse de chaque section ainsi que tous les symboles associés.  Consultez l'interface d' [IDiaEnumSectionContribs](../../debugger/debug-interface-access/idiaenumsectioncontribs.md) pour voir comment l'interface d' `IDiaSectionContrib` est obtenue.  
+## <a name="example"></a>Exemple  
+ Cette fonction affiche l’adresse de chaque section, ainsi que les symboles associés. Consultez le [IDiaEnumSectionContribs](../../debugger/debug-interface-access/idiaenumsectioncontribs.md) interface pour voir comment la `IDiaSectionContrib` interface est obtenue.  
   
-```cpp#  
+```C++  
 void PrintSectionContrib(IDiaSectionContrib* pSecContrib, IDiaSession* pSession)  
 {  
     if (pSecContrib != NULL && pSession != NULL)  
@@ -128,15 +127,15 @@ void PrintSectionContrib(IDiaSectionContrib* pSecContrib, IDiaSession* pSession)
 }  
 ```  
   
-## Configuration requise  
- en\-tête : Dia2.h  
+## <a name="requirements"></a>Spécifications  
+ En-tête : Dia2.h  
   
- bibliothèque : diaguids.lib  
+ Bibliothèque : diaguids.lib  
   
- DLL : msdia80.dll  
+ DLL : msdia80.dll  
   
-## Voir aussi  
- [Interfaces \(Kit de développement logiciel Debug Interface Access\)](../../debugger/debug-interface-access/interfaces-debug-interface-access-sdk.md)   
+## <a name="see-also"></a>Voir aussi  
+ [Interfaces (Debug Interface Access SDK)](../../debugger/debug-interface-access/interfaces-debug-interface-access-sdk.md)   
  [IDiaEnumSectionContribs](../../debugger/debug-interface-access/idiaenumsectioncontribs.md)   
  [IDiaEnumSectionContribs::Item](../../debugger/debug-interface-access/idiaenumsectioncontribs-item.md)   
- [IDiaEnumSectionContribs::Next](../Topic/IDiaEnumSectionContribs::Next.md)
+ [IDiaEnumSectionContribs::Next](../../debugger/debug-interface-access/idiaenumsectioncontribs-next.md)

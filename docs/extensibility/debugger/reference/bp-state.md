@@ -1,46 +1,29 @@
 ---
-title: BP_STATE | Microsoft Docs
+title: BP_STATE | Documents Microsoft
 ms.custom: 
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-sdk
+ms.technology: vs-ide-sdk
 ms.tgt_pltfrm: 
 ms.topic: article
-f1_keywords:
-- BP_STATE
-helpviewer_keywords:
-- BP_STATE enumeration
+f1_keywords: BP_STATE
+helpviewer_keywords: BP_STATE enumeration
 ms.assetid: 08aa6a3f-3e5f-4c83-8eca-7b7b5f8e208d
-caps.latest.revision: 10
+caps.latest.revision: "10"
+author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-translation.priority.mt:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
+ms.openlocfilehash: 51574fd91a338f7d05d38755884412202d33637b
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
 ms.translationtype: MT
-ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
-ms.openlocfilehash: e49edf69949622ce0e0125153e41bdcf338ec30c
-ms.contentlocale: fr-fr
-ms.lasthandoff: 08/28/2017
-
+ms.contentlocale: fr-FR
+ms.lasthandoff: 10/31/2017
 ---
 # <a name="bpstate"></a>BP_STATE
-Specifies the existence of a bound breakpoint and also specifies if it is enabled.  
+Spécifie l’existence d’un point d’arrêt lié et spécifie également s’il est activé.  
   
-## <a name="syntax"></a>Syntax  
+## <a name="syntax"></a>Syntaxe  
   
 ```cpp  
 enum enum_BP_STATE {   
@@ -61,29 +44,29 @@ public enum enum_BP_STATE {
 };  
 ```  
   
-## <a name="members"></a>Members  
+## <a name="members"></a>Membres  
  BPS_NONE  
- Specifies that no breakpoint exists.  
+ Spécifie qu’aucun point d’arrêt n’existe.  
   
  BPS_DELETED  
- Specifies that the breakpoint has been deleted.  
+ Spécifie que le point d’arrêt a été supprimé.  
   
  BPS_DISABLED  
- Specifies that the breakpoint is disabled.  
+ Spécifie que le point d’arrêt est désactivé.  
   
  BPS_ENABLED  
- Specifies that the breakpoint is enabled.  
+ Spécifie que le point d’arrêt est activé.  
   
-## <a name="remarks"></a>Remarks  
- Returned from the [GetState](../../../extensibility/debugger/reference/idebugboundbreakpoint2-getstate.md) method.  
+## <a name="remarks"></a>Remarques  
+ Retourné par la [GetState](../../../extensibility/debugger/reference/idebugboundbreakpoint2-getstate.md) (méthode).  
   
-## <a name="requirements"></a>Requirements  
- Header: msdbg.h  
+## <a name="requirements"></a>Spécifications  
+ En-tête : msdbg.h  
   
- Namespace: Microsoft.VisualStudio.Debugger.Interop  
+ Namespace : Microsoft.VisualStudio.Debugger.Interop  
   
- Assembly: Microsoft.VisualStudio.Debugger.Interop.dll  
+ Assembly : Microsoft.VisualStudio.Debugger.Interop.dll  
   
-## <a name="see-also"></a>See Also  
- [Enumerations](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)   
+## <a name="see-also"></a>Voir aussi  
+ [Énumérations](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)   
  [GetState](../../../extensibility/debugger/reference/idebugboundbreakpoint2-getstate.md)

@@ -1,29 +1,32 @@
 ---
-title: "IActiveScriptSiteDebugEx::OnCanNotJITScriptErrorDebug | Microsoft Docs"
-ms.custom: ""
-ms.date: "01/18/2017"
-ms.prod: "windows-script-interfaces"
-ms.reviewer: ""
-ms.suite: ""
-ms.tgt_pltfrm: ""
-ms.topic: "reference"
+title: IActiveScriptSiteDebugEx::OnCanNotJITScriptErrorDebug | Documents Microsoft
+ms.custom: 
+ms.date: 01/18/2017
+ms.prod: windows-script-interfaces
+ms.reviewer: 
+ms.suite: 
+ms.tgt_pltfrm: 
+ms.topic: reference
 apiname: IActiveScriptSiteDebugEx.OnCanNotJITScriptErrorDebug
 apilocation: scrobj.dll
-helpviewer_keywords: 
-  - "IActiveScriptSiteDebugEx::OnCanNotJITScriptErrorDebug"
+helpviewer_keywords: IActiveScriptSiteDebugEx::OnCanNotJITScriptErrorDebug
 ms.assetid: 83f81476-bf12-47f2-897d-1d37d21137d4
-caps.latest.revision: 6
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 6
+caps.latest.revision: "6"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: e428f12b3d199603ac341a5e069fcc5ce5d36f93
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.translationtype: MT
+ms.contentlocale: fr-FR
+ms.lasthandoff: 10/27/2017
 ---
-# IActiveScriptSiteDebugEx::OnCanNotJITScriptErrorDebug
-Avertit l'hôte sur une erreur d'exécution du script lorsque Process Debug Manager ne recherche pas un débogueur juste\-à\-temps de script.  
+# <a name="iactivescriptsitedebugexoncannotjitscripterrordebug"></a>IActiveScriptSiteDebugEx::OnCanNotJITScriptErrorDebug
+Informe l’hôte sur une erreur d’exécution de script lorsque le processus de débogage Manager ne trouve pas un débogueur de script juste à temps.  
   
- Pour implémenter un débogueur dans votre hôte, vous devez gérer [IActiveScriptSiteDebug::OnScriptErrorDebug](../../winscript/reference/iactivescriptsitedebug-onscripterrordebug.md).  Selon une action utilisateur, l'hôte peut ou attacher le débogueur et retourner, ou retourne le démarrage du débogueur dans le paramètre d'OnScriptErrorDebug `pfEnterDebugger` .  Vous devez également implémenter cette interface pour obtenir des notifications sur l'erreur d'exécution même s'il n'existe aucun débogueur externe qui peut être interprète par Process Debug Manager.  
+ Pour implémenter un débogueur dans votre hôte, vous devez gérer [IActiveScriptSiteDebug::OnScriptErrorDebug](../../winscript/reference/iactivescriptsitedebug-onscripterrordebug.md). En fonction de l’action de l’utilisateur, l’ordinateur hôte pouvez attacher le débogueur et de retour ou retourner le démarrage du débogueur dans le OnScriptErrorDebug `pfEnterDebugger` paramètre. Vous devez également implémenter cette interface pour recevoir la notification sur l’erreur d’exécution même si il n’y a aucune débogueurs externes qui peuvent être interprétés par le Gestionnaire de processus de débogage.  
   
-## Syntaxe  
+## <a name="syntax"></a>Syntaxe  
   
 ```  
 HRESULT OnCanNotJITScriptErrorDebug(  
@@ -32,22 +35,22 @@ HRESULT OnCanNotJITScriptErrorDebug(
 );  
 ```  
   
-#### Paramètres  
+#### <a name="parameters"></a>Paramètres  
  `pErrorDebug`  
- \[in\]  l'erreur d'exécution qui s'est produite.  
+ [in] Erreur d’exécution qui s’est produite.  
   
  `pfCallOnScriptErrorWhenContinuingt`  
- \[out\]  Si l'appel [IActiveScriptSiteDebug::OnScriptErrorDebug](../../winscript/reference/iactivescriptsitedebug-onscripterrordebug.md) si l'utilisateur décide de continuer sans débogage.  
+ [out] S’il faut appeler [IActiveScriptSiteDebug::OnScriptErrorDebug](../../winscript/reference/iactivescriptsitedebug-onscripterrordebug.md) si l’utilisateur décide de continuer sans le débogage.  
   
-## Valeur de retour  
- La méthode retourne `HRESULT`.  Les valeurs possibles incluent, mais ne sont pas limitées à, celles dans le tableau suivant.  
+## <a name="return-value"></a>Valeur de retour  
+ La méthode retourne `HRESULT`. Les valeurs possibles sont notamment celles figurant dans le tableau suivant.  
   
 |Valeur|Description|  
-|------------|-----------------|  
+|-----------|-----------------|  
 |`S_OK`|La méthode a réussi.|  
   
-## Notes  
+## <a name="remarks"></a>Remarques  
  Vous devez également implémenter cette interface pour obtenir une notification.  
   
-## Voir aussi  
- [IActiveScriptSiteDebugEx \(interface\)](../../winscript/reference/iactivescriptsitedebugex-interface.md)
+## <a name="see-also"></a>Voir aussi  
+ [Interface IActiveScriptSiteDebugEx](../../winscript/reference/iactivescriptsitedebugex-interface.md)

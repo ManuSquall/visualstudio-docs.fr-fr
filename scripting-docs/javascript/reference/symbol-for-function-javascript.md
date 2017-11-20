@@ -1,44 +1,47 @@
 ---
-title: "Symbol.for, fonction (JavaScript) | Microsoft Docs"
-ms.custom: ""
-ms.date: "01/18/2017"
-ms.prod: "windows-client-threshold"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "devlang-javascript"
-ms.tgt_pltfrm: ""
-ms.topic: "language-reference"
-dev_langs: 
-  - "JavaScript"
-  - "TypeScript"
-  - "DHTML"
+title: Symbol.for, fonction (JavaScript) | Documents Microsoft
+ms.custom: 
+ms.date: 01/18/2017
+ms.prod: windows-client-threshold
+ms.reviewer: 
+ms.suite: 
+ms.technology: devlang-javascript
+ms.tgt_pltfrm: 
+ms.topic: language-reference
+dev_langs:
+- JavaScript
+- TypeScript
+- DHTML
 ms.assetid: 27db15f3-9108-4892-8f89-e84031729cb6
-caps.latest.revision: 4
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 4
+caps.latest.revision: "4"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: 6b7e47c00fbaa321d71a3eeba79e523eee719fb2
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.translationtype: MT
+ms.contentlocale: fr-FR
+ms.lasthandoff: 10/27/2017
 ---
-# Symbol.for, fonction (JavaScript)
+# <a name="symbolfor-function-javascript"></a>Symbol.for, fonction (JavaScript)
 Retourne le symbole d'une clé spécifiée ou, si la clé n'est pas présente, crée un objet symbole avec la nouvelle clé.  
   
-## Syntaxe  
+## <a name="syntax"></a>Syntaxe  
   
 ```vb  
 Symbol.for(key);  
 ```  
   
-#### Paramètres  
+#### <a name="parameters"></a>Paramètres  
  `key`  
- Obligatoire.  Clé du symbole, également utilisée comme description.  
+ Obligatoire. Clé du symbole, également utilisée comme description.  
   
-## Notes  
- Cette méthode recherche le symbole dans le Registre des symboles globaux.  Si vous sérialisez les symboles en tant que chaînes, utilisez le Registre des symboles globaux pour être certain qu'une chaîne particulière correspond au symbole approprié pour toutes les recherches.  
+## <a name="remarks"></a>Remarques  
+ Cette méthode recherche le symbole dans le Registre des symboles globaux. Si vous sérialisez les symboles en tant que chaînes, utilisez le Registre des symboles globaux pour être certain qu'une chaîne particulière correspond au symbole approprié pour toutes les recherches.  
   
-## Exemple  
+## <a name="example"></a>Exemple  
   
-```javascript  
+```JavaScript  
 var sym = Symbol.for("desc");  
   
 console.log(sym.toString());  
@@ -54,5 +57,5 @@ console.log(Symbol.for("symbol") === Symbol.for("symbol");)
 // true  
 ```  
   
-## Configuration requise  
+## <a name="requirements"></a>Spécifications  
  [!INCLUDE[jsv12](../../javascript/reference/includes/jsv12-md.md)]

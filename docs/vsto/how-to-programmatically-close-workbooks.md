@@ -1,12 +1,10 @@
 ---
-title: 'How to: Programmatically Close Workbooks | Microsoft Docs'
+title: "Comment : fermer des classeurs par programmation | Documents Microsoft"
 ms.custom: 
 ms.date: 02/02/2017
-ms.prod: visual-studio-dev14
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- office-development
+ms.technology: office-development
 ms.tgt_pltfrm: 
 ms.topic: article
 dev_langs:
@@ -16,52 +14,54 @@ helpviewer_keywords:
 - workbooks, closing
 - Excel [Office development in Visual Studio], closing workbooks
 ms.assetid: 50709caf-2ad8-4843-987c-9a34c8c1e4fe
-caps.latest.revision: 52
-author: kempb
-ms.author: kempb
+caps.latest.revision: "52"
+author: gewarren
+ms.author: gewarren
 manager: ghogen
-ms.translationtype: HT
-ms.sourcegitcommit: eb5c9550fd29b0e98bf63a7240737da4f13f3249
-ms.openlocfilehash: 4a769a2c60fba5e66091ecbfe731319da779e26a
-ms.contentlocale: fr-fr
-ms.lasthandoff: 08/30/2017
-
+ms.openlocfilehash: 2a8d8a11f8fb27c1e5e9d02e939d89f0b7da96fa
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: fr-FR
+ms.lasthandoff: 10/31/2017
 ---
-# <a name="how-to-programmatically-close-workbooks"></a>How to: Programmatically Close Workbooks
-  You can close the active workbook or you can specify a workbook to close.  
+# <a name="how-to-programmatically-close-workbooks"></a>Comment : fermer des classeurs par programmation
+  Vous pouvez fermer le classeur actif ou spécifier un classeur à fermer.  
   
  [!INCLUDE[appliesto_xlalldocapp](../vsto/includes/appliesto-xlalldocapp-md.md)]  
   
-## <a name="closing-the-active-workbook"></a>Closing the Active Workbook  
- There are two procedures for closing the active workbook: one for document-level customizations and one for VSTO Add-ins.  
+## <a name="closing-the-active-workbook"></a>Fermeture du classeur actif  
+ Deux procédures permettent de fermer le classeur actif : une pour les personnalisations au niveau du document et une autre pour les compléments VSTO.  
   
-#### <a name="to-close-the-active-workbook-in-a-document-level-customization"></a>To close the active workbook in a document-level customization  
+#### <a name="to-close-the-active-workbook-in-a-document-level-customization"></a>Pour fermer le classeur actif dans une personnalisation au niveau du document  
   
-1.  Call the <xref:Microsoft.Office.Tools.Excel.Workbook.Close%2A> method to close the workbook associated with the customization. To use the following code example, run it in the `Sheet1` class in a document-level project for Excel.  
+1.  Appelez la méthode <xref:Microsoft.Office.Tools.Excel.Workbook.Close%2A> pour fermer le classeur associé à la personnalisation. Pour utiliser l'exemple de code suivant, exécutez-le dans la classe `Sheet1` d'un projet au niveau du document pour Excel.  
   
-     [!code-csharp[Trin_VstcoreExcelAutomation#3](../vsto/codesnippet/CSharp/Trin_VstcoreExcelAutomationCS/Sheet1.cs#3)]  [!code-vb[Trin_VstcoreExcelAutomation#3](../vsto/codesnippet/VisualBasic/Trin_VstcoreExcelAutomation/Sheet1.vb#3)]  
+     [!code-csharp[Trin_VstcoreExcelAutomation#3](../vsto/codesnippet/CSharp/Trin_VstcoreExcelAutomationCS/Sheet1.cs#3)]
+     [!code-vb[Trin_VstcoreExcelAutomation#3](../vsto/codesnippet/VisualBasic/Trin_VstcoreExcelAutomation/Sheet1.vb#3)]  
   
-#### <a name="to-close-the-active-workbook-in-a-vsto-add-in"></a>To close the active workbook in a VSTO Add-in  
+#### <a name="to-close-the-active-workbook-in-a-vsto-add-in"></a>Pour fermer le classeur actif dans un complément VSTO  
   
-1.  Call the <xref:Microsoft.Office.Interop.Excel._Workbook.Close%2A> method to close the active workbook. To use the following code example, run it in the `ThisAddIn` class in an VSTO Add-in project for Excel.  
+1.  Appelez la méthode <xref:Microsoft.Office.Interop.Excel._Workbook.Close%2A> pour fermer le classeur actif. Pour utiliser l’exemple de code suivant, exécutez-le dans la classe `ThisAddIn` dans un projet de complément VSTO pour Excel.  
   
-     [!code-csharp[Trin_VstcoreExcelAutomationAddIn#1](../vsto/codesnippet/CSharp/trin_vstcoreexcelautomationaddin/ThisAddIn.cs#1)]  [!code-vb[Trin_VstcoreExcelAutomationAddIn#1](../vsto/codesnippet/VisualBasic/trin_vstcoreexcelautomationaddin/ThisAddIn.vb#1)]  
+     [!code-csharp[Trin_VstcoreExcelAutomationAddIn#1](../vsto/codesnippet/CSharp/trin_vstcoreexcelautomationaddin/ThisAddIn.cs#1)]
+     [!code-vb[Trin_VstcoreExcelAutomationAddIn#1](../vsto/codesnippet/VisualBasic/trin_vstcoreexcelautomationaddin/ThisAddIn.vb#1)]  
   
-## <a name="closing-a-workbook-that-you-specify-by-name"></a>Closing a Workbook That You Specify By Name  
- The way that you close a workbook that you specify by name is the same for VSTO Add-ins and document-level customizations.  
+## <a name="closing-a-workbook-that-you-specify-by-name"></a>Fermeture d'un classeur dont vous spécifiez le nom  
+ Pour fermer un classeur dont vous spécifiez le nom, vous devez procéder de la même manière que pour les compléments VSTO et les personnalisations au niveau du document.  
   
-#### <a name="to-close-a-workbook-that-you-specify-by-name"></a>To close a workbook that you specify by name  
+#### <a name="to-close-a-workbook-that-you-specify-by-name"></a>Pour fermer un classeur dont vous spécifiez le nom  
   
-1.  Specify the workbook name as an argument to the <xref:Microsoft.Office.Interop.Excel.Workbooks> collection. The following code example assumes that a workbook named **NewWorkbook** is open in Excel.  
+1.  Spécifiez le nom du classeur en tant qu'argument de la collection <xref:Microsoft.Office.Interop.Excel.Workbooks> . L’exemple de code suivant suppose qu’un classeur nommé **NewWorkbook** est ouvert dans Excel.  
   
-     [!code-csharp[Trin_VstcoreExcelAutomationAddIn#2](../vsto/codesnippet/CSharp/trin_vstcoreexcelautomationaddin/ThisAddIn.cs#2)]  [!code-vb[Trin_VstcoreExcelAutomationAddIn#2](../vsto/codesnippet/VisualBasic/trin_vstcoreexcelautomationaddin/ThisAddIn.vb#2)]  
+     [!code-csharp[Trin_VstcoreExcelAutomationAddIn#2](../vsto/codesnippet/CSharp/trin_vstcoreexcelautomationaddin/ThisAddIn.cs#2)]
+     [!code-vb[Trin_VstcoreExcelAutomationAddIn#2](../vsto/codesnippet/VisualBasic/trin_vstcoreexcelautomationaddin/ThisAddIn.vb#2)]  
   
-## <a name="see-also"></a>See Also  
- [Working with Workbooks](../vsto/working-with-workbooks.md)   
- [How to: Programmatically Save Workbooks](../vsto/how-to-programmatically-save-workbooks.md)   
- [How to: Programmatically Open Workbooks](../vsto/how-to-programmatically-open-workbooks.md)   
+## <a name="see-also"></a>Voir aussi  
+ [Utilisation des classeurs](../vsto/working-with-workbooks.md)   
+ [Comment : enregistrer des classeurs par programmation](../vsto/how-to-programmatically-save-workbooks.md)   
+ [Comment : ouvrir des classeurs par programmation](../vsto/how-to-programmatically-open-workbooks.md)   
  [Programmatic Limitations of Host Items and Host Controls](../vsto/programmatic-limitations-of-host-items-and-host-controls.md)   
- [Optional Parameters in Office Solutions](../vsto/optional-parameters-in-office-solutions.md)   
- [Host Items and Host Controls Overview](../vsto/host-items-and-host-controls-overview.md)  
+ [Paramètres optionnels dans les Solutions Office](../vsto/optional-parameters-in-office-solutions.md)   
+ [Vue d’ensemble des éléments hôtes et des contrôles hôtes](../vsto/host-items-and-host-controls-overview.md)  
   
   

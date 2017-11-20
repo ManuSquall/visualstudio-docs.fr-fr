@@ -1,46 +1,29 @@
 ---
-title: MODULE_INFO_FIELDS | Microsoft Docs
+title: MODULE_INFO_FIELDS | Documents Microsoft
 ms.custom: 
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-sdk
+ms.technology: vs-ide-sdk
 ms.tgt_pltfrm: 
 ms.topic: article
-f1_keywords:
-- MODULE_INFO_FIELDS
-helpviewer_keywords:
-- MODULE_INFO_FIELDS enumeration
+f1_keywords: MODULE_INFO_FIELDS
+helpviewer_keywords: MODULE_INFO_FIELDS enumeration
 ms.assetid: 8bed85f4-235f-4192-b58f-5fad7a4d7a78
-caps.latest.revision: 11
+caps.latest.revision: "11"
+author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-translation.priority.mt:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
+ms.openlocfilehash: 807c49d6bbfba4cec3a87e07e851c73723cf0792
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
 ms.translationtype: MT
-ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
-ms.openlocfilehash: 55c2435922cdd3898a57bfe20ef83c1c96f65924
-ms.contentlocale: fr-fr
-ms.lasthandoff: 08/28/2017
-
+ms.contentlocale: fr-FR
+ms.lasthandoff: 10/31/2017
 ---
 # <a name="moduleinfofields"></a>MODULE_INFO_FIELDS
-Specifies the flags for the debug module information.  
+Spécifie les indicateurs pour les informations de module de débogage.  
   
-## <a name="syntax"></a>Syntax  
+## <a name="syntax"></a>Syntaxe  
   
 ```cpp  
 enum enum_MODULE_INFO_FIELDS {   
@@ -79,61 +62,61 @@ public enum enum_MODULE_INFO_FIELDS {
 };  
 ```  
   
-## <a name="members"></a>Members  
+## <a name="members"></a>Membres  
  MIF_NONE  
- Initialize/use none of the fields in the structure.  
+ Initialisation/utiliser aucun des champs dans la structure.  
   
  MIF_NAME  
- Initialize/use the `m_bstrName` field in the [MODULE_INFO](../../../extensibility/debugger/reference/module-info.md) structure.  
+ Initialisation/utiliser le `m_bstrName` champ dans le [MODULE_INFO](../../../extensibility/debugger/reference/module-info.md) structure.  
   
  MIF_URL  
- Initialize/use the `m_bstrUrl` field in the `MODULE_INFO` structure.  
+ Initialisation/utiliser le `m_bstrUrl` champ dans le `MODULE_INFO` structure.  
   
  MIF_VERSION  
- Initialize/use the `m_bstrVersion` field in the `MODULE_INFO` structure.  
+ Initialisation/utiliser le `m_bstrVersion` champ dans le `MODULE_INFO` structure.  
   
  MIF_DEBUGMESSAGE  
- Initialize/use the `m_bstrDebugMessage` field in the `MODULE_INFO` structure.  
+ Initialisation/utiliser le `m_bstrDebugMessage` champ dans le `MODULE_INFO` structure.  
   
  MIF_LOADADDRESS  
- Initialize/use the `m_addrLoadAddress` field in the `MODULE_INFO` structure.  
+ Initialisation/utiliser le `m_addrLoadAddress` champ dans le `MODULE_INFO` structure.  
   
  MIF_PREFFEREDADDRESS  
- Initialize/use the `m_addrPreferredLoadAddress` field in the `MODULE_INFO` structure.  
+ Initialisation/utiliser le `m_addrPreferredLoadAddress` champ dans le `MODULE_INFO` structure.  
   
  MIF_SIZE  
- Initialize/use the `m_dwSize` field in the `MODULE_INFO` structure.  
+ Initialisation/utiliser le `m_dwSize` champ dans le `MODULE_INFO` structure.  
   
  MIF_LOADORDER  
- Initialize/use the `m_dwLoadOrder` field in the `MODULE_INFO` structure.  
+ Initialisation/utiliser le `m_dwLoadOrder` champ dans le `MODULE_INFO` structure.  
   
  MIF_TIMESTAMP  
- Initialize/use the `m_TimeStamp` field in the `MODULE_INFO` structure.  
+ Initialisation/utiliser le `m_TimeStamp` champ dans le `MODULE_INFO` structure.  
   
  MIF_URLSYMBOLLOCATION  
- Initialize/use the `m_bstrUrlSymbolLocation` field in the `MODULE_INFO` structure.  
+ Initialisation/utiliser le `m_bstrUrlSymbolLocation` champ dans le `MODULE_INFO` structure.  
   
  MIF_FLAGS  
- Initialize/use the `m_dwModuleFlags` field in the `MODULE_INFO` structure.  
+ Initialisation/utiliser le `m_dwModuleFlags` champ dans le `MODULE_INFO` structure.  
   
  MIF_ALLFIELDS  
- Initialize/use all of the fields in the `MODULE_INFO` structure.  
+ Initialisation/utiliser tous les champs dans le `MODULE_INFO` structure.  
   
-## <a name="remarks"></a>Remarks  
- These values are passed as an argument to the [GetInfo](../../../extensibility/debugger/reference/idebugmodule2-getinfo.md) method to indicate which fields of the [MODULE_INFO](../../../extensibility/debugger/reference/module-info.md) structure are to be initialized.  
+## <a name="remarks"></a>Remarques  
+ Ces valeurs sont passées en tant qu’argument à la [GetInfo](../../../extensibility/debugger/reference/idebugmodule2-getinfo.md) méthode pour indiquer les champs de la [MODULE_INFO](../../../extensibility/debugger/reference/module-info.md) structure doivent être initialisées.  
   
- These values are also used in the `MODULE_INFO` structure to indicate which fields are used and valid.  
+ Ces valeurs sont également utilisées dans le `MODULE_INFO` structure pour indiquer les champs qui sont utilisés et valide.  
   
- These flags may be combined with a bitwise `OR`.  
+ Ces indicateurs peuvent être combinées avec une opération de bits `OR`.  
   
-## <a name="requirements"></a>Requirements  
- Header: msdbg.h  
+## <a name="requirements"></a>Spécifications  
+ En-tête : msdbg.h  
   
- Namespace: Microsoft.VisualStudio.Debugger.Interop  
+ Namespace : Microsoft.VisualStudio.Debugger.Interop  
   
- Assembly: Microsoft.VisualStudio.Debugger.Interop.dll  
+ Assembly : Microsoft.VisualStudio.Debugger.Interop.dll  
   
-## <a name="see-also"></a>See Also  
- [Enumerations](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)   
+## <a name="see-also"></a>Voir aussi  
+ [Énumérations](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)   
  [MODULE_INFO](../../../extensibility/debugger/reference/module-info.md)   
  [GetInfo](../../../extensibility/debugger/reference/idebugmodule2-getinfo.md)

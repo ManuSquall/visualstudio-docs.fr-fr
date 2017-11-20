@@ -1,46 +1,29 @@
 ---
-title: IDebugPointerObject::GetBytes | Microsoft Docs
+title: IDebugPointerObject::GetBytes | Documents Microsoft
 ms.custom: 
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-sdk
+ms.technology: vs-ide-sdk
 ms.tgt_pltfrm: 
 ms.topic: article
-f1_keywords:
-- IDebugPointerObject::GetBytes
-helpviewer_keywords:
-- IDebugPointerObject::GetBytes method
+f1_keywords: IDebugPointerObject::GetBytes
+helpviewer_keywords: IDebugPointerObject::GetBytes method
 ms.assetid: e986c188-87fb-4b51-86e9-ee6a0035bdab
-caps.latest.revision: 9
+caps.latest.revision: "9"
+author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-translation.priority.mt:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
+ms.openlocfilehash: e94564eaaf10765e68e35fa4f573efae7c74dc7e
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
 ms.translationtype: MT
-ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
-ms.openlocfilehash: be7648362f250dfba00a244e3d21aff2824eb325
-ms.contentlocale: fr-fr
-ms.lasthandoff: 08/28/2017
-
+ms.contentlocale: fr-FR
+ms.lasthandoff: 10/31/2017
 ---
 # <a name="idebugpointerobjectgetbytes"></a>IDebugPointerObject::GetBytes
-Gets the value pointed to as a series of consecutive bytes.  
+Obtient la valeur désignée comme une série d’octets consécutifs.  
   
-## <a name="syntax"></a>Syntax  
+## <a name="syntax"></a>Syntaxe  
   
 ```cpp  
 HRESULT GetBytes(   
@@ -60,25 +43,25 @@ int GetBytes(
 );  
 ```  
   
-#### <a name="parameters"></a>Parameters  
+#### <a name="parameters"></a>Paramètres  
  `dwStart`  
- [in] An offset, in bytes, from the start of the object pointed to.  
+ [in] Offset, en octets, à partir du début de l’objet désigné.  
   
  `dwCount`  
- [in] The number of bytes to retrieve.  
+ [in] Le nombre d’octets à récupérer.  
   
  `pBytes`  
- [in, out] An array that is filled in with the value as a series of consecutive bytes, starting at the given offset from the object pointed to.  
+ [dans, out] Un tableau qui est rempli avec la valeur comme une série d’octets consécutifs, en commençant à l’offset donné à partir de l’objet vers lequel pointe.  
   
  `pdwBytes`  
- [out] Returns the number of bytes actually retrieved.  
+ [out] Retourne le nombre d’octets réellement récupérées.  
   
-## <a name="return-value"></a>Return Value  
- If successful, returns S_OK; otherwise, returns an error code.  
+## <a name="return-value"></a>Valeur de retour  
+ En cas de réussite, retourne S_OK ; Sinon, retourne un code d’erreur.  
   
-## <a name="remarks"></a>Remarks  
- This method is used if the pointer as represented by this [IDebugPointerObject](../../../extensibility/debugger/reference/idebugpointerobject.md) points to a primitive type or a simple array of primitive types (that is, an array that can be represented by a simple sequence of bytes).  
+## <a name="remarks"></a>Remarques  
+ Cette méthode est utilisée si le pointeur comme représenté par ce [IDebugPointerObject](../../../extensibility/debugger/reference/idebugpointerobject.md) pointe vers un type primitif ou un simple tableau de types primitifs (autrement dit, un tableau qui peut être représenté par une simple séquence d’octets).  
   
-## <a name="see-also"></a>See Also  
+## <a name="see-also"></a>Voir aussi  
  [IDebugPointerObject](../../../extensibility/debugger/reference/idebugpointerobject.md)   
  [SetBytes](../../../extensibility/debugger/reference/idebugpointerobject-setbytes.md)

@@ -1,57 +1,56 @@
 ---
-title: "IDiaEnumTables | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-debug"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "IDiaEnumTables (interface)"
+title: IDiaEnumTables | Documents Microsoft
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-debug
+ms.tgt_pltfrm: 
+ms.topic: article
+dev_langs: C++
+helpviewer_keywords: IDiaEnumTables interface
 ms.assetid: 016190c5-09e4-48f2-bf60-9b02603a03e0
-caps.latest.revision: 10
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 10
+caps.latest.revision: "10"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: 913fdcefc4e90ea09030e416cb6a300e50855478
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: fr-FR
+ms.lasthandoff: 10/31/2017
 ---
-# IDiaEnumTables
-[!INCLUDE[vs2017banner](../../code-quality/includes/vs2017banner.md)]
-
-Énumère les différents tables contenues dans la source de données.  
+# <a name="idiaenumtables"></a>IDiaEnumTables
+Énumère les différentes tables contenues dans la source de données.  
   
-## Syntaxe  
+## <a name="syntax"></a>Syntaxe  
   
 ```  
-IDiaEnumTables : IUnknown  
+IDiaEnumTables : IUnknown  
 ```  
   
-## méthodes en commande de Vtable  
- Le tableau suivant répertorie les méthodes d' `IDiaEnumTables`.  
+## <a name="methods-in-vtable-order"></a>Méthodes dans l'ordre Vtable  
+ Le tableau suivant présente les méthodes de `IDiaEnumTables`.  
   
 |Méthode|Description|  
-|-------------|-----------------|  
-|[IDiaEnumTables::get\_\_NewEnum](../../debugger/debug-interface-access/idiaenumtables-get-newenum.md)|Récupère la version d' [IEnumVARIANT Interface](http://msdn.microsoft.com/fr-fr/139e3c93-faef-4003-9079-e0e94494db3e) de cet énumérateur.|  
-|[IDiaEnumTables::get\_Count](../../debugger/debug-interface-access/idiaenumtables-get-count.md)|Récupère le nombre de tables.|  
-|[IDiaEnumTables::Item](../../debugger/debug-interface-access/idiaenumtables-item.md)|Récupère un tableau à l'aide d'un index ou d'une étiquette.|  
-|[IDiaEnumTables::Next](../Topic/IDiaEnumTables::Next.md)|Récupère un nombre spécifié de tables dans la séquence d'énumération.|  
-|[IDiaEnumTables::Skip](../../debugger/debug-interface-access/idiaenumtables-skip.md)|Ignore un nombre spécifié de tables dans une séquence d'énumération.|  
-|[IDiaEnumTables::Reset](../Topic/IDiaEnumTables::Reset.md)|réinitialise une séquence d'énumération au début.|  
-|[IDiaEnumTables::Clone](../../debugger/debug-interface-access/idiaenumtables-clone.md)|crée un énumérateur qui contient le même état d'énumération que l'énumérateur actuel.|  
+|------------|-----------------|  
+|[IDiaEnumTables::get__NewEnum](../../debugger/debug-interface-access/idiaenumtables-get-newenum.md)|Récupère le [IEnumVARIANT Interface](http://msdn.microsoft.com/en-us/139e3c93-faef-4003-9079-e0e94494db3e) version de cet énumérateur.|  
+|[IDiaEnumTables::get_Count](../../debugger/debug-interface-access/idiaenumtables-get-count.md)|Récupère le nombre de tables.|  
+|[IDiaEnumTables::Item](../../debugger/debug-interface-access/idiaenumtables-item.md)|Récupère un tableau au moyen d’un index ou un nom.|  
+|[IDiaEnumTables::Next](../../debugger/debug-interface-access/idiaenumtables-next.md)|Récupère un nombre spécifié de tables dans la séquence d’énumération.|  
+|[IDiaEnumTables::Skip](../../debugger/debug-interface-access/idiaenumtables-skip.md)|Ignore un nombre spécifié de tables dans une séquence d’énumération.|  
+|[IDiaEnumTables::Reset](../../debugger/debug-interface-access/idiaenumtables-reset.md)|Réinitialise la séquence d’énumération au début.|  
+|[IDiaEnumTables::Clone](../../debugger/debug-interface-access/idiaenumtables-clone.md)|Crée un énumérateur qui contient le même état d’énumération que l’énumérateur actuel.|  
   
-## Notes  
+## <a name="remarks"></a>Remarques  
   
-## Remarques pour les appelants  
- obtenez cette interface en appelant la méthode d' [IDiaSession::getEnumTables](../../debugger/debug-interface-access/idiasession-getenumtables.md) .  
+## <a name="notes-for-callers"></a>Remarques pour les appelants  
+ Obtenez cette interface en appelant le [IDiaSession::getEnumTables](../../debugger/debug-interface-access/idiasession-getenumtables.md) (méthode).  
   
-## Exemple  
- cet exemple montre comment obtenir l'interface d' `IDiaEnumTables` d'une session.  Pour un exemple plus complet d'utiliser les tableaux, consultez l'interface d' [IDiaTable](../../debugger/debug-interface-access/idiatable.md) .  
+## <a name="example"></a>Exemple  
+ Cet exemple montre comment obtenir le `IDiaEnumTables` interface à partir d’une session. Pour obtenir un exemple plus complet de l’utilisation de tables, consultez le [IDiaTable](../../debugger/debug-interface-access/idiatable.md) interface.  
   
-```cpp#  
+```C++  
 void ShowTableNames(IDiaSession *pSession)  
 {  
     CComPtr<IDiaEnumTables> pTables;  
@@ -63,13 +62,13 @@ void ShowTableNames(IDiaSession *pSession)
 }  
 ```  
   
-## Configuration requise  
- en\-tête : Dia2.h  
+## <a name="requirements"></a>Spécifications  
+ En-tête : Dia2.h  
   
- bibliothèque : diaguids.lib  
+ Bibliothèque : diaguids.lib  
   
- DLL : msdia80.dll  
+ DLL : msdia80.dll  
   
-## Voir aussi  
- [Interfaces \(Kit de développement logiciel Debug Interface Access\)](../../debugger/debug-interface-access/interfaces-debug-interface-access-sdk.md)   
+## <a name="see-also"></a>Voir aussi  
+ [Interfaces (Debug Interface Access SDK)](../../debugger/debug-interface-access/interfaces-debug-interface-access-sdk.md)   
  [IDiaSession::getEnumTables](../../debugger/debug-interface-access/idiasession-getenumtables.md)

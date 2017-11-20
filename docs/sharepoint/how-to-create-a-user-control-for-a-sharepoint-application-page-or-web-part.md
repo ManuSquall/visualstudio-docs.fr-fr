@@ -1,64 +1,66 @@
 ---
-title: "Comment&#160;: cr&#233;er un contr&#244;le utilisateur pour un composant WebPart ou une page d&#39;application SharePoint"
-ms.custom: ""
-ms.date: "02/02/2017"
-ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "office-development"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-dev_langs: 
-  - "VB"
-  - "CSharp"
-  - "VB"
-  - "CSharp"
-helpviewer_keywords: 
-  - "contrôles utilisateur (développement SharePoint dans Visual Studio), ajouter"
-  - "contrôles utilisateur (développement SharePoint dans Visual Studio), créer"
+title: "Comment : créer un contrôle utilisateur pour une Page d’Application SharePoint WebPart ou | Documents Microsoft"
+ms.custom: 
+ms.date: 02/02/2017
+ms.reviewer: 
+ms.suite: 
+ms.technology: office-development
+ms.tgt_pltfrm: 
+ms.topic: article
+dev_langs:
+- VB
+- CSharp
+- VB
+- CSharp
+helpviewer_keywords:
+- user controls [SharePoint development in Visual Studio], creating
+- user controls [SharePoint development in Visual Studio], adding
 ms.assetid: 492ea376-7188-4b5a-a2eb-adc0e3f51484
-caps.latest.revision: 15
-author: "kempb"
-ms.author: "kempb"
-manager: "ghogen"
-caps.handback.revision: 14
+caps.latest.revision: "15"
+author: gewarren
+ms.author: gewarren
+manager: ghogen
+ms.openlocfilehash: 1c6384ce4437290c0baa5ea1438a0751b4ec1fcf
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: fr-FR
+ms.lasthandoff: 10/31/2017
 ---
-# Comment&#160;: cr&#233;er un contr&#244;le utilisateur pour un composant WebPart ou une page d&#39;application SharePoint
-  Vous pouvez créer des contrôles d'utilisateur personnalisés qui fournissent des fonctionnalités personnalisées pour votre solution SharePoint, et vous pouvez réutiliser ces fonctionnalités à l'intérieur de votre projet.  Vous pouvez inclure des contrôles d'utilisateur dans dans une page de WebPart ou une page d'application, ajouter d'autres contrôles ASP.NET et d'autres contrôles SharePoint, et définir des propriétés et des méthodes pour le contrôle.  Pour plus d'informations sur les contrôles d'utilisateurs, consultez [Création de contrôles réutilisables pour les composants WebPart ou les pages d'application](../sharepoint/creating-reusable-controls-for-web-parts-or-application-pages.md) et [Contrôles d'utilisateurs et contrôles de serveurs dans SharePoint](http://blogs.msdn.com/b/kaevans/archive/2011/04/28/user-controls-and-server-controls-in-sharepoint.aspx).  
+# <a name="how-to-create-a-user-control-for-a-sharepoint-application-page-or-web-part"></a>Comment : créer un contrôle utilisateur pour un composant WebPart ou une page d'application SharePoint
+  Vous pouvez créer des contrôles utilisateur personnalisés qui fournissent des fonctionnalités personnalisées pour votre solution SharePoint, et vous pouvez réutiliser cette fonctionnalité dans votre projet. Vous pouvez inclure les contrôles utilisateur dans une application ou un composant WebPart page, ajouter d’autres contrôles ASP.NET et les contrôles de SharePoint et définir des propriétés et méthodes pour le contrôle. Pour plus d’informations sur les contrôles utilisateur, consultez [création de contrôles réutilisables pour les composants WebPart ou les Pages d’Application](../sharepoint/creating-reusable-controls-for-web-parts-or-application-pages.md) et [les contrôles utilisateur et serveur dans SharePoint](http://blogs.msdn.com/b/kaevans/archive/2011/04/28/user-controls-and-server-controls-in-sharepoint.aspx).  
   
-### Pour créer un contrôle utilisateur pour SharePoint  
+### <a name="to-create-a-user-control-for-sharepoint"></a>Pour créer un contrôle utilisateur pour SharePoint  
   
-1.  Ouvrez ou créez un projet SharePoint dans Visual Studio.  
+1.  Dans Visual Studio, ouvrez ou créez un projet SharePoint.  
   
-     Consultez [Modèles de projets et d'éléments de projet SharePoint](../sharepoint/sharepoint-project-and-project-item-templates.md).  
+     Consultez [modèles d’élément de projet SharePoint et le projet](../sharepoint/sharepoint-project-and-project-item-templates.md).  
   
-2.  Dans l'**Explorateur de solutions**, sélectionnez le nœud du projet.  
+2.  Dans l' **Explorateur de solutions**, choisissez le nœud du projet.  
   
-3.  Dans la barre de menus, choisissez **Projet**, **Ajouter un nouvel élément**.  
+3.  Dans la barre de menus, choisissez **projet**, **ajouter un nouvel élément**.  
   
-     La boîte de dialogue **Ajouter un nouvel élément** s'ouvre.  
+     La boîte de dialogue **Ajouter un nouvel élément** s’ouvre.  
   
-4.  Dans le volet **Installé**, choisissez le nœud **Office\/SharePoint**.  
+4.  Dans le **installé** volet, choisissez la **Office/SharePoint** nœud.  
   
-5.  Dans la liste de modèles SharePoint, sélectionnez **Contrôle utilisateur \(solution de batterie uniquement\)**.  
+5.  Dans la liste de modèles SharePoint, choisissez **contrôle utilisateur (Solution de batterie uniquement)**.  
   
     > [!NOTE]  
-    >  Les contrôles utilisateur fonctionnent uniquement avec des solutions de batterie.  
+    >  Contrôles utilisateur fonctionnent uniquement dans les solutions de batterie de serveurs.  
   
-6.  Dans la zone **Nom**, indiquez un nom pour le contrôle d'utilisateur, puis choisissez le bouton **Ajouter**.  
+6.  Dans le **nom** zone, spécifiez un nom pour le contrôle utilisateur, puis choisissez le **ajouter** bouton.  
   
-     Visual Studio ajoute plusieurs dossiers et fichiers à votre projet.  Pour plus d'informations sur ces fichiers, consultez [Création de contrôles réutilisables pour les composants WebPart ou les pages d'application](../sharepoint/creating-reusable-controls-for-web-parts-or-application-pages.md).  
+     Visual Studio ajoute plusieurs fichiers et dossiers à votre projet. Pour plus d’informations sur ces fichiers, consultez [création de contrôles réutilisables pour les composants WebPart ou les Pages d’Application](../sharepoint/creating-reusable-controls-for-web-parts-or-application-pages.md).  
   
-     Par défaut, le fichier du contrôle utilisateur s'affiche en mode **Source** dans le concepteur Visual Web Developer.  Dans ce mode, vous pouvez modifier le balisage XML du contrôle.  Passez à la vue **Design** si vous souhaitez concevoir visuellement le contrôle en faisant glisser des contrôles à partir de la **Boîte à outils**.  Consultez [NIB: Design View, Web Page Designer](http://msdn.microsoft.com/fr-fr/d8f2270a-357d-40a4-9b39-1a3f2366216d).  
+     Par défaut, le fichier de contrôle utilisateur s’affiche dans le **Source** vue du concepteur Visual Web Developer. Dans cette vue, vous pouvez modifier le balisage XML du contrôle. Vous pouvez basculer vers **conception** afficher si vous souhaitez concevoir visuellement le contrôle en faisant glisser des contrôles à partir de la **boîte à outils**. Consultez [en mode conception, le Concepteur de pages Web](http://msdn.microsoft.com/en-us/d8f2270a-357d-40a4-9b39-1a3f2366216d).  
   
-7.  Si vous souhaitez gérer des événements qui se produisent dans le contrôle, ajoutez du code au fichier du code du contrôle utilisateur.  
+7.  Si vous souhaitez gérer les événements qui se produisent dans le contrôle, ajoutez le code au fichier de code du contrôle utilisateur.  
   
-     Ce fichier s'affiche dans l'**Explorateur de solutions** sous le fichier du contrôle utilisateur et porte une extension .cs ou .vb, selon le langage du projet.  
+     Ce fichier s’affiche dans **l’Explorateur de solutions** sous le fichier de contrôle utilisateur et a une extension .cs ou .vb, selon le langage du projet.  
   
-## Voir aussi  
- [Création de contrôles réutilisables pour les composants WebPart ou les pages d'application](../sharepoint/creating-reusable-controls-for-web-parts-or-application-pages.md)   
- [Création de pages d'application pour SharePoint](../sharepoint/creating-application-pages-for-sharepoint.md)   
+## <a name="see-also"></a>Voir aussi  
+ [Création de contrôles réutilisables pour les composants WebPart ou les Pages d’Application](../sharepoint/creating-reusable-controls-for-web-parts-or-application-pages.md)   
+ [Création de Pages d’Application pour SharePoint](../sharepoint/creating-application-pages-for-sharepoint.md)   
  [Création de composants WebPart pour SharePoint](../sharepoint/creating-web-parts-for-sharepoint.md)  
   
   

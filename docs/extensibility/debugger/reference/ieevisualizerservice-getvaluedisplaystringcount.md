@@ -1,45 +1,30 @@
 ---
-title: IEEVisualizerService::GetValueDisplayStringCount | Microsoft Docs
+title: IEEVisualizerService::GetValueDisplayStringCount | Documents Microsoft
 ms.custom: 
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-sdk
+ms.technology: vs-ide-sdk
 ms.tgt_pltfrm: 
 ms.topic: article
 helpviewer_keywords:
 - IEEVisualizerService::GetValueDisplayStringCount
 - GetValueDisplayStringCount
 ms.assetid: d683a833-fbfb-4042-84df-6905124a268a
-caps.latest.revision: 10
+caps.latest.revision: "10"
+author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-translation.priority.mt:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
+ms.openlocfilehash: 6fd3d05935c2edaeff723dc979764faf04d61c10
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
 ms.translationtype: MT
-ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
-ms.openlocfilehash: 5cfe28abb387bf6b2500286bbc6c56943bdbe810
-ms.contentlocale: fr-fr
-ms.lasthandoff: 08/28/2017
-
+ms.contentlocale: fr-FR
+ms.lasthandoff: 10/31/2017
 ---
 # <a name="ieevisualizerservicegetvaluedisplaystringcount"></a>IEEVisualizerService::GetValueDisplayStringCount
-Retrieves the number of value strings to display for the specified property or field.  
+Récupère le nombre de chaînes à afficher pour la propriété spécifiée ou un champ de valeur.  
   
-## <a name="syntax"></a>Syntax  
+## <a name="syntax"></a>Syntaxe  
   
 ```cpp  
 HRESULT GetValueDisplayStringCount (  
@@ -57,18 +42,18 @@ int GetValueDisplayStringCount (
 );  
 ```  
   
-#### <a name="parameters"></a>Parameters  
+#### <a name="parameters"></a>Paramètres  
  `displayKind`  
- [in] Value from the [DisplayKind](../../../extensibility/debugger/reference/displaykind.md) enumeration.  
+ [in] Valeur à partir de la [DisplayKind](../../../extensibility/debugger/reference/displaykind.md) énumération.  
   
  `propertyOrField`  
- [in] An [IDebugField](../../../extensibility/debugger/reference/idebugfield.md) interface that represents a property or field.  
+ [in] Un [IDebugField](../../../extensibility/debugger/reference/idebugfield.md) interface qui représente une propriété ou un champ.  
   
  `pcelt`  
- [out] Returns the number of value strings to display.  
+ [out] Retourne le nombre de chaînes de la valeur à afficher.  
   
-## <a name="return-value"></a>Return Value  
- If successful, returns `S_OK`; otherwise, returns an error code.  
+## <a name="return-value"></a>Valeur de retour  
+ En cas de réussite, retourne `S_OK`; sinon, retourne un code d’erreur.  
   
-## <a name="see-also"></a>See Also  
+## <a name="see-also"></a>Voir aussi  
  [IEEVisualizerService](../../../extensibility/debugger/reference/ieevisualizerservice.md)

@@ -1,46 +1,29 @@
 ---
-title: IDebugDocument2::GetDocumentClassID | Microsoft Docs
+title: IDebugDocument2::GetDocumentClassID | Documents Microsoft
 ms.custom: 
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-sdk
+ms.technology: vs-ide-sdk
 ms.tgt_pltfrm: 
 ms.topic: article
-f1_keywords:
-- IDebugDocument2::GetDocumentClassID
-helpviewer_keywords:
-- IDebugDocument2::GetDocumentClassID
+f1_keywords: IDebugDocument2::GetDocumentClassID
+helpviewer_keywords: IDebugDocument2::GetDocumentClassID
 ms.assetid: 111c2b85-ebfa-487f-b896-2ec4a3eac4d1
-caps.latest.revision: 10
+caps.latest.revision: "10"
+author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-translation.priority.mt:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
+ms.openlocfilehash: e216cf5af1ad22acf81f46ca385f7092e8ee8316
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
 ms.translationtype: MT
-ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
-ms.openlocfilehash: 2e214bcde4161c676c8f312d607732077e79c56f
-ms.contentlocale: fr-fr
-ms.lasthandoff: 08/28/2017
-
+ms.contentlocale: fr-FR
+ms.lasthandoff: 10/31/2017
 ---
 # <a name="idebugdocument2getdocumentclassid"></a>IDebugDocument2::GetDocumentClassID
-Gets the class identifier of the document.  
+Obtient l’identificateur de classe du document.  
   
-## <a name="syntax"></a>Syntax  
+## <a name="syntax"></a>Syntaxe  
   
 ```cpp  
 HRESULT GetDocumentClassID(   
@@ -54,15 +37,15 @@ int GetDocumentClassID(
 );  
 ```  
   
-#### <a name="parameters"></a>Parameters  
+#### <a name="parameters"></a>Paramètres  
  `pclsid`  
- [out] Returns a GUID that is the class ID of the document.  
+ [out] Retourne un GUID qui est l’ID de classe du document.  
   
-## <a name="return-value"></a>Return Value  
- If successful, returns `S_OK`; otherwise, returns an error code.  
+## <a name="return-value"></a>Valeur de retour  
+ En cas de réussite, retourne `S_OK`; sinon, retourne un code d’erreur.  
   
-## <a name="remarks"></a>Remarks  
- The class GUID can be used to instantiate individual classes each of which represents a document.  
+## <a name="remarks"></a>Remarques  
+ Le GUID de la classe peut être utilisé pour instancier des classes individuelles, chacune représentant un document.  
   
-## <a name="see-also"></a>See Also  
+## <a name="see-also"></a>Voir aussi  
  [IDebugDocument2](../../../extensibility/debugger/reference/idebugdocument2.md)

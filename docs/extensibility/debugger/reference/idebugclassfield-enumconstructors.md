@@ -1,46 +1,29 @@
 ---
-title: IDebugClassField::EnumConstructors | Microsoft Docs
+title: IDebugClassField::EnumConstructors | Documents Microsoft
 ms.custom: 
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-sdk
+ms.technology: vs-ide-sdk
 ms.tgt_pltfrm: 
 ms.topic: article
-f1_keywords:
-- IDebugClassField::EnumConstructors
-helpviewer_keywords:
-- IDebugClassField::EnumConstructors method
+f1_keywords: IDebugClassField::EnumConstructors
+helpviewer_keywords: IDebugClassField::EnumConstructors method
 ms.assetid: 66a250b2-75a0-45aa-8d58-40f91cc4bf7b
-caps.latest.revision: 9
+caps.latest.revision: "9"
+author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-translation.priority.mt:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
+ms.openlocfilehash: 24ae27acb2dd78b086a8b94e28c3de705cd710ee
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
 ms.translationtype: MT
-ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
-ms.openlocfilehash: 141ae4ae9bf0ae6633fe6d4a244726bf22489bc9
-ms.contentlocale: fr-fr
-ms.lasthandoff: 08/28/2017
-
+ms.contentlocale: fr-FR
+ms.lasthandoff: 10/31/2017
 ---
 # <a name="idebugclassfieldenumconstructors"></a>IDebugClassField::EnumConstructors
-Creates an enumerator for the constructors for this class.  
+Crée un énumérateur pour les constructeurs de cette classe.  
   
-## <a name="syntax"></a>Syntax  
+## <a name="syntax"></a>Syntaxe  
   
 ```cpp  
 HRESULT EnumConstructors(   
@@ -56,22 +39,22 @@ int EnumConstructors(
 );  
 ```  
   
-#### <a name="parameters"></a>Parameters  
+#### <a name="parameters"></a>Paramètres  
  `cMatch`  
- [in] A value from the [CONSTRUCTOR_ENUM](../../../extensibility/debugger/reference/constructor-enum.md) enumeration that specifies the type of constructors to enumeration.  
+ [in] Une valeur à partir de la [CONSTRUCTOR_ENUM](../../../extensibility/debugger/reference/constructor-enum.md) énumération qui spécifie le type d’énumération des constructeurs.  
   
  `ppEnum`  
- [out] Returns an [IEnumDebugFields](../../../extensibility/debugger/reference/ienumdebugfields.md) object representing the list of constructors. Returns a null value if there are no constructors.  
+ [out] Retourne un [IEnumDebugFields](../../../extensibility/debugger/reference/ienumdebugfields.md) objet représentant la liste des constructeurs. Retourne une valeur null s’il n’y a aucuns constructeurs.  
   
-## <a name="return-value"></a>Return Value  
- If successful, returns S_OK or returns S_FALSE if there are no constructors. Otherwise, returns an error code.  
+## <a name="return-value"></a>Valeur de retour  
+ En cas de réussite, retourne S_OK ou retourne S_FALSE, s’il n’y a aucuns constructeurs. Sinon, retourne un code d'erreur.  
   
-## <a name="remarks"></a>Remarks  
- Each element of the enumeration is an [IDebugMethodField](../../../extensibility/debugger/reference/idebugmethodfield.md) object describing a constructor method.  
+## <a name="remarks"></a>Remarques  
+ Chaque élément de l’énumération est un [IDebugMethodField](../../../extensibility/debugger/reference/idebugmethodfield.md) objet décrivant une méthode de constructeur.  
   
- The list of constructors typically does not include the default constructors supplied by a compiler.  
+ En règle générale, la liste des constructeurs n’inclut pas les constructeurs par défaut fournis par un compilateur.  
   
-## <a name="see-also"></a>See Also  
+## <a name="see-also"></a>Voir aussi  
  [IDebugClassField](../../../extensibility/debugger/reference/idebugclassfield.md)   
  [IEnumDebugFields](../../../extensibility/debugger/reference/ienumdebugfields.md)   
  [IDebugMethodField](../../../extensibility/debugger/reference/idebugmethodfield.md)   

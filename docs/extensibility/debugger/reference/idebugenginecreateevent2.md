@@ -1,55 +1,55 @@
 ---
-title: "IDebugEngineCreateEvent2 | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "IDebugEngineCreateEvent2"
-helpviewer_keywords: 
-  - "Interface de IDebugEngineCreateEvent2"
+title: IDebugEngineCreateEvent2 | Documents Microsoft
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords: IDebugEngineCreateEvent2
+helpviewer_keywords: IDebugEngineCreateEvent2 interface
 ms.assetid: 37c0a841-1c8d-4802-a990-36b54bca3ef7
-caps.latest.revision: 12
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 12
+caps.latest.revision: "12"
+author: gregvanl
+ms.author: gregvanl
+manager: ghogen
+ms.openlocfilehash: b98b21e3e3220da2a42609c9344e24867ab11828
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: fr-FR
+ms.lasthandoff: 10/31/2017
 ---
-# IDebugEngineCreateEvent2
-[!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]
-
-Le moteur \(DE\) de débogage envoie cette interface au gestionnaire de débogage de \(SDM\) session lorsqu'une instance De est créée.  
+# <a name="idebugenginecreateevent2"></a>IDebugEngineCreateEvent2
+Le moteur de débogage (DE) envoie cette interface pour le Gestionnaire de session de débogage (SDM) lors de la création d’une instance de la DE.  
   
-## Syntaxe  
+## <a name="syntax"></a>Syntaxe  
   
 ```  
 IDebugEngineCreateEvent2 : IUnknown  
 ```  
   
-## Remarques à l'intention des implémenteurs  
- Le De implémente cette interface dans le cadre de ses opérations normales.  L'interface d' [IDebugEvent2](../../../extensibility/debugger/reference/idebugevent2.md) doit être implémentée sur le même objet que cette interface \(le SDM utilise la méthode de l' `QueryInterface` pour accéder à l'interface d' `IDebugEvent2` \).  
+## <a name="notes-for-implementers"></a>Notes pour les implémenteurs  
+ Le D’implémente cette interface dans le cadre de ses opérations normales. Le [IDebugEvent2](../../../extensibility/debugger/reference/idebugevent2.md) interface doit être implémentée sur le même objet que cette interface (le SDM utilise le `QueryInterface` méthode pour accéder à la `IDebugEvent2` interface).  
   
-## Remarques pour les appelants  
- Le du crée et envoie cet objet événement lorsque le De a été instancié.  L'événement est envoyé à l'aide de la fonction de rappel d' [IDebugEventCallback2](../../../extensibility/debugger/reference/idebugeventcallback2.md) fournie par le SDM lorsqu'elle s'est attachée le programme débogué.  
+## <a name="notes-for-callers"></a>Remarques pour les appelants  
+ Le DE crée et envoie cet objet d’événement lorsque la D’ont été instanciée. L’événement est envoyé à l’aide de la [IDebugEventCallback2](../../../extensibility/debugger/reference/idebugeventcallback2.md) fonction de rappel qui est fournie par le SDM lorsqu’il est attaché au programme en cours de débogage.  
   
-## méthodes en commande de Vtable  
- Le tableau suivant répertorie les méthodes d' `IDebugEngineCreateEvent2`.  
+## <a name="methods-in-vtable-order"></a>Méthodes dans l'ordre Vtable  
+ Le tableau suivant présente les méthodes de `IDebugEngineCreateEvent2`.  
   
 |Méthode|Description|  
-|-------------|-----------------|  
-|[GetEngine](../../../extensibility/debugger/reference/idebugenginecreateevent2-getengine.md)|Récupère l'objet qui représente le moteur de débogage \(DE\) nouvellement créée.|  
+|------------|-----------------|  
+|[GetEngine](../../../extensibility/debugger/reference/idebugenginecreateevent2-getengine.md)|Récupère l’objet qui représente le moteur de débogage qui vient d’être créé (DE).|  
   
-## Configuration requise  
- en\-tête : msdbg.h  
+## <a name="requirements"></a>Spécifications  
+ En-tête : msdbg.h  
   
- l'espace de noms : Microsoft.VisualStudio.Debugger.Interop  
+ Namespace : Microsoft.VisualStudio.Debugger.Interop  
   
- Assembly : Microsoft.VisualStudio.Debugger.Interop.dll  
+ Assembly : Microsoft.VisualStudio.Debugger.Interop.dll  
   
-## Voir aussi  
+## <a name="see-also"></a>Voir aussi  
  [IDebugEngine2](../../../extensibility/debugger/reference/idebugengine2.md)   
  [IDebugEvent2](../../../extensibility/debugger/reference/idebugevent2.md)   
  [IDebugEventCallback2](../../../extensibility/debugger/reference/idebugeventcallback2.md)

@@ -1,53 +1,52 @@
 ---
-title: "IDiaSession::findLines | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-debug"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "IDiaSession::findLines (méthode)"
+title: IDiaSession::findLines | Documents Microsoft
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-debug
+ms.tgt_pltfrm: 
+ms.topic: article
+dev_langs: C++
+helpviewer_keywords: IDiaSession::findLines method
 ms.assetid: d6e84916-fd55-457e-b057-57f97b51fe73
-caps.latest.revision: 8
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 8
+caps.latest.revision: "8"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: 366c41ee6befafa633428e2b6a959809a08b6cd9
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: fr-FR
+ms.lasthandoff: 10/31/2017
 ---
-# IDiaSession::findLines
-[!INCLUDE[vs2017banner](../../code-quality/includes/vs2017banner.md)]
-
-Récupère les numéros de ligne dans les ID spécifiés de module \(compiland\) et du fichier source.  
+# <a name="idiasessionfindlines"></a>IDiaSession::findLines
+Récupère les numéros de ligne dans compiland spécifié et d’identificateurs de fichier source.  
   
-## Syntaxe  
+## <a name="syntax"></a>Syntaxe  
   
-```cpp#  
-HRESULT findLines (   
-   IDiaSymbol*           compiland,  
-   IDiaSourceFile*       file,  
-   IDiaEnumLineNumbers** ppResult  
+```C++  
+HRESULT findLines (   
+   IDiaSymbol*           compiland,  
+   IDiaSourceFile*       file,  
+   IDiaEnumLineNumbers** ppResult  
 );  
 ```  
   
-#### Paramètres  
+#### <a name="parameters"></a>Paramètres  
  `compiland`  
- \[in\]Un objet d' [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md) représentant le module \(compiland\).  Utilisez cette interface comme un contexte dans lequel vous pouvez rechercher les numéros de ligne.  
+ [in] Un [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md) objet représentant le compiland. Utilisez cette interface comme contexte dans lequel rechercher les numéros de ligne.  
   
  `file`  
- \[in\]  Un objet d' [IDiaSourceFile](../../debugger/debug-interface-access/idiasourcefile.md) représentant le fichier source dans lequel vous pouvez rechercher les numéros de ligne.  
+ [in] Un [IDiaSourceFile](../../debugger/debug-interface-access/idiasourcefile.md) objet représentant le fichier source dans lequel rechercher les numéros de ligne.  
   
  `ppResult`  
- \[out\]  Retourne un objet d' [IDiaEnumLineNumbers](../../debugger/debug-interface-access/idiaenumlinenumbers.md) qui contient une liste des numéros de ligne récupérés.  
+ [out] Retourne un [IDiaEnumLineNumbers](../../debugger/debug-interface-access/idiaenumlinenumbers.md) de récupérer l’objet qui contient une liste des numéros de ligne.  
   
-## Valeur de retour  
- En cas de réussite, retourne `S_OK`; sinon, retourne un code d'erreur.  
+## <a name="return-value"></a>Valeur de retour  
+ En cas de réussite, retourne `S_OK`; sinon, retourne un code d’erreur.  
   
-## Voir aussi  
+## <a name="see-also"></a>Voir aussi  
  [IDiaEnumLineNumbers](../../debugger/debug-interface-access/idiaenumlinenumbers.md)   
  [IDiaSession](../../debugger/debug-interface-access/idiasession.md)   
  [IDiaSourceFile](../../debugger/debug-interface-access/idiasourcefile.md)   

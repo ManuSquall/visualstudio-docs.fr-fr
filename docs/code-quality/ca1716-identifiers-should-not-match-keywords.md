@@ -1,54 +1,55 @@
 ---
-title: "CA1716 : Les identificateurs ne doivent pas correspondre &#224; des mots cl&#233;s | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-devops-test"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "IdentifiersShouldNotMatchKeywords"
-  - "CA1716"
-helpviewer_keywords: 
-  - "IdentifiersShouldNotMatchKeywords"
-  - "CA1716"
+title: "CA1716 : Les identificateurs ne doivent pas correspondre aux mots clés | Documents Microsoft"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-code-analysis
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords:
+- IdentifiersShouldNotMatchKeywords
+- CA1716
+helpviewer_keywords:
+- IdentifiersShouldNotMatchKeywords
+- CA1716
 ms.assetid: 900cc8a1-1089-4069-a4ce-10b109ac4fab
-caps.latest.revision: 21
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
-caps.handback.revision: 21
+caps.latest.revision: "21"
+author: gewarren
+ms.author: gewarren
+manager: ghogen
+ms.openlocfilehash: 619fc7867d14a26f2c3b674b4b8ac8b2d8fba114
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: fr-FR
+ms.lasthandoff: 10/31/2017
 ---
-# CA1716 : Les identificateurs ne doivent pas correspondre &#224; des mots cl&#233;s
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
-
+# <a name="ca1716-identifiers-should-not-match-keywords"></a>CA1716 : Les identificateurs ne doivent pas correspondre à des mots clés
 |||  
 |-|-|  
 |TypeName|IdentifiersShouldNotMatchKeywords|  
 |CheckId|CA1716|  
 |Catégorie|Microsoft.Naming|  
-|Modification avec rupture|Oui|  
+|Modification avec rupture|Rupture|  
   
-## Cause  
- Le nom d'un espace de noms, d'un type ou encore d'un membre d'interface ou virtuel correspond à un mot clé réservé dans un langage de programmation.  
+## <a name="cause"></a>Cause  
+ Un nom d’un espace de noms, un type ou un membre d’interface ou virtuel correspond à un mot clé réservé dans un langage de programmation.  
   
-## Description de la règle  
- Les identificateurs des espaces de noms, des types et membres virtuels et d'interface ne doivent pas correspondre aux mots clés définis par les langages qui ciblent le Common Language Runtime.  Selon le langage utilisé et le mot clé, des erreurs du compilateur et des ambiguïtés peuvent rendre l'utilisation de la bibliothèque difficile.  
+## <a name="rule-description"></a>Description de la règle  
+ Identificateurs des espaces de noms, types et virtuels et les membres d’interface ne doivent pas correspondre aux mots clés définis par les langages qui ciblent le common language runtime. Selon le langage utilisé et le mot clé, ambiguïtés et les erreurs du compilateur peuvent rendre la bibliothèque difficile à utiliser.  
   
- Cette règle vérifie en fonction des mots clés dans les langages suivants :  
+ Cette règle vérifie par rapport aux mots clés dans les langues suivantes :  
   
--   Visual Basic  
+-   Visual Basic  
   
--   C\#  
+-   C#  
   
--   C\+\+\/CLI  
+-   C++/CLI  
   
- La comparaison qui ne respecte pas la casse est utilisée pour les mots clés [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)], et la comparaison sensible à la casse est utilisée pour les autres langages.  
+ Comparaison respectant la casse est utilisé pour [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] les mots clés et une comparaison respectant la casse est utilisé pour les autres langues.  
   
-## Comment corriger les violations  
- Sélectionnez un nom qui ne figure pas dans la liste des mots clés.  
+## <a name="how-to-fix-violations"></a>Comment corriger les violations  
+ Sélectionnez un nom qui n’apparaît pas dans la liste de mots clés.  
   
-## Quand supprimer les avertissements  
- Vous pouvez supprimer un avertissement de cette règle si vous êtes convaincu que l'identificateur ne confondra pas les utilisateurs de l'API, et que la bibliothèque est utilisable dans toutes les langues disponibles dans [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)].
+## <a name="when-to-suppress-warnings"></a>Quand supprimer les avertissements  
+ Vous pouvez supprimer un avertissement de cette règle si vous êtes sûr que l’identificateur sera confondez pas les utilisateurs de l’API, et que la bibliothèque est utilisable dans toutes les langues disponibles dans le [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)].

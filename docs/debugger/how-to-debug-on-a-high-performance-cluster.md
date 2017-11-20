@@ -1,108 +1,109 @@
 ---
-title: "Comment&#160;: d&#233;boguer sur un cluster hautement performant | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-debug"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-dev_langs: 
-  - "FSharp"
-  - "VB"
-  - "CSharp"
-  - "C++"
-helpviewer_keywords: 
-  - "débogage de cluster"
-  - "débogage haute performance"
+title: "Comment : déboguer sur un Cluster hautement performant | Documents Microsoft"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-debug
+ms.tgt_pltfrm: 
+ms.topic: article
+dev_langs:
+- CSharp
+- VB
+- FSharp
+- C++
+helpviewer_keywords:
+- cluster debugging
+- high-perfomance debugging
 ms.assetid: a2f0eb07-840e-4f95-a1b1-9509217e5b8f
-caps.latest.revision: 24
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 24
+caps.latest.revision: "24"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: eb07ad37e8522e2a893edbc7fba86e359893b812
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: fr-FR
+ms.lasthandoff: 10/31/2017
 ---
-# Comment&#160;: d&#233;boguer sur un cluster hautement performant
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
-
-Le débogage d'un programme multitraitement sur un cluster hautement performant est identique au débogage d'un programme ordinaire sur un ordinateur distant.  Il y a toutefois d'autres éléments à prendre en compte.  Pour plus d'informations sur les besoins généraux de configuration distante, consultez [Débogage distant](../debugger/remote-debugging.md).  
+# <a name="how-to-debug-on-a-high-performance-cluster"></a>Comment : déboguer sur un cluster hautement performant
+Le débogage d'un programme multitraitement sur un cluster hautement performant est identique au débogage d'un programme ordinaire sur un ordinateur distant. Il y a toutefois d'autres éléments à prendre en compte. Pour les exigences générales de configuration à distance, consultez [débogage distant](../debugger/remote-debugging.md).  
   
- Lorsque vous déboguez sur un cluster hautement performant, vous pouvez utiliser toutes les fenêtres de débogage et les techniques [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] disponibles pour le débogage distant.  Cependant, puisque vous déboguez à distance, la fenêtre de console externe n'est pas disponible.  
+ Lorsque vous déboguez sur un cluster hautement performant, vous pouvez utiliser toutes les fenêtres de débogage et les techniques [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] disponibles pour le débogage distant. Cependant, puisque vous déboguez à distance, la fenêtre de console externe n'est pas disponible.  
   
- Les fenêtres **Threads** et **Processus** sont particulièrement utiles pour déboguer des applications parallèles.  Pour obtenir des conseils sur l'utilisation de ces fenêtres, consultez [How to: Use the Processes Window](http://msdn.microsoft.com/fr-fr/0207ce2f-8ceb-4fe7-b2b5-4dd35b035ed7) et [Comment : utiliser la fenêtre Threads](../debugger/how-to-use-the-threads-window.md).  
+ Le **Threads** fenêtre et **processus** sont particulièrement utiles pour déboguer des applications parallèles. Pour obtenir des conseils sur l’utilisation de ces fenêtres, consultez [Comment : utiliser la fenêtre processus](http://msdn.microsoft.com/en-us/0207ce2f-8ceb-4fe7-b2b5-4dd35b035ed7) et [procédure pas à pas : déboguer à l’aide de la fenêtre Threads](../debugger/how-to-use-the-threads-window.md).  
   
  Les procédures suivantes présentent quelques techniques particulièrement utiles pour le débogage sur un cluster hautement performant.  
   
- Lors du débogage d'une application parallèle, vous souhaitez définir un point d'arrêt sur un thread, un processus ou un ordinateur particulier.  Pour ce faire, vous pouvez créer un point d'arrêt normal, puis ajouter un filtre de point d'arrêt.  
+ Lors du débogage d'une application parallèle, vous souhaitez définir un point d'arrêt sur un thread, un processus ou un ordinateur particulier. Pour ce faire, vous pouvez créer un point d'arrêt normal, puis ajouter un filtre de point d'arrêt.  
   
-### Pour ouvrir la boîte de dialogue Filtre de point d'arrêt  
+### <a name="to-open-the-breakpoint-filter-dialog-box"></a>Pour ouvrir la boîte de dialogue Filtre de point d'arrêt  
   
-1.  Cliquez avec le bouton droit sur un glyphe de point d'arrêt dans une fenêtre source, la fenêtre **Code machine**, **Pile des appels** ou **Points d'arrêt**.  
+1.  Avec le bouton droit à un glyphe de point d’arrêt dans une fenêtre source, le **code machine** fenêtre, le **pile des appels** fenêtre, ou le **points d’arrêt** fenêtre.  
   
-2.  Dans le menu contextuel, cliquez sur **Filtre**.  Cette option peut s'afficher en haut ou dans le sous\-menu sous **Points d'arrêt**.  
+2.  Dans le menu contextuel, cliquez sur **filtre**. Cette option peut s’afficher en haut ou dans le sous-menu sous **points d’arrêt**.  
   
-### Pour définir un point d'arrêt sur un ordinateur spécifique  
+### <a name="to-set-a-breakpoint-on-a-specific-computer"></a>Pour définir un point d'arrêt sur un ordinateur spécifique  
   
-1.  Obtenez le nom de l'ordinateur dans la fenêtre **Processus**.  
+1.  Obtenir le nom d’ordinateur à partir de la **processus** fenêtre.  
   
-2.  Sélectionnez un point d'arrêt et ouvrez la boîte de dialogue **Filtre de point d'arrêt**, comme décrit dans la procédure précédente.  
+2.  Sélectionnez un point d’arrêt et ouvrez la **filtre de point d’arrêt** boîte de dialogue, comme décrit dans la procédure précédente.  
   
-3.  Dans la boîte de dialogue **Filtre de point d'arrêt**, tapez :  
+3.  Dans le **filtre de point d’arrêt** boîte de dialogue, tapez :  
   
-     MachineName \=*nom\_de\_votre\_ordinateur*  
-  
-     Pour créer un filtre plus complexe, vous pouvez associer des clauses à l'aide de `&`, de l'opérateur AND, `||`, de l'opérateur OR `!`, de l'opérateur NOT et de parenthèses.  
-  
-4.  Cliquez sur **OK**.  
-  
-### Pour définir un point d'arrêt sur un processus spécifique  
-  
-1.  Obtenez le nom du processus ou le numéro d'identifiant du processus de la fenêtre **Processus**.  
-  
-2.  Sélectionnez un point d'arrêt et ouvrez la boîte de dialogue **Filtre de point d'arrêt**, comme décrit dans la première procédure.  
-  
-3.  Dans la boîte de dialogue **Filtre de point d'arrêt**, tapez :  
-  
-     `ProcessName =`  *nom\_de\_votre\_processeur*  
-  
-     \- ou \-  
-  
-     `ProcessID =` *ID\_de\_votre\_processeur*  
+     MachineName =*Nom_de_votre_ordinateur*  
   
      Pour créer un filtre plus complexe, vous pouvez associer des clauses à l'aide de `&`, de l'opérateur AND, `||`, de l'opérateur OR `!`, de l'opérateur NOT et de parenthèses.  
   
 4.  Cliquez sur **OK**.  
   
-### Pour définir un point d'arrêt sur un thread spécifique  
+### <a name="to-set-a-breakpoint-on-a-specific-process"></a>Pour définir un point d'arrêt sur un processus spécifique  
   
-1.  Obtenez le nom du thread ou le numéro d'ID de thread dans la fenêtre **Threads**.  
+1.  Obtenir le nom du processus ou le numéro d’ID à partir de processus le **processus** fenêtre.  
   
-2.  Sélectionnez un point d'arrêt et ouvrez la boîte de dialogue **Filtre de point d'arrêt**, comme décrit dans la première procédure.  
+2.  Sélectionnez un point d’arrêt et ouvrez la **filtre de point d’arrêt** boîte de dialogue comme dans la première procédure.  
   
-3.  Dans la boîte de dialogue **Filtre de point d'arrêt**, tapez :  
+3.  Dans le **filtre de point d’arrêt** boîte de dialogue, tapez :  
   
-     `ThreadName =` *nom\_de\_votre\_thread*  
+     `ProcessName =`  *yourprocessname*  
   
-     \- ou \-  
+     - ou -  
   
-     `ThreadID =` *ID\_de\_votre\_thread*  
+     `ProcessID =`*yourprocessIDnumber*  
   
      Pour créer un filtre plus complexe, vous pouvez associer des clauses à l'aide de `&`, de l'opérateur AND, `||`, de l'opérateur OR `!`, de l'opérateur NOT et de parenthèses.  
   
 4.  Cliquez sur **OK**.  
   
-## Exemple  
+### <a name="to-set-a-breakpoint-on-a-specific-thread"></a>Pour définir un point d'arrêt sur un thread spécifique  
+  
+1.  Obtenir le nom du thread ou le numéro d’ID à partir de thread la **Threads** fenêtre.  
+  
+2.  Sélectionnez un point d’arrêt et ouvrez la **filtre de point d’arrêt** boîte de dialogue, comme décrit dans la première procédure.  
+  
+3.  Dans le **filtre de point d’arrêt** boîte de dialogue, tapez :  
+  
+     `ThreadName =`*yourthreadname*  
+  
+     - ou -  
+  
+     `ThreadID =`*yourthreadIDnumber*  
+  
+     Pour créer un filtre plus complexe, vous pouvez associer des clauses à l'aide de `&`, de l'opérateur AND, `||`, de l'opérateur OR `!`, de l'opérateur NOT et de parenthèses.  
+  
+4.  Cliquez sur **OK**.  
+  
+## <a name="example"></a>Exemple  
  L'exemple suivant montre comment créer un filtre pour un point d'arrêt sur un ordinateur nommé `marvin` et un thread nommé `fourier1`.  
   
 ```  
 (MachineName = marvin) & (ThreadName = fourier1)  
 ```  
   
-## Voir aussi  
- [Déboguer les applications multithread](../debugger/debug-multithreaded-applications-in-visual-studio.md)   
+## <a name="see-also"></a>Voir aussi  
+ [Débogage d’Applications multithread](../debugger/debug-multithreaded-applications-in-visual-studio.md)   
  [Débogage distant](../debugger/remote-debugging.md)   
- [How to: Use the Processes Window](http://msdn.microsoft.com/fr-fr/0207ce2f-8ceb-4fe7-b2b5-4dd35b035ed7)   
- [Comment : utiliser la fenêtre Threads](../debugger/how-to-use-the-threads-window.md)   
- [Threads and Processes](http://msdn.microsoft.com/fr-fr/73d87480-9af3-4d1b-baf5-397d5d876ae6)   
- [Utilisation des points d'arrêt](../debugger/using-breakpoints.md)
+ [Comment : utiliser la fenêtre processus](http://msdn.microsoft.com/en-us/0207ce2f-8ceb-4fe7-b2b5-4dd35b035ed7)   
+ [Commencer le débogage des applications multithreads](../debugger/get-started-debugging-multithreaded-apps.md)   
+ [Threads et processus](http://msdn.microsoft.com/en-us/73d87480-9af3-4d1b-baf5-397d5d876ae6)   
+ [Utilisation des points d’arrêt](../debugger/using-breakpoints.md)

@@ -1,46 +1,29 @@
 ---
-title: FRAMEINFO | Microsoft Docs
+title: FRAMEINFO | Documents Microsoft
 ms.custom: 
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-sdk
+ms.technology: vs-ide-sdk
 ms.tgt_pltfrm: 
 ms.topic: article
-f1_keywords:
-- FRAMEINFO
-helpviewer_keywords:
-- FRAMEINFO structure
+f1_keywords: FRAMEINFO
+helpviewer_keywords: FRAMEINFO structure
 ms.assetid: 95001b89-dddb-45bb-889d-8327994e38a5
-caps.latest.revision: 8
+caps.latest.revision: "8"
+author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-translation.priority.mt:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
+ms.openlocfilehash: 31f87c5261db32e19c9382d4d9cd95f4081cbe19
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
 ms.translationtype: MT
-ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
-ms.openlocfilehash: e89914747024ad23185ed1f6cc92e808d7703702
-ms.contentlocale: fr-fr
-ms.lasthandoff: 08/28/2017
-
+ms.contentlocale: fr-FR
+ms.lasthandoff: 10/31/2017
 ---
 # <a name="frameinfo"></a>FRAMEINFO
-Describes a stack frame.  
+Décrit un frame de pile.  
   
-## <a name="syntax"></a>Syntax  
+## <a name="syntax"></a>Syntaxe  
   
 ```cpp  
 typedef struct tagFRAMEINFO {   
@@ -78,58 +61,58 @@ public struct FRAMEINFO {
 } FRAMEINFO;  
 ```  
   
-## <a name="members"></a>Members  
+## <a name="members"></a>Membres  
  m_dwValidFields  
- A combination of flags from the [FRAMEINFO_FLAGS](../../../extensibility/debugger/reference/frameinfo-flags.md) enumeration that specifies which fields are filled in.  
+ Une combinaison d’indicateurs à partir de la [FRAMEINFO_FLAGS](../../../extensibility/debugger/reference/frameinfo-flags.md) énumération qui spécifie quels champs sont renseignés.  
   
  m_bstrFuncName  
- The function name associated with the stack frame.  
+ Le nom de fonction associé avec le frame de pile.  
   
  m_bstrReturnType  
- The return type associated with the stack frame.  
+ Le type de retour associé le frame de pile.  
   
  m_bstrArgs  
- The arguments to the function associated with the stack frame.  
+ Les arguments de la fonction associée le frame de pile.  
   
  m_bstrLanguage  
- The language in which the function is implemented.  
+ La langue dans laquelle la fonction est implémentée.  
   
  m_bstrModule  
- The module name associated with the stack frame.  
+ Le nom du module associé le frame de pile.  
   
  m_addrMin  
- The minimum physical stack address.  
+ L’adresse physique minimale de la pile.  
   
  m_addrMAX  
- The maximum physical stack address.  
+ L’adresse de la pile physique maximale.  
   
  m_pFrame  
- The [IDebugStackFrame2](../../../extensibility/debugger/reference/idebugstackframe2.md) object that represents this stack frame.  
+ Le [IDebugStackFrame2](../../../extensibility/debugger/reference/idebugstackframe2.md) objet qui représente ce frame de pile.  
   
  m_pFrame  
- The [IDebugModule2](../../../extensibility/debugger/reference/idebugmodule2.md) object that represents the module that contains this stack frame.  
+ Le [IDebugModule2](../../../extensibility/debugger/reference/idebugmodule2.md) objet qui représente le module qui contient ce frame de pile.  
   
  m_fHasDebugInfo  
- Non-zero (`TRUE`) if debug information exists in the given frame.  
+ Non nul (`TRUE`) si les informations de débogage existent dans le frame donné.  
   
  m_fHasDebugInfo  
- Non-zero (`TRUE`) if the stack frame is associated with code that is no longer valid.  
+ Non nul (`TRUE`) si le frame de pile est associé avec le code qui n’est plus valid.  
   
  m_fHasDebugInfo  
- Non-zero (`TRUE`) if the stack frame is annotated by the session debug manager (SDM).  
+ Non nul (`TRUE`) si le frame de pile est annoté par le Gestionnaire de session de débogage (SDM).  
   
-## <a name="remarks"></a>Remarks  
- This structure is passed to the [GetInfo](../../../extensibility/debugger/reference/idebugstackframe2-getinfo.md) method to be filled in. This structure is also contained in a list that is contained in the [IEnumDebugFrameInfo2](../../../extensibility/debugger/reference/ienumdebugframeinfo2.md) interface which, in turn, is returned from a call to the [EnumFrameInfo](../../../extensibility/debugger/reference/idebugthread2-enumframeinfo.md) method.  
+## <a name="remarks"></a>Remarques  
+ Cette structure est passée à la [GetInfo](../../../extensibility/debugger/reference/idebugstackframe2-getinfo.md) (méthode) doit être renseigné. Cette structure est également contenue dans une liste qui est contenue dans le [IEnumDebugFrameInfo2](../../../extensibility/debugger/reference/ienumdebugframeinfo2.md) interface qui, à son tour, est retourné à partir d’un appel à la [EnumFrameInfo](../../../extensibility/debugger/reference/idebugthread2-enumframeinfo.md) (méthode).  
   
-## <a name="requirements"></a>Requirements  
- Header: msdbg.h  
+## <a name="requirements"></a>Spécifications  
+ En-tête : msdbg.h  
   
- Namespace: Microsoft.VisualStudio.Debugger.Interop  
+ Namespace : Microsoft.VisualStudio.Debugger.Interop  
   
- Assembly: Microsoft.VisualStudio.Debugger.Interop.dll  
+ Assembly : Microsoft.VisualStudio.Debugger.Interop.dll  
   
-## <a name="see-also"></a>See Also  
- [Structures and Unions](../../../extensibility/debugger/reference/structures-and-unions.md)   
+## <a name="see-also"></a>Voir aussi  
+ [Structures et Unions](../../../extensibility/debugger/reference/structures-and-unions.md)   
  [FRAMEINFO_FLAGS](../../../extensibility/debugger/reference/frameinfo-flags.md)   
  [IDebugStackFrame2](../../../extensibility/debugger/reference/idebugstackframe2.md)   
  [IDebugModule2](../../../extensibility/debugger/reference/idebugmodule2.md)   

@@ -7,45 +7,32 @@ ms.suite:
 ms.tgt_pltfrm: 
 ms.topic: article
 ms.assetid: bc7d0a81-0df5-41a9-a912-1b30e5da1d13
-caps.latest.revision: 3
+caps.latest.revision: "3"
+author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-translation.priority.mt:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
-translationtype: Machine Translation
-ms.sourcegitcommit: 512014c5070e4314ad2b7d0e8c5c404c43f32cd9
-ms.openlocfilehash: 0f4abf286dc8b1cf00e47468ddaa4831747a059d
-ms.lasthandoff: 02/22/2017
-
+ms.openlocfilehash: f714120c6f5dced4760bb14cad1e53a794030a19
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: fr-FR
+ms.lasthandoff: 10/31/2017
 ---
 # <a name="visual-studio-template-manifest-schema-reference"></a>Référence de schéma de manifeste de modèle Visual Studio
-Ce schéma décrit le format des fichiers manifeste (.vstman) des modèles Visual Studio généré pour les modèles de projet ou un élément de Visual Studio et décrit l’emplacement et autres informations pertinentes concernant le modèle.  
+Ce schéma décrit le format des fichiers de manifeste (.vstman) de modèle Visual Studio générés pour les modèles de projet ou un élément de Visual Studio et décrit l’emplacement et autres informations pertinentes relatives au modèle.  
   
  : Étant donné qu’élément distinct et les répertoires de modèle de projet, un manifeste doit avoir jamais une combinaison des modèles de projet et d’élément.  
   
 > [!IMPORTANT]
->  Ce manifeste est disponible à partir de Visual Studio 2017.  
+>  Ce manifeste n’est disponible à partir de Visual Studio 2017.  
   
 ## <a name="vstemplatemanifest-element"></a>Élément de VSTemplateManifest  
  L’élément racine du manifeste.  
   
 ### <a name="attributes"></a>Attributs  
   
--   **Version**: une chaîne représentant la version du manifeste de modèle. Obligatoire.  
+-   **Version**: une chaîne qui représente la version du manifeste de modèle. Obligatoire.  
   
--   **Paramètres régionaux**: chaîne représentant les paramètres régionaux ou paramètres régionaux du manifeste de modèle. La valeur des paramètres régionaux s’applique à tous les modèles, vous devez donc utiliser un manifeste distinct pour chaque paramètre régional. Facultatif.  
+-   **Paramètres régionaux**: une chaîne qui représente les paramètres régionaux ou les paramètres régionaux du manifeste de modèle. La valeur de paramètres régionaux s’applique à tous les modèles, vous devez utiliser un manifeste distinct pour chacun des paramètres régionaux. Facultatif.  
   
 ### <a name="child-elements"></a>Éléments enfants  
   
@@ -64,15 +51,15 @@ Ce schéma décrit le format des fichiers manifeste (.vstman) des modèles Visua
   
 ### <a name="child-elements"></a>Éléments enfants  
   
--   **RelativePathOnDisk**: le chemin d’accès relatif du fichier de modèle sur le disque. Cet emplacement définit également la position du modèle dans l’arborescence de modèle indiqué dans le **nouveau projet** ou **un nouvel élément** boîte de dialogue. Pour les modèles déployés comme un répertoire et les fichiers individuels, ce chemin d’accès fait référence au répertoire contenant les fichiers de modèle. Pour les modèles déployés en tant que fichier .zip, ce chemin d’accès doit être le chemin d’accès au fichier .zip.  
+-   **RelativePathOnDisk**: le chemin d’accès relatif du fichier de modèle sur le disque. Cet emplacement définit également la position du modèle dans l’arborescence de modèle indiqué dans le **nouveau projet** ou **un nouvel élément** boîte de dialogue. Pour les modèles déployés en tant qu’un répertoire et les fichiers individuels, ce chemin d’accès fait référence au répertoire contenant les fichiers de modèle. Pour les modèles déployés en tant qu’un fichier .zip, ce chemin d’accès doit être le chemin d’accès au fichier .zip.  
   
--   **VSTemplateHeader** : un [TemplateData](../extensibility/templatedata-element-visual-studio-templates.md) élément qui décrit l’en-tête.  
+-   **VSTemplateHeader** : A [TemplateData](../extensibility/templatedata-element-visual-studio-templates.md) élément qui décrit l’en-tête.  
   
 ### <a name="parent-element"></a>Parent, élément  
  **VSTemplateManifest**  
   
 ## <a name="vstemplatedir"></a>VSTemplateDir  
- Décrit le répertoire où se trouve le modèle. Un manifeste peut contenir plusieurs **VSTemplateDir** entrées pour fournir le nom localisé et l’ordre des répertoires de tri pour contrôler leur apparence dans l’arborescence de catégorie de modèle.  
+ Décrit le répertoire où se trouve le modèle. Un manifeste peut contenir plusieurs **VSTemplateDir** entrées pour fournir le nom localisé et ordre pour les répertoires de tri pour contrôler leur aspect dans l’arborescence des catégories de modèle.  
   
  En raison de leur conception, **VSTemplateDir** entrées doivent apparaître uniquement dans les types de paramètres régionaux des manifestes spécifiés.  
   
@@ -81,25 +68,25 @@ Ce schéma décrit le format des fichiers manifeste (.vstman) des modèles Visua
   
 ### <a name="child-elements"></a>Éléments enfants  
   
--   **RelativePath**: le chemin d’accès du modèle. Il peut y avoir qu’une seule entrée par le chemin d’accès, donc l’emportera pour tous les manifestes.  
+-   **RelativePath**: le chemin d’accès du modèle. Il peut y avoir qu’une seule entrée par le chemin d’accès, pour la première condition précédente pour tous les manifestes.  
   
--   **LocalizedName**: un **NameDescriptionIcon** élément qui spécifie le nom localisé. Facultatif.  
+-   **LocalizedName**: A **NameDescriptionIcon** élément qui spécifie le nom localisé. Facultatif.  
   
 -   **SortOrder** : chaîne qui spécifie l’ordre de tri. Facultatif.  
   
--   **ParentFolderOverrideName**: le nom du dossier parent substitué. Facultatif. Cet élément a un **nom** attribut, qui est une valeur de chaîne qui spécifie le nom.  
+-   **ParentFolderOverrideName**: le nom du dossier parent de substituée. Facultatif. Cet élément a un **nom** attribut, qui est une valeur de chaîne qui spécifie le nom.  
   
 ### <a name="parent-element"></a>Parent, élément  
  **VSTemplateManifest**  
   
 ## <a name="namedescriptionicon"></a>NameDescriptionIcon  
- Spécifie le nom et la description, éventuellement pour les modèles localisés. Consultez la page **LocalizedName** ci-dessus.  
+ Spécifie le nom et la description, éventuellement pour les modèles localisés. Consultez **LocalizedName** ci-dessus.  
   
 ### <a name="attributes"></a>Attributs  
   
--   **Package**: valeur de chaîne qui spécifie le package. Facultatif.  
+-   **Package**: une valeur de chaîne qui spécifie le package. Facultatif.  
   
--   **ID**: une valeur de chaîne qui spécifie le code. Facultatif.  
+-   **ID**: une valeur de chaîne qui spécifie l’ID. Facultatif.  
   
 ### <a name="child-elements"></a>Éléments enfants  
  Aucun.  
@@ -108,7 +95,7 @@ Ce schéma décrit le format des fichiers manifeste (.vstman) des modèles Visua
  **LocalizedName**  
   
 ## <a name="examples"></a>Exemples  
- Voici un exemple de fichier de .vstman d’un modèle de projet.  
+ Voici un exemple d’un fichier de .vstman de modèle de projet.  
   
 ```xml  
 <VSTemplateManifest Version="1.0" Locale="1033" xmlns="http://schemas.microsoft.com/developer/vstemplatemanifest/2015">  

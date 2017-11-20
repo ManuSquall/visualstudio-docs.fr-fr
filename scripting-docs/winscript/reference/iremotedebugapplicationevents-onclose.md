@@ -1,44 +1,47 @@
 ---
-title: "IRemoteDebugApplicationEvents::OnClose | Microsoft Docs"
-ms.custom: ""
-ms.date: "01/18/2017"
-ms.prod: "windows-script-interfaces"
-ms.reviewer: ""
-ms.suite: ""
-ms.tgt_pltfrm: ""
-ms.topic: "reference"
+title: IRemoteDebugApplicationEvents::OnClose | Documents Microsoft
+ms.custom: 
+ms.date: 01/18/2017
+ms.prod: windows-script-interfaces
+ms.reviewer: 
+ms.suite: 
+ms.tgt_pltfrm: 
+ms.topic: reference
 apiname: IRemoteDebugApplicationEvents.OnClose
 apilocation: jscript.dll
-helpviewer_keywords: 
-  - "IRemoteDebugApplicationEvents::OnClose"
+helpviewer_keywords: IRemoteDebugApplicationEvents::OnClose
 ms.assetid: 57ef69e0-1ced-480a-a1bf-c91d8d5dd2d2
-caps.latest.revision: 8
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 8
+caps.latest.revision: "8"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: b1bd38c08e1e15cbf0e5e9fdfd60c5ead128dbad
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.translationtype: MT
+ms.contentlocale: fr-FR
+ms.lasthandoff: 10/27/2017
 ---
-# IRemoteDebugApplicationEvents::OnClose
-Gère un événement de fin d'application.  
+# <a name="iremotedebugapplicationeventsonclose"></a>IRemoteDebugApplicationEvents::OnClose
+Gère un événement fermer une application.  
   
-## Syntaxe  
+## <a name="syntax"></a>Syntaxe  
   
 ```  
 HRESULT OnClose();  
 ```  
   
-#### Paramètres  
- Cette méthode n'accepte pas de paramètres.  
+#### <a name="parameters"></a>Paramètres  
+ Cette méthode ne prend aucun paramètre.  
   
-## Valeur de retour  
- La méthode retourne `HRESULT`.  Les valeurs possibles incluent, mais ne sont pas limitées à, celles dans le tableau suivant.  
+## <a name="return-value"></a>Valeur de retour  
+ La méthode retourne `HRESULT`. Les valeurs possibles sont notamment celles figurant dans le tableau suivant.  
   
 |Valeur|Description|  
-|------------|-----------------|  
+|-----------|-----------------|  
 |`S_OK`|La méthode a réussi.|  
   
-## Notes  
- Cette méthode gère un événement de fin d'application.  
+## <a name="remarks"></a>Remarques  
+ Cette méthode gère un événement fermer une application.  
   
-## Voir aussi  
- [IRemoteDebugApplicationEvents, interface](../../winscript/reference/iremotedebugapplicationevents-interface.md)
+## <a name="see-also"></a>Voir aussi  
+ [Interface IRemoteDebugApplicationEvents](../../winscript/reference/iremotedebugapplicationevents-interface.md)

@@ -4,37 +4,21 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-sdk
+ms.technology: vs-ide-sdk
 ms.tgt_pltfrm: 
 ms.topic: article
-f1_keywords:
-- IDebugSymbolSearchEvent2
-helpviewer_keywords:
-- IDebugSymbolSearchEvent2
+f1_keywords: IDebugSymbolSearchEvent2
+helpviewer_keywords: IDebugSymbolSearchEvent2
 ms.assetid: 9b946d55-ff85-44eb-b40a-efbf8282eafd
-caps.latest.revision: 10
+caps.latest.revision: "10"
+author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-translation.priority.mt:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
-translationtype: Machine Translation
-ms.sourcegitcommit: ca7c86466fa23fb21a932f26dc24e37c71cf29b4
-ms.openlocfilehash: 92385ae5922ecd16658f089c28cfd3746b6ff093
-ms.lasthandoff: 04/05/2017
-
+ms.openlocfilehash: c3ec27b1917e59f5ca0fd6296947b826d1039fd0
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: fr-FR
+ms.lasthandoff: 10/31/2017
 ---
 # <a name="idebugsymbolsearchevent2"></a>IDebugSymbolSearchEvent2
 Cette interface est envoyée par le moteur de débogage (DE) pour indiquer que les symboles de débogage pour un module en cours de débogage ont été chargés.  
@@ -58,7 +42,7 @@ IDebugSymbolSearchEvent2 : IUnknown
 |------------|-----------------|  
 |[GetSymbolSearchInfo](../../../extensibility/debugger/reference/idebugsymbolsearchevent2-getsymbolsearchinfo.md)|Récupère des informations sur les résultats d’une recherche de symbole.|  
   
-## <a name="remarks"></a>Notes  
+## <a name="remarks"></a>Remarques  
  Cet événement est envoyé même si les symboles Échec du chargement. Appel de `IDebugSymbolSearchEvent2::GetSymbolSearchInfo` permet au Gestionnaire de cet événement pour déterminer si le module a réellement tous les symboles.  
   
  Visual Studio utilise généralement cet événement pour mettre à jour l’état des symboles chargés dans le **Modules** fenêtre.  

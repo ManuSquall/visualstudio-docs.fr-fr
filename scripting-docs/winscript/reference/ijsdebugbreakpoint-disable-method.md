@@ -1,37 +1,41 @@
 ---
-title: "IJsDebugBreakPoint::Disable, m&#233;thode | Microsoft Docs"
-ms.custom: ""
-ms.date: "01/18/2017"
-ms.prod: "windows-script-interfaces"
-ms.reviewer: ""
-ms.suite: ""
-ms.tgt_pltfrm: ""
-ms.topic: "reference"
+title: "Ijsdebugbreakpoint::Disable, méthode | Documents Microsoft"
+ms.custom: 
+ms.date: 01/18/2017
+ms.prod: windows-script-interfaces
+ms.reviewer: 
+ms.suite: 
+ms.tgt_pltfrm: 
+ms.topic: reference
 apiname: IJSDebugBreakPoint.Disable
 apilocation: jscript9diag.dll
 ms.assetid: f6f2889c-c001-4ee5-8e3f-4f36235e4fad
-caps.latest.revision: 4
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 4
+caps.latest.revision: "4"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: c53ff133fb07d256d00668e499e5996ac650230f
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.translationtype: MT
+ms.contentlocale: fr-FR
+ms.lasthandoff: 10/27/2017
 ---
-# IJsDebugBreakPoint::Disable, m&#233;thode
-Désactive le point d'arrêt.  
+# <a name="ijsdebugbreakpointdisable-method"></a>IJsDebugBreakPoint::Disable, méthode
+Désactive le point d’arrêt.  
   
-## Syntaxe  
+## <a name="syntax"></a>Syntaxe  
   
 ```  
 HRESULT Disable(void);  
 ```  
   
-## Valeur de retour  
+## <a name="return-value"></a>Valeur de retour  
   
-## Notes  
- Retourne E\_UNEXPECTED s'il est appelé sur un point d'arrêt supprimé.  Retourne S\_FALSE s'il est appelé sur un point d'arrêt déjà désactivé.  
+## <a name="remarks"></a>Remarques  
+ Retourne E_UNEXPECTED si elle est appelée sur un point d’arrêt supprimé. Retourne S_FALSE si elle est appelée sur un point d’arrêt déjà désactivé.  
   
-## Configuration requise  
- **En\-tête :** jscript9diag.h  
+## <a name="requirements"></a>Spécifications  
+ **En-tête :** jscript9diag.h  
   
-## Voir aussi  
- [IJsDebugBreakPoint, interface](../../winscript/reference/ijsdebugbreakpoint-interface.md)
+## <a name="see-also"></a>Voir aussi  
+ [Interface IJsDebugBreakPoint](../../winscript/reference/ijsdebugbreakpoint-interface.md)

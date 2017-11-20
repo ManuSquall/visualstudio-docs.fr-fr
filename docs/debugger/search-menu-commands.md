@@ -1,32 +1,32 @@
 ---
-title: "Commandes du menu Rechercher | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-debug"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-helpviewer_keywords: 
-  - "commandes du menu Rechercher"
+title: Rechercher des commandes de Menu | Documents Microsoft
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-debug
+ms.tgt_pltfrm: 
+ms.topic: article
+helpviewer_keywords: Search menu commands
 ms.assetid: f36dff9a-49ef-46ce-8c9a-76246458c0d0
-caps.latest.revision: 3
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 3
+caps.latest.revision: "3"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: 65f0a4c932d9e9e84433b7fef27723d9d2e5aefb
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: fr-FR
+ms.lasthandoff: 10/31/2017
 ---
-# Commandes du menu Rechercher
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
-
-Le menu **Rechercher** fournit des commandes permettant de rechercher des fenêtres spécifiques.  
+# <a name="search-menu-commands"></a>commandes du menu Rechercher
+Le **recherche** menu fournit des commandes permettant de rechercher des fenêtres spécifiques.  
   
- **Rechercher une fenêtre\/le processus\/le thread\/le message**  
- Ouvre la boîte de dialogue **Recherche d'une fenêtre**\/**d'un processus**\/**d'un thread**\/**d'un message**, qui vous permet d'utiliser l'**outil Recherche** ou de spécifier des critères de recherche.  
+ **Rechercher/processus/Thread/Message de fenêtre**  
+ Ouvre le **fenêtre**/**processus**/**Thread**/**un message** boîte de dialogue où vous pouvez utiliser la **outil recherche** ou spécifier des critères de recherche.  
   
- **Suivant**  
- Recherche dans l'affichage actuel la prochaine correspondance de la fenêtre, du processus, du thread ou du message.  Cet élément de menu \(et le bouton de barre d'outils connexe\) est disponible uniquement lorsqu'il existe un résultat de recherche valide qui n'est pas unique.  
+ **Rechercher suivant**  
+ Recherche dans l’affichage actuel la fenêtre correspondante suivante, le processus, le thread ou le message. Cet élément de menu (et le bouton de barre d’outils associé) sont disponibles uniquement s’il existe un résultat de recherche valide qui n’est pas unique.  
   
- **Précédent**  
- Recherche dans l'affichage actuel la précédente correspondance de la fenêtre, du processus, du thread ou du message.  Cet élément de menu \(et le bouton de barre d'outils connexe\) est disponible uniquement lorsqu'il existe un résultat de recherche valide qui n'est pas unique.
+ **Rechercher précédent**  
+ Recherche dans l’affichage actuel la fenêtre correspondante précédente, le processus, le thread ou le message. Cet élément de menu (et le bouton de barre d’outils associé) sont disponibles uniquement s’il existe un résultat de recherche valide qui n’est pas unique.

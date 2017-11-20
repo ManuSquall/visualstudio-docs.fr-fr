@@ -1,66 +1,70 @@
 ---
-title: "Partage de classes entre plusieurs DSL &#224; l&#39;aide d&#39;une biblioth&#232;que DSL | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+title: "Partage de Classes entre plusieurs DSL à l’aide d’une bibliothèque DSL | Documents Microsoft"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.tgt_pltfrm: 
+ms.topic: article
 ms.assetid: 509bd96b-3e66-47f4-8642-771421d0d0d5
-caps.latest.revision: 7
-author: "alancameronwills"
-ms.author: "awills"
-manager: "douge"
-caps.handback.revision: 7
+caps.latest.revision: "7"
+author: alancameronwills
+ms.author: awills
+manager: douge
+ms.openlocfilehash: ed225f315c92cf9276eb97fcb78e1730250ecd4c
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.translationtype: MT
+ms.contentlocale: fr-FR
+ms.lasthandoff: 10/27/2017
 ---
-# Partage de classes entre plusieurs DSL &#224; l&#39;aide d&#39;une biblioth&#232;que DSL
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
-
-Dans le Kit de développement logiciel de visualisation et de modélisation de [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] , vous pouvez créer une définition incomplète DÉSOLÉ que vous pouvez importer dans un autre langage spécifique à un domaine.  Cela vous permet d'isoler les parties communes de modèles semblables.  
+# <a name="sharing-classes-between-dsls-by-using-a-dsl-library"></a>Partage de classes entre plusieurs DSL à l'aide d'une bibliothèque DSL
+Dans la [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] Visualization and Modeling SDK, vous pouvez créer une définition DSL incomplète que vous pouvez importer dans un autre DSL. Cela vous permet de tenir compte des parties communes des modèles similaires.  
   
-## Création et utilisation de bibliothèques DÉSOLÉ  
+## <a name="creating-and-using-dsl-libraries"></a>Création et utilisation des bibliothèques de DSL  
   
-#### Pour créer une bibliothèque DÉSOLÉ  
+#### <a name="to-create-a-dsl-library"></a>Pour créer une bibliothèque DSL  
   
-1.  Créez un nouveau projet DÉSOLÉ, puis choisissez le modèle de solution de bibliothèque DÉSOLÉ.  
+1.  Créez un nouveau projet DSL, puis choisissez le modèle de solution de bibliothèque DSL.  
   
-     Un projet unique DÉSOLÉ est créé avec un modèle vide.  
+     Un seul projet DSL sera créé avec un modèle vide.  
   
-2.  Vous pouvez ajouter des classes de domaine, les relations, formes et ainsi de suite.  
+2.  Vous pouvez ajouter des classes de domaine, des relations, des formes et ainsi de suite.  
   
-     Les éléments contenus dans la bibliothèque ne doivent pas former une arborescence unique d'incorporation.  
+     Les éléments dans la bibliothèque n’ont pas former une arborescence d’incorporation unique.  
   
-     Pour définir une relation que les importateurs peuvent utiliser, créez deux classes de domaine et créer la relation entre eux.  
+     Pour définir une relation qui permettent des importateurs, créer deux classes de domaine et créer la relation entre eux.  
   
-     envisagez de définir **modificateur d'héritage** des classes de domaine à `Abstract`.  
+     Envisagez d’affecter le **modificateur d’héritage** des classes de domaine pour `Abstract`.  
   
-3.  Vous pouvez ajouter les éléments que vous définissez dans l'explorateur DÉSOLÉ, tel que les générateurs de connexion.  
+3.  Vous pouvez ajouter des éléments que vous définissez dans l’Explorateur DSL, tels que des générateurs de connexion.  
   
-4.  Vous pouvez ajouter ces personnalisations qui requièrent code supplémentaires, telles que les contraintes de validation.  
+4.  Vous pouvez ajouter des personnalisations qui requièrent un code supplémentaire, telles que les contraintes de validation.  
   
-5.  cliquez sur **Transformer tous les modèles**.  
+5.  Cliquez sur **transformer tous les modèles**.  
   
 6.  Générez le projet.  
   
-7.  Lorsque vous distribuez du langage DÉSOLÉ pour que d'autres personnes utilisent, vous devez fournir l'assembly compilé \(DLL\) et le fichier `DslDefinition.dsl`.  vous pouvez rechercher l'assembly compilé dans un dossier sous `Dsl\bin\*`  
+7.  Lorsque vous distribuez du DSL pour d’autres personnes à utiliser, vous devez fournir l’assembly compilé (DLL) et le fichier `DslDefinition.dsl`. Vous pouvez trouver l’assembly compilé dans un dossier sous`Dsl\bin\*`  
   
-#### Pour importer une bibliothèque DÉSOLÉ  
+#### <a name="to-import-a-dsl-library"></a>Pour importer une bibliothèque DSL  
   
-1.  Dans une autre définition DÉSOLÉ, dans **Explorateur DÉSOLÉ**, cliquez avec le bouton droit sur la classe racine du langage DÉSOLÉ, puis cliquez sur **ajoutez la nouvelle importation de DslLibrary**.  
+1.  Dans une autre définition DSL, dans **Explorateur DSL**, avec le bouton droit de la classe racine de la DSL, puis cliquez sur **ajouter une nouvelle importation DslLibrary**.  
   
-2.  Dans la fenêtre Propriétés, affectez **chemin d'accès de fichier** de la bibliothèque.  Vous pouvez utiliser un chemin d'accès absolu.  
+2.  Dans la fenêtre Propriétés, définissez la **chemin d’accès du fichier** de la bibliothèque. Vous pouvez utiliser un chemin d’accès absolu ou relatif.  
   
-     La bibliothèque importée s'affiche dans l'explorateur DÉSOLÉ, en mode lecture seule.  
+     La bibliothèque importée apparaît dans l’Explorateur DSL, en mode lecture seule.  
   
-3.  Vous pouvez utiliser les classes importées comme des classes de base.  Créez une classe de domaine dans du code DÉSOLÉ important, et dans la fenêtre Propriétés, affectez **classe de base** à une classe importée.  
+3.  Vous pouvez utiliser les classes importées comme classes de base. Créer une classe de domaine dans l’importation DSL, et dans les propriétés de fenêtre, définissez **une classe de Base** à une classe importée.  
   
-4.  transformation de clic tous les modèles.  
+4.  Cliquez sur Transformer tous les modèles.  
   
-5.  Ajoutez au projet DÉSOLÉ une référence à l'assembly \(DLL\) qui a été généré par le projet de bibliothèque DÉSOLÉ.  
+5.  Ajouter une référence à l’assembly (DLL) qui a été généré par le projet de bibliothèque DSL au projet DSL.  
   
 6.  Générez la solution.  
   
- Une bibliothèque DÉSOLÉ peut importer d'autres bibliothèques.  Lorsque vous importez une bibliothèque, ses importations s'affichent automatiquement dans l'explorateur DÉSOLÉ.  
+ Une bibliothèque DSL peut importer d’autres bibliothèques. Lorsque vous importez une bibliothèque, ses importations s’affichent automatiquement dans l’Explorateur de DSL.  
   
-## Voir aussi  
- [Comment : définir un langage spécifique à un domaine](../modeling/how-to-define-a-domain-specific-language.md)
+## <a name="see-also"></a>Voir aussi  
+ [Guide pratique pour définir un langage spécifique à un domaine](../modeling/how-to-define-a-domain-specific-language.md)
+ 
+[!INCLUDE[modeling_sdk_info](includes/modeling_sdk_info.md)]

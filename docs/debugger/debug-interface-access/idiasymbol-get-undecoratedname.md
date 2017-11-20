@@ -1,46 +1,45 @@
 ---
-title: "IDiaSymbol::get_undecoratedName | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-debug"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "IDiaSymbol::get_undecoratedName (méthode)"
+title: IDiaSymbol::get_undecoratedName | Documents Microsoft
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-debug
+ms.tgt_pltfrm: 
+ms.topic: article
+dev_langs: C++
+helpviewer_keywords: IDiaSymbol::get_undecoratedName method
 ms.assetid: e49edf25-a51d-4787-bd5b-2bf5af827c8c
-caps.latest.revision: 8
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 8
+caps.latest.revision: "8"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: 01b5fae4ff6378ab937c02e598d8c47be599b2f7
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: fr-FR
+ms.lasthandoff: 10/31/2017
 ---
-# IDiaSymbol::get_undecoratedName
-[!INCLUDE[vs2017banner](../../code-quality/includes/vs2017banner.md)]
-
-Extrait le nom non décoré pour le C\+\+ décoré, ou la liaison, nom.  
+# <a name="idiasymbolgetundecoratedname"></a>IDiaSymbol::get_undecoratedName
+Récupère le nom non décoré pour un nom décoré, C++ ou une liaison de.  
   
-## Syntaxe  
+## <a name="syntax"></a>Syntaxe  
   
-```cpp#  
-HRESULT get_undecoratedName (   
-   BSTR* pRetVal  
+```C++  
+HRESULT get_undecoratedName (   
+   BSTR* pRetVal  
 );  
 ```  
   
-#### Paramètres  
+#### <a name="parameters"></a>Paramètres  
  `pRetVal`  
- \[out\]  Retourne le nom non décoré pour le nom décoré par C\+\+.  
+ [out] Retourne que le nom non décoré pour C++ de nom décoré.  
   
-## Valeur de retour  
- En cas de réussite, retourne `S_OK`; sinon, retourne `S_FALSE` ou un code d'erreur.  
+## <a name="return-value"></a>Valeur de retour  
+ En cas de réussite, retourne `S_OK`; sinon, retourne `S_FALSE` ou un code d’erreur.  
   
 > [!NOTE]
->  Une valeur de retour d' `S_FALSE` signifie que la propriété n'est pas disponible pour le symbole.  
+>  La valeur de retour `S_FALSE` signifie que la propriété n’est pas disponible pour le symbole.  
   
-## Voir aussi  
+## <a name="see-also"></a>Voir aussi  
  [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

@@ -1,60 +1,61 @@
 ---
-title: "Comment&#160;: inclure un assembly personnalis&#233; dans une fonctionnalit&#233; BDC"
-ms.custom: ""
-ms.date: "02/02/2017"
-ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "office-development"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "VS.SharePointTools.BDC.Add_Assemblies_Dialog"
-dev_langs: 
-  - "VB"
-  - "CSharp"
-  - "VB"
-  - "CSharp"
-helpviewer_keywords: 
-  - "BDC (développement SharePoint dans Visual Studio), ajouter une référence"
-  - "BDC (développement SharePoint dans Visual Studio), assembly personnalisé"
-  - "service de connectivité de données métiers (développement SharePoint dans Visual Studio), ajouter une référence"
-  - "service de connectivité de données métiers (développement SharePoint dans Visual Studio), assembly personnalisé"
+title: "Comment : inclure un Assembly personnalisé dans une fonctionnalité BDC | Documents Microsoft"
+ms.custom: 
+ms.date: 02/02/2017
+ms.reviewer: 
+ms.suite: 
+ms.technology: office-development
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords: VS.SharePointTools.BDC.Add_Assemblies_Dialog
+dev_langs:
+- VB
+- CSharp
+- VB
+- CSharp
+helpviewer_keywords:
+- Business Data Connectivity service [SharePoint development in Visual Studio], add reference
+- Business Data Connectivity service [SharePoint development in Visual Studio], custom assembly
+- BDC [SharePoint development in Visual Studio], custom assembly
+- BDC [SharePoint development in Visual Studio], add reference
 ms.assetid: 2ddf44b9-5f51-4bca-b8bb-94c4bbd1c5f3
-caps.latest.revision: 17
-author: "kempb"
-ms.author: "kempb"
-manager: "ghogen"
-caps.handback.revision: 16
+caps.latest.revision: "17"
+author: gewarren
+ms.author: gewarren
+manager: ghogen
+ms.openlocfilehash: c5916da8b7aa5018824ffe8040e7184fe6d1bf31
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: fr-FR
+ms.lasthandoff: 10/31/2017
 ---
-# Comment&#160;: inclure un assembly personnalis&#233; dans une fonctionnalit&#233; BDC
-  Votre projet peut référencer des assemblys d'autres projets dans la même solution.  Toutefois, vous devez ajouter ces assemblys au fichier de fonctionnalités du projet à l'aide de la boîte de dialogue **Assigner des assemblys référencés à des LobSystems**.  
+# <a name="how-to-include-a-custom-assembly-in-a-bdc-feature"></a>Comment : inclure un assembly personnalisé dans une fonctionnalité BDC
+  Votre projet peut référencer des assemblys à partir d’autres projets dans la même solution. Toutefois, vous devez ajouter ces assemblys dans le fichier de fonctionnalité du projet à l’aide de la **affecter référencé des assemblys à des LobSystems** boîte de dialogue.  
   
-### Pour inclure un assembly personnalisé dans une fonctionnalité de connectivité de données métiers \(BDC, Business Data Connectivity\)  
+### <a name="to-include-a-custom-assembly-in-a-business-data-connectivity-bdc-feature"></a>Pour inclure un assembly personnalisé dans une fonctionnalité de connectivité de données métiers (BDC)  
   
-1.  Dans l'**Explorateur de solutions**, choisissez le dossier qui contient le modèle BDC.  
+1.  Dans **l’Explorateur de solutions**, choisissez le dossier qui contient le modèle BDC.  
   
-2.  Dans le menu **Affichage**, cliquez sur **Fenêtre Propriétés**.  
+2.  Dans le menu **Affichage** , cliquez sur **Fenêtre Propriétés**.  
   
-3.  Dans la fenêtre **Propriétés**, sélectionnez la propriété **Assemblys**, puis choisissez le bouton de sélection \(![Bouton de sélection du concepteur ASP.NET mobile](~/sharepoint/media/mwellipsis.gif "Bouton de sélection du concepteur ASP.NET mobile")\).  
+3.  Dans le **propriétés** fenêtre, choisissez le **assemblys** propriété, puis sur le bouton de sélection (![ellipse de concepteur ASP.NET Mobile](../sharepoint/media/mwellipsis.gif "Mobile ASP.NET Ellipse de concepteur")).  
   
-     La boîte de dialogue **Assigner des assemblys référencés à des LobSystems** apparaît.  
+     Le **affecter référencé des assemblys à des LobSystems** boîte de dialogue s’affiche.  
   
-4.  Dans la liste **Sélectionnez un assembly**, choisissez l'assembly personnalisé.  
-  
-    > [!NOTE]  
-    >  Les assemblys s'affichent dans la boîte de dialogue **Assigner des assemblys référencés à des LobSystems** uniquement si vous avez ajouté une référence au projet qui contient l'assembly.  Pour plus d'informations, consultez [Comment : ajouter ou supprimer des références à l'aide de la boîte de dialogue Ajouter une référence](http://msdn.microsoft.com/fr-fr/3bd75d61-f00c-47c0-86a2-dd1f20e231c9).  
-  
-5.  Dans le groupe **Propriétés de la référence**, ouvrez sur la liste qui s'affiche pour la propriété **Portée de LobSystem**, puis choisissez le système LOB des méthodes qui utilisent l'assembly personnalisé, et ensuite choisissez le bouton **OK**.  
+4.  Dans le **sélectionner un Assembly** , sélectionnez l’assembly personnalisé.  
   
     > [!NOTE]  
-    >  Pour déboguer le code dans l'assembly personnalisé, vous devez ajouter l'assembly au package de solution.  Pour plus d'informations, consultez [Comment : ajouter et supprimer des assemblys supplémentaires](../sharepoint/how-to-add-and-remove-additional-assemblies.md).  
+    >  Assemblys s’affichent uniquement dans le **affecter référencé des assemblys à des LobSystems** boîte de dialogue si vous avez ajouté une référence au projet qui contient l’assembly. Pour plus d’informations, consultez [Comment : ajouter ou supprimer des références à l’aide de la boîte de dialogue Ajouter une référence](http://msdn.microsoft.com/en-us/3bd75d61-f00c-47c0-86a2-dd1f20e231c9).  
   
-## Voir aussi  
+5.  Dans le **propriétés de la référence** groupe, ouvrez la liste qui s’affiche pour le **LobSystem étendue** propriété, choisissez le système LOB des méthodes qui utilisent l’assembly personnalisé, puis choisissez le **OK**  bouton.  
+  
+    > [!NOTE]  
+    >  Pour déboguer le code dans l’assembly personnalisé, vous devez ajouter l’assembly au package de solution. Pour plus d’informations, consultez [Comment : ajouter et supprimer des assemblys supplémentaires](../sharepoint/how-to-add-and-remove-additional-assemblies.md).  
+  
+## <a name="see-also"></a>Voir aussi  
  [Comment : utiliser un fichier de ressources pour spécifier des noms localisés, propriétés et autorisations](../sharepoint/how-to-use-a-resource-file-to-specify-localized-names-properties-and-permissions.md)   
  [Comment : ajouter un fichier de modèle BDC existant à un projet SharePoint](../sharepoint/how-to-add-an-existing-bdc-model-file-to-a-sharepoint-project.md)   
- [Création d'un modèle de connectivité de données métiers](../sharepoint/creating-a-business-data-connectivity-model.md)   
+ [Création d’un modèle de connectivité de données métiers](../sharepoint/creating-a-business-data-connectivity-model.md)   
  [Comment : créer un modèle BDC](../sharepoint/how-to-create-a-bdc-model.md)   
  [Intégration de données métiers dans SharePoint](../sharepoint/integrating-business-data-into-sharepoint.md)  
   

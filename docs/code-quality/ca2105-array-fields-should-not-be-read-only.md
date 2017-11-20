@@ -1,11 +1,10 @@
 ---
-title: 'CA2105: Array fields should not be read only | Microsoft Docs'
+title: "CA2105 : Les champs de tableau ne doivent pas être en lecture seule | Documents Microsoft"
 ms.custom: 
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-devops-test
+ms.technology: vs-ide-code-analysis
 ms.tgt_pltfrm: 
 ms.topic: article
 f1_keywords:
@@ -15,76 +14,60 @@ helpviewer_keywords:
 - ArrayFieldsShouldNotBeReadOnly
 - CA2105
 ms.assetid: 0bdc3421-3ceb-4182-b30c-a992fbfcc35d
-caps.latest.revision: 16
-author: stevehoag
-ms.author: shoag
-manager: wpickett
-translation.priority.ht:
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- ru-ru
-- zh-cn
-- zh-tw
-translation.priority.mt:
-- cs-cz
-- pl-pl
-- pt-br
-- tr-tr
-ms.translationtype: HT
-ms.sourcegitcommit: eb5c9550fd29b0e98bf63a7240737da4f13f3249
-ms.openlocfilehash: 3980baa67ba22ff52329aaa8bf94c9699af63ed9
-ms.contentlocale: fr-fr
-ms.lasthandoff: 08/30/2017
-
+caps.latest.revision: "16"
+author: gewarren
+ms.author: gewarren
+manager: ghogen
+ms.openlocfilehash: bfc20d1bb2ae34455c836219bb809221f2ca382e
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: fr-FR
+ms.lasthandoff: 10/31/2017
 ---
-# <a name="ca2105-array-fields-should-not-be-read-only"></a>CA2105: Array fields should not be read only
+# <a name="ca2105-array-fields-should-not-be-read-only"></a>CA2105 : Les champs de tableau ne doivent pas être en lecture seule
 |||  
 |-|-|  
 |TypeName|ArrayFieldsShouldNotBeReadOnly|  
 |CheckId|CA2105|  
-|Category|Microsoft.Security|  
-|Breaking Change|Breaking|  
+|Catégorie|Microsoft.Security|  
+|Modification avec rupture|Rupture|  
   
 ## <a name="cause"></a>Cause  
- A public or protected field that holds an array is declared read-only.  
+ Un champ public ou protégé qui contient un tableau est déclaré en lecture seule.  
   
-## <a name="rule-description"></a>Rule Description  
- When you apply the `readonly` (`ReadOnly` in [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)]) modifier to a field that contains an array, the field cannot be changed to refer to a different array. However, the elements of the array that are stored in a read-only field can be changed. Code that makes decisions or performs operations that are based on the elements of a read-only array that can be publicly accessed might contain an exploitable security vulnerability.  
+## <a name="rule-description"></a>Description de la règle  
+ Lorsque vous appliquez le `readonly` (`ReadOnly` dans [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)]) modificateur à un champ qui contient un tableau, le champ ne peut pas être modifié pour faire référence à un tableau différent. Toutefois, les éléments du tableau stockés dans un champ en lecture seule peuvent être modifiés. Code qui prend des décisions ou exécute des opérations qui reposent sur les éléments d’un tableau en lecture seule accessible publiquement peut présenter une faille de sécurité exploitable.  
   
- Note that having a public field also violates the design rule [CA1051: Do not declare visible instance fields](../code-quality/ca1051-do-not-declare-visible-instance-fields.md).  
+ Notez que la présence d’un champ public viole également la règle de conception [CA1051 : ne pas déclarer de champs d’instances visibles](../code-quality/ca1051-do-not-declare-visible-instance-fields.md).  
   
-## <a name="how-to-fix-violations"></a>How to Fix Violations  
- To fix the security vulnerability that is identified by this rule, do not rely on the contents of a read-only array that can be publicly accessed. It is strongly recommended that you use one of the following procedures:  
+## <a name="how-to-fix-violations"></a>Comment corriger les violations  
+ Pour résoudre le problème de sécurité est identifié par cette règle, ne comptez pas sur le contenu d’un tableau en lecture seule accessible publiquement. Il est fortement recommandé d’utiliser l’une des procédures suivantes :  
   
--   Replace the array with a strongly typed collection that cannot be changed. For more information, see <xref:System.Collections.ReadOnlyCollectionBase?displayProperty=fullName>.  
+-   Remplacez le tableau par une collection fortement typée qui ne peut pas être modifiée. Pour plus d'informations, consultez <xref:System.Collections.ReadOnlyCollectionBase?displayProperty=fullName>.  
   
--   Replace the public field with a method that returns a clone of a private array. Because your code does not rely on the clone, there is no danger if the elements are modified.  
+-   Remplacez le champ public avec une méthode qui retourne un clone d’un tableau privé. Étant donné que votre code ne repose pas sur le clone, il n’existe aucun risque si les éléments sont modifiés.  
   
- If you chose the second approach, do not replace the field with a property; properties that return arrays adversely affect performance. For more information, see [CA1819: Properties should not return arrays](../code-quality/ca1819-properties-should-not-return-arrays.md).  
+ Si vous avez choisi la deuxième approche, ne remplacez pas le champ avec une propriété ; propriétés qui retournent des tableaux pourrait-elle affectent les performances. Pour plus d’informations, consultez [CA1819 : propriétés ne doivent pas retourner de tableaux](../code-quality/ca1819-properties-should-not-return-arrays.md).  
   
-## <a name="when-to-suppress-warnings"></a>When to Suppress Warnings  
- Exclusion of a warning from this rule is strongly discouraged. Almost no scenarios occur where the contents of a read-only field are unimportant. If this is the case with your scenario, remove the `readonly` modifier instead of excluding the message.  
+## <a name="when-to-suppress-warnings"></a>Quand supprimer les avertissements  
+ Exclusion d’un avertissement de cette règle est fortement déconseillée. Pratiquement aucun scénario se produire lorsque le contenu d’un champ en lecture seule est sans importance. Si c’est le cas dans votre scénario, supprimez le `readonly` modificateur au lieu d’exclure le message.  
   
-## <a name="example"></a>Example  
- This example demonstrates the dangers of violating this rule. The first part shows an example library that has a type, `MyClassWithReadOnlyArrayField`, that contains two fields (`grades` and `privateGrades`) that are not secure. The field `grades` is public, and therefore vulnerable to any caller. The field `privateGrades` is private but is still vulnerable because it is returned to callers by the `GetPrivateGrades` method. The `securePrivateGrades` field is exposed in a safe manner by the `GetSecurePrivateGrades` method. It is declared as private to follow good design practices. The second part shows code that changes values stored in the `grades` and `privateGrades` members.  
+## <a name="example"></a>Exemple  
+ Cet exemple illustre les risques de violation de cette règle. La première partie présente un exemple de bibliothèque qui a un type, `MyClassWithReadOnlyArrayField`, qui contient deux champs (`grades` et `privateGrades`) qui ne sont pas sécurisées. Le champ `grades` est public et par conséquent vulnérable pour tout appelant. Le champ `privateGrades` est privé, mais est toujours vulnérable, car il est retourné aux appelants par le `GetPrivateGrades` (méthode). Le `securePrivateGrades` champ est exposé de manière sécurisée par le `GetSecurePrivateGrades` (méthode). Il est déclaré comme privé pour suivre les pratiques d’une bonne conception. La deuxième partie montre le code qui modifie les valeurs stockées dans le `grades` et `privateGrades` membres.  
   
- The example class library appears in the following example.  
+ L’exemple de bibliothèque de classe s’affiche dans l’exemple suivant.  
   
  [!code-csharp[FxCop.Security.ArrayFieldsNotReadOnly#1](../code-quality/codesnippet/CSharp/ca2105-array-fields-should-not-be-read-only_1.cs)]  
   
-## <a name="example"></a>Example  
- The following code uses the example class library to illustrate read-only array security issues.  
+## <a name="example"></a>Exemple  
+ Le code suivant utilise la bibliothèque de classes d’exemple pour illustrer les problèmes de sécurité de tableau en lecture seule.  
   
  [!code-csharp[FxCop.Security.TestArrayFieldsRead#1](../code-quality/codesnippet/CSharp/ca2105-array-fields-should-not-be-read-only_2.cs)]  
   
- The output from this example is:  
+ La sortie de cet exemple est :  
   
- **Before tampering: Grades: 90, 90, 90 Private Grades: 90, 90, 90  Secure Grades, 90, 90, 90**  
-**After tampering: Grades: 90, 555, 90 Private Grades: 90, 555, 90  Secure Grades, 90, 90, 90**   
-## <a name="see-also"></a>See Also  
+ **Avant la falsification : notes : 90, 90, 90 Notes privées : 90, 90, 90 Notes sécurisées, 90, 90, 90**  
+**Après la falsification : notes : 90, 555, 90 Notes privées : 90, 555, 90 Notes sécurisées, 90, 90, 90**   
+## <a name="see-also"></a>Voir aussi  
  <xref:System.Array?displayProperty=fullName>   
  <xref:System.Collections.ReadOnlyCollectionBase?displayProperty=fullName>

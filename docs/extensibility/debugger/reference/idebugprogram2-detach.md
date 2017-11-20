@@ -1,46 +1,29 @@
 ---
-title: IDebugProgram2::Detach | Microsoft Docs
+title: IDebugProgram2::Detach | Documents Microsoft
 ms.custom: 
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-sdk
+ms.technology: vs-ide-sdk
 ms.tgt_pltfrm: 
 ms.topic: article
-f1_keywords:
-- IDebugProgram2::Detach
-helpviewer_keywords:
-- IDebugProgram2::Detach
+f1_keywords: IDebugProgram2::Detach
+helpviewer_keywords: IDebugProgram2::Detach
 ms.assetid: 5e8d88b0-a8d4-4746-88c0-ad332ee73f33
-caps.latest.revision: 8
+caps.latest.revision: "8"
+author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-translation.priority.mt:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
+ms.openlocfilehash: 3d916bf047471e506166610882313d66177448fc
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
 ms.translationtype: MT
-ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
-ms.openlocfilehash: d48454e8e65ab7e7daefdfed95e3d8ad72c623f4
-ms.contentlocale: fr-fr
-ms.lasthandoff: 08/28/2017
-
+ms.contentlocale: fr-FR
+ms.lasthandoff: 10/31/2017
 ---
 # <a name="idebugprogram2detach"></a>IDebugProgram2::Detach
-Detaches a debug engine from the program.  
+Détache un moteur de débogage à partir du programme.  
   
-## <a name="syntax"></a>Syntax  
+## <a name="syntax"></a>Syntaxe  
   
 ```cpp  
 HRESULT Detach(   
@@ -52,11 +35,11 @@ HRESULT Detach(
 int Detach();  
 ```  
   
-## <a name="return-value"></a>Return Value  
- If successful, returns `S_OK`; otherwise, returns an error code.  
+## <a name="return-value"></a>Valeur de retour  
+ En cas de réussite, retourne `S_OK`; sinon, retourne un code d’erreur.  
   
-## <a name="remarks"></a>Remarks  
- A detached program continues running, but it is no longer part of the debug session. No more program debug events are sent once the debug engine is detached.  
+## <a name="remarks"></a>Remarques  
+ Un programme détaché continue de s’exécuter, mais il ne fait plus partie de la session de débogage. Plus aucun événement de débogage de programme n’est envoyées une fois que le moteur de débogage est détaché.  
   
-## <a name="see-also"></a>See Also  
+## <a name="see-also"></a>Voir aussi  
  [IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md)

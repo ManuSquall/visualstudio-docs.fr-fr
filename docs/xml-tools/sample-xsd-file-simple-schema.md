@@ -1,24 +1,25 @@
 ---
-title: "Exemple de fichier XSD&#160;: sch&#233;ma simple | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-general"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+title: "Exemple de fichier XSD : Un schéma Simple | Documents Microsoft"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-general
+ms.tgt_pltfrm: 
+ms.topic: article
 ms.assetid: f7e1dde1-b4f6-4371-add4-935b68ec77d7
-caps.latest.revision: 4
-author: "kempb"
-ms.author: "kempb"
-manager: "ghogen"
-caps.handback.revision: 4
+caps.latest.revision: "4"
+author: gewarren
+ms.author: gewarren
+manager: ghogen
+ms.openlocfilehash: b0178c64c72584ad2a3fe4692294a4877990423e
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: fr-FR
+ms.lasthandoff: 10/31/2017
 ---
-# Exemple de fichier XSD&#160;: sch&#233;ma simple
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
-
-Le fichier XSD suivant est utilisé dans différents exemples de la documentation du Concepteur de schémas XSD.Ce fichier est un schéma de bon de commande simple.  
+# <a name="sample-xsd-file-simple-schema"></a>Exemple de fichier XSD : schéma simple
+Le fichier XSD suivant est utilisé dans différents exemples de la documentation du Concepteur de schémas XSD. Ce fichier est un schéma de bon de commande simple.  
   
 ```xml  
 <xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema"   

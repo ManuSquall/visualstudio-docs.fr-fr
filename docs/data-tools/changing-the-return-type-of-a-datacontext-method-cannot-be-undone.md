@@ -1,5 +1,5 @@
 ---
-title: Changing the return type of a DataContext method cannot be undone | Microsoft Docs
+title: "Impossible d’annuler la modification du type de retour d’une méthode DataContext | Documents Microsoft"
 ms.custom: 
 ms.date: 11/04/2016
 ms.reviewer: 
@@ -7,55 +7,38 @@ ms.suite:
 ms.tgt_pltfrm: 
 ms.topic: article
 ms.assetid: 76b161fc-5075-4192-8d94-f15b02e199e9
-caps.latest.revision: 3
+caps.latest.revision: "3"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-translation.priority.ht:
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- ru-ru
-- zh-cn
-- zh-tw
-translation.priority.mt:
-- cs-cz
-- pl-pl
-- pt-br
-- tr-tr
-ms.translationtype: HT
-ms.sourcegitcommit: 33a857c2d8585e2e8da9bcd9158190366a3b6830
-ms.openlocfilehash: 0dbf3618bb92ed58a1ec57c14d59eadabcf4a734
-ms.contentlocale: fr-fr
-ms.lasthandoff: 09/07/2017
-
+ms.technology: vs-data-tools
+ms.openlocfilehash: 28398032eb4c17916af4294e5ccab386040cf98e
+ms.sourcegitcommit: ee42a8771f0248db93fd2e017a22e2506e0f9404
+ms.translationtype: MT
+ms.contentlocale: fr-FR
+ms.lasthandoff: 11/09/2017
 ---
-# <a name="changing-the-return-type-of-a-datacontext-method-cannot-be-undone"></a>Changing the return type of a DataContext method cannot be undone
-Changing the return type of a DataContext method cannot be undone. To revert back to the automatically generated type, you must drag the item from Server Explorer/Database Explorer onto the O/R Designer again. Are you sure you want to change the return type?  
+# <a name="changing-the-return-type-of-a-datacontext-method-cannot-be-undone"></a>Impossible d’annuler la modification du type de retour d’une méthode DataContext
+Impossible d’annuler la modification du type de retour d’une méthode DataContext. Pour revenir au type généré automatiquement, vous devez déplacer à nouveau l'élément de l'Explorateur de serveurs/Explorateur de bases de données vers le Concepteur O/R. Êtes-vous sûr de vouloir modifier le type de retour ?  
   
- The return type of a <xref:System.Data.Linq.DataContext> method differs depending on where you drop the item in the [!INCLUDE[vs_ordesigner_short](../data-tools/includes/vs_ordesigner_short_md.md)]. If you drop an item directly onto an existing entity class, a <xref:System.Data.Linq.DataContext> method that has the return type of the entity class is created. If you drop an item onto an empty area of the [!INCLUDE[vs_ordesigner_short](../data-tools/includes/vs_ordesigner_short_md.md)], a <xref:System.Data.Linq.DataContext> method that returns an automatically generated type is created. You can change the return type of a <xref:System.Data.Linq.DataContext> method after you add it to the methods pane. To inspect or change the return type of a <xref:System.Data.Linq.DataContext> method, select it and click the **Return Type** property in the **Properties** window.  
+Le type de retour d'une méthode <xref:System.Data.Linq.DataContext> diffère selon l'endroit où vous placez l'élément dans le [!INCLUDE[vs_ordesigner_short](../data-tools/includes/vs_ordesigner_short_md.md)]. Si vous placez directement un élément dans une classe d'entité existante, une méthode <xref:System.Data.Linq.DataContext> qui a le type de retour de la classe d'entité est créée. Si vous déposez un élément dans une zone vide du [!INCLUDE[vs_ordesigner_short](../data-tools/includes/vs_ordesigner_short_md.md)], une méthode <xref:System.Data.Linq.DataContext> qui retourne un type généré automatiquement est créée. Vous pouvez modifier le type de retour d'une méthode <xref:System.Data.Linq.DataContext> après l'avoir ajoutée au volet de méthodes. Pour inspecter ou modifier le type de retour d’un <xref:System.Data.Linq.DataContext> méthode, sélectionnez-la, puis cliquez sur le **Type de retour** propriété dans le **propriétés** fenêtre.  
   
-### <a name="to-change-the-return-type-of-a-datacontext"></a>To change the return type of a DataContext  
+### <a name="to-change-the-return-type-of-a-datacontext"></a>Pour modifier le type de retour d'un DataContext  
   
--   Click **Yes**.  
+-   Cliquez sur **Oui**.  
   
-### <a name="to-exit-the-message-box-and-leave-the-return-type-unchanged"></a>To exit the message box and leave the return type unchanged  
+### <a name="to-exit-the-message-box-and-leave-the-return-type-unchanged"></a>Pour sortir de la boîte de message et laisser le type de retour inchangé  
   
--   Click **No**.  
+-   Cliquez sur **Non**.  
   
-### <a name="to-revert-to-the-original-return-type-after-changing-the-return-type"></a>To revert to the original return type after changing the return type  
+### <a name="to-revert-to-the-original-return-type-after-changing-the-return-type"></a>Pour rétablir le type de retour d'origine après l'avoir modifié  
   
-1.  Select the <xref:System.Data.Linq.DataContext> method on the [!INCLUDE[vs_ordesigner_short](../data-tools/includes/vs_ordesigner_short_md.md)] and delete it.  
+1.  Sélectionnez le <xref:System.Data.Linq.DataContext> méthode sur le [!INCLUDE[vs_ordesigner_short](../data-tools/includes/vs_ordesigner_short_md.md)] et supprimez-le.  
   
-2.  Locate the item in **Server Explorer/Database Explorer** and drag it onto the [!INCLUDE[vs_ordesigner_short](../data-tools/includes/vs_ordesigner_short_md.md)].  
+2.  Localisez l’élément dans **Server Explorer/Database Explorer** et faites-le glisser vers le [!INCLUDE[vs_ordesigner_short](../data-tools/includes/vs_ordesigner_short_md.md)].  
   
-     A <xref:System.Data.Linq.DataContext> method is created with the original default return type.  
+    Une méthode <xref:System.Data.Linq.DataContext> est créée avec le type de retour par défaut d'origine.  
   
-## <a name="see-also"></a>See Also  
- [LINQ to SQL Tools in Visual Studio](../data-tools/linq-to-sql-tools-in-visual-studio2.md)   
- [DataContext Methods (O/R Designer)](../data-tools/datacontext-methods-o-r-designer.md)   
- [How to: Create DataContext methods mapped to stored procedures and functions (O/R Designer)](../data-tools/how-to-create-datacontext-methods-mapped-to-stored-procedures-and-functions-o-r-designer.md)   
- [LINQ to SQL](/dotnet/framework/data/adonet/sql/linq/index)
+## <a name="see-also"></a>Voir aussi
+[Messages du Concepteur O/R](../data-tools/o-r-designer-messages.md)  
+[LINQ to SQL des outils dans Visual Studio](../data-tools/linq-to-sql-tools-in-visual-studio2.md)

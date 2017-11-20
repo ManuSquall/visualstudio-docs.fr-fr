@@ -1,40 +1,42 @@
 ---
-title: "Modifier la requ&#234;te requ&#234;te enregistrer (VSPackage du contr&#244;le de code Source) | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-helpviewer_keywords: 
-  - "Événements QEQS"
-  - "Modifier les requêtes enregistrer les événements de requête"
-  - "packages de contrôle de code source, Query modifier requête enregistre les événements"
+title: "Modifier la requête d’enregistrement (VSPackage de contrôle de code Source) de la requête | Documents Microsoft"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+helpviewer_keywords:
+- QEQS events
+- Query Edit Query Save events
+- source control packages, Query Edit Query Save events
 ms.assetid: c360d2ad-fe42-4d65-899d-d1588cc8a322
-caps.latest.revision: 17
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 17
+caps.latest.revision: "17"
+author: gregvanl
+ms.author: gregvanl
+manager: ghogen
+ms.openlocfilehash: 0aeb24f52b1b6b719e81dcd1a9bd93bd5822f8e6
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: fr-FR
+ms.lasthandoff: 10/31/2017
 ---
-# Modifier la requ&#234;te requ&#234;te enregistrer (VSPackage du contr&#244;le de code Source)
-[!INCLUDE[vs2017banner](../../code-quality/includes/vs2017banner.md)]
-
-les éditeurs de[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] peuvent diffuser des événements de sauvegarde de modifier la \(QEQS\) requête de requête.  le stub de contrôle de code source de[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] implémente le service de QEQS, afin d'être destinataire d'événements de QEQS.  Ces événements sont ensuite délégués à atteindre au contrôle de code source actif VSPackage.  le contrôle de code source actif VSPackage applique <xref:Microsoft.VisualStudio.Shell.Interop.IVsQueryEditQuerySave2> et ses méthodes.  Les méthodes d'interface d' `IVsQueryEditQuerySave2` sont généralement appelées immédiatement avant qu'un document a été modifié pour la première fois et juste avant qu'un document est enregistré.  
+# <a name="query-edit-query-save-source-control-vspackage"></a>Modifier la requête requête d’enregistrement (VSPackage de contrôle de code Source)
+[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]éditeurs peuvent diffuser des événements de requête modifier requête enregistrer (QEQS). [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]Stub de contrôle de code source implémente le service QEQS, afin qu’il soit le destinataire des événements QEQS. Ces événements sont ensuite déléguées au contrôle de source actuellement actif VSPackage. Le contrôle de source active VSPackage implémente la <xref:Microsoft.VisualStudio.Shell.Interop.IVsQueryEditQuerySave2> et ses méthodes. Les méthodes de la `IVsQueryEditQuerySave2` interface sont généralement appelées immédiatement avant la modification d’un document pour la première fois, et juste avant un document est enregistré.  
   
-## événements de QueryEditQuerySave  
- le contrôle de code source VSPackage doit gérer les événements de QEQS en implémentant l'interface d' `IVsQueryEditQuerySave2` et les méthodes nécessaires.  Vous trouverez ci\-dessous une description courte des deux méthodes que le VSPackage doit implémenter minimale.  l'implémentation réelle doit être conforme à la logique du modèle de contrôle de code source.  
+## <a name="queryeditquerysave-events"></a>Événements de QueryEditQuerySave  
+ Le contrôle de code source VSPackage doit gérer les événements QEQS en implémentant le `IVsQueryEditQuerySave2` interface et les méthodes nécessaires. Voici une brève description des deux méthodes le VSPackage doit implémenter au minimum. L’implémentation réelle doit être conformément à la logique du modèle de contrôle de code source.  
   
-### méthode de QueryEditFiles  
- L' <xref:Microsoft.VisualStudio.Shell.Interop.IVsQueryEditQuerySave2.QueryEditFiles%2A> est appelé à tout projet ou éditeur souhaite modifier un fichier.  Idéalement, cette méthode est appelée *avant* que le fichier est modifié et lorsqu'un fichier est enregistré.  Lorsqu'elle est appelée, la méthode d' `IVsQueryEditQuerySave2::QueryEditFiles` vérifie si les fichiers sont fournis sous contrôle de code source, s'ils doivent être vérifiés, et si elles peuvent être rechargés.  Si les circonstances empêchent les fichiers d'être modifiables, la méthode d' `IVsQueryEditQuerySave2::QueryEditFiles` indique au programme appelant annuler la modification.  il est également possible que l'appelant spécifie un mode d'appel.  En mode silencieux «  », cette méthode fonctionne uniquement si elle ne fait apparaître aucune interface utilisateur.  Si l'interface utilisateur est inévitable, une balise doit être retourné pour indiquer le problème.  
+### <a name="queryeditfiles-method"></a>QueryEditFiles (méthode)  
+ Le <xref:Microsoft.VisualStudio.Shell.Interop.IVsQueryEditQuerySave2.QueryEditFiles%2A> est appelée lorsqu’un projet ou un éditeur souhaite modifier un fichier. Dans l’idéal, cette méthode est appelée *avant* le fichier est modifié et quand un fichier est enregistré. Lorsqu’elle est appelée, la `IVsQueryEditQuerySave2::QueryEditFiles` méthode vérifie si les fichiers donnés sont sous contrôle de code source, s’ils doivent être extraits, et qu’ils puissent être rechargées. Si des circonstances empêchent les fichiers modifiable, la `IVsQueryEditQuerySave2::QueryEditFiles` méthode indique au programme appelant pour annuler la modification. Il est également possible de spécifier un mode d’appel à l’appelant. En mode « silencieux », cette méthode intervient uniquement si elle n’entraîne pas d’interface utilisateur à afficher. Si l’interface utilisateur est inévitable, un indicateur doit être retourné pour indiquer le problème.  
   
- La méthode se comporte de manière transactionnels ; autrement dit, si la modification est annulée sur un fichier unique, la modification est annulée pour tous les fichiers.  Inversement, s'il autorise la modification, il lui permet de tous les fichiers.  Si cette méthode permet la modification une fois pour un ensemble donné de fichiers, elle doit toujours autoriser la modification lors de les appels suivants pour le même jeu de fichiers.  la boucle d'autoriser\-modification continue jusqu'à ce que les fichiers soient fermés, enregistrés, et rechargés ; jusqu'à leur modification d'attributs \(propriétés\) ; ou jusqu'à ce que le contrôle de code source le package est modifié.  Les cas à prendre en compte en implémentant la méthode d' `IVsQueryEditQuerySave2::QueryEditFiles` incluent plusieurs fichiers, les fichiers spéciaux, l'annulation de l'utilisateur, et les modifications en mémoire.  
+ La méthode se comporte de façon transactionnelle ; Autrement dit, si la modification est annulée sur un seul fichier, la modification est annulée pour tous les fichiers. À l’inverse, si la modification est autorisée, il est autorisé pour tous les fichiers. Si cette méthode permet de modifier une seule fois pour un ensemble donné de fichiers, il doit toujours autoriser la modification sur les appels suivants pour le même ensemble de fichiers. La boucle d’autoriser de modification se poursuit jusqu'à ce que les fichiers sont fermés, enregistrés et rechargés ; jusqu'à ce que la modification de leurs attributs (propriétés) ; ou jusqu'à ce que le package de contrôle de source est modifié. Cas à prendre en compte dans l’implémentation de la `IVsQueryEditQuerySave2::QueryEditFiles` méthode inclure plusieurs fichiers, des fichiers spéciaux, annulez d’utilisateur et les modifications en mémoire.  
   
-### méthode de QuerySaveFiles  
- L' <xref:Microsoft.VisualStudio.Shell.Interop.IVsQueryEditQuerySave2.QuerySaveFiles%2A> est appelé à tout projet ou éditeur doit enregistrer des fichiers.  Lorsqu'elle est appelée, la méthode d' `IVsQueryEditQuerySave2::QuerySaveFiles` vérifie si les fichiers fournis sont en lecture seule et s'ils soient sous contrôle de code source.  Si les fichiers doivent être vérifiés, l'appel est délégué au package de contrôle de code source.  Si les circonstances empêchent les fichiers d'être enregistré, la méthode d' `IVsQueryEditQuerySave2::QuerySaveFiles` doit pointer vers l'éditeur annuler l'enregistrement.  comme avec la méthode d' `IVsQueryEditQuerySave2::QueryEditFiles` , il est possible que l'appelant spécifie un mode d'appel.  En mode silencieux «  », cette méthode fonctionne uniquement si elle ne fait apparaître aucune interface utilisateur.  Si l'interface utilisateur est inévitable, une balise doit être retourné pour indiquer le problème.  
+### <a name="querysavefiles-method"></a>QuerySaveFiles (méthode)  
+ Le <xref:Microsoft.VisualStudio.Shell.Interop.IVsQueryEditQuerySave2.QuerySaveFiles%2A> est appelée lorsqu’un projet ou un éditeur doit enregistrer un ensemble de fichiers. Lorsqu’elle est appelée, la `IVsQueryEditQuerySave2::QuerySaveFiles` méthode vérifie si les fichiers donnés sont en lecture seule et s’ils sont sous contrôle de code source. Si les fichiers doivent être extraits, l’appel est délégué pour le package de contrôle de code source. Si des circonstances empêchent les fichiers ne sont pas enregistrées, la `IVsQueryEditQuerySave2::QuerySaveFiles` méthode doit indiquer l’éditeur pour annuler l’enregistrement. Comme avec la `IVsQueryEditQuerySave2::QueryEditFiles` (méthode), il est possible pour l’appelant de spécifier un mode d’appel. En mode « silencieux », cette méthode intervient uniquement si elle n’entraîne pas d’interface utilisateur à afficher. Si l’interface utilisateur est inévitable, un indicateur doit être retourné pour indiquer le problème.  
   
- Cette méthode doit se comporter de façon transactionnels ; autrement dit, si la sauvegarde est annulée sur un fichier unique, d'enregistrement est annulée pour tous les fichiers.  Inversement, si est autorisée à enregistrer, il doit être autorisé pour tous les fichiers.  Comme avec la méthode d' `IVsQueryEditQuerySave2::QueryEditFiles` , les cas à prendre en compte en implémentant la méthode d' `IVsQueryEditQuerySave2::QuerySaveFiles` incluent plusieurs fichiers, les fichiers spéciaux, l'annulation de l'utilisateur, et les modifications en mémoire.  
+ Cette méthode doit se comporter de façon transactionnelle ; Autrement dit, si l’enregistrement est annulé sur un seul fichier, l’enregistrement est annulé pour tous les fichiers. À l’inverse, si l’enregistrement est autorisée, il doit être autorisé pour tous les fichiers. Comme avec la `IVsQueryEditQuerySave2::QueryEditFiles` (méthode), le cas à prendre en compte dans l’implémentation de la `IVsQueryEditQuerySave2::QuerySaveFiles` méthode inclure plusieurs fichiers, des fichiers spéciaux, annulez d’utilisateur et les modifications en mémoire.  
   
-## Voir aussi  
+## <a name="see-also"></a>Voir aussi  
  <xref:Microsoft.VisualStudio.Shell.Interop.IVsQueryEditQuerySave2>

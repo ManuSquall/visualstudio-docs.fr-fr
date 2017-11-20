@@ -1,55 +1,57 @@
 ---
-title: "Object.getOwnPropertyDescriptor, fonction (JavaScript) | Microsoft Docs"
-ms.custom: ""
-ms.date: "01/18/2017"
-ms.prod: "windows-client-threshold"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "devlang-javascript"
-ms.tgt_pltfrm: ""
-ms.topic: "language-reference"
-dev_langs: 
-  - "JavaScript"
-  - "TypeScript"
-  - "DHTML"
-helpviewer_keywords: 
-  - "getOwnPropertyDescriptor (méthode) (JavaScript)"
+title: Object.getOwnPropertyDescriptor, fonction (JavaScript) | Documents Microsoft
+ms.custom: 
+ms.date: 01/18/2017
+ms.prod: windows-client-threshold
+ms.reviewer: 
+ms.suite: 
+ms.technology: devlang-javascript
+ms.tgt_pltfrm: 
+ms.topic: language-reference
+dev_langs:
+- JavaScript
+- TypeScript
+- DHTML
+helpviewer_keywords: getOwnPropertyDescriptor method [JavaScript]
 ms.assetid: 8f0e1c90-c4f9-44c4-bf76-726bacecbc14
-caps.latest.revision: 45
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 45
+caps.latest.revision: "45"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: dd147d567fc4d8a39d7a251d55772c40518e7a26
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.translationtype: MT
+ms.contentlocale: fr-FR
+ms.lasthandoff: 10/27/2017
 ---
-# Object.getOwnPropertyDescriptor, fonction (JavaScript)
-Obtient le propre descripteur de propriété de l'objet spécifié.  Le propre descripteur de propriété est un descripteur qui est défini directement sur l'objet et non hérité du prototype de l'objet.  
+# <a name="objectgetownpropertydescriptor-function-javascript"></a>Object.getOwnPropertyDescriptor, fonction (JavaScript)
+Obtient le propre descripteur de propriété de l'objet spécifié. Le propre descripteur de propriété est un descripteur qui est défini directement sur l'objet et non hérité du prototype de l'objet.  
   
-## Syntaxe  
+## <a name="syntax"></a>Syntaxe  
   
 ```  
 Object.getOwnPropertyDescriptor(object, propertyname)  
 ```  
   
-## Paramètres  
+## <a name="parameters"></a>Paramètres  
  `object`  
- Obligatoire.  Objet qui contient la propriété.  
+ Obligatoire. Objet qui contient la propriété.  
   
  `propertyname`  
- Obligatoire.  Nom de la propriété.  
+ Obligatoire. Nom de la propriété.  
   
-## Valeur de retour  
+## <a name="return-value"></a>Valeur de retour  
  Descripteur de la propriété.  
   
-## Notes  
+## <a name="remarks"></a>Remarques  
  Vous pouvez utiliser la fonction `Object.getOwnPropertyDescriptor` pour obtenir un objet descripteur qui décrit les attributs de la propriété.  
   
- La [Object.defineProperty, fonction](../../javascript/reference/object-defineproperty-function-javascript.md) est utilisée pour ajouter ou modifier des propriétés.  
+ Le [Object.DefineProperty, fonction](../../javascript/reference/object-defineproperty-function-javascript.md) est utilisée pour ajouter ou modifier les propriétés.  
   
-## Exemple de propriété de données  
+## <a name="data-property-example"></a>Exemple de propriété de données  
  L'exemple suivant obtient un descripteur de propriété de données et l'utilise pour mettre la propriété en lecture seule.  
   
-```javascript  
+```JavaScript  
 // Create a user-defined object.  
 var obj = {};  
   
@@ -67,7 +69,7 @@ Object.defineProperty(obj, "newDataProperty", descriptor);
   
  Pour répertorier les attributs de propriété, vous pouvez ajouter le code suivant à cet exemple.  
   
-```javascript  
+```JavaScript  
 // Get the descriptor from the object.  
 var desc2 = Object.getOwnPropertyDescriptor(obj, "newDataProperty");  
   
@@ -84,11 +86,11 @@ for (var prop in desc2) {
 // configurable: true  
 ```  
   
-## Configuration requise  
+## <a name="requirements"></a>Spécifications  
  Toutes les fonctionnalités sont prises en charge dans [!INCLUDE[jsv9text](../../javascript/includes/jsv9text-md.md)].  
   
- [!INCLUDE[jsv58textspecific](../../javascript/reference/includes/jsv58textspecific-md.md)] prend en charge les objets DOM, mais pas les objets définis par l'utilisateur.  Les attributs `enumerable` et `configurable` peuvent être spécifiés, mais ils ne sont pas utilisés.  
+ [!INCLUDE[jsv58textspecific](../../javascript/reference/includes/jsv58textspecific-md.md)] prend en charge les objets DOM, mais pas les objets définis par l'utilisateur. Les attributs `enumerable` et `configurable` peuvent être spécifiés, mais ils ne sont pas utilisés.  
   
-## Voir aussi  
- [Prototypes DOM, partie 2 : prise en charge d'accesseurs \(Get\/Set\)](http://msdn.microsoft.com/library/dd229916\(v=VS.85\).aspx)   
- [Object.defineProperty, fonction](../../javascript/reference/object-defineproperty-function-javascript.md)
+## <a name="see-also"></a>Voir aussi  
+ [Document prototypes DOM, partie 2 : Accesseur (accesseur Get/Set) prise en charge](http://msdn.microsoft.com/library/dd229916\(v=VS.85\).aspx)   
+ [Fonction Object.defineProperty](../../javascript/reference/object-defineproperty-function-javascript.md)

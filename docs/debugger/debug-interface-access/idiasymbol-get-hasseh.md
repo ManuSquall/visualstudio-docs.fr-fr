@@ -1,54 +1,53 @@
 ---
-title: "IDiaSymbol::get_hasSEH | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-debug"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "IDiaSymbol::get_hasSEH (méthode)"
+title: IDiaSymbol::get_hasSEH | Documents Microsoft
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-debug
+ms.tgt_pltfrm: 
+ms.topic: article
+dev_langs: C++
+helpviewer_keywords: IDiaSymbol::get_hasSEH method
 ms.assetid: 1a709ded-22c8-464c-97be-eba5e464210c
-caps.latest.revision: 8
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 8
+caps.latest.revision: "8"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: 2a0e2ffb58b62acd35fea209e2c0c66fc7f1a9cf
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: fr-FR
+ms.lasthandoff: 10/31/2017
 ---
-# IDiaSymbol::get_hasSEH
-[!INCLUDE[vs2017banner](../../code-quality/includes/vs2017banner.md)]
-
-Extrait une balise qui spécifie si la fonction contient tout [Gestion structurée des exceptions](/visual-cpp/cpp/structured-exception-handling-c-cpp) \(par exemple, blocs de \_\_try\/\_\_except\).  
+# <a name="idiasymbolgethasseh"></a>IDiaSymbol::get_hasSEH
+Récupère un indicateur qui spécifie si la fonction contient un [gestion structurée des exceptions (C/C++)](/cpp/cpp/structured-exception-handling-c-cpp) (par exemple, __try /\__except blocs).  
   
-## Syntaxe  
+## <a name="syntax"></a>Syntaxe  
   
-```cpp#  
+```C++  
 HRESULT get_hasSEH(  
-   BOOL *pFlag  
+   BOOL *pFlag  
 );  
 ```  
   
-#### Paramètres  
+#### <a name="parameters"></a>Paramètres  
  `pFlag`  
- \[out\]  Retourne `TRUE` si la fonction a tout bloc de gestion structurée des exceptions ; sinon, retourne `FALSE`.  
+ [out] Retourne `TRUE` si la fonction a toutes les exceptions structurées de blocs ; sinon, retourne `FALSE`.  
   
-## Valeur de retour  
- En cas de réussite, retourne `S_OK`; sinon, retourne `S_FALSE` ou un code d'erreur.  
+## <a name="return-value"></a>Valeur de retour  
+ En cas de réussite, retourne `S_OK`; sinon, retourne `S_FALSE` ou code d’erreur.  
   
 > [!NOTE]
->  Une valeur de retour d' `S_FALSE` signifie que la propriété n'est pas disponible pour le symbole.  
+>  La valeur de retour `S_FALSE` signifie que la propriété n’est pas disponible pour le symbole.  
   
-## Configuration requise  
+## <a name="requirements"></a>Spécifications  
   
 |Spécification|Description|  
-|-------------------|-----------------|  
-|en\-tête :|dia2.h|  
-|version :|diamètre Kit de développement logiciel v8.0|  
+|-----------------|-----------------|  
+|En-tête :|dia2.h|  
+|Version :|DIA SDK 8.0|  
   
-## Voir aussi  
+## <a name="see-also"></a>Voir aussi  
  [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)   
- [Gestion structurée des exceptions](/visual-cpp/cpp/structured-exception-handling-c-cpp)
+ [Gestion structurée des exceptions (C/C++)](/cpp/cpp/structured-exception-handling-c-cpp)

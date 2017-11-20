@@ -1,85 +1,66 @@
 ---
-title: "Comment&#160;: appliquer des modifications en mode arr&#234;t &#224; l&#39;aide de la fonctionnalit&#233; Modifier &amp; Continuer | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-debug"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "vs.debug.variables.failededit"
-dev_langs: 
-  - "FSharp"
-  - "VB"
-  - "CSharp"
-  - "C++"
-  - "VB"
-helpviewer_keywords: 
-  - "mode arrêt, appliquer les modifications du code"
-  - "code, modifier en mode arrêt"
-  - "coder, modifier en mode arrêt"
-  - "Modifier & Continuer (Visual Basic), appliquer des modifications en mode arrêt"
-  - "Modifier & Continuer, appliquer des modifications en mode arrêt"
-  - "modifier, mode arrêt"
+title: "Comment : appliquer des modifications en Mode arrêt avec Modifier & Continuer | Documents Microsoft"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-debug
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords: vs.debug.variables.failededit
+dev_langs:
+- CSharp
+- VB
+- FSharp
+- C++
+helpviewer_keywords:
+- Edit and Continue [Visual Basic], applying edits in break mode
+- break mode, applying code changes
+- Edit and Continue, applying edits in break mode
+- editing, break mode
+- coding, editing in break mode
+- code, editing in break mode
 ms.assetid: 1eef7498-6a1f-4fba-8146-510adc6375c9
-caps.latest.revision: 30
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 30
+caps.latest.revision: "30"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: e925ab0f989a0d817ce7aaa7ca1d15171555f27e
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: fr-FR
+ms.lasthandoff: 10/31/2017
 ---
-# Comment&#160;: appliquer des modifications en mode arr&#234;t &#224; l&#39;aide de la fonctionnalit&#233; Modifier &amp; Continuer
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
-
+# <a name="how-to-apply-edits-in-break-mode-with-edit-and-continue"></a>Comment : appliquer des modifications en mode arrêt à l'aide de la fonctionnalité Modifier & Continuer
 Vous pouvez utiliser Modifier & Continuer pour modifier votre code en mode Arrêt, puis continuer sans arrêter et redémarrer l'exécution.  
   
- Modifier & Continuer n'est pas disponible dans les scénarios de débogage suivants :  
+Pour connaître les limitations sur l’utilisation de modifier & Continuer pendant le débogage, consultez [pris en charge les modifications de Code (c# et Visual Basic](../debugger/supported-code-changes-csharp.md)]
   
--   Débogage en mode mixte \(natif\/managé\).  
-  
--   Débogage SQL.  
-  
--   Débogage d'un dump  Dr. Watson.  
-  
--   Modification de code après une exception non gérée, lorsque l'option **Dérouler la pile des appels sur les exceptions non gérées** n'est pas sélectionnée.  
-  
--   Débogage d'une application runtime incorporée.  
-  
--   Débogage d'une application à l'aide de la commande **Attacher à** au lieu d'exécuter l'application en cliquant sur **Démarrer** dans le menu **Déboguer**.  
-  
--   Débogage de code optimisé.  
-  
--   Débogage de code managé lorsque la cible est une application 64 bits.  Pour utiliser Modifier & Continuer, vous devez affecter x86 à la cible.  \(**Propriétés** de *Project*, onglet **Compiler**, **Paramètres avancés du compilateur**.\).  
-  
--   Débogage d'une version ancienne de votre code après un échec de génération par une nouvelle version en raison d'erreurs de build.  
-  
-### Pour modifier du code en mode Arrêt  
+### <a name="to-edit-code-in-break-mode"></a>Pour modifier du code en mode Arrêt  
   
 1.  Passez en mode Arrêt en procédant de l'une des manières suivantes :  
   
-    -   Définissez un point d'arrêt dans votre code, puis cliquez sur **Démarrer le débogage** dans le menu **Déboguer** et attendez que l'application parvienne au point d'arrêt.  
+    -   Définir un point d’arrêt dans votre code, puis choisissez **démarrer le débogage** à partir de la **déboguer** menu et attendez que l’application atteint le point d’arrêt.  
   
-         – ou –  
+         ou  
   
-    -   Démarrez le débogage, puis sélectionnez **Interrompre tout** dans le menu **Déboguer**.  
+    -   Démarrer le débogage, puis **interrompre tout** à partir de la **déboguer** menu.  
   
-         – ou –  
+         ou  
   
-    -   Lorsqu'une exception se produit, cliquez sur **Activer la modification** dans l'**Assistant Exception**.  
+    -   Lorsqu’une exception se produit, choisissez **activer la modification** sur la**Assistant Exception**.  
   
-2.  Apportez toutes les modifications de code souhaitées et autorisées.  
+2.  Apportez les modifications de code souhaitées et pris en charge.  
   
-     Pour plus d'informations, consultez [Modifications non prises en charge dans Modifier & Continuer \(Visual Basic\)](../debugger/unsupported-edits-in-visual-basic-edit-and-continue.md).  
+     Pour plus d’informations, consultez [pris en charge les modifications de Code (c# et Visual Basic](../debugger/supported-code-changes-csharp.md).  
   
     > [!NOTE]
-    >  Si vous tentez d'effectuer une modification du code qui n'est pas autorisée par l'opération Modifier & Continuer, votre modification est soulignée d'un trait ondulé violet et une tâche s'affiche dans la liste des tâches.  Il vous est impossible de continuer l'exécution du code sauf si vous annulez la modification de code non autorisée.  
+    >  Si vous tentez d’effectuer une modification du code qui n’est pas autorisée par l’opération Modifier & Continuer, votre modification est soulignée d’un trait ondulé violet et une tâche s’affiche dans la liste des tâches. Il vous est impossible de continuer l'exécution du code sauf si vous annulez la modification de code non autorisée.  
   
-3.  Dans le menu **Déboguer**, cliquez sur **Continuer** pour reprendre l'exécution.  
+3.  Sur le **déboguer** menu, cliquez sur **continuer** pour reprendre l’exécution.  
   
      Votre code s'exécute désormais avec les modifications que vous avez appliquées dans le projet.  
   
-## Voir aussi  
- [Modifications non prises en charge dans Modifier & Continuer \(Visual Basic\)](../debugger/unsupported-edits-in-visual-basic-edit-and-continue.md)   
- [Modifier & Continuer \(Visual Basic\)](../debugger/edit-and-continue-visual-basic.md)
+## <a name="see-also"></a>Voir aussi  
+ [Modifications de Code prises en charge (c# et Visual Basic](../debugger/supported-code-changes-csharp.md)   
+ [Modifier & Continuer (Visual Basic)](../debugger/edit-and-continue-visual-basic.md)

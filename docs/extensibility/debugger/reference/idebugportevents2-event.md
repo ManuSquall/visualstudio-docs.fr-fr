@@ -1,46 +1,29 @@
 ---
-title: IDebugPortEvents2::Event | Microsoft Docs
+title: IDebugPortEvents2::Event | Documents Microsoft
 ms.custom: 
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-sdk
+ms.technology: vs-ide-sdk
 ms.tgt_pltfrm: 
 ms.topic: article
-f1_keywords:
-- IDebugPortEvents2::Event
-helpviewer_keywords:
-- IDebugPortEvents2::Event
+f1_keywords: IDebugPortEvents2::Event
+helpviewer_keywords: IDebugPortEvents2::Event
 ms.assetid: 5cc813f7-04a1-4462-9ea7-fbddcf0e0143
-caps.latest.revision: 18
+caps.latest.revision: "18"
+author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-translation.priority.mt:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
+ms.openlocfilehash: 82ea7d2c4a32bb224c8377a2980c944b3389da2b
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
 ms.translationtype: MT
-ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
-ms.openlocfilehash: e9059d4c2d13455c52e690bc424736b35f7cc659
-ms.contentlocale: fr-fr
-ms.lasthandoff: 08/28/2017
-
+ms.contentlocale: fr-FR
+ms.lasthandoff: 10/31/2017
 ---
 # <a name="idebugportevents2event"></a>IDebugPortEvents2::Event
-This method sends events that signify the creation and destruction of processes and programs on a port.  
+Cette méthode envoie les événements qui indiquent la création et la destruction des processus et des programmes sur un port.  
   
-## <a name="syntax"></a>Syntax  
+## <a name="syntax"></a>Syntaxe  
   
 ```cpp  
 HRESULT Event(  
@@ -64,21 +47,21 @@ int Event(
 );  
 ```  
   
-#### <a name="parameters"></a>Parameters  
+#### <a name="parameters"></a>Paramètres  
  `pMachine`  
- [in] An [IDebugCoreServer2](../../../extensibility/debugger/reference/idebugcoreserver2.md) object that represents the debug server (there is one for every instance of [!INCLUDE[vsprvs](../../../code-quality/includes/vsprvs_md.md)]) in which the event occurred.  
+ [in] Un [IDebugCoreServer2](../../../extensibility/debugger/reference/idebugcoreserver2.md) objet qui représente le serveur de débogage (il en existe un pour chaque instance de [!INCLUDE[vsprvs](../../../code-quality/includes/vsprvs_md.md)]) dans laquelle l’événement s’est produit.  
   
  `pPort`  
- [in] An [IDebugPort2](../../../extensibility/debugger/reference/idebugport2.md) object that represents the port in which the event occurred.  
+ [in] Un [IDebugPort2](../../../extensibility/debugger/reference/idebugport2.md) objet qui représente le port dans lequel l’événement s’est produite.  
   
  `pProcess`  
- [in] An [IDebugProcess2](../../../extensibility/debugger/reference/idebugprocess2.md) object that represents the process in which the event occurred.  
+ [in] Un [IDebugProcess2](../../../extensibility/debugger/reference/idebugprocess2.md) objet qui représente le processus dans lequel l’événement s’est produite.  
   
  `pProgram`  
- [in] An [IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md) object that represents the program in which the event occurred.  
+ [in] Un [IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md) objet qui représente le programme dans lequel l’événement s’est produite.  
   
  `pEvent`  
- [in] An [IDebugEvent2](../../../extensibility/debugger/reference/idebugevent2.md) object that identifies the event. The possible events are as follows:  
+ [in] Un [IDebugEvent2](../../../extensibility/debugger/reference/idebugevent2.md) objet qui identifie l’événement. Les événements possibles sont les suivantes :  
   
 -   [IDebugProcessCreateEvent2](../../../extensibility/debugger/reference/idebugprocesscreateevent2.md)  
   
@@ -89,12 +72,12 @@ int Event(
 -   [IDebugProgramDestroyEvent2](../../../extensibility/debugger/reference/idebugprogramdestroyevent2.md)  
   
  `riidEvent`  
- [in] The GUID of the event. Because the event is cast to [IDebugEvent2](../../../extensibility/debugger/reference/idebugevent2.md) before calling this method, this identifier makes it easier to determine which event is being sent.  
+ [in] Le GUID de l’événement. Étant donné que l’événement est effectué en [IDebugEvent2](../../../extensibility/debugger/reference/idebugevent2.md) avant d’appeler cette méthode, cet identificateur rend plus facile de déterminer l’événement qui sont envoyé.  
   
-## <a name="return-value"></a>Return Value  
- If successful, returns `S_OK`; otherwise, returns an error code.  
+## <a name="return-value"></a>Valeur de retour  
+ En cas de réussite, retourne `S_OK`; sinon, retourne un code d’erreur.  
   
-## <a name="see-also"></a>See Also  
+## <a name="see-also"></a>Voir aussi  
  [IDebugPortEvents2](../../../extensibility/debugger/reference/idebugportevents2.md)   
  [IDebugCoreServer2](../../../extensibility/debugger/reference/idebugcoreserver2.md)   
  [IDebugPort2](../../../extensibility/debugger/reference/idebugport2.md)   

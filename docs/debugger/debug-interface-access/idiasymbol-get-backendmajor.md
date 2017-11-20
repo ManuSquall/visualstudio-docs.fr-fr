@@ -1,33 +1,31 @@
 ---
-title: "IDiaSymbol::get_backEndMajor | Microsoft Docs"
-ms.custom: ""
-ms.date: "12/05/2016"
-ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-debug"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "IDiaSymbol::get_backEndMajor (méthode)"
+title: IDiaSymbol::get_backEndMajor | Documents Microsoft
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-debug
+ms.tgt_pltfrm: 
+ms.topic: article
+dev_langs: C++
+helpviewer_keywords: IDiaSymbol::get_backEndMajor method
 ms.assetid: 900a05dd-c29b-44ad-b46b-f43bda819a66
-caps.latest.revision: 9
-caps.handback.revision: 9
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
+caps.latest.revision: "9"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: 2492ab99c0bfd7eb8a3a894c0c265458cc38406e
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: fr-FR
+ms.lasthandoff: 10/31/2017
 ---
-# IDiaSymbol::get_backEndMajor
-[!INCLUDE[vs2017banner](../../code-quality/includes/vs2017banner.md)]
-
+# <a name="idiasymbolgetbackendmajor"></a>IDiaSymbol::get_backEndMajor
 Récupère le numéro de version majeure du back-end du compilateur.  
   
 ## <a name="syntax"></a>Syntaxe  
   
-```cpp#  
+```C++  
 HRESULT get_backEndMajor (   
    DWORD* pRetVal  
 );  
@@ -35,22 +33,22 @@ HRESULT get_backEndMajor (
   
 #### <a name="parameters"></a>Paramètres  
  `pRetVal`  
- [out] Retourne le numéro de version majeure du serveur principal. Consultez la section Notes.  
+ [out] Retourne le numéro de version majeure du back-end. Consultez la section Notes.  
   
 ## <a name="return-value"></a>Valeur de retour  
- En cas de réussite, retourne `S_OK`; Sinon, retourne `S_FALSE` ou code d’erreur.  
+ En cas de réussite, retourne `S_OK`; sinon, retourne `S_FALSE` ou code d’erreur.  
   
 > [!NOTE]
->  Une valeur de retour de `S_FALSE` signifie que la propriété n’est pas disponible pour le symbole.  
+>  La valeur de retour `S_FALSE` signifie que la propriété n’est pas disponible pour le symbole.  
   
-## <a name="remarks"></a>Notes  
- Un compilateur est généralement constitué de deux éléments principaux : le serveur frontal (analyseur), qui gère l’analyse du code source dans un formulaire intermédiaire, et un serveur principal (Générateur de code), qui convertit le formulaire intermédiaire en assembly. Il n’est pas rare pour le serveur frontal d’avoir une version différente de celle du serveur principal.  
+## <a name="remarks"></a>Remarques  
+ Un compilateur est généralement constitué de deux éléments principaux : le serveur frontal (analyseur), qui gère l’analyse du code source en un format intermédiaire, et un serveur principal (Générateur de code), qui convertit le formulaire intermédiaire dans l’assembly. Il n’est pas rare pour le serveur frontal d’avoir une version différente de celle du serveur principal.  
   
- Un front-end ou le numéro de version principale se compose de trois parties : \< principales>. \< secondaire>. \< build>, où \< principales> est le numéro de version principale, \< secondaire> est le numéro de version secondaire, et \< build> est le numéro de build. Par exemple, 13.10.3077.  
+ Un frontal ou un numéro de version principale se compose de trois parties : \<majeure >.\< mineure >. \<Générer >, où \<majeure > est le numéro de version principale, \<mineure > est le numéro de version mineure et \<Générer > est le numéro de build. Par exemple, 13.10.3077.  
   
 ## <a name="requirements"></a>Spécifications  
   
-|Situation|Description|  
+|Spécification|Description|  
 |-----------------|-----------------|  
 |En-tête :|dia2.h|  
 |Version :|DIA SDK v7.0|  

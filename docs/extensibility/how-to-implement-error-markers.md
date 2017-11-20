@@ -1,61 +1,62 @@
 ---
-title: "Comment : impl&#233;menter des marqueurs d&#39;erreur | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-helpviewer_keywords: 
-  - "éditeurs (Visual Studio SDK), hérités - marqueurs d'erreur"
+title: "Comment : implémenter des marqueurs d’erreur | Documents Microsoft"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+helpviewer_keywords: editors [Visual Studio SDK], legacy - error markers
 ms.assetid: e8e78514-5720-4fc2-aa43-00b6af482e38
-caps.latest.revision: 12
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 12
+caps.latest.revision: "12"
+author: gregvanl
+ms.author: gregvanl
+manager: ghogen
+ms.openlocfilehash: d926a498549e868e478d83b7930f5e569f49ce20
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: fr-FR
+ms.lasthandoff: 10/31/2017
 ---
-# Comment : impl&#233;menter des marqueurs d&#39;erreur
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
-
-Il est très difficile les personnalisations d'éditeur de texte implémenter des marques d'erreurs \(ou des lignes ondulées rouges\).  Toutefois, les avantages qu'ils permettent aux utilisateurs de votre VSPackage peuvent fortement être supérieurs au coût pour contribuer.  Les marques d'erreurs marquent subtile le texte que votre l'analyseur de langage comme incorrect avec une ligne ondulée rouge ou ondulée.  Cet indicateur aide les programmeurs en affichant visuellement code incorrect.  
+# <a name="how-to-implement-error-markers"></a>Comment : implémenter des marqueurs d’erreur
+Marqueurs d’erreur (ou des soulignements ondulés rouges) sont les personnalisations de l’éditeur de texte pour implémenter la plus difficile. Toutefois, les avantages que leur donnent aux utilisateurs de votre VSPackage peuvent compensent le coût pour les fournir. Marqueurs d’erreur légèrement marquer le texte que votre analyseur de langage juge incorrecte d’un trait rouge sinueux ou par des soulignements ondulés. Cet indicateur permet aux programmeurs en affichant visuellement de code incorrect.  
   
- Marqueurs de texte à utiliser pour implémenter des soulignements ondulés rouges.  En règle générale, les services linguistiques ajoutez les lignes ondulées rouges à la mémoire tampon de texte comme série d'arrière\-plan, à la durée d'inactivité ou dans un thread d'arrière\-plan.  
+ Utiliser des marqueurs de texte pour implémenter des soulignements ondulés rouges. En règle générale, les services de langage ajouter des soulignements ondulés rouges à la mémoire tampon de texte en tant qu’une passe en arrière-plan, à la durée d’inactivité ou dans un thread d’arrière-plan.  
   
-### pour implémenter la fonctionnalité rouge de ligne ondulée  
+### <a name="to-implement-the-red-wavy-underline-feature"></a>Pour implémenter la fonctionnalité de soulignement ondulé rouge  
   
-1.  Sélectionnez le texte dans lequel vous voulez l'endroit la ligne ondulée rouge.  
+1.  Sélectionnez le texte dans lequel vous souhaitez placer la ligne ondulée rouge.  
   
-2.  créez une marque du type `MARKER_CODESENSE_ERROR`.  Pour plus d'informations, consultez [Comment : ajouter des marqueurs de texte Standard](../extensibility/how-to-add-standard-text-markers.md).  
+2.  Créer un marqueur de type `MARKER_CODESENSE_ERROR`. Pour plus d’informations, consultez [Comment : ajouter des marqueurs de texte Standard](../extensibility/how-to-add-standard-text-markers.md).  
   
-3.  Ensuite, passez un pointeur d'interface de <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextMarkerClient> .  
+3.  Après cela, passez un <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextMarkerClient> pointeur d’interface.  
   
- Ce processus vous permet également de créer le texte de conseils ou un menu contextuel spécial sur une marque données.  Pour plus d'informations, consultez [Comment : ajouter des marqueurs de texte Standard](../extensibility/how-to-add-standard-text-markers.md).  
+ Ce processus permet également de vous permet de créer le texte info-bulle ou un menu contextuel spéciaux sur un marqueur donné. Pour plus d’informations, consultez [Comment : ajouter des marqueurs de texte Standard](../extensibility/how-to-add-standard-text-markers.md).  
   
- Les objets suivants sont requis avant que les marqueurs d'erreurs puissent être affichées.  
+ Les objets suivants sont requis avant l’affichage de marqueurs d’erreur.  
   
--   un analyseur.  
+-   Un analyseur.  
   
--   Un fournisseur de la tâche \(autrement dit, une implémentation d' <xref:Microsoft.VisualStudio.Shell.Interop.IVsTaskProvider2>\) qui contient un enregistrement des modifications apportées aux informations de ligne pour identifier les lignes re\-à analyser.  
+-   Un fournisseur de tâche (autrement dit, une implémentation de <xref:Microsoft.VisualStudio.Shell.Interop.IVsTaskProvider2>) qui conserve un enregistrement des modifications dans les informations de ligne afin d’identifier les lignes pour être réanalysé.  
   
--   Un filtre d'affichage de texte qui capture les événements de modification du signe insertion de la vue à l'aide de la méthode d' <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextViewEvents.OnChangeCaretLine%2A>\).  
+-   Événements de modification d’un filtre d’affichage de texte qui capture le point d’insertion à partir de la vue à l’aide de la <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextViewEvents.OnChangeCaretLine%2A>) méthode.  
   
- l'analyseur, le fournisseur de tâche, et le filtre fournissent l'infrastructure nécessaire pour rendre des marques d'erreurs possibles.  Les étapes suivantes fournissent le processus pour afficher des marqueurs d'erreurs.  
+ L’analyseur, le fournisseur de tâche et le filtre fournissent l’infrastructure nécessaire pour rendre les marqueurs d’erreur possible. Les étapes suivantes décrivent le processus pour l’affichage des marqueurs d’erreur.  
   
-1.  Dans une vue qui est filtrée, le filtre obtient un pointeur vers le fournisseur de tâche associée aux données de cette vue.  
+1.  Dans une vue est filtrée, le filtre Obtient un pointeur vers le fournisseur de tâche associé à données ses.  
   
     > [!NOTE]
-    >  Vous pouvez utiliser le même filtre de commande pour obtenir des conseils de méthode, saisie semi\-automatique des instructions, marqueurs d'erreurs, et ainsi de suite.  
+    >  Vous pouvez utiliser le même filtre de commande pour la méthode conseils, saisie semi-automatique des instructions, des marqueurs d’erreur et ainsi de suite.  
   
 2.  Lorsque le filtre reçoit un événement indiquant que vous avez déplacé vers une autre ligne, une tâche est créée pour rechercher des erreurs.  
   
-3.  Le gestionnaire de tâche vérifie si la ligne est modifiée.  Si c'est le cas, elle analyse la ligne pour les erreurs.  
+3.  Le Gestionnaire de tâches vérifie si la ligne n’est pas intègre. Dans ce cas, il analyse la ligne pour les erreurs.  
   
-4.  Si des erreurs sont rencontrées, le fournisseur de tâche crée une instance de tâche.  Cette instance crée le marqueur de texte que l'environnement utilise comme marqueur d'erreurs dans l'affichage de texte.  
+4.  Si des erreurs sont détectées, le fournisseur de tâche crée une instance d’élément de tâche. Cette instance crée le marqueur de texte qui utilise de l’environnement comme un marqueur d’erreur dans l’affichage de texte.  
   
-## Voir aussi  
- [À l'aide de marqueurs de texte avec l'API héritée](../extensibility/using-text-markers-with-the-legacy-api.md)   
- [Comment : ajouter des marqueurs de texte Standard](../extensibility/how-to-add-standard-text-markers.md)   
- [Comment : créer des marqueurs de texte personnalisé](../extensibility/how-to-create-custom-text-markers.md)   
- [Comment : utiliser des marqueurs de texte](../extensibility/how-to-use-text-markers.md)
+## <a name="see-also"></a>Voir aussi  
+ [À l’aide de marqueurs de texte avec l’API hérité](../extensibility/using-text-markers-with-the-legacy-api.md)   
+ [Comment : ajouter des marqueurs de texte Standard](../extensibility/how-to-add-standard-text-markers.md)   
+ [Comment : créer des marqueurs de texte personnalisé](../extensibility/how-to-create-custom-text-markers.md)   
+ [Comment : utiliser des marqueurs de texte](../extensibility/how-to-use-text-markers.md)

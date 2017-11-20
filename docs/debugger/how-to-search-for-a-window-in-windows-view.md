@@ -1,52 +1,52 @@
 ---
-title: "How to: Search for a Window in Windows View | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-debug"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-helpviewer_keywords: 
-  - "windows, searching in Windows view"
+title: "Comment : rechercher une fenêtre dans la vue fenêtres | Documents Microsoft"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-debug
+ms.tgt_pltfrm: 
+ms.topic: article
+helpviewer_keywords: windows, searching in Windows view
 ms.assetid: 30306970-b861-4315-acf8-f86a43d4e73b
-caps.latest.revision: 4
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 4
+caps.latest.revision: "4"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: 81b970979759c7ef6a6b236a1f2dff34815a72d9
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: fr-FR
+ms.lasthandoff: 10/31/2017
 ---
-# How to: Search for a Window in Windows View
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
-
-Vous pouvez rechercher une fenêtre spécifique dans la vue Fenêtres en utilisant son handle, sa légende, sa classe ou une combinaison de sa légende et de sa classe comme critères de recherche.  Vous pouvez également spécifier la direction initiale de la recherche.  Les champs de la boîte de dialogue affichent les attributs de la fenêtre sélectionnée dans l'arborescence des fenêtres.  
+# <a name="how-to-search-for-a-window-in-windows-view"></a>Comment : rechercher une fenêtre dans la vue Fenêtres
+Vous pouvez rechercher une fenêtre spécifique dans la vue fenêtres à l’aide de son handle, légende, classe ou une combinaison de sa légende et de la classe comme critère de recherche. Vous pouvez également spécifier la direction initiale de la recherche. Les champs dans la boîte de dialogue affiche les attributs de la fenêtre sélectionnée dans l’arborescence de la fenêtre.  
   
- Commencez avec l'arborescence développée au deuxième niveau \(toutes les fenêtres enfants du Bureau\), afin de pouvoir identifier les fenêtres de niveau Bureau par leur nom de classe et leur titre.  Une fois que vous avez choisi une fenêtre de niveau Bureau, vous pouvez développer ce niveau pour rechercher une fenêtre enfant spécifique.  
+ Commencez avec l’arborescence développée au deuxième niveau (toutes les fenêtres enfants du bureau), afin que vous puissiez identifier les fenêtres de niveau bureau par leur nom de classe et leur titre. Une fois que vous avez choisi une fenêtre de niveau bureau, vous pouvez développer ce niveau pour rechercher une fenêtre enfant spécifique.  
   
-### Pour rechercher une fenêtre dans la vue Fenêtres  
+### <a name="to-search-for-a-window-in-windows-view"></a>Pour rechercher une fenêtre dans la vue fenêtres  
   
-1.  Réorganisez vos fenêtres afin que Spy\+\+, la fenêtre [Vue Fenêtres](../debugger/windows-view.md) et la fenêtre cible soient visibles.  
+1.  Fenêtres ainsi que Spy ++, la [affichage Windows](../debugger/windows-view.md) fenêtre et la fenêtre cible sont visibles.  
   
-2.  Dans le menu **Rechercher**, choisissez **Rechercher une fenêtre**.  
+2.  À partir de la **recherche** menu, choisissez **rechercher une fenêtre**.  
   
-     La [boîte de dialogue Recherche d'une fenêtre](../debugger/window-search-dialog-box.md) s'ouvre.  
+     Le [boîte de dialogue de recherche de fenêtre](../debugger/window-search-dialog-box.md) s’ouvre.  
   
     > [!TIP]
-    >  Pour réduire l'encombrement de l'écran, activez la case à cocher **Masquer Spy\+\+**.  Cette option permet de dissimuler la fenêtre principale de Spy\+\+ et de laisser uniquement la boîte de dialogue **Recherche d'une fenêtre** visible au premier plan de vos applications.  La fenêtre principale de Spy\+\+ est restaurée lorsque vous cliquez sur **OK** ou **Annuler**, ou lorsque vous désactivez la case à cocher **Masquer Spy\+\+**.  
+    >  Pour réduire l’encombrement de l’écran, sélectionnez le **Masquer Spy ++** option. Cette option masque la fenêtre principale de Spy ++ et laisse uniquement le **recherche de fenêtre** boîte de dialogue visible au-dessus de vos autres applications. La fenêtre principale Spy ++ est restaurée lorsque vous cliquez sur **OK** ou **Annuler**, ou lorsque vous désactivez le **Masquer Spy ++** option.  
   
-3.  Faites glisser l'**outil Recherche** sur la fenêtre cible.  Lorsque vous faites glisser l'outil, la boîte de dialogue **Recherche d'une fenêtre** affiche des informations sur la fenêtre sélectionnée.  
+3.  Faites glisser le **outil recherche** sur la fenêtre cible. Lorsque vous faites glisser l’outil, le **recherche de fenêtre** boîte de dialogue affiche des informations sur la fenêtre sélectionnée.  
   
-     \- ou \-  
+     - ou  
   
-     Si vous connaissez le handle de la fenêtre souhaitée \(à partir du débogueur, par exemple\), vous pouvez le taper dans la zone **Handle**.  
+     Si vous connaissez le handle de la fenêtre de votre choix (par exemple, à partir du débogueur), vous pouvez la taper dans le **gérer** boîte.  
   
-     \- ou \-  
+     - ou  
   
-     Si vous connaissez le titre et\/ou la classe de la fenêtre souhaitée, vous pouvez taper les informations correspondantes dans les zones de texte **Légende** et **Classe**, et effacer le contenu de la zone de texte **Handle**.  
+     Si vous connaissez le titre et/ou la classe de la fenêtre que vous souhaitez, vous pouvez les taper dans la **légende** et **classe** zones de texte, puis désactivez la **gérer** zone de texte.  
   
-4.  Sélectionnez **Haut** ou **Bas** comme direction initiale de la recherche.  
+4.  Choisissez **des** ou **vers le bas** pour la direction initiale de la recherche.  
   
 5.  Cliquez sur **OK**.  
   
-     Si une fenêtre correspondante est trouvée, elle est mise en surbrillance dans la fenêtre [Vue Fenêtres](../debugger/windows-view.md).
+     Si une fenêtre correspondante est trouvée, il est mis en surbrillance dans le [affichage Windows](../debugger/windows-view.md) fenêtre.

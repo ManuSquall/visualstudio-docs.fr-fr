@@ -1,46 +1,29 @@
 ---
-title: IDebugCustomAttribute::GetAttributeTypeField | Microsoft Docs
+title: IDebugCustomAttribute::GetAttributeTypeField | Documents Microsoft
 ms.custom: 
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-sdk
+ms.technology: vs-ide-sdk
 ms.tgt_pltfrm: 
 ms.topic: article
-f1_keywords:
-- IDebugCustomAttribute::GetAttributeTypeField
-helpviewer_keywords:
-- IDebugCustomAttribute::GetAttributeTypeField
+f1_keywords: IDebugCustomAttribute::GetAttributeTypeField
+helpviewer_keywords: IDebugCustomAttribute::GetAttributeTypeField
 ms.assetid: d6ce26d5-42ba-44c1-8659-0516db5bc82d
-caps.latest.revision: 9
+caps.latest.revision: "9"
+author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-translation.priority.mt:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
+ms.openlocfilehash: fa26c30c89d5af317bd1b63848ac4ca71287d123
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
 ms.translationtype: MT
-ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
-ms.openlocfilehash: 274da63d909053843d401745cc501d298fc89f8e
-ms.contentlocale: fr-fr
-ms.lasthandoff: 08/28/2017
-
+ms.contentlocale: fr-FR
+ms.lasthandoff: 10/31/2017
 ---
 # <a name="idebugcustomattributegetattributetypefield"></a>IDebugCustomAttribute::GetAttributeTypeField
-Gets the custom attribute class type.  
+Obtient le type de classe d’attribut personnalisé.  
   
-## <a name="syntax"></a>Syntax  
+## <a name="syntax"></a>Syntaxe  
   
 ```cpp  
 HRESULT GetAttributeTypeField(   
@@ -54,16 +37,16 @@ int GetAttributeTypeField(
 );  
 ```  
   
-#### <a name="parameters"></a>Parameters  
+#### <a name="parameters"></a>Paramètres  
  `ppCAType`  
- [out] Returns the [IDebugClassField](../../../extensibility/debugger/reference/idebugclassfield.md) object that represents the class of which the custom attribute is an instance.  
+ [out] Retourne le [IDebugClassField](../../../extensibility/debugger/reference/idebugclassfield.md) objet qui représente la classe dont l’attribut personnalisé est une instance.  
   
-## <a name="return-value"></a>Return Value  
- If successful, returns S_OK; otherwise, returns an error code.  
+## <a name="return-value"></a>Valeur de retour  
+ En cas de réussite, retourne S_OK ; Sinon, retourne un code d’erreur.  
   
-## <a name="remarks"></a>Remarks  
- A custom attribute is always a class. This method provides access to an [IDebugClassField](../../../extensibility/debugger/reference/idebugclassfield.md) object that describes that class.  
+## <a name="remarks"></a>Remarques  
+ Un attribut personnalisé est toujours une classe. Cette méthode fournit l’accès à un [IDebugClassField](../../../extensibility/debugger/reference/idebugclassfield.md) objet qui décrit cette classe.  
   
-## <a name="see-also"></a>See Also  
+## <a name="see-also"></a>Voir aussi  
  [IDebugCustomAttribute](../../../extensibility/debugger/reference/idebugcustomattribute.md)   
  [IDebugClassField](../../../extensibility/debugger/reference/idebugclassfield.md)

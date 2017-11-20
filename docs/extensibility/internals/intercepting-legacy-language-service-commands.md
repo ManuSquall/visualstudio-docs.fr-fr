@@ -1,40 +1,42 @@
 ---
-title: "Interception des commandes de Service de langage h&#233;rit&#233; | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-helpviewer_keywords: 
-  - "commandes, l’interception de service de langage"
-  - "services de langage, l’interception de commandes"
+title: "Interception des commandes du Service de langage hérité | Documents Microsoft"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+helpviewer_keywords:
+- commands, intercepting language service
+- language services, intercepting commands
 ms.assetid: eea69f03-349c-44bb-bd4f-4925c0dc3e55
-caps.latest.revision: 13
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 13
+caps.latest.revision: "13"
+author: gregvanl
+ms.author: gregvanl
+manager: ghogen
+ms.openlocfilehash: 73524ce47dfea2d30e44e51e97bf584a95a86482
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: fr-FR
+ms.lasthandoff: 10/31/2017
 ---
-# Interception des commandes de Service de langage h&#233;rit&#233;
-[!INCLUDE[vs2017banner](../../code-quality/includes/vs2017banner.md)]
-
-Avec [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)], vous pouvez avoir des commandes d'interception de service de langage que l'affichage de texte ' sinon.  Cela est utile pour le comportement spécifique au langage que l'affichage de texte ne gère pas.  Vous pouvez désactiver ces commandes en ajoutant un ou plusieurs filtres de commande à l'affichage de texte de votre service de langage.  
+# <a name="intercepting-legacy-language-service-commands"></a>Interception des commandes du Service de langage hérité
+Avec [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)], vous pouvez avoir les commandes d’intercept de service de langage qui serait autrement en charge l’affichage de texte. Cela est utile pour le comportement spécifique au langage qui ne gère pas de l’affichage de texte. Vous pouvez intercepter ces commandes en ajoutant un ou plusieurs filtres de commande pour l’affichage de texte à partir de votre service de langage.  
   
-## Obtention et le routage la commande  
- un filtre de commande est un objet d' <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget> qui surveille certaines séquences de caractères ou commandes principales.  Vous pouvez associer plusieurs filtre de commande avec un affichage de texte.  Chaque affichage de texte contient des filtres d'une hiérarchie de commandes.  Après avoir créé un nouveau filtre de commande, vous ajoutez le filtre de la chaîne pour l'affichage de texte approprié.  
+## <a name="getting-and-routing-the-command"></a>Mise en route et le routage de la commande  
+ Un filtre de commande est un <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget> objet qui surveille certaines séquences de caractères ou les commandes de touches. Vous pouvez associer plusieurs filtres de commande à une vue de texte unique. Chaque vue de texte conserve une chaîne de commande de filtres. Après avoir créé un nouveau filtre de commande, vous ajoutez le filtre à la chaîne pour l’affichage de texte appropriée.  
   
- Appelez la méthode d' <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView.AddCommandFilter%2A> sur <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView> pour ajouter votre filtre de commande dans la chaîne.  Lorsque vous appelez l' <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView.AddCommandFilter%2A>, [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] retourne un autre filtre de commande dans laquelle vous pouvez passer des commandes que votre filtre de commande ne gère pas.  
+ Appelez le <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView.AddCommandFilter%2A> méthode sur le <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView> pour ajouter le filtre de commande à la chaîne. Lorsque vous appelez <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView.AddCommandFilter%2A>, [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] retourne un autre filtre de commande à laquelle vous pouvez passer les commandes qui ne gère pas de filtre de votre commande.  
   
- Vous disposez des options suivantes pour la gestion de commande :  
+ Vous disposez des options suivantes pour la gestion des commandes :  
   
--   Exécutez la commande puis transmettez la commande au filtre suivant de commande dans la chaîne.  
+-   Gérer la commande, puis passer la commande une session sur le filtre de la commande suivante dans la chaîne.  
   
--   Exécutez la commande et ne transmettez pas la commande au filtre suivant de commande.  
+-   Gérer la commande et ne passez pas de la commande une session sur le filtre de commande suivant.  
   
--   ne gérez pas la commande, mais transmettez la commande au filtre suivant de commande.  
+-   Ne gèrent pas la commande, mais passer la commande une session sur le filtre de commande suivant.  
   
--   ignorez la commande.  Le ne gérez pas dans le filtre actif, et ne le passez pas dans le filtre suivant.  
+-   Ignorer la commande. Ne les gèrent pas dans le filtre actuel et ne le passez pas une session sur le filtre suivant.  
   
- Pour plus d'informations sur les commandes votre service de langage doit gérer, consultez [Commandes importantes pour les filtres de Service de langage](../../extensibility/internals/important-commands-for-language-service-filters.md).
+ Pour plus d’informations sur les commandes qui doit gérer votre service de langage, consultez [commandes Important pour les filtres de Service de langage](../../extensibility/internals/important-commands-for-language-service-filters.md).

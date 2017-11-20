@@ -1,46 +1,29 @@
 ---
-title: METADATA_ADDRESS_RETVAL | Microsoft Docs
+title: METADATA_ADDRESS_RETVAL | Documents Microsoft
 ms.custom: 
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-sdk
+ms.technology: vs-ide-sdk
 ms.tgt_pltfrm: 
 ms.topic: article
-f1_keywords:
-- METADATA_ADDRESS_RETVAL
-helpviewer_keywords:
-- METADATA_ADDRESS_RETVAL structure
+f1_keywords: METADATA_ADDRESS_RETVAL
+helpviewer_keywords: METADATA_ADDRESS_RETVAL structure
 ms.assetid: 5b0ec0fb-84b3-4ce7-8e24-becf3d881d7d
-caps.latest.revision: 6
+caps.latest.revision: "6"
+author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-translation.priority.mt:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
+ms.openlocfilehash: 51db1e429e363a653ddde4948f7519e547f99a19
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
 ms.translationtype: MT
-ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
-ms.openlocfilehash: c7da8b57554d8d9dca3dd7973d1afc7e7205bfc0
-ms.contentlocale: fr-fr
-ms.lasthandoff: 08/28/2017
-
+ms.contentlocale: fr-FR
+ms.lasthandoff: 10/31/2017
 ---
 # <a name="metadataaddressretval"></a>METADATA_ADDRESS_RETVAL
-This structure represents a return value from a method or function.  
+Cette structure représente une valeur de retour à partir d’une méthode ou une fonction.  
   
-## <a name="syntax"></a>Syntax  
+## <a name="syntax"></a>Syntaxe  
   
 ```cpp  
 typedef struct _tagMETADATA_ADDRESS_RETVAL {  
@@ -60,30 +43,30 @@ public struct METADATA_ADDRESS_RETVAL {
 }  
 ```  
   
-## <a name="terms"></a>Terms  
+## <a name="terms"></a>Termes  
  tokMethod  
- The ID of the method this return value is for.  
+ ID de la méthode pour cette valeur de retour.  
   
  dwCorType  
- The base type of return value. This is a value from the `CorElementType` enumeration defined in the [!INCLUDE[dnprdnshort](../../../code-quality/includes/dnprdnshort_md.md)] SDK corhdr.h file.  
+ Le type de base de la valeur de retour. Il s’agit d’une valeur à partir de la `CorElementType` énumération définie dans le [!INCLUDE[dnprdnshort](../../../code-quality/includes/dnprdnshort_md.md)] fichier corhdr.h du SDK.  
   
  dwSigSize  
- The size of the return value signature (as stored in `rgSig`).  
+ La taille de la signature de la valeur de retour (tel que stocké dans `rgSig`).  
   
  rgSig  
- An array of bytes forming the signature of the return value.  
+ Un tableau d’octets qui forment la signature de la valeur de retour.  
   
-## <a name="remarks"></a>Remarks  
- This structure is part of the union in the [DEBUG_ADDRESS_UNION](../../../extensibility/debugger/reference/debug-address-union.md) structure when the `dwKind` field of the `DEBUG_ADDRESS_UNION` structure is set to `ADDRESS_KIND_RETVAL` (a value from the [ADDRESS_KIND](../../../extensibility/debugger/reference/address-kind.md) enumeration).  
+## <a name="remarks"></a>Remarques  
+ Cette structure est la partie de l’union dans la [DEBUG_ADDRESS_UNION](../../../extensibility/debugger/reference/debug-address-union.md) lors de la structure la `dwKind` champ le `DEBUG_ADDRESS_UNION` structure est définie sur `ADDRESS_KIND_RETVAL` (une valeur à partir de la [ADDRESS_KIND](../../../extensibility/debugger/reference/address-kind.md) énumération).  
   
-## <a name="requirements"></a>Requirements  
- Header: sh.h  
+## <a name="requirements"></a>Spécifications  
+ En-tête : sh.h  
   
- Namespace: Microsoft.VisualStudio.Debugger.Interop  
+ Namespace : Microsoft.VisualStudio.Debugger.Interop  
   
- Assembly: Microsoft.VisualStudio.Debugger.Interop.dll  
+ Assembly : Microsoft.VisualStudio.Debugger.Interop.dll  
   
-## <a name="see-also"></a>See Also  
- [Structures and Unions](../../../extensibility/debugger/reference/structures-and-unions.md)   
+## <a name="see-also"></a>Voir aussi  
+ [Structures et Unions](../../../extensibility/debugger/reference/structures-and-unions.md)   
  [DEBUG_ADDRESS_UNION](../../../extensibility/debugger/reference/debug-address-union.md)   
  [ADDRESS_KIND](../../../extensibility/debugger/reference/address-kind.md)

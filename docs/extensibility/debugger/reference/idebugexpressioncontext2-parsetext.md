@@ -1,46 +1,29 @@
 ---
-title: IDebugExpressionContext2::ParseText | Microsoft Docs
+title: IDebugExpressionContext2::ParseText | Documents Microsoft
 ms.custom: 
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-sdk
+ms.technology: vs-ide-sdk
 ms.tgt_pltfrm: 
 ms.topic: article
-f1_keywords:
-- IDebugExpressionContext2::ParseText
-helpviewer_keywords:
-- IDebugExpressionContext2::ParseText
+f1_keywords: IDebugExpressionContext2::ParseText
+helpviewer_keywords: IDebugExpressionContext2::ParseText
 ms.assetid: f58575db-f926-4ac8-83ff-7b3b86ab61e2
-caps.latest.revision: 11
+caps.latest.revision: "11"
+author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-translation.priority.mt:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
+ms.openlocfilehash: 4418dc3503f710701b50c37e0869a4b80c160a5f
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
 ms.translationtype: MT
-ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
-ms.openlocfilehash: 411e4ca8bab842361afa54705eae553845f14bfc
-ms.contentlocale: fr-fr
-ms.lasthandoff: 08/28/2017
-
+ms.contentlocale: fr-FR
+ms.lasthandoff: 10/31/2017
 ---
 # <a name="idebugexpressioncontext2parsetext"></a>IDebugExpressionContext2::ParseText
-Parses an expression in text form for later evaluation.  
+Analyse une expression sous forme de texte pour une évaluation ultérieure.  
   
-## <a name="syntax"></a>Syntax  
+## <a name="syntax"></a>Syntaxe  
   
 ```cpp  
 HRESULT ParseText(   
@@ -64,35 +47,35 @@ int ParseText(
 );  
 ```  
   
-#### <a name="parameters"></a>Parameters  
+#### <a name="parameters"></a>Paramètres  
  `pszCode`  
- [in] The expression to be parsed.  
+ [in] L’expression doit être analysé.  
   
  `dwFlags`  
- [in] A combination of flags from the [PARSEFLAGS](../../../extensibility/debugger/reference/parseflags.md) enumeration that controls parsing.  
+ [in] Une combinaison d’indicateurs à partir de la [PARSEFLAGS](../../../extensibility/debugger/reference/parseflags.md) énumération qui contrôle l’analyse.  
   
  `nRadix`  
- [in] The radix to be used in parsing any numerical information in `pszCode`.  
+ [in] La base à utiliser lors de l’analyse de toutes les informations numériques dans `pszCode`.  
   
  `ppExpr`  
- [out] Returns the [IDebugExpression2](../../../extensibility/debugger/reference/idebugexpression2.md) object that represents the parsed expression, which is ready for binding and evaluation.  
+ [out] Retourne le [IDebugExpression2](../../../extensibility/debugger/reference/idebugexpression2.md) objet qui représente l’expression analysée, qui est prête pour la liaison et d’évaluation.  
   
  `pbstrError`  
- [out] Returns the error message if the expression contains an error.  
+ [out] Retourne le message d’erreur si l’expression contient une erreur.  
   
  `pichError`  
- [out] Returns the character index of the error in `pszCode` if the expression contains an error.  
+ [out] Retourne l’index de caractère de l’erreur dans `pszCode` si l’expression contient une erreur.  
   
-## <a name="return-value"></a>Return Value  
- If successful, returns `S_OK`; otherwise, returns an error code.  
+## <a name="return-value"></a>Valeur de retour  
+ En cas de réussite, retourne `S_OK`; sinon, retourne un code d’erreur.  
   
-## <a name="remarks"></a>Remarks  
- When this method is called, a debug engine (DE) should parse the expression and validate it for correctness. The `pbstrError` and `pichError` parameters may be filled in if the expression is invalid.  
+## <a name="remarks"></a>Remarques  
+ Lorsque cette méthode est appelée, un moteur de débogage (DE) doit analyser l’expression et validez-le est correcte. Le `pbstrError` et `pichError` paramètres peuvent être renseignés si l’expression n’est pas valide.  
   
- Note that the expression is not evaluated, only parsed. A later call to the [EvaluateSync](../../../extensibility/debugger/reference/idebugexpression2-evaluatesync.md) or [EvaluateAsync](../../../extensibility/debugger/reference/idebugexpression2-evaluateasync.md) methods evaluates the parsed expression.  
+ Notez que l’expression n’est pas évaluée, uniquement analysée. Un appel ultérieur à la [EvaluateSync](../../../extensibility/debugger/reference/idebugexpression2-evaluatesync.md) ou [EvaluateAsync](../../../extensibility/debugger/reference/idebugexpression2-evaluateasync.md) méthodes évalue l’expression analysée.  
   
-## <a name="example"></a>Example  
- The following example shows how to implement this method for a simple `CEnvBlock` object that exposes the [IDebugExpressionContext2](../../../extensibility/debugger/reference/idebugexpressioncontext2.md) interface. This example considers the expression to be parsed as the name of an environment variable and retrieves the value from that variable.  
+## <a name="example"></a>Exemple  
+ L’exemple suivant montre comment implémenter cette méthode pour une simple `CEnvBlock` objet qui expose la [IDebugExpressionContext2](../../../extensibility/debugger/reference/idebugexpressioncontext2.md) interface. Cet exemple considère que l’expression à être analysée en tant que le nom d’une variable d’environnement et récupère la valeur de cette variable.  
   
 ```cpp  
 HRESULT CEnvBlock::ParseText(  
@@ -140,7 +123,7 @@ HRESULT CEnvBlock::ParseText(
 }    
 ```  
   
-## <a name="see-also"></a>See Also  
+## <a name="see-also"></a>Voir aussi  
  [IDebugExpressionContext2](../../../extensibility/debugger/reference/idebugexpressioncontext2.md)   
  [PARSEFLAGS](../../../extensibility/debugger/reference/parseflags.md)   
  [IDebugExpression2](../../../extensibility/debugger/reference/idebugexpression2.md)   

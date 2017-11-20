@@ -1,27 +1,30 @@
 ---
-title: "IActiveScriptDebug::EnumCodeContextsOfPosition | Microsoft Docs"
-ms.custom: ""
-ms.date: "01/18/2017"
-ms.prod: "windows-script-interfaces"
-ms.reviewer: ""
-ms.suite: ""
-ms.tgt_pltfrm: ""
-ms.topic: "reference"
+title: IActiveScriptDebug::EnumCodeContextsOfPosition | Documents Microsoft
+ms.custom: 
+ms.date: 01/18/2017
+ms.prod: windows-script-interfaces
+ms.reviewer: 
+ms.suite: 
+ms.tgt_pltfrm: 
+ms.topic: reference
 apiname: IActiveScriptDebug.EnumCodeContextsOfPosition
 apilocation: jscript.dll
-helpviewer_keywords: 
-  - "IActiveScriptDebug::EnumCodeContextsOfPosition"
+helpviewer_keywords: IActiveScriptDebug::EnumCodeContextsOfPosition
 ms.assetid: 19f44420-bcc8-4c10-8c38-378d96044117
-caps.latest.revision: 8
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 8
+caps.latest.revision: "8"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: 40fd8e2d19d3949ff26811956ae3d203871e5510
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.translationtype: MT
+ms.contentlocale: fr-FR
+ms.lasthandoff: 10/27/2017
 ---
-# IActiveScriptDebug::EnumCodeContextsOfPosition
-Utilisé par un hôte intelligent pour déléguer la méthode d' `IDebugDocumentContext::EnumCodeContexts`.  
+# <a name="iactivescriptdebugenumcodecontextsofposition"></a>IActiveScriptDebug::EnumCodeContextsOfPosition
+Utilisé par un hôte actif pour déléguer la `IDebugDocumentContext::EnumCodeContexts` (méthode).  
   
-## Syntaxe  
+## <a name="syntax"></a>Syntaxe  
   
 ```  
 HRESULT EnumCodeContextsOfPosition(  
@@ -32,29 +35,29 @@ HRESULT EnumCodeContextsOfPosition(
 );  
 ```  
   
-#### Paramètres  
+#### <a name="parameters"></a>Paramètres  
  `dwSourceContext`  
- \[in\]  Le contexte de source de la façon prévue à `IActiveScriptParse::ParseScriptText` ou à `IActiveScriptParse::AddScriptlet`.  
+ [in] Le contexte de la source à `IActiveScriptParse::ParseScriptText` ou `IActiveScriptParse::AddScriptlet`.  
   
  `uCharacterOffset`  
- \[in\]  Au début relatif d'offset de caractères de texte de script.  
+ [in] Un décalage relatif au début du texte de script de caractères.  
   
  `uNumChars`  
- \[in\]  Nombre de caractères dans ce contexte.  
+ [in] Nombre de caractères dans ce contexte.  
   
  `ppescc`  
- \[out\]  Un énumérateur des contextes de code dans la plage spécifiée.  
+ [out] Énumérateur des contextes de code dans la plage spécifiée.  
   
-## Valeur de retour  
- La méthode retourne `HRESULT`.  Les valeurs possibles incluent, mais ne sont pas limitées à, celles dans le tableau suivant.  
+## <a name="return-value"></a>Valeur de retour  
+ La méthode retourne `HRESULT`. Les valeurs possibles sont notamment celles figurant dans le tableau suivant.  
   
 |Valeur|Description|  
-|------------|-----------------|  
+|-----------|-----------------|  
 |`S_OK`|La méthode a réussi.|  
   
-## Notes  
- Les hôtes intelligents utilisez cette méthode pour déléguer la méthode d' `IDebugDocumentContext::EnumCodeContexts` .  
+## <a name="remarks"></a>Remarques  
+ Hôtes actifs permet de déléguer le `IDebugDocumentContext::EnumCodeContexts` (méthode).  
   
-## Voir aussi  
- [IActiveScriptDebug, interface](../../winscript/reference/iactivescriptdebug-interface.md)   
+## <a name="see-also"></a>Voir aussi  
+ [IActiveScriptDebug (Interface)](../../winscript/reference/iactivescriptdebug-interface.md)   
  [IDebugDocumentContext::EnumCodeContexts](../../winscript/reference/idebugdocumentcontext-enumcodecontexts.md)

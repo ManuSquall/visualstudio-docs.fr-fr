@@ -1,46 +1,45 @@
 ---
-title: "IDiaSymbol::get_virtualBaseOffset | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-debug"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "IDiaSymbol::get_virtualBaseOffset (méthode)"
+title: IDiaSymbol::get_virtualBaseOffset | Documents Microsoft
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-debug
+ms.tgt_pltfrm: 
+ms.topic: article
+dev_langs: C++
+helpviewer_keywords: IDiaSymbol::get_virtualBaseOffset method
 ms.assetid: 103b034f-36c4-42d5-aa34-1449a1e66d03
-caps.latest.revision: 8
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 8
+caps.latest.revision: "8"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: 555f61145edb944e71c6c457dab4a1ffbebfc232
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: fr-FR
+ms.lasthandoff: 10/31/2017
 ---
-# IDiaSymbol::get_virtualBaseOffset
-[!INCLUDE[vs2017banner](../../code-quality/includes/vs2017banner.md)]
-
-Récupère l'offset dans la table de fonctions virtuelles d'une fonction virtuelle.  
+# <a name="idiasymbolgetvirtualbaseoffset"></a>IDiaSymbol::get_virtualBaseOffset
+Récupère le décalage dans la table de fonctions virtuelles d’une fonction virtuelle.  
   
-## Syntaxe  
+## <a name="syntax"></a>Syntaxe  
   
-```cpp#  
-HRESULT get_virtualBaseOffset (   
-   DWORD* pRetVal  
+```C++  
+HRESULT get_virtualBaseOffset (   
+   DWORD* pRetVal  
 );  
 ```  
   
-#### Paramètres  
+#### <a name="parameters"></a>Paramètres  
  `pRetVal`  
- \[out\]  Retourne l'offset dans la table de fonctions virtuelles d'une fonction virtuelle.  
+ [out] Retourne le décalage dans la table de fonctions virtuelles d’une fonction virtuelle.  
   
-## Valeur de retour  
- En cas de réussite, retourne `S_OK`; sinon, retourne `S_FALSE` ou un code d'erreur.  
+## <a name="return-value"></a>Valeur de retour  
+ En cas de réussite, retourne `S_OK`; sinon, retourne `S_FALSE` ou un code d’erreur.  
   
 > [!NOTE]
->  Une valeur de retour d' `S_FALSE` signifie que la propriété n'est pas disponible pour le symbole.  
+>  La valeur de retour `S_FALSE` signifie que la propriété n’est pas disponible pour le symbole.  
   
-## Voir aussi  
+## <a name="see-also"></a>Voir aussi  
  [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

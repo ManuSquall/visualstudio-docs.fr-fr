@@ -1,46 +1,29 @@
 ---
-title: CONST_GUID_ARRAY | Microsoft Docs
+title: CONST_GUID_ARRAY | Documents Microsoft
 ms.custom: 
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-sdk
+ms.technology: vs-ide-sdk
 ms.tgt_pltfrm: 
 ms.topic: article
-f1_keywords:
-- CONST_GUID_ARRAY
-helpviewer_keywords:
-- CONST_GUID_ARRAY structure
+f1_keywords: CONST_GUID_ARRAY
+helpviewer_keywords: CONST_GUID_ARRAY structure
 ms.assetid: bd55e7d8-372c-4c3e-9eed-28f6b415a5db
-caps.latest.revision: 9
+caps.latest.revision: "9"
+author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-translation.priority.mt:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
+ms.openlocfilehash: b290619badbea8e087bf879880db952d74b5af34
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
 ms.translationtype: MT
-ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
-ms.openlocfilehash: 34d3a4569e9e236ee28d1829572d84d7b382fcfb
-ms.contentlocale: fr-fr
-ms.lasthandoff: 08/28/2017
-
+ms.contentlocale: fr-FR
+ms.lasthandoff: 10/31/2017
 ---
 # <a name="constguidarray"></a>CONST_GUID_ARRAY
-A structure that holds a list of `GUID`s.  
+Une structure qui contient une liste de `GUID`s.  
   
-## <a name="syntax"></a>Syntax  
+## <a name="syntax"></a>Syntaxe  
   
 ```cpp  
 typedef struct tagCONST_GUID_ARRAY {  
@@ -56,27 +39,27 @@ public struct CONST_GUID_ARRAY {
 }  
 ```  
   
-## <a name="members"></a>Members  
+## <a name="members"></a>Membres  
  dwCount  
- Number of `GUID`s in the `Members` array.  
+ Nombre de `GUID`s dans le `Members` tableau.  
   
- Members  
- Array of `GUID`s.  
+ Membres  
+ Tableau de `GUID`s.  
   
-## <a name="remarks"></a>Remarks  
- This structure is passed to the [PublishProgram](../../../extensibility/debugger/reference/idebugprogrampublisher2-publishprogram.md) method, and is returned from the [GetProviderProcessData](../../../extensibility/debugger/reference/idebugprogramprovider2-getproviderprocessdata.md) and [WatchForProviderEvents](../../../extensibility/debugger/reference/idebugprogramprovider2-watchforproviderevents.md) methods.  
+## <a name="remarks"></a>Remarques  
+ Cette structure est passée à la [PublishProgram](../../../extensibility/debugger/reference/idebugprogrampublisher2-publishprogram.md) (méthode) et est retournée à partir de la [GetProviderProcessData](../../../extensibility/debugger/reference/idebugprogramprovider2-getproviderprocessdata.md) et [WatchForProviderEvents](../../../extensibility/debugger/reference/idebugprogramprovider2-watchforproviderevents.md) méthodes.  
   
- The owner of an instance of this structure is responsible for freeing any memory allocated.  
+ Le propriétaire d’une instance de cette structure est responsable de la libération de mémoire allouée.  
   
-## <a name="requirements"></a>Requirements  
- Header: msdbg.h  
+## <a name="requirements"></a>Spécifications  
+ En-tête : msdbg.h  
   
- Namespace: Microsoft.VisualStudio.Debugger.Interop  
+ Namespace : Microsoft.VisualStudio.Debugger.Interop  
   
- Assembly: Microsoft.VisualStudio.Debugger.Interop.dll  
+ Assembly : Microsoft.VisualStudio.Debugger.Interop.dll  
   
-## <a name="see-also"></a>See Also  
- [Structures and Unions](../../../extensibility/debugger/reference/structures-and-unions.md)   
+## <a name="see-also"></a>Voir aussi  
+ [Structures et Unions](../../../extensibility/debugger/reference/structures-and-unions.md)   
  [PublishProgram](../../../extensibility/debugger/reference/idebugprogrampublisher2-publishprogram.md)   
  [GetProviderProcessData](../../../extensibility/debugger/reference/idebugprogramprovider2-getproviderprocessdata.md)   
  [WatchForProviderEvents](../../../extensibility/debugger/reference/idebugprogramprovider2-watchforproviderevents.md)

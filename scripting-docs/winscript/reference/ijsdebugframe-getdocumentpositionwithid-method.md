@@ -1,25 +1,29 @@
 ---
-title: "IJsDebugFrame::GetDocumentPositionWithId, m&#233;thode | Microsoft Docs"
-ms.custom: ""
-ms.date: "01/18/2017"
-ms.prod: "windows-script-interfaces"
-ms.reviewer: ""
-ms.suite: ""
-ms.tgt_pltfrm: ""
-ms.topic: "reference"
+title: "Ijsdebugframe::getdocumentpositionwithid, méthode | Documents Microsoft"
+ms.custom: 
+ms.date: 01/18/2017
+ms.prod: windows-script-interfaces
+ms.reviewer: 
+ms.suite: 
+ms.tgt_pltfrm: 
+ms.topic: reference
 apiname: IJsDebugFrame.GetDocumentPositionWithId
 apilocation: jscript9diag.dll
 ms.assetid: 48f8eb26-8ae4-4d5c-bd94-796023b03bcb
-caps.latest.revision: 4
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 4
+caps.latest.revision: "4"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: f11e9ad51094522adec99ef82681f42ac500a251
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.translationtype: MT
+ms.contentlocale: fr-FR
+ms.lasthandoff: 10/27/2017
 ---
-# IJsDebugFrame::GetDocumentPositionWithId, m&#233;thode
-Retourne la position actuelle de ce frame de pile dans le document de niveau utilisateur.  
+# <a name="ijsdebugframegetdocumentpositionwithid-method"></a>IJsDebugFrame::GetDocumentPositionWithId, méthode
+Retourne la position actuelle de ce frame de pile dans le document au niveau de l’utilisateur.  
   
-## Syntaxe  
+## <a name="syntax"></a>Syntaxe  
   
 ```  
 HRESULT GetDocumentPositionWithId(  
@@ -29,20 +33,20 @@ HRESULT GetDocumentPositionWithId(
 );  
 ```  
   
-#### Paramètres  
+#### <a name="parameters"></a>Paramètres  
  `pDocumentId`  
- \[out\] Identificateur unique d'un document source \(pointeur vers IDebugDocumentText\).  
+ [out] ID unique d’un document source (pointeur vers le IDebugDocumentText).  
   
  `pCharacterOffset`  
- \[out\] Décalage de caractère de base zéro depuis le début du script.  
+ [out] L’offset de base zéro du caractère à partir du début du script.  
   
  `pStatementCharCount`  
- \[out\] Longueur de l'instruction actuelle, qui commence à \*pCharacterOffset, en caractères.  
+ [out] La longueur de l’instruction actuelle, qui commence à * pCharacterOffset, en caractères.  
   
-## Valeur de retour  
+## <a name="return-value"></a>Valeur de retour  
   
-## Configuration requise  
- **En\-tête :** jscript9diag.h  
+## <a name="requirements"></a>Spécifications  
+ **En-tête :** jscript9diag.h  
   
-## Voir aussi  
- [IJsDebugFrame, interface](../../winscript/reference/ijsdebugframe-interface.md)
+## <a name="see-also"></a>Voir aussi  
+ [Interface IJsDebugFrame](../../winscript/reference/ijsdebugframe-interface.md)

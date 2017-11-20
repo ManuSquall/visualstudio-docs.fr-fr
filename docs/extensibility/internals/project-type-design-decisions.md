@@ -1,67 +1,69 @@
 ---
-title: "D&#233;cisions de conception de Type de projet | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-helpviewer_keywords: 
-  - "types de projets, persistance d'un fichier projet"
-  - "types de projets, les mécanismes d'engagement"
-  - "types de projets, des éléments"
-  - "types de projets, les décisions de conception"
+title: "Les décisions de conception de Type de projet | Documents Microsoft"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+helpviewer_keywords:
+- project types, project file persistence
+- project types, commitment mechanics
+- project types, items
+- project types, design decisions
 ms.assetid: f68671fe-fd7a-4e56-a0b5-330b0f1fedb1
-caps.latest.revision: 10
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 10
+caps.latest.revision: "10"
+author: gregvanl
+ms.author: gregvanl
+manager: ghogen
+ms.openlocfilehash: a3e0216161669e12c245484da3ca6e4de63c6a48
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: fr-FR
+ms.lasthandoff: 10/31/2017
 ---
-# D&#233;cisions de conception de Type de projet
-[!INCLUDE[vs2017banner](../../code-quality/includes/vs2017banner.md)]
-
-Avant de créer un nouveau type de projet, vous devez prendre plusieurs décisions de conception concernant votre type de projet.  Vous devez choisir les types d'éléments vos projets intègrent, comment les fichiers projet sont rendus persistants, et les modèle d'engagement vous utiliserez.  
+# <a name="project-type-design-decisions"></a>Décisions de conception de Type de projet
+Avant de créer un nouveau type de projet, vous devez prendre des décisions de conception plusieurs concernant votre type de projet. Vous devez décider quels types d’éléments de vos projets, mode de conservation des fichiers projet et quel modèle d’engagement que vous allez utiliser.  
   
-## éléments de projet  
- votre projet utilisera\-il des fichiers ou des objets abstraits ?  si vous utilisez des fichiers, référence\-seront\-ils basés ou les fichiers basés sur des répertoires ?  les fichiers ou les objets abstraits vont\-ils être locaux ou distants ?  
+## <a name="project-items"></a>Éléments de projet  
+ Votre projet utilise les fichiers ou objets abstraits ? Si vous utilisez des fichiers, sera-t-il fichiers basée sur le répertoire ou référence ? Sont des fichiers ou des objets abstraits avenir soit local ou distant ?  
   
- Les éléments d'un projet peuvent être des fichiers, ou peuvent être des objets plus abstraits tels que des objets dans une base de données de référentiel ou des connexions de données via Internet.  Si les éléments sont des fichiers, le projet peut être un projet référence\-basé ou basée sur des répertoires.  
+ Les éléments d’un projet peuvent être des fichiers, ou ils peuvent être plus abstraites tels que les objets dans une connexion de données ou le référentiel de base de données sur Internet. Si les éléments sont des fichiers, le projet peut être basée sur une référence ou un projet basé sur le répertoire.  
   
- Dans les projets fondés sur, les éléments peuvent apparaître dans plusieurs projets.  Toutefois, le fichier réel qu'un élément représente est situé dans un répertoire uniquement.  Dans les projets basés sur des répertoires, tous les éléments de projet existent dans la structure de répertoires.  Pour plus d'informations, consultez [NIB:Item Management in Projects](http://msdn.microsoft.com/fr-fr/762e606b-7f44-4b66-97a1-e30a703654a0).  
+ Dans les projets de base de référence, les éléments peuvent apparaître dans plusieurs projets. Toutefois, le fichier réel représentant un élément se trouve dans un répertoire uniquement. Dans les projets basée sur Active, tous les éléments de projet existent dans la structure de répertoires. Pour plus d’informations, consultez [NIB : gestion des éléments dans les projets](http://msdn.microsoft.com/en-us/762e606b-7f44-4b66-97a1-e30a703654a0).  
   
- Les éléments locaux sont stockés sur le même ordinateur où l'application.  Les éléments distants peuvent être stockés sur un serveur distinct dans un réseau local, ou ailleurs sur Internet.  
+ Les éléments locaux sont stockés sur le même ordinateur que celui où l’application est installée. Les éléments à distance peuvent être stockées sur un serveur distinct dans un réseau local, ou un autre emplacement sur Internet.  
   
-## persistance de fichier projet  
- Est\-ce\-que les données seront enregistrées dans les systèmes de fichiers plat communs, ou dans le stockage structuré ?  Est\-ce\-que les fichiers seront ouverts à l'aide d'un éditeur standard, ou d'un éditeur spécifique au projet ?  
+## <a name="project-file-persistence"></a>Persistance d’un fichier projet  
+ Données être stockées dans des systèmes de fichiers plats courants, ou dans le stockage structuré ? Fichiers seront être ouvert à l’aide d’un éditeur standard ou un éditeur spécifique au projet ?  
   
- Pour rendre leurs données, la plupart des applications enregistrent leurs données dans un fichier, puis y lire en arrière lorsqu'un utilisateur doit examiner ou modifier les informations.  
+ Pour conserver leurs données, la plupart des applications enregistrent leurs données dans un fichier et puis de le lire lorsqu’un utilisateur doit examiner ou modifier les informations.  
   
- Le stockage structuré, également appelés fichiers composés, est couramment utilisé lorsque plusieurs objets \(COM\) de modèle COM doivent enregistrer leurs données persistantes dans un fichier unique.  Grâce à le stockage structuré, plusieurs composants logiciels peuvent partager un fichier sur disque unique.  
+ Stockage structuré, également appelé fichiers composés, est généralement utilisé lorsque vous avez besoin de plusieurs objets de modèle COM (Component Object) stocker leurs données persistantes dans un seul fichier. Avec un stockage structuré, plusieurs composants logiciels différents peuvent partager un fichier de disque unique.  
   
- Vous disposez de plusieurs options d'envisager de considérer la persistance des éléments contenus dans votre projet.  Vous pouvez effectuer l'une des options suivantes :  
+ Vous avez plusieurs options en matière de persistance pour les éléments dans votre projet. Vous pouvez effectuer l’une des options suivantes :  
   
--   Enregistrez chaque fichier individuellement lorsqu'il a été modifié.  
+-   Enregistrez chaque fichier individuellement lorsqu’il a été modifié.  
   
--   Capturez plusieurs transactions dans une seule opération d' **Enregistrer** .  
+-   Capturer le nombre de transactions dans un seul **enregistrer** opération.  
   
--   Enregistrez les fichiers localement, puis publier sur un serveur ou utilisent une autre approche pour stocker des éléments de projet lorsque l'élément représente une connexion de données à un objet distant.  
+-   Enregistrer les fichiers localement, puis publier sur un serveur ou utiliser une autre approche de l’enregistrement d’éléments de projet lorsque l’élément représente une connexion de données à un objet distant.  
   
- Pour plus d'informations sur la persistance, consultez [Persistance d'un projet](../../extensibility/internals/project-persistence.md) et l' [Ouvrir et enregistrer des éléments de projet](../../extensibility/internals/opening-and-saving-project-items.md).  
+ Pour plus d’informations sur la persistance, consultez [persistance d’un projet](../../extensibility/internals/project-persistence.md) et [d’ouverture et de l’enregistrement des éléments de projet](../../extensibility/internals/opening-and-saving-project-items.md).  
   
-## Modèle de l'engagement de projet  
- Est\-ce\-que les objets de données persistantes seront ouverts en mode direct ou le mode traité ?  
+## <a name="project-commitment-model"></a>Modèle de projet d’engagement  
+ Objets de données persistantes ouvrira en mode direct ou en mode transactionnel ?  
   
- Lorsque les objets de données sont ouverts en mode direct, les modifications apportées aux données sont incorporées immédiatement ou lorsque l'utilisateur enregistre manuellement le fichier.  
+ Lorsque des objets de données sont ouverts en mode direct, les modifications qui ont été apportées aux données sont incorporées immédiatement ou lorsque l’utilisateur enregistre manuellement le fichier.  
   
- Lorsque les objets de données sont ouverts à l'aide de le mode traité, les modifications sont stockés dans un emplacement temporaire de la mémoire et ne sont pas validés tant que l'utilisateur a choisi manuellement pour enregistrer le fichier.  à ce moment\-là, toutes les modifications doivent se produire ensemble ou aucune modification ne sera apportée.  
+ Lorsque des objets de données sont ouverte à l’aide du mode de traitement, les modifications sont enregistrées dans un emplacement temporaire en mémoire et ne sont pas validées jusqu'à ce que l’utilisateur choisit manuellement enregistrer le fichier. À ce stade, toutes les modifications doivent se produire simultanément ou aucune modification ne sera apportée.  
   
-## Voir aussi  
+## <a name="see-also"></a>Voir aussi  
  [Liste de vérification : Créer de nouveaux Types de projet](../../extensibility/internals/checklist-creating-new-project-types.md)   
- [NIB:Item Management in Projects](http://msdn.microsoft.com/fr-fr/762e606b-7f44-4b66-97a1-e30a703654a0)   
+ [NIB : gestion des éléments dans les projets](http://msdn.microsoft.com/en-us/762e606b-7f44-4b66-97a1-e30a703654a0)   
  [Ouvrir et enregistrer des éléments de projet](../../extensibility/internals/opening-and-saving-project-items.md)   
- [Persistance d'un projet](../../extensibility/internals/project-persistence.md)   
- [Éléments d'un modèle de projet](../../extensibility/internals/elements-of-a-project-model.md)   
+ [Persistance d’un projet](../../extensibility/internals/project-persistence.md)   
+ [Éléments d’un modèle de projet](../../extensibility/internals/elements-of-a-project-model.md)   
  [Composants de modèle de projet](../../extensibility/internals/project-model-core-components.md)   
- [Création de Types de projets](../../extensibility/internals/creating-project-types.md)
+ [Création de types de projets](../../extensibility/internals/creating-project-types.md)

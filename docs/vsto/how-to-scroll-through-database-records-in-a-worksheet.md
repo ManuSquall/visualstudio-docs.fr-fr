@@ -1,51 +1,53 @@
 ---
-title: "Comment&#160;: parcourir les enregistrements de base de donn&#233;es dans une feuille de calcul"
-ms.custom: ""
-ms.date: "02/02/2017"
-ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "office-development"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-dev_langs: 
-  - "VB"
-  - "CSharp"
-helpviewer_keywords: 
-  - "données (développement Office dans Visual Studio), faire défiler les enregistrements de base de données"
-  - "bases de données (développement Office dans Visual Studio), faire défiler des enregistrements"
-  - "enregistrements (développement Office dans Visual Studio), défilement"
-  - "feuilles de calcul (développement Office dans Visual Studio), faire défiler des enregistrements"
+title: "Comment : faire défiler des enregistrements de base de données dans une feuille de calcul | Documents Microsoft"
+ms.custom: 
+ms.date: 02/02/2017
+ms.reviewer: 
+ms.suite: 
+ms.technology: office-development
+ms.tgt_pltfrm: 
+ms.topic: article
+dev_langs:
+- VB
+- CSharp
+helpviewer_keywords:
+- databases [Office development in Visual Studio], scrolling records
+- records [Office development in Visual Studio], scrolling
+- data [Office development in Visual Studio], scrolling database records
+- worksheets [Office development in Visual Studio], scrolling records
 ms.assetid: aea4c86c-9d6d-47dd-8977-066e21945dab
-caps.latest.revision: 33
-author: "kempb"
-ms.author: "kempb"
-manager: "ghogen"
-caps.handback.revision: 32
+caps.latest.revision: "33"
+author: gewarren
+ms.author: gewarren
+manager: ghogen
+ms.openlocfilehash: 78ccd24a262863a4d6f844d624ef9996d09d568f
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: fr-FR
+ms.lasthandoff: 10/31/2017
 ---
-# Comment&#160;: parcourir les enregistrements de base de donn&#233;es dans une feuille de calcul
-  Cette procédure explique comment utiliser le concepteur pour afficher un champ à partir d'une table de base de données dans une feuille de calcul Microsoft Office Excel, avec des contrôles qui permettent à l'utilisateur final de faire défiler tous les enregistrements.  
+# <a name="how-to-scroll-through-database-records-in-a-worksheet"></a>Comment : parcourir les enregistrements de base de données dans une feuille de calcul
+  La procédure suivante montre comment utiliser le concepteur pour afficher un champ d’une table de base de données dans une feuille de calcul Microsoft Office Excel, avec des contrôles qui permettent aux utilisateurs finaux de faire défiler tous les enregistrements.  
   
- Vous ne pouvez utiliser le concepteur que dans des projets au niveau du document.  Toutefois, vous pouvez également ajouter des contrôles et les lier aux données par programmation au moment de l'exécution.  Pour plus d’informations, consultez [Procédure pas à pas : liaison de données simple dans un projet de complément VSTO](../vsto/walkthrough-simple-data-binding-in-vsto-add-in-project.md).  
+ Vous pouvez utiliser le concepteur uniquement dans les projets au niveau du document. Toutefois, vous pouvez également ajouter des contrôles et les lier aux données par programme en cours d’exécution. Pour plus d’informations, consultez [procédure pas à pas : liaison de données Simple dans VSTO complément Project](../vsto/walkthrough-simple-data-binding-in-vsto-add-in-project.md).  
   
  [!INCLUDE[appliesto_xlalldoc](../vsto/includes/appliesto-xlalldoc-md.md)]  
   
-### Pour faire défiler des enregistrements de base de données dans une feuille de calcul  
+### <a name="to-scroll-through-database-records-in-a-worksheet"></a>Faire défiler des enregistrements de base de données dans une feuille de calcul  
   
-1.  Ouvrez un projet d'application Excel dans Visual Studio.  
+1.  Ouvrez un projet d’application Excel dans Visual Studio.  
   
-2.  Ouvrez la fenêtre **Sources de données** et créez une source de données à partir de la base de données.  Pour plus d’informations, consultez [Comment : établir une connexion à des données d'une base de données](~/data-tools/how-to-connect-to-data-in-a-database.md).  
+2.  Ouvrez le **des Sources de données** fenêtre et créer une source de données à partir de la base de données. Pour plus d’informations, consultez [ajouter de nouvelles connexions](../data-tools/add-new-connections.md).  
   
-3.  Développez la table qui contient les données à afficher et sélectionnez la colonne spécifique.  
+3.  Développez la table qui contient les données que vous souhaitez afficher et sélectionnez la colonne spécifique.  
   
 4.  Ouvrez la liste de contrôles et sélectionnez **NamedRange**.  
   
-5.  Faites glisser le contrôle <xref:Microsoft.Office.Tools.Excel.NamedRange> sur la cellule où vous souhaitez que les données apparaissent.  
+5.  Faites glisser le <xref:Microsoft.Office.Tools.Excel.NamedRange> contrôle vers la cellule où vous souhaitez afficher les données.  
   
-6.  À partir de l'onglet **Windows Forms** de la **Boîte à outils**, ajoutez un contrôle <xref:System.Windows.Forms.BindingNavigator> à votre feuille de calcul et configurez les contrôles que vous souhaitez utiliser.  Pour plus d’informations, consultez [Vue d'ensemble du contrôle BindingNavigator &#40;Windows Forms&#41;](http://msdn.microsoft.com/library/4423eede-f8d1-4d02-822f-5bf8432680d0).  
+6.  À partir de la **Windows Forms** onglet de la **boîte à outils**, ajoutez un <xref:System.Windows.Forms.BindingNavigator> le contrôle à votre feuille de calcul et configurez les contrôles que vous souhaitez utiliser. Pour plus d’informations, consultez [vue d’ensemble du contrôle BindingNavigator &#40; Windows Forms &#41; ](/dotnet/framework/winforms/controls/bindingnavigator-control-overview-windows-forms).  
   
-## Voir aussi  
+## <a name="see-also"></a>Voir aussi  
  [Liaison de données aux contrôles dans les solutions Office](../vsto/binding-data-to-controls-in-office-solutions.md)  
   
   

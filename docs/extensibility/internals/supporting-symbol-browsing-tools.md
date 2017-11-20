@@ -1,55 +1,57 @@
 ---
-title: "Prise en charge d&#39;outils de consultation du symbole | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-helpviewer_keywords: 
-  - "symboles, outils de consultation du symbole"
-  - "navigateurs, les navigateurs de symbole"
-  - "outils de consultation du symbole"
-  - "bibliothèques"
-  - "Interface IVsLibrary2, outils de consultation du symbole"
-  - "Interface IVsSimpleLibrary2, outils de consultation du symbole"
-  - "outils de consultation du symbole, le Gestionnaire de bibliothèque"
-  - "symboles"
-  - "bibliothèques, outils de consultation du symbole"
+title: Prise en charge des outils de consultation du symbole | Documents Microsoft
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+helpviewer_keywords:
+- symbols, symbol-browsing tools
+- browsers, symbol browsers
+- symbol-browsing tools
+- libraries
+- IVsLibrary2 interface, symbol-browsing tools
+- IVsSimpleLibrary2 interface, symbol-browsing tools
+- symbol-browsing tools, library manager
+- symbols
+- libraries, symbol-browsing tools
 ms.assetid: 70d8c9e5-4b0b-4a69-b3b3-90f36debe880
-caps.latest.revision: 26
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 26
+caps.latest.revision: "26"
+author: gregvanl
+ms.author: gregvanl
+manager: ghogen
+ms.openlocfilehash: 9b9e9963b43e6ca2049337fdfdf76b0a1314ae32
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: fr-FR
+ms.lasthandoff: 10/31/2017
 ---
-# Prise en charge d&#39;outils de consultation du symbole
-[!INCLUDE[vs2017banner](../../code-quality/includes/vs2017banner.md)]
-
-Les outils d'**Explorateur d'objets**, d' **Affichage de classes**, d' **Explorateur d'appels** et de **Résultats de la recherche de symbole** fournissent des fonctionnalités de navigation de symbole dans Visual Studio.  Ces outils affichent des arborescences hiérarchiques des symboles et affichent les relations entre les symboles dans l'arborescence.  Les symboles peuvent représenter des espaces de noms, des objets, des classes, des membres de la classe, et d'autres éléments de langage contenus dans différents composants.  Les composants incluent les projets Visual Studio, les composants externes de [!INCLUDE[dnprdnshort](../../code-quality/includes/dnprdnshort_md.md)] et des bibliothèques de types \(.tlb\).  Pour plus d'informations, consultez [Affichage de la structure du code](../../ide/viewing-the-structure-of-code.md).  
+# <a name="supporting-symbol-browsing-tools"></a>Prise en charge des outils de consultation du symbole
+**Explorateur d’objets**, **affichage de classes**, **Explorateur d’appels** et **résultats** outils fournissent des fonctionnalités dans Visual Studio de navigation de symbole. Ces outils affichent des vues de l’arborescence hiérarchique des symboles et les relations entre les symboles dans l’arborescence de. Les symboles peuvent représenter des espaces de noms, des objets, des classes, des membres de classe et des autres éléments de langage contenus dans les différents composants. Les composants incluent les projets Visual Studio, externes [!INCLUDE[dnprdnshort](../../code-quality/includes/dnprdnshort_md.md)] composants et bibliothèques de types (.tlb). Pour plus d’informations, consultez [Affichage de la structure du code](../../ide/viewing-the-structure-of-code.md).  
   
-## bibliothèques de Symbole\-Navigation  
- En tant qu'implémenteur de langage, vous pouvez étendre les fonctions de symbole\-navigation Visual Studio en créant des bibliothèques qui suivent les symboles dans les composants et fournissent des listes de symboles dans le gestionnaire d'objets de Visual Studio via un jeu d'interfaces.  Une bibliothèque est représentée par l'interface d' <xref:Microsoft.VisualStudio.Shell.Interop.IVsSimpleLibrary2> .  Le gestionnaire d'objets Visual Studio répond aux demandes de nouvelles données des outils de symbole\-navigation en obtenant les données des bibliothèques et en les organisant.  Il ensuite remplit ou met à jour outils avec les données demandées.  Pour obtenir une référence au gestionnaire d'objets de Visual Studio, <xref:Microsoft.VisualStudio.Shell.Interop.IVsObjectManager2>, passez l'ID de service d' <xref:Microsoft.VisualStudio.Shell.Interop.SVsObjectManager> à la méthode d' `GetService` .  
+## <a name="symbol-browsing-libraries"></a>Consultation du symbole de bibliothèques  
+ En tant qu’un implémenteur de langue, vous pouvez étendre les fonctionnalités de consultation du symbole de Visual Studio en créant des bibliothèques de suivi les symboles dans vos composants et de fournissent la liste des symboles pour le Gestionnaire d’objets de Visual Studio via un ensemble d’interfaces. Une bibliothèque est décrite par la <xref:Microsoft.VisualStudio.Shell.Interop.IVsSimpleLibrary2> interface. Le Gestionnaire d’objets Visual Studio répond aux demandes pour les nouvelles données à partir des outils de consultation du symbole par l’obtention des données à partir des bibliothèques et d’organisation. Par la suite, il remplit ou met à jour les outils avec les données demandées. Pour obtenir une référence pour le Gestionnaire d’objets de Visual Studio, <xref:Microsoft.VisualStudio.Shell.Interop.IVsObjectManager2>, passez le <xref:Microsoft.VisualStudio.Shell.Interop.SVsObjectManager> service ID à le `GetService` (méthode).  
   
- Chaque bibliothèque doit s'inscrire le gestionnaire d'objets Visual Studio, qui collecte les informations sur toutes les bibliothèques.  Pour inscrire une bibliothèque, appelez la méthode d' <xref:Microsoft.VisualStudio.Shell.Interop.IVsObjectManager2.RegisterSimpleLibrary%2A> .  Selon l'outil initialise la demande, le gestionnaire d'objets Visual Studio recherche la bibliothèque appropriée et demande de données.  L'itinéraire de données entre les bibliothèques et le gestionnaire d'objets de [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]dans les listes de symboles décrits par <xref:Microsoft.VisualStudio.Shell.Interop.IVsSimpleObjectList2> interface.  
+ Chaque bibliothèque doit inscrire avec le Gestionnaire d’objets de Visual Studio, qui collecte les informations sur toutes les bibliothèques. Pour inscrire une bibliothèque, appelez le <xref:Microsoft.VisualStudio.Shell.Interop.IVsObjectManager2.RegisterSimpleLibrary%2A> (méthode). En fonction de l’outil lance la demande, le Gestionnaire d’objets Visual Studio recherche la bibliothèque appropriée et demande des données. Les données circulent entre les bibliothèques et les [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] Gestionnaire d’objets dans les listes de symboles décrites par la <xref:Microsoft.VisualStudio.Shell.Interop.IVsSimpleObjectList2> interface.  
   
- Le gestionnaire d'objets de [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]est chargé d'actualiser régulièrement des outils de symbole\-navigation pour refléter les données les plus récentes contenues dans les bibliothèques.  
+ Le [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] Gestionnaire d’objets est responsable de l’actualiser périodiquement les outils de consultation du symbole pour refléter les données les plus récentes contenues dans les bibliothèques.  
   
- Le diagramme ci\-dessous contient un exemple des éléments clés des requêtes par le processus d'échange de données entre une bibliothèque et le gestionnaire d'objets de Visual Studio.  les interfaces dans le diagramme font partie d'une application de code managé.  
+ Le diagramme suivant contient un exemple des éléments clés du processus exchange demande/des données entre une bibliothèque et le Gestionnaire d’objets de Visual Studio. Les interfaces dans le diagramme font partie d’une application de code managé.  
   
- ![Flux de données entre une bibliothèque et le gestionnaire d'objets](~/extensibility/internals/media/callbrowserdiagram.gif "CallBrowserDiagram")  
+ ![Flux de données entre une bibliothèque et le Gestionnaire d’objets](../../extensibility/internals/media/callbrowserdiagram.gif "CallBrowserDiagram")  
   
- Pour fournir les listes de symboles dans le gestionnaire d'objets de Visual Studio, vous devez d'abord enregistrer la bibliothèque avec le gestionnaire d'objets Visual Studio en appelant la méthode d' <xref:Microsoft.VisualStudio.Shell.Interop.IVsObjectManager2.RegisterSimpleLibrary%2A> .  Une fois la bibliothèque peut être enregistrée, le gestionnaire d'objets Visual Studio demande certaines informations sur les fonctions de la bibliothèque.  Par exemple, il demande des balises de bibliothèque et les catégories prend en charge en appelant les méthodes d' <xref:Microsoft.VisualStudio.Shell.Interop.IVsSimpleLibrary2.GetLibFlags2%2A> et d' <xref:Microsoft.VisualStudio.Shell.Interop.IVsSimpleLibrary2.GetSupportedCategoryFields2%2A> .  À un moment donné, lorsque l'un des outils demande de données de cette bibliothèque, le gestionnaire d'objets demande la liste de niveau supérieur de symboles en appelant la méthode d' <xref:Microsoft.VisualStudio.Shell.Interop.IVsSimpleLibrary2.GetList2%2A> .  En réponse, la bibliothèque fabrique une liste de symboles et l'expose au gestionnaire d'objets de Visual Studio via l'interface d' <xref:Microsoft.VisualStudio.Shell.Interop.IVsSimpleObjectList2> .  Le gestionnaire d'objets de [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]détermine le nombre d'éléments sont dans la liste en appelant la méthode d' <xref:Microsoft.VisualStudio.Shell.Interop.IVsSimpleObjectList2.GetItemCount%2A> .  Toutes les demandes suivantes mettent en relation avec un élément donné dans la liste et fournissent l'index d'élément dans chaque demande.  Le gestionnaire d'objets Visual Studio continue à collecter des informations sur le type, l'accessibilité, et d'autres propriétés de l'élément en appelant la méthode d' <xref:Microsoft.VisualStudio.Shell.Interop.IVsSimpleObjectList2.GetCategoryField2%2A> .  
+ Pour fournir la liste des symboles pour le Gestionnaire d’objets de Visual Studio, vous devez tout d’abord inscrire la bibliothèque avec le Gestionnaire d’objets de Visual Studio en appelant le <xref:Microsoft.VisualStudio.Shell.Interop.IVsObjectManager2.RegisterSimpleLibrary%2A> (méthode). Après l’inscription de la bibliothèque, le Gestionnaire d’objets Visual Studio demande certaines informations sur les fonctionnalités de la bibliothèque. Par exemple, il demande les indicateurs de bibliothèque et prise en charge des catégories en appelant le <xref:Microsoft.VisualStudio.Shell.Interop.IVsSimpleLibrary2.GetLibFlags2%2A> et <xref:Microsoft.VisualStudio.Shell.Interop.IVsSimpleLibrary2.GetSupportedCategoryFields2%2A> méthodes. Dans certains cas, lorsqu’un des outils des demande des données à partir de cette bibliothèque, le Gestionnaire d’objets demande la liste de niveau supérieur de symboles en appelant le <xref:Microsoft.VisualStudio.Shell.Interop.IVsSimpleLibrary2.GetList2%2A> (méthode). En réponse, la bibliothèque de fabrique d’une liste de symboles et l’expose pour le Gestionnaire d’objets de Visual Studio via la <xref:Microsoft.VisualStudio.Shell.Interop.IVsSimpleObjectList2> interface. Le [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] Gestionnaire d’objets détermine le nombre d’éléments dans la liste en appelant le <xref:Microsoft.VisualStudio.Shell.Interop.IVsSimpleObjectList2.GetItemCount%2A> (méthode). Toutes les demandes suivantes sont liées à un élément donné dans la liste et fournissent le numéro d’index dans chaque demande. Le Gestionnaire d’objets Visual Studio continue à collecter les informations sur le type, l’accessibilité et d’autres propriétés de l’élément en appelant le <xref:Microsoft.VisualStudio.Shell.Interop.IVsSimpleObjectList2.GetCategoryField2%2A> (méthode).  
   
- Il détermine le nom de l'élément en appelant la méthode d' <xref:Microsoft.VisualStudio.Shell.Interop.IVsSimpleObjectList2.GetTextWithOwnership%2A> et demander des informations d'icône en appelant la méthode d' <xref:Microsoft.VisualStudio.Shell.Interop.IVsSimpleObjectList2.GetDisplayData%2A> .  L'icône est affichée à gauche du nom de l'élément et représente le type de l'élément, de l'accessibilité, et d'autres propriétés.  
+ Il détermine le nom de l’élément en appelant le <xref:Microsoft.VisualStudio.Shell.Interop.IVsSimpleObjectList2.GetTextWithOwnership%2A> (méthode) et vous demande les informations de l’icône en appelant le <xref:Microsoft.VisualStudio.Shell.Interop.IVsSimpleObjectList2.GetDisplayData%2A> (méthode). L’icône est affichée à gauche du nom de l’élément et représente le type de l’élément, l’accessibilité et d’autres propriétés.  
   
- Le gestionnaire d'objets de [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] appelle la méthode d' <xref:Microsoft.VisualStudio.Shell.Interop.IVsSimpleObjectList2.GetExpandable3%2A> pour déterminer si un élément de liste donné peut être développé et a des éléments enfants.  Si l'interface utilisateur envoie une requête de développer un élément, le gestionnaire d'objets demande la liste enfant de symboles en appelant la méthode d' <xref:Microsoft.VisualStudio.Shell.Interop.IVsSimpleObjectList2.GetList2%2A> .  Le processus se poursuit différentes parties de l'arborescence en cours de génération à la demande.  
+ Le [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] de l’objet gestionnaire appelle la <xref:Microsoft.VisualStudio.Shell.Interop.IVsSimpleObjectList2.GetExpandable3%2A> méthode pour déterminer si un élément de liste donné peut être développé et a des éléments enfants. Si l’interface utilisateur envoie une demande pour développer un élément, le Gestionnaire d’objets demande la liste des symboles enfants en appelant le <xref:Microsoft.VisualStudio.Shell.Interop.IVsSimpleObjectList2.GetList2%2A> (méthode). Le processus se poursuit avec les différentes parties de l’arborescence en cours de génération à la demande.  
   
 > [!NOTE]
->  Pour implémenter un fournisseur de symbole de code natif, utilisez les interfaces d' <xref:Microsoft.VisualStudio.Shell.Interop.IVsLibrary2> et d' <xref:Microsoft.VisualStudio.Shell.Interop.IVsObjectList2> .  
+>  Pour implémenter un fournisseur de symboles du code natif, utilisez le <xref:Microsoft.VisualStudio.Shell.Interop.IVsLibrary2> et <xref:Microsoft.VisualStudio.Shell.Interop.IVsObjectList2> interfaces.  
   
-## Voir aussi  
- [Comment : inscrire une bibliothèque avec le Gestionnaire d'objets](../../extensibility/internals/how-to-register-a-library-with-the-object-manager.md)   
- [Comment : exposer de listes de symboles fournis par la bibliothèque pour le Gestionnaire d'objets](../../extensibility/internals/how-to-expose-lists-of-symbols-provided-by-the-library-to-the-object-manager.md)   
- [Comment : identifier les symboles dans une bibliothèque](../../extensibility/internals/how-to-identify-symbols-in-a-library.md)
+## <a name="see-also"></a>Voir aussi  
+ [Comment : inscrire une bibliothèque avec le Gestionnaire d’objets](../../extensibility/internals/how-to-register-a-library-with-the-object-manager.md)   
+ [Comment : exposer de listes de symboles fournis par la bibliothèque pour le Gestionnaire d’objets](../../extensibility/internals/how-to-expose-lists-of-symbols-provided-by-the-library-to-the-object-manager.md)   
+ [Guide pratique pour identifier les symboles dans une bibliothèque](../../extensibility/internals/how-to-identify-symbols-in-a-library.md)

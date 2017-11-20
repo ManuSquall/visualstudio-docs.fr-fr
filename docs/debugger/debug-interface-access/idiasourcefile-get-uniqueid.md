@@ -1,46 +1,45 @@
 ---
-title: "IDiaSourceFile::get_uniqueId | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-debug"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "IDiaSourceFile::get_uniqueId (méthode)"
+title: IDiaSourceFile::get_uniqueId | Documents Microsoft
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-debug
+ms.tgt_pltfrm: 
+ms.topic: article
+dev_langs: C++
+helpviewer_keywords: IDiaSourceFile::get_uniqueId method
 ms.assetid: e0b8dbc0-6061-4f31-bead-2cd72be44e41
-caps.latest.revision: 8
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 8
+caps.latest.revision: "8"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: 3d7a01aafad5349cf3da6957f39130639de34b58
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: fr-FR
+ms.lasthandoff: 10/31/2017
 ---
-# IDiaSourceFile::get_uniqueId
-[!INCLUDE[vs2017banner](../../code-quality/includes/vs2017banner.md)]
-
-Récupère une valeur de clé entière simple qui est unique pour cette image.  
+# <a name="idiasourcefilegetuniqueid"></a>IDiaSourceFile::get_uniqueId
+Récupère une valeur de clé entier simple qui est unique pour cette image.  
   
-## Syntaxe  
+## <a name="syntax"></a>Syntaxe  
   
-```cpp#  
-HRESULT get_uniqueId (   
-   DWORD* pRetVal  
+```C++  
+HRESULT get_uniqueId (   
+   DWORD* pRetVal  
 );  
 ```  
   
-#### Paramètres  
+#### <a name="parameters"></a>Paramètres  
  `pRetVal`  
- \[out\]  Retourne une valeur de clé entière simple qui est unique pour cette image.  
+ [out] Retourne une valeur de clé entier simple qui est unique pour cette image.  
   
-## Valeur de retour  
- En cas de réussite, retourne `S_OK`; sinon, retourne un code d'erreur.  
+## <a name="return-value"></a>Valeur de retour  
+ En cas de réussite, retourne `S_OK`; sinon, retourne un code d’erreur.  
   
-## Notes  
- Comparaison de clés plutôt que des chaînes peut accélérer le traitement de numéro de ligne.  
+## <a name="remarks"></a>Remarques  
+ Comparaison de clés plutôt que des chaînes peuvent accélérer le traitement des numéros de ligne.  
   
-## Voir aussi  
+## <a name="see-also"></a>Voir aussi  
  [IDiaSourceFile](../../debugger/debug-interface-access/idiasourcefile.md)

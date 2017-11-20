@@ -1,45 +1,47 @@
 ---
-title: "Manifestes de d&#233;ploiement pour les solutions Office"
-ms.custom: ""
-ms.date: "02/02/2017"
-ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "office-development"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-dev_langs: 
-  - "VB"
-  - "CSharp"
-helpviewer_keywords: 
-  - "applications Office (développement Office dans Visual Studio), manifestes de déploiement"
-  - "manifestes de déploiement (développement Office dans Visual Studio)"
-  - "manifestes (développement Office dans Visual Studio), déploiement"
-  - "développement Office dans Visual Studio, manifestes de déploiement"
+title: "Manifestes de déploiement pour les Solutions Office | Documents Microsoft"
+ms.custom: 
+ms.date: 02/02/2017
+ms.reviewer: 
+ms.suite: 
+ms.technology: office-development
+ms.tgt_pltfrm: 
+ms.topic: article
+dev_langs:
+- VB
+- CSharp
+helpviewer_keywords:
+- Office applications [Office development in Visual Studio], deployment manifests
+- deployment manifests [Office development in Visual Studio]
+- manifests [Office development in Visual Studio], deployment
+- Office development in Visual Studio, deployment manifests
 ms.assetid: 3fb29743-fb96-4d61-a99a-9b1bbafeee13
-caps.latest.revision: 22
-author: "kempb"
-ms.author: "kempb"
-manager: "ghogen"
-caps.handback.revision: 21
+caps.latest.revision: "22"
+author: gewarren
+ms.author: gewarren
+manager: ghogen
+ms.openlocfilehash: f6569c8c4a2420949862b8d09532c217606073d8
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: fr-FR
+ms.lasthandoff: 10/31/2017
 ---
-# Manifestes de d&#233;ploiement pour les solutions Office
-  Un manifeste de déploiement est un fichier XML qui décrit les paramètres de déploiement d'une solution Office et identifie la version d'application actuelle.  
+# <a name="deployment-manifests-for-office-solutions"></a>Manifestes de déploiement pour les solutions Office
+  Un manifeste de déploiement est un fichier XML qui décrit les paramètres de déploiement d’une solution Office et identifie la version actuelle de l’application.  
   
- Le développement Office dans Visual Studio utilise le schéma du manifeste de déploiement [!INCLUDE[ndptecclick](../vsto/includes/ndptecclick-md.md)] défini dans la référence [ClickOnce Deployment Manifest](../deployment/clickonce-deployment-manifest.md).  
+ Le développement Office dans Visual Studio utilise le [!INCLUDE[ndptecclick](../vsto/includes/ndptecclick-md.md)] schéma de manifeste de déploiement défini dans le [le manifeste de déploiement ClickOnce](/visualstudio/deployment/clickonce-deployment-manifest) référence.  
   
-## Notes  
- Le fichier manifeste de déploiement pour les solutions Office identifie la version actuelle ainsi que d'autres paramètres de déploiement.  Il référence le manifeste d'application, qui décrit la version actuelle de la solution et tous les fichiers contenus dans celle\-ci.  
+## <a name="remarks"></a>Remarques  
+ Le fichier manifeste de déploiement pour les solutions Office identifie la version actuelle et autres paramètres de déploiement. Il référence le manifeste d’application, qui décrit la version actuelle de la solution et tous les fichiers qui sont contenus dans la solution.  
   
-## Syntaxe des noms de fichier  
- Le nom d'un fichier de manifeste de déploiement doit se terminer par l'extension .vsto.  Bien que ce soit un manifeste de déploiement standard de [!INCLUDE[ndptecclick](../vsto/includes/ndptecclick-md.md)] , l'extension est différente pour permettre au moment de l'exécution Visual Studio Tools pour Office pour gérer le fichier.  
+## <a name="file-name-syntax"></a>Syntaxe du nom de fichier  
+ Le nom d’un fichier de manifeste de déploiement doit se terminer par l’extension .vsto. Bien qu’il soit une norme [!INCLUDE[ndptecclick](../vsto/includes/ndptecclick-md.md)] est différente de l’extension de manifeste de déploiement, pour permettre de Visual Studio Tools pour Office runtime gérer le fichier.  
   
-## Exemple  
- L'exemple de code suivant illustre un manifeste de déploiement pour une solution Visual Studio Tools pour Office.  
+## <a name="example"></a>Exemple  
+ L’exemple de code suivant illustre un manifeste de déploiement pour un Visual Studio Tools pour les solutions Office.  
   
 ```  
-  
+<?xml version="1.0" encoding="utf-8"?>  
 <asmv1:assembly   
   xsi:schemaLocation=  
     "urn:schemas-microsoft-com:asm.v1 assembly.adaptive.xsd"   
@@ -185,7 +187,7 @@ caps.handback.revision: 21
 </asmv1:assembly>  
 ```  
   
-## Voir aussi  
- [Manifestes d'application pour les solutions Office](../vsto/application-manifests-for-office-solutions.md)  
+## <a name="see-also"></a>Voir aussi  
+ [Manifestes d’application pour les solutions Office](../vsto/application-manifests-for-office-solutions.md)  
   
   

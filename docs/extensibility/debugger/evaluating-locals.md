@@ -1,59 +1,44 @@
 ---
-title: Evaluating Locals | Microsoft Docs
+title: "Évaluer les variables locales | Documents Microsoft"
 ms.custom: 
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-sdk
+ms.technology: vs-ide-sdk
 ms.tgt_pltfrm: 
 ms.topic: article
 helpviewer_keywords:
 - debugging [Debugging SDK], evaluating locals
 - expression evaluation, evaluating locals
 ms.assetid: 7d1ed528-4e7a-4d8f-87b4-162440644a75
-caps.latest.revision: 11
+caps.latest.revision: "11"
+author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-translation.priority.mt:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
+ms.openlocfilehash: eabe4b81a4c6e92659e2b8f2752aaf641c0193ee
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
 ms.translationtype: MT
-ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
-ms.openlocfilehash: 8e2e4c4f00e37a4f81244dc7905996889a2055b0
-ms.contentlocale: fr-fr
-ms.lasthandoff: 08/28/2017
-
+ms.contentlocale: fr-FR
+ms.lasthandoff: 10/31/2017
 ---
-# <a name="evaluating-locals"></a>Evaluating Locals
+# <a name="evaluating-locals"></a>Évaluer les variables locales
 > [!IMPORTANT]
->  In Visual Studio 2015, this way of implementing expression evaluators is deprecated. For information about implementing CLR expression evaluators, please see [CLR Expression Evaluators](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/CLR-Expression-Evaluators) and [Managed Expression Evaluator Sample](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/Managed-Expression-Evaluator-Sample).  
+>  Dans Visual Studio 2015, ce moyen d’implémenter des évaluateurs d’expression est déconseillée. Pour plus d’informations sur l’implémentation des évaluateurs d’expression CLR, consultez [évaluateurs d’Expression CLR](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/CLR-Expression-Evaluators) et [exemple d’évaluateur d’Expression managé](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/Managed-Expression-Evaluator-Sample).  
   
- [GetPropertyInfo](../../extensibility/debugger/reference/idebugproperty2-getpropertyinfo.md) is called to obtain the value of a local, as well as the local's name and type. Since the value of a local is dependent on the current state of the program, the local's value must be obtained from memory. The [IDebugBinder](../../extensibility/debugger/reference/idebugbinder.md) object is used to bind the [IDebugField](../../extensibility/debugger/reference/idebugfield.md) object representing the local to the appropriate location in memory containing the value. This location in memory is represented by an [IDebugObject](../../extensibility/debugger/reference/idebugobject.md) object.  
+ [GetPropertyInfo](../../extensibility/debugger/reference/idebugproperty2-getpropertyinfo.md) est appelée pour obtenir la valeur d’une variable locale, ainsi que les nom de l’ordinateur local et le type. Étant donné que la valeur des variables locales dépend de l’état actuel du programme, de l’ordinateur local doit être obtenue à partir de la mémoire. Le [IDebugBinder](../../extensibility/debugger/reference/idebugbinder.md) objet est utilisé pour lier la [IDebugField](../../extensibility/debugger/reference/idebugfield.md) objet représentant l’ordinateur local à l’emplacement approprié dans la mémoire contenant la valeur. Cet emplacement dans la mémoire est représenté par un [IDebugObject](../../extensibility/debugger/reference/idebugobject.md) objet.  
   
- This functionality of retrieving the value of a local is encapsulated in a helper function that performs the following tasks:  
+ Cette fonctionnalité de récupération de la valeur des variables locales est encapsulée dans une fonction d’assistance qui effectue les tâches suivantes :  
   
-1.  Binds the `IDebugField` object to memory to obtain an `IDebugObject` object.  
+1.  Lie le `IDebugField` objet dans la mémoire pour obtenir un `IDebugObject` objet.  
   
-2.  Gets the value from memory. This value is represented as a series of bytes.  
+2.  Obtient la valeur de la mémoire. Cette valeur est représentée comme une série d’octets.  
   
-3.  Formats the value based on the local's type.  
+3.  Met en forme la valeur basée sur les type de l’ordinateur local.  
   
-4.  Returns a generic object that contains the local's value. In C#, this is an `object`, and in C++, this is a `VARIANT`.  
+4.  Retourne un objet générique qui contient les valeur de l’ordinateur local. En c#, il s’agit d’un `object`, et en C++, il s’agit d’un `VARIANT`.  
   
-## <a name="managed-code"></a>Managed Code  
- This is an implementation of a function that retrieves the value of a local in managed code.  
+## <a name="managed-code"></a>Code managé  
+ Il s’agit d’une implémentation d’une fonction qui Récupère la valeur des variables locales dans le code managé.  
   
 ```csharp  
 namespace EEMC  
@@ -94,8 +79,8 @@ namespace EEMC
 }  
 ```  
   
-## <a name="unmanaged-code"></a>Unmanaged Code  
- This is an implementation of a function that retrieves the value of a local in unmanaged code. `FieldGetType` is shown in [Getting Local Values](../../extensibility/debugger/getting-local-values.md).  
+## <a name="unmanaged-code"></a>Code non managé  
+ Il s’agit d’une implémentation d’une fonction qui Récupère la valeur des variables locales en code non managé. `FieldGetType`figure dans [l’obtention des valeurs locales](../../extensibility/debugger/getting-local-values.md).  
   
 ```cpp  
 HRESULT FieldGetPrimitiveValue(  
@@ -207,7 +192,7 @@ HRESULT FieldGetPrimitiveValue(
 }  
 ```  
   
-## <a name="see-also"></a>See Also  
- [Sample Implementation of Locals](../../extensibility/debugger/sample-implementation-of-locals.md)   
- [Getting Local Values](../../extensibility/debugger/getting-local-values.md)   
- [Evaluation Context](../../extensibility/debugger/evaluation-context.md)
+## <a name="see-also"></a>Voir aussi  
+ [Exemple d’implémentation des variables locales](../../extensibility/debugger/sample-implementation-of-locals.md)   
+ [Obtention des valeurs locales](../../extensibility/debugger/getting-local-values.md)   
+ [Contexte d’évaluation](../../extensibility/debugger/evaluation-context.md)

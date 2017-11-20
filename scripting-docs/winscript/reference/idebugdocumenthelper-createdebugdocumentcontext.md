@@ -1,27 +1,30 @@
 ---
-title: "IDebugDocumentHelper::CreateDebugDocumentContext | Microsoft Docs"
-ms.custom: ""
-ms.date: "01/18/2017"
-ms.prod: "windows-script-interfaces"
-ms.reviewer: ""
-ms.suite: ""
-ms.tgt_pltfrm: ""
-ms.topic: "reference"
+title: IDebugDocumentHelper::CreateDebugDocumentContext | Documents Microsoft
+ms.custom: 
+ms.date: 01/18/2017
+ms.prod: windows-script-interfaces
+ms.reviewer: 
+ms.suite: 
+ms.tgt_pltfrm: 
+ms.topic: reference
 apiname: IDebugDocumentHelper.CreateDebugDocumentContext
 apilocation: pdm.dll
-helpviewer_keywords: 
-  - "IDebugDocumentHelper::CreateDebugDocumentContext"
+helpviewer_keywords: IDebugDocumentHelper::CreateDebugDocumentContext
 ms.assetid: aa4ec691-9fb1-4da7-8085-b40d8a062467
-caps.latest.revision: 8
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 8
+caps.latest.revision: "8"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: 54d91c4df9d1e478d028e95e5cfc930d69355c54
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.translationtype: MT
+ms.contentlocale: fr-FR
+ms.lasthandoff: 10/27/2017
 ---
-# IDebugDocumentHelper::CreateDebugDocumentContext
-Crée un débogage le contexte de document.  
+# <a name="idebugdocumenthelpercreatedebugdocumentcontext"></a>IDebugDocumentHelper::CreateDebugDocumentContext
+Crée un nouveau contexte de document de débogage.  
   
-## Syntaxe  
+## <a name="syntax"></a>Syntaxe  
   
 ```  
 HRESULT CreateDebugDocumentContext(  
@@ -31,25 +34,25 @@ HRESULT CreateDebugDocumentContext(
 );  
 ```  
   
-#### Paramètres  
+#### <a name="parameters"></a>Paramètres  
  `iCharPos`  
- \[in\]  emplacement du début du contenu de document de débogage.  
+ [in] Emplacement du début du contenu du document de débogage.  
   
  `cChars`  
- \[in\]  Nombre de caractères du contexte.  
+ [in] Nombre de caractères dans le contexte.  
   
  `ppddc`  
- \[out\]  Les nouveaux debug le contexte de document.  
+ [out] Le nouveau contexte de document de débogage.  
   
-## Valeur de retour  
- La méthode retourne `HRESULT`.  Les valeurs possibles incluent, mais ne sont pas limitées à, celles dans le tableau suivant.  
+## <a name="return-value"></a>Valeur de retour  
+ La méthode retourne `HRESULT`. Les valeurs possibles sont notamment celles figurant dans le tableau suivant.  
   
 |Valeur|Description|  
-|------------|-----------------|  
+|-----------|-----------------|  
 |`S_OK`|La méthode a réussi.|  
   
-## Notes  
- Cette méthode permet à l'hôte pour créer un nouveau debug le contexte de document.  
+## <a name="remarks"></a>Remarques  
+ Cette méthode permet à l’hôte créer un nouveau contexte de document de débogage.  
   
-## Voir aussi  
- [IDebugDocumentHelper, interface](../../winscript/reference/idebugdocumenthelper-interface.md)
+## <a name="see-also"></a>Voir aussi  
+ [Interface IDebugDocumentHelper](../../winscript/reference/idebugdocumenthelper-interface.md)

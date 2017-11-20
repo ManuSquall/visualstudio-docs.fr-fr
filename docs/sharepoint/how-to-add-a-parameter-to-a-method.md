@@ -1,67 +1,69 @@
 ---
-title: "Comment&#160;: ajouter un param&#232;tre &#224; une m&#233;thode"
-ms.custom: ""
-ms.date: "02/02/2017"
-ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "office-development"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-dev_langs: 
-  - "VB"
-  - "CSharp"
-  - "VB"
-  - "CSharp"
-helpviewer_keywords: 
-  - "BDC (développement SharePoint dans Visual Studio), ajouter une méthode à un paramètre"
-  - "BDC (développement SharePoint dans Visual Studio), paramètres de méthodes"
-  - "BDC (développement SharePoint dans Visual Studio), paramètre"
-  - "service de connectivité de données métiers (développement SharePoint dans Visual Studio), ajouter une méthode à un paramètre"
-  - "service de connectivité de données métiers (développement SharePoint dans Visual Studio), paramètres de méthodes"
-  - "service de connectivité de données métiers (développement SharePoint dans Visual Studio), paramètre"
+title: "Comment : ajouter un paramètre à une méthode | Documents Microsoft"
+ms.custom: 
+ms.date: 02/02/2017
+ms.reviewer: 
+ms.suite: 
+ms.technology: office-development
+ms.tgt_pltfrm: 
+ms.topic: article
+dev_langs:
+- VB
+- CSharp
+- VB
+- CSharp
+helpviewer_keywords:
+- Business Data Connectivity service [SharePoint development in Visual Studio], adding a method to a parameter
+- Business Data Connectivity service [SharePoint development in Visual Studio], parameter
+- BDC [SharePoint development in Visual Studio], adding a method to a parameter
+- BDC [SharePoint development in Visual Studio], parameter
+- Business Data Connectivity service [SharePoint development in Visual Studio], method parameters
+- BDC [SharePoint development in Visual Studio], method parameters
 ms.assetid: c5b6fd32-bf85-4b2a-a01e-f9199f0fb26e
-caps.latest.revision: 16
-author: "kempb"
-ms.author: "kempb"
-manager: "ghogen"
-caps.handback.revision: 16
+caps.latest.revision: "16"
+author: gewarren
+ms.author: gewarren
+manager: ghogen
+ms.openlocfilehash: 881eccae253fc07c13eead45ae9d14658f9adf46
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: fr-FR
+ms.lasthandoff: 10/31/2017
 ---
-# Comment&#160;: ajouter un param&#232;tre &#224; une m&#233;thode
-  Vous pouvez utiliser un paramètre pour transmettre des informations à l'intérieur d'une méthode ou retourner des informations à partir d'une méthode.  Toutes les méthodes doivent avoir au moins un paramètre.  Pour plus d'informations sur la conception d'un paramètre qui prenne en charge le type de méthode que vous souhaitez créer, consultez [Conception d'un modèle de connectivité de données métiers](../sharepoint/designing-a-business-data-connectivity-model.md).  
+# <a name="how-to-add-a-parameter-to-a-method"></a>Comment : ajouter un paramètre à une méthode
+  Utiliser un paramètre pour transmettre des informations dans la méthode ou pour retourner des informations à partir d’une méthode. Toutes les méthodes doivent avoir au moins un paramètre. Pour plus d’informations sur la conception d’un paramètre pour prendre en charge le type de méthode que vous souhaitez créer, consultez [vous concevez un modèle de connectivité de données métiers](../sharepoint/designing-a-business-data-connectivity-model.md).  
   
- Lorsque vous ajoutez un paramètre à une méthode, Visual Studio ajoute l'élément `<Parameter>` au code XML du fichier de modèle dans votre projet.  Pour plus d'informations sur les attributs d'un élément de `<Parameter>`, consultez [Paramètre](http://go.microsoft.com/fwlink/?LinkId=169284).  
+ Lorsque vous ajoutez un paramètre à une méthode, Visual Studio ajoute le `<Parameter>` élément pour le code XML du fichier de modèle dans votre projet. Pour plus d’informations sur les attributs d’un `<Parameter>` élément, consultez [paramètre](http://go.microsoft.com/fwlink/?LinkId=169284).  
   
-### Pour ajouter un paramètre à une méthode  
+### <a name="to-add-a-parameter-to-a-method"></a>Pour ajouter un paramètre à une méthode  
   
 1.  Ajoutez une méthode à une entité.  
   
-2.  Dans la barre de menus, cliquez sur **Affichage**, **Autres fenêtres**, **Détails de la méthode BDC**.  
+2.  Dans la barre de menus, choisissez **vue**, **autres fenêtres**, **détails de méthode BDC**.  
   
-     La fenêtre **Détails de méthode BDC** s'ouvre.  Pour plus d'informations, consultez [Vue d'ensemble des outils de conception du modèle BDC](../sharepoint/bdc-model-design-tools-overview.md).  
+     Le **détails de méthode BDC** fenêtre s’ouvre. Pour plus d’informations, consultez [vue d’ensemble des outils de conception modèle BDC](../sharepoint/bdc-model-design-tools-overview.md).  
   
-3.  Dans la fenêtre **Détails de méthode BDC**, développez le nœud de la méthode, puis développez le nœud **Paramètres**.  
+3.  Dans le **détails de méthode BDC** fenêtre, développez le nœud de la méthode, puis développez le **paramètres** nœud.  
   
-4.  Dans la liste **Ajouter un paramètre**, choisissez **Créer un paramètre**.  
+4.  Dans le **ajouter un paramètre** , choisissez **créer paramètre**.  
   
-     Un nouveau paramètre s'affiche sous le nœud **Paramètres**.  
+     Un nouveau paramètre s’affiche sous le **paramètres** nœud.  
   
-5.  Dans la barre de menus, choisissez **Affichage**, **Fenêtre Propriétés**.  
+5.  Dans la barre de menus, choisissez **vue**, **fenêtre Propriétés**.  
   
-6.  Dans la fenêtre **Propriétés**, affectez à la propriété **Name** un nom représentatif.  Par exemple, si la méthode retourne des clients, vous pouvez la nommer ObtenirClients.  
+6.  Dans le **propriétés** , configurez la **nom** propriété à n’importe quel nom logique. Par exemple, si la méthode retourne des clients, vous pouvez nommer la méthode **GetCustomers**.  
   
-7.  Dans la fenêtre **Détails de méthode BDC**, ouvrez la liste qui s'affiche pour indiquer la direction du paramètre, puis cliquez sur **In**, **InOut**, **Out** ou **Retour**.  
+7.  Dans le **détails de méthode BDC** fenêtre, ouvrez la liste qui s’affiche pour la direction du paramètre, puis choisissez **dans**, **InOut**, **Out**, ou **retourner**.  
   
-     Pour plus d'informations sur la direction à choisir pour la méthode de type que vous créez, consultez [Conception d'un modèle de connectivité de données métiers](../sharepoint/designing-a-business-data-connectivity-model.md).  
+     Pour plus d’informations sur la direction à choisir pour la méthode de type que vous créez, consultez [vous concevez un modèle de connectivité de données métiers](../sharepoint/designing-a-business-data-connectivity-model.md).  
   
-8.  Modifiez le descripteur de type du paramètre.  Pour plus d'informations, consultez [How to: Define the Type Descriptor of a Parameter](../sharepoint/how-to-define-the-type-descriptor-of-a-parameter.md).  
+8.  Modifier le descripteur de type du paramètre. Pour plus d’informations, consultez [Comment : définir le descripteur de Type d’un paramètre](../sharepoint/how-to-define-the-type-descriptor-of-a-parameter.md).  
   
-## Voir aussi  
- [Vue d'ensemble des outils de conception du modèle BDC](../sharepoint/bdc-model-design-tools-overview.md)   
+## <a name="see-also"></a>Voir aussi  
+ [Présentation des outils de conception modèle BDC](../sharepoint/bdc-model-design-tools-overview.md)   
  [Comment : ajouter une entité à un modèle](../sharepoint/how-to-add-an-entity-to-a-model.md)   
- [How to: Define the Type Descriptor of a Parameter](../sharepoint/how-to-define-the-type-descriptor-of-a-parameter.md)   
- [Comment : définir une instance de méthode](../sharepoint/how-to-define-a-method-instance.md)   
- [Conception d'un modèle de connectivité de données métiers](../sharepoint/designing-a-business-data-connectivity-model.md)  
+ [Comment : définir le descripteur de Type d’un paramètre](../sharepoint/how-to-define-the-type-descriptor-of-a-parameter.md)   
+ [Comment : définir une Instance de méthode](../sharepoint/how-to-define-a-method-instance.md)   
+ [Conception d’un modèle de connectivité de données métiers](../sharepoint/designing-a-business-data-connectivity-model.md)  
   
   

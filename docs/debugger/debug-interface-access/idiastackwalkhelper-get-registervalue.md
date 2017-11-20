@@ -1,51 +1,50 @@
 ---
-title: "IDiaStackWalkHelper::get_registerValue | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-debug"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "IDiaStackWalkHelper2::get_registerValue (méthode)"
+title: IDiaStackWalkHelper::get_registerValue | Documents Microsoft
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-debug
+ms.tgt_pltfrm: 
+ms.topic: article
+dev_langs: C++
+helpviewer_keywords: IDiaStackWalkHelper2::get_registerValue method
 ms.assetid: 46ac5eee-73a3-44a1-8635-6c58ba193cb6
-caps.latest.revision: 9
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 9
+caps.latest.revision: "9"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: 35d956b1d246d0a43ae058bb58635117c093602c
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: fr-FR
+ms.lasthandoff: 10/31/2017
 ---
-# IDiaStackWalkHelper::get_registerValue
-[!INCLUDE[vs2017banner](../../code-quality/includes/vs2017banner.md)]
-
-extrait la valeur d'un registre.  
+# <a name="idiastackwalkhelpergetregistervalue"></a>IDiaStackWalkHelper::get_registerValue
+Récupère la valeur d’un Registre.  
   
-## Syntaxe  
+## <a name="syntax"></a>Syntaxe  
   
-```cpp#  
-HRESULT get_registerValue (   
-   DWORD      index,  
-   ULONGLONG* pRetVal  
+```C++  
+HRESULT get_registerValue (   
+   DWORD      index,  
+   ULONGLONG* pRetVal  
 );  
 ```  
   
-#### Paramètres  
+#### <a name="parameters"></a>Paramètres  
  `index`  
- \[in\]  une valeur de spécifier d'énumération de [CV\_HREG\_e, énumération](../../debugger/debug-interface-access/cv-hreg-e.md) dont enregistrez\-vous pour obtenir la valeur.  
+ [in] Une valeur à partir de la [cv_hreg_e, énumération](../../debugger/debug-interface-access/cv-hreg-e.md) énumération spécifiant permettant d’obtenir la valeur de Registre.  
   
  `pRetVal`  
- \[out\]  Retourne la valeur actuelle du registre.  
+ [out] Retourne la valeur actuelle du Registre.  
   
-## Valeur de retour  
- En cas de réussite, retourne `S_OK`; sinon, retourne un code d'erreur.  
+## <a name="return-value"></a>Valeur de retour  
+ En cas de réussite, retourne `S_OK`; sinon, retourne un code d’erreur.  
   
-## Notes  
- En dépit de la taille du paramètre d' `pRetVal` , une implémentation doit stocker uniquement ce que le registre contient normalement.  Par exemple, un registre de 8 bits contient uniquement les plus bas 8 bits de la valeur donnée.  Cette valeur 8 bits est développée à 64 bits une fois retournée par cette méthode.  
+## <a name="remarks"></a>Remarques  
+ En dépit de la taille de la `pRetVal` paramètre, une implémentation doit stocker uniquement ce que le Registre maintient. Par exemple, un Registre de 8 bits conserve uniquement les 8-bits les plus bas de la valeur donnée. Cette valeur de 8 bits est développée à 64-bits lorsque retournée par cette méthode.  
   
-## Voir aussi  
+## <a name="see-also"></a>Voir aussi  
  [IDiaStackWalkHelper](../../debugger/debug-interface-access/idiastackwalkhelper.md)   
- [CV\_HREG\_e, énumération](../../debugger/debug-interface-access/cv-hreg-e.md)
+ [CV_HREG_e (énumération)](../../debugger/debug-interface-access/cv-hreg-e.md)

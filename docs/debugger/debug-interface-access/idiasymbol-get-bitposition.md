@@ -1,54 +1,53 @@
 ---
-title: "IDiaSymbol::get_bitPosition | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-debug"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "IDiaSymbol::get_bitPosition (méthode)"
+title: IDiaSymbol::get_bitPosition | Documents Microsoft
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-debug
+ms.tgt_pltfrm: 
+ms.topic: article
+dev_langs: C++
+helpviewer_keywords: IDiaSymbol::get_bitPosition method
 ms.assetid: b0059407-8655-497b-81ca-025595989371
-caps.latest.revision: 9
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 9
+caps.latest.revision: "9"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: 34a6939c455037f2466c09ab44d742f8ccfe2977
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: fr-FR
+ms.lasthandoff: 10/31/2017
 ---
-# IDiaSymbol::get_bitPosition
-[!INCLUDE[vs2017banner](../../code-quality/includes/vs2017banner.md)]
-
-extrait la position de bit de l'emplacement.  Utilisé lorsque [LocationType, énumération](../../debugger/debug-interface-access/locationtype.md) est `LocIsBitField`.  
+# <a name="idiasymbolgetbitposition"></a>IDiaSymbol::get_bitPosition
+Récupère la position de bit d’emplacement. Utilisé lorsque le [LocationType, énumération](../../debugger/debug-interface-access/locationtype.md) est `LocIsBitField`.  
   
-## Syntaxe  
+## <a name="syntax"></a>Syntaxe  
   
-```cpp#  
-HRESULT get_bitPosition (   
-   DWORD* pRetVal  
+```C++  
+HRESULT get_bitPosition (   
+   DWORD* pRetVal  
 );  
 ```  
   
-#### Paramètres  
+#### <a name="parameters"></a>Paramètres  
  `pRetVal`  
- \[out\]  Retourne la position de bit de l'emplacement.  
+ [out] Retourne la position de bit de l’emplacement.  
   
-## Valeur de retour  
- En cas de réussite, retourne `S_OK`; sinon, retourne `S_FALSE` ou un code d'erreur.  
+## <a name="return-value"></a>Valeur de retour  
+ En cas de réussite, retourne `S_OK`; sinon, retourne `S_FALSE` ou code d’erreur.  
   
 > [!NOTE]
->  Une valeur de retour d' `S_FALSE` signifie que la propriété n'est pas disponible pour le symbole.  
+>  La valeur de retour `S_FALSE` signifie que la propriété n’est pas disponible pour le symbole.  
   
-## Configuration requise  
+## <a name="requirements"></a>Spécifications  
   
 |Spécification|Description|  
-|-------------------|-----------------|  
-|en\-tête :|dia2.h|  
-|version :|diamètre Kit de développement logiciel v7.0|  
+|-----------------|-----------------|  
+|En-tête :|dia2.h|  
+|Version :|DIA SDK v7.0|  
   
-## Voir aussi  
+## <a name="see-also"></a>Voir aussi  
  [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)   
- [LocationType, énumération](../../debugger/debug-interface-access/locationtype.md)
+ [LocationType (énumération)](../../debugger/debug-interface-access/locationtype.md)

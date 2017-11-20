@@ -1,46 +1,29 @@
 ---
-title: BP_PASSCOUNT_STYLE | Microsoft Docs
+title: BP_PASSCOUNT_STYLE | Documents Microsoft
 ms.custom: 
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-sdk
+ms.technology: vs-ide-sdk
 ms.tgt_pltfrm: 
 ms.topic: article
-f1_keywords:
-- BP_PASSCOUNT_STYLE
-helpviewer_keywords:
-- BP_PASSCOUNT_STYLE structure
+f1_keywords: BP_PASSCOUNT_STYLE
+helpviewer_keywords: BP_PASSCOUNT_STYLE structure
 ms.assetid: 0a647047-e2d5-4724-a0b8-68108425ecad
-caps.latest.revision: 10
+caps.latest.revision: "10"
+author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-translation.priority.mt:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
+ms.openlocfilehash: 58baa5aca9ef5bddf5d7060fdc88022952bc9ce3
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
 ms.translationtype: MT
-ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
-ms.openlocfilehash: e76b64fc0ca35d442d654964f6bfc831b727d0e2
-ms.contentlocale: fr-fr
-ms.lasthandoff: 08/28/2017
-
+ms.contentlocale: fr-FR
+ms.lasthandoff: 10/31/2017
 ---
 # <a name="bppasscountstyle"></a>BP_PASSCOUNT_STYLE
-Specifies the condition associated with the breakpoint pass count that causes the breakpoint to fire.  
+Spécifie la condition associée le nombre de passe de point d’arrêt, le point d’arrêt sont activés.  
   
-## <a name="syntax"></a>Syntax  
+## <a name="syntax"></a>Syntaxe  
   
 ```cpp  
 enum enum_BP_PASSCOUNT_STYLE {   
@@ -61,31 +44,31 @@ public enum enum_BP_PASSCOUNT_STYLE {
 };  
 ```  
   
-## <a name="members"></a>Members  
+## <a name="members"></a>Membres  
  BP_PASSCOUNT_NONE  
- Specifies no breakpoint pass count style.  
+ Ne spécifie aucun style de nombre passe de point d’arrêt.  
   
  BP_PASSCOUNT_EQUAL  
- Sets the breakpoint pass count style to equal. The breakpoint fires when the number of times the breakpoint is hit equals the pass count.  
+ Définit le style de nombre passe de point d’arrêt pour être égale. Le point d’arrêt se déclenche lorsque le nombre de fois où que le point d’arrêt est égale au nombre de test.  
   
  BP_PASSCOUNT_EQUAL_OR_GREATER  
- Sets the breakpoint pass count style to equal or greater. The breakpoint fires when the number of times the breakpoint is hit is equal to or greater than the pass count.  
+ Définit le style de nombre de passage de point d’arrêt sur égale ou supérieure. Le point d’arrêt se déclenche lorsque le nombre de fois où que le point d’arrêt est égal à ou supérieur au nombre de test.  
   
  BP_PASSCOUNT_MOD  
- Specifies a modulo pass count. For example, if the pass count is of the type `BP_PASSCOUNT_MOD` and the pass count value is 4, the breakpoint fires every time the hit count is a multiple of 4.  
+ Spécifie un modulo passer le nombre. Par exemple, si le compteur transmis est de type `BP_PASSCOUNT_MOD` et passe la valeur du nombre est 4, le se déclenche de point d’arrêt chaque fois que le nombre d’accès est un multiple de 4.  
   
-## <a name="remarks"></a>Remarks  
- Used for the `stylePassCount` member of the [BP_PASSCOUNT](../../../extensibility/debugger/reference/bp-passcount.md) structure that is in turn a member of the [BP_REQUEST_INFO](../../../extensibility/debugger/reference/bp-request-info.md) and [BP_REQUEST_INFO2](../../../extensibility/debugger/reference/bp-request-info2.md) structures.  
+## <a name="remarks"></a>Remarques  
+ Utilisé pour le `stylePassCount` membre de la [BP_PASSCOUNT](../../../extensibility/debugger/reference/bp-passcount.md) structure qui est à son tour un membre de la [BP_REQUEST_INFO](../../../extensibility/debugger/reference/bp-request-info.md) et [BP_REQUEST_INFO2](../../../extensibility/debugger/reference/bp-request-info2.md) structures.  
   
-## <a name="requirements"></a>Requirements  
- Header: msdbg.h  
+## <a name="requirements"></a>Spécifications  
+ En-tête : msdbg.h  
   
- Namespace: Microsoft.VisualStudio.Debugger.Interop  
+ Namespace : Microsoft.VisualStudio.Debugger.Interop  
   
- Assembly: Microsoft.VisualStudio.Debugger.Interop.dll  
+ Assembly : Microsoft.VisualStudio.Debugger.Interop.dll  
   
-## <a name="see-also"></a>See Also  
- [Enumerations](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)   
+## <a name="see-also"></a>Voir aussi  
+ [Énumérations](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)   
  [BP_PASSCOUNT](../../../extensibility/debugger/reference/bp-passcount.md)   
  [BP_REQUEST_INFO](../../../extensibility/debugger/reference/bp-request-info.md)   
  [BP_REQUEST_INFO2](../../../extensibility/debugger/reference/bp-request-info2.md)

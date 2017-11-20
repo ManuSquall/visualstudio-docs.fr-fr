@@ -1,46 +1,29 @@
 ---
-title: CODE_PATH | Microsoft Docs
+title: CODE_PATH | Documents Microsoft
 ms.custom: 
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-sdk
+ms.technology: vs-ide-sdk
 ms.tgt_pltfrm: 
 ms.topic: article
-f1_keywords:
-- CODE_PATH
-helpviewer_keywords:
-- CODE_PATH structure
+f1_keywords: CODE_PATH
+helpviewer_keywords: CODE_PATH structure
 ms.assetid: 2d4b2890-4c9d-47e1-83c0-df9c6436427f
-caps.latest.revision: 10
+caps.latest.revision: "10"
+author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-translation.priority.mt:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
+ms.openlocfilehash: aad85bd41537073a54b319b2830ea621fd4bece4
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
 ms.translationtype: MT
-ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
-ms.openlocfilehash: 828ed054adb81597f32425cff134b0b0d682ecab
-ms.contentlocale: fr-fr
-ms.lasthandoff: 08/28/2017
-
+ms.contentlocale: fr-FR
+ms.lasthandoff: 10/31/2017
 ---
 # <a name="codepath"></a>CODE_PATH
-Describes a method or function call.  
+Décrit un appel de méthode ou fonction.  
   
-## <a name="syntax"></a>Syntax  
+## <a name="syntax"></a>Syntaxe  
   
 ```cpp  
 typedef struct tagCODE_PATH {   
@@ -56,24 +39,24 @@ public struct CODE_PATH {
 }  
 ```  
   
-## <a name="members"></a>Members  
+## <a name="members"></a>Membres  
  bstrName  
- The name of the code path.  
+ Le nom du chemin d’accès du code.  
   
  pCode  
- The [IDebugCodeContext2](../../../extensibility/debugger/reference/idebugcodecontext2.md) object that identifies where in the code to step into a function.  
+ Le [IDebugCodeContext2](../../../extensibility/debugger/reference/idebugcodecontext2.md) objet identifie où dans le code pas à pas une fonction.  
   
-## <a name="remarks"></a>Remarks  
- This structure is used to implement stepping into a function. [EnumCodePaths](../../../extensibility/debugger/reference/idebugprogram2-enumcodepaths.md) returns all the calls from the current location in the program being debugged. This structure represents one such call.  
+## <a name="remarks"></a>Remarques  
+ Cette structure est utilisée pour implémenter le pas à pas détaillé dans une fonction. [EnumCodePaths](../../../extensibility/debugger/reference/idebugprogram2-enumcodepaths.md) renvoie tous les appels de l’emplacement actuel dans le programme en cours de débogage. Cette structure représente un appel de ce type.  
   
-## <a name="requirements"></a>Requirements  
- Header: msdbg.h  
+## <a name="requirements"></a>Spécifications  
+ En-tête : msdbg.h  
   
- Namespace: Microsoft.VisualStudio.Debugger.Interop  
+ Namespace : Microsoft.VisualStudio.Debugger.Interop  
   
- Assembly: Microsoft.VisualStudio.Debugger.Interop.dll  
+ Assembly : Microsoft.VisualStudio.Debugger.Interop.dll  
   
-## <a name="see-also"></a>See Also  
- [Structures and Unions](../../../extensibility/debugger/reference/structures-and-unions.md)   
+## <a name="see-also"></a>Voir aussi  
+ [Structures et Unions](../../../extensibility/debugger/reference/structures-and-unions.md)   
  [IDebugCodeContext2](../../../extensibility/debugger/reference/idebugcodecontext2.md)   
  [EnumCodePaths](../../../extensibility/debugger/reference/idebugprogram2-enumcodepaths.md)

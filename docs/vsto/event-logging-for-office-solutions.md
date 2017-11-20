@@ -1,72 +1,74 @@
 ---
-title: "Journalisation des &#233;v&#233;nements pour les solutions Office"
-ms.custom: ""
-ms.date: "02/02/2017"
-ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "office-development"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-dev_langs: 
-  - "VB"
-  - "CSharp"
-helpviewer_keywords: 
-  - "applications Office (développement Office dans Visual Studio), observateur d’événements"
-  - "déploiement ClickOnce (développement Office dans Visual Studio), observateur d’événements"
-  - "déploiement d’applications (développement Office dans Visual Studio), observateur d’événements"
-  - "développement Office dans Visual Studio, observateur d’événements"
+title: "Journalisation des événements pour les Solutions Office | Documents Microsoft"
+ms.custom: 
+ms.date: 02/02/2017
+ms.reviewer: 
+ms.suite: 
+ms.technology: office-development
+ms.tgt_pltfrm: 
+ms.topic: article
+dev_langs:
+- VB
+- CSharp
+helpviewer_keywords:
+- Office applications [Office development in Visual Studio], event viewer
+- ClickOnce deployment [Office development in Visual Studio], event viewer
+- deploying applications [Office development in Visual Studio], event viewer
+- Office development in Visual Studio, event viewer
 ms.assetid: 31a246fe-ce1c-4f0e-9a21-9cf974c247fe
-caps.latest.revision: 33
-author: "kempb"
-ms.author: "kempb"
-manager: "ghogen"
-caps.handback.revision: 32
+caps.latest.revision: "33"
+author: gewarren
+ms.author: gewarren
+manager: ghogen
+ms.openlocfilehash: c79049765d2e80f7cbf5c8588b637f8ae46af6ec
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: fr-FR
+ms.lasthandoff: 10/31/2017
 ---
-# Journalisation des &#233;v&#233;nements pour les solutions Office
-  Vous pouvez utiliser l’observateur d’événements de Windows pour consulter les messages d’exception capturés par le [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] lors de l’installation ou de la désinstallation de solutions Office. Vous pouvez utiliser ces messages du journal des événements pour résoudre les problèmes d’installation et de déploiement.  
+# <a name="event-logging-for-office-solutions"></a>Journalisation des événements pour les solutions Office
+  Vous pouvez utiliser l’observateur d’événements de Windows pour consulter les messages d’exception capturés par le [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] lors de l’installation ou de la désinstallation de solutions Office. Vous pouvez utiliser ces messages du journal des événements pour résoudre les problèmes d’installation et de déploiement.  
   
  [!INCLUDE[appliesto_all](../vsto/includes/appliesto-all-md.md)]  
   
-## Lecture du journal des événements  
- Ouvrez l’**Observateur d’événements** et filtrez les événements que vous souhaitez afficher.  
+## <a name="reading-the-event-log"></a>Lecture du journal des événements  
+ Ouvrez l’ **Observateur d’événements** et filtrez les événements que vous souhaitez afficher.  
   
-#### Pour lire le journal des événements dans Windows Server 2003 et Windows XP  
+#### <a name="to-read-the-event-log-in-windows-server-2003-and-windows-xp"></a>Pour lire le journal des événements dans Windows Server 2003 et Windows XP  
   
 1.  Dans le Panneau de configuration, ouvrez **Outils d’administration**.  
   
-2.  Démarrez l’**Observateur d’événements**.  
+2.  Démarrez l’ **Observateur d’événements**.  
   
 3.  Dans la liste des journaux des événements, sélectionnez **Application**.  
   
-4.  Dans le menu **Affichage**, cliquez sur **Filtrer**.  
+4.  Dans le menu **Affichage** , cliquez sur **Filtrer**.  
   
-5.  Dans la liste **Source d’événement**, sélectionnez **VSTO 4.0**.  
+5.  Dans la liste **Source d’événement** , sélectionnez **VSTO 4.0**.  
   
-6.  Pour les événements d’installation, dans la zone **ID d’événement**, tapez **4096**.  
+6.  Pour les événements d’installation, dans la zone **ID d’événement** , tapez **4096**.  
   
 7.  Cliquez sur **OK** pour afficher la vue filtrée.  
   
-#### Pour lire le journal des événements dans Windows 7, Windows Vista et Windows Server 2008  
+#### <a name="to-read-the-event-log-in-windows-7-windows-vista-and-windows-server-2008"></a>Pour lire le journal des événements dans Windows 7, Windows Vista et Windows Server 2008  
   
 1.  Dans le Panneau de configuration, ouvrez **Outils d’administration**.  
   
-2.  Démarrez l’**Observateur d’événements**.  
+2.  Démarrez l’ **Observateur d’événements**.  
   
 3.  Développez **Journaux Windows**.  
   
 4.  Dans la liste des journaux des événements, sélectionnez **Application**.  
   
-5.  Dans le menu **Action**, cliquez sur **Filtrer le journal actuel**.  
+5.  Dans le menu **Action** , cliquez sur **Filtrer le journal actuel**.  
   
-6.  Dans la liste **Source d’événement**, sélectionnez **VSTO 4.0**.  
+6.  Dans la liste **Source d’événement** , sélectionnez **VSTO 4.0**.  
   
-7.  Pour les événements d’installation, dans la zone **ID d’événement**, tapez **4096**.  
+7.  Pour les événements d’installation, dans la zone **ID d’événement** , tapez **4096**.  
   
 8.  Cliquez sur **OK** pour afficher la vue filtrée.  
   
- L’observateur d’événements fournit les informations suivantes :  
+ L’observateur d’événements fournit les informations suivantes :  
   
 -   L’emplacement du manifeste de déploiement pour la solution.  
   
@@ -76,30 +78,30 @@ caps.handback.revision: 32
   
  Après la désinstallation d’une solution Office, les messages d’exception restent dans le journal des événements.  
   
- Pour afficher ou enregistrer les messages d’exception pendant l’exécution d’une solution Office, consultez [Débogage de projets Office](../vsto/debugging-office-projects.md) et [Débogage de projets Office](../vsto/debugging-office-projects.md).  
+ Pour afficher ou enregistrer les messages d’exception lors de l’exécution d’une solution Office, consultez [le débogage des projets Office](../vsto/debugging-office-projects.md) et [le débogage des projets Office](../vsto/debugging-office-projects.md).  
   
-### Localisation  
+### <a name="localization"></a>Localisation  
  La langue du message d’exception est déterminée par la langue du runtime de Visual Studio Tools pour Office. Par exemple, si le module linguistique japonais est installé sur l’ordinateur de l’utilisateur final, le message d’exception est écrit dans le journal des événements en japonais.  
   
-## Désactivation du journal des événements  
- Par défaut, le journal des événements est activé lorsque vous installez ou désinstallez des solutions Office. Vous pouvez désactiver le journal des événements en affectant la valeur « 1 » \(un\) à la variable d’environnement VSTO\_EVENTLOGDISABLED.  
+## <a name="disabling-the-event-logger"></a>Désactivation du journal des événements  
+ Par défaut, le journal des événements est activé lorsque vous installez ou désinstallez des solutions Office. Vous pouvez désactiver le journal des événements en affectant la valeur « 1 » (un) à la variable d’environnement VSTO_EVENTLOGDISABLED.  
   
-#### Pour désactiver le journal des événements  
+#### <a name="to-disable-the-event-log"></a>Pour désactiver le journal des événements  
   
 1.  Dans le Panneau de configuration, ouvrez **Système**.  
   
-2.  Sous l'onglet **Avancé**, cliquez sur **Variables d'environnement**.  
+2.  Sous l'onglet **Avancé** , cliquez sur **Variables d'environnement**.  
   
-3.  Dans le volet **Variables système**, cliquez sur **Nouveau**.  
+3.  Dans le volet **Variables système** , cliquez sur **Nouveau**.  
   
-4.  Dans la boîte de dialogue **Nouvelle variable système**, tapez **VSTO\_EVENTLOGDISABLED** dans la zone **Nom de la variable**.  
+4.  Dans la boîte de dialogue **Nouvelle variable système** , tapez **VSTO_EVENTLOGDISABLED** dans la zone **Nom de la variable** .  
   
-5.  Dans la zone **Valeur de la variable**, tapez **1**.  
+5.  Dans la zone **Valeur de la variable** , tapez **1**.  
   
 6.  Cliquez sur **OK**.  
   
-## Voir aussi  
- [Déploiement d'une solution Office](../vsto/deploying-an-office-solution.md)   
+## <a name="see-also"></a>Voir aussi  
+ [Déploiement d’une Solution Office](../vsto/deploying-an-office-solution.md)   
  [Dépannage du déploiement de solutions Office](../vsto/troubleshooting-office-solution-deployment.md)  
   
   

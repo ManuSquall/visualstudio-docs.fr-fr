@@ -4,34 +4,19 @@ ms.custom:
 ms.date: 04/26/2017
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-sdk
+ms.technology: vs-ide-sdk
 ms.tgt_pltfrm: 
 ms.topic: article
 ms.assetid: 446773a9-e6f7-4c0c-8dbc-9e303bf32eb1
-caps.latest.revision: 2
+caps.latest.revision: "2"
+author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-translation.priority.mt:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
-ms.translationtype: Machine Translation
-ms.sourcegitcommit: 9524ecc3cadef58821fba857de8e82e59eea9b43
-ms.openlocfilehash: b36b5e35758ad10109328d6f001e043ad7dcbe15
-ms.contentlocale: fr-fr
-ms.lasthandoff: 05/04/2017
-
+ms.openlocfilehash: 6a554a52fc5ef42f81d1531dbe63bf320e1cd72e
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: fr-FR
+ms.lasthandoff: 10/31/2017
 ---
 # <a name="animations-for-visual-studio"></a>Animations pour Visual Studio
 ## <a name="animation-fundamentals"></a>Notions de base de l’animation  
@@ -144,7 +129,7 @@ Illustrent informations complexes et de variable :
   
 -   Progression  
   
--   Errors  
+-   Erreurs  
   
 ##### <a name="structure"></a>Structure  
   
@@ -160,7 +145,7 @@ Illustrent informations complexes et de variable :
   
 -   Retournement d’images  
   
-##### <a name="time"></a>réflexion  
+##### <a name="time"></a>Heure  
   
 -   Afficher les modifications dans le temps, d’intervalle de temps et de capture  
   
@@ -228,12 +213,12 @@ Animations dans Visual Studio sont conçues pour répondre à une fonction spéc
   
 Cette illustration montre les styles d’animation que nous recommandons pour Visual Studio. Aucune animation ou animations subtiles comme fondu / disparition en fondu ne sont les plus fréquemment utilisées. Est une application limitée d’animations de mouvement comme croître et réduire, positions X et Y modifier et rotation. 
   
-![Styles d’animation recommandés pour Visual Studio](../../extensibility/ux-guidelines/media/1202-a_vsanimstyles.png "1202-a_VSAnimStyles")<br />Styles d'animation recommandés pour Visual Studio
+![Recommandé de styles d’animation pour Visual Studio](../../extensibility/ux-guidelines/media/1202-a_vsanimstyles.png "a_VSAnimStyles-1202")<br />Styles d'animation recommandés pour Visual Studio
   
 #### <a name="appear-and-disappear"></a>Apparaissent et disparaissent  
 Avec ce modèle, un élément bascule visible hors de vue et sans une animation de la transition.  
   
-![Apparaissent et disparaissent d’animation](../../extensibility/ux-guidelines/media/1202-b_appearanddisappear.png "1202-b_AppearAndDisappear")<br />Apparaissent et disparaissent d’animation  
+![Apparaissent et disparaissent animation](../../extensibility/ux-guidelines/media/1202-b_appearanddisappear.png "b_AppearAndDisappear-1202")<br />Apparaissent et disparaissent d’animation  
   
 ##### <a name="correct-usage"></a>Utilisation correcte  
 Éléments d’interface utilisateur actualisées qui doivent instantanément apparaissent ou disparaissent afin que l’utilisateur n’est ni distraits ni coupé. En outre, des animations lente peuvent être perçues comme un opération glisser de performances, qui ne se produise avec le style apparaissent et disparaissent.  
@@ -254,7 +239,7 @@ Le délai est généralement zéro.
 #### <a name="fade-in-and-fade-out"></a>Fondu avant et arrière  
 Avec ce modèle, un élément d’interface utilisateur passe à partir de n’est pas visible (0 % d’opacité) visible (opacité de 100 %), ou vice versa.  
   
-![Animation fondu avant et arrière](../../extensibility/ux-guidelines/media/1202-c_fadeinfadeout.png "1202-c_FadeInFadeOut")<br />Animation fondu avant et arrière  
+![Animation fondu et fondu](../../extensibility/ux-guidelines/media/1202-c_fadeinfadeout.png "c_FadeInFadeOut-1202")<br />Animation fondu avant et arrière  
   
 ##### <a name="correct-usage"></a>Utilisation correcte  
 Cela est recommandé les plus couramment d’animation de l’interface utilisateur. Il s’agit d’un effet subtil qui ajoute un intérêt sans interrompre le flux. Dans certains cas, l’utilisateur ne réalisez pas qu’il existe une animation, percevoir une lisse et de passage de système de l’interface utilisateur.  
@@ -280,7 +265,7 @@ Cela est recommandé les plus couramment d’animation de l’interface utilisat
 #### <a name="color-blend-from-a-to-b"></a>Mélange de couleurs de A à B  
 Avec ce modèle, un élément d’interface utilisateur change de couleur A par couleur B.  
   
-![Animation mélange de couleurs](../../extensibility/ux-guidelines/media/1202-d_colorblend.png "1202-d_ColorBlend")<br />Animation mélange de couleurs  
+![Animation mélange de couleurs](../../extensibility/ux-guidelines/media/1202-d_colorblend.png "d_ColorBlend-1202")<br />Animation mélange de couleurs  
   
 ##### <a name="correct-usage"></a>Utilisation correcte  
 En tant qu’une transition animée lorsqu’un élément d’interface utilisateur change de couleur à partir d’un contexte ou état vers un autre.  
@@ -304,7 +289,7 @@ En tant qu’une transition animée lorsqu’un élément d’interface utilisat
 #### <a name="expand-and-contract"></a>Développez et un contrat  
 Avec ce modèle, un élément d’interface utilisateur développe dans X, Y ou les deux sens.  
   
-![Développez et un contrat d’animation](../../extensibility/ux-guidelines/media/1202-e_expandcontract.png "1202-e_ExpandContract")<br />Développez et un contrat d’animation  
+![Développez et un contrat d’animation](../../extensibility/ux-guidelines/media/1202-e_expandcontract.png "e_ExpandContract-1202")<br />Développez et un contrat d’animation  
   
 ##### <a name="correct-usage"></a>Utilisation correcte  
 En tant qu’une transition animée lorsqu’un élément d’interface utilisateur modifie la taille d’un contexte à un autre.  
@@ -328,7 +313,7 @@ En tant qu’une transition animée lorsqu’un élément d’interface utilisat
 #### <a name="x-y-position-change"></a>X-Y placer des modifications  
 Avec ce modèle, un élément d’interface utilisateur change sa position X ou Y ou les deux.  
   
-![Animation de modification de position X-Y](~/extensibility/ux-guidelines/media/1202-f_xypositionchange.png "1202-f_XYPositionChange")<br />Animation de modification de position X-Y  
+![Animation de modification de position X-Y](../../extensibility/ux-guidelines/media/1202-f_xypositionchange.png "f_XYPositionChange-1202")<br />Animation de modification de position X-Y  
   
 ##### <a name="correct-usage"></a>Utilisation correcte  
 En tant qu’une transition animée lorsqu’un élément d’interface utilisateur change de position d’un contexte à un autre.  
@@ -351,7 +336,7 @@ Réorganisation de l’onglet
 #### <a name="rotate"></a>Faire pivoter  
 Avec ce modèle, l’élément d’interface utilisateur fait pivoter.  
   
-![Animation de rotation de l’interface utilisateur élément](~/extensibility/ux-guidelines/media/1202-g_rotate.png "1202-g_Rotate")<br />Animation de rotation de l’interface utilisateur élément  
+![Animation de rotation de l’interface utilisateur élément](../../extensibility/ux-guidelines/media/1202-g_rotate.png "g_Rotate-1202")<br />Animation de rotation de l’interface utilisateur élément  
   
 ##### <a name="correct-usage"></a>Utilisation correcte  
 Uniquement pour l’indicateur de progression en rotation indéterminé.  
@@ -370,56 +355,56 @@ Indicateur de progression indéterminée (rotation)
 ### <a name="common-shell-ui-actions-and-recommended-animations"></a>Les actions d’interface utilisateur shell courantes et les animations recommandées  
   
 #### <a name="tab-open"></a>Onglet ouvert  
-![Animation ouvrir l’onglet](../../extensibility/ux-guidelines/media/1202-h_tabopen.png "1202-h_TabOpen")<br />Animation ouvrir l’onglet  
+![Onglet animation ouvrir](../../extensibility/ux-guidelines/media/1202-h_tabopen.png "h_TabOpen-1202")<br />Animation ouvrir l’onglet  
     
 -   Style : apparaissent  
   
 -   Durée : zéro seconde  
 
 #### <a name="tab-close"></a>Onglet fermer  
-![Animation fermer l’onglet](../../extensibility/ux-guidelines/media/1202-i_tabclose.png "1202-i_TabClose")<br />Animation fermer l’onglet  
+![Onglet animation fermer](../../extensibility/ux-guidelines/media/1202-i_tabclose.png "i_TabClose-1202")<br />Animation fermer l’onglet  
   
 -   Style : Modification de la position X  
   
 -   Durée : 200 millisecondes  
   
 #### <a name="tab-reorder"></a>Onglet commande  
-![Animation réorganiser l’onglet dans Visual Studio](../../extensibility/ux-guidelines/media/1202-j_tabreorder.png "1202-j_TabReorder")<br />Animation réorganiser l’onglet
+![Onglet animation réorganiser dans Visual Studio](../../extensibility/ux-guidelines/media/1202-j_tabreorder.png "j_TabReorder-1202")<br />Animation réorganiser l’onglet
 
 -   Style : Modification de la position X  
   
 -   Durée : 200 millisecondes  
     
 #### <a name="close-floating-document"></a>Fermer document flottante  
-![Animation de document flottante fermer](../../extensibility/ux-guidelines/media/1202-k_closefloatingdocument.png "1202-k_CloseFloatingDocument")<br />Animation de document flottante fermer  
+![Fermer flottante d’animation de document](../../extensibility/ux-guidelines/media/1202-k_closefloatingdocument.png "k_CloseFloatingDocument-1202")<br />Animation de document flottante fermer  
    
 -   Style : apparaissent  
   
 -   Durée : 200 millisecondes   
  
 #### <a name="window-state-transition"></a>Transition d’état de fenêtre  
-![Animations de transition d’état fenêtre](../../extensibility/ux-guidelines/media/1202-l_windowstatetransition.png "1202-l_WindowStateTransition")<br />Animations de transition d’état fenêtre  
+![Animations de transition d’état fenêtre](../../extensibility/ux-guidelines/media/1202-l_windowstatetransition.png "l_WindowStateTransition-1202")<br />Animations de transition d’état fenêtre  
     
 -   Style : pour être cohérent avec d’autres fenêtres, permettent de système d’exploitation définissent l’animation de fermeture du document.  
   
 -   Durée : 200 millisecondes  
   
 #### <a name="menu-open"></a>Menu Ouvrir  
-![Animation ouvrir le menu](../../extensibility/ux-guidelines/media/1202-m_menuopen.png "1202-m_MenuOpen")<br />Animation ouvrir le menu  
+![Animation ouvrir le menu](../../extensibility/ux-guidelines/media/1202-m_menuopen.png "m_MenuOpen-1202")<br />Animation ouvrir le menu  
     
 -   Style : fondu  
   
 -   Durée : 200 millisecondes  
   
 #### <a name="menu-close"></a>Fermer le menu  
-![Animation fermer le menu](../../extensibility/ux-guidelines/media/1202-n_menuclose.png "1202-n_MenuClose")<br />Animation fermer le menu  
+![Animation fermer le menu](../../extensibility/ux-guidelines/media/1202-n_menuclose.png "n_MenuClose-1202")<br />Animation fermer le menu  
     
 -   Style : fondu  
   
 -   Durée : 200 millisecondes  
   
 #### <a name="auto-hide-tool-window-reveal"></a>Masquer automatiquement révéler de fenêtre outil  
-![Masquer automatiquement l’animation de révéler la fenêtre outil](../../extensibility/ux-guidelines/media/1202-o_autohidetoolwindowreveal.png "1202-o_AutoHideToolWindowReveal")<br />Masquer automatiquement l’animation de révéler la fenêtre outil  
+![Masquer automatiquement l’animation de révéler la fenêtre outil](../../extensibility/ux-guidelines/media/1202-o_autohidetoolwindowreveal.png "o_AutoHideToolWindowReveal-1202")<br />Masquer automatiquement l’animation de révéler la fenêtre outil  
 
 -   Style : apparaissent  
   

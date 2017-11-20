@@ -1,46 +1,29 @@
 ---
-title: IDebugProgram2::Terminate | Microsoft Docs
+title: IDebugProgram2::Terminate | Documents Microsoft
 ms.custom: 
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-sdk
+ms.technology: vs-ide-sdk
 ms.tgt_pltfrm: 
 ms.topic: article
-f1_keywords:
-- IDebugProgram2::Terminate
-helpviewer_keywords:
-- IDebugProgram2::Terminate
+f1_keywords: IDebugProgram2::Terminate
+helpviewer_keywords: IDebugProgram2::Terminate
 ms.assetid: 4d3127d3-b1e9-4b28-ac22-2f2eea255f86
-caps.latest.revision: 8
+caps.latest.revision: "8"
+author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-translation.priority.mt:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
+ms.openlocfilehash: 16f9e718eaebbb1ab82ea96c08661622ef7e1cd1
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
 ms.translationtype: MT
-ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
-ms.openlocfilehash: 259b7137650c1bc9d17e74a07e79543b884312ac
-ms.contentlocale: fr-fr
-ms.lasthandoff: 08/28/2017
-
+ms.contentlocale: fr-FR
+ms.lasthandoff: 10/31/2017
 ---
 # <a name="idebugprogram2terminate"></a>IDebugProgram2::Terminate
-Terminates the program.  
+Termine le programme.  
   
-## <a name="syntax"></a>Syntax  
+## <a name="syntax"></a>Syntaxe  
   
 ```cpp  
 HRESULT Terminate(   
@@ -52,14 +35,14 @@ HRESULT Terminate(
 int Terminate();  
 ```  
   
-## <a name="return-value"></a>Return Value  
- If successful, returns `S_OK`; otherwise, returns an error code.  
+## <a name="return-value"></a>Valeur de retour  
+ En cas de réussite, retourne `S_OK`; sinon, retourne un code d’erreur.  
   
-## <a name="remarks"></a>Remarks  
- If possible, the program will be terminated and unloaded from the process; otherwise, the debug engine (DE) will perform any necessary cleanup.  
+## <a name="remarks"></a>Remarques  
+ Si possible, le programme sera arrêté et déchargé du processus ; dans le cas contraire, le moteur de débogage (DE) effectue tout nettoyage nécessaire.  
   
- This method or the [Terminate](../../../extensibility/debugger/reference/idebugprocess2-terminate.md) method is called by the IDE, typically in response to the user halting all debugging. The implementation of this method should, ideally, terminate the program within the process. If this is not possible, the DE should prevent the program from running any more in this process (and do any necessary cleanup). If the `IDebugProcess2::Terminate` method was called by the IDE, the entire process will be terminated sometime after the `IDebugProgram2::Terminate` method is called.  
+ Cette méthode ou la [Terminate](../../../extensibility/debugger/reference/idebugprocess2-terminate.md) méthode est appelée par l’IDE, généralement en réponse à l’utilisateur d’arrêter le débogage de tous les. L’implémentation de cette méthode doit terminer dans l’idéal, le programme au sein du processus. Si ce n’est pas possible, le DE doit empêcher le programme en cours d’exécution d’autres dans ce processus (et effectuer tout nettoyage nécessaire). Si le `IDebugProcess2::Terminate` méthode a été appelée par l’IDE, la totalité du processus va se terminer après le `IDebugProgram2::Terminate` méthode est appelée.  
   
-## <a name="see-also"></a>See Also  
+## <a name="see-also"></a>Voir aussi  
  [IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md)   
- [Terminate](../../../extensibility/debugger/reference/idebugprocess2-terminate.md)
+ [Arrêter](../../../extensibility/debugger/reference/idebugprocess2-terminate.md)

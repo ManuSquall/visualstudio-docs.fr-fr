@@ -1,45 +1,30 @@
 ---
-title: IDebugCustomAttributeQuery::IsCustomAttributeDefined | Microsoft Docs
+title: IDebugCustomAttributeQuery::IsCustomAttributeDefined | Documents Microsoft
 ms.custom: 
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-sdk
+ms.technology: vs-ide-sdk
 ms.tgt_pltfrm: 
 ms.topic: article
 helpviewer_keywords:
 - IDebugCustomAttributeQuery::IsCustomAttributeDefined
 - IsCustomAttributeDefined
 ms.assetid: c7425db6-4347-4f69-8f88-337ddaa34fa6
-caps.latest.revision: 9
+caps.latest.revision: "9"
+author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-translation.priority.mt:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
+ms.openlocfilehash: 1b3a98d0d2b1ade880004f8c4853f8609bed76d4
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
 ms.translationtype: MT
-ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
-ms.openlocfilehash: 015b4918d9e7be0c777b4d5ff346798e58c63192
-ms.contentlocale: fr-fr
-ms.lasthandoff: 08/28/2017
-
+ms.contentlocale: fr-FR
+ms.lasthandoff: 10/31/2017
 ---
 # <a name="idebugcustomattributequeryiscustomattributedefined"></a>IDebugCustomAttributeQuery::IsCustomAttributeDefined
-Determines if the specified custom attribute is defined.  
+Détermine si l’attribut personnalisé spécifié est défini.  
   
-## <a name="syntax"></a>Syntax  
+## <a name="syntax"></a>Syntaxe  
   
 ```cpp  
 HRESULT IsCustomAttributeDefined(  
@@ -53,15 +38,15 @@ int IsCustomAttributeDefined(
 );  
 ```  
   
-#### <a name="parameters"></a>Parameters  
+#### <a name="parameters"></a>Paramètres  
  `pszCustomAttributeName`  
- [in] Name of the custom attribute.  
+ [in] Nom de l’attribut personnalisé.  
   
-## <a name="return-value"></a>Return Value  
- If the custom attribute is defined, returns `S_OK`; otherwise, returns `S_FALSE`.  
+## <a name="return-value"></a>Valeur de retour  
+ Si l’attribut personnalisé est défini, retourne `S_OK`; sinon, retourne `S_FALSE`.  
   
-## <a name="example"></a>Example  
- The following example shows how to implement this method for a **CDebugClassFieldSymbol** object that exposes the [IDebugCustomAttributeQuery](../../../extensibility/debugger/reference/idebugcustomattributequery.md) interface.  
+## <a name="example"></a>Exemple  
+ L’exemple suivant montre comment implémenter cette méthode pour un **CDebugClassFieldSymbol** objet qui expose la [IDebugCustomAttributeQuery](../../../extensibility/debugger/reference/idebugcustomattributequery.md) interface.  
   
 ```cpp  
 HRESULT CDebugClassFieldSymbol::IsCustomAttributeDefined(  
@@ -100,5 +85,5 @@ Error:
 }  
 ```  
   
-## <a name="see-also"></a>See Also  
+## <a name="see-also"></a>Voir aussi  
  [IDebugCustomAttributeQuery](../../../extensibility/debugger/reference/idebugcustomattributequery.md)

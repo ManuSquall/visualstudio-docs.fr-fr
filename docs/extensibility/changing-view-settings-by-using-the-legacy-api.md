@@ -1,49 +1,50 @@
 ---
-title: "Modification des param&#232;tres d&#39;affichage &#224; l&#39;aide de l&#39;API h&#233;rit&#233;e | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-helpviewer_keywords: 
-  - "éditeurs (Visual Studio SDK), hérités - modifier les paramètres d'affichage"
+title: "Modification des paramètres de la vue à l’aide de l’API héritée | Documents Microsoft"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+helpviewer_keywords: editors [Visual Studio SDK], legacy - changing view settings
 ms.assetid: 12c9b300-0894-4124-96a1-764326176d77
-caps.latest.revision: 18
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 18
+caps.latest.revision: "18"
+author: gregvanl
+ms.author: gregvanl
+manager: ghogen
+ms.openlocfilehash: fe5bd3b149981ca8183e9311185ef5d6ed19e48f
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: fr-FR
+ms.lasthandoff: 10/31/2017
 ---
-# Modification des param&#232;tres d&#39;affichage &#224; l&#39;aide de l&#39;API h&#233;rit&#233;e
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
-
-Les paramètres de l'éditeur principal fonctionnalité, telle que le retour automatique à la ligne, la marge de sélection, et l'espace virtuel, peut être modifié par l'utilisateur au moyen de la boîte de dialogue d' **Options** .  Toutefois, il est également possible de modifier ces paramètres par programmation.  
+# <a name="changing-view-settings-by-using-the-legacy-api"></a>Modification des paramètres de la vue à l’aide de l’API héritée
+Paramètres pour les fonctionnalités de l’éditeur de base, telles que le retour automatique à la marge de sélection et l’espace virtuel, peuvent être modifiés par l’utilisateur à l’aide de la **Options** boîte de dialogue. Toutefois, il est également possible de modifier ces paramètres par programmation.  
   
-## Modifier les paramètres à l'aide de l'API héritée  
- L'interface d' <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextEditorPropertyCategoryContainer> expose un jeu de propriétés de l'éditeur de texte.  L'affichage de texte contient une catégorie de propriétés \(GUID\_EditPropCategory\_View\_MasterSettings\) qui représente le groupe de paramètres modifiés par programme pour l'affichage de texte.  Une fois que les ajustements d'affichage ont été modifiés de cette façon, ils ne peuvent pas être modifiés dans la boîte de dialogue d' **Options** jusqu'à ce qu'ils sont réinitialisés.  
+## <a name="changing-settings-by-using-the-legacy-api"></a>Modification des paramètres à l’aide de l’API héritée  
+ Le <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextEditorPropertyCategoryContainer> interface expose un ensemble de propriétés de l’éditeur de texte. L’affichage de texte contient une catégorie de propriétés (GUID_EditPropCategory_View_MasterSettings) qui représente le groupe de paramètres modifiés par programme pour l’affichage de texte. Une fois que les paramètres d’affichage ont été modifiés de cette manière, ils ne peuvent pas être modifiés dans le **Options** boîte de dialogue jusqu'à ce qu’elles sont réinitialisées.  
   
- Voici le processus habituel pour modifier les ajustements d'affichage pour une instance du éditeur principal.  
+ Voici le processus classique permettant de modifier les paramètres d’affichage d’une instance de l’éditeur principal.  
   
-1.  appelez `QueryInterface` sur \(<xref:Microsoft.VisualStudio.TextManager.Interop.VsTextView>\) pour l'interface d' <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextEditorPropertyCategoryContainer> .  
+1.  Appelez `QueryInterface` sur le (<xref:Microsoft.VisualStudio.TextManager.Interop.VsTextView>) pour le <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextEditorPropertyCategoryContainer> interface.  
   
-2.  Appelez la méthode d' <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextEditorPropertyCategoryContainer.GetPropertyCategory%2A> , en spécifiant une valeur de GUID\_EditPropCategory\_View\_MasterSettings pour le paramètre d' `rguidCategory` .  
+2.  Appelez le <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextEditorPropertyCategoryContainer.GetPropertyCategory%2A> méthode, en spécifiant une valeur de GUID_EditPropCategory_View_MasterSettings pour la `rguidCategory` paramètre.  
   
-     De cette façon retourne un pointeur vers l'interface d' <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextEditorPropertyCategoryContainer> , qui contient l'ensemble de propriétés de liaison pour la vue.  Tous les paramètres à ce groupe sont définitivement convertis.  Si un paramètre n'est pas à ce groupe, il effectue les options spécifiées dans la boîte de dialogue d' **Options** ou les ordres de l'utilisateur.  
+     Cette opération retourne un pointeur vers le <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextEditorPropertyCategoryContainer> interface, qui contient le jeu de propriétés forcés pour la vue. Tous les paramètres de ce groupe sont définitivement forcés. Si un paramètre n’est pas dans ce groupe, puis il suit les options spécifiées dans le **Options** boîte de dialogue ou les commandes de l’utilisateur.  
   
-3.  Appelez la méthode d' <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextEditorPropertyContainer.SetProperty%2A> , en spécifiant la valeur appropriée de paramètres dans le paramètre d' `idprop` .  
+3.  Appelez le <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextEditorPropertyContainer.SetProperty%2A> méthode, en spécifiant la valeur de paramètres appropriés dans le `idprop` paramètre.  
   
-     par exemple, pour forcer le retour automatique à la ligne, l' <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextEditorPropertyContainer.SetProperty%2A> d'appel et spécifier une valeur de VSEDITPROPID\_ViewLangOpt\_WordWrap, `vt` pour le paramètre d' `idprop` .  Dans cet appel, `vt` est a VARIANT du type VT\_BOOL et `vt.boolVal` est VARIANT\_TRUE.  
+     Par exemple, pour forcer le retour automatique à, appelez <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextEditorPropertyContainer.SetProperty%2A> et spécifiez une valeur de VSEDITPROPID_ViewLangOpt_WordWrap, `vt` pour la `idprop` paramètre. Dans cet appel, `vt` est une variante de type VT_BOOL et `vt.boolVal` a la valeur VARIANT_TRUE.  
   
-## Réinitialiser les ajustements d'affichage modifiés  
- Pour réinitialiser tout ajustement d'affichage modifié pour une instance du éditeur principal, appeler la méthode d' <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextEditorPropertyContainer.RemoveProperty%2A> et spécifier la valeur appropriée de paramètre dans le paramètre d' `idprop` .  
+## <a name="resetting-changed-view-settings"></a>La réinitialisation des paramètres d’affichage modifié  
+ Pour rétablir n’importe quelle vue modifiée définition d’une instance de l’éditeur principal, appelez le <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextEditorPropertyContainer.RemoveProperty%2A> (méthode) et spécifiez la valeur du paramètre approprié dans le `idprop` paramètre.  
   
- par exemple, pour permettre au retour automatique à la ligne pour flotter librement, vous le supprimeriez de la catégorie de propriété <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextEditorPropertyContainer.RemoveProperty%2A> appelant et en spécifiant une valeur de VSEDITPROPID\_ViewLangOpt\_WordWrap pour le paramètre d' `idprop` .  
+ Par exemple, pour permettre le retour automatique à faire flotter librement, vous serez supprimer à partir de la catégorie de propriété en appelant <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextEditorPropertyContainer.RemoveProperty%2A> et en spécifiant une valeur de VSEDITPROPID_ViewLangOpt_WordWrap pour la `idprop` paramètre.  
   
- Pour supprimer tous les paramètres modifiés pour l'éditeur principal immédiatement, spécifiez une valeur de VSEDITPROPID\_ViewComposite\_AllCodeWindowDefaults, VT pour le paramètre d' `idprop` .  Dans cet appel, le VT est a VARIANT du type VT\_BOOL et vt.boolVal est VARIANT\_TRUE.  
+ Pour supprimer tous les paramètres de l’éditeur de base à la fois, spécifiez une valeur de VSEDITPROPID_ViewComposite_AllCodeWindowDefaults, vt pour le `idprop` paramètre. Dans cet appel, vt est une variante de type VT_BOOL et vt.boolVal a la valeur VARIANT_TRUE.  
   
-## Voir aussi  
- [Dans l'éditeur de base](../extensibility/inside-the-core-editor.md)   
- [L'accès à theText vue à l'aide de l'API héritée](../extensibility/accessing-thetext-view-by-using-the-legacy-api.md)   
+## <a name="see-also"></a>Voir aussi  
+ [Dans l’éditeur de base](../extensibility/inside-the-core-editor.md)   
+ [L’accès à theText vue à l’aide de l’API héritée](../extensibility/accessing-thetext-view-by-using-the-legacy-api.md)   
  [Options, boîte de dialogue](../ide/reference/options-dialog-box-visual-studio.md)

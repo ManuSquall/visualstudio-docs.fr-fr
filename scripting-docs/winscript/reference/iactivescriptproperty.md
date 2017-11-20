@@ -1,30 +1,33 @@
 ---
-title: "IActiveScriptProperty | Microsoft Docs"
-ms.custom: ""
-ms.date: "01/18/2017"
-ms.prod: "windows-script-interfaces"
-ms.reviewer: ""
-ms.suite: ""
-ms.tgt_pltfrm: ""
-ms.topic: "reference"
-helpviewer_keywords: 
-  - "IActiveScriptProperty (interface)"
+title: IActiveScriptProperty | Documents Microsoft
+ms.custom: 
+ms.date: 01/18/2017
+ms.prod: windows-script-interfaces
+ms.reviewer: 
+ms.suite: 
+ms.tgt_pltfrm: 
+ms.topic: reference
+helpviewer_keywords: IActiveScriptProperty interface
 ms.assetid: 18a0049a-c817-4c9a-8cec-64ad5de96ff7
-caps.latest.revision: 5
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 5
+caps.latest.revision: "5"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: 13603bf00d758a99ba421c4ed2ef23ed30f3c25b
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.translationtype: MT
+ms.contentlocale: fr-FR
+ms.lasthandoff: 10/27/2017
 ---
-# IActiveScriptProperty
-L'interface d' `IActiveScriptProperty` est utilisée pour obtenir et définir des propriétés de configuration.  
+# <a name="iactivescriptproperty"></a>IActiveScriptProperty
+Le `IActiveScriptProperty` interface est utilisée pour obtenir et définir les propriétés de configuration.  
   
-## Méthodes dans l'ordre Vtable  
+## <a name="methods-in-vtable-order"></a>Méthodes dans l'ordre Vtable  
   
 |Méthode|Description|  
-|-------------|-----------------|  
-|[GetProperty](../../winscript/reference/iactivescriptproperty-getproperty.md)|Obtient la propriété spécifiée par le paramètre.|  
+|------------|-----------------|  
+|[GetProperty](../../winscript/reference/iactivescriptproperty-getproperty.md)|Obtient la propriété qui est spécifiée par le paramètre.|  
 |[SetProperty](../../winscript/reference/iactivescriptproperty-setproperty.md)|Définit la propriété qui est spécifiée par le paramètre.|  
   
-## Voir aussi  
- [Script actif, interfaces](../../winscript/reference/active-script-interfaces.md)
+## <a name="see-also"></a>Voir aussi  
+ [Interfaces de script actives](../../winscript/reference/active-script-interfaces.md)

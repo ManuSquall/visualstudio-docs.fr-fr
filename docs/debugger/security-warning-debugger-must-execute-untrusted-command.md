@@ -1,40 +1,40 @@
 ---
-title: "Avertissement de s&#233;curit&#233;&#160;: Le d&#233;bogueur doit ex&#233;cuter cette commande non approuv&#233;e | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-debug"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "vs.debug.sourceserver.securityalert"
-dev_langs: 
-  - "FSharp"
-  - "VB"
-  - "CSharp"
-  - "C++"
+title: "Avertissement de sécurité : Le débogueur doit exécuter une commande non approuvée | Documents Microsoft"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-debug
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords: vs.debug.sourceserver.securityalert
+dev_langs:
+- CSharp
+- VB
+- FSharp
+- C++
 ms.assetid: e5c004b3-b364-4098-ac98-770076ca9981
-caps.latest.revision: 13
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 13
+caps.latest.revision: "13"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: 21daec7113462221b392b5f29b1604a24fe5c74c
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: fr-FR
+ms.lasthandoff: 10/31/2017
 ---
-# Avertissement de s&#233;curit&#233;&#160;: Le d&#233;bogueur doit ex&#233;cuter cette commande non approuv&#233;e
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
-
-Cette boîte de dialogue d'avertissement apparaît lorsque vous utilisez le serveur source.  Elle indique que la commande que le débogueur a besoin d'exécuter pour obtenir le code source n'est pas dans la liste de commandes de confiance pour le serveur source contenue dans le fichier srcsvr.ini.  Si c'est une commande valide, vous pouvez l'ajouter au fichier srcsvr.ini.  Sinon, vous ne devez pas l'exécuter.  Pour plus d'informations, consultez [Spécifier les fichiers de symbole \(.pdb\) et les fichiers sources](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md).  
+# <a name="security-warning-debugger-must-execute-untrusted-command"></a>Avertissement de sécurité : Le débogueur doit exécuter cette commande non approuvée
+Cette boîte de dialogue d'avertissement apparaît lorsque vous utilisez le serveur source. Elle indique que la commande que le débogueur a besoin d'exécuter pour obtenir le code source n'est pas dans la liste de commandes de confiance pour le serveur source contenue dans le fichier srcsvr.ini. Si c'est une commande valide, vous pouvez l'ajouter au fichier srcsvr.ini. Sinon, vous ne devez pas l'exécuter. Pour plus d’informations, consultez [Spécifier les fichiers de symboles (.pdb) et les fichiers sources](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md).  
   
-## Texte du message  
- Le débogueur doit exécuter cette commande non approuvée pour obtenir le code source du serveur source.  
+## <a name="message-text"></a>Texte du message  
+ **Le débogueur doit exécuter cette commande non approuvée pour obtenir le code source à partir du serveur source.**  
   
- Si le fichier de symboles de débogage \(\*.pdb\) ne provient pas d'une source connue et approuvée, cette commande peut être non valide ou dangereuse à exécuter.  
+ **Si le débogage de fichier de symboles (\*.pdb) est non à partir d’une source connue et approuvée, cette commande peut être non valide ou dangereuse à exécuter.**  
   
- Souhaitez\-vous exécuter cette commande ?  
+ **Voulez-vous exécuter cette commande ?**  
   
-## Liste UIElement  
+## <a name="uielement-list"></a>Liste UIElement  
  Zone de texte  
  Commande du fichier .pdb à exécuter.  
   
@@ -44,7 +44,7 @@ Cette boîte de dialogue d'avertissement apparaît lorsque vous utilisez le serv
  Ne pas exécuter  
  Arrête l'exécution de la commande et le téléchargement du fichier à partir du serveur source.  
   
-## Voir aussi  
- [Spécifier les fichiers de symbole \(.pdb\) et les fichiers sources](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md)   
+## <a name="see-also"></a>Voir aussi  
+ [Spécifiez les symboles (.pdb) et les fichiers sources](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md)   
  [Sécurité du débogueur](../debugger/debugger-security.md)   
- [Serveur source](http://msdn.microsoft.com/library/windows/desktop/ms680641\(v=vs.85\).asp)
+ [Serveur source](http://msdn.microsoft.com/library/windows/desktop/ms680641\(v=vs.85\).aspx)

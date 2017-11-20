@@ -1,27 +1,30 @@
 ---
-title: "IActiveScriptDebug::GetScriptTextAttributes | Microsoft Docs"
-ms.custom: ""
-ms.date: "01/18/2017"
-ms.prod: "windows-script-interfaces"
-ms.reviewer: ""
-ms.suite: ""
-ms.tgt_pltfrm: ""
-ms.topic: "reference"
+title: IActiveScriptDebug::GetScriptTextAttributes | Documents Microsoft
+ms.custom: 
+ms.date: 01/18/2017
+ms.prod: windows-script-interfaces
+ms.reviewer: 
+ms.suite: 
+ms.tgt_pltfrm: 
+ms.topic: reference
 apiname: IActiveScriptDebug.GetScriptTextAttributes
 apilocation: jscript.dll
-helpviewer_keywords: 
-  - "IActiveScriptDebug::GetScriptTextAttributes"
+helpviewer_keywords: IActiveScriptDebug::GetScriptTextAttributes
 ms.assetid: 2e8bda34-db0c-4b2e-a17f-82c4e0dbbc8c
-caps.latest.revision: 8
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 8
+caps.latest.revision: "8"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: c8e9cd76da3e754eabce836b386893043dcd0622
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.translationtype: MT
+ms.contentlocale: fr-FR
+ms.lasthandoff: 10/27/2017
 ---
-# IActiveScriptDebug::GetScriptTextAttributes
-Retourne les attributs de texte pour un bloc de texte arbitraire de script.  
+# <a name="iactivescriptdebuggetscripttextattributes"></a>IActiveScriptDebug::GetScriptTextAttributes
+Retourne les attributs de texte pour un bloc arbitraire de texte du script.  
   
-## Syntaxe  
+## <a name="syntax"></a>Syntaxe  
   
 ```  
 HRESULT GetScriptTextAttributes(  
@@ -33,43 +36,43 @@ HRESULT GetScriptTextAttributes(
 );  
 ```  
   
-#### Paramètres  
+#### <a name="parameters"></a>Paramètres  
  `pstrCode`  
- \[in\]  le texte de bloc de script.  Cette chaîne n'a pas besoin d'être null terminée.  
+ [in] Le texte de bloc de script. Cette chaîne ne doit pas être null terminé.  
   
  `uNumCodeChars`  
- \[in\]  Le nombre de caractères du texte de bloc de script.  
+ [in] Le nombre de caractères dans le texte de bloc de script.  
   
  `pstrDelimiter`  
- \[in\]  adresse du séparateur d'END\-de\-script\-bloc.  Lorsque `pstrCode` est analysé d'un flux de texte, l'hôte utilise généralement un séparateur, par exemple deux guillemets simples \('\), pour détecter la fin du bloc de script.  Ce paramètre spécifie que le séparateur qui l'hôte utilisé, ce qui permet au moteur de script pour fournir du prétraitement primitive conditionnel \(par exemple, en remplaçant un guillemet simple \[« \] par deux guillemets simples pour l " utilisation comme séparateur\).  Exactement comment \(et\) si le moteur de script utilise ces informations dépendent du moteur de script.  Définissez ce paramètre POUR ANNULER si l'hôte n'avait pas l'habitude un séparateur pour marquer la fin du bloc de script.  
+ [in] Adresse du délimiteur de fin du bloc de script. Lorsque `pstrCode` est analysé à partir d’un flux de texte, l’hôte utilise généralement un délimiteur, telles que les guillemets («), pour détecter la fin du bloc de script. Ce paramètre spécifie le délimiteur de l’hôte utilisé, ce qui permet au moteur de script pour fournir certains prétraitement primitifs conditionnelle (par exemple, en remplaçant un guillemet simple ['] par deux guillemets simples à utiliser comme délimiteur). Exactement comment (et si) le moteur script utilise ces informations varient selon le moteur de script. Définissez ce paramètre avec la valeur NULL si l’hôte n’utilisez pas un délimiteur pour marquer la fin du bloc de script.  
   
  `dwFlags`  
- \[in\]  Balises associées au bloc de script.  Peut être une combinaison de ces valeurs :  
+ [in] Indicateurs associés au bloc de script. Peut être une combinaison des valeurs suivantes :  
   
 |Constante|Valeur|Description|  
-|---------------|------------|-----------------|  
-|GETATTRTYPE\_DEPSCAN|0x0001|Indique que les identificateurs et les opérateurs de débogage doivent être marqués avec les indicateurs de SOURCETEXT\_ATTR\_IDENTIFIER et de SOURCETEXT\_ATTR\_MEMBERLOOKUP, respectivement.|  
-|GETATTRFLAG\_THIS|0x0100|Indique que l'identificateur de l'objet actuel doit être marqué avec la balise de SOURCETEXT\_ATTR\_THIS.|  
-|GETATTRFLAG\_HUMANTEXT|0x8000|Indique que le contenu de la chaîne et le texte de commentaire doivent être marqués avec la balise de SOURCETEXT\_ATTR\_HUMANTEXT.|  
+|--------------|-----------|-----------------|  
+|GETATTRTYPE_DEPSCAN|0 x 0001|Indique que les opérateurs de point et les identificateurs doivent être identifiés avec les indicateurs SOURCETEXT_ATTR_IDENTIFIER et SOURCETEXT_ATTR_MEMBERLOOKUP, respectivement.|  
+|GETATTRFLAG_THIS|0 x 0100|Indique que l’identificateur de l’objet en cours doit être identifié avec l’indicateur SOURCETEXT_ATTR_THIS.|  
+|GETATTRFLAG_HUMANTEXT|0 x 8000|Indique que le texte de commentaire et de contenu de chaîne doit être identifié avec l’indicateur SOURCETEXT_ATTR_HUMANTEXT.|  
   
  `pattr`  
- \[in, out\]  mémoire tampon pour contenir les attributs retournés.  
+ [dans, out] Mémoire tampon devant contenir les attributs retournés.  
   
-## Valeur de retour  
- La méthode retourne `HRESULT`.  Les valeurs possibles incluent, mais ne sont pas limitées à, celles dans le tableau suivant.  
+## <a name="return-value"></a>Valeur de retour  
+ La méthode retourne `HRESULT`. Les valeurs possibles sont notamment celles figurant dans le tableau suivant.  
   
 |Valeur|Description|  
-|------------|-----------------|  
+|-----------|-----------------|  
 |`S_OK`|La méthode a réussi.|  
   
-## Notes  
- Un hôte intelligent qui implémente l'interface d' `IDebugDocumentText` peut utiliser cette méthode pour déléguer des appels à la méthode d' `IDebugDocumentText::GetText` .  
+## <a name="remarks"></a>Remarques  
+ Un hôte actif qui implémente `IDebugDocumentText` interface cette méthode permet de déléguer les appels à la `IDebugDocumentText::GetText` (méthode).  
   
- Cette méthode pour les blocs de script ; la méthode d' `GetScriptletTextAttributes` est pour les scriptlets.  
+ Cette méthode pour les blocs de script ; le `GetScriptletTextAttributes` méthode concerne les scriptlets.  
   
-## Voir aussi  
- [IActiveScriptDebug, interface](../../winscript/reference/iactivescriptdebug-interface.md)   
+## <a name="see-also"></a>Voir aussi  
+ [IActiveScriptDebug (Interface)](../../winscript/reference/iactivescriptdebug-interface.md)   
  [IActiveScriptDebug::GetScriptletTextAttributes](../../winscript/reference/iactivescriptdebug-getscriptlettextattributes.md)   
- [IDebugDocumentText, interface](../../winscript/reference/idebugdocumenttext-interface.md)   
+ [IDebugDocumentText (Interface)](../../winscript/reference/idebugdocumenttext-interface.md)   
  [IDebugDocumentText::GetText](../../winscript/reference/idebugdocumenttext-gettext.md)   
- [SOURCE\_TEXT\_ATTR, énumération](../../winscript/reference/source-text-attr-enumeration.md)
+ [Énumération SOURCE_TEXT_ATTR](../../winscript/reference/source-text-attr-enumeration.md)

@@ -1,46 +1,29 @@
 ---
-title: IDebugObject::IsReadOnly | Microsoft Docs
+title: IDebugObject::IsReadOnly | Documents Microsoft
 ms.custom: 
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-sdk
+ms.technology: vs-ide-sdk
 ms.tgt_pltfrm: 
 ms.topic: article
-f1_keywords:
-- IDebugObject::IsReadOnly
-helpviewer_keywords:
-- IDebugObject::IsReadOnly method
+f1_keywords: IDebugObject::IsReadOnly
+helpviewer_keywords: IDebugObject::IsReadOnly method
 ms.assetid: c460f772-d08a-4b36-81f3-dff6a51a93fd
-caps.latest.revision: 9
+caps.latest.revision: "9"
+author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-translation.priority.mt:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
+ms.openlocfilehash: 973e3b2b85012157d90fb09e9be669f83b7c9147
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
 ms.translationtype: MT
-ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
-ms.openlocfilehash: 13ede24192408b7b5a68c13d37a4535ccf352fed
-ms.contentlocale: fr-fr
-ms.lasthandoff: 08/28/2017
-
+ms.contentlocale: fr-FR
+ms.lasthandoff: 10/31/2017
 ---
 # <a name="idebugobjectisreadonly"></a>IDebugObject::IsReadOnly
-Determines if this object is read-only.  
+Détermine si cet objet est en lecture seule.  
   
-## <a name="syntax"></a>Syntax  
+## <a name="syntax"></a>Syntaxe  
   
 ```cpp  
 HRESULT IsReadOnly(   
@@ -54,15 +37,15 @@ int IsReadOnly(
 );  
 ```  
   
-#### <a name="parameters"></a>Parameters  
+#### <a name="parameters"></a>Paramètres  
  `pfIsReadOnly`  
- [out] Returns non-zero (`TRUE`) if this object is read-only; otherwise, returns zero (`FALSE`).  
+ [out] Retourne zéro (`TRUE`) si cet objet est en lecture seule ; sinon, retourne la valeur zéro (`FALSE`).  
   
-## <a name="return-value"></a>Return Value  
- If successful, returns S_OK; otherwise, returns an error code.  
+## <a name="return-value"></a>Valeur de retour  
+ En cas de réussite, retourne S_OK ; Sinon, retourne un code d’erreur.  
   
-## <a name="remarks"></a>Remarks  
- A read-only object cannot have its value changed after it is created.  
+## <a name="remarks"></a>Remarques  
+ Un objet en lecture seule ne peut pas avoir de sa valeur modifiée après sa création.  
   
-## <a name="see-also"></a>See Also  
+## <a name="see-also"></a>Voir aussi  
  [IDebugObject](../../../extensibility/debugger/reference/idebugobject.md)

@@ -1,55 +1,55 @@
 ---
-title: "Utilisation d’annotations SAL pour r&#233;duire les d&#233;fauts du code C/C++ | Microsoft Docs"
-ms.custom: ""
-ms.date: "12/05/2016"
-ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-devops-test"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-helpviewer_keywords: 
-  - "annotations"
-  - "annotations SAL"
-  - "analyse du code, annotation"
+title: "Utilisation d’Annotations SAL pour réduire les défauts du Code C/C++ | Documents Microsoft"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-code-analysis
+ms.tgt_pltfrm: 
+ms.topic: article
+helpviewer_keywords:
+- annotations
+- SAL annotations
+- code analysis, annotation
 ms.assetid: a16e47d0-6f3e-4ed6-8883-459b2874e9a4
-caps.latest.revision: 27
-caps.handback.revision: 27
-author: "corob-msft"
-ms.author: "corob"
-manager: "ghogen"
+caps.latest.revision: "27"
+author: mikeblome
+ms.author: mblome
+manager: ghogen
+ms.openlocfilehash: a362829f776cb1a9a50609c83821ba569537796a
+ms.sourcegitcommit: fb751e41929f031d1a9247bc7c8727312539ad35
+ms.translationtype: MT
+ms.contentlocale: fr-FR
+ms.lasthandoff: 11/15/2017
 ---
-# Utilisation d’annotations SAL pour r&#233;duire les d&#233;fauts du code C/C++
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
-
-SAL est le langage d'annotation de code source Microsoft.  En utilisant des annotations de code source, vous pouvez rendre l'intention derrière votre code explicite.  Ces annotations permettent également aux outils d'analyse statique automatisés d'analyser votre code plus précisément, avec considérablement moins faux positifs et faux négatifs.  
+# <a name="using-sal-annotations-to-reduce-cc-code-defects"></a>Utilisation d’annotations SAL pour réduire les défauts du code C/C++
+SAL est le langage d’annotation Microsoft source code. À l’aide des annotations de code source, faire l’intention derrière votre code explicite. Ces annotations permettent également des outils d’automatisation de l’analyse statique analyser votre code de façon plus précise, avec beaucoup moins de faux positifs et de faux négatifs.  
   
- Les éléments de cette section de la documentation expliquent les aspects SAL, fournissent la référence pour la syntaxe SAL, et fournissent des exemples de son utilisation.  
+ Les articles de cette section de la documentation décrivent les aspects de SAL fournissent de référence pour la syntaxe SAL et donnent des exemples de son utilisation.  
   
 -   [Présentation de SAL](../code-quality/understanding-sal.md)  
   
-     Fournit des informations et des exemples qui illustrent les principales annotations SAL.  
+     Fournit des informations et des exemples qui montrent le principaux les annotations SAL.  
   
--   [Annotation de paramètres de fonction et valeurs de retour](../code-quality/annotating-function-parameters-and-return-values.md)  
+-   [Annotation des paramètres de fonction et des valeurs de retour](../code-quality/annotating-function-parameters-and-return-values.md)  
   
-     Répertorie les annotations SAL des fonctions et des paramètres de fonction.  
+     Répertorie les annotations SAL pour les fonctions et les paramètres de fonction.  
   
 -   [Annotation du comportement d’une fonction](../code-quality/annotating-function-behavior.md)  
   
-     Répertorie les annotations SAL des fonctions et des comportements des fonctions.  
+     Répertorie les annotations SAL pour les fonctions et le comportement de la fonction.  
   
--   [Structs et classes d’annotation](../code-quality/annotating-structs-and-classes.md)  
+-   [Annotations des structs et des classes](../code-quality/annotating-structs-and-classes.md)  
   
-     Répertorie les annotations SAL des structures et des classes.  
+     Répertorie les annotations SAL pour les structures et les classes.  
   
 -   [Annotation du comportement de verrouillage](../code-quality/annotating-locking-behavior.md)  
   
      Explique comment utiliser des annotations SAL avec les mécanismes de verrouillage.  
   
--   [Spécification du moment où une annotation est applicable et dans quel cas](../code-quality/specifying-when-and-where-an-annotation-applies.md)  
+-   [Spécification du moment et de l’endroit où une annotation s’applique](../code-quality/specifying-when-and-where-an-annotation-applies.md)  
   
-     Répertorie les annotations SAL qui spécifient l'état ou la portée \(jeu\) d'autres annotations SAL.  
+     Répertorie les annotations SAL qui spécifient la condition ou l’étendue (sélection élective), d’autres annotations SAL.  
   
 -   [Fonctions intrinsèques](../code-quality/intrinsic-functions.md)  
   
@@ -57,10 +57,10 @@ SAL est le langage d'annotation de code source Microsoft.  En utilisant des anno
   
 -   [Meilleures pratiques et exemples](../code-quality/best-practices-and-examples-sal.md)  
   
-     Fournit des exemples montrant comment utiliser des annotations SAL.  Explique également les pièges courants.  
+     Fournit des exemples qui montrent comment utiliser les annotations SAL. Explique également les pièges les plus courants.  
   
-## Ressources connexes  
- [Blog de l'équipe d'analyse du code](http://go.microsoft.com/fwlink/?LinkId=251197)  
+## <a name="related-resources"></a>Ressources connexes  
+ [Blog de l’équipe analyse du code](http://go.microsoft.com/fwlink/?LinkId=251197)  
   
-## Voir aussi  
- [Annotations SAL 2.0 pour les pilotes Windows](http://go.microsoft.com/fwlink/?LinkId=250979)
+## <a name="see-also"></a>Voir aussi  
+ [SAL 2.0 Annotations pour les pilotes Windows](http://go.microsoft.com/fwlink/?LinkId=250979)

@@ -1,46 +1,29 @@
 ---
-title: IDebugProgram2::GetProgramId | Microsoft Docs
+title: IDebugProgram2::GetProgramId | Documents Microsoft
 ms.custom: 
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-sdk
+ms.technology: vs-ide-sdk
 ms.tgt_pltfrm: 
 ms.topic: article
-f1_keywords:
-- IDebugProgram2::GetProgramId
-helpviewer_keywords:
-- IDebugProgram2::GetProgramId
+f1_keywords: IDebugProgram2::GetProgramId
+helpviewer_keywords: IDebugProgram2::GetProgramId
 ms.assetid: 2c31c0aa-2b71-46c7-849c-356e237d26f8
-caps.latest.revision: 11
+caps.latest.revision: "11"
+author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-translation.priority.mt:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
+ms.openlocfilehash: 094dde4330775b77a50ce98451fc9dafcd3bd23b
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
 ms.translationtype: MT
-ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
-ms.openlocfilehash: 4de4120528f5ecfda0d3e0ef373582a98d511bc2
-ms.contentlocale: fr-fr
-ms.lasthandoff: 08/28/2017
-
+ms.contentlocale: fr-FR
+ms.lasthandoff: 10/31/2017
 ---
 # <a name="idebugprogram2getprogramid"></a>IDebugProgram2::GetProgramId
-Gets a GUID for this program.  
+Obtient un GUID pour ce programme.  
   
-## <a name="syntax"></a>Syntax  
+## <a name="syntax"></a>Syntaxe  
   
 ```cpp  
 HRESULT GetProgramId(   
@@ -54,17 +37,17 @@ int GetProgramId(
 );  
 ```  
   
-#### <a name="parameters"></a>Parameters  
+#### <a name="parameters"></a>Paramètres  
  `pguidProgramId`  
- [out] Returns the `GUID` for this program.  
+ [out] Retourne le `GUID` pour ce programme.  
   
-## <a name="return-value"></a>Return Value  
- If successful, returns `S_OK`; otherwise, returns an error code.  
+## <a name="return-value"></a>Valeur de retour  
+ En cas de réussite, retourne `S_OK`; sinon, retourne un code d’erreur.  
   
-## <a name="remarks"></a>Remarks  
- A debug engine (DE) must return the program identifier originally passed to the [OnAttach](../../../extensibility/debugger/reference/idebugprogramnodeattach2-onattach.md) or [Attach](../../../extensibility/debugger/reference/idebugengine2-attach.md) methods. This allows identification of the program across debugger components.  
+## <a name="remarks"></a>Remarques  
+ Un moteur de débogage (DE) doit retourner l’identificateur de programme à l’origine passée à la [OnAttach](../../../extensibility/debugger/reference/idebugprogramnodeattach2-onattach.md) ou [attacher](../../../extensibility/debugger/reference/idebugengine2-attach.md) méthodes. Cela permet l’identification du programme dans le débogueur composants.  
   
-## <a name="see-also"></a>See Also  
+## <a name="see-also"></a>Voir aussi  
  [IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md)   
  [OnAttach](../../../extensibility/debugger/reference/idebugprogramnodeattach2-onattach.md)   
- [Attach](../../../extensibility/debugger/reference/idebugengine2-attach.md)
+ [Attacher](../../../extensibility/debugger/reference/idebugengine2-attach.md)

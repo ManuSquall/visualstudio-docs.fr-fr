@@ -1,46 +1,29 @@
 ---
-title: MESSAGETYPE | Microsoft Docs
+title: MESSAGETYPE | Documents Microsoft
 ms.custom: 
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-sdk
+ms.technology: vs-ide-sdk
 ms.tgt_pltfrm: 
 ms.topic: article
-f1_keywords:
-- MESSAGETYPE
-helpviewer_keywords:
-- MESSAGETYPE enumeration
+f1_keywords: MESSAGETYPE
+helpviewer_keywords: MESSAGETYPE enumeration
 ms.assetid: 800cc77d-3c27-4763-a9df-552a9384bd49
-caps.latest.revision: 11
+caps.latest.revision: "11"
+author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-translation.priority.mt:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
+ms.openlocfilehash: 7cbb3ddd27c7cbb92c7e248c5091d6fe0e21dc3e
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
 ms.translationtype: MT
-ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
-ms.openlocfilehash: 2df884c0e6e6945ff22da6ff38dfef2cc0d63d29
-ms.contentlocale: fr-fr
-ms.lasthandoff: 08/28/2017
-
+ms.contentlocale: fr-FR
+ms.lasthandoff: 10/31/2017
 ---
 # <a name="messagetype"></a>MESSAGETYPE
-Specifies the message type and reason.  
+Spécifie le type de message et la raison.  
   
-## <a name="syntax"></a>Syntax  
+## <a name="syntax"></a>Syntaxe  
   
 ```cpp  
 enum enum_MESSAGETYPE {   
@@ -65,38 +48,38 @@ public enum enum_MESSAGETYPE {
 };  
 ```  
   
-## <a name="members"></a>Members  
+## <a name="members"></a>Membres  
  MT_OUTPUTSTRING  
- Indicates that the message should be sent to the output window. This is mutually exclusive from `MT_MESSAGEBOX`.  
+ Indique que le message doit être envoyé à la fenêtre Sortie. Cela s’excluent mutuellement `MT_MESSAGEBOX`.  
   
  MT_MESSAGEBOX  
- Indicates that the message should be shown in a message box. This is mutually exclusive from `MT_OUTPUTSTRING`.  
+ Indique que le message doit s’afficher dans une boîte de message. Cela s’excluent mutuellement `MT_OUTPUTSTRING`.  
   
  MT_TYPE_MASK  
- A mask value to isolate the destination for the message.  
+ Une valeur de masque pour isoler la destination du message.  
   
  MT_REASON_EXCEPTION  
- Indicates that a message box is being shown as a result of an exception. This is mutually exclusive from `MT_REASON_TRACEPOINT`.  
+ Indique qu’une boîte de message est affichée à la suite d’une exception. Cela s’excluent mutuellement `MT_REASON_TRACEPOINT`.  
   
  MT_REASON_TRACEPOINT  
- Indicates that a message box is being shown as a result of hitting a tracepoint. This is mutually exclusive to `MT_REASON_EXCEPTION`.  
+ Indique qu’une boîte de message est affichée à la suite d’un point de trace. Cela s’excluent mutuellement pour `MT_REASON_EXCEPTION`.  
   
  MT_REASON_MASK  
- A mask value to isolate the reason for the message being shown.  
+ Une valeur de masque pour isoler la raison pour le message affiché.  
   
-## <a name="remarks"></a>Remarks  
- These values are returned from the [GetMessage](../../../extensibility/debugger/reference/idebugmessageevent2-getmessage.md) and [GetErrorMessage](../../../extensibility/debugger/reference/idebugerrorevent2-geterrormessage.md) methods.  
+## <a name="remarks"></a>Remarques  
+ Ces valeurs sont retournées à partir de la [GetMessage](../../../extensibility/debugger/reference/idebugmessageevent2-getmessage.md) et [GetErrorMessage](../../../extensibility/debugger/reference/idebugerrorevent2-geterrormessage.md) méthodes.  
   
- One of the reason values can be combined with one of the output destination values using a bitwise `OR`.  
+ Une des valeurs de la raison peut être combinée avec une des valeurs de destination de sortie à l’aide d’une opération de bits `OR`.  
   
-## <a name="requirements"></a>Requirements  
- Header: msdbg.h  
+## <a name="requirements"></a>Spécifications  
+ En-tête : msdbg.h  
   
- Namespace: Microsoft.VisualStudio.Debugger.Interop  
+ Namespace : Microsoft.VisualStudio.Debugger.Interop  
   
- Assembly: Microsoft.VisualStudio.Debugger.Interop.dll  
+ Assembly : Microsoft.VisualStudio.Debugger.Interop.dll  
   
-## <a name="see-also"></a>See Also  
- [Enumerations](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)   
+## <a name="see-also"></a>Voir aussi  
+ [Énumérations](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)   
  [GetMessage](../../../extensibility/debugger/reference/idebugmessageevent2-getmessage.md)   
  [GetErrorMessage](../../../extensibility/debugger/reference/idebugerrorevent2-geterrormessage.md)

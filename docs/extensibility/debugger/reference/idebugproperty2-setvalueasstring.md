@@ -1,46 +1,29 @@
 ---
-title: IDebugProperty2::SetValueAsString | Microsoft Docs
+title: IDebugProperty2::SetValueAsString | Documents Microsoft
 ms.custom: 
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-sdk
+ms.technology: vs-ide-sdk
 ms.tgt_pltfrm: 
 ms.topic: article
-f1_keywords:
-- IDebugProperty2::SetValueAsString
-helpviewer_keywords:
-- IDebugProperty2::SetValueAsString
+f1_keywords: IDebugProperty2::SetValueAsString
+helpviewer_keywords: IDebugProperty2::SetValueAsString
 ms.assetid: 9e6a5054-41b7-4223-b509-b93689d366a5
-caps.latest.revision: 10
+caps.latest.revision: "10"
+author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-translation.priority.mt:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
+ms.openlocfilehash: 4046bfccac12e79992805e7abec7dfda65b5a658
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
 ms.translationtype: MT
-ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
-ms.openlocfilehash: 4a8fe4e1a40aa9ab33cd0cfdb925bbb4f0607fbd
-ms.contentlocale: fr-fr
-ms.lasthandoff: 08/28/2017
-
+ms.contentlocale: fr-FR
+ms.lasthandoff: 10/31/2017
 ---
 # <a name="idebugproperty2setvalueasstring"></a>IDebugProperty2::SetValueAsString
-Sets the value of a property from a given string.  
+Définit la valeur d’une propriété à partir d’une chaîne donnée.  
   
-## <a name="syntax"></a>Syntax  
+## <a name="syntax"></a>Syntaxe  
   
 ```cpp  
 HRESULT SetValueAsString (   
@@ -58,23 +41,23 @@ int SetValueAsString (
 );  
 ```  
   
-#### <a name="parameters"></a>Parameters  
+#### <a name="parameters"></a>Paramètres  
  `pszValue`  
- [in] A string containing the value to be set.  
+ [in] Chaîne contenant la valeur à définir.  
   
  `nRadix`  
- [in] A radix to be used in interpreting any numerical information. This can be 0 to attempt to determine the radix automatically.  
+ [in] Radical d’être utilisé pour interpréter les informations numériques. Cela peut être 0 pour tenter de déterminer la base automatiquement.  
   
  `dwTimeout`  
- [in] Specifies the maximum time, in milliseconds, to wait before returning from this method. Use `INFINITE` to wait indefinitely.  
+ [in] Spécifie la durée maximale, en millisecondes, à attendre avant de retourner à partir de cette méthode. Utilisez `INFINITE` pour attendre indéfiniment.  
   
-## <a name="return-value"></a>Return Value  
- If successful, returns `S_OK`; otherwise returns error code. The following table shows other possible values.  
+## <a name="return-value"></a>Valeur de retour  
+ En cas de réussite, retourne `S_OK`; sinon retourne le code d’erreur. Le tableau suivant répertorie les autres valeurs possibles.  
   
-|Value|Description|  
+|Valeur|Description|  
 |-----------|-----------------|  
-|`E_SETVALUE_VALUE_CANNOT_BE_SET`|The string could not be converted into a property value, or the property value could not be set.|  
-|`E_SETVALUE_VALUE_IS_READONLY`|The property is read-only.|  
+|`E_SETVALUE_VALUE_CANNOT_BE_SET`|La chaîne n’a pas pu être convertie en une valeur de propriété, ou la valeur de propriété ne peut pas définir.|  
+|`E_SETVALUE_VALUE_IS_READONLY`|La propriété doit être en lecture seule.|  
   
-## <a name="see-also"></a>See Also  
+## <a name="see-also"></a>Voir aussi  
  [IDebugProperty2](../../../extensibility/debugger/reference/idebugproperty2.md)

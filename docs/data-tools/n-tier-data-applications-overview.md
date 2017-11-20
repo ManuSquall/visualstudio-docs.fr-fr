@@ -1,5 +1,5 @@
 ---
-title: N-Tier Data Applications Overview | Microsoft Docs
+title: "Vue d’ensemble des Applications de données multicouches | Documents Microsoft"
 ms.custom: 
 ms.date: 11/04/2016
 ms.reviewer: 
@@ -12,95 +12,80 @@ helpviewer_keywords:
 - data tier
 - n-tier applications, about n-tier applications
 ms.assetid: 1020581d-eaaa-41a2-aca4-bf4c212895f6
-caps.latest.revision: 26
+caps.latest.revision: "26"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-translation.priority.ht:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
-ms.translationtype: HT
-ms.sourcegitcommit: 33a857c2d8585e2e8da9bcd9158190366a3b6830
-ms.openlocfilehash: d86260cbc0bbc7eda47009730e26201368abd623
-ms.contentlocale: fr-fr
-ms.lasthandoff: 09/07/2017
-
+ms.technology: vs-data-tools
+ms.openlocfilehash: 3949d49f763c2513e86c2cd3f1b20c20fb858ecc
+ms.sourcegitcommit: ee42a8771f0248db93fd2e017a22e2506e0f9404
+ms.translationtype: MT
+ms.contentlocale: fr-FR
+ms.lasthandoff: 11/09/2017
 ---
-# <a name="n-tier-data-applications-overview"></a>N-Tier Data Applications Overview
-*N-tier* data applications are data applications that are separated into multiple *tiers*. Also called "distributed applications" and "multitier applications," n-tier applications separate processing into discrete tiers that are distributed between the client and the server. When you develop applications that access data, you should have a clear separation between the various tiers that make up the application.  
+# <a name="n-tier-data-applications-overview"></a>Vue d'ensemble des applications de données multicouches
+*Multicouches* applications de données sont des applications de données qui sont séparées en plusieurs *niveaux*. Également appelées « applications distribuées » et « applications à plusieurs niveaux », avec applications multicouches séparent le traitement en couches discrètes qui sont distribuées entre le client et le serveur. Lorsque vous développez des applications qui accèdent aux données, vous devez avoir une distinction claire entre les différentes couches qui composent votre application.  
   
- A typical n-tier application includes a presentation tier, a middle tier, and a data tier. The easiest way to separate the various tiers in an n-tier application is to create discrete projects for each tier that you want to include in your application. For example, the presentation tier might be a Windows Forms application, whereas the data access logic might be a class library located in the middle tier. Additionally, the presentation layer might communicate with the data access logic in the middle tier through a service such as a service. Separating application components into separate tiers increases the maintainability and scalability of the application. It does this by enabling easier adoption of new technologies that can be applied to a single tier without the requirement to redesign the whole solution. In addition, n-tier applications typically store sensitive information in the middle-tier, which maintains isolation from the presentation tier.  
+Une application multicouche classique inclut une couche présentation, une couche intermédiaire et une couche de données. Pour séparer plusieurs couches dans une application multicouche, la plus simple consiste à créer des projets distincts pour chaque couche que vous souhaitez inclure dans votre application. Par exemple, la couche présentation peut être une application Windows Forms, tandis que la logique d’accès aux données peut-être être une bibliothèque de classes située dans la couche intermédiaire. En outre, la couche de présentation peut communiquer avec la logique d’accès aux données dans la couche intermédiaire via un service tel qu’un service. La séparation des composants d'application en couches distinctes renforce la facilité de maintenance et l'évolutivité de l'application. Pour cela, l’activation facilitant l’adoption de nouvelles technologies qui peuvent être appliquées à une couche unique sans avoir à reconcevoir toute la solution. En outre, les applications multicouches stockent généralement les informations sensibles dans la couche intermédiaire, ce qui assure l’isolation de la couche de présentation.  
   
- Visual Studio contains several features to help developers create n-tier applications:  
+Visual Studio contient plusieurs fonctionnalités pour aider les développeurs à créer des applications multicouches :  
   
--   The dataset provides a **DataSet Project** property that enables you to separate the dataset (data entity layer) and TableAdapters (data access layer) into discrete projects.  
+-   Le jeu de données fournit un **projet DataSet** propriété qui vous permet de séparer le jeu de données (couche d’entité de données) et les TableAdapters (couche d’accès aux données) dans des projets distincts.  
   
--   The [LINQ to SQL Tools in Visual Studio](../data-tools/linq-to-sql-tools-in-visual-studio2.md) provides settings to generate the DataContext and data classes into separate namespaces. This enables logical separation of the data access and data entity tiers.  
+-   Le [LINQ to SQL Tools dans Visual Studio](../data-tools/linq-to-sql-tools-in-visual-studio2.md) fournit des paramètres pour générer les classes DataContext et les données dans les espaces de noms distincts. Cela permet une séparation logique de l’accès aux données et les couches d’entité de données.  
   
--   [LINQ to SQL](/dotnet/framework/data/adonet/sql/linq/index) provides the <xref:System.Data.Linq.Table%601.Attach%2A> method that enables you to bring together the DataContext from different tiers in an application. For more information, see [N-Tier and Remote Applications with LINQ to SQL](http://msdn.microsoft.com/Library/854a1cdd-53cb-45f5-83ca-63962a9b3598).  
+-   [LINQ to SQL](/dotnet/framework/data/adonet/sql/linq/index) fournit le <xref:System.Data.Linq.Table%601.Attach%2A> méthode qui vous permet de rassembler le DataContext de différentes couches dans une application. Pour plus d’informations, consultez [multicouches et des Applications distantes avec LINQ to SQL](http://msdn.microsoft.com/Library/854a1cdd-53cb-45f5-83ca-63962a9b3598).  
   
-## <a name="presentation-tier"></a>Presentation Tier  
- The *presentation tier* is the tier in which users interact with an application. It often contains additional application logic also. Typical presentation tier components include the following:  
+## <a name="presentation-tier"></a>Couche de présentation  
+Le *couche présentation* correspond à la couche dans laquelle les utilisateurs interagissent avec une application. Il contient souvent une logique d’application supplémentaires également. Composants de la couche présentation standard sont les suivantes :  
   
--   Data binding components, such as the <xref:System.Windows.Forms.BindingSource> and <xref:System.Windows.Forms.BindingNavigator>.  
+-   Liaison des composants, tels que des données la <xref:System.Windows.Forms.BindingSource> et <xref:System.Windows.Forms.BindingNavigator>.  
   
--   Object representations of data, such as [LINQ to SQL](/dotnet/framework/data/adonet/sql/linq/index) entity classes for use in the presentation tier.  
+-   Objet de représentations de données, tel que [LINQ to SQL](/dotnet/framework/data/adonet/sql/linq/index) des classes d’entité pour une utilisation dans la couche de présentation.  
   
- The presentation tier typically accesses the middle tier by using a service reference (for example, a [Windows Communication Foundation Services and WCF Data Services in Visual Studio](../data-tools/windows-communication-foundation-services-and-wcf-data-services-in-visual-studio.md) application). The presentation tier does not directly access the data tier. The presentation tier communicates with the data tier by way of the data access component in the middle tier.  
+La couche de présentation accède généralement à la couche intermédiaire à l’aide d’une référence de service (par exemple, un [Services Windows Communication Foundation et Services de données WCF dans Visual Studio](../data-tools/windows-communication-foundation-services-and-wcf-data-services-in-visual-studio.md) application). La couche de présentation n’accède pas directement à la couche données. La couche présentation communique avec la couche données par le biais du composant d’accès aux données dans la couche intermédiaire.  
   
-## <a name="middle-tier"></a>Middle Tier  
- The *middle tier* is the layer that the presentation tier and the data tier use to communicate with each other. Typical middle tier components include the following:  
+## <a name="middle-tier"></a>Couche intermédiaire  
+Le *intermédiaire* est la couche de la couche de présentation et de données utilisent pour communiquer entre eux. Les composants de niveau intermédiaire standard sont les suivants :  
   
--   Business logic, such as business rules and data validation.  
+-   Logique métier, telles que la validation de données et les règles métier.  
   
--   Data access components and logic, such as the following:  
+-   Composants d’accès aux données et la logique, telle que la suivante :  
   
-    -   [TableAdapters](create-and-configure-tableadapters.md) and [DataAdapters and DataReaders](/dotnet/framework/data/adonet/dataadapters-and-datareaders).  
+    -   [Les TableAdapters](create-and-configure-tableadapters.md) et [DataAdapters et DataReaders](/dotnet/framework/data/adonet/dataadapters-and-datareaders).  
   
-    -   Object representations of data, such as [LINQ to SQL](/dotnet/framework/data/adonet/sql/linq/index) entity classes.  
+    -   Objet de représentations de données, tel que [LINQ to SQL](/dotnet/framework/data/adonet/sql/linq/index) des classes d’entité.  
   
-    -   Common application services, such as authentication, authorization, and personalization.  
+    -   Services d’application courants, tels que l’authentification, autorisation et la personnalisation.  
   
- The following illustration shows features and technologies that are available in Visual Studio and where they might fit in to the middle tier of an n-tier application.  
+L’illustration suivante montre les fonctionnalités et technologies qui sont disponibles dans Visual Studio et où ils peuvent être intégrées dans la couche intermédiaire d’une application multicouche.  
   
- ![Middle tier components](../data-tools/media/ntiermid.png "NtierMid")  
-Middle tier  
+![Composants de la couche de milieu](../data-tools/media/ntiermid.png "NtierMid")  
+niveau intermédiaire  
   
- The middle tier typically connects to the data tier by using a data connection. This data connection is typically stored in the data access component.  
+En règle générale, la couche intermédiaire se connecte à la couche données à l’aide d’une connexion de données. Cette connexion de données est généralement stockée dans le composant d’accès aux données.  
   
-## <a name="data-tier"></a>Data Tier  
- The *data tier* is basically the server that stores an application's data (for example, a server running [!INCLUDE[ssNoVersion](../data-tools/includes/ssnoversion_md.md)]).  
+## <a name="data-tier"></a>Couche Données  
+Le *couche données* est fondamentalement le serveur qui stocke les données d’une application (par exemple, un serveur exécutant [!INCLUDE[ssNoVersion](../data-tools/includes/ssnoversion_md.md)]).  
   
- The following illustration shows features and technologies that are available in Visual Studio and where they might fit in to the data tier of an n-tier application.  
+L’illustration suivante montre les fonctionnalités et technologies qui sont disponibles dans Visual Studio et où ils peuvent être intégrées dans la couche données d’une application multicouche.  
   
- ![Data tier components](../data-tools/media/ntierdatatier.png "ntierdatatier")  
-Data tier  
+![Composants de couche données](../data-tools/media/ntierdatatier.png "ntierdatatier")  
+Couche Données  
   
- The data tier cannot be accessed directly from the client in the presentation tier. Instead, the data access component in the middle tier is used for communication between the presentation and data tiers.  
+La couche données ne sont pas accessibles directement depuis le client dans la couche de présentation. Au lieu de cela, le composant d’accès aux données dans la couche intermédiaire est utilisé pour la communication entre la présentation et les niveaux de données.  
   
-## <a name="help-for-n-tier-development"></a>Help for N-Tier Development  
- The following topics provide information about working with n-tier applications:  
+## <a name="help-for-n-tier-development"></a>Aide pour le développement de couches  
+Les rubriques suivantes fournissent des informations sur l’utilisation des applications multicouches :  
   
- [Separate datasets and TableAdapters into different projects](../data-tools/separate-datasets-and-tableadapters-into-different-projects.md)  
+[Guide pratique pour séparer les datasets et les TableAdapters en différents projets](../data-tools/separate-datasets-and-tableadapters-into-different-projects.md)  
   
- [Walkthrough: Creating an N-Tier Data Application](../data-tools/walkthrough-creating-an-n-tier-data-application.md)  
+[Procédure pas à pas : création d’une application de données multiniveau](../data-tools/walkthrough-creating-an-n-tier-data-application.md)  
 
- [N-Tier and Remote Applications with LINQ to SQL](http://msdn.microsoft.com/Library/854a1cdd-53cb-45f5-83ca-63962a9b3598)  
+[Multicouches et des Applications distantes avec LINQ to SQL](http://msdn.microsoft.com/Library/854a1cdd-53cb-45f5-83ca-63962a9b3598)  
   
-## <a name="see-also"></a>See Also  
- <xref:System.Data.Linq.ITable.Attach%2A>   
- [Walkthrough: Creating an N-Tier Data Application](../data-tools/walkthrough-creating-an-n-tier-data-application.md)   
- [Hierarchical update](../data-tools/hierarchical-update.md)   
- [Dataset tools in Visual Studio](../data-tools/dataset-tools-in-visual-studio.md)   
- [Accessing data in Visual Studio](../data-tools/accessing-data-in-visual-studio.md)
+## <a name="see-also"></a>Voir aussi
+[Procédure pas à pas : Création d’une Application de données multicouche](../data-tools/walkthrough-creating-an-n-tier-data-application.md)   
+[Mise à jour hiérarchique](../data-tools/hierarchical-update.md)   
+[Outils de dataset dans Visual Studio](../data-tools/dataset-tools-in-visual-studio.md)   
+[Accès aux données dans Visual Studio](../data-tools/accessing-data-in-visual-studio.md)

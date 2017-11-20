@@ -1,27 +1,30 @@
 ---
-title: "IScriptScriptlet::SetSimpleEventName | Microsoft Docs"
-ms.custom: ""
-ms.date: "01/18/2017"
-ms.prod: "windows-script-interfaces"
-ms.reviewer: ""
-ms.suite: ""
-ms.tgt_pltfrm: ""
-ms.topic: "reference"
+title: IScriptScriptlet::SetSimpleEventName | Documents Microsoft
+ms.custom: 
+ms.date: 01/18/2017
+ms.prod: windows-script-interfaces
+ms.reviewer: 
+ms.suite: 
+ms.tgt_pltfrm: 
+ms.topic: reference
 apiname: IScriptScriptlet.SetSimpleEventName
 apilocation: scrobj.dll
-helpviewer_keywords: 
-  - "IScriptScriptlet::SetSimpleEventName"
+helpviewer_keywords: IScriptScriptlet::SetSimpleEventName
 ms.assetid: 7de9132e-635f-45df-9c92-83a24242b477
-caps.latest.revision: 6
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 6
+caps.latest.revision: "6"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: 958478d8c8ead6500711a7866a784235adb869b8
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.translationtype: MT
+ms.contentlocale: fr-FR
+ms.lasthandoff: 10/27/2017
 ---
-# IScriptScriptlet::SetSimpleEventName
-Définit le nom de l'événement simple qui est associé à un scriptlet.  Il s'agit d'un nom uniterme qui ne contient pas d'espaces blancs.  
+# <a name="iscriptscriptletsetsimpleeventname"></a>IScriptScriptlet::SetSimpleEventName
+Définit le nom d’événement simple qui est associé à un scriptlet. Il s’agit d’un nom de mot unique qui ne contient-elle pas tous les espaces blancs.  
   
-## Syntaxe  
+## <a name="syntax"></a>Syntaxe  
   
 ```  
 HRESULT SetSimpleEventName(  
@@ -29,18 +32,18 @@ HRESULT SetSimpleEventName(
 );  
 ```  
   
-#### Paramètres  
+#### <a name="parameters"></a>Paramètres  
  `psz`  
- \[in\]  Une mémoire tampon qui contient le nom de l'événement simple qui est associé à l'objet d' `IScriptScriptlet` .  
+ [in] Une mémoire tampon qui contient le nom d’événement simple qui est associé à la `IScriptScriptlet` objet.  
   
-## Valeur de retour  
- Élément `HRESULT`.  Les valeurs possibles incluent, mais ne sont pas limitées à, celles dans le tableau suivant.  
+## <a name="return-value"></a>Valeur de retour  
+ Élément `HRESULT`. Les valeurs possibles sont notamment celles figurant dans le tableau suivant.  
   
 |Valeur|Description|  
-|------------|-----------------|  
+|-----------|-----------------|  
 |`S_OK`|La méthode a réussi.|  
   
-## Notes  
+## <a name="remarks"></a>Remarques  
   
-## Voir aussi  
- [IScriptScriptlet, interface](../../winscript/reference/iscriptscriptlet-interface.md)
+## <a name="see-also"></a>Voir aussi  
+ [Interface IScriptScriptlet](../../winscript/reference/iscriptscriptlet-interface.md)

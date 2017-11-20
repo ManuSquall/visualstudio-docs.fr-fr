@@ -4,37 +4,21 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-sdk
+ms.technology: vs-ide-sdk
 ms.tgt_pltfrm: 
 ms.topic: article
-f1_keywords:
-- IDebugBreakpointResolution2
-helpviewer_keywords:
-- IDebugBreakpointRequest2 interface
+f1_keywords: IDebugBreakpointResolution2
+helpviewer_keywords: IDebugBreakpointRequest2 interface
 ms.assetid: 451d5bce-b9c1-48ff-beaa-2b4c3e1ceea0
-caps.latest.revision: 11
+caps.latest.revision: "11"
+author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-translation.priority.mt:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
-translationtype: Machine Translation
-ms.sourcegitcommit: 5db97d19b1b823388a465bba15d057b30ff0b3ce
-ms.openlocfilehash: b4d5c4ed0ad36f3eabcec9d943be53554b958a67
-ms.lasthandoff: 02/22/2017
-
+ms.openlocfilehash: 44de0372c1951a13061c4726f9a83d15fc31435d
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: fr-FR
+ms.lasthandoff: 10/31/2017
 ---
 # <a name="idebugbreakpointresolution2"></a>IDebugBreakpointResolution2
 Cette interface représente les informations qui décrivent un point d’arrêt lié.  
@@ -45,8 +29,8 @@ Cette interface représente les informations qui décrivent un point d’arrêt 
 IDebugBreakpointResolution2 : IUnknown  
 ```  
   
-## <a name="notes-for-implementers"></a>Notes relatives à l’attention des implémenteurs  
- Le moteur de débogage (DE) implémente cette interface dans le cadre de sa prise en charge des points d’arrêt. Cette interface fournit une description d’un point d’arrêt lié par le Gestionnaire de session de débogage pour un utilisateur affiche les propriétés d’un point d’arrêt.  
+## <a name="notes-for-implementers"></a>Notes pour les implémenteurs  
+ Le moteur de débogage (DE) implémente cette interface dans le cadre de sa prise en charge des points d’arrêt. Cette interface fournit une description d’un point d’arrêt lié par le Gestionnaire de session de débogage quand un utilisateur affiche les propriétés d’un point d’arrêt.  
   
 ## <a name="notes-for-callers"></a>Remarques pour les appelants  
  Un appel à [GetBreakpointResolution](../../../extensibility/debugger/reference/idebugboundbreakpoint2-getbreakpointresolution.md) retourne cette interface.  
@@ -56,8 +40,8 @@ IDebugBreakpointResolution2 : IUnknown
   
 |Méthode|Description|  
 |------------|-----------------|  
-|[GetBreakpointType](../../../extensibility/debugger/reference/idebugbreakpointresolution2-getbreakpointtype.md)|Obtient le type de point d’arrêt représenté par cette solution.|  
-|[GetResolutionInfo](../../../extensibility/debugger/reference/idebugbreakpointresolution2-getresolutioninfo.md)|Obtient les informations de résolution de point d’arrêt qui décrit ce point d’arrêt.|  
+|[GetBreakpointType](../../../extensibility/debugger/reference/idebugbreakpointresolution2-getbreakpointtype.md)|Obtient le type du point d’arrêt représenté par cette résolution.|  
+|[GetResolutionInfo](../../../extensibility/debugger/reference/idebugbreakpointresolution2-getresolutioninfo.md)|Obtient les informations de résolution de point d’arrêt qui décrivent ce point d’arrêt.|  
   
 ## <a name="requirements"></a>Spécifications  
  En-tête : msdbg.h  

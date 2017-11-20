@@ -1,46 +1,29 @@
 ---
-title: REFERENCE_TYPE | Microsoft Docs
+title: REFERENCE_TYPE | Documents Microsoft
 ms.custom: 
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-sdk
+ms.technology: vs-ide-sdk
 ms.tgt_pltfrm: 
 ms.topic: article
-f1_keywords:
-- REFERENCE_TYPE
-helpviewer_keywords:
-- REFERENCE_TYPE enumeration
+f1_keywords: REFERENCE_TYPE
+helpviewer_keywords: REFERENCE_TYPE enumeration
 ms.assetid: b1ffba10-eb9d-48ba-bf48-6d8b71d6f270
-caps.latest.revision: 9
+caps.latest.revision: "9"
+author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-translation.priority.mt:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
+ms.openlocfilehash: 7c5616cea578339f1527a73d03e9d6cb208ec6ad
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
 ms.translationtype: MT
-ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
-ms.openlocfilehash: fb9725ad4f75414c74a60cd952e457710591ebb2
-ms.contentlocale: fr-fr
-ms.lasthandoff: 08/28/2017
-
+ms.contentlocale: fr-FR
+ms.lasthandoff: 10/31/2017
 ---
 # <a name="referencetype"></a>REFERENCE_TYPE
-Specifies the reference type.  
+Spécifie le type de référence.  
   
-## <a name="syntax"></a>Syntax  
+## <a name="syntax"></a>Syntaxe  
   
 ```cpp  
 enum enum_REFERENCE_TYPE {   
@@ -57,26 +40,26 @@ public enum enum_REFERENCE_TYPE {
 };  
 ```  
   
-## <a name="members"></a>Members  
+## <a name="members"></a>Membres  
  REF_TYPE_WEAK  
- Specifies a weak reference. Cannot be combined with `REF_TYPE_STRONG`.  
+ Spécifie une référence faible. Ne peut pas être combiné avec `REF_TYPE_STRONG`.  
   
  REF_TYPE_STRONG  
- Specifies a strong reference. Cannot be combined with `REF_TYPE_WEAK`.  
+ Spécifie une référence forte. Ne peut pas être combiné avec `REF_TYPE_WEAK`.  
   
-## <a name="remarks"></a>Remarks  
- Used as the `dwRefType` member of the [DEBUG_REFERENCE_INFO](../../../extensibility/debugger/reference/debug-reference-info.md) structure.  
+## <a name="remarks"></a>Remarques  
+ Utilisé en tant que le `dwRefType` membre de la [DEBUG_REFERENCE_INFO](../../../extensibility/debugger/reference/debug-reference-info.md) structure.  
   
- Passed as a parameter to the [SetReferenceType](../../../extensibility/debugger/reference/idebugreference2-setreferencetype.md) method.  
+ Passé en tant que paramètre à la [SetReferenceType](../../../extensibility/debugger/reference/idebugreference2-setreferencetype.md) (méthode).  
   
-## <a name="requirements"></a>Requirements  
- Header: msdbg.h  
+## <a name="requirements"></a>Spécifications  
+ En-tête : msdbg.h  
   
- Namespace: Microsoft.VisualStudio.Debugger.Interop  
+ Namespace : Microsoft.VisualStudio.Debugger.Interop  
   
- Assembly: Microsoft.VisualStudio.Debugger.Interop.dll  
+ Assembly : Microsoft.VisualStudio.Debugger.Interop.dll  
   
-## <a name="see-also"></a>See Also  
- [Enumerations](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)   
+## <a name="see-also"></a>Voir aussi  
+ [Énumérations](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)   
  [DEBUG_REFERENCE_INFO](../../../extensibility/debugger/reference/debug-reference-info.md)   
  [SetReferenceType](../../../extensibility/debugger/reference/idebugreference2-setreferencetype.md)

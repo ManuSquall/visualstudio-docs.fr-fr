@@ -1,57 +1,40 @@
 ---
 redirect_url: /visualstudio/csharp-ide/refactoring/encapsulate-field
-title: Encapsulate Field Refactoring (C#) | Microsoft Docs
+title: Encapsuler le champ (refactorisation c#) | Documents Microsoft
 ms.custom: 
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- devlang-csharp
+ms.technology: vs-ide-general
 ms.tgt_pltfrm: 
 ms.topic: article
-dev_langs:
-- CSharp
+dev_langs: CSharp
 helpviewer_keywords:
 - Encapsulate Field refactoring operation [C#]
 - refactoring [C#], Encapsulate Field
 ms.assetid: bf714a04-ab1e-49ce-99ce-dda1ebb1a17f
-caps.latest.revision: 26
-author: BillWagner
-ms.author: wiwagn
-manager: wpickett
-translation.priority.ht:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
-ms.translationtype: HT
-ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
-ms.openlocfilehash: c249571a4c47345882d1fe1adb81d2bd94eb43f5
-ms.contentlocale: fr-fr
-ms.lasthandoff: 08/28/2017
-
+caps.latest.revision: "26"
+author: gewarren
+ms.author: gewarren
+manager: ghogen
+ms.openlocfilehash: 7bd9e255b35ffb843c15d5ffa9c1547891bf437d
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: fr-FR
+ms.lasthandoff: 10/31/2017
 ---
-# <a name="encapsulate-field-refactoring-c"></a>Encapsulate Field Refactoring (C#)
-The **Encapsulate Field** refactoring operation enables you to quickly create a property from an existing field, and then seamlessly update your code with references to the new property.  
+# <a name="encapsulate-field-refactoring-c"></a>Encapsuler le champ (Refactorisation C#)
+Le **encapsuler le champ** l’opération de refactorisation vous permet de créer rapidement une propriété d’un champ existant et de mettre facilement à jour votre code avec des références à la nouvelle propriété.  
   
- When a [field](/dotnet/csharp/programming-guide/classes-and-structs/fields) is [public](/dotnet/csharp/language-reference/keywords/public), other objects have direct access to that field and can modify it, undetected by the object that owns that field. By using [properties](/dotnet/csharp/programming-guide/classes-and-structs/properties) to encapsulate that field, you can disallow direct access to fields.  
+ Lorsqu’un [champ](/dotnet/csharp/programming-guide/classes-and-structs/fields) est [public](/dotnet/csharp/language-reference/keywords/public), autres objets ont un accès direct à ce champ et pouvez le modifier, sans être détectés par l’objet qui possède ce champ. À l’aide de [propriétés](/dotnet/csharp/programming-guide/classes-and-structs/properties) pour encapsuler ce champ, vous pouvez ne pas autoriser un accès direct aux champs.  
   
- To create the new property, the **Encapsulate Field** operation changes the access modifier for the field that you want to encapsulate to [private](/dotnet/csharp/language-reference/keywords/private), and then generates [get](/dotnet/csharp/language-reference/keywords/get) and [set](/dotnet/csharp/language-reference/keywords/set) accessors for that field. In some cases, only a `get` accessor is generated, such as when the field is declared read-only.  
+ Pour créer la nouvelle propriété, le **encapsuler le champ** opération modifie le modificateur d’accès pour le champ que vous voulez encapsuler à [privé](/dotnet/csharp/language-reference/keywords/private), puis génère [obtenir](/dotnet/csharp/language-reference/keywords/get)et [définir](/dotnet/csharp/language-reference/keywords/set) accesseurs pour ce champ. Dans certains cas, seul un accesseur `get` est généré, comme quand le champ est déclaré en lecture seule.  
   
- The refactoring engine updates your code with references to the new property in the areas specified in the **Update References** section of the **Encapsulate Field** dialog box.  
+ Le moteur de refactorisation met à jour votre code avec des références à la nouvelle propriété dans les zones spécifiées dans le **mise à jour les références** section de la **encapsuler le champ** boîte de dialogue.  
   
-### <a name="to-create-a-property-from-a-field"></a>To create a property from a field  
+### <a name="to-create-a-property-from-a-field"></a>Pour créer une propriété à partir d'un champ  
   
-1.  Create a console application named `EncapsulateFieldExample`, and then replace `Program` with the following example code.  
+1.  Créez une application console nommée `EncapsulateFieldExample`, puis remplacez `Program` par l'exemple de code suivant.  
   
     ```csharp  
     class Square  
@@ -73,27 +56,27 @@ The **Encapsulate Field** refactoring operation enables you to quickly create a 
     }  
     ```  
   
-2.  In the [Code Editor](../ide/writing-code-in-the-code-and-text-editor.md), place the cursor in the declaration, on the name of the field that you want to encapsulate. In the example below, place the cursor on the word `width`:  
+2.  Dans le [éditeur de Code](../ide/writing-code-in-the-code-and-text-editor.md), placez le curseur dans la déclaration, sur le nom du champ que vous voulez encapsuler. Dans l'exemple ci-dessous, placez le curseur sur le mot `width` :  
   
     ```csharp  
     public int width, height;  
     ```  
   
-3.  On the **Refactor** menu, click **Encapsulate Field**.  
+3.  Sur le **refactoriser** menu, cliquez sur **encapsuler le champ**.  
   
-     The **Encapsulate Field** dialog box appears.  
+     Le **encapsuler le champ** boîte de dialogue s’affiche.  
   
-     You can also type the keyboard shortcut CTRL+R, E to display the **Encapsulate Field** dialog box.  
+     Vous pouvez également taper le raccourci clavier CTRL + R, E pour afficher la **encapsuler le champ** boîte de dialogue.  
   
-     You can also right-click the cursor, point to **Refactor**, and then click **Encapsulate Field** to display the **Encapsulate Field** dialog box.  
+     Vous pouvez cliquer également sur le curseur, pointez sur **refactoriser**, puis cliquez sur **encapsuler le champ** pour afficher les **encapsuler le champ** boîte de dialogue.  
   
-4.  Specify settings.  
+4.  Spécifiez les paramètres.  
   
-5.  Press ENTER, or click the **OK** button.  
+5.  Appuyez sur entrée, ou cliquez sur le **OK** bouton.  
   
-6.  If you selected the **Preview reference changes** option, then the **Preview Reference Changes** window opens. Click the **Apply** button.  
+6.  Si vous avez sélectionné le **aperçu des modifications de référence** option, puis le **aperçu des modifications de référence** fenêtre s’ouvre. Cliquez sur le **appliquer** bouton.  
   
-     The following `get` and `set` accessor code is displayed in your source file:  
+     Le code d'accesseur `get` et `set` suivant est affiché dans votre fichier source :  
   
     ```csharp  
     public int Width  
@@ -103,7 +86,7 @@ The **Encapsulate Field** refactoring operation enables you to quickly create a 
     }  
     ```  
   
-     The code in the `Main` method is also updated to the new `Width` property name.  
+     Le code dans la méthode `Main` est également mis à jour en fonction du nouveau nom de propriété `Width`.  
   
     ```csharp  
     Square mySquare = new Square();  
@@ -113,13 +96,13 @@ The **Encapsulate Field** refactoring operation enables you to quickly create a 
     Console.WriteLine("width = {0}", mySquare.Width);  
     ```  
   
-## <a name="remarks"></a>Remarks  
- The **Encapsulate Field** operation is only possible when the cursor is positioned on the same line as the field declaration.  
+## <a name="remarks"></a>Remarques  
+ Le **encapsuler le champ** opération est uniquement possible lorsque le curseur est positionné sur la même ligne que la déclaration de champ.  
   
- For declarations that declare multiple fields, **Encapsulate Field** uses the comma as a boundary between fields, and initiates refactoring on the field that is nearest the cursor and on the same line as the cursor. You can also specify which field you want to encapsulate by selecting the name of that field in the declaration.  
+ Pour les déclarations qui déclarent plusieurs champs, **encapsuler le champ** utilise la virgule comme limite entre les champs et initialise la refactorisation sur le champ qui est le plus proche du curseur et sur la même ligne que le curseur. Vous pouvez également spécifier quel champ vous voulez encapsuler en sélectionnant le nom de ce champ dans la déclaration.  
   
- The code that is generated by this refactoring operation is modeled by the encapsulate field code snippets feature. Code Snippets are modifiable. For more information, see [Code Snippets](../ide/visual-csharp-code-snippets.md).  
+ Le code généré par cette opération de refactorisation est modélisé par la fonctionnalité d'extraits de code Encapsuler le champ. Les extraits de code sont modifiables. Pour plus d’informations, consultez [Extraits de code](../ide/visual-csharp-code-snippets.md).  
   
-## <a name="see-also"></a>See Also  
- [Refactoring (C#)](refactoring-csharp.md)   
- [Visual C# Code Snippets](../ide/visual-csharp-code-snippets.md)
+## <a name="see-also"></a>Voir aussi  
+ [Refactorisation (C#)](refactoring-csharp.md)   
+ [Extraits de code Visual C#](../ide/visual-csharp-code-snippets.md)

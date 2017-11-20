@@ -1,60 +1,63 @@
 ---
-title: "Erreurs d&#39;ex&#233;cution JavaScript | Microsoft Docs"
-ms.custom: ""
-ms.date: "01/18/2017"
-ms.prod: "windows-client-threshold"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "devlang-javascript"
-ms.tgt_pltfrm: ""
-ms.topic: "language-reference"
-f1_keywords: 
-  - "VS.WebClient.Help.SCRIPT-32725"
-  - "VS.WebClient.Help.SCRIPT7002"
-  - "VS.WebClient.Help.SCRIPT1001"
-  - "VS.WebClient.Help.SCRIPT16389"
-  - "VS.WebClient.HelpSCRIPT50"
-  - "VS.WebClient.HelpSCRIPT70"
-  - "VS.WebClient.HelpSCRIPT87"
-  - "VS.WebClient.HelpSCRIPT65535"
-  - "VS.WebClient.HelpSCRIPT445"
-  - "VS.WebClient.HelpSCRIPT600"
-  - "VS.WebClient.HelpSCRIPT2343"
-  - "VS.WebClient.HelpSCRIPT122"
-  - "VS.WebClient.HelpSCRIPT28"
-  - "VS.WebClient.HelpSCRIPT16386"
-  - "VS.WebClient.HelpSCRIPT7015"
-  - "VS.WebClient.HelpSCRIPT3"
-  - "VS.WebClient.HelpSCRIPT16388"
-  - "VS.WebClient.HelpSCRIPT14"
-  - "VS.WebClient.HelpSCRIPT12030"
-  - "VS.WebClient.HelpSCRIPT12029"
-  - "VS.WebClient.HelpSCRIPT1001"
-dev_langs: 
-  - "JavaScript"
-  - "TypeScript"
-  - "DHTML"
-helpviewer_keywords: 
-  - "erreurs (JavaScript)"
-  - "erreurs d'exécution, JavaScript"
+title: "Erreurs d’exécution JavaScript | Documents Microsoft"
+ms.custom: 
+ms.date: 01/18/2017
+ms.prod: windows-client-threshold
+ms.reviewer: 
+ms.suite: 
+ms.technology: devlang-javascript
+ms.tgt_pltfrm: 
+ms.topic: language-reference
+f1_keywords:
+- VS.WebClient.Help.SCRIPT-32725
+- VS.WebClient.Help.SCRIPT7002
+- VS.WebClient.Help.SCRIPT1001
+- VS.WebClient.Help.SCRIPT16389
+- VS.WebClient.HelpSCRIPT50
+- VS.WebClient.HelpSCRIPT70
+- VS.WebClient.HelpSCRIPT87
+- VS.WebClient.HelpSCRIPT65535
+- VS.WebClient.HelpSCRIPT445
+- VS.WebClient.HelpSCRIPT600
+- VS.WebClient.HelpSCRIPT2343
+- VS.WebClient.HelpSCRIPT122
+- VS.WebClient.HelpSCRIPT28
+- VS.WebClient.HelpSCRIPT16386
+- VS.WebClient.HelpSCRIPT7015
+- VS.WebClient.HelpSCRIPT3
+- VS.WebClient.HelpSCRIPT16388
+- VS.WebClient.HelpSCRIPT14
+- VS.WebClient.HelpSCRIPT12030
+- VS.WebClient.HelpSCRIPT12029
+- VS.WebClient.HelpSCRIPT1001
+dev_langs:
+- JavaScript
+- TypeScript
+- DHTML
+helpviewer_keywords:
+- errors [JavaScript]
+- run-time errors, JavaScript
 ms.assetid: c111469d-8f31-4bde-9d46-16d58775db7d
-caps.latest.revision: 20
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 20
+caps.latest.revision: "20"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: fb75c59fae32911c3dd3a7468439a198d7191755
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.translationtype: MT
+ms.contentlocale: fr-FR
+ms.lasthandoff: 10/27/2017
 ---
-# Erreurs d&#39;ex&#233;cution JavaScript
-Les erreurs d'exécution [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] sont des erreurs qui se produisent quand votre script essaie d'effectuer une action que le système ne peut pas exécuter. Des erreurs d'exécution peuvent apparaître quand des expressions variables sont évaluées ou quand la mémoire est réallouée.  
+# <a name="javascript-run-time-errors"></a>Erreurs d'exécution JavaScript
+Les erreurs d'exécution[!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] sont des erreurs qui se produisent quand votre script essaie d'effectuer une action que le système ne peut pas exécuter. Des erreurs d'exécution peuvent apparaître quand des expressions variables sont évaluées ou quand la mémoire est réallouée.  
   
-## Erreurs Windows Runtime  
- Si vous utilisez les API Windows Runtime dans votre application du [!INCLUDE[win8_appname_long](../../javascript/includes/win8-appname-long-md.md)], des erreurs JavaScript peuvent s'afficher qui ont été converties de HRESULTs Windows Runtime. Les HRESULT Windows Runtime dans la plage au\-delà de 0x80070000 sont convertis en erreurs JavaScript en convertissant en décimale la valeur hexadécimale des bits faibles. Par exemple, le HRESULT 0x80070032 est converti en valeur décimale 50, et l'erreur JavaScript est SCRIPT50. Le HRESULT 0x80074005 est converti en valeur décimale 16389, et l'erreur JavaScript est SCRIPT16389.  
+## <a name="windows-runtime-errors"></a>Erreurs Windows Runtime  
+ Si vous utilisez les API Windows Runtime dans votre application du [!INCLUDE[win8_appname_long](../../javascript/includes/win8-appname-long-md.md)] , des erreurs JavaScript peuvent s'afficher qui ont été converties de HRESULTs Windows Runtime. Les HRESULT Windows Runtime dans la plage au-delà de 0x80070000 sont convertis en erreurs JavaScript en convertissant en décimale la valeur hexadécimale des bits faibles. Par exemple, le HRESULT 0x80070032 est converti en valeur décimale 50, et l'erreur JavaScript est SCRIPT50. Le HRESULT 0x80074005 est converti en valeur décimale 16389, et l'erreur JavaScript est SCRIPT16389.  
   
-## Erreurs  
+## <a name="errors"></a>Erreurs  
   
 |Numéro d'erreur|Description|  
-|---------------------|-----------------|  
+|------------------|-----------------|  
 |5|[Accès refusé](../../javascript/misc/access-is-denied.md)|  
 |438|[Propriété ou méthode non prise en charge par cet objet](../../javascript/misc/object-doesn-t-support-this-property-or-method.md)|  
 |1001|Mémoire insuffisante|  
@@ -68,8 +71,8 @@ Les erreurs d'exécution [!INCLUDE[javascript](../../javascript/includes/javascr
 |5006|[Objet date attendu](../../javascript/misc/date-object-expected.md)|  
 |5015|[Objet d'énumération attendu](../../javascript/misc/enumerator-object-expected.md)|  
 |5022|[Exception levée mais non décelée](../../javascript/misc/exception-thrown-and-not-caught.md)|  
-|5020|['\)' attendu dans l'expression régulière](../../javascript/misc/expected-right-parenthesis-in-regular-expression-javascript.md)|  
-|5019|['&#93;' attendu dans l'expression régulière](../../javascript/misc/expected-right-square-bracket-in-regular-expression-javascript.md)|  
+|5020|[')' attendu dans l'expression régulière](../../javascript/misc/expected-right-parenthesis-in-regular-expression-javascript.md)|  
+|5019|[Attendu ' &#93;' dans l’expression régulière](../../javascript/misc/expected-right-square-bracket-in-regular-expression-javascript.md)|  
 |5023|[La fonction ne possède pas d'objet prototype valide](../../javascript/misc/function-does-not-have-a-valid-prototype-object.md)|  
 |5002|[Fonction attendue](../../javascript/misc/function-expected.md)|  
 |5008|[Affectation non conforme](../../javascript/misc/illegal-assignment-javascript.md)|  
@@ -90,5 +93,5 @@ Les erreurs d'exécution [!INCLUDE[javascript](../../javascript/includes/javascr
 |5018|[Quantificateur inattendu](../../javascript/misc/unexpected-quantifier-javascript.md)|  
 |5013|[VBArray attendu](../../javascript/misc/vbarray-expected.md)|  
   
-## Voir aussi  
+## <a name="see-also"></a>Voir aussi  
  [Erreurs de syntaxe JavaScript](../../javascript/reference/javascript-syntax-errors.md)

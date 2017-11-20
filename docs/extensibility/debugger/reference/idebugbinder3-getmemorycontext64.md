@@ -1,45 +1,30 @@
 ---
-title: IDebugBinder3::GetMemoryContext64 | Microsoft Docs
+title: IDebugBinder3::GetMemoryContext64 | Documents Microsoft
 ms.custom: 
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-sdk
+ms.technology: vs-ide-sdk
 ms.tgt_pltfrm: 
 ms.topic: article
 helpviewer_keywords:
 - GetMemoryContext64
 - IDebugBinder3::GetMemoryContext64
 ms.assetid: f021fd16-9fc7-4c41-86af-e54e6224cfbb
-caps.latest.revision: 9
+caps.latest.revision: "9"
+author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-translation.priority.mt:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
+ms.openlocfilehash: e482be9105670297e10dd392c4d32e9ee19d7ee9
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
 ms.translationtype: MT
-ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
-ms.openlocfilehash: 6fa8347d8f4ce02deafd6cd48b44871600426a3f
-ms.contentlocale: fr-fr
-ms.lasthandoff: 08/28/2017
-
+ms.contentlocale: fr-FR
+ms.lasthandoff: 10/31/2017
 ---
 # <a name="idebugbinder3getmemorycontext64"></a>IDebugBinder3::GetMemoryContext64
-Converts either an object location or a 64-bit memory address to a memory context.  
+Convertit un emplacement de l’objet ou d’une adresse mémoire de 64 bits à un contexte de la mémoire.  
   
-## <a name="syntax"></a>Syntax  
+## <a name="syntax"></a>Syntaxe  
   
 ```cpp  
 HRESULT GetMemoryContext64 (  
@@ -57,21 +42,21 @@ int GetMemoryContext64 (
 );  
 ```  
   
-#### <a name="parameters"></a>Parameters  
+#### <a name="parameters"></a>Paramètres  
  `pField`  
- [in] An [IDebugField](../../../extensibility/debugger/reference/idebugfield.md) that describes the object to locate. If `NULL`, then use `dwConstant` instead.  
+ [in] Un [IDebugField](../../../extensibility/debugger/reference/idebugfield.md) qui décrit l’objet à rechercher. Si `NULL`, puis utilisez `dwConstant` à la place.  
   
  `uConstant`  
- [in] A 64-bit memory address, such as 0x50000000.  
+ [in] Une adresse mémoire de 64 bits, tels que 0x50000000.  
   
  `ppMemCxt`  
- [out] Returns the [IDebugMemoryContext2](../../../extensibility/debugger/reference/idebugmemorycontext2.md) interface that represents the address of the object, or the address in memory.  
+ [out] Retourne le [IDebugMemoryContext2](../../../extensibility/debugger/reference/idebugmemorycontext2.md) interface qui représente l’adresse de l’objet ou l’adresse en mémoire.  
   
-## <a name="return-value"></a>Return Value  
- If successful, returns `S_OK`; otherwise, returns an error code.  
+## <a name="return-value"></a>Valeur de retour  
+ En cas de réussite, retourne `S_OK`; sinon, retourne un code d’erreur.  
   
-## <a name="example"></a>Example  
- The following examples creates an object that implements the [IDebugBinder3](../../../extensibility/debugger/reference/idebugbinder3.md) interface and uses this method to retrieve the memory context.  
+## <a name="example"></a>Exemple  
+ Les exemples suivants créent un objet qui implémente le [IDebugBinder3](../../../extensibility/debugger/reference/idebugbinder3.md) interface et utilise cette méthode pour récupérer le contexte de la mémoire.  
   
 ```cpp  
 HRESULT CValueProperty::GetMemoryContext ( IDebugMemoryContext2** out_ppMemoryContext )  
@@ -144,5 +129,5 @@ HRESULT CValueProperty::GetMemoryContext ( IDebugMemoryContext2** out_ppMemoryCo
 }  
 ```  
   
-## <a name="see-also"></a>See Also  
+## <a name="see-also"></a>Voir aussi  
  [IDebugBinder3](../../../extensibility/debugger/reference/idebugbinder3.md)

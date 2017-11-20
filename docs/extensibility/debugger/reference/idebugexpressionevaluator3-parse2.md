@@ -1,44 +1,28 @@
 ---
-title: IDebugExpressionEvaluator3::Parse2 | Microsoft Docs
+title: IDebugExpressionEvaluator3::Parse2 | Documents Microsoft
 ms.custom: 
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-sdk
+ms.technology: vs-ide-sdk
 ms.tgt_pltfrm: 
 ms.topic: article
-helpviewer_keywords:
-- IDebugExpressionEvaluator3::Parse2
+helpviewer_keywords: IDebugExpressionEvaluator3::Parse2
 ms.assetid: 78099628-d600-4f76-b7c8-ee07c864af1e
-caps.latest.revision: 11
+caps.latest.revision: "11"
+author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-translation.priority.mt:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
+ms.openlocfilehash: f8b170a0031374bcd9ecb2a63d72586797bfdbce
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
 ms.translationtype: MT
-ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
-ms.openlocfilehash: 5dec9c5ee5e58a7e9c4d4264a93597794c5beedc
-ms.contentlocale: fr-fr
-ms.lasthandoff: 08/28/2017
-
+ms.contentlocale: fr-FR
+ms.lasthandoff: 10/31/2017
 ---
 # <a name="idebugexpressionevaluator3parse2"></a>IDebugExpressionEvaluator3::Parse2
-Converts an expression string to a parsed expression given the symbol provider and the address of the evaluating frame.  
+Convertit une chaîne d’expression en une expression analysée, étant donnée le fournisseur de symbole et l’adresse de l’image de l’évaluation.  
   
-## <a name="syntax"></a>Syntax  
+## <a name="syntax"></a>Syntaxe  
   
 ```cpp  
 HRESULT Parse2 (  
@@ -66,39 +50,39 @@ HRESULT Parse2 (
 );  
 ```  
   
-#### <a name="parameters"></a>Parameters  
+#### <a name="parameters"></a>Paramètres  
  `upstrExpression`  
- [in] The expression string to be parsed.  
+ [in] La chaîne d’expression à analyser.  
   
  `dwFlags`  
- [in] A collection of [PARSEFLAGS](../../../extensibility/debugger/reference/parseflags.md) constants that determine how the expression is to be parsed.  
+ [in] Une collection de [PARSEFLAGS](../../../extensibility/debugger/reference/parseflags.md) constantes qui déterminent comment l’expression doit être analysée.  
   
  `nRadix`  
- [in] Radix to be used to interpret any numerical information.  
+ [in] Base à utiliser pour interpréter les informations numériques.  
   
  `pSymbolProvider`  
- [in] Interface of the symbol provider.  
+ [in] Interface du fournisseur de symboles.  
   
  `pAddress`  
- [in] Address of the evaluating frame.  
+ [in] Adresse de l’image de l’évaluation.  
   
  `pbstrError`  
- [out] Returns the error as human-readable text.  
+ [out] Retourne l’erreur en tant que texte explicite.  
   
  `pichError`  
- [out] Returns the character position of the start of the error in the expression string.  
+ [out] Retourne la position de caractère de début de l’erreur dans la chaîne d’expression.  
   
  `ppParsedExpression`  
- [out] Returns the parsed expression in an [IDebugParsedExpression](../../../extensibility/debugger/reference/idebugparsedexpression.md) object.  
+ [out] Retourne l’expression analysée dans un [IDebugParsedExpression](../../../extensibility/debugger/reference/idebugparsedexpression.md) objet.  
   
-## <a name="return-value"></a>Return Value  
- If successful, returns `S_OK`; otherwise, returns an error code.  
+## <a name="return-value"></a>Valeur de retour  
+ En cas de réussite, retourne `S_OK`; sinon, retourne un code d’erreur.  
   
-## <a name="remarks"></a>Remarks  
- This method produces a parsed expression, not an actual value. A parsed expression is ready to be evaluated, that is, converted to a value.  
+## <a name="remarks"></a>Remarques  
+ Cette méthode génère une expression analysée, pas une valeur réelle. Une expression analysée est prête à être évaluée, autrement dit, convertie en une valeur.  
   
-## <a name="example"></a>Example  
- The following example shows how to implement this method for a **CEE** object that exposes the [IDebugExpressionEvaluator3](../../../extensibility/debugger/reference/idebugexpressionevaluator3.md) interface.  
+## <a name="example"></a>Exemple  
+ L’exemple suivant montre comment implémenter cette méthode pour un **CEE** objet qui expose la [IDebugExpressionEvaluator3](../../../extensibility/debugger/reference/idebugexpressionevaluator3.md) interface.  
   
 ```cpp  
 HRESULT CEE::Parse2 ( LPCOLESTR in_szExprText,  
@@ -152,5 +136,5 @@ HRESULT CEE::Parse2 ( LPCOLESTR in_szExprText,
 }  
 ```  
   
-## <a name="see-also"></a>See Also  
+## <a name="see-also"></a>Voir aussi  
  [IDebugExpressionEvaluator3](../../../extensibility/debugger/reference/idebugexpressionevaluator3.md)

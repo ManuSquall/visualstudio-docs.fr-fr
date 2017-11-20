@@ -1,45 +1,30 @@
 ---
-title: IDebugComPlusSymbolProvider::GetArrayTypeFromAddress | Microsoft Docs
+title: IDebugComPlusSymbolProvider::GetArrayTypeFromAddress | Documents Microsoft
 ms.custom: 
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-sdk
+ms.technology: vs-ide-sdk
 ms.tgt_pltfrm: 
 ms.topic: article
 helpviewer_keywords:
 - GetArrayTypeFromAddress
 - IDebugComPlusSymbolProvider::GetArrayTypeFromAddress
 ms.assetid: cc0c53f1-8c0f-49fa-8dbe-bc155e9ce0ef
-caps.latest.revision: 10
+caps.latest.revision: "10"
+author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-translation.priority.mt:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
+ms.openlocfilehash: 43e8df22bcf5acdcef81dce761cfdf49398fcfee
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
 ms.translationtype: MT
-ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
-ms.openlocfilehash: fbf49bb371a2f033c3fc4f6828808afdf55fdb8d
-ms.contentlocale: fr-fr
-ms.lasthandoff: 08/28/2017
-
+ms.contentlocale: fr-FR
+ms.lasthandoff: 10/31/2017
 ---
 # <a name="idebugcomplussymbolprovidergetarraytypefromaddress"></a>IDebugComPlusSymbolProvider::GetArrayTypeFromAddress
-Retrieves type information about the specified array given its debug address.  
+Récupère les informations sur le tableau spécifié, étant donné son adresse de débogage de type.  
   
-## <a name="syntax"></a>Syntax  
+## <a name="syntax"></a>Syntaxe  
   
 ```  
 [C++]  
@@ -61,24 +46,24 @@ int GetArrayTypeFromAddress(
 );  
 ```  
   
-#### <a name="parameters"></a>Parameters  
+#### <a name="parameters"></a>Paramètres  
  `pAddress`  
- [in] The debug address represented by an [IDebugAddress](../../../extensibility/debugger/reference/idebugaddress.md) interface.  
+ [in] L’adresse de débogage représentée par une [IDebugAddress](../../../extensibility/debugger/reference/idebugaddress.md) interface.  
   
  `pSig`  
- [in] The array to examine.  
+ [in] Tableau à examiner.  
   
  `dwSigLength`  
- [in] Length in bytes of the `pSig` array.  
+ [in] Longueur en octets de la `pSig` tableau.  
   
  `ppField`  
- [out] Returns the array type as represented by an [IDebugClassField](../../../extensibility/debugger/reference/idebugclassfield.md) interface.  
+ [out] Retourne le type de tableau, représentée par un [IDebugClassField](../../../extensibility/debugger/reference/idebugclassfield.md) interface.  
   
-## <a name="return-value"></a>Return Value  
- If successful, returns `S_OK`; otherwise, returns an error code.  
+## <a name="return-value"></a>Valeur de retour  
+ En cas de réussite, retourne `S_OK`; sinon, retourne un code d’erreur.  
   
-## <a name="example"></a>Example  
- The following example shows how to implement this method for a **CDebugSymbolProvider** object that exposes the [IDebugComPlusSymbolProvider](../../../extensibility/debugger/reference/idebugcomplussymbolprovider.md) interface.  
+## <a name="example"></a>Exemple  
+ L’exemple suivant montre comment implémenter cette méthode pour un **CDebugSymbolProvider** objet qui expose la [IDebugComPlusSymbolProvider](../../../extensibility/debugger/reference/idebugcomplussymbolprovider.md) interface.  
   
 ```cpp  
 HRESULT CDebugSymbolProvider::GetArrayTypeFromAddress(  
@@ -113,5 +98,5 @@ Error:
 }  
 ```  
   
-## <a name="see-also"></a>See Also  
+## <a name="see-also"></a>Voir aussi  
  [IDebugComPlusSymbolProvider](../../../extensibility/debugger/reference/idebugcomplussymbolprovider.md)

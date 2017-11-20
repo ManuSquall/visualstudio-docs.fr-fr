@@ -1,46 +1,29 @@
 ---
-title: IDebugMethodField::IsCustomAttributeDefined | Microsoft Docs
+title: IDebugMethodField::IsCustomAttributeDefined | Documents Microsoft
 ms.custom: 
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-sdk
+ms.technology: vs-ide-sdk
 ms.tgt_pltfrm: 
 ms.topic: article
-f1_keywords:
-- IDebugMethodField::IsCustomAttributeDefined
-helpviewer_keywords:
-- IDebugMethodField::IsCustomAttributeDefined method
+f1_keywords: IDebugMethodField::IsCustomAttributeDefined
+helpviewer_keywords: IDebugMethodField::IsCustomAttributeDefined method
 ms.assetid: 1b5d95a8-cc87-4acb-9e6a-3928f3632b7c
-caps.latest.revision: 10
+caps.latest.revision: "10"
+author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-translation.priority.mt:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
+ms.openlocfilehash: 5bf6d2dbc915638005f377826c5504b2f6bdf859
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
 ms.translationtype: MT
-ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
-ms.openlocfilehash: 95a6058a5e63b4d43600bff7e567b91a1dbd964d
-ms.contentlocale: fr-fr
-ms.lasthandoff: 08/28/2017
-
+ms.contentlocale: fr-FR
+ms.lasthandoff: 10/31/2017
 ---
 # <a name="idebugmethodfieldiscustomattributedefined"></a>IDebugMethodField::IsCustomAttributeDefined
-Determines whether a specific custom attribute has been defined.  
+Détermine si un attribut personnalisé spécifique a été défini.  
   
-## <a name="syntax"></a>Syntax  
+## <a name="syntax"></a>Syntaxe  
   
 ```cpp  
 HRESULT IsCustomAttributeDefined(   
@@ -54,12 +37,12 @@ int IsCustomAttributeDefined(
 );  
 ```  
   
-#### <a name="parameters"></a>Parameters  
+#### <a name="parameters"></a>Paramètres  
  `pszCustomAttributeName`  
- [in] A string containing the name of the custom attribute to find.  
+ [in] Chaîne contenant le nom de l’attribut personnalisé à rechercher.  
   
-## <a name="return-value"></a>Return Value  
- Returns S_OK if the custom attribute is defined on this method, otherwise returns S_FALSE.  
+## <a name="return-value"></a>Valeur de retour  
+ Retourne que S_OK si l’attribut personnalisé est défini sur cette méthode, sinon retourne S_FALSE.  
   
-## <a name="see-also"></a>See Also  
+## <a name="see-also"></a>Voir aussi  
  [IDebugMethodField](../../../extensibility/debugger/reference/idebugmethodfield.md)

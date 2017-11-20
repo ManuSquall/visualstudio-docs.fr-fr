@@ -1,40 +1,40 @@
 ---
-title: "IDiaSymbol::get_isReturnValue | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-debug"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-dev_langs: 
-  - "C++"
+title: IDiaSymbol::get_isReturnValue | Documents Microsoft
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-debug
+ms.tgt_pltfrm: 
+ms.topic: article
+dev_langs: C++
 ms.assetid: 37aaf48a-65cb-4ec2-823e-1c637a9f939c
-caps.latest.revision: 3
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 3
+caps.latest.revision: "3"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: d224b046e1728555e69aaac48571866197e10b09
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: fr-FR
+ms.lasthandoff: 10/31/2017
 ---
-# IDiaSymbol::get_isReturnValue
-[!INCLUDE[vs2017banner](../../code-quality/includes/vs2017banner.md)]
-
-Spécifie si la variable distribue une valeur de retour.  
+# <a name="idiasymbolgetisreturnvalue"></a>IDiaSymbol::get_isReturnValue
+Spécifie si la variable comporte une valeur de retour.  
   
-## Syntaxe  
+## <a name="syntax"></a>Syntaxe  
   
-```cpp  
+```C++  
 HRESULT get_isReturnValue(   
    BOOL* pRetVal);  
 ```  
   
-#### Paramètres  
+#### <a name="parameters"></a>Paramètres  
  `pRetVal`  
- \[out\]  Un pointeur vers `BOOL` qui spécifie si la variable distribue une valeur de retour.  
+ [out] Un pointeur vers un `BOOL` qui spécifie si la variable comporte une valeur de retour.  
   
-## Valeur de retour  
- En cas de réussite, retourne `S_OK`; sinon, retourne `S_FALSE` ou code d'erreur.  
+## <a name="return-value"></a>Valeur de retour  
+ En cas de réussite, retourne `S_OK`; sinon, retourne `S_FALSE` ou un code d’erreur.  
   
-## Voir aussi  
+## <a name="see-also"></a>Voir aussi  
  [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

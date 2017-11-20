@@ -1,45 +1,46 @@
 ---
-title: "IDebugTypeFieldBuilder2 | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-helpviewer_keywords: 
-  - "Interface de IDebugTypeFieldBuilder2"
+title: IDebugTypeFieldBuilder2 | Documents Microsoft
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+helpviewer_keywords: IDebugTypeFieldBuilder2 interface
 ms.assetid: 23911c5b-2bbf-4734-9976-87a0bd6ea36c
-caps.latest.revision: 6
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 6
+caps.latest.revision: "6"
+author: gregvanl
+ms.author: gregvanl
+manager: ghogen
+ms.openlocfilehash: cee126ad63e0a50ec2b859c470c06a4f2ae07600
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: fr-FR
+ms.lasthandoff: 10/31/2017
 ---
-# IDebugTypeFieldBuilder2
-[!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]
-
-étend l' **IDebugTypeFieldBuilder** pour pouvoir créer des types de tableau.  
+# <a name="idebugtypefieldbuilder2"></a>IDebugTypeFieldBuilder2
+Étend la **IDebugTypeFieldBuilder** pour être en mesure de créer des types de tableau.  
   
-## Syntaxe  
+## <a name="syntax"></a>Syntaxe  
   
 ```  
 IDebugTypeFieldBuilder2 : IDebugTypeFieldBuilder  
 ```  
   
-## Remarques pour les appelants  
- Cette interface peut être obtenue du fournisseur de symbole.  
+## <a name="notes-for-callers"></a>Remarques pour les appelants  
+ Cette interface peut être obtenue à partir du fournisseur de symboles.  
   
-## Méthodes  
- En plus de les méthodes sur l'interface d' [IDebugTypeFieldBuilder](../../../extensibility/debugger/reference/idebugtypefieldbuilder.md) , cette interface implémente la méthode suivante :  
+## <a name="methods"></a>Méthodes  
+ Outre les méthodes sur le [IDebugTypeFieldBuilder](../../../extensibility/debugger/reference/idebugtypefieldbuilder.md) interface, cette interface implémente la méthode suivante :  
   
 |Méthode|Description|  
-|-------------|-----------------|  
-|[CreateArrayOfType](../../../extensibility/debugger/reference/idebugtypefieldbuilder2-createarrayoftype.md)|Crée un tableau du type et la taille indiquées.|  
+|------------|-----------------|  
+|[CreateArrayOfType](../../../extensibility/debugger/reference/idebugtypefieldbuilder2-createarrayoftype.md)|Crée un tableau du type spécifié et de taille.|  
   
-## Configuration requise  
- en\-tête : Sh.h  
+## <a name="requirements"></a>Spécifications  
+ En-tête : Sh.h  
   
- l'espace de noms : Microsoft.VisualStudio.Debugger.Interop  
+ Namespace : Microsoft.VisualStudio.Debugger.Interop  
   
- Assembly : Microsoft.VisualStudio.Debugger.Interop.dll
+ Assembly : Microsoft.VisualStudio.Debugger.Interop.dll

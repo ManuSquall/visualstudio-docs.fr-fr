@@ -1,45 +1,48 @@
 ---
-title: "get, m&#233;thode (Float64Array) | Microsoft Docs"
-ms.custom: ""
-ms.date: "01/18/2017"
-ms.prod: "windows-client-threshold"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "devlang-javascript"
-ms.tgt_pltfrm: ""
-ms.topic: "language-reference"
-dev_langs: 
-  - "JavaScript"
-  - "TypeScript"
-  - "DHTML"
+title: "Get, méthode (Float64Array) | Documents Microsoft"
+ms.custom: 
+ms.date: 01/18/2017
+ms.prod: windows-client-threshold
+ms.reviewer: 
+ms.suite: 
+ms.technology: devlang-javascript
+ms.tgt_pltfrm: 
+ms.topic: language-reference
+dev_langs:
+- JavaScript
+- TypeScript
+- DHTML
 ms.assetid: debbe2f4-fe1e-4f9d-af7d-b24430bfa962
-caps.latest.revision: 9
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 9
+caps.latest.revision: "9"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: bee0ffe2417c8cc2743f9fd35d74899a940dde6e
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.translationtype: MT
+ms.contentlocale: fr-FR
+ms.lasthandoff: 10/27/2017
 ---
-# get, m&#233;thode (Float64Array)
-Omissible.  Obtient l'élément au niveau de l'index spécifié.  
+# <a name="get-method-float64array"></a>get, méthode (Float64Array)
+Omissible. Obtient l'élément au niveau de l'index spécifié.  
   
-## Syntaxe  
+## <a name="syntax"></a>Syntaxe  
   
-```javascript  
+```JavaScript  
 var value = float64Array.get(index);  
 ```  
   
-## Paramètres  
+## <a name="parameters"></a>Paramètres  
  `value`  
  Valeur retournée par cette méthode.  
   
  `index`  
  Index au niveau duquel obtenir l'élément du tableau.  
   
-## Exemple  
+## <a name="example"></a>Exemple  
  L'exemple suivant montre comment obtenir le premier élément du tableau.  
   
-```javascript  
+```JavaScript  
 var req = new XMLHttpRequest();  
     req.open('GET', "http://www.example.com");  
     req.responseType = "arraybuffer";  
@@ -56,5 +59,5 @@ var req = new XMLHttpRequest();
   
 ```  
   
-## Configuration requise  
+## <a name="requirements"></a>Spécifications  
  [!INCLUDE[jsv10](../../javascript/reference/includes/jsv10-md.md)]

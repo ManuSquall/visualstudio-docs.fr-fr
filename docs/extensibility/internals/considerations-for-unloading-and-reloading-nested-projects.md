@@ -1,36 +1,38 @@
 ---
-title: "Consid&#233;rations pour d&#233;charger et recharger les projets imbriqu&#233;s | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-helpviewer_keywords: 
-  - "projets imbriqués, décharger et recharger"
-  - "projets (Visual Studio SDK), décharger et recharger imbriqués"
+title: "Considérations relatives à décharger et recharger imbriqués projets | Documents Microsoft"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+helpviewer_keywords:
+- nested projects, unloading and reloading
+- projects [Visual Studio SDK], unloading and reloading nested
 ms.assetid: 06c3427e-c874-45b1-b9af-f68610ed016c
-caps.latest.revision: 12
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 12
+caps.latest.revision: "12"
+author: gregvanl
+ms.author: gregvanl
+manager: ghogen
+ms.openlocfilehash: cf34a3fe708a6ecab200262224da395b9fa37ecb
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: fr-FR
+ms.lasthandoff: 10/31/2017
 ---
-# Consid&#233;rations pour d&#233;charger et recharger les projets imbriqu&#233;s
-[!INCLUDE[vs2017banner](../../code-quality/includes/vs2017banner.md)]
-
-Lorsque vous implémentez des types imbriqués de projet, vous devez exécuter des étapes supplémentaires lorsque vous déchargez et rechargez les projets.  Pour signaler correctement des écouteurs aux événements de solution, vous devez correctement déclencher des événements d' `OnBeforeUnloadProject` et d' `OnAfterLoadProject` .  
+# <a name="considerations-for-unloading-and-reloading-nested-projects"></a>Considérations pour décharger et recharger les projets imbriqués
+Lorsque vous implémentez les types de projets imbriqués, vous devez effectuer des étapes supplémentaires lorsque vous déchargez et rechargez les projets. Afin d’informer correctement les écouteurs d’événements de la solution, vous devez augmenter au correctement le `OnBeforeUnloadProject` et `OnAfterLoadProject` les événements.  
   
- Une raison que vous devez déclencher ces événements est de cette manière que vous ne souhaitez pas que le contrôle de \(SCC\) code source pour supprimer des éléments du serveur et les ajouter ultérieurement sous forme d'un nouvel élément s'il existe une opération d' `Get` de SCC.  Dans ce cas, un nouveau fichier est chargé à partir de le SCC et vous devez décharger et recharger tous les fichiers au cas où elles sont différents.  Le SCC appelle `ReloadItem`.  votre implémentation de cet appel est de supprimer le projet et de le recréer de nouveau en implémentant `IVsFireSolutionEvents` pour appeler `OnBeforeUnloadProject` et `OnAfterLoadProject`.  Lorsque vous exécutez cette implémentation, le SCC est informé que le projet a été temporairement supprimé et à nouveau ajouté.  Par conséquent, le SCC ne traite le projet comme si le projet a été supprimé du serveur et de nouveau ensuite ajouté réellement.  
+ Vous devez déclencher ces événements de cette manière l’une des raisons sont que vous ne voulez pas de contrôle de code source (SCC) pour supprimer les éléments à partir du serveur et les ajouter en tant que quelque chose de nouveau s’il existe un `Get` opération à partir du contrôle de code source. Dans ce cas, un nouveau fichier serait chargé en dehors du contrôle de code source, et vous devez décharger et recharger tous les fichiers au cas où ils sont différents. Appels de contrôle de code source `ReloadItem`. Votre implémentation de cet appel consiste à supprimer le projet et recréez-la à nouveau en implémentant `IVsFireSolutionEvents` pour appeler `OnBeforeUnloadProject` et `OnAfterLoadProject`. Lorsque vous effectuez cette implémentation, le contrôle de code source est informé que le projet a été temporairement supprimé et ajouté de nouveau. Par conséquent, le contrôle de code source ne fonctionne pas sur le projet comme si le projet a été réellement supprimé à partir du serveur et ajouté de nouveau.  
   
-## recharger des projets  
- Pour prendre en charge se recharger des projets imbriqués, vous implémentez la méthode d' <xref:Microsoft.VisualStudio.Shell.Interop.IVsPersistHierarchyItem2.ReloadItem%2A> .  Dans votre implémentation d' `ReloadItem`, fermez les projets imbriqués puis les recréer.  
+## <a name="reloading-projects"></a>Recharger des projets  
+ Pour prendre en charge le rechargement de projets imbriqués, vous implémentez le <xref:Microsoft.VisualStudio.Shell.Interop.IVsPersistHierarchyItem2.ReloadItem%2A> (méthode). Dans votre implémentation de `ReloadItem`, fermez les projets imbriqués et de recréer ensuite.  
   
- Généralement lorsqu'un projet est rechargé, l'IDE déclenche l' <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolutionEvents3.OnBeforeUnloadProject%2A> et les événements d' `M:Microsoft.VisualStudio.Shell.Interop.IVsSolutionEvents3.OnAfterLoadProject(Microsoft.VisualStudio.Shell.Interop.IVsHierarchy,Microsoft.VisualStudio.Shell.Interop.IVsHierarchy)` .  Toutefois, pour les projets imbriqués qui seront supprimés et rechargés, le projet parent initialise le processus, pas l'IDE.  Étant donné que le projet parent ne déclenche pas d'événements de solution, puis l'IDE n'a aucune information sur l'initialisation du processus, les événements ne sont pas déclenchés.  
+ En général, lorsqu’un projet est rechargé, l’IDE génère le <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolutionEvents3.OnBeforeUnloadProject%2A> et `M:Microsoft.VisualStudio.Shell.Interop.IVsSolutionEvents3.OnAfterLoadProject(Microsoft.VisualStudio.Shell.Interop.IVsHierarchy,Microsoft.VisualStudio.Shell.Interop.IVsHierarchy)` les événements. Toutefois, pour les projets imbriqués qui seront supprimés et rechargés, le projet parent lance le processus, pas dans l’IDE. Étant donné que le projet parent ne déclenche pas d’événements de la solution, et l’IDE n’a pas d’informations sur l’initialisation du processus, les événements ne sont pas déclenchés.  
   
- Pour exécuter ce processus, les appels parents `QueryInterface` de projet à l'interface d' <xref:Microsoft.VisualStudio.Shell.Interop.IVsFireSolutionEvents> en dehors de l'interface d' <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolution> .  `IVsFireSolutionEvents` a des fonctions qui indiquent l'IDE déclencher l'événement d' `OnBeforeUnloadProject` pour décharger le projet imbriqué, puis déclenche l'événement d' `OnAfterLoadProject` pour recharger le même projet.  
+ Pour gérer ce processus, les appels de projet parent `QueryInterface` sur la <xref:Microsoft.VisualStudio.Shell.Interop.IVsFireSolutionEvents> interface désactiver le <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolution> interface. `IVsFireSolutionEvents`propose des fonctions qui indiquent à l’IDE pour déclencher le `OnBeforeUnloadProject` événement à décharger le projet imbriqué, puis déclenchez le `OnAfterLoadProject` à recharger le projet même événement.  
   
-## Voir aussi  
+## <a name="see-also"></a>Voir aussi  
  <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolutionEvents3>   
- [Projets d'imbrication](../../extensibility/internals/nesting-projects.md)
+ [Imbriquer des projets](../../extensibility/internals/nesting-projects.md)

@@ -1,44 +1,47 @@
 ---
-title: "IEnumRemoteDebugApplications::Reset | Microsoft Docs"
-ms.custom: ""
-ms.date: "01/18/2017"
-ms.prod: "windows-script-interfaces"
-ms.reviewer: ""
-ms.suite: ""
-ms.tgt_pltfrm: ""
-ms.topic: "reference"
+title: IEnumRemoteDebugApplications::Reset | Documents Microsoft
+ms.custom: 
+ms.date: 01/18/2017
+ms.prod: windows-script-interfaces
+ms.reviewer: 
+ms.suite: 
+ms.tgt_pltfrm: 
+ms.topic: reference
 apiname: IEnumRemoteDebugApplications.Reset
 apilocation: scrobj.dll
-helpviewer_keywords: 
-  - "IEnumRemoteDebugApplications::Reset"
+helpviewer_keywords: IEnumRemoteDebugApplications::Reset
 ms.assetid: a2c03728-999f-400c-bf40-4ced6cd88410
-caps.latest.revision: 8
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 8
+caps.latest.revision: "8"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: 657822ed1fed8cd9fb129a17469820b368f86244
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.translationtype: MT
+ms.contentlocale: fr-FR
+ms.lasthandoff: 10/27/2017
 ---
-# IEnumRemoteDebugApplications::Reset
-Réinitialise une séquence d'énumération.  
+# <a name="ienumremotedebugapplicationsreset"></a>IEnumRemoteDebugApplications::Reset
+Réinitialise la séquence d’énumération au début.  
   
-## Syntaxe  
+## <a name="syntax"></a>Syntaxe  
   
 ```  
 HRESULT Reset();  
 ```  
   
-#### Paramètres  
- Cette méthode n'accepte pas de paramètres.  
+#### <a name="parameters"></a>Paramètres  
+ Cette méthode ne prend aucun paramètre.  
   
-## Valeur de retour  
- La méthode retourne `HRESULT`.  Les valeurs possibles incluent, mais ne sont pas limitées à, celles dans le tableau suivant.  
+## <a name="return-value"></a>Valeur de retour  
+ La méthode retourne `HRESULT`. Les valeurs possibles sont notamment celles figurant dans le tableau suivant.  
   
 |Valeur|Description|  
-|------------|-----------------|  
+|-----------|-----------------|  
 |`S_OK`|La méthode a réussi.|  
   
-## Notes  
- Cette méthode réinitialise une séquence d'énumération au début.  
+## <a name="remarks"></a>Remarques  
+ Cette méthode réinitialise la séquence d’énumération au début.  
   
-## Voir aussi  
- [IEnumRemoteDebugApplications, interface](../../winscript/reference/ienumremotedebugapplications-interface.md)
+## <a name="see-also"></a>Voir aussi  
+ [Interface IEnumRemoteDebugApplications](../../winscript/reference/ienumremotedebugapplications-interface.md)

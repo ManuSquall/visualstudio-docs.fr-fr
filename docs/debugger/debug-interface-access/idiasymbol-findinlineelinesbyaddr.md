@@ -1,57 +1,57 @@
 ---
-title: "IDiaSymbol::findInlineeLinesByAddr | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-debug"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-dev_langs: 
-  - "C++"
+title: IDiaSymbol::findInlineeLinesByAddr | Documents Microsoft
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-debug
+ms.tgt_pltfrm: 
+ms.topic: article
+dev_langs: C++
 ms.assetid: f1ab47ca-c851-48ea-9c12-47fb80b31102
-caps.latest.revision: 3
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 3
+caps.latest.revision: "3"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: 1f714e42156cb4f7889cae52b8a5968a1a7d71f4
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: fr-FR
+ms.lasthandoff: 10/31/2017
 ---
-# IDiaSymbol::findInlineeLinesByAddr
-[!INCLUDE[vs2017banner](../../code-quality/includes/vs2017banner.md)]
-
-Extrait une énumération qui permet à un client pour itérer au sein de les informations de numéro de ligne de toutes les fonctions qui sont inline, directement ou indirectement, dans ce symbole dans la plage d'adresse spécifiée.  
+# <a name="idiasymbolfindinlineelinesbyaddr"></a>IDiaSymbol::findInlineeLinesByAddr
+Récupère une énumération qui permet à un client parcourir les informations de numéro de ligne de toutes les fonctions qui sont incorporées, directement ou indirectement, de ce symbole dans la plage d’adresses spécifiée.  
   
-## Syntaxe  
+## <a name="syntax"></a>Syntaxe  
   
-```cpp#  
-HRESULT findInlineeLinesByAddr (   
+```C++  
+HRESULT findInlineeLinesByAddr (   
    DWORD                 isect,  
    DWORD                 offset,  
    DWORD                 length,  
-   IDiaEnumLineNumbers** ppResult  
+   IDiaEnumLineNumbers** ppResult  
 );  
 ```  
   
-#### Paramètres  
+#### <a name="parameters"></a>Paramètres  
  `isect`  
- \[in\]  spécifie le composant de section de l'adresse.  
+ [in] Spécifie le composant de la section de l’adresse.  
   
  `offset`  
- \[in\]  Spécifie le composant offset de l'adresse.  
+ [in] Spécifie le composant de décalage de l’adresse.  
   
  `length`  
- \[in\]  Spécifie la plage d'adresses, en nombre d'octets, pour couvrir de cette requête.  
+ [in] Spécifie la plage d’adresses, en octets, pour couvrir cette requête.  
   
  `ppResult`  
- \[out\]  Contient un objet d' `IDiaEnumLineNumbers` qui contient la liste des numéros de ligne qui sont récupérés.  
+ [out] Contient un `IDiaEnumLineNumbers` objet qui contient la liste des numéros de ligne qui sont récupérés.  
   
-## Valeur de retour  
- En cas de réussite, retourne `S_OK` , sinon, retourne un code d'erreur.  
+## <a name="return-value"></a>Valeur de retour  
+ En cas de réussite, retourne `S_OK`; sinon, retourne un code d’erreur.  
   
-## Voir aussi  
+## <a name="see-also"></a>Voir aussi  
  [IDiaSession](../../debugger/debug-interface-access/idiasession.md)   
  [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)   
- [SymTagEnum, énumération](../../debugger/debug-interface-access/symtagenum.md)   
+ [SymTagEnum (énumération)](../../debugger/debug-interface-access/symtagenum.md)   
  [IDiaEnumLineNumbers](../../debugger/debug-interface-access/idiaenumlinenumbers.md)   
  [IDiaSession::findInlineeLines](../../debugger/debug-interface-access/idiasession-findinlineelines.md)

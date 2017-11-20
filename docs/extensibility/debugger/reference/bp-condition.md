@@ -1,46 +1,29 @@
 ---
-title: BP_CONDITION | Microsoft Docs
+title: BP_CONDITION | Documents Microsoft
 ms.custom: 
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-sdk
+ms.technology: vs-ide-sdk
 ms.tgt_pltfrm: 
 ms.topic: article
-f1_keywords:
-- BP_CONDITION
-helpviewer_keywords:
-- BP_CONDITION structure
+f1_keywords: BP_CONDITION
+helpviewer_keywords: BP_CONDITION structure
 ms.assetid: 407f87a3-2878-429b-8c65-b68feb36622a
-caps.latest.revision: 10
+caps.latest.revision: "10"
+author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-translation.priority.mt:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
+ms.openlocfilehash: 2e243ca1919368c8ea863383255b92a42befefe8
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
 ms.translationtype: MT
-ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
-ms.openlocfilehash: 7913b12a72ac269f543fcaa3ac7a8ca355b969ce
-ms.contentlocale: fr-fr
-ms.lasthandoff: 08/28/2017
-
+ms.contentlocale: fr-FR
+ms.lasthandoff: 10/31/2017
 ---
 # <a name="bpcondition"></a>BP_CONDITION
-Describes the conditions under which a breakpoint fires.  
+Décrit les conditions dans lesquelles un point d’arrêt est activé.  
   
-## <a name="syntax"></a>Syntax  
+## <a name="syntax"></a>Syntaxe  
   
 ```cpp  
 typedef struct _BP_CONDITION {   
@@ -62,36 +45,36 @@ public struct BP_CONDITION {
 };  
 ```  
   
-## <a name="members"></a>Members  
+## <a name="members"></a>Membres  
  `pThread`  
- The [IDebugThread2](../../../extensibility/debugger/reference/idebugthread2.md) object that represents the active thread for the application that contains the breakpoint.  
+ Le [IDebugThread2](../../../extensibility/debugger/reference/idebugthread2.md) objet qui représente le thread actif pour l’application qui contient le point d’arrêt.  
   
  `styleCondition`  
- A value from the [BP_COND_STYLE](../../../extensibility/debugger/reference/bp-cond-style.md) enumeration describing the style of this breakpoint condition.  
+ Une valeur à partir de la [BP_COND_STYLE](../../../extensibility/debugger/reference/bp-cond-style.md) énumération décrivant le style de cette condition de point d’arrêt.  
   
  `bstrContext`  
- The location of the breakpoint.  
+ L’emplacement du point d’arrêt.  
   
  `bstrCondition`  
- The firing condition of the breakpoint.  
+ La condition de déclenchement du point d’arrêt.  
   
  `nRadix`  
- Radix to be used in evaluating any numerical information.  
+ Base à utiliser lors de l’évaluation de toutes les informations numériques.  
   
-## <a name="remarks"></a>Remarks  
- This structure is a member of the [BP_REQUEST_INFO](../../../extensibility/debugger/reference/bp-request-info.md) and [BP_REQUEST_INFO2](../../../extensibility/debugger/reference/bp-request-info2.md) structures.  
+## <a name="remarks"></a>Remarques  
+ Cette structure est un membre de la [BP_REQUEST_INFO](../../../extensibility/debugger/reference/bp-request-info.md) et [BP_REQUEST_INFO2](../../../extensibility/debugger/reference/bp-request-info2.md) structures.  
   
- This structure is also passed as a parameter to the [SetCondition](../../../extensibility/debugger/reference/idebugboundbreakpoint2-setcondition.md) and [SetCondition](../../../extensibility/debugger/reference/idebugpendingbreakpoint2-setcondition.md) methods.  
+ Cette structure est également passée en tant que paramètre à la [SetCondition](../../../extensibility/debugger/reference/idebugboundbreakpoint2-setcondition.md) et [SetCondition](../../../extensibility/debugger/reference/idebugpendingbreakpoint2-setcondition.md) méthodes.  
   
-## <a name="requirements"></a>Requirements  
- Header: msdbg.h  
+## <a name="requirements"></a>Spécifications  
+ En-tête : msdbg.h  
   
- Namespace: Microsoft.VisualStudio.Debugger.Interop  
+ Namespace : Microsoft.VisualStudio.Debugger.Interop  
   
- Assembly: Microsoft.VisualStudio.Debugger.Interop.dll  
+ Assembly : Microsoft.VisualStudio.Debugger.Interop.dll  
   
-## <a name="see-also"></a>See Also  
- [Structures and Unions](../../../extensibility/debugger/reference/structures-and-unions.md)   
+## <a name="see-also"></a>Voir aussi  
+ [Structures et Unions](../../../extensibility/debugger/reference/structures-and-unions.md)   
  [BP_REQUEST_INFO](../../../extensibility/debugger/reference/bp-request-info.md)   
  [BP_REQUEST_INFO2](../../../extensibility/debugger/reference/bp-request-info2.md)   
  [SetCondition](../../../extensibility/debugger/reference/idebugboundbreakpoint2-setcondition.md)   

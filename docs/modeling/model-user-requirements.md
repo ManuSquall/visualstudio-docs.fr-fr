@@ -10,35 +10,20 @@ helpviewer_keywords:
 - requirements
 - stories
 ms.assetid: 359900f8-6d69-493d-bfdf-2c9069c74a26
-caps.latest.revision: 28
+caps.latest.revision: "28"
 author: alexhomer1
 ms.author: ahomer
 manager: douge
-translation.priority.ht:
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- ru-ru
-- zh-cn
-- zh-tw
-translation.priority.mt:
-- cs-cz
-- pl-pl
-- pt-br
-- tr-tr
-translationtype: Machine Translation
-ms.sourcegitcommit: 08aabdfe0e268f93ef7723076375b7f65b15ccf3
-ms.openlocfilehash: 60866c46920bb85927498992082763f9e34b4137
-ms.lasthandoff: 02/22/2017
-
+ms.openlocfilehash: 064d2819a9a7bd3e72539ff7624299e3619f4e94
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.translationtype: MT
+ms.contentlocale: fr-FR
+ms.lasthandoff: 10/27/2017
 ---
 # <a name="model-user-requirements"></a>Modéliser les besoins des utilisateurs
 Visual Studio vous aide à comprendre, discuter et communiquer les besoins de vos utilisateurs en dessinant des diagrammes sur leurs activités et le rôle joué par votre système pour les aider à atteindre leurs objectifs. Un modèle d’impératifs est un ensemble de tels diagrammes, chacun étant axé sur un aspect différent des besoins des utilisateurs. Pour obtenir une démonstration vidéo, consultez : [Modeling the Business Domain (Modélisation du domaine d’entreprise)](http://channel9.msdn.com/posts/clinted/UML-with-VS-2010-Part-3-Modeling-the-Business-Domain/).  
   
- Pour connaître les versions de Visual Studio prennent en charge chaque type de modèle, consultez [prise en charge de Version pour l’architecture et les outils de modélisation](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport).  
+ Pour connaître les versions de Visual Studio qui prennent en charge chaque type de modèle, consultez [Version support for architecture and modeling tools](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport).  
   
  Un modèle d’impératifs vous aide à :  
   
@@ -67,17 +52,17 @@ Visual Studio vous aide à comprendre, discuter et communiquer les besoins de vo
 |Diagramme ou document|Ce qu’il décrit dans un modèle d’impératifs|Section|  
 |-------------------------|-----------------------------------------------|-------------|  
 |Diagramme de classes conceptuelles|Glossaire des types utilisés pour décrire les impératifs et des types visibles à l’interface du système.||  
-|Autres documents ou éléments de travail|Critères de performances, de sécurité, de facilité d’utilisation et de fiabilité.|[Description de qualité de service](#QoSRequirements)|  
+|Autres documents ou éléments de travail|Critères de performances, de sécurité, de facilité d’utilisation et de fiabilité.|[Description des impératifs de qualité de service](#QoSRequirements)|  
 |Autres documents ou éléments de travail|Contraintes et règles non spécifiques à un cas d’usage particulier|[Affichage des règles métier](#BusinessRules)|  
   
- Notez que la plupart des types de diagrammes peuvent être utilisés à d’autres fins. Pour une vue d’ensemble des types de diagrammes, consultez [création de modèles pour votre application](../modeling/create-models-for-your-app.md).
+ Notez que la plupart des types de diagrammes peuvent être utilisés à d’autres fins. Pour une vue d’ensemble des types de diagrammes, consultez [créer des modèles pour votre application](../modeling/create-models-for-your-app.md).
   
-##  <a name="a-namebusinessrulesa-showing-business-rules"></a><a name="BusinessRules"></a>Affichage des règles métier  
+##  <a name="BusinessRules"></a> Showing Business Rules  
  Une règle métier est un impératif qui n’est associé à aucun cas d’usage particulier et doit être respecté à l’échelle du système.  
   
- De nombreuses règles métier sont des contraintes sur les relations entre les classes conceptuelles. Vous pouvez écrire ces *statique**les règles d’entreprise* sous forme de commentaires associés aux classes pertinentes d’un diagramme de classes conceptuelles. Exemple :  
+ De nombreuses règles métier sont des contraintes sur les relations entre les classes conceptuelles. Vous pouvez écrire ces *statique**les règles d’entreprise* sous forme de commentaires associés aux classes pertinentes sur un diagramme de classes conceptuel. Exemple :  
   
- ![Règle dans le commentaire associé à la classe Order. ] (../modeling/media/uml_reqmcd2.png "UML_ReqmCD2")  
+ ![Règle de commentaire est associé à la classe Order. ] (../modeling/media/uml_reqmcd2.png "UML_ReqmCD2")  
   
  Les*règles métier dynamiques* contraignent les séquences d’événements autorisées. Par exemple, vous utilisez un diagramme de séquence ou d’activités pour montrer qu’un utilisateur doit se connecter avant d’effectuer d’autres opérations sur votre système.  
   
@@ -91,7 +76,7 @@ Visual Studio vous aide à comprendre, discuter et communiquer les besoins de vo
 |--------------------|----------|  
 |Comment développer du code qui respecte des règles métier|[Modéliser l’architecture de votre application](../modeling/model-your-app-s-architecture.md)|  
   
-##  <a name="a-nameqosrequirementsa-describing-quality-of-service-requirements"></a><a name="QoSRequirements"></a>Description de qualité de Service  
+##  <a name="QoSRequirements"></a> Describing Quality of Service Requirements  
  Il existe plusieurs catégories d’impératifs de qualité de service. Il s'agit notamment des types suivants :  
   
 -   Performances  
@@ -112,10 +97,9 @@ Visual Studio vous aide à comprendre, discuter et communiquer les besoins de vo
   
 |Pour en savoir plus sur|Lecture|  
 |--------------------|----------|  
-|Informations détaillées sur l’enregistrement des impératifs de qualité de service|[Instructions pour définir la qualité de Service](http://msdn.microsoft.com/en-us/9677a437-c2cb-4ac4-8c2d-4e3350005f06)|  
+|Informations détaillées sur l’enregistrement des impératifs de qualité de service|[Instructions pour définir les impératifs de qualité de service](http://msdn.microsoft.com/en-us/9677a437-c2cb-4ac4-8c2d-4e3350005f06)|  
 |Comment développer du code conforme aux impératifs de qualité de service|[Modéliser l’architecture de votre application](../modeling/model-your-app-s-architecture.md)|  
   
 ## <a name="see-also"></a>Voir aussi  
  [Utiliser des modèles dans votre processus de développement](../modeling/use-models-in-your-development-process.md)   
  [Modéliser l’architecture de votre application](../modeling/model-your-app-s-architecture.md)   
-

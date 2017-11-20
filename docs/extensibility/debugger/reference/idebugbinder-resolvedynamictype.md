@@ -1,46 +1,29 @@
 ---
-title: IDebugBinder::ResolveDynamicType | Microsoft Docs
+title: IDebugBinder::ResolveDynamicType | Documents Microsoft
 ms.custom: 
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-sdk
+ms.technology: vs-ide-sdk
 ms.tgt_pltfrm: 
 ms.topic: article
-f1_keywords:
-- IDebugBinder::ResolveDynamicType
-helpviewer_keywords:
-- IDebugBinder::ResolveDynamicType method
+f1_keywords: IDebugBinder::ResolveDynamicType
+helpviewer_keywords: IDebugBinder::ResolveDynamicType method
 ms.assetid: 2c36ef92-5b44-4cfd-988e-54a2e5a6710c
-caps.latest.revision: 8
+caps.latest.revision: "8"
+author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-translation.priority.mt:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
+ms.openlocfilehash: 3dcd4b946e5b8c2d4cd7c3d77c77140e66699cef
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
 ms.translationtype: MT
-ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
-ms.openlocfilehash: cdc951d340fbdf07effac4e0df2c19ac0e2947cd
-ms.contentlocale: fr-fr
-ms.lasthandoff: 08/28/2017
-
+ms.contentlocale: fr-FR
+ms.lasthandoff: 10/31/2017
 ---
 # <a name="idebugbinderresolvedynamictype"></a>IDebugBinder::ResolveDynamicType
-This method returns the exact type of a variable.  
+Cette méthode retourne le type exact d’une variable.  
   
-## <a name="syntax"></a>Syntax  
+## <a name="syntax"></a>Syntaxe  
   
 ```cpp  
 HRESULT ResolveDynamicType (  
@@ -56,17 +39,17 @@ int ResolveDynamicType(
 );  
 ```  
   
-#### <a name="parameters"></a>Parameters  
+#### <a name="parameters"></a>Paramètres  
  `pDynamic`  
- [in] An [IDebugDynamicField](../../../extensibility/debugger/reference/idebugdynamicfield.md) representing a type of a variable.  
+ [in] Un [IDebugDynamicField](../../../extensibility/debugger/reference/idebugdynamicfield.md) représentant un type d’une variable.  
   
  `ppResolved`  
- [out] Returns an [IDebugField](../../../extensibility/debugger/reference/idebugfield.md) giving specific information about the variable's type.  
+ [out] Retourne un [IDebugField](../../../extensibility/debugger/reference/idebugfield.md) en donnant des informations spécifiques sur le type de variable.  
   
-## <a name="return-value"></a>Return Value  
- If successful, returns `S_OK`; otherwise, returns an error code.  
+## <a name="return-value"></a>Valeur de retour  
+ En cas de réussite, retourne `S_OK`; sinon, retourne un code d’erreur.  
   
-## <a name="see-also"></a>See Also  
+## <a name="see-also"></a>Voir aussi  
  [IDebugBinder](../../../extensibility/debugger/reference/idebugbinder.md)   
  [IDebugField](../../../extensibility/debugger/reference/idebugfield.md)   
  [IDebugDynamicField](../../../extensibility/debugger/reference/idebugdynamicfield.md)

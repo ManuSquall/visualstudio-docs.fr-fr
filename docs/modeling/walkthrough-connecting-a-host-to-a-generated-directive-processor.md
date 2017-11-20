@@ -10,21 +10,15 @@ helpviewer_keywords:
 - walkthroughs [text templates], connecting host to processor
 - text templates, custom directive hosts
 ms.assetid: 254540d9-90d6-42de-8c1c-068affd56e83
-caps.latest.revision: 47
+caps.latest.revision: "47"
 author: alancameronwills
 ms.author: awills
 manager: douge
-translation.priority.mt:
-- cs-cz
-- pl-pl
-- pt-br
-- tr-tr
+ms.openlocfilehash: 07b1e70775638d88e67280f2f914412ef4271a48
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
 ms.translationtype: MT
-ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
-ms.openlocfilehash: 5bfeb8ea94b457114d7ba6ab74b783972e64350c
-ms.contentlocale: fr-fr
-ms.lasthandoff: 09/26/2017
-
+ms.contentlocale: fr-FR
+ms.lasthandoff: 10/27/2017
 ---
 # <a name="walkthrough-connecting-a-host-to-a-generated-directive-processor"></a>Procédure pas à pas : connexion d'un hôte à un processeur de directive généré
 Vous pouvez écrire votre propre hôte qui traite les modèles de texte. Un hôte personnalisé de base est illustré dans [procédure pas à pas : création d’un hôte de modèle de texte personnalisé](../modeling/walkthrough-creating-a-custom-text-template-host.md). Vous pouvez étendre cet hôte pour ajouter des fonctions telles que la génération de plusieurs fichiers de sortie.  
@@ -367,4 +361,3 @@ Vous pouvez écrire votre propre hôte qui traite les modèles de texte. Un hôt
   
 ## <a name="see-also"></a>Voir aussi  
  [Procédure pas à pas : création d’un hôte de modèle de texte personnalisé](../modeling/walkthrough-creating-a-custom-text-template-host.md)
-

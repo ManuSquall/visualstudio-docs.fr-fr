@@ -1,11 +1,10 @@
 ---
-title: Adding a Menu Controller to a Toolbar | Microsoft Docs
+title: "Ajout d’un contrôleur de Menu à une barre d’outils | Documents Microsoft"
 ms.custom: 
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-sdk
+ms.technology: vs-ide-sdk
 ms.tgt_pltfrm: 
 ms.topic: article
 helpviewer_keywords:
@@ -13,53 +12,39 @@ helpviewer_keywords:
 - menus, adding menu controllers to toolbars
 - menu controllers, adding to toolbars
 ms.assetid: 6af9b0b4-037f-404c-bb40-aaa1970768ea
-caps.latest.revision: 38
+caps.latest.revision: "38"
+author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-translation.priority.mt:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
+ms.openlocfilehash: 786d7c8841f680d5af5c539e30723289df4db0f5
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
 ms.translationtype: MT
-ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
-ms.openlocfilehash: 998583202afcbf9c99f87d6bbdfcbb5747718bfa
-ms.contentlocale: fr-fr
-ms.lasthandoff: 08/28/2017
-
+ms.contentlocale: fr-FR
+ms.lasthandoff: 10/31/2017
 ---
-# <a name="adding-a-menu-controller-to-a-toolbar"></a>Adding a Menu Controller to a Toolbar
-This walkthrough builds on the [Adding a Toolbar to a Tool Window](../extensibility/adding-a-toolbar-to-a-tool-window.md) walkthrough and shows how to add a menu controller to the tool window toolbar. The steps shown here also can be applied to the toolbar that is created in the [Adding a Toolbar](../extensibility/adding-a-toolbar.md) walkthrough.  
+# <a name="adding-a-menu-controller-to-a-toolbar"></a>Ajout d’un contrôleur de Menu à une barre d’outils
+Cette procédure pas à pas repose sur le [Ajout d’une barre d’outils à une fenêtre outil](../extensibility/adding-a-toolbar-to-a-tool-window.md) procédure pas à pas et montre comment ajouter un contrôleur de menu à la barre d’outils de la fenêtre outil. Les étapes indiquées ici peuvent également être appliqués à la barre d’outils qui est créé dans le [Ajout d’une barre d’outils](../extensibility/adding-a-toolbar.md) procédure pas à pas.  
   
- A menu controller is a split control. The left side of the menu controller shows the last-used command, and it can be run by clicking it. The right side of the menu controller is an arrow that, when clicked, opens a list of additional commands. When you click a command on the list, the command runs, and it replaces the command on the left side of the menu controller. In this way, the menu controller operates like a command button that always shows the last-used command from a list.  
+ Un contrôleur de menu est un contrôle partagé. La partie gauche du contrôleur de menu affiche la commande utilisés en dernier, et il peut être exécuté en cliquant dessus. Le côté droit du contrôleur de menu est une flèche qui, lorsque vous cliquez dessus, ouvre une liste de commandes supplémentaires. Lorsque vous cliquez sur une commande dans la liste, la commande s’exécute, et il remplace la commande sur le côté gauche du contrôleur de menu. De cette façon, le contrôleur de menu fonctionne comme un bouton de commande qui affiche la commande utilisés en dernier dans la liste.  
   
- Menu controllers can appear on menus but they are most often used on toolbars.  
+ Contrôleurs de menu peuvent apparaître dans les menus, mais elles sont souvent utilisées des barres d’outils.  
   
-## <a name="prerequisites"></a>Prerequisites  
- Starting in Visual Studio 2015, you do not install the Visual Studio SDK from the download center. It is included as an optional feature in Visual Studio setup. You can also install the VS SDK later on. For more information, see [Installing the Visual Studio SDK](../extensibility/installing-the-visual-studio-sdk.md).  
+## <a name="prerequisites"></a>Conditions préalables  
+ À partir de Visual Studio 2015, vous n’installez pas le Kit de développement logiciel Visual Studio à partir du centre de téléchargement. Il est inclus comme une fonctionnalité facultative dans le programme d’installation de Visual Studio. Vous pouvez également installer le kit SDK VS ultérieurement. Pour plus d’informations, consultez [l’installation de Visual Studio SDK](../extensibility/installing-the-visual-studio-sdk.md).  
   
-## <a name="creating-a-menu-controller"></a>Creating a Menu Controller  
+## <a name="creating-a-menu-controller"></a>Création d’un contrôleur de Menu  
   
-#### <a name="to-create-a-menu-controller"></a>To create a menu controller  
+#### <a name="to-create-a-menu-controller"></a>Pour créer un contrôleur de menu  
   
-1.  Follow the procedures described in [Adding a Toolbar to a Tool Window](../extensibility/adding-a-toolbar-to-a-tool-window.md) to create a tool window that has a toolbar.  
+1.  Suivez les procédures décrites dans [Ajout d’une barre d’outils à une fenêtre outil](../extensibility/adding-a-toolbar-to-a-tool-window.md) pour créer une fenêtre outil qui a une barre d’outils.  
   
-2.  In TWTestCommandPackage.vsct, go to the Symbols section. In the GuidSymbol element named **guidTWTestCommandPackageCmdSet**, declare your menu controller, menu controller group, and three menu items.  
+2.  Dans TWTestCommandPackage.vsct, accédez à la section de symboles. Dans l’élément GuidSymbol nommé **guidTWTestCommandPackageCmdSet**, déclarez votre contrôleur de menu, groupe de contrôleurs de menu et trois éléments de menu.  
   
     ```xml  
     <IDSymbol name="TestMenuController" value="0x1300" /><IDSymbol name="TestMenuControllerGroup" value="0x1060" /><IDSymbol name="cmdidMCItem1" value="0x0130" /><IDSymbol name="cmdidMCItem2" value="0x0131" /><IDSymbol name="cmdidMCItem3" value="0x0132" />  
     ```  
   
-3.  In the Menus section, after the last menu entry, define the menu controller as a menu.  
+3.  Dans la section de Menus, après la dernière entrée de menu, définissez le contrôleur de menu sous forme de menu.  
   
     ```xml  
     <Menu guid="guidTWTestCommandPackageCmdSet" id="TestMenuController" priority="0x0100" type="MenuController">  
@@ -74,9 +59,9 @@ This walkthrough builds on the [Adding a Toolbar to a Tool Window](../extensibil
     </Menu>  
     ```  
   
-     The `TextChanges` and `TextIsAnchorCommand` flags must be included to enable the menu controller to reflect the last selected command.  
+     Le `TextChanges` et `TextIsAnchorCommand` indicateurs doivent être incluses pour activer le contrôleur de menu afin de refléter la dernière commande sélectionnée.  
   
-4.  In the Groups section, after the last group entry, add the menu controller group.  
+4.  Dans les groupes de section, après la dernière entrée de groupe, ajoutez le groupe de contrôleurs de menu.  
   
     ```xml  
     <Group guid="guidTWTestCommandPackageCmdSet" id="TestMenuControllerGroup" priority="0x000">  
@@ -84,9 +69,9 @@ This walkthrough builds on the [Adding a Toolbar to a Tool Window](../extensibil
     </Group>  
     ```  
   
-     By setting the menu controller as the parent, any commands placed in this group will appear in the menu controller. The `priority` attribute is omitted, which sets it to the default value of 0, because it will be the only group on the menu controller.  
+     En définissant le contrôleur de menu comme parent, toutes les commandes placées dans ce groupe seront affiche dans le contrôleur de menu. Le `priority` attribut est omis, qui le définit la valeur par défaut de 0, car il s’agit du groupe uniquement sur le contrôleur de menu.  
   
-5.  In the Buttons section, after the last button entry, add a Button element for each of your menu items.  
+5.  Dans la section de boutons, après la dernière entrée de bouton, ajouter un élément de bouton pour chacun de vos éléments de menu.  
   
     ```xml  
     <Button guid="guidTWTestCommandPackageCmdSet" id="cmdidMCItem1" priority="0x0000" type="Button">  
@@ -118,19 +103,19 @@ This walkthrough builds on the [Adding a Toolbar to a Tool Window](../extensibil
     </Button>  
     ```  
   
-6.  At this point, you can look at the menu controller. Build the project and start debugging. You should see the experimental instance.  
+6.  À ce stade, vous pouvez examiner le contrôleur de menu. Générez le projet et commencez le débogage. Vous devez voir l’instance expérimentale.  
   
-    1.  On the **View / Other Windows** menu, open **Test ToolWindow**.  
+    1.  Sur le **affichage / autres fenêtres** menu, ouvrir **Test ToolWindow**.  
   
-    2.  The menu controller appears on the toolbar in the tool window.  
+    2.  Le contrôleur de menu s’affiche dans la barre d’outils dans la fenêtre outil.  
   
-    3.  Click the arrow on the right-hand side of the menu controller to see the three possible commands.  
+    3.  Cliquez sur la flèche à droite du contrôleur de menu pour voir les trois commandes possibles.  
   
-     Notice that when you click a command, the title of the menu controller changes to display that command. In the next section, we will add the code to activate these commands.  
+     Notez que lorsque vous cliquez sur une commande, le titre du contrôleur de menu change pour afficher cette commande. Dans la section suivante, nous allons ajouter le code pour activer ces commandes.  
   
-## <a name="implementing-the-menu-controller-commands"></a>Implementing the Menu Controller Commands  
+## <a name="implementing-the-menu-controller-commands"></a>Implémentation des commandes du contrôleur de Menu  
   
-1.  In TWTestCommandPackageGuids.cs, add command IDs for your three menu items after the existing command IDs.  
+1.  Dans TWTestCommandPackageGuids.cs, ajouter les ID de commande pour les éléments du trois menu après l’ID de commande existante.  
   
     ```csharp  
     public const int cmdidMCItem1 = 0x130;  
@@ -138,13 +123,13 @@ This walkthrough builds on the [Adding a Toolbar to a Tool Window](../extensibil
     public const int cmdidMCItem3 = 0x132;  
     ```  
   
-2.  In TWTestCommand.cs, add the following code at the top of the TWTestCommand class.  
+2.  Dans TWTestCommand.cs, ajoutez le code suivant en haut de la classe TWTestCommand.  
   
     ```csharp  
     private int currentMCCommand; // The currently selected menu controller command  
     ```  
   
-3.  In the TWTestCommand constructor, after the last call to the `AddCommand` method, add code to route the events for each command through the same handlers.  
+3.  Dans le constructeur TWTestCommand, après le dernier appel à la `AddCommand` (méthode), ajoutez le code pour acheminer les événements pour chaque commande via les gestionnaires de mêmes.  
   
     ```csharp  
     for (int i = TWTestCommandPackageGuids.cmdidMCItem1; i <=  
@@ -165,7 +150,7 @@ This walkthrough builds on the [Adding a Toolbar to a Tool Window](../extensibil
     }  
     ```  
   
-4.  Add an event handler to the TWTestCommand class to mark the selected command as checked.  
+4.  Ajoutez un gestionnaire d’événements à la classe TWTestCommand pour marquer la commande sélectionnée comme activé.  
   
     ```csharp  
     private void OnMCItemQueryStatus(object sender, EventArgs e)  
@@ -178,7 +163,7 @@ This walkthrough builds on the [Adding a Toolbar to a Tool Window](../extensibil
     }  
     ```  
   
-5.  Add an event handler that displays a MessageBox when the user selects a command on the menu controller:  
+5.  Ajoutez un gestionnaire d’événements qui affiche un MessageBox lorsque l’utilisateur sélectionne une commande sur le contrôleur de menu :  
   
     ```csharp  
     private void OnMCItemClicked(object sender, EventArgs e)  
@@ -228,20 +213,20 @@ This walkthrough builds on the [Adding a Toolbar to a Tool Window](../extensibil
     }  
     ```  
   
-## <a name="testing-the-menu-controller"></a>Testing the Menu Controller  
+## <a name="testing-the-menu-controller"></a>Test du contrôleur de Menu  
   
-1.  Build the project and start debugging. You should see the experimental instance.  
+1.  Générez le projet et commencez le débogage. Vous devez voir l’instance expérimentale.  
   
-2.  Open the **Test ToolWindow** on the **View / Other Windows** menu.  
+2.  Ouvrez le **Test ToolWindow** sur la **vue / autres fenêtres** menu.  
   
-     The menu controller appears in the toolbar in the tool window and displays **MC Item 1**.  
+     Le contrôleur de menu s’affiche dans la barre d’outils dans la fenêtre outil et affiche **MC élément 1**.  
   
-3.  Click the menu controller button to the left of the arrow.  
+3.  Cliquez sur le bouton de contrôleur de menu à gauche de la flèche.  
   
-     You should see three items, the first of which is selected and has a highlight box around its icon. Click **MC Item 3**.  
+     Vous devez voir trois éléments, le premier est sélectionné et comprend une zone de sélection autour de son icône. Cliquez sur **MC élément 3**.  
   
-     A dialog box appears with the message **You selected Menu controller Item 3**. Notice that the message corresponds to the text on the menu controller button. The menu controller button now displays **MC Item 3**.  
+     Une boîte de dialogue s’affiche avec le message **vous avez sélectionné le contrôleur de Menu élément 3**. Notez que le message correspond au texte sur le bouton de contrôleur de menu. Le bouton de contrôleur de menu affiche maintenant **MC élément 3**.  
   
-## <a name="see-also"></a>See Also  
- [Adding a Toolbar to a Tool Window](../extensibility/adding-a-toolbar-to-a-tool-window.md)   
- [Adding a Toolbar](../extensibility/adding-a-toolbar.md)
+## <a name="see-also"></a>Voir aussi  
+ [Ajout d’une barre d’outils à une fenêtre outil](../extensibility/adding-a-toolbar-to-a-tool-window.md)   
+ [Ajout d’une barre d’outils](../extensibility/adding-a-toolbar.md)

@@ -1,47 +1,48 @@
 ---
-title: "CA1020&#160;: &#201;viter les espaces de noms comportant peu de types | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-devops-test"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "CA1020"
-  - "AvoidNamespacesWithFewTypes"
-helpviewer_keywords: 
-  - "AvoidNamespacesWithFewTypes"
-  - "CA1020"
+title: "CA1020 : Éviter les espaces de noms comportant peu de types | Documents Microsoft"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-code-analysis
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords:
+- CA1020
+- AvoidNamespacesWithFewTypes
+helpviewer_keywords:
+- CA1020
+- AvoidNamespacesWithFewTypes
 ms.assetid: 9cb272f6-a3ff-45af-b35d-70dea620b074
-caps.latest.revision: 17
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
-caps.handback.revision: 17
+caps.latest.revision: "17"
+author: gewarren
+ms.author: gewarren
+manager: ghogen
+ms.openlocfilehash: c09f3fa7855f2dadfce7a22914c4a7010b84f210
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: fr-FR
+ms.lasthandoff: 10/31/2017
 ---
-# CA1020&#160;: &#201;viter les espaces de noms comportant peu de types
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
-
+# <a name="ca1020-avoid-namespaces-with-few-types"></a>CA1020 : Éviter les espaces de noms comportant peu de types
 |||  
 |-|-|  
 |TypeName|AvoidNamespacesWithFewTypes|  
 |CheckId|CA1020|  
-|Catégorie|Microsoft.CSharp|  
-|Modification avec rupture|Oui|  
+|Catégorie|Microsoft.Design|  
+|Modification avec rupture|Rupture|  
   
-## Cause  
- Un espace de noms autre que l'espace de noms global contient moins que cinq types.  
+## <a name="cause"></a>Cause  
+ Un espace de noms autre que l’espace de noms global contient moins de cinq types.  
   
-## Description de la règle  
- Assurez\-vous que chacun de vos espaces de noms bénéficie d'une organisation logique, et qu'une raison valide justifie le placement des types dans un espace de noms peu rempli.  Les espaces de noms doivent contenir des types utilisés ensemble dans la plupart des scénarios.  Lorsque leurs applications sont mutuellement exclusives, les types doivent être placés dans des espaces de noms distincts.  Par exemple, l'espace de noms <xref:System.Web.UI> contient des types utilisés dans des applications Web, et l'espace de noms <xref:System.Windows.Forms> des types utilisés dans des applications [!INCLUDE[TLA#tla_mswin](../code-quality/includes/tlasharptla_mswin_md.md)].  Bien que les deux espaces de noms aient des types que les aspects de contrôle de l'interface utilisateur, ces types ne sont pas conçu pour une utilisation dans la même application.  Par conséquent, ils se trouvent dans les espaces de noms distincts.  Une organisation soignée des espaces de noms peut également s'avérer utile car elle augmente la possibilité de découverte d'une fonctionnalité.  En examinant la hiérarchie des espaces de noms, les consommateurs de bibliothèques doivent être en mesure de localiser les types qui implémentent une fonctionnalité.  
+## <a name="rule-description"></a>Description de la règle  
+ Assurez-vous que chacun de vos espaces de noms bénéficie d’une organisation logique, et qu’une raison valide justifie pour placer des types dans un espace de noms peu rempli. Espaces de noms doit contenir des types qui sont utilisées ensemble dans la plupart des scénarios. Lorsque leurs applications sont mutuellement exclusives, les types doivent se trouver dans les espaces de noms distincts. Par exemple, le <xref:System.Web.UI> espace de noms contient des types qui sont utilisés dans les applications Web, et le <xref:System.Windows.Forms> espace de noms contient des types qui sont utilisés dans [!INCLUDE[TLA#tla_mswin](../code-quality/includes/tlasharptla_mswin_md.md)]-en fonction des applications. Même si les deux espaces de noms possèdent des types qui contrôlent les aspects de l’interface utilisateur, ces types ne sont pas conçus pour une utilisation dans la même application. Par conséquent, ils se trouvent dans les espaces de noms distincts. Organisation de l’espace de noms peut également être utile, car elle augmente la détectabilité d’une fonctionnalité prudent. En examinant la hiérarchie de l’espace de noms, les consommateurs de la bibliothèque doivent être en mesure de localiser les types qui implémentent une fonctionnalité.  
   
 > [!NOTE]
->  Pour se conformer à cette directive, les types et les autorisations du moment du design ne doivent pas être fusionnés dans d'autres espaces de noms.  Ces types appartiennent à leurs propres espaces de noms, eux\-mêmes subordonnés à votre espace de noms principal. Ces espaces de noms doivent respectivement se terminer par `.Design` et `.Permissions`.  
+>  Autorisations et les types au moment du design ne doivent pas être fusionnées dans d’autres espaces de noms pour se conformer à cette règle. Ces types appartiennent à leurs propres espaces de noms sous votre espace de noms principal et les espaces de noms doit se terminer dans `.Design` et `.Permissions`, respectivement.  
   
-## Comment corriger les violations  
- Pour corriger une violation de cette règle, essayez de mixer les espaces de noms qui contiennent un petit nombre de types dans un espace de noms unique.  
+## <a name="how-to-fix-violations"></a>Comment corriger les violations  
+ Pour corriger une violation de cette règle, essayez d’associer les espaces de noms qui contiennent des quelques types dans un espace de noms.  
   
-## Quand supprimer les avertissements  
- Il est possible de supprimer sans risque un avertissement de cette règle quand l'espace de noms ne contient aucun type utilisé avec les types présents dans vos autres espaces de noms.
+## <a name="when-to-suppress-warnings"></a>Quand supprimer les avertissements  
+ Il est possible de supprimer un avertissement de cette règle lorsque l’espace de noms ne contient pas de types qui sont utilisés avec les types dans vos autres espaces de noms.

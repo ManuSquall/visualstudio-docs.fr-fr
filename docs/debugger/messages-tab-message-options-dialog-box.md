@@ -1,46 +1,46 @@
 ---
-title: "Onglet Messages de la bo&#238;te de dialogue Options des messages | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-debug"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-helpviewer_keywords: 
-  - "options des messages, Messages"
+title: "Onglet messages, la boîte de dialogue Options des messages | Documents Microsoft"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-debug
+ms.tgt_pltfrm: 
+ms.topic: article
+helpviewer_keywords: message options, Messages
 ms.assetid: fb9fa211-e82c-40a5-9e4b-ba8de07313c0
-caps.latest.revision: 4
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 4
+caps.latest.revision: "4"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: a8c3578db069a90baa8192af0641465dbecc790b
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: fr-FR
+ms.lasthandoff: 10/31/2017
 ---
-# Onglet Messages de la bo&#238;te de dialogue Options des messages
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
-
-Utilisez l'onglet **Messages** pour sélectionner les types de messages à lister dans la [vue Messages](../debugger/messages-view.md), ainsi que pour spécifier les critères de recherche des messages.  Pour afficher la [boîte de dialogue Options des messages](../debugger/message-options-dialog-box.md), sélectionnez **Enregistrer les messages** dans le menu **Espionner**.  
+# <a name="messages-tab-message-options-dialog-box"></a>Onglet Messages de la boîte de dialogue Options des messages
+Utilisez le **Messages** tab pour sélectionner les types de messages à la liste dans [vue Messages](../debugger/messages-view.md)et pour spécifier les critères de recherche de messages. Pour afficher le [la boîte de dialogue Options des messages](../debugger/message-options-dialog-box.md), choisissez **des Messages de journal** à partir de la **Spy** menu.  
   
- En règle générale, vous sélectionnez d'abord des **groupes de messages**, puis vous affinez votre choix en sélectionnant individuellement les **messages à afficher**.  Le bouton **Tous** permet de sélectionner tous les types de messages, alors que le bouton **Aucun** permet d'effacer tous les types de messages.  
+ En règle générale, vous sélectionnez **groupes de messages**et d’ajuster la sélection en sélectionnant individuels **les Messages à afficher**. Le **tous les** bouton sélectionne tous les types de messages et le **aucun** bouton efface tous les types.  
   
- Les paramètres suivants sont disponibles sous l'onglet **Messages** :  
+ Les paramètres suivants sont disponibles sur le **Messages** onglet :  
   
  **Messages à afficher**  
- Sélectionne des messages spécifiques à afficher.  Lorsque vous créez une nouvelle fenêtre Messages, elle peut afficher tous les messages.  Lorsque vous filtrez des messages à partir de l'onglet **Messages**, ce filtre s'applique seulement aux nouveaux messages, pas aux messages qui ont déjà été affichés dans la vue Fenêtres.  
+ Sélectionnez les messages spécifiques à afficher. Lorsque vous créez une nouvelle fenêtre de Messages, il peut afficher tous les messages. Lorsque vous filtrez des messages à partir de la **Messages** onglet, ce filtre s’applique uniquement aux nouveaux messages, pas les messages qui ont déjà été affichés dans la vue fenêtres.  
   
  **Groupes de messages**  
- Sélectionnez des groupes de messages à afficher.  Les groupes disponibles sont les suivants :  
+ Sélectionnez les groupes de message à afficher. Les groupes disponibles sont les suivantes :  
   
--   WM\_USER : avec un code supérieur ou égal à WM\_USER  
+-   WM_USER : avec un code supérieur ou égal à WM_USER  
   
--   Inscrit : inscrit avec l'appel **RegisterWindowMessage**  
+-   Inscrit : inscrit avec le **RegisterWindowMessage** appeler  
   
--   Inconnu : messages inconnus dans la plage allant de 0 à \(WM\_USER – 1\)  
+-   Inconnu : messages inconnus dans la plage 0 à (WM_USER - 1)  
   
- Notez que ces **groupes de messages** ne sont pas mappés à des entrées spécifiques sous **Messages à afficher**.  Lorsque vous sélectionnez un groupe, la sélection est appliquée directement au flux de messages.  
+ Notez que ces **groupes de messages** ne correspondent pas à des entrées spécifiques sous **Messages à afficher**. Lorsque vous sélectionnez un groupe, la sélection est appliquée directement dans le flux de message.  
   
- Une case à cocher grisée dans **Groupes de messages** indique que la zone de liste **Messages à afficher** a été modifiée pour les messages de ce groupe ; tous les types de messages de ce groupe ne sont pas sélectionnés.  
+ Une case à cocher grisée dans **groupes de messages** indique que le **Messages à afficher** zone de liste a été modifiée pour les messages de ce groupe ; tous les types de messages de ce groupe sont sélectionnés.  
   
  **Enregistrer les paramètres par défaut**  
- Enregistrez les paramètres actuels en tant qu'options de recherche de messages pour une utilisation ultérieure.  Ces paramètres sont également enregistrés lorsque vous quittez Spy\+\+.
+ Enregistrer les paramètres actuels pour une utilisation ultérieure en tant qu’options de recherche de message. Ces paramètres sont également enregistrés en quittant Spy ++.

@@ -1,59 +1,58 @@
 ---
-title: "Threads View | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-debug"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "vs.externaltools.spyplus.threadsview"
-helpviewer_keywords: 
-  - "Threads view"
+title: Vue threads | Documents Microsoft
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-debug
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords: vs.externaltools.spyplus.threadsview
+helpviewer_keywords: Threads view
 ms.assetid: abfb4e9e-1622-47c9-afda-b6b71a9d88e4
-caps.latest.revision: 6
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 6
+caps.latest.revision: "6"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: 0cc9abe486055d5bb9794021e28b786b9afe9b54
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: fr-FR
+ms.lasthandoff: 10/31/2017
 ---
-# Threads View
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
-
-La vue Threads est une liste plate de tous les threads associés aux fenêtres de votre système.  L'ID de thread et le nom de module de chaque thread sont affichés.  Les processus ne sont pas inclus, mais vous pouvez trouver facilement le processus propriétaire d'un thread sélectionné.  
+# <a name="threads-view"></a>vue Threads
+La vue Threads est une liste plate de tous les threads associés aux fenêtres sur votre système. L’ID de Thread et le nom du module pour chaque thread sont affichés. Ils ne sont pas inclus, mais vous pouvez facilement trouver le processus qui détient un thread sélectionné.  
   
-## Procédures  
+## <a name="procedures"></a>Procédures  
   
-#### Pour ouvrir la vue Threads  
+#### <a name="to-open-the-threads-view"></a>Pour ouvrir la vue Threads  
   
-1.  Dans le menu **Espionner**, choisissez **Threads**.  
+1.  À partir de la **Spy** menu, choisissez **Threads**.  
   
- ![Vue Threads Spy&#43;&#43;](../debugger/media/spy--_threads.png "Spy\+\+\_Threads")  
-Vue Threads Spy\+\+  
+ ![Spy &#43; &#43; Vue threads](../debugger/media/spy--_threads.png "Spy ++ _Threads")  
+Vue Threads Spy++  
   
- L'illustration ci\-dessus montre la vue Threads.  
+ La figure ci-dessus illustre la vue Threads.  
   
-## Dans cette section  
- [Recherche d'un thread dans la vue Threads](../debugger/how-to-search-for-a-thread-in-threads-view.md)  
+## <a name="in-this-section"></a>Dans cette section  
+ [Recherche d’un Thread dans la vue Threads](../debugger/how-to-search-for-a-thread-in-threads-view.md)  
  Explique comment rechercher un thread spécifique dans la vue Threads.  
   
- [Affichage des propriétés d'un thread](../Topic/How%20to:%20Display%20Thread%20Properties.md)  
- Explique comment afficher davantage d'informations sur un thread.  
+ [Affichage des propriétés de Thread](../debugger/how-to-display-thread-properties.md)  
+ Explique comment afficher des informations supplémentaires sur un thread.  
   
-## Rubriques connexes  
- [Vues Spy\+\+](../debugger/spy-increment-views.md)  
- Explique les arborescences Spy\+\+ des fenêtres, messages, processus et threads.  
+## <a name="related-sections"></a>Rubriques connexes  
+ [Vues Spy++](../debugger/spy-increment-views.md)  
+ Explique les arborescences Spy ++ de windows, les messages, les processus et les threads.  
   
- [Utilisation de Spy\+\+](../debugger/using-spy-increment.md)  
- Présente l'outil Spy\+\+ et explique comment l'utiliser.  
+ [Utilisation de Spy++](../debugger/using-spy-increment.md)  
+ Présente l’outil Spy ++ et explique comment elle peut être utilisée.  
   
- [Boîte de dialogue Recherche d'un thread](../debugger/thread-search-dialog-box.md)  
- Utilisé pour rechercher le nœud pour un thread spécifique dans la vue Threads.  
+ [Recherche d’un thread, boîte de dialogue](../debugger/thread-search-dialog-box.md)  
+ Utilisé pour rechercher le nœud d’un thread spécifique dans la vue Threads.  
   
- [Boîte de dialogue Propriétés du thread](../debugger/message-properties-dialog-box.md)  
- Permet d'afficher les propriétés d'un thread sélectionné dans la vue Threads ou la vue Messages.  
+ [Propriétés du thread, boîte de dialogue](../debugger/message-properties-dialog-box.md)  
+ Affiche les propriétés d’un thread sélectionné dans la vue Threads ou la vue Messages.  
   
- [Référence de Spy\+\+](../debugger/spy-increment-reference.md)  
- Inclut des sections décrivant les menus et les boîtes de dialogue de Spy\+\+.
+ [Informations de référence sur Spy++](../debugger/spy-increment-reference.md)  
+ Inclut des sections décrivant chaque Spy ++ menu et boîte de dialogue.

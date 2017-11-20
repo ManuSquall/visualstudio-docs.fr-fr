@@ -1,56 +1,62 @@
 ---
-title: "&#201;l&#233;ment CustomDataSignature (mod&#232;les Visual&#160;Studio) | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-general"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-helpviewer_keywords: 
-  - "<CustomDataSignature> (élément de modèles Visual Studio)"
-  - "Élément CustomDataSignature (modèles Visual Studio)"
+title: "Élément CustomDataSignature (modèles Visual Studio) | Documents Microsoft"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-general
+ms.tgt_pltfrm: 
+ms.topic: article
+helpviewer_keywords:
+- <CustomDataSignature> Element (Visual Studio Templates)
+- CustomDataSignature Element (Visual Studio Templates)
 ms.assetid: 8c3db51d-7014-4484-802a-15aa1353dbdb
-caps.latest.revision: 6
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 6
+caps.latest.revision: "6"
+author: gregvanl
+ms.author: gregvanl
+manager: ghogen
+ms.openlocfilehash: d83992a58ba8cd45bf6ac5e6f555fc5320c18e80
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: fr-FR
+ms.lasthandoff: 10/31/2017
 ---
-# &#201;l&#233;ment CustomDataSignature (mod&#232;les Visual&#160;Studio)
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
-
+# <a name="customdatasignature-element-visual-studio-templates"></a>Élément CustomDataSignature (modèles Visual Studio)
 Spécifie la signature de texte pour localiser les données personnalisées.  
   
-## Syntaxe  
+ \<VSTemplate >  
+ \<TemplateData >  
+ \<CustomDataSignature >  
+  
+## <a name="syntax"></a>Syntaxe  
   
 ```  
 <CustomDataSignature>"string"</CustomDataSignature>  
 ```  
   
-## Attributs et éléments  
+## <a name="attributes-and-elements"></a>Attributs et éléments  
  Les sections suivantes décrivent des attributs, des éléments enfants et des éléments parents.  
   
-### Attributs  
+### <a name="attributes"></a>Attributs  
  Aucun  
   
-### Éléments enfants  
- Aucun  
+### <a name="child-elements"></a>Éléments enfants  
+ Aucun.  
   
-### Éléments parents  
+### <a name="parent-elements"></a>Éléments parents  
   
 |Élément|Description|  
 |-------------|-----------------|  
-|[TemplateData](../extensibility/templatedata-element-visual-studio-templates.md)|Élément requis.<br /><br /> Classe le modèle dans une catégorie et définit la façon dont il s'affiche dans la boîte de dialogue **Nouveau projet** ou **Ajouter un nouvel élément**.|  
+|[TemplateData](../extensibility/templatedata-element-visual-studio-templates.md)|Élément requis.<br /><br /> Définit la catégorie du modèle et comment il est affiché, que ce soit le **nouveau projet** ou **ajouter un nouvel élément** boîte de dialogue.|  
   
-## Valeur texte  
+## <a name="text-value"></a>Valeur texte  
  Une valeur texte est requise.  
   
- Le texte est une chaîne qui possède la signature de texte requise pour localiser les données personnalisées.  
+ Le texte est une chaîne qui possède la signature de texte qui est nécessaire pour localiser les données personnalisées.  
   
-## Notes  
+## <a name="remarks"></a>Remarques  
  `CustomDataSignature` est un élément facultatif.  
   
-## Voir aussi  
- [Référence du schéma de modèle Visual Studio](../extensibility/visual-studio-template-schema-reference.md)   
- [Création de modèles de projets et d'éléments personnalisés](../ide/creating-project-and-item-templates.md)
+## <a name="see-also"></a>Voir aussi  
+ [Référence du schéma de modèle Visual Studio](../extensibility/visual-studio-template-schema-reference.md)   
+ [Création de modèles de projet et d’élément](../ide/creating-project-and-item-templates.md)

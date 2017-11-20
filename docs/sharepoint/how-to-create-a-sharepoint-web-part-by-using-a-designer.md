@@ -1,63 +1,65 @@
 ---
-title: "Comment&#160;: cr&#233;er un composant WebPart SharePoint &#224; l&#39;aide d&#39;un concepteur"
-ms.custom: ""
-ms.date: "02/02/2017"
-ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "office-development"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-dev_langs: 
-  - "VB"
-  - "CSharp"
-  - "VB"
-  - "CSharp"
-helpviewer_keywords: 
-  - "WebParts (développement SharePoint dans Visual Studio), ajouter"
-  - "WebParts (développement SharePoint dans Visual Studio), créer"
-  - "WebParts (développement SharePoint dans Visual Studio), concepteur"
+title: "Comment : créer un composant WebPart SharePoint à l’aide d’un concepteur | Documents Microsoft"
+ms.custom: 
+ms.date: 02/02/2017
+ms.reviewer: 
+ms.suite: 
+ms.technology: office-development
+ms.tgt_pltfrm: 
+ms.topic: article
+dev_langs:
+- VB
+- CSharp
+- VB
+- CSharp
+helpviewer_keywords:
+- Web Parts [SharePoint development in Visual Studio], designer
+- Web Parts [SharePoint development in Visual Studio], adding
+- Web Parts [SharePoint development in Visual Studio], creating
 ms.assetid: 6b88f3ef-02ff-4135-80ff-b4acacf8c695
-caps.latest.revision: 26
-author: "kempb"
-ms.author: "kempb"
-manager: "ghogen"
-caps.handback.revision: 25
+caps.latest.revision: "26"
+author: gewarren
+ms.author: gewarren
+manager: ghogen
+ms.openlocfilehash: 4f329b1402917bc7c129bcdc9f504dfe99bcccbf
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: fr-FR
+ms.lasthandoff: 10/31/2017
 ---
-# Comment&#160;: cr&#233;er un composant WebPart SharePoint &#224; l&#39;aide d&#39;un concepteur
-  Créez un WebPart en ajoutant un élément **Visual WebPart** à un projet SharePoint.  Cela ouvre le concepteur Visual Web Developer dans Visual Studio pour ajouter des contrôles et du code au WebPart.  Les Visual WebParts fonctionnent de la même façon que les WebParts.  La seule différence est que vous concevez les Visual WebParts dans le concepteur Visual Web Developer.  
+# <a name="how-to-create-a-sharepoint-web-part-by-using-a-designer"></a>Comment : créer un composant WebPart SharePoint à l'aide d'un concepteur
+  Vous pouvez créer un composant WebPart en ajoutant un **composant Visual Web Part** élément à un projet SharePoint. Cela ouvre le concepteur Visual Web Developer dans Visual Studio où vous pouvez ajouter des contrôles et du code pour le composant WebPart. Visual WebPart fonctionne de la même façon comme composants WebPart. La seule différence est que vous concevez visual WebPart dans le concepteur Visual Web Developer.  
   
-### Pour créer un projet pour des Visual WebParts  
+### <a name="to-create-a-project-for-visual-web-parts"></a>Pour créer un projet pour visual WebPart  
   
 1.  Dans la barre de menus, sélectionnez **Fichier**, **Nouveau**, **Projet**.  
   
      La boîte de dialogue **Nouveau projet** s'affiche.  
   
-2.  Dans la boîte de dialogue **Nouveau projet**, sous **Visual C\#** ou **Visual Basic**, développez **Office\/SharePoint**, puis choisissez la catégorie **Solutions SharePoint**.  
+2.  Dans le **nouveau projet** boîte de dialogue, sous **Visual C#** ou **Visual Basic**, développez le **Office/SharePoint** nœud, puis choisissez le **Solutions SharePoint** catégorie.  
   
-3.  Dans la liste des modèles de projet, sélectionnez  **SharePoint 2013 \- Visual WebPart**, puis choisissez le bouton **OK**.  
+3.  Dans la liste des modèles de projet, choisissez **SharePoint 2013 - composant Visual Web Part**, puis choisissez le **OK** bouton.  
   
-     L'**Assistant Personnalisation de SharePoint** s'affiche.  
+     Le **Assistant Personnalisation de SharePoint** s’affiche.  
   
-4.  Sur la page **Spécifier le site et le niveau de sécurité pour le débogage**, spécifiez l'URL d'un site SharePoint basée sur l'ordinateur local, puis choisissez le bouton **Terminer**.  
+4.  Sur le **spécifier le niveau de site et de sécurité pour le débogage** page, spécifiez l’URL d’un site SharePoint qui se trouve sur l’ordinateur local, puis choisissez le **Terminer** bouton.  
   
-     Un WebPart apparaît dans **Explorateur de solutions**.  Après la conception d'un WebPart dans le concepteur Visual Web Developer, testez le sur le site que vous spécifiez.  
+     Dans **l’Explorateur de solutions**, un composant WebPart s’affiche. Après avoir créé le composant WebPart dans le concepteur Visual Web Developer, vous devez la tester sur le site que vous spécifiez.  
   
-### Pour ajouter un Visual WebPart à un projet SharePoint existant  
+### <a name="to-add-a-visual-web-part-to-an-existing-sharepoint-project"></a>Pour ajouter un composant visual web part à un projet SharePoint existant  
   
-1.  Dans la barre de menus, choisissez **Projet**, **Ajouter un nouvel élément**.  
+1.  Dans la barre de menus, choisissez **projet**, **ajouter un nouvel élément**.  
   
-2.  Dans la boîte de dialogue **Ajouter un nouvel élément**, choisissez le nœud **Office\/SharePoint**.  
+2.  Dans le **ajouter un nouvel élément** boîte de dialogue, choisissez le **Office/SharePoint** nœud.  
   
-3.  Dans la liste des modèles de projet, sélectionnez  **Visual Web Part**, nommez le puis choisissez le bouton **Ajouter**.  
+3.  Dans la liste des modèles de projet, choisissez **composant Visual Web Part**, nom, puis sélectionnez le **ajouter** bouton.  
   
-     Votre WebPart s'affiche dans **Explorateur de solutions**.  Après la conception d'un WebPart dans le concepteur Visual Web Developer, testez le sur le site que vous spécifiez.  
+     Dans **l’Explorateur de solutions**, votre composant WebPart s’affiche. Après avoir créé le composant WebPart dans le concepteur Visual Web Developer, vous devez la tester sur le site que vous spécifiez.  
   
-## Voir aussi  
+## <a name="see-also"></a>Voir aussi  
  [Création de composants WebPart pour SharePoint](../sharepoint/creating-web-parts-for-sharepoint.md)   
  [Comment : créer un composant WebPart SharePoint](../sharepoint/how-to-create-a-sharepoint-web-part.md)   
- [Procédure pas à pas : création d'un composant WebPart pour SharePoint](../sharepoint/walkthrough-creating-a-web-part-for-sharepoint.md)   
- [Procédure pas à pas : création d'un composant WebPart pour SharePoint à l'aide d'un concepteur](../sharepoint/walkthrough-creating-a-web-part-for-sharepoint-by-using-a-designer.md)  
+ [Procédure pas à pas : Création d’un composant WebPart pour SharePoint](../sharepoint/walkthrough-creating-a-web-part-for-sharepoint.md)   
+ [Procédure pas à pas : création d’un composant WebPart pour SharePoint à l’aide d’un concepteur](../sharepoint/walkthrough-creating-a-web-part-for-sharepoint-by-using-a-designer.md)  
   
   

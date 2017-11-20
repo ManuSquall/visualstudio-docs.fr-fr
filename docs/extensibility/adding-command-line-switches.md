@@ -1,11 +1,10 @@
 ---
-title: Adding Command-Line Switches | Microsoft Docs
+title: Ajout de commutateurs de ligne de commande | Documents Microsoft
 ms.custom: 
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-sdk
+ms.technology: vs-ide-sdk
 ms.tgt_pltfrm: 
 ms.topic: article
 helpviewer_keywords:
@@ -14,72 +13,58 @@ helpviewer_keywords:
 - IVsAppCommandLine::GetOption method
 - command line, switches
 ms.assetid: 8bbbd87e-76fe-4fb5-8ef9-65f5e31967cf
-caps.latest.revision: 21
+caps.latest.revision: "21"
+author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-translation.priority.mt:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
+ms.openlocfilehash: 6e292a08e6d8ac9c6f59f84514fbb625779f82c4
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
 ms.translationtype: MT
-ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
-ms.openlocfilehash: d7fc73fd531382f90e710fa029b90b93b6055eeb
-ms.contentlocale: fr-fr
-ms.lasthandoff: 08/28/2017
-
+ms.contentlocale: fr-FR
+ms.lasthandoff: 10/31/2017
 ---
-# <a name="adding-command-line-switches"></a>Adding Command-Line Switches
-You can add command-line switches that apply to your VSPackage when devenv.exe is executed. Use <xref:Microsoft.VisualStudio.Shell.ProvideAppCommandLineAttribute> to declare the name of the switch and its properties. In this example, the MySwitch switch is added for a subclass of VSPackage named **AddCommandSwitchPackage** with no arguments and with the VSPackage loaded automatically.  
+# <a name="adding-command-line-switches"></a>Ajout de commutateurs de ligne de commande
+Vous pouvez ajouter des commutateurs de ligne de commande qui s’appliquent à votre VSPackage lors de l’exécution de devenv.exe. Utilisez <xref:Microsoft.VisualStudio.Shell.ProvideAppCommandLineAttribute> pour déclarer le nom du commutateur et de ses propriétés. Dans cet exemple, le commutateur MySwitch est ajouté pour une sous-classe de VSPackage nommé **AddCommandSwitchPackage** avec aucun argument et le VSPackage chargé automatiquement.  
   
 ```csharp  
 [ProvideAppCommandLine("MySwitch", typeof(AddCommandSwitchPackage), Arguments = "0", DemandLoad = 1)]  
 ```  
   
- The named parameters are shown in the following table  
+ Les paramètres nommés sont affichés dans le tableau suivant  
   
  Arguments  
- The number of arguments for the switch. Can be "*", or a list of arguments.  
+ Le nombre d’arguments pour le commutateur. Peut être « * », ou une liste d’arguments.  
   
  DemandLoad  
- Load the VSPackage automatically if this is set to 1, otherwise set to 0.  
+ Charger le VSPackage automatiquement s’il est défini sur 1, sinon la valeur 0.  
   
  HelpString  
- The help string or resource ID of the string to display with **devenv /?**.  
+ La chaîne ou une ressource ID d’aide de la chaîne à afficher avec **devenv / ?**.  
   
- Name  
- The switch.  
+ Nom  
+ Le commutateur.  
   
  PackageGuid  
- The GUID of the package.  
+ Le GUID du package.  
   
- The first value of Arguments is usually 0 or 1. A special value of '*' can be used to indicate that the entire remainder of the command line is the argument. This can be useful for debugging scenarios where a user must pass in a debugger command string.  
+ La première valeur d’Arguments est généralement 0 ou 1. Une valeur de ' *' peut être utilisé pour indiquer que le reste entier de la ligne de commande est l’argument. Cela peut être utile pour les scénarios où un utilisateur doit passer dans une chaîne de commande du débogueur de débogage.  
   
- The DemandLoad value is either `true` (1) or `false` (0) indicates that the VSPackage should be loaded automatically.  
+ La valeur de DemandLoad est `true` (1) ou `false` (0) indique que le package Visual Studio doit être chargé automatiquement.  
   
- The HelpString value is the resource ID of the string that appears in the devenv /?Help display. This value should be in the form "#nnn" where nnn is an integer. The string value in the resource file should end in a new line character.  
+ La valeur HelpString est l’ID de ressource de la chaîne qui apparaît dans le devenv / ? Affichage de l’aide. Cette valeur doit être sous la forme « #nnn » où nnn est un entier. La valeur de chaîne dans le fichier de ressources doit se terminer par un caractère de nouvelle ligne.  
   
- The Name value is the name of the switch.  
+ La valeur de nom est le nom du commutateur.  
   
- The PackageGuid value is the GUID of the package that implements this switch. The IDE uses this GUID to find the VSPackage in the registry to which the command-line switch applies.  
+ La valeur de PackageGuid est le GUID du package qui implémente ce commutateur. L’IDE utilise ce GUID pour trouver le VSPackage dans le Registre à laquelle s’applique le commutateur de ligne de commande.  
   
-## <a name="retrieving-command-line-switches"></a>Retrieving Command-Line Switches  
- When your package is loaded, you can retrieve the command-line switches by completing the following steps.  
+## <a name="retrieving-command-line-switches"></a>La récupération des commutateurs de ligne de commande  
+ Lors du chargement de votre package, vous pouvez récupérer les commutateurs de ligne de commande en effectuant les étapes suivantes.  
   
-1.  In your VSPackage's <xref:Microsoft.VisualStudio.Shell.Interop.IVsPackage.SetSite%2A> implementation, call `QueryService` on <xref:Microsoft.VisualStudio.Shell.Interop.SVsAppCommandLine> to get the <xref:Microsoft.VisualStudio.Shell.Interop.IVsAppCommandLine> interface.  
+1.  Dans un VSPackage <xref:Microsoft.VisualStudio.Shell.Interop.IVsPackage.SetSite%2A> mise en œuvre, appelez `QueryService` sur <xref:Microsoft.VisualStudio.Shell.Interop.SVsAppCommandLine> pour obtenir le <xref:Microsoft.VisualStudio.Shell.Interop.IVsAppCommandLine> interface.  
   
-2.  Call <xref:Microsoft.VisualStudio.Shell.Interop.IVsAppCommandLine.GetOption%2A> to retrieve the command-line switches that the user entered.  
+2.  Appelez <xref:Microsoft.VisualStudio.Shell.Interop.IVsAppCommandLine.GetOption%2A> pour récupérer les commutateurs de ligne de commande que l’utilisateur a entré.  
   
- The following code shows how to find out whether the MySwitch command-line switch was entered by the user:  
+ Le code suivant montre comment déterminer si le commutateur de ligne de commande MySwitch a été entré par l’utilisateur :  
   
 ```csharp  
 IVsAppCommandLine cmdline = (IVsAppCommandLine)GetService(typeof(SVsAppCommandLine));  
@@ -90,11 +75,11 @@ string optionValue = "";
 cmdline.GetOption("MySwitch", out isPresent, out optionValue);  
 ```  
   
- It is your responsibility to check for your command-line switches each time your package is loaded.  
+ Il vous incombe de vérifier vos commutateurs de ligne de commande chaque fois que votre package est chargé.  
   
-## <a name="see-also"></a>See Also  
+## <a name="see-also"></a>Voir aussi  
  <xref:Microsoft.VisualStudio.Shell.Interop.IVsAppCommandLine>   
  <xref:Microsoft.VisualStudio.Shell.Interop.IVsPackage.SetSite%2A>   
- [Devenv Command Line Switches](../ide/reference/devenv-command-line-switches.md)   
- [CreatePkgDef Utility](../extensibility/internals/createpkgdef-utility.md)   
- [.Pkgdef Files](../extensibility/modifying-the-isolated-shell-by-using-the-dot-pkgdef-file.md)
+ [Commutateurs de la ligne de commande Devenv](../ide/reference/devenv-command-line-switches.md)   
+ [Utilitaire de CreatePkgDef](../extensibility/internals/createpkgdef-utility.md)   
+ [. Fichiers de pkgdef](../extensibility/modifying-the-isolated-shell-by-using-the-dot-pkgdef-file.md)

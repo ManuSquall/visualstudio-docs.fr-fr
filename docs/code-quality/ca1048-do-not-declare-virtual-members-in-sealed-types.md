@@ -1,51 +1,52 @@
 ---
-title: "CA1048&#160;: Ne pas d&#233;clarer les membres virtuels dans les types sealed | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-devops-test"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "DoNotDeclareVirtualMembersInSealedTypes"
-  - "CA1048"
-helpviewer_keywords: 
-  - "CA1048"
-  - "DoNotDeclareVirtualMembersInSealedTypes"
+title: "CA1048 : Ne déclarez pas les membres virtuels dans les types sealed | Documents Microsoft"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-code-analysis
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords:
+- DoNotDeclareVirtualMembersInSealedTypes
+- CA1048
+helpviewer_keywords:
+- DoNotDeclareVirtualMembersInSealedTypes
+- CA1048
 ms.assetid: 5dcf4a30-6f98-48a8-b8cc-7b89ea757262
-caps.latest.revision: 13
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
-caps.handback.revision: 13
+caps.latest.revision: "13"
+author: gewarren
+ms.author: gewarren
+manager: ghogen
+ms.openlocfilehash: f1f4456a65eb78ce64ad4c5bbfb4695ba0da3e64
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: fr-FR
+ms.lasthandoff: 10/31/2017
 ---
-# CA1048&#160;: Ne pas d&#233;clarer les membres virtuels dans les types sealed
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
-
+# <a name="ca1048-do-not-declare-virtual-members-in-sealed-types"></a>CA1048 : Ne pas déclarer les membres virtuels dans les types sealed
 |||  
 |-|-|  
 |TypeName|DoNotDeclareVirtualMembersInSealedTypes|  
 |CheckId|CA1048|  
-|Catégorie|Microsoft.CSharp|  
-|Modification avec rupture|Oui|  
+|Catégorie|Microsoft.Design|  
+|Modification avec rupture|Rupture|  
   
-## Cause  
- Un type public est sealed \(scellé\) et déclare une méthode qui est à la fois `virtual` \(`Overridable` en Visual Basic\) et non finale.  Cette règle ne rapporte pas de violations pour les types délégués qui doivent suivre ce schéma.  
+## <a name="cause"></a>Cause  
+ Un type public est sealed et déclare une méthode qui est à la fois `virtual` (`Overridable` en Visual Basic) et non finale. Cette règle ne signale pas les violations pour les types délégués qui doivent suivre ce modèle.  
   
-## Description de la règle  
- Les types déclarent des méthodes comme étant virtuelles afin d'hériter de types en mesure de substituer l'implémentation de la méthode virtuelle.  Par définition, vous ne pouvez pas hériter d'un type sealed, et retirer ainsi toute signification à une méthode virtuelle sur un type sealed.  
+## <a name="rule-description"></a>Description de la règle  
+ Les types déclarent des méthodes comme étant virtuelles afin d'hériter de types en mesure de substituer l'implémentation de la méthode virtuelle. Par définition, vous ne peut pas hériter d’un type sealed, en apportant une méthode virtuelle sur un type sealed sans signification.  
   
- Les compilateurs Visual Basic .NET et C\# ne permettent pas aux types de violer cette règle.  
+ Les compilateurs c# et Visual Basic .NET n’autorisent pas les types de violation de cette règle.  
   
-## Comment corriger les violations  
- Pour corriger une violation de cette règle, rendez la méthode non virtuelle ou le type héritable.  
+## <a name="how-to-fix-violations"></a>Comment corriger les violations  
+ Pour corriger une violation de cette règle, rendez la méthode non virtuelle ou rendez le type héritable.  
   
-## Quand supprimer les avertissements  
- Ne supprimez aucun avertissement de cette règle.  Laisser le type dans son état actuel peut induire des problèmes de maintenance et ne fournit aucun avantage.  
+## <a name="when-to-suppress-warnings"></a>Quand supprimer les avertissements  
+ Ne supprimez aucun avertissement de cette règle. Laisser le type dans son état actuel peut entraîner des problèmes de maintenance et ne fournit pas d’avantages.  
   
-## Exemple  
- L'exemple suivant affiche un type qui ne respecte pas cette règle.  
+## <a name="example"></a>Exemple  
+ L’exemple suivant montre un type qui viole cette règle.  
   
- [!CODE [FxCop.Design.SealedVirtual#1](../CodeSnippet/VS_Snippets_CodeAnalysis/FxCop.Design.SealedVirtual#1)]
+ [!code-cpp[FxCop.Design.SealedVirtual#1](../code-quality/codesnippet/CPP/ca1048-do-not-declare-virtual-members-in-sealed-types_1.cpp)]

@@ -1,46 +1,29 @@
 ---
-title: IDebugSymbolProvider::GetClassTypeByName | Microsoft Docs
+title: IDebugSymbolProvider::GetClassTypeByName | Documents Microsoft
 ms.custom: 
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-sdk
+ms.technology: vs-ide-sdk
 ms.tgt_pltfrm: 
 ms.topic: article
-f1_keywords:
-- IDebugSymbolProvider::GetClassTypeByName
-helpviewer_keywords:
-- IDebugSymbolProvider::GetClassTypeByName method
+f1_keywords: IDebugSymbolProvider::GetClassTypeByName
+helpviewer_keywords: IDebugSymbolProvider::GetClassTypeByName method
 ms.assetid: 2c748909-51dc-49b7-b193-19f96fca1138
-caps.latest.revision: 11
+caps.latest.revision: "11"
+author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-translation.priority.mt:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
+ms.openlocfilehash: 0d11c12c6820475314912eea48dbc5ab96ee5a14
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
 ms.translationtype: MT
-ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
-ms.openlocfilehash: 38dcf07f2d41938f4e756f909006dffb90228ae5
-ms.contentlocale: fr-fr
-ms.lasthandoff: 08/28/2017
-
+ms.contentlocale: fr-FR
+ms.lasthandoff: 10/31/2017
 ---
 # <a name="idebugsymbolprovidergetclasstypebyname"></a>IDebugSymbolProvider::GetClassTypeByName
-This method gets the class field type representing a fully qualified class name.  
+Cette méthode obtient le type de champ de classe représentant un nom de classe qualifié complet.  
   
-## <a name="syntax"></a>Syntax  
+## <a name="syntax"></a>Syntaxe  
   
 ```cpp  
 HRESULT GetClassTypeByName(   
@@ -58,20 +41,20 @@ int GetClassTypeByName(
 );  
 ```  
   
-#### <a name="parameters"></a>Parameters  
+#### <a name="parameters"></a>Paramètres  
  `pszClassName`  
- [in] The class name.  
+ [in] Le nom de classe.  
   
  `nameMatch`  
- [in] Selects the type of match, for example, case-sensitive. A value from the [NAME_MATCH](../../../extensibility/debugger/reference/name-match.md) enumeration.  
+ [in] Sélectionne le type de correspondance, par exemple, la casse. Une valeur à partir de la [NAME_MATCH](../../../extensibility/debugger/reference/name-match.md) énumération.  
   
  `ppField`  
- [out] Returns the class type as represented by the [IDebugClassField](../../../extensibility/debugger/reference/idebugclassfield.md) interface.  
+ [out] Retourne le type de classe, comme représenté par la [IDebugClassField](../../../extensibility/debugger/reference/idebugclassfield.md) interface.  
   
-## <a name="return-value"></a>Return Value  
- If successful, returns `S_OK`; otherwise, returns an error code.  
+## <a name="return-value"></a>Valeur de retour  
+ En cas de réussite, retourne `S_OK`; sinon, retourne un code d’erreur.  
   
-## <a name="see-also"></a>See Also  
+## <a name="see-also"></a>Voir aussi  
  [IDebugSymbolProvider](../../../extensibility/debugger/reference/idebugsymbolprovider.md)   
  [NAME_MATCH](../../../extensibility/debugger/reference/name-match.md)   
  [IDebugClassField](../../../extensibility/debugger/reference/idebugclassfield.md)

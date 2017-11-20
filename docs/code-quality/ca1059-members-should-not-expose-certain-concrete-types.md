@@ -1,55 +1,56 @@
 ---
-title: "CA1059&#160;: Les membres ne doivent pas exposer certains types concrets | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-devops-test"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "CA1059"
-  - "MembersShouldNotExposeCertainConcreteTypes"
-helpviewer_keywords: 
-  - "CA1059"
-  - "MembersShouldNotExposeCertainConcreteTypes"
+title: "CA1059 : Les membres ne doivent pas exposer certains types concrets | Documents Microsoft"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-code-analysis
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords:
+- CA1059
+- MembersShouldNotExposeCertainConcreteTypes
+helpviewer_keywords:
+- MembersShouldNotExposeCertainConcreteTypes
+- CA1059
 ms.assetid: 59f61f52-8d6c-49cb-aefb-191910523a3c
-caps.latest.revision: 18
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
-caps.handback.revision: 18
+caps.latest.revision: "18"
+author: gewarren
+ms.author: gewarren
+manager: ghogen
+ms.openlocfilehash: d5b8b4a50ce23a7ed50f2e608334f9b438a0b090
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: fr-FR
+ms.lasthandoff: 10/31/2017
 ---
-# CA1059&#160;: Les membres ne doivent pas exposer certains types concrets
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
-
+# <a name="ca1059-members-should-not-expose-certain-concrete-types"></a>CA1059 : Les membres ne doivent pas exposer certains types concrets
 |||  
 |-|-|  
 |TypeName|MembersShouldNotExposeCertainConcreteTypes|  
 |CheckId|CA1059|  
-|Catégorie|Microsoft.CSharp|  
-|Modification avec rupture|Oui|  
+|Catégorie|Microsoft.Design|  
+|Modification avec rupture|Rupture|  
   
-## Cause  
- Un membre visible de l'extérieur est un certain type concret ou expose certains types concrets par l'intermédiaire de l'un de ses paramètres ou de la valeur de retour.  Cette règle indique actuellement l'exposition des types concrets suivants :  
+## <a name="cause"></a>Cause  
+ Un membre extérieurement visible est un certain type concret ou expose certains types concrets via un de ses paramètres ou valeur de retour. Actuellement, cette règle signale l’exposition des types concrets suivants :  
   
--   Type dérivé de <xref:System.Xml.XmlNode?displayProperty=fullName>.  
+-   Un type dérivé <xref:System.Xml.XmlNode?displayProperty=fullName>.  
   
-## Description de la règle  
- Un type concret est un type qui présente une implémentation complète et, par conséquent, peut être instancié.  Pour permettre une utilisation généralisée du membre, remplacez le type concret par l'interface suggérée.  Cela permet au membre d'accepter tout type qui implémente l'interface ou d'être utilisé lorsqu'un type qui implémente l'interface est attendu.  
+## <a name="rule-description"></a>Description de la règle  
+ Un type concret est un type qui présente une implémentation complète et, par conséquent, peut être instancié. Pour permettre une utilisation généralisée du membre, remplacez le type concret par l’interface suggérée. Ainsi, le membre d’accepter tout type qui implémente l’interface ou de servir où un type qui implémente l’interface est attendu.  
   
  Le tableau suivant répertorie les types concrets ciblés et leurs remplacements suggérés.  
   
 |Type concret|Replacement|  
-|------------------|-----------------|  
-|<xref:System.Xml.XPath.XPathDocument>|<xref:System.Xml.XPath.IXPathNavigable?displayProperty=fullName>.<br /><br /> L'utilisation de l'interface découple le membre d'une implémentation spécifique d'une source de données XML.|  
+|-------------------|-----------------|  
+|<xref:System.Xml.XPath.XPathDocument>|<xref:System.Xml.XPath.IXPathNavigable?displayProperty=fullName>.<br /><br /> À l’aide de l’interface dissocie du membre à partir d’une implémentation spécifique d’une source de données XML.|  
   
-## Comment corriger les violations  
- Pour corriger une violation de cette règle, remplacez le type concret par l'interface suggérée.  
+## <a name="how-to-fix-violations"></a>Comment corriger les violations  
+ Pour corriger une violation de cette règle, remplacez le type concret par l’interface suggérée.  
   
-## Quand supprimer les avertissements  
- Il est possible de supprimer sans risque un message de cette règle si les fonctionnalités spécifiques fournies par le type concret sont requises.  
+## <a name="when-to-suppress-warnings"></a>Quand supprimer les avertissements  
+ Il est possible de supprimer un message de cette règle si la fonctionnalité spécifique fournie par le type concret est requise.  
   
-## Règles connexes  
- [CA1011 : Si possible, transmettez les types de base en tant que paramètres](../code-quality/ca1011-consider-passing-base-types-as-parameters.md)
+## <a name="related-rules"></a>Règles associées  
+ [CA1011 : Envisagez de passer les types de base comme paramètres](../code-quality/ca1011-consider-passing-base-types-as-parameters.md)

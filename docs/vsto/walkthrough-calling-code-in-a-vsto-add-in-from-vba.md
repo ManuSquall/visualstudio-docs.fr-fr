@@ -1,12 +1,10 @@
 ---
-title: 'Walkthrough: Calling Code in a VSTO Add-in from VBA | Microsoft Docs'
+title: "Procédure pas à pas : Appel de Code dans un complément VSTO à partir de VBA | Documents Microsoft"
 ms.custom: 
 ms.date: 02/02/2017
-ms.prod: visual-studio-dev14
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- office-development
+ms.technology: office-development
 ms.tgt_pltfrm: 
 ms.topic: article
 dev_langs:
@@ -21,113 +19,115 @@ helpviewer_keywords:
 - interoperability [Office development in Visual Studio]
 - calling code from VBA
 ms.assetid: 9c04d1df-0d93-473c-85fd-02dc2e956c9e
-caps.latest.revision: 48
-author: kempb
-ms.author: kempb
+caps.latest.revision: "48"
+author: gewarren
+ms.author: gewarren
 manager: ghogen
-ms.translationtype: HT
-ms.sourcegitcommit: eb5c9550fd29b0e98bf63a7240737da4f13f3249
-ms.openlocfilehash: e13b8ecdbe733de93eff5fb2967f85fcd390bba0
-ms.contentlocale: fr-fr
-ms.lasthandoff: 08/30/2017
-
+ms.openlocfilehash: 70c956981c9e211d16d39ac22f759b6a21e0bc5d
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: fr-FR
+ms.lasthandoff: 10/31/2017
 ---
-# <a name="walkthrough-calling-code-in-a-vsto-add-in-from-vba"></a>Walkthrough: Calling Code in a VSTO Add-in from VBA
-  This walkthrough demonstrates how to expose an object in a VSTO Add-in to other Microsoft Office solutions, including Visual Basic for Applications (VBA) and COM VSTO Add-ins.  
+# <a name="walkthrough-calling-code-in-a-vsto-add-in-from-vba"></a>Procédure pas à pas : appel de code dans un complément VSTO à partir de VBA
+  Cette procédure pas à pas montre comment exposer un objet dans un complément VSTO à d’autres solutions Microsoft Office, notamment des compléments VSTO VBA (Visual Basic pour Applications) et COM.  
   
  [!INCLUDE[appliesto_allapp](../vsto/includes/appliesto-allapp-md.md)]  
   
- Although this walkthrough uses Excel specifically, the concepts demonstrated by the walkthrough are applicable to any VSTO Add-in project template provided by Visual Studio.  
+ Bien que cette procédure pas à pas utilise spécifiquement Excel, les concepts présentés ici s'appliquent à tous les modèles de projet de complément VSTO fournis par Visual Studio.  
   
- This walkthrough illustrates the following tasks:  
+ Cette procédure pas à pas décrit les tâches suivantes :  
   
--   Defining a class that can be exposed to other Office solutions.  
+-   Définition d'une classe pouvant être exposée à d'autres solutions Office  
   
--   Exposing the class to other Office solutions.  
+-   Exposition de la classe à d'autres solutions Office  
   
--   Calling a method of the class from VBA code.  
+-   Appel d'une méthode de la classe à partir du code VBA  
   
  [!INCLUDE[note_settings_general](../sharepoint/includes/note-settings-general-md.md)]  
   
-## <a name="prerequisites"></a>Prerequisites  
- You need the following components to complete this walkthrough:  
+## <a name="prerequisites"></a>Conditions préalables  
+ Pour exécuter cette procédure pas à pas, vous devez disposer des composants suivants :  
   
 -   [!INCLUDE[vsto_vsprereq](../vsto/includes/vsto-vsprereq-md.md)]  
   
 -   Microsoft Excel  
   
-## <a name="creating-the-vsto-add-in-project"></a>Creating the VSTO Add-in Project  
- The first step is to create a VSTO Add-in project for Excel.  
+## <a name="creating-the-vsto-add-in-project"></a>Création du projet de complément VSTO  
+ La première étape consiste à créer un projet de complément VSTO pour Excel.  
   
-#### <a name="to-create-a-new-project"></a>To create a new project  
+#### <a name="to-create-a-new-project"></a>Pour créer un projet  
   
-1.  Create an Excel VSTO Add-in project with the name **ExcelImportData**, using the Excel VSTO Add-in project template. For more information, see [How to: Create Office Projects in Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md).  
+1.  Créez un projet de complément VSTO Excel nommé **ExcelImportData**à l’aide du modèle de projet de complément VSTO Excel. Pour plus d'informations, consultez [How to: Create Office Projects in Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md).  
   
-     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] opens the **ThisAddIn.cs** or **ThisAddIn.vb** code file and adds the **ExcelImportData** project to **Solution Explorer**.  
+     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] ouvre le fichier de code **ThisAddIn.cs** ou **ThisAddIn.vb** et ajoute le projet **ExcelImportData** à l' **Explorateur de solutions**.  
   
-## <a name="defining-a-class-that-you-can-expose-to-other-office-solutions"></a>Defining a Class That You Can Expose to Other Office Solutions  
- The purpose of this walkthrough is to call into the `ImportData` method of a class named `AddInUtilities` in your VSTO Add-in from VBA code. This method writes a string into cell A1 of the active worksheet.  
+## <a name="defining-a-class-that-you-can-expose-to-other-office-solutions"></a>Définition d'une classe pouvant être exposée à d'autres solutions Office  
+ L'objectif de cette procédure pas à pas est d'appeler la méthode `ImportData` d'une classe nommée `AddInUtilities` dans votre complément VSTO à partir du code VBA. Cette méthode écrit une chaîne dans la cellule A1 de la feuille de calcul active.  
   
- To expose the `AddInUtilities` class to other Office solutions, you must make the class public and visible to COM. You must also expose the [IDispatch](https://msdn.microsoft.com/library/windows/desktop/ms221608.aspx) interface in the class. The code in the following procedure demonstrates one way to meet these requirements. For more information, see [Calling Code in VSTO Add-ins from Other Office Solutions](../vsto/calling-code-in-vsto-add-ins-from-other-office-solutions.md).  
+ Pour exposer la classe `AddInUtilities` à d'autres solutions Office, vous devez faire rendre la classe publique et visible par COM. Vous devez également exposer l'interface [IDispatch](https://msdn.microsoft.com/library/windows/desktop/ms221608.aspx) dans la classe. Le code de la procédure suivante vous montre une façon de respecter ces exigences. Pour plus d'informations, consultez [Calling Code in VSTO Add-ins from Other Office Solutions](../vsto/calling-code-in-vsto-add-ins-from-other-office-solutions.md).  
   
-#### <a name="to-define-a-class-that-you-can-expose-to-other-office-solutions"></a>To define a class that you can expose to other Office solutions  
+#### <a name="to-define-a-class-that-you-can-expose-to-other-office-solutions"></a>Pour définir une classe pouvant être exposée à d'autres solutions Office  
   
-1.  On the **Project** menu, click **Add Class**.  
+1.  Dans le menu **Projet** , cliquez sur **Ajouter une classe**.  
   
-2.  In the **Add New Item** dialog box, change the name of the new class to **AddInUtilities**, and click **Add**.  
+2.  Dans la boîte de dialogue **Ajouter un nouvel élément** , remplacez le nom de la nouvelle classe par **AddInUtilities**, puis cliquez sur **Ajouter**.  
   
-     The **AddInUtilities.cs** or **AddInUtilities.vb** file opens in the Code Editor.  
+     Le fichier **AddInUtilities.cs** ou **AddInUtilities.vb** s'ouvre dans l'éditeur de code.  
   
-3.  Add the following statements to the top of the file.  
+3.  Ajoutez les instructions suivantes au début du fichier.  
   
-     [!code-csharp[Trin_AddInInteropWalkthrough#2](../vsto/codesnippet/CSharp/Trin_AddInInteropWalkthrough/AddInUtilities.cs#2)]  [!code-vb[Trin_AddInInteropWalkthrough#2](../vsto/codesnippet/VisualBasic/Trin_AddInInteropWalkthrough/AddInUtilities.vb#2)]  
+     [!code-csharp[Trin_AddInInteropWalkthrough#2](../vsto/codesnippet/CSharp/Trin_AddInInteropWalkthrough/AddInUtilities.cs#2)]
+     [!code-vb[Trin_AddInInteropWalkthrough#2](../vsto/codesnippet/VisualBasic/Trin_AddInInteropWalkthrough/AddInUtilities.vb#2)]  
   
-4.  Replace the `AddInUtilities` class with the following code.  
+4.  Remplacez la classe `AddInUtilities` par le code suivant :  
   
-     [!code-csharp[Trin_AddInInteropWalkthrough#3](../vsto/codesnippet/CSharp/Trin_AddInInteropWalkthrough/AddInUtilities.cs#3)]  [!code-vb[Trin_AddInInteropWalkthrough#3](../vsto/codesnippet/VisualBasic/Trin_AddInInteropWalkthrough/AddInUtilities.vb#3)]  
+     [!code-csharp[Trin_AddInInteropWalkthrough#3](../vsto/codesnippet/CSharp/Trin_AddInInteropWalkthrough/AddInUtilities.cs#3)]
+     [!code-vb[Trin_AddInInteropWalkthrough#3](../vsto/codesnippet/VisualBasic/Trin_AddInInteropWalkthrough/AddInUtilities.vb#3)]  
   
-     This code makes the `AddInUtilities` class visible to COM, and it adds the `ImportData` method to the class. To expose the [IDispatch](https://msdn.microsoft.com/library/windows/desktop/ms221608.aspx) interface, the `AddInUtilities` class also has the <xref:System.Runtime.InteropServices.ClassInterfaceAttribute> attribute, and it implements an interface that is visible to COM.  
+     Ce code rend la classe `AddInUtilities` visible par COM et ajoute la méthode `ImportData` à la classe. Pour exposer l'interface [IDispatch](https://msdn.microsoft.com/library/windows/desktop/ms221608.aspx) , la classe `AddInUtilities` possède également l'attribut <xref:System.Runtime.InteropServices.ClassInterfaceAttribute> et implémente une interface visible par COM.  
   
-## <a name="exposing-the-class-to-other-office-solutions"></a>Exposing the Class to Other Office Solutions  
- To expose the `AddInUtilities` class to other Office solutions, override the <xref:Microsoft.Office.Tools.AddInBase.RequestComAddInAutomationService%2A> method in the `ThisAddIn` class. In your override, return an instance of the `AddInUtilities` class.  
+## <a name="exposing-the-class-to-other-office-solutions"></a>Exposition de la classe à d'autres solutions Office  
+ Pour exposer la classe `AddInUtilities` à d'autres solutions Office, substituez la méthode <xref:Microsoft.Office.Tools.AddInBase.RequestComAddInAutomationService%2A> dans la classe `ThisAddIn` . Dans la substitution, retournez une instance de la classe `AddInUtilities` .  
   
-#### <a name="to-expose-the-addinutilities-class-to-other-office-solutions"></a>To expose the AddInUtilities class to other Office Solutions  
+#### <a name="to-expose-the-addinutilities-class-to-other-office-solutions"></a>Pour exposer la classe AddInUtilities à d'autres Solutions Office  
   
-1.  In **Solution Explorer**, expand **Excel**.  
+1.  Dans l' **Explorateur de solutions**, développez **Excel**.  
   
-2.  Right-click **ThisAddIn.cs** or **ThisAddIn.vb**, and then click **View Code**.  
+2.  Cliquez avec le bouton droit sur **ThisAddIn.cs** ou **ThisAddIn.vb**, puis cliquez sur **Afficher le code**.  
   
-3.  Add the following code to the `ThisAddIn` class.  
+3.  Ajoutez le code suivant à la classe `ThisAddIn` .  
   
-     [!code-csharp[Trin_AddInInteropWalkthrough#1](../vsto/codesnippet/CSharp/Trin_AddInInteropWalkthrough/ThisAddIn.cs#1)]  [!code-vb[Trin_AddInInteropWalkthrough#1](../vsto/codesnippet/VisualBasic/Trin_AddInInteropWalkthrough/ThisAddIn.vb#1)]  
+     [!code-csharp[Trin_AddInInteropWalkthrough#1](../vsto/codesnippet/CSharp/Trin_AddInInteropWalkthrough/ThisAddIn.cs#1)]
+     [!code-vb[Trin_AddInInteropWalkthrough#1](../vsto/codesnippet/VisualBasic/Trin_AddInInteropWalkthrough/ThisAddIn.vb#1)]  
   
-4.  On the **Build** menu, click **Build Solution**.  
+4.  Dans le menu **Générer** , cliquez sur **Générer la solution**.  
   
-     Verify that the solution builds without errors.  
+     Vérifiez que la solution se génère sans erreur.  
   
-## <a name="testing-the-vsto-add-in"></a>Testing the VSTO Add-in  
- You can call into the `AddInUtilities` class from several different types of Office solutions. In this walkthrough, you will use VBA code in an Excel workbook. For more information about the other types of Office solutions you can also use, see [Calling Code in VSTO Add-ins from Other Office Solutions](../vsto/calling-code-in-vsto-add-ins-from-other-office-solutions.md).  
+## <a name="testing-the-vsto-add-in"></a>Test du complément VSTO  
+ Vous pouvez exécuter un appel dans la classe `AddInUtilities` à partir de différents types de solutions Office. Dans cette procédure pas à pas, vous allez utiliser du code VBA dans un classeur Excel. Pour plus d’informations sur les autres types de solutions Office utilisables, consultez [Calling Code in VSTO Add-ins from Other Office Solutions](../vsto/calling-code-in-vsto-add-ins-from-other-office-solutions.md).  
   
-#### <a name="to-test-your-vsto-add-in"></a>To test your VSTO Add-in  
+#### <a name="to-test-your-vsto-add-in"></a>Pour tester votre complément VSTO  
   
-1.  Press F5 to run your project.  
+1.  Appuyez sur F5 pour exécuter votre projet.  
   
-2.  In Excel, save the active workbook as an Excel Macro-Enabled Workbook (*.xlsm). Save it in a convenient location, such as the desktop.  
+2.  Dans Excel, enregistrez le classeur actif en tant que classeur Excel prenant en charge les macros (*.xlsm) dans un emplacement pratique, tel que le Bureau.  
   
-3.  On the Ribbon, click the **Developer** tab.  
+3.  Dans le ruban, cliquez sur l'onglet **Développeur** .  
   
     > [!NOTE]  
-    >  If the **Developer** tab is not visible, you must first show it. For more information, see [How to: Show the Developer Tab on the Ribbon](../vsto/how-to-show-the-developer-tab-on-the-ribbon.md).  
+    >  Si l'onglet **Développeur** n'est pas visible, vous devez tout d'abord l'afficher. Pour plus d'informations, consultez [How to: Show the Developer Tab on the Ribbon](../vsto/how-to-show-the-developer-tab-on-the-ribbon.md).  
   
-4.  In the **Code** group, click **Visual Basic**.  
+4.  Dans le groupe **Code** , cliquez sur **Visual Basic**.  
   
-     The Visual Basic Editor opens.  
+     Visual Basic Editor s'ouvre.  
   
-5.  In the **Project** window, double-click **ThisWorkbook**.  
+5.  Dans la fenêtre **Projet** , double-cliquez sur **ThisWorkbook**.  
   
-     The code file for the `ThisWorkbook` object opens.  
+     Le fichier de code de l'objet `ThisWorkbook` s'ouvre.  
   
-6.  Add the following VBA code to the code file. This code first gets a COMAddIn object that represents the **ExcelImportData** VSTO Add-in. Then, the code uses the Object property of the COMAddIn object to call the `ImportData` method.  
+6.  Ajoutez le code VBA suivant au fichier de code. Ce code obtient d’abord un objet COMAddIn qui représente le **ExcelImportData** complément VSTO. Ensuite, le code utilise la propriété de l’objet de l’objet COMAddIn pour appeler le `ImportData` (méthode).  
   
     ```  
     Sub CallVSTOMethod()  
@@ -139,27 +139,27 @@ ms.lasthandoff: 08/30/2017
     End Sub  
     ```  
   
-7.  Press F5.  
+7.  Appuyez sur F5.  
   
-8.  Verify that a new **Imported Data** sheet has been added to the workbook. Also verify that cell A1 contains the string **This is my data**.  
+8.  Assurez-vous qu'une nouvelle feuille de calcul **Imported Data** a été ajoutée au classeur. Vérifiez également que la cellule A1 contient la chaîne **This is my data**.  
   
-9. Exit Excel.  
+9. Quittez Excel.  
   
-## <a name="next-steps"></a>Next Steps  
- You can learn more about programming VSTO Add-ins from these topics:  
+## <a name="next-steps"></a>Étapes suivantes  
+ Pour en savoir plus sur la programmation de compléments VSTO, consultez les rubriques suivantes :  
   
--   Use the `ThisAddIn` class to automate the host application and perform other tasks in VSTO Add-in projects. For more information, see [Programming VSTO Add-Ins](../vsto/programming-vsto-add-ins.md).  
+-   Utiliser la classe `ThisAddIn` pour automatiser l'application hôte et effectuer d'autres tâches dans les projets de complément VSTO. Pour plus d'informations, consultez [Programming VSTO Add-Ins](../vsto/programming-vsto-add-ins.md).  
   
--   Create a custom task pane in a VSTO Add-in. For more information, see [Custom Task Panes](../vsto/custom-task-panes.md) and [How to: Add a Custom Task Pane to an Application](../vsto/how-to-add-a-custom-task-pane-to-an-application.md).  
+-   Créer un volet des tâches personnalisé dans un complément VSTO. Pour plus d’informations, consultez [volets de tâches personnalisés](../vsto/custom-task-panes.md) et [Comment : ajouter un volet de tâches personnalisé à une Application](../vsto/how-to-add-a-custom-task-pane-to-an-application.md).  
   
--   Customize the Ribbon in a VSTO Add-in. For more information, see [Ribbon Overview](../vsto/ribbon-overview.md) and [How to: Get Started Customizing the Ribbon](../vsto/how-to-get-started-customizing-the-ribbon.md).  
+-   Personnaliser le ruban dans un complément VSTO. Pour plus d’informations, consultez [vue d’ensemble du ruban](../vsto/ribbon-overview.md) et [Comment : démarrer avec la personnalisation du ruban](../vsto/how-to-get-started-customizing-the-ribbon.md).  
   
-## <a name="see-also"></a>See Also  
+## <a name="see-also"></a>Voir aussi  
  [Programming VSTO Add-Ins](../vsto/programming-vsto-add-ins.md)   
- [Calling Code in VSTO Add-ins from Other Office Solutions](../vsto/calling-code-in-vsto-add-ins-from-other-office-solutions.md)   
- [Developing Office Solutions](../vsto/developing-office-solutions.md)   
- [How to: Create Office Projects in Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md)   
- [Architecture of VSTO Add-ins](../vsto/architecture-of-vsto-add-ins.md)   
- [Customizing UI Features By Using Extensibility Interfaces](../vsto/customizing-ui-features-by-using-extensibility-interfaces.md)  
+ [Appel de Code dans des Compléments VSTO à partir d’autres Solutions Office](../vsto/calling-code-in-vsto-add-ins-from-other-office-solutions.md)   
+ [Développement de Solutions Office](../vsto/developing-office-solutions.md)   
+ [Comment : créer des projets Office dans Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md)   
+ [Architecture des Compléments VSTO](../vsto/architecture-of-vsto-add-ins.md)   
+ [Personnalisation des fonctionnalités de l’interface utilisateur à l’aide d’interfaces d’extensibilité](../vsto/customizing-ui-features-by-using-extensibility-interfaces.md)  
   
   

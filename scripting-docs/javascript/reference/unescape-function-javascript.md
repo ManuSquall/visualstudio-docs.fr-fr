@@ -1,55 +1,56 @@
 ---
-title: "unescape, fonction (JavaScript) | Microsoft Docs"
-ms.custom: ""
-ms.date: "01/18/2017"
-ms.prod: "windows-client-threshold"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "devlang-javascript"
-ms.tgt_pltfrm: ""
-ms.topic: "language-reference"
-f1_keywords: 
-  - "unescape"
-dev_langs: 
-  - "JavaScript"
-  - "TypeScript"
-  - "DHTML"
-helpviewer_keywords: 
-  - "Unescape (méthode)"
+title: unescape, fonction (JavaScript) | Documents Microsoft
+ms.custom: 
+ms.date: 01/18/2017
+ms.prod: windows-client-threshold
+ms.reviewer: 
+ms.suite: 
+ms.technology: devlang-javascript
+ms.tgt_pltfrm: 
+ms.topic: language-reference
+f1_keywords: unescape
+dev_langs:
+- JavaScript
+- TypeScript
+- DHTML
+helpviewer_keywords: Unescape method
 ms.assetid: 4adf0270-88b5-4d54-8110-d879d6ae97c2
-caps.latest.revision: 9
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 9
+caps.latest.revision: "9"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: 96601fc21f47c86aec8c3702a6861c3676aacacf
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.translationtype: MT
+ms.contentlocale: fr-FR
+ms.lasthandoff: 10/27/2017
 ---
-# unescape, fonction (JavaScript)
-Décode les objets `String` encodés au moyen de la fonction `escape`.  Déconseillé.  
+# <a name="unescape-function-javascript"></a>unescape, fonction (JavaScript)
+Décode `String` objets encodés avec la `escape` (fonction). Obsolète.  
   
-## Syntaxe  
+## <a name="syntax"></a>Syntaxe  
   
 ```  
 unescape(charString)   
 ```  
   
-## Notes  
- L'argument `charString` requis est un objet `String` ou un littéral à décoder.  
+## <a name="remarks"></a>Remarques  
+ Requis `charString` argument est un `String` objet ou littéral à décoder.  
   
- La fonction `unescape` retourne une valeur de chaîne reprenant le contenu de `charstring`.  Tous les caractères encodés sous la forme hexadécimale %*xx* sont remplacés par leur équivalent dans le jeu de caractères ASCII.  
+ Le `unescape` fonction retourne une valeur de chaîne qui contient le contenu de `charstring`. Tous les caractères encodés :*xx* forme hexadécimale sont remplacés par leurs équivalents de jeu de caractères ASCII.  
   
- Les caractères encodés au format **%u** *xxxx* \(caractères Unicode\) sont remplacés par les caractères Unicode avec encodage hexadécimal *xxxx*.  
+ Les caractères encodés dans **%u** *xxxx* format (caractères Unicode) sont remplacés par les caractères Unicode avec codage hexadécimal *xxxx*.  
   
 > [!NOTE]
->  N'utilisez pas la fonction `unescape` pour décoder des URI \(Uniform Resource Identifiers\).  Utilisez les fonctions `decodeURI` et `decodeURIComponent` à la place.  
+>  Le `unescape` fonction ne doit pas être utilisée pour décoder des identificateurs de ressource uniforme (URI). Utilisez `decodeURI` et `decodeURIComponent` à la place des fonctions.  
   
-## Configuration requise  
+## <a name="requirements"></a>Spécifications  
  [!INCLUDE[jsv1](../../javascript/misc/includes/jsv1-md.md)]  
   
- **S'applique à** : [Objet Global](../../javascript/reference/global-object-javascript.md)  
+ **S’applique aux**: [objet Global](../../javascript/reference/global-object-javascript.md)  
   
-## Voir aussi  
- [Fonction decodeURI](../../javascript/reference/decodeuri-function-javascript.md)   
+## <a name="see-also"></a>Voir aussi  
+ [decodeURI, fonction](../../javascript/reference/decodeuri-function-javascript.md)   
  [decodeURIComponent, fonction](../../javascript/reference/decodeuricomponent-function-javascript.md)   
  [Fonction escape](../../javascript/reference/escape-function-javascript.md)   
- [String, objet](../../javascript/reference/string-object-javascript.md)
+ [Objet String](../../javascript/reference/string-object-javascript.md)

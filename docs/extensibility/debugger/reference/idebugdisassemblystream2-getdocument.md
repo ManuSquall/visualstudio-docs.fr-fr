@@ -1,46 +1,29 @@
 ---
-title: IDebugDisassemblyStream2::GetDocument | Microsoft Docs
+title: IDebugDisassemblyStream2::GetDocument | Documents Microsoft
 ms.custom: 
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-sdk
+ms.technology: vs-ide-sdk
 ms.tgt_pltfrm: 
 ms.topic: article
-f1_keywords:
-- IDebugDisassemblyStream2::GetDocument
-helpviewer_keywords:
-- IDebugDisassemblyStream2::GetDocument
+f1_keywords: IDebugDisassemblyStream2::GetDocument
+helpviewer_keywords: IDebugDisassemblyStream2::GetDocument
 ms.assetid: 3d039a44-ebaa-4413-ac18-7cfd92c408bd
-caps.latest.revision: 9
+caps.latest.revision: "9"
+author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-translation.priority.mt:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
+ms.openlocfilehash: 9bbf3ca1c35de6ef8742d5a6dcc5fba4721dc440
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
 ms.translationtype: MT
-ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
-ms.openlocfilehash: bd485c777364e55c2e6cc9d2ef0f39695fd33df6
-ms.contentlocale: fr-fr
-ms.lasthandoff: 08/28/2017
-
+ms.contentlocale: fr-FR
+ms.lasthandoff: 10/31/2017
 ---
 # <a name="idebugdisassemblystream2getdocument"></a>IDebugDisassemblyStream2::GetDocument
-Gets the source document associated with this input stream.  
+Obtient le document source associé au flux d’entrée.  
   
-## <a name="syntax"></a>Syntax  
+## <a name="syntax"></a>Syntaxe  
   
 ```cpp  
 HRESULT GetDocument(   
@@ -56,19 +39,19 @@ int GetDocument(
 );  
 ```  
   
-#### <a name="parameters"></a>Parameters  
+#### <a name="parameters"></a>Paramètres  
  `bstrDocumentUrl`  
- [in] The document URL.  
+ [in] L’URL du document.  
   
  `ppDocument`  
- [out] Returns an [IDebugDocument2](../../../extensibility/debugger/reference/idebugdocument2.md) object representing the document.  
+ [out] Retourne un [IDebugDocument2](../../../extensibility/debugger/reference/idebugdocument2.md) objet représentant le document.  
   
-## <a name="return-value"></a>Return Value  
- If successful, returns `S_OK`; otherwise, returns an error code.  
+## <a name="return-value"></a>Valeur de retour  
+ En cas de réussite, retourne `S_OK`; sinon, retourne un code d’erreur.  
   
-## <a name="remarks"></a>Remarks  
- This method is implemented by debug engines that have text documents that are not stored in an actual file.  
+## <a name="remarks"></a>Remarques  
+ Cette méthode est implémentée par les moteurs de débogage qui ont des documents de texte qui ne sont pas stockées dans un fichier.  
   
-## <a name="see-also"></a>See Also  
+## <a name="see-also"></a>Voir aussi  
  [IDebugDisassemblyStream2](../../../extensibility/debugger/reference/idebugdisassemblystream2.md)   
  [IDebugDocument2](../../../extensibility/debugger/reference/idebugdocument2.md)

@@ -1,56 +1,63 @@
 ---
-title: "Assembly, &#233;l&#233;ment (mod&#232;les Visual&#160;Studio) | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-general"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "http://schemas.microsoft.com/developer/vstemplate/2005#Assembly"
-helpviewer_keywords: 
-  - "Assembly, élément [modèles Visual Studio]"
-  - "<Assembly>, élément [modèles Visual Studio]"
+title: "Assembly, élément (modèles Visual Studio) | Documents Microsoft"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-general
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords: http://schemas.microsoft.com/developer/vstemplate/2005#Assembly
+helpviewer_keywords:
+- Assembly element [Visual Studio templates]
+- <Assembly> element [Visual Studio templates]
 ms.assetid: 9242f76a-1273-4b8a-8f26-6606f91829ef
-caps.latest.revision: 10
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 10
+caps.latest.revision: "10"
+author: gregvanl
+ms.author: gregvanl
+manager: ghogen
+ms.openlocfilehash: 9032fa397e8fb4cb443d0209853ba4cfe7a5e53f
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: fr-FR
+ms.lasthandoff: 10/31/2017
 ---
-# Assembly, &#233;l&#233;ment (mod&#232;les Visual&#160;Studio)
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
-
-Donne des informations sur un assembly dont le modèle ajoute une référence dans les projets.  
+# <a name="assembly-element-visual-studio-templates"></a>Assembly, élément (modèles Visual Studio)
+Spécifie des informations sur un assembly, le modèle utilise pour ajouter une référence de cet assembly aux projets.  
   
-## Syntaxe  
+ \<VSTemplate >  
+ \<TemplateContent >  
+ \<Références >  
+ \<Référence >  
+ \<Assembly >  
+  
+## <a name="syntax"></a>Syntaxe  
   
 ```  
 <Assembly> AssemblyName </Assembly>  
 ```  
   
-## Attributs et éléments  
+## <a name="attributes-and-elements"></a>Attributs et éléments  
  Les sections suivantes décrivent des attributs, des éléments enfants et des éléments parents.  
   
-### Attributs  
+### <a name="attributes"></a>Attributs  
  Aucun  
   
-### Éléments enfants  
- Aucun  
+### <a name="child-elements"></a>Éléments enfants  
+ Aucun.  
   
-### Éléments parents  
+### <a name="parent-elements"></a>Éléments parents  
   
 |Élément|Description|  
 |-------------|-----------------|  
-|[Référence](../extensibility/reference-element-visual-studio-templates.md)|Spécifie la référence d'assembly à ajouter lorsque l'élément est ajouté à un projet.|  
+|[Référence](../extensibility/reference-element-visual-studio-templates.md)|Spécifie la référence d’assembly à ajouter quand l’élément est ajouté à un projet.|  
   
-## Valeur texte  
+## <a name="text-value"></a>Valeur texte  
  Une valeur texte est requise.  
   
- Ce texte spécifie l'assembly à ajouter à un projet lorsque le modèle d'élément est instancié.  Le nom de l'assembly doit être spécifié d'une des manières suivantes :  
+ Ce texte spécifie l’assembly à ajouter à un projet lorsque le modèle d’élément est instancié. Nom de l’assembly doit être spécifié dans une des manières suivantes :  
   
--   En tant que nom complet de l'assembly.  Par exemple :  
+-   En tant que nom complet de l’assembly. Exemple :  
   
     ```  
     <Assembly>  
@@ -58,19 +65,19 @@ Donne des informations sur un assembly dont le modèle ajoute une référence da
     </Assembly>  
     ```  
   
--   Comme simple référence de texte.  Par exemple :  
+-   En tant que référence de texte simple. Exemple :  
   
     ```  
     <Assembly> System </Assembly>  
     ```  
   
-## Notes  
- L'élément `Assembly` est un enfant obligatoire de l'élément `Reference`.  
+## <a name="remarks"></a>Remarques  
+ `Assembly` est un élément enfant obligatoire de `Reference`.  
   
- Les éléments `Reference`, `References,` et `Assembly` ne peuvent être utilisés que dans les fichiers .vstemplate dont l'attribut `Type` a la valeur `Item`.  
+ Le `Reference`, `References,` et `Assembly` éléments ne peuvent être utilisés dans les fichiers .vstemplate dont un `Type` valeur d’attribut `Item`.  
   
-## Exemple  
- L'exemple suivant illustre l'élément `TemplateContent` d'un modèle d'élément.  Ce XML ajoute des références aux assemblys System.dll et System.Data.dll.  
+## <a name="example"></a>Exemple  
+ L’exemple suivant illustre la `TemplateContent` élément d’un modèle d’élément. Ce code XML ajoute des références aux assemblys System.dll et System.Data.dll.  
   
 ```  
 <TemplateContent>  
@@ -90,6 +97,6 @@ Donne des informations sur un assembly dont le modèle ajoute une référence da
 </TemplateContent>  
 ```  
   
-## Voir aussi  
- [Référence du schéma de modèle Visual Studio](../extensibility/visual-studio-template-schema-reference.md)   
- [Création de modèles de projets et d'éléments personnalisés](../ide/creating-project-and-item-templates.md)
+## <a name="see-also"></a>Voir aussi  
+ [Référence du schéma de modèle Visual Studio](../extensibility/visual-studio-template-schema-reference.md)   
+ [Création de modèles de projet et d’élément](../ide/creating-project-and-item-templates.md)

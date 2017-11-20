@@ -1,99 +1,100 @@
 ---
-title: "Comment&#160;: personnaliser une fonctionnalit&#233; SharePoint"
-ms.custom: ""
-ms.date: "02/02/2017"
-ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "office-development"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "VS.SharePointTools.RAD.FeatureDesigner.SwitchView"
-  - "VS.SharePointTools.RAD.featureDesigner.Manifest"
-  - "VS.SharePointTools.RAD.FeatureDesignerProperties"
-dev_langs: 
-  - "VB"
-  - "CSharp"
-  - "VB"
-  - "CSharp"
-helpviewer_keywords: 
-  - "développement SharePoint dans Visual Studio, fonctionnalités"
+title: "Comment : personnaliser une fonctionnalité SharePoint | Documents Microsoft"
+ms.custom: 
+ms.date: 02/02/2017
+ms.reviewer: 
+ms.suite: 
+ms.technology: office-development
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords:
+- VS.SharePointTools.RAD.FeatureDesigner.SwitchView
+- VS.SharePointTools.RAD.featureDesigner.Manifest
+- VS.SharePointTools.RAD.FeatureDesignerProperties
+dev_langs:
+- VB
+- CSharp
+- VB
+- CSharp
+helpviewer_keywords: SharePoint development in Visual Studio, features
 ms.assetid: e624c546-564b-4c73-9f1b-dc3675e76a55
-caps.latest.revision: 23
-author: "kempb"
-ms.author: "kempb"
-manager: "ghogen"
-caps.handback.revision: 22
+caps.latest.revision: "23"
+author: gewarren
+ms.author: gewarren
+manager: ghogen
+ms.openlocfilehash: d81a65a8030fd77ead1362602b0e16f474ef410c
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: fr-FR
+ms.lasthandoff: 10/31/2017
 ---
-# Comment&#160;: personnaliser une fonctionnalit&#233; SharePoint
-  Vous pouvez créer et personnaliser des fonctionnalités SharePoint en utilisant le Concepteur de fonctionnalités dans Visual Studio.  Il est possible, par exemple, de définir la portée de la fonctionnalité et d'ajouter d'autres fonctionnalités comme dépendances.  Par défaut, le Concepteur de fonctionnalités s'ouvre dès que vous ajoutez une nouvelle fonctionnalité dans l'Explorateur de solutions ou dans l'Explorateur de package SharePoint.  
+# <a name="how-to-customize-a-sharepoint-feature"></a>Comment : personnaliser une fonctionnalité SharePoint
+  Vous pouvez créer et personnaliser des fonctionnalités SharePoint à l’aide du Concepteur de fonctionnalités dans Visual Studio. Par exemple, vous pouvez définir l’étendue de la fonctionnalité et ajouter d’autres fonctionnalités en tant que dépendances. Par défaut, le Concepteur de fonctionnalités est ouvert lorsque vous ajoutez une nouvelle fonctionnalité dans l’Explorateur de solutions ou l’Explorateur de Package SharePoint.  
   
-## Ouverture du Concepteur de fonctionnalités  
- Vous pouvez ajouter ou supprimer des éléments de projet SharePoint d'une fonctionnalité à l'aide du Concepteur de fonctionnalités.  
+## <a name="opening-the-feature-designer"></a>Ouverture du Concepteur de fonctionnalités  
+ Vous pouvez ajouter ou supprimer des éléments de projet SharePoint à une fonctionnalité à l’aide du Concepteur de fonctionnalités.  
   
-#### Pour ouvrir le Concepteur de fonctionnalités  
+#### <a name="to-open-the-feature-designer"></a>Pour ouvrir le Concepteur de fonctionnalités  
   
-1.  Dans l'**Explorateur de solutions**, développez **Fonctionnalités**.  
+1.  Dans **l’Explorateur de solutions**, développez **fonctionnalités**.  
   
-2.  Double\-cliquez sur l'élément *Feature1*, ou ouvrez le menu contextuel de l'élément *Feature1* puis choisissez **Concepteur de vues**.  
+2.  Double-cliquez sur le *Feature1* d’élément, ou ouvrez le menu contextuel pour le *Feature1* d’élément, puis choisissez **Concepteur de vue**.  
   
-## Consultation du fichier manifeste ajouté au package  
- Vous pouvez faire appel au Concepteur de fonctionnalités pour modifier et générer le fichier manifeste ajouté au package pour la fonctionnalité \(feature.xml\),  puis consulter le code XML de ce fichier à partir de Visual Studio.  
+## <a name="viewing-the-packaged-manifest-file"></a>Affichage du fichier manifeste du package  
+ Vous pouvez utiliser le Concepteur de fonctionnalités pour modifier et générer le fichier manifeste de package pour la fonctionnalité (feature.xml). Ensuite, vous pouvez afficher le code XML de ce fichier dans Visual Studio.  
   
-#### Pour consulter le fichier manifeste ajouté au package  
+#### <a name="to-view-the-packaged-manifest-file"></a>Pour consulter le fichier manifest de package  
   
-1.  Dans le **Composant de composant**, choisissez l'onglet **Manifeste**.  
+1.  Dans le **Concepteur de fonctionnalités**, choisissez le **manifeste** onglet.  
   
-#### Pour consulter le fichier manifeste ajouté au package, au moyen de l'Explorateur de solutions  
+#### <a name="to-view-the-packaged-manifest-file-by-using-solution-explorer"></a>Pour afficher le fichier manifeste de package à l’aide de l’Explorateur de solutions  
   
-1.  Dans l'**Explorateur de solutions**, cliquez sur le bouton **Afficher tous les fichiers**.  
+1.  Dans **l’Explorateur de solutions**, choisissez le **afficher tous les fichiers** icône.  
   
-2.  Développez Feature, développez FeatureName, développez FeatureName.feature, puis ouvrez ensuite le fichier *FeatureName*. Template.xml  
+2.  Développez des fonctionnalités, développez NomFonctionnalité, développez FeatureName.feature, puis ouvrez le *FeatureName*. Fichier Template.Xml.  
   
     > [!NOTE]  
-    >  Lorsque vous ouvrez le fichier manifeste XML du modèle de fonctionnalité, les fichiers sont validés automatiquement et les avertissements éventuellement affichés dans la fenêtre Liste d'erreurs peuvent être ignorés.  
+    >  Lorsque vous ouvrez le fichier XML de manifeste de modèle de fonction, les fichiers sont validés automatiquement et les avertissements qui apparaissent dans la fenêtre liste d’erreurs peuvent être ignorés.  
   
-## Modification du modèle de manifeste  
- Vous pouvez modifier le code XML du fichier manifeste de la fonctionnalité à partir de l'éditeur XML de Visual Studio ou du volet Modèle de manifeste.  Tous les changements apportés au code XML sont fusionnés dans le fichier manifeste ajouté au package pour la fonctionnalité.  Il pourrait être intéressant, par exemple, de modifier le modèle de manifeste en vue de personnaliser une propriété Fonctionnalité.  
+## <a name="changing-the-manifest-template"></a>Modifier le modèle de manifeste  
+ Vous pouvez modifier le code XML pour le fichier de manifeste de fonctionnalité dans l’éditeur XML de Visual Studio ou dans le volet modèle de manifeste. Toutes les modifications au code XML est fusionné dans le fichier manifest de package pour la fonctionnalité. Par exemple, vous souhaiterez modifier le modèle de manifeste pour personnaliser une propriété de fonctionnalité.  
   
-#### Pour modifier le modèle de manifeste à l'aide de l'éditeur XML  
+#### <a name="to-change-the-manifest-template-by-using-the-xml-editor"></a>Pour modifier le modèle de manifeste à l’aide de l’éditeur XML  
   
-1.  Dans le **Concepteur de fonctionnalité**, choisissez l'onglet **Manifeste**, développez le nœud **Options d’édition**, puis choisissez le lien **Ouvrir dans l'éditeur XML**.  
+1.  Dans le **Concepteur de fonctionnalités**, choisissez le **manifeste** onglet, développez le **modifier les Options** nœud, puis choisissez le **ouvert dans l’éditeur XML** lien.  
   
-     Les changements apportés au code XML sont fusionnés dans le fichier manifeste ajouté au package.  
+     Modifications apportées au document XML sont fusionnées dans le fichier manifest de package.  
   
-#### Pour modifier le modèle de manifeste à partir du volet Modèle de manifeste  
+#### <a name="to-change-the-manifest-template-by-using-the-manifest-template-pane"></a>Pour modifier le modèle de manifeste à l’aide du volet modèle de manifeste  
   
-1.  Dans le **concepteur de composants**, choisissez l'onglet **Manifeste**, développez le nœud **Options d’édition**, puis modifiez XML qui s'affiche dans le volet modèle de manifeste.  
+1.  Dans le **Concepteur de fonctionnalités**, choisissez le **manifeste** onglet, développez le **modifier les Options** nœud et modifiez le code XML qui s’affiche dans le volet modèle de manifeste.  
   
-     Les changements apportés au code XML sont visibles dans le volet **Aperçu du manifeste ajouté au package**.  
+     Affichage des modifications au code XML dans le **aperçu du manifeste ajouté au package** volet.  
   
-## Remplacement du fichier manifeste ajouté au package  
- Vous pouvez désactiver le Concepteur de fonctionnalités et créer le fichier feature.xml manuellement.  La première fois que vous procédez ainsi, les paramètres actuellement définis dans le Concepteur de fonctionnalités sont enregistrés dans le fichier XML du modèle de fonctionnalité.  Ill suffit ensuite de modifier ou de remplacer le code XML.  
+## <a name="overwriting-the-packaged-manifest-file"></a>Remplacement du fichier manifeste du package  
+ Vous pouvez désactiver le Concepteur de fonctionnalités et créer le fichier feature.xml manuellement. La première fois que vous procédez ainsi, les paramètres actuels dans le Concepteur de fonctionnalités sont enregistrées au fichier XML de modèle de fonction. Ensuite, vous pouvez modifier ou remplacer le code XML.  
   
 > [!NOTE]  
->  Si vous ajoutez ou supprimez des éléments de projet SharePoint dans le fichier XML alors que le Concepteur de fonctionnalités est désactivé, ces actions ne sont pas prises en compte dans le package.  
+>  Si vous ajoutez ou supprimez des éléments de projet SharePoint dans le fichier XML alors que le Concepteur de fonctionnalités est désactivé, ces éléments de projet ne sont pas compressées.  
   
-#### Pour remplacer le fichier manifeste ajouté au package en désactivant le concepteur  
+#### <a name="to-overwrite-packaged-manifest-file-by-disabling-the-designer"></a>Pour remplacer le fichier manifest de package en désactivant le Concepteur  
   
-1.  Dans le **Composant de composant**, choisissez l'onglet **Manifeste**.  
+1.  Dans le **Concepteur de fonctionnalités**, choisissez le **manifeste** onglet.  
   
-2.  Développez le nœud **Options d’édition**, choisissez le lien **Remplacez le code XML généré et modifiez le manifeste dans l'éditeur XML**, puis cliquez sur le bouton **Oui**.  
+2.  Développez le **modifier les Options** nœud, choisissez le **remplacer généré XML et modifier le manifeste dans l’éditeur XML** lier, puis choisissez le **Oui** bouton.  
   
-     Le modèle est mis à jour en fonction du fichier manifeste ajouté au package.  
+     Le modèle est mis à jour avec le fichier de manifeste de package en cours.  
   
-## Activation du Concepteur de fonctionnalités  
+## <a name="enabling-the-feature-designer"></a>L’activation du Concepteur de fonctionnalités  
  Vous pouvez réactiver le Concepteur de fonctionnalités pour personnaliser le fichier feature.xml.  
   
-#### Pour réactiver le concepteur  
+#### <a name="to-re-enable-the-designer"></a>Pour réactiver le Concepteur  
   
-1.  Dans le **Concepteur de composant**, sélectionnez le lien **Ignorer les modifications manifestes et réactiver le concepteur**, puis cliquez sur le bouton **Oui**.  
+1.  Dans le **Concepteur de fonctionnalités**, choisissez le **ignorer modifications du manifeste et réactivez le concepteur** lier, puis choisissez le **Oui** bouton.  
   
-2.  Le modèle est actualisé en fonction du texte d'origine et toutes les modifications apportées au code XML sont perdues.  
+2.  Le modèle est actualisé avec le texte d’origine et les modifications au code XML sont perdues.  
   
-## Voir aussi  
+## <a name="see-also"></a>Voir aussi  
  [Empaquetage et déploiement de solutions SharePoint](../sharepoint/packaging-and-deploying-sharepoint-solutions.md)  
   
   

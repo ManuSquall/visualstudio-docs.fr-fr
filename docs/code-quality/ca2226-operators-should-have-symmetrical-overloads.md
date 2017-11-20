@@ -1,57 +1,58 @@
 ---
-title: "CA2226&#160;: Les op&#233;rateurs doivent contenir des surcharges sym&#233;triques | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-devops-test"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "OperatorsShouldHaveSymmetricalOverloads"
-  - "CA2226"
-helpviewer_keywords: 
-  - "CA2226"
-  - "OperatorsShouldHaveSymmetricalOverloads"
+title: "CA2226 : Les opérateurs doivent contenir des surcharges symétriques | Documents Microsoft"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-code-analysis
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords:
+- OperatorsShouldHaveSymmetricalOverloads
+- CA2226
+helpviewer_keywords:
+- OperatorsShouldHaveSymmetricalOverloads
+- CA2226
 ms.assetid: d202401a-ea14-4559-b15e-0ea4f5b68789
-caps.latest.revision: 14
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
-caps.handback.revision: 14
+caps.latest.revision: "14"
+author: gewarren
+ms.author: gewarren
+manager: ghogen
+ms.openlocfilehash: 209741d29e3607f268fff6963723c59bc2221cb0
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: fr-FR
+ms.lasthandoff: 10/31/2017
 ---
-# CA2226&#160;: Les op&#233;rateurs doivent contenir des surcharges sym&#233;triques
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
-
+# <a name="ca2226-operators-should-have-symmetrical-overloads"></a>CA2226 : Les opérateurs doivent contenir des surcharges symétriques
 |||  
 |-|-|  
 |TypeName|OperatorsShouldHaveSymmetricalOverloads|  
 |CheckId|CA2226|  
 |Catégorie|Microsoft.Usage|  
-|Modification avec rupture|Modification sans rupture|  
+|Modification avec rupture|Sans rupture|  
   
-## Cause  
+## <a name="cause"></a>Cause  
  Un type implémente l'opérateur d'égalité ou d'inégalité et n'implémente pas l'opérateur opposé.  
   
-## Description de la règle  
- Dans aucune circonstance l'égalité ou l'inégalité ne s'applique aux instances d'un type, et l'opérateur opposé est indéfini.  Les types implémentent en général l'opérateur d'inégalité en retournant la valeur de négation de l'opérateur d'égalité.  
+## <a name="rule-description"></a>Description de la règle  
+ Il n’y a aucun cas où l’égalité ou inégalité s’applique aux instances d’un type, et l’opérateur opposé n’est pas défini. Types implémentent généralement l’opérateur d’inégalité en retournant la valeur inversée de l’opérateur d’égalité.  
   
- Le compilateur C\# émet une erreur pour les violations de cette règle.  
+ Le compilateur c# émet une erreur pour les violations de cette règle.  
   
-## Comment corriger les violations  
- Pour corriger une violation de cette règle, implémentez à la fois les opérateurs d'égalité et d'inégalité, ou supprimez celui qui est présent.  
+## <a name="how-to-fix-violations"></a>Comment corriger les violations  
+ Pour corriger une violation de cette règle, implémentez l’égalité et les opérateurs d’inégalité, ou supprimez celui qui est présent.  
   
-## Quand supprimer les avertissements  
- Ne supprimez aucun avertissement de cette règle.  Votre type ne fonctionnera pas de manière cohérente avec le [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)].  
+## <a name="when-to-suppress-warnings"></a>Quand supprimer les avertissements  
+ Ne supprimez aucun avertissement de cette règle. Votre type ne fonctionnera pas de manière cohérente avec le [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)].  
   
-## Règles connexes  
- [CA1046 : Ne pas surcharger l'opérateur égal à sur les types référence](../code-quality/ca1046-do-not-overload-operator-equals-on-reference-types.md)  
+## <a name="related-rules"></a>Règles associées  
+ [CA1046 : Ne pas surcharger l’opérateur égal sur les types de référence](../code-quality/ca1046-do-not-overload-operator-equals-on-reference-types.md)  
   
- [CA2225 : Les surcharges d'opérateur offrent d'autres méthodes nommées](../Topic/CA2225:%20Operator%20overloads%20have%20named%20alternates.md)  
+ [CA2225 : Les surcharges d’opérateur ont d’autres méthodes nommées](../code-quality/ca2225-operator-overloads-have-named-alternates.md)  
   
- [CA2224 : Remplacez Equals au moment de surcharger l'opérateur égal](../code-quality/ca2224-override-equals-on-overloading-operator-equals.md)  
+ [CA2224 : Remplacez Equals lors de la surcharge de l’opérateur égal](../code-quality/ca2224-override-equals-on-overloading-operator-equals.md)  
   
- [CA2218 : Remplacez GetHashCode au moment de remplacer Equals](../code-quality/ca2218-override-gethashcode-on-overriding-equals.md)  
+ [CA2218 : Remplacez GetHashCode lors du remplacement de Equals](../code-quality/ca2218-override-gethashcode-on-overriding-equals.md)  
   
- [CA2231 : Surchargez l'opérateur égal \(equals\) en remplaçant ValueType.Equals](../code-quality/ca2231-overload-operator-equals-on-overriding-valuetype-equals.md)
+ [CA2231 : Surchargez l’opérateur égal (equals) en remplaçant ValueType.Equals](../code-quality/ca2231-overload-operator-equals-on-overriding-valuetype-equals.md)

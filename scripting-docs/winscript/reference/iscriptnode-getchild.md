@@ -1,27 +1,30 @@
 ---
-title: "IScriptNode::GetChild | Microsoft Docs"
-ms.custom: ""
-ms.date: "01/18/2017"
-ms.prod: "windows-script-interfaces"
-ms.reviewer: ""
-ms.suite: ""
-ms.tgt_pltfrm: ""
-ms.topic: "reference"
+title: IScriptNode::GetChild | Documents Microsoft
+ms.custom: 
+ms.date: 01/18/2017
+ms.prod: windows-script-interfaces
+ms.reviewer: 
+ms.suite: 
+ms.tgt_pltfrm: 
+ms.topic: reference
 apiname: IScriptNode.GetChild
 apilocation: scrobj.dll
-helpviewer_keywords: 
-  - "IScriptNode::GetChild"
+helpviewer_keywords: IScriptNode::GetChild
 ms.assetid: 8cb3f8b0-958b-40bb-a91a-49a788661861
-caps.latest.revision: 10
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 10
+caps.latest.revision: "10"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: d127b1b8a8db0c6d272e50d33b523fbe182a9e21
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.translationtype: MT
+ms.contentlocale: fr-FR
+ms.lasthandoff: 10/27/2017
 ---
-# IScriptNode::GetChild
-Retourne l'enfant qui est à l'index spécifié dans le nœud.  
+# <a name="iscriptnodegetchild"></a>IScriptNode::GetChild
+Retourne l’enfant qui est à l’index spécifié dans le nœud.  
   
-## Syntaxe  
+## <a name="syntax"></a>Syntaxe  
   
 ```  
 HRESULT GetChild(  
@@ -30,26 +33,26 @@ HRESULT GetChild(
 );  
 ```  
   
-#### Paramètres  
+#### <a name="parameters"></a>Paramètres  
  `isn`  
- \[in\]  L'index de l'enfant dans le parent.  
+ [in] L’index de l’enfant du parent.  
   
  `ppsn`  
- \[out\]  L'adresse d'une variable qui reçoit un pointeur vers l'interface d' `IScriptNode` de l'instance enfant.  
+ [out] L’adresse d’une variable qui reçoit un pointeur vers le `IScriptNode` interface de l’instance enfant.  
   
- Pour les objets d' `IScriptNode` qui représentent une page Web, retourne la valeur de ce paramètre un objet qui contient un bloc de script.  
+ Pour `IScriptNode` les objets qui représentent une page Web, ce paramètre retourne un objet qui contient un bloc de script.  
   
- Pour les objets d' `IScriptEntry` qui spécifient un bloc de script, retourne la valeur de ce paramètre objet qui spécifie une fonction.  
+ Pour `IScriptEntry` les objets qui spécifient un bloc de script, ce paramètre retourne un objet qui spécifie une fonction.  
   
-## Valeur de retour  
- Élément `HRESULT`.  Les valeurs possibles incluent, mais ne sont pas limitées à, celles dans le tableau suivant.  
+## <a name="return-value"></a>Valeur de retour  
+ Élément `HRESULT`. Les valeurs possibles sont notamment celles figurant dans le tableau suivant.  
   
 |Valeur|Description|  
-|------------|-----------------|  
+|-----------|-----------------|  
 |`S_OK`|La méthode a réussi.|  
   
-## Notes  
- Pour les objets d' `IScriptEntry` qui spécifient un objet de fonction et pour les objets d' `IScriptScriptlet` , échec de cette méthode car il n'existe aucune entrée enfant.  
+## <a name="remarks"></a>Remarques  
+ Pour `IScriptEntry` objets qui spécifient un objet de fonction et pour `IScriptScriptlet` des objets, cette méthode échoue, car aucune entrée enfant.  
   
-## Voir aussi  
- [IScriptNode, interface](../../winscript/reference/iscriptnode-interface.md)
+## <a name="see-also"></a>Voir aussi  
+ [Interface IScriptNode](../../winscript/reference/iscriptnode-interface.md)

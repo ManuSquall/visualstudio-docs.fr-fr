@@ -1,29 +1,32 @@
 ---
-title: "IMachineDebugManagerEvents, interface | Microsoft Docs"
-ms.custom: ""
-ms.date: "01/18/2017"
-ms.prod: "windows-script-interfaces"
-ms.reviewer: ""
-ms.suite: ""
-ms.tgt_pltfrm: ""
-ms.topic: "reference"
-helpviewer_keywords: 
-  - "IMachineDebugManagerEvents (interface)"
+title: IMachineDebugManagerEvents (Interface) | Documents Microsoft
+ms.custom: 
+ms.date: 01/18/2017
+ms.prod: windows-script-interfaces
+ms.reviewer: 
+ms.suite: 
+ms.tgt_pltfrm: 
+ms.topic: reference
+helpviewer_keywords: IMachineDebugManagerEvents interface
 ms.assetid: 468de2f4-49e0-4f6f-ba0c-0f5f6832c092
-caps.latest.revision: 8
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 8
+caps.latest.revision: "8"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: 369dc8d182efe7bf9697454d0e4b1c9c1a10c027
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.translationtype: MT
+ms.contentlocale: fr-FR
+ms.lasthandoff: 10/27/2017
 ---
-# IMachineDebugManagerEvents, interface
-Les modifications de signaux de la liste d'application active mise à jour par l'ordinateur de débogage le gestionnaire.  Cette interface peut être utilisée par le débogueur IDE pour afficher une liste dynamique d'applications.  
+# <a name="imachinedebugmanagerevents-interface"></a>IMachineDebugManagerEvents, interface
+Signale les modifications en cours d’exécution liste des applications gérée par le Gestionnaire de débogage d’ordinateur. Cette interface peut être utilisée par le débogueur IDE pour afficher une liste dynamique des applications.  
   
- Outre les méthodes héritées de `IUnknown`, l'interface `IMachineDebugManagerEvents` expose les méthodes suivantes.  
+ Outre les méthodes héritées de `IUnknown`, le `IMachineDebugManagerEvents` interface expose les méthodes suivantes.  
   
-## Méthodes dans l'ordre Vtable  
+## <a name="methods-in-vtable-order"></a>Méthodes dans l'ordre Vtable  
   
 |Méthode|Description|  
-|-------------|-----------------|  
-|[IMachineDebugManagerEvents::onAddApplication](../../winscript/reference/imachinedebugmanagerevents-onaddapplication.md)|Gère l'événement lorsqu'une application est ajoutée à la liste d'application active.|  
-|[IMachineDebugManagerEvents::onRemoveApplication](../../winscript/reference/imachinedebugmanagerevents-onremoveapplication.md)|Gère l'événement lorsqu'une application est supprimée de la liste d'application active.|
+|------------|-----------------|  
+|[IMachineDebugManagerEvents::onAddApplication](../../winscript/reference/imachinedebugmanagerevents-onaddapplication.md)|Gère l’événement lorsqu’une application est ajoutée à l’exécution liste des applications.|  
+|[IMachineDebugManagerEvents::onRemoveApplication](../../winscript/reference/imachinedebugmanagerevents-onremoveapplication.md)|Gère l’événement lorsqu’une application est supprimée de l’exécution liste des applications.|

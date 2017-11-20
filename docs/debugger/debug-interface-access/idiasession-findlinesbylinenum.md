@@ -1,67 +1,66 @@
 ---
-title: "IDiaSession::findLinesByLinenum | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-debug"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "IDiaSession::findLinesByLinenum (méthode)"
+title: IDiaSession::findLinesByLinenum | Documents Microsoft
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-debug
+ms.tgt_pltfrm: 
+ms.topic: article
+dev_langs: C++
+helpviewer_keywords: IDiaSession::findLinesByLinenum method
 ms.assetid: 76d5622d-9a91-4c2a-a98f-263af5d1daef
-caps.latest.revision: 10
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 10
+caps.latest.revision: "10"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: bb1538aedd1846e164301238262cfb9378973dfc
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: fr-FR
+ms.lasthandoff: 10/31/2017
 ---
-# IDiaSession::findLinesByLinenum
-[!INCLUDE[vs2017banner](../../code-quality/includes/vs2017banner.md)]
-
-Détermine les numéros de ligne du module \(compiland\) que le numéro de ligne spécifié dans un fichier source se trouve dans ou approche.  
+# <a name="idiasessionfindlinesbylinenum"></a>IDiaSession::findLinesByLinenum
+Détermine les numéros de ligne de la compiland le numéro de ligne spécifié dans un fichier source se trouve dans ou à proximité.  
   
-## Syntaxe  
+## <a name="syntax"></a>Syntaxe  
   
-```cpp#  
-HRESULT findLinesByLinenum (   
-   IDiaSymbol*           compiland,  
-   IDiaSourceFile*       file,  
-   DWORD                 linenum,  
-   DWORD                 column,  
-   IDiaEnumLineNumbers** ppResult  
+```C++  
+HRESULT findLinesByLinenum (   
+   IDiaSymbol*           compiland,  
+   IDiaSourceFile*       file,  
+   DWORD                 linenum,  
+   DWORD                 column,  
+   IDiaEnumLineNumbers** ppResult  
 );  
 ```  
   
-#### Paramètres  
+#### <a name="parameters"></a>Paramètres  
  `compiland`  
- \[in\]  Un objet d' [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md) qui représente le module dans lequel vous pouvez rechercher les numéros de ligne.  Ce paramètre ne peut pas être `NULL`.  
+ [in] Un [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md) objet qui représente le module dans lequel rechercher les numéros de ligne. Ce paramètre ne peut pas être `NULL`.  
   
  `file`  
- \[in\]  Un objet d' [IDiaSourceFile](../../debugger/debug-interface-access/idiasourcefile.md) qui représente le fichier source pour le rechercher dans.  Ce paramètre ne peut pas être `NULL`.  
+ [in] Un [IDiaSourceFile](../../debugger/debug-interface-access/idiasourcefile.md) objet qui représente le fichier source pour effectuer la recherche. Ce paramètre ne peut pas être `NULL`.  
   
  `linenum`  
- \[in\]  spécifie un numéro de ligne de base 1.  
+ [in] Spécifie un numéro de ligne de base un.  
   
 > [!NOTE]
->  Vous ne pouvez pas utiliser zéro pour spécifier toutes les lignes \(utilisez la méthode d' [IDiaSession::findLines](../../debugger/debug-interface-access/idiasession-findlines.md) pour rechercher toutes les lignes\).  
+>  Vous ne pouvez pas utiliser de zéro pour spécifier toutes les lignes (utilisez le [IDiaSession::findLines](../../debugger/debug-interface-access/idiasession-findlines.md) méthode pour rechercher toutes les lignes).  
   
  `column`  
- \[in\]  spécifie le numéro de colonne.  utilisation zéro de spécifier toutes les colonnes.  Une colonne est un offset d'octets en une ligne.  
+ [in] Spécifie le numéro de colonne. Utilisez zéro pour spécifier toutes les colonnes. Une colonne est un offset d’octet dans une ligne.  
   
  `ppResult`  
- \[out\]  Retourne un objta d' [IDiaEnumLineNumbers](../../debugger/debug-interface-access/idiaenumlinenumbers.md) qui contient une liste des numéros de ligne récupérés.  
+ [out] Retourne un [IDiaEnumLineNumbers](../../debugger/debug-interface-access/idiaenumlinenumbers.md) objta qui contient une liste des numéros de ligne est récupérée.  
   
-## Valeur de retour  
- En cas de réussite, retourne `S_OK`; sinon, retourne un code d'erreur.  
+## <a name="return-value"></a>Valeur de retour  
+ En cas de réussite, retourne `S_OK`; sinon, retourne un code d’erreur.  
   
-## Exemple  
- L'exemple suivant montre comment ouvrir un fichier source, énumérer les paramètres fournis par ce fichier, et rechercher les numéros de ligne dans le fichier source où commence de chaque module \(compiland\).  
+## <a name="example"></a>Exemple  
+ L’exemple suivant montre comment ouvrir un fichier source, énumérer les compilands fournis par ce fichier et recherchez les numéros de ligne dans le fichier source où chaque compiland commence.  
   
-```cpp#  
+```C++  
 void ShowLinesInCompilands(IDiaSession *pSession, LPCOLESTR filename)  
 {  
     IDiaEnumSourceFiles* pEnum;  
@@ -98,7 +97,7 @@ void ShowLinesInCompilands(IDiaSession *pSession, LPCOLESTR filename)
 }  
 ```  
   
-## Voir aussi  
+## <a name="see-also"></a>Voir aussi  
  [IDiaEnumLineNumbers](../../debugger/debug-interface-access/idiaenumlinenumbers.md)   
  [IDiaSession](../../debugger/debug-interface-access/idiasession.md)   
  [IDiaSession::findLinesByAddr](../../debugger/debug-interface-access/idiasession-findlinesbyaddr.md)   

@@ -1,85 +1,87 @@
 ---
-title: "Comment&#160;: d&#233;ployer, publier et mettre &#224; niveau des solutions SharePoint sur un serveur distant"
-ms.custom: ""
-ms.date: "02/02/2017"
-ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "office-development"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-dev_langs: 
-  - "VB"
-  - "CSharp"
-helpviewer_keywords: 
-  - "déployer (développement SharePoint dans Visual Studio)"
-  - "déploiement distant (développement SharePoint dans Visual Studio)"
-  - "développement SharePoint dans Visual Studio, déployer"
-  - "développement SharePoint dans Visual Studio, déploiement distant"
+title: "Comment : déployer, publier et mettre à niveau des Solutions SharePoint sur un serveur distant | Documents Microsoft"
+ms.custom: 
+ms.date: 02/02/2017
+ms.reviewer: 
+ms.suite: 
+ms.technology: office-development
+ms.tgt_pltfrm: 
+ms.topic: article
+dev_langs:
+- VB
+- CSharp
+helpviewer_keywords:
+- remote deployment [SharePoint development in Visual Studio]
+- SharePoint development in Visual Studio, remote deployment
+- deploying [SharePoint development in Visual Studio]
+- SharePoint development in Visual Studio, deploying
 ms.assetid: d9c67fae-d097-4e26-a2b9-0f72ff800987
-caps.latest.revision: 14
-author: "kempb"
-ms.author: "kempb"
-manager: "ghogen"
-caps.handback.revision: 13
+caps.latest.revision: "14"
+author: gewarren
+ms.author: gewarren
+manager: ghogen
+ms.openlocfilehash: 115509e8ff79aafa703c429b476041d558e3167c
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: fr-FR
+ms.lasthandoff: 10/31/2017
 ---
-# Comment&#160;: d&#233;ployer, publier et mettre &#224; niveau des solutions SharePoint sur un serveur distant
-  En plus de déployer des solutions de SharePoint au système local, vous pouvez publier des solutions sandboxed SharePoint vers des sites distants ou des sites locaux.  Le processus de publication distant copie le fichier .wsp sur le serveur SharePoint, installe la solution, puis vous permet de vérifier la solution.  Vous pouvez également mettre à niveau une installation distante de solutions SharePoint lorsque des modifications sont apportées à ce dernier.  
+# <a name="how-to-deploy-publish-and-upgrade-sharepoint-solutions-on-a-remote-server"></a>Comment : déployer, publier et mettre à niveau des solutions SharePoint sur un serveur distant
+  En plus de déployer des solutions SharePoint sur le système local, vous pouvez publier les solutions bac à sable SharePoint pour les sites distants ou des sites SharePoint locaux. Le processus de publication distant copie le fichier .wsp sur le serveur SharePoint, installe la solution, puis vous permet d’activer la solution. Vous pouvez également mettre à niveau une installation à distance d’une solution SharePoint une fois que les modifications sont apportées à ce dernier.  
   
-## Pour publier une solution sandboxed SharePoint sur un serveur distant SharePoint  
+## <a name="to-publish-a-sandboxed-sharepoint-solution-to-a-remote-sharepoint-server"></a>Pour publier une solution bac à sable de SharePoint sur un serveur SharePoint distant  
   
-1.  Dans l'**Explorateur de solutions**, ouvrez le menu contextuel du projet SharePoint sandboxed que vous souhaitez publier et choisissez **Publier**.  
+1.  Dans **l’Explorateur de solutions**, ouvrez le menu contextuel pour le bac à sable projet SharePoint que vous souhaitez publier, puis choisissez **publier**.  
   
-2.  Dans la boîte de dialogue **Publier**, sélectionnez la case d'option **Publier sur le site SharePoint**, puis entrez l'URL d'un site publication en ligne, comme par exemple : https:\/\/mytestsite.sharepoint.microsoftonline.com.  
+2.  Dans le **publier** boîte de dialogue, choisissez le **publier sur le SharePoint Site** case d’option, puis entrez une URL pour un site de publication en ligne, comme l’exemple suivant : **https:// mytestsite.SharePoint.microsoftonline.com**.  
   
-3.  Sélectionnez la case d'option **Ouvrez la page dans la galerie de solutions dans le navigateur après avoir publié** pour afficher la liste des solutions dans la page **Bibliothèque des solutions**.  
+3.  Choisissez le **ouvrir la page Galerie de solutions dans le navigateur après la publication** case d’option pour afficher la liste des solutions dans le **galerie de solutions** page après la publication.  
   
-4.  Cliquez sur le bouton **Publish**  
+4.  Choisissez le **publier** bouton.  
   
-5.  Connectez\-vous au serveur distant si l'authentification utilisateur est requise.  
+5.  Connectez-vous au serveur distant si l’authentification utilisateur est requise.  
   
-     La progression de la publication s'affiche dans la fenêtre de Visual Studio **Sortie**.  Lorsque le processus est terminé, le fichier de solution \(.wsp\) est installé sur le serveur distant SharePoint.  Toutefois, il doit être activée pour pouvoir être utilisé dans SharePoint.  
+     La progression de la publication s’affiche dans Visual Studio **sortie** fenêtre. Lorsque le processus est terminé, le fichier de solution (.wsp) est installé sur le serveur SharePoint distant. Toutefois, elle doit toujours être activée avant de pouvoir être utilisé dans SharePoint.  
   
-6.  Dans la page **Bibliothèque des solutions**, sélectionnez l'application SharePoint puis sur le ruban, sélectionnez le bouton **Activer**.  
+6.  Sur le **galerie de solutions** page, sélectionnez l’application SharePoint, dans le ruban, puis le **activer** bouton.  
   
-7.  Dans la boîte de dialogue **Vérifiez la solution**, dans le ruban, cliquez sur le bouton **Activer** de nouveau.  
+7.  Dans le **activer une Solution** boîte de dialogue, dans le ruban, choisissez le **activer** bouton Nouveau.  
   
-     La colonne **État** dans la page **Bibliothèque des solutions** indique que l'application est active.  
+     Le **état** colonne sur le **galerie de solutions** page indique que l’application est active.  
   
-## Pour mettre à niveau une solution sandboxed SharePoint sur un serveur distant SharePoint  
- Si une solution sandboxed SharePoint est déjà publiée sur un serveur distant, le processus suivant permet d'effectuer la mise à niveau après avoir apporté des modifications sur l'application dans [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)].  
+## <a name="to-upgrade-a-sandboxed-sharepoint-solution-on-a-remote-sharepoint-server"></a>Pour mettre à niveau une solution bac à sable de SharePoint sur un serveur SharePoint distant  
+ Si une solution bac à sable de SharePoint est déjà publiée sur un serveur distant, le processus suivant vous permet de mettre à niveau après avoir apporté des modifications à l’application dans [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)].  
   
-1.  Renommer le package SharePoint dans [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)].  Pour cela, dans l'**Explorateur de solutions**, ouvrez le package.  Elle apparaît dans l'**Explorateur de package**.  
+1.  Renommez le package SharePoint dans [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]. Pour ce faire, dans **l’Explorateur de solutions** ouvrir le package. Il s’affiche dans le **Explorateur de Package**.  
   
-2.  Dans **Explorateur de package**, dans la zone **Nom**, remplacez le nom du package à un nom unique.  
+2.  Dans **Explorateur de Package**, dans le **nom** , changez le nom du package à un nom unique.  
   
 3.  Enregistrez le projet.  
   
-4.  Dans l'**Explorateur de solutions**, ouvrez le menu contextuel du projet et choisissez **Publier**.  
+4.  Dans **l’Explorateur de solutions**, ouvrez le menu contextuel du projet, puis choisissez **publier**.  
   
-5.  Dans la boîte de dialogue **Publier**, sélectionnez la case d'option **Publier sur le site SharePoint**, puis, si l'URL du serveur distant où la solution est stockée est manquant, entrez\-la.  
+5.  Dans le **publier** boîte de dialogue, choisissez le **publier sur le SharePoint Site** case d’option, puis, si l’URL pour le serveur distant sur lequel la solution est enregistrée est manquant, entrez-le.  
   
-6.  Sélectionnez la case d'option **Ouvrez la page dans la galerie de solutions dans le navigateur après avoir publié** pour afficher la liste des solutions dans la page **Bibliothèque des solutions**.  
+6.  Choisissez le **ouvrir la page Galerie de solutions dans le navigateur après la publication** case d’option pour afficher la liste des solutions dans le **galerie de solutions** page après la publication.  
   
-7.  Cliquez sur le bouton **Publish**  
+7.  Choisissez le **publier** bouton.  
   
-8.  Connectez\-vous au serveur distant si l'authentification utilisateur est requise.  
+8.  Connectez-vous au serveur distant si l’authentification utilisateur est requise.  
   
-     Si vous vous connectez au serveur distant dernièrement utilisé, l'authentification peu ne pas être nécessaire.  
+     Si vous connecté au serveur distant récemment, l’authentification ne peut pas être requise.  
   
-     Si l'ancienne version de l'application qui a toujours le même nom existe déjà sur le serveur SharePoint, vous obtiendrez une erreur indiquant qu'un package portant le même nom existe déjà sur le serveur SharePoint.  Vous devez renommer le package à un nom unique avant de publier.  
+     Si l’ancienne version de l’application qui a le même nom existe toujours sur le serveur SharePoint, vous obtiendrez une erreur qui a un package portant le même nom existe déjà sur le serveur SharePoint. Vous devez renommer le package en un nom unique avant la publication.  
   
-9. Choisissez une application dans SharePoint, puis, dans le ruban, cliquez sur le bouton **Mettre à niveau**.  
+9. Choisissez la nouvelle application dans SharePoint, puis, dans le ruban, le **mise à niveau** bouton.  
   
-10. Dans la boîte de dialogue **Mettre à jour le solution**, dans le ruban, cliquez sur le bouton **Mettre à jour** de nouveau.  La colonne **État** dans la page **Bibliothèque des solutions** doit maintenant indiquer que l'application est active.  
+10. Dans le **mettre à niveau une Solution** boîte de dialogue, dans le ruban, choisissez le **mise à niveau** bouton Nouveau. Le **état** colonne sur le **galerie de solutions** page doit indiquer maintenant que l’application est active.  
   
-     L'ancienne version de la solution est désactivée, la nouvelle version de la solution est mise à niveau avec des données gérées de l'ancienne solution, et la nouvelle solution est activée dans SharePoint.  
+     L’ancienne version de la solution est désactivée, la nouvelle version de la solution est mis à niveau avec les données conservées à partir de l’ancienne solution, et la nouvelle solution est activée dans SharePoint.  
   
-## Voir aussi  
- [Comment : déployer et publier une solution SharePoint sur le site SharePoint local](../sharepoint/how-to-deploy-and-publish-a-sharepoint-solution-to-a-local-sharepoint-site.md)   
- [Création de packages de solution SharePoint](../sharepoint/creating-sharepoint-solution-packages.md)   
- [Comment : personnaliser un package de solution SharePoint](../sharepoint/how-to-customize-a-sharepoint-solution-package.md)   
- [Comment : ajouter et supprimer des fonctionnalités et des éléments dans un package à l'aide du Concepteur de packages](../sharepoint/how-to-add-and-remove-features-and-items-to-a-package-by-using-the-package-designer.md)  
+## <a name="see-also"></a>Voir aussi  
+ [Comment : déployer et publier une Solution SharePoint à un Site SharePoint Local](../sharepoint/how-to-deploy-and-publish-a-sharepoint-solution-to-a-local-sharepoint-site.md)   
+ [Création de Packages de Solution SharePoint](../sharepoint/creating-sharepoint-solution-packages.md)   
+ [Comment : personnaliser un Package de Solution SharePoint](../sharepoint/how-to-customize-a-sharepoint-solution-package.md)   
+ [Guide pratique pour ajouter et supprimer des fonctionnalités et des éléments dans un package à l’aide du Concepteur de packages](../sharepoint/how-to-add-and-remove-features-and-items-to-a-package-by-using-the-package-designer.md)  
   
   

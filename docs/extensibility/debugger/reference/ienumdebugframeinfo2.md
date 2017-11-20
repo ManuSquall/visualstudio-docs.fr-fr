@@ -1,62 +1,62 @@
 ---
-title: "IEnumDebugFrameInfo2 | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "IEnumDebugFrameInfo2"
-helpviewer_keywords: 
-  - "IEnumDebugFrameInfo2"
+title: IEnumDebugFrameInfo2 | Documents Microsoft
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords: IEnumDebugFrameInfo2
+helpviewer_keywords: IEnumDebugFrameInfo2
 ms.assetid: 994e30ad-435a-4f9e-9272-d96d9e01099c
-caps.latest.revision: 11
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 11
+caps.latest.revision: "11"
+author: gregvanl
+ms.author: gregvanl
+manager: ghogen
+ms.openlocfilehash: c9c0cd58c069989b9516d707ba4c9a35faf53013
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: fr-FR
+ms.lasthandoff: 10/31/2017
 ---
-# IEnumDebugFrameInfo2
-[!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]
-
-Cette interface énumère les structures de [FRAMEINFO](../../../extensibility/debugger/reference/frameinfo.md) .  
+# <a name="ienumdebugframeinfo2"></a>IEnumDebugFrameInfo2
+Cette interface énumère [FRAMEINFO](../../../extensibility/debugger/reference/frameinfo.md) structures.  
   
-## Syntaxe  
+## <a name="syntax"></a>Syntaxe  
   
 ```  
 IEnumDebugFrameInfo2 : IUnknown  
 ```  
   
-## Remarques à l'intention des implémenteurs  
- le moteur de débogage \(DE\) implémente cette interface pour fournir une liste de structures qui décrit la pile des appels actuelle.  
+## <a name="notes-for-implementers"></a>Notes pour les implémenteurs  
+ Le moteur de débogage (DE) implémente cette interface pour fournir une liste de structures qui décrit la pile des appels actuelle.  
   
-## Remarques pour les appelants  
- Visual Studio appelle [EnumFrameInfo](../../../extensibility/debugger/reference/idebugthread2-enumframeinfo.md) pour obtenir cette interface chaque fois qu'un point d'arrêt, une exception, ou un arrêt se produit dans un programme en cours de débogage.  
+## <a name="notes-for-callers"></a>Remarques pour les appelants  
+ Appels de Visual Studio [EnumFrameInfo](../../../extensibility/debugger/reference/idebugthread2-enumframeinfo.md) pour obtenir cette interface chaque fois qu’un point d’arrêt, une exception ou arrêt se produit dans un programme en cours de débogage.  
   
-## méthodes en commande de Vtable  
- Le tableau suivant répertorie les méthodes d' `IEnumDebugFrameInfo2`.  
+## <a name="methods-in-vtable-order"></a>Méthodes dans l'ordre Vtable  
+ Le tableau suivant présente les méthodes de `IEnumDebugFrameInfo2`.  
   
 |Méthode|Description|  
-|-------------|-----------------|  
-|[Suivant](../Topic/IEnumDebugFrameInfo2::Next.md)|Récupère un nombre spécifié de structures de [FRAMEINFO](../../../extensibility/debugger/reference/frameinfo.md) dans une séquence d'énumération.|  
-|[Ignorer](../../../extensibility/debugger/reference/ienumdebugframeinfo2-skip.md)|Ignore un nombre spécifié de structures de [FRAMEINFO](../../../extensibility/debugger/reference/frameinfo.md) dans une séquence d'énumération.|  
-|[Réinitialiser](../../../extensibility/debugger/reference/ienumdebugframeinfo2-reset.md)|réinitialise une séquence d'énumération au début.|  
-|[Clone](../../../extensibility/debugger/reference/ienumdebugframeinfo2-clone.md)|crée un énumérateur qui contient le même état d'énumération que l'énumérateur actuel.|  
-|[GetCount](../Topic/IEnumDebugFrameInfo2::GetCount.md)|obtient le nombre de structures de [FRAMEINFO](../../../extensibility/debugger/reference/frameinfo.md) dans un énumérateur.|  
+|------------|-----------------|  
+|[Next](../../../extensibility/debugger/reference/ienumdebugframeinfo2-next.md)|Récupère un nombre spécifié de [FRAMEINFO](../../../extensibility/debugger/reference/frameinfo.md) structures dans une séquence d’énumération.|  
+|[Skip](../../../extensibility/debugger/reference/ienumdebugframeinfo2-skip.md)|Ignore un nombre spécifié de [FRAMEINFO](../../../extensibility/debugger/reference/frameinfo.md) structures dans une séquence d’énumération.|  
+|[Réinitialiser](../../../extensibility/debugger/reference/ienumdebugframeinfo2-reset.md)|Réinitialise la séquence d’énumération au début.|  
+|[Clone](../../../extensibility/debugger/reference/ienumdebugframeinfo2-clone.md)|Crée un énumérateur qui contient le même état d’énumération que l’énumérateur actuel.|  
+|[GetCount](../../../extensibility/debugger/reference/ienumdebugframeinfo2-getcount.md)|Obtient le nombre de [FRAMEINFO](../../../extensibility/debugger/reference/frameinfo.md) structures dans un énumérateur.|  
   
-## Notes  
- Visual Studio reçoit cette interface comme la première étape à gérer un point d'arrêt, une exception, ou une pause fournie par l'utilisateur sur le programme débogué.  La liste de structures de [FRAMEINFO](../../../extensibility/debugger/reference/frameinfo.md) représente la pile des appels actuelle, avec l'appel de fonction en cours au début de la liste et l'appel de fonction le plus ancien à la fin de la liste.  Chaque `FRAMEINFO` représente un frame de pile, un contexte dans lequel les expressions peuvent être évaluées et les variables locales être considéré.  
+## <a name="remarks"></a>Remarques  
+ Visual Studio obtient cette interface en tant que la première étape à la gestion d’un point d’arrêt, une exception ou généré par l’utilisateur de pause sur le programme en cours de débogage. La liste des [FRAMEINFO](../../../extensibility/debugger/reference/frameinfo.md) structures représente la pile des appels actuelle, avec l’appel de fonction en cours au début de la liste et la fonction la plus ancienne des appels à la fin de la liste. Chaque `FRAMEINFO` représente un frame de pile, un contexte dans lequel les expressions peuvent être évaluées et variables locales est examiné.  
   
-## Configuration requise  
- en\-tête : msdbg.h  
+## <a name="requirements"></a>Spécifications  
+ En-tête : msdbg.h  
   
- l'espace de noms : Microsoft.VisualStudio.Debugger.Interop  
+ Namespace : Microsoft.VisualStudio.Debugger.Interop  
   
- Assembly : Microsoft.VisualStudio.Debugger.Interop.dll  
+ Assembly : Microsoft.VisualStudio.Debugger.Interop.dll  
   
-## Voir aussi  
+## <a name="see-also"></a>Voir aussi  
  [Interfaces de base](../../../extensibility/debugger/reference/core-interfaces.md)   
  [EnumFrameInfo](../../../extensibility/debugger/reference/idebugthread2-enumframeinfo.md)   
  [FRAMEINFO](../../../extensibility/debugger/reference/frameinfo.md)

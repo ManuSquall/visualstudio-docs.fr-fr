@@ -1,46 +1,29 @@
 ---
-title: IDebugField::GetType | Microsoft Docs
+title: IDebugField::GetType | Documents Microsoft
 ms.custom: 
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-sdk
+ms.technology: vs-ide-sdk
 ms.tgt_pltfrm: 
 ms.topic: article
-f1_keywords:
-- IDebugField::GetType
-helpviewer_keywords:
-- IDebugField::GetType method
+f1_keywords: IDebugField::GetType
+helpviewer_keywords: IDebugField::GetType method
 ms.assetid: b3cdec9f-ef7b-44d0-a775-d17ef7eae968
-caps.latest.revision: 11
+caps.latest.revision: "11"
+author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-translation.priority.mt:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
+ms.openlocfilehash: a5b1363395c048f1ddc790d2ef7843d25333f234
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
 ms.translationtype: MT
-ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
-ms.openlocfilehash: d488b166922db5b49de2cf6e58f4b487fe719037
-ms.contentlocale: fr-fr
-ms.lasthandoff: 08/28/2017
-
+ms.contentlocale: fr-FR
+ms.lasthandoff: 10/31/2017
 ---
 # <a name="idebugfieldgettype"></a>IDebugField::GetType
-This method gets the type of field.  
+Cette méthode obtient le type du champ.  
   
-## <a name="syntax"></a>Syntax  
+## <a name="syntax"></a>Syntaxe  
   
 ```cpp  
 HRESULT GetType(   
@@ -54,12 +37,12 @@ int GetType(
 );  
 ```  
   
-#### <a name="parameters"></a>Parameters  
+#### <a name="parameters"></a>Paramètres  
  `ppType`  
- [out] Returns the field type as another [IDebugField](../../../extensibility/debugger/reference/idebugfield.md) object.  
+ [out] Retourne le type de champ en tant qu’un autre [IDebugField](../../../extensibility/debugger/reference/idebugfield.md) objet.  
   
-## <a name="return-value"></a>Return Value  
- If successful, returns `S_OK`; otherwise, returns an error code.  
+## <a name="return-value"></a>Valeur de retour  
+ En cas de réussite, retourne `S_OK`; sinon, retourne un code d’erreur.  
   
-## <a name="see-also"></a>See Also  
+## <a name="see-also"></a>Voir aussi  
  [IDebugField](../../../extensibility/debugger/reference/idebugfield.md)

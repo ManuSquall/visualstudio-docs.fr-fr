@@ -4,8 +4,7 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-sdk
+ms.technology: vs-ide-sdk
 ms.tgt_pltfrm: 
 ms.topic: article
 helpviewer_keywords:
@@ -15,48 +14,35 @@ helpviewer_keywords:
 - projects [Visual Studio SDK]
 - project types [Visual Studio SDK]
 ms.assetid: 237742e4-a638-4d5b-a9b3-6a69d627763c
-caps.latest.revision: 43
+caps.latest.revision: "43"
+author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-translation.priority.mt:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
-translationtype: Machine Translation
-ms.sourcegitcommit: 5db97d19b1b823388a465bba15d057b30ff0b3ce
-ms.openlocfilehash: 842bef303d7a3211b8711920ef6cec357a876f8a
-ms.lasthandoff: 02/22/2017
-
+ms.openlocfilehash: c175d85b55734df841f30d131639c3bfeed40361
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: fr-FR
+ms.lasthandoff: 10/31/2017
 ---
 # <a name="projects"></a>Projets
-Dans Visual Studio, les projets sont les conteneurs que les développeurs utilisent pour organiser les fichiers de code source et d’autres ressources qui s’affichent dans **l’Explorateur de solutions**. En règle générale, les projets sont des fichiers (par exemple, un fichier .csproj pour un projet c#) qui stockent les références aux fichiers de code source et des ressources telles que des fichiers bitmap. Projets permettent d’organiser, générer, déboguer et déployer le code source, des références aux services Web et bases de données et d’autres ressources. Les VSPackages peuvent étendre le système de projet Visual Studio dans les trois méthodes principales : *types de projets*, *projet sous-types*, et *des outils personnalisés*.  
+Dans Visual Studio, les projets sont les conteneurs que les développeurs utilisent pour organiser les fichiers de code source et d’autres ressources qui s’affichent dans **l’Explorateur de solutions**. En règle générale, les projets sont des fichiers (par exemple, un fichier .csproj pour un projet c#) qui stockent les références aux fichiers de code source et de ressources, telles que des fichiers bitmap. Permettent d’organiser, générer, déboguer et déployer le code source des projets, des références aux services Web et bases de données et d’autres ressources. Les VSPackages peuvent étendre le système de projet Visual Studio de trois manières principales : *types de projet*, *les sous-types de projet*, et *des outils personnalisés*.  
   
 ## <a name="in-this-section"></a>Dans cette section  
  [Types de projets](../../extensibility/internals/project-types.md)  
- *Types de projets* prise en charge de nouveaux types de projets, tels que les langages de programmation. Par exemple, chaque langage prenant en charge de Visual Studio possède son propre type de projet, et l’exemple de l’intégration d’IronPython inclut un type de projet pour le langage IronPython. Vous devez créer un type de projet pour les langages autres que c# ou Visual Basic pour personnaliser comment les éléments sont générés, débogués, déployés et affichés dans **l’Explorateur de solutions**. Pour plus d’informations, consultez [Types de projet](../../extensibility/internals/project-types.md).  
+ *Types de projets* ajouter la prise en charge de nouveaux types de projets, tels que les langages de programmation. Par exemple, chaque langage qui prend en charge de Visual Studio possède son propre type de projet, et l’exemple d’intégration IronPython inclut un type de projet pour le langage IronPython. Vous devez créer un type de projet pour des langues autres que c# ou Visual Basic pour personnaliser comment les éléments sont générés, débogage, déployés et affichés dans **l’Explorateur de solutions**. Pour plus d’informations, consultez [des Types de projet](../../extensibility/internals/project-types.md).  
   
  [Sous-types de projets](../../extensibility/internals/project-subtypes.md)  
- *Projet sous-types* sont basées sur les types de projets et peut être utilisé pour personnaliser la façon dont les projets sont générés, débogués et déployés. Visual Studio utilise des sous-types de projets avec les projets Smart Device ; ils personnaliser le déploiement en copiant un programme qui vient d’être créé à partir d’un ordinateur de développement vers le périphérique cible. Types de projets Visual Basic et c# peuvent servir comme base pour les sous-types de projet ; Vous ne pouvez pas les types de projets C++. Vos propres types de projets peuvent également servir comme base pour les sous-types de projet. Pour plus d’informations, consultez [sous-types de projets](../../extensibility/internals/project-subtypes.md).  
+ *Les sous-types de projet* sont basées sur les types de projets et peut être utilisé pour personnaliser la façon dont les projets sont générés, débogués et déployés. Visual Studio utilise les sous-types de projet avec les projets Smart Device ; ils personnaliser le déploiement en copiant un programme qui vient d’être généré à partir d’un ordinateur de développement sur le périphérique cible. Types de projets Visual Basic et c# peuvent être utilisés comme base pour les sous-types de projet ; Vous ne pouvez pas les types de projets C++. Vos propres types de projet peuvent également être utilisés comme base pour les sous-types de projet. Pour plus d’informations, consultez [sous-types de projet](../../extensibility/internals/project-subtypes.md).  
   
  [Projets Web](../../extensibility/internals/web-projects.md)  
- Explique le projet Web, qui à son tour créer des applications Web.  
+ Explique le projet Web, qui à son tour créent des applications Web.  
   
- [Nouvelle génération de projet : Dans les coulisses, partie&1;](../../extensibility/internals/new-project-generation-under-the-hood-part-one.md) et [nouvelle génération de projet : dans les coulisses, deuxième partie](../../extensibility/internals/new-project-generation-under-the-hood-part-two.md)  
- Explique ce qui se produit en fait lorsque vous créez un nouveau projet.  
+ [Nouvelle génération de projet : Dans les coulisses, première partie](../../extensibility/internals/new-project-generation-under-the-hood-part-one.md) et [nouvelle génération de projet : dans les coulisses, deuxième partie](../../extensibility/internals/new-project-generation-under-the-hood-part-two.md)  
+ Explique ce qui se produit réellement lorsque vous créez un nouveau projet.  
   
- [Exemples d’extensibilité Visual Studio](../../misc/vssdk-samples.md)  
- Décrit les exemples de VSSDK qui traitent des projets et solutions.  
+ [Exemples d’extensibilité Visual Studio](http://aka.ms/vs2015sdksamples)  
+ Contient les exemples de l’extensibilité Visual Studio qui traitent des projets et solutions.  
   
 ## <a name="related-sections"></a>Rubriques connexes  
- [Dans le Kit de développement logiciel de Visual Studio](../../extensibility/internals/inside-the-visual-studio-sdk.md)  
- Expliquez les différents aspects de l’extensibilité Visual Studio.
+ [Dans le Kit de développement logiciel (SDK) Visual Studio](../../extensibility/internals/inside-the-visual-studio-sdk.md)  
+ Expliquez les différents aspects de l’extensibilité de Visual Studio.

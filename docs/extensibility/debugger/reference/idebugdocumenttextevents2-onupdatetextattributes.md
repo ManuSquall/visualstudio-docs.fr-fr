@@ -1,46 +1,29 @@
 ---
-title: IDebugDocumentTextEvents2::onUpdateTextAttributes | Microsoft Docs
+title: IDebugDocumentTextEvents2::onUpdateTextAttributes | Documents Microsoft
 ms.custom: 
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-sdk
+ms.technology: vs-ide-sdk
 ms.tgt_pltfrm: 
 ms.topic: article
-f1_keywords:
-- IDebugDocumentTextEvents2::OnUpdateTextAttributes
-helpviewer_keywords:
-- IDebugDocumentTextEvents2::onUpdateTextAttributes
+f1_keywords: IDebugDocumentTextEvents2::OnUpdateTextAttributes
+helpviewer_keywords: IDebugDocumentTextEvents2::onUpdateTextAttributes
 ms.assetid: eb68d69a-1ad9-4ce4-84e1-40979ef16634
-caps.latest.revision: 10
+caps.latest.revision: "10"
+author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-translation.priority.mt:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
+ms.openlocfilehash: 18a6de2f4aa3bbbcfa5d6a2e4ad091d8b4e7577f
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
 ms.translationtype: MT
-ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
-ms.openlocfilehash: ab0908d784ddbc64f3c1ffd3b72566913372395b
-ms.contentlocale: fr-fr
-ms.lasthandoff: 08/28/2017
-
+ms.contentlocale: fr-FR
+ms.lasthandoff: 10/31/2017
 ---
 # <a name="idebugdocumenttextevents2onupdatetextattributes"></a>IDebugDocumentTextEvents2::onUpdateTextAttributes
-Notifies the debug package that text attributes have been updated in the document.  
+Notifie le package de débogage que les attributs de texte ont été mis à jour dans le document.  
   
-## <a name="syntax"></a>Syntax  
+## <a name="syntax"></a>Syntaxe  
   
 ```cpp  
 HRESULT onUpdateTextAttributes(   
@@ -56,16 +39,16 @@ int onUpdateTextAttributes(
 );  
 ```  
   
-#### <a name="parameters"></a>Parameters  
+#### <a name="parameters"></a>Paramètres  
  `pos`  
- [in] A [TEXT_POSITION](../../../extensibility/debugger/reference/text-position.md) structure that indicates where the text attributes were updated.  
+ [in] A [TEXT_POSITION](../../../extensibility/debugger/reference/text-position.md) structure qui indique où les attributs de texte ont été mis à jour.  
   
  `dwNumToUpdate`  
- [in] Specifies the number of characters of text that were updated.  
+ [in] Spécifie le nombre de caractères de texte qui ont été mis à jour.  
   
-## <a name="return-value"></a>Return Value  
- If successful, returns `S_OK`; otherwise, returns an error code.  
+## <a name="return-value"></a>Valeur de retour  
+ En cas de réussite, retourne `S_OK`; sinon, retourne un code d’erreur.  
   
-## <a name="see-also"></a>See Also  
+## <a name="see-also"></a>Voir aussi  
  [IDebugDocumentTextEvents2](../../../extensibility/debugger/reference/idebugdocumenttextevents2.md)   
  [TEXT_POSITION](../../../extensibility/debugger/reference/text-position.md)

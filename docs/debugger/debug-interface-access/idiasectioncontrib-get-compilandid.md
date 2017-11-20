@@ -1,43 +1,42 @@
 ---
-title: "IDiaSectionContrib::get_compilandId | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-debug"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "IDiaSectionContrib::get_compilandId (méthode)"
+title: IDiaSectionContrib::get_compilandId | Documents Microsoft
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-debug
+ms.tgt_pltfrm: 
+ms.topic: article
+dev_langs: C++
+helpviewer_keywords: IDiaSectionContrib::get_compilandId method
 ms.assetid: 71ef2e63-d095-42b6-88d8-626e3129f0d9
-caps.latest.revision: 9
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 9
+caps.latest.revision: "9"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: 91e31cb303211bce5107a91649057620946b1936
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: fr-FR
+ms.lasthandoff: 10/31/2017
 ---
-# IDiaSectionContrib::get_compilandId
-[!INCLUDE[vs2017banner](../../code-quality/includes/vs2017banner.md)]
-
-Extrait l'identificateur de module \(compiland\) de la section.  
+# <a name="idiasectioncontribgetcompilandid"></a>IDiaSectionContrib::get_compilandId
+Récupère l’identificateur de compiland pour la section.  
   
-## Syntaxe  
+## <a name="syntax"></a>Syntaxe  
   
-```cpp#  
-HRESULT get_compilandId (   
-   DWORD* pRetVal  
+```C++  
+HRESULT get_compilandId (   
+   DWORD* pRetVal  
 );  
 ```  
   
-#### Paramètres  
+#### <a name="parameters"></a>Paramètres  
  `pRetVal`  
- \[out\]  Retourne l'identificateur du module \(compiland\) de la section.  
+ [out] Retourne l’identificateur de compiland pour la section.  
   
-## Valeur de retour  
- En cas de réussite, retourne `S_OK`.  Retourne `S_FALSE` si cette propriété n'est pas prise en charge.  Sinon, retourne un code d'erreur.  
+## <a name="return-value"></a>Valeur de retour  
+ En cas de réussite, retourne `S_OK`. Retourne `S_FALSE` si cette propriété n’est pas pris en charge. Sinon, retourne un code d'erreur.  
   
-## Voir aussi  
+## <a name="see-also"></a>Voir aussi  
  [IDiaSectionContrib](../../debugger/debug-interface-access/idiasectioncontrib.md)

@@ -1,39 +1,40 @@
 ---
-title: "Comment : impl&#233;menter la rechercher et remplacer le m&#233;canisme | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-helpviewer_keywords: 
-  - "éditeurs (Visual Studio SDK), hérités - rechercher et remplacer"
+title: "Comment : implémenter la rechercher et remplacer le mécanisme | Documents Microsoft"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+helpviewer_keywords: editors [Visual Studio SDK], legacy - find and replace
 ms.assetid: bbd348db-3d19-42eb-99a2-3e808528c0ca
-caps.latest.revision: 11
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 11
+caps.latest.revision: "11"
+author: gregvanl
+ms.author: gregvanl
+manager: ghogen
+ms.openlocfilehash: 8c12e300a3537d1927710b0a4c3550ec3f5fd762
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: fr-FR
+ms.lasthandoff: 10/31/2017
 ---
-# Comment : impl&#233;menter la rechercher et remplacer le m&#233;canisme
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
-
-Visual Studio fournit deux façons d'implémenter la zone rechercher\/les remplace.  Une solution consiste à passer une image de texte au shell et l'permet de gérer rechercher, la mise en surbrillance, et remplacer du texte.  Cela permet aux utilisateurs de spécifier plusieurs étendues de texte.  Sinon, votre VSPackage peut contrôler cette fonctionnalité elle\-même.  Dans les deux cas vous devez informer le shell sur la cible actuelle et les cibles pour tous les documents ouverts.  
+# <a name="how-to-implement-the-find-and-replace-mechanism"></a>Comment : implémenter la rechercher et remplacer le mécanisme
+Visual Studio fournit deux méthodes d’implémentation de la recherche et le remplacement. Une façon consiste à passer d’une image de texte à l’interpréteur de commandes et qu’il traite la recherche, la mise en surbrillance et le texte de remplacement. Cela permet aux utilisateurs de spécifier plusieurs plages de texte. Votre VSPackage peut également contrôler cette fonctionnalité lui-même. Dans les deux cas, vous devez informer l’interpréteur de commandes sur la cible actuelle et les cibles pour tous les documents ouverts.  
   
-### pour implémenter la recherche\/remplacez  
+### <a name="to-implement-findreplace"></a>Pour implémenter la recherche et le remplacement  
   
-1.  Implémentez l'interface d' <xref:Microsoft.VisualStudio.TextManager.Interop.IVsFindTarget> sur l'un des objets retournés par les propriétés <xref:Microsoft.VisualStudio.Shell.Interop.__VSFPROPID> ou <xref:Microsoft.VisualStudio.Shell.Interop.__VSFPROPID>de frame.  Si vous créez un éditeur personnalisé, vous devez implémenter cette interface dans le cadre de la classe d'éditeur personnalisée.  
+1.  Implémentez la <xref:Microsoft.VisualStudio.TextManager.Interop.IVsFindTarget> interface sur l’un des objets retournés par les propriétés de frame <xref:Microsoft.VisualStudio.Shell.Interop.__VSFPROPID> ou <xref:Microsoft.VisualStudio.Shell.Interop.__VSFPROPID>. Si vous créez un éditeur personnalisé, vous devez implémenter cette interface dans le cadre de la classe d’éditeur personnalisé.  
   
-2.  Utilisez la méthode d' <xref:Microsoft.VisualStudio.TextManager.Interop.IVsFindTarget.GetCapabilities%2A> pour spécifier les options que votre application prend en charge d'éditeur et pour indiquer si elles implémentent trouver d'image de texte.  
+2.  Utilisez la <xref:Microsoft.VisualStudio.TextManager.Interop.IVsFindTarget.GetCapabilities%2A> méthode pour spécifier les options qui prend en charge par votre éditeur et pour indiquer si elle implémente la recherche de texte image.  
   
-     Si votre application prend en charge d'éditeur présente l'image recherche, implémentez l' <xref:Microsoft.VisualStudio.TextManager.Interop.IVsFindTarget.GetSearchImage%2A>.  
+     Si votre éditeur prend en charge la recherche de texte image, implémentez <xref:Microsoft.VisualStudio.TextManager.Interop.IVsFindTarget.GetSearchImage%2A>.  
   
-     Sinon, implémentez l' <xref:Microsoft.VisualStudio.TextManager.Interop.IVsFindTarget.Find%2A> et l' <xref:Microsoft.VisualStudio.TextManager.Interop.IVsFindTarget.Replace%2A>.  
+     Sinon, mettre en œuvre <xref:Microsoft.VisualStudio.TextManager.Interop.IVsFindTarget.Find%2A> et <xref:Microsoft.VisualStudio.TextManager.Interop.IVsFindTarget.Replace%2A>.  
   
-3.  si vous appliquez l' <xref:Microsoft.VisualStudio.TextManager.Interop.IVsFindTarget.Find%2A> et les méthodes d' <xref:Microsoft.VisualStudio.TextManager.Interop.IVsFindTarget.Replace%2A> , vous pouvez simplifier vos tâches les recherchant en appelant l'interface d' <xref:Microsoft.VisualStudio.TextManager.Interop.IVsFindHelper> .  
+3.  Si vous implémentez le <xref:Microsoft.VisualStudio.TextManager.Interop.IVsFindTarget.Find%2A> et <xref:Microsoft.VisualStudio.TextManager.Interop.IVsFindTarget.Replace%2A> méthodes, vous pouvez simplifier vos tâches de recherche en appelant le <xref:Microsoft.VisualStudio.TextManager.Interop.IVsFindHelper> interface.  
   
-## Voir aussi  
+## <a name="see-also"></a>Voir aussi  
  <xref:Microsoft.VisualStudio.TextManager.Interop.IVsFindHelper>   
  <xref:Microsoft.VisualStudio.TextManager.Interop.IVsFindTarget>   
  <xref:Microsoft.VisualStudio.TextManager.Interop.IVsFindTarget.Find%2A>   

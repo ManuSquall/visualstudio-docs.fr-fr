@@ -1,33 +1,35 @@
 ---
-title: "Fournisseur de symboles | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-helpviewer_keywords: 
-  - "Gestionnaire de symboles"
-  - "Gestionnaire de symboles de débogage (débogage SDK),"
+title: Fournisseur de symboles | Documents Microsoft
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+helpviewer_keywords:
+- symbol handler
+- debugging [Debugging SDK], symbol handler
 ms.assetid: 5fce651b-fead-4418-81b0-a011df7644ab
-caps.latest.revision: 17
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 17
+caps.latest.revision: "17"
+author: gregvanl
+ms.author: gregvanl
+manager: ghogen
+ms.openlocfilehash: f845e18bbd4c06d5652571ec83270a80d31ec852
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: fr-FR
+ms.lasthandoff: 10/31/2017
 ---
-# Fournisseur de symboles
-[!INCLUDE[vs2017banner](../../code-quality/includes/vs2017banner.md)]
-
-Une implémentation évaluateur d'expression doit accéder aux informations de débogage symboliques générées par le compilateur de langage pour évaluer les variables et des expressions.  Il le fait en consommant interfaces d'un fournisseur de symbole \(SP\), également appelées un gestionnaire de symboles.  
+# <a name="symbol-provider"></a>Fournisseur de symbole
+Une implémentation évaluateur d’expression doit accéder aux informations symboliques de débogage générées par le compilateur de langage afin d’évaluer les variables et les expressions. Il le fait en consommant les interfaces d’un fournisseur de symboles (SP), également appelé un gestionnaire de symboles.  
   
- [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] fournit le SPS pour le code managé ainsi que le code natif à l'aide de le format \(PDB\) de fichier de symboles de base de données du programme.  Sauf s'il est nécessaire fort de votre programme d'utiliser des symboles stockés dans un format personnalisé, il est recommandé d'utiliser le SPS fourni par [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)].  
+ [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]Fournit des SPs pour le code managé, ainsi que le code natif en utilisant le format de fichier de symboles de base de données de programme (PDB). Sauf s’il existe un fort besoin pour votre programme afin d’utiliser des symboles stockés dans un format personnalisé, il est recommandé d’utiliser l’alimentation de secours fournie par [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)].  
   
-## remarques d'implémentation  
- Les moteurs de débogage de [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]comptent parler avec le SPS utilisation d'interfaces \(CLR\) du common langage runtime.  Par conséquent, SP qui doit travailler avec les moteurs de débogage de Visual Studio doit prendre en charge le CLR.  Une liste complète de toutes les interfaces de débogage du CLR peut être récupérée dans debugref.doc, qui fait partie de [!INCLUDE[winsdklong](../../deployment/includes/winsdklong_md.md)].  
+## <a name="implementation-notes"></a>Remarques d’implémentation  
+ Le [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] des moteurs de débogage s’attendre à communiquer avec l’alimentation de secours à l’aide des interfaces du Common Language Runtime (CLR). Par conséquent, un processeur travaillerez avec les moteurs de débogage de Visual Studio doit prendre en charge le CLR. Vous trouverez une liste complète de toutes les interfaces de débogage de CLR dans debugref.doc, qui fait partie de la [!INCLUDE[winsdklong](../../deployment/includes/winsdklong_md.md)].  
   
- Si votre SP fonctionne uniquement avec votre moteur de débogage personnalisé, vous pouvez implémenter SP lorsque vous consultez l'ajustement selon les besoins de votre moteur de débogage.  
+ Si votre processeur travaillerez uniquement avec votre moteur de débogage personnalisé, vous pouvez implémenter la procédure stockée comme vous le souhaitez selon les besoins de votre moteur de débogage.  
   
-## Voir aussi  
+## <a name="see-also"></a>Voir aussi  
  [Composants du débogueur](../../extensibility/debugger/debugger-components.md)

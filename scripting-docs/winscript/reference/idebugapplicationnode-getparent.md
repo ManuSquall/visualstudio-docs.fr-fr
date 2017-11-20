@@ -1,27 +1,30 @@
 ---
-title: "IDebugApplicationNode::GetParent | Microsoft Docs"
-ms.custom: ""
-ms.date: "01/18/2017"
-ms.prod: "windows-script-interfaces"
-ms.reviewer: ""
-ms.suite: ""
-ms.tgt_pltfrm: ""
-ms.topic: "reference"
+title: IDebugApplicationNode::GetParent | Documents Microsoft
+ms.custom: 
+ms.date: 01/18/2017
+ms.prod: windows-script-interfaces
+ms.reviewer: 
+ms.suite: 
+ms.tgt_pltfrm: 
+ms.topic: reference
 apiname: IDebugApplicationNode.GetParent
 apilocation: pdm.dll
-helpviewer_keywords: 
-  - "IDebugApplicationNode::GetParent"
+helpviewer_keywords: IDebugApplicationNode::GetParent
 ms.assetid: 88ba3a53-0cd7-4e1f-8558-79c20ac76cc9
-caps.latest.revision: 8
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 8
+caps.latest.revision: "8"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: 23dbc8b4dc0c12a25349ddaf7d8fd711df0a9f4b
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.translationtype: MT
+ms.contentlocale: fr-FR
+ms.lasthandoff: 10/27/2017
 ---
-# IDebugApplicationNode::GetParent
-Retourne le nœud parent de ce nœud d'application.  
+# <a name="idebugapplicationnodegetparent"></a>IDebugApplicationNode::GetParent
+Retourne le nœud parent de ce nœud de l’application.  
   
-## Syntaxe  
+## <a name="syntax"></a>Syntaxe  
   
 ```  
 HRESULT GetParent(  
@@ -29,19 +32,19 @@ HRESULT GetParent(
 );  
 ```  
   
-#### Paramètres  
+#### <a name="parameters"></a>Paramètres  
  `pprddp`  
- \[out\]  Nœud d'application parent de ce nœud d'application.  
+ [out] Nœud d’application parent de ce nœud de l’application.  
   
-## Valeur de retour  
- La méthode retourne `HRESULT`.  Les valeurs possibles incluent, mais ne sont pas limitées à, celles dans le tableau suivant.  
+## <a name="return-value"></a>Valeur de retour  
+ La méthode retourne `HRESULT`. Les valeurs possibles sont notamment celles figurant dans le tableau suivant.  
   
 |Valeur|Description|  
-|------------|-----------------|  
+|-----------|-----------------|  
 |`S_OK`|La méthode a réussi.|  
   
-## Notes  
- Cette méthode retourne le nœud parent de ce nœud d'application.  
+## <a name="remarks"></a>Remarques  
+ Cette méthode retourne le nœud parent de ce nœud de l’application.  
   
-## Voir aussi  
- [IDebugApplicationNode, interface](../../winscript/reference/idebugapplicationnode-interface.md)
+## <a name="see-also"></a>Voir aussi  
+ [Interface IDebugApplicationNode](../../winscript/reference/idebugapplicationnode-interface.md)

@@ -1,12 +1,10 @@
 ---
-title: 'How to: Resize NamedRange Controls | Microsoft Docs'
+title: "Comment : redimensionner les contrôles NamedRange | Documents Microsoft"
 ms.custom: 
 ms.date: 02/02/2017
-ms.prod: visual-studio-dev14
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- office-development
+ms.technology: office-development
 ms.tgt_pltfrm: 
 ms.topic: article
 dev_langs:
@@ -17,89 +15,92 @@ helpviewer_keywords:
 - NamedRange control, resizing
 - ranges, resizing in Excel
 ms.assetid: 7d6f0b2f-be46-49b7-9f38-b4c8849683f7
-caps.latest.revision: 48
-author: kempb
-ms.author: kempb
+caps.latest.revision: "48"
+author: gewarren
+ms.author: gewarren
 manager: ghogen
-ms.translationtype: HT
-ms.sourcegitcommit: eb5c9550fd29b0e98bf63a7240737da4f13f3249
-ms.openlocfilehash: c58c20aed28fee6942d9587fe9e937a4e589a4ea
-ms.contentlocale: fr-fr
-ms.lasthandoff: 08/30/2017
-
+ms.openlocfilehash: 344abe2cd271504f476b0464bb8d7b3065716b1d
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: fr-FR
+ms.lasthandoff: 10/31/2017
 ---
-# <a name="how-to-resize-namedrange-controls"></a>How to: Resize NamedRange Controls
-  You can set the size of a <xref:Microsoft.Office.Tools.Excel.NamedRange> control when you add it to a Microsoft Office Excel document; however, you might want to resize it at a later time.  
+# <a name="how-to-resize-namedrange-controls"></a>Comment : redimensionner les contrôles NamedRange
+  Vous pouvez définir la taille d’un contrôle <xref:Microsoft.Office.Tools.Excel.NamedRange> quand vous l’ajoutez à un document Microsoft Office Excel. Toutefois, vous souhaiterez peut-être le redimensionner plus tard.  
   
  [!INCLUDE[appliesto_xlalldocapp](../vsto/includes/appliesto-xlalldocapp-md.md)]  
   
- You can resize a named range at design time or at run time in document-level projects. You can also resize named ranges at run time in application-level VSTO Add-ins.  
+ Vous pouvez redimensionner une plage nommée au moment du design ou au moment de l’exécution dans des projets au niveau du document. Vous pouvez également redimensionner des plages nommées au moment de l’exécution dans des compléments VSTO de niveau application.  
   
- This topic describes the following tasks:  
+ Cette rubrique décrit les tâches suivantes :  
   
--   [Resizing NamedRange controls at design time](#designtime)  
+-   [Redimensionnement de contrôles NamedRange au moment du design](#designtime)  
   
--   [Resizing NamedRange controls at run time in a document-level project](#runtimedoclevel)  
+-   [Redimensionnement de contrôles NamedRange au moment de l’exécution dans un projet au niveau du document](#runtimedoclevel)  
   
--   [Resizing NamedRange controls at run time in an VSTO Add-in project](#runtimeaddin)  
+-   [Redimensionnement de contrôles NamedRange au moment de l’exécution dans un projet de complément VSTO](#runtimeaddin)  
   
 ##  <a name="designtime"></a> Resizing NamedRange Controls at Design Time  
- You can resize a named range by redefining its size in the **Define Name** dialog box.  
+ Vous pouvez redimensionner une plage nommée en redéfinissant sa taille dans la boîte de dialogue **Définir un nom** .  
   
-#### <a name="to-resize-a-named-range-by-using-the-define-name-dialog-box"></a>To resize a named range by using the Define Name dialog box  
+#### <a name="to-resize-a-named-range-by-using-the-define-name-dialog-box"></a>Pour redimensionner une plage nommée à l’aide de la boîte de dialogue Définir un nom  
   
-1.  Right-click a <xref:Microsoft.Office.Tools.Excel.NamedRange> control.  
+1.  Cliquez avec le bouton droit sur un contrôle <xref:Microsoft.Office.Tools.Excel.NamedRange> .  
   
-2.  Click **Manage Named Ranges** on the shortcut menu.  
+2.  Cliquez dans le menu contextuel sur **Gérer les plages nommées** .  
   
-     The **Define Name** dialog box appears.  
+     La boîte de dialogue **Définir un nom** s’affiche.  
   
-3.  Select the named range you want to resize.  
+3.  Sélectionnez la plage nommée à redimensionner.  
   
-4.  Clear the **Refers to** box.  
+4.  Effacez le contenu de la zone **Fait référence à** .  
   
-5.  Select the cells you want to use to define the size of the named range.  
+5.  Sélectionnez les cellules que vous souhaitez utiliser pour définir la taille de la plage nommée.  
   
-6.  Click **OK**.  
+6.  Cliquez sur **OK**.  
   
 ##  <a name="runtimedoclevel"></a> Resizing NamedRange Controls at Run Time in a Document-Level Project  
- You can resize a named range programmatically by using the <xref:Microsoft.Office.Tools.Excel.NamedRange.RefersTo%2A> property.  
+ Vous pouvez redimensionner une plage nommée par programmation à l’aide de la propriété <xref:Microsoft.Office.Tools.Excel.NamedRange.RefersTo%2A> .  
   
 > [!NOTE]  
->  In the **Properties** window, the <xref:Microsoft.Office.Tools.Excel.NamedRange.RefersTo%2A> property is marked as read-only.  
+>  Dans la fenêtre **Propriétés** , la propriété <xref:Microsoft.Office.Tools.Excel.NamedRange.RefersTo%2A> est marquée comme étant en lecture seule.  
   
-#### <a name="to-resize-a-named-range-programmatically"></a>To resize a named range programmatically  
+#### <a name="to-resize-a-named-range-programmatically"></a>Pour redimensionner une plage nommée par programmation  
   
-1.  Create a <xref:Microsoft.Office.Tools.Excel.NamedRange> control on cell **A1** of `Sheet1`.  
+1.  Créez un contrôle <xref:Microsoft.Office.Tools.Excel.NamedRange> dans la cellule **A1** de `Sheet1`.  
   
-     [!code-csharp[Trin_VstcoreHostControlsExcel#4](../vsto/codesnippet/CSharp/Trin_VstcoreHostControlsExcelCS/Sheet1.cs#4)]  [!code-vb[Trin_VstcoreHostControlsExcel#4](../vsto/codesnippet/VisualBasic/Trin_VstcoreHostControlsExcelVB/Sheet1.vb#4)]  
+     [!code-csharp[Trin_VstcoreHostControlsExcel#4](../vsto/codesnippet/CSharp/Trin_VstcoreHostControlsExcelCS/Sheet1.cs#4)]
+     [!code-vb[Trin_VstcoreHostControlsExcel#4](../vsto/codesnippet/VisualBasic/Trin_VstcoreHostControlsExcelVB/Sheet1.vb#4)]  
   
-2.  Resize the named range to include cell **B1**.  
+2.  Redimensionnez la plage nommée pour inclure la cellule **B1**.  
   
-     [!code-csharp[Trin_VstcoreHostControlsExcel#5](../vsto/codesnippet/CSharp/Trin_VstcoreHostControlsExcelCS/Sheet1.cs#5)]  [!code-vb[Trin_VstcoreHostControlsExcel#5](../vsto/codesnippet/VisualBasic/Trin_VstcoreHostControlsExcelVB/Sheet1.vb#5)]  
+     [!code-csharp[Trin_VstcoreHostControlsExcel#5](../vsto/codesnippet/CSharp/Trin_VstcoreHostControlsExcelCS/Sheet1.cs#5)]
+     [!code-vb[Trin_VstcoreHostControlsExcel#5](../vsto/codesnippet/VisualBasic/Trin_VstcoreHostControlsExcelVB/Sheet1.vb#5)]  
   
 ##  <a name="runtimeaddin"></a> Resizing NamedRange Controls at Run Time in an VSTO Add-in project  
- You can resize a <xref:Microsoft.Office.Tools.Excel.NamedRange> control on any open worksheet at run time. For more information about how to add a <xref:Microsoft.Office.Tools.Excel.NamedRange> control to a worksheet by using an VSTO Add-in, see [How to: Add NamedRange Controls to Worksheets](../vsto/how-to-add-namedrange-controls-to-worksheets.md).  
+ Vous pouvez redimensionner un contrôle <xref:Microsoft.Office.Tools.Excel.NamedRange> sur n’importe quelle feuille de calcul ouverte au moment de l’exécution. Pour plus d’informations sur la façon d’ajouter un contrôle <xref:Microsoft.Office.Tools.Excel.NamedRange> à une feuille de calcul à l’aide d’un complément VSTO, consultez [How to: Add NamedRange Controls to Worksheets](../vsto/how-to-add-namedrange-controls-to-worksheets.md).  
   
-#### <a name="to-resize-a-named-range-programmatically"></a>To resize a named range programmatically  
+#### <a name="to-resize-a-named-range-programmatically"></a>Pour redimensionner une plage nommée par programmation  
   
-1.  Create a <xref:Microsoft.Office.Tools.Excel.NamedRange> control on cell **A1** of `Sheet1`.  
+1.  Créez un contrôle <xref:Microsoft.Office.Tools.Excel.NamedRange> dans la cellule **A1** de `Sheet1`.  
   
-     [!code-csharp[Trin_Excel_Dynamic_Controls#10](../vsto/codesnippet/CSharp/Trin_Excel_Dynamic_Controls/ThisAddIn.cs#10)]  [!code-vb[Trin_Excel_Dynamic_Controls#10](../vsto/codesnippet/VisualBasic/Trin_Excel_Dynamic_Controls/ThisAddIn.vb#10)]  
+     [!code-csharp[Trin_Excel_Dynamic_Controls#10](../vsto/codesnippet/CSharp/Trin_Excel_Dynamic_Controls/ThisAddIn.cs#10)]
+     [!code-vb[Trin_Excel_Dynamic_Controls#10](../vsto/codesnippet/VisualBasic/Trin_Excel_Dynamic_Controls/ThisAddIn.vb#10)]  
   
-2.  Resize the named range to include cell **B1**.  
+2.  Redimensionnez la plage nommée pour inclure la cellule **B1**.  
   
-     [!code-csharp[Trin_Excel_Dynamic_Controls#11](../vsto/codesnippet/CSharp/Trin_Excel_Dynamic_Controls/ThisAddIn.cs#11)]  [!code-vb[Trin_Excel_Dynamic_Controls#11](../vsto/codesnippet/VisualBasic/Trin_Excel_Dynamic_Controls/ThisAddIn.vb#11)]  
+     [!code-csharp[Trin_Excel_Dynamic_Controls#11](../vsto/codesnippet/CSharp/Trin_Excel_Dynamic_Controls/ThisAddIn.cs#11)]
+     [!code-vb[Trin_Excel_Dynamic_Controls#11](../vsto/codesnippet/VisualBasic/Trin_Excel_Dynamic_Controls/ThisAddIn.vb#11)]  
   
-## <a name="see-also"></a>See Also  
- [Extending Word Documents and Excel Workbooks in VSTO Add-ins at Run Time](../vsto/extending-word-documents-and-excel-workbooks-in-vsto-add-ins-at-run-time.md)   
- [Adding Controls to Office Documents at Run Time](../vsto/adding-controls-to-office-documents-at-run-time.md)   
- [Controls on Office Documents](../vsto/controls-on-office-documents.md)   
+## <a name="see-also"></a>Voir aussi  
+ [Extension de Documents Word et classeurs Excel dans des Compléments VSTO au moment de l’exécution](../vsto/extending-word-documents-and-excel-workbooks-in-vsto-add-ins-at-run-time.md)   
+ [Ajout de contrôles aux Documents Office au moment de l’exécution](../vsto/adding-controls-to-office-documents-at-run-time.md)   
+ [Contrôles sur des Documents Office](../vsto/controls-on-office-documents.md)   
  [Host Items and Host Controls Overview](../vsto/host-items-and-host-controls-overview.md)   
- [Automating Excel by Using Extended Objects](../vsto/automating-excel-by-using-extended-objects.md)   
- [NamedRange Control](../vsto/namedrange-control.md)   
- [How to: Add NamedRange Controls to Worksheets](../vsto/how-to-add-namedrange-controls-to-worksheets.md)   
- [How to: Resize Bookmark Controls](../vsto/how-to-resize-bookmark-controls.md)   
- [How to: Resize ListObject Controls](../vsto/how-to-resize-listobject-controls.md)  
+ [Automatisation d’Excel à l’aide d’objets étendus](../vsto/automating-excel-by-using-extended-objects.md)   
+ [NamedRange (contrôle)](../vsto/namedrange-control.md)   
+ [Comment : ajouter des contrôles NamedRange aux feuilles de calcul](../vsto/how-to-add-namedrange-controls-to-worksheets.md)   
+ [Comment : redimensionner les contrôles Bookmark](../vsto/how-to-resize-bookmark-controls.md)   
+ [Guide pratique pour redimensionner les contrôles ListObject](../vsto/how-to-resize-listobject-controls.md)  
   
   

@@ -1,50 +1,53 @@
 ---
-title: "IDebugExtendedProperty::GetExtendedPropertyInfo | Microsoft Docs"
-ms.custom: ""
-ms.date: "01/18/2017"
-ms.prod: "windows-script-interfaces"
-ms.reviewer: ""
-ms.suite: ""
-ms.tgt_pltfrm: ""
-ms.topic: "reference"
+title: IDebugExtendedProperty::GetExtendedPropertyInfo | Documents Microsoft
+ms.custom: 
+ms.date: 01/18/2017
+ms.prod: windows-script-interfaces
+ms.reviewer: 
+ms.suite: 
+ms.tgt_pltfrm: 
+ms.topic: reference
 apiname: IDebugExtendedProperty.GetExtendedPropertyInfo
 apilocation: scrobj.dll
-helpviewer_keywords: 
-  - "IDebugExtendedProperty::GetExtendedPropertyInfo"
+helpviewer_keywords: IDebugExtendedProperty::GetExtendedPropertyInfo
 ms.assetid: 56edf538-5082-4653-82b6-e6640d6f61ba
-caps.latest.revision: 8
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 8
+caps.latest.revision: "8"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: 7109346dd8189395cfdd366ff622dfac00744382
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.translationtype: MT
+ms.contentlocale: fr-FR
+ms.lasthandoff: 10/27/2017
 ---
-# IDebugExtendedProperty::GetExtendedPropertyInfo
-Récupère des informations étendues pour une propriété étendue, qui est plus d'informations que `IDebugProperty`plus simple.  
+# <a name="idebugextendedpropertygetextendedpropertyinfo"></a>IDebugExtendedProperty::GetExtendedPropertyInfo
+Récupère les informations étendues pour une propriété étendue, qui est le plus d’informations que le plus simple `IDebugProperty`.  
   
-## Syntaxe  
+## <a name="syntax"></a>Syntaxe  
   
 ```  
 HRESULT GetExtendedPropertyInfo(  
-   EX_DBGPROP_INFO_FLAGS  dwFieldSpec,  
-   UINT  nRadix,  
-   ExtendedDebugPropertyInfo*  pExtendedPropertyInfo  
+   EX_DBGPROP_INFO_FLAGS  dwFieldSpec,  
+   UINT  nRadix,  
+   ExtendedDebugPropertyInfo*  pExtendedPropertyInfo  
 );  
 ```  
   
-#### Paramètres  
+#### <a name="parameters"></a>Paramètres  
  `dwFieldSpec`  
- \[in\]  Spécifie les constantes d'EX\_DBGPROP\_INFO\_FLAGS qui déterminent les champs à remplir la structure d' `ExtendedDebugPropertyInfo` .  
+ [in] Spécifie les constantes EX_DBGPROP_INFO_FLAGS qui déterminent les champs à être rempli le `ExtendedDebugPropertyInfo` structure.  
   
  `nRadix`  
- \[in\]  Radis à utiliser en interprétant les informations numériques.  
+ [in] Base à utiliser pour l’interprétation des informations numériques.  
   
  `pExtendedPropertyInfo`  
- \[out\]  Retourne la structure d' `ExtendedDebugPropertyInfo` qui décrit la propriété.  
+ [out] Retourne le `ExtendedDebugPropertyInfo` structure qui décrit la propriété.  
   
-## Valeur de retour  
- Retourne `HRESULT`valide, en général `S_OK`.  
+## <a name="return-value"></a>Valeur de retour  
+ Retourne un élément valide `HRESULT`, généralement `S_OK`.  
   
-## Voir aussi  
- [IDebugExtendedProperty, interface](../../winscript/reference/idebugextendedproperty-interface.md)   
- [EX\_DBGPROP\_INFO\_FLAGS](../../winscript/reference/ex-dbgprop-info-flags.md)   
- [ExtendedDebugPropertyInfo, structure](../../winscript/reference/extendeddebugpropertyinfo-structure.md)
+## <a name="see-also"></a>Voir aussi  
+ [IDebugExtendedProperty (Interface)](../../winscript/reference/idebugextendedproperty-interface.md)   
+ [EX_DBGPROP_INFO_FLAGS](../../winscript/reference/ex-dbgprop-info-flags.md)   
+ [Structure ExtendedDebugPropertyInfo](../../winscript/reference/extendeddebugpropertyinfo-structure.md)

@@ -4,35 +4,19 @@ ms.custom:
 ms.date: 11/09/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-sdk
+ms.technology: vs-ide-sdk
 ms.tgt_pltfrm: 
 ms.topic: article
 ms.assetid: 54d5af60-0b44-4ae1-aa57-45aa03f89f3d
-caps.latest.revision: 1
+caps.latest.revision: "1"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-translation.priority.mt:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
+ms.openlocfilehash: 1d474374a0c7603bc9b6995783bbed96c81c8907
+ms.sourcegitcommit: fb751e41929f031d1a9247bc7c8727312539ad35
 ms.translationtype: MT
-ms.sourcegitcommit: 17defdd0b96ec1c3273fc6b845af844b031a4a17
-ms.openlocfilehash: ac7a99673eb4dc23dd53a46c3c93fd735325c255
-ms.contentlocale: fr-fr
-ms.lasthandoff: 09/06/2017
-
+ms.contentlocale: fr-FR
+ms.lasthandoff: 11/15/2017
 ---
 # <a name="changes-in-visual-studio-2017-extensibility"></a>Modifications apportées à l’extensibilité de Visual Studio 2017
 
@@ -123,8 +107,3 @@ La plupart des assemblys principaux de Visual Studio ne sont plus installés dan
 * Composants externes pour trouver l’emplacement de Visual Studio [en suivant les instructions fournies ici](https://blogs.msdn.microsoft.com/heaths/2016/09/15/changes-to-visual-studio-15-setup).
 * Nous recommandons d’utilisent des composants externes les [Gestionnaire de paramètres externe](https://msdn.microsoft.com/en-us/library/microsoft.visualstudio.settings.externalsettingsmanager.aspx) au lieu de lecture/écriture directement aux clés de Registre de Visual Studio.
 * Vérifiez si les composants à l’aide de votre extension a peut-être implémenté une autre technique pour l’inscription. Par exemple, les extensions de débogueur peuvent être en mesure de tirer parti de la nouvelle [msvsmon d’enregistrement du fichier JSON COM](migrate-debugger-COM-registration.md).
-
-## <a name="change-lightweight-solution-load"></a>Modification : Charge de Solution légère
-
-Charger Solution légère (LSL) réduit le temps de chargement de solutions en chargeant pas totalement projets jusqu'à ce que l’utilisateur commence à fonctionner avec les. Cela peut avoir un impact extensions qui supposent qu'un projet est complètement chargé. Consultez [Lightweight Solution charge](lightweight-solution-load-extension-impact.md) pour savoir si votre extension peut être affectée et obtenir des instructions sur la mise à jour de votre extension.
-

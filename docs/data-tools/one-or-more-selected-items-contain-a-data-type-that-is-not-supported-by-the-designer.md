@@ -1,5 +1,5 @@
 ---
-title: One or more selected items contain a data type that is not supported by the designer | Microsoft Docs
+title: "Un ou plusieurs éléments sélectionnés contiennent un type de données qui n’est pas pris en charge par le Concepteur | Documents Microsoft"
 ms.custom: 
 ms.date: 11/04/2016
 ms.reviewer: 
@@ -7,42 +7,26 @@ ms.suite:
 ms.tgt_pltfrm: 
 ms.topic: article
 ms.assetid: 71dcd4f9-2946-42c5-9ce4-99c819ea2785
-caps.latest.revision: 4
+caps.latest.revision: "4"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-translation.priority.ht:
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- ru-ru
-- zh-cn
-- zh-tw
-translation.priority.mt:
-- cs-cz
-- pl-pl
-- pt-br
-- tr-tr
-ms.translationtype: HT
-ms.sourcegitcommit: 33a857c2d8585e2e8da9bcd9158190366a3b6830
-ms.openlocfilehash: 06c061ee86a9e71ed48b5b41ba5c81cfa9190e22
-ms.contentlocale: fr-fr
-ms.lasthandoff: 09/07/2017
-
+ms.technology: vs-data-tools
+ms.openlocfilehash: 31e42bfcaf8904932d4ea864a608c943f638428c
+ms.sourcegitcommit: ee42a8771f0248db93fd2e017a22e2506e0f9404
+ms.translationtype: MT
+ms.contentlocale: fr-FR
+ms.lasthandoff: 11/09/2017
 ---
-# <a name="one-or-more-selected-items-contain-a-data-type-that-is-not-supported-by-the-designer"></a>One or more selected items contain a data type that is not supported by the designer
-One or more of the items dragged from **Server Explorer**/**Database Explorer** onto the [!INCLUDE[vs_ordesigner_short](../data-tools/includes/vs_ordesigner_short_md.md)] contains a data type that is not supported by the [!INCLUDE[vs_ordesigner_short](../data-tools/includes/vs_ordesigner_short_md.md)] (for example, [CLR User-Defined Types](http://msdn.microsoft.com/Library/9f70e0b0-3a0d-4eb1-b914-07a5d0c167c2)).  
+# <a name="one-or-more-selected-items-contain-a-data-type-that-is-not-supported-by-the-designer"></a>Un ou plusieurs éléments sélectionnés contient un type de données non pris en charge par le concepteur
+Un ou plusieurs des éléments déplacés à partir de **l’Explorateur de serveurs**/**l’Explorateur de base de données** sur la [!INCLUDE[vs_ordesigner_short](../data-tools/includes/vs_ordesigner_short_md.md)] contient un type de données qui n’est pas pris en charge par le [!INCLUDE[vs_ordesigner_short](../data-tools/includes/vs_ordesigner_short_md.md)] (par exemple, [Types CLR définis par l’utilisateur](http://msdn.microsoft.com/Library/9f70e0b0-3a0d-4eb1-b914-07a5d0c167c2)).  
   
-### <a name="to-correct-this-error"></a>To correct this error  
+### <a name="to-correct-this-error"></a>Pour corriger cette erreur  
   
-1.  Create a view that is based on the desired table and that does not include the unsupported data type.  
+1.  Créez une vue basée sur la table souhaitée qui n'inclut pas le type de données non pris en charge.  
   
-2.  Drag the view from **Server Explorer**/**Database Explorer** onto the designer.  
+2.  Faites glisser la vue à partir de **l’Explorateur de serveurs**/**l’Explorateur de base de données** sur le concepteur.  
   
-## <a name="see-also"></a>See Also  
- [LINQ to SQL Tools in Visual Studio](../data-tools/linq-to-sql-tools-in-visual-studio2.md)   
- [Walkthrough: Creating LINQ to SQL Classes (O-R Designer)](how-to-create-linq-to-sql-classes-mapped-to-tables-and-views-o-r-designer.md)   
- [LINQ to SQL](/dotnet/framework/data/adonet/sql/linq/index)
+## <a name="see-also"></a>Voir aussi
+[Messages du Concepteur O/R](../data-tools/o-r-designer-messages.md)  
+[LINQ to SQL des outils dans Visual Studio](../data-tools/linq-to-sql-tools-in-visual-studio2.md)

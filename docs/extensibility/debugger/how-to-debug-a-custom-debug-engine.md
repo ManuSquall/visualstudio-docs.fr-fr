@@ -1,78 +1,80 @@
 ---
-title: "Comment : D&#233;boguer un moteur de d&#233;bogage personnalis&#233; | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-helpviewer_keywords: 
-  - "moteurs de débogage, le débogage"
-  - "débogage [Debugging SDK], les moteurs de débogage personnalisés"
+title: "Comment : Déboguer un moteur de débogage personnalisé | Documents Microsoft"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+helpviewer_keywords:
+- debug engines, debugging
+- debugging [Debugging SDK], custom debug engines
 ms.assetid: df27a8d6-3938-45ff-b47f-b684e80b38a0
-caps.latest.revision: 9
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 9
+caps.latest.revision: "9"
+author: gregvanl
+ms.author: gregvanl
+manager: ghogen
+ms.openlocfilehash: 6a91dbb7797d69ec71b776eeef5e34e0ced21ad9
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: fr-FR
+ms.lasthandoff: 10/31/2017
 ---
-# Comment : D&#233;boguer un moteur de d&#233;bogage personnalis&#233;
-[!INCLUDE[vs2017banner](../../code-quality/includes/vs2017banner.md)]
-
-un type de projet lance le moteur de débogage \(DE\) de la méthode d' <xref:Microsoft.VisualStudio.Shell.Interop.IVsDebuggableProjectCfg.DebugLaunch%2A> .  Cela signifie que le du est lancé sous le contrôle de l'instance de [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] du type de projet.  Toutefois, cette instance de [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] impossible de déboguer le De.  Voici les étapes pour vous permettre de déboguer votre personnalisé De.  
+# <a name="how-to-debug-a-custom-debug-engine"></a>Comment : Déboguer un moteur de débogage personnalisé
+Un type de projet lance le moteur de débogage (DE) à partir de la <xref:Microsoft.VisualStudio.Shell.Interop.IVsDebuggableProjectCfg.DebugLaunch%2A> (méthode). Cela signifie que la D’est démarrée sous le contrôle de l’instance de [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] contrôle le type de projet. Toutefois, cette instance de [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] ne peut pas déboguer le DE. Voici les étapes permettant de vous permettent de déboguer votre DE personnalisé.  
   
 > [!NOTE]
->  :     Procédure dans « debug du moteur de débogage personnalisé », vous devez attendre le du pour commencer avant de pouvoir se joindre à celui\-ci.  Si vous placez un message vers le début de votre De qui s'affiche lorsque le De démarre, vous pouvez à ce stade puis attacher désactivez le message à continuer.  de cette façon, vous pouvez intercepter tout le DE events.  
+>  : Dans la procédure « Débogage un personnalisé déboguer moteur », vous devez attendre le DE démarrer avant que vous pouvez attacher à celui-ci. Si vous placez une zone de message vers le début de votre DE qui s’affiche au démarrage de la DE, vous pouvez attacher à ce stade et désactivez la boîte de message pour continuer. De cette façon, vous pouvez intercepter tous les événements DE.  
   
 > [!WARNING]
->  Vous devez installer le débogage distant avant de tenter les procédures suivantes.  Pour plus d'informations, consultez [Débogage distant](../../debugger/remote-debugging.md).  
+>  Vous devez disposer de débogage à distance est installé avant de commencer les procédures suivantes. Consultez [débogage distant](../../debugger/remote-debugging.md) pour plus d’informations.  
   
-### déboguer un moteur de débogage personnalisé  
+### <a name="debugging-a-custom-debug-engine"></a>Débogage d’un moteur de débogage personnalisé  
   
-1.  début msvsmon.exe, Remote Debugging Monitor.  
+1.  Démarrez msvsmon.exe, le Remote Debug Monitor.  
   
-2.  Dans le menu d' **Outils** dans msvsmon.exe, sélectionnez **Options** pour ouvrir la boîte de dialogue d' **Options** .  
+2.  À partir de la **outils** menu msvsmon.exe, sélectionnez **Options** pour ouvrir le **Options** boîte de dialogue.  
   
-3.  Sélectionnez l'option « aucune authentification » et cliquez sur **OK**.  
+3.  Sélectionnez l’option « Aucune authentification » et cliquez sur **OK**.  
   
-4.  Démarrez une instance de [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] et ouvrez votre custom DE project.  
+4.  Démarrez une instance de [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] et ouvrez votre projet DE personnalisé.  
   
-5.  Démarrez une deuxième instance de [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] et ouvrez votre projet personnalisé qui lance le De \(pour le développement, il s'agit généralement dans la ruche expérimentale de Registre configuré lorsque VSIP est installé\).  
+5.  Démarrez une deuxième instance de [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] et ouvrez votre projet personnalisé qui lance le DE (pour le développement, il s’agit généralement de la ruche du Registre expérimentale configuré lors de l’installation de VSIP).  
   
-6.  Dans cette seconde instance de [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)], charger un fichier source de votre projet personnalisé et commencez le programme à déboguer.  Attendez quelques minutes pour permettre le De à charger, ou l'attente jusqu'à un point d'arrêt est atteint.  
+6.  Dans cette deuxième instance de [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)], de charger un fichier source à partir de votre projet personnalisé et démarrez le programme à déboguer. Attendez quelques instants pour autoriser le DE chargement, ou patientez jusqu'à ce qu’un point d’arrêt est atteint.  
   
-7.  En premier lieu de [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] \(avec votre DE project\), sélectionnez **Attacher au processus** dans le menu de **Débogage** .  
+7.  Dans la première instance de [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] (avec votre projet DE), sélectionnez **attacher au processus** à partir de la **déboguer** menu.  
   
-8.  dans la boîte de dialogue d' **Attacher au processus** , modifiez **Transport** à **Distant \(natif uniquement sans authentification\)**.  
+8.  Dans le **attacher au processus** boîte de dialogue, choisissez le **Transport** à **distant (natif uniquement avec aucune authentification)**.  
   
-9. modifiez **Qualificateur** au nom de votre ordinateur \(remarque : il existe un historique des entrées, vous devez entrer dans ce nom qu'une seule fois\).  
+9. Modifier la **qualificateur** pour le nom de votre ordinateur (Remarque : est un historique des entrées, donc vous devez taper une seule fois dans ce nom).  
   
-10. dans la liste de **Processus disponibles** , sélectionnez l'instance de votre De qui exécute et cliquez sur le bouton d' **Attacher** .  
+10. Dans le **processus disponibles** , sélectionnez l’instance de votre DE est en cours d’exécution, puis cliquez sur le **attacher** bouton.  
   
-11. Une fois les symboles aient chargé dans votre DE, placez des points d'arrêt dans votre code de.  
+11. Après le chargement des symboles dans vos DE, placez des points d’arrêt dans votre code DE.  
   
 12. Chaque fois que vous arrêtez et redémarrez le processus de débogage, répétez les étapes 6 à 10.  
   
-### Débogage d'un type personnalisé de projet  
+### <a name="debugging-a-custom-project-type"></a>Débogage d’un Type de projet personnalisés  
   
-1.  Démarrez [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] dans la ruche normale de Registre et chargez votre projet de type de projet \(c'est, la source à votre type de projet, pas une instanciation de votre type de projet\).  
+1.  Démarrer [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] dans la ruche du Registre normal et le chargement de votre projet type projet (il s’agit, la source de votre type de projet, pas une instanciation de votre type de projet).  
   
-2.  Ouvrez les propriétés et accédez à **Débogage** la page.  Pour **Commande**, tapez le chemin d'accès à [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] l'IDE \(par défaut, la valeur est *\[lecteur\]*\\Program Files\\Microsoft [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 8 \\Common7\\IDE \\ devenv.exe\).  
+2.  Ouvrez les propriétés du projet et accédez à la **déboguer** page. Pour le **commande**, tapez le chemin d’accès à la [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] IDE (par défaut, il s’agit de *[lecteur]*\Program Files\Microsoft [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 8\Common7\IDE\devenv.exe).  
   
-3.  Pour **Arguments de la commande**, tapez `/rootsuffix exp` pour la ruche expérimentale de Registre \(créée lorsque VSIP a été installé\).  
+3.  Pour le **Arguments de commande**, type `/rootsuffix exp` pour la ruche du Registre expérimentale (créée lors de l’installation VSIP).  
   
 4.  Cliquez sur **OK** pour accepter les modifications.  
   
-5.  Démarrez votre type de projet en appuyant sur F5.  Cette opération permet d'activer une deuxième instance de [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)].  
+5.  Démarrez votre type de projet en appuyant sur F5. Cette action lance une deuxième instance de [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)].  
   
-6.  À ce stade, vous pouvez placer des points d'arrêt dans votre code source du type de projet.  
+6.  À ce stade, vous pouvez placer des points d’arrêt dans votre code de source de type de projet.  
   
-7.  Dans la deuxième instance de [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)], la charge ou créent une instance de votre type de projet.  Lors de le chargement ou la conception, vos points d'arrêt peuvent être correspondance.  
+7.  Dans la deuxième instance de [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)], charger ou créer une nouvelle instance de votre type de projet. Pendant la création ou de charge, vos points d’arrêt peuvent être atteint.  
   
-8.  déboguez votre type de projet.  
+8.  Déboguer votre type de projet.  
   
-9. Si vous choisissez de déboguer le processus de lancer un De, vous pouvez exécuter les étapes procédure dans « debug du moteur de débogage personnalisé » pour attacher votre De une fois qu'il est lancé.  Cela présente trois instances d'effectuer de [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] : un pour votre source de type de projet, seconde pour votre type instancié de projet, et une troisième attaché à votre De.  
+9. Si vous choisissez de déboguer le processus de lancement d’un DE, vous pouvez effectuer les étapes de la procédure « Débogage un personnalisé déboguer moteur » à attacher à votre DE après son lancement. Cela vous donnera trois instances de [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] en cours d’exécution : un pour votre source de type de projet, une seconde pour votre type de projet instancié et un troisième attaché à votre DE.  
   
-## Voir aussi  
- [Création d'un moteur de débogage personnalisé](../../extensibility/debugger/creating-a-custom-debug-engine.md)
+## <a name="see-also"></a>Voir aussi  
+ [Création d’un moteur de débogage personnalisé](../../extensibility/debugger/creating-a-custom-debug-engine.md)

@@ -4,40 +4,24 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-sdk
+ms.technology: vs-ide-sdk
 ms.tgt_pltfrm: 
 ms.topic: article
-f1_keywords:
-- SccBackgroundGet
-helpviewer_keywords:
-- SccBackgroundGet function
+f1_keywords: SccBackgroundGet
+helpviewer_keywords: SccBackgroundGet function
 ms.assetid: 69817e52-b9ac-4f4d-820b-2cc9c384f0dc
-caps.latest.revision: 13
+caps.latest.revision: "13"
+author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-translation.priority.mt:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
-translationtype: Machine Translation
-ms.sourcegitcommit: 5db97d19b1b823388a465bba15d057b30ff0b3ce
-ms.openlocfilehash: 8bc845c2ef3cb4ece3e52dca272fdc75208e8dbd
-ms.lasthandoff: 02/22/2017
-
+ms.openlocfilehash: 85b700f0cb1e3a364cae69ff6c628151ea6a7bd3
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: fr-FR
+ms.lasthandoff: 10/31/2017
 ---
 # <a name="sccbackgroundget-function"></a>SccBackgroundGet (fonction)
-Cette fonction extrait à partir du contrôle de code source chaque des fichiers spécifiés sans aucune interaction utilisateur.  
+Cette fonction récupère à partir du contrôle de code source chaque des fichiers spécifiés sans aucune interaction utilisateur.  
   
 ## <a name="syntax"></a>Syntaxe  
   
@@ -56,10 +40,10 @@ SCCRTN SccBackgroundGet(
  [in] Le pointeur de contexte plug-in de contrôle de code source.  
   
  nFiles  
- [in] Nombre de fichiers spécifié dans le `lpFileNames` tableau.  
+ [in] Nombre de fichiers spécifiés dans le `lpFileNames` tableau.  
   
  lpFileNames  
- [dans, out] Tableau de noms de fichiers à récupérer.  
+ [dans, out] Tableau des noms de fichiers à récupérer.  
   
 > [!NOTE]
 >  Les noms doivent être des noms qualifiés complets.  
@@ -71,16 +55,16 @@ SCCRTN SccBackgroundGet(
  [in] Une valeur unique associée à cette opération.  
   
 ## <a name="return-value"></a>Valeur de retour  
- L’implémentation de plug-in de contrôle de source de cette fonction est censée renvoyer une des valeurs suivantes :  
+ L’implémentation de plug-in de contrôle de source de cette fonction est censée retourner l’une des valeurs suivantes :  
   
 |Valeur|Description|  
 |-----------|-----------------|  
-|SCC_OK|Opération réussie.|  
-|SCC_E_BACKGROUNDGETINPROGRESS|Une récupération en arrière-plan est déjà en cours (le plug-in de contrôle de code source doit retourner ce uniquement s’il ne prend pas en charge les opérations de traitement simultané).|  
-|SCC_I_OPERATIONCANCELED|Opération annulée avant terminées.|  
+|SCC_OK|Opération achevée avec succès.|  
+|SCC_E_BACKGROUNDGETINPROGRESS|Une récupération en arrière-plan est déjà en cours (le plug-in de contrôle de code source doit retourner ce uniquement si elle ne prend pas en charge les opérations de traitement simultané).|  
+|SCC_I_OPERATIONCANCELED|Opération a été annulée avant de s’exécuter.|  
   
-## <a name="remarks"></a>Notes  
- Cette fonction est toujours appelée sur un thread différent de celui qui a chargé le plug-in de contrôle de code source. Cette fonction n’est pas censée retourner jusqu'à ce que l’opération est terminée ; Toutefois, il peut être appelé plusieurs fois avec plusieurs listes de fichiers, tous en même temps.  
+## <a name="remarks"></a>Remarques  
+ Cette fonction est toujours appelée sur un thread différent de celui qui a chargé le plug-in de contrôle de code source. Cette fonction n’est pas censée retourner jusqu'à ce qu’il est terminé ; Toutefois, il peut être appelée plusieurs fois avec plusieurs listes de fichiers, tous en même temps.  
   
  L’utilisation de la `dwFlags` argument est le même que le [SccGet](../extensibility/sccget-function.md).  
   

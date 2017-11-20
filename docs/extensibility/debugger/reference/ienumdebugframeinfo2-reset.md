@@ -1,46 +1,29 @@
 ---
-title: IEnumDebugFrameInfo2::Reset | Microsoft Docs
+title: IEnumDebugFrameInfo2::Reset | Documents Microsoft
 ms.custom: 
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-sdk
+ms.technology: vs-ide-sdk
 ms.tgt_pltfrm: 
 ms.topic: article
-f1_keywords:
-- IEnumDebugFrameInfo2::Reset
-helpviewer_keywords:
-- IEnumDebugFrameInfo2::Reset
+f1_keywords: IEnumDebugFrameInfo2::Reset
+helpviewer_keywords: IEnumDebugFrameInfo2::Reset
 ms.assetid: e149b559-f072-480b-9552-a452b147f3a8
-caps.latest.revision: 9
+caps.latest.revision: "9"
+author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-translation.priority.mt:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
+ms.openlocfilehash: 26be0ca97b032dae3c13162f2218987fc076f0f2
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
 ms.translationtype: MT
-ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
-ms.openlocfilehash: 39faf71d8a9147f2e4ae33b316eca343739cd413
-ms.contentlocale: fr-fr
-ms.lasthandoff: 08/28/2017
-
+ms.contentlocale: fr-FR
+ms.lasthandoff: 10/31/2017
 ---
 # <a name="ienumdebugframeinfo2reset"></a>IEnumDebugFrameInfo2::Reset
-Resets the enumeration to the first element.  
+Réinitialise l’énumération au premier élément.  
   
-## <a name="syntax"></a>Syntax  
+## <a name="syntax"></a>Syntaxe  
   
 ```cpp  
 HRESULT Reset(  
@@ -52,11 +35,11 @@ HRESULT Reset(
 int Reset();  
 ```  
   
-## <a name="return-value"></a>Return Value  
- If successful, returns `S_OK`; otherwise, returns an error code.  
+## <a name="return-value"></a>Valeur de retour  
+ En cas de réussite, retourne `S_OK`; sinon, retourne un code d’erreur.  
   
-## <a name="remarks"></a>Remarks  
- After this method is called, the next call to the [Next](../../../extensibility/debugger/reference/ienumdebugframeinfo2-next.md) method returns the first element of the enumeration.  
+## <a name="remarks"></a>Remarques  
+ Une fois que cette méthode est appelée, l’appel suivant à la [suivant](../../../extensibility/debugger/reference/ienumdebugframeinfo2-next.md) méthode retourne le premier élément de l’énumération.  
   
-## <a name="see-also"></a>See Also  
+## <a name="see-also"></a>Voir aussi  
  [IEnumDebugFrameInfo2](../../../extensibility/debugger/reference/ienumdebugframeinfo2.md)

@@ -1,83 +1,82 @@
 ---
-title: "DataKind | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-debug"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "DataKind (énumération)"
+title: DataKind | Documents Microsoft
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-debug
+ms.tgt_pltfrm: 
+ms.topic: article
+dev_langs: C++
+helpviewer_keywords: DataKind enumeration
 ms.assetid: b64be708-22d6-4360-99e7-8f4e6b196de7
-caps.latest.revision: 8
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 8
+caps.latest.revision: "8"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: 6e9ffa36facb3c7f64f7eb2c0b96ef5209f70c78
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: fr-FR
+ms.lasthandoff: 10/31/2017
 ---
-# DataKind
-[!INCLUDE[vs2017banner](../../code-quality/includes/vs2017banner.md)]
-
-indique la portée particulière d'une valeur de données.  
+# <a name="datakind"></a>DataKind
+Indique l’étendue spécifique d’une valeur de données.  
   
-## Syntaxe  
+## <a name="syntax"></a>Syntaxe  
   
-```cpp#  
-enum DataKind {   
-   DataIsUnknown,  
-   DataIsLocal,  
-   DataIsStaticLocal,  
-   DataIsParam,  
-   DataIsObjectPtr,  
-   DataIsFileStatic,  
-   DataIsGlobal,  
-   DataIsMember,  
-   DataIsStaticMember,  
-   DataIsConstant  
+```C++  
+enum DataKind {   
+   DataIsUnknown,  
+   DataIsLocal,  
+   DataIsStaticLocal,  
+   DataIsParam,  
+   DataIsObjectPtr,  
+   DataIsFileStatic,  
+   DataIsGlobal,  
+   DataIsMember,  
+   DataIsStaticMember,  
+   DataIsConstant  
 };  
 ```  
   
-## Éléments  
+## <a name="elements"></a>Éléments  
  DataIsUnknown  
- le symbole de données ne peut pas être déterminé.  
+ Symbole de données ne peut pas être déterminé.  
   
  DataIsLocal  
- l'élément de données est une variable locale.  
+ Élément de données est une variable locale.  
   
  DataIsStaticLocal  
- l'élément de données est une variable locale statique.  
+ Élément de données est une variable locale statique.  
   
  DataIsParam  
- l'élément de données est un paramètre formel.  
+ Élément de données est un paramètre formel.  
   
  DataIsObjectPtr  
- l'élément de données est un pointeur d'objet \(`this`\).  
+ Élément de données est un pointeur d’objet (`this`).  
   
  DataIsFileStatic  
- l'élément de données est une variable de fichier\-scoped.  
+ Élément de données est une variable de portée de fichier.  
   
  DataIsGlobal  
- l'élément de données est une variable globale.  
+ Élément de données est une variable globale.  
   
  DataIsMember  
- L'élément de données est une variable membre objet.  
+ Élément de données est une variable de membre d’objet.  
   
  DataIsStaticMember  
- L'élément de données est une variable statique de la classe.  
+ Élément de données est une variable de classe statique.  
   
  DataIsConstant  
- l'élément de données est une valeur de constante.  
+ Élément de données est une valeur constante.  
   
-## Notes  
- Les valeurs de cette énumération sont retournées par la méthode d' [IDiaSymbol::get\_dataKind](../../debugger/debug-interface-access/idiasymbol-get-datakind.md) .  
+## <a name="remarks"></a>Remarques  
+ Les valeurs de cette énumération sont retournées par la [IDiaSymbol::get_dataKind](../../debugger/debug-interface-access/idiasymbol-get-datakind.md) (méthode).  
   
-## Configuration requise  
- en\-tête : cvconst.h  
+## <a name="requirements"></a>Spécifications  
+ En-tête : cvconst.h  
   
-## Voir aussi  
- [Énumérations et structures](../../debugger/debug-interface-access/enumerations-and-structures.md)   
- [IDiaSymbol::get\_dataKind](../../debugger/debug-interface-access/idiasymbol-get-datakind.md)
+## <a name="see-also"></a>Voir aussi  
+ [Énumérations et Structures](../../debugger/debug-interface-access/enumerations-and-structures.md)   
+ [IDiaSymbol::get_dataKind](../../debugger/debug-interface-access/idiasymbol-get-datakind.md)

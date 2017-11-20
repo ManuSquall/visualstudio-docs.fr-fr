@@ -1,5 +1,5 @@
 ---
-title: The designer cannot be modified while debugging | Microsoft Docs
+title: "Le concepteur ne peut pas être modifié pendant le débogage | Documents Microsoft"
 ms.custom: 
 ms.date: 11/04/2016
 ms.reviewer: 
@@ -7,42 +7,26 @@ ms.suite:
 ms.tgt_pltfrm: 
 ms.topic: article
 ms.assetid: 487dafe4-d57c-4be1-9e3a-bb0a8699b2fa
-caps.latest.revision: 3
+caps.latest.revision: "3"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-translation.priority.ht:
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- ru-ru
-- zh-cn
-- zh-tw
-translation.priority.mt:
-- cs-cz
-- pl-pl
-- pt-br
-- tr-tr
-ms.translationtype: HT
-ms.sourcegitcommit: 33a857c2d8585e2e8da9bcd9158190366a3b6830
-ms.openlocfilehash: f108a7917558e182a784ca933a615c9c64476e5b
-ms.contentlocale: fr-fr
-ms.lasthandoff: 09/07/2017
-
+ms.technology: vs-data-tools
+ms.openlocfilehash: 5309ce8676723b712790f061771e6d965a73ae21
+ms.sourcegitcommit: ee42a8771f0248db93fd2e017a22e2506e0f9404
+ms.translationtype: MT
+ms.contentlocale: fr-FR
+ms.lasthandoff: 11/09/2017
 ---
-# <a name="the-designer-cannot-be-modified-while-debugging"></a>The designer cannot be modified while debugging
-This message appears when an attempt is made to modify items on the O/R Designer when the application is running in debug mode. When the application is running in debug mode, the O/R Designer is read-only.  
+# <a name="the-designer-cannot-be-modified-while-debugging"></a>Le concepteur ne peut pas être modifié lors du débogage
+Ce message apparaît lors d'une tentative de modification des éléments dans le Concepteur O/R alors que l'application s'exécute en mode de débogage. Lorsque l'application s'exécute en mode de débogage, le Concepteur O/R est accessible en lecture seule.  
   
-### <a name="to-correct-this-error"></a>To correct this error  
+### <a name="to-correct-this-error"></a>Pour corriger cette erreur  
   
--   Click **Stop Debugging** on the **Debug** menu.  
+-   Cliquez sur **arrêter le débogage** sur la **déboguer** menu.  
   
-     The application stops debugging, and items in the O/R Designer can be modified.  
+     L'application cesse de déboguer et les éléments du Concepteur O/R peuvent être modifiés.  
   
-## <a name="see-also"></a>See Also  
- [LINQ to SQL Tools in Visual Studio](../data-tools/linq-to-sql-tools-in-visual-studio2.md)   
- [Walkthrough: Creating LINQ to SQL Classes (O-R Designer)](how-to-create-linq-to-sql-classes-mapped-to-tables-and-views-o-r-designer.md)   
- [LINQ to SQL](/dotnet/framework/data/adonet/sql/linq/index)
+## <a name="see-also"></a>Voir aussi
+[Messages du Concepteur O/R](../data-tools/o-r-designer-messages.md)  
+[LINQ to SQL des outils dans Visual Studio](../data-tools/linq-to-sql-tools-in-visual-studio2.md)

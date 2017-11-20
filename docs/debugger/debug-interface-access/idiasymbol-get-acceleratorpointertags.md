@@ -1,51 +1,51 @@
 ---
-title: "IDiaSymbol::get_acceleratorPointerTags | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-debug"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-dev_langs: 
-  - "C++"
+title: IDiaSymbol::get_acceleratorPointerTags | Documents Microsoft
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-debug
+ms.tgt_pltfrm: 
+ms.topic: article
+dev_langs: C++
 ms.assetid: 30e13cee-e511-49ec-affd-99b0097071b2
-caps.latest.revision: 3
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 3
+caps.latest.revision: "3"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: e8467c25c8665dfb3fc91ea29d9b99c184b7ecce
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: fr-FR
+ms.lasthandoff: 10/31/2017
 ---
-# IDiaSymbol::get_acceleratorPointerTags
-[!INCLUDE[vs2017banner](../../code-quality/includes/vs2017banner.md)]
-
-Retourne toutes les valeurs d'indicateur de pointeur d'accélérateur qui correspondent à la fonction du stub d'accélérateur C\+\+ ampère.  
+# <a name="idiasymbolgetacceleratorpointertags"></a>IDiaSymbol::get_acceleratorPointerTags
+Retourne toutes les valeurs de balise de pointeur accélérateur qui correspondent à une fonction de stub d’accélérateur C++ AMP.  
   
-## Syntaxe  
+## <a name="syntax"></a>Syntaxe  
   
-```cpp  
+```C++  
 HRESULT get_acceleratorPointerTags(   
    DWORD          cnt,  
    DWORD*         pcnt,  
    DWORD*         pPointerTags);  
 ```  
   
-#### Paramètres  
+#### <a name="parameters"></a>Paramètres  
  `cnt`  
- \[in\]  La taille du tableau de sortie `pPointerTags`.  
+ [in] La taille du tableau de sortie `pPointerTags`.  
   
  `pcnt`  
- \[out\]  Le nombre de balises de pointeur d'accélérateur dans la fonction du stub d'accélérateur C\+\+ ampère.  
+ [out] Le nombre de balises de pointeur accélérateur dans la fonction de stub d’accélérateur C++ AMP.  
   
  `pPointerTags`  
- \[out\]  Un pointeur de tableau d' `DWORD` rempli avec la balise du pointeur d'accélérateur valeurs dans la fonction du stub d'accélérateur C\+\+ ampère.  
+ [out] A `DWORD` pointeur du tableau qui est rempli avec les valeurs de balise de pointeur accélérateur dans la fonction de stub d’accélérateur C++ AMP.  
   
-## Valeur de retour  
- En cas de réussite, retourne `S_OK`; sinon, retourne `S_FALSE` ou code d'erreur.  
+## <a name="return-value"></a>Valeur de retour  
+ En cas de réussite, retourne `S_OK`; sinon, retourne `S_FALSE` ou un code d’erreur.  
   
-## Notes  
- Cette méthode est appelée sur une interface d' `IDiaSymbol` qui correspond à la fonction du stub d'accélérateur C\+\+ ampère.  
+## <a name="remarks"></a>Remarques  
+ Cette méthode est appelée sur une `IDiaSymbol` interface qui correspond à une fonction de stub d’accélérateur C++ AMP.  
   
-## Voir aussi  
+## <a name="see-also"></a>Voir aussi  
  [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

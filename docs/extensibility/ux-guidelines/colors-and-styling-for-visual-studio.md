@@ -1,37 +1,22 @@
 ---
 title: Couleurs et styles pour Visual Studio | Documents Microsoft
 ms.custom: 
-ms.date: 04/26/2017
+ms.date: 07/31/2017
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-sdk
+ms.technology: vs-ide-sdk
 ms.tgt_pltfrm: 
 ms.topic: article
 ms.assetid: 0e384ea1-4d9e-4307-8884-6e183900732c
-caps.latest.revision: 4
+caps.latest.revision: "4"
+author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-translation.priority.mt:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
-ms.translationtype: Machine Translation
-ms.sourcegitcommit: 9524ecc3cadef58821fba857de8e82e59eea9b43
-ms.openlocfilehash: 93bfad7dc919364770a7d225c09db8b432cf1be0
-ms.contentlocale: fr-fr
-ms.lasthandoff: 05/04/2017
-
+ms.openlocfilehash: ff1f5d9c7c28c63e2f1f1c0783f1032888e3c645
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: fr-FR
+ms.lasthandoff: 10/31/2017
 ---
 # <a name="colors-and-styling-for-visual-studio"></a>Couleurs et styles pour Visual Studio
 ## <a name="using-color-in-visual-studio"></a>À l’aide de la couleur dans Visual Studio  
@@ -64,12 +49,11 @@ Choisissez la méthode mieux adaptée à vos éléments d’interface utilisateu
 | Vous avez l’interface utilisateur personnalisée que vous souhaitez être cohérent avec l’environnement Visual Studio global et éléments d’interface utilisateur qui correspondent à la catégorie et la sémantique des jetons partagés. | **Couleurs partagées communes** | Noms de jeton de couleur prédéfinis existants pour les éléments d’interface utilisateur spécifiques |
 | Vous disposez d’une fonctionnalité individuelle ou un groupe de fonctionnalités et il n’existe aucune couleur partagé pour les éléments similaires. | **Couleurs personnalisées** | Noms de jeton de couleur qui sont spécifiques à une zone et pas destiné à être partagé avec toute autre interface utilisateur |
 | Vous souhaitez autoriser l’utilisateur final de personnaliser l’interface utilisateur ou du contenu (par exemple, pour les éditeurs de texte ou les fenêtres du concepteur spécialisés). | **Personnalisation de l’utilisateur final**<br /><br />**(Outils &gt; boîte de dialogue Options)** | Les paramètres définis dans la page « Polices et couleurs » de la **outils &gt; Options** boîte de dialogue ou une page spécialisée spécifique à une fonction de l’interface utilisateur. |
-| Vous disposez de l’interface utilisateur qui a été créé au format HTML. | **Daytona** | Permet à l’interface utilisateur créée au format HTML pour accéder au service de couleur et la police. |
   
 ### <a name="visual-studio-themes"></a>Thèmes Visual Studio  
 Visual Studio propose trois thèmes de couleurs différentes : clair, sombre ou bleu. Il détecte également le mode de contraste élevé, ce qui constitue un thème de couleur de l’échelle du système conçu pour l’accessibilité.  
   
-Les utilisateurs sont invités pour sélectionner un thème lors de leur première utilisation de Visual Studio et sont en mesure de basculer les thèmes ultérieurement en accédant à **outils &gt; Options &gt; environnement &gt; général** et en choisissant un nouveau thème à partir du menu de la liste déroulante « thème ».  
+Les utilisateurs sont invités pour sélectionner un thème lors de leur première utilisation de Visual Studio et sont en mesure de basculer les thèmes ultérieurement en accédant à **outils &gt; Options &gt; environnement &gt; général** et en choisissant un nouveau thème à partir de le menu déroulant « thème ».  
   
 Utilisateurs peuvent également utiliser le panneau de configuration pour basculer de leurs systèmes entières dans une de plusieurs thèmes à contraste élevé. Si un utilisateur sélectionne un thème à contraste élevé, puis le sélecteur de thème de couleur Visual Studio n’affecte plus les couleurs dans Visual Studio, bien que les modifications de thème sont enregistrées pour lorsque l’utilisateur quitte le mode de contraste élevé. Pour plus d’informations sur le mode de contraste élevé, consultez [couleurs contrastées de choix](../../extensibility/ux-guidelines/colors-and-styling-for-visual-studio.md#BKMK_ChoosingHighContrastColors).
   
@@ -94,16 +78,13 @@ Dans certains cas, vous devez autoriser l’utilisateur final de personnaliser v
   
 ![Outils &gt; boîte de dialogue Options](../../extensibility/ux-guidelines/media/0301-a_toolsoptionsdialog.png "0301-a_ToolsOptionsDialog")<br />Outils &gt; boîte de dialogue Options
   
-### <a name="web-ui-colors"></a>Couleurs de l’interface utilisateur Web  
-Il devient courante pour créer des composants de l’interface utilisateur à l’aide de HTML afin qu’ils peuvent être utilisés à la fois dans Visual Studio Online et dans Visual Studio. L’interface utilisateur écrit au format HTML doit toujours utiliser le service VSColor lors de l’exécution à l’intérieur de l’environnement Visual Studio. Pour plus d’informations sur Daytona et comment l’utiliser, consultez [Daytona et l’interface utilisateur web](../../extensibility/ux-guidelines/colors-and-styling-for-visual-studio.md#BKMK_DaytonaAndWebUI).  
-  
 ##  <a name="BKMK_TheVSColorService"></a>Le Service VSColor  
-Visual Studio fournit un service de couleur d’environnement, également appelé le service VSColor ou le service de couleur du shell. Ce service permet de lier les valeurs de couleur de vos éléments de l’interface utilisateur à un jeu contenant des couleurs pour chaque thème de couleurs de nom-valeur. Le service de VSColor doit être utilisé pour tous les éléments d’interface utilisateur, afin que les couleurs changent pour refléter le thème sélectionné par l’utilisateur actuel et automatiquement afin que l’interface utilisateur liée au service de couleur d’environnement seront intègre avec les nouveaux thèmes dans les futures versions de Visual Studio.  
+Visual Studio fournit un service de couleur d’environnement, également appelé le service VSColor ou le service de couleur du shell. Ce service vous permet de lier les valeurs de couleur de vos éléments de l’interface utilisateur à un jeu contenant des couleurs pour chaque thème de couleurs de nom-valeur. Le service de VSColor doit être utilisé pour tous les éléments d’interface utilisateur, afin que les couleurs changent pour refléter le thème sélectionné par l’utilisateur actuel et automatiquement afin que l’interface utilisateur liée au service de couleur d’environnement seront intègre avec les nouveaux thèmes dans les futures versions de Visual Studio.  
   
 ### <a name="how-the-service-works"></a>Comment fonctionne le service  
 Le service de couleur d’environnement lit que vscolors défini dans le .pkgdef pour le composant d’interface utilisateur. Ces VSColors sont ensuite référencés dans le balisage XAML ou du code et sont chargés par le biais du `IVsUIShell5.GetThemedColor` ou un `DynamicResource` mappage.  
   
-![Architecture de service environnement couleur](../../extensibility/ux-guidelines/media/0302-a_environmentcolorservicearchitecture.png "0302-a_EnvironmentColorServiceArchitecture")<br />Architecture de service de couleur d'environnement
+![Architecture du service de couleur environnement](../../extensibility/ux-guidelines/media/0302-a_environmentcolorservicearchitecture.png "0302-a_EnvironmentColorServiceArchitecture")<br />Architecture de service de couleur d'environnement
   
 ### <a name="accessing-the-service"></a>L’accès au service
 Il existe plusieurs façons différentes pour le service VSColor, selon le type de couleur jetons vous utilisez l’accès et le type de code que vous avez.  
@@ -301,7 +282,7 @@ Teintes pour chacun des noms de jeton autorisés sur une surface de l’éditeur
   
 Exemples de la surface de l’éditeur dans le thème bleu :  
   
-![Éditeur dans le thème bleu](~/extensibility/ux-guidelines/media/030303-c_editorblue.png "030303-c_EditorBlue")<br />Éditeur dans le thème bleu
+![Éditeur dans le thème bleu](../../extensibility/ux-guidelines/media/030303-c_editorblue.png "030303-c_EditorBlue")<br />Éditeur dans le thème bleu
   
 ![Éditeur dans le thème à contraste élevé, #1](../../extensibility/ux-guidelines/media/030303-d_editorhc1.png "030303-d_EditorHC1")<br />Éditeur dans le thème à contraste élevé, #1
   
@@ -375,7 +356,7 @@ Remplir le Registre avec deux valeurs :
   
 Le service spécifié dans le Registre doit fournir une implémentation de `T:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorGroup` pour le groupe correspondant.
 
-![Implémentation de l’interface IVsFontAndColorGroup](../../extensibility/ux-guidelines/media/0304-a_fontandcolorgroup.png "0304-a_FontAndColorGroup")<br />Implémentation de`IVsFontAndColorGroup`
+![Implémentation de l’interface IVsFontAndColorGroup](../../extensibility/ux-guidelines/media/0304-a_fontandcolorgroup.png "a_FontAndColorGroup-0304")<br />Implémentation de`IVsFontAndColorGroup`
   
 ### <a name="to-implement-ide-support"></a>Pour implémenter la prise en charge IDE  
 Implémentez [GetObject](https://msdn.microsoft.com/en-us/library/microsoft.visualstudio.shell.interop.ivsfontandcolordefaultsprovider.getobject.aspx), qui retourne un [IVsFontAndColorDefaults](https://msdn.microsoft.com/en-us/library/microsoft.visualstudio.shell.interop.ivsfontandcolordefaults.aspx) interface ou un `T:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorGroup` à l’IDE pour chaque catégorie de l’interface ou le groupe de GUID fourni.  
@@ -418,7 +399,7 @@ Pour ce faire, un VSPackage doit :
   
 -   **interroger l’IDE pour les modifications**. Cela est possible via l’objet implémentés par le système [IVsFontAndColorStorage](https://msdn.microsoft.com/en-us/library/microsoft.visualstudio.shell.interop.ivsfontandcolorstorage.aspx) interface. Bien que principalement pour la prise en charge de la persistance, la [GetItem](https://msdn.microsoft.com/en-us/library/microsoft.visualstudio.shell.interop.ivsfontandcolorstorage.getitem.aspx) méthode permettre obtenir des informations de police et la couleur pour afficher les éléments. Pour plus d’informations sur les paramètres de police et couleur, consultez l’article MSDN [l’accès à stockées paramètres de police et couleur](https://msdn.microsoft.com/en-us/library/bb166382.aspx).  
   
-> **Remarque :** pour vous assurer que les résultats d’interrogation sont corrects, utilisez le [IVsFontAndColorCacheManager](https://msdn.microsoft.com/en-us/library/microsoft.visualstudio.shell.interop.ivsfontandcolorcachemanager.aspx) interface pour déterminer si un vidage du cache et la mise à jour sont nécessaires avant d’appeler les méthodes de récupération de la [IVsFontAndColorStorage](https://msdn.microsoft.com/en-us/library/microsoft.visualstudio.shell.interop.ivsfontandcolorstorage.aspx) interface.
+> **Remarque :** pour vous assurer que les résultats d’interrogation sont corrects, utilisez le [IVsFontAndColorCacheManager](https://msdn.microsoft.com/en-us/library/microsoft.visualstudio.shell.interop.ivsfontandcolorcachemanager.aspx) interface pour déterminer si un vidage du cache et la mise à jour sont nécessaires avant d’appeler les méthodes de récupération de la [ IVsFontAndColorStorage](https://msdn.microsoft.com/en-us/library/microsoft.visualstudio.shell.interop.ivsfontandcolorstorage.aspx) interface.
   
 #### <a name="registering-custom-font-and-color-category-without-implementing-interfaces"></a>L’inscription de la police et couleur catégorie sans avoir à implémenter des interfaces  
 L’exemple de code suivant montre comment inscrire la police personnalisée et la catégorie de couleur sans avoir à implémenter des interfaces :  
@@ -433,8 +414,8 @@ HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\8.0Exp\FontAndColors\CSharp T
 ```  
 
 Pour cet exemple de code :   
--   `"NameID"` = l’ID de ressource du nom de catégorie localisée dans votre package.
--   `"ToolWindowPackage"` = GUID du package
+-   `"NameID"`= l’ID de ressource du nom de catégorie localisée dans votre package.
+-   `"ToolWindowPackage"`= GUID du package
 -   `"Category"="{9FF46859-A47E-47bf-8AC5-EC3DBE69D1FE}"`est juste un exemple et la valeur réelle peut être un GUID fourni par l’implémenteur.  
   
 ### <a name="set-the-font-and-color-property-category-guid"></a>Définir la police et couleur propriété GUID de catégorie  
@@ -465,272 +446,3 @@ catGUID);
 }  
 }  
 ```  
-  
-##  <a name="BKMK_DaytonaAndWebUI"></a>Daytona et l’interface utilisateur web  
-  
-### <a name="overview"></a>Vue d'ensemble  
-« Daytona » est un ensemble d’API, les outils et les services qui permettent aux utilisateurs de créer des plug-ins avec HTML, CSS et JavaScript qui peut être utilisé de plusieurs ordinateurs hôtes, tels que Visual Studio ou F12. Plug-ins sont composées d’un composant portable, ce qui est écrit en HTML, CSS et JavaScript, et les composants spécifiques à l’hôte facultatifs. Chaque hôte Daytona peut avoir son propre ensemble de conventions d’interface utilisateur, implicites ou explicites, qu’un plug-in doit être conforme à pour s’afficher natif vers son environnement. Certains hôtes, tel que Visual Studio, permettent aux utilisateurs finaux de modifier le thème « par défaut » afin que les aspects visuels de l’ordinateur hôte ne peut pas être ciblés statiquement lors de la création d’une feuille de style. Cela pose des problèmes aux développeurs qui créent des plug-ins portables. Cette rubrique explique comment créer l’interface utilisateur dans Visual Studio à l’aide de l’hôte Daytona d’une façon qui prend en charge correctement les thèmes et contraste élevé web.  
-  
-### <a name="daytona-theming-mechanism"></a>Mécanisme de thèmes Daytona  
-Le runtime Daytona fournit un ensemble de services qui résume les conventions de l’interface utilisateur et les fonctionnalités de thèmes de l’hôte. Ces services garantissent que les plug-ins sont automatiquement conformes aux attentes de l’utilisateur sur l’environnement, dans qu'ils sont hébergés visual. Ce comportement est fourni par trois fonctionnalités principales :  
-  
-1.  Une feuille de style d’injectées par le runtime (plugin.css) qui applique un ensemble de règles CSS à l’interface utilisateur du plug-in en toute transparence et de styles de l’ensemble par défaut des contrôles HTML (par exemple, HTMLInputElement et HTMLButtonElement  
-  
-2.  Un ensemble de jetons fourni par l’hôte qui peut être utilisé pour les éléments d’interface utilisateur de style à l’aide des valeurs qui sont basés sur le thème au lieu de codé en dur  
-  
-    -  une syntaxe déclarative pour l’accès à ces jetons avec CSS  
-  
-    -  une API pour accéder par programmation aux jetons de thème à partir de JavaScript  
-  
-3.  Notification de modifications de thème  
-  
-#### <a name="runtime-injected-style-sheet"></a>Feuille de style d’injectées par le runtime  
-Les coordonnées de runtime Daytona avec l’hôte pour injecter un style de feuille automatiquement les éléments d’interface utilisateur standards d’un plug-in de thèmes. Cela inclut les styles pour les concepts suivants :  
-  
--   Police d’environnement  
-  
--   Couleurs d’arrière-plan  
-  
--   Liens hypertexte  
-  
--   Contrôles de formulaire (par exemple : `<select>`, `<input>`,`<button>`  
-  
--   Tables  
-  
--   Titres  
-  
--   Barres de défilement  
-  
-Cela signifie que si votre interface utilisateur est composée uniquement de contrôles d’interface utilisateur HTML standard, puis aucun travail supplémentaire ne doit être nécessaires pour répondre correctement aux modifications de thème et pour prendre en charge du contraste élevé.  
-  
-#### <a name="custom-ui"></a>Une interface utilisateur personnalisée  
-Dans presque tous les cas non triviale, la norme de contrôle de l’interface utilisateur HTML peut ne pas suffire pour fournir une expérience complète pour un plug-in et l’interface utilisateur personnalisé doit être introduite. Pour prendre en charge d’utilisation de choix et la couleur de police appropriée, **des jetons de thème** doit être utilisé par déclaration dans CSS ou impérative via l’API JavaScript décrites ci-dessous. Le runtime Daytona s’occupe de la mise à jour les feuilles de style qui utilisent ces jetons lors du chargement du plug-in et sur les modifications de thème.  
-  
-##### <a name="theme-tokens"></a>Jetons de thème  
-Les deux jetons thème standard et spécifiques à l’hôte sont disponibles. Jetons standards sont toujours disponibles et injectées par l’hôte. Il est préférable d’utiliser les jetons standards chaque fois que possible. Sont garanti que les jetons standards doivent être fournies par tous les hôtes Daytona et leur utilisation rend votre plug-in par nature plus portable. L’ensemble de jetons standards est susceptible d’être modifiée, si seuls les nouveaux jetons doivent être ajoutés et none doit être supprimé. La version de Visual Studio 2013 est décrite ci-dessous :  
-  
-| Nom du jeton | Description |
-| --- | --- |
-| `plugin-background-color` | La couleur d’arrière-plan par défaut pour le plug-in |
-| `plugin-color` | La couleur de premier plan par défaut pour le plug-in |
-| `plugin-contextmenu-active-color` | La couleur de sélection de premier plan par défaut pour les menus contextuels lorsqu’elles sont actives (a le focus) |
-| `plugin-contextmenu-background-color` | La couleur d’arrière-plan par défaut pour les menus contextuels |
-| `plugin-contextmenu-border-color` | La couleur de bordure par défaut pour les menus contextuels |
-| `plugin-contextmenu-color` | La couleur de premier plan par défaut pour les menus contextuels |
-| `plugin-contextmenu-hover-color` | La couleur d’arrière-plan par défaut pointage des menus contextuels |
-| `plugin-contextmenu-hover-text-color` | La couleur de premier plan par défaut pointage des menus contextuels |
-| `plugin-contextmenu-icon-checkbox` | La couleur d’icône de case à cocher par défaut pour les menus contextuels |
-| `plugin-contextmenu-inactive-text-color` | La couleur de sélection de premier plan par défaut pour les menus contextuels quand ils sont inactifs |
-| `plugin-contextmenu-separator-color` | La couleur du séparateur par défaut pour les menus contextuels |
-| `plugin-font-family` | La famille de polices par défaut à utiliser pour le plug-in |
-  
-Dans Visual Studio, ce qui suit `plugin-font` jetons sont basées sur les paramètres de police d’environnement :  
-  
--   `plugin-font-size`  
-  
--   `plugin-font-weight`  
-  
--   `plugin-highlight-background-color`  
-  
--   `plugin-highlight-color`  
-  
--   `plugin-inactive-color` 
-  
-Les éléments suivants `plugin-link` jetons sont utilisés pour le style `HTMLElements` (liens hypertexte) :
-  
--   `plugin-link-color`  
-  
--   `plugin-link-active-color`  
-  
--   `plugin-link-hover-color`  
-  
-Plugin.CSS styles des barres de défilement par défaut en utilisant les jetons suivants pour mieux prendre en charge les thèmes dans les différents hôtes (en particulier, Visual Studio) :
-  
--   `plugin-scrollbar-arrow-color`  
-  
--   `plugin-scrollbar-background-color`  
-  
--   `plugin-scrollbar-face-color`  
-  
-Les éléments suivants `plugin-select` jetons sont utilisés pour créer le `HTMLSelectElement` (zone de liste déroulante zone liste déroulante) :  
-  
--   `plugin-select-option-background-color` 
-  
--   `plugin-select-option-color`  
-  
--   `plugin-select-option-checked-background-color`  
-  
--   `plugin-select-option-checked-border-color`  
-  
--   `plugin-select-option-checked-foreground-color`  
-  
--   `plugin-select-option-hover-background-color`  
-  
--   `plugin-select-option-hover-border-color`  
-  
--   `plugin-select-option-hover-foreground-color`  
-  
--   `plugin-select-border-color`  
-  
--   `plugin-select-background-color`  
-  
--   `plugin-select-foreground-color`  
-  
--   `plugin-select-hover-background-color`  
-  
--   `plugin-select-hover-border-color`  
-  
--   `plugin-select-hover-foreground-color`  
-  
--   `plugin-table-border-color`  
-  
--   `plugin-table-header-background-color`  
-  
--   `plugin-table-header-color`  
-  
--   `plugin-textbox-border-color`  
-  
--   `plugin-textbox-background-color`  
-  
--   `plugin-textbox-color`  
-  
--   `plugin-textbox-disabled-background-color`  
-  
--   `plugin-textbox-disabled-border-color`  
-  
--   `plugin-textbox-disabled-color`  
-  
-Ces jetons doivent être utilisés pour *tous les* tables et les vues d’arborescence, car ils ont les valeurs par défaut correctes définies dans les différents hôtes pour prendre en charge les thèmes et contraste élevé :  
-  
--   `plugin-treeview-content-background-color`  
-  
--   `plugin-treeview-content-color` 
-  
--   `plugin-treeview-content-inactive-selected-color`  
-  
--   `plugin-treeview-content-mouseover-background-color`  
-  
--   `plugin-treeview-content-mouseover-color`  
-  
--   `plugin-treeview-content-inactive-selected-color`  
-  
--   `plugin-treeview-content-selected-background-color`  
-  
--   `plugin-treeview-content-selected-border-color`  
-  
--   `plugin-treeview-content-selected-color`  
-  
-##### <a name="host-specific-tokens"></a>Jetons spécifique à l’hôte  
-Prise en charge de l’ensemble standard de jetons, les hôtes peuvent également fournir des jetons non standard. Pour cela, l’hôte Visual Studio permettant le plug-in spécifier les alias de jeton de thème dans une section spécifique de Visual Studio du manifeste. Exemple :
-  
-```  
-"vs": {  
-    "theme_token_aliases": {   
-        "diagnostics-host-border": {   
-            "category": "f8a8b2a5-dd35-43f6-a382-fd6a61325c22",   
-            "key_type": "BackgroundColor",   
-            "name": "Border"   
-        },   
-        ...   
-    }   
-}    
-```  
-  
- Cet exemple présente un jeton de thème, nommé `diagnostics-host-border`, qui peut être référencé identique pour les jetons standards mentionnés ci-dessus. Le `category`, `key_type`, et `name` permettent de résoudre la couleur via la `IVsFontAndColorStorage` interface. Dans de nombreux cas, il est possible de trouver des couleurs appropriés (avec la `category`, `key_type`, et `name` informations) dans les fichiers XML situés dans `VSCommonContent\themes`. Ce même mécanisme est utilisé si votre package introduit de nouvelles couleurs configurables : correspond à la `category`, `key_type`, et `name` à la couleur que vous souhaitez utiliser. Les auteurs de plug-in doivent tenter d’utiliser des jetons standards chaque fois que possible et utilisent uniquement les jetons spécifique à l’hôte lorsque cela est absolument nécessaire.  
-  
-##### <a name="using-theme-tokens-in-css"></a>Utilisation de jetons de thème dans CSS  
- Les jetons de thème sont appelés via une syntaxe de commentaire spécifiquement mis en forme. Les règles pour l’analyse du jeton :  
-  
-1.  L’expression de commentaire doit être placée entre crochets (`[ ]`).  
-  
-2.  Tous les espaces blancs dans un commentaire, mais en dehors de l’expression, est ignoré.  
-  
-3.  L’expression de commentaire doit suivre directement la propriété qu'il remplace.  
-  
-4.  Tout espace blanc de début ou de fin dans l’expression seront supprimé.  
-  
-5.  Chaque nom de jeton dans l’expression doit être placé entre accolades (par exemple, `{font-family}` et `{button-hover-color}`). Dans le cas contraire, il est considéré comme une valeur littérale.  
-  
- Voici des exemples de la façon dont l’analyseur jeton remplacent les valeurs CSS, en supposant que le `plugin-background-color` jeton a la valeur `#000` et `plugin-font-family` jeton a la valeur `Verdana`.
-  
-| CSS créés | CSS analysée | Notes |  
-| --- | --- | --- |
-| `background-color: #fff; /*[{plugin-background-color}]*/` | `background-color: #000;` | La valeur par défaut est remplacée par la valeur spécifique à l’hôte dynamique. |  
-| `background-color: #fff; /*   [{plugin-background-color}]   */` | `background-color: #000;` | L’espace blanc en dehors de l’expression est ignoré. |  
-| `background-color: #fff; /*[   {plugin-background-color}   ]*/` | `background-color: #000;` | L’espace blanc de début et de fin dans l’expression est tronqué. |
-| `background-color: #fff; /*{plugin-background-color}*/` | `background-color: #fff;` | L’expression n’est pas placé entre crochets, et par conséquent, le commentaire est ignoré. |
-| `background-color: #fff; /*[plugin-background-color]*/` | `background-color: plugin-background-color;` | Le jeton n’est pas placé entre accolades et est donc traité comme une valeur littérale. |
-| `/*[{plugin-background-color}]*/ background-color: #fff;` | `background-color: #fff;` | Le commentaire ne suit pas la valeur de propriété et est donc ignoré. |
-| `background-color: #fff;  /*[{plugin-background-color}]*/` | `background-color: #fff;`| *Comme ci-dessus* |
-| `/*[{plugin-background-color}]*/  background-color: #fff;` | `background-color: #fff;` | *Comme ci-dessus* |
-| `font-family: Arial, sans-serif; /*[{plugin-font-family}, sans-serif]*/` | `font-family: Verdana, sans-serif;` | Le jeton est remplacé, et le contenu littéral est conservé. |
-| `background-image: linear-gradient(0% #000, 100% #ccc); /*[linear-gradient(0% #000, 100% {plugin-background-color})]*/` | `background-image: linear-gradient(0% #000, 100% #000);` | *Comme ci-dessus* |
-  
-Si un fichier CSS inclut les jetons de thème il doit être marqué par le `data-plugin-theme` de l’attribut le `link` élément dans le fichier HTML. Exemple :  
-  
-```  
-<link href="default.css" rel="stylesheet" data-plugin-theme="true" />  
-```
-
-##### <a name="using-theme-tokens-from-javascript"></a>L’utilisation de jetons de thème à partir de JavaScript  
-Alors que l’interface utilisateur personnalisée doit être à thème par CSS lorsque cela est possible, il existe des scénarios dans lorsque la valeur d’un thème de jeton doit être accessible par programme. Par exemple, si l’interface utilisateur personnalisée est dessinée sur un `CanvasElement` qui n’hérite pas style de CSS, ou si un élément d’interface utilisateur est en cours de création dynamique en tant qu’opposée à faisant référence à des feuilles de style. Les scénarios sont activés à l’aide de l’API Daytona `Plugin.Theme.getValue`. Cette fonction retourne une valeur de thème fournie par l’hôte en fonction d’un nom de jeton.  
-  
-| Pas à thème | À thème |
-| --- | --- |
-| `var surface = document.getElementById("surface").getContext("2d");  surface.fillStyle = "#ccc";  surface.fillRect(0, 0, 200, 200);` | `var surface = document.getElementById("surface").getContext("2d");  surface.fillStyle = ("plugin-background-color");  surface.fillRect(0, 0, 200, 200);` |
-| `var el = document.createElement("div");  el.style.backgroundColor = "#ccc";` | `var el = document.createElement("div");  el.style.backgroundColor = Plugin.Theme.getValue("plugin-background-color");` |  
-  
-Si les jetons sont utilisés à partir de JavaScript, **l’événement de changement de thème doit être gérée pour répondre aux mises à jour**. Cela n’est pas nécessaire pour les jetons de thème utilisés de façon déclarative dans CSS, comme le runtime Daytona s’en charge pour le plug-in. L’événement de thème peut être géré de la façon suivante :
-
-**Membre (gestionnaire unique)**
-```
-Plugin.Theme.onchange = function () 
-{
-    // re-draw dynamic UI here
-}
-```
-
-**Événement de DOM (plusieurs gestionnaires)**
-```
-Plugin.Theme.addEventListener("change", function () 
-{
-    // re-draw dynamic UI here
-});
-```
-  
-Dans ce cas, il est très courant de rappeler `Plugin.Theme.getValue` dans ces gestionnaires, comme valeur des jetons thème probables modifié lorsque le thème modifié.  
-  
-##### <a name="standard-token-mapping"></a>Mappage de jeton standard  
-Les jetons standards sont mappées aux couleurs de Shell et d’environnement. La liste suivante donne une idée de ce que ces mappages sont.  
-  
-| Nom du jeton | Mappage de Visual Studio (`EnvironmentColors`) |  
-| --- | --- |  
-| `plugin-color` | `ToolWindowTextColorKey` |
-| `plugin-background-color` | `ToolWindowBackgroundColorKey` |
-| `plugin-link-color` | `ControlLinkTextColorKey` |
-| `plugin-link-hover-color` | `ControlLinkTextHoverColorKey` |
-| `plugin-link-active-color` | `ControlLinkTextPressedColorKey` |
-| `plugin-highlight-color` | `HighlightTextColorKey` |
-| `plugin-highlight-background-color` | `HighlightColorKey` |
-| `plugin-table-header-background-color` | `GridHeadingBackgroundColorKey` |
-| `plugin-table-header-color` | `GridHeadingTextColorKey` |
-| `plugin-table-border-color` | `GridLineColorKey` |
-| `plugin-button-background-color` | `ButtonFaceColorKey` |
-| `plugin-button-hover-background-color` | `ButtonHighlightColorKey` | 
-| `plugin-button-color` | `ButtonTextColorKey` |
-| `plugin-button-border-color` | `ButtonBorderColorKey` |
-  
-##### <a name="theme-changes"></a>Modifications de thème  
-Visual Studio hôte déclencheurs plug-in thème modifications lorsqu’un utilisateur final modifie les paramètres suivants :  
-  
-**Thème de couleur :**  
-  
-![Modifications de thème de couleur](~/extensibility/ux-guidelines/media/0305-a_colortheme.png "0305-a_ColorTheme")<br />Modifications de thème de couleur  
-  
-**Thème d’environnement :**  
-  
-![Modifications de thème d’environnement](~/extensibility/ux-guidelines/media/0305-b_environmenttheme.png "0305-b_EnvironmentTheme")<br />Modifications de thème d'environnement  
-  
-**Thème du système d’exploitation** (uniquement lors de la modification vers et à partir de contraste élevé) :  
-  
-![Modifications de thème de système d’exploitation](../../extensibility/ux-guidelines/media/0305-c_ostheme.png "0305-c_OSTheme")<br />Modifications de thème de système d’exploitation

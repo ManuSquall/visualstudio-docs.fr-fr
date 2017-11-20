@@ -1,54 +1,56 @@
 ---
-title: "Attachement et d&#233;tachement d&#39;un programme | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-helpviewer_keywords: 
-  - "moteurs de débogage, attacher aux programmes"
-  - "moteurs de débogage, le détachement de programmes"
+title: "Attachement et détachement d’un programme | Documents Microsoft"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+helpviewer_keywords:
+- debug engines, attaching to programs
+- debug engines, detaching from programs
 ms.assetid: 79dcbb9b-c7f8-40fc-8a00-f37fe1934f51
-caps.latest.revision: 10
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 10
+caps.latest.revision: "10"
+author: gregvanl
+ms.author: gregvanl
+manager: ghogen
+ms.openlocfilehash: 71f678852b4d16d0b7c6f150abae03c6c4cdcad4
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: fr-FR
+ms.lasthandoff: 10/31/2017
 ---
-# Attachement et d&#233;tachement d&#39;un programme
-[!INCLUDE[vs2017banner](../../code-quality/includes/vs2017banner.md)]
-
-Attacher le débogueur requiert l'envoi la séquence correcte d'événements et de méthodes avec les attributs appropriés.  
+# <a name="attaching-and-detaching-to-a-program"></a>Attachement et détachement d’un programme
+Attacher le débogueur nécessite l’envoi de la séquence des méthodes et des événements avec les attributs appropriés.  
   
-## séquence de méthodes et d'événements  
+## <a name="sequence-of-methods-and-events"></a>Séquence de méthodes et événements  
   
-1.  le gestionnaire de débogage de session \(SDM\) appelle la méthode d' [OnAttach](../../extensibility/debugger/reference/idebugprogramnodeattach2-onattach.md) .  
+1.  Le Gestionnaire de session de débogage (SDM) appelle le [OnAttach](../../extensibility/debugger/reference/idebugprogramnodeattach2-onattach.md) (méthode).  
   
-     Selon le modèle \(DE\) de processus du moteur de débogage, la méthode d' `IDebugProgramNodeAttach2::OnAttach` retourne une des méthodes suivantes, qui détermine les étapes suivantes.  
+     Selon le modèle de processus de débogage du moteur (DE) le `IDebugProgramNodeAttach2::OnAttach` méthode retourne l’une des méthodes suivantes, qui détermine les étapes suivantes.  
   
-     Si `S_FALSE` est retourné, le moteur de débogage a été correctement attaché au programme.  Sinon, la méthode d' [Attach](../../extensibility/debugger/reference/idebugengine2-attach.md) est appelée pour exécuter le processus d'attachement.  
+     Si `S_FALSE` est retourné, le moteur de débogage a correctement été attaché au programme. Dans le cas contraire, le [attacher](../../extensibility/debugger/reference/idebugengine2-attach.md) méthode est appelée pour terminer le processus d’attachement.  
   
-     si `S_OK` est retourné, le De doit être chargé dans le même processus que le SDM.  Le SDM effectue les tâches suivantes :  
+     Si `S_OK` est retourné, le DE doit être chargé dans le même processus que le SDM. Le SDM effectue les tâches suivantes :  
   
-    1.  Appels [GetEngineInfo](../../extensibility/debugger/reference/idebugprogramnode2-getengineinfo.md) pour obtenir les informations du moteur du De.  
+    1.  Appels [GetEngineInfo](../../extensibility/debugger/reference/idebugprogramnode2-getengineinfo.md) pour obtenir les informations du moteur de la DE.  
   
-    2.  crée le De.  
+    2.  Crée le DE.  
   
-    3.  appelle [Attach](../../extensibility/debugger/reference/idebugengine2-attach.md).  
+    3.  Appels [attacher](../../extensibility/debugger/reference/idebugengine2-attach.md).  
   
-2.  Le De envoie [IDebugEngineCreateEvent2](../../extensibility/debugger/reference/idebugenginecreateevent2.md) au SDM avec un attribut d' `EVENT_SYNC` .  
+2.  L’envoie DE un [IDebugEngineCreateEvent2](../../extensibility/debugger/reference/idebugenginecreateevent2.md) pour le SDM avec une `EVENT_SYNC` attribut.  
   
-3.  Le De envoie [IDebugProgramCreateEvent2](../../extensibility/debugger/reference/idebugprogramcreateevent2.md) au SDM avec un attribut d' `EVENT_SYNC` .  
+3.  L’envoie DE un [IDebugProgramCreateEvent2](../../extensibility/debugger/reference/idebugprogramcreateevent2.md) pour le SDM avec une `EVENT_SYNC` attribut.  
   
-4.  Le De envoie [IDebugLoadCompleteEvent2](../../extensibility/debugger/reference/idebugloadcompleteevent2.md) au SDM avec un attribut d' `EVENT_SYNC_STOP` .  
+4.  L’envoie DE un [IDebugLoadCompleteEvent2](../../extensibility/debugger/reference/idebugloadcompleteevent2.md) pour le SDM avec une `EVENT_SYNC_STOP` attribut.  
   
- Détacher un programme est un simple, processus de pas de deux, comme suit :  
+ Détachement d’un programme est un simple, un processus en deux étapes, comme suit :  
   
-1.  Le SDM appelle [Detach](../../extensibility/debugger/reference/idebugprogram2-detach.md).  
+1.  Les appels SDM [détachement](../../extensibility/debugger/reference/idebugprogram2-detach.md).  
   
-2.  Le De envoie [IDebugProgramDestroyEvent2](../../extensibility/debugger/reference/idebugprogramdestroyevent2.md).  
+2.  L’envoie DE un [IDebugProgramDestroyEvent2](../../extensibility/debugger/reference/idebugprogramdestroyevent2.md).  
   
-## Voir aussi  
- [Appeler les événements de débogueur](../../extensibility/debugger/calling-debugger-events.md)
+## <a name="see-also"></a>Voir aussi  
+ [Événements d’appel du débogueur](../../extensibility/debugger/calling-debugger-events.md)

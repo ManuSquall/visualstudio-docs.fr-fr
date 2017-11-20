@@ -1,44 +1,44 @@
 ---
-title: "Debug Interface Access, r&#233;f&#233;rence du SDK | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-debug"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "référence (SDK DIA)"
-  - "référence de l’API (SDK DIA)"
-  - "DIA, référence du SDK"
+title: "Référence Debug Interface Access SDK | Documents Microsoft"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-debug
+ms.tgt_pltfrm: 
+ms.topic: article
+dev_langs: C++
+helpviewer_keywords:
+- reference [DIA SDK]
+- API reference [DIA SDK]
+- DIA SDK, reference
 ms.assetid: 7cdbbce1-8b59-43ce-b6aa-a948bb4d7148
-caps.latest.revision: 9
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 9
+caps.latest.revision: "9"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: b8206ed1f1215a88408db6f3ef0be387932ec11a
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: fr-FR
+ms.lasthandoff: 10/31/2017
 ---
-# Debug Interface Access, r&#233;f&#233;rence du SDK
-[!INCLUDE[vs2017banner](../../code-quality/includes/vs2017banner.md)]
-
-Une référence complète aux interfaces et énumérations de prise en charge et structures du diamètre Kit de développement logiciel.  
+# <a name="debug-interface-access-sdk-reference"></a>Debug Interface Access, référence du SDK
+Une référence complète à toutes les interfaces et prise en charge les énumérations et les structures dans le SDK DIA.  
   
-## Dans cette section  
- [Interfaces \(Kit de développement logiciel Debug Interface Access\)](../../debugger/debug-interface-access/interfaces-debug-interface-access-sdk.md)  
- Une référence complète aux interfaces fournies par le diamètre Kit de développement logiciel.  
+## <a name="in-this-section"></a>Dans cette section  
+ [Interfaces (SDK Debug Interface Access)](../../debugger/debug-interface-access/interfaces-debug-interface-access-sdk.md)  
+ Une référence complète pour toutes les interfaces fournies par le SDK DIA.  
   
  [Énumérations et structures](../../debugger/debug-interface-access/enumerations-and-structures.md)  
- Une référence complète à toutes les énumérations et structures requises par les interfaces.  
+ Une référence complète pour toutes les énumérations et structures requis par les interfaces.  
   
- [Constantes \(Kit de développement logiciel Debug Interface Access\)](../../debugger/debug-interface-access/constants-debug-interface-access-sdk.md)  
- Décrit plusieurs chaînes et leurs noms qui peuvent être utilisés avec les interfaces.  
+ [Constantes (Kit de développement logiciel Debug Interface Access)](../../debugger/debug-interface-access/constants-debug-interface-access-sdk.md)  
+ Décrit un nombre de chaînes et les étiquettes qui peuvent être utilisées avec les interfaces.  
   
-## Rubriques connexes  
- [Balises Symbols et Symbol](../../debugger/debug-interface-access/symbols-and-symbol-tags.md)  
- décrit ce que sont les symboles et comment ils sont identifiés par le type.  
+## <a name="related-sections"></a>Rubriques connexes  
+ [Symboles et étiquettes de symbole](../../debugger/debug-interface-access/symbols-and-symbol-tags.md)  
+ Décrit ce que sont les symboles et comment ils sont identifiés par type.  
   
-## Voir aussi  
- [Kit de développement logiciel de Debug Interface Access](../../debugger/debug-interface-access/debug-interface-access-sdk.md)
+## <a name="see-also"></a>Voir aussi  
+ [SDK Debug Interface Access](../../debugger/debug-interface-access/debug-interface-access-sdk.md)

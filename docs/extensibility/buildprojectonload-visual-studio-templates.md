@@ -4,38 +4,23 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-general
+ms.technology: vs-ide-general
 ms.tgt_pltfrm: 
 ms.topic: article
-f1_keywords:
-- http://schemas.microsoft.com/developer/vstemplate/2005#BuildOnLoad
+f1_keywords: http://schemas.microsoft.com/developer/vstemplate/2005#BuildOnLoad
 helpviewer_keywords:
 - <BuildOnLoad> element [Visual Studio Templates]
 - BuildOnLoad element [Visual Studio Templates]
 ms.assetid: 950f5fc1-d041-4090-9a5c-60844768a4cc
-caps.latest.revision: 10
+caps.latest.revision: "10"
+author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-translation.priority.ht:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
-translationtype: Machine Translation
-ms.sourcegitcommit: 5db97d19b1b823388a465bba15d057b30ff0b3ce
-ms.openlocfilehash: 1be6339ed3db61279f83b49a016d84d0b551c03d
-ms.lasthandoff: 02/22/2017
-
+ms.openlocfilehash: ab3744d81f99c394a2633854a0ec24b76e665ecd
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: fr-FR
+ms.lasthandoff: 10/31/2017
 ---
 # <a name="buildprojectonload-visual-studio-templates"></a>BuildProjectOnLoad (modèles Visual Studio)
 Spécifie s’il faut générer le projet immédiatement après sa création.  
@@ -70,7 +55,7 @@ Spécifie s’il faut générer le projet immédiatement après sa création.
   
  Le texte doit être `true` ou `false`, indiquant s’il faut générer le projet immédiatement après sa création.  
   
-## <a name="remarks"></a>Notes  
+## <a name="remarks"></a>Remarques  
  `BuildProjectOnLoad`est un attribut facultatif. La valeur par défaut est `false`.  
   
 ## <a name="example"></a>Exemple  
@@ -103,5 +88,5 @@ Spécifie s’il faut générer le projet immédiatement après sa création.
   
 ## <a name="see-also"></a>Voir aussi  
  [TemplateContent, élément (modèles Visual Studio)](../extensibility/templatecontent-element-visual-studio-templates.md)   
- [Création de projet et modèles d’élément](../ide/creating-project-and-item-templates.md)   
- [Référence de schéma de modèle Visual Studio](../extensibility/visual-studio-template-schema-reference.md)
+ [Création de modèles de projet et d’élément](../ide/creating-project-and-item-templates.md)   
+ [Référence du schéma de modèle Visual Studio](../extensibility/visual-studio-template-schema-reference.md)

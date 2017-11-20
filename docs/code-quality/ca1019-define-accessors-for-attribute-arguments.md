@@ -1,11 +1,10 @@
 ---
-title: 'CA1019: Define accessors for attribute arguments | Microsoft Docs'
+title: "CA1019 : Définir des accesseurs pour les arguments d’attribut | Documents Microsoft"
 ms.custom: 
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-devops-test
+ms.technology: vs-ide-code-analysis
 ms.tgt_pltfrm: 
 ms.topic: article
 f1_keywords:
@@ -15,82 +14,67 @@ helpviewer_keywords:
 - CA1019
 - DefineAccessorsForAttributeArguments
 ms.assetid: 197f2378-3c43-427e-80de-9ec25006c05c
-caps.latest.revision: 19
-author: stevehoag
-ms.author: shoag
-manager: wpickett
-translation.priority.ht:
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- ru-ru
-- zh-cn
-- zh-tw
-translation.priority.mt:
-- cs-cz
-- pl-pl
-- pt-br
-- tr-tr
-ms.translationtype: HT
-ms.sourcegitcommit: eb5c9550fd29b0e98bf63a7240737da4f13f3249
-ms.openlocfilehash: c54f96f07e1c02cfab07a63504cd44a7884a3fad
-ms.contentlocale: fr-fr
-ms.lasthandoff: 08/30/2017
-
+caps.latest.revision: "19"
+author: gewarren
+ms.author: gewarren
+manager: ghogen
+ms.openlocfilehash: 9f04a49c8c68fcc597ecd98471b46932d467b365
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: fr-FR
+ms.lasthandoff: 10/31/2017
 ---
-# <a name="ca1019-define-accessors-for-attribute-arguments"></a>CA1019: Define accessors for attribute arguments
+# <a name="ca1019-define-accessors-for-attribute-arguments"></a>CA1019 : Définir des accesseurs pour les arguments d'attribut
 |||  
 |-|-|  
 |TypeName|DefineAccessorsForAttributeArguments|  
 |CheckId|CA1019|  
-|Category|Microsoft.Design|  
-|Breaking Change|Non-breaking|  
+|Catégorie|Microsoft.Design|  
+|Modification avec rupture|Sans rupture|  
   
 ## <a name="cause"></a>Cause  
- In its constructor, an attribute defines arguments that do not have corresponding properties.  
+ Dans son constructeur, un attribut définit des arguments qui n’ont pas de propriétés correspondantes.  
   
-## <a name="rule-description"></a>Rule Description  
- Attributes can define mandatory arguments that must be specified when you apply the attribute to a target. These are also known as positional arguments because they are supplied to attribute constructors as positional parameters. For every mandatory argument, the attribute should also provide a corresponding read-only property so that the value of the argument can be retrieved at execution time. This rule checks that for each constructor parameter, you have defined the corresponding property.  
+## <a name="rule-description"></a>Description de la règle  
+ Les attributs peuvent définir des arguments obligatoires qui doivent être spécifiés lorsque vous appliquez l'attribut à une cible. Ceux-ci sont également appelés arguments positionnels parce qu'ils sont fournis aux constructeurs d'attributs en tant que paramètres positionnels. Pour chaque argument obligatoire, l'attribut doit également fournir une propriété en lecture seule correspondante afin que la valeur de l'argument puisse être récupérée au moment de l'exécution. Cette règle vérifie que, pour chaque paramètre de constructeur, vous avez défini la propriété correspondante.  
   
- Attributes can also define optional arguments, which are also known as named arguments. These arguments are supplied to attribute constructors by name and should have a corresponding read/write property.  
+ Les attributs peuvent également définir des arguments facultatifs, qui sont également appelés arguments nommés. Ces arguments sont fournis aux constructeurs d'attributs par noms et doivent disposer d'une propriété en lecture/écriture correspondante.  
   
- For mandatory and optional arguments, the corresponding properties and constructor parameters should use the same name but different casing. Properties use Pascal casing, and parameters use camel casing.  
+ Pour les arguments obligatoires et facultatifs, les propriétés correspondantes et les paramètres du constructeur doivent utiliser le même nom mais une casse différente. Propriétés utilisent la casse Pascal casse et les paramètres la casse.  
   
-## <a name="how-to-fix-violations"></a>How to Fix Violations  
- To fix a violation of this rule, add a read-only property for each constructor parameter that does not have one.  
+## <a name="how-to-fix-violations"></a>Comment corriger les violations  
+ Pour corriger une violation de cette règle, ajoutez une propriété en lecture seule pour chaque paramètre de constructeur qui n’en a pas.  
   
-## <a name="when-to-suppress-warnings"></a>When to Suppress Warnings  
- Suppress a warning from this rule if you do not want the value of the mandatory argument to be retrievable.  
+## <a name="when-to-suppress-warnings"></a>Quand supprimer les avertissements  
+ Supprimer un avertissement de cette règle si vous ne souhaitez pas la valeur de l’argument obligatoire soit récupérable.  
   
-## <a name="custom-attributes-example"></a>Custom Attributes Example  
+## <a name="custom-attributes-example"></a>Exemples d’attributs personnalisés  
   
 ### <a name="description"></a>Description  
- The following example shows two attributes that define a mandatory (positional) parameter. The first implementation of the attribute is incorrectly defined. The second implementation is correct.  
+ L’exemple suivant montre deux attributs qui définissent un paramètre (positionnel) obligatoire. La première implémentation de l’attribut est définie incorrectement. La seconde implémentation est correcte.  
   
 ### <a name="code"></a>Code  
- [!code-csharp[FxCop.Design.AttributeAccessors#1](../code-quality/codesnippet/CSharp/ca1019-define-accessors-for-attribute-arguments_1.cs)] [!code-vb[FxCop.Design.AttributeAccessors#1](../code-quality/codesnippet/VisualBasic/ca1019-define-accessors-for-attribute-arguments_1.vb)]  
+ [!code-csharp[FxCop.Design.AttributeAccessors#1](../code-quality/codesnippet/CSharp/ca1019-define-accessors-for-attribute-arguments_1.cs)]
+ [!code-vb[FxCop.Design.AttributeAccessors#1](../code-quality/codesnippet/VisualBasic/ca1019-define-accessors-for-attribute-arguments_1.vb)]  
   
-## <a name="positional-and-named-arguments"></a>Positional and Named Arguments  
+## <a name="positional-and-named-arguments"></a>Arguments nommés et positionnels  
   
 ### <a name="description"></a>Description  
- Positional and named arguments make to clear to consumers of your library which arguments are mandatory for the attribute and which arguments are optional.  
+ Arguments nommés et positionnels rendre clairement aux consommateurs de votre bibliothèque les arguments qui sont obligatoires pour l’attribut et les arguments sont facultatifs.  
   
- The following example shows an implementation of an attribute that has both positional and named arguments.  
+ L’exemple suivant illustre une implémentation d’un attribut qui comporte des arguments nommés et positionnels.  
   
 ### <a name="code"></a>Code  
  [!code-csharp[FxCop.Design.AttributeAccessorsNamed#1](../code-quality/codesnippet/CSharp/ca1019-define-accessors-for-attribute-arguments_2.cs)]  
   
-### <a name="comments"></a>Comments  
- The following example shows how to apply the custom attribute to two properties.  
+### <a name="comments"></a>Commentaires  
+ L’exemple suivant montre comment appliquer l’attribut personnalisé à deux propriétés.  
   
 ### <a name="code"></a>Code  
  [!code-csharp[FxCop.Design.AttributeAccessorsNamedApplied#1](../code-quality/codesnippet/CSharp/ca1019-define-accessors-for-attribute-arguments_3.cs)]  
   
-## <a name="related-rules"></a>Related Rules  
- [CA1813: Avoid unsealed attributes](../code-quality/ca1813-avoid-unsealed-attributes.md)  
+## <a name="related-rules"></a>Règles associées  
+ [CA1813 : Évitez les attributs unsealed](../code-quality/ca1813-avoid-unsealed-attributes.md)  
   
-## <a name="see-also"></a>See Also  
- [Attributes](/dotnet/standard/design-guidelines/attributes)
+## <a name="see-also"></a>Voir aussi  
+ [Attributs](/dotnet/standard/design-guidelines/attributes)

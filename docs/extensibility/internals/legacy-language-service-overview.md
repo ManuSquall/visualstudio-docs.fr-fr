@@ -1,34 +1,35 @@
 ---
-title: "Vue d’ensemble du Service de langage ancien | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-helpviewer_keywords: 
-  - "services de langage (framework package managé), à propos des services de langage"
+title: "Vue d’ensemble du Service de langage hérité | Documents Microsoft"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+helpviewer_keywords: language services [managed package framework], about language services
 ms.assetid: bb44e27b-d228-463c-b2cf-cd5c24c7c1b5
-caps.latest.revision: 17
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 17
+caps.latest.revision: "17"
+author: gregvanl
+ms.author: gregvanl
+manager: ghogen
+ms.openlocfilehash: d586851da7d02f89335a3920364e25b7f4876860
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: fr-FR
+ms.lasthandoff: 10/31/2017
 ---
-# Vue d’ensemble du Service de langage ancien
-[!INCLUDE[vs2017banner](../../code-quality/includes/vs2017banner.md)]
-
-Un service de langage fournit la prise en charge d'éditeur qui vous permet d'implémenter certaines fonctionnalités de [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] .  Les classes de service de \(MPF\) langage du package fournissent la prise en charge complète des fonctionnalités fréquent\-utilisées et la prise en charge partielle d'autres fonctionnalités.  
+# <a name="legacy-language-service-overview"></a>Vue d’ensemble du Service de langage hérité
+Un service de langage fournit la prise en charge de l’éditeur qui vous permet d’implémenter certaines [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] fonctionnalités. Les classes de service de langage Managed Package Framework (MPF) fournissent la prise en charge complète pour les fonctionnalités les plus courantes et la prise en charge partielle pour d’autres fonctionnalités.  
   
-## Fonctionnalités complètement prises en charge dans le MPF  
- Les classes de service de langage de MPF prennent en charge les fonctionnalités suivantes :  
+## <a name="fully-supported-features-in-the-mpf"></a>Fonctionnalités entièrement prises en charge dans le MPF  
+ Les classes de service de langage MPF prennent en charge les fonctionnalités suivantes :  
   
--   La coloration syntaxique  
+-   Mise en surbrillance de la syntaxe  
   
--   Mode Plan  
+-   mode Plan  
   
--   Commenter les blocs de code  
+-   Blocs de commentaires de code  
   
 -   Accolades correspondantes  
   
@@ -36,60 +37,60 @@ Un service de langage fournit la prise en charge d'éditeur qui vous permet d'im
   
 -   Propriétés de document personnalisées  
   
--   Les informations sur les paramètres Intellisense  
+-   Informations sur les paramètres IntelliSense  
   
--   Info express Intellisense  
+-   Info Express d’IntelliSense  
   
--   Achèvement de membres Intellisense  
+-   Saisie semi-automatique des membres IntelliSense  
   
--   Achèvement de mot Intellisense  
+-   Saisie semi-automatique IntelliSense word  
   
-## fonctionnalités partiellement prises en charge dans le MPF  
- Le MPF fournit uniquement la prise en charge partielle des fonctionnalités suivantes.  Cela signifie que vous devez implémenter des méthodes qui sont appelées par le MPF.  
+## <a name="partially-supported-features-in-the-mpf"></a>Fonctionnalités partiellement prises en charge dans le MPF  
+ MPF fournit la prise en charge partielle uniquement pour les fonctionnalités suivantes. Cela signifie que vous devez implémenter les méthodes qui sont appelées par MPF.  
   
--   Remettre en forme le code.  Vous fournissez le code qui implémente la remise en forme.  
+-   Remise en forme du code. Vous fournissez le code qui implémente la remise en forme.  
   
--   La validation des points d'arrêt en identifiant les étendues valides de code.  Vous fournissez le code qui identifie les étendues de code.  
+-   Validation de points d’arrêt en identifiant les étendues de code valide. Vous fournissez le code qui identifie les étendues de code.  
   
--   La prise en charge de la fenêtre d' **Automatique** de débogueur pour afficher des variables.  Vous fournissez le code qui détermine les éléments à afficher dans la fenêtre.  
+-   Prise en charge du débogueur **automatique** fenêtre d’affichage des variables. Vous fournissez le code qui détermine les éléments à afficher dans la fenêtre.  
   
--   prendre en charge **barre de navigation** pour la navigation rapide entre les types et les membres.  Vous implémentez et retournez une classe d'assistance qui remplit listes dans les zones de liste déroulante de **barre de navigation** .  
+-   Prise en charge la **barre de Navigation** pour la navigation rapide entre les types et membres. Vous implémentez et retourner une classe d’assistance qui remplit les listes dans le **barre de Navigation** zones de liste déroulante.  
   
-## Implémentation  
- Vous devez effectuer plusieurs étapes pour implémenter le service de langage lui\-même et les fonctionnalités du service de langage que vous souhaitez prendre en charge pour votre langage.  Ces étapes sont décrites dans les rubriques suivantes :  
+## <a name="implementation"></a>Implémentation  
+ Vous devez effectuer plusieurs étapes pour implémenter le service de langage lui-même et les fonctionnalités de service de langage que vous souhaitez prendre en charge pour votre langue. Ces étapes sont décrites dans les rubriques suivantes :  
   
--   [L’implémentation d’un Service de langage](../../extensibility/internals/implementing-a-legacy-language-service2.md)  
+-   [Implémentation d’un Service de langage hérité](../../extensibility/internals/implementing-a-legacy-language-service2.md)  
   
--   [L’inscription d’un Service de langage](../../extensibility/internals/registering-a-legacy-language-service1.md)  
+-   [L’inscription d’un Service de langage hérité](../../extensibility/internals/registering-a-legacy-language-service1.md)  
   
--   [Coloration de syntaxe dans un Service de langage hérité](../../extensibility/internals/syntax-colorizing-in-a-legacy-language-service.md)  
+-   [Couleurs de syntaxe dans un service de langage hérité](../../extensibility/internals/syntax-colorizing-in-a-legacy-language-service.md)  
   
--   [Accolades correspondantes dans un Service de langage hérité](../../extensibility/internals/brace-matching-in-a-legacy-language-service.md)  
+-   [Accolades correspondantes dans un service de langage hérité](../../extensibility/internals/brace-matching-in-a-legacy-language-service.md)  
   
--   [Mode plan dans un Service de langage hérité](../../extensibility/internals/outlining-in-a-legacy-language-service.md)  
+-   [Mode Plan dans un service de langage hérité](../../extensibility/internals/outlining-in-a-legacy-language-service.md)  
   
--   [Commentaires de Code dans un Service de langage hérité](../../extensibility/internals/commenting-code-in-a-legacy-language-service.md)  
+-   [Commentaire du code dans un service de langage hérité](../../extensibility/internals/commenting-code-in-a-legacy-language-service.md)  
   
--   [Le reformatage du Code dans un Service de langage hérité](../../extensibility/internals/reformatting-code-in-a-legacy-language-service.md)  
+-   [Reformatage du code dans un service de langage hérité](../../extensibility/internals/reformatting-code-in-a-legacy-language-service.md)  
   
--   [Propriétés de Document personnalisées dans un Service de langage hérité](../../extensibility/internals/custom-document-properties-in-a-legacy-language-service.md)  
+-   [Propriétés de document personnalisé dans un service de langage hérité](../../extensibility/internals/custom-document-properties-in-a-legacy-language-service.md)  
   
--   [Prise en charge des extraits de Code dans un Service de langage hérité](../../extensibility/internals/support-for-code-snippets-in-a-legacy-language-service.md)  
+-   [Prise en charge des extraits de code dans un service de langage hérité](../../extensibility/internals/support-for-code-snippets-in-a-legacy-language-service.md)  
   
--   [Prise en charge de la barre de Navigation dans un Service de langage hérité](../../extensibility/internals/support-for-the-navigation-bar-in-a-legacy-language-service.md)  
+-   [Prise en charge de la barre de navigation dans un service de langage hérité](../../extensibility/internals/support-for-the-navigation-bar-in-a-legacy-language-service.md)  
   
--   [Saisie semi\-automatique des mots dans un Service de langage hérité](../../extensibility/internals/word-completion-in-a-legacy-language-service.md)  
+-   [Saisie semi-automatique de mot dans un service de langage hérité](../../extensibility/internals/word-completion-in-a-legacy-language-service.md)  
   
--   [Fin de membre dans un Service de langage hérité](../../extensibility/internals/member-completion-in-a-legacy-language-service.md)  
+-   [Saisie semi-automatique de membre dans un service de langage hérité](../../extensibility/internals/member-completion-in-a-legacy-language-service.md)  
   
 -   [Informations sur les paramètres dans un Service de langage hérité](../../extensibility/internals/parameter-info-in-a-legacy-language-service2.md)  
   
--   [Infos Express dans un Service de langage hérité](../../extensibility/internals/quick-info-in-a-legacy-language-service.md)  
+-   [Informations rapides dans un service de langage hérité](../../extensibility/internals/quick-info-in-a-legacy-language-service.md)  
   
--   [Prise en charge de la fenêtre automatique dans un Service de langage hérité](../../extensibility/internals/support-for-the-autos-window-in-a-legacy-language-service.md)  
+-   [Prise en charge de Fenêtre Automatique dans un service de langage hérité](../../extensibility/internals/support-for-the-autos-window-in-a-legacy-language-service.md)  
   
--   [Validation des points d’arrêt dans un Service de langage hérité](../../extensibility/internals/validating-breakpoints-in-a-legacy-language-service.md)  
+-   [Validation des points d’arrêt dans un service de langage hérité](../../extensibility/internals/validating-breakpoints-in-a-legacy-language-service.md)  
   
-## Voir aussi  
+## <a name="see-also"></a>Voir aussi  
  [Implémentation d’un Service de langage hérité](../../extensibility/internals/implementing-a-legacy-language-service1.md)   
- [Extensibilité du Service de langage ancien](../../extensibility/internals/legacy-language-service-extensibility.md)
+ [Extensibilité du service de langage hérité](../../extensibility/internals/legacy-language-service-extensibility.md)

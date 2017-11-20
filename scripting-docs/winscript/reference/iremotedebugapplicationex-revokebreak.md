@@ -1,43 +1,46 @@
 ---
-title: "IRemoteDebugApplicationEx:RevokeBreak | Microsoft Docs"
-ms.custom: ""
-ms.date: "01/18/2017"
-ms.prod: "windows-script-interfaces"
-ms.reviewer: ""
-ms.suite: ""
-ms.tgt_pltfrm: ""
-ms.topic: "reference"
+title: IRemoteDebugApplicationEx:RevokeBreak | Documents Microsoft
+ms.custom: 
+ms.date: 01/18/2017
+ms.prod: windows-script-interfaces
+ms.reviewer: 
+ms.suite: 
+ms.tgt_pltfrm: 
+ms.topic: reference
 apiname: IRemoteDebugApplicationEx:RevokeBreak
 apilocation: scrobj.dll
-helpviewer_keywords: 
-  - "IRemoteDebugApplicationEx:RevokeBreak"
+helpviewer_keywords: IRemoteDebugApplicationEx:RevokeBreak
 ms.assetid: 1f077860-0a39-4ec9-b676-ae0712819c7b
-caps.latest.revision: 5
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 5
+caps.latest.revision: "5"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: 8712431dd72cd25e2ba4203d2b076a163e005be6
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.translationtype: MT
+ms.contentlocale: fr-FR
+ms.lasthandoff: 10/27/2017
 ---
-# IRemoteDebugApplicationEx:RevokeBreak
-Révoque une commande utilisable sur interruption.  
+# <a name="iremotedebugapplicationexrevokebreak"></a>IRemoteDebugApplicationEx:RevokeBreak
+Révoque une commande d’arrêt.  
   
-## Syntaxe  
+## <a name="syntax"></a>Syntaxe  
   
 ```  
 HRESULT RevokeBreak( );  
 ```  
   
-#### Paramètres  
- Aucun  
+#### <a name="parameters"></a>Paramètres  
+ Aucun.  
   
-## Valeur de retour  
- La méthode retourne `HRESULT`.  Les valeurs possibles incluent, mais ne sont pas limitées à, celles dans le tableau suivant.  
+## <a name="return-value"></a>Valeur de retour  
+ La méthode retourne `HRESULT`. Les valeurs possibles sont notamment celles figurant dans le tableau suivant.  
   
 |Valeur|Description|  
-|------------|-----------------|  
+|-----------|-----------------|  
 |`S_OK`|La méthode a réussi.|  
   
-## Notes  
+## <a name="remarks"></a>Remarques  
   
-## Voir aussi  
- [IRemoteDebugApplicationEx Interface](http://msdn.microsoft.com/fr-fr/2f65fa67-06b7-4053-8945-22383ab66343)
+## <a name="see-also"></a>Voir aussi  
+ [Interface IRemoteDebugApplicationEx](http://msdn.microsoft.com/en-us/2f65fa67-06b7-4053-8945-22383ab66343)

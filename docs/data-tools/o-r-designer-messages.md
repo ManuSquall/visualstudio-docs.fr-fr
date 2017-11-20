@@ -1,5 +1,5 @@
 ---
-title: O-R Designer Messages | Microsoft Docs
+title: Messages du Concepteur O-R | Documents Microsoft
 ms.custom: 
 ms.date: 11/04/2016
 ms.reviewer: 
@@ -7,71 +7,57 @@ ms.suite:
 ms.tgt_pltfrm: 
 ms.topic: article
 ms.assetid: 42178ae8-be6c-4df6-9b7a-cdac24d71dd2
-caps.latest.revision: 2
+caps.latest.revision: "2"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-translation.priority.ht:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
-ms.translationtype: HT
-ms.sourcegitcommit: 33a857c2d8585e2e8da9bcd9158190366a3b6830
-ms.openlocfilehash: bf4ba5fbd5b8183a5b5155ca49b33fabe21e8446
-ms.contentlocale: fr-fr
-ms.lasthandoff: 09/07/2017
-
+ms.technology: vs-data-tools
+ms.openlocfilehash: 11d7c7b510f2714af13d84614daba8d2a10bf099
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: fr-FR
+ms.lasthandoff: 10/31/2017
 ---
-# <a name="or-designer-messages"></a>O/R Designer Messages
-This topic lists the messages that you can encounter when you work with the O/R Designer.  
+# <a name="or-designer-messages"></a>Messages du Concepteur O/R
+Cette rubrique répertorie les messages que vous pourrez rencontrer en travaillant avec le Concepteur O/R.  
   
-## <a name="in-this-section"></a>In This Section  
- [Cannot create an association \<association name> - property listed twice](../data-tools/cannot-create-an-association-association-name-property-listed-twice.md)  
+## <a name="in-this-section"></a>Dans cette section  
+ [Impossible de créer une association \<nom de l’association >-propriété apparaît deux fois](../data-tools/cannot-create-an-association-association-name-property-listed-twice.md)  
   
- [Cannot create an association \<association name> - property types do not match](../data-tools/cannot-create-an-association-association-name-property-types-do-not-match.md)  
+ [Impossible de créer une association \<nom de l’association >-types de propriété ne correspondent pas](../data-tools/cannot-create-an-association-association-name-property-types-do-not-match.md)  
   
- [Changing the return type of a DataContext method cannot be undone](../data-tools/changing-the-return-type-of-a-datacontext-method-cannot-be-undone.md)  
+ [Impossible d’annuler la modification du type de retour d’une méthode DataContext](../data-tools/changing-the-return-type-of-a-datacontext-method-cannot-be-undone.md)  
   
- [Could not retrieve schema information for database object \<object name>](../data-tools/could-not-retrieve-schema-information-for-database-object-object-name.md)  
+ [Pas pu récupérer les informations de schéma pour l’objet de base de données \<nom d’objet >](../data-tools/could-not-retrieve-schema-information-for-database-object-object-name.md)  
   
- [One or more selected database objects return a schema that does not match the schema of the target class](../data-tools/one-or-more-selected-database-objects-return-a-schema-that-does-not-match-the-schema-of-the-target-class.md)  
+ [Un ou plusieurs des objets de base de données sélectionnés retournent un schéma qui ne correspond pas au schéma de la classe cible](../data-tools/one-or-more-selected-database-objects-return-a-schema-that-does-not-match-the-schema-of-the-target-class.md)  
   
- [One or more selected items contain a data type that is not supported by the designer](../data-tools/one-or-more-selected-items-contain-a-data-type-that-is-not-supported-by-the-designer.md)  
+ [Un ou plusieurs éléments sélectionnés contiennent un type de données non pris en charge par le concepteur](../data-tools/one-or-more-selected-items-contain-a-data-type-that-is-not-supported-by-the-designer.md)  
   
- [The connection property in the Application Settings file is missing or incorrect](../data-tools/the-connection-property-in-the-application-settings-file-is-missing-or-incorrect.md)  
+ [La propriété de connexion est manquante ou incorrecte dans le fichier des paramètres de l’application](../data-tools/the-connection-property-in-the-application-settings-file-is-missing-or-incorrect.md)  
   
- [The designer cannot be modified while debugging](../data-tools/the-designer-cannot-be-modified-while-debugging.md)  
+ [Le concepteur ne peut pas être modifié lors du débogage](../data-tools/the-designer-cannot-be-modified-while-debugging.md)  
   
- [The objects you are adding to the designer use a different data connection than the designer is currently using](../data-tools/the-objects-you-are-adding-to-the-designer-use-a-different-data-connection-than-the-designer-is-currently-using.md)  
+ [Les objets que vous ajoutez au concepteur utilisent une connexion de données différente de celle du concepteur en cours d’utilisation](../data-tools/the-objects-you-are-adding-to-the-designer-use-a-different-data-connection-than-the-designer-is-currently-using.md)  
   
- [The property \<property name> cannot be deleted](../data-tools/the-property-property-name-cannot-be-deleted.md)  
+ [La propriété \<nom de la propriété > ne peut pas être supprimé.](../data-tools/the-property-property-name-cannot-be-deleted.md)  
   
- [The property \<property name> cannot be deleted because it is participating in the association \<association name>](../data-tools/the-property-property-name-cannot-be-deleted-because-it-is-participating-in-the-association-association-name.md)  
+ [La propriété \<nom de la propriété > ne peut pas être supprimé, car il participe à l’association \<nom de l’association >](../data-tools/the-property-property-name-cannot-be-deleted-because-it-is-participating-in-the-association-association-name.md)  
   
- [The selected class cannot be deleted because it is used as a return type for one or more DataContext methods](../data-tools/the-selected-class-cannot-be-deleted-because-it-is-used-as-a-return-type-for-one-or-more-datacontext-methods.md)  
+ [Impossible de supprimer la classe sélectionnée, car elle est utilisée comme type de retour pour une ou plusieurs méthodes DataContext](../data-tools/the-selected-class-cannot-be-deleted-because-it-is-used-as-a-return-type-for-one-or-more-datacontext-methods.md)  
   
- [The selected connection uses an unsupported database provider](../data-tools/the-selected-connection-uses-an-unsupported-database-provider.md)  
+ [La connexion sélectionnée utilise un fournisseur de base de données non pris en charge](../data-tools/the-selected-connection-uses-an-unsupported-database-provider.md)  
   
- [This related method is the backing method for the following default insert, update, or delete methods](../data-tools/this-related-method-is-the-backing-method-for-the-following-default-insert-update-or-delete-methods.md)  
+ [Cette méthode associée est la méthode de stockage pour les méthodes par défaut d’insertion, de mise à jour ou de suppression suivantes](../data-tools/this-related-method-is-the-backing-method-for-the-following-default-insert-update-or-delete-methods.md)  
   
- [Warning. Changes have been made to the Configure Behavior dialog box that have not been applied](../data-tools/warning-changes-have-been-made-to-the-configure-behavior-dialog-box-that-have-not-been-applied.md)  
+ [Avertissement. Vous avez effectué certaines modifications dans la boîte de dialogue Configurer le comportement mais elles n’ont pas été appliquées](../data-tools/warning-changes-have-been-made-to-the-configure-behavior-dialog-box-that-have-not-been-applied.md)  
   
- [You have selected a database object from an unsupported database provider](../data-tools/you-have-selected-a-database-object-from-an-unsupported-database-provider.md)  
+ [Vous avez sélectionné un objet de base de données dans un fournisseur de base de données non pris en charge](../data-tools/you-have-selected-a-database-object-from-an-unsupported-database-provider.md)  
   
-## <a name="reference"></a>Reference  
+## <a name="reference"></a>Référence  
  <xref:System.Data.Linq>  
   
-## <a name="related-sections"></a>Related Sections  
- [LINQ to SQL Tools in Visual Studio](../data-tools/linq-to-sql-tools-in-visual-studio2.md)  
+## <a name="related-sections"></a>Rubriques connexes  
+ [Outils LINQ to SQL dans Visual Studio](../data-tools/linq-to-sql-tools-in-visual-studio2.md)  
   
  [LINQ to SQL](/dotnet/framework/data/adonet/sql/linq/index)

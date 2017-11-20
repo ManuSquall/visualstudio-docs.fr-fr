@@ -1,7 +1,7 @@
 ---
-title: Bind Windows Forms controls to data in Visual Studio | Microsoft Docs
+title: "Lier des contrôles Windows Forms à des données dans Visual Studio | Documents Microsoft"
 ms.custom: 
-ms.date: 11/04/2016
+ms.date: 11/03/2017
 ms.reviewer: 
 ms.suite: 
 ms.tgt_pltfrm: 
@@ -16,75 +16,66 @@ helpviewer_keywords:
 - displaying data, Windows Forms
 - data [Windows Forms], displaying
 ms.assetid: 243338ef-41af-4cc5-aff7-1e830236f0ec
-caps.latest.revision: 37
+caps.latest.revision: "37"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-translation.priority.ht:
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- ru-ru
-- zh-cn
-- zh-tw
-translation.priority.mt:
-- cs-cz
-- pl-pl
-- pt-br
-- tr-tr
-ms.translationtype: HT
-ms.sourcegitcommit: 33a857c2d8585e2e8da9bcd9158190366a3b6830
-ms.openlocfilehash: 1566c4f4182ac20da8542e67b978dc4b8ce815e1
-ms.contentlocale: fr-fr
-ms.lasthandoff: 09/07/2017
-
+ms.technology: vs-data-tools
+ms.openlocfilehash: 5936edd6096bd708dda1b03f60f94cea3d6c1e5b
+ms.sourcegitcommit: ee42a8771f0248db93fd2e017a22e2506e0f9404
+ms.translationtype: MT
+ms.contentlocale: fr-FR
+ms.lasthandoff: 11/09/2017
 ---
-# <a name="bind-windows-forms-controls-to-data-in-visual-studio"></a>Bind Windows Forms controls to data in Visual Studio
-You can display data to users of your application by binding data to Windows Forms. To create these data-bound controls, you can drag items from the **Data Sources** window onto the Windows Forms Designer in Visual Studio. This topic describes some of the most common tasks, tools, and classes involved in creating data-bound Windows Forms applications.  
+# <a name="bind-windows-forms-controls-to-data-in-visual-studio"></a>Lier des contrôles Windows Forms à des données dans Visual Studio
+Vous pouvez afficher des données pour les utilisateurs de votre application en liant des données à des Windows Forms. Pour créer ces contrôles liés aux données, vous pouvez faire glisser des éléments à partir de la **des Sources de données** fenêtre sur le Concepteur Windows Forms dans Visual Studio.
   
- ![Data Source drag operation](../data-tools/media/raddata-data-source-drag-operation.png "raddata Data Source drag operation")  
+![Opération de glissement de Source de données](../data-tools/media/raddata-data-source-drag-operation.png "opération de glissement de raddata Source de données")
+
+Avant de faire glisser des éléments, vous pouvez définir le type de contrôle que vous voulez lier. Des valeurs différentes s’affichent selon que vous choisissez la table elle-même, ou une colonne individuelle.  Vous pouvez également définir des valeurs personnalisées. Pour une table, « Détails » signifie que chaque colonne est liée à une commande distincte.  
+
+![Lier la source de données pour le DataGridView](../data-tools/media/raddata-bind-data-source-to-datagridview.png "raddata source de données liée au DataGridView")  
   
- For general information about how to create data-bound controls in Visual Studio, see [Bind controls to data in Visual Studio](../data-tools/bind-controls-to-data-in-visual-studio.md). For more information about data binding in Windows Forms, see [Windows Forms Data Binding](/dotnet/framework/winforms/windows-forms-data-binding).  
+## <a name="bindingsource-and-bindingnavigator-controls"></a>BindingSource et contrôles de BindingNavigator
+Le composant <xref:System.Windows.Forms.BindingSource> remplit deux fonctions. Tout d’abord, il fournit une couche d’abstraction lors de la liaison des contrôles aux données. Contrôles du formulaire sont liés à la <xref:System.Windows.Forms.BindingSource> composant au lieu de directement à une source de données. En second lieu, il peut gérer une collection d’objets. Ajout d’un type à la <xref:System.Windows.Forms.BindingSource> crée une liste de ce type.  
   
-## <a name="in-this-section"></a>In this section  
+Pour plus d’informations sur le <xref:System.Windows.Forms.BindingSource> composant, consultez :  
   
--   [Bind Windows Forms controls to data](../data-tools/bind-windows-forms-controls-to-data.md)  
+-   [BindingSource, composant](/dotnet/framework/winforms/controls/bindingsource-component)  
   
--   [Commit in-process edits on data-bound controls before saving data](../data-tools/commit-in-process-edits-on-data-bound-controls-before-saving-data.md)  
+-   [Vue d'ensemble du composant BindingSource](/dotnet/framework/winforms/controls/bindingsource-component-overview)  
   
--   [Create lookup tables in Windows Forms applications](../data-tools/create-lookup-tables-in-windows-forms-applications.md)  
+-   [Architecture du composant BindingSource](/dotnet/framework/winforms/controls/bindingsource-component-architecture)  
   
--   [Create a Windows Form to search data](../data-tools/create-a-windows-form-to-search-data.md)  
+Le [contrôle BindingNavigator](/dotnet/framework/winforms/controls/bindingnavigator-control-windows-forms) fournit une interface utilisateur pour naviguer dans les données affichées par une application Windows.
+
+## <a name="bind-to-data-in-a-datagridview-control"></a>Lier à des données dans un contrôle DataGridView  
+Pour un [contrôle DataGridView](/dotnet/framework/winforms/controls/datagridview-control-overview-windows-forms), la table entière est liée à ce contrôle unique. Lorsque vous faites glisser un contrôle DataGridView à l’écran, un outil de la frange pour parcourir les enregistrements (<xref:System.Windows.Forms.BindingNavigator>) s’affiche également. A [DataSet](../data-tools/dataset-tools-in-visual-studio.md), [TableAdapter](../data-tools/create-and-configure-tableadapters.md), <xref:System.Windows.Forms.BindingSource>, et <xref:System.Windows.Forms.BindingNavigator> s’affichent dans la barre d’état du composant. Dans l’illustration suivante, un TableAdapterManager est également ajouté, car la table Customers a une relation à la table Orders. Ces variables sont déclarées dans le code généré automatiquement en tant que membres privés de la classe de formulaire. Le code généré automatiquement pour remplir le contrôle DataGridView se trouve dans le Gestionnaire d’événements form_load. Le code de l’enregistrement des données pour mettre à jour la base de données se trouve dans le Gestionnaire d’événements de sauvegarde pour le BindingNavigator. Vous pouvez déplacer ou modifier ce code si nécessaire.  
   
--   [Create a Windows Forms user control that supports simple data binding](../data-tools/create-a-windows-forms-user-control-that-supports-simple-data-binding.md)  
+![GridView avec BindingNavigator](../data-tools/media/raddata-gridview-with-bindingnavigator.png "raddata GridView avec BindingNavigator")  
   
--   [Create a Windows Forms user control that supports complex data binding](../data-tools/create-a-windows-forms-user-control-that-supports-complex-data-binding.md)  
+Vous pouvez personnaliser le comportement du DataGridView et BindingNavigator en cliquant sur la balise active dans le coin supérieur droit de chaque :  
   
--   [Create a Windows Forms user control that supports lookup data binding](../data-tools/create-a-windows-forms-user-control-that-supports-lookup-data-binding.md)  
+![DataGridView et liaison le navigateur des balises actives](../data-tools/media/raddata-datagridview-and-binding-navigator-smart-tags.png "raddata DataGridView et liaison le navigateur des balises actives")  
   
--   [Pass data between forms](../data-tools/pass-data-between-forms.md)  
+Si les contrôles de votre application a besoin n’est pas disponible dans le **des Sources de données** fenêtre, vous pouvez ajouter des contrôles. Pour plus d’informations, consultez [ajouter des contrôles personnalisés à la fenêtre Sources de données](../data-tools/add-custom-controls-to-the-data-sources-window.md).  
   
-## <a name="bindingsource-component"></a>BindingSource component  
- The <xref:System.Windows.Forms.BindingSource> component serves two purposes. First, it provides a layer of abstraction when binding the controls on your form to data. Controls on the form are bound to the <xref:System.Windows.Forms.BindingSource> component (instead of being bound directly to a data source).  
+Vous pouvez également faire glisser des éléments à partir de la **des Sources de données** fenêtre vers des contrôles déjà présent sur un formulaire pour lier le contrôle aux données. Un contrôle qui est déjà lié aux données a ses données liaisons redéfinies sur l’élément déplacé sur celui-ci. Pour être des cibles de déplacement valides, les contrôles doivent être capables d’afficher le type de données sous-jacent de l’élément glissé sur à partir du **des Sources de données** fenêtre. Par exemple, il n’est pas valide, faites glisser un élément qui possède un type de données <xref:System.DateTime> sur un <xref:System.Windows.Forms.CheckBox>, car le <xref:System.Windows.Forms.CheckBox> n’est pas capable d’afficher une date.  
   
- Second, it can manage a collection of objects. Adding a type to the <xref:System.Windows.Forms.BindingSource> creates a list of that type.  
+## <a name="bind-to-data-in-individual-controls"></a>Lier à des données dans des contrôles individuels  
+Lorsque vous liez une source de données à « Détails », chaque colonne dans le jeu de données est liée à une commande distincte.  
   
- For more information about the <xref:System.Windows.Forms.BindingSource> component, see:  
+![Lier la source de données vers les détails](../data-tools/media/raddata-bind-data-source-to-details.png "raddata source de données liée aux détails")  
   
--   [BindingSource Component](/dotnet/framework/winforms/controls/bindingsource-component)  
+> [!IMPORTANT]
+> Notez que dans l’illustration précédente, vous faites glisser à partir de la propriété de commandes de la table Customers, et non à partir de la table Orders. En le liant à la propriété Customer.Orders, les commandes de navigation dans le contrôle DataGridView sont répercutées immédiatement dans les contrôles de détails. Si vous avez fait glisser à partir de la table Orders, les contrôles sont toujours liés au jeu de données, mais pas qu’ils ne sont pas synchronisés avec le contrôle DataGridView.  
   
--   [BindingSource Component Overview](/dotnet/framework/winforms/controls/bindingsource-component-overview)  
+L’illustration suivante montre la valeur par défaut des contrôles liés aux données qui sont ajoutés au formulaire une fois la propriété de commandes dans la table Customers est liée à « Détails » dans la **des Sources de données** fenêtre.  
   
--   [BindingSource Component Architecture](/dotnet/framework/winforms/controls/bindingsource-component-architecture)  
+![Table Orders est lié aux détails](../data-tools/media/raddata-orders-table-bound-to-details.png "raddata commandes tableau lié détails")  
   
-## <a name="bindingnavigator-control"></a>BindingNavigator control  
- This component provides a user interface for navigating through data displayed by a Windows application. For more information, see [BindingNavigator Control](/dotnet/framework/winforms/controls/bindingnavigator-control-windows-forms).  
+Notez également que chaque contrôle a une balise active. Cette balise permet les personnalisations qui s’appliquent à ce contrôle uniquement.
   
-## <a name="datagridview-control"></a>DataGridView control  
- To display and edit tabular data from many different kinds of data sources, use the <xref:System.Windows.Forms.DataGridView> control. You can bind data to a <xref:System.Windows.Forms.DataGridView> by using the <xref:System.Windows.Forms.DataGridView.DataSource%2A> property. For more information, see [DataGridView Control Overview](/dotnet/framework/winforms/controls/datagridview-control-overview-windows-forms).  
-  
-## <a name="see-also"></a>See Also  
- [Bind controls to data in Visual Studio](../data-tools/bind-controls-to-data-in-visual-studio.md)
+## <a name="see-also"></a>Voir aussi
+[Liaison de contrôles à des données dans Visual Studio](../data-tools/bind-controls-to-data-in-visual-studio.md)  
+[Liaison de données dans les Windows Forms (.NET Framework)](/dotnet/framework/winforms/windows-forms-data-binding)

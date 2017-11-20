@@ -1,125 +1,122 @@
 ---
-title: 'Walkthrough: Displaying Text in a Text Box in a Document Using a Button | Microsoft Docs'
+title: "Procédure pas à pas : Affichage de texte dans une zone de texte dans un Document à l’aide d’un bouton | Documents Microsoft"
 ms.custom: 
 ms.date: 02/02/2017
-ms.prod: visual-studio-dev14
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- office-development
+ms.technology: office-development
 ms.tgt_pltfrm: 
 ms.topic: article
 dev_langs:
 - VB
 - CSharp
-helpviewer_keywords:
-- text boxes, displaying text in documents
+helpviewer_keywords: text boxes, displaying text in documents
 ms.assetid: 04c54ed7-9f00-4068-aaec-1f3200110116
-caps.latest.revision: 60
-author: kempb
-ms.author: kempb
+caps.latest.revision: "60"
+author: gewarren
+ms.author: gewarren
 manager: ghogen
-ms.translationtype: HT
-ms.sourcegitcommit: eb5c9550fd29b0e98bf63a7240737da4f13f3249
-ms.openlocfilehash: a1ebba5882cb430ca4c03c2127a58abb32b2ee2d
-ms.contentlocale: fr-fr
-ms.lasthandoff: 08/30/2017
-
+ms.openlocfilehash: 75146e583f2b15557a2f88ba18ed5d8798c7603b
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: fr-FR
+ms.lasthandoff: 10/31/2017
 ---
-# <a name="walkthrough-displaying-text-in-a-text-box-in-a-document-using-a-button"></a>Walkthrough: Displaying Text in a Text Box in a Document Using a Button
-  This walkthrough demonstrates how to use buttons and text boxes in a document-level customization for Microsoft Office Word.  
+# <a name="walkthrough-displaying-text-in-a-text-box-in-a-document-using-a-button"></a>Procédure pas à pas : affichage de texte dans une zone de texte d'un document à l'aide d'un bouton
+  Cette procédure pas à pas montre comment utiliser les boutons et les zones de texte dans une personnalisation au niveau du document pour Microsoft Office Word.  
   
  [!INCLUDE[appliesto_wdalldoc](../vsto/includes/appliesto-wdalldoc-md.md)]  
   
- This walkthrough illustrates the following tasks:  
+ Cette procédure pas à pas décrit les tâches suivantes :  
   
--   Adding controls to the Word document in a document-level project at design time.  
+-   Ajout de contrôles au document Word d'un projet de niveau document au moment du design.  
   
--   Populating a text box when a button is clicked.  
+-   Remplissage d'une zone de texte lorsqu'un clic est effectué.  
   
  [!INCLUDE[note_settings_general](../sharepoint/includes/note-settings-general-md.md)]  
   
-## <a name="prerequisites"></a>Prerequisites  
- You need the following components to complete this walkthrough:  
+## <a name="prerequisites"></a>Conditions préalables  
+ Pour exécuter cette procédure pas à pas, vous devez disposer des composants suivants :  
   
 -   [!INCLUDE[vsto_vsprereq](../vsto/includes/vsto-vsprereq-md.md)]  
   
 -   Microsoft Word  
   
-## <a name="creating-the-project"></a>Creating the Project  
- The first step is to create a Word Document project.  
+## <a name="creating-the-project"></a>Création du projet  
+ La première étape consiste à créer un projet de document Word.  
   
-#### <a name="to-create-a-new-project"></a>To create a new project  
+#### <a name="to-create-a-new-project"></a>Pour créer un projet  
   
-1.  Create a Word Document project with the name **My Word Button**. In the wizard, select **Create a new document**.  
+1.  Créer un projet de Document Word portant le nom **mon bouton Word**. Dans l’Assistant, sélectionnez **créer un nouveau document**.  
   
-     For more information, see [How to: Create Office Projects in Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md).  
+     Pour plus d'informations, consultez [How to: Create Office Projects in Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md).  
   
-     Visual Studio opens the new Word document in the designer and adds the **My Word Button** project to **Solution Explorer**.  
+     Visual Studio ouvre le nouveau document Word dans le concepteur et ajoute le **mon bouton Word** projet **l’Explorateur de solutions**.  
   
-## <a name="adding-controls-to-the-word-document"></a>Adding Controls to the Word Document  
- The user interface controls consist of a button and a text box on the Word document.  
+## <a name="adding-controls-to-the-word-document"></a>Ajout de contrôles au document Word  
+ Les contrôles d'interface utilisateur se composent d'un bouton et une zone de texte dans le document Word.  
   
-#### <a name="to-add-a-button-and-a-text-box"></a>To add a button and a text box  
+#### <a name="to-add-a-button-and-a-text-box"></a>Pour ajouter un bouton et une zone de texte  
   
-1.  Verify that the document is open in the Visual Studio designer.  
+1.  Vérifiez que le document est ouvert dans le concepteur Visual Studio.  
   
-2.  From the **Common Controls** tab of the **Toolbox**, drag a <xref:Microsoft.Office.Tools.Word.Controls.TextBox> control to the document.  
+2.  À partir de la **contrôles communs** onglet de la **boîte à outils**, faites glisser un <xref:Microsoft.Office.Tools.Word.Controls.TextBox> contrôle au document.  
   
     > [!NOTE]  
-    >  In Word, controls are dropped in-line with text by default. You can modify the way controls and shape objects are inserted by changing the default on the **Edit** tab of the **Options** dialog box in Word.  
+    >  Dans Word, les contrôles sont déposés en ligne avec le texte par défaut. Vous pouvez modifier les façon dont les contrôles et les objets de forme sont insérés en modifiant la valeur par défaut sur le **modifier** onglet de la **Options** boîte de dialogue dans Word.  
   
-3.  On the **View** menu, click **Properties Window**.  
+3.  Dans le menu **Affichage** , cliquez sur **Fenêtre Propriétés**.  
   
-4.  Find **TextBox1** in the **Properties** window drop-down box and change the **Name** property of the text box to **displayText**.  
+4.  Rechercher **TextBox1** dans les **propriétés** la liste déroulante de la fenêtre et modifier le **nom** propriété de la zone de texte **displayText**.  
   
-5.  Drag a **Button** control to the document and change the following properties.  
+5.  Faites glisser un **bouton** contrôle au document et modifiez les propriétés suivantes.  
   
-    |Property|Value|  
+    |Propriété|Valeur|  
     |--------------|-----------|  
-    |**Name**|**insertText**|  
-    |**Text**|**Insert Text**|  
+    |**Nom**|**insertText**|  
+    |**Text**|**Insérer du texte**|  
   
- Now you can write the code that will run when the button is clicked.  
+ Vous pouvez maintenant écrire le code qui s'exécute lors d'un clic sur le bouton.  
   
-## <a name="populating-the-text-box-when-the-button-is-clicked"></a>Populating the Text Box When the Button Is Clicked  
- Every time the user clicks the button, **Hello World!** is added to the text box.  
+## <a name="populating-the-text-box-when-the-button-is-clicked"></a>Remplissage d'une zone de texte lorsqu'un clic est effectué  
+ Chaque fois que l’utilisateur clique sur le bouton, **Hello World !** est ajouté à la zone de texte.  
   
-#### <a name="to-write-to-the-text-box-when-the-button-is-clicked"></a>To write to the text box when the button is clicked  
+#### <a name="to-write-to-the-text-box-when-the-button-is-clicked"></a>Pour écrire dans la zone de texte lorsqu'un clic est effectué  
   
-1.  In **Solution Explorer**, right-click **ThisDocument**, and then click **View Code** on the shortcut menu.  
+1.  Dans **l’Explorateur de solutions**, avec le bouton droit **ThisDocument**, puis cliquez sur **afficher le Code** dans le menu contextuel.  
   
-2.  Add the following code to the <xref:System.Windows.Forms.Control.Click> event handler of the button.  
+2.  Ajoutez le code suivant au gestionnaire d'événements <xref:System.Windows.Forms.Control.Click> du bouton :  
   
-     [!code-vb[Trin_VstcoreProgrammingControlsWord#7](../vsto/codesnippet/VisualBasic/my chart options/ThisDocument.vb#7)]  [!code-csharp[Trin_VstcoreProgrammingControlsWord#7](../vsto/codesnippet/CSharp/Trin_VstcoreProgrammingControlsWordCS/ThisDocument.cs#7)]  
+     [!code-vb[Trin_VstcoreProgrammingControlsWord#7](../vsto/codesnippet/VisualBasic/my chart options/ThisDocument.vb#7)]
+     [!code-csharp[Trin_VstcoreProgrammingControlsWord#7](../vsto/codesnippet/CSharp/Trin_VstcoreProgrammingControlsWordCS/ThisDocument.cs#7)]  
   
-3.  In C#, you must add an event handler for the button to the <xref:Microsoft.Office.Tools.Word.Document.Startup> event. For information about creating event handlers, see [How to: Create Event Handlers in Office Projects](../vsto/how-to-create-event-handlers-in-office-projects.md).  
+3.  En C#, vous devez ajouter un gestionnaire d'événements du bouton à l'événement <xref:Microsoft.Office.Tools.Word.Document.Startup>. Pour plus d’informations sur la création de gestionnaires d’événements, consultez [Comment : créer des gestionnaires d’événements dans les projets Office](../vsto/how-to-create-event-handlers-in-office-projects.md).  
   
      [!code-csharp[Trin_VstcoreProgrammingControlsWord#8](../vsto/codesnippet/CSharp/Trin_VstcoreProgrammingControlsWordCS/ThisDocument.cs#8)]  
   
-## <a name="testing-the-application"></a>Testing the Application  
- You can now test your document to make sure that the message **Hello World!** appears in the text box when you click the button.  
+## <a name="testing-the-application"></a>Test de l'application  
+ Vous pouvez maintenant tester votre document pour vous assurer que le message **Hello World !** s’affiche dans la zone de texte lorsque vous cliquez sur le bouton.  
   
-#### <a name="to-test-your-document"></a>To test your document  
+#### <a name="to-test-your-document"></a>Pour tester votre document  
   
-1.  Press F5 to run your project.  
+1.  Appuyez sur F5 pour exécuter votre projet.  
   
-2.  Click the button.  
+2.  Cliquez sur le bouton.  
   
-3.  Confirm that **Hello World!** appears in the text box.  
+3.  Vérifiez que **Hello World !** s’affiche dans la zone de texte.  
   
-## <a name="next-steps"></a>Next Steps  
- This walkthrough shows the basics of using buttons and text boxes on Word documents. Here are some tasks that might come next:  
+## <a name="next-steps"></a>Étapes suivantes  
+ Cette procédure pas à pas présente les notions de base de l'utilisation des boutons et des zones de texte dans les documents Word. Voici quelques tâches susceptibles de venir après :  
   
--   Using a combo box to change formatting. For more information, see [Walkthrough: Changing Document Formatting Using CheckBox Controls](../vsto/walkthrough-changing-document-formatting-using-checkbox-controls.md).  
+-   Utilisation d'une zone de liste déroulante pour modifier la mise en forme. Pour plus d’informations, consultez [procédure pas à pas : modification de Document mise en forme à l’aide de contrôles CheckBox](../vsto/walkthrough-changing-document-formatting-using-checkbox-controls.md).  
   
--   Using radio buttons to select chart styles. For more information, see [Walkthrough: Updating a Chart in a Document Using Radio Buttons](../vsto/walkthrough-updating-a-chart-in-a-document-using-radio-buttons.md).  
+-   Utilisation de cases d'option pour sélectionner des styles de graphique. Pour plus d’informations, consultez [procédure pas à pas : mise à jour d’un graphique dans un Document à l’aide de cases d’option](../vsto/walkthrough-updating-a-chart-in-a-document-using-radio-buttons.md).  
   
-## <a name="see-also"></a>See Also  
- [Windows Forms Controls on Office Documents Overview](../vsto/windows-forms-controls-on-office-documents-overview.md)   
- [Walkthroughs Using Word](../vsto/walkthroughs-using-word.md)   
- [Office Development Samples and Walkthroughs](../vsto/office-development-samples-and-walkthroughs.md)   
- [How to: Add Windows Forms Controls to Office Documents](../vsto/how-to-add-windows-forms-controls-to-office-documents.md)   
- [Host Items and Host Controls Overview](../vsto/host-items-and-host-controls-overview.md)  
+## <a name="see-also"></a>Voir aussi  
+ [Contrôles Windows Forms dans une vue d’ensemble des Documents Office](../vsto/windows-forms-controls-on-office-documents-overview.md)   
+ [Procédures pas à pas utilisant Word](../vsto/walkthroughs-using-word.md)   
+ [Procédures pas à pas et des exemples de développement office](../vsto/office-development-samples-and-walkthroughs.md)   
+ [Comment : ajouter des contrôles Windows Forms à des Documents Office](../vsto/how-to-add-windows-forms-controls-to-office-documents.md)   
+ [Vue d’ensemble des éléments hôtes et des contrôles hôtes](../vsto/host-items-and-host-controls-overview.md)  
   
   

@@ -1,46 +1,29 @@
 ---
-title: BP_TYPE | Microsoft Docs
+title: BP_TYPE | Documents Microsoft
 ms.custom: 
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-sdk
+ms.technology: vs-ide-sdk
 ms.tgt_pltfrm: 
 ms.topic: article
-f1_keywords:
-- BP_TYPE
-helpviewer_keywords:
-- BP_TYPE enumeration
+f1_keywords: BP_TYPE
+helpviewer_keywords: BP_TYPE enumeration
 ms.assetid: ef07191e-7966-43ab-96fb-1a0b1db3115d
-caps.latest.revision: 10
+caps.latest.revision: "10"
+author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-translation.priority.mt:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
+ms.openlocfilehash: 0b7a03f3672e954c400bebcf66f97b62148b9fd9
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
 ms.translationtype: MT
-ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
-ms.openlocfilehash: 85c01d4ef648769bd821217d51aafcfb8d07381b
-ms.contentlocale: fr-fr
-ms.lasthandoff: 08/28/2017
-
+ms.contentlocale: fr-FR
+ms.lasthandoff: 10/31/2017
 ---
 # <a name="bptype"></a>BP_TYPE
-Specifies whether the breakpoint is at a code location, is a data location, or is another type of breakpoint.  
+Spécifie si le point d’arrêt à un emplacement de code, est un emplacement de données ou un autre type de point d’arrêt.  
   
-## <a name="syntax"></a>Syntax  
+## <a name="syntax"></a>Syntaxe  
   
 ```cpp  
 enum enum_BP_TYPE {   
@@ -61,30 +44,30 @@ public enum enum_BP_TYPE {
 };  
 ```  
   
-## <a name="members"></a>Members  
+## <a name="members"></a>Membres  
  BPT_NONE  
- Specifies no breakpoint type.  
+ Ne spécifie aucun type de point d’arrêt.  
   
  BPT_CODE  
- Specifies a code breakpoint.  
+ Spécifie un point d’arrêt de code.  
   
  BPT_DATA  
- Specifies a data breakpoint.  
+ Spécifie un point d’arrêt.  
   
  BPT_SPECIAL  
- Specifies a breakpoint that is neither a code nor a data type. This type is deprecated and should not be used.  
+ Spécifie un point d’arrêt qui n’est ni un code ni un type de données. Ce type est déconseillé et ne doit pas être utilisé.  
   
-## <a name="remarks"></a>Remarks  
- Passed as a parameter to the [GetBreakpointType](../../../extensibility/debugger/reference/idebugbreakpointresolution2-getbreakpointtype.md) and [GetBreakpointType](../../../extensibility/debugger/reference/idebugerrorbreakpointresolution2-getbreakpointtype.md) methods.  
+## <a name="remarks"></a>Remarques  
+ Passé en tant que paramètre à la [GetBreakpointType](../../../extensibility/debugger/reference/idebugbreakpointresolution2-getbreakpointtype.md) et [GetBreakpointType](../../../extensibility/debugger/reference/idebugerrorbreakpointresolution2-getbreakpointtype.md) méthodes.  
   
-## <a name="requirements"></a>Requirements  
- Header: msdbg.h  
+## <a name="requirements"></a>Spécifications  
+ En-tête : msdbg.h  
   
- Namespace: Microsoft.VisualStudio.Debugger.Interop  
+ Namespace : Microsoft.VisualStudio.Debugger.Interop  
   
- Assembly: Microsoft.VisualStudio.Debugger.Interop.dll  
+ Assembly : Microsoft.VisualStudio.Debugger.Interop.dll  
   
-## <a name="see-also"></a>See Also  
- [Enumerations](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)   
+## <a name="see-also"></a>Voir aussi  
+ [Énumérations](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)   
  [GetBreakpointType](../../../extensibility/debugger/reference/idebugbreakpointresolution2-getbreakpointtype.md)   
  [GetBreakpointType](../../../extensibility/debugger/reference/idebugerrorbreakpointresolution2-getbreakpointtype.md)

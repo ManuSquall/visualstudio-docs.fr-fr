@@ -1,62 +1,47 @@
 ---
-title: Registering the Program | Microsoft Docs
+title: Enregistrement du programme | Documents Microsoft
 ms.custom: 
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-sdk
+ms.technology: vs-ide-sdk
 ms.tgt_pltfrm: 
 ms.topic: article
 helpviewer_keywords:
 - programs, registration
 - debugging [Debugging SDK], program registration
 ms.assetid: d726a161-7db3-4ef4-b258-9f6a5be68418
-caps.latest.revision: 11
+caps.latest.revision: "11"
+author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-translation.priority.mt:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
+ms.openlocfilehash: e0b0c883293cd01e21facfcc2e4483d2c5bbf164
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
 ms.translationtype: MT
-ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
-ms.openlocfilehash: 939b047c531ef365ef9a57b8b0947ffa8b0e1575
-ms.contentlocale: fr-fr
-ms.lasthandoff: 08/28/2017
-
+ms.contentlocale: fr-FR
+ms.lasthandoff: 10/31/2017
 ---
-# <a name="registering-the-program"></a>Registering the Program
-After the debug engine has acquired a port, represented by an [IDebugPort2](../../extensibility/debugger/reference/idebugport2.md) interface, the next step in enabling the program to be debugged is to register it with the port. Once registered, the program is available for debugging by one of the following means:  
+# <a name="registering-the-program"></a>Enregistrement du programme
+Une fois que le moteur de débogage a acquis un port, représenté par un [IDebugPort2](../../extensibility/debugger/reference/idebugport2.md) interface, l’étape suivante dans le programme à déboguer est pour l’inscrire auprès du port. Une fois inscrit, le programme est disponible pour le débogage par une des méthodes suivantes :  
   
--   The process of attaching, which allows the debugger to gain complete debugging control of a running application.  
+-   Le processus d’association, ce qui permet au débogueur d’assumer le contrôle de débogage complète d’une application en cours d’exécution.  
   
--   Just-in-time (JIT) debugging, which allows for after-the-fact debugging of a program that runs independently of a debugger. When the run-time architecture catches a fault, the debugger is notified before the operating system or runtime environment releases the memory and resources of the faulting program.  
+-   Juste-à-temps (JIT) de débogage, ce qui permet de débogage après avoir fait d’un programme qui s’exécute indépendamment d’un débogueur. Lors de l’architecture de runtime intercepte une erreur, le débogueur est notifié avant que le système d’exploitation ou l’environnement d’exécution libère la mémoire et les ressources du programme défaillant.  
   
-## <a name="registering-procedure"></a>Registering Procedure  
+## <a name="registering-procedure"></a>L’inscription de procédure  
   
-#### <a name="to-register-your-program"></a>To register your program  
+#### <a name="to-register-your-program"></a>Pour enregistrer votre programme  
   
-1.  Call the [AddProgramNode](../../extensibility/debugger/reference/idebugportnotify2-addprogramnode.md) method implemented by the port.  
+1.  Appelez le [AddProgramNode](../../extensibility/debugger/reference/idebugportnotify2-addprogramnode.md) méthode implémentée par le port.  
   
-     `IDebugPortNotify2::AddProgramNode` requires a pointer to an [IDebugProgramNode2](../../extensibility/debugger/reference/idebugprogramnode2.md) interface.  
+     `IDebugPortNotify2::AddProgramNode`nécessite un pointeur vers un [IDebugProgramNode2](../../extensibility/debugger/reference/idebugprogramnode2.md) interface.  
   
-     Typically, when the operating system or run-time environment loads a program, it creates the program node. If the debug engine (DE) is asked to load the program then the DE creates and registers the program node.  
+     En règle générale, lorsque le système d’exploitation ou un environnement d’exécution charge un programme, il crée le nœud du programme. Si le moteur de débogage (DE) est invité à charger le programme le DE crée et enregistre ensuite le nœud de programme.  
   
-     The following example shows the debug engine launching the program and registering it with a port.  
+     L’exemple suivant montre le lancement du programme et l’inscrire auprès d’un port, le moteur de débogage.  
   
     > [!NOTE]
-    >  This is not the only way to launch and resume a process; this is mainly an example of registering a program with a port.  
+    >  Ce n’est pas la seule façon de lancer et de reprendre un processus ; Il s’agit essentiellement d’un exemple d’inscription d’un programme avec un port.  
   
     ```cpp  
     // This is an IDebugEngineLaunch2 method.  
@@ -122,6 +107,6 @@ After the debug engine has acquired a port, represented by an [IDebugPort2](../.
   
     ```  
   
-## <a name="see-also"></a>See Also  
- [Getting a Port](../../extensibility/debugger/getting-a-port.md)   
- [Enabling a Program to Be Debugged](../../extensibility/debugger/enabling-a-program-to-be-debugged.md)
+## <a name="see-also"></a>Voir aussi  
+ [Obtention d’un Port](../../extensibility/debugger/getting-a-port.md)   
+ [Activation d’un programme à déboguer](../../extensibility/debugger/enabling-a-program-to-be-debugged.md)

@@ -1,53 +1,53 @@
 ---
-title: "IDebugArrayObject::GetCount | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "IDebugArrayObject::GetCount"
-helpviewer_keywords: 
-  - "IDebugArrayObject::GetCount (méthode)"
+title: IDebugArrayObject::GetCount | Documents Microsoft
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords: IDebugArrayObject::GetCount
+helpviewer_keywords: IDebugArrayObject::GetCount method
 ms.assetid: 7931f3f7-033c-4bf8-8abd-95183952ebb0
-caps.latest.revision: 10
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 10
+caps.latest.revision: "10"
+author: gregvanl
+ms.author: gregvanl
+manager: ghogen
+ms.openlocfilehash: 7c7a860dd1039f5b2e5a2049674ba78a91af7741
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: fr-FR
+ms.lasthandoff: 10/31/2017
 ---
-# IDebugArrayObject::GetCount
-[!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]
-
-Obtient le nombre d'éléments du tableau.  
+# <a name="idebugarrayobjectgetcount"></a>IDebugArrayObject::GetCount
+Obtient le nombre d’éléments dans le tableau.  
   
-## Syntaxe  
+## <a name="syntax"></a>Syntaxe  
   
 ```  
 [C++]  
-HRESULT GetCount(   
-   DWORD* pdwElements  
+HRESULT GetCount(   
+   DWORD* pdwElements  
 );  
 ```  
   
 ```  
 [C#]  
 int GetCount(  
-   out uint pdwElements  
+   out uint pdwElements  
 );  
 ```  
   
-#### Paramètres  
+#### <a name="parameters"></a>Paramètres  
  `pdwElements`  
- \[out\]  Retourne le nombre.  
+ [out] Retourne le nombre.  
   
-## Valeur de retour  
- En cas de réussite, retourne S\_OK ; sinon, retourne un code d'erreur.  
+## <a name="return-value"></a>Valeur de retour  
+ En cas de réussite, retourne S_OK ; Sinon, retourne un code d’erreur.  
   
-## Notes  
- Cette méthode affiche tous les éléments d'un objet tableau comme un tableau unidimensionnel, même si l'objet table est multidimensionnel.  Par exemple, dans le tableau `myarray[3][2][6]`, cette méthode retourne 36 dans le paramètre d' `pdwElements` .  Utilisez la méthode d' [GetElement](../Topic/IDebugArrayObject::GetElement.md) pour récupérer les différents éléments un par un.  
+## <a name="remarks"></a>Remarques  
+ Cette méthode voit tous les éléments d’un objet tableau comme un tableau unidimensionnel, même si l’objet de tableau est multidimensionnel. Par exemple, étant donné le tableau `myarray[3][2][6]`, cette méthode retourne 36 dans le `pdwElements` paramètre. Utilisez le [GetElement](../../../extensibility/debugger/reference/idebugarrayobject-getelement.md) méthode pour récupérer l’un des éléments individuels à la fois.  
   
-## Voir aussi  
+## <a name="see-also"></a>Voir aussi  
  [IDebugArrayObject](../../../extensibility/debugger/reference/idebugarrayobject.md)

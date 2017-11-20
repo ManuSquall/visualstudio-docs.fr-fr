@@ -1,11 +1,10 @@
 ---
-title: 'CA1901: P-Invoke declarations should be portable | Microsoft Docs'
+title: "CA1901 : Les déclarations P-Invoke doivent être portables | Documents Microsoft"
 ms.custom: 
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-devops-test
+ms.technology: vs-ide-code-analysis
 ms.tgt_pltfrm: 
 ms.topic: article
 f1_keywords:
@@ -15,58 +14,42 @@ helpviewer_keywords:
 - CA1901
 - PInvokeDeclarationsShouldBePortable
 ms.assetid: 90361812-55ca-47f7-bce9-b8775d3b8803
-caps.latest.revision: 23
+caps.latest.revision: "23"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-translation.priority.ht:
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- ru-ru
-- zh-cn
-- zh-tw
-translation.priority.mt:
-- cs-cz
-- pl-pl
-- pt-br
-- tr-tr
-ms.translationtype: HT
-ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
-ms.openlocfilehash: fb3ea2ab50f10dcb348c03a716c1eba5bee7e630
-ms.contentlocale: fr-fr
-ms.lasthandoff: 08/28/2017
-
+ms.openlocfilehash: c3c048ae73e2b15035c9be8afd6a82c860544bb5
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: fr-FR
+ms.lasthandoff: 10/31/2017
 ---
-# <a name="ca1901-pinvoke-declarations-should-be-portable"></a>CA1901: P/Invoke declarations should be portable
+# <a name="ca1901-pinvoke-declarations-should-be-portable"></a>CA1901 : Les déclarations P/Invoke doivent être portables
 |||  
 |-|-|  
 |TypeName|PInvokeDeclarationsShouldBePortable|  
 |CheckId|CA1901|  
-|Category|Microsoft.Portability|  
-|Breaking Change|Breaking - If the P/Invoke is visible outside the assembly. Non Breaking - If the P/Invoke is not visible outside the assembly.|  
+|Catégorie|Microsoft.Portability|  
+|Modification avec rupture|Avec rupture - Si P/Invoke est visible en dehors de l’assembly. Sans rupture - Si P/Invoke n’est pas visible à l’extérieur de l’assembly.|  
   
 ## <a name="cause"></a>Cause  
- This rule evaluates the size of each parameter and the return value of a P/Invoke and verifies that their size, when marshaled to unmanaged code on 32-bit and 64-bit platforms, is correct. The most common violation of this rule is to pass a fixed-sized integer where a platform-dependent, pointer-sized variable is required.  
+ Cette règle évalue la taille de chaque paramètre et la valeur de retour d’un P/Invoke et vérifie que leur taille, lorsqu’elle est marshalée au code non managé sur les plateformes 32 bits et 64 bits, est correcte. La violation la plus courante de cette règle consiste à passer à un entier de taille fixe d’où une variable dépendante de la plateforme, la taille du pointeur est requise.  
   
-## <a name="rule-description"></a>Rule Description  
- Either of the following scenarios violates this rule occurs:  
+## <a name="rule-description"></a>Description de la règle  
+ Un des scénarios suivants viole cette règle se produit :  
   
--   The return value or parameter is typed as a fixed-size integer when it should be typed as an `IntPtr`.  
+-   La valeur de retour ou paramètre est typé comme un entier de taille fixe lorsqu’il doit être tapé comme un `IntPtr`.  
   
--   The return value or parameter is typed as an `IntPtr` when it should be typed as a fixed-size integer.  
+-   La valeur de retour ou paramètre de type est un `IntPtr` quand il doit être tapé comme un entier de taille fixe.  
   
-## <a name="how-to-fix-violations"></a>How to Fix Violations  
- You can fix this violation by using `IntPtr` or `UIntPtr` to represent handles instead of `Int32` or `UInt32`.  
+## <a name="how-to-fix-violations"></a>Comment corriger les violations  
+ Vous pouvez résoudre cette violation à l’aide de `IntPtr` ou `UIntPtr` pour représenter des handles au lieu de `Int32` ou `UInt32`.  
   
-## <a name="when-to-suppress-warnings"></a>When to Suppress Warnings  
- You should not suppress this warning.  
+## <a name="when-to-suppress-warnings"></a>Quand supprimer les avertissements  
+ Vous ne devez pas supprimer cet avertissement.  
   
-## <a name="example"></a>Example  
- The following example demonstrates a violation of this rule.  
+## <a name="example"></a>Exemple  
+ L’exemple suivant montre une violation de cette règle.  
   
 ```csharp  
 internal class NativeMethods  
@@ -77,15 +60,15 @@ internal class NativeMethods
 }  
 ```  
   
- In this example, the `nIconIndex` parameter is declared as an `IntPtr`, which is 4 bytes wide on a 32-bit platform and 8 bytes wide on a 64-bit platform. In the unmanaged declaration that follows, you can see that `nIconIndex` is a 4-byte unsigned integer on all platforms.  
+ Dans cet exemple, le `nIconIndex` le paramètre est déclaré comme un `IntPtr`, qui est de 4 octets sur une plateforme 32 bits et 8 octets sur une plateforme 64 bits. Dans la déclaration non managée qui suit, vous pouvez voir que `nIconIndex` est un entier non signé de 4 octets sur toutes les plateformes.  
   
 ```csharp  
 HICON ExtractIcon(HINSTANCE hInst, LPCTSTR lpszExeFileName,   
     UINT nIconIndex);  
 ```  
   
-## <a name="example"></a>Example  
- To fix the violation, change the declaration to the following:  
+## <a name="example"></a>Exemple  
+ Pour corriger la violation, modifiez la déclaration comme suit :  
   
 ```csharp  
 internal class NativeMethods{  
@@ -95,5 +78,5 @@ internal class NativeMethods{
 }  
 ```  
   
-## <a name="see-also"></a>See Also  
+## <a name="see-also"></a>Voir aussi  
  [Portability Warnings](../code-quality/portability-warnings.md)

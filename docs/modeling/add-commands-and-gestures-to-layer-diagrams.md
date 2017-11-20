@@ -1,5 +1,5 @@
 ---
-title: "Ajouter des commandes et mouvements aux diagrammes de dépendance | Documents Microsoft"
+title: "Ajouter des commandes et des mouvements aux diagrammes de dépendance | Documents Microsoft"
 ms.custom: 
 ms.date: 11/04/2016
 ms.reviewer: 
@@ -10,41 +10,26 @@ helpviewer_keywords:
 - dependency diagrams, adding custom commands
 - dependency diagrams, adding custom gestures
 ms.assetid: ac9c417b-0b40-4a90-86f5-ee3cbdce030b
-caps.latest.revision: 38
+caps.latest.revision: "38"
 author: alexhomer1
 ms.author: ahomer
 manager: douge
-translation.priority.ht:
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- ru-ru
-- zh-cn
-- zh-tw
-translation.priority.mt:
-- cs-cz
-- pl-pl
-- pt-br
-- tr-tr
-translationtype: Machine Translation
-ms.sourcegitcommit: fd26c504273cae739ccbeef5e406891def732985
-ms.openlocfilehash: 6f833612aaa1859c312a5343fe12a209780e3ee3
-ms.lasthandoff: 02/22/2017
-
+ms.openlocfilehash: 40bad32ef38fb99032690804d572f630bb60ac6d
+ms.sourcegitcommit: ec1c7e7e3349d2f3a4dc027e7cfca840c029367d
+ms.translationtype: MT
+ms.contentlocale: fr-FR
+ms.lasthandoff: 11/07/2017
 ---
-# <a name="add-commands-and-gestures-to-dependency-diagrams"></a>Ajouter des commandes et mouvements aux diagrammes de dépendance
+# <a name="add-commands-and-gestures-to-dependency-diagrams"></a>Ajouter des commandes et des mouvements aux diagrammes de dépendance
 Vous pouvez définir des commandes de menu contextuel et gestionnaires de mouvements dans des diagrammes de dépendance dans Visual Studio. Vous pouvez empaqueter ces extensions dans une extension d’intégration Visual Studio (VSIX) et les distribuer à d’autres utilisateurs de Visual Studio.  
   
- Si vous le souhaitez, vous pouvez définir plusieurs commandes et gestionnaires de mouvements dans le même projet Visual Studio. Vous pouvez également combiner plusieurs de ces projets dans une extension VSIX. Par exemple, vous pouvez définir une extension VSIX unique qui inclut des commandes de couche et un langage spécifique à un domaine.  
+ Si vous le souhaitez, vous pouvez définir plusieurs commandes et gestionnaires de mouvements dans le même projet Visual Studio. Vous pouvez également combiner plusieurs de ces projets dans une extension VSIX. Par exemple, vous pouvez définir une extension VSIX qui comprend des commandes de couche et un langage spécifique à un domaine.  
   
 > [!NOTE]
->  Vous pouvez également personnaliser la validation de l’architecture, dans source de quels utilisateurs code est comparé aux diagrammes de dépendance. Vous devez définir la validation de l’architecture dans un projet Visual Studio distinct. Vous pouvez l’ajouter à la même extension VSIX que d’autres extensions. Pour plus d’informations, consultez [ajouter une validation d’architecture personnalisée aux diagrammes de dépendance](../modeling/add-custom-architecture-validation-to-layer-diagrams.md).  
+>  Vous pouvez également personnaliser la validation de l’architecture, dans source quels utilisateurs code est comparé aux diagrammes de dépendance. Vous devez définir la validation de l’architecture dans un projet Visual Studio distinct. Vous pouvez l’ajouter à la même extension VSIX que d’autres extensions. Pour plus d’informations, consultez [ajouter la validation d’architecture personnalisée aux diagrammes de dépendance](../modeling/add-custom-architecture-validation-to-layer-diagrams.md).  
   
 ## <a name="requirements"></a>Spécifications  
- Consultez la page [exigences](../modeling/extend-layer-diagrams.md#prereqs).  
+ Consultez [Spécifications](../modeling/extend-layer-diagrams.md#prereqs).  
   
 ## <a name="defining-a-command-or-gesture-in-a-new-vsix"></a>Définition d’une commande ou d’un mouvement dans une nouvelle extension VSIX  
  Pour créer une extension, la méthode la plus rapide consiste à utiliser le modèle de projet. Le code et le manifeste VSIX sont alors placés dans le même projet.  
@@ -59,17 +44,17 @@ Vous pouvez définir des commandes de menu contextuel et gestionnaires de mouvem
   
 3.  Pour tester l’extension, appuyez sur **Ctrl+F5** ou **F5**.  
   
-     Une instance expérimentale de [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] démarre. Dans cette instance, créez un diagramme de dépendance. Votre extension de commande ou de mouvement doit fonctionner dans ce diagramme.  
+     Une instance expérimentale de [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] démarre. Dans cette instance, créez un diagramme de dépendances. Votre extension de commande ou de mouvement doit fonctionner dans ce diagramme.  
   
-4.  Fermez l’instance expérimentale et modifiez l’exemple de code. Pour plus d’informations, consultez [naviguer et mise à jour de modèles dans le code de programme couche](../modeling/navigate-and-update-layer-models-in-program-code.md).  
+4.  Fermez l’instance expérimentale et modifiez l’exemple de code. Pour plus d’informations, consultez [naviguer et mise à jour des modèles dans le code de programme de couche](../modeling/navigate-and-update-layer-models-in-program-code.md).  
   
 5.  Vous pouvez ajouter plusieurs gestionnaires de mouvements ou de commandes au même projet. Pour plus d’informations, consultez l’une des sections suivantes :  
   
-     [Définition d’une commande de Menu](#command)  
+     [Définition d’une commande de menu](#command)  
   
      [Définition d’un gestionnaire de mouvements](#gesture)  
   
-6.  Pour installer l’extension dans l’instance principale de [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)], ou sur un autre ordinateur, recherchez le **.vsix** fichier **bin\\\***. Copiez-le sur l’ordinateur sur lequel vous souhaitez l’installer, puis double-cliquez dessus. Pour le désinstaller, utilisez **Extensions et mises à jour** dans le menu **Outils** .  
+6.  Pour installer l’extension dans l’instance principale de [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)], ou sur un autre ordinateur, recherchez le fichier **.vsix** dans **bin\\\***. Copiez-le sur l’ordinateur sur lequel vous souhaitez l’installer, puis double-cliquez dessus. Pour le désinstaller, utilisez **Extensions et mises à jour** dans le menu **Outils** .  
   
 ## <a name="adding-a-command-or-gesture-to-a-separate-vsix"></a>Ajout d’une commande ou d’un mouvement à une extension VSIX distincte  
  Si vous souhaitez créer une extension VSIX qui contient des commandes, des validateurs de couche et d’autres extensions, nous vous recommandons de créer un projet pour définir l’extension VSIX et des projets distincts pour les gestionnaires.
@@ -112,19 +97,19 @@ Vous pouvez définir des commandes de menu contextuel et gestionnaires de mouvem
   
 1.  Modifiez le fichier de classe dans le projet de bibliothèque de classes C# pour contenir le code de votre extension. Pour plus d’informations, consultez l’une des sections suivantes :  
   
-     [Définition d’une commande de Menu](#command)  
+     [Définition d’une commande de menu](#command)  
   
      [Définition d’un gestionnaire de mouvements](#gesture)  
   
-     Voir aussi [naviguer et mise à jour de modèles dans le code de programme couche](../modeling/navigate-and-update-layer-models-in-program-code.md).  
+     Voir aussi [naviguer et mise à jour des modèles dans le code de programme de couche](../modeling/navigate-and-update-layer-models-in-program-code.md).  
   
-2.  Pour tester la fonctionnalité, appuyez sur Ctrl+F5 ou F5. Une instance expérimentale de [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] s'ouvre. Dans cette instance, créez ou ouvrez un diagramme de dépendance.  
+2.  Pour tester la fonctionnalité, appuyez sur Ctrl+F5 ou F5. Une instance expérimentale de [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] s’ouvre. Dans cette instance, créez ou ouvrez un diagramme de dépendance.  
   
-3.  Pour installer l’extension VSIX dans l’instance principale de [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)], ou sur un autre ordinateur, recherchez le **.vsix** de fichiers dans le **bin** répertoire du projet VSIX. Copiez-le sur l’ordinateur sur lequel vous souhaitez installer l’extension VSIX. Double-cliquez sur le fichier VSIX dans l’Explorateur Windows (l’Explorateur de fichiers dans Windows 8).  
+3.  Pour installer l’extension VSIX dans l’instance principale de [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)], ou sur un autre ordinateur, recherchez le fichier **.vsix** dans le répertoire **bin** du projet VSIX. Copiez-le sur l’ordinateur sur lequel vous souhaitez installer l’extension VSIX. Double-cliquez sur le fichier VSIX dans l’Explorateur Windows (l’Explorateur de fichiers dans Windows 8).  
   
      Pour le désinstaller, utilisez **Extensions et mises à jour** dans le menu **Outils** .  
   
-##  <a name="a-namecommanda-defining-a-menu-command"></a><a name="command"></a>Définition d’une commande de Menu  
+##  <a name="command"></a> Définition d’une commande de menu  
  Vous pouvez ajouter plusieurs définitions de commandes de menu à un projet de commande ou de mouvement existant. Chaque commande est définie par une classe dont les caractéristiques sont les suivantes :  
   
 -   La classe est déclarée comme suit :  
@@ -137,13 +122,13 @@ Vous pouvez définir des commandes de menu contextuel et gestionnaires de mouvem
   
 -   L’espace de noms et le nom de la classe sont sans importance.  
   
--   Les méthodes qui implémentent `ICommandExtension` sont les suivantes :  
+-   Les méthodes qui implémentent `ICommandExtension` sont les suivantes :  
   
-    -   `string Text {get;}` : l'étiquette qui apparaît dans le menu.  
+    -   `string Text {get;}` : l’étiquette qui apparaît dans le menu.  
   
-    -   `void QueryStatus(IMenuCommand command)` : appelée quand l'utilisateur clique avec le bouton droit sur le diagramme et détermine si la commande doit être visible et activée pour la sélection actuelle de l'utilisateur.  
+    -   `void QueryStatus(IMenuCommand command)` : appelée quand l’utilisateur clique avec le bouton droit sur le diagramme et détermine si la commande doit être visible et activée pour la sélection actuelle de l’utilisateur.  
   
-    -   `void Execute(IMenuCommand command)` : appelée quand l'utilisateur sélectionne la commande.  
+    -   `void Execute(IMenuCommand command)` : appelée quand l’utilisateur sélectionne la commande.  
   
 -   Pour déterminer la sélection actuelle, vous pouvez importer `IDiagramContext`:  
   
@@ -155,7 +140,7 @@ Vous pouvez définir des commandes de menu contextuel et gestionnaires de mouvem
   
      `DiagramContext.CurrentDiagram.SelectedShapes.Count()...`  
   
- Pour plus d’informations, consultez [naviguer et mise à jour de modèles dans le code de programme couche](../modeling/navigate-and-update-layer-models-in-program-code.md).  
+ Pour plus d’informations, consultez [naviguer et mise à jour des modèles dans le code de programme de couche](../modeling/navigate-and-update-layer-models-in-program-code.md).  
   
  Pour ajouter une nouvelle commande, créez un fichier de code qui contient l’exemple suivant. Ensuite, testez-le et modifiez-le.  
   
@@ -229,8 +214,8 @@ namespace MyLayerExtension // Change to your preference.
 }  
 ```  
   
-##  <a name="a-namegesturea-defining-a-gesture-handler"></a><a name="gesture"></a>Définition d’un gestionnaire de mouvements  
- Un gestionnaire de mouvements réagit lorsque l’utilisateur fait glisser des éléments sur le diagramme de dépendance, et lorsque l’utilisateur double-clique dans le diagramme.  
+##  <a name="gesture"></a> Définition d’un gestionnaire de mouvements  
+ Un gestionnaire de mouvements réagit quand l’utilisateur fait glisser des éléments sur le diagramme de dépendances, et lorsque l’utilisateur double-clique n’importe où dans le diagramme.  
   
  Vous pouvez ajouter un fichier de code qui définit un gestionnaire de mouvements à votre projet VSIX de commande ou de gestionnaire de mouvements existant :  
   
@@ -276,10 +261,7 @@ namespace MyLayerExtensions // change to your preference
   
 -   Les gestionnaires pour certains types d’éléments déplacés sont déjà définis. Par exemple, l’utilisateur peut déplacer les éléments à partir de l’Explorateur de solutions vers un diagramme de dépendances. Vous ne pouvez pas définir un gestionnaire de glissement pour ces types d’éléments. Dans ces cas-là, vos méthodes `DragDrop` ne seront pas appelées.  
   
- Pour plus d’informations sur la façon de décoder les autres éléments lorsqu’ils sont glissés sur le diagramme, consultez [définir un gestionnaire de mouvements sur un diagramme de modélisation](../modeling/define-a-gesture-handler-on-a-modeling-diagram.md).  
   
 ## <a name="see-also"></a>Voir aussi  
  [Accéder et mettre à jour des modèles de couche dans le code de programme](../modeling/navigate-and-update-layer-models-in-program-code.md)   
- [Ajouter une validation d’architecture personnalisée aux diagrammes de dépendance](../modeling/add-custom-architecture-validation-to-layer-diagrams.md)   
- [Définir et installer une extension de modélisation](../modeling/define-and-install-a-modeling-extension.md)
-
+ [Ajout d’une validation d’architecture personnalisée aux diagrammes de dépendance](../modeling/add-custom-architecture-validation-to-layer-diagrams.md)   

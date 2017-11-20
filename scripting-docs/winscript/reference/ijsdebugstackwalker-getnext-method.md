@@ -1,25 +1,29 @@
 ---
-title: "IJsDebugStackWalker::GetNext, m&#233;thode | Microsoft Docs"
-ms.custom: ""
-ms.date: "01/18/2017"
-ms.prod: "windows-script-interfaces"
-ms.reviewer: ""
-ms.suite: ""
-ms.tgt_pltfrm: ""
-ms.topic: "reference"
+title: "Ijsdebugstackwalker::GetNext, méthode | Documents Microsoft"
+ms.custom: 
+ms.date: 01/18/2017
+ms.prod: windows-script-interfaces
+ms.reviewer: 
+ms.suite: 
+ms.tgt_pltfrm: 
+ms.topic: reference
 apiname: IJsDebugStackWalker.GetNext
 apilocation: jscript9diag.dll
 ms.assetid: 0b124768-50d3-4a69-876c-1aa337839a4e
-caps.latest.revision: 4
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 4
+caps.latest.revision: "4"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: 695bb6cecc2a27565dce21b4a965ad08d90d7be7
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.translationtype: MT
+ms.contentlocale: fr-FR
+ms.lasthandoff: 10/27/2017
 ---
-# IJsDebugStackWalker::GetNext, m&#233;thode
-Obtient le frame suivant.  
+# <a name="ijsdebugstackwalkergetnext-method"></a>IJsDebugStackWalker::GetNext, méthode
+Obtient l’image suivante.  
   
-## Syntaxe  
+## <a name="syntax"></a>Syntaxe  
   
 ```  
 HRESULT GetNext(  
@@ -27,17 +31,17 @@ HRESULT GetNext(
 );  
 ```  
   
-#### Paramètres  
+#### <a name="parameters"></a>Paramètres  
  `ppFrame`  
- \[out\] Objet représentant le frame de pile.  
+ [out] Objet représentant le frame de pile.  
   
-## Valeur de retour  
+## <a name="return-value"></a>Valeur de retour  
   
-## Notes  
- Retourne E\_JsDEBUG\_OUTSIDE\_OF\_VM lorsqu'il ne reste plus de frames de pile à énumérer  
+## <a name="remarks"></a>Remarques  
+ Retourne E_JsDEBUG_OUTSIDE_OF_VM lorsqu’il n’y a aucun frame de pile plus être énumérée  
   
-## Configuration requise  
- **En\-tête :** jscript9diag.h  
+## <a name="requirements"></a>Spécifications  
+ **En-tête :** jscript9diag.h  
   
-## Voir aussi  
- [IJsDebugStackWalker, interface](../../winscript/reference/ijsdebugstackwalker-interface.md)
+## <a name="see-also"></a>Voir aussi  
+ [Interface IJsDebugStackWalker](../../winscript/reference/ijsdebugstackwalker-interface.md)

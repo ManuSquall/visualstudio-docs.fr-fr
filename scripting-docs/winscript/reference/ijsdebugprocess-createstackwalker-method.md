@@ -1,25 +1,29 @@
 ---
-title: "IJsDebugProcess::CreateStackWalker, m&#233;thode | Microsoft Docs"
-ms.custom: ""
-ms.date: "01/18/2017"
-ms.prod: "windows-script-interfaces"
-ms.reviewer: ""
-ms.suite: ""
-ms.tgt_pltfrm: ""
-ms.topic: "reference"
+title: "Ijsdebugprocess::createstackwalker, méthode | Documents Microsoft"
+ms.custom: 
+ms.date: 01/18/2017
+ms.prod: windows-script-interfaces
+ms.reviewer: 
+ms.suite: 
+ms.tgt_pltfrm: 
+ms.topic: reference
 apiname: IJsDebugProcess.CreateStackWalker
 apilocation: jscript9diag.dll
 ms.assetid: 9d02e21d-7900-4942-8d17-cd04a2261463
-caps.latest.revision: 4
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 4
+caps.latest.revision: "4"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: 66ca7594f4e3c6ef44aa8cde1d92f17d46a9aa30
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.translationtype: MT
+ms.contentlocale: fr-FR
+ms.lasthandoff: 10/27/2017
 ---
-# IJsDebugProcess::CreateStackWalker, m&#233;thode
-Méthode de fabrique pour l'explorateur de piles.  
+# <a name="ijsdebugprocesscreatestackwalker-method"></a>IJsDebugProcess::CreateStackWalker, méthode
+Méthode de fabrique pour l’Explorateur de pile.  
   
-## Syntaxe  
+## <a name="syntax"></a>Syntaxe  
   
 ```  
 HRESULT CreateStackWalker(  
@@ -28,20 +32,20 @@ HRESULT CreateStackWalker(
 );  
 ```  
   
-#### Paramètres  
+#### <a name="parameters"></a>Paramètres  
  `threadId`  
- \[in\] ID de thread.  
+ [in] L’ID de thread.  
   
  `ppStackWalker`  
- \[out\] Nouvel objet d'explorateur de piles.  
+ [out] Le nouvel objet walker de pile.  
   
-## Valeur de retour  
+## <a name="return-value"></a>Valeur de retour  
   
-## Notes  
- Retourne E\_JsDEBUG\_UNKNOWN\_THREAD si le thread ne contient pas JavaScript.  Cette méthode peut uniquement être appelée quand le processus cible est arrêté.  
+## <a name="remarks"></a>Remarques  
+ Retourne E_JsDEBUG_UNKNOWN_THREAD si le thread n’a pas de JavaScript sur celui-ci. Cette méthode peut être appelée uniquement pendant que le processus cible est arrêté.  
   
-## Configuration requise  
- **En\-tête :** jscript9diag.h  
+## <a name="requirements"></a>Spécifications  
+ **En-tête :** jscript9diag.h  
   
-## Voir aussi  
- [IJsDebugProcess, interface](../../winscript/reference/ijsdebugprocess-interface.md)
+## <a name="see-also"></a>Voir aussi  
+ [Interface IJsDebugProcess](../../winscript/reference/ijsdebugprocess-interface.md)

@@ -1,58 +1,59 @@
 ---
-title: "Bo&#238;te de dialogue Propri&#233;t&#233;s du processus | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-debug"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-helpviewer_keywords: 
-  - "Spy++. propriétés d'un processus"
-  - "propriétés d’un processus, Spy++"
+title: "Boîte de dialogue Propriétés de traiter | Documents Microsoft"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-debug
+ms.tgt_pltfrm: 
+ms.topic: article
+helpviewer_keywords:
+- Spy++. process properties
+- process properties, Spy++
 ms.assetid: fe6c9d32-4b81-4dc4-a307-848d23af66ce
-caps.latest.revision: 5
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 5
+caps.latest.revision: "5"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: 6fc116cc0085d5db9e54ca6befce6d3627c5d975
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: fr-FR
+ms.lasthandoff: 10/31/2017
 ---
-# Bo&#238;te de dialogue Propri&#233;t&#233;s du processus
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
-
-Utilisez cette boîte de dialogue pour en savoir plus sur un processus spécifique.  Pour afficher cette boîte de dialogue, déplacez le focus sur une fenêtre [Vue Processus](../debugger/processes-view.md).  Sélectionnez n'importe quel nœud de processus dans l'arborescence, puis sélectionnez **Propriétés** dans le menu **Affichage**.  
+# <a name="process-properties-dialog-box"></a>Boîte de dialogue Propriétés du processus
+Utilisez cette boîte de dialogue pour en savoir plus sur un processus spécifique. Pour afficher cette boîte de dialogue, déplacez le focus vers un [vue processus](../debugger/processes-view.md) fenêtre. Sélectionnez n’importe quel nœud de processus dans l’arborescence, puis choisissez **propriétés** à partir de la **vue** menu.  
   
- Sur les systèmes d'exploitation Windows 98 et Windows 95, seule une version modifiée de l'onglet **Général** est affichée.  
+ Sur les systèmes d’exploitation Windows 98 et Windows 95, seule une version modifiée de la **général** onglet s’affiche.  
   
-## Dans cette section  
- [Général, onglet de la boîte de dialogue Propriétés du processus](../debugger/general-tab-thread-properties-dialog-box.md)  
+## <a name="in-this-section"></a>Dans cette section  
+ [Onglet Général de la boîte de dialogue Propriétés du processus](../debugger/general-tab-thread-properties-dialog-box.md)  
  Utilisez cette boîte de dialogue pour en savoir plus sur le processus sélectionné.  
   
- [Mémoire, onglet de la boîte de dialogue Propriétés du processus](../debugger/memory-tab-process-properties-dialog-box.md)  
- Utilisez cet onglet pour voir la façon dont un processus utilise la mémoire.  
+ [Onglet Mémoire de la boîte de dialogue Propriétés du processus](../debugger/memory-tab-process-properties-dialog-box.md)  
+ Cet onglet permet de montrer comment un processus utilise la mémoire.  
   
- [Fichier d'échange, onglet de la boîte de dialogue Propriétés du processus](../debugger/page-file-tab-process-properties-dialog-box.md)  
- Utilisez cet onglet pour examiner le fichier de pagination d'un processus.  
+ [Onglet Fichier d’échange de la boîte de dialogue Propriétés du processus](../debugger/page-file-tab-process-properties-dialog-box.md)  
+ Utilisez cet onglet pour examiner le fichier d’échange d’un processus.  
   
- [Espace, onglet de la boîte de dialogue Propriétés du processus](../debugger/space-tab-process-properties-dialog-box.md)  
- Utilisez cet onglet pour examiner l'espace d'adressage d'un processus.  
+ [Onglet Espace de la boîte de dialogue Propriétés du processus](../debugger/space-tab-process-properties-dialog-box.md)  
+ Utilisez cet onglet pour examiner l’espace d’adressage d’un processus.  
   
-## Rubriques connexes  
- [Boîte de dialogue Recherche d'un processus](../debugger/process-search-dialog-box.md)  
- Utilisé pour rechercher le nœud d'un processus spécifique dans la vue Processus.  
+## <a name="related-sections"></a>Rubriques connexes  
+ [Recherche d’un processus, boîte de dialogue](../debugger/process-search-dialog-box.md)  
+ Utilisé pour rechercher le nœud d’un processus spécifique dans la vue processus.  
   
- [Référence de Spy\+\+](../debugger/spy-increment-reference.md)  
- Inclut des sections décrivant les menus et les boîtes de dialogue de Spy\+\+.  
+ [Informations de référence sur Spy++](../debugger/spy-increment-reference.md)  
+ Inclut des sections décrivant chaque Spy ++ menu et boîte de dialogue.  
   
- [Recherche d'un processus dans la vue Processus](../debugger/how-to-search-for-a-process-in-processes-view.md)  
- Explique comment rechercher un processus spécifique dans la vue Processus.  
+ [Recherche d’un processus dans la vue processus](../debugger/how-to-search-for-a-process-in-processes-view.md)  
+ Explique comment rechercher un processus spécifique dans la vue processus.  
   
  [Vue Processus](../debugger/processes-view.md)  
  Affiche une arborescence des processus actifs.  
   
- [Vues Spy\+\+](../debugger/spy-increment-views.md)  
- Explique les arborescences Spy\+\+ des fenêtres, messages, processus et threads.  
+ [Vues Spy++](../debugger/spy-increment-views.md)  
+ Explique les arborescences Spy ++ de windows, les messages, les processus et les threads.  
   
- [Utilisation de Spy\+\+](../debugger/using-spy-increment.md)  
- Présente l'outil Spy\+\+ et explique comment l'utiliser.
+ [Utilisation de Spy++](../debugger/using-spy-increment.md)  
+ Présente l’outil Spy ++ et explique comment elle peut être utilisée.

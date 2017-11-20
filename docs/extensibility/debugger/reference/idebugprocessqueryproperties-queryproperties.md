@@ -1,44 +1,28 @@
 ---
-title: IDebugProcessQueryProperties::QueryProperties | Microsoft Docs
+title: IDebugProcessQueryProperties::QueryProperties | Documents Microsoft
 ms.custom: 
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-sdk
+ms.technology: vs-ide-sdk
 ms.tgt_pltfrm: 
 ms.topic: article
-helpviewer_keywords:
-- IDebugProcessQueryProperties::QueryProperties
+helpviewer_keywords: IDebugProcessQueryProperties::QueryProperties
 ms.assetid: 976a9962-b689-45bb-afb6-16b2c5dbc3b8
-caps.latest.revision: 5
+caps.latest.revision: "5"
+author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-translation.priority.mt:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
+ms.openlocfilehash: c73cd73283a700d1e47ff5909d6c4ce7ec198714
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
 ms.translationtype: MT
-ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
-ms.openlocfilehash: 047341e2254ff9ffd3e01d1086e5c51a1311a871
-ms.contentlocale: fr-fr
-ms.lasthandoff: 08/28/2017
-
+ms.contentlocale: fr-FR
+ms.lasthandoff: 10/31/2017
 ---
 # <a name="idebugprocessquerypropertiesqueryproperties"></a>IDebugProcessQueryProperties::QueryProperties
-This method queries for a specified property values of the debugging process.  
+Requêtes de cette méthode pour une valeur de propriété spécifiée du processus de débogage.  
   
-## <a name="syntax"></a>Syntax  
+## <a name="syntax"></a>Syntaxe  
   
 ```cpp  
 HRESULT QueryProperties(  
@@ -54,12 +38,12 @@ int QueryProperties(
    out object[ ]              rgtPropValues);  
 ```  
   
-#### <a name="parameters"></a>Parameters  
+#### <a name="parameters"></a>Paramètres  
  `celt`  
- [in] Size of the arrays containing the property definitions and property values.  
+ [in] Taille des tableaux contenant les définitions de propriété et les valeurs de propriété.  
   
  `dwPropType`  
- [in] An array that contains definitions of the queried properties. The possible values are:  
+ [in] Tableau qui contient les définitions des propriétés interrogées. Les valeurs possibles sont :  
   
 -   PROCESS_PROPERTY_COMMAND_LINE = 1  
   
@@ -68,13 +52,13 @@ int QueryProperties(
 -   PROCESS_PROPERTY_ENVIRONMENT_VARIABLES = 3  
   
  `pvarPropValue`  
- [out] An array containing the property values.  
+ [out] Tableau contenant les valeurs de propriété.  
   
-## <a name="return-value"></a>Return Value  
- If successful, returns `S_OK`; otherwise, returns an error code.  
+## <a name="return-value"></a>Valeur de retour  
+ En cas de réussite, retourne `S_OK`; sinon, retourne un code d’erreur.  
   
-## <a name="remarks"></a>Remarks  
- This method is seldom used.  
+## <a name="remarks"></a>Remarques  
+ Cette méthode est rarement utilisée.  
   
-## <a name="see-also"></a>See Also  
+## <a name="see-also"></a>Voir aussi  
  [IDebugProcessQueryProperties](../../../extensibility/debugger/reference/idebugprocessqueryproperties.md)

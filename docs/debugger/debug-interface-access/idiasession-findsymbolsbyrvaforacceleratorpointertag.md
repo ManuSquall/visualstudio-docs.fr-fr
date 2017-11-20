@@ -1,58 +1,58 @@
 ---
-title: "IDiaSession::findSymbolsByRVAForAcceleratorPointerTag | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-debug"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-dev_langs: 
-  - "C++"
+title: IDiaSession::findSymbolsByRVAForAcceleratorPointerTag | Documents Microsoft
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-debug
+ms.tgt_pltfrm: 
+ms.topic: article
+dev_langs: C++
 ms.assetid: a073cc45-0c7b-417e-b5fc-a3b08beccdbc
-caps.latest.revision: 3
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 3
+caps.latest.revision: "3"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: ebeb2ae079845c55c1903afdbcef381a5b4d379c
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: fr-FR
+ms.lasthandoff: 10/31/2017
 ---
-# IDiaSession::findSymbolsByRVAForAcceleratorPointerTag
-[!INCLUDE[vs2017banner](../../code-quality/includes/vs2017banner.md)]
-
-Donné une valeur correspondante de balise, cette méthode retourne une énumération de symboles qui sont contenus dans une fonction parente spécifiée stub d'accélérateur à une adresse virtuelle relative spécifiée.  
+# <a name="idiasessionfindsymbolsbyrvaforacceleratorpointertag"></a>IDiaSession::findSymbolsByRVAForAcceleratorPointerTag
+Une valeur correspondante de la balise donnée, cette méthode retourne une énumération de symboles contenus dans une fonction de stub d’accélérateur parent spécifié à une adresse virtuelle relative spécifiée.  
   
-## Syntaxe  
+## <a name="syntax"></a>Syntaxe  
   
-```cpp#  
-HRESULT findSymbolsByRVAForAcceleratorPointerTag (   
-   IDiaSymbol*           parent,  
+```C++  
+HRESULT findSymbolsByRVAForAcceleratorPointerTag (   
+   IDiaSymbol*           parent,  
    DWORD                 tagValue,  
    DWORD                 rva,  
-   IDiaEnumSymbols**     ppResult  
+   IDiaEnumSymbols**     ppResult  
 );  
 ```  
   
-#### Paramètres  
+#### <a name="parameters"></a>Paramètres  
  `parent`  
- \[in\]  `IDiaSymbol` qui correspond à la fonction du stub d'accélérateur à rechercher.  
+ [in] Un `IDiaSymbol` qui correspond à la fonction de stub accélérateur à rechercher.  
   
  `tagValue`  
- \[in\]  La valeur de la balise du pointeur.  
+ [in] La valeur de balise de pointeur.  
   
  `rva`  
- \[in\]  Adresse virtuelle associée.  
+ [in] L’adresse virtuelle relative.  
   
  `ppResult`  
- \[out\]  Un pointeur vers un pointeur d'interface de `IDiaEnumSymbols` qui est initialisé avec le résultat.  
+ [out] Un pointeur vers un `IDiaEnumSymbols` pointeur d’interface qui est initialisé avec le résultat.  
   
-## Valeur de retour  
- En cas de réussite, retourne `S_OK` , sinon, retourne un code d'erreur.  
+## <a name="return-value"></a>Valeur de retour  
+ En cas de réussite, retourne `S_OK`; sinon, retourne un code d’erreur.  
   
-## Notes  
- Appelez cette méthode uniquement sur une interface d' `IDiaSymbol` qui correspond à une fonction stub d'accélérateur.  
+## <a name="remarks"></a>Remarques  
+ Appelez cette méthode uniquement sur un `IDiaSymbol` interface qui correspond à une fonction de stub accélérateur.  
   
-## Voir aussi  
+## <a name="see-also"></a>Voir aussi  
  [IDiaSession](../../debugger/debug-interface-access/idiasession.md)   
  [IDiaEnumSymbols](../../debugger/debug-interface-access/idiaenumsymbols.md)   
  [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

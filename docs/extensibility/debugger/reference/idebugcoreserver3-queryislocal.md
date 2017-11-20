@@ -1,46 +1,29 @@
 ---
-title: IDebugCoreServer3::QueryIsLocal | Microsoft Docs
+title: IDebugCoreServer3::QueryIsLocal | Documents Microsoft
 ms.custom: 
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-sdk
+ms.technology: vs-ide-sdk
 ms.tgt_pltfrm: 
 ms.topic: article
-f1_keywords:
-- IDebugCoreServer3::QueryIsLocal
-helpviewer_keywords:
-- IDebugCoreServer3::QueryIsLocal
+f1_keywords: IDebugCoreServer3::QueryIsLocal
+helpviewer_keywords: IDebugCoreServer3::QueryIsLocal
 ms.assetid: cca030de-f853-4ed7-b2fb-395f08a6b884
-caps.latest.revision: 6
+caps.latest.revision: "6"
+author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-translation.priority.mt:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
+ms.openlocfilehash: bc4a3e11e1dce483d368349cfb8d07d1c77e5f19
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
 ms.translationtype: MT
-ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
-ms.openlocfilehash: b619407d870344ba99d8fab87718857a0658e4ee
-ms.contentlocale: fr-fr
-ms.lasthandoff: 08/28/2017
-
+ms.contentlocale: fr-FR
+ms.lasthandoff: 10/31/2017
 ---
 # <a name="idebugcoreserver3queryislocal"></a>IDebugCoreServer3::QueryIsLocal
-Determines if the server is local to the caller.  
+Détermine si le serveur est local à l’appelant.  
   
-## <a name="syntax"></a>Syntax  
+## <a name="syntax"></a>Syntaxe  
   
 ```cpp  
 HRESULT QueryIsLocal(  
@@ -52,8 +35,8 @@ HRESULT QueryIsLocal(
 int QueryIsLocal();  
 ```  
   
-## <a name="return-value"></a>Return Value  
- Returns `S_OK` to indicate the server is local. Returns `S_FALSE` if the server is running from an instance of msvsmon.exe, which is typically used for remote debugging.  
+## <a name="return-value"></a>Valeur de retour  
+ Retourne `S_OK` afin d’indiquer le serveur local. Retourne `S_FALSE` si le serveur est en cours d’exécution d’une instance de msvsmon.exe, qui est généralement utilisé pour le débogage distant.  
   
-## <a name="see-also"></a>See Also  
+## <a name="see-also"></a>Voir aussi  
  [IDebugCoreServer3](../../../extensibility/debugger/reference/idebugcoreserver3.md)

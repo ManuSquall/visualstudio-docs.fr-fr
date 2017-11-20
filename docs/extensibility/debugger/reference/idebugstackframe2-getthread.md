@@ -1,46 +1,29 @@
 ---
-title: IDebugStackFrame2::GetThread | Microsoft Docs
+title: IDebugStackFrame2::GetThread | Documents Microsoft
 ms.custom: 
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-sdk
+ms.technology: vs-ide-sdk
 ms.tgt_pltfrm: 
 ms.topic: article
-f1_keywords:
-- IDebugStackFrame2::GetThread
-helpviewer_keywords:
-- IDebugStackFrame2::GetThread
+f1_keywords: IDebugStackFrame2::GetThread
+helpviewer_keywords: IDebugStackFrame2::GetThread
 ms.assetid: cbeef85b-3dd7-4f97-adc2-c4d197d979fc
-caps.latest.revision: 10
+caps.latest.revision: "10"
+author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-translation.priority.mt:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
+ms.openlocfilehash: be53afd39bdc207d4ba1c7f7af4bdd2392363b75
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
 ms.translationtype: MT
-ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
-ms.openlocfilehash: 2bb19df8e322a7196880ff27d28709f4e74cf44a
-ms.contentlocale: fr-fr
-ms.lasthandoff: 08/28/2017
-
+ms.contentlocale: fr-FR
+ms.lasthandoff: 10/31/2017
 ---
 # <a name="idebugstackframe2getthread"></a>IDebugStackFrame2::GetThread
-Gets the thread associated with a stack frame.  
+Obtient le thread associé à un frame de pile.  
   
-## <a name="syntax"></a>Syntax  
+## <a name="syntax"></a>Syntaxe  
   
 ```cpp  
 HRESULT GetThread (   
@@ -54,13 +37,13 @@ int GetThread (
 );  
 ```  
   
-#### <a name="parameters"></a>Parameters  
+#### <a name="parameters"></a>Paramètres  
  `ppThread`  
- [out] Returns an [IDebugThread2](../../../extensibility/debugger/reference/idebugthread2.md) object that represents the thread.  
+ [out] Retourne un [IDebugThread2](../../../extensibility/debugger/reference/idebugthread2.md) objet qui représente le thread.  
   
-## <a name="return-value"></a>Return Value  
- If successful, returns `S_OK`; otherwise, returns an error code.  
+## <a name="return-value"></a>Valeur de retour  
+ En cas de réussite, retourne `S_OK`; sinon, retourne un code d’erreur.  
   
-## <a name="see-also"></a>See Also  
+## <a name="see-also"></a>Voir aussi  
  [IDebugStackFrame2](../../../extensibility/debugger/reference/idebugstackframe2.md)   
  [IDebugThread2](../../../extensibility/debugger/reference/idebugthread2.md)

@@ -1,34 +1,35 @@
 ---
-title: "L&#39;impl&#233;mentation de g&#233;n&#233;rateurs de fichier unique | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-helpviewer_keywords: 
-  - "l'implémentation des outils personnalisés"
-  - "projets d'extensibilité Visual Studio SDK,"
-  - "projets (Visual Studio SDK), gérée des outils personnalisés"
+title: "Implémentation de générateurs de fichier unique | Documents Microsoft"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+helpviewer_keywords:
+- custom tools, implementing
+- projects [Visual Studio SDK], extensibility
+- projects [Visual Studio SDK], managed custom tools
 ms.assetid: fe9ef6b6-4690-4c2c-872c-301c980d17fe
-caps.latest.revision: 14
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 14
+caps.latest.revision: "14"
+author: gregvanl
+ms.author: gregvanl
+manager: ghogen
+ms.openlocfilehash: 9894666dd435dcaa110ba8af8307d7e942119bee
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: fr-FR
+ms.lasthandoff: 10/31/2017
 ---
-# L&#39;impl&#233;mentation de g&#233;n&#233;rateurs de fichier unique
-[!INCLUDE[vs2017banner](../../code-quality/includes/vs2017banner.md)]
-
-Un outil personnalisé \(parfois appelée génération d'un générateur de fichier unique \)peut être utilisé pour étendre [!INCLUDE[vbprvb](../../code-quality/includes/vbprvb_md.md)] et les systèmes de projet csprcs dans [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)].  un outil personnalisé est un composant COM qui implémente l'interface d' <xref:Microsoft.VisualStudio.Shell.Interop.IVsSingleFileGenerator> .  Cette interface, un outil personnalisé fait un fichier d'entrée unique dans un fichier de sortie unique.  Le résultat de la transformation peut être code source, ou toute autre sortie qui est utile.  Deux exemples de fichiers de code outil\-générés personnalisés sont le code généré en réponse à des modifications d'un concepteur visuel et les fichiers générés à l'aide de Web Services Description \(WSDL\) langage\).  
+# <a name="implementing-single-file-generators"></a>Implémentation de générateurs de fichier unique
+Un outil personnalisé, parfois appelé un générateur de fichier unique, peuvent être utilisées pour étendre la [!INCLUDE[vbprvb](../../code-quality/includes/vbprvb_md.md)] et [!INCLUDE[csprcs](../../data-tools/includes/csprcs_md.md)] dans les systèmes de projet [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]. Un outil personnalisé est un composant COM qui implémente le <xref:Microsoft.VisualStudio.Shell.Interop.IVsSingleFileGenerator> interface. À l’aide de cette interface, un outil personnalisé transforme un fichier d’entrée unique dans un fichier de sortie unique. Le résultat de la transformation peut être de code source, ou toute autre sortie qui est utile. Deux exemples de fichiers de code générés par un outil de personnalisés sont le code généré en réponse aux modifications dans un concepteur visuel et les fichiers générés à l’aide de Web Services Description Language (WSDL).  
   
- Lorsqu'un outil personnalisé est chargé, ou le fichier d'entrée est enregistré, le système de projet appelle la méthode d' <xref:Microsoft.VisualStudio.Shell.Interop.IVsSingleFileGenerator.Generate%2A> , et passe une référence à une interface de rappel d' <xref:Microsoft.VisualStudio.Shell.Interop.IVsGeneratorProgress> , par laquelle l'outil puisse stocker sa progression à l'utilisateur.  
+ Lorsqu’un outil personnalisé est chargé, ou le fichier d’entrée est enregistré, le système de projet appelle la <xref:Microsoft.VisualStudio.Shell.Interop.IVsSingleFileGenerator.Generate%2A> (méthode) et passe une référence à un <xref:Microsoft.VisualStudio.Shell.Interop.IVsGeneratorProgress> interface de rappel, selon laquelle l’outil peut signaler sa progression à l’utilisateur.  
   
- Le fichier de sortie que l'outil personnalisé génère l'erreur est ajouté au projet avec une dépendance sur le fichier d'entrée.  Le système de projet détermine automatiquement le nom du fichier de sortie, en fonction de la chaîne retournée par l'implémentation personnalisée de l'outil d' <xref:Microsoft.VisualStudio.Shell.Interop.IVsSingleFileGenerator.DefaultExtension%2A>.  
+ Le fichier de sortie générés par l’outil personnalisé est ajouté au projet avec une dépendance sur le fichier d’entrée. Le système de projet détermine automatiquement le nom du fichier de sortie, en fonction de la chaîne retournée par l’implémentation de l’outil personnalisé de <xref:Microsoft.VisualStudio.Shell.Interop.IVsSingleFileGenerator.DefaultExtension%2A>.  
   
- un outil personnalisé doit implémenter l'interface d' <xref:Microsoft.VisualStudio.Shell.Interop.IVsSingleFileGenerator> .  Éventuellement, des outils personnalisés prennent en charge l'interface d' <xref:Microsoft.VisualStudio.OLE.Interop.IObjectWithSite> pour récupérer des informations sur les sources autres que le fichier d'entrée.  Dans tous les cas, avant de pouvoir utiliser un outil personnalisé, vous devez l'inscrire dans le système ou le Registre locaux de [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] .  Pour plus d'informations sur l'inscription des outils personnalisés, consultez [Enregistrement de générateurs de fichier unique](../../extensibility/internals/registering-single-file-generators.md).  
+ Un outil personnalisé doit implémenter la <xref:Microsoft.VisualStudio.Shell.Interop.IVsSingleFileGenerator> interface. Le cas échéant, des outils personnalisés prennent en charge la <xref:Microsoft.VisualStudio.OLE.Interop.IObjectWithSite> interface pour récupérer des informations à partir des sources autres que le fichier d’entrée. Dans tous les cas, avant de pouvoir utiliser un outil personnalisé, vous devez l’inscrire avec le système ou dans le [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] Registre local. Pour plus d’informations sur l’inscription des outils personnalisés, consultez [l’inscription des générateurs de fichier unique](../../extensibility/internals/registering-single-file-generators.md).  
   
-## Voir aussi  
- [Détermination de l’espace de noms par défaut d’un projet](../../misc/determining-the-default-namespace-of-a-project.md)   
- [Exposer des Types pour les concepteurs visuels](../../extensibility/internals/exposing-types-to-visual-designers.md)
+## <a name="see-also"></a>Voir aussi  
+ [Exposition des types aux concepteurs visuels](../../extensibility/internals/exposing-types-to-visual-designers.md)

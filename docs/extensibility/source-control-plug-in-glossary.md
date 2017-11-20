@@ -4,79 +4,65 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-sdk
+ms.technology: vs-ide-sdk
 ms.tgt_pltfrm: 
 ms.topic: article
 helpviewer_keywords:
 - glossary [Visual Studio SDK]
 - source control plug-ins, glossary
 ms.assetid: f224bbc9-38fc-4c80-ab09-51dcc8969f8e
-caps.latest.revision: 11
+caps.latest.revision: "11"
+author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-translation.priority.mt:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
-translationtype: Machine Translation
-ms.sourcegitcommit: 5db97d19b1b823388a465bba15d057b30ff0b3ce
-ms.openlocfilehash: 251e104336d19e9f88926e5ca75a85330039fbe8
-ms.lasthandoff: 02/22/2017
-
+ms.openlocfilehash: dc45c47f47fe18bc857715acc3948561f06e718c
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: fr-FR
+ms.lasthandoff: 10/31/2017
 ---
-# <a name="source-control-plug-in-glossary"></a>Glossaire du plug-in de contrôle de code source
-L’utiles termes et définitions suivants se rapportent à la documentation du SDK du plug-in de contrôle de Source.  
+# <a name="source-control-plug-in-glossary"></a>Glossaire plug-in de contrôle de code source
+Les termes utiles suivants et les définitions se rapportent à la documentation du SDK du plug-in de contrôle de Source.  
   
 ## <a name="definitions"></a>Définitions  
  Archivage  
- Lorsqu’un utilisateur apporte des modifications à une copie de travail, un utilisateur doit envoyer les modifications à partir de la copie de travail dans le référentiel de contrôle source centrale. Cela crée une nouvelle version du fichier qui est disponible à d’autres utilisateurs. Ce processus est appelé un archivage.  
+ Lorsqu’un utilisateur apporte des modifications à une copie de travail, un utilisateur doit envoyer les modifications à partir de la copie de travail dans le référentiel de contrôle source centrale. Cette opération crée une nouvelle révision du fichier qui est disponible à d’autres utilisateurs. Ce processus est appelé un archivage.  
   
  Extraction  
- Action consistant à demander une copie de travail à partir du référentiel, qui informe le référentiel de votre intention de le modifier. Une copie de travail reflète l’état du projet au moment où qu'il est extrait.  
+ Le fait de demander une copie de travail à partir du référentiel, qui informe le référentiel de votre intention de le modifier. Une copie de travail reflète l’état du projet au moment où qu'il est extrait.  
   
  Client  
- Un programme qui utilise le système de contrôle de code source. Dans cette documentation, il est de l’IDE de Visual Studio.  
+ Un programme qui utilise le système de contrôle de code source. Dans cette documentation, il s’agit de l’IDE de Visual Studio.  
   
  Commentaire  
- Message décrivant les modifications que l’utilisateur peut attacher à une révision lorsqu’une opération de contrôle de code source est effectuée.  
+ Message décrivant les modifications un utilisateur peut attacher à une révision lorsqu’une opération de contrôle de code source est effectuée.  
   
  Conflit  
- Se produit lorsque deux utilisateurs essaient d’archiver les modifications apportées à la même région d’un même fichier. En règle générale, une fusion doit être effectuée.  
+ Se produit lorsque deux utilisateurs tentent d’archiver des modifications apportées à la même région du même fichier. En règle générale, une fusion doit être effectuée.  
   
  Répertoire  
- Un dossier local côté client correspond à un répertoire. Il s’agit de la copie dans laquelle un utilisateur effectue réellement les changements. Il peut y avoir de nombreuses copies de travail d’un projet donné. Généralement, chaque développeur possède sa propre copie.  
+ Un dossier local côté client correspond à un répertoire. Il s’agit de la copie dans lequel un utilisateur apporte réellement des modifications. Il peut y avoir de nombreuses copies de travail d’un projet donné. en règle générale, chaque développeur a sa propre copie.  
   
- Obtenir  
- Une opération get apporte la copie de travail de l’utilisateur à jour la copie du référentiel. Contrairement à une extraction, une opération get est effectuée lorsque l’utilisateur a besoin de la dernière copie simplement mais prévoit de n’apporter aucune modification.  
+ Télécharger  
+ Une opération get met la copie de travail de l’utilisateur à jour avec la copie du référentiel. Contrairement à une extraction, une commande get est effectué lorsque l’utilisateur a besoin de la dernière copie simplement mais prévoit de n’apporter aucune modification.  
   
  Historique  
  Il s’agit d’un résumé de toutes les extractions, archivages, les mises à jour, des balises et versions dans le référentiel de contrôle de code source.  
   
  IDE  
- Se réfère généralement à l’environnement de développement intégré Visual Studio. Toutefois, il peut également faire référence à d’autres environnements client qui reconnaissent l’API de plug-in de contrôle de Source.  
+ Désigne généralement l’environnement de développement intégré Visual Studio. Toutefois, il peut également faire référence à d’autres environnements de client qui reconnaissent l’API de plug-in de contrôle de Source.  
   
  Fusionner  
- Le processus pendant les deux ou plusieurs sources de fichiers de code sont combinés pour former un nouveau fichier qui intègre toutes les fonctionnalités des fichiers précédents. Ce concept est essentiel dans le contrôle de version dans laquelle deux ou plusieurs développeurs travaillent sur les fichiers simultanément.  
+ Le processus pendant les deux ou plusieurs sources de fichiers de code sont combinées pour former un nouveau fichier qui incorpore toutes les fonctionnalités à partir de fichiers précédents. Ce concept est fondamental dans le contrôle de version dans laquelle deux ou plusieurs développeurs travaillent simultanément sur des fichiers.  
   
  Projet  
- Un dossier de contrôle de code source est souvent appelé un projet. Cela n’a pas de relation avec des projets ou des solutions dans Visual Studio.  
+ Un dossier de contrôle de code source est communément appelée un projet. Cela n’a pas de relation avec des projets ou des solutions dans Visual Studio.  
   
  Plug-in  
- Une DLL qui fournit des fonctionnalités de contrôle de code source par l’implémentation de l’API de plug-in de contrôle de Source.  
+ Une DLL qui fournit des fonctionnalités de contrôle de code source en mettant en œuvre de l’API de plug-in de contrôle de Source.  
   
  Référentiel  
- La copie principale, où une contrôle du code source système stocke l’historique de révision complète d’un projet. Chaque projet possède un seul référentiel.  
+ La copie principale, où une contrôle de code source système stocke l’historique de révision complète d’un projet. Chaque projet possède un seul référentiel.  
   
  Révision  
  Une modification validée dans l’historique d’un fichier ou un ensemble de fichiers. Une révision est un instantané dans un projet en constante évolution.  

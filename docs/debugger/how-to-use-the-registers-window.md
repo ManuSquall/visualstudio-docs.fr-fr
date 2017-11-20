@@ -1,63 +1,59 @@
 ---
-title: "Comment&#160;: utiliser la fen&#234;tre Registres | Microsoft Docs"
-ms.custom: ""
-ms.date: "12/05/2016"
-ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-debug"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "vs.debug.registers"
-dev_langs: 
-  - "FSharp"
-  - "VB"
-  - "CSharp"
-  - "C++"
-  - "JScript"
-  - "VB"
-  - "CSharp"
-  - "C++"
-helpviewer_keywords: 
-  - "registres, débogage"
-  - "contenus de registres"
-  - "indicateurs, fenêtre Registres"
-  - "groupes de registres"
-  - "débogage (Visual Studio), fenêtre Registres"
-  - "Registres (fenêtre)"
+title: "Afficher les valeurs de Registre dans le débogueur Visual Studio | Documents Microsoft"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-debug
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords: vs.debug.registers
+dev_langs:
+- CSharp
+- VB
+- FSharp
+- C++
+- JScript
+helpviewer_keywords:
+- registers, debugging
+- register contents
+- flags, Registers window
+- register groups
+- debugging [Visual Studio], Registers window
+- Registers window
 ms.assetid: 2918ffa2-562f-40d6-9053-ef321bbeb767
-caps.latest.revision: 37
-caps.handback.revision: 37
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
+caps.latest.revision: "37"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: 1cff6db85b29b4db6006d37fd21e2d9b109b099e
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: fr-FR
+ms.lasthandoff: 10/31/2017
 ---
-# Comment&#160;: utiliser la fen&#234;tre Registres
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
-
-La fenêtre Registres est disponible uniquement si le débogage au niveau des adresses est activé dans la boîte de dialogue **Options**, nœud **Débogage**, catégorie **Général**.  
+# <a name="view-register-values-and-use-the-registers-window-in-the-visual-studio-debugger"></a>Afficher les valeurs de Registre et utiliser la fenêtre registres dans le débogueur Visual Studio
+La fenêtre Registres est disponible uniquement si le débogage au niveau des adresses est activé dans le **Options** boîte de dialogue, **débogage** nœud, **général** catégorie.  
   
- La fenêtre **Registres** affiche le contenu des registres.  Si la fenêtre **Registres** reste ouverte pendant que vous exécutez le programme pas à pas, vous pouvez voir changer les valeurs des registres au fil de l'exécution du code.  Les valeurs récemment modifiées s'affichent en rouge.  Il est possible de modifier les valeurs des registres.  Pour plus d'informations, consultez [Comment : modifier une valeur de Registre](../debugger/how-to-edit-a-register-value.md).  
+ Le **inscrit** fenêtre affiche le contenu du Registre. Si vous conservez le **inscrit** fenêtre à mesure que vous parcourez votre programme, vous pouvez voir valeurs des registres modifier votre code s’exécute. Les valeurs récemment modifiées s'affichent en rouge. Il est possible de modifier les valeurs des registres. Pour plus d’informations, consultez [Comment : modifier une valeur de Registre](../debugger/how-to-edit-a-register-value.md).  
   
- Pour réduire l'encombrement, la fenêtre **Registres** classe les registres en groupes, lesquels varient en fonction de la plateforme et du type de processeur.  Vous pouvez afficher ou masquer des groupes selon vos besoins.  Pour plus d'informations, consultez [Comment : afficher et masquer les groupes de registres](../debugger/how-to-display-and-hide-register-groups.md).  
+ Pour réduire l’encombrement, la **inscrit** fenêtre classe les registres en groupes, lesquels varient en fonction de la plateforme de processeur et de type. Vous pouvez afficher ou masquer des groupes selon vos besoins. Pour plus d’informations, consultez [Comment : afficher et masquer les groupes de registres](../debugger/how-to-display-and-hide-register-groups.md).  
   
- Pour une introduction avancée aux concepts qui sous\-tendent les registres et la fenêtre Registres, consultez [Concepts de base du débogage : fenêtre Registres](../debugger/debugging-basics-registers-window.md).  
+ Pour obtenir une présentation générale des concepts qui sous-tendent les registres et la fenêtre Registres, consultez [principes fondamentaux de débogage : fenêtre Registres](../debugger/debugging-basics-registers-window.md).  
   
 > [!NOTE]
->  Les boîtes de dialogue et les commandes de menu qui s'affichent peuvent être différentes de celles qui sont décrites dans l'aide, en fonction de vos paramètres actifs ou de l'édition utilisée.  Pour modifier vos paramètres, choisissez **Importation et exportation de paramètres** dans le menu **Outils**.  Pour plus d'informations, consultez [Customizing Development Settings in Visual Studio](http://msdn.microsoft.com/fr-fr/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
+>  Les boîtes de dialogue et les commandes de menu qui s'affichent peuvent être différentes de celles qui sont décrites dans l'aide, en fonction de vos paramètres actifs ou de l'édition utilisée. Pour modifier vos paramètres, choisissez **Importation et exportation de paramètres** dans le menu **Outils** . Pour plus d’informations, consultez [Personnaliser l’IDE Visual Studio](../ide/personalizing-the-visual-studio-ide.md).  
   
-### Pour afficher la fenêtre Registres  
+### <a name="to-display-the-registers-window"></a>Pour afficher la fenêtre Registres  
   
--   Dans le menu **Déboguer**, sélectionnez **Fenêtres**, puis **Registres**.  
+-   Sur le **déboguer** menu, choisissez **Windows**, puis choisissez **inscrit**.  
   
      Le débogueur doit être en cours d'exécution ou en mode arrêt.  
   
     > [!NOTE]
     >  Les informations de Registre ne sont pas disponibles aux applications de script ou SQL.  
   
-## Voir aussi  
- [Concepts de base du débogage : fenêtre Registres](../debugger/debugging-basics-registers-window.md)   
+## <a name="see-also"></a>Voir aussi  
+ [Débogage principes de base : Fenêtre Registres](../debugger/debugging-basics-registers-window.md)   
  [Affichage des données dans le débogueur](../debugger/viewing-data-in-the-debugger.md)   
  [Concepts de base du débogage : fenêtre Registres](../debugger/debugging-basics-registers-window.md)

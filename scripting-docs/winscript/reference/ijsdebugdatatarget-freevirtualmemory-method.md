@@ -1,25 +1,29 @@
 ---
-title: "IJsDebugDataTarget::FreeVirtualMemory, m&#233;thode | Microsoft Docs"
-ms.custom: ""
-ms.date: "01/18/2017"
-ms.prod: "windows-script-interfaces"
-ms.reviewer: ""
-ms.suite: ""
-ms.tgt_pltfrm: ""
-ms.topic: "reference"
+title: "Ijsdebugdatatarget::FreeVirtualMemory, méthode | Documents Microsoft"
+ms.custom: 
+ms.date: 01/18/2017
+ms.prod: windows-script-interfaces
+ms.reviewer: 
+ms.suite: 
+ms.tgt_pltfrm: 
+ms.topic: reference
 apiname: IJsDebugDataTarget.FreeVirtualMemory
 apilocation: jscript9diag.dll
 ms.assetid: ea54bad3-9ae3-436b-974d-70fc7fffefd6
-caps.latest.revision: 4
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 4
+caps.latest.revision: "4"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: 3b53d7f80227a1c4eb0ef0293093543c09c5a367
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.translationtype: MT
+ms.contentlocale: fr-FR
+ms.lasthandoff: 10/27/2017
 ---
-# IJsDebugDataTarget::FreeVirtualMemory, m&#233;thode
-Libère et\/ou annule la validation d'une zone de mémoire dans l'espace d'adressage virtuel du processus cible.  
+# <a name="ijsdebugdatatargetfreevirtualmemory-method"></a>IJsDebugDataTarget::FreeVirtualMemory, méthode
+Libère et/ou invalider une région de mémoire dans l’espace d’adressage virtuel du processus cible.  
   
-## Syntaxe  
+## <a name="syntax"></a>Syntaxe  
   
 ```  
 HRESULT FreeVirtualMemory(  
@@ -29,23 +33,23 @@ HRESULT FreeVirtualMemory(
 );  
 ```  
   
-#### Paramètres  
+#### <a name="parameters"></a>Paramètres  
  `address`  
- \[in\] Adresse dans le processus cible où la mémoire doit être libérée.  
+ [in] Adresse dans le processus cible où la mémoire doit être libérée.  
   
  `size`  
- \[in\] Nombre d'octets pour annuler la validation.  Pour supprimer une zone de mémoire, cette valeur doit être égale à zéro.  
+ [in] Nombre d’octets à dégagement. Pour libérer une région de mémoire, cette valeur doit être zéro.  
   
  `freeType`  
- \[in\] Indique le type d'opération libre à effectuer.  C'est généralement MEM\_RELEASE \(0x8000\) qui libère la zone spécifiée des pages.  Une fois l'opération terminée, les pages sont dans l'état libre.  MEM\_DECOMMIT \(0x4000\) peut être utilisé pour annuler la validation des pages sans les libérer.  
+ [in] Indique le type d’opération libre à effectuer. Il s’agit généralement de MEM_RELEASE (0 x 8000), ce qui libère de la région spécifiée de pages. Après l’opération, les pages sont dans l’état disponible. MEM_DECOMMIT (0 x 4000) peut servir à la place à dégagement les pages sans les relâcher.  
   
-## Valeur de retour  
+## <a name="return-value"></a>Valeur de retour  
   
-## Notes  
- Pour obtenir des informations supplémentaires, consultez l'API Win32 VirtualFree.  
+## <a name="remarks"></a>Remarques  
+ Pour plus d’informations, consultez l’API Win32 de VirtualFree.  
   
-## Configuration requise  
- **En\-tête :** jscript9diag.h  
+## <a name="requirements"></a>Spécifications  
+ **En-tête :** jscript9diag.h  
   
-## Voir aussi  
- [IJsDebugDataTarget, interface](../../winscript/reference/ijsdebugdatatarget-interface.md)
+## <a name="see-also"></a>Voir aussi  
+ [Interface IJsDebugDataTarget](../../winscript/reference/ijsdebugdatatarget-interface.md)

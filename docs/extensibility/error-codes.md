@@ -1,11 +1,10 @@
 ---
-title: Error Codes | Microsoft Docs
+title: "Codes d’erreur | Documents Microsoft"
 ms.custom: 
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-sdk
+ms.technology: vs-ide-sdk
 ms.tgt_pltfrm: 
 ms.topic: article
 helpviewer_keywords:
@@ -13,76 +12,62 @@ helpviewer_keywords:
 - source control plug-ins, error codes
 - errors [Visual Studio SDK]
 ms.assetid: d9cbd1c4-719b-467a-8100-333c1e146d3b
-caps.latest.revision: 19
+caps.latest.revision: "19"
+author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-translation.priority.mt:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
+ms.openlocfilehash: 50d05e529a3202f59df53801728b40fee1c68f40
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
 ms.translationtype: MT
-ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
-ms.openlocfilehash: 69f5ade6fa28b85d77924dffab9b82d602e04421
-ms.contentlocale: fr-fr
-ms.lasthandoff: 08/28/2017
-
+ms.contentlocale: fr-FR
+ms.lasthandoff: 10/31/2017
 ---
-# <a name="error-codes"></a>Error Codes
-When a Source Control Plug-in API function returns an error, it is expected to be one of the following error codes. All errors are negative, warnings or informational error codes are positive, and success is 0.  
+# <a name="error-codes"></a>Codes d'erreur
+Lorsqu’une fonction de l’API de plug-in de contrôle de code Source retourne une erreur, il est censé être un des codes d’erreur suivants. Toutes les erreurs sont négatifs, les avertissements ou les codes d’erreur d’information sont positives, et de réussite est 0.  
   
-|Error Code|Value|Description|  
+|Code d'erreur|Valeur|Description|  
 |----------------|-----------|-----------------|  
-|`SCC_I_SHARESUBPROJOK`|7|Plug-in supports adding files from source control in two steps. For more information, see [SccSetOption](../extensibility/sccsetoption-function.md).|  
-|`SCC_I_FILEDIFFERS`|6|The local file is different from the file in the source control database (for example, [SccDiff](../extensibility/sccdiff-function.md) may return this value).|  
-|`SCC_I_RELOADFILE`|5|Local file was changed during the source control operation; the IDE should reload the file if possible.|  
-|`SCC_I_FILENOTAFFECTED`|4|The file is not affected.|  
-|`SCC_I_PROJECTCREATED`|3|The Project was created during the source control operation (for example, during a call to [SccOpenProject](../extensibility/sccopenproject-function.md) when `SCC_OP_CREATEIFNEW` flag is specified).|  
-|`SCC_I_OPERATIONCANCELED`|2|Operation was cancelled.|  
-|`SCC_I_ADV_SUPPORT`|1|Plug-in supports advanced options for the specified command. For more information, see [SccGetCommandOptions](../extensibility/sccgetcommandoptions-function.md).|  
-|`SCC_OK`|0|Success.|  
-|`SCC_E_INITIALIZEFAILED`|-1|Error: initialization failed.|  
-|`SCC_E_UNKNOWNPROJECT`|-2|Error: project is unknown.|  
-|`SCC_E_COULDNOTCREATEPROJECT`|-3|Error: project could not be created.|  
-|`SCC_E_NOTCHECKEDOUT`|-4|Error: the file is not checked out.|  
-|`SCC_E_ALREADYCHECKEDOUT`|-5|Error: the file is already checked out.|  
-|`SCC_E_FILEISLOCKED`|-6|Error: the file is locked.|  
-|`SCC_E_FILEOUTEXCLUSIVE`|-7|Error: the file is exclusively checked out.|  
-|`SCC_E_ACCESSFAILURE`|-8|There was a problem accessing the source control system, probably due to network or contention issues. A retry is recommended.|  
-|`SCC_E_CHECKINCONFLICT`|-9|Error: there was a conflict during check in.|  
-|`SCC_E_FILEALREADYEXISTS`|-10|Error: the file already exists.|  
-|`SCC_E_FILENOTCONTROLLED`|-11|Error: the file is not under source control.|  
-|`SCC_E_FILEISCHECKEDOUT`|-12|Error: the file is checked out.|  
-|`SCC_E_NOSPECIFIEDVERSION`|-13|Error: there is no specified version.|  
-|`SCC_E_OPNOTSUPPORTED`|-14|Error: the operation is not supported.|  
-|`SCC_E_NONSPECIFICERROR`|-15|Nonspecific error.|  
-|`SCC_E_OPNOTPERFORMED`|-16|Error, the operation was not performed.|  
-|`SCC_E_TYPENOTSUPPORTED`|-17|Error: the type of the file, for example, binary, is not supported by the source code control system.|  
-|`SCC_E_VERIFYMERGE`|-18|File has been auto-merged but has not been checked because it is pending user verification.|  
-|`SCC_E_FIXMERGE`|-19|File has been auto-merged but has not been checked in due to a merge conflict that must be manually resolved.|  
-|`SCC_E_SHELLFAILURE`|-20|Error due to a shell failure.|  
-|`SCC_E_INVALIDUSER`|-21|Error: the user is invalid.|  
-|`SCC_E_PROJECTALREADYOPEN`|-22|Error: the project is already open.|  
-|`SCC_E_PROJSYNTAXERR`|-23|Project syntax error.|  
-|`SCC_E_INVALIDFILEPATH`|-24|Error: the file path is invalid.|  
-|`SCC_E_PROJNOTOPEN`|-25|Error: the project is not open.|  
-|`SCC_E_NOTAUTHORIZED`|-26|Error: the user is not authorized to perform this operation.|  
-|`SCC_E_FILESYNTAXERR`|-27|File syntax error.|  
-|`SCC_E_FILENOTEXIST`|-28|Error, the local file does not exist.|  
-|`SCC_E_CONNECTIONFAILURE`|-29|Error: there was a connection failure.|  
-|`SCC_E_UNKNOWNERROR`|-30|Unknown error.|  
-|`SCC_E_BACKGROUNDGETINPROGRESS`|-31|Background get operation is currently in progress.|  
+|`SCC_I_SHARESUBPROJOK`|7|Plug-in prend en charge l’ajout de fichiers à partir du contrôle de code source en deux étapes. Pour plus d’informations, consultez [SccSetOption](../extensibility/sccsetoption-function.md).|  
+|`SCC_I_FILEDIFFERS`|6|Le fichier local est différent du fichier dans la base de données de contrôle de code source (par exemple, [SccDiff](../extensibility/sccdiff-function.md) peut retourner cette valeur).|  
+|`SCC_I_RELOADFILE`|5|Fichier local a été modifié pendant l’opération de contrôle de code source ; l’IDE doit recharger le fichier si possible.|  
+|`SCC_I_FILENOTAFFECTED`|4|Le fichier n’est pas affecté.|  
+|`SCC_I_PROJECTCREATED`|3|Le projet a été créé pendant l’opération de contrôle de code source (par exemple, pendant un appel à [SccOpenProject](../extensibility/sccopenproject-function.md) lorsque `SCC_OP_CREATEIFNEW` indicateur est spécifié).|  
+|`SCC_I_OPERATIONCANCELED`|2|Opération a été annulée.|  
+|`SCC_I_ADV_SUPPORT`|1|Plug-in prend en charge des options avancées pour la commande spécifiée. Pour plus d’informations, consultez [SccGetCommandOptions](../extensibility/sccgetcommandoptions-function.md).|  
+|`SCC_OK`|0|Opération réussie.|  
+|`SCC_E_INITIALIZEFAILED`|-1|Erreur : Échec de l’initialisation.|  
+|`SCC_E_UNKNOWNPROJECT`|-2|Erreur : le projet est inconnu.|  
+|`SCC_E_COULDNOTCREATEPROJECT`|-3|Erreur : le projet n’a pas pu être créé.|  
+|`SCC_E_NOTCHECKEDOUT`|-4|Erreur : le fichier n'est pas extrait.|  
+|`SCC_E_ALREADYCHECKEDOUT`|-5|Erreur : le fichier est déjà extrait.|  
+|`SCC_E_FILEISLOCKED`|-6|Erreur : le fichier est verrouillé.|  
+|`SCC_E_FILEOUTEXCLUSIVE`|-7|Erreur : le fichier est extrait en mode exclusif.|  
+|`SCC_E_ACCESSFAILURE`|-8|Impossible d’accéder au système de contrôle source, probablement en raison de problèmes réseau ou de contention. Une nouvelle tentative est recommandée.|  
+|`SCC_E_CHECKINCONFLICT`|-9|Erreur : s’est un conflit au cours de l’archivage.|  
+|`SCC_E_FILEALREADYEXISTS`|-10|Erreur : le fichier existe déjà.|  
+|`SCC_E_FILENOTCONTROLLED`|-11|Erreur : le fichier n’est pas sous contrôle de code source.|  
+|`SCC_E_FILEISCHECKEDOUT`|-12|Erreur : le fichier est extrait.|  
+|`SCC_E_NOSPECIFIEDVERSION`|-13|Erreur : il n’existe aucune version spécifiée.|  
+|`SCC_E_OPNOTSUPPORTED`|-14|Erreur : l’opération n’est pas prise en charge.|  
+|`SCC_E_NONSPECIFICERROR`|-15|Erreur non spécifique.|  
+|`SCC_E_OPNOTPERFORMED`|-16|Erreur, l’opération n’a pas été effectuée.|  
+|`SCC_E_TYPENOTSUPPORTED`|-17|Erreur : le type du fichier, par exemple, binaire, n’est pas prise en charge par le système de contrôle de code source.|  
+|`SCC_E_VERIFYMERGE`|-18|Fichier a été fusionnée automatiquement, mais il n’a pas été vérifiée, car il s’agit de vérification de l’utilisateur en attente.|  
+|`SCC_E_FIXMERGE`|-19|Fichier a été fusionnée automatiquement, mais n’a pas été archivé en raison d’un conflit de fusion qui doit être résolu manuellement.|  
+|`SCC_E_SHELLFAILURE`|-20|Erreur en raison d’un échec de l’interpréteur de commandes.|  
+|`SCC_E_INVALIDUSER`|-21|Erreur : l’utilisateur n’est pas valide.|  
+|`SCC_E_PROJECTALREADYOPEN`|-22|Erreur : le projet est déjà ouvert.|  
+|`SCC_E_PROJSYNTAXERR`|-23|Erreur de syntaxe du projet.|  
+|`SCC_E_INVALIDFILEPATH`|-24|Erreur : le chemin d’accès n’est pas valide.|  
+|`SCC_E_PROJNOTOPEN`|-25|Erreur : le projet n’est pas ouvert.|  
+|`SCC_E_NOTAUTHORIZED`|-26|Erreur : l’utilisateur n’est pas autorisé à effectuer cette opération.|  
+|`SCC_E_FILESYNTAXERR`|-27|Erreur de syntaxe de fichier.|  
+|`SCC_E_FILENOTEXIST`|-28|Erreur, le fichier local n’existe pas.|  
+|`SCC_E_CONNECTIONFAILURE`|-29|Erreur : Échec de la connexion est survenu.|  
+|`SCC_E_UNKNOWNERROR`|-30|Erreur inconnue.|  
+|`SCC_E_BACKGROUNDGETINPROGRESS`|-31|Opération d’obtention d’arrière-plan est actuellement en cours.|  
   
-## <a name="macros-provided-for-quick-checking"></a>Macros Provided for Quick Checking  
+## <a name="macros-provided-for-quick-checking"></a>Macros fournis pour vérification rapide  
   
 ```cpp  
 IS_SCC_ERROR(rtn) (((rtn) < 0) ? TRUE : FALSE)  
@@ -90,12 +75,12 @@ IS_SCC_SUCCESS(rtn) (((rtn) == SCC_OK) ? TRUE : FALSE)
 IS_SCC_WARNING(rtn) (((rtn) > 0) ? TRUE : FALSE)  
 ```  
   
-## <a name="remarks"></a>Remarks  
- All Source Control Plug-in API functions (except the [SccAdd](../extensibility/sccadd-function.md), [SccCheckin](../extensibility/scccheckin-function.md), and [SccDiff](../extensibility/sccdiff-function.md)) are expected to succeed when the local files that are passed as arguments do not exist in the working folder. For example, the IDE may issue a call to the [SccCheckout](../extensibility/scccheckout-function.md) or [SccUncheckout](../extensibility/sccuncheckout-function.md) on a file that does not exist in the working folder, but exists in the source control system. This call would succeed. Only when there is no file in the working folder or in the source control system is the function expected to fail.  
+## <a name="remarks"></a>Remarques  
+ Toutes les fonctions API de plug-in de contrôle de code Source (sauf la [SccAdd](../extensibility/sccadd-function.md), [SccCheckin](../extensibility/scccheckin-function.md), et [SccDiff](../extensibility/sccdiff-function.md)) sont censées aboutir lorsque les fichiers locaux qui sont passés comme arguments effectuez n’existe pas dans le dossier de travail. Par exemple, l’IDE peut émettre un appel à la [SccCheckout](../extensibility/scccheckout-function.md) ou [SccUncheckout](../extensibility/sccuncheckout-function.md) sur un fichier qui n’existe pas dans le dossier de travail, mais il existe dans le système de contrôle de code source. Cet appel réussit. Uniquement quand il n’existe aucun fichier dans le dossier de travail ou dans le système de contrôle de code source est la fonction doit échouer.  
   
- Certain functions, such as `SccAdd` and `SccCheckin`, should specifically return `SCC_E_FILENOTEXIST` when the file in the working folder does not exist. Other functions are expected to succeed when the working file does not exist, if the functions operate on a valid file name in the source control system.  
+ Certaines fonctions, telles que `SccAdd` et `SccCheckin`, doit retourner spécifiquement `SCC_E_FILENOTEXIST` lorsque le fichier dans le dossier de travail n’existe pas. Autres fonctions sont censées aboutir lorsque le fichier de travail n’existe pas, si les fonctions de fonctionnent sur un nom de fichier valide dans le système de contrôle de code source.  
   
- The source control plug-in should make no assumptions regarding privileges on a file in the working folder, even if the plug-in had marked the file read-only during some operation. A file in the working folder can be moved, deleted, and changed outside the plug-in's control.  
+ Le plug-in de contrôle de code source doit-elle pas faire d’hypothèses concernant les privilèges sur un fichier dans le dossier de travail, même si le plug-in a marqué le fichier en lecture seule pendant une opération. Un fichier dans le dossier de travail peut être déplacé, supprimé et modifié à l’extérieur de contrôle du plug-in.  
   
-## <a name="see-also"></a>See Also  
- [Source Control Plug-ins](../extensibility/source-control-plug-ins.md)
+## <a name="see-also"></a>Voir aussi  
+ [Plug-ins de contrôle de code source](../extensibility/source-control-plug-ins.md)

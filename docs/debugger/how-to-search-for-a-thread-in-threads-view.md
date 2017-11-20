@@ -1,44 +1,44 @@
 ---
-title: "How to: Search for a Thread in Threads View | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-debug"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-helpviewer_keywords: 
-  - "threads, searching"
+title: "Comment : rechercher un Thread dans la vue Threads | Documents Microsoft"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-debug
+ms.tgt_pltfrm: 
+ms.topic: article
+helpviewer_keywords: threads, searching
 ms.assetid: 5609a9b3-c279-4426-9e2e-dd87896a6d6f
-caps.latest.revision: 4
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 4
+caps.latest.revision: "4"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: 16404b5446b8aedc26d8ecc88e88b6061d896e69
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: fr-FR
+ms.lasthandoff: 10/31/2017
 ---
-# How to: Search for a Thread in Threads View
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
-
-Vous pouvez rechercher un thread spécifique dans la vue Threads en utilisant son ID de thread ou sa chaîne de module comme critère de recherche.  Vous pouvez également spécifier la direction initiale de la recherche.  Les champs de la boîte de dialogue affichent les attributs du thread sélectionné dans l'arborescence des threads.  
+# <a name="how-to-search-for-a-thread-in-threads-view"></a>Comment : rechercher un thread dans la vue Threads
+Vous pouvez rechercher un thread spécifique dans la vue Threads à l’aide de sa chaîne de module ou d’ID de thread comme critère de recherche. Vous pouvez également spécifier la direction initiale de la recherche. Les champs dans la boîte de dialogue affiche les attributs du thread sélectionné dans l’arborescence des threads.  
   
-### Pour rechercher un thread dans la vue Threads  
+### <a name="to-search-for-a-thread-in-threads-view"></a>Pour rechercher un thread dans la vue Threads  
   
-1.  Réorganisez vos fenêtres afin que Spy\+\+ et une fenêtre [Vue Threads](../debugger/threads-view.md) active soient visibles.  
+1.  Fenêtres ainsi que Spy ++ et qu’une [vue Threads](../debugger/threads-view.md) fenêtre sont visibles.  
   
-2.  Dans le menu **Rechercher**, choisissez **Rechercher le thread**.  
+2.  À partir de la **recherche** menu, choisissez **rechercher le Thread**.  
   
-     La [boîte de dialogue Recherche d'un thread](../debugger/thread-search-dialog-box.md) s'ouvre.  
+     Le [boîte de dialogue de recherche de Thread](../debugger/thread-search-dialog-box.md) s’ouvre.  
   
-3.  Tapez l'ID de thread ou une chaîne de module comme critère de recherche.  
+3.  Tapez l’ID de thread ou une chaîne de module comme critère de recherche.  
   
-4.  Désactivez les champs pour lesquels vous ne voulez pas spécifier de valeurs.  
+4.  Désactivez tous les champs pour lesquels vous ne souhaitez pas spécifier de valeurs.  
   
     > [!TIP]
-    >  Pour rechercher tous les threads détenus par un module, effacez le contenu de la zone de texte **Thread** et tapez le nom du module dans la zone **Module**.  Utilisez ensuite **Suivant** pour continuer à rechercher des threads.  
+    >  Pour rechercher tous les threads détenus par un module, désactivez le **Thread** nom de zone de texte et le type du module dans la **Module** boîte. Utilisez ensuite **suivant** pour poursuivre la recherche pour les threads.  
   
-5.  Sélectionnez **Haut** ou **Bas** comme direction initiale de la recherche.  
+5.  Choisissez **des** ou **vers le bas** pour la direction initiale de la recherche.  
   
 6.  Cliquez sur **OK**.  
   
- Si un thread correspondant est trouvé, il est mis en surbrillance dans la fenêtre Vue Threads.
+ Si un thread correspondant est trouvé, il est mis en surbrillance dans la fenêtre de la vue Threads.

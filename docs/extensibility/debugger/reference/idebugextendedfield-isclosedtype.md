@@ -1,45 +1,30 @@
 ---
-title: IDebugExtendedField::IsClosedType | Microsoft Docs
+title: IDebugExtendedField::IsClosedType | Documents Microsoft
 ms.custom: 
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-sdk
+ms.technology: vs-ide-sdk
 ms.tgt_pltfrm: 
 ms.topic: article
 helpviewer_keywords:
 - IsClosedType
 - IDebugExtendedField::IsClosedType
 ms.assetid: 9136fc57-74ff-4fe4-a6e2-b137cb9d5b08
-caps.latest.revision: 8
+caps.latest.revision: "8"
+author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-translation.priority.mt:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
+ms.openlocfilehash: ad1498f0f169e10bcc58cdc0f5e041096766e87c
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
 ms.translationtype: MT
-ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
-ms.openlocfilehash: f211ba7bebcc0dc87ef1ffd3905d3526203fc08c
-ms.contentlocale: fr-fr
-ms.lasthandoff: 08/28/2017
-
+ms.contentlocale: fr-FR
+ms.lasthandoff: 10/31/2017
 ---
 # <a name="idebugextendedfieldisclosedtype"></a>IDebugExtendedField::IsClosedType
-Determines if the field represents a closed type.  
+Détermine si le champ représente un type fermé.  
   
-## <a name="syntax"></a>Syntax  
+## <a name="syntax"></a>Syntaxe  
   
 ```cpp  
 HRESULT IsClosedType(  
@@ -51,8 +36,8 @@ HRESULT IsClosedType(
 int IsClosedType();  
 ```  
   
-## <a name="return-value"></a>Return Value  
- If the field is a closed type, returns `S_OK`; otherwise, returns `S_FALSE`.  
+## <a name="return-value"></a>Valeur de retour  
+ Si le champ est un type fermé, retourne `S_OK`; sinon, retourne `S_FALSE`.  
   
-## <a name="see-also"></a>See Also  
+## <a name="see-also"></a>Voir aussi  
  [IDebugExtendedField](../../../extensibility/debugger/reference/idebugextendedfield.md)

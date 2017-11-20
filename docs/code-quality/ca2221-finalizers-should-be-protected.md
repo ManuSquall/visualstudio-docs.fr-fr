@@ -1,51 +1,51 @@
 ---
-title: "CA2221&#160;: Les finaliseurs doivent &#234;tre prot&#233;g&#233;s | Microsoft Docs"
-ms.custom: ""
-ms.date: "12/14/2016"
-ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-devops-test"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "CA2221"
-  - "FinalizersShouldBeProtected"
-helpviewer_keywords: 
-  - "CA2221"
-  - "FinalizersShouldBeProtected"
+title: "CA2221 : Les finaliseurs doivent être protégés. | Documents Microsoft"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-code-analysis
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords:
+- CA2221
+- FinalizersShouldBeProtected
+helpviewer_keywords:
+- FinalizersShouldBeProtected
+- CA2221
 ms.assetid: bda03aee-4cce-45d3-907d-17f4ee030acc
-caps.latest.revision: 14
-caps.handback.revision: 14
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
+caps.latest.revision: "14"
+author: gewarren
+ms.author: gewarren
+manager: ghogen
+ms.openlocfilehash: 8ff2d5cd64a77f09437a07b446f486e1c2dd5024
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: fr-FR
+ms.lasthandoff: 10/31/2017
 ---
-# CA2221&#160;: Les finaliseurs doivent &#234;tre prot&#233;g&#233;s
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
-
+# <a name="ca2221-finalizers-should-be-protected"></a>CA2221 : Les finaliseurs doivent être protégés
 |||  
 |-|-|  
 |TypeName|FinalizersShouldBeProtected|  
 |CheckId|CA2221|  
 |Catégorie|Microsoft.Usage|  
-|Modification avec rupture|Modification sans rupture|  
+|Modification avec rupture|Sans rupture|  
   
-## Cause  
- Un type public implémente un finaliseur qui ne spécifie pas d'accès family \(protégé\).  
+## <a name="cause"></a>Cause  
+ Un type public implémente un finaliseur qui ne spécifie pas l’accès family (protégé).  
   
-## Description de la règle  
- Les finaliseurs doivent utiliser le modificateur d'accès family.  Cette règle est appliquée par les compilateurs C\#, Visual Basic et Visual C\+\+.  
+## <a name="rule-description"></a>Description de la règle  
+ Les finaliseurs doivent utiliser le modificateur d'accès family. Cette règle est appliquée par les compilateurs c#, Visual Basic et Visual C++.  
   
-## Comment corriger les violations  
- Pour corriger une violation de cette règle, modifiez le finaliseur pour le doter d'un accès family.  
+## <a name="how-to-fix-violations"></a>Comment corriger les violations  
+ Pour corriger une violation de cette règle, modifiez le finaliseur pour un accès family.  
   
-## Quand supprimer les avertissements  
+## <a name="when-to-suppress-warnings"></a>Quand supprimer les avertissements  
  Ne supprimez aucun avertissement de cette règle.  
   
-## Exemple  
- Cette règle ne peut pas être violée dans un langage .NET de niveau supérieur ; elle peut l'être si vous rédigez un code en MSIL \(MicroSoft Intermediate Language\).  
+## <a name="example"></a>Exemple  
+ Cette règle ne peut pas être violée dans n’importe quel langage .NET de niveau supérieur ; Il peut être violé si vous écrivez Microsoft Intermediate Language.  
   
 ```  
 // =============== CLASS MEMBERS DECLARATION ===================  
@@ -80,5 +80,5 @@ manager: "wpickett"
 } // end of namespace  
 ```  
   
-## Voir aussi  
- [Modèle de suppression](../Topic/Dispose%20Pattern.md)
+## <a name="see-also"></a>Voir aussi  
+ [Modèle de suppression](/dotnet/standard/design-guidelines/dispose-pattern)

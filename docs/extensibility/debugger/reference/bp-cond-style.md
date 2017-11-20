@@ -1,46 +1,29 @@
 ---
-title: BP_COND_STYLE | Microsoft Docs
+title: BP_COND_STYLE | Documents Microsoft
 ms.custom: 
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-sdk
+ms.technology: vs-ide-sdk
 ms.tgt_pltfrm: 
 ms.topic: article
-f1_keywords:
-- BP_COND_STYLE
-helpviewer_keywords:
-- BP_COND_STYLE enumeration
+f1_keywords: BP_COND_STYLE
+helpviewer_keywords: BP_COND_STYLE enumeration
 ms.assetid: a93b1412-f447-48a1-af9d-38f3dbb3092f
-caps.latest.revision: 10
+caps.latest.revision: "10"
+author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-translation.priority.mt:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
+ms.openlocfilehash: a2dd89bd7e70e619bea5f1f2cb17b70e98eecaf3
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
 ms.translationtype: MT
-ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
-ms.openlocfilehash: 3148f8a1aaa333c8ae0cf55bdc3bc4e218c0f574
-ms.contentlocale: fr-fr
-ms.lasthandoff: 08/28/2017
-
+ms.contentlocale: fr-FR
+ms.lasthandoff: 10/31/2017
 ---
 # <a name="bpcondstyle"></a>BP_COND_STYLE
-Specifies the breakpoint condition style for pending and bound breakpoints.  
+Spécifie le style de condition de point d’arrêt pour en attente et les points d’arrêt liés.  
   
-## <a name="syntax"></a>Syntax  
+## <a name="syntax"></a>Syntaxe  
   
 ```cpp  
 enum enum_BP_COND_STYLE {   
@@ -59,26 +42,26 @@ public enum enum_BP_COND_STYLE {
 };  
 ```  
   
-## <a name="members"></a>Members  
+## <a name="members"></a>Membres  
  BP_COND_NONE  
- Fires the breakpoint when the breakpoint's position is reached. No breakpoint condition specified.  
+ Se déclenche le point d’arrêt lorsque position du point d’arrêt est atteinte. Aucune condition de point d’arrêt spécifiée.  
   
  BP_COND_WHEN_TRUE  
- Fires the breakpoint only when the conditional expression associated with the breakpoint evaluates to `true`.  
+ Se déclenche le point d’arrêt uniquement lorsque l’expression conditionnelle associé avec le point d’arrêt a la valeur `true`.  
   
  BP_COND_WHEN_CHANGED  
- Fires the breakpoint only when the value of the conditional expression associated with the breakpoint has changed from its previous evaluation.  
+ Se déclenche le point d’arrêt uniquement lorsque le point d’arrêt associé à la valeur de l’expression conditionnelle a changé depuis son évaluation précédente.  
   
-## <a name="remarks"></a>Remarks  
- Used for the `styleCondition` member of the [BP_CONDITION](../../../extensibility/debugger/reference/bp-condition.md) structure.  
+## <a name="remarks"></a>Remarques  
+ Utilisé pour le `styleCondition` membre de la [BP_CONDITION](../../../extensibility/debugger/reference/bp-condition.md) structure.  
   
-## <a name="requirements"></a>Requirements  
- Header: msdbg.h  
+## <a name="requirements"></a>Spécifications  
+ En-tête : msdbg.h  
   
- Namespace: Microsoft.VisualStudio.Debugger.Interop  
+ Namespace : Microsoft.VisualStudio.Debugger.Interop  
   
- Assembly: Microsoft.VisualStudio.Debugger.Interop.dll  
+ Assembly : Microsoft.VisualStudio.Debugger.Interop.dll  
   
-## <a name="see-also"></a>See Also  
- [Enumerations](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)   
+## <a name="see-also"></a>Voir aussi  
+ [Énumérations](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)   
  [BP_CONDITION](../../../extensibility/debugger/reference/bp-condition.md)

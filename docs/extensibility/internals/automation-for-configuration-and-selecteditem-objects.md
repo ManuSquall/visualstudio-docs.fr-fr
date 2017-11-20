@@ -1,36 +1,38 @@
 ---
-title: "Automatisation de la Configuration et les objets SelectedItem | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-helpviewer_keywords: 
-  - "Automation (Visual Studio SDK), SelectedItem, objet"
-  - "Automation (Visual Studio SDK), génère"
+title: Automatisation de la Configuration et les objets SelectedItem | Documents Microsoft
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+helpviewer_keywords:
+- automation [Visual Studio SDK], SelectedItem object
+- automation [Visual Studio SDK], builds
 ms.assetid: 120377f1-51aa-4445-b2f7-06ab7fc2b47f
-caps.latest.revision: 13
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 13
+caps.latest.revision: "13"
+author: gregvanl
+ms.author: gregvanl
+manager: ghogen
+ms.openlocfilehash: 42a3b8bdd8930c9006ba49fd0f2e2dd2491b38cb
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: fr-FR
+ms.lasthandoff: 10/31/2017
 ---
-# Automatisation de la Configuration et les objets SelectedItem
-[!INCLUDE[vs2017banner](../../code-quality/includes/vs2017banner.md)]
-
-Vous pouvez automatiser les processus de génération et d'élément sélectionné dans [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)].  
+# <a name="automation-for-configuration-and-selecteditem-objects"></a>Automatisation de la Configuration et les objets SelectedItem
+Vous pouvez automatiser la génération et le processus de l’élément sélectionné dans [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)].  
   
-## Automation pour les générations  
- La génération ou la configuration d'un modèle Automation qui est fourni lorsque vous implémentez <xref:Microsoft.VisualStudio.Shell.Interop.IVsCfgProvider>.  Pour plus d'informations, consultez [Présentation des configurations de build](../../ide/understanding-build-configurations.md).  
+## <a name="automation-for-builds"></a>Automation pour les Builds  
+ Build ou la configuration dispose d’un modèle automation fourni lors de l’implémentation <xref:Microsoft.VisualStudio.Shell.Interop.IVsCfgProvider>. Pour plus d’informations, consultez [Présentation des configurations de build](../../ide/understanding-build-configurations.md).  
   
- Si vous créez un VSPackage et souhaitez contrôler les options de configuration, vous devez utiliser le modèle Automation.  
+ Si vous créez un VSPackage et que vous souhaitez contrôler les options de configuration, vous devez utiliser le modèle automation.  
   
-## automation pour SelectedItem  
- Vous ne devez pas fournir une implémentation de l'objet d' `SelectedItem` car Visual Studio contient une implémentation standard.  Toutefois, vous pouvez implémenter l'objet d' `SelectedItem` si vous préférez.  Vous devez implémenter un objet contenant l'interface d' `SelectedItem` et retourne une réponse à un appel à la méthode d' <xref:Microsoft.VisualStudio.Shell.Interop.IVsPackage.GetPropertyPage%2A> avec VSITEMID défini à <xref:Microsoft.VisualStudio.Shell.Interop.__VSHPROPID>.  
+## <a name="automation-for-selecteditem"></a>Automatisation de SelectedItem  
+ Vous n’êtes pas obligé de fournir une implémentation pour la `SelectedItem` , car Visual Studio contient une implémentation standard de l’objet. Toutefois, vous pouvez implémenter la `SelectedItem` de l’objet si vous préférez. Vous devez implémenter un objet qui contient le `SelectedItem` de l’interface et renvoie une réponse à un appel à la <xref:Microsoft.VisualStudio.Shell.Interop.IVsPackage.GetPropertyPage%2A> méthode de VSITEMID <xref:Microsoft.VisualStudio.Shell.Interop.__VSHPROPID>.  
   
-## Voir aussi  
+## <a name="see-also"></a>Voir aussi  
  <xref:Microsoft.VisualStudio.Shell.Interop.IVsPackage.GetPropertyPage%2A>   
  [Qui contribuent au modèle Automation](../../extensibility/internals/contributing-to-the-automation-model.md)   
  [Présentation des configurations de build](../../ide/understanding-build-configurations.md)

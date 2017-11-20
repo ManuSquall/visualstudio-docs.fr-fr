@@ -1,46 +1,29 @@
 ---
-title: IDebugBinder::GetMemoryContext | Microsoft Docs
+title: IDebugBinder::GetMemoryContext | Documents Microsoft
 ms.custom: 
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-sdk
+ms.technology: vs-ide-sdk
 ms.tgt_pltfrm: 
 ms.topic: article
-f1_keywords:
-- IDebugBinder::GetMemoryContext
-helpviewer_keywords:
-- IDebugBinder::GetMemoryContext method
+f1_keywords: IDebugBinder::GetMemoryContext
+helpviewer_keywords: IDebugBinder::GetMemoryContext method
 ms.assetid: 801c5b60-acff-4822-b23d-e9c7bbca8a0f
-caps.latest.revision: 12
+caps.latest.revision: "12"
+author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-translation.priority.mt:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
+ms.openlocfilehash: f8765bcef2d1c9c97a8180cf75acc1d0581990c7
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
 ms.translationtype: MT
-ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
-ms.openlocfilehash: cc67341253d4f5a48f7b482b3b26ec3499b01419
-ms.contentlocale: fr-fr
-ms.lasthandoff: 08/28/2017
-
+ms.contentlocale: fr-FR
+ms.lasthandoff: 10/31/2017
 ---
 # <a name="idebugbindergetmemorycontext"></a>IDebugBinder::GetMemoryContext
-This method converts either an object location or a memory address to a memory context.  
+Cette méthode convertit un emplacement de l’objet ou une adresse mémoire vers un contexte de la mémoire.  
   
-## <a name="syntax"></a>Syntax  
+## <a name="syntax"></a>Syntaxe  
   
 ```cpp  
 HRESULT GetMemoryContext(   
@@ -58,20 +41,20 @@ int GetMemoryContext(
 );  
 ```  
   
-#### <a name="parameters"></a>Parameters  
+#### <a name="parameters"></a>Paramètres  
  `pField`  
- [in] An [IDebugField](../../../extensibility/debugger/reference/idebugfield.md) describing the object to locate. If `NULL`, then use `dwConstant` instead.  
+ [in] Un [IDebugField](../../../extensibility/debugger/reference/idebugfield.md) décrivant l’objet à rechercher. Si `NULL`, puis utilisez `dwConstant` à la place.  
   
  `dwConstant`  
- [in] A constant memory address, such as 0x5000.  
+ [in] Une adresse mémoire constant, tels que 0x5000.  
   
  `ppMemCxt`  
- [out] Returns the [IDebugMemoryContext2](../../../extensibility/debugger/reference/idebugmemorycontext2.md) interface that represents the address of the object, or the address in memory.  
+ [out] Retourne le [IDebugMemoryContext2](../../../extensibility/debugger/reference/idebugmemorycontext2.md) interface qui représente l’adresse de l’objet ou l’adresse en mémoire.  
   
-## <a name="return-value"></a>Return Value  
- If successful, returns `S_OK`; otherwise, returns an error code.  
+## <a name="return-value"></a>Valeur de retour  
+ En cas de réussite, retourne `S_OK`; sinon, retourne un code d’erreur.  
   
-## <a name="see-also"></a>See Also  
+## <a name="see-also"></a>Voir aussi  
  [IDebugBinder](../../../extensibility/debugger/reference/idebugbinder.md)   
  [IDebugMemoryContext2](../../../extensibility/debugger/reference/idebugmemorycontext2.md)   
  [IDebugField](../../../extensibility/debugger/reference/idebugfield.md)

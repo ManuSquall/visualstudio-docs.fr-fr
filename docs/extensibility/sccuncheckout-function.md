@@ -1,46 +1,29 @@
 ---
-title: SccUncheckout Function | Microsoft Docs
+title: Fonction de SccUncheckout | Documents Microsoft
 ms.custom: 
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-sdk
+ms.technology: vs-ide-sdk
 ms.tgt_pltfrm: 
 ms.topic: article
-f1_keywords:
-- SccUncheckout
-helpviewer_keywords:
-- SccUncheckout function
+f1_keywords: SccUncheckout
+helpviewer_keywords: SccUncheckout function
 ms.assetid: 6d498b70-29c7-44b7-ae1c-7e99e488bb09
-caps.latest.revision: 12
+caps.latest.revision: "12"
+author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-translation.priority.mt:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
+ms.openlocfilehash: 1e210f239c543da84a1e80833f03b684099155ef
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
 ms.translationtype: MT
-ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
-ms.openlocfilehash: 5db90c033a03605369c19bf358b0642f9f80163b
-ms.contentlocale: fr-fr
-ms.lasthandoff: 08/28/2017
-
+ms.contentlocale: fr-FR
+ms.lasthandoff: 10/31/2017
 ---
-# <a name="sccuncheckout-function"></a>SccUncheckout Function
-This function undoes a previous checkout operation, thereby restoring the contents of the selected file or files to the state prior to the checkout. All changes made to the file since the checkout are lost.  
+# <a name="sccuncheckout-function"></a>SccUncheckout (fonction)
+Cette fonction annule une opération d’extraction précédente, restaurant ainsi le contenu de l’ou les fichiers sélectionnés à l’état précédant l’extraction. Toutes les modifications apportées au fichier depuis l’extraction sont perdues.  
   
-## <a name="syntax"></a>Syntax  
+## <a name="syntax"></a>Syntaxe  
   
 ```cpp  
 SCCRTN SccUncheckout (  
@@ -53,41 +36,41 @@ SCCRTN SccUncheckout (
 );  
 ```  
   
-#### <a name="parameters"></a>Parameters  
+#### <a name="parameters"></a>Paramètres  
  pvContext  
- [in] The source control plug-in context structure.  
+ [in] La structure de contexte plug-in de contrôle de code source.  
   
  hWnd  
- [in] A handle to the IDE window that the source control plug-in can use as a parent for any dialog boxes that it provides.  
+ [in] Handle vers la fenêtre de l’IDE que le plug-in de contrôle de code source peut utiliser en tant que parent pour toutes les boîtes de dialogue qu’il fournit.  
   
  nFiles  
- [in] Number of files specified in the `lpFileNames` array.  
+ [in] Nombre de fichiers spécifiés dans le `lpFileNames` tableau.  
   
  lpFileNames  
- [in] Array of fully qualified local path names of files for which to undo a checkout.  
+ [in] Tableau des noms de chemin qualifié complet de fichiers pour lequel annuler une extraction.  
   
  fOptions  
- [in] Command flags (not used).  
+ [in] Indicateurs de commande (non utilisés).  
   
  pvOptions  
- [in] Source control plug-in-specific options.  
+ [in] Options spécifiques au plug-in du contrôle source.  
   
-## <a name="return-value"></a>Return Value  
- The source control plug-in implementation of this function is expected to return one of the following values:  
+## <a name="return-value"></a>Valeur de retour  
+ L’implémentation de plug-in de contrôle de source de cette fonction est censée retourner l’une des valeurs suivantes :  
   
-|Value|Description|  
+|Valeur|Description|  
 |-----------|-----------------|  
-|SCC_OK|Undo checkout was successful.|  
-|SCC_E_FILENOTCONTROLLED|The selected file is not under source code control.|  
-|SCC_E_ACCESSFAILURE|There was a problem accessing the source control system, probably due to network or contention issues. A retry is recommended.|  
-|SCC_E_NONSPECIFICERROR|Nonspecific failure. Undo checkout did not succeed.|  
-|SCC_E_NOTCHECKEDOUT|The user does not have the file checked out.|  
-|SCC_E_NOTAUTHORIZED|The user is not allowed to perform this operation.|  
-|SCC_E_PROJNOTOPEN|The project has not been opened from source control.|  
-|SCC_I_OPERATIONCANCELED|The operation was cancelled before completion.|  
+|SCC_OK|Annuler l’extraction a réussi.|  
+|SCC_E_FILENOTCONTROLLED|Le fichier sélectionné n’est pas sous contrôle de code source.|  
+|SCC_E_ACCESSFAILURE|Impossible d’accéder au système de contrôle source, probablement en raison de problèmes réseau ou de contention. Une nouvelle tentative est recommandée.|  
+|SCC_E_NONSPECIFICERROR|Erreur non spécifique. Annuler l’extraction n’a pas réussi.|  
+|SCC_E_NOTCHECKEDOUT|L’utilisateur n’a pas extrait le fichier.|  
+|SCC_E_NOTAUTHORIZED|L’utilisateur n’est pas autorisé à effectuer cette opération.|  
+|SCC_E_PROJNOTOPEN|Le projet n’a pas été ouvert à partir du contrôle de code source.|  
+|SCC_I_OPERATIONCANCELED|L’opération a été annulée avant la fin.|  
   
-## <a name="remarks"></a>Remarks  
- After this operation, the `SCC_STATUS_CHECKEDOUT` and `SCC_STATUS_MODIFIED` flags will both be cleared for the files on which the undo checkout was performed.  
+## <a name="remarks"></a>Remarques  
+ Après cette opération, le `SCC_STATUS_CHECKEDOUT` et `SCC_STATUS_MODIFIED` indicateurs seront désactivées pour les fichiers sur lequel l’extraction a été effectuée.  
   
-## <a name="see-also"></a>See Also  
- [Source Control Plug-in API Functions](../extensibility/source-control-plug-in-api-functions.md)
+## <a name="see-also"></a>Voir aussi  
+ [Fonctions d’API du plug-in de contrôle de code source](../extensibility/source-control-plug-in-api-functions.md)

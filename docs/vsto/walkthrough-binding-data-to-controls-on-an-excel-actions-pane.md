@@ -1,12 +1,10 @@
 ---
-title: 'Walkthrough: Binding Data to Controls on an Excel Actions Pane | Microsoft Docs'
+title: "Procédure pas à pas : Liaison de données aux contrôles dans un volet Actions Excel | Documents Microsoft"
 ms.custom: 
 ms.date: 02/02/2017
-ms.prod: visual-studio-dev14
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- office-development
+ms.technology: office-development
 ms.tgt_pltfrm: 
 ms.topic: article
 dev_langs:
@@ -20,176 +18,178 @@ helpviewer_keywords:
 - actions panes [Office development in Visual Studio], binding controls
 - smart documents [Office development in Visual Studio], data binding
 ms.assetid: 106c07bd-e931-4dc5-94dc-ca43900fe09d
-caps.latest.revision: 63
-author: kempb
-ms.author: kempb
+caps.latest.revision: "63"
+author: gewarren
+ms.author: gewarren
 manager: ghogen
-ms.translationtype: HT
-ms.sourcegitcommit: eb5c9550fd29b0e98bf63a7240737da4f13f3249
-ms.openlocfilehash: 66b4340f86c480fa040c0fc6a51623f30da34d27
-ms.contentlocale: fr-fr
-ms.lasthandoff: 08/30/2017
-
+ms.openlocfilehash: e47f9083629ac66e0e195feb089a589c69a22789
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: fr-FR
+ms.lasthandoff: 10/31/2017
 ---
-# <a name="walkthrough-binding-data-to-controls-on-an-excel-actions-pane"></a>Walkthrough: Binding Data to Controls on an Excel Actions Pane
-  This walkthrough demonstrates data binding to controls on an actions pane in Microsoft Office Excel. The controls demonstrate a master/detail relation between tables in a SQL Server database.  
+# <a name="walkthrough-binding-data-to-controls-on-an-excel-actions-pane"></a>Procédure pas à pas : liaison de données aux contrôles dans un volet Actions Excel
+  Cette procédure pas à pas illustre la liaison de données aux contrôles dans un volet actions dans Microsoft Office Excel. Les contrôles illustrent une relation Maître/Détail entre des tables dans une base de données SQL Server.  
   
  [!INCLUDE[appliesto_xlalldoc](../vsto/includes/appliesto-xlalldoc-md.md)]  
   
- This walkthrough illustrates the following tasks:  
+ Cette procédure pas à pas décrit les tâches suivantes :  
   
--   Adding controls to a worksheet.  
+-   Ajout de contrôles à une feuille de calcul.  
   
--   Creating an actions pane control.  
+-   Création d’un contrôle de volet actions.  
   
--   Adding data-bound Windows Forms controls to an actions pane control.  
+-   Ajout de contrôles Windows Forms liés à un contrôle de volet actions.  
   
--   Showing the actions pane when the application opens.  
+-   Affichage du volet actions lorsque l’application s’ouvre.  
   
 > [!NOTE]  
->  Your computer might show different names or locations for some of the Visual Studio user interface elements in the following instructions. The Visual Studio edition that you have and the settings that you use determine these elements. For more information, see [Personalize the Visual Studio IDE](../ide/personalizing-the-visual-studio-ide.md).  
+>  Il est possible que pour certains des éléments de l'interface utilisateur de Visual Studio, votre ordinateur affiche des noms ou des emplacements différents de ceux indiqués dans les instructions suivantes. L'édition de Visual Studio dont vous disposez et les paramètres que vous utilisez déterminent ces éléments. Pour plus d’informations, consultez [Personnaliser l’IDE Visual Studio](../ide/personalizing-the-visual-studio-ide.md).  
   
-## <a name="prerequisites"></a>Prerequisites  
- You need the following components to complete this walkthrough:  
+## <a name="prerequisites"></a>Conditions préalables  
+ Pour exécuter cette procédure pas à pas, vous devez disposer des composants suivants :  
   
 -   [!INCLUDE[vsto_vsprereq](../vsto/includes/vsto-vsprereq-md.md)]  
   
--   [!INCLUDE[Excel_15_short](../vsto/includes/excel-15-short-md.md)] or [!INCLUDE[Excel_14_short](../vsto/includes/excel-14-short-md.md)].  
+-   [!INCLUDE[Excel_15_short](../vsto/includes/excel-15-short-md.md)] ou [!INCLUDE[Excel_14_short](../vsto/includes/excel-14-short-md.md)].  
   
--   Access to a server with the Northwind SQL Server sample database.  
+-   Accès à un serveur avec la base de données Northwind SQL Server.  
   
--   Permissions to read from and write to the SQL Server database.  
+-   Autorisations pour lire et écrire dans la base de données SQL Server.  
   
-## <a name="creating-the-project"></a>Creating the Project  
- The first step is to create an Excel Workbook project.  
+## <a name="creating-the-project"></a>Création du projet  
+ La première étape consiste à créer un projet de classeur Excel.  
   
-#### <a name="to-create-a-new-project"></a>To create a new project  
+#### <a name="to-create-a-new-project"></a>Pour créer un projet  
   
-1.  Create an Excel Workbook project with the name **My Excel Actions Pane**. In the wizard, select **Create a new document**. For more information, see [How to: Create Office Projects in Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md).  
+1.  Créer un projet de classeur Excel portant le nom **Mon volet Actions Excel**. Dans l’Assistant, sélectionnez **créer un nouveau document**. Pour plus d'informations, consultez [How to: Create Office Projects in Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md).  
   
-     Visual Studio opens the new Excel workbook in the designer and adds the **My Excel Actions Pane** project to **Solution Explorer**.  
+     Visual Studio ouvre le nouveau classeur Excel dans le concepteur et ajoute le **Mon volet Actions Excel** projet **l’Explorateur de solutions**.  
   
-## <a name="adding-a-new-data-source-to-the-project"></a>Adding a New Data Source to the Project  
+## <a name="adding-a-new-data-source-to-the-project"></a>Ajout d’une Source de données au projet  
   
-#### <a name="to-add-a-new-data-source-to-the-project"></a>To add a new data source to the project  
+#### <a name="to-add-a-new-data-source-to-the-project"></a>Pour ajouter une nouvelle source de données au projet  
   
-1.  If the **Data Sources** window is not visible, display it by, on the menu bar, choosing **View**, **Other Windows**, **Data Sources**.  
+1.  Si la fenêtre **Sources de données** n'est pas visible, affichez-la en choisissant, dans la barre de menus, **Affichage**, **Autres fenêtres**, **Sources de données**.  
   
-2.  Choose **Add New Data Source** to start the **Data Source Configuration Wizard**.  
+2.  Choisissez **Ajouter une nouvelle source de données** pour démarrer l' **Assistant Configuration de source de données**.  
   
-3.  Select **Database** and then click **Next**.  
+3.  Sélectionnez **base de données** puis cliquez sur **suivant**.  
   
-4.  Select a data connection to the Northwind sample SQL Server database, or add a new connection by using the **New Connection** button.  
+4.  Sélectionnez une connexion de données à la base de données Northwind exemple SQL Server ou ajouter une nouvelle connexion à l’aide de la **nouvelle connexion** bouton.  
   
-5.  Click **Next**.  
+5.  Cliquez sur **Suivant**.  
   
-6.  Clear the option to save the connection if it is selected, and then click **Next**.  
+6.  Désactivez l’option pour enregistrer la connexion si elle est activée, puis cliquez sur **suivant**.  
   
-7.  Expand the **Tables** node in the **Database objects** window.  
+7.  Développez le **Tables** nœud dans le **objets de base de données** fenêtre.  
   
-8.  Select the check box next to the **Suppliers** table.  
+8.  Sélectionnez la case à cocher à côté du **fournisseurs** table.  
   
-9. Expand the **Products** table and select **ProductName**, **SupplierID**, **QuantityPerUnit**, and **UnitPrice**.  
+9. Développez le **produits** de table et sélectionnez **ProductName**, **SupplierID**, **QuantityPerUnit**, et **UnitPrice**.  
   
-10. Click **Finish**.  
+10. Cliquez sur **Terminer**.  
   
- The wizard adds the **Suppliers** table and **Products** table to the **Data Sources** window. It also adds a typed dataset to your project that is visible in **Solution Explorer**.  
+ L’Assistant ajoute les **fournisseurs** table et **produits** de la table vers le **des Sources de données** fenêtre. Il ajoute également un dataset typé à votre projet qui est visible dans **l’Explorateur de solutions**.  
   
-## <a name="adding-controls-to-the-worksheet"></a>Adding Controls to the Worksheet  
- Next, add a <xref:Microsoft.Office.Tools.Excel.NamedRange> control and a <xref:Microsoft.Office.Tools.Excel.ListObject> control to the first worksheet.  
+## <a name="adding-controls-to-the-worksheet"></a>Ajout de contrôles à la feuille de calcul  
+ Ensuite, ajoutez un <xref:Microsoft.Office.Tools.Excel.NamedRange> contrôle et un <xref:Microsoft.Office.Tools.Excel.ListObject> contrôle à la première feuille de calcul.  
   
-#### <a name="to-add-a-namedrange-control-and-a-listobject-control"></a>To add a NamedRange control and a ListObject control  
+#### <a name="to-add-a-namedrange-control-and-a-listobject-control"></a>Pour ajouter un contrôle NamedRange et un contrôle ListObject  
   
-1.  Verify that the **My Excel Actions Pane.xlsx** workbook is open in the Visual Studio designer, with `Sheet1` displayed.  
+1.  Vérifiez que le **Pane.xlsx d’Actions Excel Mes** classeur est ouvert dans le concepteur Visual Studio, avec `Sheet1` affiché.  
   
-2.  In the **Data Sources** window, expand the **Suppliers** table.  
+2.  Dans le **des Sources de données** fenêtre, développez le **fournisseurs** table.  
   
-3.  Click the drop-down arrow on the **Company Name** node, and then click **NamedRange**.  
+3.  Cliquez sur la flèche déroulante du **nom de la société** nœud, puis cliquez sur **NamedRange**.  
   
-4.  Drag **Company Name** from the **Data Sources** window to cell **A2** in `Sheet1`.  
+4.  Faites glisser **nom de la société** à partir de la **des Sources de données** fenêtre pour la cellule **A2** dans `Sheet1`.  
   
-     A <xref:Microsoft.Office.Tools.Excel.NamedRange> control named `CompanyNameNamedRange` is created, and the text \<CompanyName> appears in cell **A2**. At the same time, a <xref:System.Windows.Forms.BindingSource> named `suppliersBindingSource`, a table adapter, and a <xref:System.Data.DataSet> are added to the project. The control is bound to the <xref:System.Windows.Forms.BindingSource>, which in turn is bound to the <xref:System.Data.DataSet> instance.  
+     A <xref:Microsoft.Office.Tools.Excel.NamedRange> contrôle nommé `CompanyNameNamedRange` est créé et le texte \<CompanyName > apparaît dans la cellule **A2**. En même temps, un <xref:System.Windows.Forms.BindingSource> nommé `suppliersBindingSource`, un adaptateur de table et un <xref:System.Data.DataSet> sont ajoutés au projet. Le contrôle est lié à la <xref:System.Windows.Forms.BindingSource>, qui à son tour est lié à la <xref:System.Data.DataSet> instance.  
   
-5.  In the **Data Sources** window, scroll down past the columns that are under the **Suppliers** table. At the bottom of the list is the **Products** table; it is here because it is a child of the **Suppliers** table. Select this **Products** table, not the one that is at the same level as the **Suppliers** table, and then click the drop-down arrow that appears.  
+5.  Dans le **des Sources de données** fenêtre, faites défiler vers le bas après les colonnes qui sont sous la **fournisseurs** table. Au bas de la liste est la **produits** table ; il est ici car il est un enfant de la **fournisseurs** table. Sélectionnez cette option **produits** table, pas celui qui se trouve au même niveau que le **fournisseurs** de table, puis cliquez sur la flèche déroulante qui s’affiche.  
   
-6.  Click **ListObject** in the drop-down list, and then drag the **Products** table to cell **A6** in `Sheet1`.  
+6.  Cliquez sur **ListObject** dans la liste déroulante, puis faites glisser le **produits** table à cellule **A6** dans `Sheet1`.  
   
-     A <xref:Microsoft.Office.Tools.Excel.ListObject> control named `ProductNameListObject` is created in cell **A6**. At the same time, a <xref:System.Windows.Forms.BindingSource> named `productsBindingSource` and a table adapter are added to the project. The control is bound to the <xref:System.Windows.Forms.BindingSource>, which in turn is bound to the <xref:System.Data.DataSet> instance.  
+     A <xref:Microsoft.Office.Tools.Excel.ListObject> contrôle nommé `ProductNameListObject` est créé dans la cellule **A6**. En même temps, un <xref:System.Windows.Forms.BindingSource> nommé `productsBindingSource` et un adaptateur de table sont ajoutés au projet. Le contrôle est lié à la <xref:System.Windows.Forms.BindingSource>, qui à son tour est lié à la <xref:System.Data.DataSet> instance.  
   
-7.  For C# only, select **suppliersBindingSource** on the component tray, and change the **Modifiers** property to **Internal** in the **Properties** window.  
+7.  Pour c# uniquement, sélectionnez **suppliersBindingSource** sur la barre d’état du composant, puis remplacez le **modificateurs** propriété **interne** dans le **depropriétés** fenêtre.  
   
-## <a name="adding-controls-to-the-actions-pane"></a>Adding Controls to the Actions Pane  
- Next, you need an actions pane control that contains a combo box.  
+## <a name="adding-controls-to-the-actions-pane"></a>Ajout de contrôles au volet Actions  
+ Vous devez ensuite un contrôle de volet actions qui contient une zone de liste déroulante.  
   
-#### <a name="to-add-an-actions-pane-control"></a>To add an actions pane control  
+#### <a name="to-add-an-actions-pane-control"></a>Pour ajouter un contrôle de volet actions  
   
-1.  Select the **My Excel Actions Pane** project in **Solution Explorer**.  
+1.  Sélectionnez le **Mon volet Actions Excel** projet **l’Explorateur de solutions**.  
   
-2.  On the **Project** menu, click **Add New Item**.  
+2.  Dans le menu **Projet** , cliquez sur **Ajouter un nouvel élément**.  
   
-3.  In the **Add New Item** dialog box, select **Actions Pane Control**, name it **ActionsControl**, and click **Add**.  
+3.  Dans le **ajouter un nouvel élément** boîte de dialogue, sélectionnez **contrôle de volet Actions**, nommez-le **ActionsControl**, puis cliquez sur **ajouter**.  
   
-#### <a name="to-add-data-bound-windows-forms-controls-to-an-actions-pane-control"></a>To add data-bound Windows Forms controls to an actions pane control  
+#### <a name="to-add-data-bound-windows-forms-controls-to-an-actions-pane-control"></a>Pour ajouter des contrôles Windows Forms liés aux données à un contrôle de volet actions  
   
-1.  From the **Common Controls** tabs of the **Toolbox**, drag a <xref:System.Windows.Forms.ComboBox> control to the actions pane control.  
+1.  À partir de la **contrôles communs** onglets de la **boîte à outils**, faites glisser un <xref:System.Windows.Forms.ComboBox> vers le contrôle de volet actions.  
   
-2.  Change the **Size** property to **171, 21**.  
+2.  Modifier la **taille** propriété **171, 21**.  
   
-3.  Resize the user control to fit the combo box.  
+3.  Redimensionner le contrôle utilisateur pour s’ajuster à la zone de liste déroulante.  
   
-## <a name="binding-the-control-on-the-actions-pane-to-data"></a>Binding the Control on the Actions Pane to Data  
- In this section, you will set the data source of the <xref:System.Windows.Forms.ComboBox> to the same data source as the <xref:Microsoft.Office.Tools.Excel.NamedRange> control on the worksheet.  
+## <a name="binding-the-control-on-the-actions-pane-to-data"></a>Liaison du contrôle dans le volet Actions à des données  
+ Dans cette section, vous allez définir la source de données de la <xref:System.Windows.Forms.ComboBox> à la même source de données en tant que le <xref:Microsoft.Office.Tools.Excel.NamedRange> contrôle sur la feuille de calcul.  
   
-#### <a name="to-set-data-binding-properties-of-the-control"></a>To set data binding properties of the control  
+#### <a name="to-set-data-binding-properties-of-the-control"></a>Pour définir les propriétés de liaison de données du contrôle  
   
-1.  Right-click the actions pane control, and then click **View Code**.  
+1.  Cliquez sur le contrôle de volet actions, puis cliquez sur **afficher le Code**.  
   
-2.  Add the following code to the <xref:System.Windows.Forms.UserControl.Load> event of the actions pane control.  
+2.  Ajoutez le code suivant à la <xref:System.Windows.Forms.UserControl.Load> l’événement de contrôle de volet actions.  
   
-     [!code-vb[Trin_VstcoreActionsPaneExcel#1](../vsto/codesnippet/VisualBasic/Trin_VstcoreActionsPaneExcelVB/ActionsControl.vb#1)]  [!code-csharp[Trin_VstcoreActionsPaneExcel#1](../vsto/codesnippet/CSharp/Trin_VstcoreActionsPaneExcelCS/ActionsControl.cs#1)]  
+     [!code-vb[Trin_VstcoreActionsPaneExcel#1](../vsto/codesnippet/VisualBasic/Trin_VstcoreActionsPaneExcelVB/ActionsControl.vb#1)]
+     [!code-csharp[Trin_VstcoreActionsPaneExcel#1](../vsto/codesnippet/CSharp/Trin_VstcoreActionsPaneExcelCS/ActionsControl.cs#1)]  
   
-3.  In C#, you must create an event handler for the `ActionsControl`. You can place this code in the `ActionsControl` constructor. For more information about creating event handlers, see [How to: Create Event Handlers in Office Projects](../vsto/how-to-create-event-handlers-in-office-projects.md).  
+3.  En c#, vous devez créer un gestionnaire d’événements pour le `ActionsControl`. Vous pouvez placer ce code dans le `ActionsControl` constructeur. Pour plus d’informations sur la création de gestionnaires d’événements, consultez [Comment : créer des gestionnaires d’événements dans les projets Office](../vsto/how-to-create-event-handlers-in-office-projects.md).  
   
      [!code-csharp[Trin_VstcoreActionsPaneExcel#2](../vsto/codesnippet/CSharp/Trin_VstcoreActionsPaneExcelCS/ActionsControl.cs#2)]  
   
-## <a name="showing-the-actions-pane"></a>Showing the Actions Pane  
- The actions pane is not visible until you add the control at run time.  
+## <a name="showing-the-actions-pane"></a>Affichage du volet Actions  
+ Le volet actions n’est pas visible jusqu'à ce que vous ajoutez le contrôle au moment de l’exécution.  
   
-#### <a name="to-show-the-actions-pane"></a>To show the actions pane  
+#### <a name="to-show-the-actions-pane"></a>Pour afficher le volet actions  
   
-1.  In **Solution Explorer**, right-click ThisWorkbook.vb or ThisWorkbook.cs, and then click **View Code**.  
+1.  Dans **l’Explorateur de solutions**, avec le bouton droit ThisWorkbook.vb ou ThisWorkbook.cs, puis cliquez sur **afficher le Code**.  
   
-2.  Create a new instance of the user control in the `ThisWorkbook` class.  
+2.  Créer une nouvelle instance du contrôle utilisateur dans la `ThisWorkbook` classe.  
   
-     [!code-csharp[Trin_VstcoreActionsPaneExcel#3](../vsto/codesnippet/CSharp/Trin_VstcoreActionsPaneExcelCS/ThisWorkbook.cs#3)]  [!code-vb[Trin_VstcoreActionsPaneExcel#3](../vsto/codesnippet/VisualBasic/Trin_VstcoreActionsPaneExcelVB/ThisWorkbook.vb#3)]  
+     [!code-csharp[Trin_VstcoreActionsPaneExcel#3](../vsto/codesnippet/CSharp/Trin_VstcoreActionsPaneExcelCS/ThisWorkbook.cs#3)]
+     [!code-vb[Trin_VstcoreActionsPaneExcel#3](../vsto/codesnippet/VisualBasic/Trin_VstcoreActionsPaneExcelVB/ThisWorkbook.vb#3)]  
   
-3.  In the <xref:Microsoft.Office.Tools.Excel.Workbook.Startup> event handler of `ThisWorkbook`, add the control to the actions pane.  
+3.  Dans le <xref:Microsoft.Office.Tools.Excel.Workbook.Startup> Gestionnaire d’événements de `ThisWorkbook`, ajoutez le contrôle au volet actions.  
   
-     [!code-csharp[Trin_VstcoreActionsPaneExcel#4](../vsto/codesnippet/CSharp/Trin_VstcoreActionsPaneExcelCS/ThisWorkbook.cs#4)]  [!code-vb[Trin_VstcoreActionsPaneExcel#4](../vsto/codesnippet/VisualBasic/Trin_VstcoreActionsPaneExcelVB/ThisWorkbook.vb#4)]  
+     [!code-csharp[Trin_VstcoreActionsPaneExcel#4](../vsto/codesnippet/CSharp/Trin_VstcoreActionsPaneExcelCS/ThisWorkbook.cs#4)]
+     [!code-vb[Trin_VstcoreActionsPaneExcel#4](../vsto/codesnippet/VisualBasic/Trin_VstcoreActionsPaneExcelVB/ThisWorkbook.vb#4)]  
   
-## <a name="testing-the-application"></a>Testing the Application  
- Now you can test your document to verify that the actions pane opens when the document is opened, and that the controls have a master/detail relation.  
+## <a name="testing-the-application"></a>Test de l'application  
+ Vous pouvez maintenant tester votre document pour vérifier que le volet actions s’ouvre lorsque le document est ouvert et que les contrôles ont une relation maître/détail.  
   
-#### <a name="to-test-your-document"></a>To test your document  
+#### <a name="to-test-your-document"></a>Pour tester votre document  
   
-1.  Press F5 to run your project.  
+1.  Appuyez sur F5 pour exécuter votre projet.  
   
-2.  Confirm that the actions pane is visible.  
+2.  Vérifiez que le volet actions est visible.  
   
-3.  Select a company in the list box. Verify that the company name is listed in the <xref:Microsoft.Office.Tools.Excel.NamedRange> control and that the product details are listed in the <xref:Microsoft.Office.Tools.Excel.ListObject> control.  
+3.  Sélectionnez une société dans la zone de liste. Vérifiez que le nom de la société est répertorié dans le <xref:Microsoft.Office.Tools.Excel.NamedRange> contrôle et que les détails du produit sont répertoriés dans le <xref:Microsoft.Office.Tools.Excel.ListObject> contrôle.  
   
-4.  Select various companies to verify the company name and product details change as appropriate.  
+4.  Sélectionnez plusieurs sociétés pour vérifier le nom de la société et les détails sur le produit changent en conséquence.  
   
-## <a name="next-steps"></a>Next Steps  
- Here are some tasks that might come next:  
+## <a name="next-steps"></a>Étapes suivantes  
+ Voici quelques tâches susceptibles de venir après :  
   
--   Binding data to controls in Word. For more information, see [Walkthrough: Binding Data to Controls on a Word Actions Pane](../vsto/walkthrough-binding-data-to-controls-on-a-word-actions-pane.md).  
+-   Liaison de données aux contrôles dans Word. Pour plus d’informations, consultez [procédure pas à pas : liaison de données aux contrôles dans un volet Actions Word](../vsto/walkthrough-binding-data-to-controls-on-a-word-actions-pane.md).  
   
--   Deploying the project. For more information, see [Deploying an Office Solution by Using ClickOnce](../vsto/deploying-an-office-solution-by-using-clickonce.md).  
+-   Déploiement du projet. Pour plus d’informations, consultez [déploiement d’une Solution Office à l’aide de ClickOnce](../vsto/deploying-an-office-solution-by-using-clickonce.md).  
   
-## <a name="see-also"></a>See Also  
- [Actions Pane Overview](../vsto/actions-pane-overview.md)   
- [How to: Manage Control Layout on Actions Panes](../vsto/how-to-manage-control-layout-on-actions-panes.md)   
- [Binding Data to Controls in Office Solutions](../vsto/binding-data-to-controls-in-office-solutions.md)  
+## <a name="see-also"></a>Voir aussi  
+ [Vue d’ensemble du volet Actions](../vsto/actions-pane-overview.md)   
+ [Comment : gérer la disposition des contrôles dans les volets Actions](../vsto/how-to-manage-control-layout-on-actions-panes.md)   
+ [Liaison de données aux contrôles dans les solutions Office](../vsto/binding-data-to-controls-in-office-solutions.md)  
   
   

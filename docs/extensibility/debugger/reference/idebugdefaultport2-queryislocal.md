@@ -1,46 +1,29 @@
 ---
-title: IDebugDefaultPort2::QueryIsLocal | Microsoft Docs
+title: IDebugDefaultPort2::QueryIsLocal | Documents Microsoft
 ms.custom: 
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-sdk
+ms.technology: vs-ide-sdk
 ms.tgt_pltfrm: 
 ms.topic: article
-f1_keywords:
-- IDebugDefaultPort2::QueryIsLocal
-helpviewer_keywords:
-- IDebugDefaultPort2::QueryIsLocal
+f1_keywords: IDebugDefaultPort2::QueryIsLocal
+helpviewer_keywords: IDebugDefaultPort2::QueryIsLocal
 ms.assetid: 1a42e774-c6ed-419a-a0e3-cab5778652ca
-caps.latest.revision: 10
+caps.latest.revision: "10"
+author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-translation.priority.mt:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
+ms.openlocfilehash: b90459eb9dc3a2646bbe1ba5eb9ab25e9a8327b6
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
 ms.translationtype: MT
-ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
-ms.openlocfilehash: 169a4975770ea0704ebaf59d9fa5b621f30bd014
-ms.contentlocale: fr-fr
-ms.lasthandoff: 08/28/2017
-
+ms.contentlocale: fr-FR
+ms.lasthandoff: 10/31/2017
 ---
 # <a name="idebugdefaultport2queryislocal"></a>IDebugDefaultPort2::QueryIsLocal
-This method determines whether this port is on the local machine.  
+Cette méthode détermine si ce port est sur l’ordinateur local.  
   
-## <a name="syntax"></a>Syntax  
+## <a name="syntax"></a>Syntaxe  
   
 ```cpp  
 HRESULT QueryIsLocal(  
@@ -52,8 +35,8 @@ HRESULT QueryIsLocal(
 int QueryIsLocal();  
 ```  
   
-## <a name="return-value"></a>Return Value  
- Returns `S_OK` if this port is local (on the same machine as the caller) or `S_FALSE` if the port is on another machine.  
+## <a name="return-value"></a>Valeur de retour  
+ Retourne `S_OK` si ce port est local (sur le même ordinateur que l’appelant) ou `S_FALSE` si le port est sur un autre ordinateur.  
   
-## <a name="see-also"></a>See Also  
+## <a name="see-also"></a>Voir aussi  
  [IDebugDefaultPort2](../../../extensibility/debugger/reference/idebugdefaultport2.md)

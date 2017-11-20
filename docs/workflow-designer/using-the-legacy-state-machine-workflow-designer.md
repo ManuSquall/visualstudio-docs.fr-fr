@@ -1,65 +1,69 @@
 ---
-title: "Utilisation du Concepteur de Workflow d&#39;ordinateur d&#39;&#233;tat h&#233;rit&#233; | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.tgt_pltfrm: ""
-ms.topic: "reference"
-helpviewer_keywords: 
-  - "EventDrivenActivity (activité)"
-  - "SetStateActivity (activité)"
-  - "Concepteur de flux de travail de l'ordinateur d'état"
-  - "workflows d'ordinateur d'état, activités"
-  - "workflows d'ordinateur d'état, concepteur"
-  - "StateActivity (activité)"
-  - "StateFinalizationActivity (activité)"
-  - "StateInitializationActivity (activité)"
+title: "L’aide du Concepteur de flux de travail de Machine état hérité | Documents Microsoft"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.tgt_pltfrm: 
+ms.topic: reference
+helpviewer_keywords:
+- StateFinalizationActivity activity
+- StateActivity activity
+- SetStateActivity activity
+- EventDrivenActivity activity
+- state machine workflow designer
+- state machine workflows, designer
+- state machine workflows, activities
+- StateInitializationActivity activity
 ms.assetid: 2cd21123-35c2-4eaf-82f6-86fce7a8f04d
-caps.latest.revision: 5
-author: "ErikRe"
-ms.author: "erikre"
-manager: "erikre"
-caps.handback.revision: 5
+caps.latest.revision: "5"
+author: ErikRe
+ms.author: erikre
+manager: erikre
+ms.openlocfilehash: 3eefde445f5c8aca7199d4316472fe92c3160d00
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.translationtype: MT
+ms.contentlocale: fr-FR
+ms.lasthandoff: 10/27/2017
 ---
-# Utilisation du Concepteur de Workflow d&#39;ordinateur d&#39;&#233;tat h&#233;rit&#233;
-Lorsque vous créez un projet de workflow d'ordinateur d'état dans [!INCLUDE[vs2010](../modeling/includes/vs2010_md.md)] qui cible le [!INCLUDE[netfx35_long](../workflow-designer/includes/netfx35_long_md.md)] ou le [!INCLUDE[vstecwinfx](../workflow-designer/includes/vstecwinfx_md.md)], vous pouvez choisir d'utiliser l'**Application console de workflow d'ordinateur d'état** ou le modèle de projet hérité **Bibliothèque de workflows d'ordinateur d'état**.Si vous choisissez l'un de ces modèles de projet d'ordinateur d'état, le concepteur d'ordinateurs d'état est présenté comme interface utilisateur de concepteur de workflow hérité.Pour plus d'informations sur les modèles de projet d'ordinateur d'état hérités, consultez [Procédure : créer des applications console de workflow d'ordinateur d'état \(héritée\)](../Topic/How%20to:%20Create%20State%20Machine%20Workflow%20Console%20Applications%20\(Legacy\).md) et [Procédure : créer une bibliothèque de workflows d'ordinateur d'état \(héritée\)](../Topic/How%20to:%20Create%20a%20State%20Machine%20Workflow%20Library%20\(Legacy\).md).  
+# <a name="using-the-legacy-state-machine-workflow-designer"></a>Utilisation du Concepteur de Workflow d'ordinateur d'état hérité
+Quand vous créez un nouveau projet de flux de travail de machine état dans [!INCLUDE[vs2010](../misc/includes/vs2010_md.md)] qui cible le [!INCLUDE[netfx35_long](../workflow-designer/includes/netfx35_long_md.md)] ou le [!INCLUDE[vstecwinfx](../workflow-designer/includes/vstecwinfx_md.md)], vous pouvez choisir d’utiliser le **Application Console de Workflow d’ordinateur état** ou le  **Bibliothèque de flux de travail de Machine d’état** modèle de projet hérité. Si vous choisissez l'un de ces modèles de projet d'ordinateur d'état, le concepteur d'ordinateurs d'état est présenté comme interface utilisateur de concepteur de workflow hérité. Pour plus d’informations sur les modèles de projet d’ordinateur état hérité, consultez [Comment : créer état Machine Applications Console de Workflow (héritée)](../workflow-designer/how-to-create-state-machine-workflow-console-applications-legacy.md) et [Comment : créer une bibliothèque de flux de travail de Machine état (héritée)](../workflow-designer/how-to-create-a-state-machine-workflow-library-legacy.md).  
   
- Un workflow d'ordinateur d'état se compose d'un ensemble d'états.Un état représente un état initial.Chaque état peut recevoir certains événements spécifiques.En fonction d'un événement, une transition peut s'effectuer vers un autre état.Le workflow d'ordinateur d'état peut porter un état final.Lorsqu'une transition est effectuée vers l'état final, l'exécution de workflow prend fin.  
+ Un workflow d'ordinateur d'état se compose d'un ensemble d'états. Un état représente un état initial. Chaque état peut recevoir certains événements spécifiques. En fonction d'un événement, une transition peut s'effectuer vers un autre état. Le workflow d'ordinateur d'état peut porter un état final. Lorsqu'une transition est effectuée vers l'état final, l'exécution de workflow prend fin.  
   
-## Vues du concepteur de workflow de l'ordinateur d'état  
- Le concepteur de l'ordinateur d'état est un concepteur de formes libres, ce qui signifie que les activités peuvent être déplacées librement sur l'aire de conception.Le concepteur de l'ordinateur d'état dispose de deux vues \(la vue *d'état* et la vue *pilotée par événements*.  
+## <a name="state-machine-designer-views"></a>Vues du concepteur de workflow de l'ordinateur d'état  
+ Le concepteur de l'ordinateur d'état est un concepteur de formes libres, ce qui signifie que les activités peuvent être déplacées librement sur l'aire de conception. Le Concepteur de machine d’état dispose de deux vues : *état* vue et *pilotée par événements* vue.  
   
- La vue d'état affiche les activités d'état et les activités pilotées par événements qui peuvent être contenues dans une activité d'état.Dans cette vue, les transitions d'un état à un autre sont représentées par des lignes qui relient l'activité pilotée par événements portant un état spécifique et l'activité portant un autre état.Vous pouvez également créer des transitions en dessinant vous\-même cette ligne.Pour dessiner la transition, sélectionnez l'activité pilotée par événements, puis sélectionnez l'une des poignées de l'activité et faites\-la glisser.Cette action permet de dessiner une ligne.Cette ligne est ensuite reliée à l'état cible, indiquant une transition entre les états.  
+ La vue d'état affiche les activités d'état et les activités pilotées par événements qui peuvent être contenues dans une activité d'état. Dans cette vue, les transitions d'un état à un autre sont représentées par des lignes qui relient l'activité pilotée par événements portant un état spécifique et l'activité portant un autre état. Vous pouvez également créer des transitions en dessinant vous-même cette ligne. Pour dessiner la transition, sélectionnez l'activité pilotée par événements, puis sélectionnez l'une des poignées de l'activité et faites-la glisser. Cette action permet de dessiner une ligne. Cette ligne est ensuite reliée à l'état cible, indiquant une transition entre les états.  
   
- Pour accéder à la vue des activités pilotées par événements, double\-cliquez sur une activité pilotée par événements.Le concepteur qui apparaît s'apparente au concepteur de workflow séquentiel.Dans sa partie supérieure, une barre de navigation affiche la hiérarchie des activités jusqu'à l'activité pilotée par événements.Vous pouvez naviguer jusqu'à la vue d'état en cliquant sur un élément de la hiérarchie affichée.Si vous avez dessiné une transition d'un état vers un autre état dans la vue d'état, et si vous affichez la vue de l'activité pilotée par événements, une activité d'état définie est ajoutée à l'activité pilotée par événements.Si vous modifiez les propriétés de l'activité d'état définie, ces modifications sont répercutées dans la vue d'état.  
+ Pour accéder à la vue des activités pilotées par événements, double-cliquez sur une activité pilotée par événements. Le concepteur qui apparaît s'apparente au concepteur de workflow séquentiel. Dans sa partie supérieure, une barre de navigation affiche la hiérarchie des activités jusqu'à l'activité pilotée par événements. Vous pouvez naviguer jusqu'à la vue d'état en cliquant sur un élément de la hiérarchie affichée. Si vous avez dessiné une transition d'un état vers un autre état dans la vue d'état, et si vous affichez la vue de l'activité pilotée par événements, une activité d'état définie est ajoutée à l'activité pilotée par événements. Si vous modifiez les propriétés de l'activité d'état définie, ces modifications sont répercutées dans la vue d'état.  
   
-## Activités de workflow de l'ordinateur d'état  
+## <a name="state-machine-workflow-activities"></a>Activités de workflow de l'ordinateur d'état  
  Le tableau suivant décrit les activités clés utilisées dans un concepteur de workflow d'ordinateur d'état.  
   
 |Nom de boîte à outils|Activité|Description|  
-|---------------------------|--------------|-----------------|  
-|**État**|[StateActivity](http://go.microsoft.com/fwlink?LinkID=65042)|Représente un état présent au sein d'un ordinateur d'état pouvant contenir des activités **StateActivity** supplémentaires.Pour plus d'informations, consultez [Utilisation de l'activité StateActivity](http://go.microsoft.com/fwlink?LinkID=65083) \(page pouvant être en anglais\).|  
-|**SetState**|[SetStateActivity](http://go.microsoft.com/fwlink?LinkID=65041)|Spécifie une transition vers un nouvel état.Pour plus d'informations, consultez [Utilisation de l'activité StateActivity](http://go.microsoft.com/fwlink?LinkID=65082) \(page pouvant être en anglais\).|  
-|**StateInitialization**|[StateInitializationActivity](http://go.microsoft.com/fwlink?LinkID=65044)|Elle est exécutée lorsqu'un état est entré ; elle peut contenir d'autres activités.Pour plus d'informations, consultez [Utilisation de l'activité StateInitialization](http://go.microsoft.com/fwlink?LinkID=65006) \(page pouvant être en anglais\).|  
-|**StateFinalization**|[StateFinalizationActivity](http://go.microsoft.com/fwlink?LinkID=65043)|Elle exécute les activités contenues lorsqu'une activité [StateActivity](http://go.microsoft.com/fwlink?LinkID=65042) prend fin.Pour plus d'informations, consultez [Utilisation de l'activité StateFinalizationActivity](http://go.microsoft.com/fwlink?LinkID=65008) \(page pouvant être en anglais\).|  
-|**EventDriven**|[EventDrivenActivity](http://go.microsoft.com/fwlink?LinkID=65029)|Utilisé pour des états pour lesquels un événement externe déclenche l'exécution.L'activité **EventDrivenActivity** doit contenir une activité qui implémente l'interface [IEventActivity](http://go.microsoft.com/fwlink?LinkID=65032) comme première activité enfant.Pour plus d'informations, consultez [Utilisation de l'activité EventDrivenActivity](http://go.microsoft.com/fwlink?LinkID=65068) \(page pouvant être en anglais\).|  
+|------------------|--------------|-----------------|  
+|**État**|[StateActivity](http://go.microsoft.com/fwlink?LinkID=65042)|Représente un état dans une machine à États ; peut contenir supplémentaires **StateActivity** activités. Pour plus d’informations, consultez [à l’aide de l’activité StateActivity](http://go.microsoft.com/fwlink?LinkID=65083).|  
+|**SetState**|[SetStateActivity](http://go.microsoft.com/fwlink?LinkID=65041)|Spécifie une transition vers un nouvel état. Pour plus d’informations, consultez [à l’aide de l’activité SetStateActivity](http://go.microsoft.com/fwlink?LinkID=65082).|  
+|**StateInitialization**|[StateInitializationActivity](http://go.microsoft.com/fwlink?LinkID=65044)|Elle est exécutée lorsqu'un état est entré ; elle peut contenir d'autres activités. Pour plus d’informations, consultez [à l’aide de l’activité StateInitialization](http://go.microsoft.com/fwlink?LinkID=65006).|  
+|**StateFinalization**|[StateFinalizationActivity](http://go.microsoft.com/fwlink?LinkID=65043)|Exécute les activités contenues en quittant un [StateActivity](http://go.microsoft.com/fwlink?LinkID=65042) activité. Pour plus d’informations, consultez [à l’aide de l’activité StateFinalizationActivity](http://go.microsoft.com/fwlink?LinkID=65008).|  
+|**EventDriven**|[EventDrivenActivity](http://go.microsoft.com/fwlink?LinkID=65029)|Utilisée pour des états pour lesquels un événement externe déclenche l'exécution. Le **EventDrivenActivity** activité doit avoir une activité qui implémente le [IEventActivity](http://go.microsoft.com/fwlink?LinkID=65032) interface comme première activité enfant. Pour plus d’informations, consultez [à l’aide de l’activité EventDrivenActivity](http://go.microsoft.com/fwlink?LinkID=65068).|  
   
- Le composant principal d'un workflow d'ordinateur d'état est l'activité [StateActivity](http://go.microsoft.com/fwlink?LinkID=65042).Puisque les événements sont capturés à différents points d'un workflow d'ordinateur d'état, des états différents sont entrés pour gérer les tâches associées aux événements.Pendant la durée de vie du workflow, ce dernier peut porter plusieurs états différents.Ces états sont reliés via l'activité [SetStateActivity](http://go.microsoft.com/fwlink?LinkID=65041).  
+ Le composant principal d’un workflow de machine d’état est la [StateActivity](http://go.microsoft.com/fwlink?LinkID=65042) activité. Puisque les événements sont capturés à différents points d’un workflow d’ordinateur d’état, des états différents sont entrés pour gérer les tâches associées aux événements. Pendant la durée de vie du workflow, ce dernier peut porter plusieurs états différents. Ces États se connectent entre eux à l’aide de la [SetStateActivity](http://go.microsoft.com/fwlink?LinkID=65041) activité.  
   
- Lorsque vous faites glisser un nouveau **StateActivity** sur l'aire de conception de workflow, vous pouvez ajouter des activités [EventDrivenActivity](http://go.microsoft.com/fwlink?LinkID=65029), [StateInitializationActivity](http://go.microsoft.com/fwlink?LinkID=65044), [StateFinalizationActivity](http://go.microsoft.com/fwlink?LinkID=65043), ou encore d'autres activités **StateActivity** en tant qu'activités enfants.  
+ Lorsque vous faites glisser une nouvelle **StateActivity** sur l’aire de conception de workflow, vous pouvez ajouter [EventDrivenActivity](http://go.microsoft.com/fwlink?LinkID=65029), [StateInitializationActivity](http://go.microsoft.com/fwlink?LinkID=65044), [ StateFinalizationActivity](http://go.microsoft.com/fwlink?LinkID=65043), ou une autre **StateActivity** activités en tant qu’activités enfants.  
   
 > [!CAUTION]
->  Lorsque vous utilisez le concepteur de workflow d'ordinateur d'état pour créer des workflows, vous devez surveiller la structure du workflow que vous concevez à l'aide de la fenêtre **Structure du document**.La vue de la structure du workflow d'ordinateur d'état dans la fenêtre **Structure du document** reflète la disposition logique des activités dans le fichier de balisage du workflow.La disposition physique des activités de workflow, telles qu'elles apparaissent dans l'aire de conception, peut ne pas refléter la disposition logique des activités dans le fichier de balisage du workflow.  
+>  Lorsque vous utilisez le Concepteur de flux de travail de machine état pour créer des workflows, vous devez analyser la structure du flux de travail que vous créez avec le **structure du Document** fenêtre d’affichage. La vue de la structure du workflow de machine d’état dans le **structure du Document** vue fenêtre reflète la disposition logique des activités dans le fichier de balisage de flux de travail. La disposition physique des activités de workflow, telles qu'elles apparaissent dans l'aire de conception, peut ne pas refléter la disposition logique des activités dans le fichier de balisage du workflow.  
 >   
->  Pour ouvrir la fenêtre **Structure du document**, dans le menu **Affichage**, pointez sur **Autres fenêtres**, puis sélectionnez **Structure du document**.  
+>  Pour ouvrir la **structure du Document** fenêtre, dans le **vue** menu, pointez sur **autres fenêtres**, puis sélectionnez **structure du Document**.  
   
-## Voir aussi  
- [Procédure : créer des applications console de workflow d'ordinateur d'état \(héritée\)](../Topic/How%20to:%20Create%20State%20Machine%20Workflow%20Console%20Applications%20\(Legacy\).md)   
- [Procédure : créer une bibliothèque de workflows d'ordinateur d'état \(héritée\)](../Topic/How%20to:%20Create%20a%20State%20Machine%20Workflow%20Library%20\(Legacy\).md)   
- [Workflows d'ordinateur d'état](http://go.microsoft.com/fwlink?LinkID=65016)   
- [Utilisation de l'activité StateActivity](http://go.microsoft.com/fwlink?LinkID=65083)   
- [Utilisation de l'activité StateInitializationActivity](http://go.microsoft.com/fwlink?LinkID=65006)   
- [Utilisation de l'activité StateFinalizationActivity](http://go.microsoft.com/fwlink?LinkID=65008)   
- [Utilisation de l'activité SetStateActivity](http://go.microsoft.com/fwlink?LinkID=65082)   
- [Utilisation de l'activité EventDrivenActivity](http://go.microsoft.com/fwlink?LinkID=65068)
+## <a name="see-also"></a>Voir aussi  
+ [Comment : créer des Applications de Console de Workflow de Machine d’état (héritée)](../workflow-designer/how-to-create-state-machine-workflow-console-applications-legacy.md)   
+ [Comment : créer une bibliothèque de workflows d’ordinateur d’état (héritée)](../workflow-designer/how-to-create-a-state-machine-workflow-library-legacy.md)   
+ [Flux de travail de Machine à États](http://go.microsoft.com/fwlink?LinkID=65016)   
+ [Utilisation de l’activité StateActivity](http://go.microsoft.com/fwlink?LinkID=65083)   
+ [Utilisation de l’activité StateInitializationActivity](http://go.microsoft.com/fwlink?LinkID=65006)   
+ [Utilisation de l’activité StateFinalizationActivity](http://go.microsoft.com/fwlink?LinkID=65008)   
+ [Utilisation de l’activité SetStateActivity](http://go.microsoft.com/fwlink?LinkID=65082)   
+ [Utilisation de l’activité EventDrivenActivity](http://go.microsoft.com/fwlink?LinkID=65068)

@@ -1,46 +1,29 @@
 ---
-title: DEBUG_REASON | Microsoft Docs
+title: DEBUG_REASON | Documents Microsoft
 ms.custom: 
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-sdk
+ms.technology: vs-ide-sdk
 ms.tgt_pltfrm: 
 ms.topic: article
-f1_keywords:
-- DEBUG_REASON
-helpviewer_keywords:
-- DEBUG_REASON enumeration
+f1_keywords: DEBUG_REASON
+helpviewer_keywords: DEBUG_REASON enumeration
 ms.assetid: ad2ee898-8648-4671-9078-d32873862346
-caps.latest.revision: 8
+caps.latest.revision: "8"
+author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-translation.priority.mt:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
+ms.openlocfilehash: 9607afd765e1ddbc9fb2be97a0b7694aed7d493d
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
 ms.translationtype: MT
-ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
-ms.openlocfilehash: e6d6e969b3829222043f789556d26843297d25db
-ms.contentlocale: fr-fr
-ms.lasthandoff: 08/28/2017
-
+ms.contentlocale: fr-FR
+ms.lasthandoff: 10/31/2017
 ---
 # <a name="debugreason"></a>DEBUG_REASON
-Specifies why the process was launched for debugging.  
+Spécifie la raison pour laquelle le processus a été lancé pour le débogage.  
   
-## <a name="syntax"></a>Syntax  
+## <a name="syntax"></a>Syntaxe  
   
 ```cpp  
 enum enum_DEBUG_REASON {  
@@ -63,32 +46,32 @@ public enum enum_DEBUG_REASON {
 };  
 ```  
   
-#### <a name="parameters"></a>Parameters  
+#### <a name="parameters"></a>Paramètres  
  DEBUG_REASON_ERROR  
- A non-specific error occurred (this is used as a default condition when none of the other reasons fit).  
+ Une erreur non spécifique s’est produite (utilisé en tant qu’une condition par défaut lorsque aucune des autres raisons ajuster).  
   
  DEBUG_REASON_USER_LAUNCHED  
- The process was launched at the user's request.  
+ Le processus a été lancé à la demande de l’utilisateur.  
   
  DEBUG_REASON_USER_ATTACHED  
- The already-running process was attached to by the user.  
+ Le processus en cours d’exécution a été attaché à l’utilisateur.  
   
  DEBUG_REASON_AUTO_ATTACHED  
- The process was automatically attached to when it was launched.  
+ Le processus a été automatiquement joints aux lorsqu’elle a été lancée.  
   
  DEBUG_REASON_CAUSALITY  
- The process was launched due to a *Just-In-Time* (JIT) debugging event.  
+ Le processus a été lancé due à un *juste-à-temps* événement de débogage (JIT).  
   
-## <a name="remarks"></a>Remarks  
- Returned from the [GetDebugReason](../../../extensibility/debugger/reference/idebugprocess3-getdebugreason.md) method.  
+## <a name="remarks"></a>Remarques  
+ Retourné par la [GetDebugReason](../../../extensibility/debugger/reference/idebugprocess3-getdebugreason.md) (méthode).  
   
-## <a name="requirements"></a>Requirements  
- Header: msdbg.h  
+## <a name="requirements"></a>Spécifications  
+ En-tête : msdbg.h  
   
- Namespace: Microsoft.VisualStudio.Debugger.Interop  
+ Namespace : Microsoft.VisualStudio.Debugger.Interop  
   
- Assembly: Microsoft.VisualStudio.Debugger.Interop.dll  
+ Assembly : Microsoft.VisualStudio.Debugger.Interop.dll  
   
-## <a name="see-also"></a>See Also  
- [Enumerations](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)   
+## <a name="see-also"></a>Voir aussi  
+ [Énumérations](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)   
  [GetDebugReason](../../../extensibility/debugger/reference/idebugprocess3-getdebugreason.md)

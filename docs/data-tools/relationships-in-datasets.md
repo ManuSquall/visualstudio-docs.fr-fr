@@ -1,5 +1,5 @@
 ---
-title: Relationships in datasets | Microsoft Docs
+title: "Permet de créer des relations entre les jeux de données DataRelation | Documents Microsoft"
 ms.custom: 
 ms.date: 11/04/2016
 ms.reviewer: 
@@ -14,110 +14,98 @@ helpviewer_keywords:
 - datasets [Visual Basic], relationships
 - relationships, datasets
 ms.assetid: cfe274f0-71fe-40f6-994e-7c7f6273c9ba
-caps.latest.revision: 15
+caps.latest.revision: "15"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-translation.priority.ht:
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- ru-ru
-- zh-cn
-- zh-tw
-translation.priority.mt:
-- cs-cz
-- pl-pl
-- pt-br
-- tr-tr
-ms.translationtype: HT
-ms.sourcegitcommit: 33a857c2d8585e2e8da9bcd9158190366a3b6830
-ms.openlocfilehash: 7ceb9c3d3e37074197abca5b3883b4cdff18bb75
-ms.contentlocale: fr-fr
-ms.lasthandoff: 09/07/2017
-
+ms.technology: vs-data-tools
+ms.openlocfilehash: bfc537118f6c1769ec98893099daa0c61d1b5b1d
+ms.sourcegitcommit: ee42a8771f0248db93fd2e017a22e2506e0f9404
+ms.translationtype: MT
+ms.contentlocale: fr-FR
+ms.lasthandoff: 11/09/2017
 ---
-# <a name="relationships-in-datasets"></a>Relationships in datasets
-Datasets that contain related data tables use <xref:System.Data.DataRelation> objects to represent a parent/child relationship between the tables and to return related records from one another. Adding related tables to datasets by using the **Data Source Configuration Wizard**, or the **Dataset Designer**, creates and configures the <xref:System.Data.DataRelation> object for you.  
+# <a name="create-relationships-between-datasets"></a>Créer des relations entre les jeux de données
+Jeux de données qui contiennent des données connexes tables utilisent <xref:System.Data.DataRelation> objets pour représenter une relation parent/enfant entre les tables et pour retourner les enregistrements associés à partir d’un autre. Ajout de tables associées aux groupes de données à l’aide de la **Assistant de Configuration de Source de données**, ou **Concepteur de Dataset**, crée et configure le <xref:System.Data.DataRelation> objet pour vous.  
   
- The <xref:System.Data.DataRelation> object performs two functions:  
+Le <xref:System.Data.DataRelation> objet exécute deux fonctions :  
   
--   It can make available the records related to a record you are working with. It provides child records if you are in a parent record (<xref:System.Data.DataRow.GetChildRows%2A>) and a parent record if you are working with a child record (<xref:System.Data.DataRow.GetParentRow%2A>).  
+-   Il peut rendre disponibles les enregistrements liés à un enregistrement que vous travaillez. Il fournit des enregistrements enfants si vous êtes dans un enregistrement parent (<xref:System.Data.DataRow.GetChildRows%2A>) et un enregistrement parent si vous travaillez avec un enregistrement enfant (<xref:System.Data.DataRow.GetParentRow%2A>).  
   
--   It can enforce constraints for referential integrity, such as deleting related child records when you delete a parent record.  
+-   Il peut appliquer des contraintes d’intégrité référentielle, telles que la suppression des enregistrements enfants connexes lorsque vous supprimez un enregistrement parent.  
   
- It is important to understand the difference between a true join and the function of a <xref:System.Data.DataRelation> object. In a true join, records are taken from parent and child tables and put into a single, flat recordset. When you use a <xref:System.Data.DataRelation> object, no new recordset is created. Instead, the DataRelation tracks the relationship between tables and keeps parent and child records in sync.  
+Il est important de comprendre la différence entre une vraie jointure et la fonction d’un <xref:System.Data.DataRelation> objet. Dans une jointure true, les enregistrements sont extraits des tables parentes et enfants et placés dans un seul jeu d’enregistrements. Lorsque vous utilisez un <xref:System.Data.DataRelation> de l’objet, aucun nouveau jeu d’enregistrements n’est créé. Au lieu de cela, DataRelation effectue le suivi de la relation entre les tables et conserve les enregistrements parents et enfants synchronisés.  
   
-## <a name="datarelation-objects-and-constraints"></a>DataRelation objects and constraints  
-A <xref:System.Data.DataRelation> object is also used to create and enforce the following constraints:  
+## <a name="datarelation-objects-and-constraints"></a>Contraintes des objets DataRelation  
+A <xref:System.Data.DataRelation> objet est également utilisé pour créer et appliquer les contraintes suivantes :  
   
--   A unique constraint, which guarantees that a column in the table contains no duplicates.  
+-   Une contrainte unique, ce qui garantit qu’une colonne dans la table ne contient aucun doublon.  
   
--   A foreign-key constraint, which can be used to maintain referential integrity between a parent and child table in a dataset.  
+-   Une contrainte de clé étrangère, qui peut être utilisée pour maintenir l’intégrité référentielle entre une table parent et enfant dans un jeu de données.  
   
-Constraints that you specify in a <xref:System.Data.DataRelation> object are implemented by automatically creating appropriate objects or setting properties. If you create a foreign-key constraint by using the <xref:System.Data.DataRelation> object, instances of the <xref:System.Data.ForeignKeyConstraint> class are added to the <xref:System.Data.DataRelation> object's <xref:System.Data.DataRelation.ChildKeyConstraint%2A> property.  
+Les contraintes que vous spécifiez dans un <xref:System.Data.DataRelation> objet sont implémentés en créant les objets appropriés automatiquement ou en définissant des propriétés. Si vous créez une contrainte foreign key à l’aide de la <xref:System.Data.DataRelation> objet, les instances de la <xref:System.Data.ForeignKeyConstraint> classe sont ajoutés à la <xref:System.Data.DataRelation> l’objet <xref:System.Data.DataRelation.ChildKeyConstraint%2A> propriété.  
   
-A unique constraint is implemented either by simply setting the <xref:System.Data.DataColumn.Unique%2A> property of a data column to `true` or by adding an instance of the <xref:System.Data.UniqueConstraint> class to the <xref:System.Data.DataRelation> object's <xref:System.Data.DataRelation.ParentKeyConstraint%2A> property. For information on suspending constraints in a dataset, see [Turn off constraints while filling a dataset](../data-tools/turn-off-constraints-while-filling-a-dataset.md).  
+Une contrainte unique est implémentée en définissant simplement le <xref:System.Data.DataColumn.Unique%2A> propriété d’une colonne de données à `true` ou en ajoutant une instance de la <xref:System.Data.UniqueConstraint> classe le <xref:System.Data.DataRelation> l’objet <xref:System.Data.DataRelation.ParentKeyConstraint%2A> propriété. Pour plus d’informations sur l’interruption de contraintes dans un dataset, consultez [désactiver les contraintes pendant le remplissage d’un dataset](../data-tools/turn-off-constraints-while-filling-a-dataset.md).  
   
-### <a name="referential-integrity-rules"></a>Referential integrity rules  
-As part of the foreign-key constraint, you can specify referential integrity rules that are applied at three points:  
+### <a name="referential-integrity-rules"></a>Règles d’intégrité référentielle  
+Dans le cadre de la contrainte de clé étrangère, vous pouvez spécifier des règles d’intégrité référentielle qui sont appliquées dans trois cas :  
   
--   When a parent record is updated  
+-   Lorsqu’un enregistrement parent est mis à jour  
   
--   When a parent record is deleted  
+-   Lors de la suppression d’un enregistrement parent  
   
--   When a change is accepted or rejected  
+-   Lorsqu’une modification est acceptée ou rejetée  
   
-The rules that you can make are specified in the <xref:System.Data.Rule> enumeration and are listed in the following table.  
+Les règles que vous pouvez apporter sont spécifiés dans le <xref:System.Data.Rule> énumération et sont répertoriées dans le tableau suivant.  
   
-|Foreign-key constraint rule|Action|  
+|Règle de la contrainte de clé étrangère|Action|  
 |----------------------------------|------------|  
-|<xref:System.Data.Rule.Cascade>|The change (update or delete) made to the parent record is also made in related records in the child table.|  
-|<xref:System.Data.Rule.SetNull>|Child records are not deleted, but the foreign key in the child records is set to <xref:System.DBNull>. With this setting, child records can be left as "orphans"—that is, they have no relationship to parent records. **Note:**  Using this rule can result in invalid data in the child table.|  
-|<xref:System.Data.Rule.SetDefault>|The foreign key in the related child records is set to its default value (as established by the column's <xref:System.Data.DataColumn.DefaultValue%2A> property).|  
-|<xref:System.Data.Rule.None>|No change is made to related child records. With this setting, child records can contain references to invalid parent records.|  
+|<xref:System.Data.Rule.Cascade>|La modification (mise à jour ou suppression) apportée à l’enregistrement parent est également créée dans les enregistrements associés dans la table enfant.|  
+|<xref:System.Data.Rule.SetNull>|Enregistrements enfants ne sont pas supprimés, mais la clé étrangère des enregistrements enfants est définie <xref:System.DBNull>. Avec ce paramètre, les enregistrements enfants peuvent rester « orphelins », autrement dit, ils n’ont aucune relation avec des enregistrements parents. **Remarque :** à l’aide de cette règle peut entraîner des données non valides dans la table enfant.|  
+|<xref:System.Data.Rule.SetDefault>|La clé étrangère dans les enregistrements enfants connexes est définie à sa valeur par défaut (comme défini par la colonne <xref:System.Data.DataColumn.DefaultValue%2A> propriété).|  
+|<xref:System.Data.Rule.None>|Aucune modification n’est apportée aux enregistrements enfants connexes. Avec ce paramètre, les enregistrements enfants peuvent contenir des références à des enregistrements de parent non valide.|  
   
- For more information about updates in dataset tables, see [Save data back to the database](../data-tools/save-data-back-to-the-database.md).  
+Pour plus d’informations sur les mises à jour dans les tables du dataset, consultez [enregistrer les données dans la base de données](../data-tools/save-data-back-to-the-database.md).  
   
-### <a name="constraint-only-relations"></a>Constraint-only relations  
- When you create a <xref:System.Data.DataRelation> object, you have the option of specifying that the relation be used only to enforce constraints—that is, it will not also be used to access related records. You can use this option to generate a dataset that is slightly more efficient and that contains fewer methods than one with the related-records capability. However, you will not be able to access related records. For example, a constraint-only relation prevents you from deleting a parent record that still has child records, and you cannot access the child records through the parent.  
+### <a name="constraint-only-relations"></a>Relations de contrainte uniquement  
+Lorsque vous créez un <xref:System.Data.DataRelation> de l’objet, vous avez la possibilité de spécifier que la relation est utilisée uniquement pour appliquer des contraintes, autrement dit, il ne sera pas utilisé pour accéder aux enregistrements connexes. Vous pouvez utiliser cette option pour générer un jeu de données qui est légèrement plus efficace et qui contient moins de méthodes qu’un avec la fonctionnalité d’enregistrements connexes. Toutefois, vous ne pourrez pas accéder aux enregistrements connexes. Par exemple, une relation de contrainte uniquement vous empêche de supprimer un enregistrement parent possède toujours des enregistrements enfants, et vous ne peut pas accéder aux enregistrements enfants via le parent.  
   
-## <a name="manually-creating-a-data-relation-in-the-dataset-designer"></a>Manually creating a data relation in the Dataset Designer  
- When you create data tables by using the data design tools in Visual Studio, relationships are created automatically if the information can be gathered from the source of your data. If you manually add data tables from the **DataSet** tab of the **Toolbox**, you may have to create the relationship manually. For information on creating <xref:System.Data.DataRelation> objects programmatically, see [Adding DataRelations](/dotnet/framework/data/adonet/dataset-datatable-dataview/adding-datarelations).  
+## <a name="manually-creating-a-data-relation-in-the-dataset-designer"></a>Création manuelle d’une relation de données dans le Concepteur de Dataset  
+Lorsque vous créez des tables de données en utilisant les outils de conception de données dans Visual Studio, les relations sont créées automatiquement si les informations peuvent être collectées à partir de la source de vos données. Si vous ajoutez manuellement des tables de données à partir de la **DataSet** onglet de la **boîte à outils**, vous devrez peut-être créer la relation manuellement. Pour plus d’informations sur la création de <xref:System.Data.DataRelation> objets par programme, consultez [Ajout de DataRelations](/dotnet/framework/data/adonet/dataset-datatable-dataview/adding-datarelations).  
   
- Relationships between data tables appear as lines in the **Dataset Designer**, with a key and infinity glyph depicting the one-to-many aspect of the relationship. By default, the name of the relationship does not appear on the design surface.  
+Relations entre les tables de données apparaissent sous forme de lignes dans le **Concepteur de Dataset**, avec un glyphe de clé et l’infini représentant l’aspect un-à-plusieurs de la relation. Par défaut, le nom de la relation n’apparaît pas sur l’aire de conception.  
   
 [!INCLUDE[note_settings_general](../data-tools/includes/note_settings_general_md.md)]  
   
-#### <a name="to-create-a-relationship-between-two-data-tables"></a>To create a relationship between two data tables  
+#### <a name="to-create-a-relationship-between-two-data-tables"></a>Pour créer une relation entre deux tables de données  
   
-1.  Open your dataset in the **Dataset Designer**. For more information, see [Walkthrough: Creating a Dataset in the Dataset Designer](walkthrough-creating-a-dataset-with-the-dataset-designer.md).  
+1.  Ouvrez votre dataset dans le **Concepteur de Dataset**. Pour plus d’informations, consultez [procédure pas à pas : création d’un jeu de données dans le Concepteur de Dataset](walkthrough-creating-a-dataset-with-the-dataset-designer.md).  
   
-2.  Drag a **Relation** object from the **DataSet** toolbox onto the child data table in the relationship.  
+2.  Faites glisser un **Relation** de l’objet à partir de la **DataSet** boîte à outils vers la table de données enfant dans la relation.  
   
-     The **Relation** dialog box opens, populating the **Child Table** box with the table that you dragged the **Relation** object onto.  
+     Le **Relation** boîte de dialogue s’ouvre, remplissage de la **Table enfant** zone avec la table que vous avez fait glisser le **Relation** sur l’objet.  
   
-3.  Select the parent table from the **Parent Table** box. The parent table contains records on the "one" side of a one-to-many relationship.  
+3.  Sélectionnez la table parente à partir de la **Table parente** boîte. La table parente contient des enregistrements sur le côté « un » d’une relation un-à-plusieurs.  
   
-4.  Verify that the correct child table is displayed in the **Child Table** box. The child table contains records on the "many" side of a one-to-many relationship.  
+4.  Vérifiez que la table enfant correcte est affichée dans le **Table enfant** boîte. La table enfant contient des enregistrements sur le côté « plusieurs » d’une relation un-à-plusieurs.  
   
-5.  Type a name for the relationship in the **Name** box, or leave the default name based on the selected tables. This is the name of the actual <xref:System.Data.DataRelation> object in code.  
+5.  Tapez un nom pour la relation dans le **nom** zone, ou laissez le nom par défaut basé sur les tables sélectionnées. C’est le nom de la valeur réelle <xref:System.Data.DataRelation> objet dans le code.  
   
-6.  Select the columns that join the tables in the **Key Columns** and **Foreign Key Columns** lists.  
+6.  Sélectionnez les colonnes qui joignent les tables dans le **colonnes clés** et **colonnes clés étrangères** répertorie.  
   
-7.  Select whether to create a relation, constraint, or both.   
+7.  Sélectionnez s’il faut créer une relation, la contrainte ou les deux.   
   
-8.  Select or clear the **Nested Relation** box. Selecting this option sets the <xref:System.Data.DataRelation.Nested%2A> property to `true`, and it causes the child rows of the relation to be nested within the parent column when those rows are written as XML data or synchronized with <xref:System.Xml.XmlDataDocument>. For more information, see [Nesting DataRelations](/dotnet/framework/data/adonet/dataset-datatable-dataview/nesting-datarelations).  
+8.  Activez ou désactivez le **Relation imbriquée** boîte. En sélectionnant cette option définit la <xref:System.Data.DataRelation.Nested%2A> propriété `true`, et entraîne des lignes de la relation d’imbrication dans la colonne parente lorsque ces lignes sont écrites en tant que données XML ou synchronisés avec l’enfant <xref:System.Xml.XmlDataDocument>. Pour plus d’informations, consultez [d’imbrication de DataRelations](/dotnet/framework/data/adonet/dataset-datatable-dataview/nesting-datarelations).  
   
-9. Set the rules to be enforced when you're making changes to records in these tables. For more information, see <xref:System.Data.Rule>.  
+9. Définissez les règles à appliquer lorsque vous apportez des modifications aux enregistrements dans ces tables. Pour plus d'informations, consultez <xref:System.Data.Rule>.  
   
-10. Click **OK** to create the relationship. A relation line appears on the designer between the two tables.  
+10. Cliquez sur **OK** pour créer la relation. Une ligne de relation s’affiche dans le concepteur entre les deux tables.  
   
-#### <a name="to-display-a-relation-name-in-the-dataset-designer"></a>To display a relation name in the Dataset Designer  
+#### <a name="to-display-a-relation-name-in-the-dataset-designer"></a>Pour afficher un nom de relation dans le Concepteur de Dataset  
   
-1.  Open your dataset in the **Dataset Designer**. For more information, see [Walkthrough: Creating a Dataset in the Dataset Designer](walkthrough-creating-a-dataset-with-the-dataset-designer.md).  
+1.  Ouvrez votre dataset dans le **Concepteur de Dataset**. Pour plus d’informations, consultez [procédure pas à pas : création d’un jeu de données dans le Concepteur de Dataset](walkthrough-creating-a-dataset-with-the-dataset-designer.md).  
   
-2.  From the **Data** menu, select the **Show Relation Labels** command to display the relation name. Clear that command to hide the relation name.
+2.  À partir de la **données** menu, sélectionnez le **afficher les étiquettes des relations** commande pour afficher le nom de la relation. Désactivez cette commande pour masquer le nom de la relation.
+
+## <a name="see-also"></a>Voir aussi
+[Créer et configurer des datasets dans Visual Studio](../data-tools/create-and-configure-datasets-in-visual-studio.md)

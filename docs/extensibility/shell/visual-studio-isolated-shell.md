@@ -1,0 +1,68 @@
+---
+title: "Shell isolé Visual Studio | Documents Microsoft"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+helpviewer_keywords:
+- Shell [Visual Studio], shell-based applications, isolated mode
+- Visual Studio shell, isolated mode
+- isolated shell-based applications [Visual Studio]
+- Visual Studio shell, shell-based applications, isolated mode
+- Shell [Visual Studio], isolated mode
+ms.assetid: d2620e71-be9e-44c9-b5b7-03a4c8d9cf0b
+caps.latest.revision: "35"
+author: gregvanl
+ms.author: gregvanl
+manager: ghogen
+ms.openlocfilehash: 6f4056e778e7d8f6aa62e84b03897c810160fa41
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: fr-FR
+ms.lasthandoff: 10/31/2017
+---
+# <a name="visual-studio-isolated-shell"></a>Shell isolé Visual Studio
+Le shell isolé Visual Studio vous permet de créer des applications autonomes qui peuvent s’exécuter côte à côte avec d’autres versions de Visual Studio. Il est principalement utilisée pour héberger des outils spécialisés qui peuvent utiliser les services de Visual Studio, mais également avoir une apparence personnalisée et la personnalisation. Les fonctionnalités Visual Studio et les groupes de commandes de menu peuvent être facilement activées et désactivée. Titres d’application, les icônes d’application et les écrans de démarrage sont entièrement personnalisables. Pour obtenir la liste des fonctionnalités personnalisables, consultez [personnalisation le Shell isolé](customizing-the-isolated-shell.md).  
+  
+ Pour travailler avec un projet de shell isolé, vous devez installer le Kit de développement logiciel Visual Studio. À partir de Visual Studio 2015, vous n’installez pas le Kit de développement logiciel Visual Studio à partir du centre de téléchargement. Il est inclus comme une fonctionnalité facultative dans le programme d’installation de Visual Studio. Vous pouvez également installer le kit SDK VS ultérieurement. Pour plus d’informations, consultez [l’installation de Visual Studio SDK](../installing-the-visual-studio-sdk.md).  
+  
+ Pour créer une application de shell isolé, commencez avec un projet Visual Studio Shell isolé. Ce projet contient tout ce dont vous avez besoin pour développer et tester votre propre application de shell isolé. Lorsque vous êtes prêt à écrire le programme d’installation qui vous permet de déployer votre application, vous devez obtenir le package redistribuable de shell isolé dans [Microsoft Visual Studio Shell (isolé) Redistributable Package](http://go.microsoft.com/fwlink/?LinkId=616022).  
+  
+> [!NOTE]
+>  Avant de pouvoir accéder le package redistribuable de shell isolé, vous devrez remplir une étude brève client.  Après avoir complété l’enquête, vous allez être dirigé vers une page de connexion à Visual Studio avec des liens de téléchargement de package redistribuable.  Vous trouverez les liens de téléchargement lors des visites suivantes sur le site de Visual Studio se connecter sous le **programmes &#124; VISUAL STUDIO 2015 intégré et SHELL isolé** onglet.  
+  
+> [!NOTE]
+>  Pour plus d’informations sur la façon de déployer une application de shell isolée, consultez [procédure pas à pas : création d’une Application de Shell isolé base](walkthrough-creating-a-basic-isolated-shell-application.md).  
+  
+## <a name="working-with-the-isolated-shell"></a>Avec le shell isolé  
+ Une application de shell isolé Visual Studio a un accès complet aux services de Visual Studio et prend en charge la personnalisation spéciale et personnalisation. Il existe plusieurs façons de personnaliser une application de shell isolé :  
+  
+-   Vous pouvez utiliser les composants VSPackages et Managed Extensibility Framework (MEF) pour étendre une application de shell isolé, tout comme vous souhaitez les utiliser dans une autre extension de Visual Studio. Pour plus d’informations, consultez [étendre le Shell isolé](extending-the-isolated-shell.md).  
+  
+-   Pour rendre les fonctionnalités de Visual Studio et les groupes de commandes de menu disponibles ou non disponible, mettez à jour le fichier .vsct dans le projet d’interface utilisateur utilisateur de l’application.  
+  
+-   Pour supprimer **Options** pages ou autres composants d’interpréteur de commandes de Visual Studio à partir de l’application, mettre à jour le fichier .pkgundef de l’application.  
+  
+-   Pour modifier d’autres aspects de l’apparence ou le comportement de l’interpréteur de commandes, mettre à jour le fichier .pkgdef de l’application.  
+  
+-   Certains aspects de l’interpréteur de commandes peuvent également être spécifiés lors de l’application est démarrée. Pour ce faire, mettez à jour les paramètres dans l’appel à un point d’entrée de démarrage de la appenvstub.dll.  
+  
+ Pour plus d’informations sur les différents éléments que vous pouvez personnaliser, consultez [éléments du Shell isolé](elements-of-the-isolated-shell.md).  
+  
+## <a name="standard-features-of-the-isolated-shell"></a>Fonctionnalités standard du Shell isolé  
+ Les fonctionnalités suivantes sont standard pour toutes les éditions de Visual Studio.  
+  
+|Catégorie de fonctionnalité|Fonctionnalité|  
+|----------------------|-------------|  
+|Fonctionnalités de l’IDE|Paramètres d’importation/exportation<br /><br /> Programme d’installation du contrôle de boîte à outils<br /><br /> Liste des tâches et liste d’erreurs<br /><br /> Fenêtre Sortie<br /><br /> Page de démarrage<br /><br /> Fenêtre Propriétés<br /><br /> Boîte à outils<br /><br /> Explorateur de solutions<br /><br /> Fenêtre Signet<br /><br /> Affichage de classes<br /><br /> Explorateur d'objets<br /><br /> Commande, fenêtre<br /><br /> Structure du document<br /><br /> Affichage des ressources<br /><br /> Outil externe<br /><br /> Windows Communication Foundation (WCF) ajouter une référence de Service<br /><br /> Language Integrated prise en charge de requête (LINQ)|  
+|Concepteur/éditeur|Code de navigation outils (recherche unifiée, définition de la source, l’héritage)<br /><br /> IntelliSense<br /><br /> Balises actives<br /><br /> Gestionnaire des extraits de code<br /><br /> Extraits de code<br /><br /> Refactorisation<br /><br /> Tabulation<br /><br /> Le filtrage IntelliSense<br /><br /> Fenêtre Définition de code<br /><br /> Concepteur d'applications<br /><br /> Concepteur Windows Forms<br /><br /> Concepteur Windows Presentation Foundation (WPF)|  
+|Débogage|Évaluateur d’Expression c#<br /><br /> Débogage local<br /><br /> Débogage managé<br /><br /> Modifier & Continuer<br /><br /> Débogage d’inter-threads<br /><br /> Visualisations<br /><br /> DataTips<br /><br /> Débogage natif<br /><br /> Débogage de script<br /><br /> Débogage d’interopérabilité<br /><br /> Le débogage juste-à-temps (JIT)<br /><br /> Déboguer plusieurs processus<br /><br /> Le débogage XSLT<br /><br /> Attacher au processus local<br /><br /> Points de trace<br /><br /> Contraintes de point d’arrêt|  
+|Données|L’Explorateur de serveurs (simplifié - données uniquement)<br /><br /> Lier des données aux données locales (. MDF ou. MDB)<br /><br /> Liaison de données à l’objet<br /><br /> Lier les données au service Web<br /><br /> Ensemble des contrôles de données<br /><br /> Éditeur XML<br /><br /> Lier les données au serveur de base de données locale<br /><br /> Fenêtre Sources de données|  
+|Web|Éditeur HTML<br /><br /> Navigateur web<br /><br /> Concepteur Web Forms<br /><br /> Projet de Site Web<br /><br /> Projet d’Application Web|  
+|Extensibilité|Consomme des composants VSPackages et MEF|  
+  
+## <a name="see-also"></a>Voir aussi  
+ [Shell (isolé ou intégré)](shell-isolated-or-integrated.md)

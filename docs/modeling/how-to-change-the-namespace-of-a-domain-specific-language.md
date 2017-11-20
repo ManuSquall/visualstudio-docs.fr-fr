@@ -1,56 +1,57 @@
 ---
-title: "Comment&#160;: modifier l&#39;espace de nom d&#39;un langage sp&#233;cifique &#224; un domaine | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-helpviewer_keywords: 
-  - "langage spécifique à un domaine, espace de noms"
+title: "Comment : modifier le Namespace d’un langage spécifique à un domaine | Documents Microsoft"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.tgt_pltfrm: 
+ms.topic: article
+helpviewer_keywords: Domain-Specific Language, namespace
 ms.assetid: f20c47e5-230d-4f0e-812f-5c6edb86866c
-caps.latest.revision: 19
-author: "alancameronwills"
-ms.author: "awills"
-manager: "douge"
-caps.handback.revision: 19
+caps.latest.revision: "19"
+author: alancameronwills
+ms.author: awills
+manager: douge
+ms.openlocfilehash: b7419766b4c195c3bcef2aa45e886004a89fb5ec
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.translationtype: MT
+ms.contentlocale: fr-FR
+ms.lasthandoff: 10/27/2017
 ---
-# Comment&#160;: modifier l&#39;espace de nom d&#39;un langage sp&#233;cifique &#224; un domaine
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
-
-Vous pouvez modifier l'espace de noms d'un langage spécifique au domaine.  Vous devez apporter la modification dans **Explorateur DÉSOLÉ**, dans les propriétés du projet de package DÉSOLÉ, et dans les informations de l'assembly.  
+# <a name="how-to-change-the-namespace-of-a-domain-specific-language"></a>Comment : modifier l'espace de nom d'un langage spécifique à un domaine
+Vous pouvez modifier l’espace de noms d’un langage spécifique à un domaine. Vous devez apporter la modification dans le **Explorateur DSL**, dans les propriétés du projet de Package du Dsl et dans les informations d’assembly.  
   
-### Pour modifier l'espace de noms d'un langage spécifique au domaine  
+### <a name="to-change-the-namespace-of-a-domain-specific-language"></a>Pour modifier l’espace de noms d’un langage spécifique à un domaine  
   
-1.  Dans **Explorateur DÉSOLÉ**, cliquez sur le nœud de **DÉSOLÉ** .  
+1.  Dans **Explorateur DSL**, cliquez sur le **Dsl** nœud.  
   
-2.  dans la fenêtre de **Propriétés** , modifiez la propriété d' **Espace de noms** .  
+2.  Dans le **propriétés** fenêtre, de modifier le **Namespace** propriété.  
   
-3.  Enregistrez la solution et transformez les modèles.  
+3.  Enregistrez la solution et transformer les modèles.  
   
-4.  Dans le menu de **Projet** , cliquez sur **Propriétés DÉSOLÉ**.  
+4.  Sur le **projet** menu, cliquez sur **Dsl propriétés**.  
   
-     Les propriétés de votre projet s'affichent.  
+     Les propriétés de votre projet s’affichent.  
   
-5.  Cliquez sur l'onglet **Application**.  
+5.  Cliquez sur l’onglet **Application** .  
   
-6.  Affectez à la propriété de **La cible par défaut l'espace de noms** au nouveau nom de l'espace de noms.  
+6.  Modifier la **par défaut d’espace de noms** propriété pour le nouveau nom de l’espace de noms.  
   
-7.  si vous souhaitez également modifier le nom de l'assembly, modifiez **Propriété nom de l'assembly.**  
+7.  Si vous souhaitez également modifier le nom de l’assembly, modifiez le **propriété Assembly name.**  
   
-8.  Si vous avez modifié le nom de l'assembly, DslPackage ouvert \\Package application et mettre à jour cette ligne :  
+8.  Si vous avez modifié le nom de l’Assembly, ouvrez DslPackage\Package.tt et mettre à jour cette ligne :  
   
      `string dslAssembly = "YourDSLassembly.Dsl.dll";`  
   
-9. Si vous avez écrit tout code personnalisé, veillez à modifier les références d'espace de noms et de classe dans les fichiers de code.  
+9. Si vous avez écrit le code personnalisé, veillez à modifier l’espace de noms et les références dans les fichiers de code.  
   
-10. réinitialisez l'instance expérimentale de Visual Studio.  
+10. Réinitialiser l’instance expérimentale de Visual Studio.  
   
-    1.  suppression **\\Users\\***{votre nom}***\\AppData\\Local\\Microsoft\\VisualStudio\\\*Exp**  
+    1.  Supprimer **\Users\\***{nom de votre}***\AppData\Local\Microsoft\VisualStudio\\\*Exp**  
   
-    2.  Dans le menu de **Démarrer** windows, choisissez **Tous les programmes**, **Microsoft Visual Studio 2010 SDK**, **Outils**, **réinitialisez l'instance expérimentale**.  
+    2.  Sur les fenêtres **Démarrer** menu, choisissez **tous les programmes**, **Microsoft Visual Studio 2010 SDK**, **outils**, **réinitialiser le Instance expérimentale**.  
   
-11. Dans le menu de **Générer** , choisissez **Régénérer la solution**.  
+11. Sur le **générer** menu, choisissez **régénérer la Solution**.  
   
-## Voir aussi  
- [Domain\-Specific Language Tools Glossary](http://msdn.microsoft.com/fr-fr/ca5e84cb-a315-465c-be24-76aa3df276aa)
+## <a name="see-also"></a>Voir aussi  
+ [Glossaire des outils de langage spécifique à un domaine](http://msdn.microsoft.com/en-us/ca5e84cb-a315-465c-be24-76aa3df276aa)

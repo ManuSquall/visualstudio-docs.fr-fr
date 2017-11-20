@@ -1,46 +1,29 @@
 ---
-title: IDebugProcess2::EnumPrograms | Microsoft Docs
+title: IDebugProcess2::EnumPrograms | Documents Microsoft
 ms.custom: 
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-sdk
+ms.technology: vs-ide-sdk
 ms.tgt_pltfrm: 
 ms.topic: article
-f1_keywords:
-- IDebugProcess2::EnumPrograms
-helpviewer_keywords:
-- IDebugProcess2::EnumPrograms
+f1_keywords: IDebugProcess2::EnumPrograms
+helpviewer_keywords: IDebugProcess2::EnumPrograms
 ms.assetid: f5b7295d-487d-464f-a4c6-d54175b07705
-caps.latest.revision: 10
+caps.latest.revision: "10"
+author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-translation.priority.mt:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
+ms.openlocfilehash: dcb37f262211cbcf348e43c5234416f217623d88
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
 ms.translationtype: MT
-ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
-ms.openlocfilehash: 0ad06deabca9c25a6fbef19bca5ce9b00a864a29
-ms.contentlocale: fr-fr
-ms.lasthandoff: 08/28/2017
-
+ms.contentlocale: fr-FR
+ms.lasthandoff: 10/31/2017
 ---
 # <a name="idebugprocess2enumprograms"></a>IDebugProcess2::EnumPrograms
-Retrieves a list of all the programs contained by this process.  
+Récupère une liste de tous les programmes contenus dans ce processus.  
   
-## <a name="syntax"></a>Syntax  
+## <a name="syntax"></a>Syntaxe  
   
 ```cpp  
 HRESULT EnumPrograms(   
@@ -54,13 +37,13 @@ int EnumPrograms(
 );  
 ```  
   
-#### <a name="parameters"></a>Parameters  
+#### <a name="parameters"></a>Paramètres  
  `ppEnum`  
- [out] Returns an [IEnumDebugPrograms2](../../../extensibility/debugger/reference/ienumdebugprograms2.md) object that contains a list of all the programs in the process.  
+ [out] Retourne un [IEnumDebugPrograms2](../../../extensibility/debugger/reference/ienumdebugprograms2.md) objet qui contient une liste de tous les programmes dans le processus.  
   
-## <a name="return-value"></a>Return Value  
- If successful, returns `S_OK`; otherwise, returns an error code.  
+## <a name="return-value"></a>Valeur de retour  
+ En cas de réussite, retourne `S_OK`; sinon, retourne un code d’erreur.  
   
-## <a name="see-also"></a>See Also  
+## <a name="see-also"></a>Voir aussi  
  [IDebugProcess2](../../../extensibility/debugger/reference/idebugprocess2.md)   
  [IEnumDebugPrograms2](../../../extensibility/debugger/reference/ienumdebugprograms2.md)

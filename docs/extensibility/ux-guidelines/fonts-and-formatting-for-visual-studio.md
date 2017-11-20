@@ -4,44 +4,29 @@ ms.custom:
 ms.date: 04/26/2017
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-sdk
+ms.technology: vs-ide-sdk
 ms.tgt_pltfrm: 
 ms.topic: article
 ms.assetid: c3c3df69-83b4-4fd0-b5b1-e18c33f39376
-caps.latest.revision: 5
+caps.latest.revision: "5"
+author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-translation.priority.mt:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
-ms.translationtype: Machine Translation
-ms.sourcegitcommit: 9524ecc3cadef58821fba857de8e82e59eea9b43
-ms.openlocfilehash: c55c135034f5b3b2dd09ccf94e22e56e8f04797e
-ms.contentlocale: fr-fr
-ms.lasthandoff: 05/04/2017
-
+ms.openlocfilehash: 5a252e22cda234f6a45bee084522b2add2bafada
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: fr-FR
+ms.lasthandoff: 10/31/2017
 ---
 # <a name="fonts-and-formatting-for-visual-studio"></a>Mise en forme pour Visual Studio
 ##  <a name="BKMK_TheEnvironmentFont"></a>La police d’environnement  
  Toutes les polices dans Visual Studio doivent être exposés à l’utilisateur pour la personnalisation. Cette opération s’effectue principalement via le **polices et couleurs** page dans le **Outils > Options** boîte de dialogue. Les trois principales catégories de paramètres de police sont :  
   
--   **Police d’environnement** — la police principale pour l’IDE (environnement de développement intégré), utilisée pour tous les éléments d’interface, y compris les boîtes de dialogue, les menus, les fenêtres Outil et les fenêtres de document. Par défaut, la police d’environnement est liée à une police système qui s’affiche en tant que 9 pt Segoe UI dans les versions actuelles de Windows. À l’aide d’une police pour tous les éléments d’interface permet de garantir une apparence cohérente police tout au long de l’IDE.  
+-   **Police d’environnement** -la police principale pour l’IDE (environnement de développement intégré), utilisée pour tous les éléments d’interface, y compris les boîtes de dialogue, les menus, les fenêtres Outil et les fenêtres de document. Par défaut, la police d’environnement est liée à une police système qui s’affiche en tant que 9 pt Segoe UI dans les versions actuelles de Windows. À l’aide d’une police pour tous les éléments d’interface permet de garantir une apparence cohérente police tout au long de l’IDE.  
   
--   **Éditeur de texte** — qu’aire de conception dans le code et d’autres éditeurs de texte peuvent être personnalisés dans l’éditeur de texte des éléments de page dans **Outils > Options**.  
+-   **Éditeur de texte** -page d’éléments qu’aire de conception dans le code et d’autres éditeurs de texte peuvent être personnalisés dans l’éditeur de texte dans **Outils > Options**.  
   
--   **Des regroupements spécifiques** : Concepteur windows qui offrent la personnalisation par l’utilisateur de leurs éléments d’interface peut exposer des polices spécifiques à leur conception surface dans leur propre page Paramètres **Outils > Options**.  
+-   **Des regroupements spécifiques** -concepteur windows qui offrent la personnalisation par l’utilisateur de leurs éléments d’interface peut exposer des polices spécifiques à leur conception surface dans leur propre page Paramètres **Outils > Options**.  
   
 ### <a name="editor-font-customization-and-resizing"></a>Personnalisation de police de l’éditeur et le redimensionnement  
  Les utilisateurs souvent agrandir ou effectuer un zoom de la taille et/ou la couleur du texte dans l’éditeur en fonction de leurs préférences, indépendant de l’interface utilisateur. Étant donné que la police d’environnement est utilisée sur des éléments qui peuvent apparaître au sein ou en tant que partie d’un éditeur/concepteur, il est important de noter le comportement attendu lorsque l’une de ces classifications de police est modifiée.  
@@ -96,7 +81,7 @@ window.ShowModal()
   
  `ShowModal`Retourne une valeur booléenne ? (valeur booléenne nullable) avec le `DialogResult`, qui peut être utilisé si nécessaire. La valeur de retour est true si la boîte de dialogue a été fermé avec **OK**.  
   
- Si vous avez besoin afficher certains UI WPF qui n’est pas une boîte de dialogue et qui est hébergé dans son propre `HwndSource`, comme une fenêtre contextuelle ou la fenêtre WPF enfant d’une fenêtre de fenêtre Win32/WinForms parent, vous devez définir le `FontFamily` et `FontSize` sur l’élément racine de l’élément WPF. (L’interpréteur de commandes définit les propriétés de la fenêtre principale, mais ils ne seront pas héritées après un `HWND`). L’interpréteur de commandes fournit des ressources auxquels les propriétés peuvent être liées, comme suit :  
+ Si vous avez besoin afficher certains UI WPF qui n’est pas une boîte de dialogue et qui est hébergé dans son propre `HwndSource`, comme une fenêtre contextuelle ou la fenêtre WPF enfant d’une fenêtre de fenêtre Win32/WinForms parent, vous devez définir le `FontFamily` et `FontSize` sur l’élément racine du e WPF élément. (L’interpréteur de commandes définit les propriétés de la fenêtre principale, mais ils ne seront pas héritées après un `HWND`). L’interpréteur de commandes fournit des ressources auxquels les propriétés peuvent être liées, comme suit :  
   
 ```  
 <Setter property="FontFamily" Value="{DynamicResource VsFont.EnvironmentFontFamily}" />  
@@ -198,7 +183,7 @@ label.SetResourceReference(Label.StyleProperty,
   
 #### <a name="133-environment-font"></a>Police d’environnement 133 %  
  **Apparaît sous la forme :** 12 pt Segoe UI    
- **Utilisation pour :** sous-titres inférieure dans le document et les boîtes de dialogue de signature et l’interface utilisateur  
+ **Utilisation pour :** sous-titres plus petits dans les boîtes de dialogue de signature et de document et l’interface utilisateur  
   
  **Procédures de code :** où `textBlock` est un TextBlock précédemment défini et `label` est une étiquette définie précédemment :  
   
@@ -257,7 +242,7 @@ label.SetResourceReference(Label.StyleProperty,
 ```  
   
 ### <a name="localizable-styles"></a>Styles localisables  
- Dans certains cas, les localisateurs devez modifier les styles de police pour différents paramètres régionaux, telles que la suppression en gras du texte pour les langues d’Asie de l'Est. Pour permettre la localisation de styles de police, les styles doivent figurer dans le fichier .resx. La meilleure façon d’effectuer cette opération et toujours modifier les styles de police dans le Concepteur d’écran de Visual Studio est de définir explicitement les styles de police au moment du design. Bien que cela crée un objet police complète et peut sembler l’héritage des polices de parent, seule la propriété FontStyle est utilisée pour définir la police.  
+ Dans certains cas, les localisateurs devez modifier les styles de police pour différents paramètres régionaux, telles que la suppression en gras du texte pour les langues d’Extrême-Orient. Pour permettre la localisation de styles de police, les styles doivent figurer dans le fichier .resx. La meilleure façon d’effectuer cette opération et toujours modifier les styles de police dans le Concepteur d’écran de Visual Studio est de définir explicitement les styles de police au moment du design. Bien que cela crée un objet police complète et peut sembler l’héritage des polices de parent, seule la propriété FontStyle est utilisée pour définir la police.  
   
  La solution consiste à connecter le formulaire de boîte de dialogue `FontChanged` événement. Dans la `FontChanged` événement, parcourir tous les contrôles et vérifier si leur police est défini. Si elle est définie, la modifier et une nouvelle police en fonction de la police du formulaire et le style de police du contrôle précédent. Un exemple de ce code est :  
   
@@ -300,11 +285,11 @@ protected static void SetFontStyles(Control topControl, Control parent, Font ref
 ### <a name="testing-the-environment-font"></a>La police d’environnement de test  
  Pour vous assurer que votre interface utilisateur à l’aide de la police d’environnement et qu’il respecte les paramètres de taille, ouvrez **Outils > Options > environnement > polices et couleurs** et sélectionnez « Police d’environnement » sous la « afficher les paramètres de : « menu déroulant.  
   
- ![Paramètres de polices et couleurs dans les outils &gt; boîte de dialogue Options](~/extensibility/ux-guidelines/media/0201-a_optionsfonts.png "0201-a_OptionsFonts")<br />Paramètres de polices et couleurs dans les outils &gt; boîte de dialogue Options
+ ![Paramètres de polices et couleurs dans les outils de &gt; boîte de dialogue Options](../../extensibility/ux-guidelines/media/0201-a_optionsfonts.png "0201-a_OptionsFonts")<br />Paramètres de polices et couleurs dans les outils &gt; boîte de dialogue Options
   
  Définir la police à très autre chose que la valeur par défaut. Pour bien qui ne met pas à jour l’interface utilisateur, choisir une police à empattements (par exemple « Times New Roman ») et définissez une taille très importante. Testez ensuite votre interface utilisateur pour vous assurer qu’il respecte l’environnement. Voici un exemple d’utilisation de la boîte de dialogue de licence :  
   
- ![Exemple de texte de l’interface utilisateur qui ne respecte pas la police d’environnement](~/extensibility/ux-guidelines/media/0201-b_wrongfontdialog.png "0201-b_WrongFontDialog")<br />Exemple de texte de l’interface utilisateur qui ne respecte pas la police d’environnement
+ ![Exemple de texte de l’interface utilisateur qui ne respecte pas la police d’environnement](../../extensibility/ux-guidelines/media/0201-b_wrongfontdialog.png "0201-b_WrongFontDialog")<br />Exemple de texte de l’interface utilisateur qui ne respecte pas la police d’environnement
   
  Dans ce cas, « Informations utilisateur » et « Informations de produit » sont respectant pas la police. Dans certains cas, cela peut être un choix de conception explicite, mais il peut être un bogue si la police explicite n’est pas spécifiée dans le cadre des ligne rouge de spécifications.  
   
@@ -328,7 +313,7 @@ protected static void SetFontStyles(Control topControl, Control parent, Font ref
 |-------------------------|----------------------------|  
 |Titres de boîte de dialogue|Étiquettes|  
 |Zones de groupe|Cases à cocher|  
-|Éléments de menu|Cases d'option|  
+|Éléments de menu|Cases d’option|  
 |Éléments de menu contextuel|Éléments de liste|  
 |Boutons|Barres d’état|  
 |Étiquettes de table||  
@@ -443,7 +428,7 @@ protected static void SetFontStyles(Control topControl, Control parent, Font ref
   
 |||  
 |-|-|  
-|**Utilisation :**<br /><br /> -Les titres de section document bien l’interface utilisateur<br />-Rapports<br /><br /> **Faire :** phrase cas d’usage<br /><br /> **Ne pas :**<br /><br /> -En gras, italique ou gras italique<br />-Utilisez corps du texte<br />-Utilisez dans les contrôles standard de Visual Studio<br />-Utilisez dans les fenêtres Outil|**Apparaît sous la forme :** 14 pt Segoe UI<br /><br /> **Exemple visuel :**<br /><br /> ![Exemple de titre de police d’environnement 155 %](~/extensibility/ux-guidelines/media/0202-c_ef155.png "0202-c_EF155")|  
+|**Utilisation :**<br /><br /> -Les titres de section document bien l’interface utilisateur<br />-Rapports<br /><br /> **Faire :** phrase cas d’usage<br /><br /> **Ne pas :**<br /><br /> -En gras, italique ou gras italique<br />-Utilisez corps du texte<br />-Utilisez dans les contrôles standard de Visual Studio<br />-Utilisez dans les fenêtres Outil|**Apparaît sous la forme :** 14 pt Segoe UI<br /><br /> **Exemple visuel :**<br /><br /> ![Exemple de titre de police d’environnement 155 %](../../extensibility/ux-guidelines/media/0202-c_ef155.png "0202-c_EF155")|  
   
 #### <a name="133-environment-font"></a>Police d’environnement 133 %  
   

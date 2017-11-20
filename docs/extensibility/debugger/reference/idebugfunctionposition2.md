@@ -1,60 +1,60 @@
 ---
-title: "IDebugFunctionPosition2 | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "IDebugFunctionPosition2"
-helpviewer_keywords: 
-  - "Interface de IDebugFunctionPosition2"
+title: IDebugFunctionPosition2 | Documents Microsoft
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords: IDebugFunctionPosition2
+helpviewer_keywords: IDebugFunctionPosition2 interface
 ms.assetid: a835f65b-91b0-48ad-8485-04534c814b1b
-caps.latest.revision: 11
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 11
+caps.latest.revision: "11"
+author: gregvanl
+ms.author: gregvanl
+manager: ghogen
+ms.openlocfilehash: 3ae7a0dd442d8a48d6c69ecfd51b2fc17a2eb2fe
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: fr-FR
+ms.lasthandoff: 10/31/2017
 ---
-# IDebugFunctionPosition2
-[!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]
-
-cette interface représente une position abstraite d'une fonction dans un document source.  
+# <a name="idebugfunctionposition2"></a>IDebugFunctionPosition2
+Cette interface représente une position abstraite d’une fonction dans un document source.  
   
-## Syntaxe  
+## <a name="syntax"></a>Syntaxe  
   
 ```  
 IDebugFunctionPosition2 : IUnknown  
 ```  
   
-## Remarques à l'intention des implémenteurs  
- le moteur de débogage \(DE\) implémente cette interface pour représenter la position d'une fonction dans un document source.  
+## <a name="notes-for-implementers"></a>Notes pour les implémenteurs  
+ Le moteur de débogage (DE) implémente cette interface pour représenter la position d’une fonction dans un document source.  
   
-## Remarques pour les appelants  
- Cette interface est fournie dans le cadre d'une union de [BP\_LOCATION](../../../extensibility/debugger/reference/bp-location.md) plus précisément, une structure de [BP\_LOCATION\_CODE\_FUNC\_OFFSET](../../../extensibility/debugger/reference/bp-location-code-func-offset.md) \) qui est ensuite une partie de la structure de [BP\_REQUEST\_INFO](../../../extensibility/debugger/reference/bp-request-info.md) , utilisée en créant un point d'arrêt en attente.  
+## <a name="notes-for-callers"></a>Remarques pour les appelants  
+ Cette interface est fournie en tant que partie d’un [BP_LOCATION](../../../extensibility/debugger/reference/bp-location.md) union (plus précisément, un [BP_LOCATION_CODE_FUNC_OFFSET](../../../extensibility/debugger/reference/bp-location-code-func-offset.md) structure) qui est à son tour partie de la [BP_REQUEST_INFO](../../../extensibility/debugger/reference/bp-request-info.md) structure, utilisée pour la création d’un point d’arrêt en attente.  
   
-## méthodes en commande de Vtable  
- Le tableau suivant répertorie les méthodes d' `IDebugFunctionPosition2`.  
+## <a name="methods-in-vtable-order"></a>Méthodes dans l'ordre Vtable  
+ Le tableau suivant présente les méthodes de `IDebugFunctionPosition2`.  
   
 |Méthode|Description|  
-|-------------|-----------------|  
-|[GetFunctionName](../../../extensibility/debugger/reference/idebugfunctionposition2-getfunctionname.md)|Obtient le nom de la fonction que cette position est associée.|  
-|[GetOffset](../Topic/IDebugFunctionPosition2::GetOffset.md)|Obtient l'offset du début de la fonction.|  
+|------------|-----------------|  
+|[GetFunctionName](../../../extensibility/debugger/reference/idebugfunctionposition2-getfunctionname.md)|Obtient le nom de la fonction relatif à cette position.|  
+|[GetOffset](../../../extensibility/debugger/reference/idebugfunctionposition2-getoffset.md)|Obtient le décalage à partir du début de la fonction.|  
   
-## Notes  
- La position représentée par cette interface est basé sur le texte, plus particulièrement, une structure de [TEXT\_POSITION](../../../extensibility/debugger/reference/text-position.md) .  
+## <a name="remarks"></a>Remarques  
+ La position représentée par cette interface est basé sur le texte, en particulier, un [TEXT_POSITION](../../../extensibility/debugger/reference/text-position.md) structure.  
   
-## Configuration requise  
- en\-tête : msdbg.h  
+## <a name="requirements"></a>Spécifications  
+ En-tête : msdbg.h  
   
- l'espace de noms : Microsoft.VisualStudio.Debugger.Interop  
+ Namespace : Microsoft.VisualStudio.Debugger.Interop  
   
- Assembly : Microsoft.VisualStudio.Debugger.Interop.dll  
+ Assembly : Microsoft.VisualStudio.Debugger.Interop.dll  
   
-## Voir aussi  
+## <a name="see-also"></a>Voir aussi  
  [Interfaces de base](../../../extensibility/debugger/reference/core-interfaces.md)   
- [BP\_LOCATION\_CODE\_FUNC\_OFFSET](../../../extensibility/debugger/reference/bp-location-code-func-offset.md)   
- [BP\_LOCATION](../../../extensibility/debugger/reference/bp-location.md)   
- [TEXT\_POSITION](../../../extensibility/debugger/reference/text-position.md)
+ [BP_LOCATION_CODE_FUNC_OFFSET](../../../extensibility/debugger/reference/bp-location-code-func-offset.md)   
+ [BP_LOCATION](../../../extensibility/debugger/reference/bp-location.md)   
+ [TEXT_POSITION](../../../extensibility/debugger/reference/text-position.md)

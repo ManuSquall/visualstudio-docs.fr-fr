@@ -1,51 +1,53 @@
 ---
-title: "Vue d&#39;ensemble de la gestion des droits relatifs &#224; l&#39;information et des extensions de code manag&#233;"
-ms.custom: ""
-ms.date: "02/02/2017"
-ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "office-development"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-dev_langs: 
-  - "VB"
-  - "CSharp"
-helpviewer_keywords: 
-  - "documents (développement Office dans Visual Studio), autorisations restreintes"
-  - "Gestion des droits relatifs à l'information (développement Office dans Visual Studio)"
-  - "IRM (développement Office dans Visual Studio)"
-  - "documents Office (développement Office dans Visual Studio), autorisations restreintes"
-  - "gestion des droits (développement Office dans Visual Studio)"
-  - "classeurs (développement Office dans Visual Studio), autorisations restreintes"
+title: "Vue d’ensemble des Extensions de Code managé et de gestion des droits | Documents Microsoft"
+ms.custom: 
+ms.date: 02/02/2017
+ms.reviewer: 
+ms.suite: 
+ms.technology: office-development
+ms.tgt_pltfrm: 
+ms.topic: article
+dev_langs:
+- VB
+- CSharp
+helpviewer_keywords:
+- Information Rights Management [Office development in Visual Studio]
+- workbooks [Office development in Visual Studio], restricted permissions
+- IRM [Office development in Visual Studio]
+- documents [Office development in Visual Studio], restricted permissions
+- rights management [Office development in Visual Studio]
+- Office documents [Office development in Visual Studio, restricted permissions
 ms.assetid: 9728f5fe-9122-48e7-b0a3-9f5e0a16164f
-caps.latest.revision: 21
-author: "kempb"
-ms.author: "kempb"
-manager: "ghogen"
-caps.handback.revision: 20
+caps.latest.revision: "21"
+author: gewarren
+ms.author: gewarren
+manager: ghogen
+ms.openlocfilehash: ff6c79d6bed7ec1b5a459f64c0e57c8c35ab4e1e
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: fr-FR
+ms.lasthandoff: 10/31/2017
 ---
-# Vue d&#39;ensemble de la gestion des droits relatifs &#224; l&#39;information et des extensions de code manag&#233;
-  Microsoft Office Word et Microsoft Office Excel fournissent une fonctionnalité, l'Information Rights Management \(IRM\), qui vous permet d'empêcher la consultation ou la modification d'informations sensibles par des personnes non autorisées.  Pour plus d'informations sur le fonctionnement de la fonctionnalité Information Rights Management, consultez l'aide de l'application Office concernée.  
+# <a name="information-rights-management-and-managed-code-extensions-overview"></a>Vue d’ensemble de la gestion des droits relatifs à l’information et des extensions de code managé
+  Microsoft Office Word et Microsoft Office Excel fournissent Information Rights Management (IRM), une fonctionnalité qui peut vous aider à empêcher les personnes non autorisées d’affichage ou la modification d’informations sensibles. Pour plus d’informations sur le fonctionnement de l’Information Rights Management, consultez l’aide de l’application Office spécifique.  
   
  [!INCLUDE[appliesto_alldoc](../vsto/includes/appliesto-alldoc-md.md)]  
   
-## Exécution du code pour des documents dotés d'autorisations restreintes  
- Si votre solution contient un document ou un classeur qui utilise la fonctionnalité IRM, par défaut, Word et Excel bloquent toute exécution de code.  Si vous êtes l'auteur du document ou si vous disposez d'un accès avec contrôle total, vous pouvez modifier la valeur par défaut de sorte que votre solution puisse fonctionner.  Pour plus d’informations, consultez [Comment : permettre au code de s'exécuter derrière des documents dotés d'autorisations restreintes](../vsto/how-to-permit-code-to-run-behind-documents-with-restricted-permissions.md).  
+## <a name="running-code-behind-documents-with-restricted-permissions"></a>Exécution du Code derrière des Documents avec des autorisations restreintes  
+ Si votre solution contient un document ou classeur qui utilise l’IRM, par défaut, Word et Excel ne permettent pas de code à exécuter. Si vous êtes l’auteur du document ou que vous avez accès en contrôle total, vous pouvez modifier la valeur par défaut afin que votre solution fonctionne. Pour plus d’informations, consultez [Comment : autoriser le Code à exécuter derrière des Documents avec des autorisations restreintes](../vsto/how-to-permit-code-to-run-behind-documents-with-restricted-permissions.md).  
   
- La fonctionnalité IRM empêche l'utilisation de <xref:Microsoft.VisualStudio.Tools.Applications.Runtime.ServerDocument> pour récupérer ou manipuler des données mises en cache dans le document.  
+ IRM empêche l’utilisation de <xref:Microsoft.VisualStudio.Tools.Applications.Runtime.ServerDocument> pour récupérer ou manipuler des données mises en cache dans le document.  
   
-## Restriction des autorisations par les utilisateurs finaux sur les documents qui utilisent des extensions de code managé  
- Toute personne qui dispose d'un accès avec contrôle total au document ou classeur de votre solution peut utiliser la fonctionnalité IRM pour restreindre les autorisations.  Par exemple, un utilisateur final du service comptable utilise une solution qui remplit automatiquement une feuille de calcul à l'aide des données d'une base de données ; cet utilisateur peut autoriser l'accès en écriture uniquement aux personnes de son service et l'accès en lecture aux autres personnes.  Lorsque l'utilisateur ajoute les autorisations restreintes, par défaut, l'exécution du code\-behind de la feuille de calcul est bloquée. Par conséquent, aucune donnée n'est ajoutée à la feuille de calcul.  
+## <a name="end-users-restricting-permissions-to-documents-that-use-managed-code-extensions"></a>Utilisateurs finaux en limitant les autorisations à des Documents qui utilisent des Extensions de Code managé  
+ Toute personne qui dispose d’un accès contrôle total au document ou au classeur dans votre solution peut utiliser IRM pour limiter les autorisations. Par exemple, si un utilisateur final du service comptabilité utilise une solution qui remplit automatiquement une feuille de calcul avec des données à partir d’une base de données, cet utilisateur peut vouloir autoriser modifier l’accès uniquement aux utilisateurs de son propre service et l’accès en lecture à d’autres personnes. Lorsque l’utilisateur ajoute les autorisations restreintes, par défaut, le code-behind de la feuille de calcul ne peut pas s’exécuter, et la feuille de calcul n’est pas peuplée avec des données.  
   
- Pour résoudre le problème, une personne qui dispose d'un accès avec contrôle total au document ou classeur doit modifier les paramètres d'autorisation par défaut, afin de permettre un accès par programmation au modèle objet.  Pour plus d’informations, consultez [Comment : permettre au code de s'exécuter derrière des documents dotés d'autorisations restreintes](../vsto/how-to-permit-code-to-run-behind-documents-with-restricted-permissions.md).  
+ Pour résoudre le problème, une personne disposant de l’accès contrôle total au document ou au classeur doit modifier les paramètres d’autorisation par défaut pour autoriser l’accès par programme au modèle objet. Pour plus d’informations, consultez [Comment : autoriser le Code à exécuter derrière des Documents avec des autorisations restreintes](../vsto/how-to-permit-code-to-run-behind-documents-with-restricted-permissions.md).  
   
-## Voir aussi  
- [Protection des documents dans les solutions au niveau du document](../vsto/document-protection-in-document-level-solutions.md)   
- [Protection par mot de passe des documents Office](../vsto/password-protection-on-office-documents.md)   
- [Sécurisation des solutions Office](../vsto/securing-office-solutions.md)   
- [Déploiement d'une solution Office](../vsto/deploying-an-office-solution.md)   
+## <a name="see-also"></a>Voir aussi  
+ [Protection des documents dans les Solutions au niveau du Document](../vsto/document-protection-in-document-level-solutions.md)   
+ [Mot de passe sur des Documents Office](../vsto/password-protection-on-office-documents.md)   
+ [Sécurisation des Solutions Office](../vsto/securing-office-solutions.md)   
+ [Déploiement d’une Solution Office](../vsto/deploying-an-office-solution.md)   
  [Conception et création de solutions Office](../vsto/designing-and-creating-office-solutions.md)  
   
   

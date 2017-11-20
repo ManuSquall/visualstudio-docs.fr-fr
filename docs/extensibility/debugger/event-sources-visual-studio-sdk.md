@@ -1,28 +1,29 @@
 ---
-title: "Sources d&#39;&#233;v&#233;nements (Kit de d&#233;veloppement logiciel Visual Studio) | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-helpviewer_keywords: 
-  - "débogage [Debugging SDK], sources d'événements"
+title: "Sources d’événements (Visual Studio SDK) | Documents Microsoft"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+helpviewer_keywords: debugging [Debugging SDK], event sources
 ms.assetid: b9ba0908-ae4c-4a64-aab1-bee453dd7a22
-caps.latest.revision: 8
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 8
+caps.latest.revision: "8"
+author: gregvanl
+ms.author: gregvanl
+manager: ghogen
+ms.openlocfilehash: dcd2b8457854817f84272420a42872a1b947e6c2
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: fr-FR
+ms.lasthandoff: 10/31/2017
 ---
-# Sources d&#39;&#233;v&#233;nements (Kit de d&#233;veloppement logiciel Visual Studio)
-[!INCLUDE[vs2017banner](../../code-quality/includes/vs2017banner.md)]
-
-Il existe deux sources d'événements : le moteur \(DE\) de débogage et la session particulière nécessite le \(SDM\) gestionnaire.  les événements envoyés d'un De ont un moteur non null, alors que les événements envoyés du SDM ont un moteur NULL.  
+# <a name="event-sources-visual-studio-sdk"></a>Sources d’événements (Kit de développement logiciel Visual Studio)
+Il existe deux sources d’événements : le moteur de débogage (DE) et la session de débogage responsable de la. Événements envoyés à partir d’un D’ont un moteur non NULL, tandis que les événements envoyés par le SDM ont un moteur NULL.  
   
-## Exemple  
- L'exemple suivant montre comment envoyer **IDebugProgramCreateEvent2** De au SDM.  
+## <a name="example"></a>Exemple  
+ L’exemple suivant montre comment envoyer la **IDebugProgramCreateEvent2** à partir de la DE pour le SDM.  
   
 ```  
 CDebugProgramCreateEvent* pProgramCreateEvent = new CDebugProgramCreateEvent();  
@@ -73,5 +74,5 @@ HRESULT CEvent::SendAsynchronousEvent(IDebugEventCallback2 *pCallback, IDebugEng
   
 ```  
   
-## Voir aussi  
- [L'envoi d'événements](../../extensibility/debugger/sending-events.md)
+## <a name="see-also"></a>Voir aussi  
+ [Envoi d’événements](../../extensibility/debugger/sending-events.md)

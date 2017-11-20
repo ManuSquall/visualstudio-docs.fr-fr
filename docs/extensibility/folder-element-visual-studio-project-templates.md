@@ -1,29 +1,34 @@
 ---
-title: "Folder, &#233;l&#233;ment (mod&#232;les de projet Visual&#160;Studio) | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-general"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "http://schemas.microsoft.com/developer/vstemplate/2005#Folder"
-helpviewer_keywords: 
-  - "Folder (élément de modèles de projet Visual Studio)"
+title: "Folder, élément (modèles de projet Visual Studio) | Documents Microsoft"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-general
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords: http://schemas.microsoft.com/developer/vstemplate/2005#Folder
+helpviewer_keywords: Folder element [Visual Studio project templates]
 ms.assetid: 558e3d41-0db5-4c44-82bb-6bb87892b093
-caps.latest.revision: 11
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 11
+caps.latest.revision: "11"
+author: gregvanl
+ms.author: gregvanl
+manager: ghogen
+ms.openlocfilehash: 677b705015b2b12ee484db7595d6cfd919ad61d1
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: fr-FR
+ms.lasthandoff: 10/31/2017
 ---
-# Folder, &#233;l&#233;ment (mod&#232;les de projet Visual&#160;Studio)
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
-
-Spécifie un dossier à ajouter au projet.  
+# <a name="folder-element-visual-studio-project-templates"></a>Folder, élément (modèles de projet Visual Studio)
+Spécifie un dossier qui sera ajouté au projet.  
   
-## Syntaxe  
+ \<VSTemplate >  
+ \<TemplateContent >  
+ \<Project>  
+ \<Dossier >  
+  
+## <a name="syntax"></a>Syntaxe  
   
 ```  
 <Folder Name="Project Folder">  
@@ -32,35 +37,35 @@ Spécifie un dossier à ajouter au projet.
 </Folder>  
 ```  
   
-## Attributs et éléments  
+## <a name="attributes-and-elements"></a>Attributs et éléments  
  Les sections suivantes décrivent des attributs, des éléments enfants et des éléments parents.  
   
-### Attributs  
+### <a name="attributes"></a>Attributs  
   
 |Attribut|Description|  
-|--------------|-----------------|  
-|`Name`|Attribut requis.<br /><br /> Nom du dossier du projet.|  
-|`TargetFolderName`|Attribut facultatif.<br /><br /> Spécifie le nom à donner au dossier lorsqu'un projet est créé à partir du modèle.  Cet attribut permet d'utiliser le remplacement de paramètres pour créer un nom du dossier ou attribuer un nom à un dossier avec une chaîne internationale qui ne peut pas être utilisée directement dans le fichier .zip.|  
+|---------------|-----------------|  
+|`Name`|Attribut requis.<br /><br /> Le nom du dossier du projet.|  
+|`TargetFolderName`|Attribut facultatif.<br /><br /> Spécifie le nom à donner au dossier lorsqu’un projet est créé à partir du modèle. Cet attribut est utile pour l’utilisation de remplacement de paramètre pour créer un nom de dossier ou nom d’un dossier avec une chaîne internationale qui ne peut pas être utilisée directement dans le fichier .zip.|  
   
-### Éléments enfants  
+### <a name="child-elements"></a>Éléments enfants  
   
 |Élément|Description|  
 |-------------|-----------------|  
-|`Folder`|Spécifie un dossier à ajouter au projet.  Les éléments `Folder` peuvent contenir des éléments `Folder` enfants.|  
+|`Folder`|Spécifie un dossier à ajouter au projet. `Folder`les éléments peuvent contenir des enfants `Folder` éléments.|  
 |[ProjectItem](../extensibility/projectitem-element-visual-studio-item-templates.md)|Spécifie un fichier à ajouter au projet.|  
   
-### Éléments parents  
+### <a name="parent-elements"></a>Éléments parents  
   
 |Élément|Description|  
 |-------------|-----------------|  
 |[Projet](../extensibility/project-element-visual-studio-templates.md)|Élément enfant facultatif de [TemplateContent](../extensibility/templatecontent-element-visual-studio-templates.md).|  
   
-## Notes  
- `Folder` est un enfant facultatif de `Project`.  
+## <a name="remarks"></a>Remarques  
+ `Folder`est un enfant facultatif de `Project`.  
   
- Vous pouvez utiliser une des méthodes suivantes pour organiser des éléments de projet en dossiers dans un modèle :  
+ Vous pouvez utiliser une des méthodes suivantes pour organiser les éléments de projet dans des dossiers dans un modèle :  
   
--   Incluez les dossiers dans le fichier .zip du modèle et ajoutez\-les au projet dans le fichier .vstemplate en spécifiant le chemin d'accès au fichier dans les éléments `ProjectItem`, sans éléments `Folder`.  C'est la méthode conseillée.  Par exemple :  
+-   Inclure les dossiers dans le fichier .zip du modèle et les ajouter au projet dans le fichier .vstemplate en spécifiant le chemin d’accès au fichier dans le `ProjectItem` éléments, sans aucune `Folder` éléments. Il s’agit de la méthode recommandée. Exemple :  
   
      `...`  
   
@@ -70,7 +75,7 @@ Spécifie un dossier à ajouter au projet.
   
      `...`  
   
--   Incluez les dossiers dans le fichier .zip du modèle et ajoutez\-les au projet dans le fichier .vstemplate avec les éléments `Folder`.  Par exemple :  
+-   Inclure les dossiers dans le fichier .zip du modèle et les ajouter au projet dans le fichier .vstemplate avec `Folder` éléments. Exemple :  
   
      `...`  
   
@@ -84,7 +89,7 @@ Spécifie un dossier à ajouter au projet.
   
      `...`  
   
--   N'incluez pas de dossiers dans le fichier .zip du modèle, mais ajoutez des dossiers à l'aide de l'attribut `TargetFileName` de l'élément `ProjectItem`.  Par exemple :  
+-   N’incluez pas de dossiers dans le fichier .zip du modèle, mais ajouter des dossiers à l’aide de la `TargetFileName` attribut de la `ProjectItem` élément. Exemple :  
   
      `...`  
   
@@ -94,8 +99,8 @@ Spécifie un dossier à ajouter au projet.
   
      `...`  
   
-## Exemple  
- L'exemple suivant affiche les métadonnées d'un modèle de projet pour une application Windows [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)].  
+## <a name="example"></a>Exemple  
+ L’exemple suivant illustre les métadonnées d’un modèle de projet pour un [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] application Windows.  
   
 ```  
 <VSTemplate Type="Project" Version="3.0.0"  
@@ -123,7 +128,7 @@ Spécifie un dossier à ajouter au projet.
 </VSTemplate>  
 ```  
   
-## Voir aussi  
- [Référence du schéma de modèle Visual Studio](../extensibility/visual-studio-template-schema-reference.md)   
- [Création de modèles de projets et d'éléments personnalisés](../ide/creating-project-and-item-templates.md)   
- [ProjectItem, élément \(modèles d'élément Visual Studio\)](../extensibility/projectitem-element-visual-studio-item-templates.md)
+## <a name="see-also"></a>Voir aussi  
+ [Référence du schéma de modèle Visual Studio](../extensibility/visual-studio-template-schema-reference.md)   
+ [Création de modèles de projet et d’élément](../ide/creating-project-and-item-templates.md)   
+ [Élément ProjectItem (modèles d'élément Visual Studio)](../extensibility/projectitem-element-visual-studio-item-templates.md)

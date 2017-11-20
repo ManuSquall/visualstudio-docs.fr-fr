@@ -7,28 +7,14 @@ ms.suite:
 ms.tgt_pltfrm: 
 ms.topic: article
 ms.assetid: dedf0173-197e-4258-ae5a-807eb3abc952
-caps.latest.revision: 8
+caps.latest.revision: "8"
+author: gregvanl
 ms.author: gregvanl
-translation.priority.mt:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
+ms.openlocfilehash: 8adc348553ba613898117f10ccd21a6e5cd02ab8
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
 ms.translationtype: MT
-ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
-ms.openlocfilehash: cfd99e4926aac1847f6f0397747201cb0e3a74ab
-ms.contentlocale: fr-fr
-ms.lasthandoff: 09/26/2017
-
+ms.contentlocale: fr-FR
+ms.lasthandoff: 10/31/2017
 ---
 # <a name="how-to-use-asyncpackage-to-load-vspackages-in-the-background"></a>Comment : utiliser AsyncPackage pour charger les VSPackages en arrière-plan
 E/s disque peuvent entraîner le chargement et l’initialisation d’un package Visual Studio. Si ces e/s se produit sur le thread d’interface utilisateur, elle peut entraîner des problèmes de réactivité. Pour résoudre ce problème, Visual Studio 2015 introduit le <xref:Microsoft.VisualStudio.Shell.AsyncPackage> classe qui permet le chargement du package sur un thread d’arrière-plan.  
@@ -120,4 +106,3 @@ IAsyncServiceProvider asyncServiceProvider = Package.GetService(typeof(SAsyncSer
 IMyTestService testService = await ayncServiceProvider.GetServiceAsync(typeof(SMyTestService)) as IMyTestService;  
 ```
   
-

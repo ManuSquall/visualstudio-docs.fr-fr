@@ -1,45 +1,47 @@
 ---
-title: "&#201;valuateur d&#39;expression | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-helpviewer_keywords: 
-  - "expressions (débogage SDK)"
-  - "évaluation de l'expression [Debugging SDK], le débogage"
-  - "évaluation d’expression"
+title: "Évaluateur d’expression | Documents Microsoft"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+helpviewer_keywords:
+- expressions [Debugging SDK]
+- debugging [Debugging SDK], expression evaluation
+- expression evaluation
 ms.assetid: f9381b2f-99aa-426c-aea0-d9c15f3c859b
-caps.latest.revision: 19
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 19
+caps.latest.revision: "19"
+author: gregvanl
+ms.author: gregvanl
+manager: ghogen
+ms.openlocfilehash: b08da6a123107d793d522770d44315aaa432dede
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: fr-FR
+ms.lasthandoff: 10/31/2017
 ---
-# &#201;valuateur d&#39;expression
-[!INCLUDE[vs2017banner](../../code-quality/includes/vs2017banner.md)]
-
-Les évaluateurs \(EE\) d'expression vérifiez la syntaxe d'un langage pour analyser et évaluer des variables et des expressions au moment de l'exécution, leur permettant d'afficher par l'utilisateur lorsque l'IDE est en mode arrêt.  
+# <a name="expression-evaluator"></a>Évaluateur d’expression
+Évaluateurs d’expression (EE) examiner la syntaxe d’une langue pour analyser et évaluer les variables et les expressions au moment de l’exécution, ce qui permet à être affiché par l’utilisateur lors de l’IDE est en mode arrêt.  
   
-## Utilisation des évaluateurs d'expression  
- Les expressions sont créées à l'aide de la méthode d' [ParseText](../../extensibility/debugger/reference/idebugexpressioncontext2-parsetext.md) , comme suit :  
+## <a name="using-expression-evaluators"></a>À l’aide des évaluateurs d’Expression  
+ Les expressions sont créées à l’aide de la [ParseText](../../extensibility/debugger/reference/idebugexpressioncontext2-parsetext.md) méthode, comme suit :  
   
-1.  le moteur de débogage \(DE\) implémente l'interface d' [IDebugExpressionContext2](../../extensibility/debugger/reference/idebugexpressioncontext2.md) .  
+1.  Le moteur de débogage (DE) implémente la [IDebugExpressionContext2](../../extensibility/debugger/reference/idebugexpressioncontext2.md) interface.  
   
-2.  Le package de débogage obtient un objet d' `IDebugExpressionContext2` d'une interface d' [IDebugStackFrame2](../../extensibility/debugger/reference/idebugstackframe2.md) puis appelle la méthode d' `IDebugStackFrame2::ParseText` dessus pour obtenir un objet d' [IDebugExpression2](../../extensibility/debugger/reference/idebugexpression2.md) .  
+2.  Le package de débogage Obtient un `IDebugExpressionContext2` à partir de l’objet une [IDebugStackFrame2](../../extensibility/debugger/reference/idebugstackframe2.md) interface, puis appelle la `IDebugStackFrame2::ParseText` méthode pour obtenir un [IDebugExpression2](../../extensibility/debugger/reference/idebugexpression2.md) objet.  
   
-3.  le package de débogage appelle la méthode d' [EvaluateSync](../../extensibility/debugger/reference/idebugexpression2-evaluatesync.md) ou la méthode d' [EvaluateAsync](../../extensibility/debugger/reference/idebugexpression2-evaluateasync.md) pour obtenir la valeur de l'expression.  `IDebugExpression2::EvaluateAsync` est appelé de la commande\/fenêtre exécution.  tout autre appel `IDebugExpression2::EvaluateSync`de composants d'interface utilisateur.  
+3.  Les appels de package de débogage la [EvaluateSync](../../extensibility/debugger/reference/idebugexpression2-evaluatesync.md) méthode ou la [EvaluateAsync](../../extensibility/debugger/reference/idebugexpression2-evaluateasync.md) méthode pour obtenir la valeur de l’expression. `IDebugExpression2::EvaluateAsync`est appelé à partir de la fenêtre commande/exécution. Tous les autres composants de l’interface utilisateur appellent `IDebugExpression2::EvaluateSync`.  
   
-4.  Le résultat de l'évaluation de l'expression est un objet d' [IDebugProperty2](../../extensibility/debugger/reference/idebugproperty2.md) , qui contient le nom, le type, et la valeur du résultat de l'évaluation d'une expression.  
+4.  Le résultat de l’évaluation de l’expression est une [IDebugProperty2](../../extensibility/debugger/reference/idebugproperty2.md) objet, qui contient le nom, le type et la valeur du résultat de l’évaluation d’expression.  
   
- Pendant l'évaluation de l'expression, l'évaluateur d'expression a besoin de données du composant fournisseur de symbole.  Le fournisseur de symbole fournit des informations symboliques utilisées pour identifier et comprendre l'expression analysée.  
+ Lors de l’évaluation d’expression, le EE requiert des informations à partir du composant de fournisseur de symboles. Le fournisseur de symbole fournit des informations sur les symboles utilisées pour identifier et de comprendre l’expression analysée.  
   
- Lorsque l'évaluation de l'expression asynchrone est terminée, un événement asynchrone est envoyé par le De via le gestionnaire de débogage de session \(SDM\) pour informer l'IDE que l'évaluation de l'expression est terminée.  Lorsque l'évaluation de l'expression synchrone est terminée, le résultat de l'évaluation est retournée par l'appel à la méthode d' `IDebugExpression2::EvaluateSync` .  
+ Lors de l’évaluation de l’expression asynchrone est terminée, un événement asynchrone envoyé par le DE via le Gestionnaire de session de débogage (SDM) pour informer l’IDE que l’évaluation de l’expression est terminée. Lors de l’évaluation d’expression synchrone est terminée, le résultat de l’évaluation est retourné à partir de l’appel à la `IDebugExpression2::EvaluateSync` (méthode).  
   
-## remarques d'implémentation  
- Les moteurs de débogage de [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] comptent parler avec l'évaluateur d'expression à l'aide de les interfaces \(CLR\) du common langage runtime.  Par conséquent, un évaluateur d'expression qui fonctionne avec les moteurs de débogage de [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] doit prendre en charge le CLR \(une liste complète de toutes les interfaces de débogage du CLR peut être récupérée dans debugref.doc, qui fait partie de [!INCLUDE[winsdklong](../../deployment/includes/winsdklong_md.md)]\).  
+## <a name="implementation-notes"></a>Remarques d’implémentation  
+ Le [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] des moteurs de débogage s’attendre à communiquer avec l’évaluateur d’expression à l’aide des interfaces du Common Language Runtime (CLR). Par conséquent, un évaluateur d’expression qui fonctionne avec les [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] des moteurs de débogage doivent prendre en charge le CLR (vous trouverez une liste complète de toutes les interfaces de débogage de CLR dans debugref.doc, qui fait partie de la [!INCLUDE[winsdklong](../../deployment/includes/winsdklong_md.md)]).  
   
-## Voir aussi  
+## <a name="see-also"></a>Voir aussi  
  [Composants du débogueur](../../extensibility/debugger/debugger-components.md)

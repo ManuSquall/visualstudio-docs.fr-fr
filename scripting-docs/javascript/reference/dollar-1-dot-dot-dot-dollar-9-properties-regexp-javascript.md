@@ -1,53 +1,54 @@
 ---
-title: "$1...$9, propri&#233;t&#233;s (RegExp) (JavaScript) | Microsoft Docs"
-ms.custom: ""
-ms.date: "01/18/2017"
-ms.prod: "windows-client-threshold"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "devlang-javascript"
-ms.tgt_pltfrm: ""
-ms.topic: "language-reference"
-f1_keywords: 
-  - "$1...$9"
-dev_langs: 
-  - "JavaScript"
-  - "TypeScript"
-  - "DHTML"
-helpviewer_keywords: 
-  - "propriétés $1...$9"
+title: "$1... $9, propriétés (RegExp) (JavaScript) | Documents Microsoft"
+ms.custom: 
+ms.date: 01/18/2017
+ms.prod: windows-client-threshold
+ms.reviewer: 
+ms.suite: 
+ms.technology: devlang-javascript
+ms.tgt_pltfrm: 
+ms.topic: language-reference
+f1_keywords: $1...$9
+dev_langs:
+- JavaScript
+- TypeScript
+- DHTML
+helpviewer_keywords: $1...$9 properties
 ms.assetid: 8bd84851-f62f-4eb1-a93d-b67135ea091a
-caps.latest.revision: 18
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 18
+caps.latest.revision: "18"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: fc1926d6281c9003c432c9c9e89a73a48a584ef4
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.translationtype: MT
+ms.contentlocale: fr-FR
+ms.lasthandoff: 10/27/2017
 ---
-# $1...$9, propri&#233;t&#233;s (RegExp) (JavaScript)
-Retournent les neuf dernières sous\-chaînes stockées parmi celles qui ont été trouvées lors de la recherche de correspondances d'un modèle dans une expression régulière.  Lecture seule.  
+# <a name="19-properties-regexp-javascript"></a>$1...$9, propriétés (RegExp) (JavaScript)
+Retourner que les neuf derniers sous-chaînes trouvé lors de la recherche de correspondance. Lecture seule.  
   
-## Syntaxe  
+## <a name="syntax"></a>Syntaxe  
   
 ```  
   
 RegExp.$n   
 ```  
   
-## Paramètres  
+## <a name="parameters"></a>Paramètres  
  `RegExp`  
- Toujours l'objet `RegExp` global.  
+ Toujours global `RegExp` objet.  
   
  `n`  
- Tout entier compris entre 1 et 9.  
+ Tout entier compris entre 1 et 9.  
   
-## Notes  
- Les valeurs des propriétés **$1…$9** changent chaque fois qu'une correspondance entre parenthèses est trouvée.  Un nombre quelconque de sous\-chaînes entre parenthèses peut être spécifié dans un modèle d'expression régulière, mais seules les neuf plus récentes peuvent être stockées.  
+## <a name="remarks"></a>Remarques  
+ Les valeurs de la **$1... $9** propriétés sont modifiées lors d’une correspondance entre parenthèses. Un nombre quelconque de sous-chaînes entre parenthèses peut être spécifié dans un modèle d’expression régulière, mais seules les neuf plus récentes peuvent être stockées.  
   
-## Exemple  
- L'exemple suivant effectue une recherche d'expression régulière.  Il affiche les correspondances et des sous\-correspondances de l'objet `RegExp` global.  Les sous\-correspondances sont des correspondances entre parenthèses réussies qui sont contenues dans les propriétés `$1…$9`.  L'exemple affiche également des correspondances et des sous\-correspondances du tableau retourné par la méthode `exec`.  
+## <a name="example"></a>Exemple  
+ L’exemple suivant effectue une recherche d’expression régulière. Il affiche des correspondances et submatches à partir de la liste globale `RegExp` objet. Les sous-correspondances sont des correspondances entre parenthèses qui figurent dans le `$1...$9` propriétés. L’exemple affiche les correspondances également et submatches à partir du tableau retourné par la `exec` (méthode).  
   
-```javascript  
+```JavaScript  
 var newLine = "<br />";  
   
 var re = /(\w+)@(\w+)\.(\w+)/g  
@@ -103,10 +104,10 @@ document.write(s);
   
 ```  
   
-## Configuration requise  
+## <a name="requirements"></a>Spécifications  
  [!INCLUDE[jsv1](../../javascript/misc/includes/jsv1-md.md)]  
   
- **S'applique à** : [RegExp, objet](../../javascript/reference/regexp-object-javascript.md)  
+ **S’applique aux**: [RegExp (objet)](../../javascript/reference/regexp-object-javascript.md)  
   
-## Voir aussi  
- [Regular Expression Syntax \(JavaScript\)](http://msdn.microsoft.com/fr-fr/ab0766e1-7037-45ed-aa23-706f58358c0e)
+## <a name="see-also"></a>Voir aussi  
+ [Syntaxe d’Expression régulière (JavaScript)](http://msdn.microsoft.com/en-us/ab0766e1-7037-45ed-aa23-706f58358c0e)

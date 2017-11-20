@@ -1,46 +1,29 @@
 ---
-title: IDebugExpressionEvaluationCompleteEvent2::GetResult | Microsoft Docs
+title: IDebugExpressionEvaluationCompleteEvent2::GetResult | Documents Microsoft
 ms.custom: 
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-sdk
+ms.technology: vs-ide-sdk
 ms.tgt_pltfrm: 
 ms.topic: article
-f1_keywords:
-- IDebugExpressionEvaluationCompleteEvent2::GetResult
-helpviewer_keywords:
-- IDebugExpressionEvaluationCompleteEvent2::GetResult
+f1_keywords: IDebugExpressionEvaluationCompleteEvent2::GetResult
+helpviewer_keywords: IDebugExpressionEvaluationCompleteEvent2::GetResult
 ms.assetid: d9ad3e22-b6b2-421e-9a43-6bb8c70d12a9
-caps.latest.revision: 10
+caps.latest.revision: "10"
+author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-translation.priority.mt:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
+ms.openlocfilehash: d8950a69c5086616bc5f0b3177e5c6aa9aad9dfe
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
 ms.translationtype: MT
-ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
-ms.openlocfilehash: 75b7ce59e39c857e9cc506b02c952b5fe531daeb
-ms.contentlocale: fr-fr
-ms.lasthandoff: 08/28/2017
-
+ms.contentlocale: fr-FR
+ms.lasthandoff: 10/31/2017
 ---
 # <a name="idebugexpressionevaluationcompleteevent2getresult"></a>IDebugExpressionEvaluationCompleteEvent2::GetResult
-Gets the result of expression evaluation.  
+Obtient le résultat de l’évaluation d’expression.  
   
-## <a name="syntax"></a>Syntax  
+## <a name="syntax"></a>Syntaxe  
   
 ```cpp  
 HRESULT GetResult(   
@@ -54,16 +37,16 @@ int GetResult(
 );  
 ```  
   
-#### <a name="parameters"></a>Parameters  
+#### <a name="parameters"></a>Paramètres  
  `ppResult`  
- [out] Returns an [IDebugProperty2](../../../extensibility/debugger/reference/idebugproperty2.md) object that represents the result of the expression evaluation.  
+ [out] Retourne un [IDebugProperty2](../../../extensibility/debugger/reference/idebugproperty2.md) objet qui représente le résultat de l’évaluation d’expression.  
   
-## <a name="return-value"></a>Return Value  
- If successful, returns `S_OK`; otherwise, returns an error code.  
+## <a name="return-value"></a>Valeur de retour  
+ En cas de réussite, retourne `S_OK`; sinon, retourne un code d’erreur.  
   
-## <a name="remarks"></a>Remarks  
- The returned [IDebugProperty2](../../../extensibility/debugger/reference/idebugproperty2.md) object contains the value of the evaluated expression. Note that this value could be a complex value such as an array but the final result must be a numerical or string value that is displayed to the user.  
+## <a name="remarks"></a>Remarques  
+ Retourné [IDebugProperty2](../../../extensibility/debugger/reference/idebugproperty2.md) objet contient la valeur de l’expression évaluée. Notez que cette valeur peut être une valeur complexe tel qu’un tableau, mais le résultat final doit être un numérique ou valeur de chaîne qui s’affiche à l’utilisateur.  
   
-## <a name="see-also"></a>See Also  
+## <a name="see-also"></a>Voir aussi  
  [IDebugExpressionEvaluationCompleteEvent2](../../../extensibility/debugger/reference/idebugexpressionevaluationcompleteevent2.md)   
  [IDebugProperty2](../../../extensibility/debugger/reference/idebugproperty2.md)

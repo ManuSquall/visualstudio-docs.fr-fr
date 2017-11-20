@@ -1,59 +1,59 @@
 ---
-title: "CA2204 : Les litt&#233;raux doivent &#234;tre correctement orthographi&#233;s | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-devops-test"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "Literals should be spelled correctly"
-  - "CA2204"
-  - "LiteralsShouldBeSpelledCorrectly"
-helpviewer_keywords: 
-  - "CA2204"
+title: "CA2204 : Les littéraux doivent être correctement orthographiés | Documents Microsoft"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-code-analysis
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords:
+- Literals should be spelled correctly
+- CA2204
+- LiteralsShouldBeSpelledCorrectly
+helpviewer_keywords: CA2204
 ms.assetid: b0bbcbb6-c92d-4c14-8ef7-9c8b38c791a6
-caps.latest.revision: 19
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
-caps.handback.revision: 19
+caps.latest.revision: "19"
+author: gewarren
+ms.author: gewarren
+manager: ghogen
+ms.openlocfilehash: 7fca8484b3231a92ab3a425c4661229236833642
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: fr-FR
+ms.lasthandoff: 10/31/2017
 ---
-# CA2204 : Les litt&#233;raux doivent &#234;tre correctement orthographi&#233;s
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
-
+# <a name="ca2204-literals-should-be-spelled-correctly"></a>CA2204 : Les littéraux doivent être correctement orthographiés
 |||  
 |-|-|  
 |TypeName|LiteralsShouldBeSpelledCorrectly|  
 |CheckId|CA2204|  
 |Catégorie|Microsoft.Usage|  
-|Modification avec rupture|Modification sans rupture|  
+|Modification avec rupture|Sans rupture|  
   
-## Cause  
- Une méthode passe une chaîne littérale qui est utilisée dans un paramètre ou propriété qui requiert une chaîne localisée et la chaîne littérale contient un ou plusieurs mots qui ne sont pas reconnus par la bibliothèque du vérificateur d'orthographe Microsoft.  
+## <a name="cause"></a>Cause  
+ Une méthode passe une chaîne littérale qui est utilisée dans un paramètre ou une propriété qui requiert une chaîne localisée et la chaîne littérale contient un ou plusieurs mots qui ne sont pas reconnus par la bibliothèque du vérificateur d’orthographe Microsoft.  
   
-## Description de la règle  
- Cette règle contrôle une chaîne littérale passée comme valeur à un paramètre ou une propriété lorsqu'un ou plusieurs des cas suivants se vérifient :  
+## <a name="rule-description"></a>Description de la règle  
+ Cette règle recherche une chaîne littérale est passée comme une valeur à un paramètre ou une propriété lorsqu’un ou plusieurs des cas suivants est vrai :  
   
--   L'attribut <xref:System.ComponentModel.LocalizableAttribute> du paramètre ou de la propriété a la valeur true.  
+-   Le <xref:System.ComponentModel.LocalizableAttribute> attribut du paramètre ou de propriété est définie sur true.  
   
--   Le paramètre ou le nom de propriété contient "Text", "Message" ou "Caption".  
+-   Le nom de paramètre ou la propriété contient « Texte », « Message » ou « Caption ».  
   
--   Le nom du paramètre de chaîne passé à une méthode Console.Write ou Console.WriteLine est "value" ou "format".  
+-   Le nom du paramètre de chaîne qui est passé à une méthode Console.Write ou Console.WriteLine est « value » ou « format ».  
   
- Cette règle analyse la chaîne littérale en mots en générant des jetons de mots composés et vérifie l'orthographe de chaque mot\/jeton.  Pour plus d'informations sur l'algorithme d'analyse, consultez [CA1704 : Les identificateurs doivent être correctement orthographiés](../code-quality/ca1704-identifiers-should-be-spelled-correctly.md).  
+ Cette règle analyse la chaîne littérale en mots, jetons de mots composés et vérifie l’orthographe de chaque mot/jeton. Pour plus d’informations sur l’algorithme d’analyse, consultez [CA1704 : les identificateurs doivent être correctement orthographiés](../code-quality/ca1704-identifiers-should-be-spelled-correctly.md).  
   
- La version anglaise \(en\) du vérificateur d'orthographe est utilisée par défaut.  
+ Par défaut, la version anglaise (en) du vérificateur d’orthographe est utilisée.  
   
-## Comment corriger les violations  
- Pour résoudre une violation de cette règle, corrigez l'orthographe du mot ou ajoutez le mot à un dictionnaire personnel.  Pour plus d'informations sur l'utilisation de dictionnaires personnels, consultez [Comment : personnaliser le dictionnaire d’analyse du code](../Topic/How%20to:%20Customize%20the%20Code%20Analysis%20Dictionary.md).  
+## <a name="how-to-fix-violations"></a>Comment corriger les violations  
+ Pour corriger une violation de cette règle, corrigez l’orthographe du mot ou ajoutez le mot au dictionnaire personnalisé. Pour plus d’informations sur l’utilisation des dictionnaires personnalisés, consultez [Comment : personnaliser le dictionnaire d’analyse du Code](../code-quality/how-to-customize-the-code-analysis-dictionary.md).  
   
-## Quand supprimer les avertissements  
- Ne supprimez aucun avertissement de cette règle.  Les mots épelés correctement réduisent la durée d'apprentissage requise pour les nouvelles bibliothèques de logiciels.  
+## <a name="when-to-suppress-warnings"></a>Quand supprimer les avertissements  
+ Ne supprimez aucun avertissement de cette règle. Les mots orthographiés correctement réduisent la courbe d’apprentissage requise pour les nouvelles bibliothèques de logiciels.  
   
-## Règles connexes  
- [CA1704 : Les identificateurs doivent être correctement orthographiés](../code-quality/ca1704-identifiers-should-be-spelled-correctly.md)  
+## <a name="related-rules"></a>Règles associées  
+ [CA1704 : Les identificateurs doivent être correctement orthographiés](../code-quality/ca1704-identifiers-should-be-spelled-correctly.md)  
   
- [CA1703 : L'orthographe des chaînes de ressources doit être correcte](../code-quality/ca1703-resource-strings-should-be-spelled-correctly.md)
+ [CA1703 : Les chaînes de ressources doit être orthographiées correctement](../code-quality/ca1703-resource-strings-should-be-spelled-correctly.md)

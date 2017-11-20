@@ -1,64 +1,65 @@
 ---
-title: "sort, m&#233;thode (Array) (JavaScript) | Microsoft Docs"
-ms.custom: ""
-ms.date: "01/18/2017"
-ms.prod: "windows-client-threshold"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "devlang-javascript"
-ms.tgt_pltfrm: ""
-ms.topic: "language-reference"
-f1_keywords: 
-  - "sort"
-dev_langs: 
-  - "JavaScript"
-  - "TypeScript"
-  - "DHTML"
-helpviewer_keywords: 
-  - "Sort (méthode)"
+title: "Sort, méthode (Array) (JavaScript) | Documents Microsoft"
+ms.custom: 
+ms.date: 01/18/2017
+ms.prod: windows-client-threshold
+ms.reviewer: 
+ms.suite: 
+ms.technology: devlang-javascript
+ms.tgt_pltfrm: 
+ms.topic: language-reference
+f1_keywords: sort
+dev_langs:
+- JavaScript
+- TypeScript
+- DHTML
+helpviewer_keywords: Sort method
 ms.assetid: 9bd8b54a-c838-4806-85c8-62eebe6bc48c
-caps.latest.revision: 15
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 15
+caps.latest.revision: "15"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: 2d098b47591ca7bbb4e3e8da5e5c14f8c0e9b255
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.translationtype: MT
+ms.contentlocale: fr-FR
+ms.lasthandoff: 10/27/2017
 ---
-# sort, m&#233;thode (Array) (JavaScript)
-Trie un `Array`.  
+# <a name="sort-method-array-javascript"></a>sort, méthode (Array) (JavaScript)
+Trie une `Array`.  
   
-## Syntaxe  
+## <a name="syntax"></a>Syntaxe  
   
 ```  
   
 arrayobj.sort(sortFunction)   
 ```  
   
-## Paramètres  
+## <a name="parameters"></a>Paramètres  
  `arrayObj`  
- Requis.  Tout objet `Array`.  
+ Obligatoire. Tout objet `Array`.  
   
  `sortFunction`  
- Optionnel.  Nom de la fonction employée pour déterminer l'ordre des éléments.  Si omise, les éléments sont triés en ordre croissant de caractères ASCII.  
+ Facultatif. Le nom de la fonction utilisée pour déterminer l’ordre des éléments. Si omis, les éléments sont triés par ordre croissant, ordre des caractères ASCII.  
   
-## Valeur de retour  
- Tableau trié.  
+## <a name="return-value"></a>Valeur de retour  
+ Le tableau trié.  
   
-## Notes  
- La méthode `sort` trie l'objet `Array` existant. Aucun nouvel objet `Array` n'est créé pendant l'exécution.  
+## <a name="remarks"></a>Remarques  
+ Le `sort` méthode trie la `Array` objet sur place ; aucune nouvelle `Array` objet est créé lors de l’exécution.  
   
- Si vous indiquez une fonction dans l'argument `sortFunction`, elle doit retourner l'une des valeurs suivantes :  
+ Si vous fournissez une fonction dans le `sortFunction` argument, elle doit retourner une des valeurs suivantes :  
   
 -   Une valeur négative si le premier argument passé est inférieur au deuxième argument.  
   
--   La valeur zéro si les deux arguments sont équivalents.  
+-   Zéro si les deux arguments sont équivalents.  
   
 -   Une valeur positive si le premier argument est supérieur au deuxième argument.  
   
-## Exemple  
+## <a name="example"></a>Exemple  
  L'exemple suivant illustre l'utilisation de la méthode `sort`.  
   
-```javascript  
+```JavaScript  
 var a = new Array(4, 11, 2, 10, 3, 1);  
   
 var b = a.sort();  
@@ -86,5 +87,5 @@ function CompareForSort(first, second)
 }  
 ```  
   
-## Configuration requise  
+## <a name="requirements"></a>Spécifications  
  [!INCLUDE[jsv2](../../javascript/reference/includes/jsv2-md.md)]

@@ -1,63 +1,65 @@
 ---
-title: "Proc&#233;dure pas &#224; pas&#160;: importation d&#39;une page ma&#238;tre et d&#39;une page de site personnalis&#233;es avec une image"
-ms.custom: ""
-ms.date: "02/02/2017"
-ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "office-development"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-dev_langs: 
-  - "VB"
-  - "CSharp"
-helpviewer_keywords: 
-  - "importer des éléments (développement SharePoint dans Visual Studio)"
-  - "développement SharePoint dans Visual Studio, importer des éléments"
+title: "Procédure pas à pas : Importation d’une Page maître personnalisée et Page avec une Image de Site | Documents Microsoft"
+ms.custom: 
+ms.date: 02/02/2017
+ms.reviewer: 
+ms.suite: 
+ms.technology: office-development
+ms.tgt_pltfrm: 
+ms.topic: article
+dev_langs:
+- VB
+- CSharp
+helpviewer_keywords:
+- SharePoint development in Visual Studio, importing items
+- importing items [SharePoint development in Visual Studio]
 ms.assetid: d1703957-81e2-47e1-b4ca-6a8d550d8da2
-caps.latest.revision: 21
-author: "kempb"
-ms.author: "kempb"
-manager: "ghogen"
-caps.handback.revision: 20
+caps.latest.revision: "21"
+author: gewarren
+ms.author: gewarren
+manager: ghogen
+ms.openlocfilehash: b5126e15daa8cbc22f4b64be0bb2bb2f3e0bb6b7
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: fr-FR
+ms.lasthandoff: 10/31/2017
 ---
-# Proc&#233;dure pas &#224; pas&#160;: importation d&#39;une page ma&#238;tre et d&#39;une page de site personnalis&#233;es avec une image
-  Cette procédure pas à pas explique comment importer une page maître personnalisée SharePoint et une page de site qui ont une image dans un projet SharePoint [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)].  
+# <a name="walkthrough-import-a-custom-master-page-and-site-page-with-an-image"></a>Procédure pas à pas : importation d'une page maître et d'une page de site personnalisées avec une image
+  Cette procédure pas à pas montre comment importer une page maître personnalisée SharePoint et une page de site qui contient une image dans un [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] projet SharePoint.  
   
  Cette procédure pas à pas montre comment effectuer les tâches suivantes :  
   
--   Créer une page maître personnalisée et une page de site à l'aide d'une image dans SharePoint Designer.  
+-   Créer une page maître personnalisée et une page de site à l’aide d’une image dans SharePoint Designer.  
   
--   Exporter une page maître personnalisée, une image et une page de site vers un fichier de solution SharePoint \(.wsp\).  
+-   Exporter une page maître personnalisée, une image et une page de site vers un fichier de solution (.wsp) SharePoint.  
   
--   Importer et déployer le fichier .wsp dans un projet SharePoint [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] à l'aide du projet Importer le package de solution SharePoint.  
+-   Importer et déployer le fichier .wsp dans un [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] projet SharePoint en utilisant le projet de Package de Solution SharePoint importation.  
   
  [!INCLUDE[note_settings_general](../sharepoint/includes/note-settings-general-md.md)]  
   
-## Composants requis  
- Vous devez disposer des composants suivants pour terminer cette procédure pas à pas :  
+## <a name="prerequisites"></a>Conditions préalables  
+ Vous devez disposer des composants suivants pour effectuer cette procédure pas à pas :  
   
--   Éditions de [!INCLUDE[TLA#tla_win](../sharepoint/includes/tlasharptla-win-md.md)] et de SharePoint prises en charge.  [!INCLUDE[crdefault](../sharepoint/includes/crdefault-md.md)] [Configuration requise pour développer des solutions SharePoint](../sharepoint/requirements-for-developing-sharepoint-solutions.md).  
+-   Éditions prises en charge [!INCLUDE[TLA#tla_win](../sharepoint/includes/tlasharptla-win-md.md)] et SharePoint. [!INCLUDE[crdefault](../sharepoint/includes/crdefault-md.md)][Configuration requise pour développer des Solutions SharePoint](../sharepoint/requirements-for-developing-sharepoint-solutions.md).  
   
--   Visual Studio.  
+-   Visual Studio.  
   
--   SharePoint Designer 2010.  
+-   SharePoint Designer 2010.  
   
-## Créer des éléments dans SharePoint Designer  
- Cet exemple indique comment créer trois éléments dans SharePoint Designer pour l'exportation : une page maître personnalisée, une page de site qui référence la page maître personnalisée, et un fichier image à afficher dans la page de site.  L'image est ajoutée au dossier \/images\/ dans SharePoint.  
+## <a name="create-items-in-sharepoint-designer"></a>Créer des éléments dans SharePoint Designer  
+ Cet exemple montre comment créer trois éléments dans SharePoint Designer pour l’exportation : une page maître personnalisée, une page de site qui fait référence à la page maître personnalisée et un fichier image à afficher sur la page du site. L’image est ajoutée au dossier /images/ dans SharePoint.  
   
-#### Pour créer une page maître personnalisée dans SharePoint Designer  
+#### <a name="to-create-a-custom-master-page-in-sharepoint-designer"></a>Pour créer une page maître personnalisée dans SharePoint Designer  
   
-1.  Dans SharePoint Designer, dans le volet Navigation, cliquez sur l'objet de site **Pages maîtres**.  
+1.  Dans SharePoint Designer, dans le volet de Navigation, choisissez le **Pages maîtres** objet de site.  
   
-2.  Dans le ruban **Pages maîtres**, choisissez **Page maître vide**.  
+2.  Sur le **Pages maîtres** du ruban, choisissez **Page maître vierge**.  
   
-3.  Choisissez la nouvelle page maître, puis, dans le ruban **Pages maîtres**, choisissez **Fichier de modification**.  
+3.  Choisissez la nouvelle page maître, puis, dans le **Pages maîtres** du ruban, choisissez **modifier le fichier**.  
   
-4.  En bas de SharePoint Designer, cliquez sur l'onglet **Code**.  
+4.  En bas de SharePoint Designer, choisissez le **Code** onglet.  
   
-5.  Remplacez la balise existante par la balise suivante.  
+5.  Remplacez le balisage existant par le balisage suivant.  
   
     ```  
     <%@ Master Language="C#" %>  
@@ -78,39 +80,39 @@ caps.handback.revision: 20
     </html>  
     ```  
   
-6.  Enregistrez la page, sélectionnez l'onglet **Pages maîtres**, et renommez la page maître comme **mybasic1.master**.  
+6.  Enregistrez la page, choisissez la **Pages maîtres** onglet et renommer la page maître en tant que **mybasic1.master**.  
   
-## Ajouter une image à la base de données de contenu dans SharePoint Designer  
- À présent, vous pouvez ajouter une image à afficher dans la page de site.  L'image est déployée sur la base de données de contenu SharePoint.  
+## <a name="add-an-image-to-the-content-database-in-sharepoint-designer"></a>Ajouter une Image à la base de données contenu dans SharePoint Designer  
+ Vous pouvez maintenant ajouter une image à afficher sur la page du site. L’image est déployée sur la base de données de contenu SharePoint.  
   
-#### Pour ajouter une image à la base de données de contenu dans SharePoint Designer  
+#### <a name="to-add-an-image-to-the-content-database-in-sharepoint-designer"></a>Pour ajouter une image à la base de données contenu dans SharePoint Designer  
   
-1.  Dans le volet de navigation, choisissez l'objet de site **Tous les fichiers**, puis, dans l'arborescence, sélectionnez le dossier **Images**.  
+1.  Dans le volet de Navigation, choisissez le **tous les fichiers** objet de site, puis, dans l’arborescence, sélectionnez le **images** dossier.  
   
-2.  Dans le ruban **Tous les fichiers**, choisissez **Fichiers d'importation**, choisissez un fichier de votre choix, puis cliquez sur le bouton **OK**.  Dans cet exemple, le fichier est nommé **myimg1.png**.  
+2.  Sur le **tous les fichiers** du ruban, choisissez **importer des fichiers**, choisissez un fichier de votre choix, puis choisissez le **OK** bouton. Dans cet exemple, le fichier est nommé **myimg1.png**.  
   
-     Vous pouvez également créer un sous\-dossier dans lequel organiser les images.  
+     Si vous le souhaitez, vous pouvez créer un sous-dossier pour aider à organiser les images.  
   
-3.  Fermez la boîte de dialogue **Importer**.  
+3.  Fermer le **importation** boîte de dialogue.  
   
-## Créer une page de site  
- Cette page de site de base utilise la page maître personnalisée et affiche l'image que vous avez ajoutée à l'étape précédente.  
+## <a name="create-a-site-page"></a>Créer une page de Site  
+ Cette page de site de base utilise la page maître personnalisée et affiche l’image que vous avez ajouté à l’étape précédente.  
   
-#### Pour créer une page de site  
+#### <a name="to-create-a-site-page"></a>Pour créer une page de site  
   
-1.  Dans le volet de navigation, choisissez l'objet **Pages de site**.  
+1.  Dans le volet de Navigation, choisissez le **Pages du Site** objet.  
   
-2.  Dans le ruban **Pages**, cliquez sur le bouton **Page**, choisissez le type **ASPX**, puis nommez le nouveau fichier **mycontentpage1.aspx**.  
+2.  Sur le **Pages** du ruban, choisissez le **Page** bouton, choisissez la **ASPX** page, tapez, puis nommez le nouveau fichier **mycontentpage1.aspx**.  
   
-     Vous pouvez également créer un sous\-dossier dans lequel organiser les pages de site.  
+     Si vous le souhaitez, vous pouvez créer un sous-dossier pour aider à organiser les pages du site.  
   
-3.  Dans la liste des pages du site, cliquez sur **MyContentPage1.aspx** pour ouvrir sa page de propriétés, puis, en bas de page, cliquez sur le lien **Modifier le fichier**.  
+3.  Dans la liste de pages de site, choisissez **MyContentPage1.aspx** pour ouvrir sa page de propriétés, puis, en bas de la page, choisissez la **modifier le fichier** lien.  
   
-     Si un message apparaît et indique que cette page ne contient aucune région qui est modifiable en mode sans erreur et ne demande pas si vous souhaitez ouvrir cette page en mode avancé, cliquez sur le bouton **Oui**.  
+     Si un message s’affiche et indique que cette page ne contient pas toutes les zones qui sont modifiables en mode sans échec et vous demande si vous souhaitez ouvrir cette page en mode avancé, choisissez la **Oui** bouton.  
   
-4.  En bas de la page, cliquez sur le bouton **Code**.  
+4.  Au bas de la page, choisissez la **Code** bouton.  
   
-5.  Remplacez la balise existante par la balise suivante.  
+5.  Remplacez le balisage existant par le balisage suivant.  
   
     ```  
     <%@ Import Namespace="Microsoft.SharePoint.ApplicationPages" %>  
@@ -126,61 +128,61 @@ caps.handback.revision: 20
     </asp:Content>  
     ```  
   
-6.  Enregistrez la page de site mise à jour.  
+6.  Enregistrez la page de site mis à jour.  
   
-## Exporter les éléments de SharePoint  
- Exportez les éléments de SharePoint vers un fichier solution SharePoint \(.wsp\).  
+## <a name="export-the-items-from-sharepoint"></a>Exporter les éléments à partir de SharePoint  
+ Exporter les éléments à partir de SharePoint vers un fichier de solution (.wsp) SharePoint.  
   
-#### Pour exporter des éléments de SharePoint Designer  
+#### <a name="to-export-items-from-sharepoint-designer"></a>Pour exporter des éléments à partir de SharePoint Designer  
   
-1.  Dans SharePoint Designer, dans le volet de navigation, choisissez l'objet **Team Site**, puis, dans le ruban **Site**, choisissez **Enregistrer comme modèle**.  
+1.  Dans SharePoint Designer, dans le volet de Navigation, choisissez le **Site d’équipe** objet, puis, dans le **Site** du ruban, choisissez **enregistrer comme modèle**.  
   
-2.  Dans la boîte de dialogue **Enregistrer comme modèle**, entrez un nom de fichier et un nom de modèle, activez la case à cocher **Inclure le contenu**, puis cliquez sur **Terminer**.  
+2.  Dans le **enregistrer comme modèle** boîte de dialogue, entrez un nom de fichier et le nom du modèle, sélectionnez le **inclure du contenu** case à cocher, puis choisissez le **OK** bouton.  
   
-     Le contenu du site est alors enregistré dans le fichier .wsp.  
+     Il enregistre le contenu du site dans le fichier .wsp.  
   
-3.  Après avoir exporté la solution, cliquez sur le lien **Galerie des solutions** pour afficher la liste de fichiers de solutions disponibles.  
+3.  Une fois que les exportations de la solution, choisissez le **galerie de solutions** lien pour afficher la liste des fichiers de solution disponible.  
   
-4.  Ouvrir le menu contextuel du fichier de .wsp, puis choisissez **Enregistrer la cible sous** pour l'enregistrer dans le système.  
+4.  Ouvrez le menu contextuel pour le nouveau fichier .wsp, puis choisissez **enregistrer la cible sous** à l’enregistrer dans le système.  
   
-## Importer des éléments dans Visual Studio  
- Importez le fichier .wsp dans [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)].  Une fois le contenu importé, vous pouvez le personnaliser, ajouter d'autres d'éléments, puis le déployer.  
+## <a name="import-the-items-into-visual-studio"></a>Importer les éléments dans Visual Studio  
+ Importez le fichier .wsp dans [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]. Après avoir importé le contenu, vous pouvez le personnaliser, ajouter d’autres éléments et ensuite le déployer.  
   
-#### Pour importer des éléments à partir du fichier .wsp dans Visual Studio  
+#### <a name="to-import-items-from-the-wsp-file-into-visual-studio"></a>Pour importer des éléments à partir du fichier .wsp dans Visual Studio  
   
-1.  Dans [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)], créez un projet **Importer le package de solution SharePoint 2010**.  
+1.  Dans [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)], créez un **importer un Package SharePoint 2010 Solution** projet.  
   
-2.  Dans la page **Sélectionner les éléments à importer**, sous **Module**, dans la colonne **Type**, sélectionnez uniquement les cases à cocher des fichiers repris dans le tableau suivant pour l'importation.  
+2.  Sur le **sélectionner les éléments à importer** sous **Module** dans les **Type** colonne, sélectionnez les cases à cocher pour que les fichiers dans le tableau suivant pour l’importation.  
   
-    |Nom de fichier|Description|  
-    |--------------------|-----------------|  
-    |\_catalogsmasterpage\_|Page maître personnalisée.|  
-    |images\_|Fichier image dans le système de fichiers SharePoint.|  
-    |SitePages\_|Page de site.|  
+    |Nom du fichier|Description|  
+    |---------------|-----------------|  
+    |_catalogsmasterpage\_|La page maître personnalisée.|  
+    |images_|Le fichier image dans le système de fichiers SharePoint.|  
+    |SitePages_|La page du site.|  
   
-3.  Cliquez sur le bouton **Terminer** pour importer les éléments sélectionnés.  
+3.  Choisissez le **Terminer** bouton pour importer les éléments sélectionnés.  
   
-4.  Dans l'**Explorateur de solutions**, cliquez surle noeud \_catalogsmasterpage\_ et affectez la valeur **Automatique** à sa propriété **Résolution de conflit de déploiement**.  
+4.  Dans **l’Explorateur de solutions**, choisissez le _catalogsmasterpage\_ nœud et définir la valeur de sa **Deployment Conflict Resolution** propriété **automatique**.  
   
-     Cela permet de s'assurer que tous les éventuels conflits de déploiement sont résolus automatiquement.  
+     Cela permet de garantir que tous les conflits de déploiement résolues automatiquement.  
   
-5.  Si votre nouvelle page maître porte le même nom qu'une page existante, assurez\-vous que la page existante n'est pas marquée comme page maître par défaut ou page maître personnalisée dans SharePoint Designer.  
+5.  Si votre nouvelle page maître a le même nom qu’une page existante, assurez-vous que la page existante n’est pas marquée comme une Page maître par défaut ou une Page maître personnalisée dans SharePoint Designer.  
   
-     Si une page maître existante est marquée comme page maître par défaut ou page maître personnalisée, vous obtenez une erreur de déploiement qui indique que la page maître ne peut pas être supprimée.  Pour éviter ce problème, procédez comme suit :  
+     Si une page maître existante est marquée comme Page maître par défaut ou Page maître personnalisée, vous obtiendrez une erreur de déploiement qui indique que la page maître ne peut pas être supprimée. Pour éviter ce problème, procédez comme suit :  
   
-    -   Si la page maître existante est définie comme page maître par défaut, définissez temporairement une autre page maître comme page maître par défaut.  Après avoir déployé les fichiers sur SharePoint, définissez votre nouvelle page maître comme page maître par défaut.  
+    -   Si la page maître existante est définie en tant que Page maître par défaut, définissez temporairement une autre page maître comme Page maître par défaut. Après avoir déployé les fichiers sur SharePoint, définissez votre nouvelle page maître comme Page maître par défaut.  
   
-    -   Si la page maître existante est définie comme page maître personnalisée, définissez temporairement une autre page maître comme page maître personnalisée.  Après avoir déployé les fichiers sur SharePoint, définissez votre nouvelle page maître comme page maître personnalisée.  
+    -   Si la page maître existante est définie en tant que Page maître personnalisée, définissez temporairement une autre page maître comme Page maître personnalisée. Après avoir déployé les fichiers sur SharePoint, définissez votre nouvelle page maître comme Page maître personnalisée.  
   
-6.  Dans la barre de menus, choisissez **Générer**, puis **Déployer la solution**.  
+6.  Dans la barre de menus, choisissez **générer**, **déployer la Solution**.  
   
 7.  Ouvrez le site SharePoint pour afficher les éléments déployés.  
   
- Un autre manière d'importer des fichiers dans [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] et de les déployer sur SharePoint consiste à ajouter les fichiers dans des modules dans [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)].  [!INCLUDE[crdefault](../sharepoint/includes/crdefault-md.md)] [Comment : importer une page maître ou un thème](../sharepoint/how-to-import-a-master-page-or-theme.md) et [Utilisation de modules pour inclure des fichiers dans la solution](../sharepoint/using-modules-to-include-files-in-the-solution.md).  
+ Une autre façon d’importer des fichiers dans [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] et les déployer sur SharePoint consiste à ajouter les fichiers dans des modules dans [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]. [!INCLUDE[crdefault](../sharepoint/includes/crdefault-md.md)][Comment : importer une Page maître ou un thème](../sharepoint/how-to-import-a-master-page-or-theme.md) et [à l’aide de Modules pour inclure des fichiers dans la Solution](../sharepoint/using-modules-to-include-files-in-the-solution.md).  
   
-## Voir aussi  
- [Importation d'éléments d'un site SharePoint existant](../sharepoint/importing-items-from-an-existing-sharepoint-site.md)   
- [Developing SharePoint Solutions](../sharepoint/developing-sharepoint-solutions.md)   
- [Création de contrôles réutilisables pour les composants WebPart ou les pages d'application](../sharepoint/creating-reusable-controls-for-web-parts-or-application-pages.md)  
+## <a name="see-also"></a>Voir aussi  
+ [Importation d’éléments d’un Site SharePoint existant](../sharepoint/importing-items-from-an-existing-sharepoint-site.md)   
+ [Développement de Solutions SharePoint](../sharepoint/developing-sharepoint-solutions.md)   
+ [Création de contrôles réutilisables pour les composants WebPart ou les pages d’application](../sharepoint/creating-reusable-controls-for-web-parts-or-application-pages.md)  
   
   

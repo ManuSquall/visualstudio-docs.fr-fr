@@ -1,5 +1,5 @@
 ---
-title: Bind WPF controls to data in Visual Studio - Part 1| Microsoft Docs
+title: "Lier des contrôles WPF à des données dans Visual Studio - partie 1 | Documents Microsoft"
 ms.custom: 
 ms.date: 11/04/2016
 ms.reviewer: 
@@ -15,107 +15,91 @@ helpviewer_keywords:
 - WPF Designer, data binding
 - data binding, WPF
 ms.assetid: e05a1e0c-5082-479d-bbc9-d395b0bc6580
-caps.latest.revision: 36
+caps.latest.revision: "36"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-translation.priority.ht:
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- ru-ru
-- zh-cn
-- zh-tw
-translation.priority.mt:
-- cs-cz
-- pl-pl
-- pt-br
-- tr-tr
-ms.translationtype: HT
-ms.sourcegitcommit: 33a857c2d8585e2e8da9bcd9158190366a3b6830
-ms.openlocfilehash: a258772fb8107917a118cc95aa5514f870bea4c0
-ms.contentlocale: fr-fr
-ms.lasthandoff: 09/07/2017
-
+ms.technology: vs-data-tools
+ms.openlocfilehash: 685f57286a022be6b7acbdaf2b8ffed33457fef1
+ms.sourcegitcommit: ee42a8771f0248db93fd2e017a22e2506e0f9404
+ms.translationtype: MT
+ms.contentlocale: fr-FR
+ms.lasthandoff: 11/09/2017
 ---
-# <a name="bind-wpf-controls-to-data-in-visual-studio"></a>Bind WPF controls to data in Visual Studio
-You can display data to users of your application by binding data to [!INCLUDE[TLA#tla_titlewinclient](../data-tools/includes/tlasharptla_titlewinclient_md.md)] controls. To create these data-bound controls, you can drag items from the **Data Sources** window onto the [!INCLUDE[wpfdesigner_current_short](../data-tools/includes/wpfdesigner_current_short_md.md)] in [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]. This topic describes some of the most common tasks, tools, and classes that you can use to create data-bound [!INCLUDE[TLA#tla_titlewinclient](../data-tools/includes/tlasharptla_titlewinclient_md.md)] applications.  
+# <a name="bind-wpf-controls-to-data-in-visual-studio"></a>Lier des contrôles WPF à des données dans Visual Studio
+Vous pouvez afficher des données pour les utilisateurs de votre application en liant des données à des contrôles [!INCLUDE[TLA#tla_titlewinclient](../data-tools/includes/tlasharptla_titlewinclient_md.md)]. Pour créer ces contrôles liés aux données, vous pouvez faire glisser des éléments à partir de la **des Sources de données** fenêtre sur la [!INCLUDE[wpfdesigner_current_short](../data-tools/includes/wpfdesigner_current_short_md.md)] dans [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]. Cette rubrique décrit quelques tâches, outils et classes les plus courants que vous pouvez utiliser pour créer des applications [!INCLUDE[TLA#tla_titlewinclient](../data-tools/includes/tlasharptla_titlewinclient_md.md)] liées aux données.  
   
- For general information about how to create data-bound controls in [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)], see [Bind controls to data in Visual Studio](../data-tools/bind-controls-to-data-in-visual-studio.md). For more information about [!INCLUDE[TLA#tla_titlewinclient](../data-tools/includes/tlasharptla_titlewinclient_md.md)] data binding, see [Data Binding Overview](/dotnet/framework/wpf/data/data-binding-overview).  
+ Pour plus d’informations sur la façon de créer des contrôles liés aux données dans [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)], consultez [lier des contrôles aux données dans Visual Studio](../data-tools/bind-controls-to-data-in-visual-studio.md). Pour plus d’informations sur [!INCLUDE[TLA#tla_titlewinclient](../data-tools/includes/tlasharptla_titlewinclient_md.md)] liaison de données, consultez [vue d’ensemble de la liaison de données](/dotnet/framework/wpf/data/data-binding-overview).  
   
-## <a name="tasks-involved-in-binding-wpf-controls-to-data"></a>Tasks involved in binding WPF controls to data  
- The following table lists the tasks that can be accomplished by dragging items from the **Data Sources** window to the [!INCLUDE[wpfdesigner_current_short](../data-tools/includes/wpfdesigner_current_short_md.md)].  
+## <a name="tasks-involved-in-binding-wpf-controls-to-data"></a>Tâches impliquées dans la liaison de contrôles WPF aux données  
+ Le tableau suivant répertorie les tâches pouvant être accomplies en faisant glisser des éléments depuis la **des Sources de données** fenêtre pour le [!INCLUDE[wpfdesigner_current_short](../data-tools/includes/wpfdesigner_current_short_md.md)].  
   
-|Task|More information|  
+|Tâche|Complément d'information|  
 |----------|----------------------|  
-|Create new data-bound controls.<br /><br /> Bind existing controls to data.|[Bind WPF controls to data in Visual Studio](../data-tools/bind-wpf-controls-to-data-in-visual-studio.md) [Bind WPF controls to a dataset](../data-tools/bind-wpf-controls-to-a-dataset.md)|  
-|Create controls that display related data in a parent-child relationship: when the user selects a parent data record in one control, another control displays related child data for the selected record.|[Display related data in WPF applications](../data-tools/display-related-data-in-wpf-applications.md)|  
-|Create a *lookup table* that displays information from one table based on the value of a foreign-key field in another table.|[Create lookup tables in WPF applications](../data-tools/create-lookup-tables-in-wpf-applications.md)|  
-|Bind a control to an image in a database.|[Bind controls to pictures from a database](../data-tools/bind-controls-to-pictures-from-a-database.md)|  
+|Créer des contrôles liés aux données.<br /><br /> Lier des contrôles existants à des données.|[Lier des contrôles WPF à un dataset](../data-tools/bind-wpf-controls-to-a-dataset.md)|  
+|Créer des contrôles qui affichent les données connexes d'une relation parent-enfant : lorsque l'utilisateur sélectionne un enregistrement de données parentes dans un contrôle, un autre contrôle affiche les données enfants connexes pour l'enregistrement sélectionné.|[Afficher des données associées dans des applications WPF](../data-tools/display-related-data-in-wpf-applications.md)|  
+|Créer un *table de recherche* qui affiche des informations à partir d’une table en fonction de la valeur d’un champ de clé étrangère dans une autre table.|[Créer des tables de recherche dans des applications WPF](../data-tools/create-lookup-tables-in-wpf-applications.md)|  
+|Lier un contrôle à une image dans une base de données.|[Lier des contrôles à des images d’une base de données](../data-tools/bind-controls-to-pictures-from-a-database.md)|  
   
-## <a name="valid-drop-targets"></a>Valid drop targets  
- You can drag items in the **Data Sources** window only to valid drop targets in the [!INCLUDE[wpfdesigner_current_short](../data-tools/includes/wpfdesigner_current_short_md.md)]. There are two main kinds of valid drop targets: containers and controls. A container is a user interface element that typically contains controls. For example, a grid is a container, and so is a window.  
+## <a name="valid-drop-targets"></a>Cibles de déplacement valides  
+ Vous pouvez faire glisser des éléments le **des Sources de données** fenêtre uniquement vers les cibles de dépôt valides dans le [!INCLUDE[wpfdesigner_current_short](../data-tools/includes/wpfdesigner_current_short_md.md)]. Il existe deux genres principaux de cibles de dépôt valides : conteneurs et contrôles. Un conteneur est un élément d'interface utilisateur qui contient généralement des contrôles. Par exemple, une grille est un conteneur, de même qu'une fenêtre.  
   
-## <a name="generated-xaml-and-code"></a>Generated XAML and code  
- When you drag an item from the **Data Sources** window to the [!INCLUDE[wpfdesigner_current_short](../data-tools/includes/wpfdesigner_current_short_md.md)], [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] generates [!INCLUDE[TLA#tla_titlexaml](../data-tools/includes/tlasharptla_titlexaml_md.md)] that defines a new data-bound control (or binds an existing control to the data source). For some data sources, [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] also generates code in the code-behind file that fills the data source with data.  
+## <a name="generated-xaml-and-code"></a>XAML et le code généré  
+ Lorsque vous faites glisser un élément à partir de la **des Sources de données** fenêtre pour le [!INCLUDE[wpfdesigner_current_short](../data-tools/includes/wpfdesigner_current_short_md.md)], [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] génère [!INCLUDE[TLA#tla_titlexaml](../data-tools/includes/tlasharptla_titlexaml_md.md)] qui définit un nouveau contrôle lié aux données (ou lie un contrôle existant à la source de données). Pour certaines sources de données, [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] génère également du code dans le fichier code-behind qui remplit la source de données avec les données.  
   
- The following table lists the [!INCLUDE[TLA#tla_titlexaml](../data-tools/includes/tlasharptla_titlexaml_md.md)] and code that [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] generates for each type of data source in the **Data Sources** window.  
+ Le tableau suivant répertorie les [!INCLUDE[TLA#tla_titlexaml](../data-tools/includes/tlasharptla_titlexaml_md.md)] ainsi que le code [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] génère pour chaque type de source de données dans le **des Sources de données** fenêtre.  
   
-|Data source|Generate XAML that binds a control to the data source|Generate code that fills the data source with data|  
+|Source de données|Générer le code XAML qui lie un contrôle à la source de données|Générer du code qui remplit la source de données avec les données|  
 |-----------------|-----------------------------------------------------------|--------------------------------------------------------|  
-|Dataset|Yes|Yes|  
-|[!INCLUDE[adonet_edm](../data-tools/includes/adonet_edm_md.md)]|Yes|Yes|  
-|Service|Yes|No|  
-|Object|Yes|No|  
+|Groupe de données|Oui|Oui|  
+|[!INCLUDE[adonet_edm](../data-tools/includes/adonet_edm_md.md)]|Oui|Oui|  
+|Service|Oui|Non|  
+|Objet|Oui|Non|  
   
-### <a name="datasets"></a>Datasets  
- When you drag a table or column from the **Data Sources** window to the designer, [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] generates [!INCLUDE[TLA#tla_titlexaml](../data-tools/includes/tlasharptla_titlexaml_md.md)] that does the following:  
+### <a name="datasets"></a>Groupes de données  
+ Lorsque vous faites glisser une table ou une colonne à partir de la **des Sources de données** fenêtre vers le concepteur, [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] génère [!INCLUDE[TLA#tla_titlexaml](../data-tools/includes/tlasharptla_titlexaml_md.md)] qui effectue les opérations suivantes :  
   
--   Adds the dataset and a new <xref:System.Windows.Data.CollectionViewSource> to the resources of the container you dragged the item to. The <xref:System.Windows.Data.CollectionViewSource> is an object that can be used to navigate and display the data in the dataset.  
+-   Ajoute le groupe de données (dataset) et un nouveau <xref:System.Windows.Data.CollectionViewSource> aux ressources du conteneur vers lequel vous avez fait glisser l'élément. Le <xref:System.Windows.Data.CollectionViewSource> est un objet qui peut être utilisé pour naviguer et pour afficher les données dans le groupe de données.  
   
--   Creates a data binding for a control. If you drag the item to an existing control in the designer, the XAML binds the control to the item. If you drag the item to a container, the XAML creates the control that was selected for the dragged item, and it binds the control to the item. The control is created inside a new <xref:System.Windows.Controls.Grid>.  
+-   Crée une liaison de données pour un contrôle. Si vous faites glisser l'élément vers un contrôle existant dans le concepteur, le code XAML lie le contrôle à l'élément. Si vous faites glisser l’élément vers un conteneur, le code XAML crée le contrôle qui a été sélectionné pour l’élément déplacé et lie le contrôle à l’élément. Le contrôle est créé dans une nouvelle <xref:System.Windows.Controls.Grid>.  
   
- [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] also makes the following changes to the code-behind file:  
+[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] apporte également les modifications suivantes au fichier code-behind :  
   
--   Creates a <xref:System.Windows.FrameworkElement.Loaded> event handler for the [!INCLUDE[TLA2#tla_ui](../data-tools/includes/tla2sharptla_ui_md.md)] element that contains the control. The event handler fills the table with data, retrieves the <xref:System.Windows.Data.CollectionViewSource> from the container's resources, and then makes the first data item the current item. If a <xref:System.Windows.FrameworkElement.Loaded> event handler already exists, [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] adds this code to the existing event handler.  
+-   Crée un gestionnaire d'événements <xref:System.Windows.FrameworkElement.Loaded> pour l'élément [!INCLUDE[TLA2#tla_ui](../data-tools/includes/tla2sharptla_ui_md.md)] qui contient le contrôle. Le gestionnaire d'événements remplit la table des données, extrait le <xref:System.Windows.Data.CollectionViewSource> des ressources du conteneur, puis active le premier élément de données comme élément de données actuel. Si un <xref:System.Windows.FrameworkElement.Loaded> Gestionnaire d’événements existe déjà, [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] ajoute ce code au gestionnaire d’événements existant.  
   
-### <a name="entity-data-models"></a>Entity data models  
- When you drag an entity or an entity property from the **Data Sources** window to the designer, [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] generates [!INCLUDE[TLA#tla_titlexaml](../data-tools/includes/tlasharptla_titlexaml_md.md)] that does the following:  
+### <a name="entity-data-models"></a>Modèles de données d’entité  
+ Lorsque vous faites glisser une entité ou une propriété d’entité à partir de la **des Sources de données** fenêtre vers le concepteur, [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] génère [!INCLUDE[TLA#tla_titlexaml](../data-tools/includes/tlasharptla_titlexaml_md.md)] qui effectue les opérations suivantes :  
   
--   Adds a new <xref:System.Windows.Data.CollectionViewSource> to the resources of the container you dragged the item to. The <xref:System.Windows.Data.CollectionViewSource> is an object that can be used to navigate and display the data in the entity.  
+-   Ajoute un nouveau <xref:System.Windows.Data.CollectionViewSource> aux ressources du conteneur vers lequel vous avez fait glisser l'élément. Le <xref:System.Windows.Data.CollectionViewSource> est un objet qui peut être utilisé pour naviguer et pour afficher les données dans l'entité.  
   
--   Creates a data binding for a control. If you drag the item to an existing control in the designer, the [!INCLUDE[TLA#tla_titlexaml](../data-tools/includes/tlasharptla_titlexaml_md.md)] binds the control to the item. If you drag the item to a container, the [!INCLUDE[TLA#tla_titlexaml](../data-tools/includes/tlasharptla_titlexaml_md.md)] creates the control that was selected for the dragged item, and it binds the control to the item. The control is created inside a new <xref:System.Windows.Controls.Grid>.  
+-   Crée une liaison de données pour un contrôle. Si vous faites glisser l'élément vers un contrôle existant dans le concepteur, le code [!INCLUDE[TLA#tla_titlexaml](../data-tools/includes/tlasharptla_titlexaml_md.md)] lie le contrôle à l'élément. Si vous faites glisser l’élément à un conteneur, le [!INCLUDE[TLA#tla_titlexaml](../data-tools/includes/tlasharptla_titlexaml_md.md)] crée le contrôle qui a été sélectionné pour l’élément déplacé et lie le contrôle à l’élément. Le contrôle est créé dans une nouvelle <xref:System.Windows.Controls.Grid>.  
   
- Visual Studio also makes the following changes to the code-behind file:  
+Visual Studio apporte également les modifications suivantes au fichier code-behind :  
   
--   Adds a new method that returns a query for the entity that you dragged to the designer (or the entity that contains the property that you dragged to the designer). The new method has the name Get*EntityName*Query, where *EntityName* is the name of the entity.  
+-   Ajoute une nouvelle méthode qui retourne une requête pour l'entité que vous avez fait glisser vers le concepteur (ou l'entité qui contient la propriété que vous avez fait glisser vers le concepteur). La nouvelle méthode porte le nom Get*EntityName*requête, où *EntityName* est le nom de l’entité.  
   
--   Creates a <xref:System.Windows.FrameworkElement.Loaded> event handler for the [!INCLUDE[TLA2#tla_ui](../data-tools/includes/tla2sharptla_ui_md.md)] element that contains the control. The event handler calls the Get*EntityName*Query method to fill the entity with data, retrieves the <xref:System.Windows.Data.CollectionViewSource> from the container's resources, and then makes the first data item the current item. If a <xref:System.Windows.FrameworkElement.Loaded> event handler already exists, [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] adds this code to the existing event handler.  
+-   Crée un gestionnaire d'événements <xref:System.Windows.FrameworkElement.Loaded> pour l'élément [!INCLUDE[TLA2#tla_ui](../data-tools/includes/tla2sharptla_ui_md.md)] qui contient le contrôle. Le Gestionnaire d’événements appelle la méthode Get*EntityName*requête de méthode pour remplir l’entité des données, extrait le <xref:System.Windows.Data.CollectionViewSource> à partir du conteneur ressources, puis rend les premier élément de données l’élément actuel. Si un <xref:System.Windows.FrameworkElement.Loaded> Gestionnaire d’événements existe déjà, [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] ajoute ce code au gestionnaire d’événements existant.  
   
 ### <a name="services"></a>Services  
- When you drag a service object or property from the **Data Sources** window to the designer, [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] generates [!INCLUDE[TLA#tla_titlexaml](../data-tools/includes/tlasharptla_titlexaml_md.md)] that creates a data-bound control (or binds an existing control to the object or property). However, [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] does not generate code that fills the proxy service object with data. You must write this code yourself. For an example that demonstrates how to do this, see [Bind WPF controls to a WCF data service](../data-tools/bind-wpf-controls-to-a-wcf-data-service.md).  
+ Lorsque vous faites glisser un objet de service ou une propriété à partir de la **des Sources de données** fenêtre vers le concepteur, [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] génère [!INCLUDE[TLA#tla_titlexaml](../data-tools/includes/tlasharptla_titlexaml_md.md)] qui crée un contrôle lié aux données (ou lie un contrôle existant à l’objet ou la propriété). Toutefois, [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] ne génère pas de code qui remplit l'objet de service proxy avec les données. Vous devez écrire ce code vous-même. Pour obtenir un exemple qui montre comment effectuer cette opération, consultez [WPF de lier des contrôles à un service de données WCF](../data-tools/bind-wpf-controls-to-a-wcf-data-service.md).  
   
- Visual Studio generates XAML that does the following:  
+ Visual Studio génère du code XAML qui effectue les opérations suivantes :  
   
--   Adds a new <xref:System.Windows.Data.CollectionViewSource> to the resources of the container that you dragged the item to. The <xref:System.Windows.Data.CollectionViewSource> is an object that can be used to navigate and display the data in the object that is returned by the service.  
+-   Ajoute un nouveau <xref:System.Windows.Data.CollectionViewSource> aux ressources du conteneur vers lequel vous avez fait glisser l'élément. Le <xref:System.Windows.Data.CollectionViewSource> est un objet qui peut être utilisé pour naviguer et pour afficher les données dans l'objet retourné par le service.  
   
--   Creates a data binding for a control. If you drag the item to an existing control in the designer, the [!INCLUDE[TLA#tla_titlexaml](../data-tools/includes/tlasharptla_titlexaml_md.md)] binds the control to the item. If you drag the item to a container, the [!INCLUDE[TLA#tla_titlexaml](../data-tools/includes/tlasharptla_titlexaml_md.md)] creates the control that was selected for the dragged item, and it binds the control to the item. The control is created inside a new <xref:System.Windows.Controls.Grid>.  
+-   Crée une liaison de données pour un contrôle. Si vous faites glisser l'élément vers un contrôle existant dans le concepteur, le code [!INCLUDE[TLA#tla_titlexaml](../data-tools/includes/tlasharptla_titlexaml_md.md)] lie le contrôle à l'élément. Si vous faites glisser l’élément à un conteneur, le [!INCLUDE[TLA#tla_titlexaml](../data-tools/includes/tlasharptla_titlexaml_md.md)] crée le contrôle qui a été sélectionné pour l’élément déplacé et lie le contrôle à l’élément. Le contrôle est créé dans une nouvelle <xref:System.Windows.Controls.Grid>.  
   
-### <a name="objects"></a>Objects  
- When you drag an object or property from the **Data Sources** window to the designer, [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] generates [!INCLUDE[TLA#tla_titlexaml](../data-tools/includes/tlasharptla_titlexaml_md.md)] that creates a data-bound control (or binds an existing control to the object or property). However, [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] does not generate code to fill the object with data. You must write this code yourself.  
+### <a name="objects"></a>Objets  
+ Lorsque vous faites glisser un objet ou une propriété à partir de la **des Sources de données** fenêtre vers le concepteur, [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] génère [!INCLUDE[TLA#tla_titlexaml](../data-tools/includes/tlasharptla_titlexaml_md.md)] qui crée un contrôle lié aux données (ou lie un contrôle existant à l’objet ou la propriété). Toutefois, [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] ne génère pas de code pour remplir l'objet avec les données. Vous devez écrire ce code vous-même.  
   
 > [!NOTE]
->  Custom classes must be public and, by default,  have a constructor without parameters. They can'tbe nested classes that have a "dot" in their syntax. For more information, see [XAML and Custom Classes for WPF](/dotnet/framework/wpf/advanced/xaml-and-custom-classes-for-wpf).  
+>  Classes personnalisées doivent être public et, par défaut, avoir un constructeur sans paramètre. Ils classes can'tbe imbriquées qui ont un « point » dans leur syntaxe. Pour plus d’informations, consultez [XAML et Classes personnalisées pour WPF](/dotnet/framework/wpf/advanced/xaml-and-custom-classes-for-wpf).  
   
- [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] generates [!INCLUDE[TLA#tla_titlexaml](../data-tools/includes/tlasharptla_titlexaml_md.md)] that does the following:  
+ [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]génère [!INCLUDE[TLA#tla_titlexaml](../data-tools/includes/tlasharptla_titlexaml_md.md)] qui effectue les opérations suivantes :  
   
--   Adds a new <xref:System.Windows.Data.CollectionViewSource> to the resources of the container that you dragged the item to. The <xref:System.Windows.Data.CollectionViewSource> is an object that can be used to navigate and display the data in the object.  
+-   Ajoute un nouveau <xref:System.Windows.Data.CollectionViewSource> aux ressources du conteneur vers lequel vous avez fait glisser l'élément. Le <xref:System.Windows.Data.CollectionViewSource> est un objet qui peut être utilisé pour naviguer et pour afficher les données dans l'objet.  
   
--   Creates a data binding for a control. If you drag the item to an existing control in the designer, the XAML binds the control to the item. If you drag the item to a container, the XAML creates the control that was selected for the dragged item, and it binds the control to the item. The control is created inside a new <xref:System.Windows.Controls.Grid>.  
+-   Crée une liaison de données pour un contrôle. Si vous faites glisser l'élément vers un contrôle existant dans le concepteur, le code XAML lie le contrôle à l'élément. Si vous faites glisser l’élément vers un conteneur, le code XAML crée le contrôle qui a été sélectionné pour l’élément déplacé et lie le contrôle à l’élément. Le contrôle est créé dans une nouvelle <xref:System.Windows.Controls.Grid>.  
   
-## <a name="see-also"></a>See Also  
- [Bind controls to data in Visual Studio](../data-tools/bind-controls-to-data-in-visual-studio.md)
-
+## <a name="see-also"></a>Voir aussi
+[Lier des contrôles à des données dans Visual Studio](../data-tools/bind-controls-to-data-in-visual-studio.md)

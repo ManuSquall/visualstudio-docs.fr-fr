@@ -1,46 +1,29 @@
 ---
-title: IDebugEngine2::Attach | Microsoft Docs
+title: IDebugEngine2::Attach | Documents Microsoft
 ms.custom: 
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-sdk
+ms.technology: vs-ide-sdk
 ms.tgt_pltfrm: 
 ms.topic: article
-f1_keywords:
-- IDebugEngine2::Attach
-helpviewer_keywords:
-- IDebugEngine2::Attach
+f1_keywords: IDebugEngine2::Attach
+helpviewer_keywords: IDebugEngine2::Attach
 ms.assetid: 173dcbda-5019-4c5e-bca9-a071838b5739
-caps.latest.revision: 14
+caps.latest.revision: "14"
+author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-translation.priority.mt:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
+ms.openlocfilehash: 7c31e4c8367c1ceba5a4692438e8c1f1503f4f63
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
 ms.translationtype: MT
-ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
-ms.openlocfilehash: 0dbefd1609d67936e08a783387a4f4d4f62b7128
-ms.contentlocale: fr-fr
-ms.lasthandoff: 08/28/2017
-
+ms.contentlocale: fr-FR
+ms.lasthandoff: 10/31/2017
 ---
 # <a name="idebugengine2attach"></a>IDebugEngine2::Attach
-Attaches a debug engine (DE) to a program or programs. Called by the session debug manager (SDM) when the DE is running in-process to the SDM.  
+Attache un moteur de débogage (DE) à un programme ou des programmes. Appelée par le Gestionnaire de session de débogage (SDM) lors de la D’est en cours d’exécution in-process pour le SDM.  
   
-## <a name="syntax"></a>Syntax  
+## <a name="syntax"></a>Syntaxe  
   
 ```cpp  
 HRESULT Attach(   
@@ -62,49 +45,49 @@ int Attach(
 );  
 ```  
   
-#### <a name="parameters"></a>Parameters  
+#### <a name="parameters"></a>Paramètres  
  `pProgram`  
- [in] An array of [IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md) objects that represent programs to be attached to. These are port programs.  
+ [in] Un tableau de [IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md) objets qui représentent des programmes à joindre à. Il s’agit de programmes de port.  
   
  `rgpProgramNodes`  
- [in] An array of [IDebugProgramNode2](../../../extensibility/debugger/reference/idebugprogramnode2.md) objects that represent program nodes, one for each program. The program nodes in this array represent the same programs as in `pProgram`. The program nodes are given so that the DE can identify the programs to attach to.  
+ [in] Un tableau de [IDebugProgramNode2](../../../extensibility/debugger/reference/idebugprogramnode2.md) les objets qui représentent des nœuds de programme, une pour chaque programme. Les nœuds de programme dans ce tableau représentent les mêmes programmes comme dans `pProgram`. Les nœuds de programme sont fournis pour que le DE peut identifier les programmes à attacher à.  
   
  `celtPrograms`  
- [in] Number of programs and/or program nodes in the `pProgram` and `rgpProgramNodes` arrays.  
+ [in] Nombre de programmes et/ou des nœuds de programme dans le `pProgram` et `rgpProgramNodes` tableaux.  
   
  `pCallback`  
- [in] The [IDebugEventCallback2](../../../extensibility/debugger/reference/idebugeventcallback2.md) object to be used to send debug events to the SDM.  
+ [in] Le [IDebugEventCallback2](../../../extensibility/debugger/reference/idebugeventcallback2.md) objet à être utilisé pour envoyer des événements de débogage pour le SDM.  
   
  `dwReason`  
- [in] A value from the [ATTACH_REASON](../../../extensibility/debugger/reference/attach-reason.md) enumeration that specifies the reason for attaching these programs. For more information, see the Remarks section.  
+ [in] Une valeur à partir de la [ATTACH_REASON](../../../extensibility/debugger/reference/attach-reason.md) énumération qui spécifie la raison de l’attachement de ces programmes. Pour plus d'informations, consultez la section Remarques.  
   
-## <a name="return-value"></a>Return Value  
- If successful, returns `S_OK`; otherwise, returns an error code.  
+## <a name="return-value"></a>Valeur de retour  
+ En cas de réussite, retourne `S_OK`; sinon, retourne un code d’erreur.  
   
-## <a name="remarks"></a>Remarks  
- There are three reasons for attaching to a program, as follows:  
+## <a name="remarks"></a>Remarques  
+ Il existe trois raisons pour l’attachement à un programme, comme suit :  
   
--   `ATTACH_REASON_LAUNCH` indicates that the DE is attaching to the program because the user launched the process that contains it.  
+-   `ATTACH_REASON_LAUNCH`Indique que le D’attachement au programme, car l’utilisateur a lancé le processus qui le contient.  
   
--   `ATTACH_REASON_USER` indicates that the user has explicitly requested the DE to attach to a program (or the process that contains a program).  
+-   `ATTACH_REASON_USER`Indique que l’utilisateur a demandé explicitement le DE joindre à un programme (ou le processus qui contient un programme).  
   
--   `ATTACH_REASON_AUTO` indicates the DE is attaching to a particular program because it is already debugging other programs in a particular process. This is also called auto-attach.  
+-   `ATTACH_REASON_AUTO`Indique le D’attachement à un programme particulier, car il est déjà déboguer des programmes dans un processus particulier. Également appelé attachement automatique.  
   
- When this method is called, the DE needs to send these events in sequence:  
+ Lorsque cette méthode est appelée, le DE doit envoyer ces événements dans l’ordre :  
   
-1.  [IDebugEngineCreateEvent2](../../../extensibility/debugger/reference/idebugenginecreateevent2.md) (if it has not already been sent for a particular instance of the debug engine)  
+1.  [IDebugEngineCreateEvent2](../../../extensibility/debugger/reference/idebugenginecreateevent2.md) (si elle n'a pas encore été envoyée pour une instance particulière du moteur de débogage)  
   
 2.  [IDebugProgramCreateEvent2](../../../extensibility/debugger/reference/idebugprogramcreateevent2.md)  
   
 3.  [IDebugLoadCompleteEvent2](../../../extensibility/debugger/reference/idebugloadcompleteevent2.md)  
   
- In addition, if the reason for attaching is `ATTACH_REASON_LAUNCH`, the DE needs to send the [IDebugEntryPointEvent2](../../../extensibility/debugger/reference/idebugentrypointevent2.md) event.  
+ En outre, si le motif de l’attachement est `ATTACH_REASON_LAUNCH`, le DE doit envoyer le [IDebugEntryPointEvent2](../../../extensibility/debugger/reference/idebugentrypointevent2.md) événement.  
   
- Once the DE gets the [IDebugProgramNode2](../../../extensibility/debugger/reference/idebugprogramnode2.md) object corresponding to the program being debugged, it can be queried for any private interface.  
+ Une fois l’obtient DE la [IDebugProgramNode2](../../../extensibility/debugger/reference/idebugprogramnode2.md) de l’objet correspondant au programme en cours de débogage, il peut être interrogé pour une interface privée.  
   
- Before calling the methods of a program node in the array given by `pProgram` or `rgpProgramNodes`, impersonation, if required, should be enabled on the `IDebugProgram2` interface that represents the program node. Normally, however, this step is not necessary. For more information, see [Security Issues](../../../extensibility/debugger/security-issues.md).  
+ Avant d’appeler les méthodes d’un nœud de programme dans le tableau donné par `pProgram` ou `rgpProgramNodes`, l’emprunt d’identité, si nécessaire, doit être activée sur le `IDebugProgram2` interface qui représente le nœud de programme. Normalement, toutefois, cette étape n’est pas nécessaire. Pour plus d’informations, consultez [problèmes de sécurité](../../../extensibility/debugger/security-issues.md).  
   
-## <a name="see-also"></a>See Also  
+## <a name="see-also"></a>Voir aussi  
  [IDebugEngine2](../../../extensibility/debugger/reference/idebugengine2.md)   
  [IDebugProgramNode2](../../../extensibility/debugger/reference/idebugprogramnode2.md)   
  [IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md)   

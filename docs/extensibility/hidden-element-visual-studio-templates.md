@@ -1,60 +1,64 @@
 ---
-title: "Hidden, &#233;l&#233;ment (mod&#232;les Visual&#160;Studio) | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-general"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "http://schemas.microsoft.com/developer/vstemplate/2005#Hidden"
-helpviewer_keywords: 
-  - "Hidden (élément de modèles de projet Visual Studio)"
+title: "Masqué, élément (modèles Visual Studio) | Documents Microsoft"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-general
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords: http://schemas.microsoft.com/developer/vstemplate/2005#Hidden
+helpviewer_keywords: Hidden element [Visual Studio project template]
 ms.assetid: f37406b0-52e7-4f2c-aacf-bc8d7a4117b3
-caps.latest.revision: 9
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 9
+caps.latest.revision: "9"
+author: gregvanl
+ms.author: gregvanl
+manager: ghogen
+ms.openlocfilehash: b40343b3269a83854259cae80418a2c5154a78fd
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: fr-FR
+ms.lasthandoff: 10/31/2017
 ---
-# Hidden, &#233;l&#233;ment (mod&#232;les Visual&#160;Studio)
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
-
-Spécifie si le modèle apparaît dans la boîte de dialogue **Nouveau projet** ou **Ajouter un nouvel élément**.  
+# <a name="hidden-element-visual-studio-templates"></a>Hidden, élément (modèles Visual Studio)
+Spécifie si le modèle s’affiche, que ce soit le **nouveau projet** ou **ajouter un nouvel élément** boîte de dialogue.  
   
-## Syntaxe  
+ \<VSTemplate >  
+ \<TemplateData >  
+ \<Masqué >  
+  
+## <a name="syntax"></a>Syntaxe  
   
 ```  
 <Hidden> true/false </Hidden>  
 ```  
   
-## Attributs et éléments  
+## <a name="attributes-and-elements"></a>Attributs et éléments  
  Les sections suivantes décrivent des attributs, des éléments enfants et des éléments parents.  
   
-### Attributs  
+### <a name="attributes"></a>Attributs  
  Aucun  
   
-### Éléments enfants  
- Aucun  
+### <a name="child-elements"></a>Éléments enfants  
+ Aucun.  
   
-### Éléments parents  
+### <a name="parent-elements"></a>Éléments parents  
   
 |Élément|Description|  
 |-------------|-----------------|  
-|[TemplateData](../extensibility/templatedata-element-visual-studio-templates.md)|Élément requis.<br /><br /> Classe le modèle dans une catégorie et définit la façon dont il s'affiche dans la boîte de dialogue **Nouveau projet** ou **Ajouter un nouvel élément**.|  
+|[TemplateData](../extensibility/templatedata-element-visual-studio-templates.md)|Élément requis.<br /><br /> Définit la catégorie du modèle et comment il s’affiche dans la boîte de dialogue **Nouveau projet** ou **Ajouter un nouvel élément** .|  
   
-## Valeur texte  
+## <a name="text-value"></a>Valeur texte  
  Une valeur texte est requise.  
   
- Le texte doit avoir la valeur `true` ou `false`, qui indique si le modèle apparaîtra dans la boîte de dialogue **Nouveau projet** ou **Ajouter un nouvel élément**.  
+ Le texte doit être `true` ou `false`, qui indique si le modèle s’affiche dans le **nouveau projet** ou **ajouter un nouvel élément** boîtes de dialogue.  
   
-## Notes  
+## <a name="remarks"></a>Remarques  
  `Hidden` est un élément facultatif.  
   
- S'il est spécifié, aucun autre élément enfant de l'élément `TemplateData` n'est requis.  
+ Si ne spécifié, aucun autre élément enfant de le `TemplateData` élément sont requis.  
   
-## Exemple  
+## <a name="example"></a>Exemple  
  L'exemple suivant illustre les métadonnées d'un modèle [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)].  
   
 ```  
@@ -82,6 +86,6 @@ Spécifie si le modèle apparaît dans la boîte de dialogue **Nouveau projet** 
 </VSTemplate>  
 ```  
   
-## Voir aussi  
- [Référence du schéma de modèle Visual Studio](../extensibility/visual-studio-template-schema-reference.md)   
- [Création de modèles de projets et d'éléments personnalisés](../ide/creating-project-and-item-templates.md)
+## <a name="see-also"></a>Voir aussi  
+ [Référence du schéma de modèle Visual Studio](../extensibility/visual-studio-template-schema-reference.md)   
+ [Création de modèles de projet et d’élément](../ide/creating-project-and-item-templates.md)

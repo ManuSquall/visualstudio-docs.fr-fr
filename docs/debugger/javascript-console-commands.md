@@ -1,36 +1,36 @@
 ---
-title: "JavaScript Console commands | Microsoft Docs"
-ms.custom: ""
-ms.date: "12/05/2016"
-ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-debug"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-dev_langs: 
-  - "FSharp"
-  - "VB"
-  - "CSharp"
-  - "C++"
-helpviewer_keywords: 
-  - "JavaScript, commandes de la console (applications Windows Store)"
-  - "JavaScript, console de débogage (applications Windows Store)"
-  - "débogage de JavaScript, console (applications Windows Store)"
+title: Commandes de JavaScript Console dans Visual Studio | Documents Microsoft
+ms.custom: 
+ms.date: 07/17/2017
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-debug
+ms.tgt_pltfrm: 
+ms.topic: article
+dev_langs:
+- CSharp
+- VB
+- FSharp
+- C++
+helpviewer_keywords:
+- JavaScript Console commands [UWP apps]
+- JavaScript debugging, console [UWP apps]
+- debugging JavaScript, console [UWP apps]
 ms.assetid: 359e2b24-6bb7-48e7-8b55-b570df0cb774
-caps.latest.revision: 47
-caps.handback.revision: 47
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
+caps.latest.revision: "47"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: d9808c664e5e3d06558faf8f9b44a6a2bb6e9b83
+ms.sourcegitcommit: 26419ab0cccdc30d279c32d6a841758cfa903806
+ms.translationtype: MT
+ms.contentlocale: fr-FR
+ms.lasthandoff: 11/11/2017
 ---
-# JavaScript Console commands
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
-
-![S'applique à Windows et Windows Phone](~/debugger/media/windows_and_phone_content.png "windows_and_phone_content")  
+# <a name="javascript-console-commands-in-visual-studio"></a>Commandes de JavaScript Console dans Visual Studio
+![S’applique à Windows et Windows Phone](../debugger/media/windows_and_phone_content.png "windows_and_phone_content")  
   
- Vous pouvez utiliser des commandes pour envoyer des messages et effectuer d’autres tâches dans la fenêtre de console JavaScript de Visual Studio. Pour obtenir des exemples qui illustrent l’utilisation de cette fenêtre, consultez la page [démarrage rapide : débogage de JavaScript](../debugger/quickstart-debug-javascript-using-the-console.md). Les informations contenues dans cette rubrique s’appliquent aux applications Windows Store ou Windows Phone Store et à celles créées à l’aide de Visual Studio Tools pour Apache Cordova. Pour plus d’informations sur les commandes de console prises en charge dans les applications Cordova, consultez [Debug Your App](../Topic/Debug%20Your%20App%20Built%20with%20Visual%20Studio%20Tools%20for%20Apache%20Cordova.md). Pour obtenir des informations sur l’utilisation de la console dans les outils de développement F12 d’Internet Explorer, consultez [cette rubrique](http://msdn.microsoft.com/library/ie/dn255006.aspx).  
+ Vous pouvez utiliser des commandes pour envoyer des messages et effectuer d’autres tâches dans la fenêtre de console JavaScript de Visual Studio. Pour obtenir des exemples qui illustrent l’utilisation de cette fenêtre, consultez [démarrage rapide : débogage de JavaScript](../debugger/quickstart-debug-javascript-using-the-console.md). Les informations contenues dans cette rubrique s’applique aux applications UWP et les applications créées à l’aide de Visual Studio Tools pour Apache Cordova. Pour plus d’informations sur les commandes de console prises en charge dans les applications Cordova, consultez [déboguer votre application](https://taco.visualstudio.com/en-us/docs/debug-using-visual-studio/). Pour obtenir des informations sur l’utilisation de la console dans les outils de développement F12 d’Internet Explorer, consultez [cette rubrique](http://msdn.microsoft.com/library/ie/dn255006.aspx).  
   
  Si la fenêtre de la console JavaScript est fermée, vous pouvez l’ouvrir pendant le débogage dans Visual Studio en choisissant **Déboguer** > **Windows** > **Console JavaScript**.  
   
@@ -59,10 +59,10 @@ manager: "ghogen"
 |`groupEnd()`|Met fin au groupe actif.<br /><br /> Configuration requise :<br /><br /> Visual Studio 2013|Consultez l’exemple correspondant à la commande `group` .|  
 |`info(message)`|Envoie `message` dans la fenêtre de la console. Le message est précédée d’un symbole d’informations.|`console.info("info message");`<br /><br /> Pour des exemples supplémentaires, consultez [Formatting console.log output](#ConsoleLog) plus loin dans cette rubrique.|  
 |`log(message)`|Envoie `message` dans la fenêtre de la console.<br /><br /> Si vous passez un objet, cette commande l’envoie à la fenêtre de la console et l’affiche dans un visualiseur d’objets. Utilisez le visualiseur pour examiner les propriétés dans la fenêtre de la console.|`console.log("logging message");`|  
-|`msIsIndependentlyComposed(element)`|Utilisée dans les applications web. Non prise en charge dans les applications de Store en JavaScript.|Non prise en charge.|  
-|`profile(reportName)`|Utilisée dans les applications web. Non prise en charge dans les applications de Store en JavaScript.|Non prise en charge.|  
-|`profileEnd()`|Utilisée dans les applications web. Non prise en charge dans les applications de Store en JavaScript.|Non prise en charge.|  
-|`select(element)`|Sélectionne le paramètre `element` HTML spécifié dans l’ [Explorateur DOM](../debugger/quickstart-debug-html-and-css.md).|console.select(element);|  
+|`msIsIndependentlyComposed(element)`|Utilisée dans les applications web. Non pris en charge dans les applications UWP à l’aide de JavaScript.|Non prise en charge.|  
+|`profile(reportName)`|Utilisée dans les applications web. Non pris en charge dans les applications UWP à l’aide de JavaScript.|Non prise en charge.|  
+|`profileEnd()`|Utilisée dans les applications web. Non pris en charge dans les applications UWP à l’aide de JavaScript.|Non prise en charge.|  
+|`select(element)`|Sélectionne le code HTML spécifié `element` dans les [l’Explorateur DOM](../debugger/quickstart-debug-html-and-css.md).|console.select(element);|  
 |`time (name)`|Démarre une minuterie identifiée par le paramètre facultatif `name` . Utilisée avec `console.timeEnd`, calcule le temps qui s’écoule entre `time` et `timeEnd`, puis envoie le résultat (mesuré en ms) à la console à l’aide de la chaîne `name` comme préfixe. Utilisée pour permettre l’instrumentation du code d’application pour mesurer les performances.|`console.time("app start");  app.start();  console.timeEnd("app start");`|  
 |`timeEnd(name)`|Arrête une minuterie identifiée par le paramètre facultatif `name` . Consultez la commande de console `time` .|`console.time("app start"); app.start(); console.timeEnd("app start");`|  
 |`trace()`|Envoie une trace de la pile à la fenêtre de console. La trace comprend la pile d’appels complète, ainsi que des informations telles que le nom de fichier, le numéro de ligne et le numéro de colonne.|`console.trace();`|  
@@ -77,7 +77,7 @@ manager: "ghogen"
 |`$(id)`|Retourne un élément par ID. Il s’agit d’une commande de raccourci pour `document.getElementById(id)`, où `id` est une chaîne qui représente l’ID d’élément.|`$("contenthost")`|  
 |`$$(selector)`|Retourne un tableau des éléments qui correspondent au sélecteur spécifié à l’aide de la syntaxe du sélecteur CSS. Il s’agit d’une commande de raccourci pour `document.querySelectorAll()`.|`$$(".itemlist")`|  
 |`cd()`<br /><br /> `cd(window)`|Permet de modifier le contexte pour l’évaluation des expressions de la fenêtre de niveau supérieur par défaut de la page jusqu’à la fenêtre du frame spécifié. L’appel de `cd()` sans paramètres retourne le contexte dans la fenêtre de niveau supérieur.|`cd();`<br /><br /> `cd(myframe);`|  
-|`select(element)`|Sélectionne l’élément spécifié dans l’ [explorateur DOM](../debugger/quickstart-debug-html-and-css.md).|`select(document.getElementById("element"));`<br /><br /> `select($("element"));`<br /><br /> `select($1);`|  
+|`select(element)`|Sélectionne l’élément spécifié dans [l’Explorateur DOM](../debugger/quickstart-debug-html-and-css.md).|`select(document.getElementById("element"));`<br /><br /> `select($("element"));`<br /><br /> `select($1);`|  
 |`dir(object)`|Retourne un visualiseur pour l’objet spécifié. Utilisez le visualiseur pour examiner les propriétés dans la fenêtre de la console.|`dir(obj);`|  
   
 ## <a name="checking-whether-a-console-command-exists"></a>Vérifier s’il existe une commande de console  
@@ -93,7 +93,7 @@ if (console && console.log) {
 ## <a name="examining-objects-in-the-javascript-console-window"></a>Examen des objets de la fenêtre de console JavaScript  
  Lorsque vous utilisez la fenêtre de console JavaScript, vous pouvez interagir avec un objet qui est dans la portée. Pour examiner un objet hors de portée dans la fenêtre de la console, utilisez les commandes `console.log` , `console.dir`ou d’autres commandes à partir de votre code. Sinon, vous pouvez interagir avec l’objet dans la fenêtre de la console pendant qu’il est dans la portée en définissant un point d’arrêt dans votre code (**Point d’arrêt** > **Insert Point d’arrêt**).  
   
-##  <a name="a-nameconsoleloga-formatting-consolelog-output"></a><a name="ConsoleLog"></a> Mise en forme la sortie de console.log  
+##  <a name="ConsoleLog"></a>Mise en forme la sortie de console.log  
  Si vous passez plusieurs arguments à `console.log`, la console les traite sous forme de tableau et concatène la sortie.  
   
 ```javascript  
@@ -139,4 +139,4 @@ console.log("%s is %f years old!", user.first, user.age);
   
 ## <a name="see-also"></a>Voir aussi  
  [Démarrage rapide : Déboguer du code JavaScript](../debugger/quickstart-debug-javascript-using-the-console.md)   
- [Démarrage rapide : Déboguer du code HTML et CSS](../debugger/quickstart-debug-html-and-css.md)
+ [Démarrage rapide : déboguer du code HTML et CSS](../debugger/quickstart-debug-html-and-css.md)

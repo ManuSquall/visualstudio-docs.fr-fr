@@ -1,27 +1,30 @@
 ---
-title: "IScriptNode::GetLanguage | Microsoft Docs"
-ms.custom: ""
-ms.date: "01/18/2017"
-ms.prod: "windows-script-interfaces"
-ms.reviewer: ""
-ms.suite: ""
-ms.tgt_pltfrm: ""
-ms.topic: "reference"
+title: IScriptNode::GetLanguage | Documents Microsoft
+ms.custom: 
+ms.date: 01/18/2017
+ms.prod: windows-script-interfaces
+ms.reviewer: 
+ms.suite: 
+ms.tgt_pltfrm: 
+ms.topic: reference
 apiname: IScriptNode.GetLanguage
 apilocation: scrobj.dll
-helpviewer_keywords: 
-  - "IScriptNode::GetLanguage"
+helpviewer_keywords: IScriptNode::GetLanguage
 ms.assetid: 089715fd-6746-474e-94ed-2e57ee4bc0da
-caps.latest.revision: 13
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 13
+caps.latest.revision: "13"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: 10bab879574f378a1000c398a8f566eea7dd9b4b
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.translationtype: MT
+ms.contentlocale: fr-FR
+ms.lasthandoff: 10/27/2017
 ---
-# IScriptNode::GetLanguage
-Retourne le langage de script utilisé par le nœud courant de script.  
+# <a name="iscriptnodegetlanguage"></a>IScriptNode::GetLanguage
+Retourne le langage de script qui est utilisé par le nœud de script actuel.  
   
-## Syntaxe  
+## <a name="syntax"></a>Syntaxe  
   
 ```  
 HRESULT GetLanguage(  
@@ -29,18 +32,18 @@ HRESULT GetLanguage(
 );  
 ```  
   
-#### Paramètres  
+#### <a name="parameters"></a>Paramètres  
  `pbstr`  
- \[out\]  Retourne « JScript » si le nœud de script JScript utilise, ou « VBScript » si le nœud de script utilise Visual Basic Scripting Edition \(VBScript\).  
+ [out] Retourne « JScript » si le nœud de script utilise JScript ou « VBScript » si le nœud de script utilise Visual Basic Scripting Edition (VBScript).  
   
-## Valeur de retour  
- Élément `HRESULT`.  Les valeurs possibles incluent, mais ne sont pas limitées à, celles dans le tableau suivant.  
+## <a name="return-value"></a>Valeur de retour  
+ Élément `HRESULT`. Les valeurs possibles sont notamment celles figurant dans le tableau suivant.  
   
 |Valeur|Description|  
-|------------|-----------------|  
+|-----------|-----------------|  
 |`S_OK`|La méthode a réussi.|  
   
-## Notes  
+## <a name="remarks"></a>Remarques  
   
-## Voir aussi  
- [IScriptNode, interface](../../winscript/reference/iscriptnode-interface.md)
+## <a name="see-also"></a>Voir aussi  
+ [Interface IScriptNode](../../winscript/reference/iscriptnode-interface.md)

@@ -1,40 +1,38 @@
 ---
-title: "Comment&#160;: &#233;crire une fonction de cr&#233;ation de rapports d&#39;erreurs d&#39;ex&#233;cution | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-debug"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-dev_langs: 
-  - "FSharp"
-  - "VB"
-  - "CSharp"
-  - "C++"
-  - "JScript"
-  - "VB"
-  - "CSharp"
-  - "C++"
-helpviewer_keywords: 
-  - "fonction de création de rapports"
-  - "erreurs d'exécution, fonctions de création de rapports"
+title: "Comment : écrire une erreur d’exécution Reporting fonction | Documents Microsoft"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-debug
+ms.tgt_pltfrm: 
+ms.topic: article
+dev_langs:
+- CSharp
+- VB
+- FSharp
+- C++
+- JScript
+helpviewer_keywords:
+- run-time errors, reporting functions
+- reporting function
 ms.assetid: 989bf312-5038-44f3-805f-39a34d18760e
-caps.latest.revision: 15
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 15
+caps.latest.revision: "15"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: 4d140606382367d5968871f65034db619fb9325e
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: fr-FR
+ms.lasthandoff: 10/31/2017
 ---
-# Comment&#160;: &#233;crire une fonction de cr&#233;ation de rapports d&#39;erreurs d&#39;ex&#233;cution
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
-
-Si vous créez une fonction personnalisée destinée à rapporter les erreurs d'exécution, elle doit avoir la même déclaration que `_CrtDbgReportW`.  Elle doit retourner au débogueur une valeur égale à 1.  
+# <a name="how-to-write-a-run-time-error-reporting-function"></a>Comment : écrire une fonction de création de rapports d'erreurs d'exécution
+Si vous créez une fonction personnalisée destinée à rapporter les erreurs d'exécution, elle doit avoir la même déclaration que `_CrtDbgReportW`. Elle doit retourner au débogueur une valeur égale à 1.  
   
  L'exemple suivant montre comment définir cette fonction personnalisée.  
   
-## Exemple  
+## <a name="example"></a>Exemple  
   
 ```  
 #include <stdio.h>  
@@ -65,8 +63,8 @@ int MyErrorFunc(int errorType, const wchar_t *filename,
 }  
 ```  
   
-## Exemple  
- La fonction personnalisée de l'exemple suivant est un peu plus complexe.  Dans cet exemple, l'instruction switch gère divers types d'erreurs, tels qu'ils sont définis dans le paramètre `reportType` de `_CrtDbgReportW`.  Étant donné que vous remplacez `_CrtDbgReportW`, vous ne pouvez pas utiliser `_CrtSetReportMode`.  Votre fonction doit gérer la sortie.  Le premier argument variable de cette fonction prend un numéro d'erreur d'exécution.  Pour plus d'informations, consultez [\_RTC\_SetErrorType](/visual-cpp/c-runtime-library/reference/rtc-seterrortype).  
+## <a name="example"></a>Exemple  
+ La fonction personnalisée de l'exemple suivant est un peu plus complexe. Dans cet exemple, l'instruction switch gère divers types d'erreurs, tels qu'ils sont définis dans le paramètre `reportType` de `_CrtDbgReportW`. Étant donné que vous remplacez `_CrtDbgReportW`, vous ne pouvez pas utiliser `_CrtSetReportMode`. Votre fonction doit gérer la sortie. Le premier argument variable de cette fonction prend un numéro d’erreur d’exécution. Pour plus d’informations, consultez [_RTC_SetErrorType](/cpp/c-runtime-library/reference/rtc-seterrortype).  
   
 ```  
 #include <windows.h>  
@@ -110,8 +108,8 @@ int Catch_RTC_Failure(int errType, const wchar_t *file, int line,
 #pragma runtime_checks("", restore)  
 ```  
   
-## Exemple  
- Utilisez `_RTC_SetErrorFuncW` pour installer votre fonction personnalisée à la place de `_CrtDbgReportW`.  Pour plus d'informations, consultez [\_RTC\_SetErrorFuncW](/visual-cpp/c-runtime-library/reference/rtc-seterrorfuncw).  La valeur de retour de `_RTC_SetErrorFuncW` est la fonction de rapport précédente, que vous pouvez enregistrer et restaurer si nécessaire.  
+## <a name="example"></a>Exemple  
+ Utilisez `_RTC_SetErrorFuncW` pour installer votre fonction personnalisée à la place de `_CrtDbgReportW`. Pour plus d’informations, consultez [_RTC_SetErrorFuncW](/cpp/c-runtime-library/reference/rtc-seterrorfuncw). La valeur de retour de `_RTC_SetErrorFuncW` est la fonction de rapport précédente, que vous pouvez enregistrer et restaurer si nécessaire.  
   
 ```  
 #include <rtcapi.h>  
@@ -126,5 +124,5 @@ int main()
 }  
 ```  
   
-## Voir aussi  
- [Personnalisation des contrôles natifs à l'exécution](../debugger/native-run-time-checks-customization.md)
+## <a name="see-also"></a>Voir aussi  
+ [Personnalisation des contrôles natifs à l’exécution](../debugger/native-run-time-checks-customization.md)

@@ -4,8 +4,7 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-sdk
+ms.technology: vs-ide-sdk
 ms.tgt_pltfrm: 
 ms.topic: article
 helpviewer_keywords:
@@ -13,32 +12,18 @@ helpviewer_keywords:
 - font and color control [Visual Studio SDK], categories
 - colors, accessing built-in schemes
 ms.assetid: 6905845e-e88e-4805-adcf-21da39108ec7
-caps.latest.revision: 23
+caps.latest.revision: "23"
+author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-translation.priority.mt:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
-ms.translationtype: Machine Translation
-ms.sourcegitcommit: ca7c86466fa23fb21a932f26dc24e37c71cf29b4
-ms.openlocfilehash: f646bb0a1606bd5944c945c5db89083fa265afbd
-ms.contentlocale: fr-fr
-ms.lasthandoff: 04/05/2017
-
+ms.openlocfilehash: ae5c64d0272b998d27a9eb5753c04ae764c3af8f
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: fr-FR
+ms.lasthandoff: 10/31/2017
 ---
 # <a name="how-to-access-the-built-in-fonts-and-color-scheme"></a>Comment : accéder aux polices intégrées et jeu de couleurs
-L’environnement de développement intégré (IDE) Visual Studio a un jeu de polices et couleurs qui est associé à la fenêtre de l’éditeur. Vous pouvez accéder à ce schéma via les <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView>interface.</xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView>  
+L’environnement de développement intégré (IDE) Visual Studio a un jeu de polices et couleurs qui est associé à la fenêtre de l’éditeur. Vous pouvez accéder à ce schéma via les <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView> interface.  
   
  Pour utiliser les polices intégrées et un jeu de couleurs, un VSPackage doit :  
   
@@ -57,7 +42,7 @@ L’environnement de développement intégré (IDE) Visual Studio a un jeu de po
      Ce GUID est utilisé pour identifier de manière unique une catégorie**.** Cette catégorie réutilise la spécification de couleurs et de polices par défaut de l’IDE.  
   
     > [!NOTE]
-    >  Lors de la récupération des données de police et couleur avec la <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorEvents>ou d’autres interfaces, VSPackages utilisent ce GUID pour référencer les informations intégrées.</xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorEvents>  
+    >  Lors de la récupération des données de police et couleur avec la <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorEvents> ou d’autres interfaces, VSPackages utilisent ce GUID pour référencer les informations intégrées.  
   
 2.  Nom de la catégorie doit être ajouté à une table de chaînes à l’intérieur du fichier de ressources (.rc) le VSPackage, afin qu’elle peut être localisée en fonction des besoins lorsque affichés dans l’IDE.  
   
@@ -78,7 +63,7 @@ L’environnement de développement intégré (IDE) Visual Studio a un jeu de po
     |Catégorie|REG_SZ|GUID|Un GUID arbitraire qui identifie une catégorie qui contient le schéma de police et couleur de stock.|  
     |Package|REG_SZ|GUID|{F5E7E71D-1401-11D1-883B-0000F87579D2}<br /><br /> Ce GUID est utilisé par tous les packages VS qui utilisent les configurations de police et la couleur par défaut.|  
     |NameID|REG_DWORD|Id|L’ID de ressource de nom de la catégorie localisables dans le VSPackage.|  
-    |ToolWindowPackage|REG_SZ|GUID|Le GUID du VSPackage qui implémente le <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView>interface.</xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView>|  
+    |ToolWindowPackage|REG_SZ|GUID|Le GUID du VSPackage qui implémente le <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView> interface.|  
   
 3.  
   
@@ -86,9 +71,9 @@ L’environnement de développement intégré (IDE) Visual Studio a un jeu de po
   
 1.  Créez une instance de la `T:Microsoft.VisualStudio.TextManager.Interop.IVsTextEditorPropertyCategoryContainer` interface dans le cadre de l’implémentation et l’initialisation de la fenêtre.  
   
-2.  Appelez le <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextEditorPropertyCategoryContainer.GetPropertyCategory%2A>méthode pour obtenir une instance de la `T:Microsoft.VisualStudio.TextManager.Interop.IVsTextEditorPropertyContainer` interface correspondant à actuel <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView>instance.</xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView> </xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextEditorPropertyCategoryContainer.GetPropertyCategory%2A>  
+2.  Appelez le <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextEditorPropertyCategoryContainer.GetPropertyCategory%2A> méthode pour obtenir une instance de la `T:Microsoft.VisualStudio.TextManager.Interop.IVsTextEditorPropertyContainer` interface correspondant à actuel <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView> instance.  
   
-3.  Appelez <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextEditorPropertyContainer.SetProperty%2A>à deux reprises.</xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextEditorPropertyContainer.SetProperty%2A>  
+3.  Appelez <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextEditorPropertyContainer.SetProperty%2A> à deux reprises.  
   
     -   Appeler une fois avec `VSEDITPROPID_ViewGeneral_ColorCategory`en tant qu’argument.  
   

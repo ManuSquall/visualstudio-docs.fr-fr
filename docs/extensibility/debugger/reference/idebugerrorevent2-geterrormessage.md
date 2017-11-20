@@ -1,46 +1,29 @@
 ---
-title: IDebugErrorEvent2::GetErrorMessage | Microsoft Docs
+title: IDebugErrorEvent2::GetErrorMessage | Documents Microsoft
 ms.custom: 
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-sdk
+ms.technology: vs-ide-sdk
 ms.tgt_pltfrm: 
 ms.topic: article
-f1_keywords:
-- IDebugErrorEvent2::GetErrorMessage
-helpviewer_keywords:
-- IDebugErrorEvent2::GetErrorMessage
+f1_keywords: IDebugErrorEvent2::GetErrorMessage
+helpviewer_keywords: IDebugErrorEvent2::GetErrorMessage
 ms.assetid: 9e3b0d74-a2dd-4eaa-bd95-21b2f9c79409
-caps.latest.revision: 9
+caps.latest.revision: "9"
+author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-translation.priority.mt:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
+ms.openlocfilehash: 0b8a4e4c2ca938d8c600d3fd9ef0e615aa847fd9
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
 ms.translationtype: MT
-ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
-ms.openlocfilehash: a4c15d3a000a1b960bfcf3f7f3a0d46708718bda
-ms.contentlocale: fr-fr
-ms.lasthandoff: 08/28/2017
-
+ms.contentlocale: fr-FR
+ms.lasthandoff: 10/31/2017
 ---
 # <a name="idebugerrorevent2geterrormessage"></a>IDebugErrorEvent2::GetErrorMessage
-Returns information that allows construction of a human-readable error message.  
+Retourne des informations qui permet la construction d’un message d’erreur explicite.  
   
-## <a name="syntax"></a>Syntax  
+## <a name="syntax"></a>Syntaxe  
   
 ```cpp  
 HRESULT GetErrorMessage(  
@@ -64,31 +47,31 @@ int GetErrorMessage(
 );  
 ```  
   
-#### <a name="parameters"></a>Parameters  
+#### <a name="parameters"></a>Paramètres  
  `pMessageType`  
- [out] Returns a value from the [MESSAGETYPE](../../../extensibility/debugger/reference/messagetype.md) enumeration, describing the type of message.  
+ [out] Retourne une valeur de la [MESSAGETYPE](../../../extensibility/debugger/reference/messagetype.md) énumération décrivant le type de message.  
   
  `pbstrErrorFormat`  
- [out] The format of the final message to the user (see "Remarks" for details).  
+ [out] Le format du message à l’utilisateur final (voir la section « Notes »).  
   
  `hrErrorReason`  
- [out] The error code the message is about.  
+ [out] Le code d’erreur le message concerne.  
   
  `pdwType`  
- [out] Severity of the error (use the MB_XXX constants for `MessageBox`; for example, `MB_EXCLAMATION` or `MB_WARNING`).  
+ [out] Gravité de l’erreur (utiliser l’une des constantes pour MB_XXX `MessageBox`; par exemple, `MB_EXCLAMATION` ou `MB_WARNING`).  
   
  `pbstrHelpFileName`  
- [out] Path to a help file (set to a null value if there is no help file).  
+ [out] Chemin d’accès à un fichier d’aide (défini à une valeur null s’il n’existe aucun fichier d’aide).  
   
  `pdwHelpId`  
- [out] ID of the help topic to display (set to 0 if there is no help topic).  
+ [out] ID de la rubrique d’aide à afficher (défini à 0 s’il n’existe aucune rubrique d’aide).  
   
-## <a name="return-value"></a>Return Value  
- If successful, returns `S_OK`; otherwise, returns an error code.  
+## <a name="return-value"></a>Valeur de retour  
+ En cas de réussite, retourne `S_OK`; sinon, retourne un code d’erreur.  
   
-## <a name="remarks"></a>Remarks  
- The error message should be formatted along the lines of `"What I was doing.  %1"`. The `"%1"` would then be replaced by the caller with the error message derived from the error code (which is returned in `hrErrorReason`). The `pMessageType` parameter tells the caller how the final error message should be displayed.  
+## <a name="remarks"></a>Remarques  
+ Le message d’erreur doit être mis en forme le long des lignes de `"What I was doing.  %1"`. Le `"%1"` aurait ensuite été remplacé par l’appelant par le message d’erreur dérivé le code d’erreur (laquelle est retournée dans `hrErrorReason`). Le `pMessageType` paramètre indique comment le dernier message d’erreur doit être affiché à l’appelant.  
   
-## <a name="see-also"></a>See Also  
+## <a name="see-also"></a>Voir aussi  
  [IDebugErrorEvent2](../../../extensibility/debugger/reference/idebugerrorevent2.md)   
  [MESSAGETYPE](../../../extensibility/debugger/reference/messagetype.md)

@@ -1,57 +1,56 @@
 ---
-title: "IDiaSymbol::get_isStripped | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-debug"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "IDiaSymbol::get_isStripped (méthode)"
+title: IDiaSymbol::get_isStripped | Documents Microsoft
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-debug
+ms.tgt_pltfrm: 
+ms.topic: article
+dev_langs: C++
+helpviewer_keywords: IDiaSymbol::get_isStripped method
 ms.assetid: cc2c4a0b-ab9f-4b79-a8ff-a3badb0405d6
-caps.latest.revision: 7
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 7
+caps.latest.revision: "7"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: 5d83dffa35317af29f7779f226fca875036d3f7e
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: fr-FR
+ms.lasthandoff: 10/31/2017
 ---
-# IDiaSymbol::get_isStripped
-[!INCLUDE[vs2017banner](../../code-quality/includes/vs2017banner.md)]
-
-Extrait la balise qui indique si les symboles privés ont été supprimés du fichier de symboles.  
+# <a name="idiasymbolgetisstripped"></a>IDiaSymbol::get_isStripped
+Indicateur récupère qui indique si les symboles privés ont été supprimées à partir du fichier de symboles.  
   
-## Syntaxe  
+## <a name="syntax"></a>Syntaxe  
   
-```cpp#  
+```C++  
 HRESULT get_isStripped(  
-   BOOL *pFlag  
+   BOOL *pFlag  
 );  
 ```  
   
-#### Paramètres  
+#### <a name="parameters"></a>Paramètres  
  `pFlag`  
- \[out\]  Retourne `TRUE` si les symboles privés sont supprimés du fichier de symboles ; sinon, retourne `FALSE`.  
+ [out] Retourne `TRUE` symboles privés ont été supprimées du fichier de symboles ; sinon, retourne `FALSE`.  
   
-## Valeur de retour  
- En cas de réussite, retourne `S_OK`; sinon, retourne `S_FALSE` ou un code d'erreur.  
+## <a name="return-value"></a>Valeur de retour  
+ En cas de réussite, retourne `S_OK`; sinon, retourne `S_FALSE` ou un code d’erreur.  
   
 > [!NOTE]
->  Une valeur de retour d' `S_FALSE` signifie que la propriété n'est pas disponible pour le symbole.  
+>  La valeur de retour `S_FALSE` signifie que la propriété n’est pas disponible pour le symbole.  
   
-## Notes  
- Cette propriété est disponible dans le type de symbole d' `SymTagExe` \(voir l' [Exe](../../debugger/debug-interface-access/exe.md)\).  
+## <a name="remarks"></a>Remarques  
+ Cette propriété est disponible à partir de la `SymTagExe` type de symbole (consultez [Exe](../../debugger/debug-interface-access/exe.md)).  
   
-## Configuration requise  
+## <a name="requirements"></a>Spécifications  
   
 |Spécification|Description|  
-|-------------------|-----------------|  
-|en\-tête :|dia2.h|  
-|version :|diamètre Kit de développement logiciel v8.0|  
+|-----------------|-----------------|  
+|En-tête :|dia2.h|  
+|Version :|DIA SDK 8.0|  
   
-## Voir aussi  
+## <a name="see-also"></a>Voir aussi  
  [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)   
  [Exe](../../debugger/debug-interface-access/exe.md)

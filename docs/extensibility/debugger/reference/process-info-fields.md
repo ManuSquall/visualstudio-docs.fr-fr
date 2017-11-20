@@ -1,46 +1,29 @@
 ---
-title: PROCESS_INFO_FIELDS | Microsoft Docs
+title: PROCESS_INFO_FIELDS | Documents Microsoft
 ms.custom: 
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-sdk
+ms.technology: vs-ide-sdk
 ms.tgt_pltfrm: 
 ms.topic: article
-f1_keywords:
-- PROCESS_INFO_FIELDS
-helpviewer_keywords:
-- PROCESS_INFO_FIELDS enumeration
+f1_keywords: PROCESS_INFO_FIELDS
+helpviewer_keywords: PROCESS_INFO_FIELDS enumeration
 ms.assetid: 0d9cc345-3d3a-44d8-ae15-a67acb97a828
-caps.latest.revision: 10
+caps.latest.revision: "10"
+author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-translation.priority.mt:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
+ms.openlocfilehash: e5732b287512cb14ab885619799d0c885f69b791
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
 ms.translationtype: MT
-ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
-ms.openlocfilehash: 5d1033526178748573aadfb1ac538272c9605ac9
-ms.contentlocale: fr-fr
-ms.lasthandoff: 08/28/2017
-
+ms.contentlocale: fr-FR
+ms.lasthandoff: 10/31/2017
 ---
 # <a name="processinfofields"></a>PROCESS_INFO_FIELDS
-Specified what kind of information to retrieve for a process.  
+Spécifié le type d’informations à récupérer pour un processus.  
   
-## <a name="syntax"></a>Syntax  
+## <a name="syntax"></a>Syntaxe  
   
 ```cpp  
 enum enum_PROCESS_INFO_FIELDS {   
@@ -71,48 +54,48 @@ public enum enum_PROCESS_INFO_FIELDS {
 };  
 ```  
   
-## <a name="members"></a>Members  
+## <a name="members"></a>Membres  
  PIF_FILE_NAME  
- Initialize/use the `bstrFileName` field of the [PROCESS_INFO](../../../extensibility/debugger/reference/process-info.md) structure.  
+ Initialisation/utiliser le `bstrFileName` champ le [PROCESS_INFO](../../../extensibility/debugger/reference/process-info.md) structure.  
   
  PIF_BASE_NAME  
- Initialize/use the `bstrBaseName` field of the `PROCESS_INFO` structure.  
+ Initialisation/utiliser le `bstrBaseName` champ le `PROCESS_INFO` structure.  
   
  PIF_TITLE  
- Initialize/use the `bstrTitle` field of the `PROCESS_INFO` structure.  
+ Initialisation/utiliser le `bstrTitle` champ le `PROCESS_INFO` structure.  
   
  PIF_PROCESS_ID  
- Initialize/use the `ProcessId` field of the `PROCESS_INFO` structure.  
+ Initialisation/utiliser le `ProcessId` champ le `PROCESS_INFO` structure.  
   
  PIF_SESSION_ID  
- Initialize/use the `dwSessionId` field of the `PROCESS_INFO` structure.  
+ Initialisation/utiliser le `dwSessionId` champ le `PROCESS_INFO` structure.  
   
  PIF_ATTACHED_SESSION_NAME  
- Initialize/use the `bstrAttachedSessionName` field of the `PROCESS_INFO` structure.  
+ Initialisation/utiliser le `bstrAttachedSessionName` champ le `PROCESS_INFO` structure.  
   
  PIF_CREATION_TIME  
- Initialize/use the `CreationTime` field of the `PROCESS_INFO` structure.  
+ Initialisation/utiliser le `CreationTime` champ le `PROCESS_INFO` structure.  
   
  PIF_FLAGS  
- Initialize/use the `Flags` field of the `PROCESS_INFO` structure.  
+ Initialisation/utiliser le `Flags` champ le `PROCESS_INFO` structure.  
   
  PIF_ALL  
- Fills out all fields.  
+ Remplit tous les champs.  
   
-## <a name="remarks"></a>Remarks  
- Passed to the [GetInfo](../../../extensibility/debugger/reference/idebugprocess2-getinfo.md) method to indicate which fields of the [PROCESS_INFO](../../../extensibility/debugger/reference/process-info.md) structure are to be initialized.  
+## <a name="remarks"></a>Remarques  
+ Passé à la [GetInfo](../../../extensibility/debugger/reference/idebugprocess2-getinfo.md) méthode pour indiquer les champs de la [PROCESS_INFO](../../../extensibility/debugger/reference/process-info.md) structure doivent être initialisées.  
   
- Also used in `Fields` field of the `PROCESS_INFO` structure to indicate which fields are used and valid.  
+ Également utilisé dans `Fields` champ le `PROCESS_INFO` structure pour indiquer les champs qui sont utilisés et valide.  
   
- These flags may be combined with a bitwise `OR`.  
+ Ces indicateurs peuvent être combinées avec une opération de bits `OR`.  
   
-## <a name="requirements"></a>Requirements  
- Header: msdbg.h  
+## <a name="requirements"></a>Spécifications  
+ En-tête : msdbg.h  
   
- Namespace: Microsoft.VisualStudio.Debugger.Interop  
+ Namespace : Microsoft.VisualStudio.Debugger.Interop  
   
- Assembly: Microsoft.VisualStudio.Debugger.Interop.dll  
+ Assembly : Microsoft.VisualStudio.Debugger.Interop.dll  
   
-## <a name="see-also"></a>See Also  
- [Enumerations](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)   
+## <a name="see-also"></a>Voir aussi  
+ [Énumérations](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)   
  [PROCESS_INFO](../../../extensibility/debugger/reference/process-info.md)

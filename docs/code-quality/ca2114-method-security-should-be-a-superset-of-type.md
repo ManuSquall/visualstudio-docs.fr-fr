@@ -1,11 +1,10 @@
 ---
-title: 'CA2114: Method security should be a superset of type | Microsoft Docs'
+title: "CA2114 : Sécurité de la méthode doit être un sur-ensemble du type | Documents Microsoft"
 ms.custom: 
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-devops-test
+ms.technology: vs-ide-code-analysis
 ms.tgt_pltfrm: 
 ms.topic: article
 f1_keywords:
@@ -15,70 +14,55 @@ helpviewer_keywords:
 - CA2114
 - MethodSecurityShouldBeASupersetOfType
 ms.assetid: 663f7aa4-8be5-4bd5-be92-4e9444f07077
-caps.latest.revision: 17
-author: stevehoag
-ms.author: shoag
-manager: wpickett
-translation.priority.ht:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
-ms.translationtype: HT
-ms.sourcegitcommit: eb5c9550fd29b0e98bf63a7240737da4f13f3249
-ms.openlocfilehash: 0c39c591401550442414c301d076f08d77796b6f
-ms.contentlocale: fr-fr
-ms.lasthandoff: 08/30/2017
-
+caps.latest.revision: "17"
+author: gewarren
+ms.author: gewarren
+manager: ghogen
+ms.openlocfilehash: d9784ae650a411ef4fe5086ae8bf756147fd2365
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: fr-FR
+ms.lasthandoff: 10/31/2017
 ---
-# <a name="ca2114-method-security-should-be-a-superset-of-type"></a>CA2114: Method security should be a superset of type
+# <a name="ca2114-method-security-should-be-a-superset-of-type"></a>CA2114 :La sécurité de la méthode doit être un sur-ensemble du type
 |||  
 |-|-|  
 |TypeName|MethodSecurityShouldBeASupersetOfType|  
 |CheckId|CA2114|  
-|Category|Microsoft.Security|  
-|Breaking Change|Breaking|  
+|Catégorie|Microsoft.Security|  
+|Modification avec rupture|Rupture|  
   
 ## <a name="cause"></a>Cause  
- A type has declarative security and one of its methods has declarative security for the same security action, and the security action is not [Link Demands](/dotnet/framework/misc/link-demands) or [Inheritance Demands](http://msdn.microsoft.com/en-us/28b9adbb-8f08-4f10-b856-dbf59eb932d9), and the permissions checked by the type are not a subset of the permissions checked by the method.  
+ Un type a la sécurité déclarative, une de ses méthodes présente une sécurité déclarative pour la même action de sécurité et l’action de sécurité n’est pas [les demandes de liaison](/dotnet/framework/misc/link-demands) ou [des demandes d’héritage](http://msdn.microsoft.com/en-us/28b9adbb-8f08-4f10-b856-dbf59eb932d9)et les autorisations vérifiées par le type ne sont pas un sous-ensemble des autorisations vérifiées par la méthode.  
   
-## <a name="rule-description"></a>Rule Description  
- A method should not have both a method-level and type-level declarative security for the same action. The two checks are not combined; only the method-level demand is applied. For example, if a type demands permission `X`, and one of its methods demands permission `Y`, code does not have to have permission `X` to execute the method.  
+## <a name="rule-description"></a>Description de la règle  
+ Une méthode ne doit pas avoir à la fois une sécurité déclarative au niveau méthode et au niveau type pour la même action. Les deux contrôles ne sont pas combinés ; uniquement la demande de niveau de la méthode est appliquée. Par exemple, si un type demande une autorisation `X`, et une de ses méthodes demande une autorisation `Y`, code ne doit pas avoir l’autorisation `X` pour exécuter la méthode.  
   
-## <a name="how-to-fix-violations"></a>How to Fix Violations  
- Review your code to make sure that both actions are required. If both actions are required, make sure that the method-level action includes the security specified at the type level. For example, if your type demands permission `X`, and its method must also demand permission `Y`, the method should explicitly demand `X` and `Y`.  
+## <a name="how-to-fix-violations"></a>Comment corriger les violations  
+ Examinez votre code pour vous assurer que les deux actions sont requises. Si les deux actions sont requises, assurez-vous que l’action de niveau de la méthode inclut la sécurité spécifiée au niveau du type. Par exemple, si votre type demande une autorisation `X`, et sa méthode doit également demander une autorisation `Y`, la méthode doit demander explicitement `X` et `Y`.  
   
-## <a name="when-to-suppress-warnings"></a>When to Suppress Warnings  
- It is safe to suppress a warning from this rule if the method does not require the security specified by the type. However, this is not an ordinary scenario and might indicate a need for a careful design review.  
+## <a name="when-to-suppress-warnings"></a>Quand supprimer les avertissements  
+ Il est possible de supprimer un avertissement de cette règle si la méthode ne requiert pas la sécurité spécifiée par le type. Toutefois, ce scénario n’est pas ordinaire et peut indiquer la nécessité d’un examen approfondi du design.  
   
-## <a name="example"></a>Example  
- The following example uses environment permissions to demonstrate the dangers of violating this rule. In this example, the application code creates an instance of the secured type before denying the permission required by the type. In a real-world threat scenario, the application would require another way to obtain an instance of the object.  
+## <a name="example"></a>Exemple  
+ L’exemple suivant utilise des autorisations d’environnement pour illustrer les risques de violation de cette règle. Dans cet exemple, le code d’application crée une instance du type sécurisé avant de refuser l’autorisation requise par le type. Dans un scénario de menace réel, l’application nécessite une autre méthode pour obtenir une instance de l’objet.  
   
- In the following example, the library demands write permission for a type and read permission for a method.  
+ Dans l’exemple suivant, la bibliothèque demande autorisation d’écriture pour un type et une autorisation pour une méthode de lecture.  
   
  [!code-csharp[FxCop.Security.MethodLevelSecurity#1](../code-quality/codesnippet/CSharp/ca2114-method-security-should-be-a-superset-of-type_1.cs)]  
   
-## <a name="example"></a>Example  
- The following application code demonstrates the vulnerability of the library by calling the method even though it does not meet the type-level security requirement.  
+## <a name="example"></a>Exemple  
+ Le code d’application suivant montre la vulnérabilité de la bibliothèque en appelant la méthode, même si elle ne répond pas aux exigences de sécurité de niveau type.  
   
  [!code-csharp[FxCop.Security.TestMethodLevelSecurity#1](../code-quality/codesnippet/CSharp/ca2114-method-security-should-be-a-superset-of-type_2.cs)]  
   
- This example produces the following output.  
+ Cet exemple produit la sortie suivante.  
   
- **[All permissions] Personal information: 6/16/1964 12:00:00 AM**  
-**[No write permission (demanded by type)] Personal information: 6/16/1964 12:00:00 AM**  
-**[No read permission (demanded by method)] Could not access personal information: Request failed.**   
-## <a name="see-also"></a>See Also  
- [Secure Coding Guidelines](/dotnet/standard/security/secure-coding-guidelines)   
- [Inheritance Demands](http://msdn.microsoft.com/en-us/28b9adbb-8f08-4f10-b856-dbf59eb932d9)   
- [Link Demands](/dotnet/framework/misc/link-demands)   
- [Data and Modeling](/dotnet/framework/data/index)
+ **[Toutes les autorisations] Les informations personnelles : 6/16/1964 12:00:00 AM**  
+**[Aucune autorisation d’écriture (exigée par type)] Les informations personnelles : 6/16/1964 12:00:00 AM**  
+**[Aucune autorisation de lecture (exigée par méthode)] Peut pas accéder aux données personnelles : échouée de la demande.**   
+## <a name="see-also"></a>Voir aussi  
+ [Instructions de codage sécurisé](/dotnet/standard/security/secure-coding-guidelines)   
+ [Demandes d’héritage](http://msdn.microsoft.com/en-us/28b9adbb-8f08-4f10-b856-dbf59eb932d9)   
+ [Demandes de liaison](/dotnet/framework/misc/link-demands)   
+ [Données et modélisation](/dotnet/framework/data/index)

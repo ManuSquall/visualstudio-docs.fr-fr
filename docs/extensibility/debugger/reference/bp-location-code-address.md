@@ -1,46 +1,29 @@
 ---
-title: BP_LOCATION_CODE_ADDRESS | Microsoft Docs
+title: BP_LOCATION_CODE_ADDRESS | Documents Microsoft
 ms.custom: 
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-sdk
+ms.technology: vs-ide-sdk
 ms.tgt_pltfrm: 
 ms.topic: article
-f1_keywords:
-- BP_LOCATION_CODE_ADDRESS
-helpviewer_keywords:
-- BP_LOCATION_CODE_ADDRESS structure
+f1_keywords: BP_LOCATION_CODE_ADDRESS
+helpviewer_keywords: BP_LOCATION_CODE_ADDRESS structure
 ms.assetid: 83c9da8b-19d9-4be5-b225-854543654901
-caps.latest.revision: 9
+caps.latest.revision: "9"
+author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-translation.priority.mt:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
+ms.openlocfilehash: e0dc53f11dd4ba06488dbd53b9a1f4014268412d
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
 ms.translationtype: MT
-ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
-ms.openlocfilehash: 2e70f232c0e2cc212b7cb8a473b0a7efc222740b
-ms.contentlocale: fr-fr
-ms.lasthandoff: 08/28/2017
-
+ms.contentlocale: fr-FR
+ms.lasthandoff: 10/31/2017
 ---
 # <a name="bplocationcodeaddress"></a>BP_LOCATION_CODE_ADDRESS
-Describes the location of a breakpoint at an address in code.  
+Décrit l’emplacement d’un point d’arrêt à une adresse dans le code.  
   
-## <a name="syntax"></a>Syntax  
+## <a name="syntax"></a>Syntaxe  
   
 ```cpp  
 typedef struct _BP_LOCATION_CODE_ADDRESS {   
@@ -51,30 +34,30 @@ typedef struct _BP_LOCATION_CODE_ADDRESS {
 } BP_LOCATION_CODE_ADDRESS;  
 ```  
   
-## <a name="members"></a>Members  
+## <a name="members"></a>Membres  
  `bstrContext`  
- The context of the breakpoint, typically a method or function name as seen on a call stack.  
+ Le contexte du point d’arrêt, en général, un nom de méthode ou fonction vu sur une pile des appels.  
   
  `bstrModuleUrl`  
- The URL of the module that contains the breakpoint.  
+ L’URL du module qui contient le point d’arrêt.  
   
  `bstrFunction`  
- The name of the function that contains the breakpoint.  
+ Le nom de la fonction qui contient le point d’arrêt.  
   
  `bstrAddress`  
- The address of the breakpoint, which is parsed by an expression evaluator to bind it to an [IDebugAddress](../../../extensibility/debugger/reference/idebugaddress.md) object.  
+ L’adresse du point d’arrêt, qui est analysé par l’évaluateur d’expression pour le lier à un [IDebugAddress](../../../extensibility/debugger/reference/idebugaddress.md) objet.  
   
-## <a name="remarks"></a>Remarks  
- This structure is a member of the [BP_LOCATION](../../../extensibility/debugger/reference/bp-location.md) structure as part of a union.  
+## <a name="remarks"></a>Remarques  
+ Cette structure est un membre de la [BP_LOCATION](../../../extensibility/debugger/reference/bp-location.md) structure dans le cadre d’une union.  
   
-## <a name="requirements"></a>Requirements  
- Header: msdbg.h  
+## <a name="requirements"></a>Spécifications  
+ En-tête : msdbg.h  
   
- Namespace: Microsoft.VisualStudio.Debugger.Interop  
+ Namespace : Microsoft.VisualStudio.Debugger.Interop  
   
- Assembly: Microsoft.VisualStudio.Debugger.Interop.dll  
+ Assembly : Microsoft.VisualStudio.Debugger.Interop.dll  
   
-## <a name="see-also"></a>See Also  
- [Structures and Unions](../../../extensibility/debugger/reference/structures-and-unions.md)   
+## <a name="see-also"></a>Voir aussi  
+ [Structures et Unions](../../../extensibility/debugger/reference/structures-and-unions.md)   
  [BP_LOCATION](../../../extensibility/debugger/reference/bp-location.md)   
  [IDebugAddress](../../../extensibility/debugger/reference/idebugaddress.md)

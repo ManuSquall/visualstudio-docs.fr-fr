@@ -1,46 +1,29 @@
 ---
-title: OBJECT_TYPE | Microsoft Docs
+title: OBJECT_TYPE | Documents Microsoft
 ms.custom: 
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-sdk
+ms.technology: vs-ide-sdk
 ms.tgt_pltfrm: 
 ms.topic: article
-f1_keywords:
-- OBJECT_TYPE
-helpviewer_keywords:
-- OBJECT_TYPE enumeration
+f1_keywords: OBJECT_TYPE
+helpviewer_keywords: OBJECT_TYPE enumeration
 ms.assetid: c4d246f9-8a98-44ec-b2bb-ff5c684f668e
-caps.latest.revision: 9
+caps.latest.revision: "9"
+author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-translation.priority.mt:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
+ms.openlocfilehash: 223833857568da64e24aa2e955ecabce0b36af57
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
 ms.translationtype: MT
-ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
-ms.openlocfilehash: 5cb562b54d088e5f5c5fdb300a8f897e35f82f17
-ms.contentlocale: fr-fr
-ms.lasthandoff: 08/28/2017
-
+ms.contentlocale: fr-FR
+ms.lasthandoff: 10/31/2017
 ---
 # <a name="objecttype"></a>OBJECT_TYPE
-Specifies the type of an object from the expression evaluator.  
+Spécifie le type d’un objet à partir de l’évaluateur d’expression.  
   
-## <a name="syntax"></a>Syntax  
+## <a name="syntax"></a>Syntaxe  
   
 ```cpp  
 enum enum_OBJECT_TYPE {   
@@ -83,63 +66,63 @@ public enum enum_OBJECT_TYPE {
 };  
 ```  
   
-## <a name="members"></a>Members  
+## <a name="members"></a>Membres  
  OBJECT_TYPE_BOOLEAN  
- Indicates that the object is a Boolean.  
+ Indique que l’objet est une valeur booléenne.  
   
  OBJECT_TYPE_CHAR  
- Indicates that the object is a character.  
+ Indique que l’objet est un caractère.  
   
  OBJECT_TYPE_I1  
- Indicates that the object is a one-byte signed integer.  
+ Indique que l’objet est un entier signé de 1 octet.  
   
  OBJECT_TYPE_U1  
- Indicates that the object is a one-byte unsigned integer.  
+ Indique que l’objet est un entier non signé de 1 octet.  
   
  OBJECT_TYPE_I2  
- Indicates that the object is a two-byte signed integer.  
+ Indique que l’objet est un entier signé sur 2 octets.  
   
  OBJECT_TYPE_U2  
- Indicates that the object is a two-byte unsigned integer.  
+ Indique que l’objet est un entier non signé sur 2 octets.  
   
  OBJECT_TYPE_I4  
- Indicates that the object is a four-byte signed integer.  
+ Indique que l’objet est un entier signé de 4 octets.  
   
  OBJECT_TYPE_U4  
- Indicates that the object is a four-byte unsigned integer.  
+ Indique que l’objet est un entier non signé de 4 octets.  
   
  OBJECT_TYPE_I8  
- Indicates that the object is an eight-byte signed integer.  
+ Indique que l’objet est un entier signé de 8 octets.  
   
  OBJECT_TYPE_U8  
- Indicates that the object is an eight-byte unsigned integer.  
+ Indique que l’objet est un entier non signé de 8 octets.  
   
  OBJECT_TYPE_R4  
- Indicates that the object is a four-byte floating-point number.  
+ Indique que l’objet est un nombre à virgule flottante de 4 octets.  
   
  OBJECT_TYPE_R8  
- Indicates that the object is an eight-byte floating-point number.  
+ Indique que l’objet est un nombre à virgule flottante de 8 octets.  
   
  OBJECT_TYPE_OBJECT  
- Indicates that the object is an object.  
+ Indique que l’objet est un objet.  
   
  OBJECT_TYPE_NULL  
- Indicates that the object is NULL.  
+ Indique que l’objet est NULL.  
   
  OBJECT_TYPE_CLASS  
- Indicates that the object is a class.  
+ Indique que l’objet est une classe.  
   
-## <a name="remarks"></a>Remarks  
- Passed as an argument to the [CreatePrimitiveObject](../../../extensibility/debugger/reference/idebugfunctionobject-createprimitiveobject.md) and [CreateArrayObject](../../../extensibility/debugger/reference/idebugfunctionobject-createarrayobject.md) methods.  
+## <a name="remarks"></a>Remarques  
+ Est passé comme argument à la [CreatePrimitiveObject](../../../extensibility/debugger/reference/idebugfunctionobject-createprimitiveobject.md) et [CreateArrayObject](../../../extensibility/debugger/reference/idebugfunctionobject-createarrayobject.md) méthodes.  
   
-## <a name="requirements"></a>Requirements  
- Header: ee.h  
+## <a name="requirements"></a>Spécifications  
+ En-tête : ee.h  
   
- Namespace: Microsoft.VisualStudio.Debugger.Interop  
+ Namespace : Microsoft.VisualStudio.Debugger.Interop  
   
- Assembly: Microsoft.VisualStudio.Debugger.Interop.dll  
+ Assembly : Microsoft.VisualStudio.Debugger.Interop.dll  
   
-## <a name="see-also"></a>See Also  
- [Enumerations](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)   
+## <a name="see-also"></a>Voir aussi  
+ [Énumérations](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)   
  [CreatePrimitiveObject](../../../extensibility/debugger/reference/idebugfunctionobject-createprimitiveobject.md)   
  [CreateArrayObject](../../../extensibility/debugger/reference/idebugfunctionobject-createarrayobject.md)

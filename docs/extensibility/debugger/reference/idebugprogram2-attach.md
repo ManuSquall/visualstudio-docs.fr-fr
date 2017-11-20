@@ -1,46 +1,29 @@
 ---
-title: IDebugProgram2::Attach | Microsoft Docs
+title: IDebugProgram2::Attach | Documents Microsoft
 ms.custom: 
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-sdk
+ms.technology: vs-ide-sdk
 ms.tgt_pltfrm: 
 ms.topic: article
-f1_keywords:
-- IDebugProgram2::Attach
-helpviewer_keywords:
-- IDebugProgram2::Attach
+f1_keywords: IDebugProgram2::Attach
+helpviewer_keywords: IDebugProgram2::Attach
 ms.assetid: de069fbf-a565-4905-b102-f5658c55aacd
-caps.latest.revision: 11
+caps.latest.revision: "11"
+author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-translation.priority.mt:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
+ms.openlocfilehash: 60127ceb0cb177bd8532d2e20ebc1afebeb90937
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
 ms.translationtype: MT
-ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
-ms.openlocfilehash: 2c20b759f000c17dbd6ec1fcd510b99ff70c6d9f
-ms.contentlocale: fr-fr
-ms.lasthandoff: 08/28/2017
-
+ms.contentlocale: fr-FR
+ms.lasthandoff: 10/31/2017
 ---
 # <a name="idebugprogram2attach"></a>IDebugProgram2::Attach
-Attaches to the program.  
+Le programme est attaché.  
   
-## <a name="syntax"></a>Syntax  
+## <a name="syntax"></a>Syntaxe  
   
 ```cpp  
 HRESULT Attach(   
@@ -54,24 +37,24 @@ int Attach(
 );  
 ```  
   
-#### <a name="parameters"></a>Parameters  
+#### <a name="parameters"></a>Paramètres  
  `pCallback`  
- [in] An [IDebugEventCallback2](../../../extensibility/debugger/reference/idebugeventcallback2.md) object to be used for debug event notification.  
+ [in] Un [IDebugEventCallback2](../../../extensibility/debugger/reference/idebugeventcallback2.md) objet à utiliser pour la notification d’événement de débogage.  
   
-## <a name="return-value"></a>Return Value  
- If successful, returns `S_OK`; otherwise, returns an error code. The following table shows some possible error codes.  
+## <a name="return-value"></a>Valeur de retour  
+ En cas de réussite, retourne `S_OK`; sinon, retourne un code d’erreur. Le tableau suivant présente certains codes d’erreur possibles.  
   
-|Value|Description|  
+|Valeur|Description|  
 |-----------|-----------------|  
-|`E_ATTACH_DEBUGGER_ALREADY_ATTACHED`|The specified program is already attached to the debugger.|  
-|`E_ATTACH_DEBUGGEE_PROCESS_SECURITY_VIOLATION`|A security violation occurred during the attach procedure.|  
-|`E_ATTACH_CANNOT_ATTACH_TO_DESKTOP`|A desktop program cannot be attached to the debugger.|  
+|`E_ATTACH_DEBUGGER_ALREADY_ATTACHED`|Le programme spécifié est déjà attaché au débogueur.|  
+|`E_ATTACH_DEBUGGEE_PROCESS_SECURITY_VIOLATION`|Une violation de sécurité s’est produite lors de la procédure d’attachement.|  
+|`E_ATTACH_CANNOT_ATTACH_TO_DESKTOP`|Un programme de bureau ne peuvent pas être attaché au débogueur.|  
   
-## <a name="remarks"></a>Remarks  
- A debug engine (DE) never calls this method to attach to a program. If the DE runs in the program's address space, the [OnAttach](../../../extensibility/debugger/reference/idebugprogramnodeattach2-onattach.md) method is called. If the DE runs in the session debug manager's (SDM) address space, the [Attach](../../../extensibility/debugger/reference/idebugengine2-attach.md) method is called.  
+## <a name="remarks"></a>Remarques  
+ Un moteur de débogage (DE) n’appelle jamais cette méthode pour attacher à un programme. Si le DE s’exécute dans l’espace d’adressage du programme, le [OnAttach](../../../extensibility/debugger/reference/idebugprogramnodeattach2-onattach.md) méthode est appelée. Si l’espace d’adresses DE s’exécute dans le Gestionnaire de débogage de session (SDM) le [attacher](../../../extensibility/debugger/reference/idebugengine2-attach.md) méthode est appelée.  
   
-## <a name="see-also"></a>See Also  
+## <a name="see-also"></a>Voir aussi  
  [IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md)   
  [IDebugEventCallback2](../../../extensibility/debugger/reference/idebugeventcallback2.md)   
  [OnAttach](../../../extensibility/debugger/reference/idebugprogramnodeattach2-onattach.md)   
- [Attach](../../../extensibility/debugger/reference/idebugengine2-attach.md)
+ [Attacher](../../../extensibility/debugger/reference/idebugengine2-attach.md)

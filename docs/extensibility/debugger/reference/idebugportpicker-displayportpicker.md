@@ -1,45 +1,30 @@
 ---
-title: IDebugPortPicker::DisplayPortPicker | Microsoft Docs
+title: IDebugPortPicker::DisplayPortPicker | Documents Microsoft
 ms.custom: 
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-sdk
+ms.technology: vs-ide-sdk
 ms.tgt_pltfrm: 
 ms.topic: article
 helpviewer_keywords:
 - DisplayPortPicker
 - IDebugPortPicker::DisplayPortPicker
 ms.assetid: 08511ef5-be64-4069-b169-a569cc94bc64
-caps.latest.revision: 9
+caps.latest.revision: "9"
+author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-translation.priority.mt:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
+ms.openlocfilehash: bf6dee7f9c79e82d9e952e481c638c870308e890
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
 ms.translationtype: MT
-ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
-ms.openlocfilehash: bf9e3ffdfe0598718a3b8bc9857c350d5d673ba7
-ms.contentlocale: fr-fr
-ms.lasthandoff: 08/28/2017
-
+ms.contentlocale: fr-FR
+ms.lasthandoff: 10/31/2017
 ---
 # <a name="idebugportpickerdisplayportpicker"></a>IDebugPortPicker::DisplayPortPicker
-Displays the specified dialog box that allows the user to select a port.  
+Affiche la boîte de dialogue spécifiée qui permet à l’utilisateur à sélectionner un port.  
   
-## <a name="syntax"></a>Syntax  
+## <a name="syntax"></a>Syntaxe  
   
 ```cpp  
 HRESULT DisplayPortPicker(  
@@ -55,15 +40,15 @@ public int DisplayPortPicker(
 );  
 ```  
   
-#### <a name="parameters"></a>Parameters  
+#### <a name="parameters"></a>Paramètres  
  `hwndParentDialog`  
- [in] Handle for the parent dialog box.  
+ [in] Handle de la boîte de dialogue parent.  
   
  `pbstrPortId`  
- [out] Port identifier string.  
+ [out] Chaîne d’identificateur de port.  
   
-## <a name="return-value"></a>Return Value  
- If successful, returns `S_OK`; otherwise, returns an error code. A return value of `S_FALSE` (or a return value of `S_OK` with the `BSTR` set to `NULL`) indicates that the user  clicked **Cancel**.  
+## <a name="return-value"></a>Valeur de retour  
+ En cas de réussite, retourne `S_OK`; sinon, retourne un code d’erreur. La valeur de retour `S_FALSE` (ou une valeur de retour de `S_OK` avec la `BSTR` la valeur `NULL`) indique que l’utilisateur a cliqué **Annuler**.  
   
-## <a name="see-also"></a>See Also  
+## <a name="see-also"></a>Voir aussi  
  [IDebugPortPicker](../../../extensibility/debugger/reference/idebugportpicker.md)

@@ -1,46 +1,29 @@
 ---
-title: SccCheckout Function | Microsoft Docs
+title: Fonction de SccCheckout | Documents Microsoft
 ms.custom: 
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-sdk
+ms.technology: vs-ide-sdk
 ms.tgt_pltfrm: 
 ms.topic: article
-f1_keywords:
-- SccCheckout
-helpviewer_keywords:
-- SccCheckout function
+f1_keywords: SccCheckout
+helpviewer_keywords: SccCheckout function
 ms.assetid: 06e9ecd7-fc09-40c1-9dd1-2b56c622c80b
-caps.latest.revision: 15
+caps.latest.revision: "15"
+author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-translation.priority.mt:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
+ms.openlocfilehash: de22bd4722df1cd78472fd9e180fdb8132401828
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
 ms.translationtype: MT
-ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
-ms.openlocfilehash: 32349017e005654d269f9dca7bd7d29c0985bc78
-ms.contentlocale: fr-fr
-ms.lasthandoff: 08/28/2017
-
+ms.contentlocale: fr-FR
+ms.lasthandoff: 10/31/2017
 ---
-# <a name="scccheckout-function"></a>SccCheckout Function
-Given a list of fully qualified file names, this function checks them out to the local drive. The comment applies to all files being checked out. The comment argument can be a `null` string.  
+# <a name="scccheckout-function"></a>SccCheckout (fonction)
+Étant donné une liste de noms de fichier qualifié complet, cette fonction extrait les sur le lecteur local. Le commentaire s’applique à tous les fichiers extraits. L’argument de commentaire peut être un `null` chaîne.  
   
-## <a name="syntax"></a>Syntax  
+## <a name="syntax"></a>Syntaxe  
   
 ```cpp  
 SCCRTN SccCheckout (  
@@ -54,43 +37,43 @@ SCCRTN SccCheckout (
 );  
 ```  
   
-#### <a name="parameters"></a>Parameters  
+#### <a name="parameters"></a>Paramètres  
  pvContext  
- [in] The source control plug-in context structure.  
+ [in] La structure de contexte plug-in de contrôle de code source.  
   
  hWnd  
- [in] A handle to the IDE window that the source control plug-in can use as a parent for any dialog boxes that it provides.  
+ [in] Handle vers la fenêtre de l’IDE que le plug-in de contrôle de code source peut utiliser en tant que parent pour toutes les boîtes de dialogue qu’il fournit.  
   
  nFiles  
- [in] Number of files selected to be checked out.  
+ [in] Nombre de fichiers sélectionnés pour être récupéré.  
   
  lpFileNames  
- [in] Array of fully qualified local path names of files to be checked out.  
+ [in] Tableau des noms de chemin qualifié complet des fichiers à extraire.  
   
  lpComment  
- [in] Comment to be applied to each of the selected files being checked out.  
+ [in] Commentaire à appliquer à chaque fichier sélectionné en cours d’extraction.  
   
  fOptions  
- [in] Command flags (see [Bitflags Used by Specific Commands](../extensibility/bitflags-used-by-specific-commands.md)).  
+ [in] Indicateurs de commande (voir [indicateurs de bits utilisés par des commandes spécifiques](../extensibility/bitflags-used-by-specific-commands.md)).  
   
  pvOptions  
- [in] Source control plug-in-specific options.  
+ [in] Options spécifiques au plug-in du contrôle source.  
   
-## <a name="return-value"></a>Return Value  
- The source control plug-in implementation of this function is expected to return one of the following values:  
+## <a name="return-value"></a>Valeur de retour  
+ L’implémentation de plug-in de contrôle de source de cette fonction est censée retourner l’une des valeurs suivantes :  
   
-|Value|Description|  
+|Valeur|Description|  
 |-----------|-----------------|  
-|SCC_OK|Check out was successful.|  
-|SCC_E_FILENOTCONTROLLED|The selected file is not under source code control.|  
-|SCC_E_ACCESSFAILURE|There was a problem accessing the source control system, probably due to network or contention issues. A retry is recommended.|  
-|SCC_E_NOTAUTHORIZED|The user is not allowed to perform this operation.|  
-|SCC_E_NONSPECIFICERROR|Nonspecific failure. The file was not checked out.|  
-|SCC_E_ALREADYCHECKEDOUT|The user already has the file checked out.|  
-|SCC_E_FILEISLOCKED|The file is locked, prohibiting the creation of new versions.|  
-|SCC_E_FILEOUTEXCLUSIVE|Another user has done an exclusive checkout on this file.|  
-|SCC_I_OPERATIONCANCELED|The operation was cancelled before completion.|  
+|SCC_OK|Extraction réussie.|  
+|SCC_E_FILENOTCONTROLLED|Le fichier sélectionné n’est pas sous contrôle de code source.|  
+|SCC_E_ACCESSFAILURE|Impossible d’accéder au système de contrôle source, probablement en raison de problèmes réseau ou de contention. Une nouvelle tentative est recommandée.|  
+|SCC_E_NOTAUTHORIZED|L’utilisateur n’est pas autorisé à effectuer cette opération.|  
+|SCC_E_NONSPECIFICERROR|Erreur non spécifique. Le fichier n’a pas été extrait.|  
+|SCC_E_ALREADYCHECKEDOUT|L’utilisateur a déjà extrait le fichier.|  
+|SCC_E_FILEISLOCKED|Le fichier est verrouillé, ce qui empêche la création de nouvelles versions.|  
+|SCC_E_FILEOUTEXCLUSIVE|Un autre utilisateur a effectué une extraction exclusive sur ce fichier.|  
+|SCC_I_OPERATIONCANCELED|L’opération a été annulée avant la fin.|  
   
-## <a name="see-also"></a>See Also  
- [Source Control Plug-in API Functions](../extensibility/source-control-plug-in-api-functions.md)   
- [Bitflags Used by Specific Commands](../extensibility/bitflags-used-by-specific-commands.md)
+## <a name="see-also"></a>Voir aussi  
+ [Fonctions d’API de plug-in de contrôle de source](../extensibility/source-control-plug-in-api-functions.md)   
+ [Indicateurs de bits utilisés par des commandes spécifiques](../extensibility/bitflags-used-by-specific-commands.md)

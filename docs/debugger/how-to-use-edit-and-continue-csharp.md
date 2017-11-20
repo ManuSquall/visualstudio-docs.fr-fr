@@ -1,56 +1,55 @@
 ---
-title: "Comment&#160;: utiliser Modifier &amp; Continuer (C#) | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-debug"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-dev_langs: 
-  - "FSharp"
-  - "VB"
-  - "CSharp"
-  - "C++"
-helpviewer_keywords: 
-  - "Modifier & Continuer (C#), à propos de Modifier & Continuer"
+title: "Comment : utiliser Modifier & Continuer (c#) | Documents Microsoft"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-debug
+ms.tgt_pltfrm: 
+ms.topic: article
+dev_langs:
+- CSharp
+- VB
+- FSharp
+- C++
+helpviewer_keywords: Edit and Continue [C#], about Edit and Continue
 ms.assetid: 40e136d8-a08c-43bd-b313-fb821c55eb3c
-caps.latest.revision: 19
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 19
+caps.latest.revision: "19"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: ec66bd21eb119c348391f191f23570e66119122f
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: fr-FR
+ms.lasthandoff: 10/31/2017
 ---
-# Comment&#160;: utiliser Modifier &amp; Continuer (C#)
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
-
-Avec Modifier & Continuer pour C\#, vous pouvez modifier votre code en mode arrêt pendant le débogage.  Les modifications peuvent être appliquées sans qu'il soit nécessaire d'arrêter et de redémarrer la session de débogage.  
+# <a name="how-to-use-edit-and-continue-c"></a>Comment : utiliser Modifier & Continuer (C#)
+Avec Modifier & Continuer pour C#, vous pouvez modifier votre code en mode arrêt pendant le débogage. Les modifications peuvent être appliquées sans qu'il soit nécessaire d'arrêter et de redémarrer la session de débogage.  
   
- Modifier & Continuer est appelé automatiquement lorsque vous apportez des modifications en mode arrêt, puis choisissez une commande d'exécution de débogueur, telle que **Continuer**, **Exécuter pas à pas** ou **Définir l'instruction suivante** ou évaluez une fonction dans une fenêtre de débogueur.  
+ Modifier & Continuer est appelé automatiquement lorsque vous apportez des modifications en mode arrêt, puis choisissez une débogueur, l’exécution commande, telles que **continuer**, **étape**, ou **définir l’instruction suivante**, ou d’évaluer une fonction dans une fenêtre du débogueur.  
   
 > [!NOTE]
->  L'opération Modifier & Continuer n'est pas prise en charge lors du débogage de Compact Framework, de code optimisé, de code managé\/natif mixte Compact Framework ou de code d'intégration du Common Language Runtime \(CLR\) SQL Server.  Si vous tentez de procéder à des modifications de code dans l'un de ces scénarios, le débogueur affiche une boîte de dialogue qui explique que Modifier & Continuer n'est pas pris en charge.  
+>  Modifier & Continuer n’est pas pris en charge lorsque vous déboguez optimisé de code, le code mixte natif/managé ou code de l’intégration SQL Server common language runtime (CLR). Pour plus d’informations sur les autres scénarios non pris en charge, consultez [modifications de Code prises en charge (c# et Visual Basic)](../debugger/supported-code-changes-csharp.md). Si vous essayez d’appliquer les modifications de code dans un de ces scénarios, le débogueur affiche une boîte de dialogue zone qui explique que Modifier & Continuer n’est pas pris en charge.  
   
-### Pour appeler Modifier & Continuer automatiquement  
+### <a name="to-invoke-edit-and-continue-automatically"></a>Pour appeler Modifier & Continuer automatiquement  
   
-1.  En mode arrêt, modifiez votre code source.  
+1.  En mode arrêt, apporter une modification à votre code source.  
   
-2.  Dans le menu **Déboguer**, cliquez sur **Continuer**, **Exécuter pas à pas** ou **Définir l'instruction suivante** ou évaluez une fonction dans une fenêtre de débogueur.  
+2.  À partir de la **déboguer** menu, cliquez sur **continuer**, **étape**, ou **définir l’instruction suivante** ou évaluez une fonction dans une fenêtre du débogueur.  
   
-     Le nouveau code est compilé et permet de poursuivre le débogage.  Certaines modifications ne sont pas prises en charge par Modifier & Continuer.  Pour plus d'informations, consultez [Modifications de code prises en charge \(C\#\)](../debugger/supported-code-changes-csharp.md).  
+     Le nouveau code est compilé et le débogage se poursuit avec le nouveau code. Certaines modifications ne sont pas pris en charge par Modifier & Continuer. Pour plus d’informations, consultez [modifications de Code prises en charge (c# et Visual Basic)](../debugger/supported-code-changes-csharp.md).  
   
-### Pour activer ou désactiver Modifier & Continuer  
+### <a name="to-enabledisable-edit-and-continue"></a>Pour activer ou désactiver Modifier & Continuer  
   
-1.  Dans le menu **Outils**, cliquez sur **Options**.  
+1.  Dans le menu **Outils** , cliquez sur **Options**.  
   
-2.  Dans la boîte de dialogue **Options**, développez le nœud **Débogage** et sélectionnez **Modifier & Continuer**.  
+2.  Dans le **Options** boîte de dialogue, développez le **débogage** nœud et sélectionnez **Modifier & Continuer**.  
   
-3.  À la page **Modifier & Continuer** de la boîte de dialogue **Options**, activez ou désactivez la case à cocher **Activer Modifier & Continuer**.  
+3.  Dans le **Options** boîte de dialogue **Modifier & Continuer** page, activez ou désactivez le **Activer Modifier & Continuer** case à cocher.  
   
-     Le paramètre entre en vigueur lorsque vous redémarrez la session de débogage.  
+     Le paramètre prend effet lorsque vous redémarrez la session de débogage.  
   
-## Voir aussi  
- [Modifier & Continuer \(Visual C\#\)](../debugger/edit-and-continue-visual-csharp.md)   
- [Modifications de code prises en charge \(C\#\)](../debugger/supported-code-changes-csharp.md)   
- [Erreurs et avertissements de Modifier & Continuer \(C\#\)](../misc/edit-and-continue-errors-and-warnings-csharp.md)
+## <a name="see-also"></a>Voir aussi  
+ [Modifier & Continuer (Visual c#)](../debugger/edit-and-continue-visual-csharp.md)   
+ [Modifications de Code prises en charge (c# et Visual Basic)](../debugger/supported-code-changes-csharp.md)   

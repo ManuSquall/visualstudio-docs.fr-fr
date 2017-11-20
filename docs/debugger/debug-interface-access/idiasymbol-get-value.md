@@ -1,53 +1,52 @@
 ---
-title: "IDiaSymbol::get_value | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-debug"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "IDiaSymbol::get_value (méthode)"
+title: IDiaSymbol::get_value | Documents Microsoft
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-debug
+ms.tgt_pltfrm: 
+ms.topic: article
+dev_langs: C++
+helpviewer_keywords: IDiaSymbol::get_value method
 ms.assetid: 2e40174a-2a61-4e5f-bb32-9e0ceec2178a
-caps.latest.revision: 9
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 9
+caps.latest.revision: "9"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: 1178fa79631e32e4b15ee7157fc40ebd9fd7383b
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: fr-FR
+ms.lasthandoff: 10/31/2017
 ---
-# IDiaSymbol::get_value
-[!INCLUDE[vs2017banner](../../code-quality/includes/vs2017banner.md)]
-
-extrait la valeur d'une constante.  
+# <a name="idiasymbolgetvalue"></a>IDiaSymbol::get_value
+Récupère la valeur d’une constante.  
   
-## Syntaxe  
+## <a name="syntax"></a>Syntaxe  
   
-```cpp#  
-HRESULT get_value (   
-   VARIANT* pRetVal  
+```C++  
+HRESULT get_value (   
+   VARIANT* pRetVal  
 );  
 ```  
   
-#### Paramètres  
+#### <a name="parameters"></a>Paramètres  
  `pRetVal`  
- \[in, out\]  Un objet d' `VARIANT` qui est rempli avec la valeur d'une constante.  
+ [dans, out] A `VARIANT` objet qui est remplie avec la valeur d’une constante.  
   
-## Valeur de retour  
- En cas de réussite, retourne `S_OK`; sinon, retourne `S_FALSE` ou un code d'erreur.  
+## <a name="return-value"></a>Valeur de retour  
+ En cas de réussite, retourne `S_OK`; sinon, retourne `S_FALSE` ou un code d’erreur.  
   
 > [!NOTE]
->  Une valeur de retour d' `S_FALSE` signifie que la propriété n'est pas disponible pour le symbole.  
+>  La valeur de retour `S_FALSE` signifie que la propriété n’est pas disponible pour le symbole.  
   
-## Notes  
- La VARIANT fournie doit être initialisée avant d'être passé à cette méthode.  Pour plus d'informations, consultez l'exemple.  
+## <a name="remarks"></a>Remarques  
+ La variante fournie doit être initialisée avant d’être transmis à cette méthode. Pour plus d’informations, consultez l’exemple.  
   
-## Exemple  
+## <a name="example"></a>Exemple  
   
-```cpp#  
+```C++  
 void ProcessValue(IDiaSymbol *pSymbol)  
 {  
     VARIANT value;  
@@ -70,5 +69,5 @@ void ProcessValue2(IDiaSymbol *pSymbol)
 }  
 ```  
   
-## Voir aussi  
+## <a name="see-also"></a>Voir aussi  
  [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

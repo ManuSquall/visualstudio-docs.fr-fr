@@ -1,41 +1,43 @@
 ---
-title: "Mots r&#233;serv&#233;s JavaScript | Microsoft Docs"
-ms.custom: ""
-ms.date: "01/18/2017"
-ms.prod: "windows-client-threshold"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "devlang-javascript"
-ms.tgt_pltfrm: ""
-ms.topic: "language-reference"
-dev_langs: 
-  - "JavaScript"
-  - "TypeScript"
-  - "DHTML"
-helpviewer_keywords: 
-  - "mots réservés"
+title: "Mots réservés JavaScript | Documents Microsoft"
+ms.custom: 
+ms.date: 01/18/2017
+ms.prod: windows-client-threshold
+ms.reviewer: 
+ms.suite: 
+ms.technology: devlang-javascript
+ms.tgt_pltfrm: 
+ms.topic: language-reference
+dev_langs:
+- JavaScript
+- TypeScript
+- DHTML
+helpviewer_keywords: reserved words
 ms.assetid: ab2c246c-99c7-4594-b598-c91909653e09
-caps.latest.revision: 9
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 9
+caps.latest.revision: "9"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: fd950ec1648b24b199f0eeba46c6027661cdf669
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.translationtype: MT
+ms.contentlocale: fr-FR
+ms.lasthandoff: 10/27/2017
 ---
-# Mots r&#233;serv&#233;s JavaScript
-[!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] possède plusieurs mots réservés que vous devez éviter d'utiliser pour nommer les identificateurs.  Les mots réservés ont une signification spécifique dans le langage [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)], car ils appartiennent à la syntaxe du langage.  L'utilisation d'un mot réservé entraîne une erreur de compilation lors du chargement de votre script.  
+# <a name="javascript-reserved-words"></a>Mots réservés JavaScript
+[!INCLUDE[javascript](../../javascript/includes/javascript-md.md)]possède un nombre de mots réservés que vous ne pouvez pas utiliser en tant qu’identificateurs. Les mots réservés ont une signification particulière pour le [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] language, car ils font partie de la syntaxe du langage. À l’aide d’un mot réservé de provoque une erreur de compilation lors du chargement de votre script.  
   
- [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] possède également une liste de futurs mots réservés.  Ces mots ne font pas encore partie du langage [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)], mais ils sont réservés à une utilisation ultérieure.  Pour plus d'informations sur les futurs mots réservés dans JavaScript, consultez [Futurs mots réservés JavaScript](../../javascript/reference/javascript-future-reserved-words.md).  
+ [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)]possède également une liste de mots réservés futurs. Ces mots ne sont pas actuellement dans le cadre de la [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] langage, même s’ils sont réservés à un usage ultérieur. Pour plus d’informations sur les mots clés réservés futurs dans JavaScript, consultez [JavaScript des mots réservés futurs](../../javascript/reference/javascript-future-reserved-words.md).  
   
- Lorsque vous choisissez un identificateur, il est important d'éviter des mots correspondant déjà aux noms de fonctions ou d'objets [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] intrinsèques, tels que `String` ou `parseInt`.  
+ Lorsque vous choisissez un identificateur, il est également important d’éviter les mots qui sont déjà les noms des intrinsèques [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] objets ou des fonctions, telles que `String` ou `parseInt`.  
   
-## Mots clés réservés  
+## <a name="reserved-keywords"></a>Mots clés réservés  
   
 ||||||  
 |-|-|-|-|-|  
-|break|par défaut|fonction|return|var|  
+|break|default|function|return|var|  
 |case|supprimer|if|switch|void|  
 |catch|do|in|this|while|  
 |const|else|instanceof|throw|par|  
 |continue|finally|let|try||  
-|debugger|for|new|typeof||
+|débogueur|for|new|typeof||

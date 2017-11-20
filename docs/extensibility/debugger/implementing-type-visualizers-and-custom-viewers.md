@@ -1,40 +1,42 @@
 ---
-title: "L’impl&#233;mentation de Type visualiseurs et les visionneuses personnalis&#233;es | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-helpviewer_keywords: 
-  - "débogage de visionneuse personnalisée [Debugging SDK],"
-  - "visualiseur de type débogage [Debugging SDK],"
+title: "Implémentation de visualiseurs de types et des visionneuses personnalisées | Documents Microsoft"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+helpviewer_keywords:
+- debugging [Debugging SDK], custom viewer
+- debugging [Debugging SDK], type visualizer
 ms.assetid: abef18c0-8272-4451-b82a-b4624edaba7d
-caps.latest.revision: 14
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 14
+caps.latest.revision: "14"
+author: gregvanl
+ms.author: gregvanl
+manager: ghogen
+ms.openlocfilehash: 19718425df6f0c8a656db0e3d7ebf0f06937f780
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: fr-FR
+ms.lasthandoff: 10/31/2017
 ---
-# L’impl&#233;mentation de Type visualiseurs et les visionneuses personnalis&#233;es
-[!INCLUDE[vs2017banner](../../code-quality/includes/vs2017banner.md)]
-
+# <a name="implementing-type-visualizers-and-custom-viewers"></a>Implémentation de visualiseurs de types et des visionneuses personnalisées
 > [!IMPORTANT]
->  Dans Visual Studio 2015, ce moyen d’implémenter des évaluateurs d’expression est déconseillée. Pour plus d’informations sur l’implémentation des évaluateurs d’expression CLR, consultez [évaluateurs d’Expression CLR](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/CLR-Expression-Evaluators) et [exemple d’évaluateur d’Expression gérés](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/Managed-Expression-Evaluator-Sample).  
+>  Dans Visual Studio 2015, ce moyen d’implémenter des évaluateurs d’expression est déconseillée. Pour plus d’informations sur l’implémentation des évaluateurs d’expression CLR, consultez [évaluateurs d’Expression CLR](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/CLR-Expression-Evaluators) et [exemple d’évaluateur d’Expression managé](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/Managed-Expression-Evaluator-Sample).  
   
- Type visualiseurs et les visionneuses personnalisées autoriser un utilisateur à afficher les données d’un type particulier d’une manière plus explicite qu’un vidage hexadécimal simple de nombres. Un évaluateur d’expression \(EE\) peut associer des visionneuses personnalisées à des types de données ou des variables. Ces visionneuses personnalisées sont implémentés par le EE. Le EE peut prennent également en charge les visualiseurs de type externe, ce qui peuvent provenir d’un autre fournisseur tiers ou même l’utilisateur final.  
+ Visualiseurs de types et des visionneuses personnalisées permettent un utilisateur d’afficher les données d’un type particulier d’une manière plus explicite qu’un vidage hexadécimal de nombres en simple. Évaluateur d’expression (EE) pouvez associer des visionneuses personnalisées à des types de données ou des variables. Ces visionneuses personnalisées sont implémentées par le Java EE. Le EE peut prennent également en charge les visualiseurs de type externe, ce qui peuvent provenir d’un autre fournisseur tiers ou même l’utilisateur final.  
   
-## Discussion  
+## <a name="discussion"></a>Discussion  
   
-### Visualiseurs de type  
- Visual Studio vous demande pour une liste de visualiseurs de type et les visionneuses personnalisées pour chaque objet à afficher dans une fenêtre Espion. Un évaluateur d’expression \(EE\) fournit cette liste pour chaque type pour lequel il souhaite prendre en charge les visualiseurs de type et les visionneuses personnalisées. Les appels à [GetCustomViewerCount](../Topic/IDebugProperty3::GetCustomViewerCount.md) et [GetCustomViewerList](../../extensibility/debugger/reference/idebugproperty3-getcustomviewerlist.md) Démarrer l’ensemble du processus d’accéder aux visualiseurs de type et les visionneuses personnalisées \(voir [Visualisation et affichage des données](../../extensibility/debugger/visualizing-and-viewing-data.md) Pour plus d’informations sur la séquence d’appel\).  
+### <a name="type-visualizers"></a>Visualiseurs de type  
+ Visual Studio vous demande pour une liste de visualiseurs de types et des visionneuses personnalisées pour chaque objet à afficher dans une fenêtre Espion. Évaluateur d’expression (EE) fournit la liste pour chaque type pour lequel il souhaite prendre en charge les visualiseurs de types et des visionneuses personnalisées. Les appels à [GetCustomViewerCount](../../extensibility/debugger/reference/idebugproperty3-getcustomviewercount.md) et [GetCustomViewerList](../../extensibility/debugger/reference/idebugproperty3-getcustomviewerlist.md) démarrer l’ensemble du processus d’accéder aux visualiseurs de types et des visionneuses personnalisées (voir [Visualizing et affichage des données](../../extensibility/debugger/visualizing-and-viewing-data.md)pour plus d’informations sur la séquence d’appel).  
   
-### Visionneuses personnalisées  
- Les visionneuses personnalisées sont implémentés dans le EE pour un type de données et sont représentés par le [IDebugCustomViewer](../../extensibility/debugger/reference/idebugcustomviewer.md) interface. Une visionneuse personnalisée n’est pas aussi flexible qu’un visualiseur de type, dans la mesure où elle est disponible uniquement lorsque le EE qui implémente cette visionneuse personnalisée particulière est en cours d’exécution. L’implémentation d’une visionneuse personnalisée est plus simple que celle prise en charge des visualiseurs de type. Toutefois, prenant en charge les visualiseurs de type flexibilité maximale pour l’utilisateur final pour visualiser ses données. Le reste de cet article concerne uniquement les visualiseurs de type.  
+### <a name="custom-viewers"></a>Visionneuses personnalisées  
+ Les visionneuses personnalisées sont implémentées dans le EE pour un type de données spécifique et sont représentées par le [IDebugCustomViewer](../../extensibility/debugger/reference/idebugcustomviewer.md) interface. Une visionneuse personnalisée n’est pas aussi flexible qu’un visualiseur de type, car il est disponible uniquement lorsque le EE qui implémente cette visionneuse personnalisée particulière est en cours d’exécution. Implémentation d’une visionneuse personnalisée est plus simple que celle prise en charge des visualiseurs de types. Toutefois, prenant en charge les visualiseurs de types offre d’une flexibilité maximale pour l’utilisateur final de visualisation de ses propres données. Le reste de cette rubrique concerne uniquement les visualiseurs de types.  
   
-## Interfaces  
- Le EE implémente les interfaces suivantes pour prendre en charge les visualiseurs de type, à être utilisés par Visual Studio :  
+## <a name="interfaces"></a>Interfaces  
+ Le EE implémente les interfaces suivantes pour prendre en charge les visualiseurs de type à être consommés par Visual Studio :  
   
 -   [IEEVisualizerDataProvider](../../extensibility/debugger/reference/ieevisualizerdataprovider.md)  
   
@@ -48,7 +50,7 @@ caps.handback.revision: 14
   
 -   [IDebugObject](../../extensibility/debugger/reference/idebugobject.md)  
   
- Le EE consomme les interfaces suivantes pour prendre en charge les visualiseurs de type :  
+ Le EE consomme les interfaces suivantes pour prendre en charge les visualiseurs de types :  
   
 -   [IEEVisualizerService](../../extensibility/debugger/reference/ieevisualizerservice.md)  
   
@@ -56,7 +58,7 @@ caps.handback.revision: 14
   
 -   [IDebugBinder3](../../extensibility/debugger/reference/idebugbinder3.md)  
   
-## Voir aussi  
- [Écriture d'un évaluateur d'Expression CLR](../../extensibility/debugger/writing-a-common-language-runtime-expression-evaluator.md)   
- [Visualisation et affichage des données](../../extensibility/debugger/visualizing-and-viewing-data.md)   
+## <a name="see-also"></a>Voir aussi  
+ [L’écriture d’un évaluateur d’Expression CLR](../../extensibility/debugger/writing-a-common-language-runtime-expression-evaluator.md)   
+ [Visualisation et l’affichage des données](../../extensibility/debugger/visualizing-and-viewing-data.md)   
  [IDebugCustomViewer](../../extensibility/debugger/reference/idebugcustomviewer.md)

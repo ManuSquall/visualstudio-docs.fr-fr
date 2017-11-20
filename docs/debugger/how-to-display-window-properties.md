@@ -1,29 +1,29 @@
 ---
-title: "How to: Display Window Properties | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-debug"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-helpviewer_keywords: 
-  - "window properties"
+title: "Comment : afficher les propriétés de la fenêtre | Documents Microsoft"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-debug
+ms.tgt_pltfrm: 
+ms.topic: article
+helpviewer_keywords: window properties
 ms.assetid: 4c2f52de-bd91-42cf-9028-67aa75f8bd26
-caps.latest.revision: 4
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 4
+caps.latest.revision: "4"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: f4a25eeee8eceaf5ee94a4c7217f72fd8e9841c7
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: fr-FR
+ms.lasthandoff: 10/31/2017
 ---
-# How to: Display Window Properties
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
-
-Pour plus d'informations sur une fenêtre listée dans la [vue Fenêtres](../debugger/windows-view.md), utilisez la [boîte de dialogue Propriétés de la fenêtre](../debugger/window-properties-dialog-box.md).  
+# <a name="how-to-display-window-properties"></a>Comment : afficher les propriétés d'une fenêtre
+Pour plus d’informations sur une fenêtre listée dans [affichage Windows](../debugger/windows-view.md), utilisez le [boîte de dialogue Propriétés de fenêtre](../debugger/window-properties-dialog-box.md).  
   
-### Pour ouvrir la boîte de dialogue Propriétés de la fenêtre  
+### <a name="to-open-the-window-properties-dialog-box"></a>Pour ouvrir la boîte de dialogue Propriétés de la fenêtre  
   
-1.  Sélectionnez l'élément, puis choisissez **Propriétés** dans le menu **Affichage**.  
+1.  Sélectionnez l’élément, puis choisissez **propriétés** à partir de la **vue** menu.  
   
- Les boîtes de dialogue de propriétés ne sont pas modales.  Lorsque vous cliquez sur des éléments individuels dans une fenêtre d'affichage, la boîte de dialogue est actualisée automatiquement à l'aide des informations relatives à chaque élément sélectionné.
+ Boîtes de dialogue de propriétés ne sont pas modales. Lorsque vous cliquez à l’élément dans une fenêtre d’affichage, la boîte de dialogue est automatiquement actualisée avec les informations sur chaque élément sélectionné.

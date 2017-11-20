@@ -1,46 +1,29 @@
 ---
-title: CONTEXT_INFO_FIELDS | Microsoft Docs
+title: CONTEXT_INFO_FIELDS | Documents Microsoft
 ms.custom: 
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-sdk
+ms.technology: vs-ide-sdk
 ms.tgt_pltfrm: 
 ms.topic: article
-f1_keywords:
-- CONTEXT_INFO_FIELDS
-helpviewer_keywords:
-- CONTEXT_INFO_FIELDS enumeration
+f1_keywords: CONTEXT_INFO_FIELDS
+helpviewer_keywords: CONTEXT_INFO_FIELDS enumeration
 ms.assetid: ef436bd3-738e-47e8-828c-8febce752439
-caps.latest.revision: 13
+caps.latest.revision: "13"
+author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-translation.priority.mt:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
+ms.openlocfilehash: e604dc09215ac98b2c23fe85312e281b306e9961
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
 ms.translationtype: MT
-ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
-ms.openlocfilehash: 92b8a9e4fa544018e6cfa2baa5e57a9c978dde25
-ms.contentlocale: fr-fr
-ms.lasthandoff: 08/28/2017
-
+ms.contentlocale: fr-FR
+ms.lasthandoff: 10/31/2017
 ---
 # <a name="contextinfofields"></a>CONTEXT_INFO_FIELDS
-Specifies what information to retrieve about a memory context.  
+Spécifie les informations à récupérer sur un contexte de la mémoire.  
   
-## <a name="syntax"></a>Syntax  
+## <a name="syntax"></a>Syntaxe  
   
 ```cpp  
 enum enum_CONTEXT_INFO_FIELDS {   
@@ -67,40 +50,40 @@ public enum enum_CONTEXT_INFO_FIELDS {
 };  
 ```  
   
-## <a name="members"></a>Members  
+## <a name="members"></a>Membres  
  CIF_MODULEURL  
- Initialize/use the `bstrModuleUrl` field of the [CONTEXT_INFO](../../../extensibility/debugger/reference/context-info.md) structure.  
+ Initialisation/utiliser le `bstrModuleUrl` champ le [CONTEXT_INFO](../../../extensibility/debugger/reference/context-info.md) structure.  
   
  CIF_FUNCTION  
- Initialize/use the `bstrFunction` field of the `CONTEXT_INFO` structure.  
+ Initialisation/utiliser le `bstrFunction` champ le `CONTEXT_INFO` structure.  
   
  CIF_FUNCTIONOFFSET  
- Initialize/use the `posFunctionOffset` field of the `CONTEXT_INFO` structure.  
+ Initialisation/utiliser le `posFunctionOffset` champ le `CONTEXT_INFO` structure.  
   
  CIF_ADDRESS  
- Initialize/use the `bstrAddress` field of the `CONTEXT_INFO` structure.  
+ Initialisation/utiliser le `bstrAddress` champ le `CONTEXT_INFO` structure.  
   
  CIF_ADDRESSOFFSET  
- Initialize/use the `bstrAddressOffset` field of the `CONTEXT_INFO` structure.  
+ Initialisation/utiliser le `bstrAddressOffset` champ le `CONTEXT_INFO` structure.  
   
  CIF_ALLFIELDS  
- Initialize/use all fields of the `CONTEXT_INFO` structure.  
+ Initialisation/utiliser tous les champs de la `CONTEXT_INFO` structure.  
   
-## <a name="remarks"></a>Remarks  
- These values are passed a parameter to the [GetInfo](../../../extensibility/debugger/reference/idebugmemorycontext2-getinfo.md) method to indicate which fields of the [CONTEXT_INFO](../../../extensibility/debugger/reference/context-info.md) structure are to be initialized.  
+## <a name="remarks"></a>Remarques  
+ Ces valeurs sont passées à un paramètre à la [GetInfo](../../../extensibility/debugger/reference/idebugmemorycontext2-getinfo.md) méthode pour indiquer les champs de la [CONTEXT_INFO](../../../extensibility/debugger/reference/context-info.md) structure doivent être initialisées.  
   
- These flags are also used to indicate which fields of the `CONTEXT_INFO` structure are used and valid when the structure is returned.  
+ Ces indicateurs sont également utilisés pour indiquer les champs de la `CONTEXT_INFO` structure sont utilisées et valide lors de la structure est retournée.  
   
- These values may be combined with a bitwise OR.  
+ Ces valeurs peuvent être combinées avec une opération OR au niveau du bit.  
   
-## <a name="requirements"></a>Requirements  
- Header: msdbg.h  
+## <a name="requirements"></a>Spécifications  
+ En-tête : msdbg.h  
   
- Namespace: Microsoft.VisualStudio.Debugger.Interop  
+ Namespace : Microsoft.VisualStudio.Debugger.Interop  
   
- Assembly: Microsoft.VisualStudio.Debugger.Interop.dll  
+ Assembly : Microsoft.VisualStudio.Debugger.Interop.dll  
   
-## <a name="see-also"></a>See Also  
- [Enumerations](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)   
+## <a name="see-also"></a>Voir aussi  
+ [Énumérations](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)   
  [CONTEXT_INFO](../../../extensibility/debugger/reference/context-info.md)   
  [GetInfo](../../../extensibility/debugger/reference/idebugmemorycontext2-getinfo.md)

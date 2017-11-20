@@ -1,56 +1,55 @@
 ---
-title: "IDiaFrameData::get_program | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-debug"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "IDiaFrameData::get_program (méthode)"
+title: IDiaFrameData::get_program | Documents Microsoft
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-debug
+ms.tgt_pltfrm: 
+ms.topic: article
+dev_langs: C++
+helpviewer_keywords: IDiaFrameData::get_program method
 ms.assetid: 9201409e-b4b1-4e2e-a9f8-d17678ac538b
-caps.latest.revision: 10
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 10
+caps.latest.revision: "10"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: a26982c1827b9d9b4a7ed09e8aa3af61c9141c9f
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: fr-FR
+ms.lasthandoff: 10/31/2017
 ---
-# IDiaFrameData::get_program
-[!INCLUDE[vs2017banner](../../code-quality/includes/vs2017banner.md)]
-
-Extrait la chaîne de programme qui est utilisée pour calculer le jeu de registres avant l'appel à la fonction active.  
+# <a name="idiaframedatagetprogram"></a>IDiaFrameData::get_program
+Récupère la chaîne de programme qui est utilisée pour calculer le Registre défini avant l’appel à la fonction actuelle.  
   
-## Syntaxe  
+## <a name="syntax"></a>Syntaxe  
   
-```cpp#  
-HRESULT get_program (   
-   BSTR* pRetVal  
+```C++  
+HRESULT get_program (   
+   BSTR* pRetVal  
 );  
 ```  
   
-#### Paramètres  
+#### <a name="parameters"></a>Paramètres  
  `pRetVal`  
- \[out\]  Retourne la chaîne de programme.  
+ [out] Retourne la chaîne de programme.  
   
-## Valeur de retour  
- En cas de réussite, retourne `S_OK`.  Retourne `S_FALSE` si cette propriété n'est pas prise en charge.  Sinon, retourne un code d'erreur.  
+## <a name="return-value"></a>Valeur de retour  
+ En cas de réussite, retourne `S_OK`. Retourne `S_FALSE` si cette propriété n’est pas pris en charge. Sinon, retourne un code d'erreur.  
   
-## Notes  
- La chaîne de programme est une séquence de macros qui est interprétée pour générer le prologue.  Par exemple, un frame de pile typique peut utiliser la chaîne `"$T0 $ebp = $eip $T0 4 + ^ = $ebp $T0 ^ = $esp $T0 8 + ="`de programme.  le format est notation de polonais inversé, où les opérateurs suivent les opérandes.  `T0` représente une variable temporaire sur la pile.  Cet exemple exécute les étapes suivantes :  
+## <a name="remarks"></a>Remarques  
+ La chaîne de programme est une séquence de macros qui est interprétée afin d’établir le prologue. Par exemple, un frame de pile classique peut utiliser la chaîne de programme `"$T0 $ebp = $eip $T0 4 + ^ = $ebp $T0 ^ = $esp $T0 8 + ="`. Le format est la notation polonaise inverse, dans lequel les opérateurs de suivent les opérandes. `T0`représente une variable temporaire sur la pile. Cet exemple effectue les étapes suivantes :  
   
-1.  Le contenu des mouvements de registre `ebp` à `T0`.  
+1.  Déplacer le contenu du Registre `ebp` à `T0`.  
   
-2.  Ajoutez `4` à la valeur dans `T0` pour produire une adresse, récupérez la valeur de cette adresse, et stocker la valeur dans le registre `eip`.  
+2.  Ajouter `4` à la valeur de `T0` à produire une adresse, obtenir la valeur de cette adresse et stockez la valeur de Registre `eip`.  
   
-3.  Récupérez la valeur de l'adresse stockée dans `T0` et enregistrez cette valeur dans le registre `ebp`.  
+3.  Obtenir la valeur de l’adresse stockée dans `T0` et enregistrer cette valeur dans le Registre `ebp`.  
   
-4.  ajoutez `8` à la valeur dans `T0` et enregistrez cette valeur dans le registre `esp`.  
+4.  Ajouter `8` à la valeur de `T0` et enregistrer cette valeur dans le Registre `esp`.  
   
- Notez que la chaîne de programme est spécifique à le processeur et à l'installation de convention d'appel pour la fonction représentée par le frame de pile actuel.  
+ Notez que la chaîne du programme est spécifique au processeur et à la convention d’appel défini pour la fonction représentée par le frame de pile actuel.  
   
-## Voir aussi  
+## <a name="see-also"></a>Voir aussi  
  [IDiaFrameData](../../debugger/debug-interface-access/idiaframedata.md)

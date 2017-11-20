@@ -1,12 +1,10 @@
 ---
-title: 'Walkthrough: Displaying Text in a Text Box in a Worksheet Using a Button | Microsoft Docs'
+title: "Procédure pas à pas : Affichage de texte dans une zone de texte dans une feuille de calcul à l’aide d’un bouton | Documents Microsoft"
 ms.custom: 
 ms.date: 02/02/2017
-ms.prod: visual-studio-dev14
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- office-development
+ms.technology: office-development
 ms.tgt_pltfrm: 
 ms.topic: article
 dev_langs:
@@ -18,107 +16,107 @@ helpviewer_keywords:
 - text boxes, displaying text in worksheets
 - text [Office development in Visual Studio], text boxes
 ms.assetid: 59b73159-aab7-4f61-9ace-1723c18d78d6
-caps.latest.revision: 56
-author: kempb
-ms.author: kempb
+caps.latest.revision: "56"
+author: gewarren
+ms.author: gewarren
 manager: ghogen
-ms.translationtype: HT
-ms.sourcegitcommit: eb5c9550fd29b0e98bf63a7240737da4f13f3249
-ms.openlocfilehash: 18f5bccd1e9ee54ac759e8815ed71c87e4a06eb7
-ms.contentlocale: fr-fr
-ms.lasthandoff: 08/30/2017
-
+ms.openlocfilehash: 1b95eb6eeb5f8615f8f471ad33139afa49d5633f
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: fr-FR
+ms.lasthandoff: 10/31/2017
 ---
-# <a name="walkthrough-displaying-text-in-a-text-box-in-a-worksheet-using-a-button"></a>Walkthrough: Displaying Text in a Text Box in a Worksheet Using a Button
-  This walkthrough shows the basics of using buttons and text boxes on Microsoft Office Excel worksheets, and how to create Excel projects using Office development tools in Visual Studio. To see the result as a completed sample, see the Excel Controls Sample at [Office Development Samples and Walkthroughs](../vsto/office-development-samples-and-walkthroughs.md).  
+# <a name="walkthrough-displaying-text-in-a-text-box-in-a-worksheet-using-a-button"></a>Procédure pas à pas : affichage de texte dans une zone de texte d'une feuille de calcul à l'aide d'un bouton
+  Cette procédure pas à pas présente les notions de base de l’utilisation des boutons et des zones de texte dans des feuilles de calcul Microsoft Office Excel et comment créer des projets Excel à l’aide des outils de développement Office dans Visual Studio. Pour afficher le résultat sous la forme d’un exemple complet, consultez l’exemple des contrôles Excel [exemples de développement Office et des procédures pas à pas](../vsto/office-development-samples-and-walkthroughs.md).  
   
  [!INCLUDE[appliesto_xlalldoc](../vsto/includes/appliesto-xlalldoc-md.md)]  
   
- During this walkthrough, you will learn how to:  
+ Pendant cette procédure pas à pas, vous allez apprendre à :  
   
--   Add controls to a worksheet.  
+-   Ajouter des contrôles à une feuille de calcul.  
   
--   Populate a text box when a button is clicked.  
+-   Remplir une zone de texte lorsqu’un clic est effectué.  
   
--   Test your project.  
+-   Votre projet de test.  
   
 > [!NOTE]  
->  Your computer might show different names or locations for some of the Visual Studio user interface elements in the following instructions. The Visual Studio edition that you have and the settings that you use determine these elements. For more information, see [Personalize the Visual Studio IDE](../ide/personalizing-the-visual-studio-ide.md).  
+>  Il est possible que pour certains des éléments de l'interface utilisateur de Visual Studio, votre ordinateur affiche des noms ou des emplacements différents de ceux indiqués dans les instructions suivantes. L'édition de Visual Studio dont vous disposez et les paramètres que vous utilisez déterminent ces éléments. Pour plus d’informations, consultez [Personnaliser l’IDE Visual Studio](../ide/personalizing-the-visual-studio-ide.md).  
   
-## <a name="prerequisites"></a>Prerequisites  
- You need the following components to complete this walkthrough:  
+## <a name="prerequisites"></a>Conditions préalables  
+ Pour exécuter cette procédure pas à pas, vous devez disposer des composants suivants :  
   
 -   [!INCLUDE[vsto_vsprereq](../vsto/includes/vsto-vsprereq-md.md)]  
   
--   [!INCLUDE[Excel_15_short](../vsto/includes/excel-15-short-md.md)] or [!INCLUDE[Excel_14_short](../vsto/includes/excel-14-short-md.md)].  
+-   [!INCLUDE[Excel_15_short](../vsto/includes/excel-15-short-md.md)] ou [!INCLUDE[Excel_14_short](../vsto/includes/excel-14-short-md.md)].  
   
-## <a name="creating-the-project"></a>Creating the Project  
- In this step, you will create an Excel Workbook project using Visual Studio.  
+## <a name="creating-the-project"></a>Création du projet  
+ Dans cette étape, vous allez créer un projet de classeur Excel à l’aide de Visual Studio.  
   
-#### <a name="to-create-a-new-project"></a>To create a new project  
+#### <a name="to-create-a-new-project"></a>Pour créer un projet  
   
-1.  Create an Excel Workbook project with the name **My Excel Button**. Make sure that **Create a new document** is selected. For more information, see [How to: Create Office Projects in Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md).  
+1.  Créer un projet de classeur Excel portant le nom **mon bouton Excel**. Assurez-vous que **créer un nouveau document** est sélectionnée. Pour plus d'informations, consultez [How to: Create Office Projects in Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md).  
   
-     Visual Studio opens the new Excel workbook in the designer and adds the **My Excel Button** project to **Solution Explorer**.  
+     Visual Studio ouvre le nouveau classeur Excel dans le concepteur et ajoute le **mon bouton Excel** projet **l’Explorateur de solutions**.  
   
-## <a name="adding-controls-to-the-worksheet"></a>Adding Controls to the Worksheet  
- For this walkthrough, you will need a button and a text box on the first worksheet.  
+## <a name="adding-controls-to-the-worksheet"></a>Ajout de contrôles à la feuille de calcul  
+ Pour cette procédure pas à pas, vous devez un bouton et une zone de texte sur la première feuille de calcul.  
   
-#### <a name="to-add-a-button-and-a-text-box"></a>To add a button and a text box  
+#### <a name="to-add-a-button-and-a-text-box"></a>Pour ajouter un bouton et une zone de texte  
   
-1.  Verify that the **My Excel Button.xlsx** workbook is open in the Visual Studio designer, with `Sheet1` displayed.  
+1.  Vérifiez que le **mes Excel Button.xlsx** classeur est ouvert dans le concepteur Visual Studio, avec `Sheet1` affiché.  
   
-2.  From the **Common Controls** tab of the Toolbox, drag a <xref:Microsoft.Office.Tools.Excel.Controls.TextBox> to `Sheet1`.  
+2.  À partir de la **contrôles communs** onglet de la boîte à outils, faites glisser un <xref:Microsoft.Office.Tools.Excel.Controls.TextBox> à `Sheet1`.  
   
-3.  From the **View** menu, select **Properties Window**.  
+3.  À partir de la **vue** menu, sélectionnez **fenêtre Propriétés**.  
   
-4.  Be sure that **TextBox1** is visible in the **Properties** window drop-down box and change the **Name** property of the text box to **displayText**.  
+4.  Assurez-vous que **TextBox1** est visible dans le **propriétés** la liste déroulante de la fenêtre et modifier le **nom** propriétés de la zone de texte **displayText**.  
   
-5.  Drag a **Button** control onto `Sheet1` and change the following properties:  
+5.  Faites glisser un **bouton** contrôler sur `Sheet1` et modifiez les propriétés suivantes :  
   
-    |Property|Value|  
+    |Propriété|Valeur|  
     |--------------|-----------|  
-    |**Name**|**insertText**|  
-    |**Text**|**Insert Text**|  
+    |**Nom**|**insertText**|  
+    |**Text**|**Insérer du texte**|  
   
- Now write the code to run when the button is clicked.  
+ Maintenant écrire le code à exécuter lorsque le bouton est activé.  
   
-## <a name="populating-the-text-box-when-the-button-is-clicked"></a>Populating the Text Box when the Button is Clicked  
- Each time the user clicks the button, **Hello World!** is appended to the text box.  
+## <a name="populating-the-text-box-when-the-button-is-clicked"></a>Remplissage de la zone de texte lorsque le bouton est activé.  
+ Chaque fois que l’utilisateur clique sur le bouton, **Hello World !** est ajouté à la zone de texte.  
   
-#### <a name="to-write-to-the-text-box-when-the-button-is-clicked"></a>To write to the text box when the button is clicked  
+#### <a name="to-write-to-the-text-box-when-the-button-is-clicked"></a>Pour écrire dans la zone de texte lorsqu'un clic est effectué  
   
-1.  In **Solution Explorer**, right-click **Sheet1**, and then click **View Code** on the shortcut menu.  
+1.  Dans **l’Explorateur de solutions**, avec le bouton droit **Feuil1**, puis cliquez sur **afficher le Code** dans le menu contextuel.  
   
-2.  Add the following code to the <xref:System.Windows.Forms.Control.Click> event handler of the button:  
+2.  Ajoutez le code suivant à la <xref:System.Windows.Forms.Control.Click> Gestionnaire d’événements du bouton :  
   
-     [!code-vb[Trin_VstcoreProgrammingControlsExcel#11](../vsto/codesnippet/VisualBasic/my excel chart/Sheet1.vb#11)]  [!code-csharp[Trin_VstcoreProgrammingControlsExcel#11](../vsto/codesnippet/CSharp/Trin_VstcoreProgrammingControlsExcelCS/Sheet1.cs#11)]  
+     [!code-vb[Trin_VstcoreProgrammingControlsExcel#11](../vsto/codesnippet/VisualBasic/my excel chart/Sheet1.vb#11)]
+     [!code-csharp[Trin_VstcoreProgrammingControlsExcel#11](../vsto/codesnippet/CSharp/Trin_VstcoreProgrammingControlsExcelCS/Sheet1.cs#11)]  
   
-3.  In C#, you must add an event handler to the <xref:Microsoft.Office.Tools.Excel.Worksheet.Startup> event as shown below. For information on creating event handlers, see [How to: Create Event Handlers in Office Projects](../vsto/how-to-create-event-handlers-in-office-projects.md).  
+3.  En c#, vous devez ajouter un gestionnaire d’événements pour le <xref:Microsoft.Office.Tools.Excel.Worksheet.Startup> événement tel qu’indiqué ci-dessous. Pour plus d’informations sur la création de gestionnaires d’événements, consultez [Comment : créer des gestionnaires d’événements dans les projets Office](../vsto/how-to-create-event-handlers-in-office-projects.md).  
   
      [!code-csharp[Trin_VstcoreProgrammingControlsExcel#12](../vsto/codesnippet/CSharp/Trin_VstcoreProgrammingControlsExcelCS/Sheet1.cs#12)]  
   
-## <a name="testing-the-application"></a>Testing the Application  
- You can now test your workbook to make sure that the message **Hello World!** appears in the text box when you click the button.  
+## <a name="testing-the-application"></a>Test de l'application  
+ Vous pouvez maintenant tester votre classeur pour vous assurer que le message **Hello World !** s’affiche dans la zone de texte lorsque vous cliquez sur le bouton.  
   
-#### <a name="to-test-your-workbook"></a>To test your workbook  
+#### <a name="to-test-your-workbook"></a>Pour tester votre classeur  
   
-1.  Press F5 to run your project.  
+1.  Appuyez sur F5 pour exécuter votre projet.  
   
-2.  Click the button.  
+2.  Cliquez sur le bouton.  
   
-3.  Confirm that **Hello World!** appears in the text box.  
+3.  Vérifiez que **Hello World !** s’affiche dans la zone de texte.  
   
-## <a name="next-steps"></a>Next Steps  
- This walkthrough shows the basics of using buttons and text boxes on Excel worksheets. Here are some tasks that might come next:  
+## <a name="next-steps"></a>Étapes suivantes  
+ Cette procédure pas à pas présente les notions de base de l’utilisation des boutons et des zones de texte dans des feuilles de calcul Excel. Voici quelques tâches susceptibles de venir après :  
   
--   Deploying the project. For more information, see [Deploying an Office Solution](../vsto/deploying-an-office-solution.md).  
+-   Déploiement du projet. Pour plus d’informations, consultez [déploiement d’une Solution Office](../vsto/deploying-an-office-solution.md).  
   
--   Using check boxes to change formatting. For more information, see [Walkthrough: Changing Worksheet Formatting Using CheckBox Controls](../vsto/walkthrough-changing-worksheet-formatting-using-checkbox-controls.md).  
+-   À l’aide des cases à cocher pour modifier la mise en forme. Pour plus d’informations, consultez [procédure pas à pas : modification de feuille de calcul mise en forme à l’aide de contrôles CheckBox](../vsto/walkthrough-changing-worksheet-formatting-using-checkbox-controls.md).  
   
-## <a name="see-also"></a>See Also  
- [How to: Add Windows Forms Controls to Office Documents](../vsto/how-to-add-windows-forms-controls-to-office-documents.md)   
- [Walkthroughs Using Excel](../vsto/walkthroughs-using-excel.md)   
- [Limitations of Windows Forms Controls on Office Documents](../vsto/limitations-of-windows-forms-controls-on-office-documents.md)  
+## <a name="see-also"></a>Voir aussi  
+ [Comment : ajouter des contrôles Windows Forms à des Documents Office](../vsto/how-to-add-windows-forms-controls-to-office-documents.md)   
+ [Procédures pas à pas utilisant Excel](../vsto/walkthroughs-using-excel.md)   
+ [Limitations des contrôles Windows Forms dans les documents Office](../vsto/limitations-of-windows-forms-controls-on-office-documents.md)  
   
   

@@ -4,43 +4,28 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-sdk
+ms.technology: vs-ide-sdk
 ms.tgt_pltfrm: 
 ms.topic: article
-f1_keywords:
-- UsedCommands
+f1_keywords: UsedCommands
 helpviewer_keywords:
 - UsedCommands element (VSCT XML schema)
 - VSCT XML schema elements, UsedCommands
 ms.assetid: 5e000ee0-a919-46e9-9277-2a0659f1eb78
-caps.latest.revision: 13
+caps.latest.revision: "13"
+author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-translation.priority.mt:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
-translationtype: Machine Translation
-ms.sourcegitcommit: 5db97d19b1b823388a465bba15d057b30ff0b3ce
-ms.openlocfilehash: 2988cc106a87f82dc2a670076e9ff396802b7644
-ms.lasthandoff: 02/22/2017
-
+ms.openlocfilehash: a51359a840812bc20714df91a3357801366f3616
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: fr-FR
+ms.lasthandoff: 10/31/2017
 ---
 # <a name="usedcommands-element"></a>Élément de UsedCommands
 L’élément UsedCommands regroupe les éléments UsedCommand et autres regroupements UsedCommands.  
   
- L’élément UsedCommands est facultatif. Si vous n’appelez pas les commandes définies en dehors de votre package, il est inutile d’inclure cette section dans le fichier .vsct.  
+ L’élément UsedCommands est facultative. Si vous n’appelez pas les commandes définies à l’extérieur de votre package, il est inutile d’inclure cette section dans votre fichier .vsct.  
   
 ## <a name="syntax"></a>Syntaxe  
   
@@ -57,19 +42,19 @@ L’élément UsedCommands regroupe les éléments UsedCommand et autres regroup
   
 |Attribut|Description|  
 |---------------|-----------------|  
-|Condition|Facultatif. Consultez la page [attributs conditionnels](../extensibility/vsct-xml-schema-conditional-attributes.md).|  
+|Condition|Facultatif. Consultez [attributs conditionnels](../extensibility/vsct-xml-schema-conditional-attributes.md).|  
   
 ### <a name="child-elements"></a>Éléments enfants  
   
 |Élément|Description|  
 |-------------|-----------------|  
-|[Élément de UsedCommand](../extensibility/usedcommand-element.md)|La commande qui est implémentée par un autre code.|  
+|[Élément UsedCommand](../extensibility/usedcommand-element.md)|La commande est implémentée par un autre code.|  
   
 ### <a name="parent-elements"></a>Éléments parents  
   
 |Élément|Description|  
 |-------------|-----------------|  
-|[Élément de CommandTable](../extensibility/commandtable-element.md)|Définit tous les éléments qui représentent des commandes (par exemple, des éléments de menu, menus, barres d’outils et zones de liste déroulante) qui fournit un VSPackage à l’environnement de développement intégré (IDE).|  
+|[Élément CommandTable](../extensibility/commandtable-element.md)|Définit tous les éléments qui représentent des commandes (par exemple, des éléments de menu, menus, barres d’outils et zones de liste déroulante) par un VSPackage à l’environnement de développement intégré (IDE).|  
   
 ## <a name="example"></a>Exemple  
   
@@ -83,4 +68,4 @@ L’élément UsedCommands regroupe les éléments UsedCommand et autres regroup
   
 ## <a name="see-also"></a>Voir aussi  
  [Élément de UsedCommand](../extensibility/usedcommand-element.md)   
- [Table de commandes de Visual Studio (. Fichiers VSCT)](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)
+ [Fichiers Visual Studio Command Table (.Vsct)](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)

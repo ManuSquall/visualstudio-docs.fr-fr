@@ -1,61 +1,61 @@
 ---
-title: "IDebugExpressionContext2 | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "IDebugExpressionContext2"
-helpviewer_keywords: 
-  - "Interface de IDebugExpressionContext2"
+title: IDebugExpressionContext2 | Documents Microsoft
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords: IDebugExpressionContext2
+helpviewer_keywords: IDebugExpressionContext2 interface
 ms.assetid: 577fdaae-4b2d-4112-9839-ab899535fa6f
-caps.latest.revision: 11
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 11
+caps.latest.revision: "11"
+author: gregvanl
+ms.author: gregvanl
+manager: ghogen
+ms.openlocfilehash: cfeede9a99a31acefb5fdf34afd8d6258c9f1019
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: fr-FR
+ms.lasthandoff: 10/31/2017
 ---
-# IDebugExpressionContext2
-[!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]
-
-cette interface représente un contexte pour l'évaluation de l'expression  
+# <a name="idebugexpressioncontext2"></a>IDebugExpressionContext2
+Cette interface représente un contexte pour l’évaluation d’expression  
   
-## Syntaxe  
+## <a name="syntax"></a>Syntaxe  
   
 ```  
 IDebugExpressionContext2 : IUnknown  
 ```  
   
-## Remarques à l'intention des implémenteurs  
- Le moteur \(DE\) de débogage implémente cette interface pour représenter un contexte dans lequel une expression sera évaluée.  
+## <a name="notes-for-implementers"></a>Notes pour les implémenteurs  
+ Le moteur de débogage (DE) implémente cette interface pour représenter un contexte dans lequel une expression peut être évaluée.  
   
-## Remarques pour les appelants  
- Un appel à [GetExpressionContext](../../../extensibility/debugger/reference/idebugstackframe2-getexpressioncontext.md) retourne cette interface.  Cette interface est accessible uniquement lorsque le programme débogué a été suspendu et un frame de pile est disponible.  
+## <a name="notes-for-callers"></a>Remarques pour les appelants  
+ Un appel à [GetExpressionContext](../../../extensibility/debugger/reference/idebugstackframe2-getexpressioncontext.md) retourne cette interface. Cette interface est accessible uniquement lorsque le programme en cours de débogage a été interrompu et un frame de pile n’est disponible.  
   
-## méthodes en commande de Vtable  
- Le tableau suivant répertorie les méthodes d' `IDebugExpressionContext2`.  
+## <a name="methods-in-vtable-order"></a>Méthodes dans l'ordre Vtable  
+ Le tableau suivant présente les méthodes de `IDebugExpressionContext2`.  
   
 |Méthode|Description|  
-|-------------|-----------------|  
-|[GetName](../Topic/IDebugExpressionContext2::GetName.md)|extrait le nom du contexte d'évaluation.|  
-|[ParseText](../../../extensibility/debugger/reference/idebugexpressioncontext2-parsetext.md)|Analyse une expression basée sur une texte pour l'évaluation.|  
+|------------|-----------------|  
+|[GetName](../../../extensibility/debugger/reference/idebugexpressioncontext2-getname.md)|Récupère le nom du contexte d’évaluation.|  
+|[ParseText](../../../extensibility/debugger/reference/idebugexpressioncontext2-parsetext.md)|Analyse une expression basée sur le texte pour l’évaluation.|  
   
-## Notes  
- Un contexte d'évaluation peut être considéré comme place de l'évaluation d'une expression.  
+## <a name="remarks"></a>Remarques  
+ Un contexte d’évaluation peut être considéré comme une étendue pour effectuer l’évaluation de l’expression.  
   
- Lorsqu'un programme a désactivé, le gestionnaire de débogage de session \(SDM\) obtient un frame de pile du De avec un appel à [EnumFrameInfo](../../../extensibility/debugger/reference/idebugthread2-enumframeinfo.md).  Le SDM appelle ensuite [GetExpressionContext](../../../extensibility/debugger/reference/idebugstackframe2-getexpressioncontext.md) pour obtenir l'interface d' `IDebugExpressionContext2` .  Cela est suivi par un appel à [ParseText](../../../extensibility/debugger/reference/idebugexpressioncontext2-parsetext.md) pour créer une interface d' [IDebugExpression2](../../../extensibility/debugger/reference/idebugexpression2.md) , qui représente l'expression analysée prête à être évalué.  
+ Lorsqu’un programme s’est arrêté, le Gestionnaire de session de débogage (SDM) Obtient un frame de pile de la DE avec un appel à [EnumFrameInfo](../../../extensibility/debugger/reference/idebugthread2-enumframeinfo.md). Le SDM appelle ensuite [GetExpressionContext](../../../extensibility/debugger/reference/idebugstackframe2-getexpressioncontext.md) pour obtenir le `IDebugExpressionContext2` interface. Il est suivi par un appel à [ParseText](../../../extensibility/debugger/reference/idebugexpressioncontext2-parsetext.md) pour créer un [IDebugExpression2](../../../extensibility/debugger/reference/idebugexpression2.md) interface qui représente l’expression analysée prête à être évaluée.  
   
-## Configuration requise  
- en\-tête : msdbg.h  
+## <a name="requirements"></a>Spécifications  
+ En-tête : msdbg.h  
   
- l'espace de noms : Microsoft.VisualStudio.Debugger.Interop  
+ Namespace : Microsoft.VisualStudio.Debugger.Interop  
   
- Assembly : Microsoft.VisualStudio.Debugger.Interop.dll  
+ Assembly : Microsoft.VisualStudio.Debugger.Interop.dll  
   
-## Voir aussi  
+## <a name="see-also"></a>Voir aussi  
  [Interfaces de base](../../../extensibility/debugger/reference/core-interfaces.md)   
  [GetExpressionContext](../../../extensibility/debugger/reference/idebugstackframe2-getexpressioncontext.md)   
  [IDebugExpression2](../../../extensibility/debugger/reference/idebugexpression2.md)

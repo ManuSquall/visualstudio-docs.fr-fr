@@ -1,66 +1,66 @@
 ---
-title: "Bo&#238;te de dialogue du s&#233;lecteur d&#39;URL (d&#233;veloppement SharePoint dans Visual Studio)"
-ms.custom: ""
-ms.date: "02/02/2017"
-ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "office-development"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "VS.SharePointTools.VWD.URLPicker"
-dev_langs: 
-  - "VB"
-  - "CSharp"
-helpviewer_keywords: 
-  - "développement SharePoint dans Visual Studio, concepteur"
-  - "développement SharePoint dans Visual Studio, sélecteur d'URL"
+title: "Boîte de dialogue Sélecteur d’URL (développement SharePoint dans Visual Studio) | Documents Microsoft"
+ms.custom: 
+ms.date: 02/02/2017
+ms.reviewer: 
+ms.suite: 
+ms.technology: office-development
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords: VS.SharePointTools.VWD.URLPicker
+dev_langs:
+- VB
+- CSharp
+helpviewer_keywords:
+- SharePoint development in Visual Studio, URL picker
+- SharePoint development in Visual Studio, designer
 ms.assetid: 33f8f521-e1f8-4242-a580-8a4bd9cb5ddc
-caps.latest.revision: 15
-author: "kempb"
-ms.author: "kempb"
-manager: "ghogen"
-caps.handback.revision: 14
+caps.latest.revision: "15"
+author: gewarren
+ms.author: gewarren
+manager: ghogen
+ms.openlocfilehash: c97bd5e6fb9ad320a9f353eaa67114931a0d1b54
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: fr-FR
+ms.lasthandoff: 10/31/2017
 ---
-# Bo&#238;te de dialogue du s&#233;lecteur d&#39;URL (d&#233;veloppement SharePoint dans Visual Studio)
-  Dans la boîte de dialogue du sélecteur d'URL, vous avez la possibilité de choisir des fichiers tels que des fichiers de page maître ou des fichiers image se trouvant dans votre projet ou sur le serveur qui exécute SharePoint.  
+# <a name="url-picker-dialog-box-sharepoint-development-in-visual-studio"></a>Boîte de dialogue du sélecteur d'URL (développement SharePoint dans Visual Studio)
+  Dans la boîte de dialogue Sélecteur de URL, vous pouvez choisir des fichiers tels que les fichiers de page maître ou des fichiers image qui se trouvent dans votre projet ou sur le serveur local qui exécute SharePoint.  
   
- Cette boîte de dialogue apparaît lorsque vous avez la possibilité de choisir un fichier pour définir une propriété.  Vous pouvez ouvrir cette boîte de dialogue en choisissant le bouton de sélection \(![Bouton de sélection du concepteur ASP.NET mobile](~/sharepoint/media/mwellipsis.gif "Bouton de sélection du concepteur ASP.NET mobile") \) en regard de différentes propriétés dans la fenêtre **Propriétés**.  Le bouton de sélection apparaît également comme une invite IntelliSense lorsque vous assignez des valeurs à certains attributs à partir du mode **Source** du concepteur.  
+ Cette boîte de dialogue s’affiche lorsque vous avez la possibilité de choisir un fichier pour définir une propriété. Vous pouvez ouvrir cette boîte de dialogue en cliquant sur le bouton de sélection (![ellipse de concepteur ASP.NET Mobile](../sharepoint/media/mwellipsis.gif "ellipse de concepteur ASP.NET Mobile")) en regard de différentes propriétés dans le **depropriétés** fenêtre. Le bouton de sélection apparaît également comme une IntelliSense invite lorsque vous assignez des valeurs à certains attributs dans le **Source** mode du concepteur.  
   
-## Liste UIElement  
+## <a name="uielement-list"></a>Liste UIElement  
  **Dossiers du projet**  
- Affiche la liste des dossiers définis dans le projet ou sur le serveur qui exécute SharePoint.  Choisissez le bouton de développement pour afficher les sous\-dossiers.  
+ Affiche la liste des dossiers définis dans le projet ou sur le serveur local qui exécute SharePoint. Choisissez le bouton pour afficher les sous-dossiers.  
   
- Développez le nœud **Projet** pour choisissez des fichiers dans votre projet.  Pour apparaître comme sélectionnables dans la boîte de dialogue, les fichiers dans votre projet doivent être conformes aux critères suivants :  
+ Développez le **projet** nœud à sélectionner les fichiers dans votre projet. Pour apparaître comme sélectionnables dans la boîte de dialogue, les fichiers de votre projet doivent respecter les critères suivants :  
   
 -   Le fichier doit se trouver dans un dossier mappé.  
   
 -   Le fichier doit être ajouté au package de solution.  
   
--   Le fichier ne peut pas figurer dans un autre projet.  
+-   Le fichier ne peut pas se trouver dans un autre projet.  
   
- Si vous souhaitez référencer des fichiers non conformes à ces critères, vous devez entrer manuellement le chemin d'accès du fichier.  
+ Si vous souhaitez faire référence aux fichiers qui ne répondent pas à ces critères, vous devez entrer le chemin d’accès du fichier manuellement.  
   
- Développez le nœud **Serveur** pour choisir les fichiers situés sur le serveur local exécutant SharePoint.  Pour apparaître comme sélectionnables dans la boîte de dialogue, ces fichiers doivent être conformes aux critères suivants :  
+ Développez le **Server** nœud à sélectionner les fichiers qui sont trouvent sur le serveur local qui exécute SharePoint. Pour apparaître comme sélectionnables dans la boîte de dialogue, ces fichiers doivent respecter les critères suivants :  
   
--   Le fichier doit se trouver dans l'un des dossiers mappés suivants : **Images**, **Layouts** ou **ControlTemplates**.  
+-   Le fichier doit se trouver dans un des dossiers mappés suivants : **Images**, **dispositions**, ou **ControlTemplates**.  
   
 -   Le fichier ne peut pas se trouver dans la base de données de contenu SharePoint.  
   
- Si vous souhaitez référencer des fichiers non conformes à ces critères, vous devez entrer manuellement le chemin d'accès du fichier.  
+ Si vous souhaitez faire référence aux fichiers qui ne répondent pas à ces critères, vous devez entrer le chemin d’accès du fichier manuellement.  
   
  **Contenu du dossier**  
- Affiche la liste des fichiers du dossier sélectionné.  Choisissez un fichier, puis choisissez le bouton **OK** pour fermer la boîte de dialogue et envoyer votre sélection au processus qui l'a appelée.  
+ Affiche la liste des fichiers du dossier sélectionné. Choisissez un fichier, puis le **OK** bouton pour fermer la boîte de dialogue et envoyer votre sélection au processus qui l’a appelée.  
   
- **Type de fichiers**  
- Vous permet de choisir dans une liste de fichiers appropriés à la tâche que vous exécutez.  
+ **Types de fichiers**  
+ Vous permet de choisir parmi une liste de fichiers qui sont appropriés pour la tâche que vous effectuez.  
   
-## Voir aussi  
- [Création de pages d'application pour SharePoint](../sharepoint/creating-application-pages-for-sharepoint.md)   
+## <a name="see-also"></a>Voir aussi  
+ [Création de Pages d’Application pour SharePoint](../sharepoint/creating-application-pages-for-sharepoint.md)   
  [Création de composants WebPart pour SharePoint](../sharepoint/creating-web-parts-for-sharepoint.md)   
- [Création de contrôles réutilisables pour les composants WebPart ou les pages d'application](../sharepoint/creating-reusable-controls-for-web-parts-or-application-pages.md)   
- [Visual Studio Web Development Content Map](http://msdn.microsoft.com/fr-fr/9c31f93b-c8fb-4599-9b14-6194ec8c7539)  
+ [Création de contrôles réutilisables pour les composants WebPart ou les pages d’application](../sharepoint/creating-reusable-controls-for-web-parts-or-application-pages.md)   
   
   

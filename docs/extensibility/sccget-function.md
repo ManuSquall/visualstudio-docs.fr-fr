@@ -1,46 +1,29 @@
 ---
-title: SccGet Function | Microsoft Docs
+title: Fonction de SccGet | Documents Microsoft
 ms.custom: 
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-sdk
+ms.technology: vs-ide-sdk
 ms.tgt_pltfrm: 
 ms.topic: article
-f1_keywords:
-- SccGet
-helpviewer_keywords:
-- SccGet function
+f1_keywords: SccGet
+helpviewer_keywords: SccGet function
 ms.assetid: 09a18bd2-b788-411a-9da6-067d806e46f6
-caps.latest.revision: 14
+caps.latest.revision: "14"
+author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-translation.priority.mt:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
+ms.openlocfilehash: 20abad6a195d8493be8849588b86035d03fdc654
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
 ms.translationtype: MT
-ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
-ms.openlocfilehash: 2c761f90eaf4882407122336827e2d95f3edf2ac
-ms.contentlocale: fr-fr
-ms.lasthandoff: 08/28/2017
-
+ms.contentlocale: fr-FR
+ms.lasthandoff: 10/31/2017
 ---
-# <a name="sccget-function"></a>SccGet Function
-This function retrieves a copy of one or more files for viewing and compiling but not for editing. In most systems, the files are tagged as read-only.  
+# <a name="sccget-function"></a>SccGet (fonction)
+Cette fonction récupère une copie d’un ou plusieurs fichiers pour l’affichage et la compilation, mais ne pas pour la modification. Dans la plupart des systèmes, les fichiers sont marqués comme étant en lecture seule.  
   
-## <a name="syntax"></a>Syntax  
+## <a name="syntax"></a>Syntaxe  
   
 ```cpp  
 SCCRTN SccGet(  
@@ -53,71 +36,71 @@ SCCRTN SccGet(
 );  
 ```  
   
-#### <a name="parameters"></a>Parameters  
+#### <a name="parameters"></a>Paramètres  
  pvContext  
- [in] The context structure of the source control plug-in.  
+ [in] La structure de contexte de plug-in du contrôle de code source.  
   
  hWnd  
- [in] A handle to the IDE window that the source control plug-in can use as a parent for any dialog boxes that it provides.  
+ [in] Handle vers la fenêtre de l’IDE que le plug-in de contrôle de code source peut utiliser en tant que parent pour toutes les boîtes de dialogue qu’il fournit.  
   
  nFiles  
- [in] Number of files specified in the `lpFileNames` array.  
+ [in] Nombre de fichiers spécifiés dans le `lpFileNames` tableau.  
   
  lpFileNames  
- [in] Array of fully qualified names of files to be retrieved.  
+ [in] Tableau des noms complets des fichiers à récupérer.  
   
  fOptions  
- [in] Command flags (`SCC_GET_ALL`, `SCC_GET_RECURSIVE`).  
+ [in] Indicateurs de commande (`SCC_GET_ALL`, `SCC_GET_RECURSIVE`).  
   
  pvOptions  
- [in] Source control plug-in-specific options.  
+ [in] Options spécifiques au plug-in du contrôle source.  
   
-## <a name="return-value"></a>Return Value  
- The source control plug-in implementation of this function is expected to return one of the following values:  
+## <a name="return-value"></a>Valeur de retour  
+ L’implémentation de plug-in de contrôle de source de cette fonction est censée retourner l’une des valeurs suivantes :  
   
-|Value|Description|  
+|Valeur|Description|  
 |-----------|-----------------|  
-|SCC_OK|Success of get operation.|  
-|SCC_E_FILENOTCONTROLLED|The file is not under source control.|  
-|SCC_E_OPNOTSUPPORTED|The source control system does not support this operation.|  
-|SCC_E_FILEISCHECKEDOUT|Cannot get the file that the user currently has checked out.|  
-|SCC_E_ACCESSFAILURE|There was a problem accessing the source control system, probably due to network or contention issues. A retry is recommended.|  
-|SCC_E_NOSPECIFIEDVERSION|Specified an invalid version or date/time.|  
-|SCC_E_NONSPECIFICERROR|Nonspecific failure; file was not synchronized.|  
-|SCC_I_OPERATIONCANCELED|Operation cancelled before completion.|  
-|SCC_E_NOTAUTHORIZED|The user is not authorized to perform this operation.|  
+|SCC_OK|Succès de l’opération d’obtention.|  
+|SCC_E_FILENOTCONTROLLED|Le fichier n’est pas sous contrôle de code source.|  
+|SCC_E_OPNOTSUPPORTED|Le système de contrôle de code source ne prend pas en charge cette opération.|  
+|SCC_E_FILEISCHECKEDOUT|Impossible d’obtenir le fichier que l’utilisateur a extrait.|  
+|SCC_E_ACCESSFAILURE|Impossible d’accéder au système de contrôle source, probablement en raison de problèmes réseau ou de contention. Une nouvelle tentative est recommandée.|  
+|SCC_E_NOSPECIFIEDVERSION|Date/heure ou une version non valide spécifié.|  
+|SCC_E_NONSPECIFICERROR|Erreur non spécifique ; fichier n’a pas été synchronisé.|  
+|SCC_I_OPERATIONCANCELED|Opération annulée avant la fin.|  
+|SCC_E_NOTAUTHORIZED|L’utilisateur n’est pas autorisé à effectuer cette opération.|  
   
-## <a name="remarks"></a>Remarks  
- This function is called with a count and an array of names of the files to be retrieved. If the IDE passes the flag `SCC_GET_ALL`, this means that the items in `lpFileNames` are not files but directories, and that all files under source control in the given directories are to be retrieved.  
+## <a name="remarks"></a>Remarques  
+ Cette fonction est appelée avec un nombre et un tableau de noms des fichiers à récupérer. Si l’IDE passe l’indicateur `SCC_GET_ALL`, cela signifie que les éléments de `lpFileNames` ne sont pas des fichiers, mais les répertoires, et que tous les fichiers sous contrôle de code source dans les répertoires donnés doivent être récupérés.  
   
- The `SCC_GET_ALL` flag can be combined with the `SCC_GET_RECURSIVE` flag to retrieve all files in the given directories and all subdirectories as well.  
+ Le `SCC_GET_ALL` indicateur peut être combiné avec le `SCC_GET_RECURSIVE` indicateur pour récupérer tous les fichiers dans les répertoires donnés et ainsi de tous les sous-répertoires.  
   
 > [!NOTE]
->  `SCC_GET_RECURSIVE` should never be passed without `SCC_GET_ALL`. Also, note that if directories C:\A and C:\A\B are both passed on a recursive get, C:\A\B and all its subdirectories will actually be retrieved twice. It is the IDE's responsibility—and not the source control plug-in's—to make sure that duplicates such as this are kept out of the array.  
+>  `SCC_GET_RECURSIVE`ne doit jamais être passé sans `SCC_GET_ALL`. Notez également que si les répertoires C:\A et C:\A\B sont tous deux passé sur une récursive, C:\A\B et tous ses sous-répertoires seront effectivement récupérés à deux reprises. Il incombe de l’IDE, et pas la source de contrôle du plug-in : pour vous assurer que les doublons de telles restent hors du tableau.  
   
- Finally, even if a source control plug-in specified the `SCC_CAP_GET_NOUI` flag on initialization, indicating that it does not have a user interface for a Get command, this function may still be called by the IDE to retrieve files. The flag simply means that the IDE does not display a Get menu item and that the plug-in is not expected to provide any UI.  
+ Enfin, même si un contrôle de source du plug-in spécifié le `SCC_CAP_GET_NOUI` indicateur lors de l’initialisation, indiquant qu’il n’a pas une interface utilisateur pour une commande Get, cette fonction peut encore être appelée par l’IDE pour récupérer des fichiers. L’indicateur signifie simplement que l’IDE n’affiche pas un élément de menu Get et que le plug-in n’est pas prévu fournir l’interface utilisateur.  
   
-## <a name="renaming-and-sccget"></a>Renaming and SccGet  
- Situation: a user checks out a file, for example, a.txt, and modifies it. Before a.txt can be checked in, a second user renames a.txt to b.txt in the source control database, checks out b.txt, makes some modifications to the file, and checks the file in. The first user wants the changes made by the second user so the first user renames their local version of a.txt file to b.txt and does a get on the file. However, the local cache that keeps track of version numbers still thinks the first version of a.txt is stored locally and so source control cannot resolve the differences.  
+## <a name="renaming-and-sccget"></a>Changement de nom et SccGet  
+ Situation : un utilisateur extrait un fichier, par exemple, a.txt et le modifie. Avant de a.txt peuvent être archivées, un deuxième utilisateur renomme a.txt b.txt dans la base de données de contrôle de code source, extrait b.txt, met certaines modifications au fichier et vérifie le fichier. Le premier utilisateur souhaite que les modifications apportées par le deuxième utilisateur afin que le premier utilisateur renomme b.txt leur version locale du fichier a.txt et est une opération get sur le fichier. Toutefois, le cache local qui effectue le suivi des numéros de version considère toujours que la première version d’un fichier a.txt est stockée localement et par conséquent, contrôle de code source ne peut pas résoudre les différences.  
   
- There are two ways to resolve this situation where the local cache of source control versions becomes out of sync with the source control database:  
+ Il existe deux manières de résoudre cette situation où le cache local de versions de contrôle de code source est plus synchronisé avec la base de données de contrôle de code source :  
   
-1.  Do not allow renaming a file in the source control database that is currently checked out.  
+1.  N’autorisez pas la modification du nom d’un fichier dans la base de données de contrôle de source qui est actuellement extrait.  
   
-2.  Do the equivalent of "delete old" followed by "add new". The following algorithm is one way to accomplish this.  
+2.  Effectuer l’équivalent de « supprimer ancien » suivie de « Ajouter ». L’algorithme suivant est une façon d’y parvenir.  
   
-    1.  Call the [SccQueryChanges](../extensibility/sccquerychanges-function.md) function to learn about the renaming of a.txt to b.txt in the source control database.  
+    1.  Appelez le [SccQueryChanges](../extensibility/sccquerychanges-function.md) fonction pour en savoir plus sur le changement de nom d’un fichier a.txt pour b.txt dans la base de données de contrôle de code source.  
   
-    2.  Rename the local a.txt to b.txt.  
+    2.  Renommez le fichier a.txt local b.txt.  
   
-    3.  Call the `SccGet` function for both a.txt and b.txt.  
+    3.  Appelez le `SccGet` fonction pour a.txt et b.txt.  
   
-    4.  Because a.txt does not exist in the source control database, the local version cache is purged of the missing a.txt version information.  
+    4.  Étant donné que le fichier a.txt n’existe pas dans la base de données de contrôle de code source, le cache de la version locale est purgé des informations de version a.txt manquant.  
   
-    5.  The b.txt file being checked out is merged with the contents of the local b.txt file.  
+    5.  Le fichier b.txt en cours d’extraction est fusionné avec le contenu du fichier local b.txt.  
   
-    6.  The updated b.txt file can now be checked in.  
+    6.  Le fichier b.txt mis à jour peut désormais être archivé.  
   
-## <a name="see-also"></a>See Also  
- [Source Control Plug-in API Functions](../extensibility/source-control-plug-in-api-functions.md)   
- [Bitflags Used by Specific Commands](../extensibility/bitflags-used-by-specific-commands.md)
+## <a name="see-also"></a>Voir aussi  
+ [Fonctions d’API de plug-in de contrôle de source](../extensibility/source-control-plug-in-api-functions.md)   
+ [Indicateurs de bits utilisés par des commandes spécifiques](../extensibility/bitflags-used-by-specific-commands.md)

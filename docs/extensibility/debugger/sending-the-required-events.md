@@ -1,41 +1,42 @@
 ---
-title: "Envoyer les &#233;v&#233;nements requis | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-helpviewer_keywords: 
-  - "événements de demande de débogage (débogage SDK),"
+title: "Envoyer les événements requis | Documents Microsoft"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+helpviewer_keywords: debugging [Debugging SDK], required events
 ms.assetid: 08319157-43fb-44a9-9a63-50b919fe1377
-caps.latest.revision: 7
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 7
+caps.latest.revision: "7"
+author: gregvanl
+ms.author: gregvanl
+manager: ghogen
+ms.openlocfilehash: 30a5b1150d44c138465db36da2b032b71f075397
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: fr-FR
+ms.lasthandoff: 10/31/2017
 ---
-# Envoyer les &#233;v&#233;nements requis
-[!INCLUDE[vs2017banner](../../code-quality/includes/vs2017banner.md)]
-
-utilisez cette procédure pour envoyer des événements requis.  
+# <a name="sending-the-required-events"></a>Envoyer les événements requis
+Utilisez cette procédure pour l’envoi d’événements requis.  
   
-## Processus d'envoi d'événements requis  
- Les événements suivants sont nécessaires, dans cet ordre, en créant un moteur de débogage \(DE\) et en les joignant à un programme :  
+## <a name="process-for-sending-required-events"></a>Processus d’envoi d’événements requis  
+ Les événements suivants sont requis, dans cet ordre, lors de la création d’un débogage du moteur (DE) et en l’attachant à un programme :  
   
-1.  Envoyez un objet événement d' [IDebugEngineCreateEvent2](../../extensibility/debugger/reference/idebugenginecreateevent2.md) au gestionnaire de débogage de session \(SDM\) lorsque le De est initialisée pour déboguer un ou plusieurs programmes dans un processus.  
+1.  Envoyer un [IDebugEngineCreateEvent2](../../extensibility/debugger/reference/idebugenginecreateevent2.md) objet d’événement pour le Gestionnaire de session de débogage (SDM) lors de l’initialisation de la DE un ou plusieurs programmes dans un processus de débogage.  
   
-2.  Lorsque le programme à déboguer est attaché, envoyez un objet événement d' [IDebugProgramCreateEvent2](../../extensibility/debugger/reference/idebugprogramcreateevent2.md) au SDM.  Cet événement peut être un événement arrêtant, selon votre conception du moteur.  
+2.  Lorsque le programme à déboguer est attaché à, envoyer un [IDebugProgramCreateEvent2](../../extensibility/debugger/reference/idebugprogramcreateevent2.md) objet d’événement pour le SDM. Cet événement peut être un événement d’arrêt, en fonction de votre conception de moteur.  
   
-3.  Si le programme est attaché lorsque le processus est lancé, envoyez un objet événement d' [IDebugThreadCreateEvent2](../../extensibility/debugger/reference/idebugthreadcreateevent2.md) au SDM pour informer l'IDE de le nouveau thread.  Cet événement peut être un événement arrêtant, selon votre conception du moteur.  
+3.  Si le programme est attaché à lorsque le processus est appelé, envoyez un [IDebugThreadCreateEvent2](../../extensibility/debugger/reference/idebugthreadcreateevent2.md) objet d’événement pour le SDM pour notifier l’IDE du nouveau thread. Cet événement peut être un événement d’arrêt, en fonction de votre conception de moteur.  
   
-4.  Envoyez un objet événement d' [IDebugLoadCompleteEvent2](../../extensibility/debugger/reference/idebugloadcompleteevent2.md) au SDM lorsque le programme débogué est le chargement terminé ou lorsque la jointure au programme est terminé.  Cet événement doit être un événement arrêtant.  
+4.  Envoyer un [IDebugLoadCompleteEvent2](../../extensibility/debugger/reference/idebugloadcompleteevent2.md) objet d’événement pour le SDM lorsque le programme débogué est le chargement terminé ou quand l’attachement au programme est terminé. Cet événement doit être un événement d’arrêt.  
   
-5.  Si l'application à déboguer est lancée, envoyez un objet événement d' [IDebugEntryPointEvent2](../../extensibility/debugger/reference/idebugentrypointevent2.md) au SDM lorsque la première instruction de code dans l'architecture au moment de l'exécution est sur le point d'être exécutée.  Cet événement est toujours un événement arrêtant.  En faisant \- pas détaillé dans la session de débogage, l'IDE s'arrête à cet événement.  
+5.  Si l’application à déboguer est lancée, envoyez un [IDebugEntryPointEvent2](../../extensibility/debugger/reference/idebugentrypointevent2.md) objet d’événement pour le SDM lors de la première instruction du code dans l’architecture de l’exécution est sur le point d’être exécutée. Cet événement est toujours un arrêt. Lors de l’exécution pas à pas dans la session de débogage, l’IDE s’arrête sur cet événement.  
   
 > [!NOTE]
->  De nombreux langages utilisent les initialiseurs globaux ou les fonctions externes et précompilé \(de la bibliothèque CRT ou du \_Main\) au début de leur code.  Si le langage du programme que vous déboguez contient l'une ou l'autre de ces types d'éléments avant le point d'entrée initiale, ce code est exécuté et l'événement point d'entrée est envoyé lorsque le point d'entrée d'utilisateur, comme **principal** ou `WinMain`, est atteint.  
+>  De nombreux langages utilisent initialiseurs globales ou des fonctions externes, précompilées (à partir de la bibliothèque CRT ou le _Main) au début du code. Si la langue du programme que vous déboguez contient un de ces types d’éléments avant le point d’entrée initial, ce code est exécuté et l’événement de point d’entrée est envoyé lorsque l’utilisateur point d’entrée, tel que **principal** ou `WinMain`, a été atteint.  
   
-## Voir aussi  
- [L'activation d'un programme à déboguer](../../extensibility/debugger/enabling-a-program-to-be-debugged.md)
+## <a name="see-also"></a>Voir aussi  
+ [Activation d’un programme à déboguer](../../extensibility/debugger/enabling-a-program-to-be-debugged.md)

@@ -1,47 +1,46 @@
 ---
-title: "How to: Expand and Collapse Spy++ Trees | Microsoft Docs"
-ms.custom: ""
-ms.date: "12/05/2016"
-ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-debug"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-helpviewer_keywords: 
-  - "Expanding and Collapsing Spy++ Trees"
+title: "Comment : développer et réduire des arborescences Spy ++ | Documents Microsoft"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-debug
+ms.tgt_pltfrm: 
+ms.topic: article
+helpviewer_keywords: Expanding and Collapsing Spy++ Trees
 ms.assetid: 22993182-7026-4155-8046-b84fd99f803c
-caps.latest.revision: 4
-caps.handback.revision: 4
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
+caps.latest.revision: "4"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: 6628ad8decf04fdb4a031c62c2dc3c4af5b179d2
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: fr-FR
+ms.lasthandoff: 10/31/2017
 ---
-# How to: Expand and Collapse Spy++ Trees
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
-
-Vous pouvez développer et réduire les vues Fenêtres, Processus et Threads de deux façons différentes : en cliquant sur les icônes de la fenêtre ou via le menu **Arborescence**.  Les icônes \+ et – de l'arborescence se comportent de la même façon que dans la fenêtre projet Visual C\+\+.  
+# <a name="how-to-expand-and-collapse-spy-trees"></a>Comment : développer et réduire des arborescences Spy++
+Vous pouvez développer et réduire les vues fenêtres, processus et Threads à l’aide de deux méthodes : en cliquant sur les icônes dans la fenêtre ou à l’aide de la **arborescence** menu. Le + et - icônes dans l’arborescence agissent comme dans la fenêtre du projet Visual C++.  
   
- Le menu **Arborescence** contient quatre commandes :  
+ Le **arborescence** menu contient quatre commandes :  
   
 |Commande de menu|Description|  
-|----------------------|-----------------|  
-|**Développer un niveau**|Développe l'élément actuellement sélectionné au niveau suivant.|  
-|**Développer une branche**|Développe complètement l'élément actuellement sélectionné.|  
-|**Développer tout**|Développe complètement tous les éléments de la fenêtre.|  
-|**Réduire**|Réduit complètement l'élément actuellement sélectionné.|  
+|------------------|-----------------|  
+|**Développer un niveau**|Développe l’élément actuellement sélectionné vers le niveau suivant.|  
+|**Développez la branche**|Développe entièrement l’élément actuellement sélectionné.|  
+|**Développer tout**|Développe complètement tous les éléments dans la fenêtre.|  
+|**Réduire**|Réduit complètement l’élément actuellement sélectionné.|  
   
 > [!TIP]
->  Si vous développez un processus, vous voyez tous les threads qu'il possède.  Si vous développez un thread, vous voyez une liste de toutes les fenêtres qu'il possède.  
+>  Si vous développez un processus, vous consultez tous les threads détenus. Si vous développez un thread, vous consultez une liste de toutes les fenêtres qu’elle possède.  
   
-### Pour développer ou réduire des arborescences Spy\+\+  
+### <a name="to-expand-or-collapse-spy-trees"></a>Pour développer ou réduire des arborescences Spy ++  
   
-1.  Mettez en surbrillance l'un des éléments de la vue Fenêtres, Processus ou Threads.  
+1.  Mettez en surbrillance un des éléments dans la vue fenêtres, processus ou Threads.  
   
-2.  Dans le menu **Arborescence**, choisissez l'une des commandes de développement ou de réduction.  
+2.  À partir de la **arborescence** menu, choisissez parmi le développer ou réduire des commandes.  
   
-## Voir aussi  
- [Using Spy\+\+](../debugger/using-spy-increment.md)   
- [Spy\+\+ Views](../debugger/spy-increment-views.md)   
- [Spy\+\+ Reference](../debugger/spy-increment-reference.md)
+## <a name="see-also"></a>Voir aussi  
+ [À l’aide de Spy ++](../debugger/using-spy-increment.md)   
+ [Vues Spy ++](../debugger/spy-increment-views.md)   
+ [Informations de référence sur Spy++](../debugger/spy-increment-reference.md)

@@ -1,46 +1,29 @@
 ---
-title: STEPKIND | Microsoft Docs
+title: STEPKIND | Documents Microsoft
 ms.custom: 
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-sdk
+ms.technology: vs-ide-sdk
 ms.tgt_pltfrm: 
 ms.topic: article
-f1_keywords:
-- STEPKIND
-helpviewer_keywords:
-- STEPKIND enumeration
+f1_keywords: STEPKIND
+helpviewer_keywords: STEPKIND enumeration
 ms.assetid: d3d8cf76-24bf-455e-803e-0e3e28f0b262
-caps.latest.revision: 8
+caps.latest.revision: "8"
+author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-translation.priority.mt:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
+ms.openlocfilehash: 57bbce476883e90a569f5174ef46e3f8c1d0380b
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
 ms.translationtype: MT
-ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
-ms.openlocfilehash: f17bfba794d5b001b20c421210214a9f3ec0ef74
-ms.contentlocale: fr-fr
-ms.lasthandoff: 08/28/2017
-
+ms.contentlocale: fr-FR
+ms.lasthandoff: 10/31/2017
 ---
 # <a name="stepkind"></a>STEPKIND
-Specifies the step kind for stepping.  
+Spécifie le type d’étape pour l’exécution pas à pas.  
   
-## <a name="syntax"></a>Syntax  
+## <a name="syntax"></a>Syntaxe  
   
 ```cpp  
 enum enum_STEPKIND {   
@@ -61,29 +44,29 @@ public enum enum_STEPKIND {
 };  
 ```  
   
-## <a name="members"></a>Members  
+## <a name="members"></a>Membres  
  STEP_INTO  
- Steps into a function.  
+ Étapes dans une fonction.  
   
- STEP_OVER  
- Steps over a function.  
+ DECALAGE_PASSES  
+ Étapes dans une fonction.  
   
  STEP_OUT  
- Steps out of a function.  
+ Sort une fonction.  
   
  STEP_BACKWARDS  
- Steps backward into a function.  
+ Étapes vers l’arrière dans une fonction.  
   
-## <a name="remarks"></a>Remarks  
- Passed as an argument to the [Step](../../../extensibility/debugger/reference/idebugprocess3-step.md) method.  
+## <a name="remarks"></a>Remarques  
+ Est passé comme argument à la [étape](../../../extensibility/debugger/reference/idebugprocess3-step.md) (méthode).  
   
-## <a name="requirements"></a>Requirements  
- Header: msdbg.h  
+## <a name="requirements"></a>Spécifications  
+ En-tête : msdbg.h  
   
- Namespace: Microsoft.VisualStudio.Debugger.Interop  
+ Namespace : Microsoft.VisualStudio.Debugger.Interop  
   
- Assembly: Microsoft.VisualStudio.Debugger.Interop.dll  
+ Assembly : Microsoft.VisualStudio.Debugger.Interop.dll  
   
-## <a name="see-also"></a>See Also  
- [Enumerations](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)   
+## <a name="see-also"></a>Voir aussi  
+ [Énumérations](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)   
  [Step](../../../extensibility/debugger/reference/idebugprocess3-step.md)

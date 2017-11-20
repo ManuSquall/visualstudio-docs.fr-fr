@@ -1,28 +1,30 @@
 ---
-title: "&#201;l&#233;ment de menus | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-helpviewer_keywords: 
-  - "Éléments du schéma XML de VSCT, Menus"
-  - "Élément de menus (schéma XML de VSCT)"
+title: "Élément de menus | Documents Microsoft"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+helpviewer_keywords:
+- VSCT XML schema elements, Menus
+- Menus element (VSCT XML schema)
 ms.assetid: d825a99b-e05c-4dd9-8933-a180216d667a
-caps.latest.revision: 10
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 10
+caps.latest.revision: "10"
+author: gregvanl
+ms.author: gregvanl
+manager: ghogen
+ms.openlocfilehash: 5e9bfcf1d4da949c7f24ccf004cf3d031e776063
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: fr-FR
+ms.lasthandoff: 10/31/2017
 ---
-# &#201;l&#233;ment de menus
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
-
-Définit tous les menus et barres d'outils qui implémente un VSPackage.  
+# <a name="menus-element"></a>Élément de menus
+Définit tous les menus et barres d’outils qui un VSPackage implémente.  
   
-## Syntaxe  
+## <a name="syntax"></a>Syntaxe  
   
 ```  
 <Menus>  
@@ -31,34 +33,53 @@ Définit tous les menus et barres d'outils qui implémente un VSPackage.
 </Menus>  
 ```  
   
-## Attributs et éléments  
+## <a name="attributes-and-elements"></a>Attributs et éléments  
  Les sections suivantes décrivent des attributs, des éléments enfants et des éléments parents.  
   
-### Attributs  
+### <a name="attributes"></a>Attributs  
   
 |Attribut|Description|  
-|--------------|-----------------|  
-|Condition|Facultatif. Consultez [Attributs conditionnels](../extensibility/vsct-xml-schema-conditional-attributes.md).|  
+|---------------|-----------------|  
+|Condition|Facultatif. Consultez [attributs conditionnels](../extensibility/vsct-xml-schema-conditional-attributes.md).|  
   
-### Éléments enfants  
+### <a name="child-elements"></a>Éléments enfants  
   
 |Élément|Description|  
 |-------------|-----------------|  
-|[Menus Element](../extensibility/menus-element.md)|Définit tous les menus et barres d'outils qui implémente un VSPackage.|  
-|[Élément de menu](../extensibility/menu-element.md)|Représente un seul menu ou la barre d'outils.|  
+|[Élément Menus](../extensibility/menus-element.md)|Définit tous les menus et barres d’outils qui un VSPackage implémente.|  
+|[Élément Menu](../extensibility/menu-element.md)|Représente un seul menu ou une barre d’outils.|  
   
-### Éléments parents  
+### <a name="parent-elements"></a>Éléments parents  
   
 |Élément|Description|  
 |-------------|-----------------|  
 |[Élément Commands](../extensibility/commands-element.md)|Représente la collection de commandes dans le VSPackage.|  
   
-## Exemple  
+## <a name="example"></a>Exemple  
   
 ```  
-<Commands package="guidMyPackage"> <Menus> <Menu Condition="'%(DEBUG)' != 'true'" guid="cmdSetGuidMyProductCommands" id="menuIDMainMenu" priority="0x0000" type="Menu"> <Annotation> <Documentation>this is an annotation</Documentation> <AppInfo> <CustomData> <CustomSubElement>Some data</CustomSubElement> </CustomData> </AppInfo> </Annotation> <CommandFlag>AlwaysCreate</CommandFlag> <Strings> <ButtonText>MainMenu</ButtonText> </Strings> </Menu> </Menus> <Commands>  
+<Commands package="guidMyPackage">  
+    <Menus>  
+      <Menu Condition="'%(DEBUG)' != 'true'"   
+        guid="cmdSetGuidMyProductCommands" id="menuIDMainMenu"   
+        priority="0x0000" type="Menu">  
+        <Annotation>  
+          <Documentation>this is an annotation</Documentation>  
+          <AppInfo>  
+            <CustomData>  
+              <CustomSubElement>Some data</CustomSubElement>  
+            </CustomData>  
+          </AppInfo>  
+        </Annotation>  
+        <CommandFlag>AlwaysCreate</CommandFlag>  
+        <Strings>  
+          <ButtonText>MainMenu</ButtonText>  
+        </Strings>  
+      </Menu>  
+  </Menus>  
+<Commands>  
 ```  
   
-## Voir aussi  
- [Comment ajouter des éléments d'Interface utilisateur dans les packages VS](../extensibility/internals/how-vspackages-add-user-interface-elements.md)   
- [Commandes, Menus et barres d'outils](../extensibility/internals/commands-menus-and-toolbars.md)
+## <a name="see-also"></a>Voir aussi  
+ [Comment les VSPackages ajouter les éléments d’Interface utilisateur](../extensibility/internals/how-vspackages-add-user-interface-elements.md)   
+ [Commandes, menus et barres d’outils](../extensibility/internals/commands-menus-and-toolbars.md)

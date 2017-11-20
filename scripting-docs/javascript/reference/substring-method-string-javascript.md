@@ -1,34 +1,36 @@
 ---
-title: "substring, m&#233;thode (String) (JavaScript) | Microsoft Docs"
-ms.custom: ""
-ms.date: "01/18/2017"
-ms.prod: "windows-client-threshold"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "devlang-javascript"
-ms.tgt_pltfrm: ""
-ms.topic: "language-reference"
-f1_keywords: 
-  - "substring"
-dev_langs: 
-  - "JavaScript"
-  - "TypeScript"
-  - "DHTML"
-helpviewer_keywords: 
-  - "sous-chaînes"
-  - "substring (méthode)"
+title: "SUBSTRING, méthode (String) (JavaScript) | Documents Microsoft"
+ms.custom: 
+ms.date: 01/18/2017
+ms.prod: windows-client-threshold
+ms.reviewer: 
+ms.suite: 
+ms.technology: devlang-javascript
+ms.tgt_pltfrm: 
+ms.topic: language-reference
+f1_keywords: substring
+dev_langs:
+- JavaScript
+- TypeScript
+- DHTML
+helpviewer_keywords:
+- substrings
+- substring method
 ms.assetid: 9cf9a005-cbe3-42fd-828b-57a39f54224c
-caps.latest.revision: 18
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 18
+caps.latest.revision: "18"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: 15ebaadc7b24fa97f531a22f6deb1453ff52b3e7
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.translationtype: MT
+ms.contentlocale: fr-FR
+ms.lasthandoff: 10/27/2017
 ---
-# substring, m&#233;thode (String) (JavaScript)
-Retourne la sous\-chaîne débutant à la position spécifiée dans un objet `String`.  
+# <a name="substring-method-string-javascript"></a>substring, méthode (String) (JavaScript)
+Retourne la sous-chaîne à l’emplacement spécifié dans un `String` objet.  
   
-## Syntaxe  
+## <a name="syntax"></a>Syntaxe  
   
 ```  
   
@@ -36,28 +38,28 @@ Retourne la sous\-chaîne débutant à la position spécifiée dans un objet `St
 "String Literal".substring(start [, end])   
 ```  
   
-## Paramètres  
+## <a name="parameters"></a>Paramètres  
  `start`  
- Obligatoire.  Entier d'index de base zéro indiquant le début de la sous\-chaîne.  
+ Obligatoire. Entier de l’index de base zéro indiquant le début de la sous-chaîne.  
   
  `end`  
- Facultatif.  Entier d'index de base zéro indiquant la fin de la sous\-chaîne.  La sous\-chaîne inclut tous les caractères jusqu'à celui indiqué par `end` \(non compris\).  
+ Facultatif. Entier de l’index de base zéro qui indique la fin de la sous-chaîne. La sous-chaîne inclut tous les caractères jusqu'à, mais non compris le caractère indiqué par `end`.  
   
- Si le paramètre `end` est omis, les caractères compris entre la position `start` et la fin de la chaîne d'origine sont retournés.  
+ Si `end` est omis, les caractères de `start` jusqu'à la fin de la chaîne d’origine sont retournés.  
   
-## Notes  
- La méthode `substring` retourne une chaîne contenant la sous\-chaîne entre la position `start` et la position `end` \(non compris\).  
+## <a name="remarks"></a>Remarques  
+ Le `substring` méthode retourne une chaîne contenant la sous-chaîne à partir de `start` jusqu'à, mais non compris, `end`.  
   
- La méthode **substring** utilise la plus petite valeur entre les paramètres `start` et `end` comme position de début de la sous\-chaîne.  Par exemple, strvar.substring\(0, 3**\)** et strvar.substring\(3, 0\) retournent la même sous\-chaîne.  
+ Le **sous-chaîne** méthode utilise la valeur inférieure de `start` et `end` comme point de début de la sous-chaîne. Par exemple, strvar.substring (0, 3**)** et strvar.substring (3, 0) retournent la même sous-chaîne.  
   
- Si la valeur `start` ou `end` est égale à `NaN` ou est négative, elle est remplacée par zéro.  
+ Si le paramètre `start` ou `end` est `NaN` ou négative, elle est remplacée par zéro.  
   
- La longueur de la sous\-chaîne est égale à la valeur absolue de la différence entre les valeurs `start` et `end`.  Par exemple, la longueur de la sous\-chaîne retournée dans strvar.substring\(0, 3\) et strvar.substring\(3, 0\) est trois \(3\) dans les deux cas.  
+ La longueur de la sous-chaîne est égale à la valeur absolue de la différence entre `start` et `end`. Par exemple, la longueur de la sous-chaîne retournée dans strvar.substring (0, 3) et strvar.substring (3, 0) est de trois.  
   
-## Exemple  
- L'exemple suivant illustre l'utilisation de la méthode **substring**.  
+## <a name="example"></a>Exemple  
+ L’exemple suivant illustre l’utilisation de la **sous-chaîne** (méthode).  
   
-```javascript  
+```JavaScript  
 var s = "The quick brown fox jumps over the lazy dog.";  
 var ss = s.substring(10, 15);  
 document.write(ss);  
@@ -67,8 +69,8 @@ document.write(ss);
   
 ```  
   
-## Configuration requise  
+## <a name="requirements"></a>Spécifications  
  [!INCLUDE[jsv1](../../javascript/misc/includes/jsv1-md.md)]  
   
-## Voir aussi  
- [substr, méthode \(String\)](../../javascript/reference/substr-method-string-javascript.md)
+## <a name="see-also"></a>Voir aussi  
+ [Méthode substr (String)](../../javascript/reference/substr-method-string-javascript.md)

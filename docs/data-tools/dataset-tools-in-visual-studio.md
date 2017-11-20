@@ -1,13 +1,12 @@
 ---
-title: Dataset tools in Visual Studio | Microsoft Docs
+title: Outils de DataSet dans Visual Studio | Documents Microsoft
 ms.custom: 
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
 ms.tgt_pltfrm: 
 ms.topic: article
-f1_keywords:
-- vs.data.DataSet
+f1_keywords: vs.data.DataSet
 helpviewer_keywords:
 - untyped datasets
 - datasets [Visual Basic], extended properties
@@ -46,68 +45,53 @@ helpviewer_keywords:
 - datasets [Visual Basic], namespace
 - data adapters, populating datasets
 ms.assetid: ee57f4f6-9fe1-4e0a-be9a-955c486ff427
-caps.latest.revision: 49
+caps.latest.revision: "49"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-translation.priority.ht:
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- ru-ru
-- zh-cn
-- zh-tw
-translation.priority.mt:
-- cs-cz
-- pl-pl
-- pt-br
-- tr-tr
-ms.translationtype: HT
-ms.sourcegitcommit: 33a857c2d8585e2e8da9bcd9158190366a3b6830
-ms.openlocfilehash: c4d811d0ff186bf979e0304cb6823693a04f7d52
-ms.contentlocale: fr-fr
-ms.lasthandoff: 09/07/2017
-
+ms.technology: vs-data-tools
+ms.openlocfilehash: 6a7e5741b11263ef3c3730ddaa69e566cd7c2e24
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: fr-FR
+ms.lasthandoff: 10/31/2017
 ---
-# <a name="dataset-tools-in-visual-studio"></a>Dataset tools in Visual Studio
+# <a name="dataset-tools-in-visual-studio"></a>Outils de DataSet dans Visual Studio
 > [!NOTE]
->  Datasets and related classes are legacy .NET technologies from the early 2000s that enable applications to work with data in memory while the applications are disconnected from the database. They are especially useful for applications that enable users to modify data and persist the changes back to the database. Although datasets have proven to be a very successful technology, we recommend that new .NET applications use Entity Framework. Entity Framework provides a more natural way to work with tabular data as object models, and it has a simpler programming interface.  
+>  Jeux de données et les classes associées sont des technologies .NET hérités à partir du début des années 2000 qui permettent aux applications de travailler avec des données en mémoire pendant que les applications sont déconnectées de la base de données. Ils sont particulièrement utiles pour les applications qui permettent aux utilisateurs de modifier des données et de conserver les modifications apportées à la base de données. Bien que les jeux de données s’est prouvées une technologie très réussie, nous recommandons d’utilisent Entity Framework nouvelles applications .NET. Entity Framework fournit un moyen plus naturel de travailler avec des données sous forme de tableau en tant que modèles d’objet, et il a une interface de programmation plus simple.  
   
- A DataSet object is an in-memory object that is essentially a mini-database. It contains DataTable, DataColumn, and DataRow objects in which you can store and modify data from one or more databases without having to maintain an open connection. The dataset maintains information about changes to its data, so updates can be tracked and sent back to the database when your application becomes reconnected.  
+ Un objet de jeu de données est un objet en mémoire qui est essentiellement un mini-de base de données. Il contient des objets DataRow, DataTable et DataColumn dans lequel vous pouvez stocker et modifier des données à partir d’une ou plusieurs bases de données sans avoir à maintenir une connexion ouverte. Le jeu de données gère les informations sur les modifications apportées à ses données, pour que les mises à jour peuvent être suivies et renvoyées à la base de données lorsque votre application est reconnectée.  
   
- Datasets and related classes are defined in the System.Data namespace in the .NET Framework class library. You can create and modify datasets dynamically in code. For more information about how to do that, see ADO.NET. The documentation in this section shows how to work with datasets by using Visual Studio designers. One thing to know: datasets that are made through designers use TableAdapter objects to interact with the database, whereas datasets that are made programmatically use DataAdapter objects. For information about creating datasets programmatically, see [DataAdapters and DataReaders](/dotnet/framework/data/adonet/dataadapters-and-datareaders).  
+ Jeux de données et les classes associées sont définies dans l’espace de noms System.Data dans la bibliothèque de classes .NET Framework. Vous pouvez créer et modifier des jeux de données dynamiquement dans le code. Pour plus d’informations sur la procédure à suivre, consultez ADO.NET. La documentation de cette section montre comment utiliser des jeux de données à l’aide de concepteurs Visual Studio. Une chose à savoir : jeux de données qui est exécutées par les concepteurs utiliser objets TableAdapter pour interagir avec la base de données, tandis que les jeux de données qui est effectuées par programme utilisent des objets DataAdapter. Pour plus d’informations sur la création de jeux de données par programme, consultez [DataAdapters et DataReaders](/dotnet/framework/data/adonet/dataadapters-and-datareaders).  
   
- If your application needs to only read data from a database, and not perform updates, adds, or deletes, you can usually get better performance by using a DataReader object to retrieve data into a generic List object or another collection object. If you are displaying the data, you can data-bind the user interface to the collection.  
+ Si votre application doit uniquement lire les données à partir d’une base de données et n’effectue pas les mises à jour, ajoute ou supprime, vous pouvez généralement obtenir de meilleures performances à l’aide d’un objet DataReader pour récupérer des données dans un objet de liste générique ou un autre objet de collection. Si vous affichez les données, vous pouvez lier l’interface utilisateur à la collection.  
   
-## <a name="dataset-workflow"></a>Dataset workflow  
- Visual Studio provides a lot of tooling to simplify working with datasets. The basic end-to-end workflow is:  
+## <a name="dataset-workflow"></a>Jeu de données de flux de travail  
+ Visual Studio fournit de nombreux outils pour simplifier l’utilisation des jeux de données. Le flux de travail de bout en bout de base est la suivante :  
   
--   Use the **Data Source** window to create a new dataset from one or more data sources. Use the **Dataset Designer** to configure the dataset and set its properties. For example, you need to specify which tables from the data source to include, and which columns from each table. Choose carefully to conserve the amount of memory that the dataset will require. For more information, see [Create and configure datasets](../data-tools/create-and-configure-datasets-in-visual-studio.md).  
+-   Utilisez le **Source de données** fenêtre pour créer un nouveau jeu de données à partir d’une ou plusieurs sources de données. Utilisez le **Concepteur de Dataset** pour configurer le jeu de données et définir ses propriétés. Par exemple, vous devez spécifier les tables à partir de la source de données à inclure et les colonnes de chaque table. Choisissez avec soin préserver la quantité de mémoire qui nécessite le jeu de données. Pour plus d’informations, consultez [Créer et configurer des datasets](../data-tools/create-and-configure-datasets-in-visual-studio.md).  
   
--   Specify the relationships between the tables so that foreign keys are handled correctly. For more information, see [Fill datasets by using TableAdapters](../data-tools/fill-datasets-by-using-tableadapters.md).  
+-   Spécifier les relations entre les tables afin que les clés étrangères sont traitées correctement. Pour plus d’informations, consultez [remplir des jeux de données à l’aide des TableAdapters](../data-tools/fill-datasets-by-using-tableadapters.md).  
   
--   Use the **TableAdapter Configuration Wizard** to specify the query or stored procedure that will populate the dataset, and what database operations (update, delete, and so on) to implement. For more information, see these topics:  
+-   Utilisez le **Assistant Configuration de TableAdapter** pour spécifier la requête ou la procédure stockée qui remplit le groupe de données et les opérations de base de données (mise à jour, supprimer et ainsi de suite) à implémenter. Pour plus d'informations, voir ces rubriques :  
   
-    -   [Fill datasets by using TableAdapters](../data-tools/fill-datasets-by-using-tableadapters.md)  
+    -   [Remplir des datasets à l’aide de TableAdapters](../data-tools/fill-datasets-by-using-tableadapters.md)  
   
-    -   [Edit data in datasets](../data-tools/edit-data-in-datasets.md)  
+    -   [Modifier des données dans des datasets](../data-tools/edit-data-in-datasets.md)  
   
-    -   [Validate data in datasets](../data-tools/validate-data-in-datasets.md)  
+    -   [Valider les données dans des datasets](../data-tools/validate-data-in-datasets.md)  
   
-    -   [Save data back to the database](../data-tools/save-data-back-to-the-database.md)  
+    -   [Enregistrer les données dans la base de données](../data-tools/save-data-back-to-the-database.md)  
   
--   Query and search the data in the dataset. For more information, see [Query datasets](../data-tools/query-datasets.md). [!INCLUDE[linq_dataset](../data-tools/includes/linq_dataset_md.md)] enables [LINQ (Language-Integrated Query)](http://msdn.microsoft.com/Library/a73c4aec-5d15-4e98-b962-1274021ea93d) over data in a <xref:System.Data.DataSet> object. For more information, see [LINQ to DataSet](/dotnet/framework/data/adonet/linq-to-dataset).  
+-   Interroger et rechercher les données dans le jeu de données. Pour plus d’informations, consultez [jeux de données de requête](../data-tools/query-datasets.md). [!INCLUDE[linq_dataset](../data-tools/includes/linq_dataset_md.md)]permet de [LINQ (Language-Integrated Query)](http://msdn.microsoft.com/Library/a73c4aec-5d15-4e98-b962-1274021ea93d) sur les données dans un <xref:System.Data.DataSet> objet. Pour plus d’informations, [consultez LINQ to DataSet](/dotnet/framework/data/adonet/linq-to-dataset).  
   
--   Use the **Data Sources** window to bind user-interface controls to the dataset or its individual columns, and to specify which columns are user-editable. For more information, see [Bind controls to data in Visual Studio](../data-tools/bind-controls-to-data-in-visual-studio.md).  
+-   Utilisez le **des Sources de données** fenêtre pour lier des contrôles d’interface utilisateur pour le jeu de données ou des colonnes individuelles et pour spécifier les colonnes qui sont modifiables par l’utilisateur. Pour plus d’informations, consultez [lier des contrôles aux données dans Visual Studio](../data-tools/bind-controls-to-data-in-visual-studio.md).  
   
-## <a name="datasets-and-n-tier-architecture"></a>Datasets and N-tier architecture  
- For information about datasets in N-tier applications, see [Work with datasets in n-tier applications](../data-tools/work-with-datasets-in-n-tier-applications.md).  
+## <a name="datasets-and-n-tier-architecture"></a>Architecture multicouche et de jeux de données  
+ Pour plus d’informations sur les jeux de données dans les applications multicouches, consultez [travailler avec les jeux de données dans les applications multicouches](../data-tools/work-with-datasets-in-n-tier-applications.md).  
   
-## <a name="datasets-and-xml"></a>Datasets and XML  
- For information about converting datasets to and from XML, see [Read XML data into a dataset](../data-tools/read-xml-data-into-a-dataset.md) and [Save a dataset as XML](../data-tools/save-a-dataset-as-xml.md).  
+## <a name="datasets-and-xml"></a>Jeux de données et XML  
+ Pour plus d’informations sur la conversion des jeux de données vers et à partir de XML, consultez [lit les données XML dans un dataset](../data-tools/read-xml-data-into-a-dataset.md) et [enregistrer un jeu de données au format XML](../data-tools/save-a-dataset-as-xml.md).  
   
-## <a name="see-also"></a>See Also  
- [Visual Studio data tools for .NET](../data-tools/visual-studio-data-tools-for-dotnet.md)
+## <a name="see-also"></a>Voir aussi  
+ [Outils de données Visual Studio pour .NET](../data-tools/visual-studio-data-tools-for-dotnet.md)

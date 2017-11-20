@@ -1,53 +1,53 @@
 ---
-title: "Bo&#238;te de dialogue Recherche d&#39;un processus | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-debug"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-helpviewer_keywords: 
-  - "recherche d'un processus"
+title: "Boîte de dialogue recherche de processus | Documents Microsoft"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-debug
+ms.tgt_pltfrm: 
+ms.topic: article
+helpviewer_keywords: Process Search
 ms.assetid: 518e8153-eec2-4db9-a6f7-416ec11d8e09
-caps.latest.revision: 4
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 4
+caps.latest.revision: "4"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: 9bd048bc80ce9747ca6bced7611827e23fa521ab
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: fr-FR
+ms.lasthandoff: 10/31/2017
 ---
-# Bo&#238;te de dialogue Recherche d&#39;un processus
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
-
-Utilisez cette boîte de dialogue pour rechercher et sélectionner le nœud d'un processus spécifique dans la [vue Processus](../debugger/processes-view.md).  Pour afficher cette boîte de dialogue, déplacez le focus sur une fenêtre **Vue Processus**.  Dans le menu **Rechercher**, choisissez **Rechercher le processus**.  
+# <a name="process-search-dialog-box"></a>Boîte de dialogue Recherche d'un processus
+Utilisez cette boîte de dialogue pour rechercher et sélectionner le nœud d’un processus spécifique dans [vue processus](../debugger/processes-view.md). Pour afficher cette boîte de dialogue, déplacez le focus vers un **processus** fenêtre d’affichage. Puis choisissez **rechercher le processus** à partir de la **recherche** menu.  
   
  Les paramètres suivants sont disponibles :  
   
- **Processus**  
- ID de processus à rechercher.  
+ **Process**  
+ L’ID de processus à rechercher.  
   
  **Module**  
- Chaîne de module à rechercher.  
+ La chaîne de module à rechercher.  
   
- **Sens de la recherche \(vers le haut ou le bas\)**  
- Direction initiale de la recherche.  
+ **Sens de la recherche vers le haut ou vers le bas**  
+ La direction initiale de la recherche.  
   
-## Rubriques connexes  
- [Recherche d'un processus dans la vue Processus](../debugger/how-to-search-for-a-process-in-processes-view.md)  
- Explique comment rechercher un processus spécifique dans la vue Processus.  
+## <a name="related-sections"></a>Rubriques connexes  
+ [Recherche d’un processus dans la vue processus](../debugger/how-to-search-for-a-process-in-processes-view.md)  
+ Explique comment rechercher un processus spécifique dans la vue processus.  
   
  [Vue Processus](../debugger/processes-view.md)  
  Affiche une arborescence des processus actifs.  
   
- [Vues Spy\+\+](../debugger/spy-increment-views.md)  
- Explique les arborescences Spy\+\+ des fenêtres, messages, processus et threads.  
+ [Vues Spy++](../debugger/spy-increment-views.md)  
+ Explique les arborescences Spy ++ de windows, les messages, les processus et les threads.  
   
- [Utilisation de Spy\+\+](../debugger/using-spy-increment.md)  
- Présente l'outil Spy\+\+ et explique comment l'utiliser.  
+ [Utilisation de Spy++](../debugger/using-spy-increment.md)  
+ Présente l’outil Spy ++ et explique comment elle peut être utilisée.  
   
- [Boîte de dialogue Propriétés du processus](../debugger/process-properties-dialog-box.md)  
- Utilisé pour afficher les propriétés d'un processus sélectionné dans la vue Processus.  
+ [Propriétés du processus, boîte de dialogue](../debugger/process-properties-dialog-box.md)  
+ Permet d’afficher les propriétés d’un processus sélectionné dans la vue processus.  
   
- [Référence de Spy\+\+](../debugger/spy-increment-reference.md)  
- Inclut des sections décrivant les menus et les boîtes de dialogue de Spy\+\+.
+ [Informations de référence sur Spy++](../debugger/spy-increment-reference.md)  
+ Inclut des sections décrivant chaque Spy ++ menu et boîte de dialogue.

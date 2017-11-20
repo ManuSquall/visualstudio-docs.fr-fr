@@ -1,45 +1,47 @@
 ---
-title: "Comment&#160;: installer les assemblys PIA (Primary Interop Assembly) d&#39;Office"
-ms.custom: ""
-ms.date: "02/02/2017"
-ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "office-development"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-dev_langs: 
-  - "VB"
-  - "CSharp"
-helpviewer_keywords: 
-  - "assemblys PIA (Primary Interop Assembly) Office, installer"
-  - "assemblys PIA (Primary Interop Assembly) (développement Office dans Visual Studio), installer"
+title: "Comment : installer les assemblys PIA Office | Documents Microsoft"
+ms.custom: 
+ms.date: 02/02/2017
+ms.reviewer: 
+ms.suite: 
+ms.technology: office-development
+ms.tgt_pltfrm: 
+ms.topic: article
+dev_langs:
+- VB
+- CSharp
+helpviewer_keywords:
+- primary interop assemblies [Office development in Visual Studio], installing
+- Office primary interop assemblies, installing
 ms.assetid: 92948fcc-76c6-4b08-ba63-cab59dd60eb1
-caps.latest.revision: 61
-author: "kempb"
-ms.author: "kempb"
-manager: "ghogen"
-caps.handback.revision: 60
+caps.latest.revision: "61"
+author: gewarren
+ms.author: gewarren
+manager: ghogen
+ms.openlocfilehash: 14ce408395cc992e83cb26aecbc2e4ab428428ad
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: fr-FR
+ms.lasthandoff: 10/31/2017
 ---
-# Comment&#160;: installer les assemblys PIA (Primary Interop Assembly) d&#39;Office
-  Installez les assemblys PIA \(Primary Interop Assembly\) Microsoft Office lorsque vous installez Office.  
+# <a name="how-to-install-office-primary-interop-assemblies"></a>Comment : installer les assemblys PIA (Primary Interop Assembly) d'Office
+  Installez les assemblys PIA (Primary Interop Assembly) Microsoft Office lorsque vous installez Office.  
   
-### Pour installer les assemblys PIA lors de l'installation de Microsoft Office  
+### <a name="to-install-the-pias-when-you-install-office"></a>Pour installer les assemblys PIA lors de l'installation de Microsoft Office  
   
-1.  Assurez\-vous que vous disposez d'une version du .NET Framework qui n'est pas antérieure à 2.0.  
+1.  Assurez-vous que vous disposez d'une version du .NET Framework qui n'est pas antérieure à 2.0.  
   
-2.  Installez Microsoft Office et assurez\-vous que la fonctionnalité **Prise en charge de la programmabilité .NET** est sélectionnée pour les applications que vous souhaitez étendre \(cette fonctionnalité est incluse dans l'installation par défaut\).  
+2.  Installez Microsoft Office et assurez-vous que le **prise en charge de la programmabilité .NET** fonctionnalité est sélectionnée pour les applications que vous souhaitez étendre (cette fonctionnalité est incluse dans l’installation par défaut).  
   
     > [!WARNING]  
-    >  Par défaut, les assemblys PIA sont incorporés dans votre solution au moment de sa création. Ainsi, vous n'êtes pas tenu de les distribuer aux utilisateurs pour qu'ils puissent utiliser votre personnalisation ou complément VSTO.  
+    >  Par défaut, les assemblys PIA est incorporés dans votre solution lorsque vous le générez, vous n’avez pas à distribuer aux utilisateurs qu’une condition préalable à l’aide de votre complément VSTO ou la personnalisation.  
   
-## Voir aussi  
- [Assemblys PIA &#40;Primary Interop Assembly&#41; Office](../vsto/office-primary-interop-assemblies.md)   
- [Comment : cibler les applications Office via les assemblys PIA &#40;Primary Interop Assembly&#41;](../vsto/how-to-target-office-applications-through-primary-interop-assemblies.md)   
- [Comment configurer un ordinateur pour développer des solutions Office](../vsto/how-to-configure-a-computer-to-develop-office-solutions.md)   
+## <a name="see-also"></a>Voir aussi  
+ [Assemblys PIA Office](../vsto/office-primary-interop-assemblies.md)   
+ [How to: Target Office Applications Through Primary Interop Assemblies](../vsto/how-to-target-office-applications-through-primary-interop-assemblies.md)   
+ [Comment : configurer un ordinateur pour développer des Solutions Office](../vsto/how-to-configure-a-computer-to-develop-office-solutions.md)   
  [Comment : installer Visual Studio Tools pour Office Runtime Redistributable](../vsto/how-to-install-the-visual-studio-tools-for-office-runtime-redistributable.md)   
- [Vue d'ensemble du développement des solutions Office &#40;VSTO&#41;](../vsto/office-solutions-development-overview-vsto.md)   
- [Mise en route &#40;Développement Office dans Visual Studio&#41;](../vsto/getting-started-office-development-in-visual-studio.md)  
+ [Présentation du développement de Solutions Office &#40; VSTO &#41;](../vsto/office-solutions-development-overview-vsto.md)   
+ [Mise en route &#40; développement Office dans Visual Studio &#41;](../vsto/getting-started-office-development-in-visual-studio.md)  
   
   

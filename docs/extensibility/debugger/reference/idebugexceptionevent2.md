@@ -4,37 +4,21 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-sdk
+ms.technology: vs-ide-sdk
 ms.tgt_pltfrm: 
 ms.topic: article
-f1_keywords:
-- IDebugExceptionEvent2
-helpviewer_keywords:
-- IDebugExceptionEvent2 interface
+f1_keywords: IDebugExceptionEvent2
+helpviewer_keywords: IDebugExceptionEvent2 interface
 ms.assetid: 53d32e59-a84b-4710-833e-c5ab08100516
-caps.latest.revision: 11
+caps.latest.revision: "11"
+author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-translation.priority.mt:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
-translationtype: Machine Translation
-ms.sourcegitcommit: ca7c86466fa23fb21a932f26dc24e37c71cf29b4
-ms.openlocfilehash: c9817ca386846833ab022c5dbca3d3807bd38ef6
-ms.lasthandoff: 04/05/2017
-
+ms.openlocfilehash: 4aa1c643a07f15f361c77c618d717cc2655277c6
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: fr-FR
+ms.lasthandoff: 10/31/2017
 ---
 # <a name="idebugexceptionevent2"></a>IDebugExceptionEvent2
 Le moteur de débogage (DE) envoie cette interface pour le Gestionnaire de session de débogage (SDM) lorsqu’une exception est levée dans le programme en cours d’exécution.  
@@ -68,7 +52,7 @@ IDebugExceptionEvent2 : IUnknown
   
  Assembly : Microsoft.VisualStudio.Debugger.Interop.dll  
   
-## <a name="remarks"></a>Notes  
+## <a name="remarks"></a>Remarques  
  Avant d’envoyer l’événement, le DE vérifie si cet événement d’exception a été désigné une exception de première chance ou de deuxième chance par un appel précédent à [SetException](../../../extensibility/debugger/reference/idebugengine2-setexception.md). S’il a été désigné pour être une exception de première chance, les `IDebugExceptionEvent2` événement est envoyé à la SDM. Si ce n’est pas le cas, le DE donne une occasion de gérer l’exception à l’application. Si aucun gestionnaire d’exceptions n’est fourni, et si l’exception a été désignée comme une exception de deuxième chance, les `IDebugExceptionEvent2` événement est envoyé à la SDM. Dans le cas contraire, le DE reprend l’exécution du programme, et le système d’exploitation ou le runtime gère l’exception.  
   
 ## <a name="see-also"></a>Voir aussi  

@@ -1,46 +1,29 @@
 ---
-title: IDebugExpressionEvaluator::SetLocale | Microsoft Docs
+title: IDebugExpressionEvaluator::SetLocale | Documents Microsoft
 ms.custom: 
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-sdk
+ms.technology: vs-ide-sdk
 ms.tgt_pltfrm: 
 ms.topic: article
-f1_keywords:
-- IDebugExpressionEvaluator::SetLocale
-helpviewer_keywords:
-- IDebugExpressionEvaluator::SetLocale method
+f1_keywords: IDebugExpressionEvaluator::SetLocale
+helpviewer_keywords: IDebugExpressionEvaluator::SetLocale method
 ms.assetid: d3d2027d-74e2-4ae6-bcc7-59d12f873b7c
-caps.latest.revision: 11
+caps.latest.revision: "11"
+author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-translation.priority.mt:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
+ms.openlocfilehash: bdba51967b470023deb5997bc243b900e3155245
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
 ms.translationtype: MT
-ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
-ms.openlocfilehash: 24df28acbaed1b946983aa32d75f4692e0177f21
-ms.contentlocale: fr-fr
-ms.lasthandoff: 08/28/2017
-
+ms.contentlocale: fr-FR
+ms.lasthandoff: 10/31/2017
 ---
 # <a name="idebugexpressionevaluatorsetlocale"></a>IDebugExpressionEvaluator::SetLocale
-This method sets the language to use to create printable results.  
+Cette méthode définit la langue à utiliser pour créer des résultats imprimables.  
   
-## <a name="syntax"></a>Syntax  
+## <a name="syntax"></a>Syntaxe  
   
 ```cpp  
 HRESULT SetLocale(   
@@ -54,15 +37,15 @@ int SetLocale(
 );  
 ```  
   
-#### <a name="parameters"></a>Parameters  
+#### <a name="parameters"></a>Paramètres  
  `wLangID`  
- [in] The language identifier.  
+ [in] L’identificateur de langue.  
   
-## <a name="return-value"></a>Return Value  
- If successful, returns `S_OK`; otherwise, returns an error code.  
+## <a name="return-value"></a>Valeur de retour  
+ En cas de réussite, retourne `S_OK`; sinon, retourne un code d’erreur.  
   
-## <a name="remarks"></a>Remarks  
- This method may be called many times while the expression evaluator (EE) is loaded, so the EE must be able to switch languages on the fly. The EE uses this locale to return error messages and strings in the appropriate language.  
+## <a name="remarks"></a>Remarques  
+ Cette méthode peut être appelée autant de fois pendant que l’évaluateur d’expression (EE) est chargé, le EE doit donc être en mesure de modifier la langue à la volée. Le EE utilise ces paramètres régionaux pour renvoyer des messages d’erreur et les chaînes dans la langue appropriée.  
   
-## <a name="see-also"></a>See Also  
+## <a name="see-also"></a>Voir aussi  
  [IDebugExpressionEvaluator](../../../extensibility/debugger/reference/idebugexpressionevaluator.md)

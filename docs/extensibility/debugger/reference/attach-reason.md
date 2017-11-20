@@ -1,46 +1,29 @@
 ---
-title: ATTACH_REASON | Microsoft Docs
+title: ATTACH_REASON | Documents Microsoft
 ms.custom: 
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-sdk
+ms.technology: vs-ide-sdk
 ms.tgt_pltfrm: 
 ms.topic: article
-f1_keywords:
-- ATTACH_REASON
-helpviewer_keywords:
-- ATTACH_REASON enumeration
+f1_keywords: ATTACH_REASON
+helpviewer_keywords: ATTACH_REASON enumeration
 ms.assetid: 159fb70b-a344-4ba6-9115-b7eaa16e228f
-caps.latest.revision: 10
+caps.latest.revision: "10"
+author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-translation.priority.mt:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
+ms.openlocfilehash: ba7149d13c85ec99128488e7207a5320f93d680f
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
 ms.translationtype: MT
-ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
-ms.openlocfilehash: 918c276f4a15a36bdaa54a64670a77da953440b4
-ms.contentlocale: fr-fr
-ms.lasthandoff: 08/28/2017
-
+ms.contentlocale: fr-FR
+ms.lasthandoff: 10/31/2017
 ---
 # <a name="attachreason"></a>ATTACH_REASON
-Specifies the reason for the debug engine (DE) to attach to a program node.  
+Spécifie la raison pour le moteur de débogage (DE) à attacher à un nœud du programme.  
   
-## <a name="syntax"></a>Syntax  
+## <a name="syntax"></a>Syntaxe  
   
 ```cpp  
 enum enum_ATTACH_REASON {   
@@ -59,27 +42,27 @@ public enum enum_ATTACH_REASON {
 };  
 ```  
   
-## <a name="members"></a>Members  
+## <a name="members"></a>Membres  
  ATTACH_REASON_AUTO  
- Attach because the process is currently in debug mode.  
+ Attacher, car le processus est actuellement en mode débogage.  
   
  ATTACH_REASON_LAUNCH  
- Attach because the process has been launched.  
+ Attacher, car le processus a été lancé.  
   
  ATTACH_REASON_USER  
- Attach because of a user request.  
+ Attacher en raison d’une demande de l’utilisateur.  
   
-## <a name="remarks"></a>Remarks  
- These values are used as a parameter to the [Attach](../../../extensibility/debugger/reference/idebugengine2-attach.md) and [Attach](../../../extensibility/debugger/reference/idebugprogramex2-attach.md) methods.  
+## <a name="remarks"></a>Remarques  
+ Ces valeurs sont utilisées en tant que paramètre à la [Attach](../../../extensibility/debugger/reference/idebugengine2-attach.md) et [attacher](../../../extensibility/debugger/reference/idebugprogramex2-attach.md) méthodes.  
   
-## <a name="requirements"></a>Requirements  
- Header: msdbg.h  
+## <a name="requirements"></a>Spécifications  
+ En-tête : msdbg.h  
   
- Namespace: Microsoft.VisualStudio.Debugger.Interop  
+ Namespace : Microsoft.VisualStudio.Debugger.Interop  
   
- Assembly: Microsoft.VisualStudio.Debugger.Interop.dll  
+ Assembly : Microsoft.VisualStudio.Debugger.Interop.dll  
   
-## <a name="see-also"></a>See Also  
- [Enumerations](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)   
- [Attach](../../../extensibility/debugger/reference/idebugengine2-attach.md)   
- [Attach](../../../extensibility/debugger/reference/idebugprogramex2-attach.md)
+## <a name="see-also"></a>Voir aussi  
+ [Énumérations](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)   
+ [Joindre](../../../extensibility/debugger/reference/idebugengine2-attach.md)   
+ [Attacher](../../../extensibility/debugger/reference/idebugprogramex2-attach.md)

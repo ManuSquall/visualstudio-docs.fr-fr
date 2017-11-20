@@ -1,46 +1,29 @@
 ---
-title: IDebugProgramNode2::GetHostPid | Microsoft Docs
+title: IDebugProgramNode2::GetHostPid | Documents Microsoft
 ms.custom: 
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-sdk
+ms.technology: vs-ide-sdk
 ms.tgt_pltfrm: 
 ms.topic: article
-f1_keywords:
-- IDebugProgramNode2::GetHostPid
-helpviewer_keywords:
-- IDebugProgramNode2::GetHostPid
+f1_keywords: IDebugProgramNode2::GetHostPid
+helpviewer_keywords: IDebugProgramNode2::GetHostPid
 ms.assetid: e65b4b15-46d8-4ca7-9456-2b4c078f7cf9
-caps.latest.revision: 12
+caps.latest.revision: "12"
+author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-translation.priority.mt:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
+ms.openlocfilehash: 163999e160baeaaad618ee793a1879da694e35ea
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
 ms.translationtype: MT
-ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
-ms.openlocfilehash: 845511af34a9d5827120d98a408d8d4b5d6f78dc
-ms.contentlocale: fr-fr
-ms.lasthandoff: 08/28/2017
-
+ms.contentlocale: fr-FR
+ms.lasthandoff: 10/31/2017
 ---
 # <a name="idebugprogramnode2gethostpid"></a>IDebugProgramNode2::GetHostPid
-Gets the system process identifier for the process hosting the program.  
+Obtient l’identificateur de processus système pour le processus qui héberge le programme.  
   
-## <a name="syntax"></a>Syntax  
+## <a name="syntax"></a>Syntaxe  
   
 ```cpp  
 HRESULT GetHostPid (   
@@ -54,15 +37,15 @@ int GetHostPid (
 );  
 ```  
   
-#### <a name="parameters"></a>Parameters  
+#### <a name="parameters"></a>Paramètres  
  `pdwHostPid`  
- [out] Returns the system process identifier for the hosting process.  
+ [out] Retourne l’identificateur de processus système pour le processus d’hébergement.  
   
-## <a name="return-value"></a>Return Value  
- If successful, returns `S_OK`; otherwise, returns an error code.  
+## <a name="return-value"></a>Valeur de retour  
+ En cas de réussite, retourne `S_OK`; sinon, retourne un code d’erreur.  
   
-## <a name="example"></a>Example  
- The following example shows how to implement this method for a simple `CProgram` object that implements the [IDebugProgramNode2](../../../extensibility/debugger/reference/idebugprogramnode2.md) interface.  
+## <a name="example"></a>Exemple  
+ L’exemple suivant montre comment implémenter cette méthode pour une simple `CProgram` objet qui implémente le [IDebugProgramNode2](../../../extensibility/debugger/reference/idebugprogramnode2.md) interface.  
   
 ```cpp  
 HRESULT CProgram::GetHostPid(DWORD* pdwHostPid) {    
@@ -79,5 +62,5 @@ HRESULT CProgram::GetHostPid(DWORD* pdwHostPid) {
 }    
 ```  
   
-## <a name="see-also"></a>See Also  
+## <a name="see-also"></a>Voir aussi  
  [IDebugProgramNode2](../../../extensibility/debugger/reference/idebugprogramnode2.md)

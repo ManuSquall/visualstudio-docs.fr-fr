@@ -1,27 +1,30 @@
 ---
-title: "IDebugApplication::GetCurrentThread | Microsoft Docs"
-ms.custom: ""
-ms.date: "01/18/2017"
-ms.prod: "windows-script-interfaces"
-ms.reviewer: ""
-ms.suite: ""
-ms.tgt_pltfrm: ""
-ms.topic: "reference"
+title: IDebugApplication::GetCurrentThread | Documents Microsoft
+ms.custom: 
+ms.date: 01/18/2017
+ms.prod: windows-script-interfaces
+ms.reviewer: 
+ms.suite: 
+ms.tgt_pltfrm: 
+ms.topic: reference
 apiname: IDebugApplication.GetCurrentThread
 apilocation: pdm.dll
-helpviewer_keywords: 
-  - "IDebugApplication::GetCurrentThread"
+helpviewer_keywords: IDebugApplication::GetCurrentThread
 ms.assetid: 15128e77-6fc6-42a2-8c04-20e22ef03f29
-caps.latest.revision: 8
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 8
+caps.latest.revision: "8"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: 2240a62b62c917e94f3ace8f516a10f9de66c74d
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.translationtype: MT
+ms.contentlocale: fr-FR
+ms.lasthandoff: 10/27/2017
 ---
-# IDebugApplication::GetCurrentThread
-Retourne le thread associé au thread en cours de exécution.  
+# <a name="idebugapplicationgetcurrentthread"></a>IDebugApplication::GetCurrentThread
+Retourne le thread associé au thread en cours d’exécution.  
   
-## Syntaxe  
+## <a name="syntax"></a>Syntaxe  
   
 ```  
 HRESULT GetCurrentThread(  
@@ -29,19 +32,19 @@ HRESULT GetCurrentThread(
 );  
 ```  
   
-#### Paramètres  
+#### <a name="parameters"></a>Paramètres  
  `pat`  
- \[out\]  Le thread associé au thread en cours de exécution.  
+ [out] Le thread associé au thread en cours d’exécution.  
   
-## Valeur de retour  
- La méthode retourne `HRESULT`.  Les valeurs possibles incluent, mais ne sont pas limitées à, celles dans le tableau suivant.  
+## <a name="return-value"></a>Valeur de retour  
+ La méthode retourne `HRESULT`. Les valeurs possibles sont notamment celles figurant dans le tableau suivant.  
   
 |Valeur|Description|  
-|------------|-----------------|  
+|-----------|-----------------|  
 |`S_OK`|La méthode a réussi.|  
   
-## Notes  
- Cette méthode retourne le thread associé au thread en cours de exécution.  
+## <a name="remarks"></a>Remarques  
+ Cette méthode retourne le thread associé au thread en cours d’exécution.  
   
-## Voir aussi  
- [IDebugApplication, interface](../../winscript/reference/idebugapplication-interface.md)
+## <a name="see-also"></a>Voir aussi  
+ [Interface IDebugApplication](../../winscript/reference/idebugapplication-interface.md)

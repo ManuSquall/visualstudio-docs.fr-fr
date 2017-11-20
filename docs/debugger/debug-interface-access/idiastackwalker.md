@@ -1,53 +1,52 @@
 ---
-title: "IDiaStackWalker | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-debug"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "IDiaStackWalker (interface)"
+title: IDiaStackWalker | Documents Microsoft
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-debug
+ms.tgt_pltfrm: 
+ms.topic: article
+dev_langs: C++
+helpviewer_keywords: IDiaStackWalker interface
 ms.assetid: 4a61a22a-9cf8-4ea1-9e6e-b42f96872d40
-caps.latest.revision: 10
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 10
+caps.latest.revision: "10"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: e651c8ba8bee152121b96b14613144768a56cc2f
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: fr-FR
+ms.lasthandoff: 10/31/2017
 ---
-# IDiaStackWalker
-[!INCLUDE[vs2017banner](../../code-quality/includes/vs2017banner.md)]
-
-Fournit des méthodes pour effectuer un parcours de pile à l'aide de les informations du fichier .pdb.  
+# <a name="idiastackwalker"></a>IDiaStackWalker
+Fournit des méthodes pour effectuer une pile de remonter à l’aide des informations dans le fichier .pdb.  
   
-## Syntaxe  
+## <a name="syntax"></a>Syntaxe  
   
 ```  
 IDiaStackWalker: IUnknown  
 ```  
   
-## méthodes en commande de Vtable  
- Le tableau suivant répertorie les méthodes d' `IDiaStackWalker`.  
+## <a name="methods-in-vtable-order"></a>Méthodes dans l'ordre Vtable  
+ Le tableau suivant présente les méthodes de `IDiaStackWalker`.  
   
 |Méthode|Description|  
-|-------------|-----------------|  
-|[IDiaStackWalker::getEnumFrames](../../debugger/debug-interface-access/idiastackwalker-getenumframes.md)|Récupère un énumérateur du frame de pile pour les plateformes x86.|  
-|[IDiaStackWalker::getEnumFrames2](../../debugger/debug-interface-access/idiastackwalker-getenumframes2.md)|Récupère un énumérateur du frame de pile pour un type spécifique de plateforme.|  
+|------------|-----------------|  
+|[IDiaStackWalker::getEnumFrames](../../debugger/debug-interface-access/idiastackwalker-getenumframes.md)|Récupère un énumérateur de frame de pile pour x86 plateformes.|  
+|[IDiaStackWalker::getEnumFrames2](../../debugger/debug-interface-access/idiastackwalker-getenumframes2.md)|Récupère un énumérateur de frame de pile pour un type de plateforme spécifique.|  
   
-## Notes  
- Cette interface est utilisée pour obtenir une liste des frames de pile pour un module chargé.  Chacune des méthodes reçoit un objet d' [IDiaStackWalkHelper](../../debugger/debug-interface-access/idiastackwalkhelper.md) \(implémenté par l'application cliente\) qui fournit les informations nécessaires pour créer la liste des frames de pile.  
+## <a name="remarks"></a>Remarques  
+ Cette interface est utilisée pour obtenir une liste de frames de pile pour un module chargé. Chacune des méthodes est passé un [IDiaStackWalkHelper](../../debugger/debug-interface-access/idiastackwalkhelper.md) objet (implémenté par l’application cliente), qui fournit les informations nécessaires pour créer la liste de frames de pile.  
   
-## Remarques pour les appelants  
- cette interface est obtenue en appelant la méthode d' `CoCreateInstance` avec l'identificateur de classe `CLSID_DiaStackWalker` et l'ID d'interface d' `IID_IDiaStackWalker`.  l'exemple montre comment cette interface est obtenue.  
+## <a name="notes-for-callers"></a>Remarques pour les appelants  
+ Cette interface est obtenue en appelant le `CoCreateInstance` méthode avec l’identificateur de classe `CLSID_DiaStackWalker` et l’ID de l’interface de `IID_IDiaStackWalker`. L’exemple montre comment cette interface est obtenue.  
   
-## Exemple  
- cet exemple montre comment obtenir l'interface d' `IDiaStackWalker` .  
+## <a name="example"></a>Exemple  
+ Cet exemple montre comment obtenir le `IDiaStackWalker` interface.  
   
-```cpp#  
+```C++  
   
       IDiaStackWalker* pStackWalker;  
 HRESULT hr = CoCreateInstance(CLSID_DiaStackWalker,  
@@ -61,13 +60,13 @@ if (FAILED(hr))
 }  
 ```  
   
-## Configuration requise  
- en\-tête : Dia2.h  
+## <a name="requirements"></a>Spécifications  
+ En-tête : Dia2.h  
   
- bibliothèque : diaguids.lib  
+ Bibliothèque : diaguids.lib  
   
- DLL : msdia80.dll  
+ DLL : msdia80.dll  
   
-## Voir aussi  
- [Interfaces \(Kit de développement logiciel Debug Interface Access\)](../../debugger/debug-interface-access/interfaces-debug-interface-access-sdk.md)   
+## <a name="see-also"></a>Voir aussi  
+ [Interfaces (Debug Interface Access SDK)](../../debugger/debug-interface-access/interfaces-debug-interface-access-sdk.md)   
  [IDiaStackWalkHelper](../../debugger/debug-interface-access/idiastackwalkhelper.md)

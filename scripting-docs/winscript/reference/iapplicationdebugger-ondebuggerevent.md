@@ -1,27 +1,30 @@
 ---
-title: "IApplicationDebugger::onDebuggerEvent | Microsoft Docs"
-ms.custom: ""
-ms.date: "01/18/2017"
-ms.prod: "windows-script-interfaces"
-ms.reviewer: ""
-ms.suite: ""
-ms.tgt_pltfrm: ""
-ms.topic: "reference"
+title: IApplicationDebugger::onDebuggerEvent | Documents Microsoft
+ms.custom: 
+ms.date: 01/18/2017
+ms.prod: windows-script-interfaces
+ms.reviewer: 
+ms.suite: 
+ms.tgt_pltfrm: 
+ms.topic: reference
 apiname: IApplicationDebugger.onDebuggerEvent
 apilocation: scrobj.dll
-helpviewer_keywords: 
-  - "IApplicationDebugger::onDebuggerEvent"
+helpviewer_keywords: IApplicationDebugger::onDebuggerEvent
 ms.assetid: 82a5faaa-1222-4bf1-8569-10439dbdf16d
-caps.latest.revision: 8
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 8
+caps.latest.revision: "8"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: 754c56b8474a5e21a05c1399540391197c373118
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.translationtype: MT
+ms.contentlocale: fr-FR
+ms.lasthandoff: 10/27/2017
 ---
-# IApplicationDebugger::onDebuggerEvent
-Gère un événement d'application personnalisée.  
+# <a name="iapplicationdebuggerondebuggerevent"></a>IApplicationDebugger::onDebuggerEvent
+Gère un événement d’application personnalisée.  
   
-## Syntaxe  
+## <a name="syntax"></a>Syntaxe  
   
 ```  
 HRESULT onDebuggerEvent(  
@@ -30,28 +33,28 @@ HRESULT onDebuggerEvent(
 );  
 ```  
   
-#### Paramètres  
+#### <a name="parameters"></a>Paramètres  
  `riid`  
- \[in\]  L'identificateur d'interface pour l'objet.  
+ [in] L’identificateur d’interface pour l’objet.  
   
  `punk`  
- \[in\]  l'objet événement, qui implémente l'interface a défini par `riid`.  
+ [in] L’objet d’événement, qui implémente l’interface définie par `riid`.  
   
-## Valeur de retour  
- La méthode retourne `HRESULT`.  Les valeurs possibles incluent, mais ne sont pas limitées à, celles dans le tableau suivant.  
+## <a name="return-value"></a>Valeur de retour  
+ La méthode retourne `HRESULT`. Les valeurs possibles sont notamment celles figurant dans le tableau suivant.  
   
 |Valeur|Description|  
-|------------|-----------------|  
+|-----------|-----------------|  
 |`S_OK`|La méthode a réussi.|  
-|`E_NOTIMPL`|La méthode n'est pas actuellement implémentée.|  
+|`E_NOTIMPL`|La méthode n’est pas implémentée actuellement.|  
   
-## Notes  
- La sémantique d' `IUnknown` est entièrement application\/débogueur défini.  
+## <a name="remarks"></a>Remarques  
+ La sémantique de la `IUnknown` est entièrement définie/débogueur d’application.  
   
- Cette méthode permet des extensions personnalisées du modèle de débogueur ; il n'est pas actuellement implémentée.  
+ Cette méthode permet des extensions personnalisées du modèle débogueur ; Il n’est pas implémentée actuellement.  
   
- Cette méthode est appelée lorsque `IDebugApplication::FireDebuggerEvent` est appelé.  
+ Cette méthode est appelée lorsque `IDebugApplication::FireDebuggerEvent` est appelée.  
   
-## Voir aussi  
- [IApplicationDebugger, interface](../../winscript/reference/iapplicationdebugger-interface.md)   
+## <a name="see-also"></a>Voir aussi  
+ [IApplicationDebugger (Interface)](../../winscript/reference/iapplicationdebugger-interface.md)   
  [IDebugApplication::FireDebuggerEvent](../../winscript/reference/idebugapplication-firedebuggerevent.md)

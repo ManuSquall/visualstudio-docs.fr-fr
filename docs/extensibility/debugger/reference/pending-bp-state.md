@@ -1,46 +1,29 @@
 ---
-title: PENDING_BP_STATE | Microsoft Docs
+title: PENDING_BP_STATE | Documents Microsoft
 ms.custom: 
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-sdk
+ms.technology: vs-ide-sdk
 ms.tgt_pltfrm: 
 ms.topic: article
-f1_keywords:
-- PENDING_BP_STATE
-helpviewer_keywords:
-- PENDING_BP_STATE enumeration
+f1_keywords: PENDING_BP_STATE
+helpviewer_keywords: PENDING_BP_STATE enumeration
 ms.assetid: ac04ad72-fa92-4a15-ade2-0d0bbbadfc7f
-caps.latest.revision: 10
+caps.latest.revision: "10"
+author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-translation.priority.mt:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
+ms.openlocfilehash: de7ac105f7dea0c57297c29a4bdb8d5c85f62321
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
 ms.translationtype: MT
-ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
-ms.openlocfilehash: 2f051b6f265ab8e7aa60f7218066b5dcbe05b675
-ms.contentlocale: fr-fr
-ms.lasthandoff: 08/28/2017
-
+ms.contentlocale: fr-FR
+ms.lasthandoff: 10/31/2017
 ---
 # <a name="pendingbpstate"></a>PENDING_BP_STATE
-Specifies the state of a pending breakpoint (a breakpoint that has not yet been bound).  
+Spécifie l’état d’un point d’arrêt en attente (un point d’arrêt qui n’a pas encore été lié).  
   
-## <a name="syntax"></a>Syntax  
+## <a name="syntax"></a>Syntaxe  
   
 ```cpp  
 enum enum_PENDING_BP_STATE {   
@@ -61,29 +44,29 @@ public enum enum_PENDING_BP_STATE {
 };  
 ```  
   
-## <a name="members"></a>Members  
+## <a name="members"></a>Membres  
  PBPS_NONE  
- Placeholder for zero. This value is never returned.  
+ Espace réservé du zéro. Cette valeur n’est jamais retournée.  
   
  PBPS_DELETED  
- Indicates that the pending breakpoint has been deleted.  
+ Indique que le point d’arrêt en attente a été supprimé.  
   
  PBPS_DISABLED  
- Indicates that the pending breakpoint is disabled.  
+ Indique que le point d’arrêt en attente est désactivée.  
   
  PBPS_ENABLED  
- Indicates that the pending breakpoint is enabled.  
+ Indique que le point d’arrêt en attente est activée.  
   
-## <a name="remarks"></a>Remarks  
- Use as the `state` member of the [PENDING_BP_STATE_INFO](../../../extensibility/debugger/reference/pending-bp-state-info.md) structure.  
+## <a name="remarks"></a>Remarques  
+ Utiliser comme le `state` membre de la [PENDING_BP_STATE_INFO](../../../extensibility/debugger/reference/pending-bp-state-info.md) structure.  
   
-## <a name="requirements"></a>Requirements  
- Header: msdbg.h  
+## <a name="requirements"></a>Spécifications  
+ En-tête : msdbg.h  
   
- Namespace: Microsoft.VisualStudio.Debugger.Interop  
+ Namespace : Microsoft.VisualStudio.Debugger.Interop  
   
- Assembly: Microsoft.VisualStudio.Debugger.Interop.dll  
+ Assembly : Microsoft.VisualStudio.Debugger.Interop.dll  
   
-## <a name="see-also"></a>See Also  
- [Enumerations](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)   
+## <a name="see-also"></a>Voir aussi  
+ [Énumérations](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)   
  [PENDING_BP_STATE_INFO](../../../extensibility/debugger/reference/pending-bp-state-info.md)

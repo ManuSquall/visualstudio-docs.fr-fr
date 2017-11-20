@@ -1,48 +1,50 @@
 ---
-title: "Enregistrement d&#39;un Document personnalis&#233; | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-helpviewer_keywords: 
-  - "persistance, l'enregistrement de documents personnalisés"
-  - "projets (Visual Studio SDK), l'enregistrement de documents personnalisés"
-  - "éditeurs (Visual Studio SDK), l'enregistrement de documents personnalisés"
+title: "Enregistrement d’un Document personnalisé | Documents Microsoft"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+helpviewer_keywords:
+- persistence, saving custom documents
+- projects [Visual Studio SDK], saving custom documents
+- editors [Visual Studio SDK], saving custom documents
 ms.assetid: 040b36d6-1f0a-4579-971c-40fbb46ade1d
-caps.latest.revision: 12
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 12
+caps.latest.revision: "12"
+author: gregvanl
+ms.author: gregvanl
+manager: ghogen
+ms.openlocfilehash: c3cd6f5f45736a7b2578bc9df80a8472d3b50c3d
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: fr-FR
+ms.lasthandoff: 10/31/2017
 ---
-# Enregistrement d&#39;un Document personnalis&#233;
-[!INCLUDE[vs2017banner](../../code-quality/includes/vs2017banner.md)]
-
-les handles d'environnement **Save**, **Save As**, et commandes d' **Save All** .  Lorsqu'un utilisateur clique sur **Enregistrer**, **Enregistrer sous**, **ou enregistrer tout** dans le menu de **Fichier** ou fermez la solution, ce qui entraînerait une sauvegarde toute, le processus suivant se produit.  
+# <a name="saving-a-custom-document"></a>Enregistrement d’un Document personnalisé
+Les handles d’environnement la **enregistrer**, **enregistrer en tant que**, et **Enregistrer tout** commandes. Lorsqu’un utilisateur clique **enregistrer**, **enregistrer en tant que**, **ou enregistrer tout** sur la **fichier** menu ou de la fermeture de la solution, ce qui entraîne un Enregistrer tout, ce qui suit processus se produit.  
   
- ![Enregistrer l'éditeur du client](~/extensibility/internals/media/private.gif "Private")  
-Enregistrez, enregistrer sous, puis enregistrez toutes la gestion de contrôle pour un éditeur personnalisé  
+ ![Enregistrer l’Éditeur du client](../../extensibility/internals/media/private.gif "privé")  
+Enregistrer, enregistrer sous, puis enregistrer tout gestion des commandes pour un éditeur personnalisé  
   
- Ce processus est indiqué dans les étapes suivantes :  
+ Ce processus est détaillé dans les étapes suivantes :  
   
-1.  Pour les commandes des **Enregistrer** et d' **Enregistrer sous** , l'environnement utilise le service d' <xref:Microsoft.VisualStudio.Shell.Interop.SVsShellMonitorSelection> pour déterminer la fenêtre de document actif et ainsi les éléments doivent être stockés.  Une fois que la fenêtre de document actif est connue, l'environnement recherche l'identificateur de pointeur et d'éléments de hiérarchie \(itemID\) pour le document dans le tableau en cours de exécution de document.  Pour plus d'informations, consultez [Table de Document en cours d’exécution](../../extensibility/internals/running-document-table.md).  
+1.  Pour le **enregistrer** et **enregistrer en tant que** des commandes, l’environnement utilise le <xref:Microsoft.VisualStudio.Shell.Interop.SVsShellMonitorSelection> pour déterminer la fenêtre du document de service et par conséquent, les éléments doivent être enregistrés. Une fois que la fenêtre de document actif est connue, l’environnement de recherche le pointeur de la hiérarchie et l’identificateur de l’élément (itemID) pour le document dans la table de document en cours d’exécution. Pour plus d’informations, consultez [Table de documents en cours d’exécution](../../extensibility/internals/running-document-table.md).  
   
-     Pour l'enregistrement toute la commande, l'environnement utilise les informations contenues dans la table en cours de exécution de document pour compiler la liste de tous les éléments à enregistrer.  
+     Pour la commande Enregistrer tout, l’environnement utilise les informations dans la table de document en cours d’exécution pour compiler la liste de tous les éléments à enregistrer.  
   
-2.  Lorsque la solution reçoit un appel d' <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget.QueryStatus%2A> , il itère au sein de l'ensemble d'éléments sélectionnés \(autrement dit, les sélections multiples exposées par le service d' <xref:Microsoft.VisualStudio.Shell.Interop.SVsShellMonitorSelection> \).  
+2.  Lorsque la solution reçoit un <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget.QueryStatus%2A> appel, il itère au sein du jeu d’éléments sélectionnés (autrement dit, les sélections multiples exposées par le <xref:Microsoft.VisualStudio.Shell.Interop.SVsShellMonitorSelection> service).  
   
-3.  Sur chaque élément dans la sélection, la solution utilise le pointeur de la hiérarchie pour appeler la méthode d' <xref:Microsoft.VisualStudio.Shell.Interop.IVsPersistHierarchyItem2.IsItemDirty%2A> pour déterminer si la commande de menu d'enregistrement doit être activée.  Si un ou plusieurs éléments sont modifiés, la commande enregistrer est activée.  Si la hiérarchie utilise un éditeur standard, la hiérarchie d'interroger l'état modifié dans l'éditeur en appelant la méthode d' <xref:Microsoft.VisualStudio.Shell.Interop.IVsPersistDocData2.IsDocDataDirty%2A> .  
+3.  Sur chaque élément de la sélection, la solution utilise le pointeur de la hiérarchie pour appeler le <xref:Microsoft.VisualStudio.Shell.Interop.IVsPersistHierarchyItem2.IsItemDirty%2A> méthode pour déterminer si la commande de menu Enregistrer doit être activée. Si un ou plusieurs éléments sont modifiés, la commande est activée. Si la hiérarchie utilise un éditeur standard, les délégués de la hiérarchie recherchant dirty état à l’éditeur en appelant le <xref:Microsoft.VisualStudio.Shell.Interop.IVsPersistDocData2.IsDocDataDirty%2A> (méthode).  
   
-4.  Sur chaque élément sélectionné modifiée, la solution utilise le pointeur de la hiérarchie pour appeler la méthode d' <xref:Microsoft.VisualStudio.Shell.Interop.IVsPersistHierarchyItem2.SaveItem%2A> sur les hiérarchies appropriées.  
+4.  Sur chaque élément sélectionné n’est pas intègre, la solution utilise le pointeur de la hiérarchie pour appeler le <xref:Microsoft.VisualStudio.Shell.Interop.IVsPersistHierarchyItem2.SaveItem%2A> méthode sur les hiérarchies appropriés.  
   
-     Dans le cas d'un éditeur personnalisé, la communication entre l'objet de données du document et le projet est privée.  Par conséquent, tous les problèmes spéciaux de persistance sont gérés entre ces deux objets.  
+     Dans le cas d’un éditeur personnalisé, la communication entre l’objet de données du document et le projet est privée. Par conséquent, des problèmes de persistance spéciaux sont gérées entre ces deux objets.  
   
     > [!NOTE]
-    >  Si vous implémentez votre propre persistance, veillez à appeler la méthode d' <xref:Microsoft.VisualStudio.Shell.Interop.IVsQueryEditQuerySave2.QuerySaveFiles%2A> pour gagner du temps.  Cette méthode vérifie pour vous assurer qu'il est possible d'enregistrer le fichier \(par exemple, le fichier n'est pas en lecture seule\).  
+    >  Si vous implémentez votre propre persistance, veillez à appeler la <xref:Microsoft.VisualStudio.Shell.Interop.IVsQueryEditQuerySave2.QuerySaveFiles%2A> méthode pour gagner du temps. Cette méthode vérifie pour vous assurer qu’il est sûr enregistrer le fichier (par exemple, le fichier n’est pas en lecture seule).  
   
-## Voir aussi  
+## <a name="see-also"></a>Voir aussi  
  <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget>   
- [Ouvrir et enregistrer des éléments de projet](../../extensibility/internals/opening-and-saving-project-items.md)
+ [Ouverture et enregistrement d’éléments de projet](../../extensibility/internals/opening-and-saving-project-items.md)

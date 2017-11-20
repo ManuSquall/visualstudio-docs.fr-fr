@@ -1,44 +1,28 @@
 ---
-title: IDebugSettingsCallback2::EnumEEs | Microsoft Docs
+title: IDebugSettingsCallback2::EnumEEs | Documents Microsoft
 ms.custom: 
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-sdk
+ms.technology: vs-ide-sdk
 ms.tgt_pltfrm: 
 ms.topic: article
-helpviewer_keywords:
-- IDebugSettingsCallback2::EnumEEs
+helpviewer_keywords: IDebugSettingsCallback2::EnumEEs
 ms.assetid: 9f884c49-426f-461b-b547-9d909486e73f
-caps.latest.revision: 7
+caps.latest.revision: "7"
+author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-translation.priority.mt:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
+ms.openlocfilehash: 8c916ce59e1a96122d4fc50113ca74cbe5133acf
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
 ms.translationtype: MT
-ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
-ms.openlocfilehash: 352f465ead2af45be120a78b2bea025dd72892dd
-ms.contentlocale: fr-fr
-ms.lasthandoff: 08/28/2017
-
+ms.contentlocale: fr-FR
+ms.lasthandoff: 10/31/2017
 ---
 # <a name="idebugsettingscallback2enumees"></a>IDebugSettingsCallback2::EnumEEs
-Enumerates the available expression evaluators given the language and vendor identifiers.  
+Énumère les évaluateurs d’expression disponible étant donnés les identificateurs de langue et le fournisseur.  
   
-## <a name="syntax"></a>Syntax  
+## <a name="syntax"></a>Syntaxe  
   
 ```cpp  
 HRESULT EnumEEs(  
@@ -58,21 +42,21 @@ public int EnumEEs(
 );  
 ```  
   
-#### <a name="parameters"></a>Parameters  
+#### <a name="parameters"></a>Paramètres  
  `celtBuffer`  
- [in] Number of elements in the `pceltEEs` buffer.  
+ [in] Nombre d’éléments dans le `pceltEEs` mémoire tampon.  
   
  `rgguidLang`  
- [in, out] Unique identifier for the programming language.  
+ [dans, out] Identificateur unique pour le langage de programmation.  
   
  `rgguidVendor`  
- [in, out] Unique identifier for the vendor.  
+ [dans, out] Identificateur unique pour le fournisseur.  
   
  `pceltEEs`  
- [in, out] Array of expression evaluators.  
+ [dans, out] Tableau des évaluateurs d’expression.  
   
-## <a name="return-value"></a>Return Value  
- If successful, returns `S_OK`; otherwise, returns an error code.  
+## <a name="return-value"></a>Valeur de retour  
+ En cas de réussite, retourne `S_OK`; sinon, retourne un code d’erreur.  
   
-## <a name="see-also"></a>See Also  
+## <a name="see-also"></a>Voir aussi  
  [IDebugSettingsCallback2](../../../extensibility/debugger/reference/idebugsettingscallback2.md)

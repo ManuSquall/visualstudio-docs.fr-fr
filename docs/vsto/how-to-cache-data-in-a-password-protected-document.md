@@ -1,12 +1,10 @@
 ---
-title: 'How to: Cache Data in a Password-Protected Document | Microsoft Docs'
+title: "Comment : mettre en Cache les données dans un Document protégé par mot de passe | Documents Microsoft"
 ms.custom: 
 ms.date: 02/02/2017
-ms.prod: visual-studio-dev14
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- office-development
+ms.technology: office-development
 ms.tgt_pltfrm: 
 ms.topic: article
 dev_langs:
@@ -17,70 +15,71 @@ helpviewer_keywords:
 - datasets [Office development in Visual Studio], caching
 - data [Office development in Visual Studio], caching
 ms.assetid: 91b865fc-bd01-438f-ac63-2fe3175bc2e8
-caps.latest.revision: 23
-author: kempb
-ms.author: kempb
+caps.latest.revision: "23"
+author: gewarren
+ms.author: gewarren
 manager: ghogen
-ms.translationtype: HT
-ms.sourcegitcommit: eb5c9550fd29b0e98bf63a7240737da4f13f3249
-ms.openlocfilehash: 84bab2d070a05e05a72c412097e20e78732abefb
-ms.contentlocale: fr-fr
-ms.lasthandoff: 08/30/2017
-
+ms.openlocfilehash: eb1dd096b08525cd03f65ed46def81979bfaf272
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: fr-FR
+ms.lasthandoff: 10/31/2017
 ---
-# <a name="how-to-cache-data-in-a-password-protected-document"></a>How to: Cache Data in a Password-Protected Document
-  If you add data to the data cache in a document or workbook that is protected with a password, changes to the cached data are not saved automatically. You can save changes to the cached data by overriding two methods in your project.  
+# <a name="how-to-cache-data-in-a-password-protected-document"></a>Comment : mettre en cache des données dans un document protégé par un mot de passe
+  Si vous ajoutez des données dans le cache de données dans un document ou le classeur est protégé par un mot de passe, les modifications apportées aux données mises en cache ne sont pas enregistrées automatiquement. Vous pouvez enregistrer les modifications aux données mises en cache en substituant deux méthodes dans votre projet.  
   
  [!INCLUDE[appliesto_alldoc](../vsto/includes/appliesto-alldoc-md.md)]  
   
-## <a name="caching-in-word-documents"></a>Caching in Word Documents  
+## <a name="caching-in-word-documents"></a>La mise en cache dans les Documents Word  
   
-#### <a name="to-cache-data-in-a-word-document-that-is-protected-with-a-password"></a>To cache data in a Word document that is protected with a password  
+#### <a name="to-cache-data-in-a-word-document-that-is-protected-with-a-password"></a>En cache des données dans un document Word protégé par un mot de passe  
   
-1.  In the `ThisDocument` class, mark a public field or property to be cached. For more information, see [Caching Data](../vsto/caching-data.md).  
+1.  Dans la `ThisDocument` de classe, marquez un champ public ou une propriété doit être mis en cache. Pour plus d'informations, consultez [Caching Data](../vsto/caching-data.md).  
   
-2.  Override the <xref:Microsoft.Office.Tools.Word.DocumentBase.UnprotectDocument%2A> method in the `ThisDocument` class and remove protection from the document.  
+2.  Remplacer la <xref:Microsoft.Office.Tools.Word.DocumentBase.UnprotectDocument%2A> méthode dans le `ThisDocument` de classe et de supprimer la protection du document.  
   
-     When the document is saved, the [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] calls this method to give you an opportunity to unprotect the document. This enables changes to the cached data to be saved.  
+     Lorsque le document est enregistré, le [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] appelle cette méthode pour vous donner la possibilité pour la protection du document. Ainsi, les modifications apportées à l’enregistrement des données mises en cache.  
   
-3.  Override the <xref:Microsoft.Office.Tools.Word.DocumentBase.ProtectDocument%2A> method in the `ThisDocument` class and reapply protection to the document.  
+3.  Remplacer la <xref:Microsoft.Office.Tools.Word.DocumentBase.ProtectDocument%2A> méthode dans le `ThisDocument` de classe et de réappliquer la protection du document.  
   
-     After the document is saved, the [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] calls this method to give you an opportunity to reapply protection to the document.  
+     Une fois que le document est enregistré, le [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] appelle cette méthode pour vous donner la possibilité de réappliquer la protection du document.  
   
-### <a name="example"></a>Example  
- The following code example demonstrates how to cache data in a Word document that is protected with a password. Before the code removes the protection in the <xref:Microsoft.Office.Tools.Word.DocumentBase.UnprotectDocument%2A> method, it saves the current <xref:Microsoft.Office.Tools.Word.Document.ProtectionType%2A> value, so that the same type of protection can be reapplied in the <xref:Microsoft.Office.Tools.Word.DocumentBase.ProtectDocument%2A> method.  
+### <a name="example"></a>Exemple  
+ L’exemple de code suivant montre comment mettre en cache des données dans un document Word protégé par un mot de passe. Avant que le code supprime la protection dans le <xref:Microsoft.Office.Tools.Word.DocumentBase.UnprotectDocument%2A> (méthode), il enregistre le <xref:Microsoft.Office.Tools.Word.Document.ProtectionType%2A> valeur, afin que le même type de protection puisse être rétabli dans la <xref:Microsoft.Office.Tools.Word.DocumentBase.ProtectDocument%2A> (méthode).  
   
- [!code-csharp[Trin_CachedDataProtectedDocument#1](../vsto/codesnippet/CSharp/Trin_CachedDataProtectedDocument/ThisDocument.cs#1)] [!code-vb[Trin_CachedDataProtectedDocument#1](../vsto/codesnippet/VisualBasic/Trin_CachedDataProtectedDocument/ThisDocument.vb#1)]  
+ [!code-csharp[Trin_CachedDataProtectedDocument#1](../vsto/codesnippet/CSharp/Trin_CachedDataProtectedDocument/ThisDocument.cs#1)]
+ [!code-vb[Trin_CachedDataProtectedDocument#1](../vsto/codesnippet/VisualBasic/Trin_CachedDataProtectedDocument/ThisDocument.vb#1)]  
   
-### <a name="compiling-the-code"></a>Compiling the Code  
- Add this code to the `ThisDocument` class in your project. This code assumes that the password is stored in a field named `securelyStoredPassword`.  
+### <a name="compiling-the-code"></a>Compilation du code  
+ Ajoutez ce code à la `ThisDocument` classe dans votre projet. Ce code suppose que le mot de passe est stocké dans un champ nommé `securelyStoredPassword`.  
   
-## <a name="caching-in-excel-workbooks"></a>Caching in Excel Workbooks  
- In Excel projects, this procedure is necessary only when you protect the entire workbook with a password by using the <xref:Microsoft.Office.Tools.Excel.Workbook.Protect%2A> method. This procedure is not necessary if you protect only a specific worksheet with a password by using the <xref:Microsoft.Office.Tools.Excel.Worksheet.Protect%2A> method.  
+## <a name="caching-in-excel-workbooks"></a>La mise en cache dans les classeurs Excel  
+ Dans les projets Excel, cette procédure est nécessaire uniquement lorsque vous protégez le classeur entier avec un mot de passe à l’aide de la <xref:Microsoft.Office.Tools.Excel.Workbook.Protect%2A> (méthode). Cette procédure n’est pas nécessaire si vous protégez uniquement une feuille de calcul spécifique avec un mot de passe à l’aide de la <xref:Microsoft.Office.Tools.Excel.Worksheet.Protect%2A> (méthode).  
   
-#### <a name="to-cache-data-in-an-excel-workbook-that-is-protected-with-a-password"></a>To cache data in an Excel workbook that is protected with a password  
+#### <a name="to-cache-data-in-an-excel-workbook-that-is-protected-with-a-password"></a>Pour le cache des données dans un classeur Excel qui est protégé par un mot de passe  
   
-1.  In the `ThisWorkbook` class or one of the `Sheet`*n* classes, mark a public field or property to be cached. For more information, see [Caching Data](../vsto/caching-data.md).  
+1.  Dans le `ThisWorkbook` classe ou une de le `Sheet`  *n*  classes, marquez un champ public ou une propriété doit être mis en cache. Pour plus d'informations, consultez [Caching Data](../vsto/caching-data.md).  
   
-2.  Override the <xref:Microsoft.Office.Tools.Excel.WorkbookBase.UnprotectDocument%2A> method in the `ThisWorkbook` class and remove protection from the workbook.  
+2.  Remplacer la <xref:Microsoft.Office.Tools.Excel.WorkbookBase.UnprotectDocument%2A> méthode dans le `ThisWorkbook` de classe et de supprimer la protection du classeur.  
   
-     When the workbook is saved, the [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] calls this method to give you an opportunity to unprotect the workbook. This enables changes to the cached data to be saved.  
+     Lorsque le classeur est enregistré, le [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] appelle cette méthode pour vous donner la possibilité pour la protection du classeur. Ainsi, les modifications apportées à l’enregistrement des données mises en cache.  
   
-3.  Override the <xref:Microsoft.Office.Tools.Excel.WorkbookBase.ProtectDocument%2A> method in the `ThisWorkbook` class and reapply protection to the document.  
+3.  Remplacer la <xref:Microsoft.Office.Tools.Excel.WorkbookBase.ProtectDocument%2A> méthode dans le `ThisWorkbook` de classe et de réappliquer la protection du document.  
   
-     After the workbook is saved, the [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] calls this method to give you an opportunity to reapply protection to the workbook.  
+     Une fois que le classeur est enregistré, le [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] appelle cette méthode pour vous donner la possibilité de réappliquer la protection du classeur.  
   
-### <a name="example"></a>Example  
- The following code example demonstrates how to cache data in an Excel workbook that is protected with a password. Before the code removes the protection in the <xref:Microsoft.Office.Tools.Excel.WorkbookBase.UnprotectDocument%2A> method, it saves the current <xref:Microsoft.Office.Tools.Excel.Workbook.ProtectStructure%2A> and <xref:Microsoft.Office.Tools.Excel.Workbook.ProtectWindows%2A> values, so that the same type of protection can be reapplied in the <xref:Microsoft.Office.Tools.Excel.WorkbookBase.ProtectDocument%2A> method.  
+### <a name="example"></a>Exemple  
+ L’exemple de code suivant montre comment mettre en cache des données dans un classeur Excel qui est protégé par un mot de passe. Avant que le code supprime la protection dans le <xref:Microsoft.Office.Tools.Excel.WorkbookBase.UnprotectDocument%2A> (méthode), il enregistre le <xref:Microsoft.Office.Tools.Excel.Workbook.ProtectStructure%2A> et <xref:Microsoft.Office.Tools.Excel.Workbook.ProtectWindows%2A> des valeurs, afin que le même type de protection puisse être rétabli dans la <xref:Microsoft.Office.Tools.Excel.WorkbookBase.ProtectDocument%2A> (méthode).  
   
- [!code-vb[Trin_CachedDataProtectedWorkbook#1](../vsto/codesnippet/VisualBasic/Trin_CachedDataProtectedWorkbook/ThisWorkbook.vb#1)] [!code-csharp[Trin_CachedDataProtectedWorkbook#1](../vsto/codesnippet/CSharp/Trin_CachedDataProtectedWorkbook/ThisWorkbook.cs#1)]  
+ [!code-vb[Trin_CachedDataProtectedWorkbook#1](../vsto/codesnippet/VisualBasic/Trin_CachedDataProtectedWorkbook/ThisWorkbook.vb#1)]
+ [!code-csharp[Trin_CachedDataProtectedWorkbook#1](../vsto/codesnippet/CSharp/Trin_CachedDataProtectedWorkbook/ThisWorkbook.cs#1)]  
   
-### <a name="compiling-the-code"></a>Compiling the Code  
- Add this code to the `ThisWorkbook` class in your project. This code assumes that the password is stored in a field named `securelyStoredPassword`.  
+### <a name="compiling-the-code"></a>Compilation du code  
+ Ajoutez ce code à la `ThisWorkbook` classe dans votre projet. Ce code suppose que le mot de passe est stocké dans un champ nommé `securelyStoredPassword`.  
   
-## <a name="see-also"></a>See Also  
- [Caching Data](../vsto/caching-data.md)   
- [How to: Cache Data for Use Offline or on a Server](../vsto/how-to-cache-data-for-use-offline-or-on-a-server.md)   
- [How to: Programmatically Cache a Data Source in an Office Document](../vsto/how-to-programmatically-cache-a-data-source-in-an-office-document.md)  
+## <a name="see-also"></a>Voir aussi  
+ [Mise en cache de données](../vsto/caching-data.md)   
+ [Comment : mettre en Cache des données pour une utilisation hors connexion ou sur un serveur](../vsto/how-to-cache-data-for-use-offline-or-on-a-server.md)   
+ [Guide pratique pour mettre en cache par programmation une source de données dans un document Office](../vsto/how-to-programmatically-cache-a-data-source-in-an-office-document.md)  
   
   

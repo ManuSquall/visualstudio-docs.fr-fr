@@ -1,49 +1,51 @@
 ---
-title: "Consid&#233;rations sur les solutions bac &#224; sable (sandbox)"
-ms.custom: ""
-ms.date: "02/02/2017"
-ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "office-development"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "VS.SharePointTools.Project.SandboxedSolutions"
-  - "VS.SharePointTools.Security.SandboxedSolutions"
-dev_langs: 
-  - "VB"
-  - "CSharp"
-  - "VB"
-  - "CSharp"
-helpviewer_keywords: 
-  - "solutions de batterie (développement SharePoint dans Visual Studio)"
-  - "solutions bac à sable (sandbox) (développement SharePoint dans Visual Studio)"
-  - "développement SharePoint dans Visual Studio, solutions de batterie"
-  - "développement SharePoint dans Visual Studio, solutions bac à sable (sandbox)"
+title: "Considérations relatives à la Solution bac à sable | Documents Microsoft"
+ms.custom: 
+ms.date: 02/02/2017
+ms.reviewer: 
+ms.suite: 
+ms.technology: office-development
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords:
+- VS.SharePointTools.Project.SandboxedSolutions
+- VS.SharePointTools.Security.SandboxedSolutions
+dev_langs:
+- VB
+- CSharp
+- VB
+- CSharp
+helpviewer_keywords:
+- SharePoint development in Visual Studio, sandboxed solutions
+- sandboxed solutions [SharePoint development in Visual Studio]
+- SharePoint development in Visual Studio, farm solutions
+- farm solutions [SharePoint development in Visual Studio]
 ms.assetid: 6c2d2dc6-4acb-4b68-ba94-a61087e8dff0
-caps.latest.revision: 23
-author: "kempb"
-ms.author: "kempb"
-manager: "ghogen"
-caps.handback.revision: 22
+caps.latest.revision: "23"
+author: gewarren
+ms.author: gewarren
+manager: ghogen
+ms.openlocfilehash: e4598b100572bb47fd537e8edad927d78b4f1550
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: fr-FR
+ms.lasthandoff: 10/31/2017
 ---
-# Consid&#233;rations sur les solutions bac &#224; sable (sandbox)
-  Les *solutions bac à sable \(sandbox\)* sont une nouveauté de Microsoft SharePoint 2010 qui permettent aux utilisateurs de collections de sites de télécharger leurs propres solutions de code  \(composants WebPart personnalisés, par exemple\).  
+# <a name="sandboxed-solution-considerations"></a>Sandboxed Solution Considerations
+  *Solutions bac à sable* sont une fonctionnalité de Microsoft SharePoint 2010 qui permet aux utilisateurs de collection de sites de télécharger leurs propres solutions de code personnalisé. Une solution bac à sable commune est aux utilisateurs de télécharger leurs propres composants WebPart.  
   
- Une application SharePoint dans une solution bac à sable est conçue pour s'exécuter dans un processus contrôlé sécurisé ayant accès à une zone limitée de la batterie de serveurs Web.  Microsoft SharePoint 2010 fait appel à différentes fonctionnalités, à des galeries de solutions, à un systèmes de surveillance et à une infrastructure de validation pour activer les solutions bac à sable \(sandbox\).  
+ Une application SharePoint sandboxed s’exécute dans un processus sécurisé et surveillé qui a accès à une partie limitée de la batterie de serveurs Web. Microsoft SharePoint 2010 utilise une combinaison de fonctionnalités, des galeries de solutions, des solutions d’analyse et une infrastructure de validation pour activer les solutions bac à sable.  
   
-## Spécification du niveau de confiance du projet  
- [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] prend en charge les solutions bac à sable \(sandbox\) via une propriété de projet booléenne appelée *Sandboxed Solution*.  Cette propriété peut être définie à tout moment ou spécifiée au moment de la création du projet dans l'**Assistant Personnalisation de SharePoint**.  
+## <a name="specifying-project-trust-level"></a>Spécification du niveau de confiance de projet  
+ [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]prend en charge les solutions bac à sable via une propriété de projet booléenne appelées *Solution bac à sable*. Cette propriété peut être définie à tout moment dans le projet, ou il peut être spécifié lorsque vous créez le projet dans le **Assistant Personnalisation de SharePoint**.  
   
 > [!NOTE]  
->  La modification de la propriété *Sandboxed Solution* d'un projet à l'issue de sa création risque de provoquer des erreurs de validation.  
+>  Modification de la *Solution bac à sable* propriété d’un projet après sa création peut provoquer des erreurs de validation.  
   
- La solution est considérée comme une solution de batterie, si la propriété *Sandboxed Solution* a la valeur **false** ou si vous choisissez l'option **Déployer en tant que solution de batterie**.  Toutefois, la solution n'est pas traitée de la même manière qu'une solution de batterie, si la propriété *Sandboxed Solution* a la valeur **true** ou si vous sélectionnez l'option **Déployer en tant que solution bac à sable \(sandbox\)** dans l'Assistant.  
+ La solution est considérée comme une solution de batterie si le *Solution bac à sable* est définie sur **false** ou si vous choisissez la **déployer une solution de batterie de serveurs** option. Toutefois, la solution est traitée différemment d’une solution de batterie de serveurs si la *Solution bac à sable* est définie sur **true** ou si vous choisissez la **déployer comme une solution bac à sable** option de l’Assistant.  
   
-## Hiérarchie des sites SharePoint  
- Pour comprendre le mode de fonctionnement des solutions bac à sable \(sandbox\), il est important de savoir que les sites SharePoint sont organisés de façon hiérarchique.  L'élément supérieur correspond à la batterie de serveurs Web. Tous Les autres éléments lui sont subordonnés :  
+## <a name="sharepoint-site-hierarchy"></a>Hiérarchie de Site SharePoint  
+ Pour comprendre les solutions bac à sable comment le travail, il est utile de savoir que les sites SharePoint sont hiérarchiques dans la portée. L’élément supérieur est appelé à la batterie de serveurs Web et autres éléments lui sont subordonnés :  
   
  Batterie de serveurs Web  
   
@@ -65,41 +67,41 @@ caps.handback.revision: 22
   
  Site B2a  
   
- Comme vous pouvez le voir, les batteries de serveurs Web peuvent contenir une ou plusieurs applications Web qui, à leur tour, peuvent regrouper une ou plusieurs collections de sites composées elles\-mêmes de sous\-sites, et ainsi de suite.  Les modifications apportées à une collection de sites concernent exclusivement cette collection de sites.  Toutefois, les changements effectués au niveau de la batterie de serveurs Web affectent toutes les collections de sites de la batterie.  
+ Comme vous pouvez le voir, les batteries de serveurs Web peuvent contenir une ou plusieurs applications Web, qui à son tour peuvent contenir une ou plusieurs collections de sites, ce qui peuvent avoir des sous-sites et ainsi de suite. Modifications apportées à une collection de sites concernent uniquement que collection de sites et aucune autre. Toutefois, les modifications apportées au niveau de la batterie de serveurs Web affectent toutes les collections de sites sur la batterie de serveurs.  
   
- Windows SharePoint Services 3.0 \(WSS\) est prévu pour déployer des solutions uniquement au niveau de la batterie, à la différence de [!INCLUDE[wss_14_long](../sharepoint/includes/wss-14-long-md.md)] qui assure le déploiement au niveau de la batterie \(solution de batterie\) ou de la collection de sites \(solution bac à sable \(sandbox\)\).  
+ Windows SharePoint Services (WSS) 3.0 vous permet de déployer des solutions uniquement au niveau de la batterie de serveurs, mais [!INCLUDE[wss_14_long](../sharepoint/includes/wss-14-long-md.md)] vous permet de déployer au niveau de la batterie (solution de batterie) ou de niveau de la collection de sites (solution bac à sable).  
   
-## Intérêt des solutions bac à sable \(sandbox\)  
- Dans WSS 3.0, les solutions ne pouvaient être déployées qu'au niveau de la batterie.  Il était donc possible de déployer des solutions potentiellement dangereuses ou présentant des risques d'instabilité susceptibles de perturber le fonctionnement de la totalité de la batterie de serveurs Web et de l'ensemble des collections de sites et des applications sous\-jacentes.  Or, l'intérêt des solutions bac à sable est de limiter le déploiement de vos solutions à une sous\-zone de la batterie de services ou à une collection de sites spécifique.  Pour assurer une protection supplémentaire, l'assembly de la solution n'est pas chargé dans le processus [!INCLUDE[TLA2#tla_iis5](../sharepoint/includes/tla2sharptla-iis5-md.md)] principal \(w3wp.exe\).  À la place, il est chargé dans un processus distinct \(SPUCWorkerProcess.exe\).  Ce processus est surveillé et met en œuvre des quotas et des limitations pour protéger la batterie contre les solutions bac à sable qui procèdent à des activités malveillantes, telles que l'exécution de boucles serrées qui consomment beaucoup de cycles microprocesseurs.  
+## <a name="why-sandboxed-solutions"></a>Pourquoi les Solutions bac à sable ?  
+ Dans WSS 3.0, les solutions peut être déployées uniquement au niveau de la batterie de serveurs. Cela signifie que les solutions potentiellement dangereuses ou instabilitées peut être déployées affectées de la batterie de serveurs Web entière et tous les autres collections de sites et applications qui s’exécutent sous ce dernier. Toutefois, grâce aux solutions bac à sable, vous pouvez déployer vos solutions à une sous-zone de la batterie de serveurs, une collection de sites spécifiques. Pour fournir une protection supplémentaire, assembly de la solution n’est pas chargé dans le principal [!INCLUDE[TLA2#tla_iis5](../sharepoint/includes/tla2sharptla-iis5-md.md)] processus (w3wp.exe). Au lieu de cela, il est chargé dans un processus distinct (SPUCWorkerProcess.exe). Ce processus est analysé et implémente des quotas et limitations pour protéger la batterie de serveurs à partir de solutions bac à sable qui effectuent des activités malveillantes, telles que l’exécution de boucles serrées qui consomment des cycles de processeur.  
   
-## Galerie des solutions de collection de sites  
- [!INCLUDE[sharepointShort](../sharepoint/includes/sharepointshort-md.md)] 2010 dispose d'une fonction qui est appelée « galerie des solutions de collection de sites. » Vous pouvez accéder à cette fonctionnalité depuis la page Administration centrale de SharePoint 2010 ou en ouvrant le menu **Actions de site**, en choisissant **Paramètres du site**, puis en choisissant le lien **Solutions** sous  **Galeries** sur le site SharePoint.  Les galeries de solutions sont en quelque sorte des référentiels de solutions qui permettent aux administrateurs de collections de sites de gérer des solutions dans leurs collections de sites.  
+## <a name="site-collection-solution-gallery"></a>Galerie de solutions de Collection de sites  
+ [!INCLUDE[sharepointShort](../sharepoint/includes/sharepointshort-md.md)]2010 offre une fonction qui est appelée « site collection solution bibliothèque ». Vous pouvez accéder à cette fonctionnalité à partir de la page Administration centrale de SharePoint 2010 ou en ouvrant le **Actions du Site** menu, en choisissant **paramètres du Site**, puis en choisissant le **Solutions** lien sous **galeries** dans le site SharePoint. Galeries de solutions constituent des référentiels de solutions qui permettent aux administrateurs de collection de site gérer les solutions dans leurs collections de sites.  
   
- La galerie de solutions est une bibliothèque de documents stockée sur le site Web racine du site SharePoint.  Elle remplace les modèles de site et prend en charge les packages de solution.  Lorsqu'un fichier de package de solution SharePoint \(.wsp\) est téléchargé, il est traité comme une solution bac à sable \(sandbox\).  
+ La galerie de solutions est une bibliothèque de documents stockée dans la racine Web du site SharePoint. La galerie de solutions remplace les modèles de site et prend en charge les packages de solution. Quand un fichier de package (.wsp) de solution SharePoint est chargé, il est traité comme une solution bac à sable.  
   
-## Limitations des solutions bac à sable \(sandbox\)  
- Lorsqu'une solution bac à sable \(sandbox\) est déployée, l'étendue des fonctionnalités SharePoint mises à sa disposition est limitée pour réduire les risques de vulnérabilité.  Voici quelques\-unes des limitations prévues :  
+## <a name="sandboxed-solution-limitations"></a>Limitations de la Solution bac à sable  
+ Lorsqu’une solution bac à sable est déployée, le tableau des fonctionnalités de SharePoint à sa disposition est limité pour réduire les vulnérabilités de sécurité, qu'il peut avoir. Certaines de ces limitations sont les suivantes :  
   
--   Les solutions bac à sable \(sandbox\) ont accès à un sous\-ensemble restreint d'éléments de solution déployables.  Les modèles de projet SharePoint potentiellement vulnérables, tels que les définitions de site et les flux de travail, ne sont pas disponibles.  
+-   Solutions bac à sable ont un sous-ensemble limité d’éléments de solution déployables à leur disposition. Les modèles de projet SharePoint potentiellement vulnérables, tels que les définitions de site et les flux de travail, ne sont pas disponibles.  
   
--   SharePoint exécute le code de la solution bac à sable \(sandbox\) dans un processus \(SPUCWorkerProcess.exe\) indépendant du processus de pool d'applications \(w3wp.exe\) [!INCLUDE[TLA2#tla_iis5](../sharepoint/includes/tla2sharptla-iis5-md.md)] principal.  
+-   SharePoint exécute le code de la solution bac à sable dans un processus (SPUCWorkerProcess.exe) distinct à partir de la main [!INCLUDE[TLA2#tla_iis5](../sharepoint/includes/tla2sharptla-iis5-md.md)] processus d’application pool (w3wp.exe).  
   
--   Les dossiers mappés ne peuvent pas être ajoutés au projet.  
+-   Dossiers mappés ne peut pas être ajoutés au projet.  
   
--   Les types de l'assembly [!INCLUDE[moss_14_long](../sharepoint/includes/moss-14-long-md.md)] Microsoft.Office.Server ne peuvent pas être utilisés dans les solutions bac à sable \(sandbox\).  De plus, seuls les types de l'assembly [!INCLUDE[wss_14_long](../sharepoint/includes/wss-14-long-md.md)] Microsoft.SharePoint peuvent être utilisés dans les solutions bac à sable \(sandbox\).  
+-   Types dans le [!INCLUDE[moss_14_long](../sharepoint/includes/moss-14-long-md.md)] assembly Microsoft.Office.Server ne peut pas être utilisé dans les solutions bac à sable. En outre, seuls les types dans le [!INCLUDE[wss_14_long](../sharepoint/includes/wss-14-long-md.md)] assembly Microsoft.SharePoint peuvent être utilisés dans les solutions bac à sable.  
   
- Il est important de savoir que le fait de spécifier une solution SharePoint en tant que solution bac à sable \(sandbox\) n'a aucune incidence sur le serveur SharePoint. Cela change uniquement la façon dont le projet SharePoint est déployé sur SharePoint à partir de [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] et détermine les assemblys auxquels il est lié.  Cela n'a aucun impact sur le fichier .wsp généré et le fichier .wsp ne comporte aucune donnée ayant un lien direct avec la propriété *Sandboxed Solution*.  
+ Il est important de noter ce qui spécifie une solution SharePoint comme une solution bac à sable n’a aucun effet sur le serveur SharePoint. Il détermine uniquement la façon dont le projet SharePoint est déployé sur SharePoint à partir [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] et les assemblys qu’elle est liée à. Il n’affecte pas le fichier .wsp généré et le fichier .wsp ne comporte aucune donnée ayant directement en corrélation avec la *Solution bac à sable* propriété.  
   
-## Spécifications des solutions bac à sable \(sandbox\)  
- Les solutions bac à sable \(sandbox\) prennent en charge les spécifications suivantes :  
+## <a name="capabilities-and-elements-in-sandboxed-solutions"></a>Fonctionnalités et des éléments dans les Solutions bac à sable  
+ Solutions bac à sable prennent en charge les fonctionnalités et les éléments suivants :  
   
--   Types de contenu\/Champs  
+-   Types de contenu/champs  
   
 -   Actions personnalisées  
   
 -   Flux de travail déclaratifs  
   
--   Récepteurs d'événements  
+-   Récepteurs d’événements  
   
 -   Légendes des fonctionnalités  
   
@@ -107,11 +109,11 @@ caps.handback.revision: 22
   
 -   Instances de listes  
   
--   Module\/Fichiers  
+-   Module et les fichiers  
   
 -   Navigation  
   
--   Onet.xml  
+-   Onet.Xml  
   
 -   SPItemEventReceiver  
   
@@ -119,30 +121,30 @@ caps.handback.revision: 22
   
 -   SPWebEventReceiver  
   
--   Prise en charge de tous les composants WebPart dérivés de `System.Web.UI.WebControls.WebParts.WebPart`  
+-   Prise en charge pour tous les composants WebPart qui dérivent de`System.Web.UI.WebControls.WebParts.WebPart`  
   
 -   WebParts  
   
--   Éléments de fonctionnalité WebTemplate \(au lieu de Webtemp.xml\)  
+-   Éléments de fonctionnalité WebTemplate (au lieu de Webtemp.xml)  
   
--   Composants Visual WebPart  
+-   Composants Visual Web Parts  
   
- Les solutions bac à sable \(sandbox\) ne prennent pas en charge les spécifications suivantes :  
+ Solutions bac à sable ne prennent pas en charge les fonctionnalités et les éléments suivants :  
   
--   Pages d'application  
+-   Pages d’application  
   
--   Groupe d'actions personnalisées  
+-   Groupe d’actions personnalisées  
   
--   Fonctionnalités relatives aux batteries  
+-   Fonctionnalités étendues à la batterie de serveurs  
   
--   Élément `HideCustomAction`  
+-   `HideCustomAction` (élément)  
   
--   Fonctionnalités relatives aux applications Web  
+-   Fonctionnalités de portée d’Application Web  
   
 -   Flux de travail avec code  
   
-## Voir aussi  
- [Différences entre les solutions bac à sable &#40;sandbox&#41; et les solutions de batterie](../sharepoint/differences-between-sandboxed-and-farm-solutions.md)   
- [Developing SharePoint Solutions](../sharepoint/developing-sharepoint-solutions.md)  
+## <a name="see-also"></a>Voir aussi  
+ [Différences entre le bac à sable et les Solutions de batterie](../sharepoint/differences-between-sandboxed-and-farm-solutions.md)   
+ [Développement de solutions SharePoint](../sharepoint/developing-sharepoint-solutions.md)  
   
   

@@ -1,30 +1,35 @@
 ---
-title: "References, &#233;l&#233;ment (mod&#232;les Visual&#160;Studio) | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-general"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "http://schemas.microsoft.com/developer/vstemplate/2005#References"
-helpviewer_keywords: 
-  - "<References> (élément de modèles Visual Studio)"
-  - "References (élément de modèles Visual Studio)"
+title: "Fait référence à l’élément (modèles Visual Studio) | Documents Microsoft"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-general
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords: http://schemas.microsoft.com/developer/vstemplate/2005#References
+helpviewer_keywords:
+- <References> element [Visual Studio Templates]
+- References element [Visual Studio Templates]
 ms.assetid: 1969146d-46bf-422d-8d46-0e9493925003
-caps.latest.revision: 8
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 8
+caps.latest.revision: "8"
+author: gregvanl
+ms.author: gregvanl
+manager: ghogen
+ms.openlocfilehash: 436b5f745dc9b3b8c135ad111e6e708bbd391b4e
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: fr-FR
+ms.lasthandoff: 10/31/2017
 ---
-# References, &#233;l&#233;ment (mod&#232;les Visual&#160;Studio)
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
-
-Groupe les références d'assembly que le modèle ajoute aux projets.  
+# <a name="references-element-visual-studio-templates"></a>References, élément (modèles Visual Studio)
+Regroupe les références d’assembly que le modèle ajoute aux projets.  
   
-## Syntaxe  
+ \<VSTemplate >  
+ \<TemplateContent >  
+ \<Références >  
+  
+## <a name="syntax"></a>Syntaxe  
   
 ```  
 <References>  
@@ -34,31 +39,31 @@ Groupe les références d'assembly que le modèle ajoute aux projets.
 </References>  
 ```  
   
-## Attributs et éléments  
+## <a name="attributes-and-elements"></a>Attributs et éléments  
  Les sections suivantes décrivent des attributs, des éléments enfants et des éléments parents.  
   
-### Attributs  
+### <a name="attributes"></a>Attributs  
  Aucun  
   
-### Éléments enfants  
+### <a name="child-elements"></a>Éléments enfants  
   
 |Élément|Description|  
 |-------------|-----------------|  
-|[Référence](../extensibility/reference-element-visual-studio-templates.md)|Élément requis.<br /><br /> Spécifie la référence d'assembly à ajouter lorsque l'élément est ajouté à un projet.  Un élément `References` doit contenir un ou plusieurs éléments `Reference`.|  
+|[Référence](../extensibility/reference-element-visual-studio-templates.md)|Élément requis.<br /><br /> Spécifie la référence d’assembly à ajouter quand l’élément est ajouté à un projet. Il doit y avoir un ou plusieurs `Reference` éléments dans un `References` élément.|  
   
-### Éléments parents  
+### <a name="parent-elements"></a>Éléments parents  
   
 |Élément|Description|  
 |-------------|-----------------|  
 |[TemplateContent](../extensibility/templatecontent-element-visual-studio-templates.md)|Spécifie le contenu du modèle.|  
   
-## Notes  
+## <a name="remarks"></a>Remarques  
  `References` est un élément enfant facultatif de `TemplateContent`.  
   
- Les éléments `Reference` et `References` ne peuvent être utilisés que dans les fichiers .vstemplate dont l'attribut `Type` a la valeur `Item`.  
+ Le `Reference` et `References` éléments ne peuvent être utilisés dans les fichiers .vstemplate dont un `Type` valeur d’attribut `Item`.  
   
-## Exemple  
- L'exemple suivant illustre l'élément `TemplateContent` d'un modèle d'élément.  Ce XML ajoute des références aux assemblys System.dll et System.Data.dll.  
+## <a name="example"></a>Exemple  
+ L’exemple suivant illustre la `TemplateContent` élément d’un modèle d’élément. Ce code XML ajoute des références aux assemblys System.dll et System.Data.dll.  
   
 ```  
 <TemplateContent>  
@@ -78,6 +83,6 @@ Groupe les références d'assembly que le modèle ajoute aux projets.
 </TemplateContent>  
 ```  
   
-## Voir aussi  
- [Référence du schéma de modèle Visual Studio](../extensibility/visual-studio-template-schema-reference.md)   
- [Création de modèles de projets et d'éléments personnalisés](../ide/creating-project-and-item-templates.md)
+## <a name="see-also"></a>Voir aussi  
+ [Référence du schéma de modèle Visual Studio](../extensibility/visual-studio-template-schema-reference.md)   
+ [Création de modèles de projet et d’élément](../ide/creating-project-and-item-templates.md)

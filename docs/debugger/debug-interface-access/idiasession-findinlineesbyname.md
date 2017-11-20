@@ -1,53 +1,53 @@
 ---
-title: "IDiaSession::findInlineesByName | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-debug"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-dev_langs: 
-  - "C++"
+title: IDiaSession::findInlineesByName | Documents Microsoft
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-debug
+ms.tgt_pltfrm: 
+ms.topic: article
+dev_langs: C++
 ms.assetid: 9860336d-f703-4ecb-bfc4-3f5beb175a76
-caps.latest.revision: 3
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 3
+caps.latest.revision: "3"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: d0162e15d1692aa1ad6efef6a1a4d2a2088e8661
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: fr-FR
+ms.lasthandoff: 10/31/2017
 ---
-# IDiaSession::findInlineesByName
-[!INCLUDE[vs2017banner](../../code-quality/includes/vs2017banner.md)]
-
-Extrait une énumération qui permet à un client pour itérer au sein de les informations de numéro de ligne de toutes les fonctions inline qui correspondent à un nom spécifié.  
+# <a name="idiasessionfindinlineesbyname"></a>IDiaSession::findInlineesByName
+Récupère une énumération qui permet à un client parcourir les informations de numéro de ligne de toutes les fonctions inline qui correspondent à un nom spécifié.  
   
-## Syntaxe  
+## <a name="syntax"></a>Syntaxe  
   
-```cpp#  
-HRESULT findInlineesByName (   
-   LPCOLESTR             name,  
+```C++  
+HRESULT findInlineesByName (   
+   LPCOLESTR             name,  
    DWORD                 option,  
-   IDiaEnumLineNumbers** ppResult  
+   IDiaEnumLineNumbers** ppResult  
 );  
 ```  
   
-#### Paramètres  
+#### <a name="parameters"></a>Paramètres  
  `name`  
- \[in\]  Spécifie le nom à utiliser pour la comparaison.  
+ [in] Spécifie le nom à utiliser pour la comparaison.  
   
  `option`  
- \[in\]  spécifie les options de comparaison appliquées pour nommer rechercher.  Les valeurs de l'énumération de [NameSearchOptions, énumération](../../debugger/debug-interface-access/namesearchoptions.md) peuvent être utilisées unique ou en association.  
+ [in] Spécifie les options de comparaison appliquées à la recherche de nom. Les valeurs à partir de la [namesearchoptions, énumération](../../debugger/debug-interface-access/namesearchoptions.md) énumération peut être utilisée seul ou combiné.  
   
  `ppResult`  
- \[out\]  Retourne un objet d' [IDiaEnumLineNumbers](../../debugger/debug-interface-access/idiaenumlinenumbers.md) qui contient une liste des numéros de ligne qui ont été récupérés.  
+ [out] Retourne un [IDiaEnumLineNumbers](../../debugger/debug-interface-access/idiaenumlinenumbers.md) objet qui contient une liste des numéros de ligne ont été récupérés.  
   
-## Valeur de retour  
- En cas de réussite, retourne `S_OK` , sinon, retourne un code d'erreur.  
+## <a name="return-value"></a>Valeur de retour  
+ En cas de réussite, retourne `S_OK`; sinon, retourne un code d’erreur.  
   
-## Voir aussi  
+## <a name="see-also"></a>Voir aussi  
  [IDiaSession](../../debugger/debug-interface-access/idiasession.md)   
  [IDiaSourceFile](../../debugger/debug-interface-access/idiasourcefile.md)   
  [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)   
- [SymTagEnum, énumération](../../debugger/debug-interface-access/symtagenum.md)   
+ [SymTagEnum (énumération)](../../debugger/debug-interface-access/symtagenum.md)   
  [IDiaEnumLineNumbers](../../debugger/debug-interface-access/idiaenumlinenumbers.md)

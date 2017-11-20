@@ -1,46 +1,29 @@
 ---
-title: IDebugEngine3::SetAllExceptions | Microsoft Docs
+title: IDebugEngine3::SetAllExceptions | Documents Microsoft
 ms.custom: 
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-sdk
+ms.technology: vs-ide-sdk
 ms.tgt_pltfrm: 
 ms.topic: article
-f1_keywords:
-- IDebugEngine3::SetAllExceptions
-helpviewer_keywords:
-- IDebugEngine3::SetAllExceptions
+f1_keywords: IDebugEngine3::SetAllExceptions
+helpviewer_keywords: IDebugEngine3::SetAllExceptions
 ms.assetid: 8f03a6ac-a854-42f7-933c-a2df1b351975
-caps.latest.revision: 10
+caps.latest.revision: "10"
+author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-translation.priority.mt:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
+ms.openlocfilehash: 33801c7228e9f4b43c76ef3f29f26631bdad5edf
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
 ms.translationtype: MT
-ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
-ms.openlocfilehash: 63873031c8a6acfbb24f51694b2d415998a6e220
-ms.contentlocale: fr-fr
-ms.lasthandoff: 08/28/2017
-
+ms.contentlocale: fr-FR
+ms.lasthandoff: 10/31/2017
 ---
 # <a name="idebugengine3setallexceptions"></a>IDebugEngine3::SetAllExceptions
-This method sets the state of all outstanding exceptions.  
+Cette méthode définit l’état de toutes les exceptions en attente.  
   
-## <a name="syntax"></a>Syntax  
+## <a name="syntax"></a>Syntaxe  
   
 ```cpp  
 HRESULT SetAllExceptions(  
@@ -54,13 +37,13 @@ int SetAllExceptions(
 );  
 ```  
   
-#### <a name="parameters"></a>Parameters  
+#### <a name="parameters"></a>Paramètres  
  `dwState`  
- [in] One of the [EXCEPTION_STATE](../../../extensibility/debugger/reference/exception-state.md) values.  
+ [in] Parmi les [EXCEPTION_STATE](../../../extensibility/debugger/reference/exception-state.md) valeurs.  
   
-## <a name="return-value"></a>Return Value  
- If successful, returns `S_OK`; otherwise, returns error code.  
+## <a name="return-value"></a>Valeur de retour  
+ En cas de réussite, retourne `S_OK`; sinon, retourne le code d’erreur.  
   
-## <a name="see-also"></a>See Also  
+## <a name="see-also"></a>Voir aussi  
  [IDebugEngine3](../../../extensibility/debugger/reference/idebugengine3.md)   
  [EXCEPTION_STATE](../../../extensibility/debugger/reference/exception-state.md)

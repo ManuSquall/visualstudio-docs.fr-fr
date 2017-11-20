@@ -1,27 +1,30 @@
 ---
-title: "IActiveScriptStringCompare::StrComp | Microsoft Docs"
-ms.custom: ""
-ms.date: "01/18/2017"
-ms.prod: "windows-script-interfaces"
-ms.reviewer: ""
-ms.suite: ""
-ms.tgt_pltfrm: ""
-ms.topic: "reference"
+title: IActiveScriptStringCompare::StrComp | Documents Microsoft
+ms.custom: 
+ms.date: 01/18/2017
+ms.prod: windows-script-interfaces
+ms.reviewer: 
+ms.suite: 
+ms.tgt_pltfrm: 
+ms.topic: reference
 apiname: IActiveScriptStringCompare.StrComp
 apilocation: scrobj.dll
-helpviewer_keywords: 
-  - "StrComp (méthode), IActiveScriptStringCompare (interface)"
+helpviewer_keywords: StrComp method, IActiveScriptStringCompare interface
 ms.assetid: 124d1281-8037-4766-a2a1-61244ac1f114
-caps.latest.revision: 8
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 8
+caps.latest.revision: "8"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: 1b92b29f4e40f5e8de567337957aabbcb3c057fd
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.translationtype: MT
+ms.contentlocale: fr-FR
+ms.lasthandoff: 10/27/2017
 ---
-# IActiveScriptStringCompare::StrComp
+# <a name="iactivescriptstringcomparestrcomp"></a>IActiveScriptStringCompare::StrComp
 Définit la méthode de comparaison de chaînes pour le moteur de script.  
   
-## Syntaxe  
+## <a name="syntax"></a>Syntaxe  
   
 ```  
 HRESULT StrComp(  
@@ -34,7 +37,7 @@ HRESULT StrComp(
 );  
 ```  
   
-#### Paramètres  
+#### <a name="parameters"></a>Paramètres  
  `bszStr1`  
  Première chaîne.  
   
@@ -42,22 +45,22 @@ HRESULT StrComp(
  Seconde chaîne.  
   
  `iRet`  
- Résultat de la comparaison.  0 si`bszStr1` et `bszStr2`sont identiques ; \-1 si `bszStr1` \< `bszStr2`; 1 si `bszStr1` \> `bszStr2`.  
+ Le résultat de la comparaison. 0 si `bszStr1` et `bszStr2`sont identiques ; -1 si `bszStr1`  <  `bszStr2`; 1 si `bszStr1`  >  `bszStr2`.  
   
-## Valeur de retour  
- Retourne une des valeurs suivantes :  
+## <a name="return-value"></a>Valeur de retour  
+ Retourne l’une des valeurs suivantes :  
   
 |Valeur de retour|Signification|  
-|----------------------|-------------------|  
-|`S_OK`|Succès.|  
-|`E_INVALIDARG`|Un argument n'est pas valide.|  
-|`E_UNEXPECTED`|L'appel à n'a pas été conçu \(par exemple, le moteur de script n'a pas encore été chargé ou n'a pas été initialisé.\)|  
+|------------------|-------------|  
+|`S_OK`|Opération réussie.|  
+|`E_INVALIDARG`|Un argument n’est pas valide.|  
+|`E_UNEXPECTED`|L’appel n’était pas attendu (par exemple, le moteur de script n'a pas encore été chargé ou initialisé).|  
   
-## Notes  
- Cette méthode est appelée chaque fois qu'une comparaison de chaînes est exécutée.  
+## <a name="remarks"></a>Remarques  
+ Cette méthode est appelée chaque fois qu’une comparaison de chaînes est exécutée.  
   
-## Exemple  
- l'exemple suivant montre comment surcharger la fonction de comparaison de chaînes.  Il permet la surcharge lorsque vous utilisez [IActiveScriptProperty::SetProperty](../../winscript/reference/iactivescriptproperty-setproperty.md) pour définir SCRIPTPROP\_STRINGCOMPAREINSTANCE.  
+## <a name="example"></a>Exemple  
+ L’exemple suivant montre comment surcharger la fonction de comparaison de chaîne. La surcharge est autorisée lorsque vous utilisez [IActiveScriptProperty::SetProperty](../../winscript/reference/iactivescriptproperty-setproperty.md) définir SCRIPTPROP_STRINGCOMPAREINSTANCE.  
   
 ```cpp#  
 cpp_quote("// {58562769-ED52-42f7-8403-4963514E1F11}")  
@@ -94,5 +97,5 @@ interface IActiveScriptStringCompare : IUnknown
 }  
 ```  
   
-## Voir aussi  
- [IActiveScriptStringCompare, interface](../../winscript/reference/iactivescriptstringcompare-interface.md)
+## <a name="see-also"></a>Voir aussi  
+ [Interface IActiveScriptStringCompare](../../winscript/reference/iactivescriptstringcompare-interface.md)

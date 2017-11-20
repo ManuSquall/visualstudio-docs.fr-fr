@@ -1,64 +1,66 @@
 ---
-title: "Int&#233;gration de donn&#233;es m&#233;tiers dans SharePoint"
-ms.custom: ""
-ms.date: "02/02/2017"
-ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "office-development"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-dev_langs: 
-  - "VB"
-  - "CSharp"
-  - "VB"
-  - "CSharp"
-helpviewer_keywords: 
-  - "BDC (développement SharePoint dans Visual Studio), agréger des données"
-  - "BDC (développement SharePoint dans Visual Studio), données métiers"
-  - "BDC (développement SharePoint dans Visual Studio), créer un modèle"
-  - "BDC (développement SharePoint dans Visual Studio), données"
-  - "service de connectivité de données métiers (développement SharePoint dans Visual Studio), agréger des données"
-  - "service de connectivité de données métiers (développement SharePoint dans Visual Studio), données métiers"
-  - "service de connectivité de données métiers (développement SharePoint dans Visual Studio), créer un modèle"
-  - "service de connectivité de données métiers (développement SharePoint dans Visual Studio), données"
+title: "Intégration de données métiers dans SharePoint | Documents Microsoft"
+ms.custom: 
+ms.date: 02/02/2017
+ms.reviewer: 
+ms.suite: 
+ms.technology: office-development
+ms.tgt_pltfrm: 
+ms.topic: article
+dev_langs:
+- VB
+- CSharp
+- VB
+- CSharp
+helpviewer_keywords:
+- Business Data Connectivity service [SharePoint development in Visual Studio], business data
+- BDC [SharePoint development in Visual Studio], aggregating data
+- BDC [SharePoint development in Visual Studio], business data
+- Business Data Connectivity service [SharePoint development in Visual Studio], aggregating data
+- BDC [SharePoint development in Visual Studio], creating a model
+- Business Data Connectivity service [SharePoint development in Visual Studio], creating a model
+- Business Data Connectivity service [SharePoint development in Visual Studio], data
+- BDC [SharePoint development in Visual Studio], data
 ms.assetid: e092e3d6-2c5f-4060-ae86-d37db8967559
-caps.latest.revision: 19
-author: "kempb"
-ms.author: "kempb"
-manager: "ghogen"
-caps.handback.revision: 18
+caps.latest.revision: "19"
+author: gewarren
+ms.author: gewarren
+manager: ghogen
+ms.openlocfilehash: ece3128c2d6850a1d1dd22d0328a4ee2c46da2b1
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: fr-FR
+ms.lasthandoff: 10/31/2017
 ---
-# Int&#233;gration de donn&#233;es m&#233;tiers dans SharePoint
-  Vous avez la possibilité d'ajouter des données métiers dans SharePoint.  Celles\-ci peuvent provenir d'applications serveur principales, telles que [!INCLUDE[TLA#tla_sqlsvr](../sharepoint/includes/tlasharptla-sqlsvr-md.md)], Siebel et SAP, ou d'un service Web.  Les utilisateurs peuvent afficher, ajouter, mettre à jour ou supprimer des données métiers en utilisant des listes externes ou des composants WebPart de données métiers dans SharePoint. Les utilisateurs peuvent également accéder à ces données hors connexion dans une application Microsoft Office telle que Microsoft Outlook.  Pour plus d'informations, consultez[Où vous pouvez afficher les données externes](http://go.microsoft.com/fwlink/?LinkId=169295).  
+# <a name="integrating-business-data-into-sharepoint"></a>Intégration de données métiers dans SharePoint
+  Vous pouvez intégrer des données métiers dans SharePoint. Données d’entreprise peuvent provenir d’applications de serveur principal, tel que [!INCLUDE[TLA#tla_sqlsvr](../sharepoint/includes/tlasharptla-sqlsvr-md.md)], Siebel et SAP, ou un service Web. Les utilisateurs peuvent afficher, ajouter, mettre à jour ou supprimer des données d’entreprise à l’aide de listes externes ou WebPart données de l’entreprise dans SharePoint.  Les utilisateurs peuvent également accéder ces données hors connexion dans une application Microsoft Office, tel que Microsoft Outlook. Pour plus d’informations, consultez [où peut vous afficher les données externes](http://go.microsoft.com/fwlink/?LinkId=169295).  
   
- Pour intégrer des données dans SharePoint, vous devez commencer par créer un modèle pour le service BDC \(Business Data Connectivity\).  Le service BDC est une application dans SharePoint prévue pour stocker les informations relatives aux données des applications métier.  Pour plus d'informations, consultez [Service name \(BDC\) de business data connectivity](http://go.microsoft.com/fwlink/?LinkID=169276).  
+ Pour intégrer des données dans SharePoint, créez un modèle pour le service de connectivité de données métiers (BDC). Le service BDC est une application dans SharePoint qui stocke des informations sur les données dans les applications d’entreprise. Pour plus d’informations, consultez [Service de connectivité de données métiers (BDC)](http://go.microsoft.com/fwlink/?LinkID=169276).  
   
-## Modèles dans Visual Studio  
- Les modèles dans Visual Studio permettent d'écrire le code personnalisé nécessaire pour extraire et mettre à jour les données de sources de données principales.  Il est possible, en outre, de cumuler les données à partir de plusieurs sources de données.  Vous pouvez, par exemple, afficher une liste de clients combinant les données d'une base de données [!INCLUDE[ssNoVersion](../sharepoint/includes/ssnoversion-md.md)] et d'un service Web.  
+## <a name="models-in-visual-studio"></a>Modèles dans Visual Studio  
+ Modèles dans Visual Studio permettent d’écrire du code personnalisé pour récupérer et mettre à jour des données à partir de sources de données back-end. Vous pouvez également regrouper des données issues de plusieurs sources de données. Par exemple, vous pouvez afficher une liste de clients qui contient les données d’une [!INCLUDE[ssNoVersion](../sharepoint/includes/ssnoversion-md.md)] de base de données et un service Web.  
   
- Vous êtes libre également d'importer des modèles déjà déployés sur SharePoint.  Après avoir importé un modèle, vous pouvez ajouter du code personnalisé ou vous contenter d'utiliser Visual Studio pour créer un package et déployer le modèle sur plusieurs batteries de serveurs SharePoint.  Pour plus d'informations, consultez [Création d'un modèle de connectivité de données métiers](../sharepoint/creating-a-business-data-connectivity-model.md).  
+ Vous pouvez également importer des modèles qui sont déjà déployés sur SharePoint. Après avoir importé un modèle, vous pouvez ajouter du code personnalisé ou simplement utiliser Visual Studio pour empaqueter et déployer le modèle sur plusieurs batteries de serveurs SharePoint. Pour plus d’informations, consultez [création d’un modèle de connectivité de données métiers](../sharepoint/creating-a-business-data-connectivity-model.md).  
   
-## Conception d'un modèle dans Visual Studio  
- Vous avez la possibilité de concevoir un modèle à l'aide d'un concepteur et de plusieurs fenêtres Outil.  Visual Studio génère le code XML du modèle en conséquence.  Pour plus d'informations, consultez [Vue d'ensemble des outils de conception du modèle BDC](../sharepoint/bdc-model-design-tools-overview.md).  
+## <a name="designing-a-model-in-visual-studio"></a>Vous concevez un modèle dans Visual Studio  
+ Vous pouvez concevoir un modèle à l’aide d’un concepteur et plusieurs fenêtres d’outil. Lorsque vous concevez le modèle, Visual Studio génère le code XML du modèle. Pour plus d’informations, consultez [vue d’ensemble des outils de conception modèle BDC](../sharepoint/bdc-model-design-tools-overview.md).  
   
  Un modèle contient des entités et des méthodes.  
   
-### Entités  
- Une entité décrit une collection de champs.  Une entité peut représenter, par exemple, une table dans une base de données.  Une entité s'affiche sous la forme d'un type de contenu externe dans SharePoint.  Pour plus d'informations sur les types de contenu externes, consultez [Que sont les types de contenu externes ?](http://go.microsoft.com/fwlink/?LinkId=169293)  
+### <a name="entities"></a>Entités  
+ Une entité décrit une collection de champs. Par exemple, une entité peut représenter une table dans une base de données. Une entité apparaît comme un type de contenu externe dans SharePoint. Pour plus d’informations sur les types de contenu externe, consultez [quels sont les Types de contenu externe ?](http://go.microsoft.com/fwlink/?LinkId=169293)  
   
-### Méthodes  
- Une méthode offre aux utilisateurs d'un type de contenu externe la possibilité d'intervenir sur les champs d'une entité.  La méthode Updater pourrait leur permettre, par exemple, de modifier l'adresse et la date de naissance d'un client où `Address` et `BirthDate` correspondent aux champs de l'entité `Customer`.  
+### <a name="methods"></a>Méthodes  
+ Une méthode offre aux utilisateurs d’un type de contenu externe pour exécuter une action sur les champs d’une entité. Par exemple, une méthode de mise à jour peut permettre aux utilisateurs de modifier l’adresse et date de naissance d’un client où `Address` et `BirthDate` sont des champs de la `Customer` entité.  
   
- Visual Studio génère un fichier de code de service pour chaque entité de votre modèle.  Lorsque vous ajoutez une méthode à votre modèle, Visual Studio génère une méthode correspondante dans le fichier de code de service.  Pensez à insérer le code dans chaque méthode pour effectuer la tâche appropriée.  Si vous ajoutez, par exemple, une méthode Creator au modèle, Visual Studio génère une méthode Creator dans votre fichier de code de service.  Cette méthode est appelée par le service BDC dès qu'un utilisateur clique sur le bouton **Nouvel élément** dans une liste basée sur le modèle.  Il convient, par conséquent, d'incorporer le code à la méthode Creator prévue pour ajouter de nouvelles données à une source de données.  Pour plus d'informations, consultez [Conception d'un modèle de connectivité de données métiers](../sharepoint/designing-a-business-data-connectivity-model.md).  
+ Visual Studio génère un fichier de code de service pour chaque entité dans votre modèle. Lorsque vous ajoutez une méthode à votre modèle, Visual Studio génère une méthode correspondante dans le fichier de code de service. Ajoutez le code à chaque méthode pour effectuer la tâche appropriée. Par exemple, si vous ajoutez une méthode de création pour le modèle, Visual Studio génère une méthode de création dans votre fichier de code de service. Cette méthode est appelée par le service BDC lorsqu’un utilisateur clique sur le **un nouvel élément** bouton dans une liste qui est basée sur le modèle. Par conséquent, ajoutez le code à la méthode de création qui ajoute de nouvelles données à une source de données. Pour plus d’informations, consultez [vous concevez un modèle de connectivité de données métiers](../sharepoint/designing-a-business-data-connectivity-model.md).  
   
-## Rubriques connexes  
+## <a name="related-topics"></a>Rubriques connexes  
   
 |Titre|Description|  
 |-----------|-----------------|  
-|[Création d'un modèle de connectivité de données métiers](../sharepoint/creating-a-business-data-connectivity-model.md)|Explique comment créer un modèle ou importer un modèle exporté depuis SharePoint.|  
-|[Conception d'un modèle de connectivité de données métiers](../sharepoint/designing-a-business-data-connectivity-model.md)|Explique comment concevoir les éléments d'un modèle à l'aide des outils de conception Visual Studio.|  
-|[Quand utiliser le concepteur de SharePoint plutôt que Visual Studio pour générer des solutions à BCS](http://go.microsoft.com/fwlink/?LinkID=183448)|Vous aide à décider si vous devez utiliser Visual Studio ou SharePoint Designer pour créer un modèle pour le BDC.|  
+|[Création d’un modèle de connectivité de données métiers](../sharepoint/creating-a-business-data-connectivity-model.md)|Indique comment créer un modèle ou importer un modèle que vous exportez à partir de SharePoint.|  
+|[Conception d’un modèle de connectivité de données métiers](../sharepoint/designing-a-business-data-connectivity-model.md)|Explique comment les éléments d’un modèle de conception à l’aide des outils de conception de Visual Studio.|  
+|[Quand utiliser SharePoint Designer vs. Solutions de Visual Studio lors de la conception à l’aide de BCS](http://go.microsoft.com/fwlink/?LinkID=183448)|Permet de déterminer s’il faut utiliser Visual Studio ou SharePoint Designer pour créer un modèle pour le BDC.|  
   
   

@@ -1,27 +1,30 @@
 ---
-title: "IDebugDocumentTextEvents::onRemoveText | Microsoft Docs"
-ms.custom: ""
-ms.date: "01/18/2017"
-ms.prod: "windows-script-interfaces"
-ms.reviewer: ""
-ms.suite: ""
-ms.tgt_pltfrm: ""
-ms.topic: "reference"
+title: IDebugDocumentTextEvents::onRemoveText | Documents Microsoft
+ms.custom: 
+ms.date: 01/18/2017
+ms.prod: windows-script-interfaces
+ms.reviewer: 
+ms.suite: 
+ms.tgt_pltfrm: 
+ms.topic: reference
 apiname: IDebugDocumentTextEvents.onRemoveText
 apilocation: scrobj.dll
-helpviewer_keywords: 
-  - "IDebugDocumentTextEvents::onRemoveText"
+helpviewer_keywords: IDebugDocumentTextEvents::onRemoveText
 ms.assetid: c5dfe674-c42f-4e57-9d48-8380d5aa206b
-caps.latest.revision: 8
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 8
+caps.latest.revision: "8"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: d58e45d6c3bfffae0067c9d53b3df8972deb0500
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.translationtype: MT
+ms.contentlocale: fr-FR
+ms.lasthandoff: 10/27/2017
 ---
-# IDebugDocumentTextEvents::onRemoveText
+# <a name="idebugdocumenttexteventsonremovetext"></a>IDebugDocumentTextEvents::onRemoveText
 Indique que le texte a été supprimé du document.  
   
-## Syntaxe  
+## <a name="syntax"></a>Syntaxe  
   
 ```  
 HRESULT onRemoveText(  
@@ -30,23 +33,23 @@ HRESULT onRemoveText(
 );  
 ```  
   
-#### Paramètres  
+#### <a name="parameters"></a>Paramètres  
  `cCharacterPosition`  
- \[in\]  La position de caractère du premier caractère supprimé.  
+ [in] La position de caractère du premier caractère est supprimé.  
   
  `cNumToRemove`  
- \[in\]  le nombre de caractères supprimés.  
+ [in] Le nombre de caractères supprimés.  
   
-## Valeur de retour  
- La méthode retourne `HRESULT`.  Les valeurs possibles incluent, mais ne sont pas limitées à, celles dans le tableau suivant.  
+## <a name="return-value"></a>Valeur de retour  
+ La méthode retourne `HRESULT`. Les valeurs possibles sont notamment celles figurant dans le tableau suivant.  
   
 |Valeur|Description|  
-|------------|-----------------|  
+|-----------|-----------------|  
 |`S_OK`|La méthode a réussi.|  
   
-## Notes  
+## <a name="remarks"></a>Remarques  
  Cette méthode indique que le texte a été supprimé du document.  
   
-## Voir aussi  
- [IDebugDocumentTextEvents, interface](../../winscript/reference/idebugdocumenttextevents-interface.md)   
+## <a name="see-also"></a>Voir aussi  
+ [IDebugDocumentTextEvents (Interface)](../../winscript/reference/idebugdocumenttextevents-interface.md)   
  [IDebugDocumentTextEvents::onInsertText](../../winscript/reference/idebugdocumenttextevents-oninserttext.md)

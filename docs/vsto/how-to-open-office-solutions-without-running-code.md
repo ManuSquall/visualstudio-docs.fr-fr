@@ -1,60 +1,62 @@
 ---
-title: "Comment&#160;: ouvrir des solutions Office sans ex&#233;cuter le code"
-ms.custom: ""
-ms.date: "02/02/2017"
-ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "office-development"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-dev_langs: 
-  - "VB"
-  - "CSharp"
-helpviewer_keywords: 
-  - "assemblys (développement Office dans Visual Studio), ignorer"
-  - "ignorer des assemblys"
-  - "documents (développement Office dans Visual Studio), ouvrir sans exécuter du code"
-  - "documents Office (développement Office dans Visual Studio), ouvrir sans exécuter du code"
-  - "solutions Office (développement Office dans Visual Studio), ouvrir"
-  - "ouvrir des solutions Office"
-  - "solutions (développement Office dans Visual Studio), ouvrir"
+title: "Comment : ouvrir des Solutions Office sans exécuter du Code | Documents Microsoft"
+ms.custom: 
+ms.date: 02/02/2017
+ms.reviewer: 
+ms.suite: 
+ms.technology: office-development
+ms.tgt_pltfrm: 
+ms.topic: article
+dev_langs:
+- VB
+- CSharp
+helpviewer_keywords:
+- Office solutions [Office development in Visual Studio], opening
+- opening Office solutions
+- bypassing assemblies
+- solutions [Office development in Visual Studio], opening
+- assemblies [Office development in Visual Studio], bypassing
+- Office documents [Office development in Visual Studio, opening without running code
+- documents [Office development in Visual Studio], opening without running code
 ms.assetid: a853d91c-9fd6-421a-b3a2-956b6b494b96
-caps.latest.revision: 23
-author: "kempb"
-ms.author: "kempb"
-manager: "ghogen"
-caps.handback.revision: 23
+caps.latest.revision: "23"
+author: gewarren
+ms.author: gewarren
+manager: ghogen
+ms.openlocfilehash: 74cc162e0323656bea9d48c8458eaf77519fdc14
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: fr-FR
+ms.lasthandoff: 10/31/2017
 ---
-# Comment&#160;: ouvrir des solutions Office sans ex&#233;cuter le code
-  Une solution Microsoft Office créée avec des extensions de code managé s'exécute même si le paramètre de sécurité défini dans l'application Office de l'utilisateur final a la valeur Élevé.  Cela s'explique par le fait que la sécurité du code d'assembly .NET est gérée par le Microsoft .NET Framework, et non par Microsoft Office.  
+# <a name="how-to-open-office-solutions-without-running-code"></a>Comment : ouvrir des solutions Office sans exécuter le code
+  Une solution Microsoft Office créée avec les extensions de code managé s’exécute même si le paramètre de sécurité dans l’application Office de l’utilisateur final est élevé. Il s’agit, car la sécurité du code assembly .NET est gérée par Microsoft .NET Framework, et non par Microsoft Office.  
   
- Il peut toutefois arriver que vous souhaitiez ouvrir un document sans exécuter le code.  Par exemple, le code qui s'exécute à l'ouverture du document peut en modifier le contenu alors que vous souhaitez mettre à jour l'apparence du document avant que le code ne le modifie.  Ou bien, vous pouvez souhaiter envoyer à un destinataire le document contenant certaines informations et empêcher l'exécution du code susceptible de modifier son contenu.  
+ Toutefois, il existe des heures lorsque vous souhaiterez ouvrir un document sans exécuter le code. Par exemple, le contenu susceptible de modifier le code qui s’exécute lorsque le document s’ouvre, mais vous souhaitez mettre à jour de l’apparence du document avant les modifications de code il. Ou vous souhaiterez peut-être envoyer le document avec certaines informations dans celui-ci à quelqu'un, et vous ne souhaitez pas que le code à exécuter et éventuellement modifier le contenu.  
   
  [!INCLUDE[appliesto_alldoc](../vsto/includes/appliesto-alldoc-md.md)]  
   
- Il existe plusieurs manières d'ouvrir un document ou un classeur qui contient des extensions de code managé, sans exécuter le code assembleur.  
+ Il existe plusieurs façons d’ouvrir un document ou classeur qui contient des extensions de code managé sans exécuter le code de l’assembly.  
   
-### Pour ignorer l'assembly à l'aide de la touche MAJ  
+### <a name="to-bypass-the-assembly-by-using-the-shift-key"></a>Pour ignorer l’assembly à l’aide de la touche MAJ ENFONCÉE  
   
--   Ouvrez les documents et classeurs dans le menu **Fichier** en maintenant la touche MAJ enfoncée pour empêcher Word et Excel de déclencher des événements d'initialisation au cours de l'ouverture des documents.  
+-   Ouvrir des documents et classeurs à partir de la **fichier** menu tout en maintenant enfoncée la touche MAJ pour empêcher le déclenchement d’événements d’initialisation lors de l’ouverture des documents Word et Excel.  
   
     > [!NOTE]  
-    >  Si vous ouvrez un document ou un classeur à partir du volet de tâches **Mise en route**, le fait de maintenir la touche MAJ enfoncée n'ignore pas le code.  Par ailleurs, maintenir la touche MAJ enfoncée n'empêche pas le déclenchement des événements après l'ouverture du document.  
+    >  Si vous ouvrez un document ou classeur à partir de la **mise en route** volet de tâches, maintenez la touche MAJ n’ignore pas le code. En outre, maintenez la touche MAJ n’empêche pas d’événements de déclenché une fois que le document est ouvert.  
   
-     Cette méthode est utile si vous souhaitez ouvrir un document pour le mettre à jour sans que le code ne s'exécute et ne modifie le document au préalable.  
+     Cette méthode est utile si vous souhaitez ouvrir un document pour apporter des modifications sans le code en cours d’exécution et modification d’abord le document.  
   
-### Pour ignorer un assembly en le renommant ou en le supprimant  
+### <a name="to-bypass-an-assembly-by-renaming-or-removing-it"></a>Pour ignorer un assembly en renommant ou en supprimant  
   
--   Si vous disposez des autorisations appropriées sur l'ordinateur où se trouve l'assembly, vous pouvez renommer ou supprimer ce dernier de sorte que le document ou classeur ne puisse pas le rechercher.  Cette procédure entraîne le déclenchement d'une erreur à chaque ouverture du document Office.  
+-   Si vous avez les autorisations nécessaires sur l’ordinateur où se trouve l’assembly, vous pouvez renommer ou supprimer l’assembly afin que le document ou le classeur ne peut pas le trouver. Cela entraîne une erreur qui est déclenchée chaque fois que le document Office est ouvert.  
   
-     Si la solution est utilisée par plusieurs personnes, cette méthode interdit à quiconque de l'exécuter.  Cette restriction peut être utile si un problème est relevé dans le code ou un serveur référencé et que vous voulez empêcher tous les utilisateurs de l'exécuter.  
+     Si la solution est utilisée par plusieurs personnes, cette méthode empêche la solution en cours d’exécution pour chacun d’eux. Cela peut être utile si un problème est détecté dans le code ou un serveur référencé et que vous souhaitez arrêter tous les utilisateurs de l’exécuter.  
   
-## Voir aussi  
- [Sécurisation des solutions Office](../vsto/securing-office-solutions.md)   
- [Déploiement d'une solution Office](../vsto/deploying-an-office-solution.md)   
- [Conception et création de solutions Office](../vsto/designing-and-creating-office-solutions.md)   
- [Manifestes d'application et de déploiement dans les solutions Office](../vsto/application-and-deployment-manifests-in-office-solutions.md)  
+## <a name="see-also"></a>Voir aussi  
+ [Sécurisation des Solutions Office](../vsto/securing-office-solutions.md)   
+ [Déploiement d’une Solution Office](../vsto/deploying-an-office-solution.md)   
+ [Conception et création de Solutions Office](../vsto/designing-and-creating-office-solutions.md)   
+ [Manifestes d’application et de déploiement dans les solutions Office](../vsto/application-and-deployment-manifests-in-office-solutions.md)  
   
   

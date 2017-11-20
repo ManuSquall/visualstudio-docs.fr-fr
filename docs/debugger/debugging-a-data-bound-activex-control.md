@@ -1,41 +1,42 @@
 ---
-title: "D&#233;bogage d&#39;un contr&#244;le ActiveX li&#233; aux donn&#233;es | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-debug"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-dev_langs: 
-  - "FSharp"
-  - "VB"
-  - "CSharp"
-  - "C++"
-helpviewer_keywords: 
-  - "contrôles ActiveX, débogage"
-  - "contrôles (Visual Studio), ActiveX"
-  - "contrôles liés aux données, ActiveX"
+title: "Débogage d’un contrôle ActiveX de liés aux données | Documents Microsoft"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-debug
+ms.tgt_pltfrm: 
+ms.topic: article
+dev_langs:
+- CSharp
+- VB
+- FSharp
+- C++
+helpviewer_keywords:
+- data-bound controls, ActiveX
+- ActiveX controls, debugging
+- controls [Visual Studio], ActiveX
 ms.assetid: 9f6e1f00-e25b-48a9-8484-7e67a1232461
-caps.latest.revision: 15
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 15
+caps.latest.revision: "15"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: 9c1ffd73919b4788e9c0151a636539faceea5300
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: fr-FR
+ms.lasthandoff: 10/31/2017
 ---
-# D&#233;bogage d&#39;un contr&#244;le ActiveX li&#233; aux donn&#233;es
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
-
+# <a name="debugging-a-data-bound-activex-control"></a>Débogage d'un contrôle ActiveX lié aux données
 Si vous développez un contrôle ActiveX qui sera lié à un contrôle de source de données, vous pouvez créer votre propre application conteneur et utiliser ce conteneur pour le débogage du contrôle ActiveX.  
   
- Par exemple, vous pouvez créer une application MFC basée sur des boîtes de dialogue et placer votre contrôle lié aux données et un contrôle de source de données dans la boîte de dialogue.  Vous pouvez utiliser cette application MFC pour le test d'exécution et comme exécutable conteneur pour déboguer votre contrôle ActiveX lié aux données.  
+ Par exemple, vous pouvez créer une application MFC basée sur des boîtes de dialogue et placer votre contrôle lié aux données et un contrôle de source de données dans la boîte de dialogue. Vous pouvez utiliser cette application MFC pour le test d'exécution et comme exécutable conteneur pour déboguer votre contrôle ActiveX lié aux données.  
   
-## Utilisation de Test Container  
- Si vous voulez qu'un conteneur facilement modifiable prenne en charge plusieurs interfaces sur le contrôle ou le conteneur, utilisez ActiveX Test Container comme exécutable pour la session de débogage.  Dans ActiveX Test Container, cliquez sur **Options** dans le menu **Conteneur** pour activer plusieurs interfaces.  Pour plus d'informations, consultez [Test des propriétés et des événements avec le conteneur de test](/visual-cpp/mfc/testing-properties-and-events-with-test-container).  
+## <a name="using-the-test-container"></a>Utilisation de Test Container  
+ Si vous voulez qu'un conteneur facilement modifiable prenne en charge plusieurs interfaces sur le contrôle ou le conteneur, utilisez ActiveX Test Container comme exécutable pour la session de débogage. Dans ActiveX Test Container, cliquez sur **Options** à partir de la **conteneur** menu pour activer plusieurs interfaces. Pour plus d’informations, consultez [test des propriétés et des événements avec le conteneur de Test](/cpp/mfc/testing-properties-and-events-with-test-container).  
   
- Si vous avez besoin d'effectuer un pas à pas détaillé dans le code du conteneur pendant le débogage, utilisez la version Debug de votre conteneur ou utilisez la version Debug d'ActiveX Test Container.  Pour plus d'informations, consultez [TSTCON Sample: ActiveX Control Test Container](http://msdn.microsoft.com/fr-fr/72fa40ef-27d3-400c-813f-10b03236e600).  
+ Si vous avez besoin d'effectuer un pas à pas détaillé dans le code du conteneur pendant le débogage, utilisez la version Debug de votre conteneur ou utilisez la version Debug d'ActiveX Test Container. Pour plus d’informations, consultez [exemple TSTCON : ActiveX Control Test Container](http://msdn.microsoft.com/en-us/72fa40ef-27d3-400c-813f-10b03236e600).  
   
-## Voir aussi  
+## <a name="see-also"></a>Voir aussi  
  [Débogage COM et ActiveX](../debugger/com-and-activex-debugging.md)   
- [Contrôles ActiveX](/visual-cpp/mfc/activex-controls)
+ [Contrôles ActiveX](/cpp/mfc/activex-controls)

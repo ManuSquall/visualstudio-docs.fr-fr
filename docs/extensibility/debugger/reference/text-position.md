@@ -1,46 +1,29 @@
 ---
-title: TEXT_POSITION | Microsoft Docs
+title: TEXT_POSITION | Documents Microsoft
 ms.custom: 
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-sdk
+ms.technology: vs-ide-sdk
 ms.tgt_pltfrm: 
 ms.topic: article
-f1_keywords:
-- TEXT_POSITION
-helpviewer_keywords:
-- TEXT_POSITION structure
+f1_keywords: TEXT_POSITION
+helpviewer_keywords: TEXT_POSITION structure
 ms.assetid: 6dcec574-a852-49fa-8c2e-2e71cbb5e3c6
-caps.latest.revision: 8
+caps.latest.revision: "8"
+author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-translation.priority.mt:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
+ms.openlocfilehash: 178acde6dbadeb9d87b672582efebe8dcbd71408
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
 ms.translationtype: MT
-ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
-ms.openlocfilehash: 1731cd5f374f733fb0ec967faaf6c11b34b80ceb
-ms.contentlocale: fr-fr
-ms.lasthandoff: 08/28/2017
-
+ms.contentlocale: fr-FR
+ms.lasthandoff: 10/31/2017
 ---
 # <a name="textposition"></a>TEXT_POSITION
-Describes the line and column location in the given text.  
+Décrit l’emplacement de ligne et de colonne dans le texte indiqué.  
   
-## <a name="syntax"></a>Syntax  
+## <a name="syntax"></a>Syntaxe  
   
 ```cpp  
 typedef struct _tagTEXT_POSITION {   
@@ -56,17 +39,17 @@ public struct TEXT_POSITION {
 };  
 ```  
   
-## <a name="members"></a>Members  
+## <a name="members"></a>Membres  
  dwLine  
- Index of line in source file.  
+ Index de ligne dans le fichier source.  
   
  dwColumn  
- Character offset into line.  
+ Offset de caractère dans la ligne.  
   
-## <a name="remarks"></a>Remarks  
- This structure is used in the [CONTEXT_INFO](../../../extensibility/debugger/reference/context-info.md) and [DisassemblyData](../../../extensibility/debugger/reference/disassemblydata.md) structures.  
+## <a name="remarks"></a>Remarques  
+ Cette structure est utilisée dans les [CONTEXT_INFO](../../../extensibility/debugger/reference/context-info.md) et [DisassemblyData](../../../extensibility/debugger/reference/disassemblydata.md) structures.  
   
- This structure is filled in by a call to the following methods:  
+ Cette structure est remplie par un appel aux méthodes suivantes :  
   
 -   [GetStatementRange](../../../extensibility/debugger/reference/idebugdocumentcontext2-getstatementrange.md)  
   
@@ -76,7 +59,7 @@ public struct TEXT_POSITION {
   
 -   [GetOffset](../../../extensibility/debugger/reference/idebugfunctionposition2-getoffset.md)  
   
- This structure is passed as a parameter to the following methods:  
+ Cette structure est passée en tant que paramètre aux méthodes suivantes :  
   
 -   [GetText](../../../extensibility/debugger/reference/idebugdocumenttext2-gettext.md)  
   
@@ -88,15 +71,15 @@ public struct TEXT_POSITION {
   
 -   [onUpdateTextAttributes](../../../extensibility/debugger/reference/idebugdocumenttextevents2-onupdatetextattributes.md)  
   
-## <a name="requirements"></a>Requirements  
- Header: msdbg.h  
+## <a name="requirements"></a>Spécifications  
+ En-tête : msdbg.h  
   
- Namespace: Microsoft.VisualStudio.Debugger.Interop  
+ Namespace : Microsoft.VisualStudio.Debugger.Interop  
   
- Assembly: Microsoft.VisualStudio.Debugger.Interop.dll  
+ Assembly : Microsoft.VisualStudio.Debugger.Interop.dll  
   
-## <a name="see-also"></a>See Also  
- [Structures and Unions](../../../extensibility/debugger/reference/structures-and-unions.md)   
+## <a name="see-also"></a>Voir aussi  
+ [Structures et Unions](../../../extensibility/debugger/reference/structures-and-unions.md)   
  [GetStatementRange](../../../extensibility/debugger/reference/idebugdocumentcontext2-getstatementrange.md)   
  [GetSourceRange](../../../extensibility/debugger/reference/idebugdocumentcontext2-getsourcerange.md)   
  [GetRange](../../../extensibility/debugger/reference/idebugdocumentposition2-getrange.md)   

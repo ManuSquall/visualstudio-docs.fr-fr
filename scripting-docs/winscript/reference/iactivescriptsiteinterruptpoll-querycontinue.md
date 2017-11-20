@@ -1,48 +1,51 @@
 ---
-title: "IActiveScriptSiteInterruptPoll::QueryContinue | Microsoft Docs"
-ms.custom: ""
-ms.date: "01/18/2017"
-ms.prod: "windows-script-interfaces"
-ms.reviewer: ""
-ms.suite: ""
-ms.tgt_pltfrm: ""
-ms.topic: "reference"
+title: IActiveScriptSiteInterruptPoll::QueryContinue | Documents Microsoft
+ms.custom: 
+ms.date: 01/18/2017
+ms.prod: windows-script-interfaces
+ms.reviewer: 
+ms.suite: 
+ms.tgt_pltfrm: 
+ms.topic: reference
 apiname: IActiveScriptSiteInterruptPoll.QueryContinue
 apilocation: scrobj.dll
-helpviewer_keywords: 
-  - "IActiveScriptSiteInterruptPoll::QueryContinue"
+helpviewer_keywords: IActiveScriptSiteInterruptPoll::QueryContinue
 ms.assetid: 41ac3807-f8b4-4a0e-bcc6-556bc89f3904
-caps.latest.revision: 8
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 8
+caps.latest.revision: "8"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: 93323d500ae7e99957c365d60741fa612ba0fc34
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.translationtype: MT
+ms.contentlocale: fr-FR
+ms.lasthandoff: 10/27/2017
 ---
-# IActiveScriptSiteInterruptPoll::QueryContinue
-Permet à un hôte de spécifier qu'un script se termine.  
+# <a name="iactivescriptsiteinterruptpollquerycontinue"></a>IActiveScriptSiteInterruptPoll::QueryContinue
+Permet à un hôte spécifier qu’un script doit s’arrêter.  
   
-## Syntaxe  
+## <a name="syntax"></a>Syntaxe  
   
 ```  
 HRESULT QueryContinue();  
 ```  
   
-#### Paramètres  
- Cette méthode n'accepte pas de paramètres.  
+#### <a name="parameters"></a>Paramètres  
+ Cette méthode ne prend aucun paramètre.  
   
-## Valeur de retour  
- La méthode retourne `HRESULT`.  Les valeurs possibles incluent, mais ne sont pas limitées à, celles dans le tableau suivant.  
+## <a name="return-value"></a>Valeur de retour  
+ La méthode retourne `HRESULT`. Les valeurs possibles sont notamment celles figurant dans le tableau suivant.  
   
 |Valeur|Description|  
-|------------|-----------------|  
-|`S_OK`|L'appel a réussi et l'hôte permet au script de continuer à s'exécuter.|  
-|`S_FALSE`|L'appel a réussi et les demandes d'hôte que le script se terminent.|  
+|-----------|-----------------|  
+|`S_OK`|L’appel a réussi et que l’hôte autorise le script continuer à exécuter.|  
+|`S_FALSE`|L’appel a réussi et les demandes d’hôte qui le script se termine.|  
   
-## Notes  
- Le script hébergé doit se terminer à moins que la valeur de retour de la méthode d' `QueryContinue` soit `S_OK`.  Une valeur de retour d' `S_FALSE` indique que les demandes d'hôte explicitement que le script se terminent.  
+## <a name="remarks"></a>Remarques  
+ Le script hébergé doit s’arrêter, sauf si la valeur de retour de la `QueryContinue` méthode est `S_OK`. La valeur de retour `S_FALSE` indique que l’hôte demande explicitement que le script s’arrête.  
   
- Un hôte multithread peut utiliser la méthode d' `IActiveScript::InterruptScriptThread` pour exécuter un script.  
+ Un hôte multithread peut utiliser le `IActiveScript::InterruptScriptThread` méthode pour mettre fin à un script.  
   
-## Voir aussi  
- [IActiveScriptSiteInterruptPoll, interface](../../winscript/reference/iactivescriptsiteinterruptpoll-interface.md)   
+## <a name="see-also"></a>Voir aussi  
+ [Iactivescriptsiteinterruptpoll, Interface](../../winscript/reference/iactivescriptsiteinterruptpoll-interface.md)   
  [IActiveScript::InterruptScriptThread](../../winscript/reference/iactivescript-interruptscriptthread.md)

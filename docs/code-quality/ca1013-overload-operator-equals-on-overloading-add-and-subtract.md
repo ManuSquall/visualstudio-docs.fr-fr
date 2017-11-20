@@ -1,11 +1,10 @@
 ---
-title: 'CA1013: Overload operator equals on overloading add and subtract | Microsoft Docs'
+title: "CA1013 : Surchargez l’opérateur égal lors de la surcharge d’addition et de soustraction | Documents Microsoft"
 ms.custom: 
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-devops-test
+ms.technology: vs-ide-code-analysis
 ms.tgt_pltfrm: 
 ms.topic: article
 f1_keywords:
@@ -19,47 +18,31 @@ helpviewer_keywords:
 - CA1013
 - OverloadOperatorEqualsOnOverloadingAddAndSubtract
 ms.assetid: 5bd28d68-c179-49ff-af47-5250b8b18a10
-caps.latest.revision: 22
-author: stevehoag
-ms.author: shoag
-manager: wpickett
-translation.priority.ht:
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- ru-ru
-- zh-cn
-- zh-tw
-translation.priority.mt:
-- cs-cz
-- pl-pl
-- pt-br
-- tr-tr
-ms.translationtype: HT
-ms.sourcegitcommit: eb5c9550fd29b0e98bf63a7240737da4f13f3249
-ms.openlocfilehash: 5d5f17ca16cc28e4b0c583755f87069836a9422b
-ms.contentlocale: fr-fr
-ms.lasthandoff: 08/30/2017
-
+caps.latest.revision: "22"
+author: gewarren
+ms.author: gewarren
+manager: ghogen
+ms.openlocfilehash: 65f8802e0eb4e06466d5178b0af56753d537dd74
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: fr-FR
+ms.lasthandoff: 10/31/2017
 ---
-# <a name="ca1013-overload-operator-equals-on-overloading-add-and-subtract"></a>CA1013: Overload operator equals on overloading add and subtract
+# <a name="ca1013-overload-operator-equals-on-overloading-add-and-subtract"></a>CA1013 : Surchargez l'opérateur égal lors de la surcharge de l'opérateur d'addition et de soustraction
 |||  
 |-|-|  
 |TypeName|OverloadOperatorEqualsOnOverloadingAddAndSubtract|  
 |CheckId|CA1013|  
-|Category|Microsoft.Design|  
-|Breaking Change|Non-breaking|  
+|Catégorie|Microsoft.Design|  
+|Modification avec rupture|Sans rupture|  
   
 ## <a name="cause"></a>Cause  
- A public or protected type implements the addition or subtraction operators without implementing the equality operator.  
+ Un type public ou protégé implémente les opérateurs d'addition ou de soustraction sans implémenter l'opérateur d'égalité.  
   
-## <a name="rule-description"></a>Rule Description  
- When instances of a type can be combined by using operations such as addition and subtraction, you should almost always define equality to return `true` for any two instances that have the same constituent values.  
+## <a name="rule-description"></a>Description de la règle  
+ Lorsque les instances d’un type peuvent être combinées à l’aide des opérations telles que l’addition et la soustraction, vous devez presque toujours définir l’égalité retourne `true` pour les deux instances qui ont les mêmes valeurs constituantes.  
   
- You cannot use the default equality operator in an overloaded implementation of the equality operator. Doing so will cause a stack overflow. To implement the equality operator, use the Object.Equals method in your implementation. See the following example.  
+ Vous ne pouvez pas utiliser l’opérateur d’égalité par défaut dans une implémentation surchargée de l’opérateur d’égalité. Cela provoque un dépassement de capacité de pile. Pour implémenter l’opérateur d’égalité, utilisez la méthode Object.Equals dans votre implémentation. Lisez l'exemple suivant.  
   
 ```vb  
 If (Object.ReferenceEquals(left, Nothing)) Then  
@@ -75,28 +58,28 @@ if (Object.ReferenceEquals(left, null))
 return left.Equals(right);  
 ```  
   
-## <a name="how-to-fix-violations"></a>How to Fix Violations  
- To fix a violation of this rule, implement the equality operator so that it is mathematically consistent with the addition and subtraction operators.  
+## <a name="how-to-fix-violations"></a>Comment corriger les violations  
+ Pour corriger une violation de cette règle, implémentez l’opérateur d’égalité afin qu’il soit mathématiquement cohérent avec les opérateurs d’addition et soustraction.  
   
-## <a name="when-to-suppress-warnings"></a>When to Suppress Warnings  
- It is safe to suppress a warning from this rule when the default implementation of the equality operator provides the correct behavior for the type.  
+## <a name="when-to-suppress-warnings"></a>Quand supprimer les avertissements  
+ Il est possible de supprimer un avertissement de cette règle lorsque l’implémentation par défaut de l’opérateur d’égalité fournit le comportement correct pour le type.  
   
-## <a name="example"></a>Example  
- The following example defines a type (`BadAddableType`) that violates this rule. This type should implement the equality operator to make any two instances that have the same field values test `true` for equality. The type `GoodAddableType` shows the corrected implementation. Note that this type also implements the inequality operator and overrides <xref:System.Object.Equals%2A> to satisfy other rules. A complete implementation would also implement <xref:System.Object.GetHashCode%2A>.  
+## <a name="example"></a>Exemple  
+ L’exemple suivant définit un type (`BadAddableType`) qui enfreint cette règle. Ce type doit implémenter l’opérateur d’égalité pour rendre les deux instances qui ont les mêmes valeurs de champ à tester `true` d’égalité. Le type `GoodAddableType` affiche l’implémentation corrigée. Notez que ce type implémente l’opérateur d’inégalité également et remplace <xref:System.Object.Equals%2A> pour satisfaire d’autres règles. Une implémentation complète implémenterait également <xref:System.Object.GetHashCode%2A>.  
   
  [!code-csharp[FxCop.Design.AddAndSubtract#1](../code-quality/codesnippet/CSharp/ca1013-overload-operator-equals-on-overloading-add-and-subtract_1.cs)]  
   
-## <a name="example"></a>Example  
- The following example tests for equality by using instances of the types that were previously defined in this topic to illustrate the default and correct behavior for the equality operator.  
+## <a name="example"></a>Exemple  
+ L’exemple suivant teste l’égalité à l’aide d’instances des types qui ont été définis précédemment dans cette rubrique pour illustrer la valeur par défaut et le comportement correct pour l’opérateur d’égalité.  
   
  [!code-csharp[FxCop.Design.TestAddAndSubtract#1](../code-quality/codesnippet/CSharp/ca1013-overload-operator-equals-on-overloading-add-and-subtract_2.cs)]  
   
- This example produces the following output.  
+ Cet exemple produit la sortie suivante.  
   
- **Bad type:  {2,2} {2,2} are equal? No**  
-**Good type: {3,3} {3,3} are equal? Yes**  
-**Good type: {3,3} {3,3} are == ?   Yes**  
-**Bad type:  {2,2} {9,9} are equal? No**  
-**Good type: {3,3} {9,9} are == ?   No**   
-## <a name="see-also"></a>See Also  
- [Equality Operators](/dotnet/standard/design-guidelines/equality-operators)
+ **Type incorrect : {2,2} {2,2} sont égaux ? No**  
+**Type bon : {3,3} {3,3} sont égaux ? Oui**  
+**Type bon : {3,3} {3,3} sont == ?   Oui**  
+**Type incorrect : {2,2} {9,9} sont égaux ? No**  
+**Type bon : {3,3} {9,9} sont == ?   No**   
+## <a name="see-also"></a>Voir aussi  
+ [Opérateurs d’égalité](/dotnet/standard/design-guidelines/equality-operators)

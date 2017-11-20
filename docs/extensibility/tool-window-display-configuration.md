@@ -1,44 +1,30 @@
 ---
-title: "Outil de Configuration de l’affichage fenêtre | Documents Microsoft"
+title: "Outil de Configuration de la fenêtre Affichage | Documents Microsoft"
 ms.custom: 
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-sdk
+ms.technology: vs-ide-sdk
 ms.tgt_pltfrm: 
 ms.topic: article
 helpviewer_keywords:
 - tool windows, configuring
 - tool windows, appearance
 ms.assetid: 502a4926-bb83-473e-94e2-8e833c5f8b53
-caps.latest.revision: 8
+caps.latest.revision: "8"
+author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-translation.priority.mt:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
-translationtype: Machine Translation
-ms.sourcegitcommit: 5db97d19b1b823388a465bba15d057b30ff0b3ce
-ms.openlocfilehash: 9478ffb6ffc1fcd2204065ff4fb7cb113ab88ba4
-ms.lasthandoff: 02/22/2017
-
+ms.openlocfilehash: c7ab5cef6fb45d60be8be8d1db6b160079633ed4
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: fr-FR
+ms.lasthandoff: 10/31/2017
 ---
 # <a name="tool-window-display-configuration"></a>Configuration de l’affichage fenêtre outil
-Lorsqu’un VSPackage enregistre une fenêtre outil, la position par défaut, taille, le style d’ancrage et autres informations sur la visibilité est spécifié dans les valeurs facultatives. Pour plus d’informations sur l’inscription de la fenêtre outil, consultez [fenêtres Outil dans le Registre](../extensibility/tool-windows-in-the-registry.md)  
+Quand un VSPackage enregistre une fenêtre outil, la position par défaut, la taille, style d’ancrage et autres informations de visibilité est spécifié dans les valeurs facultatives. Pour plus d’informations sur l’inscription de fenêtre outil, consultez [fenêtres Outil dans le Registre](../extensibility/tool-windows-in-the-registry.md)  
   
-## <a name="window-display-information"></a>Informations sur la fenêtre Affichage  
+## <a name="window-display-information"></a>Informations d’affichage de fenêtre  
  Configuration de l’affichage de base d’une fenêtre outil est stockée dans les six valeurs facultatives :  
   
 ```  
@@ -54,15 +40,15 @@ HKEY_LOCAL_MACHINE\
   
 |Nom|Type|Données|Description|  
 |----------|----------|----------|-----------------|  
-|Nom|REG_SZ|« Nom court s’affiche ici »|Un nom court qui décrit la fenêtre outil. Utilisé uniquement pour la référence dans le Registre.|  
+|Nom|REG_SZ|« Nom court ici »|Un nom court qui décrit la fenêtre outil. Utilisé uniquement pour référence dans le Registre.|  
 |Float|REG_SZ|« X1, Y1, X2, Y2 »|Quatre valeurs séparées par des virgules. X1, Y1 est la coordonnée de l’angle supérieur gauche de la fenêtre outil. X2, Y2 est la coordonnée de l’angle inférieur droit. Toutes les valeurs sont en coordonnées d’écran.|  
-|Style|REG_SZ|« MDI »<br /><br /> « Flotter »<br /><br /> « Liés »<br /><br /> « Onglets »<br /><br /> « AlwaysFloat »|Un mot clé spécifiant la première affiche l’état de la fenêtre outil.<br /><br /> « MDI » = ancrée à la fenêtre MDI.<br /><br /> « Flotter » = flottant.<br /><br /> « Liés » = liée à une autre fenêtre (spécifiée dans l’entrée de la fenêtre).<br /><br /> « Onglets » = combinée avec une autre fenêtre outil.<br /><br /> « AlwaysFloat » = ne peut pas être ancré.<br /><br /> Pour plus d’informations, consultez la section commentaires ci-dessous.|  
-|Fenêtre|REG_SZ|*\<GUID >*|Le GUID d’une fenêtre à laquelle la fenêtre outil peut être liée ou à onglets. Le GUID peut appartenir à un de vos propres fenêtres ou de windows dans le [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] IDE.|  
-|Orientation|REG_SZ|« Gauche »<br /><br /> « Droite »<br /><br /> « Top »<br /><br /> « Bas »|Consultez la section commentaires ci-dessous.|  
-|DontForceCreate|REG_DWORD|0 ou 1|Lorsque cette entrée est présente et que sa valeur n’est pas égal à zéro, la fenêtre est chargée, mais s’affiche pas immédiatement.|  
+|Style|REG_SZ|« MDI »<br /><br /> « Flotter »<br /><br /> « Lié »<br /><br /> « Onglets »<br /><br /> « AlwaysFloat »|Un mot clé spécifiant initial afficher l’état de la fenêtre outil.<br /><br /> « MDI » = ancrée à la fenêtre MDI.<br /><br /> « Flotter » = flottante.<br /><br /> « Lié » = liée à une autre fenêtre (spécifiée dans l’entrée de fenêtre).<br /><br /> « Onglets » = combinées avec une autre fenêtre d’outil.<br /><br /> « AlwaysFloat » = ne peut pas être ancrée.<br /><br /> Pour plus d’informations, consultez la section commentaires ci-dessous.|  
+|Fenêtre|REG_SZ|*\<GUID >*|Le GUID d’une fenêtre dans lequel la fenêtre outil peut être liée ou avec onglets. Le GUID ne peut appartenir à un de vos propres fenêtres ou l’un des fenêtres dans le [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] IDE.|  
+|Orientation|REG_SZ|« Gauche »<br /><br /> « Right »<br /><br /> « Top »<br /><br /> « Bottom »|Consultez la section commentaires ci-dessous.|  
+|DontForceCreate|REG_DWORD|0 ou 1|Lorsque cette entrée est présente et sa valeur n’est pas zéro, la fenêtre est chargée, mais pas immédiatement affichée.|  
   
 ### <a name="comments"></a>Commentaires  
- L’entrée de l’Orientation définit la position où la fenêtre outil ancre lorsque l’utilisateur double-clique sur la barre de titre. La position est relatif à la fenêtre spécifiée dans l’entrée de la fenêtre. Si l’entrée de Style est définie sur « Lié », l’entrée de l’Orientation peut être « Gauche », « Droite », « Top » ou « Bas ». Si l’entrée de Style est par « onglets », l’orientation de l’entrée peut être « gauche » ou « Right » et spécifie où l’onglet est ajouté. Si l’entrée de Style est « Flotter », la fenêtre Outil flotte tout d’abord. Lorsque vous double-cliquez sur la barre de titre, les entrées de l’Orientation et la fenêtre s’appliquent, et la fenêtre utilise le style avec « onglets ». Si l’entrée de Style est « AlwaysFloat », la fenêtre outil ne peut pas être ancrée. Si l’entrée de Style est « MDI », la fenêtre outil est liée à la zone MDI, et l’entrée est ignorée.  
+ L’entrée de l’Orientation définit la position où la fenêtre outil ancre lorsque l’utilisateur double-clique sur la barre de titre. La position est relatif à la fenêtre spécifiée dans l’entrée de la fenêtre. Si l’entrée de Style est définie sur « Lié », l’entrée de l’Orientation peut être « Left », « Right », « Top » ou « Bottom ». Si l’entrée de Style est « Avec onglets », l’orientation de l’entrée peut être « gauche » ou « Right » et spécifie où l’onglet est ajouté. Si l’entrée de Style est « Flotter », la fenêtre Outil flotte tout d’abord. Lorsque vous double-cliquez sur la barre de titre, les entrées de l’Orientation et la fenêtre s’appliquent, et la fenêtre utilise le style par « onglets ». Si l’entrée de Style est « AlwaysFloat », la fenêtre outil ne peut pas être ancrée. Si l’entrée de Style est « MDI », la fenêtre outil est liée à la zone MDI, et l’entrée est ignorée.  
   
 ### <a name="example"></a>Exemple  
   
@@ -103,8 +89,8 @@ HKEY_LOCAL_MACHINE\
   
 |Nom|Type|Données|Description|  
 |----------|----------|----------|-----------------|  
-|(Default)|REG_SZ|Aucun|Laissez vide.|  
-|*\<GUID >*|REG_DWORD ou REG_SZ|0 ou une chaîne descriptive.|Facultatif. Nom de l’entrée doit être le GUID d’une commande nécessitant une visibilité. La valeur conserve seulement une chaîne informative. En règle générale, la valeur est un `reg_dword` définie sur 0.|  
+|(Default)|REG_SZ|Aucune|Laissez vide.|  
+|*\<GUID >*|REG_DWORD ou REG_SZ|0 ou une chaîne descriptive.|Facultatif. Nom de l’entrée doit être le GUID d’une commande nécessitant une visibilité. La valeur contient simplement une chaîne informative. En règle générale, la valeur est un `reg_dword` définie sur 0.|  
   
 ### <a name="example"></a>Exemple  
   
@@ -124,4 +110,4 @@ HKEY_LOCAL_MACHINE\
 ```  
   
 ## <a name="see-also"></a>Voir aussi  
- [Concepts de base des VSPackages](../misc/vspackage-essentials.md)
+ [VSPackages](../extensibility/internals/vspackages.md)

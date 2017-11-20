@@ -1,12 +1,10 @@
 ---
-title: Programmatic Limitations of Host Items and Host Controls | Microsoft Docs
+title: "Limitations de programmation des éléments hôtes et des contrôles hôtes | Documents Microsoft"
 ms.custom: 
 ms.date: 02/02/2017
-ms.prod: visual-studio-dev14
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- office-development
+ms.technology: office-development
 ms.tgt_pltfrm: 
 ms.topic: article
 dev_langs:
@@ -33,71 +31,72 @@ helpviewer_keywords:
 - document-level customizations [Office development in Visual Studio], host items
 - Word [Office development in Visual Studio], host controls
 ms.assetid: 88487946-6f3d-4ea6-8de0-dd219b8002df
-caps.latest.revision: 67
-author: kempb
-ms.author: kempb
+caps.latest.revision: "67"
+author: gewarren
+ms.author: gewarren
 manager: ghogen
-ms.translationtype: HT
-ms.sourcegitcommit: eb5c9550fd29b0e98bf63a7240737da4f13f3249
-ms.openlocfilehash: e75c2a38fab4d8bb0b11846b6f944626e7827768
-ms.contentlocale: fr-fr
-ms.lasthandoff: 08/30/2017
-
+ms.openlocfilehash: b9650014deb748607598b470d7eb797193213f39
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: fr-FR
+ms.lasthandoff: 10/31/2017
 ---
-# <a name="programmatic-limitations-of-host-items-and-host-controls"></a>Programmatic Limitations of Host Items and Host Controls
-  Each host item and host control is designed to behave like a corresponding native Microsoft Office Word or Microsoft Office Excel object, with additional functionality. However, there are some fundamental differences between the behavior of host items and host controls and native Office objects at run time.  
+# <a name="programmatic-limitations-of-host-items-and-host-controls"></a>Limitations de programmation des éléments hôtes et des contrôles hôtes
+  Chaque élément hôte et contrôle hôte est conçu pour se comporter comme un objet Microsoft Office Word ou Microsoft Office Excel natif correspondant, avec des fonctionnalités supplémentaires. Toutefois, il existe des différences fondamentales entre le comportement des éléments hôtes ou contrôles hôtes, et celui des objets Office natifs au moment de l’exécution.  
   
- For general information about host items and host controls, see [Host Items and Host Controls Overview](../vsto/host-items-and-host-controls-overview.md).  
+ Pour obtenir des informations générales sur les éléments hôtes et contrôles hôtes, consultez [Host Items and Host Controls Overview](../vsto/host-items-and-host-controls-overview.md).  
   
  [!INCLUDE[appliesto_controls](../vsto/includes/appliesto-controls-md.md)]  
   
-## <a name="programmatically-creating-host-items"></a>Programmatically Creating Host Items  
- When you programmatically create or open a document, workbook, or worksheet at run time by using the Word or Excel object model, the item is not a host item. Instead, the new object is a native Office object. For example, if you use the <xref:Microsoft.Office.Interop.Word.Documents.Add%2A> method to create a new Word document at run time, it will be a native <xref:Microsoft.Office.Interop.Word.Document> object rather than a <xref:Microsoft.Office.Tools.Word.Document> host item. Similarly, when you create a new worksheet at run time using the <xref:Microsoft.Office.Interop.Excel.Worksheets.Add%2A> method, you get a native <xref:Microsoft.Office.Interop.Excel.Worksheet> object rather than a <xref:Microsoft.Office.Tools.Excel.Worksheet> host item.  
+## <a name="programmatically-creating-host-items"></a>Création d’éléments hôtes par programmation  
+ Quand vous créez ou ouvrez par programmation un document, un classeur ou une feuille de calcul au moment de l’exécution via le modèle objet Word ou Excel, l’élément n’est pas un élément hôte. À la place, le nouvel objet est un objet Office natif. Par exemple, si vous utilisez la méthode <xref:Microsoft.Office.Interop.Word.Documents.Add%2A> pour créer un document Word au moment de l’exécution, il correspond à un objet <xref:Microsoft.Office.Interop.Word.Document> natif au lieu d’un élément hôte <xref:Microsoft.Office.Tools.Word.Document> . De même, quand vous créez une feuille de calcul au moment de l’exécution à l’aide de la méthode <xref:Microsoft.Office.Interop.Excel.Worksheets.Add%2A> , vous obtenez un objet <xref:Microsoft.Office.Interop.Excel.Worksheet> natif au lieu d’un élément hôte <xref:Microsoft.Office.Tools.Excel.Worksheet> .  
   
- In document-level projects, you cannot create host items at run time. Host items can be created only at design time in document-level projects. For more information, see [Document Host Item](../vsto/document-host-item.md), [Workbook Host Item](../vsto/workbook-host-item.md), and [Worksheet Host Item](../vsto/worksheet-host-item.md).  
+ Dans les projets au niveau du document, vous ne pouvez pas créer d’éléments hôtes au moment de l’exécution. Vous ne pouvez créer les éléments hôtes qu’au moment du design dans les projets au niveau du document. Pour plus d'informations, consultez [Document Host Item](../vsto/document-host-item.md), [Workbook Host Item](../vsto/workbook-host-item.md)et [Worksheet Host Item](../vsto/worksheet-host-item.md).  
   
- In VSTO Add-in projects, you can create <xref:Microsoft.Office.Tools.Word.Document>, <xref:Microsoft.Office.Tools.Excel.Workbook>, or <xref:Microsoft.Office.Tools.Excel.Worksheet> host items at run time. For more information, see [Extending Word Documents and Excel Workbooks in VSTO Add-ins at Run Time](../vsto/extending-word-documents-and-excel-workbooks-in-vsto-add-ins-at-run-time.md).  
+ Dans les projets de compléments VSTO, vous pouvez créer des éléments hôtes <xref:Microsoft.Office.Tools.Word.Document>, <xref:Microsoft.Office.Tools.Excel.Workbook>ou <xref:Microsoft.Office.Tools.Excel.Worksheet> au moment de l’exécution. Pour plus d'informations, consultez [Extending Word Documents and Excel Workbooks in VSTO Add-ins at Run Time](../vsto/extending-word-documents-and-excel-workbooks-in-vsto-add-ins-at-run-time.md).  
   
-## <a name="programmatically-creating-host-controls"></a>Programmatically Creating Host Controls  
- You can programmatically add host controls to a <xref:Microsoft.Office.Tools.Word.Document> or <xref:Microsoft.Office.Tools.Excel.Worksheet> host item at run time. For more information, see [Adding Controls to Office Documents at Run Time](../vsto/adding-controls-to-office-documents-at-run-time.md).  
+## <a name="programmatically-creating-host-controls"></a>Création de contrôles hôtes par programmation  
+ Vous pouvez ajouter par programmation des contrôles hôtes à un élément hôte <xref:Microsoft.Office.Tools.Word.Document> ou <xref:Microsoft.Office.Tools.Excel.Worksheet> au moment de l’exécution. Pour plus d'informations, consultez [Adding Controls to Office Documents at Run Time](../vsto/adding-controls-to-office-documents-at-run-time.md).  
   
- You cannot add host controls to a native <xref:Microsoft.Office.Interop.Word.Document> or <xref:Microsoft.Office.Interop.Excel.Worksheet>.  
+ Vous ne pouvez pas ajouter de contrôles hôtes à un <xref:Microsoft.Office.Interop.Word.Document> ou <xref:Microsoft.Office.Interop.Excel.Worksheet>natif.  
   
 > [!NOTE]  
->  The following host controls cannot be added programmatically to worksheets or documents: <xref:Microsoft.Office.Tools.Excel.XmlMappedRange>, <xref:Microsoft.Office.Tools.Word.XMLNode>, and <xref:Microsoft.Office.Tools.Word.XMLNodes>.  
+>  Vous ne pouvez pas ajouter les contrôles hôtes suivants par programmation aux feuilles de calcul ou aux documents : <xref:Microsoft.Office.Tools.Excel.XmlMappedRange>, <xref:Microsoft.Office.Tools.Word.XMLNode>, et <xref:Microsoft.Office.Tools.Word.XMLNodes>.  
   
-## <a name="understanding-type-differences-between-host-items-host-controls-and-native-office-objects"></a>Understanding Type Differences Between Host Items, Host Controls, and Native Office Objects  
- For each host item and host control, there is an underlying native Microsoft Office Word or Microsoft Office Excel object. You can access the underlying object by using the InnerObject property of the host item or host control. However, there is no way to cast a native Office object to its corresponding host item or host control. If you try to cast a native Office object into the type of a host item or host control, an <xref:System.InvalidCastException> is thrown.  
+## <a name="understanding-type-differences-between-host-items-host-controls-and-native-office-objects"></a>Présentation des différences de type entre les éléments hôtes, les contrôles hôtes et les objets Office natifs  
+ Pour chaque élément hôte et contrôle hôte, il existe un objet Microsoft Office Word ou Microsoft Office Excel natif sous-jacent. Vous pouvez accéder à l’objet sous-jacent à l’aide de la propriété InnerObject de l’élément hôte ou contrôle hôte. Toutefois, il n’existe aucun moyen d’effectuer un cast d’un objet Office natif vers son élément hôte ou contrôle hôte correspondant. Si vous essayez d’effectuer un cast d’un objet Office natif vers le type d’un élément hôte ou contrôle hôte, <xref:System.InvalidCastException> est levé.  
   
- There are several scenarios where the differences between the types of host items and host controls and the underlying native Office objects can affect your code.  
+ Il existe plusieurs scénarios où les différences entre les types des éléments hôtes ou contrôles hôtes, et ceux des objets Office natifs sous-jacents peuvent affecter votre code.  
   
-### <a name="passing-host-controls-to-methods-and-properties"></a>Passing Host Controls to Methods and Properties  
- In Word, you cannot pass a host control to a method or property that requires a native Word object as a parameter. You must use the InnerObject property of the host control to return the underlying native Word object. For example, you can pass a <xref:Microsoft.Office.Interop.Word.Bookmark> object to a method by passing the <xref:Microsoft.Office.Tools.Word.Bookmark.InnerObject%2A> property of the <xref:Microsoft.Office.Tools.Word.Bookmark> host control to the method.  
+### <a name="passing-host-controls-to-methods-and-properties"></a>Passage de contrôles hôtes aux méthodes et propriétés  
+ Dans Word, vous ne pouvez pas passer un contrôle hôte à une méthode ou une propriété qui nécessite un objet Word natif en tant que paramètre. Vous devez utiliser la propriété InnerObject du contrôle hôte pour retourner l’objet Word natif sous-jacent. Par exemple, vous pouvez passer un objet <xref:Microsoft.Office.Interop.Word.Bookmark> à une méthode en passant la propriété <xref:Microsoft.Office.Tools.Word.Bookmark.InnerObject%2A> du contrôle hôte <xref:Microsoft.Office.Tools.Word.Bookmark> à la méthode.  
   
- In Excel, you must use the InnerObject property of the host control to pass the host control to a method or property when the method or property expects the underlying Excel object.  
+ Dans Excel, vous devez utiliser la propriété InnerObject du contrôle hôte pour passer le contrôle hôte à une méthode ou propriété lorsque la méthode ou propriété attend l’objet Excel sous-jacent.  
   
- The following example creates a <xref:Microsoft.Office.Tools.Excel.NamedRange> control and passes it to the <xref:Microsoft.Office.Interop.Excel.Range.AutoFill%2A> method. The code uses the <xref:Microsoft.Office.Tools.Excel.NamedRange.InnerObject%2A> property of the named range to return the underlying Office <xref:Microsoft.Office.Interop.Excel.Range> that is required by the <xref:Microsoft.Office.Interop.Excel.Range.AutoFill%2A> method.  
+ L’exemple suivant crée un contrôle <xref:Microsoft.Office.Tools.Excel.NamedRange> et le passe à la méthode <xref:Microsoft.Office.Interop.Excel.Range.AutoFill%2A> . Le code utilise la propriété <xref:Microsoft.Office.Tools.Excel.NamedRange.InnerObject%2A> de la plage nommée pour retourner le <xref:Microsoft.Office.Interop.Excel.Range> Office sous-jacent nécessaire à la méthode <xref:Microsoft.Office.Interop.Excel.Range.AutoFill%2A> .  
   
- [!code-csharp[Trin_VstcoreHostControlsExcel#28](../vsto/codesnippet/CSharp/Trin_VstcoreHostControlsExcelCS/Sheet1.cs#28)] [!code-vb[Trin_VstcoreHostControlsExcel#28](../vsto/codesnippet/VisualBasic/Trin_VstcoreHostControlsExcelVB/Sheet1.vb#28)]  
+ [!code-csharp[Trin_VstcoreHostControlsExcel#28](../vsto/codesnippet/CSharp/Trin_VstcoreHostControlsExcelCS/Sheet1.cs#28)]
+ [!code-vb[Trin_VstcoreHostControlsExcel#28](../vsto/codesnippet/VisualBasic/Trin_VstcoreHostControlsExcelVB/Sheet1.vb#28)]  
   
-### <a name="return-types-of-native-office-methods-and-properties"></a>Return Types of Native Office Methods and Properties  
- Most methods and properties of host items return the underlying native Office object upon which the host item is based. For example, the <xref:Microsoft.Office.Tools.Excel.NamedRange.Parent%2A> property of a <xref:Microsoft.Office.Tools.Excel.NamedRange> host control in Excel returns a <xref:Microsoft.Office.Interop.Excel.Worksheet> object rather than a <xref:Microsoft.Office.Tools.Excel.Worksheet> host item. Similarly, the <xref:Microsoft.Office.Tools.Word.RichTextContentControl.Parent%2A> property of a <xref:Microsoft.Office.Tools.Word.RichTextContentControl> host control in Word returns a <xref:Microsoft.Office.Interop.Word.Document> object rather than a <xref:Microsoft.Office.Tools.Word.Document> host item.  
+### <a name="return-types-of-native-office-methods-and-properties"></a>Types de retour des méthodes et propriétés Office natives  
+ La plupart des méthodes et propriétés des éléments hôtes retournent l’objet Office natif sous-jacent sur lequel l’élément hôte est basé. Par exemple, la propriété <xref:Microsoft.Office.Tools.Excel.NamedRange.Parent%2A> d’un contrôle hôte <xref:Microsoft.Office.Tools.Excel.NamedRange> dans Excel retourne un objet <xref:Microsoft.Office.Interop.Excel.Worksheet> à la place d’un élément hôte <xref:Microsoft.Office.Tools.Excel.Worksheet> . De même, la propriété <xref:Microsoft.Office.Tools.Word.RichTextContentControl.Parent%2A> d’un contrôle hôte <xref:Microsoft.Office.Tools.Word.RichTextContentControl> dans Word retourne un objet <xref:Microsoft.Office.Interop.Word.Document> à la place d’un élément hôte <xref:Microsoft.Office.Tools.Word.Document> .  
   
-### <a name="accessing-collections-of-host-controls"></a>Accessing Collections of Host Controls  
- The [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] does not provide individual collections for each type of host control. Instead, use the Controls property of a host item to iterate through all managed controls (both host controls and Windows Forms controls) on the document or worksheet, and then look for items that match the type of the host control you are interested in. The following code example examines each control on a Word document and determines whether the control is a <xref:Microsoft.Office.Tools.Word.Bookmark>.  
+### <a name="accessing-collections-of-host-controls"></a>Accès aux collections de contrôles hôtes  
+ Le [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] ne fournit pas de collections individuelles pour chaque type de contrôle hôte. Au lieu de cela, utilisez la propriété de contrôles d’un élément hôte pour itérer sur tous les contrôles managés (contrôles hôtes et contrôles Windows Forms) sur le document ou la feuille de calcul, puis rechercher les éléments qui correspondent au type du contrôle hôte qui que vous intéressez. L’exemple de code suivant permet d’examiner chaque contrôle d’un document Word et de déterminer si le contrôle correspond à <xref:Microsoft.Office.Tools.Word.Bookmark>.  
   
- [!code-csharp[Trin_VstcoreHostControlsWord#10](../vsto/codesnippet/CSharp/trin_vstcorehostcontrolsword/ThisDocument.cs#10)] [!code-vb[Trin_VstcoreHostControlsWord#10](../vsto/codesnippet/VisualBasic/Trin_VstcoreHostControlsWordVB/ThisDocument.vb#10)]  
+ [!code-csharp[Trin_VstcoreHostControlsWord#10](../vsto/codesnippet/CSharp/trin_vstcorehostcontrolsword/ThisDocument.cs#10)]
+ [!code-vb[Trin_VstcoreHostControlsWord#10](../vsto/codesnippet/VisualBasic/Trin_VstcoreHostControlsWordVB/ThisDocument.vb#10)]  
   
- For more information about the Controls property of host items, see [Adding Controls to Office Documents at Run Time](../vsto/adding-controls-to-office-documents-at-run-time.md).  
+ Pour plus d’informations sur la propriété de contrôles des éléments hôtes, consultez [Ajout de contrôles aux Documents Office au moment de l’exécution](../vsto/adding-controls-to-office-documents-at-run-time.md).  
   
- The Word and Excel object models include properties that expose collections of native controls on documents and worksheets. You cannot access managed controls by using these properties. For example, it is not possible to enumerate each <xref:Microsoft.Office.Tools.Word.Bookmark> host control in a document by using the <xref:Microsoft.Office.Interop.Word._Document.Bookmarks%2A> property of a <xref:Microsoft.Office.Interop.Word.Document> or the <xref:Microsoft.Office.Tools.Word.Document.Bookmarks%2A> property of a <xref:Microsoft.Office.Tools.Word.Document>. These properties include only the <xref:Microsoft.Office.Interop.Word.Bookmark> controls in the document; they do not contain the <xref:Microsoft.Office.Tools.Word.Bookmark> host controls in the document.  
+ Les modèles objet Word et Excel incluent des propriétés qui exposent des collections de contrôles natifs sur des documents et des feuilles de calcul. Vous ne pouvez pas accéder aux contrôles managés à l’aide de ces propriétés. Par exemple, il n’est pas possible d’énumérer chaque contrôle hôte <xref:Microsoft.Office.Tools.Word.Bookmark> d’un document à l’aide de la propriété <xref:Microsoft.Office.Interop.Word._Document.Bookmarks%2A> de <xref:Microsoft.Office.Interop.Word.Document> ou de la propriété <xref:Microsoft.Office.Tools.Word.Document.Bookmarks%2A> de <xref:Microsoft.Office.Tools.Word.Document>. Ces propriétés incluent uniquement les contrôles <xref:Microsoft.Office.Interop.Word.Bookmark> dans le document ; elles ne contiennent pas les contrôles hôtes <xref:Microsoft.Office.Tools.Word.Bookmark> dans le document.  
   
-## <a name="see-also"></a>See Also  
+## <a name="see-also"></a>Voir aussi  
  [Host Items and Host Controls Overview](../vsto/host-items-and-host-controls-overview.md)   
- [Automating Word by Using Extended Objects](../vsto/automating-word-by-using-extended-objects.md)   
- [Automating Excel by Using Extended Objects](../vsto/automating-excel-by-using-extended-objects.md)   
- [Worksheet Host Item](../vsto/worksheet-host-item.md)   
- [Workbook Host Item](../vsto/workbook-host-item.md)   
- [Document Host Item](../vsto/document-host-item.md)  
+ [Automatisation de Word à l’aide d’objets étendus](../vsto/automating-word-by-using-extended-objects.md)   
+ [Automatisation d’Excel à l’aide d’objets étendus](../vsto/automating-excel-by-using-extended-objects.md)   
+ [Élément hôte de feuille de calcul](../vsto/worksheet-host-item.md)   
+ [Élément hôte de classeur](../vsto/workbook-host-item.md)   
+ [Élément hôte de document](../vsto/document-host-item.md)  
   
   

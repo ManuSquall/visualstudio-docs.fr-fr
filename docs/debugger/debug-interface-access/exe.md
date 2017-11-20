@@ -1,48 +1,48 @@
 ---
-title: "Exe | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-debug"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "fichiers .dll"
-  - "symbole Exe"
-  - "fichiers .exe"
-  - "fichiers exécutables, symbole Exe"
+title: Exe | Documents Microsoft
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-debug
+ms.tgt_pltfrm: 
+ms.topic: article
+dev_langs: C++
+helpviewer_keywords:
+- .dll files
+- Exe symbol
+- .exe files
+- executable files, Exe symbol
 ms.assetid: a781d2cf-55fe-4373-9cf1-b732864244e0
-caps.latest.revision: 17
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 17
+caps.latest.revision: "17"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: ab02eacffe01c267a2f3d4ff463b729591bb8b19
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: fr-FR
+ms.lasthandoff: 10/31/2017
 ---
-# Exe
-[!INCLUDE[vs2017banner](../../code-quality/includes/vs2017banner.md)]
-
-.exe Est le seul symbole sans parent lexicale ou de la classe, comme il représente la portée globale des fichiers .exe ou .DLL.  Il n'existe qu'un symbole avec la balise d' `SymTagExe` par fichier.  La méthode d' [IDiaSession::get\_globalScope](../Topic/IDiaSession::get_globalScope.md) retourne le symbole.  
+# <a name="exe"></a>Exe
+Exe est le seul symbole sans qu’elle soit un lexicale ou de la classe parente, car il représente la portée globale du fichier .exe ou .dll. Il est uniquement un symbole avec la `SymTagExe` balise par fichier. Le [IDiaSession::get_globalScope](../../debugger/debug-interface-access/idiasession-get-globalscope.md) méthode retourne le symbole.  
   
-## Propriétés  
- Le tableau suivant indique les propriétés qui sont valides pour ce type de symbole.  
+## <a name="properties"></a>Propriétés  
+ Le tableau suivant présente les propriétés qui sont valides pour ce type de symbole.  
   
 |Propriété|Type de données|Description|  
-|---------------|---------------------|-----------------|  
-|[IDiaSymbol::get\_age](../../debugger/debug-interface-access/idiasymbol-get-age.md)|`DWORD`|Âge de ce fichier exécutable.|  
-|[IDiaSymbol::get\_guid](../../debugger/debug-interface-access/idiasymbol-get-guid.md)|`GUID`|`GUID` de ce fichier exécutable.|  
-|[IDiaSymbol::get\_isCTypes](../../debugger/debug-interface-access/idiasymbol-get-isctypes.md)|`BOOL`|`TRUE` si le fichier de symboles associé à ce fichier exécutable contient des C \(uniquement dans diamètre Kit de développement logiciel v8.0 ou version ultérieure\).|  
-|[IDiaSymbol::get\_isStripped](../../debugger/debug-interface-access/idiasymbol-get-isstripped.md)|`BOOL`|`TRUE` si les symboles privés ont été supprimés du fichier de symboles associé à ce fichier exécutable \(uniquement dans diamètre Kit de développement logiciel v8.0 ou version ultérieure\).|  
-|[IDiaSymbol::get\_machineType](../../debugger/debug-interface-access/idiasymbol-get-machinetype.md)|`DWORD`|Évaluez indiquer l'unité centrale cible \(une des valeurs de [CV\_CPU\_TYPE\_e, énumération](../../debugger/debug-interface-access/cv-cpu-type-e.md) \).|  
-|[IDiaSymbol::get\_name](../Topic/IDiaSymbol::get_name.md)|`BSTR`|nom du fichier.exe.|  
-|[IDiaSymbol::get\_signature](../../debugger/debug-interface-access/idiasymbol-get-signature.md)|`DWORD`|signature du fichier exécutable.|  
-|[IDiaSymbol::get\_symbolsFileName](../Topic/IDiaSymbol::get_symbolsFileName.md)|`BSTR`|Chemin d'accès complet du fichier .pdb ou du .dbg du fichier .exe.|  
-|[IDiaSymbol::get\_symIndexId](../../debugger/debug-interface-access/idiasymbol-get-symindexid.md)|`DWORD`|ID d'index de symbole.|  
-|[IDiaSymbol::get\_symTag](../Topic/IDiaSymbol::get_symTag.md)|`DWORD`|Retourne `SymTagExe` \(une des valeurs de [SymTagEnum, énumération](../../debugger/debug-interface-access/symtagenum.md) \).|  
+|--------------|---------------|-----------------|  
+|[IDiaSymbol::get_age](../../debugger/debug-interface-access/idiasymbol-get-age.md)|`DWORD`|Durée de vie de cet exécutable.|  
+|[IDiaSymbol::get_guid](../../debugger/debug-interface-access/idiasymbol-get-guid.md)|`GUID`|`GUID`de cet exécutable.|  
+|[IDiaSymbol::get_isCTypes](../../debugger/debug-interface-access/idiasymbol-get-isctypes.md)|`BOOL`|`TRUE`Si le fichier de symboles associé à ce fichier exécutable contient des types de C (uniquement dans DIA SDK 8.0 ou version ultérieure).|  
+|[IDiaSymbol::get_isStripped](../../debugger/debug-interface-access/idiasymbol-get-isstripped.md)|`BOOL`|`TRUE`Si les symboles privés ont été supprimés à partir du fichier de symbole associé à cet exécutable (uniquement dans DIA SDK 8.0 ou version ultérieure).|  
+|[IDiaSymbol::get_machineType](../../debugger/debug-interface-access/idiasymbol-get-machinetype.md)|`DWORD`|Valeur indiquant l’unité centrale cible (un de le [cv_cpu_type_e, énumération](../../debugger/debug-interface-access/cv-cpu-type-e.md) valeurs).|  
+|[IDiaSymbol::get_name](../../debugger/debug-interface-access/idiasymbol-get-name.md)|`BSTR`|Nom du fichier .exe.|  
+|[IDiaSymbol::get_signature](../../debugger/debug-interface-access/idiasymbol-get-signature.md)|`DWORD`|Signature de l’exécutable.|  
+|[IDiaSymbol::get_symbolsFileName](../../debugger/debug-interface-access/idiasymbol-get-symbolsfilename.md)|`BSTR`|Chemin d’accès complet du fichier .pdb ou .dbg du fichier .exe.|  
+|[IDiaSymbol::get_symIndexId](../../debugger/debug-interface-access/idiasymbol-get-symindexid.md)|`DWORD`|ID d’index du symbole.|  
+|[IDiaSymbol::get_symTag](../../debugger/debug-interface-access/idiasymbol-get-symtag.md)|`DWORD`|Retourne `SymTagExe` (parmi les [symtagenum, énumération](../../debugger/debug-interface-access/symtagenum.md) valeurs).|  
   
-## Voir aussi  
- [IDiaSession::get\_globalScope](../Topic/IDiaSession::get_globalScope.md)   
+## <a name="see-also"></a>Voir aussi  
+ [IDiaSession::get_globalScope](../../debugger/debug-interface-access/idiasession-get-globalscope.md)   
  [Hiérarchie lexicale des types de symboles](../../debugger/debug-interface-access/lexical-hierarchy-of-symbol-types.md)

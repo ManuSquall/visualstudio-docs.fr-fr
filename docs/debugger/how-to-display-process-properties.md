@@ -1,31 +1,31 @@
 ---
-title: "How to: Display Process Properties | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-debug"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-helpviewer_keywords: 
-  - "Process properties"
+title: "Comment : afficher les propriétés d’un processus | Documents Microsoft"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-debug
+ms.tgt_pltfrm: 
+ms.topic: article
+helpviewer_keywords: Process properties
 ms.assetid: 5d9eb6e9-2e47-40f2-bf9c-464caa703dc9
-caps.latest.revision: 4
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 4
+caps.latest.revision: "4"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: b40c74776b61b38b9d56a0658361674241024b13
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: fr-FR
+ms.lasthandoff: 10/31/2017
 ---
-# How to: Display Process Properties
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
-
-Pour plus d'informations sur un processus listé dans la [vue Processus](../debugger/processes-view.md), utilisez la [boîte de dialogue Propriétés du processus](../debugger/process-properties-dialog-box.md).  
+# <a name="how-to-display-process-properties"></a>Comment : afficher les propriétés d'un processus
+Pour plus d’informations sur un processus listé dans [vue processus](../debugger/processes-view.md), utilisez le [la boîte de dialogue Propriétés du processus](../debugger/process-properties-dialog-box.md).  
   
-### Pour ouvrir une boîte de dialogue Propriétés du Processus  
+### <a name="to-open-a-process-properties-dialog-box"></a>Pour ouvrir une boîte de dialogue Propriétés du processus  
   
-1.  Sélectionnez un processus dans l'arborescence affichée dans la **vue Processus**.  
+1.  Sélectionnez un processus dans l’arborescence affichée dans **vue processus**.  
   
-2.  Dans le menu **Affichage**, sélectionnez **Propriétés**.  
+2.  À partir de la **vue** menu, choisissez **propriétés**.  
   
- Les boîtes de dialogue Propriétés ne sont pas modales. Ainsi, si vous cliquez sur un autre élément dans une fenêtre d'affichage, la boîte de dialogue affichera des informations sur l'élément sélectionné.
+ Boîtes de dialogue de propriétés ne sont pas modales, afin que vous pouvez cliquer sur un autre élément dans une fenêtre d’affichage et de la boîte de dialogue affiche des informations sur l’élément sélectionné.

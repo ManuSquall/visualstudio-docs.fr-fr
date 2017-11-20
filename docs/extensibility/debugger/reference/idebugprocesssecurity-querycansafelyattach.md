@@ -1,44 +1,28 @@
 ---
-title: IDebugProcessSecurity::QueryCanSafelyAttach | Microsoft Docs
+title: IDebugProcessSecurity::QueryCanSafelyAttach | Documents Microsoft
 ms.custom: 
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-sdk
+ms.technology: vs-ide-sdk
 ms.tgt_pltfrm: 
 ms.topic: article
-helpviewer_keywords:
-- IDebugProcessSecurity::QueryCanSafelyAttach
+helpviewer_keywords: IDebugProcessSecurity::QueryCanSafelyAttach
 ms.assetid: 63ec1ae8-27da-4574-aa15-1c986fe9fe58
-caps.latest.revision: 4
+caps.latest.revision: "4"
+author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-translation.priority.mt:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
+ms.openlocfilehash: 0ad6b7ffde868bf6b9dc4f9ef3bab9d9094ab765
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
 ms.translationtype: MT
-ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
-ms.openlocfilehash: 8f0e6f4942a9151bb95d4f14e074355562016096
-ms.contentlocale: fr-fr
-ms.lasthandoff: 08/28/2017
-
+ms.contentlocale: fr-FR
+ms.lasthandoff: 10/31/2017
 ---
 # <a name="idebugprocesssecurityquerycansafelyattach"></a>IDebugProcessSecurity::QueryCanSafelyAttach
-This method allows the port supplier to display a warning before the user attaches to an unsafe process.  
+Cette méthode permet d’afficher un avertissement avant que l’utilisateur joint à un processus non sécurisé, le fournisseur de port.  
   
-## <a name="syntax"></a>Syntax  
+## <a name="syntax"></a>Syntaxe  
   
 ```cpp  
 HRESULT QueryCanSafelyAttach();  
@@ -48,14 +32,14 @@ HRESULT QueryCanSafelyAttach();
 int QueryCanSafelyAttach();  
 ```  
   
-## <a name="return-value"></a>Return Value  
- The return values are as follows:  
+## <a name="return-value"></a>Valeur de retour  
+ Les valeurs de retour sont comme suit :  
   
--   `S_OK`: Attaching to process is safe and no warning dialog box is shown.  
+-   `S_OK`: L’attachement au processus est sécurisé et aucune boîte de dialogue d’avertissement ne s’affiche.  
   
--   `S_FALSE`: Attaching could be a security problem and a dialog box with a warning is shown.  
+-   `S_FALSE`: L’attachement peut être un problème de sécurité et une boîte de dialogue avec un avertissement s’affiche.  
   
--   `FAILURE`: Attaching to process fails.  
+-   `FAILURE`: L’attachement au processus échoue.  
   
-## <a name="see-also"></a>See Also  
+## <a name="see-also"></a>Voir aussi  
  [IDebugProcessSecurity](../../../extensibility/debugger/reference/idebugprocesssecurity.md)

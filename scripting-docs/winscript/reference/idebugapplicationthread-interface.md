@@ -1,32 +1,35 @@
 ---
-title: "IDebugApplicationThread, interface | Microsoft Docs"
-ms.custom: ""
-ms.date: "01/18/2017"
-ms.prod: "windows-script-interfaces"
-ms.reviewer: ""
-ms.suite: ""
-ms.tgt_pltfrm: ""
-ms.topic: "reference"
-helpviewer_keywords: 
-  - "IDebugApplicationThread (interface)"
+title: IDebugApplicationThread (Interface) | Documents Microsoft
+ms.custom: 
+ms.date: 01/18/2017
+ms.prod: windows-script-interfaces
+ms.reviewer: 
+ms.suite: 
+ms.tgt_pltfrm: 
+ms.topic: reference
+helpviewer_keywords: IDebugApplicationThread interface
 ms.assetid: f869c328-4409-4b74-a6c3-9e63fc58c63d
-caps.latest.revision: 8
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 8
+caps.latest.revision: "8"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: 6e731ba866504c9a3c3c9ad081a90a12b161355d
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.translationtype: MT
+ms.contentlocale: fr-FR
+ms.lasthandoff: 10/27/2017
 ---
-# IDebugApplicationThread, interface
-Autorise les moteurs de langage et les hôtes pour fournir la synchronisation des threads et mettre à jour le thread au débogage des informations d'état.  Cette interface étend l'interface d' `IRemoteDebugApplicationThread` pour fournir l'accès non distant au thread.  
+# <a name="idebugapplicationthread-interface"></a>IDebugApplicationThread, interface
+Permet de moteurs de langue et des hôtes pour assurer la synchronisation de thread et mettre à jour les informations d’état de débogage de threads. Cette interface étend la `IRemoteDebugApplicationThread` interface pour fournir un accès non distant vers le thread.  
   
- Outre les méthodes héritées de `IRemoteDebugApplicationThread`, l'interface `IDebugApplicationThread` expose les méthodes suivantes.  
+ Outre les méthodes héritées de `IRemoteDebugApplicationThread`, le `IDebugApplicationThread` interface expose les méthodes suivantes.  
   
-## Méthodes dans l'ordre Vtable  
+## <a name="methods-in-vtable-order"></a>Méthodes dans l'ordre Vtable  
   
 |Méthode|Description|  
-|-------------|-----------------|  
-|[IDebugApplicationThread::SynchronousCallIntoThread](../../winscript/reference/idebugapplicationthread-synchronouscallintothread.md)|Fournit un mécanisme pour l'appel au code exécuté dans le thread d'application.|  
-|[IDebugApplicationThread::QueryIsCurrentThread](../../winscript/reference/idebugapplicationthread-queryiscurrentthread.md)|Détermine si ce thread est le thread en cours de exécution.|  
-|[IDebugApplicationThread::QueryIsDebuggerThread](../../winscript/reference/idebugapplicationthread-queryisdebuggerthread.md)|Détermine si ce thread est le thread du débogueur.|  
+|------------|-----------------|  
+|[IDebugApplicationThread::SynchronousCallIntoThread](../../winscript/reference/idebugapplicationthread-synchronouscallintothread.md)|Fournit un mécanisme exécuter du code dans le thread d’application à l’appelant.|  
+|[IDebugApplicationThread::QueryIsCurrentThread](../../winscript/reference/idebugapplicationthread-queryiscurrentthread.md)|Détermine si ce thread est le thread en cours d’exécution.|  
+|[IDebugApplicationThread::QueryIsDebuggerThread](../../winscript/reference/idebugapplicationthread-queryisdebuggerthread.md)|Détermine si ce thread est le thread de débogueur.|  
 |[IDebugApplicationThread::SetDescription](../../winscript/reference/idebugapplicationthread-setdescription.md)|Définit la description de ce thread.|  
-|[IDebugApplicationThread::SetStateString](../../winscript/reference/idebugapplicationthread-setstatestring.md)|Définit la description de l'état du thread.|
+|[IDebugApplicationThread::SetStateString](../../winscript/reference/idebugapplicationthread-setstatestring.md)|Définit la description de l’état du thread.|

@@ -1,36 +1,39 @@
 ---
-title: "Comment&#160;: ex&#233;cuter le processus de travail sous un compte d&#39;utilisateur | Microsoft Docs"
-ms.custom: ""
-ms.date: "12/15/2016"
-ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-debug"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-dev_langs: 
-  - "FSharp"
-  - "VB"
-  - "CSharp"
-  - "C++"
-helpviewer_keywords: 
-  - "comptes d’utilisateur, aspnet_wp.exe"
-  - "Débogage d’applications Web ASP.NET"
-  - "outils, aspnet_wp.exe"
-  - "ASP.NET, outils"
-  - "aspnet_wp.exe"
+title: "Comment : exécuter le processus de travail sous un compte d’utilisateur | Documents Microsoft"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-debug
+ms.tgt_pltfrm: 
+ms.topic: article
+dev_langs:
+- CSharp
+- VB
+- FSharp
+- C++
+helpviewer_keywords:
+- user accounts, aspnet_wp.exe
+- ASP.NET, debugging Web applications
+- tools, aspnet_wp.exe
+- ASP.NET, tools
+- aspnet_wp.exe
 ms.assetid: b58e97b1-e62a-4318-aea4-52276ea20735
-caps.latest.revision: 32
-caps.handback.revision: 32
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
+caps.latest.revision: "32"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: 8b823675623f20df49edb87582f3e40695aec50e
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: fr-FR
+ms.lasthandoff: 10/31/2017
 ---
-# Comment&#160;: ex&#233;cuter le processus de travail sous un compte d&#39;utilisateur
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
-
+# <a name="how-to-run-the-worker-process-under-a-user-account"></a>Comment : exécuter le processus de travail sous un compte d'utilisateur
 Pour configurer votre ordinateur afin de pouvoir exécuter le processus de traitement [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] (aspnet_wp.exe ou w3wp.exe) sous un compte d'utilisateur, procédez comme suit.  
+
+ > [!IMPORTANT]
+ > À compter de Windows Server 2008 R2, nous recommandons l’utilisation de la [ApplicationPoolIdentity](https://docs.microsoft.com/en-us/iis/manage/configuring-security/application-pool-identities) comme identité pour chaque pool d’applications.
   
 ## <a name="procedure"></a>Procédure  
   
@@ -38,7 +41,7 @@ Pour configurer votre ordinateur afin de pouvoir exécuter le processus de trait
   
 1.  Ouvrez le fichier machine.config, situé sur votre ordinateur dans le dossier CONFIG sous le chemin d'accès où vous avez installé le runtime.  
   
-2.  Rechercher les &lt;processModel&gt; section et modifier les attributs d’utilisateur et mot de passe pour le nom et le mot de passe de lequel aspnet_wp.exe doit s’exécuter sous le compte d’utilisateur.  
+2.  Rechercher les &lt;processModel&gt; section et modifier les attributs d’utilisateur et mot de passe pour le nom et le mot de passe du lequel aspnet_wp.exe doit s’exécuter sous le compte d’utilisateur.  
   
 3.  Enregistrez le fichier machine.config.  
   
@@ -66,7 +69,7 @@ Pour configurer votre ordinateur afin de pouvoir exécuter le processus de trait
     net start w3svc  
     ```  
   
-6.  Recherchez le dossier des fichiers [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] temporaires, qui doit se trouver sur le même chemin d'accès que le dossier CONFIG. Cliquez avec le bouton droit sur le dossier des fichiers [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] temporaires et sélectionnez **Propriétés** dans le menu contextuel.  
+6.  Recherchez le dossier des fichiers [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] temporaires, qui doit se trouver sur le même chemin d'accès que le dossier CONFIG. Avec le bouton droit de la variable temporaire [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] dossier des fichiers et choisissez **propriétés** dans le menu contextuel.  
   
 7.  Dans la boîte de dialogue **Propriétés des fichiers ASP.NET temporaires** , cliquez sur l'onglet **Sécurité** .  
   
@@ -85,5 +88,6 @@ Pour configurer votre ordinateur afin de pouvoir exécuter le processus de trait
 13. Cliquez sur **OK** pour fermer la boîte de dialogue **Propriétés des fichiers ASP.Net temporaires** .  
   
 ## <a name="see-also"></a>Voir aussi  
-[Débogage ASP.NET : Configuration requise](../debugger/aspnet-debugging-system-requirements.md)  
+[Débogage d’Applications ASP.NET](../debugger/how-to-enable-debugging-for-aspnet-applications.md)   
+[Débogage ASP.NET : configuration système requise](../debugger/aspnet-debugging-system-requirements.md)  
   

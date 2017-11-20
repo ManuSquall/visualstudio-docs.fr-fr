@@ -1,46 +1,29 @@
 ---
-title: DISASSEMBLY_FLAGS | Microsoft Docs
+title: DISASSEMBLY_FLAGS | Documents Microsoft
 ms.custom: 
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-sdk
+ms.technology: vs-ide-sdk
 ms.tgt_pltfrm: 
 ms.topic: article
-f1_keywords:
-- DISASSEMBLY_FLAGS
-helpviewer_keywords:
-- DISASSEMBLY_FLAGS enumeration
+f1_keywords: DISASSEMBLY_FLAGS
+helpviewer_keywords: DISASSEMBLY_FLAGS enumeration
 ms.assetid: c1ec5a4d-5d42-4660-932c-7348550140cb
-caps.latest.revision: 10
+caps.latest.revision: "10"
+author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-translation.priority.mt:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
+ms.openlocfilehash: 1959b101ed5c2aca4c1d806781952ad4e4e6b1ad
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
 ms.translationtype: MT
-ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
-ms.openlocfilehash: c2e591340d80d2c17b214a0328cbdb0f0c121d81
-ms.contentlocale: fr-fr
-ms.lasthandoff: 08/28/2017
-
+ms.contentlocale: fr-FR
+ms.lasthandoff: 10/31/2017
 ---
 # <a name="disassemblyflags"></a>DISASSEMBLY_FLAGS
-Specifies the flags for disassembly.  
+Spécifie les indicateurs de code machine.  
   
-## <a name="syntax"></a>Syntax  
+## <a name="syntax"></a>Syntaxe  
   
 ```cpp  
 enum enum_DISASSEMBLY_FLAGS {   
@@ -65,37 +48,37 @@ public enum enum_DISASSEMBLY_FLAGS {
 };  
 ```  
   
-## <a name="members"></a>Members  
+## <a name="members"></a>Membres  
  DF_DOCUMENTCHANGE  
- Indicates that this instruction is in a different document than the previous one.  
+ Indique que cette instruction est dans un autre document que le précédent.  
   
  DF_DISABLED  
- Indicates that this instruction will not be executed.  
+ Indique que cette instruction ne sera pas exécutée.  
   
  DF_INSTRUCTION_ACTIVE  
- Indicates that this instruction is one of the next instructions to be executed (there may be more than one).  
+ Indique que cette instruction est une des instructions suivantes doit être exécuté (il peut en avoir plusieurs).  
   
  DF_DATA  
- Indicates that this instruction is really data (not code).  
+ Indique que cette instruction est réellement de données (pas de code).  
   
  DF_HASSOURCE  
- Indicates that this instruction has source. Some instructions, such as profiling or garbage collection code, have no corresponding source.  
+ Indique que cette instruction a source. Certaines instructions, telles que du code de profilage ou de garbage collection, n’ont aucune source correspondante.  
   
  DF_DOCUMENT_CHECKSUM  
- Indicates that `bstrDocumentUrl` field contains checksum data after the document URL. See the Remarks section for the [DisassemblyData](../../../extensibility/debugger/reference/disassemblydata.md) structure for how the checksum data is stored.  
+ Indique que `bstrDocumentUrl` champ contient des données de la somme de contrôle après l’URL du document. Consultez la section Notes pour le [DisassemblyData](../../../extensibility/debugger/reference/disassemblydata.md) structure pour le stockage des données de la somme de contrôle.  
   
-## <a name="remarks"></a>Remarks  
- Used as the `dwFlags` member of the [DisassemblyData](../../../extensibility/debugger/reference/disassemblydata.md) structure.  
+## <a name="remarks"></a>Remarques  
+ Utilisé en tant que le `dwFlags` membre de la [DisassemblyData](../../../extensibility/debugger/reference/disassemblydata.md) structure.  
   
- These flags may be combined with a bitwise `OR`.  
+ Ces indicateurs peuvent être combinées avec une opération de bits `OR`.  
   
-## <a name="requirements"></a>Requirements  
- Header: msdbg.h  
+## <a name="requirements"></a>Spécifications  
+ En-tête : msdbg.h  
   
- Namespace: Microsoft.VisualStudio.Debugger.Interop  
+ Namespace : Microsoft.VisualStudio.Debugger.Interop  
   
- Assembly: Microsoft.VisualStudio.Debugger.Interop.dll  
+ Assembly : Microsoft.VisualStudio.Debugger.Interop.dll  
   
-## <a name="see-also"></a>See Also  
- [Enumerations](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)   
+## <a name="see-also"></a>Voir aussi  
+ [Énumérations](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)   
  [DisassemblyData](../../../extensibility/debugger/reference/disassemblydata.md)

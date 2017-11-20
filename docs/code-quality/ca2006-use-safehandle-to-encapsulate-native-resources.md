@@ -1,51 +1,52 @@
 ---
-title: "CA2006&#160;: Utilisez SafeHandle pour encapsuler les ressources natives | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-devops-test"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "CA2006"
-  - "UseSafeHandleToEncapsulateNativeResources"
-helpviewer_keywords: 
-  - "UseSafeHandleToEncapsulateNativeResources"
-  - "CA2006"
+title: "CA2006 : Utilisez SafeHandle pour encapsuler les ressources natives | Documents Microsoft"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-code-analysis
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords:
+- CA2006
+- UseSafeHandleToEncapsulateNativeResources
+helpviewer_keywords:
+- UseSafeHandleToEncapsulateNativeResources
+- CA2006
 ms.assetid: a71950bd-bcc1-463d-b1f2-5233bc451456
-caps.latest.revision: 16
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
-caps.handback.revision: 16
+caps.latest.revision: "16"
+author: gewarren
+ms.author: gewarren
+manager: ghogen
+ms.openlocfilehash: b83aec0a44e0762ed2d65f9bbbd39318b1b1b942
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: fr-FR
+ms.lasthandoff: 10/31/2017
 ---
-# CA2006&#160;: Utilisez SafeHandle pour encapsuler les ressources natives
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
-
+# <a name="ca2006-use-safehandle-to-encapsulate-native-resources"></a>CA2006 : Utilisez SafeHandle pour encapsuler les ressources natives
 |||  
 |-|-|  
 |TypeName|UseSafeHandleToEncapsulateNativeResources|  
 |CheckId|CA2006|  
 |Catégorie|Microsoft.Reliability|  
-|Modification avec rupture|Modification sans rupture|  
+|Modification avec rupture|Sans rupture|  
   
-## Cause  
+## <a name="cause"></a>Cause  
  Le code managé utilise <xref:System.IntPtr> pour accéder aux ressources natives.  
   
-## Description de la règle  
- L'utilisation de `IntPtr` dans du code managé peut être le signe d'un problème potentiel de sécurité et de fiabilité.  Toute utilisation de `IntPtr` doit être passée en revue pour déterminer s'il est nécessaire de recourir à un <xref:System.Runtime.InteropServices.SafeHandle> ou une technologie similaire à la place.  Des problèmes surviennent si `IntPtr` désigne une ressource native, par exemple la mémoire, un handle de fichier ou un socket, considérée comme appartenant au code managé.  Si le code managé est propriétaire de la ressource, il doit également libérer les ressources natives associées, parce que dans le cas contraire cela peut provoquer une fuite de ressource.  
+## <a name="rule-description"></a>Description de la règle  
+ Utilisation de `IntPtr` dans le code managé peut indiquer un problème potentiel de sécurité et de fiabilité. Toutes les utilisations de `IntPtr` doivent être examinées pour déterminer si l’utilisation d’un <xref:System.Runtime.InteropServices.SafeHandle> , ou une technologie similaire, est nécessaire à la place. Des problèmes seront produit si le `IntPtr` représente une ressource native, telles que la mémoire, un descripteur de fichier ou un socket, que le code managé est considérée comme propre. Si le code managé est propriétaire de la ressource, il doit également libérer les ressources natives qui lui est associés, car un échec de cette opération entraînerait une fuite de ressource.  
   
- Dans ces scénarios, des problèmes de sécurité et de fiabilité se présentent également si l'accès multithread est accordé au `IntPtr`, tout comme la possibilité de libérer la ressource représentée par `IntPtr`.  Ces problèmes impliquent le recyclage de la valeur `IntPtr` sur la version finale des ressources tandis que l'utilisation simultanée de la ressource s'effectue dans un autre thread.  Cela peut provoquer des conditions de concurrence dans lesquelles un thread peut lire ou écrire des données associées à la mauvaise ressource.  Par exemple, si votre type stocke un handle de système d'exploitation comme `IntPtr` et autorise les utilisateurs à appeler à la fois la méthode **Close** et toute autre méthode utilisant ce handle en même temps \(avec un degré de synchronisation\), votre code est confronté un problème du recyclage du handle  
+ Dans de tels scénarios, des problèmes de sécurité ou de fiabilité existeront également si l’accès multithread est autorisé au `IntPtr` et un moyen de libérer la ressource représentée par le `IntPtr` est fournie. Ces problèmes impliquent le recyclage de le `IntPtr` valeur sur la version de la ressource lors de l’utilisation simultanée de la ressource est rendue sur un autre thread. Cela peut entraîner des conditions de concurrence où un thread peut lire ou écrire des données qui sont associées à la ressource incorrecte. Par exemple, si votre type stocke un handle de système d’exploitation comme un `IntPtr` et permet aux utilisateurs d’appeler à la fois **fermer** et toute autre méthode qui utilise ce handle sans une sorte de synchronisation et simultanément, votre code a une poignée de recyclage problème.  
   
- Ce problème de recyclage des handles provoque des données endommagées et, fréquemment, une faille de sécurité.  `SafeHandle` et ses classes de mêmes parents <xref:System.Runtime.InteropServices.CriticalHandle> fournissent un mécanisme pour l'encapsulation d'un handle natif à une ressource afin que de tels problèmes de threading puissent être évités.  En outre, vous pouvez utiliser `SafeHandle` et sa classe sœur `CriticalHandle` pour d'autres problèmes de thread, notamment la nécessité de contrôler avec soin la durée de vie des objets managés contenant une copie du handle natif par rapport aux appels aux méthodes natives.  Dans cette situation, vous pouvez souvent supprimer des appels à `GC.KeepAlive`.  La surcharge de performance subie lorsque vous utilisez `SafeHandle` et, à un degré moindre, `CriticalHandle`, peut être minimisée avec une conception rigoureuse.  
+ Ce problème de recyclage de handle peut provoquer une altération des données et, souvent, une faille de sécurité. `SafeHandle`et sa classe sœur <xref:System.Runtime.InteropServices.CriticalHandle> fournissent un mécanisme pour encapsuler un handle natif à une ressource afin que ces problèmes de thread peuvent être évitées. En outre, vous pouvez utiliser `SafeHandle` et sa classe sœur `CriticalHandle` pour d’autres problèmes de thread, par exemple, pour contrôler avec soin la durée de vie des objets managés contenant une copie du handle natif sur les appels aux méthodes natives. Dans ce cas, vous pouvez souvent supprimer des appels à `GC.KeepAlive`. Le performances charge subie lorsque vous utilisez `SafeHandle` et, à un moindre degré, `CriticalHandle`, peut souvent être réduite avec une conception rigoureuse.  
   
-## Comment corriger les violations  
- Convertissez l'utilisation de `IntPtr` en `SafeHandle` pour gérer sans risque l'accès aux ressources natives.  Consultez la rubrique de référence <xref:System.Runtime.InteropServices.SafeHandle> pour des exemples.  
+## <a name="how-to-fix-violations"></a>Comment corriger les violations  
+ Convertir `IntPtr` utilisation de `SafeHandle` pour gérer en toute sécurité l’accès aux ressources natives. Consultez le <xref:System.Runtime.InteropServices.SafeHandle> rubrique de référence pour obtenir des exemples.  
   
-## Quand supprimer les avertissements  
+## <a name="when-to-suppress-warnings"></a>Quand supprimer les avertissements  
  Vous ne devez pas supprimer cet avertissement.  
   
-## Voir aussi  
+## <a name="see-also"></a>Voir aussi  
  <xref:System.IDisposable>

@@ -1,45 +1,48 @@
 ---
-title: "format, propri&#233;t&#233; (Intl.DateTimeFormat) | Microsoft Docs"
-ms.custom: ""
-ms.date: "01/18/2017"
-ms.prod: "windows-client-threshold"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "devlang-javascript"
-ms.tgt_pltfrm: ""
-ms.topic: "language-reference"
-dev_langs: 
-  - "JavaScript"
-  - "TypeScript"
-  - "DHTML"
+title: "format, propriété (Intl.DateTimeFormat) | Documents Microsoft"
+ms.custom: 
+ms.date: 01/18/2017
+ms.prod: windows-client-threshold
+ms.reviewer: 
+ms.suite: 
+ms.technology: devlang-javascript
+ms.tgt_pltfrm: 
+ms.topic: language-reference
+dev_langs:
+- JavaScript
+- TypeScript
+- DHTML
 ms.assetid: 487930fe-a948-446f-902d-06bb0d7685d5
-caps.latest.revision: 5
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 5
+caps.latest.revision: "5"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: 2e94fcd797a63944d0162dceadf773cf9b15f943
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.translationtype: MT
+ms.contentlocale: fr-FR
+ms.lasthandoff: 10/27/2017
 ---
-# format, propri&#233;t&#233; (Intl.DateTimeFormat)
-Retourne une fonction qui met une date en forme spécifique aux paramètres régionaux à l'aide des paramètres du formateur de date\/heure spécifiés.  
+# <a name="format-property-intldatetimeformat"></a>format, propriété (Intl.DateTimeFormat)
+Retourne une fonction qui met en forme une date spécifique aux paramètres régionaux en utilisant les paramètres de module de formatage de date/heure spécifiée.  
   
-## Syntaxe  
+## <a name="syntax"></a>Syntaxe  
   
 ```  
 dateTimeFormatObj.format  
 ```  
   
-#### Paramètres  
+#### <a name="parameters"></a>Paramètres  
  `dateTimeFormatObj`  
- Requis.  Nom de l'objet `DateTimeFormat` à utiliser comme formateur.  
+ Obligatoire. Le nom de la `DateTimeFormat` objet à utiliser comme un formateur.  
   
-## Notes  
- La fonction retournée par la propriété `format` accepte un seul argument, `date`, et retourne une chaîne qui représente la date localisée en utilisant les options spécifiées dans l'objet `DateTimeFormat`.  Le paramètre `date` de la fonction retournée doit être un nombre, une chaîne de date ou un objet `Date`.  Si `date` n'est pas fourni, la fonction utilise [Date.now](../../javascript/reference/date-now-function-javascript.md) comme valeur d'entrée par défaut.  
+## <a name="remarks"></a>Remarques  
+ La fonction retournée par le `format` propriété accepte un argument unique, `date`et retourne une chaîne qui représente la date localisé à l’aide des options spécifiées dans le `DateTimeFormat` objet. Le `date` paramètre de la fonction retournée doit être un nombre, une chaîne de date, ou un `Date` objet. Si `date` n’est pas fourni, la fonction utilise [Date.now](../../javascript/reference/date-now-function-javascript.md) en tant que la valeur d’entrée par défaut.  
   
-## Exemple  
- L'exemple suivant utilise un objet `DateTimeFormat` pour localiser la date « 1er décembre 2007 » en allemand et la remettre en forme.  
+## <a name="example"></a>Exemple  
+ L’exemple suivant utilise un `DateTimeFormat` objet à localiser la date « 1 déc 2007 » en allemand et remettre en forme.  
   
-```javascript  
+```JavaScript  
 var dtFormat = new Intl.DateTimeFormat(["de"], {  
     year: "numeric",  
     month: "long",  
@@ -53,8 +56,8 @@ if (console && console.log) {
 }  
 ```  
   
-## Configuration requise  
+## <a name="requirements"></a>Spécifications  
  [!INCLUDE[jsv11](../../javascript/reference/includes/jsv11-md.md)]  
   
-## Voir aussi  
- [Intl.DateTimeFormat, objet](../../javascript/reference/intl-datetimeformat-object-javascript.md)
+## <a name="see-also"></a>Voir aussi  
+ [Objet Intl.DateTimeFormat](../../javascript/reference/intl-datetimeformat-object-javascript.md)

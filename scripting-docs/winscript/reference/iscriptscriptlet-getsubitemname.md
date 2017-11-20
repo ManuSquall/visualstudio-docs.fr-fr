@@ -1,27 +1,30 @@
 ---
-title: "IScriptScriptlet::GetSubItemName | Microsoft Docs"
-ms.custom: ""
-ms.date: "01/18/2017"
-ms.prod: "windows-script-interfaces"
-ms.reviewer: ""
-ms.suite: ""
-ms.tgt_pltfrm: ""
-ms.topic: "reference"
+title: IScriptScriptlet::GetSubItemName | Documents Microsoft
+ms.custom: 
+ms.date: 01/18/2017
+ms.prod: windows-script-interfaces
+ms.reviewer: 
+ms.suite: 
+ms.tgt_pltfrm: 
+ms.topic: reference
 apiname: IScriptScriptlet.GetSubItemName
 apilocation: scrobj.dll
-helpviewer_keywords: 
-  - "IScriptScriptlet::GetSubItemName"
+helpviewer_keywords: IScriptScriptlet::GetSubItemName
 ms.assetid: 9ad963fc-9ce8-4b77-92c1-fb90d6307801
-caps.latest.revision: 10
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 10
+caps.latest.revision: "10"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: 43b8483e8a61c25a3911a35d4721c51f7b558530
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.translationtype: MT
+ms.contentlocale: fr-FR
+ms.lasthandoff: 10/27/2017
 ---
-# IScriptScriptlet::GetSubItemName
-Retourne le dernier identificateur dans le nom qualifié complet de l'hôte de l'objet d'un scriptlet.  
+# <a name="iscriptscriptletgetsubitemname"></a>IScriptScriptlet::GetSubItemName
+Retourne l’identificateur de la dernière dans le nom qualifié complet de l’hôte de l’objet d’un scriptlet.  
   
-## Syntaxe  
+## <a name="syntax"></a>Syntaxe  
   
 ```  
 HRESULT GetSubItemName(  
@@ -29,20 +32,20 @@ HRESULT GetSubItemName(
 );  
 ```  
   
-#### Paramètres  
+#### <a name="parameters"></a>Paramètres  
  `pbstr`  
- \[out\]  Si le nom qualifié complet du scriptlet de l'hôte possède plusieurs niveau, `pbstr` retourne l'adresse de la mémoire tampon de l'identificateur au deuxième niveau.  
+ [out] Si l’ordinateur hôte pleinement qualifié du scriptlet nom a plusieurs niveaux, `pbstr` renvoie l’adresse de la mémoire tampon de l’identificateur au deuxième niveau.  
   
- Si le nom qualifié complet du scriptlet de l'hôte possède un niveau, `pbstr` retourne l'adresse de la mémoire tampon de l'identificateur au premier niveau.  
+ Si l’ordinateur hôte pleinement qualifié du scriptlet nom a un niveau, `pbstr` renvoie l’adresse de la mémoire tampon de l’identificateur du premier niveau.  
   
-## Valeur de retour  
- Élément `HRESULT`.  Les valeurs possibles incluent, mais ne sont pas limitées à, celles dans le tableau suivant.  
+## <a name="return-value"></a>Valeur de retour  
+ Élément `HRESULT`. Les valeurs possibles sont notamment celles figurant dans le tableau suivant.  
   
 |Valeur|Description|  
-|------------|-----------------|  
+|-----------|-----------------|  
 |`S_OK`|La méthode a réussi.|  
   
-## Notes  
+## <a name="remarks"></a>Remarques  
   
-## Voir aussi  
- [IScriptScriptlet, interface](../../winscript/reference/iscriptscriptlet-interface.md)
+## <a name="see-also"></a>Voir aussi  
+ [Interface IScriptScriptlet](../../winscript/reference/iscriptscriptlet-interface.md)

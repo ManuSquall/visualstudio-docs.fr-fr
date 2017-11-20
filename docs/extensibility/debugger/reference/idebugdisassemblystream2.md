@@ -1,65 +1,65 @@
 ---
-title: "IDebugDisassemblyStream2 | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "IDebugDisassemblyStream2"
-helpviewer_keywords: 
-  - "Interface de IDebugDisassemblyStream2"
+title: IDebugDisassemblyStream2 | Documents Microsoft
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords: IDebugDisassemblyStream2
+helpviewer_keywords: IDebugDisassemblyStream2 interface
 ms.assetid: b03cab0c-3f0b-4cc6-88dc-acb3b48c567a
-caps.latest.revision: 12
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 12
+caps.latest.revision: "12"
+author: gregvanl
+ms.author: gregvanl
+manager: ghogen
+ms.openlocfilehash: d3c15e358a415bd3efc95b81daa2058320d79478
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: fr-FR
+ms.lasthandoff: 10/31/2017
 ---
-# IDebugDisassemblyStream2
-[!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]
-
-cette interface représente un flux de données de l'instruction.  
+# <a name="idebugdisassemblystream2"></a>IDebugDisassemblyStream2
+Cette interface représente un flux d’instructions.  
   
-## Syntaxe  
+## <a name="syntax"></a>Syntaxe  
   
 ```  
 IDebugDisassemblyStream2 : IUnknown  
 ```  
   
-## Remarques à l'intention des implémenteurs  
- Un moteur de débogage implémente cette interface pour prendre en charge le code machine du code d'un programme.  
+## <a name="notes-for-implementers"></a>Notes pour les implémenteurs  
+ Un moteur de débogage implémente cette interface pour prendre en charge le désassemblage du code d’un programme.  
   
-## Remarques pour les appelants  
- Un appel à la méthode d' [GetDisassemblyStream](../../../extensibility/debugger/reference/idebugprogram2-getdisassemblystream.md) retourne cette interface.  
+## <a name="notes-for-callers"></a>Remarques pour les appelants  
+ Un appel à la [GetDisassemblyStream](../../../extensibility/debugger/reference/idebugprogram2-getdisassemblystream.md) méthode retourne cette interface.  
   
-## méthodes en commande de Vtable  
- Le tableau suivant répertorie les méthodes d' `IDebugDisassemblyStream2`.  
+## <a name="methods-in-vtable-order"></a>Méthodes dans l'ordre Vtable  
+ Le tableau suivant présente les méthodes de `IDebugDisassemblyStream2`.  
   
 |Méthode|Description|  
-|-------------|-----------------|  
-|[Lecture](../../../extensibility/debugger/reference/idebugdisassemblystream2-read.md)|L'instruction lectures à partir de la position actuelle dans le code machine des flux.|  
-|[Recherche](../../../extensibility/debugger/reference/idebugdisassemblystream2-seek.md)|Déplace le pointeur de lecture dans le flux de code machine un nombre donné d'instruction par rapport à la position spécifiée.|  
-|[GetCodeLocationId](../Topic/IDebugDisassemblyStream2::GetCodeLocationId.md)|Retourne un identificateur d'emplacement du code pour un contexte de code particulier.|  
-|[GetCodeContext](../../../extensibility/debugger/reference/idebugdisassemblystream2-getcodecontext.md)|Retourne un objet de contexte de code correspondant à un identificateur spécifié d'emplacement du code.|  
-|[GetCurrentLocation](../Topic/IDebugDisassemblyStream2::GetCurrentLocation.md)|Retourne un identificateur d'emplacement de code qui représente l'emplacement actuel du code.|  
+|------------|-----------------|  
+|[En lecture](../../../extensibility/debugger/reference/idebugdisassemblystream2-read.md)|Lit les instructions à partir de la position actuelle dans le flux de code machine.|  
+|[Rechercher](../../../extensibility/debugger/reference/idebugdisassemblystream2-seek.md)|Déplace le pointeur de la lecture dans le flux de code machine un nombre donné d’instructions par rapport à une position spécifiée.|  
+|[GetCodeLocationId](../../../extensibility/debugger/reference/idebugdisassemblystream2-getcodelocationid.md)|Retourne un identificateur d’emplacement de code pour un contexte de code particulier.|  
+|[GetCodeContext](../../../extensibility/debugger/reference/idebugdisassemblystream2-getcodecontext.md)|Retourne un objet de contexte de code correspondant à un identificateur d’emplacement de code spécifié.|  
+|[GetCurrentLocation](../../../extensibility/debugger/reference/idebugdisassemblystream2-getcurrentlocation.md)|Retourne un identificateur d’emplacement de code qui représente l’emplacement du code en cours.|  
 |[GetDocument](../../../extensibility/debugger/reference/idebugdisassemblystream2-getdocument.md)|Obtient le document source associé à ce flux de code machine.|  
-|[GetScope](../Topic/IDebugDisassemblyStream2::GetScope.md)|Obtient la portée de ce flux du code machine.|  
-|[GetSize](../../../extensibility/debugger/reference/idebugdisassemblystream2-getsize.md)|Obtient la taille de ce flux du code machine.|  
+|[GetScope](../../../extensibility/debugger/reference/idebugdisassemblystream2-getscope.md)|Obtient la portée de ce flux de code machine.|  
+|[GetSize](../../../extensibility/debugger/reference/idebugdisassemblystream2-getsize.md)|Obtient la taille de ce flux de code machine.|  
   
-## Notes  
- Le flux de code machine peut être créé pour représenter l'espace d'adressage entier ou d'une fonction ou un module dans l'espace.  chaque instruction est représentée par une structure de [DisassemblyData](../../../extensibility/debugger/reference/disassemblydata.md) retournée par un appel à la méthode d' [Lecture](../../../extensibility/debugger/reference/idebugdisassemblystream2-read.md) .  
+## <a name="remarks"></a>Remarques  
+ Le flux de code machine peut être créé pour représenter l’espace d’adressage entière ou simplement une fonction ou un module au sein de l’espace. Chaque instruction est représentée par un [DisassemblyData](../../../extensibility/debugger/reference/disassemblydata.md) structure retournée par un appel à la [en lecture](../../../extensibility/debugger/reference/idebugdisassemblystream2-read.md) (méthode).  
   
-## Configuration requise  
- en\-tête : msdbg.h  
+## <a name="requirements"></a>Spécifications  
+ En-tête : msdbg.h  
   
- l'espace de noms : Microsoft.VisualStudio.Debugger.Interop  
+ Namespace : Microsoft.VisualStudio.Debugger.Interop  
   
- Assembly : Microsoft.VisualStudio.Debugger.Interop.dll  
+ Assembly : Microsoft.VisualStudio.Debugger.Interop.dll  
   
-## Voir aussi  
+## <a name="see-also"></a>Voir aussi  
  [Interfaces de base](../../../extensibility/debugger/reference/core-interfaces.md)   
  [GetDisassemblyStream](../../../extensibility/debugger/reference/idebugprogram2-getdisassemblystream.md)   
  [DisassemblyData](../../../extensibility/debugger/reference/disassemblydata.md)

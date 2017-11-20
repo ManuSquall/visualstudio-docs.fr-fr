@@ -1,67 +1,66 @@
 ---
-title: "StackFrameTypeEnum | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-debug"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "StackFrameTypeEnum (énumération)"
+title: StackFrameTypeEnum | Documents Microsoft
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-debug
+ms.tgt_pltfrm: 
+ms.topic: article
+dev_langs: C++
+helpviewer_keywords: StackFrameTypeEnum enumeration
 ms.assetid: 61e40163-eee0-4c1f-af47-cef3771bdc41
-caps.latest.revision: 7
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 7
+caps.latest.revision: "7"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: 37d8e960d256b8746781668068978aa72f45155c
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: fr-FR
+ms.lasthandoff: 10/31/2017
 ---
-# StackFrameTypeEnum
-[!INCLUDE[vs2017banner](../../code-quality/includes/vs2017banner.md)]
-
-Spécifie le type du frame de pile.  
+# <a name="stackframetypeenum"></a>StackFrameTypeEnum
+Spécifie le type de frame de pile.  
   
-## Syntaxe  
+## <a name="syntax"></a>Syntaxe  
   
-```cpp  
+```C++  
 enum StackFrameTypeEnum {  
-   FrameTypeFPO,  
-   FrameTypeTrap,  
-   FrameTypeTSS,  
-   FrameTypeStandard,  
-   FrameTypeFrameData,  
-   FrameTypeUnknown = -1  
+   FrameTypeFPO,  
+   FrameTypeTrap,  
+   FrameTypeTSS,  
+   FrameTypeStandard,  
+   FrameTypeFrameData,  
+   FrameTypeUnknown = -1  
 };  
 ```  
   
-## Éléments  
+## <a name="elements"></a>Éléments  
  `FrameTypeFPO`  
- pointeur de frame omis ; Les informations de FPO.  
+ Pointeur de frame omis ; Information sur FPO disponible.  
   
  `FrameTypeTrap`  
- Frame d'interruption du noyau.  
+ Cadre du noyau.  
   
  `FrameTypeTSS`  
- Frame d'interruption du noyau.  
+ Cadre du noyau.  
   
  `FrameTypeStandard`  
- Frame de pile standard EBP.  
+ Frame de pile EBP standard.  
   
  `FrameTypeFrameData`  
- pointeur de frame omis ; Les informations sur les données du mode disponibles.  
+ Pointeur de frame omis ; Informations de données image disponibles.  
   
  `FrameTypeUnknown`  
- Vue qui n'a pas d'informations de débogage.  
+ Cadre qui ne dispose pas des informations de débogage.  
   
-## Notes  
- Les valeurs de cette énumération sont retournées par un appel à la méthode d' [IDiaStackFrame::get\_type](../../debugger/debug-interface-access/idiastackframe-get-type.md) .  
+## <a name="remarks"></a>Remarques  
+ Les valeurs de cette énumération sont retournées par un appel à la [IDiaStackFrame::get_type](../../debugger/debug-interface-access/idiastackframe-get-type.md) (méthode).  
   
-## Configuration requise  
- en\-tête : cvconst.h  
+## <a name="requirements"></a>Spécifications  
+ En-tête : cvconst.h  
   
-## Voir aussi  
- [Énumérations et structures](../../debugger/debug-interface-access/enumerations-and-structures.md)   
- [IDiaStackFrame::get\_type](../../debugger/debug-interface-access/idiastackframe-get-type.md)
+## <a name="see-also"></a>Voir aussi  
+ [Énumérations et Structures](../../debugger/debug-interface-access/enumerations-and-structures.md)   
+ [IDiaStackFrame::get_type](../../debugger/debug-interface-access/idiastackframe-get-type.md)

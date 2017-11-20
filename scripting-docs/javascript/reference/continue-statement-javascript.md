@@ -1,55 +1,57 @@
 ---
-title: "continue, instruction (JavaScript) | Microsoft Docs"
-ms.custom: ""
-ms.date: "01/18/2017"
-ms.prod: "windows-client-threshold"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "devlang-javascript"
-ms.tgt_pltfrm: ""
-ms.topic: "language-reference"
-f1_keywords: 
-  - "continue_JavaScriptKeyword"
-dev_langs: 
-  - "JavaScript"
-  - "TypeScript"
-  - "DHTML"
-helpviewer_keywords: 
-  - "continue (instruction)"
-  - "do...while (instruction)"
-  - "structures de boucle, continue (instruction)"
+title: continue, instruction (JavaScript) | Documents Microsoft
+ms.custom: 
+ms.date: 01/18/2017
+ms.prod: windows-client-threshold
+ms.reviewer: 
+ms.suite: 
+ms.technology: devlang-javascript
+ms.tgt_pltfrm: 
+ms.topic: language-reference
+f1_keywords: continue_JavaScriptKeyword
+dev_langs:
+- JavaScript
+- TypeScript
+- DHTML
+helpviewer_keywords:
+- do...while statement
+- continue statement
+- loop structures, continue statement
 ms.assetid: f8a30d9f-e2de-4e1f-8668-4e4cf95f7df9
-caps.latest.revision: 21
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 21
+caps.latest.revision: "21"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: 391f919c4d06a6c529bfee34e21ca7238b3c63b7
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.translationtype: MT
+ms.contentlocale: fr-FR
+ms.lasthandoff: 10/27/2017
 ---
-# continue, instruction (JavaScript)
-Arrête l'itération en cours d'une boucle, et en lance une nouvelle.  
+# <a name="continue-statement-javascript"></a>continue, instruction (JavaScript)
+Arrête l'itération en cours d'une boucle et en lance une nouvelle.  
   
-## Syntaxe  
+## <a name="syntax"></a>Syntaxe  
   
 ```  
 continue [label];  
 ```  
   
-## Notes  
- L'argument facultatif `label` spécifie l'instruction à laquelle `continue` s'applique.  
+## <a name="remarks"></a>Remarques  
+ Le paramètre facultatif `label` argument spécifie l’instruction à laquelle `continue` s’applique.  
   
- Vous pouvez uniquement utiliser l'instruction `continue` à l'intérieur d'une boucle `while`, `do...while`, **for** ou `for...in`.  L'exécution de l'instruction `continue` arrête l'itération de la boucle en cours et poursuit le déroulement du programme au début de la boucle.  Cette action a des conséquences différentes selon les types de boucles :  
+ Vous pouvez utiliser la `continue` instruction uniquement dans un `while`, `do...while`, **pour**, ou `for...in` boucle. L’exécution de la `continue` instruction arrête l’itération actuelle de la boucle et poursuit le déroulement du programme avec le début de la boucle. Cela a les effets suivants sur les différents types de boucles :  
   
--   Les boucles `while` et `do...while` testent leur condition et, si celle\-ci se vérifie \(true\), elles exécutent une nouvelle fois la boucle.  
+-   `while`et `do...while` boucles leur condition de test et si la valeur est true, réexécutez la boucle.  
   
--   Les boucles `for` exécutent leur expression d'incrémentation et, si le test se vérifie \(true\), elles exécutent une nouvelle fois la boucle.  
+-   `for`boucles exécutent leur expression d’incrémentation et, si l’expression de test est la valeur est true, exécutent à nouveau la boucle.  
   
--   Les boucles `for...in` passent au champ suivant de la variable spécifiée et exécutent une nouvelle fois la boucle.  
+-   `for...in`boucles passer au champ suivant de la variable spécifiée et réexécutez la boucle.  
   
-## Exemples  
- Dans cet exemple, une boucle itère de 1 à 9.  Les instructions entre `continue` et la fin du corps de `for` sont ignorées à cause de l'utilisation de l'instruction `continue` avec l'expression `(i < 5)`.  
+## <a name="examples"></a>Exemples  
+ Dans cet exemple, une boucle itère de 1 à 9. Les instructions entre `continue` et la fin de la `for` corps sont ignorés en raison de l’utilisation de la `continue` instruction avec l’expression `(i < 5)`.  
   
-```javascript  
+```JavaScript  
 for (var i = 1; i < 10; i++) {  
     if (i < 5) {  
         continue;  
@@ -61,9 +63,9 @@ for (var i = 1; i < 10; i++) {
 // Output: 5 6 7 8 9  
 ```  
   
- Dans le code suivant, l'instruction `continue` fait référence à la boucle `for` précédée de l'étiquette `Inner:`.  Lorsque `j` est égal à 24, l'instruction `continue` force la boucle `for` à passer à l'itération suivante.  Les nombres 21 à 23 et 25 à 30 s'impriment sur chaque ligne.  
+ Dans le code suivant, le `continue` instruction fait référence à la `for` boucle est précédé par le `Inner:` étiquette. Lorsque `j` est 24, la `continue` qui provoque l’instruction `for` boucle à passer à l’itération suivante. Les nombres 21 à 23 et 25 à 30 impriment sur chaque ligne.  
   
-```javascript  
+```JavaScript  
 Outer:  
 for (var i = 1; i <= 10; i++) {  
     document.write ("<br />");  
@@ -92,13 +94,13 @@ Inner:
 //i: 10 j: 21 22 23 25 26 27 28 29 30  
 ```  
   
-## Configuration requise  
+## <a name="requirements"></a>Spécifications  
  [!INCLUDE[jsv1](../../javascript/misc/includes/jsv1-md.md)]  
   
-## Voir aussi  
+## <a name="see-also"></a>Voir aussi  
  [break, instruction](../../javascript/reference/break-statement-javascript.md)   
- [Instruction do...while](../../javascript/reference/do-dot-dot-dot-while-statement-javascript.md)   
- [for, instruction](../../javascript/reference/for-statement-javascript.md)   
- [for...in, instruction](../../javascript/reference/for-dot-dot-dot-in-statement-javascript.md)   
- [Labeled, instruction](../../javascript/reference/labeled-statement-javascript.md)   
+ [Instruction Do... while](../../javascript/reference/do-dot-dot-dot-while-statement-javascript.md)   
+ [Instruction for](../../javascript/reference/for-statement-javascript.md)   
+ [instruction for... dans l’instruction](../../javascript/reference/for-dot-dot-dot-in-statement-javascript.md)   
+ [Instruction étiquetée](../../javascript/reference/labeled-statement-javascript.md)   
  [Instruction while](../../javascript/reference/while-statement-javascript.md)

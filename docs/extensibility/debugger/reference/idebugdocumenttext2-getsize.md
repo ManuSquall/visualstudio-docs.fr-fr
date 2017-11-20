@@ -1,46 +1,29 @@
 ---
-title: IDebugDocumentText2::GetSize | Microsoft Docs
+title: IDebugDocumentText2::GetSize | Documents Microsoft
 ms.custom: 
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-sdk
+ms.technology: vs-ide-sdk
 ms.tgt_pltfrm: 
 ms.topic: article
-f1_keywords:
-- IDebugDocumentText2::GetSize
-helpviewer_keywords:
-- IDebugDocumentText2::GetSize
+f1_keywords: IDebugDocumentText2::GetSize
+helpviewer_keywords: IDebugDocumentText2::GetSize
 ms.assetid: bf515a8f-dcee-4004-8f81-543d547ceaae
-caps.latest.revision: 10
+caps.latest.revision: "10"
+author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-translation.priority.mt:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
+ms.openlocfilehash: 25bf0a7c570c2c11e09c9e6d98d1f4be05d7adb5
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
 ms.translationtype: MT
-ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
-ms.openlocfilehash: b017d9a867dd9d441eade16a980f605f3ef40c45
-ms.contentlocale: fr-fr
-ms.lasthandoff: 08/28/2017
-
+ms.contentlocale: fr-FR
+ms.lasthandoff: 10/31/2017
 ---
 # <a name="idebugdocumenttext2getsize"></a>IDebugDocumentText2::GetSize
-Retrieves the size of the text at this position in the document.  
+Récupère la taille du texte à cette position dans le document.  
   
-## <a name="syntax"></a>Syntax  
+## <a name="syntax"></a>Syntaxe  
   
 ```cpp  
 HRESULT GetSize(   
@@ -56,20 +39,20 @@ int GetSize(
 );  
 ```  
   
-#### <a name="parameters"></a>Parameters  
+#### <a name="parameters"></a>Paramètres  
  `pcNumLines`  
- [out] Returns the number of lines of text.  
+ [out] Retourne le nombre de lignes de texte.  
   
  `pcNumChars`  
- [out] Returns the number of characters of text.  
+ [out] Retourne le nombre de caractères du texte.  
   
-## <a name="return-value"></a>Return Value  
- If successful, returns `S_OK`; otherwise, returns an error code.  
+## <a name="return-value"></a>Valeur de retour  
+ En cas de réussite, retourne `S_OK`; sinon, retourne un code d’erreur.  
   
-## <a name="remarks"></a>Remarks  
- [C++ only] If a particular value is not desired, pass a NULL for the parameter.  
+## <a name="remarks"></a>Remarques  
+ (C++ uniquement) Si une valeur particulière n’est pas souhaitée, passez une valeur NULL pour le paramètre.  
   
- [C# only] Both parameters must be specified.  
+ (C# uniquement) Les deux paramètres doivent être spécifiés.  
   
-## <a name="see-also"></a>See Also  
+## <a name="see-also"></a>Voir aussi  
  [IDebugDocumentText2](../../../extensibility/debugger/reference/idebugdocumenttext2.md)

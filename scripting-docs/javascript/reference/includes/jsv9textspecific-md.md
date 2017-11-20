@@ -1,1 +1,1 @@
-Internet Explorer 9 \(mode normes\)
+Internet Explorer 9 (mode normes)

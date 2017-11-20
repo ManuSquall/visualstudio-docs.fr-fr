@@ -1,46 +1,29 @@
 ---
-title: REFERENCE_COMPARE | Microsoft Docs
+title: REFERENCE_COMPARE | Documents Microsoft
 ms.custom: 
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-sdk
+ms.technology: vs-ide-sdk
 ms.tgt_pltfrm: 
 ms.topic: article
-f1_keywords:
-- REFERENCE_COMPARE
-helpviewer_keywords:
-- REFERENCE_COMPARE enumeration
+f1_keywords: REFERENCE_COMPARE
+helpviewer_keywords: REFERENCE_COMPARE enumeration
 ms.assetid: e31cdc78-f621-498b-9ca4-aefa790b9f6f
-caps.latest.revision: 8
+caps.latest.revision: "8"
+author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-translation.priority.mt:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
+ms.openlocfilehash: 07d8b5ade6e80c0629d4f0c3eedee2941f9b95a5
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
 ms.translationtype: MT
-ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
-ms.openlocfilehash: 40e96d92899cdb0a2dfc6127fbea5acae8663c65
-ms.contentlocale: fr-fr
-ms.lasthandoff: 08/28/2017
-
+ms.contentlocale: fr-FR
+ms.lasthandoff: 10/31/2017
 ---
 # <a name="referencecompare"></a>REFERENCE_COMPARE
-Specifies the type of comparison for references.  
+Spécifie le type de comparaison de références.  
   
-## <a name="syntax"></a>Syntax  
+## <a name="syntax"></a>Syntaxe  
   
 ```cpp  
 enum enum_REFERENCE_COMPARE {   
@@ -59,26 +42,26 @@ public enum enum_REFERENCE_COMPARE {
 };  
 ```  
   
-## <a name="members"></a>Members  
+## <a name="members"></a>Membres  
  REF_COMPARE_EQUAL  
- Specifies an equal-to comparison.  
+ Spécifie une comparaison égal à.  
   
  REF_COMPARE_LESS_THAN  
- Specifies a less-than comparison.  
+ Spécifie un inférieur-que la comparaison.  
   
  REF_COMPARE_GREATER_THAN  
- Specifies a greater-than comparison.  
+ Spécifie un caractère supérieur-que la comparaison.  
   
-## <a name="remarks"></a>Remarks  
- Passed as an argument to the [Compare](../../../extensibility/debugger/reference/idebugreference2-compare.md) method.  
+## <a name="remarks"></a>Remarques  
+ Est passé comme argument à la [comparer](../../../extensibility/debugger/reference/idebugreference2-compare.md) (méthode).  
   
-## <a name="requirements"></a>Requirements  
- Header: msdbg.h  
+## <a name="requirements"></a>Spécifications  
+ En-tête : msdbg.h  
   
- Namespace: Microsoft.VisualStudio.Debugger.Interop  
+ Namespace : Microsoft.VisualStudio.Debugger.Interop  
   
- Assembly: Microsoft.VisualStudio.Debugger.Interop.dll  
+ Assembly : Microsoft.VisualStudio.Debugger.Interop.dll  
   
-## <a name="see-also"></a>See Also  
- [Enumerations](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)   
+## <a name="see-also"></a>Voir aussi  
+ [Énumérations](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)   
  [Compare](../../../extensibility/debugger/reference/idebugreference2-compare.md)

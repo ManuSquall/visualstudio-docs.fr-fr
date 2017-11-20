@@ -1,46 +1,29 @@
 ---
-title: IDebugExpression2::EvaluateSync | Microsoft Docs
+title: IDebugExpression2::EvaluateSync | Documents Microsoft
 ms.custom: 
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-sdk
+ms.technology: vs-ide-sdk
 ms.tgt_pltfrm: 
 ms.topic: article
-f1_keywords:
-- IDebugExpression2::EvaluateSync
-helpviewer_keywords:
-- IDebugExpression2::EvaluateSync
+f1_keywords: IDebugExpression2::EvaluateSync
+helpviewer_keywords: IDebugExpression2::EvaluateSync
 ms.assetid: 88964915-dce3-4005-b4f3-9f37415e41e4
-caps.latest.revision: 15
+caps.latest.revision: "15"
+author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-translation.priority.mt:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
+ms.openlocfilehash: 5ddc090e827b0a94a6534a0c4e625299cbc2ef5a
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
 ms.translationtype: MT
-ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
-ms.openlocfilehash: 9bed4781641156603e0624b4b8635faaa5d82e06
-ms.contentlocale: fr-fr
-ms.lasthandoff: 08/28/2017
-
+ms.contentlocale: fr-FR
+ms.lasthandoff: 10/31/2017
 ---
 # <a name="idebugexpression2evaluatesync"></a>IDebugExpression2::EvaluateSync
-This method evaluates the expression synchronously.  
+Cette méthode évalue l’expression de façon synchrone.  
   
-## <a name="syntax"></a>Syntax  
+## <a name="syntax"></a>Syntaxe  
   
 ```cpp  
 HRESULT EvaluateSync(   
@@ -60,32 +43,32 @@ int EvaluateSync(
 );  
 ```  
   
-#### <a name="parameters"></a>Parameters  
+#### <a name="parameters"></a>Paramètres  
  `dwFlags`  
- [in] A combination of flags from the [EVALFLAGS](../../../extensibility/debugger/reference/evalflags.md) enumeration that control expression evaluation.  
+ [in] Une combinaison d’indicateurs à partir de la [EVALFLAGS](../../../extensibility/debugger/reference/evalflags.md) énumération qui contrôlent l’évaluation de l’expression.  
   
  `dwTimeout`  
- [in] Maximum time, in milliseconds, to wait before returning from this method. Use `INFINITE` to wait indefinitely.  
+ [in] Temps maximal, en millisecondes, à attendre avant de retourner à partir de cette méthode. Utilisez `INFINITE` pour attendre indéfiniment.  
   
  `pExprCallback`  
- [in]This parameter is always a null value.  
+ [in] Ce paramètre est toujours une valeur null.  
   
  `ppResult`  
- [out] Returns the [IDebugProperty2](../../../extensibility/debugger/reference/idebugproperty2.md) object that contains the result of the expression evaluation.  
+ [out] Retourne le [IDebugProperty2](../../../extensibility/debugger/reference/idebugproperty2.md) objet qui contient le résultat de l’évaluation d’expression.  
   
-## <a name="return-value"></a>Return Value  
- If successful, returns `S_OK`; otherwise returns an error code. Some typical error codes are:  
+## <a name="return-value"></a>Valeur de retour  
+ En cas de réussite, retourne `S_OK`; sinon, retourne un code d’erreur. Certains codes d’erreur standard sont :  
   
-|Error|Description|  
+|Erreur|Description|  
 |-----------|-----------------|  
-|E_EVALUATE_BUSY_WITH_EVALUATION|Another expression is currently being evaluated, and simultaneous expression evaluation is not supported.|  
-|E_EVALUATE_TIMEOUT|Evaluation timed out.|  
+|E_EVALUATE_BUSY_WITH_EVALUATION|Une autre expression est en cours d’évaluation et évaluation d’expression simultanées n’est pas pris en charge.|  
+|E_EVALUATE_TIMEOUT|Évaluation a expiré.|  
   
-## <a name="remarks"></a>Remarks  
- For synchronous evaluation, it is not necessary to send an event back to Visual Studio upon completion of the evaluation.  
+## <a name="remarks"></a>Remarques  
+ Pour l’évaluation synchrone, il n’est pas nécessaire envoyer un événement vers Visual Studio à l’achèvement de l’évaluation.  
   
-## <a name="example"></a>Example  
- The following example shows how to implement this method for a simple `CExpression` object that implements the [IDebugExpression2](../../../extensibility/debugger/reference/idebugexpression2.md) interface.  
+## <a name="example"></a>Exemple  
+ L’exemple suivant montre comment implémenter cette méthode pour une simple `CExpression` objet qui implémente le [IDebugExpression2](../../../extensibility/debugger/reference/idebugexpression2.md) interface.  
   
 ```cpp  
 HRESULT CExpression::EvaluateSync(EVALFLAGS dwFlags,  
@@ -132,7 +115,7 @@ HRESULT CExpression::EvalExpression(BOOL bSynchronous,
 }  
 ```  
   
-## <a name="see-also"></a>See Also  
+## <a name="see-also"></a>Voir aussi  
  [IDebugExpression2](../../../extensibility/debugger/reference/idebugexpression2.md)   
  [EVALFLAGS](../../../extensibility/debugger/reference/evalflags.md)   
  [IDebugEventCallback2](../../../extensibility/debugger/reference/idebugeventcallback2.md)   

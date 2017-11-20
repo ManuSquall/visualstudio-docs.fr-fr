@@ -1,40 +1,41 @@
 ---
-title: "Attacher au programme | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-helpviewer_keywords: 
-  - "moteurs de débogage, attacher aux programmes"
+title: Attachement au programme | Documents Microsoft
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+helpviewer_keywords: debug engines, attaching to programs
 ms.assetid: 9a3f5b83-60b5-4ef0-91fe-a432105bd066
-caps.latest.revision: 10
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 10
+caps.latest.revision: "10"
+author: gregvanl
+ms.author: gregvanl
+manager: ghogen
+ms.openlocfilehash: 7dd4baed877bd5d0262e966edf006dea80596b47
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: fr-FR
+ms.lasthandoff: 10/31/2017
 ---
-# Attacher au programme
-[!INCLUDE[vs2017banner](../../code-quality/includes/vs2017banner.md)]
-
-Après avoir enregistré vos programmes avec le port approprié, vous devez attacher le débogueur au programme que vous voulez déboguer.  
+# <a name="attaching-to-the-program"></a>Attachement au programme
+Une fois que vous avez enregistré vos programmes avec le port approprié, vous devez attacher le débogueur au programme que vous souhaitez déboguer.  
   
-## Choisir de l'attachement  
- Il existe trois façons dont le gestionnaire de débogage de session \(SDM\) tente de s'attacher au programme en cours de débogage.  
+## <a name="choosing-how-to-attach"></a>Choix du mode d’attachement  
+ Il existe trois façons dans lequel le Gestionnaire de session de débogage (SDM) tente d’attacher au programme en cours de débogage.  
   
-1.  Pour les programmes qui sont lancées par le moteur de débogage via la méthode d' [LaunchSuspended](../../extensibility/debugger/reference/idebugenginelaunch2-launchsuspended.md) \(standard des langages interprètes, par exemple\), le SDM obtient l'interface d' [IDebugProgramNodeAttach2](../../extensibility/debugger/reference/idebugprogramnodeattach2.md) de l'objet d' [IDebugProgramNode2](../../extensibility/debugger/reference/idebugprogramnode2.md) associé au programme en cours attaché.  Si le SDM peut obtenir l'interface d' `IDebugProgramNodeAttach2` , le SDM appelle ensuite la méthode d' [OnAttach](../../extensibility/debugger/reference/idebugprogramnodeattach2-onattach.md) .  La méthode d' `IDebugProgramNodeAttach2::OnAttach` retourne `S_OK` pour indiquer qu'elle ne dispose pas attachée le programme et que d'autres tentatives peuvent être effectuées attachement au programme.  
+1.  Pour les programmes qui sont lancées par le moteur de débogage par le biais du [LaunchSuspended](../../extensibility/debugger/reference/idebugenginelaunch2-launchsuspended.md) Obtient de le SDM (méthode) (standard de langages interprétés, par exemple), le [IDebugProgramNodeAttach2](../../extensibility/debugger/reference/idebugprogramnodeattach2.md) à partir de l’interface le [IDebugProgramNode2](../../extensibility/debugger/reference/idebugprogramnode2.md) objet associé au programme en cours d’attachement. Si le SDM peut obtenir le `IDebugProgramNodeAttach2` le SDM interface, puis appelle la [OnAttach](../../extensibility/debugger/reference/idebugprogramnodeattach2-onattach.md) (méthode). Le `IDebugProgramNodeAttach2::OnAttach` retourne de la méthode `S_OK` pour indiquer qu’il n’avez pas attaché au programme et que les autres tentatives peuvent être effectuées à joindre au programme.  
   
-2.  Si le SDM peut obtenir l'interface d' [IDebugProgramEx2](../../extensibility/debugger/reference/idebugprogramex2.md) du programme en cours attaché, le SDM appelle la méthode d' [Attach](../../extensibility/debugger/reference/idebugprogramex2-attach.md) .  Cette approche est généralement utilisé pour les programmes lancées à distance par le fournisseur de port.  
+2.  Si le SDM peut obtenir le [IDebugProgramEx2](../../extensibility/debugger/reference/idebugprogramex2.md) de l’interface du programme en cours d’attachement pour les appels SDM le [attacher](../../extensibility/debugger/reference/idebugprogramex2-attach.md) (méthode). Cette approche est généralement utilisée pour les programmes qui ont été lancées à distance par le fournisseur de port.  
   
-3.  Si le programme ne peut pas être attaché via les méthodes d' `IDebugProgramNodeAttach2::OnAttach` ou d' `IDebugProgramEx2::Attach` , les charges de SDM le moteur de débogage \(si ce n'est déjà chargé\) en appelant la fonction de `CoCreateInstance` et appelle ensuite la méthode d' [Attach](../../extensibility/debugger/reference/idebugengine2-attach.md) .  Cette approche est typique pour les programmes s'exécutent localement par un fournisseur de port.  
+3.  Si le programme ne peut pas être connecté via le `IDebugProgramNodeAttach2::OnAttach` ou `IDebugProgramEx2::Attach` méthodes, le SDM charge le moteur de débogage (si pas déjà chargé) en appelant le `CoCreateInstance` (fonction), puis appelle la [attacher](../../extensibility/debugger/reference/idebugengine2-attach.md) (méthode). Cette approche est généralement utilisée pour les programmes lancées localement par un fournisseur de port.  
   
-     Il est également possible qu'un fournisseur de port appelle la méthode d' `IDebugEngine2::Attach` dans l'implémentation personnalisée du fournisseur de port de la méthode d' `IDebugProgramEx2::Attach` .  En général dans ce cas, le fournisseur de port lance le moteur de débogage sur l'ordinateur distant.  
+     Il est également possible pour un fournisseur de port personnalisé appeler le `IDebugEngine2::Attach` méthode dans l’implémentation du fournisseur de port personnalisé de la `IDebugProgramEx2::Attach` (méthode). En général, dans ce cas, le fournisseur de port personnalisé lance le moteur de débogage sur l’ordinateur distant.  
   
- La pièce jointe est réalisée lorsque le gestionnaire de débogage de \(SDM\) session appelle la méthode d' [Attach](../../extensibility/debugger/reference/idebugengine2-attach.md) .  
+ Pièce jointe est atteint lorsque le Gestionnaire de session de débogage (SDM) appelle le [attacher](../../extensibility/debugger/reference/idebugengine2-attach.md) (méthode).  
   
- Si vous exécutez votre De dans le même processus que l'application à déboguer, vous devez implémenter les méthodes suivantes pour [IDebugProgramNode2](../../extensibility/debugger/reference/idebugprogramnode2.md):  
+ Si vous exécutez votre DE dans le même processus que l’application à déboguer, vous devez implémenter les méthodes suivantes de [IDebugProgramNode2](../../extensibility/debugger/reference/idebugprogramnode2.md):  
   
 -   [GetHostName](../../extensibility/debugger/reference/idebugprogramnode2-gethostname.md),  
   
@@ -42,25 +43,25 @@ Après avoir enregistré vos programmes avec le port approprié, vous devez atta
   
 -   [GetProgramName](../../extensibility/debugger/reference/idebugprogramnode2-getprogramname.md)  
   
- Une fois que la méthode d' `IDebugEngine2::Attach` appelée, suivez ces étapes dans votre implémentation de la méthode d' `IDebugEngine2::Attach` :  
+ Après le `IDebugEngine2::Attach` est appelée, procédez comme suit dans votre implémentation de la `IDebugEngine2::Attach` méthode :  
   
-1.  envoyez un objet événement d' [IDebugEngineCreateEvent2](../../extensibility/debugger/reference/idebugenginecreateevent2.md) au SDM.  Pour plus d'informations, consultez [L'envoi d'événements](../../extensibility/debugger/sending-events.md).  
+1.  Envoyer un [IDebugEngineCreateEvent2](../../extensibility/debugger/reference/idebugenginecreateevent2.md) objet d’événement pour le SDM. Pour plus d’informations, consultez [envoyer des événements](../../extensibility/debugger/sending-events.md).  
   
-2.  Appelez la méthode d' [GetProgramId](../../extensibility/debugger/reference/idebugprogram2-getprogramid.md) sur l'objet d' [IDebugProgram2](../../extensibility/debugger/reference/idebugprogram2.md) passé à la méthode d' `IDebugEngine2::Attach` .  
+2.  Appelez le [GetProgramId](../../extensibility/debugger/reference/idebugprogram2-getprogramid.md) méthode sur le [IDebugProgram2](../../extensibility/debugger/reference/idebugprogram2.md) objet qui a été passé à la `IDebugEngine2::Attach` (méthode).  
   
-     Retourne `GUID` utilisé pour identifier le programme.  `GUID` doit être stocké dans l'objet qui représente le programme local au De, et il doit être retourné lorsque la méthode d' `IDebugProgram2::GetProgramId` est appelée sur l'interface d' `IDebugProgram2` .  
-  
-    > [!NOTE]
-    >  si vous implémentez l'interface d' `IDebugProgramNodeAttach2` , `GUID` du programme est passé à la méthode d' `IDebugProgramNodeAttach2::OnAttach` .  cet `GUID` est utilisé pour `GUID` du programme retourné par la méthode d' `IDebugProgram2::GetProgramId` .  
-  
-3.  envoyez un objet événement d' [IDebugProgramCreateEvent2](../../extensibility/debugger/reference/idebugprogramcreateevent2.md) pour informer le SDM que l'objet local d' `IDebugProgram2` a été créé pour représenter le programme au De.  Pour plus d'informations, consultez [L'envoi d'événements](../../extensibility/debugger/sending-events.md).  
+     Cette opération retourne un `GUID` qui est utilisé pour identifier le programme. Le `GUID` doivent être stockées dans l’objet que représente l’ordinateur local du programme pour le DE, et il doit être retourné lorsque le `IDebugProgram2::GetProgramId` méthode est appelée sur le `IDebugProgram2` interface.  
   
     > [!NOTE]
-    >  Ce n'est pas le même objet d' `IDebugProgram2` qui a été passé à la méthode d' `IDebugEngine2::Attach` .  L'objet précédemment passé d' `IDebugProgram2` est identifié par le port uniquement et est un objet distinct.  
+    >  Si vous implémentez le `IDebugProgramNodeAttach2` interface du programme `GUID` est passé à la `IDebugProgramNodeAttach2::OnAttach` (méthode). Cela `GUID` est utilisé pour le programme `GUID` retournée par le `IDebugProgram2::GetProgramId` (méthode).  
   
-## Voir aussi  
- [Basé sur le lancement de pièce jointe](../../extensibility/debugger/launch-based-attachment.md)   
- [L'envoi d'événements](../../extensibility/debugger/sending-events.md)   
+3.  Envoyer un [IDebugProgramCreateEvent2](../../extensibility/debugger/reference/idebugprogramcreateevent2.md) objet d’événement pour avertir le SDM qui local `IDebugProgram2` objet a été créé pour représenter le programme à le DE. Pour plus d’informations, consultez [envoyer des événements](../../extensibility/debugger/sending-events.md).  
+  
+    > [!NOTE]
+    >  Cela n’est pas le même `IDebugProgram2` objet qui a été passée dans le `IDebugEngine2::Attach` (méthode). Précédemment passé `IDebugProgram2` objet n’est reconnu par le port uniquement et est un objet distinct.  
+  
+## <a name="see-also"></a>Voir aussi  
+ [Pièce jointe de lancement](../../extensibility/debugger/launch-based-attachment.md)   
+ [Envoi d’événements](../../extensibility/debugger/sending-events.md)   
  [LaunchSuspended](../../extensibility/debugger/reference/idebugenginelaunch2-launchsuspended.md)   
  [IDebugProgram2](../../extensibility/debugger/reference/idebugprogram2.md)   
  [IDebugProgramCreateEvent2](../../extensibility/debugger/reference/idebugprogramcreateevent2.md)   
@@ -69,5 +70,5 @@ Après avoir enregistré vos programmes avec le port approprié, vous devez atta
  [IDebugProgramNode2](../../extensibility/debugger/reference/idebugprogramnode2.md)   
  [GetProgramId](../../extensibility/debugger/reference/idebugprogram2-getprogramid.md)   
  [IDebugProgramEx2](../../extensibility/debugger/reference/idebugprogramex2.md)   
- [Attach](../../extensibility/debugger/reference/idebugprogramex2-attach.md)   
- [Attach](../../extensibility/debugger/reference/idebugengine2-attach.md)
+ [Joindre](../../extensibility/debugger/reference/idebugprogramex2-attach.md)   
+ [Attacher](../../extensibility/debugger/reference/idebugengine2-attach.md)

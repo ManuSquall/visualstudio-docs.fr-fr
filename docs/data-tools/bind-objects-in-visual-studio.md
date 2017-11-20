@@ -1,5 +1,5 @@
 ---
-title: Bind objects in Visual Studio | Microsoft Docs
+title: Lier des objets dans Visual Studio | Documents Microsoft
 ms.custom: 
 ms.date: 11/04/2016
 ms.reviewer: 
@@ -15,140 +15,131 @@ helpviewer_keywords:
 - object binding
 - binding, to objects
 ms.assetid: ed743ce6-73af-45e5-a8ff-045eddaccc86
-caps.latest.revision: 20
+caps.latest.revision: "20"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-translation.priority.ht:
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- ru-ru
-- zh-cn
-- zh-tw
-translation.priority.mt:
-- cs-cz
-- pl-pl
-- pt-br
-- tr-tr
-ms.translationtype: HT
-ms.sourcegitcommit: 33a857c2d8585e2e8da9bcd9158190366a3b6830
-ms.openlocfilehash: dbf43729b5910a0f365f4ce2a636c898fb80adbc
-ms.contentlocale: fr-fr
-ms.lasthandoff: 09/07/2017
-
+ms.technology: vs-data-tools
+ms.openlocfilehash: 9f410fdfea8a241b10cbab621dbd781d3648a080
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: fr-FR
+ms.lasthandoff: 10/31/2017
 ---
-# <a name="bind-objects-in-visual-studio"></a>Bind objects in Visual Studio
-Visual Studio provides design-time tools for working with custom objects as the data source in your application. When you want to store data from a database in an object that you bind to UI controls, the recommended approach is to use Entity Framework to generate the class or classes. Entity Framework auto-generates all the boilerplate change-tracking code, which means that any changes to the local objects are automatically persisted to the database when you call AcceptChanges on the DbSet object. For more information, see [Entity Framework Documentation](https://ef.readthedocs.org/en/latest/).  
+# <a name="bind-objects-in-visual-studio"></a>Lier des objets dans Visual Studio
+Visual Studio fournit des outils de conception pour travailler avec des objets personnalisés en tant que source de données dans votre application. Lorsque vous souhaitez stocker les données d’une base de données dans un objet que vous liez aux contrôles d’interface utilisateur, l’approche recommandée consiste à utiliser Entity Framework pour générer l’ou les classes. Entity Framework génère automatiquement les tous les le suivi des modifications de code réutilisable, ce qui signifie que les modifications apportées aux objets locaux sont automatiquement conservées dans la base de données lorsque vous appelez AcceptChanges sur l’objet DbSet. Pour plus d’informations, consultez [Documentation d’Entity Framework](https://ef.readthedocs.org/en/latest/).  
   
 > [!TIP]
->  The approaches to object binding in this article should only be considered if your application is already based on datasets.These approaches can also be used if you are already familiar with datasets, and the data you will be processing is tabular and not too complex or too big. For an even simpler example, involving loading data directly into objects by using a DataReader and manually updating the UI without databinding, see [Create a simple data application by using ADO.NET](../data-tools/create-a-simple-data-application-by-using-adonet.md).  
+>  Les approches de liaison d’objet dans cet article doivent être considérés uniquement si votre application est déjà basée sur des groupes de données. Ces approches peuvent également servir si vous êtes déjà familiarisé avec les jeux de données et les données que vous allez traiter sont tabulaire et pas trop complexe ou trop grande. Pour obtenir un exemple encore plus simple, impliquant le chargement des données directement dans des objets à l’aide d’un DataReader et de mise à jour manuelle de l’interface utilisateur sans liaison de données, consultez [créer une application de données simple à l’aide d’ADO.NET](../data-tools/create-a-simple-data-application-by-using-adonet.md).  
   
-## <a name="object-requirements"></a>Object requirements  
- The only requirement for custom objects to work with the data design tools in Visual Studio is that the object needs at least one public property.  
+## <a name="object-requirements"></a>Configuration requise d’objet  
+ La seule exigence pour les objets personnalisés à utiliser les données des outils de conception dans Visual Studio est que l’objet doit au moins une propriété publique.  
   
- Generally, custom objects do not require any specific interfaces, constructors, or attributes to act as a data source for an application. However, if you want to drag the object from the **Data Sources** window to a design surface to create a data-bound control, and if the object implements the <xref:System.ComponentModel.ITypedList> or <xref:System.ComponentModel.IListSource> interface, the object must have a default constructor. Otherwise, Visual Studio cannot instantiate the data source object, and it displays an error when you drag the item to the design surface.  
+ En règle générale, les objets personnalisés ne nécessitent pas toutes les interfaces spécifiques, constructeurs ou attributs en tant que source de données pour une application. Toutefois, si vous souhaitez faire glisser l’objet à partir de la **des Sources de données** fenêtre à une aire de conception pour créer un contrôle lié aux données, et si l’objet implémente le <xref:System.ComponentModel.ITypedList> ou <xref:System.ComponentModel.IListSource> interface, l’objet doit avoir une valeur par défaut constructeur. Sinon, Visual Studio ne peut pas instancier l’objet de source de données, et une erreur s’affiche lorsque vous faites glisser l’élément vers l’aire de conception.  
   
-## <a name="examples-of-using-custom-objects-as-data-sources"></a>Examples of using custom objects as data sources  
- While there are countless ways to implement your application logic when working with objects as a data source, for SQL databases there are a few standard operations that can be simplified by using the Visual Studio-generated TableAdapter objects. This page explains how to implement these standard processes using TableAdapters.It is not intended as a guide for creating your custom objects. For example, you will typically perform the following standard operations regardless of the specific implementation of your objects, or application's logic:  
+## <a name="examples-of-using-custom-objects-as-data-sources"></a>Exemples d’utilisation des objets personnalisés comme sources de données  
+ S’il existe de nombreuses façons pour implémenter votre logique d’application lorsque vous travaillez avec des objets comme source de données, il les bases de données sont quelques opérations standard qui peuvent être simplifiées en utilisant les objets TableAdapter générés de Visual Studio pour SQL. Cette page explique comment implémenter ces processus standards à l’aide de TableAdapters.It ne vise pas comme guide pour la création de vos objets personnalisés. Par exemple, vous allez généralement effectuer les opérations standards suivantes indépendamment de l’implémentation spécifique de vos objets, ou la logique de l’application :  
   
--   Loading data into objects (typically from a database).  
+-   Le chargement des données dans des objets (généralement à partir d’une base de données).  
   
--   Creating a typed collection of objects.  
+-   Création d’une collection typée d’objets.  
   
--   Adding objects to and removing objects from a collection.  
+-   Ajout et suppression d’une collection d’objets.  
   
--   Displaying the object data to users on a form.  
+-   Afficher les données d’objet aux utilisateurs sur un formulaire.  
   
--   Changing/editing the data in an object.  
+-   Modification des données dans un objet.  
   
--   Saving data from objects back to the database.   
+-   Enregistrer les données à partir des objets dans la base de données.   
   
-### <a name="load-data-into-objects"></a>Load data into objects  
- For this example, you load data into your objects by using TableAdapters. By default, TableAdapters are created with two kinds of methods that fetch data from a database and populate data tables.  
+### <a name="load-data-into-objects"></a>Charger des données dans des objets  
+ Pour cet exemple, vous chargez des données dans vos objets à l’aide de TableAdapters. Par défaut, les TableAdapters sont créés avec deux types de méthodes pour extraire des données à partir d’une base de données et remplissent les tables de données.  
   
--   The `TableAdapter.Fill` method fills an existing data table with the data returned.  
+-   Le `TableAdapter.Fill` méthode remplit une table de données existante avec les données retournées.  
   
--   The `TableAdapter.GetData` method returns a new data table populated with data.  
+-   Le `TableAdapter.GetData` méthode retourne une nouvelle table de données remplie avec les données.  
   
- The easiest way to load your custom objects with data is to call the `TableAdapter.GetData` method, loop through the collection of rows in the returned data table, and populate each object with the values in each row. You can create a `GetData` method that returns a populated data table for any query added to a TableAdapter.  
-  
-> [!NOTE]
->  Visual Studio names the TableAdapter queries `Fill` and `GetData` by default, but those names can be changed to any valid method name.  
-  
- The following example shows how to loop through the rows in a data table, and populate an object with data:  
-  
- [!code-csharp[VbRaddataConnecting#4](../data-tools/codesnippet/CSharp/bind-objects-in-visual-studio_1.cs)] [!code-vb[VbRaddataConnecting#4](../data-tools/codesnippet/VisualBasic/bind-objects-in-visual-studio_1.vb)]  
-  
-### <a name="create-a-typed-collection-of-objects"></a>Create a typed collection of objects  
- You can create collection classes for your objects, or use the typed collections that are automatically provided by the [BindingSource Component](/dotnet/framework/winforms/controls/bindingsource-component).  
-  
- When you are creating a custom collection class for objects, we suggest that you inherit from <xref:System.ComponentModel.BindingList%601>. This generic class provides functionality to administer your collection, as well as the ability to raise events that send notifications to the data-binding infrastructure in Windows Forms.  
-  
- The automatically-generated collection in the <xref:System.Windows.Forms.BindingSource> uses a <xref:System.ComponentModel.BindingList%601> for its typed collection. If your application does not require additional functionality, then you can maintain your collection within the <xref:System.Windows.Forms.BindingSource>. For more information, see the <xref:System.Windows.Forms.BindingSource.List%2A> property of the <xref:System.Windows.Forms.BindingSource> class.  
+ Pour charger vos objets personnalisés avec des données le plus simple consiste à appeler la `TableAdapter.GetData` méthode, parcourez la collection de lignes dans la table de données retournée et remplir chaque objet avec les valeurs dans chaque ligne. Vous pouvez créer un `GetData` méthode qui retourne une table de données remplie pour toute requête ajoutée à un TableAdapter.  
   
 > [!NOTE]
->  If your collection requires functionality not provided by the base implementation of the <xref:System.ComponentModel.BindingList%601>, you should create a custom collection so you can add to the class as needed.  
+>  Visual Studio nomme les requêtes TableAdapter `Fill` et `GetData` par défaut, mais ces noms peuvent être modifiés à n’importe quel nom de méthode valide.  
   
- The following code shows how to create the class for a strongly-typed collection of `Order` objects:  
+ L’exemple suivant montre comment parcourir les lignes dans une table de données et remplir un objet avec les données :  
   
- [!code-csharp[VbRaddataConnecting#8](../data-tools/codesnippet/CSharp/bind-objects-in-visual-studio_2.cs)] [!code-vb[VbRaddataConnecting#8](../data-tools/codesnippet/VisualBasic/bind-objects-in-visual-studio_2.vb)]  
+ [!code-csharp[VbRaddataConnecting#4](../data-tools/codesnippet/CSharp/bind-objects-in-visual-studio_1.cs)]
+ [!code-vb[VbRaddataConnecting#4](../data-tools/codesnippet/VisualBasic/bind-objects-in-visual-studio_1.vb)]  
   
-### <a name="add-objects-to-a-collection"></a>Add objects to a collection  
- You add objects to a collection by calling the `Add` method of your custom collection class or of the <xref:System.Windows.Forms.BindingSource>.  
+### <a name="create-a-typed-collection-of-objects"></a>Créer une collection typée d’objets  
+ Vous pouvez créer des classes de collection pour vos objets, ou utiliser les collections typées qui sont fournies automatiquement par le [composant BindingSource](/dotnet/framework/winforms/controls/bindingsource-component).  
+  
+ Lorsque vous créez une classe de collection pour les objets, nous vous suggérons de que vous héritez de <xref:System.ComponentModel.BindingList%601>. Cette classe générique fournit les fonctionnalités permettant d’administrer votre collection, ainsi que la possibilité de déclencher des événements qui envoient des notifications à l’infrastructure de liaison de données dans les Windows Forms.  
+  
+ La collection générée automatiquement dans le <xref:System.Windows.Forms.BindingSource> utilise un <xref:System.ComponentModel.BindingList%601> pour sa collection typée. Si votre application ne nécessite pas de fonctionnalités supplémentaires, vous pouvez conserver votre collection dans le <xref:System.Windows.Forms.BindingSource>. Pour plus d’informations, consultez la <xref:System.Windows.Forms.BindingSource.List%2A> propriété de la <xref:System.Windows.Forms.BindingSource> classe.  
+  
+> [!NOTE]
+>  Si votre collection requiert des fonctionnalités non fournies par l’implémentation de base de la <xref:System.ComponentModel.BindingList%601>, vous devez créer une collection personnalisée qui vous pouvez d’ajouter à la classe en fonction des besoins.  
+  
+ Le code suivant montre comment créer la classe pour une collection fortement typée de `Order` objets :  
+  
+ [!code-csharp[VbRaddataConnecting#8](../data-tools/codesnippet/CSharp/bind-objects-in-visual-studio_2.cs)]
+ [!code-vb[VbRaddataConnecting#8](../data-tools/codesnippet/VisualBasic/bind-objects-in-visual-studio_2.vb)]  
+  
+### <a name="add-objects-to-a-collection"></a>Ajouter des objets à une collection  
+ Ajouter des objets à une collection en appelant le `Add` méthode de votre classe de collection personnalisée ou de la <xref:System.Windows.Forms.BindingSource>.  
   
  
 > [!NOTE]
->  The `Add` method is automatically provided for your custom collection when you inherit from <xref:System.ComponentModel.BindingList%601>.  
+>  Le `Add` méthode est fournie automatiquement pour votre collection personnalisée lorsque vous héritez <xref:System.ComponentModel.BindingList%601>.  
   
- The following code shows how to add objects to the typed collection in a <xref:System.Windows.Forms.BindingSource>:  
+ Le code suivant montre comment ajouter des objets à la collection typée dans un <xref:System.Windows.Forms.BindingSource>:  
   
- [!code-csharp[VbRaddataConnecting#5](../data-tools/codesnippet/CSharp/bind-objects-in-visual-studio_3.cs)] [!code-vb[VbRaddataConnecting#5](../data-tools/codesnippet/VisualBasic/bind-objects-in-visual-studio_3.vb)]  
+ [!code-csharp[VbRaddataConnecting#5](../data-tools/codesnippet/CSharp/bind-objects-in-visual-studio_3.cs)]
+ [!code-vb[VbRaddataConnecting#5](../data-tools/codesnippet/VisualBasic/bind-objects-in-visual-studio_3.vb)]  
   
- The following code shows how to add objects to a typed collection that inherits from <xref:System.ComponentModel.BindingList%601>:  
-  
-> [!NOTE]
->  In this example the `Orders` collection is a property of the `Customer` object.  
-  
- [!code-csharp[VbRaddataConnecting#6](../data-tools/codesnippet/CSharp/bind-objects-in-visual-studio_4.cs)] [!code-vb[VbRaddataConnecting#6](../data-tools/codesnippet/VisualBasic/bind-objects-in-visual-studio_4.vb)]  
-  
-### <a name="remove-objects-from-a-collection"></a>Remove objects from a collection  
- You remove objects from a collection by calling the `Remove` or `RemoveAt` method of your custom collection class or of <xref:System.Windows.Forms.BindingSource>.  
+ Le code suivant montre comment ajouter des objets à une collection typée qui hérite de <xref:System.ComponentModel.BindingList%601>:  
   
 > [!NOTE]
->  The `Remove` and `RemoveAt` methods are automatically provided for your custom collection when you inherit from <xref:System.ComponentModel.BindingList%601>.  
+>  Dans cet exemple la `Orders` collection est une propriété de la `Customer` objet.  
   
- The following code shows how to locate and remove objects from the typed collection in a <xref:System.Windows.Forms.BindingSource> with the <xref:System.Windows.Forms.BindingSource.RemoveAt%2A> method:  
+ [!code-csharp[VbRaddataConnecting#6](../data-tools/codesnippet/CSharp/bind-objects-in-visual-studio_4.cs)]
+ [!code-vb[VbRaddataConnecting#6](../data-tools/codesnippet/VisualBasic/bind-objects-in-visual-studio_4.vb)]  
   
- [!code-csharp[VbRaddataConnecting#7](../data-tools/codesnippet/CSharp/bind-objects-in-visual-studio_5.cs)] [!code-vb[VbRaddataConnecting#7](../data-tools/codesnippet/VisualBasic/bind-objects-in-visual-studio_5.vb)]  
+### <a name="remove-objects-from-a-collection"></a>Supprimer des objets d’une collection  
+ Supprimer des objets d’une collection en appelant le `Remove` ou `RemoveAt` méthode de votre classe de collection personnalisée ou de <xref:System.Windows.Forms.BindingSource>.  
   
-### <a name="display-object-data-to-users"></a>Display object data to users  
- To display the data in objects to users, create an object data source using the **Data Source Configuration** wizard, and then drag the entire object or individual properties onto your form from the **Data Sources** window.  
+> [!NOTE]
+>  Le `Remove` et `RemoveAt` méthodes sont fournies automatiquement pour votre collection personnalisée lorsque vous héritez <xref:System.ComponentModel.BindingList%601>.  
   
-### <a name="modify-the-data-in-objects"></a>Modify the data in objects  
- To edit data in custom objects that are data-bound to Windows Forms controls, simply edit the data in the bound control (or directly in the object's properties). Data-binding architecture updates the data in the object.  
+ Le code suivant montre comment localiser et supprimer des objets de la collection typée dans un <xref:System.Windows.Forms.BindingSource> avec la <xref:System.Windows.Forms.BindingSource.RemoveAt%2A> méthode :  
   
- If your application requires the tracking of changes and the rolling back of proposed changes to their original values, then you must implement this functionality in your object model. For examples of how data tables keep track of proposed changes, see <xref:System.Data.DataRowState>, <xref:System.Data.DataSet.HasChanges%2A>, and <xref:System.Data.DataTable.GetChanges%2A>.  
+ [!code-csharp[VbRaddataConnecting#7](../data-tools/codesnippet/CSharp/bind-objects-in-visual-studio_5.cs)]
+ [!code-vb[VbRaddataConnecting#7](../data-tools/codesnippet/VisualBasic/bind-objects-in-visual-studio_5.vb)]  
   
-### <a name="save-data-in-objects-back-to-the-database"></a>Save data in objects back to the database  
- Save data back to the database by passing the values from your object to the TableAdapter's DBDirect methods.  
+### <a name="display-object-data-to-users"></a>Afficher les données d’objet pour les utilisateurs  
+ Pour afficher les données dans des objets aux utilisateurs, créez une source de données objet à l’aide la **Configuration de Source de données** Assistant, puis faites glisser l’objet entier ou les propriétés individuelles sur votre formulaire à partir de la **des Sources de données**fenêtre.  
   
- Visual Studio creates DBDirect methods that can be executed directly against the database. These methods do not require DataSet or DataTable objects.  
+### <a name="modify-the-data-in-objects"></a>Modifier les données des objets  
+ Pour modifier les données dans des objets personnalisés qui sont liés aux données aux contrôles Windows Forms, modifiez simplement les données dans le contrôle lié (ou directement dans les propriétés de l’objet). Architecture de liaison de données met à jour les données dans l’objet.  
   
-|TableAdapter DBDirect method|Description|  
+ Si votre application nécessite le suivi des modifications et la restauration de modifications proposées à leurs valeurs d’origine, vous devez implémenter cette fonctionnalité dans votre modèle objet. Pour obtenir des exemples de la façon dont les tables de données conserver le suivi des modifications proposées, consultez <xref:System.Data.DataRowState>, <xref:System.Data.DataSet.HasChanges%2A>, et <xref:System.Data.DataTable.GetChanges%2A>.  
+  
+### <a name="save-data-in-objects-back-to-the-database"></a>Enregistrer les données dans des objets à la base de données  
+ Enregistrer des données dans la base de données en passant les valeurs à partir de votre objet à des méthodes DBDirect du TableAdapter.  
+  
+ Visual Studio crée des méthodes DBDirect qui peuvent être exécutées directement sur la base de données. Ces méthodes ne requièrent pas d’objets DataSet ou DataTable.  
+  
+|Méthode DBDirect du TableAdapter|Description|  
 |----------------------------------|-----------------|  
-|`TableAdapter.Insert`|Adds new records to a database, allowing you to pass in individual column values as method parameters.|  
-|`TableAdapter.Update`|Updates existing records in a database. The Update method takes original and new column values as method parameters. The original values are used to locate the original record, and the new values are used to update that record.<br /><br /> The `TableAdapter.Update` method is also used to reconcile changes in a dataset back to the database, by taking a <xref:System.Data.DataSet>, <xref:System.Data.DataTable>, <xref:System.Data.DataRow>, or array of <xref:System.Data.DataRow>s as method parameters.|  
-|`TableAdapter.Delete`|Deletes existing records from the database based on the original column values passed in as method parameters.|  
+|`TableAdapter.Insert`|Ajoute de nouveaux enregistrements à une base de données, ce qui vous permet de passer des valeurs de colonne individuelles comme paramètres de méthode.|  
+|`TableAdapter.Update`|Mises à jour les enregistrements dans une base de données existants. La méthode de mise à jour prend les valeurs d’origine et de la nouvelle colonne comme paramètres de méthode. Les valeurs d’origine sont utilisées pour rechercher l’enregistrement d’origine et les nouvelles valeurs sont utilisées pour mettre à jour cet enregistrement.<br /><br /> Le `TableAdapter.Update` méthode est également utilisée pour rapprocher les modifications dans un jeu de données à la base de données, en prenant un <xref:System.Data.DataSet>, <xref:System.Data.DataTable>, <xref:System.Data.DataRow>, ou un tableau de <xref:System.Data.DataRow>en tant que paramètres de méthode.|  
+|`TableAdapter.Delete`|Supprime les enregistrements existants de la base de données selon les valeurs de colonne d’origine passés en tant que paramètres de méthode.|  
   
- To save data from a collection of objects, loop through the collection of objects (for example, using a for-next loop).Send the values for each object to the database by using the TableAdapter's DBDirect methods.  
+ Pour enregistrer les données à partir d’une collection d’objets, parcourez la collection d’objets (par exemple, à l’aide d’une boucle for next). Envoyer les valeurs pour chaque objet à la base de données à l’aide des méthodes DBDirect du TableAdapter.  
   
- The following example shows how to use the `TableAdapter.Insert` DBDirect method to add a new customer directly into the database:  
+ L’exemple suivant montre comment utiliser la `TableAdapter.Insert` méthode DBDirect pour ajouter un nouveau client directement dans la base de données :  
   
- [!code-csharp[VbRaddataSaving#23](../data-tools/codesnippet/CSharp/bind-objects-in-visual-studio_6.cs)] [!code-vb[VbRaddataSaving#23](../data-tools/codesnippet/VisualBasic/bind-objects-in-visual-studio_6.vb)]  
+ [!code-csharp[VbRaddataSaving#23](../data-tools/codesnippet/CSharp/bind-objects-in-visual-studio_6.cs)]
+ [!code-vb[VbRaddataSaving#23](../data-tools/codesnippet/VisualBasic/bind-objects-in-visual-studio_6.vb)]  
   
-## <a name="see-also"></a>See Also  
- [Bind controls to data in Visual Studio](../data-tools/bind-controls-to-data-in-visual-studio.md)
+## <a name="see-also"></a>Voir aussi  
+ [Lier des contrôles à des données dans Visual Studio](../data-tools/bind-controls-to-data-in-visual-studio.md)

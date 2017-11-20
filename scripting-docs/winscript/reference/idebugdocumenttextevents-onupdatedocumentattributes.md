@@ -1,27 +1,30 @@
 ---
-title: "IDebugDocumentTextEvents::onUpdateDocumentAttributes | Microsoft Docs"
-ms.custom: ""
-ms.date: "01/18/2017"
-ms.prod: "windows-script-interfaces"
-ms.reviewer: ""
-ms.suite: ""
-ms.tgt_pltfrm: ""
-ms.topic: "reference"
+title: IDebugDocumentTextEvents::onUpdateDocumentAttributes | Documents Microsoft
+ms.custom: 
+ms.date: 01/18/2017
+ms.prod: windows-script-interfaces
+ms.reviewer: 
+ms.suite: 
+ms.tgt_pltfrm: 
+ms.topic: reference
 apiname: IDebugDocumentTextEvents.onUpdateDocumentAttributes
 apilocation: scrobj.dll
-helpviewer_keywords: 
-  - "IDebugDocumentTextEvents::onUpdateDocumentAttributes"
+helpviewer_keywords: IDebugDocumentTextEvents::onUpdateDocumentAttributes
 ms.assetid: 48fa909c-14c2-4ca4-af86-a5809c72dd39
-caps.latest.revision: 8
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 8
+caps.latest.revision: "8"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: ef9313f612d539e3068c2dd4bb20eb5d343fc53b
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.translationtype: MT
+ms.contentlocale: fr-FR
+ms.lasthandoff: 10/27/2017
 ---
-# IDebugDocumentTextEvents::onUpdateDocumentAttributes
-Indique que les attributs de document ont changé.  
+# <a name="idebugdocumenttexteventsonupdatedocumentattributes"></a>IDebugDocumentTextEvents::onUpdateDocumentAttributes
+Indique que les attributs du document modifié.  
   
-## Syntaxe  
+## <a name="syntax"></a>Syntaxe  
   
 ```  
 HRESULT onUpdateDocumentAttributes(  
@@ -29,20 +32,20 @@ HRESULT onUpdateDocumentAttributes(
 );  
 ```  
   
-#### Paramètres  
+#### <a name="parameters"></a>Paramètres  
  `textdocattr`  
- \[in\]  Les attributs de document.  
+ [in] Les nouveaux attributs de document.  
   
-## Valeur de retour  
- La méthode retourne `HRESULT`.  Les valeurs possibles incluent, mais ne sont pas limitées à, celles dans le tableau suivant.  
+## <a name="return-value"></a>Valeur de retour  
+ La méthode retourne `HRESULT`. Les valeurs possibles sont notamment celles figurant dans le tableau suivant.  
   
 |Valeur|Description|  
-|------------|-----------------|  
+|-----------|-----------------|  
 |`S_OK`|La méthode a réussi.|  
   
-## Notes  
- Cette méthode indique que les attributs de document ont changé.  
+## <a name="remarks"></a>Remarques  
+ Cette méthode indique que les attributs du document ont été modifiés.  
   
-## Voir aussi  
- [IDebugDocumentTextEvents, interface](../../winscript/reference/idebugdocumenttextevents-interface.md)   
- [TEXT\_DOC\_ATTR, constantes](../../winscript/reference/text-doc-attr-constants.md)
+## <a name="see-also"></a>Voir aussi  
+ [IDebugDocumentTextEvents (Interface)](../../winscript/reference/idebugdocumenttextevents-interface.md)   
+ [Constantes TEXT_DOC_ATTR](../../winscript/reference/text-doc-attr-constants.md)

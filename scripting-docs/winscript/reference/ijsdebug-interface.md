@@ -1,38 +1,42 @@
 ---
-title: "IJsDebug, interface | Microsoft Docs"
-ms.custom: ""
-ms.date: "01/18/2017"
-ms.prod: "windows-script-interfaces"
-ms.reviewer: ""
-ms.suite: ""
-ms.tgt_pltfrm: ""
-ms.topic: "reference"
+title: Ijsdebug, Interface | Documents Microsoft
+ms.custom: 
+ms.date: 01/18/2017
+ms.prod: windows-script-interfaces
+ms.reviewer: 
+ms.suite: 
+ms.tgt_pltfrm: 
+ms.topic: reference
 ms.assetid: 14abc47b-8a1f-489f-84f2-7d5558c5d921
-caps.latest.revision: 4
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 4
+caps.latest.revision: "4"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: 724036182638dbe3d253730c42e835250e6eaa33
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.translationtype: MT
+ms.contentlocale: fr-FR
+ms.lasthandoff: 10/27/2017
 ---
-# IJsDebug, interface
-Point d'entrée pour le débogage JavaScript.  
+# <a name="ijsdebug-interface"></a>IJsDebug, interface
+Point d’entrée pour le débogage de JavaScript.  
   
-## Syntaxe  
+## <a name="syntax"></a>Syntaxe  
   
 ```  
 IJsDebug : public IUnknown;  
 ```  
   
-## Membres  
+## <a name="members"></a>Membres  
   
-### Méthodes publiques  
+### <a name="public-methods"></a>M&#233;thodes publiques  
   
 |Nom|Description|  
-|---------|-----------------|  
-|[IJsDebug::OpenVirtualProcess, méthode](../../winscript/reference/ijsdebug-openvirtualprocess-method.md)|Méthode de fabrique utilisée pour créer un objet processus virtuel.|  
+|----------|-----------------|  
+|[Méthode IJsDebug::OpenVirtualProcess](../../winscript/reference/ijsdebug-openvirtualprocess-method.md)|Méthode de fabrique utilisé pour créer un nouvel objet de processus virtuel.|  
   
-## Configuration requise  
- **En\-tête :** jscript9diag.h  
+## <a name="requirements"></a>Spécifications  
+ **En-tête :** jscript9diag.h  
   
-## Voir aussi  
- [Interfaces Windows Script, référence](../../winscript/reference/windows-script-interfaces-reference.md)
+## <a name="see-also"></a>Voir aussi  
+ [Référence d’interfaces de script Windows](../../winscript/reference/windows-script-interfaces-reference.md)

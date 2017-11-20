@@ -1,45 +1,30 @@
 ---
-title: IDebugArrayObject2::HasBaseIndices | Microsoft Docs
+title: IDebugArrayObject2::HasBaseIndices | Documents Microsoft
 ms.custom: 
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-sdk
+ms.technology: vs-ide-sdk
 ms.tgt_pltfrm: 
 ms.topic: article
 helpviewer_keywords:
 - HasBaseIndices
 - IDebugArrayObject2::HasBaseIndices
 ms.assetid: 51a5d145-ea53-422c-b5cf-c800cf64b8e6
-caps.latest.revision: 9
+caps.latest.revision: "9"
+author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-translation.priority.mt:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
+ms.openlocfilehash: cf293eacb64fdee5790ff9b87d2e3afcfccc8f2d
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
 ms.translationtype: MT
-ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
-ms.openlocfilehash: 6100a72aadbdc1dcee82d1b43e1394cd204d5b0f
-ms.contentlocale: fr-fr
-ms.lasthandoff: 08/28/2017
-
+ms.contentlocale: fr-FR
+ms.lasthandoff: 10/31/2017
 ---
 # <a name="idebugarrayobject2hasbaseindices"></a>IDebugArrayObject2::HasBaseIndices
-Determines if the array has base indices (lower bounds) defined.  
+Détermine si le tableau comporte des index de base (limites inférieures) défini.  
   
-## <a name="syntax"></a>Syntax  
+## <a name="syntax"></a>Syntaxe  
   
 ```cpp  
 HRESULT HasBaseIndices (  
@@ -53,9 +38,9 @@ int HasBaseIndices (
 );  
 ```  
   
-#### <a name="parameters"></a>Parameters  
+#### <a name="parameters"></a>Paramètres  
  `pfHasBaseIndices`  
- [out] TRUE to specify that the array has base indices (lower bounds); otherwise, FALSE.  
+ [out] TRUE pour spécifier que le tableau possède des index de base (limites inférieures) ; Sinon, FALSE.  
   
-## <a name="return-value"></a>Return Value  
- If successful, returns `S_OK`; otherwise, returns an error code.
+## <a name="return-value"></a>Valeur de retour  
+ En cas de réussite, retourne `S_OK`; sinon, retourne un code d’erreur.

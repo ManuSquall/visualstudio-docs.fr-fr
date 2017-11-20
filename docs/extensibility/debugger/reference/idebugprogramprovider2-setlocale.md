@@ -1,46 +1,29 @@
 ---
-title: IDebugProgramProvider2::SetLocale | Microsoft Docs
+title: IDebugProgramProvider2::SetLocale | Documents Microsoft
 ms.custom: 
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-sdk
+ms.technology: vs-ide-sdk
 ms.tgt_pltfrm: 
 ms.topic: article
-f1_keywords:
-- IDebugProgramProvider2::SetLocale
-helpviewer_keywords:
-- IDebugProgramProvider2::SetLocale
+f1_keywords: IDebugProgramProvider2::SetLocale
+helpviewer_keywords: IDebugProgramProvider2::SetLocale
 ms.assetid: b41d20a7-ba40-4c42-a450-16f413d6a04f
-caps.latest.revision: 11
+caps.latest.revision: "11"
+author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-translation.priority.mt:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
+ms.openlocfilehash: 2698352928158bf42ec52925eeeed14fa5475530
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
 ms.translationtype: MT
-ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
-ms.openlocfilehash: cdf04823a35a09ed6c9dfa08864c39548a57696f
-ms.contentlocale: fr-fr
-ms.lasthandoff: 08/28/2017
-
+ms.contentlocale: fr-FR
+ms.lasthandoff: 10/31/2017
 ---
 # <a name="idebugprogramprovider2setlocale"></a>IDebugProgramProvider2::SetLocale
-Establishes a locale to be used for any locale-specific resources.  
+Établit les paramètres régionaux à utiliser pour toutes les ressources spécifiques aux paramètres régionaux.  
   
-## <a name="syntax"></a>Syntax  
+## <a name="syntax"></a>Syntaxe  
   
 ```cpp  
 HRESULT SetLocale(  
@@ -54,12 +37,12 @@ int SetLocale(
 );  
 ```  
   
-#### <a name="parameters"></a>Parameters  
+#### <a name="parameters"></a>Paramètres  
  `wLangID`  
- [in] Language ID to establish. For example, 1033 for English.  
+ [in] ID de langue pour établir. Par exemple, 1033 pour l’anglais.  
   
-## <a name="return-value"></a>Return Value  
- If successful, returns `S_OK`; otherwise, returns an error code.  
+## <a name="return-value"></a>Valeur de retour  
+ En cas de réussite, retourne `S_OK`; sinon, retourne un code d’erreur.  
   
-## <a name="see-also"></a>See Also  
+## <a name="see-also"></a>Voir aussi  
  [IDebugProgramProvider2](../../../extensibility/debugger/reference/idebugprogramprovider2.md)

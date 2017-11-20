@@ -1,46 +1,29 @@
 ---
-title: BP_RES_DATA_FLAGS | Microsoft Docs
+title: BP_RES_DATA_FLAGS | Documents Microsoft
 ms.custom: 
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-sdk
+ms.technology: vs-ide-sdk
 ms.tgt_pltfrm: 
 ms.topic: article
-f1_keywords:
-- BP_RES_DATA_FLAGS
-helpviewer_keywords:
-- BP_RES_DATA_FLAGS enumeration
+f1_keywords: BP_RES_DATA_FLAGS
+helpviewer_keywords: BP_RES_DATA_FLAGS enumeration
 ms.assetid: d97611e2-def6-45a9-ad7d-eedf2ad4c82b
-caps.latest.revision: 8
+caps.latest.revision: "8"
+author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-translation.priority.mt:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
+ms.openlocfilehash: 89bfe7f92e1260c83803136eeed1bf921c8913c8
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
 ms.translationtype: MT
-ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
-ms.openlocfilehash: 96e32e1265e2cab302253c05d90dcca70cc74df9
-ms.contentlocale: fr-fr
-ms.lasthandoff: 08/28/2017
-
+ms.contentlocale: fr-FR
+ms.lasthandoff: 10/31/2017
 ---
 # <a name="bpresdataflags"></a>BP_RES_DATA_FLAGS
-Specifies whether the data breakpoint is being emulated or implemented in hardware.  
+Spécifie si le point d’arrêt émulée ou implémenté par le matériel.  
   
-## <a name="syntax"></a>Syntax  
+## <a name="syntax"></a>Syntaxe  
   
 ```cpp  
 enum enum_BP_RES_DATA_FLAGS {   
@@ -55,20 +38,20 @@ public enum enum_BP_RES_DATA_FLAGS {
 };  
 ```  
   
-## <a name="members"></a>Members  
+## <a name="members"></a>Membres  
  BP_RES_DATA_EMULATED  
- Specifies that the data breakpoint is being emulated.  
+ Spécifie que le point d’arrêt est émulée.  
   
-## <a name="remarks"></a>Remarks  
- Used for the `dwFlags` member of the [BP_RESOLUTION_DATA](../../../extensibility/debugger/reference/bp-resolution-data.md) structure.  
+## <a name="remarks"></a>Remarques  
+ Utilisé pour le `dwFlags` membre de la [BP_RESOLUTION_DATA](../../../extensibility/debugger/reference/bp-resolution-data.md) structure.  
   
-## <a name="requirements"></a>Requirements  
- Header: msdbg.h  
+## <a name="requirements"></a>Spécifications  
+ En-tête : msdbg.h  
   
- Namespace: Microsoft.VisualStudio.Debugger.Interop  
+ Namespace : Microsoft.VisualStudio.Debugger.Interop  
   
- Assembly: Microsoft.VisualStudio.Debugger.Interop.dll  
+ Assembly : Microsoft.VisualStudio.Debugger.Interop.dll  
   
-## <a name="see-also"></a>See Also  
- [Enumerations](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)   
+## <a name="see-also"></a>Voir aussi  
+ [Énumérations](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)   
  [BP_RESOLUTION_DATA](../../../extensibility/debugger/reference/bp-resolution-data.md)

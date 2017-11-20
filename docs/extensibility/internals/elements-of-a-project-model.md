@@ -1,51 +1,53 @@
 ---
-title: "&#201;l&#233;ments d&#39;un mod&#232;le de projet | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-helpviewer_keywords: 
-  - "projets (Visual Studio SDK), mise en œuvre"
-  - "modèles de projet"
-  - "projets (Visual Studio SDK), éléments"
+title: "Éléments d’un modèle de projet | Documents Microsoft"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+helpviewer_keywords:
+- projects [Visual Studio SDK], implementation considerations
+- project models
+- projects [Visual Studio SDK], elements
 ms.assetid: a1dbe0dc-68da-45d7-8704-5b43ff7e4fc4
-caps.latest.revision: 18
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 18
+caps.latest.revision: "18"
+author: gregvanl
+ms.author: gregvanl
+manager: ghogen
+ms.openlocfilehash: 689fac97264aad3d301095cffed07b825c723474
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: fr-FR
+ms.lasthandoff: 10/31/2017
 ---
-# &#201;l&#233;ments d&#39;un mod&#232;le de projet
-[!INCLUDE[vs2017banner](../../code-quality/includes/vs2017banner.md)]
-
-Les interfaces et les implémentations de tous les projets dans [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] partagent une structure de base : le modèle de projet pour votre type de projet.  Dans votre modèle de projet, qui est le VSPackage vous développez, vous créez des objets qui sont conformes à vos décisions de conception et travail avec la fonctionnalité globale fournie par l'IDE.  Même si vous permet de contrôler la manière dont un élément de projet est rendu persistant, par exemple, vous ne contrôlez pas de notification qu'un fichier doit être persistant.  Lorsqu'un utilisateur place le focus dans un élément de projet ouvert et choisit **Enregistrer** dans le menu de **Fichier** dans la barre de menus du [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] , le code de votre type de projet doit arrêter la commande de l'IDE, rend le fichier, puis envoie la notification dans l'IDE que le fichier n'est plus modifié.  
+# <a name="elements-of-a-project-model"></a>Éléments d’un modèle de projet
+Les interfaces et les implémentations de tous les projets de [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] partagent une structure de base : le modèle de projet pour votre type de projet. Dans votre modèle de projet, qui est le VSPackage que vous développez, vous créez des objets conformes à vos décisions de conception et de travail ainsi que les fonctionnalités globales fournies par l’IDE. Bien que vous contrôlez la façon dont un élément de projet est persistant, par exemple, vous ne contrôlez pas notification qu’un fichier doit être persistante. Lorsqu’un utilisateur place le focus sur un élément de projet ouvert et choisit **enregistrer** sur la **fichier** menu sur le [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] menu barre, votre code de type de projet doit intercepter la commande à partir de l’IDE, conserver le fichier, et envoyer la notification à l’IDE que le fichier est n’est plus modifié.  
   
- Votre VSPackage interagit avec l'IDE via les services qui fournissent l'accès aux interfaces de l'IDE.  Par exemple, via les services particuliers, vous surveillez et routez des commandes et indiquez les informations de contexte pour les sélections opérées dans le projet.  Toutes les fonctionnalités globale de l'IDE nécessaire pour votre VSPackage est fournie par les services.  Pour plus d'informations sur les services, consultez [Comment : obtenir un Service](../Topic/How%20to:%20Get%20a%20Service.md).  
+ Votre VSPackage interagit avec l’IDE via les services qui fournissent l’accès aux interfaces IDE. Par exemple, par le biais des services particuliers, vous analyse et routage des commandes et fournissez des informations de contexte pour les sélections effectuées dans le projet. Toutes les fonctionnalités IDE globale nécessaire pour votre VSPackage sont fournie par les services. Pour plus d’informations sur les services, consultez [Comment : obtenir un Service](../../extensibility/how-to-get-a-service.md).  
   
- D'autres considérations relatives à l'implémentation :  
+ Autres considérations relatives à la mise en œuvre :  
   
--   Un même modèle de projet peut contenir plusieurs types de projet.  
+-   Un modèle de projet unique peut contenir plusieurs types de projet.  
   
--   Le projet types et les fabriques propres du projet sont stockées indépendamment avec GUID.  
+-   Types de projets et les fabriques de surveillance du projet sont enregistrés indépendamment des GUID.  
   
--   Chaque projet doit avoir un fichier modèle ou un Assistant pour initialiser le nouveau fichier projet lorsqu'un utilisateur crée un projet via [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] interface utilisateur.  Par exemple, les modèles de [!INCLUDE[vcprvc](../../debugger/includes/vcprvc_md.md)] initialisent ce qui passent par la suite les fichiers .vcproj.  
+-   Chaque projet doit avoir un fichier de modèle ou un Assistant pour initialiser le nouveau fichier de projet lorsqu’un utilisateur crée un nouveau projet via la [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] l’interface utilisateur. Par exemple, le [!INCLUDE[vcprvc](../../code-quality/includes/vcprvc_md.md)] modèles initialiser ce que deviennent les fichiers .vcproj.  
   
- L'illustration suivante montre les interfaces principales, les services, et les objets qui composent un mise en ? uvre de projet classique.  Vous pouvez utiliser le programme d'assistance d'application, HierUtil7, créer les objets sous\-jacents et d'autres zones fixes de programmation.  Pour plus d'informations sur le programme d'assistance de l'application HierUtil7, consultez l' [Not in Build: Using HierUtil7 Project Classes to Implement a Project Type \(C\+\+\)](http://msdn.microsoft.com/fr-fr/a5c16a09-94a2-46ef-87b5-35b815e2f346).  
+ L’illustration suivante montre les interfaces principales, les services et les objets qui composent une implémentation d’un projet standard. Vous pouvez utiliser l’Assistant application, HierUtil7, pour créer les objets sous-jacents et les autres réutilisable de programmation. Pour plus d’informations sur l’application d’assistance de HierUtil7 application, consultez [pas dans la Build : utilisation de Classes de projet HierUtil7 pour implémenter un Type de projet (C++)](http://msdn.microsoft.com/en-us/a5c16a09-94a2-46ef-87b5-35b815e2f346).  
   
- ![Graphique de modèle de projet Visual Studio](~/extensibility/internals/media/vsprojectmodel.gif "vsProjectModel")  
+ ![Graphique de Visual Studio projet modèle](../../extensibility/internals/media/vsprojectmodel.gif "vsProjectModel")  
 modèle de projet  
   
- Pour plus d'informations sur les interfaces et les services répertoriés dans le diagramme précédent, et d'autres interfaces facultatives non inclus dans le diagramme, consultez [Composants de modèle de projet](../../extensibility/internals/project-model-core-components.md).  
+ Pour plus d’informations sur les interfaces et les services répertoriés dans le diagramme précédent et les autres interfaces facultatives ne pas inclus dans le diagramme, consultez [composants principaux du modèle de projet](../../extensibility/internals/project-model-core-components.md).  
   
- Les projets peuvent prendre en charge les commandes et doivent par conséquent implémenter l'interface de <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget> de participer aux commandes le routage via le contexte GUID de commande.  
+ Projets peut prendre en charge les commandes et par conséquent doit implémenter la <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget> interface pour participer au routage des commandes via le contexte de la commande GUID.  
   
-## Voir aussi  
+## <a name="see-also"></a>Voir aussi  
  [Liste de vérification : Créer de nouveaux Types de projet](../../extensibility/internals/checklist-creating-new-project-types.md)   
- [Not in Build: Using HierUtil7 Project Classes to Implement a Project Type \(C\+\+\)](http://msdn.microsoft.com/fr-fr/a5c16a09-94a2-46ef-87b5-35b815e2f346)   
+ [Pas dans la génération : à l’aide des Classes de projet HierUtil7 pour implémenter un Type de projet (C++)](http://msdn.microsoft.com/en-us/a5c16a09-94a2-46ef-87b5-35b815e2f346)   
  [Composants de modèle de projet](../../extensibility/internals/project-model-core-components.md)   
- [Création d'Instances de projet à l'aide de fabriques de projet](../../extensibility/internals/creating-project-instances-by-using-project-factories.md)   
- [Comment : obtenir un Service](../Topic/How%20to:%20Get%20a%20Service.md)   
- [Création de Types de projets](../../extensibility/internals/creating-project-types.md)
+ [Création d’Instances de projet à l’aide de fabriques de projet](../../extensibility/internals/creating-project-instances-by-using-project-factories.md)   
+ [Comment : obtenir un Service](../../extensibility/how-to-get-a-service.md)   
+ [Création de types de projets](../../extensibility/internals/creating-project-types.md)

@@ -1,34 +1,35 @@
 ---
-title: "Proc&#233;dure&#160;: cr&#233;er un document XML bas&#233; sur un sch&#233;ma XSD | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-general"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+title: "Comment : créer un Document XML basé sur un schéma XSD | Documents Microsoft"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-general
+ms.tgt_pltfrm: 
+ms.topic: article
 ms.assetid: 193b195f-e918-4c79-a1a1-8096a1433bde
-caps.latest.revision: 2
-author: "kempb"
-ms.author: "kempb"
-manager: "ghogen"
-caps.handback.revision: 2
+caps.latest.revision: "2"
+author: gewarren
+ms.author: gewarren
+manager: ghogen
+ms.openlocfilehash: 5d4b4f91a6fb5b85cdd5e9bf6d9f2932c88e6ab7
+ms.sourcegitcommit: c0422a3d594ea5ae8fc03f1aee684b04f417522e
+ms.translationtype: MT
+ms.contentlocale: fr-FR
+ms.lasthandoff: 11/02/2017
 ---
-# Proc&#233;dure&#160;: cr&#233;er un document XML bas&#233; sur un sch&#233;ma XSD
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
-
-La fonctionnalité **Générer un exemple de code XML** génère un exemple de fichier XML basé sur votre fichier de schéma XML \(XSD\).  
+# <a name="how-to-create-an-xml-document-based-on-an-xsd-schema"></a>Procédure : créer un document XML basé sur un schéma XSD
+Le **générer un exemple XML** fonctionnalité génère un exemple de fichier XML en fonction de votre fichier de schéma XML (XSD).  
   
  Vous pouvez utiliser cette option dans les scénarios suivants :  
   
 -   Comprendre l'utilisation des diverses constructions dans votre schéma.  
   
--   Confirmer la finalité du schéma.  
+-   confirmer la finalité du schéma.  
   
- La fonctionnalité **Générer un exemple de code XML** est uniquement disponible sur les éléments globaux et requiert un jeu de schémas XML valide.  
+Le **générer un exemple XML** fonctionnalité est disponible uniquement sur les éléments globaux et requiert un jeu de schémas XML valid.  
   
- En règle générale, cette fonctionnalité permet de générer des documents XML valides.Toutefois, si le schéma contient un ou plusieurs des éléments suivants, l'exemple risque de ne pas être valide :  
+En règle générale, cette fonctionnalité permet de générer des documents XML valides. Toutefois, si le schéma contient un ou plusieurs des éléments suivants, l'exemple risque de ne pas être valide :  
   
 -   Contraintes d'identité `xs:key`, `xs:keyref` et `xs:unique`.  
   
@@ -38,17 +39,17 @@ La fonctionnalité **Générer un exemple de code XML** génère un exemple de f
   
 -   Types `xs:ENTITY`, `xs:ENTITIES` et `xs:NOTATION`.  
   
- Notez également que le contenu `xs:base64Binary` n'est généré que si des énumérations figurent dans le schéma du type correspondant.  
+Notez également que le contenu `xs:base64Binary` n'est généré que si des énumérations figurent dans le schéma du type correspondant.  
   
-### Pour générer un document d'instance XML basé sur le fichier XSD  
+### <a name="to-generate-an-xml-instance-document-based-on-the-xsd-file"></a>Pour générer un document d'instance XML basé sur le fichier XSD  
   
-1.  Suivez les étapes dans [Procédure : créer et modifier un fichier de schéma XSD](../xml-tools/how-to-create-and-edit-an-xsd-schema-file.md).  
+1.  Suivez les étapes de [Comment : créer et modifier un fichier de schéma XSD](../xml-tools/how-to-create-and-edit-an-xsd-schema-file.md).  
   
-2.  Dans l'[Explorateur de schémas XML](../xml-tools/xml-schema-explorer.md), cliquez avec le bouton droit sur l'élément global `PurchaseOrder`.Sélectionnez **Générer un exemple de code XML**.  
+2.  Dans le [Explorateur de schémas XML](../xml-tools/xml-schema-explorer.md), cliquez sur le `PurchaseOrder` élément global. Sélectionnez **générer l’exemple de code XML**.  
   
      Lorsque vous sélectionnez cette option, le fichier PurchaseOrder.xml avec l'exemple de contenu XML suivant est généré et ouvert dans l'Éditeur XML :  
   
-    ```  
+    ```xml
     <?xml version="1.0" encoding="utf-8"?>  
     <PurchaseOrder OrderDate="1900-01-01" xmlns="http://tempuri.org/PurchaseOrderSchema.xsd">  
       <ShipTo country="US">  
@@ -75,5 +76,5 @@ La fonctionnalité **Générer un exemple de code XML** génère un exemple de f
     </PurchaseOrder>  
     ```  
   
-## Voir aussi  
+## <a name="see-also"></a>Voir aussi  
  [Utilisation de données XML](../xml-tools/working-with-xml-data.md)

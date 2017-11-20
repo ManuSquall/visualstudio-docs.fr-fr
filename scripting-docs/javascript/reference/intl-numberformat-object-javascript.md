@@ -1,90 +1,92 @@
 ---
-title: "Intl.NumberFormat, objet (JavaScript) | Microsoft Docs"
-ms.custom: ""
-ms.date: "01/18/2017"
-ms.prod: "windows-client-threshold"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "devlang-javascript"
-ms.tgt_pltfrm: ""
-ms.topic: "language-reference"
-f1_keywords: 
-  - "NumberFormat"
-dev_langs: 
-  - "JavaScript"
-  - "TypeScript"
-  - "DHTML"
+title: Intl.NumberFormat, objet (JavaScript) | Documents Microsoft
+ms.custom: 
+ms.date: 01/18/2017
+ms.prod: windows-client-threshold
+ms.reviewer: 
+ms.suite: 
+ms.technology: devlang-javascript
+ms.tgt_pltfrm: 
+ms.topic: language-reference
+f1_keywords: NumberFormat
+dev_langs:
+- JavaScript
+- TypeScript
+- DHTML
 ms.assetid: 820bc90f-f1e7-457a-b90d-487dfc3a736d
-caps.latest.revision: 13
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 13
+caps.latest.revision: "13"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: 0dcb02dbe0d7a7eef88750c440a4fbcdde3ea7ee
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.translationtype: MT
+ms.contentlocale: fr-FR
+ms.lasthandoff: 10/27/2017
 ---
-# Intl.NumberFormat, objet (JavaScript)
-Fournit la mise en forme spécifique aux paramètres régionaux de nombre.  
+# <a name="intlnumberformat-object-javascript"></a>Intl.NumberFormat, objet (JavaScript)
+Fournit la mise en forme de nombre spécifique aux paramètres régionaux.  
   
-## Syntaxe  
+## <a name="syntax"></a>Syntaxe  
   
 ```  
 numberFormatObj = new Intl.NumberFormat([locales][, options])  
 ```  
   
-#### Paramètres  
+#### <a name="parameters"></a>Paramètres  
  `numberFormatObj`  
- Requis.  Nom de variable à attribuer à l'objet `NumberFormat`.  
+ Obligatoire. Nom de variable à attribuer à l'objet `NumberFormat`.  
   
  `locales`  
- Optionnel.  Tableau de chaînes de paramètres régionaux qui contiennent une ou plusieurs balises de langue ou de paramètres régionaux.  Si vous incluez plusieurs chaînes de paramètres régionaux, répertoriez\-les dans l'ordre de priorité décroissant afin que la première entrée soit la valeur par défaut.  Si vous omettez ce paramètre, les paramètres régionaux par défaut du runtime JavaScript sont utilisés.  Pour plus d'informations, consultez la section Notes.  
+ Facultatif. Tableau de chaînes de paramètres régionaux qui contiennent une ou plusieurs balises de langue ou de paramètres régionaux. Si vous incluez plusieurs chaînes de paramètres régionaux, répertoriez-les dans l'ordre de priorité décroissant afin que la première entrée soit la valeur par défaut. Si vous omettez ce paramètre, les paramètres régionaux par défaut du runtime JavaScript sont utilisés. Pour plus d'informations, consultez la section Notes.  
   
  `options`  
- Optionnel.  Un objet qui contient une ou plusieurs propriétés qui spécifient les options de mise en forme des nombres.  Pour plus d'informations, consultez la section Notes.  
+ Facultatif. Objet qui contient une ou plusieurs propriétés qui spécifient les options de mise en forme de nombre. Pour plus d'informations, consultez la section Notes.  
   
-## Notes  
- Le paramètre `locales` doit respecter les balises de langue ou de paramètres régionaux [BCP 47](http://tools.ietf.org/html/rfc5646) telles que « en\-US » et « zh\-CN ».  La balise peut inclure la langue, la région, le pays et la variante.  Pour obtenir des exemples de balises de langue, consultez [Annexe A](http://tools.ietf.org/html/rfc5646#appendix-A) de BCP 47.  Pour `NumberFormat`, vous pouvez ajouter la sous\-balise **\-u** suivie par \-nu pour spécifier une extension du système de numérotation :  
+## <a name="remarks"></a>Remarques  
+ Le `locales` paramètre doit être conformes aux [BCP 47](http://tools.ietf.org/html/rfc5646) balises de langue ou paramètres régionaux telles que « en-US » et « zh-CN ». L’étiquette peut inclure la langue, la région, le pays et la variante. Pour obtenir des exemples de balises de langue, consultez [annexe A](http://tools.ietf.org/html/rfc5646#appendix-A) BCP 47. Pour `NumberFormat`, vous pouvez ajouter la **-u** sous-balise suivie - nu pour spécifier une extension de système de numérotation :  
   
- "*language*\-*region*\-u\-le NU\-*numberingsystem*"  
+ «*langage*-*région*-u-nu -*numberingsystem*»  
   
- où *numberingsystem* peut être l'une des valeurs suivantes : arabe, arabext, bali, beng, deva, fullwide, gujr, guru, hanidec, khmr, knda, laoo, latn, limb, mylm, mong, mymr, orya, tamldec, telu, thaï, tibt.  
+ où *numberingsystem* peut être une des valeurs suivantes : arabe, arabext, bali, beng, deva, fullwide, gujr, expert, hanidec, khmr, knda, laoo, latn, un membre, mylm, ja mais navigué, mymr, orya, tamldec, telu, thaï, tibt.  
   
  Le paramètre `options` peut inclure les propriétés suivantes :  
   
-|Propriété|Description|Valeurs possibles|Valeur par défaut|  
-|---------------|-----------------|-----------------------|-----------------------|  
-|`localeMatcher`|Spécifie l'algorithme de correspondance aux paramètres régionaux à utiliser.|« rechercher », « ajustement optimal »|« ajustement optimal »|  
-|`style`|Spécifie le style de format numérique.|« décimal », « pour cent », « devise »|« decimal »|  
-|`currency`|Spécifie la valeur monétaire ISO 4217 comme code alphabétique.  Si `style` a la valeur « monnaie », cette valeur est requise.|Consultez la [liste des codes de devises et des fonds ISO](http://www.currency-iso.org/en/home/tables/table-a1.html).|indéfini|  
-|`currencyDisplay`|Spécifie si la monnaie doit être affichée comme un code de devise alphabétique ISO 4217, un symbole monétaire localisé ou un nom de devise localisé.  Cette valeur est utilisée uniquement lorsque `style` est défini sur "currency".|« code », « symbole », « nom »|"symbol"|  
-|`useGrouping`|Spécifie si un séparateur de regroupement doit être utilisé.|true, false|`true`.|  
+|Propriété|Description|Valeurs possibles |Valeur par défaut|  
+|--------------|-----------------|---------------------|-------------------|  
+|`localeMatcher`|Spécifie l'algorithme de correspondance avec les paramètres régionaux à utiliser.|« Rechercher », « ajustement optimal »|« ajustement optimal »|  
+|`style`|Spécifie le style de format de nombre.|« décimal », « pourcentage », « devise »|« décimal »|  
+|`currency`|Spécifie la valeur de devise ISO 4217 comme un code alphabétique. Si le `style` a la valeur « devise », cette valeur est obligatoire.|Consultez le fichier ISO [liste de code de devise et fonds](http://www.currency-iso.org/en/home/tables/table-a1.html).|non défini|  
+|`currencyDisplay`|Spécifie s’il faut afficher la devise comme un code de devise alphabétique ISO 4217, un symbole monétaire localisé ou un nom localisé de devise. Cette valeur est utilisée uniquement si `style` a la valeur « devise ».|« code », « symboles », « name »|« symbole »|  
+|`useGrouping`|Spécifie si un séparateur de regroupement doit être utilisé.|la valeur est true, false|`true`.|  
 |`minimumIntegerDigits`|Spécifie le nombre minimal de chiffres intégraux à utiliser.|1 à 21.|21|  
-|`minimumFractionDigits`|.  Spécifie le nombre minimal de chiffres fractionnaires à utiliser.|0 à 20.|0|  
+|`minimumFractionDigits`|. Spécifie le nombre minimal de chiffres fractionnaires à utiliser.|0 à 20.|0|  
 |`maximumFractionDigits`|Spécifie le nombre maximal de chiffres fractionnaires à utiliser.|Cette valeur peut varier de `minimumFractionDigits` à 20.|20.|  
 |`minimumSignificantDigits`|Spécifie le nombre minimal de chiffres fractionnaires à afficher.|Cette valeur peut varier de 1 à 21.|1|  
-|`maximumSignificantDigits`|Spécifie le nombre maximal de chiffres fractionnaires à afficher.|Cette valeur peut varier de `minimumSignificantDigits` à 21.|21|  
+|`maximumSignificantDigits`|Spécifie le nombre maximal de chiffres fractionnaires à afficher.|Cette valeur peut varier de `minimumSignificantDigits` sur 21.|21|  
   
-## Propriétés  
+## <a name="properties"></a>Propriétés  
  Le tableau suivant répertorie les propriétés de l'objet `NumberFormat`.  
   
 |||  
 |-|-|  
 |Propriété|Description|  
-|[Constructeur](../../javascript/reference/constructor-property-intl-numberformat.md)|Spécifie la fonction qui crée un objet formateur de nombre.|  
-|[format](../../javascript/reference/format-property-intl-numberformat.md)|Retourne une fonction qui met un nombre en forme à l'aide des paramètres du formateur de nombres.|  
-|[prototype](../../javascript/reference/prototype-property-intl-numberformat.md)|Retourne une référence au prototype d'un formateur numérique.|  
+|[constructeur](../../javascript/reference/constructor-property-intl-numberformat.md)|Spécifie la fonction qui crée un objet de module de formatage de nombre.|  
+|[format](../../javascript/reference/format-property-intl-numberformat.md)|Retourne une fonction qui met en forme un nombre en utilisant les paramètres de module de formatage de nombre.|  
+|[prototype](../../javascript/reference/prototype-property-intl-numberformat.md)|Retourne une référence au prototype pour un module de formatage de nombre.|  
   
-## Méthodes  
+## <a name="methods"></a>Méthodes  
  Le tableau suivant répertorie les méthodes de l'objet `NumberFormat`.  
   
 |||  
 |-|-|  
 |Méthode|Description|  
-|[resolvedOptions](../../javascript/reference/resolvedoptions-method-intl-numberformat.md)|Retourne un objet qui contient des propriétés et des valeurs de l'objet formateur de nombre.|  
+|[resolvedOptions](../../javascript/reference/resolvedoptions-method-intl-numberformat.md)|Retourne un objet qui contient les propriétés et valeurs de l’objet formateur number.|  
   
-## Exemple  
- L'exemple suivant crée un objet `NumberFormat` pour les paramètres régionaux américains à l'aide des options de mise en forme spécifiées.  
+## <a name="example"></a>Exemple  
+ L’exemple suivant crée un `NumberFormat` objet des paramètres régionaux en-US avec les options de mise en forme spécifiées.  
   
-```javascript  
+```JavaScript  
 var nf = new Intl.NumberFormat(["en-US"], {  
     style: "currency",  
     currency: "CNY",  
@@ -97,10 +99,10 @@ if (console && console.log) {
 }  
 ```  
   
-## Exemple  
- Les exemples suivants montrent le résultat de l'utilisation de plusieurs options et paramètres régionaux différents.  
+## <a name="example"></a>Exemple  
+ Les exemples suivants montrent le résultat de l’utilisation de plusieurs options et paramètres régionaux différents.  
   
-```javascript  
+```JavaScript  
 var number = 123456789;  
 var options1 = { style: "percent" };  
 var options2 = { style: "currency", currency: "INR" };  
@@ -117,10 +119,10 @@ if (console && console.log) {
 }  
 ```  
   
-## Configuration requise  
+## <a name="requirements"></a>Spécifications  
  [!INCLUDE[jsv11](../../javascript/reference/includes/jsv11-md.md)]  
   
-## Voir aussi  
- [toLocaleString \(Number\)](../../javascript/reference/tolocalestring-number.md)   
+## <a name="see-also"></a>Voir aussi  
+ [toLocaleString (nombre)](../../javascript/reference/tolocalestring-number.md)   
  [Intl.Collator, objet](../../javascript/reference/intl-collator-object-javascript.md)   
- [Intl.DateTimeFormat, objet](../../javascript/reference/intl-datetimeformat-object-javascript.md)
+ [Objet Intl.DateTimeFormat](../../javascript/reference/intl-datetimeformat-object-javascript.md)

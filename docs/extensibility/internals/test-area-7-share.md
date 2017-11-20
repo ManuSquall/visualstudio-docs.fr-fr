@@ -1,63 +1,65 @@
 ---
-title: "Test de zone 7: partage | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-helpviewer_keywords: 
-  - "contrôle de code source (Visual Studio SDK), partage des éléments"
-  - "contrôle plug-ins de source, partager des éléments"
+title: "Zone de test 7 : Partager | Documents Microsoft"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+helpviewer_keywords:
+- source control [Visual Studio SDK], sharing items
+- source control plug-ins, sharing items
 ms.assetid: 6ec4780a-bda4-4327-bb3e-c6c9e7eabf35
-caps.latest.revision: 11
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 11
+caps.latest.revision: "11"
+author: gregvanl
+ms.author: gregvanl
+manager: ghogen
+ms.openlocfilehash: f61a9917d484499e3cfd641f581859de01663bd0
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: fr-FR
+ms.lasthandoff: 10/31/2017
 ---
-# Test de zone 7: partage
-[!INCLUDE[vs2017banner](../../code-quality/includes/vs2017banner.md)]
-
-Cette zone de texte couvre les éléments de partage entre les emplacements via la commande de **partage** .  
+# <a name="test-area-7-share"></a>Tester la zone 7 : partage
+Cette zone de test couvre le partage des objets entre des emplacements via la **partage** commande.  
   
- Une opération de hhare est la duplication passer des éléments de fichiers et dossiers entre deux emplacements ou plus dans une hiérarchie de fichiers du contrôle de code source.  La duplication ne se produit pas vraiment sur le serveur, mais l'utilisateur voit le même fichier dans des emplacements au moins deux spécifiés.  Chaque fois que des modifications sont apportées aux éléments partagés l'un des, ces modifications apparaissent dans tout l'autre des emplacements partagés.  
+ Une opération de hhare est la duplication apparente de fichiers et des éléments de dossier entre deux ou plusieurs emplacements dans une hiérarchie de fichiers de contrôle de code source. Duplication ne survient pas réellement sur le serveur, mais l’utilisateur ne voit pas le même fichier dans deux ou plusieurs emplacements spécifiés. Chaque fois que les modifications sont apportées à un des éléments partagés, ces modifications apparaissent dans tous les autres emplacements partagés.  
   
- Le partage dans des dossiers s'exécute si vous sélectionnez un dossier avec au moins un fichier sous contrôle de code source dans celui\-ci.  L'ordre de partage est désactivée dans les conditions suivantes :  
+ Dans des dossiers de partage fonctionne si vous sélectionnez un dossier avec au moins un fichier sous contrôle de code source qu’il contient. La commande de partage est désactivée dans les conditions suivantes :  
   
--   si le dossier sélectionné est un dossier vide.  
+-   Si le dossier sélectionné est un dossier vide.  
   
--   S'il existe un vrai dossier, mais de il ne contient aucun fichier du contrôle de code source.  
+-   S’il existe un dossier réel, mais il ne comprend aucun fichier de contrôle de source.  
   
--   S'il existe un dossier virtuel, que les fichiers sous contrôle de code source se trouvent sur lui ou pas.  
+-   S’il existe un dossier virtuel, si les fichiers sous contrôle de code source sont qu’il contient ou non.  
   
--   S'il existe un projet Web de site distant.  
+-   En l’absence d’un projet Web Site distant.  
   
-## menu Access de commande  
- Les chemins d'accès suivants de menu d'environnement de développement intégré \(IDE\) de [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] sont utilisés dans des scénarios de test.  
+## <a name="command-menu-access"></a>Accès au Menu de commande  
+ Les éléments suivants [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] menu chemins d’environnement de développement intégré sont utilisés dans les cas de test.  
   
- partage : **Fichier**\- \>**Contrôle de source de données**\- \>**partage**.  
+ Partage : **fichier**->**contrôle de code Source**->**partage**.  
   
-## Comportement attendu  
+## <a name="expected-behavior"></a>Comportement attendu  
   
--   Le fichier partagé apparaît à l'emplacement partagé.  
+-   Fichier partagé s’affiche dans un emplacement partagé.  
   
--   L'historique du magasin de version du contrôle de code source montre que les fichiers sont partagés.  
+-   Affichage de la source contrôle version magasin historique montre que les fichiers sont partagés.  
   
--   modifiant un fichier partagé modifie les deux emplacements du fichier.  
+-   Modification d’un fichier partagé modifie les deux emplacements du fichier.  
   
-## Cas de test  
- Voici des scénarios de test spécifiques pour la zone de texte de partage.  
+## <a name="test-cases"></a>Cas de test  
+ Voici les cas de test spécifiques pour la zone de test de partage.  
   
-|Action|étapes de test|résultats attendus à vérifier|  
-|------------|--------------------|-----------------------------------|  
-|Partagez un fichier d'un projet chargé sous contrôle de code source vers un autre projet chargé|1.  Création d'un nouveau projet.<br />2.  ajoutez un deuxième projet à la solution.<br />3.  créez un fichier dans le deuxième projet avec un nom qui n'est pas dans le premier projet.<br />4.  Ajouter la solution au contrôle de code source.<br />5.  sélectionnez le premier projet.<br />6.  ouvrez la boîte de dialogue de **partage** \(**Fichier** \- \> **Contrôle de source de données** \- \> **partage**\).<br />7.  partagez le fichier du deuxième projet au premier projet.<br />8.  Acceptez **Extraire** si vous y êtes invité.|Comportement attendu par courantes.|  
-|Partagez un fichier d'un projet à un autre|1.  Création d'un nouveau projet.<br />2.  Ajoutez \-la au contrôle de code source.<br />3.  fermez la solution.<br />4.  créez un deuxième projet \(la nouvelle solution.\)<br />5.  Ajouter la solution au contrôle de code source.<br />6.  sélectionnez le projet.<br />7.  ouvrez la boîte de dialogue de **partage** \(**Fichier** \- \> **Contrôle de source de données** \- \> **partage**\).<br />8.  Partagez un fichier projet précédemment ajouté au projet ouvert.<br />9. Acceptez **Extraire** si vous y êtes invité.|Comportement attendu par courantes.|  
-|Partagez une partie de fichier pas du projet du contrôle de code source dans le projet actuellement chargé|1.  Création d'un nouveau projet.<br />2.  Ajouter la solution au contrôle de code source.<br />3.  Ajoutez un fichier au contrôle de code source qui ne fait pas partie du projet ou de la solution.<br />4.  sélectionnez le projet et ouvrez la boîte de dialogue de **partage** \(**Fichier** \- \> **Contrôle de source de données** \- \> **partage**\).<br />5.  Sélectionnez un fichier dans la boîte de dialogue de **partage** qui n'existe pas dans le projet ou la solution en cours et ne le partage pas.<br />6.  Acceptez **Extraire** si vous y êtes invité.|La mémoire étant de contrôle de code source a effectué une commande get, afin que le fichier est maintenant à l'emplacement local du projet.|  
-|Fichiers partagés dans le même projet vers un dossier différent|1.  sélectionnez **Extraire automatiquement** dans **Outils** \- \> **Options** \- \> **Contrôle de source de données**.<br />2.  Créez un projet et ajoutez \-la au contrôle de code source.<br />3.  ajoutez un dossier au projet.<br />4.  ajoutez un fichier au dossier et signez le dossier.<br />5.  sélectionnez le dossier.<br />6.  ouvrez la boîte de dialogue de **partage** \(**Fichier** \- \> **Contrôle de source de données** \- \> **partage**\).<br />7.  Fichier partagé vers le dossier sélectionné.|Comportement attendu par courantes.<br /><br /> Le dossier doit être signé avec un fichier qui s'y trouvent avant son utilisation pour le partage.|  
-|partagez un dossier dans le projet chargé \- récursif|1.  Création d'un nouveau projet.<br />2.  Ajouter la solution au contrôle de code source.<br />3.  sélectionnez le projet.<br />4.  ouvrez la boîte de dialogue de **partage** \(**Fichier** \- \> **Contrôle de source de données** \- \> **partage**\).<br />5.  sélectionnez un dossier.<br />6.  partagez le dossier de manière récursive dans le projet.|Comportement attendu par courantes.|  
-|Partagez plusieurs fichiers d'un projet à un autre|1.  Créez un nouveau projet avec plusieurs fichiers qu'il contient.<br />2.  Ajouter la solution au contrôle de code source.<br />3.  fermez la solution.<br />4.  Créez un projet dans une solution.<br />5.  Ajouter la solution au contrôle de code source.<br />6.  sélectionnez le projet.<br />7.  ouvrez la boîte de dialogue de **partage** \(**Fichier** \- \> **Contrôle de source de données** \- \> **partage**\).<br />8.  Partagez plusieurs fichiers du projet créé précédemment au projet ouvert.|Comportement attendu par courantes.|  
+|Action|Étapes de test|Résultats attendus à vérifier|  
+|------------|----------------|--------------------------------|  
+|Partager un fichier à partir d’un projet chargé sous contrôle de code source à un autre projet chargé|1.  Créer un nouveau projet.<br />2.  Ajouter un deuxième projet à la solution.<br />3.  Créez un fichier dans le deuxième projet avec un nom qui n’est pas dans le premier projet.<br />4.  Ajouter la solution au contrôle de code source.<br />5.  Sélectionnez le premier projet.<br />6.  Ouvrez **partage** boîte de dialogue (**fichier** -> **contrôle de code Source** -> **partage**).<br />7.  Partagez le fichier à partir du projet du deuxième au premier projet.<br />8.  Accepter **Check Out** si vous y êtes invité.|Comportement attendu commun.|  
+|Partager un fichier d’un projet vers un autre|1.  Créer un nouveau projet.<br />2.  Ajouter au contrôle de code source.<br />3.  Fermez la solution.<br />4.  Créez un deuxième projet (nouvelle solution).<br />5.  Ajouter la solution au contrôle de code source.<br />6.  Sélectionnez le projet.<br />7.  Ouvrez le **partage** boîte de dialogue (**fichier** -> **contrôle de code Source** -> **partage**).<br />8.  Partager un fichier à partir du projet précédemment ajouté au projet ouvert.<br />9. Accepter **Check Out** si vous y êtes invité.|Comportement attendu commun.|  
+|Partager un fichier ne fait pas partie du projet de contrôle de code source dans le projet actuellement chargé.|1.  Créer un nouveau projet.<br />2.  Ajouter la solution au contrôle de code source.<br />3.  Ajouter un fichier de contrôle de code source qui ne fait pas partie du projet ou solution.<br />4.  Sélectionnez le projet et ouvrez le **partage** boîte de dialogue (**fichier** -> **contrôle de code Source** -> **partage**).<br />5.  Sélectionnez un fichier dans le **partager** boîte de dialogue qui ne pas exister dans le projet actuel ou la solution et le partager.<br />6.  Accepter **Check Out** si vous y êtes invité.|Le magasin de contrôle de code source a effectué une opération Get, par conséquent, le fichier est présent à l’emplacement local du projet.|  
+|Partager des fichiers dans le même projet vers un autre dossier.|1.  Sélectionnez **automatiquement** dans **outils** -> **Options** -> **contrôle de code Source**.<br />2.  Créez un projet et l’ajouter au contrôle de code source.<br />3.  Ajouter un dossier au projet.<br />4.  Ajouter un fichier dans le dossier et vérifiez dans le dossier.<br />5.  Sélectionnez le dossier.<br />6.  Ouvrez **partage** boîte de dialogue (**fichier** -> **contrôle de code Source** -> **partage**).<br />7.  Partage de fichiers dans le dossier sélectionné.|Comportement attendu commun.<br /><br /> Avant de pouvoir être utilisé pour le partage, dossier doit être vérifié avec un fichier.|  
+|Partager un dossier dans le projet chargé, récursive|1.  Créer un nouveau projet.<br />2.  Ajouter la solution au contrôle de code source.<br />3.  Sélectionnez le projet.<br />4.  Ouvrez le **partage** boîte de dialogue (**fichier** -> **contrôle de code Source** -> **partage**).<br />5.  Sélectionnez un dossier.<br />6.  Partager le dossier de manière récursive dans le projet.|Comportement attendu commun.|  
+|Partager plusieurs fichiers d’un projet vers un autre|1.  Créez un projet avec plusieurs fichiers qu’il contient.<br />2.  Ajouter la solution au contrôle de code source.<br />3.  Fermez la solution.<br />4.  Créez un projet dans une nouvelle solution.<br />5.  Ajouter la solution au contrôle de code source.<br />6.  Sélectionnez le projet.<br />7.  Ouvrez le **partage** boîte de dialogue (**fichier** -> **contrôle de code Source** -> **partage**).<br />8.  Partager plusieurs fichiers à partir du projet créé précédemment pour le projet actuellement ouvert.|Comportement attendu commun.|  
   
-## Voir aussi  
- [Guide d'évaluation pour les Plug\-ins de contrôle de code Source](../../extensibility/internals/test-guide-for-source-control-plug-ins.md)
+## <a name="see-also"></a>Voir aussi  
+ [Guide de test pour les plug-ins de contrôle de code source](../../extensibility/internals/test-guide-for-source-control-plug-ins.md)

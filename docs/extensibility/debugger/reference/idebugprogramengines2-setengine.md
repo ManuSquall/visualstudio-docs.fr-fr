@@ -1,46 +1,29 @@
 ---
-title: IDebugProgramEngines2::SetEngine | Microsoft Docs
+title: IDebugProgramEngines2::SetEngine | Documents Microsoft
 ms.custom: 
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-sdk
+ms.technology: vs-ide-sdk
 ms.tgt_pltfrm: 
 ms.topic: article
-f1_keywords:
-- IDebugProgramEngines2::SetEngine
-helpviewer_keywords:
-- IDebugProgramEngines2::SetEngine
+f1_keywords: IDebugProgramEngines2::SetEngine
+helpviewer_keywords: IDebugProgramEngines2::SetEngine
 ms.assetid: c05857ee-89cf-455e-8f1e-300cce4a2eab
-caps.latest.revision: 10
+caps.latest.revision: "10"
+author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-translation.priority.mt:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
+ms.openlocfilehash: af62aec85afd39ee617b9b700e14168395269532
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
 ms.translationtype: MT
-ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
-ms.openlocfilehash: c016ef61d327dcbbcec552f97df5d7a01b7fb658
-ms.contentlocale: fr-fr
-ms.lasthandoff: 08/28/2017
-
+ms.contentlocale: fr-FR
+ms.lasthandoff: 10/31/2017
 ---
 # <a name="idebugprogramengines2setengine"></a>IDebugProgramEngines2::SetEngine
-Tells the program or program node which debug engine (DE) to use to debug this program.  
+Indique le programme ou un nœud du programme le moteur de débogage (DE) à utiliser pour déboguer ce programme.  
   
-## <a name="syntax"></a>Syntax  
+## <a name="syntax"></a>Syntaxe  
   
 ```cpp  
 HRESULT SetEngine(   
@@ -54,12 +37,12 @@ int SetEngine(
 );  
 ```  
   
-#### <a name="parameters"></a>Parameters  
+#### <a name="parameters"></a>Paramètres  
  `guidEngine`  
- [in] The GUID of the DE.  
+ [in] Le GUID de la DE.  
   
-## <a name="return-value"></a>Return Value  
- If successful, returns `S_OK`; otherwise, returns an error code.  
+## <a name="return-value"></a>Valeur de retour  
+ En cas de réussite, retourne `S_OK`; sinon, retourne un code d’erreur.  
   
-## <a name="see-also"></a>See Also  
+## <a name="see-also"></a>Voir aussi  
  [IDebugProgramEngines2](../../../extensibility/debugger/reference/idebugprogramengines2.md)

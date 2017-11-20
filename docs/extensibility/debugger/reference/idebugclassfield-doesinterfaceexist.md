@@ -1,46 +1,29 @@
 ---
-title: IDebugClassField::DoesInterfaceExist | Microsoft Docs
+title: IDebugClassField::DoesInterfaceExist | Documents Microsoft
 ms.custom: 
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-sdk
+ms.technology: vs-ide-sdk
 ms.tgt_pltfrm: 
 ms.topic: article
-f1_keywords:
-- IDebugClassField::DoesInterfaceExist
-helpviewer_keywords:
-- IDebugClassField::DoesInterfaceExist method
+f1_keywords: IDebugClassField::DoesInterfaceExist
+helpviewer_keywords: IDebugClassField::DoesInterfaceExist method
 ms.assetid: cc0c8642-1a76-4fda-a309-7018a34883c9
-caps.latest.revision: 9
+caps.latest.revision: "9"
+author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-translation.priority.mt:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
+ms.openlocfilehash: 07a4760064003a45af55aa747192e044edca8e0c
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
 ms.translationtype: MT
-ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
-ms.openlocfilehash: 58d3030621160d09c369c13bedc85aba8f7e1172
-ms.contentlocale: fr-fr
-ms.lasthandoff: 08/28/2017
-
+ms.contentlocale: fr-FR
+ms.lasthandoff: 10/31/2017
 ---
 # <a name="idebugclassfielddoesinterfaceexist"></a>IDebugClassField::DoesInterfaceExist
-Determines if a specific interface is defined in the class.  
+Détermine si une interface spécifique est définie dans la classe.  
   
-## <a name="syntax"></a>Syntax  
+## <a name="syntax"></a>Syntaxe  
   
 ```cpp  
 HRESULT DoesInterfaceExist(   
@@ -54,15 +37,15 @@ int DoesInterfaceExist(
 );  
 ```  
   
-#### <a name="parameters"></a>Parameters  
+#### <a name="parameters"></a>Paramètres  
  `pszInterfaceName`  
- [in] A string containing the interface name to look for.  
+ [in] Chaîne contenant le nom de l’interface à rechercher.  
   
-## <a name="return-value"></a>Return Value  
- If successful, returns S_OK, returns S_FALSE if the interface does not exist; otherwise, returns an error code.  
+## <a name="return-value"></a>Valeur de retour  
+ En cas de réussite, retourne S_OK, retourne S_FALSE si l’interface n’existe pas ; Sinon, retourne un code d’erreur.  
   
-## <a name="remarks"></a>Remarks  
- This method in effect gets an enumeration of all interfaces and searches the list for a matching interface.  
+## <a name="remarks"></a>Remarques  
+ En effet, cette méthode obtient une énumération de toutes les interfaces et recherche dans la liste pour l’interface correspondante.  
   
-## <a name="see-also"></a>See Also  
+## <a name="see-also"></a>Voir aussi  
  [IDebugClassField](../../../extensibility/debugger/reference/idebugclassfield.md)

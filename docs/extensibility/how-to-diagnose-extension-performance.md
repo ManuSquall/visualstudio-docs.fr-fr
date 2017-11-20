@@ -4,35 +4,19 @@ ms.custom:
 ms.date: 11/08/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-sdk
+ms.technology: vs-ide-sdk
 ms.tgt_pltfrm: 
 ms.topic: article
 ms.assetid: 46b0a1e3-7e69-47c9-9d8d-a1815d6c3896
-caps.latest.revision: 1
+caps.latest.revision: "1"
 author: BertanAygun
 ms.author: bertaygu
 manager: ghogen
-translation.priority.mt:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
+ms.openlocfilehash: 7ff2aeecfbabb055f0fa9740623bc2bd949b11c7
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
 ms.translationtype: MT
-ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
-ms.openlocfilehash: b78a02b9d780b9556cbbf42fce04b1da06e22833
-ms.contentlocale: fr-fr
-ms.lasthandoff: 09/26/2017
-
+ms.contentlocale: fr-FR
+ms.lasthandoff: 10/31/2017
 ---
 # <a name="measuring-extension-impact-in-startup"></a>Mesurer l’impact d’extension de démarrage
 
@@ -195,4 +179,3 @@ Il est important de réduire le nombre d’assemblys chargés à l’intérieur 
 ## <a name="summary"></a>Résumé
 
 Démarrage de Visual Studio a été un des domaines en permanence, nous obtenons des commentaires sur. Notre objectif, comme indiqué plus haut est pour tous les utilisateurs ont un démarrage cohérent avec tous les composants et qu’ils ont installé des extensions et nous souhaitons travailler avec les propriétaires d’extension pour les aider à atteindre cet objectif. Les instructions ci-dessus doivent être utiles pour comprendre un impact extensions au démarrage et soit évitant automatiquement la charge ou de charger de façon asynchrone pour réduire l’impact sur la productivité des utilisateurs.
-

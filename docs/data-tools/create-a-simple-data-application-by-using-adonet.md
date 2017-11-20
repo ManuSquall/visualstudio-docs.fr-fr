@@ -1,5 +1,5 @@
 ---
-title: Create a simple data application by using ADO.NET | Microsoft Docs
+title: "Créer une application de données simple à l’aide d’ADO.NET | Documents Microsoft"
 ms.custom: 
 ms.date: 08/23/2017
 ms.reviewer: 
@@ -10,75 +10,76 @@ dev_langs:
 - VB
 - CSharp
 ms.assetid: 2222841f-e443-4a3d-8c70-4506aa905193
-caps.latest.revision: 42
+caps.latest.revision: "42"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-translation.priority.ht:
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- ru-ru
-- zh-cn
-- zh-tw
-translation.priority.mt:
-- cs-cz
-- pl-pl
-- pt-br
-- tr-tr
-ms.translationtype: HT
-ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
-ms.openlocfilehash: b9ddc58b4205be5928f366ae82d4e0512eb9b767
-ms.contentlocale: fr-fr
-ms.lasthandoff: 08/28/2017
-
+ms.technology: vs-data-tools
+ms.openlocfilehash: 05a0a339b413495aadfa397e5fec3b826f920026
+ms.sourcegitcommit: ee42a8771f0248db93fd2e017a22e2506e0f9404
+ms.translationtype: MT
+ms.contentlocale: fr-FR
+ms.lasthandoff: 11/09/2017
 ---
-# <a name="create-a-simple-data-application-by-using-adonet"></a>Create a simple data application by using ADO.NET
-When you create an application that manipulates data in a database, you perform basic tasks such as defining connection strings, inserting data, and running stored procedures. By following this topic, you can discover how to interact with a database from within a simple Windows Forms "forms over data" application by using Visual C# or Visual Basic and ADO.NET.  All .NET data technologies—including datasets, LINQ to SQL, and Entity Framework—ultimately perform steps that are very similar to those shown in this article.  
+# <a name="create-a-simple-data-application-by-using-adonet"></a>Créer une application de données simple à l’aide d’ADO.NET
+Lorsque vous créez une application qui manipule les données d’une base de données, vous effectuez des tâches de base telles que la définition des chaînes de connexion, insertion de données et l’exécution des procédures stockées. En suivant cette rubrique, vous pouvez découvrir comment interagir avec une base de données dans une application de « formulaires de données » de Windows Forms simple à l’aide de Visual c# ou Visual Basic et ADO.NET.  Toutes les technologies de données .NET, y compris les datasets, LINQ to SQL et Entity Framework — finalement les étapes qui sont très similaires à celles présentées dans cet article.  
   
- This article demonstrates a simple way to get data out of a database in a very fast manner. If your application needs to modify data in non-trivial ways and update the database, you should consider using Entity Framework and using data binding to automatically sync user interface controls to changes in the underlying data.  
+ Cet article décrit un moyen simple pour obtenir des données en dehors d’une base de données d’une manière très rapide. Si votre application a besoin de modifier les données non triviale façons et de mettre à jour de la base de données, vous devez envisager à l’aide d’Entity Framework et à l’aide de la liaison de données à synchroniser automatiquement les contrôles d’interface utilisateur pour les modifications dans les données sous-jacentes.  
   
 > [!IMPORTANT]
->  To keep the code simple, it doesn't include production-ready exception handling.  
+>  Pour simplifier le code, il n’inclut pas la gestion des exceptions de l’environnement de production.  
   
- **In this topic**  
+ **Dans cette rubrique**  
   
--   [Set up the sample database](../data-tools/create-a-simple-data-application-by-using-adonet.md#BKMK_setupthesampledatabase)  
+-   [Configurer la base de données](../data-tools/create-a-simple-data-application-by-using-adonet.md#BKMK_setupthesampledatabase)  
   
--   [Create the forms and add controls](../data-tools/create-a-simple-data-application-by-using-adonet.md#BKMK_createtheformsandaddcontrols)  
+-   [Créer les formulaires et ajouter des contrôles](../data-tools/create-a-simple-data-application-by-using-adonet.md#BKMK_createtheformsandaddcontrols)  
   
--   [Store the connection string](../data-tools/create-a-simple-data-application-by-using-adonet.md#BKMK_storetheconnectionstring)   
+-   [Stocker la chaîne de connexion](../data-tools/create-a-simple-data-application-by-using-adonet.md#BKMK_storetheconnectionstring)   
   
--   [Write the code for the forms](../data-tools/create-a-simple-data-application-by-using-adonet.md#BKMK_writethecodefortheforms)  
+-   [Écrivez le code des formulaires](../data-tools/create-a-simple-data-application-by-using-adonet.md#BKMK_writethecodefortheforms)  
   
--   [Test your application](../data-tools/create-a-simple-data-application-by-using-adonet.md#BKMK_testyourapplication)  
+-   [Tester votre application](../data-tools/create-a-simple-data-application-by-using-adonet.md#BKMK_testyourapplication)  
   
-## <a name="prerequisites"></a>Prerequisites  
- To create the application, you'll need:  
+## <a name="prerequisites"></a>Conditions préalables  
+ Pour créer l'application, vous aurez besoin des éléments suivants :  
   
 -   Visual Studio Community Edition.  
   
--   SQL Server Express LocalDB.  
-  
--   The small sample database that you create by following the steps in [Create a SQL database by using a script](../data-tools/create-a-sql-database-by-using-a-script.md).  
-  
--   The connection string for the database after you set it up. You can find this value by opening **SQL Server Object Explorer**, opening the shortcut menu for the database, selecting **Properties**, and then scrolling to the **ConnectionString**  property.  
+-   SQL Server Express LocalDB. Si vous n’avez pas SQL Server Express LocalDB, vous pouvez l’installer à partir de la [page de téléchargement des éditions de SQL Server](https://www.microsoft.com/en-us/server-cloud/Products/sql-server-editions/sql-server-express.aspx).  
 
-This topic assumes that you're familiar with the basic functionality of the Visual Studio IDE and can create a Windows Forms application, add forms to that project, put buttons and other controls on those forms, set properties of those controls, and code simple events. If you aren't comfortable with these tasks, we suggest that you complete the [Getting Started with Visual C# and Visual Basic](../ide/getting-started-with-visual-csharp-and-visual-basic.md) before you start this topic.  
+Cette rubrique suppose que vous êtes familiarisé avec les fonctionnalités de base de l’IDE de Visual Studio et pourrez créer une application Windows Forms, ajouter des formulaires pour le projet, placez des boutons et autres contrôles sur les formulaires, définir les propriétés des contrôles et des événements simple de code. Si vous n’êtes pas familiarisé avec ces tâches, nous vous suggérons d’effectuer la [mise en route avec Visual c# et Visual Basic](../ide/getting-started-with-visual-csharp-and-visual-basic.md) rubrique avant de commencer cette procédure pas à pas.  
   
-##  <a name="BKMK_setupthesampledatabase"></a> Set up the sample database  
- The sample database for this walkthrough includes the Customer and Orders tables. The tables contain no data initially, but you can add data when you run the application that you'll create. The database also has five simple stored procedures. [Create a SQL database by using a script](../data-tools/create-a-sql-database-by-using-a-script.md) contains a Transact-SQL script that creates the tables, the primary and foreign keys, the constraints, and the stored procedures.  
+##  <a name="BKMK_setupthesampledatabase"></a>Configurer la base de données  
+Créer la base de données en suivant ces étapes :  
+
+1. Dans Visual Studio, ouvrez le **l’Explorateur de serveurs** fenêtre.  
+
+2. Avec le bouton droit sur **des connexions de données** et choisissez ** Créer nouveau serveur de base de données SQL... ».  
+
+3. Dans le **nom du serveur** texte, entrez **(localdb) \mssqllocaldb**.  
+
+4. Dans le **nouveau nom de base de données** texte, entrez **Sales**, puis choisissez **OK**.  
+
+     Vide **Sales** base de données est créé et ajouté au nœud Connexions de données dans l’Explorateur de serveurs.  
+
+5. Avec le bouton droit sur le **Sales** connexion de données, puis sélectionnez **nouvelle requête**.  
+
+     Une fenêtre d’éditeur de requête s’ouvre.  
+
+6. Copie le [script Transact-SQL de ventes](https://github.com/MicrosoftDocs/visualstudio-docs/raw/master/docs/data-tools/samples/sales.sql) dans le Presse-papiers.  
+
+7. Collez le script T-SQL dans l’éditeur de requête, puis choisissez le **Execute** bouton.  
+
+     Après une courte période, la requête est terminée et les objets de base de données sont créés. La base de données contient deux tables : Customer et Orders. Ces tables contiennent pas de données au départ, mais vous pouvez ajouter des données lorsque vous exécutez l’application que vous allez créer. La base de données contient également quatre procédures stockées simples.   
   
-##  <a name="BKMK_createtheformsandaddcontrols"></a> Create the forms and add controls  
+##  <a name="BKMK_createtheformsandaddcontrols"></a>Créer les formulaires et ajouter des contrôles  
   
-1.  Create a project for a Windows Forms application, and then name it SimpleDataApp.  
+1.  Créer un projet pour une application Windows Forms et nommez-le SimpleDataApp.  
   
-     Visual Studio creates the project and several files, including an empty Windows form that's named Form1.  
+     Visual Studio crée le projet et plusieurs fichiers, y compris un formulaire Windows vide nommé Form1.  
   
-2.  Add two Windows forms to your project so that it has three forms, and then give them the following names:  
+2.  Ajoutez deux formulaires Windows à votre projet afin qu’il comporte trois formulaires et leur attribuer les noms suivants :  
   
     -   Navigation  
   
@@ -86,101 +87,100 @@ This topic assumes that you're familiar with the basic functionality of the Visu
   
     -   FillOrCancel  
   
-3.  For each form, add the text boxes, buttons, and other controls that appear in the following illustrations. For each control, set the properties that the tables describe.  
+3.  Pour chaque formulaire, ajoutez les zones de texte, les boutons et les autres contrôles indiqués dans les illustrations suivantes. Pour chaque contrôle, définissez les propriétés que les tables décrivent.  
   
     > [!NOTE]
-    >  The group box and the label controls add clarity but aren't used in the code.  
+    >  La zone de groupe et les contrôles d'étiquette ajoutent de la clarté mais ne sont pas utilisés dans le code.  
   
- **Navigation form**  
+ **Écran de navigation**  
   
- ![Navigation dialog box](../data-tools/media/simpleappnav.png "SimpleAppNav")  
+ ![Boîte de dialogue de navigation](../data-tools/media/simpleappnav.png "SimpleAppNav")  
   
-|Controls for the Navigation form|Properties|  
+|Contrôles du formulaire Navigation|Propriétés|  
 |--------------------------------------|----------------|  
-|Button|Name = btnGoToAdd|  
-|Button|Name = btnGoToFillOrCancel|  
-|Button|Name = btnExit|  
+|Bouton|Name = btnGoToAdd|  
+|Bouton|Name = btnGoToFillOrCancel|  
+|Bouton|Name = btnExit|  
   
- **NewCustomer form**  
+ **Formulaire NewCustomer**  
   
- ![Add  a new customer and place an order](../data-tools/media/simpleappnewcust.png "SimpleAppNewCust")  
+ ![Ajouter un nouveau client et passer une commande](../data-tools/media/simpleappnewcust.png "SimpleAppNewCust")  
   
-|Controls for the NewCustomer form|Properties|  
+|Contrôles du formulaire NewCustomer|Propriétés|  
 |---------------------------------------|----------------|  
 |TextBox|Name = txtCustomerName|  
 |TextBox|Name = txtCustomerID<br /><br /> Readonly = True|  
-|Button|Name = btnCreateAccount|  
+|Bouton|Name = btnCreateAccount|  
 |NumericUpdown|DecimalPlaces = 0<br /><br /> Maximum = 5000<br /><br /> Name = numOrderAmount|  
 |DateTimePicker|Format = Short<br /><br /> Name = dtpOrderDate|  
-|Button|Name = btnPlaceOrder|  
-|Button|Name = btnAddAnotherAccount|  
-|Button|Name = btnAddFinish|  
+|Bouton|Name = btnPlaceOrder|  
+|Bouton|Name = btnAddAnotherAccount|  
+|Bouton|Name = btnAddFinish|  
   
- **FillOrCancel form**  
+ **Formulaire FillOrCancel**  
   
- ![fill or cancel orders](../data-tools/media/simpleappcancelfill.png "SimpleAppCancelFill")  
+ ![remplir ou annuler les commandes](../data-tools/media/simpleappcancelfill.png "SimpleAppCancelFill")  
   
-|Controls for the FillOrCancel form|Properties|  
+|Contrôles du formulaire FillOrCancel|Propriétés|  
 |----------------------------------------|----------------|  
 |TextBox|Name = txtOrderID|  
-|Button|Name = btnFindByOrderID|  
+|Bouton|Name = btnFindByOrderID|  
 |DateTimePicker|Format = Short<br /><br /> Name = dtpFillDate|  
 |DataGridView|Name = dgvCustomerOrders<br /><br /> Readonly = True<br /><br /> RowHeadersVisible = False|  
-|Button|Name = btnCancelOrder|  
-|Button|Name = btnFillOrder|  
-|Button|Name = btnFinishUpdates|  
+|Bouton|Name = btnCancelOrder|  
+|Bouton|Name = btnFillOrder|  
+|Bouton|Name = btnFinishUpdates|  
   
-##  <a name="BKMK_storetheconnectionstring"></a> Store the connection string  
- When your application tries to open a connection to the database, your application must have access to the connection string. To avoid entering the string manually on each form, store the string in the App.config file in your project, and create a method that returns the string when the method is called from any form in your application.  
+##  <a name="BKMK_storetheconnectionstring"></a>Stocker la chaîne de connexion  
+ Quand votre application tente d'ouvrir une connexion à la base de données, elle doit avoir accès à la chaîne de connexion. Pour éviter d’entrer la chaîne manuellement sur chaque formulaire, stocker la chaîne dans le fichier App.config de votre projet, puis créez une méthode qui retourne la chaîne lorsque la méthode est appelée à partir de n’importe quel formulaire de votre application.  
   
- You can find the connection string in **SQL Server Object Explorer** by right-clicking the database, selecting **Properties**, and then locating the ConnectionString property. Use Ctrl+A, Ctrl+C to select and copy the string to the clipboard. 
+ Vous pouvez rechercher la chaîne de connexion en cliquant sur le **Sales** connexion de données dans **l’Explorateur de serveurs** et en choisissant **propriétés**. Recherchez le **ConnectionString** propriété, puis utilisez Ctrl + A, Ctrl + C pour sélectionner et copier la chaîne dans le Presse-papiers. 
   
-1.  If you're using C#, in **Solution Explorer**, expand the **Properties** node under the project, and then open the **Settings.settings** file.  
-    If you're using Visual Basic, in **Solution Explorer**, click **Show All Files**, expand the **My Project** node, and then open the **Settings.settings** file.
+1.  Si vous utilisez c#, dans **l’Explorateur de solutions**, développez le **propriétés** nœud sous le projet, puis ouvrez le **Settings.settings** fichier.  
+    Si vous utilisez Visual Basic, dans **l’Explorateur de solutions**, cliquez sur **afficher tous les fichiers**, développez le **mon projet** nœud, puis ouvrez le **Settings.settings** fichier.
   
-2.  In the **Name** column, enter `connString`.  
+2.  Dans le **nom** colonne, entrez `connString`.  
   
-3.  In the **Type** list, select **(Connection String)**.  
+3.  Dans le **Type** liste, sélectionnez **(chaîne de connexion)**.  
   
-4.  In the **Scope** list, select **Application**.  
-  
+4.  Dans le **étendue** liste, sélectionnez **Application**.    
 
-5.  In the **Value** column, enter your connection string (without any outside quotes), and then save your changes.  
+5.  Dans le **valeur** colonne, entrez votre chaîne de connexion (sans qu’aucun en dehors des guillemets), puis enregistrez vos modifications.  
   
 > [!NOTE]
->  In a real application, you should store the connection string securely, as described in [Connection Strings and Configuration Files](/dotnet/framework/data/adonet/connection-strings-and-configuration-files).     
+>  Dans une application réelle, vous devez stocker en toute sécurité, comme décrit dans la chaîne de connexion [les chaînes de connexion et les fichiers de Configuration](/dotnet/framework/data/adonet/connection-strings-and-configuration-files).     
   
-##  <a name="BKMK_writethecodefortheforms"></a> Write the code for the forms  
- This section contains brief overviews of what each form does. It also provides the code that defines the underlying logic when a button on the form is clicked.  
+##  <a name="BKMK_writethecodefortheforms"></a>Écrivez le code des formulaires  
+ Cette section contient des vues d’ensemble de ce que fait chaque formulaire. Il fournit également le code qui définit la logique sous-jacente du clic sur un bouton sur le formulaire.  
   
-### <a name="navigation-form"></a>Navigation form  
+### <a name="navigation-form"></a>Formulaire Navigation  
 
-The Navigation form opens when you run the application. The **Add an account** button opens the NewCustomer form. The **Fill or cancel orders** button opens the FillOrCancel form. The **Exit** button closes the application.  
+Le formulaire Navigation s'ouvre quand vous exécutez l'application. Le **ajouter un compte** bouton ouvre le formulaire NewCustomer. Le **remplissage ou annuler des commandes** bouton ouvre le formulaire FillOrCancel. Le **Exit** bouton ferme l’application.  
   
-#### <a name="make-the-navigation-form-the-startup-form"></a>Make the Navigation form the startup form  
- If you're using C#, in **Solution Explorer**, open Program.cs, and then change the `Application.Run` line to this: `Application.Run(new Navigation());`  
+#### <a name="make-the-navigation-form-the-startup-form"></a>Faire du formulaire Navigation le formulaire de démarrage  
+ Si vous utilisez c#, dans **l’Explorateur de solutions**, ouvrez Program.cs et modifiez le `Application.Run` cette ligne :`Application.Run(new Navigation());`  
   
- If you're using Visual Basic, in **Solution Explorer**, open the **Properties** window, select the **Application** tab, and then select **SimpleDataApp.Navigation** in the **Startup form** list.  
+ Si vous utilisez Visual Basic, dans **l’Explorateur de solutions**, ouvrez le **propriétés** fenêtre, sélectionnez le **Application** onglet, puis sélectionnez  **SimpleDataApp.Navigation** dans les **du formulaire de démarrage** liste.  
   
-#### <a name="create-auto-generated-event-handlers"></a>Create auto-generated event handlers  
- Double-click the three buttons on the Navigation form to create empty event handler methods. Double-clicking the buttons also adds auto-generated code in the Designer code file that enables a button click to raise an event.  
+#### <a name="create-auto-generated-event-handlers"></a>Créer des gestionnaires d’événements de généré automatiquement  
+ Double-cliquez sur les trois boutons sur l’écran de Navigation pour créer des méthodes de gestionnaire d’événements vide. Double-clic sur les boutons ajoute également le code généré automatiquement dans le fichier de code du concepteur qui permet à un clic de bouton déclencher un événement.  
   
-#### <a name="add-code-for-the-navigation-form-logic"></a>Add code for the Navigation form logic   
- In the code page for the Navigation form, complete the method bodies for the three button click event handlers as shown in the following code.  
+#### <a name="add-code-for-the-navigation-form-logic"></a>Ajouter du code pour la logique du formulaire Navigation   
+ Dans la page de codes du formulaire Navigation complète les corps de méthode pour le bouton de trois gestionnaires d’événements click comme indiqué dans le code suivant.  
   
 [!code-csharp[Navigation#1](../data-tools/codesnippet/CSharp/SimpleDataApp/Navigation.cs#1)]  
 [!code-vb[Navigation#1](../data-tools/codesnippet/VisualBasic/SimpleDataApp/Navigation.vb#1)]   
   
-### <a name="newcustomer-form"></a>NewCustomer form  
- When you enter a customer name and then select the **Create Account** button, the NewCustomer form creates a customer account, and SQL Server returns an IDENTITY value as the new customer ID. You can then place an order for the new account by specifying an amount and an order date and selecting the **Place Order** button.  
+### <a name="newcustomer-form"></a>Formulaire NewCustomer  
+ Lorsque vous entrez un nom de client, puis sélectionnez le **créer un compte** bouton, le formulaire NewCustomer crée un compte client et SQL Server retourne une valeur d’identité en tant que le nouvel ID de client. Vous pouvez ensuite passer une commande pour le nouveau compte en spécifiant une quantité et une date de commande et en sélectionnant le **passer une commande** bouton.  
   
-#### <a name="create-auto-generated-event-handlers"></a>Create auto-generated event handlers  
- Create an empty Click event handler for each button on the NewCustomer form by double-clicking on each of the four buttons. Double-clicking the buttons also adds auto-generated code in the Designer code file that enables a button click to raise an event.  
+#### <a name="create-auto-generated-event-handlers"></a>Créer des gestionnaires d’événements de généré automatiquement  
+ Créer un vide, cliquez sur Gestionnaire d’événements pour chaque bouton sur le formulaire NewCustomer en double-cliquant sur chacun des quatre boutons. Double-clic sur les boutons ajoute également le code généré automatiquement dans le fichier de code du concepteur qui permet à un clic de bouton déclencher un événement.  
   
-#### <a name="add-code-for-the-newcustomer-form-logic"></a>Add code for the NewCustomer form logic  
-To complete the NewCustomer form logic, follow these steps.  
+#### <a name="add-code-for-the-newcustomer-form-logic"></a>Ajouter du code pour la logique du formulaire NewCustomer  
+Pour terminer la logique du formulaire NewCustomer, procédez comme suit.  
 
-1. Bring the ```System.Data.SqlClient``` namespace into scope so that you don't have to fully qualify the names of its members.  
+1. Mettez le ```System.Data.SqlClient``` dans la portée espace de noms afin que vous ne devez entièrement qualifier les noms de ses membres.  
 
      ```csharp  
      using System.Data.SqlClient  
@@ -189,25 +189,25 @@ To complete the NewCustomer form logic, follow these steps.
      Imports System.Data.SqlClient  
      ```  
 
-2. Add some variables and helper methods to the class as shown in the following code.  
+2. Ajouter des variables et les méthodes d’assistance à la classe, comme indiqué dans le code suivant.  
 
      [!code-csharp[NewCustomer#1](../data-tools/codesnippet/CSharp/SimpleDataApp/NewCustomer.cs#1)]  
      [!code-vb[NewCustomer#1](../data-tools/codesnippet/VisualBasic/SimpleDataApp/NewCustomer.vb#1)]  
 
-3. Complete the method bodies for the four button click event handlers as shown in the following code.  
+3. Complète les corps de méthode pour le bouton quatre gestionnaires d’événements click comme indiqué dans le code suivant.  
 
      [!code-csharp[NewCustomer#2](../data-tools/codesnippet/CSharp/SimpleDataApp/NewCustomer.cs#2)]  
      [!code-vb[NewCustomer#2](../data-tools/codesnippet/VisualBasic/SimpleDataApp/NewCustomer.vb#2)]  
 
-### <a name="fillorcancel-form"></a>FillOrCancel form  
- The FillOrCancel form runs a query to return an order when you enter an order ID and then click the **Find Order** button. The returned row appears in a read-only data grid. You can mark the order as canceled (X) if you select the **Cancel Order** button, or you can mark the order as filled (F) if you select the **Fill Order** button. If you select the **Find Order** button again, the updated row appears.  
-#### <a name="create-auto-generated-event-handlers"></a>Create auto-generated event handlers  
- Create empty Click event handlers for the four buttons on the FillOrCancel form by double-clicking the buttons. Double-clicking the buttons also adds auto-generated code in the Designer code file that enables a button click to raise an event.  
+### <a name="fillorcancel-form"></a>Formulaire FillOrCancel  
+ Le formulaire FillOrCancel exécute une requête pour retourner une commande lorsque vous entrez un numéro de commande, puis sur le **Find Order** bouton. La ligne retournée apparaît dans une grille de données en lecture seule. Vous pouvez marquer la commande comme annulée (X) si vous sélectionnez le **annuler une commande** bouton, ou vous pouvez marquer la commande comme remplie (F) si vous sélectionnez le **Fill Order** bouton. Si vous sélectionnez le **Find Order** bouton là encore, la ligne mise à jour s’affiche.  
+#### <a name="create-auto-generated-event-handlers"></a>Créer des gestionnaires d’événements de généré automatiquement  
+ Créer vide cliquez sur les gestionnaires d’événements pour les quatre boutons sur le formulaire FillOrCancel en double-cliquant sur les boutons. Double-clic sur les boutons ajoute également le code généré automatiquement dans le fichier de code du concepteur qui permet à un clic de bouton déclencher un événement.  
   
-#### <a name="add-code-for-the-fillorcancel-form-logic"></a>Add code for the FillOrCancel form logic  
-To complete the FillOrCancel form logic, follow these steps.  
+#### <a name="add-code-for-the-fillorcancel-form-logic"></a>Ajouter du code pour la logique du formulaire FillOrCancel  
+Pour terminer la logique du formulaire FillOrCancel, procédez comme suit.  
 
-1. Bring the following two namespaces into scope so that you don't have to fully qualify the names of their members.  
+1. Placer deux espaces de noms dans la portée pour que vous n’êtes pas obligé de qualifier entièrement les noms de leurs membres.  
 
      ```csharp  
      using System.Data.SqlClient;  
@@ -218,15 +218,18 @@ To complete the FillOrCancel form logic, follow these steps.
      Imports System.Text.RegularExpressions  
      ```  
 
-2. Add a variable and helper method to the class as shown in the following code.  
+2. Ajoutez une méthode de variable et d’assistance à la classe, comme indiqué dans le code suivant.  
 
      [!code-csharp[FillOrCancel#1](../data-tools/codesnippet/CSharp/SimpleDataApp/FillOrCancel.cs#1)]  
      [!code-vb[FillOrCancel#1](../data-tools/codesnippet/VisualBasic/SimpleDataApp/FillOrCancel.vb#1)]  
 
-3. Complete the method bodies for the four button click event handlers as shown in the following code.  
+3. Complète les corps de méthode pour le bouton quatre gestionnaires d’événements click comme indiqué dans le code suivant.  
 
      [!code-csharp[FillOrCancel#2](../data-tools/codesnippet/CSharp/SimpleDataApp/FillOrCancel.cs#2)]  
      [!code-vb[FillOrCancel#2](../data-tools/codesnippet/VisualBasic/SimpleDataApp/FillOrCancel.vb#2)]  
 
-##  <a name="BKMK_testyourapplication"></a> Test your application  
- Select the F5 key to build and test your application after you code each Click event handler, and then after you finish coding.
+##  <a name="BKMK_testyourapplication"></a>Tester votre application  
+Sélectionnez le **F5** clé pour générer et tester votre application après avoir codé chaque gestionnaire d’événements Click, puis après avoir terminé le codage.
+
+## <a name="see-also"></a>Voir aussi
+[Outils de données Visual Studio pour .NET](../data-tools/visual-studio-data-tools-for-dotnet.md)

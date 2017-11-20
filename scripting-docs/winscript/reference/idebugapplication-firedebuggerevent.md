@@ -1,27 +1,30 @@
 ---
-title: "IDebugApplication::FireDebuggerEvent | Microsoft Docs"
-ms.custom: ""
-ms.date: "01/18/2017"
-ms.prod: "windows-script-interfaces"
-ms.reviewer: ""
-ms.suite: ""
-ms.tgt_pltfrm: ""
-ms.topic: "reference"
+title: IDebugApplication::FireDebuggerEvent | Documents Microsoft
+ms.custom: 
+ms.date: 01/18/2017
+ms.prod: windows-script-interfaces
+ms.reviewer: 
+ms.suite: 
+ms.tgt_pltfrm: 
+ms.topic: reference
 apiname: IDebugApplication.FireDebuggerEvent
 apilocation: pdm.dll
-helpviewer_keywords: 
-  - "IDebugApplication::FireDebuggerEvent"
+helpviewer_keywords: IDebugApplication::FireDebuggerEvent
 ms.assetid: fd1f602e-fc15-4158-a6e7-497ff5b4a509
-caps.latest.revision: 8
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 8
+caps.latest.revision: "8"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: c4cb02390602b6b93b8c233f245ede395833d67e
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.translationtype: MT
+ms.contentlocale: fr-FR
+ms.lasthandoff: 10/27/2017
 ---
-# IDebugApplication::FireDebuggerEvent
-Déclenche un événement générique à l'interface d' `IApplicationDebugger` du débogueur.  
+# <a name="idebugapplicationfiredebuggerevent"></a>IDebugApplication::FireDebuggerEvent
+Déclenche un événement générique du débogueur `IApplicationDebugger` interface.  
   
-## Syntaxe  
+## <a name="syntax"></a>Syntaxe  
   
 ```  
 HRESULT FireDebuggerEvent(  
@@ -30,28 +33,28 @@ HRESULT FireDebuggerEvent(
 );  
 ```  
   
-#### Paramètres  
+#### <a name="parameters"></a>Paramètres  
  `riid`  
- \[in\]  GUID pour l'objet.  
+ [in] Un GUID pour l’objet.  
   
  `punk`  
- \[in\]  Un objet événement à exécuter au débogueur.  
+ [in] Objet d’événement à passer au débogueur.  
   
-## Valeur de retour  
- La méthode retourne `HRESULT`.  Les valeurs possibles incluent, mais ne sont pas limitées à, celles dans le tableau suivant.  
+## <a name="return-value"></a>Valeur de retour  
+ La méthode retourne `HRESULT`. Les valeurs possibles sont notamment celles figurant dans le tableau suivant.  
   
 |Valeur|Description|  
-|------------|-----------------|  
+|-----------|-----------------|  
 |`S_OK`|La méthode a réussi.|  
-|`E_NOTIMPL`|La méthode n'est pas actuellement implémentée.|  
+|`E_NOTIMPL`|La méthode n’est pas implémentée actuellement.|  
   
-## Notes  
- La sémantique de GUID et l' `IUnknown` sont entièrement application\/débogueur défini.  
+## <a name="remarks"></a>Remarques  
+ La sémantique du GUID et le `IUnknown` sont entièrement défini/débogueur d’application.  
   
- Cette méthode permet des extensions personnalisées du modèle de débogueur ; il n'est pas actuellement implémentée.  
+ Cette méthode permet des extensions personnalisées du modèle débogueur ; Il n’est pas implémentée actuellement.  
   
- Cette méthode provoque `IApplicationDebugger::onDebuggerEvent` d'être appelé.  
+ Cette méthode provoque `IApplicationDebugger::onDebuggerEvent` à appeler.  
   
-## Voir aussi  
- [IDebugApplication, interface](../../winscript/reference/idebugapplication-interface.md)   
+## <a name="see-also"></a>Voir aussi  
+ [IDebugApplication (Interface)](../../winscript/reference/idebugapplication-interface.md)   
  [IApplicationDebugger::onDebuggerEvent](../../winscript/reference/iapplicationdebugger-ondebuggerevent.md)

@@ -1,30 +1,31 @@
 ---
-title: "&#201;l&#233;ment de VisibilityConstraints | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "VisibilityConstraints"
-helpviewer_keywords: 
-  - "Éléments du schéma XML de VSCT, VisibilityConstraints"
-  - "VisibilityConstraints, élément (schéma XML de VSCT)"
+title: "Élément de VisibilityConstraints | Documents Microsoft"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords: VisibilityConstraints
+helpviewer_keywords:
+- VSCT XML schema elements, VisibilityConstraints
+- VisibilityConstraints element (VSCT XML schema)
 ms.assetid: d6dcd314-6fe4-4693-a189-91fa026c7b34
-caps.latest.revision: 10
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 10
+caps.latest.revision: "10"
+author: gregvanl
+ms.author: gregvanl
+manager: ghogen
+ms.openlocfilehash: f26268e6168379632868c07a9d9c58f9485c8ada
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: fr-FR
+ms.lasthandoff: 10/31/2017
 ---
-# &#201;l&#233;ment de VisibilityConstraints
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
-
-L'élément VisibilityConstraints détermine la visibilité statique de groupes de commandes et barres d'outils. La visibilité est tout d'abord contrôlée par la [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] l'environnement de développement intégré \(IDE\) sans charger le VSPackage.  
+# <a name="visibilityconstraints-element"></a>Élément de VisibilityConstraints
+L’élément VisibilityConstraints détermine la visibilité statique de groupes de commandes et des barres d’outils. La visibilité est tout d’abord contrôlée par le [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] l’environnement de développement intégré (IDE) sans charger le VSPackage.  
   
-## Syntaxe  
+## <a name="syntax"></a>Syntaxe  
   
 ```  
 <VisibilityConstraints>  
@@ -33,34 +34,37 @@ L'élément VisibilityConstraints détermine la visibilité statique de groupes 
 </VisibilityConstraint>  
 ```  
   
-## Attributs et éléments  
+## <a name="attributes-and-elements"></a>Attributs et éléments  
  Les sections suivantes décrivent des attributs, des éléments enfants et des éléments parents.  
   
-### Attributs  
+### <a name="attributes"></a>Attributs  
   
 |Attribut|Description|  
-|--------------|-----------------|  
-|Condition|Facultatif. Consultez [Attributs conditionnels](../extensibility/vsct-xml-schema-conditional-attributes.md).|  
+|---------------|-----------------|  
+|Condition|Facultatif. Consultez [attributs conditionnels](../extensibility/vsct-xml-schema-conditional-attributes.md).|  
   
-### Éléments enfants  
-  
-|Élément|Description|  
-|-------------|-----------------|  
-|[Élément de VisibilityItem](../extensibility/visibilityitem-element.md)|Détermine la visibilité des commandes et des barres d'outils statique.|  
-|[VisibilityConstraints](../extensibility/visibilityconstraints-element.md)|Détermine la visibilité des groupes de barres d'outils et commandes statique.|  
-  
-### Éléments parents  
+### <a name="child-elements"></a>Éléments enfants  
   
 |Élément|Description|  
 |-------------|-----------------|  
-|[Élément de CommandTable](../extensibility/commandtable-element.md)|Définit tous les éléments qui représentent les commandes \(par exemple, des éléments de menu, menus, barres d'outils et zones de liste déroulante\) un VSPackage fournit à l'IDE.|  
+|[Élément VisibilityItem](../extensibility/visibilityitem-element.md)|Détermine la visibilité statique des commandes et des barres d’outils.|  
+|[VisibilityConstraints](../extensibility/visibilityconstraints-element.md)|Détermine la visibilité statique de groupes de commandes et des barres d’outils.|  
   
-## Exemple  
+### <a name="parent-elements"></a>Éléments parents  
+  
+|Élément|Description|  
+|-------------|-----------------|  
+|[Élément CommandTable](../extensibility/commandtable-element.md)|Définit tous les éléments qui représentent des commandes (par exemple, des éléments de menu, menus, barres d’outils et zones de liste déroulante) par un VSPackage à l’IDE.|  
+  
+## <a name="example"></a>Exemple  
   
 ```  
-<VisibilityConstraints> <VisibilityItem guid="cmdSetGuidMyProductCommands"     id="cmdidAddWidget" context="guidNotViewSourceMode"/> </VisibilityConstraints>  
+<VisibilityConstraints>  
+  <VisibilityItem guid="cmdSetGuidMyProductCommands"     id="cmdidAddWidget"  
+    context="guidNotViewSourceMode"/>  
+</VisibilityConstraints>  
 ```  
   
-## Voir aussi  
+## <a name="see-also"></a>Voir aussi  
  [Élément de VisibilityItem](../extensibility/visibilityitem-element.md)   
- [Table de commandes de Visual Studio \(. Fichiers VSCT\)](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)
+ [Fichiers Visual Studio Command Table (.Vsct)](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)

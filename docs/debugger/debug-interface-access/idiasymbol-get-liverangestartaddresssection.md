@@ -1,58 +1,57 @@
 ---
-title: "IDiaSymbol::get_liveRangeStartAddressSection | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-debug"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "IDiaSymbol::get_liveRangeStartAddressSection"
+title: IDiaSymbol::get_liveRangeStartAddressSection | Documents Microsoft
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-debug
+ms.tgt_pltfrm: 
+ms.topic: article
+dev_langs: C++
+helpviewer_keywords: IDiaSymbol::get_liveRangeStartAddressSection
 ms.assetid: 892b80ff-5957-4233-b4d7-6144167be289
-caps.latest.revision: 9
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 9
+caps.latest.revision: "9"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: 01bd3d099bc714aa20a9066c414b4222d3894f5e
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: fr-FR
+ms.lasthandoff: 10/31/2017
 ---
-# IDiaSymbol::get_liveRangeStartAddressSection
-[!INCLUDE[vs2017banner](../../code-quality/includes/vs2017banner.md)]
-
-Retourne la partie de la section de l'adresse de début de la plage dans laquelle le symbole local est valide.  
+# <a name="idiasymbolgetliverangestartaddresssection"></a>IDiaSymbol::get_liveRangeStartAddressSection
+Retourne la partie de la section de l’adresse de départ de la plage dans laquelle le symbole local est valide.  
   
-## Syntaxe  
+## <a name="syntax"></a>Syntaxe  
   
-```cpp#  
-HRESULT get_liveRangeStartAddressSection (   
-   DWORD* section  
+```C++  
+HRESULT get_liveRangeStartAddressSection (   
+   DWORD* section  
 );  
 ```  
   
-#### Paramètres  
+#### <a name="parameters"></a>Paramètres  
  `section`  
- \[out\]  Retourne la partie de la section de la plage d'adresses de départ.  
+ [out] Retourne la partie de la section de la plage d’adresses départ.  
   
-## Valeur de retour  
- En cas de réussite, retourne `S_OK`; sinon, retourne un code d'erreur.  
+## <a name="return-value"></a>Valeur de retour  
+ En cas de réussite, retourne `S_OK`; sinon, retourne un code d’erreur.  
   
 > [!NOTE]
->  Code d'erreur retourné signifie que le symbole n'a pas les informations dynamiques de la plage.  
+>  Un code d’erreur signifie que le symbole n’a pas d’informations sur la plage dynamique.  
   
-## Notes  
- L'adresse formée par la section et l'offset est le début de la plage dans laquelle le symbole est valide.  
+## <a name="remarks"></a>Remarques  
+ L’adresse formée par la section et le décalage est le début de la plage dans laquelle le symbole est valide.  
   
- Pour obtenir la partie de l'adresse offset, utilisez [IDiaSymbol::get\_liveRangeStartAddressOffset](../Topic/IDiaSymbol::get_liveRangeStartAddressOffset.md).  
+ Pour obtenir la partie décalage de l’adresse, utilisez [IDiaSymbol::get_liveRangeStartAddressOffset](../../debugger/debug-interface-access/idiasymbol-get-liverangestartaddressoffset.md).  
   
-## Configuration requise  
- en\-tête : Dia2.h  
+## <a name="requirements"></a>Spécifications  
+ En-tête : Dia2.h  
   
- bibliothèque : diaguids.lib  
+ Bibliothèque : diaguids.lib  
   
- DLL : msdia100.dll  
+ DLL : msdia100.dll  
   
-## Voir aussi  
+## <a name="see-also"></a>Voir aussi  
  [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

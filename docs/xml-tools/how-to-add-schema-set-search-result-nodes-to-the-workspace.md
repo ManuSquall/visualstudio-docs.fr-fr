@@ -1,42 +1,43 @@
 ---
-title: "Proc&#233;dure&#160;: ajouter des nœuds de r&#233;sultat d&#39;une recherche dans un jeu de sch&#233;mas &#224; l&#39;espace de travail | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-general"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+title: "Comment : ajouter des nœuds de résultat de recherche de jeu de schéma pour l’espace de travail | Documents Microsoft"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-general
+ms.tgt_pltfrm: 
+ms.topic: article
 ms.assetid: ff33b3cc-4db9-4b4e-9378-b45ed5999b18
-caps.latest.revision: 3
-author: "kempb"
-ms.author: "kempb"
-manager: "ghogen"
-caps.handback.revision: 3
+caps.latest.revision: "3"
+author: gewarren
+ms.author: gewarren
+manager: ghogen
+ms.openlocfilehash: 659eaa454243dac8ac05a5f2749237944833da10
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: fr-FR
+ms.lasthandoff: 10/31/2017
 ---
-# Proc&#233;dure&#160;: ajouter des nœuds de r&#233;sultat d&#39;une recherche dans un jeu de sch&#233;mas &#224; l&#39;espace de travail
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
-
+# <a name="how-to-add-schema-set-search-result-nodes-to-the-workspace"></a>Procédure : ajouter des nœuds de résultat d'une recherche dans un jeu de schémas à l'espace de travail
 Cette rubrique explique comment ajouter des nœuds mis en surbrillance dans l'Explorateur de schémas XML suite à une recherche par mot clé dans l'espace de travail.  
   
 > [!NOTE]
->  Seuls des nœuds globaux peuvent être ajoutés à l'[espace de travail](../xml-tools/xml-schema-designer-workspace.md).  
+>  Seuls des nœuds globaux peuvent être ajoutés à la [espace de travail](../xml-tools/xml-schema-designer-workspace.md).  
   
- Cet exemple utilise l'exemple [Schéma de bon de commande](../Topic/Sample%20XSD%20File:%20Purchase%20Order%20Schema.md).  
+ Cet exemple utilise l’exemple [schéma de bon de commande](../xml-tools/sample-xsd-file-purchase-order-schema.md).  
   
-### Pour ajouter des nœuds de résultat de jeu de schémas  
+### <a name="to-add-schema-set-result-nodes"></a>Pour ajouter des nœuds de résultat de jeu de schémas  
   
-1.  Suivez les étapes dans [Procédure : créer et modifier un fichier de schéma XSD](../xml-tools/how-to-create-and-edit-an-xsd-schema-file.md).  
+1.  Suivez les étapes de [Comment : créer et modifier un fichier de schéma XSD](../xml-tools/how-to-create-and-edit-an-xsd-schema-file.md).  
   
-2.  Tapez « purchaseOrder » dans la zone de texte de recherche de la barre d'outils de l'[Explorateur XML](../xml-tools/xml-schema-explorer.md), puis cliquez sur le bouton de recherche.  
+2.  Tapez « purchaseOrder » dans la zone de texte de recherche de la [Explorateur XML](../xml-tools/xml-schema-explorer.md) barre d’outils et cliquez sur le bouton de recherche.  
   
-     ![Recherche par mot clé de l'Explorateur de schémas XML](../xml-tools/media/schemaexplorersearch.gif "SchemaExplorerSearch")  
+     ![Recherche de mot clé de l’Explorateur de schémas XML](../xml-tools/media/schemaexplorersearch.gif "SchemaExplorerSearch")  
   
      Les résultats de la recherche sont mis en surbrillance dans l'Explorateur de schémas XML et sont marqués par des graduations dans la barre de défilement verticale.  
   
-3.  Ajoutez les résultats de la recherche à l'espace de travail en cliquant sur le bouton **Ajouter les nœuds en surbrillance à l'espace de travail** dans le volet de synthèse des résultats.  
+3.  Ajouter les résultats de recherche à l’espace de travail en cliquant sur le **ajouter des nœuds en surbrillance à l’espace de travail** bouton dans le volet de synthèse des résultats.  
   
-     ![Résultat de la recherche de l'Explorateur de schémas XML](../xml-tools/media/schemaexplorersearchresult.gif "SchemaExplorerSearchResult")  
+     ![Résultat de recherche de l’Explorateur de schémas XML](../xml-tools/media/schemaexplorersearchresult.gif "SchemaExplorerSearchResult")  
   
-     Le nœud `purchaseOrder` et le nœud `PurchaseOrderType` apparaissent en regard l'un de l'autre sur l'aire de conception de la [vue du graphique](../xml-tools/graph-view.md).Étant donné que les deux nœuds sont associés \(l'élément `purchaseOrder` est du type `PurchaseOrderType`\), une flèche est dessinée entre eux.
+     Le `purchaseOrder` nœud et le `PurchaseOrderType` nœud apparaissent en regard de l’autre sur l’aire de conception de la [vue du graphique](../xml-tools/graph-view.md). Étant donné que les deux nœuds sont associés (l'élément `purchaseOrder` est du type `PurchaseOrderType`), une flèche est dessinée entre eux.

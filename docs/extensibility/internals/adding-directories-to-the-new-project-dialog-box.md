@@ -1,31 +1,32 @@
 ---
-title: "Ajout de r&#233;pertoires &#224; la bo&#238;te de dialogue Nouveau projet | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-helpviewer_keywords: 
-  - "Boîte de dialogue Nouveau projet, extension"
+title: "Ajout de répertoires à la boîte de dialogue Nouveau projet | Documents Microsoft"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+helpviewer_keywords: New Project dialog box, extending
 ms.assetid: 53b328f5-20bb-49a3-bf9e-1818f4fbdf50
-caps.latest.revision: 13
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 13
+caps.latest.revision: "13"
+author: gregvanl
+ms.author: gregvanl
+manager: ghogen
+ms.openlocfilehash: f24fd3c3a0ffb537c63346ef867a2a43481acfa9
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: fr-FR
+ms.lasthandoff: 10/31/2017
 ---
-# Ajout de r&#233;pertoires &#224; la bo&#238;te de dialogue Nouveau projet
-[!INCLUDE[vs2017banner](../../code-quality/includes/vs2017banner.md)]
-
-Lorsque vous créez de nouveaux types de projet, vous pouvez également signaler un nouveau répertoire dans la boîte de dialogue de **Nouveau projet** pour les afficher à utiliser comme modèles.  L'exemple de code suivant explique comment inscrire un nouveau répertoire, également connu sous le nœud.  Dans l'exemple, les modèles exposés par VSPackage CLSID\_Package sont enregistrés.  Par conséquent, le côté gauche de la boîte de dialogue de **Nouveau projet** offre le nœud ajouté, avec un nom déterminé par ressource en Folder\_Label\_ResID.  Cette ressource est chargée de la DLL satellites de VSPackage.  
+# <a name="adding-directories-to-the-new-project-dialog-box"></a>Ajout de répertoires à la boîte de dialogue Nouveau projet
+Lorsque vous créez de nouveaux types de projet, vous pouvez également inscrire un nouveau répertoire dans le **nouveau projet** boîte de dialogue pour les afficher pour une utilisation en tant que modèles. L’exemple de code suivant explique comment inscrire un nouveau répertoire, également appelé un nœud. Dans l’exemple, les modèles exposées par le VSPackage CLSID_Package sont enregistrés. Par conséquent, le côté gauche de la **nouveau projet** boîte de dialogue donne le nœud ajouté, avec un nom déterminé par la ressource Folder_Label_ResID. Cette ressource est chargée à partir de la DLL du VSPackage satellite.  
   
- La valeur de **Folder** représente le GUID d'un dossier sous lequel le nœud de Folder\_Label\_ResID s'affiche.  Dans l'exemple, un GUID représente le dossier de **D'autres projets** dans le volet de **Types de projets** de la boîte de dialogue de **Nouveau projet** .  si la valeur de **D'autres projets** est absente, le nom est positionné au niveau supérieur.  
+ Le **dossier** valeur représente un GUID d’un dossier sous lequel le nœud Folder_Label_ResID s’affiche. Dans l’exemple, le GUID représente le **autres projets** dossier dans le **Types de projets** volet de la **nouveau projet** boîte de dialogue. Si le **autres projets** valeur est absente, l’étiquette est positionnée au niveau supérieur.  
   
- La valeur de TemplatesDir spécifie le chemin d'accès complet du répertoire qui contient les modèles de projet.  Ces fichiers peuvent être des fichiers .vsz ou des fichiers modèles standard à cloner.  
+ La valeur TemplatesDir Spécifie le chemin d’accès complet du répertoire qui contient les modèles de projet. Ces fichiers peuvent être des fichiers .vsz ou des fichiers de modèle standard à cloner.  
   
- Si vous spécifiez TemplatesLocalizedSubDir, il doit être l'ID de ressource d'une chaîne qui nomme le sous\-répertoire de TemplatesDir qui contient les modèles localisés.  Étant donné que [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] charge la ressource de type chaîne d'une DLL satellite si vous avez un, chaque DLL satellite peut contenir un nom différent de sous\-répertoires. la valeur de SortPriority spécifie une priorité de tri.  
+ Si vous spécifiez TemplatesLocalizedSubDir, il doit être l’ID de ressource d’une chaîne qui désigne le sous-répertoire de TemplatesDir qui contient les modèles localisés. Étant donné que [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] charge la ressource de chaîne à partir d’une DLL satellite si vous en avez, chaque DLL satellite peut contenir un nom de sous-répertoire différents. La valeur SortPriority spécifie un ordre de priorité.  
   
 ```  
 NoRemove NewProjectTemplates  
@@ -46,7 +47,7 @@ NoRemove NewProjectTemplates
 }  
 ```  
   
-## Voir aussi  
- [L’inscription de projet et modèles d’élément](../../extensibility/internals/registering-project-and-item-templates.md)   
- [Ajout d'éléments à l'ajouter un nouvel élément boîtes de dialogue](../../extensibility/internals/adding-items-to-the-add-new-item-dialog-boxes.md)   
- [Ajout de répertoires à la boîte de dialogue Nouvel élément Ajouter](../../extensibility/internals/adding-directories-to-the-add-new-item-dialog-box.md)
+## <a name="see-also"></a>Voir aussi  
+ [L’inscription des modèles de projet et élément](../../extensibility/internals/registering-project-and-item-templates.md)   
+ [Ajout d’éléments à l’ajouter un nouvel élément boîtes de dialogue](../../extensibility/internals/adding-items-to-the-add-new-item-dialog-boxes.md)   
+ [Ajout de répertoires à la boîte de dialogue Ajouter un élément](../../extensibility/internals/adding-directories-to-the-add-new-item-dialog-box.md)

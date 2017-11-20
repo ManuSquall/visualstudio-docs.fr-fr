@@ -1,46 +1,29 @@
 ---
-title: IDebugBinder3::GetEEService | Microsoft Docs
+title: IDebugBinder3::GetEEService | Documents Microsoft
 ms.custom: 
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-sdk
+ms.technology: vs-ide-sdk
 ms.tgt_pltfrm: 
 ms.topic: article
-f1_keywords:
-- IDebugBinder3::GetEEService
-helpviewer_keywords:
-- IDebugBinder3::GetEEService method
+f1_keywords: IDebugBinder3::GetEEService
+helpviewer_keywords: IDebugBinder3::GetEEService method
 ms.assetid: eb07aa40-8cd9-4a52-a4c7-4affd2307a01
-caps.latest.revision: 12
+caps.latest.revision: "12"
+author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-translation.priority.mt:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
+ms.openlocfilehash: aa705de1871530c8f53f5b29b6040909530b6639
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
 ms.translationtype: MT
-ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
-ms.openlocfilehash: db110733d543ac797d84c323c1d9f7b96b4ef8be
-ms.contentlocale: fr-fr
-ms.lasthandoff: 08/28/2017
-
+ms.contentlocale: fr-FR
+ms.lasthandoff: 10/31/2017
 ---
 # <a name="idebugbinder3geteeservice"></a>IDebugBinder3::GetEEService
-This method returns a requested service.  
+Cette méthode retourne le service demandé.  
   
-## <a name="syntax"></a>Syntax  
+## <a name="syntax"></a>Syntaxe  
   
 ```cpp  
 HRESULT GetEEService(  
@@ -60,27 +43,27 @@ Int GetEEService(
 );  
 ```  
   
-#### <a name="parameters"></a>Parameters  
+#### <a name="parameters"></a>Paramètres  
  `vendor`  
- [in] `GUID` of a vendor (a null value is acceptable).  
+ [in] `GUID` d’un fournisseur (une valeur null est acceptable).  
   
  `language`  
- [in] `GUID` of a language (a null value is acceptable).  
+ [in] `GUID` d’une langue (une valeur null est acceptable).  
   
  `iid`  
- [in] `IID` of the service to obtain.  
+ [in] `IID` du service à obtenir.  
   
  `ppService`  
- [out] An interface to the requested service.  
+ [out] Une interface pour le service demandé.  
   
-## <a name="return-value"></a>Return Value  
- If successful, returns `S_OK`; otherwise, returns an error code.  
+## <a name="return-value"></a>Valeur de retour  
+ En cas de réussite, retourne `S_OK`; sinon, retourne un code d’erreur.  
   
-## <a name="remarks"></a>Remarks  
- Pass the `IID` for the [IEEVisualizerServiceProvider](../../../extensibility/debugger/reference/ieevisualizerserviceprovider.md) interface (`IID_IEEVisualizerServiceProvider`) to see if the Type Visualizer service is available. If so, the expression evaluator can obtain the [IEEVisualizerService](../../../extensibility/debugger/reference/ieevisualizerservice.md) interface to support type visualizers. See [Visualizing and Viewing Data](../../../extensibility/debugger/visualizing-and-viewing-data.md) for details.  
+## <a name="remarks"></a>Remarques  
+ Passez le `IID` pour le [IEEVisualizerServiceProvider](../../../extensibility/debugger/reference/ieevisualizerserviceprovider.md) interface (`IID_IEEVisualizerServiceProvider`) pour voir si le service de visualiseur de Type est disponible. Si, par conséquent, l’évaluateur d’expression peut obtenir le [IEEVisualizerService](../../../extensibility/debugger/reference/ieevisualizerservice.md) interface pour prendre en charge les visualiseurs de types. Consultez [Visualizing et affichage des données](../../../extensibility/debugger/visualizing-and-viewing-data.md) pour plus d’informations.  
   
-## <a name="see-also"></a>See Also  
+## <a name="see-also"></a>Voir aussi  
  [IDebugBinder3](../../../extensibility/debugger/reference/idebugbinder3.md)   
  [IEEVisualizerServiceProvider](../../../extensibility/debugger/reference/ieevisualizerserviceprovider.md)   
  [IEEVisualizerService](../../../extensibility/debugger/reference/ieevisualizerservice.md)   
- [Visualizing and Viewing Data](../../../extensibility/debugger/visualizing-and-viewing-data.md)
+ [Visualisation et affichage des données](../../../extensibility/debugger/visualizing-and-viewing-data.md)

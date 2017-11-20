@@ -1,46 +1,29 @@
 ---
-title: IDebugProgram2::GetMemoryBytes | Microsoft Docs
+title: IDebugProgram2::GetMemoryBytes | Documents Microsoft
 ms.custom: 
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-sdk
+ms.technology: vs-ide-sdk
 ms.tgt_pltfrm: 
 ms.topic: article
-f1_keywords:
-- IDebugProgram2::GetMemoryBytes
-helpviewer_keywords:
-- IDebugProgram2::GetMemoryBytes
+f1_keywords: IDebugProgram2::GetMemoryBytes
+helpviewer_keywords: IDebugProgram2::GetMemoryBytes
 ms.assetid: 1cdedb47-caf8-468e-aaf4-163f16afb403
-caps.latest.revision: 10
+caps.latest.revision: "10"
+author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-translation.priority.mt:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
+ms.openlocfilehash: 927b0b8433e7a39cd864cce614947d43402037e0
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
 ms.translationtype: MT
-ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
-ms.openlocfilehash: 78da58e71bea0bdbec5c85146b8123ae6c66295e
-ms.contentlocale: fr-fr
-ms.lasthandoff: 08/28/2017
-
+ms.contentlocale: fr-FR
+ms.lasthandoff: 10/31/2017
 ---
 # <a name="idebugprogram2getmemorybytes"></a>IDebugProgram2::GetMemoryBytes
-Retrieves the memory bytes occupied by the program.  
+Récupère les octets de mémoire occupées par le programme.  
   
-## <a name="syntax"></a>Syntax  
+## <a name="syntax"></a>Syntaxe  
   
 ```cpp  
 HRESULT GetMemoryBytes(   
@@ -54,16 +37,16 @@ int GetMemoryBytes(
 );  
 ```  
   
-#### <a name="parameters"></a>Parameters  
+#### <a name="parameters"></a>Paramètres  
  `ppMemoryBytes`  
- [out] Returns an [IDebugMemoryBytes2](../../../extensibility/debugger/reference/idebugmemorybytes2.md) object that represents the memory bytes of the program.  
+ [out] Retourne un [IDebugMemoryBytes2](../../../extensibility/debugger/reference/idebugmemorybytes2.md) objet qui représente les octets de mémoire du programme.  
   
-## <a name="return-value"></a>Return Value  
- If successful, returns `S_OK`; otherwise, returns an error code.  
+## <a name="return-value"></a>Valeur de retour  
+ En cas de réussite, retourne `S_OK`; sinon, retourne un code d’erreur.  
   
-## <a name="remarks"></a>Remarks  
- The memory bytes as represented by the [IDebugMemoryBytes2](../../../extensibility/debugger/reference/idebugmemorybytes2.md) object is for the program's image in memory and not any memory that was allocated when the program was executed.  
+## <a name="remarks"></a>Remarques  
+ Les octets de mémoire, tel que représenté par la [IDebugMemoryBytes2](../../../extensibility/debugger/reference/idebugmemorybytes2.md) objet est utilisé dans l’image du programme en mémoire et pas de mémoire qui a été alloué lorsque le programme a été exécuté.  
   
-## <a name="see-also"></a>See Also  
+## <a name="see-also"></a>Voir aussi  
  [IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md)   
  [IDebugMemoryBytes2](../../../extensibility/debugger/reference/idebugmemorybytes2.md)

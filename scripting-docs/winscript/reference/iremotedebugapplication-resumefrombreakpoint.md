@@ -1,27 +1,30 @@
 ---
-title: "IRemoteDebugApplication::ResumeFromBreakPoint | Microsoft Docs"
-ms.custom: ""
-ms.date: "01/18/2017"
-ms.prod: "windows-script-interfaces"
-ms.reviewer: ""
-ms.suite: ""
-ms.tgt_pltfrm: ""
-ms.topic: "reference"
+title: IRemoteDebugApplication::ResumeFromBreakPoint | Documents Microsoft
+ms.custom: 
+ms.date: 01/18/2017
+ms.prod: windows-script-interfaces
+ms.reviewer: 
+ms.suite: 
+ms.tgt_pltfrm: 
+ms.topic: reference
 apiname: IRemoteDebugApplication.ResumeFromBreakPoint
 apilocation: pdm.dll
-helpviewer_keywords: 
-  - "IRemoteDebugApplication::ResumeFromBreakPoint"
+helpviewer_keywords: IRemoteDebugApplication::ResumeFromBreakPoint
 ms.assetid: a613cc2b-1d69-4713-a235-64372c253b4a
-caps.latest.revision: 8
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 8
+caps.latest.revision: "8"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: 5da5fdbaaf74f463161f1a98bbad7d4d147b418d
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.translationtype: MT
+ms.contentlocale: fr-FR
+ms.lasthandoff: 10/27/2017
 ---
-# IRemoteDebugApplication::ResumeFromBreakPoint
-Continue une application qui est actuellement dans un point d'arrêt.  
+# <a name="iremotedebugapplicationresumefrombreakpoint"></a>IRemoteDebugApplication::ResumeFromBreakPoint
+Continue une application en cours d’un point d’arrêt.  
   
-## Syntaxe  
+## <a name="syntax"></a>Syntaxe  
   
 ```  
 HRESULT ResumeFromBreakPoint(  
@@ -31,27 +34,27 @@ HRESULT ResumeFromBreakPoint(
 );  
 ```  
   
-#### Paramètres  
+#### <a name="parameters"></a>Paramètres  
  `prptFocus`  
- \[in\]  Pour les modes de progression, le thread qui doit être affecté par le mode de progression.  
+ [in] Pour le pas à pas de modes, le thread qui doit être affecté par le mode d’exécution pas à pas.  
   
  `bra`  
- \[in\]  L'action à effectuer en reprenant l'application.  
+ [in] L’action à entreprendre lors de la reprise de l’application.  
   
  `era`  
- \[in\]  L'action de rentrer le cas que l'application a été arrêté en raison d'une erreur.  
+ [in] L’action à entreprendre dans le cas où l’application est arrêtée en raison d’une erreur.  
   
-## Valeur de retour  
- La méthode retourne `HRESULT`.  Les valeurs possibles incluent, mais ne sont pas limitées à, celles dans le tableau suivant.  
+## <a name="return-value"></a>Valeur de retour  
+ La méthode retourne `HRESULT`. Les valeurs possibles sont notamment celles figurant dans le tableau suivant.  
   
 |Valeur|Description|  
-|------------|-----------------|  
+|-----------|-----------------|  
 |`S_OK`|La méthode a réussi.|  
   
-## Notes  
- Cette méthode continue une application qui est actuellement dans un point d'arrêt.  
+## <a name="remarks"></a>Remarques  
+ Cette méthode continue d’une application en cours d’un point d’arrêt.  
   
-## Voir aussi  
- [IRemoteDebugApplication, interface](../../winscript/reference/iremotedebugapplication-interface.md)   
- [BREAKRESUMEACTION, énumération](../../winscript/reference/breakresumeaction-enumeration.md)   
- [ERRORRESUMEACTION, énumération](../../winscript/reference/errorresumeaction-enumeration.md)
+## <a name="see-also"></a>Voir aussi  
+ [IRemoteDebugApplication (Interface)](../../winscript/reference/iremotedebugapplication-interface.md)   
+ [Énumération BREAKRESUMEACTION](../../winscript/reference/breakresumeaction-enumeration.md)   
+ [Énumération ERRORRESUMEACTION](../../winscript/reference/errorresumeaction-enumeration.md)

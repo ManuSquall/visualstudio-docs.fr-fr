@@ -1,60 +1,43 @@
 ---
-title: 'CA2146: Types must be at least as critical as their base types and interfaces | Microsoft Docs'
+title: "CA2146 : Les Types doivent être au moins aussi critiques que leurs types de base et les interfaces | Documents Microsoft"
 ms.custom: 
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-devops-test
+ms.technology: vs-ide-code-analysis
 ms.tgt_pltfrm: 
 ms.topic: article
-f1_keywords:
-- CA2146
+f1_keywords: CA2146
 ms.assetid: 241fb784-1f6b-46e5-8ceb-c438e341d38e
-caps.latest.revision: 11
-author: stevehoag
-ms.author: shoag
-manager: wpickett
-translation.priority.ht:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
-ms.translationtype: HT
-ms.sourcegitcommit: eb5c9550fd29b0e98bf63a7240737da4f13f3249
-ms.openlocfilehash: ee68c96bff15b6abb238221d43e6c0dfdff32c4f
-ms.contentlocale: fr-fr
-ms.lasthandoff: 08/30/2017
-
+caps.latest.revision: "11"
+author: gewarren
+ms.author: gewarren
+manager: ghogen
+ms.openlocfilehash: 8e4cd4eb0d6313986316f01428179e73006fc449
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: fr-FR
+ms.lasthandoff: 10/31/2017
 ---
-# <a name="ca2146-types-must-be-at-least-as-critical-as-their-base-types-and-interfaces"></a>CA2146: Types must be at least as critical as their base types and interfaces
+# <a name="ca2146-types-must-be-at-least-as-critical-as-their-base-types-and-interfaces"></a>CA2146 : Les types doivent être au moins aussi critiques que les types de base et les interfaces
 |||  
 |-|-|  
 |TypeName|TypesMustBeAtLeastAsCriticalAsBaseTypes|  
 |CheckId|CA2146|  
-|Category|Microsoft.Security|  
-|Breaking Change|Breaking|  
+|Catégorie|Microsoft.Security|  
+|Modification avec rupture|Rupture|  
   
 ## <a name="cause"></a>Cause  
- A transparent type is derived from a type that is marked with the <xref:System.Security.SecuritySafeCriticalAttribute> or the <xref:System.Security.SecurityCriticalAttribute>, or a type that is marked with the <xref:System.Security.SecuritySafeCriticalAttribute> attribute is derived from a type that is marked with the <xref:System.Security.SecurityCriticalAttribute> attribute.  
+ Un type transparent est dérivé d’un type qui est marqué avec la <xref:System.Security.SecuritySafeCriticalAttribute> ou <xref:System.Security.SecurityCriticalAttribute>, ou un type qui est marqué avec la <xref:System.Security.SecuritySafeCriticalAttribute> attribut est dérivé d’un type qui est marqué avec la <xref:System.Security.SecurityCriticalAttribute> attribut.  
   
-## <a name="rule-description"></a>Rule Description  
- This rule fires when a derived type has a security transparency attribute that is not as critical as its base type or implemented interface. Only critical types can derive from critical base types or implement critical interfaces, and only critical or safe-critical types can derive from safe-critical base types or implement safe-critical interfaces. Violations of this rule in level 2 transparency result in a <xref:System.TypeLoadException> for the derived type.  
+## <a name="rule-description"></a>Description de la règle  
+ Cette règle se déclenche lorsqu'un type dérivé a un attribut de transparence de sécurité qui n'est pas aussi critique que son type de base ou l'interface implémentée. Seuls les types critiques peuvent dériver des types de base critiques ou implémenter des interfaces critiques, et seuls les types critiques ou critiques sécurisés peuvent dériver des types de base critiques sécurisés ou implémenter des interfaces critiques sécurisées. Les violations de cette règle de transparence de niveau 2 provoquent un <xref:System.TypeLoadException> pour le type dérivé.  
   
-## <a name="how-to-fix-violations"></a>How to Fix Violations  
- To fix this violation, mark the derived or implementing type with a transparency attribute that is at least as critical as the base type or interface.  
+## <a name="how-to-fix-violations"></a>Comment corriger les violations  
+ Pour résoudre cette violation, marquez le type dérivé ou d’implémentation avec un attribut de transparence est au moins aussi critique que le type de base ou interface.  
   
-## <a name="when-to-suppress-warnings"></a>When to Suppress Warnings  
- Do not suppress a warning from this rule.  
+## <a name="when-to-suppress-warnings"></a>Quand supprimer les avertissements  
+ Ne supprimez aucun avertissement de cette règle.  
   
-## <a name="example"></a>Example  
+## <a name="example"></a>Exemple  
  [!code-csharp[FxCop.Security.CA2146.TypesMustBeAtLeastAsCriticalAsBaseTypes#1](../code-quality/codesnippet/CSharp/ca2146-types-must-be-at-least-as-critical-as-their-base-types-and-interfaces_1.cs)]

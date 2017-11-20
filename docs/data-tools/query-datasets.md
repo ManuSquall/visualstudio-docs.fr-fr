@@ -1,5 +1,5 @@
 ---
-title: Query datasets | Microsoft Docs
+title: "Interroger des jeux de données | Documents Microsoft"
 ms.custom: 
 ms.date: 11/04/2016
 ms.reviewer: 
@@ -10,89 +10,92 @@ dev_langs:
 - VB
 - CSharp
 ms.assetid: 7b1a91cf-8b5a-4fc0-ac36-0dc2d336fa1b
-caps.latest.revision: 8
+caps.latest.revision: "8"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-translation.priority.mt:
-- cs-cz
-- pl-pl
-- pt-br
-- tr-tr
-ms.translationtype: HT
-ms.sourcegitcommit: 33a857c2d8585e2e8da9bcd9158190366a3b6830
-ms.openlocfilehash: a86d6344ec40f48aa3d28cb6372d54b27cc52995
-ms.contentlocale: fr-fr
-ms.lasthandoff: 09/07/2017
-
+ms.technology: vs-data-tools
+ms.openlocfilehash: 10e37db09efab78b3048ddeab4096325ba00802f
+ms.sourcegitcommit: ee42a8771f0248db93fd2e017a22e2506e0f9404
+ms.translationtype: MT
+ms.contentlocale: fr-FR
+ms.lasthandoff: 11/09/2017
 ---
-# <a name="query-datasets"></a>Query datasets
-To search for specific records in a dataset,  use the FindBy method on the DataTable, write your own foreach statement to loop over the table's Rows collection, or use [LINQ to DataSet](/dotnet/framework/data/adonet/linq-to-dataset).  
+# <a name="query-datasets"></a>Jeux de données de requête
+Pour rechercher des enregistrements spécifiques dans un jeu de données, utilisez la méthode FindBy sur la table de données, écrire votre propre instruction foreach pour parcourir la collection de lignes de la table, ou utilisez [LINQ to DataSet](/dotnet/framework/data/adonet/linq-to-dataset).  
   
-## <a name="dataset-case-sensitivity"></a>Dataset case sensitivity  
- Within a dataset, table and column names are  case-insensitive by default — that is, a table in a dataset called "Customers" can also be referred to as "customers." This matches the naming conventions in many databases,  including SQL Server. In SQL Server, the default behavior is that the names of data elements cannot be distinguished only by case.  
-  
-> [!NOTE]
->  Unlike datasets, XML documents are case-sensitive, so the names of data elements defined in schemas are case-sensitive. For example, schema protocol allows the schema to define a table called "Customers" and a different table called "customers." This can result in name collisions when a schema that contains elements that differ only by case is used to generate a dataset class.  
-  
- Case sensitivity, however, can be a factor in how data is interpreted within the dataset. For example, if you filter data in a dataset table, the search criteria might return different results depending on whether the comparison is case-sensitive. You can control the case sensitivity of filtering, searching, and sorting by setting the dataset's <xref:System.Data.DataSet.CaseSensitive%2A> property. All the tables in the dataset inherit the value of this property by default. (You can override this property for each individual table by setting the table's <xref:System.Data.DataTable.CaseSensitive%2A> property.)  
-  
-## <a name="locate-a-specific-row-in-a-data-table"></a>Locate a specific row in a data table  
-  
-#### <a name="to-find-a-row-in-a-typed-dataset-with-a-primary-key-value"></a>To find a row in a typed dataset with a primary key value  
-  
--   To locate a row, call the strongly typed `FindBy` method that uses the table's primary key.  
-  
-     In the following example, the `CustomerID` column is the primary key of the `Customers` table. This means that the generated `FindBy` method is `FindByCustomerID`. The example shows how to assign a specific <xref:System.Data.DataRow> to a variable by using the generated `FindBy` method.  
-  
-     [!code-csharp[VbRaddataEditing#18](../data-tools/codesnippet/CSharp/query-datasets_1.cs)]  [!code-vb[VbRaddataEditing#18](../data-tools/codesnippet/VisualBasic/query-datasets_1.vb)]  
-  
-#### <a name="to-find-a-row-in-an-untyped-dataset-with-a-primary-key-value"></a>To find a row in an untyped dataset with a primary key value  
-  
--   Call the <xref:System.Data.DataRowCollection.Find%2A> method of a <xref:System.Data.DataRowCollection> collection, passing the primary key as a parameter.  
-  
-     The following example shows how to declare a new row called `foundRow` and assign it the return value of the <xref:System.Data.DataRowCollection.Find%2A> method. If the primary key is found, the contents of column index 1 are displayed in a message box.  
-  
-     [!code-csharp[VbRaddataEditing#19](../data-tools/codesnippet/CSharp/query-datasets_2.cs)]  [!code-vb[VbRaddataEditing#19](../data-tools/codesnippet/VisualBasic/query-datasets_2.vb)]  
-  
-## <a name="find-rows-by-column-values"></a>Find rows by column values  
-  
-#### <a name="to-find-rows-based-on-the-values-in-any-column"></a>To find rows based on the values in any column  
-  
--   Data tables are created with the <xref:System.Data.DataTable.Select%2A> method, which returns an array of <xref:System.Data.DataRow>s based on the expression passed to the <xref:System.Data.DataTable.Select%2A> method. For more information about creating valid expressions, see the "Expression Syntax" section of the page about the <xref:System.Data.DataColumn.Expression%2A> property.  
-  
-     The following example shows how to use the <xref:System.Data.DataTable.Select%2A> method of the <xref:System.Data.DataTable> to locate specific rows.  
-  
-     [!code-csharp[VbRaddataEditing#20](../data-tools/codesnippet/CSharp/query-datasets_3.cs)]  [!code-vb[VbRaddataEditing#20](../data-tools/codesnippet/VisualBasic/query-datasets_3.vb)]  
-  
-## <a name="access-related-records"></a>Access related records  
- When tables in a dataset are related, a <xref:System.Data.DataRelation> object can make  the related records available in another table. For example, a dataset containing `Customers` and `Orders` tables can be made available.  
-  
- You can use a <xref:System.Data.DataRelation> object to locate related records by calling the <xref:System.Data.DataRow.GetChildRows%2A> method of a <xref:System.Data.DataRow> in the parent table. This method returns an array of related child records. Or you can call the <xref:System.Data.DataRow.GetParentRow%2A> method of a <xref:System.Data.DataRow> in the child table. This method returns a single <xref:System.Data.DataRow> from the parent table.  
-  
- This page provides examples using typed datasets. For information about navigating relationships in untyped datasets, see [Navigating DataRelations](/dotnet/framework/data/adonet/dataset-datatable-dataview/navigating-datarelations).  
+## <a name="dataset-case-sensitivity"></a>Respect du jeu de données  
+Dans un jeu de données, les noms de table et de colonne respectent la casse par défaut, autrement dit, une table dans un dataset nommé « Customers » peut également être appelée « customers ». Cela correspond aux conventions d’affectation de noms dans plusieurs bases de données, y compris SQL Server. Dans SQL Server, le comportement par défaut est que les noms des éléments de données ne peut pas être distingués uniquement par la casse.  
   
 > [!NOTE]
->  If you are working in a Windows Forms application and using the data-binding features to display data, the designer-generated form might provide enough functionality for your application. For more information, see [Bind controls to data in Visual Studio](../data-tools/bind-controls-to-data-in-visual-studio.md). Specifically, see [Relationships in Datasets](relationships-in-datasets.md).  
+>  Contrairement aux jeux de données, les documents XML étant la casse, les noms d’éléments de données définis dans les schémas respectent la casse. Par exemple, le protocole de schéma permet au schéma de définir une table appelée « Customers » et une autre table appelée « customers ». Cela peut entraîner des collisions de noms lorsqu’un schéma qui contient les éléments qui diffèrent uniquement par la casse est utilisé pour générer une classe dataset.  
   
- The following code examples demonstrate how to navigate up and down relationships in typed datasets. The code examples use typed <xref:System.Data.DataRow>s (`NorthwindDataSet.OrdersRow`) and the generated FindBy*PrimaryKey* (`FindByCustomerID`) methods to locate a desired row and return the related records. The examples compile and run correctly only if you have:  
+Respect de la casse, toutefois, peut être un facteur de l’interprétation des données dans le jeu de données. Par exemple, si vous filtrez des données dans une table de dataset, les critères de recherche peuvent retourner des résultats différents selon que la comparaison respecte la casse. Vous pouvez contrôler le respect de la casse de filtrage, la recherche et le tri en définissant le jeu de données <xref:System.Data.DataSet.CaseSensitive%2A> propriété. Toutes les tables dans le jeu de données héritent de la valeur de cette propriété par défaut. (Vous pouvez substituer cette propriété pour chaque table individuelle en définissant la table <xref:System.Data.DataTable.CaseSensitive%2A> propriété.)  
   
--   An instance of a dataset named `NorthwindDataSet` with a `Customers` table.  
+## <a name="locate-a-specific-row-in-a-data-table"></a>Rechercher une ligne spécifique dans une table de données  
   
--   An `Orders` table.  
+#### <a name="to-find-a-row-in-a-typed-dataset-with-a-primary-key-value"></a>Pour rechercher une ligne dans un dataset typé avec une valeur de clé primaire  
   
--   A relationship named `FK_Orders_Customers`relating the two tables.  
+-   Pour obtenir une ligne, appelez fortement typé `FindBy` méthode qui utilise la clé primaire de la table.  
   
- Additionally, both tables need to be filled with data for any records to be returned.  
+     Dans l’exemple suivant, la `CustomerID` colonne est la clé primaire de la `Customers` table. Cela signifie que le texte généré `FindBy` méthode est `FindByCustomerID`. L’exemple montre comment affecter un spécifique <xref:System.Data.DataRow> à une variable à l’aide de l’élément généré `FindBy` (méthode).  
   
-#### <a name="to-return-the-child-records-of-a-selected-parent-record"></a>To return the child records of a selected parent record  
+     [!code-csharp[VbRaddataEditing#18](../data-tools/codesnippet/CSharp/query-datasets_1.cs)]
+     [!code-vb[VbRaddataEditing#18](../data-tools/codesnippet/VisualBasic/query-datasets_1.vb)]  
   
--   Call the <xref:System.Data.DataRow.GetChildRows%2A> method of a specific `Customers` data row, and return an array of rows from the `Orders` table:  
+#### <a name="to-find-a-row-in-an-untyped-dataset-with-a-primary-key-value"></a>Pour rechercher une ligne dans un dataset non typé avec une valeur de clé primaire  
   
-     [!code-csharp[VbRaddataDatasets#6](../data-tools/codesnippet/CSharp/query-datasets_4.cs)]  [!code-vb[VbRaddataDatasets#6](../data-tools/codesnippet/VisualBasic/query-datasets_4.vb)]  
+-   Appelez le <xref:System.Data.DataRowCollection.Find%2A> méthode d’un <xref:System.Data.DataRowCollection> collection, en passant la clé primaire en tant que paramètre.  
   
-#### <a name="to-return-the-parent-record-of-a-selected-child-record"></a>To return the parent record of a selected child record  
+     L’exemple suivant montre comment déclarer une nouvelle ligne appelée `foundRow` et lui attribuer la valeur de retour de la <xref:System.Data.DataRowCollection.Find%2A> (méthode). Si la clé primaire est trouvée, le contenu de l’index de colonne 1 est affiché dans une boîte de message.  
   
--   Call the <xref:System.Data.DataRow.GetParentRow%2A> method of a specific `Orders` data row, and return a single row from the `Customers` table:  
+     [!code-csharp[VbRaddataEditing#19](../data-tools/codesnippet/CSharp/query-datasets_2.cs)]
+     [!code-vb[VbRaddataEditing#19](../data-tools/codesnippet/VisualBasic/query-datasets_2.vb)]  
   
-     [!code-csharp[VbRaddataDatasets#7](../data-tools/codesnippet/CSharp/query-datasets_5.cs)]  [!code-vb[VbRaddataDatasets#7](../data-tools/codesnippet/VisualBasic/query-datasets_5.vb)]
+## <a name="find-rows-by-column-values"></a>Rechercher des lignes par valeurs de colonne  
+  
+#### <a name="to-find-rows-based-on-the-values-in-any-column"></a>Pour rechercher les lignes selon les valeurs des colonnes  
+  
+-   Tables de données sont créées avec le <xref:System.Data.DataTable.Select%2A> (méthode), qui retourne un tableau de <xref:System.Data.DataRow>s basé sur l’expression passée à la <xref:System.Data.DataTable.Select%2A> (méthode). Pour plus d’informations sur la création d’expressions valides, consultez la section « Syntaxe d’Expression » de la page le <xref:System.Data.DataColumn.Expression%2A> propriété.  
+  
+     L’exemple suivant montre comment utiliser le <xref:System.Data.DataTable.Select%2A> méthode de le <xref:System.Data.DataTable> pour rechercher des lignes spécifiques.  
+  
+     [!code-csharp[VbRaddataEditing#20](../data-tools/codesnippet/CSharp/query-datasets_3.cs)]
+     [!code-vb[VbRaddataEditing#20](../data-tools/codesnippet/VisualBasic/query-datasets_3.vb)]  
+  
+## <a name="access-related-records"></a>Accès des enregistrements associés.  
+Lorsque les tables dans un jeu de données sont liées, un <xref:System.Data.DataRelation> objet peut rendre les enregistrements connexes disponibles dans une autre table. Par exemple, un jeu de données contenant `Customers` et `Orders` tables peuvent être rendues disponibles.  
+  
+Vous pouvez utiliser un <xref:System.Data.DataRelation> objet à rechercher des enregistrements connexes en appelant le <xref:System.Data.DataRow.GetChildRows%2A> méthode d’un <xref:System.Data.DataRow> dans la table parente. Cette méthode retourne un tableau d’enregistrements enfants connexes. Ou vous pouvez appeler la <xref:System.Data.DataRow.GetParentRow%2A> méthode d’un <xref:System.Data.DataRow> dans la table enfant. Cette méthode retourne un seul <xref:System.Data.DataRow> à partir de la table parente.  
+  
+Cette page fournit des exemples d’utilisation de datasets typés. Pour plus d’informations sur l’exploration des relations dans les datasets non typés, consultez [navigation des DataRelations](/dotnet/framework/data/adonet/dataset-datatable-dataview/navigating-datarelations).  
+  
+> [!NOTE]
+>  Si vous travaillez dans une application Windows Forms et que vous utilisez les fonctionnalités de liaison de données pour afficher des données, le formulaire généré par le concepteur peut fournir suffisamment de fonctionnalités pour votre application. Pour plus d’informations, consultez [lier des contrôles aux données dans Visual Studio](../data-tools/bind-controls-to-data-in-visual-studio.md). En particulier, consultez [des relations dans les jeux de données](relationships-in-datasets.md).  
+  
+Les exemples de code suivants montrent comment parcourir les relations dans les datasets typés. L’utilisation d’exemples de code typée <xref:System.Data.DataRow>s (`NorthwindDataSet.OrdersRow`) et le FindBy généré*PrimaryKey* (`FindByCustomerID`) les méthodes pour rechercher une ligne souhaitée et retourner les enregistrements connexes. Les exemples de compiler et exécutent correctement uniquement si vous avez :  
+  
+-   Une instance d’un dataset nommé `NorthwindDataSet` avec un `Customers` table.  
+  
+-   Un `Orders` table.  
+  
+-   Une relation nommée `FK_Orders_Customers`les deux tables.  
+  
+En outre, les deux tables doivent être remplies avec les données de tous les enregistrements à retourner.  
+  
+#### <a name="to-return-the-child-records-of-a-selected-parent-record"></a>Pour retourner les enregistrements d’un enregistrement parent sélectionné enfants  
+  
+-   Appelez le <xref:System.Data.DataRow.GetChildRows%2A> spécifiques à une méthode `Customers` données de lignes et de retourner un tableau de lignes à partir de la `Orders` table :  
+  
+     [!code-csharp[VbRaddataDatasets#6](../data-tools/codesnippet/CSharp/query-datasets_4.cs)]
+     [!code-vb[VbRaddataDatasets#6](../data-tools/codesnippet/VisualBasic/query-datasets_4.vb)]  
+  
+#### <a name="to-return-the-parent-record-of-a-selected-child-record"></a>Pour retourner l’enregistrement parent d’un enregistrement enfant sélectionné  
+  
+-   Appelez le <xref:System.Data.DataRow.GetParentRow%2A> spécifiques à une méthode `Orders` ligne de données et retourner une seule ligne à partir de la `Customers` table :  
+  
+     [!code-csharp[VbRaddataDatasets#7](../data-tools/codesnippet/CSharp/query-datasets_5.cs)]
+     [!code-vb[VbRaddataDatasets#7](../data-tools/codesnippet/VisualBasic/query-datasets_5.vb)]
+
+## <a name="see-also"></a>Voir aussi
+[Outils de dataset dans Visual Studio](../data-tools/dataset-tools-in-visual-studio.md)  

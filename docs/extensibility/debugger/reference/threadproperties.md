@@ -1,46 +1,29 @@
 ---
-title: THREADPROPERTIES | Microsoft Docs
+title: THREADPROPERTIES | Documents Microsoft
 ms.custom: 
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-sdk
+ms.technology: vs-ide-sdk
 ms.tgt_pltfrm: 
 ms.topic: article
-f1_keywords:
-- THREADPROPERTIES
-helpviewer_keywords:
-- THREADPROPERTIES structure
+f1_keywords: THREADPROPERTIES
+helpviewer_keywords: THREADPROPERTIES structure
 ms.assetid: 7d397207-db03-4ec0-9f79-3794056ed89f
-caps.latest.revision: 8
+caps.latest.revision: "8"
+author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-translation.priority.mt:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
+ms.openlocfilehash: b4ec394deef3b317d91e6cbe22bbc1d95a6aca5e
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
 ms.translationtype: MT
-ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
-ms.openlocfilehash: a759b577e9b1af18773744dd2f391a570683876f
-ms.contentlocale: fr-fr
-ms.lasthandoff: 08/28/2017
-
+ms.contentlocale: fr-FR
+ms.lasthandoff: 10/31/2017
 ---
 # <a name="threadproperties"></a>THREADPROPERTIES
-Describes the properties of a thread.  
+Décrit les propriétés d’un thread.  
   
-## <a name="syntax"></a>Syntax  
+## <a name="syntax"></a>Syntaxe  
   
 ```cpp  
 typedef struct _tagTHREADPROPERTIES {   
@@ -66,40 +49,40 @@ public struct THREADPROPERTIES {
 };  
 ```  
   
-## <a name="members"></a>Members  
+## <a name="members"></a>Membres  
  dwFields  
- A combination of flags from the [THREADPROPERTY_FIELDS](../../../extensibility/debugger/reference/threadproperty-fields.md) enumeration, describing which fields in this structure are valid.  
+ Une combinaison d’indicateurs à partir de la [THREADPROPERTY_FIELDS](../../../extensibility/debugger/reference/threadproperty-fields.md) énumération, qui décrit les champs de cette structure sont valides.  
   
  dwThreadId  
- The thread ID.  
+ L’ID de thread.  
   
  dwSuspendCount  
- The thread suspend count.  
+ Compteur de suspension du thread.  
   
  dwThreadState  
- A value from the [THREADSTATE](../../../extensibility/debugger/reference/threadstate.md) enumeration indicating the state of the operating thread.  
+ Une valeur à partir de la [THREADSTATE](../../../extensibility/debugger/reference/threadstate.md) énumération indiquant l’état du thread d’opération.  
   
  bstrPriority  
- A string specifying the thread priority; for example, "Above Normal", "Normal", or "Time Critical".  
+ Une chaîne qui spécifie la priorité de thread ; par exemple, « ci-dessus Normal », « Normal » ou « Temps critiques ».  
   
  bstName  
- The thread name.  
+ Le nom du thread.  
   
  bstrLocation  
- The thread location (usually the topmost stack frame), typically expressed as the name of the method where execution is currently halted.  
+ L’emplacement de thread (généralement le frame de pile au premier plan), exprimé en général sous le nom de la méthode dans laquelle l’exécution est interrompue d’actuellement.  
   
-## <a name="remarks"></a>Remarks  
- This structure is filled in by a call to the [GetThreadProperties](../../../extensibility/debugger/reference/idebugthread2-getthreadproperties.md) method. The information so returned is typically used in populating the **Threads** window.  
+## <a name="remarks"></a>Remarques  
+ Cette structure est remplie par un appel à la [GetThreadProperties](../../../extensibility/debugger/reference/idebugthread2-getthreadproperties.md) (méthode). Les informations retournées par conséquent, sont généralement utilisées dans le remplissage de la **Threads** fenêtre.  
   
-## <a name="requirements"></a>Requirements  
- Header: msdbg.h  
+## <a name="requirements"></a>Spécifications  
+ En-tête : msdbg.h  
   
- Namespace: Microsoft.VisualStudio.Debugger.Interop  
+ Namespace : Microsoft.VisualStudio.Debugger.Interop  
   
- Assembly: Microsoft.VisualStudio.Debugger.Interop.dll  
+ Assembly : Microsoft.VisualStudio.Debugger.Interop.dll  
   
-## <a name="see-also"></a>See Also  
- [Structures and Unions](../../../extensibility/debugger/reference/structures-and-unions.md)   
+## <a name="see-also"></a>Voir aussi  
+ [Structures et Unions](../../../extensibility/debugger/reference/structures-and-unions.md)   
  [GetThreadProperties](../../../extensibility/debugger/reference/idebugthread2-getthreadproperties.md)   
  [THREADPROPERTY_FIELDS](../../../extensibility/debugger/reference/threadproperty-fields.md)   
  [THREADSTATE](../../../extensibility/debugger/reference/threadstate.md)

@@ -1,46 +1,29 @@
 ---
-title: IDebugProcess3::DisableENC | Microsoft Docs
+title: IDebugProcess3::DisableENC | Documents Microsoft
 ms.custom: 
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-sdk
+ms.technology: vs-ide-sdk
 ms.tgt_pltfrm: 
 ms.topic: article
-f1_keywords:
-- IDebugProcess3::DisableENC
-helpviewer_keywords:
-- IDebugProcess3::DisableENC
+f1_keywords: IDebugProcess3::DisableENC
+helpviewer_keywords: IDebugProcess3::DisableENC
 ms.assetid: cffdbdac-4d76-4aeb-aa55-5d0410db99f1
-caps.latest.revision: 11
+caps.latest.revision: "11"
+author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-translation.priority.mt:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
+ms.openlocfilehash: fed5f54c843732b45339d7cc37d7d0820a58d8a7
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
 ms.translationtype: MT
-ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
-ms.openlocfilehash: 1182d60d57dba3f1ee49f5a119ef19de6f7ae9c1
-ms.contentlocale: fr-fr
-ms.lasthandoff: 08/28/2017
-
+ms.contentlocale: fr-FR
+ms.lasthandoff: 10/31/2017
 ---
 # <a name="idebugprocess3disableenc"></a>IDebugProcess3::DisableENC
-This method explicitly disables Edit and Continue on this process (and all programs it contains). A custom port supplier should always return `E_NOTIMPL`.  
+Cette méthode explicitement désactive Modifier & Continuer sur ce processus (et tous les programmes qu’il contient). Un fournisseur de port personnalisé doit toujours renvoyer `E_NOTIMPL`.  
   
-## <a name="syntax"></a>Syntax  
+## <a name="syntax"></a>Syntaxe  
   
 ```cpp  
 HRESULT DisableENC(  
@@ -53,19 +36,19 @@ HRESULT DisableENC(
 );  
 ```  
   
-#### <a name="parameters"></a>Parameters  
+#### <a name="parameters"></a>Paramètres  
  `reason`  
- [in] A value from the [EncUnavailableReason](../../../extensibility/debugger/reference/encunavailablereason.md) enumeration.  
+ [in] Une valeur à partir de la [EncUnavailableReason](../../../extensibility/debugger/reference/encunavailablereason.md) énumération.  
   
-## <a name="return-value"></a>Return Value  
- If successful, returns `S_OK`; otherwise, returns error code.  
+## <a name="return-value"></a>Valeur de retour  
+ En cas de réussite, retourne `S_OK`; sinon, retourne le code d’erreur.  
   
 > [!NOTE]
->  A custom port supplier should always return `E_NOTIMPL`.  
+>  Un fournisseur de port personnalisé doit toujours renvoyer `E_NOTIMPL`.  
   
-## <a name="remarks"></a>Remarks  
- Once Edit and Continue is disabled for a process, it can be re-enabled only by restarting the process.  
+## <a name="remarks"></a>Remarques  
+ Modifier une seule fois et continuer est désactivée pour un processus, il peut être réactivée uniquement en redémarrant le processus.  
   
-## <a name="see-also"></a>See Also  
+## <a name="see-also"></a>Voir aussi  
  [IDebugProcess3](../../../extensibility/debugger/reference/idebugprocess3.md)   
  [EncUnavailableReason](../../../extensibility/debugger/reference/encunavailablereason.md)

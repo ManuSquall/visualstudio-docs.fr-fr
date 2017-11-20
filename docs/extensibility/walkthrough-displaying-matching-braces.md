@@ -1,122 +1,117 @@
 ---
-title: 'Walkthrough: Displaying Matching Braces | Microsoft Docs'
+title: "Procédure pas à pas : Affichage des accolades correspondantes | Documents Microsoft"
 ms.custom: 
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-sdk
+ms.technology: vs-ide-sdk
 ms.tgt_pltfrm: 
 ms.topic: article
-helpviewer_keywords:
-- editors [Visual Studio SDK], new - brace matching
+helpviewer_keywords: editors [Visual Studio SDK], new - brace matching
 ms.assetid: 5af08ac7-1d08-4ccf-997e-01aa6cb3d3d7
-caps.latest.revision: 27
+caps.latest.revision: "27"
+author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-translation.priority.mt:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
+ms.openlocfilehash: c4a7d122f19e21eebbe5bd598272fb7cb9f52b27
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
 ms.translationtype: MT
-ms.sourcegitcommit: eb5c9550fd29b0e98bf63a7240737da4f13f3249
-ms.openlocfilehash: c6d35826fafdfe0f5a5b7b99ccbbf63d7bc62d8e
-ms.contentlocale: fr-fr
-ms.lasthandoff: 08/30/2017
-
+ms.contentlocale: fr-FR
+ms.lasthandoff: 10/31/2017
 ---
-# <a name="walkthrough-displaying-matching-braces"></a>Walkthrough: Displaying Matching Braces
-You can implement language-based features such as brace matching by defining the braces you want to match, and then adding a text marker tag to the matching braces when the caret is on one of the braces. You can define braces in the context of a language, or you can define your own file name extension and content type and apply the tags to just that type, or you can apply the tags to an existing content type (such as "text"). The following walkthrough shows how to apply brace matching tags to the "text" content type.  
+# <a name="walkthrough-displaying-matching-braces"></a>Procédure pas à pas : Affichage des accolades correspondantes
+Vous pouvez implémenter basée sur le langage des fonctionnalités telles que les accolades correspondantes en définissant les accolades que vous souhaitez faire correspondre et en ajoutant une balise de marqueur de texte pour les accolades correspondantes lorsque le point d’insertion se trouve sur un des accolades. Vous pouvez définir des accolades dans le contexte d’une langue, ou vous pouvez définir votre propre type de contenu et d’extension de nom du fichier et appliquer les balises à uniquement ce type, ou vous pouvez appliquer les balises à un type de contenu existant (par exemple « text »). La procédure suivante montre comment appliquer des étiquettes pour le type de contenu « text » de la correspondance des accolades.  
   
-## <a name="prerequisites"></a>Prerequisites  
- Starting in Visual Studio 2015, you do not install the Visual Studio SDK from the download center. It is included as an optional feature in Visual Studio setup. You can also install the VS SDK later on. For more information, see [Installing the Visual Studio SDK](../extensibility/installing-the-visual-studio-sdk.md).  
+## <a name="prerequisites"></a>Conditions préalables  
+ À partir de Visual Studio 2015, vous n’installez pas le Kit de développement logiciel Visual Studio à partir du centre de téléchargement. Il est inclus comme une fonctionnalité facultative dans le programme d’installation de Visual Studio. Vous pouvez également installer le kit SDK VS ultérieurement. Pour plus d’informations, consultez [l’installation de Visual Studio SDK](../extensibility/installing-the-visual-studio-sdk.md).  
   
-## <a name="creating-a-managed-extensibility-framework-mef-project"></a>Creating a Managed Extensibility Framework (MEF) Project  
+## <a name="creating-a-managed-extensibility-framework-mef-project"></a>Création d’un projet Managed Extensibility Framework (MEF)  
   
-#### <a name="to-create-a-mef-project"></a>To create a MEF project  
+#### <a name="to-create-a-mef-project"></a>Pour créer un projet MEF  
   
-1.  Create an Editor Classifier project. Name the solution `BraceMatchingTest`.  
+1.  Créez un projet Classifieur d’éditeur. Nommez la solution `BraceMatchingTest`.  
   
-2.  Add an Editor Classifier item template to the project. For more information, see [Creating an Extension with an Editor Item Template](../extensibility/creating-an-extension-with-an-editor-item-template.md).  
+2.  Ajouter un modèle d’élément classifieur d’éditeur pour le projet. Pour plus d’informations, consultez [création d’une Extension avec un éditeur de modèle d’élément](../extensibility/creating-an-extension-with-an-editor-item-template.md).  
   
-3.  Delete the existing class files.  
+3.  Supprimez les fichiers de classe existants.  
   
-## <a name="implementing-a-brace-matching-tagger"></a>Implementing a Brace Matching Tagger  
- To get a brace highlighting effect that resembles the one that is used in Visual Studio, you can implement a tagger of type <xref:Microsoft.VisualStudio.Text.Tagging.TextMarkerTag>. The following code shows how to define the tagger for brace pairs at any level of nesting. In this example, the brace pairs []. [], and {} are defined in the tagger constructor, but in a full language implementation the relevant brace pairs would be defined in the language specification.  
+## <a name="implementing-a-brace-matching-tagger"></a>Implémentation d’une balise de la correspondance des accolades  
+ Pour obtenir une accolade mise en surbrillance effet semblable à celui qui est utilisé dans Visual Studio, vous pouvez implémenter un baliseur de type <xref:Microsoft.VisualStudio.Text.Tagging.TextMarkerTag>. Le code suivant montre comment définir la balise pour ouvrantes à tous les niveaux d’imbrication. Dans cet exemple, l’accolade paires []. [] et {} sont définies dans le constructeur de balise, mais dans une implémentation de langage complet les paires accolade pertinentes sont définies dans la spécification du langage.  
   
-#### <a name="to-implement-a-brace-matching-tagger"></a>To implement a brace matching tagger  
+#### <a name="to-implement-a-brace-matching-tagger"></a>Pour implémenter un baliseur de la correspondance des accolades  
   
-1.  Add a class file and name it BraceMatching.  
+1.  Ajoutez un fichier de classe et nommez-le accolade correspondante.  
   
-2.  Import the following namespaces.  
+2.  Importez les espaces de noms suivants.  
   
-     [!code-csharp[VSSDKBraceMatchingTest#1](../extensibility/codesnippet/CSharp/walkthrough-displaying-matching-braces_1.cs)]  [!code-vb[VSSDKBraceMatchingTest#1](../extensibility/codesnippet/VisualBasic/walkthrough-displaying-matching-braces_1.vb)]  
+     [!code-csharp[VSSDKBraceMatchingTest#1](../extensibility/codesnippet/CSharp/walkthrough-displaying-matching-braces_1.cs)]
+     [!code-vb[VSSDKBraceMatchingTest#1](../extensibility/codesnippet/VisualBasic/walkthrough-displaying-matching-braces_1.vb)]  
   
-3.  Define a class `BraceMatchingTagger` that inherits from <xref:Microsoft.VisualStudio.Text.Tagging.ITagger%601> of type <xref:Microsoft.VisualStudio.Text.Tagging.TextMarkerTag>.  
+3.  Définissez une classe `BraceMatchingTagger` qui hérite de <xref:Microsoft.VisualStudio.Text.Tagging.ITagger%601> de type <xref:Microsoft.VisualStudio.Text.Tagging.TextMarkerTag>.  
   
-     [!code-csharp[VSSDKBraceMatchingTest#2](../extensibility/codesnippet/CSharp/walkthrough-displaying-matching-braces_2.cs)]  [!code-vb[VSSDKBraceMatchingTest#2](../extensibility/codesnippet/VisualBasic/walkthrough-displaying-matching-braces_2.vb)]  
+     [!code-csharp[VSSDKBraceMatchingTest#2](../extensibility/codesnippet/CSharp/walkthrough-displaying-matching-braces_2.cs)]
+     [!code-vb[VSSDKBraceMatchingTest#2](../extensibility/codesnippet/VisualBasic/walkthrough-displaying-matching-braces_2.vb)]  
   
-4.  Add properties for the text view, the source buffer, and the current snapshot point, and also a set of brace pairs.  
+4.  Ajouter des propriétés pour l’affichage de texte, la mémoire tampon source et le point d’instantané en cours et également un ensemble de paires d’accolades.  
   
-     [!code-csharp[VSSDKBraceMatchingTest#3](../extensibility/codesnippet/CSharp/walkthrough-displaying-matching-braces_3.cs)]  [!code-vb[VSSDKBraceMatchingTest#3](../extensibility/codesnippet/VisualBasic/walkthrough-displaying-matching-braces_3.vb)]  
+     [!code-csharp[VSSDKBraceMatchingTest#3](../extensibility/codesnippet/CSharp/walkthrough-displaying-matching-braces_3.cs)]
+     [!code-vb[VSSDKBraceMatchingTest#3](../extensibility/codesnippet/VisualBasic/walkthrough-displaying-matching-braces_3.vb)]  
   
-5.  In the tagger constructor, set the properties and subscribe to the view change events <xref:Microsoft.VisualStudio.Text.Editor.ITextCaret.PositionChanged> and <xref:Microsoft.VisualStudio.Text.Editor.ITextView.LayoutChanged>. In this example, for illustrative purposes, the matching pairs are also defined in the constructor.  
+5.  Dans le constructeur de la balise, définissez les propriétés et de s’abonner aux événements de changement de vue <xref:Microsoft.VisualStudio.Text.Editor.ITextCaret.PositionChanged> et <xref:Microsoft.VisualStudio.Text.Editor.ITextView.LayoutChanged>. Dans cet exemple, à des fins d’illustration, les paires correspondantes sont également définies dans le constructeur.  
   
-     [!code-csharp[VSSDKBraceMatchingTest#4](../extensibility/codesnippet/CSharp/walkthrough-displaying-matching-braces_4.cs)]  [!code-vb[VSSDKBraceMatchingTest#4](../extensibility/codesnippet/VisualBasic/walkthrough-displaying-matching-braces_4.vb)]  
+     [!code-csharp[VSSDKBraceMatchingTest#4](../extensibility/codesnippet/CSharp/walkthrough-displaying-matching-braces_4.cs)]
+     [!code-vb[VSSDKBraceMatchingTest#4](../extensibility/codesnippet/VisualBasic/walkthrough-displaying-matching-braces_4.vb)]  
   
-6.  As part of the <xref:Microsoft.VisualStudio.Text.Tagging.ITagger%601> implementation, declare a TagsChanged event.  
+6.  Dans le cadre de la <xref:Microsoft.VisualStudio.Text.Tagging.ITagger%601> implémentation, déclarez un événement TagsChanged.  
   
-     [!code-csharp[VSSDKBraceMatchingTest#5](../extensibility/codesnippet/CSharp/walkthrough-displaying-matching-braces_5.cs)]  [!code-vb[VSSDKBraceMatchingTest#5](../extensibility/codesnippet/VisualBasic/walkthrough-displaying-matching-braces_5.vb)]  
+     [!code-csharp[VSSDKBraceMatchingTest#5](../extensibility/codesnippet/CSharp/walkthrough-displaying-matching-braces_5.cs)]
+     [!code-vb[VSSDKBraceMatchingTest#5](../extensibility/codesnippet/VisualBasic/walkthrough-displaying-matching-braces_5.vb)]  
   
-7.  The event handlers update the current caret position of the `CurrentChar` property and raise the TagsChanged event.  
+7.  Les gestionnaires d’événements mettre à jour la position actuelle du point d’insertion de la `CurrentChar` propriété et déclencher l’événement TagsChanged.  
   
-     [!code-csharp[VSSDKBraceMatchingTest#6](../extensibility/codesnippet/CSharp/walkthrough-displaying-matching-braces_6.cs)]  [!code-vb[VSSDKBraceMatchingTest#6](../extensibility/codesnippet/VisualBasic/walkthrough-displaying-matching-braces_6.vb)]  
+     [!code-csharp[VSSDKBraceMatchingTest#6](../extensibility/codesnippet/CSharp/walkthrough-displaying-matching-braces_6.cs)]
+     [!code-vb[VSSDKBraceMatchingTest#6](../extensibility/codesnippet/VisualBasic/walkthrough-displaying-matching-braces_6.vb)]  
   
-8.  Implement the <xref:Microsoft.VisualStudio.Text.Tagging.ITagger%601.GetTags%2A> method to match braces either when the current character is an open brace or when the previous character is a close brace, as in Visual Studio. When the match is found, this method instantiates two tags, one for the open brace and one for the close brace.  
+8.  Implémentez la <xref:Microsoft.VisualStudio.Text.Tagging.ITagger%601.GetTags%2A> méthode pour faire correspondre les accolades soit lorsque le caractère actuel est une accolade ouvrante ou lorsque le caractère précédent est une accolade fermante, comme dans Visual Studio. Lorsque la correspondance est trouvée, cette méthode instancie deux balises, une pour l’accolade ouvrante et une pour l’accolade fermante.  
   
-     [!code-csharp[VSSDKBraceMatchingTest#7](../extensibility/codesnippet/CSharp/walkthrough-displaying-matching-braces_7.cs)]  [!code-vb[VSSDKBraceMatchingTest#7](../extensibility/codesnippet/VisualBasic/walkthrough-displaying-matching-braces_7.vb)]  
+     [!code-csharp[VSSDKBraceMatchingTest#7](../extensibility/codesnippet/CSharp/walkthrough-displaying-matching-braces_7.cs)]
+     [!code-vb[VSSDKBraceMatchingTest#7](../extensibility/codesnippet/VisualBasic/walkthrough-displaying-matching-braces_7.vb)]  
   
-9. The following private methods find the matching brace at any level of nesting. The first method finds the close character that matches the open character:  
+9. Les méthodes privées suivantes rechercher l’accolade correspondante à tous les niveaux d’imbrication. La première méthode recherche le caractère de fermeture qui correspond au caractère ouvert :  
   
-     [!code-csharp[VSSDKBraceMatchingTest#8](../extensibility/codesnippet/CSharp/walkthrough-displaying-matching-braces_8.cs)]   [!code-vb[VSSDKBraceMatchingTest#8](../extensibility/codesnippet/VisualBasic/walkthrough-displaying-matching-braces_8.vb)]  
+     [!code-csharp[VSSDKBraceMatchingTest#8](../extensibility/codesnippet/CSharp/walkthrough-displaying-matching-braces_8.cs)]
+     [!code-vb[VSSDKBraceMatchingTest#8](../extensibility/codesnippet/VisualBasic/walkthrough-displaying-matching-braces_8.vb)]  
   
-10. The following helper method finds the open character that matches a close character:  
+10. La méthode d’assistance suivante recherche le caractère ouvert qui correspond à un caractère fermer :  
   
-     [!code-csharp[VSSDKBraceMatchingTest#9](../extensibility/codesnippet/CSharp/walkthrough-displaying-matching-braces_9.cs)]  [!code-vb[VSSDKBraceMatchingTest#9](../extensibility/codesnippet/VisualBasic/walkthrough-displaying-matching-braces_9.vb)]  
+     [!code-csharp[VSSDKBraceMatchingTest#9](../extensibility/codesnippet/CSharp/walkthrough-displaying-matching-braces_9.cs)]
+     [!code-vb[VSSDKBraceMatchingTest#9](../extensibility/codesnippet/VisualBasic/walkthrough-displaying-matching-braces_9.vb)]  
   
-## <a name="implementing-a-brace-matching-tagger-provider"></a>Implementing a Brace Matching Tagger Provider  
- In addition to implementing a tagger, you must also implement and export a tagger provider. In this case, the content type of the provider is "text". This means that brace matching will appear in all types of text files, but a fuller implementation would apply brace matching only to a specific content type.  
+## <a name="implementing-a-brace-matching-tagger-provider"></a>Implémentation d’un fournisseur de Baliseur de la correspondance des accolades  
+ En plus d’implémenter un baliseur, vous devez également implémenter et exporter un fournisseur de baliseur. Dans ce cas, le type de contenu du fournisseur est « text ». Cela signifie que la correspondance des accolades apparaîtra dans tous les types de fichiers texte, mais une implémentation complète s’applique uniquement à un type de contenu spécifique la correspondance des accolades.  
   
-#### <a name="to-implement-a-brace-matching-tagger-provider"></a>To implement a brace matching tagger provider  
+#### <a name="to-implement-a-brace-matching-tagger-provider"></a>Pour implémenter un fournisseur de baliseur accolade correspondante  
   
-1.  Declare a tagger provider that inherits from <xref:Microsoft.VisualStudio.Text.Tagging.IViewTaggerProvider>, name it BraceMatchingTaggerProvider, and export it with a <xref:Microsoft.VisualStudio.Utilities.ContentTypeAttribute> of "text" and a <xref:Microsoft.VisualStudio.Text.Tagging.TagTypeAttribute> of <xref:Microsoft.VisualStudio.Text.Tagging.TextMarkerTag>.  
+1.  Déclarer un fournisseur de baliseur qui hérite de <xref:Microsoft.VisualStudio.Text.Tagging.IViewTaggerProvider>, nommez-le BraceMatchingTaggerProvider et l’exporter avec un <xref:Microsoft.VisualStudio.Utilities.ContentTypeAttribute> de « text » et un <xref:Microsoft.VisualStudio.Text.Tagging.TagTypeAttribute> de <xref:Microsoft.VisualStudio.Text.Tagging.TextMarkerTag>.  
   
-     [!code-csharp[VSSDKBraceMatchingTest#10](../extensibility/codesnippet/CSharp/walkthrough-displaying-matching-braces_10.cs)]  [!code-vb[VSSDKBraceMatchingTest#10](../extensibility/codesnippet/VisualBasic/walkthrough-displaying-matching-braces_10.vb)]  
+     [!code-csharp[VSSDKBraceMatchingTest#10](../extensibility/codesnippet/CSharp/walkthrough-displaying-matching-braces_10.cs)]
+     [!code-vb[VSSDKBraceMatchingTest#10](../extensibility/codesnippet/VisualBasic/walkthrough-displaying-matching-braces_10.vb)]  
   
-2.  Implement the <xref:Microsoft.VisualStudio.Text.Tagging.IViewTaggerProvider.CreateTagger%2A> method to instantiate a BraceMatchingTagger.  
+2.  Implémentez la <xref:Microsoft.VisualStudio.Text.Tagging.IViewTaggerProvider.CreateTagger%2A> méthode pour instancier un BraceMatchingTagger.  
   
-     [!code-csharp[VSSDKBraceMatchingTest#11](../extensibility/codesnippet/CSharp/walkthrough-displaying-matching-braces_11.cs)]  [!code-vb[VSSDKBraceMatchingTest#11](../extensibility/codesnippet/VisualBasic/walkthrough-displaying-matching-braces_11.vb)]  
+     [!code-csharp[VSSDKBraceMatchingTest#11](../extensibility/codesnippet/CSharp/walkthrough-displaying-matching-braces_11.cs)]
+     [!code-vb[VSSDKBraceMatchingTest#11](../extensibility/codesnippet/VisualBasic/walkthrough-displaying-matching-braces_11.vb)]  
   
-## <a name="building-and-testing-the-code"></a>Building and Testing the Code  
- To test this code, build the BraceMatchingTest solution and run it in the experimental instance.  
+## <a name="building-and-testing-the-code"></a>Création et test du code  
+ Pour tester ce code, générez la solution BraceMatchingTest et l’exécuter dans l’instance expérimentale.  
   
-#### <a name="to-build-and-test-bracematchingtest-solution"></a>To build and test BraceMatchingTest solution  
+#### <a name="to-build-and-test-bracematchingtest-solution"></a>Pour générer et tester la solution de BraceMatchingTest  
   
-1.  Build the solution.  
+1.  Générez la solution.  
   
-2.  When you run this project in the debugger, a second instance of Visual Studio is instantiated.  
+2.  Lorsque vous exécutez ce projet dans le débogueur, une deuxième instance de Visual Studio est instanciée.  
   
-3.  Create a text file and type some text that includes matching braces.  
+3.  Créez un fichier texte et tapez du texte qui inclut des accolades correspondantes.  
   
     ```  
     hello {  
@@ -127,7 +122,7 @@ You can implement language-based features such as brace matching by defining the
     {hello}  
     ```  
   
-4.  When you position the caret before an open brace, both that brace and the matching close brace should be highlighted. When you position the cursor just after the close brace, both that brace and the matching open brace should be highlighted.  
+4.  Lorsque vous placez le point d’insertion avant une accolade ouvrante, que les accolades et l’accolade fermante correspondant doit être mis en surbrillance. Lorsque vous placez le curseur juste après l’accolade fermante, que les accolades et l’accolade ouvrante correspondante doit être mis en surbrillance.  
   
-## <a name="see-also"></a>See Also  
- [Walkthrough: Linking a Content Type to a File Name Extension](../extensibility/walkthrough-linking-a-content-type-to-a-file-name-extension.md)
+## <a name="see-also"></a>Voir aussi  
+ [Procédure pas à pas : Liaison d’un type de contenu à une extension de nom de fichier](../extensibility/walkthrough-linking-a-content-type-to-a-file-name-extension.md)

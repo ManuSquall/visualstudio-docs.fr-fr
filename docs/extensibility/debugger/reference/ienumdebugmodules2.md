@@ -1,64 +1,64 @@
 ---
-title: "IEnumDebugModules2 | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "IEnumDebugModules2"
-helpviewer_keywords: 
-  - "IEnumDebugModules2"
+title: IEnumDebugModules2 | Documents Microsoft
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords: IEnumDebugModules2
+helpviewer_keywords: IEnumDebugModules2
 ms.assetid: 4fe28074-a960-41ad-b74d-b57f04c0c0ad
-caps.latest.revision: 11
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 11
+caps.latest.revision: "11"
+author: gregvanl
+ms.author: gregvanl
+manager: ghogen
+ms.openlocfilehash: 481a9c04b56ad330731b1c5a06863eb7b3f0f8e2
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: fr-FR
+ms.lasthandoff: 10/31/2017
 ---
-# IEnumDebugModules2
-[!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]
-
-Cette interface énumère une liste des modules.  
+# <a name="ienumdebugmodules2"></a>IEnumDebugModules2
+Cette interface énumère une liste de modules.  
   
-## Syntaxe  
+## <a name="syntax"></a>Syntaxe  
   
 ```  
 IEnumDebugModules2 : IUnknown  
 ```  
   
-## Remarques à l'intention des implémenteurs  
- Le moteur \(DE\) de débogage implémente cette interface pour représenter une liste des modules chargés pour un programme.  
+## <a name="notes-for-implementers"></a>Notes pour les implémenteurs  
+ Le moteur de débogage (DE) implémente cette interface pour représenter une liste de modules chargés pour un programme.  
   
-## Remarques pour les appelants  
- Visual Studio appelle [EnumModules](../../../extensibility/debugger/reference/idebugprogram2-enummodules.md) pour obtenir cette interface.  
+## <a name="notes-for-callers"></a>Remarques pour les appelants  
+ Appels de Visual Studio [EnumModules](../../../extensibility/debugger/reference/idebugprogram2-enummodules.md) pour obtenir cette interface.  
   
-## méthodes en commande de Vtable  
- Le tableau suivant répertorie les méthodes d' `IEnumDebugModules2`.  
+## <a name="methods-in-vtable-order"></a>Méthodes dans l'ordre Vtable  
+ Le tableau suivant présente les méthodes de `IEnumDebugModules2`.  
   
 |Méthode|Description|  
-|-------------|-----------------|  
-|[Suivant](../../../extensibility/debugger/reference/ienumdebugmodules2-next.md)|Récupère un nombre spécifié de modules dans une séquence d'énumération.|  
-|[Ignorer](../../../extensibility/debugger/reference/ienumdebugmodules2-skip.md)|Ignore un nombre spécifié de modules dans une séquence d'énumération.|  
-|[Réinitialiser](../Topic/IEnumDebugModules2::Reset.md)|réinitialise une séquence d'énumération au début.|  
-|[Clone](../../../extensibility/debugger/reference/ienumdebugmodules2-clone.md)|crée un énumérateur qui contient le même état d'énumération que l'énumérateur actuel.|  
-|[GetCount](../../../extensibility/debugger/reference/ienumdebugmodules2-getcount.md)|obtient le nombre de modules.|  
+|------------|-----------------|  
+|[Next](../../../extensibility/debugger/reference/ienumdebugmodules2-next.md)|Récupère un nombre spécifié de modules dans une séquence d’énumération.|  
+|[Skip](../../../extensibility/debugger/reference/ienumdebugmodules2-skip.md)|Ignore un nombre spécifié de modules dans une séquence d’énumération.|  
+|[Réinitialiser](../../../extensibility/debugger/reference/ienumdebugmodules2-reset.md)|Réinitialise la séquence d’énumération au début.|  
+|[Clone](../../../extensibility/debugger/reference/ienumdebugmodules2-clone.md)|Crée un énumérateur qui contient le même état d’énumération que l’énumérateur actuel.|  
+|[GetCount](../../../extensibility/debugger/reference/ienumdebugmodules2-getcount.md)|Obtient le nombre de modules.|  
   
-## Notes  
- Visual Studio utilise cette interface principalement pour mettre à jour la fenêtre de **Module** .  
+## <a name="remarks"></a>Remarques  
+ Visual Studio utilise cette interface principalement pour mettre à jour le **Modules** fenêtre.  
   
- Pour les besoins de débogage dans Visual Studio, un programme est une séquence logique d'instruction de code qui peut traverser des limites de module, d'où la nécessité de liste de modules pour une interface unique d' [IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md) .  Le premier module dans la liste contient en général le point d'entrée initiale pour le programme associé.  
+ Dans le cadre du débogage dans Visual Studio, un programme est une séquence logique d’instructions de code qui traversent les limites de module, par conséquent, la nécessité d’une liste de modules pour un seul [IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md) interface. Le premier module dans la liste contient généralement le point d’entrée initiale pour le programme associé.  
   
-## Configuration requise  
- en\-tête : msdbg.h  
+## <a name="requirements"></a>Spécifications  
+ En-tête : msdbg.h  
   
- l'espace de noms : Microsoft.VisualStudio.Debugger.Interop  
+ Namespace : Microsoft.VisualStudio.Debugger.Interop  
   
- Assembly : Microsoft.VisualStudio.Debugger.Interop.dll  
+ Assembly : Microsoft.VisualStudio.Debugger.Interop.dll  
   
-## Voir aussi  
+## <a name="see-also"></a>Voir aussi  
  [Interfaces de base](../../../extensibility/debugger/reference/core-interfaces.md)   
  [IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md)   
  [EnumModules](../../../extensibility/debugger/reference/idebugprogram2-enummodules.md)

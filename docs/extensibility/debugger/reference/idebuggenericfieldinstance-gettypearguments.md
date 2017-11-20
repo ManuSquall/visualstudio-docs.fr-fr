@@ -1,45 +1,30 @@
 ---
-title: IDebugGenericFieldInstance::GetTypeArguments | Microsoft Docs
+title: IDebugGenericFieldInstance::GetTypeArguments | Documents Microsoft
 ms.custom: 
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-sdk
+ms.technology: vs-ide-sdk
 ms.tgt_pltfrm: 
 ms.topic: article
 helpviewer_keywords:
 - GetTypeArguments
 - IDebugGenericFieldInstance::GetTypeArguments
 ms.assetid: 6e7e0f95-181a-4805-adb3-c2407de0ab93
-caps.latest.revision: 9
+caps.latest.revision: "9"
+author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-translation.priority.mt:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
+ms.openlocfilehash: ae79230887bdcef2945f94474707f7f00a1c0257
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
 ms.translationtype: MT
-ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
-ms.openlocfilehash: cf82089a18e82d559b669e5d73d6d6994dd1c34c
-ms.contentlocale: fr-fr
-ms.lasthandoff: 08/28/2017
-
+ms.contentlocale: fr-FR
+ms.lasthandoff: 10/31/2017
 ---
 # <a name="idebuggenericfieldinstancegettypearguments"></a>IDebugGenericFieldInstance::GetTypeArguments
-Retrieves the type parameter arguments for this instance.  
+Récupère les arguments de paramètre de type pour cette instance.  
   
-## <a name="syntax"></a>Syntax  
+## <a name="syntax"></a>Syntaxe  
   
 ```cpp  
 HRESULT GetTypeArguments(  
@@ -57,18 +42,18 @@ int GetTypeArguments(
 );  
 ```  
   
-#### <a name="parameters"></a>Parameters  
+#### <a name="parameters"></a>Paramètres  
  `cArgs`  
- [in] Number of type parameters.  
+ [in] Nombre de paramètres de type.  
   
  `ppArgs`  
- [out] Returns an array of type parameters.  
+ [out] Retourne un tableau de paramètres de type.  
   
  `pcArgs`  
- [in, out] Number of members in the `ppArgs` array.  
+ [dans, out] Nombre de membres dans le `ppArgs` tableau.  
   
-## <a name="return-value"></a>Return Value  
- If successful, returns `S_OK`; otherwise, returns an error code.  
+## <a name="return-value"></a>Valeur de retour  
+ En cas de réussite, retourne `S_OK`; sinon, retourne un code d’erreur.  
   
-## <a name="see-also"></a>See Also  
+## <a name="see-also"></a>Voir aussi  
  [IDebugGenericFieldInstance](../../../extensibility/debugger/reference/idebuggenericfieldinstance.md)

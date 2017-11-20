@@ -1,27 +1,30 @@
 ---
-title: "IScriptEntry::GetBody | Microsoft Docs"
-ms.custom: ""
-ms.date: "01/18/2017"
-ms.prod: "windows-script-interfaces"
-ms.reviewer: ""
-ms.suite: ""
-ms.tgt_pltfrm: ""
-ms.topic: "reference"
+title: IScriptEntry::GetBody | Documents Microsoft
+ms.custom: 
+ms.date: 01/18/2017
+ms.prod: windows-script-interfaces
+ms.reviewer: 
+ms.suite: 
+ms.tgt_pltfrm: 
+ms.topic: reference
 apiname: IScriptEntry.GetBody
 apilocation: scrobj.dll
-helpviewer_keywords: 
-  - "IScriptEntry::GetBody"
+helpviewer_keywords: IScriptEntry::GetBody
 ms.assetid: 419c8c11-a1f8-4b97-ab00-e8af2b2f9bfc
-caps.latest.revision: 10
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 10
+caps.latest.revision: "10"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: 9daa04009cf7088cbd21a2d3dfa185f581c157a3
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.translationtype: MT
+ms.contentlocale: fr-FR
+ms.lasthandoff: 10/27/2017
 ---
-# IScriptEntry::GetBody
-Retourne le texte qui correspond au corps d'un bloc de script d' `IScriptEntry` , d'un bloc de fonction, ou d'un scriptlet.  
+# <a name="iscriptentrygetbody"></a>IScriptEntry::GetBody
+Retourne le texte qui correspond au corps d’un `IScriptEntry` scriptlet, bloc de la fonction ou bloc de script.  
   
-## Syntaxe  
+## <a name="syntax"></a>Syntaxe  
   
 ```  
 HRESULT GetBody(  
@@ -29,24 +32,24 @@ HRESULT GetBody(
 );  
 ```  
   
-#### Paramètres  
+#### <a name="parameters"></a>Paramètres  
  `pbstr`  
- \[out\]  Le texte situé au corps d'un des éléments suivants :  
+ [out] Le texte qui se trouve dans le corps de l’une des opérations suivantes :  
   
--   Un bloc de script d' `IScriptEntry`  
+-   Un `IScriptEntry` bloc de script  
   
--   Une fonction d' `IScriptEntry` dans un bloc de fonction  
+-   Un `IScriptEntry` dans un bloc de fonction (fonction)  
   
--   Un gestionnaire d'événements de scriptlet d' `IScriptEntry`  
+-   Un `IScriptEntry` scriptlet Gestionnaire d’événements  
   
-## Valeur de retour  
- Élément `HRESULT`.  Les valeurs possibles incluent, mais ne sont pas limitées à, celles dans le tableau suivant.  
+## <a name="return-value"></a>Valeur de retour  
+ Élément `HRESULT`. Les valeurs possibles sont notamment celles figurant dans le tableau suivant.  
   
 |Valeur|Description|  
-|------------|-----------------|  
+|-----------|-----------------|  
 |`S_OK`|La méthode a réussi.|  
   
-## Notes  
+## <a name="remarks"></a>Remarques  
   
-## Voir aussi  
- [IScriptEntry, interface](../../winscript/reference/iscriptentry-interface.md)
+## <a name="see-also"></a>Voir aussi  
+ [Interface IScriptEntry](../../winscript/reference/iscriptentry-interface.md)

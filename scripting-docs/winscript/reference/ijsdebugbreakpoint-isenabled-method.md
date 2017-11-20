@@ -1,25 +1,29 @@
 ---
-title: "IJsDebugBreakPoint::IsEnabled, m&#233;thode | Microsoft Docs"
-ms.custom: ""
-ms.date: "01/18/2017"
-ms.prod: "windows-script-interfaces"
-ms.reviewer: ""
-ms.suite: ""
-ms.tgt_pltfrm: ""
-ms.topic: "reference"
+title: "Ijsdebugbreakpoint::IsEnabled, méthode | Documents Microsoft"
+ms.custom: 
+ms.date: 01/18/2017
+ms.prod: windows-script-interfaces
+ms.reviewer: 
+ms.suite: 
+ms.tgt_pltfrm: 
+ms.topic: reference
 apiname: IJSDebugBreakPoint.IsEnabled
 apilocation: jscript9diag.dll
 ms.assetid: 39b63f49-2a0d-41b7-a2ba-75dcb06251a9
-caps.latest.revision: 4
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 4
+caps.latest.revision: "4"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: fb7ab887b8e3442a0c38ea403ad43bdea10cdd66
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.translationtype: MT
+ms.contentlocale: fr-FR
+ms.lasthandoff: 10/27/2017
 ---
-# IJsDebugBreakPoint::IsEnabled, m&#233;thode
-Détermine si le point d'arrêt est activé.  
+# <a name="ijsdebugbreakpointisenabled-method"></a>IJsDebugBreakPoint::IsEnabled, méthode
+Détermine si le point d’arrêt est activé.  
   
-## Syntaxe  
+## <a name="syntax"></a>Syntaxe  
   
 ```  
 HRESULT IsEnabled(  
@@ -27,17 +31,17 @@ HRESULT IsEnabled(
 );  
 ```  
   
-#### Paramètres  
+#### <a name="parameters"></a>Paramètres  
  `pIsEnabled`  
- \[out\] Retourne True si le point d'arrêt est activé ; sinon, retourne False.  
+ [out] Retourne la valeur true si le point d’arrêt est activé ; Sinon, retourne false.  
   
-## Valeur de retour  
+## <a name="return-value"></a>Valeur de retour  
   
-## Notes  
- Retourne E\_UNEXPECTED s'il est appelé sur un point d'arrêt supprimé.  
+## <a name="remarks"></a>Remarques  
+ Retourne E_UNEXPECTED si elle est appelée sur un point d’arrêt supprimé.  
   
-## Configuration requise  
- **En\-tête :** jscript9diag.h  
+## <a name="requirements"></a>Spécifications  
+ **En-tête :** jscript9diag.h  
   
-## Voir aussi  
- [IJsDebugBreakPoint, interface](../../winscript/reference/ijsdebugbreakpoint-interface.md)
+## <a name="see-also"></a>Voir aussi  
+ [Interface IJsDebugBreakPoint](../../winscript/reference/ijsdebugbreakpoint-interface.md)

@@ -4,37 +4,22 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-sdk
+ms.technology: vs-ide-sdk
 ms.tgt_pltfrm: 
 ms.topic: article
 helpviewer_keywords:
 - language services [managed package framework], Autos window
 - Autos window, supporting in language services [managed package framework]
 ms.assetid: 47d40aae-7a3c-41e1-a949-34989924aefb
-caps.latest.revision: 12
+caps.latest.revision: "12"
+author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-translation.priority.mt:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
+ms.openlocfilehash: c824845d4cbdb58241c088c1cb30259d3c298f72
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
 ms.translationtype: MT
-ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
-ms.openlocfilehash: b6e4f4783bd4d968ad7ab4784cdd6bb32ba2392a
-ms.contentlocale: fr-fr
-ms.lasthandoff: 09/26/2017
-
+ms.contentlocale: fr-FR
+ms.lasthandoff: 10/31/2017
 ---
 # <a name="support-for-the-autos-window-in-a-legacy-language-service"></a>Prise en charge de la fenêtre automatique dans un Service de langage hérité
 Le **automatique** fenêtre affiche des expressions telles que des variables et des paramètres qui sont dans la portée lorsque le programme débogué est en pause (soit en raison d’un point d’arrêt ou une exception). Les expressions peuvent inclure des variables locales ou globales et les paramètres qui ont été modifiés dans l’étendue locale. Le **automatique** fenêtre peut également inclure des instanciations d’une classe, structure ou un autre type. Tout ce que l’évaluateur d’expression peut évaluer peut potentiellement être affiché dans le **automatique** fenêtre.  

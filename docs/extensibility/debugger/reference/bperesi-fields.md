@@ -1,46 +1,29 @@
 ---
-title: BPERESI_FIELDS | Microsoft Docs
+title: BPERESI_FIELDS | Documents Microsoft
 ms.custom: 
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-sdk
+ms.technology: vs-ide-sdk
 ms.tgt_pltfrm: 
 ms.topic: article
-f1_keywords:
-- BPERESI_FIELDS
-helpviewer_keywords:
-- BPERESI_FIELDS enumeration
+f1_keywords: BPERESI_FIELDS
+helpviewer_keywords: BPERESI_FIELDS enumeration
 ms.assetid: dd7dd89c-1043-46a1-a929-099cc039c344
-caps.latest.revision: 11
+caps.latest.revision: "11"
+author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-translation.priority.mt:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
+ms.openlocfilehash: e758309c10f9d5dace6a95337130599f34fdb76d
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
 ms.translationtype: MT
-ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
-ms.openlocfilehash: 88bae2c2ed666187a6cae82a11245b66371eedc9
-ms.contentlocale: fr-fr
-ms.lasthandoff: 08/28/2017
-
+ms.contentlocale: fr-FR
+ms.lasthandoff: 10/31/2017
 ---
 # <a name="bperesifields"></a>BPERESI_FIELDS
-Specifies the information to be retrieved about a failed resolution of a breakpoint.  
+Spécifie les informations à récupérer sur une résolution d’échec d’un point d’arrêt.  
   
-## <a name="syntax"></a>Syntax  
+## <a name="syntax"></a>Syntaxe  
   
 ```cpp  
 enum enum_BPERESI_FIELDS {   
@@ -65,40 +48,40 @@ public enum enum_BPERESI_FIELDS {
 };  
 ```  
   
-## <a name="members"></a>Members  
+## <a name="members"></a>Membres  
  PERESI_BPRESLOCATION  
- Initialize/use the `bpResLocation` (breakpoint resolution location) field of the [BP_ERROR_RESOLUTION_INFO](../../../extensibility/debugger/reference/bp-error-resolution-info.md) structure.  
+ Initialisation/utiliser le `bpResLocation` champ (emplacement de résolution de point d’arrêt) de la [BP_ERROR_RESOLUTION_INFO](../../../extensibility/debugger/reference/bp-error-resolution-info.md) structure.  
   
  BPERESI_PROGRAM  
- Initialize/use the `pProgram` field of the `BP_ERROR_RESOLUTION_INFO` structure.  
+ Initialisation/utiliser le `pProgram` champ le `BP_ERROR_RESOLUTION_INFO` structure.  
   
  BPERESI_THREAD  
- Initialize/use the `pThread` field of the `BP_ERROR_RESOLUTION_INFO` structure.  
+ Initialisation/utiliser le `pThread` champ le `BP_ERROR_RESOLUTION_INFO` structure.  
   
  BPERESI_MESSAGE  
- Initialize/use the `bstrMessage` field of the `BP_ERROR_RESOLUTION_INFO` structure.  
+ Initialisation/utiliser le `bstrMessage` champ le `BP_ERROR_RESOLUTION_INFO` structure.  
   
  BPERESI_TYPE  
- Initialize/use the `dwType` (breakpoint type) field of the `BP_ERROR_RESOLUTION_INFO` structure.  
+ Initialisation/utiliser le `dwType` champ (type de point d’arrêt) de la `BP_ERROR_RESOLUTION_INFO` structure.  
   
  BPERESI_ALLFIELDS  
- Initialize/use all fields of the `BP_ERROR_RESOLUTION_INFO` structure.  
+ Initialisation/utiliser tous les champs de la `BP_ERROR_RESOLUTION_INFO` structure.  
   
-## <a name="remarks"></a>Remarks  
- Passed as a parameter to the [GetResolutionInfo](../../../extensibility/debugger/reference/idebugerrorbreakpointresolution2-getresolutioninfo.md) method to indicate which fields of the [BP_ERROR_RESOLUTION_INFO](../../../extensibility/debugger/reference/bp-error-resolution-info.md) structure are to be initialized.  
+## <a name="remarks"></a>Remarques  
+ Passé en tant que paramètre à la [GetResolutionInfo](../../../extensibility/debugger/reference/idebugerrorbreakpointresolution2-getresolutioninfo.md) méthode pour indiquer les champs de la [BP_ERROR_RESOLUTION_INFO](../../../extensibility/debugger/reference/bp-error-resolution-info.md) structure doivent être initialisées.  
   
- These values are also used to indicate which fields in the `BP_ERROR_RESOLUTION_INFO` structure are used and valid when that structure is returned.  
+ Ces valeurs sont également utilisées pour indiquer quels champs de la `BP_ERROR_RESOLUTION_INFO` structure sont utilisés et valides lorsque cette structure est retournée.  
   
- These values may be combined with a bitwise `OR`.  
+ Ces valeurs peuvent être combinées avec une opération de bits `OR`.  
   
-## <a name="requirements"></a>Requirements  
- Header: msdbg.h  
+## <a name="requirements"></a>Spécifications  
+ En-tête : msdbg.h  
   
- Namespace: Microsoft.VisualStudio.Debugger.Interop  
+ Namespace : Microsoft.VisualStudio.Debugger.Interop  
   
- Assembly: Microsoft.VisualStudio.Debugger.Interop.dll  
+ Assembly : Microsoft.VisualStudio.Debugger.Interop.dll  
   
-## <a name="see-also"></a>See Also  
- [Enumerations](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)   
+## <a name="see-also"></a>Voir aussi  
+ [Énumérations](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)   
  [BP_ERROR_RESOLUTION_INFO](../../../extensibility/debugger/reference/bp-error-resolution-info.md)   
  [GetResolutionInfo](../../../extensibility/debugger/reference/idebugerrorbreakpointresolution2-getresolutioninfo.md)

@@ -1,47 +1,31 @@
 ---
-title: IDebugModule3::GetSymbolInfo | Microsoft Docs
+title: IDebugModule3::GetSymbolInfo | Documents Microsoft
 ms.custom: 
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-sdk
+ms.technology: vs-ide-sdk
 ms.tgt_pltfrm: 
 ms.topic: article
-f1_keywords:
-- IDebugModule3::GetSymbolInfo
+f1_keywords: IDebugModule3::GetSymbolInfo
 helpviewer_keywords:
 - GetSymbolInfo method
 - IDebugModule3::GetSymbolInfo method
 ms.assetid: dda5e8e1-6878-4aa9-9ee4-e7d0dcc11210
-caps.latest.revision: 17
+caps.latest.revision: "17"
+author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-translation.priority.mt:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
+ms.openlocfilehash: 341d31537f3c6c67e601296cf14eb5a6a10df08d
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
 ms.translationtype: MT
-ms.sourcegitcommit: 21a413a3e2d17d77fd83d5109587a96f323a0511
-ms.openlocfilehash: 4923c6f79299338b2e615a0c8cae25afe28f1c80
-ms.contentlocale: fr-fr
-ms.lasthandoff: 08/30/2017
-
+ms.contentlocale: fr-FR
+ms.lasthandoff: 10/31/2017
 ---
 # <a name="idebugmodule3getsymbolinfo"></a>IDebugModule3::GetSymbolInfo
-Retrieves a list of paths that are searched for symbols as well as the results of searching each path.  
+Récupère une liste de chemins d’accès qui sont explorés pour les symboles, ainsi que les résultats de recherche dans chaque chemin d’accès.  
   
-## <a name="syntax"></a>Syntax  
+## <a name="syntax"></a>Syntaxe  
   
 ```cpp  
 HRESULT GetSymbolInfo(  
@@ -58,31 +42,31 @@ int GetSymbolInfo(
   
 ```  
   
-#### <a name="parameters"></a>Parameters  
+#### <a name="parameters"></a>Paramètres  
  `dwFields`  
- [in] A combination of flags from the [SYMBOL_SEARCH_INFO_FIELDS](../../../extensibility/debugger/reference/symbol-search-info-fields.md) enumeration specifying which fields of `pInfo` are to be filled in.  
+ [in] Une combinaison d’indicateurs à partir de la [SYMBOL_SEARCH_INFO_FIELDS](../../../extensibility/debugger/reference/symbol-search-info-fields.md) énumération spécifiant les champs de `pInfo` doivent être renseignés.  
   
  `pInfo`  
- [out] A [MODULE_SYMBOL_SEARCH_INFO](../../../extensibility/debugger/reference/module-symbol-search-info.md) structure whose members are to be filled in with the specified information. If this is a null value, this method returns `E_INVALIDARG`.  
+ [out] A [MODULE_SYMBOL_SEARCH_INFO](../../../extensibility/debugger/reference/module-symbol-search-info.md) structure dont les membres sont à remplir avec les informations spécifiées. Si cela est une valeur null, cette méthode retourne `E_INVALIDARG`.  
   
-## <a name="return-value"></a>Return Value  
- If the method succeeds, it returns `S_OK`; otherwise, it returns an error code.  
-  
-> [!NOTE]
->  The returned string (in the `MODULE_SYMBOL_SEARCH_INFO` structure) could be empty even if `S_OK` is returned. In this case, there was no search information to return.  
-  
-## <a name="remarks"></a>Remarks  
- If the `bstrVerboseSearchInfo` field of the `MODULE_SYMBOL_SEARCH_INFO` structure is not empty, then it contains a list of paths searched and the results of that search. The list is formatted with a path, followed by an ellipsis ("..."), followed by the result. If there is more than one path result pair, then each pair is separated by a "\r\n" (carriage-return/linefeed) pair. The pattern looks like this:  
-  
- \<path>...\<result>\r\n\<path>...\<result>\r\n\<path>...\<result>  
-  
- Note that the last entry does not have a \r\n sequence.  
-  
-## <a name="example"></a>Example  
- In this example, this method returns three paths with three different search results. Each line is terminated with a carriage-return/linefeed pair. The example output just prints the search results as a single string.  
+## <a name="return-value"></a>Valeur de retour  
+ Si la méthode réussit, elle retourne `S_OK`; sinon, elle retourne un code d’erreur.  
   
 > [!NOTE]
->  A status result is everything immediately following the "..." up to the end of the line.  
+>  La chaîne retournée (dans le `MODULE_SYMBOL_SEARCH_INFO` structure) peut être vide même si `S_OK` est retourné. Dans ce cas, il n’a aucune information de recherche à retourner.  
+  
+## <a name="remarks"></a>Remarques  
+ Si le `bstrVerboseSearchInfo` champ le `MODULE_SYMBOL_SEARCH_INFO` structure n’est pas vide, puis il contient une liste des chemins de recherche et les résultats de recherche. La liste est mis en forme avec un chemin d’accès, suivie de points de suspension («... »), suivi par le résultat. S’il existe plusieurs paires de résultat de chemin d’accès, chaque paire est séparée par une paire (retour chariot /) de « \r\n ». Le modèle ressemble à ceci :  
+  
+ \<chemin d’accès >... \<résultat > \r\n\<chemin d’accès >... \<résultat > \r\n\<chemin d’accès >... \<résultat >  
+  
+ Notez que la dernière entrée n’est pas une séquence \r\n.  
+  
+## <a name="example"></a>Exemple  
+ Dans cet exemple, cette méthode retourne les trois chemins d’accès avec trois des résultats différents. Chaque ligne se termine par une paire retour chariot /. L’exemple de sortie imprime simplement les résultats de recherche comme une chaîne unique.  
+  
+> [!NOTE]
+>  Un résultat d’état est tout ce qui suit immédiatement la «... » jusqu'à la fin de la ligne.  
   
 ```cpp  
 void ShowSymbolSearchResults(IDebugModule3 *pIDebugModule3)  
@@ -100,10 +84,10 @@ void ShowSymbolSearchResults(IDebugModule3 *pIDebugModule3)
 }  
 ```  
   
- **c:\symbols\user32.pdb... File not found.**  
-**c:\winnt\symbols\user32.pdb... Version does not match.**  
-**\\\symbols\symbols\user32.dll\0a8sd0ad8ad\user32.pdb... Symbols loaded.**   
-## <a name="see-also"></a>See Also  
+ **c:\symbols\user32.pdb... Fichier introuvable.**  
+**c:\winnt\symbols\user32.pdb... Version ne correspond pas.**  
+**\\\symbols\symbols\user32.dll\0a8sd0ad8ad\user32.pdb... Symboles chargés.**   
+## <a name="see-also"></a>Voir aussi  
  [SYMBOL_SEARCH_INFO_FIELDS](../../../extensibility/debugger/reference/symbol-search-info-fields.md)   
  [MODULE_SYMBOL_SEARCH_INFO](../../../extensibility/debugger/reference/module-symbol-search-info.md)   
  [IDebugModule3](../../../extensibility/debugger/reference/idebugmodule3.md)

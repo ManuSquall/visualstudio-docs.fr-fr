@@ -1,67 +1,69 @@
 ---
-title: "GUID et ID de commandes de Visual Studio | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-helpviewer_keywords: 
-  - "commandes"
-  - "ID"
-  - "emplacement de commande"
-  - "commande de Visual studio"
-  - "GUID"
+title: GUID et ID de commandes Visual Studio | Documents Microsoft
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+helpviewer_keywords:
+- commands
+- id
+- command placement
+- visual studio command
+- guid
 ms.assetid: 2ea4bee2-0259-4675-8e65-2023b312b516
-caps.latest.revision: 6
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 6
+caps.latest.revision: "6"
+author: gregvanl
+ms.author: gregvanl
+manager: ghogen
+ms.openlocfilehash: 3ce546f36ed93f0f42bfd548c64f2a25669e162b
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: fr-FR
+ms.lasthandoff: 10/31/2017
 ---
-# GUID et ID de commandes de Visual Studio
-[!INCLUDE[vs2017banner](../../code-quality/includes/vs2017banner.md)]
-
-GUID et les valeurs d'ID des commandes incluses dans l'IDE de Visual Studio \(IDE\) sont définis dans des fichiers de .vsct installés dans le cadre de le kit de développement Visual Studio.  Pour plus d'informations, consultez [Groupes, les Menus et les commandes définies par l’IDE](../../extensibility/internals/ide-defined-commands-menus-and-groups.md).  
+# <a name="guids-and-ids-of-visual-studio-commands"></a>GUID et ID de commandes Visual Studio
+Les valeurs GUID et l’ID des commandes inclus dans l’environnement de développement intégré (IDE) Visual Studio sont définies dans les fichiers .vsct qui sont installés dans le cadre du SDK Visual Studio. Pour plus d’informations, consultez [IDE-Defined commandes, Menus et des groupes](../../extensibility/internals/ide-defined-commands-menus-and-groups.md).  
   
- Pour plus d'informations sur l'utilisation des objets de l'IDE définis dans les fichiers de .vsct, consultez [Extension des Menus et commandes](../../extensibility/extending-menus-and-commands.md).  
+ Pour plus d’informations sur la façon d’utiliser des objets IDE qui sont définis dans les fichiers .vsct, consultez [étendant les Menus et commandes](../../extensibility/extending-menus-and-commands.md).  
   
-## rechercher une définition de commande  
- Étant donné que Visual Studio définit plus " pour mille " commandes, il est impossible de les répertorier toutes ici.  Au lieu de cela, procédez comme suit pour localiser la définition d'une commande.  
+## <a name="finding-a-command-definition"></a>Recherche d’une définition de commande  
+ Étant donné que Visual Studio définit des commandes de plus de mille, il est peu pratique de tous les répertorier ici. Au lieu de cela, procédez comme suit pour trouver la définition d’une commande.  
   
-#### Pour rechercher la définition de commande  
+#### <a name="to-locate-a-command-definition"></a>Pour localiser une définition de commande  
   
-1.  dans Visual Studio, ouvrez les fichiers suivants dans *Chemin d'installation du kit de développement Visual Studio*\\VisualStudioIntegration\\Common\\Inc\\ folder: SharedCmdDef.vsct, ShellCmdDef.vsct, VsDbgCmdUsed.vsct, Venusmenu .vsct.  
+1.  Dans Visual Studio, ouvrez les fichiers suivants dans le *chemin d’installation de Visual Studio SDK*\VisualStudioIntegration\Common\Inc\ dossier : SharedCmdDef.vsct, ShellCmdDef.vsct, VsDbgCmdUsed.vsct, Venusmenu.vsct.  
   
-     la plupart des commandes de Visual Studio sont définies dans SharedCmdDef.vsct et ShellCmdDef.vsct.  VsDbgCmdUsed.vsct définit les commandes relatives au débogueur, et Venusmenu.vsct définit les commandes qui sont spécifiques à la programmation Web.  
+     La plupart des commandes de Visual Studio sont définies dans SharedCmdDef.vsct et ShellCmdDef.vsct. VsDbgCmdUsed.vsct définit des commandes qui concernent le débogueur et Venusmenu.vsct définit des commandes qui sont spécifiques au développement Web.  
   
-2.  Si la commande est un élément de menu, prenez note du texte exact de l'élément de menu.  Si la commande est un bouton sur une barre d'outils, prenez note du texte d'info\-bulle qui s'affiche lorsque vous pointez la souris dessus.  
+2.  Si la commande est un élément de menu, notez le texte exact de l’élément de menu. Si la commande est un bouton sur une barre d’outils, notez le texte d’info-bulle qui apparaît lorsque vous pointez dessus.  
   
-3.  Appuyez sur la combinaison de touches CTRL\+F pour ouvrir la boîte de dialogue de **Rechercher** .  
+3.  Appuyez sur CTRL + F pour ouvrir le **trouver** boîte de dialogue.  
   
-4.  Dans la zone de **Rechercher** , tapez le texte que vous avez indiquée dans l'étape 2.  
+4.  Dans le **rechercher** , tapez le texte que vous avez noté à l’étape 2.  
   
-5.  Vérifiez que **tous les documents ouverts** s'affiche dans la zone de **Regarder dans** .  
+5.  Vérifiez que **tous les Documents ouverts** s’affiche dans le **Regarder dans** boîte.  
   
-6.  cliquez sur le bouton de **Suivant** jusqu'à ce que le texte soit sélectionné dans la section d' `<Strings>` de [Élément de bouton](../../extensibility/button-element.md).  
+6.  Cliquez sur le **suivant** jusqu'à ce que le texte est sélectionné dans le `<Strings>` section d’un [élément bouton](../../extensibility/button-element.md).  
   
-     L'élément d' `<Button>` qui la commande apparaît dans est la définition de commande.  
+     Le `<Button>` élément apparaissant dans la commande est la définition de commande.  
   
- Lorsque vous avez trouvé la définition de commande, vous pouvez ajouter une copie de la commande dans un menu ou une barre d'outils différent en créant [Élément de CommandPlacement](../../extensibility/commandplacement-element.md) qui a mêmes `guid` et valeurs d' `id` que la commande.  Pour plus d'informations, consultez [Création de groupes de boutons réutilisables](../../extensibility/creating-reusable-groups-of-buttons.md).  
+ Lorsque vous avez trouvé la définition de commande, vous pouvez placer une copie de la commande sur un autre menu ou une barre d’outils, en créant un [CommandPlacement élément](../../extensibility/commandplacement-element.md) qui a le même `guid` et `id` valeurs en tant que la commande. Pour plus d’informations, consultez [création de groupes réutilisable de boutons](../../extensibility/creating-reusable-groups-of-buttons.md).  
   
-### Cas spéciaux  
- Dans les cas suivants, le texte de menu ou le texte d'info\-bulle ne corresponde pas exactement à celui de la définition de commande.  
+### <a name="special-cases"></a>Cas particuliers  
+ Dans les cas suivants, le texte du menu ou le texte d’info-bulle peut pas correspondre exactement à ce qui est dans la définition de commande.  
   
--   Éléments de menu qui incluent un caractère souligné, telles que l'ordre d' **Imprimer** dans le menu de **Fichier** , dans lequel P est souligné.  
+-   Les éléments de menu qui incluent un caractère souligné, telles que la **impression** commande sur le **fichier** menu, dans lequel la P est souligné.  
   
-     Les caractères qui sont précédés par '&'le caractères dans les noms d'éléments de menu sont affichés comme souligné.  Toutefois, les fichiers de .vsct sont écrits en XML, qui utilise «&le caractère pour indiquer des caractères spéciaux et le requiert qu'un perluète qui doit être affiché doit être défini comme »&amp;».  Par conséquent, dans un fichier de .vsct, la commande d'impression apparaît comme '&amp;Print'.  
+     Les caractères qui sont précédés par le caractère « & » dans les noms d’élément de menu sont affichés comme souligné. Toutefois, les fichiers .vsct sont écrites en XML, qui utilise le caractère '&' pour indiquer les caractères spéciaux et nécessite qu’une esperluette qui doit être affiché doit être développée sous&amp;'. Par conséquent, dans un fichier .vsct, le **P**Imprimer commande apparaît sous la forme '&amp;impression ».  
   
--   Commandes qui ont le texte dynamique, tel qu' **Enregistrer** *Nom du fichier en cours*, et les éléments de menu générés dynamiquement, tels que les éléments de la liste de **fichiers récents** .  
+-   Les commandes qui ont un texte dynamique, tel que **enregistrer** *nom de fichier actuel*et générées de façon dynamique des éléments de menu, telles que les éléments sur le **fichiers récents** liste.  
   
-     Il n'existe aucune façon fiable pour la rechercher sur le texte dynamique.  Au lieu de cela, recherchez un groupe qui héberge la commande de mise à jour [GUID et ID de Menus de Visual Studio](../../extensibility/internals/guids-and-ids-of-visual-studio-menus.md) de recherche ou [GUID et ID des barres d'outils de Visual Studio](../../extensibility/internals/guids-and-ids-of-visual-studio-toolbars.md), et la recherche sur l'ID de ce groupe.  Si la définition de commande n'a pas le groupe comme [Parent, élément](../../extensibility/parent-element.md), la recherche SharedCmdPlace.vsct et ShellCmdPlace.vsct \(ou VsDbgCmdPlace.vsct pour les commandes du débogueur\) d'un élément de `<CommandPlacement>` qui définit le parent de la commande.  SharedCmdPlace.vsct, ShellCmdPlace.vsct, andVsDbgCmdPlace.vsct sont dans *Chemin d'installation du kit de développement Visual Studio*\\VisualStudioIntegration\\Common\\Inc \\.  
+     Il n’existe aucun moyen fiable d’effectuer des recherches sur le texte dynamique. Au lieu de cela, rechercher un groupe qui héberge la commande voulue en consultant [GUID et ID de Visual Studio Menus](../../extensibility/internals/guids-and-ids-of-visual-studio-menus.md) ou [GUID et ID de Visual Studio barres d’outils](../../extensibility/internals/guids-and-ids-of-visual-studio-toolbars.md)et recherchez l’ID de ce groupe. Si la définition de commande n’a pas le groupe en tant que son [élément Parent](../../extensibility/parent-element.md), SharedCmdPlace.vsct et ShellCmdPlace.vsct (ou VsDbgCmdPlace.vsct pour les commandes de débogueur) recherchez un `<CommandPlacement>` élément qui définit le parent de la commande. SharedCmdPlace.vsct, ShellCmdPlace.vsct, andVsDbgCmdPlace.vsct se trouvent dans le *chemin d’installation de Visual Studio SDK*\VisualStudioIntegration\Common\Inc\ dossier.  
   
-## Voir aussi  
- [MenuCommands Vs. OleMenuCommands](../../misc/menucommands-vs-olemenucommands.md)   
- [Table de commandes de Visual Studio \(. Fichiers VSCT\)](../../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)   
- [Référence de schéma XML de VSCT](../../extensibility/vsct-xml-schema-reference.md)
+## <a name="see-also"></a>Voir aussi  
+ [MenuCommands et OleMenuCommands](../../extensibility/menucommands-vs-olemenucommands.md)   
+ [Tableau de commandes de Visual Studio (. Fichiers VSCT)](../../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)   
+ [Schéma de référence XML VSCT](../../extensibility/vsct-xml-schema-reference.md)
