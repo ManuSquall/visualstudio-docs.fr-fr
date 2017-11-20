@@ -1,0 +1,29 @@
+- name: Visual Studio Tools pour l’IA
+  href: index.yml
+  items:
+    - name: Vue d'ensemble
+      items:
+        - name: À propos de Visual Studio Tools pour l’IA
+          href: about-ai-tools.md
+    - name: Installation
+      href: installation.md
+    - name: Guides de démarrage rapide
+      items:
+        - name: TensorFlow + Python
+          href: tensorflow-local.md
+    - name: Didacticiels
+      items:
+        - name: TensorFlow + Machine virtuelle d’apprentissage profond Azure
+          href: tensorflow-vm.md
+    - name: Guides pratiques
+      items:
+        - name: Créer un projet
+          href: create-project.md
+        - name: Entraîner un modèle
+          href: train-model.md
+    - name: Exemples
+      items:
+        - name: GitHub
+          href: 'https://github.com/Microsoft/samples-for-ai'
+        - name: Galerie Machine Learning
+          href: 'https://gallery.cortanaintelligence.com/projects'
