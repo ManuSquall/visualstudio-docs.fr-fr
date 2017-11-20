@@ -1,10 +1,13 @@
-# [R Tools pour Visual Studio](index.md)
+# Vue d'ensemble
+## [R Tools pour Visual Studio](index.md)
 ## [Charge de travail Applications de science des données et d’analytique](data-science-workload.md)
+# Démarrages rapides :
 ## [Installation](installation.md)
+## [Obtention d’aide](getting-started-help.md)
+# Didacticiels
 ## [Bien démarrer avec R](getting-started-with-r.md)
-### [Exemples](getting-started-samples.md)
-### [Obtention d’aide](getting-started-help.md)
-### [Options](options.md)
+# [Exemples](getting-started-samples.md)
+# Guides pratiques :
 ## [Projets R](projects.md)
 ### [Gestionnaire de package](package-manager.md)
 ### [Espaces de travail](workspaces.md)
@@ -18,3 +21,5 @@
 ## [Visualisation des données](visualizing-data.md)
 ## [Explorateur de variables](variable-explorer.md)
 ## [Débogage](debugging.md)
+# Référence
+## [Options](options.md)
