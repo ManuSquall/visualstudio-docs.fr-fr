@@ -1,0 +1,7 @@
+- name: Docs
+  tocHref: /
+  topicHref: /
+  items:
+    - name: Abonnements Visual Studio
+      tocHref: /visualstudio/subscriptions/
+      topicHref: /visualstudio/subscriptions
