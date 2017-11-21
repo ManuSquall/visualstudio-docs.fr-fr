@@ -1,43 +1,46 @@
 ---
-title: "prototype, propri&#233;t&#233; (Error) | Microsoft Docs"
-ms.custom: ""
-ms.date: "01/18/2017"
-ms.prod: "windows-client-threshold"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "devlang-javascript"
-ms.tgt_pltfrm: ""
-ms.topic: "language-reference"
-dev_langs: 
-  - "JavaScript"
-  - "TypeScript"
-  - "DHTML"
+title: "prototype, propriété (Error) | Documents Microsoft"
+ms.custom: 
+ms.date: 01/18/2017
+ms.prod: windows-client-threshold
+ms.reviewer: 
+ms.suite: 
+ms.technology: devlang-javascript
+ms.tgt_pltfrm: 
+ms.topic: language-reference
+dev_langs:
+- JavaScript
+- TypeScript
+- DHTML
 ms.assetid: 6c268a51-1a3d-4397-abf8-e54ca4e598fe
-caps.latest.revision: 2
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 2
+caps.latest.revision: "2"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: b7d0413d3541691a38672e7c0720b58245725b76
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.translationtype: MT
+ms.contentlocale: fr-FR
+ms.lasthandoff: 10/27/2017
 ---
-# prototype, propri&#233;t&#233; (Error)
-Retourne une référence au prototype d'une erreur.  
+# <a name="prototype-property-error"></a>prototype, propriété (Error)
+Retourne une référence au prototype pour une erreur.  
   
-## Syntaxe  
+## <a name="syntax"></a>Syntaxe  
   
 ```  
   
 error.prototype  
 ```  
   
-## Notes  
- L'argument `error` est le nom d'une erreur.  
+## <a name="remarks"></a>Remarques  
+ Le `error` argument est le nom d’une erreur.  
   
- Utilisez la propriété `prototype` pour fournir un jeu de fonctionnalités de base à une erreur.  Les nouvelles instances d'un objet « héritent » du comportement du prototype assigné à cet objet.  
+ Utilisez le `prototype` propriété afin de fournir un ensemble de fonctionnalités de base à une erreur. Les nouvelles instances d'un objet « héritent » du comportement du prototype attribué à cet objet.  
   
- Par exemple, pour ajouter une méthode à l'objet `Error` qui retourne la valeur du plus grand élément du tableau, déclarez la fonction, ajoutez\-la à `Error.prototype`, puis utilisez\-la.  
+ Par exemple, pour ajouter une méthode à l'objet `Error` qui retourne la valeur de l'élément le plus volumineux du tableau, déclarez la fonction, ajoutez-la à `Error.prototype`, et réutilisez-la.  
   
-```javascript  
+```JavaScript  
 function getSeverity(){  
     if (this.number > 1000)  
         return "high";  
@@ -54,7 +57,7 @@ document.write(myError.getSev());
   
 ```  
   
- Tous les objets [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] intrinsèques ont une propriété `prototype` qui est en lecture seule.  Vous pouvez ajouter des propriétés et des méthodes au prototype, mais vous ne pouvez pas assigner un autre prototype à l'objet.  Toutefois, un nouveau prototype peut être assigné aux objets définis par l'utilisateur.  
+ Toutes les intrinsèques [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] objets ont une `prototype` propriété est en lecture seule. Propriétés et méthodes peuvent être ajoutées au prototype, mais l’objet ne peut pas être assigné un prototype différent. Toutefois, les objets définis par l’utilisateur peuvent être affectés à un nouveau prototype.  
   
-## Configuration requise  
+## <a name="requirements"></a>Spécifications  
  [!INCLUDE[jsv2](../../javascript/reference/includes/jsv2-md.md)]

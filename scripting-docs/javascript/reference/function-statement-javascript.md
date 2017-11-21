@@ -1,36 +1,38 @@
 ---
-title: "function, instruction (JavaScript) | Microsoft Docs"
-ms.custom: ""
-ms.date: "01/18/2017"
-ms.prod: "windows-client-threshold"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "devlang-javascript"
-ms.tgt_pltfrm: ""
-ms.topic: "language-reference"
-f1_keywords: 
-  - "function_JavaScriptKeyword"
-dev_langs: 
-  - "JavaScript"
-  - "TypeScript"
-  - "DHTML"
-helpviewer_keywords: 
-  - "déclarer des fonctions"
-  - "déclarer des fonctions, syntaxe"
-  - "function (instruction)"
-  - "new (opérateur)"
+title: Function, instruction (JavaScript) | Documents Microsoft
+ms.custom: 
+ms.date: 01/18/2017
+ms.prod: windows-client-threshold
+ms.reviewer: 
+ms.suite: 
+ms.technology: devlang-javascript
+ms.tgt_pltfrm: 
+ms.topic: language-reference
+f1_keywords: function_JavaScriptKeyword
+dev_langs:
+- JavaScript
+- TypeScript
+- DHTML
+helpviewer_keywords:
+- new operator
+- declaring functions, syntax
+- function statement
+- declaring functions
 ms.assetid: cc9cfd43-1305-41c8-ad67-545d20f4fafe
-caps.latest.revision: 20
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 20
+caps.latest.revision: "20"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: e5fac3647e9374a9c909a420b73b86354cac69b6
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.translationtype: MT
+ms.contentlocale: fr-FR
+ms.lasthandoff: 10/27/2017
 ---
-# function, instruction (JavaScript)
+# <a name="function-statement-javascript"></a>function, instruction (JavaScript)
 Déclare une nouvelle fonction.  
   
-## Syntaxe  
+## <a name="syntax"></a>Syntaxe  
   
 ```  
 function functionname ([arg1 [, arg2 [,...[, argN]]]]) {  
@@ -38,38 +40,38 @@ function functionname ([arg1 [, arg2 [,...[, argN]]]]) {
 }   
 ```  
   
-## Paramètres  
+## <a name="parameters"></a>Paramètres  
  `functionname`  
- Obligatoire.  Nom de la fonction.  
+ Obligatoire. Nom de la fonction.  
   
  `arg1...argN`  
- Facultatif.  Liste facultative d'arguments séparés par des virgules, reconnus par la fonction.  
+ Facultatif. Liste facultative d’arguments séparés par des virgules que comprend la fonction.  
   
  `statements`  
- Facultatif.  Une ou plusieurs instructions de [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)].  
+ Facultatif. Un ou plusieurs[!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] instructions.  
   
-## Notes  
- Employez l'instruction `function` pour déclarer une fonction destinée à une utilisation ultérieure.  Le code contenu dans `statements` n'est pas exécuté tant que la fonction n'a pas été appelée depuis un emplacement différent dans le script.  
+## <a name="remarks"></a>Remarques  
+ Utilisez la `function` instruction pour déclarer une fonction pour une utilisation ultérieure. Le code qui est contenu dans `statements` n’est pas exécuté jusqu'à ce que la fonction est appelée depuis un autre emplacement dans le script.  
   
- L'instruction [return](../../javascript/reference/return-statement-javascript.md) est utilisée pour retourner une valeur de la fonction.  L'instruction `return` est inutile, le programme retourne une valeur lorsqu'il atteint la fin de la fonction.  Si aucune instruction `return` n'est exécutée dans la fonction, ou si l'instruction `return` n'a aucune expression, la fonction retourne la valeur `undefined`.  
+ Le [retourner](../../javascript/reference/return-statement-javascript.md) instruction est utilisée pour retourner une valeur de la fonction. Vous n’avez pas à utiliser un `return` instruction ; la programme sera retourner lorsqu’il atteint la fin de la fonction. Si aucun `return` instruction est exécutée dans la fonction, ou si le `return` instruction ne possède aucune expression, la fonction retourne la valeur `undefined`.  
   
 > [!NOTE]
->  Lors de l'appel d'une fonction, veillez à inclure les parenthèses et les arguments requis.  Appeler une fonction sans parenthèses retourne une référence à la fonction, pas les résultats de la fonction.  
+>  Lorsque vous appelez une fonction, veillez à inclure les parenthèses et tous les arguments requis. Appel d’une fonction sans parenthèses retourne une référence à la fonction, pas les résultats de la fonction.  
   
-## Exemple  
- L'exemple ci\-dessous illustre l'utilisation de l'instruction `function`.  
+## <a name="example"></a>Exemple  
+ L'exemple ci-dessous illustre l'utilisation de l'instruction `function`.  
   
-```javascript  
+```JavaScript  
 function myfunction (arg1, arg2) {  
     var r = arg1 * arg2;  
     return(r);  
 }  
 ```  
   
-## Exemple  
- Une fonction peut être assignée à une variable.  L'exemple suivant le montre.  
+## <a name="example"></a>Exemple  
+ Une fonction peut être assignée à une variable. L'exemple suivant illustre cette opération.  
   
-```javascript  
+```JavaScript  
 function AddFive(x) {  
     return x + 5;  
 }  
@@ -92,8 +94,8 @@ var result = MyFunc(123);
 // Output: 133  
 ```  
   
-## Configuration requise  
+## <a name="requirements"></a>Spécifications  
  [!INCLUDE[jsv1](../../javascript/misc/includes/jsv1-md.md)]  
   
-## Voir aussi  
+## <a name="see-also"></a>Voir aussi  
  [new, opérateur](../../javascript/reference/new-operator-decrementjavascript.md)

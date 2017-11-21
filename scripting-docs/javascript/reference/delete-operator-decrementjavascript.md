@@ -1,51 +1,53 @@
 ---
-title: "delete, op&#233;rateur (JavaScript) | Microsoft Docs"
-ms.custom: ""
-ms.date: "01/18/2017"
-ms.prod: "windows-client-threshold"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "devlang-javascript"
-ms.tgt_pltfrm: ""
-ms.topic: "language-reference"
-f1_keywords: 
-  - "delete_JavaScriptKeyword"
-dev_langs: 
-  - "JavaScript"
-  - "TypeScript"
-  - "DHTML"
-helpviewer_keywords: 
-  - "éléments de tableau, suppression"
-  - "propriétés, suppression"
-  - "Opérateur delete"
+title: "Delete (opérateur) (JavaScript) | Documents Microsoft"
+ms.custom: 
+ms.date: 01/18/2017
+ms.prod: windows-client-threshold
+ms.reviewer: 
+ms.suite: 
+ms.technology: devlang-javascript
+ms.tgt_pltfrm: 
+ms.topic: language-reference
+f1_keywords: delete_JavaScriptKeyword
+dev_langs:
+- JavaScript
+- TypeScript
+- DHTML
+helpviewer_keywords:
+- array elements, deleting
+- properties, deleting
+- delete operator
 ms.assetid: 55c6487e-96ea-455b-a7ed-dc35c41ac2f3
-caps.latest.revision: 16
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 16
+caps.latest.revision: "16"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: ee3def1977c0b29ee14ebf836f2d9ebb51d5a5ef
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.translationtype: MT
+ms.contentlocale: fr-FR
+ms.lasthandoff: 10/27/2017
 ---
-# delete, op&#233;rateur (JavaScript)
+# <a name="delete-operator-javascript"></a>delete, opérateur (JavaScript)
 Supprime une propriété d'un objet ou supprime un élément d'un tableau.  
   
-## Syntaxe  
+## <a name="syntax"></a>Syntaxe  
   
 ```  
 delete expression  
 ```  
   
-## Notes  
- L'argument `expression` est une expression [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] valide qui génère habituellement un nom de propriété ou un élément de tableau.  
+## <a name="remarks"></a>Remarques  
+ Le `expression` argument est valide [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] expression génère habituellement un propriété nom ou élément de tableau.  
   
- Si le résultat de l'argument `expression` est un objet, que la propriété spécifiée dans `expression` existe et que l'objet n'en permet pas la suppression, la valeur retournée est `false`.  
+ Si le résultat de `expression` est un objet, la propriété spécifiée dans `expression` existe, et l’objet n’autorise pas sa suppression, `false` est retourné.  
   
- Dans tous les autres cas, la valeur retournée est `true`.  
+ Dans tous les autres cas, `true` est retourné.  
   
-## Exemple  
- L'exemple suivant montre comment supprimer un élément d'un tableau.  
+## <a name="example"></a>Exemple  
+ L’exemple suivant montre comment supprimer un élément d’un tableau.  
   
-```javascript  
+```JavaScript  
 // Create an array.  
 var ar = new Array (10, 11, 12, 13, 14);  
   
@@ -61,10 +63,10 @@ document.write ("array: " + ar);
 //  array: 10,,12,13,14  
 ```  
   
-## Exemple  
- L'exemple suivant montre comment supprimer des propriétés d'un objet.  
+## <a name="example"></a>Exemple  
+ L’exemple suivant montre comment supprimer des propriétés d’un objet.  
   
-```javascript  
+```JavaScript  
 // Create an object and add expando properties.  
 var myObj = new Object();  
 myObj.name = "Fred";  
@@ -83,9 +85,9 @@ document.write ("count: " + myObj.count);
 //  count: undefined  
 ```  
   
-## Configuration requise  
+## <a name="requirements"></a>Spécifications  
  [!INCLUDE[jsv3](../../javascript/reference/includes/jsv3-md.md)]  
   
-## Voir aussi  
+## <a name="see-also"></a>Voir aussi  
  [Priorité des opérateurs](../../javascript/operator-subtractprecedence-javascript.md)   
- [Résumé des opérateurs \(JavaScript\)](../../javascript/misc/operator-subtractsummary-javascript.md)
+ [Résumé des opérateurs (JavaScript)](../../javascript/misc/operator-subtractsummary-javascript.md)

@@ -1,38 +1,41 @@
 ---
-title: "BYTES_PER_ELEMENT, constante (Float64Array) | Microsoft Docs"
-ms.custom: ""
-ms.date: "01/18/2017"
-ms.prod: "windows-client-threshold"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "devlang-javascript"
-ms.tgt_pltfrm: ""
-ms.topic: "language-reference"
-dev_langs: 
-  - "JavaScript"
-  - "TypeScript"
-  - "DHTML"
+title: Bytes_per_element, constante (Float64Array) | Documents Microsoft
+ms.custom: 
+ms.date: 01/18/2017
+ms.prod: windows-client-threshold
+ms.reviewer: 
+ms.suite: 
+ms.technology: devlang-javascript
+ms.tgt_pltfrm: 
+ms.topic: language-reference
+dev_langs:
+- JavaScript
+- TypeScript
+- DHTML
 ms.assetid: e1afc629-4df3-49ce-baf5-5b51a6340621
-caps.latest.revision: 7
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 7
+caps.latest.revision: "7"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: 84426b7b8e6920adb9a14b12696c6014b63ba997
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.translationtype: MT
+ms.contentlocale: fr-FR
+ms.lasthandoff: 10/27/2017
 ---
-# BYTES_PER_ELEMENT, constante (Float64Array)
+# <a name="bytesperelement-constant-float64array"></a>BYTES_PER_ELEMENT, constante (Float64Array)
 Taille en octets de chaque élément contenu dans le tableau.  
   
-## Syntaxe  
+## <a name="syntax"></a>Syntaxe  
   
-```javascript  
+```JavaScript  
 var arraySize = int8Array.BYTES_PER_ELEMENT;  
 ```  
   
-## Exemple  
+## <a name="example"></a>Exemple  
  L'exemple suivant montre comment obtenir la taille des éléments de tableau.  
   
-```javascript  
+```JavaScript  
 var req = new XMLHttpRequest();  
     req.open('GET', "http://www.example.com");  
     req.responseType = "arraybuffer";  
@@ -49,5 +52,5 @@ var req = new XMLHttpRequest();
   
 ```  
   
-## Configuration requise  
+## <a name="requirements"></a>Spécifications  
  [!INCLUDE[jsv10](../../javascript/reference/includes/jsv10-md.md)]

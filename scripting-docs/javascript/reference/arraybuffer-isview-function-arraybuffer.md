@@ -1,39 +1,42 @@
 ---
-title: "ArrayBuffer.isView, fonction (ArrayBuffer) | Microsoft Docs"
-ms.custom: ""
-ms.date: "01/18/2017"
-ms.prod: "windows-client-threshold"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "devlang-javascript"
-ms.tgt_pltfrm: ""
-ms.topic: "language-reference"
-dev_langs: 
-  - "JavaScript"
-  - "TypeScript"
-  - "DHTML"
+title: Arraybuffer.isview, fonction (ArrayBuffer) | Documents Microsoft
+ms.custom: 
+ms.date: 01/18/2017
+ms.prod: windows-client-threshold
+ms.reviewer: 
+ms.suite: 
+ms.technology: devlang-javascript
+ms.tgt_pltfrm: 
+ms.topic: language-reference
+dev_langs:
+- JavaScript
+- TypeScript
+- DHTML
 ms.assetid: 1887324f-892b-4fcd-ad33-748ba9517a06
-caps.latest.revision: 5
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 5
+caps.latest.revision: "5"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: 5aaae2acb38aa2f8c4b5e49ea203e86665315700
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.translationtype: MT
+ms.contentlocale: fr-FR
+ms.lasthandoff: 10/27/2017
 ---
-# ArrayBuffer.isView, fonction (ArrayBuffer)
+# <a name="arraybufferisview-function-arraybuffer"></a>ArrayBuffer.isView, fonction (ArrayBuffer)
 Détermine si un objet fournit une vue de la mémoire tampon.  
   
-## Syntaxe  
+## <a name="syntax"></a>Syntaxe  
   
-```javascript  
+```JavaScript  
 ArrayBuffer.isView(object)  
 ```  
   
-#### Paramètres  
+#### <a name="parameters"></a>Paramètres  
  `object`  
- Requis.  Objet à tester.  
+ Obligatoire. Objet à tester.  
   
-## Valeur de retour  
+## <a name="return-value"></a>Valeur de retour  
  `true` si l'une ou l'autre des affirmations suivantes est vraie :  
   
 -   `object` est un objet `DataView`.  
@@ -42,12 +45,12 @@ ArrayBuffer.isView(object)
   
  Dans le cas contraire, la méthode retourne `false`.  
   
-## Notes  
+## <a name="remarks"></a>Remarques  
   
-## Exemple  
+## <a name="example"></a>Exemple  
  L'exemple suivant montre l'utilisation de la fonction `isView` pour tester un tableau typé et un objet `DataView`.  
   
-```javascript  
+```JavaScript  
 var uint = new UInt8ClampedArray(10);  
   
 if(console && console.log) {  
@@ -60,8 +63,8 @@ if(console && console.log) {
 }  
 ```  
   
-## Configuration requise  
+## <a name="requirements"></a>Spécifications  
  [!INCLUDE[jsv11_winonly](../../javascript/reference/includes/jsv11-winonly-md.md)]  
   
-## Voir aussi  
- [Uint8ClampedArray, objet](../../javascript/reference/uint8clampedarray-object-javascript.md)
+## <a name="see-also"></a>Voir aussi  
+ [Objet Uint8ClampedArray](../../javascript/reference/uint8clampedarray-object-javascript.md)

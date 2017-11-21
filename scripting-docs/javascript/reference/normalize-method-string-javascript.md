@@ -1,56 +1,59 @@
 ---
-title: "normalize, m&#233;thode (String) (JavaScript) | Microsoft Docs"
-ms.custom: ""
-ms.date: "01/18/2017"
-ms.prod: "windows-client-threshold"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "devlang-javascript"
-ms.tgt_pltfrm: ""
-ms.topic: "language-reference"
-dev_langs: 
-  - "JavaScript"
-  - "TypeScript"
-  - "DHTML"
+title: "Normalize, méthode (String) (JavaScript) | Documents Microsoft"
+ms.custom: 
+ms.date: 01/18/2017
+ms.prod: windows-client-threshold
+ms.reviewer: 
+ms.suite: 
+ms.technology: devlang-javascript
+ms.tgt_pltfrm: 
+ms.topic: language-reference
+dev_langs:
+- JavaScript
+- TypeScript
+- DHTML
 ms.assetid: d50077c1-b5fa-4e7a-9c9d-dc66cfc423ac
-caps.latest.revision: 4
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 4
+caps.latest.revision: "4"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: aece38339ea1ce8924f404938b2d35d07504d539
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.translationtype: MT
+ms.contentlocale: fr-FR
+ms.lasthandoff: 10/27/2017
 ---
-# normalize, m&#233;thode (String) (JavaScript)
+# <a name="normalize-method-string-javascript"></a>normalize, méthode (String) (JavaScript)
 Retourne le formulaire de normalisation Unicode d'une chaîne spécifiée.  
   
-## Syntaxe  
+## <a name="syntax"></a>Syntaxe  
   
 ```  
 stringObj.normalize([form]);  
 ```  
   
-#### Paramètres  
+#### <a name="parameters"></a>Paramètres  
  `stringObj`  
- Obligatoire.  Objet de chaîne pour le test.  
+ Obligatoire. Objet de chaîne pour le test.  
   
  `form`  
- Facultatif.  Valeur du formulaire de normalisation Unicode.  
+ Facultatif. Valeur du formulaire de normalisation Unicode.  
   
-## Valeur de retour  
+## <a name="return-value"></a>Valeur de retour  
  Formulaire de normalisation Unicode d'une chaîne spécifiée.  
   
-## Exceptions  
+## <a name="exceptions"></a>Exceptions  
  Si `form` est une valeur non prise en charge, une `RangeError` est levée.  
   
-## Notes  
+## <a name="remarks"></a>Remarques  
  Si `stringObj` n'est pas une chaîne, il sera converti en chaîne avant que la méthode ne tente de retourner le formulaire de normalisation Unicode de la chaîne.  
   
- `form` doit être une valeur du formulaire de normalisation Unicode, « NFC », « NFD », « NFKC » ou « NFKD », correspondant aux valeurs spécifiées pour [Annexe standard Unicode N° 15](http://www.unicode.org/reports/tr15/).  La valeur par défaut de `form` est « NFC ».  
+ `form`doit être une valeur d’un formulaire de normalisation Unicode, « NFC », « NFD », « NFKC » ou « NFKD », correspondant aux valeurs spécifiées pour [Unicode annexe 15 de la norme](http://www.unicode.org/reports/tr15/). La valeur par défaut de `form` est « NFC ».  
   
-## Exemple  
+## <a name="example"></a>Exemple  
  Les exemples de code suivants illustrent l'utilisation de la méthode `normalize`.  
   
-```javascript  
+```JavaScript  
 // ANGSTORM SIGN and LATIN CAPITAL A WITH RING ABOVE is canonically equivalent  
 "\u212b".normalize("NFC") === "\u00c5";  
   
@@ -71,5 +74,5 @@ stringObj.normalize([form]);
 "fi".normalize("NFKC") === "fi";  
 ```  
   
-## Configuration requise  
+## <a name="requirements"></a>Spécifications  
  [!INCLUDE[jsv12](../../javascript/reference/includes/jsv12-md.md)]

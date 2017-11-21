@@ -365,5 +365,5 @@
 ##### [CvWriteAlert, fonction](cvwritealert-function.md)
 ##### [CvWriteFlag, fonction](cvwriteflag-function.md)
 ##### [CvWriteMessage, fonction](cvwritemessage-function.md)
-### [Utilitaire de ligne de commande du visualiseur concurrentiel (CVCollectionCmd)](concurrency-visualizer-command-line-utility-cvcollectioncmd.md)
-## [Analyser l’utilisation de l’énergie dans les applications du Windows Store](analyze-energy-use-in-store-apps.md)
+### [Utilitaire en ligne de commande du visualiseur concurrentiel (CVCollectionCmd)](concurrency-visualizer-command-line-utility-cvcollectioncmd.md)
+## [Analyser la consommation d’énergie dans les applications UWP](analyze-energy-use-in-store-apps.md)

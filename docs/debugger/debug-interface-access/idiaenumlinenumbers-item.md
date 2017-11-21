@@ -1,48 +1,47 @@
 ---
-title: "IDiaEnumLineNumbers::Item | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-debug"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "IDiaEnumLineNumbers::Item (méthode)"
+title: IDiaEnumLineNumbers::Item | Documents Microsoft
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-debug
+ms.tgt_pltfrm: 
+ms.topic: article
+dev_langs: C++
+helpviewer_keywords: IDiaEnumLineNumbers::Item method
 ms.assetid: 08efbeaf-22f7-49e9-96a8-bb906dfe4fd8
-caps.latest.revision: 7
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 7
+caps.latest.revision: "7"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: ee969a4451e8301bc8c110c71f6de18badfede4f
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: fr-FR
+ms.lasthandoff: 10/31/2017
 ---
-# IDiaEnumLineNumbers::Item
-[!INCLUDE[vs2017banner](../../code-quality/includes/vs2017banner.md)]
-
-Récupère un numéro de ligne à l'aide d'un index.  
+# <a name="idiaenumlinenumbersitem"></a>IDiaEnumLineNumbers::Item
+Récupère un numéro de ligne au moyen d’un index.  
   
-## Syntaxe  
+## <a name="syntax"></a>Syntaxe  
   
-```cpp#  
-HRESULT Item (   
-   DWORD            index,  
-   IDiaLineNumber** lineNumber  
+```C++  
+HRESULT Item (   
+   DWORD            index,  
+   IDiaLineNumber** lineNumber  
 );  
 ```  
   
-#### Paramètres  
+#### <a name="parameters"></a>Paramètres  
  index  
- \[in\]  Index de l'objet d' [IDiaLineNumber](../../debugger/debug-interface-access/idialinenumber.md) à récupérer.  L'index est comprise entre 0 et `count`\-1, où `count` est retourné par la méthode d' [IDiaEnumLineNumbers::get\_Count](../../debugger/debug-interface-access/idiaenumlinenumbers-get-count.md) .  
+ [in] Index de la [IDiaLineNumber](../../debugger/debug-interface-access/idialinenumber.md) objet à récupérer. L’index est comprise entre 0 et `count`-1, où `count` est retourné par la [IDiaEnumLineNumbers::get_Count](../../debugger/debug-interface-access/idiaenumlinenumbers-get-count.md) (méthode).  
   
- numéroligne  
- \[out\]  Retourne un objet d' [IDiaLineNumber](../../debugger/debug-interface-access/idialinenumber.md) représentant le numéro de ligne souhaité.  
+ lineNumber  
+ [out] Retourne un [IDiaLineNumber](../../debugger/debug-interface-access/idialinenumber.md) objet qui représente le numéro de ligne de votre choix.  
   
-## Valeur de retour  
- En cas de réussite, retourne `S_OK`; sinon, retourne un code d'erreur.  
+## <a name="return-value"></a>Valeur de retour  
+ En cas de réussite, retourne `S_OK`; sinon, retourne un code d’erreur.  
   
-## Voir aussi  
+## <a name="see-also"></a>Voir aussi  
  [IDiaEnumLineNumbers](../../debugger/debug-interface-access/idiaenumlinenumbers.md)   
  [IDiaLineNumber](../../debugger/debug-interface-access/idialinenumber.md)

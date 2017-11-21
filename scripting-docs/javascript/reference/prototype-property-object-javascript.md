@@ -1,48 +1,50 @@
 ---
-title: "prototype, propri&#233;t&#233; (Object) (JavaScript) | Microsoft Docs"
-ms.custom: ""
-ms.date: "01/18/2017"
-ms.prod: "windows-client-threshold"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "devlang-javascript"
-ms.tgt_pltfrm: ""
-ms.topic: "language-reference"
-f1_keywords: 
-  - "Prototype"
-dev_langs: 
-  - "JavaScript"
-  - "TypeScript"
-  - "DHTML"
-helpviewer_keywords: 
-  - "héritage, objets"
-  - "Prototype (propriété)"
+title: "prototype, propriété (objet) (JavaScript) | Documents Microsoft"
+ms.custom: 
+ms.date: 01/18/2017
+ms.prod: windows-client-threshold
+ms.reviewer: 
+ms.suite: 
+ms.technology: devlang-javascript
+ms.tgt_pltfrm: 
+ms.topic: language-reference
+f1_keywords: Prototype
+dev_langs:
+- JavaScript
+- TypeScript
+- DHTML
+helpviewer_keywords:
+- inheritance, objects
+- Prototype property
 ms.assetid: 9fc434a1-5995-4fcb-a4e8-00e7f615aaa2
-caps.latest.revision: 11
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 11
+caps.latest.revision: "11"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: a73d213b6b17f5046eb1f4c498aeb223f942f2d8
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.translationtype: MT
+ms.contentlocale: fr-FR
+ms.lasthandoff: 10/27/2017
 ---
-# prototype, propri&#233;t&#233; (Object) (JavaScript)
+# <a name="prototype-property-object-javascript"></a>prototype, propriété (Object) (JavaScript)
 Retourne une référence au prototype pour une classe d'objets.  
   
-## Syntaxe  
+## <a name="syntax"></a>Syntaxe  
   
 ```  
   
 objectName.prototype  
 ```  
   
-## Notes  
+## <a name="remarks"></a>Remarques  
  L'argument `objectName` est le nom d'un objet.  
   
- Utilisez la propriété `prototype` pour fournir un jeu de fonctionnalités de base à une classe d'objets.  Les nouvelles instances d'un objet « héritent » du comportement du prototype assigné à cet objet.  
+ Utilisez la propriété `prototype` pour fournir un ensemble de base de fonctionnalités à une classe d'objets. Les nouvelles instances d'un objet « héritent » du comportement du prototype attribué à cet objet.  
   
- Par exemple, pour ajouter une méthode à l'objet `Array` qui retourne la valeur du plus grand élément du tableau, déclarez la fonction, ajoutez\-la à `Array.prototype`, puis utilisez\-la.  
+ Par exemple, pour ajouter une méthode à l'objet `Array` qui retourne la valeur de l'élément le plus volumineux du tableau, déclarez la fonction, ajoutez-la à `Array.prototype`, et réutilisez-la.  
   
-```javascript  
+```JavaScript  
 function array_max( ){  
     var i, max = this[0];  
     for (i = 1; i < this.length; i++)  
@@ -62,12 +64,12 @@ document.write(myArray.max());
   
 ```  
   
- Tous les objets [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] intrinsèques ont une propriété `prototype` qui est en lecture seule.  Vous pouvez ajouter des propriétés et des méthodes au prototype, mais vous ne pouvez pas assigner un autre prototype à l'objet.  Toutefois, un nouveau prototype peut être assigné aux objets définis par l'utilisateur.  
+ Toutes les intrinsèques [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] objets ont une `prototype` propriété est en lecture seule. Propriétés et méthodes peuvent être ajoutées au prototype, mais l’objet ne peut pas être assigné un prototype différent. Toutefois, les objets définis par l’utilisateur peuvent être affectés à un nouveau prototype.  
   
- Les listes de méthodes et de propriétés reprises dans ce guide de référence du langage indiquent, pour chaque objet intrinsèque, lesquelles appartiennent au prototype de l'objet et lesquelles n'en font pas partie.  
+ Les listes de méthodes et de propriétés pour chaque objet intrinsèque dans cette référence du langage indiquent ceux qui font partie de prototype de l’objet, et qui ne sont pas.  
   
-## Configuration requise  
+## <a name="requirements"></a>Spécifications  
  [!INCLUDE[jsv2](../../javascript/reference/includes/jsv2-md.md)]  
   
-## Voir aussi  
- [constructor, propriété \(Object\)](../../javascript/reference/constructor-property-object-javascript.md)
+## <a name="see-also"></a>Voir aussi  
+ [Propriété constructor (Object)](../../javascript/reference/constructor-property-object-javascript.md)

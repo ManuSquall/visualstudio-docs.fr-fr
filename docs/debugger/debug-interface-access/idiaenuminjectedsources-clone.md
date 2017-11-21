@@ -1,43 +1,42 @@
 ---
-title: "IDiaEnumInjectedSources::Clone | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-debug"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "IDiaEnumInjectedSources::Clone (méthode)"
+title: IDiaEnumInjectedSources::Clone | Documents Microsoft
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-debug
+ms.tgt_pltfrm: 
+ms.topic: article
+dev_langs: C++
+helpviewer_keywords: IDiaEnumInjectedSources::Clone method
 ms.assetid: 18038691-c140-426a-8617-27f0360650f3
-caps.latest.revision: 8
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 8
+caps.latest.revision: "8"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: 2969376a2531f92d61a91ecf697232a8d52698a2
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: fr-FR
+ms.lasthandoff: 10/31/2017
 ---
-# IDiaEnumInjectedSources::Clone
-[!INCLUDE[vs2017banner](../../code-quality/includes/vs2017banner.md)]
-
-crée un énumérateur qui contient le même état d'énumération que l'énumérateur actuel.  
+# <a name="idiaenuminjectedsourcesclone"></a>IDiaEnumInjectedSources::Clone
+Crée un énumérateur qui contient le même état d’énumération que l’énumérateur actuel.  
   
-## Syntaxe  
+## <a name="syntax"></a>Syntaxe  
   
-```cpp#  
-HRESULT Clone (   
-   IDiaEnumInjectedSources** ppenum  
+```C++  
+HRESULT Clone (   
+   IDiaEnumInjectedSources** ppenum  
 );  
 ```  
   
-#### Paramètres  
+#### <a name="parameters"></a>Paramètres  
  `ppenum`  
- \[out\]  Retourne un objet d' [IDiaEnumInjectedSources](../../debugger/debug-interface-access/idiaenuminjectedsources.md) qui contient un doublon de l'énumérateur.  Les sources injectées ne sont pas dupliquées, seul l'énumérateur.  
+ [out] Retourne un [IDiaEnumInjectedSources](../../debugger/debug-interface-access/idiaenuminjectedsources.md) objet qui contient une copie de l’énumérateur. Les sources injectées ne sont pas dupliquées, seulement l’énumérateur.  
   
-## Valeur de retour  
- En cas de réussite, retourne `S_OK`; sinon, retourne un code d'erreur.  
+## <a name="return-value"></a>Valeur de retour  
+ En cas de réussite, retourne `S_OK`; sinon, retourne un code d’erreur.  
   
-## Voir aussi  
+## <a name="see-also"></a>Voir aussi  
  [IDiaEnumInjectedSources](../../debugger/debug-interface-access/idiaenuminjectedsources.md)

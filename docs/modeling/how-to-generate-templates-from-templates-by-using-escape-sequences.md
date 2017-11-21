@@ -1,45 +1,29 @@
 ---
-title: 'How to: Generate Templates from Templates By Using Escape Sequences | Microsoft Docs'
+title: "Comment : générer des modèles à partir de modèles à l’aide de séquences d’échappement | Documents Microsoft"
 ms.custom: 
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
 ms.tgt_pltfrm: 
 ms.topic: article
-helpviewer_keywords:
-- text templates, generating templates from templates
+helpviewer_keywords: text templates, generating templates from templates
 ms.assetid: 4126156a-7cea-48b8-925e-7790806cfe6c
-caps.latest.revision: 35
+caps.latest.revision: "35"
 author: alancameronwills
 ms.author: awills
 manager: douge
-translation.priority.ht:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
+ms.openlocfilehash: 421b8a8bde2bb383889bcb58915fa8a3acb027cf
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
 ms.translationtype: MT
-ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
-ms.openlocfilehash: dc21bd9f67cf13948477e8bf08e3ab79d021f603
-ms.contentlocale: fr-fr
-ms.lasthandoff: 08/28/2017
-
+ms.contentlocale: fr-FR
+ms.lasthandoff: 10/27/2017
 ---
-# <a name="how-to-generate-templates-from-templates-by-using-escape-sequences"></a>How to: Generate Templates from Templates By Using Escape Sequences
-You can create a text template that creates another text template as its generated text output. To do this, you must use escape sequences to delineate the text template tags. If you do not use escape sequences, your generated text template will have a pre-defined meaning. For more information about using escape sequences in text templates, see [Using Escape Sequences in Text Templates](../modeling/using-escape-sequences-in-text-templates.md).  
+# <a name="how-to-generate-templates-from-templates-by-using-escape-sequences"></a>Comment : générer des modèles à partir de modèles à l'aide de séquences d'échappement
+Vous pouvez créer un modèle de texte qui crée un autre modèle de texte comme sortie texte généré. Pour ce faire, vous devez utiliser des séquences d’échappement pour délimiter les balises de modèle de texte. Si vous n’utilisez pas de séquences d’échappement, votre modèle de texte généré aura une signification prédéfinie. Pour plus d’informations sur l’utilisation de séquences d’échappement dans les modèles de texte, consultez [à l’aide de séquences d’échappement dans les modèles de texte](../modeling/using-escape-sequences-in-text-templates.md).  
   
-### <a name="to-generate-a-text-template-from-within-a-text-template"></a>To generate a text template from within a text template  
+### <a name="to-generate-a-text-template-from-within-a-text-template"></a>Pour générer un modèle de texte à partir d’un modèle de texte  
   
--   Use the backslash (\\) as an escape character to produce the necessary markup tags within the text template for directives, statements, expressions, and class features in a separate text template file.  
+-   Utilisez la barre oblique inverse (\\) comme caractère d’échappement pour produire les balises nécessaires dans le modèle de texte pour les directives, des instructions, des expressions et la classe de fonctionnalités dans un fichier de modèle de texte séparé.  
   
     ```  
     \<#@ directive \#>  
@@ -48,8 +32,8 @@ You can create a text template that creates another text template as its generat
     \<#+ classfeature \#>  
     ```  
   
-## <a name="example"></a>Example  
- The following example uses escape characters to produce a text template from a text template. The `output` directive sets the destination file type to the text template file type (.tt).  
+## <a name="example"></a>Exemple  
+ L’exemple suivant utilise des caractères d’échappement pour produire un modèle de texte à partir d’un modèle de texte. Le `output` directive définit le type de fichier de destination pour le type de fichier de modèle de texte (.tt).  
   
 ```csharp  
 \<#@ output extension=".tt" \#>  
@@ -70,7 +54,7 @@ XmlDocument xDoc = new XmlDocument();
 \#>  
 ```  
   
- The generated text output is a text template.  
+ La sortie de texte générée est un modèle de texte.  
   
 ```  
 <#@ output extension=".tt" #>  

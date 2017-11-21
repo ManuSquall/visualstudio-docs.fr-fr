@@ -1,55 +1,56 @@
 ---
-title: "JavaScript, r&#233;f&#233;rence | Microsoft Docs"
-ms.custom: ""
-ms.date: "01/18/2017"
-ms.prod: "windows-client-threshold"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "devlang-javascript"
-ms.tgt_pltfrm: ""
-ms.topic: "language-reference"
-f1_keywords: 
-  - "vs.htmldesigner.html"
-dev_langs: 
-  - "JavaScript"
-  - "TypeScript"
-  - "DHTML"
-helpviewer_keywords: 
-  - "JavaScript, référence"
+title: "Référence JavaScript | Documents Microsoft"
+ms.custom: 
+ms.date: 01/18/2017
+ms.prod: windows-client-threshold
+ms.reviewer: 
+ms.suite: 
+ms.technology: devlang-javascript
+ms.tgt_pltfrm: 
+ms.topic: language-reference
+f1_keywords: vs.htmldesigner.html
+dev_langs:
+- JavaScript
+- TypeScript
+- DHTML
+helpviewer_keywords: JavaScript, reference
 ms.assetid: 29f83a2c-48c5-49e2-9ae0-7371d2cda2ff
-caps.latest.revision: 28
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 28
+caps.latest.revision: "28"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: a4fd8a514abcc42b7ec34340f963326cd9a66762
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.translationtype: MT
+ms.contentlocale: fr-FR
+ms.lasthandoff: 10/27/2017
 ---
-# JavaScript, r&#233;f&#233;rence
+# <a name="javascript-reference"></a>JavaScript, référence
 Les sections suivantes expliquent les éléments qui composent le langage [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)].  
   
- Dans Internet Explorer, le code [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] peut interagir avec le code HTML, CSS et le modèle DOM \(Document Object Model\) qui représente HTML et les objets du navigateur.  
+ Dans Internet Explorer, le code [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] peut interagir avec le code HTML, CSS et le modèle DOM (Document Object Model) qui représente HTML et les objets du navigateur.  
   
--   Pour plus d'informations sur HTML, consultez [Référence HTML\/XHTML](http://go.microsoft.com/fwlink/p/?LinkId=251007).  
+-   Pour plus d’informations sur HTML, consultez [Référence HTML/XHTML](http://go.microsoft.com/fwlink/p/?LinkId=251007).  
   
--   Pour obtenir des informations sur CSS, consultez l'article sur les [Feuilles de style en cascade](http://go.microsoft.com/fwlink/p/?LinkId=251008).  
+-   Pour obtenir des informations sur CSS, consultez l’article sur les [Feuilles de style en cascade](http://go.microsoft.com/fwlink/p/?LinkId=251008).  
   
--   Pour plus d'informations sur le modèle DOM, consultez [Document Object Model \(DOM\)](http://go.microsoft.com/fwlink/p/?LinkId=251009).  
+-   Pour plus d’informations sur le modèle DOM, consultez [DOM (Document Object Model)](http://go.microsoft.com/fwlink/p/?LinkId=251009).  
   
- Le code [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] peut être utilisé dans les applications de navigateur et les applications [!INCLUDE[win8_appname_long](../../javascript/includes/win8-appname-long-md.md)].  Les applications [!INCLUDE[win8_appname_long](../../javascript/includes/win8-appname-long-md.md)] sont prises en charge dans [!INCLUDE[win8](../../javascript/includes/win8-md.md)] avec [!INCLUDE[vs_dev11_long](../../javascript/includes/vs-dev11-long-md.md)] et dans [!INCLUDE[win81](../../javascript/includes/win81-md.md)] avec [!INCLUDE[vs_dev12](../../javascript/includes/vs-dev12-md.md)].  
+ Le code [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] peut être utilisé dans les applications de navigateur et les applications [!INCLUDE[win8_appname_long](../../javascript/includes/win8-appname-long-md.md)]. Les applications [!INCLUDE[win8_appname_long](../../javascript/includes/win8-appname-long-md.md)] sont prises en charge dans [!INCLUDE[win8](../../javascript/includes/win8-md.md)] avec [!INCLUDE[vs_dev11_long](../../javascript/includes/vs-dev11-long-md.md)] et dans [!INCLUDE[win81](../../javascript/includes/win81-md.md)] avec [!INCLUDE[vs_dev12](../../javascript/includes/vs-dev12-md.md)].  
   
--   Pour plus d'informations sur JavaScript dans les applications [!INCLUDE[win8_appname_long](../../javascript/includes/win8-appname-long-md.md)], consultez [JavaScript roadmap](http://msdn.microsoft.com/fr-fr/4f28182b-1e4b-4bbd-8ae9-dcc504de4341).  
+-   Pour plus d’informations sur JavaScript dans [!INCLUDE[win8_appname_long](../../javascript/includes/win8-appname-long-md.md)] applications, consultez [feuille de route JavaScript](http://msdn.microsoft.com/en-us/4f28182b-1e4b-4bbd-8ae9-dcc504de4341).  
   
--   Pour plus d'informations sur HTML et CSS dans les applications [!INCLUDE[win8_appname_long](../../javascript/includes/win8-appname-long-md.md)], consultez [HTML\/CSS pour les applications Windows Store](http://go.microsoft.com/fwlink/p/?LinkId=250939).  
+-   Pour plus d’informations sur le code HTML et CSS dans [!INCLUDE[win8_appname_long](../../javascript/includes/win8-appname-long-md.md)] applications, consultez [HTML/CSS pour les applications du Windows Store](http://go.microsoft.com/fwlink/p/?LinkId=250939).  
   
--   Pour plus d'informations sur les API [!INCLUDE[win8_appname_long](../../javascript/includes/win8-appname-long-md.md)], consultez [Informations de référence sur les API pour Windows Runtime et la bibliothèque Windows pour JavaScript](http://go.microsoft.com/fwlink/p/?LinkID=250938).  
+-   Pour plus d’informations sur [!INCLUDE[win8_appname_long](../../javascript/includes/win8-appname-long-md.md)] API, consultez [référence API pour le Windows Runtime et la bibliothèque Windows pour JavaScript](http://go.microsoft.com/fwlink/p/?LinkID=250938).  
   
- L'éditeur JavaScript dans Visual Studio fournit la prise en charge IntelliSense.  Pour plus d'informations, consultez [IntelliSense JavaScript](~/ide/javascript-intellisense.md).  
+ L'éditeur JavaScript dans Visual Studio fournit la prise en charge IntelliSense. Pour plus d’informations, consultez [JavaScript IntelliSense](/visualstudio/ide/javascript-intellisense.md).  
   
-## Dans cette section  
+## <a name="in-this-section"></a>Dans cette section  
  [Informations de version](../../javascript/reference/javascript-version-information.md)  
  Fournit la liste des fonctionnalités du langage [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] et des versions d'Internet Explorer dans lesquelles elles ont été ajoutées.  
   
- [Objets](../../javascript/reference/javascript-objects.md)  
+ [Objects](../../javascript/reference/javascript-objects.md)  
  Fournit la liste des objets avec des liens vers les informations sur chaque objet.  
   
  [Constantes](../../javascript/reference/javascript-constants.md)  
@@ -77,14 +78,14 @@ Les sections suivantes expliquent les éléments qui composent le langage [!INCL
  Inclut les liens vers les erreurs d'exécution et de syntaxe.  
   
  [Mots réservés JavaScript](../../javascript/reference/javascript-reserved-words.md)  
- Fournit la liste des mots réservés.  Ces mots ne peuvent pas servir d'identificateurs.  
+ Fournit la liste des mots réservés. Ces mots ne peuvent pas servir d'identificateurs.  
   
  [Futurs mots réservés JavaScript](../../javascript/reference/javascript-future-reserved-words.md)  
- Fournit la liste des futurs mots réservés.  Ces mots ne peuvent pas servir d'identificateurs.  
+ Fournit la liste des futurs mots réservés. Ces mots ne peuvent pas servir d'identificateurs.  
   
-## Rubriques connexes  
+## <a name="related-sections"></a>Rubriques connexes  
  [Notions de base JavaScript](../../javascript/javascript-fundamentals.md)  
  Fournit des informations sur l'utilisation de [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)].  
   
  [Référence HTML et DHTML](http://go.microsoft.com/fwlink/?LinkId=148095)  
- Fournit les informations de référence sur l'API Dynamic HTML \(DHTML\).
+ Fournit des informations de référence sur Dynamic HTML (DHTML) API.
