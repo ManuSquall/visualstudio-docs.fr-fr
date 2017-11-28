@@ -12,11 +12,11 @@ caps.latest.revision: "1"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 5e111159029710684a1a49be2859f6ac5699a70a
-ms.sourcegitcommit: 2c7f48ad6073a81fa927568793633f26cc1f0b15
+ms.openlocfilehash: 307e32587a7aac6e2595f35488ad057995c04f4b
+ms.sourcegitcommit: eb954434c34b4df6fd2264266381b23ce9e6204a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/17/2017
+ms.lasthandoff: 11/22/2017
 ---
 # <a name="troubleshooting-and-known-issues-for-snapshot-debugging-in-visual-studio"></a>Problèmes connus et dépannage pour la capture instantanée de débogage dans Visual Studio
 
@@ -30,8 +30,7 @@ Si vous voyez une icône d’avertissement ![icône d’avertissement Snappoint]
 
 Effectuez les étapes suivantes :
 
-1. Assurez-vous que vous avez la même version de code source qui a été utilisée pour générer et déployer votre application.
-1. Assurez-vous que vous chargez les symboles appropriés pour votre déploiement. Pour ce faire, consultez la **Modules** fenêtre lors du débogage de l’instantané et vérifiez que la colonne du fichier de symboles affiche un fichier .pdb chargé pour le module que vous déboguez. Notez que le débogueur d’instantané tente de se télécharger automatiquement et d’utiliser des symboles pour votre déploiement.
+1. Assurez-vous que vous avez la même version de code source qui a été utilisée pour générer et déployer votre app.isua1. Assurez-vous que vous chargez les symboles appropriés pour votre déploiement. Pour ce faire, consultez la **Modules** fenêtre lors du débogage de l’instantané et vérifiez que la colonne du fichier de symboles affiche un fichier .pdb chargé pour le module que vous déboguez. Notez que le débogueur d’instantané tente de se télécharger automatiquement et d’utiliser des symboles pour votre déploiement.
 
 ## <a name="issue-symbols-do-not-load-when-i-open-a-snapshot"></a>Problème : Les symboles ne se chargent pas lorsque j’ouvre une capture instantanée
 
@@ -70,9 +69,10 @@ Effectuez les étapes suivantes :
 - Optimisations de langage intermédiaire de Roslyn ne sont pas pris en charge dans les projets ASP.NET Core. Pour certains projets ASP.NET Core, vous ne serez peut-être pas en mesure de certaines variables ou utiliser des variables dans les instructions conditionnelles. 
 - Variables spéciales, telles que *$FUNCTION* ou *$CALLER*, ne peut pas être évaluée dans des instructions conditionnelles ou logpoints pour les projets ASP.NET Core.
 - Débogage de l’instantané ne fonctionne pas sur les Services d’application qui ont [mise en cache locale](https://docs.microsoft.com/en-us/azure/app-service/app-service-local-cache) sous tension.
+- Débogage des applications de l’API de capture instantanée n’est pas pris en charge actuellement.
 
 ## <a name="see-also"></a>Voir aussi
 
 [Débogage dans Visual Studio](../debugger/index.md)  
 [Déboguer des applications ASP.NET en direct à l’aide du débogueur de l’instantané](../debugger/debug-live-azure-applications.md)  
-[Forum aux questions pour le débogage de l’instantané](../debugger/debug-live-azure-apps-faq.md)  
+[FAQ pour le débogage d’instantané](../debugger/debug-live-azure-apps-faq.md)  

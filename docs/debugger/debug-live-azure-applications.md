@@ -12,11 +12,11 @@ caps.latest.revision: "1"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 71facc3515bf90d378b19242bb804ce825131b4e
-ms.sourcegitcommit: 2c7f48ad6073a81fa927568793633f26cc1f0b15
+ms.openlocfilehash: 02f91441c493d65e8abcdc80bd85b01f2bd423bf
+ms.sourcegitcommit: eb954434c34b4df6fd2264266381b23ce9e6204a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/17/2017
+ms.lasthandoff: 11/22/2017
 ---
 # <a name="debug-live-aspnet-azure-apps-using-the-snapshot-debugger"></a>Déboguer des applications ASP.NET Azure en direct à l’aide du débogueur de l’instantané
 
@@ -29,7 +29,7 @@ Collection d’instantané est disponible pour les applications web suivantes en
 - Les applications ASP.NET exécutées sur .NET Framework 4.6.1 ou version ultérieure.
 - Applications ASP.NET Core en cours d’exécution sur .NET Core 2.0 ou version ultérieure sur Windows.
 
-En outre, le débogueur de l’instantané est uniquement disponible pour Visual Studio 2017 Enterprise version 15,5 ou une version ultérieure. 
+En outre, le débogueur de l’instantané est uniquement disponible pour Visual Studio 2017 Enterprise version 15,5 ou une version ultérieure et les plans de Service d’applications de base ou une version ultérieure. 
 
 ## <a name="start-the-snapshot-debugger"></a>Démarrez le débogueur de l’instantané
 

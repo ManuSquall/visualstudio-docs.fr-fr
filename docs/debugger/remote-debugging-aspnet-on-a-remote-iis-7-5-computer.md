@@ -12,11 +12,11 @@ caps.latest.revision: "6"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 730a69894c8e38dd7b9d191fa7fe3396509148d4
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.openlocfilehash: a279b1eddf80a78ad20d137c288e6ee49c1993b9
+ms.sourcegitcommit: eb954434c34b4df6fd2264266381b23ce9e6204a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 11/22/2017
 ---
 # <a name="remote-debug-aspnet-on-a-remote-iis-computer"></a>Débogage distant ASP.NET sur un ordinateur distant IIS
 Pour déboguer une application ASP.NET qui a été déployée sur IIS, installer et exécuter les outils à distance sur l’ordinateur où vous avez déployé votre application puis attachez à votre application en cours d’exécution à partir de Visual Studio.
@@ -26,7 +26,7 @@ Pour déboguer une application ASP.NET qui a été déployée sur IIS, installer
 Ce guide explique comment installer et configurer une application Visual Studio 2017 ASP.NET MVC 4.5.2, déployez-le sur IIS et attacher le débogueur distant à partir de Visual Studio. Pour déboguer à distance ASP.NET Core, consultez [Core d’ASP.NET déboguer à distance sur un ordinateur IIS](../debugger/remote-debugging-aspnet-on-a-remote-iis-computer.md). Vous pouvez également déployer et déboguer sur IIS à l’aide d’Azure. Pour plus d’informations, consultez [de débogage à distance sur Azure](../debugger/remote-debugging-azure.md).
 
 Ces procédures ont été testées sur ces configurations de serveur :
-* Windows Server 2012 R2 et IIS 10 (pour Windows Server 2008 R2, les étapes de serveur sont différentes)
+* Windows Server 2012 R2 et IIS 8.5 (pour Windows Server 2008 R2, les étapes de serveur sont différentes)
 
 ## <a name="requirements"></a>Spécifications
 
