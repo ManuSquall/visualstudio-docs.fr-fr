@@ -12,11 +12,11 @@ caps.latest.revision: "5"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: fc7ad92e708666baf1ab0429c041ca9b7d2e0f95
-ms.sourcegitcommit: fb751e41929f031d1a9247bc7c8727312539ad35
+ms.openlocfilehash: 2e8da202cf8ae5680bede1ec4b2f2c8984624e4e
+ms.sourcegitcommit: 5f5587a1bcf4aae995c80d54a67b4b461f8695f3
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/15/2017
+ms.lasthandoff: 11/29/2017
 ---
 # <a name="view-snapshots-using-intellitrace-step-back"></a>Afficher des instantanés à l’aide d’IntelliTrace étape différée
 Événement d’étape, IntelliTrace différée étape prend automatiquement un instantané de votre application à chaque point d’arrêt et le débogueur. Les instantanés enregistrés permettent de revenir en arrière pour les points d’arrêt précédents ou étapes et afficher l’état de l’application tel qu’il était dans le passé. IntelliTrace d’étape différée peut faire gagner du temps quand vous souhaitez afficher l’état précédent de l’application mais ne souhaitez pas redémarrer le débogage ou de recréer l’état de l’application souhaitée.
@@ -38,7 +38,7 @@ Pour des raisons de performances, les instantanés ne sont pas prises lorsque vo
 
 ## <a name="navigate-and-view-snapshots"></a>Naviguer et afficher des instantanés
 
-Vous pouvez naviguer entre les événements à l’aide de la **arrière** et **avant** boutons dans la barre d’outils de débogage. Ces boutons Parcourir les événements qui s’affichent dans le **événements** onglet dans le **fenêtre Outils de Diagnostic**. Pas à pas détaillé vers l’arrière ou vers l’avant à un événement automatiquement Active le débogage d’historique sur l’événement sélectionné.
+Vous pouvez naviguer entre les événements à l’aide de la **arrière (Alt + [)** et **avant (Alt +])** boutons dans la barre d’outils de débogage. Ces boutons Parcourir les événements qui s’affichent dans le **événements** onglet dans le **fenêtre Outils de Diagnostic**. Pas à pas détaillé vers l’arrière ou vers l’avant à un événement automatiquement Active le débogage d’historique sur l’événement sélectionné.
 
 ![Revenir en arrière et transférer des boutons](../debugger/media/intellitrace-step-back-icons-description.png "boutons arrière et avancer")
 

@@ -12,11 +12,11 @@ caps.latest.revision: "6"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 7b4ad0cdadcb3d56af55af629b853e660dc9d86f
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.openlocfilehash: c0527d33e47ce42449f2ae2bb75ee3e342b04c2b
+ms.sourcegitcommit: 5f5587a1bcf4aae995c80d54a67b4b461f8695f3
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 11/29/2017
 ---
 # <a name="remote-debug-aspnet-core-on-iis-and-azure-in-visual-studio-2017"></a>Débogage distant ASP.NET Core IIS et sur Azure dans Visual Studio 2017
 Vous pouvez déployer une application Web ASP.NET sur un ordinateur Windows Server avec les services IIS et de le configurer pour le débogage distant. Ce guide explique comment installer et configurer une application Visual Studio 2017 ASP.NET Core, déployez-le sur IIS à l’aide d’Azure et attacher le débogueur distant à partir de Visual Studio.
@@ -47,7 +47,7 @@ Débogage entre deux ordinateurs connectés via un proxy n’est pas pris en cha
 
 ## <a name="create-the-aspnet-core-application-on-the-visual-studio-2017-computer"></a>Créer l’application ASP.NET Core sur l’ordinateur Visual Studio 2017 
 
-1. Créez une application ASP.NET Core. (Choisissez **fichier > Nouveau > projet**, puis sélectionnez **Visual c# > Web > Application ASP.NET Core Web (.NET Core)**)
+1. Créez une application ASP.NET Core. (Choisissez **fichier > Nouveau > projet**, puis sélectionnez **Visual c# > Web > Application ASP.NET Core Web (.NET Core)**).
 
     Dans le **ASP.NET Core** section modèles, sélectionnez **Application Web**.
 
@@ -59,7 +59,7 @@ Débogage entre deux ordinateurs connectés via un proxy n’est pas pris en cha
 
 ## <a name="remote-debug-aspnet-core-on-an-azure-app-service"></a>Débogage distant ASP.NET Core sur un Service d’application Azure
 
-À partir de Visual Studio, vous pouvez rapidement publier et déboguer votre application à une instance entièrement d’IIS. Toutefois, la configuration d’IIS est prédéfinie et vous ne pouvez pas personnaliser. Pour obtenir des instructions détaillées, consultez [déployer une application de web ASP.NET Core pour Azure à l’aide de Visual Studio](https://docs.microsoft.com/en-us/aspnet/core/tutorials/publish-to-azure-webapp-using-vs). (Si vous avez besoin de la possibilité de personnaliser IIS, essayer de déboguer un [Azure VM](#BKMK_azure_vm).) 
+À partir de Visual Studio, vous pouvez rapidement publier et déboguer votre application à une instance entièrement d’IIS. Toutefois, la configuration d’IIS est prédéfinie et vous ne pouvez pas personnaliser. Pour obtenir des instructions détaillées, consultez [déployer une application de web ASP.NET Core pour Azure à l’aide de Visual Studio](/aspnet/core/tutorials/publish-to-azure-webapp-using-vs). (Si vous avez besoin de la possibilité de personnaliser IIS, essayer de déboguer un [Azure VM](#BKMK_azure_vm).) 
 
 #### <a name="to-deploy-the-app-and-remote-debug"></a>Pour déployer l’application et le débogage distant
 
@@ -67,7 +67,7 @@ Débogage entre deux ordinateurs connectés via un proxy n’est pas pris en cha
 
 2. Choisissez **Microsoft Azure App Service** à partir de la **publier** boîte de dialogue, sélectionnez **créer un nouveau**et suivez les invites à publier.
 
-    Pour obtenir des instructions détaillées, consultez [déployer une application de web ASP.NET Core pour Azure à l’aide de Visual Studio](https://docs.microsoft.com/en-us/aspnet/core/tutorials/publish-to-azure-webapp-using-vs).
+    Pour obtenir des instructions détaillées, consultez [déployer une application de web ASP.NET Core pour Azure à l’aide de Visual Studio](/aspnet/core/tutorials/publish-to-azure-webapp-using-vs).
 
 3. Dans **l’Explorateur de serveurs**, avec le bouton droit sur l’instance de Service de l’application et choisissez **attacher le débogueur**.
 
@@ -81,7 +81,7 @@ Débogage entre deux ordinateurs connectés via un proxy n’est pas pris en cha
 
 Vous pouvez créer une machine virtuelle Azure pour Windows Server et puis installer et configurer IIS et les autres composants logiciels requis. Cela prend plus de temps que le déploiement à un Service d’application Azure et requiert que vous suivez les étapes restantes dans ce didacticiel.
 
-Tout d’abord, suivez toutes les étapes décrites dans [installer et exécuter IIS](https://docs.microsoft.com/en-us/azure/virtual-machines/virtual-machines-windows-hero-role).
+Tout d’abord, suivez toutes les étapes décrites dans [installer et exécuter IIS](/azure/virtual-machines/virtual-machines-windows-hero-role).
 
 Lorsque vous ouvrez le port 80 dans le groupe de sécurité réseau, vous devez également ouvrir le port 4022 pour le débogueur distant. De cette façon, vous ne devez ouvrir ultérieurement.
 
@@ -94,13 +94,13 @@ En fonction des paramètres de sécurité de votre navigateur, il peut gagner du
 - download.microsoft.com
 - VisualStudio.com
 
-Si vous utilisez Internet Explorer, vous pouvez ajouter les sites de confiance en accédant à **Options Internet > sécurité > Sites de confiance > Sites**. Ces étapes sont différents pour d’autres navigateurs.
+Si vous utilisez Internet Explorer, vous pouvez ajouter les sites de confiance en accédant à **Options Internet > sécurité > Sites de confiance > Sites**. Ces étapes sont différents pour d’autres navigateurs. (Si vous avez besoin télécharger une version antérieure du débogueur distant à partir de my.visualstudio.com, certains sites de confiance supplémentaires sont requis pour se connecter).
 
 Lorsque vous téléchargez le logiciel, vous pouvez obtenir des demandes pour accorder des autorisations requises pour charger les différents scripts de site web et des ressources. Dans la plupart des cas, les ressources supplémentaires suivantes ne sont pas requis pour installer le logiciel.
 
 ### <a name="install-aspnet-core-on-windows-server"></a>Installez ASP.NET Core sur Windows Server
 
-1. Installer le [hébergement sur serveur Windows .NET Core](https://go.microsoft.com/fwlink/?linkid=844461) offre groupée sur le système hôte. Le groupe va installer le .NET Core Runtime, bibliothèque principale de .NET et le Module de base ASP.NET.
+1. Installer le [hébergement sur serveur Windows .NET Core](https://aka.ms/dotnetcore-2-windowshosting) offre groupée sur le système hôte. Le groupe va installer le .NET Core Runtime, bibliothèque principale de .NET et le Module de base ASP.NET. Pour obtenir des instructions plus détaillées, consultez [publication sur IIS](/aspnet/core/publishing/iis?tabs=aspnetcore2x#iis-configuration).
 
     > [!NOTE]
     > Si le système ne dispose d’une connexion Internet, obtenez et installez le  *[redistribuable Microsoft Visual C++ 2015](https://www.microsoft.com/download/details.aspx?id=53840)*  avant d’installer l’application d’hébergement sur serveur Windows .NET Core.
@@ -209,7 +209,7 @@ Si vous n’utilisez pas Web Deploy, vous devez publier et déployer l’applica
 
 Dans la plupart des configurations, les ports requis sont ouverts par l’installation d’ASP.NET et le débogueur distant. Toutefois, si vous dépannez les problèmes de déploiement et l’application est hébergée derrière un pare-feu, vous devez vérifier que les ports appropriés sont ouverts.
 
-Sur une machine virtuelle Azure, vous devez ouvrir les ports via la [groupe de sécurité réseau](https://docs.microsoft.com/en-us/azure/virtual-machines/virtual-machines-windows-hero-role#open-port-80). 
+Sur une machine virtuelle Azure, vous devez ouvrir les ports via la [groupe de sécurité réseau](/azure/virtual-machines/virtual-machines-windows-hero-role#open-port-80). 
 
 Ports requis :
 

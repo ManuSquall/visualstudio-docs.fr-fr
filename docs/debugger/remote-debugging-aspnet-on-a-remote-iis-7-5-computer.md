@@ -12,11 +12,11 @@ caps.latest.revision: "6"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: a279b1eddf80a78ad20d137c288e6ee49c1993b9
-ms.sourcegitcommit: eb954434c34b4df6fd2264266381b23ce9e6204a
+ms.openlocfilehash: ed7ae018725e4ba2da5239609d90276d007827aa
+ms.sourcegitcommit: 5f5587a1bcf4aae995c80d54a67b4b461f8695f3
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/22/2017
+ms.lasthandoff: 11/29/2017
 ---
 # <a name="remote-debug-aspnet-on-a-remote-iis-computer"></a>Débogage distant ASP.NET sur un ordinateur distant IIS
 Pour déboguer une application ASP.NET qui a été déployée sur IIS, installer et exécuter les outils à distance sur l’ordinateur où vous avez déployé votre application puis attachez à votre application en cours d’exécution à partir de Visual Studio.
@@ -26,7 +26,7 @@ Pour déboguer une application ASP.NET qui a été déployée sur IIS, installer
 Ce guide explique comment installer et configurer une application Visual Studio 2017 ASP.NET MVC 4.5.2, déployez-le sur IIS et attacher le débogueur distant à partir de Visual Studio. Pour déboguer à distance ASP.NET Core, consultez [Core d’ASP.NET déboguer à distance sur un ordinateur IIS](../debugger/remote-debugging-aspnet-on-a-remote-iis-computer.md). Vous pouvez également déployer et déboguer sur IIS à l’aide d’Azure. Pour plus d’informations, consultez [de débogage à distance sur Azure](../debugger/remote-debugging-azure.md).
 
 Ces procédures ont été testées sur ces configurations de serveur :
-* Windows Server 2012 R2 et IIS 8.5 (pour Windows Server 2008 R2, les étapes de serveur sont différentes)
+* Windows Server 2012 R2 et IIS 8 (pour Windows Server 2008 R2, les étapes de serveur sont différentes)
 
 ## <a name="requirements"></a>Spécifications
 
@@ -54,7 +54,7 @@ En fonction de vos paramètres de sécurité, il peut gagner du temps d’ajoute
 - download.microsoft.com
 - VisualStudio.com
 
-Si vous utilisez Internet Explorer, vous pouvez ajouter les sites de confiance en accédant à **Options Internet > sécurité > Sites de confiance > Sites**. Ces étapes sont différents pour d’autres navigateurs.
+Si vous utilisez Internet Explorer, vous pouvez ajouter les sites de confiance en accédant à **Options Internet > sécurité > Sites de confiance > Sites**. Ces étapes sont différents pour d’autres navigateurs. (Si vous avez besoin télécharger une version antérieure du débogueur distant à partir de my.visualstudio.com, certains sites de confiance supplémentaires sont requis pour se connecter).
 
 Lorsque vous téléchargez le logiciel, vous pouvez obtenir des demandes pour accorder des autorisations requises pour charger les différents scripts de site web et des ressources. Dans la plupart des cas, les ressources supplémentaires suivantes ne sont pas requis pour installer le logiciel.
 

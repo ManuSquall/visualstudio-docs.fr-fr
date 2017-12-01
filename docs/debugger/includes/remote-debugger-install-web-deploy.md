@@ -13,15 +13,15 @@ translation.priority.ht:
 - tr-tr
 - zh-cn
 - zh-tw
-ms.openlocfilehash: 2d82fc0eb60b2680be9ed2bdb7de13313593da0d
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 81b58a2162d7240e32e1fb2d45e462ec551155e7
+ms.sourcegitcommit: 5f5587a1bcf4aae995c80d54a67b4b461f8695f3
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 11/29/2017
 ---
 1. Si vous prévoyez de déployer vos applications avec Web Deploy dans Visual Studio, installez la dernière version de Web Deploy sur le serveur.
 
-    Pour installer Web Deploy, utilisez le [Web Platform Installer (WebPI)](https://www.microsoft.com/web/downloads/platform.aspx) ou obtenir un programme d’installation directement à partir de la [Microsoft Download Center](https://www.microsoft.com/search/result.aspx?q=webdeploy&form=dlc). Rechercher le déploiement Web dans l’onglet Applications. 
+    Pour installer Web Deploy, utilisez le [Web Platform Installer (WebPI)](https://www.microsoft.com/web/downloads/platform.aspx). Rechercher le déploiement Web dans l’onglet Applications. Vous pouvez également obtenir un programme d’installation directement à partir de la [Microsoft Download Center](https://www.microsoft.com/search/result.aspx?q=webdeploy&form=dlc). 
 
 2. Vérifiez que Web Deploy s’exécute correctement en ouvrant **le panneau de configuration > système et sécurité > Outils d’administration > Services** et assurez-vous que **Service de l’Agent de déploiement Web** est en cours d’exécution (la nom du service est différent dans les versions antérieures).
 

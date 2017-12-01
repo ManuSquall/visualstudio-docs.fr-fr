@@ -12,11 +12,11 @@ caps.latest.revision: "1"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 89591535b232317abf395c237fdc267c847ca699
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.openlocfilehash: bb00d2c338ac1ef9e2be6d77d68ebfe2a246d807
+ms.sourcegitcommit: 5f5587a1bcf4aae995c80d54a67b4b461f8695f3
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 11/29/2017
 ---
 # <a name="how-to-migrate-extensibility-projects-to-visual-studio-2017"></a>Comment : migrer des projets d’extensibilité pour Visual Studio 2017
 
@@ -102,11 +102,6 @@ Au lieu de modifier directement le XML du manifeste, vous pouvez utiliser la nou
   ![ajouter le composant requis de roslyn](media/add-roslyn-prerequisite.png)
 
 * Press **OK**.
-
-## <a name="if-migrating-from-preview-4-or-preview-5"></a>Si une migration à partir de Preview 4 ou 5 de la version préliminaire
-
-* Remplacez `SetupDependencies` avec `Prerequisites` et déplacer les éléments de la `Installer` élément. `Prerequisites`maintenant qui réside directement à l’intérieur du `PackageManifest` élément.
-* [Facultatif] Supprimer le `GenerateVsixV3` élément. (Cela était requis dans les 5 aperçu uniquement.) Le `GenerateVsixV3` élément sera ignoré dans les versions supérieures à 5 de la version préliminaire.
 
 ## <a name="update-debug-settings-for-project"></a>Mettre à jour les paramètres de débogage pour le projet
 
@@ -197,3 +192,15 @@ Exemples :
 
 * Si vous disposez d’une extension de débogueur et que vous savez que votre projet contient une référence à VSDebugEng.dll et VSDebug.dll, cliquez sur le bouton de filtre dans le **binaires / noms de fichiers** en-tête.  Recherchez « VSDebugEng.dll » et sélectionnez OK.  Ensuite, cliquez sur le bouton de filtre dans le **binaires / noms de fichiers** en-tête à nouveau et recherchez « VSDebug.dll ».  Sélectionnez la case à cocher « Sélection actuelle ajouter au filtre », puis sélectionnez OK.  Maintenant ressembler la **nom du composant** pour rechercher un composant qui est le plus liées à votre type d’extension. Dans cet exemple, serait choisis juste-à-temps du débogueur et l’ajouter à votre vsixmanifest.
 * Si vous savez que votre projet porte sur les éléments de débogueur, vous pouvez rechercher « débogueur » dans la zone de filtre de recherche pour voir quels composants contiennent le débogueur dans son nom.
+
+## <a name="specifying-a-visual-studio-2017-release"></a>Spécification d’une version de Visual Studio 2017
+
+Si votre extension nécessite une version spécifique de Visual Studio 2017, par exemple, elle dépend d’une fonctionnalité intégrée à 15.3, vous devez spécifier le numéro de build dans votre projet VSIX **le InstallationTarget**. Par exemple, release 15.3 a un numéro de build de '15.0.26730.3'. Vous pouvez voir le mappage des versions à des numéros de build [ici](../install/visual-studio-build-numbers-and-release-dates.md). À l’aide du numéro de version '15.3' ne fonctionnera pas correctement.
+
+Si votre extension requiert 15.3 ou une version ultérieure, vous déclarez le **le InstallationTarget Version** comme [15.0.26730.3, 16.0) :
+
+```xml
+<Installation>
+  <InstallationTarget Id="Microsoft.VisualStudio.Community" Version="[15.0.26730.3, 16.0)" />
+</Installation>
+```
