@@ -50,6 +50,7 @@
 ### [Managed Extensibility Framework (MEF) dans l’éditeur](managed-extensibility-framework-in-the-editor.md)
 ### [Points d’extension du service de langage et de l’éditeur](language-service-and-editor-extension-points.md)
 ### [Importations de l’éditeur](editor-imports.md)
+### [Prise en charge d’EditorConfig](supporting-editorconfig.md)
 ### [Procédure pas à pas : Liaison d’un type de contenu à une extension de nom de fichier](walkthrough-linking-a-content-type-to-a-file-name-extension.md)
 ### [Procédure pas à pas : Création d’un glyphe de marge](walkthrough-creating-a-margin-glyph.md)
 ### [Procédure pas à pas : Personnalisation de l’affichage du texte](walkthrough-customizing-the-text-view.md)
