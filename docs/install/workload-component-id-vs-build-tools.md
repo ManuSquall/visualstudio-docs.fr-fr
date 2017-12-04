@@ -12,13 +12,13 @@ helpviewer_keywords:
 - component ID, Visual Studio
 - install Visual Studio, administrator guide
 ms.service: 
-ms.technology: vs-ide-install
+ms.technology: vs-acquisition
 ms.assetid: b99298df-0280-47fc-af73-44cd7a8ac553
-ms.openlocfilehash: 4c858ade9aaf2ecdc91c3ba435c0f4cd02b7c506
-ms.sourcegitcommit: 2c7f48ad6073a81fa927568793633f26cc1f0b15
+ms.openlocfilehash: 4409ca641d35a6276cdbcf48137d48b71b85f58e
+ms.sourcegitcommit: eb954434c34b4df6fd2264266381b23ce9e6204a
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/17/2017
+ms.lasthandoff: 11/22/2017
 ---
 # <a name="visual-studio-build-tools-2017-component-directory"></a>Répertoire de composants Visual Studio Build Tools 2017
 
@@ -143,7 +143,13 @@ Microsoft.VisualStudio.Component.VC.Tools.ARM | Compilateurs et bibliothèques V
 Microsoft.VisualStudio.Component.VC.Tools.ARM64 | Compilateurs et bibliothèques Visual C++ pour ARM64 | 15.0.26906.1
 
 ## <a name="get-support"></a>Obtenir de l’aide
-Parfois, des problèmes peuvent se produire. Si votre installation de Visual Studio échoue, consultez la page [Résolution des problèmes d’installation et de mise à niveau de Visual Studio 2017](troubleshooting-installation-issues.md) pour obtenir des conseils de dépannage. Vous pouvez également nous signaler des problèmes au niveau d'un produit via l'outil [Signaler un problème](../ide/how-to-report-a-problem-with-visual-studio-2017.md) de l'IDE de Visual Studio, ou nous faire part de vos suggestions sur [UserVoice](https://visualstudio.uservoice.com/forums/121579). Vous pouvez suivre les problèmes au niveau d'un produit sur le site [Visual Studio Developer Community](https://developercommunity.visualstudio.com/), et y poser des questions et obtenir des réponses. Vous pouvez également communiquer avec nous et d'autres développeurs Visual Studio en prenant part à notre [conversation Visual Studio dans la communauté Gitter ](https://gitter.im/Microsoft/VisualStudio) (nécessite un compte [GitHub](https://github.com/)).
+Parfois, des problèmes peuvent se produire. Si votre installation de Visual Studio échoue, consultez la page [Résolution des problèmes d’installation et de mise à niveau de Visual Studio 2017](troubleshooting-installation-issues.md). Si aucune étape de résolution des problèmes ne vous aide, vous pouvez nous contacter pour une conversation en direct sur une assistance à l’installation (en anglais uniquement). Pour plus de détails, consultez la [page du support Visual Studio](https://www.visualstudio.com/vs/support/#talktous).
+
+Voici d’autres options de support :
+* Vous pouvez nous signaler des problèmes au niveau d’un produit via l’outil [Signaler un problème](../ide/how-to-report-a-problem-with-visual-studio-2017.md) qui s’affiche dans le programme d’installation de Visual Studio et dans l’IDE de Visual Studio.
+* Vous pouvez nous faire part d’une suggestion de produit via [UserVoice](https://visualstudio.uservoice.com/forums/121579).
+* Vous pouvez suivre les problèmes au niveau d'un produit sur le site [Visual Studio Developer Community](https://developercommunity.visualstudio.com/), et y poser des questions et obtenir des réponses.
+* Vous pouvez également communiquer avec nous et d'autres développeurs Visual Studio en prenant part à notre [conversation Visual Studio dans la communauté Gitter ](https://gitter.im/Microsoft/VisualStudio).  (Cette option nécessite un compte [GitHub](https://github.com/)).
 
 ## <a name="see-also"></a>Voir aussi
 
