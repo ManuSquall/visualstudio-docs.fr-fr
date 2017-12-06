@@ -62,8 +62,9 @@
     }
   ],
   "notification_subscribers": [],
-  "branches_to_filter": [
-    "live"
+ "branches_to_filter": [
+			    "master",
+			    "live"
   ],
   "git_repository_url_open_to_public_contributors": "https://github.com/MicrosoftDocs/visualstudio-docs.fr-fr",
   "git_repository_branch_open_to_public_contributors": "live",
