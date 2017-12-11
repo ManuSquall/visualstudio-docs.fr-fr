@@ -1,6 +1,6 @@
 ---
 title: "Déboguer des applications ASP.NET Azure live - Visual Studio | Documents Microsoft"
-ms.date: 11/13/2017
+ms.date: 12/06/2017
 ms.reviewer: 
 ms.suite: 
 ms.technology: vs-ide-debug
@@ -12,11 +12,11 @@ caps.latest.revision: "1"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 02f91441c493d65e8abcdc80bd85b01f2bd423bf
-ms.sourcegitcommit: eb954434c34b4df6fd2264266381b23ce9e6204a
+ms.openlocfilehash: 04f3f90f6b3ee8aac2ddf1907569043c9d4b56ea
+ms.sourcegitcommit: ebe9fb5eda724936f7a059d35d987c29dffdb50d
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/22/2017
+ms.lasthandoff: 12/07/2017
 ---
 # <a name="debug-live-aspnet-azure-apps-using-the-snapshot-debugger"></a>Déboguer des applications ASP.NET Azure en direct à l’aide du débogueur de l’instantané
 
@@ -33,7 +33,7 @@ En outre, le débogueur de l’instantané est uniquement disponible pour Visual
 
 ## <a name="start-the-snapshot-debugger"></a>Démarrez le débogueur de l’instantané
 
-1. Installer le [Visual Studio Enterprise 15.5 Preview](https://www.visualstudio.com/en-us/news/releasenotes/vs2017-preview-relnotes) ou version ultérieure. Si vous mettez à jour à partir d’une version préliminaire de Visual Studio 2017 précédente, exécutez le programme d’installation Visual Studio et vérifiez le composant de débogueur de l’instantané dans la charge de travail de développement ASP.NET et web.
+1. Installer [Visual Studio 2017 Enterprise version 15.5](https://www.visualstudio.com/downloads/) ou version ultérieure. Si vous mettez à jour à partir d’une précédente installation de Visual Studio 2017, exécutez le programme d’installation Visual Studio et vérifiez le composant de débogueur de l’instantané dans la charge de travail de développement ASP.NET et web.
 
 2. Ouvrez le projet pour le débogage de l’instantané. 
 
