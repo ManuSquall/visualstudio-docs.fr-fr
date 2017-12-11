@@ -1,7 +1,7 @@
 ---
 title: "Afficher un instantané à l’aide d’IntelliTrace étape-back - Visual Studio | Documents Microsoft"
 ms.custom: 
-ms.date: 11/08/2017
+ms.date: 12/06/2017
 ms.reviewer: 
 ms.suite: 
 ms.technology: vs-ide-debug
@@ -12,11 +12,11 @@ caps.latest.revision: "5"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 2e8da202cf8ae5680bede1ec4b2f2c8984624e4e
-ms.sourcegitcommit: 5f5587a1bcf4aae995c80d54a67b4b461f8695f3
+ms.openlocfilehash: c05905e8ffeec3aa699aac9dfa46c4b017b86be5
+ms.sourcegitcommit: ebe9fb5eda724936f7a059d35d987c29dffdb50d
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/29/2017
+ms.lasthandoff: 12/07/2017
 ---
 # <a name="view-snapshots-using-intellitrace-step-back"></a>Afficher des instantanés à l’aide d’IntelliTrace étape différée
 Événement d’étape, IntelliTrace différée étape prend automatiquement un instantané de votre application à chaque point d’arrêt et le débogueur. Les instantanés enregistrés permettent de revenir en arrière pour les points d’arrêt précédents ou étapes et afficher l’état de l’application tel qu’il était dans le passé. IntelliTrace d’étape différée peut faire gagner du temps quand vous souhaitez afficher l’état précédent de l’application mais ne souhaitez pas redémarrer le débogage ou de recréer l’état de l’application souhaitée.

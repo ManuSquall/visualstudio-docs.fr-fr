@@ -19,11 +19,11 @@ caps.latest.revision: "20"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 4eab796f0a3c6a7148c94e780439a727ee6fe450
-ms.sourcegitcommit: 26419ab0cccdc30d279c32d6a841758cfa903806
+ms.openlocfilehash: b0b1d4f79be83f69989064ed7699df43b6930040
+ms.sourcegitcommit: ebe9fb5eda724936f7a059d35d987c29dffdb50d
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/11/2017
+ms.lasthandoff: 12/07/2017
 ---
 # <a name="using-the-tasks-window"></a>Utilisation de la fenêtre Tâches
 Le **tâches** fenêtre ressemble à la **Threads** fenêtre, à ceci près qu’elle affiche des informations sur <xref:System.Threading.Tasks.Task?displayProperty=fullName>, [task_handle](/cpp/parallel/concrt/reference/task-group-class.md), ou [WinJS.Promise ](http://msdn.microsoft.com/library/windows/apps/br211867.aspx) des objets au lieu de chaque thread. Comme les threads, les tâches représentent des opérations asynchrones qui peuvent s’exécuter simultanément. Toutefois, plusieurs tâches peuvent s’exécuter sur le même thread. 
@@ -32,7 +32,7 @@ Le **tâches** fenêtre ressemble à la **Threads** fenêtre, à ceci près qu�
   
  En code natif, vous pouvez utiliser la **tâches** fenêtre lorsque vous travaillez avec [groupes de tâches](/cpp/parallel/concrt/task-parallelism-concurrency-runtime), [algorithmes parallèles](/cpp/parallel/concrt/parallel-algorithms), [agents asynchrones](/cpp/parallel/concrt/asynchronous-agents), et [tâches légères](/cpp/parallel/concrt/task-scheduler-concurrency-runtime). Pour plus d’informations sur les tâches en code natif, consultez [Runtime d’accès concurrentiel](/cpp/parallel/concrt/concurrency-runtime).  
   
- En JavaScript, vous pouvez utiliser la fenêtre Tâches lorsque vous utilisez le code .then. Consultez [programmation asynchrone dans JavaScript (applications UWP)](http://msdn.microsoft.com/library/windows/apps/hh700330.aspx) pour plus d’informations.   
+ Dans JavaScript, vous pouvez utiliser la fenêtre tâches lorsque vous travaillez avec promesse `.then` code. Consultez [programmation asynchrone dans JavaScript (applications UWP)](http://msdn.microsoft.com/library/windows/apps/hh700330.aspx) pour plus d’informations.   
   
  Vous pouvez utiliser la **tâches** fenêtre chaque fois que vous arrêtez dans le débogueur. Vous pouvez y accéder sur le **déboguer** en cliquant sur **Windows** , puis en cliquant sur **tâches**. L’illustration suivante montre le **tâches** fenêtre dans son mode par défaut.  
   
