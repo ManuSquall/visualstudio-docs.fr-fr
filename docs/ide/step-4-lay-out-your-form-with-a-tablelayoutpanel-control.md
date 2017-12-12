@@ -4,35 +4,19 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-general
+ms.technology: vs-acquisition
 ms.tgt_pltfrm: 
 ms.topic: article
 ms.assetid: 61acde79-e115-4bad-bb06-1fbe37717a3e
-caps.latest.revision: 17
-author: kempb
-ms.author: kempb
+caps.latest.revision: "17"
+author: TerryGLee
+ms.author: tglee
 manager: ghogen
-translation.priority.ht:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 47057e9611b824c17077b9127f8d2f8b192d6eb8
-ms.openlocfilehash: 6f4db48b7e1f90654643efbfcfd41acbdcceaec8
-ms.contentlocale: fr-fr
-ms.lasthandoff: 05/13/2017
-
+ms.openlocfilehash: 1740beb4c671b2e66e249827c2db678f6b6f7da3
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: HT
+ms.contentlocale: fr-FR
+ms.lasthandoff: 10/31/2017
 ---
 # <a name="step-4-lay-out-your-form-with-a-tablelayoutpanel-control"></a>Étape 4 : composer votre formulaire avec un contrôle TableLayoutPanel
 Dans cette étape, vous allez ajouter un contrôle `TableLayoutPanel` à votre formulaire. Le contrôle TableLayoutPanel permet d'aligner correctement les contrôles du formulaire que vous ajouterez ultérieurement.  
@@ -45,7 +29,7 @@ Dans cette étape, vous allez ajouter un contrôle `TableLayoutPanel` à votre f
   
 2.  Sélectionnez le petit symbole de triangle en regard du groupe **Conteneurs** pour l’ouvrir, comme indiqué dans l’image suivante.  
   
-     ![Groupe Conteneurs](../ide/media/express_toolbox.png "Express_Toolbox")  
+     ![Groupe de conteneurs](../ide/media/express_toolbox.png "Express_Toolbox")  
 Groupe de conteneurs  
   
 3.  Vous pouvez ajouter des contrôles comme des boutons, des cases à cocher et des étiquettes à votre formulaire. Double-cliquez sur le contrôle `TableLayoutPanel` dans la boîte à outils. Vous pouvez également faire glisser le contrôle de la Boîte à outils vers le formulaire. L’IDE ajoute alors un contrôle `TableLayoutPanel` à votre formulaire, comme indiqué dans l’image suivante.  
@@ -68,7 +52,7 @@ Fenêtre Propriétés affichant le contrôle TableLayoutPanel
   
 5.  Dans la barre d’outils de la fenêtre **Propriétés**, choisissez le bouton **Ordre alphabétique**. La liste des propriétés de la fenêtre **Propriétés** s’affiche alors dans l’ordre alphabétique, ce qui facilite la localisation des propriétés dans ce didacticiel.  
   
-6.  Le sélecteur de contrôles est une liste déroulante située en haut de la fenêtre **Propriétés**. Dans cet exemple, il indique qu’un contrôle appelé `tableLayoutPanel1` est sélectionné. Vous pouvez sélectionner des contrôles en choisissant une zone dans le Concepteur Windows Forms ou en utilisant le sélecteur de contrôles. À présent que `TableLayoutPanel` est sélectionné, recherchez la propriété **Dock** et sélectionnez-la****. Sa valeur doit être **Aucun**. Notez qu’une flèche de déroulement s’affiche en regard de la valeur. Cliquez sur la flèche, puis sélectionnez le bouton **Remplissage** (le grand bouton au milieu), comme indiqué dans l’image suivante.  
+6.  Le sélecteur de contrôles est une liste déroulante située en haut de la fenêtre **Propriétés**. Dans cet exemple, il indique qu’un contrôle appelé `tableLayoutPanel1` est sélectionné. Vous pouvez sélectionner des contrôles en choisissant une zone dans le Concepteur Windows Forms ou en utilisant le sélecteur de contrôles. À présent que `TableLayoutPanel` est sélectionné, recherchez la propriété **Dock** et sélectionnez **Dock**. Sa valeur doit être **Aucun**. Notez qu’une flèche de déroulement s’affiche en regard de la valeur. Cliquez sur la flèche, puis sélectionnez le bouton **Remplissage** (le grand bouton au milieu), comme indiqué dans l’image suivante.  
   
      ![Fenêtre Propriétés avec Remplissage sélectionné](../ide/media/express_docktable.png "Express_DockTable")  
 Fenêtre Propriétés avec Remplissage sélectionné  
