@@ -1,46 +1,46 @@
 ---
-title: "Comment&#160;: d&#233;placer des binaires instrument&#233;s | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-debug"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "vs.performance.property.binaries"
-helpviewer_keywords: 
-  - "binaires, instrumentés"
-  - "instrumentation, binaires instrumentés"
-  - "binaires instrumentés et déplacement"
-  - "outils de profilage, binaires instrumentés"
+title: "Comment : déplacer des binaires instrumentés | Microsoft Docs"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-debug
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords: vs.performance.property.binaries
+helpviewer_keywords:
+- binaries, instrumented
+- instrumentation, instrumented binaries
+- instrumented binaries and relocating
+- profiling tools, instrumented binaries
 ms.assetid: 258f49e8-4b09-477e-a132-8fad685b66f4
-caps.latest.revision: 18
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 18
+caps.latest.revision: "18"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: 8a7c0423f136998b899375e221f18c085835ae05
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: HT
+ms.contentlocale: fr-FR
+ms.lasthandoff: 10/31/2017
 ---
-# Comment&#160;: d&#233;placer des binaires instrument&#233;s
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
-
+# <a name="how-to-relocate-instrumented-binaries"></a>Comment : déplacer des binaires instrumentés
 Lors de l’instrumentation, des sondes sont insérées dans le fichier binaire pour mesurer les performances de l’application. Quand vous choisissez de déplacer le fichier binaire instrumenté, une copie du fichier binaire d’origine est instrumentée et placée à l’emplacement spécifié. Cette option est utile si vous ne voulez pas que le profileur renomme votre fichier binaire d’origine. Si le fichier binaire n’est pas déplacé, la version d’origine du fichier binaire est remplacée.  
   
  **Spécifications**  
   
 -   [!INCLUDE[vsUltLong](../code-quality/includes/vsultlong_md.md)], [!INCLUDE[vsPreLong](../code-quality/includes/vsprelong_md.md)], [!INCLUDE[vsPro](../code-quality/includes/vspro_md.md)]  
   
-### Pour déplacer un fichier binaire instrumenté  
+### <a name="to-relocate-instrumented-binary"></a>Pour déplacer un fichier binaire instrumenté  
   
-1.  Dans l’**Explorateur de performances**, cliquez avec le bouton droit sur la session de performance, puis cliquez sur **Propriétés**.  
+1.  Dans l’ **Explorateur de performances**, cliquez avec le bouton droit sur la session de performance, puis cliquez sur **Propriétés**.  
   
-2.  Dans les **Pages de propriétés**, cliquez sur les propriétés **Binaire**.  
+2.  Dans les **Pages de propriétés**, cliquez sur les propriétés **Binaire** .  
   
-3.  Cochez la case **Déplacer les fichiers binaires instrumentés**.  
+3.  Cochez la case **Déplacer les fichiers binaires instrumentés** .  
   
 4.  Spécifiez l’emplacement du fichier binaire instrumenté.  
   
-## Voir aussi  
+## <a name="see-also"></a>Voir aussi  
  [Configuration de sessions de performance](../profiling/configuring-performance-sessions.md)   
  [VSInstr](../profiling/vsinstr.md)

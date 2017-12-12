@@ -2,8 +2,7 @@
 title: "Mettre à niveau Dotfuscator Community Edition (CE) | Microsoft Docs"
 ms.date: 2017-02-08
 ms.devlang: dotnet
-ms.technology:
-- vs-ide-general
+ms.technology: vs-ide-general
 ms.topic: article
 keywords: "Dotfuscator, Dotfuscator CE, PreEmptive, PreEmptive Solutions, PreEmptive Protection, protection, Community Edition, obfuscation, .NET, gratuit, Visual Studio 2017, mettre à niveau, ligne de commande"
 helpviewer_keywords:
@@ -24,28 +23,12 @@ description: "Découvrez comment mettre à jour la version gratuite de Dotfuscat
 ms.assetid: c7c60904-27f9-4f1f-b79b-ddf65041b810
 author: Joe-Sewell-PreEmptive
 manager: ghogen
-translation.priority.ht:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 8ce85525f6af336682f6f8547c2f6c13dde73c8c
-ms.openlocfilehash: 60ca38639f6523cdbace4efa4aa48b48d5e9a886
-ms.contentlocale: fr-fr
-ms.lasthandoff: 06/23/2017
-
+ms.openlocfilehash: 261fc98312914f5a80d2302a90e360dfde2ca17f
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: HT
+ms.contentlocale: fr-FR
+ms.lasthandoff: 10/31/2017
 ---
-
 # <a name="upgrade-dotfuscator-community-edition-ce"></a>Mettre à niveau Dotfuscator Community Edition (CE)
 
 Dotfuscator Community Edition (Dotfuscator CE) offre immédiatement de nombreuses fonctionnalités de renforcement et de protection des applications à tous les développeurs utilisant Microsoft Visual Studio.
@@ -54,6 +37,7 @@ Toutefois, les utilisateurs qui mettent à niveau leur version de Dotfuscator pe
 ## <a name="registering-dotfuscator-ce"></a>Inscription de Dotfuscator CE
 
 Les utilisateurs de Dotfuscator inscrits peuvent accéder à des fonctionnalités supplémentaires, telles que la [prise en charge des lignes de commande][cli], ce qui permet d’intégrer facilement Dotfuscator CE au processus de génération automatisé.
+En outre, l’inscription accorde l’accès à Lucidator, un outil intégré employé pour le [décodage des traces de pile obfusquées][decode-obfuscated].
 
 L’inscription est rapide, simple et gratuite.
 Pour inscrire Dotfuscator CE, consultez [la section relative à l’inscription de Dotfuscator CE dans la page de prise en main du guide d’utilisation complet de Dotfuscator CE][register-ce].
@@ -73,7 +57,6 @@ Elles incluent notamment les suivantes :
   * La possibilité de [supprimer automatiquement le code non utilisé de votre application][pruning], ce qui réduit la quantité de code sensible fourni.
 * *Protection de l’intégrité des applications*
   * [Comportements de défense des applications][check-actions] supplémentaires.
-  * La possibilité d’injecter du code anti-violation et anti-débogage dans des assemblys `.dll`.
   * La possibilité de fournir un délai d’avertissement avant l’échéance de fin de vie d’une application.
   * La possibilité de notifier le code d’application dans le délai d’avertissement de fin de vie ou après la date limite.
   * Chiffrement des données de télémétrie.
@@ -116,4 +99,4 @@ Pour plus d’informations sur les fonctionnalités de protection des applicatio
 [register-ce]: https://www.preemptive.com/dotfuscator/ce/docs/help/gui_getstarted.html#register
 
 [full]: https://www.preemptive.com/dotfuscator/ce/docs/help/intro_upgrades.html
-
+[decode-obfuscated]: https://www.preemptive.com/dotfuscator/ce/docs/help/gui_decode_stack_trace.html

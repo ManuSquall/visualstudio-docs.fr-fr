@@ -1,40 +1,24 @@
 ---
-title: "Définir une propriété Automation unique pour les contrôles Windows Store à des fins de test| Microsoft Docs"
+title: "Définir une propriété Automation unique pour les contrôles UWP à des fins de test | Microsoft Docs"
 ms.custom: 
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-devops-test
+ms.technology: vs-devops-test
 ms.tgt_pltfrm: 
 ms.topic: article
 ms.assetid: 9bdd74ff-2534-4fc7-a5c3-a77bf7843037
-caps.latest.revision: 10
+caps.latest.revision: "10"
 ms.author: douge
 manager: douge
-translation.priority.ht:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
+ms.openlocfilehash: 3038f70405239d69f0924be022040bcc8c7db9a4
+ms.sourcegitcommit: c0422a3d594ea5ae8fc03f1aee684b04f417522e
 ms.translationtype: HT
-ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
-ms.openlocfilehash: e931c898147cb93683ae618f96eed53ae13607ea
-ms.contentlocale: fr-fr
-ms.lasthandoff: 09/26/2017
-
+ms.contentlocale: fr-FR
+ms.lasthandoff: 11/02/2017
 ---
-# <a name="set-a-unique-automation-property-for-windows-store-controls-for-testing"></a>Définir une propriété Automation unique pour les contrôles Windows Store à des fins de test
-Si vous souhaitez exécuter des tests codés de l’interface utilisateur pour vos applications du Windows Store en XAML, vous devez définir une propriété Automation unique qui identifie chaque contrôle.  
+# <a name="set-a-unique-automation-property-for-uwp-controls-for-testing"></a>Définir une propriété Automation unique pour les contrôles UWP à des fins de test
+Si vous voulez exécuter des tests codés de l’interface utilisateur pour vos applications UWP en XAML, vous devez définir une propriété Automation unique qui identifie chaque contrôle.  
   
  Vous pouvez assigner une propriété Automation unique selon le type de contrôle XAML dans votre application. Voilà comment assigner cette propriété Automation unique dans les situations suivantes :  
   
@@ -219,5 +203,4 @@ private void CreateCheckBox(string txt, StackPanel panel)
 ```  
   
 ## <a name="see-also"></a>Voir aussi  
- [Test des applications Windows UWP et des applications du Windows Store 8.1 avec des tests codés de l’interface utilisateur](../test/test-windows-store-8-1-apps-with-coded-ui-tests.md)
-
+ [Test des applications Windows UWP avec des tests codés de l’interface utilisateur](../test/test-windows-store-8-1-apps-with-coded-ui-tests.md)

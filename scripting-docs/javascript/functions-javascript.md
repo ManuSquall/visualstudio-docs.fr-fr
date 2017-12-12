@@ -1,49 +1,51 @@
 ---
-title: "Fonctions (JavaScript) | Microsoft Docs"
-ms.custom: ""
-ms.date: "01/18/2017"
-ms.prod: "windows-client-threshold"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "devlang-javascript"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-dev_langs: 
-  - "JavaScript"
-  - "TypeScript"
-  - "DHTML"
-helpviewer_keywords: 
-  - "fonctions intrinsèques de JavaScript"
+title: Fonctions (JavaScript) | Microsoft Docs
+ms.custom: 
+ms.date: 01/18/2017
+ms.prod: windows-client-threshold
+ms.reviewer: 
+ms.suite: 
+ms.technology: devlang-javascript
+ms.tgt_pltfrm: 
+ms.topic: article
+dev_langs:
+- JavaScript
+- TypeScript
+- DHTML
+helpviewer_keywords: intrinsic JavaScript functions
 ms.assetid: e2a72b5a-3edd-43d8-95e8-91721b38c1c1
-caps.latest.revision: 24
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 24
+caps.latest.revision: "24"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: fd5626af6417b5f0010545874bd15c86b30a303a
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.translationtype: HT
+ms.contentlocale: fr-FR
+ms.lasthandoff: 10/27/2017
 ---
-# Fonctions (JavaScript)
-Les fonctions [!INCLUDE[javascript](../javascript/includes/javascript-md.md)] exécutent des actions et peuvent également retourner des valeurs.  Parfois, il s'agit du résultat d'un calcul ou d'une comparaison.  Les fonctions sont également appelées « méthodes globales ».  
+# <a name="functions-javascript"></a>Fonctions (JavaScript)
+Les fonctions [!INCLUDE[javascript](../javascript/includes/javascript-md.md)] exécutent des actions et peuvent également retourner des valeurs. Parfois, il s'agit du résultat d'un calcul ou d'une comparaison. Les fonctions sont également appelées « méthodes globales ».  
   
- Les fonctions combinent plusieurs opérations sous un même nom.  Cela vous permet de simplifier votre code.  Vous pouvez rédiger un ensemble d'instructions, le nommer, puis exécuter l'ensemble en l'appelant et en lui passant toutes les informations requises.  
+ Les fonctions combinent plusieurs opérations sous un même nom. Cela vous permet de simplifier votre code. Vous pouvez rédiger un ensemble d'instructions, le nommer, puis exécuter l'ensemble en l'appelant et en lui passant toutes les informations requises.  
   
- Pour passer des informations à une fonction, vous devez les mettre entre parenthèses à la suite du nom de la fonction.  Les informations passées à une fonction sont appelées arguments ou paramètres.  Certaines fonctions ne requièrent pas d'argument, alors que d'autres exigent la présence d'un ou de plusieurs d'entre eux.  Dans certaines fonctions, le nombre d'arguments dépend de la manière dont vous utilisez la fonction.  
+ Pour passer des informations à une fonction, vous devez les mettre entre parenthèses à la suite du nom de la fonction. Les informations passées à une fonction sont appelées arguments ou paramètres. Certaines fonctions ne requièrent pas d'argument, alors que d'autres exigent la présence d'un ou de plusieurs d'entre eux. Dans certaines fonctions, le nombre d’arguments dépend de la manière dont vous utilisez la fonction.  
   
  [!INCLUDE[javascript](../javascript/includes/javascript-md.md)] prend en charge deux types de fonctions : celles qui sont intégrées au langage et celles que vous créez.  
   
-## Fonctions intégrées  
- Le langage [!INCLUDE[javascript](../javascript/includes/javascript-md.md)] inclut plusieurs fonctions intégrées.  Certaines d'entre elles permettent de gérer des expressions et des caractères spéciaux, tandis que d'autres convertissent des chaînes en valeurs numériques.  
+## <a name="built-in-functions"></a>Fonctions intégrées  
+ Le langage [!INCLUDE[javascript](../javascript/includes/javascript-md.md)] inclut plusieurs fonctions intégrées. Certaines d'entre elles permettent de gérer des expressions et des caractères spéciaux, tandis que d'autres convertissent des chaînes en valeurs numériques.  
   
- Pour plus d'informations sur les fonctions intégrées, consultez [Méthodes JavaScript](../javascript/reference/javascript-methods.md).  
+ Pour plus d’informations sur les fonctions intégrées, consultez [Méthodes JavaScript](../javascript/reference/javascript-methods.md).  
   
-## Création de vos propres fonctions  
- Vous pouvez créer vos propres fonctions et les utiliser quand cela est nécessaire.  La définition d'une fonction comprend une instruction de fonction et un bloc d'instructions [!INCLUDE[javascript](../javascript/includes/javascript-md.md)].  
+## <a name="creating-your-own-functions"></a>Création de vos propres fonctions  
+ Vous pouvez créer vos propres fonctions et les utiliser quand cela est nécessaire. La définition d'une fonction comprend une instruction de fonction et un bloc d'instructions [!INCLUDE[javascript](../javascript/includes/javascript-md.md)].  
   
- La fonction **checkTriplet** de l'exemple suivant accepte comme arguments les longueurs des côtés d'un triangle.  Elle calcule, à partir de ces longueurs, si le triangle est rectangle en contrôlant si les trois nombres vérifient le théorème de Pythagore \(le carré de la longueur de l'hypoténuse d'un triangle rectangle est égal à la somme des carrés des longueurs des deux autres côtés\).  La fonction checkTriplet appelle l'une des deux autres fonctions pour effectuer le test.  
+ La fonction **checkTriplet** de l’exemple suivant accepte comme arguments les longueurs des côtés d’un triangle. Elle calcule, à partir de ces longueurs, si le triangle est rectangle en contrôlant si les trois nombres vérifient le théorème de Pythagore (le carré de la longueur de l'hypoténuse d'un triangle rectangle est égal à la somme des carrés des longueurs des deux autres côtés). La fonction checkTriplet appelle l'une des deux autres fonctions pour effectuer le test.  
   
- Notez l'utilisation d'un tout petit nombre \(« epsilon »\) en guise de variable de test dans la version à virgule flottante du test.  En raison des incertitudes et des erreurs d'arrondi dans les calculs à virgule flottante, il n'est pas pratique d'effectuer un test direct pour contrôler si les trois nombres vérifient le théorème de Pythagore sauf dans le cas où ces trois valeurs sont des entiers.  Un test direct étant plus précis, le code de cet exemple détermine si ce test est approprié, et si c'est le cas, l'utilise.  
+ Notez l'utilisation d'un tout petit nombre (« epsilon ») en guise de variable de test dans la version à virgule flottante du test. En raison des incertitudes et des erreurs d'arrondi dans les calculs à virgule flottante, il n'est pas pratique d'effectuer un test direct pour contrôler si les trois nombres vérifient le théorème de Pythagore sauf dans le cas où ces trois valeurs sont des entiers. Un test direct étant plus précis, le code de cet exemple détermine si ce test est approprié, et si c'est le cas, l'utilise.  
   
-```javascript  
+```JavaScript  
 var epsilon = 0.00000000001; // Some very small number to test against.  
   
 // The test function for integers.  
@@ -119,23 +121,23 @@ var result = checkTriplet(sideA, sideB, sideC);
 ```  
   
 <a name="Arrow"></a>   
-## Fonctions Arrow  
- La syntaxe de fonction Arrow, `=>`, fournit une méthode abrégée de spécification d'une fonction anonyme.  Voici la syntaxe de fonction Arrow.  
+## <a name="arrow-functions"></a>Fonctions Arrow  
+ La syntaxe de fonction Arrow, `=>`, fournit une méthode abrégée de spécification d'une fonction anonyme. Voici la syntaxe de fonction Arrow.  
   
-```javascript  
+```JavaScript  
 ([arg] [, arg]) => {  
     statements  
 }  
 ```  
   
- Les valeurs à gauche de la flèche, qui peuvent être mises entre parenthèses, spécifient les arguments passés à la fonction.  Un seul argument de la fonction ne nécessite pas de parenthèses.  Les parenthèses sont nécessaires si aucun argument n'est passé.  La définition de fonction à droite de la flèche peut être une expression, telle que `v + 1`, ou un bloc d'instructions placées entre accolades \({}\).  
+ Les valeurs à gauche de la flèche, qui peuvent être mises entre parenthèses, spécifient les arguments passés à la fonction. Un seul argument de la fonction ne nécessite pas de parenthèses. Les parenthèses sont nécessaires si aucun argument n'est passé. La définition de fonction à droite de la flèche peut être une expression, telle que `v + 1`, ou un bloc d'instructions placées entre accolades ({}).  
   
 > [!IMPORTANT]
 >  La syntaxe de fonction Arrow est prise en charge uniquement en [!INCLUDE[jsv12text](../javascript/includes/jsv12text-md.md)].  
   
  Vous ne pouvez pas utiliser l'opérateur `new` avec une fonction Arrow.  
   
- Les exemples de code suivants illustrent l'utilisation de la fonction Arrow avec des expressions en tant que définitions de fonctions.  Dans le premier exemple, v est transmis comme argument à l'expression.  Dans le second exemple, v et i sont transmis comme arguments à l'expression.  
+ Les exemples de code suivants illustrent l'utilisation de la fonction Arrow avec des expressions en tant que définitions de fonctions. Dans le premier exemple, v est transmis comme argument à l'expression. Dans le second exemple, v et i sont transmis comme arguments à l’expression.  
   
 ```  
 var evens = [2, 4, 6, 8];  
@@ -163,7 +165,7 @@ console.log(nums);
   
  L'exemple de code suivant illustre l'utilisation de la fonction Arrow avec un bloc d'instructions.  
   
-```javascript  
+```JavaScript  
 var fives = new Array();  
   
 // Statement block, re-using nums array from previous example.  
@@ -182,9 +184,9 @@ console.log(fives);
   
  Contrairement aux fonctions standard, les fonctions Arrow partagent le même objet `this` lexical en tant que code environnant, qui peut être utilisé pour éliminer le besoin de solutions de contournement telles que `var self = this;`.  
   
- L'exemple suivant montre que la valeur de l'objet `this` dans la fonction Arrow est identique à celle du code environnant \(elle fait toujours référence à la variable `bob`\).  
+ L'exemple suivant montre que la valeur de l'objet `this` dans la fonction Arrow est identique à celle du code environnant (elle fait toujours référence à la variable `bob`).  
   
-```javascript  
+```JavaScript  
 var bob = {  
   _name: "Bob",  
   _friends: ["Pete", "Joe", "Larry"],  
@@ -200,18 +202,18 @@ var bob = {
 // Bob knows Larry  
 ```  
   
- Les fonctions Arrow partagent également le même objet `arguments` lexical en tant que code environnant \(comme l'objet `this`\).  
+ Les fonctions Arrow partagent également le même objet `arguments` lexical en tant que code environnant (comme l'objet `this`).  
   
 <a name="Default"></a>   
-## Paramètres par défaut  
- Vous pouvez spécifier une valeur par défaut pour un paramètre dans une fonction en lui assignant une valeur initiale.  La valeur par défaut peut être une valeur constante ou une expression.  
+## <a name="default-parameters"></a>Paramètres par défaut  
+ Vous pouvez spécifier une valeur par défaut pour un paramètre dans une fonction en lui assignant une valeur initiale. La valeur par défaut peut être une valeur constante ou une expression.  
   
 > [!IMPORTANT]
 >  Les paramètres par défaut sont pris en charge uniquement en [!INCLUDE[jsv12textExp](../javascript/includes/jsv12textexp-md.md)].  
   
- Dans l'exemple suivant, la valeur par défaut de y est 10 et la valeur par défaut de z est 20.  La fonction utilise 10 comme valeur de y, sauf si l'appelant transmet une valeur distincte \(ou non définie\) comme deuxième argument.  La fonction utilise 20 comme valeur de z, sauf si l'appelant transmet une valeur distincte \(ou non définie\) comme troisième argument.  
+ Dans l'exemple suivant, la valeur par défaut de y est 10 et la valeur par défaut de z est 20. La fonction utilise 10 comme valeur de y, sauf si l'appelant transmet une valeur distincte (ou non définie) comme deuxième argument. La fonction utilise 20 comme valeur de z, sauf si l’appelant transmet une valeur distincte (ou non définie) comme troisième argument.  
   
-```javascript  
+```JavaScript  
 var val = 20;  
   
 function f(x, y=10, z=val) {  
@@ -229,21 +231,21 @@ console.log(f(3, 3, 3));
 ```  
   
 <a name="Rest"></a>   
-## Paramètres REST  
- Les paramètres rest, spécifiés par l'opérateur spread \(                       ``  \), vous permettent de convertir des arguments consécutifs d'un appel de fonction en tableau.  
+## <a name="rest-parameters"></a>Paramètres REST  
+ Les paramètres rest, spécifiés par l’opérateur spread (), vous permettent de convertir des arguments consécutifs d’un appel de fonction en tableau.  
   
- Les paramètres rest éliminent le besoin d'utiliser l'objet `arguments`.  Les paramètres rest présentent des différences par rapport à l'objet `arguments`, notamment :  
+ Les paramètres rest éliminent le besoin d'utiliser l'objet `arguments`. Les paramètres rest présentent des différences par rapport à l'objet `arguments`, notamment :  
   
 -   Un paramètre rest est une instance de tableau réel et par conséquent prend en charge les opérations qui peuvent être effectuées sur un tableau.  
   
--   Un paramètre rest inclut uniquement les arguments consécutifs qui ne sont pas transmis en tant qu'arguments distincts \(nommés\) \(à l'inverse, l'objet `arguments` contient tous les arguments transmis à la fonction\).  
+-   Un paramètre rest inclut uniquement les arguments consécutifs qui ne sont pas transmis en tant qu'arguments distincts (nommés) (à l'inverse, l'objet `arguments` contient tous les arguments transmis à la fonction).  
   
 > [!IMPORTANT]
 >  Les paramètres rest et l'opérateur spread sont pris en charge uniquement en [!INCLUDE[jsv12text](../javascript/includes/jsv12text-md.md)].  
   
- Dans l'exemple de code suivant, "hello" et true sont transmis en tant que valeurs de tableau et stockés dans le paramètre y.  Le paramètre rest doit être le dernier paramètre de la fonction.  
+ Dans l'exemple de code suivant, "hello" et true sont transmis en tant que valeurs de tableau et stockés dans le paramètre y. Le paramètre rest doit être le dernier paramètre de la fonction.  
   
-```javascript  
+```JavaScript  
 function f(x, ...y) {  
   // y is an array.  
   return x * y.length;  
@@ -256,7 +258,7 @@ console.log(f(3, "hello", true));
   
 ```  
   
- Pour connaître d'autres utilisations de l'opérateur spread, consultez [Opérateur spread](../javascript/reference/spread-operator-decrement-dot-dot-dot-javascript.md).  
+ Pour connaître d’autres utilisations de l’opérateur spread, consultez [spread, opérateur](../javascript/reference/spread-operator-decrement-dot-dot-dot-javascript.md).  
   
-## Voir aussi  
- [Informations de référence sur le langage JavaScript](../javascript/javascript-language-reference.md)
+## <a name="see-also"></a>Voir aussi  
+ [Référence sur le langage JavaScript](../javascript/javascript-language-reference.md)

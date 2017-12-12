@@ -4,8 +4,7 @@ ms.custom: H1Hack27Feb2017
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-debug
+ms.technology: vs-ide-debug
 ms.tgt_pltfrm: 
 ms.topic: article
 dev_langs:
@@ -23,34 +22,18 @@ helpviewer_keywords:
 - analyzing memory, JavaScript
 - memory analyzer, JavaScript
 ms.assetid: 78f8532b-7b4e-4b50-b8b7-68ca0926dd4e
-caps.latest.revision: 49
+caps.latest.revision: "49"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-translation.priority.ht:
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- ru-ru
-- zh-cn
-- zh-tw
-translation.priority.mt:
-- cs-cz
-- pl-pl
-- pt-br
-- tr-tr
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 47057e9611b824c17077b9127f8d2f8b192d6eb8
-ms.openlocfilehash: 24250d68042f77a653fe9ef36c743dd4f32ee57c
-ms.contentlocale: fr-fr
-ms.lasthandoff: 05/13/2017
-
+ms.openlocfilehash: e52bef93735efc1ec5e43230ba46c7aa90cb67bc
+ms.sourcegitcommit: 26419ab0cccdc30d279c32d6a841758cfa903806
+ms.translationtype: HT
+ms.contentlocale: fr-FR
+ms.lasthandoff: 11/11/2017
 ---
 # <a name="analyze-javascript-memory-usage-in-uwp-apps"></a>Analyser l’utilisation de mémoire JavaScript dans les applications UWP
-L'analyseur de mémoire JavaScript est disponible dans Visual Studio pour vous aider à comprendre l'utilisation de la mémoire et à rechercher les fuites de mémoire dans vos applications du Windows Store générées pour Windows en JavaScript. Les applications dédiées aux applications Windows universelles sont prises en charge.
+L’analyseur de mémoire JavaScript est disponible dans Visual Studio pour vous aider à comprendre l’utilisation de la mémoire et à rechercher les fuites de mémoire dans vos applications UWP générées pour Windows en JavaScript. Les applications dédiées aux applications Windows universelles sont prises en charge.
   
  L'analyseur de mémoire JavaScript peut effectuer les opérations suivantes :  
   
@@ -85,15 +68,15 @@ L'analyseur de mémoire JavaScript est disponible dans Visual Studio pour vous a
  [Conseils pour identifier les problèmes de mémoire](#Tips)  
   
 ##  <a name="Run"></a> Exécuter l'analyseur de mémoire JavaScript  
- Vous pouvez utiliser l’analyseur de mémoire lorsque vous avez une application du Windows Store ouverte dans Visual Studio ou installée sur un ordinateur exécutant [!INCLUDE[win8](../debugger/includes/win8_md.md)] ou version ultérieure.  
+ Vous pouvez utiliser l’analyseur de mémoire quand vous avez une application UWP ouverte dans Visual Studio ou installée sur un ordinateur exécutant [!INCLUDE[win8](../debugger/includes/win8_md.md)] ou ultérieur.  
   
 #### <a name="to-run-the-memory-analyzer"></a>Pour exécuter l'analyseur de mémoire  
   
 1.  Ouvrez Visual Studio.  
   
-2.  Si vous exécutez l'application à partir de Visual Studio, dans la barre d'outils **Standard** , dans la liste **Démarrer le débogage** , choisissez la cible de débogage de votre projet : un émulateur Windows Phone ou, pour une application du Windows Store, un **Ordinateur local**, un **Simulateur**ou un **Ordinateur distant**.  
+2.  Si vous exécutez l’application à partir de Visual Studio, dans la barre d’outils **Standard**, dans la liste **Démarrer le débogage**, choisissez la cible de débogage de votre projet : un émulateur Windows Phone ou, pour une application UWP, **Ordinateur local**, **Simulateur**ou **Ordinateur distant**.  
   
-     Pour plus d’informations sur ces options, consultez [Exécuter des applications à partir de Visual Studio](../debugger/run-store-apps-from-visual-studio.md).  
+     Pour plus d'informations sur ces options, consultez [Run apps from Visual Studio](../debugger/run-store-apps-from-visual-studio.md).  
   
 3.  Dans la barre de menus, choisissez **Déboguer****Profileur de performances...**  
   
@@ -105,11 +88,11 @@ L'analyseur de mémoire JavaScript est disponible dans Visual Studio pour vous a
   
     -   **Projet de démarrage**. Analyse le projet de démarrage en cours. Si vous exécutez l'application sur un ordinateur distant, vous devez sélectionner cette option, qui est l'option par défaut.  
   
-    -   **Application en cours d'exécution**. Permet de sélectionner une application du Windows Store dans une liste d'applications en cours d'exécution. Vous ne pouvez pas utiliser cette option lorsque vous exécutez l'application sur un ordinateur distant.  
+    -   **Application en cours d'exécution**. Permet de sélectionner une application UWP dans la liste des applications en cours d’exécution. Vous ne pouvez pas utiliser cette option lorsque vous exécutez l'application sur un ordinateur distant.  
   
          Utilisez cette option pour analyser l'utilisation de la mémoire des applications en cours d'exécution sur votre ordinateur lorsque vous n'avez pas accès au code source.  
   
-    -   **Application installée**. Permet de sélectionner une application du Windows Store installée à analyser. Vous ne pouvez pas utiliser cette option lorsque vous exécutez l'application sur un ordinateur distant.  
+    -   **Application installée**. Permet de sélectionner une application UWP installée que vous voulez analyser. Vous ne pouvez pas utiliser cette option lorsque vous exécutez l'application sur un ordinateur distant.  
   
          Utilisez cette option pour analyser l'utilisation de la mémoire des applications installées sur votre ordinateur lorsque vous n'avez pas accès au code source. Cette option s'avère également utile lorsque vous voulez uniquement analyser l'utilisation de la mémoire d'une application en dehors de votre propre développement d'applications.  
   
@@ -308,7 +291,7 @@ L'analyseur de mémoire JavaScript est disponible dans Visual Studio pour vous a
   
 -   **Tous les objets de l’instantané n° \<numéro>**. Ce paramètre de filtre ne filtre aucun objet du tas.  
   
- Pour afficher les références d’objet qui ne correspondent pas au filtre **Portée**, sélectionnez **Afficher les références incohérentes** dans la liste des paramètres ![Liste déroulante des paramètres dans l’analyseur de mémoire](~/profiling/media/js_mem_settings.png "JS_Mem_Settings") située dans l’angle supérieur droit du volet. Si vous activez ce paramètre, les références incohérentes sont affichées en texte gris.  
+ Pour afficher les références d’objet qui ne correspondent pas au filtre **Portée**, sélectionnez **Afficher les références incohérentes** dans la liste des paramètres ![Liste déroulante des paramètres dans l’analyseur de mémoire](../profiling/media/js_mem_settings.png "JS_Mem_Settings") située dans l’angle supérieur droit du volet. Si vous activez ce paramètre, les références incohérentes sont affichées en texte gris.  
   
 > [!TIP]
 >  Nous recommandons de suivre les étapes décrites dans [Isolate a memory leak](#Isolate) puis d'utiliser le filtre **Portée** des objets restants pour identifier plus facilement les objets qui présentent une fuite de mémoire.  
@@ -316,7 +299,7 @@ L'analyseur de mémoire JavaScript est disponible dans Visual Studio pour vous a
 ##  <a name="FoldObjects"></a> Afficher les objets par dominateur  
  Dans les vues Types et Dominators, vous pouvez choisir d'afficher les objets dans leurs dominateurs (il s'agit de la vue par défaut sous l'onglet Dominators). Quand cette vue est sélectionnée, seuls les dominateurs sont affichés dans la vue de niveau supérieur des objets. (Les objets qui sont des descendants d'objets non globaux sont masqués de la vue de niveau supérieur.) Pour certaines applications, cela peut montrer plus précisément les objets qui sont la cause d'une fuite de mémoire en réduisant le volume de données.  
   
- Pour basculer la vue des objets par dominateur, choisisse le bouton **Plier les objets par dominateur** . ![Repli d’objets dans leurs dominateurs](~/profiling/media/js_mem_fold_objects.png "JS_Mem_Fold_Objects")  
+ Pour basculer la vue des objets par dominateur, choisisse le bouton **Plier les objets par dominateur** . ![Repli d’objets dans leurs dominateurs](../profiling/media/js_mem_fold_objects.png "JS_Mem_Fold_Objects")  
   
  Pour plus d'informations sur les dominateurs, consultez [Visualiser les détails de l'instantané](#SnapshotDetails).  
   
@@ -334,7 +317,7 @@ L'analyseur de mémoire JavaScript est disponible dans Visual Studio pour vous a
 > [!NOTE]
 >  Les références circulaires sont indiquées par un astérisque (*) et une info-bulle, et ne peuvent pas être développées. Dans le cas contraire, cela vous empêcherez de parcourir l'arborescence et d'identifier les objets qui retiennent de la mémoire.  
   
- Si vous souhaitez obtenir une aide supplémentaire pour identifier les objets équivalents, choisissez **Afficher les ID d’objet** dans la liste des paramètres ![Liste déroulante des paramètres dans l’analyseur de mémoire](~/profiling/media/js_mem_settings.png "JS_Mem_Settings") située dans l’angle supérieur droit du volet supérieur. Cette option affiche les ID d'objet en regard des noms d'objet dans la liste **Identificateur(s)** (les ID apparaissent dans toutes les vues, pas seulement dans la liste des références d'objet). Les objets qui possèdent le même ID sont des références partagées.  
+ Si vous souhaitez obtenir une aide supplémentaire pour identifier les objets équivalents, choisissez **Afficher les ID d’objet** dans la liste des paramètres ![Liste déroulante des paramètres dans l’analyseur de mémoire](../profiling/media/js_mem_settings.png "JS_Mem_Settings") située dans l’angle supérieur droit du volet supérieur. Cette option affiche les ID d'objet en regard des noms d'objet dans la liste **Identificateur(s)** (les ID apparaissent dans toutes les vues, pas seulement dans la liste des références d'objet). Les objets qui possèdent le même ID sont des références partagées.  
   
  L'illustration suivante montre la liste des références d'objet pour un élément sélectionné avec des ID affichés.  
   
@@ -343,7 +326,7 @@ L'analyseur de mémoire JavaScript est disponible dans Visual Studio pour vous a
 ##  <a name="BuiltInValues"></a> Afficher les objets intégrés  
  Par défaut, les vues Dominators et Types affichent uniquement les objets que vous créez dans votre application. Cela vous aide à exclure les informations superflues et à isoler les problèmes liés à l'application. Cependant, il peut parfois être utile d'afficher tous les objets générés par le runtime JavaScript pour votre application.  
   
- Pour afficher ces objets, choisissez **Afficher les éléments intégrés** dans la liste des paramètres ![Liste déroulante des paramètres dans l’analyseur de mémoire](~/profiling/media/js_mem_settings.png "JS_Mem_Settings") située dans l’angle supérieur droit du volet.  
+ Pour afficher ces objets, choisissez **Afficher les éléments intégrés** dans la liste des paramètres ![Liste déroulante des paramètres dans l’analyseur de mémoire](../profiling/media/js_mem_settings.png "JS_Mem_Settings") située dans l’angle supérieur droit du volet.  
   
 ##  <a name="Save"></a> Enregistrer les fichiers de diagnostic de session  
  Les résumés d'instantanés de diagnostic et les vues de détails qui leur sont associées sont enregistrés en tant que fichiers .diagsession. L'**Explorateur de solutions** affiche les sessions de diagnostic précédentes dans le dossier Sessions de diagnostic. Dans l' **Explorateur de solutions**, vous pouvez ouvrir les sessions précédentes, ou supprimer ou renommer des fichiers.  
@@ -407,7 +390,7 @@ if (performance && performance.mark) {
   
 -   Examinez la dernière partie de [cette vidéo](http://channel9.msdn.com/Events/Build/2013/3-316) dans la conférence Build 2013 sur l'analyseur de mémoire JavaScript.  
   
--   Consultez [Gestion de la mémoire dans les applications du Windows Store](http://msdn.microsoft.com/magazine/jj651575.aspx).  
+-   Lisez [Gestion de la mémoire dans les applications UWP](http://msdn.microsoft.com/magazine/jj651575.aspx).  
   
 -   Envisagez de modifier temporairement le code pour isoler les problèmes. Vous pouvez, par exemple, décider d'effectuer les opérations suivantes :  
   

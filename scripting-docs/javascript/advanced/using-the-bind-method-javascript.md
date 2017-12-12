@@ -1,35 +1,38 @@
 ---
-title: "Utilisation de la m&#233;thode Bind (JavaScript) | Microsoft Docs"
-ms.custom: ""
-ms.date: "01/18/2017"
-ms.prod: "windows-client-threshold"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "devlang-javascript"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-dev_langs: 
-  - "JavaScript"
-  - "TypeScript"
-  - "DHTML"
-helpviewer_keywords: 
-  - "bind (méthode) (JavaScript)"
-  - "cet objet (JavaScript)"
+title: "Utilisation de la méthode Bind (JavaScript) | Microsoft Docs"
+ms.custom: 
+ms.date: 01/18/2017
+ms.prod: windows-client-threshold
+ms.reviewer: 
+ms.suite: 
+ms.technology: devlang-javascript
+ms.tgt_pltfrm: 
+ms.topic: article
+dev_langs:
+- JavaScript
+- TypeScript
+- DHTML
+helpviewer_keywords:
+- bind method [JavaScript]
+- this object [JavaScript]
 ms.assetid: f608f95b-3b9d-437a-a67a-5a4ef8f6c07f
-caps.latest.revision: 5
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 5
+caps.latest.revision: "5"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: 8c49f6e8c5606845f41cc947029ac9405f97665f
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.translationtype: HT
+ms.contentlocale: fr-FR
+ms.lasthandoff: 10/27/2017
 ---
-# Utilisation de la m&#233;thode Bind (JavaScript)
-La méthode JavaScript `bind` a plusieurs utilisations.  En général, elle est utilisée pour conserver le contexte d'exécution d'une fonction qui s'exécute dans un autre contexte.  `bind` crée une fonction qui a le même corps que la fonction d'origine.  Le premier argument passé à `bind` spécifie la valeur du mot clé `this` dans la fonction liée.  Vous pouvez également transmettre des arguments facultatifs supplémentaires à `bind`.  Pour des exemples d'autres utilisations, consultez [bind, méthode \(Function\)](../../javascript/reference/bind-method-function-javascript.md).  Pour obtenir un exemple de l'utilisation de `bind` pour appliquer ces fonctions partiellement, consultez [Modèles et conseils de programmation asynchrone dans Hilo JavaScript \(Windows Store\)](http://msdn.microsoft.com/library/windows/apps/jj649740.aspx).  
+# <a name="using-the-bind-method-javascript"></a>Utilisation de la méthode Bind (JavaScript)
+La méthode JavaScript `bind` a plusieurs utilisations. En général, elle est utilisée pour conserver le contexte d'exécution d'une fonction qui s'exécute dans un autre contexte. `bind` crée une fonction qui a le même corps que la fonction d'origine. Le premier argument passé à `bind` spécifie la valeur du mot clé `this` dans la fonction liée. Vous pouvez également transmettre des arguments facultatifs supplémentaires à `bind`. Pour obtenir des exemples d’autres utilisations, consultez la [bind, méthode (Fonction)](../../javascript/reference/bind-method-function-javascript.md). Pour obtenir un exemple de l’utilisation de `bind` pour appliquer ces fonctions partiellement, consultez [Modèles et conseils de programmation asynchrone dans Hilo JavaScript (Windows Store)](http://msdn.microsoft.com/library/windows/apps/jj649740.aspx).  
   
-## Conserver le contexte d'exécution à l'aide de liaison  
- La fonction `bind` est souvent utilisée lors de l'ajout d'écouteurs d'événements.  Dans l'exemple de code suivant, `bind` permet de conserver le contexte de l'objet actuel \(`DataObject`\).  L'objet de données est passé à `bind` à l'aide du mot clé `this`, qui permet d'accéder aux propriétés de l'objet de données et fonctionne lorsque le gestionnaire d'événements \(`dataReadyHandler`\) s'exécute.  Pour illustrer le mode de fonctionnement de `bind`, ce code crée un événement personnalisé.  
+## <a name="preserving-the-execution-context-using-bind"></a>Conserver le contexte d'exécution à l'aide de liaison  
+ La fonction `bind` est souvent utilisée lors de l'ajout de détecteurs d'événements. Dans l'exemple de code suivant, `bind` permet de conserver le contexte de l'objet actuel (`DataObject`). L'objet de données est passé à `bind` à l'aide du mot clé `this`, qui permet d'accéder aux propriétés de l'objet de données et fonctionne lorsque le gestionnaire d'événements (`dataReadyHandler`) s'exécute. Pour illustrer le mode de fonctionnement de `bind`, ce code crée un événement personnalisé.  
   
-```javascript  
+```JavaScript  
 var data;  
   
 var dataReadyEvent = document.createEvent("Event");  
@@ -67,7 +70,7 @@ var dataObj = new DataObject();
   
 ```  
   
- Si vous commentez la ligne de code qui utilise `bind`, annulez les marques de commentaire de la ligne de code qui appelle `addEventListener` sans `bind`, puis réexécutez le code, `dataReadyHandler` ne fonctionnera pas.  Par exemple, dans `dataReadyHander`, `this.name` n'est pas défini, et `this.data()` génère une erreur car l'objet `this` ne fait plus référence à l'objet de données.  
+ Si vous commentez la ligne de code qui utilise `bind`, annulez les marques de commentaire de la ligne de code qui appelle `addEventListener` sans `bind`, puis réexécutez le code, `dataReadyHandler` ne fonctionnera pas. Par exemple, dans `dataReadyHander`, `this.name` n'est pas défini, et `this.data()` génère une erreur car l'objet `this` ne fait plus référence à l'objet de données.  
   
-## Voir aussi  
- [bind, méthode \(Function\)](../../javascript/reference/bind-method-function-javascript.md)
+## <a name="see-also"></a>Voir aussi  
+ [Méthode bind (Function)](../../javascript/reference/bind-method-function-javascript.md)

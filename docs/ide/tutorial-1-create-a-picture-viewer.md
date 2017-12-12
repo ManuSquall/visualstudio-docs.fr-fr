@@ -4,35 +4,19 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-general
+ms.technology: vs-acquisition
 ms.tgt_pltfrm: 
 ms.topic: article
 ms.assetid: 3071d6df-2b2f-4e95-ab68-bef727323136
-caps.latest.revision: 19
-author: kempb
-ms.author: kempb
+caps.latest.revision: "19"
+author: TerryGLee
+ms.author: tglee
 manager: ghogen
-translation.priority.ht:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 5ea9179ad37514ffad4876177b05150eecc22def
-ms.openlocfilehash: 3ebe300aa4e2a7314b55f8418bcfa0ad9fafdc59
-ms.contentlocale: fr-fr
-ms.lasthandoff: 05/24/2017
-
+ms.openlocfilehash: 73c9289d95c7df352819546eab6d95084576215c
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: HT
+ms.contentlocale: fr-FR
+ms.lasthandoff: 10/31/2017
 ---
 # <a name="tutorial-1-create-a-picture-viewer"></a>Didacticiel 1 : créer une visionneuse d'images
 Dans ce didacticiel, vous générez un programme qui charge une image à partir d'un fichier et l'affiche dans une fenêtre. Vous apprenez à faire glisser des contrôles (par exemple, des boutons et des zones d'image) sur votre formulaire, définir leurs propriétés et utiliser des conteneurs pour redimensionner facilement le formulaire. Vous commencez également à écrire du code. Vous apprenez à :  
@@ -65,7 +49,7 @@ Image créée dans ce didacticiel
 >   
 >  Pour consulter le code pour Visual Basic, choisissez l’onglet **VB** en haut des blocs de code. Pour visualiser le code pour Visual C#, choisissez l’onglet **C#**. Si vous êtes intéressé par Visual C++, consultez [Bien démarrer](../ide/getting-started-with-cpp-in-visual-studio.md) et [Didacticiel du langage C++](http://www.cplusplus.com/doc/tutorial/).  
 >   
->  Si vous souhaitez savoir comment écrire des applications Visual C# ou Visual Basic pour le Windows Store, consultez [Créer votre première application du Windows Store en C# ou Visual Basic](http://msdn.microsoft.com/library/windows/apps/hh974581.aspx). Pour plus d’informations sur la création d’applications JavaScript pour le Windows Store, consultez [Créer votre première application du Windows Store en JavaScript](http://msdn.microsoft.com/library/windows/apps/br211385.aspx).  
+>  Si vous souhaitez apprendre à développer des applications UWP Visual C# ou Visual Basic, consultez [Créer des applications UWP](https://developer.microsoft.com/windows/apps).
   
 ## <a name="related-topics"></a>Rubriques connexes  
   
@@ -77,7 +61,7 @@ Image créée dans ce didacticiel
 |[Étape 4 : composer votre formulaire avec un contrôle TableLayoutPanel](../ide/step-4-lay-out-your-form-with-a-tablelayoutpanel-control.md)|Ajoutez un contrôle `TableLayoutPanel` à votre formulaire.|  
 |[Étape 5 : ajouter des contrôles à votre formulaire](../ide/step-5-add-controls-to-your-form.md)|Ajoutez des contrôles à votre formulaire (notamment des contrôles `PictureBox` et `CheckBox`). Ajoutez des boutons à votre formulaire.|  
 |[Étape 6 : affecter un nom à vos contrôles bouton](../ide/step-6-name-your-button-controls.md)|Renommez vos boutons en leur donnant des noms plus explicites.|  
-|[Étape 7 : ajouter des composants de dialogue à votre formulaire](../ide/step-7-add-dialog-components-to-your-form.md)|Ajoutez un composant **OpenFileDialog** et un composant **ColorDialog** à votre formulaire.|  
+|[Étape 7 : Ajouter des composants de boîte de dialogue à votre formulaire](../ide/step-7-add-dialog-components-to-your-form.md)|Ajoutez un composant **OpenFileDialog** et un composant **ColorDialog** à votre formulaire.|  
 |[Étape 8 : écrire du code pour le gestionnaire d’événements du bouton Afficher une image](../ide/step-8-write-code-for-the-show-a-picture-button-event-handler.md)|Écrivez du code à l'aide de l'outil IntelliSense.|  
 |[Étape 9 : examiner, commenter et tester votre code](../ide/step-9-review-comment-and-test-your-code.md)|Vérifiez et testez votre code. Ajoutez autant de commentaires que nécessaire.|  
 |[Étape 10 : écrire du code pour les boutons supplémentaires et une case à cocher](../ide/step-10-write-code-for-additional-buttons-and-a-check-box.md)|Écrivez du code à l'aide d'IntelliSense pour faire fonctionner d'autres boutons et une case à cocher.|  

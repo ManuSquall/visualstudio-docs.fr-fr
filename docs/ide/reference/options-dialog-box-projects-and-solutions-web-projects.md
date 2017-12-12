@@ -1,28 +1,24 @@
 ---
 title: "Boîte de dialogue Options, Projets et solutions, Projets web | Microsoft Docs"
 ms.custom: 
-ms.date: 7/14/2017
+ms.date: 07/14/2017
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-general
+ms.technology: vs-ide-general
 ms.tgt_pltfrm: 
 ms.topic: article
-f1_keywords:
-- VS.ToolsOptionsPages.Projects.WebProjects
+f1_keywords: VS.ToolsOptionsPages.Projects.WebProjects
 ms.assetid: ea813046-1ae6-4c9f-9784-dc41494101b9
-caps.latest.revision: 10
+caps.latest.revision: "10"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
+ms.openlocfilehash: 9ab80c499a95f8fd1dee764edea9f971d9429688
+ms.sourcegitcommit: c0422a3d594ea5ae8fc03f1aee684b04f417522e
 ms.translationtype: HT
-ms.sourcegitcommit: e48ebcafaca37505dbcc92bce682d0c6169004e1
-ms.openlocfilehash: cebc1598001459d6ab1c920fa390273242e893e0
-ms.contentlocale: fr-fr
-ms.lasthandoff: 07/26/2017
-
+ms.contentlocale: fr-FR
+ms.lasthandoff: 11/02/2017
 ---
-
 # <a name="options-dialog-box-projects-and-solutions-web-projects"></a>Boîte de dialogue Options, Projets et solutions, Projets web
 
 Définit le serveur web à utiliser pour le développement de projets web dans [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]. Pour accéder à ces options, sélectionnez **Outils > Options**, développez **Projets et solutions** et sélectionnez **Projets web**.
@@ -41,5 +37,5 @@ Sélectionnez cette option pour utiliser IIS Express au lieu du serveur Visual S
 Si cette option est activée, vous serez averti si vous tentez d’exécuter votre application web alors que des erreurs de compilation se sont produites.
 
 ## <a name="see-also"></a>Voir aussi  
-- [Options (boîte de dialogue), Projets et solutions](projects-and-solutions-options-dialog-box.md)
-- [Options (boîte de dialogue), Projets et solutions, Générer et exécuter](options-dialog-box-projects-and-solutions-web-projects.md)
+[Boîte de dialogue Options, Projets et solutions](projects-and-solutions-options-dialog-box.md)  
+[Options (boîte de dialogue), Projets et solutions, Générer et exécuter](options-dialog-box-projects-and-solutions-web-projects.md)

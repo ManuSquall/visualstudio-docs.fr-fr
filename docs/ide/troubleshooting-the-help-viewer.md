@@ -1,52 +1,43 @@
 ---
-title: "R&#233;solution des probl&#232;mes li&#233;s &#224; la Visionneuse d&#39;aide | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-general"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-helpviewer_keywords: 
-  - "Help Viewer 2.0, dépanner"
-  - "résolution des problèmes (Help Viewer 2.0)"
-ms.assetid: 461a4553-064a-4142-a2d2-058658b9ba12
-caps.latest.revision: 13
-author: "kempb"
-ms.author: "kempb"
-manager: "ghogen"
-caps.handback.revision: 13
+redirect_url: /visualstudio/ide/microsoft-help-viewer
+ms.openlocfilehash: c0b1a114eb157860dd70873929727cc56f1d6514
+ms.sourcegitcommit: ec1c7e7e3349d2f3a4dc027e7cfca840c029367d
+ms.translationtype: HT
+ms.contentlocale: fr-FR
+ms.lasthandoff: 11/07/2017
 ---
-# R&#233;solution des probl&#232;mes li&#233;s &#224; la Visionneuse d&#39;aide
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
-
-Cette rubrique traite des problèmes que vous pouvez rencontrer avec la visionneuse d'aide \(Help Viewer\).  
+title: "Résolution des problèmes liés à Help Viewer | Microsoft Docs" ms.custom: "" ms.date: "11/04/2016" ms.reviewer: "" ms.suite: "" ms.technology: 
+  - "vs-help-viewer" ms.tgt_pltfrm: "" ms.topic: "article" helpviewer_keywords: 
+  - "résolution des problèmes [Help Viewer]"
+  - "Help Viewer, résolution des problèmes" ms.assetid: 461a4553-064a-4142-a2d2-058658b9ba12 caps.latest.revision: 13 author: "gewarren" ms.author: "gewarren" manager: ghogen
+---
+# <a name="troubleshooting-the-help-viewer"></a>Résolution des problèmes liés à Help Viewer
+Cette rubrique traite des problèmes que vous pouvez rencontrer avec Help Viewer.  
   
-## L'audio ne fonctionne pas.  
- La visionneuse d'aide \(Help Viewer\) ne comporte pas de lecteur audio.  Si vous téléchargez un contenu avec de l'audio et que rie ne se passe quand **Lecture** est sélectionné, installez un lecteur audio.  
+## <a name="audio-doesnt-work"></a>L’audio ne fonctionne pas.  
+ Help Viewer n’a pas de lecteur audio intégré. Si vous avez téléchargé du contenu audio et que rien ne se passe lorsque vous cliquez sur **Lire**, installez un lecteur audio.  
   
-## Le recherche ne fonctionne pas dans Windows Server 2008, Windows Server 2008 avec SP1 ou Windows Server 2008 R2.  
- Les fonctionnalités de recherche et de filtrage de la visionneuse d'aide \(Help Viewer\) requièrent que le service de recherche Windows soit installé et activé.  Par défaut, ce service est désactivé dans Windows Server 2008, Windows Server 2008 avec Service Pack 1 \(SP1\) et Windows Server 2008 R2.  
+## <a name="search-doesnt-work-in-windows-server-2008-windows-server-2008-with-sp1-or-windows-server-2008-r2"></a>La recherche ne fonctionne pas dans Windows Server 2008, Windows Server 2008 avec SP1 et Windows Server 2008 R2.  
+ Les fonctionnalités de recherche et de filtre de Help Viewer nécessitent l’installation et l’activation du service Windows Search. Par défaut, ce service est désactivé dans Windows Server 2008, Windows Server 2008 avec Service Pack 1 (SP1) et Windows Server 2008 R2.  
   
-#### Pour activer le service de recherche Windows  
+#### <a name="to-activate-windows-search-service"></a>Pour activer le service Windows Search  
   
 1.  Démarrez le Gestionnaire de serveur.  
   
-2.  Dans le volet de navigation gauche, sélectionnez **Rôles**.  
+2.  Dans le volet de navigation de gauche, choisissez **Rôles**.  
   
 3.  Dans le volet Résumé des rôles, choisissez **Ajouter le rôle**.  
   
-4.  Sélectionnez le rôle Services de fichiers, puis sélectionnez le bouton **Suivant**.  
+4.  Choisissez le rôle Services de fichiers, puis cliquez sur le bouton **Suivant**.  
   
-5.  Sélectionnez le service de rôle de recherche Windows.  
+5.  Choisissez le service de rôle Windows Search.  
   
-## Ressources supplémentaires  
- Obtenez plus d'informations et fournissez des commentaires sur la visionneuse d'aide à l'aide des ressources suivantes :  
+## <a name="additional-resources"></a>Ressources supplémentaires  
+ Vous pouvez obtenir plus d’informations sur Help Viewer et envoyer vos commentaires à son sujet en utilisant les ressources suivantes :  
   
--   Pour fournir des commentaires, consultez [Microsoft Connect](http://go.microsoft.com/fwlink/?linkid=243983) sur le site Web Microsoft ou envoyez un courrier électronique à [hlpfdbk@microsoft.com](mailto:hlpfdbk@microsoft.com).  
+-   Pour envoyer vos commentaires, accédez à [Microsoft Connect](http://go.microsoft.com/fwlink/?linkid=243983) sur le site web Microsoft ou envoyez un e-mail à [hlpfdbk@microsoft.com](mailto:hlpfdbk@microsoft.com).  
   
--   Pour plus d'informations, consultez le forum [Developer Documentation and Help System \(Documentation et système d'aide du développeur\)](http://go.microsoft.com/fwlink/?LinkId=232741) et le blog [The Help Guy](http://go.microsoft.com/fwlink/?LinkId=232743).  
+-   Pour plus d’informations, consultez le forum [Developer Documentation and Help System](http://go.microsoft.com/fwlink/?LinkId=232741).  
   
-## Voir aussi  
- [Guide de l'administrateur de la Visionneuse d'aide 2.1](http://go.microsoft.com/fwlink/?LinkId=243985)
+## <a name="see-also"></a>Voir aussi
+[Guide de l’administrateur Help Viewer](http://go.microsoft.com/fwlink/?LinkId=243985)

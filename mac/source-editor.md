@@ -1,19 +1,17 @@
 ---
-title: "Éditeur de code source"
+title: "Éditeur de code source | Microsoft Docs"
 description: "Utilisation de l’éditeur de code source dans Visual Studio pour Mac"
 author: asb3993
 ms.author: amburns
 ms.date: 04/14/2017
 ms.topic: article
 ms.assetid: A018A314-C1C4-4F36-BCB6-2D434208FCFE
+ms.openlocfilehash: f52e60c0ade8cebc78b3408b4ef81ef85fcd767b
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
 ms.translationtype: HT
-ms.sourcegitcommit: e2b7ff9126e1cc38ac2e58d6be339b656a024e7f
-ms.openlocfilehash: aa7635cd2593b871128c0588110f0bfdad5a82ec
-ms.contentlocale: fr-fr
-ms.lasthandoff: 08/11/2017
-
+ms.contentlocale: fr-FR
+ms.lasthandoff: 10/31/2017
 ---
-
 # <a name="source-editor"></a>Éditeur de code source
 
 Un éditeur de code source fiable est essentiel pour l’écriture d’un code succinct et efficace. Visual Studio pour Mac fournit un éditeur de code source sophistiqué qui est au centre de vos interactions avec l’IDE. L’éditeur de code source offre les fonctionnalités dont vous avez besoin pour effectuer votre travail avec facilité, depuis les fonctionnalités de base comme la coloration syntaxique, les extraits de code et le pliage de code, jusqu’aux avantages de son intégration au compilateur Roslyn, comme la complétion du code IntelliSense entièrement fonctionnelle.
@@ -84,7 +82,6 @@ Quand cette option est activée, un développeur peut placer le curseur de la so
 La couleur de la mise en évidence est également pratique pour indiquer que quelque chose fait l’objet d’une affectation ou qu’il est référencé. Si quelque chose fait l’objet d’une affectation, il est mis en évidence en rouge ; s’il est référencé, il est mis en évidence en bleu :
 
 ![](media/source-editor-image7.png)
-
 
 
 

@@ -1,11 +1,10 @@
 ---
-title: "Analyser l’utilisation de l’énergie dans les applications du Windows Store | Microsoft Docs"
+title: "Analyser la consommation d’énergie dans les applications UWP | Microsoft Docs"
 ms.custom: 
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-debug
+ms.technology: vs-ide-debug
 ms.tgt_pltfrm: 
 ms.topic: article
 dev_langs:
@@ -14,42 +13,26 @@ dev_langs:
 - FSharp
 - C++
 ms.assetid: 96d06843-b97e-45a8-8126-07478a40bfc4
-caps.latest.revision: 34
+caps.latest.revision: "34"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-translation.priority.ht:
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- ru-ru
-- zh-cn
-- zh-tw
-translation.priority.mt:
-- cs-cz
-- pl-pl
-- pt-br
-- tr-tr
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 669bc5894727c207691a7e37937f432d98fee8b1
-ms.openlocfilehash: 3a78a0d9afc766d316957b27d70269518f2d9d33
-ms.contentlocale: fr-fr
-ms.lasthandoff: 06/30/2017
-
+ms.openlocfilehash: bcdebabac1197317b5e282be8bd648168f201673
+ms.sourcegitcommit: 26419ab0cccdc30d279c32d6a841758cfa903806
+ms.translationtype: HT
+ms.contentlocale: fr-FR
+ms.lasthandoff: 11/11/2017
 ---
-# <a name="analyze-energy-use-in-store-apps"></a>Analyser l'utilisation de l'énergie dans les applications du Windows Store
-Le profileur **Consommation d'énergie** de Visual Studio vous aide à analyser la consommation de puissance et d'énergie des Applications Windows Store sur les tablettes de faible puissance qui fonctionnent constamment ou une partie du temps sur batterie. Sur un périphérique alimenté par batterie, une application trop gourmande en énergie peut entraîner le mécontentement du client, voire, éventuellement, sa désinstallation. L’optimisation de l’utilisation d’énergie peut augmenter la popularité et l’utilisation de votre application par les clients.  
+# <a name="analyze-energy-use-in-uwp-apps"></a>Analyser la consommation d’énergie dans les applications UWP
+Le profileur **Consommation d’énergie** de Visual Studio vous permet d’analyser la consommation d’électricité et de batterie des applications UWP sur les tablettes de faible puissance qui fonctionnent tout ou partie du temps sur batterie. Sur un appareil alimenté par batterie, une application trop gourmande en énergie peut entraîner le mécontentement du client, voire, éventuellement, sa désinstallation. L’optimisation de l’utilisation d’énergie peut augmenter la popularité et l’utilisation de votre application par les clients.  
   
 ##  <a name="BKMK_What_the_Energy_Consumption_tool_is__how_it_works__and_what_it_measures"></a> Présentation du profileur Consommation d'énergie, de son fonctionnement et de ce qu'il mesure  
- Le profileur de consommation d'énergie capture les activités de l'affichage, de l'UC, et des connexions réseau d'un périphérique pendant une session de profilage. Il génère alors des estimations de la puissance utilisée pour ces activités et de l'énergie totale nécessaire à la session de profilage.  
+ Le profileur de consommation d'énergie capture les activités de l'affichage, de l'UC, et des connexions réseau d'un appareil pendant une session de profilage. Il génère alors des estimations de la puissance utilisée pour ces activités et de l'énergie totale nécessaire à la session de profilage.  
   
 > [!NOTE]
->  Le profileur d'énergie estime l'utilisation de puissance et d'énergie à l'aide d'un modèle de logiciel de matériel de périphérique standard de référence, représentatif des tablettes de faible puissance sur lesquelles votre application est susceptible de s'exécuter. Pour obtenir les estimations les plus justes, nous vous recommandons de collecter les données de profil sur une tablette de faible puissance.  
+>  Le profileur d'énergie estime l'utilisation de puissance et d'énergie à l'aide d'un modèle de logiciel de matériel d’appareil standard de référence, représentatif des tablettes de faible puissance sur lesquelles votre application est susceptible de s'exécuter. Pour obtenir les estimations les plus justes, nous vous recommandons de collecter les données de profil sur une tablette de faible puissance.  
 >   
->  Bien que le modèle fournit des estimations correctes pour un grand nombre de périphériques de faible puissance, les valeurs réelles du périphérique profilé seront probablement différentes. Utilisez ces valeurs pour découvrir les activités d'affichage, d'UC et de réseau très coûteuses en énergie par rapport à d'autres utilisations de ressources et que vous pourriez utiliser à des fins d'optimisation.  
+>  Bien que le modèle fournit des estimations correctes pour un grand nombre d’appareils de faible puissance, les valeurs réelles de l’appareil profilé seront probablement différentes. Utilisez ces valeurs pour découvrir les activités d'affichage, d'UC et de réseau très coûteuses en énergie par rapport à d'autres utilisations de ressources et que vous pourriez utiliser à des fins d'optimisation.  
   
  Le profileur de consommation d'énergie utilise les définitions de *puissance* et d' *énergie*suivantes :  
   
@@ -95,11 +78,11 @@ if (performance && performance.mark) {
  *markDescription* est une chaîne contenant le message à afficher dans l'info-bulle de l'utilisateur.  
   
 ##  <a name="BKMK_Configure_your_environment_for_profiling"></a> Configurer votre environnement pour le profilage  
- Pour obtenir des estimations correctes, effectuez le profilage de l’utilisation d’énergie de l’application sur un appareil de faible puissance alimenté par batterie. Comme Visual Studio ne s’exécute pas sur la plupart de ces appareils, vous devez connecter votre ordinateur Visual Studio à l’appareil à l’aide des Outils de contrôle à distance Visual Studio. Pour se connecter à un appareil distant, vous devez configurer le projet Visual Studio et l'appareil distant. Pour plus d’informations, consultez [Exécuter des applications du Windows Store sur un ordinateur distant](../debugger/run-windows-store-apps-on-a-remote-machine.md).  
+ Pour obtenir des estimations correctes, effectuez le profilage de l’utilisation d’énergie de l’application sur un appareil de faible puissance alimenté par batterie. Comme Visual Studio ne s’exécute pas sur la plupart de ces appareils, vous devez connecter votre ordinateur Visual Studio à l’appareil à l’aide des Outils de contrôle à distance Visual Studio. Pour se connecter à un appareil distant, vous devez configurer le projet Visual Studio et l'appareil distant. Pour plus d’informations, consultez [Exécuter des applications UWP sur un ordinateur distant](../debugger/run-windows-store-apps-on-a-remote-machine.md).  
   
 > [!TIP]
->  -   Nous ne recommandons pas le profilage d’énergie sur le simulateur Windows Store ou sur l’ordinateur Visual Studio. Les données collectées lors d'un profilage sur le périphérique réel sont beaucoup plus réalistes.  
-> -   Effectuez le profilage sur le périphérique cible alors qu'il est alimenté par batterie.  
+>  -   Nous ne recommandons pas le profilage de l’énergie sur le simulateur UWP ou sur l’ordinateur Visual Studio. Les données collectées lors d'un profilage sur l’appareil réel sont beaucoup plus réalistes.  
+> -   Effectuez le profilage sur l’appareil cible alors qu'il est alimenté par batterie.  
 > -   Fermez les applications pouvant utiliser les mêmes ressources (réseau, UC, ou affichage).  
   
 ##  <a name="BKMK_Collect_energy_profile_data_for_your_app"></a> Collecter les données de profil d'énergie de votre application  
@@ -167,9 +150,10 @@ if (performance && performance.mark) {
   
 -   Les sections **Gestion de l’état et des coûts de connexion** pour [C#/VB/C++ et XAML](http://msdn.microsoft.com/en-us/0ee0b706-8432-4d49-9801-306ed90764e1) et [JavaScript et HTML](http://msdn.microsoft.com/en-us/372afa6a-1c7c-4657-967d-03a77cd8e933) dans le Centre de développement Windows décrivent les API Windows qui fournissent les informations de connexion réseau que votre application peut utiliser pour réduire le coût du trafic réseau.  
   
-     Le simulateur de Visual Studio pour les applications Windows Store vous permet de simuler les propriétés de connexion de données des API d'informations réseau. Consultez [Run Windows Store apps in the simulator](../debugger/run-windows-store-apps-in-the-simulator.md).  
+     Le simulateur Visual Studio pour les applications UWP vous permet de simuler les propriétés de connexion aux données des API d’informations réseau. Consultez [Exécuter des applications UWP dans le simulateur](../debugger/run-windows-store-apps-in-the-simulator.md)  
   
 -   Les outils **Minutage de fonction JavaScript** et **Utilisation de l'UC** peuvent vous aider à réduire la charge processeur quand elle est due à des fonctions inefficaces. Voir [Analyser l’utilisation de l’UC](../profiling/analyze-cpu-usage-in-a-windows-universal-app.md).
 
 ## <a name="see-also"></a>Voir aussi
- [Profilage dans Visual Studio](../profiling/index.md) [Visite guidée des fonctionnalités de profilage](../profiling/profiling-feature-tour.md)
+ [Profilage dans Visual Studio](../profiling/index.md)  
+ [Visite guidée des fonctionnalités de profilage](../profiling/profiling-feature-tour.md)

@@ -1,27 +1,27 @@
 ---
-title: "Signaler un problème"
+title: "Signaler un problème | Microsoft Docs"
 author: asb3993
 ms.author: amburns
 ms.date: 04/14/2017
 ms.topic: article
 ms.assetid: 1C7AC52E-754E-473F-A5B5-00C3A40DAACD
+ms.openlocfilehash: f391ef0b21ba6d500e88908d806ea3958c771bed
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
 ms.translationtype: HT
-ms.sourcegitcommit: e2b7ff9126e1cc38ac2e58d6be339b656a024e7f
-ms.openlocfilehash: 41fd1949e7c3ea635b847c3e29648ed6e02a414e
-ms.contentlocale: fr-fr
-ms.lasthandoff: 08/11/2017
-
+ms.contentlocale: fr-FR
+ms.lasthandoff: 10/31/2017
 ---
-
 # <a name="how-to-report-a-problem-in-visual-studio-for-mac"></a>Guide pratique pour signaler un problème avec Visual Studio pour Mac
 
 Si vous rencontrez un problème avec Visual Studio pour Mac, nous aimerions en être informés pour pouvoir le diagnostiquer et le résoudre. 
 
 ## <a name="how-to-report-a-problem"></a>Comment signaler un problème
 
-Pour signaler un problème avec Visual Studio pour Mac, utilisez le lien **Signaler un problème** situé sur la page d’accueil :
+Pour signaler un problème avec Visual Studio pour Mac, sélectionnez **Aide > Signaler un problème** dans la barre de menus :
 
 ![Lien Signaler un problème](media/report-problem-image1.png)
+
+Vous pouvez également utiliser le lien **Signaler un problème** qui se trouve dans la page d’accueil.
 
 Ceci affiche la page web **Signaler un problème**. Vous pouvez utiliser cette page pour voir tous les problèmes existants, voter sur des problèmes similaires et soumettre des solutions aux problèmes signalés par d’autres personnes :
 

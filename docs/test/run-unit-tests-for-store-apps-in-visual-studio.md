@@ -1,38 +1,23 @@
 ---
-title: "Exécuter des tests unitaires pour les applications du Windows Store dans Visual Studio | Microsoft Docs"
+title: "Exécuter des tests unitaires pour les applications UWP dans Visual Studio | Microsoft Docs"
 ms.custom: 
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-general
+ms.technology: vs-ide-general
 ms.tgt_pltfrm: 
 ms.topic: article
 ms.assetid: 5a6f5b32-bfce-4a63-81e9-02d54c592539
-caps.latest.revision: 12
+caps.latest.revision: "12"
 ms.author: douge
 manager: douge
-translation.priority.ht:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
-translationtype: Human Translation
-ms.sourcegitcommit: 5db97d19b1b823388a465bba15d057b30ff0b3ce
-ms.openlocfilehash: 4ecdcce4d45b15e6574ca70044249e4d32776fdd
-ms.lasthandoff: 02/22/2017
-
+ms.openlocfilehash: cdb13478a7e403be916d7773dab6315429508e9c
+ms.sourcegitcommit: c0422a3d594ea5ae8fc03f1aee684b04f417522e
+ms.translationtype: HT
+ms.contentlocale: fr-FR
+ms.lasthandoff: 11/02/2017
 ---
-# <a name="run-unit-tests-for-store-apps-in-visual-studio"></a>Exécuter des tests unitaires pour les applications du Windows Store dans Visual Studio
+# <a name="run-unit-tests-for-uwp-apps-in-visual-studio"></a>Exécuter des tests unitaires pour les applications UWP dans Visual Studio
 Cette rubrique décrit comment exécuter des tests unitaires à l'aide de l'Explorateur de tests dans Microsoft Visual Studio.  
   
 > [!NOTE]
@@ -64,8 +49,8 @@ Cette rubrique décrit comment exécuter des tests unitaires à l'aide de l'Expl
   
  [Débogage de tests unitaires](#BKMK_Debugging_unit_tests)  
   
-##  <a name="BKMK_Unit_test_frameworks_and_test_projects"></a> Frameworks de tests unitaires et projets de test  
- Visual Studio Express pour les applications du Windows Store comprend les frameworks de tests unitaires Microsoft pour le code C++ natif et managé. L'Explorateur de tests peut exécuter des tests à partir de plusieurs projets de test dans une solution et à partir de classes de test qui font partie des projets de code de production. Les projets de test peuvent être n'importe quelle combinaison des frameworks de tests unitaires Visual C++ ou Visual C# et Visual Basic. Quand le code testé est écrit pour le .NET Framework, le projet de test peut être écrit dans n'importe quel langage du .NET Framework, quel que soit le langage du code cible. Les projets de code C/C++ natifs doivent être testés à l'aide d'un framework de tests unitaires C++.  
+##  <a name="BKMK_Unit_test_frameworks_and_test_projects"></a> Infrastructures de tests unitaires et projets de test  
+ Visual Studio Express pour les applications UWP comprend les frameworks de tests unitaires Microsoft pour le code C++ natif et managé. L'Explorateur de tests peut exécuter des tests à partir de plusieurs projets de test dans une solution et à partir de classes de test qui font partie des projets de code de production. Les projets de test peuvent être n'importe quelle combinaison des frameworks de tests unitaires Visual C++ ou Visual C# et Visual Basic. Quand le code testé est écrit pour le .NET Framework, le projet de test peut être écrit dans n'importe quel langage du .NET Framework, quel que soit le langage du code cible. Les projets de code C/C++ natifs doivent être testés à l'aide d'un framework de tests unitaires C++.  
   
 ##  <a name="BKMK_Running_tests_in_Test_Explorer"></a> Exécution des tests dans l’Explorateur de tests  
  Quand vous générez le projet de test, les tests s’affichent dans l’explorateur de tests. Si l’explorateur de tests n’est pas visible, sélectionnez **Test** dans le menu Visual Studio et choisissez **Fenêtres**, puis **Explorateur de tests**.  
@@ -119,7 +104,7 @@ Cette rubrique décrit comment exécuter des tests unitaires à l'aide de l'Expl
   
 |||  
 |-|-|  
-|![Bouton du groupe d’explorateur de tests](~/test/media/ute_groupby_btn.png "UTE_GroupBy_btn")|Pour regrouper vos tests d’après la durée nécessaire à leur exécution, ouvrez la liste **Grouper par** et choisissez **Durée**. Choisissez **Résultat du test** pour basculer vers le regroupement d’origine.|  
+|![Bouton du groupe d’explorateur de tests](../test/media/ute_groupby_btn.png "UTE_GroupBy_btn")|Pour regrouper vos tests d’après la durée nécessaire à leur exécution, ouvrez la liste **Grouper par** et choisissez **Durée**. Choisissez **Résultat du test** pour basculer vers le regroupement d’origine.|  
   
 ###  <a name="BKMK_Searching_and_filtering_the_test_list"></a> Recherche et filtrage de la liste de tests  
  Quand vous avez un grand nombre de tests, vous pouvez taper du texte dans la zone de recherche de l'Explorateur de tests pour filtrer la liste selon la chaîne spécifiée. Vous pouvez limiter votre filtre à certains types de chaînes en choisissant dans la liste des filtres avant d'entrer la chaîne de recherche.  
@@ -137,4 +122,3 @@ Cette rubrique décrit comment exécuter des tests unitaires à l'aide de l'Expl
 2.  Dans l’Explorateur de tests, sélectionnez les méthodes de test, puis choisissez **Déboguer les tests sélectionnés** dans le menu contextuel.  
   
  Pour plus d’informations sur le débogueur, consultez [Débogage dans Visual Studio](../debugger/debugging-in-visual-studio.md).
-

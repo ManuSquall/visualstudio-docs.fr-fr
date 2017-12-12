@@ -1,89 +1,90 @@
 ---
-title: "Lancer | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-debug"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+title: Launch | Microsoft Docs
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-debug
+ms.tgt_pltfrm: 
+ms.topic: article
 ms.assetid: f81bde5c-3394-4b79-a315-c2f6491689b3
-caps.latest.revision: 13
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 13
+caps.latest.revision: "13"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: 95bec41931dbde49b3de4c6ff5250df494646392
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: HT
+ms.contentlocale: fr-FR
+ms.lasthandoff: 10/31/2017
 ---
-# Lancer
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
-
-L'option **Launch** démarre le profileur à l'aide de la méthode d'échantillonnage et démarre également l'application spécifiée.  
+# <a name="launch"></a>Launch
+L’option **Launch** démarre le profileur avec la méthode d’échantillonnage et démarre également l’application spécifiée.  
   
- Pour utiliser l'option **Launch**, vous devez spécifier la méthode **Sample** dans l'option **Start**.  
+ Pour utiliser l’option **Launch**, vous devez spécifier la méthode **Sample** dans l’option **Start**.  
   
-## Syntaxe  
+## <a name="syntax"></a>Syntaxe  
   
 ```  
 VSPerfCmd.exe /Launch:AppName [Options]  
 ```  
   
-#### Paramètres  
+#### <a name="parameters"></a>Paramètres  
  `AppName`  
- Nom de l'application à lancer.  Les chemins d'accès complets et partiels du répertoire actif sont pris en charge.  
+ Nom de l’application à lancer. Les chemins complets et partiels depuis le répertoire actif sont pris en charge.  
   
-## Options valides  
- Les options VSPerfCmd suivantes peuvent être combinées avec l'option **Launch** sur une même ligne de commande.  
+## <a name="valid-options"></a>Options valides  
+ Les options de VSPerfCmd peuvent être combinées avec l’option **Launch** sur une même ligne de commande.  
   
  **Start:** `Method`  
  Initialise la session de profileur en ligne de commande et définit la méthode de profilage spécifiée.  
   
- **GlobalOn**et**GlobalOff**  
- Reprend \(**GlobalOn**\) ou interrompt \(**GlobalOff**\) le profilage, mais ne met pas fin à la session de profilage.  
+ **GlobalOn** et **GlobalOff**  
+ Reprend (**GlobalOn**) ou interrompt (**GlobalOff**) le profilage, mais ne met pas fin à la session de profilage.  
   
  **ProcessOn:** `PID` et **ProcessOff** :`PID`  
- Reprend \(**ProcessOn**\) ou interrompt \(**ProcessOff**\) le profilage pour le processus spécifié.  
+ Reprend (**ProcessOn**) ou interrompt (**ProcessOff**) le profilage pour le processus spécifié.  
   
  **TargetCLR**  
- Spécifie la version du .NET Framework Common Language Runtime \(CLR\) à profiler lorsque plusieurs versions sont chargées dans une session de profilage.  Par défaut, la première version chargée est profilée.  
+ Spécifie la version du CLR de .NET Framework à profiler quand plusieurs versions sont chargées dans une session de profilage. Par défaut, la première version chargée est profilée.  
   
-## Options exclusives  
- Les options suivantes peuvent uniquement être utilisées avec l'option **Launch**.  
+## <a name="exclusive-options"></a>Options exclusives  
+ Les options suivantes peut être utilisée seulement avec l’option **Launch**.  
   
  **Console**  
- Lance l'application en ligne de commande spécifiée dans une nouvelle fenêtre.  
+ Lance l’application en ligne de commande spécifiée dans une nouvelle fenêtre.  
   
  **Args:** `ArgList`  
- Spécifie la liste d'arguments à passer à l'application.  
+ Spécifie la liste des arguments à passer à l’application.  
   
  **LineOff**  
- Désactive la collecte des données de profilage au niveau ligne.  
+ Désactive la collecte des données de profilage au niveau des lignes.  
   
-## Options d'échantillonnage  
- L'une des options d'intervalle d'échantillonnage suivantes peut être spécifiée sur la ligne de commande **Launch**.  L'intervalle d'échantillonnage par défaut est de 10 000 000 cycles d'horloge du processeur.  
+## <a name="sampling-options"></a>Options d’échantillonnage  
+ Une des options d’intervalle d’échantillonnage suivantes peut être spécifiée sur la ligne de commande **Launch**. L’intervalle d’échantillonnage par défaut est de 10 000 000 de cycles d’horloge du processeur.  
   
- **Timer**\[**:**`Cycles`\]**PF**\[**:**`Events`\]**Sys**\[**:**`Events`\]**Counter**\[**:**`Name`,`Reload`,`FriendlyName`\]**GC**\[:**allocation**&#124;**lifetime**\]  
- Spécifie le nombre et le type d'intervalle d'échantillonnage.  
+ **Timer**[**:**`Cycles`]**PF**[**:**`Events`]**Sys**[**:**`Events`]**Counter**[**:**`Name`,`Reload`,`FriendlyName`]**GC**[:**allocation**&#124;**lifetime**]  
+ Spécifie la valeur et le type de l’intervalle d’échantillonnage.  
   
--   **Timer**\- Échantillonne tous les cycles d'horloge processeur non interrompus `Cycles`.  Si `Cycles` n'est pas spécifié, 10 000 000 cycles sont utilisés.  
+-   **Timer** : échantillonne tous les `Cycles` cycles d’horloge du processeur sans interruption. Si `Cycles` n’est pas spécifié, la valeur utilisée est de 10 000 000 cycles.  
   
--   **PF** \- Échantillonne chaque défaut de page `Events`.  Si `Events` n'est pas spécifié, 10 défauts de page.  
+-   **PF** : échantillonne tous les `Events` défauts de page. Si `Events` n’est pas spécifié, la valeur utilisée est de 10 défauts de page.  
   
--   **Sys** \- Échantillonne chaque appel `Events` au système d'exploitation.  Si `Events` n'est pas spécifié, 10 appels système sont utilisés.  
+-   **Sys** : échantillonne tous les `Events` appels au système d’exploitation. Si `Events` n’est pas spécifié, la valeur utilisée est de 10 appels système.  
   
--   **Counter** \- Échantillonne le nombre `Reload` du compteur de performance de l'UC spécifié par `Name`.  `FriendlyName` peut éventuellement spécifier une chaîne à utiliser comme en\-tête de colonne dans les rapports du profileur.  
+-   **Counter** : échantillonne tous les nombres de `Reload` du compteur de performance de l’UC spécifié par `Name`. En option, `FriendlyName` peut spécifier une chaîne à utiliser comme en-tête de colonne dans les rapports du profileur.  
   
--   **GC** \- Collecte les données de mémoire .NET.  Par défaut \(**allocation**\), les données sont collectées à chaque événement d'allocation de mémoire.  Lorsque le paramètre **lifetime** est spécifié, des données sont également collectées à chaque événement de garbage collection.  
+-   **GC** : collecte les données de mémoire .NET. Par défaut (**allocation**), les données sont collectées à chaque événement d’allocation de mémoire. Quand le paramètre **lifetime** est spécifié, les données sont également collectées à chaque événement de garbage collection.  
   
-## Exemple  
- Cet exemple présente l'utilisation de **Launch** pour démarrer une application.  
+## <a name="example"></a>Exemple  
+ Cet exemple montre l’utilisation de **Launch** pour démarrer une application.  
   
 ```  
 VSPerfCmd.exe /Start:Sample /Output:TestApp.exe.vsp  
 VSPerfCmd.exe /Launch:TestApp.exe  
 ```  
   
-## Voir aussi  
+## <a name="see-also"></a>Voir aussi  
  [VSPerfCmd](../profiling/vsperfcmd.md)   
  [Profilage d’applications autonomes](../profiling/command-line-profiling-of-stand-alone-applications.md)   
  [Profilage d’applications web ASP.NET](../profiling/command-line-profiling-of-aspnet-web-applications.md)   

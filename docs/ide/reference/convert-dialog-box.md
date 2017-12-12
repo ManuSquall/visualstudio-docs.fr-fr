@@ -1,59 +1,40 @@
 ---
-title: Convert Dialog Box | Microsoft Docs
+title: "Convertir, boîte de dialogue | Microsoft Docs"
 ms.custom: 
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-general
+ms.technology: vs-ide-general
 ms.tgt_pltfrm: 
 ms.topic: article
 f1_keywords:
 - jlca_Conversion_F1_3
 - JLCA_Conversion_F1
 - jlca_Conversion_F1
-helpviewer_keywords:
-- Convert dialog box
+helpviewer_keywords: Convert dialog box
 ms.assetid: 56f23ef7-17c4-4d76-9ead-982bbcd42061
-caps.latest.revision: 14
-author: kempb
-ms.author: kempb
+caps.latest.revision: "14"
+author: gewarren
+ms.author: gewarren
 manager: ghogen
-translation.priority.ht:
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- ru-ru
-- zh-cn
-- zh-tw
-translation.priority.mt:
-- cs-cz
-- pl-pl
-- pt-br
-- tr-tr
+ms.openlocfilehash: 9342a06550427162219bf84a59178783e26473d2
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
 ms.translationtype: HT
-ms.sourcegitcommit: cca2a707627c36221a654cf8a06730383492f371
-ms.openlocfilehash: 284db93d7f1b60474a94212bb64ff469fc42aa50
-ms.contentlocale: fr-fr
-ms.lasthandoff: 09/13/2017
-
+ms.contentlocale: fr-FR
+ms.lasthandoff: 10/31/2017
 ---
-# <a name="convert-dialog-box"></a>Convert Dialog Box
-The **Convert** dialog box allows you to select a conversion tool to create a new project from an old one, such as creating a [!INCLUDE[vbprvblong](../../ide/reference/includes/vbprvblong_md.md)] project from a Visual Basic 6 project. You can also use the [Visual Studio Project Converter](https://github.com/ssvaidya/VSProjectConverter) to upgrade projects created in previous versions of Visual Studio.   
+# <a name="convert-dialog-box"></a>Convertir, boîte de dialogue
+La boîte de dialogue **Convertir** vous permet de sélectionner un outil de conversion pour créer un projet à partir d’un ancien projet, par exemple créer un projet [!INCLUDE[vbprvblong](../../ide/reference/includes/vbprvblong_md.md)] à partir d’un projet Visual Basic 6. Vous pouvez également utiliser le [convertisseur de projet Visual Studio](https://github.com/ssvaidya/VSProjectConverter) pour mettre à niveau des projets créés dans des versions précédentes de Visual Studio.   
   
-## <a name="opening-the-convert-dialog-box"></a>Opening the Convert Dialog Box  
+## <a name="opening-the-convert-dialog-box"></a>Ouverture de la boîte de dialogue Convertir  
   
-#### <a name="to-access-the-convert-dialog-box"></a>To access the Convert dialog box  
+#### <a name="to-access-the-convert-dialog-box"></a>Pour accéder à la boîte de dialogue Convertir  
   
-1.  On the menu bar, choose **File**, **Open**, **Convert**.  
+1.  Dans la barre de menus, choisissez **Fichier**, **Ouvrir**, **Convertir**.  
   
-     You will see a list of the code-conversion tools that are currently available.  
+     Vous verrez une liste des outils de conversion de code disponibles actuellement.  
   
-2.  Select the tool that is appropriate for your application.  
+2.  Sélectionnez l’outil adapté à votre application.  
   
-## <a name="see-also"></a>See Also  
- [NOTINBUILD - How to: Upgrade a Project from Visual Basic 6.0](http://msdn.microsoft.com/en-us/c0421e57-5bba-422e-934d-ec42ab9f2af9)   
- [Porting, Migrating, and Upgrading Visual Studio Projects](../../porting/port-migrate-and-upgrade-visual-studio-projects.md)
+## <a name="see-also"></a>Voir aussi  
+[Portage, migration et mise à niveau des projets Visual Studio](../../porting/port-migrate-and-upgrade-visual-studio-projects.md)

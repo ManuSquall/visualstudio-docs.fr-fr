@@ -1,42 +1,26 @@
 ---
 title: "Tâches inline MSBuild | Microsoft Docs"
 ms.custom: 
-ms.date: 11/04/2016
+ms.date: 09/21/2017
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-sdk
+ms.technology: vs-ide-sdk
 ms.tgt_pltfrm: 
 ms.topic: article
-helpviewer_keywords:
-- MSBuild, tasks
+helpviewer_keywords: MSBuild, tasks
 ms.assetid: e72e6506-4a11-4edf-ae8d-cfb5a3b9d8a0
-caps.latest.revision: 20
+caps.latest.revision: "20"
 author: kempb
 ms.author: kempb
 manager: ghogen
-translation.priority.ht:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
-translationtype: Human Translation
-ms.sourcegitcommit: 79460291e91f0659df0a4241e17616e55187a0e2
-ms.openlocfilehash: 6153ab5924f66d13e2c0664ed652f8eee6f91e4c
-ms.lasthandoff: 02/22/2017
-
+ms.openlocfilehash: ef4376d8d7600b1072e2afa5df2cf474a8b3ab32
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: HT
+ms.contentlocale: fr-FR
+ms.lasthandoff: 10/31/2017
 ---
 # <a name="msbuild-inline-tasks"></a>Tâches inline MSBuild
-Vous créez généralement des tâches MSBuild en compilant une classe qui implémente l’interface <xref:Microsoft.Build.Framework.ITask>. Pour plus d’informations, consultez l’article [Tâches MSBuild](../msbuild/msbuild-tasks.md).  
+Les tâches MSBuild sont généralement créées en compilant une classe qui implémente l’interface <xref:Microsoft.Build.Framework.ITask>. Pour plus d’informations, consultez l’article [Tâches MSBuild](../msbuild/msbuild-tasks.md).  
   
  À compter du .NET Framework version 4, vous pouvez créer des tâches inline dans le fichier projet. Vous n’êtes pas obligé de créer un assembly distinct pour héberger la tâche. Cela facilite le suivi du code source et le déploiement de la tâche. Le code source est intégré au script.  
   
@@ -44,12 +28,12 @@ Vous créez généralement des tâches MSBuild en compilant une classe qui impl�
  Une tâche inline est contenue dans un élément [UsingTask](../msbuild/usingtask-element-msbuild.md). La tâche inline et l’élément `UsingTask` qui la contient sont généralement inclus dans un fichier .targets et importés dans d’autres fichiers projet selon les besoins. Voici une tâche inline de base. Notez qu’elle n’a aucun effet.  
   
 ```xml  
-<Project ToolsVersion="12.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">  
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">  
   <!-- This simple inline task does nothing. -->  
   <UsingTask  
     TaskName="DoNothing"  
     TaskFactory="CodeTaskFactory"  
-    AssemblyFile="$(MSBuildToolsPath)\Microsoft.Build.Tasks.v12.0.dll" >  
+    AssemblyFile="$(MSBuildToolsPath)\Microsoft.Build.Tasks.Core.dll" >  
     <ParameterGroup />  
     <Task>  
       <Reference Include="" />  
@@ -108,12 +92,12 @@ Vous créez généralement des tâches MSBuild en compilant une classe qui impl�
  Voici une tâche inline plus robuste. La tâche HelloWorld affiche « Hello, world! » sur l’appareil de journalisation des erreurs par défaut, qui est généralement la console système ou la fenêtre **Sortie** de Visual Studio. L’élément `Reference` dans l’exemple est fourni uniquement à titre d’illustration.  
   
 ```xml  
-<Project ToolsVersion="12.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">  
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">  
   <!-- This simple inline task displays "Hello, world!" -->  
   <UsingTask  
     TaskName="HelloWorld"  
     TaskFactory="CodeTaskFactory"  
-    AssemblyFile="$(MSBuildToolsPath)\Microsoft.Build.Tasks.v4.0.dll" >  
+    AssemblyFile="$(MSBuildToolsPath)\Microsoft.Build.Tasks.Core.dll" >  
     <ParameterGroup />  
     <Task>  
       <Reference Include="System.Xml.dll"/>  
@@ -133,7 +117,7 @@ Log.LogError("Hello, world!");
  Vous pouvez enregistrer la tâche HelloWorld dans un fichier nommé HelloWorld.targets, puis l’appeler à partir d’un projet en procédant comme suit.  
   
 ```xml  
-<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">  
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">  
   <Import Project="HelloWorld.targets" />  
   <Target Name="Hello">  
     <HelloWorld />  
@@ -182,9 +166,9 @@ Log.LogError("Hello, world!");
  La tâche inline suivante remplace chaque occurrence d’un jeton dans le fichier spécifié par la valeur donnée.  
   
 ```xml  
-<Project xmlns='http://schemas.microsoft.com/developer/msbuild/2003' ToolsVersion="12.0">  
+<Project xmlns='http://schemas.microsoft.com/developer/msbuild/2003' ToolsVersion="15.0">  
   
-  <UsingTask TaskName="TokenReplace" TaskFactory="CodeTaskFactory" AssemblyFile="$(MSBuildToolsPath)\Microsoft.Build.Tasks.v12.0.dll">  
+  <UsingTask TaskName="TokenReplace" TaskFactory="CodeTaskFactory" AssemblyFile="$(MSBuildToolsPath)\Microsoft.Build.Tasks.Core.dll">  
     <ParameterGroup>  
       <Path ParameterType="System.String" Required="true" />  
       <Token ParameterType="System.String" Required="true" />  

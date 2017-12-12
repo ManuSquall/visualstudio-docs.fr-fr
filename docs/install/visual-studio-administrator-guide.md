@@ -5,8 +5,7 @@ ms.custom:
 ms.date: 05/15/2017
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-install
+ms.technology: vs-acquisition
 ms.tgt_pltfrm: 
 ms.topic: article
 helpviewer_keywords:
@@ -17,27 +16,11 @@ ms.assetid: 4af353f5-6cfd-4ebe-bcfb-f42306e451a0
 author: TerryGLee
 ms.author: tglee
 manager: ghogen
-translation.priority.ht:
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- ru-ru
-- zh-cn
-- zh-tw
-translation.priority.mt:
-- cs-cz
-- pl-pl
-- pt-br
-- tr-tr
-ms.translationtype: Human Translation
-ms.sourcegitcommit: d9de84bed187c62962a76424aabdc5f355dff4dc
-ms.openlocfilehash: 220b41f44cdc91ea84bf08b8eec8181dc01c25c7
-ms.contentlocale: fr-fr
-ms.lasthandoff: 05/15/2017
-
+ms.openlocfilehash: 62e7a5cca98de8f4b584c7a3b3d9b72fdefa2519
+ms.sourcegitcommit: eb954434c34b4df6fd2264266381b23ce9e6204a
+ms.translationtype: HT
+ms.contentlocale: fr-FR
+ms.lasthandoff: 11/22/2017
 ---
 # <a name="visual-studio-2017-administrator-guide"></a>Guide de l’administrateur Visual Studio 2017
 
@@ -72,13 +55,22 @@ Plusieurs outils sont disponibles pour vous aider à [détecter et à gérer les
 > [!TIP]
 > Outre la documentation du guide de l’administrateur, le [blog d’Heath Stewart](https://blogs.msdn.microsoft.com/heaths/tag/vs2017/) constitue une bonne source d’informations sur l’installation de Visual Studio 2017.
 
+## <a name="get-support"></a>Obtenir de l’aide
+Parfois, des problèmes peuvent se produire. Si votre installation de Visual Studio échoue, consultez la page [Résolution des problèmes d’installation et de mise à niveau de Visual Studio 2017](troubleshooting-installation-issues.md). Si aucune étape de résolution des problèmes ne vous aide, vous pouvez nous contacter pour une conversation en direct sur une assistance à l’installation (en anglais uniquement). Pour plus de détails, consultez la [page du support Visual Studio](https://www.visualstudio.com/vs/support/#talktous).
+
+Voici d’autres options de support :
+* Vous pouvez nous signaler des problèmes au niveau d’un produit via l’outil [Signaler un problème](../ide/how-to-report-a-problem-with-visual-studio-2017.md) qui s’affiche dans le programme d’installation de Visual Studio et dans l’IDE de Visual Studio.
+* Vous pouvez nous faire part d’une suggestion de produit via [UserVoice](https://visualstudio.uservoice.com/forums/121579).
+* Vous pouvez suivre les problèmes au niveau d’un produit sur le site [Visual Studio Developer Community](https://developercommunity.visualstudio.com/) et y poser des questions et obtenir des réponses.
+* Vous pouvez également communiquer avec nous et d’autres développeurs Visual Studio en prenant part à notre [conversation Visual Studio dans la communauté Gitter ](https://gitter.im/Microsoft/VisualStudio)  (Cette option nécessite un compte [GitHub](https://github.com/)).
+
 ## <a name="see-also"></a>Voir aussi
 * [Installer Visual Studio 2017](install-visual-studio.md)
 * [Utiliser les paramètres de ligne de commande pour installer Visual Studio 2017](use-command-line-parameters-to-install-visual-studio.md)
   * [Exemples de paramètres de ligne de commande](command-line-parameter-examples.md)
   * [Informations de référence sur les ID de charge de travail et de composant](workload-and-component-ids.md)
 * [Créer une installation réseau de Visual Studio](create-a-network-installation-of-visual-studio.md)
-  * [Considérations particulières relatives à l’installation de Visual Studio dans un environnement hors connexion](install-visual-studio-in-offline-environment.md)
+  * [Installer les certificats nécessaires à l’installation hors connexion de Visual Studio](install-certificates-for-visual-studio-offline.md)
 * [Automatiser Visual Studio avec un fichier réponse](automated-installation-with-response-file.md)
 * [Appliquer automatiquement des clés de produit lors du déploiement de Visual Studio](automatically-apply-product-keys-when-deploying-visual-studio.md)
 * [Définir les valeurs par défaut des déploiements d’entreprise de Visual Studio](set-defaults-for-enterprise-deployments.md)
@@ -86,5 +78,3 @@ Plusieurs outils sont disponibles pour vous aider à [détecter et à gérer les
 * [Mettre à jour une installation réseau de Visual Studio](update-a-network-installation-of-visual-studio.md)
 * [Contrôler les mises à jour applicables aux déploiements de Visual Studio](controlling-updates-to-visual-studio-deployments.md)
 * [Outils de détection et de gestion des instances de Visual Studio](tools-for-managing-visual-studio-instances.md)
-* [Signaler un problème avec Visual Studio 2017](../ide/how-to-report-a-problem-with-visual-studio-2017.md)
-

@@ -1,15 +1,13 @@
 ---
-title: "Encodages et sauts de ligne | Microsoft Docs"
+title: Encodages et sauts de ligne dans Visual Studio | Microsoft Docs
 ms.custom: 
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-general
+ms.technology: vs-ide-general
 ms.tgt_pltfrm: 
 ms.topic: article
-f1_keywords:
-- vs.Encoding
+f1_keywords: vs.Encoding
 helpviewer_keywords:
 - line breaks
 - encoding
@@ -18,40 +16,20 @@ helpviewer_keywords:
 - line break characters
 - Visual Studio, line break characters
 ms.assetid: 8f9b3ffc-7b8d-44f4-87cb-dc29105be12d
-caps.latest.revision: 8
+caps.latest.revision: "8"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-translation.priority.ht:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 5ea9179ad37514ffad4876177b05150eecc22def
-ms.openlocfilehash: 34c400c280096acb7e0ce272fa717cbc2f8f0d8a
-ms.contentlocale: fr-fr
-ms.lasthandoff: 05/24/2017
-
+ms.openlocfilehash: b6afbc9ca8f93dcb0313c70a9d1e41579a6bf31f
+ms.sourcegitcommit: ec1c7e7e3349d2f3a4dc027e7cfca840c029367d
+ms.translationtype: HT
+ms.contentlocale: fr-FR
+ms.lasthandoff: 11/07/2017
 ---
 # <a name="encodings-and-line-breaks"></a>Encodages et sauts de ligne
-Dans Visual Studio, vous pouvez utiliser les paramètres **Options d’enregistrement de fichier/avancées** pour déterminer le type de caractères de saut de ligne que vous souhaitez. Vous pouvez également modifier l’encodage d’un fichier avec les mêmes paramètres.  
+Les caractères suivants sont interprétés comme des sauts de ligne dans Visual Studio :  
   
-> [!NOTE]
->  Si vous avez certains types de paramètres de développement (Visual Basic, F#, développement web), vous pouvez ne pas voir **Options d’enregistrement avancées** dans le menu. Pour modifier vos paramètres (en spécifiant par exemple Général), ouvrez **Outils / Importation et exportation de paramètres**. Pour plus d’informations, consultez [Personnaliser l’IDE Visual Studio](../ide/personalizing-the-visual-studio-ide.md).  
-  
- Dans Visual Studio, les caractères suivants sont interprétés comme des sauts de ligne :  
-  
--   CRLF : retour chariot + saut de ligne, caractères Unicode 000D + 000A  
+-   CR LF : retour chariot + saut de ligne, caractères Unicode 000D + 000A  
   
 -   LF : saut de ligne, caractère Unicode 000A  
   
@@ -61,6 +39,18 @@ Dans Visual Studio, vous pouvez utiliser les paramètres **Options d’enregistr
   
 -   PS : séparateur de paragraphe, caractère Unicode 2029  
   
- Du texte copié à partir d’autres applications conserve les caractères d’encodage et de saut de ligne d’origine. Par exemple, lorsque vous copiez du texte à partir du Bloc-notes pour le coller dans un fichier texte dans Visual Studio, le texte a les mêmes paramètres que dans le Bloc-notes.  
+Du texte copié à partir d’autres applications conserve les caractères d’encodage et de saut de ligne d’origine. Par exemple, lorsque vous copiez du texte à partir du Bloc-notes pour le coller dans un fichier texte dans Visual Studio, le texte a les mêmes paramètres que dans le Bloc-notes.  
   
- Lorsque vous ouvrez un fichier qui a des caractères de saut de ligne différents, vous pouvez voir une boîte de dialogue qui vous demande si les caractères de saut de ligne incohérents doivent être normalisés, ainsi que le type de saut de ligne à choisir.
+Quand vous ouvrez un fichier contenant des caractères de saut de ligne différents, vous pouvez voir s’afficher une boîte de dialogue qui vous demande si les caractères de saut de ligne incohérents doivent être normalisés, ainsi que le type de saut de ligne à choisir.
+
+Vous pouvez utiliser la boîte de dialogue **Fichier**, **Options d’enregistrement avancées** pour spécifier le type de caractères de saut de ligne souhaité. Vous pouvez également modifier l’encodage d’un fichier avec les mêmes paramètres.
+
+![Boîte de dialogue Options d’enregistrement avancées](media/line_endings.png)
+  
+> [!NOTE]
+>  Si vous ne voyez pas la commande **Options d’enregistrement avancées** dans le menu **Fichier**, vous pouvez l’ajouter. Choisissez **Outils**, **Personnaliser...**, puis choisissez l’onglet **Commandes**. Dans la liste déroulante **Barre de menus**, choisissez **Fichier**, puis choisissez le bouton **Ajouter une commande...**. Dans la boîte de dialogue **Ajouter une commande**, sous **Catégories**, choisissez **Fichier** et, dans la liste **Commandes**, choisissez **Options d’enregistrement avancées...**. Choisissez **OK**, puis choisissez le bouton **Descendre** pour déplacer la commande à l’emplacement souhaité dans le menu. Choisissez **Fermer** pour fermer la boîte de dialogue **Personnaliser**. Pour plus d’informations, consultez [Personnaliser les menus et les barres d’outils](../ide/how-to-customize-menus-and-toolbars-in-visual-studio.md#customizing_menu).
+
+Vous pouvez également accéder à la boîte de dialogue **Options d’enregistrement avancées** en choisissant **Fichier**, **Enregistrer le \<fichier\> sous...**. Dans la boîte de dialogue **Enregistrer le fichier sous**, choisissez la flèche de liste déroulante à côté du bouton **Enregistrer**, puis choisissez **Enregistrer avec encodage...**.
+
+## <a name="see-also"></a>Voir aussi
+[Écrire du code dans l’éditeur de code](../ide/writing-code-in-the-code-and-text-editor.md)

@@ -1,16 +1,15 @@
 ---
-title: Utilisation des outils Visual Studio pour Mac pour Unity
+title: Utilisation des outils Visual Studio pour Mac pour Unity | Microsoft Docs
 author: dantogno
 ms.author: v-davian
 ms.date: 07/17/2017
 ms.topic: article
 ms.assetid: 83FDD7A3-5D16-4B4B-9080-078E3FB5C623
+ms.openlocfilehash: b37346546f65ab6737100c65368d2955cd2260d7
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
 ms.translationtype: HT
-ms.sourcegitcommit: e2b7ff9126e1cc38ac2e58d6be339b656a024e7f
-ms.openlocfilehash: f41443424df13d59cc32340f6589b20db51b56fc
-ms.contentlocale: fr-fr
-ms.lasthandoff: 08/11/2017
-
+ms.contentlocale: fr-FR
+ms.lasthandoff: 10/31/2017
 ---
 # <a name="using-visual-studio-for-mac-tools-for-unity"></a>Utilisation des outils Visual Studio pour Mac pour Unity
 
@@ -39,7 +38,7 @@ Toutefois, les outils Visual Studio pour Mac pour Unity étendent leur fonctionn
 
 3.  Une fois que les lettres « **ont** » ont été tapées, une liste de suggestions IntelliSense s’affiche.
 
-  ![Utilisation d’IntelliSense](media/using-vsmac-tools-unity-image2.png)
+  ![Using IntelliSense](media/using-vsmac-tools-unity-image2.png)
 
 4.  Vous pouvez changer la sélection dans la liste de trois façons :
 
@@ -111,5 +110,4 @@ Pour arrêter le débogage :
 
   ![Cliquer sur Arrêter dans Visual Studio](media/using-vsmac-tools-unity-image7.png)
 
-Pour en savoir plus sur le débogage dans Visual Studio pour Mac, consultez [Utilisation du débogueur](https://docs.microsoft.com/en-us/visualstudio/mac/debugging).
-
+Pour en savoir plus sur le débogage dans Visual Studio pour Mac, consultez [Utilisation du débogueur](https://docs.microsoft.com/visualstudio/mac/debugging).

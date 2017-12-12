@@ -1,87 +1,87 @@
 ---
-title: "Rechercher, commande | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-general"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "edit.find"
-helpviewer_keywords: 
-  - "Edit.Find (commande)"
-  - "Rechercher (commande)"
+title: Rechercher, commande | Microsoft Docs
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-general
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords: edit.find
+helpviewer_keywords:
+- Find command
+- Edit.Find command
 ms.assetid: f0c705dc-2b97-423d-abbf-5584d4827208
-caps.latest.revision: 12
-author: "kempb"
-ms.author: "kempb"
-manager: "ghogen"
-caps.handback.revision: 12
+caps.latest.revision: "12"
+author: gewarren
+ms.author: gewarren
+manager: ghogen
+ms.openlocfilehash: 93ec728b6e7ab3a197382bbd66cb34906d248747
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: HT
+ms.contentlocale: fr-FR
+ms.lasthandoff: 10/31/2017
 ---
-# Rechercher, commande
-[!INCLUDE[vs2017banner](../../code-quality/includes/vs2017banner.md)]
-
-Fichiers de recherche à l'aide d'un sous\-ensemble des options disponibles sous l'onglet de **Rechercher dans les fichiers** de la fenêtre de **Rechercher et remplacer** .  
+# <a name="find-command"></a>Rechercher, commande
+Recherche des fichiers en utilisant un sous-ensemble des options disponibles sous l’onglet **Rechercher dans les fichiers**  de la fenêtre **Rechercher et remplacer**.  
   
-## Syntaxe  
+## <a name="syntax"></a>Syntaxe  
   
 ```  
 Edit.Find findwhat [/case] [/doc | /proc | /open | /sel]   
 [/markall] [/options] [/reset] [/up] [/wild | /regex] [/word]  
 ```  
   
-## Arguments  
+## <a name="arguments"></a>Arguments  
  `findwhat`  
- Obligatoire.  Le texte à rechercher.  
+ Obligatoire. Texte à rechercher.  
   
-## Commutateurs  
- \/case ou \/c  
- Facultatif.  Il y a correspondance uniquement si le texte trouvé respecte la casse du texte spécifié avec l'argument `findwhat`.  
+## <a name="switches"></a>Commutateurs  
+ /case ou /c  
+ Facultatif. Il y a correspondance uniquement si les caractères majuscules et minuscules correspondent exactement à ceux spécifiés dans l’argument `findwhat`.  
   
- \/doc ou \/d  
- Facultatif.  Effectue la recherche uniquement dans le document actif.  Spécifiez l'une des zones de recherche disponibles, à savoir `/doc`, `/proc`, `/open` ou `/sel`.  
+ /doc ou /d  
+ Facultatif. Effectue la recherche uniquement dans le document actif. Spécifiez une seule des étendues de recherche disponibles, à savoir `/doc`, `/proc`, `/open` ou `/sel`.  
   
- \/markall ou \/m  
- Facultatif.  Ajoute un graphique à chaque ligne contenant une correspondance du texte recherché dans le document actif.  
+ /markall ou /m  
+ Facultatif. Ajoute un graphique à chaque ligne contenant une correspondance du texte recherché dans le document actif.  
   
- \/open ou \/o  
- Facultatif.  Recherche le texte dans tous les documents ouverts comme s'il s'agissait d'un document unique.  Spécifiez l'une des zones de recherche disponibles, à savoir `/doc`, `/proc`, `/open` ou `/sel`.  
+ /open ou /o  
+ Facultatif. Effectue la recherche dans tous les documents ouverts comme s’il s’agissait d’un document unique. Spécifiez une seule des étendues de recherche disponibles, à savoir `/doc`, `/proc`, `/open` ou `/sel`.  
   
- \/options ou \/t  
- Facultatif.  Affiche une liste des paramètres en cours des options de recherche sans effectuer de recherche.  
+ /options ou /t  
+ Facultatif. Affiche la liste des paramètres de recherche actuels et n’effectue pas de recherche.  
   
- \/proc ou \/p  
- Facultatif.  Effectue la recherche uniquement dans la procédure en cours.  Spécifiez l'une des zones de recherche disponibles, à savoir `/doc`, `/proc`, `/open` ou `/sel`.  
+ /proc ou /p  
+ Facultatif. Effectue la recherche uniquement dans la procédure en cours. Spécifiez une seule des étendues de recherche disponibles, à savoir `/doc`, `/proc`, `/open` ou `/sel`.  
   
- \/reset ou \/e  
- Facultatif.  Rétablit les paramètres par défaut des options de recherche et n'effectue pas de recherche.  
+ /reset ou /e  
+ Facultatif. Rétablit les paramètres par défaut des options de recherche et n’effectue pas de recherche.  
   
- \/sel ou \/s  
- Facultatif.  Effectue la recherche uniquement dans la sélection en cours.  Spécifiez l'une des zones de recherche disponibles, à savoir `/doc`, `/proc`, `/open` ou `/sel`.  
+ /sel ou /s  
+ Facultatif. Effectue la recherche uniquement dans la sélection en cours. Spécifiez une seule des étendues de recherche disponibles, à savoir `/doc`, `/proc`, `/open` ou `/sel`.  
   
- \/up ou \/u  
- Facultatif.  Effectue la recherche vers le début du fichier, à partir de l'emplacement actuel du curseur.  Par défaut, les recherches sont effectuées du curseur vers la fin du fichier.  
+ /up ou /u  
+ Facultatif. Effectue la recherche à partir de l’emplacement actuel vers le début du fichier. Par défaut, les recherches commencent à l’emplacement actuel dans le fichier et s’effectuent vers la fin du fichier.  
   
- \/regex ou \/r  
- Facultatif.  Des caractères spéciaux prédéfinis sont utilisés dans l'argument `findwhat` comme notations représentant des modèles de texte plutôt que des caractères littéraux.  Pour une liste exhaustive des caractères d'expressions régulières, consultez [Expressions régulières](../../ide/using-regular-expressions-in-visual-studio.md).  
+ /regex ou /r  
+ Facultatif. Utilise des caractères spéciaux prédéfinis dans l’argument `findwhat` comme notations représentant des modèles de texte, plutôt que des caractères littéraux. Pour obtenir la liste complète des caractères d’expressions régulières, consultez [Expressions régulières](../../ide/using-regular-expressions-in-visual-studio.md).  
   
- \/wild ou \/l  
- Facultatif.  Des caractères spéciaux prédéfinis sont utilisés dans l'argument `findwhat` comme notations représentant un caractère ou une série de caractères.  
+ /wild ou /l  
+ Facultatif. Utilise des caractères spéciaux prédéfinis dans l’argument `findwhat` comme notations représentant un caractère ou une séquence de caractères.  
   
- \/word ou \/w  
- Facultatif.  Recherche uniquement les mots entiers.  
+ /word ou /w  
+ Facultatif. Recherche uniquement les mots entiers.  
   
-## Exemple  
- Cet exemple recherche le mot « somestring » en respectant la casse dans la section de code sélectionnée.  
+## <a name="example"></a>Exemple  
+ Cet exemple recherche le mot « somestring » en respectant la casse dans la section de code sélectionnée.  
   
 ```  
 >Edit.Find somestring /sel /case  
 ```  
   
-## Voir aussi  
- [Commande, fenêtre](../../ide/reference/command-window.md)   
- [Zone Rechercher\/Commande](../../ide/find-command-box.md)   
+## <a name="see-also"></a>Voir aussi  
+ [Fenêtre Commande](../../ide/reference/command-window.md)   
+ [Zone Rechercher/Commande](../../ide/find-command-box.md)   
  [Commandes Visual Studio](../../ide/reference/visual-studio-commands.md)   
  [Alias de commandes Visual Studio](../../ide/reference/visual-studio-command-aliases.md)

@@ -4,8 +4,7 @@ ms.custom:
 ms.date: 02/17/2017
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-general
+ms.technology: vs-ide-general
 ms.tgt_pltfrm: 
 ms.topic: article
 helpviewer_keywords:
@@ -14,30 +13,15 @@ helpviewer_keywords:
 - application manifests [Visual Studio]
 - assemblies [Visual Studio], signing
 ms.assetid: 6c1ef36b-25f7-4ad0-b29a-51801b7a5420
-caps.latest.revision: 15
-author: kempb
-ms.author: kempb
+caps.latest.revision: "15"
+author: gewarren
+ms.author: gewarren
 manager: ghogen
-translation.priority.ht:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
+ms.openlocfilehash: 62e9060c812666f671f1c2d3378fad510d6524f6
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
 ms.translationtype: HT
-ms.sourcegitcommit: a3c0f4d3bde8bb03d3766383eba01665e58458be
-ms.openlocfilehash: 6a28915840af1b22dffe704ac931a57f25ca6879
-ms.contentlocale: fr-fr
-ms.lasthandoff: 08/01/2017
-
+ms.contentlocale: fr-FR
+ms.lasthandoff: 10/31/2017
 ---
 # <a name="managing-assembly-and-manifest-signing"></a>Gestion d'assembly et signature de manifeste
 La signature avec un nom fort fournit à un composant logiciel une identité globalement unique. L’utilisation de noms forts garantit que l’assembly ne peut pas être usurpé et que les dépendances de composants et les instructions de configuration correspondent aux composant et version de composant appropriés.  
@@ -62,7 +46,7 @@ La signature avec un nom fort fournit à un composant logiciel une identité glo
   
 -   Assemblys de composants partagés (.dll)  
   
- Vous devez signer les types de composants suivants :  
+Vous devez signer les types de composants suivants :  
   
 1.  Assemblys, si vous souhaitez les déployer dans le Global Assembly Cache (GAC).  
   
@@ -70,7 +54,7 @@ La signature avec un nom fort fournit à un composant logiciel une identité glo
   
 3.  Assemblys PIA (Primary Interop Assembly), qui sont utilisés pour l’interopérabilité COM. L’utilitaire TLBIMP applique des noms forts pendant la création d’un assembly PIA à partir d’une bibliothèque de types COM.  
   
- En général, vous ne devez pas signer les exécutables. Un composant de nom fort ne peut pas référencer un composant sans nom fort qui est déployé avec l’application. Visual Studio ne signe pas les exécutables d’application. En revanche, il signe le manifeste d’application, qui pointe vers l’exécutable portant un nom faible. Vous devez généralement éviter de signer les composants qui appartiennent à votre application, car la signature peut rendre les dépendances plus difficiles à gérer.  
+En général, vous ne devez pas signer les exécutables. Un composant de nom fort ne peut pas référencer un composant sans nom fort qui est déployé avec l’application. Visual Studio ne signe pas les exécutables d’application. En revanche, il signe le manifeste d’application, qui pointe vers l’exécutable portant un nom faible. Vous devez généralement éviter de signer les composants qui appartiennent à votre application, car la signature peut rendre les dépendances plus difficiles à gérer.  
   
 ## <a name="how-to-sign-an-assembly-in-visual-studio"></a>Comment signer un assembly dans Visual Studio  
  Vous signez une application ou un composant à l’aide de l’onglet **Signature** de la fenêtre des propriétés du projet (cliquez avec le bouton droit sur le nœud de projet dans l’**Explorateur de solutions** et sélectionnez **Propriétés** ou tapez **propriétés de projet** dans la fenêtre **Lancement rapide**, ou appuyez sur Alt+Entrée dans la fenêtre de l’**Explorateur de solutions**). Sélectionnez l’onglet **Signature**, puis cochez la case **Signer l’assembly**.  

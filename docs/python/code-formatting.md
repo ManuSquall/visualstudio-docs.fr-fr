@@ -1,27 +1,23 @@
 ---
-title: Mise en forme de code Python dans Visual Studio | Microsoft Docs
+title: Mise en forme du code Python dans Visual Studio | Microsoft Docs
 ms.custom: 
-ms.date: 7/12/2017
+ms.date: 07/12/2017
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- devlang-python
+ms.technology: devlang-python
 ms.devlang: python
 ms.tgt_pltfrm: 
 ms.topic: article
-ms.assetid: 3d0f1631-360b-45d4-a0cb-01c3c10d25f2
-caps.latest.revision: 1
+caps.latest.revision: "1"
 author: kraigb
 ms.author: kraigb
 manager: ghogen
+ms.openlocfilehash: 80e23d4e3973590d5046468e9efb826afd1417d5
+ms.sourcegitcommit: b7d3b90d0be597c9d01879338dd2678c881087ce
 ms.translationtype: HT
-ms.sourcegitcommit: 6d25db4639f2c8391c1e32542701ea359f560178
-ms.openlocfilehash: 9d04c52a595014d06b38205913e3eb1cdd264019
-ms.contentlocale: fr-fr
-ms.lasthandoff: 07/18/2017
-
+ms.contentlocale: fr-FR
+ms.lasthandoff: 12/01/2017
 ---
-
 # <a name="formatting-python-code"></a>Mise en forme de code Python
 
 Dans Visual Studio, vous pouvez rapidement remettre en forme le code selon les options de mise en forme préconfigurées.

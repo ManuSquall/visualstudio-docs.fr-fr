@@ -1,58 +1,58 @@
 ---
-title: "Chemin d&#39;acc&#232;s aux symboles, commande | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-general"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "debug.symbolpath"
-helpviewer_keywords: 
-  - "Debug.SymbolPath (commande)"
-  - "chemin d'accès aux symboles (commande)"
-  - "SymbolPath (commande)"
+title: "Chemin d’accès aux symboles, commande | Microsoft Docs"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-general
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords: debug.symbolpath
+helpviewer_keywords:
+- symbol path command
+- Debug.SymbolPath command
+- SymbolPath command
 ms.assetid: b697ef2d-3f5d-40df-b113-7068a5bec0d4
-caps.latest.revision: 9
-author: "kempb"
-ms.author: "kempb"
-manager: "ghogen"
-caps.handback.revision: 9
+caps.latest.revision: "9"
+author: gewarren
+ms.author: gewarren
+manager: ghogen
+ms.openlocfilehash: d446779e4f84bf19e965393f9fa1142c7e4e166a
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: HT
+ms.contentlocale: fr-FR
+ms.lasthandoff: 10/31/2017
 ---
-# Chemin d&#39;acc&#232;s aux symboles, commande
-[!INCLUDE[vs2017banner](../../code-quality/includes/vs2017banner.md)]
-
-Définit la liste des répertoires dans lesquels le débogueur recherchera des symboles.  
+# <a name="symbol-path-command"></a>Chemin d’accès aux symboles, commande
+Définit la liste des répertoires où le débogueur recherche des symboles.  
   
-## Syntaxe  
+## <a name="syntax"></a>Syntaxe  
   
 ```  
 Debug.SymbolPath pathname1;pathname2;... pathnameN  
 ```  
   
-## Arguments  
+## <a name="arguments"></a>Arguments  
  `pathname`  
- Optionnel.  Liste de chemins d'accès délimités par des points\-virgules dans laquelle le débogueur recherchera des symboles.  
+ Facultatif. Liste de chemins délimités par des points-virgules dans laquelle le débogueur doit rechercher des symboles.  
   
-## Notes  
- Si aucun `pathname` n'est spécifié, la commande répertorie les chemins d'accès aux symboles actuels.  
+## <a name="remarks"></a>Remarques  
+ Si aucun `pathname` n’est spécifié, la commande répertorie les chemins des symboles actuels.  
   
-## Exemple  
- Cet exemple ajoute deux chemins d'accès à la liste des répertoires de symboles.  
+## <a name="example"></a>Exemple  
+ Cet exemple ajoute deux chemins à la liste des répertoires de symboles.  
   
 ```  
 Debug.SymbolPath C:\Symbol Path 1;C:\Symbol Path 2  
 ```  
   
-## Exemple  
- Cet exemple affiche une liste de chemins d'accès des symboles actuels délimités par des points\-virgules.  
+## <a name="example"></a>Exemple  
+ Cet exemple affiche une liste de chemins des symboles actuels délimités par des points-virgules.  
   
 ```  
 Debug.SymbolPath  
 ```  
   
-## Voir aussi  
- [Commande, fenêtre](../../ide/reference/command-window.md)   
+## <a name="see-also"></a>Voir aussi  
+ [Fenêtre Commande](../../ide/reference/command-window.md)   
  [Commandes Visual Studio](../../ide/reference/visual-studio-commands.md)

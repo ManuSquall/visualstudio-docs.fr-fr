@@ -4,8 +4,7 @@ ms.custom:
 ms.date: 06/21/2017
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-general
+ms.technology: vs-ide-general
 ms.tgt_pltfrm: 
 ms.topic: article
 f1_keywords:
@@ -17,39 +16,24 @@ f1_keywords:
 - javascript.project.property.debugging.machinename
 - javascript.project.property.debugging.allowlocalnetworkloopback
 ms.assetid: a05ab01f-3d5d-4675-a845-eab51807d3a3
-caps.latest.revision: 17
+caps.latest.revision: "17"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-translation.priority.ht:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
-ms.translationtype: Human Translation
-ms.sourcegitcommit: d2f4eba36e9069a35cf279ccf1c78f72a51d77a1
-ms.openlocfilehash: 5d69e9d8d81ed36bb5933c42f3d8e9a499cd0b9d
-ms.contentlocale: fr-fr
-ms.lasthandoff: 06/23/2017
-
+ms.openlocfilehash: 1540667f1ed5356587837e83d30307901de4d15c
+ms.sourcegitcommit: c0422a3d594ea5ae8fc03f1aee684b04f417522e
+ms.translationtype: HT
+ms.contentlocale: fr-FR
+ms.lasthandoff: 11/02/2017
 ---
 # <a name="property-pages-javascript"></a>Pages de propriétés (JavaScript)
 Les **Pages de propriétés** permettent d’accéder aux paramètres d’un projet. Vous pouvez utiliser les pages qui s’affichent dans les **Pages de propriétés** pour modifier les propriétés d’un projet.  
 
- Pour accéder aux propriétés d’un projet, sélectionnez un nœud de projet dans l’**Explorateur de solutions**. Dans le menu **Projet**, cliquez sur **Propriétés**.  
+Pour accéder aux propriétés d’un projet, sélectionnez un nœud de projet dans l’**Explorateur de solutions**. Dans le menu **Projet**, cliquez sur **Propriétés**.  
 
- [!INCLUDE[note_settings_general](../../data-tools/includes/note_settings_general_md.md)]  
+[!INCLUDE[note_settings_general](../../data-tools/includes/note_settings_general_md.md)]  
 
- Les pages et options suivantes s’affichent dans les **Pages de propriétés**.  
+Les pages et options suivantes s’affichent dans les **Pages de propriétés**.  
 
 ## <a name="configuration-and-platform-page"></a>Page de configuration et de plateforme  
  Utilisez les options suivantes pour sélectionner la configuration et la plateforme à afficher ou à modifier.  
@@ -64,7 +48,7 @@ Les **Pages de propriétés** permettent d’accéder aux paramètres d’un pro
  Utilisez les options suivantes pour définir les propriétés générales du projet.  
 
 > [!NOTE]
->  Certaines options sont disponibles seulement dans les applications du Windows Store.  
+>  Certaines options sont disponibles seulement dans les applications UWP.  
 
  **Chemin de sortie**  
  Spécifie l'emplacement des fichiers de sortie pour la configuration du projet. Le chemin d'accès est relatif. Si vous entrez un chemin d'accès absolu, le chemin d'accès absolu est enregistré dans le projet. Le chemin d'accès par défaut est bin\Debug.  
@@ -78,7 +62,7 @@ Les **Pages de propriétés** permettent d’accéder aux paramètres d’un pro
  Utilisez les options suivantes pour définir les propriétés du comportement du débogage dans le projet.  
 
 > [!NOTE]
->  Certaines options sont disponibles seulement dans les applications du Windows Store.  
+>  Certaines options sont disponibles seulement dans les applications UWP.  
 
  **Débogueur à lancer**  
  Spécifie l'hôte par défaut pour le débogueur.  
@@ -89,18 +73,17 @@ Les **Pages de propriétés** permettent d’accéder aux paramètres d’un pro
 
 -   Sélectionnez **Ordinateur distant** pour démarrer l’application sur un ordinateur distant. Pour plus d’informations sur le débogage distant, consultez [Exécution d’applications sur un ordinateur distant](http://go.microsoft.com/fwlink/?LinkId=234914).  
 
- **Lancer l’application**  
- Spécifie s’il faut démarrer l’application quand vous appuyez sur F5 ou quand vous cliquez sur **Déboguer**, **Démarrer le débogage**. Sélectionnez **Oui** pour démarrer l’application ; sinon, sélectionnez **Non**. Si vous sélectionnez **Non**, vous pouvez toujours déboguer l’application si vous utilisez une autre méthode pour la démarrer.  
+**Lancer l’application**  
+Spécifie s’il faut démarrer l’application quand vous appuyez sur F5 ou quand vous cliquez sur **Déboguer**, **Démarrer le débogage**. Sélectionnez **Oui** pour démarrer l’application ; sinon, sélectionnez **Non**. Si vous sélectionnez **Non**, vous pouvez toujours déboguer l’application si vous utilisez une autre méthode pour la démarrer.  
 
- **Type de débogueur**  
- Spécifie les types de code à déboguer. Sélectionnez **Script uniquement** pour déboguer du code JavaScript. Sélectionnez **Managé uniquement** pour déboguer du code qui est managé par le Common Language Runtime. Sélectionnez **Natif uniquement** pour déboguer du code C++. Sélectionnez **Natif avec script** pour déboguer du code C++ et JavaScript. Sélectionnez **Mixte (managé et natif)** pour déboguer à la fois le code managé et le code C++.  
+**Type de débogueur**  
+Spécifie les types de code à déboguer. Sélectionnez **Script uniquement** pour déboguer du code JavaScript. Sélectionnez **Managé uniquement** pour déboguer du code qui est managé par le Common Language Runtime. Sélectionnez **Natif uniquement** pour déboguer du code C++. Sélectionnez **Natif avec script** pour déboguer du code C++ et JavaScript. Sélectionnez **Mixte (managé et natif)** pour déboguer à la fois le code managé et le code C++.  
 
- **Autoriser le bouclage de réseau local**  
- Spécifie si l'accès à l'adresse de bouclage IP est autorisé pour tester les applications. Sélectionnez **Oui** pour autoriser l’utilisation de l’adresse de bouclage si l’application cliente est sur le même ordinateur que celui où l’application serveur est en cours d’exécution ; sinon, sélectionnez **Non**. Cette propriété est disponible seulement si la **Débogueur à lancer** est définie sur **Ordinateur distant**.  
+**Autoriser le bouclage de réseau local**  
+Spécifie si l'accès à l'adresse de bouclage IP est autorisé pour tester les applications. Sélectionnez **Oui** pour autoriser l’utilisation de l’adresse de bouclage si l’application cliente est sur le même ordinateur que celui où l’application serveur est en cours d’exécution ; sinon, sélectionnez **Non**. Cette propriété est disponible seulement si la **Débogueur à lancer** est définie sur **Ordinateur distant**.  
 
- **Nom de l’ordinateur**  
- Spécifie le nom de l'ordinateur distant pour héberger le débogueur. Cette propriété est disponible seulement si la propriété **Débogueur à lancer** est définie sur **Ordinateur distant**.  
+**Nom de l’ordinateur**  
+Spécifie le nom de l'ordinateur distant pour héberger le débogueur. Cette propriété est disponible seulement si la propriété **Débogueur à lancer** est définie sur **Ordinateur distant**.  
 
- **Exiger une authentification**  
- Spécifie si l'ordinateur distant requiert l'authentification. Cette propriété est disponible seulement si la propriété **Débogueur à lancer** est définie sur **Ordinateur distant**.
-
+**Exiger une authentification**  
+Spécifie si l'ordinateur distant requiert l'authentification. Cette propriété est disponible seulement si la propriété **Débogueur à lancer** est définie sur **Ordinateur distant**.

@@ -1,41 +1,25 @@
 ---
 title: "Procédure pas à pas : Génération d’une application | Microsoft Docs"
 ms.custom: 
-ms.date: 11/04/2016
+ms.date: 09/25/2017
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-general
+ms.technology: vs-ide-general
 ms.tgt_pltfrm: 
 ms.topic: article
 ms.assetid: 4842955d-8959-4e4e-98b8-2358360179b3
-caps.latest.revision: 8
-author: kempb
-ms.author: kempb
+caps.latest.revision: "8"
+author: gewarren
+ms.author: gewarren
 manager: ghogen
-translation.priority.ht:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 3d32d11a430227800cb3ed53831a9565eb6adeb3
-ms.openlocfilehash: dc4bcdcc11e357979641268ae77a8e39f8408f7a
-ms.contentlocale: fr-fr
-ms.lasthandoff: 05/30/2017
-
+ms.openlocfilehash: a06bd1eb1ced8305425a9e3698e66f0d19438463
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: HT
+ms.contentlocale: fr-FR
+ms.lasthandoff: 10/31/2017
 ---
 # <a name="walkthrough-building-an-application"></a>Procédure pas à pas : génération d'une application
-Avec cette procédure pas à pas, vous allez vous familiariser avec plusieurs options qu’il est possible de configurer lors de la génération d’applications avec Visual Studio. Dans l’exemple d’application, vous allez créer une configuration de build personnalisée, masquer certains messages d’avertissement et afficher davantage d’informations de sortie de build, entre autres tâches.  
+Avec cette procédure pas à pas, vous allez vous familiariser avec plusieurs options qu’il est possible de configurer lors de la génération d’applications avec Visual Studio. Vous allez créer une configuration de build personnalisée, masquer certains messages d’avertissement et afficher davantage d’informations de sortie de build dans un exemple d’application.  
   
  Cette rubrique contient les sections suivantes :  
   
@@ -52,43 +36,7 @@ Avec cette procédure pas à pas, vous allez vous familiariser avec plusieurs op
  [Créer une version Release](../ide/walkthrough-building-an-application.md#BKMK_releasebuild)  
   
 ##  <a name="BKMK_installapp"></a> Installer l’exemple d’application  
- Vous allez utiliser la boîte de dialogue **Extensions et mises à jour** pour rechercher et installer l’exemple [Introduction to Building WPF Applications](http://code.msdn.microsoft.com/Introduction-to-Building-b8d16419?SRC=VSIDE) à partir de la galerie d’exemples sur le site web Microsoft. La galerie d’exemples contient une grande variété d’exemples de projets et de code que vous pouvez télécharger et étudier pour la planification et le développement de vos applications.  
-  
-#### <a name="to-install-the-sample-application"></a>Pour installer l’exemple d’application  
-  
-1.  Dans la barre de menus, choisissez **Outils**, puis **Extensions et mises à jour**.  
-  
-2.  Sélectionnez la catégorie **En ligne**, puis la catégorie **Galerie d’exemples**.  
-  
-3.  Spécifiez `Introduction` dans la zone de recherche pour rechercher l’exemple.  
-  
-     ![Boîte de dialogue Extensions et mises à jour ](../ide/media/buildwalk_extensionsdialogsampledownload.png "BuildWalk_ExtensionsDialogSampleDownload")  
-  
-4.  Dans la liste des résultats, choisissez **Introduction to Building WPF Applications (Visual C#)** ou **Introduction to Building WPF Applications (Visual Basic)**.  
-  
-5.  Cliquez sur le bouton **Télécharger**, puis cliquez sur le bouton **Fermer**.  
-  
- L’exemple Introduction to Building WPF Applications s’affiche dans la boîte de dialogue **Nouveau projet**.  
-  
-#### <a name="to-create-a-solution-for-the-sample-application"></a>Pour créer une solution pour l’exemple d’application  
-  
-1.  Ouvrez la boîte de dialogue **Nouveau projet**.  
-  
-     ![Dans la barre de menus, choisissez Fichier, Nouveau, Projet](../ide/media/exploreide-filenewproject.png "ExploreIDE-FileNewProject")  
-  
-2.  Dans la catégorie **Installé**, choisissez la catégorie **Exemples** pour afficher l’exemple Introduction to Building WPF Applications.  
-  
-3.  Nommez la solution `IntroWPFcsharp` pour Visual C#.  
-  
-     ![Boîte de dialogue Nouveau projet, exemples installés](../ide/media/buildwalk_newprojectdlgintrotowpfsample.png "BuildWalk_NewProjectdlgIntrotoWPFsample")  
-  
-     OR  
-  
-     Nommez la solution `IntroWPFvb` pour Visual Basic.  
-  
-     ![Boîte de dialogue Nouveau projet, exemples Visual Basic](../ide/media/buildwalk_newprojectdlgintrotowpfsamplevb.png "BuildWalk_NewProjectdlgIntrotoWPFsampleVB")  
-  
-4.  Sélectionnez le bouton **OK** .  
+Téléchargez l’exemple [Introduction to Building WPF Applications](https://code.msdn.microsoft.com/Introduction-to-Building-b8d16419). Choisissez C# ou Visual Basic. Une fois le fichier .zip téléchargé, extrayez-le et ouvrez le fichier **ExpenseItIntro.sln** à l’aide de Visual Studio.  
   
 ##  <a name="BKMK_CreateBuildConfig"></a>Créer une configuration de build personnalisée  
  Lorsque vous créez une solution, les configurations de build Debug et Release, et leurs plateformes cibles par défaut, sont automatiquement définies pour la solution. Vous pouvez ensuite personnaliser ces configurations ou créer les vôtres. Les configurations de build spécifient le type de build. Les plateformes de build spécifient le système d’exploitation qui est ciblé par une application pour cette configuration. Pour plus d’informations, consultez [Présentation des configurations de build](../ide/understanding-build-configurations.md), [Présentation des plateformes de générations](../ide/understanding-build-platforms.md) et [Configurations de projet Debug et Release](http://msdn.microsoft.com/en-us/0440b300-0614-4511-901a-105b771b236e).  
@@ -101,15 +49,15 @@ Avec cette procédure pas à pas, vous allez vous familiariser avec plusieurs op
   
      ![Menu Générer, commande Gestionnaire de configurations](../ide/media/buildwalk_configurationmanagerdialogbox.png "BuildWalk_ConfigurationManagerDialogBox")  
   
-2.  Dans la liste **Configuration de la solution active**, choisissez **Nouveau**.  
+2.  Dans la liste **Configuration de la solution active**, choisissez **\<Nouveau...\>**.  
   
 3.  Dans la boîte de dialogue **Nouvelle configuration de solution**, attribuez à la nouvelle configuration le nom de `Test`, copiez les paramètres de la configuration Debug existante, puis cliquez sur le bouton **OK**.  
   
      ![Boîte de dialogue Nouvelle configuration de solution](../ide/media/buildwalk_newsolutionconfigdlgbox.png "BuildWalk_NewSolutionConfigDlgBox")  
   
-4.  Dans la liste **Plateforme de la solution active**, choisissez **Nouveau**.  
+4.  Dans la liste **Plateforme de la solution active**, choisissez **\<Nouveau...\>**.  
   
-5.  Dans la boîte de dialogue **Nouvelle plateforme de solution**, sélectionnez **x64** et ne copiez pas les paramètres de la plateforme x86.  
+5.  Dans la boîte de dialogue **Nouvelle plateforme de solution**, choisissez **x64** et ne copiez pas les paramètres de la plateforme x86.  
   
      ![Boîte de dialogue Nouvelle plateforme de solution](../ide/media/buildwalk_newsolutionplatform.png "BuildWalk_NewSolutionPlatform")  
   
@@ -119,9 +67,11 @@ Avec cette procédure pas à pas, vous allez vous familiariser avec plusieurs op
   
  ![Gestionnaire de configurations avec la configuration de test](../ide/media/buildwalk_configmanagertestconfig.png "BuildWalk_ConfigManagerTestconfig")  
   
- Vous pouvez rapidement vérifier ou modifier la configuration de la solution active à l’aide de la liste **Configurations de solutions** présente dans la barre d’outils **Standard**.  
+7. Choisissez **Fermer**.  
+
+Vous pouvez rapidement vérifier ou modifier la configuration de la solution active à l’aide de la liste **Configurations de solutions** présente dans la barre d’outils **Standard**.  
   
- ![Option Configurations de solutions de la barre d’outils Standard](../ide/media/buildwalk_standardtoolbarsolutioncongfig.png "BuildWalk_StandardToolbarSolutionCongfig")  
+![Option Configurations de solutions de la barre d’outils Standard](../ide/media/buildwalk_standardtoolbarsolutioncongfig.png "BuildWalk_StandardToolbarSolutionCongfig")  
   
 ##  <a name="BKMK_building"></a> Générer l’application  
  Ensuite, vous allez générer la solution avec la configuration de build personnalisée.  
@@ -130,8 +80,21 @@ Avec cette procédure pas à pas, vous allez vous familiariser avec plusieurs op
   
 -   Dans la barre de menus, choisissez **Générer**, puis **Générer la solution**.  
   
- La fenêtre **Sortie** affiche les résultats de la génération. La génération a réussi, mais plusieurs messages d’avertissement ont été générés.  
+    La fenêtre **Sortie** affiche les résultats de la génération. La génération a réussi.  
   
+##  <a name="BKMK_hidewarning"></a> Masquer les avertissements du compilateur  
+Nous présenterons ensuite du code qui provoque la génération d’un avertissement par le compilateur.  
+
+1. Dans le projet C#, ouvrez le fichier **ExpenseReportPage.xaml.cs**. Dans la méthode **ExpenseReportPage**, ajoutez le code suivant : `int i;`.  
+
+    OU
+
+    Dans le projet Visual Basic, ouvrez le fichier **ExpenseReportPage.xaml.vb**. Dans le constructeur personnalisé **Public Sub New...**, ajoutez le code suivant : `Dim i`.  
+
+2. Générez la solution.  
+
+La fenêtre **Sortie** affiche les résultats de la génération. La génération a réussi, mais des avertissements ont été générés :  
+
  Figure 1 : Avertissements Visual Basic  
   
  ![Fenêtre Sortie Visual Basic](../ide/media/buildwalk_vbbuildoutputwnd.png "BuildWalk_VBBuildOutputWnd")  
@@ -140,9 +103,8 @@ Avec cette procédure pas à pas, vous allez vous familiariser avec plusieurs op
   
  ![Fenêtre Sortie Visual C#](../ide/media/buildwalk_csharpbuildoutputwnd.png "BuildWalk_CsharpBuildOutputWnd")  
   
-##  <a name="BKMK_hidewarning"></a> Masquer les avertissements du compilateur  
- Vous pouvez temporairement masquer certains messages d’avertissement pendant la génération, pour éviter qu’ils n’encombrent la fenêtre Sortie.  
-  
+Vous pouvez temporairement masquer certains messages d’avertissement pendant la génération, pour éviter qu’ils n’encombrent la fenêtre Sortie.  
+
 #### <a name="to-hide-a-specific-visual-c-warning"></a>Pour masquer un avertissement Visual C#  
   
 1.  Dans l’**Explorateur de solutions**, choisissez le premier nœud de projet.  
@@ -151,7 +113,7 @@ Avec cette procédure pas à pas, vous allez vous familiariser avec plusieurs op
   
      Le **Concepteur de projets** s’ouvre.  
   
-3.  Choisissez la page **Générer**, puis, dans la boîte de dialogue **Supprimer les avertissements**, spécifiez le numéro d’avertissement `1762`.  
+3.  Choisissez la page **Build**, puis, dans la zone **Supprimer les avertissements**, spécifiez le numéro d’avertissement **0168**.  
   
      ![Page Générer, Concepteur de projets](../ide/media/buildwalk_csharpsupresswarnings.png "BuildWalk_CsharpSupressWarnings")  
   
@@ -205,7 +167,7 @@ Avec cette procédure pas à pas, vous allez vous familiariser avec plusieurs op
   
 5.  Générez la solution, puis passez en revue les informations contenues dans la fenêtre **Sortie**.  
   
-     Les informations de build comprennent l’heure à laquelle la génération a démarré (située au début), l’ordre dans lequel les fichiers ont été traités et la durée totale du processus (située à la fin). Ces informations comprennent également la syntaxe de compilateur que Visual Studio exécute pendant la génération.  
+     Les informations de build comprennent l’heure à laquelle la génération a commencé (située au début), et l’ordre dans lequel les fichiers ont été traités. Ces informations comprennent également la syntaxe de compilateur que Visual Studio exécute pendant la génération.  
   
      Par exemple, dans la build Visual C#, l’option [/nowarn](/dotnet/visual-basic/reference/command-line-compiler/nowarn) contient le code d’avertissement (1762) que vous avez spécifié précédemment dans cette rubrique, ainsi que les trois autres avertissements.  
   
@@ -214,14 +176,14 @@ Avec cette procédure pas à pas, vous allez vous familiariser avec plusieurs op
     > [!TIP]
     >  Pour effectuer une recherche dans la fenêtre **Sortie**, affichez la boîte de dialogue **Rechercher** en appuyant sur les touches Ctrl + F.  
   
- Pour plus d’informations, consultez l’article [Comment : afficher, enregistrer et configurer des fichiers journaux de génération](../ide/how-to-view-save-and-configure-build-log-files.md).  
+Pour plus d’informations, consultez l’article [Comment : afficher, enregistrer et configurer des fichiers journaux de génération](../ide/how-to-view-save-and-configure-build-log-files.md).  
   
-##  <a name="BKMK_releasebuild"></a> Créer une version Release  
- Vous pouvez créer une version de l’exemple d’application qui soit optimisée pour sa livraison. Pour la version Release, vous allez spécifier que le fichier exécutable doit être copié vers un partage réseau avant que la génération ne démarre.  
+##  <a name="BKMK_releasebuild"></a> Créer une version de mise en production  
+ Vous pouvez créer une version de l’exemple d’application qui soit optimisée pour sa livraison. Pour la version de mise en production, vous allez spécifier que le fichier exécutable doit être copié vers un partage réseau avant que la génération ne démarre.  
   
  Pour plus d’informations, consultez [Guide pratique pour modifier le répertoire de sortie de la génération](../ide/how-to-change-the-build-output-directory.md) et [Génération et nettoyage de solutions et de projets dans Visual Studio](../ide/building-and-cleaning-projects-and-solutions-in-visual-studio.md).  
   
-#### <a name="to-specify-a-release-build-for-visual-basic"></a>Pour spécifier une version Release Visual Basic  
+#### <a name="to-specify-a-release-build-for-visual-basic"></a>Pour spécifier une version de mise en production Visual Basic  
   
 1.  Ouvrez le **Concepteur de projet**.  
   
@@ -244,7 +206,7 @@ Avec cette procédure pas à pas, vous allez vous familiariser avec plusieurs op
   
      ![Commande Générer la solution du menu Générer](../ide/media/exploreide-buildsolution.png "ExploreIDE-BuildSolution")  
   
-#### <a name="to-specify-a-release-build-for-visual-c"></a>Pour spécifier une version Release Visual C# #
+#### <a name="to-specify-a-release-build-for-visual-c"></a>Pour spécifier une version de mise en production Visual C# #
   
 1.  Ouvrez le **Concepteur de projet**.  
   
@@ -263,16 +225,17 @@ Avec cette procédure pas à pas, vous allez vous familiariser avec plusieurs op
     > [!IMPORTANT]
     >  Une boîte de message peut s’afficher, indiquant que le partage réseau que vous avez spécifié n’est pas un emplacement approuvé. Si vous faites confiance à l’emplacement que vous avez spécifié, cliquez sur **OK** dans la boîte de message.  
   
-6.  Générez l'application.  
+6.  Dans la **barre d’outils Standard**, définissez l’option Configurations de solutions sur **Release** et l’option Plateformes solution sur **x86**.  
+
+7.  Générez l'application.  
   
      ![Commande Générer la solution du menu Générer](../ide/media/exploreide-buildsolution.png "ExploreIDE-BuildSolution")  
   
  Le fichier exécutable est copié sur le chemin réseau que vous avez spécifié. Dans ce cas, le chemin du fichier est \\\myserver\builds\\*nom_fichier*.exe.  
   
- La procédure pas à pas est terminée.  
+La procédure pas à pas est terminée.  
   
 ## <a name="see-also"></a>Voir aussi  
  [Procédure pas à pas : génération d’un projet (C++)](/cpp/ide/walkthrough-building-a-project-cpp)   
  [Présentation de la précompilation de projets d’application web ASP.NET](http://msdn.microsoft.com/en-us/b940abbd-178d-4570-b441-52914fa7b887)   
  [Procédures pas à pas : utilisation de MSBuild](../msbuild/walkthrough-using-msbuild.md)
-

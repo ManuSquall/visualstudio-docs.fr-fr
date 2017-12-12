@@ -4,8 +4,7 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-sdk
+ms.technology: vs-ide-sdk
 ms.tgt_pltfrm: 
 ms.topic: article
 dev_langs:
@@ -13,33 +12,17 @@ dev_langs:
 - CSharp
 - C++
 - jsharp
-helpviewer_keywords:
-- MSBuild, reference
+helpviewer_keywords: MSBuild, reference
 ms.assetid: 093395e1-70da-4f74-b34d-046c5e2b32e8
-caps.latest.revision: 22
+caps.latest.revision: "22"
 author: kempb
 ms.author: kempb
 manager: ghogen
-translation.priority.ht:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
-ms.translationtype: Human Translation
-ms.sourcegitcommit: f6c59188abc8cbb9909c12438bc58fa9301d8af9
-ms.openlocfilehash: 25d55f075a3586356cc291e2811520a9bbafadf0
-ms.contentlocale: fr-fr
-ms.lasthandoff: 05/19/2017
-
+ms.openlocfilehash: 40b1fdb27bd2a256a1cff4b5a2066a3223939771
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: HT
+ms.contentlocale: fr-FR
+ms.lasthandoff: 10/31/2017
 ---
 # <a name="msbuild-reference"></a>Référence MSBuild
 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] est le système de génération de [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]. Les liens indiqués ci-dessous renvoient aux rubriques qui contiennent les informations de référence sur [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)].  
@@ -88,8 +71,7 @@ ms.lasthandoff: 05/19/2017
  Répertorie les caractères qui peuvent devoir être insérés dans une « séquence d’échappement » pour être interprétés correctement. Une séquence d’échappement est une série de caractères qui signifie que ce qui suit est une autre interprétation.  
   
 ## <a name="related-sections"></a>Rubriques connexes  
- [MSBuild Overview (Vue d’ensemble de MSBuild)](../msbuild/msbuild.md)
- Introduit [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] et fournit des liens vers les rubriques qui expliquent comment l’utiliser pour générer des projets.  
+ [Vue d’ensemble de MSBuild](../msbuild/msbuild.md) Présente [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] et fournit des liens vers des rubriques qui expliquent comment l’utiliser pour générer des projets.  
   
  <xref:Microsoft.Build.Conversion>  
  Contient des informations de référence sur l’espace de noms Conversion.  

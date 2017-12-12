@@ -1,69 +1,70 @@
 ---
-title: "Standard and Custom Toolset Configurations | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-helpviewer_keywords: 
-  - "MSBuild, custom toolset configurations"
-  - "MSBuild, msbuild.exe.config"
+title: "Configurations standard et personnalisée de l’ensemble d’outils | Microsoft Docs"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+helpviewer_keywords:
+- MSBuild, custom toolset configurations
+- MSBuild, msbuild.exe.config
 ms.assetid: 15a048c8-5ad3-448e-b6e9-e3c5d7147ed2
-caps.latest.revision: 31
-author: "kempb"
-ms.author: "kempb"
-manager: "ghogen"
-caps.handback.revision: 31
+caps.latest.revision: "31"
+author: kempb
+ms.author: kempb
+manager: ghogen
+ms.openlocfilehash: a1b0b6e2cc44193a684c6f411df908b0a54d31f1
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: HT
+ms.contentlocale: fr-FR
+ms.lasthandoff: 10/31/2017
 ---
-# Standard and Custom Toolset Configurations
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
-
-Un ensemble d'outils MSBuild contient des références aux tâches, cibles, et outils que vous pouvez utiliser pour générer un projet d'application.  MSBuild inclut un ensemble d'outils standards, mais vous pouvez également créer des ensembles d'outils personnalisés.  Pour plus d'informations sur la spécification d'un ensemble d'outils, voir [Toolset \(ToolsVersion\)](../msbuild/msbuild-toolset-toolsversion.md).  
+# <a name="standard-and-custom-toolset-configurations"></a>Configurations standard et personnalisée de l'ensemble d'outils
+Un ensemble d’outils MSBuild contient des références à des tâches, des cibles et des outils que vous pouvez utiliser pour générer un projet d’application. MSBuild inclut un ensemble d’outils standard, mais vous pouvez également créer des ensembles d’outils personnalisés. Pour plus d’informations sur la façon de spécifier un ensemble d’outils, consultez [Ensemble d’outils (ToolsVersion)](../msbuild/msbuild-toolset-toolsversion.md)  
   
-## Configurations d'ensemble d'outils standard  
- MSBuild 12.0 inclut les ensembles d'outils standards suivants :  
+## <a name="standard-toolset-configurations"></a>Configurations standard d’ensembles d’outils  
+ MSBuild 12.0 inclut les ensembles d’outils standard suivants :  
   
-|ToolsVersion|Chemin d'ensemble d'outils \(comme spécifié dans la propriété de génération MSBuildToolsPath ou de MSBuildBinPath\)|  
-|------------------|-------------------------------------------------------------------------------------------------------------------------|  
-|2.0|*Windows installation path*\\Microsoft.Net\\Framework\\v2.0.50727\\|  
-|3.5|*Windows installation path*\\Microsoft.NET\\Framework\\v3.5\\|  
-|4.0|*Windows installation path*\\Microsoft.NET\\Framework\\v4.0.30319\\|  
-|12.0|*%ProgramFiles%*\\ MSBuild\\12.0\\bin|  
+|ToolsVersion|Chemin de l’ensemble d’outils (tel que spécifié dans la propriété de build MSBuildToolsPath ou MSBuildBinPath)|  
+|------------------|--------------------------------------------------------------------------------------------|  
+|2.0|*Chemin d’installation de Windows*\Microsoft.Net\Framework\v2.0.50727\|  
+|3.5|*Chemin d’installation de Windows*\Microsoft.NET\Framework\v3.5\|  
+|4.0|*Chemin d’installation de Windows*\Microsoft.NET\Framework\v4.0.30319\|  
+|12.0|*%ProgramFiles%*\MSBuild\12.0\bin|  
   
- La valeur `ToolsVersion` identifie l'Ensemble d'outils utilisé par un projet que Visual Studio génère.  Dans [!INCLUDE[vs_dev12](../data-tools/includes/vs_dev12_md.md)] la valeur par défaut est « 12.0 » \(indépendamment de la version spécifiée dans le fichier projet\), mais substituez cet attribut à l'aide du commutateur **\/toolsversion** à une invite de commandes.  Pour plus d'informations sur cet attribut et d'autres façons de spécifier `ToolsVersion`, consultez [Overriding ToolsVersion Settings](../msbuild/overriding-toolsversion-settings.md).  
+ La valeur de `ToolsVersion` détermine l’ensemble d’outils utilisé par un projet généré par Visual Studio. Dans [!INCLUDE[vs_dev12](../extensibility/includes/vs_dev12_md.md)], la valeur par défaut est « 12.0 » (quelle que soit la version spécifiée dans le fichier projet), mais vous pouvez remplacer cet attribut avec le commutateur **/toolsversion** à une invite de commandes. Pour plus d’informations sur cet attribut et sur d’autres façons de spécifier `ToolsVersion`, consultez [Substitution des paramètres ToolsVersion](../msbuild/overriding-toolsversion-settings.md).  
   
- Si `ToolsVersion` n'est pas spécifié, la clé de Registre HKEY\_LOCAL\_MACHINE\\SOFTWARE\\Microsoft\\MSBuild\\\<numéro de version\>\\DefaultToolsVersion définit `ToolsVersion`, qui est toujours 2.0.  
+ Si `ToolsVersion` n’est pas spécifié, la clé de Registre **HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\MSBuild\\<Numéro de version\>\DefaultToolsVersion** définit `ToolsVersion`, qui est toujours 2.0.  
   
- Les clés de Registre suivantes spécifient le chemin d'installation de MSBuild.exe.  
+ Les clés de Registre suivantes spécifient le chemin d’installation de MSBuild.exe.  
   
-|Clé de Registre|Nom de clé|Valeur de la clé de chaîne|  
-|---------------------|----------------|--------------------------------|  
-|\\HKEY\_LOCAL\_MACHINE\\SOFTWARE\\Microsoft\\MSBuild\\ToolsVersions\\2.0\\|MSBuildToolsPath|Chemin d'installation .NET Framework 2.0|  
-|\\HKEY\_LOCAL\_MACHINE\\SOFTWARE\\Microsoft\\ MSBuild\\ToolsVersions\\3.5\\|MSBuildToolsPath|Chemin d'installation .NET Framework 3.5|  
-|\\HKEY\_LOCAL\_MACHINE\\SOFTWARE\\Microsoft\\ MSBuild\\ToolsVersions\\4.0\\|MSBuildToolsPath|Chemin d'installation .NET Framework 4|  
-|\\HKEY\_LOCAL\_MACHINE\\SOFTWARE\\Microsoft\\ MSBuild\\ToolsVersions\\12.0\\|MSBuildToolsPath|Chemin d'installation MSBuild|  
+|Clé de Registre|Nom de clé|Valeur de clé de type chaîne|  
+|------------------|--------------|----------------------|  
+|\HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\MSBuild\ToolsVersions\2.0\|MSBuildToolsPath|Chemin d’installation du .NET Framework 2.0|  
+|\HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\ MSBuild\ToolsVersions\3.5\|MSBuildToolsPath|Chemin d’installation du .NET Framework 3.5|  
+|\HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\ MSBuild\ToolsVersions\4.0\|MSBuildToolsPath|Chemin d’installation du .NET Framework 4|  
+|\HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\ MSBuild\ToolsVersions\12.0\|MSBuildToolsPath|Chemin d’installation de MSBuild|  
   
-### Sous\-ensembles d'outils  
- Si la clé de Registre dans la table précédente a une sous\-clé, MSBuild l'utilise pour déterminer le chemin d'accès d'un sous\-nœud ensemble d'outils peut substituer le chemin d'accès dans l'ensemble d'outils parent.  La sous\-clef suivante en est un exemple :  
+### <a name="sub-toolsets"></a>Sous-ensembles d'outils  
+ Si la clé de Registre du tableau précédent a une sous-clé, MSBuild l’utilise pour déterminer que le chemin d’un sous-ensemble d’outils peut remplacer le chemin dans l’ensemble d’outils parent. Voici un exemple de sous-clé :  
   
- \\HKEY\_LOCAL\_MACHINE\\SOFTWARE\\Microsoft\\MSBuild\\ToolsVersions\\12.0\\12.0  
+ \HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\MSBuild\ToolsVersions\12.0\12.0  
   
- Si les propriétés sont définies dans l'ensemble d'outils de base et le sous\-nœud ensemble d'outils sélectionné, les définitions de propriété dans le sous\-nœud ensemble d'outils sont utilisées.  Par exemple, l'ensemble d'outils MSBuild 4.0 définit `SDK40ToolsPath` pour indiquer le Kit de développement logiciel 7.0A, mais l'ensemble d'outils 4.0\\11.0 MSBuild définit la même propriété pour indiquer le 8.0A SDK.  Si `VisualStudioVersion` est supprimé, `SDK40ToolsPath` indiquerait 7.0A, mais si `VisualStudioVersion` a la valeur 11.0, la propriété indiquerait à la place 8.0A.  
+ Si des propriétés sont définies à la fois dans l’ensemble d’outils de base et dans le sous-ensemble d’outils sélectionné, les définitions de propriétés dans le sous-ensemble d’outils sont utilisées. Par exemple, l’ensemble d’outils MSBuild 4.0 définit `SDK40ToolsPath` comme pointant vers le SDK 7.0A, mais l’ensemble d’outils MSBuild 4.0\11.0 définit la même propriété comme pointant vers le SDK 8.0A. Si `VisualStudioVersion` n’est pas défini, `SDK40ToolsPath` pointe vers 7.0A, mais si `VisualStudioVersion` est défini comme pointant vers 11.0, la propriété pointe alors vers 8.0A.  
   
- La propriété de génération `VisualStudioVersion` indique si un sous ensemble d'outils est activé.  Par exemple, une valeur `VisualStudioVersion` « 12.0 » spécifie le sous ensemble d'outils 12.0 MSBuild.  Pour plus d’informations, voir la section Sous\-ensembles d'outils dans [Toolset \(ToolsVersion\)](../msbuild/msbuild-toolset-toolsversion.md).  
+ La propriété de build `VisualStudioVersion` indique si un sous-ensemble d’outils devient actif. Par exemple, la valeur « 12.0 » pour `VisualStudioVersion` spécifie le sous-ensemble d’outils MSBuild 12.0. Pour plus d’informations, consultez la section Sous-ensembles d’outils de [Ensemble d’outils MSBuild (ToolsVersion)](../msbuild/msbuild-toolset-toolsversion.md).  
   
 > [!NOTE]
->  Nous vous recommandons d'éviter de modifier ces paramètres.  Néanmoins, ajoutez vos propres paramètres et configurez des définitions d'ensembles d'outils personnalisées sur l'ordinateur, comme décrit dans la section suivante.  
+>  Nous vous recommandons de ne pas modifier ces paramètres. Vous pouvez néanmoins ajouter vos propres paramètres et spécifier des définitions d’ensembles d’outils personnalisés à l’échelle de l’ordinateur, comme décrit dans la section suivante.  
   
-## Définitions d'ensemble d'outils personnalisées  
- Lorsqu'un ensemble d'outils standard ne répond pas à vos spécifications de génération, vous pouvez créer un ensemble d'outils personnalisé.  Par exemple, vous pouvez avoir un scénario de laboratoire de version dans lequel vous devez avoir un système séparé pour générer des projets [!INCLUDE[vcprvc](../debugger/includes/vcprvc_md.md)].  En utilisant un ensemble d'outils personnalisé, assignez des valeurs personnalisées à l'attribut `ToolsVersion` lorsque vous créez des projets ou exécutez MSBuild.exe.  Ainsi, utilisez également la propriété `$(MSBuildToolsPath)` pour importer des fichiers .targets à partir de ce répertoire, et définissez vos propres propriétés d'ensembles d'outils personnalisées qui peuvent être utilisées pour tout projet qui utilise cet ensemble d'outils.  
+## <a name="custom-toolset-definitions"></a>Définitions d’ensembles d’outils personnalisés  
+ Quand un ensemble d’outils standard ne répond pas à vos spécifications pour la génération, vous pouvez créer un ensemble d’outils personnalisé. Par exemple, vous pouvez avoir un scénario de laboratoire de génération dans lequel vous devez disposer d’un système distinct pour la génération de projets [!INCLUDE[vcprvc](../code-quality/includes/vcprvc_md.md)]. Avec un ensemble d’outils personnalisé, vous pouvez affecter des valeurs personnalisées à l’attribut `ToolsVersion` quand vous créez des projets ou que vous exécutez MSBuild.exe. Ce faisant, vous pouvez également utiliser la propriété `$(MSBuildToolsPath)` pour importer des fichiers .targets à partir de ce répertoire, ainsi que définir vos propres propriétés de l’ensemble d’outils personnalisé qui peuvent être utilisées pour un projet utilisant cet ensemble d’outils.  
   
- Spécifiez un ensemble d'outils personnalisé dans le fichier de configuration pour MSBuild.exe \(ou pour l'outil personnalisé hôte du moteur MSBuild si c'est ce que vous utilisez\).  Par exemple, le fichier de configuration pour MSBuild.exe pourrait inclure la définition d'ensemble d'outils suivante si vous souhaitez substituer le comportement par défaut ToolsVersion 12,0.  
+ Spécifiez un ensemble d’outils personnalisé dans le fichier de configuration pour MSBuild.exe (ou pour l’outil personnalisé qui héberge le moteur MSBuild si c’est ce que vous utilisez). Par exemple, le fichier de configuration pour MSBuild.exe peut inclure la définition d’ensemble d’outils suivante si vous voulez remplacer le comportement par défaut de ToolsVersion 12.0.  
   
-```  
+```xml  
 <msbuildToolsets default="12.0">  
    <toolset toolsVersion="12.0">  
       <property name="MSBuildToolsPath"   
@@ -72,9 +73,9 @@ Un ensemble d'outils MSBuild contient des références aux tâches, cibles, et o
 </msbuildToolsets>  
 ```  
   
- `<msbuildToolsets>` doit également être défini dans le fichier de configuration, comme suit.  
+ `<msbuildToolsets>` doit également être défini comme suit dans le fichier de configuration.  
   
-```  
+```xml  
 <configSections>  
    <section name="msbuildToolsets"         
        Type="Microsoft.Build.BuildEngine.ToolsetConfigurationSection,   
@@ -85,20 +86,20 @@ Un ensemble d'outils MSBuild contient des références aux tâches, cibles, et o
 ```  
   
 > [!NOTE]
->  Pour être lu correctement, `<configSections>` doit être la première sous\-section dans la section `<configuration>`.  
+>  Pour que la lecture se fasse correctement, `<configSections>` doit être la première sous-section de la section `<configuration>`.  
   
- `ToolsetConfigurationSection` est une section de configuration personnalisée qui peut être utilisée par tout hôte MSBuild pour la configuration personnalisée.  Si vous utilisez un ensemble d'outils personnalisé, un hôte ne doit rien faire pour initialiser le moteur de génération, excepté fournir les entrées de fichier de configuration.  En définissant des entrées dans le Registre, spécifiez des ensembles d'outils d'ordinateur qui s'appliquent à MSBuild.exe, [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]et tous les hôtes de MSBuild.  
+ `ToolsetConfigurationSection` est une section de configuration personnalisée qui peut être utilisée par n’importe quel hôte MSBuild pour une configuration personnalisée. Si vous utilisez un ensemble d’outils personnalisé, un hôte n’a rien à faire pour initialiser le moteur de génération, sauf fournir les entrées du fichier de configuration. En définissant des entrées dans le Registre, vous pouvez spécifier des ensembles d’outils à l’échelle de l’ordinateur, qui s’appliquent à MSBuild.exe, à [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] et à tous les hôtes de MSBuild.  
   
 > [!NOTE]
->  Si un fichier de configuration définit des paramètres pour un `ToolsVersion` qui a déjà été défini dans le Registre, les deux définitions ne sont pas fusionnées.  La définition du fichier de configuration a priorité et les paramètres dans le Registre pour ce `ToolsVersion` sont ignorés.  
+>  Si un fichier de configuration définit des paramètres pour une `ToolsVersion` qui a déjà été définie dans le Registre, les deux définitions ne sont pas fusionnées. La définition du fichier de configuration a priorité et les paramètres du Registre pour cette `ToolsVersion` sont ignorés.  
   
- Les propriétés suivantes sont spécifiques à la valeur de `ToolsVersion` utilisée dans les projets :  
+ Les propriétés suivantes sont spécifiques à la valeur de `ToolsVersion` qui est utilisée dans les projets :  
   
--   **$ \(MSBuildBinPath\)** \- MSBuildBinPath a la valeur `ToolsPath` qui est spécifiée dans le Registre ou le fichier de configuration dans lequel est défini `ToolsVersion`.  Le paramètre `$(MSBuildToolsPath)` dans le Registre ou le fichier de configuration spécifie l'emplacement de tâches clefs et des objectifs.  Dans le fichier projet, cela mappe à la propriété $\(MSBuildBinPath\) et également à la propriété $\(MSBuildToolsPath\).  
+-   **$(MSBuildBinPath)** est défini sur la valeur de `ToolsPath` qui est spécifiée dans le Registre ou dans le fichier de configuration où `ToolsVersion` est définie. Le paramètre `$(MSBuildToolsPath)` dans le Registre ou dans le fichier de configuration spécifie l’emplacement des tâches et des cibles principales. Dans le fichier projet, ceci correspond à la propriété $(MSBuildBinPath) et à la propriété $(MSBuildToolsPath).  
   
--   `$(MSBuildToolsPath)` est une propriété réservée qui est fournie par la propriété MSBuildToolsPath spécifiée dans le fichier de configuration. \(Cette propriété se substitue à `$(MSBuildBinPath)`.  Toutefois, `$(MSBuildBinPath)` est retenu pour la compatibilité.\) Un ensemble d'outils personnalisé doit définir `$(MSBuildToolsPath)` ou `$(MSBuildBinPath)` mais pas les deux, sauf s'ils ont tous les deux la même valeur.  
+-   `$(MSBuildToolsPath)` est une propriété réservée qui est fournie par la propriété MSBuildToolsPath spécifiée dans le fichier de configuration. (Cette propriété remplace `$(MSBuildBinPath)`. Cependant, `$(MSBuildBinPath)` est conservé pour des raisons de compatibilité.) Un ensemble d’outils personnalisé doit définir `$(MSBuildToolsPath)` ou `$(MSBuildBinPath)`, mais pas les deux, sauf si tous les deux ont la même valeur.  
   
- Vous pouvez également ajouter des propriétés personnalisées spécifiques au ToolsVersion au fichier de configuration en utilisant la même syntaxe que celle utilisée pour ajouter la propriété MSBuildToolsPath.  Pour rendre ces propriétés personnalisées disponibles pour le fichier projet, utilisez le même nom que la valeur spécifiée dans le fichier de configuration.  Vous pouvez définir des ensembles d'outils mais pas des sous ensembles d'outils dans le fichier de configuration.  
+ Vous pouvez également ajouter des propriétés personnalisées spécifiques à ToolsVersion au fichier de configuration, en utilisant la même syntaxe que celle utilisée pour ajouter la propriété MSBuildToolsPath. Pour rendre ces propriétés personnalisées disponibles pour le fichier projet, utilisez le même nom que celui de la valeur spécifiée dans le fichier de configuration. Dans le fichier de configuration, vous pouvez définir des ensembles d’outils, mais pas des sous-ensembles d’outils.  
   
-## Voir aussi  
- [Toolset \(ToolsVersion\)](../msbuild/msbuild-toolset-toolsversion.md)
+## <a name="see-also"></a>Voir aussi  
+ [Ensemble d’outils (ToolsVersion)](../msbuild/msbuild-toolset-toolsversion.md)

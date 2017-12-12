@@ -1,58 +1,58 @@
 ---
-title: "/Clean (devenv.exe) | Microsoft Docs"
-ms.custom: ""
-ms.date: "12/05/2016"
-ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-general"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-helpviewer_keywords: 
-  - "/clean (commutateur de Devenv)"
-  - "builds (Team System), nettoyer les fichiers"
-  - "clean (commutateur de Devenv)"
-  - "Devenv, /clean (commutateur)"
+title: -Clean (devenv.exe) | Microsoft Docs
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-general
+ms.tgt_pltfrm: 
+ms.topic: article
+helpviewer_keywords:
+- builds [Team System], cleaning files
+- clean Devenv switch
+- /clean Devenv switch
+- Devenv, /clean switch
 ms.assetid: 79929dfd-22c9-4cec-a0d0-a16f15b8f7e4
-caps.latest.revision: 12
-caps.handback.revision: 12
-author: "kempb"
-ms.author: "kempb"
-manager: "ghogen"
+caps.latest.revision: "12"
+author: gewarren
+ms.author: gewarren
+manager: ghogen
+ms.openlocfilehash: bd4b344860190d0dcfc01adf6ccf553d34c5b038
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: HT
+ms.contentlocale: fr-FR
+ms.lasthandoff: 10/31/2017
 ---
-# /Clean (devenv.exe)
-[!INCLUDE[vs2017banner](../../code-quality/includes/vs2017banner.md)]
-
+# <a name="clean-devenvexe"></a>/Clean (devenv.exe)
 Nettoie tous les fichiers et répertoires de sortie intermédiaires.  
   
-## Syntaxe  
+## <a name="syntax"></a>Syntaxe  
   
 ```  
 devenv FileName /Clean [ /project projectnameorfile [/projectconfig name ] ]  
 ```  
   
-## Arguments  
+## <a name="arguments"></a>Arguments  
  `FileName`  
- Obligatoire.  Chemin d'accès et nom complets du fichier solution ou fichier projet.  
+ Obligatoire. Chemin complet et nom du fichier solution ou fichier projet.  
   
- \/project `ProjName`  
- Facultatif.  Chemin d'accès et nom d'un fichier projet dans la solution.  Vous pouvez entrer un chemin d'accès relatif du dossier `SolutionName` au fichier projet, le nom complet du projet ou le chemin d'accès complet et le nom du fichier projet.  
+ /project `ProjName`  
+ Facultatif. Chemin et nom d’un fichier projet dans la solution. Vous pouvez entrer un chemin relatif du dossier `SolutionName` vers le fichier projet, le nom d’affichage du projet ou encore le chemin complet et le nom du fichier projet.  
   
- \/projectconfig `ProjConfigName`  
- Facultatif.  Le nom d'une configuration de build de projet à utiliser lors du nettoyage du `/project` nommé.  
+ /projectconfig `ProjConfigName`  
+ Facultatif. Nom d’une configuration de build de projet à utiliser lors du nettoyage du `/project` nommé.  
   
-## Notes  
- Ce commutateur exécute la même fonction que la commande de menu **Nettoyer la solution** dans l'environnement de développement intégré \(IDE\).  
+## <a name="remarks"></a>Remarques  
+ Ce commutateur exécute la même fonction que la commande de menu **Nettoyer la solution** dans l’environnement de développement intégré (IDE).  
   
- Mettez les chaînes qui comprennent des espaces entre des guillemets doubles.  
+ Placez entre guillemets doubles les chaînes contenant des espaces.  
   
- Les informations résumées pour les nettoyages et les générations, y compris les erreurs, peuvent être affichées dans la fenêtre **Commande**, ou dans tout fichier journal spécifié avec le commutateur `/out`.  
+ Les informations résumées pour les nettoyages et les builds, notamment les erreurs, peuvent être affichées dans la fenêtre **Commande**, ou dans tout fichier journal spécifié avec le commutateur `/out`.  
   
-## Exemple  
- Le premier exemple nettoie la solution `MySolution`, à l'aide de la configuration par défaut spécifiée dans le fichier solution.  
+## <a name="example"></a>Exemple  
+ Le premier exemple nettoie la solution `MySolution` à l’aide de la configuration par défaut spécifiée dans le fichier solution.  
   
- Ce deuxième exemple nettoie le projet `CSharpConsoleApp`, à l'aide de la configuration de build de projet `Debug` dans la configuration de solution `Debug` de `MySolution`.  
+ Le deuxième exemple nettoie le projet `CSharpConsoleApp` en utilisant la configuration de build de projet `Debug` présente dans la configuration de solution `Debug` de `MySolution`.  
   
 ```  
 Devenv "C:\Documents and Settings\someuser\My Documents\Visual Studio\Projects\MySolution\MySolution.sln" /Clean  
@@ -60,8 +60,8 @@ Devenv "C:\Documents and Settings\someuser\My Documents\Visual Studio\Projects\M
 devenv "C:\Documents and Settings\someuser\My Documents\Visual Studio\Projects\MySolution\MySolution.sln" /Clean /project "CSharpWinApp\CSharpWinApp.csproj" /projectconfig "Debug"   
 ```  
   
-## Voir aussi  
- [Commutateurs de la ligne de commande de Devenv](../../ide/reference/devenv-command-line-switches.md)   
- [\/Build](../../ide/reference/build-devenv-exe.md)   
- [\/Rebuild](../../ide/reference/rebuild-devenv-exe.md)   
- [\/Out](../../ide/reference/out-devenv-exe.md)
+## <a name="see-also"></a>Voir aussi  
+ [Commutateurs de la ligne de commande Devenv](../../ide/reference/devenv-command-line-switches.md)   
+ [/Build (devenv.exe)](../../ide/reference/build-devenv-exe.md)   
+ [/Rebuild (devenv.exe)](../../ide/reference/rebuild-devenv-exe.md)   
+ [/Out (devenv.exe)](../../ide/reference/out-devenv-exe.md)

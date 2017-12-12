@@ -1,11 +1,10 @@
 ---
 title: "Options (boîte de dialogue), Projets et solutions, Générer et exécuter | Microsoft Docs"
 ms.custom: 
-ms.date: 7/14/2017
+ms.date: 07/14/2017
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-general
+ms.technology: vs-ide-general
 ms.tgt_pltfrm: 
 ms.topic: article
 f1_keywords:
@@ -16,18 +15,16 @@ helpviewer_keywords:
 - run actions
 - debugger, run options
 ms.assetid: c884976e-c0df-4c6d-8e3a-856ea2bd547c
-caps.latest.revision: 20
+caps.latest.revision: "20"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
+ms.openlocfilehash: e15880551e2a896bca473d463b253ec15dda7b36
+ms.sourcegitcommit: c0422a3d594ea5ae8fc03f1aee684b04f417522e
 ms.translationtype: HT
-ms.sourcegitcommit: e48ebcafaca37505dbcc92bce682d0c6169004e1
-ms.openlocfilehash: 8e5165b4b17195e5f9172dd25962c9486a7aeeeb
-ms.contentlocale: fr-fr
-ms.lasthandoff: 07/26/2017
-
+ms.contentlocale: fr-FR
+ms.lasthandoff: 11/02/2017
 ---
-
 # <a name="options-dialog-box--projects-and-solutions-build-and-run"></a>Options (boîte de dialogue), Projets et solutions, Générer et exécuter
 
 Dans cette boîte de dialogue, vous pouvez spécifier le nombre maximal de projets Visual C++ ou Visual C# pouvant être générés simultanément, certains comportements de génération par défaut et certains paramètres du journal de génération. Pour accéder à ces options, sélectionnez **Outils > Options**, développez **Projets et solutions** et sélectionnez **Générer et exécuter**.
@@ -60,6 +57,6 @@ Détermine quelles informations s’affichent dans la fenêtre **Sortie** de la 
 Détermine quelles informations sont écrites dans le fichier journal de build, qui se trouve dans \\...\\*Nom_Projet*\Debug\\*Nom_Projet*.log.  
 
 ## <a name="see-also"></a>Voir aussi  
--[Compilation et génération](../../ide/compiling-and-building-in-visual-studio.md)
-- [Options (boîte de dialogue), Projets et solutions](projects-and-solutions-options-dialog-box.md)
-- [Options (boîte de dialogue), Projets et solutions, Projets web](options-dialog-box-projects-and-solutions-web-projects.md)
+[Compilation et génération](../../ide/compiling-and-building-in-visual-studio.md)  
+[Boîte de dialogue Options, Projets et solutions](projects-and-solutions-options-dialog-box.md)  
+[Boîte de dialogue Options, Projets et solutions, Projets web](options-dialog-box-projects-and-solutions-web-projects.md)

@@ -1,40 +1,43 @@
 ---
-title: "JsPropertyIdType (&#233;num&#233;ration) | Microsoft Docs"
-ms.custom: ""
-ms.date: "01/18/2017"
-ms.prod: "windows-client-threshold"
-ms.reviewer: ""
-ms.suite: ""
-ms.tgt_pltfrm: ""
-ms.topic: "reference"
+title: "JsPropertyIdType, énumération | Microsoft Docs"
+ms.custom: 
+ms.date: 01/18/2017
+ms.prod: windows-client-threshold
+ms.reviewer: 
+ms.suite: 
+ms.tgt_pltfrm: 
+ms.topic: reference
 ms.assetid: 1b8293ca-a040-402d-8ea5-4299390adcd0
-caps.latest.revision: 2
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 2
+caps.latest.revision: "2"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: f42c6b37e2612c18f952e8d34c3e31cedf86a164
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.translationtype: HT
+ms.contentlocale: fr-FR
+ms.lasthandoff: 10/27/2017
 ---
-# JsPropertyIdType (&#233;num&#233;ration)
+# <a name="jspropertyidtype-enumeration"></a>JsPropertyIdType (énumération)
 Type d'énumération d'une propriété JavaScript.  
   
-## Syntaxe  
+## <a name="syntax"></a>Syntaxe  
   
 ```vb  
 enum JsPropertyIdType;  
-  
 ```  
   
-## Membres  
+## <a name="members"></a>Membres  
   
-### Valeurs  
+### <a name="values"></a>Valeurs  
   
 |Nom|Description|  
-|---------|-----------------|  
+|----------|-----------------|  
 |JsPropertyIdTypeString|Type d'énumération d'une propriété de chaîne JavaScript.|  
 |JsPropertyIdTypeSymbol|Type d'énumération d'une propriété de symbole JavaScript.|  
   
-## Configuration requise  
+## <a name="requirements"></a>Spécifications  
  jsrt.h  
   
-## Voir aussi  
- [Référence \(JavaScript Runtime\)](../chakra-hosting/reference-javascript-runtime.md)
+## <a name="see-also"></a>Voir aussi  
+ [Référence (JavaScript Runtime)](../chakra-hosting/reference-javascript-runtime.md)

@@ -1,35 +1,36 @@
 ---
-title: "Item Metadata in Target Batching | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-helpviewer_keywords: 
-  - "batching [MSBuild]"
-  - "MSBuild, target batching"
-  - "target batching [MSBuild]"
+title: "Métadonnées d’éléments dans le traitement par lots des cibles | Microsoft Docs"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+helpviewer_keywords:
+- batching [MSBuild]
+- MSBuild, target batching
+- target batching [MSBuild]
 ms.assetid: f3cc4186-6a4c-4161-bbe5-1ec638b4925b
-caps.latest.revision: 6
-author: "kempb"
-ms.author: "kempb"
-manager: "ghogen"
-caps.handback.revision: 6
+caps.latest.revision: "6"
+author: kempb
+ms.author: kempb
+manager: ghogen
+ms.openlocfilehash: d24400bc3889d5f7fbe691d3e75b7fd7ad155e01
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: HT
+ms.contentlocale: fr-FR
+ms.lasthandoff: 10/31/2017
 ---
-# Item Metadata in Target Batching
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
-
-[!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] a la capacité d'exécuter une analyse de dépendance sur les entrées et les sorties d'une cible de génération.  S'il est déterminé que les entrées ou les sorties de la cible sont à jour, la cible sera ignorée et la génération aura lieu.  Les éléments `Target` utilisent les attributs `Inputs` et `Outputs` pour spécifier les éléments à inspecter pendant l'analyse de dépendance.  
+# <a name="item-metadata-in-target-batching"></a>Métadonnées d'éléments dans le traitement par lots des cibles
+[!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] a la capacité d’effectuer une analyse des dépendances sur les entrées et les sorties d’une cible de génération. S’il est déterminé que les entrées ou les sorties de la cible sont à jour, la cible est ignorée et la génération a lieu. Les éléments `Target` utilisent les attributs `Inputs` et `Outputs` pour spécifier les éléments à inspecter pendant l’analyse des dépendances.  
   
- Si une cible contient une tâche qui utilise des éléments traités par lots comme entrées ou sorties, l'élément `Target` de la cible doit utiliser le traitement par lots dans ses attributs `Inputs` ou `Outputs` pour permettre à [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] d'ignorer les lots d'éléments qui sont déjà à jour.  
+ Si une cible contient une tâche qui utilise des éléments traités par lots comme entrées ou sorties, l’élément `Target` de la cible doit utiliser le traitement par lots dans ses attributs `Inputs` ou `Outputs` pour permettre à [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] d’ignorer les lots d’éléments qui sont déjà à jour.  
   
-## Traitement par lots de cibles  
- L'exemple suivant contient une liste d'éléments nommée `Res` qui est divisée en deux lots basés sur les métadonnées d'élément `Culture`.  Chacun de ces lots est passé dans la tâche `AL`, qui crée un assembly de sortie pour chaque lot.  En utilisant le traitement par lot sur l'attribut `Outputs` de l'élément `Target`, [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] peut déterminer si chacun des lots individuels est à jour avant d'exécuter la cible.  Sans utiliser le traitement par lots des cibles, les deux lots d'éléments seraient exécutés tâche par tâche chaque fois que la cible est exécutée.  
+## <a name="batching-targets"></a>Traitement par lots des cibles  
+ L’exemple suivant contient une liste d’éléments nommée `Res` qui est divisée en deux lots, selon les métadonnées de l’élément `Culture`. Chacun de ces lots est passé à la tâche `AL`, qui crée un assembly de sortie pour chaque lot. L’utilisation du traitement par lot sur l’attribut `Outputs` de l’élément `Target` permet à [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] de déterminer si chaque lot est à jour avant d’exécuter la cible. Si vous n’utilisez pas le traitement par lot des cibles, les deux lots d’éléments sont exécutés par la tâche chaque fois que la cible est exécutée.  
   
-```  
+```xml  
 <Project  
     xmlns="http://schemas.microsoft.com/developer/msbuild/2003">  
   
@@ -67,8 +68,8 @@ caps.handback.revision: 6
 </Project>  
 ```  
   
-## Voir aussi  
- [How to: Build Incrementally](../msbuild/how-to-build-incrementally.md)   
- [Batching](../msbuild/msbuild-batching.md)   
- [Target, élément \(MSBuild\)](../msbuild/target-element-msbuild.md)   
- [Item Metadata in Task Batching](../msbuild/item-metadata-in-task-batching.md)
+## <a name="see-also"></a>Voir aussi  
+ [Guide pratique pour effectuer des générations incrémentielles](../msbuild/how-to-build-incrementally.md)   
+ [Traitement par lot MSBuild](../msbuild/msbuild-batching.md)   
+ [Target, élément (MSBuild)](../msbuild/target-element-msbuild.md)   
+ [Métadonnées d’éléments dans le traitement par lots de tâches](../msbuild/item-metadata-in-task-batching.md)

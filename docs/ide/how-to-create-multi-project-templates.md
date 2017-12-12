@@ -1,61 +1,62 @@
 ---
-title: "Comment&#160;: cr&#233;er des mod&#232;les &#224; plusieurs projets | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-general"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-helpviewer_keywords: 
-  - "modèles à projets multiples"
-  - "modèles de projet, créer des modèles à projets multiples"
-  - "modèles Visual Studio, créer des modèles à projets multiples"
+title: "Guide pratique pour créer des modèles à plusieurs projets | Microsoft Docs"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-general
+ms.tgt_pltfrm: 
+ms.topic: article
+helpviewer_keywords:
+- Visual Studio templates, creating multi-project templates
+- project templates, creating multi-project templates
+- multi-project templates
 ms.assetid: 8c7f7065-137e-40ad-868d-37e007270efd
-caps.latest.revision: 16
-author: "kempb"
-ms.author: "kempb"
-manager: "ghogen"
-caps.handback.revision: 16
+caps.latest.revision: "16"
+author: gewarren
+ms.author: gewarren
+manager: ghogen
+ms.openlocfilehash: 9d4ffd6c3aa23ebc2b801de2d581876ff5afd480
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: HT
+ms.contentlocale: fr-FR
+ms.lasthandoff: 10/31/2017
 ---
-# Comment&#160;: cr&#233;er des mod&#232;les &#224; plusieurs projets
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
-
-Les modèles à plusieurs projets jouent le rôle de conteneurs pour au moins deux projets.  Lorsqu'un projet basé sur un modèle à projets multiples est créé à partir de la boîte de dialogue **Nouveau projet**, tous les projets inclus dans ce modèle sont ajoutés à la solution.  
+# <a name="how-to-create-multi-project-templates"></a>Guide pratique pour créer des modèles à plusieurs projets
+Les modèles à plusieurs projets jouent le rôle de conteneurs pour au moins deux projets. Quand un projet basé sur un modèle à plusieurs projets est créé à partir de la boîte de dialogue **Nouveau projet**, tous les projets inclus dans le modèle sont ajoutés à la solution.  
   
- Un modèle à projets multiples doit inclure les éléments suivants, compressés dans un fichier .zip :  
+ Un modèle à plusieurs projets doit inclure les éléments suivants, compressés dans un fichier .zip :  
   
--   Un fichier .vstemplate racine pour tout le modèle à plusieurs projets.  Ce fichier .vstemplate racine contient les métadonnées affichées dans la boîte de dialogue **Nouveau projet** et spécifie où rechercher les fichiers .vstemplate pour les projets de ce modèle.  Ce fichier doit se trouver à la racine du fichier .zip.  
+-   Un fichier .vstemplate racine pour tout le modèle à plusieurs projets. Ce fichier .vstemplate racine contient les métadonnées affichées dans la boîte de dialogue **Nouveau projet** et indique l’emplacement des fichiers .vstemplate pour les projets du modèle. Ce fichier doit se trouver à la racine du fichier .zip.  
   
--   Un ou plusieurs dossiers contenant les fichiers obligatoires pour un modèle de projet complet.  Ils incluent tous les fichiers de code du projet ainsi qu'un fichier .vstemplate pour le projet.  
+-   Un ou plusieurs dossiers contenant les fichiers nécessaires pour un modèle de projet complet. Ils incluent tous les fichiers de code du projet ainsi qu’un fichier .vstemplate pour le projet.  
   
- Par exemple, le fichier .zip d'un modèle à projets multiples contenant deux projets peut contenir les fichiers et répertoires suivants :  
+ Par exemple, le fichier .zip d’un modèle à plusieurs projets contenant deux projets peut contenir les fichiers et répertoires suivants :  
   
  MultiProjectTemplate.vstemplate  
   
- \\Project1\\Project1.vstemplate  
+ \Project1\Project1.vstemplate  
   
- \\Project1\\Project1.vbproj  
+ \Project1\Project1.vbproj  
   
- \\Project1\\Class.vb  
+ \Project1\Class.vb  
   
- \\Project2\\Project2.vstemplate  
+ \Project2\Project2.vstemplate  
   
- \\Project2\\Project2.vbproj  
+ \Project2\Project2.vbproj  
   
- \\Project2\\Class.vb  
+ \Project2\Class.vb  
   
- Le fichier .vstemplate racine d'un modèle à projets multiples présente les différences suivantes par rapport à un modèle de projet unique :  
+ Le fichier .vstemplate racine d’un modèle à plusieurs projets présente les différences suivantes par rapport à un modèle à projet unique :  
   
--   L'attribut `Type` de l'élément `VSTemplate` contient la valeur `ProjectGroup`.  Par exemple :  
+-   L’attribut `Type` de l’élément `VSTemplate` a la valeur `ProjectGroup`. Exemple :  
   
     ```  
     <VSTemplate Version="2.0.0" Type="ProjectGroup"  
         xmlns="http://schemas.microsoft.com/developer/vstemplate/2005">  
     ```  
   
--   L'élément `TemplateContent` contient un élément `ProjectCollection` avec un ou plusieurs éléments `ProjectTemplateLink` qui définissent les chemins d'accès aux fichiers .vstemplate des projets inclus.  Par exemple :  
+-   L’élément `TemplateContent` contient un élément `ProjectCollection` avec un ou plusieurs éléments `ProjectTemplateLink` qui définissent les chemins des fichiers .vstemplate des projets inclus. Exemple :  
   
     ```  
     <TemplateContent>  
@@ -70,26 +71,26 @@ Les modèles à plusieurs projets jouent le rôle de conteneurs pour au moins de
     </TemplateContent>  
     ```  
   
- Les modèles à plusieurs projets ont également un comportement différent des modèles normaux.  Les modèles à plusieurs projets ont les caractéristiques uniques suivantes :  
+ Les modèles à plusieurs projets ont également un comportement différent des modèles standard. Les modèles à plusieurs projets ont les caractéristiques particulières suivantes :  
   
--   Il n'est pas possible d'assigner des noms à des projets individuels d'un modèle à plusieurs projets dans la boîte de dialogue **Nouveau projet**.  À la place, pour spécifier le nom de chaque projet, utilisez l'attribut `ProjectName` sur l'élément `ProjectTemplateLink`.  Pour plus d'informations, consultez le premier exemple de la section suivante.  
+-   Vous ne pouvez pas assigner les noms de manière individuelle aux projets d’un modèle à plusieurs projets dans la boîte de dialogue **Nouveau projet**. Pour spécifier le nom de chaque projet, vous devez définir l’attribut `ProjectName` sur l’élément `ProjectTemplateLink`. Pour plus d’informations, consultez le premier exemple dans la section suivante.  
   
--   Les modèles à projets multiples peuvent contenir des projets écrits dans différents langages, mais l'ensemble du modèle ne peut être placé que dans une catégorie à l'aide de l'élément `ProjectType`.  
+-   Les modèles à plusieurs projets peuvent contenir des projets écrits dans des langages différents, mais l’ensemble du modèle doit être placé dans une seule catégorie à l’aide de l’élément `ProjectType`.  
   
-### Pour créer un modèle à plusieurs projets  
+### <a name="to-create-a-multi-project-template"></a>Pour créer un modèle à plusieurs projets  
   
 1.  Créez les projets à inclure dans le modèle à plusieurs projets.  
   
-2.  Créez des fichiers .vstemplate pour chaque projet.  Pour plus d'informations, consultez [Comment : créer des modèles de projet](../ide/how-to-create-project-templates.md).  
+2.  Créez des fichiers .vstemplate pour chacun des projets. Pour plus d’informations, consultez [Guide pratique pour créer des modèles de projet](../ide/how-to-create-project-templates.md).  
   
-3.  Créez un fichier .vstemplate racine qui contiendra les métadonnées du modèle à projets multiples.  Pour plus d'informations, consultez le premier exemple de la section suivante.  
+3.  Créez un fichier .vstemplate racine qui contiendra les métadonnées du modèle à plusieurs projets. Pour plus d’informations, consultez le premier exemple dans la section suivante.  
   
-4.  Sélectionnez les fichiers et dossiers à inclure dans votre modèle, cliquez avec le bouton droit sur la sélection, cliquez sur **Envoyer vers** puis cliquez sur **Dossier compressé \(zippé\)**.  Les fichiers et dossiers sont compressés dans un fichier .zip.  
+4.  Sélectionnez les fichiers et dossiers à inclure dans votre modèle, cliquez avec le bouton droit sur la sélection, cliquez sur **Envoyer vers**, puis cliquez sur **Dossier compressé (zippé)**. Les fichiers et dossiers sont compressés dans un fichier .zip.  
   
-5.  Placez le fichier modèle .zip dans le répertoire du modèle de projet [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)].  par défaut, ce répertoire est \\My Documents\\Visual Studio *version*\\Templates\\ProjectTemplates \\.  
+5.  Placez le fichier modèle .zip dans le répertoire du modèle de projet [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]. Par défaut, ce répertoire est \My Documents\Visual Studio *Version*\Templates\ProjectTemplates\\.  
   
-## Exemple  
- Cet exemple montre un fichier .vstemplate racine de base pour un modèle à projets multiples.  Dans cet exemple, le modèle contient deux projets, `My Windows Application` et `My Class Library`.  L'attribut `ProjectName` de l'élément `ProjectTemplateLink` définit le nom à assigner au projet dans [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)].  Si l'attribut `ProjectName` n'existe pas, le nom du fichier .vstemplate est utilisé comme nom du projet.  
+## <a name="example"></a>Exemple  
+ Cet exemple montre un fichier .vstemplate racine de base pour un modèle à plusieurs projets. Dans cet exemple, le modèle contient deux projets, `My Windows Application` et `My Class Library`. L'attribut `ProjectName` de l'élément `ProjectTemplateLink` définit le nom à assigner au projet dans [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]. Si l'attribut `ProjectName` n'existe pas, le nom du fichier .vstemplate est utilisé comme nom du projet.  
   
 ```  
 <VSTemplate Version="2.0.0" Type="ProjectGroup"  
@@ -113,8 +114,8 @@ Les modèles à plusieurs projets jouent le rôle de conteneurs pour au moins de
 </VSTemplate>  
 ```  
   
-## Exemple  
- Cet exemple utilise l'élément `SolutionFolder` pour diviser les projets en deux groupes, `Math Classes` et `Graphics Classes`.  Le modèle contient quatre projets, dont deux placés dans chaque dossier de solution.  
+## <a name="example"></a>Exemple  
+ Cet exemple utilise l’élément `SolutionFolder` pour scinder les projets en deux groupes, `Math Classes` et `Graphics Classes`. Le modèle contient quatre projets, dont deux sont placés dans chaque dossier de solution.  
   
 ```  
 <VSTemplate Version="2.0.0" Type="ProjectGroup"  
@@ -148,10 +149,10 @@ Les modèles à plusieurs projets jouent le rôle de conteneurs pour au moins de
 </VSTemplate>  
 ```  
   
-## Voir aussi  
- [Création de modèles de projets et d'éléments personnalisés](../ide/creating-project-and-item-templates.md)   
- [Référence du schéma de modèle Visual Studio](../extensibility/visual-studio-template-schema-reference.md)   
- [Comment : créer des modèles de projet](../ide/how-to-create-project-templates.md)   
- [Référence du schéma de modèle Visual Studio](../extensibility/visual-studio-template-schema-reference.md)   
- [SolutionFolder, élément \(modèles Visual Studio\)](../extensibility/solutionfolder-element-visual-studio-templates.md)   
- [ProjectTemplateLink, élément \(modèles Visual Studio\)](../extensibility/projecttemplatelink-element-visual-studio-templates.md)
+## <a name="see-also"></a>Voir aussi  
+ [Création de modèles de projet et d’élément](../ide/creating-project-and-item-templates.md)   
+ [Référence du schéma de modèle Visual Studio](../extensibility/visual-studio-template-schema-reference.md)   
+ [Guide pratique pour créer des modèles de projet](../ide/how-to-create-project-templates.md)   
+ [Référence du schéma de modèle Visual Studio](../extensibility/visual-studio-template-schema-reference.md)   
+ [Élément SolutionFolder (modèles Visual Studio)](../extensibility/solutionfolder-element-visual-studio-templates.md)   
+ [Élément ProjectTemplateLink (modèles Visual Studio)](../extensibility/projecttemplatelink-element-visual-studio-templates.md)

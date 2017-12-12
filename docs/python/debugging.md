@@ -1,35 +1,30 @@
 ---
 title: "Débogage de Python dans Visual Studio | Microsoft Docs"
 ms.custom: 
-ms.date: 7/13/2017
-ms.prod: visual-studio-dev15
+ms.date: 07/13/2017
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- devlang-python
+ms.technology: devlang-python
 ms.devlang: python
 ms.tgt_pltfrm: 
 ms.topic: article
-ms.assetid: 2192dc77-b5da-4332-b753-fa20f03f81e0
-caps.latest.revision: 1
+caps.latest.revision: "1"
 author: kraigb
 ms.author: kraigb
 manager: ghogen
+ms.openlocfilehash: 8d17c0a3a1d376f7b44e5fb78f362fc49458462e
+ms.sourcegitcommit: b7d3b90d0be597c9d01879338dd2678c881087ce
 ms.translationtype: HT
-ms.sourcegitcommit: 6d25db4639f2c8391c1e32542701ea359f560178
-ms.openlocfilehash: 92fd0f30dfbb09f0eca8d2c9bc98d7904d81353c
-ms.contentlocale: fr-fr
-ms.lasthandoff: 07/18/2017
-
+ms.contentlocale: fr-FR
+ms.lasthandoff: 12/01/2017
 ---
-
 # <a name="debugging-your-python-code"></a>Débogage de votre code Python
 
 Visual Studio offre une expérience de débogage complète pour Python, comprenant notamment l’attachement à des processus en cours d’exécution, l’évaluation d’expressions dans les Fenêtres Espion et Exécution, l’inspection de variables locales, les points d’arrêt, les instructions de pas à pas détaillé/sortant/principal, la définition de l’instruction suivante, etc. 
 
-Pour obtenir une vue d’ensemble du débogage, visionnez la vidéo [Getting Started with PTVS, Part 4: Debugging](https://youtu.be/bO7wpzgy74A?list=PLReL099Y5nRdLgGAdrb_YeTdEnd23s6Ff) (Prise en main de PTVS, Partie 4 : Débogage) (youtube.com, 3 mn 30 s).
+Pour une vue d’ensemble du débogage, consultez [Débogage de Python](https://mva.microsoft.com/en-US/training-courses/python-tools-for-visual-studio-2017-18121?l=Ep5dp5LWE_3805918567) (Microsoft Virtual Academy, 3 minutes 32 secondes).
 
-> [!VIDEO https://www.youtube.com/embed/bO7wpzgy74A]
+> [!VIDEO https://mva.microsoft.com/en-US/training-courses-embed/python-tools-for-visual-studio-2017-18121/Video-Debugging-Python-Ep5dp5LWE_3805918567]
 
 Dans cette rubrique :
 
@@ -44,13 +39,15 @@ Consultez également les articles ci-après concernant le débogage propre à un
 - [Débogage Python/C++ en mode mixte](debugging-mixed-mode.md)
 - [Symboles de débogage en mode mixte](debugging-symbols-for-mixed-mode.md)
 
-<a name="debugging-without-a-project"</a>
+<a name="debugging-without-a-project"></a>
+
 > [!Tip]
 > Python dans Visual Studio prend en charge le débogage sans projet. Après avoir ouvert un fichier Python autonome, cliquez avec le bouton droit dans l’éditeur, puis sélectionnez **Démarrer avec débogage**. Visual Studio lance alors le script avec l’environnement global par défaut (consultez l’article [Environnements Python](python-environments.md)) sans aucun argument. Mais vous bénéficiez désormais d’une prise en charge complète du débogage.
 >
 > Pour contrôler l’environnement et les arguments, créez un projet pour le code. Vous pouvez facilement effectuer cette opération à l’aide du modèle de projet [À partir de code Python existant](python-projects.md#creating-a-project-from-existing-files).
 
-<a name="debugging-with-a-project"</a>
+<a name="debugging-with-a-project"></a>
+
 ## <a name="basic-debugging"></a>Bases du débogage
 
 Le flux de travail de débogage de base implique la définition de points d’arrêt, l’exécution de code pas à pas, l’inspection de valeurs et la gestion des exceptions, comme décrit dans les sections suivantes. Pour plus d’informations sur le débogueur Visual Studio, consultez l’article [Débogage dans Visual Studio](../debugger/debugging-in-visual-studio.md).

@@ -1,19 +1,17 @@
 ---
-title: "Personnalisation du système de génération"
+title: "Personnalisation du système de génération | Microsoft Docs"
 description: 
 author: asb3993
 ms.author: amburns
 ms.date: 04/14/2017
 ms.topic: article
 ms.assetid: 6958B102-8527-4B40-BC65-3505DB63F9D3
+ms.openlocfilehash: 2d17a952c58e5ef7e593ee7aeb1980e09a376800
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
 ms.translationtype: HT
-ms.sourcegitcommit: e2b7ff9126e1cc38ac2e58d6be339b656a024e7f
-ms.openlocfilehash: c261dbc285da6f488e6a328c997e2a9563c1c73a
-ms.contentlocale: fr-fr
-ms.lasthandoff: 08/11/2017
-
+ms.contentlocale: fr-FR
+ms.lasthandoff: 10/31/2017
 ---
-
 # <a name="customizing-the-build-system"></a>Personnalisation du système de génération
 
 MSBuild est un moteur de génération, développé par Microsoft, qui permet de générer principalement des applications .NET. Le framework Mono a également sa propre implémentation du moteur de génération de Microsoft, appelée **xbuild**. Cependant, xbuild a été supprimé en faveur de l’utilisation de MSBuild sur tous les systèmes d’exploitation.
@@ -105,8 +103,7 @@ Par exemple, l’extrait de code ci-dessous crée les écrans de lancement d’i
 
 Les ressources suivantes peuvent être utilisées pour obtenir plus d’informations sur MSBuild :
 
-* [MSDN - Vue d’ensemble](https://msdn.microsoft.com/en-us/library/dd393574.aspx)
-* [MSDN - Concepts](https://msdn.microsoft.com/en-us/library/dd637714.aspx)
-
+* [MSDN - Vue d’ensemble](https://msdn.microsoft.com/library/dd393574.aspx)
+* [MSDN - Concepts](https://msdn.microsoft.com/library/dd637714.aspx)
 
 

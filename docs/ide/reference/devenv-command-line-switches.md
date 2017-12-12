@@ -4,8 +4,7 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-general
+ms.technology: vs-ide-general
 ms.tgt_pltfrm: 
 ms.topic: article
 helpviewer_keywords:
@@ -21,31 +20,15 @@ helpviewer_keywords:
 - switches
 - Devenv, syntax and list of switches
 ms.assetid: e12bc6ed-74fd-4bea-8d7c-89b99c20bad8
-caps.latest.revision: 33
+caps.latest.revision: "33"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-translation.priority.ht:
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- ru-ru
-- zh-cn
-- zh-tw
-translation.priority.mt:
-- cs-cz
-- pl-pl
-- pt-br
-- tr-tr
-ms.translationtype: Human Translation
-ms.sourcegitcommit: ca7c86466fa23fb21a932f26dc24e37c71cf29b4
-ms.openlocfilehash: 5666566315e94f109c5ca214dcf5b2a539911203
-ms.contentlocale: fr-fr
-ms.lasthandoff: 04/05/2017
-
+ms.openlocfilehash: a22ac991b88dd62c91a9bf08f5397fe80e4ae37d
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: HT
+ms.contentlocale: fr-FR
+ms.lasthandoff: 10/31/2017
 ---
 # <a name="devenv-command-line-switches"></a>Commutateurs de la ligne de commande de Devenv
 Devenv vous permet de définir diverses options pour l’environnement de développement intégré (IDE) et également de créer, déboguer et déployer des projets à partir de la ligne de commande. Utilisez ces commutateurs pour exécuter l’IDE à partir d’un script ou d’un fichier .bat, par exemple, un script de génération nocturne, ou pour lancer l’IDE avec une configuration particulière.  

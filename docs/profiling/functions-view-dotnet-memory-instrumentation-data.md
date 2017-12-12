@@ -1,106 +1,105 @@
 ---
-title: "Mode Fonctions - donn&#233;es d&#39;instrumentation de la m&#233;moire .NET du profileur | Microsoft Docs"
-ms.custom: ""
-ms.date: "12/05/2016"
-ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-debug"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-helpviewer_keywords: 
-  - "mode Fonctions"
+title: "Vue Fonctions - Données d’instrumentation de la mémoire .NET | Microsoft Docs"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-debug
+ms.tgt_pltfrm: 
+ms.topic: article
+helpviewer_keywords: Functions view
 ms.assetid: cd45b379-394b-4b71-828c-92cd89e46ae0
-caps.latest.revision: 10
-caps.handback.revision: 10
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
+caps.latest.revision: "10"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: f50378179276a88ff9dd1a6017cd84143b499707
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: HT
+ms.contentlocale: fr-FR
+ms.lasthandoff: 10/31/2017
 ---
-# Mode Fonctions - donn&#233;es d&#39;instrumentation de la m&#233;moire .NET du profileur
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
-
-Le mode Fonctions des données de profilage d'allocation de mémoire .NET collectées à l'aide de la méthode d'instrumentation répertorie les fonctions qui ont alloué de la mémoire pendant l'exécution du profilage.  Une ligne de fonction consigne la taille et le nombre d'allocations, ainsi que les données de temporisation pour la fonction.  
+# <a name="functions-view---net-memory-instrumentation-data"></a>Vue Fonctions - Données d’instrumentation de la mémoire .NET
+La vue Fonctions des données de profilage de l’allocation mémoire de .NET qui ont été collectées avec la méthode d’instrumentation liste les fonctions qui ont alloué de la mémoire lors de l’exécution du profilage. Une ligne de fonction indique la taille et le nombre d’allocations, ainsi que les données chronologiques de la fonction.  
   
-## Général  
+## <a name="general"></a>Général  
   
 |Colonne|Description|  
-|-------------|-----------------|  
+|------------|-----------------|  
 |**Nom de la fonction**|Nom de la fonction.|  
 |**Adresse de la fonction**|Adresse de la fonction.|  
 |**Numéro de ligne de fonction**|Numéro de ligne du début de cette fonction dans le fichier source.|  
-|**Nombre d'appels**|Nombre total d'appels passés à cette fonction.|  
-|**Source File**|Fichier source qui contient la définition de cette fonction.|  
-|**Nom de module**|Nom du module qui contient la fonction.|  
-|**Chemin de module**|Chemin d'accès du module qui contient la fonction.|  
-|**ID de processus**|ID du processus \(PID\) de l'exécution du profilage.|  
+|**Nombre d’appels**|Nombre total d'appels passés à cette fonction.|  
+|**Fichier source**|Fichier source contenant la définition de cette fonction.|  
+|**Nom du module**|Nom du module qui contient la fonction.|  
+|**Chemin de module**|Chemin d’accès du module qui contient la fonction.|  
+|**ID du processus**|ID du processus (PID) de l'exécution du profilage.|  
 |**Nom du processus**|Nom du processus.|  
-|**Temps exclusif de charge de la sonde**|Surcharge de temps pour cette fonction provoquée par l'instrumentation.  Le traitement de sondes a été soustrait de tous les temps exclusifs.|  
-|**Temps inclusif de charge de la sonde**|Surcharge de temps pour cette fonction et ses fonctions enfants provoquée par l'instrumentation.  Le traitement de sondes a été soustrait de tous les temps inclusifs.|  
+|**Traitement de sondes du temps exclusif**|Surcharge de temps pour cette fonction qui est provoquée par l’instrumentation. Le traitement de sondes a été soustrait de tous les temps exclusifs.|  
+|**Traitement des sondes temps inclus**|Surcharge de temps pour cette fonction et ses fonctions enfants qui est provoquée par l’instrumentation. Le traitement de sondes a été soustrait de tous les temps inclusifs.|  
   
-## Valeurs de mémoire .NET  
- Les valeurs de mémoire .NET inclusives d'une fonction indiquent le nombre \(allocations\) et la taille \(octets\) des objets créés par la fonction et ses fonctions enfants.  
+## <a name="net-memory-values"></a>Valeurs de mémoire .NET  
+ Les valeurs de mémoire .NET inclusives d’une fonction indiquent le nombre (allocations) et la taille (octets) des objets créés par la fonction et ses fonctions enfants.  
   
- Les valeurs de mémoire exclusives indiquent le nombre et la taille des objets créés par la fonction et non pas par ses fonctions enfants.  
-  
-|Colonne|Description|  
-|-------------|-----------------|  
-|**Allocations inclusives**|Nombre total d'objets créé dans cette fonction et les fonctions appelées par cette fonction.|  
-|**Allocations inclusives %**|Pourcentage de tous les objets alloués dans l'exécution du profilage qui correspondaient à des allocations inclusives de cette fonction.|  
-|**Allocations exclusives**|Nombre total d'objets créés lorsque la fonction exécutait le code dans le corps de la fonction.  Ce nombre ne comprend pas les objets créés dans les fonctions appelées par cette fonction.|  
-|**Allocations exclusives %**|Pourcentage de tous les objets créés dans l'exécution du profilage qui correspondaient à des allocations exclusives de cette fonction.|  
-|**Octets inclusifs**|Nombre d'octets de mémoire alloués à cette fonction et aux fonctions appelées par cette fonction.|  
-|**Octets inclusifs %**|Pourcentage de tous les octets de mémoire alloués dans l'exécution du profilage qui correspondaient à des octets inclusifs de cette fonction.|  
-|**Octets exclusifs**|Nombre d'octets de mémoire alloués par cette fonction mais pas par les fonctions appelées par elle.|  
-|**Octets exclusifs %**|Pourcentage de tous les octets de mémoire alloués dans l'exécution du profilage qui correspondaient à des octets exclusifs de cette fonction.|  
-  
-## Valeurs inclusives écoulées  
- Les valeurs inclusives écoulées indiquent la durée pendant laquelle une fonction se trouvait sur la pile des appels.  La durée inclut le temps consacré aux fonctions enfant et aux appels au système d'exploitation, comme les opérations de changements de contexte et d'entrée\/sortie.  
+ Les valeurs de mémoire exclusives indiquent le nombre et la taille des objets créés par la fonction, et non par ses fonctions enfants.  
   
 |Colonne|Description|  
-|-------------|-----------------|  
-|**Temps inclusif écoulé**|Temps inclusif écoulé total correspondant à tous les appels à cette fonction.|  
-|**Temps inclusif écoulé en %**|Pourcentage du temps inclusif écoulé total de l'exécution du profilage qui correspond au temps inclusif écoulé de cette fonction.|  
-|**Temps inclusif écoulé moy.**|Temps inclusif écoulé moyen d'un appel à cette fonction.|  
-|**Temps inclusif écoulé max.**|Temps inclusif écoulé maximal d'un appel à cette fonction.|  
-|**Temps inclusif écoulé min.**|Temps inclusif écoulé minimal d'un appel à cette fonction.|  
+|------------|-----------------|  
+|**Allocations inclusives**|Nombre total d’objets créés dans cette fonction et dans les fonctions appelées par cette fonction.|  
+|**% d’allocations inclusives**|Pourcentage de tous les objets alloués lors de l’exécution du profilage qui étaient des allocations inclusives de cette fonction.|  
+|**Allocations exclusives**|Nombre total d’objets qui ont été créés quand la fonction exécutait du code du corps de la fonction. Ce nombre n’inclut pas les objets créés dans les fonctions appelées par cette fonction.|  
+|**% d’allocations exclusives**|Pourcentage de tous les objets créés lors de l’exécution du profilage qui étaient des allocations exclusives de cette fonction.|  
+|**Octets inclusifs**|Nombre d’octets de mémoire alloués dans cette fonction et dans les fonctions appelées par cette fonction.|  
+|**% d’octets inclusifs**|Pourcentage de tous les octets de mémoire alloués lors de l’exécution du profilage, qui étaient des octets inclusifs de cette fonction.|  
+|**Octets exclusifs**|Nombre d’octets de mémoire alloués dans cette fonction, mais pas dans les fonctions appelées par cette fonction.|  
+|**% d’octets exclusifs**|Pourcentage de tous les octets de mémoire alloués lors de l’exécution du profilage, qui étaient des octets exclusifs de cette fonction.|  
   
-## Valeurs exclusives écoulées  
- Les valeurs exclusives écoulées indiquent la durée pendant laquelle une fonction s'exécutait directement en haut de la pile des appels.  Cette durée inclut le temps consacré aux appels au système d'exploitation, comme les opérations de changements de contexte et d'entrée\/sortie, mais elle n'inclut pas le temps passé dans les fonctions enfants.  
-  
-|Colonne|Description|  
-|-------------|-----------------|  
-|**Temps exclusif écoulé**|Temps exclusif écoulé total correspondant à tous les appels à cette fonction.|  
-|**Temps exclusif écoulé en %**|Pourcentage du temps exclusif écoulé total dans l'exécution du profilage correspondant au temps exclusif écoulé de cette fonction.|  
-|**Temps exclusif écoulé moy.**|Temps exclusif écoulé moyen d'un appel à cette fonction.|  
-|**Temps exclusif écoulé max.**|Temps exclusif écoulé maximal d'un appel à cette fonction.|  
-|**Temps exclusif écoulé min.**|Temps exclusif écoulé minimal d'un appel à cette fonction.|  
-  
-## Valeurs inclusives d'application  
- Les valeurs inclusives d'application indiquent la durée pendant laquelle une fonction se trouvait sur la pile des appels.  La durée n'inclut pas le temps consacré aux appels au système d'exploitation, comme les opérations de changements de contexte et d'entrée\/sortie, mais elle inclut le temps consacré aux fonctions enfants.  
+## <a name="elapsed-inclusive-values"></a>Valeurs de temps inclusif écoulé  
+ Les valeurs de temps inclusif écoulé indiquent le temps qu’a passé une fonction dans la pile des appels. Cette durée comprend le temps passé dans les fonctions enfants, ainsi que le temps consacré aux appels au système d’exploitation, comme dans le cas de changements de contexte ou d’opérations d’E/S.  
   
 |Colonne|Description|  
-|-------------|-----------------|  
-|**Temps inclusif d'application**|Temps inclusif d'application total correspondant à tous les appels à cette fonction.|  
-|**Temps inclusif d'application en %**|Pourcentage du temps inclusif écoulé total de l'exécution du profilage correspondant au temps inclusif d'application total de cette fonction.|  
-|**Temps inclusif d'application moy.**|Temps inclusif d'application moyen d'un appel à cette fonction.|  
-|**Temps inclusif d'application max.**|Temps inclusif d'application maximal d'un appel à cette fonction.|  
-|**Temps inclusif d'application min.**|Temps inclusif d'application minimal d'un appel à cette fonction.|  
+|------------|-----------------|  
+|**Temps inclusif écoulé**|Temps inclusif écoulé total de tous les appels à cette fonction.|  
+|**% de temps inclusif écoulé**|Pourcentage du temps inclusif écoulé total de l’exécution de profilage passé dans le temps inclusif écoulé de cette fonction.|  
+|**Temps inclusif écoulé moy.**|Temps inclusif écoulé moyen d’un appel à cette fonction.|  
+|**Temps inclusif écoulé max.**|Temps inclusif écoulé maximal d’un appel à cette fonction.|  
+|**Temps inclusif écoulé min.**|Temps inclusif écoulé minimal d’un appel à cette fonction.|  
   
-## Valeurs exclusives d'application  
- Les valeurs exclusives d'application indiquent la durée pendant laquelle une fonction s'exécutait directement en haut de la pile des appels.  La durée n'inclut pas le temps consacré aux appels au système d'exploitation, comme les opérations de changements de contexte et d'entrée\/sortie, pas plus que le temps passé dans les fonctions enfants.  
+## <a name="elapsed-exclusive-values"></a>Valeurs de temps exclusif écoulé  
+ Les valeurs de temps exclusif écoulé indiquent la durée pendant laquelle une fonction s’est exécutée directement en haut de la pile des appels. Cette durée inclut le temps consacré aux appels émis vers le système d’exploitation, comme dans le cas de changements de contexte ou d’opérations d’E/S, mais elle n’inclut pas le temps passé dans les fonctions enfants.  
   
 |Colonne|Description|  
-|-------------|-----------------|  
-|**Temps exclusif d'application**|Temps exclusif d'application total correspondant à tous les appels à cette fonction.|  
-|**Temps exclusif d'application en %**|Pourcentage du temps exclusif écoulé total de l'exécution du profilage correspondant au temps exclusif d'application total de cette fonction.|  
-|**Temps exclusif d'application moy.**|Temps exclusif d'application moyen d'un appel à cette fonction.|  
-|**Temps exclusif d'application max.**|Temps exclusif d'application maximal d'un appel à cette fonction.|  
-|**Temps exclusif d'application min.**|Temps exclusif d'application minimal d'un appel à cette fonction.|  
+|------------|-----------------|  
+|**Temps exclusif écoulé**|Temps exclusif écoulé total de tous les appels à cette fonction.|  
+|**% de temps exclusif écoulé**|Pourcentage du temps exclusif écoulé total de l’exécution de profilage passé dans le temps exclusif écoulé total de cette fonction.|  
+|**Temps exclusif écoulé moy.**|Temps exclusif écoulé moyen d’un appel à cette fonction.|  
+|**Temps exclusif écoulé max.**|Temps exclusif écoulé maximal d’un appel à cette fonction.|  
+|**Temps exclusif écoulé min.**|Temps exclusif écoulé minimal d’un appel à cette fonction.|  
   
-## Voir aussi  
- [Comment : personnaliser les colonnes de la vue de rapport](../profiling/how-to-customize-report-view-columns.md)   
- [Mode Fonctions \- échantillonnage](../profiling/functions-view-dotnet-memory-sampling-data.md)   
- [Mode Fonction](../profiling/functions-view-instrumentation-data.md)   
- [Mode Fonctions](../profiling/functions-view-sampling-data.md)
+## <a name="application-inclusive-values"></a>Valeurs de temps inclusif d’application  
+ Les valeurs de temps inclusif d’application indiquent le temps qu’a passé une fonction dans la pile des appels. Cette durée n’inclut pas le temps consacré aux appels au système d’exploitation, comme dans le cas de changements de contexte ou d’opérations d’E/S, mais elle inclut le temps passé dans les fonctions enfants.  
+  
+|Colonne|Description|  
+|------------|-----------------|  
+|**Temps inclusif d’application**|Temps inclusif d’application total de tous les appels à cette fonction.|  
+|**% du temps inclusif d’application**|Pourcentage du temps inclusif écoulé total de l’exécution de profilage passé dans le temps inclusif d’application total de cette fonction.|  
+|**Temps inclusif d’application moy.**|Temps inclusif d’application moyen d’un appel à cette fonction.|  
+|**Temps inclusif d’application max.**|Temps inclusif d’application maximal d’un appel à cette fonction.|  
+|**Temps inclusif d’application min.**|Temps inclusif d’application minimal d’un appel à cette fonction.|  
+  
+## <a name="application-exclusive-values"></a>Valeurs de temps exclusif d’application  
+ Les valeurs de temps exclusif d’application indiquent la durée pendant laquelle une fonction s’est exécutée directement en haut de la pile des appels. Cette durée n’inclut pas le temps passé dans les appels au système d’exploitation, comme dans le cas de changements de contexte ou d’opérations d’E/S, ni le temps passé dans les fonctions enfants.  
+  
+|Colonne|Description|  
+|------------|-----------------|  
+|**Temps exclusif d’application**|Temps exclusif d’application total de tous les appels à cette fonction.|  
+|**% du temps exclusif d’application**|Pourcentage du temps exclusif écoulé total de l’exécution de profilage passé dans le temps exclusif d’application total de cette fonction.|  
+|**Temps exclusif d’application moy.**|Temps exclusif d’application moyen d’un appel à cette fonction.|  
+|**Temps exclusif d’application max.**|Temps exclusif d’application maximal d’un appel à cette fonction.|  
+|**Temps exclusif d’application min.**|Temps exclusif d’application minimal d’un appel à cette fonction.|  
+  
+## <a name="see-also"></a>Voir aussi  
+ [Guide pratique pour personnaliser les colonnes de la vue Rapport](../profiling/how-to-customize-report-view-columns.md)   
+ [Vue Fonctions - Échantillonnage](../profiling/functions-view-dotnet-memory-sampling-data.md)   
+ [Vue Fonctions](../profiling/functions-view-instrumentation-data.md)   
+ [Vue Fonctions](../profiling/functions-view-sampling-data.md)

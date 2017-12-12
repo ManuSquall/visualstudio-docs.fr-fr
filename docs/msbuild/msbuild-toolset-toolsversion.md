@@ -4,8 +4,7 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-sdk
+ms.technology: vs-ide-sdk
 ms.tgt_pltfrm: 
 ms.topic: article
 helpviewer_keywords:
@@ -14,39 +13,24 @@ helpviewer_keywords:
 - MSBuild, targeting a specific .NET framework
 - multitargeting [MSBuild]
 ms.assetid: 40040ee7-4620-4043-a6d8-ccba921421d1
-caps.latest.revision: 30
+caps.latest.revision: "30"
 author: kempb
 ms.author: kempb
 manager: ghogen
-translation.priority.ht:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 9713f09b7379b14b9362e3853a910948935c501e
-ms.openlocfilehash: 6a45db14ee055c4fbdf738cf36df503a4a1fffd0
-ms.contentlocale: fr-fr
-ms.lasthandoff: 05/31/2017
-
+ms.openlocfilehash: 85d570564ba3e82808f0876ead938f535368ec29
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: HT
+ms.contentlocale: fr-FR
+ms.lasthandoff: 10/31/2017
 ---
 # <a name="msbuild-toolset-toolsversion"></a>Ensemble d'outils MSBuild (ToolsVersion)
 MSBuild utilise un ensemble d’outils de tâches, de cibles et d’outils pour générer une application. Un ensemble d'outils MSBuild comprend généralement un fichier microsoft.common.tasks, un fichier microsoft.common.targets et des compilateurs comme csc.exe et vbc.exe. La plupart des ensembles d'outils peuvent être utilisés pour compiler des applications pour plusieurs versions de .NET Framework et pour plusieurs plateformes système. Cependant, l'ensemble d'outils MSBuild 2.0 ne peut être utilisé que pour cibler .NET Framework 2.0.  
   
 ## <a name="toolsversion-attribute"></a>Attribut ToolsVersion  
- Spécifiez l’ensemble d’outils dans l’attribut `ToolsVersion` de l’élément [Project](../msbuild/project-element-msbuild.md) du fichier projet. L'exemple suivant spécifie que le projet doit être généré en utilisant l'ensemble d'outils MSBuild 12.0.  
+ Spécifiez l’ensemble d’outils dans l’attribut `ToolsVersion` de l’élément [Project](../msbuild/project-element-msbuild.md) du fichier projet. L’exemple suivant spécifie que le projet doit être généré à l’aide de l’ensemble d’outils MSBuild 15.0.  
   
 ```xml  
-<Project ToolsVersion="12.0" ... </Project>  
+<Project ToolsVersion="15.0" ... </Project>  
 ```  
   
 ## <a name="how-the-toolsversion-attribute-works"></a>Fonctionnement de l'attribut ToolsVersion  
@@ -134,4 +118,3 @@ MSBuild utilise un ensemble d’outils de tâches, de cibles et d’outils pour 
 ## <a name="see-also"></a>Voir aussi  
  [Configurations standard et personnalisée de l’ensemble d’outils](../msbuild/standard-and-custom-toolset-configurations.md)   
  [Multiciblage](../msbuild/msbuild-multitargeting-overview.md)
-

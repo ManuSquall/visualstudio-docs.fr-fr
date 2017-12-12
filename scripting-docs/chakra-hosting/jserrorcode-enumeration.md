@@ -1,41 +1,43 @@
 ---
-title: "JsErrorCode, &#233;num&#233;ration | Microsoft Docs"
-ms.custom: ""
-ms.date: "01/18/2017"
-ms.prod: "windows-client-threshold"
-ms.reviewer: ""
-ms.suite: ""
-ms.tgt_pltfrm: ""
-ms.topic: "reference"
-f1_keywords: 
-  - "jsrt/JsErrorCode"
-helpviewer_keywords: 
-  - "JsErrorCode (énumération)"
+title: "JsErrorCode, énumération | Microsoft Docs"
+ms.custom: 
+ms.date: 01/18/2017
+ms.prod: windows-client-threshold
+ms.reviewer: 
+ms.suite: 
+ms.tgt_pltfrm: 
+ms.topic: reference
+f1_keywords: jsrt/JsErrorCode
+helpviewer_keywords: JsErrorCode enumeration
 ms.assetid: 4902f3f3-47a5-4e74-9c29-f96eeecbcda9
-caps.latest.revision: 15
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 15
+caps.latest.revision: "15"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: b09babd38505c5619f414d2e349cd52b3596ceac
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.translationtype: HT
+ms.contentlocale: fr-FR
+ms.lasthandoff: 10/27/2017
 ---
-# JsErrorCode, &#233;num&#233;ration
+# <a name="jserrorcode-enumeration"></a>JsErrorCode, énumération
 Code d'erreur retourné par une API d'hébergement Chakra.  
   
-## Syntaxe  
+## <a name="syntax"></a>Syntaxe  
   
 ```  
 enum JsErrorCode : unsigned int;  
 ```  
   
-## Membres  
+## <a name="members"></a>Membres  
   
-### Valeurs  
+### <a name="values"></a>Valeurs  
   
 |Nom|Description|  
-|---------|-----------------|  
+|----------|-----------------|  
 |`JsErrorAlreadyDebuggingContext`|Le contexte ne peut pas être placé en état de débogage, car il se trouve déjà dans cet état.|  
 |`JsErrorAlreadyProfilingContext`|Le contexte ne peut pas démarrer le profilage, car ce dernier est déjà démarré.|  
-|`JsErrorArgumentNotObject`|Une API d'hébergement qui fonctionne sur des valeurs d'objet a été appelée avec une valeur non\-objet.|  
+|`JsErrorArgumentNotObject`|Une API d'hébergement qui fonctionne sur des valeurs d'objet a été appelée avec une valeur non-objet.|  
 |`JsErrorBadSerializedScript`|Un script sérialisé incorrect a été utilisé, ou le script sérialisé a été sérialisé par une autre version du moteur Chakra.|  
 |`JsErrorCannotDisableExecution`|Le runtime ne prend pas en charge l'interruption de script fiable.|  
 |`JsErrorCannotSerializeDebugScript`|Les scripts ne peuvent pas être sérialisés dans des contextes de débogage.|  
@@ -55,7 +57,7 @@ enum JsErrorCode : unsigned int;
 |`JsErrorNoCurrentContext`|L'API d'hébergement requiert qu'un contexte soit actif, mais aucun contexte n'est actif.|  
 |`JsErrorNotImplemented`|Une API d'hébergement n'est pas encore implémentée.|  
 |`JsErrorNullArgument`|Un argument pour une API d'hébergement avait la valeur null dans un contexte où cette valeur n'est pas autorisée.|  
-|`JsErrorObjectNotInspectable`|L'objet ne peut pas être désencapsulé dans un pointeur `IInspectable`.<br /><br /> Cette valeur d'énumération est prise en charge uniquement dans le mode Edge.|  
+|`JsErrorObjectNotInspectable`|L'objet ne peut pas être désencapsulé dans un pointeur `IInspectable` .<br /><br /> Cette valeur d'énumération est prise en charge uniquement dans le mode Edge.|  
 |`JsErrorOutOfMemory`|Mémoire insuffisante pour exécuter le moteur Chakra.|  
 |`JsErrorPropertyNotSymbol`|Une API d'hébergement qui fonctionne sur des ID de propriété sous forme de symboles a été appelée avec un ID de propriété qui n'est pas un symbole. Le code d'erreur est retourné par `JsGetSymbolFromPropertyId` si la fonction est appelée avec un ID de propriété qui n'est pas un symbole.<br /><br /> Cette valeur d'énumération est prise en charge uniquement dans le mode Edge.|  
 |`JsErrorPropertyNotString`|Une API d'hébergement qui fonctionne sur des ID de propriété sous forme de chaînes a été appelée avec un ID de propriété qui n'est pas une chaîne. Le code d'erreur est retourné par `JsGetPropertyNamefromId` si la fonction est appelée avec un ID de propriété qui n'est pas une chaîne.<br /><br /> Cette valeur d'énumération est prise en charge uniquement dans le mode Edge.|  
@@ -68,8 +70,8 @@ enum JsErrorCode : unsigned int;
 |`JsErrorWrongThread`|Une API d'hébergement a été appelée sur le thread incorrect.|  
 |`JsNoError`|Code d'erreur de réussite.|  
   
-## Configuration requise  
- **En\-tête :** jsrt.h  
+## <a name="requirements"></a>Spécifications  
+ **En-tête :** jsrt.h  
   
-## Voir aussi  
- [Référence \(JavaScript Runtime\)](../chakra-hosting/reference-javascript-runtime.md)
+## <a name="see-also"></a>Voir aussi  
+ [Référence (JavaScript Runtime)](../chakra-hosting/reference-javascript-runtime.md)

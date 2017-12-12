@@ -1,34 +1,34 @@
 ---
-title: "Atteindre la ligne | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-general"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "vs.gotoline"
-helpviewer_keywords: 
-  - "code, recherche de lignes"
-  - "Atteindre la ligne (boîte de dialogue)"
+title: Atteindre la ligne | Microsoft Docs
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-general
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords: vs.gotoline
+helpviewer_keywords:
+- code, locating lines
+- Go To Line dialog box
 ms.assetid: 529fa251-b7b3-49cf-863c-10e0b82ac7cc
-caps.latest.revision: 8
-author: "kempb"
-ms.author: "kempb"
-manager: "ghogen"
-caps.handback.revision: 8
+caps.latest.revision: "8"
+author: gewarren
+ms.author: gewarren
+manager: ghogen
+ms.openlocfilehash: 92c0e5ea85e4a758258219a5ee489fa7ec9309f0
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: HT
+ms.contentlocale: fr-FR
+ms.lasthandoff: 10/31/2017
 ---
-# Atteindre la ligne
-[!INCLUDE[vs2017banner](../../code-quality/includes/vs2017banner.md)]
-
-Cette boîte de dialogue vous permet d'atteindre une ligne particulière d'un document en spécifiant son numéro.  Pour accéder à cette boîte de dialogue, ouvrez un document en modification, puis sélectionnez **Atteindre** dans le menu **Edition**.  
+# <a name="go-to-line"></a>Atteindre la ligne
+Cette boîte de dialogue vous permet d’atteindre une ligne particulière dans le document actif. Pour accéder à cette boîte de dialogue, ouvrez un document à modifier, puis sélectionnez **Atteindre** dans le menu **Edition**.  
   
- Numéro de ligne \(1 \- `n`\)  
- Vous permet d'entrer le numéro de la ligne dans le document actif vers lequel vous souhaitez vous déplacer.  Le nombre entré doit être compris entre 1 et `n`, le nombre de lignes du document en cours.  
+ Numéro de ligne (1 - `n`)  
+ Vous permet d’entrer le numéro de la ligne dans le document actif à atteindre. Le numéro entré doit être compris entre 1 et `n`, le nombre de lignes dans le document actif.  
   
-## Voir aussi  
+## <a name="see-also"></a>Voir aussi  
  [Définition de signets dans le code](../../ide/setting-bookmarks-in-code.md)   
  [Recherche et remplacement de texte](../../ide/finding-and-replacing-text.md)   
  [Écriture de code](../../ide/writing-code-in-the-code-and-text-editor.md)

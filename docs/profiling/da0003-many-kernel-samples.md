@@ -1,47 +1,48 @@
 ---
-title: "DA0003&#160;: Nombreux &#233;chantillons de noyau | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-debug"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "vs.performance.rules.DA0003"
-  - "vs.performance.DA0003"
-  - "vs.performance.3"
-  - "vs.performance.rules.DAManyKernelSamples"
+title: "DA0003 : Nombreux échantillons de noyau | Microsoft Docs"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-debug
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords:
+- vs.performance.rules.DA0003
+- vs.performance.DA0003
+- vs.performance.3
+- vs.performance.rules.DAManyKernelSamples
 ms.assetid: c1f46f77-eb95-42e5-b340-d86bc9de41b4
-caps.latest.revision: 11
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 11
+caps.latest.revision: "11"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: 7c3825c151190641b1cc9d9815f4916ccded423a
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: HT
+ms.contentlocale: fr-FR
+ms.lasthandoff: 10/31/2017
 ---
-# DA0003&#160;: Nombreux &#233;chantillons de noyau
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
-
+# <a name="da0003-many-kernel-samples"></a>DA0003 : Nombreux échantillons de noyau
 |||  
 |-|-|  
-|ID de la règle|DA0003|  
+|ID de règle|DA0003|  
 |Catégorie|Utilisation des outils de profilage|  
 |Méthodes de profilage|Échantillonnage|  
-|Message|Le mode Noyau comporte une proportion élevée d'échantillons.  Cela peut indiquer une activité d'E\/S importante ou de nombreux changements de contexte.  Profilez de nouveau votre application en mode Instrumentation.|  
+|Message|Vous avez une proportion élevée d’échantillons en mode noyau. Ceci peut indiquer un volume élevé d’activité d’E/S ou un taux élevé de changements de contexte. Envisagez de reprofiler votre application avec le mode Instrumentation.|  
 |Type de règle|Information|  
   
-## Cause  
- Une proportion significative des exemples de pile d'appels collectés pour l'application s'exécutait en mode noyau.  Envisagez de profiler votre application à l'aide d'une autre méthode de profilage.  
+## <a name="cause"></a>Cause  
+ Une proportion importante des échantillons de pile des appels qui ont été collectés pour l’application s’exécutaient en mode noyau. Envisagez de profiler votre application avec une autre méthode de profilage.  
   
-## Description de la règle  
- Dans Windows, le code peut être exécuté en Mode noyau ou en Mode utilisateur. \(Le mode noyau est également appelé le mode privilégié.\) Seul le code système de niveau inférieur, tel qu'un pilote de périphérique, s'exécute en Mode noyau.  Une application en mode utilisateur peut passer en mode noyau pour exécuter des opérations d'E\/S, pour attendre des primitives de synchronisation de threads ou de processus ou pour passer des appels système.  
+## <a name="rule-description"></a>Description de la règle  
+ Dans Windows, le code peut être exécuté en mode noyau ou en mode utilisateur. (Le mode noyau est également appelé mode privilégié.) Seul le code système de bas niveau, par exemple un pilote de périphérique, s’exécute en mode noyau. Une application en mode utilisateur peut passer en mode noyau pour effectuer des opérations d’E/S, pour attendre des primitives de synchronisation de thread ou de processus, ou pour effectuer des appels système.  
   
- L'échantillonnage est très efficace lorsque vous profilez des applications qui passent la plupart de leur temps à travailler en mode utilisateur.  Le nombre des exemples rassemblés lorsque l'application s'exécutait en mode noyau peut indiquer des opérations d'E\/S fréquentes ou peut indiquer que des changements de contexte ont lieu.  Aucune de ces opérations ne peut être étudiée à l'aide de la méthode d'échantillonnage.  Si trop d'échantillons en mode noyau sont pris, les données d'échantillonnage peuvent ne pas contenir assez d'échantillons en Mode utilisateur pour que ce soit statistiquement significatif.  
+ L’échantillonnage est plus efficace quand vous profilez des applications qui passent la majeure partie de leur temps à travailler en mode utilisateur. Le nombre d’échantillons qui ont été recueillis quand l’application s’exécutait en mode noyau peut indiquer des opérations d’E/S fréquentes ou que des changements de contexte se produisent. Aucune de ces opérations ne peut être examinée avec la méthode d’échantillonnage. Si trop grand nombre d’échantillons en mode noyau sont pris, les données d’échantillonnage peuvent ne pas contenir suffisamment d’échantillons en mode utilisateur pour être statistiquement significatives.  
   
-## Comment corriger les violations  
- Envisagez de profiler votre application à nouveau à l'aide d'une des options suivantes :  
+## <a name="how-to-fix-violations"></a>Comment corriger les violations  
+ Envisagez de reprofiler votre application avec une des options suivantes :  
   
--   Profilez à l'aide de la méthode d'instrumentation.  
+-   Profilez avec la méthode d’instrumentation.  
   
--   Augmentez le taux d'échantillonnage pour essayer de collecter plus d'échantillons en Mode utilisateur.
+-   Augmentez le taux d’échantillonnage pour essayer de collecter plus d’échantillons en mode utilisateur.

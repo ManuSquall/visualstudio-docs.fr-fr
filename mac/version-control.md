@@ -1,19 +1,17 @@
 ---
-title: Gestion de version
+title: Gestion de version | Microsoft Docs
 description: Utilisation de Git et de Subversion dans Visual Studio pour Mac.
 author: asb3993
 ms.author: amburns
 ms.date: 04/14/2017
 ms.topic: article
 ms.assetid: 49917483-28AA-4598-A847-71F1F2E0DCB5
+ms.openlocfilehash: 6e467cf6acda75948a189309b7648b1c4c085941
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
 ms.translationtype: HT
-ms.sourcegitcommit: e2b7ff9126e1cc38ac2e58d6be339b656a024e7f
-ms.openlocfilehash: a63ebdccc2a7cbde18715291a65ada613dc2c00e
-ms.contentlocale: fr-fr
-ms.lasthandoff: 08/11/2017
-
+ms.contentlocale: fr-FR
+ms.lasthandoff: 10/31/2017
 ---
-
 # <a name="version-control"></a>Gestion de version
 
 La gestion de version est un système de gestion de fichiers sur plusieurs versions auquel contribuent de nombreux développeurs, notamment dans le cadre du développement de logiciels. L’objectif principal d’un système de gestion de version (_VCS_ (Version Control System) est de trouver une solution qui permet à tous les utilisateurs de travailler sur le codebase en même temps.

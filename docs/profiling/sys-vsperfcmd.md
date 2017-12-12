@@ -1,74 +1,75 @@
 ---
-title: "Sys (VSPerfCmd) | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-debug"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+title: Sys (VSPerfCmd) | Microsoft Docs
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-debug
+ms.tgt_pltfrm: 
+ms.topic: article
 ms.assetid: 294a6f9e-b49f-4c83-b322-5ac5411b66fb
-caps.latest.revision: 8
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 8
+caps.latest.revision: "8"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: 4c733e9ce91ede2e8944616c5db1a727349854b1
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: HT
+ms.contentlocale: fr-FR
+ms.lasthandoff: 10/31/2017
 ---
-# Sys (VSPerfCmd)
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
-
-L'option **Sys** de VSPerfCmd.exe définit l'événement de profilage qui est échantillonné aux événements d'appel système \(appels de fonction de l'application profilée au système d'exploitation\), et éventuellement modifie le nombre d'appels système dans un intervalle d'échantillonnage à partir de la valeur par défaut, 10.  
+# <a name="sys-vsperfcmd"></a>Sys (VSPerfCmd)
+L’option **Sys** de VSPerfCmd.exe définit l’événement de profilage qui est échantillonné comme étant des événements d’appel système (les appels de fonction de l’application profilée au système d’exploitation), et permet éventuellement de définir le nombre d’appels système dans un intervalle d’échantillonnage sur une valeur autre que la valeur par défaut, qui est 10.  
   
- L'option **Sys** peut être utilisée uniquement dans une ligne de commande qui contient également l'option **Launch** ou **Attach**.  
+ Vous pouvez utiliser **Sys** seulement sur une ligne de commande qui contient aussi l’option **Launch** ou **Attach**.  
   
- Par défaut, l'événement d'échantillonnage du profileur a pour valeur les cycles d'horloge du processeur et l'intervalle d'échantillonnage a la valeur 10 000 000.  Les options **Timer**, **PF**, **Sys** et **Counter** vous permettent de définir l'événement d'échantillonnage et l'intervalle d'échantillonnage.  L'option **GC** collecte les données de mémoire .NET à chaque événement d'allocation et de garbage collection.  Une seule de ces options peut être spécifiée sur une ligne de commande.  
+ Par défaut, l'événement d'échantillonnage du profileur est défini sur les cycles d'horloge du processeur et l'intervalle d'échantillonnage est défini sur 10 000 000. Les options **Timer**, **PF**, **Sys** et **Counter** vous permettent de définir l’événement d’échantillonnage et l’intervalle d’échantillonnage. L’option **GC** collecte les données de mémoire .NET à chaque événement d’allocation et de garbage collection. Vous ne pouvez spécifier qu'une seule de ces options sur une ligne de commande.  
   
- L'événement d'échantillonnage et l'intervalle d'échantillonnage peuvent être définis uniquement dans la première ligne de commande qui contient une option **Launch** ou **Attach**.  
+ Vous pouvez définir l’événement d’échantillonnage et l’intervalle d’échantillonnage seulement sur la première ligne de commande qui contient une option **Launch** ou **Attach**.  
   
-## Syntaxe  
+## <a name="syntax"></a>Syntaxe  
   
 ```  
 VSPerfCmd.exe {/Launch:AppName|Attach:PID} /Sys[:Events] [Options]  
 ```  
   
-#### Paramètres  
+#### <a name="parameters"></a>Paramètres  
  `Events`  
- Valeur entière qui spécifie le nombre d'événements d'appel système dans un intervalle d'échantillonnage.  Si `Events` n'est pas spécifié, l'intervalle a la valeur 10.  
+ Valeur entière qui spécifie le nombre d’événements d’appel système dans un intervalle d’échantillonnage. Si `Events` n’est pas spécifié, l’intervalle est défini sur 10.  
   
-## Options requises  
- L'option **Sys** nécessite l'une des options suivantes.  
+## <a name="required-options"></a>Options obligatoires  
+ **Sys** nécessite une des options suivantes.  
   
  **Launch:** `AppName`  
- Démarre le profileur et l'application spécifiés par `AppName`.  
+ Démarre le profileur et l'application spécifiée par `AppName`.  
   
  **Attach:** `PID`  
- Attache le profileur au processus spécifié par le `PID`.  
+ Attache le profileur au processus spécifié par `PID`.  
   
-## Options non valides  
- Les options suivantes ne peuvent pas être spécifiées sur la même ligne de commande que **Sys**.  
+## <a name="invalid-options"></a>Options non valides  
+ Vous ne pouvez pas spécifier les options suivantes sur la même ligne de commande que **Sys**.  
   
- **PF**\[**:**`Events`\]  
- Affecte à l'événement d'échantillonnage les défauts de page et éventuellement affecte à l'intervalle d'échantillonnage la valeur `Events`.  L'intervalle PF par défaut est 10.  
+ **PF**[**:**`Events`]  
+ Définit l'événement d'échantillonnage sur les défauts de page et définit éventuellement l'intervalle d'échantillonnage sur `Events`. L'intervalle de défaut de page par défaut est 10.  
   
- **Timer**\[**:**`Cycles`\]  
- Affecte à l'événement d'échantillonnage les cycles d'horloge du processeur et affecte éventuellement à l'intervalle d'échantillonnage la valeur `Cycles`.  L'intervalle de minuterie par défaut est 10 000 000.  
+ **Timer**[**:**`Cycles`]  
+ Définit l’événement d’échantillonnage sur les cycles d’horloge du processeur et définit éventuellement l’intervalle d’échantillonnage sur `Cycles`. L’intervalle de Timer par défaut est 10,000,000.  
   
- **Counter:** `Name`\[`,Reload`\[`,FriendlyName`\]\]  
- Affecte à l'événement d'échantillonnage le compteur de performance de l'UC spécifié par `Name` et affecte `Reload` à l'intervalle d'échantillonnage.  
+ **Counter:** `Name`[`,Reload`[`,FriendlyName`]]  
+ Définit l'événement d'échantillonnage sur le compteur de performance d'UC spécifié par `Name` et définit l'intervalle d'échantillonnage sur `Reload`.  
   
- **GC**\[**:**{**Allocation**&#124;**Lifetime**}\]  
- Collecte les données de la mémoire .NET.  Par défaut \(**Allocation**\), les données sont collectées à chaque événement d'allocation de mémoire.  Lorsque le paramètre **Lifetime** est spécifié, des données sont également collectées à chaque événement de garbage collection.  
+ **GC**[**:**{**Allocation**&#124;**Lifetime**}]  
+ Recueille des données de mémoire .NET. Par défaut (**Allocation**), les données sont collectées à chaque événement d’allocation mémoire. Quand le paramètre **Lifetime** est spécifié, les données sont aussi collectées à chaque événement de garbage collection.  
   
-## Exemple  
- Cet exemple montre comment définir l'événement d'échantillonnage du profileur sur les appels système et comment affecter 20 appels par exemple à l'intervalle d'échantillonnage.  
+## <a name="example"></a>Exemple  
+ Cet exemple montre comment définir le l’événement d’échantillonnage du profileur comme étant les appels système, et comment définir l’intervalle d’échantillonnage sur 20 appels par échantillon.  
   
 ```  
 VSPerfCmd.exe /Start:Sample /Output:TestApp.exe.vsp  
 VSPerfCmd.exe /Launch:TestApp.exe /Sys:20  
 ```  
   
-## Voir aussi  
+## <a name="see-also"></a>Voir aussi  
  [VSPerfCmd](../profiling/vsperfcmd.md)   
  [Profilage d’applications autonomes](../profiling/command-line-profiling-of-stand-alone-applications.md)   
  [Profilage d’applications web ASP.NET](../profiling/command-line-profiling-of-aspnet-web-applications.md)   

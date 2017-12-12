@@ -4,40 +4,21 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-debug
+ms.technology: vs-ide-debug
 ms.tgt_pltfrm: 
 ms.topic: article
-f1_keywords:
-- vs.performance.view.threadblocking
-helpviewer_keywords:
-- Concurrency Visualizer, Threads View (Parallel Performance)
+f1_keywords: vs.performance.view.threadblocking
+helpviewer_keywords: Concurrency Visualizer, Threads View (Parallel Performance)
 ms.assetid: 2e441103-a266-407b-88c3-fb58716257a3
-caps.latest.revision: 21
+caps.latest.revision: "21"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-translation.priority.ht:
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- ru-ru
-- zh-cn
-- zh-tw
-translation.priority.mt:
-- cs-cz
-- pl-pl
-- pt-br
-- tr-tr
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 5db97d19b1b823388a465bba15d057b30ff0b3ce
-ms.openlocfilehash: 1777df83f2c2764e173300f897b18a699a38c197
-ms.contentlocale: fr-fr
-ms.lasthandoff: 02/22/2017
-
+ms.openlocfilehash: bdad50eff09e96c5d9c0513be1f571a901278871
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: HT
+ms.contentlocale: fr-FR
+ms.lasthandoff: 10/31/2017
 ---
 # <a name="threads-view-parallel-performance"></a>Vue Threads (Performances parallèles)
 La vue threads est la vue la plus détaillée et la plus riche en fonctionnalités du visualiseur concurrentiel. En utilisant cette vue, vous pouvez déterminer si les threads sont en cours d’exécution ou s’ils sont bloqués à cause d’une synchronisation, d’E/S ou pour une autre raison.  
@@ -86,7 +67,7 @@ La vue threads est la vue la plus détaillée et la plus riche en fonctionnalit�
   
  Voici une illustration de la vue Threads :  
   
- ![Vue Threads](~/profiling/media/threadsviewnarrowing.png "ThreadsViewNarrowing")  
+ ![Vue threads](../profiling/media/threadsviewnarrowing.png "ThreadsViewNarrowing")  
 vue Threads  
   
  Initialement, les threads sont triés dans l’ordre où ils sont créés : le thread d’application principal figure donc en premier. Vous pouvez utiliser l’option de tri dans le coin supérieur gauche de la vue pour trier les threads selon un autre critère (par exemple sur la base de la plus grande quantité de travail d’exécution effectuée).  

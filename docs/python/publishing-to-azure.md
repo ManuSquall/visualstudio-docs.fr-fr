@@ -1,164 +1,228 @@
 ---
-title: Publishing a Python App to Azure App Service from Visual Studio | Microsoft Docs
+title: "Publication d’une application Python sur Azure App Service à partir de Visual Studio | Microsoft Docs"
 ms.custom: 
-ms.date: 9/6/2017
-ms.prod: visual-studio-dev15
+ms.date: 09/27/2017
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- devlang-python
+ms.technology: devlang-python
 ms.devlang: python
 ms.tgt_pltfrm: 
 ms.topic: article
-ms.assetid: 85031f91-3a65-463b-a678-1e69f1b843e6
-caps.latest.revision: 1
+caps.latest.revision: "1"
 author: kraigb
 ms.author: kraigb
 manager: ghogen
+ms.openlocfilehash: a4f9ec85a7fa37c871344500cc412e57d8019100
+ms.sourcegitcommit: b7d3b90d0be597c9d01879338dd2678c881087ce
 ms.translationtype: HT
-ms.sourcegitcommit: 4013eb0b251985b0984d0cbf2a723175fe91aad5
-ms.openlocfilehash: 1dca3be92aaeb41e143218d54902811846646000
-ms.contentlocale: fr-fr
-ms.lasthandoff: 09/09/2017
-
+ms.contentlocale: fr-FR
+ms.lasthandoff: 12/01/2017
 ---
+# <a name="publishing-to-azure-app-service"></a>Publication sur Azure App Service
 
-# <a name="publishing-to-azure-app-service"></a>Publishing to Azure App Service
+Visual Studio offre la possibilité de publier directement une application web Python sur Azure App Service. La publication sur Azure App Service signifie copier les fichiers nécessaires sur le serveur et configurer un fichier `web.config` approprié qui indique au serveur web comment lancer votre application. 
 
-You can get started quickly building a Python web site in Visual Studio and publish it to Azure App Service through the following steps:
+Le processus de publication diffère entre Visual Studio 2017 et Visual Studio 2015. En particulier, Visual Studio 2015 automatise certaines des étapes, notamment la création de `web.config`, mais cette automatisation limite la flexibilité et le contrôle sur le long terme. Visual Studio 2017 nécessite plus d’étapes manuelles, mais offre un contrôle plus précis sur votre environnement Python. Les deux options sont décrites ici.
 
-- [Create an Azure App Service](#create-an-azure-app-service)
-- [Create and test the initial project](#create-and-test-the-initial-project)
-- [Publish to Azure App Service](#publish-to-azure-app-service)
+Dans cette rubrique :
+- [Composants requis](#prerequisites)
+- [Créer un service Azure App Service](#create-an-azure-app-service)
+- [Configurer Python sur App Service](#configure-python-on-app-service)
+- [Publier sur App Service - Visual Studio 2017](#publish-to-app-service-visual-studio-2017)
+- [Publier sur App Service - Visual Studio 2015](#publish-to-app-service-visual-studio-2015)
+- [Débogage distant sur App Service](#remote-debugging-on-app-service)
 
-## <a name="create-an-azure-app-service"></a>Create an Azure App Service
+> [!Note]
+> Pour plus d’informations sur les changements entre Visual Studio 2015 et Visual Studio 2017, consultez le billet de blog [Publier sur Azure dans Visual Studio 2017](https://blogs.msdn.microsoft.com/pythonengineering/2016/12/12/publish-to-azure-in-vs-2017/).
 
-Publishing to Azure requires an Azure subscription, or you can use a temporary site.
+## <a name="prerequisites"></a>Conditions préalables
 
-If you don't already have a subscription, start with a [free full Azure account](https://azure.microsoft.com/en-us/free/), which includes generous credits for Azure services. Also consider signing up for [Visual Studio Dev Essentials](https://azure.microsoft.com/en-us/pricing/member-offers/vs-dev-essentials/), which gives you $25 credit every month for a full year.
+Pour cette procédure pas à pas, vous avez besoin d’un projet d’application web basé sur les frameworks Bottle, Flask ou Django. Si vous n’avez pas encore de projet et que voulez essayer le processus de publication, créez un projet de test simple comme suit :
 
-Once you have a subscription, create an App Service with an empty Web App through the Azure portal to use for this walkthrough.
+1. Dans Visual Studio, sélectionnez **Fichier > Nouveau > Projet**, recherchez « Bottle », sélectionnez **Bottle Web Project** (Projet Web Bottle), spécifiez un nom et un chemin pour le projet, puis cliquez sur **OK**. (Le modèle Bottle est inclus dans la charge de travail de développement Python ; consultez [Installation](installation.md).)
 
-To create a temporary App Service without needing an Azure subscription:
+1. Suivez les invites pour installer les packages externes, en sélectionnant **Installer dans un environnement virtuel** et votre interpréteur de base favori pour l’environnement virtuel. Vous faites généralement ce choix en fonction de la version de Python installée sur App Service.
 
-1. Open your browser to [try.azurewebsites.net](https://try.azurewebsites.net).
-1. Select **Web App** for the app type, then select **Next**.
-1. Select **Empty Site**, followed by **Create**.
-1. Sign in with a social login of your choice, and after a short time your site is ready at the displayed URL.
-1. Select **Download publishing profile** and save the `.publishsettings` file, which you use later.
+1. Testez le projet localement en appuyant sur F5 ou en sélectionnant **Déboguer > Démarrer le débogage**. 
 
-## <a name="configure-python-on-azure-app-service"></a>Configure Python on Azure App Service
 
-Once you have an App Service with an empty Web App running, make sure that Python is installed by following the instructions on [Managing Python on Azure App Service](managing-python-on-azure-app-service.md). You can also manually install the `bottle` package using the process in those instructions, but that step is included later in this walkthrough.
+## <a name="create-an-azure-app-service"></a>Créer un service Azure App Service
 
-## <a name="create-and-test-the-initial-project"></a>Create and test the initial project
+La publication sur Azure nécessite un service App Service cible. Pour cela, vous pouvez créer un service App Service en utilisant un abonnement Azure ou vous pouvez utiliser un site temporaire.
 
-1. In Visual Studio, select **File > New > Project**, search for "Bottle", select the **Bottle Web Project**, and click **OK**.    
-
-1. When prompted to install external packages, select **Install into a virtual environment**. Note the **Show required packages** control at the bottom of the dialog that shows which packages will be installed:
-
-  ![Installing required packages](media/tutorials-common-external-packages.png)
-
-1. Select your preferred base interpreter for the virtual environment (for example, **Python 2.7** or **Python 3.4**) and click **Create**:
-
-  ![Adding a virtual environment when creating a project](media/tutorials-common-add-virtual-environment.png)
-
-1. Once the project is created, test it locally by selecting **Debug > Start Debugging** or pressing F5. By default, the application uses an in-memory repository that doesn't require any configuration. All data is lost when the web server is stopped.
-
-1. Click around in the application to familiarize yourself with its operation.
-
-1. Stop the debugger when you're finished (**Debug > Stop Debugging** or Shift-F5).
-
-## <a name="publish-to-azure-app-service"></a>Publish to Azure App Service
-
-Publishing to Azure App Service is a process of copying the necessary files to the server and setting up appropriate `web.config` files. Visual Studio 2015 automates much of this process, including creation of `web.config` files, but this automation limits long-term flexibility and control. Visual Studio 2017 requires more manual steps but provides more exact control over your Python environment. For background, see the blog post, [Publish to Azure in Visual Studio 2017](https://blogs.msdn.microsoft.com/pythonengineering/2016/12/12/publish-to-azure-in-vs-2017/).
+Si vous n’avez pas d’abonnement, commencez avec un [compte Azure complet gratuit](https://azure.microsoft.com/en-us/free/), qui inclut des crédits importants pour les services Azure. Envisagez également de vous inscrire à [Visual Studio Dev Essentials](https://azure.microsoft.com/en-us/pricing/member-offers/vs-dev-essentials/), qui vous offre 25 $ de crédit par mois pendant un an.
 
 > [!Tip]
-> To enable remote debugging with either Visual Studio 2017 or 2015, right-click the project in **Solution Explorer**, select **Add > New Item...**, and select the "Azure Remote debugging web.config" template. This template adds a debugging `web.debug.config` file to your project along with a `ptvsd` folder containing debugging tools. Once you deploy these, you can follow the [Azure Remote Debugging](https://docs.microsoft.com/visualstudio/python/debugging-azure-remote) instructions.
+> Azure demande une carte de crédit pour vérifier votre compte, mais la carte ne sera pas débitée. Vous pouvez également définir une [limite de dépense](https://docs.microsoft.com/azure/billing/billing-spending-limit) égale à vos crédits gratuits pour être sûr qu’il n’y aura aucun frais supplémentaire. En outre, Azure fournit un niveau de plan App Service gratuit qui est idéal pour les applications de test simples, comme celle qui décrite dans la section suivante.
+
+### <a name="using-a-subscription"></a>Utilisation d’un abonnement
+
+Avec un abonnement Azure actif, créez un service App Service avec une application web vide comme suit :
+
+1. Connectez-vous à [portal.azure.com](https://portal.azure.com).
+1. Sélectionnez **+Nouveau**, puis sélectionnez **Web + Mobile** et **Application web**.
+1. Spécifiez un nom pour l’application web, laissez **Groupe de ressources** sur « Créer nouveau », puis choisissez **Windows** comme système d’exploitation.
+1. Sélectionnez **Plan/emplacement App Service**, sélectionnez **Créer nouveau**, et spécifiez un nom et un emplacement. Sélectionnez ensuite **Niveau tarifaire**, faites défiler jusqu’à **F1 Gratuit** et sélectionnez-le, cliquez sur **Sélectionner**, sur **OK** puis sur **Créer**.
+1. (Facultatif) Une fois que le service App Service a été créé, accédez à celui-ci, sélectionnez **Obtenir le profil de publication**, puis enregistrez le fichier localement.
+
+### <a name="using-a-temporary-app-service"></a>Utilisation d’un service App Service temporaire
+
+Pour créer un service App Service temporaire sans avoir besoin d’un abonnement Azure, procédez comme suit :
+
+1. Ouvrez votre navigateur au niveau du site [try.azurewebsites.net](https://try.azurewebsites.net).
+1. Sélectionnez **Application web** pour le type d’application, puis sélectionnez **Suivant**.
+1. Sélectionnez **Site vide**, puis **Créer**.
+1. Connectez-vous à l’aide de la connexion de réseau social de votre choix. Après un bref instant, votre site est prêt à l’adresse URL affichée.
+1. Sélectionnez **Télécharger le profil de publication**, puis enregistrez le fichier `.publishsettings`, que vous utiliserez par la suite.
 
 
-### <a name="visual-studio-2017"></a>Visual Studio 2017
+## <a name="configure-python-on-azure-app-service"></a>Configurer Python sur Azure App Service
 
-Publishing to Azure App Service from Visual Studio 2017 only copies the projects in your file to the server. It's necessary, therefore, to add several additional necessary files to the project and to ensure that the server environment is fully configured.
+Une fois que vous avez un service App Service avec une application web vide en cours d’exécution (dans votre abonnement ou sur un site gratuit), installez une version spécifique de Python comme décrit dans [Gestion de Python sur Azure App Service](managing-python-on-azure-app-service.md). Pour publier depuis Visual Studio 2017, enregistrez le chemin exact de l’interpréteur Python installé avec l’extension de site, comme décrit dans cette rubrique.
 
-1. In Visual Studio **Solution Explorer**, right-click the project and select **Add > New Item...*. In the dialog that appears, selecting the "Azure web.config (Fast CGI)" template and select OK. This creates a `web.config` file in your project root. 
- 
-1. Modify the `WSGI_HANDLER` entry in `web.config` to add parentheses after `app.wsgi_app` as shown below. This is necessary because that object is a function (see app.py) rather than a variable:
- 
-    ```xml
-    <add key="WSGI_HANDLER" value="app.wsgi_app()"/>
-    ```
+Si vous le souhaitez, vous pouvez également installer le package `bottle` en suivant le processus décrit dans ces instructions, car ce package est installé dans le cadre d’autres étapes de cette procédure pas à pas.
 
-1. Modify the `PythonHandler` entry in `web.config` so that the path matches the Python installation on the server. For example, for Python 3.6.1 x64 the entry should appear as follows:
+## <a name="publish-to-app-service---visual-studio-2017"></a>Publier sur App Service - Visual Studio 2017
+
+La publication sur Azure App Service à partir de Visual Studio 2017 copie seulement les fichiers de votre projet sur le serveur. Par conséquent, il est nécessaire de créer les fichiers nécessaires pour configurer l’environnement du serveur.
+
+1. Dans **l’Explorateur de solutions**, cliquez avec le bouton droit sur le projet, puis sélectionnez *Ajouter, Nouvel élément...* Dans la boîte de dialogue qui s’affiche, sélectionnez le modèle « Azure web.config (Fast CGI) », puis OK. Ceci crée un fichier `web.config` à la racine du projet. 
+
+1. Modifiez l’entrée `PythonHandler` dans `web.config` de façon à ce que le chemin corresponde à l’installation de Python sur le serveur. Par exemple, pour Python 3.6.1 x64, l’entrée doit être la suivante :
     
     ```xml
     <system.webServer>
       <handlers>
-        <add name="PythonHandler" path="*" verb="*" modules="FastCgiModule" scriptProcessor="D:\home\Python361x64\python.exe|D:\home\Python361x64\wfastcgi.py" resourceType="Unspecified" requireAccess="Script"/>
+        <add name="PythonHandler" path="*" verb="*" modules="FastCgiModule"
+            scriptProcessor="D:\home\Python361x64\python.exe|D:\home\Python361x64\wfastcgi.py"
+            resourceType="Unspecified" requireAccess="Script"/>
       </handlers>
     </system.webServer>
     ```
 
-    Refer to [Managing Python on Azure App Service](managing-python-on-azure-app-service.md) for details on finding the exact path for your Python version.
+1. Définissez l’entrée `WSGI_HANDLER` dans `web.config` de façon appropriée pour le framework que vous utilisez :
 
-1. In **Solution Explorer**, right-click the `static` folder, select **Add > New Item...**, select the "Azure static files web.config" template, and select OK. This action creates another `web.config` in the `static` folder to disable Python processing for that folder. This allows the default web server to handle requests for static files rather than using the Python application.
+    - **Bottle** : ajoutez des parenthèses après `app.wsgi_app`, comme indiqué ci-dessous. Ceci est nécessaire, car cet objet est une fonction (voir `app.py`) et non pas une variable :
+   
+        ```xml
+        <!-- Bottle apps only -->
+        <add key="WSGI_HANDLER" value="app.wsgi_app()"/>
+        ```
+
+    - **Flask** : changez la valeur de `WSGI_HANDLER` en `<project_name>.app`, où `<project_name>` correspond au nom de votre projet. Vous pouvez trouver l’identificateur exact en examinant l’instruction `from <project_name> import app` dans `runserver.py`. Par exemple, si le projet est nommé « FlaskAzurePublishExample », l’entrée apparaît comme suit :
+
+        ```xml
+        <!-- Flask apps only: change the project name to match your app -->
+        <add key="WSGI_HANDLER" value="FlaskAzurePublishExample.app"/>
+        ```
+
+    - **Django** : deux modifications sont nécessaires dans `web.config` pour les applications Django. Changez d’abord la valeur de `WSGI_HANDLER` en `django.core.wsgi.get_wsgi_application()` (l’objet est dans le fichier `wsgi.py`) :
+
+        ```xml
+        <!-- Django apps only -->
+        <add key="WSGI_HANDLER" value="django.core.wsgi.get_wsgi_application()"/>
+        ```
+
+        Ensuite, ajoutez l’entrée suivante en dessous de celle de `WSGI_HANDLER`, en remplaçant `DjangoAzurePublishExample` par le nom de votre projet :
+
+        ```xml
+        <add key="DJANGO_SETTINGS_MODULE" value="DjangoAzurePublishExample.settings" />
+        ```
+
+1. **Uniquement pour les applications Django** : dans le dossier qui correspond au nom de votre projet, ouvrez `settings.py` et ajoutez votre domaine d’URL de site à `ALLOWED_HOSTS` comme illustré ci-dessous, en remplaçant bien sûr « vspython-test-02.azurewebsites.net » par votre URL :
+
+    ```python
+    # Change the URL to your specific site
+    ALLOWED_HOSTS = ['vspython-test-02.azurewebsites.net']
+    ```
+
+    Si vous ne parvenez pas à ajouter votre URL au tableau, vous obtenez l’erreur suivante : « DisallowedHost pour / En-tête HTTP_HOST non valides : '\<URL du site\>'. Il peut être nécessaire d’ajouter '\<URL du site\>' à ALLOWED_HOSTS. »
+
+1. Dans **l’Explorateur de solutions**, développez le dossier portant le même que votre projet, cliquez avec le bouton droit sur le dossier `static`, sélectionnez **Ajouter > Nouvel élément...**, sélectionnez le modèle « web.config des fichiers statiques Azure » et sélectionnez **OK**. Cette action crée un autre fichier `web.config` dans le dossier `static`, qui désactive le traitement de Python pour ce dossier. Cette configuration envoie des demandes de fichiers statiques au serveur web par défaut au lieu d’utiliser l’application Python.
   
-1. Save your project, then in Visual Studio **Solution Explorer**, right-click the project and select **Publish**. 
+1. Enregistrez votre projet puis, dans **l’Explorateur de solutions**, cliquez avec le bouton droit sur le projet et sélectionnez **Publier**. 
 
-1. In the **Publish** tab that appears, select the publishing target:
+1. Sous l’onglet **Publier** qui apparaît, sélectionnez la cible de publication :
 
-    a. Your own Azure subscription: select **Microsoft Azure App Service**, then **Select Existing** followed by **Publish**. A dialog appears in which you can select the appropriate subscription and app service.
+    a. Votre propre abonnement Azure : sélectionnez **Microsoft Azure App Service**, puis **Sélectionner** suivi de **Publier**. Une boîte de dialogue s’affiche, où vous pouvez sélectionner l’abonnement et le service App Service appropriés. Si le service App Service n’apparaît pas, utilisez le profil de publication téléchargé comme décrit ci-dessous pour un service App Service temporaire.
     
-    ![Publish to Azure step 1, Visual Studio 2017, existing subscriptions](media/tutorials-common-publish-1a-2017.png)
+    ![Publier sur Azure, Étape 1, Visual Studio 2017, abonnements existants](media/tutorials-common-publish-1a-2017.png)
 
-    b. If you're using a temporary App Service on try.azurewebsites.net, select the **>** control to find **Import profile**, select that option, then select **Publish**. This prompts for the location of the `.publishsettings` file downloaded earlier.
+    b. Si vous utilisez un service App Service temporaire sur try.azurewebsites.net, ou si vous devez utiliser un profil de publication, sélectionnez le contrôle **>** pour rechercher **Importer un profil**, sélectionnez cette option, puis sélectionnez **Publier**. L’emplacement du fichier `.publishsettings` précédemment téléchargé vous est alors demandé.
 
-    ![Publish to Azure step 1, Visual Studio 2017, temporary app service](media/tutorials-common-publish-1b-2017.png)    
+    ![Publier sur Azure, Étape 1, Visual Studio 2017, service App Service temporaire](media/tutorials-common-publish-1b-2017.png)    
 
-1.  You see publishing status in a "Web Publish Activity" window and the Publish window. Once publishing is complete, the default browser opens on the site URL. The URL is also shown in the Publish window.
+1.  Visual Studio affiche l’état de la publication dans une fenêtre « Activité de publication Web » et la fenêtre Publier. Une fois la publication terminée, le navigateur par défaut s’ouvre sur l’URL du site. L’URL apparaît également dans la fenêtre Publier.
 
-1. When the browser opens, you may see the message, "The page cannot be displayed because an internal server error has occurred." This message indicates that your Python environment on the server is not completely configured. Refer again to [Managing Python on Azure App Service](managing-python-on-azure-app-service.md), making sure that you have an appropriate Python extension installed. Then double-check the path to the Python interpreter in your `web.config` file.     
+1. Quand le navigateur s’ouvre, vous pouvez voir le message, « Impossible d’afficher la page, car une erreur interne au serveur s’est produite. » Ce message indique que votre environnement Python sur le serveur n’est pas entièrement configuré, auquel cas vous devez procéder comme suit :
+
+    a. Reportez-vous à nouveau à [Gestion de Python sur Azure App Service](managing-python-on-azure-app-service.md) et vérifiez qu’une extension de site Python appropriée est installée.
+     
+    b. Vérifiez le chemin de l’interpréteur Python dans votre fichier `web.config`. Le chemin doit correspondre exactement à l’emplacement d’installation de l’extension de site que vous avez choisie.    
  
-     Also use the Kudu console to upgrade any packages listed in your app's `requirements.txt` file. Navigate to your Python folder, such as `/home/python361x64`, and run the following command as described in the [Kudu console](managing-python-on-azure-app-service.md#kudu-console) section:
+    c. Utilisez la console Kudu pour mettre à niveau les packages répertoriés dans le fichier `requirements.txt` de votre application : accédez au même dossier Python que celui utilisé dans `web.config`, comme `/home/python361x64`, et exécutez la commande suivante, comme décrit dans la section [Console Kudu](managing-python-on-azure-app-service.md#azure-app-service-kudu-console) :
 
     ```
     python -m pip install --upgrade -r /home/site/wwwroot/requirements.txt
     ```          
 
-    You may also need to restart the App Service after installing new packages. A restart is not necessary when changing `web.config`, as App Service does an automatic restart whenever `web.config` changes.
+    Si vous voyez des erreurs d’autorisation lors de l’exécution de cette commande, vérifiez que vous exécutez la commande dans le dossier de votre extension de site et *non pas* dans le dossier de l’une des installations de Python par défaut du service App Service. Comme vous ne pouvez pas modifier ces environnements par défaut, une tentative d’installation de packages échouera certainement.
 
-> [!Tip] 
-> If you make any changes to your app's `requirements.txt` file, be sure to again use the Kudu console to install any packages that are now listed in that file. 
+    d. Pour une sortie d’erreur détaillée, ajoutez la ligne suivante à `web.config` dans le nœud `<system.webServer>` :
 
-### <a name="visual-studio-2015"></a>Visual Studio 2015
+    ```xml
+    <httpErrors errorMode="Detailed"></httpErrors>
+    ```
+
+    e. Essayez en redémarrant le service App Service après l’installation de nouveaux packages. Un redémarrage n’est pas nécessaire lors de la modification de `web.config`, car App Service fait automatiquement un redémarrage quand `web.config` est modifié.
+
+    > [!Tip] 
+    > Si vous apportez des modifications au fichier `requirements.txt` de votre application, veillez à utiliser à nouveau la console Kudu pour installer des packages qui figurent maintenant dans ce fichier. 
+
+1. Une fois que vous avez entièrement configuré l’environnement du serveur, actualisez la page dans le navigateur pour faire apparaître l’application web.
+
+    ![Résultats de la publication d’applications Bottle, Flask et Django sur App Service](media/azure-publish-results.png)
+
+
+## <a name="publishing-to-app-service---visual-studio-2015"></a>Publication sur App Service - Visual Studio 2015
 
 > [!Note] 
-> A short video of this process can be found on [Visual Studio Python Tutorial: Building a Website](https://www.youtube.com/watch?v=FJx5mutt1uk&list=PLReL099Y5nRdLgGAdrb_YeTdEnd23s6Ff&index=6) (youtube.com, 3m10s). 
+> Vous pouvez trouver une courte vidéo de ce processus dans [Visual Studio Python Tutorial: Building a Website](https://www.youtube.com/watch?v=FJx5mutt1uk&list=PLReL099Y5nRdLgGAdrb_YeTdEnd23s6Ff&index=6) (youtube.com, 3 minutes 10 secondes). 
 
-1. In **Solution Explorer**, right-click the project select **Publish**. 
+1. Dans l’**Explorateur de solutions**, cliquez avec le bouton droit sur le projet, puis sélectionnez **Publier**. 
 
-1. In the **Publish** dialog, select **Microsoft Azure App Service**:
+1. Dans la boîte de dialogue **Publier**, sélectionnez **Microsoft Azure App Service** :
 
-  ![Publish to Azure step 1](media/tutorials-common-publish-1.png)
+  ![Publication sur Azure, étape 1](media/tutorials-common-publish-1.png)
 
-1. Select a target:
+1. Sélectionnez une cible :
 
-    - If you have an Azure subscription, select **Microsoft Azure App Service** as the publishing target, then in the following dialog select an existing App Service or select **New** to create a new one.
-    - If you're using a temporary site from try.azurewebsites.net, select **Import** as the publishing target, then browse for the `.publishsettings` file downloaded from the site and select **OK**.
+    - Si vous disposez d’un abonnement Azure, sélectionnez **Microsoft Azure App Service** comme cible de publication, puis dans la boîte de dialogue suivante, sélectionnez un App Service existant ou sélectionnez **Nouveau** pour en créer un.
+    - Si vous utilisez un site temporaire à partir de try.azurewebsites.net, sélectionnez **Importer** comme cible de publication, recherchez le fichier `.publishsettings` téléchargé à partir du site, puis sélectionnez **OK**.
 
-1. The App Service details appear in the **Publish** dialog's **Connection** tab below.
+1. Les détails d’App Service apparaissent dans l’onglet **Connexion** ci-dessous de la boîte de dialogue **Publier**.
 
-  ![Publish to Azure step 2](media/tutorials-common-publish-2.png)
+  ![Publication sur Azure, étape 2](media/tutorials-common-publish-2.png)
 
-1. Select **Next >** as needed to review additional settings. If you plan to [remotely debug your Python code on Azure](debugging-azure-remote.md), you must set **Configuration** to **Debug**
+1. Sélectionnez **Suivant >** autant de fois que nécessaire pour examiner les paramètres supplémentaires. Si vous prévoyez de [déboguer à distance votre code Python sur Azure](debugging-azure-remote.md), vous devez définir **Configuration** sur **Débogage**.
 
-1. Select **Publish**. Once your application is deployed to Azure, your default browser opens on that site. 
+1. Sélectionnez **Publier**. Une fois votre application déployée sur Azure, votre navigateur par défaut s’ouvre au niveau de ce site. 
 
-As part of this process, Visual Studio also does the following steps:
+Dans le cadre de ce processus, Visual Studio effectue également les étapes suivantes :
 
-- Create a `web.config` file on the server that contains appropriate pointers to the app's `wsgi_app` function and to App Service's default Python 3.4 interpreter.
-- Turn off processing for files in the project's `static` folder (rules for this are in `web.config`).
-- Publish the virtual environment to the server.
-- Add a `web.debug.config` file and the ptvsd debugging tools to enable remote debugging.
+- Créer un fichier `web.config` sur le serveur, qui contient des pointeurs appropriés vers la fonction `wsgi_app` de l’application et vers l’interpréteur Python 3.4 par défaut d’App Service.
+- Désactiver le traitement des fichiers dans le dossier `static` du projet (les règles concernées sont dans `web.config`).
+- Publier l’environnement virtuel sur le serveur.
+- Ajouter un fichier `web.debug.config` et les outils de débogage ptvsd pour permettre le débogage distant.
  
-As noted earlier, these automatic steps simplify the publishing process but make it more difficult to control the Python environment. For example, the `web.config` file is created only on the server but not added to your project. The publishing process also takes longer because it's also copying the whole virtual environment from your development computer. Eventually you may want to maintain your own `web.config` file and use `requirements.txt` to maintain packages on the server directly. Using `requirements.txt`, in particular, guarantees that your development and server environments always match.
+Comme indiqué précédemment, ces étapes automatiques simplifient le processus de publication, mais elles rendent plus difficile le contrôle de l’environnement Python. Par exemple, le fichier `web.config` est créé seulement sur le serveur, mais il n’est pas ajouté à votre projet. Le processus de publication prend aussi plus de temps, car il copie tout l’environnement virtuel à partir de votre ordinateur de développement, au lieu de s’appuyer sur la configuration du serveur.
+
+Enfin, vous pouvez préférer gérer votre propre fichier `web.config` et utiliser `requirements.txt` pour gérer directement les packages sur le serveur. L’utilisation de `requirements.txt` garantit en particulier que vos environnements de développement et serveur correspondent toujours.
+
+## <a name="remote-debugging-on-azure-app-service"></a>Débogage distant sur Azure App Service
+
+Quand vous publiez une configuration de débogage depuis Visual Studio 2015, le processus crée automatiquement un fichier `web.debug.config` et ajoute un dossier `ptvsd` contenant les outils de débogage nécessaires.
+
+Avec Visual Studio 2017, au lieu de cela, vous ajoutez ces composants directement au projet. Cliquez avec le bouton droit sur le projet dans **l’Explorateur de solutions**, sélectionnez **Ajouter > Nouvel élément...**, puis sélectionnez le modèle « Fichier web.config de débogage Azure Remote ». Un fichier `web.debug.config` de débogage et le dossier des outils `ptvsd` apparaît dans votre projet.
+
+Une fois que ces fichiers sont déployés sur le serveur (automatiquement avec Visual Studio 2015 ; lors de votre publication suivante avec Visual Studio 2017), vous pouvez suivre les instructions pour le [débogage distant Azure](https://docs.microsoft.com/visualstudio/python/debugging-azure-remote).

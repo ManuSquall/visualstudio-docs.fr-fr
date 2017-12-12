@@ -4,36 +4,20 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-sdk
+ms.technology: vs-ide-sdk
 ms.tgt_pltfrm: 
 ms.topic: article
-helpviewer_keywords:
-- msbuild, msbuild properties
+helpviewer_keywords: msbuild, msbuild properties
 ms.assetid: b9da45ae-d6a6-4399-8628-397deed31486
-caps.latest.revision: 16
+caps.latest.revision: "16"
 author: kempb
 ms.author: kempb
 manager: ghogen
-translation.priority.ht:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
-translationtype: Human Translation
-ms.sourcegitcommit: 79460291e91f0659df0a4241e17616e55187a0e2
-ms.openlocfilehash: cf04644c98062ffb2aee5b4b826f8426070c3d60
-ms.lasthandoff: 02/22/2017
-
+ms.openlocfilehash: f1a0f6df56cebe769ec514abea49ade0083c512e
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: HT
+ms.contentlocale: fr-FR
+ms.lasthandoff: 10/31/2017
 ---
 # <a name="comparing-properties-and-items"></a>Comparaison des propriétés et des éléments
 Les propriétés et les éléments MSBuild permettent de transmettre des informations aux tâches, d’évaluer des conditions et de stocker les valeurs qui peuvent être référencées dans le fichier projet.  
@@ -90,9 +74,9 @@ Les propriétés et les éléments MSBuild permettent de transmettre des informa
 ## <a name="properties-and-items-in-tasks"></a>Propriétés et éléments des tâches  
  Les propriétés et éléments sont utilisés comme entrées et sorties pour les tâches MSBuild. Pour plus d’informations, consultez l’article [Tâches MSBuild](../msbuild/msbuild-tasks.md).  
   
- Les propriétés sont transmises aux tâches en tant qu’attributs. Dans la tâche, une propriété MSBuild est représentée par un type de propriété dont la valeur peut être convertie vers et depuis une chaîne. Les types de propriété pris en charge incluent `bool`, `char`, `DateTime`, `Decimal`, `Double`, `int`, `string`, et tout type pouvant être géré par <xref:System.Convert.ChangeType%2A>.  
+ Les propriétés sont transmises aux tâches en tant qu’attributs. Dans la tâche, une propriété MSBuild est représentée par un type de propriété dont la valeur peut être convertie vers et depuis une chaîne. Les types de propriété pris en charge incluent `bool`, `char`, `DateTime`, `Decimal`, `Double`, `int` et `string`, ainsi que tout type pouvant être géré par <xref:System.Convert.ChangeType%2A>.  
   
- Les éléments sont transmis aux tâches en tant qu’objets <xref:Microsoft.Build.Framework.ITaskItem>. Dans la tâche, <xref:Microsoft.Build.Framework.ITaskItem.ItemSpec%2A> représente la valeur de l’élément, et <xref:Microsoft.Build.Framework.ITaskItem.GetMetadata%2A> récupère ses métadonnées.  
+ Les éléments sont passés aux tâches en tant qu’objets <xref:Microsoft.Build.Framework.ITaskItem>. Dans la tâche, <xref:Microsoft.Build.Framework.ITaskItem.ItemSpec%2A> représente la valeur de l’élément, et <xref:Microsoft.Build.Framework.ITaskItem.GetMetadata%2A> récupère ses métadonnées.  
   
  La liste d’éléments d’un type d’élément peut être transmise en tant que tableau d’objets `ITaskItem`. Depuis .NET Framework 3.5, les éléments peuvent être supprimés d’une liste d’éléments dans une cible à l’aide de l’attribut `Remove`. Comme les éléments peuvent être supprimés d’une liste d’éléments, un type d’élément peut comporter zéro élément. Si une liste d’éléments est transmise à une tâche, le code de la tâche doit vérifier cette possibilité.  
   

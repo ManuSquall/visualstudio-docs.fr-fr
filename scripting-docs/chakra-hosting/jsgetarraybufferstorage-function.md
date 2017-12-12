@@ -1,23 +1,27 @@
 ---
-title: "JsGetArrayBufferStorage (fonction) | Microsoft Docs"
-ms.custom: ""
-ms.date: "01/18/2017"
-ms.prod: "windows-client-threshold"
-ms.reviewer: ""
-ms.suite: ""
-ms.tgt_pltfrm: ""
-ms.topic: "reference"
+title: JsGetArrayBufferStorage, fonction | Microsoft Docs
+ms.custom: 
+ms.date: 01/18/2017
+ms.prod: windows-client-threshold
+ms.reviewer: 
+ms.suite: 
+ms.tgt_pltfrm: 
+ms.topic: reference
 ms.assetid: 712ae298-36a9-47ef-b089-e51835c056bc
-caps.latest.revision: 2
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 2
+caps.latest.revision: "2"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: a667325eb4d1d9540751a52232e5e06b3004b8b5
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.translationtype: HT
+ms.contentlocale: fr-FR
+ms.lasthandoff: 10/27/2017
 ---
-# JsGetArrayBufferStorage (fonction)
-Obtient le stockage sous\-jacent de mémoire utilisé par un `ArrayBuffer`.  
+# <a name="jsgetarraybufferstorage-function"></a>JsGetArrayBufferStorage (fonction)
+Obtient le stockage sous-jacent de mémoire utilisé par un `ArrayBuffer`.  
   
-## Syntaxe  
+## <a name="syntax"></a>Syntaxe  
   
 ```  
 JsErrorCode STDAPI_ JsGetArrayBufferStorage(  
@@ -27,26 +31,26 @@ JsErrorCode STDAPI_ JsGetArrayBufferStorage(
 );  
 ```  
   
-#### Paramètres  
+#### <a name="parameters"></a>Paramètres  
  `arrayBuffer`  
  Instance de ArrayBuffer.  
   
  `buffer`  
- Mémoire tampon du ArrayBuffer.  La durée de vie de la mémoire tampon retournée est identique à la durée de vie du `ArrayBuffer`.  Le pointeur de la mémoire tampon ne compte pas comme une référence au `ArrayBuffer` pour le garbage collection.  
+ Mémoire tampon du ArrayBuffer. La durée de vie de la mémoire tampon retournée est identique à la durée de vie du `ArrayBuffer`. Le pointeur de la mémoire tampon ne compte pas comme une référence au `ArrayBuffer` pour le garbage collection.  
   
  `bufferLength`  
  Nombre d'octets dans la mémoire tampon.  
   
-## Valeur de retour  
+## <a name="return-value"></a>Valeur de retour  
  Le code `JsNoError` si l'opération a réussi, sinon un code d'échec.  
   
-## Notes  
+## <a name="remarks"></a>Remarques  
  Nécessite un contexte de script actif.  
   
  Cette API est prise en charge uniquement en mode Edge.  
   
-## Configuration requise  
- **En\-tête :** jsrt.h  
+## <a name="requirements"></a>Spécifications  
+ **En-tête :** jsrt.h  
   
-## Voir aussi  
- [Référence \(JavaScript Runtime\)](../chakra-hosting/reference-javascript-runtime.md)
+## <a name="see-also"></a>Voir aussi  
+ [Référence (JavaScript Runtime)](../chakra-hosting/reference-javascript-runtime.md)

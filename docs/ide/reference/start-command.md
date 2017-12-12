@@ -1,52 +1,52 @@
 ---
-title: "D&#233;marrer, commande | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-general"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "debug.start"
-helpviewer_keywords: 
-  - "Debug.Start (commande)"
-  - "Démarrer (commande)"
+title: "Démarrer, commande | Microsoft Docs"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-general
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords: debug.start
+helpviewer_keywords:
+- Start command
+- Debug.Start command
 ms.assetid: dc4e4aa2-b0ab-4e00-92db-6dc3058ddc21
-caps.latest.revision: 13
-author: "kempb"
-ms.author: "kempb"
-manager: "ghogen"
-caps.handback.revision: 13
+caps.latest.revision: "13"
+author: gewarren
+ms.author: gewarren
+manager: ghogen
+ms.openlocfilehash: f83fbf1427951057f2154e032fb58b178c8b39fc
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: HT
+ms.contentlocale: fr-FR
+ms.lasthandoff: 10/31/2017
 ---
-# D&#233;marrer, commande
-[!INCLUDE[vs2017banner](../../code-quality/includes/vs2017banner.md)]
-
-Commence à déboguer le projet de démarrage.  
+# <a name="start-command"></a>Démarrer, commande
+Commence le débogage du projet de démarrage.  
   
-## Syntaxe  
+## <a name="syntax"></a>Syntaxe  
   
 ```  
 Debug.Start [address]  
 ```  
   
-## Arguments  
+## <a name="arguments"></a>Arguments  
  `address`  
- Facultatif.  Adresse à laquelle le programme suspend son exécution, semblable à un point d'arrêt dans le code source.  Cet argument est valide uniquement en mode débogage.  
+ Facultatif. Adresse à laquelle le programme suspend son exécution, semblable à un point d’arrêt dans le code source. Cet argument est valide uniquement en mode débogage.  
   
-## Notes  
- Lorsqu'elle est exécutée, la commande **Start** effectue une opération RunToCursor vers l'adresse spécifiée.  
+## <a name="remarks"></a>Remarques  
+ Quand elle est exécutée, la commande **Start** effectue une opération RunToCursor vers l’adresse spécifiée.  
   
-## Exemple  
+## <a name="example"></a>Exemple  
  Cet exemple démarre le débogueur et ignore toute exception qui peut se produire.  
   
 ```  
 >Debug.Start  
 ```  
   
-## Voir aussi  
+## <a name="see-also"></a>Voir aussi  
  [Commandes Visual Studio](../../ide/reference/visual-studio-commands.md)   
- [Commande, fenêtre](../../ide/reference/command-window.md)   
- [Zone Rechercher\/Commande](../../ide/find-command-box.md)   
- [Alias de commandes Visual Studio](../../ide/reference/visual-studio-command-aliases.md)
+ [Fenêtre Commande](../../ide/reference/command-window.md)   
+ [Zone Rechercher/Commande](../../ide/find-command-box.md)   
+ [Alias de commande Visual Studio](../../ide/reference/visual-studio-command-aliases.md)

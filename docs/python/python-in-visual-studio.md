@@ -1,34 +1,35 @@
 ---
 title: "Python dans Visual Studio | Microsoft Docs"
 ms.custom: 
-ms.date: 7/13/2017
+ms.date: 09/26/2017
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- devlang-python
+ms.technology: devlang-python
 ms.devlang: python
 ms.tgt_pltfrm: 
 ms.topic: hero-article
-ms.assetid: 33f4f6fb-0ae4-4234-9df2-531f2d3af17f
-caps.latest.revision: 11
+caps.latest.revision: "11"
 author: kraigb
 ms.author: kraigb
 manager: ghogen
+ms.openlocfilehash: c88c90fcc150187bd10e3100cd703522f86bc191
+ms.sourcegitcommit: b7d3b90d0be597c9d01879338dd2678c881087ce
 ms.translationtype: HT
-ms.sourcegitcommit: 6d25db4639f2c8391c1e32542701ea359f560178
-ms.openlocfilehash: 082ac09fcc1bb466de891d0daa7178e505c35770
-ms.contentlocale: fr-fr
-ms.lasthandoff: 07/18/2017
-
+ms.contentlocale: fr-FR
+ms.lasthandoff: 12/01/2017
 ---
-
 # <a name="working-with-python-in-visual-studio"></a>Utilisation de Python dans Visual Studio
 
 Python est un langage de programmation très apprécié, car il est fiable, souple, simple d’emploi et utilisable sur tous les systèmes d’exploitation. Il est soutenu à la fois par une solide communauté de développeurs et par de nombreuses bibliothèques gratuites. Python prend en charge toutes les méthodes de développement, notamment les applications Web, les services web, les applications de bureau, les scripts et le calcul scientifique, et il est utilisé par une multitude d’universités, de scientifiques et de développeurs aussi bien occasionnels que professionnels. Pour plus d’informations sur ce langage, consultez le site [python.org](https://www.python.org) et la page [Python for Beginners](https://www.python.org/about/gettingstarted/) (Débuter avec Python).
 
 Visual Studio sur Windows offre une prise en charge [open source](https://github.com/Microsoft/ptvs) du langage Python par le biais des charges de travail de développement et de science des données Python (Visual Studio 2017) et de l’extension gratuite Python Tools pour Visual Studio (Visual Studio 2015 et versions antérieures). Python n’est actuellement pas pris en charge dans Visual Studio pour Mac, mais est disponible sur Mac et Linux via Visual Studio Code (consultez [Questions et réponses ci-dessous](#questions-and-answers).
 
-Configurez la charge de travail Python en suivant nos [instructions d’installation](installation.md), puis utilisez les liens ci-dessous pour en savoir plus sur les fonctionnalités Python et sur les capacités de Visual Studio proprement dit.
+Pour commencer :
+
+- Suivez les [instructions d’installation](installation.md) pour configurer la charge de travail Python
+- Suivez un ou plusieurs guides de démarrage rapide pour créer un projet. Si vous n’êtes pas sûr, commencez par [Créer un projet à partir d’un modèle](quickstart-02-project-from-template.md).
+- Suivez le didacticiel [Utilisation de Python dans Visual Studio](vs-tutorial-01-01.md) pour une expérience de bout en bout.
+- Utilisez ensuite les liens ci-dessous pour explorer les fonctionnalités Python et les fonctionnalités de Visual Studio lui-même.
 
 | Fonctionnalité | Description | Documentation générale de Visual Studio | 
 | --- | --- | --- |
@@ -44,9 +45,10 @@ Configurez la charge de travail Python en suivant nos [instructions d’installa
 
 La charge de travail Python inclut également le [kit SDK Azure pour Python](azure-sdk-for-python.md), qui simplifie la consommation des services Azure à partir des applications Windows, Mac OS X et Linux.
 
-Notre série de [vidéos de prise en main et d’exploration](https://www.youtube.com/playlist?list=PLReL099Y5nRdLgGAdrb_YeTdEnd23s6Ff) sur YouTube offre une vue d’ensemble des fonctionnalités principales.
+Pour une présentation vidéo, consultez le cours [Python Tools pour Visual Studio](https://mva.microsoft.com/en-US/training-courses/python-tools-for-visual-studio-2017-18121) sur Microsoft Virtual Academy (environ 22 minutes au total). 
 
-[![Vidéos concernant Python Tools](media/video-general.png)](https://www.youtube.com/playlist?list=PLReL099Y5nRdLgGAdrb_YeTdEnd23s6Ff)
+> [!VIDEO https://mva.microsoft.com/en-US/training-courses-embed/python-tools-for-visual-studio-2017-18121/Video-Installing-Visual-Studio-Python-Support-go1id3LWE_1705918567]
+
 
 ## <a name="questions-and-answers"></a>Questions et réponses
 
@@ -195,4 +197,3 @@ Fonctionnalités prises en charge par version et édition de Visual Studio :
 - [WFastCGI bridge between IIS and Python](https://pypi.python.org/pypi/wfastcgi) (Pont WFastCGI entre IIS et Python) (python.org)
 - [Cours Python gratuits sur Microsoft Virtual Academy](https://mva.microsoft.com/search/SearchResults.aspx#!q=python)
 - [Principales questions sur Python sur Microsoft Virtual Academy](https://aka.ms/mva-top-python-questions)
-

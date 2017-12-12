@@ -4,8 +4,7 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-general
+ms.technology: vs-ide-general
 ms.tgt_pltfrm: 
 ms.topic: article
 f1_keywords:
@@ -15,38 +14,22 @@ helpviewer_keywords:
 - Project Designer, Application page
 - Application page in Project Designer
 ms.assetid: 8cec9fea-cd92-47ff-88dd-7c928f0b4a74
-caps.latest.revision: 64
-author: kempb
-ms.author: kempb
+caps.latest.revision: "64"
+author: gewarren
+ms.author: gewarren
 manager: ghogen
-translation.priority.ht:
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- ru-ru
-- zh-cn
-- zh-tw
-translation.priority.mt:
-- cs-cz
-- pl-pl
-- pt-br
-- tr-tr
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 6fbf89668d47d55d1d77a1d7f11765567fc73405
-ms.openlocfilehash: 4be8a1f36d81e2cb36d9daab9817f04d18ecb94a
-ms.contentlocale: fr-fr
-ms.lasthandoff: 05/26/2017
-
+ms.openlocfilehash: b5483245e7f2ae341d08618485a4f49e91eb8fa9
+ms.sourcegitcommit: c0422a3d594ea5ae8fc03f1aee684b04f417522e
+ms.translationtype: HT
+ms.contentlocale: fr-FR
+ms.lasthandoff: 11/02/2017
 ---
 # <a name="application-page-project-designer-visual-basic"></a>Page Application, Concepteur de projet (Visual Basic)
 Utilisez la page **Application** du Concepteur de projet pour spécifier les paramètres d’application et les propriétés du projet.  
   
- Pour accéder à la page **Application**, choisissez un nœud de projet (pas le nœud **Solution**) dans l’**Explorateur de solutions**. Ensuite, choisissez **Projet**, **Propriétés** dans la barre de menus. Quand le Concepteur de projet apparaît, cliquez sur l’onglet **Application**.  
+Pour accéder à la page **Application**, choisissez un nœud de projet (pas le nœud **Solution**) dans l’**Explorateur de solutions**. Ensuite, choisissez **Projet**, **Propriétés** dans la barre de menus. Quand le Concepteur de projet apparaît, cliquez sur l’onglet **Application**.  
   
- [!INCLUDE[note_settings_general](../../data-tools/includes/note_settings_general_md.md)]  
+[!INCLUDE[note_settings_general](../../data-tools/includes/note_settings_general_md.md)]  
   
 ## <a name="general-application-settings"></a>Paramètres d’application généraux  
  Les options suivantes permettent de configurer les paramètres généraux d’une application.  
@@ -79,7 +62,7 @@ Utilisez la page **Application** du Concepteur de projet pour spécifier les par
  Pour plus d’informations, consultez [Guide pratique pour cibler une version du .NET Framework](../../ide/how-to-target-a-version-of-the-dotnet-framework.md) et [Présentation du multiciblage Visual Studio](../../ide/visual-studio-multi-targeting-overview.md).  
   
  **Type d’application**  
- Spécifie le type d’application à générer. Pour les applications [!INCLUDE[win8_appname_long](../../debugger/includes/win8_appname_long_md.md)], vous pouvez spécifier **Application du Windows Store**, **Bibliothèque de classes** ou **Fichier WinMD**. Pour la plupart des autres types d’applications, vous pouvez spécifier **Application Windows**, **Application console**, **Bibliothèque de classes**, **Service Windows** ou **Bibliothèque de contrôles web**.  
+ Spécifie le type d’application à générer. Pour les applications Windows 8.x, vous pouvez spécifier **Application du Windows Store**, **Bibliothèque de classes** ou **Fichier WinMD**. Pour la plupart des autres types d’applications, vous pouvez spécifier **Application Windows**, **Application console**, **Bibliothèque de classes**, **Service Windows** ou **Bibliothèque de contrôles web**.  
   
  Pour un projet d’application web, vous devez spécifier **Bibliothèque de classes**.  
   
@@ -176,5 +159,4 @@ Utilisez la page **Application** du Concepteur de projet pour spécifier les par
  L’objet <xref:System.Windows.Application> déclenche des événements quand certaines modifications de l’état de l’application se produisent (par exemple, au démarrage ou à l’arrêt de l’application). Pour obtenir la liste complète des événements exposés par cette classe, consultez <xref:System.Windows.Application>. Ces événements sont traités dans la section de code utilisateur de la classe partielle `Application`.  
   
 ## <a name="see-also"></a>Voir aussi  
-[Gestion des propriétés de l’application](../../ide/application-properties.md)
- [Écriture de code dans les solutions Office](/office-dev/office-dev/writing-code-in-office-solutions)
+[Gestion des propriétés de l’application](../../ide/application-properties.md) [Écriture de code dans les solutions Office](/office-dev/office-dev/writing-code-in-office-solutions)

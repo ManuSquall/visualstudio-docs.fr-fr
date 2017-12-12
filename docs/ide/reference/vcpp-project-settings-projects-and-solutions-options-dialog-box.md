@@ -4,12 +4,10 @@ ms.custom:
 ms.date: 08/02/2017
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-general
+ms.technology: vs-ide-general
 ms.tgt_pltfrm: 
 ms.topic: article
-f1_keywords:
-- VS.ToolsOptionsPages.Projects.VCBuild
+f1_keywords: VS.ToolsOptionsPages.Projects.VCBuild
 helpviewer_keywords:
 - builds [Visual Studio], logs
 - build process [C++]
@@ -19,31 +17,15 @@ helpviewer_keywords:
 - extensions, files built by C or C++ compiler
 - BuildLog.htm
 ms.assetid: 56420efd-6a95-464e-b890-e2b38c48d66a
-caps.latest.revision: 15
+caps.latest.revision: "15"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-translation.priority.ht:
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- ru-ru
-- zh-cn
-- zh-tw
-translation.priority.mt:
-- cs-cz
-- pl-pl
-- pt-br
-- tr-tr
+ms.openlocfilehash: b0ccfd3d526cee44a30c8d4c33030f2eb2a585e5
+ms.sourcegitcommit: c0422a3d594ea5ae8fc03f1aee684b04f417522e
 ms.translationtype: HT
-ms.sourcegitcommit: ea1e787c1d509123a650cf2bd20e5fa8bffd5b4e
-ms.openlocfilehash: 2581fdecd9a26c8d4500f83b9abd0e1f967e2ee6
-ms.contentlocale: fr-fr
-ms.lasthandoff: 09/26/2017
-
+ms.contentlocale: fr-FR
+ms.lasthandoff: 11/02/2017
 ---
 # <a name="vc-project-settings-projects-and-solutions-options-dialog-box"></a>Paramètres du projet VC++, Projets et solutions, boîte de dialogue Options
 Cette boîte de dialogue vous permet de définir les paramètres du projet et de la build [!INCLUDE[vcprvc](../../code-quality/includes/vcprvc_md.md)] relatifs à la journalisation, aux performances et à la prise en charge des types de fichiers.  
@@ -53,7 +35,6 @@ Cette boîte de dialogue vous permet de définir les paramètres du projet et de
 1.  Dans le menu **Outils** , cliquez sur **Options**.  
   
 2.  Sélectionnez **Projets et solutions**, puis **Paramètres de projet VC++**.  
-  
  
 ## <a name="build-logging"></a>Journalisation de la génération  
  **Oui**  
@@ -95,17 +76,13 @@ Cette boîte de dialogue vous permet de définir les paramètres du projet et de
  **Afficher tous les fichiers**  
   Configure l’**Explorateur de solutions** de sorte qu’il affiche les fichiers du projet et les fichiers sur disque dans le dossier du projet.  
 
-
 ## <a name="enable-project-caching"></a>Activer la mise en cache du projet
-**Oui** Permet à Visual Studio de mettre en cache les données de projet afin de pouvoir, à la prochaine ouverture du projet, charger ces données mises en cache au lieu de les recalculer à partir des fichiers projet. L’utilisation de données mises en cache peut accélérer considérablement la vitesse de chargement du projet.   
+**Oui**  
+Permet à Visual Studio de mettre en cache les données de projet afin de pouvoir, à la prochaine ouverture du projet, charger ces données mises en cache au lieu de les recalculer à partir des fichiers projet. L’utilisation de données mises en cache peut accélérer considérablement la vitesse de chargement du projet.   
 
-**Non** N’utilise pas les données de projet mises en cache. Analyse les fichiers projet chaque fois que le projet se charge.
+**Non**  
+N’utilise pas les données de projet mises en cache. Analyse les fichiers projet chaque fois que le projet se charge.
 
-
-  
-
-  
-#
 ## <a name="see-also"></a>Voir aussi  
  [Génération de programmes C/C++](/cpp/build/building-c-cpp-programs)   
  [Référence de la génération C/C++](/cpp/build/reference/c-cpp-building-reference)

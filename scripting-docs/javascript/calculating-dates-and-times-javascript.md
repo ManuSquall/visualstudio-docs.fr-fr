@@ -1,39 +1,42 @@
 ---
-title: "Calcul des dates et des heures (JavaScript) | Microsoft Docs"
-ms.custom: ""
-ms.date: "01/18/2017"
-ms.prod: "windows-client-threshold"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "devlang-javascript"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-dev_langs: 
-  - "JavaScript"
-  - "TypeScript"
-  - "DHTML"
-helpviewer_keywords: 
-  - "arithmétique de date et d'heure (JavaScript)"
-  - "JavaScript, date et heure"
-  - "comparaison de dates (JavaScript)"
-  - "calculs de date et d'heure (JavaScript)"
+title: Calcul des dates et des heures (JavaScript) | Microsoft Docs
+ms.custom: 
+ms.date: 01/18/2017
+ms.prod: windows-client-threshold
+ms.reviewer: 
+ms.suite: 
+ms.technology: devlang-javascript
+ms.tgt_pltfrm: 
+ms.topic: article
+dev_langs:
+- JavaScript
+- TypeScript
+- DHTML
+helpviewer_keywords:
+- date and time arithmetic [JavaScript]
+- JavaScript, date and time
+- date comparison [JavaScript]
+- date and time calculations [JavaScript]
 ms.assetid: ea976f78-d934-479b-9056-880390d8bddd
-caps.latest.revision: 34
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 34
+caps.latest.revision: "34"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: 18b4ff307c8f2c48a37ed9ca50e7c5f1ff693ece
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.translationtype: HT
+ms.contentlocale: fr-FR
+ms.lasthandoff: 10/27/2017
 ---
-# Calcul des dates et des heures (JavaScript)
-Vous pouvez utiliser l'[objet Date](../javascript/reference/date-object-javascript.md) pour effectuer des tâches courantes de calendrier et d'horloge, telles que la comparaison de dates et le calcul du temps écoulé.  
+# <a name="calculating-dates-and-times-javascript"></a>Calcul des dates et des heures (JavaScript)
+Vous pouvez utiliser [l’objet Date](../javascript/reference/date-object-javascript.md) pour effectuer des tâches courantes de calendrier et d’horloge, telles que la comparaison de dates et le calcul du temps écoulé.  
   
-## Définition d'une date à la date actuelle  
- Lorsque vous créez une instance de l'[objet Date](../javascript/reference/date-object-javascript.md) sans spécifier de date, il retourne une valeur représentant la date et l'heure actuelles, y compris l'année, le mois, le jour, l'heure, la minute, la seconde et la milliseconde.  Vous pouvez alors lire ou modifier cette date et heure.  
+## <a name="setting-a-date-to-the-current-date"></a>Définition d'une date à la date actuelle  
+ Quand vous créez une instance de [l’objet Date](../javascript/reference/date-object-javascript.md) sans spécifier de date, il retourne une valeur représentant la date et l’heure actuelles, notamment l’année, le mois, le jour, l’heure, la minute, la seconde et la milliseconde. Vous pouvez alors lire ou modifier cette date et heure.  
   
- L'exemple suivant montre comment instancier une date sans utiliser aucun paramètre et l'afficher au format *mm\-dd\-yy*.  
+ L’exemple suivant montre comment instancier une date sans utiliser aucun paramètre et l’afficher au format *mm-jj-aa*.  
   
-```javascript  
+```JavaScript  
 var dt = new Date();  
   
 // Display the month, day, and year. getMonth() returns a 0-based number.  
@@ -45,10 +48,10 @@ document.write(month + '-' + day + '-' + year);
 // Output: current month, day, year  
 ```  
   
-## Définition d'une date spécifique  
+## <a name="setting-a-specific-date"></a>Définition d'une date spécifique  
  Vous pouvez définir une date spécifique en passant une chaîne de date au constructeur.  
   
-```javascript  
+```JavaScript  
 var dt = new Date('8/24/2009');  
 document.write(dt);  
   
@@ -59,11 +62,11 @@ document.write(dt);
 > [!IMPORTANT]
 >  Le fuseau horaire affiché dans la chaîne de date correspond au fuseau horaire défini sur l'ordinateur local.  
 >   
->  [!INCLUDE[javascript](../javascript/includes/javascript-md.md)] est flexible sur le format de la chaîne que vous utilisez comme paramètre.  Par exemple, vous pouvez entrer « 24\-08\-2009 », « 24\/08\/2009 » ou « 24 août 2009 ».  
+>  [!INCLUDE[javascript](../javascript/includes/javascript-md.md)] est flexible sur le format de la chaîne que vous utilisez comme paramètre. Par exemple, vous pouvez entrer « 24-08-2009 », « 24/08/2009 » ou « 24 août 2009 ».  
   
- Vous pouvez également spécifier une heure.  L'exemple suivant montre une façon de spécifier une date et une heure au format ISO.  Le « Z » indique l'heure UTC.  
+ Vous pouvez également spécifier une heure. L'exemple suivant montre une façon de spécifier une date et une heure au format ISO. Le « Z » indique l'heure UTC.  
   
-```javascript  
+```JavaScript  
 var dt = new Date('2010-06-09T15:20:00Z');  
 document.write(dt);  
 document.write("<br />");  
@@ -74,11 +77,11 @@ document.write(dt.toISOString());
 // 2010-06-09T15:20:00.000Z  
 ```  
   
- Pour plus d'informations sur les formats de date, comme ISO, consultez [Chaînes de date et heure](../javascript/date-and-time-strings-javascript.md).  
+ Pour plus d’informations sur les formats de date, comme ISO, consultez [Chaînes de date et d’heure](../javascript/date-and-time-strings-javascript.md).  
   
  L'exemple suivant montre d'autres façons de spécifier une heure.  
   
-```javascript  
+```JavaScript  
 var dtA = new Date('8/24/2009 14:52:10');  
   
 // The parameters are year, month, day, hours, minutes, seconds.  
@@ -93,12 +96,12 @@ document.write(dtB);
   
 ```  
   
-## Ajout et soustraction des jours, des mois et des années  
+## <a name="adding-and-subtracting-days-months-and-years"></a>Ajout et soustraction des jours, des mois et des années  
  Vous pouvez utiliser les méthodes getX et setX de l'objet `Date` pour définir des dates et des heures spécifiques.  
   
- L'exemple suivant montre comment définir une date à celle du jour précédent.  Notez que, si nécessaire, les valeurs mois et année sont également modifiées.  
+ L'exemple suivant montre comment définir une date à celle du jour précédent. Notez que, si nécessaire, les valeurs mois et année sont également modifiées.  
   
-```javascript  
+```JavaScript  
 var myDate = new Date("1/1/1990");  
 var dayOfMonth = myDate.getDate();  
 myDate.setDate(dayOfMonth - 1);  
@@ -111,9 +114,9 @@ document.write(myDate);
  L'exemple suivant définit la date au dernier jour du mois en soustrayant un jour à partir du premier jour du mois suivant.  
   
 > [!TIP]
->  Les mois de l'année sont numérotés de 0 \(janvier\) à 11 \(décembre\).  Les jours de la semaine sont numérotés de 0 \(dimanche\) à 6 \(samedi\).  
+>  Les mois de l'année sont numérotés de 0 (janvier) à 11 (décembre). Les jours de la semaine sont numérotés de 0 (dimanche) à 6 (samedi).  
   
-```javascript  
+```JavaScript  
 var myDate = new Date("1/1/1990")  
 myDate.setMonth(myDate.getMonth() + 1);  
   
@@ -125,12 +128,12 @@ document.write(myDate);
   
 ```  
   
-## Utilisation des jours de la semaine  
- La [méthode getDay](../javascript/reference/getday-method-date-javascript.md) obtient le jour de la semaine en tant que nombre compris entre 0 \(dimanche\) et 6 \(samedi\). \(Elle est différente de la [méthode getDate](../javascript/reference/getdate-method-date-javascript.md), qui obtient le jour du mois sous forme d'un nombre compris entre 1 et 31\).  
+## <a name="working-with-days-of-the-week"></a>Utilisation des jours de la semaine  
+ La [méthode getDay](../javascript/reference/getday-method-date-javascript.md) obtient le jour de la semaine en tant que nombre compris entre 0 (dimanche) et 6 (samedi). (Elle est différente de la [méthode getDate](../javascript/reference/getdate-method-date-javascript.md), qui obtient le jour du mois sous forme d’un nombre compris entre 1 et 31).  
   
- L'exemple suivant définit la date du jour de Thanksgiving, qui est défini aux États\-Unis comme étant le quatrième jeudi du mois de novembre.  Le script recherche le 1er novembre de l'année actuelle, détermine le premier jeudi, puis ajoute trois semaines.  
+ L'exemple suivant définit la date du jour de Thanksgiving, qui est défini aux États-Unis comme étant le quatrième jeudi du mois de novembre. Le script recherche le 1er novembre de l'année actuelle, détermine le premier jeudi, puis ajoute trois semaines.  
   
-```javascript  
+```JavaScript  
 var myDate = new Date();  
 myDate.setHours(0, 0, 0, 0);  
   
@@ -155,14 +158,14 @@ document.write(myDate);
   
 ```  
   
-## Calcul du temps écoulé  
- La [méthode getTime](../javascript/reference/gettime-method-date-javascript.md) retourne le nombre de millisecondes qui se sont écoulées depuis le 1er janvier 1970 à minuit.  Pour toute date antérieure, elle retourne un nombre négatif.  
+## <a name="calculating-elapsed-time"></a>Calcul de la durée calendaire  
+ La [méthode getTime](../javascript/reference/gettime-method-date-javascript.md) retourne le nombre de millisecondes qui se sont écoulées depuis le 1er janvier 1970 à minuit. Pour toute date antérieure, elle retourne un nombre négatif.  
   
- Vous pouvez utiliser la [méthode getTime](../javascript/reference/gettime-method-date-javascript.md) pour définir une heure de début et de fin lors du calcul d'un temps écoulé.  Il peut être utilisé pour mesurer de petites unités \(telles que des secondes\) et grandes unités \(telles que des jours\).  
+ Vous pouvez utiliser la [méthode getTime](../javascript/reference/gettime-method-date-javascript.md) pour définir une heure de début et de fin lors du calcul de la durée calendaire. Il peut être utilisé pour mesurer de petites unités (telles que des secondes) et grandes unités (telles que des jours).  
   
- L'exemple suivant calcule le temps écoulé en secondes.  La [méthode getTime](../javascript/reference/gettime-method-date-javascript.md) obtient le nombre de millisecondes depuis la date zéro.  
+ L’exemple suivant calcule la durée calendaire en secondes. La [méthode getTime](../javascript/reference/gettime-method-date-javascript.md) obtient le nombre de millisecondes depuis la date zéro.  
   
-```javascript  
+```JavaScript  
 var startTime = new Date('1/1/1990');  
 var startMsec = startTime.getMilliseconds();  
 startTime.setTime(5000000);  
@@ -173,11 +176,11 @@ document.write(elapsed);
   
 ```  
   
- Pour utiliser des unités plus pratiques, vous pouvez diviser les millisecondes fournies par la [méthode getTime](../javascript/reference/gettime-method-date-javascript.md) par un nombre approprié.  Par exemple, pour convertir des millisecondes en jours, divisez le nombre par 86 400 000 \(1000 millisecondes x 60 minutes x 24 heures\).  
+ Pour utiliser des unités plus pratiques, vous pouvez diviser les millisecondes fournies par la [méthode getTime](../javascript/reference/gettime-method-date-javascript.md) par un nombre approprié. Par exemple, pour convertir des millisecondes en jours, divisez le nombre par 86 400 000 (1000 millisecondes x 60 minutes x 24 heures).  
   
- L'exemple suivant indique le temps qui s'est écoulé depuis le premier jour de l'année spécifiée.  Il utilise des opérations de division pour calculer le temps écoulé en jours, heures, minutes et secondes.  Il ne tient pas compte de l'heure d'été.  
+ L'exemple suivant indique le temps qui s'est écoulé depuis le premier jour de l'année spécifiée. Il utilise des opérations de division pour calculer le temps écoulé en jours, heures, minutes et secondes. Il ne tient pas compte de l'heure d'été.  
   
-```javascript  
+```JavaScript  
 // Set the unit values in milliseconds.  
 var msecPerMinute = 1000 * 60;  
 var msecPerHour = msecPerMinute * 60;  
@@ -215,10 +218,10 @@ document.write(days + " days, " + hours + " hours, " + minutes + " minutes, " + 
 //Output: 164 days, 23 hours, 0 minutes, 0 seconds.  
 ```  
   
-### Détermination de l'âge de l'utilisateur  
- L'exemple suivant utilise l'anniversaire de l'utilisateur et calcule l'âge de l'utilisateur en années.  Il soustrait l'année de naissance de l'année actuelle, puis soustrait 1 si la date d'anniversaire n'a pas été dépassée dans l'année en cours.  
+### <a name="determining-the-users-age"></a>Détermination de l'âge de l'utilisateur  
+ L'exemple suivant utilise l'anniversaire de l'utilisateur et calcule l'âge de l'utilisateur en années. Il soustrait l'année de naissance de l'année actuelle, puis soustrait 1 si la date d'anniversaire n'a pas été dépassée dans l'année en cours.  
   
-```javascript  
+```JavaScript  
 var birthday = new Date("8/1/1985");  
 var today = new Date();  
 var years = today.getFullYear() - birthday.getFullYear();  
@@ -237,12 +240,12 @@ document.write("You are " + years + " years old.");
   
 ```  
   
-## Comparaison de dates  
- Lorsque vous comparez des dates dans [!INCLUDE[javascript](../javascript/includes/javascript-md.md)], vous devez garder à l'esprit que l'opérateur `==` retourne `true` uniquement si les dates des deux côtés de l'opérateur font référence au même objet.  Par conséquent, si vous définissez deux objets `Date` distincts à la même date, `date1 == date2` retourne `false`.  De plus, un objet `Date` défini avec uniquement la date mais pas l'heure, est initialisé à cette même date à minuit.  Si vous comparez une `Date` définie sans heure spécifique avec le paramètre `Date.now`, par exemple, vous devez savoir que la première `Date` est définie à minuit et que le paramètre `Date.now` ne l'est pas.  
+## <a name="comparing-dates"></a>Comparaison de dates  
+ Lorsque vous comparez des dates dans [!INCLUDE[javascript](../javascript/includes/javascript-md.md)], vous devez garder à l'esprit que l'opérateur `==` retourne `true` uniquement si les dates des deux côtés de l'opérateur font référence au même objet. Par conséquent, si vous définissez deux objets `Date` distincts à la même date, `date1 == date2` retourne `false`. De plus, un objet `Date` défini avec uniquement la date mais pas l'heure, est initialisé à cette même date à minuit. Si vous comparez une `Date` définie sans heure spécifique avec le paramètre `Date.now`, par exemple, vous devez savoir que la première `Date` est définie à minuit et que le paramètre `Date.now` ne l'est pas.  
   
- L'exemple suivant vérifie si la date actuelle est la même qu'une date spécifiée, ou si elle est antérieure ou postérieure.  Pour définir la date actuelle dans `todayAtMidn`, le script crée un objet `Date` pour l'année, le mois et le jour actuels.  
+ L'exemple suivant vérifie si la date actuelle est la même qu'une date spécifiée, ou si elle est antérieure ou postérieure. Pour définir la date actuelle dans `todayAtMidn`, le script crée un objet `Date` pour l'année, le mois et le jour actuels.  
   
-```javascript  
+```JavaScript  
 // Get the current date at midnight.  
 var now = new Date();   
 var todayAtMidn = new Date(now.getFullYear(), now.getMonth(), now.getDate());  
@@ -266,7 +269,7 @@ else
   
  En modifiant l'exemple précédent, nous pouvons vérifier si une date fournie appartient à une plage spécifique.  
   
-```javascript  
+```JavaScript  
 // Get the current date at midnight.  
 var now = new Date();  
 var todayAtMidn = new Date(now.getFullYear(), now.getMonth(), now.getDate());  
@@ -288,5 +291,5 @@ else {
 // Output: Specified date is not in this range.  
 ```  
   
-## Voir aussi  
- [Date, objet](../javascript/reference/date-object-javascript.md)
+## <a name="see-also"></a>Voir aussi  
+ [Objet date](../javascript/reference/date-object-javascript.md)

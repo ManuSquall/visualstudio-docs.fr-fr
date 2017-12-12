@@ -1,55 +1,56 @@
 ---
-title: "Detach | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-debug"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+title: Detach | Microsoft Docs
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-debug
+ms.tgt_pltfrm: 
+ms.topic: article
 ms.assetid: d9d1b52c-7f28-467d-b1e0-512afc4e46c9
-caps.latest.revision: 8
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 8
+caps.latest.revision: "8"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: 97d48bdcfe663fe5434622775add890166663276
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: HT
+ms.contentlocale: fr-FR
+ms.lasthandoff: 10/31/2017
 ---
-# Detach
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
-
-L'option VSPerfCmd.exe **Detach** déconnecte le profileur des processus spécifiés ou de tous les processus si aucun n'est spécifié.  Le profilage doit avoir été initialisé à l'aide de la méthode d'échantillonnage.  
+# <a name="detach"></a>Detach
+L’option **Detach** de VSPerfCmd.exe déconnecte le profileur des processus spécifiés, ou de tous les processus si aucun processus n’est spécifié. Le profilage doit avoir été initialisé avec la méthode d’échantillonnage.  
   
- Le profilage démarré avec les options **Launch** ou **Attach** peut être déconnecté avec **Detach**.  Le profileur peut être rattaché à l'aide des commandes **Attach** suivantes.  
+ Un profilage qui a été démarré avec l’option **Launch** ou **Attach** peut être déconnecté avec **Detach**. Le profileur peut être réattaché avec des commandes **Attach** ultérieures.  
   
- **Detach** ne ferme pas le fichier de données de profilage.  Utilisez l'option **Shutdown** pour terminer le profilage et fermer le fichier de données.  
+ **Detach** ne ferme pas le fichier de données de profilage. Utilisez l’option **Shutdown** pour arrêter le profilage et fermer le fichier de données.  
   
 > [!NOTE]
->  Si l'option **Start** a été spécifiée avec l'option **Crosssession**, tous les appels à **VSPerfCmd \/Attach** ou à **VSPerfCmd \/Detach** doivent également spécifier **Crosssession**.  
+>  Si l’option **Start** a été spécifiée avec l’option **Crosssession**, les appels à **VSPerfCmd /Attach** ou **VSPerfCmd /Detach** doivent également spécifier **Crosssession**.  
   
-## Syntaxe  
+## <a name="syntax"></a>Syntaxe  
   
 ```  
 VSPerfCmd.exe /Detach[:PIDs|ProcessNames]  
 ```  
   
-#### Paramètres  
+#### <a name="parameters"></a>Paramètres  
  `PIDs|ProcessNames`  
- `PID`\- Identificateur de système numérique d'un ou plusieurs processus.  
+ `PID` : identificateur système numérique d’un ou plusieurs processus.  
   
- `ProcessNames` \- Nom du processus.  Si plusieurs instances du processus nommé s'exécutent, les résultats sont imprévisibles.  
+ `ProcessNames` : nom du processus. Si plusieurs instances du processus nommé sont en cours d’exécution, les résultats sont imprévisibles.  
   
  Séparez les processus par des virgules.  
   
- Si aucun processus n'est spécifié, le profileur est détaché de tous les processus profilés.  
+ Si aucun processus n’est spécifié, le profileur est détaché de tous les processus profilés.  
   
-## Options valides  
- Les options **VSPerfCmd** suivantes peuvent être combinées avec l'option **Attach** sur une ligne de commande.  
+## <a name="valid-options"></a>Options valides  
+ Les options suivantes de **VSPerfCmd** peuvent être combinées avec l’option **Attach** sur une même ligne de commande.  
   
  **Crosssession**  
- Permet le profilage d'applications dans des sessions autres que la session ouverte.  Obligatoire si l'option **Start** a été spécifiée avec l'option **Crosssession**.  
+ Active le profilage d’applications dans des sessions autres que la session d’ouverture de session. Obligatoire si l’option **Start** a été spécifiée avec l’option **Crosssession**.  
   
-## Exemple  
+## <a name="example"></a>Exemple  
  Dans cet exemple, la commande **Detach** interrompt le profilage et la commande **Shutdown** ferme le fichier de données du profileur.  
   
 ```  
@@ -60,7 +61,7 @@ VSPerfCmd.exe /Detach
 VSPerfCmd.exe /Shutdown  
 ```  
   
-## Voir aussi  
+## <a name="see-also"></a>Voir aussi  
  [VSPerfCmd](../profiling/vsperfcmd.md)   
  [Profilage d’applications autonomes](../profiling/command-line-profiling-of-stand-alone-applications.md)   
  [Profilage d’applications web ASP.NET](../profiling/command-line-profiling-of-aspnet-web-applications.md)   

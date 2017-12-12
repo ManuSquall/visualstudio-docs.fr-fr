@@ -4,40 +4,22 @@ ms.custom:
 ms.date: 2015-10-05
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-devops-test
+ms.technology: vs-devops-test
 ms.tgt_pltfrm: 
 ms.topic: article
-f1_keywords:
-- vs.UnitTest.CreateIntelliTest
+f1_keywords: vs.UnitTest.CreateIntelliTest
 ms.assetid: cd9ff940-e948-4d28-a72c-b291ef5c1e90
-caps.latest.revision: 33
+caps.latest.revision: "33"
 ms.author: douge
 manager: douge
-translation.priority.ht:
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- ru-ru
-- zh-cn
-- zh-tw
-translation.priority.mt:
-- cs-cz
-- pl-pl
-- pt-br
-- tr-tr
-ms.translationtype: Human Translation
-ms.sourcegitcommit: c1c9f7dc62fab9de6bc32c80138c3fadbb036200
-ms.openlocfilehash: 79f4da148658c950957636fd050b5e83947f04b7
-ms.contentlocale: fr-fr
-ms.lasthandoff: 05/17/2017
-
+ms.openlocfilehash: 533e1938e83a7d4dccc3be4d8847967ee7c91f6f
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.translationtype: HT
+ms.contentlocale: fr-FR
+ms.lasthandoff: 10/27/2017
 ---
 # <a name="generate-unit-tests-for-your-code-with-intellitest"></a>Générer des tests unitaires pour votre code avec IntelliTest
-IntelliTest explore votre code .NET pour générer des données de test et une suite de tests unitaires. Pour chaque instruction dans le code, une entrée de test est générée pour exécuter cette instruction. Une analyse de cas est effectuée pour chaque branche conditionnelle dans le code. Par exemple, les instructions if, les assertions et toutes les opérations susceptibles de lever des exceptions sont analysées. Cette analyse vous permet de générer des données de test pour établir un test unitaire paramétré pour chacune de vos méthodes et de bénéficier d'une couverture de code élevée.  
+IntelliTest explore votre code .NET pour générer des données de test et une suite de tests unitaires. Pour chaque instruction dans le code, une entrée de test est générée pour exécuter cette instruction. Une analyse de cas est effectuée pour chaque branche conditionnelle dans le code. Par exemple, les instructions `if`, les assertions et toutes les opérations susceptibles de lever des exceptions sont analysées. Cette analyse vous permet de générer des données de test pour établir un test unitaire paramétré pour chacune de vos méthodes et de bénéficier d'une couverture de code élevée.  
   
  Lorsque vous exécutez IntelliTest, vous pouvez facilement détecter les tests qui échouent et ajouter le code nécessaire pour les corriger. Vous pouvez sélectionner les tests générés à enregistrer dans un projet de test pour fournir une suite de régression. À mesure que vous modifiez votre code, relancez IntelliTest pour synchroniser les tests générés avec les changements de code.  
 
@@ -92,7 +74,7 @@ Les commandes de menu **Créer IntelliTest** et **Exécuter IntelliTest** :
   
      Passez en revue les avertissements et décidez de la marche à suivre.  
   
-     ![Afficher les avertissements](~/test/media/pexviewwarning.png "PEXViewWarning")  
+     ![Afficher les avertissements](../test/media/pexviewwarning.png "PEXViewWarning")  
   
 2.  Après avoir étudié le code et identifié les parties à tester, vous pouvez traiter l'avertissement et choisir les classes à utiliser pour tester l'interface.  
   
@@ -140,7 +122,7 @@ Spécifiez la relation générale entre les entrées et les sorties que les test
   
 ### <a name="q-can-i-add-assertions-to-the-parameterized-unit-test"></a>Q : Puis-je ajouter des assertions au test unitaire paramétrable ?  
 
-**R :** Oui. IntelliTest vérifie que les assertions dans votre instruction sont correctes quand il exécute les tests unitaires. Utilisez la classe <xref:Microsoft.Pex.Framework.PexAssert> ou l'API d'assertion qui est fournie avec le framework de test pour ajouter des assertions. Par exemple, vous pouvez ajouter une assertion selon laquelle deux variables sont égales.  
+**R :** Oui. IntelliTest vérifie que les assertions dans votre instruction sont correctes quand il exécute les tests unitaires. Utilisez la classe <xref:Microsoft.Pex.Framework.PexAssert> ou l'API d'assertion qui est fournie avec l'infrastructure de test pour ajouter des assertions. Par exemple, vous pouvez ajouter une assertion selon laquelle deux variables sont égales.  
   
  `PexAssert.AreEqual(a, b);`  
   
@@ -176,4 +158,3 @@ Exécutez ensuite IntelliTest pour générer des tests unitaires individuels dan
 ### <a name="q-can-i-learn-more-about-how-the-tests-are-generated"></a>Q : Puis-je en savoir plus sur la façon dont les tests sont générés ?  
 
 **R :** Oui, pour obtenir une vue d’ensemble globale, lisez ce [billet de blog](http://blogs.msdn.com/b/visualstudioalm/archive/2015/07/05/intellitest-one-test-to-rule-them-all.aspx).
-

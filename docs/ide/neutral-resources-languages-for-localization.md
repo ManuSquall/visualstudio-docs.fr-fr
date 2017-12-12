@@ -1,11 +1,10 @@
 ---
-title: Neutral Resources Languages for Localization | Microsoft Docs
+title: Langues des ressources neutres pour la localisation | Microsoft Docs
 ms.custom: 
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-general
+ms.technology: vs-ide-general
 ms.tgt_pltfrm: 
 ms.topic: article
 helpviewer_keywords:
@@ -16,35 +15,20 @@ helpviewer_keywords:
 - culture, locating resources
 - neutral resources
 ms.assetid: ef064995-3b84-4698-a708-9689b7723533
-caps.latest.revision: 8
-author: kempb
-ms.author: kempb
+caps.latest.revision: "8"
+author: gewarren
+ms.author: gewarren
 manager: ghogen
-translation.priority.ht:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
+ms.openlocfilehash: 89e6e1f0814165781f92049537b4ae8748246b48
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
 ms.translationtype: HT
-ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
-ms.openlocfilehash: eb1e4d30bb71fffc1de83c9c77e089ac8e912f0e
-ms.contentlocale: fr-fr
-ms.lasthandoff: 08/28/2017
-
+ms.contentlocale: fr-FR
+ms.lasthandoff: 10/31/2017
 ---
-# <a name="neutral-resources-languages-for-localization"></a>Neutral Resources Languages for Localization
-The <xref:System.Resources.NeutralResourcesLanguageAttribute> class specifies the culture of the resources included in the main assembly. This attribute is used as a performance enhancement, so that the <xref:System.Resources.ResourceManager> object does not search for resources that are included in the main assembly.  
+# <a name="neutral-resources-languages-for-localization"></a>Langues des ressources neutres pour la localisation
+La classe <xref:System.Resources.NeutralResourcesLanguageAttribute> spécifie la culture des ressources incluses dans l’assembly principal. Cet attribut est utilisé comme une amélioration des performances, afin que l’objet <xref:System.Resources.ResourceManager> ne recherche pas des ressources qui sont incluses dans l’assembly principal.  
   
- The following code shows how to set the neutral resources language. The code can be placed in either a build script or in the AssemblyInfo.vb or AssemblyInfo.cs file.  
+ Le code suivant illustre la définition du langage des ressources neutre. Le code peut être placé dans un script de build, ou dans le fichier AssemblyInfo.vb ou AssemblyInfo.cs.  
   
 ```vb  
 ' Set neutral resources language for assembly.  
@@ -57,9 +41,9 @@ The <xref:System.Resources.NeutralResourcesLanguageAttribute> class specifies th
 [assembly: NeutralResourcesLanguageAttribute("en")]  
 ```  
   
-## <a name="see-also"></a>See Also  
+## <a name="see-also"></a>Voir aussi  
  <xref:System.Resources.ResourceManager>   
- [Introduction to International Applications Based on the .NET Framework](../ide/introduction-to-international-applications-based-on-the-dotnet-framework.md)   
- [Hierarchical Organization of Resources for Localization](../ide/hierarchical-organization-of-resources-for-localization.md)   
- [Localizing Applications](../ide/localizing-applications.md)   
- [Globalizing and Localizing Applications](../ide/globalizing-and-localizing-applications.md)
+ [Introduction aux applications internationales basées sur le .NET Framework](../ide/introduction-to-international-applications-based-on-the-dotnet-framework.md)   
+ [Organisation hiérarchique des ressources pour la localisation](../ide/hierarchical-organization-of-resources-for-localization.md)   
+ [Localisation d’applications](../ide/localizing-applications.md)   
+ [Globalisation et localisation d’applications](../ide/globalizing-and-localizing-applications.md)

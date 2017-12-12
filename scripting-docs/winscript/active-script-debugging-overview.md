@@ -1,292 +1,295 @@
 ---
-title: "D&#233;bogage de script actif, pr&#233;sentation | Microsoft Docs"
-ms.custom: ""
-ms.date: "01/18/2017"
-ms.prod: "windows-script-interfaces"
-ms.reviewer: ""
-ms.suite: ""
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-helpviewer_keywords: 
-  - "Débogage de script actif (présentation)"
+title: "Présentation du débogage de script actif | Microsoft Docs"
+ms.custom: 
+ms.date: 01/18/2017
+ms.prod: windows-script-interfaces
+ms.reviewer: 
+ms.suite: 
+ms.tgt_pltfrm: 
+ms.topic: article
+helpviewer_keywords: Active Script Debugging overview
 ms.assetid: ce4ec768-d017-4dfa-a7e3-cced3a29e679
-caps.latest.revision: 11
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 11
+caps.latest.revision: "11"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: 1d9aebdc3f8fa4df0f4386609e632e1a8611c87f
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.translationtype: HT
+ms.contentlocale: fr-FR
+ms.lasthandoff: 10/27/2017
 ---
-# D&#233;bogage de script actif, pr&#233;sentation
-Les interfaces de débogage de script actif permettent le débogage indépendante du langage et hôte neutre, et prennent en charge une large gamme d'environnements de développement.  
+# <a name="active-script-debugging-overview"></a>Débogage de script actif (présentation)
+Les interfaces de débogage de script actif permettent d’effectuer un débogage indépendant du langage et indépendant de l’hôte, et elles prennent en charge un large éventail d’environnements de développement.  
   
- ![Processus Script Host](../winscript/media/scp56activdbgarchgif.png "Scp56ActivDbgArchgif")  
+ ![Processus Script Host](../winscript/media/scp56activdbgarchgif.gif "Scp56ActivDbgArchgif")  
 Figure 1  
   
- Un environnement de débogage indépendant du langage peut prendre en charge n'importe quel langage de programmation ou combinaison des langages de programmation, sans avoir une connaissance spécifique de l'un de ces langages.  L'environnement de débogage prend également en charge la progression interlangage et les points d'arrêt.  \(Cette vue d'ensemble traite principalement sur les langages de script en charge, tels que et [!INCLUDE[javascript](../javascript/includes/javascript-md.md)]VBScript.\)  
+ Un environnement de débogage indépendant du langage peut prendre en charge n’importe quel langage ou combinaison de langages de programmation, sans avoir aucune connaissance spécifique de ces langages de programmation. L’environnement de débogage prend également en charge les points d’arrêt et l’exécution pas à pas interlangage. (Cette présentation se concentre essentiellement sur la prise en charge des langages de script, tels que VBScript et [!INCLUDE[javascript](../javascript/includes/javascript-md.md)].)  
   
- Un débogueur hôte neutre peut être utilisé automatiquement avec tout hôte d'Active Scripting, tel qu'Internet Explorer ou un hôte personnalisé.  Les contrôles hôtes que le débogueur présente à l'utilisateur, de la structure de l'arborescence de documents au contenu et la coloration de syntaxe du débogage documents.  Cela permet au code source débogué à afficher dans le contexte du document hôte.  Par exemple, Internet Explorer peut afficher un script dans une page HTML.  
+ Un débogueur indépendant de l’hôte peut être utilisé automatiquement avec n’importe quel hôte Active Scripting, tel qu’Internet Explorer ou un hôte personnalisé. L’hôte contrôle ce que le débogueur présente à l’utilisateur, de la structure de l’arborescence de documents jusqu’au contenu et à la coloration syntaxique des documents de débogage. Cela permet d’afficher le code source débogué dans le contexte du document hôte. Par exemple, Internet Explorer peut afficher un script dans une page HTML.  
   
- Dans les sous\-sections ci\-dessous, chaque composant clé dans le débogage active et ses interfaces associées sont traités.  Toutefois, avant de continuer davantage, clé plusieurs des concepts actifs de débogage doivent être définis :  
+ Les sous-sections qui suivent décrivent chaque composant clé de débogage actif et ses interfaces associées. Toutefois, avant de continuer, nous devons définir plusieurs concepts clés du débogage actif :  
   
- application hôte  
- L'application qui héberge les moteurs de script et fournit un ensemble scriptable d'objets \(ou « modèle objet »\).  
+ Application hôte  
+ Application qui héberge les moteurs de script et fournit un ensemble d’objets scriptable (ou « modèle objet »).  
   
- moteur de langage  
- Un composant qui fournit l'analyse, l'exécution, et les abstractions de débogage pour un langage particulier.  
+ Moteur de langage  
+ Composant qui fournit les abstractions de débogage, d’analyse et d’exécution pour un langage particulier.  
   
- débogueur IDE  
- L'application qui fournit le débogage interface utilisateur par la communication avec l'application et les moteurs de langage hôte.  
+ IDE de débogueur  
+ Application qui fournit l’interface utilisateur de débogage en communiquant avec l’application hôte et les moteurs de langage.  
   
- l'ordinateur de débogage le gestionnaire  
- Un composant qui gère un Registre des processus d'application débogable.  
+ Gestionnaire de débogage d’ordinateur  
+ Composant qui tient à jour un registre des processus d’application pouvant être débogués.  
   
- le processus de débogage le gestionnaire  
- Un composant qui gère l'arborescence de documents débogable pour une application particulière, effectue les threads en cours de exécution, et ainsi de suite.  
+ Gestionnaire de débogage de processus  
+ Composant qui tient à jour l’arborescence de documents pouvant être débogués pour une application particulière, qui effectue le suivi des threads en cours d’exécution, et ainsi de suite.  
   
- contexte de document  
- Un contexte de document est une abstraction représentant une plage spécifique dans le code source d'un document hôte.  
+ Contexte de document  
+ Un contexte de document est une abstraction représentant une plage spécifique dans le code source d’un document hôte.  
   
- contexte de code  
- Un contexte de code représente un emplacement particulier dans le code en cours de exécution d'un moteur de langue \(« pointeur d'instruction virtuel ».\)  
+ Contexte de code  
+ Un contexte de code représente un emplacement particulier dans le code en cours d’exécution d’un moteur de langage (un « pointeur d’instruction virtuel ».)  
   
- contexte d'expression  
- Un contexte particulier \(par exemple, un frame de pile\) dans lequel les expressions peuvent être évaluées par un moteur de langage.  
+ Contexte d’expression  
+ Contexte particulier (par exemple un frame de pile) dans lequel les expressions peuvent être évaluées par un moteur de langage.  
   
- objet parcourant  
- Une représentation d'un nom d'objet, un type, une valeur, et des sous\-objets structurés et LINQ indépendants, appropriés pour implémenter une « fenêtre Espion » interface utilisateur.  
+ Exploration des objets  
+ Représentation structurée et indépendante du langage du nom, du type, de la valeur et des sous-objets d’un objet, et qui convient à l’implémentation d’une interface utilisateur de « fenêtre Espion ».  
   
- Vous trouverez ci\-dessous une présentation de chacune des composants principaux actifs et de correspondre de débogage, les interfaces associées, suivies des détails de ces interfaces.  
+ Vous trouverez ci-dessous une présentation de chacun des principaux composants du débogage actif et des interfaces associées correspondantes, suivie des détails de ces interfaces.  
   
-## Moteur de langage  
- Le moteur de langage le fournit :  
+## <a name="language-engine"></a>Moteur de langage  
+ Le moteur de langage fournit ce qui suit :  
   
--   Analyse et exécution de langage.  
+-   Analyse du langage et exécution  
   
--   Prise en charge du débogage \(points d'arrêt etc.\).  
+-   Prise en charge du débogage (points d’arrêt et ainsi de suite)  
   
--   Évaluation de l'expression.  
+-   Évaluation des expressions  
   
--   Coloration de syntaxe.  
+-   Coloration syntaxique  
   
--   Objet parcourir.  
+-   Exploration des objets  
   
--   Énumération et analyse de pile.  
+-   Énumération de la pile et analyse  
   
- Vous trouverez ci\-dessous les interfaces qu'un moteur de script doit prendre en charge pour fournir le débogage, l'évaluation de l'expression, et l'objet parcourir.  Ces interfaces sont utilisées par l'application hôte de mappage entre son contexte de document et les contextes de code du moteur, et également par le débogueur interface utilisateur de faire l'évaluation de l'expression, l'énumération de pile, et l'objet parcourir.  
+ Voici la liste des interfaces qu’un moteur de script doit prendre en charge pour fournir le débogage, l’évaluation des expressions et l’exploration des objets. Ces interfaces sont utilisées par l’application hôte pour établir un mappage entre son contexte de document et les contextes de code du moteur, et également par l’interface utilisateur du débogueur pour effectuer l’évaluation des expressions, l’énumération de la pile et l’exploration des objets.  
   
- [IActiveScriptDebug, interface](../winscript/reference/iactivescriptdebug-interface.md)  
- Fournit l'énumération de coloration de syntaxe et de contexte de code.  
+ [Interface IActiveScriptDebug](../winscript/reference/iactivescriptdebug-interface.md)  
+ Fournit la coloration syntaxique et l’énumération du contexte de code.  
   
- [IActiveScriptErrorDebug, interface](../winscript/reference/iactivescripterrordebug-interface.md)  
- Contextes de document et frames de pile de retour des erreurs.  
+ [Interface IActiveScriptErrorDebug](../winscript/reference/iactivescripterrordebug-interface.md)  
+ Retourne les contextes de document et les frames de pile en cas d’erreur.  
   
- [IActiveScriptSiteDebug, interface](../winscript/reference/iactivescriptsitedebug-interface.md)  
- Lien fourni par hôte du moteur de script au débogueur.  
+ [Interface IActiveScriptSiteDebug](../winscript/reference/iactivescriptsitedebug-interface.md)  
+ Lien fourni par l’hôte du moteur de script vers le débogueur.  
   
- [IDebugCodeContext, interface](../winscript/reference/idebugcodecontext-interface.md)  
- Fournit un « pointeur d'instruction » virtuel dans un thread.  
+ [Interface IDebugCodeContext](../winscript/reference/idebugcodecontext-interface.md)  
+ Fournit un « pointeur d’instruction » virtuel dans un thread.  
   
- [IEnumDebugCodeContexts, interface](../winscript/reference/ienumdebugcodecontexts-interface.md)  
+ [Interface IEnumDebugCodeContexts](../winscript/reference/ienumdebugcodecontexts-interface.md)  
  Énumère les contextes de code qui correspondent à un contexte de document.  
   
- [IDebugStackFrame, interface](../winscript/reference/idebugstackframe-interface.md)  
+ [Interface IDebugStackFrame](../winscript/reference/idebugstackframe-interface.md)  
  Représente un frame de pile logique sur la pile des threads.  
   
- [IDebugExpressionContext, interface](../winscript/reference/idebugexpressioncontext-interface.md)  
- Fournit la zone dans lequel les expressions peuvent être évaluées.  
+ [Interface IDebugExpressionContext](../winscript/reference/idebugexpressioncontext-interface.md)  
+ Fournit le contexte dans lequel les expressions peuvent être évaluées.  
   
- [IDebugStackFrameSniffer, interface](../winscript/reference/idebugstackframesniffer-interface.md)  
- Permet d'énumérer les frames de pile logiques.  
+ [Interface IDebugStackFrameSniffer](../winscript/reference/idebugstackframesniffer-interface.md)  
+ Fournit un moyen d’énumérer les frames de pile logiques.  
   
- [IDebugExpression, interface](../winscript/reference/idebugexpression-interface.md)  
+ [Interface IDebugExpression](../winscript/reference/idebugexpression-interface.md)  
  Représente une expression évaluée de façon asynchrone.  
   
- [IDebugSyncOperation, interface](../winscript/reference/idebugsyncoperation-interface.md)  
- Permet à un moteur de script pour abréger une opération qui doit être exécutée pendant qu'imbriquée dans un thread bloqué particulier.  
+ [Interface IDebugSyncOperation](../winscript/reference/idebugsyncoperation-interface.md)  
+ Permet à un moteur de script d’extraire une opération qui doit être effectuée pendant qu’elle est imbriquée dans un thread bloqué particulier.  
   
- [IDebugAsyncOperation, interface](../winscript/reference/idebugasyncoperation-interface.md)  
- Fournit l'accès à une opération asynchrone de débogage synchrone.  
+ [Interface IDebugAsyncOperation](../winscript/reference/idebugasyncoperation-interface.md)  
+ Fournit un accès asynchrone à une opération de débogage synchrone.  
   
- [IDebugAsyncOperationCallBack, interface](../winscript/reference/idebugasyncoperationcallback-interface.md)  
- Fournit des événements de mode rapport avec la progression d'une évaluation d'interface d' `IDebugAsyncOperation` .  
+ [Interface IDebugAsyncOperationCallBack](../winscript/reference/idebugasyncoperationcallback-interface.md)  
+ Fournit des événements d’état liés à la progression d’une évaluation d’interface `IDebugAsyncOperation`.  
   
- [IEnumDebugExpressionContexts, interface](../winscript/reference/ienumdebugexpressioncontexts-interface.md)  
- Énumère une collection d'objets `IDebugExpressionContexts` .  
+ [Interface IEnumDebugExpressionContexts](../winscript/reference/ienumdebugexpressioncontexts-interface.md)  
+ Énumère une collection d’objets `IDebugExpressionContexts`.  
   
- [IProvideExpressionContexts, interface](../winscript/reference/iprovideexpressioncontexts-interface.md)  
- Permet d'énumérer des contextes d'expression connus par un certain composant.  
+ [Interface IProvideExpressionContexts](../winscript/reference/iprovideexpressioncontexts-interface.md)  
+ Fournit un moyen d’énumérer les contextes d’expression connus d’un certain composant.  
   
- [IDebugFormatter, interface](../winscript/reference/idebugformatter-interface.md)  
- Permet à un langage ou l'IDE pour personnaliser la conversion entre les valeurs VARIANTES ou les types et les chaînes de VARTYPE.  
+ [Interface IDebugFormatter](../winscript/reference/idebugformatter-interface.md)  
+ Permet à un langage ou à un IDE de personnaliser la conversion entre des valeurs de type VARIANT ou des types VARTYPE et des chaînes.  
   
- [IDebugStackFrameSnifferEx, interface](../winscript/reference/idebugstackframesnifferex-interface.md)  
- Énumère les frames de pile logiques de le PDM.  
+ [Interface IDebugStackFrameSnifferEx](../winscript/reference/idebugstackframesnifferex-interface.md)  
+ Énumère les frames de pile logiques pour le gestionnaire de débogage de processus.  
   
-## Hôtes  
- L'hôte :  
+## <a name="hosts"></a>Hôtes  
+ L’hôte :  
   
 -   Héberge les moteurs de langage.  
   
--   Fournit un modèle objet \(a des objets qui peuvent être écrits\).  
+-   Fournit un modèle objet (ensemble d’objets qui peuvent être scriptés).  
   
--   Définit une arborescence de documents qui peuvent être débogué et de leur contenu.  
+-   Définit une arborescence de documents pouvant être débogués, et leur contenu.  
   
 -   Organise les scripts dans des applications virtuelles.  
   
- Il existe deux types d'hôtes :  
+ Il existe deux sortes d’hôtes :  
   
--   Un hôte muet prend en charge uniquement les interfaces de base d'Active Scripting.  Il n'a aucun contrôle de structure du document ou d'organisations ; cela est entièrement déterminé par les scripts fournis aux moteurs de langage.  
+-   Un hôte passif prend en charge uniquement les interfaces Active Scripting de base. Il n’a aucun contrôle sur l’organisation ou la structure des documents. Celles-ci sont déterminées entièrement par les scripts fournis aux moteurs de langage.  
   
--   Un hôte intelligent prend en charge un plus grand ensemble d'interfaces qui lui permet de définir l'arborescence de documents, le contenu du document, et la coloration de syntaxe.  Il existe un jeu d'interfaces d'assistance, décrit dans la section sous\-section, qui facilitent de nombreuses pour qu'un hôte soit un intelligent hôte.  
+-   Un hôte intelligent prend en charge un plus grand ensemble d’interfaces, ce qui lui permet de définir l’arborescence de documents, le contenu des documents et la coloration syntaxique. Il existe un ensemble d’interfaces d’assistance, décrites dans la sous-section suivante, qui permettent à un hôte de devenir très facilement un hôte intelligent.  
   
-### Interfaces d'assistance de SMART\-hôte  
- Les méthodes d' `IDebugDocumentHelper` fournissent un jeu d'interfaces considérablement simplifié qu'un hôte peut utiliser pour obtenir les avantages du SMART\- hébergement sans gérer la complexité complète \(et l'alimentation\) des interfaces hôtes complètes.  
+### <a name="smart-host-helper-interfaces"></a>Interfaces d’assistance d’hôte intelligent  
+ Les méthodes `IDebugDocumentHelper` fournissent un ensemble simplifié d’interfaces qu’un hôte peut utiliser pour bénéficier des avantages offerts par l’hébergement intelligent sans avoir à gérer toute la complexité (et la puissance) de toute les interfaces d’hôte.  
   
- Un hôte n'est pas nécessaire d'utiliser ces interfaces, naturellement.  Toutefois à l'aide de ces interfaces peut éviter d'implémenter ou utiliser un nombre quelconque d'interfaces plus complexes.  
+ Un hôte n’est bien entendu pas obligé d’utiliser ces interfaces. Toutefois, le recours à ces interfaces peut éviter d’avoir à implémenter ou à utiliser certaines interfaces plus complexes.  
   
- [IDebugDocumentHelper, interface](../winscript/reference/idebugdocumenthelper-interface.md)  
- Implémentée par PDM et fournit des implémentations pour de nombreuses interfaces nécessaires pour l'hébergement intelligent.  
+ [Interface IDebugDocumentHelper](../winscript/reference/idebugdocumenthelper-interface.md)  
+ Implémentée par le gestionnaire de débogage de processus, elle fournit des implémentations pour de nombreuses interfaces nécessaires pour l’hébergement intelligent.  
   
- [IDebugDocumentHost, interface](../winscript/reference/idebugdocumenthost-interface.md)  
- Implémenté \(facultatif\) par l'hôte pour exposer les fonctionnalités d'hôte spécifique, telle que la coloration de syntaxe, le débogueur.  
+ [Interface IDebugDocumentHost](../winscript/reference/idebugdocumenthost-interface.md)  
+ Implémentée (de manière facultative) par l’hôte pour exposer au débogueur une fonctionnalité qui est propre à l’hôte, telle que la coloration syntaxique.  
   
- Pour plus d'informations, consultez [Implémentation des interfaces d'assistance d'hôte intelligent](../winscript/implementing-smart-host-helper-interfaces.md).  
+ Pour plus d’informations, consultez [Implémentation des interfaces d’assistance d’hôte intelligent](../winscript/implementing-smart-host-helper-interfaces.md).  
   
-### Interfaces complètes de SMART\-hôte  
- Voici l'ensemble des interfaces qu'un SMART\- hôte doit implémenter ou utiliser s'il n'utilise pas les interfaces d'assistance.  
+### <a name="full-smart-host-interfaces"></a>Interfaces complètes d’hôte intelligent  
+ Vous trouverez ci-dessous l’ensemble complet des interfaces qu’un hôte intelligent doit implémenter ou utiliser s’il n’utilise pas les interfaces d’assistance.  
   
- Interfaces implémentées par l'hôte :  
+ Interfaces implémentées par l’hôte :  
   
- [IDebugDocumentInfo, interface](../winscript/reference/idebugdocumentinfo-interface.md)  
- Fournit des informations sur un document, qui peut ou ne peut être instancié.  
+ [Interface IDebugDocumentInfo](../winscript/reference/idebugdocumentinfo-interface.md)  
+ Fournit des informations sur un document, qui peut être ou ne pas être instancié.  
   
- [IDebugDocumentProvider, interface](../winscript/reference/idebugdocumentprovider-interface.md)  
- Fournit le moyen d'instancier un document à la demande.  
+ [Interface IDebugDocumentProvider](../winscript/reference/idebugdocumentprovider-interface.md)  
+ Permet d’instancier un document à la demande.  
   
- [IDebugDocument, interface](../winscript/reference/idebugdocument-interface.md)  
- Toute interface de base pour les versions debug des documents.  
+ [Interface IDebugDocument](../winscript/reference/idebugdocument-interface.md)  
+ Interface de base pour tous les documents de débogage.  
   
- [IDebugDocumentText, interface](../winscript/reference/idebugdocumenttext-interface.md)  
- Permet d'accéder à une version texte uniquement du document de débogage.  
+ [Interface IDebugDocumentText](../winscript/reference/idebugdocumenttext-interface.md)  
+ Fournit l’accès à une version « texte uniquement » du document de débogage.  
   
- [IDebugDocumentTextAuthor, interface](../winscript/reference/idebugdocumenttextauthor-interface.md)  
- Permet la modification de la version texte uniquement du document de débogage.  
+ [Interface IDebugDocumentTextAuthor](../winscript/reference/idebugdocumenttextauthor-interface.md)  
+ Autorise la modification de la version « texte uniquement » du document de débogage.  
   
- [IDebugDocumentContext, interface](../winscript/reference/idebugdocumentcontext-interface.md)  
- Fournit une représentation abstraite d'une partie du document en cours de débogage.  
+ [Interface IDebugDocumentContext](../winscript/reference/idebugdocumentcontext-interface.md)  
+ Fournit une représentation abstraite d’une partie du document en cours de débogage.  
   
- Interfaces implémentées par PDM de la part de l'hôte :  
+ Interfaces implémentées par le gestionnaire de débogage de processus pour le compte de l’hôte :  
   
- [IDebugApplicationNode, interface](../winscript/reference/idebugapplicationnode-interface.md)  
- Étend les fonctionnalités de l'interface d' `IDebugDocumentProvider` en fournissant une zone dans une arborescence du projet.  
+ [Interface IDebugApplicationNode](../winscript/reference/idebugapplicationnode-interface.md)  
+ Étend la fonctionnalité de l’interface `IDebugDocumentProvider` en fournissant un contexte dans une arborescence de projet.  
   
-## Débogueur IDE  
- L'IDE est un débogage langage indépendant interface utilisateur.  Il fournit :  
+## <a name="debugger-ide"></a>IDE de débogueur  
+ L’IDE est une interface utilisateur de débogage indépendante du langage. Elle offre les fonctionnalités suivantes :  
   
--   Visionneuses\/éditeurs de document.  
+-   Visionneuses/éditeurs de documents  
   
--   Gestion de point d'arrêt.  
+-   Gestion des points d’arrêt  
   
--   Évaluation de l'expression et fenêtres Espion.  
+-   Évaluation des expressions et fenêtres Espion  
   
--   Frame de pile parcourir.  
+-   Exploration des frames de pile  
   
--   Objet\/classe parcourir.  
+-   Exploration de classes/objets  
   
--   Recherche de la structure virtuelle d'application.  
+-   Exploration de la structure des applications virtuelles  
   
- Interfaces implémentées par le débogueur :  
+ Interfaces implémentées par le débogueur :  
   
- [IApplicationDebugger, interface](../winscript/reference/iapplicationdebugger-interface.md)  
- L'interface principale exposée par une session IDE de débogueur.  
+ [Interface IApplicationDebugger](../winscript/reference/iapplicationdebugger-interface.md)  
+ Interface principale exposée par une session d’IDE de débogueur.  
   
- [IApplicationDebuggerUI, interface](../winscript/reference/iapplicationdebuggerui-interface.md)  
- Permet à un composant externe plus de contrôle de l'interface utilisateur \(UI\) du débogueur.  
+ [Interface IApplicationDebuggerUI](../winscript/reference/iapplicationdebuggerui-interface.md)  
+ Procure à un composant externe davantage de contrôle sur l’interface utilisateur du débogueur.  
   
- [IDebugExpressionCallBack, interface](../winscript/reference/idebugexpressioncallback-interface.md)  
- Fournit des événements d'état pour la progression d'évaluation d' `IDebugExpression` .  
+ [Interface IDebugExpressionCallBack](../winscript/reference/idebugexpressioncallback-interface.md)  
+ Fournit des événements d’état pour la progression de l’évaluation de `IDebugExpression`.  
   
- [IDebugDocumentTextEvents, interface](../winscript/reference/idebugdocumenttextevents-interface.md)  
- Fournit des événements qui indique les modifications apportées au document texte associé.  
+ [Interface IDebugDocumentTextEvents](../winscript/reference/idebugdocumenttextevents-interface.md)  
+ Fournit des événements indiquant les modifications qui ont été apportées au document de texte associé.  
   
- [IDebugApplicationNodeEvents, interface](../winscript/reference/idebugapplicationnodeevents-interface.md)  
- Fournit l'interface d'événement pour l'interface d' `IDebugApplicationNode` .  
+ [Interface IDebugApplicationNodeEvents](../winscript/reference/idebugapplicationnodeevents-interface.md)  
+ Fournit l’interface d’événement pour l’interface `IDebugApplicationNode`.  
   
-### Debug Machine Manager  
- L'ordinateur de débogage le gestionnaire fournit le point de liaison entre les applications virtuelles et les débogueurs en mettant à jour et en énumérant une liste d'applications virtuelles actives.  
+### <a name="machine-debug-manager"></a>Gestionnaire de débogage d’ordinateur  
+ Le gestionnaire de débogage d’ordinateur fournit le point de connexion entre les applications virtuelles et les débogueurs en tenant à jour et en dressant une liste des applications virtuelles actives.  
   
- [IDebugSessionProvider, interface](../winscript/reference/idebugsessionprovider-interface.md)  
- Génère une session de débogage pour une application active.  
+ [Interface IDebugSessionProvider](../winscript/reference/idebugsessionprovider-interface.md)  
+ Établit une session de débogage pour une application en cours d’exécution.  
   
- [IMachineDebugManager, interface](../winscript/reference/imachinedebugmanager-interface.md)  
- L'interface principale à l'ordinateur de débogage le gestionnaire.  
+ [Interface IMachineDebugManager](../winscript/reference/imachinedebugmanager-interface.md)  
+ Interface principale avec le gestionnaire de débogage d’ordinateur.  
   
- [IMachineDebugManagerCookie, interface](../winscript/reference/imachinedebugmanagercookie-interface.md)  
- Semblable à l'interface d' `IMachineDebugManager`, mais à cette interface prend en charge le débogage des cookies.  
+ [Interface IMachineDebugManagerCookie](../winscript/reference/imachinedebugmanagercookie-interface.md)  
+ Semblable à `IMachineDebugManager`, mais cette interface prend en charge les cookies de débogage.  
   
- [IMachineDebugManagerEvents, interface](../winscript/reference/imachinedebugmanagerevents-interface.md)  
- Les modifications de signaux de la liste d'application active mise à jour par l'ordinateur de débogage le gestionnaire.  
+ [Interface IMachineDebugManagerEvents](../winscript/reference/imachinedebugmanagerevents-interface.md)  
+ Signale les modifications apportées à la liste des applications en cours d’exécution tenue à jour par le gestionnaire de débogage d’ordinateur.  
   
- [IEnumRemoteDebugApplications, interface](../winscript/reference/ienumremotedebugapplications-interface.md)  
- Énumère les applications actives sur un ordinateur.  
+ [Interface IEnumRemoteDebugApplications](../winscript/reference/ienumremotedebugapplications-interface.md)  
+ Énumère les applications en cours d’exécution sur un ordinateur.  
   
-### Process Debug Manager  
- Le PDM effectue les opérations suivantes :  
+### <a name="process-debug-manager"></a>Gestionnaire de débogage de processus  
+ Le gestionnaire de débogage de processus effectue les opérations suivantes :  
   
--   Synchronise le débogage de plusieurs moteurs de langage.  
+-   Il synchronise le débogage de plusieurs moteurs de langage.  
   
--   Met à jour une arborescence de documents débogable.  
+-   Il tient à jour une arborescence de documents pouvant être débogués.  
   
--   Fusionne des frames de pile.  
+-   Il fusionne les frames de pile.  
   
--   Points d'arrêt de coordonnées et progression entre les moteurs de langage.  
+-   Il coordonne les points d’arrêt et l’exécution pas à pas dans les moteurs de langage.  
   
--   Thread de suivi.  
+-   Il effectue le suivi des threads.  
   
--   Met à jour un thread de débogueur pour le traitement asynchrone.  
+-   Il gère un thread de débogueur pour le traitement asynchrone.  
   
--   Communique avec l'ordinateur de débogage le pilote et le débogueur IDE.  
+-   Il communique avec le gestionnaire de débogage d’ordinateur et l’IDE de débogueur.  
   
- Voici les interfaces fournies par le processus de débogage le gestionnaire.  
+ Voici les interfaces fournies par le gestionnaire de débogage de processus.  
   
- [IProcessDebugManager, interface](../winscript/reference/iprocessdebugmanager-interface.md)  
- L'interface principale au processus de débogage le gestionnaire.  Cette interface peut créer, ajouter, supprimer ou une application virtuelle d'un processus.  
+ [Interface IProcessDebugManager](../winscript/reference/iprocessdebugmanager-interface.md)  
+ Interface principale avec le gestionnaire de débogage de processus. Cette interface peut créer, ajouter ou supprimer une application virtuelle d’un processus.  
   
- [IRemoteDebugApplication, interface](../winscript/reference/iremotedebugapplication-interface.md)  
- Représente une application active.  
+ [Interface IRemoteDebugApplication](../winscript/reference/iremotedebugapplication-interface.md)  
+ Représente une application en cours d’exécution.  
   
- [IDebugApplication, interface](../winscript/reference/idebugapplication-interface.md)  
- Expose les méthodes non exécutables à distance de débogage pour une utilisation par les moteurs de langage et les hôtes.  
+ [Interface IDebugApplication](../winscript/reference/idebugapplication-interface.md)  
+ Expose des méthodes de débogage non accessibles à distance en vue d’une utilisation par les hôtes et les moteurs de langage.  
   
- [IRemoteDebugApplicationThread, interface](../winscript/reference/iremotedebugapplicationthread-interface.md)  
- Représente un thread d'exécution dans une application particulière.  
+ [Interface IRemoteDebugApplicationThread](../winscript/reference/iremotedebugapplicationthread-interface.md)  
+ Représente un thread d’exécution dans une application donnée.  
   
- [IDebugApplicationThread, interface](../winscript/reference/idebugapplicationthread-interface.md)  
- Permet aux moteurs de langage et aux hôtes pour fournir la synchronisation des threads et mettre à jour le thread\- spécifique, les informations de débogage point\- état.  
+ [Interface IDebugApplicationThread](../winscript/reference/idebugapplicationthread-interface.md)  
+ Permet aux moteurs de langage et aux hôtes d’assurer la synchronisation des threads et de tenir à jour les informations d’état de débogage propres aux threads.  
   
- [IEnumRemoteDebugApplicationThreads, interface](../winscript/reference/ienumremotedebugapplicationthreads-interface.md)  
- Énumère les threads en cours de exécution dans une application.  
+ [Interface IEnumRemoteDebugApplicationThreads](../winscript/reference/ienumremotedebugapplicationthreads-interface.md)  
+ Énumère les threads en cours d’exécution dans une application.  
   
- [IDebugThreadCall, interface](../winscript/reference/idebugthreadcall-interface.md)  
- Appels marshalés par expéditions.  
+ [Interface IDebugThreadCall](../winscript/reference/idebugthreadcall-interface.md)  
+ Distribue les appels marshalés.  
   
- [IDebugApplicationNode, interface](../winscript/reference/idebugapplicationnode-interface.md)  
- Met à jour une position d'un document dans la hiérarchie.  
+ [Interface IDebugApplicationNode](../winscript/reference/idebugapplicationnode-interface.md)  
+ Conserve une position pour un document dans la hiérarchie.  
   
- [IEnumDebugApplicationNodes, interface](../winscript/reference/ienumdebugapplicationnodes-interface.md)  
- Énumère les nœuds enfants d'un nœud connexe avec une application.  
+ [Interface IEnumDebugApplicationNodes](../winscript/reference/ienumdebugapplicationnodes-interface.md)  
+ Énumère les nœuds enfants d’un nœud associé à une application.  
   
- [IEnumDebugStackFrames, interface](../winscript/reference/ienumdebugstackframes-interface.md)  
- Énumère les frames de pile correspondant à un thread, fusionné des moteurs.  
+ [Interface IEnumDebugStackFrames](../winscript/reference/ienumdebugstackframes-interface.md)  
+ Énumère les frames de pile correspondant à un thread, fusionnés à partir des moteurs.  
   
- [IDebugCookie, interface](../winscript/reference/idebugcookie-interface.md)  
- Permet le cookie de débogage à définir dans les débogueurs de script.  
+ [Interface IDebugCookie](../winscript/reference/idebugcookie-interface.md)  
+ Permet de définir le cookie de débogage dans les débogueurs de script.  
   
- [IDebugHelper, interface](../winscript/reference/idebughelper-interface.md)  
- Sert de fabrique aux navigateurs d'objet et aux points de connexion simples pour les moteurs de script.  
+ [Interface IDebugHelper](../winscript/reference/idebughelper-interface.md)  
+ Sert de fabrique pour les explorateurs d’objets et points de connexion simples pour les moteurs de script.  
   
- [ISimpleConnectionPoint, interface](../winscript/reference/isimpleconnectionpoint-interface.md)  
- Offre un moyen simple pour décrire et énumérer les événements déclenchés sur le point de connexion particulier, pour les moteurs de script.  
+ [Interface ISimpleConnectionPoint](../winscript/reference/isimpleconnectionpoint-interface.md)  
+ Fournit un moyen simple de décrire et d’énumérer les événements déclenchés sur un point de connexion particulier, pour les moteurs de script.  
   
-## Voir aussi  
- [Débogueur de script actif, interfaces](../winscript/reference/active-script-debugger-interfaces.md)
+## <a name="see-also"></a>Voir aussi  
+ [Interfaces de débogueur de script actif](../winscript/reference/active-script-debugger-interfaces.md)

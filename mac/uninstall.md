@@ -1,5 +1,5 @@
 ---
-title: "Désinstallation de Visual Studio pour Mac"
+title: "Désinstallation de Visual Studio pour Mac | Microsoft Docs"
 description: "Instructions de désinstallation de Visual Studio pour Mac et des outils associés."
 author: asb3993
 ms.author: amburns
@@ -7,14 +7,12 @@ ms.date: 04/14/2017
 ms.topic: article
 ms.technology: vs-ide-install
 ms.assetid: 4EB95F75-BC2E-4982-9564-2975805712D8
+ms.openlocfilehash: 193eebd4849e6a133ade1d14cb17d5b345199811
+ms.sourcegitcommit: 24f81b8fb59722cf4a856005227f6a29bb2990cd
 ms.translationtype: HT
-ms.sourcegitcommit: e2b7ff9126e1cc38ac2e58d6be339b656a024e7f
-ms.openlocfilehash: 6d021192e8104ec520aa057173d9dec41a62dfd3
-ms.contentlocale: fr-fr
-ms.lasthandoff: 08/11/2017
-
+ms.contentlocale: fr-FR
+ms.lasthandoff: 11/17/2017
 ---
-
 # <a name="uninstalling-visual-studio-for-mac"></a>Désinstallation de Visual Studio pour Mac
 
 Il existe plusieurs produits Xamarin qui permettent le développement d’applications multiplateformes, notamment des applications autonomes comme Visual Studio pour Mac.
@@ -43,8 +41,8 @@ Pour exécuter le script, procédez comme suit :
 3. Rendez le script exécutable et exécutez-le avec **sudo** :
 
     ```bash
-    $ chmod +x ./xamarin_uninstall.sh
-    $ sudo ./xamarin_uninstall.sh
+    $ chmod +x ./uninstall-vsmac.sh
+    $ sudo ./uninstall-vsmac.sh
     ```
 4. Enfin, supprimez le script de désinstallation.
 
@@ -67,6 +65,7 @@ rm -rf ~/Library/Logs/VisualStudio
 rm -rf ~/Library/VisualStudio
 rm -rf ~/Library/Preferences/Xamarin/
 rm -rf ~/Library/Developer/Xamarin
+rm -rf "~/Library/Application Support/VisualStudio"
 ```
 
 ## <a name="uninstall-mono-sdk-mdk"></a>Désinstaller le SDK Mono (MDK)
@@ -183,4 +182,3 @@ rm -rf ~/Library/Logs/VisualStudioInstaller/
 rm -rf ~/Library/Preferences/Xamarin/
 rm -rf "~/Library/Preferences/Visual Studio/"
 ```
-

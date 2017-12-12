@@ -4,37 +4,19 @@ ms.custom:
 ms.date: 2015-10-04
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-devops-test
+ms.technology: vs-devops-test
 ms.tgt_pltfrm: 
 ms.topic: article
-helpviewer_keywords:
-- coded UI tests
+helpviewer_keywords: coded UI tests
 ms.assetid: 544742b5-4ec1-4d51-b941-72b2f6ff17bc
-caps.latest.revision: 106
+caps.latest.revision: "106"
 ms.author: douge
 manager: douge
-translation.priority.ht:
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- ru-ru
-- zh-cn
-- zh-tw
-translation.priority.mt:
-- cs-cz
-- pl-pl
-- pt-br
-- tr-tr
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 47057e9611b824c17077b9127f8d2f8b192d6eb8
-ms.openlocfilehash: cbc542a413b63b4da4a4d8699c06b313ff32f86c
-ms.contentlocale: fr-fr
-ms.lasthandoff: 05/13/2017
-
+ms.openlocfilehash: de0ce914e61f6fd3dc3eb227496b09e77c37be57
+ms.sourcegitcommit: c0422a3d594ea5ae8fc03f1aee684b04f417522e
+ms.translationtype: HT
+ms.contentlocale: fr-FR
+ms.lasthandoff: 11/02/2017
 ---
 # <a name="supported-configurations-and-platforms-for-coded-ui-tests-and-action-recordings"></a>Plateformes et configurations prises en charge pour les tests codés de l'interface utilisateur et les enregistrements des actions
 Les plateformes et configurations prises en charge pour les tests codés de l’interface utilisateur pour Visual Studio Enterprise sont indiquées dans le tableau suivant. Ces configurations s’appliquent aussi aux enregistrements d’actions créés à l’aide de [!INCLUDE[MTRlong](../test/includes/mtrlong_md.md)].  
@@ -56,14 +38,14 @@ Les plateformes et configurations prises en charge pour les tests codés de l’
 |.NET|.NET 2.0, 3.0, 3.5, 4 et 4.5. **Remarque :** [!INCLUDE[TCMext](../misc/includes/tcmext_md.md)] et Visual Studio nécessitent tous les deux .NET 4 pour fonctionner. Cependant, les applications développées à l’aide des versions .NET répertoriées sont prises en charge.|  
   
 > [!NOTE]
-> La *synchronisation d’interface utilisateur* est une fonctionnalité permettant de vérifier la lecture dans la file d’attente de messages de chaque contrôle. Si un contrôle ne répond pas à l’événement qui lui a été envoyé, l’événement est envoyé une nouvelle fois.  
+>  La*synchronisation d’interface utilisateur* est une fonctionnalité permettant de vérifier la lecture dans la file d’attente de messages de chaque contrôle. Si un contrôle ne répond pas à l’événement qui lui a été envoyé, l’événement est envoyé une nouvelle fois.  
   
 ## <a name="platform-support"></a>Prise en charge de plateforme  
   
 |Plateforme|Niveau de prise en charge|  
 |--------------|----------------------|  
 |Applications Windows Phone|Seules les applications Windows Phone XAML WinRT sont prises en charge.|  
-|Applications Windows Store|Seules les applications Windows Store XAML sont prises en charge.|  
+|Applications UWP|Seules les applications UWP en XAML sont prises en charge.|  
 |Applications de la plateforme Windows universelle|Seules les applications de la plateforme Windows universelle XAML pour téléphone et Bureau sont prises en charge.|  
 |Bord|Dans Visual Studio 2015 Update 2 et versions ultérieures à l’aide de l’[extension de test codé de l’interface utilisateur inter-navigateurs](https://visualstudiogallery.msdn.microsoft.com/11cfc881-f8c9-4f96-b303-a2780156628d)|  
 |Internet Explorer 8<br /><br /> Internet Explorer 9<br /><br /> Internet Explorer 10 **Important :** Internet Explorer 10 n’est pris en charge que sur les postes de travail. <br /><br /> Internet Explorer 11 **Important :** Internet Explorer 11 n’est pris en charge que sur les postes de travail.|Prise en charge intégrale.<br /><br /> -   **Prise en charge de HTML5 dans Internet Explorer 9 et Internet Explorer 10 :** les tests codés de l’interface utilisateur prennent en charge l’enregistrement, la lecture et la validation des contrôles HTML5 : Audio, Video, ProgressBar et Slider. Pour plus d’informations, consultez [Utilisation de contrôles HTML5 dans des tests codés de l’interface utilisateur](../test/using-html5-controls-in-coded-ui-tests.md). **Avertissement :** Si vous créez des tests codés de l’interface utilisateur dans Internet Explorer 10, ils risquent de ne pas s’exécuter avec Internet Explorer 9 ou Internet Explorer 8. Cela tient au fait qu’Internet Explorer 10 inclut les contrôles HTML5 tels que Audio, Video, ProgressBar et Slider. Ces contrôles HTML5 ne sont pas reconnus par Internet Explorer 9 ni Internet Explorer 8. De même, votre test codé de l’interface utilisateur avec Internet Explorer 9 peut inclure certains contrôles HTML5 qui ne seront pas non plus reconnus dans Internet Explorer 8.<br />-   **Prise en charge de la correction orthographique dans Internet Explorer 10 :** Internet Explorer 10 inclut des fonctions de correction orthographique pour toutes les zones de texte. Cette fonction vous permet d’accéder à une liste de corrections suggérées. Les tests codés de l’interface utilisateur ignorent certaines actions utilisateur, telles que la sélection d’une autre suggestion d’orthographe. Seul le texte final tapé dans la zone de texte est enregistré.<br />     Les actions suivantes sont enregistrées pour les tests codés de l’interface utilisateur qui utilisent le contrôle de correction orthographique : Ajouter au dictionnaire, Copier, Sélectionner tout, Ajouter au dictionnaire et Ignorer.<br />-   **Prise en charge d’Internet Explorer 64 bits exécuté sous Windows 8 :** auparavant, les versions 64 bits d’Internet Explorer n’étaient pas été prises en charge pour l’enregistrement et la lecture. Avec [!INCLUDE[win8](../debugger/includes/win8_md.md)] et [!INCLUDE[vs_dev11_long](../data-tools/includes/vs_dev11_long_md.md)], les tests codés de l'interface utilisateur ont été activés pour les versions 64 bits de Microsoft Internet Explorer. **Avertissement :** la prise en charge 64 bits pour Microsoft Internet Explorer s’applique uniquement quand vous exécutez [!INCLUDE[win8](../debugger/includes/win8_md.md)] ou version ultérieure.<br />-   **Prise en charge des sites épinglés dans Internet Explorer 9 :** les sites épinglés ont été introduits dans Internet Explorer 9. Avec les sites épinglés, vous pouvez accéder à vos sites favoris directement à partir de la barre des tâches Windows, sans devoir ouvrir Internet Explorer au préalable. Les tests codés de l’interface utilisateur peuvent maintenant générer des actions avec intention sur les sites épinglés. Pour plus d’informations sur les sites épinglés, consultez [Sites épinglés](http://go.microsoft.com/fwlink/?LinkId=220037).<br />-   **Prise en charge des balises sémantiques d’Internet Explorer 9 :** Internet Explorer 9 a introduit les balises sémantiques suivantes : section, nav, article, aside, hgroup, header, footer, figure, figcaption et mark. Les tests codés de l’interface utilisateur ignorent toutes ces balises sémantiques pendant l’enregistrement. Vous pouvez ajouter des assertions sur ces balises à l’aide du générateur de test codé de l’interface utilisateur. Vous pouvez utiliser le bouton de navigation dans le générateur de test codé de l’interface utilisateur pour accéder à l’un de ces éléments et afficher leurs propriétés.<br />-   **Gestion transparente des caractères d’espace blanc entre les différentes versions d’Internet Explorer :** il existe des différences dans la gestion des caractères d’espace blanc entre Internet Explorer 8, Internet Explorer 9 et Internet Explorer 10. Les tests codés de l’interface utilisateur gèrent ces différences en toute transparence. Par conséquent, un test codé de l’interface utilisateur créé dans Internet Explorer 8, par exemple, sera lu correctement dans Internet Explorer 9 et Internet Explorer 10.<br />-   **Les zones de notification d’Internet Explorer sont maintenant enregistrées avec l’attribut « Continuer en cas d’erreur » :** toutes les actions dans la zone de notification d’Internet Explorer sont désormais enregistrées avec l’attribut « Continuer en cas d’erreur ». Si la barre de notification n’apparaît pas pendant la lecture, les actions la concernant sont ignorées et le test codé de l’interface utilisateur continue avec l’action suivante.|  
@@ -90,4 +72,3 @@ Les plateformes et configurations prises en charge pour les tests codés de l’
 ## <a name="see-also"></a>Voir aussi  
  [Utiliser UI Automation pour tester votre code](../test/use-ui-automation-to-test-your-code.md)   
  [Génération d’un test codé de l’interface utilisateur à partir d’un enregistrement des actions existant](/devops-test-docs/test/generating-a-coded-ui-test-from-an-existing-action-recording)
-

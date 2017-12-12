@@ -4,38 +4,21 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-devops-test
+ms.technology: vs-devops-test
 ms.tgt_pltfrm: 
 ms.topic: article
 ms.assetid: 11232a83-73ea-46bd-bc0c-46f74f6e3a42
-caps.latest.revision: 33
+caps.latest.revision: "33"
 ms.author: douge
 manager: douge
-translation.priority.ht:
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- ru-ru
-- zh-cn
-- zh-tw
-translation.priority.mt:
-- cs-cz
-- pl-pl
-- pt-br
-- tr-tr
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 47057e9611b824c17077b9127f8d2f8b192d6eb8
-ms.openlocfilehash: d3936d44f8591753df102cf65c15d9199a679316
-ms.contentlocale: fr-fr
-ms.lasthandoff: 05/13/2017
-
+ms.openlocfilehash: 8b854bcfcb7227a454023f89ce732706b1e545cc
+ms.sourcegitcommit: c0422a3d594ea5ae8fc03f1aee684b04f417522e
+ms.translationtype: HT
+ms.contentlocale: fr-FR
+ms.lasthandoff: 11/02/2017
 ---
 # <a name="upgrading-coded-ui-tests-from-visual-studio-2010"></a>Mise à niveau de tests codés de l'interface utilisateur à partir de Visual Studio 2010
-Les projets de test contenant des tests codés de l'interface utilisateur créées dans [!INCLUDE[vs_dev10_long](../code-quality/includes/vs_dev10_long_md.md)] SP1 sont réparés silencieusement quand vous les ouvrez dans Visual Studio 2012. Si les projets de test sont archivés dans le contrôle de code source, les fichiers projet sont extraits pour cette réparation. Une fois réparés, ces projets de test contenant des tests codés de l'interface utilisateur peuvent alors être utilisés à la fois dans [!INCLUDE[vs_dev10_long](../code-quality/includes/vs_dev10_long_md.md)] SP1 et [!INCLUDE[vs_dev11_long](../data-tools/includes/vs_dev11_long_md.md)].  
+Les projets de test contenant des tests codés de l’interface utilisateur qui ont été créés dans [!INCLUDE[vs_dev10_long](../code-quality/includes/vs_dev10_long_md.md)] SP1 sont réparés en mode silencieux quand vous les ouvrez dans Visual Studio 2012 ou ultérieur. Si les projets de test sont archivés dans le contrôle de code source, les fichiers projet sont extraits pour cette réparation. Une fois réparés, ces projets de test contenant des tests codés de l'interface utilisateur peuvent alors être utilisés à la fois dans [!INCLUDE[vs_dev10_long](../code-quality/includes/vs_dev10_long_md.md)] SP1 et [!INCLUDE[vs_dev11_long](../data-tools/includes/vs_dev11_long_md.md)].  
   
  **Spécifications**  
   
@@ -45,12 +28,12 @@ Les projets de test contenant des tests codés de l'interface utilisateur créé
 >  Visual Studio inclut plusieurs types de projets de test. Si vous créez un test codé de l'interface utilisateur, il le sera dans un type de projet de test codé de l'interface utilisateur. Pour plus d’informations, consultez [Mise à niveau des tests à partir de versions antérieures de Visual Studio](http://msdn.microsoft.com/en-us/e9c8b7f6-bd72-448e-8edb-d090dcc5cf52).  
   
 > [!WARNING]
-> Les projets de test [!INCLUDE[vs_dev10_long](../code-quality/includes/vs_dev10_long_md.md)] qui contiennent des tests codés de l'interface utilisateur doivent être régénérés quand vous ouvrez le projet de test dans [!INCLUDE[vs_dev11_long](../data-tools/includes/vs_dev11_long_md.md)] ou [!INCLUDE[vs_dev10_long](../code-quality/includes/vs_dev10_long_md.md)] côte à côte avec [!INCLUDE[vs_dev11_long](../data-tools/includes/vs_dev11_long_md.md)].  
+>  Les projets de test[!INCLUDE[vs_dev10_long](../code-quality/includes/vs_dev10_long_md.md)] qui contiennent des tests codés de l'interface utilisateur doivent être régénérés quand vous ouvrez le projet de test dans [!INCLUDE[vs_dev11_long](../data-tools/includes/vs_dev11_long_md.md)] ou [!INCLUDE[vs_dev10_long](../code-quality/includes/vs_dev10_long_md.md)] côte à côte avec [!INCLUDE[vs_dev11_long](../data-tools/includes/vs_dev11_long_md.md)].  
   
 > [!WARNING]
 >  Quand un projet de test qui a été créé dans [!INCLUDE[vs_dev10_long](../code-quality/includes/vs_dev10_long_md.md)] et qui contient uniquement des tests unitaires est ouvert dans [!INCLUDE[vs_dev11_long](../data-tools/includes/vs_dev11_long_md.md)], il n'est pas possible d'y ajouter des tests codés de l'interface utilisateur. De même, vous ne pouvez pas ajouter un test codé de l'interface utilisateur à un projet de test unitaire qui a été créé dans [!INCLUDE[vs_dev11_long](../data-tools/includes/vs_dev11_long_md.md)].  
   
-## <a name="compatibility-issues-between-visual-studio-2010-and-visual-studio-2012"></a>Problèmes de compatibilité entre Visual Studio 2010 et Visual Studio 2012  
+## <a name="compatibility-issues-between-visual-studio-2010-and-visual-studio-2012-or-later"></a>Problèmes de compatibilité entre Visual Studio 2010 et Visual Studio 2012 ou ultérieur  
  Le tableau suivant répertorie les problèmes à connaître en cas de migration de tests codés de l'interface utilisateur entre [!INCLUDE[vs_dev10_long](../code-quality/includes/vs_dev10_long_md.md)] et [!INCLUDE[vs_dev11_long](../data-tools/includes/vs_dev11_long_md.md)].  
   
 > [!CAUTION]
@@ -64,7 +47,7 @@ Les projets de test contenant des tests codés de l'interface utilisateur créé
 |Dans [!INCLUDE[vs_dev10_long](../code-quality/includes/vs_dev10_long_md.md)], des références ont été ajoutées à l’intérieur d’une instruction « Choose » dans le fichier csproj. Dans [!INCLUDE[vs_dev11_long](../data-tools/includes/vs_dev11_long_md.md)], nous utilisons un fichier .targets de commentaires pour inclure des références d'assembly de test codé de l'interface utilisateur.|Dans [!INCLUDE[vs_dev11_long](../data-tools/includes/vs_dev11_long_md.md)], un test codé de l'interface utilisateur ne peut pas être ajouté à un projet de test créé dans [!INCLUDE[vs_dev10_long](../code-quality/includes/vs_dev10_long_md.md)] (ou SP1) qui ne contenait pas de test codé de l'interface utilisateur.<br /><br /> Le processus de réparation ajoute le fichier .targets et l'instruction Choose. Si un test codé de l'interface utilisateur n'est pas dans le projet de test, alors le projet est marqué comme étant réparé et les références appropriées ne sont pas ajoutées lors de l'ajout du test codé de l'interface utilisateur dans [!INCLUDE[vs_dev11_long](../data-tools/includes/vs_dev11_long_md.md)].|Vous devez créer un projet de test dans la même solution à l'aide de [!INCLUDE[vs_dev11_long](../data-tools/includes/vs_dev11_long_md.md)] et y ajouter votre nouveau test codé de l'interface utilisateur. Sinon, vous pouvez ajouter des tests codés de l'interface utilisateur au projet de test dans [!INCLUDE[vs_dev10_long](../code-quality/includes/vs_dev10_long_md.md)] SP1 et ouvrir ce projet dans [!INCLUDE[vs_dev11_long](../data-tools/includes/vs_dev11_long_md.md)].|  
   
 ##  <a name="UpgradingCodedUIFromVS2010_Update"></a> Mise à jour Visual Studio 2010 SP1  
- Une mise à jour de [!INCLUDE[vs2010](../misc/includes/vs2010_md.md)] SP1 compatible avec Visual Studio 2012 et Windows 8 est disponible en téléchargement dans le [Centre de téléchargement Microsoft](http://www.microsoft.com/download/details.aspx?id=34677) , ainsi qu’en tant que mise à jour de Visual Studio.  
+ Une mise à jour de [!INCLUDE[vs2010](../misc/includes/vs2010_md.md)] SP1 compatible avec Visual Studio 2012 ou ultérieur, et avec Windows 8 ou ultérieur, est disponible en téléchargement dans le [Centre de téléchargement Microsoft](http://www.microsoft.com/download/details.aspx?id=34677), ainsi que sous forme de mise à jour de Visual Studio.  
   
  Après avoir appliqué la mise à jour, les fonctionnalités d'outil de test codé de l'interface utilisateur [!INCLUDE[vs2010](../misc/includes/vs2010_md.md)] SP1 suivantes sont améliorées pour Windows 8 :  
   
@@ -86,4 +69,3 @@ Les projets de test contenant des tests codés de l'interface utilisateur créé
  [Utiliser UI Automation pour tester votre code](../test/use-ui-automation-to-test-your-code.md)   
  [Génération d’un test codé de l’interface utilisateur à partir d’un enregistrement des actions existant](/devops-test-docs/test/generating-a-coded-ui-test-from-an-existing-action-recording)   
  [Plateformes et configurations prises en charge pour les tests codés de l’interface utilisateur et les enregistrements des actions](../test/supported-configurations-and-platforms-for-coded-ui-tests-and-action-recordings.md)
-

@@ -4,36 +4,19 @@ ms.custom:
 ms.date: 05/02/2017
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-devops-test
+ms.technology: vs-devops-test
 ms.tgt_pltfrm: 
 ms.topic: article
-helpviewer_keywords:
-- unit testing, create unit tests
+helpviewer_keywords: unit testing, create unit tests
 ms.assetid: 9DE41406-8D39-427E-99D9-987E99103B73
-caps.latest.revision: 56
+caps.latest.revision: "56"
 ms.author: douge
 manager: douge
-translation.priority.ht:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
-ms.translationtype: Human Translation
-ms.sourcegitcommit: c559290c8e88c8b4e37feabc7014188fad15434d
-ms.openlocfilehash: b36882588281fc95ff4814c148cd428d09196fa1
-ms.contentlocale: fr-fr
-ms.lasthandoff: 06/08/2017
-
+ms.openlocfilehash: feb31e2a5c4abf0013ee4d3ec0a20c7f3cfdff2a
+ms.sourcegitcommit: fb751e41929f031d1a9247bc7c8727312539ad35
+ms.translationtype: HT
+ms.contentlocale: fr-FR
+ms.lasthandoff: 11/15/2017
 ---
 # <a name="developer-testing-tools-scenarios-and-capabilities"></a>Outils de test pour les développeurs, scénarios et fonctions
 
@@ -68,7 +51,7 @@ IntelliTest réduit considérablement l’effort de création et de maintenance 
 
 Testez votre interface utilisateur avec les meilleurs tests de l’interface utilisateur ou ceux qui ont été approuvés par la communauté.
 Les tests codés de l’interface utilisateur fournissent un moyen de créer des tests entièrement automatisés pour valider les fonctionnalités et le comportement de l’interface utilisateur de votre application.
-Ils peuvent automatiser les tests de l’interface utilisateur à l’aide de diverses technologies, notamment les applications XAML du Windows Store, de navigateur et SharePoint.
+Ils peuvent automatiser les tests de l’interface utilisateur avec différentes technologies, notamment les applications UWP en XAML, les applications de navigateur et les applications SharePoint.
 
 Que vous choisissiez les meilleurs tests codés de l’interface utilisateur ou des tests de l’interface utilisateur basés sur un navigateur générique avec Selenium, Visual Studio fournit tous les outils dont vous avez besoin. 
 
@@ -76,7 +59,7 @@ Que vous choisissiez les meilleurs tests codés de l’interface utilisateur ou 
 
 * [Utiliser l’automatisation de l’interface utilisateur pour tester votre code](use-ui-automation-to-test-your-code.md)
 * [Bien démarrer avec la création, l’édition et la gestion d’un test codé de l’interface utilisateur](walkthrough-creating-editing-and-maintaining-a-coded-ui-test.md)
-* [Tester les applications du Windows Store avec des tests codés de l’interface utilisateur](test-windows-store-8-1-apps-with-coded-ui-tests.md)
+* [Test des applications UWP avec des tests codés de l’interface utilisateur](test-windows-store-8-1-apps-with-coded-ui-tests.md)
 * [Tester les applications Windows Phone avec des tests codés de l’interface utilisateur](test-windows-phone-8-1-apps-with-coded-ui-tests.md)
 * [Tester les applications SharePoint avec des tests codés de l’interface utilisateur](testing-sharepoint-2010-applications-with-coded-ui-tests.md)
 * [Introduction aux tests codés de l’interface utilisateur avec Visual Studio Enterprise (laboratoire)](http://download.microsoft.com/download/6/2/B/62B60ECE-B9DC-4E8A-A97C-EA261BFB935E/Docs/Introduction%20to%20Coded%20UI%20Tests%20with%20Visual%20Studio%20Enterprise%202015.docx)
@@ -105,7 +88,7 @@ L’Explorateur de tests aide les développeurs à créer, gérer et exploiter a
 
 * [Bien démarrer avec les tests unitaires](unit-test-your-code.md)
 * [Exécuter des tests unitaires avec l’Explorateur de tests](run-unit-tests-with-test-explorer.md)
-* [Écriture de tests unitaires pour C/C++](writing-unit-tests-for-c-cpp-with-the-microsoft-unit-testing-framework-for-cpp.md)
+* [Écriture de tests unitaires pour C/C++](writing-unit-tests-for-c-cpp.md)
 * [Installer des frameworks de tests unitaires tiers](install-third-party-unit-test-frameworks.md)
 
 Visual Studio est également extensible et accepte les adaptateurs de tests unitaires tiers comme NUnit et xUnit.net. En outre, la fonctionnalité de clonage de code va de pair avec l’offre de logiciels de haute qualité en vous aidant à identifier les blocs de code sémantiquement similaires qui peuvent faire l’objet d’une refactorisation ou de correctifs de bogues courants.
@@ -118,4 +101,3 @@ Visual Studio est également extensible et accepte les adaptateurs de tests unit
 * [Speeding up Unit Test Execution in Team Foundation Server](http://blogs.msdn.com/b/visualstudioalm/archive/2015/07/30/speeding-up-test-execution-in-tfs.aspx)
 * [Parallel and Context Sensitive Unit Test Execution](https://blogs.msdn.microsoft.com/visualstudioalm/2016/02/08/parallel-and-context-sensitive-test-execution-with-visual-studio-2015-update-1/)
 * [Tests unitaires, couverture du code et analyse des clones de code avec Visual Studio (laboratoire)](http://download.microsoft.com/download/6/2/B/62B60ECE-B9DC-4E8A-A97C-EA261BFB935E/Docs/Unit%20Testing,%20Code%20Coverage%20and%20Code%20Clone%20Analysis%20with%20Visual%20Studio%202015.docx)
-

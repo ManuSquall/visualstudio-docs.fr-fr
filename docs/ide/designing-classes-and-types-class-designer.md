@@ -1,56 +1,57 @@
 ---
-title: "Designing Classes and Types (Class Designer) | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-general"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-helpviewer_keywords: 
-  - "types [Visual Studio], designing"
-  - "classes [Visual Studio], designing"
+title: Conception des classes et des types (Concepteur de classes) | Microsoft Docs
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-general
+ms.tgt_pltfrm: 
+ms.topic: article
+helpviewer_keywords:
+- types [Visual Studio], designing
+- classes [Visual Studio], designing
 ms.assetid: 381481a2-87f4-475b-a780-18e85c8af350
-caps.latest.revision: 21
-author: "kempb"
-ms.author: "kempb"
-manager: "ghogen"
-caps.handback.revision: 21
+caps.latest.revision: "21"
+author: gewarren
+ms.author: gewarren
+manager: ghogen
+ms.openlocfilehash: 07bae865601183446308a37f7c91255392fee342
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: HT
+ms.contentlocale: fr-FR
+ms.lasthandoff: 10/31/2017
 ---
-# Designing Classes and Types (Class Designer)
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
-
-À l'aide du **Concepteur de classes**, vous pouvez non seulement afficher les classes et les types, mais également les créer.  Les rubriques ci\-après expliquent comment effectuer cette opération.  
+# <a name="designing-classes-and-types-class-designer"></a>Conception des classes et des types (Concepteur de classes)
+Le **Concepteur de classes** vous permet vous non seulement d’afficher les classes et les types, mais également de les créer. Les rubriques suivantes expliquent comment effectuer ces opérations.  
   
 > [!NOTE]
->  Lorsque vous travaillez avec le Concepteur de classes, vous devez inspecter le code qu'il émet avant de l'exécuter afin de vérifier que le code respecte bien votre contexte de sécurité.  
+>  Quand vous utilisez le Concepteur de classes, vous devez examiner le code qu’il émet avant de l’exécuter afin de vérifier que le code respecte bien votre contexte de sécurité.  
   
-## Dans cette section  
- [How to: Create Types by using Class Designer](../ide/how-to-create-types-by-using-class-designer.md)  
+## <a name="in-this-section"></a>Dans cette section  
+ [Guide pratique pour créer des types à l’aide du Concepteur de classes](../ide/how-to-create-types-by-using-class-designer.md)  
   
  Décrit comment utiliser le diagramme de classes pour créer un type.  
   
- [How to: Create Inheritance Between Types \(Class Designer\)](../ide/how-to-create-inheritance-between-types-class-designer.md)  
+ [Guide pratique pour créer l’héritage entre les types (Concepteur de classes)](../ide/how-to-create-inheritance-between-types-class-designer.md)  
   
- Explique comment définir une relation d'héritage entre des types.  
+ Explique comment définir une relation d’héritage entre des types.  
   
- [How to: Create Associations Between Types \(Class Designer\)](../ide/how-to-create-associations-between-types-class-designer.md)  
+ [Guide pratique pour créer des associations entre les types (Concepteur de classes)](../ide/how-to-create-associations-between-types-class-designer.md)  
   
  Décrit comment définir des associations dans le diagramme de classes.  
   
- [How to: Visualize a Collection Association \(Class Designer\)](../Topic/How%20to:%20Visualize%20a%20Collection%20Association%20\(Class%20Designer\).md)  
+ [Guide pratique pour visualiser une association de collections (Concepteur de classes)](../ide/how-to-visualize-a-collection-association-class-designer.md)  
   
  Explique comment définir une association de collection dans le Concepteur de classes.  
   
- [Creating and Configuring Type Members \(Class Designer\)](../ide/creating-and-configuring-type-members-class-designer.md)  
+ [Création et configuration de membres de type (Concepteur de classes)](../ide/creating-and-configuring-type-members-class-designer.md)  
   
- Fournit des informations et des liens vers les rubriques relatives à la création et la configuration de membres de type avec le Concepteur de classes.  
+ Fournit des informations et des liens vers des rubriques sur la création et la configuration de membres de type avec le Concepteur de classes.  
   
-## Rubriques connexes  
- [Viewing Types and Relationships \(Class Designer\)](../ide/viewing-types-and-relationships-class-designer.md)  
+## <a name="related-sections"></a>Rubriques connexes  
+ [Affichage des types et relations (Concepteur de classes)](../ide/viewing-types-and-relationships-class-designer.md)  
   
- [Refactoring Classes and Types \(Class Designer\)](../ide/refactoring-classes-and-types-class-designer.md)  
+ [Refactorisation des classes et des types (Concepteur de classes)](../ide/refactoring-classes-and-types-class-designer.md)  
   
-## Voir aussi  
- [Working with Class Diagrams \(Class Designer\)](../ide/working-with-class-diagrams-class-designer.md)
+## <a name="see-also"></a>Voir aussi  
+ [Utilisation des diagrammes de classes (Concepteur de classes)](../ide/working-with-class-diagrams-class-designer.md)

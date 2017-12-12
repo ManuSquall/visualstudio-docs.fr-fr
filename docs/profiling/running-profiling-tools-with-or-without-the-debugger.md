@@ -4,21 +4,19 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-debug
+ms.technology: vs-ide-debug
 ms.tgt_pltfrm: 
 ms.topic: article
 ms.assetid: 3fcdccad-c1bd-4c67-bcec-bf33a8fb5d63
-caps.latest.revision: 8
+caps.latest.revision: "8"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
+ms.openlocfilehash: 11ebadac433076a6ab54afce59584b1f0966df68
+ms.sourcegitcommit: 26419ab0cccdc30d279c32d6a841758cfa903806
 ms.translationtype: HT
-ms.sourcegitcommit: 3037d92e9de377ab4b306a5a0e164e29fa6659e7
-ms.openlocfilehash: 30ac6d277edf54ac56294ea0639a471a22dc00da
-ms.contentlocale: fr-fr
-ms.lasthandoff: 08/07/2017
-
+ms.contentlocale: fr-FR
+ms.lasthandoff: 11/11/2017
 ---
 # <a name="running-profiling-tools-with-or-without-the-debugger"></a>Exécution des outils de profilage avec ou sans le débogueur
 Visual Studio offre désormais une sélection d’outils d’analyse des performances. Certains d’entre eux, comme **Utilisation de l’UC** et **Utilisation de la mémoire**, peuvent être exécutés avec ou sans le débogueur. Les outils d’analyse des performances non intégrés au débogueur sont destinés à s’exécuter sur les configurations Release, tandis que ceux intégrés au débogueur sont destinés à s’exécuter sur les configurations Debug.  
@@ -124,7 +122,7 @@ Visual Studio offre désormais une sélection d’outils d’analyse des perform
  ![Spécifier l’URL à afficher dans Internet Explorer](../profiling/media/pdhub_choosephoneanalysistarget.png "PDHUB_ChoosePhoneAnalysisTarget")  
   
 ## <a name="remote-debugging"></a>Remote Debugging  
- L’exécution d’une session de diagnostic sur un PC distant ou sur une tablette requiert que les outils de contrôle à distance Visual Studio soient installés et en cours d’exécution sur la cible distante. Pour les applications pour ordinateur, consultez [Débogage à distance](../debugger/remote-debugging.md).  Pour les applications universelles Windows, consultez [Exécuter des applications du Windows Store sur un ordinateur distant](../debugger/run-windows-store-apps-on-a-remote-machine.md).  
+ L’exécution d’une session de diagnostic sur un PC distant ou sur une tablette requiert que les outils de contrôle à distance Visual Studio soient installés et en cours d’exécution sur la cible distante. Pour les applications pour ordinateur, consultez [Débogage à distance](../debugger/remote-debugging.md).  Pour les applications universelles Windows, consultez [Exécuter des applications UWP sur un ordinateur distant](../debugger/run-windows-store-apps-on-a-remote-machine.md).  
   
 ## <a name="blog-posts-and-msdn-articles-from-the-diagnostics-development-team"></a>Billets de blog et articles MSDN de l’équipe de développement Diagnostics  
  [Magazine MSDN : Analyser les performances pendant le débogage dans Visual Studio 2015](https://msdn.microsoft.com/en-us/magazine/dn973013.aspx)  
@@ -142,4 +140,3 @@ Visual Studio offre désormais une sélection d’outils d’analyse des perform
  [Diagnostic Tools debugger window in Visual Studio 2015](http://blogs.msdn.com/b/visualstudioalm/archive/2015/01/16/diagnostic-tools-debugger-window-in-visual-studio-2015.aspx)  
   
  [IntelliTrace dans Visual Studio Enterprise 2015](http://blogs.msdn.com/b/visualstudioalm/archive/2015/01/16/intellitrace-in-visual-studio-ultimate-2015.aspx)
-

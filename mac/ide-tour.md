@@ -1,19 +1,17 @@
 ---
-title: "Visite guidée de Visual Studio pour Mac"
+title: "Visite guidée de Visual Studio pour Mac | Microsoft Docs"
 description: "Visual Studio pour Mac fournit un environnement de développement intégré pour créer des applications .NET sur macOS, notamment des sites web ASP.NET Core, ainsi que des projets Xamarin pour iOS, Android, Mac et Xamarin.Forms."
 author: asb3993
 ms.author: amburns
 ms.date: 04/14/2017
 ms.topic: article
 ms.assetid: 7DC64A52-AA41-4F3A-A8A1-8A20BCD81CC7
+ms.openlocfilehash: 0f8f3ba04d4e5a8949bc57cb8cf61d470690d786
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
 ms.translationtype: HT
-ms.sourcegitcommit: e2b7ff9126e1cc38ac2e58d6be339b656a024e7f
-ms.openlocfilehash: 04f7ec6474aafedeccdbbf704486c431a4258f61
-ms.contentlocale: fr-fr
-ms.lasthandoff: 08/11/2017
-
+ms.contentlocale: fr-FR
+ms.lasthandoff: 10/31/2017
 ---
-
 # <a name="visual-studio-for-mac-tour"></a>Visite guidée de Visual Studio pour Mac
 
 Visual Studio pour Mac fait évoluer l’IDE de Xamarin centré sur les applications mobiles, Xamarin Studio, vers un environnement de développement orienté cloud et applications mobiles sur le Mac. Cet outil destiné aux développeurs vous permet de tirer parti de la puissance de .NET pour créer des applications pour toutes les plateformes demandées par vos utilisateurs.
@@ -26,11 +24,11 @@ Cet article traite de différentes sections de Visual Studio pour Mac et présen
 
 Visual Studio pour Mac est organisé en plusieurs sections permettant de gérer les fichiers et les paramètres d’une application, de créer le code de l’application et de déboguer.
 
-## <a name="welcome-screen"></a>Écran d’accueil
+## <a name="welcome-screen"></a>Écran d'accueil
 
 Une fois lancé, Visual Studio pour Mac affiche un *écran d’accueil* comme illustré ci-dessous :
 
-![Écran d’accueil](media/ide-tour-image1.png)
+![Écran d'accueil](media/ide-tour-image1.png)
 
 L’écran d’accueil comprend les sections suivantes :
 
@@ -57,7 +55,7 @@ C’est ici que le code source, les ressources, l’interface utilisateur et les
 
 Pour plus d’informations sur l’utilisation de projets et de solutions dans Visual Studio pour Mac, consultez la rubrique [Projets et solutions](~/projects-and-solutions.md).
 
-## <a name="assembly-references"></a>Références d’assembly
+## <a name="assembly-references"></a>Références d'assembly
  
 Les références d’assemblys pour chaque projet sont disponibles dans le dossier Références illustré ci-dessous :
 
@@ -93,7 +91,7 @@ Le débogueur contient des visualiseurs puissants pour les types spéciaux, comm
 
 Pour plus d’informations sur les visualisations des données du débogueur, consultez la rubrique [Visualisations des données](~/data-visualizations.md).
 
-## <a name="version-control"></a>Gestion de versions
+## <a name="version-control"></a>Gestion de version
 
 Visual Studio pour Mac s’intègre aux systèmes de contrôle du code source Git et Subversion. Les projets soumis au contrôle du code source sont signalés par la branche figurant en regard du nom de la solution : 
 

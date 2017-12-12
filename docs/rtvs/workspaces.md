@@ -1,27 +1,23 @@
 ---
 title: "Espaces de travail dans les Outils R pour Visual Studio | Microsoft Docs"
 ms.custom: 
-ms.date: 6/30/2017
+ms.date: 06/30/2017
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- devlang-r
+ms.technology: devlang-r
 ms.devlang: r
 ms.tgt_pltfrm: 
 ms.topic: article
-ms.assetid: d610279c-d6c3-4084-939a-bf042f64d4dd
-caps.latest.revision: 1
+caps.latest.revision: "1"
 author: kraigb
 ms.author: kraigb
 manager: ghogen
+ms.openlocfilehash: 15928f639465f6d8abbaa3735fee40e59ae5045c
+ms.sourcegitcommit: ae9450e81c4167b3fbc9ee5d1992fc693628eafa
 ms.translationtype: HT
-ms.sourcegitcommit: 712cc780388acc5e373f71d51fc8f1f42adb5bed
-ms.openlocfilehash: 4764fb9fc6b0cd2e6160540fdec3f33370d81128
-ms.contentlocale: fr-fr
-ms.lasthandoff: 07/12/2017
-
+ms.contentlocale: fr-FR
+ms.lasthandoff: 12/04/2017
 ---
-
 # <a name="controlling-where-r-code-runs-with-workspaces"></a>Décider où s’exécute le code R avec des espaces de travail
 
 Un espace de travail dans les Outils R pour Visual Studio (RTVS) vous permet de configurer où s’exécute une session R, c’est-à-dire sur des ordinateurs locaux ou distants. L’objectif est de vous permettre d’utiliser les deux avec une expérience utilisateur comparable afin que vous puissiez tirer parti d’ordinateurs basés sur le cloud potentiellement plus puissants.
@@ -37,6 +33,7 @@ Dans cette rubrique :
 - [Enregistrement et réinitialisation d’un espace de travail](#saving-and-resetting-a-workspace)
 - [Espaces de travail locaux](#local-workspaces)
 - [Espaces de travail distants](#remote-workspaces)
+- [Connexion à un espace de travail distant](#remote-workspace-logon)
 - [Basculement entre espaces de travail](#switching-between-workspaces)
 - [Répertoires sur des ordinateurs locaux et distants](#directories-on-local-and-remote-computers)
 - [Copie de fichiers projet dans des espaces de travail distants](#copying-project-files-to-remote-workspaces)
@@ -75,6 +72,17 @@ Comme Visual Studio ne détecte pas automatiquement les espaces de travail dista
 > [!Note]
 > Les espaces de travail distants sont en préversion. Nous travaillons à une meilleure implémentation du problème de synchronisation des fichiers dans une version future et nous sommes à l’écoute de vos suggestions et commentaires.
 
+## <a name="remote-workspace-logon"></a>Connexion à un espace de travail distant
+
+Vous devez utiliser un nom d’utilisateur et un mot de passe pour vous connecter à l’espace de travail à distance.
+
+### <a name="logon-to-windows-workspace"></a>Se connecter à un espace de travail Windows
+
+Si votre ordinateur distant est configuré pour utiliser votre compte de domaine, vous pouvez utiliser la connexion au domaine pour accéder à un espace de travail distant. Si ce n’est pas le cas, vous devez utiliser le format `machine-name\username` pour vous connecter avec un compte d’ordinateur sur l’ordinateur distant.
+
+### <a name="logon-to-linux-workspace"></a>Se connecter à un espace de travail Linux
+
+Pour vous connecter à un compte Linux, utilisez le format `<<unix>>\username`. Par exemple, si vous avez un compte nommé `ruser`, vous devez entrer `<<unix>>\ruser` pour le nom d’utilisateur.
 
 ## <a name="switching-between-workspaces"></a>Basculement entre espaces de travail
 
@@ -139,4 +147,3 @@ Ici, la propriété **Transférer des fichiers à l’exécution** détermine si
 ## <a name="copying-files-from-a-remote-workspace"></a>Copie de fichiers à partir d’un espace de travail distant
 
 Si votre script R génère des fichiers sur le serveur, vous pouvez copier ces fichiers sur le client à l’aide de la fonction `rtvs::fetch_file`. Cette fonction accepte, au minimum, le chemin distant du fichier que vous voulez copier sur votre ordinateur et éventuellement le chemin cible sur votre ordinateur. Si vous ne spécifiez pas de chemin, le fichier est copié dans votre dossier `%userprofile%\Downloads`.
-
