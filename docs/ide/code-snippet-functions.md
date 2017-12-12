@@ -1,40 +1,41 @@
 ---
-title: "Fonctions des extraits de code | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-general"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-helpviewer_keywords: 
-  - "extraits de code (Visual Studio), fonctions"
-  - "extraits de code IntelliSense, fonctions"
-  - "extraits (Visual Studio), fonctions"
+title: Fonctions des extraits de code | Microsoft Docs
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-general
+ms.tgt_pltfrm: 
+ms.topic: article
+helpviewer_keywords:
+- code snippets [Visual Studio], functions
+- snippets [Visual Studio], functions
+- IntelliSense code snippets, functions
 ms.assetid: c0a2bf21-8fa5-4457-9281-f599beb53e7d
-caps.latest.revision: 11
-author: "kempb"
-ms.author: "kempb"
-manager: "ghogen"
-caps.handback.revision: 11
+caps.latest.revision: "11"
+author: gewarren
+ms.author: gewarren
+manager: ghogen
+ms.openlocfilehash: 0628e118ecf0d22591ff1f88208e2cc5396a6bc4
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: HT
+ms.contentlocale: fr-FR
+ms.lasthandoff: 10/31/2017
 ---
-# Fonctions des extraits de code
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
-
-Il est possible d'utiliser trois fonctions avec les extraits de code en [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)].  Les fonctions sont spécifiées dans l'élément [Function](http://msdn.microsoft.com/fr-fr/572c5549-5821-4e15-8ecd-0fa86c1c65df) de l'extrait de code.  Pour plus d'informations sur la création d'extraits de code, consultez [Extraits de code](../ide/code-snippets.md).  
+# <a name="code-snippet-functions"></a>Fonctions des extraits de code
+Trois fonctions peuvent être utilisées avec les extraits de code [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)]. Les fonctions sont spécifiées dans l’élément [Function](http://msdn.microsoft.com/en-us/572c5549-5821-4e15-8ecd-0fa86c1c65df) de l’extrait de code. Pour plus d’informations sur la création d’extraits de code, consultez [Extraits de code](../ide/code-snippets.md).  
   
-## Fonctions  
- Le tableau suivant décrit les fonctions que vous pouvez utiliser avec l'élément `Function` dans les extraits de code.  
+## <a name="functions"></a>Fonctions  
+ Le tableau suivant décrit les fonctions qui peuvent être utilisées avec l’élément `Function` dans les extraits de code.  
   
-|Fonction|Description|Language|  
+|Fonction|Description|Langage|  
 |--------------|-----------------|--------------|  
-|`GenerateSwitchCases(` `EnumerationLiteral` `)`|Génère une instruction switch et un jeu d'instructions case pour les membres de l'énumération spécifiée par le paramètre `EnumerationLiteral`.  Le paramètre `EnumerationLiteral` doit être soit une référence à un littéral d'énumération soit un type d'énumération.|[!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)]|  
-|`ClassName()`|Retourne le nom de la classe qui contient l'extrait inséré.|[!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)]|  
-|`SimpleTypeName(` `TypeName` `)`|Réduit le paramètre  *TypeName* à sa forme la plus simple dans le contexte où l'extrait de code a été appelé.|[!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)]|  
+|`GenerateSwitchCases(` `EnumerationLiteral` `)`|Génère une instruction switch et un ensemble d’instructions case pour les membres de l’énumération spécifiée par le paramètre `EnumerationLiteral`. Le paramètre `EnumerationLiteral` doit être une référence à un littéral d’énumération ou un type d’énumération.|[!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)]|  
+|`ClassName()`|Retourne le nom de la classe qui contient l’extrait de code inséré.|[!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)]|  
+|`SimpleTypeName(` `TypeName` `)`|Réduit le paramètre *TypeName* à sa forme la plus simple dans le contexte dans lequel l’extrait de code a été appelé.|[!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)]|  
   
-## Exemple  
- L'exemple suivant montre comment utiliser la fonction `GenerateSwitchCases`.  Lorsque cet extrait de code est inséré et qu'une énumération est introduite dans le littéral `$switch_on$`, le littéral `$cases$` génère une instruction `case` pour chaque valeur dans l'énumération.  
+## <a name="example"></a>Exemple  
+ L'exemple suivant montre comment utiliser la fonction `GenerateSwitchCases`. Quand cet extrait de code est inséré et qu’une énumération est entrée dans le littéral `$switch_on$`, le littéral `$cases$` génère une instruction `case` pour chaque valeur contenue dans l’énumération.  
   
 ```  
 <CodeSnippets xmlns="http://schemas.microsoft.com/VisualStudio/2005/CodeSnippet">  
@@ -74,8 +75,8 @@ Il est possible d'utiliser trois fonctions avec les extraits de code en [!INCLUD
 </CodeSnippets>  
 ```  
   
-## Exemple  
- L'exemple suivant montre comment utiliser la fonction `ClassName`.  Lorsque cet extrait de code est inséré, le littéral `$classname$` est remplacé par le nom de la classe englobante à cet emplacement dans le fichier de code.  
+## <a name="example"></a>Exemple  
+ L'exemple suivant montre comment utiliser la fonction `ClassName`. Quand cet extrait de code est inséré, le littéral `$classname$` est remplacé par le nom de la classe englobante à cet emplacement dans le fichier de code.  
   
 ```  
 <CodeSnippets xmlns="http://schemas.microsoft.com/VisualStudio/2005/CodeSnippet">  
@@ -120,8 +121,8 @@ Il est possible d'utiliser trois fonctions avec les extraits de code en [!INCLUD
 </CodeSnippets>  
 ```  
   
-## Exemple  
- Cet exemple indique comment utiliser la fonction `SimpleTypeName`.  Lorsque cet extrait de code est inséré dans un fichier de code, le littéral `$SystemConsole$` sera remplacé par la forme la plus simple du type <xref:System.Console> dans le contexte dans lequel l'extrait de code a été appelé.  
+## <a name="example"></a>Exemple  
+ Cet exemple montre comment utiliser la fonction `SimpleTypeName`. Quand cet extrait de code est inséré dans un fichier de code, le littéral `$SystemConsole$` est remplacé par la forme la plus simple du type <xref:System.Console> dans le contexte dans lequel l’extrait de code a été appelé.  
   
 ```  
 <CodeSnippets xmlns="http://schemas.microsoft.com/VisualStudio/2005/CodeSnippet">  
@@ -152,6 +153,6 @@ Il est possible d'utiliser trois fonctions avec les extraits de code en [!INCLUD
 </CodeSnippets>  
 ```  
   
-## Voir aussi  
- [Function Element \(Intellisense Code Snippets\)](http://msdn.microsoft.com/fr-fr/572c5549-5821-4e15-8ecd-0fa86c1c65df)   
+## <a name="see-also"></a>Voir aussi  
+ [Function, élément (extraits de code IntelliSense)](http://msdn.microsoft.com/en-us/572c5549-5821-4e15-8ecd-0fa86c1c65df)   
  [Référence de schéma des extraits de code](../ide/code-snippets-schema-reference.md)

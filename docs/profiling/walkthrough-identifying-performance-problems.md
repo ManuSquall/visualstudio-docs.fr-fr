@@ -4,8 +4,7 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-debug
+ms.technology: vs-ide-debug
 ms.tgt_pltfrm: 
 ms.topic: article
 helpviewer_keywords:
@@ -14,30 +13,15 @@ helpviewer_keywords:
 - performance, analyzing
 - profiling applications, walkthroughs
 ms.assetid: 36f6f123-0c14-4763-99c3-bd60ecb95b87
-caps.latest.revision: 53
+caps.latest.revision: "53"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-translation.priority.ht:
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- ru-ru
-- zh-cn
-- zh-tw
-translation.priority.mt:
-- cs-cz
-- pl-pl
-- pt-br
-- tr-tr
-translationtype: Human Translation
-ms.sourcegitcommit: ca7c86466fa23fb21a932f26dc24e37c71cf29b4
-ms.openlocfilehash: a20a64818982484a56ba7dc82af890c729da40e4
-ms.lasthandoff: 04/05/2017
-
+ms.openlocfilehash: d52f6bfe745cf7e8684094cf9244b6eedcba13a9
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: HT
+ms.contentlocale: fr-FR
+ms.lasthandoff: 10/31/2017
 ---
 # <a name="walkthrough-identifying-performance-problems"></a>Procédure pas à pas : Identification des problèmes de performances
 Cette procédure pas à pas montre comment profiler une application pour identifier les problèmes de performances.  
@@ -77,7 +61,7 @@ Cette procédure pas à pas montre comment profiler une application pour identif
   
      Vous devez utiliser une version Release pour détecter les problèmes de performances dans votre application. Une version Release est recommandée pour le profilage, car une version Debug comporte des informations supplémentaires compilées qui peuvent nuire aux performances et n’illustrent pas avec précision les problèmes de performances.  
   
-4.  Dans le menu **Analyser**, sélectionnez **Profileur de performances**, **Assistant Performance**, puis**Démarrer**.  
+4.  Dans le menu **Analyser**, sélectionnez **Profileur de performances**, **Assistant Performance** , puis**Démarrer**.  
   
      L’Assistant Performance apparaît.  
   
@@ -105,9 +89,9 @@ Cette procédure pas à pas montre comment profiler une application pour identif
   
 2.  La vue **Informations relatives à la fonction** contient deux fenêtres. La fenêtre de la distribution des coûts fournit une vue graphique du travail effectué par la fonction, du travail effectué par les fonctions qu’elle a appelées et de la contribution des fonctions ayant appelé la fonction au nombre d’instances qui ont été échantillonnées. Vous pouvez modifier la fonction qui détient le focus dans la vue en cliquant sur un nom de fonction. Par exemple, vous pouvez cliquer sur PeopleNS.People.GetPeople pour faire de GetPeople la fonction sélectionnée.  
   
-     La fenêtre **Affichage du code de fonction** montre le code source de la fonction s’il est disponible et met en surbrillance les lignes les plus coûteuses dans la fonction sélectionnée. Quand la fonction GetNames est sélectionnée, vous pouvez voir qu’elle lit une chaîne dans les ressources d’application, puis utilise un <xref:System.IO.StringReader> pour ajouter chaque ligne de la chaîne à un <xref:System.Collections.ArrayList>. Il n’existe aucun moyen évident d’optimiser cette fonction.  
+     La fenêtre **Affichage du code de fonction** montre le code source de la fonction s’il est disponible et met en surbrillance les lignes les plus coûteuses dans la fonction sélectionnée. Quand GetNames est sélectionnée, vous pouvez voir qu’elle lit une chaîne dans les ressources d’application, puis utilise un <xref:System.IO.StringReader> pour ajouter chaque ligne de la chaîne à un <xref:System.Collections.ArrayList>. Il n’existe aucun moyen évident d’optimiser cette fonction.  
   
-3.  Étant donné que PeopleNS.People.GetPeople est le seul appelant de GetNames, cliquez sur GetPeople dans la fenêtre de la distribution des coûts pour examiner son code. Cette méthode retourne un <xref:System.Collections.ArrayList> d’objets PersonInformationNS.PersonInformation à partir des noms de personnes et de sociétés produits par GetNames. Toutefois, GetNames est appelé deux fois chaque fois qu’un objet PersonInformation est créé. Comme vous pouvez le constater, vous pouvez facilement optimiser la méthode en créant les listes une seule fois au début de la méthode et en procédant à une indexation dans ces listes pendant la boucle de création de PersonInformation.  
+3.  Étant donné que PeopleNS.People.GetPeople est le seul appelant de GetNames, cliquez sur GetPeople dans la fenêtre de la distribution des coûts pour examiner son code. Cette méthode retourne une <xref:System.Collections.ArrayList> d’objets PersonInformationNS.PersonInformation à partir des noms de personnes et d’entreprises produits par GetNames. Toutefois, GetNames est appelé deux fois chaque fois qu’un objet PersonInformation est créé. Comme vous pouvez le constater, vous pouvez facilement optimiser la méthode en créant les listes une seule fois au début de la méthode et en procédant à une indexation dans ces listes pendant la boucle de création de PersonInformation.  
   
 4.  Une autre version de GetPeople est fournie avec l’exemple de code d’application et vous pouvez appeler la fonction optimisée en ajoutant un symbole de compilation conditionnelle aux propriétés de génération. Dans la fenêtre Explorateur de solutions, cliquez avec le bouton droit sur le projet People, puis cliquez sur **Propriétés**. Cliquez sur **Générer** dans le menu de la page des propriétés, puis tapez **OPTIMIZED_GETPEOPLE** dans la zone de texte Symboles de compilation conditionnelle. La version optimisée de GetPeople remplace la méthode d’origine dans la build suivante.  
   
@@ -152,7 +136,7 @@ Cette procédure pas à pas montre comment profiler une application pour identif
   
 1.  Le graphique de chronologie de la vue **Résumé** du rapport affiche l’utilisation du processeur du programme pendant la durée du profilage. L’opération d’exportation de données doit être le plateau ou sommet élevé sur le côté droit du graphique. Nous pouvons filtrer la session de performance pour afficher et analyser uniquement les données qui ont été collectées pendant l’opération d’exportation. Cliquez sur le graphique à gauche du point auquel commence l’opération d’exportation de données. Cliquez à présent sur le côté droit de l’opération. Ensuite, cliquez sur **Filtrer par sélection** dans la liste des liens à droite de la chronologie.  
   
-     L’arborescence **Chemin réactif** montre que la méthode <xref:System.String.Concat%2A> qui est appelée par la méthode PeopleTrax.Form1.ExportData consomme un pourcentage élevé du temps. Étant donné que **System.String.Concat** est également en haut de la liste **Fonctions exigeant le plus de travail individuel**, réduire le temps passé dans la fonction est un point d’optimisation possible.  
+     L’arborescence **Chemin réactif** montre que la méthode <xref:System.String.Concat%2A> qui est appelée par la méthode PeopleTrax.Form1.ExportData consomme un pourcentage important du temps. Étant donné que **System.String.Concat** est également en haut de la liste **Fonctions exigeant le plus de travail individuel**, réduire le temps passé dans la fonction est un point d’optimisation possible.  
   
 2.  Double-cliquez sur **System.String.Concat** dans une des tables de résumé pour afficher plus d’informations dans la vue Informations relatives à la fonction.  
   

@@ -1,11 +1,10 @@
 ---
-title: Getting Started with Visual C# and Visual Basic using Visual Studio | Microsoft Docs
+title: "Bien démarrer avec Visual C# et Visual Basic à l’aide de Visual Studio | Microsoft Docs"
 ms.custom: 
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-general
+ms.technology: vs-acquisition
 ms.tgt_pltfrm: 
 ms.topic: get-started-article
 helpviewer_keywords:
@@ -16,46 +15,37 @@ helpviewer_keywords:
 - learn C#
 - learn Visual Basic
 ms.assetid: d57bb19f-58d6-48cc-96cb-ab1c540a25d0
-caps.latest.revision: 13
-author: kempb
-ms.author: kempb
+caps.latest.revision: "13"
+author: TerryGLee
+ms.author: tglee
 manager: ghogen
-translation.priority.ht:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
+ms.openlocfilehash: edaf43791dc93693474c8cf68067dbcbb3196f79
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
 ms.translationtype: HT
-ms.sourcegitcommit: 3ce2d22a82f81db35575275a99d193066068e127
-ms.openlocfilehash: 562e94fb9881bc1844b78466d52611fc51a90a27
-ms.contentlocale: fr-fr
-ms.lasthandoff: 09/07/2017
-
+ms.contentlocale: fr-FR
+ms.lasthandoff: 10/31/2017
 ---
-# <a name="getting-started-with-visual-c-and-visual-basic-using-visual-studio"></a>Getting Started with Visual C# and Visual Basic using Visual Studio
-Whether you are new to Visual C# or Microsoft Visual Basic, this is the place to start. Getting Started Help is a series of sequential lessons that introduces you to Visual C# and Visual Basic. Have fun, and write some great software.  
+# <a name="getting-started-with-visual-c-and-visual-basic-using-visual-studio"></a>Bien démarrer avec Visual C# et Visual Basic à l’aide de Visual Studio
+Si vous débutez en Visual C# ou en Microsoft Visual Basic, les didacticiels sont un bon point de départ. L'Aide de Mise en route comprend une suite de leçons qui vous initient à Visual C# et à Visual Basic. Amusez-vous et écrivez une grande application logicielle.  
   
- To learn about Visual C++, see [Visual C++ resources](http://msdn.microsoft.com/vstudio/hh386302.aspx).  
+ Pour en savoir plus sur Visual C++, consultez les [ressources Visual C++](http://msdn.microsoft.com/vstudio/hh386302.aspx).  
   
-## <a name="in-this-section"></a>In This Section  
- [Walkthrough: Create a Simple Application](../ide/walkthrough-create-a-simple-application-with-visual-csharp-or-visual-basic.md)  
- Identify the basic windows in the Visual Studio IDE, optimize your development experience by configuring a setting, and then build a simple program.  
+## <a name="in-this-section"></a>Dans cette section  
+ [Procédure pas à pas : création d’une application simple](../ide/walkthrough-create-a-simple-application-with-visual-csharp-or-visual-basic.md)  
+ Identifiez les fenêtres de base dans l'IDE de Visual Studio, optimisez l'expérience de développement en configurant un paramètre, puis créez un programme simple.  
   
- [Tutorial 1: Create a Picture Viewer](../ide/tutorial-1-create-a-picture-viewer.md)  
- Build a program that loads a picture from a file and displays it in a window. Learn how to drag controls like buttons and picture boxes on your form, set their properties, and use containers to smoothly resize the form. Get started writing code.  
+ [Didacticiel 1 : créer une visionneuse d’images](../ide/tutorial-1-create-a-picture-viewer.md)  
+ Générez un programme qui charge une image à partir d'un fichier et l'affiche dans une fenêtre. Apprenez à faire glisser des contrôles (par exemple, des boutons et des zones d'image) sur votre formulaire, définissez leurs propriétés et utilisez des conteneurs pour redimensionner facilement le formulaire. Écrivez vos premières lignes de code.  
   
- [Tutorial 2: Create a Timed Math Quiz](../ide/tutorial-2-create-a-timed-math-quiz.md)  
- Build a timed math quiz game, where the player must answer four random arithmetic problems within a specified time. Learn how to generate random numbers using the `Random` class, trigger events using a `Timer` control, control program flow using `if else` statements, and perform basic arithmetic operations.  
+ [Didacticiel 2 : créer un questionnaire mathématique chronométré](../ide/tutorial-2-create-a-timed-math-quiz.md)  
+ Générez un questionnaire de mathématiques chronométré, où le joueur doit résoudre quatre problèmes arithmétiques aléatoires dans le temps imparti. Découvrez comment générer des nombres aléatoires grâce à la classe `Random`, déclencher des événements à l’aide d’un contrôle `Timer`, contrôler un flux de programme à l’aide d’instructions `if else` et effectuer des opérations arithmétiques de base.  
   
- [Tutorial 3: Create a Matching Game](../ide/tutorial-3-create-a-matching-game.md)  
- Build a matching game, where the player must match pairs of hidden icons. Learn how to hold objects using a `List` object, use a `foreach` loop, keep track of a form's state using reference variables, build an event handler that you can use with multiple objects, and make a timer fire exactly once when started.
+ [Didacticiel 3 : créer un jeu de combinaisons](../ide/tutorial-3-create-a-matching-game.md)  
+ Générez un jeu de combinaisons dans lequel le joueur doit associer des paires d'icônes masquées. Apprenez à contenir des objets à l'aide d'un objet `List`, à utiliser une boucle `foreach`, à suivre l'état d'un formulaire à l'aide de variables de référence, à générer un gestionnaire d'événements que vous pouvez utiliser avec plusieurs objets et à ne déclencher une minuterie qu'une seule fois au démarrage.  
 
+|         |         |
+|---------|---------|
+|  ![icône représentant une caméra pour les vidéos](../install/media/video-icon.png "Regarder une vidéo")  |    [Regardez une vidéo](https://mva.microsoft.com/en-us/training-courses/getting-started-with-visual-studio-2017-17798?l=nl3AuKD6D_9011787171) sur la création d’une application Windows universelle simple dans Visual Studio.  
+
+## <a name="see-also"></a>Voir aussi
+[Bien démarrer avec le développement dans Visual Studio](get-started-developing-with-visual-studio.md)

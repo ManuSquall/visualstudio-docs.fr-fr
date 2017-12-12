@@ -1,11 +1,10 @@
 ---
-title: 'How to: Specify Build Events (C#) | Microsoft Docs'
+title: "Guide pratique pour spécifier des événements de build (C#) | Microsoft Docs"
 ms.custom: 
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-general
+ms.technology: vs-ide-general
 ms.tgt_pltfrm: 
 ms.topic: article
 helpviewer_keywords:
@@ -15,69 +14,54 @@ helpviewer_keywords:
 - build events [Visual Studio]
 - builds [Visual Studio], events
 ms.assetid: b4ce1ad9-5215-4b6f-b6a2-798b249aa335
-caps.latest.revision: 19
-author: kempb
-ms.author: kempb
+caps.latest.revision: "19"
+author: gewarren
+ms.author: gewarren
 manager: ghogen
-translation.priority.ht:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
+ms.openlocfilehash: 6f4f13cabe47bc55a78733ea2bee5504d404c5c4
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
 ms.translationtype: HT
-ms.sourcegitcommit: cca2a707627c36221a654cf8a06730383492f371
-ms.openlocfilehash: 7c99b10f4bb238e8aca1b96f6990307ee5eec640
-ms.contentlocale: fr-fr
-ms.lasthandoff: 09/13/2017
-
+ms.contentlocale: fr-FR
+ms.lasthandoff: 10/31/2017
 ---
-# <a name="how-to-specify-build-events-c"></a>How to: Specify Build Events (C#)
-Use build events to specify commands that run before the build starts or after the build finishes. Build events are executed only if the build successfully reaches those points in the build process.  
+# <a name="how-to-specify-build-events-c"></a>Guide pratique pour spécifier des événements de build (C#)
+Utilisez des événements de build pour spécifier des commandes à exécuter avant que la génération commence ou après qu’elle se termine. Les événements de build sont exécutés uniquement si la build atteint ces étapes du processus de génération.  
   
- When a project is built, pre-build events are added to a file that is named PreBuildEvent.bat and post-build events are added to a file that is named PostBuildEvent.bat. If you want to ensure error checking, add your own error-checking commands to the build steps.  
+ Lorsqu’un projet est généré, les événements pré-build sont ajoutés à un fichier nommé PreBuildEvent.bat et les événements post-build sont ajoutés à un fichier nommé PostBuildEvent.bat. Pour garantir la vérification des erreurs, ajoutez vos propres commandes de vérification d’erreurs aux étapes de génération.  
   
  [!INCLUDE[note_settings_general](../data-tools/includes/note_settings_general_md.md)]  
   
-## <a name="how-to-specify-pre-build-and-post-build-events"></a>How to Specify Pre-Build and Post-Build Events  
+## <a name="how-to-specify-pre-build-and-post-build-events"></a>Comment spécifier des événements pré-build et des événements post-build  
   
-#### <a name="to-specify-a-build-event"></a>To specify a build event  
+#### <a name="to-specify-a-build-event"></a>Pour spécifier un événement de build  
   
-1.  In **Solution Explorer**, select the project for which you want to specify the build event.  
+1.  Dans l’**Explorateur de solutions**, sélectionnez le projet pour lequel vous voulez spécifier l’événement de build.  
   
-2.  On the **Project** menu, click **Properties**.  
+2.  Dans le menu **Projet**, cliquez sur **Propriétés**.  
   
-3.  Select the **Build Events** tab.  
+3.  Sélectionnez l’onglet **Événements de build**.  
   
-4.  In the **Pre-build event command line** box, specify the syntax of the build event.  
-  
-    > [!NOTE]
-    >  Pre-build events do not run if the project is up to date and no build is triggered.  
-  
-5.  In the **Post-build event command line** box, specify the syntax of the build event.  
+4.  Dans la zone **Ligne de commande de l’événement pré-build**, spécifiez la syntaxe de l’événement de build.  
   
     > [!NOTE]
-    >  Add a `call` statement before all post-build commands that run .bat files. For example, `call C:\MyFile.bat` or `call C:\MyFile.bat call C:\MyFile2.bat`.  
+    >  Les événements pré-build ne fonctionnent pas si le projet est à jour et qu’aucune build n’est déclenchée.  
   
-6.  In the **Run the post-build event** box, specify under what conditions to run the post-build event.  
+5.  Dans la zone **Ligne de commande de l’événement post-build**, spécifiez la syntaxe de l’événement de build.  
   
     > [!NOTE]
-    >  To add lengthy syntax, or to select any build macros from the [Pre-build Event/Post-build Event Command Line Dialog Box](../ide/reference/pre-build-event-post-build-event-command-line-dialog-box.md), click the Ellipsis button (**...**) to display an edit box.  
+    >  Ajoutez une instruction `call` avant toutes les commandes post-build qui exécutent des fichiers .bat. Par exemple, `call C:\MyFile.bat` ou `call C:\MyFile.bat call C:\MyFile2.bat`.  
   
-     The build event syntax can include any command that is valid at a command prompt or in a .bat file. The name of a batch file should be preceded by `call` to ensure that all subsequent commands are executed.  
+6.  Dans la zone **Exécuter l’événement post-build**, spécifiez sous quelles conditions exécuter l’événement post-build.  
   
-     **Note** If your pre-build or post-build event does not complete successfully, you can terminate the build by having your event action exit with a code other than zero (0), which indicates a successful action.  
+    > [!NOTE]
+    >  Pour ajouter une syntaxe longue ou sélectionner des macros de génération à partir de la [boîte de dialogue Ligne de commande de l’événement pré-build/post-build](../ide/reference/pre-build-event-post-build-event-command-line-dialog-box.md), cliquez sur le bouton de sélection (**...**) pour afficher une zone d’édition.  
   
-## <a name="example-how-to-change-manifest-information-by-using-a-post-build-event"></a>Example: How to Change Manifest Information by Using a Post-Build Event  
- The following procedure shows how to set the minimum operating system version in the application manifest by using an .exe command that is called from a post-build event (the .exe.manifest file in the project directory). The minimum operating system version is a four-part number such as 4.10.0.0. To do this, the command will change the `<dependentOS>` section of the manifest:  
+     La syntaxe de l’événement de build peut inclure toute commande qui est valide à une invite de commandes ou dans un fichier .bat. Le nom d’un fichier de commandes doit être précédé par `call` pour vous assurer que toutes les commandes suivantes sont exécutées.  
+  
+     **Remarque** Si votre événement pré-build ou post-build ne s’exécute pas correctement, vous pouvez mettre fin à la génération en faisant en sorte que l’action d’événement s’achève avec un code autre que zéro (0), qui indique une action réussie.  
+  
+## <a name="example-how-to-change-manifest-information-by-using-a-post-build-event"></a>Exemple : modification des informations de manifeste en utilisant un événement post-build  
+ La procédure suivante montre comment définir la version minimale du système d’exploitation dans le manifeste d’application à l’aide d’une commande .exe appelée à partir d’un événement post-build (fichier .exe.manifest dans le répertoire du projet). La version minimale du système d’exploitation est un nombre en quatre parties, tel que 4.10.0.0. Pour ce faire, la commande modifie la section `<dependentOS>` du manifeste :  
   
 ```  
 <dependentOS>  
@@ -87,19 +71,19 @@ Use build events to specify commands that run before the build starts or after t
 </dependentOS>  
 ```  
   
-#### <a name="to-create-an-exe-command-to-change-the-application-manifest"></a>To create an .exe command to change the application manifest  
+#### <a name="to-create-an-exe-command-to-change-the-application-manifest"></a>Pour créer une commande .exe afin de modifier le manifeste d’application  
   
-1.  Create a console application for the command. From the **File** menu, point to **New**, and then click **Project**.  
+1.  Créez une application console pour la commande. Dans le menu **Fichier**, pointez sur **Nouveau**, puis cliquez sur **Projet**.  
   
-2.  In the **New Project** dialog box, expand **Visual C#**, click **Windows**, and then click the **Console Application** template. Name the project `ChangeOSVersionCS`.  
+2.  Dans la boîte de dialogue **Nouveau projet**, développez **Visual C#**, cliquez sur **Windows**, puis cliquez sur le modèle **Application console**. Attribuez un nom au projet `ChangeOSVersionCS`.  
   
-3.  In Program.cs, add the following line to the other `using` statements at the top of the file:  
+3.  Dans Program.cs, ajoutez la ligne suivante aux autres instructions `using` au début du fichier :  
   
     ```  
     using System.Xml;  
     ```  
   
-4.  In the `ChangeOSVersionCS` namespace, replace the `Program` class implementation with the following code:  
+4.  Dans l’espace de noms `ChangeOSVersionCS`, remplacez l’implémentation de la classe `Program` par le code suivant :  
   
     ```  
     class Program  
@@ -151,56 +135,56 @@ Use build events to specify commands that run before the build starts or after t
     }  
     ```  
   
-     The command takes two arguments: the path of the application manifest (that is, the folder in which the build process creates the manifest, typically Projectname.publish), and the new operating system version.  
+     La commande prend deux arguments : le chemin du manifeste d’application (autrement dit, le dossier dans lequel le processus de génération crée le manifeste, en général NomProjet.publish) et la version du nouveau système d’exploitation.  
   
-5.  Build the project. On the **Build** menu, click **Build Solution**.  
+5.  Générez le projet. Dans le menu **Générer** , cliquez sur **Générer la solution**.  
   
-6.  Copy the .exe file to a directory such as `C:\TEMP\ChangeOSVersionVB.exe`.  
+6.  Copiez le fichier .exe dans un répertoire tel que `C:\TEMP\ChangeOSVersionVB.exe`.  
   
- Next, invoke this command in a post-build event to modify the application manifest.  
+ Ensuite, appelez cette commande dans un événement post-build pour modifier le manifeste d’application.  
   
-#### <a name="to-invoke-a-post-build-event-to-modify-the-application-manifest"></a>To invoke a post-build event to modify the application manifest  
+#### <a name="to-invoke-a-post-build-event-to-modify-the-application-manifest"></a>Pour appeler un événement post-build afin de modifier le manifeste d’application  
   
-1.  Create a Windows application for the project to be published. From the **File** menu, point to **New**, and then click **Project**.  
+1.  Créez une application Windows pour le projet à publier. Dans le menu **Fichier**, pointez sur **Nouveau**, puis cliquez sur **Projet**.  
   
-2.  In the **New Project** dialog box, expand **Visual C#**, click **Windows Classic Desktop**, and then click the **Windows Forms App** template. Name the project `CSWinApp`.  
+2.  Dans la boîte de dialogue **Nouveau projet**, développez **Visual C#**, cliquez sur **Bureau classique Windows**, puis cliquez sur le modèle **Application Windows Forms**. Attribuez un nom au projet `CSWinApp`.  
   
-3.  With the project selected in **Solution Explorer**, on the **Project** menu, click **Properties**.  
+3.  Après avoir sélectionné le projet dans l’**Explorateur de solutions**, dans le menu **Projet**, cliquez sur **Propriétés**.  
   
-4.  In the Project Designer, locate the **Publish** page and set **Publishing location** to `C:\TEMP\`.  
+4.  Dans le Concepteur de projet, localisez la page **Publier** et affectez à **Emplacement de publication** la valeur `C:\TEMP\`.  
   
-5.  Publish the project by clicking **Publish Now**.  
+5.  Publiez le projet en cliquant sur **Publier maintenant**.  
   
-     The manifest file will be built and put in `C:\TEMP\CSWinApp_1_0_0_0\CSWinApp.exe.manifest`. To view the manifest, right-click the file, click **Open with**, select **Select the program from a list**, and then click **Notepad**.  
+     Le fichier manifeste est généré et placé dans `C:\TEMP\CSWinApp_1_0_0_0\CSWinApp.exe.manifest`. Pour consulter le manifeste, cliquez avec le bouton droit sur le fichier, cliquez sur **Ouvrir avec**, sélectionnez **Sélectionner le programme dans une liste**, puis cliquez sur **Bloc-notes**.  
   
-     Search in the file for the `<osVersionInfo>` element. For example, the version might be:  
+     Recherchez l’élément `<osVersionInfo>` dans le fichier. Par exemple, la version peut être :  
   
     ```  
     <os majorVersion="4" minorVersion="10" buildNumber="0" servicePackMajor="0" />  
     ```  
   
-6.  In the Project Designer, click the **Build Events** tab and click the **Edit Post-build** button.  
+6.  Dans le Concepteur de projet, cliquez sur l’onglet **Événements de build** puis sur le bouton **Modifier post-build**.  
   
-7.  In the **Post-build Event Command Line** box, type the following command:  
+7.  Dans la zone **Ligne de commande de l’événement post-build**, tapez la commande suivante :  
   
      `C:\TEMP\ChangeOSVersionCS.exe "$(TargetPath).manifest" 5.1.2600.0`  
   
-     When you build the project, this command will change the minimum operating system version in the application manifest to 5.1.2600.0.  
+     Quand vous générez le projet, cette commande change la version minimale du système d’exploitation dans le manifeste d’application en 5.1.2600.0.  
   
-     Because the `$(TargetPath)` macro expresses the full path for the executable being created,  the `$(TargetPath)`.manifest will specify the application manifest created in the bin directory. Publishing will copy this manifest to the publishing location that you set earlier.  
+     Comme la macro `$(TargetPath)` exprime le chemin complet du fichier exécutable en cours de création, `$(TargetPath)`.manifest spécifie le manifeste de l’application créé dans le répertoire bin. La publication copie ce manifeste vers l’emplacement de publication que vous avez défini.  
   
-8.  Publish the project again. Go to the **Publish** page and click **Publish Now**.  
+8.  Republiez le projet. Accédez à la page **Publier** et cliquez sur **Publier maintenant**.  
   
-     View the manifest again. To view the manifest, open the publish directory, right-click the file, click **Open with**, select **Select the program from a list**, and then click **Notepad**.  
+     Réaffichez le manifeste. Pour consulter le manifeste, ouvrez le répertoire de publication, cliquez avec le bouton droit sur le fichier, cliquez sur **Ouvrir avec**, sélectionnez **Sélectionner le programme dans une liste**, puis cliquez sur **Bloc-notes**.  
   
-     The version should now read:  
+     La version doit maintenant se présenter comme suit :  
   
     ```  
     <os majorVersion="5" minorVersion="1" buildNumber="2600" servicePackMajor="0" />  
     ```  
   
-## <a name="see-also"></a>See Also  
- [Build Events Page, Project Designer (C#)](../ide/reference/build-events-page-project-designer-csharp.md)   
- [Pre-build Event/Post-build Event Command Line Dialog Box](../ide/reference/pre-build-event-post-build-event-command-line-dialog-box.md)   
- [How to: Specify Build Events (Visual Basic)](../ide/how-to-specify-build-events-visual-basic.md)   
- [Compiling and Building](../ide/compiling-and-building-in-visual-studio.md)
+## <a name="see-also"></a>Voir aussi  
+ [Événements de build, page du Concepteur de projet (C#)](../ide/reference/build-events-page-project-designer-csharp.md)   
+ [Ligne de commande de l’événement pré-build/post-build, boîte de dialogue](../ide/reference/pre-build-event-post-build-event-command-line-dialog-box.md)   
+ [Guide pratique pour spécifier des événements de build (Visual Basic)](../ide/how-to-specify-build-events-visual-basic.md)   
+ [Compilation et génération](../ide/compiling-and-building-in-visual-studio.md)

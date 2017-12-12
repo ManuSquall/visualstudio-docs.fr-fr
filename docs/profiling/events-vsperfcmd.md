@@ -1,50 +1,51 @@
 ---
-title: "Events (VSPerfCmd) | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-debug"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+title: Events (VSPerfCmd) | Microsoft Docs
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-debug
+ms.tgt_pltfrm: 
+ms.topic: article
 ms.assetid: eb139327-4783-4f2a-874c-efad377a7be4
-caps.latest.revision: 7
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 7
+caps.latest.revision: "7"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: 84f1d515722203f15b1b667df6fb7fdf72fe4fb4
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: HT
+ms.contentlocale: fr-FR
+ms.lasthandoff: 10/31/2017
 ---
-# Events (VSPerfCmd)
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
-
-L'option VSPerfCmd.exe **Events** contrôle la journalisation du Suivi d'événements pour Windows \(ETW\).  Les données ETW sont enregistrées dans un fichier .etl distinct du fichier de données du profileur.  Les données peuvent être affichées dans un rapport à l'aide de la commande [VSPerfReport](../profiling/vsperfreport.md)\/summary:etw.  
+# <a name="events-vsperfcmd"></a>Events (VSPerfCmd)
+L’option **Events** de VSPerfCmd.exe contrôle la journalisation du suivi d’événements pour Windows (ETW). Les données ETW sont enregistrées dans un fichier .etl, qui est distinct du fichier de données du profileur. Les données peuvent être affichées dans un rapport avec la commande [VSPerfReport](../profiling/vsperfreport.md) /summary:etw.  
   
- Vous pouvez appeler l'option **Events** à tout moment avant d'appeler la commande VSPerfCmd **Shutdown** pour arrêter le profilage.  
+ L’option **Events** peut être appelée à tout moment avant que la commande VSPerfCmd **Shutdown** soit appelée pour arrêter le profilage.  
   
-## Syntaxe  
+## <a name="syntax"></a>Syntaxe  
   
 ```  
 VSPerfCmd.exe /events {On|Off} {Guid|ProviderName} [,Flags[,Level]  
 ```  
   
-#### Paramètres  
+#### <a name="parameters"></a>Paramètres  
  **On**&#124;**Off**  
- Démarre ou arrête la collecte des données d'événement.  
+ Démarre ou arrête la collecte des données d’événement.  
   
  `Guid`  
- GUID du contrôle du fournisseur.  
+ GUID du contrôle fournisseur.  
   
  `ProviderName`  
- Nom du fournisseur enregistré avec Windows Management Instrumentation \(WMI\).  
+ Nom du fournisseur qui est inscrit auprès de Windows Management Instrumentation (WMI).  
   
  `Flags`  
- Valeur d'indicateurs hexadécimale portant le préfixe « 0x » définie par le fournisseur d'événements.  
+ Valeur des indicateurs préfixée de « 0x » qui est définie par le fournisseur d’événements.  
   
  `Level`  
- Spécifie la quantité de données collectées.  `Level` est défini par le fournisseur d'événements.  
+ Spécifie la quantité de données collectées. `Level` est défini par le fournisseur d’événements.  
   
- L'option **Events** interprète les mots clés de noyau suivants comme des noms de fournisseurs :  
+ L’option **Events** interprète les mots clés suivants du noyau comme des noms de fournisseurs :  
   
  **Process**  
  Événements de processus  
@@ -53,41 +54,41 @@ VSPerfCmd.exe /events {On|Off} {Guid|ProviderName} [,Flags[,Level]
  Événements de thread  
   
  **Image**  
- Événements de chargement et de déchargement d'images  
+ Événements de chargement et de déchargement d’image  
   
  **Disk**  
- Événements d'E\/S de disque  
+ Événements d’E/S de disque  
   
  **File**  
- Événements d'E\/S de fichier  
+ Événements d’E/S de fichier  
   
  **Hardfault**  
- Erreurs de page matérielles  
+ Défauts de pages matériels  
   
  **Pagefault**  
- Erreurs de page logicielles  
+ Défauts de pages logiciels  
   
  **Network**  
- Événements de réseau  
+ Événements réseau  
   
  **Registry**  
- Événements d'accès au Registre  
+ Événements d’accès au Registre  
   
- Notez que le fournisseur du noyau peut seulement être activé.  Vous ne pouvez ni le désactiver, ni modifier ses indicateurs tant que le gestionnaire n'a pas été arrêté.  
+ Notez que le fournisseur de noyau peut être seulement activé. Il ne peut pas être désactivé et ses indicateurs ne peuvent pas être modifiés jusqu’à l’arrêt du moniteur.  
   
-## Notes  
+## <a name="remarks"></a>Remarques  
   
 > [!NOTE]
->  Lorsque les événements ETW du CLR sont activés, des données de démarrage supplémentaires sont également rassemblées dans le rapport Trace View.  Pour empêcher que des événements de démarrage apparaissent dans le rapport, utilisez la commande suivante :  
+>  Quand des événements ETW du CLR sont activés, des données de démarrage supplémentaires sont également collectées dans le rapport Vue Trace. Pour exclure les événements de démarrage du rapport, utilisez la commande suivante :  
   
 ```  
 C:\<path>VSPerfCmd -events on, \".NET Common Language Runtime\", 0x7fffffff, 5  
 ```  
   
 > [!IMPORTANT]
->  Si vous n'excluez pas les événements de démarrage, étant donné que ces événements ne sont pas répertoriés dans le fichier au format MOF \(Managed Object Format\), ils apparaissent sous forme de GUID dans le rapport.  Pour plus d'informations, consultez cette page sur le site Web Microsoft : [Exemple de fichier MOF](http://go.microsoft.com/fwlink/?linkid=37118).  
+>  Si vous n’excluez pas les événements de démarrage, comme ces événements ne sont pas listés dans le fichier MOF (Managed Object Format), ils apparaissent sous forme de GUID dans le rapport. Pour plus d’informations, consultez cette page sur le site web de Microsoft : [Exemple de fichier MOF (Managed Object Format)](http://go.microsoft.com/fwlink/?linkid=37118).  
   
-## Voir aussi  
+## <a name="see-also"></a>Voir aussi  
  [VSPerfCmd](../profiling/vsperfcmd.md)   
  [Profilage d’applications autonomes](../profiling/command-line-profiling-of-stand-alone-applications.md)   
  [Profilage d’applications web ASP.NET](../profiling/command-line-profiling-of-aspnet-web-applications.md)   

@@ -1,36 +1,33 @@
 ---
 title: "Compilation et génération dans Visual Studio | Microsoft Docs"
 ms.custom: 
-ms.date: 7/14/2017
+ms.date: 07/14/2017
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-general
+ms.technology: vs-ide-general
 ms.tgt_pltfrm: 
 ms.topic: article
 helpviewer_keywords:
 - builds [Visual Studio], about building in Visual Studio
 - custom build steps, types of builds
 ms.assetid: c7958821-285f-4e28-9e7a-b5d8b40336a1
-caps.latest.revision: 28
+caps.latest.revision: "28"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
+ms.openlocfilehash: 5918c0070be747f7ebdca9d789d5706820b93e20
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
 ms.translationtype: HT
-ms.sourcegitcommit: e2b7ff9126e1cc38ac2e58d6be339b656a024e7f
-ms.openlocfilehash: 1a2db8a10664e1d4b38b1d6867c5a3bad1532b39
-ms.contentlocale: fr-fr
-ms.lasthandoff: 08/10/2017
-
+ms.contentlocale: fr-FR
+ms.lasthandoff: 10/31/2017
 ---
-
 # <a name="compiling-and-building-in-visual-studio"></a>Compilation et génération dans Visual Studio
 
-L’exécution d’une génération crée des assemblys et des applications exécutables à partir de votre code source à n’importe quel moment de votre cycle de développement. D’une façon générale, le processus de génération est très similaire entre de nombreux types différents de projets, comme Windows, ASP.NET, des applications mobiles, etc. Le processus de génération est également très similaire entre les langages de programmation, comme C#, Visual Basic, C++ et F#. 
+L’exécution d’une génération crée des assemblys et des applications exécutables à partir de votre code source à n’importe quel moment d’un cycle de développement. D’une façon générale, le processus de génération est très similaire entre de nombreux types différents de projets, comme Windows, ASP.NET, des applications mobiles, etc. Le processus de génération est également très similaire entre les langages de programmation, comme C#, Visual Basic, C++ et F#. 
 
 En générant souvent une build à partir de votre code, vous pouvez identifier rapidement les erreurs de compilation, comme une syntaxe incorrecte, des mots clés mal orthographiés et des incompatibilités de types. Vous pouvez aussi détecter et corriger les erreurs d’exécution, comme les erreurs de logique et les erreurs sémantiques, en générant et en exécutant souvent des versions Debug du code.  
 
-Une build réussie est essentiellement une validation que le code source de l’application contient une syntaxe correcte et que toutes les références statiques à des bibliothèques, des assemblys et à d’autres composants ont été résolues. Le résultat est une application exécutable dont le fonctionnement correct peut ensuite être testé à la fois dans un [environnement de débogage](../debugger/index.md) et par différents tests manuels et automatisés pour [vérifier la qualité du code](../test/improve-code-quality.md). Une fois que l’application a été entièrement testée, vous pouvez alors compiler une version Release à déployer auprès de vos clients. Pour une présentation de cette procédure, consultez [Procédure pas à pas : génération d’une application](../ide/walkthrough-building-an-application.md).  
+Une build réussie est essentiellement une validation que le code source de l’application contient une syntaxe correcte et que toutes les références statiques à des bibliothèques, des assemblys et à d’autres composants ont été résolues. Le résultat est une application exécutable dont le fonctionnement correct peut ensuite être testé à la fois dans un [environnement de débogage](../debugger/index.md) et par différents tests manuels et automatisés pour [vérifier la qualité du code](../test/improve-code-quality.md). Une fois que l’application a été entièrement testée, vous pouvez alors compiler une version à déployer auprès de vos clients. Pour une présentation de cette procédure, consultez [Procédure pas à pas : génération d’une application](../ide/walkthrough-building-an-application.md).  
 
 Dans la famille de produits Visual Studio, vous pouvez utiliser trois méthodes pour générer une application : l’IDE de Visual Studio, les outils en ligne de commande MSBuild et Team Foundation Build sur Visual Studio Team Services :
  
@@ -61,4 +58,3 @@ Consultez ensuite [Génération et nettoyage des solutions et de projets dans Vi
 ## <a name="see-also"></a>Voir aussi  
 
 - [Génération (compilation) de projets de site web](http://msdn.microsoft.com/Library/a9cbb88c-8fff-4c67-848b-98fbfd823193)   
-

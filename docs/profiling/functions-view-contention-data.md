@@ -1,52 +1,52 @@
 ---
-title: "Mode Fonctions - donn&#233;es de conflit du profileur | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-debug"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-helpviewer_keywords: 
-  - "mode Fonctions"
+title: "Vue Fonctions - Données de conflit | Microsoft Docs"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-debug
+ms.tgt_pltfrm: 
+ms.topic: article
+helpviewer_keywords: Functions view
 ms.assetid: 208773b0-1a54-4b7a-ad37-2b6fd4f731d4
-caps.latest.revision: 10
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 10
+caps.latest.revision: "10"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: c226c112cfb5854e882297fafdf56219adc2bdb1
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: HT
+ms.contentlocale: fr-FR
+ms.lasthandoff: 10/31/2017
 ---
-# Mode Fonctions - donn&#233;es de conflit du profileur
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
-
-Le mode Rapport de Fonctions de données de conflit répertorie les fonctions dans l'exécution du profilage qui n'ont pas pu être exécutées au cours de l'exécution du profilage.  
+# <a name="functions-view---contention-data"></a>Vue Fonctions - Données de conflit
+La vue de rapport Fonctions des données de conflit répertorie les fonctions dans l’exécution du profilage dont l’exécution a été bloquée pendant l’exécution du profilage.  
   
- Le tableau suivant explique les valeurs affichées en mode Fonctions d'un fichier de données de profilage qui a été collecté à l'aide de la méthode de concurrence.  
+ Le tableau suivant explique les valeurs qui sont affichées dans la vue Fonctions d’un fichier de données de profilage collectées avec la méthode de concurrence.  
   
 |Colonne|Description|  
-|-------------|-----------------|  
-|**Temps bloqué exclusif**|Durée pendant laquelle cette fonction n'a pas pu exécuter du code dans le corps de la fonction.  Le temps bloqué dans les fonctions qui ont été appelées par la fonction n'est pas inclus.|  
-|**% de temps bloqué exclusif**|Pourcentage du temps bloqué total dans l'exécution du profilage correspondant au temps bloqué exclusif de cette fonction.|  
-|**Conflits exclusifs**|Nombre de fois où cette fonction n'a pas pu exécuter le code dans le corps de la fonction.  Les conflits dans les fonctions qui ont été appelées par la fonction ne sont pas inclus.|  
-|**% de conflits exclusifs**|Pourcentage de tous les conflits dans l'exécution du profilage correspondant à des conflits exclusifs de cette fonction.|  
+|------------|-----------------|  
+|**Temps bloqué exclusif**|Durée pendant laquelle l’exécution du code du corps de cette fonction a été bloquée. Le temps bloqué dans les fonctions qui ont été appelées par la fonction n’est pas inclus.|  
+|**% de temps bloqué exclusif**|Pourcentage de tout le temps bloqué dans l’exécution du profilage, qui était du temps bloqué exclusif de cette fonction.|  
+|**Conflits exclusifs**|Nombre de fois où l’exécution de code du corps de la fonction a été bloquée. Les conflits dans les fonctions qui ont été appelées par la fonction ne sont pas incluses.|  
+|**% de conflits exclusifs**|Pourcentage de tous les conflits dans l’exécution de profilage qui étaient des conflits exclusifs de cette fonction.|  
 |**Adresse de la fonction**|Adresse de la fonction.|  
 |**Nom de la fonction**|Nom complet de la fonction.|  
-|**Temps bloqué inclusif**|Temps pendant lequel cette fonction, ou une fonction qui a été appelée par cette fonction, n'a pas pu être exécutée.|  
-|**% de temps bloqué inclusif**|Pourcentage du temps bloqué total dans l'exécution du profilage qui correspond au temps bloqué inclusif de cette fonction ou module.|  
-|**Conflits inclusifs**|Nombre de fois où cette fonction, ou une fonction qui a été appelée par cette fonction, n'a pas pu être exécutée.|  
-|**% de conflits inclusifs**|Pourcentage de tous les conflits dans l'exécution du profilage correspondant à des conflits inclusifs de cette fonction ou module.|  
+|**Temps bloqué inclusif**|Durée pendant laquelle l’exécution de cette fonction ou d’une des fonctions appelées par cette fonction a été bloquée.|  
+|**% de temps bloqué inclusif**|Pourcentage de tout le temps bloqué dans l’exécution du profilage, qui était du temps bloqué inclusif de cette fonction ou de ce module.|  
+|**Conflits inclusifs**|Nombre de fois où l’exécution de cette fonction ou d’une des fonctions appelées par cette fonction a été bloquée.|  
+|**% de conflits inclusifs**|Pourcentage de tous les conflits dans l’exécution du profilage qui étaient des conflits inclusifs de cette fonction ou de ce module.|  
 |**Numéro de ligne de fonction**|Numéro de ligne du début de cette fonction dans le fichier source.|  
 |**Nom de module**|Nom du module qui contient la fonction.|  
-|**Chemin de module**|Chemin d'accès du module qui contient la fonction.|  
-|**ID de processus**|ID du processus \(PID\) dans lequel la fonction s'exécutait.|  
+|**Chemin de module**|Chemin d’accès du module qui contient la fonction.|  
+|**ID de processus**|ID du processus (PID) dans lequel la fonction s’exécutait.|  
 |**Nom du processus**|Nom du processus.|  
-|**Source File**|Fichier source qui contient la définition de cette fonction.|  
+|**Fichier source**|Fichier source contenant la définition pour cette fonction.|  
   
-## Voir aussi  
- [Comment : personnaliser les colonnes de la vue de rapport](../profiling/how-to-customize-report-view-columns.md)   
- [Mode Fonction](../profiling/functions-view.md)   
- [Mode Fonctions \- instrumentation](../profiling/functions-view-dotnet-memory-instrumentation-data.md)   
- [Mode Fonctions \- échantillonnage](../profiling/functions-view-dotnet-memory-sampling-data.md)   
- [Mode Fonction](../profiling/functions-view-instrumentation-data.md)   
- [Mode Fonctions](../profiling/functions-view-sampling-data.md)
+## <a name="see-also"></a>Voir aussi  
+ [Guide pratique pour personnaliser les colonnes de la vue de rapport](../profiling/how-to-customize-report-view-columns.md)   
+ [Vue Fonctions](../profiling/functions-view.md)   
+ [Vue Fonctions - Instrumentation](../profiling/functions-view-dotnet-memory-instrumentation-data.md)   
+ [Vue Fonctions - Échantillonnage](../profiling/functions-view-dotnet-memory-sampling-data.md)   
+ [Vue Fonctions](../profiling/functions-view-instrumentation-data.md)   
+ [Vue Fonctions](../profiling/functions-view-sampling-data.md)

@@ -4,8 +4,7 @@ ms.custom:
 ms.date: 06/21/2017
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-general
+ms.technology: vs-ide-general
 ms.tgt_pltfrm: 
 ms.topic: article
 f1_keywords:
@@ -26,30 +25,15 @@ f1_keywords:
 - javascript.project.property.reference.resolvedpath
 - javascript.project.property.reference.version
 ms.assetid: 085913b8-a97b-45f7-85fa-bbb0902f3ee9
-caps.latest.revision: 7
+caps.latest.revision: "7"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-translation.priority.ht:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
-ms.translationtype: Human Translation
-ms.sourcegitcommit: d2f4eba36e9069a35cf279ccf1c78f72a51d77a1
-ms.openlocfilehash: 6c2b3c577685fcb09cd9e9c7eeee955b75e76e27
-ms.contentlocale: fr-fr
-ms.lasthandoff: 06/23/2017
-
+ms.openlocfilehash: f732a23631de181524382914e954ad50a7f0385d
+ms.sourcegitcommit: c0422a3d594ea5ae8fc03f1aee684b04f417522e
+ms.translationtype: HT
+ms.contentlocale: fr-FR
+ms.lasthandoff: 11/02/2017
 ---
 # <a name="file-properties-javascript"></a>Propriétés des fichiers, JavaScript
 Vous pouvez utiliser les propriétés de fichier pour indiquer les actions que le système de projet doit effectuer sur les fichiers. Par exemple, vous pouvez définir des propriétés de fichier pour indiquer si un fichier doit être ajouté au package en tant que fichier de ressources.  
@@ -73,7 +57,7 @@ Vous pouvez utiliser les propriétés de fichier pour indiquer les actions que l
 
 -   **Ressource** - Le fichier n’est pas inclus dans le manifeste du package. Au lieu de cela, le contenu du fichier est indexé dans l’index de ressource de package qui est placé dans le manifeste du package. Il est généralement utilisé pour les fichiers de ressources.  
 
- La valeur par défaut d’**Action de package** dépend de l’extension du fichier que vous ajoutez à la solution.  
+La valeur par défaut d’**Action de package** dépend de l’extension du fichier que vous ajoutez à la solution.  
 
 ### <a name="file-name-property"></a>Propriété Nom de fichier  
  Affiche le nom de fichier sous la forme d’une valeur en lecture seule. Pour renommer le fichier, vous devez cliquer avec le bouton droit sur le fichier dans l’Explorateur de solutions et sélectionner **Renommer**.  
@@ -82,7 +66,7 @@ Vous pouvez utiliser les propriétés de fichier pour indiquer les actions que l
  Affiche le chemin complet du fichier sous la forme d’une valeur en lecture seule. Pour changer le chemin du fichier, vous pouvez faire glisser le fichier dans l’Explorateur de solutions.  
 
 ## <a name="reference-file-properties"></a>Propriétés de fichier de référence  
- Cette section décrit les propriétés communes aux fichiers référencés à partir d’une [!INCLUDE[win8_app_js](../../ide/reference/includes/win8_app_js_md.md)]. Lorsque vous sélectionnez une référence telle qu’un fichier .winmd, une référence SDK, une référence de projet à projet ou une référence d’assembly dans l’Explorateur de solutions, d’autres propriétés peuvent afficher dans la fenêtre Propriétés, en fonction du type de fichier.  
+ Cette section décrit les propriétés communes aux fichiers référencés à partir d’une application UWP générée à l’aide de JavaScript. Lorsque vous sélectionnez une référence telle qu’un fichier .winmd, une référence SDK, une référence de projet à projet ou une référence d’assembly dans l’Explorateur de solutions, d’autres propriétés peuvent afficher dans la fenêtre Propriétés, en fonction du type de fichier.  
 
 ### <a name="culture"></a>Culture  
  Affiche la langue associée à la référence.  
@@ -113,4 +97,3 @@ Vous pouvez utiliser les propriétés de fichier pour indiquer les actions que l
 
 ## <a name="see-also"></a>Voir aussi  
  [Gestion des propriétés des projets et des solutions](../../ide/managing-project-and-solution-properties.md)
-

@@ -1,51 +1,51 @@
 ---
-title: "/DebugExe (devenv.exe) | Microsoft Docs"
-ms.custom: ""
-ms.date: "12/15/2016"
-ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-general"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-helpviewer_keywords: 
-  - "/DebugExe (devenv.exe)"
-  - "DebugExe (commutateur)"
-  - "Devenv, /DebugExe (commutateur)"
+title: -DebugExe (devenv.exe) | Microsoft Docs
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-general
+ms.tgt_pltfrm: 
+ms.topic: article
+helpviewer_keywords:
+- Devenv, /DebugExe switch
+- DebugExe switch
+- /DebugExe [devenv.exe]
 ms.assetid: cd700006-1648-418f-924b-4b1e5c1412ab
-caps.latest.revision: 4
-caps.handback.revision: 4
-author: "kempb"
-ms.author: "kempb"
-manager: "ghogen"
+caps.latest.revision: "4"
+author: gewarren
+ms.author: gewarren
+manager: ghogen
+ms.openlocfilehash: 00677826cceab6a54c0fb2216ac6c6284a65631f
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: HT
+ms.contentlocale: fr-FR
+ms.lasthandoff: 10/31/2017
 ---
-# /DebugExe (devenv.exe)
-[!INCLUDE[vs2017banner](../../code-quality/includes/vs2017banner.md)]
-
+# <a name="debugexe-devenvexe"></a>/DebugExe (devenv.exe)
 Ouvre le fichier exécutable spécifié à déboguer.  
   
-## Syntaxe  
+## <a name="syntax"></a>Syntaxe  
   
 ```  
 Devenv /debugexe ExecutableFile  
 ```  
   
-## Arguments  
+## <a name="arguments"></a>Arguments  
  `ExecutableFile`  
- Obligatoire.  Chemin d'accès et nom de fichier d'un fichier .exe.  
+ Obligatoire. Chemin et nom d’un fichier .exe.  
   
- Si le fichier .exe est introuvable ou n'existe pas, aucun avertissement ou erreur n'est affiché et [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] démarre normalement.  
+ Si le fichier .exe est introuvable ou n’existe pas, aucun avertissement ni erreur ne s’affiche et [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] démarre normalement.  
   
-## Notes  
- Tout chaîne qui suit le paramètre `ExecutableFile` est passée à ce fichier comme argument.  
+## <a name="remarks"></a>Remarques  
+ Toute chaîne qui suit le paramètre `ExecutableFile` est passée à ce fichier comme argument.  
   
-## Exemple  
- L'exemple suivant ouvre le fichier en mode `MyApplication.exe` pour débogage  
+## <a name="example"></a>Exemple  
+ L’exemple suivant ouvre le fichier `MyApplication.exe` pour débogage.  
   
 ```  
 Devenv.exe /debugexe MyApplication.exe  
 ```  
   
-## Voir aussi  
- [Commutateurs de la ligne de commande de Devenv](../../ide/reference/devenv-command-line-switches.md)
+## <a name="see-also"></a>Voir aussi  
+ [Commutateurs de la ligne de commande Devenv](../../ide/reference/devenv-command-line-switches.md)

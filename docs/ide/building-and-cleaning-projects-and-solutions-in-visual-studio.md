@@ -4,8 +4,7 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-general
+ms.technology: vs-ide-general
 ms.tgt_pltfrm: 
 ms.topic: article
 f1_keywords:
@@ -23,37 +22,21 @@ helpviewer_keywords:
 - solution build configurations, build order
 - builds [Visual Studio], preparing
 ms.assetid: 710891fd-379e-42c2-a84b-44a7af694ca0
-caps.latest.revision: 35
-author: kempb
-ms.author: kempb
+caps.latest.revision: "35"
+author: gewarren
+ms.author: gewarren
 manager: ghogen
-translation.priority.ht:
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- ru-ru
-- zh-cn
-- zh-tw
-translation.priority.mt:
-- cs-cz
-- pl-pl
-- pt-br
-- tr-tr
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 5ea9179ad37514ffad4876177b05150eecc22def
-ms.openlocfilehash: f43b470f07e8b90c62d17c7905ad458a22d41ff1
-ms.contentlocale: fr-fr
-ms.lasthandoff: 05/24/2017
-
+ms.openlocfilehash: 2e66af6d2d38685bdd905b7991c6e8f782e4f696
+ms.sourcegitcommit: ec1c7e7e3349d2f3a4dc027e7cfca840c029367d
+ms.translationtype: HT
+ms.contentlocale: fr-FR
+ms.lasthandoff: 11/07/2017
 ---
 # <a name="building-and-cleaning-projects-and-solutions-in-visual-studio"></a>Génération et nettoyage de solutions et de projets dans Visual Studio
 En appliquant les procédures décrites dans cette rubrique, vous pouvez générer, régénérer ou nettoyer tout ou partie des projets ou éléments de projet dans une solution. Pour obtenir un didacticiel pas à pas, consultez [Procédure pas à pas : génération d’une application](../ide/walkthrough-building-an-application.md).  
   
 > [!NOTE]
->  En fonction de vos paramètres actifs, l’interface utilisateur dans votre édition de Visual Studio peut-être différente de celle décrite dans cette rubrique. Pour changer vos paramètres, ouvrez le menu **Outils**, puis choisissez **Importation et exportation de paramètres**. Pour plus d’informations, consultez [Personnaliser l’IDE Visual Studio](../ide/personalizing-the-visual-studio-ide.md).  
+> En fonction de vos paramètres actifs, l’interface utilisateur dans votre édition de Visual Studio peut-être différente de celle décrite dans cette rubrique. Pour changer vos paramètres, par exemple pour définir les paramètres **Général** ou **Visual C++**, choisissez **Outils**, **Importation et exportation de paramètres**, puis choisissez **Réinitialiser tous les paramètres**.
   
 ### <a name="to-build-rebuild-or-clean-an-entire-solution"></a>Pour générer, régénérer ou nettoyer une solution entière  
   
@@ -96,7 +79,7 @@ En appliquant les procédures décrites dans cette rubrique, vous pouvez génér
   
     -   Dans la barre de menus, vous choisissez **Générer**, puis **Générer la solution** (Ctrl+Maj+B).  
   
-     Quand cette case est décochée, tous les projets, leurs dépendances et les fichiers solution sont générés quand vous exécutez l’une des commandes précédentes. Par défaut, cette case à cocher est désactivée.  
+    Quand cette case est décochée, tous les projets, leurs dépendances et les fichiers solution sont générés quand vous exécutez l’une des commandes précédentes. Par défaut, cette case à cocher est désactivée.  
   
 ### <a name="to-build-only-the-selected-visual-c-project"></a>Pour générer uniquement le projet Visual C++ sélectionné  
   
@@ -110,13 +93,13 @@ En appliquant les procédures décrites dans cette rubrique, vous pouvez génér
   
     -   **Lier uniquement** *nom_projet*  
   
-     Ces commandes s’appliquent uniquement au projet [!INCLUDE[vcprvc](../code-quality/includes/vcprvc_md.md)] que vous avez choisi, sans générer, régénérer, nettoyer ou lier aucune dépendance de projet ou fichier de solution. En fonction de votre version de [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)], le sous-menu **Projet uniquement** peut contenir plus de commandes.  
+    Ces commandes s’appliquent uniquement au projet [!INCLUDE[vcprvc](../code-quality/includes/vcprvc_md.md)] que vous avez choisi, sans générer, régénérer, nettoyer ou lier aucune dépendance de projet ou fichier de solution. En fonction de votre version de [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)], le sous-menu **Projet uniquement** peut contenir plus de commandes.  
   
 ### <a name="to-compile-multiple-c-project-items"></a>Pour compiler plusieurs éléments de projet C++  
   
 1.  Dans l’**Explorateur de solutions**, choisissez plusieurs fichiers qui ont plusieurs actions de compilation, ouvrez le menu contextuel pour l’un de ces fichiers, puis choisissez **Compiler**.  
   
-     Si les fichiers ont des dépendances, ils seront compilés par ordre de dépendance. La compilation échoue si les fichiers nécessitent un en-tête précompilé qui n’est pas disponible lors de la compilation. L’opération de compilation utilise la configuration de solution active.  
+    Si les fichiers ont des dépendances, ils seront compilés par ordre de dépendance. La compilation échoue si les fichiers nécessitent un en-tête précompilé qui n’est pas disponible lors de la compilation. L’opération de compilation utilise la configuration de solution active.  
   
 ### <a name="to-stop-a-build"></a>Pour arrêter une génération  
   
@@ -126,12 +109,12 @@ En appliquant les procédures décrites dans cette rubrique, vous pouvez génér
   
     -   Choisissez les touches Ctrl + Arrêt.  
   
-## <a name="see-also"></a>Voir aussi  
- [Guide pratique pour afficher, enregistrer et configurer des fichiers journaux de génération](../ide/how-to-view-save-and-configure-build-log-files.md)   
- [Obtention de journaux de génération](../msbuild/obtaining-build-logs-with-msbuild.md)   
- [Compilation et génération](../ide/compiling-and-building-in-visual-studio.md)   
- [Présentation des configurations de build](../ide/understanding-build-configurations.md)   
- [Configurations de projets Debug et Release](http://msdn.microsoft.com/en-us/0440b300-0614-4511-901a-105b771b236e)   
- [Référence à la génération C/C++](/cpp/build/reference/c-cpp-building-reference)   
- [Commutateurs de la ligne de commande Devenv](../ide/reference/devenv-command-line-switches.md)   
- [Projets et solutions](../ide/solutions-and-projects-in-visual-studio.md)
+## <a name="see-also"></a>Voir aussi
+[Guide pratique pour afficher, enregistrer et configurer des fichiers journaux de génération](../ide/how-to-view-save-and-configure-build-log-files.md)   
+[Obtention de journaux de génération](../msbuild/obtaining-build-logs-with-msbuild.md)   
+[Compilation et génération](../ide/compiling-and-building-in-visual-studio.md)   
+[Présentation des configurations de build](../ide/understanding-build-configurations.md)   
+[Configurations de projets Debug et Release](http://msdn.microsoft.com/en-us/0440b300-0614-4511-901a-105b771b236e)   
+[Référence à la génération C/C++](/cpp/build/reference/c-cpp-building-reference)   
+[Commutateurs de la ligne de commande Devenv](../ide/reference/devenv-command-line-switches.md)   
+[Projets et solutions](../ide/solutions-and-projects-in-visual-studio.md)

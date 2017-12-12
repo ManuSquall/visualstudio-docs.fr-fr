@@ -1,19 +1,17 @@
 ---
-title: Utilisation de Git
+title: Utilisation de Git | Microsoft Docs
 description: Utilisation de Git dans Visual Studio pour Mac.
 author: asb3993
 ms.author: amburns
 ms.date: 04/14/2017
 ms.topic: article
 ms.assetid: 852B6A9D-AEFA-4EF4-A5DD-94A506019D20
+ms.openlocfilehash: 76bb378297e29fa5967a43e4df38ca2ecc4e6361
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
 ms.translationtype: HT
-ms.sourcegitcommit: e2b7ff9126e1cc38ac2e58d6be339b656a024e7f
-ms.openlocfilehash: b3ffe27e343cd02fa52f4f82dfe170d5d0efb8c3
-ms.contentlocale: fr-fr
-ms.lasthandoff: 08/11/2017
-
+ms.contentlocale: fr-FR
+ms.lasthandoff: 10/31/2017
 ---
-
 # <a name="working-with-git"></a>Utilisation de Git
 
 Git est un système de gestion de versions distribué qui permet aux équipes de travailler simultanément sur les mêmes documents. Cela signifie qu’il existe un seul serveur contenant tous les fichiers, mais que quand un dépôt est extrait de cette source centrale, l’intégralité du dépôt est clonée sur la machine locale.

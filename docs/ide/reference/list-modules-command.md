@@ -1,32 +1,32 @@
 ---
-title: "Afficher les modules, commande | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-general"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "debug.listmodules"
-helpviewer_keywords: 
-  - "Debug.ListModules (commande)"
-  - "Afficher les modules (commande)"
-  - "ListModules (commande)"
+title: Afficher les modules, commande | Microsoft Docs
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-general
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords: debug.listmodules
+helpviewer_keywords:
+- Debug.ListModules command
+- ListModules command
+- list modules command
 ms.assetid: 3cb73774-6ac0-43b2-b781-75ed47175bfd
-caps.latest.revision: 6
-author: "kempb"
-ms.author: "kempb"
-manager: "ghogen"
-caps.handback.revision: 6
+caps.latest.revision: "6"
+author: gewarren
+ms.author: gewarren
+manager: ghogen
+ms.openlocfilehash: 081f57f441da17578735317e2d6f8352cd31d30d
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: HT
+ms.contentlocale: fr-FR
+ms.lasthandoff: 10/31/2017
 ---
-# Afficher les modules, commande
-[!INCLUDE[vs2017banner](../../code-quality/includes/vs2017banner.md)]
-
+# <a name="list-modules-command"></a>Afficher les modules, commande
 Répertorie les modules pour le processus en cours.  
   
-## Syntaxe  
+## <a name="syntax"></a>Syntaxe  
   
 ```  
 Debug.ListModules [/Address:yes|no] [/Name:yes|no] [/Order:yes|no]  
@@ -34,44 +34,44 @@ Debug.ListModules [/Address:yes|no] [/Name:yes|no] [/Order:yes|no]
 [/SymbolStatus:yes|no] [/Timestamp:yes|no] [/Version:yes|no]  
 ```  
   
-#### Paramètres  
- \/Address:`yes|no`  
- Facultatif.  Spécifie s'il faut afficher les adresses mémoire des modules.  La valeur par défaut est `yes`  
+#### <a name="parameters"></a>Paramètres  
+ /Address:`yes|no`  
+ Facultatif. Spécifie s’il faut afficher les adresses mémoire des modules. La valeur par défaut est `yes`.  
   
- \/Name:`yes|no`  
- Facultatif.  Spécifie s'il faut afficher les noms des modules.  La valeur par défaut est `yes`  
+ /Name:`yes|no`  
+ Facultatif. Spécifie s’il faut afficher les noms des modules. La valeur par défaut est `yes`.  
   
- \/Order:`yes|no`  
- Facultatif.  Spécifie s'il faut afficher l'ordre des modules.  La valeur par défaut est `no`  
+ /Order:`yes|no`  
+ Facultatif. Spécifie s’il faut afficher l’ordre des modules. La valeur par défaut est `no`.  
   
- \/Path:`yes|no`  
- Facultatif.  Spécifie s'il faut afficher les chemins des modules.  La valeur par défaut est `yes`  
+ /Path:`yes|no`  
+ Facultatif. Spécifie s’il faut afficher les chemins des modules. La valeur par défaut est `yes`.  
   
- \/Process:`yes|no`  
- Facultatif.  Spécifie s'il faut afficher les processus des modules.  La valeur par défaut est `no`  
+ /Process:`yes|no`  
+ Facultatif. Spécifie s’il faut afficher les processus des modules. La valeur par défaut est `no`.  
   
- \/SymbolFile:`yes|no`  
- Facultatif.  Spécifie s'il faut afficher les fichiers de symboles des modules.  La valeur par défaut est `no`  
+ /SymbolFile:`yes|no`  
+ Facultatif. Spécifie s’il faut afficher les fichiers de symboles des modules. La valeur par défaut est `no`.  
   
- \/SymbolStatus:`yes|no`  
- Facultatif.  Spécifie s'il faut afficher les statuts de symboles des modules.  La valeur par défaut est `yes`  
+ /SymbolStatus:`yes|no`  
+ Facultatif. Spécifie s’il faut afficher les états des symboles des modules. La valeur par défaut est `yes`.  
   
- \/Timestamp:`yes|no`  
- Facultatif.  Spécifie s'il faut afficher les horodateurs des modules.  La valeur par défaut est `no`  
+ /Timestamp:`yes|no`  
+ Facultatif. Spécifie s’il faut afficher les horodatages des modules. La valeur par défaut est `no`.  
   
- \/Version:`yes|no`  
- Facultatif.  Spécifie s'il faut afficher les versions des modules.  La valeur par défaut est `no`  
+ /Version:`yes|no`  
+ Facultatif. Spécifie s’il faut afficher les versions des modules. La valeur par défaut est `no`.  
   
-## Notes  
+## <a name="remarks"></a>Remarques  
   
-## Exemple  
- Cet exemple répertorie les noms du module, adresses et horodatages pour le processus actuel.  
+## <a name="example"></a>Exemple  
+ Cet exemple répertorie les noms, les adresses et les horodatages des modules pour le processus actuel.  
   
 ```  
 Debug.ListModules /Address:yes /Name:yes /Order:no /Path:no /Process:no /SymbolFile:no /SymbolStatus:no /Timestamp:yes /Version:no  
 ```  
   
-## Voir aussi  
+## <a name="see-also"></a>Voir aussi  
  [Commandes Visual Studio](../../ide/reference/visual-studio-commands.md)   
- [Commande, fenêtre](../../ide/reference/command-window.md)   
- [Comment : utiliser la fenêtre Modules](../../debugger/how-to-use-the-modules-window.md)
+ [Fenêtre Commande](../../ide/reference/command-window.md)   
+ [Guide pratique pour utiliser la fenêtre Modules](../../debugger/how-to-use-the-modules-window.md)

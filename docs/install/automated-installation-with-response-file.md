@@ -4,8 +4,7 @@ description: "Découvrez comment créer un fichier réponse JSON qui vous aide �
 ms.date: 08/14/2017
 ms.reviewer: tims
 ms.suite: 
-ms.technology:
-- vs-ide-install
+ms.technology: vs-acquisition
 ms.tgt_pltfrm: 
 ms.topic: article
 helpviewer_keywords:
@@ -14,16 +13,14 @@ helpviewer_keywords:
 - installation
 - command-line
 author: timsneath
-ms.author: tims
+ms.author: tglee
 manager: ghogen
+ms.openlocfilehash: b17091a46e694256b95fd5799f8d5f165bb976a8
+ms.sourcegitcommit: eb954434c34b4df6fd2264266381b23ce9e6204a
 ms.translationtype: HT
-ms.sourcegitcommit: f23906933add1f4706d8786b2950fb3b5d2e6781
-ms.openlocfilehash: 5c8aaf24a1952847c593d5eb70f7c94208310174
-ms.contentlocale: fr-fr
-ms.lasthandoff: 09/26/2017
-
+ms.contentlocale: fr-FR
+ms.lasthandoff: 11/22/2017
 ---
-
 # <a name="how-to-define-settings-in-a-response-file"></a>Guide pratique pour définir des paramètres dans un fichier réponse
 Les administrateurs qui déploient Visual Studio peuvent spécifier un fichier réponse à l’aide du paramètre `--in`, comme dans l’exemple suivant :
 
@@ -37,7 +34,7 @@ Les paramètres spécifiés sur la ligne de commande remplacent les paramètres 
 
 # <a name="setting-a-default-configuration-for-visual-studio"></a>Définition d’une configuration par défaut pour Visual Studio
 
-Si vous avez créé un cache de disposition réseau avec `--layout`, un fichier `response.json` est créé dans la disposition. Si vous créez une disposition partielle, ce fichier réponse inclut les charges de travail et les langues qui étaient englobées dans la disposition.  L’exécution du programme d’installation à partir de cette disposition utilise automatiquement ce fichier response.json qui sélectionne les charges de travail et les composants inclus dans la disposition.  Les utilisateurs peuvent toujours sélectionner ou désélectionner toutes les charges de travail dans l’interface utilisateur du programme d’installation avant d’installer Visual Studio. 
+Si vous avez créé un cache de disposition réseau avec `--layout`, un fichier `response.json` est créé dans la disposition. Si vous créez une disposition partielle, ce fichier réponse inclut les charges de travail et les langues qui étaient englobées dans la disposition.  L’exécution du programme d’installation à partir de cette disposition utilise automatiquement ce fichier response.json qui sélectionne les charges de travail et les composants inclus dans la disposition.  Les utilisateurs peuvent toujours sélectionner ou désélectionner toutes les charges de travail dans l’interface utilisateur du programme d’installation avant d’installer Visual Studio.
 
 Les administrateurs qui créent une disposition peuvent modifier le fichier `response.json` dans la disposition pour contrôler les paramètres par défaut que les utilisateurs voient lorsqu’ils installent Visual Studio à partir de cette disposition.  Par exemple, si un administrateur souhaite que des composants et des charges de travail spécifiques soient installés par défaut, il peut configurer le fichier `response.json` pour les ajouter.
 
@@ -59,7 +56,7 @@ Le fichier `response.json` de base dans une disposition doit ressembler à l’e
   "productId": "Microsoft.VisualStudio.Product.Enterprise"
 }
 ```
-Lorsque vous créez ou mettez à jour une disposition, un fichier response.template.json est également créé.  Ce fichier contient tous les ID de charge de travail, de composant et de langue qu’il est possible d’utiliser.  Ce fichier est fourni en tant que modèle pour tout ce qui peut être inclus dans une installation personnalisée.  Les administrateurs peuvent utiliser ce fichier comme point de départ d’un fichier réponse personnalisé.  Supprimez simplement les ID des éléments que vous ne souhaitez pas installer et enregistrez-le dans votre propre fichier réponse.  Ne personnalisez pas le fichier response.template.json, sinon vos modifications sont perdues chaque fois que la disposition est mise à jour. 
+Lorsque vous créez ou mettez à jour une disposition, un fichier response.template.json est également créé.  Ce fichier contient tous les ID de charge de travail, de composant et de langue qu’il est possible d’utiliser.  Ce fichier est fourni en tant que modèle pour tout ce qui peut être inclus dans une installation personnalisée.  Les administrateurs peuvent utiliser ce fichier comme point de départ d’un fichier réponse personnalisé.  Supprimez simplement les ID des éléments que vous ne souhaitez pas installer et enregistrez-le dans votre propre fichier réponse.  Ne personnalisez pas le fichier response.template.json, sinon vos modifications sont perdues chaque fois que la disposition est mise à jour.
 
 ## <a name="example-layout-response-file-content"></a>Exemple de contenu de fichier réponse dans la disposition
 L’exemple suivant installe Visual Studio Enterprise avec six charges de travail et composants courants, ainsi que les langues d’interface utilisateur Anglais et Français. Vous pouvez utiliser cet exemple comme modèle ; il vous suffit de remplacer les charges de travail et les composants par ceux que vous voulez installer :
@@ -94,6 +91,15 @@ L’exemple suivant installe Visual Studio Enterprise avec six charges de travai
     ]
 }
 ```
+
+## <a name="get-support"></a>Obtenir de l’aide
+Parfois, des problèmes peuvent se produire. Si votre installation de Visual Studio échoue, consultez la page [Résolution des problèmes d’installation et de mise à niveau de Visual Studio 2017](troubleshooting-installation-issues.md). Si aucune étape de résolution des problèmes ne vous aide, vous pouvez nous contacter pour une conversation en direct sur une assistance à l’installation (en anglais uniquement). Pour plus de détails, consultez la [page du support Visual Studio](https://www.visualstudio.com/vs/support/#talktous).
+
+Voici d’autres options de support :
+* Vous pouvez nous signaler des problèmes au niveau d’un produit via l’outil [Signaler un problème](../ide/how-to-report-a-problem-with-visual-studio-2017.md) qui s’affiche dans le programme d’installation de Visual Studio et dans l’IDE de Visual Studio.
+* Vous pouvez nous faire part d’une suggestion de produit via [UserVoice](https://visualstudio.uservoice.com/forums/121579).
+* Vous pouvez suivre les problèmes au niveau d’un produit sur le site [Visual Studio Developer Community](https://developercommunity.visualstudio.com/) et y poser des questions et obtenir des réponses.
+* Vous pouvez également communiquer avec nous et d’autres développeurs Visual Studio en prenant part à notre [conversation Visual Studio dans la communauté Gitter ](https://gitter.im/Microsoft/VisualStudio)  (Cette option nécessite un compte [GitHub](https://github.com/)).
+
 ## <a name="see-also"></a>Voir aussi
 * [ID de charge de travail et de composant Visual Studio 2017](workload-and-component-ids.md)
-

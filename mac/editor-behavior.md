@@ -1,19 +1,17 @@
 ---
-title: "Comportement de l’éditeur"
+title: "Comportement de l’éditeur | Microsoft Docs"
 description: 
 author: asb3993
 ms.author: amburns
 ms.date: 04/14/2017
 ms.topic: article
 ms.assetid: 81EE4460-26EB-4BB0-9297-932E1F88E4B8
+ms.openlocfilehash: 3515dfbf3a7cf8c23178aa9df243638f955593e9
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
 ms.translationtype: HT
-ms.sourcegitcommit: e2b7ff9126e1cc38ac2e58d6be339b656a024e7f
-ms.openlocfilehash: 894bcbe66bd071bff1a6d904759f468b519da0f2
-ms.contentlocale: fr-fr
-ms.lasthandoff: 08/11/2017
-
+ms.contentlocale: fr-FR
+ms.lasthandoff: 10/31/2017
 ---
-
 # <a name="editor-behavior"></a>Comportement de l’éditeur
 
 Les comportements de l’éditeur peuvent être définis de façon à autoriser la mise en forme du code au fil de son écriture. Ces actions sont définies sous **Visual Studio > Préférences... > Éditeur de texte > Comportement**, et certaines des fonctions les plus couramment utilisées sont décrites ci-dessous :

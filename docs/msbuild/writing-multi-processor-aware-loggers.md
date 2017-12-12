@@ -1,11 +1,10 @@
 ---
-title: Writing Multi-Processor-Aware Loggers | Microsoft Docs
+title: "Écriture de journaux multiprocesseurs | Microsoft Docs"
 ms.custom: 
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-sdk
+ms.technology: vs-ide-sdk
 ms.tgt_pltfrm: 
 ms.topic: article
 helpviewer_keywords:
@@ -13,52 +12,37 @@ helpviewer_keywords:
 - multi-proc loggers
 - loggers, multi-proc
 ms.assetid: ff987d1b-1798-4803-9ef6-cc8fcc263516
-caps.latest.revision: 12
+caps.latest.revision: "12"
 author: kempb
 ms.author: kempb
 manager: ghogen
-translation.priority.ht:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
+ms.openlocfilehash: f11a3717e6096ac08a8201bc9b6fc81e1a197d0a
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
 ms.translationtype: HT
-ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
-ms.openlocfilehash: 0a53e007c7ac46de047dbcad3567a5ac11833993
-ms.contentlocale: fr-fr
-ms.lasthandoff: 08/28/2017
-
+ms.contentlocale: fr-FR
+ms.lasthandoff: 10/31/2017
 ---
-# <a name="writing-multi-processor-aware-loggers"></a>Writing Multi-Processor-Aware Loggers
-The ability of [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] to take advantage of multiple processors can decrease project building time, but it also adds complexity to build event logging. In a single-processor environment, events, messages, warnings, and errors arrive at the logger in a predictable, sequential manner. However, in a multi-processor environment, events from different sources can arrive at the same time or out of sequence. To provide for this, [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] provides a multi-processor-aware logger and a new logging model, and lets you create custom "forwarding loggers."  
+# <a name="writing-multi-processor-aware-loggers"></a>Écriture de journaux multiprocesseurs
+La capacité de [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] à tirer parti de plusieurs processeurs peut accélérer le temps de génération d’un projet. Toutefois, elle rend plus complexe la journalisation des événements de build. Dans un environnement à un seul processeur, les événements, messages, avertissements et erreurs arrivent au journal (logger) de manière prévisible et séquentielle. Toutefois, dans un environnement multiprocesseur, les événements provenant de différentes sources peuvent arriver en même temps ou dans le désordre. Pour résoudre ce problème, [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] fournit un journal multiprocesseur, ainsi qu’un nouveau modèle de journalisation, qui vous permet de créer des « journaux de transfert » personnalisés.  
   
-## <a name="multi-processor-logging-challenges"></a>Multi-Processor Logging Challenges  
- When you build one or more projects on a multi-processor or multi-core system, [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] build events for all the projects are generated at the same time. An avalanche of event messages may arrive at the logger at the same time or out of sequence. Because a [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 2.0 logger is not designed to handle this situation, it can overwhelm the logger and cause increased build times, incorrect logger output, or even a broken build. To address these issues, the logger (starting in [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 3.5) can process out-of-sequence events and correlate events and their sources.  
+## <a name="multi-processor-logging-challenges"></a>Difficultés liées à la journalisation multiprocesseur  
+ Lorsque vous générez un ou plusieurs projets sur un système multiprocesseur ou multicœur, les événements de build [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] de tous les projets sont générés en même temps. De très nombreux messages d’événements peuvent arriver au journal d’événements en même temps ou dans le désordre. Le journal [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 2.0 n’est pas conçu pour gérer cette situation. De fait, il peut saturer, et accroître la durée des générations, provoquer une sortie de journal incorrecte, voire aboutir à l’arrêt de la génération. Pour résoudre ces problèmes, le journal (à compter de [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 3.5) peut traiter les événements qui arrivent dans le désordre et associer les événements à leur source.  
   
- You can improve logging efficiency even more by creating a custom forwarding logger. A custom forwarding logger acts as a filter by letting you choose, before you build, only the events you want to monitor. When you use a custom forwarding logger, unwanted events cannot overwhelm the logger, clutter your logs, or slow build times.  
+ Vous pouvez améliorer l’efficacité de la journalisation en créant un journal de transfert personnalisé. Un journal de transfert personnalisé agit comme un filtre en vous permettant de sélectionner, avant la génération, les événements que vous souhaitez suivre. Lorsque vous utilisez un journal de transfert personnalisé, vous n’avez pas d’événements inutiles qui saturent le journal, polluent vos journaux ou ralentissent la génération.  
   
-## <a name="multi-processor-logging-models"></a>Multi-Processor Logging Models  
- To provide for multi-processor-related build issues, [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] supports two logging models, central and distributed.  
+## <a name="multi-processor-logging-models"></a>Modèles de journalisation multiprocesseur  
+ Pour répondre aux problèmes liés à la génération multiprocesseur, [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] prend en charge deux modèles de journalisation, un centralisé et un distribué.  
   
-### <a name="central-logging-model"></a>Central Logging Model  
- In the central logging model, a single instance of MSBuild.exe acts as the "central node," and child instances of the central node ("secondary nodes") attach to the central node to help it perform build tasks.  
+### <a name="central-logging-model"></a>Modèle de journalisation centralisé  
+ Dans le modèle de journalisation centralisé, une seule instance de MSBuild.exe agit comme « nœud central », et les instances enfants du nœud central (les « nœuds secondaires ») sont jointes au nœud central pour l’aider à effectuer les tâches de génération.  
   
- ![Central Logger Model](../msbuild/media/centralnode.png "CentralNode")  
+ ![Modèle de journal centralisé](../msbuild/media/centralnode.png "CentralNode")  
   
- Loggers of various types that attach to the central node are known as "central loggers." Only one instance of each logger type can be attached to the central node at the same time.  
+ Les journaux de différents types qui sont joints au nœud central sont appelés « journaux centraux ». Une seule instance de chaque type de journal peut être jointe au nœud central.  
   
- When a build occurs, the secondary nodes route their build events to the central node. The central node routes all its events, and also those of the secondary nodes, to one or more of the attached central loggers. The loggers then create log files that are based on the incoming data.  
+ Lors d’une génération, les nœuds secondaires routent leurs événements de build vers le nœud central. Le nœud central route tous ses événements, ainsi que ceux des nœuds secondaires, vers un ou plusieurs des journaux centraux joints. Les journaux créent ensuite les fichiers journaux qui sont basés sur les données entrantes.  
   
- Although only <xref:Microsoft.Build.Framework.ILogger> is required to be implemented by the central logger, we recommend that you also implement <xref:Microsoft.Build.Framework.INodeLogger> so that the central logger initializes with the number of nodes that are participating in the build. The following overload of the <xref:Microsoft.Build.Framework.ILogger.Initialize%2A> method invokes when the engine initializes the logger.  
+ Même si seul <xref:Microsoft.Build.Framework.ILogger> doit être implémenté par le journal central, nous vous recommandons d’implémenter également <xref:Microsoft.Build.Framework.INodeLogger> afin que le journal central soit initialisé avec le nombre de nœuds qui participent à la génération. La surcharge suivante de la méthode <xref:Microsoft.Build.Framework.ILogger.Initialize%2A> émet un appel lorsque le moteur initialise le journal.  
   
 ```csharp
 public interface INodeLogger: ILogger  
@@ -67,49 +51,49 @@ public interface INodeLogger: ILogger
 }  
 ```  
   
- Any pre-existing <xref:Microsoft.Build.Framework.ILogger>-based loggers can act as central loggers and can attach to the build. However, central loggers written without explicit support for multi-processor logging scenarios and out-of-order events may break a build or produce meaningless output.  
+ Tous les journaux <xref:Microsoft.Build.Framework.ILogger> existants peuvent agir comme des journaux centraux et peuvent être joints à la génération. Toutefois, les journaux centraux qui sont écrits sans prise en charge explicite des scénarios de journalisation multiprocesseur et des événements non ordonnés peuvent causer l’arrêt de la génération ou produire une sortie incorrecte.  
   
-### <a name="distributed-logging-model"></a>Distributed Logging Model  
- In the central logging model, too much incoming message traffic can overwhelm the central node, for example, when many projects build at the same time. This can stress system resources and decrease build performance. To ease this problem, [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] supports a distributed logging model.  
+### <a name="distributed-logging-model"></a>Modèle d'enregistrement distribué  
+ Dans le modèle de journalisation centralisé, un trop grand nombre de messages entrants peut saturer le nœud central, comme lorsque de nombreux projets sont générés en même temps. Cela peut provoquer une contrainte sur les ressources système et affecter les performances de génération. Pour résoudre ce problème, [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] prend en charge un modèle de journalisation distribué.  
   
- ![Distributed Logging Model](../msbuild/media/distnode.png "DistNode")  
+ ![Modèle de journalisation distribué](../msbuild/media/distnode.png "DistNode")  
   
- The distributed logging model extends the central logging model by letting you create a forwarding logger.  
+ Le modèle de journalisation distribué étend le modèle de journalisation centralisé en vous permettant de créer un journal de transfert.  
   
-#### <a name="forwarding-loggers"></a>Forwarding Loggers  
- A forwarding logger is a secondary, lightweight logger that has an event filter that attaches to a secondary node and receives incoming build events from that node. It filters the incoming events and forwards only the ones that you specify to the central node. This reduces the message traffic that is sent to the central node and improves overall build performance.  
+#### <a name="forwarding-loggers"></a>Journaux de transfert  
+ Un journal de transfert est un journal léger et secondaire. Il comprend un filtre d’événement qui est joint à un nœud secondaire et qui reçoit de ce nœud des événements de build entrants. Il filtre les événements entrants et transfère uniquement ceux que vous spécifiez au nœud central. Cela réduit le trafic des messages qui sont envoyés au nœud central et améliore les performances globales de génération.  
   
- There are two ways to use distributed logging, as follows:  
+ Il existe deux façons d’utiliser la journalisation distribuée :  
   
--   Customize the pre-fabricated forwarding logger named <xref:Microsoft.Build.BuildEngine.ConfigurableForwardingLogger>.  
+-   Personnalisez le journal de transfert prédéfini nommé <xref:Microsoft.Build.BuildEngine.ConfigurableForwardingLogger>.  
   
--   Write your own custom forwarding logger.  
+-   Écrivez votre propre journal de transfert personnalisé.  
   
- You can modify ConfigurableForwardingLogger to suit your requirements. To do this, call the logger on the command line by using MSBuild.exe, and list the build events that you want the logger to forward to the central node.  
+ Vous pouvez modifier ConfigurableForwardingLogger pour l’adapter à vos besoins. Pour ce faire, appelez le journal sur la ligne de commande à l’aide de MSBuild.exe et créez une liste des événements de build que le journal doit transférer au nœud central.  
   
- As an alternative, you can create a custom forwarding logger. By creating a custom forwarding logger, you can fine-tune the behavior of the logger. However, creating a custom forwarding logger is more complex than just customizing the ConfigurableForwardingLogger. For more information, see [Creating Forwarding Loggers](../msbuild/creating-forwarding-loggers.md).  
+ En guise d’alternative, vous pouvez créer un journal de transfert personnalisé. La création d’un journal de transfert personnalisé vous permet d’ajuster le comportement du journal. Toutefois, la création d’un journal de transfert personnalisé est plus complexe que la simple personnalisation de ConfigurableForwardingLogger. Pour plus d’informations, consultez [Création de journaux de transfert](../msbuild/creating-forwarding-loggers.md).  
   
-## <a name="using-the-configurableforwardinglogger-for-simple-distributed-logging"></a>Using the ConfigurableForwardingLogger for Simple Distributed Logging  
- To attach either a ConfigurableForwardingLogger or a custom forwarding logger, use the `/distributedlogger` switch (`/dl` for short) in an MSBuild.exe command-line build. The format for specifying the names of the logger types and classes is the same as that for the `/logger` switch, except that a distributed logger always has two logging classes instead of one, the forwarding logger and the central logger. The following is an example of how to attach a custom forwarding logger named XMLForwardingLogger.  
+## <a name="using-the-configurableforwardinglogger-for-simple-distributed-logging"></a>Utilisation de ConfigurableForwardingLogger pour une journalisation distribuée simple  
+ Pour joindre ConfigurableForwardingLogger ou un journal de transfert personnalisé, utilisez le commutateur `/distributedlogger` (`/dl`, en abrégé) dans une build de ligne de commande MSBuild.exe. Le format de nom des types et des classes du journal est le même que celui du commutateur `/logger`, sauf qu’un journal distribué a toujours deux classes de journalisation au lieu d’une : le journal de transfert et le journal central. Voici un exemple dans lequel est joint un journal de transfert personnalisé nommé XMLForwardingLogger.  
   
 ```  
 msbuild.exe myproj.proj/distributedlogger:XMLCentralLogger,MyLogger,Version=1.0.2,Culture=neutral*XMLForwardingLogger,MyLogger,Version=1.0.2,Culture=neutral  
 ```  
   
 > [!NOTE]
->  An asterisk (*) must separate the two logger names in the `/dl` switch.  
+>  Un astérisque (*) doit séparer les deux noms de journaux dans le commutateur `/dl`.  
   
- Using the ConfigurableForwardingLogger is like using any other logger (as outlined in [Obtaining Build Logs](../msbuild/obtaining-build-logs-with-msbuild.md)), except that you attach the ConfigurableForwardingLogger logger instead of the typical [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] logger and you specify as parameters the events that you want the ConfigurableForwardingLogger to pass on to the central node.  
+ L’utilisation de ConfigurableForwardingLogger est similaire à celle des autres journaux (comme décrit dans [Obtention de journaux de génération](../msbuild/obtaining-build-logs-with-msbuild.md)), sauf que vous joignez le journal ConfigurableForwardingLogger au lieu du journal [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] type, et que vous spécifiez, comme paramètres, les événements que ConfigurableForwardingLogger doit passer au nœud central.  
   
- For example, if you want to be notified only when a build starts and ends, and when an error occurs, you would pass `BUILDSTARTEDEVENT`, `BUILDFINISHEDEVENT`, and `ERROREVENT` as parameters. Multiple parameters can be passed by separating them with semi-colons. The following is an example of how to use the ConfigurableForwardingLogger to forward only the `BUILDSTARTEDEVENT`, `BUILDFINISHEDEVENT`, and `ERROREVENT` events.  
+ Par exemple, si vous souhaitez être averti uniquement au début et à la fin d’une génération, et lorsqu’une erreur se produit, vous pouvez passer `BUILDSTARTEDEVENT`, `BUILDFINISHEDEVENT` et `ERROREVENT` comme paramètres. Pour passer plusieurs paramètres, séparez-les par des points-virgules. Voici un exemple d’utilisation de ConfigurableForwardingLogger pour transférer uniquement les événements `BUILDSTARTEDEVENT`, `BUILDFINISHEDEVENT` et `ERROREVENT`.  
   
 ```  
 msbuild.exe myproj.proj /distributedlogger:XMLCentralLogger,MyLogger,Version=1.0.2,Culture=neutral*ConfigureableForwardingLogger,C:\My.dll;BUILDSTARTEDEVENT; BUILDFINISHEDEVENT;ERROREVENT  
 ```  
   
- The following is a list of the available ConfigurableForwardingLogger parameters.  
+ Voici la liste des paramètres disponibles pour ConfigurableForwardingLogger.  
   
-|ConfigurableForwardingLogger Parameters|  
+|Paramètres de ConfigurableForwardingLogger|  
 |---------------------------------------------|  
 |BUILDSTARTEDEVENT|  
 |BUILDFINISHEDEVENT|  
@@ -130,5 +114,5 @@ msbuild.exe myproj.proj /distributedlogger:XMLCentralLogger,MyLogger,Version=1.0
 |NOSUMMARY|  
 |SHOWCOMMANDLINE|  
   
-## <a name="see-also"></a>See Also  
- [Creating Forwarding Loggers](../msbuild/creating-forwarding-loggers.md)
+## <a name="see-also"></a>Voir aussi  
+ [Création de journaux d’événements de transfert](../msbuild/creating-forwarding-loggers.md)

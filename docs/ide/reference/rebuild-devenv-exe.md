@@ -1,68 +1,68 @@
 ---
-title: "/Rebuild (devenv.exe) | Microsoft Docs"
-ms.custom: ""
-ms.date: "12/05/2016"
-ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-general"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-helpviewer_keywords: 
-  - "/rebuild (commutateur de Devenv)"
-  - "applications (Visual Studio), régénérer"
-  - "Devenv, /rebuild (commutateur)"
-  - "projets (Visual Studio), régénérer"
-  - "/rebuild (commutateur de Devenv)"
+title: -Rebuild (devenv.exe) | Microsoft Docs
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-general
+ms.tgt_pltfrm: 
+ms.topic: article
+helpviewer_keywords:
+- Devenv, /rebuild switch
+- rebuild Devenv switch (/rebuild)
+- projects [Visual Studio], rebuilding
+- /rebuild Devenv switch
+- applications [Visual Studio], rebuilding
 ms.assetid: c5a8a4bf-0e2b-46eb-a44a-8aeb29b92c32
-caps.latest.revision: 12
-caps.handback.revision: 12
-author: "kempb"
-ms.author: "kempb"
-manager: "ghogen"
+caps.latest.revision: "12"
+author: gewarren
+ms.author: gewarren
+manager: ghogen
+ms.openlocfilehash: fcabe7b1ce4130eb52369ff9f16900b1979b8582
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: HT
+ms.contentlocale: fr-FR
+ms.lasthandoff: 10/31/2017
 ---
-# /Rebuild (devenv.exe)
-[!INCLUDE[vs2017banner](../../code-quality/includes/vs2017banner.md)]
-
-Nettoie puis génère la configuration de solution spécifiée.  
+# <a name="rebuild-devenvexe"></a>/Rebuild (devenv.exe)
+Nettoie, puis génère la configuration de solution spécifiée.  
   
-## Syntaxe  
+## <a name="syntax"></a>Syntaxe  
   
 ```  
 devenv SolutionName /rebuild SolnConfigName [/project ProjName] [/projectconfig ProjConfigName]  
 ```  
   
-## Arguments  
+## <a name="arguments"></a>Arguments  
  `SolnConfigName`  
- Requis.  Nom de la configuration de solution qui sera utilisée pour régénérer la solution nommée dans `SolutionName`.  
+ Obligatoire. Nom de la configuration de solution à utiliser pour regénérer la solution nommée dans `SolutionName`.  
   
  `SolutionName`  
- Requis.  Chemin d'accès complet et nom du fichier solution.  
+ Obligatoire. Chemin complet et nom du fichier solution.  
   
- \/project `ProjName`  
- Optionnel.  Chemin d'accès et nom d'un fichier projet dans la solution.  Vous pouvez entrer un chemin d'accès relatif du dossier `SolutionName` au fichier projet, le nom complet du projet ou le chemin d'accès complet et le nom du fichier projet.  
+ /project `ProjName`  
+ Facultatif. Chemin et nom d’un fichier projet dans la solution. Vous pouvez entrer un chemin relatif du dossier `SolutionName` vers le fichier projet, le nom d’affichage du projet ou encore le chemin complet et le nom du fichier projet.  
   
- \/projectconfig `ProjConfigName`  
- Optionnel.  Le nom d'une configuration de build de projet à utiliser lors de la régénération du `/project` nommé.  
+ /projectconfig `ProjConfigName`  
+ Facultatif. Nom d’une configuration de build de projet à utiliser lors de la regénération du `/project` nommé.  
   
-## Notes  
+## <a name="remarks"></a>Remarques  
   
--   Ce commutateur exécute la même fonction que la commande de menu **Régénérer la solution** dans l'environnement de développement intégré \(IDE\).  
+-   Ce commutateur exécute la même fonction que la commande de menu **Regénérer la solution** dans l’environnement de développement intégré (IDE).  
   
--   Mettez les chaînes qui comprennent des espaces entre des guillemets doubles.  
+-   Placez entre guillemets doubles les chaînes contenant des espaces.  
   
--   Les informations résumées pour les nettoyages et les générations, y compris les erreurs, peuvent être affichées dans la fenêtre **Commande**, ou dans tout fichier journal spécifié avec le commutateur `/out`.  
+-   Les informations résumées pour les nettoyages et les builds, notamment les erreurs, peuvent être affichées dans la fenêtre **Commande**, ou dans tout fichier journal spécifié avec le commutateur `/out`.  
   
-## Exemple  
- Cet exemple nettoie et régénère le projet `CSharpWinApp`, à l'aide de la configuration de build de projet `Debug` dans la configuration de solution `Debug` de `MySolution`.  
+## <a name="example"></a>Exemple  
+ Cet exemple nettoie et regénère le projet `CSharpWinApp` en utilisant la configuration de build de projet `Debug` présente dans la configuration de solution `Debug` de `MySolution`.  
   
 ```  
 devenv "C:\Documents and Settings\someuser\My Documents\Visual Studio\Projects\MySolution\MySolution.sln" /rebuild Debug /project "CSharpWinApp\CSharpWinApp.csproj" /projectconfig Debug   
 ```  
   
-## Voir aussi  
- [Commutateurs de la ligne de commande de Devenv](../../ide/reference/devenv-command-line-switches.md)   
- [\/Build](../../ide/reference/build-devenv-exe.md)   
- [\/Clean](../../ide/reference/clean-devenv-exe.md)   
- [\/Out](../../ide/reference/out-devenv-exe.md)
+## <a name="see-also"></a>Voir aussi  
+ [Commutateurs de la ligne de commande Devenv](../../ide/reference/devenv-command-line-switches.md)   
+ [/Build (devenv.exe)](../../ide/reference/build-devenv-exe.md)   
+ [/Clean (devenv.exe)](../../ide/reference/clean-devenv-exe.md)   
+ [/Out (devenv.exe)](../../ide/reference/out-devenv-exe.md)

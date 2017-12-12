@@ -1,36 +1,51 @@
 ---
-title: "Personnaliser la Visionneuse d&#39;aide | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-general"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "hv_options"
-helpviewer_keywords: 
-  - "Help Viewer 2.0, Options de la visionneuse"
-  - "Options de la visionneuse (Help Viewer 2.0)"
+title: Personnaliser Help Viewer | Microsoft Docs
+ms.custom: 
+ms.date: 11/02/2017
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-help-viewer
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords: hv_options
+helpviewer_keywords:
+- Help Viewer, Viewer Options
+- Viewer Options [Help Viewer]
 ms.assetid: 9c0bc950-7323-4f0f-8de2-0b0af9a42b85
-caps.latest.revision: 11
-author: "kempb"
-ms.author: "kempb"
-manager: "ghogen"
-caps.handback.revision: 11
+caps.latest.revision: "11"
+author: gewarren
+ms.author: gewarren
+manager: ghogen
+ms.openlocfilehash: 42e686558088e549e43a91effee0d4938401ea9c
+ms.sourcegitcommit: ec1c7e7e3349d2f3a4dc027e7cfca840c029367d
+ms.translationtype: HT
+ms.contentlocale: fr-FR
+ms.lasthandoff: 11/07/2017
 ---
-# Personnaliser la Visionneuse d&#39;aide
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
+# <a name="customize-the-help-viewer"></a>Personnaliser Help Viewer
+Vous pouvez personnaliser la disposition des fenêtres Help Viewer, ainsi que d’autres options telles que la taille de la police, le nombre maximal de résultats et l’affichage ou non du contenu en anglais.
 
-Configurez plusieurs fonctionnalités de la visionneuse d'aide à l'aide de la boîte de dialogue **Options de la visionneuse**.  
+## <a name="customizing-window-layout"></a>Personnalisation de la disposition de la fenêtre
+Vous pouvez personnaliser la disposition de la fenêtre Help Viewer. Pour restaurer la disposition par défaut de la fenêtre Help Viewer, ouvrez la boîte de dialogue **Options de la visionneuse**, puis choisissez le bouton **Réinitialiser**.  
+
+### <a name="docking-tabs"></a>Ancrage des onglets
+Help Viewer prend en charge la fonctionnalité d’ancrage standard. Par défaut, tous les onglets Help Viewer sont ancrés, mais vous pouvez les déplacer, les redimensionner, les ancrer ailleurs et les rendre « flottants » pour les faire apparaître sous la forme de fenêtres enfants indépendantes.
   
-## Définition des options de la visionneuse  
- Ouvrez la boîte de dialogue **Options de la visionneuse** en cliquant sur le bouton **Options de la visionneuse** dans la barre d'outils.  
+### <a name="opening-a-topic-in-a-new-tab"></a>Ouverture d’une rubrique sous un nouvel onglet
+Choisissez une rubrique sous n’importe quel onglet de navigation, puis appuyez sur **Ctrl+Entrée**.
   
-|Pour effectuer cette tâche :|Prenez cette mesure :|  
-|----------------------------------|---------------------------|  
-|Remplacez la taille de la police dans laquelle le texte s'affiche|Sélectionnez une taille dans la liste **Taille du texte**.|  
-|Modifiez le nombre maximal de résultats de recherche qui s'affichent dans l'onglet **Rechercher**|Sélectionnez une valeur dans la liste **Nombre maximal de résultats de recherche**.|  
-|Modifiez le nombre maximal d'entrées d'historique qui s'affichent dans la fenêtre **Favoris**|Sélectionnez une valeur dans la liste **Nombre maximal d'entrées d'historique enregistrées**.|  
-|Vous pouvez inclure ou exclure le contenu en anglais lorsque vous affichez le contenu d'une version d'un produit dans une langue autre que l'anglais.|Activez ou désactivez la case à cocher **Inclure le contenu en anglais dans tous les onglets de navigation et l'aide demandée via la touche F1**. **Caution:**  Cette fonctionnalité contrôle également si vous pouvez télécharger le contenu en anglais dans l'onglet **Gérer le contenu**.|
+### <a name="minimize-a-navigation-tab"></a>Réduire un onglet de navigation
+Augmentez l’espace disponible pour l’affichage de rubriques en choisissant l’icône d’épingle pour les onglets de navigation. Quand ces onglets sont réduits, seules les étiquettes s’affichent sur le bord le plus proche de la fenêtre. Pour restaurer les onglets, choisissez l’étiquette d’un onglet, puis choisissez à nouveau l’icône d’épingle.
+  
+## <a name="changing-settings-in-viewer-options"></a>Modification des paramètres dans les options de la visionneuse  
+Pour ouvrir la boîte de dialogue **Options de la visionneuse**, sélectionnez le bouton **Options de la visionneuse** dans la barre d’outils.  
+  
+|Tâche à effectuer|Étape à suivre|  
+|---------------------------|---------------------|  
+|Changer la taille de la police du texte qui s’affiche|Choisissez une taille dans la liste **Taille du texte**.|  
+|Changer le nombre maximal de résultats de recherche qui s’affichent sous l’onglet **Recherche**|Choisissez une valeur dans la liste **Nombre maximal de résultats de recherche**.|  
+|Changer le nombre maximal d’entrées d’historique qui s’affichent dans la fenêtre **Favoris**|Choisissez une valeur dans la liste **Nombre maximal d’entrées d’historique enregistrées**.|  
+|Ajouter ou non le contenu en anglais quand vous affichez le contenu d’une version d’un produit dans une langue autre que l’anglais|Cochez ou décochez la case **Inclure le contenu en anglais dans tous les onglets de navigation et l’aide demandée via la touche F1**. **Attention :** Cette fonctionnalité contrôle également la possibilité de télécharger, ou non, le contenu en anglais sous l’onglet **Gérer le contenu**.|
+
+## <a name="see-also"></a>Voir aussi
+[Microsoft Help Viewer](../ide/microsoft-help-viewer.md)

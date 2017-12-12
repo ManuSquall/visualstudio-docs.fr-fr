@@ -1,56 +1,56 @@
 ---
-title: "Warning Task | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "http://schemas.microsoft.com/developer/msbuild/2003#Warning"
-dev_langs: 
-  - "VB"
-  - "CSharp"
-  - "C++"
-  - "jsharp"
-helpviewer_keywords: 
-  - "Warning task [MSBuild]"
-  - "MSBuild, Warning task"
+title: "Warning, tâche | Microsoft Docs"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords: http://schemas.microsoft.com/developer/msbuild/2003#Warning
+dev_langs:
+- VB
+- CSharp
+- C++
+- jsharp
+helpviewer_keywords:
+- Warning task [MSBuild]
+- MSBuild, Warning task
 ms.assetid: 96ba5507-8b43-4f54-a1d7-9b15644dd56c
-caps.latest.revision: 18
-author: "kempb"
-ms.author: "kempb"
-manager: "ghogen"
-caps.handback.revision: 18
+caps.latest.revision: "18"
+author: kempb
+ms.author: kempb
+manager: ghogen
+ms.openlocfilehash: a7fca3c4981a038bba4d84c520704f1a43e01b1e
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: HT
+ms.contentlocale: fr-FR
+ms.lasthandoff: 10/31/2017
 ---
-# Warning Task
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
-
-Enregistre un avertissement lors d'une génération selon une instruction conditionnelle évaluée.  
+# <a name="warning-task"></a>Warning, tâche
+Enregistre un avertissement durant une génération en fonction d’une instruction conditionnelle évaluée.  
   
-## Paramètres  
- Le tableau suivant décrit les paramètres de la tâche `Warning`.  
+## <a name="parameters"></a>Paramètres  
+ Le tableau ci-dessous décrit les paramètres de la tâche `Warning`.  
   
 |Paramètre|Description|  
 |---------------|-----------------|  
-|`Code`|Paramètre `String` facultatif.<br /><br /> Code d'avertissement à associer à l'avertissement.|  
-|`File`|Paramètre `String` facultatif.<br /><br /> Spécifie le fichier pertinent, le cas échéant.  Si aucun fichier n'est fourni, le fichier qui contient la tâche d'avertissement \(Warning\) est utilisé.|  
-|`HelpKeyword`|Paramètre `String` facultatif.<br /><br /> Mot clé d'aide à associer à l'avertissement.|  
-|`Text`|Paramètre `String` facultatif.<br /><br /> Texte d'avertissement enregistré par [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] si le paramètre `Condition` prend la valeur `true`.|  
+|`Code`|Paramètre `String` facultatif.<br /><br /> Code d’avertissement à associer à l’avertissement.|  
+|`File`|Paramètre `String` facultatif.<br /><br /> Spécifie le fichier approprié, le cas échéant. Si aucun fichier n’est fourni, le fichier qui contient la tâche d’avertissement (Warning) est utilisé.|  
+|`HelpKeyword`|Paramètre `String` facultatif.<br /><br /> Mot clé d’aide à associer à l’avertissement.|  
+|`Text`|Paramètre `String` facultatif.<br /><br /> Texte d’avertissement que [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] journalise si le paramètre `Condition` a la valeur `true`.|  
   
-## Notes  
- La tâche `Warning` permet aux projets [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] de rechercher la présence d'une configuration ou d'une propriété requise avant de passer à l'étape de génération suivante.  
+## <a name="remarks"></a>Remarques  
+ La tâche `Warning` permet aux projets [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] de vérifier la présence d’une configuration requise ou d’une propriété obligatoire avant de passer à l’étape de génération suivante.  
   
- Si le paramètre `Condition` de la tâche `Warning` a la valeur `true`, la valeur de l'attribut `Text` est enregistrée dans un journal et la génération se poursuit.  Si un paramètre `Condition` n'existe pas, le texte d'avertissement est enregistré dans un journal.  Pour plus d'informations sur la journalisation, consultez [Obtention de journaux de génération](../msbuild/obtaining-build-logs-with-msbuild.md).  
+ Si le paramètre `Condition` de la tâche `Warning` a la valeur `true`, la valeur du paramètre `Text` est journalisée et la génération se poursuit. Si aucun paramètre `Condition` n’existe, le texte de l’avertissement est journalisé. Pour plus d’informations sur la journalisation, consultez l’article [Obtention de journaux de génération avec MSBuild](../msbuild/obtaining-build-logs-with-msbuild.md).  
   
- En plus des paramètres énumérés ci\-dessus, cette tâche hérite des paramètres de la classe <xref:Microsoft.Build.Tasks.TaskExtension>, qui hérite elle\-même de la classe <xref:Microsoft.Build.Utilities.Task>.  Pour obtenir la liste de ces paramètres supplémentaires et de leurs descriptions, consultez [TaskExtension Base Class](../msbuild/taskextension-base-class.md).  
+ En plus des paramètres énumérés ci-dessus, cette tâche hérite des paramètres de la classe <xref:Microsoft.Build.Tasks.TaskExtension>, qui elle-même hérite de la classe <xref:Microsoft.Build.Utilities.Task>. Pour obtenir la liste de ces paramètres supplémentaires et leurs descriptions, consultez [Classe de base TaskExtension](../msbuild/taskextension-base-class.md).  
   
-## Exemple  
- L'exemple de code suivant vérifie les propriétés définies dans la ligne de commande.  En l'absence de propriétés définies, le projet déclenche un événement d'avertissement et enregistre la valeur du paramètre `Text` de la tâche `Warning` dans un journal.  
+## <a name="example"></a>Exemple  
+ L’exemple de code suivant vérifie les propriétés définies sur la ligne de commande. Si aucune propriété n’est définie, le projet déclenche un événement d’avertissement et journalise la valeur du paramètre `Text` de la tâche `Warning`.  
   
-```  
+```xml  
 <Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">  
     <Target Name="ValidateCommandLine">  
         <Warning  
@@ -64,6 +64,6 @@ Enregistre un avertissement lors d'une génération selon une instruction condit
 </Project>  
 ```  
   
-## Voir aussi  
+## <a name="see-also"></a>Voir aussi  
  [Obtention de journaux de génération](../msbuild/obtaining-build-logs-with-msbuild.md)   
- [Project File Schema Reference](../msbuild/msbuild-project-file-schema-reference.md)
+ [Référence du schéma de fichier projet](../msbuild/msbuild-project-file-schema-reference.md)

@@ -1,22 +1,26 @@
 ---
-title: "Fonction JsGetTypedArrayInfo | Microsoft Docs"
-ms.custom: ""
-ms.date: "01/18/2017"
-ms.reviewer: ""
-ms.suite: ""
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+title: JsGetTypedArrayInfo, fonction | Microsoft Docs
+ms.custom: 
+ms.date: 01/18/2017
+ms.reviewer: 
+ms.suite: 
+ms.tgt_pltfrm: 
+ms.topic: article
 ms.assetid: 992bc4e9-3d06-4ad2-8b6b-88a437360f81
-caps.latest.revision: 3
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 3
+caps.latest.revision: "3"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: 44897f3960b09a110c1f1dd288f08bd5b9edc7ed
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.translationtype: HT
+ms.contentlocale: fr-FR
+ms.lasthandoff: 10/27/2017
 ---
-# Fonction JsGetTypedArrayInfo
+# <a name="jsgettypedarrayinfo-function"></a>Fonction JsGetTypedArrayInfo
 Obtient les propriétés fréquemment utilisées d’un tableau typé.  
   
-## Syntaxe  
+## <a name="syntax"></a>Syntaxe  
   
 ```  
 STDAPI_(JsErrorCode) JsGetTypedArrayInfo(  
@@ -29,7 +33,7 @@ STDAPI_(JsErrorCode) JsGetTypedArrayInfo(
   
 ```  
   
-#### Paramètres  
+#### <a name="parameters"></a>Paramètres  
  `typedArray`  
  Instance de tableau typé.  
   
@@ -45,14 +49,14 @@ STDAPI_(JsErrorCode) JsGetTypedArrayInfo(
  `byteLength`  
  Nombre d'octets dans le tableau.  
   
-## Valeur de retour  
+## <a name="return-value"></a>Valeur de retour  
  Le code `JsNoError` si l'opération a réussi, sinon un code d'échec.  
   
-## Notes  
+## <a name="remarks"></a>Remarques  
  Nécessite un contexte de script actif.  
   
-## Configuration requise  
- **En\-tête :** jsrt.h  
+## <a name="requirements"></a>Spécifications  
+ **En-tête :** jsrt.h  
   
-## Voir aussi  
- [Référence \(JavaScript Runtime\)](../chakra-hosting/reference-javascript-runtime.md)
+## <a name="see-also"></a>Voir aussi  
+ [Référence (JavaScript Runtime)](../chakra-hosting/reference-javascript-runtime.md)

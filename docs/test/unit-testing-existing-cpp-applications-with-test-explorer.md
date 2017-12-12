@@ -1,23 +1,12 @@
 ---
-title: "Réalisation de tests unitaires d’applications C++ existantes avec l’Explorateur de tests | Microsoft Docs"
-ms.custom: 
-ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-devops-test
-ms.tgt_pltfrm: 
-ms.topic: article
-ms.assetid: 7d08de69-c32e-4f0b-89aa-75347b15fb82
-caps.latest.revision: "11"
-ms.author: douge
-manager: douge
-ms.openlocfilehash: 665e16720466faff5dd52635066198e36d58d117
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+redirect_url: /visualstudio/test/how-to-use-microsoft-test-framework-for-cpp
+ms.openlocfilehash: 7ab917a55d9a2d00a8d4635e2de45cd43cbe02f2
+ms.sourcegitcommit: fb751e41929f031d1a9247bc7c8727312539ad35
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 11/15/2017
 ---
-# <a name="unit-testing-existing-c-applications-with-test-explorer"></a>Applications C++ existantes de tests unitaires avec Test Explorer
+# <a name="how-to-use-the-microsoft-unit-testing-framework-for-c"></a>Guide pratique pour utiliser le framework de tests unitaires Microsoft pour C++
 Nous vous recommandons, avant de modifier une application existante, de vérifier qu'elle a une bonne couverture de tests unitaires. Vous êtes ainsi sûr que vos modifications n'ont pas introduit de bogues. Si l'application n'a pas encore de tests unitaires, vous pouvez les ajouter à l'aide des techniques expliquées dans cette rubrique. Cette rubrique décrit comment ajouter des tests unitaires pour du code Visual C++ existant, en commençant par choisir comment tester votre code, puis en créant, écrivant et enfin exécutant les tests.  
   
 ## <a name="deciding-how-to-test-your-code"></a>Décider comment tester votre code  
@@ -29,7 +18,7 @@ Nous vous recommandons, avant de modifier une application existante, de vérifie
   
  Il existe plusieurs façons de tester le code du produit, selon qu'il expose les interfaces que vous souhaitez tester. Choisissez l'un des moyens suivants :  
   
- **Les tests unitaires utilisent uniquement les fonctions exportées à partir du code testé :**  
+ **Les tests unitaires peuvent appeler seulement des fonctions exportées à partir du code testé :**  
  Ajoutez un projet de test distinct. Dans ce projet de test, ajoutez une référence au projet testé.  
   
  Passez à la procédure [Pour référencer des fonctions exportées depuis le projet de test](#projectRef).  
@@ -46,7 +35,7 @@ Nous vous recommandons, avant de modifier une application existante, de vérifie
   
  Passez à la procédure [Pour changer le code testé en une bibliothèque statique](#staticLink).  
   
- **Les tests unitaires doivent utiliser des données et des fonctions privées, et le code doit être généré sous la forme d’une bibliothèque de liens dynamiques (DLL) :**  
+ **Les tests unitaires doivent utiliser des données et des fonctions de membres privés, et le code doit être généré sous la forme d’une bibliothèque de liens dynamiques (DLL) :**  
  Ajoutez les tests unitaires dans le même projet que le code du produit.  
   
  Passez à la procédure [Pour ajouter des tests unitaires dans le même projet](#sameProject).  
@@ -65,9 +54,9 @@ Nous vous recommandons, avant de modifier une application existante, de vérifie
   
  Poursuivez avec la procédure [Pour lier les tests aux fichiers objets ou bibliothèques](#objectRef).  
   
-###  <a name="projectRef"></a> Pour référencer des fonctions exportées depuis le projet de test  
+###  <a name="projectRef"></a> Pour référencer des fonctions de DLL exportées depuis le projet de test  
   
--   Si un projet testé exporte les fonctions que vous souhaitez tester, vous pouvez ajouter une référence au projet de code à partir du projet de test.  
+-   Si un projet testé est une DLL qui exporte les fonctions que vous voulez tester, vous pouvez ajouter une référence au projet de code depuis le projet de test.  
   
     1.  Créez un projet de test C++.  
   
@@ -162,8 +151,11 @@ Nous vous recommandons, avant de modifier une application existante, de vérifie
   
 ## <a name="run-the-tests"></a>Exécuter les tests  
   
-1.  Dans le menu **Affichage** , choisissez **Autres fenêtres**, **Explorateur de tests**.  
+1.  Dans le menu **Test**, choisissez **Fenêtres**, puis **Explorateur de tests**.  
+2. Si tous vos tests ne sont pas visibles dans la fenêtre, générez le projet de test en cliquant avec le bouton droit sur son nœud dans **l’Explorateur de solutions** et en choisissant **Générer** ou **Régénérer**.
   
-2.  Dans l'Explorateur de tests, choisissez **Exécuter tout**.  
+2.  Dans l’Explorateur de tests, choisissez **Exécuter tout** ou sélectionnez les tests spécifiques à exécuter. Cliquez avec le bouton droit sur un test pour accéder à d’autres options, notamment son exécution en mode débogage avec des points d’arrêt activés.
   
- Pour plus d’informations, consultez [Démarrage rapide : développement piloté par les tests avec l’Explorateur de tests](../test/quick-start-test-driven-development-with-test-explorer.md).
+## <a name="see-also"></a>Voir aussi
+[Démarrage rapide : développement piloté par les tests avec l’Explorateur de tests](../test/quick-start-test-driven-development-with-test-explorer.md)
+

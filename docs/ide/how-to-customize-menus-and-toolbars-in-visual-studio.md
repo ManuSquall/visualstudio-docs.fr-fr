@@ -4,8 +4,7 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-general
+ms.technology: vs-ide-general
 ms.tgt_pltfrm: 
 ms.topic: article
 f1_keywords:
@@ -28,48 +27,23 @@ helpviewer_keywords:
 - toolbars [Visual Studio], customizing
 - toolbars [Visual Studio], customizing in the IDE
 ms.assetid: b570ae2f-5302-45dc-9cc9-8d4d1ad50603
-caps.latest.revision: 28
+caps.latest.revision: "28"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-translation.priority.ht:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 5db97d19b1b823388a465bba15d057b30ff0b3ce
-ms.openlocfilehash: 0ca0020fa9025e57df874f8fa8b5eb41e63a8c29
-ms.contentlocale: fr-fr
-ms.lasthandoff: 02/22/2017
-
+ms.openlocfilehash: 124448e5c989597361f678b290fe345968f0cf08
+ms.sourcegitcommit: ec1c7e7e3349d2f3a4dc027e7cfca840c029367d
+ms.translationtype: HT
+ms.contentlocale: fr-FR
+ms.lasthandoff: 11/07/2017
 ---
 # <a name="how-to-customize-menus-and-toolbars-in-visual-studio"></a>Comment : personnaliser des menus et des barres d'outils dans Visual Studio
-Vous pouvez personnaliser Visual Studio non seulement en ajoutant et en supprimant des barres d'outils et des menus dans la barre de menus, mais aussi en ajoutant et en supprimant des commandes dans une barre d'outils ou un menu quelconques.  
+Vous pouvez personnaliser Visual Studio non seulement en ajoutant et en supprimant des barres d’outils et des menus dans la barre de menus, mais aussi en ajoutant et en supprimant des commandes dans une barre d’outils ou un menu.  
   
 > [!WARNING]
->  Après avoir personnalisé une barre d’outils ou un menu, veillez à ce que sa case demeure cochée dans la boîte de dialogue **Personnaliser**. Dans le cas contraire, vos modifications ne seront pas conservées une fois que vous aurez fermé et rouvert Visual Studio.  
+>  Après avoir personnalisé une barre d’outils ou un menu, veillez à ce que sa case demeure cochée dans la boîte de dialogue **Personnaliser**. Dans le cas contraire, vos modifications ne seront pas conservées une fois que vous aurez fermé et rouvert Visual Studio.
   
- **Dans cette rubrique :**  
-  
--   [Ajout, suppression ou déplacement d’un menu dans la barre de menus](../ide/how-to-customize-menus-and-toolbars-in-visual-studio.md#bkmk_addmenu)  
-  
--   [Ajout, suppression ou déplacement d’une barre d’outils](../ide/how-to-customize-menus-and-toolbars-in-visual-studio.md#bkmk_addtoolbar)  
-  
--   [Personnalisation d’un menu ou d’une barre d’outils](../ide/how-to-customize-menus-and-toolbars-in-visual-studio.md#bkmk_customize)  
-  
--   [Réinitialisation d’un menu ou d’une barre d’outils](../ide/how-to-customize-menus-and-toolbars-in-visual-studio.md#bkmk_reset)  
-  
-##  <a name="bkmk_addmenu"></a> Ajout, suppression ou déplacement d’un menu dans la barre de menus  
+## <a name="adding-removing-or-moving-a-menu-on-the-menu-bar"></a>Ajout, suppression ou déplacement d'un menu dans la barre de menus  
   
 1.  Dans la barre de menus, choisissez **Outils**, **Personnaliser**.  
   
@@ -79,13 +53,13 @@ Vous pouvez personnaliser Visual Studio non seulement en ajoutant et en supprima
   
     -   Pour ajouter un menu, choisissez le bouton **Ajouter un nouveau menu**, choisissez le bouton **Modifier la sélection**, puis nommez le menu à ajouter.  
   
-         ![Boîte de dialogue Personnaliser montrant comment ajouter un menu](../ide/media/addmenu.png "AddMenu")  
+        ![Boîte de dialogue Personnaliser montrant comment ajouter un menu](../ide/media/addmenu.png "AddMenu")  
   
     -   Pour supprimer un menu, choisissez-le dans la liste **Contrôles**, puis choisissez le bouton **Supprimer**.  
   
     -   Pour déplacer un menu dans la barre de menus, choisissez le menu dans la liste **Contrôles**, puis choisissez le bouton **Monter** ou **Descendre**.  
   
-##  <a name="bkmk_addtoolbar"></a> Ajout, suppression ou déplacement d’une barre d’outils  
+## <a name="adding-removing-or-moving-a-toolbar"></a>Ajout, suppression ou déplacement d'une barre d'outils  
   
 1.  Dans la barre de menus, choisissez **Outils**, **Personnaliser**.  
   
@@ -95,7 +69,7 @@ Vous pouvez personnaliser Visual Studio non seulement en ajoutant et en supprima
   
     -   Pour ajouter une barre d’outils, choisissez le bouton **Nouveau**, spécifiez le nom de la barre d’outils à ajouter, puis choisissez le bouton **OK**.  
   
-         ![Boîte de dialogue Personnaliser montrant comment ajouter une barre d’outils](../ide/media/addtoolbar.png "AddToolbar")  
+        ![Boîte de dialogue Personnaliser montrant comment ajouter une barre d’outils](../ide/media/addtoolbar.png "AddToolbar")  
   
     -   Pour supprimer une barre d’outils personnalisée, choisissez-la dans la liste **Barres d’outils**, puis choisissez le bouton **Supprimer**.  
   
@@ -104,16 +78,16 @@ Vous pouvez personnaliser Visual Studio non seulement en ajoutant et en supprima
   
     -   Pour déplacer une barre d’outils vers un autre emplacement d’ancrage, choisissez-la dans la liste **Barres d’outils**, choisissez le bouton **Modifier la sélection**, puis choisissez un emplacement dans la liste qui s’affiche.  
   
-         Vous pouvez également faire glisser le bord gauche d'une barre d'outils pour placer cette dernière n'importe où dans la zone d'ancrage principale.  
+        Vous pouvez également faire glisser le bord gauche d'une barre d'outils pour placer cette dernière n'importe où dans la zone d'ancrage principale.  
   
         > [!NOTE]
         >  Pour plus d’informations sur l’amélioration de l’utilisation et de l’accessibilité des barres d’outils, consultez [Guide pratique pour définir les options d’accessibilité IDE](../ide/reference/how-to-set-ide-accessibility-options.md).  
   
-##  <a name="bkmk_customize"></a> Personnalisation d’un menu ou d’une barre d’outils  
+## <a name="customizing_menu">Personnalisation d’un menu ou d’une barre d’outils</a>
   
 1.  Dans la barre de menus, choisissez **Outils**, **Personnaliser**.  
   
-     La boîte de dialogue **Personnaliser** s’affiche.  
+    La boîte de dialogue **Personnaliser** s’affiche.  
   
 2.  Sous l’onglet **Commandes**, choisissez la case d’option correspondant au type d’élément que vous souhaitez personnaliser.  
   
@@ -121,21 +95,21 @@ Vous pouvez personnaliser Visual Studio non seulement en ajoutant et en supprima
   
     -   Pour ajouter une commande, choisissez le bouton **Ajouter une commande**.  
   
-         Dans la boîte de dialogue **Ajouter une commande**, choisissez un élément dans la liste **Catégories**, choisissez un élément dans la liste **Commandes**, puis choisissez le bouton **OK**.  
+        Dans la boîte de dialogue **Ajouter une commande**, choisissez un élément dans la liste **Catégories**, choisissez un élément dans la liste **Commandes**, puis choisissez le bouton **OK**.  
   
-         ![Boîte de dialogue Ajouter une commande de Visual Studio](../ide/media/addcommand.png "AddCommand")  
+        ![Boîte de dialogue Ajouter une commande de Visual Studio](../ide/media/addcommand.png "AddCommand")  
   
     -   Pour supprimer une commande, choisissez-la dans la liste **Contrôles**, puis choisissez le bouton **Supprimer**.  
   
     -   Pour réorganiser des commandes, choisissez une commande dans la liste **Contrôles**, puis choisissez le bouton **Monter** ou **Descendre**.  
   
-    -   Pour répartir les commandes dans des groupes, choisissez une commande dans la liste **Contrôles**, choisissez le bouton **Modifier la sélection**, puis choisissez **Nouveau groupe** dans le menu qui s’affiche.  
+    -   Pour regrouper des commandes en dessous d’une ligne horizontale, choisissez la première commande dans la liste **Contrôles**, choisissez le bouton **Modifier la sélection**, puis choisissez **Nouveau groupe** dans le menu qui s’affiche.  
   
-##  <a name="bkmk_reset"></a> Réinitialisation d’un menu ou d’une barre d’outils  
+## <a name="resetting-a-menu-or-a-toolbar"></a>Réinitialisation d'un menu ou d'une barre d'outils  
   
 1.  Dans la barre de menus, choisissez **Outils**, **Personnaliser**.  
   
-     La boîte de dialogue **Personnaliser** s’affiche.  
+    La boîte de dialogue **Personnaliser** s’affiche.  
   
 2.  Sous l’onglet **Commandes**, choisissez la case d’option correspondant au type d’élément que vous souhaitez réinitialiser.  
   
@@ -143,4 +117,8 @@ Vous pouvez personnaliser Visual Studio non seulement en ajoutant et en supprima
   
 4.  Choisissez le bouton **Modifier la sélection**, puis choisissez **Réinitialiser** dans le menu qui s’affiche.  
   
-     Vous pouvez également réinitialiser l’ensemble des menus et des barres d’outils en choisissant le bouton **Réinitialiser tout**.
+    Vous pouvez également réinitialiser l’ensemble des menus et des barres d’outils en choisissant le bouton **Réinitialiser tout**.
+
+## <a name="see-also"></a>Voir aussi
+[Personnalisation de l’IDE](../ide/personalizing-the-visual-studio-ide.md)  
+[Personnalisation de l’éditeur](../ide/customizing-the-editor.md)

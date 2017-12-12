@@ -1,35 +1,35 @@
 ---
-title: "Item Functions | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-helpviewer_keywords: 
-  - "msbuild, Item functions"
+title: "Fonctions d’élément | Microsoft Docs"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+helpviewer_keywords: msbuild, Item functions
 ms.assetid: 5e6df3cc-2db8-4cbd-8fdd-3ffd03ac0876
-caps.latest.revision: 28
-author: "kempb"
-ms.author: "kempb"
-manager: "ghogen"
-caps.handback.revision: 28
+caps.latest.revision: "28"
+author: kempb
+ms.author: kempb
+manager: ghogen
+ms.openlocfilehash: 8503de5c90544e06fa7119482f67726655a4ffed
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: HT
+ms.contentlocale: fr-FR
+ms.lasthandoff: 10/31/2017
 ---
-# Item Functions
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
-
-À compter de MSBuild 4.0, le code des tâches et des cibles peut appeler des fonctions d'élément pour obtenir des informations sur les éléments dans le projet.  Ces fonctions simplifient l'obtention des éléments Distinct\(\) et sont plus rapides que l'exécution d'une boucle sur les éléments.  
+# <a name="item-functions"></a>Fonctions d'élément
+À compter de MSBuild 4.0, le code dans les tâches et les cibles peut appeler des fonctions d’élément pour obtenir des informations sur les éléments du projet. Ces fonctions simplifient l’obtention des éléments Distinct() et sont plus rapides que l’exécution d’une boucle dans les éléments.  
   
-## Fonctions d'élément de chaîne  
- Vous pouvez utiliser les méthodes et les propriétés de chaîne dans le.NET Framework pour traiter une valeur d'élément.  Pour les méthodes d' <xref:System.String> , spécifiez le nom de la méthode.  Pour les propriétés d' <xref:System.String> , spécifiez le nom de la propriété après « get\_ ».  
+## <a name="string-item-functions"></a>Fonctions d’élément de type chaîne  
+ Vous pouvez utiliser des méthodes et des propriétés de chaîne dans le .NET Framework pour manipuler n’importe quelle valeur d’élément. Pour les méthodes <xref:System.String>, spécifiez le nom de la méthode. Pour les propriétés <xref:System.String>, spécifiez le nom de la propriété après « get_ ».  
   
- Pour les éléments qui ont plusieurs chaînes, la méthode de chaîne ou des séries de propriété sur chaque chaîne.  
+ Pour les éléments qui ont plusieurs chaînes, la méthode ou la propriété de chaîne s’exécute sur chaque chaîne.  
   
- l'exemple suivant montre comment utiliser ces fonctions d'élément de chaîne.  
+ L’exemple suivant montre comment utiliser ces méthodes d’élément de type chaîne.  
   
-```  
+```xml  
 <ItemGroup>  
     <theItem Include="andromeda;tadpole;cartwheel" />  
 </ItemGroup>  
@@ -50,25 +50,25 @@ caps.handback.revision: 28
   -->  
 ```  
   
-## Fonctions intrinsèques d'élément  
- Le tableau ci\-dessous répertorie les fonctions intrinsèques disponibles pour les éléments.  
+## <a name="intrinsic-item-functions"></a>Fonctions d’élément intrinsèques  
+ Le tableau ci-dessous liste les fonctions intrinsèques disponibles pour les éléments.  
   
 |Fonction|Exemple|Description|  
 |--------------|-------------|-----------------|  
-|`Count`|`@(MyItem->Count())`|Retourne le nombre d'éléments.|  
-|`DirectoryName`|`@(MyItem->DirectoryName())`|Retourne l'équivalent d' `Path.DirectoryName` pour chaque élément.|  
-|`Distinct`|`@(MyItem->Distinct())`|Retourne les éléments qui ont des valeurs distinctes d' `Include` .  Les métadonnées sont ignorées.  La comparaison ne respecte pas la casse.|  
-|`DistinctWithCase`|`@(MyItem->DistinctWithCase())`|Retourne les éléments qui ont des valeurs distinctes d' `itemspec` .  Les métadonnées sont ignorées.  La comparaison respecte la casse.|  
-|`Reverse`|`@(MyItem->Reverse())`|Retourne les éléments dans l'ordre inverse.|  
-|`AnyHaveMetadataValue`|`@(MyItem->AnyHaveMetadataValue("MetadataName", "MetadataValue"))`|Retourne `boolean` pour indiquer si un élément est le nom de métadonnées et la valeur donnés.  La comparaison ne respecte pas la casse.|  
-|`ClearMetadata`|`@(MyItem->ClearMetadata())`|Retourne des éléments avec leurs métadonnées effacées.  Uniquement `itemspec` est conservé.|  
-|`HasMetadata`|`@(MyItem->HasMetadataValue("MetadataName")`|Retourne les éléments qui ont le nom des métadonnées donné.  La comparaison ne respecte pas la casse.|  
-|`Metadata`|`@(MyItem->Metadata("MetadataName"))`|Retourne la valeur des métadonnées portant le nom des métadonnées.|  
-|`WithMetadataValue`|`@(MyItem->WithMetadataValue("MetadataName", "MetadataValue")`|Retourne les éléments qui ont le nom des métadonnées et la valeur donnés.  La comparaison ne respecte pas la casse.|  
+|`Count`|`@(MyItem->Count())`|Retourne le nombre d’éléments.|  
+|`DirectoryName`|`@(MyItem->DirectoryName())`|Retourne l’équivalent de `Path.DirectoryName` pour chaque élément.|  
+|`Distinct`|`@(MyItem->Distinct())`|Retourne les éléments qui ont des valeurs `Include` distinctes. Les métadonnées sont ignorées. La comparaison ne respecte pas la casse.|  
+|`DistinctWithCase`|`@(MyItem->DistinctWithCase())`|Retourne les éléments qui ont des valeurs `itemspec` distinctes. Les métadonnées sont ignorées. La comparaison respecte la casse.|  
+|`Reverse`|`@(MyItem->Reverse())`|Retourne les éléments en ordre inverse.|  
+|`AnyHaveMetadataValue`|`@(MyItem->AnyHaveMetadataValue("MetadataName", "MetadataValue"))`|Retourne un `boolean` pour indiquer si un élément a le nom et la valeur des métadonnées fournies. La comparaison ne respecte pas la casse.|  
+|`ClearMetadata`|`@(MyItem->ClearMetadata())`|Retourne les éléments avec leurs métadonnées effacées. Seul `itemspec` est conservé.|  
+|`HasMetadata`|`@(MyItem->HasMetadataValue("MetadataName"))`|Retourne les éléments qui ont le nom des métadonnées fourni. La comparaison ne respecte pas la casse.|  
+|`Metadata`|`@(MyItem->Metadata("MetadataName"))`|Retourne les valeurs des métadonnées qui ont le nom des métadonnées.|  
+|`WithMetadataValue`|`@(MyItem->WithMetadataValue("MetadataName", "MetadataValue"))`|Retourne les éléments qui ont le nom et la valeur des métadonnées fournis. La comparaison ne respecte pas la casse.|  
   
- l'exemple suivant montre comment utiliser des fonctions intrinsèques d'élément.  
+ L’exemple suivant montre comment utiliser des fonctions d’élément intrinsèques.  
   
-```  
+```xml  
 <ItemGroup>  
     <TheItem Include="first">  
         <Plant>geranium</Plant>  
@@ -101,5 +101,5 @@ caps.handback.revision: 28
   -->  
 ```  
   
-## Voir aussi  
- [Items](../msbuild/msbuild-items.md)
+## <a name="see-also"></a>Voir aussi  
+ [Éléments MSBuild](../msbuild/msbuild-items.md)

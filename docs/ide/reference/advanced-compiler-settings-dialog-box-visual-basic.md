@@ -1,73 +1,72 @@
 ---
-title: "Param&#232;tres avanc&#233;s du compilateur, bo&#238;te de dialogue (Visual Basic) | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-general"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "vb.ProjectPropertiesAdvancedCompile"
-helpviewer_keywords: 
-  - "Boîte de dialogue Paramètres avancés du compilateur"
+title: "Paramètres avancés du compilateur, boîte de dialogue (Visual Basic) | Microsoft Docs"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-general
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords: vb.ProjectPropertiesAdvancedCompile
+helpviewer_keywords: Advanced Compiler Settings dialog box
 ms.assetid: 1f81133a-293f-4dba-bc1c-8baafb01d857
-caps.latest.revision: 46
-author: "kempb"
-ms.author: "kempb"
-manager: "ghogen"
-caps.handback.revision: 46
+caps.latest.revision: "46"
+author: gewarren
+ms.author: gewarren
+manager: ghogen
+ms.openlocfilehash: a6fce612245c07cf3bcd70b56b266857db88765d
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: HT
+ms.contentlocale: fr-FR
+ms.lasthandoff: 10/31/2017
 ---
-# Param&#232;tres avanc&#233;s du compilateur, bo&#238;te de dialogue (Visual Basic)
-[!INCLUDE[vs2017banner](../../code-quality/includes/vs2017banner.md)]
-
-Utilisez la boîte de dialogue **Paramètres avancés du compilateur** du **Concepteur de projets** pour spécifier les propriétés de configuration de build avancées du projet.  Cette boîte de dialogue s'applique uniquement aux projets Visual Basic.  
+# <a name="advanced-compiler-settings-dialog-box-visual-basic"></a>Paramètres avancés du compilateur, boîte de dialogue (Visual Basic)
+Utilisez la boîte de dialogue **Paramètres avancés du compilateur** du **Concepteur de projets** pour spécifier les propriétés de configuration de build avancées du projet. Cette boîte de dialogue s’applique uniquement aux projets Visual Basic.  
   
-### Pour accéder à cette boîte de dialogue  
+### <a name="to-access-this-dialog-box"></a>Pour accéder à cette boîte de dialogue  
   
-1.  Dans **Explorateur de solutions**, sélectionnez un nœud de projet \(pas le nœud **Solution** \).  
+1.  Dans l’**Explorateur de solutions**, choisissez un nœud de projet (pas le nœud **Solution**).  
   
-2.  Dans le menu **Projet**, cliquez sur **Propriétés**.  Lorsque le **Concepteur de projets** apparaît, cliquez sur l'onglet **Compiler**.  
+2.  Dans le menu **Projet**, cliquez sur **Propriétés**. Quand le **Concepteur de projets** apparaît, cliquez sur l’onglet **Compiler**.  
   
-3.  Dans [Page Compiler, Concepteur de projets \(Visual Basic\)](../../ide/reference/compile-page-project-designer-visual-basic.md), sélectionnez **Configuration** et **Plateforme**.  Dans les configurations de build simplifiées, les listes **Configuration** et **Plateforme** ne sont pas affichées.  Pour plus d'informations, consultez [Debug and Release Project Configurations](http://msdn.microsoft.com/fr-fr/0440b300-0614-4511-901a-105b771b236e).  
+3.  Dans la [page Compiler, Concepteur de projets (Visual Basic)](../../ide/reference/compile-page-project-designer-visual-basic.md), sélectionnez **Configuration** et **Plateforme**. Dans les configurations de build simplifiées, les listes **Configuration** et **Plateforme**  ne sont pas affichées. Pour plus d’informations, consultez [Configurations de projet Debug et Release](http://msdn.microsoft.com/en-us/0440b300-0614-4511-901a-105b771b236e).  
   
 4.  Cliquez sur **Options avancées de compilation**.  
   
  [!INCLUDE[note_settings_general](../../data-tools/includes/note_settings_general_md.md)]  
   
-## Optimisations  
- Les options suivantes spécifient les optimisations qui peuvent, dans certains cas, réduire la taille d'un fichier programme, rendre l'exécution d'une application plus rapide ou accélérer le processus de génération.  
+## <a name="optimizations"></a>Optimisations  
+ Les options suivantes spécifient les optimisations qui peuvent, dans certains cas, réduire la taille d’un fichier programme, rendre l’exécution d’un programme plus rapide ou accélérer le processus de génération.  
   
  **Supprimer les contrôles de dépassement sur les entiers**  
- Par défaut, cette case à cocher est désactivée pour activer la vérification de dépassement sur les entiers.  Activez cette case à cocher pour supprimer le contrôle de dépassement sur les entiers.  Si vous activez cette case à cocher, les calculs entiers peuvent être plus rapides.  Toutefois, si vous supprimez le contrôle de dépassement de capacité et des fonctions de type de données, dépassement de capacité des résultats incorrects peuvent être stockés sans erreur est déclenchée.  
+ Par défaut, cette case est décochée pour activer la vérification de dépassement sur les entiers. Cochez cette case pour supprimer la vérification de dépassement sur les entiers. Si vous cochez cette case, les calculs d’entiers peuvent être plus rapides. Toutefois, si vous supprimez la vérification de dépassement et le dépassement de capacité de type de données, des résultats incorrects peuvent être stockés sans déclencher d’erreur.  
   
- Si des rapports de dépassement de capacité sont archivés et les dépassements de capacité d'une opération d'entier, une exception d' <xref:System.OverflowException> est levée.  Si des rapports de dépassement de capacité ne sont pas contrôlés, les dépassements de capacité entiers d'exécution ne lèvent pas d'exception.  
+ Si les conditions de dépassement sont vérifiées et qu’une opération entière génère un dépassement de capacité, une exception <xref:System.OverflowException> est levée. Si les conditions de dépassement ne sont pas vérifiées, les dépassements de capacité d’une opération entière ne lèvent pas d’exception.  
   
  **Activer les optimisations**  
- Cette case à cocher est désactivée par défaut pour désactiver les optimisations du compilateur.  Activez cette case à cocher pour activer les optimisations du compilateur.  Les optimisations du compilateur diminuent la taille du fichier de sortie, le rendent plus rapide et plus efficace.  Toutefois, comme les optimisations entraînent la réorganisation de code dans le fichier de sortie, les optimisations du compilateur peuvent rendre le débogage difficile.  
+ Par défaut, cette case est décochée pour désactiver les optimisations du compilateur. Cochez cette case pour activer les optimisations du compilateur. Les optimisations du compilateur diminuent la taille du fichier de sortie, le rendent plus rapide et plus efficace. Toutefois, comme les optimisations entraînent la réorganisation de code dans le fichier de sortie, les optimisations du compilateur peuvent rendre le débogage difficile.  
   
  **Adresse de base de la DLL**  
- Cette zone de texte affiche l'adresse de base par défaut de la DLL au format hexadécimal.  Dans les projets Bibliothèque de contrôle et Bibliothèque de classe, vous pouvez utiliser cette zone de texte pour spécifier l'adresse de base à utiliser lors de la création de la DLL.  
+ Cette zone de texte affiche l’adresse de base de la DLL par défaut au format hexadécimal. Dans les projets de bibliothèque de contrôle et de bibliothèque de classes, vous pouvez utiliser cette zone de texte pour spécifier l’adresse de base à utiliser lors de la création de la DLL.  
   
- **Générer des informations de débogage**  
- Dans la liste, sélectionnez **Aucun**, **Complet** ou **pdb\-only**.  **Aucun** spécifie qu'aucune information de débogage n'est générée.  **Complet** spécifie que les informations complètes de débogage sont générées et **pdb\-only** spécifie que seules les informations de débogage PDB sont générées.  Par défaut, cette option a la valeur **Complet**.  
+ **Générer des infos de débogage**  
+ Sélectionnez **Aucun**, **Complet**  ou **pdb-only** dans la liste. **Aucun** spécifie qu’aucune information de débogage n’est générée. **Complet** spécifie que les informations complètes de débogage sont générées et **pdb-only** spécifie que seules les informations de débogage PDB sont générées. Par défaut, cette option a la valeur **Complet**.  
   
-## Constantes de compilation  
- Les constantes de compilation conditionnelle ont un effet similaire à celui à utiliser une directive de préprocesseur d' [\#Const](/dotnet/visual-basic/language-reference/directives/const-directive) dans un fichier source, mais les constantes sont publiques et s'appliquent à tous les fichiers du projet.  Vous pouvez utiliser des constantes de compilation conditionnelle avec la directive d' [\#Else \#If… Then…](/dotnet/visual-basic/language-reference/directives/if-then-else-directives) pour compiler des fichiers sources conditionnelle.  Consultez [Conditional Compilation](/dotnet/visual-basic/programming-guide/program-structure/conditional-compilation).  
+## <a name="compilation-constants"></a>Constantes de compilation  
+ Les constantes de compilation conditionnelle reviennent à utiliser une directive de préprocesseur [#Const](/dotnet/visual-basic/language-reference/directives/const-directive) dans un fichier source, sauf que les constantes définies sont publiques et s’appliquent à tous les fichiers du projet. Vous pouvez utiliser des constantes de compilation conditionnelle avec la directive [#If...Then...#Else](/dotnet/visual-basic/language-reference/directives/if-then-else-directives) pour compiler des fichiers sources de façon conditionnelle. Consultez [Compilation conditionnelle](/dotnet/visual-basic/programming-guide/program-structure/conditional-compilation).  
   
  **Définir la constante DEBUG**  
- Par défaut, cette case à cocher est activée, spécifiant qu'une constante DEBUG est définie.  
+ Par défaut, cette case est cochée, spécifiant qu’une constante DEBUG est définie.  
   
  **Définir la constante TRACE**  
- Par défaut, cette case à cocher est activée, spécifiant qu'une constante TRACE est définie.  
+ Par défaut, cette case est cochée, spécifiant qu’une constante TRACE est définie.  
   
  **Constantes personnalisées**  
- Entrez les constantes personnalisées pour votre application dans cette zone de texte.  Les entrées doivent être délimitées par une virgule selon le format suivant : Nom1 \= "Valeur1", Nom2 \= "Valeur2", Nom3 \= "Valeur3."  
+ Entrez les constantes personnalisées pour votre application dans cette zone de texte. Les entrées doivent être délimitées par une virgule selon le format suivant : **Nom1="Valeur1",Nom2="Valeur2",Nom3="Valeur3"**.  
   
-## D'autres paramètres  
+## <a name="other-settings"></a>Autres paramètres  
  **Générer des assemblys de sérialisation**  
- Ce paramètre spécifie si le compilateur utilise l' pour créer des assemblys de sérialisation XML.  Les assemblys de sérialisation peuvent améliorer les performances de démarrage de <xref:System.Xml.Serialization.XmlSerializer> si vous avez utilisé cette classe pour sérialiser les types dans votre code.  Par défaut, cette option a la valeur **Auto**, qui spécifie que les assemblys de sérialisation ne peuvent être générés que si vous avez utilisé <xref:System.Xml.Serialization.XmlSerializer> pour encoder les types dans votre code en XML.  **Inactif** spécifie que ces assemblys de sérialisation ne doivent jamais être générés, indépendamment du fait que votre code utilise ou pas <xref:System.Xml.Serialization.XmlSerializer>.  **Actif** spécifie que les assemblys de sérialisation doivent toujours être générés.  Les assemblys de sérialisation sont appelés `TypeName`.XmlSerializers .dll.  
+ Ce paramètre spécifie si le compilateur crée des assemblys de sérialisation XML. Les assemblys de sérialisation peuvent améliorer les performances de démarrage de <xref:System.Xml.Serialization.XmlSerializer> si vous avez utilisé cette classe pour sérialiser les types dans votre code. Par défaut, cette option a la valeur **Auto**, qui spécifie que les assemblys de sérialisation ne peuvent être générés que si vous avez utilisé <xref:System.Xml.Serialization.XmlSerializer> pour encoder les types dans votre code en XML. **Inactif** spécifie que les assemblys de sérialisation ne doivent jamais être générés, que votre code utilise <xref:System.Xml.Serialization.XmlSerializer> ou non. **Actif** spécifie que les assemblys de sérialisation doivent toujours être générés. Les assemblys de sérialisation sont appelés `TypeName`.XmlSerializers.dll.  
   
-## Voir aussi  
- [Page Compiler, Concepteur de projets \(Visual Basic\)](../../ide/reference/compile-page-project-designer-visual-basic.md)
+## <a name="see-also"></a>Voir aussi  
+ [Page Compiler, Concepteur de projet (Visual Basic)](../../ide/reference/compile-page-project-designer-visual-basic.md)

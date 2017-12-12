@@ -1,27 +1,29 @@
 ---
-title: "JsValueType, &#233;num&#233;ration | Microsoft Docs"
-ms.custom: ""
-ms.date: "01/18/2017"
-ms.prod: "windows-client-threshold"
-ms.reviewer: ""
-ms.suite: ""
-ms.tgt_pltfrm: ""
-ms.topic: "reference"
-f1_keywords: 
-  - "jsrt/JsValueType"
-helpviewer_keywords: 
-  - "JsValueType (énumération)"
+title: "JsValueType, énumération | Microsoft Docs"
+ms.custom: 
+ms.date: 01/18/2017
+ms.prod: windows-client-threshold
+ms.reviewer: 
+ms.suite: 
+ms.tgt_pltfrm: 
+ms.topic: reference
+f1_keywords: jsrt/JsValueType
+helpviewer_keywords: JsValueType enumeration
 ms.assetid: 6645e723-e554-41fc-b622-ab54ee044b3d
-caps.latest.revision: 16
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 16
+caps.latest.revision: "16"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: df4f61cf9118c19a0fc35e7505af422b812d0b43
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.translationtype: HT
+ms.contentlocale: fr-FR
+ms.lasthandoff: 10/27/2017
 ---
-# JsValueType, &#233;num&#233;ration
+# <a name="jsvaluetype-enumeration"></a>JsValueType, énumération
 Type JavaScript de JsValueRef.  
   
-## Syntaxe  
+## <a name="syntax"></a>Syntaxe  
   
 ```  
 enum JsValueType {  
@@ -41,12 +43,12 @@ enum JsValueType {
 };  
 ```  
   
-## Membres  
+## <a name="members"></a>Membres  
   
-### Valeurs  
+### <a name="values"></a>Valeurs  
   
 |Nom|Description|  
-|---------|-----------------|  
+|----------|-----------------|  
 |`JsUndefined`|La valeur est `undefined`.|  
 |`JsNull`|La valeur est `null`.|  
 |`JsNumber`|La valeur est un nombre JavaScript.|  
@@ -61,8 +63,8 @@ enum JsValueType {
 |`JsTypedArray`|La valeur est un objet de tableau typé JavaScript.<br /><br /> Cette valeur d'énumération est prise en charge uniquement dans le mode Edge.|  
 |`JsDataView`|La valeur est un objet `DataView` JavaScript.<br /><br /> Cette valeur d'énumération est prise en charge uniquement dans le mode Edge.|  
   
-## Configuration requise  
- **En\-tête :** jsrt.h  
+## <a name="requirements"></a>Spécifications  
+ **En-tête :** jsrt.h  
   
-## Voir aussi  
- [Référence \(JavaScript Runtime\)](../chakra-hosting/reference-javascript-runtime.md)
+## <a name="see-also"></a>Voir aussi  
+ [Référence (JavaScript Runtime)](../chakra-hosting/reference-javascript-runtime.md)

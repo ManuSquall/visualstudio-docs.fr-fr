@@ -1,19 +1,17 @@
 ---
-title: Utilisation de Subversion
+title: Utilisation de Subversion | Microsoft Docs
 description: Utilisation de Subversion dans Visual Studio pour Mac.
 author: asb3993
 ms.author: amburns
 ms.date: 04/14/2017
 ms.topic: article
 ms.assetid: 2400ED9C-6236-4C0A-A3AB-9D7CBE1F0CF4
+ms.openlocfilehash: 026e3625b4ee2d6582ce5539e5cab68c945f09c0
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
 ms.translationtype: HT
-ms.sourcegitcommit: e2b7ff9126e1cc38ac2e58d6be339b656a024e7f
-ms.openlocfilehash: 70cf7a411141c5a59e275cb455ddcf91863c4f8b
-ms.contentlocale: fr-fr
-ms.lasthandoff: 08/11/2017
-
+ms.contentlocale: fr-FR
+ms.lasthandoff: 10/31/2017
 ---
-
 # <a name="working-with-subversion"></a>Utilisation de Subversion
 
 Comme mentionné précédemment dans cet article, Subversion est le système de gestion de version centralisé qui vous permet d’extraire une seule copie principale des données centralisées. Contrairement à Git, l’extraction d’un dépôt Subversion ne clone pas l’intégralité du dépôt, elle prend seulement une capture instantanée à ce point dans le temps.
@@ -58,4 +56,3 @@ Pour valider un fichier dans le dépôt distant, appuyez sur Valider..., entrez 
 ![Validation d’un fichier](media/version-control-svnCommit.png)
 
 Cette action envoie les modifications dans le dépôt où elles constituent la nouvelle révision de toutes vos modifications.
-

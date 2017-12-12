@@ -1,49 +1,50 @@
 ---
-title: "Comment&#160;: d&#233;sactiver le processus d&#39;h&#233;bergement | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-general"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-helpviewer_keywords: 
-  - "processus d'hébergement, désactiver"
-  - "vshost.exe, désactiver le processus d'hébergement"
+title: "Guide pratique pour désactiver le processus d’hébergement | Microsoft Docs"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-general
+ms.tgt_pltfrm: 
+ms.topic: article
+helpviewer_keywords:
+- hosting process, disabling
+- vshost.exe, disabling the hosting process
 ms.assetid: 9157488d-737f-454b-8d8d-36f99de38bb0
-caps.latest.revision: 10
-author: "kempb"
-ms.author: "kempb"
-manager: "ghogen"
-caps.handback.revision: 10
+caps.latest.revision: "10"
+author: gewarren
+ms.author: gewarren
+manager: ghogen
+ms.openlocfilehash: 94d40fe18ff4cca228fb39ab16bcfaa6ac42a172
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: HT
+ms.contentlocale: fr-FR
+ms.lasthandoff: 10/31/2017
 ---
-# Comment&#160;: d&#233;sactiver le processus d&#39;h&#233;bergement
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
-
-Les appels à certaines API peuvent être affectés lorsque le processus hôte est activé.  Dans ces situations, il est nécessaire de désactiver le processus d'hébergement pour retourner les résultats corrects.  
+# <a name="how-to-disable-the-hosting-process"></a>Comment : désactiver le processus d'hébergement
+Les appels à certaines API peuvent être affectés quand le processus hôte est activé. Dans ces situations, il est nécessaire de désactiver le processus d’hébergement pour retourner les résultats corrects.  
   
-### Pour désactiver le processus d'hébergement.  
+### <a name="to-disable-the-hosting-process"></a>Pour désactiver le processus d’hébergement  
   
-1.  Ouvrez un projet exécutable dans [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)].  Les projets qui ne produisent pas de fichiers exécutables \(par exemple, les bibliothèque de classes ou les projets de service\) n'ont pas cette option.  
+1.  Ouvrez un projet exécutable dans [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]. Les projets qui ne produisent pas de fichiers exécutables (par exemple, les projets de bibliothèque de classes ou de service) n’ont pas cette option.  
   
 2.  Dans le menu **Projet**, cliquez sur **Propriétés**.  
   
-3.  Cliquez sur l'onglet **Débogage**.  
+3.  Cliquez sur l’onglet **Déboguer**.  
   
-4.  Désactivez la case à cocher **Activer le processus d'hébergement Visual Studio**.  
+4.  Décochez la case **Activer le processus d’hébergement Visual Studio**.  
   
- Lorsque le processus d'hébergement est désactivé, plusieurs fonctionnalités de débogage sont indisponibles ou subissent une baisse de performance.  Pour plus d'informations, consultez [Débogage et processus d'hébergement](../debugger/debugging-and-the-hosting-process.md).  
+ Quand le processus d’hébergement est désactivé, plusieurs fonctionnalités de débogage sont indisponibles ou subissent une baisse des performances. Pour plus d’informations, consultez [Débogage et processus d’hébergement](../debugger/debugging-and-the-hosting-process.md).  
   
- En général, lorsque le processus d'hébergement est désactivé :  
+ En général, quand le processus d’hébergement est désactivé :  
   
--   Le temps nécessaire au débogage des applications [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] augmente.  
+-   le temps nécessaire pour commencer le débogage des applications [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] augmente ;  
   
--   L'évaluation d'une expression au moment du design n'est pas disponible.  
+-   l’évaluation d’une expression au moment du design n’est pas disponible ;  
   
--   Le débogage de confiance partielle n'est pas disponible.  
+-   le débogage de confiance partielle n’est pas disponible.  
   
-## Voir aussi  
- [Débogage et processus d'hébergement](../debugger/debugging-and-the-hosting-process.md)   
- [Processus d'hébergement \(vshost.exe\)](../ide/hosting-process-vshost-exe.md)   
- [Builds During Application Development](http://msdn.microsoft.com/fr-fr/c9497d62-3b7b-4449-88e8-cf27acc9efe6)
+## <a name="see-also"></a>Voir aussi  
+ [Débogage et processus d’hébergement](../debugger/debugging-and-the-hosting-process.md)   
+ [Processus d’hébergement (vshost.exe)](../ide/hosting-process-vshost-exe.md)   
+ [Générations pendant le développement d’une application](http://msdn.microsoft.com/en-us/c9497d62-3b7b-4449-88e8-cf27acc9efe6)

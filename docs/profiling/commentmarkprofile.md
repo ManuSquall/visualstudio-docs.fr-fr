@@ -1,79 +1,80 @@
 ---
-title: "CommentMarkProfile | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-debug"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-helpviewer_keywords: 
-  - "CommentMarkProfile"
-  - "CommentMarkProfileA"
+title: CommentMarkProfile | Microsoft Docs
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-debug
+ms.tgt_pltfrm: 
+ms.topic: article
+helpviewer_keywords:
+- CommentMarkProfile
+- CommentMarkProfileA
 ms.assetid: 33ccff45-c33a-4672-b41f-5b317b848cd1
-caps.latest.revision: 11
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 11
+caps.latest.revision: "11"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: 0cb46497c8e00cedeb4056571d8fa1d19eb26c0c
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: HT
+ms.contentlocale: fr-FR
+ms.lasthandoff: 10/31/2017
 ---
-# CommentMarkProfile
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
-
-La fonction `CommentMarkProfile` insère un marqueur numérique et une chaîne de texte dans le fichier .vsp.  Pour que la marque et le commentaire soient insérés, le profilage du thread contenant la fonction `CommentMarkProfile` doit être ON.  
+# <a name="commentmarkprofile"></a>CommentMarkProfile
+La fonction `CommentMarkProfile` insère un marqueur numérique et une chaîne de texte dans le fichier .vsp. Pour que la marque et le commentaire soient insérés, le profilage du thread qui contient la fonction `CommentMarkProfile` doit être activé.  
   
-## Syntaxe  
+## <a name="syntax"></a>Syntaxe  
   
 ```  
 PROFILE_COMMAND_STATUS PROFILERAPI CommentMarkProfile(  
-                                   long lMarker,   
-                                   LPCTSTR szComment);  
+                                   long lMarker,   
+                                   LPCTSTR szComment);  
 ```  
   
-#### Paramètres  
+#### <a name="parameters"></a>Paramètres  
  `lMarker`  
   
- Marqueur numérique à insérer.  Le marqueur doit être supérieur ou égal à 0 \(zéro\).  
+ Marqueur numérique à insérer. La valeur du marqueur doit être supérieure ou égale à zéro.  
   
  `szComment`  
   
- Pointeur sur la chaîne de texte à insérer.  La chaîne doit être inférieure à 256 caractères y compris le terminateur NULL.  
+ Pointeur vers la chaîne de texte à insérer. La chaîne ne doit pas comporter plus de 256 caractères, y compris le terminateur NULL.  
   
-## Valeur de propriété\/valeur de retour  
- La fonction indique la réussite ou l'échec en utilisant l'énumération **PROFILE\_COMMAND\_STATUS**.  La valeur de retour peut être l'une des suivantes :  
+## <a name="property-valuereturn-value"></a>Valeur de propriété/valeur de retour  
+ La fonction indique la réussite ou l’échec en utilisant l’énumération **PROFILE_COMMAND_STATUS**. La valeur de retour peut être une des suivantes :  
   
 |Enumerator|Description|  
 |----------------|-----------------|  
-|MARK\_ERROR\_MARKER\_RESERVED|Le paramètre est inférieur ou égal à 0.  Ces valeurs sont réservées.  La marque et le commentaire ne sont pas enregistrés.|  
-|MARK\_ERROR\_MODE\_NEVER|La valeur NEVER a été affectée au mode de profilage lors de l'appel à la fonction.  La marque et le commentaire ne sont pas enregistrés.|  
-|MARK\_ERROR\_MODE\_OFF|La valeur OFF a été affectée au mode de profilage lors de l'appel à la fonction.  La marque et le commentaire ne sont pas enregistrés.|  
-|MARK\_ERROR\_NO\_SUPPORT|Aucune prise en charge de marque dans ce contexte.  La marque et le commentaire ne sont pas enregistrés.|  
-|MARK\_ERROR\_OUTOFMEMORY|La mémoire n'était pas disponible pour enregistrer l'événement.  La marque et le commentaire ne sont pas enregistrés.|  
-|MARK\_TEXTTOOLONG|La chaîne dépasse le nombre maximum de 256 caractères.  La chaîne de commentaire est tronquée et la marque et le commentaire sont enregistrés.|  
-|MARK\_OK|MARK\_OK est retourné en cas de succès.|  
+|MARK_ERROR_MARKER_RESERVED|Le paramètre est inférieur ou égal à zéro. Ces valeurs sont réservées. La marque et le commentaire ne sont pas enregistrés.|  
+|MARK_ERROR_MODE_NEVER|Le mode de profilage a été défini sur NEVER quand la fonction a été appelée. La marque et le commentaire ne sont pas enregistrés.|  
+|MARK_ERROR_MODE_OFF|Le mode de profilage a été défini sur OFF quand la fonction a été appelée. La marque et le commentaire ne sont pas enregistrés.|  
+|MARK_ERROR_NO_SUPPORT|Pas de prise en charge de marques dans ce contexte. La marque et le commentaire ne sont pas enregistrés.|  
+|MARK_ERROR_OUTOFMEMORY|La mémoire n’était pas disponible pour enregistrer l’événement. La marque et le commentaire ne sont pas enregistrés.|  
+|MARK_TEXTTOOLONG|La chaîne dépasse le maximum de 256 caractères. La chaîne de commentaire est tronquée, et la marque et le commentaire sont enregistrés.|  
+|MARK_OK|MARK_OK est retourné pour indiquer la réussite.|  
   
-## Notes  
- L'état de profilage du thread qui contient la fonction de profil de la marque doit être activé lorsque les marques et les commentaires sont insérés à l'aide de la commande VSInstr Mark ou des fonctions \(CommentMarkAtProfile, CommentMarkProfile ou MarkProfile\).  
+## <a name="remarks"></a>Remarques  
+ L’état du profilage du thread qui contient la fonction de profil de marque doit être Activé lors de l’insertion de marques et de commentaires avec la commande VSInstr Mark ou avec des fonctions (CommentMarkAtProfile, CommentMarkProfile ou MarkProfile).  
   
- Les marques de profil sont globales dans la portée.  Par exemple, une marque de profil insérée dans un seul thread peut être utilisée pour marquer le début ou la fin d'un segment de données de n'importe quel thread dans le fichier .vsp.  
+ Les marques de profil sont globales dans l’étendue. Par exemple, une marque de profil insérée dans un thread peut être utilisée pour marquer le début ou la fin d’un segment de données dans n’importe quel thread dans le fichier .vsp.  
   
 > [!IMPORTANT]
->  La méthode CommentMarkProfile peut être utilisée uniquement avec l'instrumentation.  
+>  La méthode CommentMarkProfile peut être utilisé seulement avec l’instrumentation.  
   
-## Équivalent .NET Framework  
+## <a name="net-framework-equivalent"></a>Équivalent .NET Framework  
  Microsoft.VisualStudio.Profiler.dll  
   
-## Informations sur la fonction  
+## <a name="function-information"></a>Informations sur la fonction  
   
 |||  
 |-|-|  
-|**Header**|Inclure VSPerf.h|  
+|**En-tête**|Inclure VSPerf.h|  
 |**Bibliothèque**|Utiliser VSPerf.lib|  
-|**Unicode**|Implémenté en tant que `CommentMarkProfileW` \(Unicode\) et `CommentMarkProfileA` \(ANSI\).|  
+|**Unicode**|Implémenté en tant que `CommentMarkProfileW` (Unicode) et `CommentMarkProfileA` (ANSI).|  
   
-## Exemple  
- Le code suivant illustre l'appel de la fonction CommentMarkProfile.  L'exemple suppose l'utilisation de macros de chaîne Win32 et de paramètres du compilateur pour Unicode afin de déterminer si le code appelle l'appel de la fonction [!INCLUDE[vcpransi](../profiling/includes/vcpransi_md.md)].  
+## <a name="example"></a>Exemple  
+ Le code suivant illustre l’appel de la fonction CommentMarkProfile. L’exemple suppose l’utilisation de macros de chaîne Win32 et des paramètres de compilateur Unicode pour déterminer si le code appelle la fonction [!INCLUDE[vcpransi](../profiling/includes/vcpransi_md.md)].  
   
 ```  
 void ExerciseCommentMarkProfile()  
@@ -111,5 +112,5 @@ void ExerciseCommentMarkProfile()
 }  
 ```  
   
-## Voir aussi  
- [Référence des API du profileur Visual Studio \(Native\)](../profiling/visual-studio-profiler-api-reference-native.md)
+## <a name="see-also"></a>Voir aussi  
+ [Informations de référence sur l’API du profileur Visual Studio (native)](../profiling/visual-studio-profiler-api-reference-native.md)

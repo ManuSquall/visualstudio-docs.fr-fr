@@ -1,61 +1,62 @@
 ---
-title: "WinCounter | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-debug"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+title: WinCounter | Microsoft Docs
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-debug
+ms.tgt_pltfrm: 
+ms.topic: article
 ms.assetid: ff319ffc-f249-4c3f-9eb2-06e392e3ae80
-caps.latest.revision: 8
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 8
+caps.latest.revision: "8"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: 5f7fd3846f98149afd7c00924464da2459deb715
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: HT
+ms.contentlocale: fr-FR
+ms.lasthandoff: 10/31/2017
 ---
-# WinCounter
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
-
-L'option **WinCounter** spécifie un compteur de performance d'application ou Windows permettant de collecter des données à intervalles définis pendant l'exécution du profilage.  Les compteurs de performance d'application et Windows sont répertoriés sous la forme de marques dans le fichier de données de profilage.  Vous pouvez spécifier plusieurs compteurs de performance pour effectuer des collectes dans des options distinctes.  
+# <a name="wincounter"></a>WinCounter
+L’option **WinCounter** spécifie un compteur de performances Windows ou d’application à collecter à des intervalles définis pendant l’exécution du profil. Les compteurs de performances Windows et d’application sont répertoriés en tant que marques dans le fichier de données de profilage. Vous pouvez spécifier plusieurs compteurs de performances à collecter dans des options distinctes.  
   
- Par défaut, les compteurs sont collectés toutes les 500 millisecondes.  Utilisez l'option **AutoMark** pour spécifier un intervalle de collecte différent.  
+ Par défaut, les compteurs sont collectés toutes les 500 millisecondes. Utilisez l’option **AutoMark** pour spécifier un autre intervalle de collecte.  
   
- Une seule option **AutoMark** est utilisée.  Si plusieurs options **AutoMark** sont spécifiées, la dernière est utilisée.  
+ Une seule option **AutoMark** est utilisée. Si plusieurs options **AutoMark** sont spécifiées, seule la dernière est utilisée.  
   
- L'option **WinCounter** ne peut être utilisée qu'avec l'option **Start**.  
+ L’option **WinCounter** peut être utilisée seulement avec l’option **Start**.  
   
-## Syntaxe  
+## <a name="syntax"></a>Syntaxe  
   
 ```  
 VSPerfCmd.exe /Start:Method /Wincounter:Path [/WinCounter:Path] [AutoMark:Milliseconds] [Options]  
 ```  
   
-#### Paramètres  
+#### <a name="parameters"></a>Paramètres  
  `Path`  
- Compteur de performance Windows au format de chemin d'accès du compteur PDH.  
+ Compteur de performances Windows au format de chemin de compteur PDH.  
   
-## Options requises  
- L'option **WinCounter** ne peut être utilisée qu'avec l'option **Start**.  
+## <a name="required-options"></a>Options obligatoires  
+ L’option **WinCounter** peut être utilisée seulement avec l’option **Start**.  
   
  **Start:** `Method`  
- L'option **Start** initialise le profileur afin qu'il utilise la méthode de profilage spécifiée.  
+ L’option **Start** initialise le profileur avec la méthode de profilage spécifiée.  
   
-## Options exclusives  
- L'option **AutoMark** ne peut être utilisée qu'avec l'option **WinCounter**.  
+## <a name="exclusive-options"></a>Options exclusives  
+ L’option **AutoMark** peut être utilisée seulement avec l’option **WinCounter**.  
   
  **AutoMark:** `Milliseconds`  
- Spécifie le nombre de millisecondes entre les collectes de données du compteur de performance Windows.  
+ Spécifie le nombre de millisecondes écoulées entre les collectes des données du compteur de performances Windows.  
   
-## Exemple  
- Dans l'exemple suivant, deux compteurs de performance Windows doivent être collectés à un intervalle de 1 000 millisecondes.  
+## <a name="example"></a>Exemple  
+ Dans l’exemple suivant, deux compteurs de performance Windows sont configurés être collectés à un intervalle de 1 000 millisecondes.  
   
 ```  
 VSPerfCmd.exe /Start:Sample /Output:TestApp.exe.vsp /WinCounter:"\Processor(0)\% Processor Time" /WinCounter:"\System\Context Switches/sec" /AutoMark:1000  
 ```  
   
-## Voir aussi  
+## <a name="see-also"></a>Voir aussi  
  [VSPerfCmd](../profiling/vsperfcmd.md)   
  [Profilage d’applications autonomes](../profiling/command-line-profiling-of-stand-alone-applications.md)   
  [Profilage d’applications web ASP.NET](../profiling/command-line-profiling-of-aspnet-web-applications.md)   

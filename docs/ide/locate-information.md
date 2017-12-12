@@ -1,33 +1,23 @@
 ---
-title: "Informations relatives aux param&#232;tres r&#233;gionaux | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-general"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-ms.assetid: ea9770eb-bf41-4a52-a673-07beaa663df3
-caps.latest.revision: 9
-author: "kempb"
-ms.author: "kempb"
-manager: "ghogen"
-caps.handback.revision: 9
+redirect_url: /visualstudio/ide/microsoft-help-viewer
+ms.openlocfilehash: 5d8ae6681654e01bc18f9b49be9c258779b1b48d
+ms.sourcegitcommit: ec1c7e7e3349d2f3a4dc027e7cfca840c029367d
+ms.translationtype: HT
+ms.contentlocale: fr-FR
+ms.lasthandoff: 11/07/2017
 ---
-# Informations relatives aux param&#232;tres r&#233;gionaux
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
-
-La visionneuse d'aide propose différentes solutions pour trouver des informations dans l'Aide.  En fonction des informations que vous recherchez, certaines stratégies peuvent être plus efficaces que d'autres.  
+title: "Localiser des informations | Microsoft Docs" ms.custom: "" ms.date: "11/04/2016" ms.reviewer: "" ms.suite: "" ms.technology: 
+  - "vs-help-viewer" ms.tgt_pltfrm: "" ms.topic: "article" ms.assetid: ea9770eb-bf41-4a52-a673-07beaa663df3 caps.latest.revision: 9 author: "gewarren" ms.author: "gewarren" manager: ghogen
+---
+# <a name="locate-information"></a>Informations relatives aux paramètres régionaux
+Help Viewer fournit différents moyens de rechercher des informations dans l’aide. Selon le type d’informations que vous recherchez, certaines stratégies peuvent être plus efficaces que d’autres.  
   
-|Pour plus d'informations sur|Essayez|  
-|----------------------------------|-------------|  
-|Un élément de l'interface utilisateur|Touche F1|  
-|D'autres rubriques qui se trouvent dans la même zone de la table des matières que la rubrique actuelle|Bouton de la barre d'outils **Afficher la rubrique dans le sommaire**|  
+|Pour obtenir des informations sur|Essayez|  
+|----------------------------|---------|  
+|Un élément de l’interface utilisateur de Help Viewer|Touche F1|  
+|Les autres rubriques associées à la rubrique actuelle dans la table des matières|Le bouton **Afficher une rubrique dans le sommaire** dans la barre d’outils|  
 |Une fonctionnalité ou une technologie|Index|  
-|Éléments de langage tels que les méthodes et les événements|Rechercher|  
+|Les éléments de langage tels que les méthodes et les événements|Rechercher|  
   
-## Dans cette section  
- [Conseils de recherche en texte intégral](../ide/full-text-search-tips.md)  
-  
- [Comment : rechercher des rubriques dans la table des matières](../ide/how-to-find-topics-in-the-table-of-contents.md)
+## <a name="see-also"></a>Voir aussi
+[Guide pratique pour rechercher des rubriques dans la table des matières](../ide/how-to-find-topics-in-the-table-of-contents.md)

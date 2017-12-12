@@ -1,49 +1,32 @@
 ---
-title: "Procédure pas à pas : création et exécution de tests unitaires pour les applications du Windows Store | Microsoft Docs"
+title: "Procédure pas à pas : création et exécution de tests unitaires pour les applications UWP | Microsoft Docs"
 ms.custom: 
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-devops-test
+ms.technology: vs-devops-test
 ms.tgt_pltfrm: 
 ms.topic: article
 helpviewer_keywords:
 - unit tests, creating
 - unit tests
-- unit tests, Windows Store apps
+- unit tests, UWP apps
 - unit tests, running
 ms.assetid: dd3e8a6a-b366-433e-a409-b9a9b89da89a
-caps.latest.revision: 21
+caps.latest.revision: "21"
 ms.author: douge
 manager: douge
-translation.priority.ht:
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- ru-ru
-- zh-cn
-- zh-tw
-translation.priority.mt:
-- cs-cz
-- pl-pl
-- pt-br
-- tr-tr
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 47057e9611b824c17077b9127f8d2f8b192d6eb8
-ms.openlocfilehash: 11ae1d653bc34ccb9c8fd8834d134b7212bc4f9a
-ms.contentlocale: fr-fr
-ms.lasthandoff: 05/13/2017
-
+ms.openlocfilehash: 32cab11dd909fc8b60134ebff0d5f37c0b14dcd6
+ms.sourcegitcommit: c0422a3d594ea5ae8fc03f1aee684b04f417522e
+ms.translationtype: HT
+ms.contentlocale: fr-FR
+ms.lasthandoff: 11/02/2017
 ---
-# <a name="walkthrough-creating-and-running-unit-tests-for-windows-store-apps"></a>Procédure pas à pas : création et exécution de tests unitaires pour les applications Windows Store
+# <a name="walkthrough-creating-and-running-unit-tests-for-uwp-apps"></a>Procédure pas à pas : création et exécution de tests unitaires pour les applications UWP
 Visual Studio inclut la prise en charge des tests unitaires des applications [!INCLUDE[win8_appname_long](../debugger/includes/win8_appname_long_md.md)] gérées et comprend des modèles de bibliothèque de tests unitaires pour Visual C#, Visual Basic et Visual C++.  
   
 > [!TIP]
->  Pour plus d’informations sur le développement d’applications [!INCLUDE[win8_appname_long](../debugger/includes/win8_appname_long_md.md)] , consultez [Prise en main des applications du Windows Store](http://go.microsoft.com/fwlink/?LinkID=241410).  
+>  Pour plus d’informations sur le développement d’applications [!INCLUDE[win8_appname_long](../debugger/includes/win8_appname_long_md.md)], consultez [Bien démarrer avec les applications UWP](http://go.microsoft.com/fwlink/?LinkID=241410).  
   
  Visual Studio fournit les fonctionnalités de test unitaire suivantes :  
   
@@ -57,18 +40,18 @@ Visual Studio inclut la prise en charge des tests unitaires des applications [!I
   
  Les procédures suivantes décrivent les étapes pour créer, exécuter et déboguer des tests unitaires pour l'application [!INCLUDE[win8_appname_long](../debugger/includes/win8_appname_long_md.md)] pour Windows 8.  
   
-## <a name="prerequisites"></a>Conditions préalables  
+## <a name="prerequisites"></a>Prérequis  
  Visual Studio  
   
 ##  <a name="CreateAndRunUnitTestWin8Tailored_Create"></a> Créer des projets de test unitaire  
   
-#### <a name="to-create-a-unit-test-project-for-a-windows-store-app"></a>Pour créer un projet de test unitaire pour une application Windows Store  
+#### <a name="to-create-a-unit-test-project-for-a-uwp-app"></a>Pour créer un projet de test unitaire pour une application UWP  
   
 1.  Dans le menu **Fichier** , choisissez **Nouveau projet**.  
   
      La boîte de dialogue Nouveau projet s'affiche.  
   
-2.  Sous Modèles, sélectionnez le langage de programmation dans lequel vous souhaitez créer le test unitaire, puis choisissez la bibliothèque de tests unitaires [!INCLUDE[win8_appname_long](../debugger/includes/win8_appname_long_md.md)] associée. Par exemple, choisissez **Visual C#** , **Windows Store**, puis **Bibliothèque de tests unitaires (applications Windows Store)**.  
+2.  Sous Modèles, sélectionnez le langage de programmation dans lequel vous souhaitez créer le test unitaire, puis choisissez la bibliothèque de tests unitaires [!INCLUDE[win8_appname_long](../debugger/includes/win8_appname_long_md.md)] associée. Par exemple, choisissez **Visual C#**, **Windows universel**, puis **Bibliothèque de tests unitaires (Windows universel)**.  
   
     > [!NOTE]
     >  Visual Studio inclut des modèles de bibliothèque de tests unitaires pour Visual C#, Visual Basic et Visual C++.  
@@ -90,7 +73,7 @@ Visual Studio inclut la prise en charge des tests unitaires des applications [!I
 ##  <a name="CreateAndRunUnitTestWin8Tailored_Manifest"></a> Modifier le manifeste du projet de test unitaire  
  Il peut être nécessaire de modifier le manifeste pour que le projet de test unitaire fournisse les fonctionnalités requises pour exécuter l'application.  
   
-#### <a name="to-edit-the-unit-test-projects-windows-store-application-manifest-file"></a>Pour modifier le fichier manifeste de l’application Windows Store du projet de test unitaire  
+#### <a name="to-edit-the-unit-test-projects-uwp-application-manifest-file"></a>Pour modifier le fichier manifeste de l’application UWP du projet de test unitaire  
   
 1.  Dans l'Explorateur de solutions, dans le projet de test unitaire [!INCLUDE[win8_appname_long](../debugger/includes/win8_appname_long_md.md)] , cliquez avec le bouton droit sur le fichier Package.appxmanifest et choisissez **Ouvrir**.  
   
@@ -109,7 +92,7 @@ Visual Studio inclut la prise en charge des tests unitaires des applications [!I
   
 ##  <a name="CreateAndRunUnitTestWin8Tailored_Code"></a> Coder le test unitaire  
   
-#### <a name="to-code-the-unit-test-for-a-windows-store-app"></a>Pour coder le test unitaire pour une application Windows Store  
+#### <a name="to-code-the-unit-test-for-a-uwp-app"></a>Pour coder le test unitaire d’une application UWP  
   
 1.  Dans l'Éditeur de code, modifiez le test unitaire et ajoutez les assertions et la logique requises pour votre test.  
   
@@ -147,7 +130,7 @@ Visual Studio inclut la prise en charge des tests unitaires des applications [!I
     >   
     >  De plus, vous pouvez choisir **Déboguer les tests sélectionnés**, **Ouvrir un test**, puis utiliser l'option **Propriétés** .  
     >   
-    >  ![Explorateur de tests unitaires &#45; menu contextuel de test unitaire](~/test/media/unit_test_win8_unittestexplorer_contextmenu.png "Unit_Test_Win8_UnitTestExplorer_ContextMenu")  
+    >  ![Explorateur de tests unitaires &#45; menu contextuel de test unitaire](../test/media/unit_test_win8_unittestexplorer_contextmenu.png "Unit_Test_Win8_UnitTestExplorer_ContextMenu")  
   
      Le test unitaire s'exécute. Une fois l’opération terminée, l’Explorateur de tests affiche l’état du test, la durée calendaire et fournit un lien vers la source.  
   
@@ -156,15 +139,14 @@ Visual Studio inclut la prise en charge des tests unitaires des applications [!I
 ## <a name="external-resources"></a>Ressources externes  
   
 ### <a name="videos"></a>Vidéos  
- [Channel 9 : Unit testing your Windows Store apps built using XAML (Tests unitaires de vos applications du Windows Store en XAML)](http://go.microsoft.com/fwlink/?LinkId=226285)  
+ [Channel 9 : Unit testing your UWP apps built using XAML](http://go.microsoft.com/fwlink/?LinkId=226285)  
   
 ### <a name="forums"></a>Forums  
- [Visual Studio Unit Testing (Tests unitaires Visual Studio)](http://go.microsoft.com/fwlink/?LinkId=224477)  
+ [Tests unitaires Visual Studio](http://go.microsoft.com/fwlink/?LinkId=224477)  
   
 ### <a name="msdn-library"></a>MSDN Library  
  [MSDN Library - Création et exécution des tests unitaires pour le code existant (Visual Studio 2010)](http://go.microsoft.com/fwlink/?LinkID=223683)  
   
 ## <a name="see-also"></a>Voir aussi  
- [Test des applications du Windows Store avec Visual Studio](../test/testing-store-apps-with-visual-studio.md)   
- [Générer et tester une application du Windows Store à l’aide de Team Foundation Build](http://msdn.microsoft.com/Library/d0ca17bb-deae-4f3d-a18d-1a99bebceaa9)
-
+ [Test d’applications UWP avec Visual Studio](../test/testing-store-apps-with-visual-studio.md)   
+ [Générer et tester une application UWP avec Team Foundation Build](http://msdn.microsoft.com/Library/d0ca17bb-deae-4f3d-a18d-1a99bebceaa9)

@@ -4,40 +4,23 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-debug
+ms.technology: vs-ide-debug
 ms.tgt_pltfrm: 
 ms.topic: article
-f1_keywords:
-- vs.performance.property.counters
+f1_keywords: vs.performance.property.counters
 helpviewer_keywords:
 - Windows counters in Profiling Tools
 - CPU counters in Profiling Tools
 ms.assetid: d2c45c6a-f975-45ab-b8a5-4768ddd518fb
-caps.latest.revision: 28
+caps.latest.revision: "28"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-translation.priority.ht:
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- ru-ru
-- zh-cn
-- zh-tw
-translation.priority.mt:
-- cs-cz
-- pl-pl
-- pt-br
-- tr-tr
-translationtype: Human Translation
-ms.sourcegitcommit: 5db97d19b1b823388a465bba15d057b30ff0b3ce
-ms.openlocfilehash: 51d524bafd6e5014c1542b05d9fd3a908eca41df
-ms.lasthandoff: 02/22/2017
-
+ms.openlocfilehash: 62889012c5640fb0f29eadb6f70e678f941ff286
+ms.sourcegitcommit: 26419ab0cccdc30d279c32d6a841758cfa903806
+ms.translationtype: HT
+ms.contentlocale: fr-FR
+ms.lasthandoff: 11/11/2017
 ---
 # <a name="cpu-and-windows-counters"></a>Compteurs UC et Windows
 Le profileur Visual Studio permet de collecter les données de performances qui ont été générées par le système d’exploitation (compteurs Windows) et celles qui ont été générées par le processeur (compteurs UC).  
@@ -47,7 +30,7 @@ Le profileur Visual Studio permet de collecter les données de performances qui 
 -   [!INCLUDE[vsUltLong](../code-quality/includes/vsultlong_md.md)], [!INCLUDE[vsPreLong](../code-quality/includes/vsprelong_md.md)], [!INCLUDE[vsPro](../code-quality/includes/vspro_md.md)]  
   
 > [!NOTE]
->  Les fonctionnalités de sécurité renforcée de Windows 8 et Windows Server 2012 ont imposé des changements importants dans la façon dont le profileur Visual Studio collecte les données sur ces plateformes. Les applications Windows Store demandent aussi de nouvelles techniques de collecte. Consultez [Outils d’analyse des performances sur les applications Windows 8 et Windows Server 2012](../profiling/performance-tools-on-windows-8-and-windows-server-2012-applications.md).  
+>  Les fonctionnalités de sécurité renforcée de Windows 8 et Windows Server 2012 ont imposé des changements importants dans la façon dont le profileur Visual Studio collecte les données sur ces plateformes. Les applications UWP nécessitent aussi de nouvelles techniques de collecte. Consultez [Outils d’analyse des performances sur les applications Windows 8 et Windows Server 2012](../profiling/performance-tools-on-windows-8-and-windows-server-2012-applications.md).  
   
 ## <a name="windows-counters"></a>Compteurs Windows  
  Les compteurs Windows font partie de l’infrastructure de diagnostics Windows qui fournit des informations sur les performances du système d’exploitation ou d’une application, d’un service ou d’un pilote. Les compteurs Windows dépendent de la configuration de l’ordinateur actuel et peuvent ne pas être disponibles sur d’autres ordinateurs. Les compteurs de performances Windows sont collectés dans les fichiers de données de profilage en tant que marques de profilage, qui peuvent ensuite servir à filtrer les vues et les rapports.  

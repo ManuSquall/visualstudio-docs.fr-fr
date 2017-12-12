@@ -1,42 +1,43 @@
 ---
-title: "Comment&#160;: cr&#233;er des mod&#232;les d&#39;&#233;l&#233;ment multifichier | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-general"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-helpviewer_keywords: 
-  - "modèles d'élément, créer des modèles d'élément multifichier"
-  - "modèles d'élément multifichier"
-  - "modèles Visual Studio, créer des modèles d'élément multifichier"
+title: "Guide pratique pour créer des modèles d’élément multifichier | Microsoft Docs"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-general
+ms.tgt_pltfrm: 
+ms.topic: article
+helpviewer_keywords:
+- Visual Studio templates, creating multi-file item templates
+- multi-file item templates
+- item templates, creating multi-file item templates
 ms.assetid: fe3c4257-e383-4c80-b8af-c5c521959c33
-caps.latest.revision: 12
-author: "kempb"
-ms.author: "kempb"
-manager: "ghogen"
-caps.handback.revision: 12
+caps.latest.revision: "12"
+author: gewarren
+ms.author: gewarren
+manager: ghogen
+ms.openlocfilehash: e3e1f6c6e62494f040e2f52180c5588688f460db
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: HT
+ms.contentlocale: fr-FR
+ms.lasthandoff: 10/31/2017
 ---
-# Comment&#160;: cr&#233;er des mod&#232;les d&#39;&#233;l&#233;ment multifichier
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
-
-Il arrive que les modèles d'élément spécifient un seul élément, mais quelquefois cet élément est composé de plusieurs fichiers.  Par exemple, un modèle d'élément Windows Forms pour Visual Basic requiert les trois fichiers suivants :  
+# <a name="how-to-create-multi-file-item-templates"></a>Guide pratique pour créer des modèles d'élément multifichier
+Il arrive que les modèles d’élément spécifient un seul élément, mais cet élément est parfois composé de plusieurs fichiers. Par exemple, un modèle d’élément Windows Forms pour Visual Basic nécessite les trois fichiers suivants :  
   
 -   Un fichier .vb qui contient le code du formulaire.  
   
--   Un fichier .designer.vb qui contient les informations relatives au concepteur.  
+-   Un fichier .designer.vb qui contient les informations relatives au concepteur du formulaire.  
   
--   Un fichier .resx qui contient les ressources incorporées.  
+-   Un fichier .resx qui contient les ressources incorporées du formulaire.  
   
- Les modèles d'éléments multifichier requièrent l'utilisation de paramètres garantissant que les extensions de nom de fichier appropriées sont utilisées lors de la création de l'élément dans [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)].  Si vous créez un modèle d'élément à l'aide de l'Assistant **Exportation de modèle**, ces paramètres sont générés automatiquement et aucune autre modification n'est requise.  Les étapes suivantes expliquent comment utiliser les paramètres pour garantir que les extensions de nom de fichier appropriées soient créées.  
+ Les modèles d’élément multifichier exigent des paramètres pour garantir que les extensions de nom de fichier appropriées sont utilisées lors de la création de l’élément dans [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]. Si vous créez un modèle d’élément à l’aide de l’Assistant **Exportation de modèle**, ces paramètres sont générés automatiquement et aucune autre modification n’est nécessaire. Les étapes suivantes expliquent comment utiliser les paramètres pour garantir que les extensions de nom de fichier appropriées soient créées.  
   
-### Pour créer manuellement un modèle d'élément à plusieurs fichiers  
+### <a name="to-manually-create-a-multi-file-item-template"></a>Pour créer manuellement un modèle d’élément multifichier  
   
-1.  Créez le modèle d'élément de la même manière qu'un modèle d'élément à fichier unique.  Pour plus d'informations, consultez [Comment : créer des modèles d'élément](../ide/how-to-create-item-templates.md).  
+1.  Créez le modèle d’élément de la même manière qu’un modèle d’élément à fichier unique. Pour plus d’informations, consultez [Guide pratique pour créer des modèles d’élément](../ide/how-to-create-item-templates.md).  
   
-2.  Ajoutez des attributs `TargetFileName` à chaque élément `ProjectItem`.  Donnez aux attributs `TargetFileName` les valeurs $fileinputname$.*ExtensionFichier*, où *ExtensionFichier* est l'extension du nom de fichier à inclure dans le modèle.  Par exemple :  
+2.  Ajoutez des attributs `TargetFileName` à chaque élément `ProjectItem`. Affectez aux attributs `TargetFileName` la valeur $fileinputname$.*FileExtension*, où *FileExtension* est l’extension du nom du fichier qui est inclut dans le modèle. Exemple :  
   
     ```  
     <ProjectItem TargetFileName="$fileinputname$.vb">  
@@ -50,14 +51,14 @@ Il arrive que les modèles d'élément spécifient un seul élément, mais quelq
     </ProjectItem>  
     ```  
   
-     Lorsque vous ajoutez à un projet un élément dérivé de ce modèle, les noms de fichiers sont basés sur le nom que l'utilisateur a entré dans la boîte de dialogue **Ajouter un nouvel élément**.  
+     Quand vous ajoutez à un projet un élément dérivé de ce modèle, les noms de fichiers sont basés sur le nom que l’utilisateur a entré dans la boîte de dialogue **Ajouter un nouvel élément**.  
   
-3.  Sélectionnez les fichiers à inclure dans votre modèle, cliquez avec le bouton droit sur la sélection, cliquez sur **Envoyer vers** puis cliquez sur **Dossier compressé \(zippé\)**.  Les fichiers que vous avez sélectionnés sont compressés dans un fichier .zip.  
+3.  Sélectionnez les fichiers à inclure dans votre modèle, cliquez avec le bouton droit sur la sélection, cliquez sur **Envoyer vers**, puis cliquez sur **Dossier compressé**. Les fichiers que vous avez sélectionnés sont compressés dans un fichier .zip.  
   
-4.  Placez le fichier .zip à l'emplacement du modèle d'élément de l'utilisateur.  Par défaut, ce répertoire est \\My Documents\\Visual Studio *version*\\Templates\\ItemTemplates \\.  Pour plus d'informations, consultez [Comment : localiser et organiser les modèles](../ide/how-to-locate-and-organize-project-and-item-templates.md).  
+4.  Placez le fichier .zip à l’emplacement du modèle d’élément utilisateur. Par défaut, ce répertoire est \Mes documents\Visual Studio *Version*\Templates\ItemTemplates\\. Pour plus d’informations, consultez [Guide pratique pour localiser et organiser les modèles](../ide/how-to-locate-and-organize-project-and-item-templates.md).  
   
-## Exemple  
- L'exemple suivant affiche un modèle Windows Forms [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)].  Si vous créez un élément d'après ce modèle, les noms des trois fichiers créés correspondent aux noms entrés dans la boîte de dialogue **Ajouter un nouvel élément**.  
+## <a name="example"></a>Exemple  
+ L’exemple suivant présente un modèle Windows Forms [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]. Quand vous créez un élément à partir de ce modèle, les noms des trois fichiers créés correspondent aux noms entrés dans la boîte de dialogue **Ajouter un nouvel élément**.  
   
 ```  
 <VSTemplate Version="2.0.0" Type="Item"  
@@ -82,8 +83,8 @@ Il arrive que les modèles d'élément spécifient un seul élément, mais quelq
 </VSTemplate>  
 ```  
   
-## Voir aussi  
- [Création de modèles de projets et d'éléments personnalisés](../ide/creating-project-and-item-templates.md)   
- [Comment : créer des modèles d'élément](../ide/how-to-create-item-templates.md)   
+## <a name="see-also"></a>Voir aussi  
+ [Création de modèles de projet et d’élément](../ide/creating-project-and-item-templates.md)   
+ [Guide pratique pour créer des modèles d’élément](../ide/how-to-create-item-templates.md)   
  [Paramètres de modèle](../ide/template-parameters.md)   
- [Comment : substituer des paramètres dans un modèle](../ide/how-to-substitute-parameters-in-a-template.md)
+ [Guide pratique pour substituer des paramètres dans un modèle](../ide/how-to-substitute-parameters-in-a-template.md)

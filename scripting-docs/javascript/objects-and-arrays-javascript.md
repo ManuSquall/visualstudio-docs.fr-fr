@@ -1,30 +1,33 @@
 ---
-title: "Objets et tableaux (JavaScript) | Microsoft Docs"
-ms.custom: ""
-ms.date: "01/18/2017"
-ms.prod: "windows-client-threshold"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "devlang-javascript"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-dev_langs: 
-  - "JavaScript"
-  - "TypeScript"
-  - "DHTML"
-helpviewer_keywords: 
-  - "tableaux (JavaScript)"
-  - "tableaux (JavaScript), objets"
+title: Objets et tableaux (JavaScript) | Microsoft Docs
+ms.custom: 
+ms.date: 01/18/2017
+ms.prod: windows-client-threshold
+ms.reviewer: 
+ms.suite: 
+ms.technology: devlang-javascript
+ms.tgt_pltfrm: 
+ms.topic: article
+dev_langs:
+- JavaScript
+- TypeScript
+- DHTML
+helpviewer_keywords:
+- arrays [JavaScript]
+- arrays [JavaScript], objects
 ms.assetid: f5106284-1240-4f47-8c3b-5a45e227e5e1
-caps.latest.revision: 15
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 15
+caps.latest.revision: "15"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: 6776701ba108ae0ecefc2331c2b12272e0c1be19
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.translationtype: HT
+ms.contentlocale: fr-FR
+ms.lasthandoff: 10/27/2017
 ---
-# Objets et tableaux (JavaScript)
-Les objets [!INCLUDE[javascript](../javascript/includes/javascript-md.md)] sont des collections de propriétés et de méthodes.  Une méthode est une fonction membre d'un objet.  Une propriété est une valeur ou un ensemble de valeurs \(sous la forme d'un tableau ou d'un objet\), membre d'un objet.  [!INCLUDE[javascript](../javascript/includes/javascript-md.md)] prend en charge quatre types d'objets :  
+# <a name="objects-and-arrays-javascript"></a>Objets et tableaux (JavaScript)
+Les objets [!INCLUDE[javascript](../javascript/includes/javascript-md.md)] sont des collections de propriétés et de méthodes. Une méthode est une fonction membre d'un objet. Une propriété est une valeur ou un ensemble de valeurs (sous la forme d'un tableau ou d'un objet), membre d'un objet. [!INCLUDE[javascript](../javascript/includes/javascript-md.md)] prend en charge quatre types d'objets :  
   
 -   Les objets intrinsèques, tels que `Array` et `String`.  
   
@@ -34,10 +37,10 @@ Les objets [!INCLUDE[javascript](../javascript/includes/javascript-md.md)] sont 
   
 -   Les objets ActiveX.  
   
-## Propriétés et méthodes Expando  
- Tous les objets en [!INCLUDE[javascript](../javascript/includes/javascript-md.md)] prennent en charge les propriétés et les méthodes expando, c'est\-à\-dire celles qui peuvent être ajoutées ou supprimées au moment de l'exécution.  Ces propriétés et ces méthodes peuvent avoir n'importe quel nom et peuvent être identifiées par des nombres.  Si le nom de la propriété ou de la méthode est un simple identificateur, il peut être écrit après un nom d'objet avec un point, comme `myObj.name`, `myObj.age` et `myObj.getAge` dans l'exemple suivant :  
+## <a name="expando-properties-and-methods"></a>Propriétés et méthodes Expando  
+ Tous les objets en [!INCLUDE[javascript](../javascript/includes/javascript-md.md)] prennent en charge les propriétés et les méthodes expando, c'est-à-dire celles qui peuvent être ajoutées ou supprimées au moment de l'exécution. Ces propriétés et ces méthodes peuvent avoir n'importe quel nom et peuvent être identifiées par des nombres. Si le nom de la propriété ou de la méthode est un simple identificateur, il peut être écrit après un nom d'objet avec un point, comme `myObj.name`, `myObj.age` et `myObj.getAge` dans l'exemple suivant :  
   
-```javascript  
+```JavaScript  
 var myObj = new Object();  
 myObj.name = "Fred";  
 myObj.age = 42;  
@@ -60,9 +63,9 @@ document.write(myObj.getAge());
   
 ```  
   
- Si le nom de la propriété ou de la méthode n'est pas un simple identificateur, ou s'il n'est pas connu au moment où vous écrivez le script, utilisez une expression comprise entre crochets pour indexer la propriété.  Les noms des propriétés expando en [!INCLUDE[javascript](../javascript/includes/javascript-md.md)] sont tous convertis en chaînes avant d'être ajoutés à l'objet.  
+ Si le nom de la propriété ou de la méthode n'est pas un simple identificateur, ou s'il n'est pas connu au moment où vous écrivez le script, utilisez une expression comprise entre crochets pour indexer la propriété. Les noms des propriétés expando en [!INCLUDE[javascript](../javascript/includes/javascript-md.md)] sont tous convertis en chaînes avant d'être ajoutés à l'objet.  
   
-```javascript  
+```JavaScript  
 var myObj = new Object();  
   
 // Add two expando properties that cannot be written in the  
@@ -76,14 +79,14 @@ myObj["not a valid identifier"] = "This is the property value";
 myObj[100] = "100";  
 ```  
   
- Pour plus d'informations sur la création d'un objet à partir d'une définition, consultez [Création d'objets](../javascript/creating-objects-javascript.md).  
+ Pour plus d’informations sur la création d’un objet à partir d’une définition, consultez [Création d’objets](../javascript/creating-objects-javascript.md).  
   
-## Tableaux comme objets  
- Dans [!INCLUDE[javascript](../javascript/includes/javascript-md.md)], les objets et les tableaux sont gérés quasiment de la même manière, car les tableaux sont simplement un type particulier d'objet.  Les objets et les tableaux peuvent avoir des propriétés et des méthodes.  
+## <a name="arrays-as-objects"></a>Tableaux comme objets  
+ Dans [!INCLUDE[javascript](../javascript/includes/javascript-md.md)], les objets et les tableaux sont gérés quasiment de la même manière, car les tableaux sont simplement un type particulier d'objet. Les objets et les tableaux peuvent avoir des propriétés et des méthodes.  
   
- Les tableaux ont une propriété `length`, mais les objets n'en ont pas.  Lorsque vous assignez une valeur à un élément d'un tableau dont l'index est supérieur à sa longueur \(par exemple, `myArray[100] = "hello"`\), la propriété `length` est augmentée automatiquement à la nouvelle longueur.  De même, si la valeur de la propriété `length` est inférieure à sa valeur précédente, tout élément dont l'index est en dehors de la longueur du tableau est supprimé.  
+ Les tableaux ont une propriété `length`, mais les objets n'en ont pas. Lorsque vous assignez une valeur à un élément d'un tableau dont l'index est supérieur à sa longueur (par exemple, `myArray[100] = "hello"`), la propriété `length` est augmentée automatiquement à la nouvelle longueur. De même, si la valeur de la propriété `length` est inférieure à sa valeur précédente, tout élément dont l'index est en dehors de la longueur du tableau est supprimé.  
   
-```javascript  
+```JavaScript  
 // An array with three elements  
 var myArray = new Array(3);  
   
@@ -108,9 +111,9 @@ document.write("new length is : " + myArray.length);
   
 ```  
   
- Les tableaux fournissent des méthodes d'itération et de manipulation des membres.  L'exemple suivant montre comment obtenir les propriétés des objets stockés dans un tableau.  
+ Les tableaux fournissent des méthodes d'itération et de manipulation des membres. L'exemple suivant montre comment obtenir les propriétés des objets stockés dans un tableau.  
   
-```javascript  
+```JavaScript  
 var myArray = new Array(3);  
   
 // Add some data  
@@ -128,10 +131,10 @@ myArray.forEach(function (item) {
 // 2003  
 ```  
   
-## Tableaux multidimensionnels  
- [!INCLUDE[javascript](../javascript/includes/javascript-md.md)] ne prend pas en charge les tableaux multidimensionnels, mais vous pouvez obtenir leur comportement en enregistrant des tableaux dans les éléments d'un autre tableau. \(Vous pouvez enregistrer tout type de données dans des éléments de tableau, y compris d'autres tableaux.\) Par exemple, le code suivant génère un tableau de multiplication pour les nombres allant jusqu'à 5.  
+## <a name="multi-dimensional-arrays"></a>Tableaux multidimensionnels  
+ [!INCLUDE[javascript](../javascript/includes/javascript-md.md)] ne prend pas en charge les tableaux multidimensionnels, mais vous pouvez obtenir leur comportement en enregistrant des tableaux dans les éléments d'un autre tableau. (Vous pouvez enregistrer tout type de données dans des éléments de tableau, y compris d'autres tableaux.) Par exemple, le code suivant génère un tableau de multiplication pour les nombres allant jusqu'à 5.  
   
-```javascript  
+```JavaScript  
 // The size of the table.  
 var iMaxNum = 5;  
 // Loop counters.  

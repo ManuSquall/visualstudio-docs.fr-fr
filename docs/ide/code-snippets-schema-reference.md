@@ -4,8 +4,7 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-general
+ms.technology: vs-ide-general
 ms.tgt_pltfrm: 
 ms.topic: article
 helpviewer_keywords:
@@ -14,30 +13,15 @@ helpviewer_keywords:
 - code snippets [Visual Studio], schema reference
 - IntelliSense Code Snippets, XML Schema
 ms.assetid: 58a60621-725f-4763-93b7-62ea5424ef88
-caps.latest.revision: 17
-author: kempb
-ms.author: kempb
+caps.latest.revision: "17"
+author: gewarren
+ms.author: gewarren
 manager: ghogen
-translation.priority.ht:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 47057e9611b824c17077b9127f8d2f8b192d6eb8
-ms.openlocfilehash: 18627c9f14e82bef85ff433eea14d99653f78e68
-ms.contentlocale: fr-fr
-ms.lasthandoff: 05/13/2017
-
+ms.openlocfilehash: 14e043feae7a201ff5b31ee17aa790fe6f338341
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: HT
+ms.contentlocale: fr-FR
+ms.lasthandoff: 10/31/2017
 ---
 # <a name="code-snippets-schema-reference"></a>Référence de schéma des extraits de code
 Les extraits de code IntelliSense sont des parties de code précréées et prêtes à être insérées dans votre application avec [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]. Vous pouvez augmenter la productivité en fournissant des extraits de code qui réduisent le nombre d'heures passées à taper un code répétitif ou à rechercher des exemples. Vous pouvez utiliser le schéma XML des extraits de code IntelliSense pour créer vos propres extraits de code et les ajouter aux extraits de code que [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] contient déjà.  
@@ -58,10 +42,7 @@ Les extraits de code IntelliSense sont des parties de code précréées et prêt
 |[Header, élément](../ide/code-snippets-schema-reference.md#header)|[Reference, élément](../ide/code-snippets-schema-reference.md#reference)||  
   
 ##  <a name="assembly"></a> Assembly, élément  
- Spécifie le nom de l'assembly référencé par l'extrait de code.  
-  
-> [!NOTE]
->  L'élément `Assembly` n'est pris en charge que par les extraits de code Visual Basic.  
+ Spécifie le nom de l'assembly référencé par l'extrait de code.
   
  La valeur du texte de l’élément **Assembly** correspond soit au nom convivial de l’assembly, comme `System.dll`, soit à son nom fort, comme `System,Version=1.0.0.1,Culture=neutral,PublicKeyToken=9b35aa323c18d4fb1`.  
   
@@ -83,8 +64,7 @@ Les extraits de code IntelliSense sont des parties de code précréées et prêt
 ```xml  
 <Author>  
    Code Snippet Author  
-</Author>  
-  
+</Author>    
 ```  
   
 |Parent, élément|Description|  
@@ -93,36 +73,39 @@ Les extraits de code IntelliSense sont des parties de code précréées et prêt
   
  Une valeur texte est requise. Ce texte spécifie l'auteur de l'extrait de code.  
   
-##  <a name="code"></a> Code, élément  
- Fournit de petits blocs d'extraits de code à un conteneur.  
+## <a name="a-namecode--code-element"></a><a name="code" /> Élément Code  
+Fournit de petits blocs d'extraits de code à un conteneur.  
   
- Deux mots réservés peuvent être utilisés dans le texte de l'élément `Code` : `$end$` et `$selected$`. `$end$` marque l'emplacement pour placer le curseur après insertion de l'extrait de code. `$selected$` représente le texte sélectionné dans le document qui sera inséré dans l'extrait de code lorsqu'il est appelé. Par exemple, étant donné un extrait de code qui inclut :  
+### <a name="keywords"></a>Mots clés
+Deux mots réservés peuvent être utilisés dans le texte de l'élément `Code` : `$end$` et `$selected$`. `$end$` marque l'emplacement pour placer le curseur après insertion de l'extrait de code. `$selected$` représente le texte sélectionné dans le document qui sera inséré dans l'extrait de code lorsqu'il est appelé. Par exemple, étant donné un extrait de code qui inclut :  
   
-```xml  
+```  
 $selected$ is a great color.  
 ```  
   
- et que le mot « Blue » est sélectionné lorsque l'utilisateur appelle le modèle, le résultat est le suivant :  
+et que le mot « Blue » est sélectionné lorsque l'utilisateur appelle le modèle, le résultat est le suivant :  
   
-```xml  
+```  
 Blue is a great color.  
 ```  
   
- Vous ne pouvez pas utiliser `$end$` ou `$selected$` plus d'une fois dans un extrait de code. Si vous le faites, seule la deuxième instance est reconnue. Étant donné un extrait de code qui inclut :  
+Vous ne pouvez pas utiliser `$end$` ou `$selected$` plus d'une fois dans un extrait de code. Si vous le faites, seule la deuxième instance est reconnue. Étant donné un extrait de code qui inclut :  
   
 ```  
 $selected$ is a great color. I love $selected$.  
 ```  
   
- si le mot « Blue » est sélectionné, le résultat est le suivant :  
+si le mot « Blue » est sélectionné, le résultat est le suivant :  
   
 ```  
-is a great color. I love Blue.  
+ is a great color. I love Blue.  
 ```  
   
- L'espace initial s'affiche car il y a un espace entre `$selected$` et `is`.  
+L'espace initial s'affiche car il y a un espace entre `$selected$` et `is`.  
   
- Tous les autres mots clés `$` sont définis dynamiquement dans les balises `<Literal>` et `<Object>`.  
+Tous les autres mots clés `$` sont définis dynamiquement dans les balises `<Literal>` et `<Object>`.  
+
+Voici la structure de l’élément Code :
   
 ```xml  
 <Code Language="Language"  
@@ -130,37 +113,41 @@ is a great color. I love Blue.
     Delimiter="Delimiter">  
     Code to insert  
 </Code>  
-```  
-  
-|Attribut|Description|  
-|---------------|-----------------|  
-|`Delimiter`|Attribut facultatif. Spécifie le délimiteur utilisé pour décrire les littéraux et les objets contenus dans le code. Par défaut, le délimiteur est `$`.|  
-|`Kind`|Attribut facultatif. Spécifie le type de code que l'extrait de code contient et l'emplacement auquel un extrait de code doit être inséré pour que l'extrait de code puisse être compilé. Les valeurs disponibles sont `method body`, `method decl`, `type decl`, `file` et `any`.|  
-|`Language`|Attribut requis. Spécifie le langage de l'extrait de code.|  
-  
-|Valeur d'attribut, type|Description|  
-|--------------------------|-----------------|  
-|`method body`|Spécifie que l'extrait de code est un corps de méthode, et par conséquent, qu'il doit être inséré à l'intérieur d'une déclaration de méthode.|  
-|`method decl`|Spécifie que l'extrait de code est une méthode, et par conséquent, qu'il doit être inséré à l'intérieur d'une classe ou d'un module.|  
-|`type decl`|Spécifie que l'extrait de code est un type, et par conséquent, qu'il doit être inséré à l'intérieur d'une classe, d'un module ou d'un espace de noms.|  
-|`file`|Spécifie que l'extrait de code est un fichier de code complet. Ces extraits de code peuvent être insérés seuls dans un fichier de code, ou à l'intérieur d'un espace de noms.|  
-|`any`|Spécifie que l'extrait de code peut être inséré n'importe où. Cette balise est utilisée pour les extraits de code indépendants du contexte, comme les commentaires.|  
-  
-|Attribut Language, valeur|Description|  
-|------------------------------|-----------------|  
-|`VB`|Identifie un extrait de code Visual Basic.|  
-|`CSharp`|Identifie un extrait de code C#.|  
-|`CPP`|Identifie un extrait de code C++.|  
-|`XML`|Identifie un extrait de code XML.|  
-|`JavaScript`|Identifie un extrait de code JavaScript.|  
-|`SQL`|Identifie un extrait de code SQL.|  
-|`HTML`|Identifie un extrait de code HTML.|  
-  
+```
+
+Une valeur texte est requise. Ce texte spécifie le code, avec les littéraux et les objets, que vous pouvez utiliser quand cet extrait de code est inséré dans un fichier de code.  
+
+### <a name="attributes"></a>Attributs
+Trois attributs sont disponibles pour l’élément Code :
+
+- **Langage** - Attribut _obligatoire_ qui spécifie le langage de l’extrait de code. Il peut avoir l’une des valeurs suivantes :
+
+   |Valeur|Description|  
+   |-----|-----------|  
+   |`VB`|Identifie un extrait de code Visual Basic.|  
+   |`CSharp`|Identifie un extrait de code C#.|  
+   |`CPP`|Identifie un extrait de code C++.|  
+   |`XML`|Identifie un extrait de code XML.|  
+   |`JavaScript`|Identifie un extrait de code JavaScript.|  
+   |`SQL`|Identifie un extrait de code SQL.|  
+   |`HTML`|Identifie un extrait de code HTML.|
+ 
+- **Kind** - Attribut _facultatif_ qui spécifie le type de code contenu dans l’extrait de code, ainsi que l’emplacement auquel un extrait de code doit être inséré pour pouvoir être compilé. Il peut avoir l’une des valeurs suivantes :
+
+   |Valeur|Description|  
+   |-----|-----------|  
+   |`method body`|Spécifie que l'extrait de code est un corps de méthode, et par conséquent, qu'il doit être inséré à l'intérieur d'une déclaration de méthode.|  
+   |`method decl`|Spécifie que l'extrait de code est une méthode, et par conséquent, qu'il doit être inséré à l'intérieur d'une classe ou d'un module.|  
+   |`type decl`|Spécifie que l'extrait de code est un type, et par conséquent, qu'il doit être inséré à l'intérieur d'une classe, d'un module ou d'un espace de noms.|  
+   |`file`|Spécifie que l'extrait de code est un fichier de code complet. Ces extraits de code peuvent être insérés seuls dans un fichier de code, ou à l'intérieur d'un espace de noms.|  
+   |`any`|Spécifie que l'extrait de code peut être inséré n'importe où. Cette balise est utilisée pour les extraits de code indépendants du contexte, comme les commentaires.|
+
+- **Delimiter** - Attribut _facultatif_ qui spécifie le délimiteur utilisé pour décrire les littéraux et les objets contenus dans le code. Par défaut, le délimiteur est `$`.
+
+### <a name="parent-element"></a>Élément parent
 |Parent, élément|Description|  
 |--------------------|-----------------|  
-|[Snippet, élément](../ide/code-snippets-schema-reference.md#snippet)|Contient les références, importations, déclarations et code de l'extrait de code.|  
-  
- Une valeur texte est requise. Ce texte spécifie le code, avec les littéraux et les objets, que vous pouvez utiliser lorsque cet extrait de code est inséré dans un projet.  
+|[Snippet, élément](../ide/code-snippets-schema-reference.md#snippet)|Contient les références, importations, déclarations et code de l'extrait de code.|
   
 ##  <a name="codesnippet"></a> CodeSnippet, élément  
  Vous permet de spécifier un titre et plusieurs extraits de code IntelliSense que vous pouvez insérer dans des fichiers de Visual Studio Code.  
@@ -170,7 +157,6 @@ is a great color. I love Blue.
     <Header>... </Header>  
     <Snippet>... </Snippet>  
 </CodeSnippet>  
-  
 ```  
   
 |Attribut|Description|  
@@ -193,7 +179,6 @@ is a great color. I love Blue.
 <CodeSnippets>  
     <CodeSnippet>... </CodeSnippet>  
 </CodeSnippets>  
-  
 ```  
   
 |Élément enfant|Description|  
@@ -208,7 +193,6 @@ is a great color. I love Blue.
     <Literal>... </Literal>  
     <Object>... </Object>  
 </Declarations>  
-  
 ```  
   
 |Élément enfant|Description|  
@@ -227,7 +211,6 @@ is a great color. I love Blue.
 <Default>  
     Default value  
 </Default>  
-  
 ```  
   
 |Parent, élément|Description|  
@@ -284,7 +267,6 @@ is a great color. I love Blue.
     <Keywords>... </Keywords>  
     <Shortcut>... </Shortcut>  
 </Header>  
-  
 ```  
   
 |Élément enfant|Description|  
@@ -311,7 +293,6 @@ is a great color. I love Blue.
 <HelpUrl>  
     www.microsoft.com  
 </HelpUrl>  
-  
 ```  
   
 |Parent, élément|Description|  
@@ -327,7 +308,6 @@ is a great color. I love Blue.
 <ID>  
     Unique Identifier  
 </ID>  
-  
 ```  
   
 |Parent, élément|Description|  
@@ -347,7 +327,6 @@ is a great color. I love Blue.
 <Import>  
     <Namespace>... </Namespace>  
 </Import>  
-  
 ```  
   
 |Élément enfant|Description|  
@@ -488,10 +467,7 @@ is a great color. I love Blue.
 |[Declarations, élément](../ide/code-snippets-schema-reference.md#declarations)|Contient les littéraux et les objets d'un extrait de code que vous pouvez modifier.|  
   
 ##  <a name="reference"></a> Reference, élément  
- Spécifie des informations sur les références d'assembly requises par l'extrait de code.  
-  
-> [!NOTE]
->  L'élément `Reference` est uniquement pris en charge pour les projets Visual Basic.  
+ Spécifie des informations sur les références d'assembly requises par l'extrait de code. 
   
 ```xml  
 <Reference>  
@@ -511,9 +487,6 @@ is a great color. I love Blue.
   
 ##  <a name="references"></a> References, élément  
  Groupe des éléments `Reference` individuels.  
-  
-> [!NOTE]
->  L'élément `References` est uniquement pris en charge pour les projets Visual Basic.  
   
 ```xml  
 <References>  
@@ -556,8 +529,7 @@ is a great color. I love Blue.
     <Imports>... </Imports>  
     <Declarations>... </Declarations>  
     <Code>... </Code>  
-</Snippet>  
-  
+</Snippet>    
 ```  
   
 |Élément enfant|Description|  

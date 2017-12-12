@@ -1,61 +1,62 @@
 ---
-title: "Comment&#160;: afficher, enregistrer et configurer des fichiers journaux de g&#233;n&#233;ration | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-general"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+title: "Guide pratique pour afficher, enregistrer et configurer des fichiers journaux de génération | Microsoft Docs"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-general
+ms.tgt_pltfrm: 
+ms.topic: article
 ms.assetid: 75d38b76-26d6-4f43-bbe7-cbacd7cc81e7
-caps.latest.revision: 7
-author: "kempb"
-ms.author: "kempb"
-manager: "ghogen"
-caps.handback.revision: 7
+caps.latest.revision: "7"
+author: gewarren
+ms.author: gewarren
+manager: ghogen
+ms.openlocfilehash: 617b495cab96d8fdb0ddd7c69d6e6c1dd93d7ccc
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: HT
+ms.contentlocale: fr-FR
+ms.lasthandoff: 10/31/2017
 ---
-# Comment&#160;: afficher, enregistrer et configurer des fichiers journaux de g&#233;n&#233;ration
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
-
-Après avoir généré un projet dans l'IDE de Visual Studio, vous pouvez consulter les informations sur cette génération dans la fenêtre **Sortie** .  Grâce à ces informations, vous pouvez, par exemple, déboguer un échec de génération.  Pour les projets C\+\+, vous pouvez également afficher les mêmes informations dans un fichier .txt qui est créé et inscrit automatiquement.  Pour les projets de code managé, vous pouvez copier et coller les informations de la fenêtre **Sortie** dans un fichier .txt et les enregistrer vous\-même.  Vous pouvez également utiliser l'IDE pour spécifier quels genres d'informations vous souhaitez afficher sur chaque build.  
+# <a name="how-to-view-save-and-configure-build-log-files"></a>Guide pratique pour afficher, enregistrer et configurer des fichiers journaux de génération
+Après avoir généré un projet dans l’IDE de Visual Studio, vous pouvez consulter les informations sur cette génération dans la fenêtre **Sortie**. Grâce à ces informations, vous pouvez déboguer un échec de génération, par exemple. Pour les projets C++, vous pouvez également afficher les mêmes informations dans un fichier .txt qui est créé et enregistré automatiquement. Pour les projets de code managé, vous pouvez copier et coller les informations de la fenêtre **Sortie** dans un fichier .txt que vous enregistrez vous-même. Vous pouvez également utiliser l’IDE pour spécifier les types d’informations à afficher pour chaque génération.  
   
- Si vous générez tout type de projet à l'aide de MSBuild, vous pouvez créer un fichier .txt pour enregistrer des informations sur la génération.  Pour plus d'informations, consultez [Obtention de journaux de génération](../msbuild/obtaining-build-logs-with-msbuild.md).  
+ Si vous générez tout type de projet à l’aide de MSBuild, vous pouvez créer un fichier .txt pour y enregistrer les informations de génération. Pour plus d’informations, consultez [Obtention de journaux de génération avec MSBuild](../msbuild/obtaining-build-logs-with-msbuild.md).  
   
-### Pour afficher le fichier journal de génération pour le projet c\+\+  
+### <a name="to-view-the-build-log-file-for-a-c-project"></a>Pour afficher le fichier journal de génération d’un projet C++  
   
-1.  Dans **Explorateur Windows** ou **Explorateur de fichiers**, ouvrez le fichier suivant : \\…  \\ Visual Studio *Version*projets*Nomprojet*\\\\\\*Nomprojet*\\ debug \\*Nomprojet*.txt  
+1.  Dans **l’Explorateur Windows** ou **l’Explorateur de fichiers**, ouvrez le fichier suivant : \\...\Visual Studio *Version*\Projects\\*nom_projet*\\*nom_projet*\Debug\\*nom_projet*.txt  
   
-### Pour créer un fichier journal de génération d'un projet de code managé  
+### <a name="to-create-a-build-log-file-for-a-managed-code-project"></a>Pour créer un fichier journal de génération d’un projet de code managé  
   
-1.  Dans le menu **Générer**, choisissez **Générer la solution**.  
+1.  Dans la barre de menus, choisissez **Générer**, puis **Générer la solution**.  
   
-2.  Dans la fenêtre **Sortie**, mettez en surbrillance les informations de la génération, puis copiez\-les dans le presse\-papiers.  
+2.  Dans la fenêtre **Sortie**, mettez en surbrillance les informations de la génération, puis copiez-les dans le Presse-papiers.  
   
-3.  Ouvrez un éditeur de texte, tel que le bloc\-notes, coller des informations dans le fichier, puis enregistrez\-le.  
+3.  Ouvrez un éditeur de texte, tel que le bloc-notes, collez les informations dans le fichier, puis enregistrez le fichier.  
   
-### Pour modifier la quantité d'informations incluse dans le journal de génération  
+### <a name="to-change-the-amount-of-information-included-in-the-build-log"></a>Pour modifier la quantité d’informations contenues dans le journal de génération  
   
 1.  Dans la barre de menus, sélectionnez **Outils**, **Options**.  
   
-2.  Dans la page **Projets et solutions**, sélectionnez la page **Générer et exécuter** .  
+2.  Dans la page **Projets et solutions**, choisissez la page **Générer et exécuter**.  
   
-3.  Dans la liste **Commentaires de sortie de génération du projet MSBuild**, sélectionnez l'une des valeurs suivantes, puis choisissez le bouton **OK** .  
+3.  Dans la liste **Commentaires relatifs à la sortie de génération du projet MSBuild**, choisissez l’une des valeurs suivantes, puis choisissez le bouton **OK**.  
   
-    |Niveau de commentaires|Description|  
-    |----------------------------|-----------------|  
-    |Silencieux|Affiche un résumé de la build uniquement.|  
-    |Minimal|Affiche un résumé de la build et les erreurs, les avertissements, et des messages qui sont catégorisés comme très importants.|  
-    |Normal|Affiche un résumé de la build ; erreurs, avertissements, et messages qui sont catégorisés comme très importants ; les étapes principales de la génération.  Vous utiliserez ce niveau de détail le plus souvent.|  
-    |Détaillé|Affiche un résumé de la build ; erreurs, avertissements, et messages qui sont catégorisés comme très importants ; toutes les étapes de la génération ; et messages qui sont catégorisés as of l'importance normale.|  
-    |Diagnostic|Affiche toutes les données disponibles pour la génération.  Vous pouvez utiliser ce niveau de précision pour faciliter le débogage des problèmes avec des scripts de génération personnalisée et d'autres problèmes de génération.|  
+    |Niveau de détail|Description|  
+    |---------------------|-----------------|  
+    |Quiet|Affiche uniquement un récapitulatif de la génération.|  
+    |Minimal|Affiche un récapitulatif de la génération, ainsi que les erreurs, avertissements et messages qui sont classés comme très importants.|  
+    |Normale|Affiche un récapitulatif de la génération ; les erreurs, avertissements et messages qui sont classés comme très importants ; et les principales étapes de la génération. Ce niveau de détail est celui que vous utiliserez le plus souvent.|  
+    |Détaillé|Affiche un récapitulatif de la génération ; les erreurs, avertissements et messages qui sont classés comme très importants ; toutes les étapes de la génération ; et les messages classés comme d’importance normale.|  
+    |Diagnostic|Affiche toutes les données disponibles sur la génération. Vous pouvez utiliser ce niveau de détail pour faciliter le débogage des problèmes liés aux scripts de génération personnalisée et d’autres problèmes de génération.|  
   
-     Pour plus d'informations, consultez [Options \(boîte de dialogue\), Projets et solutions, Générer et exécuter](../ide/reference/options-dialog-box-projects-and-solutions-build-and-run.md) et <xref:Microsoft.Build.Framework.LoggerVerbosity>.  
+     Pour plus d’informations, consultez [Options (boîte de dialogue), Projets et solutions, Générer et exécuter](../ide/reference/options-dialog-box-projects-and-solutions-build-and-run.md) et <xref:Microsoft.Build.Framework.LoggerVerbosity>.  
   
     > [!IMPORTANT]
-    >  Vous devez régénérer le projet pour que les modifications entrent en vigueur dans la fenêtre **Sortie** \(tous les projets\) et le fichier d' *Nomprojet*.txt \(projets C\+\+ uniquement\).  
+    >  Vous devez regénérer le projet pour que vos modifications soient appliquées dans la fenêtre **Sortie** (tous les projets) et le fichier *nom_projet*.txt (projets C++ uniquement).  
   
-## Voir aussi  
+## <a name="see-also"></a>Voir aussi  
  [Obtention de journaux de génération](../msbuild/obtaining-build-logs-with-msbuild.md)   
  [Génération et nettoyage de solutions et de projets dans Visual Studio](../ide/building-and-cleaning-projects-and-solutions-in-visual-studio.md)   
- [Génération d'applications dans Visual Studio](../ide/compiling-and-building-in-visual-studio.md)
+ [Compilation et génération](../ide/compiling-and-building-in-visual-studio.md)

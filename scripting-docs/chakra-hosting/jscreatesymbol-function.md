@@ -1,23 +1,27 @@
 ---
-title: "JsCreateSymbol (fonction) | Microsoft Docs"
-ms.custom: ""
-ms.date: "01/18/2017"
-ms.prod: "windows-client-threshold"
-ms.reviewer: ""
-ms.suite: ""
-ms.tgt_pltfrm: ""
-ms.topic: "reference"
+title: JsCreateSymbol, fonction | Microsoft Docs
+ms.custom: 
+ms.date: 01/18/2017
+ms.prod: windows-client-threshold
+ms.reviewer: 
+ms.suite: 
+ms.tgt_pltfrm: 
+ms.topic: reference
 ms.assetid: 2fccc5d9-f857-46cd-9aeb-f0a2e7cdee6b
-caps.latest.revision: 2
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 2
+caps.latest.revision: "2"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: a4175f9db664312055fd7260426da227f2a1eb6e
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.translationtype: HT
+ms.contentlocale: fr-FR
+ms.lasthandoff: 10/27/2017
 ---
-# JsCreateSymbol (fonction)
+# <a name="jscreatesymbol-function"></a>JsCreateSymbol (fonction)
 Crée un symbole JavaScript.  
   
-## Syntaxe  
+## <a name="syntax"></a>Syntaxe  
   
 ```  
 STDAPI_(JsErrorCode) JsCreateSymbol(  
@@ -26,23 +30,23 @@ STDAPI_(JsErrorCode) JsCreateSymbol(
 );  
 ```  
   
-#### Paramètres  
+#### <a name="parameters"></a>Paramètres  
  `description`  
- Description textuelle du symbole.  Peut être Null.  
+ Description textuelle du symbole. Peuvent avoir la valeur null.  
   
  `result`  
  Nouveau symbole.  
   
-## Valeur de retour  
+## <a name="return-value"></a>Valeur de retour  
  Le code `JsNoError` si l'opération a réussi, sinon un code d'échec.  
   
-## Notes  
+## <a name="remarks"></a>Remarques  
  Nécessite un contexte de script actif.  
   
  Cette API est prise en charge uniquement en mode Edge.  
   
-## Configuration requise  
- **En\-tête** : jsrt.h  
+## <a name="requirements"></a>Spécifications  
+ **En-tête :** jsrt.h  
   
-## Voir aussi  
- [Référence \(JavaScript Runtime\)](../chakra-hosting/reference-javascript-runtime.md)
+## <a name="see-also"></a>Voir aussi  
+ [Référence (JavaScript Runtime)](../chakra-hosting/reference-javascript-runtime.md)

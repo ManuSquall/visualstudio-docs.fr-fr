@@ -1,47 +1,31 @@
 ---
-title: Test unitaire du code Visual C# dans une application du Windows Store | Microsoft Docs
+title: Test unitaire de code Visual C# dans une application UWP | Microsoft Docs
 ms.custom: 
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-general
+ms.technology: vs-ide-general
 ms.tgt_pltfrm: 
 ms.topic: article
 ms.assetid: 23cb0d82-0451-464e-98ea-fa66e7010ead
-caps.latest.revision: 19
+caps.latest.revision: "19"
 ms.author: douge
 manager: douge
-translation.priority.ht:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
+ms.openlocfilehash: 39b3ce6765d1f4ec342d9a6e5b156eaee01f0faf
+ms.sourcegitcommit: c0422a3d594ea5ae8fc03f1aee684b04f417522e
 ms.translationtype: HT
-ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
-ms.openlocfilehash: 768dd5253edac137c50ced5bf524bcc1fdd7f6da
-ms.contentlocale: fr-fr
-ms.lasthandoff: 09/26/2017
-
+ms.contentlocale: fr-FR
+ms.lasthandoff: 11/02/2017
 ---
-# <a name="unit-testing-visual-c-code-in-a-store-app"></a>Test unitaire du code Visual C# dans une application du Windows Store
-Cette rubrique décrit une méthode permettant de créer des tests unitaires pour une classe Visual C# dans une application du Windows Store. La classe Rooter illustre de vagues souvenirs de la théorie de limite du calcul en implémentant une fonction qui calcule une estimation de la racine carrée d'un nombre donné. L'application Maths peut ensuite utiliser cette fonction pour montrer à l'utilisateur les activités ludiques que l'on peut faire avec les mathématiques.  
+# <a name="unit-testing-visual-c-code-in-a-uwp-app"></a>Test unitaire de code Visual C# dans une application UWP
+Cette rubrique décrit une méthode permettant de créer des tests unitaires pour une classe Visual C# dans une application UWP. La classe Rooter illustre de vagues souvenirs de la théorie de limite du calcul en implémentant une fonction qui calcule une estimation de la racine carrée d'un nombre donné. L'application Maths peut ensuite utiliser cette fonction pour montrer à l'utilisateur les activités ludiques que l'on peut faire avec les mathématiques.  
   
  Cette rubrique explique comment utiliser le test unitaire comme première étape du développement. Dans cette approche, vous écrivez d'abord une méthode de test qui vérifie un comportement spécifique dans le système que vous testez, puis vous écrivez le code qui réussit le test. En modifiant l'ordre des procédures suivantes, vous pouvez inverser cette stratégie de manière à écrire d'abord le code que vous souhaitez tester, puis à écrire les tests unitaires.  
   
  Cette rubrique crée également une solution Visual Studio unique et des projets distincts pour les tests unitaires et la DLL que vous souhaitez tester. Vous pouvez également inclure les tests unitaires directement dans le projet DLL, ou vous pouvez créer des solutions distinctes pour les tests unitaires et la DLL.  
   
 > [!NOTE]
->  Visual Studio Community, Enterprise, et Professional fournissent des fonctionnalités supplémentaires pour les tests unitaires.  
+>  Visual Studio Community, Enterprise et Professional fournissent des fonctionnalités supplémentaires pour les tests unitaires.  
 >   
 >  -   Utilisez n'importe quel framework de test unitaire tiers et open source qui a créé un adaptateur complémentaire pour l'Explorateur de tests Microsoft. Vous pouvez également analyser et afficher les informations de couverture du code pour les tests.  
 > -   Exécutez vos tests après chaque build.  
@@ -68,13 +52,13 @@ Cette rubrique décrit une méthode permettant de créer des tests unitaires pou
   
 1.  Dans le menu **Fichier**, choisissez **Nouveau**, puis **Nouveau projet**.  
   
-2.  Dans la boîte de dialogue **Nouveau projet**, développez **Installé**, **Visual C#**, puis choisissez **Windows Store**. Choisissez ensuite **Application vide** dans la liste de modèles de projet.  
+2.  Dans la boîte de dialogue **Nouveau projet**, développez **Installé**, **Visual C#**, puis choisissez **Windows universel**. Choisissez ensuite **Application vide** dans la liste de modèles de projet.  
   
 3.  Nommez le projet `Maths` et vérifiez que **Créer le répertoire pour la solution** est sélectionné.  
   
 4.  Dans l’Explorateur de solutions, sélectionnez le nom de la solution, puis choisissez **Ajouter** et **Nouveau projet** dans le menu contextuel.  
   
-5.  Dans la boîte de dialogue **Nouveau projet**, développez **Installé**, **Visual C#**, puis choisissez **Windows Store**. Choisissez ensuite **Bibliothèque de tests unitaires (applications du Windows Store)** dans la liste des modèles de projet.  
+5.  Dans la boîte de dialogue **Nouveau projet**, développez **Installé**, **Visual C#**, puis choisissez **Windows universel**. Choisissez ensuite **Bibliothèque de tests unitaires (Windows universel)** dans la liste des modèles de projet.  
   
      ![Créer le projet de test unitaire](../test/media/ute_cs_windows_createunittestproject.png "UTE_Cs_windows_CreateUnitTestProject")  
   
@@ -381,4 +365,3 @@ Cette rubrique décrit une méthode permettant de créer des tests unitaires pou
   
 > [!NOTE]
 >  Pour ajouter une méthode d'assistance à une classe de test, n'ajoutez pas l'attribut `[TestMethod]` à la méthode. L'explorateur de tests n'enregistre pas la méthode à exécuter.
-

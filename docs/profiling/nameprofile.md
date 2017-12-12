@@ -1,103 +1,104 @@
 ---
-title: "NameProfile | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-debug"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-helpviewer_keywords: 
-  - "NameProfile"
-  - "NameProfileA"
+title: NameProfile | Microsoft Docs
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-debug
+ms.tgt_pltfrm: 
+ms.topic: article
+helpviewer_keywords:
+- NameProfile
+- NameProfileA
 ms.assetid: 1bb05441-c4ff-4323-9fef-f3924fba4430
-caps.latest.revision: 16
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 16
+caps.latest.revision: "16"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: 474ba0510194590a199c9a418eef2a46888342f8
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: HT
+ms.contentlocale: fr-FR
+ms.lasthandoff: 10/31/2017
 ---
-# NameProfile
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
-
-La fonction `NameProfile` assigne une chaîne au processus ou au thread spécifié.  
+# <a name="nameprofile"></a>NameProfile
+La fonction `NameProfile` affecte une chaîne au processus ou au thread spécifié.  
   
- L'API NameProfile est uniquement disponible pour le profilage d'instrumentation.  L'API NameProfile n'est pas prise en charge pour le profilage d'échantillonnage.  
+ L’API NameProfile est disponible seulement pour le profilage par instrumentation. L’API NameProfile n’est pas prise en charge pour le profilage par échantillonnage.  
   
-## Syntaxe  
+## <a name="syntax"></a>Syntaxe  
   
 ```  
 PROFILE_COMMAND_STATUS PROFILERAPI NameProfile(  
-                                   LPCTSTR pszName,   
-                                   PROFILE_CONTROL_LEVEL Level,  
-                                   unsigned int dwId);  
+                                   LPCTSTR pszName,   
+                                   PROFILE_CONTROL_LEVEL Level,  
+                                   unsigned int dwId);  
 ```  
   
-#### Paramètres  
+#### <a name="parameters"></a>Paramètres  
  `pszName`  
   
- Nom de l'élément de profilage.  Un nom n'est pas valide \(provoquant le retour par NameProfileA de NAME\_ERROR\_INVALID\_NAME\) si :  
+ Nom de l’élément de profilage. Un nom n’est pas valide (NameProfileA retournant alors NAME_ERROR_INVALID_NAME) si :  
   
 -   Le pointeur passé dans NameProfileA est une valeur NULL  
   
--   Les données de type chaîne de pszName commencent par un nombre  
+-   Les données de chaîne de pszName commencent par un chiffre  
   
--   Les données de type chaîne de pszName contiennent un espace  
+-   Les données de chaîne de pszName contiennent un espace  
   
--   Les données de type chaîne de pszName contiennent chacun des caractères suivants : ,;.\`~\!@\#$%^&\*\(\)\=\[\]{}&#124;\\?\/\<\>  
+-   Les données de chaîne de pszName contiennent un des caractères suivants : ,;.`~!@#$%^&*()=[]{}&#124;\\?/<>  
   
  `Level`  
   
- Indique le niveau de profil auquel la collection de données de performance peut être appliquée.  Les valeurs **PROFILE\_CONTROL\_LEVEL** suivantes permettent d'indiquer l'un des trois niveaux auxquels la collection des données de performance peut être appliquée :  
+ Indique le niveau du profil auquel la collecte des données de performances peut être appliquée. Les valeurs de **PROFILE_CONTROL_LEVEL** suivantes peuvent être utilisés pour indiquer un des trois niveaux auxquels la collecte des données de performances peut être appliquée :  
   
 |Enumerator|Description|  
 |----------------|-----------------|  
-|PROFILE\_GLOBALLEVEL|Le paramètre de niveau global affecte tous les processus et threads dans l'exécution du profilage.|  
-|PROFILE\_PROCESSLEVEL|Le paramètre au niveau du processus affecte tous les threads qui font partie du processus spécifié.|  
-|PROFILE\_THREADLEVEL|Le paramètre au niveau du profilage du thread affecte le thread spécifié.|  
+|PROFILE_GLOBALLEVEL|Le niveau « global »affecte tous les processus et tous les threads dans l’exécution du profilage.|  
+|PROFILE_PROCESSLEVEL|Le niveau « processus » affecte tous les threads qui font partie du processus spécifié.|  
+|PROFILE_THREADLEVEL|Le niveau de profilage « thread » affecte le thread spécifié.|  
   
  `dwId`  
   
- Identificateur du niveau de profilage.  Utilisez l'identificateur de processus ou de thread généré par le système.  
+ Identificateur de niveau de profilage. Utilisez l’identificateur de processus ou de thread généré par le système.  
   
-## Valeur de propriété\/valeur de retour  
- La fonction indique la réussite ou l'échec en utilisant l'énumération **PROFILE\_COMMAND\_STATUS**.  La valeur de retour peut être l'une des suivantes :  
+## <a name="property-valuereturn-value"></a>Valeur de propriété/valeur de retour  
+ La fonction indique la réussite ou l’échec en utilisant l’énumération **PROFILE_COMMAND_STATUS**. La valeur de retour peut être une des suivantes :  
   
 |Enumerator|Description|  
 |----------------|-----------------|  
-|NAME\_ERROR\_ID\_NOEXIST|L'élément de profilage spécifié n'existe pas.|  
-|NAME\_ERROR\_INVALID\_NAME|Le nom n'est pas valide.|  
-|NAME\_ERROR\_LEVEL\_NOEXIST|Le niveau de profil spécifié n'existe pas.|  
-|NAME\_ERROR\_NO\_SUPPORT|L'opération spécifiée n'est pas prise en charge.|  
-|NAME\_ERROR\_OUTOFMEMORY|La mémoire n'était pas disponible pour enregistrer l'événement.|  
-|NAME\_ERROR\_REDEFINITION|Un nom a déjà été assigné à l'élément de profil.  Le nom dans cette fonction est ignoré.|  
-|NAME\_ERROR\_TEXTTRUNCATED|Le texte du nom a dépassé 32 caractères y compris le caractère Null et a été donc tronqué.|  
-|NAME\_OK|Le nom a été enregistré avec succès.|  
+|NAME_ERROR_ID_NOEXIST|L’élément de profilage spécifié n’existe pas.|  
+|NAME_ERROR_INVALID_NAME|Le nom n'est pas valide.|  
+|NAME_ERROR_LEVEL_NOEXIST|Le niveau de profilage spécifié n’existe pas.|  
+|NAME_ERROR_NO_SUPPORT|L’opération spécifiée n’est pas prise en charge.|  
+|NAME_ERROR_OUTOFMEMORY|La mémoire n’était pas disponible pour enregistrer l’événement.|  
+|NAME_ERROR_REDEFINITION|Un nom est déjà affecté à l’élément de profil. Le nom de cette fonction est ignoré.|  
+|NAME_ERROR_TEXTTRUNCATED|Le texte du nom dépassait 32 caractères, y compris le caractère null, et a donc été tronqué.|  
+|NAME_OK|Le nom a été inscrit.|  
   
-## Notes  
- Un seul nom peut être assigné à chaque processus ou thread.  Une fois qu'un élément de profilage est nommé, les appels suivants à NameProfile pour cet élément sont ignorés.  
+## <a name="remarks"></a>Remarques  
+ Vous ne pouvez affecter qu’un seul nom à chaque processus ou thread. Une fois qu’un élément de profilage est nommé, les appels suivants à NameProfile pour cet élément sont ignorés.  
   
- Si le même nom est attribué à des threads ou processus différents, le rapport inclura les données de tous les éléments à ce niveau avec ce nom.  
+ Si un même nom est affecté à différents threads ou processus, le rapport comprend les données provenant de tous les éléments de ce niveau portant ce nom.  
   
- Si vous spécifiez un processus ou un thread différent de l'actuel, vous devez vérifier qu'il a été initialisé et qu'il a commencé à s'exécuter avant de le nommer.  Sinon, la méthode NameProfile échoue.  
+ Si vous spécifiez un processus ou un thread autre que celui qui est actif, vous devez vérifier qu’il est initialisé et que son exécution a démarré avant de le nommer. Sinon, la méthode NameProfile échoue.  
   
 > [!IMPORTANT]
->  Les fonctions d'API CreateProcess\(\) et CreateThread\(\) peuvent être retournées avant que le thread ou le processus ne soit initialisé.  
+>  Les fonctions d’API CreateProcess() et CreateThread() peuvent retourner avant que le thread ou le processus soit initialisé.  
   
-## Équivalent .NET Framework  
+## <a name="net-framework-equivalent"></a>Équivalent .NET Framework  
  Microsoft.VisualStudio.Profiler.dll  
   
-## Informations sur la fonction  
+## <a name="function-information"></a>Informations sur la fonction  
   
 |||  
 |-|-|  
 |**Header**|Inclure VSPerf.h|  
 |**Bibliothèque**|Utiliser VSPerf.lib|  
-|**Unicode**|Implémenté en tant que `NameProfileW` \(Unicode\) et `NameProfileA` \(ANSI\).|  
+|**Unicode**|Implémenté en tant que `NameProfileW` (Unicode) et `NameProfileA` (ANSI).|  
   
-## Exemple  
- Le code suivant illustre l'appel de la fonction NameProfile.  L'exemple suppose l'utilisation des macros de chaîne Win32 et des paramètres du compilateur pour ANSI afin de déterminer si le code appelle la fonction compatible ANSI.  
+## <a name="example"></a>Exemple  
+ Le code suivant illustre l’appel de la fonction NameProfile. L’exemple suppose l’utilisation de macros de chaîne Win32 et les paramètres de compilateur pour ANSI afin de déterminer si le code appelle la fonction compatible ANSI.  
   
 ```  
 void ExerciseNameProfile()  
@@ -134,5 +135,5 @@ void ExerciseNameProfile()
 }  
 ```  
   
-## Voir aussi  
- [Référence des API du profileur Visual Studio \(Native\)](../profiling/visual-studio-profiler-api-reference-native.md)
+## <a name="see-also"></a>Voir aussi  
+ [Informations de référence sur l’API du profileur Visual Studio (native)](../profiling/visual-studio-profiler-api-reference-native.md)

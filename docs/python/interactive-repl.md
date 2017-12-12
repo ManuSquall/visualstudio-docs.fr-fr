@@ -1,27 +1,23 @@
 ---
 title: Boucle REPL interactive Python dans Visual Studio | Microsoft Docs
 ms.custom: 
-ms.date: 7/13/2017
+ms.date: 07/13/2017
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- devlang-python
+ms.technology: devlang-python
 ms.devlang: python
 ms.tgt_pltfrm: 
 ms.topic: article
-ms.assetid: 642dc47e-c265-44ea-a77d-3db14170a36f
-caps.latest.revision: 1
+caps.latest.revision: "1"
 author: kraigb
 ms.author: kraigb
 manager: ghogen
+ms.openlocfilehash: 80b53ca4a4ada7374d0d62101b00b8ed1a9ca335
+ms.sourcegitcommit: b7d3b90d0be597c9d01879338dd2678c881087ce
 ms.translationtype: HT
-ms.sourcegitcommit: 6d25db4639f2c8391c1e32542701ea359f560178
-ms.openlocfilehash: 69943d19c0eec4702285d255ce0c26defde79b1c
-ms.contentlocale: fr-fr
-ms.lasthandoff: 07/18/2017
-
+ms.contentlocale: fr-FR
+ms.lasthandoff: 12/01/2017
 ---
-
 # <a name="working-with-the-python-interactive-window"></a>Utilisation de la fenêtre interactive Python
 
 Visual Studio intègre une fenêtre REPL (read-evaluate-print loop) interactive pour chacun de vos environnements Python, qui améliore la boucle REPL que vous obtenez avec `python.exe` sur la ligne de commande. La fenêtre interactive (ouverte avec les commandes de menu **Affichage > Autres fenêtres > &lt;environnement&gt; Interactif**) vous permet d’entrer le code Python arbitraire et de voir immédiatement les résultats. Ce mode de codage vous aide à étudier et à tester des API et des bibliothèques, mais aussi à développer de manière interactive du code opérationnel à inclure dans vos projets.
@@ -39,9 +35,9 @@ Visual Studio propose plusieurs modes REPL Python au choix :
 
 Cette rubrique décrit les modes REPL **Standard** et **Débogage**. Pour plus d’informations sur les modes IPython, consultez [Using the IPython REPL](interactive-repl-ipython.md) (Utilisation de la boucle REPL IPython).
 
-Pour afficher une procédure pas à pas détaillée avec des exemples, notamment les interactions avec l’éditeur comme Ctrl+Entrée, consultez [Bien démarrer - Utilisation de la fenêtre REPL interactive](getting-started.md#using-the-interactive-repl-window). Pour une présentation vidéo, consultez [Bien démarrer avec Python dans Visual Studio, Partie 5 : REPL interactive](https://youtu.be/yc2CROtTsC0?list=PLReL099Y5nRdLgGAdrb_YeTdEnd23s6Ff)) (youtube.com, 2 minutes 51 secondes).
+Pour obtenir une procédure pas à pas détaillée avec des exemples, notamment les interactions avec l’éditeur comme Ctrl+Entrée, consultez [Didacticiel - Étape 3 : Utilisation de la fenêtre REPL interactive](vs-tutorial-01-03.md). Pour une présentation vidéo, consultez [Python Interactive Window](https://mva.microsoft.com/en-US/training-courses/python-tools-for-visual-studio-2017-18121?l=gJYKY5LWE_4605918567) (Microsoft Virtual Academy, 2 minutes 22 secondes ).
 
-> [!VIDEO https://www.youtube.com/embed/yc2CROtTsC0]
+> [!VIDEO https://mva.microsoft.com/en-US/training-courses-embed/python-tools-for-visual-studio-2017-18121/Video-Python-Interactive-Window-gJYKY5LWE_4605918567]
 
 ## <a name="opening-an-interactive-window"></a>Ouverture d’une fenêtre interactive
 
@@ -131,4 +127,3 @@ Visual Studio détecte également les cellules de code commençant par des comme
 La fenêtre interactive inclut la fonctionnalité IntelliSense basée sur les objets dynamiques, contrairement à l’éditeur de code dans lequel la fonctionnalité IntelliSense repose uniquement sur l’analyse du code source. Ces suggestions sont plus appropriées dans la fenêtre interactive, en particulier avec un code généré dynamiquement. L’inconvénient est que les fonctions qui comportent des effets secondaires (par exemple, la journalisation des messages) peuvent affecter votre expérience de développement.
 
 Si ce comportement pose problème, modifiez les paramètres sous **Outils > Options > Python Tools > Fenêtres interactives** dans le groupe **Mode de saisie semi-automatique**, comme décrit dans [Options - Options des fenêtres interactives](options.md#interactive-windows-options).
-

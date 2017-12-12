@@ -1,18 +1,16 @@
 ---
-title: "Avantages de Visual Studio pour Mac par rapport à Xamarin Studio"
+title: "Avantages de Visual Studio pour Mac par rapport à Xamarin Studio | Microsoft Docs"
 author: asb3993
 ms.author: amburns
 ms.date: 04/14/2017
 ms.topic: article
 ms.assetid: 6ACF5FD4-D5C1-4050-95E3-467C753F25F1
+ms.openlocfilehash: 08e693e92d6d07da21f8230f9c1de49f071c05e5
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
 ms.translationtype: HT
-ms.sourcegitcommit: f6c7e290f0abc2c32456e076420a7695ae868ba6
-ms.openlocfilehash: 655795fd64958805e0137d7e231391c59f676776
-ms.contentlocale: fr-fr
-ms.lasthandoff: 09/26/2017
-
+ms.contentlocale: fr-FR
+ms.lasthandoff: 10/31/2017
 ---
-
 # <a name="benefits-of-visual-studio-for-mac-over-xamarin-studio"></a>Avantages de Visual Studio pour Mac par rapport à Xamarin Studio 
  
 Visual Studio pour Mac a remplacé Xamarin Studio comme IDE complet sur Mac. Il fournit des fonctionnalités qui vous permettent de développer des applications et des services web, des applications multiplateformes mobiles et pour poste de travail, et des jeux. Il facilite aussi l’intégration à Azure, que ce soit pour publier sur Azure ou créer des fonctions Azure. Il offre tout ce que vous pouvez attendre d’un IDE moderne, notamment un éditeur de code source complet, un débogueur puissant, un espace de travail personnalisable, une intégration de Git et un système d’extensions riche, le tout conçu à l’origine pour le Mac. 
@@ -26,7 +24,7 @@ Parmi les autres fonctionnalités disponibles figurent :
 * Tests unitaires intégrés 
 * Prise en charge de F# prête à l’emploi 
 
-Les avantages listés dans ce guide qui sont marqués en **Préversion** sont disponibles seulement dans le [canal Alpha](https://docs.microsoft.com/en-us/visualstudio/mac/update#Changing_the_Updater_channel). 
+Les avantages listés dans ce guide qui sont marqués en **Préversion** sont disponibles seulement dans le [canal Alpha](https://docs.microsoft.com/visualstudio/mac/update#Changing_the_Updater_channel). 
 
 ## <a name="language-support"></a>Prise en charge linguistique 
 

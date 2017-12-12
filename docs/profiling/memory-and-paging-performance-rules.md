@@ -1,26 +1,27 @@
 ---
-title: "R&#232;gles de performance de m&#233;moire et de pagination | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-debug"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+title: "Règles de performance de mémoire et de pagination"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-debug
+ms.tgt_pltfrm: 
+ms.topic: article
 ms.assetid: f37972b2-efe4-4a1c-a5d1-a246ccd76817
-caps.latest.revision: 8
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 8
+caps.latest.revision: "8"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: 15b9963d10a2a51d34ef3a426ac7a2aba17c2430
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: HT
+ms.contentlocale: fr-FR
+ms.lasthandoff: 10/31/2017
 ---
-# R&#232;gles de performance de m&#233;moire et de pagination
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
-
-Les règles de performance de la catégorie Mémoire et pagination identifient l'activité de pagination dans une exécution du profilage qui peut affecter les performances et la réactivité de l'application.  
+# <a name="memory-and-paging-performance-rules"></a>Règles de performance de mémoire et de pagination
+Les règles de performance de la catégorie mémoire et pagination identifient l’activité de pagination lors d’une exécution du profilage, qui peut affecter les performances et la réactivité de l’application.  
   
 |||  
 |-|-|  
-|[DA0014 : Taux élevés de pagination de la mémoire active sur le disque](../Topic/DA0014:%20Extremely%20high%20rates%20of%20paging%20active%20memory%20to%20disk.md)|Un taux extrêmement élevé de mémoire active de pagination vers le disque et à partir du disque a été relevé dans toute l'exécution du profilage.  Les taux de pagination à ce niveau ont généralement un impact sur les performances et la réactivité de l'application.  Envisagez de réduire les allocations de mémoire en modifiant les algorithmes.  Il vous faudra peut\-être également prendre en compte les besoins en mémoire de votre application.  Essayez d'exécuter à nouveau le profilage sur un ordinateur disposant de davantage de mémoire.  Cette règle se déclenche lorsque la quantité d'activité de pagination dépasse le seuil supérieur de la règle D0017.|  
-|[DA0017 : taux élevés de pagination de la mémoire active sur le disque](../profiling/da0017-high-rates-of-paging-active-memory-to-disk.md)|Un taux relativement élevé de mémoire active de pagination vers le disque et à partir du disque a été relevé dans toute l'exécution du profilage.  Les taux de pagination à ce niveau ont généralement un impact sur les performances et la réactivité de l'application.  Envisagez de réduire les allocations de mémoire en modifiant les algorithmes.  Il vous faudra peut\-être également prendre en compte les besoins en mémoire de votre application.  Essayez d'exécuter à nouveau le profilage sur un ordinateur disposant de davantage de mémoire.|
+|[DA0014 : Taux très élevés de pagination de la mémoire active sur le disque](../profiling/da0014-extremely-high-rates-of-paging-active-memory-to-disk.md)|Un taux très élevé de pagination de la mémoire active vers et depuis le disque s’est produit au cours de l’exécution du profilage. Un tel taux de pagination affecte généralement les performances et la réactivité de l’application. Réduisez les allocations de mémoire en modifiant les algorithmes. Envisagez également de revoir les besoins en mémoire de votre application. Essayez en réexécutant le profilage sur un ordinateur disposant de plus de mémoire. Cette règle se déclenche quand la quantité d’activité de pagination dépasse le seuil supérieur de la règle D0017.|  
+|[DA0017 : Taux élevés de pagination de la mémoire active sur le disque](../profiling/da0017-high-rates-of-paging-active-memory-to-disk.md)|Un taux relativement élevé de pagination de la mémoire active vers et depuis le disque s’est produit au cours de l’exécution du profilage. Un tel taux de pagination affecte généralement les performances et la réactivité de l’application. Réduisez les allocations de mémoire en modifiant les algorithmes. Envisagez également de revoir les besoins en mémoire de votre application. Essayez en réexécutant le profilage sur un ordinateur disposant de plus de mémoire.|

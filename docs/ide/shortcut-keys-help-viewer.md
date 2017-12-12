@@ -1,43 +1,27 @@
 ---
-title: "Touches de raccourci (visionneuse d’aide) | Microsoft Docs"
+title: Touches de raccourci (Help Viewer) | Microsoft Docs
 ms.custom: 
-ms.date: 11/04/2016
+ms.date: 11/02/2017
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-help-viewer
+ms.technology: vs-help-viewer
 ms.tgt_pltfrm: 
 ms.topic: article
 helpviewer_keywords:
-- shortcut keys [Help Viewer 2.0]
-- Help Viewer 2.0, shortcut keys
+- shortcut keys [Help Viewer]
+- Help Viewer, shortcut keys
 ms.assetid: ec14c85d-7efb-441c-a46b-bee34a227e39
-caps.latest.revision: 22
+caps.latest.revision: "22"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-translation.priority.ht:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 47057e9611b824c17077b9127f8d2f8b192d6eb8
-ms.openlocfilehash: 3d5a655a82180b7ffc82cf279b28750f55f5d4c8
-ms.contentlocale: fr-fr
-ms.lasthandoff: 05/13/2017
-
+ms.openlocfilehash: 04d63762eda13bd0b21f6532f1d401cdef638ea6
+ms.sourcegitcommit: ec1c7e7e3349d2f3a4dc027e7cfca840c029367d
+ms.translationtype: HT
+ms.contentlocale: fr-FR
+ms.lasthandoff: 11/07/2017
 ---
-# <a name="shortcut-keys-help-viewer"></a>Touches de raccourci (Visionneuse d'aide)
+# <a name="shortcut-keys-help-viewer"></a>Touches de raccourci (Help Viewer)
 Vous pouvez naviguer dans la visionneuse d’aide Microsoft à l’aide des touches de raccourci du tableau suivant :  
   
 |Zone|Touche(s)|Action|  
@@ -132,3 +116,6 @@ Vous pouvez naviguer dans la visionneuse d’aide Microsoft à l’aide des touc
 |Flèche haut et Flèche bas|Parcourir la liste **Modifications en attente**.|  
 |Espace|Supprimer un élément de la liste **Modifications en attente**.|  
 |Alt+T|Appliquer toutes les modifications en attente.|
+
+## <a name="see-also"></a>Voir aussi
+[Fonctionnalités d’accessibilité de Help Viewer](../ide/accessibility-features-of-the-help-viewer.md)

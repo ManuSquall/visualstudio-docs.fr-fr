@@ -1,35 +1,30 @@
 ---
 title: "Débogage en mode mixte pour Python dans Visual Studio | Microsoft Docs"
 ms.custom: 
-ms.date: 7/12/2017
-ms.prod: visual-studio-dev15
+ms.date: 07/12/2017
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- devlang-python
+ms.technology: devlang-python
 ms.devlang: python
 ms.tgt_pltfrm: 
 ms.topic: article
-ms.assetid: 4ca86a87-e254-4ab7-b3ba-a0ab99c1da93
-caps.latest.revision: 1
+caps.latest.revision: "1"
 author: kraigb
 ms.author: kraigb
 manager: ghogen
+ms.openlocfilehash: 47c0bd7bea18f32b8e017dabb803c4db4f46e2ca
+ms.sourcegitcommit: b7d3b90d0be597c9d01879338dd2678c881087ce
 ms.translationtype: HT
-ms.sourcegitcommit: 6d25db4639f2c8391c1e32542701ea359f560178
-ms.openlocfilehash: a185a7888b693d37aa5df8f3a051679d6b7e9ec5
-ms.contentlocale: fr-fr
-ms.lasthandoff: 07/18/2017
-
+ms.contentlocale: fr-FR
+ms.lasthandoff: 12/01/2017
 ---
-
 # <a name="debugging-python-and-c-together"></a>Débogage conjoint de Python et de C++
 
 La plupart des débogueurs Python standard prend en charge le débogage de code Python uniquement. Toutefois, dans la pratique, Python est utilisé conjointement avec C ou C++ dans les cas qui nécessitent de hautes performances ou la possibilité d’appeler directement les API de plateforme (pour obtenir un exemple, consultez [Création d’une extension C++ pour Python](cpp-and-python.md)). Quand un projet Python est chargé, Visual Studio intègre un débogage en mode mixte simultané de code Python et C/C++ natif, incluant des piles des appels combinées, la possibilité d’effectuer un pas à pas détaillé alternant entre du code Python et natif, des points d’arrêt dans l’un ou l’autre type de code, ainsi que la possibilité de visualiser des représentations Python des objets dans des cadres natifs et vice versa :
 
 ![Débogage en mode mixte](media/mixed-mode-debugging.png) 
 
-Pour découvrir une présentation de la génération, du test et du débogage de modules C natifs avec Visual Studio, visionnez la vidéo [Deep Dive: Creating Native Modules](https://youtu.be/D9RlT06a1EI) (Exploration de la création de modules natifs), (youtube.com, 9 mn 9 s).
+Pour découvrir une présentation de la génération, du test et du débogage de modules C natifs avec Visual Studio, visionnez la vidéo [Deep Dive: Creating Native Modules](https://youtu.be/D9RlT06a1EI) (Exploration de la création de modules natifs), (youtube.com, 9 mn 9 s). La vidéo s’applique à Visual Studio 2015 et 2017.
 
 > [!VIDEO https://www.youtube.com/embed/D9RlT06a1EI]
 

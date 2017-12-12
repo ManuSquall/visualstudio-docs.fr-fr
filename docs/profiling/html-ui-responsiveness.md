@@ -4,8 +4,7 @@ ms.custom: H1Hack27Feb2017
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-debug
+ms.technology: vs-ide-debug
 ms.tgt_pltfrm: 
 ms.topic: article
 dev_langs:
@@ -14,37 +13,21 @@ dev_langs:
 - FSharp
 - C++
 helpviewer_keywords:
-- performance, JavaScript [Windows Store apps]
-- performance tools, JavaScript [Windows Store apps]
+- performance, JavaScript [UWP apps]
+- performance tools, JavaScript [UWP apps]
 - UI Responsiveness Profiler [JavaScript]
 - profiler, UI responsiveness [JavaScript]
-- profiler, JavaScript [Windows Store apps]
+- profiler, JavaScript [UWP apps]
 ms.assetid: da13070a-ba40-47dd-a846-ad72eed70d0b
-caps.latest.revision: 47
+caps.latest.revision: "47"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-translation.priority.ht:
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- ru-ru
-- zh-cn
-- zh-tw
-translation.priority.mt:
-- cs-cz
-- pl-pl
-- pt-br
-- tr-tr
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 47057e9611b824c17077b9127f8d2f8b192d6eb8
-ms.openlocfilehash: 90fed413835f118e59bc32f0b94cb62a40baaca1
-ms.contentlocale: fr-fr
-ms.lasthandoff: 05/13/2017
-
+ms.openlocfilehash: bee8bdc56586f1c79ff10d8d2b70e30801f54254
+ms.sourcegitcommit: 26419ab0cccdc30d279c32d6a841758cfa903806
+ms.translationtype: HT
+ms.contentlocale: fr-FR
+ms.lasthandoff: 11/11/2017
 ---
 # <a name="analyze-html-ui-responsiveness-in-universal-windows-apps"></a>Analyser la réactivité de l’interface utilisateur HTML dans les applications Windows universelles
 Cette rubrique explique comment isoler les problèmes de performances dans vos applications à l’aide du profileur de réactivité de l’interface utilisateur, outil d’analyse des performances disponible pour les applications Windows universelles.  
@@ -58,7 +41,7 @@ Cette rubrique explique comment isoler les problèmes de performances dans vos a
 -   Les mises à jour visuelles qui sont moins fréquentes que prévu. Cela se produit si le thread d'interface utilisateur est trop occupé pour assurer une fréquence d'images lisse. Par exemple, si le thread d'interface utilisateur est occupé, des images peuvent être supprimées. Un travail thread qui n'est pas une interface utilisateur, par exemple les demandes réseau, le décodage d'image et les peintures, peut également limiter la fréquence des mises à jour visuelles. (Les peintures ne sont pas toutes exécutées sur le thread d'interface utilisateur.)  
   
 ##  <a name="RunningProfiler"></a> Exécuter l’outil de réactivité de l’interface utilisateur HTML  
- Vous pouvez utiliser l’outil de réactivité de l’interface utilisateur HTML quand vous avez une application universelle Windows ou une application Windows Store opérationnelle ouverte dans Visual Studio ou installée sur un ordinateur exécutant Windows 8 ou version ultérieure.  
+ Vous pouvez utiliser l’outil de réactivité de l’interface utilisateur HTML quand vous avez une application UWP ou Windows 8.1 ouverte dans Visual Studio, ou installée sur un ordinateur exécutant Windows 8 ou ultérieur.  
   
 1.  Si vous exécutez l'application à partir de Visual Studio, sur la barre d'outils **Standard** , dans la liste **Démarrer le débogage** , sélectionnez une cible de déploiement comme l'une des émulateurs Windows Phone, **Ordinateur local**, **Simulateur**ou **Ordinateur distant**.  
   
@@ -72,7 +55,7 @@ Cette rubrique explique comment isoler les problèmes de performances dans vos a
   
     -   **Projet de démarrage**. Sélectionnez cette option pour analyser le projet de démarrage actif. Si vous exécutez l'application sur un ordinateur ou un périphérique distants, vous devez utiliser ce paramètre, qui est la valeur par défaut.  
   
-    -   **Application en cours d'exécution**. Sélectionnez cette option pour choisir l'application Windows Store dans la liste des applications en cours d'exécution. Vous ne pouvez pas utiliser cette option lorsque vous exécutez l'application sur un ordinateur ou un périphérique distants.  
+    -   **Application en cours d'exécution**. Choisissez cette option pour sélectionner une application UWP dans la liste des applications en cours d’exécution. Vous ne pouvez pas utiliser cette option lorsque vous exécutez l'application sur un ordinateur ou un périphérique distants.  
   
          Vous pouvez utiliser cette option pour analyser les performances des applications en cours d'exécution sur votre ordinateur lorsque vous n'avez pas accès au code source.  
   
@@ -317,7 +300,7 @@ if (performance.mark && performance.measure) {
 ###  <a name="GroupFrames"></a> Regrouper les événements par frame  
  Vous pouvez regrouper les événements qui s'affichent dans l'affichage des détails de la chronologie afin d'afficher des frames individuels. Ces événements de frame sont des événements générés par des outils qui représentent les conteneurs d'événements pour tout le travail de thread d'interface utilisateur qui se produit entre les événements de dessin. Pour activer cet affichage, sélectionnez **Regrouper les événements de niveau supérieur par frames**.  
   
- ![Regrouper les événements de plus haut niveau par frame](~/profiling/media/js_htmlvizprofiler_frame_grouping_button.png "JS_HTMLVizProfiler_Frame_Grouping_Button")  
+ ![Regrouper les événements de plus haut niveau par frame](../profiling/media/js_htmlvizprofiler_frame_grouping_button.png "JS_HTMLVizProfiler_Frame_Grouping_Button")  
   
  Quand vous regroupez les événements par frame, les événements de niveau supérieur dans l'affichage des détails de la chronologie représentent chacun un frame.  
   
@@ -375,7 +358,7 @@ if (performance.mark && performance.measure) {
   
 -   Visionnez [cette vidéo](http://channel9.msdn.com/Events/Build/2013/3-316) de la conférence Build 2013 sur le profileur de réactivité de l’interface utilisateur.  
   
--   Prenez connaissance des conseils de performances pour les applications Windows Store générées pour windows à l'aide de code JavaScript. Pour plus d’informations, consultez [Meilleures pratiques en matière de performances pour les applications du Windows Store en JavaScript](http://msdn.microsoft.com/library/windows/apps/hh465194.aspx).  
+-   Prenez connaissance des conseils sur les performances pour les applications UWP générées pour Windows en JavaScript. Pour plus d’informations, consultez [Bonnes pratiques en matière de performances pour les applications UWP en JavaScript](http://msdn.microsoft.com/library/windows/apps/hh465194.aspx).  
   
 -   Pour plus d’informations sur le modèle et les performances d’exécution de code monothread, consultez [Exécution du code](http://msdn.microsoft.com/library/windows/apps/hh781217.aspx).  
   

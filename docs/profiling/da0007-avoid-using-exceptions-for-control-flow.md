@@ -1,47 +1,48 @@
 ---
-title: "DA0007&#160;: Ne pas utiliser d&#39;exceptions pour le flux de contr&#244;le | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-debug"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "vs.performance.rules.DAExceptionsThrown"
-  - "vs.performance.7"
-  - "vs.performance.rules.DA0007"
-  - "vs.performance.DA0007"
+title: "DA0007 : Ne pas utiliser d’exceptions pour le flux de contrôle | Microsoft Docs"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-debug
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords:
+- vs.performance.rules.DAExceptionsThrown
+- vs.performance.7
+- vs.performance.rules.DA0007
+- vs.performance.DA0007
 ms.assetid: ee8ba8b5-2313-46c9-b129-3f3a2a232898
-caps.latest.revision: 13
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 13
+caps.latest.revision: "13"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: 1bf6ce50519fc3021197de5ca8f76ca55500e6e0
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: HT
+ms.contentlocale: fr-FR
+ms.lasthandoff: 10/31/2017
 ---
-# DA0007&#160;: Ne pas utiliser d&#39;exceptions pour le flux de contr&#244;le
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
-
+# <a name="da0007-avoid-using-exceptions-for-control-flow"></a>DA0007 : Ne pas utiliser d'exceptions pour le flux de contrôle
 |||  
 |-|-|  
-|ID de la règle|DA0007|  
+|ID de règle|DA0007|  
 |Catégorie|Utilisation du .NET Framework|  
-|Méthodes de profilage|Tous|  
-|Message|De nombreuses exceptions sont levées.  Réduisez l'utilisation d'exceptions dans la logique du programme.|  
-|Type de message|Avertissement|  
+|Méthodes de profilage|Tout|  
+|Message|De nombreuses exceptions sont levées. Réduisez l’utilisation d’exceptions dans la logique du programme.|  
+|Type de message|Warning|  
   
- Lorsque vous profilez en utilisant les méthodes d'échantillonnage, de mémoire. NET ou de conflits de ressources, vous devez collecter au moins 25 échantillons pour déclencher cette règle.  
+ Lorsque vous effectuez un profilage à l’aide de la méthode d’échantillonnage, de mémoire .NET ou de conflit des ressources, vous devez collecter au moins 25 échantillons pour déclencher cette règle.  
   
-## Cause  
- Un taux élevé de gestionnaires d'exceptions .NET Framework a été appelé dans les données de profilage.  Utilisez une autre logique de flux de contrôle pour réduire le nombre d'exceptions levées.  
+## <a name="cause"></a>Cause  
+ Un taux élevé de gestionnaires d’exceptions .NET Framework ont été appelés dans les données de profilage. Utilisez une autre logique de flux de contrôle pour réduire le nombre d’exceptions levées.  
   
-## Description de la règle  
- Alors que l'utilisation de gestionnaires d'exceptions pour intercepter des erreurs et d'autres événements qui interrompent l'exécution du programme est une méthode conseillée, l'utilisation de gestionnaire d'exceptions dans le cadre de la logique d'exécution du programme normale peut être coûteuse et doit être évitée.  Dans la plupart des cas, les exceptions doivent être utilisées uniquement pour les circonstances qui se produisent rarement et ne sont pas attendues.  Les exceptions ne doivent pas être utilisées pour retourner des valeurs dans le cadre du flux normal du programme.  Dans de nombreux cas, vous pouvez éviter de déclencher des exceptions en validant des valeurs et en utilisant la logique conditionnelle pour arrêter l'exécution des instructions qui provoquent le problème.  
+## <a name="rule-description"></a>Description de la règle  
+ Si l’utilisation de gestionnaires d’exceptions pour intercepter des erreurs et autres événements qui interrompent l’exécution des programmes constitue une bonne pratique, l’utilisation d’un gestionnaire d’exceptions dans le cadre de la logique d’exécution des programmes peut être coûteuse et doit être évitée. Dans la plupart des cas, les exceptions ne doivent être utilisées que pour les événements rares et inattendus. Les exceptions ne doivent pas être utilisées pour retourner des valeurs dans le cadre d’un flux de programme normal. Dans de nombreux cas, vous pouvez éviter la levée des exceptions en validant les valeurs et en utilisant une logique conditionnelle qui arrête l’exécution des instructions qui causent le problème.  
   
- Pour plus d'informations consultez [Gestion des exceptions](http://go.microsoft.com/fwlink/?LinkID=177825) la section " **Chapter 5 — Improving Managed Code Performance** dans le volume **Improving .NET Application Performance and Scalability** de la bibliothèque **Microsoft Patterns and Practices** sur MSDN.  
+ Pour plus d’informations, consultez la section [Exception Management](http://go.microsoft.com/fwlink/?LinkID=177825) de la rubrique **Chapter 5 — Improving Managed Code Performance** qui fait partie de la documentation **Improving .NET Application Performance and Scalability**, disponible sur le site MSDN, dans la bibliothèque **Microsoft Patterns and Practices**.  
   
-## Comment examiner un avertissement  
- Double\-cliquez sur le message dans la fenêtre Liste d'erreurs pour naviguer jusqu'à l'affichage Marques.  Recherchez la colonne qui contient les mesures **Exceptions CLR .NET\(@ProcessInstance\)\\Nombre d'exceptions levées\/s**.  Déterminez s'il y a des phases spécifiques d'exécution du programme où la gestion des exceptions est plus fréquente que d'autres.  À l'aide d'un profil d'échantillonnage, essayez d'identifier les instructions throw et les blocs try\/catch qui génèrent des exceptions fréquentes.  Si nécessaire, ajoutez la logique aux blocs catch pour vous aider à comprendre quelles exceptions sont le plus fréquemment gérées.  Lorsque c'est possible, remplacez des instructions throw ou des blocs catch exécutés fréquemment par la logique de contrôle de flux simple ou le code de validation.  
+## <a name="how-to-investigate-a-warning"></a>Comment rechercher la cause d’un avertissement  
+ Double-cliquez sur le message dans la fenêtre Liste d’erreurs pour accéder à la vue Marques. Recherchez la colonne qui contient les mesures **Exceptions .NET CLR(@ProcessInstance)\\Nombre d’exceptions levées/s**. Déterminez s’il existe des phases spécifiques de l’exécution du programme durant lesquelles la gestion des exceptions est plus fréquente. À l’aide d’un profil d’échantillonnage, essayez d’identifier les instructions throw et les blocs try/catch qui génèrent fréquemment des exceptions. Si nécessaire, ajoutez une logique aux blocs catch pour identifier plus facilement les exceptions qui sont gérées le plus fréquemment. Si possible, remplacez les instructions throw ou les blocs catch fréquemment exécutés par une logique simple de contrôle de flux ou par du code de validation.  
   
- Par exemple, si vous constatez que votre application gère des exceptions DivideByZeroException fréquentes, l'ajout d'une logique à votre programme pour rechercher des dénominateurs avec les valeurs zéro améliorera la performance de l'application.
+ Par exemple, si votre application gère des exceptions DivideByZeroException fréquentes, le fait d’ajouter une logique à votre programme pour rechercher des dénominateurs avec des valeurs nulles peut améliorer les performances de l’application.

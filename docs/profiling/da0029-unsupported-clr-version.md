@@ -1,43 +1,44 @@
 ---
-title: "DA0029&#160;: version&#160;CLR non prise en&#160;charge | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-debug"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "vs.performance.29"
-  - "vs.performance.rules.DA0029"
-helpviewer_keywords: 
-  - "vs.performance.29"
-  - "vs.performance.DA0029"
-  - "vs.performance.rules.DA0029"
+title: 'DA0029 : version CLR non prise en charge | Microsoft Docs'
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-debug
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords:
+- vs.performance.29
+- vs.performance.rules.DA0029
+helpviewer_keywords:
+- vs.performance.29
+- vs.performance.DA0029
+- vs.performance.rules.DA0029
 ms.assetid: 76247259-c6f3-44c4-b3f9-d8dac16b5e0d
-caps.latest.revision: 6
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 6
+caps.latest.revision: "6"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: dfc7d33396825263a5fd846c62426fa67509e0da
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: HT
+ms.contentlocale: fr-FR
+ms.lasthandoff: 10/31/2017
 ---
-# DA0029&#160;: version&#160;CLR non prise en&#160;charge
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
-
+# <a name="da0029-unsupported-clr-version"></a>DA0029 : version CLR non prise en charge
 |||  
 |-|-|  
-|ID de la règle|DA0029|  
-|Catégorie|Utilisation des outils de profilage|  
+|ID de règle|DA0029|  
+|Catégorie|Utilisation des Outils de profilage|  
 |Méthode de profilage|Profilage à partir de la ligne de commande|  
-|Message|Une version CLR non prise en charge a été détectée lors de la collection.  Les symboles managés peuvent ne pas être résolus correctement.|  
-|Type de règle|Informations.|  
+|Message|Une version CLR non prise en charge a été détectée lors de la collection. Les symboles managés peuvent ne pas être résolus correctement.|  
+|Type de règle|Information.|  
   
-## Cause  
- Vous essayez de profiler une application qui utilise le [!INCLUDE[net_v11_long](../profiling/includes/net_v11_long_md.md)] qui n'est pas pris en charge par les outils de profilage.  
+## <a name="cause"></a>Cause  
+ Vous essayez de profiler une application qui utilise le [!INCLUDE[net_v11_long](../profiling/includes/net_v11_long_md.md)], qui n’est pas pris en charge par les Outils de profilage.  
   
-## Description de la règle  
- Cet avertissement se produit car les outils de profilage ne pourront pas résoudre les symboles du code managé exécuté dans l'application.  Les outils de profilage ne peuvent pas résoudre les symboles de code managé pour les applications qui exécutent le [!INCLUDE[net_v11_long](../profiling/includes/net_v11_long_md.md)].  
+## <a name="rule-description"></a>Description de la règle  
+ Cet avertissement se produit car les Outils de profilage ne pourront pas résoudre les symboles du code managé qui s’exécute dans l’application. Les Outils de profilage ne peuvent pas résoudre les symboles du code managé pour les applications qui exécutent le [!INCLUDE[net_v11_long](../profiling/includes/net_v11_long_md.md)].  
   
-## Comment corriger les violations  
+## <a name="how-to-fix-violations"></a>Comment corriger les violations  
  Aucun

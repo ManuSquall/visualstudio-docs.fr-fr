@@ -4,8 +4,7 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-general
+ms.technology: vs-ide-general
 ms.tgt_pltfrm: 
 ms.topic: article
 f1_keywords:
@@ -30,29 +29,15 @@ helpviewer_keywords:
 - file extensions, Visual Studio
 - file types
 ms.assetid: 0ba5007b-465d-4efa-b1e4-f0ee68527649
-caps.latest.revision: 19
-author: kempb
-ms.author: kempb
+caps.latest.revision: "19"
+author: gewarren
+ms.author: gewarren
 manager: ghogen
-translation.priority.ht:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
-translationtype: Human Translation
-ms.sourcegitcommit: ca7c86466fa23fb21a932f26dc24e37c71cf29b4
-ms.openlocfilehash: b8f389deae83848893e59daec16630c911925f19
-ms.lasthandoff: 04/05/2017
-
+ms.openlocfilehash: 744b35962a196e0372d1bd1fa916f247a9195da6
+ms.sourcegitcommit: ec1c7e7e3349d2f3a4dc027e7cfca840c029367d
+ms.translationtype: HT
+ms.contentlocale: fr-FR
+ms.lasthandoff: 11/07/2017
 ---
 # <a name="project-and-solution-file-types"></a>Types de fichiers projet et solution
 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] prend en charge de nombreux types de fichiers. Dans une installation particulière, les composants installés déterminent les types de fichiers pris en charge. Cette rubrique répertorie les types de fichiers solution et projet qui sont pris en charge dans certaines installations standard. Pour obtenir des informations sur d'autres types de fichiers, effectuez une recherche en utilisant les extensions de nom de fichier pour chaque type.  
@@ -69,10 +54,8 @@ ms.lasthandoff: 04/05/2017
  [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] utilise divers formats de fichiers pour stocker les informations spécifiques aux projets. Pour plus d'informations, consultez les rubriques d'aide suivantes :  
   
  [!INCLUDE[vcprvc](../../code-quality/includes/vcprvc_md.md)]  
- [Types de fichiers créés pour les projets Visual C++](/cpp/ide/file-types-created-for-visual-cpp-projects)  
-  
- [Création et gestion de projets Visual C++](/cpp/ide/creating-and-managing-visual-cpp-projects)  
-  
+ [Types de fichiers créés pour les projets Visual C++](/cpp/ide/file-types-created-for-visual-cpp-projects)    
+ [Création et gestion de projets Visual C++](/cpp/ide/creating-and-managing-visual-cpp-projects)    
  [Unicode](/cpp/mfc/unicode-in-mfc)  
   
 ## <a name="see-also"></a>Voir aussi  

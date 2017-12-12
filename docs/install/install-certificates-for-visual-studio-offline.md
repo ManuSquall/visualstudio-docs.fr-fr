@@ -1,11 +1,10 @@
 ---
-title: Install certificates needed for Visual Studio offline installation | Microsoft Docs
-description: Describes the steps needed to install certificates for a Visual Studio offline installation
+title: "Installer les certificats nécessaires à l’installation hors connexion de Visual Studio | Microsoft Docs"
+description: "Décrit les étapes à effectuer pour installer les certificats nécessaires à l’installation hors connexion de Visual Studio."
 ms.date: 08/30/2017
 ms.reviewer: tims
 ms.suite: 
-ms.technology:
-- vs-ide-install
+ms.technology: vs-acquisition
 ms.tgt_pltfrm: 
 ms.topic: article
 helpviewer_keywords:
@@ -13,40 +12,39 @@ helpviewer_keywords:
 - '{{PLACEHOLDER}}'
 ms.assetid: 9750A3F3-89C7-4A8F-BA75-B0B06BD772C2
 author: timsneath
-ms.author: tims
+ms.author: tglee
 manager: ghogen
+ms.openlocfilehash: e6dcf1187db5c1e3dd911bc9f91867c383e5a8b2
+ms.sourcegitcommit: eb954434c34b4df6fd2264266381b23ce9e6204a
 ms.translationtype: HT
-ms.sourcegitcommit: 13659103061c6054698f4579b4b71d2669d2356d
-ms.openlocfilehash: cc1f85852c8e00f2121bc9a68973bdbc35f5f1d5
-ms.contentlocale: fr-fr
-ms.lasthandoff: 09/07/2017
-
+ms.contentlocale: fr-FR
+ms.lasthandoff: 11/22/2017
 ---
-# <a name="install-certificates-needed-for-visual-studio-offline-installation"></a>Install certificates needed for Visual Studio offline installation
+# <a name="install-certificates-required-for-visual-studio-offline-installation"></a>Installer les certificats nécessaires à l’installation hors connexion de Visual Studio
 
-Visual Studio is primarily designed to be installed on an internet-connected machine, since many components are updated regularly. However, with some extra steps, it's possible to deploy Visual Studio in an environment where a working internet connection is unavailable.
+Visual Studio est avant tout conçu pour être installé sur un ordinateur connecté à Internet, puisque de nombreux composants sont régulièrement mis à jour. Toutefois, en suivant quelques étapes supplémentaires, il est possible de déployer Visual Studio dans un environnement sans aucune connexion Internet disponible.
 
-The Visual Studio setup engine installs only content that is trusted. It does this by checking Authenticode signatures of the content being downloaded and verifying that all content is trusted before installing it. This keeps your environment safe from attacks where the download location is compromised. Visual Studio setup therefore requires that several standard Microsoft root and intermediate certificates are installed and up-to- date on a user's machine. If the machine has been kept up to date with Windows Update, signing certificates usually are up to date. If the machine is connected to the internet, during installation Visual Studio may refresh certificates as necessary to verify file signatures. If the machine is offline, the certificates must be refreshed another way.
+Le moteur d’installation de Visual Studio n’installe que le contenu approuvé. Pour cela, il contrôle les signatures Authenticode du contenu à télécharger et vérifie que tout le contenu est approuvé avant de l’installer. Cela permet de protéger votre environnement contre des attaques au cas où l’emplacement de téléchargement est compromis. Par conséquent, le programme d’installation de Visual Studio nécessite l’installation de plusieurs certificats standard racines et intermédiaires Microsoft à jour sur un ordinateur d’utilisateur. Lorsque l’ordinateur a été maintenu à jour avec Windows Update, les certificats de signature sont généralement à jour. Si l’ordinateur est connecté à Internet lors de l’installation, Visual Studio peut actualiser les certificats pour vérifier les signatures de fichiers. Si l’ordinateur n’est pas connecté à Internet, les certificats doivent être actualisés d’une autre façon.
 
-## <a name="how-to-refresh-certificates-when-offline"></a>How to refresh certificates when offline
+## <a name="how-to-refresh-certificates-when-offline"></a>Comment actualiser les certificats hors connexion
 
-There are three options for installing or updating certificates in an offline environment.
+Il existe trois options pour installer ou mettre à jour des certificats dans un environnement hors connexion.
 
-### <a name="option-1---manually-install-certificates-from-a-layout-folder"></a>Option 1 - Manually install certificates from a layout folder
+### <a name="option-1---manually-install-certificates-from-a-layout-folder"></a>Option 1 : Installer manuellement les certificats à partir d’un dossier de disposition
 
-When you create a network layout, the necessary certificates are downloaded to the Certificates folder. You can then manually install the certificates by double-clicking each of the certificate files, and then clicking through the Certificate Manager wizard. If asked for a password, leave it blank.
+Lorsque vous créez une disposition réseau, les certificats nécessaires sont téléchargés dans le dossier des certificats. Vous pouvez alors installer les certificats manuellement en double-cliquant sur chaque fichier de certificat et en suivant les étapes de l’Assistant du gestionnaire de certificats. Si le système vous demande un mot de passe, laissez-le vide.
 
-### <a name="option-2---distribute-trusted-root-certificates-in-an-enterprise-environment"></a>Option 2 - Distribute trusted root certificates in an enterprise environment
+### <a name="option-2---distribute-trusted-root-certificates-in-an-enterprise-environment"></a>Option 2 : Distribuer les certificats racines approuvés dans un environnement d’entreprise
 
-For enterprises with offline machines that do not have the latest root certificates, an administrator can use the instructions on the [Configure Trusted Roots and Disallowed Certificates](https://technet.microsoft.com/library/dn265983.aspx) page to update them.
+Pour une entreprise équipée d’ordinateurs hors connexion qui n’ont pas les derniers certificats racines, un administrateur peut utiliser les instructions de la page [Configurer les racines de confiance et les certificats non autorisés](https://technet.microsoft.com/library/dn265983.aspx) pour les mettre à jour.
 
-### <a name="option-3---install-certificates-as-part-of-a-scripted-deployment-of-visual-studio"></a>Option 3 - Install certificates as part of a scripted deployment of Visual Studio
+### <a name="option-3---install-certificates-as-part-of-a-scripted-deployment-of-visual-studio"></a>Option 3 : Installer les certificats dans le cadre d’un déploiement de Visual Studio à base de script
 
-If you are scripting the deployment of Visual Studio in an offline environment to client workstations, you should follow these steps:
+Si vous écrivez un script du déploiement de Visual Studio dans un environnement hors connexion sur des postes de travail clients, vous devez suivre ces étapes :
 
-1. Copy the [Certificate Manager Tool](https://msdn.microsoft.com/library/e78byta0.aspx) (certmgr.exe) to the installation share (for example, \\server\share\vs2017). Certmgr.exe is not included as part of Windows itself, but is available as part of the [Windows SDK](https://developer.microsoft.com/windows/downloads/windows-10-sdk).
+1. Copiez [l’outil Gestionnaire de certificat](https://msdn.microsoft.com/library/e78byta0.aspx) (certmgr.exe) dans le partage d’installation (par exemple, \\server\share\vs2017). Certmgr.exe n’est pas inclus dans Windows, mais il est disponible dans le [SDK Windows](https://developer.microsoft.com/windows/downloads/windows-10-sdk).
 
-2. Create a batch file with the following commands:
+2. Créez un fichier de commandes avec les commandes suivantes :
 
    ```cmd
    certmgr.exe -add -c certificates\manifestSignCertificates.p12 -n "Microsoft Code Signing PCA 2011" -s -r LocalMachine CA
@@ -62,61 +60,69 @@ If you are scripting the deployment of Visual Studio in an offline environment t
    certmgr.exe -add -c certificates\vs_installer_opc.SignCertificates.p12 -n "Microsoft Root Certificate Authority" -s -r LocalMachine root
    ```
 
-3. Deploy the batch file to the client. This command should be run from an elevated process.
+3. Déployez le fichier de commandes sur le client. Cette commande doit être exécutée à partir d’un processus avec élévation de privilèges.
 
-## <a name="what-are-the-certificates-files-in-the-certificates-folder"></a>What are the certificates files in the Certificates folder?
+## <a name="what-are-the-certificates-files-in-the-certificates-folder"></a>Quels sont les fichiers de certificats qui se trouvent dans le dossier des certificats ?
 
-The three .P12 files in this folder each contain an intermediate certificate and a root certificate. Most systems that are current with Windows Update have these certificates already installed.
+Les trois fichiers .P12 figurant dans ce dossier contiennent chacun un certificat intermédiaire et un certificat racine. La plupart des systèmes tenus à jour via Windows Update disposent déjà de ces certificats.
 
-* **ManifestSignCertificates.p12** contains:
-    * Intermediate certificate: **Microsoft Code Signing PCA 2011**
-        * Not required. Improves performance in some scenarios if present.
-    * Root certificate: **Microsoft Root Certificate Authority 2011**
-        * Required on Windows 7 Service Pack 1 systems that do not have the latest Windows Updates installed.
-* **ManifestCounterSignCertificates.p12** contains:
-    * Intermediate certificate: **Microsoft Time-Stamp PCA 2010**
-        * Not required. Improves performance in some scenarios if present.
-    * Root certificate: **Microsoft Root Certificate Authority 2010**
-        * Required for Windows 7 Service Pack 1 systems that do not have the latest Windows Updates installed.
-* **Vs_installer_opc.SignCertificates.p12** contains:
-    * Intermediate certificate: **Microsoft Code Signing PCA**
-        * Required for all systems. Note that systems with all updates applied from Windows Update might not have this certificate.
-    * Root certificate: **Microsoft Root Certificate Authority**
-        * Required. This certificate ships with systems running Windows 7 or later.
+* **ManifestSignCertificates.p12** contient :
+    * Certificat intermédiaire : **Microsoft Code Signing PCA 2011**
+        * Non requis Le cas échéant, améliore les performances dans certains scénarios.
+    * Certificat racine : **Microsoft Root Certificate Authority 2011**
+        * Obligatoire sur les systèmes Windows 7 Service Pack 1 qui ne disposent pas des dernières mises à jour Windows.
+* **ManifestCounterSignCertificates.p12** contient :
+    * Certificat intermédiaire : **Microsoft Time-Stamp PCA 2010**
+        * Non requis Le cas échéant, améliore les performances dans certains scénarios.
+    * Certificat racine : **Microsoft Root Certificate Authority 2010**
+        * Obligatoire pour les systèmes Windows 7 Service Pack 1 qui ne disposent pas des dernières mises à jour Windows.
+* **Vs_installer_opc.SignCertificates.p12** contient :
+    * Certificat intermédiaire : **Microsoft Code Signing PCA**
+        * Obligatoire pour tous les systèmes. Notez que les systèmes dotés de toutes les mises à jour appliquées à partir de Windows Update n’ont peut-être pas ce certificat.
+    * Certificat racine : **Microsoft Root Certificate Authority**
+        * Obligatoire. Ce certificat est fourni avec les systèmes exécutant Windows 7 ou version ultérieure.
 
-## <a name="why-are-the-certificates-from-the-certificates-folder-not-installed-automatically"></a>Why are the certificates from the Certificates folder not installed automatically?
+## <a name="why-are-the-certificates-from-the-certificates-folder-not-installed-automatically"></a>Pourquoi les certificats du dossier de certificats ne sont-ils pas installés automatiquement ?
 
-When a signature is verified in an online environment, Windows APIs are used to download and add the certificates to the system. Verification that the certificate is trusted and allowed via administrative settings occurs during this process. This verification process cannot occur in most offline environments. Installing the certificates manually allows enterprise administrators to ensure the certificates are trusted and meet the security policy of their organization.
+Quand une signature est vérifiée dans un environnement en ligne, les API Windows sont utilisées pour télécharger les certificats et les ajouter au système. La vérification que le certificat est approuvé et autorisé via les paramètres d’administration se produit pendant ce processus. Ce processus de vérification ne peut pas se produire dans la plupart des environnements hors connexion. L’installation manuelle des certificats permet aux administrateurs d’entreprise de s’assurer que les certificats sont approuvés et conformes à la stratégie de sécurité de leur organisation.
 
-## <a name="checking-if-certificates-are-already-installed"></a>Checking if certificates are already installed
+## <a name="checking-if-certificates-are-already-installed"></a>Vérification de l’installation des certificats
 
-One way to check on the installing system is to follow these steps:
-1. Run **mmc.exe**.<br/>
-  a. Click File, and then select **Add/Remove Snap-in**.<br/>
-  b. Double-click **Certificates**, select **Computer account**, and then click **Next**.<br/>
-  c. Select **Local computer**, click **Finish**, and then click **OK**.<br/>
-  d. Expand **Certificates (Local Computer)**.<br/>
-  e. Expand **Trusted Root Certification Authorities**, and then select **Certificates**.<br/>
-    * Check this list for the necessary root certificates.<br/>
-  
-   f. Expand **Intermediate Certification Authorities**, and then select **Certificates**.<br/>
-    * Check this list for the required intermediate certificates.<br/>
+Une manière de vérifier l’installation du système consiste à suivre ces étapes :
+1. Exécutez **mmc.exe**.<br/>
+  a. Cliquez sur Fichier et sélectionnez **Ajouter/Supprimer un composant logiciel enfichable**.<br/>
+  b. Double-cliquez sur **Certificats**, sélectionnez **Compte d’ordinateur** et cliquez sur **Suivant**.<br/>
+  c. Sélectionnez **Ordinateur local**, cliquez sur **Terminer**, puis sur **OK**.<br/>
+  d. Développez **Certificats (ordinateur local)**.<br/>
+  e. Développez **Autorités de certification racines de confiance** et sélectionnez **Certificats**.<br/>
+    * Recherchez les certificats racines nécessaires dans cette liste.<br/>
 
-2. Click File and select **Add/Remove Snap-in**.<br/>
-  a. Double-click **Certificates**, select **My user account**, click **Finish**, and then click **OK**.<br/>
-  b. Expand **Certificates – Current User**.<br/>
-  c. Expand **Intermediate Certification Authorities**, and then select **Certificates**.<br/>
-    * Check this list for the required intermediate certificates.<br/>
+   f. Développez **Autorités de certification intermédiaires** et sélectionnez **Certificats**.<br/>
+    * Recherchez les certificats intermédiaires obligatoires dans cette liste.<br/>
 
-If the certificates names were not in the **Issued To** columns, they must be installed.  If an intermediate certificate was only in the **Current User** Intermediate Certificate store, then it is available only to the user that is logged in. You might need to install it for other users.
+2. Cliquez sur Fichier et sélectionnez **Ajouter/Supprimer un composant logiciel enfichable**.<br/>
+  a. Double-cliquez sur **Certificats**, sélectionnez **Mon compte d’utilisateur**, cliquez sur **Terminer**, puis sur **OK**.<br/>
+  b. Développez **Certificats – Utilisateur actuel**.<br/>
+  c. Développez **Autorités de certification intermédiaires** et sélectionnez **Certificats**.<br/>
+    * Recherchez les certificats intermédiaires obligatoires dans cette liste.<br/>
 
-## <a name="install-visual-studio"></a>Install Visual Studio
+Si les noms des certificats ne figuraient pas dans les colonnes **Délivré à**, ils doivent être installés.  Si un certificat intermédiaire se trouve uniquement dans le magasin de certificats intermédiaires de **l’utilisateur actuel**, il n’est disponible que pour l’utilisateur connecté. Vous devrez peut-être l’installer pour les autres utilisateurs.
 
-After you install the certificates, deployment of Visual Studio can proceed by using the instructions from the [Deploying from a network installation](create-a-network-installation-of-visual-studio.md#deploying-from-a-network-installation) section of the "Create a network installation of Visual Studio" page.
+## <a name="install-visual-studio"></a>Installer Visual Studio
 
-## <a name="see-also"></a>See also
-* [Install Visual Studio](install-visual-studio.md)
-* [Visual Studio administrator guide](visual-studio-administrator-guide.md)
-* [Use command-line parameters to install Visual Studio](use-command-line-parameters-to-install-visual-studio.md)
-* [Visual Studio workload and component IDs](workload-and-component-ids.md)
+Après avoir installé les certificats, vous pouvez poursuivre le déploiement de Visual Studio en suivant les instructions de la section [Déploiement à partir d’une installation réseau](create-a-network-installation-of-visual-studio.md#deploying-from-a-network-installation) de « Créer une installation réseau de Visual Studio ».
 
+## <a name="get-support"></a>Obtenir de l’aide
+Parfois, des problèmes peuvent se produire. Si votre installation de Visual Studio échoue, consultez la page [Résolution des problèmes d’installation et de mise à niveau de Visual Studio 2017](troubleshooting-installation-issues.md). Si aucune étape de résolution des problèmes ne vous aide, vous pouvez nous contacter pour une conversation en direct sur une assistance à l’installation (en anglais uniquement). Pour plus de détails, consultez la [page du support Visual Studio](https://www.visualstudio.com/vs/support/#talktous).
+
+Voici d’autres options de support :
+* Vous pouvez nous signaler des problèmes au niveau d’un produit via l’outil [Signaler un problème](../ide/how-to-report-a-problem-with-visual-studio-2017.md) qui s’affiche dans le programme d’installation de Visual Studio et dans l’IDE de Visual Studio.
+* Vous pouvez nous faire part d’une suggestion de produit via [UserVoice](https://visualstudio.uservoice.com/forums/121579).
+* Vous pouvez suivre les problèmes au niveau d’un produit sur le site [Visual Studio Developer Community](https://developercommunity.visualstudio.com/) et y poser des questions et obtenir des réponses.
+* Vous pouvez également communiquer avec nous et d’autres développeurs Visual Studio en prenant part à notre [conversation Visual Studio dans la communauté Gitter ](https://gitter.im/Microsoft/VisualStudio)  (Cette option nécessite un compte [GitHub](https://github.com/)).
+
+## <a name="see-also"></a>Voir aussi
+* [Installer Visual Studio](install-visual-studio.md)
+* [Guide de l’administrateur Visual Studio](visual-studio-administrator-guide.md)
+* [Utiliser les paramètres de ligne de commande pour installer Visual Studio](use-command-line-parameters-to-install-visual-studio.md)
+* [ID de charge de travail et de composant Visual Studio](workload-and-component-ids.md)

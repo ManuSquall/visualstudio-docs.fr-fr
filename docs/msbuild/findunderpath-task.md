@@ -1,53 +1,53 @@
 ---
-title: "FindUnderPath Task | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "http://schemas.microsoft.com/developer/msbuild/2003#FindUnderPath"
-dev_langs: 
-  - "VB"
-  - "CSharp"
-  - "C++"
-  - "jsharp"
-helpviewer_keywords: 
-  - "MSBuild, FindUnderPath task"
-  - "FindUnderPath task [MSBuild]"
+title: "FindUnderPath, tâche | Microsoft Docs"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords: http://schemas.microsoft.com/developer/msbuild/2003#FindUnderPath
+dev_langs:
+- VB
+- CSharp
+- C++
+- jsharp
+helpviewer_keywords:
+- MSBuild, FindUnderPath task
+- FindUnderPath task [MSBuild]
 ms.assetid: 3c6d58b0-36e8-47aa-bfca-b73dd2045d91
-caps.latest.revision: 9
-author: "kempb"
-ms.author: "kempb"
-manager: "ghogen"
-caps.handback.revision: 9
+caps.latest.revision: "9"
+author: kempb
+ms.author: kempb
+manager: ghogen
+ms.openlocfilehash: fcb43188414df57bd3c41286ca7e3d3caa8718d5
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: HT
+ms.contentlocale: fr-FR
+ms.lasthandoff: 10/31/2017
 ---
-# FindUnderPath Task
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
-
-Détermine les éléments de la collection d'éléments spécifiée dont les chemins d'accès figurent dans le dossier spécifié ou sous celui\-ci.  
+# <a name="findunderpath-task"></a>FindUnderPath, tâche
+Détermine quels éléments de la collection d’éléments spécifiée ont des chemins qui se trouvent dans ou sous le dossier spécifié.  
   
-## Paramètres  
- Le tableau suivant décrit les paramètres de la tâche `FindUnderPath`.  
+## <a name="parameters"></a>Paramètres  
+ Le tableau ci-dessous décrit les paramètres de la tâche `FindUnderPath` .  
   
 |Paramètre|Description|  
 |---------------|-----------------|  
-|`Files`|Paramètre <xref:Microsoft.Build.Framework.ITaskItem>`[]` optionnel.<br /><br /> Spécifie les fichiers dont les chemins d'accès doivent être comparés au chemin d'accès spécifié par le paramètre `Path`.|  
-|`InPath`|Paramètre de sortie <xref:Microsoft.Build.Framework.ITaskItem>`[]` facultatif.<br /><br /> Contient les éléments trouvés sous le chemin d'accès spécifié.|  
-|`OutOfPath`|Paramètre de sortie <xref:Microsoft.Build.Framework.ITaskItem>`[]` facultatif.<br /><br /> Contient les éléments introuvables sous le chemin d'accès spécifié.|  
-|`Path`|Paramètre <xref:Microsoft.Build.Framework.ITaskItem> obligatoire.<br /><br /> Spécifie le chemin d'accès au dossier à utiliser comme référence.|  
-|`UpdateToAbsolutePaths`|Paramètre `Boolean` facultatif.<br /><br /> Si la valeur est true, les chemins d'accès des éléments de sortie sont mis à jour pour correspondre à des chemins absolus.|  
+|`Files`|Paramètre <xref:Microsoft.Build.Framework.ITaskItem>`[]` facultatif.<br /><br /> Spécifie les fichiers dont les chemins doivent être comparés au chemin spécifié par le paramètre `Path`.|  
+|`InPath`|Paramètre de sortie <xref:Microsoft.Build.Framework.ITaskItem>`[]` facultatif.<br /><br /> Contient les éléments trouvés sous le chemin spécifié.|  
+|`OutOfPath`|Paramètre de sortie <xref:Microsoft.Build.Framework.ITaskItem>`[]` facultatif.<br /><br /> Contient les éléments qui n’ont pas été trouvés sous le chemin spécifié.|  
+|`Path`|Paramètre <xref:Microsoft.Build.Framework.ITaskItem> requis.<br /><br /> Spécifie le chemin du dossier à utiliser comme référence.|  
+|`UpdateToAbsolutePaths`|Paramètre `Boolean` facultatif.<br /><br /> Si true, les chemins des éléments de sortie sont changés en chemins absolus.|  
   
-## Notes  
- En plus des paramètres énumérés ci\-dessus, cette tâche hérite des paramètres de la classe <xref:Microsoft.Build.Tasks.TaskExtension>, qui hérite elle\-même de la classe <xref:Microsoft.Build.Utilities.Task>.  Pour obtenir la liste de ces paramètres supplémentaires et de leurs descriptions, consultez [TaskExtension Base Class](../msbuild/taskextension-base-class.md).  
+## <a name="remarks"></a>Remarques  
+ En plus des paramètres énumérés ci-dessus, cette tâche hérite des paramètres de la classe <xref:Microsoft.Build.Tasks.TaskExtension>, qui elle-même hérite de la classe <xref:Microsoft.Build.Utilities.Task>. Pour obtenir la liste de ces paramètres supplémentaires et leurs descriptions, consultez [Classe de base TaskExtension](../msbuild/taskextension-base-class.md).  
   
-## Exemple  
- L'exemple suivant utilise la tâche `FindUnderPath` pour déterminer si les fichiers contenus dans l'élément `MyFiles` possèdent des chemins d'accès sous le chemin d'accès spécifié par la propriété `SearchPath`.  Au terme de la tâche, l'élément `FilesNotFoundInPath` contient le fichier `File1.txt` et l'élément `FilesFoundInPath` contient le fichier `File2.txt`.  
+## <a name="example"></a>Exemple  
+ L’exemple suivant utilise la tâche `FindUnderPath` pour déterminer si les fichiers contenus dans l’élément `MyFiles` ont des chemins qui existent sous le chemin spécifié par la propriété `SearchPath`. Une fois la tâche terminée, l’élément `FilesNotFoundInPath` contient le fichier `File1.txt` et l’élément `FilesFoundInPath` contient le fichier `File2.txt`.  
   
-```  
+```xml  
 <Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">  
     <ItemGroup>  
         <MyFiles Include="C:\File1.txt" />  
@@ -74,7 +74,7 @@ Détermine les éléments de la collection d'éléments spécifiée dont les che
 </Project>  
 ```  
   
-## Voir aussi  
- [Task Reference](../msbuild/msbuild-task-reference.md)   
- [Tasks](../msbuild/msbuild-tasks.md)   
- [MSBuild Concepts](../msbuild/msbuild-concepts.md)
+## <a name="see-also"></a>Voir aussi  
+ [Informations de référence sur les tâches](../msbuild/msbuild-task-reference.md)   
+ [Tâches MSBuild](../msbuild/msbuild-tasks.md)   
+ [Concepts MSBuild](../msbuild/msbuild-concepts.md)

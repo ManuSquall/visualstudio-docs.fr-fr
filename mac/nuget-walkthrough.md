@@ -1,19 +1,17 @@
 ---
-title: "Procédure pas à pas : inclusion d’un package NuGet dans votre projet"
+title: "Procédure pas à pas : inclusion d’un package NuGet dans votre projet | Microsoft Docs"
 description: "Ce document explique comment inclure un package NuGet dans un projet Xamarin. Il décrit la recherche et le téléchargement d’un package, et il présente les fonctionnalités d’intégration de l’IDE."
 author: asb3993
 ms.author: amburns
 ms.date: 04/14/2017
 ms.topic: article
 ms.assetid: 5C800815-0B13-4B27-B017-95FCEF1A0EA2
+ms.openlocfilehash: cb927b14e3637edd7e16c78fbed01fa4e9522652
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
 ms.translationtype: HT
-ms.sourcegitcommit: e2b7ff9126e1cc38ac2e58d6be339b656a024e7f
-ms.openlocfilehash: 0fa91c18592dee4f20832d7a0dad8aea069da93e
-ms.contentlocale: fr-fr
-ms.lasthandoff: 08/11/2017
-
+ms.contentlocale: fr-FR
+ms.lasthandoff: 10/31/2017
 ---
-
 # <a name="including-a-nuget-package-in-your-project"></a>Inclusion d’un package NuGet dans votre projet
 
 NuGet est le gestionnaire de packages le plus répandu pour le développement .NET, et il est intégré à Visual Studio pour Mac et à Visual Studio sur Windows. Vous pouvez rechercher et ajouter des packages à vos projets Xamarin.iOS et Xamarin.Android en utilisant l’un ou l’autre de ces IDE.
@@ -118,5 +116,4 @@ La documentation de NuGet traite de [l’utilisation de NuGet sans validation de
 ![Restaurer automatiquement les packages](media/nuget-walkthrough-AutoRestore.png)
 
 Pour plus d’informations sur la façon d’exclure le répertoire `packages` du suivi, consultez la documentation spécifique à votre contrôle de code source.
-
 
