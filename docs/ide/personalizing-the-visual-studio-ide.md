@@ -1,57 +1,64 @@
 ---
 title: "Personnaliser l’IDE Visual Studio | Microsoft Docs"
 ms.custom: 
-ms.date: 7/20/2017
+ms.date: 11/20/2017
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-general
+ms.technology: vs-ide-general
 ms.tgt_pltfrm: 
 ms.topic: article
-ms.assetid: c2fec4ce-3885-4c4c-ace2-14c197e11079
-caps.latest.revision: 3
+caps.latest.revision: "3"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
+ms.openlocfilehash: e9ae492d7fc4d110c6e5015c782f97a2561c8bd8
+ms.sourcegitcommit: 1aa9282b1f0bc2795df3264cbd1e331cc44c23f3
 ms.translationtype: HT
-ms.sourcegitcommit: c3521e1de25854db012cb91bbe09d9463ecb42c7
-ms.openlocfilehash: 5b134cffaa9f8dbc5e2108975e6540d10b94b1eb
-ms.contentlocale: fr-fr
-ms.lasthandoff: 07/21/2017
-
+ms.contentlocale: fr-FR
+ms.lasthandoff: 12/08/2017
 ---
-
 # <a name="personalize-the-visual-studio-ide"></a>Personnaliser l’IDE Visual Studio
 
-Vous pouvez personnaliser Visual Studio de différentes manières pour l’adapter du mieux possible à votre propre style de développement et à vos exigences. Cette rubrique décrit brièvement plusieurs personnalisations et vous indique où trouver plus d’informations.
+Vous pouvez personnaliser Visual Studio de différentes manières pour l’adapter du mieux possible à votre propre style de développement et à vos exigences. Bon nombre des paramètres que vous définissez vous suivent dans les différentes instances de Visual Studio &mdash; consultez [Paramètres synchronisés](../ide/synchronized-settings-in-visual-studio.md). Cette rubrique décrit brièvement plusieurs personnalisations et indique où vous pouvez trouver plus d’informations.
 
- Des options supplémentaires sont également exposées par le biais de la [boîte de dialogue Options d’environnement](../ide/reference/environment-options-dialog-box.md). En outre, bon nombre des paramètres que vous définissez vous suivent dans les différentes instances de Visual Studio. Consultez [Paramètres synchronisés](../ide/synchronized-settings-in-visual-studio.md).
+## <a name="general-environment-options"></a>Options générales liées à l’environnement
+
+Beaucoup d’options de personnalisation sont également exposées dans la boîte de dialogue [Options d’environnement](../ide/reference/environment-options-dialog-box.md). Vous pouvez accéder à cette boîte de dialogue de deux manières :
+
+- Dans la barre de menus, choisissez **Outils**, **Options** et, si le nœud **Environnement** n’est pas déjà développé, développez-le.
+
+- Tapez `environment` dans la zone **Lancement rapide** et sélectionnez **Environnement --> Général** dans la liste des résultats.
+
+   > [!TIP]
+   > Quand la boîte de dialogue s’affiche, appuyez sur **F1** si vous souhaitez obtenir de l’aide sur les paramètres de cette page.
+
+## <a name="environment-color-themes"></a>Thèmes de couleurs de l’environnement
+
+Pour changer le thème de couleur de l’environnement (clair, sombre ou bleu), tapez `environment` dans la zone **Lancement rapide**, puis choisissez **Environnement --> Général**. Dans la boîte de dialogue **Options**, changez l’option **Thème de couleur**.
+
+Pour changer les options de colorisation dans l’éditeur, tapez `environment` dans la zone **Lancement rapide**, puis choisissez **Environnement --> Polices et couleurs**. Consultez [Guide pratique pour modifier les polices et les couleurs](../ide/how-to-change-fonts-and-colors-in-visual-studio.md).
+
+### <a name="main-menu-casing"></a>Casse du menu principal
+
+Vous pouvez changer la casse du menu principal à l’aide des options **1re lettre des mots en majuscule** (« Fichier ») et **Tout en majuscules** (« FICHIER »). Tapez `environment` dans la zone **Lancement rapide**, sélectionnez **Environnement --> Général**, puis changez l’option **Mettre la 1ère lettre des mots en maj. dans la barre de menus**.
+
+### <a name="customzing-menus-and-toolbars"></a>Personnalisation des menus et barres d’outils
+
+Pour ajouter ou supprimer des éléments de menu ou de barre d’outils, consultez [Guide pratique pour personnaliser des menus et des barres d’outils](../ide/how-to-customize-menus-and-toolbars-in-visual-studio.md).
+
+## <a name="start-page"></a>Page de démarrage
+
+Pour créer une page de démarrage personnalisée pour vous et votre équipe, consultez [Personnalisation de la page de démarrage](../ide/customizing-the-start-page-for-visual-studio.md).
 
 ## <a name="window-layouts"></a>Dispositions de fenêtres
 
-Vous pouvez définir et enregistrer plusieurs dispositions de fenêtres et basculer entre elles. Par exemple, vous pouvez définir une disposition pour le codage et une autre pour le débogage. Pour organiser les positions et le comportement des fenêtres et enregistrer des dispositions personnalisées, consultez [Personnalisation des dispositions de fenêtres](../ide/customizing-window-layouts-in-visual-studio.md).  
+Vous pouvez définir et enregistrer plusieurs dispositions de fenêtres et basculer entre elles. Par exemple, vous pouvez définir une disposition pour le codage et une autre pour le débogage. Pour organiser les positions et le comportement des fenêtres, et enregistrer des dispositions personnalisées, consultez [Personnalisation des dispositions de fenêtres](../ide/customizing-window-layouts-in-visual-studio.md).
 
-## <a name="general-environment-options"></a>Options générales liées à l’environnement  
+## <a name="external-tools"></a>Outils externes
 
- Pour personnaliser plusieurs paramètres d’environnement, tapez `environment` dans **Lancement rapide**. Quand la page des propriétés s’affiche, vous pouvez appuyer sur  **F1** pour obtenir de l’aide supplémentaire sur les divers paramètres de cette page. Voir aussi [Environment Options Dialog Box](../ide/reference/environment-options-dialog-box.md).  
+Vous pouvez personnaliser le menu **Outils** pour lancer les outils externes. Pour plus d’informations, consultez [Gérer les outils externes](../ide/managing-external-tools.md).
 
-## <a name="external-tools"></a>Outils externes  
- Pour sélectionner les outils externes qui apparaissent dans les menus et les barres d’outils, consultez [Managing External Tools](../ide/managing-external-tools.md).  
+## <a name="see-also"></a>Voir aussi
 
-## <a name="start-page"></a>Page de démarrage  
- Pour créer une page de démarrage personnalisée pour vous et votre équipe, consultez [Personnalisation de la page de démarrage](../ide/customizing-the-start-page-for-visual-studio.md).
-
-## <a name="environment-color-themes"></a>Thèmes de couleurs de l’environnement  
- Pour changer le thème de couleur de l’environnement (clair, sombre ou bleu), tapez « environnement » dans **Lancement rapide**, choisissez **Environnement > Général** et modifiez l’option **Thème de couleur**.
-
-Pour modifier les options de colorisation dans l’éditeur, tapez `environment` dans **Lancement rapide**, puis choisissez **Environnement > Polices et couleurs**. Consultez également [Guide pratique pour modifier les polices et les couleurs](../ide/how-to-change-fonts-and-colors-in-visual-studio.md).  
-
-### <a name="menus-and-toolbars"></a>Menus et barres d’outils  
- Pour ajouter ou supprimer des éléments de menu ou de barre d’outils, consultez [Guide pratique pour personnaliser des menus et des barres d’outils](../ide/how-to-customize-menus-and-toolbars-in-visual-studio.md).  
-
-### <a name="main-menu-casing"></a>Casse du menu principal  
- Vous pouvez modifier la casse du menu principal à l’aide des options **1re lettre des mots en majuscule** (par exemple, « Fichier ») et **Tout en majuscules** (« FICHIERS »). Tapez « environnement » dans **Lancement rapide**, sélectionnez **Environnement > Général** et modifiez l’option **Appliquer le style 1re lettre des mots en majuscule à la barre de menus**.
-
-## <a name="see-also"></a>Voir aussi  
- [IDE Visual Studio](../ide/visual-studio-ide.md)
-
+[Vue d’ensemble de l’IDE de Visual Studio](../ide/visual-studio-ide.md)  
+[Démarrage rapide : premier aperçu de l’IDE Visual Studio](../ide/quickstart-ide-orientation.md)

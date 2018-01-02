@@ -15,25 +15,25 @@ manager: ghogen
 dev_langs:
 - csharp
 - vb
-ms.openlocfilehash: 1f703c1eefe535906f287c9e7b50e0b7ad99677f
-ms.sourcegitcommit: 26419ab0cccdc30d279c32d6a841758cfa903806
+ms.openlocfilehash: 5dacd44d72e5be7a898ba90c074dedf4b2f2bb4b
+ms.sourcegitcommit: f0ddee934713ea9126fa107018a57a94a05eafd3
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/11/2017
+ms.lasthandoff: 12/12/2017
 ---
 # <a name="introduction-to-wpf"></a>Présentation de WPF
 Windows Presentation Foundation (WPF) vous permet de créer des applications clientes de bureau pour Windows avec des expériences utilisateur visuellement surprenantes.  
   
  ![Exemple d’interface utilisateur Contoso Healthcare](../designers/media/wpfintrofigure24.png "WPFIntroFigure24")  
   
- Le cœur de WPF est un moteur de rendu vectoriel et indépendant de toute résolution, créé pour tirer parti du matériel graphique moderne. WPF étend le cœur avec un ensemble complet de fonctionnalités de développement d’applications qui incluent XAML (Extensible Application Markup Language), des contrôles, la liaison de données, la disposition, les graphiques 2D et 3D, l’animation, les styles, les modèles, les documents, les médias, le texte et la typographie. WPF étant inclus dans le .NET Framework, vous pouvez développer des applications qui incorporent d’autres éléments de la bibliothèque de classes .NET Framework.  
+ Le cœur de WPF est un moteur de rendu vectoriel et indépendant de toute résolution, créé pour tirer parti du matériel graphique moderne. WPF étend le cœur avec un ensemble complet de fonctionnalités de développement d’applications qui incluent XAML (Extensible Application Markup Language), des contrôles, la liaison de données, la disposition, le graphisme 2D et 3D, l’animation, les styles, les modèles, les documents, les éléments multimédias, le texte et la typographie. WPF étant inclus dans le .NET Framework, vous pouvez développer des applications qui incorporent d’autres éléments de la bibliothèque de classes .NET Framework.  
   
  Cette vue d’ensemble est destinée aux utilisateurs inexpérimentés ; elle couvre les fonctions et les concepts clés de WPF.  
   
 ##  <a name="Programming_with_WPF"></a> Programmation avec WPF  
  WPF existe comme sous-ensemble de types .NET Framework qui pour la plupart sont situés dans l’espace de noms <xref:System.Windows> . Si vous avez déjà créé des applications avec .NET Framework à l’aide de technologies managées comme ASP.NET et Windows Forms, l’expérience de programmation WPF doit vous sembler familière ; vous instanciez des classes, définissez des propriétés, appelez des méthodes et gérez des événements, le tout en utilisant votre langage de programmation .NET préféré, tel que C# ou Visual Basic.  
   
- WPF inclut des constructions de programmation supplémentaires qui améliorent les propriétés et événements : les [propriétés de dépendance](https://msdn.microsoft.com/en-us/library/ms752914\(v=vs.100\).aspx) et [événements routés](https://msdn.microsoft.com/en-us/library/ms742806\(v=vs.100\).aspx).  
+ WPF inclut des constructions de programmation supplémentaires qui améliorent les propriétés et événements : les [propriétés de dépendance](/dotnet/framework/wpf/advanced/dependency-properties-overview) et [événements routés](/dotnet/framework/wpf/advanced/routed-events-overview).  
   
 ##  <a name="Markup_And_Codebehind"></a> Balisage et code-behind  
  WPF vous permet de développer une application en utilisant à la fois le *balisage* et le *code-behind*, une expérience avec laquelle les développeurs ASP.NET sont censés être familiarisés. Vous utilisez généralement le balisage XAML pour implémenter l’apparence d’une application et les langages de programmation managés (code-behind) pour implémenter son comportement. Cette séparation de l’apparence et du comportement présente les avantages suivants :  
@@ -42,12 +42,12 @@ Windows Presentation Foundation (WPF) vous permet de créer des applications cli
   
 -   Le développement est plus efficace, car les concepteurs peuvent implémenter l’apparence d’une application en même temps que les développeurs qui implémentent le comportement de l’application.  
   
--   La[globalisation et la localisation](https://msdn.microsoft.com/en-us/library/ms788718\(v=vs.100\).aspx) des applications WPF sont simplifiées.  
+-   La[globalisation et la localisation](/dotnet/framework/wpf/advanced/wpf-globalization-and-localization-overview) des applications WPF sont simplifiées.  
   
  Les éléments suivants constituent une brève introduction au balisage et au code-behind WPF.  
   
 ### <a name="markup"></a>balisage  
- XAML est un langage de balisage fondé sur XML qui est utilisé pour implémenter l’apparence d’une application de façon déclarative. Il est généralement utilisé pour créer des fenêtres, des boîtes de dialogue, des pages et des contrôles utilisateur, et pour les remplir avec des contrôles, des formes et des graphiques.  
+ XAML est un langage de balisage fondé sur XML qui est utilisé pour implémenter l’apparence d’une application de façon déclarative. Il est généralement utilisé pour créer des fenêtres, des boîtes de dialogue, des pages et des contrôles utilisateur, et pour les remplir avec des contrôles, des formes et des éléments graphiques.  
   
  L’exemple suivant utilise XAML pour implémenter l’apparence d’une fenêtre qui contient un seul bouton.  
   
@@ -69,7 +69,7 @@ Windows Presentation Foundation (WPF) vous permet de créer des applications cli
   
  ![Fenêtre contenant un bouton](../designers/media/wpfintrofigure10.png "WPFIntroFigure10")  
   
- Comme XAML est basé sur XML, l’interface utilisateur que vous composez avec est assemblée dans une hiérarchie d’éléments imbriqués, connue sous le nom d’ [arborescence des éléments](https://msdn.microsoft.com/en-us/library/ms753391\(v=vs.100\).aspx). L’arborescence des éléments offre un moyen logique et intuitif de créer et gérer des interfaces utilisateur.  
+ Comme XAML est basé sur XML, l’interface utilisateur que vous composez avec est assemblée dans une hiérarchie d’éléments imbriqués, connue sous le nom d’ [arborescence des éléments](/dotnet/framework/wpf/advanced/trees-in-wpf). L’arborescence des éléments offre un moyen logique et intuitif de créer et gérer des interfaces utilisateur.  
   
 ### <a name="code-behind"></a>code-behind  
  Le comportement principal d’une application est d’implémenter les fonctionnalités qui répondent aux interventions de l’utilisateur, y compris la gestion des événements (par exemple, un clic sur un menu, une barre d’outils ou un bouton) et, en réponse, l’appel à la logique métier et à la logique d’accès aux données. Dans WPF, ce comportement est généralement implémenté dans le code associé au balisage. Ce type de code est appelé code-behind. L’exemple suivant montre le code-behind et le balisage mis à jour par rapport à l’exemple précédent.  
@@ -181,9 +181,9 @@ End Namespace
 -   **Informations utilisateur**: <xref:System.Windows.Controls.AccessText>, <xref:System.Windows.Controls.Label>, <xref:System.Windows.Controls.Primitives.Popup>, <xref:System.Windows.Controls.ProgressBar>, <xref:System.Windows.Controls.Primitives.StatusBar>, <xref:System.Windows.Controls.TextBlock>et <xref:System.Windows.Controls.ToolTip>.  
   
 ##  <a name="Input_And_Commanding"></a> Entrée et commande  
- Les contrôles détectent le plus souvent l’entrée utilisateur et y répondent. Le [système d’entrée WPF](https://msdn.microsoft.com/en-us/library/ms754010\(v=vs.100\).aspx) utilise des événements directs et routés pour prendre en charge la saisie de texte, la gestion du focus et la position de la souris.  
+ Les contrôles détectent le plus souvent l’entrée utilisateur et y répondent. Le [système d’entrée WPF](/dotnet/framework/wpf/advanced/input-overview) utilise des événements directs et routés pour prendre en charge la saisie de texte, la gestion du focus et la position de la souris.  
   
- Les applications ont souvent des spécifications d’entrée complexes. WPF fournit un [système de commande](https://msdn.microsoft.com/en-us/library/ms752308\(v=vs.100\).aspx) qui sépare les actions d’entrée utilisateur du code qui répond à ces actions.  
+ Les applications ont souvent des spécifications d’entrée complexes. WPF fournit un [système de commande](/dotnet/framework/wpf/advanced/commanding-overview) qui sépare les actions d’entrée utilisateur du code qui répond à ces actions.  
   
 ##  <a name="Layout"></a> Disposition  
  Quand vous créez une interface utilisateur, réorganisez vos contrôles par emplacement et par taille pour former une disposition. L’une des spécifications clés de toute disposition est de s’adapter aux modifications de la taille de la fenêtre et des paramètres d’affichage. Plutôt que de vous forcer à écrire le code pour vous adapter à une disposition, WPF vous fournit un système de disposition extensible de première classe.  
@@ -211,7 +211,7 @@ End Namespace
  Le <xref:System.Windows.Controls.DockPanel> autorise les contrôles <xref:System.Windows.Controls.TextBox> enfants à lui dire comment les réorganiser. Pour cela, le <xref:System.Windows.Controls.DockPanel> implémente une propriété jointe `Dock` exposée aux contrôles enfants pour permettre à chacun d’eux de spécifier un style d’ancrage.  
   
 > [!NOTE]
->  Une propriété implémentée par un contrôle parent pour une utilisation par des contrôles enfants est une construction WPF appelée [propriété attachée](https://msdn.microsoft.com/en-us/library/ms749011\(v=vs.100\).aspx).  
+>  Une propriété implémentée par un contrôle parent pour une utilisation par des contrôles enfants est une construction WPF appelée [propriété attachée](/dotnet/framework/wpf/advanced/attached-properties-overview).  
   
  L’illustration suivante affiche le résultat du balisage XAML dans l’exemple précédent.  
   
@@ -254,16 +254,16 @@ End Namespace
   
  Le moteur de liaison de données WPF fournit une prise en charge supplémentaire qui inclut la validation, le tri, le filtrage et le regroupement En outre, la liaison de données prend en charge l’utilisation de modèles de données afin de créer une interface utilisateur personnalisée pour les données liées quand l’interface utilisateur affichée par les contrôles WPF standard n’est pas appropriée.  
   
- Pour plus d’informations, consultez [Vue d’ensemble de la liaison de données](https://msdn.microsoft.com/en-us/library/ms752347\(v=vs.100\).aspx).  
+ Pour plus d’informations, consultez [Vue d’ensemble de la liaison de données](/dotnet/framework/wpf/data/data-binding-overview).  
   
-##  <a name="Graphics"></a> Graphiques  
- WPF présente un ensemble de fonctionnalités graphiques étendu, évolutif et flexible possédant les avantages suivants :  
+##  <a name="Graphics"></a> Graphisme  
+ WPF présente un ensemble de fonctionnalités graphiques étendu, évolutif et flexible aux avantages suivants :  
   
--   **Graphiques indépendants du périphérique et de toute résolution**. L’unité de mesure de base du système graphique WPF est le pixel indépendant du périphérique, soit 1/96e d’un pouce, quelle que soit la résolution réelle de l’écran. Elle sert de base au rendu indépendant du périphérique et de toute résolution. Chaque pixel indépendant du périphérique est automatiquement mis à l’échelle pour correspondre au paramètre de points par pouce (ppp) du système de restitution.  
+-   **Éléments graphiques indépendants de l’appareil et de la résolution**. L’unité de mesure de base du système graphique WPF est le pixel indépendant de l’appareil, soit 1/96e d’un pouce, quelle que soit la résolution réelle de l’écran. Elle sert de base au rendu indépendant de l’appareil et de la résolution. Chaque pixel indépendant de l’appareil est automatiquement mis à l’échelle pour correspondre au paramètre de points par pouce (ppp) du système de rendu.  
   
 -   **Précision améliorée**. Le système de coordonnées WPF est mesuré avec des nombres à virgule flottante double précision plutôt que simple précision. Les transformations et valeurs d’opacité sont également exprimées sous la forme de valeurs double précision. WPF prend également en charge une vaste gamme de couleurs (scRGB) et assure la prise en charge intégrée de la gestion des entrées issues de différents espaces de couleurs.  
   
--   **Graphiques avancés et prise en charge de l’animation**. WPF simplifie la programmation graphique en gérant les scènes d’animation à votre place ; ainsi, vous n’avez pas besoin de vous préoccuper du traitement des scènes, du rendu des boucles ni de l’interpolation bilinéaire. En outre, WPF fournit une prise en charge du test de recherche et une prise en charge complète de la composition alpha.  
+-   **Prise en charge avancée du graphisme et des animations**. WPF simplifie la programmation graphique en gérant les scènes d’animation à votre place ; ainsi, vous n’avez pas besoin de vous préoccuper du traitement des scènes, du rendu des boucles ni de l’interpolation bilinéaire. En outre, WPF fournit une prise en charge du test de recherche et une prise en charge complète de la composition alpha.  
   
 -   **Accélération matérielle**. Le système graphique WPF profite du matériel vidéo pour réduire l’utilisation du processeur.  
   
@@ -283,7 +283,7 @@ End Namespace
   
  ![Fenêtre avec le texte « vous avez cliqué sur l’ellipse &#33;»](../designers/media/wpfintrofigure12.png "WPFIntroFigure12")  
   
- Pour plus d’informations, consultez [Vue d’ensemble des formes et dessins de base dans WPF](https://msdn.microsoft.com/en-us/library/ms747393\(v=vs.100\).aspx).  
+ Pour plus d’informations, consultez [Vue d’ensemble des formes et dessins de base dans WPF](/dotnet/framework/wpf/data/data-binding-overview).  
   
 ### <a name="2-d-geometries"></a>Géométries 2D  
  Les formes 2D fournies par WPF couvrent le jeu standard des formes de base. Toutefois, vous pouvez avoir besoin de créer des formes personnalisées afin de faciliter la conception d’une interface utilisateur personnalisée. Pour cela, WPF fournit des géométries. L’illustration suivante montre l’utilisation de géométries pour créer une forme personnalisée qui peut être dessinée directement, utilisée comme pinceau ou pour découper d’autres formes et contrôles.  
@@ -294,38 +294,38 @@ End Namespace
   
  ![Différentes utilisations d’un chemin](../designers/media/wpfintrofigure5.PNG "WPFIntroFigure5")  
   
- Pour plus d’informations, consultez [Vue d’ensemble de Geometry](https://msdn.microsoft.com/en-us/library/ms751808\(v=vs.100\).aspx).  
+ Pour plus d’informations, consultez [Vue d’ensemble de Geometry](/dotnet/framework/wpf/graphics-multimedia/geometry-overview).  
   
 ### <a name="2-d-effects"></a>Effets 2D  
  Un sous-ensemble de fonctions 2D WPF inclut des effets visuels tels que des dégradés, des bitmaps, des dessins, la peinture avec des vidéos, la rotation, la mise à l’échelle et l’inclinaison. Ces derniers sont tous réalisés avec des pinceaux ; l’illustration suivante montre quelques exemples.  
   
  ![Illustration de différents pinceaux](../designers/media/wpfintrofigure6.PNG "WPFIntroFigure6")  
   
- Pour plus d’informations, consultez [Vue d’ensemble des pinceaux WPF](https://msdn.microsoft.com/en-us/library/aa970904\(v=vs.100\).aspx).  
+ Pour plus d’informations, consultez [Vue d’ensemble des pinceaux WPF](/dotnet/framework/wpf/graphics-multimedia/wpf-brushes-overview).  
   
 ### <a name="3-d-rendering"></a>Rendu 3D  
- WPF comprend également des fonctionnalités de rendu 3D s’intégrant aux graphiques 2D, permettant ainsi la création d’interfaces utilisateur plus intéressantes. Par exemple, l’illustration suivante montre des images 2D restituées sur des formes 3D.  
+ WPF comprend également des fonctionnalités de rendu 3D s’intégrant au graphisme 2D, permettant ainsi la création d’interfaces utilisateur plus intéressantes. Par exemple, l’illustration suivante montre des images 2D restituées sur des formes 3D.  
   
  ![Capture d’écran : exemple Visual3D](../designers/media/wpfintrofigure13.png "WPFIntroFigure13")  
   
- Pour plus d’informations, consultez [Vue d’ensemble des graphiques 3D](https://msdn.microsoft.com/en-us/library/ms747437\(v=vs.100\).aspx).  
+ Pour plus d’informations, consultez [Vue d’ensemble du graphisme 3D](/dotnet/framework/wpf/graphics-multimedia/3-d-graphics-overview).  
   
 ##  <a name="Animation"></a> Animation  
  La prise en charge d’animations WPF vous permet d’agrandir, de faire bouger, de faire pivoter et de réaliser des fondus avec les contrôles pour créer des transitions de page intéressantes, et plus encore. Vous pouvez animer la plupart des classes WPF, même les classes personnalisées. L’illustration suivante montre une animation simple en action.  
   
  ![Images d’un cube animé](../designers/media/wpfintrofigure7.png "WPFIntroFigure7")  
   
- Pour plus d’informations, consultez [Vue d’ensemble de l’animation](https://msdn.microsoft.com/en-us/library/ms752312\(v=vs.100\).aspx).  
+ Pour plus d’informations, consultez [Vue d’ensemble de l’animation](/dotnet/framework/wpf/graphics-multimedia/animation-overview).  
   
 ##  <a name="Media"></a> Médias  
- L’un des moyens d’acheminer un contenu riche est d’utiliser des médias audiovisuels. WPF fournit une prise en charge spéciale pour les images, les vidéos et l’audio.  
+ L’un des moyens de rendre un contenu riche est d’utiliser des supports audiovisuels. WPF fournit une prise en charge spéciale pour les images, les vidéos et l’audio.  
   
 ### <a name="images"></a>Images  
  Les images sont communes à la plupart des applications et WPF fournit plusieurs façons de les utiliser. L’illustration suivante montre une interface utilisateur avec une zone de liste qui contient des images miniatures. Lorsque vous sélectionnez une miniature, l’image s’affiche en grand.  
   
  ![Images miniatures et image en taille réelle](../designers/media/wpfintrofigure8.PNG "WPFIntroFigure8")  
   
- Pour plus d’informations, consultez [Vue d’ensemble de la création d’images](https://msdn.microsoft.com/en-us/library/ms748873\(v=vs.100\).aspx).  
+ Pour plus d’informations, consultez [Vue d’ensemble de la création d’images](/dotnet/framework/wpf/graphics-multimedia/imaging-overview).  
   
 ### <a name="video-and-audio"></a>Audio et vidéo  
  Le contrôle <xref:System.Windows.Controls.MediaElement> peut lire des vidéos et de l’audio, et est assez flexible pour servir de base à un lecteur multimédia personnalisé. Le balisage XAML suivant implémente un lecteur multimédia.  
@@ -336,7 +336,7 @@ End Namespace
   
  ![Contrôle MediaElement avec audio et vidéo](../designers/media/wpfintrofigure1.png "WPFIntroFigure1")  
   
- Pour plus d’informations, consultez [Vue d’ensemble des médias, de l’animation et des graphiques WPF](https://msdn.microsoft.com/en-us/library/ms742562\(v=vs.100\).aspx).  
+ Pour plus d’informations, consultez [Graphisme et multimédia](/dotnet/framework/wpf/graphics-multimedia).  
   
 ##  <a name="Text_and_Typography"></a> Texte et typographie  
  Pour faciliter un rendu de texte de qualité optimale, WPF offre les fonctionnalités suivantes :  
@@ -347,18 +347,18 @@ End Namespace
   
 -   Performances élevées tirant parti de l’accélération matérielle.  
   
--   Intégration de texte avec des médias, des graphiques et des animations.  
+-   Intégration de texte à des éléments multimédias et graphiques, et des animations.  
   
 -   Prise en charge de polices internationales et de mécanismes de secours.  
   
- Comme démonstration d’une intégration de texte avec des graphiques, l’illustration suivante montre l’application d’un ornement de texte.  
+ Comme démonstration d’une intégration de texte avec des éléments graphiques, l’illustration suivante montre l’application d’un ornement de texte.  
   
  ![Texte avec différents ornements de texte](../designers/media/wpfintrofigure23.png "WPFIntroFigure23")  
   
- Pour plus d’informations, consultez [Typographie dans WPF](https://msdn.microsoft.com/en-us/library/ms742190\(v=vs.100\).aspx).  
+ Pour plus d’informations, consultez [Typographie dans WPF](/dotnet/framework/wpf/advanced/typography-in-wpf).  
   
 ##  <a name="WPF_Customization"></a> Personnalisation des applications WPF  
- Jusqu’à présent, vous avez vu les principaux blocs de construction de WPF pour le développement des applications. Vous utilisez le modèle d’application pour héberger et transmettre le contenu de l’application, principalement composé de contrôles. Pour simplifier l’organisation des contrôles dans une interface utilisateur et garantir la conservation de cette organisation face aux modifications de la taille de la fenêtre et des paramètres d’affichage, vous utilisez le système de disposition WPF. Étant donné que la plupart des applications permettent aux utilisateurs d’interagir avec les données, vous utilisez la liaison de données pour réduire le travail de l’intégration de votre interface utilisateur avec des données. Pour améliorer l’apparence visuelle de votre application, vous utilisez la gamme complète de graphiques, d’animations et de prise en charge des supports fournie par WPF.  
+ Jusqu’à présent, vous avez vu les principaux modules de WPF pour le développement des applications. Vous utilisez le modèle d’application pour héberger et transmettre le contenu de l’application, principalement composé de contrôles. Pour simplifier l’organisation des contrôles dans une interface utilisateur et garantir la conservation de cette organisation face aux modifications de la taille de la fenêtre et des paramètres d’affichage, vous utilisez le système de disposition WPF. Étant donné que la plupart des applications permettent aux utilisateurs d’interagir avec les données, vous utilisez la liaison de données pour réduire le travail de l’intégration de votre interface utilisateur avec des données. Pour améliorer l’apparence visuelle de votre application, utilisez la gamme complète de supports graphiques, multimédias et d’animation fournis par WPF.  
   
  Les concepts de base ne sont pourtant pas tout le temps suffisants pour créer et gérer une expérience utilisateur vraiment particulière et visuellement surprenante. Il est possible que les contrôles WPF standard ne s’intègrent pas à l’apparence souhaitée de votre application. Les données risquent de ne pas s’afficher de la manière la plus efficace. L’expérience utilisateur globale de votre application peut ne pas être adaptée à l’apparence par défaut des thèmes Windows. À bien des égards, une technologie de présentation a autant besoin d’une extensibilité visuelle que de tout autre type d’extensibilité.  
   
@@ -408,10 +408,10 @@ End Namespace
   
  ![Bouton contenant plusieurs types de contenu](../designers/media/wpfintrofigure22.png "WPFIntroFigure22")  
   
- Pour plus d’informations sur les types de contenu pris en charge par différents contrôles, consultez [Modèle de contenu WPF](https://msdn.microsoft.com/en-us/library/bb613548\(v=vs.100\).aspx).  
+ Pour plus d’informations sur les types de contenu pris en charge par différents contrôles, consultez [Modèle de contenu WPF](/dotnet/framework/wpf/controls/wpf-content-model).  
   
 ### <a name="triggers"></a>Déclencheurs  
- Bien que l’objectif principal du balisage XAML soit d’implémenter l’apparence d’une application, vous pouvez également utiliser XAML pour implémenter certains aspects du comportement d’une application. Vous pouvez, par exemple, utiliser des déclencheurs pour modifier l’apparence d’une application à partir des interventions de l’utilisateur. Pour plus d’informations, consultez [Application d’un style et création de modèles](https://msdn.microsoft.com/en-us/library/ms745683\(v=vs.100\).aspx).  
+ Bien que l’objectif principal du balisage XAML soit d’implémenter l’apparence d’une application, vous pouvez également utiliser XAML pour implémenter certains aspects du comportement d’une application. Vous pouvez, par exemple, utiliser des déclencheurs pour modifier l’apparence d’une application à partir des interventions de l’utilisateur. Pour plus d’informations, consultez [Application d’un style et création de modèles](/dotnet/framework/wpf/controls/styling-and-templating).  
   
 ### <a name="control-templates"></a>Modèles de contrôle  
  Les interfaces utilisateur par défaut pour les contrôles WPF sont en général construites à partir d’autres formes et contrôles. Par exemple, un <xref:System.Windows.Controls.Button> est composé de contrôles <xref:Microsoft.Windows.Themes.ButtonChrome> et <xref:System.Windows.Controls.ContentPresenter> . Le <xref:Microsoft.Windows.Themes.ButtonChrome> fournit l’apparence du bouton standard, alors que le <xref:System.Windows.Controls.ContentPresenter> affiche le contenu du bouton, comme spécifié par la propriété <xref:System.Windows.Controls.ContentControl.Content%2A> .  
@@ -491,7 +491,7 @@ End Namespace
   
  Notez que la <xref:System.Windows.Controls.ListBox> a conservé son comportement et son apparence globale ; seule l’apparence du contenu affiché par la zone de liste a été modifiée.  
   
- Pour plus d’informations, consultez [Vue d’ensemble des modèles de données](https://msdn.microsoft.com/en-us/library/ms742521\(v=vs.100\).aspx).  
+ Pour plus d’informations, consultez [Vue d’ensemble des modèles de données](/dotnet/framework/wpf/data/data-templating-overview).  
   
 ### <a name="styles"></a>Styles  
  Les styles permettent aux développeurs et aux concepteurs de standardiser leur produit avec une apparence particulière. WPF fournit un modèle de style fort, dont la fondation est l’élément <xref:System.Windows.Style> . L’exemple suivant crée un style qui définit la couleur d’arrière-plan <xref:System.Windows.Controls.Button> pour tous les éléments `Orange`d’une fenêtre.  
@@ -525,7 +525,7 @@ End Namespace
   
  ![Deux boutons orange](../designers/media/wpfintrofigure20.png "WPFIntroFigure20")  
   
- Pour plus d’informations, consultez [Application d’un style et création de modèles](https://msdn.microsoft.com/en-us/library/ms745683\(v=vs.100\).aspx).  
+ Pour plus d’informations, consultez [Application d’un style et création de modèles](/dotnet/framework/wpf/controls/styling-and-templating).  
   
 ### <a name="resources"></a>Ressources  
  Les contrôles d’une application doivent partager la même apparence, ce qui peut tout inclure, depuis les polices et les couleurs d’arrière-plan jusqu’aux modèles de contrôle, modèles de données et styles. Vous pouvez utiliser la prise en charge de WPF pour les ressources d’interface utilisateur afin d’encapsuler ces ressources dans un emplacement unique en vue d’une réutilisation.  
@@ -596,7 +596,7 @@ End Namespace
   
  Les ressources et les dictionnaires de ressources constituent la fondation de la prise en charge WPF pour les thèmes et les apparences.  
   
- Pour plus d’informations, consultez [Vue d’ensemble des ressources](https://msdn.microsoft.com/en-us/library/ms750613\(v=vs.100\).aspx).  
+ Pour plus d’informations, consultez [Vue d’ensemble des ressources](/dotnet/framework/wpf/advanced/xaml-resources).  
   
 ### <a name="custom-controls"></a>Contrôles personnalisés  
  Bien que WPF fournisse un hôte de prise en charge de la personnalisation, vous pouvez rencontrer des situations dans lesquelles des contrôles WPF existants ne satisfont pas les besoins de votre application ou de ses utilisateurs. Cela peut se produire lorsque :  
@@ -628,18 +628,18 @@ End Namespace
   
  ![UserControl personnalisé](../designers/media/wpfintrofigure3.png "WPFIntroFigure3")  
   
- Pour plus d’informations sur les contrôles personnalisés, consultez [Vue d’ensemble de la création de contrôles](https://msdn.microsoft.com/en-us/library/ms745025\(v=vs.100\).aspx).  
+ Pour plus d’informations sur les contrôles personnalisés, consultez [Vue d’ensemble de la création de contrôles](/dotnet/framework/wpf/controls/control-authoring-overview).  
   
 ##  <a name="WPF_Best_Practices"></a> Meilleures pratiques WPF  
  Comme pour toute plateforme de développement, WPF peut être utilisé de différentes manières pour obtenir le résultat souhaité. Afin de garantir que vos applications WPF fournissent l’expérience utilisateur requise et répondent aux demandes du public en général, il existe des meilleures pratiques pour l’accessibilité, la globalisation, la localisation et les performances. Pour plus d’informations, consultez :  
   
--   [Meilleures pratiques d’accessibilité](https://msdn.microsoft.com/en-us/library/aa350483\(v=vs.100\).aspx)Meilleures pratiques d’accessibilité  
+-   [Meilleures pratiques d’accessibilité](/dotnet/framework/ui-automation/accessibility-best-practices)Meilleures pratiques d’accessibilité  
   
--   [Vue d’ensemble de la globalisation et de la localisation WPF](https://msdn.microsoft.com/en-us/library/ms788718\(v=vs.100\).aspx)  
+-   [Vue d’ensemble de la globalisation et de la localisation WPF](/dotnet/framework/wpf/advanced/wpf-globalization-and-localization-overview)  
   
--   [Optimisation des performances des applications WPF](https://msdn.microsoft.com/en-us/library/aa970683\(v=vs.100\).aspx)  
+-   [Optimisation des performances des applications WPF](/dotnet/framework/wpf/advanced/optimizing-wpf-application-performance)  
   
--   [Sécurité (WPF)](https://msdn.microsoft.com/en-us/library/aa970906\(v=vs.100\).aspx)  
+-   [Sécurité (WPF)](/dotnet/framework/wpf/security-wpf)  
   
 ##  <a name="Summary"></a> Résumé  
  WPF est une technologie de présentation complète pour générer une large gamme d’applications clientes visuellement surprenantes. Cette introduction a passé en revue les fonctionnalités clés de WPF.  
@@ -651,4 +651,4 @@ End Namespace
 ## <a name="see-also"></a>Voir aussi  
  [Bien démarrer avec WPF](../designers/getting-started-with-wpf.md)   
  [Créer des applications pour ordinateur modernes avec Windows Presentation Foundation](../designers/create-modern-desktop-applications-with-windows-presentation-foundation.md)   
- [Windows Presentation Foundation](https://msdn.microsoft.com/en-us/library/ms754130\(v=vs.100\).aspx)
+ [Windows Presentation Foundation](/dotnet/framework/wpf/index)

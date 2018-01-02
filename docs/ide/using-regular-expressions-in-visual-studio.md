@@ -16,34 +16,32 @@ f1_keywords:
 helpviewer_keywords:
 - regular expressions [Visual Studio]
 - regular expressions
-- Visual Studio, regular expressions
-ms.assetid: 718a617d-0e05-47e1-a218-9746971527f4
-caps.latest.revision: "53"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: c01023649879c34838cbca3172aec6b5a053f4bd
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.openlocfilehash: 577c6a7b76bcecb3c3f5fc7889d75b5fd3ff1ce0
+ms.sourcegitcommit: ebe9fb5eda724936f7a059d35d987c29dffdb50d
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/07/2017
 ---
 # <a name="using-regular-expressions-in-visual-studio"></a>Utilisation d’expressions régulières dans Visual Studio
-[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] utilise les expressions régulières du .NET Framework pour rechercher et remplacer du texte. Pour plus d’informations sur les expressions régulières du .NET, consultez [Expressions régulières du .NET Framework](/dotnet/standard/base-types/regular-expressions).  
-  
- Avant Visual Studio 2012, Visual Studio utilisait la syntaxe d'expression régulière personnalisée dans les fenêtres Rechercher et remplacer. Pour savoir comment convertir certains des symboles d’expressions régulières personnalisées les plus couramment utilisés dans les versions du .NET Framework, consultez [Conversions des expressions régulières Visual Studio](https://msdn.microsoft.com/en-us/library/2k3te2cs\(v=vs.110\).aspx).  
-  
+
+[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] utilise les expressions régulières du .NET Framework pour rechercher et remplacer du texte. Pour plus d’informations sur les expressions régulières du .NET, consultez [Expressions régulières du .NET Framework](/dotnet/standard/base-types/regular-expressions).
+
 > [!TIP]
->  Dans les systèmes d’exploitation Windows, la plupart des lignes se terminent par « \r\n » (retour chariot suivi d’une nouvelle ligne). Ces caractères ne sont pas visibles, mais sont présents dans l'éditeur et sont transmis au service d'expressions régulières .NET.  
+> Dans les systèmes d’exploitation Windows, la plupart des lignes se terminent par « \r\n » (retour chariot suivi d’une nouvelle ligne). Ces caractères ne sont pas visibles, mais sont présents dans l'éditeur et sont transmis au service d'expressions régulières .NET.
+
+## <a name="replacement-patterns"></a>Modèles de substitution
+
+Pour plus d’informations sur les expressions régulières utilisées dans les modèles de remplacement, consultez [Substitutions](/dotnet/standard/base-types/substitutions-in-regular-expressions). Pour utiliser un groupe de capture numéroté, la syntaxe est `$1` pour spécifier le groupe numéroté et `(x)` pour spécifier le groupe en question. Par exemple, l’expression régulière groupée `(\d)([a-z])` trouve quatre correspondances dans la chaîne suivante : **1a 2b 3c 4d**. La chaîne de remplacement `z$1` convertit cette chaîne en **z1 z2 z3 z4**.
   
-> [!TIP]
->  Pour plus d’informations sur les expressions régulières utilisées dans les modèles de remplacement, consultez [Substitutions](/dotnet/standard/base-types/substitutions-in-regular-expressions). Pour utiliser un groupe de captures numéroté, la syntaxe est `$1` pour spécifier le groupe numéroté et `(x)` pour spécifier le groupe en question. Par exemple, l’expression régulière groupée `(\d)([a-z])` trouve quatre correspondances dans la chaîne suivante : **1a 2b 3c 4d**. La chaîne de remplacement `z$1` convertit cette chaîne en **z1 z2 z3 z4**.  
-  
-## <a name="regular-expressions-in-visual-studio"></a>Expressions régulières dans Visual Studio  
- Voici quelques exemples.  
-  
-|Objectif|Expression|Exemple|  
-|-------------|----------------|-------------|  
+## <a name="regular-expression-examples"></a>Exemples d’expressions régulières
+
+Voici quelques exemples :
+
+|Objectif|Expression|Exemple|
+|-------------|----------------|-------------|
 |Correspond à n'importe quel caractère unique (sauf un saut de ligne)|.|`a.o` correspond à "aro" dans "around" et à "abo" dans "about", mais pas à "acro" dans "across".|  
 |Correspond à zéro ou plusieurs occurrences de l'expression précédente (correspond à autant de caractères que possible)|*|`a*r` correspond à "r" dans "rack", à "rar" dans "ark" et à "aar" dans "aardvark"|  
 |Correspond à n'importe quel caractère zéro ou plusieurs fois (caractère générique *)|.*|c.*e correspond à « cke » dans « racket », à « comme » dans « commentaire » et à « code » dans « code »|  
@@ -72,6 +70,7 @@ ms.lasthandoff: 10/31/2017
 |Correspond à une chaîne entre guillemets|((\\".+?\\")&#124;('.+?'))|Correspond à n'importe quelle chaîne entre apostrophes ou guillemets.|  
 |Correspond à un nombre hexadécimal|\b0[xX]([0-9a-fA-F]\)\b|Correspond à « 0xc67f » mais pas à « 0xc67fc67f ».|  
 |Correspond à des nombres entiers et décimaux|\b[0-9]*\\.\*[0-9]+\b|Correspond à « 1,333 ».|  
-  
-## <a name="see-also"></a>Voir aussi  
- [Recherche et remplacement de texte](../ide/finding-and-replacing-text.md)
+
+## <a name="see-also"></a>Voir aussi
+
+[Recherche et remplacement de texte](../ide/finding-and-replacing-text.md)

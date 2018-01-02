@@ -4,38 +4,20 @@ ms.custom: H1HackMay2017
 ms.date: 05/18/2017
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-debug
+ms.technology: vs-ide-debug
 ms.tgt_pltfrm: 
 ms.topic: article
-helpviewer_keywords:
-- debugger
+helpviewer_keywords: debugger
 ms.assetid: d2ee0301-ea78-43d8-851a-71b7b2043d73
-caps.latest.revision: 1
+caps.latest.revision: "1"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-translation.priority.ht:
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- ru-ru
-- zh-cn
-- zh-tw
-translation.priority.mt:
-- cs-cz
-- pl-pl
-- pt-br
-- tr-tr
+ms.openlocfilehash: 4899f59362f623f6ecf92927e8a15ed4762fa367
+ms.sourcegitcommit: ebe9fb5eda724936f7a059d35d987c29dffdb50d
 ms.translationtype: HT
-ms.sourcegitcommit: 9e6c28d42bec272c6fd6107b4baf0109ff29197e
-ms.openlocfilehash: b4f4e312fb7717edfe950cf6977279a1bd67a458
-ms.contentlocale: fr-fr
-ms.lasthandoff: 09/06/2017
-
+ms.contentlocale: fr-FR
+ms.lasthandoff: 12/07/2017
 ---
 # <a name="profiling-feature-tour"></a>Visite guidée des fonctionnalités de profilage
 
@@ -114,7 +96,7 @@ La fenêtre vous permet de sélectionner plusieurs outils de profilage dans cert
 
 ## <a name="analyze-resource-consumption-xaml"></a>Analyser la consommation des ressources (XAML)
 
-Dans les applications XAML, telles que les applications WPF de bureau Windows et les applications du Windows Store, vous pouvez analyser la consommation des ressources à l’aide de l’outil Chronologie de l’application. Par exemple, vous pouvez analyser le temps passé par votre application à préparer les trames de l’interface utilisateur (mise en page et rendu), à traiter les demandes du réseau et des disques, et dans les scénarios comme le démarrage de l’application, le chargement des pages et le redimensionnement des fenêtres. Pour utiliser l’outil, choisissez **Chronologie de l’application** dans le profileur de performances, puis choisissez **Démarrer**. Dans votre application, effectuez le scénario susceptible de présenter un problème de consommation de ressources, puis choisissez **Arrêter la collecte** pour générer le rapport.
+Dans les applications XAML, comme les applications WPF pour poste de travail Windows et les applications UWP, vous pouvez analyser la consommation des ressources avec l’outil Chronologie de l’application. Par exemple, vous pouvez analyser le temps passé par votre application à préparer les trames de l’interface utilisateur (mise en page et rendu), à traiter les demandes du réseau et des disques, et dans les scénarios comme le démarrage de l’application, le chargement des pages et le redimensionnement des fenêtres. Pour utiliser l’outil, choisissez **Chronologie de l’application** dans le profileur de performances, puis choisissez **Démarrer**. Dans votre application, effectuez le scénario susceptible de présenter un problème de consommation de ressources, puis choisissez **Arrêter la collecte** pour générer le rapport.
 
 La présence de taux de trames faibles dans le graphique **Débit visuel** peut correspondre à des problèmes visuels que vous constatez quand vous exécutez votre application. De même, la présence de nombres élevés dans le graphique **Utilisation du thread d’interface utilisateur** peut également indiquer des problèmes de réactivité de l’interface utilisateur. Dans le rapport, vous pouvez sélectionner une période de temps susceptible de présenter un problème de performances, puis examiner les activités de thread de l’interface utilisateur détaillées dans la vue Détails de la chronologie (volet inférieur).
 
@@ -170,7 +152,7 @@ Voici un tableau qui recense les différents outils proposés par Visual Studio,
 |Outil d’analyse des performances|Bureau Windows|Universel Windows/Store|ASP.NET/ASP.NET Core|  
 |----------------------|---------------------|------------------------------|-------------|  
 |[Utilisation de la mémoire](../profiling/memory-usage.md)|oui|oui|oui|  
-|[Utilisation de l'UC](../profiling/cpu-usage.md)|oui|oui|oui|  
+|[Utilisation de l'UC](../profiling/cpu-usage.md)|oui|oui|oui (non pour .NET Core/ASP.NET Core)|  
 |[Utilisation du GPU](../debugger/gpu-usage.md)|oui|oui|non|  
 |[Chronologie de l'application](../profiling/application-timeline.md)|oui|oui|non|  
 |[Conseils sur les performances](../profiling/perftips.md)|oui|oui pour XAML, non pour HTML|oui|  

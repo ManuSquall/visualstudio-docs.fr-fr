@@ -1,173 +1,157 @@
 ---
 title: "Bien démarrer avec C++ dans Visual Studio | Microsoft Docs"
-ms.custom: 
-ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology:
-- vs-ide-general
+ms.custom: mvc
+ms.date: 12/04/2017
+ms.technology: vs-acquisition
 ms.tgt_pltfrm: 
 ms.topic: get-started-article
 ms.assetid: 99c73344-86ba-4b08-9e15-f6111cc04185
-caps.latest.revision: 18
-author: kempb
-ms.author: kempb
+author: corob-msft
+ms.author: tglee
 manager: ghogen
-translation.priority.ht:
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- ru-ru
-- zh-cn
-- zh-tw
-translation.priority.mt:
-- cs-cz
-- pl-pl
-- pt-br
-- tr-tr
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 47057e9611b824c17077b9127f8d2f8b192d6eb8
-ms.openlocfilehash: 65b94b58da1e06febb1c189ddff85f792fef1737
-ms.contentlocale: fr-fr
-ms.lasthandoff: 05/13/2017
-
+ms.openlocfilehash: c86e7bcfe43eeaa6554efeed6654f34e140d9ea7
+ms.sourcegitcommit: ebe9fb5eda724936f7a059d35d987c29dffdb50d
+ms.translationtype: HT
+ms.contentlocale: fr-FR
+ms.lasthandoff: 12/07/2017
 ---
-# <a name="getting-started-with-c-in-visual-studio"></a>Bien démarrer avec C++ dans Visual Studio
-En suivant cette procédure pas à pas, vous allez vous familiariser avec la plupart des outils et boîtes de dialogue que vous pouvez utiliser lorsque vous développez des applications avec Visual Studio. Vous allez créer une simple application de type « Hello, World », tout en approfondissant votre connaissance de l’utilisation de l’IDE (environnement de développement intégré).  
-  
- Cette rubrique contient les sections suivantes :  
-  
- [Se connecter à Visual Studio](../ide/getting-started-with-cpp-in-visual-studio.md#BKMK_Configure)  
-  
- [Créer une application simple](../ide/getting-started-with-cpp-in-visual-studio.md#BKMK_CreateApp)  
-  
- [Ajouter du code à l’application](../ide/getting-started-with-cpp-in-visual-studio.md#BKMK_AddCode)  
-  
- [Déboguer et tester l’application](../ide/getting-started-with-cpp-in-visual-studio.md#BKMK_DebugTest)  
-  
- [Générer une version release de l’application](../ide/getting-started-with-cpp-in-visual-studio.md#BKMK_BuildRelease)  
-  
-##  <a name="BKMK_Configure"></a> Se connecter à Visual Studio  
- Lorsque vous démarrez Visual Studio pour la première fois, vous avez la possibilité de vous connecter à l’aide d’un compte Microsoft tel que Live ou Outlook. La connexion permet que vos paramètres soient synchronisés sur tous vos appareils. Pour plus d’informations, consultez [Signing in to Visual Studio](../ide/signing-in-to-visual-studio.md)  
-  
- Figure 1 : IDE de Visual Studio  
-  
- ![IDE avec paramètres Visual C&#43;&#43; appliqués](../ide/media/c--ide_defaultenvironmentlayout.png "IDE_DefaultEnvironmentLayout C ++")  
-  
- Après avoir ouvert Visual Studio, vous pouvez voir les trois composants de base de l’IDE : les fenêtres Outil, les menus et les barres d’outils, ainsi que l’espace de la fenêtre principale. Les fenêtres Outil sont ancrées sur les côtés gauche et droit de la fenêtre d’application. **Lancement rapide**, la barre de menus et la barre d’outils standard se trouvent en haut. La **Page de démarrage**est située au centre de la fenêtre d’application. Lorsque vous ouvrez une solution ou un projet, les éditeurs et les concepteurs apparaissent dans cet espace. Lorsque vous développez une application, vous passez la majeure partie de votre temps dans cette zone centrale.  
-  
-##  <a name="BKMK_CreateApp"></a> Créer une application simple  
- Lorsque vous créez une application dans Visual Studio, vous créez d’abord un projet et une solution. Dans cet exemple, vous allez créer une application console Windows.  
-  
-#### <a name="to-create-a-console-app"></a>Pour créer une application console  
-  
-1.  Dans la barre de menus, sélectionnez **Fichier**, **Nouveau**, **Projet**.  
-  
-     ![Dans la barre de menus, choisissez Fichier, Nouveau, Projet](../ide/media/exploreide-filenewproject.png "ExploreIDE-FileNewProject")  
-  
-2.  Dans la catégorie **Visual C++**, choisissez le modèle **Application console Win32**, puis nommez le projet `GreetingsConsoleApp`.  
-  
-     ![Modèle d’application console Win32](../ide/media/c--ide_newprojectdlg.png "C++IDE_NewProjectDlg")  
-     Votre boîte de dialogue peut offrir différents choix, en fonction de ce que vous avez installé. Si vous ne voyez pas les modèles de projet Visual C++, vous devez revenir au programme d’installation et installer une charge de travail C++.
-  
-3.  Lorsque l’Assistant Application Win32 s’affiche, sélectionnez le bouton **Terminer** .  
-  
-     ![Assistant d’application console Win32](../ide/media/c--ide_win32consoleappwizard.png "C++IDE_Win32ConsoleAppWizard")  
-  
- La solution et le projet GreetingsConsoleApp, avec les fichiers de base d’une application console Win32, sont créés et chargés automatiquement dans l’ **Explorateur de solutions**. Le fichier GreetingsConsoleApp.cpp s’ouvre dans l’éditeur de code. Les éléments suivants apparaissent dans l’ **Explorateur de solutions**:  
-  
- Figure 4 : Éléments du projet  
-  
- ![Fichiers pour la solution dans l’Explorateur de solutions](../ide/media/c--ide_solutioncontents.png "C++IDE_SolutionContents")  
-  
-##  <a name="BKMK_AddCode"></a> Ajouter du code à l’application  
- Ensuite, vous ajouterez le code pour afficher le mot « Hello » dans la fenêtre de console.  
-  
-#### <a name="to-display-hello-in-the-console-window"></a>Pour afficher « Hello » dans la fenêtre de la console  
-  
-1.  Dans le fichier GreetingsConsoleApp.cpp, entrez une ligne vide avant la ligne `return 0;` , puis entrez le code suivant :  
-  
-    ```  
-    cout << "Hello\n";  
-    ```  
-  
-     Une ligne ondulée rouge s’affiche sous `cout`. Un message d’erreur apparaît si vous pointez dessus.  
-  
-     ![Texte d’erreur pour cout](../ide/media/c--ide_couterror.png "C++IDE_CoutError")  
-  
-     Le message d’erreur s’affiche également dans la fenêtre **Liste d’erreurs** . Vous pouvez afficher la fenêtre en choisissant **Affichage**, **Liste d’erreurs** dans la barre de menus.  
-  
-     [cout](/cpp/standard-library/iostream) est inclus dans le fichier d’en-tête \<iostream>.  
-  
-2.  Pour inclure l’en-tête iostream, entrez le code suivant après `#include "stdafx.h"`:  
-  
-    ```  
-    #include <iostream>  
-    using namespace std;  
-    ```  
-  
-     Vous avez probablement remarqué qu’une zone est apparue tandis que vous entriez le code et qu’elle vous a fourni des suggestions pour les caractères que vous tapiez. Cette zone fait partie de C++ IntelliSense, qui fournit des invites de codage, telles que la liste des membres de classe ou des membres d’interface et les informations de paramètre. Vous pouvez aussi utiliser des extraits de code, qui sont des blocs de code prédéfinis. Pour plus d’informations, consultez [Using IntelliSense](../ide/using-intellisense.md) et [Code Snippets](../ide/code-snippets.md).  
-  
-     La ligne ondulée rouge sous `cout` disparaît lorsque vous corrigez l’erreur.  
-  
-3.  Enregistrez les modifications dans le fichier.  
-  
-     ![Code qui corrige les erreurs cout](../ide/media/c--ide_coutfix.png "C++IDE_CoutFix")  
-  
-##  <a name="BKMK_DebugTest"></a> Déboguer et tester l’application  
- Vous pouvez déboguer GreetingsConsoleApp pour voir si le mot « Hello » s’affiche dans la fenêtre de console.  
-  
-#### <a name="to-debug-the-application"></a>Pour déboguer l’application  
-  
--   Démarrez le débogueur.  
-  
-     ![Commande Démarrer le débogage du menu Débogage](../ide/media/exploreide-startdebugging.png "ExploreIDE-StartDebugging")  
-  
-     Le débogueur démarre et exécute le code. La fenêtre de console (une fenêtre distincte qui ressemble à une invite de commandes) s’affiche pendant quelques secondes, mais se clôt rapidement lorsque le débogueur s’arrête en cours d’exécution. Pour afficher le texte, vous devez définir un point d’arrêt afin d’interrompre l’exécution du programme.  
-  
-#### <a name="to-add-a-breakpoint"></a>Pour ajouter un point d’arrêt  
-  
-1.  Ajoutez un point d’arrêt à partir de la barre de menus dans la ligne `return 0;`. Vous pouvez également cliquer dans la marge de gauche pour définir un point d’arrêt.  
-  
-     ![Commande Basculer le point d’arrêt du menu Débogage](../ide/media/exploreide-togglebreakpoint.png "ExploreIDE-ToggleBreakpoint")  
-  
-     Un cercle rouge apparaît à côté de la ligne de code dans la bordure gauche de la fenêtre de l’éditeur.  
-  
-2.  Appuyez sur la touche F5 pour démarrer le débogage.  
-  
-     Le débogueur démarre et une fenêtre de console apparaît avec le mot **Hello**.  
-  
-     ![Texte Hello dans la fenêtre d’invite de commandes Windows](../ide/media/c--ide_hellocommandwindow.png "C++IDE_HelloCommandWindow")  
-  
-3.  Appuyez sur Maj+F5 pour arrêter le débogage.  
-  
- Pour plus d’informations, consultez [Projets console](../debugger/debugging-preparation-console-projects.md).  
-  
-##  <a name="BKMK_BuildRelease"></a> Générer une version release de l’application  
- Maintenant que vous avez vérifié que tout fonctionne correctement, vous pouvez préparer une build de version release de l’application.  
-  
-#### <a name="to-clean-the-solution-files-and-build-a-release-version"></a>Pour nettoyer les fichiers solution et générer une version Release  
-  
-1.  Dans la barre de menus, supprimez les fichiers intermédiaires et les fichiers de sortie créés pendant les générations précédentes.  
-  
-     ![Commande Nettoyer la solution du menu Générer](../ide/media/exploreide-cleansolution.png "ExploreIDE-CleanSolution")  
-  
-2.  Changez la configuration de build pour GreetingsConsoleApp de **Debug** en **Release**.  
-  
-     ![Générer une version Release de l’application](../ide/media/c--ide_changingbuildtorelease.png "C++IDE_ChangingBuildtoRelease")  
-  
-3.  Générez la solution.  
-  
-     ![Commande Générer la solution du menu Générer](../ide/media/exploreide-buildsolution.png "ExploreIDE-BuildSolution")  
-  
- Félicitations ! Vous avez terminé cette procédure. Pour explorer d’autres exemples, consultez [Exemples Visual Studio](../ide/visual-studio-samples.md).  
-  
-## <a name="see-also"></a>Voir aussi  
- [Utilisation de l’IDE de Visual Studio pour le développement de bureau C++](/cpp/ide/using-the-visual-studio-ide-for-cpp-desktop-development)   
- [Procédure pas à pas : création d’un composant simple avec Visual C# ou Visual Basic](../ide/walkthrough-create-a-simple-application-with-visual-csharp-or-visual-basic.md)   
- [Conseils de productivité pour Visual Studio](../ide/productivity-tips-for-visual-studio.md)   
- [Exemples Visual Studio](../ide/visual-studio-samples.md)   
- [Bien démarrer avec le développement dans Visual Studio](../ide/get-started-developing-with-visual-studio.md)
+# <a name="get-started-with-c-in-visual-studio"></a>Bien démarrer avec C++ dans Visual Studio
+
+Suivez ce guide de démarrage rapide pour vous familiariser avec la plupart des outils et boîtes de dialogue que vous pouvez utiliser quand vous développez des applications en C++ avec Visual Studio. Créez une application console du style « Hello, World » pour découvrir plus en détail comment utiliser l’IDE (environnement de développement intégré).
+
+## <a name="prerequisites"></a>Prérequis
+
+Pour suivre ce guide de démarrage rapide, vous n’avez pas besoin de connaître le langage C++, mais vous devez être familiarisé avec certains concepts généraux de la programmation et du débogage. La documentation Visual Studio n’est pas conçue pour vous apprendre la programmation en C++. Pour savoir où trouver des ressources d’apprentissage en C++, consultez la page [Get Started](https://isocpp.org/get-started) sur le site web ISO C++.
+
+Pour ce guide de démarrage rapide, vous avez besoin de Visual Studio 2017 version 15.3 ou ultérieure, avec la charge de travail **Développement Desktop en C++** installée. Pour obtenir un guide d’installation rapide, consultez [Installer la prise en charge de C++ dans Visual Studio](/cpp/build/vscpp-step-0-installation).
+
+## <a name="create-a-console-app"></a>Créer une application console
+
+Démarrez Visual Studio, s’il y a lieu.
+
+![IDE avec les paramètres Visual C&#43;&#43; appliqués](../ide/media/get-started-cpp-ide-layout.png "IDE avec les paramètres Visual C&#43;&#43; appliqués")
+
+Après avoir ouvert Visual Studio, vous pouvez voir les trois composants de base de l’IDE : les fenêtres Outil, les menus et les barres d’outils, ainsi que l’espace de la fenêtre principale. Les fenêtres Outil sont ancrées sur les côtés gauche et droit de la fenêtre de l’application. La zone **Lancement rapide**, la barre de menus et la barre d’outils standard sont situées en haut de la fenêtre. La **page de démarrage** se trouve au centre de la fenêtre. Lorsque vous ouvrez une solution ou un projet, les éditeurs et les concepteurs apparaissent dans cet espace. Durant le développement d’une application, la plupart des opérations se passent dans cette zone centrale.
+
+Visual Studio organise le code des applications dans des *projets*, et vos projets dans des *solutions*. Un projet contient l’ensemble des options, des configurations et des règles utilisées pour créer une application. Il gère également le lien entre tous les fichiers d’un projet et les éventuels fichiers externes. Pour créer votre application, commencez par créer un projet et une solution.
+
+### <a name="to-create-a-console-app-project"></a>Pour créer un projet d’application console
+
+1. Dans la barre de menus, choisissez **Fichier > Nouveau > Projet** pour ouvrir la boîte de dialogue **Nouveau projet**.
+
+   ![Dans la barre de menus, choisir Fichier > Nouveau > Projet](../ide/media/get-started-cpp-file-new-project-menu.png "Dans la barre de menus, choisir Fichier > Nouveau > Projet")
+
+1. Dans la boîte de dialogue **Nouveau projet**, sélectionnez **Installé > Visual C++** si ce n’est pas déjà fait. Dans le volet central, sélectionnez le modèle **Application console Windows**. Dans la zone d’édition **Nom**, entrez *HelloApp*.
+
+   ![Utiliser la boîte de dialogue Nouveau projet pour créer votre projet d’application](../ide/media/get-started-cpp-new-project-dialog.png "Utiliser la boîte de dialogue Nouveau projet pour créer votre projet d’application")
+
+   Votre boîte de dialogue peut présenter des options différentes, selon les charges de travail et composants Visual Studio que vous avez installés. Si vous ne voyez pas les modèles de projet Visual C++, vous devez réexécuter le programme Visual Studio Installer et installer la charge de travail **Développement Desktop en C++**. Vous pouvez le faire directement à partir de la boîte de dialogue **Nouveau projet**. Pour lancer le programme Visual Studio Installer, choisissez le lien **Ouvrir Visual Studio Installer** dans la boîte de dialogue.
+
+1. Choisissez le bouton **OK** pour créer le projet et la solution de votre application.
+
+   La solution et le projet HelloApp, avec les fichiers de base d’une application console Windows, sont créés, puis automatiquement chargés dans **l’Explorateur de solutions**. Le fichier HelloApp.cpp s’ouvre dans l’éditeur de code. Ces éléments s’affichent dans **l’Explorateur de solutions** :
+
+   ![Fichiers de la solution dans l’Explorateur de solutions](../ide/media/get-started-cpp-solution-explorer.png "Fichiers de la solution dans l’Explorateur de solutions")
+
+## <a name="add-code-to-the-app"></a>Ajouter du code à l’application
+
+Ensuite, vous devez ajouter le code nécessaire pour afficher le mot « Hello » dans la fenêtre de console.
+
+### <a name="to-edit-code-in-the-editor"></a>Pour modifier le code dans l’éditeur
+
+1. Dans le fichier HelloApp.cpp, insérez une ligne vide avant la ligne `return 0;`, puis entrez ce code :
+
+   ```cpp
+   cout << "Hello\n";
+   ```
+
+   Une ligne ondulée rouge s’affiche sous `cout`. Si vous placez le pointeur dessus, un message d’erreur s’affiche.
+
+   ![Texte d’erreur pour cout](../ide/media/get-started-cpp-intellisense-error.png "Texte d’erreur pour cout")
+
+   Le message d’erreur s’affiche également dans la fenêtre **Liste d’erreurs**. Vous pouvez afficher cette fenêtre en choisissant **Affichage > Liste d’erreurs** dans la barre de menus.
+
+   ![Erreur dans la fenêtre Liste d’erreurs](../ide/media/get-started-cpp-error-list.png "Erreur dans la fenêtre Liste d’erreurs")
+
+   Dans votre code, il manque une déclaration pour [std::cout](/cpp/standard-library/iostream), qui se trouve dans le fichier d’en-tête \<iostream>.
+
+1. Pour ajouter l’en-tête iostream, entrez ce code après `#include "stdafx.h"` :
+
+   ```cpp
+   #include <iostream>
+   using namespace std;
+   ```
+
+   Vous avez sans doute remarqué qu’une zone est apparue quand vous avez commencé à entrer le code. Cette zone contient des suggestions de saisie semi-automatique pour les caractères que vous venez d’entrer. Il s’agit d’une option de la fonctionnalité IntelliSense C++, qui fournit des invites de codage, notamment des membres de classe ou d’interface et des informations sur les paramètres. Vous pouvez aussi utiliser des extraits de code, qui sont des blocs de code prédéfinis. Pour plus d’informations, consultez [Using IntelliSense](../ide/using-intellisense.md) et [Code Snippets](../ide/code-snippets.md).
+
+   ![Code fixe dans l’éditeur](../ide/media/get-started-cpp-cout-fix.png "Code fixe dans l’éditeur")
+
+   La ligne ondulée rouge sous `cout` disparaît lorsque vous corrigez l’erreur.
+
+1. Pour enregistrer les modifications dans le fichier, appuyez sur **Ctrl+S**.
+
+## <a name="build-the-app"></a>Générer l’application
+
+Vous pouvez facilement générer votre code. Dans la barre de menus, choisissez **Générer > Générer la solution**. Visual Studio génère la solution HelloApp, tout en affichant l’avancement de l’opération dans la fenêtre **Sortie**.
+
+   ![Générer la solution HelloApp](../ide/media/get-started-cpp-build-solution.gif "Générer la solution HelloApp")
+
+## <a name="debug-and-test-the-app"></a>Déboguer et tester l’application
+
+Vous pouvez déboguer HelloApp pour vérifier si le mot « Hello » s’affiche bien dans la fenêtre de console.
+
+### <a name="to-debug-the-app"></a>Pour déboguer l'application
+
+1. Pour démarrer le débogueur, choisissez **Déboguer > Démarrer le débogage** dans la barre de menus.
+
+   ![Commande Démarrer le débogage dans le menu Déboguer](../ide/media/get-started-cpp-start-debugging-menu.png "Commande Démarrer le débogage dans le menu Déboguer")
+
+   Le débogueur démarre et exécute le code. La fenêtre de console (une fenêtre distincte qui ressemble à une invite de commandes) s’affiche pendant quelques secondes, mais se clôt rapidement lorsque le débogueur s’arrête en cours d’exécution. Pour afficher le texte, vous devez définir un point d’arrêt afin d’interrompre l’exécution du programme.
+
+### <a name="to-add-a-breakpoint"></a>Pour ajouter un point d’arrêt
+
+1. Dans l’éditeur, placez le curseur dans la ligne `return 0;`. Dans la barre de menus, choisissez **Déboguer > Basculer le point d’arrêt**. Vous pouvez également cliquer dans la marge de gauche pour définir un point d’arrêt.
+
+     ![Commande Basculer le point d’arrêt dans le menu Déboguer](../ide/media/get-started-cpp-toggle-breakpoint-menu.png "Commande Basculer le point d’arrêt dans le menu Déboguer")
+
+     Un cercle rouge apparaît à côté de la ligne de code dans la bordure gauche de la fenêtre de l’éditeur.
+
+     ![Point d’arrêt indiqué dans la marge de la fenêtre](../ide/media/get-started-cpp-breakpoint-set.png "Point d’arrêt indiqué dans la marge de la fenêtre")
+
+1. Pour démarrer le débogage, appuyez sur **F5**.
+
+   Le débogueur démarre et une fenêtre de console apparaît avec le mot **Hello**.
+
+   ![Texte Hello dans la fenêtre de console](../ide/media/get-started-cpp-helloapp-window.png "Texte Hello dans la fenêtre de console")
+
+1. Pour arrêter le débogage, appuyez sur **Maj+F5**.
+
+Pour plus d’informations sur le débogage des projets console, consultez [Projets console](../debugger/debugging-preparation-console-projects.md).
+
+## <a name="build-a-release-version-of-the-app"></a>Générer une version de mise en production de l’application
+
+Maintenant que vous avez vérifié que tout fonctionne, vous pouvez préparer une version de mise en production de l’application. Les versions de mise en production ne conservent pas les informations de débogage et utilisent des options d’optimisation du compilateur pour créer du code d’une taille plus petite et qui s’exécute plus vite.
+
+### <a name="to-clean-the-solution-files-and-build-a-release-version"></a>Pour nettoyer les fichiers solution et générer une version de mise en production
+
+1. Dans la barre de menus, choisissez **Générer > Nettoyer la solution** pour supprimer les fichiers intermédiaires et les fichiers de sortie créés pendant les générations précédentes.
+
+   ![Commande Nettoyer la solution du menu Générer](../ide/media/get-started-cpp-clean-solution-menu.png "ExploreIDE-CleanSolution")
+
+1. Pour changer la configuration de la solution HelloApp de **Debug** à **Release**, dans la barre d’outils, sélectionnez la liste déroulante du contrôle Configurations de solutions, puis choisissez **Release**.
+
+   ![Générer une version de mise en production de l’application](../ide/media/get-started-cpp-set-release-configuration.png "C++IDE_ChangingBuildtoRelease")
+
+1. Générez la solution. Dans la barre de menus, choisissez **Générer > Générer la solution**.
+
+Quand cette génération est terminée, vous avez une nouvelle application prête à être copiée et exécutée dans une fenêtre d’invite de commandes. Cette application est très simple, mais il ne tient qu’à vous de créer des applications plus complexes.
+
+Félicitations ! Vous avez terminé ce guide de démarrage rapide. Pour explorer d’autres exemples, consultez [Exemples Visual Studio](../ide/visual-studio-samples.md).
+
+## <a name="see-also"></a>Voir aussi
+
+[Utilisation de l’IDE de Visual Studio pour le développement de bureau C++](/cpp/ide/using-the-visual-studio-ide-for-cpp-desktop-development)  
+[Procédure pas à pas : création d’un composant simple avec Visual C# ou Visual Basic](../ide/walkthrough-create-a-simple-application-with-visual-csharp-or-visual-basic.md)  
+[Conseils de productivité pour Visual Studio](../ide/productivity-tips-for-visual-studio.md)  
+[Exemples Visual Studio](../ide/visual-studio-samples.md)  
+[Bien démarrer avec le développement dans Visual Studio](../ide/get-started-developing-with-visual-studio.md)

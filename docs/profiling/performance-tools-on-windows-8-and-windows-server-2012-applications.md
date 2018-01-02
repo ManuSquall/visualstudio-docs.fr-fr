@@ -4,45 +4,28 @@ ms.custom:
 ms.date: 06/19/2017
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-debug
+ms.technology: vs-ide-debug
 ms.tgt_pltfrm: 
 ms.topic: article
 ms.assetid: a704215d-d252-4087-921b-ac81ebe2a9c9
-caps.latest.revision: 15
+caps.latest.revision: "15"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-translation.priority.ht:
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- ru-ru
-- zh-cn
-- zh-tw
-translation.priority.mt:
-- cs-cz
-- pl-pl
-- pt-br
-- tr-tr
-ms.translationtype: Human Translation
-ms.sourcegitcommit: baf12bba10dfba15f10d75fd1f7a4cdc4000e441
-ms.openlocfilehash: a5d885f8604bdb52907adae4f231b41e0881017f
-ms.contentlocale: fr-fr
-ms.lasthandoff: 06/21/2017
-
+ms.openlocfilehash: 83bd33e6da9795a7e4e638fa91612e930a882cb0
+ms.sourcegitcommit: ebe9fb5eda724936f7a059d35d987c29dffdb50d
+ms.translationtype: HT
+ms.contentlocale: fr-FR
+ms.lasthandoff: 12/07/2017
 ---
 # <a name="performance-tools-on-windows-8-and-windows-server-2012-applications"></a>Outils d’analyse des performances sur les applications Windows 8 et Windows Server 2012
-Les fonctionnalités de sécurité renforcées à compter de Windows 8 et Windows Server 2012 ont imposé des modifications importantes dans la façon dont les outils d’analyse des performances de Visual Studio collectent les données sur ces plateformes. Les applications Windows Store demandent aussi de nouvelles techniques de collecte. Cette rubrique décrit les modifications concernant les outils d’analyse des performances à compter des plateformes Windows 8 et Windows Server 2012.
+Les fonctionnalités de sécurité renforcées à compter de Windows 8 et Windows Server 2012 ont imposé des modifications importantes dans la façon dont les outils d’analyse des performances de Visual Studio collectent les données sur ces plateformes. Les applications UWP nécessitent aussi de nouvelles techniques de collecte. Cette rubrique décrit les modifications apportées aux outils d’analyse des performances à compter des plateformes Windows 8 et Windows Server 2012.
   
 > [!NOTE]
 >  Les outils d’analyse des performances des autres versions prises en charge de Windows (Windows 7, Windows Server 2008 R2) n’ont pas changé.
   
 ##  <a name="BKMK_In_this_topic"></a> Dans cette rubrique  
- [Collecte de données dans des applications du Windows Store à partir de l’IDE de Visual Studio](#BKMK_Profiling_Windows_Store_apps_from_the_Visual_Studio_IDE)  
+ [Collecte de données dans des applications UWP à partir de l’IDE Visual Studio](#BKMK_Profiling_Windows_Store_apps_from_the_Visual_Studio_IDE)  
   
  [Collecte de données dans des applications qui s’exécutent sur les postes de travail Windows 8 ou sur Windows Server 2012 à partir de l’IDE de Visual Studio](#BKMK_Profiling_apps_running_on_the_Windows_8_desktop_or_on_Windows_Server_2012_from_the_Visual_Studio_IDE)  
   
@@ -52,10 +35,10 @@ Les fonctionnalités de sécurité renforcées à compter de Windows 8 et Windo
   
  [Collecte de données d’interaction de couche (TIP)](#BKMK_Collecting_tier_interaction__TIP__data)  
   
-##  <a name="BKMK_Profiling_Windows_Store_apps_from_the_Visual_Studio_IDE"></a> Collecte de données dans des applications du Windows Store à partir de l’IDE de Visual Studio  
- Quand vous profilez une application du Windows Store écrite en JavaScript et HTML 5, vous collectez des données d’instrumentation pour le code JavaScript. Quand vous profilez une application ou un composant du Windows Store écrit en Visual C++, Visual C# ou Visual Basic, vous collectez des données d’échantillonnage pour le code natif et managé. Vous pouvez profiler votre application localement ou sur un ordinateur distant.  
+##  <a name="BKMK_Profiling_Windows_Store_apps_from_the_Visual_Studio_IDE"></a> Collecte de données dans des applications UWP à partir de l’IDE Visual Studio  
+ Quand vous profilez une application UWP écrite en JavaScript et HTML 5, vous collectez des données d’instrumentation pour le code JavaScript. Quand vous profilez une application UWP ou un composant écrit en Visual C++, Visual C# ou Visual Basic, vous collectez des données d’échantillonnage pour le code natif et managé. Vous pouvez profiler votre application localement ou sur un ordinateur distant.  
   
- Ces fonctionnalités et options de profilage ne sont pas prises en charge quand il s’agit de profiler des applications du Windows Store :  
+ Ces fonctionnalités et options de profilage ne sont pas prises en charge pour le profilage d’applications UWP :  
   
 -   profilage d’applications JavaScript à l’aide de la méthode d’échantillonnage ;  
   
@@ -71,21 +54,21 @@ Les fonctionnalités de sécurité renforcées à compter de Windows 8 et Windo
   
 -   options d’instrumentation, telles que la collecte de données de compteurs de performances et Windows, ou définition d’options de ligne de commande supplémentaires.  
   
- Pour plus d’informations sur le profilage d’applications du Windows Store, consultez les rubriques suivantes :  
+ Pour plus d’informations sur le profilage d’applications UWP, consultez les rubriques suivantes :  
   
- [Exécuter des applications du Windows Store sur un ordinateur local](../debugger/run-windows-store-apps-on-the-local-machine.md)  
+ [Exécuter des applications UWP sur l’ordinateur local](../debugger/run-windows-store-apps-on-the-local-machine.md)  
   
- [Exécuter des applications du Windows Store sur un ordinateur distant](../debugger/run-windows-store-apps-on-a-remote-machine.md)  
+ [Exécuter des applications UWP sur un ordinateur distant](../debugger/run-windows-store-apps-on-a-remote-machine.md)  
   
  [Outils de profilage](profiling-tools.md)  
   
 -   [Mémoire JavaScript](../profiling/javascript-memory.md)
   
--   [Profiler du code Visual C++, Visual C# et Visual Basic dans des applications du Windows Store sur un ordinateur local](http://msdn.microsoft.com/en-us/2d0c939e-0bac-48c5-b727-46f6c6113060)  
+-   [Profiler du code Visual C++, Visual C# et Visual Basic dans des applications UWP sur un ordinateur local](http://msdn.microsoft.com/en-us/2d0c939e-0bac-48c5-b727-46f6c6113060)  
   
--   [Profiler le code Visual C++, Visual C# et Visual Basic des applications Windows Store sur un périphérique distant](http://msdn.microsoft.com/en-us/b932a2be-11b0-40fd-b996-75c6b6a79d22)  
+-   [Profiler du code Visual C++, Visual C# et Visual Basic dans des applications UWP sur un appareil distant](http://msdn.microsoft.com/en-us/b932a2be-11b0-40fd-b996-75c6b6a79d22)  
   
--   [Analyser les données de performances du code Visual C++, Visual C# et Visual Basic dans des applications Windows Store](http://msdn.microsoft.com/en-us/5de4a413-d924-425f-afc4-e1ecfb0fca18)  
+-   [Analyser les données de performances du code Visual C++, Visual C# et Visual Basic dans des applications UWP](http://msdn.microsoft.com/en-us/5de4a413-d924-425f-afc4-e1ecfb0fca18)  
   
  [Dans cette rubrique](#BKMK_In_this_topic)  
   
@@ -106,7 +89,7 @@ Les fonctionnalités de sécurité renforcées à compter de Windows 8 et Windo
   
 |Nom de l’outil|Description|  
 |---------------|-----------------|  
-|[VSPerf](../profiling/vsperf.md)|Collecte les données de profilage à partir des applications du Windows Store et collecte les données de profilage d’échantillon à partir des applications de bureau Windows 8 et des applications Windows Server 2012.|  
+|[VSPerf](../profiling/vsperf.md)|Collecte les données de profilage à partir d’applications UWP, et collecte les données de profilage par échantillonnage à partir d’applications pour poste de travail Windows 8 et d’applications Windows Server 2012.|  
 |[VSPerfCmd](../profiling/vsperfcmd.md)|Collecte les données de profilage d’instrumentation, d’accès concurrentiel et d’interaction de couche à partir d’applications qui s’exécutent sur le bureau Windows 8 ou Windows Server 2012. Collecte tous les types de données de profilage à partir des versions précédentes de Windows.|  
   
  Les deux outils sont installés avec Visual Studio pour être utilisés sur l’ordinateur local.  
@@ -139,7 +122,7 @@ Les fonctionnalités de sécurité renforcées à compter de Windows 8 et Windo
   
 1.  Pour collecter des données d’interaction de couche à partir d’applications qui s’exécutent sur le bureau Windows 8 ou Windows Server 2012, vous devez utiliser la méthode d’instrumentation.  
   
-2.  Vous ne pouvez pas collecter de données d’interaction de couche pour les applications du Windows Store.  
+2.  Vous ne pouvez pas collecter de données d’interaction de couche pour les applications UWP.  
   
 3.  Vous pouvez inclure des données d’interaction de couche dans toutes les méthodes de profilage sur les autres versions prises en charge de Windows.  
   

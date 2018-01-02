@@ -10,19 +10,19 @@ ms.topic: quickstart
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 096b5651f9d8133712d9296f09178fc9c8bc6086
-ms.sourcegitcommit: eb954434c34b4df6fd2264266381b23ce9e6204a
+ms.openlocfilehash: 7f10ee7dc03ffe0f80b6ee3d7ff47f5fcd6a1624
+ms.sourcegitcommit: f0ddee934713ea9126fa107018a57a94a05eafd3
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/22/2017
+ms.lasthandoff: 12/12/2017
 ---
 # <a name="quickstart-first-look-at-the-visual-studio-ide"></a>Démarrage rapide : premier aperçu de l'IDE Visual Studio
 
-Dans cette présentation, qui dure entre 5 et 10 minutes, de l’environnement de développement intégré (IDE) de Visual Studio, nous allons procéder à une visite guidée de quelques fenêtres, menus et autres fonctionnalités de l’interface utilisateur.
+Dans cette présentation de 5-10 minutes de l’environnement de développement intégré (IDE) de Visual Studio, vous allez effectuer une visite guidée de quelques fenêtres, menus et autres fonctionnalités de l’interface utilisateur.
 
 ## <a name="start-page"></a>Page de démarrage
 
-Lorsque vous lancez Visual Studio, la première chose qui s’affiche en général est la Page de démarrage. La Page de démarrage est conçu comme un « hub » pour vous aider à trouver plus rapidement les commandes et fichiers projet dont vous avez besoin. La section **Récent** affiche les projets et dossiers que vous avez utilisés récemment. Sous **Nouveau projet**, vous pouvez cliquer sur un lien pour afficher la boîte de dialogue Nouveau projet ou sous **Ouvrir**, vous pouvez ouvrir un projet ou dossier de code existant. Vous trouverez à droite un flux des dernières informations pour les développeurs.
+Lorsque vous lancez Visual Studio, la première chose qui s’affiche en général est la Page de démarrage. La page de démarrage est conçue comme un « hub » pour vous aider à trouver plus rapidement les commandes et fichiers projet dont vous avez besoin. La section **Récent** affiche les projets et dossiers que vous avez utilisés récemment. Sous **Nouveau projet**, vous pouvez cliquer sur un lien pour afficher la boîte de dialogue Nouveau projet ou sous **Ouvrir**, vous pouvez ouvrir un projet ou dossier de code existant. Vous trouverez à droite un flux des dernières informations pour les développeurs.
 
 ![Page de démarrage VS](media/quickstart-IDE-start-page.png)
 
@@ -98,4 +98,6 @@ Nous avons exploré quelques fonctionnalités de l’IDE de Visual Studio pour n
 
 ## <a name="see-also"></a>Voir aussi
 
-[Démarrage rapide : personnalisation de l’IDE](../ide/personalizing-the-visual-studio-ide.md)
+[Démarrage rapide : Personnalisation de l’IDE](../ide/personalizing-the-visual-studio-ide.md)  
+[Démarrage rapide : Codage dans l’éditeur](../ide/quickstart-editor.md)  
+[Démarrage rapide : Projets et solutions](../ide/quickstart-projects-solutions.md)  
