@@ -4,101 +4,90 @@
   items:
     - name: Visual Studio
       tocHref: /visualstudio/
-      topicHref: /visualstudio
+      topicHref: /visualstudio/index
       items:
-        - name: Documentation
-          tocHref: /visualstudio/
-          topicHref: /visualstudio/welcome-to-visual-studio
+        - name: Qualité du code
+          tocHref: /visualstudio/code-quality/
+          topicHref: /visualstudio/code-quality/analyzing-application-quality-by-using-code-analysis-tools
+        - name: Multiplateforme
+          tocHref: /visualstudio/cross-platform/
+          topicHref: /visualstudio/cross-platform/index
+        - name: 'IDE C#'
+          tocHref: /visualstudio/csharp-ide/
+          topicHref: /visualstudio/csharp-ide/using-the-visual-studio-development-environment-for-csharp
+        - name: Outils de données
+          tocHref: /visualstudio/data-tools/
+          topicHref: /visualstudio/data-tools/index
+        - name: Débogage
+          tocHref: /visualstudio/debugger/
+          topicHref: /visualstudio/debugger/index
           items:
-            - name: Multiplateforme
-              tocHref: /visualstudio/cross-platform/
-              topicHref: /visualstudio/cross-platform/cross-platform-mobile-development-in-visual-studio
-            - name: Outils de données
-              tocHref: /visualstudio/data-tools/
-              topicHref: /visualstudio/data-tools/accessing-data-in-visual-studio
-            - name: Extensibilité
-              tocHref: /visualstudio/extensibility/
-              topicHref: /visualstudio/extensibility/
+            - name: Kit SDK Debug Interface Access
+              tocHref: /visualstudio/debugger/debug-interface-access/
+              topicHref: /visualstudio/debugger/debug-interface-access/debug-interface-access-sdk
+            - name: Graphisme
+              tocHref: /visualstudio/debugger/graphics/
+              topicHref: /visualstudio/debugger/graphics/overview-of-visual-studio-graphics-diagnostics
+        - name: Déploiement
+          tocHref: /visualstudio/deployment/
+          topicHref: /visualstudio/deployment/deploying-applications-services-and-components
+        - name: Concepteurs
+          tocHref: /visualstudio/designers/
+          topicHref: /visualstudio/designers/designing-user-interfaces
+        - name: Extensibilité
+          tocHref: /visualstudio/extensibility/
+          topicHref: /visualstudio/extensibility/index
+          items:
+            - name: "Dans le kit SDK Visual\_Studio"
+              tocHref: /visualstudio/extensibility/internals/
+              topicHref: /visualstudio/extensibility/internals/inside-the-visual-studio-sdk
+            - name: Extensibilité du débogueur
+              tocHref: /visualstudio/extensibility/debugger/
+              topicHref: /visualstudio/extensibility/debugger/visual-studio-debugger-extensibility
               items:
-                - name: "Dans le kit SDK Visual\_Studio"
-                  tocHref: /visualstudio/extensibility/internals/
-                  topicHref: /visualstudio/extensibility/internals/inside-the-visual-studio-sdk
-                - name: Extensibilité du débogueur
-                  tocHref: /visualstudio/extensibility/debugger/
-                  topicHref: /visualstudio/extensibility/debugger/visual-studio-debugger-extensibility
-                - name: Conseils sur l’expérience utilisateur
-                  tocHref: /visualstudio/extensibility/ux-guidelines/
-                  topicHref: /visualstudio/extensibility/visual-studio-user-experience-guidelines
-            - name: IDE
-              tocHref: /visualstudio/ide/
-              topicHref: /visualstudio/ide/index
-              items:
-                - name: Déploiement
-                  tocHref: /visualstudio/deployment/
-                  topicHref: /visualstudio/deployment/deploying-applications-services-and-components
-                - name: Concepteurs
-                  tocHref: /visualstudio/designers/
-                  topicHref: /visualstudio/designers/designing-user-interfaces
-                - name: 'IDE C#'
-                  tocHref: /visualstudio/csharp-ide/
-                  topicHref: /visualstudio/csharp-ide/using-the-visual-studio-development-environment-for-csharp
-                - name: IDE Visual Basic
-                  tocHref: /visualstudio/vb-ide/
-                  topicHref: /visualstudio/vb-ide/refactoring-vb
-                - name: Qualité du code
-                  tocHref: /visualstudio/code-quality/
-                  topicHref: /visualstudio/code-quality/analyzing-application-quality-by-using-code-analysis-tools
-                - name: Modélisation de l’architecture
-                  tocHref: /visualstudio/modeling/
-                  topicHref: /visualstudio/modeling/analyze-and-model-your-architecture
-                - name: Débogage
-                  tocHref: /visualstudio/debugger/
-                  topicHref: /visualstudio/debugger/index
-                  items:
-                    - name: DIA SDK
-                      tocHref: /visualstudio/debugger/debug-interface-access/
-                      topicHref: /visualstudio/debugger/debug-interface-access/debug-interface-access-sdk
-                - name: Profilage
-                  tocHref: /visualstudio/profiling/
-                  topicHref: /visualstudio/profiling/index
-                - name: Test
-                  tocHref: /visualstudio/test/
-                  topicHref: /visualstudio/test/improve-code-quality
-                - name: Concepteur de flux de travail
-                  tocHref: /visualstudio/workflow-designer/
-                  topicHref: /visualstudio/workflow-designer/developing-applications-with-the-workflow-designer
                 - name: Référence
-                  tocHref: /visualstudio/ide/reference/
-                  topicHref: /visualstudio/ide/reference/visual-studio-reference
-                  items:
-                    - name: Outils XML
-                      tocHref: /visualstudio/xml-tools/
-                      topicHref: /visualstudio/xml-tools/xml-tools-in-visual-studio
-                    - name: MSBuild
-                      tocHref: /visualstudio/msbuild/
-                      topicHref: /visualstudio/msbuild/msbuild
-            - name: Installation
-              tocHref: /visualstudio/install/
-              topicHref: /visualstudio/install/install-visual-studio
-            - name: JavaScript
-              tocHref: /visualstudio/javascript/
-              topicHref: /visualstudio/javascript/javascript-in-visual-studio
-            - name: 'Portage, migration et mise à niveau'
-              tocHref: /visualstudio/porting/
-              topicHref: /visualstudio/porting/port-migrate-and-upgrade-visual-studio-projects
-            - name: Python
-              tocHref: /visualstudio/python/
-              topicHref: /visualstudio/python/getting-started-with-python
-            - name: R
-              tocHref: /visualstudio/rtvs/
-              topicHref: /visualstudio/rtvs/index
-            - name: Office et SharePoint
+                  tocHref: /visualstudio/extensibility/debugger/reference/
+                  topicHref: /visualstudio/extensibility/debugger/reference/reference-visual-studio-debugging-apis
+            - name: Conseils sur l’expérience utilisateur
+              tocHref: /visualstudio/extensibility/ux-guidelines/
+              topicHref: /visualstudio/extensibility/visual-studio-user-experience-guidelines
+        - name: Concepteur de classes IDE
+          tocHref: /visualstudio/ide/class-designer
+          topicHref: /visualstudio/ide/class-designer/designing-and-viewing-classes-and-types
+        - name: Modélisation de l’architecture
+          tocHref: /visualstudio/modeling/
+          topicHref: /visualstudio/modeling/analyze-and-model-your-architecture
+        - name: MSBuild
+          tocHref: /visualstudio/msbuild/
+          topicHref: /visualstudio/msbuild/msbuild
+        - name: Profilage
+          tocHref: /visualstudio/profiling/
+          topicHref: /visualstudio/profiling/index
+        - name: Python
+          tocHref: /visualstudio/python/
+          topicHref: /visualstudio/python/getting-started-with-python
+        - name: R
+          tocHref: /visualstudio/rtvs/
+          topicHref: /visualstudio/rtvs/index
+        - name: Office et SharePoint
+          tocHref: /visualstudio/vsto/
+          topicHref: /visualstudio/vsto/office-and-sharepoint-development-in-visual-studio
+          items:
+            - name: SharePoint
+              tocHref: /visualstudio/sharepoint/
+              topicHref: /visualstudio/sharepoint/create-sharepoint-solutions
+            - name: VSTO
               tocHref: /visualstudio/vsto/
-              topicHref: /visualstudio/vsto/office-and-sharepoint-development-in-visual-studio
-              items:
-                - name: SharePoint
-                  tocHref: /visualstudio/sharepoint/
-                  topicHref: /visualstudio/sharepoint/create-sharepoint-solutions
-                - name: VSTO
-                  tocHref: /visualstudio/vsto/
-                  topicHref: /visualstudio/vsto/create-vsto-add-ins-for-office-by-using-visual-studio
+              topicHref: /visualstudio/vsto/create-vsto-add-ins-for-office-by-using-visual-studio
+        - name: Test
+          tocHref: /visualstudio/test/
+          topicHref: /visualstudio/test/improve-code-quality
+        - name: IDE Visual Basic
+          tocHref: /visualstudio/vb-ide/
+          topicHref: /visualstudio/vb-ide/refactoring-vb
+        - name: Concepteur de flux de travail
+          tocHref: /visualstudio/workflow-designer/
+          topicHref: /visualstudio/workflow-designer/developing-applications-with-the-workflow-designer
+        - name: Outils XML
+          tocHref: /visualstudio/xml-tools/
+          topicHref: /visualstudio/xml-tools/xml-tools-in-visual-studio

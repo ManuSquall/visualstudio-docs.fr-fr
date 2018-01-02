@@ -28,11 +28,11 @@
 ## [Interactive Python (REPL)](interactive-repl.md)
 ### [Utilisation d’IPython REPL](interactive-repl-ipython.md)
 ## [Débogage](debugging.md)
-### [Débogage distant multiplateforme](debugging-cross-platform-remote.md)
+### [Débogage à distance multiplateforme](debugging-cross-platform-remote.md)
 ## Utilisation d’Azure App Service
 ### [Gestion de Python sur Azure App Service](managing-python-on-azure-app-service.md)
 ### [Publication sur Azure App Service](publishing-to-azure.md)
-### [Débogage distant Azure](debugging-azure-remote.md)
+### [Débogage à distance Azure](debugging-azure-remote.md)
 ### [Résolution des problèmes du débogage distant Azure](debugging-azure-remote-troubleshooting.md)
 ## Interaction avec C++
 ### [Création d’une extension C++ pour Python](cpp-and-python.md)

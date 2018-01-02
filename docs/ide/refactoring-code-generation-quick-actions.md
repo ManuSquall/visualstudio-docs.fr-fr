@@ -11,11 +11,11 @@ ms.assetid: fc929a81-b20c-4802-92a7-388fd15aec3c
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 1886834f94c18aa7814fe4fab2c780f4884a59a6
-ms.sourcegitcommit: eb954434c34b4df6fd2264266381b23ce9e6204a
+ms.openlocfilehash: 653d02466e608d8d2c2955da8fec987c50517382
+ms.sourcegitcommit: 1aa9282b1f0bc2795df3264cbd1e331cc44c23f3
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/22/2017
+ms.lasthandoff: 12/08/2017
 ---
 # <a name="refactoring-code-generation-and-quick-actions-in-visual-studio"></a>Refactorisation, génération de code et actions rapides dans Visual Studio
 
@@ -31,11 +31,11 @@ La refactorisation est le processus de modification du code pour le rendre plus 
 
 * [Écriture et refactorisation du code (C++)](/cpp/ide/writing-and-refactoring-code-cpp)
 
-* La prise en charge de la refactorisation pour F# est fournie dans [Visual F# Power Tools](https://marketplace.visualstudio.com/items?itemName=FSharpSoftwareFoundation.VisualFPowerTools), extension Visual Studio tierce.
+* [Visual F# Power Tools](https://marketplace.visualstudio.com/items?itemName=FSharpSoftwareFoundation.VisualFPowerTools) &mdash; La prise en charge de la refactorisation pour F# est fournie avec cette extension Visual Studio tierce.
 
 ## <a name="code-generation"></a>Génération de code
 
-Visual Studio peut générer des parties du code source à votre place, ce qui vous permet de vous concentrer sur le vrai travail.  Pour plus d'informations, consultez les pages suivantes :
+Visual Studio peut générer des parties du code source à votre place, ce qui vous permet de vous concentrer sur le vrai travail. Pour plus d'informations, consultez les pages suivantes :
 
 * [Génération de code (C#)](../csharp-ide/code-generation-csharp.md)
 
@@ -43,9 +43,10 @@ Visual Studio peut générer des parties du code source à votre place, ce qui v
 
 ## <a name="quick-actions"></a>Actions rapides
 
-Les actions rapides vous permettent de refactoriser, générer ou modifier facilement le code en une seule action.  Elles peuvent être appliquées en utilisant l’icône d’ampoule ![Petite icône en forme d’ampoule](media/vs2015_lightbulbsmall.png "VS2017_LightBulbSmall") ou en appuyant sur **Ctrl** + **.** quand votre curseur se trouve sur la ligne de code appropriée.
+Les actions rapides vous permettent de refactoriser, générer ou modifier facilement le code en une seule action. Elles peuvent être appliquées en utilisant l’icône d’ampoule ![Petite icône en forme d’ampoule](media/vs2015_lightbulbsmall.png "VS2017_LightBulbSmall") ou en appuyant sur **Ctrl** + **.** quand votre curseur se trouve sur la ligne de code appropriée.
 
 * [Actions rapides](quick-actions.md)
+
 * [Styles de code et actions rapides](code-styles-and-quick-actions.md)
 
 ## <a name="see-also"></a>Voir aussi

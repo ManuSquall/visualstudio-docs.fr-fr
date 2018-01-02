@@ -1,11 +1,11 @@
 # Vue d'ensemble
 ## [R Tools pour Visual Studio](index.md)
 ## [Charge de travail Applications de science des données et d’analytique](data-science-workload.md)
-# Guides de démarrage rapide
+# Démarrages rapides
 ## [Installation](installation.md)
 ## [Obtention d’aide](getting-started-help.md)
 # Didacticiels
-## [Bien démarrer avec R](getting-started-with-r.md)
+## [Bien démarrer avec R](getting-started-with-r.md)
 # [Exemples](getting-started-samples.md)
 # Guides pratiques
 ## [Projets R](projects.md)

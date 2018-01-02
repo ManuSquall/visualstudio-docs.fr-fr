@@ -10,11 +10,11 @@ ms.topic: quickstart
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 7adb1ec7badaefceb8430d0fcacd8e54e7404ea7
-ms.sourcegitcommit: eb954434c34b4df6fd2264266381b23ce9e6204a
+ms.openlocfilehash: a08bcc91159182043b68391bc869243909d6df8b
+ms.sourcegitcommit: f0ddee934713ea9126fa107018a57a94a05eafd3
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/22/2017
+ms.lasthandoff: 12/12/2017
 ---
 # <a name="quickstart-personalize-the-visual-studio-ide-and-editor"></a>Démarrage rapide : personnaliser l’éditeur et l’IDE Visual Studio
 
@@ -85,6 +85,8 @@ Nous allons maintenant personnaliser des couleurs de texte dans l’éditeur. Pr
 
    ![Boîte de dialogue Options, catégorie Polices et couleurs](media/quickstart-personalize-line-number-color.png)
 
+   Certains langages ont leurs propres paramètres de polices et de couleurs. Si vous développez en C++ et que vous souhaitez changer la couleur utilisée pour les fonctions par exemple, recherchez **Fonctions C++** dans la liste **Afficher les éléments**.
+
 1. Avant de fermer la boîte de dialogue, changeons aussi la couleur des attributs XML. Dans la liste **Afficher les éléments**, sélectionnez **Attribut XML**. Dans la zone **Premier plan de l’élément**, choisissez **Vert clair**. Sélectionnez **OK** pour enregistrer nos sélections et fermer la boîte de dialogue.
 
    Les numéros de ligne s’affichent désormais en couleur olive et les attributs XML s’affichent désormais en vert clair. Si vous ouvrez un autre type de fichier, comme un fichier de code C++ ou C#, vous remarquerez que les numéros de ligne s’affichent aussi en couleur olive.
@@ -96,6 +98,8 @@ Nous avons seulement exploré deux façons de personnaliser les couleurs dans Vi
 ## <a name="see-also"></a>Voir aussi
 
 [Démarrage rapide : premier aperçu de l’IDE Visual Studio](../ide/quickstart-ide-orientation.md)  
+[Démarrage rapide : Codage dans l’éditeur](../ide/quickstart-editor.md)  
+[Démarrage rapide : Projets et solutions](../ide/quickstart-projects-solutions.md)  
 [Personnaliser l’IDE Visual Studio](../ide/personalizing-the-visual-studio-ide.md)  
 [Personnalisation de l’éditeur](../ide/customizing-the-editor.md)  
 [Vue d’ensemble de l’IDE Visual Studio](../ide/visual-studio-ide.md)

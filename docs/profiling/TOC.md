@@ -1,7 +1,16 @@
-# [Visite guidée des fonctionnalités de profilage](profiling-feature-tour.md)
-## [Guide du débutant en profilage des performances](beginners-guide-to-performance-profiling.md)
-## [Nouveautés des outils de profilage](what-s-new-in-profiling-tools.md)
+
+# [Documentation sur le profilage](index.md)
+# Vue d'ensemble
+## [Visite guidée des fonctionnalités de profilage](profiling-feature-tour.md)
+# Guides de démarrage rapide
+## [Analyser l’utilisation de l’UC (managée)](quickstart-cpu-usage-managed.md)
+## [Analyser l’utilisation de l’UC (native)](quickstart-cpu-usage-native.md)
+## [Analyser l’utilisation de l’UC (ASP.NET)](quickstart-cpu-usage-aspnet.md)
+# Didacticiels
+## [Profiler les performances de votre application dans Visual Studio](beginners-guide-to-performance-profiling.md)
+# Concepts
 ## [Exécuter des outils de profilage avec ou sans débogueur](running-profiling-tools-with-or-without-the-debugger.md)
+# Guides pratiques
 ## [Analyser l’utilisation de la mémoire](memory-usage.md)
 ### [Événements de tas ETW natifs personnalisés](custom-native-etw-heap-events.md)
 ### [Utilisation de la mémoire sans le débogueur](memory-usage-without-debugging2.md)
@@ -365,5 +374,7 @@
 ##### [CvWriteAlert, fonction](cvwritealert-function.md)
 ##### [CvWriteFlag, fonction](cvwriteflag-function.md)
 ##### [CvWriteMessage, fonction](cvwritemessage-function.md)
-### [Utilitaire en ligne de commande du visualiseur concurrentiel (CVCollectionCmd)](concurrency-visualizer-command-line-utility-cvcollectioncmd.md)
-## [Analyser la consommation d’énergie dans les applications UWP](analyze-energy-use-in-store-apps.md)
+### [Utilitaire de ligne de commande du visualiseur concurrentiel (CVCollectionCmd)](concurrency-visualizer-command-line-utility-cvcollectioncmd.md)
+## [Analyser l’utilisation de l’énergie dans les applications du Windows Store](analyze-energy-use-in-store-apps.md)
+# Ressources
+## [Nouveautés des outils de profilage](what-s-new-in-profiling-tools.md)
