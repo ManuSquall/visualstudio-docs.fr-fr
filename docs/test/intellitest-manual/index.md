@@ -12,11 +12,12 @@ ms.assetid: C5FA1C59-BB82-43B6-BF96-D0D85E033DAE
 caps.latest.revision: "56"
 ms.author: douge
 manager: douge
-ms.openlocfilehash: 300f2a830b2bd22c39798821cfd6cd8e804fb64a
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: multiple
+ms.openlocfilehash: f6e81c246c4c9268ff3116fce9f43b735a7a9ccf
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="intellitest-reference-manual"></a>Manuel de référence IntelliTest
 
@@ -29,7 +30,7 @@ ms.lasthandoff: 10/27/2017
     * [Concurrence](introduction.md#concurrency)
     * [Code natif](introduction.md#native-code)
     * [Plateforme](introduction.md#platform)
-    * [Langue](introduction.md#language)
+    * [Language](introduction.md#language)
     * [Raisonnement symbolique](introduction.md#symbolic-reasoning)
     * [Traces de pile incorrectes](introduction.md#incorrect-stack)
   - [Compléments de lecture](introduction.md#further-reading)<p>&nbsp;</p>

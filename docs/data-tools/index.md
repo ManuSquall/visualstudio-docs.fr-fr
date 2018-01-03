@@ -5,11 +5,12 @@ ms.author: gewarren
 title: "Utiliser les outils de données dans Visual Studio pour développer des solutions de données | Documents Microsoft"
 description: "En savoir plus sur les outils pour solutions de données dans Visual Studio."
 ms.technology: vs-data-tools
-ms.openlocfilehash: cd493348492d14a84842be61e195e3a506c92436
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: data-storage
+ms.openlocfilehash: 74a4d787439f8a615f7f9937438e19179630b9f7
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="use-data-tools-in-visual-studio-to-develop-data-solutions"></a>Utiliser les outils de données dans Visual Studio pour développer des solutions de données
 
@@ -35,7 +36,7 @@ Découvrez comment utiliser les outils de données dans Visual Studio pour déve
         </a>
     </li>
     <li>
-        <a href="https://msdn.microsoft.com/library/hh272686(v=vs.103).aspx">
+        <a href="/sql/ssdt/download-sql-server-data-tools-ssdt">
         <div class="cardSize">
             <div class="cardPadding">
                 <div class="card">
@@ -120,7 +121,7 @@ Découvrez comment utiliser les outils de données dans Visual Studio pour déve
             <div class="cardPadding">
                 <div class="card">
                     <div class="cardText">
-                        <p><Accessing data in Visual Studio</p>
+                        <p><Accessing data in Visual Studio></p>
                     </div>
                 </div>
             </div>
